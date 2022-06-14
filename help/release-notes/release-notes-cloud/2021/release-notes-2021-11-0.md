@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.11.0 リリー
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.11.0 リリースのリリースノート。'
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 100%
 
@@ -42,7 +42,7 @@ ht-degree: 100%
 
 * [!DNL Dynamic Media] は、MXF ビデオの取り込み、プレビュー、再生、公開をサポートするようになりました。MXF ビデオの注釈とショッパブルビデオは、まだサポートされていません。
 
-* リモート DAM と Sites のデプロイメントの間で接続の設定を行うと、リモート DAM のアセットが Sites デプロイメントで利用できるようになります。これで、リモート DAM アセットまたはフォルダーに対して、[更新、削除、名前変更、移動の操作](/help/assets/use-assets-across-connected-assets-instances.md)を実行できます。更新は、Sites デプロイメントで自動的に（少し遅れて）利用できます。
+* リモート DAM と Sites デプロイメント間の接続を設定すると、リモート DAM 上のアセットが Sites デプロイメントで使用できるようになります。これで、リモート DAM アセットまたはフォルダーに対して、[更新、削除、名前変更、移動の操作](/help/assets/use-assets-across-connected-assets-instances.md)を実行できます。更新は、Sites デプロイメントで自動的に（少し遅れて）利用できます。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

@@ -64,7 +64,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 **ユーザーデータを取得する:**
 
-上記のコマンドから返された JSON ペイロードの home プロパティに含まれているノードパスを使用：
+上記のコマンドで返された JSON ペイロードの home プロパティに含まれているノードパスの使用
 
 ```shell
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile.-1.json'
@@ -99,7 +99,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### HTTP API {#http-api-1}
 
-以下の手順では `curl`コマンドラインツールを使用して、**[!UICONTROL cavery]** `userId` を持つユーザーを無効化し、デフォルト位置にあるそのユーザーのプロファイルを削除する方法を示しています。
+以下の手順では、`curl` コマンドラインツールを使用して **[!UICONTROL cavery]** `userId` を持つユーザーを無効化し、デフォルトの場所にあるそのユーザーのプロファイルを削除する方法を示します。
 
 **ユーザーホームの検索：**
 

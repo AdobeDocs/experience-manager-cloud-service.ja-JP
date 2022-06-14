@@ -60,7 +60,7 @@ Dynamic Media のユーザーインターフェイス要素は、スクリーン
 
 Dynamic Media では、クローズドキャプションを使用したビデオとアダプティブビデオセットの配信がサポートされています。キャプションは、ビデオコンテンツの上に表示する必要があります。
 
-[Dynamic Media のビデオ - ビデオへのクローズドキャプションまたはサブタイトルの追加](/help/assets/dynamic-media/video.md#adding-captions-to-video) を参照してください。
+詳しくは、 [Dynamic Media のビデオ — ビデオへの字幕やサブタイトルの追加](/help/assets/dynamic-media/video.md#adding-captions-to-video)を参照してください。
 
 
 >[!MORELIKETHIS]

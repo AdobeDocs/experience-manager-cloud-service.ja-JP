@@ -3,7 +3,7 @@ title: 準備段階
 description: AEM インストールをクラウドに移動する準備ができていることを確認するために必要な手順を説明します。
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2078'
 ht-degree: 100%
 

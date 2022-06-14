@@ -3,7 +3,7 @@ title: プログレッシブ web アプリケーション機能の有効化
 description: AEM Sites では、コンテンツ作成者がコーディングの代わりにシンプルな設定で、任意のサイトに対してプログレッシブ web アプリケーション機能を有効にすることができます。
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 source-git-commit: 3910b47c5d25679d03409380d91afaa6ff5ab265
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2004'
 ht-degree: 100%
 
@@ -132,7 +132,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 これで、[PWA をサポートするようにサイトを設定できたので、](#enabling-pwa-for-your-site)体験してみてください。
 
-1. [サポートされているブラウザー](https://developer.mozilla.org/ja-JP/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)でサイトにアクセスします。
+1. [サポートされているブラウザー](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)でサイトにアクセスします。
 1. ブラウザーのアドレスバーに新しいアイコンが表示され、サイトがローカルアプリケーションとしてインストールできることが示されます。
    * ブラウザーによってアイコンは異なり、ローカルアプリケーションとしてインストールできることを示す通知（バナーやダイアログボックスなど）が表示される場合もあります。
 1. AEM Desktop App をインストールします。

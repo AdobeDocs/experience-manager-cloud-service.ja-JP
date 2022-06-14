@@ -189,7 +189,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 * 検証パターン形式文字列
 * 検証式
 
-### サーバーサイド検証の有効化 {#enabling-server-side-validation-br}
+### サーバー側検証の有効化 {#enabling-server-side-validation-br}
 
 サイドバーにある「アダプティブフォームコンテナ」の「**[!UICONTROL サーバー側で再検証]**」を使用して、現在のフォームのサーバーサイド検証を有効または無効にします。
 

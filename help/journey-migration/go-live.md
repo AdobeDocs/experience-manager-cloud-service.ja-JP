@@ -5,7 +5,7 @@ exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
 workflow-type: tm+mt
 source-wordcount: '1644'
-ht-degree: 76%
+ht-degree: 77%
 
 ---
 
@@ -141,7 +141,7 @@ ht-degree: 76%
       * CDN ベンダーのドキュメントに従って、SSL および DNS を設定する必要があります。
    * 追加の CDN を使用しない場合は、次のドキュメントに従って、SSL と DNS を管理します。
       * SSL 証明書の管理
-         * [SSL 証明書管理の概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         * [SSL 証明書の管理の概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          * [SSL 証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * カスタムドメイン名 (DNS) の管理
          * [カスタムドメイン名の概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)

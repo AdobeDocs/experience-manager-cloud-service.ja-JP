@@ -1,5 +1,5 @@
 ---
-title: '手書き署名を使用したフォームへの電子サインの適用 '
+title: 手書き署名を使用したフォームへの電子署名の適用
 seo-title: Apply electronic signatures to a form using scribble signatures
 description: 手書きでのフォームへの署名
 seo-description: Signing forms using scribble

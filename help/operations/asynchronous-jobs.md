@@ -70,7 +70,7 @@ AEM が操作を非同期で処理する場合は常に、[インボックス](/
    >
    >ステータスが&#x200B;**アクティブ**&#x200B;または&#x200B;**待機中**&#x200B;のジョブは削除できません。
 
-## 完了したジョブの削除 {#purging-completed-jobs}
+## 完了したジョブをパージ {#purging-completed-jobs}
 
 AEM は、毎日午前 1 時にパージジョブを実行して、1 日以上経過した完了済みの非同期ジョブを削除します。
 
@@ -87,11 +87,11 @@ AEM は、毎日午前 1 時にパージジョブを実行して、1 日以上�
 
 1. 変更内容を保存します。
 
-## 非同期処理の設定 {#configuring-asynchronous-processing}
+## 非同期処理を設定 {#configuring-asynchronous-processing}
 
-特定の操作を非同期に処理するための AEM のアセット、ページまたは参照のしきい値を設定したり、ジョブの処理時に関する電子メール通知を切り替えたりできます。
+AEM が特定の操作を非同期で処理するためのアセット、ページまたは参照のしきい値を設定したり、ジョブの処理時に電子メール通知を切り替えたりできます。
 
-### 非同期アセット削除操作の設定 {#configuring-synchronous-delete-operations}
+### 非同期アセット削除操作を設定 {#configuring-synchronous-delete-operations}
 
 削除するアセットまたはフォルダーの数がしきい値を超えると、削除操作が非同期的に実行されます。
 
@@ -104,7 +104,7 @@ AEM は、毎日午前 1 時にパージジョブを実行して、1 日以上�
 1. 「**電子メール通知を有効にする**」オプションを選択すると、このジョブステータスに関する電子メール通知を受信できます（例：成功、失敗）。
 1. 変更内容を保存します。
 
-### 非同期アセット移動操作の設定 {#configuring-asynchronous-move-operations}
+### 非同期アセット移動操作を設定 {#configuring-asynchronous-move-operations}
 
 移動するアセットやフォルダーまたは参照の数がしきい値を超えると、移動操作が非同期的に実行されます。
 
@@ -117,7 +117,7 @@ AEM は、毎日午前 1 時にパージジョブを実行して、1 日以上�
 1. 「**電子メール通知を有効にする**」オプションを選択すると、このジョブステータスに関する電子メール通知を受信できます（例：成功、失敗）。
 1. 変更内容を保存します。
 
-### 非同期ページ移動操作の設定 {#configuring-asynchronous-page-move-operations}
+### 非同期ページ移動操作を設定 {#configuring-asynchronous-page-move-operations}
 
 移動するページへの参照数がしきい値を超えると、移動操作は非同期に実行されます。
 
@@ -130,7 +130,7 @@ AEM は、毎日午前 1 時にパージジョブを実行して、1 日以上�
 1. 「**電子メール通知を有効にする**」オプションを選択すると、このジョブステータスに関する電子メール通知を受信できます（例：成功、失敗）。
 1. 変更内容を保存します。
 
-### 非同期 MSM 操作の設定 {#configuring-asynchronous-msm-operations}
+### 非同期 MSM 操作を設定 {#configuring-asynchronous-msm-operations}
 
 1. グローバルナビゲーションで、**[!UICONTROL ツール]**／**[!UICONTROL 操作]**／**[!UICONTROL Web コンソール]**&#x200B;をクリックします。
 1. Web コンソールで、「**[!UICONTROL Async Page Move Operation Job Processing Configuration]**」を開きます。

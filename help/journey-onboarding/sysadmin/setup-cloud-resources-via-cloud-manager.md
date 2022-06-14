@@ -4,7 +4,7 @@ description: Cloud Manager を使用して独自のクラウドリソースを�
 role: Admin, User, Developer
 exl-id: de3a33b7-b459-4e47-b232-a0f88e2ce22e
 source-git-commit: 0db24518610fccf0d2ea5e0620a0c6a5f8009ea8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 100%
 
@@ -182,7 +182,7 @@ Cloud Manager にビジネスオーナーとして正常にログインしまし
 
 その他のリソースでは、以下について学習します。
 
-* [プログラムタイプとプログラムの追加](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=ja)
-* [環境タイプと環境の追加](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=ja)
+* [プログラムタイプとプログラムの追加](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html)
+* [環境タイプと環境の追加](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html)
 * [Cloud Manager Git の管理](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
 * [Admin Console からの AEM as a Cloud Service へのアクセスの設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=ja#adobe-ims-users)

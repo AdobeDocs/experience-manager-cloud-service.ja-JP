@@ -1,13 +1,13 @@
 ---
 title: 統合シェルでas a Cloud ServiceのAEMを使用
 description: 統合シェルでas a Cloud ServiceのAEMを使用
-source-git-commit: 09f4620ed871b012b4550bc05cfe7f4622f02833
+exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
+source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 1%
 
 ---
-
 
 # 統合シェルでas a Cloud ServiceのAEMを使用 {#aem-as-a-cloud-service-on-unified-shell}
 
@@ -72,4 +72,3 @@ AEMインボックスにアクセスするには、統合シェルのベルの�
 ポップアップの「インボックス」ボタンをクリックして、AEMインボックスに移動します。
 
 ![画像](/help/overview/assets/unifiedshell6.png)
-

@@ -3,7 +3,7 @@ title: 基本操作
 description: AEM のナビゲーションとその基本的な使用方法を習得します
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2954'
 ht-degree: 100%
 

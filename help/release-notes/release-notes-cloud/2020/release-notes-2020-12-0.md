@@ -69,7 +69,7 @@ AEM as a Cloud Service 2020.12.0 Cloud Manager のリリース日は 2020 年 12
 
 * [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) にすべての OSGi 設定を含む個別のパッケージ `ui.config` を作成する新機能が追加されました。
 
-### バグ修正 {#crt-bug-fixes}
+### バグの修正 {#crt-bug-fixes}
 
 * AEM Dispatcher コンバーターおよび Repository Modenizer ツールでいくつかのバグ修正が行われました。[AEM Dispatcher コンバーター](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)および [Repository Modenizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) を参照してください。
 

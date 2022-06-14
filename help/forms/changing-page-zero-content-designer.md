@@ -16,7 +16,7 @@ ht-degree: 100%
 ---
 
 
-# Designer でのページゼロコンテンツの変更 {#changing-page-zero-content-in-designer}
+# Designer での Page Zero コンテンツの変更 {#changing-page-zero-content-in-designer}
 
 [!DNL Chrome] または [!DNL Firefox] のデフォルト PDF ビューアなど、アドビ以外の PDF ビューアで PDF／XFA フォームのコンテンツを読み取れない場合、Page Zero コンテンツがデフォルトで表示されます。デフォルトの Page Zero メッセージは、以下のとおりです。
 

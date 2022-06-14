@@ -3,10 +3,11 @@ title: Target へのコンテンツの取り込み (レガシー)
 description: Target へのコンテンツの取り込み
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: 326b3e98-5055-49b5-a005-63fd3ca35202
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 97%
 
 コンテンツ転送ツールで移行セットを取り込むには、次の手順に従います。
 >[!NOTE]
->オプションのプリコピー手順を実行して、取り込み段階を大幅に高速化できます。 詳しくは、[AzCopy を使用した取得](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja#ingesting-azcopy)を参照してください。
+>オプションの事前コピー手順を実行して、取り込み段階を大幅に高速化できます。詳しくは、[AzCopy を使用した取得](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja#ingesting-azcopy)を参照してください。
 
 1. **コンテンツ転送**&#x200B;ページで移行セットを選択し、「**取得**」をクリックして取り込みを開始します。
 
@@ -30,7 +31,7 @@ ht-degree: 97%
    >事前コピーを使用した取得を（S3 または Azure データストアに対して）使用する場合は、最初にオーサーの取得を単独で実行することをお勧めします。これにより、後で実行する際に、パブリッシュの取り込みが高速化されます。
 
    >[!IMPORTANT]
-   >「**取得前にクラウドインスタンス上の既存のコンテンツを消去**」オプションが有効な場合は、既存のリポジトリー全体が削除され、コンテンツの取り込み先となる新しいリポジトリーが作成されます。つまり、ターゲットの Cloud Service インスタンスに対する権限を含むすべての設定がリセットされます。これは、**administrators** グループに追加された管理者ユーザーにも当てはまります。
+   >「**取得前にクラウドインスタンス上の既存のコンテンツを消去**」オプションが有効な場合は、既存のリポジトリ全体が削除され、コンテンツの取り込み先となる新しいリポジトリが作成されます。つまり、ターゲットの Cloud Service インスタンスに対する権限を含むすべての設定がリセットされます。これは、**administrators** グループに追加された管理者ユーザーにも当てはまります。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-03.png)
 
@@ -38,7 +39,7 @@ ht-degree: 97%
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
 
-   詳しくは、 [コンテンツ転送ツール使用時の重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja#important-considerations) も参照してください。
+   詳しくは、[コンテンツ転送ツール使用時の重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja#important-considerations)も参照してください。
 
 1. 取り込みが完了すると、「**オーサーインジェスト**」フィールドのステータスが&#x200B;**完了**&#x200B;に更新されます。
 
@@ -53,7 +54,7 @@ ht-degree: 97%
 
 インジェストプロセスが完了したら、追加インジェスト方式を使用して差分コンテンツを転送できます。次の手順に従います。
 
-1. **コンテンツ転送** ウィザードに移動し、追加取り込みの実行対象となる移行セットを選択します。「**取り込み**」をクリックして、追加インジェストを開始します。
+1. **コンテンツ転送**&#x200B;ウィザードに移動し、追加取り込みの実行対象となる移行セットを選択します。「**取り込み**」をクリックして、追加インジェストを開始します。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/topup-ingest1.png)
 

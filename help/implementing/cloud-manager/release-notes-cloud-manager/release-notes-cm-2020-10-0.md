@@ -34,7 +34,7 @@ AEM as a Cloud Service Release 2020.10.0 Cloud Manager のリリース日は 202
 詳しくは、「[環境の表示](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)」を参照してください。
 
 
-### バグ修正 {#bug-fixes-cloud-manager}
+### バグの修正 {#bug-fixes-cloud-manager}
 
 * 環境が完全に作成される前に、Cloud Manager から開発者コンソールへのリンクが正しくアクティブになっていませんでした。
 

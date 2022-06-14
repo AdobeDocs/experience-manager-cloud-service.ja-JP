@@ -165,7 +165,7 @@ Adobe Experience Manager Assets では、多言語アセットはフォルダー
 1. 「**[!UICONTROL プロジェクト]**」リストで「**[!UICONTROL 既存の翻訳プロジェクトに追加]**」を選択します。
 1. 「**[!UICONTROL 既存の翻訳プロジェクト]**」リストで、翻訳のためのアセットを追加するプロジェクトを選択します。
 1. 「**[!UICONTROL 開始]**」をクリックまたはタップします。
-1. [既存の翻訳プロジェクトに追加](#add-to-existing-translation-project)の手順 9～14 を参照して、この手順の続きを完了させます。
+1. [既存の翻訳プロジェクトに追加](#add-to-existing-translation-project)の手順 9 ～ 14 を参照して、この手順の続きを完了させます。
 
 ### 一時的な言語コピーの作成 {#creating-temporary-language-copies}
 

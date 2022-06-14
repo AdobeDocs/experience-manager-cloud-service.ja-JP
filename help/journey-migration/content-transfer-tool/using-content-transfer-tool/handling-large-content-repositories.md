@@ -82,7 +82,7 @@ Azure ポータルのコンテナプロパティページで、「**サイズを
 #### ファイルデータストア {#file-data-store-determine-size}
 
 * Mac および UNIX システムの場合は、データストアディレクトリで du コマンドを実行してサイズを取得します。
-   `du -sh [path to datastore on the instance]` で使用される様々なキャッシュに配分されます。例えば、データストアが `/mnt/author/crx-quickstart/repository/datastore` にある場合は、次のコマンドでそのサイズを取得できます。`du -sh /mnt/author/crx-quickstart/repository/datastore`
+   `du -sh [path to datastore on the instance]`に従っていない場合に発生します。例えば、データストアが `/mnt/author/crx-quickstart/repository/datastore` にある場合は、次のコマンドでそのサイズを取得できます。`du -sh /mnt/author/crx-quickstart/repository/datastore`
 
 * Windows の場合は、データストアディレクトリで dir コマンドを使用してサイズを取得します。
    `dir /a/s [location of datastore]`

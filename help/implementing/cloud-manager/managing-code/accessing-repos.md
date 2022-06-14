@@ -1,5 +1,5 @@
 ---
-title: リポジトリーへのアクセス
+title: リポジトリへのアクセス
 description: Cloud Manager のセルフサービス Git アカウント管理を使用して、Git リポジトリにアクセスし、管理する方法について説明します。
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 source-git-commit: 4729574eb31e01077f0d2a35efcef6d134f6aa5c
@@ -9,7 +9,7 @@ ht-degree: 8%
 
 ---
 
-# リポジトリーへのアクセス {#accessing-repos}
+# リポジトリへのアクセス {#accessing-repos}
 
 Cloud Manager のセルフサービス Git アカウント管理を使用して、Git リポジトリにアクセスし、管理する方法について説明します。
 

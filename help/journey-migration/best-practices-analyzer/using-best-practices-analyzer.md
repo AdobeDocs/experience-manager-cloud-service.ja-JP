@@ -15,7 +15,7 @@ ht-degree: 100%
 >id="aemcloud_bpa_using"
 >title="ベストプラクティスアナライザーの使用"
 >abstract="ベストプラクティスアナライザー（旧称 Cloud Readiness Analyzer）と生成されたレポートの使用に関するドキュメントを確認します。ベストプラクティスアナライザーレポートは、アップグレードの全般的な準備状況を大まかに理解するために使用します。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## ベストプラクティスアナライザーを使用する際の重要な検討事項 {#imp-considerations}
 
@@ -27,13 +27,11 @@ ht-degree: 100%
 
 * BPA は、バージョン 6.1 以降の AEM インスタンスでサポートされます。
 
-   >[!NOTE]
-   >AEM 6.1 に BPA をインストールするための特別な要件については、「[AEM 6.1 へのインストール](#installing-on-aem61)」を参照してください。
+   >[!NOTE]AEM 6.1 に BPA をインストールするための特別な要件については、「[AEM 6.1 へのインストール](#installing-on-aem61)」を参照してください。
 
 * BPA はどの環境でも実行できますが、*ステージング*&#x200B;環境で実行することをお勧めします。
 
-   >[!NOTE]
-   >ビジネスクリティカルなインスタンスへの影響を回避するために、カスタマイズ、設定、コンテンツ、ユーザーアプリケーションの領域で、*実稼動*&#x200B;環境にできる限り近い&#x200B;*オーサー*&#x200B;環境で BPA を実行することをお勧めします。または、実稼動版の&#x200B;*オーサー*&#x200B;環境のクローンで実行することもできます。
+   >[!NOTE]ビジネスクリティカルなインスタンスへの影響を回避するために、カスタマイズ、設定、コンテンツ、ユーザーアプリケーションの領域で、*実稼動*&#x200B;環境にできる限り近い&#x200B;*オーサー*&#x200B;環境で BPA を実行することをお勧めします。または、実稼動版の&#x200B;*オーサー*&#x200B;環境のクローンで実行することもできます。
 
 * BPA レポートのコンテンツの生成には、数分から数時間まで、相当な時間がかかる場合があります。必要な時間は、AEM リポジトリーコンテンツのサイズと特性、AEM バージョン、その他の要因に大きく左右されます。
 
@@ -41,15 +39,15 @@ ht-degree: 100%
 
 ## 入手方法 {#availability}
 
->[!CONTEXTUALHELP]
->id="aemcloud_bpa_download"
->title="ベストプラクティスアナライザーのダウンロード"
->abstract="ベストプラクティスアナライザーは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。"
+[!CONTEXTUALHELP]
+id="aemcloud_bpa_download"
+title="ベストプラクティスアナライザーのダウンロード"
+abstract="ベストプラクティスアナライザーは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。"
 
 ベストプラクティスアナライザーは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) を使用して、このパッケージを AEM（Adobe Experience Manager）ソースインスタンスにインストールできます。
 
 >[!NOTE]
->[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) ポータルからベストプラクティスアナライザーをダウンロードします。
+[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) ポータルからベストプラクティスアナライザーをダウンロードします。
 
 ## ベストプラクティスアナライザーレポートの表示 {#viewing-report}
 
@@ -82,13 +80,11 @@ ht-degree: 100%
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
-   >[!NOTE]
-   >BPA に対して「**レポートの更新**」をクリックしてキャッシュをクリアし、レポートを再生成させることができます。
+   >[!NOTE]BPA に対して「**レポートの更新**」をクリックしてキャッシュをクリアし、レポートを再生成させることができます。
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
 
-   >[!NOTE]
-   >レポートが再生成される間、完了率の観点での進行状況が次の画像のように表示されます。
+   >[!NOTE]レポートが再生成される間、完了率の観点での進行状況が次の画像のように表示されます。
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
@@ -103,14 +99,14 @@ ht-degree: 100%
    ![画像](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
-   >左レールアイコンは、BPA が ACS Commons の使用を検出した場合にのみ表示されます。
+左レールアイコンは、BPA が ACS Commons の使用を検出した場合にのみ表示されます。
 
 1. このボックスの選択を解除すると、ACS Commons に関連するすべての結果が除外されます。次の画像に示すように、**フィルター適用済みの結果数**&#x200B;がレポートに表示されます。このフィルターは、レポートがコンマ区切り値（CSV）形式で書き出される場合にも適用されます。
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   >ACS Commons の結果は無視しないでください。AEM as a Cloud Service との互換性を確認するには、[ドキュメント](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)を参照してください。
+ACS Commons の結果は無視しないでください。AEM as a Cloud Service との互換性を確認するには、[ドキュメント](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)を参照してください。
 
 
 <!--
@@ -126,12 +122,12 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 
 ## ベストプラクティスアナライザーレポートの説明 {#cra-report}
 
->[!CONTEXTUALHELP]
->id="aemcloud_bpa_interpreting"
->title="ベストプラクティスアナライザーレポートの説明"
->abstract="BPA レポート出力は UI と CSV の 2 つのオプションで表示できます。ベストプラクティスアナライザーツールを AEM インスタンスで実行すると、結果として UI レポートがツールウィンドウに表示されます。レポートの CSV 形式には、パターン検出の出力から生成され、カテゴリタイプ、サブタイプ、重要度レベルで並べ替え、整理された情報が含まれます。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja#analysis-report" text="ベストプラクティス分析レポートの確認"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=ja" text="ベストプラクティスアナライザーレポートのカテゴリについて"
+[!CONTEXTUALHELP]
+id="aemcloud_bpa_interpreting"
+title="ベストプラクティスアナライザーレポートの説明"
+abstract="BPA レポート出力は UI と CSV の 2 つのオプションで表示できます。ベストプラクティスアナライザーツールを AEM インスタンスで実行すると、結果として UI レポートがツールウィンドウに表示されます。レポートの CSV 形式には、パターン検出の出力から生成され、カテゴリタイプ、サブタイプ、重要度レベルで並べ替え、整理された情報が含まれます。"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja#analysis-report" text="ベストプラクティス分析レポートの確認"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=ja" text="ベストプラクティスアナライザーレポートのカテゴリについて"
 
 ベストプラクティスアナライザーツールを AEM インスタンスで実行すると、結果としてレポートがツールウィンドウに表示されます。
 
@@ -147,8 +143,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 
 アクションの大まかな優先度を示すために、各発見に重要度レベルが割り当てられます。
 
->[!NOTE]
->各結果カテゴリの詳細については、「[パターンディテクターカテゴリ](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=ja)」を参照してください。
+>[!NOTE]各結果カテゴリの詳細については、「[パターンディテクターカテゴリ](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=ja)」を参照してください。
 
 次の表に、重要度レベルを示します。
 

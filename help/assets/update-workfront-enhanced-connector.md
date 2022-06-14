@@ -1,7 +1,8 @@
 ---
 title: 更新 [!DNL Workfront for Experience Manager enhanced connector]
 description: 更新 [!DNL Workfront for Experience Manager enhanced connector]
-source-git-commit: 34f3cf925a3ea58de176521be459a61f4317eec3
+exl-id: 09276b4d-a7c8-4927-8c0a-40eda48e55a7
+source-git-commit: 77aceab8db82082185c931202fc6ea8eee79c11e
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 5%

@@ -4,7 +4,7 @@ description: 大規模法人では、ストアフロントを強化するため�
 thumbnail: cif-third-party-architecture.jpg
 exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c,42dd8922-540d-4a93-9e45-b5e83dc11e16
 source-git-commit: a53ef07cd9da636c8d938c711de6defb9eb8e05f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 100%
 

@@ -93,7 +93,7 @@ ArrayList データタイプを使用して、変数コレクションを作成�
 1. 「**変数のマップ**」セクションで、データを格納する変数を選択し、マッピングモードを選択して、変数に格納する値を指定します。マッピングモードは、変数のタイプによって異なります。
 1. より多くの変数をマップして、意味のある式を作成します。「![done_icon](assets/Smock_Checkmark_18_N.svg)」をタップして、変更内容を保存します。
 
-### 例 1：XML 変数をクエリして文字列変数の値を設定 {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
+### 例 1：XML 変数をクエリして、文字列変数の値を設定 {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
 XML タイプの変数を選択し、XML ファイルを格納します。XML 変数をクエリして、XML ファイルで使用可能なプロパティの文字列変数の値を設定します。「**XML 変数に XPATH を指定**」フィールドを使用して、文字列変数に格納するプロパティを定義します。
 
@@ -180,7 +180,7 @@ OR 分割ステップと同様に、ルール定義、ECMA スクリプト、ま
 
 ### 変数をサポートしないワークフローステップ {#workflow-steps-without-support-for-variables}
 
-[MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) インターフェイスを使用して、変数をサポートしていないワークフローステップの変数にアクセスできます。
+[MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) インターフェイスを使用して、変数をサポートしないワークフロー手順の変数にアクセスできます。
 
 #### 変数値の取得 {#retrieve-the-variable-value}
 

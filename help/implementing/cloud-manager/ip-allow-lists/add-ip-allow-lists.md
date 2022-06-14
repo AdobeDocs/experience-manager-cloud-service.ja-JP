@@ -5,7 +5,7 @@ exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 source-git-commit: 378ff582435f1ab3db431a0c9c3e80a4661cccc4
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 15%
+ht-degree: 19%
 
 ---
 
@@ -18,7 +18,7 @@ Cloud Manager を使用して独自の IP許可リストを追加する方法を
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. に移動します。 **環境** 画面から **概要** ページ。
+1. **概要**&#x200B;ページから&#x200B;**環境**&#x200B;画面に移動します。
 
 1. **環境**&#x200B;画面から **IP 許可リスト**&#x200B;ページに移動します。
 

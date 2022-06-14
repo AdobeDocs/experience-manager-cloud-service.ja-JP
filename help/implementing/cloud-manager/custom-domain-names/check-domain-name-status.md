@@ -5,7 +5,7 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 source-git-commit: ba0226b5ad3852dd5f72dd7e0ace650035f5ac6a
 workflow-type: tm+mt
 source-wordcount: '637'
-ht-degree: 10%
+ht-degree: 13%
 
 ---
 
@@ -72,6 +72,6 @@ Cloud Manager は、ドメインの所有権を TXT 値で検証し、次のい�
 
 カスタムドメイン名用の既存の CDN 設定がある場合、 **カスタムドメイン名** および **環境** ページに表示され、Cloud Manager で設定できるように、UI を使用してこれらの設定を追加するよう促す。
 
-UI を使用して既存のすべての環境設定を移行すると、メッセージは消えます。 メッセージが表示されなくなるまでに 1 ～ 2 営業日かかる場合があります。
+UI を使用して既存の環境設定をすべて移行すると、このメッセージは表示されなくなります。メッセージが表示されなくなるまでに 1～2 営業日かかる場合があります。
 
 ドキュメントを参照してください [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。

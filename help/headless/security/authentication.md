@@ -4,7 +4,7 @@ description: ヘッドレスコンテンツ配信を保護するためにリモ�
 feature: Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 source-git-commit: 4e37db128aa31d6e8e950be0d077eae921a27468
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 100%
 

@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager as a Cloud Service コネクタ
-description: コネクタ、コネクタで実行できる操作、およびExperience Managerでこれらの役立つツールを実装する方法について説明します。
-landing-page-description: コネクタ、コネクタで実行できる操作、およびExperience Managerでこれらの役立つツールを実装する方法について説明します。
+description: コネクタとその機能、および Experience Manager にコネクタを実装する方法について説明します。
+landing-page-description: コネクタとその機能、および Experience Manager にコネクタを実装する方法について説明します。
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
 source-git-commit: 1bdebb3f9ffdc720c7172265571571d47df35610
 workflow-type: tm+mt
 source-wordcount: '394'
-ht-degree: 85%
+ht-degree: 93%
 
 ---
 

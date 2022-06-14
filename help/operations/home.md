@@ -1,18 +1,18 @@
 ---
 title: Adobe Experience Manager as a Cloud Service の運用と保守
-description: 'インデックス作成やメンテナンスタスクなど、as a Cloud ServiceのExperience Managerのバックエンド運用について確認し、クエリに対する回答を得ます。 '
-landing-page-description: インデックス作成やメンテナンスタスクなど、as a Cloud ServiceのExperience Managerのバックエンド運用について確認し、クエリに対する回答を得ます。
+description: 'インデックス作成やメンテナンスタスクなど、Experience Manager as a Cloud Service のバックエンド運用について学び、質問に対する回答を確認できます。 '
+landing-page-description: インデックス作成やメンテナンスタスクなど、Experience Manager as a Cloud Service のバックエンド運用について学び、質問に対する回答を確認できます。
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
 source-git-commit: 1bdebb3f9ffdc720c7172265571571d47df35610
 workflow-type: tm+mt
 source-wordcount: '398'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 # Experience Manager as a Cloud Service の運用と保守 {#aem-operations-guide}
 
-インデックス作成やメンテナンスタスクなど、as a Cloud ServiceのExperience Managerのバックエンド運用について確認し、クエリに対する回答を得ます。
+インデックス作成やメンテナンスタスクなど、Experience Manager as a Cloud Service のバックエンド運用について学び、質問に対する回答を確認できます。
 
 ## 運用に関する主要な記事 {#key-articles}
 

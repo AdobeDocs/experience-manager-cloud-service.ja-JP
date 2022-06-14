@@ -3,7 +3,7 @@ title: Adobe Target へのエクスペリエンスフラグメントの書き出
 description: Adobe Target へのエクスペリエンスフラグメントの書き出し
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 source-git-commit: 8e13f671ada67e4e22b66094ad23bf5a0508ccba
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2259'
 ht-degree: 100%
 
@@ -182,7 +182,7 @@ Adobe Target からセグメントを同期するように、クラウド設定�
 
    * **API タイプ**：デフォルトは REST です（XML は非推奨／廃止予定です）
 
-   * **A4T Analytics クラウド設定**：ターゲットアクティビティの目標と指標に使用する Analytics クラウド設定。これは、コンテンツをターゲット化するときに、Adobe Analytics をレポートソースとして使用している場合に必要です。
+   * **A4T Analytics クラウド設定**：ターゲットアクティビティの目標と指標に使用する Analytics クラウド設定を選択します。これは、コンテンツをターゲット化するときに、Adobe Analytics をレポートソースとして使用している場合に必要です。
 
       <!-- Is this needed?
      If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
@@ -208,6 +208,7 @@ Adobe Target からセグメントを同期するように、クラウド設定�
       >* セキュリティが改善されています。
       >* 単一ページアプリケーションの実装オプションが改善されています。
       >* target.js に含まれていたコンポーネントが AT.js にも含まれているので、target.js への呼び出しがなくなりました。
+
       >
       >**クライアントライブラリ**&#x200B;ドロップダウンメニューでは、AT.js または mbox.js を選択できます。
 
@@ -223,7 +224,7 @@ Adobe Target からセグメントを同期するように、クラウド設定�
       >
       >正確なターゲット設定はオーサーインスタンスでは常に有効になっています。ただし、パブリッシュインスタンスではクラウドサービス設定（**http://localhost:4502/etc/cloudservices.html**）の正確なターゲット設定の横にあるチェックマークをオフにすることで、正確なターゲット設定をグローバルにオフにできます。また、クラウドサービス設定の設定に関係なく、個々のコンポーネントの正確なターゲット設定のオンとオフを切り替えることもできます。
       >
-      >この設定を変更しても、作成済み&#x200B;******&#x200B;の対象コンポーネントには影響しません。これらのコンポーネントには直接変更を加える必要があります。
+      >この設定を変更しても、作成済みの対象コンポーネントには影響しません&#x200B;***。***&#x200B;これらのコンポーネントには直接変更を加える必要があります。
 
 1. 「**Adobe Target に接続**」をクリックして、Target の接続を開始します。接続に成功すると、「**接続に成功しました**」というメッセージが表示されます。メッセージの「**OK**」をクリックして、ダイアログの「**OK**」をクリックします。
 

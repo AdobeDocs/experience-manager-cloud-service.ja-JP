@@ -131,7 +131,7 @@ ht-degree: 100%
 1. ページが&#x200B;[**編集**&#x200B;モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)であることを確認します。
 1. [コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)を開きます。
 1. 必要なコンポーネントを[必要な位置](#component-placeholder)までドラッグします。
-1. コンポーネントを[編集](#edit-content)します。
+1. [コンポーネントを編集します。](#edit-content)
 
 >[!NOTE]
 >
@@ -468,7 +468,7 @@ AEM では、他のユーザーによるコンテンツの変更を防ぐため�
 >
 >ページのロックは、別のユーザーとして実行している場合にも実行できます。ただし、この方法でロックされたページをロック解除できるのは、別のユーザーとして実行したユーザーか、管理者ユーザーです。
 >
->実際にページのロック作業をおこなったユーザーに成り代わっても、ページをロック解除できません。
+>実際にページのロック作業を行ったユーザーに成り代わっても、ページをロック解除できません。
 <!--
 >Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
 -->
@@ -485,7 +485,7 @@ AEM では、他のユーザーによるコンテンツの変更を防ぐため�
 >
 >ページのロックは、別のユーザーとして実行している場合にも実行できます。ただし、この方法でロックされたページをロック解除できるのは、別のユーザーとして実行したユーザーか、管理者ユーザーです。
 >
->実際にページのロック作業をおこなったユーザーに成り代わっても、ページをロック解除できません。
+>実際にページのロック作業を行ったユーザーに成り代わっても、ページをロック解除できません。
 <!--
 >Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
 -->

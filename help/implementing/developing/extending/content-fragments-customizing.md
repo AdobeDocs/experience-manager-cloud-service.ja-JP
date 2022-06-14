@@ -19,7 +19,7 @@ Adobe Experience Manager as a Cloud Service 内で、コンテンツフラグメ
 
 ## アーキテクチャ {#architecture}
 
-コンテンツフラグメントの基本的な[構成要素](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)は次のとおりです。
+コンテンツフラグメントの基本的な[構成要素](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)は次の通りです。
 
 * *コンテンツフラグメント*
 * *コンテンツフラグメント*&#x200B;を構成する 1 つ以上のコンテンツ要素
@@ -204,7 +204,7 @@ Assets コアと統合するには：
 
    * **コンテンツ要素**（[ContentElement](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html)）
 
-      * 基本データ（名前、タイトル、説明）を取得する
+      * 基本データ（名前、タイトル、説明）を取得
       * コンテンツを取得／設定する
       * 要素のバリエーションにアクセスする
 
@@ -216,7 +216,7 @@ Assets コアと統合するには：
       * バリエーションを解決するためのショートカット（要素に指定されたバリエーションを使用できない場合は実装固有の追加のフォールバックロジックを適用）
    * **コンテンツバリエーション**（[ContentVariation](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html)）
 
-      * 基本データ（名前、タイトル、説明）を取得する
+      * 基本データ（名前、タイトル、説明）を取得
       * コンテンツを取得／設定する
       * 最後に変更された情報に基づくシンプルな同期
 

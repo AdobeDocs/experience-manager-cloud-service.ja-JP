@@ -37,7 +37,7 @@ AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 �
 
 * Cloud Service の互換性の問題に対応するため、コード品質ルールが追加されました。
 
-### バグ修正  {#bug-fixes}
+### バグの修正  {#bug-fixes}
 
 * ドメイン名に対する SSL 証明書の照合で、大文字と小文字が区別されなくなりました。
 

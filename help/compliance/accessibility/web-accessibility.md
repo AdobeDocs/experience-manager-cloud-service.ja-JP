@@ -27,7 +27,7 @@ Adobe Experience Manager as a Cloud Service は、[World Wide Web Consortium](#w
 
 >[!NOTE]
 >
->詳しくは、[Accessibility conformance reports for Adobe solutions](https://www.adobe.com/accessibility/compliance.html)（アドビソリューションのアクセシビリティ準拠レポート）を参照してください。
+>詳細に関しては、[アドビソリューションのアクセシビリティ準拠レポート](https://www.adobe.com/accessibility/compliance.html) を参照してください。
 
 ## World Wide Web Consortium {#world-wide-web-consortium}
 
@@ -49,7 +49,7 @@ Adobe Experience Manager を使用すると、コンテンツ作成者や Web �
 
 >[!NOTE]
 >
->サイトを作成する際は、サイトの全体的なレベルを特定する必要があります。
+>サイトを作成する際は、サイトが準拠する全体的なレベルを決めておく必要があります。
 
 <!--
 * [Configuring the Rich Text Editor for Producing Accessible Sites](/help/sites-administering/rte-accessible-content.md)

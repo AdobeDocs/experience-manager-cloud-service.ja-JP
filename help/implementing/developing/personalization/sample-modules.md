@@ -38,7 +38,7 @@ contexthub.base UI モジュールタイプは、その他すべての UI モジ
 contexthub.base UI モジュールは、JSON 形式の JavaScript オブジェクトを使用して設定します。UI モジュールの機能を設定するには、次のいずれかのプロパティを含めます。
 
 * **image：**&#x200B;アイコンとして表示する画像への URL。
-* **icon：**[Coral UI アイコン](https://helpx.adobe.com/jp/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html)クラスの名前。icon プロパティと image プロパティの両方に値を指定した場合は、image が使用されます。
+* **icon：** [Coral UI アイコン](https://helpx.adobe.com/jp/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html)クラスの名前。icon プロパティと image プロパティの両方に値を指定した場合は、image が使用されます。
 * **title：** UI モジュールのタイトル。タイトルは、ポインターを UI モジュールアイコンに合わせると表示されます。
 * **fullscreen：** UI モジュールが全画面モードをサポートするかどうかを示すブール値。全画面をサポートする場合は `true`、全画面モードを許可しない場合は `false` を使用します。
 * **template：** ContextHub のツールバーにレンダリングするコンテンツを指定する [Handlebars](https://handlebarsjs.com/) テンプレート。最大 2 つの `<p>` タグを使用します。
@@ -49,7 +49,7 @@ contexthub.base UI モジュールは、JSON 形式の JavaScript オブジェ�
    * icon：（オプション）左側に表示する CUI アイコンクラス。image が指定されている場合は無視されます。
    * selected：（オプション）選択された場合（true = 選択）にこの項目を表示するかどうかを指定するブール値。デフォルトでは、選択された項目は太字のフォントで表示されます。その他の外観を設定するには、`listType` プロパティを使用します（以下を参照）。
 * **listType：**&#x200B;ポップオーバーリスト項目に使用するスタイル。次のいずれかの値を使用します。
-   * checkmark
+   * チェックマーク
    * チェックボックス
    * radio
 * **popoverTemplate：** UI モジュールをクリックしたときにポップオーバーにレンダリングするコンテンツを指定する Handlebars テンプレート。この項目を含める場合は、`list` 項目を含めないでください。

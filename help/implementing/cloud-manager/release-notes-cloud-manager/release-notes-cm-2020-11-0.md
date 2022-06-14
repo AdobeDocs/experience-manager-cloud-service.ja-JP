@@ -27,7 +27,7 @@ AEM as a Cloud Service 2020.11.0 の Cloud Manager のリリース日は 2020 �
 
 * Cloud Manager の「**学習**」タブが更新され、UI に新しい画像が追加されました。
 
-### バグ修正 {#bug-fixes-cloud-manager}
+### バグの修正 {#bug-fixes-cloud-manager}
 
 * ビルドの実行に先立って行われる依存関係の読み込みには、Maven プラグインのダウンロードが必要でした。
 * 言語を選択するための Cloud Manager フッターからのリンクが、正しい場所を指すようになりました。

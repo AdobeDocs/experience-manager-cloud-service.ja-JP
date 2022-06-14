@@ -1,13 +1,13 @@
 ---
 title: ライセンスダッシュボード
 description: Cloud Manager には、組織またはテナントが使用できる AEMaaCS 製品の使用権限を簡単に表示できるダッシュボードが用意されています。
-source-git-commit: 82b4a4c8da9f42de08c19eb3caf25ff3a1bad4d4
+exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
+source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 6%
 
 ---
-
 
 # ライセンスダッシュボード {#license-dashboard}
 

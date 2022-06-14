@@ -27,8 +27,8 @@ TXT レコードを追加する前に、次の要件を満たす必要があり�
 
 | ドメイン | 名前 | TXT 値 |
 |--- |--- |---|
-| `example.com` | `_aemverification.example.com` | Cloud Manager UI に表示された値全体をコピーします。 これは、ドメインと環境に固有のものです。 例：<br>`adobe-aem-verification=example.com/[program]/[env]/..*` |
-| `www.example.com` | `_aemverification.www.example.com` | Cloud Manager UI に表示された値全体をコピーします。 これは、ドメインと環境に固有のものです。 例：<br>`adobe-aem-verification=www.example.com/[program]/[env]/..*` |
+| `example.com` | `_aemverification.example.com` | Cloud Manager UI に表示された値全体をコピーします。 これは、ドメインと環境に固有のものです。 次に例を示します。<br>`adobe-aem-verification=example.com/[program]/[env]/..*` |
+| `www.example.com` | `_aemverification.www.example.com` | Cloud Manager UI に表示された値全体をコピーします。 これは、ドメインと環境に固有のものです。 次に例を示します。<br>`adobe-aem-verification=www.example.com/[program]/[env]/..*` |
 
 完了したら、次のコマンドを実行して結果を確認できます
 

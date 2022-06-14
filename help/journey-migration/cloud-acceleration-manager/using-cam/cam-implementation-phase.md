@@ -5,7 +5,7 @@ exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
 source-git-commit: f2cad442ba85d1d889eda669502e120406a4380b
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -104,7 +104,7 @@ AEM as a Cloud Service デプロイメントカードには、コードを AEM a
    >[!NOTE]
    >コンテンツ転送ツールを使用する前に、[前提条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=ja)および[ベストプラクティスとガイドライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja)を確認してください。
 
-1. 移行セットに入力し、コンテンツ転送の抽出段階を完了するには、コンテンツ転送ツールをダウンロードしてインストールする必要があります。 レビュー [コンテンツ転送ツールの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) を参照して、コンテンツ転送ツールの使用方法を確認してください。
+1. 移行セットに入力し、コンテンツ転送の抽出段階を完了するには、コンテンツ転送ツールをダウンロードしてインストールする必要があります。 レビュー [コンテンツ転送ツールの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja) を参照して、コンテンツ転送ツールの使用方法を確認してください。
 
 1. 移行セットからAEM as a Cloud Service上の環境にコンテンツを取り込むには、取り込みを開始する必要があります。 に移動します。 **取り込みジョブ** をクリックし、 **新しい取り込み**. レビュー [Target へのコンテンツの取り込み](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) を参照して、コンテンツ転送のインジェスト段階を完了する方法を確認してください。
 

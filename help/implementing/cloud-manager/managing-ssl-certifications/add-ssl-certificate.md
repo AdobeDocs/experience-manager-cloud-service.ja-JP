@@ -3,7 +3,7 @@ title: SSL 証明書の追加
 description: Cloud Manager のセルフサービスツールを使用して独自の SSL 証明書を追加する方法を説明します。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 source-git-commit: 2c87d5fb33b83ca77b97391e4b0baaf38f8dd026
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 100%
 

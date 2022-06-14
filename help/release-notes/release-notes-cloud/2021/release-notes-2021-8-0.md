@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート  {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート {#release-notes}
 
 以下では、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンのリリースノート全般の概要を説明します。
 
@@ -70,7 +70,7 @@ ht-degree: 100%
 
 * **アダプティブフォームでの Adobe Sign の役割の使用**：ビジネスおよびエンタープライズサービスレベルの Adobe Sign では、ワークフロー要件に適切に合致するように、契約書受信者の役割を署名者以外にも拡大できます。契約書の受信者ごとに、アダプティブフォームでの自分の役割を設定できるようになりました。デフォルトの役割は署名者です。
 
-* **アダプティブフォーム用の Analytics**：アダプティブフォーム用の Adobe Analytics でエンドユーザーの行動を捉えて追跡し、エンドユーザーに関するインサイトを収集できるようになりました。十分な情報に基づいて決定を行い、エンドユーザーのエクスペリエンスを向上させることができます。
+* **Analytics for Adaptive Forms**：Adobe Analytics for Adaptive Forms でエンドユーザーの行動を捉え追跡して、エンドユーザーに関するインサイトを収集できるようになりました。十分な情報に基づいて決定を行い、エンドユーザーのエクスペリエンスを向上させることができます。
 
 * **AEM Forms と Microsoft Dynamics および Salesforce.com との簡単な接続**：Microsoft Dynamics と Salesforce.com のデータソース設定およびデータモデルが標準で提供されるので、開発者が Microsoft Dynamics と Salesforce.com をアダプティブフォームのデータソースとしてより迅速かつ簡単に設定できるようになりました。
 

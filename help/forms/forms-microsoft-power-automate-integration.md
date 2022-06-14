@@ -3,13 +3,13 @@ title: アダプティブフォームとMicrosoft Power Automate の統合
 description: アダプティブフォームをMicrosoft Power Automate と統合します。
 hide: true
 hidefromtoc: true
-source-git-commit: 8dcd5f917f7aad3572b16f0510a1229d81cbb578
+exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
+source-git-commit: adbc74c27e2a8d4f9ee5b9c8431529c21fe69495
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
 
 ---
-
 
 # アダプティブフォームとMicrosoft Power Automate の統合 {#architecture}
 

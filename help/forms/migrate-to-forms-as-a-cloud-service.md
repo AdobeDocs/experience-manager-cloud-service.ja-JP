@@ -8,7 +8,7 @@ level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
 source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1219'
 ht-degree: 100%
 
@@ -55,9 +55,9 @@ ht-degree: 100%
 
 1. 管理者権限を使ってクローン環境にログインします。
 
-1. [ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja#cloud-migration)を実行して、ユーザーを対応するアドビの IMS ユーザーアカウントにマッピングします。[!DNL AEM Forms] as a Cloud Service インスタンスにログインするには、アドビの IMS ユーザーアカウントが必要です。
+1. [ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)を実行して、ユーザーを対応するアドビの IMS ユーザーアカウントにマッピングします。[!DNL AEM Forms] as a Cloud Service インスタンスにログインするには、アドビの IMS ユーザーアカウントが必要です。
 
-1. クローン環境の[ソフトウェア配布ポータル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja#cloud-migration)から、[!DNL AEM Forms]コンテンツ転送ツール[と ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) as a Cloud Service 移行ユーティリティをダウンロードしてインストールします。AEM パッケージマネージャーを使用して、ツールとユーティリティをインストールできます。
+1. クローン環境の[ソフトウェア配布ポータル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration)から、[!DNL AEM Forms]コンテンツ転送ツール[と ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) as a Cloud Service 移行ユーティリティをダウンロードしてインストールします。AEM パッケージマネージャーを使用して、ツールとユーティリティをインストールできます。
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL 操作]**／**[!UICONTROL コンテンツの移行]**&#x200B;に移動します。
 
@@ -92,7 +92,7 @@ ht-degree: 100%
 
    <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 
-1. [コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja#cloud-migration)を実行します。「**[!UICONTROL 移行セットの作成]**」画面でパラメーターを指定するときに、アダプティブフォーム、テーマ、テンプレート、フォームデータモデル、クラウドサービス、カスタムコンポーネント、その他の AEM Forms 固有のアセットのパスを「**[!UICONTROL 含めるパス]**」オプションに指定します。指定した [!DNL AEM Forms] アセットを移行セットに追加します。
+1. [コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration)を実行します。「**[!UICONTROL 移行セットの作成]**」画面でパラメーターを指定するときに、アダプティブフォーム、テーマ、テンプレート、フォームデータモデル、クラウドサービス、カスタムコンポーネント、その他の AEM Forms 固有のアセットのパスを「**[!UICONTROL 含めるパス]**」オプションに指定します。指定した [!DNL AEM Forms] アセットを移行セットに追加します。
 
 ## 様々な AEM Forms 固有のアセットのパス
 

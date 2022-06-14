@@ -3,7 +3,7 @@ title: '"[!DNL AEM Forms] as a Cloud Service リリースノート"'
 description: '"[!DNL AEM Forms] as a Cloud Service リリースノート"'
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2024'
 ht-degree: 100%
 

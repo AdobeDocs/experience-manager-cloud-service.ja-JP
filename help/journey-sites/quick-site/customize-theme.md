@@ -138,5 +138,5 @@ AEM 管理者から提供された要件に基づいて、テーマのカスタ�
 [カスタマイズしたテーマのデプロイ](deploy-theme.md) のドキュメントを確認して、クイックサイト作成ジャーニーの次のパートに進むことをお勧めしますが、以下のリソースではこのドキュメントで取り上げた概念についてより詳しく説明しています。追加的なオプションであり、ジャーニーを続ける上で必須のリソースではありません。
 
 * [AEM サイトテーマ](https://github.com/adobe/aem-site-template-standard-theme-e2e) - これは AEM サイトテーマの GitHub リポジトリです。
-* [npm](https://www.npmjs.com) - npm に基づいたサイトをすばやく作成するために使用される AEM テーマ。
-* [webpack](https://webpack.js.org) - AEM テーマを使用してサイトをすばやく作成する場合は、webpack に依存します。
+* [npm](https://www.npmjs.com) - サイトをすばやく作成するために使用される AEM テーマが npm に基づいている場合。
+* [webpack](https://webpack.js.org) - サイトをすばやく作成するために使用される AEM テーマが webpack に基づいている場合。

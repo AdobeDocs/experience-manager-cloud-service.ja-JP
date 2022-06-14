@@ -9,7 +9,7 @@ kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 source-git-commit: 3778ed83453ab3e1e01e662a43d4f86988da1668
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1004'
 ht-degree: 100%
 
@@ -94,7 +94,7 @@ AEM as a Cloud Service SDK を使用するローカル CIF アドオン開発の
    Authorization: Bearer <Access Token>
    ```
 
-   シークレットについて詳しくは、[AEM as a Cloud Service の OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#local-development)を参照してください。
+   シークレットについて詳しくは、[AEM as a Cloud Service の OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)を参照してください。
 
 1. AEM as a Cloud Service SDK を開始します。
 

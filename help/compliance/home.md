@@ -1,18 +1,18 @@
 ---
 title: コンプライアンス
-description: Experience Manageras a Cloud Service
+description: Experience Manageras a Cloud Service におけるコンプライアンスの概要について説明します。
 landing-page-description: プライバシーやアクセシビリティなど、AEM as a Cloud Service でのコンプライアンスの概要については、まずこちらを参照してください。
 exl-id: d7ef2875-a6d7-4f97-b14e-7e5a383cdee9
 source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # AEM as a Cloud Service でのコンプライアンス {#aem-compliance}
 
-Experience Manageras a Cloud Service
+Experience Manager as a Cloud Service におけるコンプライアンスの概要について説明します。
 
 ## 概要に関する主要な記事 {#key-articles}
 

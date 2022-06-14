@@ -22,7 +22,7 @@ Dynamic Media は、ズーム、360 度スピン、ビデオなどのインタ�
 
 ## Dynamic Media の機能 {#what-you-can-do-with-dynamic-media}
 
-Dynamic Media では、公開前のアセットを管理できます。一般的なアセットの操作方法については、[デジタルアセットの操作](/help/assets/manage-digital-assets.md)で詳しく説明しています。一般的なトピックには、アセットのアップロード、ダウンロード、編集および公開、プロパティの表示と編集、アセットの検索が含まれます。
+Dynamic Media では、公開前のアセットを管理できます。一般的なアセットの操作方法については、[デジタルアセットの操作](/help/assets/manage-digital-assets.md)で詳しく説明しています。一般的なトピックには、アセットのアップロード、ダウンロード、編集、公開と、プロパティの表示、編集、アセットの検索が含まれます。
 
 Dynamic Media 限定の機能は次のとおりです。
 

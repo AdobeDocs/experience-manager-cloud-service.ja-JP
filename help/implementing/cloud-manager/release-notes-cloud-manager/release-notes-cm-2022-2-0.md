@@ -1,12 +1,12 @@
 ---
-title: AEM as a Cloud Service リリース 2022.02.0 の Cloud Manager のリリースノート
+title: AEM as a Cloud Service Release 2022.02.0 Cloud Manager のリリースノート
 description: AEM as a Cloud Service リリース 2022.02.0 の Cloud Manager のリリースノートです.
 feature: Release Information
 exl-id: da0643a0-78f8-4e9d-9cc9-a1a17067a08c
 source-git-commit: 0c4a42595800f7f1d0869bf647c3ec99023b12c5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '287'
+ht-degree: 32%
 
 ---
 
@@ -33,7 +33,7 @@ AEM as a Cloud Service 2022.02.0の Cloud Manager のリリース日は 2022 年
 * の重大度 `BannedPath` [品質ルール](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) がブロッカーから重大に変更されました。
 * パイプラインウィザードでは、AEM環境の更新が必要になった場合に、 [Web 層設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 関連付けられています。
 
-## バグの修正 {#bug-fixes}
+## バグ修正 {#bug-fixes}
 
 * 古い Git リポジトリのパスワードが、新しいパスワードの生成時に毎回無効化されるようになりました。
 * API で環境変数を更新しても、まれにパイプラインの実行に干渉しなくなりました。

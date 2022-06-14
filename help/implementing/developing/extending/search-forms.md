@@ -210,7 +210,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
     </ul> </td>
   </tr>
   <tr>
-   <td>非表示フィルター</td>
+   <td>非表示のフィルター</td>
    <td>プロパティおよび値のフィルターで、ユーザーには表示されません。</td>
    <td>
     <ul>
@@ -357,7 +357,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
     </ul> </td>
   </tr>
   <tr>
-   <td>評価</td>
+   <td>レーティング</td>
    <td>平均評価に従ってリソースを検索します。<br /> </td>
    <td>
     <ul>
@@ -546,7 +546,7 @@ Sites 専用の述語の、公開およびライブコピーのチェックボ�
 
 ## 検索フォームの設定 {#configuring-your-search-forms}
 
-### カスタマイズされた設定を作成／開く {#creating-opening-a-customized-configuration}
+### カスタマイズされた設定を作成または開く {#creating-opening-a-customized-configuration}
 
 1. **ツール**／**一般**／**検索フォーム**&#x200B;に移動します。
 
@@ -589,7 +589,7 @@ Sites 専用の述語の、公開およびライブコピーのチェックボ�
 
 ### 検索設定のプレビュー {#previewing-the-search-configuration}
 
-1. プレビューアイコンを選択します。
+1. 「プレビュー」アイコンを選択します。
 
    ![プレビューアイコン](assets/csf-preview-icon.png)
 

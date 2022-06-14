@@ -61,13 +61,13 @@ Analytics Standard API を使用してAdobe Experience Manager as a Cloud Servic
 
 ## AEMとのAdobe Analytics統合用の IMS の設定 {#configuring-ims-adobe-analytics-integration-with-aem}
 
-Adobe開発者コンソールを使用して、Adobe Analyticsでプロジェクト（統合）を作成し (AEMで使用するために )、必要な権限を割り当てる必要があります。
+Adobe Developer Console を使用する場合は、Adobe Analyticsでプロジェクト（統合）を作成し、AEMで使用するための権限を割り当てる必要があります。
 
 ### プロジェクトの作成 {#creating-the-project}
 
-Adobe開発者コンソールを開き、AEMが使用するAdobe Analyticsでプロジェクトを作成します。
+Adobe Developerコンソールを開いて、AEMが使用するAdobe Analyticsでプロジェクトを作成します。
 
-1. プロジェクト用のAdobe開発者コンソールを開きます。
+1. Adobe Developer Console を開いて、プロジェクトを表示します。
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
@@ -122,9 +122,9 @@ Adobe開発者コンソールを開き、AEMが使用するAdobe Analyticsでプ
 1. 選択 **API 資格情報**&#x200B;を選択し、必要な統合設定を選択します。
 1. **製品の役割**&#x200B;として、**オブザーバー**&#x200B;の代わりに&#x200B;**編集者**&#x200B;を選択します。
 
-## 開発者コンソール統合プロジェクト用にAdobeされた詳細 {#details-stored-for-the-ims-integration-project}
+## Adobe Developer Console Integration Project 用に保存される詳細 {#details-stored-for-the-ims-integration-project}
 
-Adobe開発者コンソール — プロジェクトで、すべての統合プロジェクトのリストを表示できます。
+Adobe Developer Console - Projects から、すべての統合プロジェクトのリストを表示できます。
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
@@ -148,7 +148,7 @@ AEMに戻ると、Analytics 用の IMS 統合から必要な値を追加する�
 1. [AEM で IMS 設定を開く](#configuring-ims-generating-a-public-key)に戻ります。
 1. 「**次へ**」を選択します。
 
-1. ここで、 [開発者コンソールでのプロジェクト設定のAdobeの詳細](#details-stored-for-the-ims-integration-project):
+1. ここで、 [Adobe Developer Console のプロジェクト設定からの詳細](#details-stored-for-the-ims-integration-project):
 
    * **タイトル**：テキスト。
    * **認証サーバー**：以下の&#x200B;**ペイロード**&#x200B;セクションの `aud` 行からこれをコピーして貼り付けます。例：以下の例では `https://ims-na1.adobelogin.com`　
@@ -158,7 +158,7 @@ AEMに戻ると、Analytics 用の IMS 統合から必要な値を追加する�
 
    ![AEM IMS 設定の詳細](assets/integrate-analytics-ims-10.png)
 
-1. 「**作成**」で確認します。
+1. 「**作成**」で確定します。
 
 1. Adobe Analyticsの設定がAEMコンソールに表示されます。
 

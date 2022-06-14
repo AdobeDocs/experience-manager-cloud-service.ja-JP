@@ -4,7 +4,7 @@ description: AEM と Adobe Commerce は、コマース統合フレームワー�
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b,1cdfda88-a728-432f-b24a-f81347572bcf
 source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 100%
 

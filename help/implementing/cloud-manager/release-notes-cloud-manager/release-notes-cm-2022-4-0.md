@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Manager as a Cloud Serviceの Cloud Manager 2022.4.0 のリリースノート
-description: AEM as a Cloud Serviceの Cloud Manager 2022.4.0 のリリースノートです。
+title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.4.0 のリリースノート
+description: AEM as a Cloud Service の Cloud Manager 2022.4.0 のリリースノートです。
 feature: Release Information
 exl-id: e7ff623b-aeca-40a6-bf48-98af270a4117
 source-git-commit: 458d63c27bb2ab4d09237aa3ecb96c0f6d5e67ed
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '399'
+ht-degree: 60%
 
 ---
 
-# Adobe Experience Manager as a Cloud Serviceの Cloud Manager 2022.4.0 のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.4.0 のリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Serviceの Cloud Manager 2022.4.0 のリリースノートについて説明します。
+このページは、AEM as a Cloud Service の Cloud Manager 2022.4.0 のリリースノートです。
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ AEM as a Cloud Serviceの Cloud Manager リリース 2022.4.0 のリリース日
    * 詳しくは、[Adobe Experience Manager の Java サポートポリシーに関する FAQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/Java_Policy_for_Adobe_Experience_Manager.pdf) を使用して、この変更に関するよくある質問に対する回答を確認してください。
 * 検証ステップ中に古いAEMバージョンを検出することで、パイプラインの実行がより高速に失敗するようになりました。 UI に、ユーザーをガイドするメッセージが表示されます。
 
-## バグの修正 {#bug-fixes}
+## バグ修正 {#bug-fixes}
 
 * UI テスト手順で作成したログを、UI からダウンロードできるようになりました。
 * Web 層設定パイプラインで、Web 層設定の実行からのみパッケージを再利用できるようになりました。

@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # SPA の動的モデルとコンポーネントのマッピング {#dynamic-model-to-component-mapping-for-spas}
 
-このドキュメントでは、AEM 用 JavaScript SPA SDK で動的モデルとコンポーネントのマッピングがどのようにおこなわれるかを説明します。
+このドキュメントでは、AEM 用 JavaScript SPA SDK で動的モデルとコンポーネントのマッピングがどのように行われるかを説明します。
 
 ## ComponentMapping モジュール {#componentmapping-module}
 

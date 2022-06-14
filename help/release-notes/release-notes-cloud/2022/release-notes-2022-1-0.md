@@ -1,15 +1,15 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.1.0 リリースのリリースノート。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.1.0 リリースのリリースノート。'
-source-git-commit: 7b4f9e3808e3de933f7c1e1fd4f80be078a9ae1a
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 リリースのリリースノート。'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 リリースのリリースノート。'
+exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
+source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
 workflow-type: tm+mt
 source-wordcount: '1085'
-ht-degree: 53%
+ht-degree: 97%
 
 ---
 
-
-# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート  {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート {#release-notes}
 
 以下では、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンのリリースノート全般の概要を説明します。
 
@@ -23,16 +23,15 @@ ht-degree: 53%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在のリリース (2022.1.0) は 2022 年 2 月 4 日です。
-次のリリース (2022.3.0) は 2022 年 3 月 31 日です。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の現在リリース（2022.1.0）のリリース日は、2022年02月3日（PT）です。次回のリリース（2022.3.0）は 2022年03月31日（PT）です。
 
 ## リリースビデオ {#release-video}
 
-以下をご覧ください： [2022 年 1 月リリースの概要](https://video.tv.adobe.com/v/340120) 2022.1.0 リリースで追加された機能の概要を示すビデオです。
+2022.1.0 リリースで追加された機能の概要については、[2022年1月リリースの概要](https://video.tv.adobe.com/v/340120)ビデオをご覧ください。
 
 ## Adobe Experience Manager Sites as a Cloud Service {#sites}
 
-* この **[フロントエンドパイプラインの有効化](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** ボタンが **サイト** ページコアコンポーネント v2 を使用するサイトの場合は、サイトコンソールのパネル。 このボタンを使用して、フロントエンドパイプラインで既存のクライアントライブラリの上にデプロイされるテーマを読み込むようにサイトを設定します。
+* ページコアコンポーネント v2 を使用するサイトの Sites コンソールの&#x200B;**サイト**&#x200B;パネルで「**[フロントエンドパイプラインを有効化](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)**」ボタンを使用できます。このボタンを使用すると、フロントエンドパイプラインでデプロイされるテーマを既存のクライアントライブラリの上に読み込むようにサイトを設定できます。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -42,26 +41,26 @@ ht-degree: 53%
 
 * [!DNL Dynamic Media] は、MXF ビデオの取り込み、プレビュー、再生、公開をサポートするようになりました。MXF ビデオの注釈とショッパブルビデオは、まだサポートされていません。
 
-* リモート DAM と Sites デプロイメント間の接続を設定すると、リモート DAM 上のアセットが Sites デプロイメントで使用できるようになります。 これで、リモート DAM アセットまたはフォルダーに対して [更新、削除、名前変更、および移動操作](/help/assets/use-assets-across-connected-assets-instances.md) を実行できます。更新は、Sites デプロイメントで自動的に利用できます（少し遅れて）。
+* リモート DAM と Sites デプロイメント間の接続を設定すると、リモート DAM 上のアセットが Sites デプロイメントで使用できるようになります。これで、リモート DAM アセットまたはフォルダーに対して、[更新、削除、名前変更、移動の操作](/help/assets/use-assets-across-connected-assets-instances.md)を実行できます。更新は、Sites デプロイメントで自動的に（少し遅れて）利用できます。
 
 ### [!DNL Assets] プレリリースチャネルの新機能 {#assets-prerelease-features}
 
-* [!DNL AEM Dynamic Media] が次の柔軟性を提供 [1 つのエイリアスアカウントを設定](/help/assets/dynamic-media/dm-alias-account.md) を使用すると、標準のDynamic Media URL とビューア埋め込みコードを確実に更新できます。 これは、SEO に良い影響を与え、リブランディングなどのビジネスコンテキストの更新を反映します。
+* [!DNL AEM Dynamic Media] は柔軟性が向上し、ユーザーインターフェイスで [1 つのエイリアスアカウントを設定](/help/assets/dynamic-media/dm-alias-account.md)できるようになったので、標準搭載の Dynamic Media URL とビューア埋め込みコードを確実に更新できます。これは、SEO に良い影響を及ぼし、リブランディングなどのビジネスコンテキストに応じて行われた更新を反映します。
 
-* これで、 [!DNL Experience Manager Assets] 次の操作を行うユーザーインターフェイス：
+* [!DNL Experience Manager Assets] のユーザーインターフェイスを使用して以下を行えるようになりました。
 
-   * リポジトリ内の重複アセットの検出を設定します。
+   * リポジトリ内の重複アセットの検出を設定する。
 
-   * 画像へのデジタル透かしの追加を設定します。
+   * 画像へのデジタル透かしの追加を設定する。
 
-* 管理者は、大量のダウンロード用に電子メールサービスを設定できるようになりました。 これにより、ユーザーは次の操作を実行できます。 [大量のダウンロード用に電子メール通知を有効にする](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) から [!DNL Experience Manager Assets] インターフェイス。 ダウンロード処理の完了時に、アーカイブされた zip フォルダーのダウンロードリンクを含む電子メール通知がユーザーに送信されます。
+* 管理者は、大量のダウンロードに備えて電子メールサービスを設定できるようになりました。これにより、ユーザーは [!DNL Experience Manager Assets] インターフェイスから[大量ダウンロード時の電子メール通知を有効にする](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads)ことができます。ダウンロード処理の完了時に、アーカイブされた zip フォルダーのダウンロードリンクを記載した電子メール通知がユーザーに届きます。
 
 
-* この [公開を管理](/help/assets/manage-publication.md) の機能が強化され、ユーザーインターフェイスが改善されました。 ユーザーは、選択した宛先に対して、コンテンツを公開または非公開にできます。 [コンテンツを追加](/help/assets/manage-publication.md#add-content) を DAM リポジトリー全体の発行リストに追加する [フォルダ設定を含める](/help/assets/manage-publication.md#include-folder-settings) 選択したフォルダーのコンテンツを公開し、フィルターを適用するには、次の手順に従います。 [公開をスケジュール](/help/assets/manage-publication.md#publish-assets-later) を後の日時に変更する必要があります。
+* [公開を管理](/help/assets/manage-publication.md)機能が強化され、ユーザーインターフェイスが改善されました。ユーザーは、選択した宛先にコンテンツを公開または選択した宛先からコンテンツを非公開にしたり、DAM リポジトリ全体から公開リストに[コンテンツを追加](/help/assets/manage-publication.md#add-content)したり、[フォルダー設定を含めて](/help/assets/manage-publication.md#include-folder-settings)選択したフォルダーのコンテンツを公開しフィルターを適用したり、後の日時に[公開をスケジュール](/help/assets/manage-publication.md#publish-assets-later)したりできます。
 
 ### バグの修正 {#bug-fixes}
 
-* 元のレンディションがない未処理のアセットは、AEM On-premise から Cloud Services へのアセットの移行中に、Asset computeに送信されて処理されます。
+* 元のレンディションがない未処理のアセットは、オンプレミスの AEM から Cloud Services へのアセットの移行中に、Asset Compute に送信されて処理されます。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -78,20 +77,20 @@ ht-degree: 53%
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms}
 
-* **[Assembler API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**:Assembler API を使用して、組み合わせ、並べ替え、増やし、情報を取得するPDFドキュメント。
+* **[Assembler API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**：Assembler API で PDF ドキュメントの結合、並べ替え、拡張および情報取得を行えます。
 
 
 ## CIF アドオン {#cloud-services-cif}
 
 ### 新機能 {#what-is-new-cif}
 
-* myAccount コンポーネントの強化
+* myAccount コンポーネントの機能が強化されました
 * 製品レコメンデーションコンポーネントは、追加のページタイプ（ホームページ、買い物かご、注文の確認）をサポートします。
 * **ウィッシュリスト**
-   * ログインした訪問者は、ウィッシュリストに製品を追加できます
+   * ログインした訪問者はウィッシュリストに製品を追加できます
    * ウィッシュリストとその製品の管理は、myAccount を通じて可能です
-   * 「ウィッシュリストに追加」ボタンは、ポリシー（製品ティーザー、製品の詳細など）を介して、コンポーネントレベルで有効/無効にできます
-   * コアコンポーネントおよびAEM Venia ストアフロントで使用できます。
+   * ポリシー（製品ティーザー、製品の詳細など）を通じて、「ウィッシュリストに追加」ボタンをコンポーネントレベルで有効／無効にできます
+   * コアコンポーネントとして AEM Venia ストアフロントで使用できます
 
 ![ウィッシュリスト](/help/assets/CIF/wishlist.png)
 
@@ -123,11 +122,11 @@ AEM as a Cloud Service 2022.01.0 における Cloud Manager のリリース日�
 
 ### 新機能 {#what-is-new-ctt}
 
-* コンテンツの検証 — コンテンツ転送ツールで抽出されたすべてのコンテンツがターゲットインスタンスに正常に取り込まれたかどうかを確実に判断できます。 この機能を使用するには、 `System Console` ソースAEM環境の 参照： [コンテンツ転送の検証 — はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) を参照してください。
+* コンテンツの検証 - コンテンツ転送ツールで抽出されたすべてのコンテンツがターゲットインスタンスに正常に取り込まれたかどうかをユーザーが確実に判断できます。この機能を使用するには、ソース AEM 環境の `System Console` で機能を有効にする必要があります。詳しくは、[コンテンツ転送の検証 - はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=ja#getting-started)を参照してください。
 
 ### バグの修正 {#bug-fixes-ctt}
 
-* ユーザーマッピングでは大文字と小文字が区別されるので、一部のユーザーがマッピングされませんでした。 この問題が修正されました。ユーザーマッピングでは、大文字と小文字が区別されなくなりました。
+* ユーザーマッピングでは大文字と小文字が区別されるので、一部のユーザーがマッピングされませんでした。この問題が修正されました。ユーザーマッピングでは、大文字と小文字が区別されなくなりました。
 
 ## ベストプラクティスアナライザー {#bpa-release}
 
@@ -137,11 +136,11 @@ AEM as a Cloud Service 2022.01.0 における Cloud Manager のリリース日�
 
 ### 新機能 {#what-is-new-bpa}
 
-* スマートタグを使用するアセットの数、およびスマートタグを使用しないアセットの数を検出してレポートする機能。
-* 使用されているコアコンポーネントのバージョンを検出してレポートする機能。
-* BPA が実行されたソース層（オーサー層またはパブリッシュ層）の種類を検出し、レポートする機能。
+* スマートタグを使用するアセットと使用しないアセットの数を検出してレポートできるようになりました。
+* 使用されているコアコンポーネントのバージョンを検出しレポートできるようになりました。
+* BPA が実行されたソース層（オーサーまたはパブリッシュ）の種類を検出してレポートできるようになりました。
 
 ### バグの修正 {#bug-fixes-bpa}
 
-* BPA サイズ設定ロジックがより高速で効率的になりました。
-* BPA は、実行時に分析済みのカウントを増分しないことがありました。 この問題が修正されました。
+* BPA のサイズ決定ロジックがより高速かつ効率的になりました。
+* 一部のシナリオで、BPA が実行時に分析済みのカウントを増分しないことがありました。この問題が修正されました。

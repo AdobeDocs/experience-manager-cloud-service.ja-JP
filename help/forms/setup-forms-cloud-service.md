@@ -5,7 +5,7 @@ exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 source-git-commit: 4d91808aa46cf34772a88a2864c1e3acf27102f7
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 81%
+ht-degree: 91%
 
 ---
 
@@ -41,23 +41,23 @@ ht-degree: 81%
 
 Forms as a Cloud Serviceを使用してアダプティブフォーム（デジタル登録）を作成するか、顧客とのコミュニケーションを生成することができます。 完了後 [オンボーディング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) から [!DNL Adobe Experience Manager] as a Cloud Serviceで、次のいずれかの操作を実行して、デジタル登録または顧客コミュニケーション機能を有効にします。 また、次の両方の機能を有効にすることもできます。
 
-1. Cloud Manager にログインし、AEM Forms as a Cloud Serviceインスタンスを開きます。
+1. Cloud Manager にログインし、AEM Forms as a Cloud Service インスタンスを開きます。
 
 1. 「プログラムを編集」オプションを開き、「ソリューションとアドオン」タブに移動して、「**[!UICONTROL Forms - 通信]**」オプションを選択します。
 
    ![通信](assets/communications.png)
 
-   既に **[!UICONTROL Forms — デジタル登録]** オプションを選択し、 **[!UICONTROL Forms - Communications Add-On]** オプション。
+   「**[!UICONTROL Forms - デジタル登録]**」オプションを既に有効にしてある場合は、「**[!UICONTROL Forms - 通信アドオン]**」オプションを選択します。
 
    ![アドオン](assets/add-on.png)
 
 1. 「**[!UICONTROL 更新]**」をクリックします。
 
-1. ビルドパイプラインを実行します。ビルドパイプラインが成功すると、お使いの環境で通信 API が有効になります。
+1. ビルドパイプラインを実行します。ビルドパイプラインが正常に完了すると、お使いの環境で通信 API が有効になります。
 
 >[!NOTE]
 >
-> ドキュメント操作 API を有効にして設定するには、次のルールを [Dispatcher の設定](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+> ドキュメント操作 API を有効にし設定するには、次のルールを [Dispatcher 設定](setup-local-development-environment.md#forms-specific-rules-to-dispatcher)に追加します。
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`

@@ -1,12 +1,12 @@
 ---
 title: ' [!DNL AEM Forms] as a Cloud Service の概要'
-description: AEM Formsを理解し、ビジネスに適したドキュメントを作成してコンテンツを形成する方法を学びます。 Platform-as-a-Service(PaaS) の概要と、エンタープライズクラスのデジタルフォームとビジネスプロセスを管理する方法、およびFormsを現在のデータソースに接続する方法について説明します。
+description: AEM Forms を理解し、ビジネスに適したドキュメントやコンテンツの作成にどのように役立つのかを学びます。サービスとしてのプラットフォーム（PaaS）、エンタープライズクラスのデジタルフォームとビジネスプロセスを管理する方法、現在のデータソースに Forms を接続する方法について学びます。
 landing-page-description: AEM as a Cloud Service でのフォームの使用方法を理解します。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 

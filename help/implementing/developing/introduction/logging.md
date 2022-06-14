@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 向けのログ
 description: AEM as a Cloud Service のログを使用して一元的なログサービスのグローバルパラメーターを設定する方法、個々のサービスに特有の設定またはデータのログ記録をリクエストする方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 47bd338469a1d47b8f9863b8454e2074657c9fe8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2316'
 ht-degree: 100%
 
@@ -120,7 +120,7 @@ AEM ログレベルは、OSGi 設定を介して環境の種類ごとに設定�
 </tr>
 <tr>
 <td>ログレベル</td>
-<td>DEBUG</td>
+<td>デバッグ</td>
 </tr>
 <tr>
 <td>スレッド</td>
@@ -309,7 +309,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 <td>-</td>
 </tr>
 <tr>
-<td>User</td>
+<td>ユーザー</td>
 <td>-</td>
 </tr>
 <tr>

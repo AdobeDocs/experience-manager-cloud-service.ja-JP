@@ -3,7 +3,7 @@ title: プログラムとプログラムタイプについて
 description: Cloud Manager の階層、その構造に様々な種類のプログラムが収まる仕組み、それらのプログラムの違いなどについて説明します。
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 source-git-commit: 74e17ccb93c97dd6881c9b63d9a2d784d3add430
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 100%
 

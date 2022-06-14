@@ -54,7 +54,7 @@ Microsoft Translator 設定を作成するには、次の手順に従います�
 
 ## Microsoft Translator 体験版ライセンス設定のアップグレード {#upgrading-the-microsoft-translator-trial-license-configuration}
 
-Microsoft Translation 設定ページには、実稼動システムに適したアカウントのサブスクリプションを取得する場合に役立つ、Microsoft Web サイトへのリンクが表示されます。
+Microsoft Translation 設定ページには、実稼動システムに適したアカウントのサブスクリプションを取得する場合に役立つ、Microsoft web サイトへのリンクが表示されます。
 
 1. [ナビゲーションパネル](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps)で、**ツール**／**クラウドサービス**／**翻訳クラウドサービス**&#x200B;をタップまたはクリックします。
 1. 既存の Microsoft Translator 設定をタップまたはクリックします。
@@ -72,6 +72,6 @@ Microsoft Translation 設定ページには、Microsoft Translator エンジン�
 
 ## 翻訳サービス設定のアクティベート {#activating-the-translator-service-configurations}
 
-パブリッシュインスタンスでレプリケーションされる翻訳コンテンツをサポートするには、クラウドサービス設定をアクティベートする必要があります。[ツリーの公開](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-and-unpublishing-a-tree)方法を使用して、Microsoft Translator 設定を格納するリポジトリーノードをアクティベートします。このノードは以下に示す親ノードの下にあります。
+パブリッシュインスタンスでレプリケートされる翻訳コンテンツをサポートするには、クラウドサービス設定をアクティベートする必要があります。[ツリーの公開](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-and-unpublishing-a-tree)方法を使用して、Microsoft Translator 設定を格納するリポジトリーノードをアクティベートします。このノードは以下に示す親ノードの下にあります。
 
 * `/libs/settings/cloudconfigs/translation/msft-translation`

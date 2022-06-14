@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート  {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート {#release-notes}
 
 以下では、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンのリリースノート全般の概要を説明します。
 

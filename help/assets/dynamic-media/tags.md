@@ -195,9 +195,9 @@ Dynamic Media ビューア拡張機能で提供されるデータ要素タイプ
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-各ビューアタイプでサポートされるイベントのリストを照会するには、[Dynamic Media ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html?lang=ja)を参照し、特定のビューアセクションに移動してサブセクションの「Adobe Analytics トラッキングのサポート」を選択します。現在、Dynamic Media ビューアリファレンスガイドでは、イベントの引数について説明していません。
+各ビューアタイプでサポートされるイベントのリストを照会するには、[Dynamic Media ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html?lang=ja)を参照し、特定のビューアセクションに移動してサブセクションの「Adobe Analytics トラッキングのサポート」を選択します。現在、Dynamic Media ビューアリファレンスガイドには、イベント引数は記載されていません。
 
-次に、Dynamic Media ビューアの&#x200B;*データ要素*&#x200B;のライフサイクルを考えてみましょう。このようなデータ要素の値は、対応する Dynamic Media ビューアイベントがページで発生した後に設定されます。例えば、データ要素が **[!UICONTROL LOAD]** イベントとその「asset」引数を指しているとします。このようなデータ要素の値は、ビューアが初めて LOAD イベントを実行した後に有効なデータを受け取ります。データ要素が **[!UICONTROL ZOOM]** イベントとその「scale」引数を指している場合、このようなデータ要素の値は、ビューアが初めて **[!UICONTROL ZOOM]** イベントを送信するまで空のままです。
+次に、Dynamic Media ビューアの&#x200B;*データ要素*&#x200B;のライフサイクルを考えてみましょう。このようなデータ要素の値は、対応する Dynamic Media ビューアイベントがページで発生した後に入力されます。例えば、データ要素が **[!UICONTROL LOAD]** イベントとその「asset」引数を指しているとします。このようなデータ要素の値は、ビューアが初めて LOAD イベントを実行した後に有効なデータを受け取ります。データ要素が **[!UICONTROL ZOOM]** イベントとその「scale」引数を指している場合、このようなデータ要素の値は、ビューアが初めて **[!UICONTROL ZOOM]** イベントを送信するまで空のままです。
 
 同様に、ビューアがページ上の対応するイベントを送信すると、データ要素の値は自動的に更新されます。値の更新は、特定のイベントがルール設定で指定されていない場合でも行われます。例えば、ZOOM イベントの「scale」パラメーターにデータ要素 **[!UICONTROL ZoomScale]** が定義されているとします。ただし、ルール設定に存在する唯一のルールは、**[!UICONTROL LOAD]** イベントによってトリガーされます。**[!UICONTROL ZoomScale]** の値は、ユーザーがビューア内でズームを実行するたびに更新されます。
 
@@ -538,7 +538,7 @@ Experience Platform タグで使用可能なすべての拡張機能は、**[!UI
 
 この拡張機能を設定するには、Adobe Analytics の&#x200B;**[!UICONTROL 管理者]**／**[!UICONTROL レポートスイート]**&#x200B;の「**[!UICONTROL レポートスイート ID]**」列見出しにあるレポートスイート ID が必要です。
 
-（以下のスクリーンショットでは、デモ目的のために、**[!UICONTROL DynamicMediaViewersExtensionDoc]** レポートスイートのレポートスイート ID を使用しています。この ID は、以前の[レポートスイートの選択](#selecting-a-report-suite)で作成および使用されていました）
+（以下のスクリーンショットでは、デモンストレーションのみを目的として、**[!UICONTROL DynamicMediaViewersExtensionDoc]** レポートスイートのレポートスイート ID を使用しています。この ID は、以前の[レポートスイートの選択](#selecting-a-report-suite)で作成および使用されていました）
 
 ![image2019-7-8_16-45-34](assets/image2019-7-8_16-45-34.png)
 

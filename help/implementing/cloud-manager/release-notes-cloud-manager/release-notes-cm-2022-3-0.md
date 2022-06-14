@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Manager as a Cloud Serviceの Cloud Manager 2022.3.0 のリリースノート
-description: AEM as a Cloud Serviceの Cloud Manager 2022.3.0 のリリースノートです。
+title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.3.0 のリリースノート
+description: AEM as a Cloud Service の Cloud Manager 2022.3.0 のリリースノートです。
 feature: Release Information
 exl-id: d09d48c5-6e0a-4a6a-85e9-1a60fdd6e5bf
 source-git-commit: 68586304724530f83649cffee76cefef3e1c8627
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '196'
+ht-degree: 88%
 
 ---
 
-# Adobe Experience Manager as a Cloud Serviceの Cloud Manager 2022.3.0 のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.3.0 のリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Serviceの Cloud Manager 2022.3.0 のリリースノートについて説明します。
+このページは、AEM as a Cloud Service の Cloud Manager 2022.3.0 のリリースノートです。
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ AEM as a Cloud Serviceの Cloud Manager リリース 2022.3.0 のリリース日
 
 ## 新機能 {#what-is-new}
 
-* AEM環境ログへのアクセスは、開発者ロールを使用しておこなうことができます。
+* AEM 環境ログにアクセスするには、開発者の役割を使用します。
 
 ## バグの修正 {#bug-fixes}
 

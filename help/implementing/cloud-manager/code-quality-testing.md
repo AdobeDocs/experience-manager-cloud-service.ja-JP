@@ -3,7 +3,7 @@ title: コード品質テスト
 description: パイプラインのコード品質テストの仕組みと、デプロイメントの品質を向上させる方法について説明します。
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 source-git-commit: 15fb2823d231048885a140edfaa904527a026aae
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 100%
 

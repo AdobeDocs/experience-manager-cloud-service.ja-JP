@@ -4,7 +4,7 @@ description: AEM as a Cloud Service Release 2021.5.0 Cloud Manager のリリー�
 feature: Release Information
 exl-id: 9a0a53d3-31d4-493d-ba2e-b4bb22f60351
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 100%
 

@@ -243,7 +243,7 @@ ht-degree: 100%
 
 [!DNL AEM Forms] は、このツールでサポート対象のフォームタイプのメタデータスキーマを公開します。この方法で、これらのスキーマにアクセスし、メタデータスキーマエディターで提供される機能を使用してカスタムプロパティを追加できます。
 
-### メタデータスキーマエディターへの移動 {#navigate-the-metadata-schema-editor}
+### メタデータスキーマエディターに移動 {#navigate-the-metadata-schema-editor}
 
 1. **[!UICONTROL ツール／Assets／メタデータスキーマ]** に移動します。
 

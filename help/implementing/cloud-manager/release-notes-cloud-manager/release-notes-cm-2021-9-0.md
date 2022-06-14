@@ -15,7 +15,7 @@ ht-degree: 100%
 このページでは、AEM as a Cloud Service Release 2021.9.0 Cloud Manager のリリースノートの概要を説明しています。
 
 >[!NOTE]
->Adobe Experience Manager as a Cloud Service の最新のリリースノートを参照するには、[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja)をクリックしてください。
+>Adobe Experience Manager as a Cloud Service の最新のリリースノートを参照するには、 [こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja) をクリックしてください。
 
 ## リリース日 {#release-date}
 

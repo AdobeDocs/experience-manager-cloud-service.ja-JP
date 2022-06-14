@@ -3,7 +3,8 @@ title: コンテンツ転送ツールでの移行セットの削除（レガシ�
 description: コンテンツ転送ツールでの移行セットの削除
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: a307b085-681a-46b5-9044-b7c14a1b0119
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 89%

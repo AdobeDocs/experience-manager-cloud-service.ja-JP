@@ -3,7 +3,7 @@ title: Screens サービスプロバイダーへの移動
 description: ここでは、Screens サービスプロバイダーへの移動方法について説明します。
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 source-git-commit: 9e43db0fdd55e396de2cf737e1d79bd06a1835e4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 100%
 

@@ -1,6 +1,6 @@
 ---
 title: 3D アセットのプレビュー
-description: Experience Manager で 3D アセットをプレビューする方法を説明します。
+description: Experience Manager で 3D アセットをプレビューする方法を学習します。
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678

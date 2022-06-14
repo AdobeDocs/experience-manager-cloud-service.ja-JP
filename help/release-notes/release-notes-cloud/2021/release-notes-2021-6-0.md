@@ -68,7 +68,7 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 
 * 環境の詳細ページに、公開サービスとプレビューサービスの複数のドメイン名が表示されるようになりました（該当する場合）。詳しくは、[環境の詳細](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)を参照してください。
 
-### バグ修正 {#bug-fixes-junecm}
+### バグの修正 {#bug-fixes-junecm}
 
 * ルート要素名の後に改行を含む JCR ノード定義が正しく解析されなかった問題を修正しました。
 

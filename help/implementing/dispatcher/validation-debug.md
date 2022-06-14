@@ -4,7 +4,7 @@ description: Dispatcher ツールを使用した検証とデバッグ
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: 4dff6bf09fe9337c70adb654d3eff27f5b45f518
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 100%
 

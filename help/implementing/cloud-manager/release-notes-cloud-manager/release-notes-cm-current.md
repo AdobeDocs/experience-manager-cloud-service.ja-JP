@@ -21,7 +21,7 @@ ht-degree: 24%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Serviceの Cloud Manager リリース 2022.6.0 のリリース日は 2022 年 6 月 9 日です。 次回のリリースは 2022 年 6 月 30 日（PT）に予定されています。
+AEM as a Cloud Serviceの Cloud Manager リリース 2022.6.0 のリリース日は 2022 年 6 月 9 日です。 次回のリリースは 2022年6月30日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 

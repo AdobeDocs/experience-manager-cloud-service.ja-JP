@@ -95,7 +95,7 @@ ht-degree: 100%
 
 
 
-## 親パネルのアコーディオンレイアウトの使用 {#using-the-accordion-layout-for-the-parent-panel-nbsp}
+## 親パネルに対するアコーディオンレイアウトの使用  {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 
 パネルには、様々なレイアウトオプションがあります。アコーディオンデザインオプションのレイアウトでは、繰り返し可能なパネルをすぐに使用できます。アコーディオンデザインオプションのレイアウトで繰り返し可能なパネルを使用するには、以下の手順を実行します。
 
@@ -104,7 +104,7 @@ ht-degree: 100%
 
    これで、プラス（+）ボタンと削除（![delete-panel](assets/delete-panel.png)）ボタンを使用して、パネルの追加と削除を行うことができるようになりました。
 
-## フォームテンプレート（XDP／XSD）からのサブフォームの繰り返しの使用 {#using-repeating-subforms-from-form-template-xdp-xsd}
+## フォームテンプレート（XDP／XSD）からのサブフォームの繰り返しの使用  {#using-repeating-subforms-from-form-template-xdp-xsd}
 
 繰り返し可能なサブフォームは、アダプティブフォームの繰り返し可能なパネルに似ています。[!DNL AEM Forms] Designer で繰り返しのサブフォームを作成するには、以下の手順を実行します。
 
@@ -124,9 +124,9 @@ ht-degree: 100%
 
 [ファイルを入手](assets/samplerepeatablesubform.zip)
 
-## XML スキーマ（XSD）の繰り返し設定の使用 {#using-repeat-settings-of-an-xml-schema-xsd-br}
+## XML スキーマ（XSD）の繰り返し設定の使用  {#using-repeat-settings-of-an-xml-schema-xsd-br}
 
-XML スキーマから、および任意の複合タイプ要素の minOccurs および maxOccurs プロパティから、繰り返し可能なパネルを作成できます。XML スキーマについて詳しくは、「[XML スキーマをフォームモデルとして使用するアダプティブフォームの作成](adaptive-form-xml-schema-form-model.md)」を参照してください。
+XML スキーマ、または任意の複合タイプエレメントの minOccurs および maxOccurs プロパティから、繰り返し可能なパネルを作成できます。XML スキーマについて詳しくは、「[XML スキーマをフォームモデルとして使用するアダプティブフォームの作成](adaptive-form-xml-schema-form-model.md)」を参照してください。
 
 以下のコードでは、`SampleType` パネルで minOccurs および maxOccurs プロパティが使用されています。
 

@@ -1,16 +1,16 @@
 ---
-title: 既存のインストールの外部依存関係を削除
-description: 既存のインストールの外部依存関係を削除
+title: 既存のインストールの外部依存関係の削除
+description: 既存のインストールの外部依存関係の削除
 feature: Integrations
 exl-id: 5b28ce97-2719-47b8-a386-77d4aaddbe81
 source-git-commit: b71a78696d4b347c97b077d84b455f53a1747a07
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 0%
+ht-degree: 17%
 
 ---
 
-# 既存のインストールの外部依存関係を削除 {#remove-external-depedencies}
+# 既存のインストールの外部依存関係の削除 {#remove-external-depedencies}
 
 Adobeでは、Workfrontの既存の拡張コネクタインストールに対して設定手順を実行し、Hoodo 配布ポイントへの依存関係を削除することをお勧めします。
 

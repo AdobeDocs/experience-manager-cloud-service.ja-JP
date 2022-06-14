@@ -65,7 +65,7 @@ NPM パッケージ [@adobe/aem-spa-model-manager](https://www.npmjs.com/package
 
 SPA コンポーネントは、ページモデルと同期する必要があり、コンテンツに変更があった場合はそれに応じて更新する必要があります。指定のページモデル構造に従って、コンポーネントをその場でインスタンス化するには、動的コンポーネントを利用したパターンを使用する必要があります。
 
-### メタフィールド   {#meta-fields}
+### メタフィールド  {#meta-fields}
 
 ページモデルでは、[Sling Model](https://sling.apache.org/documentation/bundles/models.html) API に基づく JSON Model Exporter を利用します。この書き出し可能な Sling モデルは、基になるライブラリがデータモデルを解釈できるように、次のフィールドのリストを公開します。
 

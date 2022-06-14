@@ -31,7 +31,7 @@ ht-degree: 100%
 
 レスポンシブデザインの動作の実装について詳しくは、次のトピックを参照してください。
 
-* [メディアクエリー](#using-media-queries)
+* [メディアクエリ](#using-media-queries)
 * [可変グリッド](#developing-a-fluid-grid)
 * [アダプティブ画像](#using-adaptive-images)
 

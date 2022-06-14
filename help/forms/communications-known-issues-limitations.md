@@ -3,7 +3,7 @@ title: 考慮事項の既知の問題とベストプラクティス
 description: 通信のベストプラクティス、既知の問題および制限
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1707'
 ht-degree: 100%
 

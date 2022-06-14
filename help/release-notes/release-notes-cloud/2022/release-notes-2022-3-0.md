@@ -1,15 +1,15 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0 リリースのリリースノート。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.3.0 リリースのリリースノート。'
-source-git-commit: 5d0f6fb726527434c57dc058bcf3a7b9d512b551
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 リリースのリリースノート。'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 リリースのリリースノート。'
+exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
+source-git-commit: b71cd1394260c8ec14b661934199632987a034f6
 workflow-type: tm+mt
 source-wordcount: '1152'
-ht-degree: 19%
+ht-degree: 56%
 
 ---
 
-
-# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート  {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート {#release-notes}
 
 以下では、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンのリリースノート全般の概要を説明します。
 
@@ -40,17 +40,17 @@ ht-degree: 19%
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-* [!DNL AEM Dynamic Media] が次の柔軟性を提供 [1 つのエイリアスアカウントを設定](/help/assets/dynamic-media/dm-alias-account.md) を使用すると、標準のDynamic Media URL とビューア埋め込みコードを確実に更新できます。 これは、SEO に良い影響を与え、リブランディングなどのビジネスコンテキストの更新を反映します。
+* [!DNL AEM Dynamic Media] は柔軟性が向上し、ユーザーインターフェイスで [1 つのエイリアスアカウントを設定](/help/assets/dynamic-media/dm-alias-account.md)できるようになったので、標準搭載の Dynamic Media URL とビューア埋め込みコードを確実に更新できます。これは、SEO に良い影響を及ぼし、リブランディングなどのビジネスコンテキストに応じて行われた更新を反映します。
 
-* これで、 [!DNL Experience Manager Assets] 次の操作を行うユーザーインターフェイス：
+* [!DNL Experience Manager Assets] のユーザーインターフェイスを使用して以下を行えるようになりました。
 
    * の設定 [重複アセットの検出](/help/assets/manage-digital-assets.md#detect-duplicate-assets) リポジトリ内にある。
 
    * 設定 [デジタル透かしの追加](/help/assets/watermark-assets.md) を画像に追加します。
 
-* 管理者は、大量のダウンロード用に電子メールサービスを設定できるようになりました。 これにより、ユーザーは次の操作を実行できます。 [大量のダウンロード用に電子メール通知を有効にする](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) から [!DNL Experience Manager Assets] インターフェイス。 ダウンロード処理の完了時に、アーカイブされた zip フォルダーのダウンロードリンクを含む電子メール通知がユーザーに送信されます。
+* 管理者は、大量のダウンロードに備えて電子メールサービスを設定できるようになりました。これにより、ユーザーは [!DNL Experience Manager Assets] インターフェイスから[大量ダウンロード時の電子メール通知を有効にする](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads)ことができます。ダウンロード処理の完了時に、アーカイブされた zip フォルダーのダウンロードリンクを記載した電子メール通知がユーザーに届きます。
 
-* この [公開を管理](/help/assets/manage-publication.md) の機能が強化され、ユーザーインターフェイスが改善されました。 ユーザーは、選択した宛先に対して、コンテンツを公開または非公開にできます。 [コンテンツを追加](/help/assets/manage-publication.md#add-content) を DAM リポジトリー全体の発行リストに追加する [フォルダ設定を含める](/help/assets/manage-publication.md#include-folder-settings) 選択したフォルダーのコンテンツを公開し、フィルターを適用するには、次の手順に従います。 [公開をスケジュール](/help/assets/manage-publication.md#publish-assets-later) を後の日時に変更する必要があります。
+* [公開を管理](/help/assets/manage-publication.md)機能が強化され、ユーザーインターフェイスが改善されました。ユーザーは、選択した宛先にコンテンツを公開または選択した宛先からコンテンツを非公開にしたり、DAM リポジトリ全体から公開リストに[コンテンツを追加](/help/assets/manage-publication.md#add-content)したり、[フォルダー設定を含めて](/help/assets/manage-publication.md#include-folder-settings)選択したフォルダーのコンテンツを公開しフィルターを適用したり、後の日時に[公開をスケジュール](/help/assets/manage-publication.md#publish-assets-later)したりできます。
 
 ### [!DNL Assets] プレリリースチャネルで利用できる新機能 {#prerelease-features-assets}
 
@@ -64,7 +64,7 @@ ht-degree: 19%
 
    * PDF ドキュメントのアセンブリ.
    * PDF ドキュメントのディスアセンブリ.
-   * PDF/A 準拠のドキュメントに変換して検証します。
+   * PDF/A 準拠ドキュメントへの変換と PDF/A 準拠ドキュメントの検証.
 
 * **15 ページを超えるPDF formsをアダプティブフォームに自動的に変換する**:automated forms conversionサービスを使用して、最大 40 ページのPDF formsをアダプティブフォームに変換できるようになりました。 変換サービスで、15 ページを超えるフォームの一部をアダプティブフォームフラグメントに変換するオプションが追加されました。 これにより、変換後のフォームのレンダリング速度が向上し、アダプティブフォームエディターで大きなフォームを簡単に読み込むことができるようになります。
 
@@ -113,7 +113,7 @@ Cloud Manager の毎月のリリースの完全なリストを確認できます
 
 ### 新機能 {#what-is-new-ctt}
 
-* サイズガードレールを確認 — コンテンツ転送ツールのサイズを確認機能を使用すると、失敗したコンテンツ転送を減らすことができます。  [ サイズの確認 ] 機能を使用すると、1) に十分なディスク容量があるかどうかを `crx-quickstart` 抽出前のサブディレクトリ、2) 移行セットのサイズを推定し、サポートされているかどうかを確認します。 これらのチェックの一方または両方に違反した場合、CTT UI に警告が表示されます。 このガードレールを使用すると、コンテンツ転送の失敗を回避し、Adobeカスタマーケアと移行オプションについて事前に話し合うことができます。 参照： [移行セットのサイズとディスク容量の決定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) を参照してください。
+* サイズ確認ガードレール - コンテンツ転送ツールのサイズ確認機能は、コンテンツ転送の失敗を減らすうえで役に立ちます。サイズ確認機能を使用すると、1) `crx-quickstart` サブディレクトリに十分な空きディスク容量があるかどうかを抽出前に判断でき、2) 移行セットのサイズを推定し、それが対応可能かどうかを確認できます。これらのチェックのどちらか一方または両方に違反した場合、CTT UI に警告が表示されます。このガードレールを使用すると、コンテンツ転送の失敗を回避し、アドビカスタマーケアと一緒に移行オプションについて事前に検討することができます。詳しくは、[移行セットのサイズとディスク空き容量の決定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja#migration-set-size)を参照してください。
 
 ## ベストプラクティスアナライザー {#bpa-release}
 
@@ -123,13 +123,13 @@ Cloud Manager の毎月のリリースの完全なリストを確認できます
 
 ### 新機能 {#what-is-new-bpa}
 
-* 未処理のアセットを検出する機能。 未処理のアセットが検出された場合は、コンテンツの取り込み中に問題が発生するのを避けるために、これらのアセットを処理済みに設定するか、コンテンツの転送中に移行セットから削除する必要があります。
-* コンテンツに 1,000 個を超えるバニティー URL があるかどうかを検出する機能。 バニティー URL の数を多く指定することは、Dispatcher およびパブリッシュサーバーに負荷がかかるので、ベストプラクティスではありません。
-* Oak インデックスの定義に関連する問題を特定し、AEM as a Cloud Serviceとの非互換性を検出する機能。
-* Externalizer 設定の使用方法を検出し、レポートする機能。 AEMas a Cloud Serviceの Externalizer 設定は Cloud Manager で設定されるので、互換性を維持するには、既存の Externalizer 設定をリファクタリングする必要があります。
+* 未処理のアセットを検出できるようになりました。未処理のアセットが検出された場合は、コンテンツの取り込み中に問題が発生するのを避けるために、これらのアセットを処理済みに設定するか、コンテンツ転送時に移行セットから削除する必要があります。
+* コンテンツに 1,000 個を超えるバニティー URL があるかどうかを検出できるようになりました。多数のバニティー URL を使用すると、Dispatcher およびパブリッシュサーバーに負荷がかかるので、ベストプラクティスではありません。
+* Oak インデックスの定義に関連する問題を特定し、AEM as a Cloud Service との非互換性を検出できるようになりました。
+* Externalizer 設定の使用を検出してレポートできるようになりました。AEM as a Cloud Service では Externalizer 設定は Cloud Manager で設定されるので、互換性を保つには、既存の Externalizer 設定をリファクタリングする必要があります。
 
 ### バグの修正 {#bug-fixes-bpa}
 
-* 一部のシナリオでは、FormsSelectiveFeaturesAnalysis がアサーションエラーをスローしたため、BPA が実行に失敗しました。 この問題が修正されました。
-* BPA は、WRK パターンに関連する結果を CRITICAL ではなく MAJOR として報告していました。 この問題が修正されました。
-* BPA は、ui.apps の OAK インデックス定義に関連する結果を誤って「重大」としてレポートしていました。 この問題が修正されました。
+* 一部のシナリオでは、FormsSelectiveFeaturesAnalysis がアサーションエラーをスローするので BPA を実行できませんでした。この問題が修正されました。
+* BPA が、WRK パターンに関連する分析結果を「致命的」ではなく「重大」として報告していました。この問題が修正されました。
+* BPA が、ui.apps の OAK インデックス定義に関連する分析結果を誤って「致命的」として報告していました。この問題が修正されました。

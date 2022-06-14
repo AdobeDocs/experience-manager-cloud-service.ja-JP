@@ -49,7 +49,7 @@ AEM では、ユーザーエクスペリエンスを簡単にパーソナライ�
 |  |  |
 |---|---|
 | コンテナ AND | AND ブール演算値 |
-| コンテナ OR | OR ブール演算値 |
+| コンテナ OR | OR ブール演算子 |
 
 ### 比較 {#comparisons}
 
@@ -199,7 +199,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 1. フォルダーの「**タイトル**」と「**名前**」を指定します。
    * **タイトル**&#x200B;は内容がわかるように付けます。
-   * **名前**&#x200B;はリポジトリーのノード名になります。
+   * **名前**&#x200B;はリポジトリのノード名になります。
       * タイトルに基づいて自動的に生成され、[AEM の命名規則](/help/implementing/developing/introduction/naming-conventions.md)に従って調整されます。
       * 必要に応じて調整できます。
 

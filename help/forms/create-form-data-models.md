@@ -109,13 +109,13 @@ ht-degree: 61%
 1. Apache Sling のコンテキスト対応設定を作成します。 OSGi 設定を作成するには：
    1. **での OSGi 設定ファイルのセットアップ [!DNL Experience Manager] アーキタイププロジェクト。**
 PID を使用した OSGi Factory Configuration ファイルの作成 
-`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider` で使用される様々なキャッシュに配分されます。実行モードごとに値を変更する必要がある各実行モードフォルダーの下に、同じ名前のファイルを作成します。 詳しくは、 [の OSGi の設定 [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
+`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`に従っていない場合に発生します。実行モードごとに値を変更する必要がある各実行モードフォルダーの下に、同じ名前のファイルを作成します。 詳しくは、 [の OSGi の設定 [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
 
    1. **OSGI 設定 json を設定します。** Apache Sling Context-Aware Configuration Override Provider を使用するには：
       1. ローカル開発インスタンス `/system/console/configMgr`、という名前でファクトリ OSGi 設定を選択します。 **[!UICONTROL Apache Sling Context-Aware Configuration Override Provider:OSGi 設定]**.
       1. 説明を入力します。
       1. 選択 **[!UICONTROL 有効]**.
-      1. オーバーライドの下で、sling オーバーライド構文の環境に基づいて変更する必要があるフィールドを指定します。 詳しくは、 [Apache Sling Context-Aware Configuration - Override](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). 例えば、`cloudconfigs/fdm/{configName}/url="newURL"` のようになります。複数の上書きを追加するには、「 **[!UICONTROL +]**.
+      1. オーバーライドの下で、sling オーバーライド構文の環境に基づいて変更する必要があるフィールドを指定します。 詳しくは、 [Apache Sling Context-Aware Configuration - Override](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). （例：`cloudconfigs/fdm/{configName}/url="newURL"`）。複数の上書きを追加するには、「 **[!UICONTROL +]**.
       1. 「**[!UICONTROL 保存]**」を選択します。
       1. OSGi 設定 JSON を取得するには、 [AEM SDK Quickstart を使用した OSGi 設定の生成](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
       1. 前の手順で作成した OSGi Factory Configuration Files に JSON を配置します。

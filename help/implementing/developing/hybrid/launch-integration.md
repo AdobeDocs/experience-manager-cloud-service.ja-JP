@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # SPA と Adobe Experience Platform Launch の統合 {#spa-and-adobe-experience-platform-launch-integration}
 
-Adobe Experience Platform Launch は、Analytics、ターゲットおよび Audience Manager を単一ページアプリケーション（SPA）内に実装する方法として推奨されます。
+Adobe Experience Platform Launch は、Analytics、Target および Audience Manager をシングルページアプリケーション（SPA）内に実装する方法として推奨されます。
 
 ## チュートリアル {#tutorial}
 

@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 リリー�
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 のリリースノート。"'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 100%
 
@@ -19,11 +19,11 @@ ht-degree: 100%
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### [!DNL Sites] の新機能  {#what-is-new-sites}
+### [!DNL Sites] の新機能 {#what-is-new-sites}
 
 * **[コアコンポーネント 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)**：Adobe Experience Manager as a Cloud Service には、コアコンポーネントの最新リリースへの自動アップデート機能があります。リリース 2.12.0 には、最新の機能改善がコミュニティからの貢献として含まれています。例えば、[新しい POST フォームハンドラー](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html?lang=ja#post-data)、カスタムの CSS タグ、JavaScript タグ、メタデータタグを[コンテキスト対応の設定](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=ja#context-aware-loading)で組み込む機能、カスタムコンポーネントで Adobe データレイヤーとの統合を簡単に行うための [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html?lang=ja#enabling-custom-components) ユーティリティなどです。リリース 2.12.0 の[変更点の一覧](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0)を参照してください。
 
-* **[プロジェクトアーキタイプ 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)**：新規 Experience Manager プロジェクトを開始する際の推奨される基盤が改善されました。新しい [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ja)、[AMP でサイトを作成](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=ja)するオプション、[プロジェクトの CSS／JS を追加するための新しい拡張ポイント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=ja#context-aware-loading)が含まれるようになりました。
+* **[プロジェクトアーキタイプ 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)**：新規 Experience Manager プロジェクトを開始する際の推奨される基盤が改善されました。新しい [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ja)、[AMP でサイトを作成](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=ja)するオプション、[プロジェクトの CSS／JS を追加するための新しい拡張ポイント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)が含まれるようになりました。
 
 * **[ContextHub フォルダー](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**：ContextHub オファーターゲティング機能に使用するオーディエンスセグメントを容易に整理、検索、選択するためのオーディエンスフォルダーを作成できます。
 
@@ -44,7 +44,7 @@ ht-degree: 100%
 
 ## [!DNL Adobe Experience Manager Forms] as a Cloud Service {#forms-oct-2021}
 
-### [!DNL Forms] の新機能  {#what-is-new-forms-oct-2021}
+### [!DNL Forms] の新機能 {#what-is-new-forms-oct-2021}
 
 * **Analytics for Adaptive Forms**：ログイン済み状態と未ログイン（匿名）状態の両方の動作を Adobe Analytics for Adaptive Forms でキャプチャおよび追跡して、エンドユーザーのインサイトを収集できるようになりました。これにより、ビジネスユーザーは、収集されたインサイトに基づいて、アダプティブフォームのコンテンツ、レイアウトおよびスタイルについて、情報に基づいた意思決定を行えます。
 

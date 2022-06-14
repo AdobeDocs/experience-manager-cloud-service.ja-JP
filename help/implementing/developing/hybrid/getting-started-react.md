@@ -144,7 +144,7 @@ ReactDOM.render(
 
 ### App.js {#app-js}
 
-アプリをレンダリングすることで、`index.js` は `App.js` を呼び出します。このファイルの内容を以下に示していますが、重要な部分のみに焦点を当てるために簡略化されています。
+アプリをレンダリングすることで、`index.js` は `App.js` を呼び出します。このファイルの内容を以下に示しています（重要な部分のみに焦点を当てるために簡略化されています）。
 
 ```
 import {Page, withModel } from '@adobe/aem-react-editable-components';

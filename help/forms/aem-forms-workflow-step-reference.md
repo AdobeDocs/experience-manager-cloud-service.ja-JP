@@ -3,9 +3,9 @@ title: '他のユーザーにワークフローを割り当て、電子メール
 description: Forms 中心のワークフローを使用すると、アダプティブフォームベースのワークフローを迅速に構築できます。Adobe Sign を使用して、ドキュメントへの電子サイン、フォームをベースとしたビジネスプロセスの作成、複数データソースへのデータの取得と送信、電子メール通知の送信を行うことができます
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 source-git-commit: 211724e8031c6b83ca202739d2bc56007243d3d5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '5467'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -166,7 +166,7 @@ Forms 中心のワークフローステップは、AEM ワークフローで AEM
 * **[!UICONTROL ワークフローメタデータ]**：使用する値がワークフローメタデータプロパティに保存されている場合は、このオプションを使用します。このオプションを選択したら、「ワークフローメタデータ」オプションの下の空のテキストボックスにメタデータプロパティ名を入力します。例えば、emailAddress と指定します。
 
 <!-- * **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. -->
-* **[!UICONTROL 画像]**：画像を電子メールに埋め込むには、このオプションを使用します。このオプションを選択したら、画像を参照して選択します。「画像」オプションは、電子メールテンプレートで使用できる画像タグ（&lt;img src=&quot;*&quot;/>）に対してのみ使用できます。
+* **[!UICONTROL 画像]**：画像を電子メールに埋め込むには、このオプションを使用します。このオプションを選択したら、画像を参照して選択します。「画像」オプションは、E メールテンプレートで使用できる画像タグ (&lt;img src=&quot;&lt;span id=&quot; translate=&quot;no&quot; />「/>」) に対してのみ使用できます。&#42;
 
 **[!UICONTROL 送信者／受信者の電子メールアドレス]**： 電子メールアドレスを手動で指定するには、「**[!UICONTROL リテラル]**」オプションを選択します。電子メールアドレスをメタデータプロパティから取得するには、「**[!UICONTROL ワークフローメタデータから取得]**」オプションを選択します。
 「**[!UICONTROL ワークフローメタデータから取得]**」オプションのメタデータプロパティ配列のリストを指定することもできます。「**[!UICONTROL 変数]**」オプションを選択して、文字列データ型の変数に格納されている値から電子メールアドレスを取得します。

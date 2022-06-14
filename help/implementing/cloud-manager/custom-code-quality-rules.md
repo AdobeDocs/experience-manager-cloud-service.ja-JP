@@ -3,7 +3,7 @@ title: カスタムコード品質ルール
 description: このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。これらは、AEM Engineering のベストプラクティスに基づいています。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: ee45ba3a03f9ab5461a09188888694ca22a11b20
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3495'
 ht-degree: 100%
 
@@ -860,7 +860,7 @@ AEM as a Cloud Service 上でアセット処理を行うためにアセットマ
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-[一部の AEM リリースでは](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=ja)、従来の基盤コンポーネント（`/libs/foundation` 下のコンポーネントなど）は廃止され、コアコンポーネントに置き換わりました。使用する方法がオーバーレイであろうと継承であろうと、基盤コンポーネントに基づいてカスタムコンポーネントを作成することは、お勧めしません。対応するコアコンポーネントに移行してください。
+[一部の AEM リリースでは](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html)、従来の基盤コンポーネント（`/libs/foundation` 下のコンポーネントなど）は廃止され、コアコンポーネントに置き換わりました。使用する方法がオーバーレイであろうと継承であろうと、基盤コンポーネントに基づいてカスタムコンポーネントを作成することは、お勧めしません。対応するコアコンポーネントに移行してください。
 
 この変換は、[AEM 最新化ツール](https://opensource.adobe.com/aem-modernize-tools/)で容易に行うことができます。
 

@@ -1,13 +1,13 @@
 ---
 title: リリースノート（） [!DNL Workfront for Experience Manager enhanced connector]
 description: リリースノート（） [!DNL Workfront for Experience Manager enhanced connector]
-source-git-commit: 02df53e47d2b8617c9a81f5c438814996af92340
+exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
+source-git-commit: 77aceab8db82082185c931202fc6ea8eee79c11e
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 5%
 
 ---
-
 
 # リリースノート（）[!DNL Workfront for Experience Manager enhanced connector] {#release-notes-enhanced-connector-workfront}
 
@@ -41,5 +41,4 @@ ht-degree: 5%
 >
 >* [統合 [!DNL Workfront for Experience Manager enhanced connector] Experience Manager6.5 の場合](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)
 >* [統合 [!DNL Workfront for Experience Manager enhanced connector] Experience Manager6.4 の場合](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-integrations.html?lang=en)
-
 

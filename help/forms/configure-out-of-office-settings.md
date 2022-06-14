@@ -11,7 +11,7 @@ ht-degree: 100%
 
 ---
 
-# 不在時の設定 {#configure-out-of-office-settings}
+# 不在設定の指定 {#configure-out-of-office-settings}
 
 不在にする予定がある場合は、その期間に割り当てられる項目に対して実行する操作を指定できます。
 

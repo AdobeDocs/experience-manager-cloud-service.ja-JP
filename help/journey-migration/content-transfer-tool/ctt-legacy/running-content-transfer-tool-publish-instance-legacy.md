@@ -3,7 +3,8 @@ title: パブリッシュインスタンスでのコンテンツ転送ツール�
 description: パブリッシュインスタンスでのコンテンツ転送ツールの実行
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: 0a699dc1-9977-4cf9-a1b0-7b503ea2fc69
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 96%

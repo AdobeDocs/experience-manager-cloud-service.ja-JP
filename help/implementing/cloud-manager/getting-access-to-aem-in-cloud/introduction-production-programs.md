@@ -3,7 +3,7 @@ title: '実稼働プログラムの概要 '
 description: 実稼動プログラムの概要と、設定方法に関する推奨事項を説明します。
 exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 source-git-commit: a6152a1529b5c70bcf056857204e7ff97fc614e4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 100%
 

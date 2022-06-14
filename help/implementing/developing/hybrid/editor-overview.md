@@ -33,7 +33,7 @@ AEM の SPA について詳しくは、次のドキュメントを参照して�
 
 SPA のページコンポーネントは、JSP ファイルまたは HTL ファイルを介して子コンポーネントの HTML 要素を提供しません。この処理は SPA フレームワークに委任されます。子コンポーネントまたはモデルの表現は、JCR から JSON データ構造として取得されます。次に、その構造に従って、SPA コンポーネントがページに追加されます。この動作により、ページコンポーネントのボディの初期構成が、SPA 以外のコンポーネントの場合とは違う構成になります。
 
-### ページモデルの管理    {#page-model-management}
+### ページモデルの管理  {#page-model-management}
 
 ページモデルの解決と管理は、指定の `PageModel` ライブラリに委任されます。SPA エディターで初期化とオーサリングを行うには、SPA でこのページモデルライブラリを使用する必要があります。このページモデルライブラリは、`aem-react-editable-components` npm によって AEM のページコンポーネントに間接的に提供されます。ページモデルは、AEM と SPA 間のインタープリターであるので、常に存在している必要があります。ページを作成したら、ページエディターとの通信を可能にするために、`cq.authoring.pagemodel.messaging` ライブラリを追加する必要があります。
 
@@ -69,7 +69,7 @@ SPA と AEM 間のインタラクションのフローは、SPA エディター�
 
 ### SPA エディターの基本的なワークフロー {#basic-spa-editor-workflow}
 
-SPA エディターの主な要素に留意すると、AEM 内での SPA 編集ワークフローの概要は、作成者の観点では次のようになります。
+SPA エディターの主な要素に留意すると、AEM 内での SPA 編集の高度なワークフローは、作成者の観点では次のようになります。
 
 ![SPA ワークフローのアニメーション](assets/workflow.gif)
 
@@ -91,7 +91,7 @@ SPA エディターの主な要素に留意すると、AEM 内での SPA 編集�
 >* 実稼働環境（パブリッシュ）では SPA エディターは読み込まれない
 
 
-### クライアントサーバー型のページ編集ワークフロー {#client-server-page-editing-workflow}
+### クライアントサーバーのページ編集ワークフロー {#client-server-page-editing-workflow}
 
 下図は、SPA を編集する際のクライアントとサーバーのインタラクションの概要をより詳しく説明したものです。
 
@@ -164,7 +164,7 @@ AEM SPA Editor SDK で動作する他の SPA フレームワークを追加で�
 
 ### 複数のセレクターの使用 {#multiple-selectors}
 
-追加のカスタムセレクターを定義し、AEM SPA SDK 用に開発された SPA の一部として使用することができます。ただし、これをサポートするには、`model` セレクターを最初のセレクターにし、JSON エクスポーターの要件に応じて拡張子を `.json` にする必要があります。
+カスタムセレクターの定義を追加すると、AEM SPA SDK 用に開発された SPA の一部として使用することができます。ただし、これをサポートするには、`model` セレクターを最初のセレクターにし、JSON エクスポーターの要件に応じて拡張子を `.json` にする必要があります。
 
 ### テキストエディターの要件 {#text-editor-requirements}
 
@@ -173,7 +173,7 @@ SPA で作成したテキストコンポーネントのインプレースエデ�
 1. テキスト HTML を含んだコンテナラッパー要素に（任意の）属性を設定します。WKND SPA プロジェクトの場合は、`<div>` 要素がこれに該当し、使用されているセレクターは `data-rte-editelement` です。
 1. 対応する AEM テキストコンポーネントの `cq:InplaceEditingConfig` で、そのセレクター（例：`data-rte-editelement` など）を指す設定 `editElementQuery` を指定します。これにより、HTML テキストを折り返す HTML 要素をエディターが把握できます。
 
-リッチテキストエディターの `editElementQuery` プロパティと設定について詳しくは、[リッチテキストエディターの設定](/help/implementing/developing/extending/rich-text-editor.md)を参照してください。
+`editElementQuery` プロパティとリッチテキストエディターの設定について詳しくは、[リッチテキストエディターの設定](/help/implementing/developing/extending/rich-text-editor.md)を参照してください。
 
 ### 制限事項 {#limitations}
 

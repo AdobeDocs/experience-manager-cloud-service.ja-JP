@@ -3,7 +3,7 @@ title: 'サンドボックスプログラムの概要 '
 description: サンドボックスプログラムの概要と実稼動プログラムとの違いについて説明します。
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 100%
 

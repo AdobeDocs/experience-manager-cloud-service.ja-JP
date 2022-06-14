@@ -3,13 +3,13 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 リリー�
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 のリリースノート。"'
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1265'
 ht-degree: 100%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service のリリースノート  {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service のリリースノート {#release-notes}
 
 [!DNL Experience Manager] as a Cloud Service の一般的なリリースノートの概要を次に説明します。
 

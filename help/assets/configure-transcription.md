@@ -10,13 +10,13 @@ contentOwner: Vishabh Gupta
 topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
-source-git-commit: feef8159a01393baebe11c014ae6093b79df72d1
+exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
+source-git-commit: 4edf66127696ce91466811e2ffdcfbbd73f7cc2c
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 3%
 
 ---
-
 
 # での転写の設定 [!DNL Experience Manager Assets] {#configure-transcription-service}
 
@@ -166,6 +166,3 @@ ht-degree: 3%
 ## トラブルシューティングのヒント {#troubleshooting}
 
 にログインします。 [!DNL Azure Media Services] 同じ資格情報（設定に使用済み）を持つアカウントを使用して、リクエストのステータスを検証します。 連絡先 [!DNL Azure] リクエストが正常に処理されなかった場合に対応します。
-
-
-

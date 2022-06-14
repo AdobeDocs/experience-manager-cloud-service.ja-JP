@@ -112,7 +112,7 @@ AEM Developer Tools for Eclipse には、サンプルのマルチモジュール
 
    ![AEM サーバーへの接続](assets/connect-server.png)
 
-1. 「**Finish**」をクリックします。プロジェクト構造が作成されます。
+1. 「**終了**」をクリックします。プロジェクト構造が作成されます。
 
    >[!NOTE]
    >
@@ -214,7 +214,7 @@ AEM Developer Tools for Eclipse には、サンプルのマルチモジュール
 
 ## 詳細情報 {#more-information}
 
-Apache Sling IDE tooling for Eclipse の公式 Web サイトでは、次の役立つ情報を参照できます。
+Apache Sling IDE tooling for Eclipse の公式 web サイトでは、次の有益な情報を参照できます。
 
 * 『[**Apache Sling IDE tooling for Eclipse** ユーザーガイド](https://sling.apache.org/documentation/development/ide-tooling.html)』：このドキュメントでは、全体のコンセプト、AEM Development Tools でサポートされているサーバー統合およびデプロイメント機能について説明しています。
 * [トラブルシューティング情報](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)

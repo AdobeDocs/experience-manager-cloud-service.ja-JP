@@ -40,7 +40,7 @@ Adobe Creative Cloud は、デジタルアセットの作成を支援するソ�
 |---|---|---|
 | クリエイティブユーザーは、[!DNL Creative Cloud] アプリを使用しながら、[!DNL Experience Manager] からアセットを検出し、それらを開いて使用したり、編集して変更を [!DNL Experience Manager] にアップロードしたり、新しいファイルを [!DNL Experience Manager] にアップロードできます。 | [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) | Photoshop、Illustrator、InDesign. |
 | ビジネスユーザーは、アセットのオープンと使用、編集と [!DNL Experience Manager] への変更内容のアップロード、[!DNL Experience Manager] への新しいファイルのアップロードをデスクトップ環境から簡単に行えます。汎用の統合を使用して、アドビ以外のアセットも含め、あらゆるアセットタイプをネイティブデスクトップアプリケーションで開きます。 | [[!DNL Experience Manager] デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja) | Windows および Mac デスクトップ上の Experience Manager デスクトップアプリケーション |
-| マーケターとビジネスユーザーは、Experience Manager 内から Adobe Stock アセットの検出、プレビュー、ライセンス取得と保存、管理を行えます。ライセンスを取得し保存したアセットは、限定された Adobe Stock メタデータを提供してガバナンスの強化に役立ちます。 | [Adobe Experience Manager と Adobe Stock との連携](aem-assets-adobe-stock.md) | [!DNL Experience Manager] Web インターフェイス |
+| マーケターとビジネスユーザーは、Experience Manager 内から Adobe Stock アセットの検出、プレビュー、ライセンス取得と保存、管理を行えます。ライセンスを取得し保存したアセットは、限定された Adobe Stock メタデータを提供してガバナンスの強化に役立ちます。 | [Experience Manager と Adobe Stock の統合](aem-assets-adobe-stock.md) | [!DNL Experience Manager] Web インターフェイス |
 | デジタル製品デザイナーとマーケターとのコラボレーションを改善できます。デザイナーが Adobe XD キャンバス上のデザインとワイヤフレームモデルでデジタルアセットを使用できます。 | [[!DNL Adobe Asset Link] （ [!DNL Adobe XD] 用）](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
 | マーケターは、アップロードしたアセットと、カスタマイズを使用して作成した事前定義済みのアクションに基づいて、バリエーションと派生物を自動的に作成できます。この自動処理を使用すると、コンテンツベロシティが向上し、手作業が軽減されます。 | [コンテンツ自動化](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets] Web インターフェイス |
 
@@ -87,7 +87,7 @@ Adobe Creative Cloud は、デジタルアセットの作成を支援するソ�
 * **作業中（WIP）またはクリエイティブ WIP：**&#x200B;アセットライフサイクルのフェーズ。アセットに対してまだ複数の変更が行われている最中であり、通常は、より広範なチームと共有するための準備がまだできていない状態。
 * **クリエイティブレディアセット：**&#x200B;より広範なチームと共有するための準備ができているアセット。または、マーケティングチームもしくは LOB チームと共有するためにクリエイティブチームによって選択／承認されているアセット。
 
-* **アセット承認：** 既に DAM にアップロードされているアセットに対して実行される承認プロセス。通常、ブランド承認および法的承認などが含まれます。
+* **アセット承認**： 既に DAM にアップロードされているアセットに対して実行される承認プロセス。通常、ブランド承認および法的承認などが含まれます。
 * **最終アセット：**&#x200B;すべての承認／メタデータタグ付けが完了し、より広範なチームに使用される準備ができているアセット。このようなアセットは DAM に保存され、すべてのユーザー（またはすべての関係者）が使用できるようになっています。マーケティングチャネルで使用したり、クリエイティブチームがデザインの作成に使用したりできます。
 
 * **アセットの小規模な更新／変更：**&#x200B;デジタルアセットに対する迅速で小規模な変更。多くの場合、リタッチ作業や小規模な編集の要求、アセットレビューまたは承認に対応するために行われます（例えば、再配置、テキストサイズの変更、彩度／明るさ、色などの調整）。
@@ -182,7 +182,7 @@ Experience Manager Assets では、Experience Manager Assets デプロイメン�
 
 DAM インスタンスへの直接アクセス権を持たない外部のエージェンシーやフリーランサーも、承認済みアセットにアクセスしたり、新しいデザインを DAM に追加したりする必要が生じることがあります。
 
-以下の戦略で最終／承認済みアセットへのアクセスを提供します。
+次の方法を使用すると、最終アセットや承認済みアセットへのアクセス権を提供できます。
 
 * Asset Link が機能しない場合は、デスクトップアプリケーションを使用します。
 * 外部パートナーに安全にアセットを配布するには、[Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) を使用します。

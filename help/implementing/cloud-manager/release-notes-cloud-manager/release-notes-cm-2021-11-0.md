@@ -5,8 +5,8 @@ feature: Release Information
 exl-id: 98fd6d8a-ddc2-4f53-9dfc-d8e21af0c14d
 source-git-commit: 4505f703754fa46cd746ae4794a3cab65cb19976
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '458'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ AEM as a Cloud Service 2021.11.0の Cloud Manager のリリース日は 2021 年
 
 ## 新機能 {#what-is-new}
 
-* ユーザーは、新しいフロントエンドパイプラインを活用して、フロントエンドコードを迅速かつ排他的にデプロイできるようになりました。詳しくは、 [Cloud Manager フロントエンドパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) を参照してください。
+* ユーザーは、新しいフロントエンドパイプラインを活用して、フロントエンドコードを迅速かつ排他的にデプロイできるようになりました。詳しくは、[Cloud Manager フロントエンドパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)を参照してください。
 
    >[!IMPORTANT]
    >新しいフロントエンドパイプラインを活用するには、AEM バージョン `2021.10.5933.20211012T154732Z` を使用している必要があります。
@@ -60,6 +60,6 @@ AEM as a Cloud Service 2021.11.0の Cloud Manager のリリース日は 2021 年
 
 * 共通の基本パスを持つクライアントライブラリがある場合、`ClientlibProxyResourceCheck` 品質ルールで偽陽性の問題が発生していました。
 
-* リポジトリーの最大数に達したエラーメッセージで、エラーの理由が明記されていませんでした。
+* リポジトリの最大数に達したエラーメッセージで、エラーの理由が明記されていませんでした。
 
 * まれに、特定の応答コードの不適切な再試行処理が原因でパイプラインが失敗することがありました。

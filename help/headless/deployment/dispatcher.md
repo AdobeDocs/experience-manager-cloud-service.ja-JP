@@ -4,7 +4,7 @@ description: Dispatcher は、Adobe Experience Manager パブリッシュ環境�
 feature: Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Dispatcher に関する詳細なドキュメントについては、[Dispatcher ガイド](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja)を参照してください。
+>Dispatcher に関する詳細なドキュメントについては、[Dispatcher ガイド](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)を参照してください。
 
 AEM プロジェクトの一部として、Dispatcher の設定を含む Dispatcher モジュールが含まれます。[AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype)から新しく生成されたプロジェクトは、GraphQL エンドポイントを有効にする[フィルター](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#defining-a-filter)を自動的に含めます。
 
