@@ -1,13 +1,13 @@
 ---
-title: インストール [!DNL Workfront for Experience Manager enhanced connector]
-description: インストール [!DNL Workfront for Experience Manager enhanced connector]
+title: ' [!DNL Workfront for Experience Manager enhanced connector] のインストール'
+description: ' [!DNL Workfront for Experience Manager enhanced connector] のインストール'
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 7ffac94eace3eaa276f0ad1705e0b32c886c795c
+source-git-commit: 109f07c7273cc9a4890e41bf29a1509f738d130b
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 65%
+source-wordcount: '630'
+ht-degree: 63%
 
 ---
 
@@ -17,15 +17,20 @@ ht-degree: 65%
 
 >[!IMPORTANT]
 >
->アドビは、[!DNL Adobe Workfront for Experience Manager enhanced connector] のデプロイメントと設定を、認定パートナーまたは [!DNL Adobe Professional Services] を通じてのみ行うことを求めています。認定パートナーまたは [!DNL Adobe Professional Services] 以外がデプロイと設定を行った場合は、アドビのサポート対象外となります。
+>* Adobeは、認定パートナーまたは [!DNL Adobe Professional Services] を介してのみ [!DNL Adobe Workfront for Experience Manager enhanced connector] のデプロイメントと構成を必要とします。認定パートナーなしでデプロイおよび設定した場合、または [!DNL Adobe Professional Services]の場合、Adobe ではサポートされません。
 >
->アドビは、このコネクタを冗長にする [!DNL Adobe Workfront] および [!DNL Adobe Experience Manager] の更新をリリースする可能性があります。この場合、お客様はこのコネクタの使用から移行する必要が生じることがあります。
+>* アドビは、このコネクターを冗長にする[!DNL Adobe Workfront]および [!DNL Adobe Experience Manager] の更新をリリースする可能性があります。この場合、お客様はこのコネクターの使用から移行する必要が生じることがあります。
+>
+>* Adobeは、拡張コネクタバージョン 1.7.4 以降をサポートしています。 以前のプレリリースおよびカスタムバージョンはサポートされていません。 拡張コネクタのバージョンを確認するには、次の手順 5(a) を参照してください： [コネクタのインストール手順の強化](workfront-connector-install.md).
+>
+>* 詳しくは、[Workfront for Experience Manager Assets 拡張コネクタに関するパートナー認定試験](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html)を参照してください。試験について詳しくは、 [試験ガイド](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+
 
 コネクタをインストールする前に、次のプリインストール手順に従います。
 
 1. [ファイアウォールの設定](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html?lang=ja)。[!DNL Workfront] の IP クラスターを調べるには、[!UICONTROL 設定]／[!UICONTROL システム]／[!UICONTROL 顧客情報]に移動します。
 
-1. Dispatcher で、`authorization`、`username` および `apikey` という名前の HTTP ヘッダーを許可します。`GET`、`POST` および `PUT` リクエストを `/bin/workfront-tools` に許可します。
+1. Dispatcher で、`authorization`、`username` および `apikey` という名前の HTTP ヘッダーを許可します。`/bin/workfront-tools` への `GET`、`POST` および `PUT` リクエストを許可します。
 
 1. 次のパスが [!DNL Experience Manager] リポジトリに存在しないことを確認します。
 
@@ -119,9 +124,9 @@ ht-degree: 65%
 
 1. [!DNL Experience Manager] で、**[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL Workfront ツール設定]** を選択します。 
 
-1. 左側のパネルで `workfront-tools` を選択し、ページの右上の領域で **[!UICONTROL 作成]** オプションを選択します。
+1. 左パネルで `workfront-tools` を選択し、ページの右上の領域にある「**[!UICONTROL 作成]** 」オプションを選択します。
 
-1. **[!UICONTROL Workfront 接続]** ダイアログで、[!DNL Workfront] デプロイメントに必要な詳細を入力し、 **[!UICONTROL Workfront への接続]** オプションを選択します。正常に接続すると、[!DNL Workfront] ドキュメントのカスタム統合が [!DNL Workfront] 環境に自動作成されます。
+1. **[!UICONTROL Workfront 接続]**&#x200B;ダイアログで、[!DNL Workfront] デプロイメントの必須の詳細事項を入力して、「**[!UICONTROL Workfront に接続]**」オプションを選択します。正常に接続されると、[!DNL Workfront] ドキュメントのカスタム統合が [!DNL Workfront] 環境に自動的に作成されます。
 
    ![[!DNL Experience Manager] と [!DNL Workfront]](/help/assets/assets/wf-connection-config.png) の接続
 
