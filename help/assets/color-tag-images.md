@@ -1,13 +1,13 @@
 ---
 title: 画像のカラータグ
 description: Experience Manager Assetsを使用すると、画像内の色を区別し、自動的にタグとして適用できます。 その後、これらのタグを使用して、画像を検索およびフィルタリングできます。
-source-git-commit: 74c13efe99b50ba08d9dc38c246de71482a536a0
+exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
+source-git-commit: d8fb661be15a1505714e3def8a729a9c5c04616c
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 12%
+source-wordcount: '1225'
+ht-degree: 13%
 
 ---
-
 
 # 画像のカラータグ {#color-tag-images}
 
@@ -106,6 +106,24 @@ Experience Manager AssetsはAdobe Sensei AI 機能を使用して画像内の色
 
    >[!VIDEO](https://video.tv.adobe.com/v/340124)
 
+## DAM 内の既存の画像のカラータグ {#color-tags-existing-images}
+
+DAM 内の既存の画像は、自動的にカラータグ付けされません。 以下が必要です。 [!UICONTROL アセットを再処理] 手動で作成して、カラータグを生成します。
+
+アセットリポジトリに既に存在するアセットのタグ画像、または（サブフォルダーを含む）フォルダーに色を付けるには、次の手順に従います。
+
+1. [!DNL Adobe Experience Manager] ロゴを選択し、[!UICONTROL ナビゲーション]ページからアセットを選択します。
+
+1. 「[!UICONTROL ファイル]」をクリックまたはタップして、Assets のインターフェイスを表示します。
+
+1. カラータグを適用するフォルダーに移動します。
+
+1. フォルダー全体または特定の画像を選択します。
+
+1. [!UICONTROL アセットの再処理]アイコン![アセットの再処理アイコン](assets/do-not-localize/reprocess-assets-icon.png)を選択し、「[!UICONTROL 完全なプロセス]」オプションを選択します。
+
+処理が完了したら、 [!UICONTROL プロパティ] ページに含まれる画像を、フォルダー内に配置します。 自動的に追加されたタグは、 [!UICONTROL スマートカラータグ] セクション [!UICONTROL 基本] タブをクリックします。
+
 
 ## 画像のスマートカラータグの表示 {#view-color-tags}
 
@@ -167,7 +185,3 @@ Experience Manager AssetsはAdobe Sensei AI 機能を使用して画像内の色
    1 つの色の選択に基づいて画像をフィルタリングできます。 スマートカラータグの 1 つとして選択した色を持ち、その上に [カバレッジ/ドミナンスしきい値%](#manage-color-tagging-settings) を右側のウィンドウに表示します。
 
 1. 検索バーの x をクリックして、フィルターをクリアします。
-
-
-
-
