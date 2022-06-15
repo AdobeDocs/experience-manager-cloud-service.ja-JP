@@ -5,10 +5,10 @@ feature: Content Fragments, GraphQL API
 topic: Headless
 role: User
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: f296e8cbc12c9426e0fefe6f5342374ba9b21291
+source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 90%
+source-wordcount: '751'
+ht-degree: 86%
 
 ---
 
@@ -20,7 +20,12 @@ ht-degree: 90%
 
 >[!NOTE]
 >
->AEM Sites as a Cloud Service 向けヘッドレス開発の概要については、[AEM Sites as a Cloud Service 向けヘッドレス開発](/help/headless/introduction.md)を参照してください。
+>関連トピック：
+>
+>* [ヘッドレスとは](/help/headless/what-is-headless.md) を参照してください。
+>
+>* [ヘッドレスとAEM](/help/headless/introduction.md) を参照してください。
+
 
 >[!NOTE]
 >
