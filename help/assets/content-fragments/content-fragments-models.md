@@ -4,9 +4,9 @@ description: コンテンツフラグメントモデルが AEM におけるヘ�
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
 workflow-type: tm+mt
-source-wordcount: '2892'
+source-wordcount: '2894'
 ht-degree: 95%
 
 ---
@@ -25,7 +25,7 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
 ## コンテンツフラグメントモデルの作成 {#creating-a-content-fragment-model}
 
 1. に移動します。 **ツール**, **一般**&#x200B;を開き、 **コンテンツフラグメントモデル**.
-1. 目的の[設定](/help/assets/content-fragments/content-fragments-configuration-browser.md)に適したフォルダーに移動します。
+1. 次に該当するフォルダーに移動します。 [設定、またはサブ設定](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. 「**作成**」を使用してウィザードを開きます。
 
    >[!CAUTION]

@@ -4,10 +4,10 @@ description: AEM の強力なヘッドレス配信機能を活用するために
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
+source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 100%
+source-wordcount: '339'
+ht-degree: 79%
 
 ---
 
@@ -43,9 +43,20 @@ AEM の強力なヘッドレス配信機能を活用するために、設定ブ�
 >
 >詳しくは、「[設定ブラウザー](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)」も参照してください。
 
->[!CAUTION]
+>[!NOTE]
 >
->サブ設定（設定内にネストされた設定）は、コンテンツフラグメントでの使用はサポートされますが、GraphQL クエリには使用できません。
+>[サブ設定](/help/implementing/developing/introduction/configurations.md#configuration-resolution) （別の設定内にネストされた設定）は、コンテンツフラグメント、コンテンツフラグメントモデル、GraphQL クエリで使用できます。
+>
+>注意：
+>
+>
+>* サブ設定でモデルを作成した後は、モデルを別のサブ設定に移動またはコピーすることはできません。
+>
+>* GraphQL エンドポイントは（引き続き）親（ルート）設定に基づいています。
+>
+>* 永続化されたクエリは（引き続き）親（ルート）設定に関連して保存されます。
+
+
 
 1. **ツール**／**一般**&#x200B;に移動し、**設定ブラウザー**&#x200B;を開きます。
 
