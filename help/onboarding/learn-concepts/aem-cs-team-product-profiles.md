@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service チームおよび製品プロファイル
 description: このページでは、AEM as a Cloud Service チームおよび製品プロファイルについて説明します。
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 56ca8e80081e62ceb3f5fc2bf9c32aa3bcee12c6
+source-git-commit: fd23701414a2ae4142ea2a11cef92bc0cb202421
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -34,7 +34,7 @@ AEM as a Cloud Service チームのメンバーは、オンボーディング中
 
 ## Cloud Manager 製品プロファイル {#cloud-manager-product-profiles}
 
-Cloud Manager には、事前設定済みの製品プロファイル（簡単に言えば、役割に基づく権限）があります。システム管理者は、Cloud Manager チームをこれらの製品プロファイルに割り当ててセットアップします。また、システム管理者は、これらの製品プロファイルと、それらのプロファイルをどのチームメンバーに割り当てるかを把握しておく必要があります。
+Cloud Manager には、事前設定済みの製品プロファイル（簡単に言えば、役割に基づく権限）があります。システム管理者は、Cloud Manager チームをこれらの製品プロファイルに割り当てることでセットアップを担当し、これらの製品プロファイルと、それらを割り当てるチームメンバーに慣れておく必要があります。
 >[!NOTE]
 >詳しくは、[Cloud Manager での役割に基づく権限](/help/onboarding/learn-concepts/cloud-manager-introduction.md##role-based-permissions)を参照してください。
 

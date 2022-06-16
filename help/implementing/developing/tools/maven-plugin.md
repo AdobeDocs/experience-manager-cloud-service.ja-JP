@@ -2,10 +2,10 @@
 title: Adobe Content Package Maven Plugin
 description: Content Package Maven Plugin を使用した AEM アプリケーションのデプロイについて説明します
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: 278470482a582db7d88bfbe6f851eb3070afc0df
+source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
 workflow-type: tm+mt
-source-wordcount: '1844'
-ht-degree: 100%
+source-wordcount: '1851'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,10 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->パッケージの作成は、[Apache Jackrabbit FileVault パッケージ Maven プラグイン](https://jackrabbit.apache.org/filevault-package-maven-plugin/)で管理されるようになりました。構築したパッケージは、ここで説明するように、Adobe Content Package Maven Plugin で AEM にデプロイされます。
+>パッケージ **作成** は、現在、 [Apache Jackrabbit FileVault Package Maven プラグイン。](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>* この `content-package-maven-plugin` は、リリース 1.0.2 からのパッケージ化をサポートしなくなりました。
+>* この記事では、 **デプロイメント** 構築済みパッケージのAEMへの実行は、AdobeContent Package Maven プラグインがおこないます。
+
 
 ## パッケージと AEM プロジェクト構造 {#aem-project-structure}
 
@@ -47,7 +50,7 @@ Content Package Maven Plugin を使用するには、POM ファイルのビル�
 <plugin>
  <groupId>com.day.jcr.vault</groupId>
  <artifactId>content-package-maven-plugin</artifactId>
- <version>0.0.24</version>
+ <version>1.0.4</version>
  <configuration>
        <!-- parameters and values common to all goals, as required -->
  </configuration>

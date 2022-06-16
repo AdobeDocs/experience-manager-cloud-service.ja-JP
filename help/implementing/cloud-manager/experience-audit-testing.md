@@ -2,7 +2,7 @@
 title: エクスペリエンス監査テスト
 description: エクスペリエンス監査がデプロイメントプロセスを検証し、デプロイされた変更がパフォーマンス、アクセシビリティ、ベストプラクティス、SEO の基準を満たしていることを確認する方法について説明します。
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 15de47e28e804fd84434d5e8e5d2fe8fe6797241
+source-git-commit: 1a7a9ee78d09a9360922a63dfa315ef9d106209e
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 26%
@@ -31,7 +31,7 @@ Cloud Manager のエクスペリエンス監査を使用すると、サイト上
 
 監査結果は情報提供であり、デプロイメントマネージャーがスコアおよび現在のスコアと以前のスコアの変化を確認できます。 このインサイトは、現在のデプロイメントで前のバージョンになかった不具合が導入されるかどうかを判断するのに役立ちます。
 
-エクスペリエンス監査は、Google のオープンソースツールであるGoogle Lighthouse を活用し、すべての Cloud Manager 実稼動パイプラインで有効になります。
+エクスペリエンス監査は、GoogleのオープンソースツールであるGoogle Lighthouse を活用し、すべての Cloud Manager 実稼動パイプラインで有効になります。
 
 ## エクスペリエンス監査結果について {#understanding-experience-audit-results}
 

@@ -2,10 +2,10 @@
 title: Cloud Acceleration Manager での実装フェーズ
 description: このページでは、Cloud Acceleration Manager における実装フェーズの概要について説明します。
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: f2cad442ba85d1d889eda669502e120406a4380b
+source-git-commit: 24331b974ded34ef949cc3d6fb157b124c145dee
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 76%
+source-wordcount: '792'
+ht-degree: 72%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 76%
 
 ## コードリファクタリングカードの使用 {#code-refactoring}
 
-「コードリファクタリング」アクティビティカードには、すべての関連情報が表示され、AEM as a Cloud Service への移行時に確認して解決する必要があるコードリファクタリング領域がハイライト表示されます。
+「コードリファクタリング」アクティビティカードは、すべての関連情報を提供し、AEM as a Cloud Serviceに移行する際に確認して解決する必要があるコードリファクタリング領域を強調表示します。
 
 この節では、「コードリファクタリング」アクティビティカードについて説明します。
 
