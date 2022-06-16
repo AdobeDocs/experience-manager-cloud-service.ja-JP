@@ -3,10 +3,10 @@ title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 91361eb49eaf4ec3b89dbd816aecca3c5bfe029f
+source-git-commit: 4fcb2ff39f0634cfcdab5500b03441f6db0b474d
 workflow-type: tm+mt
-source-wordcount: '3360'
-ht-degree: 98%
+source-wordcount: '3358'
+ht-degree: 97%
 
 ---
 
@@ -206,7 +206,7 @@ Cloud Manager を使用してインストールされたコンテンツパッケ
 
 組み込まれるサードパーティパッケージはすべて、ここで説明している AEM as a Cloud Service のコーディングおよびパッケージングガイドラインに従う必要があります。従わない場合は、パッケージを組み込むとデプロイメントに失敗します。
 
-Maven プラグイン設定 **filevault-package-maven-plugin** を使用してサードパーティパッケージをプロジェクトの「コンテナ」パッケージ（通常は、「**all**」）に埋め込む方法を、次の Maven POM XML スニペットで示します。
+次の Maven `POM.xml` スニペットでは、サードパーティパッケージをプロジェクトの「コンテナ」パッケージ（通常、という名前）に埋め込む方法を示します **&#39;all&#39;**、 **filevault-package-maven-plugin** Maven プラグイン設定
 
 ```
 ...
@@ -216,26 +216,18 @@ Maven プラグイン設定 **filevault-package-maven-plugin** を使用して�
   <extensions>true</extensions>
   <configuration>
       ...
-      <subPackages>
-           
-          <!-- Include the application's ui.apps and ui.content packages -->
+      <embeddeds>
+
           ...
- 
-          <!-- Include any other extra packages such as AEM WCM Core Components -->
-          <!-- Set the version for all dependencies, including 3rd party packages, in the project's Reactor POM -->
-          <subPackage>
-              <groupId>com.adobe.cq</groupId>
-              <artifactId>core.wcm.components.all</artifactId>
-              <filter>true</filter>
-          </subPackage>
- 
- 
-          <subPackage>
-              <groupId>com.3rdparty.groupId</groupId>
-              <artifactId>core.3rdparty.artifactId</artifactId>
-              <filter>true</filter>
-          </subPackage>
-      <subPackages>
+
+          <!-- Include any other extra packages  -->
+          <embedded>
+              <groupId>com.vendor.x</groupId>
+              <artifactId>vendor.plug-in.all</artifactId>
+              <type>zip</type>
+              <target>/apps/vendor-packages/container/install</target>
+          </embedded>
+      <embeddeds>
   </configuration>
 </plugin>
 ...
