@@ -3,10 +3,10 @@ title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager as a Cloud Service で Dynamic Media を設定する方法を説明します。
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 527c25ef61f9553a9e0012b8413a8bc6ccf4afdd
+source-git-commit: 5512f5f22336916e66300b82aaff578df3e05b1d
 workflow-type: tm+mt
-source-wordcount: '3449'
-ht-degree: 97%
+source-wordcount: '3537'
+ht-degree: 94%
 
 ---
 
@@ -270,6 +270,7 @@ Dynamic Media によって処理されるアセットタイプを定義して、
 
 **サポートされている形式の MIME タイプを編集するには：**
 
+1. 製品管理者としてas a Cloud ServiceのExperience Managerにログインします。
 1. Experience Manager as a Cloud Service で、Experience Manager as a Cloud Service ロゴを選択してグローバルナビゲーションコンソールにアクセスし、**[!UICONTROL 一般／CRXDE Lite]** に移動します。
 1. 左側のパネルで、次の場所に移動します。
 
@@ -296,6 +297,7 @@ Experience Manager Assets でサポートされていない形式のカスタム
 
 **サポートされていない形式のカスタム MIME タイプを追加するには:**
 
+1. 製品管理者としてas a Cloud ServiceのExperience Managerにログインします。
 1. Experience Manager as a Cloud Service で、**[!UICONTROL ツール／操作／Web コンソール]**&#x200B;に移動します。
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
@@ -377,6 +379,10 @@ PDF ファイル、PostScript® ファイル、PSD ファイルには、以下�
 
 Granite のワークフローキューは、一時的でないワークフローに使用されます。Dynamic Media では、**[!UICONTROL Dynamic Media エンコーディングビデオ]**&#x200B;ワークフローでビデオを処理するために使用されます。
 
+>[!NOTE]
+>
+>このタスクを完了するには、製品管理者としてas a Cloud ServiceのExperience Managerにサインインする必要があります。
+
 **事前定義済みの Granite のワークフローキュー（ビデオアセット）ワーカースレッドを更新するには：**
 
 1. `https://<server>/system/console/configMgr` に移動して、**Queue: Granite Workflow Queue** を検索します。
@@ -398,6 +404,10 @@ Granite のワークフローキューは、一時的でないワークフロー
 #### 事前定義済みの Granite の一時的なワークフローキューワーカースレッドの更新 {#update-granite-transient-workflow-queue-worker-threads-images}
 
 Granite の一時的なワークフローキューは、**[!UICONTROL DAM アセットの更新]**&#x200B;ワークフローに使用されます。Dynamic Media では、画像および非ビデオアセットの取り込みおよび処理に使用されます。
+
+>[!NOTE]
+>
+>このタスクを完了するには、製品管理者としてas a Cloud ServiceのExperience Managerにサインインする必要があります。
 
 **事前定義済みの Granite の一時的なワークフローキューワーカースレッドを更新するには：**
 
@@ -422,7 +432,11 @@ Granite の一時的なワークフローキューは、**[!UICONTROL DAM アセ
 
 #### Dynamic Media Classic（Scene7）サーバーへの最大アップロード接続数の更新 {#update-max-s7-upload-connections}
 
-Dynamic Media Classic（Scene7）アップロード接続の設定では、Experience Manager Assets を Dynamic Media Classic サーバーに同期します。
+Dynamic Media Classic(Scene7) アップロード接続設定は、Experience ManagerアセットをDynamic Media Classicサーバーに同期します。
+
+>[!NOTE]
+>
+>このタスクを完了するには、製品管理者としてas a Cloud ServiceのExperience Managerにサインインする必要があります。
 
 **Dynamic Media Classic（Scene7）サーバーへの最大アップロード接続数を更新するには：**
 
