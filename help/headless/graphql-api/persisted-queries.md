@@ -3,10 +3,10 @@ title: 永続的な GraphQL クエリ
 description: Adobe Experience Manager as a Cloud Serviceで GraphQL クエリを保持してパフォーマンスを最適化する方法を説明します。 クライアントアプリケーションで HTTP GET メソッドを使用して永続的クエリをリクエストでき、応答を Dispatcher および CDN レイヤーにキャッシュできるので、最終的にクライアントアプリケーションのパフォーマンスが向上します。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 368c2d537d740b2126aa7cce657ca54f7ad6b329
+source-git-commit: 8a9cdc451a5da09cef331ec0eaadd5d3a68b1985
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 53%
+source-wordcount: '1109'
+ht-degree: 30%
 
 ---
 
@@ -54,17 +54,17 @@ ht-degree: 53%
 
 クエリを保持するには、次のような様々な方法があります。
 
-* GraphiQL IDE — を参照してください。 [永続クエリの保存](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries)
+* GraphiQL IDE — を参照してください。 [永続クエリの保存](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries) （推奨される方法）
 * curl — 次の例を参照してください。
 * その他のツール ( [Postman](https://www.postman.com/)
 
-**curl** コマンドラインツールを使用して指定のクエリを永続化する手順は次のとおりです。
+GraphiQL IDE は、 **優先** メソッドを使用してクエリを保持できます。 を使用して特定のクエリを保持するには **curl** コマンドラインツール：
 
 1. 新しいエンドポイント URL `/graphql/persist.json/<config>/<persisted-label>` に PUT してクエリを準備します。
 
    例えば、次のようにして、永続的クエリを作成します。
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -87,7 +87,7 @@ ht-degree: 53%
 
    例えば、以下が成功するかどうかを確認します。
 
-   ```xml
+   ```json
    {
      "action": "create",
      "configurationName": "wknd",
@@ -101,7 +101,7 @@ ht-degree: 53%
 
    例えば、次のような永続的クエリを使用します。
 
-   ```xml
+   ```shell
    $ curl -X GET \
        http://localhost:4502/graphql/execute.json/wknd/plain-article-query
    ```
@@ -110,7 +110,7 @@ ht-degree: 53%
 
    例えば、次のような永続的クエリを使用します。
 
-   ```xml
+   ```shell
    $ curl -X POST \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -136,7 +136,7 @@ ht-degree: 53%
 
    次に例を示します。
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -149,7 +149,7 @@ ht-degree: 53%
 
    次に例を示します。
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -162,7 +162,7 @@ ht-degree: 53%
 
    次に例を示します。
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -184,44 +184,131 @@ ht-degree: 53%
      }'
    ```
 
+
+## 永続化クエリの実行方法 {#execute-persisted-query}
+
+永続化されたクエリを実行するには、クライアントアプリケーションは次の構文を使用してGETリクエストを実行します。
+
+```
+GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
+```
+
+ここで、 `PERSISTENT_PATH` は、永続的なクエリが保存される場所への短縮パスです。
+
+1. 例： `wknd` は設定名で、 `plain-article-query` は、永続クエリの名前です。 クエリを実行するには：
+
+   ```shell
+   $ curl -X GET \
+       https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/plain-article-query
+   ```
+
 1. パラメーター付きのクエリを実行します。
+
+   >[!NOTE]
+   >
+   > クエリ変数と値は正しく設定されている必要があります [エンコード済み](#encoding-query-url) 永続クエリを実行する際。
 
    次に例を示します。
 
    ```xml
-   $ curl -X POST \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-       -H "Content-Type: application/json" \
-       "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-   
    $ curl -X GET \
-       "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
+       "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/plain-article-query-parameters%3Bapath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fmagazine%2Falaska-adventure%2Falaskan-adventures%3BwithReference%3Dfalse
    ```
+
+   詳しくは、 [クエリ変数](#query-variables) を参照してください。
+
+## クエリ変数の使用 {#query-variables}
+
+クエリ変数は、永続化クエリで使用できます。 クエリ変数は、セミコロン (`;`) を変数名と値で使用します。 複数の変数はセミコロンで区切られます。
+
+パターンは次のようになります。
+
+```
+<AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
+```
+
+例えば、次のクエリには変数が含まれています `activity` アクティビティの値に基づいてリストをフィルターするには：
+
+```graphql
+query getAdventuresByActivity($activity: String!) {
+      adventureList (filter: {
+        adventureActivity: {
+          _expressions: [
+            {
+              value: $activity
+            }
+          ]
+        }
+      }){
+        items {
+          _path
+        adventureTitle
+        adventurePrice
+        adventureTripLength
+      }
+    }
+  }
+```
+
+このクエリは、パスの下に保持できます `wknd/adventures-by-activity`. 永続化クエリを呼び出すには、次の手順に従います。 `activity=Camping` リクエストは次のようになります。
+
+```
+<AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
+```
+
+注意： `%3B` は、 `;` および `%3D` は `=`. クエリ変数と特殊文字は、次の条件を満たす必要があります。 [適切にエンコード](#encoding-query-url) を実行します。
+
+## アプリで使用するクエリ URL のエンコード {#encoding-query-url}
+
+アプリケーションで使用する場合、クエリ変数を構築する際に使用される特殊文字 ( セミコロン (`;`)，等号 (`=`)、スラッシュ `/`) は、対応する UTF-8 エンコーディングを使用するように変換する必要があります。
+
+次に例を示します。
+
+```xml
+curl -X GET \ "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/adventure-by-path%3BadventurePath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fadventures%2Fbali-surf-camp%2Fbali-surf-camp"
+```
+
+URL は次の部分に分類できます。
+
+| URL 部分 | 説明 |
+|----------| -------------|
+| `/graphql/execute.json` | 永続的なクエリエンドポイント |
+| `/wknd/adventure-by-path` | 永続的なクエリパス |
+| `%3B` | のエンコード `;` |
+| `adventurePath` | クエリ変数 |
+| `%3D` | のエンコード `=` |
+| `%2F` | のエンコード `/` |
+| `%2Fcontent%2Fdam...` | コンテンツフラグメントへのエンコードされたパス |
+
+プレーンテキストでは、リクエスト URI は次のようになります。
+
+```plaintext
+/graphql/execute.json/wknd/adventure-by-path;adventurePath=/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp
+```
+
+クライアントアプリで永続化されたクエリを使用するには、AEMヘッドレスクライアント SDK を [JavaScript](https://github.com/adobe/aem-headless-client-js), [Java](https://github.com/adobe/aem-headless-client-java)または [NodeJS](https://github.com/adobe/aem-headless-client-nodejs). ヘッドレスクライアント SDK は、リクエストで任意のクエリ変数を適切にエンコードします。
 
 ## 実稼動環境への永続的なクエリの転送  {#transfer-persisted-query-production}
 
-最終的に、持続的なクエリは、(AEMas a Cloud Serviceの ) 実稼動パブリッシュ環境上に存在し、クライアントアプリケーションからリクエストできる必要があります。 実稼動パブリッシュ環境で永続化クエリを使用するには、関連する永続ツリーをレプリケートする必要があります。
+永続化されたクエリは、常に AEM オーサーサービスで作成してから、AEM パブリッシュサービスに公開（レプリケート）する必要があります。 多くの場合、永続化クエリは、ローカル環境や開発環境などの低レベルの環境で作成およびテストされます。 その後、永続化されたクエリを上位レベルの環境に昇格し、最終的に、クライアントアプリケーションが使用できるように、実稼動 AEM パブリッシュ環境でクエリを使用できるようにする必要があります。
 
-* 最初は、実稼動作成者に対して、新しく作成したコンテンツをクエリで検証するために、
-* 最後に実稼動版の公開をライブ消費に
+### パッケージの永続的なクエリ
 
-永続化されたクエリを転送するには、いくつかの方法があります。
+永続クエリは、 [AEMパッケージ](/help/implementing/developing/tools/package-manager.md). その後、AEMパッケージを別の環境にダウンロードしてインストールできます。 AEMパッケージは、AEM オーサー環境から AEM パブリッシュ環境にレプリケートすることもできます。
 
-1. パッケージを使用する場合：
-   1. 新しいパッケージ定義を作成します。
-   1. 設定（例：`/conf/wknd/settings/graphql/persistentQueries`）を含めます。
-   1. パッケージをビルドします。
-   1. パッケージを転送します（ダウンロード/アップロードまたはレプリケート）。
-   1. パッケージをインストールします。
+パッケージを作成するには：
 
-1. レプリケーションに POST を使用する場合：
+1. に移動します。 **ツール** > **導入** > **パッケージ**.
+1. をタップして新しいパッケージを作成します。 **パッケージを作成**. パッケージを定義するダイアログが開きます。
+1. パッケージ定義ダイアログで、 **一般** 入力 **名前** 例えば、「wknd-persistent-queries」などです。
+1. 「1.0」のようなバージョン番号を入力します。
+1. の下 **フィルター** 新しい **フィルター**. パスファインダーを使用して `persistentQueries` フォルダーの下に配置されます。 例： `wknd` フルパスの設定： `/conf/wknd/settings/graphql/persistentQueries`.
+1. タップ **保存** 新しいパッケージ定義を保存し、ダイアログを閉じます。
+1. 次をタップします。 **ビルド** ボタンをクリックします。
 
-   ```xml
-   $ curl -X POST   http://localhost:4502/bin/replicate.json \
-   -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-   -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
-   -F cmd=activate
-   ```
+パッケージが構築されたら、次の操作を実行できます。
+* **ダウンロード** パッケージを別の環境に再度アップロードします。
+* **複製** タップすることによるパッケージ **詳細** > **複製**. 接続された AEM パブリッシュ環境にパッケージがレプリケートされます。
 
 <!--
 1. Using replication/distribution tool:
@@ -231,23 +318,3 @@ ht-degree: 53%
 * Using a workflow (via workflow launcher configuration):
   1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 -->
-
-実稼動環境のパブリッシュ環境でクエリを設定すると、同じ認証原則が適用され、パブリッシュエンドポイントを使用するだけです。
-
->[!NOTE]
->
->匿名アクセスの場合は、ACL で「全員」にクエリ設定へのアクセスが許可されているとシステムが想定します。
->
->そうでない場合は、実行できなくなります。
-
-## アプリで使用するクエリ URL のエンコード {#encoding-query-url}
-
-アプリケーションで使用する場合は、URL 内のセミコロン (&quot;;&quot;) をエンコードする必要があります。
-
-例えば、永続的クエリを実行するリクエストの場合と同様に、次のようにします。
-
-```xml
-curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-```
-
-クライアントアプリで永続化されたクエリを使用するには、AEMヘッドレスクライアント SDK を使用する必要があります [JavaScript 用AEMヘッドレスクライアント](https://github.com/adobe/aem-headless-client-js).
