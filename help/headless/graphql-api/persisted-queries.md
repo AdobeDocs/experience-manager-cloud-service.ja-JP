@@ -3,7 +3,7 @@ title: 永続的な GraphQL クエリ
 description: Adobe Experience Manager as a Cloud Serviceで GraphQL クエリを保持してパフォーマンスを最適化する方法を説明します。 クライアントアプリケーションで HTTP GET メソッドを使用して永続的クエリをリクエストでき、応答を Dispatcher および CDN レイヤーにキャッシュできるので、最終的にクライアントアプリケーションのパフォーマンスが向上します。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 8a9cdc451a5da09cef331ec0eaadd5d3a68b1985
+source-git-commit: 6529b4b874cd7d284b92546996e2373e59075dfd
 workflow-type: tm+mt
 source-wordcount: '1109'
 ht-degree: 30%
@@ -307,6 +307,7 @@ URL は次の部分に分類できます。
 1. 次をタップします。 **ビルド** ボタンをクリックします。
 
 パッケージが構築されたら、次の操作を実行できます。
+
 * **ダウンロード** パッケージを別の環境に再度アップロードします。
 * **複製** タップすることによるパッケージ **詳細** > **複製**. 接続された AEM パブリッシュ環境にパッケージがレプリケートされます。
 
