@@ -4,10 +4,10 @@ description: アンシャープマスクの設定、スマート切り抜きと�
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: ee44aa9dd6b7977bfa5460ded4b02f1fcbc67096
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '3234'
-ht-degree: 100%
+source-wordcount: '3271'
+ht-degree: 98%
 
 ---
 
@@ -53,6 +53,14 @@ ht-degree: 100%
 シャープニングについては、[画像のシャープニング](/help/assets/dynamic-media/assets/sharpening_images.pdf)を参照してください。
 
 ## 切り抜きツールオプション {#crop-options}
+
+画像にスマート切り抜きを実装する場合、Adobeでは次のベストプラクティスを推奨し、次の制限を適用します。
+
+| 制限タイプ | ベストプラクティス | 実装された制限 |
+| --- | --- | --- |
+| 画像あたりのスマート切り抜き数 | 5 | 100 |
+
+関連トピック [Dynamic Mediaの制限](/help/assets/dynamic-media/limitations.md).
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 

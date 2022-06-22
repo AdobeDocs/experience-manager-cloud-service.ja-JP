@@ -4,10 +4,10 @@ description: Dynamic Media でのスピンセットの操作方法について�
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 100%
+source-wordcount: '1927'
+ht-degree: 96%
 
 ---
 
@@ -24,6 +24,14 @@ ht-degree: 100%
 >[!NOTE]
 >
 >アセットユーザーインターフェイスについて詳しくは、[タッチ UI を使用したアセットの管理](/help/assets/manage-digital-assets.md)を参照し、画像セットアセットがアップロードされる新しいフォルダーに適用します。
+
+スピンセットを作成する場合、Adobeでは次のベストプラクティスを推奨し、次の制限を適用します。
+
+| 制限タイプ | ベストプラクティス | 実装された制限 |
+| --- | --- | --- |
+| 2D セットあたりの最大行数/列数 | 1 セットあたり 12～18 個の画像 | 1000 |
+
+関連トピック [Dynamic Mediaの制限](/help/assets/dynamic-media/limitations.md).
 
 ## クイックスタート：スピンセット {#quick-start-spin-sets}
 
@@ -108,6 +116,14 @@ ht-degree: 100%
 >[!NOTE]
 >
 >スピンセット内での画像の表示順は重要です。スピンがスムーズに 360 度のビューを描くように画像を並べ替えてください。
+
+スピンセットを作成する場合、Adobeでは次のベストプラクティスを推奨し、次の制限を適用します。
+
+| 制限タイプ | ベストプラクティス | 実装された制限 |
+| --- | --- | --- |
+| 2D セットあたりの最大行数/列数 | 1 セットあたり 12～18 個の画像 | 1000 |
+
+関連トピック [Dynamic Mediaの制限](/help/assets/dynamic-media/limitations.md).
 
 **スピンセットを作成するには：**
 

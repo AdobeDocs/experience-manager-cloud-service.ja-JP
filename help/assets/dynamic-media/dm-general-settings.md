@@ -9,10 +9,10 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: cca950b0a4eed60f82d65779766405ed216111e3
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '2492'
-ht-degree: 100%
+source-wordcount: '2522'
+ht-degree: 98%
 
 ---
 
@@ -135,6 +135,8 @@ Adobe® Photoshop® ファイルからのテンプレート作成、レイヤー
 | **[!UICONTROL アンカー]** | PSD ファイルから作成されたレイヤーコンポジションから生成されたテンプレートに画像がどのようにアンカーされるのかを指定します。デフォルトで、アンカーは中央です。中央アンカーにより、置換画像の縦横比に関わらず、置換画像で同じ領域をより適切に埋めることができます。この画像を置換する縦横比が異なる画像が、テンプレートの参照時やパラメーターの置き換えの使用時に、同じ領域を効果的に専有します。アプリケーションでテンプレート内の割り当てられた領域を置換画像で埋める必要がある場合、別の設定に変更してください。 |
 
 ### 「PDF」タブ {#pdf-tab}
+
+新規のアップロードで、PDFの抽出で考慮される最大ページ数は 5,000 ページです。 この制限は 2022 年 12 月 31 日に 100 ページに変更されます。 関連トピック [Dynamic Mediaの制限](/help/assets/dynamic-media/limitations.md).
 
 ファイルのラスタライズ、検索単語とリンクの抽出、解像度の設定、カラースペースの選択を行うことができます。
 

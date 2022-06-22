@@ -4,10 +4,10 @@ description: Dynamic Media の画像セットの操作方法について説明�
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '2041'
-ht-degree: 100%
+source-wordcount: '2155'
+ht-degree: 95%
 
 ---
 
@@ -28,6 +28,15 @@ ht-degree: 100%
 >[!NOTE]
 >
 >Assets ユーザーインターフェイスについては、[タッチ UI を使用したアセットの管理](/help/assets/manage-digital-assets.md)を参照してください。
+
+画像セットを作成する際、Adobeでは次のベストプラクティスを推奨し、次の制限を適用します。
+
+| アセット — 制限タイプ | ベストプラクティス | 実装された制限 | 制限の変更 2022 年 12 月 31 日 |
+| --- | --- | --- | --- |
+| **画像セット**  — セットあたりの重複アセット数 | 重複なし | 100 | 20 |
+| **画像セット** - 1 セットあたりの最大画像数 | 1 セットあたり 5～10 個の画像 | 1000 |
+
+関連トピック [Dynamic Mediaの制限](/help/assets/dynamic-media/limitations.md).
 
 ## クイックスタート：画像セット {#quick-start-image-sets}
 
@@ -126,6 +135,15 @@ ht-degree: 100%
 >[!NOTE]
 >
 >ファイル名に「,」（コンマ）が含まれているアセットについては、画像セットはサポートされません。
+
+画像セットを作成する際、Adobeでは次のベストプラクティスを推奨し、次の制限を適用します。
+
+| アセット — 制限タイプ | ベストプラクティス | 実装された制限 | 制限の変更 2022 年 12 月 31 日 |
+| --- | --- | --- | --- |
+| **画像セット**  — セットあたりの重複アセット数 | 重複なし | 100 | 20 |
+| **画像セット** - 1 セットあたりの最大画像数 | 1 セットあたり 5～10 個の画像 | 1000 |
+
+関連トピック [Dynamic Mediaの制限](/help/assets/dynamic-media/limitations.md).
 
 **画像セットを作成するには：**
 
