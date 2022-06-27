@@ -10,10 +10,10 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 580ab2731bc277bcd53c4863b3b22f5e44dc8406
+source-git-commit: 0c303439c879605f1ab0927cf79b132dbb448af5
 workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -88,7 +88,7 @@ CAPTCHA（Completely Automated Public Turing test to tell Computers and Humans A
 1. **[!UICONTROL Captcha サービス]**&#x200B;ドロップダウンで「**[!UICONTROL reCaptcha]**」を選択して、reCAPTCHA サービスを有効にします（「[Google による reCAPTCHA サービス](#google-recaptcha)」に記載されている手順に従って reCAPTCHA サービスが設定されている場合）。設定ドロップダウンから設定を選択します。
 1. reCAPTCHA ウィジェットのタイプを「**[!UICONTROL 標準]**」または「**[!UICONTROL コンパクト]**」から選択します。また、「**[!UICONTROL 非表示]**」オプションを使用して、疑わしいアクティビティの場合にのみ CAPTCHA チャレンジを表示できます。以下に示す reCAPTCHA バッジによって保護されたが、保護されたフォームに表示されます。
 
-   ![reCAPTCHA バッジによって処理された Google](assets/google-recaptcha-v2.png)
+   ![Googleは reCAPTCHA バッジで保護されています](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
