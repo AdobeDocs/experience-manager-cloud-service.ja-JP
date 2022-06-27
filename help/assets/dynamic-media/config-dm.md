@@ -3,10 +3,10 @@ title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager as a Cloud Service で Dynamic Media を設定する方法を説明します。
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 5512f5f22336916e66300b82aaff578df3e05b1d
+source-git-commit: fc07b12f7a35b4f772a0ac4f9e6b09a1287eec8b
 workflow-type: tm+mt
-source-wordcount: '3537'
-ht-degree: 94%
+source-wordcount: '3574'
+ht-degree: 93%
 
 ---
 
@@ -272,6 +272,9 @@ Dynamic Media によって処理されるアセットタイプを定義して、
 
 1. 製品管理者としてas a Cloud ServiceのExperience Managerにログインします。
 1. Experience Manager as a Cloud Service で、Experience Manager as a Cloud Service ロゴを選択してグローバルナビゲーションコンソールにアクセスし、**[!UICONTROL 一般／CRXDE Lite]** に移動します。
+
+   CRXDE Liteにアクセスできない場合は、 [使用CRXDE Lite](/help/implementing/developing/tools/crxde.md).
+
 1. 左側のパネルで、次の場所に移動します。
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -326,6 +329,8 @@ Experience Manager Assets でサポートされていない形式のカスタム
 
 1. Experience Manager as a Cloud Service のコンソールを開いているブラウザータブに戻ります。
 1. Experience Manager as a Cloud Service で、**[!UICONTROL ツール／一般／CRXDE Lite]** に移動します。
+
+   CRXDE Liteにアクセスできない場合は、 [使用CRXDE Lite](/help/implementing/developing/tools/crxde.md).
 
    ![ツール／一般／CRXDE Lite](assets/2019-08-02_16-55-41.png)
 
@@ -382,6 +387,8 @@ Granite のワークフローキューは、一時的でないワークフロー
 >[!NOTE]
 >
 >このタスクを完了するには、製品管理者としてas a Cloud ServiceのExperience Managerにサインインする必要があります。
+
+OSGi へのアクセス権がない場合は、 [OSGi 設定](/help/implementing/developing/components/overview.md#osgi-configuration).
 
 **事前定義済みの Granite のワークフローキュー（ビデオアセット）ワーカースレッドを更新するには：**
 
