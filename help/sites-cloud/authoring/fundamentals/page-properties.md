@@ -2,10 +2,10 @@
 title: 'ページプロパティの編集 '
 description: ページに必要なプロパティを定義します
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
+source-git-commit: 73adc2a9cad7f3e5dde723d1b3d695f8cec3ca69
 workflow-type: tm+mt
-source-wordcount: '1966'
-ht-degree: 100%
+source-wordcount: '1987'
+ht-degree: 98%
 
 ---
 
@@ -98,7 +98,8 @@ ht-degree: 100%
 
    * **言語** - ページの言語です。
    * **言語ルート** - ページが言語コピーのルートである場合、オンにする必要があります
-   * **リダイレクト** - このページが自動的にリダイレクトするページを示します。
+   * **リダイレクト** - このページが自動的にリダイレクトするページを示します。 HTML `302 Found` ステータス。
+      * **永続的なリダイレクト**  — オンにすると、ページはHTMLと共に提供されるターゲットパスにリダイレクトされます `301 Moved Permanently` ステータス。
    * **デザイン** - 結果のサイトのページナビゲーションにページが表示されるかどうかを示します
    * **エイリアス** - このページで使用されるエイリアスを指定します
       * 例えば、`/content/wknd/us/en/magazine/members-only` ページに `private` というエイリアスを定義した場合、このページは `/content/wknd/us/en/magazine/private` からもアクセスできます。
