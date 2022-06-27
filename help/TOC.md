@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 181a2d63972cc1d9d6c2a621771d28008114f763
+source-git-commit: 46a6871b1117b38e9138375073c9b71800e4b972
 workflow-type: tm+mt
-source-wordcount: '3602'
+source-wordcount: '3606'
 ht-degree: 96%
 
 ---
@@ -453,6 +453,7 @@ ht-degree: 96%
       + [既存のインストールの外部依存関係の削除](/help/assets/remove-external-dependencies.md)
       + [ [!DNL Workfront] 用の  [!DNL enhanced connector]  の設定](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+      + [アセットメタデータマッピングの設定](/help/assets/configure-asset-metadata-mapping.md)
 + Forms {#forms}
    + [はじめに](/help/forms/home.md)
    + [主な機能](/help/forms/key-features.md)
