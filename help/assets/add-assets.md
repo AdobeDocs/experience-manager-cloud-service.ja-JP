@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] への�
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1b68322b63fdbf8dab5a7dbd37dd1143f026c051
+source-git-commit: a715594f74187ad61cdea566274723d170fd3783
 workflow-type: tm+mt
-source-wordcount: '2948'
-ht-degree: 91%
+source-wordcount: '3029'
+ht-degree: 88%
 
 ---
 
@@ -153,6 +153,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >
 >ストレージアカウントコンテナまたはバケットをプライベートとして作成し、許可されたリクエストからのみ接続を受け入れます。ただし、入力ネットワーク接続に関する追加の制限はサポートされていません。
 
+>[!NOTE]
+>
+>外部ストレージアカウントには、一括読み込みツールとは異なるファイル名またはフォルダー名のルールが設定されている場合があります。 詳しくは、 [一括インポート中のファイル名の処理](#filename-handling-bulkimport) を参照してください。
+
+
 ### 一括読み込みツールを設定 {#configure-bulk-ingestor-tool}
 
 一括読み込みツールを設定するには、次の手順に従います。
@@ -214,6 +219,15 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 アセットまたはフォルダーを一括で読み込む場合は、 [!DNL Experience Manager Assets] は、インポートソースに存在するの構造全体をインポートします。 [!DNL Experience Manager] は、アセット名とフォルダー名に含まれる特殊文字に対する組み込みのルールに従うので、これらのファイル名の変更が必要になります。 フォルダー名とアセット名の両方について、ユーザーが定義したタイトルは変更されず、に保存されます。 `jcr:title`.
 
 一括インポート中は、 [!DNL Experience Manager] アセットやフォルダーの再読み込みを避けるために既存のフォルダーを探し、読み込みがおこなわれる親フォルダーに適用されるサニタイズルールを検証します。 親フォルダーにサニタイズルールが適用されている場合、インポートソースにも同じルールが適用されます。 新しい読み込みの場合、アセットおよびフォルダーのファイル名を管理するために、次のサナライゼーションルールが適用されます。
+
+**一括読み込みで使用できない名前**
+
+次の文字は、ファイル名およびフォルダー名で使用できません。
+
+* 制御および私用文字 (0x00 ～ 0x1F、\u0081、\uE000)
+* ドット (.) で終わるファイル名またはフォルダー名
+
+これらの条件に一致する名前を持つファイルまたはフォルダーは、インポートプロセス中にスキップされ、失敗とマークされます。
 
 **一括読み込みでのアセット名の処理**
 
