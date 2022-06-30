@@ -2,7 +2,7 @@
 title: SPA の概要およびガイド
 description: この記事では、SPA の概念を説明し、基本的な SPA アプリケーションを使用したオーサリング方法を紹介し、基礎となる AEM SPA エディターとの関連を示します。
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1984'
 ht-degree: 100%
@@ -177,7 +177,7 @@ AEM SPA エディターを活用する SPA が構築されている場合、コ�
 
    ![WKND SPA Project ホームページの JSON](assets/wknd-json.png)
 
-   AEM SPA エディターは、[AEM コンテンツサービス](/help/assets/content-fragments/content-fragments.md)を利用して、ページのコンテンツ全体を JSON モデルとして配信します。
+   AEM SPA エディターは、[AEM コンテンツサービス](/help/sites-cloud/administering/content-fragments/content-fragments.md)を利用して、ページのコンテンツ全体を JSON モデルとして配信します。
 
    特定のインターフェイスを実装することで、Sling Model は SPA に必要な情報を提供します。JSON データの配信は、各コンポーネント（ページから段落、コンポーネントなど）に下方向に委任されます。
 

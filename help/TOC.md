@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 0f6546d4a25a59a93090952f0ee58e27f0f0f838
+source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
 workflow-type: tm+mt
-source-wordcount: '3612'
-ht-degree: 96%
+source-wordcount: '3682'
+ht-degree: 93%
 
 ---
 
@@ -274,6 +274,20 @@ ht-degree: 96%
          + [ContextHub でのセグメント化の設定](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [登録、ログイン、ユーザープロファイル](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
    + 管理 {#administering}
+      + コンテンツフラグメント {#content-fragments}
+         + [コンテンツフラグメントの操作](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+         + [コンテンツフラグメントと GraphQL のヘッドレス配信](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
+         + [インスタンスに対するコンテンツフラグメント機能の有効化](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
+         + [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+         + [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
+         + [コンテンツフラグメントの管理](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+         + [バリエーション - フラグメントコンテンツのオーサリング](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+         + [コンテンツフラグメントを関連付けられたコンテンツ](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)
+         + [メタデータ - フラグメントのプロパティ](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+         + [コンテンツフラグメント - 削除に関する考慮事項](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
+         + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
+         + [構造ツリー](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
+         + [プレビュー - JSON 表現](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
       + サイト作成 {#site-creation}
          + [新しいサイトの作成](/help/sites-cloud/administering/site-creation/create-site.md)
          + [フロントエンドパイプラインの有効化](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -619,18 +633,18 @@ ht-degree: 96%
       + [コンテンツフラグメント](/help/headless/setup/create-content-fragment.md)
       + [GraphQL エンドポイント](/help/headless/setup/create-api-request.md)
    + コンテンツフラグメント {#content-fragments}
-      + [概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=ja)
+      + [概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
       + [コンテンツフラグメントコンソール](/help/headless/content-fragments/content-fragment-console.md)
-      + [コンテンツフラグメントモデル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=ja)
-      + [プロジェクト管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=ja)
+      + [コンテンツフラグメントモデル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
+      + [プロジェクト管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
       + オーサリング{#authoring}
-         + [オーサリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=ja)
-         + [テキストエディター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=ja)
-         + [関連コンテンツ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=ja)
-         + [バリエーション](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=ja#managing-variations)
-      + [メタデータ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html?lang=ja)
-      + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html?lang=ja)
-      + [JSON プレビュー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=ja)
+         + [オーサリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html)
+         + [テキストエディター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html)
+         + [関連コンテンツ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html)
+         + [バリエーション](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#managing-variations)
+      + [メタデータ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html)
+      + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html)
+      + [JSON プレビュー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html)
    + GraphQL API {#graphql-api}
       + [コンテンツフラグメント用 GraphQL API](/help/headless/graphql-api/content-fragments.md)
       + [GraphQL エンドポイントを管理](/help/headless/graphql-api/graphql-endpoint.md)

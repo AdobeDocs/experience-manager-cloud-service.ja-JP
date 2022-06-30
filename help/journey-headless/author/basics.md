@@ -2,10 +2,10 @@
 title: オーサリングの基本
 description: コンテンツフラグメントを使用したヘッドレス CMS のコンテンツオーサリングの概念と仕組みについて説明します。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
+source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 100%
+source-wordcount: '1668'
+ht-degree: 84%
 
 ---
 
@@ -53,38 +53,68 @@ AEM インストールは、通常、少なくとも次の 2 つの環境で構�
 
 初めてログインすると、簡単なオンラインチュートリアルでユーザーインターフェイスの主な機能がいくつか紹介されます。
 
-その後、ナビゲーションパネルを使用して、AEMの主要な領域にアクセスできます。コンテンツフラグメントの場合は、**Assets コンソール**&#x200B;を使用します。
+その後、ナビゲーションパネルを使用して、AEMの主要な領域にアクセスできます。コンテンツフラグメントの場合、 **コンテンツフラグメント** コンソール ( 一部のアクションに対しては、 **Assets** コンソール )。
 
-ナビゲーションパネルを開くには、左上の Adobe アイコンを選択し、次に小さいコンパスアイコンを選択します。
+ナビゲーションパネルを開くには、左上のAdobeアイコンを選択し、次に小さいコンパスアイコンを選択します。
 
-![ナビゲーションパネル](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
+<!--
+The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
+
+![Navigation panel](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
+-->
 
 >[!NOTE]
->コンテンツフラグメントは AEM **Sites** の機能ですが、**Assets** コンソールからアクセスできます。これは技術的なことでユーザーには関係ありませんが、知っておくと役に立つ場合があります。
+>コンテンツフラグメントはAEMの機能ですが、 **サイト**、 **Assets**. これは技術的なことでユーザーには関係ありませんが、知っておくと役に立つ場合があります。
 
-コンソール内では、フォルダーを選択してコンテンツフラグメントに移動したり、（ヘッダー内の）パンくずリストを選択してツリーの上に戻ることができます。
+コンソール内で、左側のパネルでフォルダーを選択して、コンテンツフラグメントに移動できます。 また、フィルターや検索も可能です。
 
-![パンくずリスト](/help/journey-headless/author/assets/headless-journey-author-navigation-02.png)
+![コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/assets/cfc-console-filter.png)
 
 ### アクション、選択、表示 {#actions-selecting-viewing}
 
-**Assets** コンソールには、リソース（フォルダーやコンテンツフラグメントなど）を選択した後で使用できる専用の&#x200B;**アクションツールバー**&#x200B;および&#x200B;**クイックアクション**&#x200B;があります。
+内 **コンテンツフラグメント** コンソールコンテンツフラグメントに対しては、ツールバーから様々なアクションを使用できます。
 
-クイックアクションは、1 つのリソースに対して使用できます。下の **Basel** を参照してください。
+<!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
 
-![クイックアクション](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
+* **アセットで開く**
+* **作成**
+* この **参照元** 列には、そのフラグメントのすべての親参照を表示するための直接リンクも表示されます。参照するコンテンツフラグメント、エクスペリエンスフラグメント、ページを含める。
+* フォルダー名の上にマウスポインターを置くと、JCR パスが表示されます。
 
-アクションツールバーでは、現在のシナリオに適用できるすべてのアクションにアクセスできます。使用可能なアクションは、場所や選択したリソース数（１ つまたは複数）によって変わることがあります。
+フラグメントを選択したら、次の適切なアクションをすべて使用できます。
 
-![アクションツールバー](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
+<!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
 
-リソースの表示形式を表示セレクターで選択できます。
+* **次を開きます：**
+* **公開** ( および **非公開**)
+* **コピー**
+* **移動**
+* **名前を変更**
+* **削除**
 
-![表示セレクター](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
+>[!NOTE]
+>
+>公開、非公開、削除、移動、名前変更、コピー、非同期ジョブのトリガーなどのアクション。 そのジョブの進行状況は、AEM非同期ジョブ UI で監視できます。
 
-項目に関する追加情報をパネルセレクター表示できます。追加のアクションにもアクセスできます。
+<!--
+The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
 
-![左レール](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
+The Quick Actions are available for a single resource, see **Basel** in the example below:
+
+![Quick Actions](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
+
+The Actions Toolbar provides access to the full range of actions - applicable for the current scenario. The actions available can change; for example, dependent on your location, or whether you have selected multiple resources:
+
+![Action Toolbar](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
+
+You can select the format for viewing your resources with the View Selector:
+
+![View Selector](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
+
+You can view additional information about items using the Rail Selector. This also gives access to additional actions.
+
+![Left Rail](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
+-->
 
 ## コンテンツフラグメントのオーサリング {#authoring-content-fragments}
 
@@ -98,7 +128,7 @@ AEM インストールは、通常、少なくとも次の 2 つの環境で構�
 
 #### フォルダーの作成 {#creating-folder}
 
-そのためには、Assets コンソールの「**ファイル**」セクション内に一連のフォルダーを作成します。「**作成**」オプション（右上）を選択したあと、「**フォルダー**」を選択します。
+そのためには、Assets コンソールの「**ファイル**」セクション内に一連のフォルダーを作成します。****「**作成**」オプション（右上）を選択したあと、「**フォルダー**」を選択します。
 
 ![フォルダー作成オプション](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -136,23 +166,39 @@ AEM インストールは、通常、少なくとも次の 2 つの環境で構�
 
 ### コンテンツフラグメントの作成 {#creating-fragment}
 
-コンテンツフラグメントの作成はフォルダーの作成と非常に似ています。代わりに、「**コンテンツフラグメント**」オプションを使用するだけです。
+内 **コンテンツフラグメント** コンソールでは、 **作成** 開く **新しいコンテンツフラグメント** ダイアログ：
 
-![コンテンツフラグメントオプションの作成](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
+![コンテンツフラグメントコンソール — 新しいフラグメントの作成](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-今度は、ウィザードが開きます。最初の手順では、フラグメントの基になるコンテンツフラグメントモデルを選択します。
+以下を指定します。
 
-![コンテンツフラグメント作成 - モデルの選択](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
+* **場所**
+* **コンテンツフラグメントモデル**
+* **タイトル**
+* **名前**
+* **説明**
 
-「**次へ**」で続行した後、フラグメントの詳細（「**基本**」および「**詳細**」）を指定できます。
+次に、次のいずれかで確定します。 **作成** または **作成して開く**.
 
-![コンテンツフラグメント作成 - 名前の指定](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+<!--
+Creating a Content Fragment is very similar - you just use the **Content Fragment** option instead:
 
-「**作成**」で確定すると、フラグメントをエディターで&#x200B;**開く**&#x200B;ことができます。
+![Create Content Fragment option](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
+
+This time a wizard opens. The first step is to select the Content Fragment Model that your fragment will be based on:
+
+![Create Content Fragment - select Model](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
+
+After continuing with **Next** you can supply the details (**Basic** and **Advanced**) for your fragment:
+
+![Create Content Fragment - provide Name](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+
+Confirm with **Create** and you can then **Open** your fragment in the editor.
+-->
 
 ### フラグメントの編集 {#editing-fragment}
 
-フラグメントは、作成後すぐに開くことも、Assets コンソールから選択して開くこともできます。
+フラグメントは、作成後すぐに開くことも、コンテンツフラグメントコンソール（またはアセットコンソール）から選択することもできます。
 
 エディターが初めて開くと、以下のものが表示されます。
 
@@ -217,7 +263,7 @@ AEM インストールは、通常、少なくとも次の 2 つの環境で構�
 
 フラグメントが完成したら&#x200B;**公開**&#x200B;して、ヘッドレスアプリケーションで利用できるようにします。
 
-公開アクションは、エディターで（または **Assets** コンソールのツールバーから）実行できます。
+公開アクションは、エディターで ( または **コンテンツフラグメント** コンソールまたは **Assets** コンソール ):
 
 ![コンテンツフラグメントエディター - マイフラグメント](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
@@ -249,22 +295,22 @@ AEM インストールは、通常、少なくとも次の 2 つの環境で構�
 
       * [公開を管理](/help/assets/manage-publication.md#manage-publication)
 
-* [コンテンツフラグメントの操作](/help/assets/content-fragments/content-fragments.md)
+* [コンテンツフラグメントの操作](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
-   * [コンテンツフラグメントの管理](/help/assets/content-fragments/content-fragments-managing.md)
+   * [コンテンツフラグメントの管理](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-      * [アセットフォルダーへの設定の適用](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [アセットフォルダーへの設定の適用](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [コンテンツフラグメントの作成](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [バリエーション - コンテンツフラグメントのオーサリング](/help/assets/content-fragments/content-fragments-variations.md)
+      * [コンテンツフラグメントの作成](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [バリエーション - コンテンツフラグメントのオーサリング](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
-   * [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
+   * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-      * [コンテンツフラグメントモデル - データタイプ](/help/assets/content-fragments/content-fragments-models.md#data-types)
+      * [コンテンツフラグメントモデル - データタイプ](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
-      * [コンテンツフラグメントモデル - プロパティ](/help/assets/content-fragments/content-fragments-models.md#properties)
+      * [コンテンツフラグメントモデル - プロパティ](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
-      * [コンテンツフラグメントモデル - アセットフォルダーでのコンテンツフラグメントモデルの許可](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [コンテンツフラグメントモデル - アセットフォルダーでのコンテンツフラグメントモデルの許可](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 
 * はじめる前に

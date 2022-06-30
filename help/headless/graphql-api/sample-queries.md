@@ -3,7 +3,7 @@ title: AEM での GraphQL の使用方法 - サンプルコンテンツとサン
 description: GraphQL を AEM と共に使用し、サンプルコンテンツとクエリを調べて、コンテンツをヘッドレスに提供する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 0ff90afca3fb72ac6d0a79793a332c1c2172cd67
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1430'
 ht-degree: 98%
@@ -18,8 +18,8 @@ GraphQL を AEM と共に使用し、サンプルコンテンツとクエリを�
 >
 >このページと併せて、次の記事も参照してください。
 >
->* [コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)
->* [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
+>* [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+>* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 >* [コンテンツフラグメントと共に使用する AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 
 

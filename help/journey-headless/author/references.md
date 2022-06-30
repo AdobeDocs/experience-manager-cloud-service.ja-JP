@@ -2,7 +2,7 @@
 title: コンテンツフラグメントでの参照の使用について
 description: コンテンツ、他のフラグメントおよび他のアセット（メディア）への参照をコンテンツフラグメントで使用する方法について説明します。ヘッドレス CMS オーサリング用のネストされたフラグメントの必要性と仕組みを紹介します。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 100%
@@ -96,7 +96,7 @@ ht-degree: 100%
 >
 >メインパネルのパンくずリストを使用して、開始点に戻ることができます。
 
-![コンテンツフラグメント構造ツリー](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
+![コンテンツフラグメント構造ツリー](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
 
 ## アドホック参照 {#adhoc-references}
 
@@ -110,20 +110,20 @@ ht-degree: 100%
 
 ## その他のリソース {#additional-resources}
 
-* [コンテンツフラグメントの操作](/help/assets/content-fragments/content-fragments.md)
+* [コンテンツフラグメントの操作](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
-   * [コンテンツフラグメントの管理](/help/assets/content-fragments/content-fragments-managing.md)
+   * [コンテンツフラグメントの管理](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-      * [アセットフォルダーへの設定の適用](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [アセットフォルダーへの設定の適用](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [コンテンツフラグメントの作成](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [バリエーション - コンテンツフラグメントのオーサリング](/help/assets/content-fragments/content-fragments-variations.md)
+      * [コンテンツフラグメントの作成](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [バリエーション - コンテンツフラグメントのオーサリング](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
-   * [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
+   * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-      * [コンテンツフラグメントモデル - データタイプ](/help/assets/content-fragments/content-fragments-models.md#data-types)
+      * [コンテンツフラグメントモデル - データタイプ](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
-      * [コンテンツフラグメントモデル - プロパティ](/help/assets/content-fragments/content-fragments-models.md#properties)
+      * [コンテンツフラグメントモデル - プロパティ](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
 
 * はじめる前に

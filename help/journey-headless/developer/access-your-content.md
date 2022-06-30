@@ -2,7 +2,7 @@
 title: AEM Delivery API を使用してコンテンツにアクセスする方法
 description: AEM ヘッドレスデベロッパージャーニーのこのパートでは、GraphQL クエリを使用してコンテンツフラグメントのコンテンツにアクセスする方法を説明します。
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 97%
@@ -369,10 +369,10 @@ AEM GraphQL API の使用と必要な要素の設定について詳しくは、�
    * [サンプルクエリ - 1 つの特定の都市フラグメント](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
    * [メタデータのサンプルクエリ - 「GB」という賞のメタデータのリスト](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
    * [サンプルクエリ - 名前付きバリエーションを持つすべての都市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
-* [設定ブラウザーでコンテンツフラグメント機能を有効にする](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
-* [コンテンツフラグメントの操作](/help/assets/content-fragments/content-fragments.md)
-   * [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
-   * [JSON 出力](/help/assets/content-fragments/content-fragments-json-preview.md)
+* [設定ブラウザーでコンテンツフラグメント機能を有効にする](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
+* [コンテンツフラグメントの操作](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+   * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [JSON 出力](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
 * [クロスオリジンリソース共有（CORS）について](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ja#understand-cross-origin-resource-sharing-(cors))
 * [サーバー側 API のアクセストークンの生成](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
 * [AEM ヘッドレス入門 - GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja) - AEM ヘッドレス機能（コンテンツモデリングや GraphQL など）の使用の概要を説明する短いビデオチュートリアルシリーズです。

@@ -2,7 +2,7 @@
 title: オプション - AEM で単一ページアプリケーション（SPA）を作成する方法
 description: AEM ヘッドレスデベロッパージャーニーの続編であるこのオプションパートでは、AEM でヘッドレス配信と従来のフルスタック CMS 機能を組み合わせる方法について説明します。また、AEM の SPA Editor フレームワークを使用して編集可能な SPA を作成する方法についても説明します。
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
-source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1273'
 ht-degree: 100%
@@ -126,5 +126,5 @@ AEM の SPA トピックをさらに詳しく解説する[その他のリソー�
 * [SPA エディターの概要](/help/implementing/developing/hybrid/editor-overview.md) - SPA エディターの仕組みの説明
 * [サーバーサイドレンダリング](/help/implementing/developing/hybrid/ssr.md) - AEM SPA への SSR の設定方法
 * [SPA リファレンスドキュメント](/help/implementing/developing/hybrid/reference-materials.md) - JavaScript API リファレンスと、オープンソースの AEM SPA GitHub プロジェクトへのリンク
-* [コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md) - コンテンツフラグメントの作成方法
+* [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md) - コンテンツフラグメントの作成方法
 * [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) - Web サイトの出発点として、ベストプラクティスに基づいた最小限の Adobe Experience Manager（AEM）プロジェクトを作成する Maven テンプレート

@@ -2,7 +2,7 @@
 title: コンテンツモデリングの基本について
 description: コンテンツフラグメントを使用したヘッドレス CMS のコンテンツモデリングの基本について説明します。
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 100%
@@ -145,12 +145,12 @@ AEM では、コンテンツをモデル化するための次のデータタイ�
 
 ## その他のリソース {#additional-resources}
 
-* [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
+* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-   * [コンテンツフラグメントモデル - データタイプ](/help/assets/content-fragments/content-fragments-models.md#data-types)
+   * [コンテンツフラグメントモデル - データタイプ](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
 * [オーサリングに関する概念](/help/sites-cloud/authoring/getting-started/concepts.md)
 
 * [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md) - このページは主に **Sites** コンソールに基づいていますが、多くの／ほとんどの機能は **Assets** コンソールでの&#x200B;**コンテンツフラグメント**&#x200B;のオーサリングにも関連しています。
 
-* [コンテンツフラグメントの操作](/help/assets/content-fragments/content-fragments.md)
+* [コンテンツフラグメントの操作](/help/sites-cloud/administering/content-fragments/content-fragments.md)

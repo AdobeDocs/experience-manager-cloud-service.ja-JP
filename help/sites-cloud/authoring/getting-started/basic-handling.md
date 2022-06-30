@@ -2,10 +2,10 @@
 title: 基本操作
 description: AEM のナビゲーションとその基本的な使用方法を習得します
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
+source-git-commit: df29eb83efc026bc7fc21dde228cdac47361282d
 workflow-type: tm+mt
-source-wordcount: '2954'
-ht-degree: 100%
+source-wordcount: '2993'
+ht-degree: 98%
 
 ---
 
@@ -73,6 +73,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 | エクスペリエンスフラグメント | [エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)は、チャネル間で再利用でき、バリエーションのあるスタンドアロンエクスペリエンスです。エクスペリエンスやエクスペリエンスの一部を繰り返しコピー＆ペーストする手間を省きます。 |
 | Assets | Assets コンソールでは、[画像、ビデオ、ドキュメント、オーディオファイルなどのデジタルアセット](/help/assets/overview.md)を読み込んで、それらのデジタルアセットを管理できます。同じ AEM インスタンス上で実行されているどのサイトでも、これらのアセットを使用できます。また、Assets コンソールから[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)を作成および管理することもできます。 |
 | パーソナライズ機能 | このコンソールには、[ターゲットとなるコンテンツをオーサリングして、パーソナライズされたエクスペリエンスを提供](/help/sites-cloud/authoring/personalization/overview.md)するためのツールのフレームワークが用意されています。 |
+| コンテンツフラグメント | [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md) ページに依存しないコンテンツのデザイン、作成、キュレーションおよび公開が可能です。 複数の場所や複数のチャネルで使用できる構造化コンテンツを準備でき、ページのオーサリングとヘッドレス配信の両方に最適です。 |
 
 ## ツールパネル {#tools-panel}
 

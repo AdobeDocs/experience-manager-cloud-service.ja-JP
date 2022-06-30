@@ -4,7 +4,7 @@ description: 翻訳が必要なコンテンツを翻訳ルールで特定する�
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 0c75a367861c9e4c77ee537322fa49330c70db85
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 89%
@@ -23,7 +23,7 @@ ht-degree: 89%
 
 このドキュメントで説明する翻訳ルールは、 **翻訳するコンテンツモデルフィールドの有効化** オプションは、 [翻訳統合フレームワークの設定レベル。](integration-framework.md#assets-configuration-properties)
 
-この **翻訳するコンテンツモデルフィールドの有効化** オプションがアクティブな場合、AEMは **翻訳可能** ～に関して [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md#properties) を使用して、フィールドを翻訳するかどうかを決定し、それに応じて自動的に翻訳ルールを作成します。 このオプションは、作成済みの翻訳ルールより優先され、介入や追加の手順は必要ありません。
+この **翻訳するコンテンツモデルフィールドの有効化** オプションがアクティブな場合、AEMは **翻訳可能** ～に関して [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) を使用して、フィールドを翻訳するかどうかを決定し、それに応じて自動的に翻訳ルールを作成します。 このオプションは、作成済みの翻訳ルールより優先され、介入や追加の手順は必要ありません。
 
 翻訳ルールを使用してコンテンツフラグメントを翻訳する場合は、 **翻訳するコンテンツモデルフィールドの有効化** 翻訳統合フレームワーク設定のオプションを無効にする必要があります。また、ルールを作成するには、以下の手順に従う必要があります。
 

@@ -2,10 +2,10 @@
 title: コンポーネントリファレンスガイド
 description: コンポーネントとその構造の詳細に関するデベロッパー向けリファレンスガイド
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '3659'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -474,4 +474,4 @@ Granite UI および Granite UI ウィジェットでのフィールド検証は
 
 ![README.md がコンポーネントコンソールに表示される](assets/components-documentation-console.png)
 
-サポートされるマークダウンは、[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)の場合と同じです。
+サポートされる Markdown は、 [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md).

@@ -2,10 +2,10 @@
 title: コンテンツフラグメントのメタデータとタグの定義について
 description: コンテンツフラグメントのメタデータとタグの定義について
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 0b953e0155fa1b90b5bccbf10b9ceaf1c1f63ae7
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 100%
+source-wordcount: '241'
+ht-degree: 96%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 メタデータとタグを追加する方法は 3 とおりあります。
 
-* フラグメントを初めて作成するとき：
+* ( **Assets** コンソール ):
 
    ![コンテンツフラグメント作成 - 名前の指定](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
@@ -44,8 +44,8 @@ ht-degree: 100%
 
 ## その他のリソース {#additional-resources}
 
-* [メタデータ - フラグメントのプロパティ](/help/assets/content-fragments/content-fragments-metadata.md)
+* [メタデータ - フラグメントのプロパティ](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
 
 * [タグの使用](/help/sites-cloud/authoring/features/tags.md)
 
-* [コンテンツフラグメントモデル - アセットフォルダーでのコンテンツフラグメントモデルの許可](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [コンテンツフラグメントモデル - アセットフォルダーでのコンテンツフラグメントモデルの許可](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)

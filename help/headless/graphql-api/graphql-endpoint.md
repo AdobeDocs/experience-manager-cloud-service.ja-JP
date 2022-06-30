@@ -3,7 +3,7 @@ title: AEM の GraphQL エンドポイントの管理
 description: ヘッドレスコンテンツ配信用に Adobe Experience Manager as a Cloud Service の GraphQL エンドポイントを管理する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: a4f3e55bb3bc39575d43894b9fea1180eaf1a578
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 98%
@@ -22,10 +22,10 @@ AEM には次の 2 種類のエンドポイントがあります。
 
 * グローバル
    * すべてのサイトで使用できます。
-   * このエンドポイントは、（[設定ブラウザー](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)で定義された）すべての Sites 設定のすべてのコンテンツフラグメントモデルを使用できます。
+   * このエンドポイントは、（[設定ブラウザー](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)で定義された）すべての Sites 設定のすべてのコンテンツフラグメントモデルを使用できます。
    * Sites 設定間で共有する必要があるコンテンツフラグメントモデルがある場合は、それらをグローバル Sites 設定の下に作成する必要があります。
 * Sites 設定：
-   * [設定ブラウザー](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)で定義されている Sites 設定に対応します。
+   * [設定ブラウザー](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)で定義されている Sites 設定に対応します。
    * 指定したサイト／プロジェクトに固有です。
    * Sites 設定固有のエンドポイントは、その特定の Sites 設定のコンテンツフラグメントモデルと、グローバル Sites 設定のコンテンツフラグメントモデルを使用します。
 
@@ -52,11 +52,11 @@ AEM 用 GraphQL のエンドポイントを有効にするには、次の操作�
 
 ## GraphQL エンドポイントの有効化 {#enabling-graphql-endpoint}
 
-GraphQL エンドポイントを有効にするには、まず適切な設定が必要です。「[コンテンツフラグメント - 設定ブラウザー ](/help/assets/content-fragments/content-fragments-configuration-browser.md)」を参照してください。
+GraphQL エンドポイントを有効にするには、まず適切な設定が必要です。「[コンテンツフラグメント - 設定ブラウザー ](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)」を参照してください。
 
 >[!CAUTION]
 >
->[コンテンツフラグメントモデルの使用が有効になっていない](/help/assets/content-fragments/content-fragments-configuration-browser.md)場合、「**作成**」オプションは使用できません。
+>[コンテンツフラグメントモデルの使用が有効になっていない](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)場合、「**作成**」オプションは使用できません。
 
 対応するエンドポイントを有効にするには、以下を行います。
 

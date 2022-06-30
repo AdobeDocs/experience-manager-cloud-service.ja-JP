@@ -3,7 +3,7 @@ title: 永続的な GraphQL クエリ
 description: Adobe Experience Manager as a Cloud Serviceで GraphQL クエリを保持してパフォーマンスを最適化する方法を説明します。 クライアントアプリケーションで HTTP GET メソッドを使用して永続的クエリをリクエストでき、応答を Dispatcher および CDN レイヤーにキャッシュできるので、最終的にクライアントアプリケーションのパフォーマンスが向上します。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 6beef4cc3eaa7cb562366d35f936c9a2fc5edda3
+source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 26%
@@ -31,7 +31,7 @@ ht-degree: 26%
 
 >[!NOTE]
 >
->詳しくは、[設定ブラウザーでのコンテンツフラグメント機能の有効化](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)を参照してください。
+>詳しくは、[設定ブラウザーでのコンテンツフラグメント機能の有効化](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)を参照してください。
 >
 >この **GraphQL 永続的なクエリ** 適切な Sites 設定に対して有効にする必要があります。
 

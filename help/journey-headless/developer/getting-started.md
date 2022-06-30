@@ -2,7 +2,7 @@
 title: AEM Headless as a Cloud Service - はじめに
 description: ここでは、AEM ヘッドレスデベロッパージャーニーのこの部分では、AEM ヘッドレスの前提条件について説明します。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: c4490690edb1ec0e2a6b8cca724fe9c290650bc8
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '3058'
 ht-degree: 100%
@@ -285,8 +285,8 @@ AEM を使用した[一般的なヘッドレス実装](#level-1)の場合、デ�
 * [命名規則](/help/implementing/developing/introduction/naming-conventions.md) - AEM のページ命名の制限に関する技術ドキュメント
 * [マルチサイトマネージャーと翻訳](/help/sites-cloud/administering/msm-and-translation.md) - AEM の強力な翻訳機能に関する技術ドキュメント
 * [AEM ワークフロー](/help/sites-cloud/authoring/workflows/overview.md) - AEM でワークフローを自動化する方法に関する技術ドキュメント
-* [コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md) - コンテンツフラグメントの技術ドキュメント
-* [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md) - コンテンツフラグメントモデルの技術ドキュメント
+* [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md) - コンテンツフラグメントの技術ドキュメント
+* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - コンテンツフラグメントモデルの技術ドキュメント
 * [GraphQL 技術ドキュメント](https://graphql.org) - GraphQL の定義（外部リンク）
 * [GraphQL API](/help/headless/graphql-api/content-fragments.md) - コンテンツフラグメントにアクセスして配信するリクエストを作成する方法を説明する技術ドキュメント
 * [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) - コンテンツフラグメント（およびその他のアセット）を作成および変更する方法を説明する技術ドキュメント
