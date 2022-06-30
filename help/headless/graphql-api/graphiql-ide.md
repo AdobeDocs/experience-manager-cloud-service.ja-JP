@@ -3,10 +3,10 @@ title: AEM での GraphiQL IDE の使用
 description: Adobe Experience Manager で GraphiQL IDE を使用する方法について説明します。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
+source-git-commit: 6beef4cc3eaa7cb562366d35f936c9a2fc5edda3
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 4%
+source-wordcount: '1008'
+ht-degree: 3%
 
 ---
 
@@ -96,6 +96,33 @@ ht-degree: 4%
 
 ![GraphQL 変数](assets/cfm-graphqlapi-03.png "GraphQL 変数")
 
+## 永続化されたクエリのキャッシュの管理 {#managing-cache}
+
+[永続クエリ](/help/headless/graphql-api/persisted-queries.md) は、要求元のクライアントアプリケーションのパフォーマンスを向上させるために、Dispatcher および CDN レイヤーでキャッシュできるので、お勧めします。 デフォルトでは、AEMはデフォルトの有効期間 (TTL) に基づいてコンテンツ配信ネットワーク (CDN) キャッシュを無効にします。
+
+GraphQL を使用して、HTTP キャッシュヘッダーを設定し、個々の永続化されたクエリ用にこれらのパラメーターを制御できます。
+
+1. この **ヘッダー** オプションには、持続的なクエリ名（左端のパネル）の右側の 3 つの縦並びのドットからアクセスできます。
+
+   ![永続クエリ HTTP キャッシュヘッダー](assets/cfm-graphqlapi-headers-01.png "永続クエリ HTTP キャッシュヘッダー")
+
+1. これを選択すると、 **キャッシュ設定** ダイアログ：
+
+   ![永続クエリ HTTP キャッシュヘッダー設定](assets/cfm-graphqlapi-headers-02.png "永続クエリ HTTP キャッシュヘッダー設定")
+
+1. 適切なパラメーターを選択し、必要に応じて値を調整します。
+
+   * **cache-control** - **max-age**
+キャッシュは、指定された秒数間、このコンテンツを保存できます。 通常、これはブラウザーの TTL(Time To Live) です。
+   * **代理制御** - **s-maxage**
+max-age と同じですが、プロキシキャッシュに特に適用されます。
+   * **代理制御** - **stale-while-revalidate**
+キャッシュは、古くなった後も、指定された秒数までキャッシュされた応答を引き続き提供します。
+   * **代理制御** - **stale-if-error**
+キャッシュは、エラーまたはオリジンエラーが発生した場合、指定された秒数まで、引き続きキャッシュされた応答を提供します。
+
+1. 選択 **保存** をクリックして変更を保持します。
+
 ## 永続的なクエリの公開 {#publishing-persisted-queries}
 
 リスト（左パネル）から永続化されたクエリを選択したら、 **公開** および **非公開** アクション。 これにより、パブリッシュ環境に対してアクティベートされます ( 例： `dev-publish`) を使用すると、テスト時にアプリケーションから簡単にアクセスできます。
@@ -103,32 +130,6 @@ ht-degree: 4%
 >[!NOTE]
 >
 >永続化されたクエリのキャッシュの定義 `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} のデフォルト値は 2 時間（7200 秒）です。
-
-## 永続化されたクエリのキャッシュ {#caching-persisted-queries}
-
-AEMは、デフォルトの有効期間 (TTL) に基づいてコンテンツ配信ネットワーク (CDN) キャッシュを無効にします。
-
-この値は次の値に設定されます。
-
-* 7200 秒が Dispatcher および CDN のデフォルトの TTL である。別名 *共有キャッシュ*
-   * デフォルト：s-maxage=7200
-* 60 がクライアントのデフォルトの TTL です（ブラウザーなど）。
-   * デフォルト：maxage=60
-
-GraphiQL UI で保持されたAEM GraphQL クエリは、実行時にデフォルトの TTL を使用します。 GraphLQ クエリの TTL を変更する場合は、代わりに API メソッドを使用してクエリを保持する必要があります。 これには、コマンドラインインターフェイスで CURL を使用してAEMにクエリを投稿する必要があります。
-
-例：
-
-```xml
-curl -X PUT \
-    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-    -H "Content-Type: application/json" \
-    "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
-    -d \
-'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
-```
-
-この `cache-control` は、作成時 (PUT) 以降 ( 例えば、POSTリクエストなどを介 ) に設定できます。 AEMはデフォルト値を提供できるので、永続化されたクエリを作成する場合は cache-control はオプションです。 詳しくは、 [GraphQL クエリを保持する方法](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query)（curl を使用してクエリを永続化する例）。
 
 ## URL をコピーしてクエリに直接アクセス {#copy-url}
 

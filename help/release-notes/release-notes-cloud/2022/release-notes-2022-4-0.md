@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.4.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.4.0 リリースのリリースノート。'
 exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
-source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
+source-git-commit: f42cf1b82f7cf42be2afd30d69d71354fe0afeb3
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 28%
+source-wordcount: '573'
+ht-degree: 29%
 
 ---
 
@@ -55,17 +55,6 @@ ht-degree: 28%
 
 * **フォームデータモデル設定**:次の操作を実行できます。 [複数の環境でフォームデータモデルの設定を再利用する](/help/forms/create-form-data-models.md#runmode-specific-context-aware-config)を使用すると、データ統合をシンプル化し、IT コストを削減できます。
 
-## CIF アドオン {#cloud-services-cif}
-
-### 新機能 {#what-is-new-cif}
-
-* 製品コックピットにすばやくアクセス：サイトエディターでワンクリックで詳細な製品情報に簡単にアクセス
-
-   ![ウィッシュリストを有効にする](/help/assets/CIF/enable-wishlist.png)
-
-* 追加のマーケティングコマースコンポーネントのサポート：コンポーネントは、買い物かごへの追加と、リストへの追加のコールトゥアクションを表示するように設定できます。
-
-   ![製品コックピットへのサイトエディターショートカット](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 

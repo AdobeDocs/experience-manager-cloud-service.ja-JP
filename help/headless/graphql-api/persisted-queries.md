@@ -3,10 +3,10 @@ title: 永続的な GraphQL クエリ
 description: Adobe Experience Manager as a Cloud Serviceで GraphQL クエリを保持してパフォーマンスを最適化する方法を説明します。 クライアントアプリケーションで HTTP GET メソッドを使用して永続的クエリをリクエストでき、応答を Dispatcher および CDN レイヤーにキャッシュできるので、最終的にクライアントアプリケーションのパフォーマンスが向上します。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 6529b4b874cd7d284b92546996e2373e59075dfd
+source-git-commit: 6beef4cc3eaa7cb562366d35f936c9a2fc5edda3
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 30%
+source-wordcount: '1311'
+ht-degree: 26%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 30%
 
 クエリを保持するには、次のような様々な方法があります。
 
-* GraphiQL IDE — を参照してください。 [永続クエリの保存](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries) （推奨される方法）
+* GraphiQL IDE — を参照してください。 [永続クエリの保存](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) （推奨される方法）
 * curl — 次の例を参照してください。
 * その他のツール ( [Postman](https://www.postman.com/)
 
@@ -257,6 +257,45 @@ query getAdventuresByActivity($activity: String!) {
 ```
 
 注意： `%3B` は、 `;` および `%3D` は `=`. クエリ変数と特殊文字は、次の条件を満たす必要があります。 [適切にエンコード](#encoding-query-url) を実行します。
+
+## 永続化されたクエリのキャッシュ {#caching-persisted-queries}
+
+永続化されたクエリは、Dispatcher および CDN レイヤーでキャッシュできるので、最終的には、要求元のクライアントアプリケーションのパフォーマンスを向上させることができます。
+
+デフォルトでは、AEMはデフォルトの有効期間 (TTL) に基づいてコンテンツ配信ネットワーク (CDN) キャッシュを無効にします。
+
+この値は次の値に設定されます。
+
+* 7200 秒が Dispatcher および CDN のデフォルトの TTL である。別名 *共有キャッシュ*
+   * デフォルト：s-maxage=7200
+* 60 がクライアントのデフォルトの TTL です（ブラウザーなど）。
+   * デフォルト：maxage=60
+
+GraphLQ クエリの TTL を変更する場合は、次のいずれかのクエリを指定する必要があります。
+
+* ～を管理した後に持続する [HTTP キャッシュヘッダー — GraphQL IDE から](#http-cache-headers)
+* を使用して持続する [API メソッド](#cache-api).
+
+### GraphQL での HTTP キャッシュヘッダーの管理  {#http-cache-headers-graphql}
+
+GraphiQL IDE — を参照してください。 [永続クエリの保存](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
+
+### API からのキャッシュの管理 {#cache-api}
+
+これには、コマンドラインインターフェイスで CURL を使用してAEMにクエリを投稿する必要があります。
+
+例：
+
+```xml
+curl -X PUT \
+    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+    -H "Content-Type: application/json" \
+    "https://publish-p123-e456.adobeaemcloud.com/graphql/persist.json/wknd/plain-article-query-max-age" \
+    -d \
+'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
+```
+
+この `cache-control` は、作成時 (PUT) 以降 ( 例えば、POSTリクエストなどを介 ) に設定できます。 AEMはデフォルト値を提供できるので、永続化されたクエリを作成する場合は cache-control はオプションです。 詳しくは、 [GraphQL クエリを保持する方法](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query)（curl を使用してクエリを永続化する例）。
 
 ## アプリで使用するクエリ URL のエンコード {#encoding-query-url}
 

@@ -2,10 +2,10 @@
 title: 既知の問題
 description: Adobe Experience Manager as a Cloud Service の既知の問題
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
-source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
+source-git-commit: 755c0072148ad73486df2ccfed69248b9d73ec2a
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 100%
+source-wordcount: '177'
+ht-degree: 66%
 
 ---
 
@@ -17,9 +17,16 @@ ht-degree: 100%
 
 <!-- 
 ## Platform {#platform}
+-->
 
 ## Sites {#sites}
--->
+
+[!DNL Sites] の既知の問題の一部は次のとおりです。
+
+* GraphQL IDE では、次のことが可能です。 [永続クエリのキャッシュを管理](/help/headless/graphql-api/graphiql-ide.md##managing-cache).
+   * 最初の保存時に、ヘッダー用に保存された値がに設定されます。 `0` （デフォルト値の代わりに） — ユーザーがダイアログ内の値を変更していない場合。
+   * その後の保存では、値は正しく保存されます。
+   * したがって、ユーザーはヘッダーを 2 回保存する必要があります。
 
 ## [!DNL Assets] {#assets}
 
