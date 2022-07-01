@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9c76ff2e0b789894ef5492ee940ce79cddb47e11
+source-git-commit: 88506fd4538c55a880904ea37055eb97d4ae05b3
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 17%
+source-wordcount: '639'
+ht-degree: 19%
 
 ---
 
@@ -95,8 +95,6 @@ Experience Manager AssetsはAdobe Sensei AI 機能を今まで使用 [画像内�
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
 ### 新機能 {#what-is-new-foundation}
-
-* AEM as a Cloud Serviceが統合シェルと統合され、ユーザーエクスペリエンスが向上し、他のすべてのExperience Cloudアプリケーションと統合されました。 参照： [統合シェルでas a Cloud ServiceのAEMを使用](/help/overview/aem-cloud-service-on-unified-shell.md) を参照してください。
 
 * (2022.5.0)5 月のリリースノートで述べたように、レプリケーションエージェント管理画面の「ツリーを追加」オプション **分布** 」タブが削除されました。 代わりに、コンテンツのツリー階層を持つパッケージは、 [公開を管理](/help/operations/replication.md#manage-publication) または [コンテンツツリーを公開](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) ワークフロー。
 
