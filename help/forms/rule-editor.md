@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
 workflow-type: tm+mt
-source-wordcount: '6340'
-ht-degree: 100%
+source-wordcount: '6351'
+ht-degree: 99%
 
 ---
 
@@ -537,6 +537,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 * カスタムの設定や説明を使用する場合に必須です
 * `JavaScript,`では関数を宣言する方法が複数存在するためコメントを活用して関数を区別することが大切です。
 
+ルールエディターでは、スクリプトおよびカスタム関数の JavaScript ES2015 構文がサポートされています。
 詳しくは、[jsdoc.app](https://jsdoc.app/) を参照してください。
 
 サポートされる`jsdoc`タグ：
