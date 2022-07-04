@@ -4,18 +4,14 @@ description: アダプティブフォームをMicrosoft® Power Automate と統�
 hide: true
 hidefromtoc: true
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: 27aa5016d6bdc4a101ba044bf9e49c483ecdae13
+source-git-commit: ccc4d487cb180273284276cf9cdf18680a3efcb8
 workflow-type: tm+mt
-source-wordcount: '1197'
-ht-degree: 9%
+source-wordcount: '1183'
+ht-degree: 10%
 
 ---
 
 # アダプティブフォームとMicrosoft® Power Automate の接続 {#connect-adaptive-form-with-power-automate}
-
->[!NOTE]
->
->この機能はプレリリースプログラムの下にあり、公開リリースの前に大幅に変更される場合があります。
 
 送信時にMicrosoft® Power Automate Cloud Flow を実行するようにアダプティブフォームを設定できます。 設定済みのアダプティブフォームは、キャプチャされたデータ、添付ファイルおよびレコードのドキュメントを Power Automate Cloud Flow に送信して処理します。 Microsoft® Power Automate の機能を活用しながら、カスタムのデータキャプチャエクスペリエンスを構築し、取り込んだデータに関するビジネスロジックを構築し、顧客ワークフローを自動化できます。 アダプティブフォームをMicrosoft® Power Automated と統合した後に実行できる操作の例を以下に示します。
 
