@@ -2,10 +2,10 @@
 title: Forms as a Cloud Service の通信の概要
 description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 09452aa799fc59bfc08c59d69820aa22daf07e9f
+source-git-commit: 22018450f6d4383f3df6a9f5382a0ad6b4058480
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 97%
+source-wordcount: '1137'
+ht-degree: 89%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 97%
 
 ## ドキュメントの生成
 
-通信機能のドキュメント生成 API は、テンプレート（XFA または PDF）と顧客データ（[XML データ](#form-data)）を組み合わせて、PDF 形式や PS、PCL、DPL、IPL、ZPL 形式などの印刷形式でドキュメントを生成するのに役立ちます。これらの API は、[XML データ](communications-known-issues-limitations.md#form-data)を含んだ [PDF および XFA テンプレート](#supported-document-types)を利用して、単一のドキュメントをオンデマンドで生成したり、複数のドキュメントをバッチジョブで生成したりすることができます。
+Communications Document Generation API は、PDF(XFA またはPDF) と顧客データ (XML) を組み合わせて、PS、PCL、DPL、IPL、ZPL 形式などのテンプレートおよび印刷形式のドキュメントを生成するのに役立ちます。 これらの API は、[XML データ](communications-known-issues-limitations.md#form-data)を含んだ PDF および XFA テンプレートを利用して、単一のドキュメントをオンデマンドで生成したり、複数のドキュメントをバッチジョブで生成したりすることができます。
 
 通常、[Designer](use-forms-designer.md) を使用してテンプレートを作成し、通信 API を使用してテンプレートにデータを結合します。アプリケーションは、出力ドキュメントをネットワークプリンター、ローカルプリンター、またはアーカイブ用のストレージシステムに送信できます。標準ワークフローとカスタムワークフローの例を次に示します。
 
@@ -101,7 +101,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ### PDF ドキュメントのアセンブリ
 
-ドキュメント操作 API を使用すると、複数の PDF または XDP ドキュメントを 1 つの PDF ドキュメントまたは PDF ポートフォリオにアセンブリできます。PDF ドキュメントをアセンブリする方法には、次のようなものがあります。
+ドキュメント操作 API を使用して、2 つ以上のPDFまたは XDP ドキュメントを 1 つのPDFドキュメントまたはPDFPortfolioにアセンブリできます。 PDF ドキュメントをアセンブリする方法には、次のようなものがあります。
 
 * 単一 PDF ドキュメントのアセンブリ
 * PDF ポートフォリオの作成
@@ -114,7 +114,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ### PDF ドキュメントのディスアセンブリ
 
-ドキュメント操作 API を使用して PDF ドキュメントをディスアセンブリできます。また、ソースドキュメントからページを抽出したり、しおりの位置を境にソースドキュメントを分割することもできます。このタスクは、一般的に、PDF ドキュメントが最初に多数の個別ドキュメント（明細書一式など）から作成された場合に役立ちます。
+ドキュメント操作 API を使用して、ドキュメントドキュメントをディスアセンブルすることがPDFできます。 また、ソースドキュメントからページを抽出したり、しおりの位置を境にソースドキュメントを分割することもできます。このタスクは、一般的に、PDF ドキュメントが最初に多数の個別ドキュメント（明細書一式など）から作成された場合に役立ちます。
 
 * ソースドキュメントからのページの抽出
 * しおりに基づいたソースドキュメントの分割
@@ -124,7 +124,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ### PDF/A 準拠ドキュメントへの変換と PDF/A 準拠ドキュメントの検証
 
-ドキュメント操作 API を使用して、PDF ドキュメントを PDF/A 準拠のドキュメントに変換したり、PDF ドキュメントが PDF/A に準拠しているかどうかを判断したりできます。PDF/A は、ドキュメントのコンテンツを長期間保存するためのアーカイブ形式です。フォントはドキュメント内に埋め込まれ、ファイルは圧縮されません。その結果、通常、PDF/A ドキュメントは標準の PDF ドキュメントよりも大きくなります。なお、PDF/A ドキュメントには、オーディオおよびビデオのコンテンツは含まれません。
+ドキュメント操作 API を使用して、PDFドキュメントをPDF/A 準拠のドキュメントに変換し、PDFドキュメントがPDF/A に準拠しているかどうかを判断できます。 PDF/A は、ドキュメントのコンテンツを長期間保存するためのアーカイブ形式です。フォントはドキュメント内に埋め込まれ、ファイルは圧縮されません。その結果、通常、PDF/A ドキュメントは標準の PDF ドキュメントよりも大きくなります。なお、PDF/A ドキュメントには、オーディオおよびビデオのコンテンツは含まれません。
 
 ## 通信 API のタイプ
 
