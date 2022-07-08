@@ -2,7 +2,7 @@
 title: コンテンツフラグメントの作成 - ヘッドレスセットアップ
 description: AEM のコンテンツフラグメントを使用して、ページに依存しないヘッドレス配信用コンテンツを設計、作成、キュレーションおよび使用する方法を説明します。
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 78%
@@ -37,7 +37,7 @@ AEM のコンテンツフラグメントを使用して、ページに依存し�
 
    「タイトル」、「名前」および必要に応じて「説明」を追加します。
 
-   ![新しいコンテンツフラグメントを作成ダイアログ](/help/headless/content-fragments/assets/cfc-console-create.png)
+   ![新しいコンテンツフラグメントを作成ダイアログ](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
 1. タップまたはクリック **作成** または  **作成して開く**.
 
