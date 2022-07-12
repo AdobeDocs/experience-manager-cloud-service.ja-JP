@@ -2,7 +2,7 @@
 title: 非推奨（廃止予定）の API
 description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の非推奨（廃止予定）の API と削除された API）。
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: d64e69e9662449e25cb12d7cdd415494cb6b6c7d
+source-git-commit: 9e84b57efef89613c7ddf7abec3e71d1d844ed30
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 95%
@@ -190,7 +190,7 @@ ht-degree: 95%
     <td>org.apache.sling.commons.log.logback<br>org.apache.sling.commons.log.logback.webconsole</td>
     <td>この内部 logback API は、AEM as a Cloud Service ではサポートされていません。</td>
     <td>2022/1/27</td>
-    <td>2022/3/24</td>
+    <td>削除</td>
   </tr>
   <tr>
     <td>com.github.jknack.handlebars.js</td>
