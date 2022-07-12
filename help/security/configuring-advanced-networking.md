@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の高度なネットワーク機能の設定
 description: AEM as a Cloud Service の高度なネットワーク機能（VPN やフレキシブルエグレス IP アドレスまたは専用エグレス IP アドレスなど）を設定する方法を説明します
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 4d9a56ebea84d6483a2bd052d62ee6eb8c0bd9d5
+source-git-commit: e34759aeea2e3819cf76a8bba433b96ae201c16f
 workflow-type: tm+mt
-source-wordcount: '3053'
-ht-degree: 94%
+source-wordcount: '3006'
+ht-degree: 93%
 
 ---
 
@@ -209,29 +209,7 @@ API について詳しくは、 [Cloud Manager API ドキュメント](https://d
 
 ### トラフィックルーティング {#dedcated-egress-ip-traffic-routing}
 
-標準の Java ネットワークライブラリを使用している場合は、ポート 80 または 443 を通じて宛先に送信される HTTP または HTTPS トラフィックは、事前に設定されたプロキシを経由します。他のポートを経由する HTTP または HTTPS トラフィックは、次のプロパティを使用してプロキシを設定してください。
-
-```
-AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST
-AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT
-```
-
-`www.example.com:8443` にリクエストを送信するサンプルコードを以下に示します。
-
-```java
-String url = "www.example.com:8443"
-String proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
-int proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
-
-HttpClient client = HttpClient.newBuilder()
-      .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
-      .build();
- 
-HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
-HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
-```
-
-非標準の Java ネットワークライブラリを使用する場合は、上記のプロパティを使用して、すべてのトラフィックに対してプロキシを設定します。
+HTTP トラフィックまたは HTTPS トラフィックは、事前設定済みのプロキシを経由します。ただし、プロキシ設定に標準の Java システムプロパティを使用する場合があります。
 
 `portForwards` パラメーターで宣言したポートで宛先とやり取りする HTTP/HTTPS 以外のトラフィックは、マッピングされたポートと共に、`AEM_PROXY_HOST` というプロパティを参照する必要があります。次に例を示します。
 
