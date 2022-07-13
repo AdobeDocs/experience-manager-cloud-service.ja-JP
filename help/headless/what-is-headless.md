@@ -1,13 +1,13 @@
 ---
 title: ヘッドレス CMS とは
 description: ヘッドレス CMS の詳細 仕組みは？ 代替手段と違いは何ですか？ ヘッドレス CMS を使用する理由
-source-git-commit: 35064ef7d9a4a3f2368667be02b11840b29d56f0
+exl-id: 53f24f69-ad49-4b8e-9a91-36cd64c1f2b9
+source-git-commit: bd333d17f96e74227ac148be7164986ea11a0a23
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 6%
 
 ---
-
 
 # ヘッドレス CMS とは {#what-is-a-headless-cms}
 

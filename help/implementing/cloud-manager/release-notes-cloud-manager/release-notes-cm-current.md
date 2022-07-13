@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 5200ee315ad88dae4b52c0ea904489e73f62a8a0
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 39%
+ht-degree: 53%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 39%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Serviceの Cloud Manager リリース 2022.7.0 のリリース日は 2022 年 6 月 30 日です。 次回のリリースは 2022 年 8 月 11 日に予定されています。
+AEM as a Cloud Serviceの Cloud Manager リリース 2022.7.0 のリリース日は 2022 年 6 月 30 日です。 次回のリリースは 2022年8月11日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
@@ -32,4 +32,4 @@ AEM as a Cloud Serviceの Cloud Manager リリース 2022.7.0 のリリース日
 
 * プログラム作成時の New Relic サブアカウント作成に関連する UI のフィードバックメッセージが改善されました。
 * ユーザーは、Cloud Manager UI からカスタム UI テストログをダウンロードできるようになりました。
-* フロントエンドパイプラインの承認後、デプロイメントステップを実行する呼び出しがおこなわれない問題が修正されました。
+* フロントエンドパイプラインの承認後、デプロイメントステップを実行する呼び出しが行われない問題が修正されました。

@@ -1,13 +1,14 @@
 ---
 title: Dynamic Mediaの制限
-description: '画像セットやスピンセットを作成したり、画像をアップロードしたりする際の、ベストプラクティスと適用される制限について説明します。PDF また、Dynamic Media Viewers でサポートされていない Web ブラウザーとオペレーティングシステムの組み合わせについても説明します。 '
+description: 画像セットやスピンセットを作成したり、画像をアップロードしたりする際の、ベストプラクティスと適用される制限について説明します。PDF また、Dynamic Media Viewers でサポートされていない Web ブラウザーとオペレーティングシステムの組み合わせについても説明します。
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
-source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
+exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
+source-git-commit: 8eac5e9453e130e0b3c007132d4a11324feef8a8
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 7%

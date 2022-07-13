@@ -46,7 +46,7 @@ Cloud Manager ビルドの場合、 `maven-enforcer-plugin` はこのエラー�
 
 はい。セキュリティ評価を除くコード品質チェックの失敗はすべて、重要でない指標なので、結果 UI の項目を展開することで、デプロイメントパイプラインの一部として回避できます。
 
-[デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナー](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)は、問題をオーバーライドできます。この場合、パイプラインは続行されます。または、問題を承認できます。この場合、パイプラインはエラーで停止します。
+[デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナー](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)の役割を持つユーザーは、問題をオーバーライドでき、その場合、パイプラインは続行されます。または、問題を受け入れることもでき、その場合、パイプラインはエラーで停止します。
 
 ドキュメントを参照 [コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate) および [実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines) を参照してください。
 
