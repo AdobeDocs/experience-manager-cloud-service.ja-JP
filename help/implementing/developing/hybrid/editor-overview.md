@@ -2,10 +2,10 @@
 title: SPA エディターの概要
 description: この記事では、SPA エディターの包括的な概要と動作の仕組み（AEM 内での SPA エディターの詳細なインタラクションワークフローなど）を説明します。
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: c7759e390d9ea6c2196c9f6c895232c4e75c6d23
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 100%
+source-wordcount: '1635'
+ht-degree: 98%
 
 ---
 
@@ -177,13 +177,12 @@ SPA で作成したテキストコンポーネントのインプレースエデ�
 
 ### 制限事項 {#limitations}
 
-AEM SPA Editor SDK はアドビで完全にサポートされており、新機能として機能強化と拡張が続けられています。次の AEM 機能は、SPA エディターではまだサポートされていません。
+AEM SPA Editor SDK はAdobeで完全にサポートされ、引き続き拡張および拡張されます。 次の AEM 機能は、SPA エディターではまだサポートされていません。
 
 * ターゲットモード
 * ContextHub
 * インライン画像編集
 * 設定の編集（例：リスナー）
-* スタイルシステム
 * 取り消し／やり直し
 * ページの差分とタイムワープ
 * リンクチェッカー、CDN 書き直しサービス、URL 短縮など、サーバー側で HTML の書き換えを実行する機能
