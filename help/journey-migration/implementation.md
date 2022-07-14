@@ -2,10 +2,10 @@
 title: 実装段階
 description: クラウドに移行するためのコードとコンテンツの準備が整っていることの確認
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 100%
+source-wordcount: '2416'
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ Cloud Manager を使用すると、クラウド内の AEM を組織で自己管�
 
 Cloud Manager の使い方については、以下のリソースを参照してください。
 
-* [Adobe Experience Manager as a Cloud Service のオンボーディング](/help/onboarding/home.md)：Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースについて
+* [オンボーディングジャーニー](/help/journey-onboarding/overview.md) を参照して、Experience Manageras a Cloud Serviceのオンボーディングに関するセルフヘルプリソースを理解してください。
 
 * [Git と Adobe Cloud Manager の統合](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)：1 つの Git リポジトリーを使用してコードをデプロイする方法について
 

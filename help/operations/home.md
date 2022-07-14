@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service の運用と保守
 description: 'インデックス作成やメンテナンスタスクなど、Experience Manager as a Cloud Service のバックエンド運用について学び、質問に対する回答を確認できます。 '
 landing-page-description: インデックス作成やメンテナンスタスクなど、Experience Manager as a Cloud Service のバックエンド運用について学び、質問に対する回答を確認できます。
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
-source-git-commit: 1bdebb3f9ffdc720c7172265571571d47df35610
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 100%
@@ -27,7 +27,7 @@ ht-degree: 100%
 | [概要](/help/overview/home.md) | このガイドでは、ソリューションの紹介、用語、アーキテクチャなど、Adobe Experience Manager as a Cloud Service の概要を説明します。 |
 | [リリースノート](/help/release-notes/home.md) | このガイドでは、新機能、廃止される機能および削除された機能、既知の問題など、Adobe Experience Manager as a Cloud Service の最新リリースに関する重要な情報を提供します。 |
 | [セキュリティユーザーガイド](/help/security/home.md) | Adobe Experience Manager as a Cloud Service のセキュリティに関する重要なトピックについて説明します。 |
-| [オンボーディング](/help/onboarding/home.md) | このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。 |
+| [オンボーディングジャーニー](/help/journey-onboarding/overview.md) | このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。 |
 | [Sites ユーザーガイド](/help/sites-cloud/home.md) | Adobe Experience Manager Sites as a Cloud Service を使用したオーサリングおよび管理方法について説明します。 |
 | [Assets ユーザーガイド](/help/assets/home.md) | Adobe Experience Manager Assets as a Cloud Service の使用および管理方法について説明します。 |
 | [AEM as a Cloud Service への移行](/help/journey-migration/getting-started.md) | AEM as a Cloud Service への移行プロセスについて説明します。 |
@@ -42,7 +42,7 @@ ht-degree: 100%
 * [Dispatcher のドキュメント](/help/implementing/dispatcher/overview.md)
 * [HTL のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ja)
 * [コアコンポーネントのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
-* [Cloud Manager のドキュメント](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+* [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
 * [GDPR 対応](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=ja#home)

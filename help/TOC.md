@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 778a3687447c1e07605fdb95b3934b10d22483e8
+source-git-commit: 698ea704d821d26067e29a89b562388d7517772e
 workflow-type: tm+mt
-source-wordcount: '3691'
-ht-degree: 93%
+source-wordcount: '3674'
+ht-degree: 92%
 
 ---
 
@@ -123,24 +123,19 @@ ht-degree: 93%
    + [AEM as a Cloud Service のサイト Cookie サポートポリシー](/help/security/same-site-cookie-support.md)
    + [メールサービスの OAuth2 サポート](/help/security/oauth2-support-for-mail-service.md)
 + オンボーディング {#onboarding}
-   + [AEM as a Cloud Service のオンボーディング](/help/onboarding/home.md)
-   + オンボーディングの概念について {#onboarding-concepts}
-      + [システム管理者](/help/onboarding/learn-concepts/system-administrator.md)
-      + [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
-      + [Adobe Identity Management System](/help/onboarding/learn-concepts/ims.md)
-      + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
-      + [Cloud Manager の概要](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
-      + [AEM as a Cloud Service チームおよび製品プロファイル](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
-      + [アドビサポート](/help/onboarding/learn-concepts/onboarding-help-resources.md)
+   + [ここから開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + オンボーディングジャーニー {#journey}
-      + [オンボーディングジャーニー](/help/journey-onboarding/home.md)
-      + [オンボーディングジャーニーの概要](/help/journey-onboarding/sysadmin/onboarding-journey-overview.md)
-      + [オンボーディングプロセスの概要](/help/journey-onboarding/sysadmin/get-started-onboarding-journey.md)
-      + [Cloud Manager 製品プロファイルへのチームメンバーの割り当て](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md)
-      + [Cloud Manager を使用したクラウドリソースの設定](/help/journey-onboarding/sysadmin/setup-cloud-resources-via-cloud-manager.md)
-      + [AEM as a Cloud Service 製品プロファイルへのチームメンバーの割り当て](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
-      + [開発者およびデプロイメントマネージャーの学習パス](/help/journey-onboarding/sysadmin/learning-path-developers-deploymentmanagers.md)
-      + [AEM ユーザーの学習パス](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
+      + [オンボーディングジャーニー概要](/help/journey-onboarding/overview.md)
+      + [オンボーディングの準備](/help/journey-onboarding/preparation.md)
+      + [AEMas a Cloud Service用語](/help/journey-onboarding/terminology.md)
+      + [Admin Console](/help/journey-onboarding/admin-console.md)
+      + [Cloud Manager 製品プロファイルの割り当て](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+      + [Cloud Manager へのアクセス](/help/journey-onboarding/cloud-manager.md)
+      + [プログラムの作成](/help/journey-onboarding/create-program.md)
+      + [環境の作成](/help/journey-onboarding/create-environments.md)
+      + [AEM製品プロファイルの割り当て](/help/journey-onboarding/assign-profiles-aem.md)
+      + [開発者およびデプロイメントマネージャーのタスク](/help/journey-onboarding/developers.md)
+      + [AEM User Tasks](/help/journey-onboarding/aem-users.md)
    + AEM 参照デモのアドオンジャーニー {#demo-add-on}
       + [概要](/help/journey-sites/demos-add-on/overview.md)
       + [インストール](/help/journey-sites/demos-add-on/installation.md)
@@ -148,6 +143,9 @@ ht-degree: 93%
       + [デモサイトを作成](/help/journey-sites/demos-add-on/create-site.md)
       + [Screens を有効にする](/help/journey-sites/demos-add-on/screens.md)
       + [デモサイトを管理](/help/journey-sites/demos-add-on/manage.md)
+   + その他のオンボーディングの概念 {#concepts}
+      + [Cloud Manager の概要](/help/onboarding/cloud-manager-introduction.md)
+      + [AEM as a Cloud Service チームおよび製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md)
 + AEM as a Cloud Service 移行ジャーニー {#migration-journey}
    + [AEM as a Cloud Service の移動の概要](/help/journey-migration/getting-started.md)
    + [準備段階](/help/journey-migration/readiness.md)
@@ -750,7 +748,7 @@ ht-degree: 93%
          + [IP許可リストの適用と適用解除](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [IP 許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [ライセンスダッシュボード](/help/implementing/cloud-manager/license-dashboard.md)
-      + [Cloud Manager FAQ](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
+      + [Cloud Manager FAQ](/help/implementing/cloud-manager/faqs.md)
    + AEM as a Cloud Service 向けの開発 {#developing}
       + [AEM プロジェクトの構造](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [AEM プロジェクトリポジトリの構造パッケージ](/help/implementing/developing/introduction/repository-structure-package.md)

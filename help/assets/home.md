@@ -5,9 +5,9 @@ landing-page-description: Adobe Experience Manager Assets as a Cloud Service の
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '294'
 ht-degree: 94%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 94%
 | [概要](/help/overview/home.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] の概要と用語集。 |
 | [リリースノート](/help/release-notes/home.md) | リリースノート、新機能、廃止される機能および削除された機能、既知の問題について説明します。 |
 | [セキュリティユーザーガイド](/help/security/home.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] のセキュリティに関する重要なトピックについて説明します。 |
-| [オンボーディング](/help/onboarding/home.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] の基本を学ぶ - 重要なデータへのアクセスと保護について説明します。 |
+| [オンボーディングジャーニー](/help/journey-onboarding/overview.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] の基本を学ぶ - 重要なデータへのアクセスと保護について説明します。 |
 | [Sites ユーザーガイド](/help/sites-cloud/home.md) | Adobe [!DNL Experience Manager Sites] as a [!DNL Cloud Service] を使用したオーサリングおよび管理方法について説明します。 |
 | [実装ユーザーガイド](/help/implementing/home.md) | Experience Manager の強力な機能を使用してエクスペリエンスを構築およびカスタマイズする方法を理解するには、以下の開発およびデプロイメントに関するトピックを参照してください。 |
 | [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md) | Experience Manager の強力で柔軟なヘッドレス機能を紹介するこのガイド付きのジャーニーを進めて、初めてのヘッドレスプロジェクトの準備をしてください。 |

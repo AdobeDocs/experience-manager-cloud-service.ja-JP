@@ -2,10 +2,10 @@
 title: 相違点と新機能 - Adobe Experience Manager as a Cloud Service
 description: 相違点と新機能 - Adobe Experience Manager（AEM）as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 7665bc1a27eec6474c1f21c61ac9cf444cf3d443
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '1897'
-ht-degree: 96%
+source-wordcount: '1904'
+ht-degree: 95%
 
 ---
 
@@ -125,10 +125,6 @@ Cloud Manager は、多くの地域をまたいでデータセンターに環境
 
 ## オンボーディング {#onboarding}
 
->[!NOTE]
->
->詳しくは、[オンボーディング](/help/onboarding/home.md)を参照してください。
-
 AEM as a Cloud Service を使用すると、次のように作業の多くの側面がアドビの担当になるので、AEM プロジェクトの開始と管理は簡単になります。
 
 * ベースライン AEM イメージが特定のユースケース向けに最適化されている。
@@ -150,6 +146,10 @@ AEM as a Cloud Service を使用すると、次のように作業の多くの側
    * コードのアップデート。旧バージョンの AEM 用に開発された顧客アプリケーションをレビューし、場合によっては更新する必要があります。
 
    * コンテンツの移行
+
+>[!TIP]
+>
+>オンボーディングプロセスの完全な概要については、 [オンボーディングジャーニー。](/help/journey-onboarding/overview.md)
 
 ## 開発 {#developing}
 
@@ -273,6 +273,6 @@ Assets が提供する機能には、クラウドでの次世代アセット処�
 
 >[!TIP]
 >
->AEM as a Cloud Service の概要を把握したら、 [オンボーディングジャーニー](/help/journey-onboarding/home.md) を確認して、すばやくオンボードできます。
+>AEM as a Cloud Service の概要を把握したら、 [オンボーディングジャーニー](/help/journey-onboarding/overview.md) を確認して、すばやくオンボードできます。
 >
 >すでにオンボード済み、または AEM の機能のテストに取り掛かる準備できている場合[AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) をインストールし、豊富な例を使用して AEM の強力な機能を調べてみましょう。
