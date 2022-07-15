@@ -3,10 +3,10 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 4f81a315d637b567fc6a6038b192f048bb462b4d
 workflow-type: tm+mt
-source-wordcount: '2664'
-ht-degree: 96%
+source-wordcount: '2708'
+ht-degree: 94%
 
 ---
 
@@ -346,6 +346,10 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 詳しくは、[サンプルクエリ - 名前付きバリエーションを持つすべての都市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)を参照してください。
 
+>[!NOTE]
+>
+>指定されたバリエーションがコンテンツフラグメントに対して存在しない場合、マスターバリエーションが（フォールバック）デフォルトとして返されます。
+
 <!--
 ## Security Considerations {#security-considerations}
 -->
@@ -450,42 +454,47 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
 * 結果のリストを想定している場合：
    * モデル名に `List` を付け加えます（例：`cityList`）
-   * [サンプルクエリ - すべての都市に関するすべての情報](#sample-all-information-all-cities)を参照してください
+   * [サンプルクエリ - すべての都市に関するすべての情報](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)を参照してください
 
 * 論理和（OR）を使用する場合：
    * ` _logOp: OR` を使用します
-   * [サンプルクエリ - 「Jobs」または「Smith」という名前を持つすべての人物](#sample-all-persons-jobs-smith)を参照してください
+   * [サンプルクエリ - 「Jobs」または「Smith」という名前を持つすべての人物](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)を参照してください
 
 * 論理積（AND）も存在しますが、（多くの場合）暗黙的です
 
 * コンテンツフラグメントモデル内のフィールドに対応するフィールド名に対してクエリを実行できます
-   * [サンプルクエリ - ある会社の CEO と従業員の詳細](#sample-full-details-company-ceos-employees)を参照してください
+   * [サンプルクエリ - ある会社の CEO と従業員の詳細](/help/headless/graphql-api/sample-queries.md#sample-full-details-company-ceos-employees)を参照してください
 
 * モデルのフィールドに加えて、次のようなシステム生成フィールドがあります（フィールド名の先頭にアンダースコアが付きます）。
 
    * コンテンツの場合：
 
       * `_locale`：言語を表示します（言語マネージャーに基づく）
-         * [特定ロケールの複数のコンテンツフラグメントのサンプルクエリ](#sample-wknd-multiple-fragments-given-locale)を参照してください
+         * [特定ロケールの複数のコンテンツフラグメントのサンプルクエリ](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-given-locale)を参照してください
       * `_metadata`：フラグメントのメタデータを表示します
-         * [メタデータのサンプルクエリ - 「GB」という賞のメタデータのリスト](#sample-metadata-awards-gb)を参照してください
+         * [メタデータのサンプルクエリ - 「GB」という賞のメタデータのリスト](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)を参照してください
       * `_model`：コンテンツフラグメントモデル（パスとタイトル）のクエリを許可します
-         * [モデルからのコンテンツフラグメントモデルのサンプルクエリ](#sample-wknd-content-fragment-model-from-model)を参照してください
+         * [モデルからのコンテンツフラグメントモデルのサンプルクエリ](/help/headless/graphql-api/sample-queries.md#sample-wknd-content-fragment-model-from-model)を参照してください
       * `_path`：リポジトリ内のコンテンツフラグメントへのパス
-         * [サンプルクエリ - 1 つの特定の都市フラグメント](#sample-single-specific-city-fragment)を参照してください
+         * [サンプルクエリ - 1 つの特定の都市フラグメント](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)を参照してください
       * `_reference`：参照（リッチテキストエディターでのインライン参照など）を表示します
-         * [プリフェッチされた参照を含んだ複数のコンテンツフラグメントのサンプルクエリ](#sample-wknd-multiple-fragments-prefetched-references)を参照してください
+         * [プリフェッチされた参照を含んだ複数のコンテンツフラグメントのサンプルクエリ](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)を参照してください
       * `_variation`：コンテンツフラグメント内の特定のバリエーションを表示します
+
+         >[!NOTE]
+         >
+         >指定されたバリエーションがコンテンツフラグメントに対して存在しない場合、マスターバリエーションが（フォールバック）デフォルトとして返されます。
+
          * [サンプルクエリ - 名前付きバリエーションを持つすべての都市](#sample-cities-named-variation)を参照してください
    * 操作の場合：
 
       * `_operator`：特定の演算子（`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`、`STARTS_WITH`）を適用します
-         * [サンプルクエリ - 「Jobs」という名前を持たないすべての人物](#sample-all-persons-not-jobs)を参照してください
-         * [サンプルクエリ - `_path` が特定のプレフィックスで始まるすべてのアドベンチャーを参照してください](#sample-wknd-all-adventures-cycling-path-filter)
+         * [サンプルクエリ - 「Jobs」という名前を持たないすべての人物](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)を参照してください
+         * [サンプルクエリ - `_path` が特定のプレフィックスで始まるすべてのアドベンチャーを参照してください](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)
       * `_apply`：特定の条件（例：`AT_LEAST_ONCE`）を適用します
-         * [サンプルクエリ - 少なくとも 1 回は現れる項目を含んだ配列をフィルタリング](#sample-array-item-occur-at-least-once)を参照してください
+         * [サンプルクエリ - 少なくとも 1 回は現れる項目を含んだ配列をフィルタリング](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)を参照してください
       * `_ignoreCase`：クエリの実行時に大文字と小文字を区別しません
-         * [サンプルクエリ - 名前に SAN が含まれるすべての都市（大文字と小文字を区別しない場合）](#sample-all-cities-san-ignore-case)を参照してください
+         * [サンプルクエリ - 名前に SAN が含まれるすべての都市（大文字と小文字を区別しない場合）](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)を参照してください
 
 
 
@@ -498,7 +507,7 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 * GraphQL のユニオン型がサポートされています
 
    * `... on` を使用します
-      * [特定モデルのコンテンツフラグメントのうちコンテンツ参照を含んだものを取得するサンプルクエリ](#sample-wknd-fragment-specific-model-content-reference)を参照してください
+      * [特定モデルのコンテンツフラグメントのうちコンテンツ参照を含んだものを取得するサンプルクエリ](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-content-reference)を参照してください
 
 * ネストされたフラグメントに対するクエリ時のフォールバック：
 
