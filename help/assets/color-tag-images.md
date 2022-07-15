@@ -2,10 +2,10 @@
 title: 画像のカラータグ
 description: Experience Manager Assetsを使用すると、画像内の色を区別し、自動的にタグとして適用できます。 その後、これらのタグを使用して、画像を検索およびフィルタリングできます。
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: d8fb661be15a1505714e3def8a729a9c5c04616c
+source-git-commit: 2859fa68713b46083314d207abc4dec2e088a173
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 13%
+source-wordcount: '1195'
+ht-degree: 11%
 
 ---
 
@@ -16,10 +16,6 @@ ht-degree: 13%
 Experience Manager AssetsはAdobe Sensei AI 機能を使用して画像内の色を区別し、取り込み時にタグとして自動的に適用します。 これらのタグは、画像の色合いに基づいて、より強化された検索エクスペリエンスを可能にします。
 
 1 ～ 40 の範囲で、画像にタグ付けされるカラーの数を設定し、後でそれらのカラーに基づいて画像を検索できます。 Experience Manager Assetsは、画像のカラーカバレッジに基づいてタグを適用します。 また、カラータグの表示形式も設定できます。
-
->[!NOTE]
->
->この機能は、プレリリースチャネルで使用できます。お使いの環境でこの機能を有効にする方法については、[プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#enable-prerelease)を参照してください。
 
 次の図は、Experience Manager Assetsで画像のカラータグ付けを設定および管理するために実行する一連のタスクを示しています。
 
