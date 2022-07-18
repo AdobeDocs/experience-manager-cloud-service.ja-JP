@@ -2,10 +2,10 @@
 title: Target へのコンテンツの取り込み
 description: Target へのコンテンツの取り込み
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 05765bdaa681502b60fc5a7c943e2265c09764ec
+source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 44%
+source-wordcount: '908'
+ht-degree: 34%
 
 ---
 
@@ -44,8 +44,7 @@ ht-degree: 44%
 
    >[!IMPORTANT]
    >
-   >ローカルの **AEM管理者** グループを作成し、Cloud Serviceを転送します。 AEM administrators グループに属していない場合は、取り込みを開始しようとすると、次に示すエラーが表示されます。
-   >![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam21.png)
+   >ローカルの **AEM管理者** グループを作成します。 取り込みを開始できない場合は、 [取り込みを開始できません](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) を参照してください。
 
    >[!IMPORTANT]
    >
@@ -103,7 +102,25 @@ ht-degree: 44%
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
+## トラブルシューティング {#troubleshooting}
 
+### CAM は移行トークンを取得できません {#cam-unable-to-retrieve-the-migration-token}
+
+移行トークンの自動取得が失敗する理由は、次のとおりです。 [Cloud Manager を使用した IP許可リストの設定](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) ( ターゲットCloud Service環境 )  このようなシナリオでは、取り込みを開始しようとすると、次のダイアログが表示されます。
+
+![画像](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
+
+ダイアログの「トークンを取得」リンクをクリックして、移行トークンを手動で取得する必要があります。 これにより、トークンを表示する別のタブが開きます。 その後、トークンをコピーし、 **移行トークン入力** フィールドに入力します。 これで、インジェストを開始できるようになります。
+
+>[!NOTE]
+>
+>トークンは、ローカルのに属するユーザーが使用できます **AEM管理者** グループを作成します。
+
+### 取り込みを開始できません {#unable-to-start-ingestion}
+
+ローカルの **AEM管理者** グループを作成します。 AEM administrators グループに属していない場合は、取り込みを開始しようとすると、次に示すエラーが表示されます。 管理者に問い合わせて、ローカルにユーザーを追加することもできます **AEM管理者** または、トークン自体を探し、 **移行トークン入力** フィールドに入力します。
+
+![画像](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
 ## 次の手順 {#whats-next}
 
