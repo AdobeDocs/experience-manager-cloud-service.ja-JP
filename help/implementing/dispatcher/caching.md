@@ -3,10 +3,10 @@ title: AEM as a Cloud Service でのキャッシュ
 description: 'AEM as a Cloud Service でのキャッシュ '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 91a88cb02192defdd651ecb6d108d4540186d06e
+source-git-commit: ff78e359cf79afcb4818e0599dca5468b4e6c754
 workflow-type: tm+mt
-source-wordcount: '2183'
-ht-degree: 64%
+source-wordcount: '2591'
+ht-degree: 45%
 
 ---
 
@@ -205,36 +205,232 @@ AdobeCDN で、以下のHEADに関するリソースリクエストを受信し�
 
 以前のバージョンの AEM と同様に、ページの公開または非公開では、Dispatcher のキャッシュからコンテンツがクリアされます。キャッシュに問題があると疑われる場合は、該当するページを再度公開し、ServerAlias localhost に一致する仮想ホスト（Dispatcher キャッシュの無効化に必要）が使用可能であることを確認する必要があります。
 
-
 パブリッシュインスタンスは、オーサーから新しいバージョンのページまたはアセットを受け取ると、フラッシュエージェントを使用して Dispatcher 上の適切なパスを無効にします。更新されたパスは、親と共に、Dispatcher キャッシュから削除されます ( これを [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#invalidating-files-by-folder-level)) をクリックします。
 
-### 明示的な Dispatcher キャッシュの無効化 {#explicit-invalidation}
+## Dispatcher キャッシュの明示的な無効化 {#explicit-invalidation}
 
-一般的に、Dispatcher 内のコンテンツを手動で無効にする必要はありませんが、必要に応じて無効にすることができます。
+Adobeでは、標準のキャッシュヘッダーを使用して、コンテンツ配信のライフサイクルを制御することをお勧めします。 ただし、必要に応じて、Dispatcher 内のコンテンツを直接無効にすることができます。
+
+以下のリストに、（オプションで無効化の完了をリッスンしながら）キャッシュを明示的に無効にする場合があるシナリオを示します。
+
+* エクスペリエンスフラグメントやコンテンツフラグメントなどのコンテンツを公開した後、それらの要素を参照する公開済みおよびキャッシュされたコンテンツを無効化します。
+* 参照ページが正常に無効化された場合に外部システムに通知します。
+
+キャッシュを明示的に無効にする方法は 2 つあります。
+
+* 推奨されるアプローチは、オーサーから Sling コンテンツ配布 (SCD) を使用することです。
+* レプリケーション API を使用して、パブリッシュ Dispatcher フラッシュレプリケーションエージェントを呼び出す。
+
+アプローチは、階層の可用性、イベントの重複排除機能、イベント処理の保証の点で異なります。 次の表に、これらのオプションの概要を示します。
+
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
+    <th>該当なし</th>
+    <th>階層の可用性</th>
+    <th>重複排除 </th>
+    <th>保証 </th>
+    <th>アクション </th>
+    <th>影響 </th>
+    <th>説明 </th>
+  </tr>  
+  <tr>
+    <td>Sling コンテンツ配布 (SCD)API</td>
+    <td>作成者</td>
+    <td>Discovery API を使用するか、 <a href="https://github.com/apache/sling-org-apache-sling-distribution-journal/blob/e18f2bd36e8b43814520e87bd4999d3ca77ce8ca/src/main/java/org/apache/sling/distribution/journal/impl/publisher/DistributedEventNotifierManager.java#L146-L149">重複排除モード</a>.</td>
+    <td>少なくとも 1 回は。</td>
+    <td>
+     <ol>
+       <li>ADD</li>
+       <li>DELETE</li>
+       <li>無効化</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>階層/統計レベル</li>
+       <li>階層/統計レベル</li>
+       <li>レベルのリソースのみ</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>コンテンツを公開し、キャッシュを無効にします。</li>
+       <li>コンテンツを削除し、キャッシュを無効にします。</li>
+       <li>コンテンツを公開せずに無効化します。</li>
+     </ol>
+     </td>
+  </tr>
+  <tr>
+    <td>レプリケーション API</td>
+    <td>公開</td>
+    <td>不可能です。すべてのパブリッシュインスタンスで発生するイベントです。</td>
+    <td>ベストエフォート。</td>
+    <td>
+     <ol>
+       <li>有効化</li>
+       <li>無効化</li>
+       <li>DELETE</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>階層/統計レベル</li>
+       <li>階層/統計レベル</li>
+       <li>階層/統計レベル</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>コンテンツを公開し、キャッシュを無効にします。</li>
+       <li>オーサー層/パブリッシュ層から — コンテンツを削除し、キャッシュを無効にします。</li>
+       <li><p><strong>オーサー層から</strong>  — コンテンツを削除し、キャッシュを無効にします（パブリッシュエージェントの AEM オーサー層からトリガーされる場合）。</p>
+           <p><strong>パブリッシュ層から</strong>  — キャッシュのみを無効化します（フラッシュエージェントまたはリソースのみフラッシュエージェントの AEM パブリッシュ層からトリガーされた場合）。</p>
+       </li>
+     </ol>
+     </td>
+  </tr>
+  </tbody>
+</table>
+
+キャッシュの無効化に直接関連する 2 つのアクションは、Sling Content Distribution(SCD)API 無効化とレプリケーション API 無効化です。
+
+また、表からは、次のことがわかります。
+
+* SCD API は、正確な知識を必要とする外部システムとの同期など、すべてのイベントが保証される必要がある場合に必要です。 無効化呼び出しの時点でパブリッシュ層のアップスケーリングイベントがある場合、新しい各パブリッシュが無効化を処理すると、追加のイベントが発生します。
+
+* レプリケーション API の使用は一般的な使用例ではありませんが、キャッシュを無効にするトリガーがオーサー層ではなくパブリッシュ層から提供される場合に使用します。 これは、Dispatcher の TTL が設定されている場合に役立ちます。
+
+最後に、Dispatcher のキャッシュを無効にする場合は、オーサーから SCD API の無効化アクションを使用することをお勧めします。 また、イベントをリッスンして、さらにダウンストリームアクションをトリガー化することもできます。
+
+### Sling コンテンツ配布 (SCD) {#sling-distribution}
 
 >[!NOTE]
->AEM as a Cloud Service 以前は、Dispatcher キャッシュを無効にする方法が 2 通りありました。
->
->1. パブリッシュ Dispatcher のフラッシュエージェントを指定して、レプリケーションエージェントを呼び出す
->2. `invalidate.cache` API を直接呼び出す（例：`POST /dispatcher/invalidate.cache`）
+>以下の手順を使用する場合、カスタムコードはローカルではなく、AEM Cloud Service開発環境でテストする必要があることに注意してください。
 
->
->Dispatcher の `invalidate.cache` API アプローチは、特定の Dispatcher ノードのみを指すので、今後サポートされなくなります。AEM as a Cloud Service は、個々のノードレベルではなくサービスレベルで動作するので、 [AEM からのキャッシュページの無効化](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=ja) ページで説明されている無効化手順は、AEM as a Cloud Service では無効になります。
+オーサーの SCD アクションを使用する場合、実装パターンは次のようになります。
 
-レプリケーションフラッシュエージェントを使用する必要があります。これは、[レプリケーション API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html) を使用して実行できます。フラッシュエージェントエンドポイントは設定できませんが、フラッシュエージェントを実行するパブリッシュサービスと一致する Dispatcher を指すように事前設定されています。フラッシュエージェントは、通常、OSGi のエージェントまたはイベントによってトリガーされます。
+1. オーサーから、カスタムコードを記述して Sling コンテンツ配布を呼び出します。 [API](https://sling.apache.org/documentation/bundles/content-distribution.html)を呼び出し、パスのリストを持つ無効化アクションを渡す場合、以下の処理を実行します。
+
+```
+@Reference
+private Distributor distributor;
+
+ResourceResolver resolver = ...; // the resource resolver used for authorizing the request
+String agentName = "publish";    // the name of the agent used to distribute the request
+
+String pathToInvalidate = "/content/to/invalidate";
+DistributionRequest distributionRequest = new SimpleDistributionRequest(DistributionRequestType.INVALIDATE, false, pathToInvalidate);
+distributor.distribute(agentName, resolver, distributionRequest);
+```
+
+* （オプション）すべての Dispatcher インスタンスに対して無効化されるリソースを反映するイベントをリッスンします。
+
+
+```
+package org.apache.sling.distribution.journal.shared;
+
+import org.apache.sling.discovery.DiscoveryService;
+import org.apache.sling.distribution.journal.impl.event.DistributionEvent;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.event.Event;
+import org.osgi.service.event.EventHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import static org.apache.sling.distribution.DistributionRequestType.INVALIDATE;
+import static org.apache.sling.distribution.event.DistributionEventProperties.DISTRIBUTION_PATHS;
+import static org.apache.sling.distribution.event.DistributionEventProperties.DISTRIBUTION_TYPE;
+import static org.apache.sling.distribution.event.DistributionEventTopics.AGENT_PACKAGE_DISTRIBUTED;
+import static org.osgi.service.event.EventConstants.EVENT_TOPIC;
+
+@Component(immediate = true, service = EventHandler.class, property = {
+        EVENT_TOPIC + "=" + AGENT_PACKAGE_DISTRIBUTED
+})
+public class InvalidatedHandler implements EventHandler {
+    private static final Logger LOG = LoggerFactory.getLogger(InvalidatedHandler.class);
+
+    @Reference
+    private DiscoveryService discoveryService;
+
+    @Override
+    public void handleEvent(Event event) {
+
+        String distributionType = (String) event.getProperty(DISTRIBUTION_TYPE);
+
+        if (INVALIDATE.name().equals(distributionType)) {
+            boolean isLeader = discoveryService.getTopology().getLocalInstance().isLeader();
+            // process the OSGi event on the leader author instance
+            if (isLeader) {
+                String[] paths = (String[]) event.getProperty(DISTRIBUTION_PATHS);
+                String packageId = (String) event.getProperty(DistributionEvent.PACKAGE_ID);
+                invalidated(paths, packageId);
+            }
+        }
+    }
+
+    private void invalidated(String[] paths, String packageId) {
+        // custom logic
+        LOG.info("Successfully applied package with id {}, paths {}", packageId, paths);
+    }
+}
+```
+
+<!-- Optionally, instead of using the isLeader approach, one could add an OSGi configuration for the PID org.apache.sling.distribution.journal.impl.publisher.DistributedEventNotifierManager and property deduplicateEvent=true. But we'll stick with just one strategy and not mention it (double-check this).**review this**-->
+
+* （オプション）ビジネスロジックを `invalidated(String[] paths, String packageId)` メソッドを使用します。
+
+>[!NOTE]
+>
+>Dispatcher が無効化されると、AdobeCDN はフラッシュされません。 Adobeが管理する CDN は TTL に従うので、フラッシュする必要はありません。
+
+### レプリケーション API {#replication-api}
+
+レプリケーション API の非アクティブ化アクションを使用する際の実装パターンを次に示します。
+
+1. パブリッシュ層で、レプリケーション API を呼び出して、パブリッシュ Dispatcher フラッシュレプリケーションエージェントをトリガーにします。
+
+フラッシュエージェントエンドポイントは設定できず、フラッシュエージェントと共に実行されるパブリッシュサービスと一致する Dispatcher を指すように事前に設定されています。
+
+フラッシュエージェントは、通常、OSGi のイベントまたはワークフローに基づくカスタムコードによってトリガーされます。
+
+```
+String[] paths = …
+ReplicationOptions options = new ReplicationOptions();
+options.setSynchronous(true);
+options.setFilter( new AgentFilter {
+  public boolean isIncluded (Agent agent) {
+   return agent.getId().equals(“flush”);
+  }
+});
+
+Replicator.replicate (session,ReplicationActionType.DELETE,paths, options);
+```
+
+<!-- In general, it will not be necessary to manually invalidate content in the dispatcher, but it is possible if needed.
+
+>[!NOTE]
+>Prior to AEM as a Cloud Service, there were two ways of invalidating the dispatcher cache.
+>
+>1. Invoke the replication agent, specifying the publish dispatcher flush agent
+>2. Directly calling the `invalidate.cache` API (for example, `POST /dispatcher/invalidate.cache`)
+>
+>The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) page are not longer valid for AEM as a Cloud Service.
+
+The replication flush agent should be used. This can be done using the [Replication API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). The flush agent endpoint is not configurable but pre-configured to point to the dispatcher, matched with the publish service running the flush agent. The flush agent can typically be triggered by OSGi events or workflows.
 
 <!-- Need to find a new link and/or example -->
 <!-- 
 and for an example of flushing the cache, see the [API example page](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) (specifically the `CustomStep` example issuing a replication action of type ACTIVATE to all available agents). 
--->
 
-次に図で示します。
+The diagram presented below illustrates this.
 
 ![CDN](assets/cdnd.png "CDN")
 
-Dispatcher キャッシュがクリアされない問題が発生した場合は、[カスタマーサポート](https://helpx.adobe.com/jp/support.ec.html)にお問い合わせください。必要に応じて Dispatcher キャッシュをフラッシュします。
+If there is a concern that the dispatcher cache isn't clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
 
-アドビが管理する CDN は TTL に従うので、フラッシュする必要はありません。問題の疑いがある場合は、[カスタマーサポート](https://helpx.adobe.com/support.ec.html)にお問い合わせください。必要に応じてアドビが管理する CDN キャッシュをフラッシュします。
+The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
 
 ## クライアントサイドライブラリとバージョンの整合性 {#content-consistency}
 

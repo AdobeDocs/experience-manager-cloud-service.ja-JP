@@ -2,10 +2,10 @@
 title: レプリケーション
 description: コンテンツ配布とレプリケーションのトラブルシューティング。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 5791410fd5956cd8b82d4ed03f3920ade3bfedcb
+source-git-commit: b79752c43cd9907236b511aa1be60b5b2256a7b8
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 91%
+source-wordcount: '1259'
+ht-degree: 88%
 
 ---
 
@@ -172,6 +172,9 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 リソースの `ReplicationStatus` 全体が変更されるのは、デフォルトでアクティブになっているエージェントがレプリケーションアクションに少なくとも 1 つ含まれている場合のみです。上記の例では、レプリケーションは「プレビュー」エージェントを使用するだけなので、このケースには該当しません。したがって、新しい `getStatusForAgent()` メソッドを使用する必要があります。これにより、特定のエージェントのステータスを問い合わせることができます。このメソッドは、「パブリッシュ」エージェントに対しても機能します。指定されたエージェントを使用して実行されたレプリケーションアクションがある場合、このメソッドは null 以外の値を返します。
 
+### コンテンツの無効化方法 {#invalidating-content}
+
+コンテンツを直接無効にするには、オーサーから Sling コンテンツ無効化 (SCD) を使用するか（推奨される方法）、レプリケーション API を使用してパブリッシュ Dispatcher フラッシュレプリケーションエージェントを呼び出します。 詳しくは、 [キャッシュ](/help/implementing/dispatcher/caching.md) ページを参照してください。
 
 **レプリケーション API の容量の制限**
 
@@ -179,6 +182,7 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 アプリケーションロジックがアトミックレプリケーションを必要としない場合、この制限は、 `ReplicationOptions.setUseAtomicCalls` を false に設定します。この値は任意の数のパスを受け入れますが、内部的にグループを作成して、この制限を下回るようにします。
 
 レプリケーション呼び出しごとに送信されるコンテンツのサイズは、 `10 MB`. ノードとプロパティが含まれますが、バイナリ（ワークフローパッケージとコンテンツパッケージはバイナリと見なされません）は含まれません。
+
 
 ## トラブルシューティング {#troubleshooting}
 
