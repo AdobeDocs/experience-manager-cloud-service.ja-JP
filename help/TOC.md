@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 698ea704d821d26067e29a89b562388d7517772e
+source-git-commit: 0ee8f080c0e712e4a34086a75cbd8750a7d08b74
 workflow-type: tm+mt
-source-wordcount: '3674'
+source-wordcount: '3680'
 ht-degree: 92%
 
 ---
@@ -99,6 +99,7 @@ ht-degree: 92%
    + 移行ツールのリリースノート {#migration-tools}
       + [最新のリリースノート](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2022 年 {#2022}
+         + [リリースノート（2022.5.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-05-0.md)
          + [リリースノート（2022.4.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-04-0.md)
          + [リリースノート（2022.3.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
          + [リリースノート（2022.2.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
@@ -499,6 +500,7 @@ ht-degree: 92%
       + アダプティブフォームへのコンポーネントの追加 {#add-components-to-an-adaptive-form}
          + [アダプティブフォームでの CAPTCHA の使用](/help/forms/captcha-adaptive-forms.md)
          + [コアコンポーネントの使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
+         + [手書き署名を適用](/help/forms/signing-forms-using-scribble.md)
       + アダプティブフォームのレイアウト設定とスタイルの適用{#configure-layout-of-an-adaptive-form}
          + [アダプティブフォームのレイアウト設定](/help/forms/layout-capabilities-adaptive-forms.md)
          + [レイアウトモードを使用したコンポーネントのサイズ変更](/help/forms/resize-using-layout-mode.md)
