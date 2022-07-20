@@ -1,56 +1,47 @@
 ---
-title: AEM as a Cloud Service Release 2022.5.0 の移行ツールのリリースノート
-description: AEM as a Cloud Service Release 2022.5.0 の移行ツールのリリースノート
+title: AEM as a Cloud Service Release 2022.7.0 の移行ツールのリリースノート
+description: AEM as a Cloud Service Release 2022.7.0 の移行ツールのリリースノート
 feature: Release Information
-exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: 33405a5eeb853bb5b5e9304bc79d0b0ca034ab50
+source-git-commit: f84327096951772e1bed8656334841e1292d6bcf
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 23%
+source-wordcount: '304'
+ht-degree: 28%
 
 ---
 
-# AEM as a Cloud Service Release 2022.5.0 の移行ツールのリリースノート {#release-notes}
+# AEM as a Cloud Service Release 2022.7.0 の移行ツールのリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Service 2022.5.0 の移行ツールのリリースノートの概要を説明しています。
-
-## ベストプラクティスアナライザー {#bpa-release}
-
-### リリース日 {#release-date-bpa}
-
-ベストプラクティスアナライザー v2.1.30 のリリース日は 2022 年 6 月 1 日です。
-
-### 新機能 {#what-is-new-bpa}
-
-* CoralUI およびクラシックダイアログウィジェットを使用したカスタムダイアログウィジェットの使用状況を検出し、レポートする機能。 カスタムのクラシックダイアログウィジェットを ExtJS から CoralUI に変換することをお勧めします。 カスタム Coral ダイアログウィジェットを CoralUI3 に更新する必要があります。
-* Assets Share Commons の使用状況とバージョンを検出し、レポートする機能。 Asset Share Commons 1.x はAEM as a Cloud Serviceではサポートされていないので、2.x にアップグレードする必要があります。
-* バージョンのノード数を検出し、レポートする機能。
-* カスタムレプリケーションエージェントまたは変更された標準のレプリケーションエージェントを検出してレポートする機能。
-
-### バグ修正 {#bug-fixes-bpa}
-
-* BPA は、誤検出である NCC（非互換変更）、UMI（アップグレードの誤構成問題）、PCX（ページの複雑さ）の結果を報告していました。 これらは修正されました。
-* BPA は、任意のノード名の長さが 150 バイトを超えた場合にエラーを報告していました。 ノードの親パスが 350 バイト以上の場合にのみ、エラーを検出するように修正されました。
+このページでは、AEM as a Cloud Service 2022.7.0 の移行ツールのリリースノートの概要を説明しています。
 
 ## コンテンツ転送ツール {#ctt-release}
 
 ### リリース日 {#release-date-ctt}
 
-コンテンツ転送ツール v2.0.10 のリリース日は 2022 年 6 月 2 日です。
+コンテンツ転送ツール v2.0.12 のリリース日は 2022 年 7 月 19 日です。
 
 ### 新機能 {#what-is-new-ctt}
 
-* コンテンツ転送ツール (CTT) は、Cloud Acceleration Manager と連携してコンテンツ転送プロセス全体を合理化するように進化しました。 CTT は、コンテンツ抽出の実行に重点を置くようになりました。 CTT 取り込みサービスが Cloud Acceleration Manager に統合されました。 この変化によって得られるメリットは次のとおりです。
-   * 移行セットを 1 回抽出し、同時に複数の環境に取り込むセルフサービス方法。
-   * 読み込み状態、ガードレール、エラー処理が改善され、ユーザーエクスペリエンスが向上しました。
-   * 取り込みログは保持され、常にトラブルシューティングに使用できます。
+* LDAP を介してログインしたユーザーは、CTT でチェックサイズとユーザーマッピング機能を実行できるようになりました。
+* 抽出中の SSL/TLS 接続の問題をデバッグできるように、ユーザーは SSL ログを有効にできます。
+* ソース接続の問題のデバッグに役立つように、Azure への接続に失敗した場合にサブドメイン名がログに表示されるようになりました。
+* 事前コピー中の問題のデバッグに役立つように、事前コピーが失敗した場合、AzCopy ログが抽出ログに追加されるようになりました。
+* チェックサイズの結果が古くならないようにするため、以前のチェックサイズが完了した後でのみ、ユーザーはチェックサイズを再実行できます。
+
+### バグ修正 {#bug-fixes-ctt}
+
+* 移行セットを削除して再作成した後、以前の抽出ログが表示されていました。 この問題が修正されました。
+* 「進行状況の表示」アクションボタンが、「停止」ステータスの移行セットで使用できなかった問題を修正しました。 この問題が修正されました。
+* 抽出キーの期限切れの移行セットで、削除アクションボタンが使用できなかった問題を修正しました。 この問題が修正されました。
+* 複数の UI のバグを修正しました。
 
 ## Cloud Acceleration Manager {#cam-release}
 
 ### リリース日 {#release-date-cam}
 
-Cloud Acceleration Manager のリリース日は 2022 年 6 月 2 日です。
+Cloud Acceleration Manager のリリース日は 2022 年 7 月 15 日です。
 
 ### 新機能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager では、コンテンツ転送を開始および管理して、お客様のAEMインスタンス（オンプレミスまたは Adobe Managed Services）からAEM as a Cloud Serviceに移行する機能を、移行プロジェクトの一環として提供するようになりました。 参照： [コンテンツ転送カードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer) を参照してください。
+* Cloud Acceleration Manager で、自動取得に失敗した場合に取り込みを開始できるように、移行トークンを手動で取得できるようになりました。 顧客が CAM をブロックする IP 許可リストを設定している場合や、管理者以外のユーザーが取り込みを開始しようとすると、自動取り込みが失敗する場合があります。 参照： [トラブルシューティング](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) を参照してください。
+* 移行の複雑さページの長いテーブルが、使いやすく折りたたみ可能になりました。
+
