@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの基本を学ぶ
 description: コンテンツ転送ツールの基本を学ぶ
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: e7e3ec89d5e7b43b8c6dfb10f5dc966768ab0af1
+source-git-commit: 7bebdff5095786005d5c4c91b7b699d71f9813a7
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 57%
+source-wordcount: '1341'
+ht-degree: 56%
 
 ---
 
@@ -44,6 +44,18 @@ ht-degree: 57%
 
 >[!NOTE]
 >`HTTP/2 200` を受け取った場合は、AEM as a Cloud Service への接続に成功しました。
+
+### SSL ログを有効にする {#enable-ssl-logging}
+
+SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プロセス中に接続の問題を回避するには、次の手順に従って、ソースAEM環境のシステムコンソールで SSL ログを有効にします。
+
+1. **ツール／運営／Web コンソール**&#x200B;を選択するか、URL（*https://serveraddress:serverport/system/console/configMgr*）に直接アクセスして、ソースインスタンス上の Adobe Experience Manager Web コンソールに移動します。
+1. **Content Transfer Tool Extraction Service Configuration** を検索します。
+1. 鉛筆アイコンボタンを使用して、設定値を編集します。
+1. を有効にします。 **抽出用の SSL ログを有効にする** 設定してから、 **保存**:
+
+   ![画像](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
+
 
 ## コンテンツ転送ツールの実行 {#running-tool}
 
