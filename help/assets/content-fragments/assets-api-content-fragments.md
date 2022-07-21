@@ -3,9 +3,9 @@ title: Assets HTTP API での Adobe Experience Manager as a Cloud Service コン
 description: AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API でのコンテンツフラグメントのサポートについて学びます。
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: ad51218652d3e7fbe90abb1fc02cce7212394c21
+source-git-commit: cf8c8353d83e4446f52235a2ea1a322a84786b61
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1761'
 ht-degree: 100%
 
 ---
@@ -255,47 +255,6 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 >[!NOTE]
 >
 >詳細については、『](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)API リファレンス[』を参照してください。特に、[Adobe Experience Manager Assets API - コンテンツフラグメント](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
-
-### 読み取り／配信 {#read-delivery}
-
-使用方法は次のとおりです。
-
-`GET /{cfParentPath}/{cfName}.json`
-
-次に例を示します。
-
-`http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
-
-応答は、コンテンツがコンテンツフラグメントに構造化されたシリアル化 JSON です。参照は参照 URL として配信されます。
-
-次の 2 通りの読み取り操作が可能です。
-
-* 特定のコンテンツフラグメントをパスで読み取る。この場合は、コンテンツフラグメントの JSON 表現が返されます。
-* コンテンツフラグメントのフォルダーをパスで読み取る。この場合は、フォルダー内のすべてのコンテンツフラグメントの JSON 表現が返されます。
-
-### 作成 {#create}
-
-使用方法は次のとおりです。
-
-`POST /{cfParentPath}/{cfName}`
-
-本文には、作成するコンテンツフラグメントの JSON 表現を含める必要があります。これには、コンテンツフラグメント要素に設定する必要がある初期コンテンツも含まれます。`cq:model` プロパティの設定が必須で、このプロパティが有効なコンテンツフラグメントモデルを指している必要があります。そうしないと、エラーが発生します。また、`Content-Type` ヘッダーを追加することも必要です。これは `application/json` に設定されます。
-
-### アップデート {#update}
-
-使用方法は次のとおりです。
-
-`PUT /{cfParentPath}/{cfName}`
-
-本文には、特定コンテンツフラグメントの更新内容の JSON 表現を含める必要があります。
-
-これには、コンテンツフラグメントのタイトルや説明、単一のエレメント、またはすべての要素値やメタデータを使用できます。
-
-### 削除 {#delete}
-
-使用方法は次のとおりです。
-
-`DELETE /{cfParentPath}/{cfName}`
 
 ## 制限事項 {#limitations}
 
