@@ -8,10 +8,10 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
-source-git-commit: f93db6f59d927b2e302f2c0d7d103ca73e9b4824
+source-git-commit: 479349d2dad841a782519de3302993ea2a9f5162
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 5%
+source-wordcount: '283'
+ht-degree: 4%
 
 ---
 
@@ -51,3 +51,27 @@ Dynamic Mediaビューアでは、次の Web ブラウザーとオペレーテ�
 * Safari 7 + OS X 10.9 Mavericks
 * Safari 8 + iOS 8.4
 * Safari 8 + OS X 10.10 ヨセミテ
+
+## TLS 1.0 および 1.1 のサポート終了 {#tls}
+
+<!-- CQDOC-19433 -->
+
+2022 年 9 月 30 日に、AdobeDynamic Mediaビューアは次のサポートを終了します。
+
+* TLS(Transport Layer Security)1.0 および 1.1
+* TLS 1.2 での以下の脆弱な暗号：
+   * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
+   * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
+   * `TLS_RSA_WITH_AES_256_GCM_SHA384`
+   * `TLS_RSA_WITH_AES_256_CBC_SHA256`
+   * `TLS_RSA_WITH_AES_256_CBC_SHA`
+   * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
+   * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
+   * `TLS_RSA_WITH_AES_128_GCM_SHA256`
+   * `TLS_RSA_WITH_AES_128_CBC_SHA256`
+   * `TLS_RSA_WITH_AES_128_CBC_SHA`
+   * `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
+   * `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
+   * `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
+   * `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
+
