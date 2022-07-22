@@ -2,14 +2,14 @@
 title: 適切な人材、適切な役割
 description: 適切な人材、適切な役割
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 65e1ede4cdc8035657e8b37fe206ebed4ab7bb24
+source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 100%
 
 ---
 
-# **適切な役割を担う適切な人材の獲得**
+# 適切な役割を担う適切な人材の獲得 {#get-the-right-people-in-the-right-roles}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_chooseteam"

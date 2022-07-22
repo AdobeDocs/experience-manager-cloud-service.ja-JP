@@ -2,14 +2,14 @@
 title: KPI へのアクセス
 description: KPI へのアクセス
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: 6c6412a05bc00480623ee0d08106f53f4c0c416a
+source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 100%
 
 ---
 
-# 最も重要な指標を測定していますか？
+# 最も重要な指標を測定していますか？{#measuring-the-things-that-matter-most}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_assesskpis"
