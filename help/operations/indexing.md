@@ -2,9 +2,9 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 21c5de77ca5e5ca2b6541212ff50e747bbd00100
+source-git-commit: 1544358f9a706574d8944fa92422240c46d62d2f
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2253'
 ht-degree: 85%
 
 ---
@@ -282,4 +282,6 @@ Blue-Green デプロイメントでは、ダウンタイムは発生しません
 
 ## インデックスとクエリの最適化 {#index-query-optimizations}
 
-Apache Jackrabbit Oak では、柔軟なインデックス設定により検索クエリを効率的に処理できます。大規模なリポジトリでは、インデックスは特に重要です。すべてのクエリに適切なインデックスを付与するようにしてください。適切なインデックスのないクエリを実行すると、何千ものノードが読み取られる可能性があり、その場合は警告として記録されます。詳しくは、 [このページ](best-practices-for-querying-and-indexing.md) クエリとインデックスを最適化する方法について
+Apache Jackrabbit Oak では、柔軟なインデックス設定により検索クエリを効率的に処理できます。大規模なリポジトリでは、インデックスは特に重要です。すべてのクエリに適切なインデックスを付与するようにしてください。適切なインデックスのないクエリを実行すると、何千ものノードが読み取られる可能性があり、その場合は警告として記録されます。
+
+詳しくは、 [このドキュメント](query-and-indexing-best-practices.md) クエリとインデックスを最適化する方法について詳しくは、を参照してください。
