@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 0ee8f080c0e712e4a34086a75cbd8750a7d08b74
+source-git-commit: 7f8686cb9ca5121d1921dfdd64c152d14ebff2b6
 workflow-type: tm+mt
-source-wordcount: '3680'
-ht-degree: 92%
+source-wordcount: '3686'
+ht-degree: 91%
 
 ---
 
@@ -889,6 +889,7 @@ ht-degree: 92%
    + [バックアップと復元](/help/operations/backup.md)
    + [非同期ジョブ](/help/operations/asynchronous-jobs.md)
    + [汎用 Lucene インデックスの削除](/help/operations/removal-generic-lucene-index.md)
+   + [クエリとインデックスに関するベストプラクティス](/help/operations/best-practices-for-querying-and-indexing.md)
 + コンプライアンス {#compliance}
    + [AEM as a Cloud Service でのコンプライアンス](/help/compliance/home.md)
    + データのプライバシーと保護への対応 {#data-privacy}

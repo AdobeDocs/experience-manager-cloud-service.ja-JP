@@ -2,10 +2,10 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 288c80a3819ff148834824cc33d6deefbd3f0605
+source-git-commit: 21c5de77ca5e5ca2b6541212ff50e747bbd00100
 workflow-type: tm+mt
-source-wordcount: '2535'
-ht-degree: 87%
+source-wordcount: '2251'
+ht-degree: 85%
 
 ---
 
@@ -280,17 +280,6 @@ Blue-Green デプロイメントでは、ダウンタイムは発生しません
 
 標準提供のインデックスをカスタマイズする必要がなくなった場合は、標準提供のインデックス定義をコピーする必要があります。例えば、既に `damAssetLucene-8-custom-3` をデプロイしていて、カスタマイズが不要になり、デフォルトの `damAssetLucene-8` インデックスに戻す場合は、`damAssetLucene-8` のインデックス定義を含んだインデックス `damAssetLucene-8-custom-4` を追加する必要があります。
 
-## インデックスの最適化 {#index-optimizations}
+## インデックスとクエリの最適化 {#index-query-optimizations}
 
-Apache Jackrabbit Oak では、柔軟なインデックス設定により検索クエリを効率的に処理できます。大規模なリポジトリでは、インデックスは特に重要です。すべてのクエリに適切なインデックスを付与するようにしてください。適切なインデックスのないクエリを実行すると、何千ものノードが読み取られる可能性があり、その場合は警告として記録されます。このようなクエリは、インデックス定義を最適化できるように、ログファイルを分析して特定する必要があります。詳しくは、[このページ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=ja#tips-for-creating-efficient-indexes)を参照してください。
-
-### AEM as a Cloud Service での Lucene フルテキストインデックス {#index-lucene}
-
-フルテキストインデックス `/oak:index/lucene-2` は、デフォルトで AEM リポジトリ内のすべてのノードに対してインデックスを作成するので、非常に大きくなる可能性があります。アドビではこのインデックスを廃止する予定であり、AEM as a Cloud Service 製品ではこのインデックスは使用されなくなるので、カスタマーコードを実行する必要はなくなります。共通の Lucene インデックスを使用する AEM as a Cloud Service 環境の場合、アドビでは、ユーザーと個別に協力して、このインデックスを補完したり、最適化されたより優れたインデックスを使用できるように協調的アプローチを進めています。アドビから別途通知がない限り、ユーザーは何もする必要はありません。AEM as a Cloud Service ユーザーは、この最適化に関して対処が必要な場合に、アドビから通知を受けます。このインデックスがカスタムクエリに必要な場合は、一時的な解決策として、このインデックスのコピーを別の名前（例：`/oak:index/acme.lucene-1-custom-1`）で作成してください（詳しくは[こちら](/help/operations/indexing.md)を参照）。
-この最適化は、オンプレミスでホストされる、または Adobe Managed Services で管理される他の AEM 環境には、デフォルトでは適用されません。
-
-## クエリの最適化 {#index-query}
-
-**クエリパフォーマンス**&#x200B;ツールを使用すると、一般的なクエリと低速な JCR クエリの両方を監視できます。さらに、クエリを分析し、特に、このクエリにインデックスが使用されているかどうかについての様々な情報を表示することができます。
-
-オンプレミスの AEM とは異なり、AEM as a Cloud Service では&#x200B;**クエリパフォーマンス**&#x200B;ツールが UI に表示されなくなりました。代わりに、（Cloud Manager の）開発者コンソールの「[クエリ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=ja#queries)」タブで使用できるようになりました。
+Apache Jackrabbit Oak では、柔軟なインデックス設定により検索クエリを効率的に処理できます。大規模なリポジトリでは、インデックスは特に重要です。すべてのクエリに適切なインデックスを付与するようにしてください。適切なインデックスのないクエリを実行すると、何千ものノードが読み取られる可能性があり、その場合は警告として記録されます。詳しくは、 [このページ](best-practices-for-querying-and-indexing.md) クエリとインデックスを最適化する方法について
