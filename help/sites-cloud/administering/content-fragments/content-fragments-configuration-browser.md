@@ -1,9 +1,10 @@
 ---
 title: コンテンツフラグメント - 設定ブラウザー
 description: 設定ブラウザーで特定のコンテンツフラグメント機能を有効にする方法を説明します。
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '358'
 ht-degree: 63%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 63%
 コンテンツフラグメントを使用する前に、**設定ブラウザー**&#x200B;を使用して以下を有効にする必要があります。
 
 * **コンテンツフラグメントモデル** - 必須
-* **GraphQL の永続的なクエリ** - オプション
+* **GraphQL 永続クエリ**  — オプション
 
 >[!CAUTION]
 >
@@ -60,9 +61,12 @@ ht-degree: 63%
 1. 「**作成**」を使用してダイアログを開き、次の操作を行います。
 
    1. 「**タイトル**」を指定します。
+   1. **名前**&#x200B;はリポジトリのノード名になります。
+      * タイトルに基づいて自動的に生成され、[AEM の命名規則](/help/implementing/developing/introduction/naming-conventions.md)に従って調整されます。
+      * 必要に応じて調整できます。
    1. 使用できるようにするには、以下を選択します。
       * **コンテンツフラグメントモデル**
-      * **GraphQL の永続的なクエリ**
+      * **GraphQL 永続クエリ**
 
       ![設定の定義](assets/cfm-conf-01.png)
 

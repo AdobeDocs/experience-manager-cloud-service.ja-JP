@@ -2,10 +2,10 @@
 title: 設定の作成 - ヘッドレスセットアップ
 description: AEM as a Cloud Service でヘッドレスを使い始めるための最初の手順として設定を作成します。
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ AEM のヘッドレスなコンテンツ管理に関しては、AEM 内でコン
       * 必要に応じて調整できます。
 1. 次のオプションを確認します。
    * **コンテンツフラグメントモデル**
-   * **GraphQL の永続的なクエリ**
+   * **GraphQL 永続クエリ**
 
    ![設定の作成](../assets/create-configuration.png)
 
@@ -43,7 +43,7 @@ AEM のヘッドレスなコンテンツ管理に関しては、AEM 内でコン
 
 >[!NOTE]
 >
->実装要件に応じて、**コンテンツフラグメントモデル**&#x200B;および **GraphQL の永続的なクエリ**&#x200B;に加えて、設定オプションが必要になる場合があります。
+>に加えて、設定オプションもあります。 **コンテンツフラグメントモデル** および **GraphQL 永続クエリ** は、実装要件に応じて必要になる場合があります。
 
 ## 次の手順 {#next-steps}
 

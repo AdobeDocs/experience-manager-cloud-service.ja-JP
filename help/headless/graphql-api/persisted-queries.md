@@ -3,7 +3,7 @@ title: 永続的な GraphQL クエリ
 description: Adobe Experience Manager as a Cloud Serviceで GraphQL クエリを保持してパフォーマンスを最適化する方法を説明します。 クライアントアプリケーションで HTTP GET メソッドを使用して永続的クエリをリクエストでき、応答を Dispatcher および CDN レイヤーにキャッシュできるので、最終的にクライアントアプリケーションのパフォーマンスが向上します。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 26%
@@ -33,7 +33,7 @@ ht-degree: 26%
 >
 >詳しくは、[設定ブラウザーでのコンテンツフラグメント機能の有効化](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)を参照してください。
 >
->この **GraphQL 永続的なクエリ** 適切な Sites 設定に対して有効にする必要があります。
+>この **GraphQL 永続クエリ** 適切な Sites 設定に対して有効にする必要があります。
 
 例えば、`my-query` という特定のクエリがあり、このクエリが Sites 設定 `my-conf` のモデル `my-model` を使用する場合は、次のようになります。
 
@@ -193,9 +193,9 @@ GraphiQL IDE は、 **優先** メソッドを使用してクエリを保持で�
 GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 ```
 
-ここで、 `PERSISTENT_PATH` は、永続的なクエリが保存される場所への短縮パスです。
+ここで、 `PERSISTENT_PATH` は、永続化されたクエリが保存されるへの短縮パスです。
 
-1. 例： `wknd` は設定名で、 `plain-article-query` は、永続クエリの名前です。 クエリを実行するには：
+1. 例： `wknd` は設定名で、 `plain-article-query` は、永続化されたクエリの名前です。 クエリを実行するには：
 
    ```shell
    $ curl -X GET \
@@ -206,7 +206,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
    >[!NOTE]
    >
-   > クエリ変数と値は正しく設定されている必要があります [エンコード済み](#encoding-query-url) 永続クエリを実行する際。
+   > クエリ変数と値は正しく設定されている必要があります [エンコード済み](#encoding-query-url) 永続化クエリの実行時。
 
    次に例を示します。
 
@@ -311,7 +311,7 @@ URL は次の部分に分類できます。
 
 | URL 部分 | 説明 |
 |----------| -------------|
-| `/graphql/execute.json` | 永続的なクエリエンドポイント |
+| `/graphql/execute.json` | 永続クエリエンドポイント |
 | `/wknd/adventure-by-path` | 永続的なクエリパス |
 | `%3B` | のエンコード `;` |
 | `adventurePath` | クエリ変数 |
@@ -331,9 +331,9 @@ URL は次の部分に分類できます。
 
 永続化されたクエリは、常に AEM オーサーサービスで作成してから、AEM パブリッシュサービスに公開（レプリケート）する必要があります。 多くの場合、永続化クエリは、ローカル環境や開発環境などの低レベルの環境で作成およびテストされます。 その後、永続化されたクエリを上位レベルの環境に昇格し、最終的に、クライアントアプリケーションが使用できるように、実稼動 AEM パブリッシュ環境でクエリを使用できるようにする必要があります。
 
-### パッケージの永続的なクエリ
+### パッケージで保持されたクエリ
 
-永続クエリは、 [AEMパッケージ](/help/implementing/developing/tools/package-manager.md). その後、AEMパッケージを別の環境にダウンロードしてインストールできます。 AEMパッケージは、AEM オーサー環境から AEM パブリッシュ環境にレプリケートすることもできます。
+に永続クエリを組み込むことができます [AEMパッケージ](/help/implementing/developing/tools/package-manager.md). その後、AEMパッケージを別の環境にダウンロードしてインストールできます。 AEMパッケージは、AEM オーサー環境から AEM パブリッシュ環境にレプリケートすることもできます。
 
 パッケージを作成するには：
 

@@ -3,10 +3,10 @@ title: AEM ヘッドレスを使用した Dispatcher 設定
 description: Dispatcher は、Adobe Experience Manager パブリッシュ環境の前にあるキャッシュとセキュリティのレイヤーです。ヘッドレスアプリケーションに対して GraphQL エンドポイントを開くには、いくつかの設定が使用されます。
 feature: Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '233'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -38,4 +38,4 @@ AEM プロジェクトの一部として、Dispatcher の設定を含む Dispatc
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-永続クエリは `GET` を使用してリクエストされ、それによって、Dispatcher および CDN レベルで応答がキャッシュされます。キャッシュとキャッシュの無効化について詳しくは、[こちら](/help/implementing/dispatcher/caching.md)を参照してください。
+永続化されたクエリは、 `GET`したがって、Dispatcher および CDN レベルでの応答がキャッシュされます。 キャッシュとキャッシュの無効化について詳しくは、[こちら](/help/implementing/dispatcher/caching.md)を参照してください。

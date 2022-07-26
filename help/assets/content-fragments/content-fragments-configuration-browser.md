@@ -4,10 +4,10 @@ description: AEM の強力なヘッドレス配信機能を活用するために
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 79%
+source-wordcount: '371'
+ht-degree: 78%
 
 ---
 
@@ -20,7 +20,7 @@ AEM の強力なヘッドレス配信機能を活用するために、設定ブ�
 コンテンツフラグメントを使用する前に、**設定ブラウザー**&#x200B;を使用して以下を有効にする必要があります。
 
 * **コンテンツフラグメントモデル** - 必須
-* **GraphQL の永続的なクエリ** - オプション
+* **GraphQL 永続クエリ**  — オプション
 
 >[!CAUTION]
 >
@@ -63,9 +63,12 @@ AEM の強力なヘッドレス配信機能を活用するために、設定ブ�
 1. 「**作成**」を使用してダイアログを開き、次の操作を行います。
 
    1. 「**タイトル**」を指定します。
+   1. **名前**&#x200B;はリポジトリのノード名になります。
+      * タイトルに基づいて自動的に生成され、[AEM の命名規則](/help/implementing/developing/introduction/naming-conventions.md)に従って調整されます。
+      * 必要に応じて調整できます。
    1. 使用できるようにするには、以下を選択します。
       * **コンテンツフラグメントモデル**
-      * **GraphQL の永続的なクエリ**
+      * **GraphQL 永続クエリ**
 
       ![設定の定義](assets/cfm-conf-01.png)
 
