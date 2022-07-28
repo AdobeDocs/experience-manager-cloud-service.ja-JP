@@ -4,10 +4,10 @@ description: AEM で機械翻訳と人間による翻訳の両方のプロジェ
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 154fb4bf9bea187a2f733c35cc720f3da99755bb
 workflow-type: tm+mt
-source-wordcount: '3863'
-ht-degree: 100%
+source-wordcount: '3920'
+ht-degree: 98%
 
 ---
 
@@ -178,6 +178,11 @@ AEM では、翻訳プロジェクトがコンテンツの初期翻訳用に作�
 ![翻訳メモリの変更内容の比較](../assets/update-translation-memory-compare.png)
 
 AEM は、選択された文字列を翻訳管理システムに送信します。
+
+* このアクションにより、設定済みの翻訳管理システム (TMS) の翻訳メモリ内の既存の文字列の翻訳が更新されます。
+* 新しい翻訳ジョブは作成されません。
+* 文字列の値のペアとその翻訳を、AEM翻訳 API を介して TMS に返します。
+* この機能を使用するには、AEMで使用する翻訳管理システムが設定されている必要があります。
 
 ### ページの翻訳ステータスの確認 {#check-translation-status}
 
