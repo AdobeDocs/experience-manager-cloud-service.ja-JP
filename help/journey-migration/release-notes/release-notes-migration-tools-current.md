@@ -2,16 +2,33 @@
 title: AEM as a Cloud Service Release 2022.7.0 の移行ツールのリリースノート
 description: AEM as a Cloud Service Release 2022.7.0 の移行ツールのリリースノート
 feature: Release Information
-source-git-commit: f84327096951772e1bed8656334841e1292d6bcf
+exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
+source-git-commit: ad9edf7bc164ea7e03496680dff8df6d1ebe266a
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 28%
+source-wordcount: '430'
+ht-degree: 23%
 
 ---
 
 # AEM as a Cloud Service Release 2022.7.0 の移行ツールのリリースノート {#release-notes}
 
 このページでは、AEM as a Cloud Service 2022.7.0 の移行ツールのリリースノートの概要を説明しています。
+
+## ベストプラクティスアナライザー {#bpa-release}
+
+### リリース日 {#release-date-bpa}
+
+ベストプラクティスアナライザー v2.1.30 のリリース日は 2022 年 7 月 27 日です。
+
+### 新機能 {#what-is-new-bpa}
+
+* BPA は、移行可能な Lucene インデックスの合計サイズ（Total Lucene Index：除く）を検出し、報告できるようになりました `/oak:index/lucene` および `/oak:index/damAssetLucene`.
+* カスタム i18n 辞書の使用を検出してレポートするための新しいパターンが BPA に追加されました。 AEMas a Cloud Serviceでは Translator.html を使用できません。また、Cloud Manager CI/CD パイプラインを通じて、カスタム i18n 辞書を Git からデプロイする必要があります。
+
+### バグ修正 {#bug-fixes-bpa}
+
+* BPA は、コンテンツフラグメントの見つからない元のレンディションに関するレポートを作成していました。 コンテンツフラグメントにはレンディションがないので、コンテンツフラグメントではこのチェックがスキップされるようになりました。
+* ACS Commons の結果をフィルターするオプションが BPA UI に見つかりませんでした。 この問題が修正されました。
 
 ## コンテンツ転送ツール {#ctt-release}
 
@@ -44,4 +61,3 @@ Cloud Acceleration Manager のリリース日は 2022 年 7 月 15 日です。
 
 * Cloud Acceleration Manager で、自動取得に失敗した場合に取り込みを開始できるように、移行トークンを手動で取得できるようになりました。 顧客が CAM をブロックする IP 許可リストを設定している場合や、管理者以外のユーザーが取り込みを開始しようとすると、自動取り込みが失敗する場合があります。 参照： [トラブルシューティング](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) を参照してください。
 * 移行の複雑さページの長いテーブルが、使いやすく折りたたみ可能になりました。
-
