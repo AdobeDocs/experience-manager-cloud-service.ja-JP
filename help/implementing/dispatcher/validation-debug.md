@@ -3,10 +3,10 @@ title: Dispatcher ツールを使用した検証とデバッグ
 description: Dispatcher ツールを使用した検証とデバッグ
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 4dff6bf09fe9337c70adb654d3eff27f5b45f518
+source-git-commit: d90a279840d85437efc7db40c68ea66da8fe2d90
 workflow-type: tm+mt
-source-wordcount: '2512'
-ht-degree: 100%
+source-wordcount: '2536'
+ht-degree: 99%
 
 ---
 
@@ -78,6 +78,10 @@ ht-degree: 100%
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
 これらのファイルは 1 つ以上持つことができます。ファイルには、ホスト名に一致する `<VirtualHost>` エントリが含まれ、Apache が異なるルールで各ドメイントラフィックを扱うことができます。ファイルは `available_vhosts` ディレクトリ内に作成され、`enabled_vhosts` ディレクトリ内のシンボリックリンクで有効になります。`.vhost` ファイルから、書き換えや変数などその他のファイルがインクルードされます。
+
+>[!NOTE]
+>
+>フレキシブルモードでは、絶対パスの代わりに相対パスを使用する必要があります。
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -479,11 +483,15 @@ $ docker exec d75fbd23b29 httpd-test
 Cloud Manager 2021.7.0 リリースでは、新しい Cloud Manager プログラムは、[AEM アーキタイプ 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) 以降を使用した Maven プロジェクト構造を生成します。これには **opt-in/USE_SOURCES_DIRECTLY** ファイルが含まれています。これにより、ファイルの数とサイズに関する[レガシーモード](/help/implementing/dispatcher/validation-debug-legacy.md)の以前の制限事項がなくなるので、SDK とランタイムによる設定の検証とデプロイも改善されます。Dispatcher 設定にこのファイルがない場合は、移行することを強くお勧めします。安全な移行を確実に行うには、次の手順に従います。
 
 1. **ローカルテスト：**&#x200B;最新の Dispatcher ツール SDK を使用して、フォルダーおよびファイル `opt-in/USE_SOURCES_DIRECTLY` を追加します。この記事の「ローカル検証」の手順に従って、Dispatcher がローカルで動作するかどうかをテストします。
-2. **クラウド開発テスト：**
+1. **クラウド開発テスト：**
    * 実稼動以外のパイプラインでクラウドの開発環境にデプロイされたファイル `opt-in/USE_SOURCES_DIRECTLY` を Git ブランチにコミットします。
    * Cloud Manager を使用して、クラウド開発環境にデプロイします。
    * 十分にテストします。変更内容を上位の環境にデプロイする前に、Apache および Dispatcher 設定が想定どおりに動作することを検証することが不可欠です。カスタム設定に関係するすべての動作を確認します。デプロイした Dispatcher 設定がカスタム設定を反映していないと思われる場合は、カスタマーサポートチケットを提出します。
-3. **実稼動へのデプロイ：**
+
+   >[!NOTE]
+   >
+   >フレキシブルモードでは、絶対パスの代わりに相対パスを使用する必要があります。
+1. **実稼動へのデプロイ：**
    * 実稼動パイプラインでクラウドのステージング環境および実稼動環境にデプロイされたファイル `opt-in/USE_SOURCES_DIRECTLY` を Git ブランチにコミットします。
    * Cloud Manager を使用してステージング環境にデプロイします。
    * 十分にテストします。変更内容を上位の環境にデプロイする前に、Apache および Dispatcher 設定が想定どおりに動作することを検証することが不可欠です。カスタム設定に関係するすべての動作を確認します。デプロイした Dispatcher 設定がカスタム設定を反映していないと思われる場合は、カスタマーサポートチケットを提出します。
