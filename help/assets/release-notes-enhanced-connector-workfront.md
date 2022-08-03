@@ -2,10 +2,10 @@
 title: リリースノート（） [!DNL Workfront for Experience Manager enhanced connector]
 description: リリースノート（） [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: d763bacb0844a438ebea6ef206dfa184a49993fe
+source-git-commit: f49ac67b7a90d638e266b9f7f5bf5ac9d7f78e3a
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 3%
+source-wordcount: '441'
+ht-degree: 2%
 
 ---
 
@@ -15,23 +15,19 @@ ht-degree: 3%
 
 ## リリース日 {#release-date}
 
-の最新バージョン 1.9.1 のリリース日 [!DNL Workfront for Experience Manager enhanced connector] は 2022 年 7 月 1 日です。
+の最新バージョン 1.9.2 のリリース日 [!DNL Workfront for Experience Manager enhanced connector] は 2022 年 8 月 3 日です。
 
 ## 新機能ハイライト {#release-highlights}
 
 の最新バージョン [!DNL Workfront for Experience Manager enhanced connector] には、次の機能強化とバグ修正が含まれています。
 
-* Adobe IMSに移行されたインスタンスにWorkfront API キーを使用した、Experience ManagerとWorkfrontアプリケーション間の認証のサポートを追加しました。
+* この **[!UICONTROL ドキュメントをアップロード]** ワークフローステップで、ドキュメントをWorkfrontに添付できません。
 
-* 外部のファイルまたはフォルダーをリンクすると、Workfrontアプリケーションに `SERVER_ERROR` エラーメッセージ。 エラーメッセージは、API キーの不一致が原因で未認証の例外を示しています。
-
-* アセットに対してタスクを作成ワークフローを実行すると、ログメッセージに Null Pointer 例外が表示されます。
-
-* 次を有効にした場合、 `Replace Spaces with DASH` 「Experience Managerの詳細設定」の「設定」オプションを使用すると、Workfrontでフォルダーが重複して作成されます。
+* この **[!UICONTROL ドキュメントをアップロード]** ワークフローステップで、Workfrontのタスクと問題にドキュメントを添付できません。 ワークフローステップは、ドキュメントをプロジェクトに正常に添付します。
 
 >[!IMPORTANT]
 >
->Adobeが推奨する [最新バージョン 1.9.1 にアップグレード](../assets/update-workfront-enhanced-connector.md) の [!DNL Workfront for Experience Manager enhanced connector].
+>Adobeが推奨する [最新バージョン 1.9.2 にアップグレード](../assets/update-workfront-enhanced-connector.md) の [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 既知の問題 {#known-issues}
 
@@ -40,6 +36,18 @@ ht-degree: 3%
 * 従来のWorkfrontエクスペリエンスを使用している場合、 **[!UICONTROL 送信先]** オプションは **[!UICONTROL 詳細]** ドロップダウンリストでは、「Experience Manager」内でターゲットの宛先を選択できません。 この **[!UICONTROL 送信先]** オプションは **[!UICONTROL ドキュメントアクション]** ドロップダウンリスト。 この **[!UICONTROL 送信先]** オプションは、 **[!UICONTROL 詳細]** ドロップダウンリスト **[!UICONTROL ドキュメントアクション]** 新しいWorkfrontエクスペリエンスで使用できるドロップダウンリスト。
 
 ## 以前のリリース {#previous-releases}
+
+### 2022 年 7 月リリース {#july-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] バージョン 1.9.1 には、次の更新が含まれています。
+
+* Adobe IMSに移行されたインスタンスにWorkfront API キーを使用した、Experience ManagerとWorkfrontアプリケーション間の認証のサポートを追加しました。
+
+* 外部のファイルまたはフォルダーをリンクすると、Workfrontアプリケーションに `SERVER_ERROR` エラーメッセージ。 エラーメッセージは、API キーの不一致が原因で未認証の例外を示しています。
+
+* アセットに対してタスクを作成ワークフローを実行すると、ログメッセージに Null Pointer 例外が表示されます。
+
+* 次を有効にした場合、 `Replace Spaces with DASH` 「Experience Managerの詳細設定」の「設定」オプションを使用すると、Workfrontでフォルダーが重複して作成されます。
 
 ### 2022 年 6 月リリース {#june-2022-release}
 
