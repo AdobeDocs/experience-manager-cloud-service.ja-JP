@@ -1,11 +1,11 @@
 ---
 title: AEMas a Cloud Serviceオンボーディングジャーニーの概要
-description: AEM as a Cloud Serviceのオンボーディングプロセスのガイド付きジャーニーの概要については、ここから始めてください。
+description: AEM as a Cloud Service のオンボーディングプロセスのガイド付きジャーニーの概要については、ここから始めてください。
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1175'
+ht-degree: 25%
 
 ---
 

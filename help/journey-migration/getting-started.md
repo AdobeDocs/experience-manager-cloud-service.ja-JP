@@ -4,8 +4,8 @@ description: AEM as a Cloud Service への移行の基本事項を把握して�
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '587'
+ht-degree: 93%
 
 ---
 
