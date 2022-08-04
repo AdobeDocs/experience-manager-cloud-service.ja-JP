@@ -4,10 +4,10 @@ description: AEM で機械翻訳と人間による翻訳の両方のプロジェ
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 154fb4bf9bea187a2f733c35cc720f3da99755bb
+source-git-commit: 998b71903f3ea0c3c1082ecc800331811c2af8cf
 workflow-type: tm+mt
-source-wordcount: '3920'
-ht-degree: 98%
+source-wordcount: '3992'
+ht-degree: 95%
 
 ---
 
@@ -170,19 +170,27 @@ AEM では、翻訳プロジェクトがコンテンツの初期翻訳用に作�
 
 ### 翻訳メモリの更新 {#updating-translation-memory}
 
-翻訳済みコンテンツを手動で編集すると、翻訳管理システム（TMS）に同期し直され、翻訳メモリに反映されます。
+翻訳されたコンテンツの手動編集を翻訳管理システム (TMS) に同期して、翻訳メモリをトレーニングすることができます。
 
 1. サイトコンソールから、翻訳済みページのテキストコンテンツを更新した後、「**翻訳メモリを更新**」を選択します。
 1. リストビューでは、編集されたすべてのテキストコンポーネントについて、ソースと翻訳が横に並んで比較表示されます。翻訳メモリに同期する必要がある翻訳の更新を選択して、「**メモリを更新**」を選択します。
 
 ![翻訳メモリの変更内容の比較](../assets/update-translation-memory-compare.png)
 
-AEM は、選択された文字列を翻訳管理システムに送信します。
+AEMは、設定済みの TMS の翻訳メモリ内の既存の文字列の翻訳を更新します。
 
-* このアクションにより、設定済みの翻訳管理システム (TMS) の翻訳メモリ内の既存の文字列の翻訳が更新されます。
+* このアクションは、設定済みの TMS の翻訳メモリ内の既存の文字列の翻訳を更新します。
 * 新しい翻訳ジョブは作成されません。
-* 文字列の値のペアとその翻訳を、AEM翻訳 API を介して TMS に返します。
-* この機能を使用するには、AEMで使用する翻訳管理システムが設定されている必要があります。
+* AEM翻訳 API を介して、翻訳を TMS に返します（以下を参照）。
+
+この機能を使用するには：
+
+* AEMで使用する TMS を設定する必要があります。
+* コネクタは、メソッドを実装する必要があります [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
+   * このメソッド内のコードは、翻訳メモリの更新リクエストの処理を決定します。
+   * AEM翻訳フレームワークは、この方法の実装を通じて、文字列の値のペア（元の翻訳と更新された翻訳）を TMS に返します。
+
+専用の翻訳メモリが使用されている場合、翻訳メモリの更新を傍受し、カスタムの宛先に送信できます。
 
 ### ページの翻訳ステータスの確認 {#check-translation-status}
 
