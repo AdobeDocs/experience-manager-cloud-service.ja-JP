@@ -3,10 +3,10 @@ title: AEM ヘッドレスデベロッパージャーニー
 description: 'ヘッドレスコンテンツ管理システム (CMS) として使用されている場合は、Adobe Experience Manager(AEM)as a Cloud Serviceのガイド付きジャーニーをここから開始してください。 強力で柔軟なヘッドレス機能、その機能、初めてのヘッドレス開発プロジェクトでの活用方法について説明します。 このジャーニーでは、最初のヘッドレスアプリケーションの開発に必要なすべての情報を提供します。 '
 landing-page-description: 'ヘッドレスコンテンツの配信と実装について理解します。 ビジネス内で戦略を策定する方法の詳細をご覧ください。 '
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 2ec6b29800867462bbc2e88048c583d4e5eefa57
+source-git-commit: 1424c604e175cce0728f49f548d0bebec76043f4
 workflow-type: tm+mt
-source-wordcount: '1301'
-ht-degree: 85%
+source-wordcount: '1300'
+ht-degree: 84%
 
 ---
 
@@ -49,7 +49,7 @@ AEM を使用してヘッドレスビジネスケースを解決する方法を�
 | 管理者 | AEM の基本セットアップと設定を管理します。 | 開発者は管理者と協力して、開発に必要な設定変更を行います。 |
 | コンテンツアーキテクト | ヘッドレスで配信する必要があるデータの要件を分析し、そのデータの構造を定義します。 | 開発者はコンテンツアーキテクトと協力して、データの構造と、データをヘッドレスに配信するための要件を把握します。 |
 
-このジャーニーの情報は、もちろんすべてのペルソナにとって役に立ちますが、特定の役割には必要ない情報も一部あります。[その他の役割に対応するジャーニーが今後公開](/help/journey-documentation/documentation-journeys.md#journeys)され次第、随時お知らせします。
+このジャーニーの情報は、すべてのペルソナに役立つ場合がありますが、一部の情報は特定の役割に必要でない場合があります。 [その他の役割に対応するジャーニーが今後公開](/help/journey-documentation/documentation-journeys.md#journeys)され次第、随時お知らせします。
 
 ## ヘッドレスデベロッパージャーニー {#the-journey}
 
