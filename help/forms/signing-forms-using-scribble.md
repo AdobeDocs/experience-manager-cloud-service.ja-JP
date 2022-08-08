@@ -9,13 +9,13 @@ topic-tags: author
 discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 73953a3d71f3328def3bd4c1f03516b4839695ea
-workflow-type: tm+mt
+exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
+source-git-commit: f70ad78b70699007aaa08ea71e9032c358cf4038
+workflow-type: ht
 source-wordcount: '497'
 ht-degree: 100%
 
 ---
-
 
 # 手書き署名を使用したフォームへの電子サインの適用 {#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
@@ -71,4 +71,3 @@ ht-degree: 100%
    ![署名プロセスの完了](assets/scribblecomplete.jpg)
 
 署名がフォームに追加され、フォームコントロールが次のパネルに移動します。
-
