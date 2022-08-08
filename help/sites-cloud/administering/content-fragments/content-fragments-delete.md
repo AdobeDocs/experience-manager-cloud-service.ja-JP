@@ -1,8 +1,9 @@
 ---
 title: コンテンツフラグメント - 削除に関する考慮事項
 description: AEM でコンテンツフラグメント削除ポリシーを定義する前に、以下の重要な考慮事項を確認してください。コンテンツフラグメントはヘッドレスコンテンツを配信する強力なツールです。削除する際は、影響を慎重に考慮する必要があります。
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
-workflow-type: tm+mt
+exl-id: f6698dd8-3e2a-44ac-b00f-df578aa85ffe
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+workflow-type: ht
 source-wordcount: '470'
 ht-degree: 100%
 
