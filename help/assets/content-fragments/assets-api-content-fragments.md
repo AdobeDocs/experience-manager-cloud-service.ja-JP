@@ -4,8 +4,8 @@ description: AEM ヘッドレス配信機能の重要な部分である、Assets
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 source-git-commit: cf8c8353d83e4446f52235a2ea1a322a84786b61
-workflow-type: tm+mt
-source-wordcount: '1761'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
