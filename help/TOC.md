@@ -8,10 +8,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service の概要に
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5de4f8642d6dfae2697bd2fc18b8b9845b883e18
+source-git-commit: cab630838f5cce3c2a2749c61b0aa7504dc403f7
 workflow-type: tm+mt
-source-wordcount: '3698'
-ht-degree: 91%
+source-wordcount: '3697'
+ht-degree: 95%
 
 ---
 
@@ -109,8 +109,8 @@ ht-degree: 91%
          + [リリースノート（2021.12.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [リリースノート（2021.11.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [リリースノート（2021.10.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
-   + Workfront向けリリースノート (Experience Manager拡張コネクタ ){#workfront}
-      + [Experience Manager拡張コネクタに関するWorkfrontの最新のリリースノート](/help/assets/release-notes-enhanced-connector-workfront.md)
+   + Workfront for Experience Manager 拡張コネクタのリリースノート{#workfront}
+      + [Workfront for Experience Manager 拡張コネクタの最新リリースノート](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [新機能](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service の主要な変更点](/help/release-notes/aem-cloud-changes.md)
    + [既知の問題](/help/release-notes/known-issues.md)
@@ -185,7 +185,7 @@ ht-degree: 91%
             + [概要](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
             + [重要な検討事項](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
             + [ユーザーマッピングツールの使用](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
-         + レガシーコンテンツ転送ツール {#legacy}
+         + コンテンツ転送ツール（レガシー） {#legacy}
             + [概要](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
             + [コンテンツ転送ツールの前提条件](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
             + [コンテンツ転送ツール使用のガイドラインとベストプラクティス](/help/journey-migration/content-transfer-tool/ctt-legacy/guidelines-best-practices-content-transfer-tool-legacy.md)
@@ -273,6 +273,9 @@ ht-degree: 91%
          + [セグメント化について](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [ContextHub でのセグメント化の設定](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [登録、ログイン、ユーザープロファイル](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
+      + Campaign {#campaign}
+         + 
+            + [AEMでのニュースレターの作成](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
    + 管理 {#administering}
       + コンテンツフラグメント {#content-fragments}
          + [コンテンツフラグメントの操作](/help/sites-cloud/administering/content-fragments/content-fragments.md)
@@ -300,7 +303,7 @@ ht-degree: 91%
             + [テンプレートからサイトを作成](/help/journey-sites/quick-site/create-site.md)
             + [パイプラインの設定](/help/journey-sites/quick-site/pipeline-setup.md)
             + [フロントエンド開発者へのアクセス権の付与](/help/journey-sites/quick-site/grant-access.md)
-            + [Git リポジトリのアクセス情報の取得](/help/journey-sites/quick-site/retrieve-access.md)
+            + [Git リポジトリーのアクセス情報の取得](/help/journey-sites/quick-site/retrieve-access.md)
             + [サイトテーマのカスタマイズ](/help/journey-sites/quick-site/customize-theme.md)
             + [カスタマイズしたテーマのデプロイ](/help/journey-sites/quick-site/deploy-theme.md)
       + [ワークフローの管理](/help/sites-cloud/administering/workflows-administering.md)
@@ -335,12 +338,11 @@ ht-degree: 91%
    + AEM as a Cloud Service との統合 {#integrations}
       + [Adobe Analytics との統合](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Adobe Analytics との統合自動セットアップ](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
-      + [Adobe Analyticsとの統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
+      + [Adobe Analytics との統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Adobe Target との統合](/help/sites-cloud/integrating/integrating-adobe-target.md)
-      + [Adobe Targetとの統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
+      + [Adobe Target との統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [エクスペリエンスフラグメントの Adobe Target へのエクスポート](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign Classic との統合](/help/sites-cloud/integrating/integrating-campaign-classic.md)
-      + [Adobe Experience Managerニュースレターの作成](/help/sites-cloud/integrating/creating-newsletter.md)
 + アセット {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [概要と新機能](/help/assets/overview.md)
@@ -383,7 +385,7 @@ ht-degree: 91%
       + [開発者向けドキュメントと API リファレンス](/help/assets/developer-reference-material-apis.md)
       + [フォルダーメタデータスキーマ](/help/assets/folder-metadata-schema.md)
       + [イメージプロファイルとビデオプロファイルの操作](/help/assets/dynamic-media/about-image-video-profiles.md)
-      + [オーディオおよびビデオアセットの転写の設定](/help/assets/configure-transcription.md)
+      + [オーディオおよびビデオアセットのトランスクリプションの設定](/help/assets/configure-transcription.md)
       + [多言語アセットと翻訳](/help/assets/translate-assets.md)
       + [検索ファセット](/help/assets/search-facets.md)
       + [Assets HTTP API](/help/assets/mac-api-assets.md)
@@ -413,9 +415,9 @@ ht-degree: 91%
       + [構造ツリー](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [プレビュー - JSON 表現](/help/assets/content-fragments/content-fragments-json-preview.md)
    + Dynamic Media {#dynamicmedia}
-      + Dynamic Mediaジャーニー:基本 {#dm-journey}
-         + [第 1 部：Dynamic Mediaとは — 使用例 — アセットがシステム内をどのようにフローするか](/help/assets/dynamic-media/dm-journey-part1.md)
-         + [第 2 部：Dynamic Media URL の解剖学 — 画像プリセットの基本 — 画像セット、スピンセットおよび混在メディアセットについて](/help/assets/dynamic-media/dm-journey-part2.md)
+      + Dynamic Media ジャーニー：基本知識 {#dm-journey}
+         + [第 1 部：Dynamic Media とは - ユースケース - システム内でのアセットのフロー](/help/assets/dynamic-media/dm-journey-part1.md)
+         + [第 2 部：Dynamic Media URL の分解 - 画像プリセットの基本 - 画像セット、スピンセットおよび混在メディアセットについて](/help/assets/dynamic-media/dm-journey-part2.md)
       + [Experience League 提供の Dynamic Media ニュースレターアーカイブ](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Dynamic Media をセットアップする](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Dynamic Media を使用する](/help/assets/dynamic-media/dynamic-media.md)
@@ -437,7 +439,7 @@ ht-degree: 91%
       + [Dynamic Media を使用して CDN キャッシュを無効化する](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [Dynamic Media Classic を使用して CDN キャッシュを無効化する](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
       + [スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)
-      + [クライアントサイドデバイスのピクセル比によるスマートイメージング](/help/assets/dynamic-media/client-side-dpr.md)
+      + [クライアントサイドのデバイスピクセル比（DPR）を使用したスマートイメージング](/help/assets/dynamic-media/client-side-dpr.md)
       + [Dynamic Media アセットを配信する](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Dynamic Media でホットリンク保護を有効化する](/help/assets/dynamic-media/hotlink-protection.md)
       + [3D サポート](/help/assets/dynamic-media/assets-3d.md)
@@ -538,7 +540,7 @@ ht-degree: 91%
    + [DocuSign との統合](/help/forms/integrate-docusign-adaptive-forms.md)
    + [Sites との統合](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
    + [Adobe Analytics との統合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-   + [アダプティブフォームとMicrosoft Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)
+   + [アダプティブフォームと Microsoft Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)
    + ワークフローの作成と使用 {#create-form-centric-workflows}
       + [ワークフローでの Forms 中心のステップの使用 + ステップリファレンス](/help/forms/aem-forms-workflow-step-reference.md)
       + [Forms 中心のワークフローでの変数の使用](/help/forms/variable-in-aem-workflows.md)
@@ -712,10 +714,10 @@ ht-degree: 91%
       + [環境の管理](/help/implementing/cloud-manager/manage-environments.md)
       + コードの管理 {#managing-code}
          + [Maven プロジェクトバージョンの処理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-         + [Cloud Manager のリポジトリ](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
-         + [リポジトリへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+         + [Cloud Manager のリポジトリー](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+         + [リポジトリーへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Cloud Manager での git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
-         + [複数のリポジトリの使用](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+         + [複数のリポジトリーの使用](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [エンタープライズ開発チームのセットアップ](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
       + [環境変数](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI／CD パイプライン {#cicd-pipelines}
@@ -750,13 +752,13 @@ ht-degree: 91%
       + IP 許可リスト {#ip-allow-lists}
          + [はじめに](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [IP 許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-         + [IP許可リストの適用と適用解除](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+         + [IP 許可リストの適用と適用解除](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [IP 許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [ライセンスダッシュボード](/help/implementing/cloud-manager/license-dashboard.md)
-      + [Cloud Manager FAQ](/help/implementing/cloud-manager/faqs.md)
+      + [Cloud Manager に関する FAQ](/help/implementing/cloud-manager/faqs.md)
    + AEM as a Cloud Service 向けの開発 {#developing}
       + [AEM プロジェクトの構造](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
-      + [AEM プロジェクトリポジトリの構造パッケージ](/help/implementing/developing/introduction/repository-structure-package.md)
+      + [AEM プロジェクトリポジトリーの構造パッケージ](/help/implementing/developing/introduction/repository-structure-package.md)
       + [AEM as a Cloud Service の SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
       + [AEM as a Cloud Service の開発ガイドライン](/help/implementing/developing/introduction/development-guidelines.md)
       + [ログ](/help/implementing/developing/introduction/logging.md)
@@ -828,7 +830,7 @@ ht-degree: 91%
       + [CRXDE Lite の使用](/help/implementing/developing/tools/crxde.md)
       + [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)
       + [Link Externalizer](/help/implementing/developing/tools/externalizer.md)
-      + [リポジトリブラウザー](/help/implementing/developing/tools/repository-browser.md)
+      + [リポジトリーブラウザー](/help/implementing/developing/tools/repository-browser.md)
    + パーソナライズ機能 {#personalization}
       + [ContextHub](/help/implementing/developing/personalization/contexthub.md)
       + [ContextHub の設定](/help/implementing/developing/personalization/configuring-contexthub.md)
