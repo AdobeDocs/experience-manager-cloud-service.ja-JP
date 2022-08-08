@@ -4,9 +4,9 @@ description: ヘッドレスコンテンツ配信用に Adobe Experience Manager
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '515'
+ht-degree: 100%
 
 ---
 
