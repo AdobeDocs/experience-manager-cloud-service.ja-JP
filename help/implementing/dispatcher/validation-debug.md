@@ -3,10 +3,10 @@ title: Dispatcher ツールを使用した検証とデバッグ
 description: Dispatcher ツールを使用した検証とデバッグ
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: d90a279840d85437efc7db40c68ea66da8fe2d90
+source-git-commit: 6f80c6d32d3eca1b0ef2977c740ef043529fab96
 workflow-type: tm+mt
-source-wordcount: '2536'
-ht-degree: 99%
+source-wordcount: '2653'
+ht-degree: 94%
 
 ---
 
@@ -229,6 +229,10 @@ Phase 3 finished
 
 Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも実行され、エラーは Cloud Manager の `Build Images step failure` ログに記録されます。
 
+>[!NOTE]
+>
+>詳しくは、 [自動読み込みと検証](#automatic-loading) 実行に代わる効率的なセクション `validate.sh` 設定を変更するたびに、
+
 ### フェーズ 1 {#first-phase}
 
 ディレクティブが許可リストに登録されていない場合、ツールはエラーをログに記録し、ゼロ以外の終了コードを返します。また、`conf.dispatcher.d/enabled_farms/*.farm` のパターンに合うすべてのファイルをさらにスキャンし、次の内容を確認します。
@@ -416,6 +420,42 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 Dispatcher をローカルで実行すると、ログが端末に直接出力されます。ほとんどの場合、これらのログは DEBUG モードで出力すべきもので、それには、Docker の実行時にデバッグレベルをパラメーターとして渡します。（例：`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`）。
 
 クラウド環境のログは、Cloud Manager で利用可能なログサービスを通じて公開されます。
+
+### 自動読み込みと検証 {#automatic-loading}
+
+>[!NOTE]
+>
+>Windows オペレーティングシステムの制限により、この機能は Linux ユーザーに対してのみ利用できます。
+
+ローカル検証 (`validate.sh`) を開始し、docker コンテナ (`docker_run.sh`) を変更するたびに、 `docker_run_hot_reload.sh` スクリプト  スクリプトは、設定に対する変更を監視し、自動的に再読み込みして検証を再実行します。 このオプションを使用すると、デバッグ時にかなりの時間を節約できます。
+
+次のコマンドを使用して、スクリプトを実行できます。 `./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
+
+出力の最初の行は、 `docker_run.sh`例：
+
+```
+~ bin/docker_run_hot_reload.sh src host.docker.internal:8081 8082
+opt-in USE_SOURCES_DIRECTLY marker file detected
+Running script /docker_entrypoint.d/10-check-environment.sh
+Running script /docker_entrypoint.d/15-check-pod-name.sh
+Running script /docker_entrypoint.d/20-create-docroots.sh
+Running script /docker_entrypoint.d/30-wait-for-backend.sh
+Waiting until host.docker.internal is available
+host.docker.internal resolves to 192.168.65.2
+Running script /docker_entrypoint.d/40-generate-allowed-clients.sh
+Running script /docker_entrypoint.d/50-check-expiration.sh
+Running script /docker_entrypoint.d/60-check-loglevel.sh
+Running script /docker_entrypoint.d/70-check-forwarded-host-secret.sh
+Running script /docker_entrypoint.d/80-frontend-domain.sh
+Running script /docker_entrypoint.d/zzz-import-sdk-config.sh
+WARN Mon Jul  4 09:53:54 UTC 2022: Pseudo symlink conf.d seems to point to a non-existing file!
+INFO Mon Jul  4 09:53:55 UTC 2022: Copied customer configuration to /etc/httpd.
+INFO Mon Jul  4 09:53:55 UTC 2022: Start testing
+Cloud manager validator 2.0.43
+2022/07/04 09:53:55 No issues found
+INFO Mon Jul  4 09:53:55 UTC 2022: Testing with fresh base configuration files.
+INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apache/2.4.54 (Unix)
+```
 
 ## 環境ごとに異なる Dispatcher 設定 {#different-dispatcher-configurations-per-environment}
 
