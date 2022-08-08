@@ -6,8 +6,8 @@ role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
-source-wordcount: '1522'
-ht-degree: 91%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,7 @@ AEM を翻訳サービスプロバイダーに接続するためのクラウド�
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
 * [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
-* [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html)
+* [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html?lang=ja)
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 
@@ -67,7 +67,7 @@ Web サイトのセクションごとに翻訳要件が異なる場合は、そ�
 >
 >AEM のコンテンツ翻訳機能の概要については、[多言語サイトのコンテンツの翻訳](overview.md)を参照してください。
 
-フレームワークの単一の設定によって、ページコンテンツとアセットの翻訳方法が制御されます。 新しい翻訳設定を作成するには：
+フレームワークの単一の設定によって、ページコンテンツとアセットの翻訳方法が制御されます。新しい翻訳設定を作成するには：
 
 1. [グローバルナビゲーションメニュー](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)で、**ツール／Cloud Services／Translation Cloud Services** をクリックまたはタップします。
 1. コンテンツ構造内で設定を作成する場所に移動します。この場所は多くの場合、特定のサイトに基づいている場合もあれば、グローバルな場合もあります。
@@ -81,7 +81,7 @@ Web サイトのセクションごとに翻訳要件が異なる場合は、そ�
 
 「**Sites** 」タブは、ページのコンテンツの翻訳を実行する方法を制御します。
 
-![サイトの翻訳設定](../assets/translation-configuration.png)
+![Sites の翻訳設定](../assets/translation-configuration.png)
 
 | プロパティ | 説明 |
 |---|---|
@@ -97,7 +97,7 @@ Web サイトのセクションごとに翻訳要件が異なる場合は、そ�
 
 アセットのプロパティは、アセットを設定する方法を制御します。アセットの翻訳について詳しくは、[アセット用の言語コピーの作成](/help/assets/translate-assets.md)を参照してください。
 
-![サイトの翻訳設定](../assets/translation-configuration-assets.png)
+![Sites の翻訳設定](../assets/translation-configuration-assets.png)
 
 | プロパティ | 説明 |
 |---|---|
@@ -109,7 +109,7 @@ Web サイトのセクションごとに翻訳要件が異なる場合は、そ�
 | タグを翻訳 | アセットに関連付けられているタグを翻訳する場合は、このプロパティをアクティブにします。 |
 | 翻訳を自動実行 | 翻訳プロジェクトの作成後に翻訳ジョブを自動的に実行する場合、このプロパティを選択します。このオプションを選択すると、翻訳ジョブのレビューやスコーピングを行う機会はなくなります。 |
 | 更新のみの翻訳を無効にする | このオプションをオンにすると、翻訳プロジェクトを更新すると、前回の翻訳以降に変更されたフィールドだけでなく、翻訳用のすべての翻訳可能なフィールドが送信されます。 |
-| 翻訳するコンテンツモデルフィールドの有効化 | このオプションを有効にすると、 **翻訳可能** ～に関して [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) フィールドが翻訳され、自動的にが作成されるかどうかを判断するには、次の手順を実行します。 [翻訳ルール](rules.md) 従って このオプションは、作成済みの翻訳ルールより優先されます。 |
+| 翻訳用にコンテンツモデルフィールドを有効にする | このオプションを有効にすると、[コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)の&#x200B;**翻訳可能**&#x200B;フィールドを使用して、そのフィールドが翻訳されるかどうかを判断し、それに応じて自動的に[翻訳ルール](rules.md)を作成します。このオプションは、作成済みの翻訳ルールより優先されます。 |
 
 ## 翻訳するページの設定 {#configuring-pages-for-translation}
 

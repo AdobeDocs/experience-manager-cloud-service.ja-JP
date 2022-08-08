@@ -4,8 +4,8 @@ description: 相違点と新機能 - Adobe Experience Manager（AEM）as a Cloud
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '1904'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 95%
 * [オンボーディング](#onboarding)
 * [開発](#developing)
 * [運用とパフォーマンス](#operations-and-performance)
-* [ID 管理](#identity-management)
+* [Identity Management](#identity-management)
 * [オーサリングユーザーインターフェイス](#authoring-user-interface)
 * [AEM Sites](#aem-sites)
 * [AEM Assets](#aem-assets)
@@ -171,7 +171,7 @@ AEM as a Cloud Service をサポートする新しいアーキテクチャには
 
 このプロセスは一般にクラウドファースト開発と呼ばれます。所要時間は全体で数 10 分（アプリケーションの複雑さに応じて 20～50 分）と見込まれるので、保留中のコードや設定変更がクラウドで試行される前に、迅速な開発手法を採用する必要があります。
 
-OSGi バンドルとそれに関連する設定を管理する Web コンソール ( 以前はAEM QuickStart の一部 ) は、AEM as a Cloud Serviceでは使用できなくなりました。 新しい開発者コンソールには、ほとんどのランタイム情報に対する読み取り専用のインターフェイスが用意されています。 このコンソールを使用すると、開発者はオーサーサービスまたはパブリッシュサービスの特定のノードを直接選択してログインし、関連情報を表示できます。
+OSGi バンドルとその関連設定を管理する web コンソール（以前は AEM QuickStart の一部）は、AEM as a Cloud Service では使用できなくなりました。新しい Developer Console には、ほとんどのランタイム情報に対する読み取り専用のインターフェイスが用意されています。このコンソールを使用すると、開発者はオーサーサービスまたはパブリッシュサービスの特定のノードを直接選択してログインし、関連情報を閲覧できます。
 
 >[!NOTE]
 >
@@ -219,7 +219,7 @@ AEM as a Cloud Service では、サービスの中断が不要になるように
 
 AEM as a Cloud Service の運用も、監視、レポート、警告用の新しいインフラストラクチャでサポートされています。これにより、Adobe SRE（サイトリライアビリティエンジニア）はサービスの健全性をプロアクティブ（予見的）に維持できます。アーキテクチャの様々な要素に様々なヘルスチェックが備わっています。何らかの理由で、アーキテクチャの特定のノードが異常と見なされた場合、そのノードはサービスから削除され、ユーザーへの通知なしで新しい正常なノードに置き換えられます。
 
-## ID 管理 {#identity-management}
+## Identity Management {#identity-management}
 
 >[!NOTE]
 >

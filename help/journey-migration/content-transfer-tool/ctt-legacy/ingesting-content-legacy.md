@@ -1,17 +1,17 @@
 ---
-title: Target へのコンテンツの取り込み (レガシー)
+title: Target へのコンテンツの取り込み（レガシー）
 description: Target へのコンテンツの取り込み
 hide: true
 hidefromtoc: true
 exl-id: 326b3e98-5055-49b5-a005-63fd3ca35202
 source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Target へのコンテンツの取り込み (レガシー) {#ingesting-content}
+# Target へのコンテンツの取り込み（レガシー） {#ingesting-content}
 
 ## コンテンツ転送ツールの取り込みプロセス {#ingestion-process}
 
@@ -31,7 +31,7 @@ ht-degree: 100%
    >事前コピーを使用した取得を（S3 または Azure データストアに対して）使用する場合は、最初にオーサーの取得を単独で実行することをお勧めします。これにより、後で実行する際に、パブリッシュの取り込みが高速化されます。
 
    >[!IMPORTANT]
-   >「**取得前にクラウドインスタンス上の既存のコンテンツを消去**」オプションが有効な場合は、既存のリポジトリ全体が削除され、コンテンツの取り込み先となる新しいリポジトリが作成されます。つまり、ターゲットの Cloud Service インスタンスに対する権限を含むすべての設定がリセットされます。これは、**administrators** グループに追加された管理者ユーザーにも当てはまります。
+   >「**取得前にクラウドインスタンス上の既存のコンテンツを消去**」オプションが有効な場合は、既存のリポジトリー全体が削除され、コンテンツの取り込み先となる新しいリポジトリーが作成されます。つまり、ターゲットの Cloud Service インスタンスに対する権限を含むすべての設定がリセットされます。これは、**administrators** グループに追加された管理者ユーザーにも当てはまります。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-03.png)
 

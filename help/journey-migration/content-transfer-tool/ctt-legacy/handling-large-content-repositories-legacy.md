@@ -1,17 +1,17 @@
 ---
-title: 大規模なコンテンツリポジトリの処理（レガシー）
+title: 大規模なコンテンツリポジトリーの処理（レガシー）
 description: この節では、大規模なコンテンツリポジトリーの処理について説明します
 hide: true
 hidefromtoc: true
 exl-id: 19021f40-d0a5-4e0c-a213-c421338cedeb
 source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
-source-wordcount: '1638'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 大規模なコンテンツリポジトリーの処理 (レガシー) {#handling-large-content-repositories}
+# 大規模なコンテンツリポジトリーの処理（レガシー） {#handling-large-content-repositories}
 
 ## 概要 {#overview}
 
@@ -78,7 +78,7 @@ Azure ポータルのコンテナプロパティページで、「**サイズを
 #### ファイルデータストア {#file-data-store-determine-size}
 
 * Mac および UNIX システムの場合は、データストアディレクトリで du コマンドを実行してサイズを取得します。
-   `du -sh [path to datastore on the instance]`に従っていない場合に発生します。例えば、データストアが `/mnt/author/crx-quickstart/repository/datastore` にある場合は、次のコマンドでそのサイズを取得できます。`du -sh /mnt/author/crx-quickstart/repository/datastore`
+   `du -sh [path to datastore on the instance]` を使用して作成します。例えば、データストアが `/mnt/author/crx-quickstart/repository/datastore` にある場合は、次のコマンドでそのサイズを取得できます。`du -sh /mnt/author/crx-quickstart/repository/datastore`
 
 * Windows の場合は、データストアディレクトリで dir コマンドを使用してサイズを取得します。
    `dir /a/s [location of datastore]`

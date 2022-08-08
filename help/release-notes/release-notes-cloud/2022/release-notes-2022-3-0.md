@@ -4,8 +4,8 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 リ�
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
 source-git-commit: b71cd1394260c8ec14b661934199632987a034f6
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 56%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,18 +23,17 @@ ht-degree: 56%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在のリリース (2022.3.0) は 2022 年 3 月 31 日です。
-次回のリリース (2022.4.0) は、2022 年 5 月 6 日に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新リリース（2022.3.0）のリリース日は 2022年03月31日（PT）です。次回のリリース（2022.4.0）は 2022年5月5日（PT）に予定されています。
 
 ## リリースビデオ {#release-video}
 
-以下をご覧ください： [2022 年 3 月リリースの概要](https://video.tv.adobe.com/v/341465) 2022.3.0 リリースで追加された機能の概要を示すビデオです。
+2022.3.0 リリースで追加された機能の概要については、[2022年3月リリースの概要](https://video.tv.adobe.com/v/341465)ビデオをご覧ください。
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### [!DNL Sites] プレリリースチャネルで利用できる新機能 {#prerelease-features-sites}
 
-* コンテンツモデルのデータタイプを、コンテンツモデルエディターのシンプルなチェックボックスを使用して翻訳可能として定義できるようになりました。 さらに、AEMの翻訳ルールと設定は自動的に更新されます。
+* コンテンツモデルのデータ型が、コンテンツモデルエディターで簡単なチェックボックスを使用して翻訳可能として定義できるようになりました。さらに、AEM の翻訳ルールと設定は自動的に更新されます。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -44,44 +43,44 @@ ht-degree: 56%
 
 * [!DNL Experience Manager Assets] のユーザーインターフェイスを使用して以下を行えるようになりました。
 
-   * の設定 [重複アセットの検出](/help/assets/manage-digital-assets.md#detect-duplicate-assets) リポジトリ内にある。
+   * リポジトリー内の[重複アセットの検出](/help/assets/manage-digital-assets.md#detect-duplicate-assets)の設定。
 
-   * 設定 [デジタル透かしの追加](/help/assets/watermark-assets.md) を画像に追加します。
+   * [画像へのデジタル透かしの追加](/help/assets/watermark-assets.md)の設定。
 
 * 管理者は、大量のダウンロードに備えて電子メールサービスを設定できるようになりました。これにより、ユーザーは [!DNL Experience Manager Assets] インターフェイスから[大量ダウンロード時の電子メール通知を有効にする](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads)ことができます。ダウンロード処理の完了時に、アーカイブされた zip フォルダーのダウンロードリンクを記載した電子メール通知がユーザーに届きます。
 
-* [公開を管理](/help/assets/manage-publication.md)機能が強化され、ユーザーインターフェイスが改善されました。ユーザーは、選択した宛先にコンテンツを公開または選択した宛先からコンテンツを非公開にしたり、DAM リポジトリ全体から公開リストに[コンテンツを追加](/help/assets/manage-publication.md#add-content)したり、[フォルダー設定を含めて](/help/assets/manage-publication.md#include-folder-settings)選択したフォルダーのコンテンツを公開しフィルターを適用したり、後の日時に[公開をスケジュール](/help/assets/manage-publication.md#publish-assets-later)したりできます。
+* [公開を管理](/help/assets/manage-publication.md)機能が強化され、ユーザーインターフェイスが改善されました。ユーザーは、選択した宛先にコンテンツを公開または選択した宛先からコンテンツを非公開にしたり、DAM リポジトリー全体から公開リストに[コンテンツを追加](/help/assets/manage-publication.md#add-content)したり、[フォルダー設定を含めて](/help/assets/manage-publication.md#include-folder-settings)選択したフォルダーのコンテンツを公開しフィルターを適用したり、後の日時に[公開をスケジュール](/help/assets/manage-publication.md#publish-assets-later)したりできます。
 
 ### [!DNL Assets] プレリリースチャネルで利用できる新機能 {#prerelease-features-assets}
 
-* 次の操作を実行できます。 [タグを並べ替え](/help/assets/organize-assets.md#use-tags-to-organize-assets) タグ名、作成日または変更日に基づいて昇順または降順でタグピッカーウィンドウを表示します。
+* タグピッカーウィンドウで、タグ名、作成日、変更日を基準に、[タグの並べ替え](/help/assets/organize-assets.md#use-tags-to-organize-assets)を昇順または降順に実行できるようになりました。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms}
 
-* **[!DNL Communications - Document Generation APIs]**: [ドキュメント生成 API](/help/forms/aem-forms-cloud-service-communications.md) ヘルプ：PDFドキュメントの組み合わせ、並べ替え、検証に役立ちます。 このサービスを使用すると、同期モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
+* **[!DNL Communications - Document Generation APIs]**：[ドキュメント生成 API](/help/forms/aem-forms-cloud-service-communications.md) は、PDF ドキュメントの結合、並べ替えおよび検証に役立ちます。このサービスを使用すると、同期モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
 
    * PDF ドキュメントのアセンブリ.
    * PDF ドキュメントのディスアセンブリ.
    * PDF/A 準拠ドキュメントへの変換と PDF/A 準拠ドキュメントの検証.
 
-* **15 ページを超えるPDF formsをアダプティブフォームに自動的に変換する**:automated forms conversionサービスを使用して、最大 40 ページのPDF formsをアダプティブフォームに変換できるようになりました。 変換サービスで、15 ページを超えるフォームの一部をアダプティブフォームフラグメントに変換するオプションが追加されました。 これにより、変換後のフォームのレンダリング速度が向上し、アダプティブフォームエディターで大きなフォームを簡単に読み込むことができるようになります。
+* **15 ページを超える PDF フォームのアダプティブフォームへの自動変換**：自動フォーム変換サービスを使用して、最大 40 ページの PDF フォームをアダプティブフォームに変換できるようになりました。変換サービスで、15 ページを超えるフォームの一部をアダプティブフォームフラグメントに変換するオプションが追加されました。これにより、変換後のフォームのレンダリング速度が向上し、アダプティブフォームエディターで大きなフォームを簡単に読み込むことができるようになります。
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms}
 
-* **レコードのドキュメントの生成にカスタム XCI を使用**:カスタム XCI ファイルを使用して、レコードのドキュメントの様々なプロパティを設定できるようになりました。 カスタムの変更でマスター XCI を上書きします。
+* **レコードのドキュメントの生成にカスタム XCI を使用**：レコードのドキュメントの様々なプロパティを設定するために、カスタム XCI ファイルを使用できるようになりました。カスタムの変更でマスター XCI を上書きします。
 
-* **アダプティブフォーム内で非表示の CAPTCHA を使用する**:CAPTCHA チャレンジを表示するには、不審なアクティビティが発生した場合にのみ、非表示の CAPTCHA を使用できます。 疑わしいアクティビティが見つからない場合は、CAPTCHA チャレンジは表示されません。
+* **アダプティブフォーム内で非表示の CAPTCHA を使用**：非表示の CAPTCHA を使用して、疑わしいアクティビティの場合にのみ CAPTCHA チャレンジを表示させることができます。疑わしいアクティビティが検出されない場合、CAPTCHA チャレンジは表示されません。
 
 ## CIF アドオン {#cloud-services-cif}
 
 ### 新機能 {#what-is-new-cif}
 
-* マルチストアシナリオでの SEO の改善：PDP/PLP の URL 形式を、CIF Cloud Config プロパティを介してストアレベルで設定できるようになりました。
-* 製品ピッカーは、UI の新しいフィルターオプションを使用して、ステージングされた製品をサポートします。  これにより、コンテンツ担当者は、今後の製品の発売に備えて製品コンテンツ管理を準備できます
+* マルチストアシナリオでの SEO の向上：PDP／PLP の URL 形式を、CIF Cloud Config プロパティを介してストアレベルで設定できるようになりました。
+* 製品ピッカーは、UI の新しいフィルターオプションを使用して、ステージングされた製品をサポートします。これにより、コンテンツ担当者は、今後の製品の発売に備えて製品コンテンツ管理を準備できます
 * 設定プロキシ URL の代わりに CIF Cloud Config 名を使用して、CIF 設定の管理とエラー処理を簡略化しました。
-* 製品リストおよびカルーセルコンポーネントの手動カテゴリ選択。 これにより、コンテンツ担当者は、カタログエクスペリエンス以外で、コンテンツページ上でこれらのコンポーネントを使用できます
+* 製品リストおよびカルーセルコンポーネントの手動カテゴリ選択。これにより、コンテンツ担当者は、カタログエクスペリエンス以外で、コンテンツページ上でこれらのコンポーネントを使用できます
 
 ### CIF プレリリースチャネルで使用できる新機能 {#prerelease-features-cif}
 
@@ -91,19 +90,19 @@ ht-degree: 56%
 
 ### 新機能 {#what-is-new-foundation}
 
-* クラウド環境のカスタム機能のトラブルシューティングをより効率的かつ効果的におこなうために、新しい開発者ツールがリリースされました。 [リポジトリブラウザ](/help/implementing/developing/tools/repository-browser.md). 開発者コンソールから起動できる、軽量で読み取り専用のHTMLブラウザーです。 パブリッシャー、オーサー、プレビューの各層および実稼動、ステージ、開発を含むすべての環境で、コンテンツリポジトリを表示できます。 コンテンツ構造を参照し、プロパティを表示し、バイナリをプレビューおよびダウンロードします。
+* クラウド環境のカスタム機能のトラブルシューティングをより効率的かつ効果的に行うために、新しい開発者ツール、[リポジトリーブラウザー](/help/implementing/developing/tools/repository-browser.md)がリリースされました。Developer Console から起動できる、軽量で読み取り専用の HTML ブラウザーです。パブリッシュ、オーサー、プレビューの各層および実稼動、ステージ、開発を含むすべての環境で、コンテンツリポジトリーを表示できます。コンテンツ構造を参照し、プロパティを表示し、バイナリをプレビューおよびダウンロードします。
 
    ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
-* サーバー間 API 呼び出しの認証に使用される資格情報（例：GraphQL API 要求の場合）は、開発者コンソールからセルフサービス方式で有効期限が切れる前に更新できるようになりました。 詳しくは、 [ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) 詳しくは、を参照してください。
+* サーバー間 API 呼び出しの認証に使用される資格情報（例：GraphQL API リクエストの場合）は、Developer Console からセルフサービス方式で有効期限が切れる前に更新できるようになりました。詳しくは、[ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)を参照してください。
 
-* 以前に有効にしていなかったバージョンのパージと監査ログのパージのメンテナンスタスクは、新しい環境で有効になります。 関連する値を [メンテナンスタスク](/help/operations/maintenance.md) 記事。
+* 以前に有効にしていなかったバージョンのパージと監査ログのパージのメンテナンスタスクが、新しい環境で有効になります。関連する値を、[メンテナンスタスク](/help/operations/maintenance.md)記事で参照してください。
 
-* AEMas a Cloud ServiceSDK Dispatcher ツールで、M1 チップを搭載したMacコンピューターがサポートされるようになりました。
+* AEM as a Cloud Service SDK Dispatcher ツールで、M1 チップを搭載した Mac コンピューターがサポートされるようになりました。
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager の毎月のリリースの完全なリストを確認できます [ここ](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+Cloud Manager の月次リリースの完全なリストは、[こちら](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)で確認できます。
 
 ## コンテンツ転送ツール {#ctt-release}
 

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # AEM Screensas a Cloud Service {#aem-screens-as-a-cloud-service-guide}
 
-このページでは、AEM Screensと、このデジタルサイネージソリューションの仕組みについて詳しく説明します。 セルフヘルプのリソースを入手し、新機能を確認します。
+このページでは、AEM Screens と、デジタルサイネージソリューションの仕組みについて詳しく説明します。セルフヘルプのリソースを入手し、新機能を確認します。
 
 >[!NOTE]
 >AEM 6.5 を使用した AEM Screens については、『[AEM Screens ユーザーガイド](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=ja)』を参照してください。

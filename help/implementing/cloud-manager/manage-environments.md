@@ -4,8 +4,8 @@ description: 作成できる環境のタイプと、Cloud Manager プロジェ�
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: 7174b398040acbf9b18b5ac2aa20fdba4f98ca78
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -105,7 +105,7 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 
 1. 適切な IP 許可リストを作成してプレビューサービスに適用し、`Preview Default [<envId>]` 許可リストの適用を直ちに解除します。
 
-   * ドキュメントを参照してください [IP許可リストの適用と適用解除](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) を参照してください。
+   * 詳しくは、[IP 許可リストの適用と適用解除](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)ドキュメントを参照してください。
 
 1. **IP 許可リスト**&#x200B;の更新ワークフローを使用して、デフォルトの IP を削除し、必要に応じて IP を追加します。詳しくは、「[IP 許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)」を参照してください。
 

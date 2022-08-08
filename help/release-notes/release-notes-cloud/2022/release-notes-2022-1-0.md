@@ -4,8 +4,8 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 リ�
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
 source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -49,14 +49,14 @@ ht-degree: 97%
 
 * [!DNL Experience Manager Assets] のユーザーインターフェイスを使用して以下を行えるようになりました。
 
-   * リポジトリ内の重複アセットの検出を設定する。
+   * リポジトリー内の重複アセットの検出を設定する。
 
    * 画像へのデジタル透かしの追加を設定する。
 
 * 管理者は、大量のダウンロードに備えて電子メールサービスを設定できるようになりました。これにより、ユーザーは [!DNL Experience Manager Assets] インターフェイスから[大量ダウンロード時の電子メール通知を有効にする](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads)ことができます。ダウンロード処理の完了時に、アーカイブされた zip フォルダーのダウンロードリンクを記載した電子メール通知がユーザーに届きます。
 
 
-* [公開を管理](/help/assets/manage-publication.md)機能が強化され、ユーザーインターフェイスが改善されました。ユーザーは、選択した宛先にコンテンツを公開または選択した宛先からコンテンツを非公開にしたり、DAM リポジトリ全体から公開リストに[コンテンツを追加](/help/assets/manage-publication.md#add-content)したり、[フォルダー設定を含めて](/help/assets/manage-publication.md#include-folder-settings)選択したフォルダーのコンテンツを公開しフィルターを適用したり、後の日時に[公開をスケジュール](/help/assets/manage-publication.md#publish-assets-later)したりできます。
+* [公開を管理](/help/assets/manage-publication.md)機能が強化され、ユーザーインターフェイスが改善されました。ユーザーは、選択した宛先にコンテンツを公開または選択した宛先からコンテンツを非公開にしたり、DAM リポジトリー全体から公開リストに[コンテンツを追加](/help/assets/manage-publication.md#add-content)したり、[フォルダー設定を含めて](/help/assets/manage-publication.md#include-folder-settings)選択したフォルダーのコンテンツを公開しフィルターを適用したり、後の日時に[公開をスケジュール](/help/assets/manage-publication.md#publish-assets-later)したりできます。
 
 ### バグの修正 {#bug-fixes}
 
@@ -84,13 +84,13 @@ ht-degree: 97%
 
 ### 新機能 {#what-is-new-cif}
 
-* myAccount コンポーネントの機能が強化されました
-* 製品レコメンデーションコンポーネントは、追加のページタイプ（ホームページ、買い物かご、注文の確認）をサポートします。
+* myAccount コンポーネントの強化機能
+* 「製品のレコメンデーション」コンポーネントで追加のページタイプ（ホームページ、買い物かご、注文確認）がサポートされるようになりました
 * **ウィッシュリスト**
-   * ログインした訪問者はウィッシュリストに製品を追加できます
-   * ウィッシュリストとその製品の管理は、myAccount を通じて可能です
-   * ポリシー（製品ティーザー、製品の詳細など）を通じて、「ウィッシュリストに追加」ボタンをコンポーネントレベルで有効／無効にできます
-   * コアコンポーネントとして AEM Venia ストアフロントで使用できます
+   * ログインした訪問者は、ウィッシュリストに製品を追加できます
+   * ウィッシュリストとその製品の管理は、myAccount を使用して行えます
+   * 「ウィッシュリストに追加」ボタンは、ポリシー（製品ティーザー、製品詳細など）を介して、コンポーネントレベルで有効／無効にできます
+   * コアコンポーネントおよび AEM Venia ストアフロントで使用できます。
 
 ![ウィッシュリスト](/help/assets/CIF/wishlist.png)
 
@@ -112,7 +112,7 @@ AEM as a Cloud Service 2022.01.0 における Cloud Manager のリリース日�
 * 一部のフロントエンドパイプラインデプロイメントで発生した null ポインター例外が修正されました。
 * 古いバージョンの AEM が実行されている環境で、環境変数を追加、更新、削除できるようになりました。
 * まれに、スケジュールされたステップを使用したパイプラインでは、イメージのビルドステップが「エラー」としてマークされなくなりました。
-* リポジトリが 1 つだけのプログラムの場合、パイプライン実行画面にリポジトリ名が表示されるようになりました。
+* リポジトリーが 1 つだけのプログラムの場合、パイプライン実行画面にリポジトリー名が表示されるようになりました。
 
 ## コンテンツ転送ツール {#ctt-release}
 

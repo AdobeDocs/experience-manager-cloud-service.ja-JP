@@ -8,8 +8,8 @@ topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 source-git-commit: 99a86fa88b0b98d732487b9e4b0b6de9fa3773ad
 workflow-type: tm+mt
-source-wordcount: '1948'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -230,7 +230,7 @@ JSON スキーマモデルを使用するフィールドの場合、以下の JS
 
 ## 事前入力サービスの設定 {#configuring-prefill-service-using-configuration-manager}
 
-以下を使用： `alloweddataFileLocations` プロパティ **デフォルトの事前入力サービス設定** を使用して、データファイルの場所または Data ファイルの場所の正規表現 (regex) を設定します。
+**デフォルトの事前入力サービス設定**&#x200B;の `alloweddataFileLocations` プロパティを使用すると、データファイルの場所またはデータファイルの場所を表す正規表現（regex）を設定できます。
 
 以下の JSON ファイルにサンプルが表示されています。
 
@@ -240,7 +240,7 @@ JSON スキーマモデルを使用するフィールドの場合、以下の JS
   }
 ```
 
-設定の値を設定するには [AEM SDK を使用した OSGi 設定の生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#generating-osgi-configurations-using-the-aem-sdk-quickstart) および [設定をデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja#deployment-process) をCloud Serviceインスタンスに追加します。
+設定の値をセットするには、[AEM SDK を使用して OSGi 設定を生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#generating-osgi-configurations-using-the-aem-sdk-quickstart)し、Cloud Service インスタンスに[設定をデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja#deployment-process)します。
 
 >[!NOTE]
 >

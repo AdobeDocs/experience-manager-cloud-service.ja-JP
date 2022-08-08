@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # AEM as a Cloud Service のアプリケーションの実装 {#aem-implementation-guide}
 
-実装に関するセルフヘルプリソースを見つける (Experience Manageras a Cloud Service)。 Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法を説明します。
+Experience Manageras a Cloud Service の実装に関するセルフヘルプリソースの検索。Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法を説明します。
 
 ## 実装に関する主要な記事 {#key-articles}
 

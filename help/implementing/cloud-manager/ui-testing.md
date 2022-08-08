@@ -1,11 +1,11 @@
 ---
 title: UI テスト
-description: カスタム UI テストは、カスタムアプリケーションの UI テストを作成して自動的に実行できるオプションの機能です
+description: カスタム UI テストは、カスタムアプリケーションの UI テストを作成して自動的に実行できるオプション機能です
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 05f9e9de0d5dbcc332466dc964e2d01569d16110
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 45%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -15,37 +15,36 @@ ht-degree: 45%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="UI テスト"
->abstract="カスタム UI テストは、アプリケーションの UI テストを作成して自動的に実行できるオプションの機能です。 UI テストは、言語とフレームワークの幅広い選択肢（Java と Maven、Node と WebDriver.io、Selenium に基づいて構築されたその他のフレームワークとテクノロジーなど）を可能にするために Docker イメージにパッケージ化された Selenium ベースのテストです。"
+>abstract="カスタム UI テストは、アプリケーションの UI テストを作成して自動的に実行できるオプション機能です。UI テストは、言語とフレームワークの幅広い選択肢（Java と Maven、Node と WebDriver.io、Selenium に基づいて構築されたその他のフレームワークとテクノロジーなど）を可能にするために Docker イメージにパッケージ化された Selenium ベースのテストです。"
 
-カスタム UI テストは、アプリケーションの UI テストを作成して自動的に実行できるオプションの機能です。
+カスタム UI テストは、アプリケーションの UI テストを作成して自動的に実行できるオプション機能です。
 
 ## 概要 {#custom-ui-testing}
 
-AEMは、 [Cloud Manager の品質ゲート](/help/implementing/cloud-manager/custom-code-quality-rules.md) カスタムアプリケーションのスムーズな更新を確保する。 特に、AEM API を使用したカスタムテストの作成と自動化を IT テストゲートで実行しています。
+AEM には、[Cloud Manager 品質ゲート](/help/implementing/cloud-manager/custom-code-quality-rules.md)の統合スイートが用意されており、カスタムアプリケーションをスムーズに更新できるようになっています。特に、IT テストゲートでは、AEM API を使用したカスタムテストの作成と自動実行が既に行われています。
 
-UI テストは、言語とフレームワークの幅広い選択肢（Java と Maven、Node と WebDriver.io、Selenium に基づいて構築されたその他のフレームワークとテクノロジーなど）を可能にするために Docker イメージにパッケージ化された Selenium ベースのテストです。さらに、 [AEMプロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)
+UI テストは、言語とフレームワークの幅広い選択肢（Java と Maven、Node と WebDriver.io、Selenium に基づいて構築されたその他のフレームワークとテクノロジーなど）を可能にするために Docker イメージにパッケージ化された Selenium ベースのテストです。また、[AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)を使用すると、UI テストプロジェクトを容易に生成できます。
 
-UI テストは、Cloud Manager の各パイプラインの特定の品質ゲートの一部として、 [専用 **カスタム UI テスト** 手順](/help/implementing/cloud-manager/deploy-code.md) 回帰や新しい機能を含む UI テストでは、エラーの検出とレポートが可能です。
+UI テストは、[専用の&#x200B;**カスタム UI テスト**&#x200B;ステップ](/help/implementing/cloud-manager/deploy-code.md)を含む Cloud Manager パイプラインごとに、特定の品質ゲートの一部として実行されます。リグレッションや新しい機能を含む UI テストでは、エラーの検出とレポートが可能です。
 
-Java で記述された HTTP テストであるカスタム機能テストとは異なり、UI テストは、の節で定義された規則に従う限り、任意の言語で記述されたテストを含む Docker イメージにすることができます [UI テストを構築しています。](#building-ui-tests)
+UI テストは、Java で記述された HTTP テストであるカスタム機能テストとは異なり、[UI テストの作成](#building-ui-tests)の節で定義されている規則に従う限り、任意の言語で記述されたテストを含む Docker イメージにすることができます。
 
 >[!TIP]
 >
->Adobeでは、 [AEMプロジェクトアーキタイプ。](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)
+>[AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)で提供される構造と言語（JavaScript および WDIO）に従うことをお勧めします。
 
 ### 顧客オプトイン {#customer-opt-in}
 
-Cloud Manager で UI テストを作成して実行するには、リポジトリにファイルを追加して、この機能をオプトインする必要があります。
+Cloud Manager で UI テストを作成して実行するには、リポジトリーにファイルを追加して、この機能をオプトインする必要があります。
 
 * ファイル名は `testing.properties` にする必要があります。
-
-* ファイルの内容は、 `ui-tests.version=1`.
-* ファイルは、UI テスト用の Maven サブモジュールの下で、 `pom.xml` UI テストサブモジュールのファイル。
-* ファイルは、ビルドのルートにある必要があります `tar.gz` ファイル。
+* ファイルの内容は `ui-tests.version=1` にする必要があります。
+* ファイルは、UI テストサブモジュールの `pom.xml` ファイルの次にある UI テストの Maven サブモジュールの下に必要です。
+* ファイルは、作成された `tar.gz` ファイルのルートに必要です。
 
 このファイルが存在しない場合、UI テストの作成と実行はスキップされます。
 
-を含めるには、以下を実行します。 `testing.properties` ファイルをビルドアーティファクトに追加し、 `include` 内の `assembly-ui-test-docker-context.xml` ファイル。
+`testing.properties` ファイルをビルドアーティファクトに含めるには、`include` ステートメントを `assembly-ui-test-docker-context.xml` ファイルを追加します。
 
 ```xml
 [...]
@@ -59,19 +58,19 @@ Cloud Manager で UI テストを作成して実行するには、リポジト�
 
 >[!NOTE]
 >
->プロジェクトにこの行が含まれていない場合、UI テストをオプトインするには、ファイルを編集する必要があります。
+>プロジェクトにこの行が含まれていない場合、UI テストをオプトインするには、このファイルを編集する必要があります。
 >
->ファイルには、編集しないように指示する行が含まれている場合があります。 これは、オプトイン UI テストが導入される前にプロジェクトに導入され、クライアントがファイルを編集する意図がなかったためです。 これは無視しても問題ありません。
+>このファイルには、編集しないように指示する行が含まれている場合があります。これは、このファイルが、オプトイン UI テストが導入される前にプロジェクトに導入され、クライアントがファイルを編集することが想定さていなかったためです。これは無視してかまいません。
 
 ## UI テストの作成 {#building-ui-tests}
 
-Maven プロジェクトは、Docker ビルドコンテキストを生成します。 この Docker ビルドコンテキストでは、UI テストを含む Docker 画像を作成する方法を説明します。Cloud Manager ユーザーは、実際の UI テストを含む Docker 画像を生成するためにこの UI テストを含む Docker 画像を作成します。
+Maven プロジェクトでは、Docker ビルドコンテキストを生成します。この Docker ビルドコンテキストでは、UI テストを含んだ Docker イメージを作成する方法が記述されています。Cloud Manager はこれを使用して、実際の UI テストを含んだ Docker イメージを生成します。
 
-この節では、UI テストプロジェクトをリポジトリに追加するために必要な手順について説明します。
+この節では、UI テストプロジェクトをリポジトリーに追加するために必要な手順について説明します。
 
 >[!TIP]
 >
->この [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) では、プログラミング言語に関する特別な要件を持たない UI テストプロジェクトを生成できます。
+>[AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype)では、プログラミング言語の特別な要件がない UI テストプロジェクトを生成できます。
 
 ### Docker ビルドコンテキストの生成 {#generate-docker-build-context}
 
@@ -80,7 +79,7 @@ Docker ビルドコンテキストを生成するには、次の処理を行う 
 * `Dockerfile`と、テストを含んだ Docker イメージの作成に必要なその他のすべてのファイルを格納したアーカイブを作成する。
 * アーカイブに `ui-test-docker-context` 分類子をタグ付けする。
 
-これをおこなう最も簡単な方法は、 [Maven Assembly Plugin](http://maven.apache.org/plugins/maven-assembly-plugin/) Docker ビルドコンテキストアーカイブを作成し、それに適切な分類子を割り当てるため。
+これを行うには、[Maven アセンブリプラグイン](http://maven.apache.org/plugins/maven-assembly-plugin/)を設定して Docker ビルドコンテキストアーカイブを作成し、それに適切な分類子を割り当てるのが最も簡単です。
 
 様々なテクノロジーとフレームワークを使用して UI テストを作成できますが、この節では、プロジェクトが次のようにレイアウトされていることを前提としています。
 
@@ -119,7 +118,7 @@ Docker ビルドコンテキストを生成するには、次の処理を行う 
 </plugin>
 ```
 
-この実行は、Maven Assembly Plugin に対し、 `assembly-ui-test-docker-context.xml`と呼ばれる **アセンブリ記述子** プラグインの用語。 アセンブリ記述子では、アーカイブに含める必要のあるすべてのファイルがリストアップされます。
+この実行は、`assembly-ui-test-docker-context.xml` に含まれている命令（プラグインの専門用語では&#x200B;**アセンブリ記述子**&#x200B;と呼ばれます）に基づいてアーカイブを作成するように Maven アセンブリプラグインに指示します。アセンブリ記述子では、アーカイブに含める必要のあるすべてのファイルがリストアップされます。
 
 ```xml
 <assembly>
@@ -148,17 +147,17 @@ Docker ビルドコンテキストを生成するには、次の処理を行う 
 </assembly>
 ```
 
-アセンブリ記述子は、`.tar.gz` タイプのアーカイブを作成するようにプラグインに指示し、そのアーカイブに `ui-test-docker-context` 分類子を割り当てます。さらに、アーカイブに含める必要があるファイルのリストが次のように表示されます。
+アセンブリ記述子は、`.tar.gz` タイプのアーカイブを作成するようにプラグインに指示し、そのアーカイブに `ui-test-docker-context` 分類子を割り当てます。さらに、そのアーカイブに含める必要のある次のファイルがリストアップされます。
 
-* A `Dockerfile`（Docker イメージの作成に必須）
-* この `wait-for-grid.sh` 以下に説明するスクリプト
-* 実際の UI テスト。 `test-module` フォルダー
+* `Dockerfile`：Docker イメージの作成に必須
+* `wait-for-grid.sh` スクリプト：目的は後述のとおり
+* 実際の UI テスト：`test-module` フォルダー内に Node.js プロジェクトで実装
 
 また、アセンブリ記述子は、UI テストのローカル実行中に生成される可能性のある一部のファイルを除外します。これにより、アーカイブのサイズが小さくなり、ビルドが高速になります。
 
-Docker ビルドコンテキストを含むアーカイブは、Cloud Manager によって自動的に取得され、デプロイメントパイプライン中のテストを含む Docker イメージが作成されます。 最終的に、Cloud Manager は Docker イメージを実行して、アプリケーションに対する UI テストを実行します。
+Docker ビルドコンテキストを含んだアーカイブが Cloud Manager で自動的に選択され、テストを含んだ Docker イメージがデプロイメントパイプライン中に作成されます。最終的に、Cloud Manager は Docker イメージを実行して、アプリケーションに対する UI テストを実行します。
 
-ビルドでは、0 または 1 つのアーカイブが生成されます。アーカイブがゼロの場合、テストステップはデフォルトで合格します。 ビルドで複数のアーカイブが生成される場合、どのアーカイブが選択されるかは非決定的です。
+ビルドでは、0 または 1 つのアーカイブが生成されます。アーカイブが 0 の場合、テストステップはデフォルトで通過します。ビルドで複数のアーカイブが生成される場合、どのアーカイブが選択されるかは非決定的です。
 
 ## UI テストの書き込み {#writing-ui-tests}
 
@@ -173,32 +172,32 @@ Docker ビルドコンテキストを含むアーカイブは、Cloud Manager �
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium サーバーの URL |
 | `SELENIUM_BROWSER` | `chrome` | Selenium サーバーで使用されるブラウザー実装 |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM オーサーインスタンスの URL |
-| `AEM_AUTHOR_USERNAME` | `admin` | AEMオーサーインスタンスにログインするためのユーザー名 |
+| `AEM_AUTHOR_USERNAME` | `admin` | AEM オーサーインスタンスにログインするためのユーザー名 |
 | `AEM_AUTHOR_PASSWORD` | `admin` | AEM オーサーインスタンスにログインするためのパスワード |
 | `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM パブリッシュインスタンスの URL |
-| `AEM_PUBLISH_USERNAME` | `admin` | AEMパブリッシュインスタンスにログインするためのユーザー名 |
+| `AEM_PUBLISH_USERNAME` | `admin` | AEM パブリッシュインスタンスにログインするためのユーザー名 |
 | `AEM_PUBLISH_PASSWORD` | `admin` | AEM パブリッシュインスタンスにログインするためのパスワード |
 | `REPORTS_PATH` | `/usr/src/app/reports` | テスト結果の XML レポートの保存先となるパス |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | Selenium からファイルにアクセスできるようにするためのファイルアップロード先の URL |
 
-### Selenium の準備が完了するのを待機中 {#waiting-for-selenium}
+### Selenium の準備完了までの待機 {#waiting-for-selenium}
 
-テストを開始する前に、Selenium サーバーが実行状態にあることを Docker イメージ側で確認する必要があります。Selenium サービスの待機は、2 段階のプロセスです。
+テストを開始する前に、Selenium サーバーが実行状態にあることを Docker イメージ側で確認する必要があります。Selenium サービスの準備が完了するまで、次の 2 段階の手順で待機します。
 
 1. `SELENIUM_BASE_URL` 環境変数から Selenium サービスの URL を読み取ります。
 1. Selenium API で公開されている[ステータスエンドポイント](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready)に対して定期的にポーリングを行います。
 
-Selenium のステータスエンドポイントが肯定的な応答で応答すると、テストを開始できます。
+Selenium のステータスエンドポイントが肯定的な応答を返したら、テストを開始できます。
 
 ### テストレポートの生成 {#generate-test-reports}
 
-Docker イメージは、テストレポートを JUnit XML 形式で生成して、環境変数 `REPORTS_PATH` で指定されたパスに保存する必要があります。JUnit XML 形式は、テストの結果を報告するために広く使用されている形式です。 Docker イメージで Java と Maven を使用する場合、次のような標準のテストモジュールがあります。 [Maven Surefire プラグイン](https://maven.apache.org/surefire/maven-surefire-plugin/) および [Maven Failsafe プラグイン](https://maven.apache.org/surefire/maven-failsafe-plugin/) では、すぐに使用できるレポートを生成できます。
+Docker イメージは、テストレポートを JUnit XML 形式で生成して、環境変数 `REPORTS_PATH` で指定されたパスに保存する必要があります。JUnit XML 形式は、テスト結果のレポートに広く使用されている形式です。Docker イメージで Java と Maven を使用する場合、[Maven Surefire プラグイン](https://maven.apache.org/surefire/maven-surefire-plugin/)や [Maven Failsafe プラグイン](https://maven.apache.org/surefire/maven-failsafe-plugin/) などの標準テストモジュールでは、すぐに使用できるレポートを生成できます。
 
-Docker イメージが他のプログラミング言語やテストランナーで実装されている場合は、JUnit XML レポートの生成方法に関して、選択したツールのドキュメントを参照してください。
+Docker イメージが他のプログラミング言語またはテストランナーで実装されている場合は、選択したツールのドキュメントを参照して、JUnit XML レポートの生成方法を確認してください。
 
-### ファイルをアップロード {#upload-files}
+### ファイルのアップロード {#upload-files}
 
-テストでは、テスト対象のアプリケーションにファイルをアップロードする必要が生じる場合があります。 テストに対する Selenium のデプロイメントを柔軟に保つために、Selenium に直接アセットをアップロードすることはできません。 ファイルをアップロードするには、代わりに次の手順を実行する必要があります。
+テストでは、場合によって、テスト中のアプリケーションにファイルをアップロードする必要があります。テストに対する Selenium デプロイメントの柔軟性を維持するため、Selenium に直接アセットをアップロードすることはできません。ファイルをアップロードするには、代わりに次の手順を実行する必要があります。
 
 1. `UPLOAD_URL` 環境変数で指定された URL にファイルをアップロードします。
    * アップロードは、マルチパートフォームを含んだ 1 つの POST リクエストで実行する必要があります。

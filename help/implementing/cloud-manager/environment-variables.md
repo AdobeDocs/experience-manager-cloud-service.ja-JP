@@ -4,8 +4,8 @@ description: 標準環境変数は、Cloud Manager を介して設定および�
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 source-git-commit: 4b2ea300f61ad7d1218a984f7238365c5b170a8e
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 91%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -94,12 +94,12 @@ ht-degree: 91%
 
 ## 環境変数の使用 {#using}
 
-環境変数を使用すると、 `pom.xml` 設定の安全性と柔軟性が向上しました。 例えば、パスワードをハードコードする必要はなく、環境変数の値に基づいて設定を適応させることができます。
+環境変数を使用すると、`pom.xml` 設定の安全性と柔軟性を高めることができます。例えば、パスワードをハードコードする必要はなく、環境変数の値に基づいて設定を適応させることができます。
 
 次のように、XML を使用して環境変数とシークレットにアクセスできます。
 
 * `${env.VARIABLE_NAME}`
 
-ドキュメントを参照 [プロジェクトの設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) 例えば、 `pom.xml` ファイル。
+`pom.xml` ファイルで両方のタイプの変数を使用する方法の例については、[プロジェクトの設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories)を参照してください。
 
 詳しくは、 [Maven の公式ドキュメント](https://maven.apache.org/settings.html#quick-overview) を参照してください。

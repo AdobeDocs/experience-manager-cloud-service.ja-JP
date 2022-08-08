@@ -4,8 +4,8 @@ description: データを XDP および PDF テンプレートと自動的に結
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 source-git-commit: a3c817dedbf20b21e609ad0e5bfd0d3c4fa9a431
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 88%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,13 +31,13 @@ ht-degree: 88%
 * XDP ファイルまたは PDF ドキュメントから PostScript（PS）、Printer Command Language（PCL）、Zebra Printing Language（ZPL）ドキュメントを生成する。
 * PDF ドキュメントのアセンブリ
 * PDF ドキュメントのディスアセンブリ
-* 文書をPDF/A 準拠文書に変換する
-* PDF/A 準拠のドキュメントの検証
+* ドキュメントから PDF/A 準拠ドキュメントへの変換
+* PDF/A 準拠ドキュメントの検証
 
 
 ### API 呼び出しの認証
 
-同期操作は、次の 2 種類の認証をサポートします。
+同期操作では、次の 2 種類の認証をサポートしています。
 
 * **基本認証**：基本認証は、HTTP プロトコルに組み込まれたシンプルな認証スキームです。クライアントは、Basic という単語に続いてスペースと、base64 でエンコードされた文字列 username:password を含む Authorization ヘッダーを含む HTTP リクエストを送信します。例えば、管理者／管理者として認証するために、クライアントは Basic [base64 エンコードされたユーザー名文字列]: [base64 でエンコードされたパスワード文字列]を送信します。
 
@@ -63,7 +63,7 @@ API を使用するために必要なものは、次のとおりです。
 * Experience Manager 管理者権限を持つユーザー
 * テンプレートおよびその他のアセットの Experience Manager Forms Cloud Service インスタンスへのアップロード
 
-### （ドキュメント生成 API の場合のみ）テンプレートおよび他のアセットをExperience Managerインスタンスにアップロード
+### （ドキュメント生成 API の場合のみ）Experience Manager インスタンスへのテンプレートおよび他のアセットのアップロード
 
 通常、組織には複数のテンプレートがあります。例えば、クレジットカード明細、福利厚生明細、請求申込用にそれぞれ 1 つずつテンプレートがあります。このような XDP および PDF テンプレートをすべて Experience Manager インスタンスにアップロードします。テンプレートをアップロードするには：
 
@@ -73,9 +73,9 @@ API を使用するために必要なものは、次のとおりです。
 1. 作成／ファイルをアップロードをクリックし、テンプレートをアップロードします。
 
 
-### API を呼び出す
+### API の呼び出し
 
-API から提供されるすべてのパラメーター、認証方法および各種サービスの詳細については、[API リファレンスドキュメント](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services)を参照してください。また、API リファレンスドキュメントでは、API 定義ファイルを.yaml 形式で提供しています。 .yaml ファイルをダウンロードし、Postman にアップロードして API の機能を確認できます。
+API から提供されるすべてのパラメーター、認証方法および各種サービスの詳細については、[API リファレンスドキュメント](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services)を参照してください。また、API リファレンスドキュメントでは、API 定義ファイルを .yaml 形式で提供しています。.yaml ファイルをダウンロードし、postman にアップロードして API の機能を確認できます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 

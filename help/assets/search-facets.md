@@ -6,8 +6,8 @@ role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
 source-git-commit: 8a9a3f60d6d52f6cc18a079f372a55d15bb60790
 workflow-type: tm+mt
-source-wordcount: '2397'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -145,7 +145,7 @@ CRX リポジトリーのオプションでノード構造を手動で作成す�
 1. アセットの検索に使用するタグを指定または表示されたリストから選択します。
 1. すべての指定したタグに一致するアセットを検索するには、「**[!UICONTROL すべてに一致]**」を選択します。
 
-タグ構造を、 **[!UICONTROL 名前]** （アルファベット順）、 **[!UICONTROL 作成済み]** 日付、または **[!UICONTROL 変更済み]** 日付。 次の図では、タグ構造は、 **[!UICONTROL 名前]**.
+タグの構造は、**[!UICONTROL 名前]**（アルファベット順）、**[!UICONTROL 作成]**&#x200B;日、**[!UICONTROL 変更]**&#x200B;日を基準に、昇順または降順に並べ替えることができます。以下の図では、タグの構造を&#x200B;**[!UICONTROL 名前]**&#x200B;を基準にアルファベット順にソートしています。
 
 ![add-tags](assets/add-tags-to-asset.png)
 

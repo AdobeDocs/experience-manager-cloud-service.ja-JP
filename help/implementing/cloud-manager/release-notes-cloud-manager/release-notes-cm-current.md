@@ -5,8 +5,8 @@ feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 9f76f77365c0e9b2986e9bb3560bc039e0ca7961
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 53%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ AEM as a Cloud Serviceの Cloud Manager リリース 2022.7.0 のリリース日
 * Cloud Manager のユーザーは、 **ようこそ** カードをランディングページにいつでも貼り付けることができます。
 * のポップオーバー **[コンテンツを復元](/help/operations/backup.md)** 環境の詳細ページの「 」タブに、ユーザーが変更をローカルに表示できる git コマンドの便利なリストが表示されるようになりました。
 
-## バグ修正 {#bug-fixes}
+## バグの修正 {#bug-fixes}
 
 * プログラム作成時の New Relic サブアカウント作成に関連する UI のフィードバックメッセージが改善されました。
 * ユーザーは、Cloud Manager UI からカスタム UI テストログをダウンロードできるようになりました。

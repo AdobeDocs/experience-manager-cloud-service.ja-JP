@@ -5,8 +5,8 @@ feature: Release Information
 exl-id: 2dfdc943-0518-40ea-8712-1dabb97eeaa9
 source-git-commit: 6e394aaabcb123aea53fba49684aaade3e6c87a6
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 94%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service 2022.01.0の Cloud Manager のリリース日は 2022 年 1 月 20 日です。 次回のリリースは 2022年2月10日（PT）の予定です。
+AEM as a Cloud Service 2022.01.0 の Cloud Manager のリリース日は 2022年1月20日（PT）です。次回のリリースは 2022年2月10日（PT）の予定です。
 
 ## 新機能 {#what-is-new}
 
@@ -34,4 +34,4 @@ AEM as a Cloud Service 2022.01.0の Cloud Manager のリリース日は 2022 年
 * 一部のフロントエンドパイプラインデプロイメントで発生した null ポインター例外が修正されました。
 * 古いバージョンの AEM が実行されている環境で、環境変数を追加、更新、削除できるようになりました。
 * まれに、スケジュールされたステップを使用したパイプラインでは、イメージのビルドステップが「エラー」としてマークされなくなりました。
-* リポジトリが 1 つだけのプログラムの場合、パイプライン実行画面にリポジトリ名が表示されるようになりました。
+* リポジトリーが 1 つだけのプログラムの場合、パイプライン実行画面にリポジトリー名が表示されるようになりました。

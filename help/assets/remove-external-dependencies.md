@@ -5,22 +5,22 @@ feature: Integrations
 exl-id: 5b28ce97-2719-47b8-a386-77d4aaddbe81
 source-git-commit: b71a78696d4b347c97b077d84b455f53a1747a07
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 17%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # 既存のインストールの外部依存関係の削除 {#remove-external-depedencies}
 
-Adobeでは、Workfrontの既存の拡張コネクタインストールに対して設定手順を実行し、Hoodo 配布ポイントへの依存関係を削除することをお勧めします。
+Workfront の既存の拡張コネクタインストールに対して設定手順を実行して、Hoodo 配布ポイントへの依存関係を削除することをお勧めします。
 
 >[!NOTE]
 >
->設定手順は、2022 年 3 月以前にWorkfront用拡張コネクタをインストールした場合にのみ実行してください。 2022 年 3 月以降、Workfrontの新しい拡張コネクタインストールに関しては、Hoodoo 配布ポイントに依存しません。
+>この設定手順は、2022年3月より前に Workfront の拡張コネクタをインストールした場合にのみ実行してください。2022年3月以降、Workfront の新しい拡張コネクタインストールについては、Hoodoo 配布ポイントへの依存関係はありません。
 
 外部の依存関係を削除するには：
 
-1. 親から次の Hoodoo リポジトリ設定を削除します。 `pom.xml`:
+1. 親の `pom.xml` から次の Hoodoo リポジトリー設定を削除します。
 
    ```XML
      <repository>
@@ -30,7 +30,7 @@ Adobeでは、Workfrontの既存の拡張コネクタインストールに対し
      </repository>
    ```
 
-1. 次のサーバー設定を `settings.xml` ファイル、次の場所にあります。 `./cloudmanager/maven/settings.xml`:
+1. `settings.xml` ファイル（`./cloudmanager/maven/settings.xml`）から次のサーバー設定を削除します。
 
    ```XML
          <server>
@@ -46,4 +46,4 @@ Adobeでは、Workfrontの既存の拡張コネクタインストールに対し
          </server>
    ```
 
-1. を実行します。 [新しいインストール手順](workfront-connector-install.md).
+1. [新しいインストール手順](workfront-connector-install.md)を実行します。

@@ -1,24 +1,24 @@
 ---
 title: 永続的な GraphQL クエリ
-description: Adobe Experience Manager as a Cloud Serviceで GraphQL クエリを保持してパフォーマンスを最適化する方法を説明します。 クライアントアプリケーションで HTTP GET メソッドを使用して永続的クエリをリクエストでき、応答を Dispatcher および CDN レイヤーにキャッシュできるので、最終的にクライアントアプリケーションのパフォーマンスが向上します。
+description: Adobe Experience Manager as a Cloud Service で GraphQL クエリを永続化してパフォーマンスを最適化する方法を説明します。クライアントアプリケーションで HTTP GET メソッドを使用して永続的クエリをリクエストでき、応答を Dispatcher および CDN レイヤーにキャッシュできるので、最終的にクライアントアプリケーションのパフォーマンスが向上します。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 26%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # 永続的な GraphQL クエリ {#persisted-queries-caching}
 
-永続的なクエリは、Adobe Experience Manager(AEM)as a Cloud Serviceサーバーで作成および保存される GraphQL クエリです。 クライアントアプリケーションは、GETリクエストを使用してリクエストできます。 GET リクエストの応答は、Dispatcher および CDN レイヤーでキャッシュできるので、最終的には、要求元のクライアントアプリケーションのパフォーマンスが向上します。これは、標準の GraphQL クエリとは異なります。標準クエリは、応答を簡単にキャッシュできないPOSTリクエストを使用して実行されます。
+永続的なクエリは、Adobe Experience Manager（AEM）as a Cloud Service サーバーで作成および保存される GraphQL クエリです。永続的なクエリは、クライアントアプリケーションから GET リクエストでリクエストできます。GET リクエストの応答は、Dispatcher および CDN レイヤーでキャッシュできるので、最終的には、要求元のクライアントアプリケーションのパフォーマンスが向上します。これは、標準の GraphQL クエリとは異なります。標準クエリは、応答を簡単にはキャッシュできない POST リクエストを使用して実行されます。
 
 >[!NOTE]
 >
 >永続化されたクエリをお勧めします。 詳しくは、 [GraphQL クエリのベストプラクティス (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) を参照してください。
 
-この [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) は、以前にAEMで GraphQL クエリを開発、テスト、永続化できます。 [実稼動環境への移行](#transfer-persisted-query-production). カスタマイズが必要な場合 ( 例： [キャッシュのカスタマイズ](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) を使用すると、API を使用できます。次に示す curl の例を参照してください： [GraphQL クエリを保持する方法](#how-to-persist-query).
+この [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) は、以前にAEMで GraphQL クエリを開発、テスト、永続化できます。 [実稼動環境への移行](#transfer-persisted-query-production). カスタマイズが必要な場合（例えば、[キャッシュをカスタマイズする](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)場合）、API を使用できます。[GraphQL クエリを永続化する方法](#how-to-persist-query)で示される curl の例を参照してください。
 
 ## 永続的なクエリとエンドポイント {#persisted-queries-and-endpoints}
 
@@ -50,13 +50,13 @@ ht-degree: 26%
 
 ## GraphQL クエリを永続化する方法 {#how-to-persist-query}
 
-最初にAEMオーサー環境に対するクエリを保持し、次にその環境に対するクエリを保持することをお勧めします [クエリを転送](#transfer-persisted-query-production) を実稼動AEMパブリッシュ環境に追加します。
+最初に AEM オーサー環境でクエリを永続化し、その後、アプリケーションで使用するために、実稼動 AEM パブリッシュ環境に[クエリを移行](#transfer-persisted-query-production)することをお勧めします
 
-クエリを保持するには、次のような様々な方法があります。
+クエリを永続化するには、次のような様々な方法があります。
 
 * GraphiQL IDE — を参照してください。 [永続クエリの保存](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) （推奨される方法）
-* curl — 次の例を参照してください。
-* その他のツール ( [Postman](https://www.postman.com/)
+* curl - 次の例を参照してください。
+* その他のツール（[Postman](https://www.postman.com/) など）
 
 GraphiQL IDE は、 **優先** メソッドを使用してクエリを保持できます。 を使用して特定のクエリを保持するには **curl** コマンドラインツール：
 
@@ -258,17 +258,17 @@ query getAdventuresByActivity($activity: String!) {
 
 注意： `%3B` は、 `;` および `%3D` は `=`. クエリ変数と特殊文字は、次の条件を満たす必要があります。 [適切にエンコード](#encoding-query-url) を実行します。
 
-## 永続化されたクエリのキャッシュ {#caching-persisted-queries}
+## 永続クエリのキャッシュ {#caching-persisted-queries}
 
 永続化されたクエリは、Dispatcher および CDN レイヤーでキャッシュできるので、最終的には、要求元のクライアントアプリケーションのパフォーマンスを向上させることができます。
 
 デフォルトでは、AEMはデフォルトの有効期間 (TTL) に基づいてコンテンツ配信ネットワーク (CDN) キャッシュを無効にします。
 
-この値は次の値に設定されます。
+この値は次のように設定されます。
 
-* 7200 秒が Dispatcher および CDN のデフォルトの TTL である。別名 *共有キャッシュ*
+* Dispatcher および CDN のキャッシュ（*共有キャッシュ*&#x200B;とも呼ばれます）のデフォルト TTL は 7200 秒です
    * デフォルト：s-maxage=7200
-* 60 がクライアントのデフォルトの TTL です（ブラウザーなど）。
+* クライアント（ブラウザーなど）のキャッシュのデフォルト TTL は 60 秒です
    * デフォルト：maxage=60
 
 GraphLQ クエリの TTL を変更する場合は、次のいずれかのクエリを指定する必要があります。
@@ -282,9 +282,9 @@ GraphiQL IDE — を参照してください。 [永続クエリの保存](/help
 
 ### API からのキャッシュの管理 {#cache-api}
 
-これには、コマンドラインインターフェイスで CURL を使用してAEMにクエリを投稿する必要があります。
+これには、コマンドラインインターフェイスで CURL を使用して AEM にクエリをポストします。
 
-例：
+次に例を示します。
 
 ```xml
 curl -X PUT \
@@ -295,7 +295,7 @@ curl -X PUT \
 '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
 ```
 
-この `cache-control` は、作成時 (PUT) 以降 ( 例えば、POSTリクエストなどを介 ) に設定できます。 AEMはデフォルト値を提供できるので、永続化されたクエリを作成する場合は cache-control はオプションです。 詳しくは、 [GraphQL クエリを保持する方法](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query)（curl を使用してクエリを永続化する例）。
+`cache-control` は、作成時に設定することもできますし（PUT リクエストを使用）、後で設定することもできます（例えば、POST リクエストを使用）。AEM ではデフォルト値を提供できるので、永続クエリを作成する際に cache-control はオプションです。curl を使用してクエリを永続化する例については、[GraphQL クエリを永続化する方法](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query)を参照してください。
 
 ## アプリで使用するクエリ URL のエンコード {#encoding-query-url}
 
@@ -327,7 +327,7 @@ URL は次の部分に分類できます。
 
 クライアントアプリで永続化されたクエリを使用するには、AEMヘッドレスクライアント SDK を [JavaScript](https://github.com/adobe/aem-headless-client-js), [Java](https://github.com/adobe/aem-headless-client-java)または [NodeJS](https://github.com/adobe/aem-headless-client-nodejs). ヘッドレスクライアント SDK は、リクエストで任意のクエリ変数を適切にエンコードします。
 
-## 実稼動環境への永続的なクエリの転送  {#transfer-persisted-query-production}
+## 実稼動環境への永続的クエリの移行  {#transfer-persisted-query-production}
 
 永続化されたクエリは、常に AEM オーサーサービスで作成してから、AEM パブリッシュサービスに公開（レプリケート）する必要があります。 多くの場合、永続化クエリは、ローカル環境や開発環境などの低レベルの環境で作成およびテストされます。 その後、永続化されたクエリを上位レベルの環境に昇格し、最終的に、クライアントアプリケーションが使用できるように、実稼動 AEM パブリッシュ環境でクエリを使用できるようにする必要があります。
 

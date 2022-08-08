@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
 source-git-commit: 1f3104d4a986018675f751afa04fe0ed3b7f5c26
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 61%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 61%
 
    * フォームデータモデルの名前を指定します。
    * （**任意**）フォームデータモデルのタイトル、説明、タグを指定します。
-   * （**任意、データソースが既に設定されている場合のみ**）「**[!UICONTROL データソース設定]**」の横にあるチェックマークアイコンをタップし、使用するデータソース用のクラウドサービスが存在する設定ノードを選択します。この操作により、選択した設定ノード内の有効なデータソースだけが、以下のページに選択可能なデータソースとして表示されます。ただし、 [!DNL Experience Manager] ユーザープロファイルデータソースは、デフォルトで一覧表示されます。 設定ノードを選択しなかった場合、すべての設定ノード内のデータソースが表示されます。
+   * （**任意、データソースが既に設定されている場合のみ**）「**[!UICONTROL データソース設定]**」の横にあるチェックマークアイコンをタップし、使用するデータソース用のクラウドサービスが存在する設定ノードを選択します。この操作により、選択した設定ノード内の有効なデータソースだけが、以下のページに選択可能なデータソースとして表示されます。ただし、どの [!DNL Experience Manager] ユーザープロファイルのデータソースも、デフォルトで表示されます。設定ノードを選択しなかった場合、すべての設定ノード内のデータソースが表示されます。
 
 1. 「**[!UICONTROL 次へ]**」をタップします。
 
@@ -87,47 +87,47 @@ ht-degree: 61%
 
 ## 特定の実行モードのコンテキスト対応設定 {#runmode-specific-context-aware-config}
 
-[!UICONTROL フォームデータモデル] 利用する [Sling のコンテキスト対応設定](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=ja) 異なるデータソースのパラメータをサポートし、異なるデータソースに接続するには [!DNL Experience Manager] 実行モード
+[!UICONTROL フォームデータモデル]は、[Sling のコンテキストに対応した設定](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=ja)を利用して、異なるデータソースパラメーターをサポートし、異なる [!DNL Experience Manager] 実行モードのデータソースと接続します。
 
-条件 [!UICONTROL フォームデータモデル] はクラウド設定を使用してパラメーターを保存します。この設定をチェックインしてソース管理（Cloud-Manager GIT リポジトリ）を通じてデプロイすると、すべての実行モード（開発、ステージ、実稼動）で同じパラメーターを持つクラウド設定が作成されます。 ただし、テスト環境と実稼動環境で異なるデータセットを使用する必要がある使用例の場合は、異なる用途にデータソースパラメーター（データソース URL など）を使用します [!DNL Experience Manager] 実行モード
+[!UICONTROL フォームデータモデル]がクラウド設定を使用してパラメーターを保存する場合、この設定をチェックインしてソース管理（Cloud-Manager GIT リポジトリー）を通じてデプロイすると、すべての実行モード（開発、ステージ、実稼動）で同じパラメーターを持つクラウド設定が作成されます。ただし、テスト環境と実稼動環境で異なるデータセットを使用する必要があるユースケースの場合は、異なる [!DNL Experience Manager] 実行モード用のデータソースパラメーター（データソース URL など）を使用します。
 
-これをおこなうには、データソースのパラメーターと値のペアを含む OSGi 設定を作成する必要があります。 これは、 [!UICONTROL フォームデータモデル] 実行時のクラウド設定 OSGi 設定はデフォルトでこれらの実行モードをサポートしているので、実行モードに基づいてデータソースパラメーターを異なる値に上書きできます。
+これを行うには、データソースのパラメーターと値のペアを含む OSGi 設定を作成する必要があります。この設定は、実行時に[!UICONTROL フォームデータモデル]クラウド設定の同じペアを上書きします。OSGi 設定はデフォルトでこれらの実行モードをサポートしているので、実行モードに基づいてデータソースパラメーターを異なる値に上書きできます。
 
-でデプロイメント固有のクラウド設定を有効にするには [!UICONTROL フォームデータモデル]:
+[!UICONTROL フォームデータモデル]でデプロイメント固有のクラウド設定を有効にする手順は次のとおりです。
 
-1. クラウドインスタンスでローカル開発設定を作成します。 詳細な手順については、 [データソースの設定方法](/help/forms/configure-data-sources.md).
+1. 開発用ローカルインスタンスにクラウド設定を作成します。詳細な手順については、[データソースの設定方法](/help/forms/configure-data-sources.md)を参照してください。
 
 1. クラウド設定をファイルシステムに保存します。
-   1. フィルターを使用してパッケージを作成 `/conf/{foldername}/settings/cloudconfigs/fdm`. 同じ `{foldername}` 手順 1 に示すように。 および `fdm` と `azurestorage` （Azure ストレージ設定用）
-   1. パッケージをビルドしてダウンロードします。 詳しくは、 [パッケージアクション](/help/implementing/developing/tools/package-manager.md).
+   1. フィルター `/conf/{foldername}/settings/cloudconfigs/fdm` を使用してパッケージを作成します。手順 1 と同じ `{foldername}` を使用します。Azure ストレージ設定用に、`fdm` を `azurestorage` で置き換えます。
+   1. パッケージを構築してダウンロードします。詳しくは、[パッケージのアクション](/help/implementing/developing/tools/package-manager.md)を参照してください。
 
-1. クラウド設定を [!DNL Experience Manager] アーキタイププロジェクト。
+1. クラウド設定を [!DNL Experience Manager] アーキタイププロジェクトに統合します。
    1. ダウンロードしたパッケージを解凍します。
-   1. コピー `jcr_root` フォルダーを `ui.content` > `src` > `main` > `content`.
-   1. 更新 `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` フィルターを含める `/conf/{foldername}/settings/cloudconfigs/fdm`. 詳しくは、 [AEM Project Archetype の ui.content モジュール](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html). このアーキタイププロジェクトを CM パイプラインを通じてデプロイする場合、同じクラウド設定がすべての環境（または実行モード）にインストールされます。 環境に基づいてクラウド設定のフィールド（URL など）の値を変更するには、次の手順で説明する OSGi 設定を使用します。
+   1. `jcr_root` フォルダーをコピーして、`ui.content`／`src`／`main`／`content` に置きます。
+   1. `ui.content`／`src`／`main`／`content`／`META-INF`／`vault`／`filter.xml` を更新して、フィルター `/conf/{foldername}/settings/cloudconfigs/fdm` を含めます。詳しくは、[AEM プロジェクトアーキタイプの ui.content モジュール](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html?lang=ja)を参照してください。このアーキタイププロジェクトを CM パイプラインを通じてデプロイする場合、同じクラウド設定がすべての環境（または実行モード）にインストールされます。環境に基づいてクラウド設定のフィールド（URL など）の値を変更するには、次の手順で説明する OSGi 設定を使用します。
 
-1. Apache Sling のコンテキスト対応設定を作成します。 OSGi 設定を作成するには：
-   1. **での OSGi 設定ファイルのセットアップ [!DNL Experience Manager] アーキタイププロジェクト。**
-PID を使用した OSGi Factory Configuration ファイルの作成 
-`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`に従っていない場合に発生します。実行モードごとに値を変更する必要がある各実行モードフォルダーの下に、同じ名前のファイルを作成します。 詳しくは、 [の OSGi の設定 [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
+1. Apache Sling のコンテキスト対応設定を作成します。OSGI 設定の作成手順は次のとおりです。
+   1. アーキタイププロジェクトの **OSGi 設定ファイルをセットアップ[!DNL Experience Manager]します。**
+OSGi Factory Configuration ファイルを、PID  
+`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider` を使用して作成します。実行モードごとに値を変更する必要がある各実行モードフォルダーの下に、同じ名前のファイルを作成します。詳しくは、[ [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations) の OSGi の設定を参照してください。
 
-   1. **OSGI 設定 json を設定します。** Apache Sling Context-Aware Configuration Override Provider を使用するには：
-      1. ローカル開発インスタンス `/system/console/configMgr`、という名前でファクトリ OSGi 設定を選択します。 **[!UICONTROL Apache Sling Context-Aware Configuration Override Provider:OSGi 設定]**.
+   1. **OSGI 設定 json を設定します。** Apache Sling Context-Aware Configuration Override Provider の使用手順は次のとおりです。
+      1. ローカル開発インスタンス `/system/console/configMgr` で、**[!UICONTROL Apache Sling Context-Aware Configuration Override Provider: SGi configuration]** という名前のファクトリー OSGi 設定を選択します。
       1. 説明を入力します。
-      1. 選択 **[!UICONTROL 有効]**.
-      1. オーバーライドの下で、sling オーバーライド構文の環境に基づいて変更する必要があるフィールドを指定します。 詳しくは、 [Apache Sling Context-Aware Configuration - Override](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). （例：`cloudconfigs/fdm/{configName}/url="newURL"`）。複数の上書きを追加するには、「 **[!UICONTROL +]**.
+      1. 「**[!UICONTROL 有効]**」を選択します。
+      1. オーバーライドで、Sling オーバーライド構文の環境に基づいて変更する必要があるフィールドを指定します。詳しくは、[Apache Sling Context-Aware Configuration - Override](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax) を参照してください。例：`cloudconfigs/fdm/{configName}/url="newURL"`。複数のオーバーライドを追加するには、「**[!UICONTROL +]**」を選択します。
       1. 「**[!UICONTROL 保存]**」を選択します。
-      1. OSGi 設定 JSON を取得するには、 [AEM SDK Quickstart を使用した OSGi 設定の生成](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
-      1. 前の手順で作成した OSGi Factory Configuration Files に JSON を配置します。
-      1. の値を変更 `newURL` 環境（または実行モード）に基づく。
-      1. 実行モードに基づいてシークレット値を変更するには、 [cloud manager API](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) 後で [OSGi 設定](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values).
+      1. OSGi 設定 JSON を取得するには、[AEM SDK Quickstart を使用した OSGi 設定の生成](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)の手順に従ってください。
+      1. 前の手順で作成した OSGi Factory Configuration ファイルに JSON を配置します。
+      1. 環境（または実行モード）に基づいて `newURL` の値を変更します。
+      1. 実行モードに応じてシークレット値を変更するには、[Cloud Manager API](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) を使用してシークレット変数を作成し、後で [OSGi 設定](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values)から参照することができます。
 このアーキタイププロジェクトが CM パイプラインを通じてデプロイされる場合、オーバーライドは異なる環境（または実行モード）で異なる値を提供します。
 
       >[!NOTE]
       >
-      >[!DNL Adobe Managed Service] ユーザーは、暗号化サポートを使用して秘密鍵の値を暗号化できます ( 詳しくは、 [設定プロパティの暗号化のサポート](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) 暗号化されたテキストを [コンテキスト対応設定は、service pack 6.5.13.0で利用できます](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config).
+      >[サービスパック 6.5.13.0 でコンテキスト対応設定が利用可能](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config?lang=ja)になった後、[!DNL Adobe Managed Service] ユーザーは暗号化サポートを使用してシークレットの値を暗号化し（詳細は、[設定プロパティの暗号化サポート](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support?lang=ja)を参照）、値に暗号化テキストを配置できるようになりました。
 
-1. データソース定義を更新するには、 [フォームデータモデルエディター](#data-sources) FDM UI を使用して FDM キャッシュをリフレッシュし、最新の構成を取得します。
+1. [フォームデータモデルエディター](#data-sources)のデータソース定義を更新するオプションを使用してデータソース定義を更新し、FDM UI を通じて FDM キャッシュを更新し、最新の設定を取得します。
 
 ## 次の手順 {#next-steps}
 

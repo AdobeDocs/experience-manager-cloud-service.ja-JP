@@ -1,17 +1,17 @@
 ---
-title: はじめに —Experience Manageras a Cloud Service
-description: Experience Manageras a Cloud Serviceの仕組みと、ソフトウェアがユーザーに与える機能を説明します。
+title: Experience Manager as a Cloud Service の基本を学ぶ
+description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 87%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service の概要  {#aem-overview-guide}
 
-ここから、Experience Managerのas a Cloud Service的な動作の仕組みと、ソフトウェアがユーザーに与える機能を学びます。
+ここでは、Experience Manager as a Cloud Service の仕組みと機能を説明します。
 
 ## 概要に関する主要な記事 {#key-articles}
 

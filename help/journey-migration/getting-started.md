@@ -35,11 +35,11 @@ Cloud Service への移行ジャーニーには、次の段階が含まれます
 * すべてが整ったら、[運用開始段階](/help/journey-migration/go-live.md)で移行を実行できます。
 * 最後に、[運用開始後段階](/help/journey-migration/post-go-live.md)で、問題を監視し、パフォーマンスを向上させます。
 
-次の図に、AEM as a Cloud Serviceへの推奨されるトランジションジャーニーの概要を示します。
+次の図は AEM as a Cloud Service への移行プロセス概要を示しています。
 
 ![画像](/help/journey-migration/assets/move-aemcloud-process.png)
 
-移行ジャーニーのより詳細で詳細なビューについては、以下の図も参照してください。
+移行ジャーニーのより詳細で詳細な表示については、以下の図も参照してください。
 
 ![画像](/help/journey-migration/assets/migration-process.png)
 

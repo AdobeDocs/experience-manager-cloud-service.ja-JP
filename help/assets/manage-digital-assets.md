@@ -8,8 +8,8 @@ role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '4326'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->* タイプの Assets フォルダーの共有 `sling:OrderedFolder`は、Experience Cloudとの共有時はサポートされません。 フォルダーを共有する場合は、フォルダーを作成するときに [!UICONTROL Ordered] を選択しないでください。
+>* `sling:OrderedFolder` タイプのアセットフォルダーの共有は、Experience Cloud との共有時はサポートされません。フォルダーを共有する場合は、フォルダーを作成するときに [!UICONTROL Ordered] を選択しないでください。
 >* Experience Manager では、`subassets` をフォルダーの名前として使用することはできません。これは、複合アセットのサブアセットを含むノード用に予約されているキーワードです
 
 
@@ -44,7 +44,7 @@ ht-degree: 99%
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-DAM ユーザーがリポジトリに既に存在する 1 つ以上のアセットをアップロードした場合、[!DNL Experience Manager] は重複を検出し、ユーザーに通知します。重複の検出は、リポジトリのサイズとアップロードされたアセットの数に応じてパフォーマンスに影響を与える可能性があるので、デフォルトで無効になっています。
+DAM ユーザーがリポジトリーに既に存在する 1 つ以上のアセットをアップロードした場合、[!DNL Experience Manager] は重複を検出し、ユーザーに通知します。重複の検出は、リポジトリーのサイズとアップロードされたアセットの数に応じてパフォーマンスに影響を与える可能性があるので、デフォルトで無効になっています。
 
 この機能を有効にするには：
 
@@ -71,7 +71,7 @@ DAM ユーザーがリポジトリに既に存在する 1 つ以上のアセッ�
 
 >[!NOTE]
 >
->アセットをリポジトリにアップロードすると、Experience Manager は重複を検出し、最初の 100 個の重複アセットについて通知します。
+>アセットをリポジトリーにアップロードすると、Experience Manager は重複を検出し、最初の 100 個の重複アセットについて通知します。
 
 ## アセットのプレビュー {#previewing-assets}
 
@@ -114,7 +114,7 @@ DAM ユーザーがリポジトリに既に存在する 1 つ以上のアセッ�
 
    >[!NOTE]
    >
-   >タグを作成するには、CRX リポジトリの `/content/cq:tags/default` パスでの書き込み権限が必要です。
+   >タグを作成するには、CRX リポジトリーの `/content/cq:tags/default` パスでの書き込み権限が必要です。
 
 1. 「**[!UICONTROL 保存して閉じる]**」をタップまたはクリックします。
 
@@ -250,7 +250,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-   ビデオアセットのレンディションサイズを設定するには、CRX リポジトリ内の `videopicker` ノード（`/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`）に移動し、ノードをオーバーレイし、該当するプロパティを編集します。
+   ビデオアセットのレンディションサイズを設定するには、CRX リポジトリー内の `videopicker` ノード（`/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`）に移動し、ノードをオーバーレイし、該当するプロパティを編集します。
 
    >[!NOTE]
    >
@@ -645,7 +645,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 ## デスクトップアプリケーションまたは Adobe Asset Link で期限切れアセットを表示しない {#hide-expired-assets-via-acp-api}
 
-[!DNL Experience Manager] デスクトップアプリケーションを使用すると、Windows または Mac デスクトップから DAM リポジトリにアクセスできます。Adobe Asset Link を使用すると、サポートされている[!DNL Creative Cloud]デスクトップアプリケーション内からアセットにアクセスできます。
+[!DNL Experience Manager] デスクトップアプリケーションを使用すると、Windows または Mac デスクトップから DAM リポジトリーにアクセスできます。Adobe Asset Link を使用すると、サポートされている[!DNL Creative Cloud]デスクトップアプリケーション内からアセットにアクセスできます。
 
 [!DNL Experience Manager] ユーザーインターフェイス内からアセットを参照すると、期限切れのアセットは表示されません。デスクトップアプリと Assets リンクからアセットを参照する際に、期限切れのアセットが表示、検索、および取得される防ぐために、管理者は次の設定を行うことができます。この設定は、管理者権限に関係なく、すべてのユーザーで機能します。
 

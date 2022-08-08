@@ -7,8 +7,8 @@ role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 source-git-commit: 57abdf0198e646719bbb818e2b70d772579ba548
 workflow-type: tm+mt
-source-wordcount: '1811'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -167,8 +167,8 @@ CDN エッジノードを使用すると、要求されたバイナリアップ�
 | `versionLabel` | 文字列 | オプション | 新しいバージョンが作成される場合、アセットの新しいバージョンに関連付けられるラベル。 |
 | `versionComment` | 文字列 | オプション | 新しいバージョンが作成される場合、そのバージョンに関連付けられたコメント。 |
 | `replace` | ブール値 | オプション | これが `True` で指定した名前のアセットが存在する場合、Adobe [!DNL Experience Manager] はそのアセットを削除し、再作成します。 |
-| `uploadDuration` | Number | オプション | ファイル全体がアップロードされるまでの合計時間（ミリ秒）。 指定した場合、アップロード時間は転送レート分析用にシステムのログファイルに記録されます。 |
-| `fileSize` | 数値 | オプション | ファイルのサイズ（バイト単位）。 指定した場合、転送レート分析用に、ファイルサイズがシステムのログファイルに含まれます。 |
+| `uploadDuration` | Number | オプション | ファイル全体がアップロードされるまでの合計時間（ミリ秒単位）。これを指定した場合、アップロード時間は転送レートの分析用にシステムのログファイルに記録されます。 |
+| `fileSize` | 数値 | オプション | ファイルのサイズ（バイト単位）。これを指定した場合、ファイルサイズは転送レートの分析用にシステムのログファイルに記録されます。 |
 
 >[!NOTE]
 アセットが存在し、`createVersion` も `replace` も指定されていない場合、Adobe [!DNL Experience Manager] はアセットの現在のバージョンを新しいバイナリで更新します。

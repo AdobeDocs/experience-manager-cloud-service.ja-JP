@@ -4,8 +4,8 @@ description: セキュアな JWT トークンを生成してサードパーテ�
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 source-git-commit: fc49b004a61d5f981ac61cca684dc0bacf843443
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->このドキュメントに加えて、 [AEMas a Cloud Service用のトークンベース認証](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ja#authentication) および [統合用のログイントークンの取得](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html).
+>このドキュメントに加えて、[AEM as a Cloud Service のトークンベース認証](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ja#authentication)と[統合のためのログイントークンの取得](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html?lang=ja)チュートリアルも参考にしてください。
 
 ## サーバー間フロー {#the-server-to-server-flow}
 
@@ -73,7 +73,7 @@ AEM に対して呼び出しを行う AEM 以外のアプリケーションは�
 
 アクセストークンを取得するには、アドビの IMS サービスへの呼び出しで資格情報を使用して JWT トークンを作成します。このトークンは 24 時間有効です。
 
-AEM CS サービス資格情報は、専用のクライアントライブラリを使用して、アクセストークンと交換できます。このクライアントライブラリは、[アドビが公開している GitHub リポジトリ](https://github.com/adobe/aemcs-api-client-lib)から入手可能です。このリポジトリには、より詳細なガイダンスと最新の情報が含まれています。
+AEM CS サービス資格情報は、専用のクライアントライブラリを使用して、アクセストークンと交換できます。このクライアントライブラリは、[アドビが公開している GitHub リポジトリー](https://github.com/adobe/aemcs-api-client-lib)から入手可能です。このリポジトリーには、より詳細なガイダンスと最新の情報が含まれています。
 
 ```
 /*jshint node:true */
@@ -95,7 +95,7 @@ exchange(config).then(accessToken => {
 
 同じ交換は、正しい形式の署名済み JWT トークンの生成と IMS トークン交換 API の呼び出しが可能な任意の言語で実行できます。
 
-アクセストークンには有効期限が定義されます（通常は 24 時間です）。Git リポジトリには、アクセストークンを管理して期限切れの前に更新するサンプルコードが含まれています。
+アクセストークンには有効期限が定義されます（通常は 24 時間です）。Git リポジトリーには、アクセストークンを管理して期限切れの前に更新するサンプルコードが含まれています。
 
 ### AEM API の呼び出し {#calling-the-aem-api}
 

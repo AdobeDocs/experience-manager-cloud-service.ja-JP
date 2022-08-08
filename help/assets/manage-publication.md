@@ -8,8 +8,8 @@ role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
 source-git-commit: ca01102673211f17e58af36ef2a59d0e964022d5
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 99%
 
 ## 「公開を管理」を使用したアセットの公開 {#manage-publication}
 
-「公開を管理」を使用すると、選択した宛先にコンテンツを公開または選択した宛先からコンテンツを非公開にしたり、DAM リポジトリ全体から公開リストに[コンテンツを追加](#add-content)したり、[フォルダー設定を含めて](#include-folder-settings)選択したフォルダーのコンテンツを公開しフィルターを適用したり、後の日時に[公開をスケジュール](#publish-assets-later)したりできます。
+「公開を管理」を使用すると、選択した宛先にコンテンツを公開または選択した宛先からコンテンツを非公開にしたり、DAM リポジトリー全体から公開リストに[コンテンツを追加](#add-content)したり、[フォルダー設定を含めて](#include-folder-settings)選択したフォルダーのコンテンツを公開しフィルターを適用したり、後の日時に[公開をスケジュール](#publish-assets-later)したりできます。
 
 [!DNL Experience Manager Assets] コンソールで、親フォルダーに移動し、公開するアセットまたはフォルダーをすべて選択します。ツールバーの「**[!UICONTROL 公開を管理]**」オプションをクリックします。[!DNL Experience Manager Assets] インスタンスに [!DNL Dynamic Media] や [!DNL Brand Portal] が設定されていない場合は、アセットやフォルダーを [!DNL Experience Manager Assets] にのみ公開できます。
 
@@ -61,7 +61,7 @@ ht-degree: 99%
 
 ### コンテンツの追加 {#add-content}
 
-[!DNL Experience Manager Assets] に公開する場合は、公開リストにさらにコンテンツ（アセットやフォルダー）を追加できます。DAM リポジトリ全体からリストにアセットやフォルダーをさらに追加できます。コンテンツをさらに追加するには、「**[!UICONTROL コンテンツを追加]**」ボタンをクリックします。
+[!DNL Experience Manager Assets] に公開する場合は、公開リストにさらにコンテンツ（アセットやフォルダー）を追加できます。DAM リポジトリー全体からリストにアセットやフォルダーをさらに追加できます。コンテンツをさらに追加するには、「**[!UICONTROL コンテンツを追加]**」ボタンをクリックします。
 
 フォルダーから複数のアセットを一度に追加したり、複数のフォルダーを一度に追加したりできます。しかし、複数のフォルダーからアセットを一度に追加することはできません。
 
@@ -76,7 +76,7 @@ ht-degree: 99%
 * `Include folder contents`
 
    * 有効：選択したフォルダーのすべてのアセット、サブフォルダー（サブフォルダーのすべてのアセットを含む）および参照が公開されます。
-   * 無効：選択したフォルダー（空）と参照のみが公開されます。 選択したフォルダーのアセットは公開されません。
+   * 無効：選択したフォルダー（空）と参照のみ公開されます。選択したフォルダーのアセットは公開されません。
 
 * `Include folder contents` および `Include only immediate folder contents`
 

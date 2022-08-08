@@ -4,8 +4,8 @@ description: AEM as a Cloud Service の登録、ログイン、ユーザーデ�
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: c49a70b4048acc4e925c69b7ebbedbf8779bbbc0
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +73,7 @@ Web アプリケーションは、多くの場合、Web サイトへの登録用
 >
 >IdP では、ユーザーの資格情報の初期認証のみ行います。cookie が使用可能であれば、その後の AEM へのリクエストは AEM ログイントークン cookie を使用して実行されます。
 
-[SAML 2.0 認証ハンドラー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html)について詳しくは、ドキュメントを参照してください。
+[SAML 2.0 認証ハンドラー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=ja)について詳しくは、ドキュメントを参照してください。
 
 **OAuth/SSO**
 

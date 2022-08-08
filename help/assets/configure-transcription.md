@@ -1,7 +1,7 @@
 ---
-title: 転写サービスの設定
+title: トランスクリプションサービスの設定
 seo-title: Configure transcription service
-description: Adobe Experience Manager Assets は、 [!DNL Azure Media Services] WebVTT(Vtt) 形式のサポートされているオーディオまたはビデオファイル内の音声言語のテキストトランスクリプトを自動的に生成します。
+description: Adobe Experience Manager Assets には、 [!DNL Azure Media Services]  が設定されています。このサービスは、サポートされているオーディオまたはビデオファイルに含まれている音声言語のテキストトランスクリプトを WebVTT（.vtt）形式で自動的に生成します。
 seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content as well as increase the ROI of these assets by supporting accessibility and localization.
 products: SG_EXPERIENCEMANAGER/ASSETS and Experience Manager as a Cloud Service
 sub-product: assets
@@ -13,156 +13,156 @@ role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
 source-git-commit: 4edf66127696ce91466811e2ffdcfbbd73f7cc2c
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# での転写の設定 [!DNL Experience Manager Assets] {#configure-transcription-service}
+# [!DNL Experience Manager Assets] のトランスクリプションの設定 {#configure-transcription-service}
 
-転写とは、音声認識技術を使用して、音声またはビデオファイルから音声をテキスト（音声からテキスト）に変換するプロセスです。
-[!DNL Adobe Experience Manager Assets] 次を使用して設定 [!DNL Azure Media Services] WebVTT(.vtt) 形式のサポートされているオーディオまたはビデオファイルで、音声言語のテキストトランスクリプトを自動的に生成します。 オーディオまたはビデオアセットがで処理されたとき [!DNL Experience Manager Assets]を使用すると、トランスクリプションサービスはオーディオまたはビデオアセットのテキストトランスクリプトレンディションを自動的に生成し、元のアセットが存在する Assets リポジトリ内の同じ場所に保存します。 この [!DNL Experience Manager Assets] 転写サービスを使用すると、マーケターは、アクセシビリティとローカライゼーションをサポートすることで、テキストコンテンツの発見性を高め、オーディオとビデオのコンテンツを効果的に管理できるほか、アセットの ROI を向上できます。
+トランスクリプションとは、音声認識技術を使用して、オーディオまたはビデオファイル内の音声をテキストに変換するプロセス（音声テキスト変換）です。
+[!DNL Adobe Experience Manager Assets] には、[!DNL Azure Media Services] 設定されています。このサービスは、サポートされているオーディオまたはビデオファイルに含まれている音声言語のテキストトランスクリプトを WebVTT（.vtt）形式で自動的に生成します。オーディオまたはビデオアセットが [!DNL Experience Manager Assets] で処理される際に、トランスクリプションサービスによって、オーディオまたはビデオアセットのテキストトランスクリプトレンディションが自動的に生成され、オリジナルのアセットが存在する Assets リポジトリー内の場所に保存されます。[!DNL Experience Manager Assets] トランスクリプションサービスを使用すると、マーケターは、テキストコンテンツの検索効率を高めてオーディオおよびビデオコンテンツを効果的に管理できるほか、アクセシビリティやローカライゼーションに対応することで、これらのアセットの ROI を向上させることができます。
 
-トランスクリプトは、音声コンテンツのテキストバージョンです。例えば、OTT プラットフォームで視聴している映画です。多くの場合、アクセシビリティに役立つキャプションやサブタイトルを含めたり、他の言語でのコンテンツの使用に役立ちます。 または、マーケティング、学習、エンターテイメントの目的で使用される任意のオーディオまたはビデオファイル。 これらのエクスペリエンスは、最初に転写を使用し、必要に応じて書式設定または翻訳します。 オーディオやビデオの書き起こしは、手動で行う場合に時間がかかり、エラーが発生しやすいプロセスです。 また、オーディオビデオコンテンツのニーズが増え続ける中で、手動プロセスを拡大するのも課題です。 [!DNL Experience Manager Assets] は Azure の AI ベースの転写を使用し、オーディオおよびビデオアセットの高度な処理を可能にし、タイムスタンプの詳細と共にテキストの転写（.vtt ファイル）を生成します。 転写機能は、Assets と共にDynamic Mediaでもサポートされています。
+トランスクリプトは、音声コンテンツのテキストバージョンです。OTT プラットフォームで視聴している映画がその一例です。これには、多くの場合、アクセシビリティや他の言語でのコンテンツ利用に役立つキャプションやサブタイトルがあります。または、マーケティング、学習、エンターテイメントの目的で使用されるオーディオやビデオファイルもその例です。これらのエクスペリエンスは、トランスクリプションで始まり、必要に応じて書式設定や翻訳が行われます。オーディオやビデオのトランスクリプションは、手動で行うと非常に時間がかかりエラーが発生しやすいプロセスです。また、オーディオ／ビデオコンテンツのニーズが絶え間なく変化することを考えると、手動プロセスで規模を拡大することは困難でもあります。[!DNL Experience Manager Assets] では、Azure の AI ベースのトランスクリプションを使用して、オーディオおよびビデオアセットを大規模に処理し、タイムスタンプの詳細と共にテキストトランスクリプト（.vtt ファイルｓ）を生成します。トランスクリプション機能は、Assets と共に Dynamic Media でもサポートされています。
 
-転写機能は、 [!DNL Experience Manager Assets]. ただし、管理者には、でトランスクリプションサービスを設定するためにユーザーの Azure 資格情報が必要です [!DNL Experience Manager Assets]. また、 [体験版資格情報を取得する](https://azure.microsoft.com/en-us/pricing/details/media-services/) Microsoft®から直接アセットでオーディオまたはビデオの転写機能を体験できます。
+トランスクリプション機能は、[!DNL Experience Manager Assets] でコストをかけずに利用できます。ただし、管理者には、[!DNL Experience Manager Assets] にトランスクリプションサービスを設定するためにユーザーの Azure 資格情報が必要です。また、Microsoft®から[体験版資格情報を取得して](https://azure.microsoft.com/ja-jp/pricing/details/media-services/)、Assets のオーディオまたはビデオトランスクリプション機能を試すこともできます。
 
-## 転写の前提条件 {#prerequisites}
+## トランスクリプションの前提条件 {#prerequisites}
 
-1. 起動および実行 [!DNL Experience Manager Assets as a Cloud Service] インスタンス。
-1. での設定には、次の Azure 資格情報が必要です。 [!DNL Experience Manager Assets]:
+1. 実行中の [!DNL Experience Manager Assets as a Cloud Service] インスタンス。
+1. [!DNL Experience Manager Assets] での設定に 次の Azure 資格情報が必要です。
 
    * クライアント ID（API キー）
    * クライアント秘密鍵
    * テナントエンドポイント（ドメイン）
    * メディアアカウント
    * リソースグループ
-   * 購読 ID
+   * サブスクリプション ID
 
-   詳しくは、 [Azure ドキュメント](https://docs.microsoft.com/en-us/azure/media-services/latest/access-api-howto?tabs=portal) Azure Media Services API にアクセスするための資格情報を取得するには、以下を実行します。
+   Azure Media Services API にアクセスするための資格情報を取得するには、[Azure のドキュメント](https://docs.microsoft.com/ja-jp/azure/media-services/latest/access-api-howto?tabs=portal)を参照してください。
 
-1. 新しい要求を処理するのに十分なクレジットが Azure アカウントにあることを確認します。
+1. 新しいリクエストを処理するのに十分なクレジットが Azure アカウントにあることを確認します。
 
-## での転写の設定 [!DNL Experience Manager Assets] {#configure-transcription}
+## [!DNL Experience Manager Assets] のトランスクリプションの設定 {#configure-transcription}
 
-の転写機能を有効にするために必要な設定を次に示します。 [!DNL Experience Manager Assets]:
+[!DNL Experience Manager Assets] でトランスクリプション機能を有効にするために必要な設定は次のとおりです。
 
 1. [Azure Media Services の設定](#configure-azure-media-service)
-1. [オーディオ/ビデオの転写の処理プロファイルの設定](#configure-processing-profile-for-transcription)
+1. [オーディオ／ビデオトランスクリプションの処理プロファイルの設定](#configure-processing-profile-for-transcription)
 
 
 ### Azure Media Services の設定 {#configure-azure-media-services}
 
-[!DNL Experience Manager Assets] は [!DNL Azure Media Services] これは、 [サポートされているオーディオまたはビデオファイル](#supported-file-formats-for-transcription) を WebVTT(.vtt) 形式で設定します。 管理者は [!DNL Azure Media Services] in [!DNL Experience Manager Assets] Azure の資格情報を使用します。 この [転写前提条件](#transcription-prerequisites) リスト [!DNL Azure] 設定に必要な資格情報。 次の条件を満たしていない場合、 [!DNL Azure] アカウントと資格情報： [Azure Media Services ドキュメント](https://azure.microsoft.com/en-us/pricing/details/media-services/) をクリックして体験版の資格情報を取得します。
+[!DNL Experience Manager Assets] では [!DNL Azure Media Services] を使用して、[サポートされているオーディオまたはビデオファイル](#supported-file-formats-for-transcription)に含まれている音声言語のテキストトランスクリプトを WebVTT（.vtt）形式で自動的に生成します。管理者は、Azure の資格情報を使用して [!DNL Experience Manager Assets] の [!DNL Azure Media Services] を設定できます。この設定に必要な [!DNL Azure] 資格情報の一覧を[トランスクリプションの前提条件](#transcription-prerequisites)に示してあります。[!DNL Azure] アカウントおよび資格情報がない場合は、[Azure Media Services ドキュメント](https://azure.microsoft.com/en-us/pricing/details/media-services/)を参照して体験版資格情報を取得します。
 
 ![configure-transcription-service](assets/configure-transcription-service.png)
 
-に移動します。 **[!UICONTROL ツール]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure Media Services の設定]**. 左側のレールからフォルダー（ロケーション）を選択し、 [!UICONTROL 作成] ボタンをクリックして、 [!DNL Azure] アカウント このフォルダーは、 [!DNL Azure] クラウド設定は、Experience Manager Assetsに保存されます。 次を入力します。 [!DNL Azure] 認証情報をクリックします。 **[!UICONTROL 保存して閉じる]**.
+**[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL Azure Media Services の設定]**&#x200B;に移動します。左側のパネルからフォルダー（ロケーション）を選択し、「[!UICONTROL 作成]」ボタンをクリックして、お使いの [!DNL Azure] アカウントとの接続を設定します。このフォルダーは、[!DNL Azure] クラウド設定が Experience Manager Assets に保存される場所となります。[!DNL Azure] 資格情報を入力して、「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
-### 転記の処理プロファイルを設定 {#configure-processing-profile}
+### トランスクリプションの処理プロファイルの設定 {#configure-processing-profile}
 
-一度 [!DNL Azure Media Services] はExperience Manager Assetsで設定され、次の手順では、オーディオおよびビデオアセットの AI ベースの転写を生成するためのアセット処理プロファイルを作成します。 AI ベースの処理プロファイルは、 [サポートされているオーディオまたはビデオアセット](#supported-file-formats-for-transcription) をExperience Manager Assetsでレンディションとして使用し、元のアセットが存在する同じフォルダーにトランスクリプト（.vtt ファイル）を保存します。 したがって、ユーザーがアセットとそのトランスクリプトレンディションを簡単に検索して見つけることができます。
+[!DNL Azure Media Services] を Experience Manager Assets に設定したら、次に、オーディオおよびビデオアセットの AI ベースのトランスクリプションを生成するためのアセット処理プロファイルを作成します。AI ベースの処理プロファイルは、[サポートされているオーディオまたはビデオアセット](#supported-file-formats-for-transcription)のトランスクリプトを Experience Manager Assets にレンディションとして生成し、オリジナルアセットが存在するフォルダーにトランスクリプト（.vtt ファイル）を保存します。したがって、ユーザーはアセットとそのトランスクリプトレンディションを簡単に探して見つけることができます。
 
-に移動します。 **[!UICONTROL ツール]** > **[!UICONTROL Assets]** > **[!UICONTROL 処理プロファイル]** をクリックし、 **[!UICONTROL 作成]** ボタンをクリックして、オーディオおよびビデオファイルの転写を生成する AI ベースの処理プロファイルを作成します。 デフォルトでは、処理プロファイルページに表示されるタブは 3 つ（「画像」、「ビデオ」、「カスタム」）のみです。 ただし、 **[!UICONTROL コンテンツ AI]** 設定済みの場合は、「 」タブが表示されます。 [!DNL Azure Media Services] の [!DNL Experience Manager Assets] インスタンス。 確認する [!DNL Azure] 資格情報が表示されない場合 **[!UICONTROL コンテンツ AI]** 」タブをクリックします。
+**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL 処理プロファイル]**&#x200B;に移動し、「**[!UICONTROL 作成]**」ボタンをクリックして、オーディオおよびビデオファイルのトランスクリプションを生成するための AI ベースの処理プロファイルを作成します。デフォルトでは、処理プロファイルページには 3 つのタブ（「画像」、「ビデオ」、「カスタム」）のみ表示されます。ただし、お使いの [!DNL Experience Manager Assets] インスタンスに [!DNL Azure Media Services] を設定してある場合は、「**[!UICONTROL コンテンツ AI]**」タブも表示されます。処理プロファイルの作成時に「**[!UICONTROL コンテンツ AI]**」タブが表示されない場合は、[!DNL Azure] 資格情報を確かめてください。
 
-内 **[!UICONTROL コンテンツ AI]** タブで、 **[!UICONTROL 新規追加]** ボタンをクリックして、転写を設定します。 ここでは、ドロップダウンリストからファイルタイプを選択して、トランスクリプトを生成するためのファイル形式（MIME タイプ）を含めたり除外したりすることができます。 次の図では、サポートされているすべてのオーディオおよびビデオファイルが含まれ、テキストファイルは除外されています。
+「**[!UICONTROL コンテンツ AI]**」タブで「**[!UICONTROL 新規追加]**」ボタンをクリックして、トランスクリプションを設定します。ここでは、ドロップダウンリストからファイルタイプを選択して、トランスクリプトを生成するためのファイル形式（MIME タイプ）を含めたり除外したりすることができます。次の図では、サポートされているオーディオおよびビデオファイルがすべて含まれ、テキストファイルは除外されています。
 
-を有効にします。 **[!UICONTROL 同じディレクトリに VTT トランスクリプトを作成]** トランスクリプトレンディション（.vtt ファイル）を作成し、元のアセットが存在する同じフォルダーに保存することを切り替えます。 他のレンディションも、この設定に関係なく、デフォルトの DAM アセット処理ワークフローで生成されます。
+「**[!UICONTROL 同じディレクトリに VTT トランスクリプトを作成]**」トグルを有効にして、トランスクリプトレンディション（.vtt ファイル）がオリジナルアセットが存在するフォルダーに作成、保存されるようにします。他のレンディションも、この設定に関係なく、デフォルトの DAM アセット処理ワークフローで生成されます。
 
 ![configure-transcription-service](assets/configure-transcription-profile.png)
 
-次の図は、Experience Manager Assetsで作成されたカスタムビデオプロファイルの詳細を示しています。
+次の図は、Experience Manager Assets で作成されるカスタムビデオプロファイルの詳細を示しています。
 
 ![configure-transcription-service](assets/video-processing-profile.png)
 
-ビデオプロファイルには、次のカスタム設定も含まれています。 詳しくは、 [処理プロファイルドキュメント](/help/assets/asset-microservices-configure-and-use.md) を参照してください。
+ビデオプロファイルには、次のカスタム設定も含まれています。カスタム処理プロファイルの作成方法について詳しくは、[処理プロファイルのドキュメント](/help/assets/asset-microservices-configure-and-use.md)を参照してください。
 
 ![configure-transcription-service](assets/video-processing-profile2.png)
 
-次に、このビデオプロファイルで転写を設定しましょう。 次に移動： **[!UICONTROL コンテンツ AI]** 」タブで、 **[!UICONTROL 新規追加]** 」ボタンをクリックします。 すべてのオーディオおよびビデオファイルを含め、画像およびアプリケーションファイルを除外します。 を有効にします。 **[!UICONTROL 同じディレクトリに VTT トランスクリプトを作成]** 設定を切り替えて保存します。
+それでは、このビデオプロファイルのトランスクリプションを設定しましょう。「**[!UICONTROL コンテンツ AI]**」タブに移動し、「**[!UICONTROL 新規追加]**」ボタンをクリックします。すべてのオーディオおよびビデオファイルを含め、画像およびアプリケーションファイルを除外します。「**[!UICONTROL 同じディレクトリに VTT トランスクリプトを作成]**」トグルを有効にして、設定を保存します。
 
 ![configure-transcription-service](assets/video-processing-profile1.png)
 
-オーディオおよびビデオファイルの書き起こし用に処理プロファイルを設定したら、次のいずれかの方法を使用して、この処理プロファイルをフォルダーに適用できます。
+オーディオおよびビデオファイルのトランスクリプション用に処理プロファイルを設定したら、次のいずれかの方法を使用して、この処理プロファイルをフォルダーに適用できます。
 
-* で処理プロファイルの定義を選択 **[!UICONTROL ツール]** > **[!UICONTROL Assets]** > **[!UICONTROL 処理プロファイル]**、およびを使用します。 **[!UICONTROL プロファイルをフォルダーに適用]** アクション。 コンテンツブラウザーを使用すると、特定のフォルダーに移動し、フォルダーを選択して、プロファイルの適用を確定できます。
-* Assets ユーザーインターフェイスでフォルダーを選択し、 **[!UICONTROL プロパティ]** アクションを使用して、フォルダーのプロパティを開きます。 次をクリック： **[!UICONTROL アセット処理]** 」タブをクリックし、そのフォルダーに適した処理プロファイルを「 **[!UICONTROL 処理プロファイル]** リスト。 変更を保存するには、「**[!UICONTROL 保存して閉じる]**」をクリックします。
+* **[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL 処理プロファイル]**&#x200B;で処理プロファイルの定義を選択し、「**[!UICONTROL プロファイルをフォルダーに適用]**」アクションを使用します。コンテンツブラウザーを使用すると、特定のフォルダーに移動し、フォルダーを選択して、プロファイルの適用を確定できます。
+* Assets ユーザーインターフェイスでフォルダーを選択し、「**[!UICONTROL プロパティ]**」アクションをクリックして、フォルダーのプロパティを開きます。「**[!UICONTROL アセット処理]**」タブをクリックし、そのフォルダーに適した処理プロファイルを「**[!UICONTROL 処理プロファイル]**」リストから選択します。変更を保存するには、「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
    ![configure-transcription-service](assets/video-processing-profile3.png)
 
-* ユーザーは、Assets ユーザーインターフェイスでフォルダーまたは特定のアセットを選択して処理プロファイルを適用し、「 」を選択できます **[!UICONTROL アセットを再処理]** 」オプションを使用して、上部にあるオプションから選択します。
+* Assets ユーザーインターフェイスでフォルダーまたは特定のアセットを選択して処理プロファイルを適用したあと、上部にあるオプションから「**[!UICONTROL アセットを再処理]**」オプションを選択できます。
 
 >[!TIP]
 >1 つのフォルダーに適用できる処理プロファイルは 1 つだけです。
 >
->処理プロファイルをフォルダーに適用すると、このフォルダーまたはそのサブフォルダー内の新しいアセットがすべて、設定された追加の処理プロファイルを使用して処理されます（または更新）。 この処理は、標準のデフォルトプロファイルによる処理に加えて行われます。
+>処理プロファイルがフォルダーに適用されると、このフォルダーまたはその任意のサブフォルダー内でアップロード（または更新）された新しいアセットはすべて、設定された追加の処理プロファイルを使用して処理されます。この処理は、標準のデフォルトプロファイルによる処理に加えて行われます。
 
 >[!NOTE]
 >
->フォルダーに適用された処理プロファイルはツリー全体で機能しますが、サブフォルダーに適用された別のプロファイルでオーバーライドすることもできます。
+>フォルダーに適用された処理プロファイルはツリー全体で機能しますが、サブフォルダーに適用された別のプロファイルでオーバーライドすることができます。
 >
->アセットがフォルダーにアップロードされると、Experience Managerは、そのフォルダーのプロパティと通信して、処理プロファイルを識別します。 何も適用されない場合は、適用する処理プロファイルが階層内の親フォルダーで確認されます。
+>アセットがフォルダーにアップロードされると、Experience Manager は、そのフォルダーのプロパティと通信して、処理プロファイルを特定します。何も適用されない場合は、適用する処理プロファイルが階層内の親フォルダーで確認されます。
 
 
-## オーディオまたはビデオアセットの転写を生成する {#generate-transcription}
+## オーディオまたはビデオアセットのトランスクリプションの生成 {#generate-transcription}
 
-ビデオアセットを処理する際に、 [AI ベースの処理プロファイル](#configure-processing-profile-for-transcription) は、同じフォルダー内の元のアセットと共に、トランスクリプト（.vtt ファイル）をレンディションとして自動的に生成します。
+ビデオアセットの処理時に、[AI ベースの処理プロファイル](#configure-processing-profile-for-transcription) は、オリジナルアセットと同じフォルダーにトランスクリプト（.vtt ファイル）をレンディションとして自動的に生成します。
 
 ![configure-transcription-service](assets/transcript1.png)
 
-また、元のビデオアセットのレンディションにアクセスして、トランスクリプトレンディションを表示することもできます。 次の手順で **[!UICONTROL レンディション]** パネルで、元のビデオアセットを選択し、左側のパネルを開きます。 トランスクリプトレンディション（.vtt ファイル）が **[!UICONTROL TRANSCRIPTVTT]** 頭
+また、オリジナルビデオアセットのレンディションにアクセスして、トランスクリプトレンディションを確認することもできます。**[!UICONTROL レンディション]**&#x200B;パネルにアクセスするには、オリジナルビデオアセットを選択し、左側のパネルを開きます。**[!UICONTROL TRANSCRIPT.VTT]** 見出しの下にトランスクリプトレンディション（.vtt ファイル）が表示されているのがわかります。
 
 ![configure-transcription-service](assets/transcript.png)
 
-トランスクリプト（.vtt テキストファイル）を別のアセットレンディションとしてフォルダーから、または **[!UICONTROL レンディション]** 元のアセットのパネル（アセットのすべてのレンディションをダウンロードする）
+トランスクリプト（.vtt テキストファイル）は、別のアセットレンディションとしてフォルダーから直接ダウンロードすることもできますし、オリジナルアセットの&#x200B;**[!UICONTROL レンディション]**&#x200B;パネル内からダウンロードする（アセットのすべてのレンディションをダウンロードする）こともできます。
 
-現在、Experience Managerは VTT ファイルの全文プレビューや編集をネイティブではサポートしていません。 ただし、トランスクリプトのレンディションをダウンロードし、任意のテキストエディターを使用して、トランスクリプトを編集または検証できます。 トランスクリプトは、ビデオ内の指定されたタイムスタンプのテキストとしての話し言語を、転写の信頼性スコア（精度）と共に反映します。
+現在、Experience Manager では、VTT ファイルの全文プレビューや編集をネイティブにはサポートしていません。ただし、トランスクリプトレンディションをダウンロードし、任意のテキストエディターを使用して、トランスクリプトを編集したり確認したりすることはできます。トランスクリプトは、ビデオ内の指定されたタイムスタンプにおける音声言語を、トランスクリプションの信頼性スコア（精度）と共にテキストとして表すものです。
 
 ![configure-transcription-service](assets/transcript-text.png)
 
-## Dynamic Mediaでの転写の使用 {#using-transcription-in-dynamic-media}
+## Dynamic Media でのトランスクリプションの使用 {#using-transcription-in-dynamic-media}
 
-次の場合： [設定済みのDynamic Media](/help/assets/dynamic-media/config-dm.md) Experience Manager Assetsインスタンスで、アセット（オーディオまたはビデオファイル）とそのトランスクリプト（.vtt ファイル）をDynamic Mediaに公開できます。 これにより、元のアセット（オーディオまたはビデオファイル）とその転写レンディション（.vtt ファイル）が、同じフォルダー内のDynamic Mediaに公開されます。 Dynamic Media管理者が実行できる操作 [CC クローズドキャプションエクスペリエンスを有効にする](/help/assets/dynamic-media/video.md#adding-captions-to-video) トランスクリプトレンディション（.vtt ファイル）を使用するオーディオまたはビデオファイルの場合。
+お使いの Experience Manager Assets インスタンスに [Dynamic Media が設定されている](/help/assets/dynamic-media/config-dm.md)場合は、アセット（オーディオまたはビデオファイル）とそのトランスクリプト（.vtt ファイル）を Dynamic Media に公開できます。その場合は、オリジナルアセット（オーディオまたはビデオファイル）とそのトランスクリプトレンディション（.vtt ファイル）が、Dynamic Media の同じフォルダー内で公開されます。Dynamic Media 管理者は、トランスクリプトレンディション（.vtt ファイル）を使用してオーディオまたはビデオファイルの [CC クローズドキャプションエクスペリエンスを有効にする](/help/assets/dynamic-media/video.md#adding-captions-to-video)ことができます。
 
 関連トピック：
 
-* [CC クローズドキャプションをDynamic Mediaに追加する方法に関するビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html#add-cc-closed-captioning-to-dynamic-media-video)
-* [YouTubeへのDynamic Mediaビデオの公開](/help/assets/dynamic-media/video.md#publishing-videos-to-youtube)
+* [Dynamic Media ビデオに CC クローズドキャプションを追加する方法に関するビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html#add-cc-closed-captioning-to-dynamic-media-video)
+* [YouTube への Dynamic Media ビデオの公開](/help/assets/dynamic-media/video.md#publishing-videos-to-youtube)
 
-次の図では、URL は、トランスクリプト（.vtt ファイル）を参照するキャプション部分を反映しています。 このビデオは、読み上げ言語（テキストの転写）を **[!UICONTROL クローズドキャプション]** ビデオ内の指定されたタイムスタンプ。 ユーザーは、 **[!UICONTROL CC]** 」ボタンをクリックします。
+次の図の URL は、トランスクリプト（.vtt ファイル）を参照するキャプション部分を表しています。このビデオでは、ビデオ内の指定されたタイムスタンプにおける音声言語（トランスクリプトテキスト）を&#x200B;**[!UICONTROL クローズドキャプション]**&#x200B;として表示しています。ユーザーは、「**[!UICONTROL CC]**」ボタンを使用して、キャプションを有効または無効にすることができます。
 
 ![configure-transcription-service](assets/transcript-example.png)
 
-## 転記でサポートされているファイル形式 {#supported-file-format}
+## トランスクリプションでサポートされているファイル形式 {#supported-file-format}
 
-次のオーディオおよびビデオファイル形式が転写でサポートされています。
+次のオーディオおよびビデオファイル形式がトランスクリプションでサポートされています。
 
-| サポートされるオーディオ/ビデオ形式 | 拡張 |
+| サポートされているオーディオ／ビデオ形式 | 拡張子 |
 |----|----|
-| FLV （H.264 および AAC コーデックを使用） | (.flv) |
-| MXF | (.mxf) |
-| MPEG2-PS、MPEG2-TS、3GP | (.ts, .ps, .3gp, .3gpp, .mpg) |
-| Windows Media ビデオ (WMV)/ASF | (.wmv, .asf) |
-| AVI（非圧縮 8 ビット/10 ビット） | (.avi) |
+| FLV（H.264 および AAC コーデックを使用） | （.flv） |
+| MXF | （.mxf） |
+| MPEG2-PS、MPEG2-TS、3GP | （.ts、.ps、.3gp、.3gpp、.mpg） |
+| Windows メディアビデオ（WMV）／ASF | （.wmv、.asf） |
+| AVI（非圧縮 8 ビット／10 ビット） | （.avi） |
 | MP4 | （.mp4、.m4a、.m4v） |
-| Microsoft®デジタルビデオ録画 (DVR-MS) | (.dvr-ms) |
-| Matroska/WebM | (.mkv) |
-| WAVE/WAV | (.wav) |
-| QuickTime | (.mov) |
+| Microsoft®デジタルビデオ録画（DVR-MS） | （.dvr-ms） |
+| Matroska／WebM | （.mkv） |
+| WAVE／WAV | （.wav） |
+| QuickTime | （.mov） |
 
 
 >[!NOTE]
 >
->アプリケーションタイプのアセット（オーディオまたはビデオファイル）は、転写に対してサポートされていません。
+>アプリケーションタイプのアセット（オーディオまたはビデオファイル）は、トランスクリプションでサポートされていません。
 
 ## 既知の制限事項 {#known-limitations}
 
-* 転写機能は、最長 10 分のビデオに対してサポートされます。
+* トランスクリプション機能は、10 分までのビデオに対応しています。
 * ビデオタイトルは 80 文字未満にする必要があります。
-* サポートされるファイルサイズは最大 15 GB です。
-* サポートされる最大処理時間は 60 分です。
-* 有料 [!DNL Azure] アカウントに保存する場合、1 分あたり最大 50 本のムービーをアップロードできます。 ただし、体験版アカウントでは、1 分あたり最大 5 本のムービーをアップロードできます。
+* サポートされているファイルサイズは最大 15 GB です。
+* サポートされている最大処理時間は 60 分です。
+* [!DNL Azure] の有料アカウントでは、1 分あたり最大 50 本のムービーをアップロードできます。一方、体験版アカウントでは、1 分あたり最大 5 本のムービーをアップロードできます。
 
 ## トラブルシューティングのヒント {#troubleshooting}
 
-にログインします。 [!DNL Azure Media Services] 同じ資格情報（設定に使用済み）を持つアカウントを使用して、リクエストのステータスを検証します。 連絡先 [!DNL Azure] リクエストが正常に処理されなかった場合に対応します。
+（設定に使用した資格情報と）同じ資格情報で [!DNL Azure Media Services] アカウントにログインして、リクエストのステータスを確認します。リクエストが正常に処理されない場合は、[!DNL Azure] サポートにお問い合わせください。

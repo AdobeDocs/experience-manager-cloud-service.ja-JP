@@ -5,8 +5,8 @@ feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ AEM には次の 2 種類のエンドポイントがあります。
 >
 >コンテンツ作成者がこのシナリオを制御する必要があります。例えば、共有コンテンツフラグメントモデルをグローバルサイト設定の下に配置すると便利です。
 
-AEM グローバルエンドポイント用 GraphQL のリポジトリパスは次のとおりです。
+AEM グローバルエンドポイント用 GraphQL のリポジトリーパスは次のとおりです。
 
 `/content/cq:graphql/global/endpoint`
 
@@ -60,7 +60,7 @@ GraphQL エンドポイントを有効にするには、まず適切な設定が
 
 対応するエンドポイントを有効にするには、以下を行います。
 
-1. に移動します。 **ツール**, **一般**&#x200B;を選択し、「 **GraphQL**.
+1. **ツール**／**一般** に移動し、「**GraphQL**」を選択します。
 1. 「**作成**」を選択します。
 1. **新しい GraphQL エンドポイントを作成**&#x200B;ダイアログが開きます。以下を指定します。
    * **名前**：エンドポイントの名前。任意のテキストを入力できます。

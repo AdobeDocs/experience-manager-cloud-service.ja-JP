@@ -5,8 +5,8 @@ index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
 workflow-type: tm+mt
-source-wordcount: '1119'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -67,15 +67,15 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
 1. 「**ソースコード**」タブで、次のオプションを定義する必要があります。
 
    * **適格なデプロイメント環境** - パイプラインがデプロイメントパイプラインの場合、デプロイ先の環境を選択する必要があります。
-   * **リポジトリ** - このオプションは、パイプラインがコードを取得する Git リポジトリを定義します。
+   * **リポジトリー** - このオプションは、パイプラインがコードを取得する Git リポジトリーを定義します。
 
    >[!TIP]
    > 
-   >Cloud Manager でリポジトリを追加および管理する方法については、[リポジトリの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)のドキュメントを参照してください。
+   >Cloud Manager でリポジトリーを追加および管理する方法については、[リポジトリーの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)のドキュメントを参照してください。
 
    * **Git ブランチ** - このオプションは、選択したパイプラインのどのブランチからコードを取得するかを定義します。
-      * ブランチ名の最初の数文字を入力すると、このフィールドのオートコンプリート機能により、一致するブランチが検索され、選択に役立ちます。
-   * **コードの場所** - このオプションは、パイプラインがコードを取得する必要がある、選択したリポジトリのブランチ内のパスを定義します。
+      * ブランチ名の最初の数文字を入力すると、このフィールドのオートコンプリート機能により、一致するブランチが検索され、選択の助けになります。
+   * **コードの場所** - このオプションは、パイプラインがコードを取得する必要がある、選択したリポジトリーのブランチ内のパスを定義します。
 
    ![フロントエンドパイプライン](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
 
@@ -96,15 +96,15 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
 1. 「**ソースコード**」タブで、次のオプションを定義する必要があります。
 
    * **適格なデプロイメント環境** - パイプラインがデプロイメントパイプラインの場合、デプロイ先の環境を選択する必要があります。
-   * **リポジトリ** - このオプションは、パイプラインがコードを取得する Git リポジトリを定義します。
+   * **リポジトリー** - このオプションは、パイプラインがコードを取得する Git リポジトリーを定義します。
 
    >[!TIP]
    > 
-   >Cloud Manager でリポジトリを追加および管理する方法については、[リポジトリの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)のドキュメントを参照してください。
+   >Cloud Manager でリポジトリーを追加および管理する方法については、[リポジトリーの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)のドキュメントを参照してください。
 
    * **Git ブランチ** - このオプションは、選択したパイプラインのどのブランチからコードを取得するかを定義します。
-      * ブランチ名の最初の数文字を入力すると、このフィールドのオートコンプリート機能により、一致するブランチが検索され、選択に役立ちます。
-   * **Web 層の構成を無視**  — オンにすると、パイプラインは Web 層設定をデプロイしません。
+      * ブランチ名の最初の数文字を入力すると、このフィールドのオートコンプリート機能により、一致するブランチが検索され、選択の助けになります。
+   * **web 階層設定を無視** - オンにすると、パイプラインは web 階層設定をデプロイしなくなります。
 
    ![フルスタックパイプライン](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -125,14 +125,14 @@ Web 階層コードの実稼動以外のパイプラインの設定を完了す�
 1. 「**ソースコード**」タブで、次のオプションを定義する必要があります。
 
    * **適格なデプロイメント環境** - パイプラインがデプロイメントパイプラインの場合、デプロイ先の環境を選択する必要があります。
-   * **リポジトリ** - このオプションは、パイプラインがコードを取得する Git リポジトリを定義します。
+   * **リポジトリー** - このオプションは、パイプラインがコードを取得する Git リポジトリーを定義します。
 
    >[!TIP]
    > 
-   >Cloud Manager でリポジトリを追加および管理する方法については、[リポジトリの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)のドキュメントを参照してください。
+   >Cloud Manager でリポジトリーを追加および管理する方法については、[リポジトリーの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)のドキュメントを参照してください。
 
    * **Git ブランチ** - このオプションは、選択したパイプラインのどのブランチからコードを取得するかを定義します。
-   * **コードの場所** - このオプションは、パイプラインがコードを取得する必要がある、選択したリポジトリのブランチ内のパスを定義します。
+   * **コードの場所** - このオプションは、パイプラインがコードを取得する必要がある、選択したリポジトリーのブランチ内のパスを定義します。
       * Web 階層設定パイプラインの場合、これは通常、`conf.d`、`conf.dispatcher.d` および `opt-in` ディレクトリを含んだパスになります。
       * 例えば、プロジェクト構造が [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)から生成された場合、パスは `/dispatcher/src` のようになります。
 

@@ -7,8 +7,8 @@ role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
 source-git-commit: 30870502f0e6084991bdba79163651f43f15a99b
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 81%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -50,27 +50,27 @@ ht-degree: 81%
 
    ![オブジェクトのスマートな置換](/help/assets/assets/content-automation-objectreplace.png)
 
-## AEM as a Cloud Service Program のコンテンツ自動化の有効化 {#enable-content-automation}
+## AEM as a Cloud Service プログラムのコンテンツ自動化の有効化 {#enable-content-automation}
 
-Cloud Manager を使用してAEMas a Cloud Serviceプログラムのコンテンツ自動化アドオンを有効にするには：
+Cloud Manager を使用して AEM as a Cloud Service プログラムのコンテンツ自動化アドオンを有効にするには：
 
-1. コンテンツ自動化アドオンのライセンスを取得するには、アカウント担当者にお問い合わせください。
-1. Cloud Manager にアクセスし、組織セレクターを使用して組織に切り替えます。
-1. クリック **[!UICONTROL プログラムの追加]** プログラム名を指定します。
+1. アカウント担当者に連絡して、コンテンツ自動化アドオンのライセンスを取得します。
+1. Cloud Manager にアクセスし、組織セレクターを使用して所属先の組織に切り替えます。
+1. 「**[!UICONTROL プログラムを追加]**」をクリックし、プログラム名を指定します。
 1. 「**[!UICONTROL 続行]**」をクリックします。
-1. 展開 **[!UICONTROL Assets]** を選択し、 **[!UICONTROL コンテンツの自動化]**.
+1. 「**[!UICONTROL アセット]**」を展開し、「**[!UICONTROL コンテンツ自動化]**」を選択します。
 1. 「**[!UICONTROL 作成]**」をクリックします。
-1. 次の場所にパイプラインを実行 [Cloud Manager に変更をデプロイします。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. パイプラインを実行して、[変更内容を Cloud Manager にデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=ja)します。
 
-Cloud Manager の既存のAEMas a Cloud Serviceプログラムにコンテンツ自動化アドオンを追加する必要がある場合：
+Cloud Manager の既存の AEM as a Cloud Service プログラムにコンテンツ自動化アドオンを追加する必要がある場合：
 
-1. プログラムカードの「 ... 」をクリックします。
+1. プログラムカードで「...」をクリックします。
 
-1. 選択 **[!UICONTROL プログラムを編集]** 次に、 **[!UICONTROL ソリューションとアドオン]** タブをクリックします。
+1. 「**[!UICONTROL プログラムを編集]**」を選択したあと、「**[!UICONTROL ソリューションとアドオン]**」タブを選択します。
 
-1. 展開 **[!UICONTROL Assets]** を選択し、 **[!UICONTROL コンテンツの自動化]**.
+1. 「**[!UICONTROL アセット]**」を展開し、「**[!UICONTROL コンテンツ自動化]**」を選択します。
 1. 「**[!UICONTROL 更新]**」をクリックします。
-1. 次の場所にパイプラインを実行 [Cloud Manager に変更をデプロイします。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. パイプラインを実行して、[変更内容を Cloud Manager にデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)します。
 
 ## 処理プロファイルを使用したクリエイティブアセットの一括編集 {#process-assets}
 

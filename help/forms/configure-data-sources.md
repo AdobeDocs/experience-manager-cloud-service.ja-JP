@@ -7,8 +7,8 @@ level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: 983f1b815fd213863ddbcd83ac7e3f076c57d761
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 89%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 89%
 
 ![データ統合](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] のデータ統合機能により、複数の異なるデータソースを設定して接続することができます。次のタイプが標準でサポートされています。
+[!DNL Experience Manager Forms] のデータ統合機能により、複数の異なるデータソースを設定して接続することができます。以下のタイプがサポートされています。これらのタイプは、すぐに使用することができます。
 
 <!-- * Relational databases - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], and [!DNL Oracle RDBMS] 
 * [!DNL Experience Manager] user profile  -->
 * RESTful Web サービス
 * SOAP ベース Web サービス
-* OData サービス （バージョン 4.0）
+* OData サービス(バージョン 4.0)
 * Microsoft Dynamics
-* SalesForce
+* Salesforce
 * Microsoft Azure Blob Storage
 
 データ統合では、すぐに使用できる認証タイプとして、OAuth2.0 認証、基本認証、API キー認証がサポートされています。また、Web サービスにアクセスするためのカスタムの認証タイプを実装することもできます。RESTful、SOAP ベース、OData の各サービスは [!DNL Experience Manager] as a Cloud Service<!--, JDBC for relational databases --> で設定されますが、[!DNL Experience Manager] ユーザープロファイル用のコネクタは [!DNL Experience Manager] web コンソールで設定されます。
@@ -113,7 +113,7 @@ RESTful サービス、SOAP サービス、OData サービスのクラウドサ�
 
 ## RESTful Web サービスの設定 {#configure-restful-web-services}
 
-RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式または YAML 形式で [Swagger 定義ファイル](https://swagger.io/specification/v2/)内に記述できます。で RESTful Web サービスを設定するには、以下を実行します。 [!DNL Experience Manager] as a Cloud Service [!DNL Swagger] ファイル ([Swagger バージョン 2.0](https://swagger.io/specification/v2/)) をファイルシステムまたはファイルがホストされている URL に設定する必要があります。
+RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式または YAML 形式で [Swagger 定義ファイル](https://swagger.io/specification/v2/)内に記述できます。[!DNL Experience Manager] as a Cloud Service で RESTful web サービスを設定するには、ファイルシステムに [!DNL Swagger] ファイル（[Swagger Version 2.0](https://swagger.io/specification/v2/)）が存在しているか、Swagger ファイルがホストされる URL を指定する必要があります。
 
 RESTful サービスを設定するには、以下の手順を実行します。
 
@@ -144,17 +144,17 @@ RESTful サービスを設定するには、以下の手順を実行します。
 データソースとして RESTful web サービスと統合する場合の [!DNL Experience Manager Forms] フォームデータモデルには、パフォーマンス最適化のための HTTP クライアント設定が含まれています。
 
 
-次の **[!UICONTROL REST データソース用のフォームデータモデル HTTP クライアント設定]** 正規表現を指定する設定：
+**[!UICONTROL REST データソース設定のフォームデータモデル HTTP クライアント設定]**&#x200B;の次のプロパティを設定し、正規表現を指定します。
 
-* 以下を使用： `http.connection.max.per.route` フォームデータモデルと RESTful Web サービス間で許可される最大接続数を設定するプロパティです。 デフォルト値は 20 接続です。
+* `http.connection.max.per.route` プロパティを使用して、フォームデータモデルと RESTful web サービス間で許可される最大接続数を設定します。デフォルト値は 20 接続です。
 
-* 以下を使用： `http.connection.max` プロパティを使用して、各ルートに許可される最大接続数を指定します。 デフォルト値は 40 接続です。
+* `http.connection.max` プロパティを使用して、各ルートに許可される最大接続数を指定します。デフォルト値は 40 接続です。
 
-* 以下を使用： `http.connection.keep.alive.duration` 永続的な HTTP 接続が有効に保たれる期間を指定するプロパティです。 デフォルト値は 15 秒です。
+* `http.connection.keep.alive.duration` プロパティを使用して、永続的な HTTP 接続が有効に保たれる期間を指定します。デフォルト値は 15 秒です。
 
-* 以下を使用： `http.connection.timeout` 期間を指定するプロパティ ( [!DNL Experience Manager Forms] サーバは接続を確立するのを待ちます。 デフォルト値は 10 秒です。
+* `http.connection.timeout` プロパティを使用して、[!DNL Experience Manager Forms] 接続が確立するまでのサーバーの待機時間を指定します。デフォルト値は 10 秒です。
 
-* 以下を使用： `http.socket.timeout` プロパティを使用して、2 つのデータパケットの間の無操作状態の最大期間を指定します。 デフォルト値は 30 秒です。
+* `http.socket.timeout` プロパティを使用して、2 つのデータパケット間の無操作状態の最大期間を指定します。デフォルト値は 30 秒です。
 
 以下の JSON ファイルにサンプルが表示されています。
 
@@ -176,9 +176,9 @@ RESTful サービスを設定するには、以下の手順を実行します。
 
 1. [!DNL Experience Manager Forms] オーサーインスタンスに管理者としてログインし、[!DNL Experience Manager] web コンソールバンドルに移動します。デフォルトの URL は [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) です。
 
-1. タップ **[!UICONTROL REST データソース用のフォームデータモデル HTTP クライアント設定]**.
+1. 「**[!UICONTROL REST データソース用フォームデータモデル HTTP クライアント設定]**」をタップします。
 
-1. 内 [!UICONTROL REST データソース用のフォームデータモデル HTTP クライアント設定] ダイアログ：
+1. [!UICONTROL REST データソース用フォームデータモデル HTTP クライアント設定]ダイアログで、
 
    * **[!UICONTROL 接続制限（合計）]**&#x200B;フィールドに、フォームデータモデルと RESTful web サービス間の接続許可数の上限を指定します。デフォルト値は 20 接続です。
 
@@ -234,7 +234,7 @@ OData サービスは、そのサービスのルート URL によって識別さ
 
 >[!NOTE]
 >
-> フォームデータモデルがサポートする [OData バージョン 4](https://www.odata.org/documentation/).
+> フォームデータモデルは [OData バージョン 4](https://www.odata.org/documentation/) をサポートします。
 >オンライン環境またはオンプレミス環境で [!DNL Microsoft Dynamics 365] を設定する詳しい手順については、[[!DNL Microsoft Dynamics] OData 設定](ms-dynamics-odata-configuration.md)を参照してください。
 
 1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーをタップして選択します。

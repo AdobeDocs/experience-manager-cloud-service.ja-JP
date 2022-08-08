@@ -6,8 +6,8 @@ feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
 source-git-commit: 6e1408abde71c5400adaeaea130e4b7f9287169a
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 63%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 63%
 
 1. Dispatcher で、`authorization`、`username` および `apikey` という名前の HTTP ヘッダーを許可します。`/bin/workfront-tools` への `GET`、`POST` および `PUT` リクエストを許可します。
 
-1. 次のパスが [!DNL Experience Manager] リポジトリに存在しないことを確認します。
+1. 次のパスが [!DNL Experience Manager] リポジトリーに存在しないことを確認します。
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`
    * `/apps/dam/gui/coral/components/admin/folderschemaforms/formbuilder`
@@ -48,13 +48,13 @@ ht-degree: 63%
 
 アドオンを [!DNL Experience Manager] に [!DNL Cloud Service] としてインストールするには、次の手順に従います。
 
-1. から拡張コネクタをダウンロード [Adobeソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip).
+1. [アドビのソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/ja/aemcloud.html?package=/content/software-distribution/ja/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip)から拡張コネクタをダウンロードします。
 
-1. [アクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) Cloud Manager からAEM as a Cloud Serviceリポジトリのクローンを作成します。
+1. Cloud Manager から AEM as a Cloud Service リポジトリーに[アクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=ja)し、クローンを作成します。
 
-1. 任意の IDE を使用して、クローンされたAEMas a Cloud Serviceリポジトリを開きます。
+1. 任意の IDE を使用して、AEM as a Cloud Service リポジトリーのクローンを開きます。
 
-1. 手順 1 でダウンロードした拡張コネクタ zip ファイルを次のパスに配置します。
+1. 手順 1 でダウンロードした拡張コネクタの zip ファイルを次のパスに配置します。
 
    ```TXT
       /ui.apps/src/main/resources/<zip file>
@@ -62,7 +62,7 @@ ht-degree: 63%
 
    >[!NOTE]
    >
-   >この `resources` フォルダーが存在しません。フォルダーを作成します。
+   >`resources` フォルダーが存在しない場合は作成します。
 
 
 1. `pom.xml` 依存関係を追加します。
@@ -82,9 +82,9 @@ ht-degree: 63%
 
       >[!NOTE]
       >
-      >依存関係を親にコピーする前に、拡張コネクタのバージョン番号を必ず更新してください `pom.xml`.
+      >依存関係を親 `pom.xml` にコピーする前に、拡張コネクタのバージョン番号を必ず更新してください。
 
-   1. 依存関係をに追加 `all module pom.xml`.
+   1. `all module pom.xml` に依存関係を追加します。
 
       ```XML
          <dependency>
@@ -109,15 +109,15 @@ ht-degree: 63%
    </embedded>
    ```
 
-   埋め込みセクションのターゲットが `/apps/<path-to-project-install-folder>/install`. この JCR パス `/apps/<path-to-project-install-folder>` を `all/src/main/content/META-INF/vault/filter.xml` ファイル。 リポジトリのフィルター規則は、通常、プログラム名から派生します。 フォルダーの名前を既存のルールのターゲットとして使用します。
+   埋め込みセクションのターゲットが `/apps/<path-to-project-install-folder>/install` に設定されます。JCR パス `/apps/<path-to-project-install-folder>` を、`all/src/main/content/META-INF/vault/filter.xml` ファイルのフィルタールールに含める必要があります。リポジトリーのフィルタールールは、通常、プログラム名から派生します。フォルダーの名前を既存ルールのターゲットとして使用します。
 
-1. 変更をリポジトリにプッシュします。
+1. 変更をリポジトリーにプッシュします。
 
-1. 次の場所にパイプラインを実行 [Cloud Manager に変更をデプロイします。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. パイプラインを実行して、[変更内容を Cloud Manager にデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=ja)します。
 
 1. システムユーザー設定を作成するには、[!DNL Experience Manager] ユーザーグループに `wf-workfront-users` を作成し、権限 `jcr:all` を `/content/dam` に割り当てます。システムユーザー `workfront-tools` が自動的に作成され、必要な権限が自動的に管理されます。拡張コネクタを使用する [!DNL Workfront] のすべてのユーザーは、このグループの一員として自動的に追加されます。
 
-を更新するための情報 [!DNL Workfront for Experience Manager enhanced connector] 以前のバージョンから最新のバージョンに、 [ここ](update-workfront-enhanced-connector.md).
+以前のバージョンから最新のバージョンに [!DNL Workfront for Experience Manager enhanced connector] を更新するための情報は、[こちら](update-workfront-enhanced-connector.md)にあります。
 
 ## [!DNL Experience Manager] 間の接続を [!DNL Cloud Service] と [!DNL Workfront] のように設定します。 {#configure-connection}
 

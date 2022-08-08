@@ -4,14 +4,14 @@ description: このドキュメントでは、スタンドアロン SPA を AEM 
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 source-git-commit: af7d8229ee080852f3c5b542db97b5c223357cf0
 workflow-type: tm+mt
-source-wordcount: '2401'
-ht-degree: 88%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # AEM 内での外部 SPA の編集 {#editing-external-spa-within-aem}
 
-外部 SPA と AEM の間で[どのレベルの統合](/help/implementing/developing/headful-headless.md)をおこなうかを決める際に、AEM 内で SPA を表示するだけでなく、編集も必要になることがあります。
+外部 SPA と AEM の間の[統合レベル](/help/implementing/developing/headful-headless.md)を決める際に、AEM 内で SPA を表示するだけでなく、編集も必要になることがあります。
 
 ## 概要 {#overview}
 
@@ -63,7 +63,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 アプリケーションがレンダリングされる前に、 [`ModelManager`](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager) を初期化して AEM `ModelStore` の作成を処理する必要があります。
 
-これは、アプリケーションの `src/index.js` ファイル内、またはアプリケーションのルートがレンダリングされる場所でおこなう必要があります。
+これは、アプリケーションの `src/index.js` ファイル内、またはアプリケーションのルートがレンダリングされる場所で行う必要があります。
 
 このためには、`ModelManager` が提供する `initializationAsync` API を使用できます。
 
@@ -103,7 +103,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
    >[!NOTE]
    >
-   >この例では、コンポーネントに異なるバージョン（AEM でラップされた React コンポーネントとアンラップされていないコンポーネント）があります。コンポーネントを明示的に使用する場合は、ラップされたバージョンを使用する必要があります。コンポーネントがページの一部になっている場合は、SPA エディターでおこなったとおりに、デフォルトのコンポーネントを使用し続けることができます。
+   >この例では、コンポーネントに異なるバージョン（AEM でラップされた React コンポーネントとアンラップされていないコンポーネント）があります。コンポーネントを明示的に使用する場合は、ラップされたバージョンを使用する必要があります。コンポーネントがページの一部になっている場合は、SPA エディターで現在行われているように、デフォルトのコンポーネントを引き続き使用することができます。
 
 1. コンポーネント内のコンテンツをレンダリングします。
 
@@ -203,7 +203,7 @@ mvn clean install -PautoInstallSinglePackage
 
    >[!NOTE]
    >
-   >この例では、前に作成したラップされた `AEMText` を含める代わりに、ラップされていない React テキストコンポーネントを使用しています。これは、コンポーネントがページ／コンテナの一部であってスタンドアローンではない場合、コンテナがコンポーネントのマッピングを再帰的におこない、オーサリング機能を有効にし、子ごとに追加のラッパーを必要としないためです。
+   >この例では、前に作成したラップされた `AEMText` を含める代わりに、ラップされていない React テキストコンポーネントを使用しています。これは、コンポーネントがページ／コンテナの一部であってスタンドアローンではない場合、コンテナがコンポーネントのマッピングを再帰的に行い、オーサリング機能を有効にするので、子ごとの追加ラッパーが不応になるためです。
 
 1. SPA で認証可能なページを追加するには、「[認証可能なコンポーネントをページに追加](#add-authorable-component-to-page)」節を同じ手順に従います。 ただし、ここでは、`itemPath` プロパティをスキップできます。
 
@@ -260,39 +260,39 @@ mvn clean install -PautoInstallSinglePackage
 
 ### 仮想コンテナ {#virtual-containers}
 
-対応するコンテナがAEMでまだ作成されていない場合でも、コンテナを追加する機能がサポートされています。 概念とアプローチは、 [バーチャルリーフコンポーネント。](#virtual-leaf-components)
+対応するコンテナが AEM に作成されていない場合でも、コンテナを追加する機能はサポートされます。概念とアプローチは[仮想リーフコンポーネント](#virtual-leaf-components)と似ています。
 
-フロントエンド開発者は、SPA内の適切な場所にコンテナコンポーネントを追加できます。これらのコンポーネントをAEMのエディターで開くと、プレースホルダーが表示されます。 作成者は、コンポーネントとそのコンテンツをコンテナに追加し、JCR 構造内に必要なノードを作成できます。
+フロントエンド開発者は、SPA 内の適切な場所にコンテナコンポーネントを追加できます。AEM のエディターでこれらのコンポーネントを開くとプレースホルダーが表示されます。次に、作成者はコンポーネントとそのコンテンツをコンテナに追加し、必要なノードを JCR 構造内に作成できます。
 
-例えば、コンテナが既に `/root/responsivegrid` 開発者は、新しい子コンテナを追加します。
+例えば、コンテナが既に `/root/responsivegrid` に存在し、開発者が新しい子コンテナを追加したい場合は、次のようになります。
 
 ![コンテナの場所](assets/container-location.png)
 
-`newContainer` は、まだAEMに存在しません。
+`newContainer` はまだ AEM に存在しません。
 
-このコンポーネントを含むページをAEMで編集すると、コンテナの空のプレースホルダーが表示され、作成者はこのプレースホルダーにコンテンツを追加できます。
+このコンポーネントを含んだページを AEM で編集すると、コンテナの空のプレースホルダーが表示され、作成者はこのプレースホルダーにコンテンツを追加できます。
 
-![コンテナプレースホルダー](assets/container-placeholder.png)
+![コンテナのプレースホルダー](assets/container-placeholder.png)
 
-![JCR 内のコンテナの場所](assets/container-jcr-structure.png)
+![JCR でのコンテナの場所](assets/container-jcr-structure.png)
 
-作成者がコンテナに子コンポーネントを追加すると、JCR 構造内の対応する名前で新しいコンテナノードが作成されます。
+作成者がコンテナに子コンポーネントを追加すると、新しいコンテナノードが、対応する名前で JCR 構造内に作成されます。
 
-![コンテンツを含むコンテナ](assets/container-with-content.png)
+![コンテンツを含んだコンテナ](assets/container-with-content.png)
 
-![JCR 内のコンテンツを含むコンテナ](assets/container-with-content-jcr.png)
+![JCR にコンテンツがあるコンテナ](assets/container-with-content-jcr.png)
 
-作成者が必要とする場合は、コンポーネントとコンテンツを今すぐコンテナに追加できます。変更内容は保持されます。
+作成者の必要に応じて、さらにコンポーネントとコンテンツをコンテナに追加できます。変更内容は保持されます。
 
 #### 要件と制限 {#container-limitations}
 
-仮想コンテナを追加するには、いくつかの要件があります。
+仮想コンテナを追加するための要件はいくつかあり、制限もいくつかあります。
 
-* 追加できるコンポーネントを決定するポリシーは、親コンテナから継承されます。
-* 作成するコンテナの直近の親が既にAEMに存在している必要があります。
-   * コンテナ `root/responsivegrid` が既にAEMコンテナに存在する場合は、パスを指定して新しいコンテナを作成できます。 `root/responsivegrid/newContainer`.
+* 追加できるコンポーネントを決定するためのポリシーは、親コンテナから継承されます。
+* 作成するコンテナの直近の親が既に AEM に存在している必要があります。
+   * コンテナ `root/responsivegrid` が既に AEM コンテナに存在する場合は、パス `root/responsivegrid/newContainer` を指定して新しいコンテナを作成できます。
    * ただし、 `root/responsivegrid/newContainer/secondNewContainer` は使用できません。
-* 一度に 1 つの新しいレベルのコンポーネントのみ作成できます。
+* 事実上、一度に 1 つの新しいコンポーネントレベルのみ作成できます。
 
 ## 追加のカスタマイズ {#additional-customizations}
 
@@ -370,4 +370,4 @@ AEM のコンテキストで SPA を理解するには、次の参照資料が�
 * [SPA リファレンス資料（API リファレンス）](/help/implementing/developing/hybrid/reference-materials.md)
 * [SPA 青写真と PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
 * [SPA モデルルーティング](/help/implementing/developing/hybrid/routing.md)
-* [SPA およびサーバーサイドレンダリング](/help/implementing/developing/hybrid/ssr.md)
+* [SPA およびサーバーサイドレンダリング ](/help/implementing/developing/hybrid/ssr.md)

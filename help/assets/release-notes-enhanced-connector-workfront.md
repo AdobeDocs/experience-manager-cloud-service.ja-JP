@@ -1,23 +1,23 @@
 ---
-title: リリースノート（） [!DNL Workfront for Experience Manager enhanced connector]
-description: リリースノート（） [!DNL Workfront for Experience Manager enhanced connector]
+title: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
+description: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: f49ac67b7a90d638e266b9f7f5bf5ac9d7f78e3a
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# リリースノート（）[!DNL Workfront for Experience Manager enhanced connector] {#release-notes-enhanced-connector-workfront}
+# [!DNL Workfront for Experience Manager enhanced connector] のリリースノート {#release-notes-enhanced-connector-workfront}
 
-以下の節では、 [!DNL Workfront for Experience Manager enhanced connector].
+以下の節では、[!DNL Workfront for Experience Manager enhanced connector] の一般リリースノートの概要を説明します。
 
 ## リリース日 {#release-date}
 
 の最新バージョン 1.9.2 のリリース日 [!DNL Workfront for Experience Manager enhanced connector] は 2022 年 8 月 3 日です。
 
-## 新機能ハイライト {#release-highlights}
+## リリースのハイライト {#release-highlights}
 
 の最新バージョン [!DNL Workfront for Experience Manager enhanced connector] には、次の機能強化とバグ修正が含まれています。
 
@@ -31,9 +31,9 @@ ht-degree: 2%
 
 ## 既知の問題 {#known-issues}
 
-* AEM 6.4 でプロジェクトにリンクされたフォルダーを設定する際に、Experience Managerは次の値を保存しません： **[!UICONTROL サブフォルダー]** および **[!UICONTROL ポートフォリオを含むプロジェクトでリンクされたフォルダーを作成する]** フィールド。 の値 **[!UICONTROL サブフォルダー]** フィールドの更新 **[!UICONTROL 未定義]** および **[!UICONTROL ポートフォリオを含むプロジェクトでリンクされたフォルダーを作成する]** フィールドの更新 **[!UICONTROL デフォルトのPortfolio]** は、設定を保存した後に自動的に追加されます。
+* AEM 6.4 でプロジェクトにリンクしたフォルダーを設定する際に、Experience Manager は「**[!UICONTROL sub-folders]**」フィールドと「**[!UICONTROL Create linked folder in projects with portfolio]**」フィールドの値を保存しません。設定を保存すると、「**[!UICONTROL sub-folders]**」フィールドの値が **[!UICONTROL undefined]** に、「**[!UICONTROL Create linked folder in projects with portfolio]**」フィールドの値が **[!UICONTROL Default Portfolio]** に、それぞれ自動的に更新されます。
 
-* 従来のWorkfrontエクスペリエンスを使用している場合、 **[!UICONTROL 送信先]** オプションは **[!UICONTROL 詳細]** ドロップダウンリストでは、「Experience Manager」内でターゲットの宛先を選択できません。 この **[!UICONTROL 送信先]** オプションは **[!UICONTROL ドキュメントアクション]** ドロップダウンリスト。 この **[!UICONTROL 送信先]** オプションは、 **[!UICONTROL 詳細]** ドロップダウンリスト **[!UICONTROL ドキュメントアクション]** 新しいWorkfrontエクスペリエンスで使用できるドロップダウンリスト。
+* 従来の Workfront エクスペリエンスを使用している場合、「**[!UICONTROL 詳細]**」ドロップダウンリストで選択できる「**[!UICONTROL 送信先]**」オプションでは、Experience Manager 内のターゲット宛先を選択できません。「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストを使用する場合、「**[!UICONTROL 送信先]**」オプションは正常に機能します。新しい Workfront エクスペリエンスの「**[!UICONTROL 詳細]**」ドロップダウンリストと「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストでは、「**[!UICONTROL 送信先]**」オプションは正常に機能します。
 
 ## 以前のリリース {#previous-releases}
 
@@ -59,18 +59,18 @@ ht-degree: 2%
 
 [!DNL Workfront for Experience Manager enhanced connector] には、次の更新が含まれています。
 
-* 複数のプロジェクトリンクフォルダー設定がある場合でも、Adobe WorkfrontとAEM Assetsas a Cloud Serviceの間にリンクされたフォルダーを作成できるようになりました。
+* プロジェクトにリンクしているフォルダー設定が複数ある場合でも、Adobe Workfront と AEM Assets as a Cloud Service の間でリンクされたフォルダーを作成できるようになりました。
 
-* イベント購読のページネーションのサポートを追加しました。
+* イベント購読のページネーションがサポートされるようになりました。
 
-* AEM 6.4.x のサポートを追加しました。
+* AEM 6.4.x がサポートされるようになりました。
 
-* プロキシ環境のサポートを追加しました。
+* プロキシ環境がサポートされるようになりました。
 
 * パートナーやお客様のご意見に基づいて、いくつかのバグを修正しました。
 
 >[!MORELIKETHIS]
 >
->* [統合 [!DNL Workfront for Experience Manager enhanced connector] Experience Manager6.5 の場合](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)
->* [統合 [!DNL Workfront for Experience Manager enhanced connector] Experience Manager6.4 の場合](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-integrations.html?lang=en)
+>* [ [!DNL Workfront for Experience Manager enhanced connector]  と Experience Manager 6.5 の統合](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=ja)
+>* [ [!DNL Workfront for Experience Manager enhanced connector]  と Experience Manager 6.4 の統合](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-integrations.html?lang=ja)
 

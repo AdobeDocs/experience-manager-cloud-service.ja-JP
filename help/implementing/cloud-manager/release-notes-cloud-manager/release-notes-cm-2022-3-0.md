@@ -5,8 +5,8 @@ feature: Release Information
 exl-id: d09d48c5-6e0a-4a6a-85e9-1a60fdd6e5bf
 source-git-commit: 68586304724530f83649cffee76cefef3e1c8627
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 88%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 88%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Serviceの Cloud Manager リリース 2022.3.0 のリリース日は 2022 年 3 月 10 日です。 次回のリリースは 2022 年 4 月 8 日に予定されています。
+AEM as a Cloud Service の Cloud Manager 2022.3.0 のリリース日は 2022年3月10日（PT）です。次回のリリースは 2022年4月7日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
@@ -28,7 +28,7 @@ AEM as a Cloud Serviceの Cloud Manager リリース 2022.3.0 のリリース日
 
 ## バグの修正 {#bug-fixes}
 
-* 手動で作成した Git リポジトリのサブセットで名前の値が間違っていたので、ビルドアーティファクトの再利用機能が有効に働きませんでした。これらのリポジトリの名前が変更され、Cloud Manager API／UI では修正された名前がユーザーに表示されます。
+* 手動で作成した Git リポジトリーのサブセットで名前の値が間違っていたので、ビルドアーティファクトの再利用機能が有効に働きませんでした。これらのリポジトリーの名前が変更され、Cloud Manager API／UI では修正された名前がユーザーに表示されます。
 * 実稼動以外のパイプラインから得られたビルドアーティファクトが、実稼動のフルスタックパイプラインで不適切に再利用されていました。
 * コード品質パイプラインを追加または編集する際に、指標の失敗を処理するためのオプションが表示されなくなりました。
 * 予期しないパイプライン変数設定がビルドステップで一部生じる可能性がありました。

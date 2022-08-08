@@ -1,6 +1,6 @@
 ---
 title: AEM ヘッドレスの概要
-description: 詳細なドキュメントとヘッドレスジャーニーを組み合わせた Adobe Experience Manager (AEM) as a Headless CMS について説明します。 コンテンツモデル、コンテンツフラグメント、GraphQL API などの機能を使用してヘッドレスエクスペリエンスを強化する方法について説明します。
+description: 詳細なドキュメントとヘッドレスジャーニーを組み合わせた Adobe Experience Manager（AEM）as a Headless CMS について説明します。コンテンツモデル、コンテンツフラグメント、GraphQL API などの機能を使用してヘッドレスエクスペリエンスを強化する方法について説明します。
 landing-page-description: Experience Manager Headless as a Cloud Service の使用方法と管理方法について説明します。
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Adobe Experience Manager as a Headless CMS の概要 {#introduction-aem-headless}
 
-Adobe Experience Manager(AEM) をヘッドレス CMS として使用する方法について説明します。コンテンツモデル、コンテンツフラグメント、ヘッドレスエクスペリエンスを大規模に強化する GraphQL API などの機能を備えています。
+コンテンツモデル、コンテンツフラグメント、ヘッドレスエクスペリエンスを大規模に強化する GraphQL API などの機能を備えた Adobe Experience Manager（AEM）as a Headless CMS の使用方法について説明します。
 
-関連する様々な機能に関する詳細なドキュメントを読んだり、 [ヘッドレスジャーニー：最初の手順の概要を把握](#first-steps).
+関係する様々な機能の詳細なドキュメントを読んだり、[最初のステップの概要を把握するためのヘッドレスジャーニー](#first-steps)に従うことができます。
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ AEM ヘッドレス機能を使い始めるためのリソースがいくつか�
 
 | リソース | 説明 | タイプ | 対象読者 | 予測時刻 |
 |---|---|---|---|---|
-| [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md) | **AEM とヘッドレステクノロジーを初めて使用する開発者**&#x200B;の場合は、まずここから始めて、ヘッドレスの基本概念から初めてのヘッドレスプロジェクトの運用開始まで、AEM とそのヘッドレス機能の概要を包括的に理解してください。 | ガイド | 開発者 **AEMとヘッドレスを初めて使用する** | 1 時間 |
+| [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md) | **AEM とヘッドレステクノロジーを初めて使用する開発者**&#x200B;の場合は、まずここから始めて、ヘッドレスの基本概念から初めてのヘッドレスプロジェクトの運用開始まで、AEM とそのヘッドレス機能の概要を包括的に理解してください。 | ガイド | **AEM とヘッドレスを初めて使用する**&#x200B;開発者 | 1 時間 |
 | [ヘッドレスの設定](/help/headless/setup/introduction.md) | **AEM の経験豊富なユーザー**&#x200B;が主な AEM ヘッドレス機能の概要を知りたい場合は、このクイックスタート概要を確認してください。 | 参照の設定 | **AEM エクスペリエンス**&#x200B;の開発者、管理者 | 20 分 |
 | [ヘッドレス実践チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ja) | **AEM を熟知していて実践的なアプローチを希望する場合**&#x200B;は、このチュートリアルでシンプルなヘッドレスアプリの実装に取り組んでください。 | チュートリアル | デベロッパー向け | 2 時間 |
 | [ヘッドレスアーキテクトジャーニー](/help/journey-headless/architect/overview.md) | **AEM とヘッドレステクノロジーを初めて使用するアーキテクト**&#x200B;の場合は、まずここから始めて、Adobe Experience Manager as a Cloud Service の強力で柔軟なヘッドレス機能と、プロジェクトのコンテンツをモデル化する方法の概要を理解してください。 | ガイド | アーキテクト | 1 時間 |

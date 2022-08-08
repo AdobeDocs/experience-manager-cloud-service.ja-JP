@@ -5,8 +5,8 @@ feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: 472a4311372ce9a01730f7ced6d4b26018aae4b9
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ AEM as Cloud Service の出荷時には、組み込みの CDN が搭載されて
 
 AEM が管理する CDN は、ほとんどの顧客のパフォーマンスとセキュリティに関する要件を満たします。パブリッシュ層では、オプションとして、顧客は独自の CDN からそれらを参照することもできますが、その場合は自社で管理する必要があります。このオプションは、放棄が困難な CDN ベンダーとのレガシー統合を保有する顧客など（ただし、これに限定されない）、特定の前提条件を満たしていることに基づき、ケースバイケースで使用できます。
 
-また、次のビデオもご覧ください [Cloud 5 AEM CDN パート 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) および [Cloud 5 AEM CDN パート 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) AEM as a Cloud Serviceでの CDN に関する追加情報。
+また、AEM as a Cloud Service での CDN について詳しくは、[Cloud 5 AEM CDN（パート 1）](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html?lang=ja)および [Cloud 5 AEM CDN（パート 2）](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html?lang=ja)のビデオもご覧ください。
 
 ## AEM 管理による CDN  {#aem-managed-cdn}
 

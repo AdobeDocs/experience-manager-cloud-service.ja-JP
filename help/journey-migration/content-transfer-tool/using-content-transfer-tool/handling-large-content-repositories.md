@@ -4,8 +4,8 @@ description: この節では、大規模なコンテンツリポジトリーの�
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 source-git-commit: be66d3e255d43156dfd181711d5a372f2c85f6d5
 workflow-type: tm+mt
-source-wordcount: '1778'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 97%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja#setting-up-pre-copy-step" text="AzCopy をコピー前手順として使用する"
 
 コンテンツ転送ツール（CTT）で大量の BLOB をコピーするには、数日かかる場合があります。
-コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮して、コンテンツを AEM as a Cloud Service に移動するために、CTT では、オプションのコピー前手順として [AzCopy](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-v10) を活用できます。この事前コピー手順を使用できるのは、ソース AEM インスタンスが Amazon S3、Azure Blob Storage データストアまたはファイルデータストアを使用するように設定されている場合です。  事前コピー手順は、最初の完全な抽出および取り込みに最も効果的です。 ただし、後続のトップアップに対して事前コピーを使用することは推奨されません（トップアップのサイズが 200GB 未満の場合）。プロセス全体に時間がかかる可能性があるからです。 この事前手順が設定されたら、AzCopy は、抽出段階で Amazon S3、Azure Blob Storage またはファイルデータストアから移行セット BLOB ストアに BLOB をコピーします。取り込み段階では、AzCopy は、移行セットの BLOB ストアから宛先の AEM as a Cloud Service BLOB ストアに BLOB をコピーします。
+コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮して、コンテンツを AEM as a Cloud Service に移動するために、CTT では、オプションのコピー前手順として [AzCopy](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-v10) を活用できます。この事前コピー手順を使用できるのは、ソース AEM インスタンスが Amazon S3、Azure Blob Storage データストアまたはファイルデータストアを使用するように設定されている場合です。  事前コピーステップは、1回目の完全抽出と取り込みに最も効果的です。ただし、後続のトップアップに対して事前コピーを使用することは、プロセス全体に時間がかかる可能性があるので推奨されません（トップアップのサイズが 200GB 未満の場合）。この事前手順が設定されたら、AzCopy は、抽出段階で Amazon S3、Azure Blob Storage またはファイルデータストアから移行セット BLOB ストアに BLOB をコピーします。取り込み段階では、AzCopy は、移行セットの BLOB ストアから宛先の AEM as a Cloud Service BLOB ストアに BLOB をコピーします。
 
 >[!NOTE]
 > この機能は、CTT 1.5.4 リリースで導入されました。
@@ -82,7 +82,7 @@ Azure ポータルのコンテナプロパティページで、「**サイズを
 #### ファイルデータストア {#file-data-store-determine-size}
 
 * Mac および UNIX システムの場合は、データストアディレクトリで du コマンドを実行してサイズを取得します。
-   `du -sh [path to datastore on the instance]`に従っていない場合に発生します。例えば、データストアが `/mnt/author/crx-quickstart/repository/datastore` にある場合は、次のコマンドでそのサイズを取得できます。`du -sh /mnt/author/crx-quickstart/repository/datastore`
+   `du -sh [path to datastore on the instance]` を使用して作成します。例えば、データストアが `/mnt/author/crx-quickstart/repository/datastore` にある場合は、次のコマンドでそのサイズを取得できます。`du -sh /mnt/author/crx-quickstart/repository/datastore`
 
 * Windows の場合は、データストアディレクトリで dir コマンドを使用してサイズを取得します。
    `dir /a/s [location of datastore]`

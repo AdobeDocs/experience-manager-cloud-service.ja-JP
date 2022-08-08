@@ -5,8 +5,8 @@ contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 source-git-commit: a5cd8a49a74eb8372d1d363ff859e1aef921859b
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 91%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -90,6 +90,6 @@ Custom parameters are planned for an upcoming release. -->
 * **最初の GA リリースに含まれない機能はどれですか？**
 フォームポータル、[!DNL AEM Forms] アプリ、Adobe Analytics との統合、Adobe Target との統合は、最初の GA リリースには含まれません。新機能については、毎月のリリースノートを参照してください。
 
-* **私は [アダプティブフォームを作成するための JSON スキーマ](adaptive-form-json-schema-form-model.md). JSON スキーマは、アダプティブフォームの一部のコンポーネント用のイベントを定義します。 AEM Formsはイベントをサポートしていますか？**
-Experience Manager6.5 Forms環境で JSON スキーマに基づいてアダプティブフォームを作成し、 [移行ユーティリティ](migrate-to-forms-as-a-cloud-service.md) このようなアダプティブFormsをAEM Forms as a Cloud Serviceに移行するには、次の手順に従います。 ユーティリティは、このようなイベントをクライアントライブラリに変換し、Cloud Service環境で Adaptive Formsを引き続き使用できます。
+* **[アダプティブフォームを作成するための JSON スキーマ](adaptive-form-json-schema-form-model.md)をデザインしました。JSON スキーマは、アダプティブフォームの一部のコンポーネント用のイベントを定義します。AEM Forms as a Cloud Service はイベントをサポートしていますか？**
+Experience Manager 6.5 Forms 環境で JSON スキーマに基づいたアダプティブフォームを作成し、作成したアダプティブフォームを[移行ユーティリティ](migrate-to-forms-as-a-cloud-service.md)を使用して AEM Forms as a Cloud Service に移行できます。ユーティリティは、このようなイベントをクライアントライブラリに変換し、Cloud Service 環境でアダプティブフォームを引き続き使用できます。
 

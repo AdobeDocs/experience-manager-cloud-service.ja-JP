@@ -5,8 +5,8 @@ feature: Release Information
 exl-id: ee920bc5-cad7-4fac-bf73-bc1178699f90
 source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 95%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service 2021.12.0の Cloud Manager のリリース日は 2021 年 12 月 16 日です。 次回のリリースは 2022 年 1 月 20 日に予定されています。
+AEM as a Cloud Service 2021.12.0 の Cloud Manager のリリース日は 2021年12月16日（PT）です。次回のリリースは2022年1月20日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
@@ -28,8 +28,8 @@ AEM as a Cloud Service 2021.12.0の Cloud Manager のリリース日は 2021 年
 * アクティビティページにパイプラインを実行中のポップオーバーが追加され、パイプラインの詳細が一目でわかるようになりました。
 * アクティビティページに表示される追加の詳細を含める更新を行いました。
 * Cloud Manager の「学習」タブに、API ガイドと関連リソースへのクイックアクセスが追加されました。
-* Deployment Manager のロールを持つユーザーは、リポジトリページのアクションメニューから、ブランチのないリポジトリに対してプロジェクト/ブランチ作成ウィザードを開始できるようになりました。
-* パイプラインの追加または編集ワークフローにいる Deployment Manager は、選択したリポジトリにブランチがない場合、ブランチまたはプロジェクトを作成する方法を通知されるようになりました。
+* Deployment Manager のロールを持つユーザーは、リポジトリーページのアクションメニューから、ブランチのないリポジトリーに対してプロジェクト/ブランチ作成ウィザードを開始できるようになりました。
+* パイプラインの追加または編集ワークフローにいる Deployment Manager は、選択したリポジトリーにブランチがない場合、ブランチまたはプロジェクトを作成する方法を通知されるようになりました。
 * 新しい Cloud Manager セルフサービス機能が追加され、 [環境レベルで自由形式の変数とシークレットを追加](/help/implementing/cloud-manager/environment-variables.md) できるようになりました。
 * 新しい [参照デモアドオン](/help/journey-sites/demos-add-on/overview.md) （2021年12月17日（PT）に公開）を使用すると、AEM 製品の最新のデモコードベースをインストールして、Sites の新しい [クイックサイト作成ツール](/help/journey-sites/quick-site/overview.md) でデプロイ準備を整えることができます。
 * フロントエンドパイプラインでパイプライン変数がサポートされるようになりました。

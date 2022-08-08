@@ -1,5 +1,5 @@
 ---
-title: Experience Manageras a Cloud Serviceサイトのサポートリソース
+title: Experience Manager as a Cloud Service サイトのサポートリソース
 description: すべての AEM Cloud サービスサポートリソースの完全なリストを確認します。AEM Sites as Cloud Service の質問に対する回答を検索します。
 landing-page-description: AEM Sites as a Cloud Service を使用したオーサリング方法と AEM Sites as a Cloud Service の管理方法を説明します。
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # AEM Sites as a Cloud Service {#aem-sites-guide}
 
-このページには、AEM as a Cloud Services のすべてのサポートリソースの完全なリストが記載されています。 回答を得る [!DNL AEM Sites as a Cloud Service] 質問。
+このページは、あらゆる AEM Cloud サービスサポートリソースの完全なリストを提供します。[!DNL AEM Sites as a Cloud Service] に対する質問の回答を得る。
 
 ## Sites に関する主要な記事 {#key-articles}
 

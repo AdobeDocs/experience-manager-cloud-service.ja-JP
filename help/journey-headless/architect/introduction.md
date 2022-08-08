@@ -1,17 +1,17 @@
 ---
-title: AEM as a Headless CMS 用のコンテンツモデリング — 概要
-description: Adobe Experience Manager as a Cloud Service as a Headless CMS の機能を使用して、プロジェクトのコンテンツをモデル化する方法の紹介です。
+title: AEM as a Headless CMS のコンテンツモデリング：概要
+description: Adobe Experience Manager as a Cloud Service as a Headless CMS の機能を使用して、プロジェクトのコンテンツをモデル化する方法を紹介します。
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 88%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# AEM as a Headless CMS 用のコンテンツモデリング — 概要 {#architect-headless-introduction}
+# AEM as a Headless CMS のコンテンツモデリング：概要 {#architect-headless-introduction}
 
-この部分では、 [AEMヘッドレスコンテンツアーキテクトジャーニー](overview.md)では、Adobe Experience Manager(AEM)as a Cloud Serviceをヘッドレス CMS として使用する場合に、コンテンツモデリングの理解に必要な（基本的な）概念と用語を学習できます。
+[AEM ヘッドレスコンテンツアーキテクトジャーニー](overview.md)のこのステップでは、Adobe Experience Manager（AEM）as a Cloud Service as a Headless CMS の使用時にコンテンツモデリングを理解するうえで必要な（基本）概念と用語について説明します。
 
 このドキュメントを通じて、ヘッドレスコンテンツ配信、AEM によるヘッドレスのサポートおよびコンテンツがヘッドレス向けにどのようにモデル化されるかを理解できるようになります。読み終えると、次のことが習得できます。
 

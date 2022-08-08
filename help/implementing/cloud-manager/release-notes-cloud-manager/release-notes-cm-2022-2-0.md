@@ -5,8 +5,8 @@ feature: Release Information
 exl-id: da0643a0-78f8-4e9d-9cc9-a1a17067a08c
 source-git-commit: 0c4a42595800f7f1d0869bf647c3ec99023b12c5
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 32%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,20 +20,20 @@ ht-degree: 32%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service 2022.02.0の Cloud Manager のリリース日は 2022 年 2 月 10 日です。 次回のリリースは 2022 年 3 月 10 日に予定されています。
+AEM as a Cloud Service 2022.02.0 の Cloud Manager のリリース日は 2022年2月10日（PT）です。次回のリリースは 2022年3月10日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* 新しい加速 [Web 層設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) HTTPD/Dispatcher 設定のみをデプロイするためのが導入されました。
-   * AEM版である必要があります `2021.12.6151.20211217T120950Z` またはそれ以降 [dispatcher ツールの柔軟なモードのオプトイン](/help/implementing/dispatcher/disp-overview.md#validation-debug) この機能を使用するには、をクリックします。
-   * この機能は、2022.02.0リリース以降の 2 週間にわたって段階的に展開されます。
-* Cloud Manager のランディングページエクスペリエンスが更新され、ナビゲーションの改善、グリッド/タイル表示の切り替え、プログラムの概要をすばやく表示するためのポップオーバーが簡単に実現されました。
-* 新しい失敗したしきい値 (`< D`) が [信頼性評価指標です。](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
-   * システムの安定性に影響を与える重大な品質の問題（主に無効なインデックスとワークフロープロセスに関連）を持つお客様は、その問題が解決されるまでデプロイできません。
-* の重大度 `BannedPath` [品質ルール](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) がブロッカーから重大に変更されました。
-* パイプラインウィザードでは、AEM環境の更新が必要になった場合に、 [Web 層設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 関連付けられています。
+* 高速化された新しい [web 階層設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines)が導入されて、HTTPD／Dispatcher 設定のみをデプロイするようになりました。
+   * この機能を使用するには、AEM バージョン `2021.12.6151.20211217T120950Z` 以降を使用しており、[Dispatcher ツールのフレキシブルモードをオプトインする](/help/implementing/dispatcher/disp-overview.md#validation-debug)必要があります。
+   * この機能は、2022.02.0 のリリース後、2 週間にわたって段階的に展開されます。
+* Cloud Manager のランディングページエクスペリエンスが更新されて、ナビゲーションの改善、グリッド／タイル表示の切り替えの簡易化、プログラムの概要をすばやく表示するためのポップオーバーが実現されました。
+* 新しい失敗しきい値（`< D`）が[信頼性評価指標](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)に追加されました。
+   * システムの安定性に影響を与える品質上の重大な問題（主に無効なインデックスとワークフロープロセスに関係）を抱えているお客様は、その問題が解決されるまでデプロイできません。
+* `BannedPath` [品質ルール](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)の重大度がブロッカーから重大に変更されました。
+* パイプラインウィザードでは、AEM 環境の更新が、関連付けられている [web 階層設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines)の設定より前に必要になった場合、それをユーザーに通知します。
 
-## バグ修正 {#bug-fixes}
+## バグの修正 {#bug-fixes}
 
-* 古い Git リポジトリのパスワードが、新しいパスワードの生成時に毎回無効化されるようになりました。
-* API で環境変数を更新しても、まれにパイプラインの実行に干渉しなくなりました。
+* 古い Git リポジトリーパスワードが、新しいパスワードの生成時に毎回無効化されるようになりました。
+* API を使用して環境変数を更新しても、パイプラインの実行に干渉しなくなることがまれにありました。

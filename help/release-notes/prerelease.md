@@ -4,8 +4,8 @@ description: '"[!DNL Adobe Experience Manager] as a Cloud Service プレリリ�
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: c2f0b9c904374b5e59ce2b2f268fdd73dfdbfd21
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 84%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,23 +29,23 @@ ht-degree: 84%
 
 ### クラウド環境 {#cloud-environments}
 
-プレリリースを使用するようにクラウド環境を更新するには、新しい [環境変数](../implementing/cloud-manager/environment-variables.md) Cloud Manager で環境設定 UI を使用して、次の操作を実行します。
+プレリリースを使用するようにクラウド環境を更新するには、Cloud Manager の環境設定 UI を使用して、新しい[環境変数](../implementing/cloud-manager/environment-variables.md)を追加します。
 
-1. 次に移動： **プログラム** > **環境** > **環境設定** を更新します。
-1. 新しい [環境変数](../implementing/cloud-manager/environment-variables.md):
+1. **プログラム**／**環境**／**環境設定**&#x200B;に移動し、更新する設定にアクセスします。
+1. 新しい[環境変数](../implementing/cloud-manager/environment-variables.md)を追加します。
 
    | 名前 | 値 | 適用されるサービス | タイプ |
    |------|-------|-----------------|------|
    | `AEM_RELEASE_CHANNEL` | `prerelease` | すべて | 変数 |
 
-1. 変更を保存すると、プレリリース機能の切り替えが有効になった状態で環境が更新されます。
+1. 変更内容を保存すると、プレリリース機能の切り替えが有効になった状態で環境が更新されます。
 
    ![新しい環境変数](assets/env-configuration-prerelease.png)
 
 
-**または** Cloud Manager API と CLI を使用して、環境変数を更新できます。
+**または**、Cloud Manager API と CLI を使用して環境変数を更新することもできます。
 
-* 用途 [Cloud Manager API の環境変数エンドポイント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables)、 **AEM_RELEASE_CHANNEL** 環境変数を値に **プレリリース**.
+* [Cloud Manager API の環境変数エンドポイント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables)を使用して、**AEM_RELEASE_CHANNEL** 環境変数を **prerelease** という値に設定します。
 
    ```
    PATCH /program/{programId}/environment/{environmentId}/variables
@@ -64,7 +64,7 @@ ht-degree: 84%
    ```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
 
 
-通常の（プレリリース以外の）チャネルの動作に環境を復元したい場合は、変数を削除するか、別の値に設定できます。
+環境を通常の（プレリリース以外の）チャネルの動作に戻す場合は、変数を削除するか、別の値に設定し直します。
 
 ### ローカル SDK {#local-sdk}
 

@@ -4,8 +4,8 @@ description: 実稼動およびサンドボックスプログラムを編集し�
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 74%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 74%
 
 1. 「**更新**」をクリックして、プログラムに対する変更を保存します。
 
-ソリューションやアドオンの追加と削除を含め、プログラムが編集されるたびに、その変更は次回のデプロイメント後に有効になります。
+ソリューションやアドオンの追加や削除など、プログラムが編集されるたびに、その変更内容は次回のデプロイメント後に有効になります。
 
 ## サンドボックスプログラムの削除 {#delete-sandbox-program}
 

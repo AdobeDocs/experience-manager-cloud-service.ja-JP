@@ -4,8 +4,8 @@ description: コンテンツの検索とインデックス作成
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: 1544358f9a706574d8944fa92422240c46d62d2f
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 85%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -64,15 +64,15 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 
 >[!NOTE]
 >
->標準提供のインデックスをカスタマイズする場合（例： ） `damAssetLucene-6`、標準の最新のインデックス定義を *Cloud Service環境* CRX DE パッケージマネージャー (`/crx/packmgr/`) ) をクリックします。 次に、設定の名前を（例： ）に変更します。 `damAssetLucene-6-custom-1`をクリックし、カスタマイズを上に追加します。 これにより、必要な設定が誤って削除されるのを防ぐことができます。 例えば、 `tika` 下のノード `/oak:index/damAssetLucene-6/tika` は、クラウドサービスのカスタマイズされたインデックスに必要です。 Cloud SDK には存在しません。
+>標準提供のインデックスをカスタマイズする場合（例：`damAssetLucene-6`）、CRX DE パッケージマネージャー（`/crx/packmgr/`）を使用して、最新の標準のインデックス定義を *Cloud Service 環境*&#x200B;にコピーしてください。次に、設定の名前を `damAssetLucene-6-custom-1` などに変更し、その上にカスタマイズを追加します。これにより、必要な設定が誤って削除されるのを防ぐことができます。例えば、`/oak:index/damAssetLucene-6/tika` 下のノード `tika` は、Cloud Service のカスタマイズ済みインデックスに必要です。Cloud SDK には存在しません。
 
 次の命名パターンに従って、実際のインデックス定義を含む新しいインデックス定義パッケージを準備する必要があります。
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-それらは `ui.apps/src/main/content/jcr_root` の下に置く必要があります。カスタマイズされたカスタムインデックス定義は、すべて以下に保存する必要があります。 `/oak:index`.
+それらは `ui.apps/src/main/content/jcr_root` の下に置く必要があります。カスタマイズされたカスタムインデックス定義は、すべて `/oak:index` 下に保存する必要があります。
 
-パッケージのフィルターは、（標準提供のインデックス）既存のインデックスが保持されるように設定する必要があります。 ファイル内 `ui.apps/src/main/content/META-INF/vault/filter.xml`に設定する場合、各カスタム（またはカスタマイズ）インデックスを次のようにリストする必要があります。 `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. インデックスのバージョンを後で変更する場合は、フィルターを調整する必要があります。
+パッケージのフィルターは、既存（標準提供のインデックス）が保持されるように設定する必要があります。`ui.apps/src/main/content/META-INF/vault/filter.xml` ファイルで、各カスタム（またはカスタマイズ済み）インデックスを、例えば `<filter root="/oak:index/damAssetLucene-6-custom-1"/>` のようにリストする必要があります。インデックスのバージョンを後で変更する場合は、フィルターを調整する必要があります。
 
 上記のサンプルのパッケージは、`com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT` としてビルドされます。
 
@@ -88,7 +88,7 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 
 * インデックス定義自体（例 `/oak:index/ntBaseLucene-custom-1`）
 
-カスタムインデックスまたはカスタマイズされたインデックスを展開するには、インデックス定義 (`/oak:index/definitionname`) は、 `ui.apps` Git と Cloud Manager のデプロイメントプロセスを使用する。 FileVault フィルタでは、次のようになります。 `ui.apps/src/main/content/META-INF/vault/filter.xml`、例えば、カスタムおよびカスタマイズされた各インデックスを個別にリストします。 `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. カスタムまたはカスタマイズされたインデックス定義自体がファイルに保存されます `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`、次のようにします。
+カスタムインデックスまたはカスタマイズ済みインデックスをデプロイするには、インデックス定義（`/oak:index/definitionname`）は、Git と Cloud Manager のデプロイメントプロセスを使用して `ui.apps` を介して配信される必要があります。FileVault フィルター、例えば `ui.apps/src/main/content/META-INF/vault/filter.xml` では、カスタムおよびカスタマイズ済み各インデックスを、`<filter root="/oak:index/damAssetLucene-7-custom-1"/>` のように個別にリストします。カスタムまたはカスタマイズ済みインデックス定義自体が、次のように `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml` ファイルに保存されます。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -104,11 +104,11 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 </jcr:root>
 ```
 
-上記の例には、Apache Tika の設定が含まれています。 Tika 設定ファイルは、次の場所に保存されます。 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml`.
+上記の例には、Apache Tika の設定が含まれています。Tika 設定ファイルは、`ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml` に保存されます。
 
 ### プロジェクト設定
 
-Jackrabbit Filevault Maven Package Plugin を使用するバージョンに応じて、プロジェクトでさらに設定が必要になります。 Jackrabbit Filevault Maven パッケージプラグインバージョンの使用時 **1.1.6** またはそれ以降の場合は、ファイル `pom.xml` 次のセクションを `filevault-package-maven-plugin`、 `configuration/validatorsSettings` ( `jackrabbit-nodetypes`):
+Jackrabbit Filevault Maven パッケージプラグインを使用するバージョンに応じて、プロジェクトでさらに設定が必要になります。Jackrabbit Filevault Maven パッケージプラグインバージョン **1.1.6** 以降を使用する場合は、`pom.xml` ファイルに `filevault-package-maven-plugin` のプラグイン設定の `configuration/validatorsSettings` （`jackrabbit-nodetypes` の直前）に、次のセクションを記述する必要があります。
 
 ```xml
 <jackrabbit-packagetype>
@@ -118,7 +118,7 @@ Jackrabbit Filevault Maven Package Plugin を使用するバージョンに応�
 </jackrabbit-packagetype>
 ```
 
-また、この場合、 `vault-validation` バージョンは、新しいバージョンにアップグレードする必要があります：
+また、この場合、`vault-validation` バージョンは、新しいバージョンにアップグレードする必要があります。
 
 ```xml
 <dependency>
@@ -128,7 +128,7 @@ Jackrabbit Filevault Maven Package Plugin を使用するバージョンに応�
 </dependency>
 ```
 
-次に、 `ui.apps.structure/pom.xml` および `ui.apps/pom.xml`、 `filevault-package-maven-plugin` 必要な `allowIndexDefinitions` 同様に `noIntermediateSaves` 有効。 オプション `noIntermediateSaves` は、インデックス設定が自動的に追加されるようにします。
+そして、`ui.apps.structure/pom.xml` と `ui.apps/pom.xml` の `filevault-package-maven-plugin` の設定で、 `allowIndexDefinitions` と `noIntermediateSaves` を有効にする必要があります。オプション `noIntermediateSaves` は、インデックス設定が自動的に追加されることを保証します。
 
 ```xml
 <groupId>org.apache.jackrabbit</groupId>
@@ -142,13 +142,13 @@ Jackrabbit Filevault Maven Package Plugin を使用するバージョンに応�
     ...
 ```
 
-In `ui.apps.structure/pom.xml`、 `filters` このプラグインのセクションには、次のようにフィルタールートを含める必要があります。
+`ui.apps.structure/pom.xml` で、このプラグインの `filters` セクションには、次のようにフィルタールートを含める必要があります。
 
 ```xml
 <filter><root>/oak:index</root></filter>
 ```
 
-新しいインデックス定義を追加したら、Cloud Manager を使用して新しいアプリケーションをデプロイする必要があります。デプロイメントを開始すると、2 つのジョブが開始され、それぞれ MongoDB と Azure Segment Store にオーサー用とパブリッシュ用のインデックス定義を追加（また必要に応じて結合）します。Blue-Green スイッチが起こる前に、基になるリポジトリのインデックスが新しいインデックス定義で再作成されています。
+新しいインデックス定義を追加したら、Cloud Manager を使用して新しいアプリケーションをデプロイする必要があります。デプロイメントを開始すると、2 つのジョブが開始され、それぞれ MongoDB と Azure Segment Store にオーサー用とパブリッシュ用のインデックス定義を追加（また必要に応じて結合）します。Blue-Green スイッチが起こる前に、基になるリポジトリーのインデックスが新しいインデックス定義で再作成されています。
 
 >[!TIP]
 >
@@ -158,7 +158,7 @@ In `ui.apps.structure/pom.xml`、 `filters` このプラグインのセクショ
 
 ### インデックス管理とは {#what-is-index-management}
 
-インデックス管理とは、インデックスの追加、削除、変更を行うことです。インデックスの&#x200B;*定義*&#x200B;変更はすぐにできますが、変更を適用する（「インデックスの構築」、または既存インデックスの場合は「インデックスの再構築」と呼ばれる）には時間が必要です。これは即時には実行されません。インデックスを作成するデータをリポジトリでスキャンする必要があります。
+インデックス管理とは、インデックスの追加、削除、変更を行うことです。インデックスの&#x200B;*定義*&#x200B;変更はすぐにできますが、変更を適用する（「インデックスの構築」、または既存インデックスの場合は「インデックスの再構築」と呼ばれる）には時間が必要です。これは即時には実行されません。インデックスを作成するデータをリポジトリーでスキャンする必要があります。
 
 ### Blue-Green デプロイメントとは {#what-is-blue-green-deployment}
 
@@ -166,7 +166,7 @@ Blue-Green デプロイメントは、ダウンタイムを短縮できます。
 
 ### 読み取り専用領域と読み取り／書き込み可能領域 {#read-only-and-read-write-areas}
 
-リポジトリの特定の領域（リポジトリの読み取り専用の部分）は、古い（青い）バージョンと新しい（緑の）バージョンで異なる場合があります。リポジトリの読み取り専用領域は、通常、「`/app`」と「`/libs`」です。次の例では、読み取り専用領域に斜体を使用し、読み取り／書き込み可能領域に太字を使用します。
+リポジトリーの特定の領域（リポジトリーの読み取り専用の部分）は、古い（青い）バージョンと新しい（緑の）バージョンで異なる場合があります。リポジトリーの読み取り専用領域は、通常、「`/app`」と「`/libs`」です。次の例では、読み取り専用領域に斜体を使用し、読み取り／書き込み可能領域に太字を使用します。
 
 * **/**
 * */apps（読み取り専用）*
@@ -178,7 +178,7 @@ Blue-Green デプロイメントは、ダウンタイムを短縮できます。
 * **/system**
 * **/var**
 
-リポジトリの読み取り／書き込み領域は、アプリケーションのすべてのバージョン間で共有されますが、アプリケーションの各バージョンには、`/apps` と `/libs` の固有のセットがあります。
+リポジトリーの読み取り／書き込み領域は、アプリケーションのすべてのバージョン間で共有されますが、アプリケーションの各バージョンには、`/apps` と `/libs` の固有のセットがあります。
 
 ### Blue-Green デプロイメントを使用しないインデックス管理 {#index-management-without-blue-green-deployment}
 
@@ -186,7 +186,7 @@ Blue-Green デプロイメントは、ダウンタイムを短縮できます。
 
 ### Blue-Green デプロイメントによるインデックス管理 {#index-management-with-blue-green-deployment}
 
-Blue-Green デプロイメントでは、ダウンタイムは発生しません。アップグレード中は、しばらくの間、アプリケーションの古いバージョン（例：バージョン 1）と新しいバージョン（バージョン 2）の両方が同じリポジトリに対して同時に実行されています。バージョン 1 で特定のインデックスを使用できる必要がある場合は、バージョン 2 でこのインデックスを削除しないでください。このインデックスは、後で（例えばバージョン 3 で）削除してください。その時点では、アプリケーションのバージョン 1 は実行されなくなっています。また、バージョン 2 が実行中で、バージョン 2 のインデックスが使用可能でも、バージョン 1 が正常に動作するようにアプリケーションを作成してください。
+Blue-Green デプロイメントでは、ダウンタイムは発生しません。アップグレード中は、しばらくの間、アプリケーションの古いバージョン（例：バージョン 1）と新しいバージョン（バージョン 2）の両方が同じリポジトリーに対して同時に実行されています。バージョン 1 で特定のインデックスを使用できる必要がある場合は、バージョン 2 でこのインデックスを削除しないでください。このインデックスは、後で（例えばバージョン 3 で）削除してください。その時点では、アプリケーションのバージョン 1 は実行されなくなっています。また、バージョン 2 が実行中で、バージョン 2 のインデックスが使用可能でも、バージョン 1 が正常に動作するようにアプリケーションを作成してください。
 
 新しいバージョンへのアップグレードが完了した後、システムが古いインデックスをガベージコレクションできます。（ロールバックが必要な場合は）ロールバックを高速化するために、古いインデックスがしばらくの間保持される可能性があります。
 
@@ -282,6 +282,6 @@ Blue-Green デプロイメントでは、ダウンタイムは発生しません
 
 ## インデックスとクエリの最適化 {#index-query-optimizations}
 
-Apache Jackrabbit Oak では、柔軟なインデックス設定により検索クエリを効率的に処理できます。大規模なリポジトリでは、インデックスは特に重要です。すべてのクエリに適切なインデックスを付与するようにしてください。適切なインデックスのないクエリを実行すると、何千ものノードが読み取られる可能性があり、その場合は警告として記録されます。
+Apache Jackrabbit Oak では、柔軟なインデックス設定により検索クエリを効率的に処理できます。大規模なリポジトリーでは、インデックスは特に重要です。すべてのクエリに適切なインデックスを付与するようにしてください。適切なインデックスのないクエリを実行すると、何千ものノードが読み取られる可能性があり、その場合は警告として記録されます。
 
 詳しくは、 [このドキュメント](query-and-indexing-best-practices.md) クエリとインデックスを最適化する方法について詳しくは、を参照してください。

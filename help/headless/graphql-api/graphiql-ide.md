@@ -5,14 +5,14 @@ feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
 workflow-type: tm+mt
-source-wordcount: '1008'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # GraphiQL IDE の使用 {#graphiql-ide}
 
-標準の実装 [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE は、Adobe Experience Manager(AEM) の GraphQL API でas a Cloud Serviceして使用できます。
+標準の [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE の実装は、Adobe Experience Manager（AEM）as a Cloud Service の GraphQL API で使用できます。
 
 >[!NOTE]
 >
@@ -21,76 +21,76 @@ ht-degree: 3%
 >以前のリリースでは、GraphiQL IDE をインストールするためにパッケージが必要でした。 これをインストール済みの場合は、削除できます。
 
 >[!NOTE]
->必ず [エンドポイントを設定済み](/help/headless/graphql-api/graphql-endpoint.md) 内 [設定ブラウザー](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) GraphiQL IDE を使用する前に。
+>GraphiQL IDE を使用する前に、[設定ブラウザー](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)で[エンドポイントを設定](/help/headless/graphql-api/graphql-endpoint.md)しておく必要があります。
 
 
-この **GraphiQL** ツールを使用すると、次のことを可能にして、GraphQL クエリをテストおよびデバッグできます。
-* を選択します。 **エンドポイント** クエリに使用する Sites 設定に適したもの
-* 新しいクエリを直接入力
-* 作成し、にアクセスします。 **[永続クエリ](/help/headless/graphql-api/persisted-queries.md)**
+**GraphiQL** ツールを使用すると、次のことが可能になるので、GraphQL クエリをテストおよびデバッグできます。
+* クエリに使用する Sites 設定に適した&#x200B;**エンドポイント**&#x200B;を選択する
+* 新しいクエリを直接入力する
+* **[永続クエリ](/help/headless/graphql-api/persisted-queries.md)**&#x200B;を作成してアクセスする
 * クエリを実行して結果をすぐに確認する
-* 管理 **クエリ変数**
-* 保存し、管理する **永続クエリ**
+* **クエリ変数**&#x200B;を管理する
+* **永続クエリ**&#x200B;を保存して管理する
 * 公開または非公開 **永続クエリ** （例：から/から） `dev-publish`)
-* 参照 **履歴** 以前のクエリの
-* を使用します。 **ドキュメントエクスプローラ** ドキュメントにアクセスするには、以下を実行します。使用可能な方法を学び理解するのに役立ちます。
+* 以前のクエリの&#x200B;**履歴**&#x200B;を確認する
+* **ドキュメントエクスプローラー**&#x200B;を使用してドキュメントにアクセスし、使用可能な方法を学び理解するのに役立てる
 
-クエリエディターには、次のいずれかからアクセスできます。
+クエリエディターには、次のいずれかの方法でアクセスできます。
 
-* **ツール** -> **一般** -> **GraphQL クエリエディター**
-* 直接例： `http://localhost:4502/aem/graphiql.html`
+* **ツール**／**一般**／**GraphQL クエリエディター**
+* 直接アクセス（例：`http://localhost:4502/aem/graphiql.html`）
 
-![GraphiQL インターフェイス ](assets/cfm-graphiql-interface.png "GraphiQL インターフェイス")
+![GraphiQL インターフェイス](assets/cfm-graphiql-interface.png "GraphiQL インターフェイス")
 
-システムで GraphiQL を使用して、GETリクエストを使用してクライアントアプリケーションからクエリをリクエストできるようにし、クエリの公開に使用できます。 実稼動環境では、次の操作を実行できます。 [クエリを実稼動環境に移動する](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). 最初は、実稼動作成者に対して、クエリを使用して新しく作成したコンテンツを検証し、最後に実稼動公開でライブ消費を検証します。
+システムで GraphiQL を使用して、GETリクエストを使用してクライアントアプリケーションからクエリをリクエストできるようにし、クエリの公開に使用できます。 実稼動環境では、次の操作を実行できます。 [クエリを実稼動環境に移動する](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). 最初は実稼動オーサーに移行して、新しくオーサリングしたコンテンツをクエリで検証し、最終的には実稼動パブリッシュに移行してライブで利用できるようにします。
 
 ## エンドポイントの選択 {#selecting-endpoint}
 
-最初の手順として、 **[エンドポイント](/help/headless/graphql-api/graphql-endpoint.md)** クエリに使用する エンドポイントは、クエリに使用する Sites 設定に適しています。
+まず、クエリに使用する&#x200B;**[エンドポイント](/help/headless/graphql-api/graphql-endpoint.md)**&#x200B;を選択する必要があります。クエリに使用する Sites 設定に適したエンドポイントです。
 
-これは、右上のドロップダウンリストから使用できます。
+これは、右上のドロップダウンリストから選択できます。
 
-## 新しいクエリを作成し、保持する {#creating-new-query}
+## 新しいクエリの作成と永続化 {#creating-new-query}
 
-エディターに新しいクエリを入力できます。エディターは左中央のパネルにあり、GraphiQL ロゴのすぐ下にあります。
-
->[!NOTE]
->
->永続化されたクエリが既に選択されていて、エディターパネルにが表示されている場合は、「 」を選択します。 `+` ( 次の **永続クエリ**) をクリックして、新しいクエリの準備ができたエディターを空にします。
-
-入力を始めるだけで、エディターも次のようにします。
-
-* は、マウスオーバーを使用して要素に関する追加情報を表示します
-* には、構文のハイライト表示、オートコンプリート、自動提案などの機能があります。
+エディターに新しいクエリを入力できます（エディターは左中央パネルの GraphiQL ロゴのすぐ下にあります）。
 
 >[!NOTE]
 >
->GraphQL クエリは通常、 `{` 文字。
+>永続クエリが既に選択されていて、エディターパネルに表示されている場合は、（**永続クエリ**&#x200B;の横にある）「`+`」を選択してエディターを空にし、新しいクエリを作成できるようにします。
+
+入力を開始します。エディターには次の機能があります。
+
+* マウスオーバーを使用して、要素に関する追加情報を表示します
+* 構文のハイライト表示、オートコンプリート、自動候補表示などの機能が用意されています
+
+>[!NOTE]
 >
->行の先頭に `#` は無視されます。
+>GraphQL クエリは通常、`{` 文字で始まります。
+>
+>`#` で始まる行は無視されます。
 
-用途 **名前を付けて保存** をクリックして新しいクエリを保持します。
+「**名前を付けて保存**」を使用して、新しいクエリを永続化します。
 
-## 持続的なクエリの更新 {#updating-persisted-query}
+## 永続クエリの更新 {#updating-persisted-query}
 
-更新するクエリを、 **永続クエリ** パネル（左端）
+更新するクエリを（左端の）**永続クエリ**&#x200B;パネルのリストから選択します。
 
-クエリがエディターパネルに表示されます。 必要な変更を加え、を使用します。 **保存** を使用して、更新を永続化されたクエリにコミットします。
+クエリがエディターパネルに表示されます。必要な変更を加えたあと、「**保存**」を使用して、更新内容を永続クエリにコミットします。
 
-## 実行中のクエリ {#running-queries}
+## クエリの実行 {#running-queries}
 
-新しいクエリを直ちに実行することも、永続化されたクエリを読み込んで実行することもできます。 永続化されたクエリを読み込むには、リストからクエリを選択します。クエリがエディターパネルに表示されます。
+新しいクエリをすぐに実行することもできますし、永続クエリを読み込んで実行することもできます。永続クエリを読み込むには、該当するクエリをリストから選択します。そのクエリがエディターパネルに表示されます。
 
 どちらの場合も、エディターパネルに表示されるクエリは、次のいずれかの場合に実行されるクエリです。
 
-* クリックまたはタップ **クエリを実行** アイコン
-* キーボードの組み合わせを使用する `Control-Enter`
+* 「**クエリを実行**」アイコンをクリックまたはタップする
+* キーボードショートカット `Control-Enter` を使用する
 
 ## クエリ変数 {#query-variables}
 
 <!-- more details needed here? -->
 
-また、GraphiQL IDE では、 [クエリ変数](/help/headless/graphql-api/content-fragments.md#graphql-variables).
+また、GraphiQL IDE では、[クエリ変数](/help/headless/graphql-api/content-fragments.md#graphql-variables)を管理することもできます。
 
 次に例を示します。
 
@@ -125,15 +125,15 @@ max-age と同じですが、プロキシキャッシュに特に適用されま
 
 ## 永続的なクエリの公開 {#publishing-persisted-queries}
 
-リスト（左パネル）から永続化されたクエリを選択したら、 **公開** および **非公開** アクション。 これにより、パブリッシュ環境に対してアクティベートされます ( 例： `dev-publish`) を使用すると、テスト時にアプリケーションから簡単にアクセスできます。
+リスト（左パネル）から永続クエリを選択したら、「**公開**」アクションと「**非公開**」アクションを使用できます。これにより、パブリッシュ環境に対してアクティベートされます ( 例： `dev-publish`) を使用すると、テスト時にアプリケーションから簡単にアクセスできます。
 
 >[!NOTE]
 >
->永続化されたクエリのキャッシュの定義 `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} のデフォルト値は 2 時間（7200 秒）です。
+>永続クエリのキャッシュ `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} の定義では、デフォルト値は 2 時間（7200 秒）になっています。
 
-## URL をコピーしてクエリに直接アクセス {#copy-url}
+## URL をコピーしてクエリに直接アクセスする {#copy-url}
 
-この **URL をコピー** 「 」オプションを使用すると、永続化されたクエリに直接アクセスして結果を確認するために使用する URL をコピーして、クエリをシミュレートできます。 その後、これをテストに使用できます。例えば、ブラウザーでにアクセスすると、次のようになります。
+「**URL をコピー**」オプションを使用すると、永続クエリに直接アクセスする URL をコピーしてクエリをシミュレートし、結果を確認することができます。これは、ブラウザーでアクセスするなどしてテストに使用できます。
 
 <!--
   >[!NOTE]
@@ -149,32 +149,32 @@ max-age と同じですが、プロキシキャッシュに特に適用されま
 
 この URL をブラウザーで使用すると、結果を確認できます。
 
-![GraphiQL - URL をコピー](assets/cfm-graphiql-copy-url.png "GraphiQL - URL をコピー")
+![GraphiQL - 「URL をコピー」](assets/cfm-graphiql-copy-url.png "GraphiQL - 「URL をコピー」")
 
-この **URL をコピー** オプションには、持続的なクエリ名（左端のパネル）の右側の 3 つの縦並びのドットからアクセスできます。
+「**URL をコピー**」オプションには、永続クエリ名（左端のパネル）の右側にある 3 ドットアイコンを使用してアクセスできます。
 
-![GraphiQL - URL をコピー](assets/cfm-graphiql-persisted-query-options.png "GraphiQL - URL をコピー")
+![GraphiQL - 「URL をコピー」](assets/cfm-graphiql-persisted-query-options.png "GraphiQL - 「URL をコピー」")
 
 ## 永続クエリの削除 {#deleting-persisted-queries}
 
-この **削除** オプションには、持続的なクエリ名（左端のパネル）の右側の 3 つの縦ドットからもアクセスできます。
+永続クエリ名（左端のパネル）の右側にある 3 ドットアイコンを使用すると、「**削除**」オプションにもアクセスできます。
 
 <!-- what happens if you try to delete something that is still published? -->
 
 
 ## 実稼動環境への永続クエリのインストール {#installing-persisted-query-production}
 
-GraphiQL を使用して永続的なクエリを開発およびテストした後、最終目標は次のとおりです。 [実稼動環境に転送する](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production) アプリケーションで使用する場合。
+GraphiQL を使用して永続クエリを作成およびテストした後は、その永続クエリを[実稼動環境に転送](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production)してアプリケーションで使用できるようにします。
 
-## ショートカットキー {#keyboard-shortcuts}
+## キーボードショートカット {#keyboard-shortcuts}
 
-IDE のアクションアイコンに直接アクセスできるキーボードショートカットがいくつか用意されています。
+IDE のアクションアイコンに直接アクセスできる一連のキーボードショートカットが用意されています。
 
-* クエリを事前設定：  `Shift-Control-P`
-* 結合クエリ：  `Shift-Control-M`
-* クエリを実行：  `Control-Enter`
-* オートコンプリート：  `Control-Space`
+* クエリの修飾：`Shift-Control-P`
+* クエリの結合：`Shift-Control-M`
+* クエリの実行：`Control-Enter`
+* オートコンプリート：`Control-Space`
 
 >[!NOTE]
 >
->一部のキーボードでは `Control` キーには次のラベルが付けられます。 `Ctrl`.
+>一部のキーボードでは、`Control` キーには `Ctrl` のラベルが付いています。

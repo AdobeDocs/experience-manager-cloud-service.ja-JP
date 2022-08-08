@@ -1,17 +1,17 @@
 ---
-title: コンテンツ転送ツールの基本を学ぶ (レガシー)
+title: コンテンツ転送ツールの基本を学ぶ（レガシー）
 description: コンテンツ転送ツールの基本を学ぶ
 hide: true
 hidefromtoc: true
 exl-id: a6ee6996-510e-42d7-9a7c-f64732764f97
 source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# コンテンツ転送ツールの基本を学ぶ (レガシー) {#getting-started-content-transfer-tool}
+# コンテンツ転送ツールの基本を学ぶ（レガシー） {#getting-started-content-transfer-tool}
 
 
 ## 入手方法 {#availability}
@@ -155,4 +155,4 @@ ht-degree: 100%
 
 ## 次の手順 {#whats-next}
 
-移行セットの作成方法を理解したら、コンテンツ転送ツールでの抽出プロセスと取り込みプロセスについて学ぶ準備が整います。これらのプロセスを学ぶ前に、コンテンツを AEM as a Cloud Service に移行するコンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮する[大規模なコンテンツリポジトリの処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja)を参照する必要があります。
+移行セットの作成方法を理解したら、コンテンツ転送ツールでの抽出プロセスと取り込みプロセスについて学ぶ準備が整います。これらのプロセスを学ぶ前に、コンテンツを AEM as a Cloud Service に移行するコンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮する[大規模なコンテンツリポジトリーの処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja)を参照する必要があります。

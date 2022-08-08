@@ -4,8 +4,8 @@ description: Adobe Experience Manager as a Cloud Service に対する Same Site 
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
 source-git-commit: e1234e90e276a6274fc4dc9de0ae577219669ecf
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 85%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 85%
 
 >[!CAUTION]
 >
->この `SameSite=None` の設定は、プロトコルがセキュア (HTTPS) の場合にのみ適用されます。
+>`SameSite=None` の設定は、セキュアプロトコル（HTTPS）の場合にのみ適用されます。
 >
->プロトコルがセキュアでない場合 (HTTP)、設定は無視され、サーバーは次の WARN メッセージを表示します。
+>セキュアプロトコルでない（HTTP）場合、この設定は無視され、サーバーは次の WARN メッセージを表示します。
 >
 >`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
 

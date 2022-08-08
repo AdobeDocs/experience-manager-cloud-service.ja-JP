@@ -4,29 +4,29 @@ description: 更新 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 09276b4d-a7c8-4927-8c0a-40eda48e55a7
 source-git-commit: 77aceab8db82082185c931202fc6ea8eee79c11e
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # 更新 [!DNL Workfront for Experience Manager enhanced connector] {#update-enhanced-connector-for-workfront}
 
-[!UICONTROL Experience Manager Assetsas a Cloud Service] を使用すると、 [!DNL Workfront for Experience Manager enhanced connector] 以前のバージョンから最新のバージョンに移行する場合。
+[!UICONTROL Experience Manager Assets as a Cloud Service] を使用すると、以前のバージョンから最新のバージョンに [!DNL Workfront for Experience Manager enhanced connector] をアップデートできます。
 
 >[!TIP]
 >
->次を検索していますか： [!DNL Workfront for Experience Manager enhanced connector] AEM 6.5 に関するドキュメントを更新しましたか？ クリック [ここ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=en##update-enhanced-connector-for-workfront).
+>[!DNL Workfront for Experience Manager enhanced connector] の AEM 6.5 向けドキュメントをお探しですか？[ここをクリック](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=ja##update-enhanced-connector-for-workfront)してください。
 
 
-次の手順で [!DNL Workfront for Experience Manager enhanced connector] を最新バージョンに変更するには：
+[!DNL Workfront for Experience Manager enhanced connector] を最新バージョンにアップデートするには：
 
-1. 拡張コネクタの最新バージョンをからダウンロードします。 [Adobeソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip).
+1. [アドビのソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/ja/aemcloud.html?package=/content/software-distribution/ja/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip)から拡張コネクタの最新バージョンをダウンロードします。
 
-1. [アクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) Cloud Manager からAEM as a Cloud Serviceリポジトリのクローンを作成します。
+1. Cloud Manager から AEM as a Cloud Service リポジトリーに[アクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=ja)し、クローンを作成します。
 
-1. 任意の IDE を使用して、クローンExperience Manageras a Cloud Serviceリポジトリを開きます。
+1. 任意の IDE を使用して、Experience Manager as a Cloud Service リポジトリーのクローンを開きます。
 
-1. 手順 1 でダウンロードした拡張コネクタ zip ファイルを次のパスに配置します。
+1. 手順 1 でダウンロードした拡張コネクタの zip ファイルを次のパスに配置します。
 
    ```TXT
       /ui.apps/src/main/resources/<zip file>
@@ -34,9 +34,9 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >この `resources` フォルダーが存在しません。フォルダーを作成します。
+   >`resources` フォルダーが存在しない場合は作成します。
 
-1. 親の拡張コネクタのバージョンを更新 `pom.xml`.
+1. 親 `pom.xml`.の拡張コネクタのバージョンを更新します。
 
    ```XML
       <dependency>
@@ -49,7 +49,7 @@ ht-degree: 5%
       </dependency>
    ```
 
-1. の依存関係を更新します。 `all module pom.xml`.
+1. `all module pom.xml` の依存関係を更新します。
 
    ```XML
       <dependency>
@@ -63,9 +63,9 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >必ず `<scope>` および `<systemPath>` を手順 5 と手順 6 の依存関係に追加します。
+   >手順 5 と手順 6 の依存関係に、`<scope>` および `<systemPath>` を追加します。
 
-1. 更新 `pom.xml` 埋め込み すべてのサブプロジェクトの `pom.xml` の `embeddeds` セクションに [!DNL Workfront for Experience Manager enhanced connector] パッケージを追加します。すべてのモジュールに更新を組み込む `pom.xml`.
+1. `pom.xml` 埋め込みを更新します。すべてのサブプロジェクトの `pom.xml` の `embeddeds` セクションに [!DNL Workfront for Experience Manager enhanced connector] パッケージを追加します。すべてのモジュール `pom.xml` に更新を組み込みます。
 
    ```XML
    <!-- Workfront Tools -->
@@ -77,10 +77,10 @@ ht-degree: 5%
    </embedded>
    ```
 
-   埋め込みセクションのターゲットが `/apps/<path-to-project-install-folder>/install`. この JCR パス `/apps/<path-to-project-install-folder>` を `all/src/main/content/META-INF/vault/filter.xml` ファイル。 リポジトリのフィルター規則は、通常、プログラム名から派生します。 フォルダーの名前を既存のルールのターゲットとして使用します。
+   埋め込みセクションのターゲットが `/apps/<path-to-project-install-folder>/install` に設定されます。JCR パス `/apps/<path-to-project-install-folder>` を、`all/src/main/content/META-INF/vault/filter.xml` ファイルのフィルタールールに含める必要があります。リポジトリーのフィルタールールは、通常、プログラム名から派生します。フォルダーの名前を既存ルールのターゲットとして使用します。
 
-1. [Hoodoo 配布ポイントの依存関係を削除します](remove-external-dependencies.md)（存在する場合）
+1. [Hoodoo 配布ポイントの依存関係を削除します](remove-external-dependencies.md)（存在する場合）。
 
-1. 変更をリポジトリにプッシュします。
+1. 変更をリポジトリーにプッシュします。
 
-1. 次の場所にパイプラインを実行 [Cloud Manager に変更をデプロイします。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. パイプラインを実行して、[変更内容を Cloud Manager にデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=ja)します。

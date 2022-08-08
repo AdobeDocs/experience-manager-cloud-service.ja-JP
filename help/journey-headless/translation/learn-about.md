@@ -1,11 +1,11 @@
 ---
-title: ヘッドレスコンテンツについて学び、AEMでの翻訳
+title: ヘッドレスコンテンツの概要と AEM での翻訳について
 description: ヘッドレスの概念、AEM へのマッピング方法、AEM 翻訳の基本概念について説明します。
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

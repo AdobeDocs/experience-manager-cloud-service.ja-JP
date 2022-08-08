@@ -4,8 +4,8 @@ description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
 source-git-commit: 9e84b57efef89613c7ddf7abec3e71d1d844ed30
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

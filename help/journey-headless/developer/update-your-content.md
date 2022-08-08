@@ -4,8 +4,8 @@ description: AEM ヘッドレスデベロッパージャーニーのこの部分
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -318,7 +318,7 @@ AEM Assets REST API の使用の詳細については、次を参照してくだ
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-次にドキュメントを確認して、AEMヘッドレスジャーニーを続ける必要があります [すべてを組み合わせる方法 — アプリとコンテンツをAEMヘッドレスに組み込む](put-it-all-together.md) ここでは、AEMアーキテクチャの基本と、アプリケーションを統合するために使用する必要があるツールについて説明します。
+AEM ヘッドレスジャーニーを続けるには、[すべてをまとめる方法 - AEM ヘッドレスのアプリとコンテンツ](put-it-all-together.md)ドキュメントを参照して、AEM アーキテクチャの基本と、アプリケーションをまとめるために使用する必要があるツールについて確認してください。
 
 ## その他のリソース {#additional-resources}
 

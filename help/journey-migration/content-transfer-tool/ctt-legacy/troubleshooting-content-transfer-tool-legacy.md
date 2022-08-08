@@ -1,17 +1,17 @@
 ---
-title: コンテンツ転送ツールのトラブルシューティング (レガシー)
+title: コンテンツ転送ツール（レガシー）のトラブルシューティング
 description: コンテンツ転送ツールのトラブルシューティング
 hide: true
 hidefromtoc: true
 exl-id: b99f8f2b-b1b7-4ec1-b1d2-0efe83e17e91
 source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# コンテンツ転送ツールのトラブルシューティング (レガシー) {#troubleshoot-content-transfer-tool}
+# コンテンツ転送ツール（レガシー）のトラブルシューティング {#troubleshoot-content-transfer-tool}
 
 
 ## 不明な BLOB ID {#missing-blobs}

@@ -4,8 +4,8 @@ description: AEM as a Cloud Service の開発ガイドライン
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 1f249b413c9e3f76771fe85d7ecda67cec1386fb
 workflow-type: tm+mt
-source-wordcount: '2444'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,7 @@ AEM as a Cloud Service を更新する間、古いコードと新しいコード
 
 ## メモリ内の状態 {#state-in-memory}
 
-状態はメモリ内ではなく、リポジトリ内に保持する必要があります。そうしないと、インスタンスが停止した場合に、状態が失われる可能性があります。
+状態はメモリ内ではなく、リポジトリー内に保持する必要があります。そうしないと、インスタンスが停止した場合に、状態が失われる可能性があります。
 
 ## ファイルシステムの状態 {#state-on-the-filesystem}
 
@@ -164,9 +164,9 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ### AEM as a Cloud Service の開発ツール {#aem-as-a-cloud-service-development-tools}
 
-ユーザーはオーサー層の開発環境では CRXDE Lite にアクセスできますが、ステージ環境や実稼動環境ではアクセスできません。不変リポジトリ（`/libs`、`/apps`）に実行時に書き込むことはできないので、書き込もうとするとエラーが発生します。
+ユーザーはオーサー層の開発環境では CRXDE Lite にアクセスできますが、ステージ環境や実稼動環境ではアクセスできません。不変リポジトリー（`/libs`、`/apps`）に実行時に書き込むことはできないので、書き込もうとするとエラーが発生します。
 
-代わりに、開発者コンソールからリポジトリブラウザーを起動して、オーサー層、パブリッシュ層およびプレビュー層にあるすべての環境のリポジトリに対して読み取り専用ビューを提供できます。リポジトリブラウザーについて詳しくは、[こちら](/help/implementing/developing/tools/repository-browser.md)を参照してください。
+代わりに、開発者コンソールからリポジトリーブラウザーを起動して、オーサー層、パブリッシュ層およびプレビュー層にあるすべての環境のリポジトリーに対して読み取り専用ビューを提供できます。リポジトリーブラウザーについて詳しくは、[こちら](/help/implementing/developing/tools/repository-browser.md)を参照してください。
 
 AEM as a Cloud Service 開発者環境でデバッグするためのツールセットが開発環境、ステージ環境、実稼動環境の開発者コンソールで利用できます。URL は、次のようにオーサーサービス URL またはパブリッシュサービス URL を調整して決定できます。
 
@@ -194,7 +194,7 @@ AEM as a Cloud Service 開発者環境でデバッグするためのツールセ
 
 ![開発者コンソール 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-実稼動プログラムの場合、開発者コンソールへのアクセスは Admin Console の「Cloud Manager - デベロッパーロール」で定義されます。一方、サンドボックスプログラムの場合、開発者コンソールは、AEM as a Cloud Service へのアクセスを可能にする製品プロファイルを持つすべてのユーザーが使用できます。すべてのプログラムで、ステータスダンプとリポジトリブラウザーには「Cloud Manager - デベロッパーロール」が必要です。また、オーサーサービスとパブリッシュサービスの両方のデータを表示するには、ユーザーがそれら両方のサービスで「AEM ユーザー」または「AEM 管理者」製品プロファイルにも定義されている必要があります。ユーザー権限の設定について詳しくは、 [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ja) を参照してください。
+実稼動プログラムの場合、開発者コンソールへのアクセスは Admin Console の「Cloud Manager - デベロッパーロール」で定義されます。一方、サンドボックスプログラムの場合、開発者コンソールは、AEM as a Cloud Service へのアクセスを可能にする製品プロファイルを持つすべてのユーザーが使用できます。すべてのプログラムで、ステータスダンプとリポジトリーブラウザーには「Cloud Manager - デベロッパーロール」が必要です。また、オーサーサービスとパブリッシュサービスの両方のデータを表示するには、ユーザーがそれら両方のサービスで「AEM ユーザー」または「AEM 管理者」製品プロファイルにも定義されている必要があります。ユーザー権限の設定について詳しくは、 [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ja) を参照してください。
 
 ### パフォーマンスの監視 {#performance-monitoring}
 
@@ -229,14 +229,14 @@ AEM 内の電子メールは、[Day CQ Mail Service OSGi](https://experienceleag
 * SMTP サーバーのホスト名を $[env:AEM_PROXY_HOST;default=proxy.tunnel] に設定する必要があります
 * SMTP サーバーポートは、高度なネットワーク機能を設定する際に、API 呼び出しで使用される portForwards パラメーターに設定された元のプロキシポートの値に設定してください。例えば、（465 ではなく）30465 などとします。
 
-SMTP サーバーポートは、 `portDest` API 呼び出しで使用される portForwards パラメーターに設定された値。アドバンスドネットワーク設定時に `portOrig` 値は、30000 ～ 30999の必要な範囲内の意味のある値である必要があります。 例えば、SMTP サーバーポートが 465 の場合、ポート30465を `portOrig` の値です。
+SMTP サーバーポートには、高度なネットワーク設定時に API 呼び出しで使用される portForwards パラメーターに設定された `portDest` 値を設定する必要があります。`portOrig` 値は、30000 ～ 30999 の必須範囲内の意味のある値である必要があります。例えば、SMTP サーバーポートが 465 の場合、ポート 30465 を `portOrig` の値として使用します。
 
-この場合、SSL を有効にする必要があると仮定した場合、 **Day CQ Mail Service OSGI** サービス：
+この例で、SSL を有効にする必要がある場合、**Day CQ Mail Service OSGI** サービスの設定は次のとおりです。
 
 * `smtp.port` を `30465` に設定
 * `smtp.ssl` を `true` に設定
 
-または、宛先ポートが 587 の場合、 `portOrig` 値30587を使用する必要があります。 また、SSL を無効にする必要がある場合、Day CQ Mail Service OSGi サービスの設定は次のようになります。
+または、宛先ポートが 587 の場合、`portOrig` 値の 30587 を使用する必要があります。また、SSL を無効にする必要がある場合、Day CQ Mail Service OSGi サービスの設定は次のとおりです。
 
 * `smtp.port` を `30587` に設定
 * `smtp.ssl` を `false` に設定

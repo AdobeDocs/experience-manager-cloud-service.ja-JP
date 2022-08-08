@@ -1,62 +1,62 @@
 ---
-title: リポジトリブラウザー
+title: リポジトリーブラウザー
 seo-title: Repository Browser
-description: リポジトリブラウザーは、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対して、リポジトリへの読み取り専用ビューを提供します。
+description: リポジトリーブラウザーは、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対して、リポジトリーへの読み取り専用ビューを提供します。
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 source-git-commit: b4d28a0c827fb07d6f731118078ecdf448e2f58b
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# リポジトリブラウザー {#repository-browser}
+# リポジトリーブラウザー {#repository-browser}
 
 >[!NOTE]
 >
->リポジトリブラウザーは、AEM バージョン 6582 以降で使用できます。
+>リポジトリーブラウザーは、AEM バージョン 6582 以降で使用できます。
 
 >[!INFO]
 >
->また、 [このクリップ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) リポジトリブラウザーを使用してAEM as a Cloud Serviceをデバッグする方法に関する概要ビデオをご覧ください。
+>また、[このクリップ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=ja)で、リポジトリーブラウザーを使用して AEM as a Cloud Service をデバッグする方法に関する概要ビデオをご覧ください。
 
 ## はじめに {#introduction}
 
-リポジトリブラウザーは、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対してリポジトリへの読み取り専用ビューを提供する開発者ツールです。コンテンツ構造が見やすくなるように、またデバッグしやすくなるように設計されています。
+リポジトリーブラウザーは、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対してリポジトリーへの読み取り専用ビューを提供する開発者ツールです。コンテンツ構造が見やすくなるように、またデバッグしやすくなるように設計されています。
 
-開発者コンソールからアクセスでき、選択した環境のオーサーインスタンスまたはパブリッシュインスタンスのリポジトリを参照するために使用できます。
+開発者コンソールからアクセスでき、選択した環境のオーサーインスタンスまたはパブリッシュインスタンスのリポジトリーを参照するために使用できます。
 
 ### アクセスのための前提条件 {#access-prerequisites}
 
-開発者コンソールまたはリポジトリブラウザーにアクセスするには、次の条件を満たす必要があります。
+開発者コンソールまたはリポジトリーブラウザーにアクセスするには、次の条件を満たす必要があります。
 
 開発者コンソールにアクセスするには：
 
 * 実稼動プログラムの場合、ユーザーは Admin Console で「**Cloud Manager - デベロッパーロール**」に割り当てられている必要があります。
 * サンドボックスプログラムの場合、AEM as a Cloud Service へのアクセス権を付与する製品プロファイルを持つ任意のユーザーが使用できます。
 
-リポジトリブラウザーにアクセスするには：
+リポジトリーブラウザーにアクセスするには：
 
 * オーサーインスタンスとパブリッシュインスタンスを表示するには、ユーザーは Admin Console で「**Cloud Manager - デベロッパーロール**」に割り当てられている必要があります。
-* さらに、オーサー層の場合、「AEM ユーザー」製品プロファイルを持つユーザーは最小限の読み取りアクセス権でリポジトリブラウザーを表示できます。ユーザーの権限は、リポジトリを参照する際に考慮されます。「AEM 管理者」製品プロファイルを持つユーザーは、完全な読み取りアクセス権でリポジトリブラウザーを表示できます。
+* さらに、オーサー層の場合、「AEM ユーザー」製品プロファイルを持つユーザーは最小限の読み取りアクセス権でリポジトリーブラウザーを表示できます。ユーザーの権限は、リポジトリーを参照する際に考慮されます。「AEM 管理者」製品プロファイルを持つユーザーは、完全な読み取りアクセス権でリポジトリーブラウザーを表示できます。
 
 ユーザー権限の設定について詳しくは、[Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ja)を参照してください。
 
-### リポジトリブラウザーの起動 {#launching-the-repository-browser}
+### リポジトリーブラウザーの起動 {#launching-the-repository-browser}
 
-リポジトリブラウザーは、次の手順に従って起動できます。
+リポジトリーブラウザーは、次の手順に従って起動できます。
 
 1. Cloud Manager で、目的の環境の横にある 3 ドットアイコンをクリックし、「**開発者コンソール**」を選択します。
 
    ![repobrowser1](/help/implementing/developing/tools/assets/repobrowser1.png)
 
-1. 次に、「**リポジトリブラウザー**」タブをクリックします。
+1. 次に、「**リポジトリーブラウザー**」タブをクリックします。
 1. 「**ポッド**」ドロップダウンリストをクリックして、オーサー層、パブリッシュ層、プレビュー層のいずれかに対応する任意のポッドを選択します。
 
    ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 
-1. 下方の「**リポジトリブラウザーを開く**」リンクをクリックして、リポジトリブラウザーを起動します。これで、選択した階層の代表的なインスタンス（ポッド）に対応するブラウザーが起動します。これで、選択した階層の代表的なインスタンス（ポッド）に対応するブラウザーが起動します。その階層の特定のポッドは起動後は制御できないことに注意してください。
+1. 下方の「**リポジトリーブラウザーを開く**」リンクをクリックして、リポジトリーブラウザーを起動します。これで、選択した階層の代表的なインスタンス（ポッド）に対応するブラウザーが起動します。これで、選択した階層の代表的なインスタンス（ポッド）に対応するブラウザーが起動します。その階層の特定のポッドは起動後は制御できないことに注意してください。
 
 ## 機能 {#features}
 
@@ -78,7 +78,7 @@ Additionally, when you click on a folder, the URL is dynamically modified to inc
 
 -->
 
-パブリッシュ層の場合、デフォルトでは、リポジトリブラウザーには公開コンテンツのみが表示されます。したがって、`/conf` や `/home` などの特定のフォルダーは表示されません。
+パブリッシュ層の場合、デフォルトでは、リポジトリーブラウザーには公開コンテンツのみが表示されます。したがって、`/conf` や `/home` などの特定のフォルダーは表示されません。
 
 これらの場所を表示するには、次の手順に従う必要があります。
 
@@ -94,7 +94,7 @@ Additionally, when you click on a folder, the URL is dynamically modified to inc
 
    ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
 
-1. フルアクセス権でパブリッシュリポジトリブラウザーをナビゲートできるユーザーに対応する適切なユーザーを新しい製品プロファイルに追加します。
+1. フルアクセス権でパブリッシュリポジトリーブラウザーをナビゲートできるユーザーに対応する適切なユーザーを新しい製品プロファイルに追加します。
 
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
@@ -111,7 +111,7 @@ Additionally, when you click on a folder, the URL is dynamically modified to inc
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 
-1. パブリッシュインスタンスのリポジトリブラウザーにアクセスすると、`/home` や `/conf` などを含むすべてのフォルダーが表示されます。
+1. パブリッシュインスタンスのリポジトリーブラウザーにアクセスすると、`/home` や `/conf` などを含むすべてのフォルダーが表示されます。
 
 ### JCR プロパティの表示 {#view-jcr-properties}
 
@@ -121,7 +121,7 @@ Additionally, when you click on a folder, the URL is dynamically modified to inc
 
 ### コンテンツを表示 {#view-content}
 
-リポジトリブラウザーを使用すると、ナビゲーションペインでリソースをクリックしてコンテンツを表示できます。これにより、ブラウザーの右側で、それぞれのリソースの名前が付いたタブにプレビューが開きます。
+リポジトリーブラウザーを使用すると、ナビゲーションペインでリソースをクリックしてコンテンツを表示できます。これにより、ブラウザーの右側で、それぞれのリソースの名前が付いたタブにプレビューが開きます。
 
 ![repobrowser6](/help/implementing/developing/tools/assets/repobrowser61.png)
 
@@ -147,6 +147,6 @@ Additionally, when you click on a folder, the URL is dynamically modified to inc
 
 ### コンテンツのダウンロード {#download-content}
 
-リポジトリブラウザーを使用して、コンテンツをダウンロードすることもできます。次の例では、「**ダウンロード**」リンクをクリックして、選択したノードに関連する `jcr:data` をダウンロードできます。この機能は、プロパティ定義を含んだノードに移動することで、すべてのバイナリプロパティで使用できます。
+リポジトリーブラウザーを使用して、コンテンツをダウンロードすることもできます。次の例では、「**ダウンロード**」リンクをクリックして、選択したノードに関連する `jcr:data` をダウンロードできます。この機能は、プロパティ定義を含んだノードに移動することで、すべてのバイナリプロパティで使用できます。
 
 ![repobrowser5](/help/implementing/developing/tools/assets/repobrowser52.png)

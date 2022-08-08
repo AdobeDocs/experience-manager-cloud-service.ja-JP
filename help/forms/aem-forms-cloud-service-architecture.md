@@ -1,106 +1,107 @@
 ---
-title: Experience Manager [!DNL AEM Forms] as a Cloud Service のアーキテクチャ
+title: Experience Manager  [!DNL AEM Forms]  as a Cloud Service のアーキテクチャ
 description: ' [!DNL AEM Forms] a s a Cloud Service のアーキテクチャを理解し、プラットフォームの拡張性、回復性、パフォーマンスの側面について学習します。'
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
 source-git-commit: cd9ef0db59f07173c8c5bd4b38ff946b774ce53c
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 25%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# [!DNL AEM] Formsas a Cloud Serviceアーキテクチャ {#architecture}
+# [!DNL AEM] Forms as a Cloud Service のアーキテクチャ {#architecture}
 
-[!DNL Adobe Experience Manager Forms] as a Cloud Serviceは、複雑なデジタルフォームや通信を作成、管理、公開、更新し、送信したデータをバックエンドのプロセスやビジネスルールと統合し、外部データストアにデータを保存する、クラウドネイティブなソリューションです。 広がる [!DNL Adobe Experience Manager as a Cloud Service]. 拡張、導入、環境、その他のインフラストラクチャについて詳しくは、 [のアーキテクチャの概要 [!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=ja).
+[!DNL Adobe Experience Manager Forms] as a Cloud Service は、企業が複雑なデジタルフォームやコミュニケーションを作成、管理、公開、更新しながら、送信データをバックエンドプロセスやビジネスルールと統合しデータを外部データストアに保存するためのクラウドネイティブなソリューションです。[!DNL Adobe Experience Manager as a Cloud Service] を拡張するものです。スケーリング、デプロイメント、環境などのインフラストラクチャについて詳しくは、[ [!DNL Adobe Experience Manager as a Cloud Service] のアーキテクチャの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=ja)を参照してください。
 
-AEM Forms as a Cloud Serviceは、主に次の 2 つの使用例をサポートしています。デジタル登録と顧客コミュニケーション。 次の図は、両方の使用例のアーキテクチャを示しています。
+AEM Forms as a Cloud Service では、デジタル登録とカスタマーコミュニケーションの 2 つの主要なユースケースをサポートしています。次の図は、両方のユースケースでのアーキテクチャを示しています。
 
-## Forms Digital Enrollment
+## Forms デジタル登録
 
-![Forms — デジタル登録](assets/forms-cloud-service-architecture-forms-digital-enrollment.svg)
+![Forms - デジタル登録](assets/forms-cloud-service-architecture-forms-digital-enrollment.svg)
 
-## Forms Communications
+## Forms コミュニケーション
 
-![Forms-Communication](assets/forms-cloud-service-architecture-forms-communications.svg)
+![Forms - コミュニケーション](assets/forms-cloud-service-architecture-forms-communications.svg)
 
 ## コンポーネント
 
-Forms as a Cloud Serviceは、複数のコンポーネントで構成されます。
+Forms as a Cloud Service は複数のコンポーネントで構成されています。
 
 ### CDN（コンテンツ配信ネットワーク）
 
-すべてのAEM Formsas a Cloud Serviceプログラムは、 [組み込み CDN サービス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html). これは、Forms as aCloud Servicesのライセンスに含まれます。
+すべての AEM Forms as a Cloud Service プログラムは、[ビルトイン CDN サービス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=ja)にアクセスできます。これは、Forms as a Cloud Service のライセンスに含まれています。
 
-### 作成者
+### オーサー
 
-オーサーとは、標準のオーサー実行モードで動作するAEM Formsas a Cloud Serviceインスタンスです。 このサービスは、内部のユーザー、フォームデザイナー、開発者を対象としています。 オーサー環境では、次の機能を有効にします。
+オーサーとは、標準のオーサー実行モードで動作する AEM Forms as a Cloud Service インスタンスです。このインスタンスは、内部ユーザー、フォームデザイナーおよび開発者が使用するためのものです。オーサー環境では、次の機能が有効です。
 
-* フォームの作成と管理。
-* automated forms conversionサービスに接続して、PDFまたは XDP フォームをアダプティブフォームに変換する。
-* Forms中心のワークフローの作成と実行
-* アダプティブフォームのアセットの管理
-* 通信アセットの管理
-* ブランド指向のパーソナライズされた通信を作成、組み立て、配信するための Synchronous RESTful API（リアルタイム API）と Batch API。
-* 同期 API を使用して、同期ドキュメントを組み合わせ、並べ替え、PDFします。
+* フォームのオーサリングと管理
+* 自動フォーム変換サービスへの接続による PDF または XDP フォームからアダプティブフォームへの変換
+* Forms 中心のワークフローの作成と実行
+* アダプティブフォームアセットの管理
+* コミュニケーションアセットの管理
+* ブランド指向のパーソナライズされたコミュニケーションを作成、組み立て、配信するための同期 RESTful API（リアルタイム API）とバッチ API
+* PDF ドキュメントを結合、並べ替え、検証するための同期 API
 
-### 公開
+### パブリッシュ
 
-パブリッシュインスタンスは、標準のパブリッシュ実行モードで実行されるAEM Formsas a Cloud Serviceです。 パブリッシュインスタンスは、フォームベースのアプリケーションを使用するエンドユーザー向けのインスタンスです。例えば、公開 web サイトにアクセスしてフォームを送信するユーザーなどが、このインスタンスを使用します。次の機能が有効になります。
+パブリッシュインスタンスとは、標準のパブリッシュ実行モードで動作する AEM Forms as a Cloud Service インスタンスです。パブリッシュインスタンスは、フォームベースのアプリケーションを使用するエンドユーザー向けのインスタンスです。例えば、公開 web サイトにアクセスしてフォームを送信するユーザーなどが、このインスタンスを使用します。次の機能が有効になります。
 
-* エンドユーザー向けのフォームのレンダリングと送信。
-* 送信済みのフォームデータを送信し、最終的な記録システムでさらに処理および保存する。
-* お客様が管理するストレージに接続してデータを保存します。
-* Adobe Signと接続して、アダプティブフォームの送信レコードに E 署名する。
-* ブランド指向のパーソナライズされたコミュニケーションを作成、組み立て、提供する API を同期します。
-* 同期 API を使用して、同期ドキュメントを組み合わせ、並べ替え、PDFします。
+* エンドユーザー向けのフォームのレンダリングと送信
+* 送信済みフォームの未加工データを転送してさらに処理を行い、最終的な記録システムに保存する機能
+* 顧客側で管理されるストレージへの接続によるデータの保存
+* Adobe Sign との接続によるアダプティブフォーム送信レコードへの電子サイン
+* ブランド指向のパーソナライズされたコミュニケーションを作成、組み立て、配信するための同期 API
+* PDF ドキュメントを結合、並べ替え、検証するための同期 API
 
-リバースレプリケーションは、AEM as a Cloud Serviceでは、コンテンツ/データをパブリッシュサービスからオーサーサービスに送信するために使用できません。 ただし、パブリッシュ環境で実行しているアダプティブFormsを、オーサー環境のワークフローにデータを送信するように設定することはできます（ワークフローはオーサー環境でのみ実行できます）。 これは、承認の使用例で役立ちます。
+リバースレプリケーションは、AEM as a Cloud Service では、コンテンツ／データをパブリッシュサービスからオーサーサービスに送信するために使用できません。ただし、パブリッシュで動作しているアダプティブフォームを、オーサー上のワークフローにデータを送信するように設定することはできます（ワークフローはオーサー上でのみ実行できます）。これは、承認ユースケースで役に立ちます。
 
 #### Dispatcher
 
-[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html) は、Adobe Experience Managerのキャッシュやロードバランシングを行うツールで、エンタープライズクラスの Web サーバーと共に使用できます。
+[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=ja) は、Adobe Experience Manager のキャッシュや負荷分散を利用するツールで、エンタープライズクラスの web サーバーと組み合わせて使用できます。
 
-### Adobe サービス
+### Adobe Services
 
-**automated forms conversionサービス**
+**自動フォーム変換サービス**
 
-[automated forms conversionサービス](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ja) は、PDFおよび XFA フォームを、デバイスに対応した、レスポンシブでHTML5 ベースのアダプティブフォームに自動的に変換します。
+[自動フォーム変換サービス](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ja)は、PDF および XFA フォームを、使用しているデバイスに合わせて、HTML5 ベースのレスポンシブなアダプティブフォームに自動的に変換します。
 
 **Adobe Sign**
 
-Adobe Signは、ユーザーがブラウザーまたはモバイルデバイスを使用して署名プロセスの送信、署名、トラッキング、管理をおこなえる、クラウドベースの e 署名サービスです。 Adobe Signをアダプティブフォームと統合して、署名ワークフローを自動化し、単一および複数の署名プロセスを簡略化し、アダプティブフォームに電子署名を行うことができます。
+Adobe Sign は、ユーザーがブラウザーまたはモバイルデバイスを使用して署名プロセスを送信、署名、追跡、管理できる、クラウドベースの電子サインサービスです。Adobe Sign をアダプティブフォームと統合して、署名ワークフローの自動化、単一および複数の署名プロセスの簡略化、アダプティブフォームへの電子サインを行うことができます。
 
 <!-- **PDF Service API**
 Adobe’s PDF Services API lets create, combine, export, and extract data from PDFs through powerful and flexible cloud-based APIs. -->
 
-### お客様が管理するストレージ
+### 顧客側で管理されるストレージ
 
-Forms as a Cloud Serviceには、BLOB ストア、データベース、ストレージサービスなど、外部ストレージシステムにコンテンツを保存するオプションが用意されています。 また、顧客が管理するリポジトリに、機密の個人データ (SPD) 要素を含むインプロセスワークフローデータ (AEM Workflow Variables データ ) を格納して、安全に処理することもできます。 Adobeでは、機密データをお客様が管理するストレージにのみ保存することをお勧めします。
+Forms as a Cloud Service には、BLOB ストア、データベース、ストレージサービスなどの外部ストレージシステムにコンテンツを保存するオプションが用意されています。また、機密性の高い個人データ（SPD）要素を含んだ処理中のワークフローデータ（AEM ワークフロー変数データ）を、顧客側で管理されるリポジトリーに保存して安全に処理することもできます。アドビでは、お客様が管理するストレージにのみ機密データを保存することをお勧めします。
 
-以下を使用して、 **統合ストレージコネクタ** BLOB ストレージに接続し、 **フォームデータモデル** データベースまたはバックエンドサービス（RESTful、SOAP、Azure Blob Storage など）に接続する場合。
+**統合ストレージコネクタ**&#x200B;を使用して BLOB ストレージに接続したり、**フォームデータモデル**&#x200B;を使用してデータベースまたはバックエンドサービス（RESTful、SOAP、Azure Blob Storage など）に接続したりすることができます。
 
 ### ドキュメントサービス
 
 ドキュメントサービスは、次の要素で構成されます。
 
-* **出力サービス（通信 — ドキュメント生成 API）** は、ビジネス通信、声明書、請求処理レター、特典通知、月額請求、ウェルカムキットなど、ブランド承認、パーソナライズ、標準化されたドキュメントを作成するのに役立ちます。
+* **Output サービス（通信 - ドキュメント生成 API）**&#x200B;は、ビジネス文書、ステートメント、請求処理レター、特典通知、毎月の請求書、ウェルカムキットなど、ブランド承認済みのパーソナライズされた標準的なドキュメントを作成するのに役立ちます。
 
-* **Assembler サービス（通信 — ドキュメント操作 API）** は、PDFドキュメントの組み合わせ、並べ替え、検証に役立ちます。
+* **Assembler サービス（通信 - ドキュメント操作 API）**&#x200B;は、PDF ドキュメントの結合、並べ替えおよび検証に役立ちます。
 
-* **レコードのドキュメント (DoR) サービス** は、レコードのドキュメント (DoR) を生成するのに役立ちます。 このサービスは、Formsas a Cloud Serviceのオーサーインスタンスとパブリッシュインスタンスから別々のポッドで実行されます。 これにより、パフォーマンスが向上し、負荷に応じて個別にポッドをスケーリングできます。
+* **DoR（レコードのドキュメント）サービス**&#x200B;は、DoR（レコードのドキュメント）を生成するのに役立ちます。このサービスは、Forms as a Cloud Service のオーサーインスタンスやパブリッシュインスタンスとは別の独自のポッドで動作します。これにより、パフォーマンスが向上し、負荷に応じて個別にポッドをスケーリングできます。
 
 ### Cloud Manager 
 
-Cloud Manager は、[AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html) にとって不可欠なコンポーネントです。これは、お客様の運用および開発者のペルソナのための単一のエントリポイントです。 AEM のプログラムと環境を管理できる場所です。Cloud Manager は、AEM as a Cloud Service の主要コンポーネントを作成および設定できるセルフサービスポータルとして進化しました。
+Cloud Manager は、[AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=ja) にとって不可欠なコンポーネントです。お客様の運用および開発者ペルソナのための単一のエントリーポイントになります。AEM のプログラムと環境を管理できる場所です。Cloud Manager は、AEM as a Cloud Service の主要コンポーネントを作成および設定できるセルフサービスポータルとして進化しました。
 
 * プログラムの作成と管理
 * プログラム内での AEM 環境の作成と管理
 * 顧客コードと設定を特定の環境にデプロイするためのパイプラインの作成と管理
-* これらのコンポーネントに関する重要なライフサイクルイベント（製品のアップデートなど）の通知の取得 Cloud Manager について詳しくは、 [AdobeCloud Manager について](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html?lang=ja) および [Cloud Manager の概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja).
+* これらのコンポーネントに関する重要なライフサイクルイベント（例えば、更新など）の通知
+Cloud Manager について詳しくは、[Adobe Cloud Manager について](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html?lang=ja)および [Cloud Manager の概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja)を参照してください。
 
 ### デベロッパーコンソール
 
-開発者コンソールには、Forms as a Cloud Service 環境が実行されているそれぞれの詳細が表示されます。 これらの詳細は、環境のデバッグに役立ちます。 詳しくは、 [開発者コンソールでas a Cloud ServiceしたAEMのデバッグ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=ja).
+開発者コンソールには、実行中の各 Forms as a Cloud Service 環境の様々な詳細が表示されます。これらの詳細は、環境のデバッグに役立ちます。詳しくは、[開発者コンソールでの AEM as a Cloud Service のデバッグ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=ja)を参照してください。
 
 <!--
 
@@ -187,4 +188,4 @@ Set up your development environment, [Configure your CI/CD Pipeline](https://exp
 
 ## デバッグ {#debugging}
 
-AEM as a Cloud Service は、セルフサービスのスケーラブルなクラウドインフラストラクチャ上で実行します。ビルドやデプロイから、実行中のAEMアプリケーションの詳細の取得に至るまで、AEM開発者はAEMの様々なファセットを理解し、デバッグする必要があります。 詳しくは、[AEM as a Cloud Service のデバッグ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html)を参照してください。
+AEM as a Cloud Service は、セルフサービスのスケーラブルなクラウドインフラストラクチャ上で実行します。AEM 開発者は、ビルドとデプロイから、実行中の AEM アプリケーションの詳細情報の取得まで、AEM as a Cloud Service の様々な側面を理解し、デバッグする必要があります。詳しくは、[AEM as a Cloud Service のデバッグ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html?lang=ja)を参照してください。

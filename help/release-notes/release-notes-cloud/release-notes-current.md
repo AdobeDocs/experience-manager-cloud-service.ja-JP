@@ -5,8 +5,8 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
 source-git-commit: 75621ba378d59bd36146b15995823c43c458d349
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 19%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -100,8 +100,8 @@ Experience Manager AssetsはAdobe Sensei AI 機能を今まで使用 [画像内�
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager の毎月のリリースの完全なリストを確認できます [ここ](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+Cloud Manager の月次リリースの完全なリストは、[こちら](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)で確認できます。
 
 ## 移行ツール {#migration-tools}
 
-移行ツールのリリースの完全なリストはこちらで確認できます [ここ](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+移行ツールのリリースの完全なリストは、[こちら](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)で確認できます

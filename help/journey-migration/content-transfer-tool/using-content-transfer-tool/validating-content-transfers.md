@@ -4,8 +4,8 @@ description: コンテンツ転送ツールを使用してコンテンツ転送�
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 source-git-commit: b88277cda730d9499c7e2750026b6f415c2a8d0e
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -127,7 +127,7 @@ Migration validation took 0 minutes
 
 上記の失敗例は、取り込みを実行したあと、取り込み時にノードが関係しないように、ワイプを無効にして同じ取り込みを再度実行することで得られたものです。すべてのノードが既にターゲット上に存在していたケースです。
 
-検証レポートは、取り込みログに含まれる以外に、 **取り込みジョブ** Cloud Acceleration Manager のユーザーインターフェイス。 それには、3 つのドット (**...**) をクリックしてから、 **検証レポート** をクリックして、検証レポートを表示します。
+検証レポートは、取り込みログに含まれるだけでなく、Cloud Acceleration Manager の&#x200B;**取り込みジョブ**&#x200B;ユーザーインターフェイスからアクセスすることも可能です。アクセスするには、3 つのドット（**...**）をクリックし、ドロップダウンの「**検証レポート**」をクリックして検証レポートを表示します。
 
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)

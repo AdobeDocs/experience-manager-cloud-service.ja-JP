@@ -4,8 +4,8 @@ description: AEM プレビューサービスを使用して、運用を開始す
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ AEM は、web サイトがパブリッシュ環境になって一般公開され
 
 >[!NOTE]
 >
->エクスペリエンスフラグメントをプレビューに公開する手順は、エクスペリエンスフラグメントコンソールまたはエディターからですが、基本的にはページの場合と同じです。
+>エクスペリエンスフラグメントをプレビューに公開する手順は、エクスペリエンスフラグメントコンソールまたはエディターを使用しますが、基本的にはページの場合と同じです。
 
 ## プレビュー用のコンテンツの公開 {#publishing-content-to-preview}
 

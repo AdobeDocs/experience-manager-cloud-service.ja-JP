@@ -4,8 +4,8 @@ description: AEM を使用してページを公開および非公開にする方
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '1791'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->エクスペリエンスフラグメントの公開は、基本的にページの公開と同じ手順に従いますが、エクスペリエンスフラグメントコンソールまたはエディターからは実行できます。
+>エクスペリエンスフラグメントを公開する手順は、エクスペリエンスフラグメントコンソールまたはエディターを使用しますが、基本的にはページ公開する場合と同じです。
 
 ## 用語 {#terminology}
 

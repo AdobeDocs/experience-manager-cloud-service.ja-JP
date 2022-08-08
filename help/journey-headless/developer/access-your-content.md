@@ -4,8 +4,8 @@ description: AEM ヘッドレスデベロッパージャーニーのこのパー
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -242,7 +242,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 コンテンツに関するクエリを開始する前に、次の操作が必要です。
 
 * エンドポイントの有効化
-   * ツール/一般/ GraphQL を使用します。
+   * ツール／一般／GraphQL の使用
    * [GraphQL エンドポイントの有効化](/help/headless/graphql-api/graphql-endpoint.md)
       * これにより、GraphiQL IDE も有効になります。
 
@@ -267,12 +267,12 @@ AEM GraphQL API をクエリで実際に使用するにあたって、次のよ�
 
 ### クエリのテスト場所 {#where-to-test-your-queries}
 
-クエリは、GraphiQL インターフェイスで入力できます。 クエリエディターには、次のいずれかからアクセスできます。
+クエリは、GraphiQL インターフェイスで入力できます。クエリエディターには、次のいずれかの方法でアクセスできます。
 
-* **ツール** -> **一般** -> **GraphQL クエリエディター**
-* 直接例： `http://localhost:4502/aem/graphiql.html`
+* **ツール**／**一般**／**GraphQL クエリエディター**
+* 直接アクセス（例：`http://localhost:4502/aem/graphiql.html`）
 
-![GraphiQL インターフェイス ](assets/graphiql-interface.png "GraphiQL インターフェイス")
+![GraphiQL インターフェイス](assets/graphiql-interface.png "GraphiQL インターフェイス")
 
 ### クエリの概要 {#getting-Started-with-queries}
 

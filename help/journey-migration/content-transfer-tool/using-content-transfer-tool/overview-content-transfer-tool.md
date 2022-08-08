@@ -4,8 +4,8 @@ description: コンテンツ転送ツールの概要
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: 3bf12642e94076a67010e4701715a54138a490ee
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 72%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 72%
 >id="aemcloud_ctt_overview"
 >title="概要"
 >abstract="コンテンツ転送ツールは、アドビが開発したツールで、既存のコンテンツをソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM as a Cloud Service インスタンスに移動するためのものです。プリンシパル（ユーザーやグループ）も自動的に転送されます。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en" text="ガイドラインとベストプラクティス"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja" text="ガイドラインとベストプラクティス"
 
 <!-- Alexandru: Old version of contextual help, keep for failover/debugging
 >[!CONTEXTUALHELP]
@@ -30,17 +30,17 @@ ht-degree: 72%
 
 プリンシパル（ユーザーやグループ）も自動的に転送されます。
 
-コンテンツ転送ツールの新しいバージョンが利用でき、コンテンツ転送プロセスと Cloud Acceleration Manager が統合されています。 次の利点をすべて活用するには、この新しいバージョンに切り替えることを強くお勧めします。
+コンテンツ転送ツールの新しいバージョンが利用可能です。新バージョンでは、コンテンツ転送プロセスと Cloud Acceleration Manager が統合されています。次の利点をすべて活用するには、この新しいバージョンに切り替えることを強くお勧めします。
 
-* 移行セットを 1 回抽出し、同時に複数の環境に取り込むセルフサービス方法
-* 読み込み状態、ガードレール、エラー処理が改善され、ユーザーエクスペリエンスが向上しました。
-* 取り込みログは保持され、常にトラブルシューティングに使用できます
+* セルフサービス方式で、移行セットを 1 回抽出し、同時に複数の環境に取り込めます。
+* 読み込み状態、ガードレール、エラー処理が改善され、ユーザーエクスペリエンスが向上しました
+* 取り込みログは永続化され、常にトラブルシューティングに使用できます。
 
-新しいバージョン (v2.0.10) の使用を開始するには、以下を実行します。 <!-- update when version is available --> このツールでは、アーキテクチャが大きく変更されたので、古いバージョンのコンテンツ転送ツールをアンインストールする必要があります。
+新しいバージョン（v2.0.10）<!-- update when version is available --> の使用を開始するには、ツールのアーキテクチャが大きく変更されたので、古いバージョンのコンテンツ転送ツールをアンインストールする必要があります。
 
 >[!NOTE]
 >
-> 移行が既に進行中の場合は、移行が完了するまで以前のバージョンの CTT を使用し続けることができます。 以前のバージョンの CTT に関連するドキュメントについては、 [レガシードキュメント](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
+> 移行が既に進行中の場合は、移行が完了するまで以前のバージョンの CTT を使用し続けることができます。以前のバージョンの CTT に関連するドキュメントについては、[レガシードキュメント](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)を参照してください。
 
 ## コンテンツ転送ツールの諸段階 {#phases-content-transfer-tool}
 

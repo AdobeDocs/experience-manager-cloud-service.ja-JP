@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Adobe Experience Manager as a Cloud Service のコネクタの実装 {#aem-connectors-guide}
 
-Experience Manageras a Cloud Service用のコネクタ、その機能、およびExperience Managerでこれらの役立つツールを実装する方法について説明します。
+Experience Manageras a Cloud Service 用のコネクタと機能、これらの役立つツールを Experience Manager に実装する方法について説明します。
 
 ## Adobe Experience Manager as a Cloud Service コネクタに関する主要な記事 {#key-articles}
 

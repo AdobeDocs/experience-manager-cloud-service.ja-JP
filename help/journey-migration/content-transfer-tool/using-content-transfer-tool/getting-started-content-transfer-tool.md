@@ -4,8 +4,8 @@ description: コンテンツ転送ツールの基本を学ぶ
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 source-git-commit: 7bebdff5095786005d5c4c91b7b699d71f9813a7
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 56%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -69,7 +69,7 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 <!-- Need to remove the video -->
 
-次の節は、コンテンツ転送ツールの新しいバージョンに適用されます。 この節では、コンテンツ転送ツールを使用してコンテンツをAEM as a Cloud Serviceに移行する方法について説明します。
+次の節は、コンテンツ転送ツールの新しいバージョンに適用されます。この節では、コンテンツ転送ツールを使用してコンテンツを AEM as a Cloud Service に移行する方法について説明します。
 
 ### 抽出設定フェーズ {#extraction-setup-phase}
 
@@ -81,13 +81,13 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
 
-1. Cloud Acceleration Manager(CAM) にログインし、以前に作成した CAM プロジェクトをクリックして、AEM as a Cloud Serviceへの移行に対する準備状況を評価します。 CAM プロジェクトをまだ作成していない場合は、「CAM でのプロジェクトの作成と管理」を参照してください。
+1. Cloud Acceleration Manager（CAM）にログインし、以前に作成した CAM プロジェクトをクリックして、AEM as a Cloud Service への移行に対する準備状況を評価します。CAM プロジェクトをまだ作成していない場合は、「CAM でのプロジェクトの作成と管理」を参照してください。
 
-1. をクリックします。 **コンテンツ転送** カード。 これにより、移行セットのリストビューが表示されます。
+1. **コンテンツ転送**&#x200B;カードをクリックします。これにより、移行セットのリストビューが表示されます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
-1. 「 」をクリックして移行セットを作成 **移行セットを作成**.
+1. 「**移行セットを作成**」をクリックして移行セットを作成します。
 
    >[!NOTE]
    >
@@ -97,11 +97,11 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
-1. これで、リスト表示に移行リストが表示されます。 3 つのドット記号 (**...**) をクリックしてドロップダウンを開き、 **抽出キーをコピー**. このキーは、抽出段階で必要になります。 この抽出キーをコピーします。
+1. これで、リスト表示に移行リストが表示されます。3 つのドット記号（**...**）をクリックしてドロップダウンを開き、「**抽出キーをコピー**」をクリックします。このキーは、抽出段階で必要になります。この抽出キーをコピーします。
 
    >[!NOTE]
    >
-   >抽出キーを使用すると、ソースAEM環境から移行セットに安全に接続できます。 この鍵は、パスワードと同じ注意を払って扱ってください。また、電子メールのような安全でないメディアでは、鍵を共有しないでください。
+   >抽出キーを使用すると、移行元の AEM 環境から移行セットに安全に接続できます。このキーは、パスワードと同じ注意を払って扱ってください。また、電子メールのような安全でないメディアでは、キーを共有しないでください。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam4.png)
 
@@ -109,26 +109,26 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_populate_migrationset"
->title="移行セットの入力 abstract=&quot;移行セットを作成した後、AEMas a Cloud Service環境に移動する必要があるソースインスタンスのコンテンツを入力する必要があります。 これをおこなうには、コンテンツ転送ツールをソースインスタンスにインストールする必要があります。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html" text="コンテンツの抽出"
+>title="移行セットを作成した後、AEM as a Cloud Service 環境に移動する必要がある移行元のインスタンスのコンテンツを入力する必要があります。これを行うには、移行元のインスタンスにコンテンツ転送ツールをインストールする必要があります。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=ja" text="コンテンツの抽出"
 
-Cloud Acceleration Manager で作成した移行セットを入力するには、最新バージョンのコンテンツ転送ツールをソースAdobe Experience Manager(AEM) インスタンスにインストールする必要があります。 移行セットの入力方法については、この節を参照してください。
+Cloud Acceleration Manager で作成した移行セットを入力するには、最新バージョンのコンテンツ転送ツールを移行元の Adobe Experience Manager（AEM）インスタンスにインストールする必要があります。移行セットの入力方法については、この節を参照してください。
 
-1. ソースAdobe Experience Managerインスタンスに最新バージョン (v2.0.10) のコンテンツ転送ツールをインストールしたら、に移動します。 **運用 — コンテンツ移行**
+1. 移行元の Adobe Experience Manager インスタンスに最新バージョン（v2.0.10）のコンテンツ転送ツールをインストールしたら、**運用 - コンテンツ移行**&#x200B;に移動します。
 
-1. クリック **移行セットを作成**
+1. 「**移行セットを作成**」をクリックします。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
-1. 前の CAM からコピーした抽出キーを、の抽出キー入力フィールドに貼り付けます。 **移行セットを作成** フォーム。 その後、移行セット名と Cloud Acceleration Manager(CAM) プロジェクト名フィールドが自動的に入力されます。 これらは、CAM の移行セット名と、作成した CAM プロジェクト名に一致する必要があります。 コンテンツのパスを追加できるようになりました。 コンテンツのパスを追加したら、移行セットを保存できます。 抽出は、含めるバージョンまたは除外するバージョンで実行できます。
+1. 先ほど CAM からコピーした抽出キーを、**移行セットを作成**&#x200B;フォームの抽出キー入力フィールドに貼り付けます。その後、移行セット名と Cloud Acceleration Manager（CAM）プロジェクト名フィールドが自動的に入力されます。これらは、CAM の移行セット名と、作成した CAM プロジェクト名に一致する必要があります。コンテンツのパスを追加できるようになりました。コンテンツのパスを追加したら、移行セットを保存できます。抽出は、含めるバージョンまたは除外するバージョンで実行できます。
 
    >[!NOTE]
    >
-   >抽出キーが有効で、有効期限に近づいていないことを確認します。 この情報は、 **移行セットを作成** ダイアログを開き、抽出キーを貼り付けた後に表示されます。 接続エラーが発生した場合は、 [ソース環境の接続](#source-environment-connectivity) を参照してください。
+   >抽出キーが有効で、有効期限に近づいていないことを確認します。抽出キーを貼り付けた後、この情報は、**移行セットを作成**&#x200B;ダイアログに表示されます。接続エラーが発生した場合は、[移行元環境の接続性](#source-environment-connectivity)を参照してください。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 
-1. 次に、次のパラメータを選択して移行セットを作成します。
+1. 次に、移行セットを作成するには、次のパラメータを選択します。
 
    1. **バージョンを含める**： 必要に応じて選択します。バージョンが含まれる場合は、監査イベントを移行するために、パス `/var/audit` が自動的に含まれます。
 
@@ -184,7 +184,7 @@ Cloud Acceleration Manager で作成した移行セットを入力するには�
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
-1. 1 回 **サイズを確認** 処理が完了した場合、ステータスは **完了**. 同じ移行セットを選択し、「**サイズを確認**」をクリックして結果を表示します。以下は、警告を含まない&#x200B;**サイズ確認**&#x200B;結果の例です。
+1. **サイズ確認**&#x200B;プロセスが完了したら、ステータスが&#x200B;**完了**&#x200B;に変わります。同じ移行セットを選択し、「**サイズを確認**」をクリックして結果を表示します。以下は、警告を含まない&#x200B;**サイズ確認**&#x200B;結果の例です。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
@@ -199,4 +199,4 @@ Cloud Acceleration Manager で作成した移行セットを入力するには�
 
 ## 次の手順 {#whats-next}
 
-移行セットの作成方法を理解したら、コンテンツ転送ツールでの抽出プロセスと取り込みプロセスについて学ぶ準備が整います。これらのプロセスを学ぶ前に、コンテンツを AEM as a Cloud Service に移行するコンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮する[大規模なコンテンツリポジトリの処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja)を参照する必要があります。
+移行セットの作成方法を理解したら、コンテンツ転送ツールでの抽出プロセスと取り込みプロセスについて学ぶ準備が整います。これらのプロセスを学ぶ前に、コンテンツを AEM as a Cloud Service に移行するコンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮する[大規模なコンテンツリポジトリーの処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja)を参照する必要があります。

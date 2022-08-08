@@ -4,8 +4,8 @@ description: AEM as a Cloud Service の高度なネットワーク機能（VPN �
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: e34759aeea2e3819cf76a8bba433b96ae201c16f
 workflow-type: tm+mt
-source-wordcount: '3006'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -68,11 +68,11 @@ API が数秒以内に応答して「更新中」のステータスを返し、�
 
 環境ごとのポート転送ルールを更新するには、`PUT /program/{programId}/environment/{environmentId}/advancedNetworking` エンドポイントを再度呼び出します。その際に、設定パラメーターは一部ではなく、必ず全部を含めてください。
 
-### フレキシブルポートエグレスの無効化 {#disabling-flexible-port-egress-provision}
+### フレキシブルポート出力を無効にする {#disabling-flexible-port-egress-provision}
 
-特定の環境に対してフレキシブルポートエグレスを&#x200B;**無効**&#x200B;にするには、`DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()` を呼び出します。
+特定の環境に対してフレキシブルポート出力を&#x200B;**無効**&#x200B;にするには、`DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()` を呼び出します。
 
-API について詳しくは、 [Cloud Manager API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+API について詳しくは、[Cloud Manager API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)を参照してください。
 
 ### トラフィックルーティング {#flexible-port-egress-traffic-routing}
 
@@ -201,11 +201,11 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 フレキシブルポートエグレス IP アドレスと専用エグレス IP アドレスのどちらかを選択する場合は、特定の IP アドレスが必要なければ、フレキシブルポートエグレスを選択してください。アドビ側でフレキシブルポートエグレストラフィックのパフォーマンスを最適化できるからです。
 
-### 出力専用 IP アドレスの無効化 {#disabling-dedicated-egress-IP-address}
+### 出力専用 IP アドレスを無効にする {#disabling-dedicated-egress-IP-address}
 
-次に対して **無効** 特定の環境からの出力専用 IP アドレス、を呼び出す `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+特定の環境に対して出力専用ポートを&#x200B;**無効**&#x200B;にするには、`DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()` を呼び出します。
 
-API について詳しくは、 [Cloud Manager API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+API について詳しくは、[Cloud Manager API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)を参照してください。
 
 ### トラフィックルーティング {#dedcated-egress-ip-traffic-routing}
 
@@ -372,7 +372,7 @@ API が数秒以内に応答して「`updating`」のステータスを返し、
 
 環境ごとのルーティングルールを更新するには、`PUT /program/{programId}/environment/{environmentId}/advancedNetworking` エンドポイントを再度呼び出します。その際に、設定パラメーターは一部ではなく、必ず全部を含めてください。環境のアップデートは適用されるまでに通常 5～10 分かかります。
 
-### VPN の無効化 {#disabling-the-vpn}
+### VPN を無効にする {#disabling-the-vpn}
 
 特定の環境で VPN を無効にするには、`DELETE /program/{programId}/environment/{environmentId}/advancedNetworking` を呼び出します。詳しくは、 [API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration) を参照してください。
 
@@ -493,7 +493,7 @@ API が数秒以内に応答して「`updating`」のステータスを返し、
   <tr>
     <td><code>p{PROGRAM_ID}.inner.adobeaemcloud.net</code></td>
     <td>VPN の AEM 側から顧客側に送信されるトラフィックの IP。これを顧客の設定で許可リストに登録して、AEM からのみ接続できるようにすることが可能です。</td>
-    <td>お客様がAEMへの VPN アクセスを許可したい場合は、CNAME DNS エントリを設定して、カスタムドメインをマッピングする必要があります。 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> および/または <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> をこの値に設定します。</td>
+    <td>AEM への VPN アクセスを許可する場合は、CNAME DNS エントリを設定して、これにカスタムドメインや <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> や <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> をマッピングする必要があります。</td>
   </tr>
 </tbody>
 </table>
@@ -515,7 +515,7 @@ Header always set Cache-Control private
 
 ## プログラムのネットワークインフラストラクチャの削除 {#deleting-network-infrastructure}
 
-宛先 **削除** プログラムのネットワークインフラストラクチャ、を呼び出す `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`.
+プログラムのネットワークインフラストラクチャを&#x200B;**削除**&#x200B;するには、`DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`.を呼び出します。
 
 >[!NOTE]
 >
@@ -525,10 +525,10 @@ Header always set Cache-Control private
 
 次の手順に従って、高度なネットワークタイプ間を移行できます。
 
-* すべての環境で詳細ネットワークを無効にする
-* 高度なネットワークインフラストラクチャを削除する
-* 正しい値で高度なネットワークインフラストラクチャを再作成する
-* 環境レベルの高度なネットワークを再度有効にする
+* すべての環境で詳細ネットワークを無効にします。
+* 高度なネットワークインフラストラクチャを削除します。
+* 正しい値で高度なネットワークインフラストラクチャを再作成します。
+* 環境レベルの高度なネットワークを再度有効にします。
 
 >[!WARNING]
 >

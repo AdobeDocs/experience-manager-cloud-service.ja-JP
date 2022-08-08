@@ -4,8 +4,8 @@ description: Target へのコンテンツの取り込み
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 34%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,20 +21,20 @@ ht-degree: 34%
 
 コンテンツ転送ツールで移行セットを取り込むには、次の手順に従います。
 >[!NOTE]
->オプションの事前コピー手順を実行して、取り込み段階を大幅に高速化できます。事前コピー手順は、最初の完全な抽出および取り込みに最も効果的です。 詳しくは、[AzCopy を使用した取得](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy)を参照してください。
+>オプションの事前コピー手順を実行して、取り込み段階を大幅に高速化できます。事前コピーステップは、1回目の完全抽出と取り込みに最も効果的です。詳しくは、[AzCopy を使用した取得](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy)を参照してください。
 
-1. Cloud Acceleration Manager に移動します。 プロジェクトカードをクリックし、「コンテンツ転送」カードをクリックします。 に移動します。 **取り込みジョブ** をクリックし、 **新しい取り込み**
+1. Cloud Acceleration Manager に移動します。プロジェクトカードをクリックし、コンテンツ転送カードをクリックします。**取り込みジョブ**&#x200B;に移動し、「**新しい取り込み**」をクリックします。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
 1. 新しい取り込みを作成するために必要な情報を入力します。
 
-   * ソースとして抽出した移行セットを選択します。
-   * 宛先環境を選択します。 移行セットのコンテンツは、ここに取り込まれます。 層を選択します。 （オーサー/パブリッシュ）。
+   * 抽出した移行セットをソースとして選択します。
+   * 移行先の環境を選択します。移行セットのコンテンツは、ここに取り込まれます。階層を選択します（オーサー／パブリッシュ）。
 
    >[!NOTE]
    >
-   >ソースがオーサーの場合は、ターゲットのオーサー層に取り込むことをお勧めします。 同様に、ソースが「公開」の場合は、ターゲットも「公開」にする必要があります。
+   >ソースがオーサーの場合は、ターゲットのオーサー層に取り込むことをお勧めします。同様に、ソースがパブリッシュの場合は、ターゲットもパブリッシュにする必要があります。
 
    >[!NOTE]
    >
@@ -48,17 +48,17 @@ ht-degree: 34%
 
    >[!IMPORTANT]
    >
-   >設定が **ワイプ** は取り込み前に有効になり、既存のリポジトリ全体を削除し、コンテンツを取り込むための新しいリポジトリを作成します。 つまり、ターゲットの Cloud Service インスタンスに対する権限を含むすべての設定がリセットされます。これは、**administrators** グループに追加された管理者ユーザーにも当てはまります。取り込みを開始するには、administrators グループに再度追加される必要があります。
+   >取り込み前の&#x200B;**ワイプ**&#x200B;設定が有効になっている場合は、既存のリポジトリー全体が削除され、コンテンツの取り込み先となる新しいリポジトリーが作成されます。つまり、ターゲットの Cloud Service インスタンスに対する権限を含むすべての設定がリセットされます。これは、**administrators** グループに追加された管理者ユーザーにも当てはまります。取り込みを開始するには、管理者グループに再度追加される必要があります。
 
-1. クリック **取り込み**
+1. 「**取り込み**」をクリックします。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. その後、取り込みジョブリストビューで、取り込み段階を監視できます
+1. その後、取り込みジョブリストビューで取り込み段階を監視できます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. 取り込みが完了したら、画面の右上隅にある (i) ボタンをクリックして、取り込みジョブに関する詳細情報を取得します。
+1. 取り込みが完了したら、画面の右上隅にある「i」ボタンをクリックして、取り込みジョブに関する詳細情報を取得できます。
 
 <!-- Alexandru: hiding temporarily, until it's reviewed 
 
@@ -84,21 +84,21 @@ ht-degree: 34%
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-05.png) -->
 
-## 追加インジェスト {#top-up-ingestion-process}
+## 追加取り込み {#top-up-ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup" title="Top Up Ingestion"
->abstract="トップアップ機能を使用して、前回のコンテンツ転送アクティビティ以降に変更されたコンテンツを移動します。 取り込みが完了したら、ログでエラーや警告を確認します。 エラーが発生した場合は、報告された問題に対処するか、Adobeカスタマーケアにお問い合わせください。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en" text="ログの表示"
+>abstract="追加取り込み機能を使用すると、前回のコンテンツ転送アクティビティ以降に変更されたコンテンツが移行されます。取り込みが完了したら、ログを調べて、エラーや警告がないか確認します。エラーが発生した場合は、報告された問題を解決するかアドビカスタマーケアに連絡して、すぐに対処してください。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ja" text="ログの表示"
 
 コンテンツ転送ツールには、*差分コンテンツ追加*&#x200B;をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。
 
 >[!NOTE]
->最初のコンテンツ転送の後は、差分コンテンツ追加を頻繁に行って、Cloud Service での運用を開始する前に行う最後の差分コンテンツ転送に必要なコンテンツ凍結期間を短縮することをお勧めします。最初のフル取り込みにコピー前の手順を使用した場合、プロセス全体に時間がかかる可能性があるので、後続の追加取り込みに対しては（追加の移行セットのサイズが 200GB 未満の場合）プリコピーをスキップできます。
+>最初のコンテンツ転送の後は、差分コンテンツ追加を頻繁に行って、Cloud Service での運用を開始する前に行う最後の差分コンテンツ転送に必要なコンテンツ凍結期間を短縮することをお勧めします。最初の完全取り込みに事前コピーステップを使用した場合は、後続の追加取り込みに対しては、プロセス全体にかかる時間が増える可能性があるので、（追加移行セットのサイズが 200 GB 未満の場合）事前コピーをスキップできます。
 
-取り込みプロセスが完了したら、差分コンテンツを取り込むには、 [追加抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) 次に、追加インジェスト方法を使用します。
+取り込みプロセスの完了後、差分コンテンツを取り込むには、[追加抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)を実行してから、追加取り込みを使用します。
 
-これをおこなうには、新しい取り込みジョブを作成し、 **ワイプ** は、次に示すように、取得段階では無効になっています。
+それには、新しい取り込みジョブを作成し、取り込み段階では&#x200B;**ワイプ**&#x200B;設定を必ず無効にします（下図を参照）。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
@@ -118,7 +118,7 @@ ht-degree: 34%
 
 ### 取り込みを開始できません {#unable-to-start-ingestion}
 
-ローカルの **AEM管理者** グループを作成します。 AEM administrators グループに属していない場合は、取り込みを開始しようとすると、次に示すエラーが表示されます。 管理者に問い合わせて、ローカルにユーザーを追加することもできます **AEM管理者** または、トークン自体を探し、 **移行トークン入力** フィールドに入力します。
+ローカルの **AEM管理者** グループを作成します。 AEM 管理者グループに属していない場合は、取り込みを開始しようとすると、次に示すようなエラーが表示されます。管理者に問い合わせて、ローカルにユーザーを追加することもできます **AEM管理者** または、トークン自体を探し、 **移行トークン入力** フィールドに入力します。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 

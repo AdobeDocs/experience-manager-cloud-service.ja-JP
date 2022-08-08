@@ -1,38 +1,38 @@
 ---
-title: クライアント側デバイスのピクセル比でのスマートイメージングの使用
-description: Dynamic MediaでAdobe Experience Manager as a Cloud Serviceのスマートイメージングでクライアント側のデバイスのピクセル比を使用する方法について説明します。
+title: クライアントサイドのデバイスピクセル比（DPR）を使用したスマートイメージングについて
+description: Dynamic Media を含む Adobe Experience Manager as a Cloud Service のスマートイメージングでクライアントサイドのデバイスピクセル比を使用する方法について説明します。
 role: Admin,User
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
 source-git-commit: 1dae0459073e84eee4382b4b7ec864b3ef55a5bd
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# クライアントサイドデバイスのピクセル比 (DPR) を使用したスマートイメージングについて {#client-side-dpr}
+# クライアントサイドのデバイスピクセル比（DPR）を使用したスマートイメージングについて {#client-side-dpr}
 
-現在のスマートイメージングソリューションでは、ユーザーエージェント文字列を使用して、使用されているデバイス（デスクトップ、タブレット、モバイルなど）の種類を判断します。
+現在のスマートイメージングソリューションでは、ユーザーエージェント文字列を使用して、使用されているデバイスのタイプ（デスクトップ、タブレット、モバイルなど）を判断します。
 
-特にAppleデバイスでは、デバイス検出機能（ユーザーエージェント文字列に基づく DPR）が不正確な場合が多くあります。 また、新しいデバイスが起動されるたびに、そのデバイスを検証する必要があります。
+特に Apple デバイスでは、デバイス検出機能（ユーザーエージェント文字列に基づく DPR）が不正確な場合がよくあります。また、新しいデバイスが起動されるたびに、そのデバイスを検証する必要があります。
 
-クライアント側の DPR では、100%の正確な値が提供され、Appleか、それ以外の新しいデバイスが起動されたかに関わらず、あらゆるデバイスで機能します。
+クライアントサイド DPR では、100％ 正確な値が提供され、起動されたデバイスが Apple であるか、それ以外の新しいデバイスであるかにかかわらず、あらゆるデバイスで機能します。
 
 <!-- See also [About network bandwidth optimization](/help/assets/dynamic-media/imaging-faq.md#network-bandwidth-optimization). -->
 
-## クライアント側の DPR コードを使用する
+## クライアントサイド DPR コードの使用
 
-**サーバーサイドレンダリングアプリ**
+**サーバーサイドでレンダリングされるアプリ**
 
-1. サービスワーカーの初期 (`srvinit.js`) を使用する場合は、次のスクリプトをHTMLページのヘッダーセクションに追加します。
+1. HTML ページのヘッダーセクションに次のスクリプトを追加して、サービスワーカーの初期化コード（`srvinit.js`）を読み込みます。
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    ```
 
-   Adobeでは、このスクリプトを読み込むことをお勧めします _前_ サービスワーカーがすぐに初期化を開始するための他のスクリプト。
+   サービスワーカーがすぐに初期化を開始するように、他のあらゆるスクリプトより&#x200B;_前_&#x200B;に、このスクリプトを読み込むことをお勧めします。
 
-1. 次の DPR イメージタグコードを、タグページの body セクションの上部にHTMLします。
+1. HTML ページの本文セクションの先頭に次の DPR 画像タグコードを追加します。
 
    ```html
    <img src="aem_dm_dpr_1x.jpg" style="width:1px;height:1px;display:none"
@@ -43,25 +43,25 @@ ht-degree: 0%
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   この DPR イメージタグコードを含める必要があります _前_ HTMLページ内のすべての静的画像。
+   HTML ページ内のすべての静的画像より&#x200B;_前_ に、この DPR 画像タグコードを含める必要があります。
 
-**クライアントサイドレンダリングアプリ**
+**クライアントサイドでレンダリングされるアプリ**
 
-1. 次の DPR スクリプトを、ヘッダーページのヘッダーセクションにHTMLします。
+1. HTML ページのヘッダーセクションに次の DPR スクリプトを追加します。
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    <script type="text/javascript" src="dprImageInjection.js"></script>
    ```
 
-   両方の DPR スクリプトを 1 つに組み合わせて、複数のネットワークリクエストを回避できます。
+   両方の DPR スクリプトを 1 つにまとめると、複数のネットワークリクエストになることを回避できます。
 
-   Adobeでは、次のスクリプトを読み込むことをお勧めします _前_ 「HTML」ページの他の任意のスクリプト。
-また、Adobeでは、body 要素ではなく、diffHTMLタグでアプリをBootstrapすることをお勧めします。 理由は、 `dprImageInjection.js` は、画像ページの body セクションの上部にある画像タグを動的に挿入します。HTML
+   HTML ページの他のどのスクリプトより&#x200B;_前_に、これらのスクリプトを読み込むことをお勧めします。
+また、body 要素ではなく diff HTML タグでアプリをブートストラップすることをお勧めします。`dprImageInjection.js` が HTML ページの本文セクションの先頭に画像タグを動的に挿入するからです。
 
 ## JavaScript ファイルのダウンロード {#client-side-dpr-script}
 
-次のダウンロード用 JavaScript ファイルは、サンプル参照としてのみ提供されています。 これらのファイルをHTMLページで使用する場合は、各ファイルのコードを独自の要件に合うように必ず編集してください。
+ダウンロードに含まれている下記の JavaScript ファイルは、例としての参照用にのみ提供されています。これらのファイルを HTML ページで使用する場合は、各ファイルのコードを独自の要件に合うように必ず編集してください。
 
 * `dprImageInjection.js`
 * `srvinit.js`

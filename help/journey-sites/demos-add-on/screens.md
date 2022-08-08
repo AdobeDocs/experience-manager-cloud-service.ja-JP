@@ -4,8 +4,8 @@ description: デモサイトで AEM Screens as a Cloud Service の完全なエ�
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 source-git-commit: cdc60627bac17166c12ebdb77e7cf5b0ed92dc80
 workflow-type: tm+mt
-source-wordcount: '2671'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -296,7 +296,7 @@ AEM Screens と ContextHub が天気予報サービスに接続されたので�
 
    ![ディスプレイを作成](assets/create-display.png)
 
-1. ディスプレイが作成されたら、ディスプレイの名前をクリックしてディスプレイの詳細画面を開きます。 デモサイトから同期されたチャネルがディスプレイに割り当てられている必要があります。「**チャネルを割り当て**」をクリックします。
+1. ディスプレイが作成されたら、ディスプレイの名前をクリックしてディスプレイの詳細画面を開きます。デモサイトから同期されたチャネルがディスプレイに割り当てられている必要があります。「**チャネルを割り当て**」をクリックします。
 
    ![チャネルの詳細](assets/channel-detail.png)
 

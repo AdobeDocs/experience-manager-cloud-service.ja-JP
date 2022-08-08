@@ -4,8 +4,8 @@ description: Adobe Experience Manager（AEM）as a Cloud Service の主な変更
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: d3208a9a0785909e9b62d4033437a8ff44f7ba3e
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 84%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 
 * [カスタム実行モードは禁止](#custom-runmodes)
 
-* [レプリケーションエージェントの削除 および関連する変更](#replication-agents)
+* [レプリケーションエージェントの削除および関連する変更](#replication-agents)
 
 * [クラシック UI の削除](#classic-ui)
 
@@ -54,7 +54,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 
 * `/libs` では変更は一切できません。
    * これは新しいルールではありませんが、以前のオンプレミスバージョンの AEM では適用されていませんでした。
-* の領域のオーバーレイ `/libs` オーバーレイが許可されているは、 `/apps`.
+* `/libs` 内のオーバーレイ可能な領域のオーバーレイについては、`/apps` 内では引き続き可能です。
    * このようなオーバーレイは、CI/CD パイプラインを通じて Git から取得する必要があります。
 * `/apps` に保存されている静的テンプレートデザイン情報は、UI では編集できません。
    * 代わりに、編集可能なテンプレートを利用することをお勧めします。
@@ -64,12 +64,12 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 
 ## OSGi バンドルおよび設定は、コードとして扱う必要があります {#osgi}
 
-OSGi バンドルおよび設定の変更は、CI/CD パイプラインを通じて導入する必要があります。
+OSGi バンドルおよび設定の変更は、CI／CD パイプラインを通じて導入する必要があります。
 
-* 新規または更新された OSGi バンドルは、CI/CD パイプラインを通じて Git を通じて導入する必要があります。
-* OSGi 設定に対する変更は、CI/CD パイプラインを通じて Git からのみ取得できます。
+* 新規または更新された OSGi バンドルは、CI／CD パイプラインを通じて Git 経由で導入する必要があります。
+* OSGi 設定に対する変更は、CI／CD パイプラインを通じて Git からのみ取得できます。
 
-AEMの以前のバージョンで OSGi バンドルおよび設定を変更するために使用されていた Web コンソールは、AEM Cloud Serviceでは使用できません。
+以前のバージョンの AEM で OSGi バンドルおよび設定の変更に使用されていた web コンソールは、AEM as a Cloud Service では使用できません。
 
 ## パブリッシュリポジトリーに対する変更は禁止 {#changes-to-publish-repo}
 
@@ -96,7 +96,7 @@ AEM as a Cloud Service には、次の実行モードが標準で用意されて
 
 AEM as a Cloud Service では、追加またはカスタムの実行モードは使用できません。
 
-## レプリケーションエージェントの削除 および関連する変更 {#replication-agents}
+## レプリケーションエージェントの削除および関連する変更 {#replication-agents}
 
 AEM as a Cloud Service では、[Sling コンテンツ配布](https://sling.apache.org/documentation/bundles/content-distribution.html)を使用してコンテンツが公開されます。以前のバージョンの AEM で使用されていたレプリケーションエージェントは、使用も提供もされなくなりました。その結果、既存の AEM プロジェクトの次の領域に影響が出る可能性があります。
 
@@ -118,4 +118,4 @@ AMS 上やオンプレミスでのインストールからプロジェクトを�
 
 ## アセットの操作と配信 {#asset-handling}
 
-アセットのアップロード、処理、ダウンロードは、 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. [!DNL Assets] がより効率的かつスケーラブルになり、アップロードとダウンロードが大幅に高速化されました。また、既存のカスタムコードや一部の操作にも影響します。変更点のリストと[!DNL Experience Manager] 6.5 の機能と同等性については、[ [!DNL Assets]](/help/assets/assets-cloud-changes.md) の変更点を参照してください。
+[!DNL Experience Manager Assets] as a [!DNL Cloud Service] では、アセットのアップロード、処理、ダウンロードが最適化されています。[!DNL Assets] がより効率的かつスケーラブルになり、アップロードとダウンロードが大幅に高速化されました。また、既存のカスタムコードや一部の操作にも影響します。変更点のリストと[!DNL Experience Manager] 6.5 の機能と同等性については、[ [!DNL Assets]](/help/assets/assets-cloud-changes.md) の変更点を参照してください。
