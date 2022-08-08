@@ -3,10 +3,10 @@ title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: cebeabc56ad3f55bae4ca5d51c7a630480b40577
+source-git-commit: 90a49312d4609c2de992a93926a329bf50861801
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 97%
+source-wordcount: '952'
+ht-degree: 96%
 
 ---
 
@@ -86,6 +86,8 @@ Dispatcher ツールは、プロジェクトの Dispatcher 設定の検証とデ
 | `mod_ssl (only the SSLProxyEngine directive)` | [https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslproxyengine](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslproxyengine) |
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
+| `mod_macro` | [https://httpd.apache.org/docs/2.4/mod/mod_macro.html](https://httpd.apache.org/docs/2.4/mod/mod_macro.html) |
+
 
 お客様が任意のモジュールを追加することはできませんが、今後、上述の表にある以外のモジュールが追加で組み込まれる可能性があります。SDK でバリデーターの許可リストコマンドを実行すると、特定の Dispatcher バージョンで使用できるディレクティブのリストを確認できます。
 
