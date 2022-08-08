@@ -3,7 +3,7 @@ title: カスタマイズしたテーマのデプロイ
 description: パイプラインを使用してサイトテーマをデプロイする方法を説明します。
 exl-id: fe065972-39db-4074-a802-85895c701efd
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1027'
 ht-degree: 100%
 
