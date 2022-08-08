@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 75621ba378d59bd36146b15995823c43c458d349
+source-git-commit: 2340c9416d90f7973109ba57c1769ae892049026
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '921'
+ht-degree: 19%
 
 ---
 
@@ -25,78 +25,93 @@ ht-degree: 0%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在のリリース (2022.6.0) は 2022 年 6 月 30 日です。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の現在のリリース（2022.7.0）のリリース日は 2022年8月8日（PT）です。
 
-次回のリリース (2022.7.0) は、2022 年 8 月 8 日に予定されています。
+
+次回のリリース (2022.8.0) は、2022 年 8 月 25 日に予定されています。
 
 ## リリースビデオ {#release-video}
 
-2022.6.0 リリースに追加された機能の概要については、 2022 年 6 月リリースの概要ビデオをご覧ください。
+2022.7.0 リリースに追加された機能の概要については、 2022 年 7 月リリースの概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/344308/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/345409/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### の新機能[!DNL Sites] {#sites-features}
 
-* 新しい [ユーザーインターフェイス](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) は、コンテンツ管理者やコンテンツ作成者が効率的に管理（公開、非公開、コピー、移動などのアクションを実行）、検索/フィルタリング、ヘッドレスユースケース向けのコンテンツフラグメントの作成をおこなえるようになりました。
+* この [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) では、キーボードショートカットがサポートされるようになりました。
 
-   ![コンテンツフラグメントコンソール](/help/release-notes/assets/cf-ui.png)
+* AEM as aCloud Service [web に最適化された画像配信](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) を使用すると、WebP などの形式を配信することで、ページの速度を大幅に向上できます。 この新しいサービスでは、より柔軟に画像のサイズを変更したり、変換したりすることもできます。 のすべてのバージョン [コア画像コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ja) を使用すると、このサービスを利用し、画像コンポーネントのポリシーのオプションをクリックして、画像を WebP として配信できます。
 
-* 新しい [目次コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html) は、コアコンポーネントだけでなく、すべてのコンポーネントで機能し、コンテンツページ上で ToCs が自動的にレンダリングされます。 また、Dispatcher はサーバー側でレンダリングされ、完全にキャッシュされるので、読み込みも効率的です。
+* AEMのパーソナライゼーションアクティビティは、従来のオファーの代わりにエクスペリエンスフラグメントを利用できるようになりました。 この機能：
+   * 従来のライブラリオファーではなく、AEMコンテンツでエクスペリエンスフラグメントオファーを促進する移行パスを有効にして、大規模なパーソナライゼーションに合わせて適切にスタイル設定されたコンテンツを提供します。
+   * は、コンテンツ作成者が誤ってサイトでスタイル設定されていないコンテンツを提供するのを防ぎます。
+   * を使用すると、任意のコンポーネントのターゲットモードを、編集可能なテンプレートを使用するエクスペリエンスフラグメント (JSON とHTMLタイプの両方 ) に変換できます。
+
+>[!NOTE]
+>
+>既にレガシーオファーを使用している既存のパーソナライゼーションアクティビティでも引き続き使用できますが、今後推奨されるアプローチなので、新しいパーソナライゼーションアクティビティをエクスペリエンスフラグメントとして作成する必要があります。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### の新機能[!DNL Assets] {#assets-features}
+### [!DNL Assets] プレリリースチャネルで利用できる新機能 {#prerelease-features-assets}
 
-Experience Manager AssetsはAdobe Sensei AI 機能を今まで使用 [画像内の色を区別し、取り込み時に自動的にタグとして適用する](../../assets/color-tag-images.md). これらのタグは、画像の色合いに基づいて、より強化された検索エクスペリエンスを可能にします。 1 ～ 40 の範囲で、画像にタグ付けされるカラーの数を設定し、後でそれらのカラーに基づいて画像を検索できます。
+Adobe Experience Manager Assets を [MIME タイプに基づいてユーザーがアップロードできるアセットのタイプを制限します](/help/assets/configure-asset-upload-restrictions.md).
+
+![アセットのアップロード制限](/help/assets/assets/asset-upload-restrictions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### の新機能[!DNL Forms] {#forms-features}
 
-* **[アダプティブFormsとMicrosoft® Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)**:送信時にMicrosoft® Power Automate Cloud Flow を実行するようにアダプティブフォームを設定できるようになりました。 設定済みのアダプティブフォームは、キャプチャされたデータ、添付ファイルおよびレコードのドキュメントを Power Automate Cloud Flow に送信して処理します。 Microsoft® Power Automate の機能を活用しながら、カスタムのデータキャプチャエクスペリエンスを構築し、取り込んだデータに関するビジネスロジックを構築し、顧客ワークフローを自動化できます。
+* **手書き署名のキーボード入力のサポート**:アダプティブFormsは、タッチデバイスでの使用が増えています。一般的な要件の 1 つは、署名をサポートすることです。 タッチデバイスでのドキュメントの署名は、フォームの署名方法として受け入れられるようになりました。 アダプティブFormsでは、このような使用例に対して、Scribble Signatures およびAdobe Signをネイティブでサポートしています。 これで、既にサポートされている他のオプションと共に、キーボードを使用してアダプティブフォーム内の手書き署名を行うこともできます。 また、アクセシビリティのコンプライアンスの向上にも役立ちます。
 
-* **アダプティブフォームを作成するためのウィザード**:ビジネスユーザーに適したウィザードを使用して、アダプティブFormsをすばやくオーサリングできます。 このウィザードでは、事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択して、アダプティブフォームを作成するためのクイックタブナビゲーションが提供されます。
+![iPhone での手書き署名のキーボード入力のサポート](/help/release-notes/assets/scribble-keyboard-mobile.png)
 
-   ![アダプティブフォームを作成するためのウィザード](/help/release-notes/assets/wizard.png)
+* **ローカル言語でのアダプティブFormsウィザードの使用**:ウィザードは、選択した言語で使用できます。 Adobe Experience Managerでサポートされているすべての言語をサポートするようになりました。
+
+### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms}
+
+<!-- * **[Launch Adaptive Form creation wizard from embed form component](/help/forms/using/embed-adaptive-form-aem-sites.md)**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page. 
+
+![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png) -->
+
+* **呼び出し — AEM Workflow ステップ**:Document Description XML (DDX) は、宣言的なマークアップ言語です。この言語の要素は、ドキュメントの構築ブロックを表します。 これらの構築ブロックには、PDFおよび XDP ドキュメントと、コメント、しおり、スタイル設定されたテキストなどのその他の要素が含まれます。 DDX ドキュメントはドキュメントのテンプレートで、結果のドキュメントに表示するソースドキュメントの必要な特性を記述します。 1 つの DDX を様々なソースドキュメントと共に使用できます。 AEMワークフローを起動ステップを使用して、ドキュメントの分解、Acrobatと XFA Formsの作成と変更、および [DDX リファレンス](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) ドキュメント。
+
+* **PDF/A に変換 — AEMワークフローステップ**:PDF/A は、ドキュメントのコンテンツを長期保存するためのアーカイブ形式で、すべてのフォントが埋め込まれ、ファイルが非圧縮になります。 これで、PDF/A に変換ステップを使用して、任意の形式のドキュメントまたはファイルをPDF/A 形式に変換できます。
+
 
 ## CIF アドオン {#cloud-services-cif}
 
 ### 新機能 {#what-is-new-cif}
 
-* より良くシンプルな概要を示す新しい製品コックピットプロパティページ
+* 製品カタログのエンリッチメントでAEMページがサポートされるようになりました。 これにより、作成者はページと製品の関連付けを管理できます。
 
-![製品コクピットのプロパティの概要](/help/assets/CIF/product_cockpit_properties_overview.png)
-
-* I/O Runtime 上のサードパーティコネクタの互換性と堅牢性の向上
-
-* GQL クライアント設定の上書きのサポートを改善しました（例：カスタムキャッシュ動作の設定）
-
-* 複数のコマースエンドポイントが標準でサポートされるようになり、Cloud Manager を介して設定できるようになりました。 詳細は、CIF ブログを参照してください [ここ](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
-
+* CIF コアコンポーネントの様々な改善点
 
 ### バグ修正 {#bug-fixes-cif}
 
-* 複数値の製品ピッカーフィールドに、2 番目と追加の製品が無効と表示される
+* クライアント側の価格取得にログイントークンを追加
 
-* 製品ピッカーがコンポーネントの背後に隠れている場合があります
-
-## 参照デモアドオン {#cloud-services-demos}
-
-### 新機能 {#what-is-new-demos}
-
-* 新しい WKND コンテンツ&amp;コマーステンプレート。WKND を拡張して、製品カタログ、買い物かご、チェックアウト、myAccount などの E2E ショッピングエクスペリエンスを実現します。 このテンプレートでは、CIF とその CIF コアコンポーネントを使用するので、CIF アドオンもインストールする必要があります。 詳細は、CIF ブログを参照してください [ここ](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
-
-![WKND ショップ](/help/assets/CIF/wknd_shop.png)
-
-![WKNDpdp](/help/assets/CIF/wknd_pdp.png)
+* データレイヤーのページコンポーネントが正しくありません
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
 ### 新機能 {#what-is-new-foundation}
 
-* (2022.5.0)5 月のリリースノートで述べたように、レプリケーションエージェント管理画面の「ツリーを追加」オプション **分布** 」タブが削除されました。 代わりに、コンテンツのツリー階層を持つパッケージは、 [公開を管理](/help/operations/replication.md#manage-publication) または [コンテンツツリーを公開](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) ワークフロー。
+* この [リポジトリブラウザ](/help/implementing/developing/tools/repository-browser.md) にパス入力フィールドが追加され、リポジトリ階層内の特定のフォルダーに直接ジャンプできるようになりました。
+* Sling コンテンツ配布 (SCD) で、コンテンツが公開されずにコンテンツを無効にするための明示的な「無効化」アクションがサポートされるようになりました。 詳しくは、 [AEMでのキャッシュのas a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) ページを参照してください。
+* mod_macro がAEM as a Cloud Serviceで使用できるようになりました。 参照： [このテーブル](/help/implementing/dispatcher/disp-overview.md) を参照してください。
+
+### AEMas a Cloud ServiceSDK Dispatcher ツールの機能強化 {#dispatcher-tools-enhancements}
+
+* Apache は `update_sdk.sh` スクリプトを自動的に読み込み、その後の apache および dispatcher 設定の変更を検証するので、開発者の速度が向上します。 Dispatcher ツールの柔軟なモードでのみサポートされます。 また、 [Apache および Dispatcher 設定のデバッグ](/help/implementing/dispatcher/validation-debug.md#automatic-loading) を参照してください。
+* ローカルの Apache/Dispatcher 設定では、クラウド環境の変更をより詳細に追跡し、2 つの環境間のパリティを増やします。
+
+### [!DNL Experience Manager] プレリリースチャネルで利用できる新機能 {#prerelease-features-foundation}
+
+* AEM as a Cloud Serviceが統合シェルと統合され、ユーザーエクスペリエンスが向上し、他のすべてのExperience Cloudアプリケーションと統合されました。 参照： [統合シェルでas a Cloud ServiceのAEMを使用](/help/overview/aem-cloud-service-on-unified-shell.md) を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 

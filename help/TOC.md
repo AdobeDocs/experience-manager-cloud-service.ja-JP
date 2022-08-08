@@ -8,10 +8,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service の概要に
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d0e2dda682a45483964336aac2c0d3f87b4ca833
+source-git-commit: 3fc0a6626fdf0addfdc572560c01eac3296c5012
 workflow-type: tm+mt
-source-wordcount: '3697'
-ht-degree: 95%
+source-wordcount: '3709'
+ht-degree: 94%
 
 ---
 
@@ -35,6 +35,7 @@ ht-degree: 95%
    + AEMaaCS の一般リリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [リリースノート（2022.6.0）](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
          + [リリースノート（2022.5.0）](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
          + [リリースノート（2022.4.0）](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
          + [リリースノート（2022.3.0）](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
@@ -290,6 +291,7 @@ ht-degree: 95%
          + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
          + [構造ツリー](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
          + [プレビュー - JSON 表現](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
+         + [コンテンツフラグメントコンソール — キーボードショートカット](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
       + サイト作成 {#site-creation}
          + [新しいサイトの作成](/help/sites-cloud/administering/site-creation/create-site.md)
          + [フロントエンドパイプラインの有効化](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -396,6 +398,7 @@ ht-degree: 95%
       + [XMP メタデータ](/help/assets/xmp-metadata.md)
       + [AEM MediaLibrary の機能](/help/assets/medialibrary.md)
       + [アセットメタデータの読み込みと書き出し](/help/assets/metadata-import-export.md)
+      + [アセットのアップロード制限を設定する](/help/assets/configure-asset-upload-restrictions.md)
    + アセットの共有と配布 {#brand-portal}
       + [ [!DNL Assets]  での [!DNL Brand Portal]の設定](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [ [!DNL Brand Portal] へのアセットの公開](/help/assets/publish-to-brand-portal.md)

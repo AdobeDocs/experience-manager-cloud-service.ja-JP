@@ -2,9 +2,10 @@
 title: コンテンツフラグメントコンソール
 description: コンテンツフラグメントコンソールからコンテンツフラグメントを管理する方法を説明します。
 landing-page-description: ヘッドレスの使用例でコンテンツフラグメントの大量の使用に重点を置いているが、ページオーサリング時にも使用されるコンテンツフラグメントコンソールからコンテンツフラグメントを管理する方法を説明します。
-source-git-commit: 8c44ecf0237c7a3660ef9fa97f46cc400e4bd30f
+exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
+source-git-commit: 99e3c07f8376859692db41c633bfaa602ed65358
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
@@ -26,6 +27,10 @@ ht-degree: 0%
 >* この **コンテンツフラグメント** コンソール
 >* の **Assets** コンソール — 「 [コンテンツフラグメントの管理](/help/assets/content-fragments/content-fragments-managing.md)
 
+
+>[!NOTE]
+>
+>次の項目を選択： [このコンソールでは、キーボードショートカットを使用できます](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 コンテンツフラグメントコンソールは、グローバルナビゲーションの最上位レベルから直接アクセスできます。
 

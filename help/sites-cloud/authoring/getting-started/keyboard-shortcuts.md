@@ -2,16 +2,16 @@
 title: コンソールのキーボードショートカット
 description: これらのキーボードショートカットを使用することで、オーサリング時の時間を節約できます
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 9fe87a61315019c23d90b85154af6c89e1528b0d
+source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 100%
+source-wordcount: '373'
+ht-degree: 92%
 
 ---
 
 # コンソールのキーボードショートカット {#keyboard-shortcuts-for-consoles}
 
-サイト、アセット、ユーザー、グループ、プロジェクト、エクスペリエンスフラグメントの各コンソールで、次のショートカットを使用できます。
+サイト、アセット、ユーザー、グループ、プロジェクト、エクスペリエンスフラグメントの各コンソールで、次のショートカットを使用できます。また、 [コンテンツフラグメントコンソール](#keyboard-shortcuts-for-the-content-fragments-console).
 
 | 場所 | ショートカット | 説明 |
 |---|---|---|
@@ -81,3 +81,7 @@ AEM には、一部の一般的に使用される機能（編集、プロパテ�
 ## ページエディターのキーボードショートカット {#keyboard-shortcuts-for-the-page-editor}
 
 AEM 全体で様々なキーボードショートカットを利用できます。ショートカットには、コンソールの使用時に適用されるものや、 [ページ編集](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md) に適用されるものなどがあります。
+
+## コンテンツフラグメントコンソールのキーボードショートカット {#keyboard-shortcuts-for-the-content-fragments-console}
+
+一部のキーボードショートカットは、 [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)

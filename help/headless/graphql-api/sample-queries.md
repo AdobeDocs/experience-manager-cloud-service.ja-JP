@@ -3,10 +3,10 @@ title: AEM での GraphQL の使用方法 - サンプルコンテンツとサン
 description: GraphQL を AEM と共に使用し、サンプルコンテンツとクエリを調べて、コンテンツをヘッドレスに提供する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 7e89ac3f575082d19e509ca133500b71070cc605
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1430'
+ht-degree: 100%
 
 ---
 
@@ -1511,6 +1511,56 @@ query {
   }
 }
 ```
+
+<!-- CQDOC-19418 -->
+
+<!--
+
+### Sample List Query using offset and limit {#sample-list-offset-limit}
+
+This query interrogates:
+
+* for the page of results containing up to five articles, starting from the fifth article from the *complete* results list
+
+**Sample Query**
+
+```xml
+query {
+   articleList(offset: 5, limit:5) {
+    items {
+      author
+      _path
+    }
+  }
+}
+```
+
+### Sample Pagination Query using first and after  {#sample-pagination-first-after}
+
+This query interrogates:
+
+* for the page of results containing up to five adventures, starting from the given cursor item in the *complete* results list
+
+**Sample Query**
+
+```xml
+query {
+    adventurePaginated(first: 5, after: "ODg1MmMyMmEtZTAzMy00MTNjLThiMzMtZGQyMzY5ZTNjN2M1") {
+        edges {
+          cursor
+          node {
+            adventureTitle
+          }
+        }
+        pageInfo {
+          endCursor
+          hasNextPage
+        }
+    }
+}
+```
+
+-->
 
 ## GraphQL で使用するコンテンツフラグメント構造のサンプル {#content-fragment-structure-graphql}
 
