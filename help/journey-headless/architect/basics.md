@@ -3,7 +3,7 @@ title: コンテンツモデリングの基本について
 description: コンテンツフラグメントを使用したヘッドレス CMS のコンテンツモデリングの基本について説明します。
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '905'
 ht-degree: 100%
 
