@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2340c9416d90f7973109ba57c1769ae892049026
+source-git-commit: 0ae79facb4233988db4a649b8e79ca3041832584
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '955'
 ht-degree: 19%
 
 ---
@@ -112,6 +112,11 @@ Adobe Experience Manager Assets を [MIME タイプに基づいてユーザー�
 ### [!DNL Experience Manager] プレリリースチャネルで利用できる新機能 {#prerelease-features-foundation}
 
 * AEM as a Cloud Serviceが統合シェルと統合され、ユーザーエクスペリエンスが向上し、他のすべてのExperience Cloudアプリケーションと統合されました。 参照： [統合シェルでas a Cloud ServiceのAEMを使用](/help/overview/aem-cloud-service-on-unified-shell.md) を参照してください。
+
+## Adobeラーニングマネージャーコネクタ {#learn-manage}
+
+* 新しいAdobeラーニングマネージャーには、Adobe Experience Manager Sites、Marketo Engage、Adobe Commerceへのコネクタが含まれます。 詳しくは、以下を参照してください。 [Adobeラーニングマネージャーユーザーガイド](https://helpx.adobe.com/learning-manager/user-guide.html).
+
 
 ## Cloud Manager {#cloud-manager}
 
