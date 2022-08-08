@@ -3,7 +3,7 @@ title: SPA の概要およびガイド
 description: この記事では、SPA の概念を説明し、基本的な SPA アプリケーションを使用したオーサリング方法を紹介し、基礎となる AEM SPA エディターとの関連を示します。
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1984'
 ht-degree: 100%
 
