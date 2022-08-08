@@ -5,9 +5,9 @@ description: リポジトリーブラウザーは、オーサー層、パブリ�
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 source-git-commit: b4d28a0c827fb07d6f731118078ecdf448e2f58b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '0'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
