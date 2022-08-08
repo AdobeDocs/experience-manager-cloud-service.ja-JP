@@ -8,10 +8,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service の概要に
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: cab630838f5cce3c2a2749c61b0aa7504dc403f7
+source-git-commit: d0e2dda682a45483964336aac2c0d3f87b4ca833
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3697'
+ht-degree: 95%
 
 ---
 
@@ -274,8 +274,7 @@ ht-degree: 0%
          + [ContextHub でのセグメント化の設定](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [登録、ログイン、ユーザープロファイル](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
       + Campaign {#campaign}
-         + 
-            + [AEMでのニュースレターの作成](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
+         + [AEMでのニュースレターの作成](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
    + 管理 {#administering}
       + コンテンツフラグメント {#content-fragments}
          + [コンテンツフラグメントの操作](/help/sites-cloud/administering/content-fragments/content-fragments.md)
