@@ -3,7 +3,7 @@ title: '他のユーザーにワークフローを割り当て、電子メール
 description: Forms 中心のワークフローを使用すると、アダプティブフォームベースのワークフローを迅速に構築できます。Adobe Sign を使用して、ドキュメントへの電子サイン、フォームをベースとしたビジネスプロセスの作成、複数データソースへのデータの取得と送信、電子メール通知の送信を行うことができます
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 447dd15cfa7e414b56fe09f2affb5f720bcd734e
+source-git-commit: ebd7942cfaa7717d68ad039f3e0301cb52cbcec7
 workflow-type: tm+mt
 source-wordcount: '6098'
 ht-degree: 90%
@@ -54,18 +54,25 @@ Forms 中心のワークフローステップは、AEM ワークフローで AEM
 * **[!UICONTROL 期限後にタイムアウト]**：このオプションを選択して、タイムアウトハンドラー選択フィールドを有効にします。
 * **[!UICONTROL タイムアウトハンドラー]**： タスクを割り当てステップが期限切れになったときに実行するスクリプトを選択します。CRX リポジトリ（[apps]/fd/dashboard/scripts/timeoutHandler）にあるスクリプトを選択できます。指定されたパスは crx リポジトリに存在しません。このパスは、使用する前に管理者が作成します。
 * **[!UICONTROL タスクの詳細の最後のタスクからのアクションとコメントをハイライト表示]**： タスクの詳細セクションで最後に実行されたアクションと受け取ったコメントを表示するには、このオプションを選択します。
-* **[!UICONTROL タイプ]**： ワークフローの開始時に入力するドキュメントのタイプを選択します。アダプティブフォーム、読み取り専用のアダプティブフォームまたは非インタラクティブ PDF ドキュメントを選択できます。<!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
+* **[!UICONTROL タイプ]**： ワークフローの開始時に入力するドキュメントのタイプを選択します。アダプティブフォーム、読み取り専用のアダプティブフォームまたは非インタラクティブ PDF ドキュメントを選択できます。
+
+<!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
+
+
 * **[!UICONTROL アダプティブフォームを使用]**：入力されたアダプティブフォームを検索する方法を指定します。このオプションは、「タイプ」ドロップダウンリストから「アダプティブフォーム」または「読み取り専用アダプティブフォーム」を選択した場合に使用できます。アダプティブフォームは、ワークフローに送信されたもの、絶対パスで利用できるもの、変数内のパスで利用できるものを使用できます。パスを指定するには、String 型の変数を使用します。\
    複数のアダプティブフォームをワークフローに関連付けることができます。それにより、使用可能な入力メソッドを使用して、ランタイム上でアダプティブフォームを指定できます。
 
 <!-- 
+
 * **[!UICONTROL Use Interactive Communication]**: Specify the method to locate the input interactive communication. You can use the interactive communication submitted to the workflow, available at an absolute path, or available at a path in a variable. You can use a variable of type String to specify the path. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
 
 > [!NOTE]
 >
->You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.  -->
+>You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.  
 
-* **[!UICONTROL アダプティブフォームのパス]**：アダプティブフォームのパスを指定します。ワークフローに送信済み、または絶対パスで使用可能な<!--  or Interactive Communication.-->アダプティブフォームを使用できます。<!-- or interactive communication -->または、文字列データ型の変数に保存されたパスからアダプティブフォームを取得できます。
+-->
+
+* **[!UICONTROL アダプティブフォームのパス]**：アダプティブフォームのパスを指定します。ワークフローに送信済み、または絶対パスで使用可能なアダプティブフォームを使用できます。または、文字列データ型の変数に保存されたパスからアダプティブフォームを取得できます。
 * **[!UICONTROL 次を使用して入力 PDF を選択]**：非インタラクティブ PDF ドキュメントのパスを指定します。このフィールドは、「タイプ」フィールドで非インタラクティブ PDF ドキュメントを選択した場合に使用できます。入力 PDF は、ペイロードに対する相対パス、絶対パスで保存されたもの、またはドキュメントデータ型の変数を使用して選択できます。例えば、[Payload_Directory]/Workflow/PDF/credit-card.pdf となります。このパスは crx リポジトリに存在しません。このパスは、使用する前に管理者が作成します。「PDF のパス」オプションを使用する場合は、有効な「レコードのドキュメント」オプションか、フォームテンプレートベースのアダプティブフォームが必要です。
 * **[!UICONTROL 完了したタスクのアダプティブフォームを次の形式でレンダリングする：]**&#x200B;タスクが完了とマークされると、アダプティブフォームを読み取り専用のアダプティブフォームまたは PDF ドキュメントとしてレンダリングできます。アダプティブフォームをレコードのドキュメントとしてレンダリングするには、有効な「レコードのドキュメント」オプションか、フォームテンプレートベースのアダプティブフォームが必要です。
 * **[!UICONTROL 埋め込み済み]**：以下のフィールドは、タスクへの入力として使用できます。
@@ -73,14 +80,23 @@ Forms 中心のワークフローステップは、AEM ワークフローで AEM
    * **[!UICONTROL 次を使用して入力データファイルを選択]**：入力データファイルのパス（.json、.xml、.doc またはフォームデータモデル）。ペイロードに対する相対パスを使用して入力データファイルを取得したり、ドキュメント、XML、JSON データ型の変数に格納されたファイルを取得したりできます。例えば、ファイルには、AEM インボックスアプリケーションを介してフォームに送信されるデータが含まれています。一例として、[Payload_Directory]/workflow/data というパスを指定します。
    * **[!UICONTROL 次を使用して入力添付ファイルを選択]**：指定した場所にある添付ファイルは、タスクに関連付けられたフォームに添付されます。パスは、ペイロードを基準とした相対パスにすることも、ドキュメントの変数に格納された添付ファイルを取得することもできます。一例として、[Payload_Directory]/attachments/ というパスを指定します。ペイロードを基準にして添付ファイルを指定するか、ドキュメントタイプ（配列リスト／ドキュメント）変数を使用して、アダプティブフォームの入力添付ファイルを指定できます。
 
-   <!-- * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
+   <!-- 
+    
+    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
     * **[!UICONTROL Choose a custom prefill service]**: Select the prefill service to retrieve the data and prefill the Interactive Communication Web channel document or the Agent UI.  
     
-    * **[!UICONTROL Use the prefill service of the interactive communication selected above]**: Use this option to use the prefill service of the Interactive Communication defined in the Use Interactive Communication drop-down list. -->
+    * **[!UICONTROL Use the prefill service of the interactive communication selected above]**: Use this option to use the prefill service of the Interactive Communication defined in the Use Interactive Communication drop-down list. 
+    
+    -->
+
    * **[!UICONTROL 要求属性マッピング]**：要求属性マッピングセクションを使用して、[要求属性の名前と値を定義](work-with-form-data-model.md#bindargument)します。リクエストで指定された属性名と値に基づいて、データソースから詳細を取得します。リテラル値または String データ型の変数を使用して、要求属性値を定義できます。
 
-   <!--  The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. -->
+   <!--  
+     
+     The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
+     
+     -->
 
 * **[!UICONTROL 送信済み情報]**：以下のフィールドは、タスクの出力先として使用できます。
 
@@ -88,9 +104,13 @@ Forms 中心のワークフローステップは、AEM ワークフローで AEM
    * **[!UICONTROL 次を使用して添付ファイルを保存]**：タスクに指定されたフォーム添付ファイルを保存します。ペイロードに対する相対パスを使用して添付ファイルを保存するか、ドキュメントデータタイプの配列リストの変数に保存できます。
    * **[!UICONTROL 次を使用してレコードのドキュメントを保存]**：レコードのドキュメントファイルの保存先のパス。例えば、[Payload_Directory]/DocumentofRecord/credit-card.pdf のように指定します。レコードのドキュメントは、ペイロードに対する相対パスを使用して保存するか、ドキュメントデータ型の変数に格納できます。「**[!UICONTROL ペイロードを基準とする]**」オプションを選択した場合、パスフィールドを空のままにすると、レコードのドキュメントは生成されません。このオプションは、「タイプ」ドロップダウンリストから「アダプティブフォーム」を選択した場合にのみ使用できます。
 
-   <!-- * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
+   <!-- 
+    
+    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
-    <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. -->
+    <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. 
+    
+    -->
 
 * **[!UICONTROL 割り当て先]**／**[!UICONTROL 割り当てオプション]**：タスクをユーザーに割り当てる方法を指定します。参加者選択スクリプトを使用してタスクを動的にユーザーまたはグループに割り当てることも、タスクを特定の AEM ユーザーまたはグループに割り当てることもできます。
 * **[!UICONTROL 参加者選択]**：このオプションは、「割り当てオプション」フィールドで「**[!UICONTROL ユーザーまたはグループに動的に割り当て]**」オプションを選択した場合に使用できます。ユーザーまたはグループを動的に選択するには、ECMAScript またはサービスを使用できます。詳しくは、[ワークフローを動的にユーザーに割り当てる方法](https://helpx.adobe.com/jp/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html)および [Adobe Experience Manager のカスタム動的参加者ステップの作成](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja&amp;CID=RedirectAEMCommunityKautuk)を参照してください。
@@ -183,7 +203,12 @@ PDF/A は、フォントを埋め込み、ファイルを圧縮解除するこ�
 
 * **[!UICONTROL ワークフローメタデータ]**：使用する値がワークフローメタデータプロパティに保存されている場合は、このオプションを使用します。このオプションを選択したら、「ワークフローメタデータ」オプションの下の空のテキストボックスにメタデータプロパティ名を入力します。例えば、emailAddress と指定します。
 
-<!-- * **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. -->
+<!-- 
+
+* **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. 
+
+-->
+
 * **[!UICONTROL 画像]**：画像を電子メールに埋め込むには、このオプションを使用します。このオプションを選択したら、画像を参照して選択します。「画像」オプションは、E メールテンプレートで使用できる画像タグ (&lt;img src=&quot;&lt;span id=&quot; translate=&quot;no&quot; />「/>」) に対してのみ使用できます。&#42;
 
 **[!UICONTROL 送信者／受信者の電子メールアドレス]**： 電子メールアドレスを手動で指定するには、「**[!UICONTROL リテラル]**」オプションを選択します。電子メールアドレスをメタデータプロパティから取得するには、「**[!UICONTROL ワークフローメタデータから取得]**」オプションを選択します。
@@ -368,7 +393,9 @@ Document Description XML (DDX) は、宣言的なマークアップ言語です�
 * **[!UICONTROL 署名者を選択するスクリプトまたはサービス]**：このオプションを使用できるのは、「署名者を選択」フィールドで「動的」オプションが選択されている場合のみです。ECMAScript またはサービスを指定して、ドキュメントの署名者と検証オプションを選択することができます。
 * **[!UICONTROL 署名者の詳細]**：このオプションを使用できるのは、「署名者を選択」フィールドで「手動」オプションが選択されている場合のみです。電子メールアドレスを指定し、オプションの検証メカニズムを選択します。2 段階認証メカニズムを選択する前に、設定済みの [!DNL Adobe Sign] アカウントに対して対応する認証オプションが有効になっていることを確認してください。文字列データ型の変数を使用して、「電子メール」、「国コード」、「電話番号」の各フィールドの値を定義できます。「国コード」と「電話番号」フィールドは、「2 段階認証」ドロップダウンリストから「電話の検証」を選択した場合にのみ表示されます。
 
-<!-- ## Document Services steps {#document-services-steps}
+<!-- 
+
+## Document Services steps {#document-services-steps}
 
 AEM Document services are a set of services for creating, assembling, and securing PDF Documents. [!DNL AEM Forms] provides a separate AEM Workflow step for each document service.
 
@@ -520,4 +547,6 @@ The Generate Printed Output step has the following properties:
 * **[!UICONTROL Duplex Printing]**:  A Pagination value that specifies whether to use two-sided or single-sided printing. Printers that support PostScript and PCL use this value.If you provide a literal value, select one of these values:
     * **[!UICONTROL Duplex Long Edge]**: Use two-sided printing and print using long-edge pagination. 
     * **[!UICONTROL Duplex Short Edge]**: Use two-sided printing and print using short-edge pagination. 
-    * **[!UICONTROL Simplex]**: Use single-sided printing.-->
+    * **[!UICONTROL Simplex]**: Use single-sided printing.
+    
+    -->

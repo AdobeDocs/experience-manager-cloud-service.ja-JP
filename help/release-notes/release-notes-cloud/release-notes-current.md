@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a3e18349c3cf2240cc68275a3862abeb75ea372a
+source-git-commit: f947a328897387d37e2092580e6992f14a344eb2
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '956'
 ht-degree: 19%
 
 ---
@@ -65,7 +65,7 @@ Adobe Experience Manager Assets を [MIME タイプに基づいてユーザー�
 
 ### の新機能[!DNL Forms] {#forms-features}
 
-* **手書き署名のキーボード入力のサポート**:アダプティブFormsは、タッチデバイスでの使用が増えています。一般的な要件の 1 つは、署名をサポートすることです。 タッチデバイスでのドキュメントの署名は、フォームの署名方法として受け入れられるようになりました。 アダプティブFormsでは、このような使用例に対して、Scribble Signatures およびAdobe Signをネイティブでサポートしています。 これで、既にサポートされている他のオプションと共に、キーボードを使用してアダプティブフォーム内の手書き署名を行うこともできます。 また、アクセシビリティのコンプライアンスの向上にも役立ちます。
+* **[手書き署名のキーボード入力のサポート](/help/forms/signing-forms-using-scribble.md)**:アダプティブFormsは、タッチデバイスでの使用が増えています。一般的な要件の 1 つは、署名をサポートすることです。 タッチデバイスでのドキュメントの署名は、フォームの署名方法として受け入れられるようになりました。 アダプティブFormsでは、このような使用例に対して、Scribble Signatures およびAdobe Signをネイティブでサポートしています。 これで、既にサポートされている他のオプションと共に、キーボードを使用してアダプティブフォーム内の手書き署名を行うこともできます。 また、アクセシビリティのコンプライアンスの向上にも役立ちます。
 
 ![iPhone での手書き署名のキーボード入力のサポート](/help/release-notes/assets/scribble-keyboard-mobile.png)
 
@@ -73,13 +73,17 @@ Adobe Experience Manager Assets を [MIME タイプに基づいてユーザー�
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms}
 
-<!-- * **[Launch Adaptive Form creation wizard from embed form component](/help/forms/using/embed-adaptive-form-aem-sites.md)**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page. 
+<!-- 
 
-![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png) -->
+* **[Launch Adaptive Form creation wizard from embed form component](/help/forms/using/embed-adaptive-form-aem-sites.md)**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page. 
 
-* **呼び出し — AEM Workflow ステップ**:Document Description XML (DDX) は、宣言的なマークアップ言語です。この言語の要素は、ドキュメントの構築ブロックを表します。 これらの構築ブロックには、PDFおよび XDP ドキュメントと、コメント、しおり、スタイル設定されたテキストなどのその他の要素が含まれます。 DDX ドキュメントはドキュメントのテンプレートで、結果のドキュメントに表示するソースドキュメントの必要な特性を記述します。 1 つの DDX を様々なソースドキュメントと共に使用できます。 AEMワークフローを起動ステップを使用して、ドキュメントの分解、Acrobatと XFA Formsの作成と変更、および [DDX リファレンス](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) ドキュメント。
+![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png) 
 
-* **PDF/A に変換 — AEMワークフローステップ**:PDF/A は、ドキュメントのコンテンツを長期保存するためのアーカイブ形式で、すべてのフォントが埋め込まれ、ファイルが非圧縮になります。 これで、PDF/A に変換ステップを使用して、任意の形式のドキュメントまたはファイルをPDF/A 形式に変換できます。
+-->
+
+* **[Invoke DDX - An AEM Workflow step](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**:Document Description XML (DDX) は、宣言的なマークアップ言語です。この言語の要素は、ドキュメントの構築ブロックを表します。 これらの構築ブロックには、PDFおよび XDP ドキュメントと、コメント、しおり、スタイル設定されたテキストなどのその他の要素が含まれます。 DDX ドキュメントはドキュメントのテンプレートで、結果のドキュメントに表示するソースドキュメントの必要な特性を記述します。 1 つの DDX を様々なソースドキュメントと共に使用できます。 AEMワークフローを起動ステップを使用して、ドキュメントの分解、Acrobatと XFA Formsの作成と変更、および [DDX リファレンス](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) ドキュメント。
+
+* **[PDF/A に変換 — AEMワークフローステップ](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**:PDF/A は、ドキュメントのコンテンツを長期保存するためのアーカイブ形式で、すべてのフォントが埋め込まれ、ファイルが非圧縮になります。 これで、PDF/A に変換ステップを使用して、任意の形式のドキュメントまたはファイルをPDF/A 形式に変換できます。
 
 
 ## CIF アドオン {#cloud-services-cif}
