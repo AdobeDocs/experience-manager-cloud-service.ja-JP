@@ -5,10 +5,10 @@ feature: Content Fragments, GraphQL API
 topic: Headless
 role: User
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
+source-git-commit: e776368891457d3d8cb91b1bb31c1563131f7557
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '731'
+ht-degree: 91%
 
 ---
 
@@ -37,11 +37,7 @@ ht-degree: 0%
 
 ## ヘッドレス CMS {#headless-cms}
 
-ヘッドレスコンテンツ管理システム（CMS）とは次のことを意味します。
-
-* 「*ヘッドレスコンテンツ管理システム（ヘッドレス CMS）は、バックエンド専用のコンテンツ管理システム（CMS）であり、API 経由でコンテンツにアクセスして、任意のデバイスに表示できます。*」
-
-   [ウィキペディア](https://en.wikipedia.org/wiki/Headless_content_management_system)を参照してください。
+ヘッドレスコンテンツ管理システム (CMS) は、バックエンドでのみ使用できるコンテンツ管理システムで、API を介してコンテンツにアクセスし、任意のデバイスで表示できるように、コンテンツリポジトリとして明示的に設計および構築されています。
 
 AEM のコンテンツフラグメントのオーサリングとは、次のことを意味します。
 

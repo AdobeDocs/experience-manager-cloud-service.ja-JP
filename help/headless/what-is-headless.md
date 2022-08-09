@@ -2,10 +2,10 @@
 title: ヘッドレス CMS とは
 description: ヘッドレス CMS の詳細 仕組みは？ 代替手段と違いは何ですか？ ヘッドレス CMS を使用する理由
 exl-id: 53f24f69-ad49-4b8e-9a91-36cd64c1f2b9
-source-git-commit: bd333d17f96e74227ac148be7164986ea11a0a23
+source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 6%
+source-wordcount: '742'
+ht-degree: 1%
 
 ---
 
@@ -31,11 +31,7 @@ ht-degree: 6%
 
 ヘッドレスコンテンツ管理システムでは、バックエンドとフロントエンドが切り離されるようになりました。
 
-ヘッドレス部分は、コンテンツのバックエンドです。
-
-* 「*ヘッドレスコンテンツ管理システム（ヘッドレス CMS）は、バックエンド専用のコンテンツ管理システム（CMS）であり、API 経由でコンテンツにアクセスして、任意のデバイスに表示できます。*」
-
-   [ウィキペディア](https://en.wikipedia.org/wiki/Headless_content_management_system)を参照してください。
+ヘッドレス部分はコンテンツバックエンドです。ヘッドレスコンテンツ管理システム (CMS) はバックエンドでのみ使用されるコンテンツ管理システムで、API を介してコンテンツにアクセスし、任意のデバイスで表示できるように設計および構築されます。
 
 フロントエンドは、独立して開発および管理される、コンテンツ配信 API を使用してヘッドレスバックエンドからコンテンツを取得します（通常は JSON 形式で）。 例えば、React またはAngularアプリケーション ( シングルページアプリケーション (SPA)) です。
 
