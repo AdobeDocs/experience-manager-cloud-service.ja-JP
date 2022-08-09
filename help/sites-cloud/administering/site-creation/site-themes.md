@@ -4,10 +4,10 @@ description: AEM サイトテーマを使用して、サイトのスタイルや
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 62ae8bf09e616135cbd5498d1d083a74bb6b0e2a
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 100%
+source-wordcount: '357'
+ht-degree: 95%
 
 ---
 
@@ -47,7 +47,7 @@ AEM サイトテンプレートを使用して作成されたサイトでは、�
 
 ## 標準のサイトテーマ {#standard-site-theme}
 
-アドビは、独自のテーマを作成する際の基礎として使用できる、ベストプラクティスの参照テーマを提供します。[標準のサイトテーマは GitHub で入手できます。](https://github.com/adobe/aem-site-template-standard-theme-e2e)
+アドビは、独自のテーマを作成する際の基礎として使用できる、ベストプラクティスの参照テーマを提供します。[標準のサイトテーマは GitHub で入手できます](https://github.com/adobe/aem-site-template-standard/tree/main/theme).
 
 ## サイトテーマの開発 {#developing-themes}
 
