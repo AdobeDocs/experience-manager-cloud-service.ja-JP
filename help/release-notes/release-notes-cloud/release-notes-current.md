@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 0ae79facb4233988db4a649b8e79ca3041832584
+source-git-commit: a3e18349c3cf2240cc68275a3862abeb75ea372a
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 19%
@@ -40,7 +40,7 @@ ht-degree: 19%
 
 ### の新機能[!DNL Sites] {#sites-features}
 
-* この [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) では、キーボードショートカットがサポートされるようになりました。
+* この [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) がサポートされるようになりました [キーボードショートカット](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 * AEM as aCloud Service [web に最適化された画像配信](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) を使用すると、WebP などの形式を配信することで、ページの速度を大幅に向上できます。 この新しいサービスでは、より柔軟に画像のサイズを変更したり、変換したりすることもできます。 のすべてのバージョン [コア画像コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ja) を使用すると、このサービスを利用し、画像コンポーネントのポリシーのオプションをクリックして、画像を WebP として配信できます。
 
