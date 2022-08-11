@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.7.0 のリリースノート
-description: AEM as a Cloud Service の Cloud Manager 2022.7.0 のリリースノートです。
+title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.8.0 のリリースノート
+description: AEM as a Cloud Service の Cloud Manager 2022.8.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 9f76f77365c0e9b2986e9bb3560bc039e0ca7961
+source-git-commit: 0476fda614ce693222ae2e2fb62ea2f84243f80c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '187'
+ht-degree: 45%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.7.0 のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.8.0 のリリースノート {#release-notes}
 
-このページは、AEM as a Cloud Service の Cloud Manager 2022.7.0 のリリースノートです。
+このページは、AEM as a Cloud Service の Cloud Manager 2022.8.0 のリリースノートです。
 
 >[!NOTE]
 >
@@ -21,15 +21,16 @@ ht-degree: 0%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Serviceの Cloud Manager リリース 2022.7.0 のリリース日は 2022 年 8 月 8 日です。 次回のリリースは 2022年8月11日（PT）に予定されています。
+AEM as a Cloud Serviceの Cloud Manager リリース 2022.8.0 のリリース日は 2022 年 8 月 11 日です。 次回のリリースは 2022 年 9 月 9 日に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* Cloud Manager のユーザーは、 **ようこそ** カードをランディングページにいつでも貼り付けることができます。
-* のポップオーバー **[コンテンツを復元](/help/operations/backup.md)** 環境の詳細ページの「 」タブに、ユーザーが変更をローカルに表示できる git コマンドの便利なリストが表示されるようになりました。
+* 更新された UI エクスペリエンスは、 [環境ワークフローを追加します。](/help/implementing/cloud-manager/manage-environments.md)
+* [AEMプロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) Cloud Manager に含まれるは、バージョン 37 に更新されました。
 
 ## バグの修正 {#bug-fixes}
 
-* プログラム作成時の New Relic サブアカウント作成に関連する UI のフィードバックメッセージが改善されました。
-* ユーザーは、Cloud Manager UI からカスタム UI テストログをダウンロードできるようになりました。
-* フロントエンドパイプラインの承認後、デプロイメントステップを実行する呼び出しが行われない問題が修正されました。
+* Cloud Manager UI で New Relic ユーザーが作成または削除されなかった場合の問題を修正しました。
+* まれにリポジトリ作成の失敗が発生する場合もあり、回復性が向上しています。
+* VSTS 組織の設定エラーが発生することがあるのは、再試行が発生したためです。
+* New Relic サブアカウントのユーザー作成中の検証を改善し、特定のエラーを回避できるようになりました。
