@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f947a328897387d37e2092580e6992f14a344eb2
+source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 19%
@@ -110,7 +110,7 @@ Adobe Experience Manager Assets を [MIME タイプに基づいてユーザー�
 
 ### AEMas a Cloud ServiceSDK Dispatcher ツールの機能強化 {#dispatcher-tools-enhancements}
 
-* Apache は `update_sdk.sh` スクリプトを自動的に読み込み、その後の apache および dispatcher 設定の変更を検証するので、開発者の速度が向上します。 Dispatcher ツールの柔軟なモードでのみサポートされます。 また、 [Apache および Dispatcher 設定のデバッグ](/help/implementing/dispatcher/validation-debug.md#automatic-loading) を参照してください。
+* Apache は `docker_run_hot_reload.sh` スクリプトを自動的に読み込み、その後の apache および dispatcher 設定の変更を検証するので、開発者の速度が向上します。 Dispatcher ツールの柔軟なモードでのみサポートされます。 また、 [Apache および Dispatcher 設定のデバッグ](/help/implementing/dispatcher/validation-debug.md#automatic-reloading) を参照してください。
 * ローカルの Apache/Dispatcher 設定では、クラウド環境の変更をより詳細に追跡し、2 つの環境間のパリティを増やします。
 
 ### [!DNL Experience Manager] プレリリースチャネルで利用できる新機能 {#prerelease-features-foundation}
