@@ -2,9 +2,9 @@
 title: AEMでの Campaign ニュースレターの作成
 description: AEM as a Cloud Serviceを使用して、Adobe Campaign Classicで送信できるニュースレターを作成する方法を説明します。
 feature: Authoring
-role: Author
+role: User
 exl-id: 60a6a9d0-f5e6-424f-b320-dd4943c55d45
-source-git-commit: 0323317c8819d7f44ac05c8c6125d202b2a6ba2c
+source-git-commit: 6196f3fc67dbcfe03a71bb6a0796dd5d1d0f8546
 workflow-type: tm+mt
 source-wordcount: '1341'
 ht-degree: 2%
