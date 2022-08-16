@@ -5,35 +5,48 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b29d11550ee8b7671059a1f04de37c7b79658a60
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 100%
+source-wordcount: '1117'
+ht-degree: 38%
 
 ---
 
 # アダプティブフォームの作成 {#creating-an-adaptive-form}
 
-アダプティブフォームを使用すると、魅力的でレスポンシブ、かつ動的でアダプティブなフォームを作成できます。[!DNL AEM Forms] には、アダプティブフォームを作成して操作するための直感的なユーザーインターフェイスと、すぐに使用できる各種のコンポーネントが用意されています。フォームモデルやスキーマをベースとしてアダプティブフォームを作成することも、フォームモデルを使用せずにアダプティブフォームを作成することもできます。フォームモデルを選択する場合、そのモデルが業務上の要件を満たしているかどうかだけでなく、インフラに対する現在の投資や既存のアセットを拡張できるかどうかについても慎重に検討することが重要です。アダプティブフォームは、以下のいずれかの方法で作成できます。
 
-* **フォームデータモデルを使用**
-   [データ統合](data-integration.md) を使用すると、異なるデータソースのエンティティとサービスをフォームデータモデルに統合して、アダプティブフォームの作成に使用できます。作成するアダプティブフォームで、複数のデータソースに対するデータの取得と書き込みが必要になる場合は、フォームデータモデルを選択します。
+アダプティブフォームを使用すると、魅力的でレスポンシブ、かつ動的でアダプティブなフォームを作成できます。AEM Formsは、アダプティブFormsをすばやくオーサリングするための、ビジネスユーザーにとってわかりやすいウィザードを提供します。 このウィザードでは、事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択して、アダプティブフォームを作成するためのクイックタブナビゲーションが用意されています。
 
-   <!--  * **Using an XDP Form Template**
-   It is an ideal form model if you have investments in XFA-based or XDP forms. It provides a direct way to convert your XFA-based forms into Adaptive Forms. Any existing XFA rules are retained in the associated Adaptive Forms. The resulting Adaptive Forms support XFA constructs, such as validations, events, properties, and patterns. -->
+<!-- 
 
-* **XML スキーマ定義（XSD）または JSON スキーマの使用**
-XML スキーマおよび JSON スキーマは、組織内のバックエンドシステムによってデータが作成または使用される構造を表します。アダプティブフォームにスキーマを関連付けて、そのスキーマの要素を使用することにより、アダプティブフォームに動的なコンテンツを追加できます。スキーマの要素は、アダプティブフォームをオーサリングする際に、コンテンツブラウザーの「データモデルオブジェクト」タブで使用できます。
+You can choose to create an Adaptive Form based on a form model or schema or without a form model. It is important to carefully choose the form model that not only suits your requirements but extends your existing infrastructural investments and assets. You get to choose from the following options to create an Adaptive Form: 
 
-* **フォームモデルを使用せずに作成**
-このオプションで作成されたアダプティブフォームは、フォームモデルを使用しません。このようなフォームで生成されるデータ XML は、フィールドと対応する値を持つフラットな構造です。
+-->
+
+![アダプティブフォームを作成するためのウィザード](/help/release-notes/assets/wizard.png)
+
+<!-- 
+
+Adaptive Forms allow you to create forms that are engaging, responsive, dynamic, and adaptive. [!DNL AEM Forms] provides an intuitive wizard and out-of-the-box components to create Adaptive Forms. You can choose to create an Adaptive Form based on a form model or schema or without a form model. It is important to carefully choose the form model that not only suits your requirements but extends your existing infrastructural investments and assets. You get to choose from the following options to create an Adaptive Form:
+
+* **Using a form data model**
+  [Data integration](data-integration.md) lets you integrate entities and services from disparate data sources in to a Form Data Model that you can use to create Adaptive Forms. Choose Form Data Model if the Adaptive Form you are creating involves fetching and write data from and to multiple data source.
+
+  <!--  * **Using an XDP Form Template**
+   It is an ideal form model if you have investments in XFA-based or XDP forms. It provides a direct way to convert your XFA-based forms into Adaptive Forms. Any existing XFA rules are retained in the associated Adaptive Forms. The resulting Adaptive Forms support XFA constructs, such as validations, events, properties, and patterns. 
+
+* **Using an XML Schema Definition (XSD) or a JSON Schema**
+   XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
+
+* **Using none or without a form model**
+   Adaptive Forms created with this option don’t use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
 
 ## 前提条件
 
 アダプティブフォームを作成するには、以下が必要です。
 
-* アダプティブフォームテンプレート。テンプレートは、基本構造を提供し、アダプティブフォームの外観（レイアウトとスタイル）を定義します。特定のプロパティとコンテンツ構造を含むフォーマット済みのコンポーネントがあります。[新しいテンプレートを作成](template-editor.md)したり、既存のテンプレートを読み込んだり、[サンプルテンプレート](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:3f89abe1-0ece-492a-b5af-57c73badad52)をダウンロードして読み込んだりできます。
-* アダプティブフォームテーマ。テーマには、コンポーネントとパネルのスタイルを設定するための詳細情報が含まれています。スタイルには、背景色、状態色、透明度、配置、サイズなどのプロパティが含まれます。テーマを適用すると、指定したスタイルが対応するコンポーネントに反映されます。[新しいテーマを作成](themes.md)したり、[既存のテーマを読み込んだり](import-export-forms-templates.md#uploading-a-theme)、[サンプルテーマ](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:2779f80e-16ba-4cd1-a96f-8e2b53f3be25)をダウンロードして読み込んだりできます。
+* アダプティブフォームテンプレート：テンプレートは基本的な構造を提供し、アダプティブフォームの外観（レイアウトとスタイル）を定義します。 これには、特定のプロパティやコンテンツ構造を有するフォーマット済みのコンポーネントが含まれます。また、テーマと送信アクションを定義するオプションも提供されます。 テーマは、ルックアンドフィールと送信アクションを定義し、アダプティブフォームの送信時に実行するアクションを定義します。 例えば、収集したデータをデータソースに送信する場合などです。 以下が可能です。 [新しいテンプレートを作成](template-editor.md) または既存のテンプレートをインポートします。 また、 [最新のアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.) を参照してください。
+* アダプティブフォームのテーマ：テーマには、コンポーネントとパネルのスタイル設定の詳細が含まれます。 スタイルには、背景色、状態色、透明度、配置、サイズなどのプロパティが含まれます。テーマを適用すると、指定したスタイルが対応するコンポーネントに反映されます。[新しいテーマを作成](themes.md)したり、[既存のテーマを読み込んだり](import-export-forms-templates.md#uploading-a-theme)、[サンプルテーマ](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:2779f80e-16ba-4cd1-a96f-8e2b53f3be25)をダウンロードして読み込んだりできます。また、 [最新のアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.) を参照してください。
 * ユーザーを [!DNL forms-users] に追加し、アダプティブフォームを作成するための権限をユーザーに付与します。フォーム専用のユーザーグループの詳細なリストについては、[グループと権限](forms-groups-privileges-tasks.md)を参照してください。
 
 ## アダプティブフォームの作成 {#strong-create-an-adaptive-form-strong}
@@ -46,81 +59,84 @@ XML スキーマおよび JSON スキーマは、組織内のバックエンド�
 
    ログイン後、左上隅の **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL フォーム]**／**[!UICONTROL フォームとドキュメント]**&#x200B;をタップします。
 
-1. 「**[!UICONTROL 作成]**」をタップして、「**[!UICONTROL アダプティブフォーム]**」を選択します。テンプレートを選択して、「**[!UICONTROL 次へ]**」をタップします。
-1. 「**[!UICONTROL プロパティを追加]**」オプションが表示されます。以下のプロパティフィールドの値を指定します。「タイトル」フィールドと「ドキュメント名」フィールドは必須です。
+1. タップ **[!UICONTROL 作成]**  > **[!UICONTROL アダプティブForms]**. ウィザードが開きます。
+1. 「ソース」タブで、テンプレートを選択します。
+   * テンプレートを選択すると、テンプレートで指定されたテーマと送信アクションが自動的に選択され、「作成」ボタンが有効になります。 「スタイル」タブまたは「送信」タブに移動して、別のテーマまたは送信アクションを選択できます。
+   * 選択したテンプレートにテーマが指定されていない場合、「作成」ボタンは無効のままです。 「スタイル」タブに移動して、テーマを手動で選択できます。
+1. 「スタイル」タブで、テーマを選択します。
+   * 選択したテンプレートでテーマを指定すると、そのテーマはウィザードで自動的に選択されます。 「スタイル」タブから別のテーマを選択できます。
+   * 選択したテンプレートにテーマが指定されていない場合は、「スタイル」タブを使用してテーマを選択できます。 テーマを選択すると、「作成」ボタンが有効になります。
+1. （オプション）「Data」タブで、データモデルを選択します。
+   * フォームデータモデル：A [フォームデータモデル](data-integration.md) を使用すると、異なるデータソースのエンティティやサービスをアダプティブフォームに統合できます。 作成するアダプティブフォームで、複数のデータソースからのデータの取得および書き込みが必要な場合は、「フォームデータモデル」を選択します。
+   * JSON スキーマ：JSON スキーマは、組織のバックエンドシステムによってデータが生成または使用される構造を表します。 アダプティブフォームにスキーマを関連付けて、そのスキーマの要素を使用することにより、アダプティブフォームに動的なコンテンツを追加できます。スキーマの要素は、アダプティブFormsのオーサリング時に、コンテンツブラウザーの「データモデルオブジェクト」タブで使用でき、すべてのフィールドも新しく作成されたアダプティブフォームに追加されます。
+1. 「送信」タブで、送信アクションを選択します。
+   * テンプレートを選択すると、テンプレートで指定された送信アクションが自動選択されます。 「送信」タブから、別の送信アクションを選択できます。 「送信」タブに、使用可能なすべての送信アクションが表示されます。
+   * 選択したテンプレートで送信アクションが指定されていない場合は、「送信」タブを使用して送信アクションを選択できます
+
+1. （オプション）「配信」タブで、アダプティブフォームの発行日または非公開日を指定できます。
+
+1. 「作成」をタップします。タイトル、名前、およびアダプティブフォームの保存場所を指定するためのダイアログが表示されます。
 
    * **[!UICONTROL タイトル：]**&#x200B;フォームの表示名を指定します。タイトルを指定すると、[!DNL Experience Manager Forms] ユーザーインターフェイス内のフォームを特定しやすくなります。
    * **[!UICONTROL 名前：]**&#x200B;フォームの名前を指定します。指定された名前のノードがリポジトリーに作成されます。タイトルを入力し始めると、名前フィールドの値が自動的に生成されます。候補として入力された値は変更可能です。「ドキュメント名」フィールドには、英数字、ハイフン、アンダースコアのみを使用できます。無効な入力は、すべてハイフンに置き換えられます。
-   * **[!UICONTROL 説明：]**&#x200B;フォームに関する詳細情報を指定します。
-   * **[!UICONTROL タグ：]**&#x200B;アダプティブフォームを一意に識別するためのタグを指定します。タグを指定すると、フォームを検索しやすくなります。タグを作成するには、「**[!UICONTROL タグ]**」ボックスに新しいタグ名を入力します。
+   * **[!UICONTROL パス：]** アダプティブフォームを保存する場所を指定します。 アダプティブフォームは次の場所に直接保存できます。 `/content/dam/formsanddocuments` または、 `/content/dam/formsanddocuments/adaptiveforms` をクリックしてアダプティブフォームを保存します。 フォルダーをパスで使用する前に、必ずフォルダーを作成してください。 「パス」フィールドでは、フォルダーが自動的に作成されることはありません。
 
-1. 以下のいずれかのフォームモデルに基づいてアダプティブフォームを作成できます。
+1. 「**[!UICONTROL 作成]**」をタップします。アダプティブフォームが作成され、アダプティブFormsエディターで開きます。 エディターに、テンプレートで使用可能なコンテンツが表示されます。 新しく作成されたフォームを必要に応じてカスタマイズするためのサイドバーも表示されます。
 
-   * [フォームデータモデル](#fdm)
+   アダプティブフォームのタイプに基づいて、関連する <!--XFA form template, XML schema or --> JSON スキーマまたはフォームデータモデルが **[!UICONTROL データモデルオブジェクト]** タブ **[!UICONTROL コンテンツブラウザー]** サイドバーに表示されます。 これらの要素もアドラッグ＆ドロップしてダプティブフォームを作成できます。
 
-   <!--* [XFA form template](#create-an-adaptive-form-based-on-an-xfa-form-template)-->
-   * [XML または JSON スキーマ](#create-an-adaptive-form-based-on-xml-or-json-schema)
-   * なし、またはフォームモデルを使用しない
+<!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
-   これらは、**[!UICONTROL プロパティを追加]**&#x200B;ページの「**[!UICONTROL フォームモデル]**」タブから設定できます。デフォルトで選択されているフォームモデルは、「**[!UICONTROL なし]**」です。
+[Data integration](data-integration.md) lets you integrate multiple data sources and bring their entities and services together to create a form data model. It is an extension of JSON schema. You can use a Form Data Model to create an Adaptive Form. The entities or data model objects configured in a Form Data Model are available as data model objects for form authoring. They are bound to respective data sources and used to prefill a form and write submitted data back to the respective data sources. You can also call services configured in a Form Data Model using Adaptive Form rules.
 
-1. 「**[!UICONTROL 作成]**」をタップします。アダプティブフォームが作成され、フォームを編集用に開くためのダイアログが表示されます。
+To use a Form Data Model for creating an Adaptive Form:
 
-1. 「**[!UICONTROL 開く]**」をタップし、新しく作成されたフォームを新しいタブで開きます。フォームが編集用に開かれ、テンプレート内の利用可能なコンテンツが表示されます。新しく作成されたフォームを必要に応じてカスタマイズするためのサイドバーも表示されます。
+1. In Form Model tab on Add Properties screen, select **[!UICONTROL Form Data Model]** in the **[!UICONTROL Select From]** drop-down list.
 
-   アダプティブフォームのタイプにより、関連付けられた <!--XFA form template, -->XML スキーマまたは JSON スキーマに存在するフォーム要素が、サイドバーにある&#x200B;**[!UICONTROL コンテンツブラウザー]**&#x200B;の「**[!UICONTROL データモデルオブジェクト]**」タブに表示されます。これらの要素もアドラッグ＆ドロップしてダプティブフォームを作成できます。
+   ![Create an Adaptive Form](assets/create-af-1-1.png)
 
-## フォームデータモデルに基づくアダプティブフォームの作成 {#fdm}
-
-[データ統合](data-integration.md)を使用すると、複数のデータソースを統合し、それらのエンティティとサービスをまとめてフォームデータモデルを作成できます。これは、JSON スキーマの拡張機能です。フォームデータモデルを使用してアダプティブフォームを作成できます。フォームデータモデル内で設定されたエンティティまたはデータモデルオブジェクトは、フォームオーサリングのデータモデルオブジェクトとして使用できます。これらは各データソースに結合され、フォームの事前入力や送信済みデータの各データソースへの書き戻しに使用されます。また、アダプティブフォームルールを使用して、フォームデータモデル内で設定されているサービスを呼び出すこともできます。
-
-フォームデータモデルを使用してアダプティブフォームを作成するには、以下の手順を実行します。
-
-1. プロパティを追加画面の「フォームモデル」タブで、 **[!UICONTROL 次から選択]** ドロップダウンリストから「**[!UICONTROL フォームデータモデル]**」を選択します。
-
-   ![アダプティブフォームの作成](assets/create-af-1-1.png)
-
-1. 「**[!UICONTROL フォームデータモデルを選択]**」をタップして展開します。使用可能なすべてのフォームデータモデルが一覧表示されます。フォームデータモデルを選択します。
+1. Tap to expand **[!UICONTROL Select Form Data Model]**. All available form data models are listed.Select a from data model.
 
 >[!NOTE]
 >
->アダプティブフォームのフォームデータモデルを変更することもできます。手順について詳しくは、「[アダプティブフォームのフォームモデルプロパティの編集](#edit-form-model)」を参照してください。
+>You can also change the Form Data Model for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model).
 
-## XML または JSON スキーマに基づくアダプティブフォームの作成 {#create-an-adaptive-form-based-on-xml-or-json-schema}
+## Create an Adaptive Form based on XML or JSON schema {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
-XML スキーマおよび JSON スキーマは、組織内のバックエンドシステムによってデータが作成または使用される構造を表します。アダプティブフォームにスキーマを関連付けて、そのスキーマの要素を使用して、アダプティブフォームに動的なコンテンツを追加できます。スキーマの要素は、アダプティブフォームを作成する際に、コンテンツブラウザーの「データモデルオブジェクト」タブで使用できます。スキーマ要素をドラッグ＆ドロップしてフォームを作成できます。
+XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate a schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available in the Data Model Object tab of the content browser for authoring Adaptive Forms. You can drag-drop the schema elements to build the form.
 
-アダプティブフォームのオーサリングのための XML または JSON スキーマの設計方法について理解するには、以下のドキュメントを参照してください。
+See the following documents to understand how to design XML or JSON schema for authoring Adaptive Forms.
 
-* [XML スキーマを使用したアダプティブフォームの作成](adaptive-form-xml-schema-form-model.md)
-* [JSON スキーマを使用したアダプティブフォームの作成](adaptive-form-json-schema-form-model.md)
+* [Creating Adaptive Forms using XML schema](adaptive-form-xml-schema-form-model.md)
+* [Creating Adaptive Forms using JSON schema](adaptive-form-json-schema-form-model.md)
 
-アダプティブフォームのフォームモデルとして XML または JSON スキーマを使用するには、以下の手順を実行します。
+Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
-1. アダプティブフォーム作成ページの&#x200B;**[!UICONTROL プロパティを追加]**&#x200B;ステップで、「**[!UICONTROL フォームモデル]**」タブをクリックします。
-1. 「フォームモデル」のタブで、 **[!UICONTROL 次から選択]** ドロップダウンから「**[!UICONTROL スキーマ]**」を選択します。
+1. On the **[!UICONTROL Add Properties]** step of Adaptive Form creation page, tap on the **[!UICONTROL Form Model]** tab.
+1. In the Form Model tab, select **[!UICONTROL Schema]** from the **[!UICONTROL Select From]** drop-down field.
 
-1. 「**[!UICONTROL スキーマを選択]**」をタップして、以下のいずれかの操作を行います。
+1. Tap **[!UICONTROL Select Schema]** and do one of the following:
 
-   * **[!UICONTROL ディスクからアップロード]** - このオプションを選択して、「スキーマ定義をアップロード」をタップし、ファイルシステムから XML スキーマまたは JSON スキーマを参照してアップロードします。アップロードされたスキーマファイルは、フォームと共に保存されますが、他のアダプティブフォームからアクセスすることはできません。
-   * **[!UICONTROL リポジトリーを検索]** - このオプションを選択して、リポジトリーで使用できるスキーマ定義ファイルのリストから選択します。XML または JSON スキーマファイルをフォームモデルとして選択します。選択したスキーマが参照されてフォームに関連付けられ、他のアダプティブフォームからアクセスして使用できるようになります。
+    * **[!UICONTROL Upload from disk]** - Select this option and tap Upload Schema Definition to browse and upload an XML schema or JSON schema from your file system. The uploaded schema file resides with the form and is not accessible to other Adaptive Forms.
+    * **[!UICONTROL Search in repository]** - Select this option to select from the list of schema definition files available in the repository. Select the XML or JSON schema file as form model. The selected schema is associated with the form by reference and is accessible for use in other Adaptive Forms.
 
-      JSON スキーマファイル名が **.schema.json** で終わることを確認してください。例：mySchema.schema.json
-   ![XML または JSON スキーマの選択](assets/upload-schema.png)
-   **図**：*XML または JSON スキーマの選択*
+      Ensure that the JSON schema filename ends with **.schema.json**. For example: mySchema.schema.json
 
-1. （XML スキーマのみ）XML スキーマを選択またはアップロードした後、選択した XSD ファイルのルート要素を指定して、アダプティブフォームにマッピングします。
+   ![Selecting XML or JSON schema](assets/upload-schema.png)
+**Figure:** *Selecting XML or JSON schema*
 
-   ![XSD ルート要素の選択](assets/xsd-root-element.png)
-   **図**：*XSD ルート要素の選択*
+1. (For XML schema only) After you select or upload an XML Schema, specify a root element of the selected XSD file to map with the Adaptive Form.
+
+   ![Selecting XSD root element](assets/xsd-root-element.png)
+**Figure:** *Selecting XSD root element*
 
 >[!NOTE]
 >
->アダプティブフォームのスキーマを変更することもできます。手順について詳しくは、「[アダプティブフォームのフォームモデルプロパティの編集](#edit-form-model)」を参照してください。
+>You can also change the schema for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model). -->
 
 ## アダプティブフォームのフォームモデルプロパティの編集 {#edit-form-model}
 
-アダプティブフォームは、フォームモデルを使用せずに（フォームモデルの「なし」オプションを使用して）作成することも、フォームモデル（<!-- form template, -->XML スキーマ、JSON スキーマなど）またはフォームデータモデルを使用して作成することもできます。アダプティブフォームのフォームデータモデルを「なし」から別のフォームモデルに変更することもできます。フォームモデルをベースとするアダプティブフォームでは、同じフォームモデルに別の <!-- form template,-->XML スキーマ、JSON スキーマまたはフォームデータモデルを選択することもできます。ただし、フォームモデルを別のフォームモデルに変更することはできません。
+アダプティブフォーム（JSON ベースまたはフォームデータモデル）のフォームモデルを変更できます。 あるフォームモデルから別のフォームモデルに変更することはできません。
 
 1. アダプティブフォームを選択し、「**プロパティ**」アイコンをタップします。
 1. 「**[!UICONTROL フォームモデル]**」タブを開き、以下のいずれかを実行します。
