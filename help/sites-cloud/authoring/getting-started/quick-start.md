@@ -2,7 +2,7 @@
 title: ページのオーサリングのクイックスタートガイド
 description: ページコンテンツのオーサリングに初めて取り組む際に役立つ概要レベルのクイックガイドです。
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 43fe6bdc8534cdc6c9d1b8afee90c647c447bfe1
 workflow-type: tm+mt
 source-wordcount: '1585'
 ht-degree: 100%
@@ -244,13 +244,13 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
    以降の操作は、アクションに応じて、次のようになります。
 
-   * コピー：
+   * [コピー](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#copying-and-pasting-a-page):
 
       * 新しい場所に移動して、貼り付けをおこなう必要があります。
-   * 移動：
+   * [移動](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
 
       * ページの移動に必要な情報を収集するためのウィザードが開きます。画面に表示される手順に従ってください。
-   * 削除：
+   * [削除](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
       * この操作の確認が求められます。
    >[!NOTE]
