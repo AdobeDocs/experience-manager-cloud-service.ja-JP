@@ -3,9 +3,9 @@ title: Dispatcher ツールを使用した検証とデバッグ
 description: Dispatcher ツールを使用した検証とデバッグ
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
+source-git-commit: 6b0fffb599d46a36270e98e0d818f33d5f97e955
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2655'
 ht-degree: 94%
 
 ---
@@ -425,7 +425,7 @@ Dispatcher をローカルで実行すると、ログが端末に直接出力さ
 
 >[!NOTE]
 >
->Windows オペレーティングシステムの制限により、この機能は Linux ユーザーに対してのみ利用できます。
+>Windows オペレーティングシステムの制限により、この機能はmacOSおよび Linux ユーザーに対してのみ使用できます。
 
 ローカル検証 (`validate.sh`) を開始し、docker コンテナ (`docker_run.sh`) を変更するたびに、 `docker_run_hot_reload.sh` スクリプト  スクリプトは、設定に対する変更を監視し、自動的に再読み込みして検証を再実行します。 このオプションを使用すると、デバッグ時にかなりの時間を節約できます。
 
