@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの基本を学ぶ
 description: コンテンツ転送ツールの基本を学ぶ
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 7bebdff5095786005d5c4c91b7b699d71f9813a7
+source-git-commit: 8e1cc042da37fd246a5048e67fc04cbacfa69775
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1341'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 ソース AEM インスタンスがファイアウォールの内側で動作していて、許可リストに追加された特定のホストにしか到達できない場合があります。抽出を正常に実行するには、AEM を実行しているインスタンスから、次のエンドポイントにアクセスできる必要があります。
 
 * ターゲット AEM as a Cloud Service 環境：`author-p<program_id>-e<env_id>.adobeaemcloud.com`
-* Azure BLOB ストレージサービス：`*.blob.core.windows.net`
+* Azure BLOB ストレージサービス：`casstorageprod.blob.core.windows.net`
 * ユーザーマッピング IO エンドポイント：`usermanagement.adobe.io`
 
 ターゲット AEM as a Cloud Service 環境への接続をテストするには、ソースインスタンスのシェルから次の cURL コマンドを発行します（`program_id`、`environment_id` および `migration_token` を実際の値に置き換えてください）。
