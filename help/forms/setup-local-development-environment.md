@@ -4,8 +4,8 @@ description: Adobe Experience Manager Forms as a Cloud Service 用のローカ�
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 source-git-commit: c7b4907a2d4dbecf03ac5b51376fb534096f5212
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2704'
+ht-degree: 100%
 
 ---
 

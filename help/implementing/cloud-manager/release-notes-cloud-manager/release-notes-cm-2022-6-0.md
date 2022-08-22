@@ -2,13 +2,13 @@
 title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.6.0 のリリースノート
 description: AEM as a Cloud Service の Cloud Manager 2022.6.0 のリリースノートです。
 feature: Release Information
-source-git-commit: 5200ee315ad88dae4b52c0ea904489e73f62a8a0
+exl-id: 0a348836-74cd-4fd4-aef4-6ffbd6483c24
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 52%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.6.0 のリリースノート {#release-notes}
 
@@ -20,7 +20,7 @@ ht-degree: 52%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Serviceの Cloud Manager リリース 2022.6.0 のリリース日は 2022 年 6 月 9 日です。 次回のリリースは 2022年6月30日（PT）に予定されています。
+AEM as a Cloud Serviceの Cloud Manager リリース 2022.6.0 のリリース日は 2022 年 6 月 9 日です。 次回のリリースは2022年6月30日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
@@ -41,4 +41,3 @@ AEM as a Cloud Serviceの Cloud Manager リリース 2022.6.0 のリリース日
 * [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) API は非推奨（廃止予定）となりましたので、代わりに [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) を使用してください。
    * `List Programs` は引き続き機能しますが、この機能を使用すると、ログに警告メッセージが表示されます。
    * 3 か月後にはサポートされなくなります。
-

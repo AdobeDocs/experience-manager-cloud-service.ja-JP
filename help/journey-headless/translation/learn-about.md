@@ -4,8 +4,8 @@ description: ヘッドレスの概念、AEM へのマッピング方法、AEM �
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '725'
+ht-degree: 100%
 
 ---
 

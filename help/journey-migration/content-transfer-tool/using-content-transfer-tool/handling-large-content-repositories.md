@@ -4,8 +4,8 @@ description: この節では、大規模なコンテンツリポジトリーの�
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 source-git-commit: be66d3e255d43156dfd181711d5a372f2c85f6d5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1778'
+ht-degree: 100%
 
 ---
 

@@ -5,8 +5,8 @@ role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 source-git-commit: fc07b12f7a35b4f772a0ac4f9e6b09a1287eec8b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3574'
+ht-degree: 96%
 
 ---
 
@@ -117,7 +117,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >このインボックス通知は、設定が成功したかどうかを知らせるものです。
    > 詳しくは、[新しい Dynamic Media 設定のトラブルシューティング](#troubleshoot-dm-config)と[インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)を参照してください。
 
-1. 公開前に Dynamic Media コンテンツを安全にプレビューするには、Experience Manageras a Cloud Service ではトークンベースの検証が使用されるので、Experience Manager オーサーは、Dynamic Media コンテンツをデフォルトでプレビューできます。IP を&#x200B;*許可リスト*&#x200B;に登録して、ユーザーがコンテンツを安全にプレビューできるようにすることができます。このアクションを Experience Manager as a Cloud Service で設定するには、[Image Server 用の Dynamic Media 公開設定 -「セキュリティ」タブ](/help/assets/dynamic-media/dm-publish-settings.md#security-tab)を参照してください。<!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
+1. 公開前に Dynamic Media コンテンツを安全にプレビューするには、Experience Manager as a Cloud Service ではトークンベースの検証が使用されるので、Experience Manager オーサーは、Dynamic Media コンテンツをデフォルトでプレビューできます。IP を&#x200B;*許可リスト*&#x200B;に登録して、ユーザーがコンテンツを安全にプレビューできるようにすることができます。このアクションを Experience Manager as a Cloud Service で設定するには、[Image Server 用の Dynamic Media 公開設定 -「セキュリティ」タブ](/help/assets/dynamic-media/dm-publish-settings.md#security-tab)を参照してください。<!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
 <!--
     * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.

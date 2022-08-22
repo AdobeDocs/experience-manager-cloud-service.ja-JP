@@ -23,7 +23,7 @@ ht-degree: 100%
 
 ## 設定 {#configuration}
 
-製品カタログは、AEM で設定する必要があります。 詳しくは、 [ストアとカタログの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=ja#catalog) を参照してください。
+製品カタログは、AEM で設定する必要があります。詳しくは、 [ストアとカタログの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=ja#catalog) を参照してください。
 
 ステージングされたカタログ機能を有効にするには、認証が必要です。詳しくは、 [はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=ja) を参照してください。
 
@@ -39,7 +39,7 @@ ht-degree: 100%
 
 ## 製品カタログの参照 {#browsing-product-catalogs}
 
-製品コックピットは、製品カタログ構造に従って階層的に編成されています。 第 1 レベルは、コマースバックエンドのメタ情報を含む、設定済みのすべての製品カタログのカタログルートレベルを示します。
+製品コックピットは、製品カタログ構造に従って階層的に編成されています。第 1 レベルは、コマースバックエンドのメタ情報を含む、設定済みのすべての製品カタログのカタログルートレベルを示します。
 
 ![設定済みのカタログ](../assets/catalog-overview.png)
 

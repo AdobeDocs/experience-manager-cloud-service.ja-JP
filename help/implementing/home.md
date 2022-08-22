@@ -5,14 +5,14 @@ landing-page-description: 'Adobe Experience Manager as a Cloud Service のデプ
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '413'
+ht-degree: 100%
 
 ---
 
 # AEM as a Cloud Service のアプリケーションの実装 {#aem-implementation-guide}
 
-Experience Manageras a Cloud Service の実装に関するセルフヘルプリソースの検索。Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法を説明します。
+Experience Manager as a Cloud Service の実装に関するセルフヘルプリソースの検索。Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法を説明します。
 
 ## 実装に関する主要な記事 {#key-articles}
 

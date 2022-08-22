@@ -5,12 +5,12 @@ exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
 workflow-type: tm+mt
 source-wordcount: '582'
-ht-degree: 27%
+ht-degree: 30%
 
 ---
 
 
-# Cloud Manager リポジトリー {#cloud-manager-repos}
+# Cloud Manager リポジトリ {#cloud-manager-repos}
 
 Cloud Manager で Git リポジトリを作成、表示および削除する方法について説明します。
 
@@ -64,9 +64,9 @@ Cloud Manager でリポジトリを削除するには、次の手順に従いま
 
 ## Git サブモジュールのサポート {#git-submodule-support}
 
-Git サブモジュールを使用すると、ビルド時に Git リポジトリー間で複数のブランチのコンテンツを結合できます。
+Git サブモジュールを使用すると、ビルド時に Git リポジトリ間で複数のブランチのコンテンツを結合できます。
 
-Cloud Manager のビルドプロセスを実行すると、パイプライン用に設定されたリポジトリーのクローンを作成し、設定されたブランチをチェックアウトした後に、ブランチのルートディレクトリに `.gitmodules` ファイルが含まれている場合は、コマンドが実行されます。
+Cloud Manager のビルドプロセスを実行すると、パイプライン用に設定されたリポジトリのクローンを作成し、設定されたブランチをチェックアウトした後に、ブランチのルートディレクトリに `.gitmodules` ファイルが含まれている場合は、コマンドが実行されます。
 
 次のコマンドは、各サブモジュールを適切なディレクトリにチェックアウトします。
 
@@ -76,7 +76,7 @@ $ git submodule update --init
 
 この方法は、ドキュメントで説明されているソリューションの代わりに使用できる可能性があります [複数のソース Git リポジトリーの操作](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) git サブモジュールの使用に慣れており、外部マージプロセスを管理したくない組織向けの機能です。
 
-例えば、3 つのリポジトリがあり、それぞれにという名前の 1 つのブランチがあるとします。 `main`. プライマリリポジトリ（パイプラインで設定されたリポジトリ）では、 `main` ブランチに `pom.xml` 他の 2 つのリポジトリーに含まれるプロジェクトを宣言するファイル。
+例えば、3 つのリポジトリがあり、それぞれに `main` という名前のブランチが 1 つあるとします。プライマリリポジトリ（パイプラインで設定されたリポジトリ）では、 `main` ブランチに `pom.xml` 他の 2 つのリポジトリーに含まれるプロジェクトを宣言するファイル。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

@@ -1,6 +1,6 @@
 ---
-title: WCAG 2.1 クイックガイド
-description: WCAG 2.1 クイックガイド
+title: 'WCAG 2.1 クイックガイド '
+description: 'WCAG 2.1 クイックガイド '
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
 source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# WCAG 2.1 クイックガイド {#quick-guide-to-wcag}
+# WCAG 2.1 クイックガイド  {#quick-guide-to-wcag}
 
 Adobe Experience Manager（AEM）as a Cloud Service は、Web コンテンツのアクセシビリティガイドラインへの準拠を最大限に高めるように開発されました。
 

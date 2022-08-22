@@ -54,11 +54,11 @@ CIF は、製品カタログへのリアルタイムのアクセスと製品エ�
 
 ## 事前定義済みコネクタ {#connectors}
 
-コネクタは、プロジェクトの良い出発点となります。これには、コマースソリューション固有の接続とデフォルトの API マッピングが付属しています。これらのコネクタは、サードパーティによって作成されており、アドビで維持管理されているわけではありません。詳しくは、それぞれのパートナーに問い合わせください。
+コネクタは、プロジェクトを開始するのに適しています。コネクタには、コマースソリューション固有の接続とデフォルトの API マッピングが付属しています。これらのコネクタは、サードパーティによって構築されており、アドビが管理しているわけではありません。詳しくは、各パートナーにお問い合わせください。
 
-* [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris)（Diconium が作成）
-* [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool)（Diconium が作成）
+* [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris)、Diconium 構築
+* [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool)、Diconium 構築
 
 >[!TIP]
 >
->コネクタは、プロジェクトでコマース統合を速めるのに役立ちますが、プラグアンドプレイではありません。エンタープライズコマースソリューションは通常、大幅にカスタマイズされており、カスタム統合が必要になります。コマースプラットフォーム、Adobe Commerce GraphQL スキーマおよび Adobe I/O Runtime に関する十分な知識が必要です。
+>コネクタは、コマース統合を高速化するプロジェクトを支援しますが、プラグアンドプレイではありません。エンタープライズコマースソリューションは通常、大幅にカスタマイズされており、カスタム統合が必要です。コマースプラットフォーム、Adobe Commerce GraphQL スキーマ、Adobe I/O Runtime に関する十分な知識が必要です。

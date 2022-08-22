@@ -4,8 +4,8 @@ description: ヘッドレスコンテンツを整理する方法と AEM の翻�
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1409'
+ht-degree: 99%
 
 ---
 

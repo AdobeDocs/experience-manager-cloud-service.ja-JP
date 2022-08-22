@@ -3,7 +3,7 @@ title: SPA モデルルーティング
 description: AEM の単一ページアプリケーションの場合、アプリはルーティングを担当します。このドキュメントでは、ルーティングメカニズム、契約、使用可能なオプションについて説明します。
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 source-git-commit: 823b6412c9e75fe523e93c4f234ddd9d0ae93f5a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 100%
 

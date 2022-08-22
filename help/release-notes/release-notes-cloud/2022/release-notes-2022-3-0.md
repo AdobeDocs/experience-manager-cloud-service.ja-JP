@@ -4,8 +4,8 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 ãƒªãƒ
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
 source-git-commit: b71cd1394260c8ec14b661934199632987a034f6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1152'
+ht-degree: 100%
 
 ---
 

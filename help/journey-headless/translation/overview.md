@@ -4,8 +4,8 @@ description: AEM の強力な翻訳ツールを使用してヘッドレスコン
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 source-git-commit: ad47148237fe8a8b7c0b4fc4eb293f1155dae560
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1029'
+ht-degree: 100%
 
 ---
 

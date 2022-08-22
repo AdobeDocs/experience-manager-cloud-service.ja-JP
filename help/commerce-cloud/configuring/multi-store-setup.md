@@ -33,7 +33,7 @@ AEM サイトと AEM CIF コアコンポーネントを専用のストア表示�
 
 ## 設定 {#configuration}
 
-1. 「[Adobe Commerce の web サイト、ストア、表示](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)」に記載されているパターンに従って、複数のストアや表示を設定します。
+1. [Adobe Commerce の web サイト、ストア、表示](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)に記載されているパターンに従って、複数のストアや表示を設定します。
 
 2. AEM と Adobe Commerce 間の接続が動作していることを確認します。
 
@@ -47,7 +47,7 @@ AEM サイトと AEM CIF コアコンポーネントを専用のストア表示�
 
    >[!TIP]
    >
-   > コマースカタログは、ID または UID を使用して対処できます。UID は Adobe Commerce 2.4.2 で導入されました。コマースバックエンドでバージョン 2.4.2 以降の GraphQL スキーマがサポートされている場合にのみ、これを有効にしてください。
+   > コマースカタログは、ID または UID を使用して対処できます。UID は Adobe Commerce 2.4.2 で導入されました。コマースバックエンドでバージョン 2.4.2 以降の GraphQL スキーマがサポートされている場合のみ、これを有効にしてください。
 
 4. AEM Sites に子設定を割り当てます。
 

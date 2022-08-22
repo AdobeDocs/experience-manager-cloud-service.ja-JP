@@ -15,7 +15,7 @@ ht-degree: 96%
 
 [!DNL Adobe Workfront] は作業管理アプリケーションで、作業のライフサイクル全体を一元的に管理するのに役立ちます。[!DNL Workfront] と [!DNL Adobe Experience Manager Assets] の統合により、組織は、作業とデジタルアセット管理を本質的に関連付けることで、コンテンツベロシティを向上させ市場投入までの時間を短縮することができます。Workfront での作業を管理するコンテキスト内で、ユーザーは必要なドキュメントと画像にアクセスできます。
 
-[!DNL Workfront for Experience Manager enhanced connector] により、エンドツーエンドのワークフローでビジネスプロセスが強化され、エンドツーエンドのクライアントエクスペリエンスと一元化されたストレージをパーソナライズできます。アドビでは、標準コネクタと、これら 2 つのソリューションを統合する拡張コネクタを提供します。 比較については、以下のサポートされる機能を参照し、[ [!DNL enhanced connector]の新機能を参照してください](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience)。
+[!DNL Workfront for Experience Manager enhanced connector] により、エンドツーエンドのワークフローでビジネスプロセスが強化され、エンドツーエンドのクライアントエクスペリエンスと一元化されたストレージをパーソナライズできます。アドビでは、標準コネクタと、これら 2 つのソリューションを統合する拡張コネクタを提供します。比較については、以下のサポートされる機能を参照し、[ [!DNL enhanced connector]の新機能を参照してください](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience)。
 
 [!DNL Workfront for Experience Manager enhanced connector] を使用すると、組織で次のことが可能です。
 
@@ -52,10 +52,10 @@ ht-degree: 96%
 | Workfront 内からリンクされた AEM Assets をダウンロード | Workfront 内でアセットをリンクすると、ユーザーはアセットのバイトをダウンロードできます。 | ✓ | ✓ | ✓ |
 | Workfront 内から AEM Assets を検索 | Workfront の AEM Assets セレクターを使用すると、アセットのフルテキスト検索が可能になります。 | ✓ | ✓ | ✓ |
 | Workfront 内から AEM フォルダー階層を表示し、階層内を移動する | Workfront の AEM Assets セレクターを使用すると、AEM で設定されたユーザーの関連するアクセス制御および権限によって制限される AEM Assets 階層を参照できます。 | ✓ | ✓ | ✓ |
-| Workfront の AEM Assets からアセットのリンクを解除 | AEM の既存のリンクされたアセットのリンクを、関連する Workfront ドキュメントから解除できます。 AEM 内の元のアセットは削除されません。 | ✓ | ✓ | ✓ |
+| Workfront の AEM Assets からアセットのリンクを解除 | AEM の既存のリンクされたアセットのリンクを、関連する Workfront ドキュメントから解除できます。AEM 内の元のアセットは削除されません。 | ✓ | ✓ | ✓ |
 | Workfront から AEM Assets に新しくバージョン管理されたアセットを追加 | Workfront のドキュメントに新しく追加されたバージョンが追加された場合、ユーザーは新しいバージョンを AEM に送信して、既存のバージョンに置き換えることができます。 | ✓ | ✓ | ✓ |
 | 「ユーザーを AEM に誘導」をクリックしたときに Workfront でリンクされたアセット | ユーザーは、Workfront 内からリンクされたアセットをプレビューするように AEM に誘導されます。 | ✓ | ✓ | カスタム |
-| Workfront 内のリンクされた AEM フォルダーを自動的に作成 | オブジェクトのステータスを使用して、Workfront 内にリンクされた AEM フォルダーを自動的に作成します。 Workfront のポートフォリオ、プログラム、プロジェクトに基づいて、AEM フォルダーを自動的に整理します。 | いいえ | 不可 | ✓ |
+| Workfront 内のリンクされた AEM フォルダーを自動的に作成 | オブジェクトのステータスを使用して、Workfront 内にリンクされた AEM フォルダーを自動的に作成します。Workfront のポートフォリオ、プログラム、プロジェクトに基づいて、AEM フォルダーを自動的に整理します。 | いいえ | 不可 | ✓ |
 | コメントの同期 | アセットのコメントを [!DNL Workfront] から [!DNL Assets] への自動的に同期 | 不可 | ✓ | ✓ |
 | Workfront のアセットメタデータの AEM Assets へのマッピング | Workfront オブジェクトおよびカスタムフォームプロパティは、AEM のアセットメタデータプロパティにマッピングできます。値は、最初のアップロード／リンク時にプッシュされます。 | ✓ | ✓ | ✓ |
 | Workfront でドキュメントのカスタムフォームを自動的に作成 | AEM ワークフローを使用して、Workfront のドキュメント、タスク、問題にカスタムフォームを添付します。 | 不可 | 手動でカスタムフォームを追加すると、自動同期が機能します | ✓ |

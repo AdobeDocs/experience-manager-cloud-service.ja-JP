@@ -1,13 +1,13 @@
 ---
 title: Admin Consoleへのアクセス
 description: AEMaaCS 構造のオンボーディングに必要な準備と基本事項を理解したら、Admin Consoleに初めてログインする準備が整います。
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 9%
 
 ---
-
 
 # Admin Consoleへのアクセス {#accessing-admin-console}
 

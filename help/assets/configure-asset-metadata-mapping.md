@@ -1,7 +1,8 @@
 ---
 title: WorkfrontとExperience Manager Assetsの間でのアセットメタデータマッピングの設定
 description: Adobe Workfrontと Assetas a Cloud Serviceアプリケーションの間で、アセットメタデータフィールドをマッピングします。 メタデータフィールドのマッピングの結果、WorkfrontからExperience Manager Assetsにアセットを送信する際に、マッピングされたアセットメタデータをExperience Manager Assetsで表示できます。
-source-git-commit: 212ecb5330de739b2e479d36462953ce33697c1c
+exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 10%
@@ -127,6 +128,3 @@ as a Cloud ServiceのExperience Managerでメタデータ設定を行った後�
 1. 保存先フォルダを選択 [画像はAdobe Workfrontアプリケーションから送信されます](#send-image-workfront-assets) をクリックし、 **[!UICONTROL 適用]**.
 
 Experience Manager Assetsの画像に移動して、その画像に関連付けられているメタデータを表示できます。 画像を選択し、 **[!UICONTROL プロパティ]** をクリックして、画像のメタデータを表示します。
-
-
-

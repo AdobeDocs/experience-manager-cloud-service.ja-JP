@@ -4,8 +4,8 @@ description: TXT レコードを追加して、Cloud Manager でカスタムド�
 exl-id: d441de29-af41-4d3e-9155-531af9702841
 source-git-commit: 491e710223c5878bfa81c4b0a57d18ec0ec29479
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '332'
+ht-degree: 100%
 
 ---
 

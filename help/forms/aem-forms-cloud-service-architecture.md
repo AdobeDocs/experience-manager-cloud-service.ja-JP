@@ -4,8 +4,8 @@ description: ' [!DNL AEM Forms] a s a Cloud Service のアーキテクチャを�
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
 source-git-commit: cd9ef0db59f07173c8c5bd4b38ff946b774ce53c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1045'
+ht-degree: 100%
 
 ---
 

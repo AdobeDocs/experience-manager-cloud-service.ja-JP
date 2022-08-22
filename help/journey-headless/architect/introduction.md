@@ -4,8 +4,8 @@ description: Adobe Experience Manager as a Cloud Service as a Headless CMS „ÅÆÊ©
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '721'
+ht-degree: 100%
 
 ---
 

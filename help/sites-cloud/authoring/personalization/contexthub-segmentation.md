@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# ContextHub でのセグメント化の設定{#configuring-segmentation-with-contexthub}
+# ContextHub でのセグメント化の設定 {#configuring-segmentation-with-contexthub}
 
 キャンペーンを作成する場合、セグメント化を考えることが重要になります。セグメント化の仕組みと主な用語について詳しくは、「[セグメント化について](segmentation.md)」を参照してください。
 

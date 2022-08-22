@@ -5,14 +5,14 @@ landing-page-description: コネクタとその機能、および Experience Man
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '395'
+ht-degree: 100%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service のコネクタの実装 {#aem-connectors-guide}
 
-Experience Manageras a Cloud Service 用のコネクタと機能、これらの役立つツールを Experience Manager に実装する方法について説明します。
+Experience Manager as a Cloud Service 用のコネクタと機能、これらの役立つツールを Experience Manager に実装する方法について説明します。
 
 ## Adobe Experience Manager as a Cloud Service コネクタに関する主要な記事 {#key-articles}
 

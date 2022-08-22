@@ -4,8 +4,8 @@ description: コンテンツフラグメントコンテンツと AEM Assets REST
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '676'
+ht-degree: 97%
 
 ---
 

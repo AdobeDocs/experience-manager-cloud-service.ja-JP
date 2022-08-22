@@ -1,7 +1,8 @@
 ---
 title: アセットのアップロード制限を設定する
-description: 'Adobe Experience Manager Assets の設定で、ユーザーがアップロードできるアセットのタイプを MIME タイプに基づいて制限します。 これにより、望ましくない形式や悪意のあるファイルが誤ってアップロードされるのを防ぐことができます。  '
-source-git-commit: 3be29e4f76b53b4be7815e50ec42c627fec84b68
+description: 'Adobe Experience Manager Assets の設定で、ユーザーがアップロードできるアセットのタイプを MIME タイプに基づいて制限します。 これにより、望ましくない形式や悪意のあるファイルが誤ってアップロードされるのを防ぐことができます。 '
+exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
+source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 9%
@@ -49,7 +50,3 @@ Adobe Experience Manager Assets を設定して、ユーザーがアップロー
 ![アセットの制限](assets/asset-restrictions.png)
 
 画像に表示される設定に基づいて、.JPG、.PNG および。GIF形式の画像をExperience Manager Assetsにアップロードできます。
-
-
-
-

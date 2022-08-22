@@ -1,7 +1,8 @@
 ---
 title: Markdown
 description: コンテンツフラグメントエディターが Markdown 構文を使用してページオーサリングとヘッドレス配信の両方でコンテンツを簡単に作成できる方法を説明します。
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+exl-id: 4e9b076e-7429-466b-bb53-2164da379650
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 91%

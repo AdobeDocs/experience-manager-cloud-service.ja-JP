@@ -4,8 +4,8 @@ description: 作成できる環境のタイプと、Cloud Manager プロジェ�
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: 7174b398040acbf9b18b5ac2aa20fdba4f98ca78
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1745'
+ht-degree: 99%
 
 ---
 

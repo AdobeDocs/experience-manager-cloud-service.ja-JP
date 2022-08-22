@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 リリースのリリースノート。'
-source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
+exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 22%
+ht-degree: 39%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート {#release-notes}
 
@@ -24,7 +24,7 @@ ht-degree: 22%
 ## リリース日 {#release-date}
 
 のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在のリリース (2022.5.0) は 2022 年 6 月 9 日です。
-次回のリリース (2022.6.0) は、2022 年 6 月 30 日に予定されています。
+次回のリリース（2022.6.0）は 2022年6月30日（PT）に予定されています。
 
 ## リリースビデオ {#release-video}
 
@@ -66,11 +66,11 @@ Experience Manager AssetsはAdobe Sensei AI 機能を今まで使用 [画像内�
 
 ### 新機能 {#what-is-new-cif}
 
-* 製品コックピットにすばやくアクセス：サイトエディターでワンクリックで詳細な製品情報に簡単にアクセス
+* 製品コックピットに素早くアクセス：サイトエディターでワンクリックで詳細な製品情報に簡単にアクセス
 
    ![ウィッシュリストを有効にする](/help/assets/CIF/enable-wishlist.png)
 
-* 追加のマーケティングコマースコンポーネントのサポート：コンポーネントは、買い物かごへの追加と、リストへの追加のコールトゥアクションを表示するように設定できます。
+* 追加のマーケティングコマースコンポーネントのサポート：コンポーネントを、買い物かごへの追加と、リストへの追加のコールトゥアクションを表示するように設定できます。
 
    ![製品コックピットへのサイトエディターショートカット](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
@@ -87,18 +87,18 @@ Experience Manager AssetsはAdobe Sensei AI 機能を今まで使用 [画像内�
 
 * AEM as a Cloud Serviceが統合シェルと統合され、ユーザーエクスペリエンスが向上し、他のすべてのExperience Cloudアプリケーションと統合されました。 参照： [統合シェルでas a Cloud ServiceのAEMを使用](/help/overview/aem-cloud-service-on-unified-shell.md) を参照してください。
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation セキュリティ {#foundation-security}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] 基盤セキュリティ {#foundation-security}
 
 ### TLS 1.0、1.1 の廃止
 
-2022 年 6 月 30 日以降、Experience Manageras a Cloud Serviceは、より安全なネットワーク通信とユーザーシステムとのデータ交換を必要とします。 AEMは、TLS(Transport Layer Security)1.2 プロトコルのみを使用します。 古いバージョンの TLS 1.0 および 1.1 は非推奨となります。
+2022年6月30日以降、Experience Manager as a Cloud Service は、より安全なネットワーク通信とユーザーシステムとのデータ交換を必要とします。AEM は、TLS（トランスポートレイヤーセキュリティ）1.2 プロトコルのみを使用します。古いバージョンの TLS 1.0 および 1.1 は非推奨となります。
 
-古いバージョンの TLS を 1.0、1.1 として引き続き使用する場合、as a Cloud ServiceのExperience Managerへのアクセス権が失われる可能性があります。
+古いバージョンの TLS 1.0 および 1.1 を引き続き使用する場合、Experience Manager as a Cloud Service のへのアクセス権が失われる可能性があります。
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager の毎月のリリースの完全なリストを確認できます [ここ](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+Cloud Manager の月次リリースの完全なリストは、[こちら](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)で確認できます。
 
 ## 移行ツール {#migration-tools}
 
-移行ツールのリリースの完全なリストはこちらで確認できます [ここ](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+移行ツールのリリースの完全なリストは、[こちら](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)で確認できます

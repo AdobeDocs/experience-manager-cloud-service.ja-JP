@@ -4,8 +4,8 @@ description: Adobe Target との統合時に使用する IMS 設定について�
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
 source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '859'
+ht-degree: 100%
 
 ---
 

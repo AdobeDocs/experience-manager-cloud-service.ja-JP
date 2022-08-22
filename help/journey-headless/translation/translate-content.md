@@ -4,8 +4,8 @@ description: 翻訳コネクタを使用してヘッドレスコンテンツを�
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2177'
+ht-degree: 100%
 
 ---
 

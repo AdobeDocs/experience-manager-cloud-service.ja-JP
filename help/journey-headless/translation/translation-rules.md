@@ -4,8 +4,8 @@ description: 翻訳するコンテンツを特定するための翻訳ルール�
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '942'
+ht-degree: 100%
 
 ---
 

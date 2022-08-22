@@ -18,5 +18,5 @@ ht-degree: 100%
 このトピックについて詳しくは、次のリソースを参照してください。
 
 - [買い物かご](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart)
-- [AEM Dispatcher with Adobe Commerce Proxy](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)
+- [Adobe Commerce プロキシを使用した AEM Dispatcher](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)
 - [Docker ハブ](https://hub.docker.com/)

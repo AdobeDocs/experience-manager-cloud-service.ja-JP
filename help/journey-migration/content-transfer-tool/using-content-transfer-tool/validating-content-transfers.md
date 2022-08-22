@@ -4,8 +4,8 @@ description: コンテンツ転送ツールを使用してコンテンツ転送�
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 source-git-commit: b88277cda730d9499c7e2750026b6f415c2a8d0e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '883'
+ht-degree: 100%
 
 ---
 

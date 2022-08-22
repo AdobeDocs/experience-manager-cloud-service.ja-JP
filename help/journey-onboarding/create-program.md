@@ -2,13 +2,13 @@
 title: プログラムの作成
 description: Cloud Manager を使用して最初のプログラムを作成する方法を説明します。
 role: Admin, User, Developer
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 25%
 
 ---
-
 
 # プログラムの作成 {#create-program}
 

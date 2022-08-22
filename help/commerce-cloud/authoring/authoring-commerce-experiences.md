@@ -4,8 +4,8 @@ description: コマースエクスペリエンスの作業
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 source-git-commit: b72565e45087a1237eb7e5fa5eb4706d1d534975
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '702'
+ht-degree: 100%
 
 ---
 

@@ -13,9 +13,9 @@ ht-degree: 100%
 
 ## 1. CIF GraphQL はコマースのためにのみ使用されますか。それとも、AEM JCR で作成されたコンテンツのクエリに使用できますか。
 
-アドビでは、Adobe Commerce の GraphQL API を、すべてのコマース関連データの公式コマース API として採用しています。したがって、AEM は、I/O Runtime を介して Adobe Commerce および任意のコマースエンジンとコマースデータを交換するために GraphQL を使用します。この GraphQL API は、コンテンツフラグメントにアクセスする AE M GraphQL API とは独立しています。
+アドビでは、Adobe Commerce の GraphQL API を、すべてのコマース関連データの公式コマース API として採用しています。したがって、AEM は、I/O Runtime を介して Adobe Commerce および任意のコマースエンジンとコマースデータを交換するために GraphQL を使用します。この GraphQL API は、コンテンツフラグメントにアクセスする AEM GraphQL API とは独立しています。
 
-## 2. 製品アセット（画像）は、Adobe Commerce 管理者を介して AEM から保存および参照できますか。Dynamic Media のアセットはどのように使用できますか。
+## 2. 製品アセット（画像）は、Adobe Commerce 管理を介して AEM から保存および参照できますか。Dynamic Media のアセットはどのように使用できますか。
 
 AEM Assets と Adobe Commerce の統合で、正式に利用できるものはありません。[Marketplace](https://marketplace.magento.com/bounteous-dam.html)で利用できるパートナーコネクタがあります。
 
@@ -59,7 +59,7 @@ CIF には、検索バーと検索結果のコンポーネントが用意され�
 
 ## 12. MSM や翻訳で製品データをどのように使用できますか。
 
-通常、製品データは PIM または Adobe Commerce で既に翻訳されています。AEM と Adobe Commerce の統合では、複数の Adobe Commerce ストアおよびストア表示への接続をサポートしています。MSM の設定では、通常、1 つの AEM サイトが 1 つの Adobe Commerce ストア表示にリンクされます。
+通常、製品データは PIM または Adobe Commerce で既に翻訳されています。AEM と Adobe Commerce の統合は、複数の Adobe Commerce ストアおよびストア表示への接続をサポートします。MSM の設定では、通常、1 つの AEM サイトが 1 つの Adobe Commerce ストア表示にリンクされます。
 
 ## 13. 商業文で製品データを充実させる方法はありますか。それはどこでできますか。AEM とコマースソリューションのどちらですか。
 

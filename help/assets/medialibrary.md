@@ -1,6 +1,6 @@
 ---
 title: 基本的なデジタルアセット管理での Media Library の使用
-description: '"[!DNL Experience Manager Assets] とアセット管理用の Media Library。"'
+description: 「[!DNL Experience Manager Assets] とアセット管理用の Media Library」
 contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader

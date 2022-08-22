@@ -1,7 +1,8 @@
 ---
 title: コンテンツフラグメントの操作
 description: Adobe Experience Manager(AEM) のコンテンツフラグメントを使用して、ページに依存しないコンテンツをデザイン、作成、キュレーション、使用する方法を説明します。これは、ページオーサリングやヘッドレス配信に最適です。
-source-git-commit: 6de4120a5b8b312ca1a665b7d7ef7686670c4997
+exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 93%

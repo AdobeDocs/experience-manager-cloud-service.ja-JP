@@ -4,8 +4,8 @@ description: Experience Manager as a Cloud Service への移行ガイド（パ�
 exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
 source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2126'
+ht-degree: 100%
 
 ---
 

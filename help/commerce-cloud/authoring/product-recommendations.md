@@ -1,6 +1,6 @@
 ---
 title: 製品のレコメンデーション
-description: Adobe Commerce は、Adobe Sensei を活用したレコメンデーションエンジンを搭載しています。これらの製品レコメンデーションを Adobe Experience Manager（AEM）ストアフロントに動的に挿入する方法について説明します。
+description: Adobe Commerce には、Adobe Sensei を利用したレコメンデーションエンジンが備わっています。これらの製品レコメンデーションを Adobe Experience Manager（AEM）ストアフロントに動的に挿入する方法について説明します。
 sub-product: Commerce
 version: cloud-service
 doc-type: feature-video
@@ -19,6 +19,6 @@ ht-degree: 100%
 
 # 製品のレコメンデーション
 
-Adobe Commerce は、Adobe Sensei を活用したレコメンデーションエンジンを搭載しています。これらの製品レコメンデーションを Adobe Experience Manager（AEM）ストアフロントに動的に挿入する方法について説明します。
+Adobe Commerce には、Adobe Sensei を利用したレコメンデーションエンジンが備わっています。これらの製品レコメンデーションを Adobe Experience Manager（AEM）ストアフロントに動的に挿入する方法について説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/340130/?learn=on)

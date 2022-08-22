@@ -1,7 +1,8 @@
 ---
 title: メタデータ - フラグメントのプロパティ
 description: AEMコンテンツフラグメントのメタデータプロパティの表示および編集方法について説明します。
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+exl-id: c1b90118-4501-4f93-bd2d-6552e0d17aee
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 85%

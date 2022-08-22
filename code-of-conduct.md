@@ -1,6 +1,8 @@
 ---
 source-git-commit: 2ca676ed1bd59651c00a83fd28945f6f042ca50a
-translation-type: tm+mt
+workflow-type: tm+mt
+source-wordcount: '431'
+ht-degree: 100%
 
 ---
 # アドビの行動規範

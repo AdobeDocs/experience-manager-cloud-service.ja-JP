@@ -4,8 +4,8 @@ description: AEM ヘッドレスデベロッパージャーニーのこの部分
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 source-git-commit: 270eb35023e34eed2cd17674372794c6c2cc7757
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1116'
+ht-degree: 100%
 
 ---
 

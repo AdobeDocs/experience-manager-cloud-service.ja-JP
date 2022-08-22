@@ -28,13 +28,13 @@ Dynamic Media 公開設定の指定は、次の場合にのみ使用できます
 
 Dynamic Media 公開設定は、経験豊富な web サイト開発者およびプログラマーが使用することを目的としています。Adobe Dynamic Media では、Adobe Dynamic Media、HTTP プロトコルの標準と規則、基本的な画像技術に精通しているユーザーが、これらの公開設定を変更することをお勧めします。
 
-Dynamic Media の公開設定ページでは、Adobe Dynamic Media サーバーから web サイトやアプリケーションにアセットを配信する方法を決定するデフォルト設定を指定します。 設定が指定されていない場合、Adobe Dynamic Media サーバーは、Dynamic Media 公開設定ページで設定されたデフォルト設定に従ってアセットを配信します。
+Dynamic Media の公開設定ページでは、Adobe Dynamic Media サーバーから web サイトやアプリケーションにアセットを配信する方法を決定するデフォルト設定を指定します。設定が指定されていない場合、Adobe Dynamic Media サーバーは、Dynamic Media 公開設定ページで設定されたデフォルト設定に従ってアセットを配信します。
 
 その他のオプションの設定タスクについては、[オプション - Dynamic Media 設定のセットアップと設定](/help/assets/dynamic-media/config-dm.md#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)も参照してください。
 
 >[!NOTE]
 >
->Adobe Experience Manager as a Cloud Service 上で Dynamic Media Classic から Dynamic Media にアップグレードしますか？Dynamic Media の[一般設定](/help/assets/dynamic-media/dm-general-settings.md)ページと公開設定ページには、Dynamic Media Classic アカウントから取得した値が事前に入力されています。ただし、一般設定ページの&#x200B;**[!UICONTROL デフォルトアップロードオプション]**&#x200B;領域に表示されるすべての値は例外です。これらの値はすでに Experience Manager に存在します。そのため、**[!UICONTROL デフォルトのアップロードオプション]**&#x200B;で行った変更は、5 つのタブのいずれかで、Experience Manager ユーザーインターフェイスを介して Dynamic Media に反映されます（Dynamic Media Classic ではありません）。[一般設定](/help/assets/dynamic-media/dm-general-settings.md)ページと公開設定ページのその他の設定と値はすべて、Experience Manager の Dynamic Media Classic と Dynamic Media の間で維持されます。
+>Adobe Experience Manager as a Cloud Service 上で Dynamic Media Classic から Dynamic Media にアップグレードしますか？Dynamic Media の[一般設定](/help/assets/dynamic-media/dm-general-settings.md)ページと公開設定ページには、Dynamic Media Classic アカウントから取得した値が事前に入力されています。ただし、一般設定ページの&#x200B;**[!UICONTROL デフォルトアップロードオプション]**&#x200B;領域に表示されるすべての値は例外です。これらの値はすでに Experience Manager に存在します。そのため、**[!UICONTROL デフォルトのアップロードオプション]**&#x200B;で行った変更は、5 つのタブのいずれかで、Experience Manager ユーザーインターフェイスを介して Dynamic Media に反映されます（Dynamic Media Classic ではありません）。[一般設定](/help/assets/dynamic-media/dm-general-settings.md)ページと公開設定ページのその他の設定と値は、Experience Manager の Dynamic Media Classic と Dynamic Media の間で維持されます。
 
 **Dynamic Media 公開設定の Image Server を設定するには：**
 
@@ -120,7 +120,7 @@ Image Server ページでは、Image Server から画像を配信するための
 これらの設定は、画像に使用する ICC カラープロファイルを決定します。
 
 **カラー変換レンダリングインテント**
-カラー変換レンダリングインテントを使用すると、作業プロファイルのデフォルトのレンダリングインテントを上書きして、ソースカラーの調整方法を決定できます。 次の場合に使用されます。
+カラー変換レンダリングインテントを使用すると、作業プロファイルのデフォルトのレンダリングインテントを上書きして、ソースカラーの調整方法を決定できます。次の場合に使用されます。
 
 1. デフォルトの ICC プロファイルの 1 つは、カラー変換のターゲットカラースペースです。
 1. 出力デバイス（プリンタまたはモニター）は、このプロファイルによって特徴付けられます。
@@ -136,13 +136,13 @@ Dynamic Media ビューアリファレンスガイドの [IccRenderIntent](https
 
 | 設定 | 特徴 |
 | --- | --- |
-| **[!UICONTROL CMYK のデフォルトカラースペース]** | CMYK データの作業プロファイルとして使用する ICC カラープロファイルの名前を指定します。 「**[!UICONTROL 指定なし]**」が選択されている場合、CMYK ソース画像が関係しているときは、この画像カタログのカラーマネジメントが無効になります。すべての CMYK 作業用スペースはデバイスに依存します。つまり、実際のインクと紙の組み合わせに基づいています。 アドビが提供する CMYK 作業用スペースは、標準的な商業印刷条件に基づいています。<br> Dynamic Media ビューアリファレンスガイドの [IccProfileCMYK](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=ja) パラメーターも参照してください。 |
+| **[!UICONTROL CMYK のデフォルトカラースペース]** | CMYK データの作業プロファイルとして使用する ICC カラープロファイルの名前を指定します。**[!UICONTROL 指定なし]**&#x200B;が選択されている場合、CMYK ソース画像が関係しているときは、この画像カタログのカラーマネジメントが無効になります。すべての CMYK 作業用スペースはデバイスに依存します。つまり、実際のインクと紙の組み合わせに基づいています。アドビが提供する CMYK 作業用スペースは、標準的な商業印刷条件に基づいています。<br> Dynamic Media ビューアリファレンスガイドの [IccProfileCMYK](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=ja) パラメーターも参照してください。 |
 | **[!UICONTROL グレースケールのデフォルトカラースペース]** | グレースケールデータの作業プロファイルとして使用する ICC カラープロファイルの名前を指定します。「**[!UICONTROL 指定なし]**」が選択されている場合、グレースケールのソース画像が関係しているときは、この画像カタログのカラーマネジメントが無効になります。<br>Dynamic Media ビューアリファレンスガイドの [IccProfileGray](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=ja) パラメーターも参照してください。 |
-| **[!UICONTROL RGB のデフォルトカラースペース]** | RGB データの作業プロファイルとして使用する ICC カラープロファイルの名前を指定します。「**[!UICONTROL 指定なし]**」が選択されている場合、RGB ソース画像が関係しているときは、この画像カタログのカラーマネジメントが無効になります。一般に、特定のデバイスのプロファイル（モニタープロファイルなど）ではなく、**[!UICONTROL Adobe RGB]** または **[!UICONTROL sRGB]** を選択するのが最適です。**[!UICONTROL sRGB]** は、web またはモバイルデバイス用の画像を準備する際に推奨されます。これは、web 上の画像の表示に使用される標準モニターのカラースペースを定義するからです。 **[!UICONTROL sRGB]** は、消費者レベルのデジタルカメラからの画像を操作する場合にも適しています。これらのカメラのほとんどは、デフォルトのカラースペースとして sRGB を使用しているためです。<br>Dynamic Media ビューアリファレンスガイドの [IccProfileRGB](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=ja) パラメーターも参照してください。 |
-| **[!UICONTROL カラー変換レンダリングの方法]** | **[!UICONTROL 知覚的]** - 色の値自体が変化する場合でも、人間の目に自然と感じられるように、色間の視覚的な関係を保つことを目的としています。 このインテントは、色域外の色が多い写真画像に適しています。 この設定は、日本の印刷業界にとっての標準的なレンダリングインテントです。 |
-|  | **[!UICONTROL 相対的な色域を維持]** - ソースカラースペースの極端なハイライトを目的のカラースペースのハイライトと比較し、それに応じてすべての色をシフトします。色域外の色は、出力先のカラースペースで最も近く再現可能な色にシフトします。 「相対的な色域を維持」では、「知覚的」よりも多くの元の色が画像に保持されます。 この設定は、北米およびヨーロッパでの印刷の標準的なレンダリングインテントです。 |
-|  | **[!UICONTROL 彩度]** - 画像内で色の精度を犠牲にして鮮やかな色を生成しようとします。 このレンダリングインテントは、グラフやチャートなどのビジネスグラフィックに適しています。色間の正確な関係よりも明るい彩度の色が重要です。 |
-|  | **[!UICONTROL 絶対的な色域を維持]** - 対象の色域内に含まれる色は変更されません。 色域外の色は切り取られます。目的の白点に対する色の拡大・縮小は行われません。 このインテントは、色間の関係を保つことを犠牲にして色の精度を維持することを目的とし、特定のデバイスの出力をシミュレートするための校正に適しています。 このインテントは、用紙の色が印刷色に与える影響をプレビューする場合に便利です。 |
+| **[!UICONTROL RGB のデフォルトカラースペース]** | RGB データの作業プロファイルとして使用する ICC カラープロファイルの名前を指定します。**[!UICONTROL 指定なし]**&#x200B;が選択されている場合、RGBソース画像が関係しているときは、この画像カタログのカラーマネジメントが無効になります。一般に、特定のデバイスのプロファイル（モニタープロファイルなど）ではなく、**[!UICONTROL Adobe RGB]** または **[!UICONTROL sRGB]** を選択するのが最適です。**[!UICONTROL sRGB]** は、web またはモバイルデバイス用の画像を準備する際に推奨されます。これは、web 上の画像の表示に使用される標準モニターのカラースペースを定義するからです。**[!UICONTROL sRGB]** は、消費者レベルのデジタルカメラからの画像を操作する場合にも適しています。これらのカメラのほとんどは、デフォルトのカラースペースとして sRGB を使用しているためです。<br>Dynamic Media ビューアリファレンスガイドの [IccProfileRGB](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=ja) パラメーターも参照してください。 |
+| **[!UICONTROL カラー変換レンダリングの方法]** | **[!UICONTROL 知覚的]** - 色の値自体が変化する場合でも、人間の目に自然と感じられるように、色間の視覚的な関係を保つことを目的としています。このインテントは、色域外の色が多い写真画像に適しています。この設定は、日本の印刷業界にとっての標準的なレンダリングインテントです。 |
+|  | **[!UICONTROL 相対的な色域を維持]** - ソースカラースペースの極端なハイライトを目的のカラースペースのハイライトと比較し、それに応じてすべての色をシフトします。色域外の色は、出力先のカラースペースで最も近く再現可能な色にシフトします。「相対的な色域を維持」では、「知覚的」よりも多くの元の色が画像に保持されます。この設定は、北米およびヨーロッパでの印刷の標準的なレンダリングインテントです。 |
+|  | **[!UICONTROL 彩度]** - 画像内で色の精度を犠牲にして鮮やかな色を生成しようとします。このレンダリングインテントは、グラフやチャートなどのビジネスグラフィックに適しています。色間の正確な関係よりも明るい彩度の色が重要です。 |
+|  | **[!UICONTROL 絶対的な色域を維持]** - 対象の色域内に含まれる色は変更されません。色域外の色は切り取られます。目的の白点に対する色の拡大・縮小は行われません。このインテントは、色間の関係を保つことを犠牲にして色の精度を維持することを目的とし、特定のデバイスの出力をシミュレートするための校正に適しています。このインテントは、用紙の色が印刷色に与える影響をプレビューする場合に便利です。 |
 
 ## アセットを公開する前にテストする {#test-assets-before-making-public}
 

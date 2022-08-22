@@ -4,8 +4,8 @@ description: Cloud Manager の UI では、セルフサービス方式でカス�
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '562'
+ht-degree: 100%
 
 ---
 

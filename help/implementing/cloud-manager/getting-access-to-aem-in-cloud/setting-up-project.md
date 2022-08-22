@@ -3,7 +3,7 @@ title: プロジェクトのセットアップ
 description: Maven を使用して AEM プロジェクトをビルドする方法と、独自のプロジェクトを作成する際に遵守する必要のある標準規格について説明します。
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 source-git-commit: 4b2ea300f61ad7d1218a984f7238365c5b170a8e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 100%
 

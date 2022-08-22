@@ -1,7 +1,8 @@
 ---
 title: コンテンツフラグメントの管理
 description: コンテンツフラグメントコンソールを使用してAEMコンテンツフラグメントを管理する方法を説明します。（ページオーサリング用、またはヘッドレスコンテンツの基礎として）。
-source-git-commit: 9de8becfd69ea2a65a847cba88468c94e2fdf484
+exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '2047'
 ht-degree: 63%
@@ -406,4 +407,3 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    必要なバージョンを選択した後、「**このバージョンに戻す**」アクションを選択します。
 
 * [あるバージョンと現在のバージョンを比較](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#comparing-fragment-versions)し、選択したバージョンに&#x200B;**戻す**&#x200B;ことができます。
-

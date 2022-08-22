@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
 workflow-type: tm+mt
-source-wordcount: '6351'
+source-wordcount: '6346'
 ht-degree: 99%
 
 ---
@@ -636,9 +636,9 @@ CRX リポジトリーにクライアントライブラリを追加した後は�
 1. 入力数値ボックスを選択し、![edit-rules](assets/edit-rules-icon.svg) をタップしてルールエディターを開きます。
 1. 「**[!UICONTROL ルールを作成]**」をタップします。フォームの出力フィールドに入力の自乗値を保存するルールを、次のオプションを使用して作成します。
 
-[![カスタム関数を使用したルールの作成](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
+   [![カスタム関数を利用したルールの作成](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
 
-1. 「**[!UICONTROL 完了]**」をタップします。 これでカスタム関数が追加されました。
+1. 「**[!UICONTROL 完了]**」をタップします。これでカスタム関数が追加されました。
 
 #### 関数の宣言でサポートされるタイプ {#function-declaration-supported-types}
 

@@ -4,8 +4,8 @@ description: カスタム UI テストは、カスタムアプリケーション
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 05f9e9de0d5dbcc332466dc964e2d01569d16110
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1338'
+ht-degree: 100%
 
 ---
 

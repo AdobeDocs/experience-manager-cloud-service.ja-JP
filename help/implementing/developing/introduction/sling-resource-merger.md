@@ -13,7 +13,7 @@ ht-degree: 100%
 
 ## 目的 {#purpose}
 
-Sling Resource Merger は、リソースのアクセスとマージのためのサービスを提供します. Sling Resource Merger は、次の両方に対して差分メカニズムを提供します。
+Sling Resource Merger は、リソースのアクセスとマージのためのサービスを提供します.Sling Resource Merger は、次の両方に対して差分メカニズムを提供します。
 
 * [検索パス](/help/implementing/developing/introduction/overlays.md#search-paths)を使用するリソースの&#x200B;**[オーバーレイ](/help/implementing/developing/introduction/overlays.md)**。
 

@@ -4,8 +4,8 @@ description: Cloud Manager で IP 許可リストのステータスを表示、�
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
 source-git-commit: 3080427529bb65e27721e05069012b33579fdd73
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '821'
+ht-degree: 100%
 
 ---
 

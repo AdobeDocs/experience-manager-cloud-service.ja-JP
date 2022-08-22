@@ -4,8 +4,8 @@ description: コードとコンテンツがクラウドに対応した後に移�
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1644'
+ht-degree: 100%
 
 ---
 

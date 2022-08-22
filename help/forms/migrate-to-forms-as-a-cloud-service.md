@@ -7,10 +7,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
+source-git-commit: 8e28cff5b964005278858b6c8dd8a0f5f8156eaa
 workflow-type: tm+mt
-source-wordcount: '1219'
-ht-degree: 100%
+source-wordcount: '1218'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 * このサービスは、OSGi 環境上の [!DNL AEM Forms] のみからコンテンツを移行するのに役立ちます。JEE 上の [!DNL AEM Forms] からクラウドサービス環境へのコンテンツの移行はサポートされていません。
 
-* （AEM 6.3 Forms、または AEM 6.4 Forms または AEM 6.5 Forms にアップグレードした旧バージョンの環境のみ）AEM 6.3 Forms または以前のバージョンで使用可能な、初期設定のテンプレートおよびテーマに基づくアダプティブフォームは、 [!DNL [!DNL AEM Forms]] as a Cloud Service ではサポートされていません。
+* (AEM 6.3 FormsまたはAEM 6.4 FormsまたはAEM 6.5 Formsにアップグレードした以前のバージョン環境の場合のみ ) AEM 6.3 Formsまたは以前のバージョンで使用できる標準のテンプレートとテーマに基づくアダプティブFormsは、ではサポートされません。 [!DNL AEM Forms] as a Cloud Service。
 
 ## 前提条件 {#prerequisites}
 

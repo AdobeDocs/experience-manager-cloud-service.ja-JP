@@ -4,7 +4,7 @@ description: ドキュメントジャーニーは、複雑で異なる機能を�
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 100%
 

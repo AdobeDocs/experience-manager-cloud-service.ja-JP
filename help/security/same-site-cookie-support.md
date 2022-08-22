@@ -4,8 +4,8 @@ description: Adobe Experience Manager as a Cloud Service に対する Same Site 
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
 source-git-commit: e1234e90e276a6274fc4dc9de0ae577219669ecf
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '287'
+ht-degree: 100%
 
 ---
 

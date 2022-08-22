@@ -1,10 +1,11 @@
 ---
 title: コンテンツフラグメント構造ツリー
 description: AEM のコンテンツフラグメントエディターの構造ツリー機能を使用すると、ヘッドレスコンテンツをより深く理解できます。
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+exl-id: 7e55d7b7-3a82-4665-b4aa-9b47094d91c9
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '112'
-ht-degree: 69%
+ht-degree: 83%
 
 ---
 

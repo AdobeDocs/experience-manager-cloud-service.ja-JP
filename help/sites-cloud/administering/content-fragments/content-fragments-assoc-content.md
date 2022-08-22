@@ -1,7 +1,8 @@
 ---
 title: 関連コンテンツ
 description: AEM関連のコンテンツ機能によって接続が提供されるので、フラグメントをコンテンツページに追加したときにアセットを任意で使用でき、ページオーサリングとヘッドレスコンテンツ配信の両方の柔軟性が向上します。
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+exl-id: eb524872-1403-42d1-b735-eaab382cf313
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 59%

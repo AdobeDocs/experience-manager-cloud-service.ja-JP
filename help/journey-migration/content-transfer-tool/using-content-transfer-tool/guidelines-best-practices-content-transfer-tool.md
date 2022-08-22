@@ -4,8 +4,8 @@ description: コンテンツ転送ツール使用のガイドラインとベス�
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 source-git-commit: 98b81d918d60722ddb3f1c7736bc5b3506e05f6f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1654'
+ht-degree: 100%
 
 ---
 

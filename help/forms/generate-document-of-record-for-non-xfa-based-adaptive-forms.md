@@ -4,8 +4,8 @@ description: ここでは、アダプティブフォーム向けのレコード�
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 source-git-commit: da30318fb965535ae12d09a8ef397431714f9109
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3658'
+ht-degree: 100%
 
 ---
 

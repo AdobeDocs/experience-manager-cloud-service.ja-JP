@@ -20,7 +20,7 @@ ht-degree: 100%
 
 # AEM CIF コアコンポーネントのカスタマイズ {#customize-cif-components}
 
-[CIF Venia プロジェクト](https://github.com/adobe/aem-cif-guides-venia)は、[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)を使用するための参照用コードベースです。このチュートリアルでは、[製品ティーザー](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser)コンポーネントをさらに拡張して、Adobe Commerce のカスタム属性を表示します。また、AEM と Adobe Commerce 間の GraphQL 統合、および CIF コアコンポーネントによって提供される拡張フックについても学習します。
+[CIF Venia プロジェクト](https://github.com/adobe/aem-cif-guides-venia)は、[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)を使用するための参照用コードベースです。このチュートリアルでは、[製品ティーザー](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser)コンポーネントをさらに拡張して、Adobe Commerce のカスタム属性を表示します。また、AEM と Adobe Commerce 間の GraphQL 統合および CIF コアコンポーネントによって提供される拡張フックについても学習します。
 
 >[!TIP]
 >
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ## 作成する内容
 
-Venia ブランドは最近、持続可能な資材を使用して一部の製品を製造し始めました。同社は、**エコフレンドリー**&#x200B;バッジを製品ティーザーの一部として表示したいと考えています。製品が&#x200B;**エコフレンドリー**&#x200B;な資材を使用しているかどうかを示す新しいカスタム属性が Adobe Commerce に作成されます。次に、このカスタム属性が GraphQL クエリの一部として追加され、特定の製品の製品ティーザーに表示されます。
+Venia ブランドは最近、持続可能な資材を使用して一部の製品を製造し始めました。同社は、**エコフレンドリー**&#x200B;バッジを製品ティーザーの一部として表示したいと考えています。製品が&#x200B;**エコフレンドリー**&#x200B;な資材を使用しているかどうかを示す新しいカスタム属性が Adobe Commerce で作成されます。次に、このカスタム属性が GraphQL クエリの一部として追加され、特定の製品の製品ティーザーに表示されます。
 
 ![エコフレンドリーバッジの最終実装](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
@@ -89,7 +89,7 @@ Venia プロジェクト[のクローンを作成して](https://github.com/adob
 
    ![製品ティーザー - デフォルトスタイル](../assets/customize-cif-components/product-teaser-default-style.png)
 
-## Adobe Commerce へのカスタム属性の追加 {#add-custom-attribute}
+## Adobe Commerce でのカスタム属性の追加 {#add-custom-attribute}
 
 AEM に表示された製品と製品データは Adobe Commerce に格納されます。次に、Adobe Commerce UI を使用して設定する製品属性の一部として、新しい&#x200B;**エコフレンドリー**&#x200B;属性を追加します。
 
@@ -124,16 +124,16 @@ AEM に表示された製品と製品データは Adobe Commerce に格納され
 
    >[!TIP]
    >
-   > 製品属性の管理について詳しくは、[Adobe Commerce ユーザーガイド](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html)を参照してください。
+   > 製品属性の管理の詳細については、[Adobe Commerce ユーザーガイド](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html)を参照してください。
 
-1. **システム**／**ツール**／**キャッシュ管理**&#x200B;に移動します。データスキーマが更新されたので、Adobe Commerce 内の一部のキャッシュタイプを無効にする必要があります。
+1. **システム**／**ツール**／**キャッシュ管理**&#x200B;に移動します。データスキーマはアップデートされたので、Adobe Commerce 内のキャッシュタイプの一部を無効にする必要があります。
 1. 「**設定**」の横のチェックボックスをオンにして、**更新**&#x200B;用にキャッシュタイプを送信します。
 
    ![構成キャッシュタイプの更新](../assets/customize-cif-components/refresh-configuration-cache-type.png)
 
    >[!TIP]
    >
-   > キャッシュ管理について詳しくは、[Adobe Commerce ユーザーガイド](https://docs.magento.com/user-guide/system/cache-management.html)を参照してください。
+   > キャッシュ管理の詳細については、[Adobe Commerce ユーザーガイド](https://docs.magento.com/user-guide/system/cache-management.html)を参照してください。
 
 ## GraphQL IDE を使用した属性の検証 {#use-graphql-ide}
 
@@ -182,7 +182,7 @@ AEM コードに立ち入る前に、GraphQL IDE を使用して [GraphQL の概
 
    >[!TIP]
    >
-   > Adobe Commerce GraphQL について詳しくは、[こちら](https://devdocs.magento.com/guides/v2.4/graphql/index.html)を参照してください。
+   > Adobe Commerce GraphQL に関する詳細なドキュメントは、[こちら](https://devdocs.magento.com/guides/v2.4/graphql/index.html)を参照してください。
 
 ## 製品ティーザーの Sling モデルのアップデート {#updating-sling-model-product-teaser}
 

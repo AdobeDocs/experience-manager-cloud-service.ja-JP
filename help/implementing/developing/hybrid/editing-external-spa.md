@@ -4,8 +4,8 @@ description: このドキュメントでは、スタンドアロン SPA を AEM 
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 source-git-commit: af7d8229ee080852f3c5b542db97b5c223357cf0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2401'
+ht-degree: 100%
 
 ---
 

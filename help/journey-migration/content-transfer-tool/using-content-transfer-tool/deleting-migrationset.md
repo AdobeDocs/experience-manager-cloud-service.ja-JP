@@ -4,8 +4,8 @@ description: コンテンツ転送ツールでの移行セットの削除
 exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
 source-git-commit: b10fab405ae3afad36c727c91dd52ad3b8cee5f6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '230'
+ht-degree: 100%
 
 ---
 

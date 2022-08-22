@@ -4,8 +4,8 @@ description: このページでは、Screens as a Cloud Service でディスプ�
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
 source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '668'
+ht-degree: 100%
 
 ---
 

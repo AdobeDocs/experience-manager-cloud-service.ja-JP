@@ -7,7 +7,7 @@ exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '3584'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -176,7 +176,7 @@ AEMaaCS 用のパッケージを管理する方法について詳しくは、デ
 
 ![「依存関係」タブ](assets/dependencies.png)
 
-| フィールド | 説明 | 例/詳細 |
+| フィールド | 説明 | 例／詳細 |
 |---|---|---|
 | テスト環境 | このパッケージのターゲットまたは互換性のある製品名およびバージョン。 | `AEMaaCS` |
 | 修正された問題 | このパッケージで修正されたバグの詳細をリストするテキストフィールド。1 行に 1 つのバグが表示されます。 | - |
@@ -187,7 +187,7 @@ AEMaaCS 用のパッケージを管理する方法について詳しくは、デ
 
 ![「詳細設定」タブ](assets/advanced-settings.png)
 
-| フィールド | 説明 | 例/詳細 |
+| フィールド | 説明 | 例／詳細 |
 |---|---|---|
 | 名前 | パッケージのプロバイダーの名前 | `WKND Media Group` |
 | URL | プロバイダーの URL | `https://wknd.site` |

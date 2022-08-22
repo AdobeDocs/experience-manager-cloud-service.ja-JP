@@ -28,7 +28,7 @@ AEM as a Cloud Serviceの Cloud Manager リリース 2022.8.0 のリリース日
 * 更新された UI エクスペリエンスは、 [環境ワークフローを追加します。](/help/implementing/cloud-manager/manage-environments.md)
 * [AEMプロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) Cloud Manager に含まれるは、バージョン 37 に更新されました。
 
-## バグの修正 {#bug-fixes}
+## バグ修正 {#bug-fixes}
 
 * Cloud Manager UI で New Relic ユーザーが作成または削除されなかった場合の問題を修正しました。
 * まれにリポジトリ作成の失敗が発生する場合もあり、回復性が向上しています。

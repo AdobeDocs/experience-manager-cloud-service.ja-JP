@@ -4,8 +4,8 @@ description: コードの品質と信頼性を確保するために、AEM as a C
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: f8d5b94d176dfbd5bcecf552f974dc77c5afe4e2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '898'
+ht-degree: 100%
 
 ---
 

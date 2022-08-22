@@ -4,8 +4,8 @@ description: 相違点と新機能 - Adobe Experience Manager（AEM）as a Cloud
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1904'
+ht-degree: 99%
 
 ---
 
