@@ -2,10 +2,10 @@
 title: URL の外部化
 description: Externalizer は、プログラムによってリソースパスを外部 URL および絶対 URL に変換できる OSGi サービスです。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: 28903c1cbadece9d0ef575cdc0f0d7fd32219538
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 100%
+source-wordcount: '660'
+ht-degree: 80%
 
 ---
 
@@ -19,9 +19,28 @@ AEM as a Cloud Service インスタンスには自分の外部向け URL がわ�
 
 ## Externalizer のデフォルトの動作とオーバーライド方法 {#default-behavior}
 
-Externalizer サービスには、標準で `author-p12345-e6789.adobeaemcloud.com` や `publish-p12345-e6789.adobeaemcloud.com` などの値があります。
+Externalizer サービスは、初期設定で、一部のドメイン識別子を、環境用に生成されたAEMサービス URL に一致する絶対 URL プレフィックス（例： ）にマッピングします `author https://author-p12345-e6789.adobeaemcloud.com` および `publish https://publish-p12345-e6789.adobeaemcloud.com`. これらの各デフォルトドメインのベース URL は、Cloud Manager で定義された環境変数から読み取られます。
 
-このような値を上書きするには、[AEM as a Cloud Service の OSGi の設定](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties)の説明に従って、Cloud Manager 環境変数を使用し、事前定義された `AEM_CDN_DOMAIN_AUTHOR` 変数と `AEM_CDN_DOMAIN_PUBLISH` 変数を設定します。
+参照用に、のデフォルトの OSGi 設定 `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` 効果的には次のようになります。
+
+```json
+{
+   "externalizer.domains": [
+      "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
+      "author $[env:AEM_EXTERNALIZER_AUTHOR;default=http://localhost:4502]",
+      "publish $[env:AEM_EXTERNALIZER_PUBLISH;default=http://localhost:4503]",
+      "preview $[env:AEM_EXTERNALIZER_PREVIEW;default=http://localhost:4503]"
+   ]
+}
+```
+
+>[!CAUTION]
+>
+>デフォルト `local`, `author`, `preview`、および `publish` OSGi 設定の Externalizer ドメインマッピングは、元の `$[env:...]` 上記の値。
+>
+>カスタムのデプロイ `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` ファイルをAEMにas a Cloud Serviceし、これらの標準のドメインマッピングを省略すると、予期しないアプリケーション動作が発生する可能性があります。
+
+を上書きするには、 `preview` および `publish` の値を使用する場合は、Cloud Manager の環境変数を使用します。詳しくは、この記事を参照してください。 [AEM as a Cloud Service用の OSGi の設定](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) および事前定義済みの `AEM_CDN_DOMAIN_PUBLISH` および `AEM_CDN_DOMAIN_PREVIEW` 変数。
 
 ## Externalizer サービスの設定 {#configuring-the-externalizer-service}
 
