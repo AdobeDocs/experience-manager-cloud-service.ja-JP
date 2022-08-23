@@ -2,7 +2,7 @@
 title: 関連する AEM コンテンツでの製品データのエンリッチメント
 description: マーケターが Adobe Experience Manager の関連コンテンツを使用して、製品データをエンリッチメントする方法について説明します。アセットや AEM のエクスペリエンスフラグメントなどのコンテンツをコマース製品に関連付けることができます。関連付けを行ったら、これらのコンテンツタイプを製品ページやカテゴリページ内のプレースホルダーに動的に挿入できます。これにより、画像やビデオなどの追加コンテンツを含んだ特定の製品ページのターゲットをマーケターが設定できる様々な可能性が開かれます。
 sub-product: Commerce
-version: cloud-service
+version: Cloud Service
 doc-type: feature-video
 activity: use
 audience: marketer
@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
-source-git-commit: aaac412148d1499476c99a15fd1eed45d29fc29b
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 100%

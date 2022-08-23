@@ -2,7 +2,7 @@
 title: 複数のカテゴリページと製品ページの作成
 description: ターゲティングされたマーケティングコンテンツを使用してカテゴリランディングページと製品詳細ページを充実させる方法について説明します。
 sub-product: Commerce
-version: cloud-service
+version: Cloud Service
 doc-type: feature-video
 activity: use
 audience: marketer
@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: 13ed4f82f441daf95b80b5d015b00ea49f8d1ed2
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 100%
