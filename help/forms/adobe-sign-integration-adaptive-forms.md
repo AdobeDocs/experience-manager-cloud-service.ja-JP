@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 28bf3e1c33def6c8a17b39a6bd9abca10faa1bd8
+source-git-commit: 72c53bf69c36c265d25d136c0d2887cac2fe98fc
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1028'
 ht-degree: 89%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 89%
 
    ![OAuth 設定](assets/oauthconfig_new.png)
 
-1. **[!UICONTROL Adobe Sign 設定を作成]**&#x200B;ページに戻ります。[**[!UICONTROL クライアント ID]** （アプリケーション ID とも呼ばれます）および **[!UICONTROL クライアント秘密鍵]**]. 以下を使用： [Adobe Signアプリケーションのクライアント ID およびクライアント秘密鍵](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) 前の手順で作成しました。
+1. **[!UICONTROL Adobe Sign 設定を作成]**&#x200B;ページに戻ります。内 **[!UICONTROL 設定]** タブで、[**[!UICONTROL クライアント ID]** （アプリケーション ID とも呼ばれます）および **[!UICONTROL クライアント秘密鍵]**]. 以下を使用： [Adobe Signアプリケーションのクライアント ID およびクライアント秘密鍵](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) 前の手順で作成しました。
 
 1. 「**[!UICONTROL 添付ファイルの Adobe Sign を有効にする]**」オプションを選択すると、アダプティブフォームに添付されているファイルが、署名用に送信された対応する [!DNL Adobe Sign] ドキュメントに添付されます。
 
