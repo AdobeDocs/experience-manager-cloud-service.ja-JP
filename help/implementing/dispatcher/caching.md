@@ -3,10 +3,10 @@ title: AEM as a Cloud Service でのキャッシュ
 description: 'AEM as a Cloud Service でのキャッシュ '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 5319eca105564843f26e7fb6d9cfd5aa065b8ca0
+source-git-commit: a624b4f1999238adae2f6a03c2169cb30de9f730
 workflow-type: tm+mt
-source-wordcount: '2683'
-ht-degree: 73%
+source-wordcount: '2591'
+ht-degree: 75%
 
 ---
 
@@ -197,10 +197,10 @@ AEM レイヤーは、デフォルトでは BLOB コンテンツをキャッシ�
 
 キャッシュされて&#x200B;**いない**&#x200B;リソースに対する HEAD リクエストを Adobe CDN で受信すると、リクエストは Dispatcher や AEM インスタンスによって GET リクエストとして変換および受信されます。応答がキャッシュ可能な場合、以降の HEAD リクエストは CDN から提供されます。レスポンスがキャッシュ可能でない場合、それ以降の HEAD リクエストは `Cache-Control` TTL に依存する期間、Dispatcher や AEM インスタンスに引き渡されます。
 
-### マーケティングキャンペーンパラメーター
+<!---### Marketing campaign parameters {#marketing-parameters}
 
-様々なマーケティングキャンペーンを追跡するために、マーケティングキャンペーンのパラメーターが Web サイトに追加されますが、Web サイトの外観に影響を与えることはほとんどありません。 Dispatcher では、Dispatcher のキャッシュに関する決定で、主に無視されるのはそのためです。 これは、 [ignoreUrlParams](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#ignoring-url-parameters).
-Adobeは、一般的に使用されるマーケティングクエリパラメーターのリストをファイルに保持しています `conf.dispatcher.d/cache/marketing_query_parameters.any`. Web サイトのマーケティングキャンペーンで使用される行のコメントを解除し、 `/ignoreUrlParams` セクションが有効なファームに含まれている。
+Marketing campaign parameters are added to a website to track different marketing campaigns but rarely have impact on how the website should look like. That's why in the dispatcher they can mostly be ignored for dispatcher caching decisions. This can be achieved by setting the [ignoreUrlParams](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters) parameter.
+Adobe maintains a list of commonly used marketing query parameters in the file `conf.dispatcher.d/cache/marketing_query_parameters.any`. Uncomment the lines that are used by the websites marketing campaigns and uncomment the `/ignoreUrlParams` section in the enabled farm.
 
 ```
 /ignoreUrlParams {
@@ -208,6 +208,7 @@ Adobeは、一般的に使用されるマーケティングクエリパラメー
  	$include "../cache/marketing_query_parameters.any"
 }
 ```
+-->
 
 ## Dispatcher キャッシュの無効化 {#disp}
 
