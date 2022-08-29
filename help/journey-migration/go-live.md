@@ -2,10 +2,10 @@
 title: 運用開始
 description: コードとコンテンツがクラウドに対応した後に移行を実行する方法について
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
+source-git-commit: 9ffde71af0c24c0592ef9ca008ddeaf9ce70599e
 workflow-type: tm+mt
-source-wordcount: '1644'
-ht-degree: 100%
+source-wordcount: '1718'
+ht-degree: 95%
 
 ---
 
@@ -144,6 +144,7 @@ ht-degree: 100%
          * [SSL 証明書の管理の概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          * [SSL 証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * カスタムドメイン名（DNS）の管理
+         * DNS カットオーバーで予期しない問題が発生しないようにするには、運用を開始して UAT テストを実行する前に、実稼動インスタンスをに接続するテストサブドメインを作成することをお勧めします。 したがって、ドメインが example.com の場合は、サブドメイン test.example.com を作成し、実稼動環境に適用できます。 ドメインの UAT テスト中に、適切なリンクリダイレクト、キャッシュ、Dispatcher 設定などを探す必要があります。
          * [カスタムドメイン名の概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          * [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          * [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
