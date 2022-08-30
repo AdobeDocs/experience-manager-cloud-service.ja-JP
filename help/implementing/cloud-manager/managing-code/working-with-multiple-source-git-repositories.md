@@ -2,7 +2,7 @@
 title: 複数のリポジトリーの使用
 description: Cloud Manager を操作する際に複数の Git リポジトリを管理する方法について説明します。
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
-source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
+source-git-commit: ea89dfd560d317e97179e74c297d1b93bb67f125
 workflow-type: tm+mt
 source-wordcount: '757'
 ht-degree: 41%
@@ -109,7 +109,7 @@ jobs:
       # Checkout the main project
       - name: Checkout main project
         run:
-          git clone -b ${MAIN_BRANCH} https://${{ secrets.PAT }}@github.com/${MAIN_REPOSITORY}.git main 
+          git clone -b ${MAIN_BRANCH} ${MAIN_REPOSITORY}.git main 
       # Move sub project
       - name: Move project to main project
         run: |
