@@ -2,10 +2,10 @@
 title: 相違点と新機能 - Adobe Experience Manager as a Cloud Service
 description: 相違点と新機能 - Adobe Experience Manager（AEM）as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: 575be022704e998e63162f19c37ece877efef627
 workflow-type: tm+mt
-source-wordcount: '1904'
-ht-degree: 99%
+source-wordcount: '1903'
+ht-degree: 92%
 
 ---
 
@@ -67,26 +67,27 @@ AEM as a Cloud Service には次の機能が追加されました。
 
 ## AEM のアップデート {#aem-updates}
 
->[!NOTE]
->詳しくは、[AEM バージョンのアップデート](/help/implementing/deploying/aem-version-updates.md)を参照してください。
-
-AEM as a Cloud Service では、継続的統合および継続的配信（CI／CD）を使用して、プロジェクトが確実に最新の AEM バージョンで稼働できるようになっています。つまり、ユーザーに対するサービスが中断することなく、実稼働インスタンスとステージングインスタンスが AEM の最新バージョンに更新されます。
+AEM as a Cloud Serviceでは、継続的統合と継続的配信 (CI/CD) を使用して、プロジェクトが確実に最新のAEMバージョンになるようになりました。 つまり、実稼動インスタンスとステージングインスタンスは、ユーザーに対するサービスが中断することなく、最新のAEMバージョンに更新されます。
 
 >[!NOTE]
-> 実稼働環境へのアップデートに失敗した場合、Cloud Manager はステージング環境を自動的にロールバックします。これは、アップデート完了後も、ステージング環境と実稼働環境の両方が確実に同じ AEM バージョンに基づくようにするために、自動的に行われます。
+>
+>実稼動環境への更新が失敗した場合、Cloud Manager はステージング環境を自動的にロールバックします。 これは、更新が完了した後で、ステージング環境と実稼動環境の両方が同じAEMバージョンでおこなわれるように、自動的におこなわれます。
 
-AEM バージョンのアップデートには、次の 2 種類があります。
+AEMバージョンのアップデートには、次の 2 種類があります。
 
-* **AEM プッシュアップデート**
+* **AEMメンテナンスの更新**
 
    * 毎日リリース可能です。
-   * 主に、最新のバグ修正やセキュリティの更新などのメンテナンス作業です。
-
-      変更が定期的に適用されるので影響は増分的で、サービスへの影響が少なくなります。
+   * 最新のバグ修正やセキュリティ更新など、主にメンテナンス目的です。
+   * 変更は定期的に適用されるので、影響は最小限に抑えます。
 
 * **新機能アップデート**
 
    * 予測可能な月次スケジュールでリリースされます。
+
+>[!TIP]
+>
+>詳しくは、[AEM バージョンのアップデート](/help/implementing/deploying/aem-version-updates.md)を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 
