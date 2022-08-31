@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 リリースのリリースノート。'
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 のリリースノート。"'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 100%
+source-wordcount: '1197'
+ht-degree: 99%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 100%
 
 ### [!DNL Forms] のベータ版機能 {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=ja) を使用すると、テンプレートと XML データを組み合わせて、様々な形式のドキュメントを生成できます。このサービスでは、同期モードとバッチモードでドキュメントを生成できます。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) を使用すると、テンプレートと XML データを組み合わせて、様々な形式のドキュメントを生成できます。このサービスでは、同期モードとバッチモードでドキュメントを生成できます。
 
 ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てに電子メールを送信します。
 

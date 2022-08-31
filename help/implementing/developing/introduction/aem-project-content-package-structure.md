@@ -2,10 +2,10 @@
 title: AEM プロジェクトの構造
 description: Adobe Experience Manager as a Cloud Service へのデプロイメント用にパッケージ構造を定義する方法について説明します。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 758e3df9e11b5728c3df6a83baefe6409bef67f9
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '2930'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -144,12 +144,12 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
 
 パッケージは、宣言済みのパッケージタイプでマークされる必要があります。パッケージタイプは、パッケージの目的とデプロイメントを明確にするのに役立ちます。
 
-+ コンテナパッケージでは、`packageType` を `container` に設定する必要があります。コンテナパッケージには通常のノードを含めることはできません。OSGi バンドル、設定、サブパッケージのみを使用できます。AEM as a Cloud Service のコンテナは、 [インストールフック](http://jackrabbit.apache.org/filevault/installhooks.html) を使用できません。
++ コンテナパッケージでは、`packageType` を `container` に設定する必要があります。コンテナパッケージには通常のノードを含めることはできません。OSGi バンドル、設定、サブパッケージのみを使用できます。AEM as a Cloud Service のコンテナは、 [インストールフック](https://jackrabbit.apache.org/filevault/installhooks.html) を使用できません。
 + コード（不変）パッケージは、`packageType` を `application` に設定する必要があります。
 + コンテンツ（可変）パッケージは、`packageType` を `content` に設定する必要があります。
 
 
-詳しくは、[Apache Jackrabbit FileVault - Package Maven プラグインのドキュメント](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType)、[Apache Jackrabbit パッケージタイプ](http://jackrabbit.apache.org/filevault/packagetypes.html)、以下の [FileVault Maven 設定スニペット](#marking-packages-for-deployment-by-adoube-cloud-manager) を参照してください。
+詳しくは、[Apache Jackrabbit FileVault - Package Maven プラグインのドキュメント](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType)、[Apache Jackrabbit パッケージタイプ](https://jackrabbit.apache.org/filevault/packagetypes.html)、以下の [FileVault Maven 設定スニペット](#marking-packages-for-deployment-by-adoube-cloud-manager) を参照してください。
 
 >[!TIP]
 >
@@ -625,4 +625,4 @@ Maven ビルドの前にターゲットディレクトリをクリーンアッ�
 ## その他のリソース {#additional-resources}
 
 + [Maven を使用したパッケージの管理](/help/implementing/developing/tools/maven-plugin.md)
-+ [FileVault コンテンツパッケージ Maven プラグイン](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [FileVault コンテンツパッケージ Maven プラグイン](https://jackrabbit.apache.org/filevault-package-maven-plugin/)

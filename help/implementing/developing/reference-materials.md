@@ -2,7 +2,7 @@
 title: API リファレンス資料
 description: AEM には、デジタルエクスペリエンスプロジェクトに活用できる広範で強力な API が用意されています。
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 100%
@@ -34,7 +34,7 @@ AEM は、その他の多数のオープンソース API をベースにして�
 | API | 説明 |
 |---|---|
 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | Java コンテンツリポジトリー（JCR）を使用してコンテンツを保存および管理する Web フレームワーク |
-| [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 最新のワールドクラス Web サイトの基盤として使用する、スケーラブルでパフォーマンスの高い階層型 Java コンテンツリポジトリー（JCR）の実装 |
+| [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 最新のワールドクラス Web サイトの基盤として使用する、スケーラブルでパフォーマンスの高い階層型 Java コンテンツリポジトリー（JCR）の実装 |
 | [Java コンテンツリポジトリー](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) | JCR バージョン 2.0 の仕様 |
 | [Apache Felix](https://felix.apache.org) | OSGi（Open Services Gateway イニシアチブ）フレームワークおよびサービスプラットフォームの実装 |
 
@@ -46,8 +46,8 @@ AEM は、優先順に次の 4 つの主要な Java API セットに基づいて
 |---|---|---|
 | 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 製品の抽象概念（ページ、アセット、ワークフローなど）。 |
 | 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | REST およびリソースベースの抽象概念（リソース、値マップ、HTTP リクエストなど）。 |
-| 3 | [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | データとコンテンツの抽象概念（ノード、プロパティ、セッションなど）。 |
-| 4 | [Apache Felix](https://felix.apache.org／) | OSGi アプリケーションコンテナの抽象概念（サービスや（OSGi）コンポーネントなど）。 |
+| 3 | [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | データとコンテンツの抽象概念（ノード、プロパティ、セッションなど）。 |
+| 4 | [Apache Felix](https://felix.apache.org/) | OSGi アプリケーションコンテナの抽象概念（サービスや（OSGi）コンポーネントなど）。 |
 
 AEM が API を提供する場合は、それを Sling、JCR、OSGi よりも優先します。AEM が API を提供しない場合は、Sling を JCR や OSGi よりも優先します。
 

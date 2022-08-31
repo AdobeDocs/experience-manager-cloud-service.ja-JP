@@ -2,10 +2,10 @@
 title: AEM コネクタの実装
 description: AEM コネクタの実装
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '968'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ AEM は最先端の Web エクスペリエンス管理ソリューションで�
 
 Adobe Experience Manager as a Cloud Service の[ドキュメント](../overview/introduction.md)では、AEM での開発に関する有益なインサイトを提供します。また、以下に示す特定の技術トピックおよびリファレンスは、AEM コネクタの実装時に役に立つ可能性があります。
 
-* アドビコンサルティングサービス（ACS）の [AEM サンプル](http://adobe-consulting-services.github.io/acs-aem-samples/)：AEM 開発者の参考になるコメント付きコードを参照できます
+* アドビコンサルティングサービス（ACS）の [AEM サンプル](https://adobe-consulting-services.github.io/acs-aem-samples/)：AEM 開発者の参考になるコメント付きコードを参照できます
 * この記事の「一般的な統合パターン」の節で示した様々なドキュメントリンク
 
 コミュニティリソース
@@ -45,9 +45,9 @@ Adobe Experience Manager as a Cloud Service の[ドキュメント](../overview/
 
 上記の静的ドキュメントに加えて、アドビおよび AEM コミュニティでは、コネクタの市場投入に役立つ以下のリソースを提供しています。
 
-* アドビコミュニティの [AEM フォーラム](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)は、同業者が質問をしたり質問に答えたりする活発なサイトです。
+* アドビコミュニティの [AEM フォーラム](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)は、同業者が質問をしたり質問に答えたりする活発なサイトです。
 * アドビのその他の技術リソースは、個々のパートナーレベルで利用できます。詳しくは、[Adobe Exchange プログラム](https://partners.adobe.com/exchangeprogram/experiencecloud)を参照してください。
-* 組織が実装の支援を希望する場合は、アドビの [Professional Services](http://www.adobe.com/jp/marketing-cloud/service-support/professional-consulting-training.html) チームへの依頼を検討するか、[ソリューションパートナーファインダー](https://solutionpartners.adobe.com/home/partnerFinder.html)でアドビの世界中のパートナーのリストを確認してください。
+* 組織が実装の支援を希望する場合は、アドビの [Professional Services](https://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) チームへの依頼を検討するか、[ソリューションパートナーファインダー](https://solutionpartners.adobe.com/home/partnerFinder.html)でアドビの世界中のパートナーのリストを確認してください。
 
 パッケージ構成ルール
 -----------------------

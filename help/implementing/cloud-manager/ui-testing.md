@@ -2,10 +2,10 @@
 title: UI テスト
 description: カスタム UI テストは、カスタムアプリケーションの UI テストを作成して自動的に実行できるオプション機能です
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 05f9e9de0d5dbcc332466dc964e2d01569d16110
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1338'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -79,7 +79,7 @@ Docker ビルドコンテキストを生成するには、次の処理を行う 
 * `Dockerfile`と、テストを含んだ Docker イメージの作成に必要なその他のすべてのファイルを格納したアーカイブを作成する。
 * アーカイブに `ui-test-docker-context` 分類子をタグ付けする。
 
-これを行うには、[Maven アセンブリプラグイン](http://maven.apache.org/plugins/maven-assembly-plugin/)を設定して Docker ビルドコンテキストアーカイブを作成し、それに適切な分類子を割り当てるのが最も簡単です。
+これを行うには、[Maven アセンブリプラグイン](https://maven.apache.org/plugins/maven-assembly-plugin/)を設定して Docker ビルドコンテキストアーカイブを作成し、それに適切な分類子を割り当てるのが最も簡単です。
 
 様々なテクノロジーとフレームワークを使用して UI テストを作成できますが、この節では、プロジェクトが次のようにレイアウトされていることを前提としています。
 

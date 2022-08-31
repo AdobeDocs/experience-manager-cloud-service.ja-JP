@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 リリースのリリースノート。'
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 のリリースノート."'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -63,7 +63,7 @@ AEM Commerce が Cloud Service で利用できるようになりました。
 
 [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)のリリース 2.11.0 は、AEM Sites の一部として使用できるようになり、以下を含みます。
 
-* 新しい [PDF ビューアコンポーネント](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)の導入。
+* 新しい [PDF ビューアコンポーネント](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html)の導入。
 
 * コアコンポーネントの Accelerated Mobile Pages（AMP）
 サポートが利用できるようになりました。Google のモバイル検索結果からサイトに入るときにページトランジションを瞬時に入れるので、より迅速な顧客体験を作成でき、ユーザーエンゲージメントと SEO が向上します。

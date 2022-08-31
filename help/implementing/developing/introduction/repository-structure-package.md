@@ -2,7 +2,7 @@
 title: 'AEM プロジェクトリポジトリの構造パッケージ  '
 description: Adobe Experience Manager as a Cloud Service の Maven プロジェクトには、リポジトリ構造サブパッケージ定義が必要です。この定義の目的は、プロジェクトのコードサブパッケージがデプロイされる JCR リポジトリルートを定義することです。
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 100%
@@ -37,7 +37,7 @@ Maven プロジェクトのリポジトリ構造パッケージを作成する�
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <!-- ====================================================================== -->
@@ -182,4 +182,4 @@ Filter root's ancestor '/apps/some/path' is not covered by any of the specified 
 
 ## その他のリソース
 
-+ [FileVault コンテンツパッケージ Maven プラグイン](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [FileVault コンテンツパッケージ Maven プラグイン](https://jackrabbit.apache.org/filevault-package-maven-plugin/)

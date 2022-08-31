@@ -3,7 +3,7 @@ title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 4fcb2ff39f0634cfcdab5500b03441f6db0b474d
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '3358'
 ht-degree: 97%
@@ -67,7 +67,7 @@ AEM as a Cloud Service アプリケーション用に作成されたコンテン
 
 コードベースが既にある場合は、AEM ドキュメントに記載されているリポジトリー再構築の演習を完了して、以前 /etc の配下にあったコンテンツが適切な場所に確実に移動されるようにすることが重要です。
 
-これらのコードパッケージには、[インストールフック](http://jackrabbit.apache.org/filevault/installhooks.html)など、いくつかの追加の制限が適用されます。
+これらのコードパッケージには、[インストールフック](https://jackrabbit.apache.org/filevault/installhooks.html)など、いくつかの追加の制限が適用されます。
 
 ## OSGi 設定 {#osgi-configuration}
 
@@ -104,7 +104,7 @@ Cloud Manager で可変リポジトリーにデプロイされるコンテンツ
    * フォルダー（追加、変更、削除）
    * 編集可能なテンプレート（追加、変更、削除）
    * コンテキスト対応の設定（`/conf` 配下のあらゆるもの）（追加、変更、削除）
-   * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）：インストールフックについては、 [Jackrabbit FileVault のドキュメント](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) を参照してください。AEM as a Cloud Service では現在、FileVault バージョン 3.4.0 を使用しています（インストールフックの使用は管理者ユーザー、システムユーザー、管理者グループのメンバーに限定されています）。
+   * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）：インストールフックについては、 [Jackrabbit FileVault のドキュメント](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) を参照してください。AEM as a Cloud Service では現在、FileVault バージョン 3.4.0 を使用しています（インストールフックの使用は管理者ユーザー、システムユーザー、管理者グループのメンバーに限定されています）。
 
 `/apps` 配下の install.author フォルダーまたは install.publish フォルダーにパッケージを埋め込むことで、可変コンテンツのインストールをオーサーまたはパブリッシュのみに制限することができます。この分離を反映した再構築は AEM 6.5 で行われました。推奨されるプロジェクト再構築の詳細については、 [AEM 6.5 のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja) を参照してください。
 

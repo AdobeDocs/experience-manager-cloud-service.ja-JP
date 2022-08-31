@@ -2,7 +2,7 @@
 title: プロジェクトのセットアップ
 description: Maven を使用して AEM プロジェクトをビルドする方法と、独自のプロジェクトを作成する際に遵守する必要のある標準規格について説明します。
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: 4b2ea300f61ad7d1218a984f7238365c5b170a8e
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 100%
@@ -137,8 +137,8 @@ Cloud Manager のビルドプロセスが開始したとき、以下が行われ
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
-   <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+   <settings xmlns="https://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="https://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
        <servers>
            <server>
                <id>myco-repository</id>

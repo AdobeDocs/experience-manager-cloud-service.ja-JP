@@ -2,7 +2,7 @@
 title: コードのデプロイ
 description: AEM as a Cloud Service の Cloud Manager パイプラインを使用してコードをデプロイする方法を説明します。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: c6e930f62cc5039e11f2067ea31882c72be18774
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 100%
@@ -150,20 +150,20 @@ Cloud Service のすべてのデプロイメントでは、ダウンタイムを
 
 ### 新しい実行のトリガー
 
-再実行をトリガーするには、実稼動デプロイメントステップの状態に表示されている HAL リンク &lt;（<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>）> に対して PUT リクエストを行う必要があります。このリンクが存在する場合は、そのステップから実行を再開できます。存在しない場合は、そのステップから実行を再開することはできません。最初のリリースでは、このリンクは実稼動デプロイメントステップにのみ存在しますが、今後のリリースでは、他のステップからのパイプラインの開始がサポートされる可能性があります。例：
+再実行をトリガーするには、実稼動デプロイメントステップの状態に表示されている HAL リンク &lt;（<https://ns.adobe.com/adobecloud/rel/pipeline/reExecute>）> に対して PUT リクエストを行う必要があります。このリンクが存在する場合は、そのステップから実行を再開できます。存在しない場合は、そのステップから実行を再開することはできません。最初のリリースでは、このリンクは実稼動デプロイメントステップにのみ存在しますが、今後のリリースでは、他のステップからのパイプラインの開始がサポートされる可能性があります。例：
 
 ```Javascript
  {
   "_links": {
-    "http://ns.adobe.com/adobecloud/rel/pipeline/logs": {
+    "https://ns.adobe.com/adobecloud/rel/pipeline/logs": {
       "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/logs",
       "templated": false
     },
-    "http://ns.adobe.com/adobecloud/rel/pipeline/reExecute": {
+    "https://ns.adobe.com/adobecloud/rel/pipeline/reExecute": {
       "href": "/api/program/4/pipeline/1/execution?stepId=2983530",
       "templated": false
     },
-    "http://ns.adobe.com/adobecloud/rel/pipeline/metrics": {
+    "https://ns.adobe.com/adobecloud/rel/pipeline/metrics": {
       "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/metrics",
       "templated": false
     },

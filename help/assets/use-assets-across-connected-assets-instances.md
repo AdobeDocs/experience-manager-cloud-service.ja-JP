@@ -6,10 +6,10 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: ec4b5b391cb3ba2d13c67a6da30eea59674cf072
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '3763'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -162,7 +162,7 @@ Connected Assets で [!DNL Dynamic Media] を使用するには、以下の手�
    * ローカルの [!DNL Sites] の「**[!UICONTROL アセットを公開]**」オプションで、「**[!UICONTROL 選択的公開]**」を選択します。「**[!UICONTROL すべてのコンテンツを同期]**」は選択しないでください。
    * リモート [!DNL Assets] デプロイメントの [!UICONTROL  Dynamic Media 同期モード]で、「**[!UICONTROL デフォルトで有効]**」を選択します。
 
-1. 画像コアコンポーネントで[[!DNL Dynamic Media] サポートを有効にします。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ja#dynamic-media)この機能を使用すると、ローカルの [!DNL Sites] デプロイメント上の web ページの作成者が [!DNL Dynamic Media] 画像を使用する場合、デフォルトの[画像コンポーネント](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html)に [!DNL Dynamic Media] 画像を表示できます。
+1. 画像コアコンポーネントで[[!DNL Dynamic Media] サポートを有効にします。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ja#dynamic-media)この機能を使用すると、ローカルの [!DNL Sites] デプロイメント上の web ページの作成者が [!DNL Dynamic Media] 画像を使用する場合、デフォルトの[画像コンポーネント](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html)に [!DNL Dynamic Media] 画像を表示できます。
 
 ## リモートアセットの使用 {#use-remote-assets}
 

@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 description: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 100%
@@ -229,7 +229,7 @@ Cloud Manager の特定の機能の可用性を管理するユーザーの役割
    ![ACL3](/help/security/assets/ims22.png)
 
 
-1. 適切なプロファイルに追加したら、ユーザーインターフェイスの右上隅を使用して [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) を経由して、Cloud Manager の各テナントにアクセスできるようになります。
+1. 適切なプロファイルに追加したら、ユーザーインターフェイスの右上隅を使用して [Adobe Experience Cloud](https://my.cloudmanager.adobe.com) を経由して、Cloud Manager の各テナントにアクセスできるようになります。
 
 
 ### AEM as a Cloud Service のインスタンスへのアクセス {#accessing-instance-cloud-service}

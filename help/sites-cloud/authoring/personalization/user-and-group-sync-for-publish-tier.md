@@ -2,10 +2,10 @@
 title: '登録、ログイン、ユーザープロファイル '
 description: AEM as a Cloud Service の登録、ログイン、ユーザーデータおよびグループ同期について説明します
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: c49a70b4048acc4e925c69b7ebbedbf8779bbbc0
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -59,7 +59,7 @@ Web アプリケーションは、多くの場合、Web サイトへの登録用
 顧客は独自のカスタムコンポーネントを作成できます。詳しくは、以下を参照してください。
 
 * [Sling 認証フレームワーク](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html)
-* あるいは、[AEM コミュニティエキスパートセッション](http://bit.ly/ATACEFeb15)にログインについて質問してみてください。
+* あるいは、[AEM コミュニティエキスパートセッション](https://bit.ly/ATACEFeb15)にログインについて質問してみてください。
 
 ### ID プロバイダーとの統合 {#integration-with-an-idp}
 

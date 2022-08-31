@@ -2,10 +2,10 @@
 title: Adobe Target へのエクスペリエンスフラグメントの書き出し
 description: Adobe Target へのエクスペリエンスフラグメントの書き出し
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 8e13f671ada67e4e22b66094ad23bf5a0508ccba
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '2259'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -51,7 +51,7 @@ AEM エクスペリエンスフラグメントを Adobe Target に書き出す�
 >
 >詳しくは、以下も参照してください。
 >
->* [Adobe Target Developers](http://developers.adobetarget.com/)
+>* [Adobe Target Developers](https://developers.adobetarget.com/)
 >* [コアコンポーネントの概要](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
 >* [Adobe Target - Adobe Experience Manager（AEM）エクスペリエンスフラグメントの使用方法](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=ja)
 >* [AEM 6.5 - 手動での Adobe Target との統合の設定 - Target クラウド設定の作成](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html?lang=ja#creating-a-target-cloud-configuration)
@@ -208,6 +208,7 @@ Adobe Target からセグメントを同期するように、クラウド設定�
       >* セキュリティが改善されています。
       >* 単一ページアプリケーションの実装オプションが改善されています。
       >* target.js に含まれていたコンポーネントが AT.js にも含まれているので、target.js への呼び出しがなくなりました。
+
       >
       >**クライアントライブラリ**&#x200B;ドロップダウンメニューでは、AT.js または mbox.js を選択できます。
 
