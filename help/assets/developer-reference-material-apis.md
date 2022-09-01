@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 57abdf0198e646719bbb818e2b70d772579ba548
+source-git-commit: 153cc482047c3235b0f62bb94051c884b4cf29d4
 workflow-type: tm+mt
-source-wordcount: '1811'
-ht-degree: 99%
+source-wordcount: '1869'
+ht-degree: 96%
 
 ---
 
@@ -84,6 +84,8 @@ ht-degree: 99%
 
 >[!NOTE]
 この方法を実装するクライアントコードを確認するには、オープンソースの [aem-upload ライブラリ](https://github.com/adobe/aem-upload)を参照してください。
+[!IMPORTANT]
+特定の状況では、Cloud Service内のストレージの一貫性が最終的に維持されるので、変更がExperience Managerに対するリクエスト間で完全に反映されない場合があります。 これにより、必要なフォルダー作成が反映されないので、アップロード呼び出しを開始または完了するための応答が 404 になります。 クライアントは 404 応答を期待し、バックオフ戦略を使用して再試行を実装してそれらを処理する必要があります。
 
 ### アップロードの開始 {#initiate-upload}
 
