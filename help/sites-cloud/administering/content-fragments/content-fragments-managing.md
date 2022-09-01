@@ -2,10 +2,10 @@
 title: コンテンツフラグメントの管理
 description: コンテンツフラグメントコンソールを使用してAEMコンテンツフラグメントを管理する方法を説明します。（ページオーサリング用、またはヘッドレスコンテンツの基礎として）。
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 28a3e8fe6ca16d20f5b4264e386154e95b55dc77
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 63%
+source-wordcount: '1915'
+ht-degree: 67%
 
 ---
 
@@ -36,6 +36,20 @@ ht-degree: 63%
 >[!NOTE]
 >
 >コンテンツフラグメントは、 **Assets**. 主に **コンテンツフラグメント** コンソールでは管理できませんが、 **Assets** コンソール。
+
+## コンテンツフラグメントコンソール {#content-fragments-console}
+
+コンテンツフラグメントコンソールを使用すると、フラグメントおよび関連タスクに直接アクセスできます。 詳しくは、以下を参照してください。
+
+* [コンテンツフラグメントコンソールの基本構造と処理](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#basic-structure-handling-content-fragments-console)
+
+* [コンテンツフラグメントに関して提供される情報](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
+
+* [コンテンツフラグメントコンソールでのコンテンツフラグメントのアクション](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
+
+* [コンテンツフラグメントコンソールで使用可能な列のカスタマイズ](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-available-columns)
+
+* [コンテンツフラグメントコンソールでの検索とフィルタリング](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
 ## コンテンツフラグメントの作成 {#creating-content-fragments}
 
@@ -79,61 +93,6 @@ ht-degree: 63%
 コンテンツフラグメントは、公開後（ただし変更が公開される前）に編集されました。
 * **非公開**
 コンテンツフラグメントが非公開になりました。
-
-## コンテンツフラグメントコンソールでのコンテンツフラグメントのアクション {#actions-content-fragment-console}
-
-内 **コンテンツフラグメント** コンソールコンテンツフラグメントに対しては、ツールバーから様々なアクションを使用できます。
-
-![コンソールのアクション](assets/cfm-managing-cf-console-01.png)
-
-* **アセットで開く**
-* **作成**
-* この **参照元** 列には、そのフラグメントのすべての親参照を表示するための直接リンクも表示されます。参照するコンテンツフラグメント、エクスペリエンスフラグメント、ページを含める。
-* フォルダー名の上にマウスポインターを置くと、JCR パスが表示されます。
-
-フラグメントを選択したら、次の適切なアクションをすべて使用できます。
-
-![コンソールのアクション — フラグメントが選択されています](assets/cfm-managing-cf-console-selected-01.png)
-
-* **次を開きます：**
-* **公開** ( および **非公開**)
-* **コピー**
-* **移動**
-* **名前を変更**
-* **削除**
-
->[!NOTE]
->
->公開、非公開、削除、移動、名前変更、コピー、非同期ジョブのトリガーなどのアクション。 そのジョブの進行状況は、AEM非同期ジョブ UI で監視できます。
-
-## コンテンツフラグメントコンソールでの表示のカスタマイズ {#viewing-content-fragment-console}
-
-コンソールには、現在のフォルダーとすべての子フォルダーにあるコンテンツフラグメントに関する情報が表示されます。
-
-表示される情報は、 **テーブルをカスタマイズ** アイコン：
-
-![テーブルのカスタマイズアイコン](assets/cfm-managing-cf-console-customize-table-icon.png)
-
-これにより、 **テーブルをカスタマイズ** 使用可能な列を選択/選択解除できるダイアログ
-
-![テーブルをカスタマイズ](assets/cfm-managing-cf-console-customize-table.png)
-
-## コンテンツフラグメントコンソールでの検索とフィルタリング {#search-filter-content-fragment-console}
-
-コンソールに表示されるコンテンツフラグメントを検索およびフィルタリングできます。
-
-以下の操作を実行できます。
-
-* 必要なフォルダーを選択
-* を使用して、 **フィルターを表示** アイコンをクリックし、同時に検索ボックスを使用します。
-
-![テーブルのカスタマイズアイコン](assets/cfm-managing-cf-console-filter-search-01.png)
-
-次の中から、様々なフィルターを使用できます。
-
-![フィルターと検索](assets/cfm-managing-cf-console-filter-search-02.png)
-
-フィルターと検索の組み合わせを保存して、後で参照することもできます。
 
 ## フラグメントエディターを開く {#opening-the-fragment-editor}
 
@@ -285,7 +244,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 コンテンツフラグメントをパブリッシュ環境で使用するには、公開する必要があります。これは、標準の Assets 機能を使用しておこなわれます
 
-* 次の **公開** 」オプション ( [コンテンツフラグメントコンソール](#actions-content-fragment-console)
+* 次の **公開** 」オプション ( [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
    * **今すぐ**  — 確認後、フラグメントは直ちに公開されます
    * **スケジュール**  — フラグメントを公開する日時を選択できます
 
@@ -326,6 +285,14 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
    >[!CAUTION]
    フラグメントが既に別のフラグメントから参照されている場合、またはページから参照されている場合は、警告メッセージが表示され、 **削除を強制**. フラグメントはコンテンツフラグメントコンポーネントと一緒に、すべてのコンテンツページから削除されます。
+
+## フラグメントの親参照の検索 {#parent-references-fragment}
+
+親参照の詳細は、 **参照** 列 [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+
+## フラグメントの言語コピーの検索 {#language-copies-fragment}
+
+言語コピーの詳細は、 **言語** 列 [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
 
 ## コンテンツフラグメントのタイムライン {#timeline-for-content-fragments}
 

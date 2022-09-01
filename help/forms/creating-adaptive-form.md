@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 5e8f70da6de27bf59e4a89e196a016820245a068
+source-git-commit: bcd9f3cfe6c22a6db51a9e6f96576bb8cdde7d0c
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 37%
+source-wordcount: '1217'
+ht-degree: 30%
 
 ---
 
@@ -45,13 +45,14 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 アダプティブフォームを作成するには、以下が必要です。
 
-* **アダプティブフォームテンプレート**:テンプレートは基本的な構造を提供し、アダプティブフォームの外観（レイアウトとスタイル）を定義します。 これには、特定のプロパティやコンテンツ構造を有するフォーマット済みのコンポーネントが含まれます。また、テーマと送信アクションを定義するオプションも提供されます。 テーマは、ルックアンドフィールと送信アクションを定義し、アダプティブフォームの送信時に実行するアクションを定義します。 例えば、収集したデータをデータソースに送信する場合などです。 以下が可能です。 [新しいテンプレートを作成](template-editor.md) または既存のテンプレートをインポートします。 また、 [最新のアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.) を参照してください。
-* **アダプティブフォームのテーマ**:テーマには、コンポーネントとパネルのスタイル設定の詳細が含まれます。 スタイルには、背景色、状態色、透明度、配置、サイズなどのプロパティが含まれます。テーマを適用すると、指定したスタイルが対応するコンポーネントに反映されます。[新しいテーマを作成](themes.md)したり、[既存のテーマを読み込んだり](import-export-forms-templates.md#uploading-a-theme)、[サンプルテーマ](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:2779f80e-16ba-4cd1-a96f-8e2b53f3be25)をダウンロードして読み込んだりできます。また、 [最新のアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.) を参照してください。
+* **アダプティブフォームテンプレート**:テンプレートは基本的な構造を提供し、アダプティブフォームの外観（レイアウトとスタイル）を定義します。 これには、特定のプロパティやコンテンツ構造を有するフォーマット済みのコンポーネントが含まれます。また、テーマと送信アクションを定義するオプションも提供されます。 テーマは、ルックアンドフィールと送信アクションを定義し、アダプティブフォームの送信時に実行するアクションを定義します。 例えば、収集したデータをデータソースに送信する場合などです。 Cloud Service は、次の 2 種類のテンプレートをサポートしています。
+
+   * **編集可能テンプレート**:以下が可能です。 [新しい](template-editor.md) または [既存の編集可能テンプレートのインポート](migrate-to-forms-as-a-cloud-service.md). また、 [最新のアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.) 編集可能なテンプレートのサンプルを取得します。
+   * **静的テンプレート**:これらは従来のテンプレートで、Adobe Managed Services(AMS) およびオンプレミスのAEM Formsインストール (AEM 6.5 Forms以前 ) から移行する場合にのみお勧めします。 静的テンプレートに対する既存の投資を引き続き活用できます。 新しいアダプティブフォームを作成する場合は、編集可能なテンプレートを使用することをお勧めします。
+
+* **アダプティブフォームのテーマ**:テーマには、コンポーネントとパネルのスタイル設定の詳細が含まれます。 スタイルには、背景色、状態色、透明度、配置、サイズなどのプロパティが含まれます。テーマを適用すると、指定したスタイルが対応するコンポーネントに反映されます。以下が可能です。 [新しいテーマを作成する](themes.md) または [既存のテーマを読み込む](import-export-forms-templates.md#uploading-a-theme). また、 [最新のアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project) を参照してください。
+
 * **権限**:ユーザーの追加先 [!DNL forms-users] アダプティブフォームを作成する権限を付与するために使用します。 フォーム専用のユーザーグループの詳細なリストについては、[グループと権限](forms-groups-privileges-tasks.md)を参照してください。
-
-## アダプティブフォームの作成 {#strong-create-an-adaptive-form-strong}
-
-以下の手順を実行して、アダプティブフォームを作成します。
 
 1. [!DNL Experience Manager Forms] オーサーインスタンスにアクセスします。Cloud インスタンスまたはローカル開発インスタンスの場合があります。
 
@@ -61,25 +62,38 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 1. タップ **[!UICONTROL 作成]**  > **[!UICONTROL アダプティブForms]**. ウィザードが開きます。
 1. 「ソース」タブで、テンプレートを選択します。
-   * テンプレートを選択すると、テンプレートで指定されたテーマと送信アクションが自動選択され、 **[!UICONTROL 作成]** 」ボタンが有効になっている。 次に進むことができます： **[!UICONTROL スタイル]** または **[!UICONTROL 送信]** タブを使用して、別のテーマや送信アクションを選択します。
-   * 選択したテンプレートにテーマが指定されていない場合、「作成」ボタンは無効のままです。 次に進むことができます： **[!UICONTROL スタイル]** タブをクリックして、テーマを手動で選択します。
+
+   * 編集可能テンプレートを選択すると、テンプレートで指定されたテーマと送信アクションが自動選択され、 **[!UICONTROL 作成]** 」ボタンが有効になっている。 次に進むことができます： **[!UICONTROL スタイル]** または **[!UICONTROL 送信]** タブを使用して、別のテーマや送信アクションを選択します。 選択した編集可能テンプレートでテーマが指定されていない場合、作成ボタンは無効のままです。 次に進むことができます： **[!UICONTROL スタイル]** タブをクリックして、テーマを手動で選択します。
+   * 静的テンプレートを選択すると、データ、スタイル、送信、配信、プレビューの各オプションは使用できなくなります。 新しいアダプティブフォームを作成する場合は、編集可能なテンプレートを使用することをお勧めします。
+
 1. 「スタイル」タブで、テーマを選択します。
    * 選択したテンプレートでテーマを指定すると、ウィザードでテーマが自動的に選択されます。 「スタイル」タブから別のテーマを選択することもできます。
    * 選択したテンプレートにテーマが指定されていない場合は、「スタイル」タブを使用してテーマを選択できます。 この **[!UICONTROL 作成]** ボタンは、テーマが選択された後にのみ有効になります。
 1. （オプション）「Data」タブで、データモデルを選択します。
    * **フォームデータモデル**:A [フォームデータモデル](data-integration.md) を使用すると、異なるデータソースのエンティティやサービスをアダプティブフォームに統合できます。 作成するアダプティブフォームで、複数のデータソースからのデータの取得および書き込みが必要な場合は、「フォームデータモデル」を選択します。
    * **JSON スキーマ**: [JSON スキーマ](adaptive-form-json-schema-form-model.md) は、組織のバックエンドシステムによってデータが生成または消費される構造を表します。 アダプティブフォームにスキーマを関連付けて、そのスキーマの要素を使用することにより、アダプティブフォームに動的なコンテンツを追加できます。スキーマの要素は、アダプティブFormsのオーサリング時に、コンテンツブラウザーの「データモデルオブジェクト」タブで使用でき、すべてのフィールドも新しく作成されたアダプティブフォームに追加されます。
+
+   デフォルトでは、データモデルのすべてのフィールドが選択されます。 アダプティブフォームを作成すると、選択したすべてのデータモデルフィールドが、対応するアダプティブフォームのコンポーネントに変換されます。 ウィザードには、アダプティブフォームに含める必要のあるフィールドのみを選択するチェックボックスが表示されます。
+
+   <!-- 
+   
+   If your JSON schema contains a fragment, the fragment is considered a single unit. You can select or deselect a complete fragment and all the fields of the fragment are selected or deselected accordingly. 
+   
+   -->
+
 1. 「送信」タブで、送信アクションを選択します。
+
    * テンプレートを選択すると、テンプレートで指定された送信アクションが自動選択されます。 「送信」タブから、別の送信アクションを選択できます。 この **[!UICONTROL 送信]** 「 」タブには、使用可能なすべての送信アクションが表示されます。
+
    * 選択したテンプレートで送信アクションが指定されていない場合は、 **[!UICONTROL 送信]** 送信アクションを選択するタブ
 
 1. （オプション）「配信」タブで、アダプティブフォームの発行日または非公開日を指定できます。
 
-1. 「**[!UICONTROL 作成]**」をタップします。アダプティブフォームのタイトル、名前、保存場所を指定するためのダイアログが表示されます。
+1. 「**[!UICONTROL 作成]**」をタップします。アダプティブフォームを保存するためのタイトル、名前、場所を指定するダイアログが表示されます。
 
-   * **[!UICONTROL タイトル：]**&#x200B;フォームの表示名を指定します。タイトルを指定すると、[!DNL Experience Manager Forms] ユーザーインターフェイス内のフォームを特定しやすくなります。
+   * **[!UICONTROL タイトル]** フォームの表示名を指定します。 タイトルを指定すると、[!DNL Experience Manager Forms] ユーザーインターフェイス内のフォームを特定しやすくなります。
    * **[!UICONTROL 名前：]**&#x200B;フォームの名前を指定します。指定された名前のノードがリポジトリーに作成されます。タイトルを入力し始めると、名前フィールドの値が自動的に生成されます。候補として入力された値は変更可能です。「ドキュメント名」フィールドには、英数字、ハイフン、アンダースコアのみを使用できます。無効な入力は、すべてハイフンに置き換えられます。
-   * **[!UICONTROL パス：]** アダプティブフォームを保存する場所を指定します。 アダプティブフォームは次の場所に直接保存できます。 `/content/dam/formsanddocuments` または、 `/content/dam/formsanddocuments/adaptiveforms` をクリックしてアダプティブフォームを保存します。 フォルダーをパスで使用する前に、必ずフォルダーを作成してください。 この **[!UICONTROL パス：]** 「 」フィールドでは、フォルダーが自動的に作成されません。
+   * **[!UICONTROL パス：]** アダプティブフォームを保存する場所を指定します。 アダプティブフォームは、次の場所に直接保存できます： `/content/dam/formsanddocuments` または、 `/content/dam/formsanddocuments/adaptiveforms` をクリックしてアダプティブフォームを保存します。 フォルダーをパスで使用する前に、必ずフォルダーを作成してください。 この **[!UICONTROL パス：]** 「 」フィールドでは、フォルダーが自動的に作成されません。
 
 1. 「**[!UICONTROL 作成]**」をタップします。アダプティブフォームが作成され、アダプティブFormsエディターで開きます。 エディターに、テンプレートで使用可能なコンテンツが表示されます。 新しく作成されたフォームを必要に応じてカスタマイズするためのサイドバーも表示されます。
 
