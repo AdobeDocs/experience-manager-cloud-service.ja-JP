@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 向けアクセシブルコンテンツの作成（WCAG 2.1 準拠）
 description: AEM as a Cloud Service を使用すると、障碍のあるユーザーが Web コンテンツにアクセスして利用できるようになります。
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '14050'
+source-wordcount: '14054'
 ht-degree: 99%
 
 ---
@@ -564,7 +564,7 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 >
 >* [Px to Em Calculator - Omni](https://www.omnicalculator.com/conversion/px-to-em)
 >* [Font size conversion: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
->* [PMtoEM.com: PX to EM conversion made simple](https://pxtoem.com)
+>* [PMtoEM.com: PX to EM conversion made simple](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
 
 
 コントラスト比を確認するには、[Paciello Group の Color Contrast Analyser](https://www.paciellogroup.com/resources/contrast-analyser.html) や [WebAIM の Color Contrast Checker](https://www.webaim.org/resources/contrastchecker/) などの色コントラストツールを使用してください。これらのツールを使用すると、色のペアを確認し、コントラストの問題を報告できます。

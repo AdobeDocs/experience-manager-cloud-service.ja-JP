@@ -2,10 +2,10 @@
 title: すべてをまとめる方法 - AEM ヘッドレスのアプリとコンテンツ
 description: AEM ヘッドレスデベロッパージャーニーのこの部分では、コンテンツフラグメント、GraphQL 呼び出し、REST API 呼び出し、アプリケーションを含む AEM プロジェクトを実行し、運用開始に備える方法を説明します。
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: 270eb35023e34eed2cd17674372794c6c2cc7757
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 100%
+source-wordcount: '1069'
+ht-degree: 78%
 
 ---
 
@@ -40,11 +40,11 @@ AEM SDK は、カスタムコードのビルドとデプロイに使用されま
 
 AEM SDK とは異なり、AEM **ヘッドレス SDK** は、クライアントが HTTP 経由で AEM ヘッドレス API を素早く簡単に操作するために使用できるライブラリのセットです。
 
-AEM ヘッドレス SDK について詳しくは、[こちらのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/how-to/aem-headless-sdk.html?lang=ja)を参照してください。
+AEM ヘッドレス SDK について詳しくは、[こちらのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html)を参照してください。
 
 ## その他の開発ツール {#additional-development-tools}
 
-AEM SDK に加えて、コードとコンテンツのローカル開発およびテストを容易にする下記の追加ツールが必要になります。
+AEM SDK の他に、コードとコンテンツをローカルで開発およびテストするための追加のツールが必要です。
 
 * Java™
 * Git
@@ -54,15 +54,15 @@ AEM SDK に加えて、コードとコンテンツのローカル開発および
 
 AEM は Java™ アプリケーションなので、AEM as a Cloud Service の開発をサポートするには、Java™ と Java™ SDK をインストールする必要があります。
 
-ソース管理および変更内容の Cloud Manager へのチェックインと実稼動インスタンスへのデプロイには、Git を使用します。
+Git は、ソース管理の管理や、Cloud Manager への変更のチェックイン、実稼動インスタンスへのデプロイに使用するものです。
 
 AEM Maven プロジェクトアーキタイプから生成されたプロジェクトをビルドするために、AEM では Apache Maven を使用します。主要な IDE はすべて Maven との統合をサポートしています。
 
-Node.js は、AEM プロジェクトの `ui.frontend` サブプロジェクトのフロントエンドアセットを操作するために使用される JavaScript ランタイム環境です。Node.js は npm と一緒に配布され、JavaScript の依存関係の管理に使用される事実上の Node.js パッケージマネージャーとなっています。
+Node.js は、AEM プロジェクトの `ui.frontend` サブプロジェクトのフロントエンドアセットを操作するために使用される JavaScript ランタイム環境です。Node.js は npm と共に配布され、JavaScript の依存関係の管理に使用される事実上の Node.js Package Manager です。
 
 ## AEM システムのコンポーネントの概要 {#components-of-an-aem-system-at-a-glance}
 
-次に、AEM 環境の構成要素を見てみましょう。
+次に、AEM環境の構成要素を見てみましょう。
 
 完全な AEM 環境は、オーサー、パブリッシュ、ディスパッチャーで構成されます。運用開始前にコードとコンテンツをプレビューしやすくするために、これらと同じコンポーネントがローカル開発ランタイムで使用可能です。
 
@@ -74,9 +74,9 @@ Node.js は、AEM プロジェクトの `ui.frontend` サブプロジェクト�
 
 ## ローカル開発ワークフロー {#the-local-development-workflow}
 
-ローカル開発プロジェクトは Apache Maven をベースに構築され、ソース管理に Git を使用します。プロジェクトを更新するために、開発者は、Eclipse、Visual Studio Code、IntelliJ など、好みの統合開発環境を使用できます。
+ローカル開発プロジェクトは Apache Maven をベースに構築され、ソース管理に Git を使用します。プロジェクトを更新するために、開発者は、Eclipse、Visual Studio Code、IntelliJ など、望ましい統合開発環境を使用できます。
 
-ヘッドレスアプリケーションによって取り込まれるコードまたはコンテンツのアップデートをテストするには、そのアップデートをローカルの AEM ランタイム（AEM オーサーサービスおよびパブリッシュサービスのローカルインスタンスを含む）にデプロイする必要があります。
+ヘッドレスアプリケーションによって取り込まれるコードやコンテンツの更新をテストするには、AEMオーサーサービスとパブリッシュサービスのローカルインスタンスを含む、ローカルAEMランタイムに更新をデプロイする必要があります。
 
 アップデートが最も重要な場所でアップデートをテストすることが大切なので、ローカル AEM ランタイムの各コンポーネントの違いに注意してください。例えば、オーサーインスタンスでコンテンツのアップデートをテストしたり、パブリッシュインスタンスで新しいコードをテストしたりします。
 
@@ -84,19 +84,19 @@ Node.js は、AEM プロジェクトの `ui.frontend` サブプロジェクト�
 
 ## ローカル開発環境でのコードとコンテンツのローカルプレビュー {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
-AEM ヘッドレスプロジェクトのローンチの準備をするには、プロジェクトの構成要素がすべて正常に機能していることを確認する必要があります。
+AEMヘッドレスプロジェクトを起動用に準備するには、プロジェクトの構成要素がすべて正常に機能していることを確認する必要があります。
 
 それには、コード、コンテンツ、設定をすべて 1 つにまとめ、ローカル開発環境でテストして運用開始準備を行う必要があります。
 
 ローカル開発環境は、次の 3 つの主な領域で構成されます。
 
-1. AEM プロジェクト - AEM 開発者の作業対象となるすべてのカスタムコード、設定およびコンテンツが含まれます。
-1. ローカル AEM ランタイム - AEM プロジェクトからコードをデプロイする際に使用される、AEM オーサーサービスおよびパブリッシュサービスのローカルバージョン。
+1. AEMプロジェクト — このプロジェクトには、AEM開発者が作業するすべてのカスタムコード、設定およびコンテンツが含まれています
+1. Local AEM Runtime - AEMプロジェクトからコードをデプロイする際に使用される、AEMオーサーサービスおよびパブリッシュサービスのローカルバージョン。
 1. ローカル Dispatcher ランタイム - Dispatcher モジュールを含んだ Apache httpd Web サーバーのローカルバージョン。
 
 ローカル開発環境をセットアップしたら、静的な Node サーバーをローカルにデプロイすることで、React アプリに対するコンテンツ提供をシミュレートできます。
 
-ローカル開発環境のセットアップと、コンテンツのプレビューに必要なすべての依存関係について詳しくは、[実稼働デプロイメントのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=ja#prerequisites)を参照してください。
+<!-- THIS TOPIC IS 404. IT DOES NOT APPEAR IN THE TOC OR ANYWHERE ELSE To get a more in-depth look at setting up a local development environment and all dependencies needed for content preview, see [Production Deployment documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/headless-tutorial/graphql/multi-step/production-deployment.html). -->
 
 ## 次のステップ {#whats-next}
 
@@ -105,7 +105,7 @@ AEM ヘッドレスプロジェクトのローンチの準備をするには、�
 * AEM 開発ツールの詳細
 * ローカル開発ワークフローについて
 
-次に、「[実際に AEM ヘッドレスプロジェクトをライブにする方法](/help/journey-headless/developer/go-live.md)」のドキュメントを確認して、AEM ヘッドレスジャーニーを続けてください。
+次にドキュメントを確認して、AEMヘッドレスジャーニーを続行する [ヘッドレスアプリケーションの運用開始方法](/help/journey-headless/developer/go-live.md) AEMヘッドレスプロジェクトを実際に運用する場所
 
 ## その他のリソース {#additional-resources}
 

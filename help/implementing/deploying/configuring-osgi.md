@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service の OSGi の設定
 description: 'シークレット値と環境固有の値を使用する OSGi 設定 '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 69fa35f55617746bfd9e8bdf6e1a0490c341ae90
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '3240'
-ht-degree: 87%
+source-wordcount: '3216'
+ht-degree: 85%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 87%
 
 [OSGi](https://www.osgi.org/) は Adobe Experience Manager（AEM）のテクノロジースタックの基本要素です。AEM とその設定の複合バンドルを制御するために使用されます。
 
-OSGi で提供されている標準化されたプリミティブにより、サイズが小さく再利用やコラボレーションが可能なコンポーネントからアプリケーションを構築できます。これらのコンポーネントからアプリケーションを作成し、デプロイすることができます。これにより、OSGi バンドルの管理が容易になり、バンドルを個別に停止、インストール、開始できます。相互依存関係は自動的に処理されます。各 OSGi コンポーネントは、様々なバンドルの 1 つに含まれています。詳しくは、[OSGi の仕様](https://www.osgi.org/Specifications/HomePage)を参照してください。
+OSGi で提供されている標準化されたプリミティブにより、サイズが小さく再利用やコラボレーションが可能なコンポーネントからアプリケーションを構築できます。これらのコンポーネントからアプリケーションを作成し、デプロイすることができます。これにより、OSGi バンドルの管理が容易になり、バンドルを個別に停止、インストール、開始できます。相互依存関係は自動的に処理されます。各 OSGi コンポーネントは、様々なバンドルの 1 つに含まれています。詳しくは、[OSGi の仕様](https://help.eclipse.org/latest/index.jsp)を参照してください。
 
 AEM コードプロジェクトに含まれる設定ファイルを使用して、OSGi コンポーネントの設定を管理できます。
 
@@ -122,7 +122,7 @@ Adobe Experience Manager as a Cloud Service で使用できる OSGi 設定値は
    }
    ```
 
-   1 つの OSGi 設定ファイルで、これらの設定値タイプの任意の組み合わせを併用できます。次に例を示します。
+   1 つの OSGi 設定ファイルで、これらの設定値タイプの任意の組み合わせを組み合わせて使用できます。 次に例を示します。
 
    ```json
    {
@@ -174,7 +174,7 @@ Adobe Experience Manager as a Cloud Service では、セキュリティ上の理
 JSON 形式の OSGi 設定ファイルは、AEM プロジェクト内から直接手動で書き込むことができます。これは、よく知られている OSGi コンポーネント、特に、設定を定義した同じ開発者により設計および開発されたカスタム OSGi コンポーネントに対して、OSGi 設定をすばやく作成する方法です。この方法は、同じ OSGi コンポーネントの設定を様々な実行モードフォルダーにコピー／貼り付け、更新する場合にも使用できます。
 
 1. IDE で `ui.apps` プロジェクトを開き、新しい OSGi 設定が有効となる実行モードをターゲットに設定する config フォルダー（`/apps/.../config.<runmode>`）を探すか作成します。
-1. この config フォルダーに、新しい `<PID>.cfg.json` ファイルを作成します。PID は OSGi コンポーネントの永続 ID です。通常は、OSGi コンポーネント実装の完全なクラス名になります。次に例を示します。
+1. この config フォルダーに、 `<PID>.cfg.json` ファイル。 PID は OSGi コンポーネントの永続 ID です。通常は、OSGi コンポーネント実装の完全なクラス名になります。次に例を示します。
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 OSGi 設定ファクトリのファイル名には `<factoryPID>-<name>.cfg.json` 命名規則を使用します。
 1. 新しい `.cfg.json` ファイルを開き、[JSON OSGi 設定形式](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)に従って、OSGi プロパティと値のペアのキー／値の組み合わせを定義します。
@@ -202,7 +202,7 @@ AEM SDK Quickstart Jar の AEM Web コンソールは、OSGi コンポーネン�
 1. JSON 形式の OSGi 設定は、「シリアライズされた設定プロパティ」セクションに表示されます。
    ![OSGi インストーラー設定プリンター](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. IDE で `ui.apps` プロジェクトを開き、新しい OSGi 設定が有効となる実行モードをターゲットに設定する config フォルダー（`/apps/.../config.<runmode>`）を探すか作成します。
-1. この config フォルダーに、新しい `<PID>.cfg.json` ファイルを作成します。PID は、手順 5 と同じ値です。
+1. この config フォルダーに、 `<PID>.cfg.json` ファイル。 PID は、手順 5 と同じ値です。
 1. 手順 10 のシリアライズされた設定プロパティを `.cfg.json` ファイルに貼り付けます。
 1. 変更を新しい `.cfg.json` ファイルに保存します。
 1. 新しい追加 OSGi 構成ファイルを Git にコミットします。
@@ -303,7 +303,7 @@ OSGi プロパティで、オーサーとパブリッシュで異なる値が必
 * [実行モードの解決](#runmode-resolution)の節で説明したように、`config.author` と `config.publish` の別個の OSGi フォルダーを使用する必要があります。
 * 独立した変数名を作成する場合、次の 2 つのオプションを使用できます。
    * 1 つ目のオプション（推奨）:すべての OSGi フォルダー ( `config.author` および `config.publish`) を宣言して異なる値を定義する場合は、同じ変数名を使用します。 例：
-      `$[env:ENV_VAR_NAME;default=<value>]`：デフォルトは、その層（オーサーまたはパブリッシュ）のデフォルト値です。環境変数を [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) またはクライアントを使用して設定する場合は、この [API リファレンスドキュメント](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)で説明されているように、「service」パラメーターを使用して層を区別します。「service」パラメーターは、変数の値を適切な OSGi 層にバインドします。 「author」、「publish」、「preview」のいずれかです。
+      `$[env:ENV_VAR_NAME;default=<value>]`：デフォルトは、その層（オーサーまたはパブリッシュ）のデフォルト値です。環境変数を [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) またはクライアントを使用して設定する場合は、この [API リファレンスドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/)で説明されているように、「service」パラメーターを使用して層を区別します。「service」パラメーターは、変数の値を適切な OSGi 層にバインドします。 「author」、「publish」、「preview」のいずれかです。
    * 2 つ目のオプション：`author_<samevariablename>` や `publish_<samevariablename>` などのプレフィックスを使用して個別の変数を宣言します。
 
 ### 設定例 {#configuration-examples}
@@ -480,7 +480,7 @@ config.dev
 
 ## プロパティ設定用の Cloud Manager API 形式 {#cloud-manager-api-format-for-setting-properties}
 
-API の設定方法については、[こちらのページ](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md)を参照してください。
+API の設定方法については、[こちらのページ](https://developer.adobe.com/experience-cloud/cloud-manager/docs/)を参照してください。
 >[!NOTE]
 >
 >使用している Cloud Manager API に「デプロイメントマネージャー - Cloud Service」というロールが割り当てられていることを確認します。その他のロールでは、必ずしも以下のすべてのコマンドを実行できるわけではありません。
@@ -511,7 +511,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 >[!NOTE]
 >デフォルトの変数は API 経由ではなく、OSGi プロパティ自体に設定されます。
 >
->詳しくは、[こちらのページ](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables)を参照してください。
+>詳しくは、[こちらのページ](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/)を参照してください。
 
 ### API を使用した値の取得 {#getting-values-via-api}
 
@@ -519,7 +519,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 GET /program/{programId}/environment/{environmentId}/variables
 ```
 
-詳しくは、[こちらのページ](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/getEnvironmentVariables)を参照してください。
+詳しくは、[こちらのページ](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/)を参照してください。
 
 ### API を使用した値の削除 {#deleting-values-via-api}
 
@@ -529,7 +529,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 変数を削除するには、空の値を含めます。
 
-詳しくは、[こちらのページ](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables)を参照してください。
+詳しくは、[こちらのページ](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/)を参照してください。
 
 ### コマンドラインを使用した値の取得 {#getting-values-via-cli}
 

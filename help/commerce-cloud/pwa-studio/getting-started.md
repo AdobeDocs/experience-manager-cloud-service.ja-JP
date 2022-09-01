@@ -5,9 +5,9 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '766'
 ht-degree: 100%
 
 ---
@@ -62,10 +62,10 @@ PWA Studio を AEM の GraphQL エンドポイントに接続するには、[AEM
 
    ナビゲーションコンポーネントのカスタマイズについて詳しくは、[addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) と、PWA Studio の[拡張フレームワーク](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/)に関するドキュメントを参照してください。
 
-1. Apollo Client は、<https://pwa-studio/endpoint.js> に AEM GraphQL エンドポイントがあることを想定します。エンドポイントをこの場所にマッピングするには、PWA Studio アプリケーションの UPWARD 設定を次のようにカスタマイズする必要があります。
+1. Apollo Client は、`<https://pwa-studio/endpoint.js>` に AEM GraphQL エンドポイントがあることを想定します。エンドポイントをこの場所にマッピングするには、PWA Studio アプリケーションの UPWARD 設定を次のようにカスタマイズする必要があります。
 a. AEM_CFM_GRAPHQL 変数を pwa-root/.env に追加し、AEM コンテンツフラグメントの GraphQL エンドポイントを指すように変数を調整します。
 
-   例：AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>
+   例：`AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 
    b. UPWARD 設定にプロキシリゾルバーを追加します。UPWARD 設定は例えば次のようになります。
 
@@ -96,13 +96,13 @@ AEM コンテンツフラグメントのドキュメントに従って、AEM プ
 
    allowedorigin プロパティに PWA アプリケーションの完全なホスト名を設定します。
 
-   例：<https://pwa-studio-test-vflyn.local.pwadev:9366>
+   例：`<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Apache Sling Referrer Filter（org.apache.sling.security.impl.ReferrerFilter.cfg.json）
 
    allow.hosts プロパティに PWA アプリケーションのホスト名を設定します。
 
-   例：pwa-studio-test-vflyn.local.pwadev
+   例：`pwa-studio-test-vflyn.local.pwadev`
 
 両方の設定の完全な例については、<https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config> を参照してください。
 

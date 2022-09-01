@@ -2,10 +2,10 @@
 title: カスタムフォントを使用
 description: カスタムフォントを使用
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
 source-wordcount: '456'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ Forms as a Cloud Service 通信を使用すると、XDP テンプレート、XDP
 
 ## PDF ドキュメントの動作
 
-PDF ドキュメントに [フォントを埋め込む](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) ことができます。フォントを埋め込むと、PDF ドキュメントはすべてのプラットフォームで同じように表示されます（見えます）。一貫したルックアンドフィールを確保するために、埋め込みフォントが使用されます。フォントが埋め込まれていない場合、フォントのレンダリングは、Acrobat や Acrobat Reader などの PDF ビューアクライアントのレンダリング設定によって決まります。フォントがクライアントマシンで使用可能な場合、PDF は指定されたフォントを使用します。使用可能でない場合、PDF はデフォルトのフォールバックフォントでレンダリングされます。
+PDF ドキュメントに [フォントを埋め込む](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutputOptions) ことができます。フォントを埋め込むと、PDF ドキュメントはすべてのプラットフォームで同じように表示されます（見えます）。一貫したルックアンドフィールを確保するために、埋め込みフォントが使用されます。フォントが埋め込まれていない場合、フォントのレンダリングは、Acrobat や Acrobat Reader などの PDF ビューアクライアントのレンダリング設定によって決まります。フォントがクライアントマシンで使用可能な場合、PDF は指定されたフォントを使用します。使用可能でない場合、PDF はデフォルトのフォールバックフォントでレンダリングされます。
 
 ## Forms as a Cloud Service 環境へのカスタムフォントの追加 {#custom-fonts-cloud-service}
 

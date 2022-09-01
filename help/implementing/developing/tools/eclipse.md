@@ -2,10 +2,10 @@
 title: 'AEM Developer Tools for Eclipse '
 description: 'AEM Developer Tools for Eclipse '
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
 source-wordcount: '1182'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -38,9 +38,9 @@ AEM Developer Tools を使用する前に、次の作業が必要です。
 
 ## AEM Developer Tools for Eclipse のインストール方法 {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-上記の[要件](#requirements)を満たしたら、次の手順でプラグインをインストールできます。
+あなたが [要件](#requirements) 上記の手順で、次のようにプラグインをインストールできます。
 
-1. [AEM Developer Tools Web サイト](https://eclipse.adobe.com/aem/dev-tools/)を開きます。
+1. を開きます。 [AEM Developer Tools Web Site](https://eclipse.adobe.com/aem/dev-tools/).
 
 1. **インストール用リンク**&#x200B;をコピーします。
 

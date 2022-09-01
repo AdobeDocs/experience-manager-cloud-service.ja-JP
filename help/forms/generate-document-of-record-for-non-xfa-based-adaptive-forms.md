@@ -2,9 +2,9 @@
 title: アダプティブフォームにおけるレコードのドキュメントの生成
 description: ここでは、アダプティブフォーム向けのレコードのドキュメント（DoR）テンプレートを生成する方法について説明します。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: e9f235f4e4a1d314370a423ee8a2ef997346a794
+source-git-commit: 21db238b0808d6131c2a22de3d47ba7f7bd2f48b
 workflow-type: tm+mt
-source-wordcount: '3677'
+source-wordcount: '3659'
 ht-degree: 99%
 
 ---
@@ -407,8 +407,8 @@ XCI ファイルは、ドキュメントの様々なプロパティを設定す�
 
 | XCI オプション | 説明 |
 |--- |--- |
-| config/present/pdf/creator | ドキュメント情報ディクショナリの Creator エントリを使用して、ドキュメント作成者を識別します。このディクショナリについては、[PDF リファレンスガイド](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf)を参照してください。 |
-| config/present/pdf/producer | ドキュメント情報ディクショナリの Producer エントリを使用して、ドキュメントプロデューサーを識別します。このディクショナリについては、[PDF リファレンスガイド](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf)を参照してください。 |
+| config/present/pdf/creator | ドキュメント情報ディクショナリの Creator エントリを使用して、ドキュメント作成者を識別します。このディクショナリについては、[PDF リファレンスガイド](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/)を参照してください。 |
+| config/present/pdf/producer | ドキュメント情報ディクショナリの Producer エントリを使用して、ドキュメントプロデューサーを識別します。このディクショナリについては、[PDF リファレンスガイド](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/)を参照してください。 |
 | config/present/layout | 出力を単一ページとするか連続ページとするかを制御します。 |
 | config/present/pdf/compression/level | PDF ドキュメントの生成時に使用する圧縮レベルを指定します。 |
 | config/present/pdf/fontInfo/embed | 出力ドキュメントに埋め込むフォントを制御します。 |

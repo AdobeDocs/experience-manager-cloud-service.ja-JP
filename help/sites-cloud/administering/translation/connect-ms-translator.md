@@ -4,16 +4,16 @@ description: AEM を Microsoft Translator に接続して翻訳ワークフロ�
 feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 100%
+source-wordcount: '517'
+ht-degree: 99%
 
 ---
 
 # Microsoft Translator への接続 {#connecting-to-microsoft-translator}
 
-AEM ページのコンテンツまたはアセットの翻訳に Microsoft Translation アカウントを使用するには、[Microsoft Translator](https://hub.microsofttranslator.com) クラウドサービスの設定を作成します。
+AEM ページのコンテンツまたはアセットの翻訳に Microsoft Translation アカウントを使用するには、[Microsoft Translator](https://www.microsoft.com/en-us/translator/business/) クラウドサービスの設定を作成します。
 
 >[!TIP]
 >
