@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 向けアクセシブルコンテンツの作成（WCAG 2.1 準拠）
 description: AEM as a Cloud Service を使用すると、障碍のあるユーザーが Web コンテンツにアクセスして利用できるようになります。
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: 13885fbb3ed35c43ccfff03d47e4dc3ced2bc327
 workflow-type: tm+mt
-source-wordcount: '14054'
-ht-degree: 99%
+source-wordcount: '14053'
+ht-degree: 97%
 
 ---
 
@@ -28,19 +28,19 @@ ht-degree: 99%
 * [アセット内のアクセシビリティ](/help/assets/accessibility.md)
 * [アクセス可能なコンテンツを生成するためのリッチテキストエディターの設定](/help/implementing/developing/extending/rte-accessible-content.md)
 
-ガイドラインは 3 つの適合レベル（レベル A（最低）、レベル AA、レベル AAA（最高））に分けられます。各レベルの簡単な定義を次に示します。
+ガイドラインは、次の 3 つの適合レベルに分類されます。レベル A（最低）、レベル AA、およびレベル AAA（最高）。 各レベルの簡単な定義を次に示します。
 
 * **レベル A：**&#x200B;サイトのアクセシビリティ基本的な最低レベルに達しています。このレベルに達するには、レベル A の達成基準をすべて満たしている必要があります。
 * **レベル AA：**&#x200B;理想的なレベルのアクセシビリティです。ほとんどの状況で、ほとんどのテクノロジーを使用して、ほとんどのユーザーがアクセスできるように、サイトのアクセシビリティの基盤が整備されています。このレベルに達するには、レベル A とレベル AA の達成基準をすべて満たしている必要があります。
-* **レベル AAA：**&#x200B;きわめて高いレベルのアクセシビリティが確保されているサイトです。このレベルに達するには、レベル A、レベル AA、レベル AAA の達成基準をすべて満たしている必要があります。
+* **レベル AAA:** サイトのアクセシビリティが高いレベルに達します。 このレベルに達するには、レベル A、レベル AA、およびレベル AAA の達成基準をすべて満たしている必要があります。
 
-サイトを作成する際は、サイトの全体的なレベルを特定する必要があります。
+サイトを作成する際は、サイトが準拠する全体的なレベルを決めておく必要があります。
 
 次の節では、[WCAG 2.1 ガイドラインのレイヤー](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance)および[適合レベル](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1) A と AA の関連する達成基準を示します。
 
 >[!NOTE]
 >
->このドキュメントでは、次の表記を使用しています。
+>このドキュメントでは、次のものを使用します。
 >
 >* [WCAG 2.1 ガイドライン用の省略名](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance)。
 >* WCAG の Web サイトとの相互参照を目的として [WCAG 2.1 のガイドラインで使用されている番号](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1)。
@@ -52,7 +52,7 @@ ht-degree: 99%
 
 ### 代替テキスト（1.1） {#text-alternatives}
 
-[ガイドライン 1.1 代替テキスト：すべてのテキスト以外のコンテンツには、拡大印刷、点字、音声、シンボル、平易な言葉などのユーザーが必要とする形式に変換できるように、代替テキストを提供すること。](https://www.w3.org/TR/WCAG/#text-alternatives)
+[ガイドライン 1.1 代替テキスト：テキスト以外のコンテンツに代替テキストを提供し、大きな印刷、点字、音声、記号、単純な言語など、必要な他の形式に変更できるようにします。](https://www.w3.org/TR/WCAG/#text-alternatives)
 
 ### テキスト以外のコンテンツ（1.1.1） {#non-text-content}
 
@@ -62,7 +62,7 @@ ht-degree: 99%
 
 #### 目的 - テキスト以外のコンテンツ（1.1.1） {#purpose-non-text-content}
 
-Web ページ上の情報はテキスト以外の様々な形式（写真、ビデオ、アニメーション、チャート、グラフなど）で指定できます。視覚に障碍のあるユーザーは、テキスト以外のコンテンツを見ることができませんが、スクリーンリーダーによる読み上げや、触覚で感知可能な点字表示デバイスを使用すれば、テキストコンテンツにアクセスできます。そのため、グラフィカルな形式にコンテンツの代替テキストを指定することにより、グラフィカルなコンテンツを見ることができないユーザーも、そのコンテンツが提供するものと同等の情報にアクセスできます。
+Web ページの情報は、画像、ビデオ、アニメーション、グラフ、グラフなど、様々な非テキスト形式で提供できます。視覚障碍や重度の視覚障碍を持つ人は、テキスト以外のコンテンツを見ることはできませんが、テキストコンテンツにアクセスするには、スクリーンリーダーで読んでもらうか、点字表示装置で触覚形式で表示します。したがって、グラフィカルな形式のコンテンツに代わるテキストを提供することで、グラフィカルなコンテンツを見ることのできないユーザーは、コンテンツが提供する同等のバージョンの情報にアクセスできます。
 
 もう 1 つのメリットとして、代替テキストを使用すると、検索エンジンのテクノロジーによってテキスト以外のコンテンツのインデックスを作成できます。
 
@@ -74,17 +74,17 @@ Web ページ上の情報はテキスト以外の様々な形式（写真、ビ�
 >
 >標準搭載のコアコンポーネントには、個々の画像に代替テキスト記述を追加するための「**代替テキスト**」フィールドが用意されていないもの（**[カルーセル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=ja)**&#x200B;など）もありますが、「**ラベル**」フィールド（「**[アクセシビリティ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=ja#accessibility-tab)**」タブ）は全コンポーネントにあります。
 >
->AEM インスタンスにこれらのバージョンを実装する場合は、作成者がコンテンツに追加できるように、開発チームは `alt` 属性をサポートするようにこれらのコンポーネントを設定する必要があります（追加の HTML 要素および属性のサポートの追加を参照）。
+>お使いのAEMインスタンスに対してこれらのバージョンを実装する場合、開発チームは、 `alt` 属性を使用して、作成者がコンテンツに追加できるようにします ( 追加のHTML要素および属性のサポートの追加を参照 )。
 >
 >標準搭載のコアコンポーネントには、個々の画像に代替テキスト記述を追加するための「**代替テキスト**」フィールドが用意されていないもの（**[カルーセル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**&#x200B;など）もありますが、「**ラベル**」フィールド（「**[アクセシビリティ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**」タブ）は全コンポーネントにあります。
 >
->AEM インスタンスにこれらのバージョンを実装する場合は、作成者がコンテンツに追加できるように、開発チームは `alt` 属性をサポートするようにこれらのコンポーネントを設定する必要があります（[追加の HTML 要素および属性のサポートの追加](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)を参照）。
+>お使いのAEMインスタンスに対してこれらのバージョンを実装する場合、開発チームは、 `alt` 属性を設定して、作成者がコンテンツに追加できるようにします ( [追加のHTML要素および属性のサポートの追加](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)) をクリックします。
 
 AEM では、デフォルトで入力される「**代替テキスト**」フィールドが必要です。画像が単なる装飾用で代替テキストが不要な場合は、「**画像は装飾画像**」オプションをチェックできます。
 
 #### 適切な代替テキストの作成 {#creating-good-text-alternatives}
 
-テキスト以外のコンテンツには様々な形式があるので、代替テキストの値は、Web ページにおけるグラフィックの役割に応じて異なります。従う必要のある一般的な手法を次に示します。
+テキスト以外のコンテンツには様々な形式があるので、代替テキストの値は、Web ページでのグラフィックの役割によって異なります。 役に立つ一般的なルールの一部を次に示します。
 
 * 代替テキストは、簡潔でありながら、テキスト以外のコンテンツによって提供されている情報の要点を明確にとらえる必要があります。
 * 過剰に長い説明（100 文字超など）は避けてください。代替テキストに詳細を追加する必要がある場合は、次のようにします。
@@ -258,7 +258,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 詳細な手順説明はこのドキュメントの範囲外ですが、次のリソースで役に立つ情報が提供されています。
 
-* [WebAIM：Real Time Captioning](https://www.webaim.org/techniques/captions/realtime.php)
+* [WebAIM：Real Time Captioning](https://webaim.org/techniques/captions/realtime.php)
 
 * [AccessComputing プロジェクト（University of Washington）：Can captions be generated automatically using speech recognition?](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
@@ -567,7 +567,7 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 >* [PMtoEM.com: PX to EM conversion made simple](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
 
 
-コントラスト比を確認するには、[Paciello Group の Color Contrast Analyser](https://www.paciellogroup.com/resources/contrast-analyser.html) や [WebAIM の Color Contrast Checker](https://www.webaim.org/resources/contrastchecker/) などの色コントラストツールを使用してください。これらのツールを使用すると、色のペアを確認し、コントラストの問題を報告できます。
+コントラスト比を確認するには、[Paciello Group の Color Contrast Analyser](https://www.tpgi.com/resources/contrast-analyser.html) や [WebAIM の Color Contrast Checker](https://webaim.org/resources/contrastchecker/) などの色コントラストツールを使用してください。これらのツールを使用すると、色のペアを確認し、コントラストの問題を報告できます。
 
 また、ページの外観の指定にそれほど関心がない場合は、背景や前面のテキストの色を指定しないことを選択できます。その場合、テキストや背景の色はユーザーのブラウザーによって決まるので、コントラストの確認は不要です。
 
