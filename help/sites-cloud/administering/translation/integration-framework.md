@@ -4,10 +4,10 @@ description: サードパーティの翻訳サービスと統合するための 
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 294743b3ca309cc0de3295cb55679e647bb10756
 workflow-type: tm+mt
-source-wordcount: '1522'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +40,7 @@ AEM を翻訳サービスプロバイダーに接続するためのクラウド�
 * [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
 * [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html?lang=ja)
-* [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
+* [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 
 コネクタパッケージをインストールしたら、コネクタ用のクラウド設定を作成できます。通常は、翻訳サービスで認証を行うための資格情報を指定する必要があります。Microsft Translator コネクタ用のクラウド設定の追加については、[Microsoft Translator との統合](connect-ms-translator.md)を参照してください。
