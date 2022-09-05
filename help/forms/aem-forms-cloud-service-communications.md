@@ -2,10 +2,10 @@
 title: AEM Forms as a Cloud Service - 通信
 description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: a3c817dedbf20b21e609ad0e5bfd0d3c4fa9a431
+source-git-commit: 07b9118b8cfc27bc9e2bfa134fbb57c7ae2728ad
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 100%
+source-wordcount: '731'
+ht-degree: 99%
 
 ---
 
@@ -75,7 +75,7 @@ API を使用するために必要なものは、次のとおりです。
 
 ### API の呼び出し
 
-API から提供されるすべてのパラメーター、認証方法および各種サービスの詳細については、[API リファレンスドキュメント](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services)を参照してください。また、API リファレンスドキュメントでは、API 定義ファイルを .yaml 形式で提供しています。.yaml ファイルをダウンロードし、postman にアップロードして API の機能を確認できます。
+API から提供されるすべてのパラメーター、認証方法および各種サービスの詳細については、[API リファレンスドキュメント](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)を参照してください。また、API リファレンスドキュメントでは、API 定義ファイルを .yaml 形式で提供しています。.yaml ファイルをダウンロードし、postman にアップロードして API の機能を確認できます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
