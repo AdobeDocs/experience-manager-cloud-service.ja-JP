@@ -2,7 +2,7 @@
 title: エクスペリエンスフラグメント
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントを使用すると、エクスペリエンスの再利用性と柔軟性を高めることができます。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 0199291bf4c0bb938072e601a9d1cc6d2940d4f0
+source-git-commit: 456b754fad3dc2d8f684f344b69d57d47b823b03
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 100%
@@ -313,7 +313,7 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 フラグメントの詳細は、以下のようにして確認できます。
 
 1. エクスペリエンスフラグメントの場所に移動します（フラグメント内のバリエーションまで移動しないでください）。
-詳細は、**エクスペリエンスフラグメント**&#x200B;コンソールのすべてのビューに表示されます。**リスト表示**&#x200B;には、Adobe Target への書き出しの詳細も含まれます。<!--Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering/experience-fragments-target.md):-->
+詳細は、**エクスペリエンスフラグメント**&#x200B;コンソールのすべてのビューに表示されます。**リスト表示**&#x200B;には、[Adobe Target への書き出し](/help/sites-cloud/integrating/integrating-adobe-target.md)の詳細も含まれます。
 
    ![エクスペリエンスフラグメントの詳細](/help/sites-cloud/authoring/assets/xf-15.png)
 
