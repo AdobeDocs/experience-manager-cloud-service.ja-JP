@@ -2,9 +2,9 @@
 title: 非推奨（廃止予定）の API
 description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の非推奨（廃止予定）の API と削除された API）。
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 9e84b57efef89613c7ddf7abec3e71d1d844ed30
+source-git-commit: ed57f15e2e85d1b2d957d396f9d93725d389375c
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1063'
 ht-degree: 95%
 
 ---
@@ -197,6 +197,12 @@ ht-degree: 95%
     <td>Handlebars のアップグレードは、セキュリティの脆弱性により、4.0.5 から 4.3.0 に必要です。 このパッケージは、アップグレードされたハンドルバーには存在しません。</td>
     <td>5/5/2022</td>
     <td>8/5/2022</td>
+  </tr>
+  <tr>
+    <td>com.adobe.granite.resourceresolverhelper</td>
+    <td>この API は、現在サポートされていません。 代わりに、 org.apache.sling.api.resource.ResourceResolverFactory を使用します。</td>
+    <td>9/29/2022</td>
+    <td>11/24/2022</td>
   </tr>
 </tbody>
 </table>
