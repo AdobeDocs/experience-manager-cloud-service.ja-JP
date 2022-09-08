@@ -3,10 +3,10 @@ title: プログラムの作成
 description: Cloud Manager を使用して最初のプログラムを作成する方法を説明します。
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 25%
+source-wordcount: '648'
+ht-degree: 22%
 
 ---
 
@@ -38,6 +38,10 @@ Cloud Manager プログラムは、Cloud Manager 環境のセットを表しま�
 * **サンドボックスプログラム**&#x200B;は、通常、トレーニング、デモの実行、イネーブルメント、POC またはドキュメントの目的にかなうように作成されます。
 
 用途が異なるので、環境が異なれば、選択肢も異なります。 ただし、作成のプロセスは似ています。 このオンボーディングジャーニーに対して、サンドボックス環境を作成します。
+
+>[!NOTE]
+>
+>デフォルトでは、AEM環境へのアクセス権を持つユーザーは、 Cloud /Manager ユーザーの役割も持ちます。 およびその他のでのこの役割は、ユーザーにプログラムの詳細表示へのアクセス権を与えるには不十分です。 Cloud Manager のユーザーロールのみを持つユーザーは、プログラムメニューオプションからAEM環境のオーサー URL（環境が存在する場合）に移動できます。 プログラムレベルのアクセス権を取得したい場合は、管理者に問い合わせる必要があります。
 
 ## サンドボックスプログラムの作成 {#create-sandbox}
 
