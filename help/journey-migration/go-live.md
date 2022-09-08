@@ -2,9 +2,9 @@
 title: 運用開始
 description: コードとコンテンツがクラウドに対応した後に移行を実行する方法について
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 9ffde71af0c24c0592ef9ca008ddeaf9ce70599e
+source-git-commit: 6e5743a1b31cf4992e6477050e434a651153fad1
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1729'
 ht-degree: 95%
 
 ---
@@ -153,6 +153,7 @@ ht-degree: 95%
       * TTL が非常に大きい場合、DNS レコードの更新が反映されるまでに時間がかかります。
 * ビジネス要件とビジネス目標を満たすパフォーマンステストとセキュリティテストを実行します。
 * カットオーバーし、新しいデプロイメントやコンテンツの更新を行わずに実際の運用開始が確実に実行されるようにします。
+* Admin Consoleユーザー通知グループを作成します。 詳しくは、 [通知用のユーザーグループ](/help/journey-onboarding/user-groups.md)
 
 移行の実行中にタスクを再調整する必要がある場合は、いつでもリストを参照できます。
 
