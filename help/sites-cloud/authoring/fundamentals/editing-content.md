@@ -1,11 +1,11 @@
 ---
-title: 'ページのコンテンツの編集 '
+title: ページのコンテンツの編集
 description: ページを作成したら、必要な変更をおこなうためにコンテンツを編集できます
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 14671264f1605552b2262a3139d4005e6dd90cb5
+source-git-commit: 2bfabfc2c12faf6f813ecd5b11b289117724d9ec
 workflow-type: tm+mt
-source-wordcount: '2992'
-ht-degree: 97%
+source-wordcount: '3019'
+ht-degree: 96%
 
 ---
 
@@ -466,12 +466,11 @@ AEM では、他のユーザーによるコンテンツの変更を防ぐため�
 
 >[!CAUTION]
 >
->ページのロックは、別のユーザーとして実行している場合にも実行できます。ただし、この方法でロックされたページのロックを解除できるのは、偽装されたユーザーか、管理者権限を持つユーザー (AEM Administrator IMS プロファイルのメンバー ) のみです。
+>ページのロックは、別のユーザーとして実行している場合にも実行できます。ただし、この方法でロックされたページは、別のユーザーとして実行したユーザーを使用して（顧客が）ロック解除する必要があります。
 >
->実際にページのロック作業を行ったユーザーに成り代わっても、ページをロック解除できません。
-<!--
->Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
--->
+>ページをロックした別のユーザーとして実行すると、ページのロックを解除できません。
+>
+>ページをロックしたユーザーがページのロックを解除できない場合は、カスタマーサポートに連絡して、ロックを解除するためのオプションを評価してください。
 
 ## ページのロック解除 {#unlocking-a-page}
 
@@ -483,9 +482,20 @@ AEM では、他のユーザーによるコンテンツの変更を防ぐため�
 
 >[!CAUTION]
 >
->ページのロックは、別のユーザーとして実行している場合にも実行できます。ただし、この方法でロックされたページのロックを解除できるのは、偽装されたユーザーか、管理者権限を持つユーザー (AEM Administrator IMS プロファイルのメンバー ) のみです。
+>ページのロックは、別のユーザーとして実行している場合にも実行できます。ただし、この方法でロックされたページは、偽装されたユーザーを使用して（顧客が）ロック解除できるだけです。
 >
->実際にページのロック作業を行ったユーザーに成り代わっても、ページをロック解除できません。
+>ページをロックした別のユーザーとして実行すると、ページのロックを解除できません。
+>
+>ページをロックしたユーザーがページのロックを解除できない場合は、カスタマーサポートに連絡して、ロックを解除するためのオプションを評価してください。
+
+<!--
+>[!CAUTION]
+>
+>Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated, or by a user with admin rights (a member of AEM Administrator IMS profile).
+>
+>Pages can not be unlocked by impersonating the user who locked the page.
+-->
+
 <!--
 >Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
 -->
