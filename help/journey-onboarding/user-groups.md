@@ -3,7 +3,7 @@ title: 通知用のユーザーグループ
 description: 重要な電子メール通知の受信を管理するために、Admin Consoleでユーザーグループを作成する方法を説明します。
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 93a5e1b8851353f368a01ea6b50265ec3f2de836
+source-git-commit: 532184edca597452e76fdf763e7377d5e835bebc
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 17%
@@ -81,7 +81,7 @@ ht-degree: 17%
 
 1. 上部ナビゲーションの「**ユーザー**」タブを選択し、「**ユーザーを追加**」を選択します。
 
-![ユーザー](assets/cloud_manager_add_user.png)
+   ![ユーザー](assets/cloud_manager_add_user.png)
 
 1. **チームにユーザーを追加**&#x200B;ダイアログで、追加するユーザーの電子メール ID を入力します。
 
