@@ -1,5 +1,5 @@
 ---
-title: ''' [!DNL Adobe Workfront] との [!DNL Experience Manager Assets] 統合'''
+title: ' [!DNL Adobe Workfront] との [!DNL Experience Manager Assets] 統合'
 description: ' [!DNL Assets]  と  [!DNL Workfront] の統合の概要'
 role: Admin,Leader,Architect
 feature: Integrations

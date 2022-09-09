@@ -1,5 +1,5 @@
 ---
-title: 'アセットの読み込みと書き出し '
+title: アセットの読み込みと書き出し
 seo-title: Import and export assets to [!DNL AEM Forms]
 description: アダプティブフォームおよび関連アセットを AEM インスタンスに読み込んだり書き出したりできます。これは、フォームを移行したり、複数のシステム間で移動したりするのに役立ちます。
 seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.

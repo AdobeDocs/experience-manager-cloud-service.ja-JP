@@ -1,6 +1,6 @@
 ---
 title: Adobe Target との統合
-description: 'Adobe Target との統合 '
+description: Adobe Target との統合
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2

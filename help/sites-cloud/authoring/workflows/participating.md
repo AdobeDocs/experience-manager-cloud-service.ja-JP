@@ -1,5 +1,5 @@
 ---
-title: 'ワークフローへの参加 '
+title: ワークフローへの参加
 description: ワークフローには通常、ページまたはアセットでユーザーがアクティビティを実行する必要があるステップが含まれています。
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184

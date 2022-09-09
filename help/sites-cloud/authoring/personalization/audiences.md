@@ -1,5 +1,5 @@
 ---
-title: 'オーディエンスの管理 '
+title: オーディエンスの管理
 description: オーディエンスコンソールを使用して、Adobe Target アカウント用のオーディエンスを作成、整理および管理したり、ContextHub 用のセグメントを管理したりできます。
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
 source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92

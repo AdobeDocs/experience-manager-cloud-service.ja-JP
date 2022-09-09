@@ -1,5 +1,5 @@
 ---
-title: 'コンポーネントを使用する場合のベストプラクティス '
+title: コンポーネントを使用する場合のベストプラクティス
 seo-title: Best practices for working with components
 description: アダプティブフォームの各種コンポーネントを使用する場合のベストプラクティスと重要事項
 seo-description: Some best practices and key points to remember when working with Adaptive Form components

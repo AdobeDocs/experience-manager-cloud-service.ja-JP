@@ -1,5 +1,5 @@
 ---
-title: 'レコードのドキュメントテンプレートを作成するために Forms Designer をダウンロードしてインストールする方法  '
+title: レコードのドキュメントテンプレートを作成するために Forms Designer をダウンロードしてインストールする方法
 description: Forms Designer を使用して、レコードのドキュメントテンプレートとして機能する XDP および PDF フォームテンプレートを作成できます。Designer は、 [!DNL AEM Forms]  ライセンスで利用できます。
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4

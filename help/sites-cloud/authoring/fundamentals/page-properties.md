@@ -1,5 +1,5 @@
 ---
-title: 'ページプロパティの編集 '
+title: ページプロパティの編集
 description: ページに必要なプロパティを定義します
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 73adc2a9cad7f3e5dde723d1b3d695f8cec3ca69

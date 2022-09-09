@@ -1,7 +1,7 @@
 ---
 title: AEM ヘッドレスデベロッパージャーニー
-description: 'ヘッドレスコンテンツ管理システム（CMS）として使用する場合の Adobe Experience Manager（AEM）as a Cloud Service のガイド付きジャーニーは、ここから開始してください。強力かつ柔軟なヘッドレス機能とその特長、および初めてのヘッドレス開発プロジェクトでの活用方法を説明します。このジャーニーでは、最初のヘッドレスアプリケーションの開発に必要なあらゆる情報を提供します。 '
-landing-page-description: 'ヘッドレスコンテンツの配信と実装について理解します。企業内での戦略の策定について詳しく説明します。 '
+description: ヘッドレスコンテンツ管理システム（CMS）として使用する場合の Adobe Experience Manager（AEM）as a Cloud Service のガイド付きジャーニーは、ここから開始してください。強力かつ柔軟なヘッドレス機能とその特長、および初めてのヘッドレス開発プロジェクトでの活用方法を説明します。このジャーニーでは、最初のヘッドレスアプリケーションの開発に必要なあらゆる情報を提供します。
+landing-page-description: ヘッドレスコンテンツの配信と実装について理解します。企業内での戦略の策定について詳しく説明します。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 source-git-commit: 1424c604e175cce0728f49f548d0bebec76043f4
 workflow-type: tm+mt

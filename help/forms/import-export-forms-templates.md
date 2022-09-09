@@ -1,7 +1,7 @@
 ---
 title: アダプティブフォーム、PDF forms、およびその他のアセットの読み込み、書き出し、整理
 seo-title: Learn to import, export, and organize Adaptive Forms, PDF forms, and other assets on an[!DNL AEM Forms] instance
-description: 'アダプティブフォームとアセットを AEM インスタンス間で移行したいと考えていますか？ここでは、 [!DNL AEM Forms]  インスタンスからアダプティブフォーム、PDF フォーム、テーマおよびその他のサポートするアセットを読み込んだり書き出したりする方法を説明します。 '
+description: アダプティブフォームとアセットを AEM インスタンス間で移行したいと考えていますか？ここでは、 [!DNL AEM Forms]  インスタンスからアダプティブフォーム、PDF フォーム、テーマおよびその他のサポートするアセットを読み込んだり書き出したりする方法を説明します。
 seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0

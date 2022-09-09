@@ -1,6 +1,6 @@
 ---
 title: アセットのアップロード制限を設定する
-description: 'Adobe Experience Manager Assets の設定で、ユーザーがアップロードできるアセットのタイプを MIME タイプに基づいて制限します。 これにより、望ましくない形式や悪意のあるファイルが誤ってアップロードされるのを防ぐことができます。 '
+description: Adobe Experience Manager Assets の設定で、ユーザーがアップロードできるアセットのタイプを MIME タイプに基づいて制限します。 これにより、望ましくない形式や悪意のあるファイルが誤ってアップロードされるのを防ぐことができます。
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
 source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
 workflow-type: tm+mt

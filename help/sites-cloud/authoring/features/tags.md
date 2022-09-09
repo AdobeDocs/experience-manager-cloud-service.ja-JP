@@ -1,5 +1,5 @@
 ---
-title: 'タグの使用 '
+title: タグの使用
 description: タグを使用すると、Web サイト内のコンテンツをすばやく簡単に分類できます。
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184

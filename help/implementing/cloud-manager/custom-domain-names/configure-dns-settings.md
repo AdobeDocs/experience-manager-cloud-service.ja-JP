@@ -1,5 +1,5 @@
 ---
-title: 'DNS 設定の指定 '
+title: DNS 設定の指定
 description: DNS 設定の指定
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 source-git-commit: 60b496024b3d012033309632999851c08f43c5d7

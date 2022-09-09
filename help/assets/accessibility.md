@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Experience Manager Assets] でのアクセシビリティ'
-description: '障害を持つユーザーにとって、 [!DNL Adobe Experience Manager]  as a のアクセシビリティ機能がどのように役立つかを説明します。 [!DNL Cloud Service] '
+description: 障害を持つユーザーにとって、 [!DNL Adobe Experience Manager]  as a のアクセシビリティ機能がどのように役立つかを説明します。 [!DNL Cloud Service]
 contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader

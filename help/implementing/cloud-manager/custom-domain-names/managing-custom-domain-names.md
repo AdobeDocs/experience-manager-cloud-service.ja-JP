@@ -35,7 +35,7 @@ Cloud Manager では、カスタムドメイン名の表示、更新、置換、
 >
 >SSL 証明書が有効であり、[既に設定済み](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)で、更新するカスタムドメイン名が含まれている必要があります。
 
-## カスタムドメイン名の削除 {#deleting}
+##  カスタムドメイン名の削除 {#deleting}
 
 **ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持つユーザーが、Cloud Manager を使用してカスタムドメイン名を削除できます。
 

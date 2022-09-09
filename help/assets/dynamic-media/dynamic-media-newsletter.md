@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media ニュースレターアーカイブ
-description: 'Experience League 提供の Dynamic Media ニュースレターは月刊ニュースレターです。Dynamic Media および Dynamic Media Classic をすばやく習得して価値の実現にすぐに着手できるように工夫されています。このワンストップのショップニュースレターでは、知識の構築に役立つ貴重なリソースをご利用いただけます。例えば、ハウツービデオやソリューションの概要をご利用いただけます。画像プリセット、ビューアプリセット、ビデオプロファイルなど、主な機能の一部を紹介します。 '
+description: Experience League 提供の Dynamic Media ニュースレターは月刊ニュースレターです。Dynamic Media および Dynamic Media Classic をすばやく習得して価値の実現にすぐに着手できるように工夫されています。このワンストップのショップニュースレターでは、知識の構築に役立つ貴重なリソースをご利用いただけます。例えば、ハウツービデオやソリューションの概要をご利用いただけます。画像プリセット、ビューアプリセット、ビデオプロファイルなど、主な機能の一部を紹介します。
 feature: Asset Management
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20

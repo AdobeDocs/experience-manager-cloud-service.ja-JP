@@ -1,6 +1,6 @@
 ---
 title: AEM 6.5 Forms と AEM Cloud Services の間での変更点
-description: 'Experience Manager Forms のユーザーで、Adobe Experience Manager Forms as aCloud Service にアップグレードする予定ですか？Cloud Service にアップグレードまたは移行する前に、最も重要な変更点を説明します。  '
+description: Experience Manager Forms のユーザーで、Adobe Experience Manager Forms as aCloud Service にアップグレードする予定ですか？Cloud Service にアップグレードまたは移行する前に、最も重要な変更点を説明します。
 contentOwner: khsingh
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4

@@ -1,5 +1,5 @@
 ---
-title: 'インストールと設定のトラブルシューティング  '
+title: インストールと設定のトラブルシューティング
 seo-title: Troubleshooting installation and configuration
 description: インストールと設定のトラブルシューティング
 seo-description: Troubleshooting installation and configuration

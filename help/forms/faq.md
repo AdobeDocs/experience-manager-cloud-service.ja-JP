@@ -1,5 +1,5 @@
 ---
-title: 'Forms as a Cloud Service のよくある質問 '
+title: Forms as a Cloud Service のよくある質問
 description: Forms as a Cloud Service のよくある質問
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7

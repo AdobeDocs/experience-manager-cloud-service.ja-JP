@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager as a Cloud Service のセキュリティ
-description: 'Adobe Experience Manager as a Cloud Service のセキュリティ機能の詳細について説明します。 '
+description: Adobe Experience Manager as a Cloud Service のセキュリティ機能の詳細について説明します。
 landing-page-description: Adobe Experience Manager as a Cloud Service のセキュリティに関する重要なトピックについて説明します。
 exl-id: 17a5f951-84e4-4a15-8919-985451e3b527
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075

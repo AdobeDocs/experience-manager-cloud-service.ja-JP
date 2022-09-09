@@ -1,5 +1,5 @@
 ---
-title: 'アダプティブフォームでの SOM 式の使用 '
+title: アダプティブフォームでの SOM 式の使用
 seo-title: Using SOM expressions in Adaptive Forms
 description: アダプティブフォームのパネルで SOM 式を抽出する方法を説明します。
 seo-description: Learn how to extract SOM expressions of a panel of an Adaptive Form.

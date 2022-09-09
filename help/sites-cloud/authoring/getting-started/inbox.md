@@ -1,5 +1,5 @@
 ---
-title: 'インボックス '
+title: インボックス
 description: インボックスを使用したタスクの管理
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184

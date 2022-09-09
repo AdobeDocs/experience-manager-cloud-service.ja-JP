@@ -1,7 +1,7 @@
 ---
 title: フォームのアセットに対するレビューの作成と管理
 seo-title: Creating and managing reviews for assets in forms
-description: 'レビューとは、フォーム内のアセットに対し、1 人または複数のレビュー担当者にコメントを許可するメカニズムです。 '
+description: レビューとは、フォーム内のアセットに対し、1 人または複数のレビュー担当者にコメントを許可するメカニズムです。
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 uuid: 45c7ff56-3fa8-4a0f-8597-05404e547282
 content-type: reference
