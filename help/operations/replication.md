@@ -2,10 +2,10 @@
 title: レプリケーション
 description: コンテンツ配布とレプリケーションのトラブルシューティング。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: b79752c43cd9907236b511aa1be60b5b2256a7b8
+source-git-commit: 30428716603a53f3a549a18541de593bbfe879df
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 88%
+source-wordcount: '1258'
+ht-degree: 87%
 
 ---
 
@@ -84,7 +84,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 * `enableVersion`（ブール値、デフォルト：`true`）。このパラメーターは、レプリケーション時に新しいバージョンが作成されるかどうかを指定します。
 * `agentId`（文字列値。デフォルトは、パブリッシュのエージェントのみが使用されることを意味します）。agentId を明確にすることをお勧めします。例えば、値「publish」を設定します。エージェントを `preview` に設定すると、プレビューサービスに公開されます。
 * `filters`（文字列値。デフォルトは、すべてのパスがアクティブ化されることを意味します）。使用できる値は次のとおりです。
-   * `onlyActivated` - アクティブ化されていないパスのみがアクティブ化されます。
+   * `onlyActivated`  — 有効化済みとマークされたパスのみが有効化されます。
    * `onlyModified` - 既にアクティブ化されており、変更日がアクティブ化の日付よりも後のパスのみをアクティブ化します。
    * 上記は、パイプ（|）で OR 結合できます。（例：`onlyActivated|onlyModified`）。
 
