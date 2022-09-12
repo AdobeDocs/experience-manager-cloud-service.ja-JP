@@ -2,10 +2,10 @@
 title: Experience Manager Sites ページでフォームポータルを作成する方法
 description: フォームポータルを作成し、標準搭載のコアコンポーネントを AEM Sites ページで使用する方法を説明します。
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 05bdc24974d2b82c1350bf6f75873cd7027f7d4a
 workflow-type: tm+mt
-source-wordcount: '1784'
-ht-degree: 100%
+source-wordcount: '1764'
+ht-degree: 98%
 
 ---
 
@@ -59,9 +59,7 @@ AEM プロジェクトアーキタイプから [標準搭載のフォームポ�
 
    また、上記のコマンドで `appTitle`、`appId`、`groupId` を変更し、環境に反映します。
 
-1. **プレリリースで、次の手順を実行して Forms Portal コンポーネントを使用します。**
-   * [プレリリースチャネルを有効にします](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja)。
-   * アーキタイププロジェクトのトップレベル `pom.xml` の `<core.forms.components.version>x.y.z</core.forms.components.version>` プロパティを更新して、`Cloud Manager/AEM Archetype` プロジェクトの `core-forms-components-*` バージョンを目的のプレリリースバージョン（例えば、1.0.4-PRERELEASE-20211223）に置き換えます。
+   プロジェクトの準備が整ったら、 `<core.forms.components.version>x.y.z</core.forms.components.version>` 最上位の `pom.xml` 最新バージョンの [core-forms-components](https://github.com/adobe/aem-core-forms-components) の `AEM Archetype` プロジェクト。
 
 1. **プロジェクトをローカル開発環境にデプロイ：** 次のコマンドを使用して、ローカル開発環境にデプロイできます
 
