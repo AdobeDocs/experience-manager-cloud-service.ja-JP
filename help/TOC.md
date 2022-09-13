@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service の概要に
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4e18d2e075833bd455087aca149a12c0dc2a9245
+source-git-commit: b423aaad1857e8b8016b4d61fe71360ead88c65f
 workflow-type: tm+mt
-source-wordcount: '3721'
+source-wordcount: '3723'
 ht-degree: 94%
 
 ---
@@ -274,7 +274,7 @@ ht-degree: 94%
          + [ターゲットコンテンツ用マルチサイト管理の構造](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [アクティビティの管理](/help/sites-cloud/authoring/personalization/activities.md)
          + [オーディエンスの管理](/help/sites-cloud/authoring/personalization/audiences.md)
-         + [オファーの作成と管理](/help/sites-cloud/authoring/personalization/offers.md)
+         + [オファーの作成と管理 （オファーコンソール）](/help/sites-cloud/authoring/personalization/offers.md)
          + [セグメント化について](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [ContextHub でのセグメント化の設定](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [登録、ログイン、ユーザープロファイル](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
