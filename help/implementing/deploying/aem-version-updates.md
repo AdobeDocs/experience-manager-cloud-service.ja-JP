@@ -3,10 +3,10 @@ title: AEM バージョンのアップデート
 description: AEM バージョンのアップデート
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 575be022704e998e63162f19c37ece877efef627
+source-git-commit: becc07c0042cdfb5de86dc8895801c00c882f8a1
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 29%
+source-wordcount: '399'
+ht-degree: 20%
 
 ---
 
@@ -39,7 +39,7 @@ AEMのアップデートは、複数の手順を伴う集中的かつ完全に�
 
 >[!NOTE]
 >
->カスタムコードがステージング環境にプッシュされた後で拒否された場合、次回の AEM アップデートでは、それらの変更は削除され、顧客が前回実稼動環境に正常にリリースしたコードの Git タグを反映するようになります。
+>カスタムコードがステージング環境にプッシュされ、実稼動環境にプッシュされなかった場合、次回のAEM更新でこれらの変更が削除され、顧客が前回実稼動環境に正常にリリースした際の git タグが反映されます。 したがって、ステージングでのみ使用可能なカスタムコードを再度デプロイする必要があります。
 
 ## 複合ノードストア {#composite-node-store}
 
