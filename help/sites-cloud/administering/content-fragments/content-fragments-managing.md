@@ -2,10 +2,10 @@
 title: コンテンツフラグメントの管理
 description: コンテンツフラグメントコンソールを使用してAEMコンテンツフラグメントを管理する方法を説明します。（ページオーサリング用、またはヘッドレスコンテンツの基礎として）。
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 28a3e8fe6ca16d20f5b4264e386154e95b55dc77
+source-git-commit: 3260cd8c9c0e121048b4403217b68500be37ddda
 workflow-type: tm+mt
-source-wordcount: '1915'
-ht-degree: 67%
+source-wordcount: '1947'
+ht-degree: 66%
 
 ---
 
@@ -52,6 +52,11 @@ ht-degree: 67%
 * [コンテンツフラグメントコンソールでの検索とフィルタリング](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
 ## コンテンツフラグメントの作成 {#creating-content-fragments}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content"
+>title="新しいコンテンツを作成"
+>abstract="モジュール 1 で作成したモデルを基に、ページオーサリングに使用できるコンテンツを作成する方法、またはヘッドレスコンテンツの基礎として使用できるコンテンツを作成する方法を学びます。"
 
 ### コンテンツモデルの作成 {#creating-a-content-model}
 

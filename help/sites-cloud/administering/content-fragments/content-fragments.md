@@ -2,10 +2,10 @@
 title: コンテンツフラグメントの操作
 description: Adobe Experience Manager(AEM) のコンテンツフラグメントを使用して、ページに依存しないコンテンツをデザイン、作成、キュレーション、使用する方法を説明します。これは、ページオーサリングやヘッドレス配信に最適です。
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 3260cd8c9c0e121048b4403217b68500be37ddda
 workflow-type: tm+mt
-source-wordcount: '2068'
-ht-degree: 93%
+source-wordcount: '2107'
+ht-degree: 91%
 
 ---
 
@@ -86,6 +86,11 @@ Adobe Experience Manager(AEM) をas a Cloud Serviceしたコンテンツフラ�
 >エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
 >
 >詳細については、](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ja#content-fragments)AEM のコンテンツフラグメントおよびエクスペリエンスフラグメントについて[も参照してください。
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview"
+>title="アプリのコンテンツ構造を作成する"
+>abstract="アドビの一連のインタラクティブガイドに従うと、すべてのヘッドレスコンテンツの基盤となる構造（コンテンツフラグメントモデルとも呼ばれます）の作成について学習できます。"
 
 ## コンテンツフラグメントとコンテンツサービス {#content-fragments-and-content-services}
 

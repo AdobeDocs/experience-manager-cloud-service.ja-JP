@@ -2,10 +2,10 @@
 title: GraphQL のコンテンツフラグメントを使用したヘッドレスコンテンツ配信
 description: ヘッドレスコンテンツ配信にコンテンツフラグメントと GraphQL を使用して AEM ヘッドレス CMS を実現するための基本的な概念について説明します。
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
-source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
+source-git-commit: 3260cd8c9c0e121048b4403217b68500be37ddda
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 91%
+source-wordcount: '758'
+ht-degree: 88%
 
 ---
 
@@ -31,6 +31,11 @@ ht-degree: 91%
 >* [AEM コマースは、GraphQL 経由でコマースプラットフォームのデータを使用します](/help/commerce-cloud/integrating/magento.md)。
 >* [AEM コンテンツフラグメントは、AEM GraphQL API（標準の GraphQL に基づいてカスタマイズされた実装）と連携して、アプリケーションで使用する構造化コンテンツを配信します](/help/headless/graphql-api/content-fragments.md)。
 
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql"
+>title="GraphQL API を使用したコンテンツの抽出"
+>abstract="このモジュールでは、コンテンツフラグメントと GraphQL API をヘッドレスコンテンツ管理システムとして使用する方法を学びます。"
 
 ## ヘッドレス CMS {#headless-cms}
 
