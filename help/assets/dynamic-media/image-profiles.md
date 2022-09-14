@@ -4,10 +4,10 @@ description: アンシャープマスクの設定、スマート切り抜きと�
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
+source-git-commit: 28dbb0afa6c63efd64d409f8df0ef837bc10f5d9
 workflow-type: tm+mt
-source-wordcount: '3277'
-ht-degree: 98%
+source-wordcount: '3333'
+ht-degree: 97%
 
 ---
 
@@ -84,6 +84,10 @@ ht-degree: 98%
 ### スマート切り抜きとカラースウォッチでサポートされる画像ファイル形式
 
 サポートされる入力ファイルの最大サイズ解像度は 16K です。
+
+>[!NOTE]
+>
+>16K の解像度は、約 16,000 ピクセルの水平方向のディスプレイ解像度です。 16K の解像度について最も一般的に説明するのは15360 × 8640 で、各寸法で 8K の UHD のピクセル数を合計 4 倍にします。 この解像度は 132.7 メガピクセル、16 倍のピクセルと 4K の解像度、64 倍のピクセルと 1080p の解像度を持ちます。
 
 | 画像の形式 | 大文字と小文字を区別しないファイル拡張子 | MIME タイプ | サポートされる入力カラースペース | サポートされる入力ファイルの最大サイズ | サポートされる画像の形式？ |
 | --- | --- | --- | --- | --- | --- |
