@@ -2,9 +2,9 @@
 title: Adobe Target へのエクスペリエンスフラグメントの書き出し
 description: Adobe Target へのエクスペリエンスフラグメントの書き出し
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: d3b2b779b2b435309255e7a4f7957a94be520b34
 workflow-type: tm+mt
-source-wordcount: '2259'
+source-wordcount: '2249'
 ht-degree: 99%
 
 ---
@@ -228,8 +228,6 @@ Adobe Target からセグメントを同期するように、クラウド設定�
 
 1. 「**Adobe Target に接続**」をクリックして、Target の接続を開始します。接続に成功すると、「**接続に成功しました**」というメッセージが表示されます。メッセージの「**OK**」をクリックして、ダイアログの「**OK**」をクリックします。
 
-   Target に接続できない場合は、[トラブルシューティング](#troubleshooting-target-connection-problems)のセクションを参照してください。
-
 ### Target フレームワークの追加 {#adding-a-target-framework}
 
 <!-- Is this section needed? -->
@@ -311,17 +309,6 @@ When you associate a page with the framework, the child pages inherit the associ
    >[!NOTE]
    >
    >If the framework you attached to the page was not activated yet, a wizard opens which allows you to publish it as well.
--->
-
-<!--
-### Troubleshooting Target Connection Problems {#troubleshooting-target-connection-problems}
-
-Perform the following tasks to troubleshoot problems that occur when connecting to Target:
-
-* Make sure that the user credentials that you provide are correct.
-* Make sure that the AEM instance can connect to the Target server. For example, make sure that firewall rules are not blocking outbound AEM connections, or that AEM is configured to use necessary proxies.
-* Look for helpful messages in the AEM error log. The error.log file is located in the **crx-quickstart/logs** directory where AEM is installed.
-* When editing the activity in Adobe Target, the URL is pointing to localhost. Work around this by setting the AEM externalizer to the correct URL.
 -->
 
 ## Adobe Target へのエクスペリエンスフラグメントの書き出し {#exporting-an-experience-fragment-to-adobe-target}
