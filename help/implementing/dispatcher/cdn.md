@@ -3,10 +3,10 @@ title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 9ac5426c71c2ed794b9e72c1eacd936b9aa8d70c
+source-git-commit: a5d26c5cf07f60c65405afb2a25c903e97dc59aa
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 94%
+source-wordcount: '1056'
+ht-degree: 90%
 
 ---
 
@@ -98,7 +98,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 >
 >サンドボックスプログラム環境では、顧客提供の CDN をサポートしていません。
 
-顧客 CDN から AEM 管理による CDN へのホップは効率的ですが、ホップの増加に伴い、パフォーマンスがわずかに低下する可能性があります。
+顧客 CDN とAEM CDN 間の追加のホップは、キャッシュミスの場合にのみ必要です。 この記事で説明するキャッシュ最適化戦略を使用すると、顧客 CDN を追加した場合に待ち時間がわずかに短縮されます。
 
 この顧客 CDN 設定は、パブリッシュ層に対してサポートされていますが、オーサー層の前ではサポートされていません。
 
