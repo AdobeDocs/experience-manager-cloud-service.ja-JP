@@ -2,7 +2,7 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 590ee3f855051e212570c624e31ca3164938122c
+source-git-commit: 14b779c476b88ff1ee9d2798296add14f337dbfa
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 40%
@@ -24,7 +24,7 @@ ht-degree: 40%
 * サイズが 8 GB を超えるファイルをアップロードできません。
 * WorkfrontからAEMに送信されたアセットを自動公開する際に発生する問題を修正しました。
 * デフォルトのメタデータスキーマフォームの編集中、「ルートパス」フィールドを「タグ」フィールドで使用できません。
-* AEMワークフローを使用してWorkfrontで新しいバージョンを追加する際の問題
+* AEMワークフローを使用してWorkfrontで新しいバージョンを追加する際に発生する問題を修正しました。
 * Workfrontで使用可能なアセットに対してAEM検索を実行すると、AEMにエラーメッセージが表示されます。
 * アセットからタスク作成用のAEMワークフローを作成し、親タスク名を定義しない場合、Workfrontではタスクは作成されません。
 
