@@ -3,10 +3,10 @@ title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: a5d26c5cf07f60c65405afb2a25c903e97dc59aa
+source-git-commit: 2e0846ba3addf2ecc7d075d4da85620d7d9e9e2f
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 90%
+source-wordcount: '1093'
+ht-degree: 87%
 
 ---
 
@@ -127,6 +127,10 @@ AEM が管理する CDN は、次の情報を含む各リクエストにヘッ�
 
 * 国コード：`x-aem-client-country`
 * 大陸コード：`x-aem-client-continent`
+
+>[!NOTE]
+>
+>顧客が管理する CDN の場合、これらのヘッダーは、実際のクライアントではなく、顧客の CDN プロキシサーバーの場所を反映します。  したがって、顧客が管理する CDN の場合、位置情報ヘッダーは顧客の CDN で管理する必要があります。
 
 国コードの値は、Alpha-2 コード（[ここ](https://ja.wikipedia.org/wiki/ISO_3166-1)で説明）です。
 
