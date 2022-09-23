@@ -4,10 +4,10 @@ description: Dispatcher ツールを使用した検証とデバッグ（レガ�
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 97279969981d6abacbf4d15eb2002cce577d8fc9
+source-git-commit: 377a577616d7e804c7dfe9e9c68fed15350bdb4f
 workflow-type: tm+mt
-source-wordcount: '2304'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -307,6 +307,10 @@ Apache 仮想ホスト設定には、インクルードとして指定できる 
 |-----------|---------------------------------|
 | 書き換え | `conf.d/rewrites/rewrite.rules` |
 | 変数 | `conf.d/variables/custom.vars` |
+
+>[!TIP]
+>
+>限られた方法でより多くのファイルを含めることができるようにするには、柔軟な Dispatcher 設定モードに切り替えることができます。 ドキュメントを参照してください [Dispatcher ツールを使用した検証とデバッグ](/help/implementing/dispatcher/validation-debug.md) フレキシブルモードの詳細については、を参照してください。
 
 または、`conf.d/rewrites/default_rewrite.rules` という名前の、書き換えルールの&#x200B;**デフォルト**バージョンをインクルードすることもできます。
 変数ファイルにはデフォルトバージョンはありません。

@@ -3,10 +3,10 @@ title: Dispatcher ツールを使用した検証とデバッグ
 description: Dispatcher ツールを使用した検証とデバッグ
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 6b0fffb599d46a36270e98e0d818f33d5f97e955
+source-git-commit: c1889a6d905be6fd84e75416839a85e67a5f048a
 workflow-type: tm+mt
-source-wordcount: '2655'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -311,13 +311,26 @@ Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも�
 
 **included file (...) does not match any known file**
 
-Apache 仮想ホスト設定には、インクルードとして指定できる 2 つのタイプのファイル（書き換えと変数）があります。
-インクルードされるファイルの名前は、次のように指定する必要があります。
+デフォルトでは、Apache 仮想ホスト設定に次の 2 種類のファイルをインクルードとして指定できます。書き換えと変数。
 
 | タイプ | インクルードファイル名 |
 |-----------|---------------------------------|
 | 書き換え | `conf.d/rewrites/rewrite.rules` |
 | 変数 | `conf.d/variables/custom.vars` |
+
+フレキシブルモードでは、（あらゆるレベルの）のサブディレクトリにある限り、他のファイルも含めることができます。 `conf.d` ディレクトリの先頭には次のようにプレフィックスが付きます。
+
+| ファイルの上位ディレクトリのプレフィックスを含める |
+|-------------------------------------|
+| `conf.d/includes` |
+| `conf.d/modsec` |
+| `conf.d/rewrites` |
+
+例えば、新しく作成したディレクトリの下にファイルを含めることができます。 `conf.d/includes` ディレクトリの内容は次のとおりです。
+
+```
+Include conf.d/includes/mynewdirectory/myincludefile.conf
+```
 
 または、`conf.d/rewrites/default_rewrite.rules` という名前の、書き換えルールの&#x200B;**デフォルト**バージョンをインクルードすることもできます。
 変数ファイルにはデフォルトバージョンはありません。
