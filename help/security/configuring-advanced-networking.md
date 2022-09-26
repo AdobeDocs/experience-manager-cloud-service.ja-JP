@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の高度なネットワーク機能の設定
 description: AEM as a Cloud Service の高度なネットワーク機能（VPN やフレキシブルエグレス IP アドレスまたは専用エグレス IP アドレスなど）を設定する方法を説明します
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: b8a827e73d8eba9184be352d0aa4705dfb24b642
+source-git-commit: 9c9cc0139d6351f99c60828ee0a9d4630224f87c
 workflow-type: tm+mt
-source-wordcount: '3016'
-ht-degree: 98%
+source-wordcount: '3036'
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ AEM as a Cloud Service には、複数のタイプの高度なネットワーク
 
 ### 設定 {#configuring-flexible-port-egress-provision}
 
-プログラムごとに 1 回、POST `/program/<programId>/networkInfrastructures` エンドポイントが呼び出され、`kind` パラメーターの `flexiblePortEgress` の値とリージョンが渡されます。エンドポイントは、応答として `network_id` の他に、ステータスなどの他の情報も返します。パラメーターの一覧と厳密な構文については、API ドキュメントを参照してください。
+プログラムごとに 1 回、POST `/program/<programId>/networkInfrastructures` エンドポイントが呼び出され、`kind` パラメーターの `flexiblePortEgress` の値とリージョンが渡されます。エンドポイントは、応答として `network_id` の他に、ステータスなどの他の情報も返します。パラメーターの完全なセットと正確な構文、および後で変更できないパラメーターなどの重要な情報。 [は、API ドキュメントで参照できます。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 呼び出しの後、ネットワークインフラストラクチャがプロビジョニングされるまで、通常は 15 分ほどかかります。Cloud Manager の [ネットワークインフラストラクチャ GET エンドポイント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) の呼び出しで「準備完了」のステータスが表示されます。
 
