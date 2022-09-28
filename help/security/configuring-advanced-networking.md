@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の高度なネットワーク機能の設定
 description: AEM as a Cloud Service の高度なネットワーク機能（VPN やフレキシブルエグレス IP アドレスまたは専用エグレス IP アドレスなど）を設定する方法を説明します
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 9c9cc0139d6351f99c60828ee0a9d4630224f87c
+source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
 workflow-type: tm+mt
-source-wordcount: '3036'
-ht-degree: 97%
+source-wordcount: '3053'
+ht-degree: 96%
 
 ---
 
@@ -333,7 +333,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ## 従来の専用エグレスアドレスを使用する場合 {#legacy-dedicated-egress-address-customers}
 
-2021年9月30日以前に専用エグレス IP がプロビジョニングされている場合、専用エグレス IP 機能は HTTP ポートと HTTPS ポートのみをサポートします。これには、HTTP/1.1 と HTTP/2（暗号化時）が含まれます。
+2021年9月30日以前に専用エグレス IP がプロビジョニングされている場合、専用エグレス IP 機能は HTTP ポートと HTTPS ポートのみをサポートします。これには、HTTP/1.1 と HTTP/2（暗号化時）が含まれます。さらに、1 つの専用の出力エンドポイントが、それぞれポート80/443の HTTP/HTTPS 経由でのみ任意のターゲットと通信できます。
 
 ## 仮想プライベートネットワーク（VPN） {#vpn}
 
