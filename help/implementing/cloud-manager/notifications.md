@@ -2,7 +2,7 @@
 title: 通知
 description: Adobe Experience Cloud通知システムを使用して、パイプラインデプロイメントに関する情報を受け取る方法を説明します。
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 0de041211c8257d920bcf354593b3caa2db43572
+source-git-commit: 451b5a089645004c58c2674fd1fb13afbe1201cf
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 12%
@@ -78,7 +78,7 @@ Cloud Manager による重要なイベントの通知方法を説明します。
 * **アラートは、解除するまで画面に表示され続けます**  — アクティブに解除しない限りアラートを保持するかどうかを制御します
 * **期間**  — アラートを画面に表示しておく期間を選択していない場合に、アラートを画面に表示しておく期間を定義します。
 
-## 電子メール {#emails}
+### 電子メール {#emails}
 
 通知は、Adobe全体の Web ユーザーインターフェイスで使用できます [!UICONTROL Experience Cloud] ソリューション また、これらの通知を電子メールで送信する場合は、 **電子メール** 」セクションに入力します。
 
