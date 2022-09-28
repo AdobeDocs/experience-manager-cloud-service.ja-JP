@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 向けのログ
 description: AEM as a Cloud Service のログを使用して一元的なログサービスのグローバルパラメーターを設定する方法、個々のサービスに特有の設定またはデータのログ記録をリクエストする方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 197bff164df83788b4b8b16ba4c7a82021f86002
+source-git-commit: 4b737e1b9355cbb5c4532e0a614c18f5679d61f2
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2347'
 ht-degree: 99%
 
 ---
@@ -559,6 +559,10 @@ Splunk に送信されるログに関連付けられるネットワーク帯域�
 >[!NOTE]
 >
 >サンドボックスプログラム環境の Splunk 転送はサポートされていません。
+
+>[!NOTE]
+>
+>Splunk 転送機能は専用エグレス IP アドレスからは使用できません。
 
 最初のリクエストに、ステージング／実稼働環境に加えて、有効にすべき開発環境がすべて含まれていることを確認してください。Splunk には SSL 証明書が必要で、公開されている必要があります。
 
