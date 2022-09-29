@@ -1,17 +1,15 @@
 ---
-title: コンテンツフラグメントの操作 （Assets — コンテンツフラグメント）
-description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントで、（ヘッドレス配信に最適な）ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。
-feature: Content Fragments
-role: User
+title: コンテンツフラグメントの使用方法 （Assets — コンテンツフラグメント）
+description: Adobe Experience Manager(AEM) のコンテンツフラグメントを使用して、ページに依存しないコンテンツをデザイン、作成、キュレーション、使用する方法を説明します。これは、ページオーサリングやヘッドレス配信に最適です。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '2070'
-ht-degree: 98%
+source-wordcount: '2073'
+ht-degree: 96%
 
 ---
 
-# コンテンツフラグメントの操作 {#working-with-content-fragments}
+# コンテンツフラグメントの使用方法 {#working-with-content-fragments}
 
 Adobe Experience Manager（AEM）as a Cloud Service でコンテンツフラグメントを使用すると、[ページに依存しないコンテンツ](/help/sites-cloud/authoring/fundamentals/content-fragments.md)をデザイン、作成、キュレーションおよび公開できます。（ヘッドレス配信に最適な）複数の場所や複数のチャネルでの使用に対応したコンテンツを準備できます。
 
@@ -74,7 +72,7 @@ Adobe Experience Manager（AEM）as a Cloud Service でコンテンツフラグ�
 * 多様なチャネル向けのコンテンツプールを構築する。
 * 特定のチャネル向けにコンテンツのバリエーションをデザインする。
 * アセットを挿入することでテキストに画像を追加する（混在メディアフラグメント）
-* データの複雑さを反映して、ネストされたコンテンツを作成します。
+* データの複雑さを反映して、ネストされたコンテンツを作成する。
 
 さらにこうしたコンテンツフラグメントを集めて組み立てることで、多様なチャネルにエクスペリエンスを提供できます。
 
@@ -82,7 +80,7 @@ Adobe Experience Manager（AEM）as a Cloud Service でコンテンツフラグ�
 >
 >**コンテンツフラグメント**&#x200B;と&#x200B;**[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;は、AEM 内の異なる機能です。
 >* **コンテンツフラグメント**&#x200B;は編集コンテンツで、テキスト、数値、日付などの構造化されたデータにアクセスするのに使用できます。これらは、定義と構造を備えた純粋なコンテンツですが、視覚的なデザインやレイアウトは追加されていません。
->* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツであり、Web ページのフラグメントです。
+>* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツであり、web ページのフラグメントです。
 >
 >エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
 >
@@ -291,7 +289,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 ## 使用例 {#example-usage}
 
-フラグメントと、その要素およびバリエーションを一緒に使用して、複数のチャネルに対応する明解なコンテンツを作成できます。フラグメントを設計するときは、何をどこで使用するかを考慮する必要があります。
+フラグメントと、その要素およびバリエーションを一緒に使用して、複数のチャネルに対応した一貫性のあるコンテンツを作成できます。フラグメントを設計するときは、何をどこで使用するかを考慮する必要があります。
 
 ### WKND サンプル {#wknd-sample}
 

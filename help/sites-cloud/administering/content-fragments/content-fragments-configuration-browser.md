@@ -1,11 +1,13 @@
 ---
 title: コンテンツフラグメント - 設定ブラウザー
-description: 設定ブラウザーで特定のコンテンツフラグメント機能を有効にする方法を説明します。
+description: 設定ブラウザーでコンテンツフラグメントと GraphQL 機能を有効にして、AEMヘッドレス配信機能を活用する方法を説明します。
+feature: Content Fragments
+role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
-source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 63%
+source-wordcount: '365'
+ht-degree: 62%
 
 ---
 

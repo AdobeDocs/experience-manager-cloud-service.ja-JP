@@ -2,10 +2,12 @@
 title: コンテンツフラグメントコンソール
 description: コンテンツフラグメントコンソールからコンテンツフラグメントを管理する方法を説明します。
 landing-page-description: ヘッドレスの使用例でコンテンツフラグメントの大量の使用に重点を置いているが、ページオーサリング時にも使用されるコンテンツフラグメントコンソールからコンテンツフラグメントを管理する方法を説明します。
+feature: Content Fragments
+role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 3e47ebad94e51379d909384f7e3ec407fba47b4d
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '883'
 ht-degree: 2%
 
 ---

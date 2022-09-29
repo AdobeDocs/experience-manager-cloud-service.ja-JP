@@ -1,13 +1,11 @@
 ---
 title: 関連コンテンツ（アセット — コンテンツフラグメント）
-description: AEM 関連のコンテンツ機能によって接続を提供する方法を理解し、フラグメントをコンテンツページに追加する際に、オプションでアセットをフラグメントと共に使用できるようにして、ヘッドレスコンテンツ配信の柔軟性を高めます。
-feature: Content Fragments
-role: User
+description: AEM関連のコンテンツ機能によって接続が提供される方法を理解し、アセットをフラグメントと共に任意で使用できるようにします。
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 97%
+source-wordcount: '232'
+ht-degree: 89%
 
 ---
 

@@ -1,13 +1,11 @@
 ---
 title: コンテンツフラグメント — 設定ブラウザー（アセット — コンテンツフラグメント）
-description: AEM の強力なヘッドレス配信機能を活用するために、設定ブラウザーで特定のコンテンツフラグメント機能を有効にする方法を説明します。
-feature: Content Fragments
-role: User
+description: 設定ブラウザーでコンテンツフラグメント機能を有効にする方法を説明します。
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 77%
+source-wordcount: '364'
+ht-degree: 73%
 
 ---
 

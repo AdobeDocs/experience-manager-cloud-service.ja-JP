@@ -1,8 +1,10 @@
 ---
 title: バリエーション - フラグメントコンテンツのオーサリング
 description: バリエーションを使用して、フラグメントのコンテンツを作成し、目的に応じてそのコンテンツのバリエーションを作成する方法を理解します。 これにより、ヘッドレス配信とページオーサリングの両方に柔軟性を提供します。
+feature: Content Fragments
+role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '2287'
 ht-degree: 96%
