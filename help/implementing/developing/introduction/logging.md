@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 向けのログ
 description: AEM as a Cloud Service のログを使用して一元的なログサービスのグローバルパラメーターを設定する方法、個々のサービスに特有の設定またはデータのログ記録をリクエストする方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 4b737e1b9355cbb5c4532e0a614c18f5679d61f2
+source-git-commit: 437c6b3bcd331bf385f2845bfdb0be656a57488e
 workflow-type: tm+mt
-source-wordcount: '2347'
+source-wordcount: '2351'
 ht-degree: 99%
 
 ---
@@ -549,7 +549,7 @@ Splunk に送信されるログに関連付けられるネットワーク帯域�
 
 サポートを依頼するには、顧客は次のことを示す必要があります。
 
-* Splunk HEC エンドポイントアドレス. このエンドポイントには有効な SSL 証明書が必要です
+* Splunk HEC エンドポイントアドレス. このエンドポイントには有効な SSL 証明書が存在し、公にアクセス可能である必要があります。
 * Splunk のインデックス
 * Splunk のポート
 * Splunk の HEC トークン。詳しくは、[こちらのページ](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples)を参照してください。
