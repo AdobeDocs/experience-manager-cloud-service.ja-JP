@@ -1,63 +1,122 @@
 ---
-title: パーソナライズとコンテンツのターゲティング
-description: パーソナライズされたコンテンツを AEM で作成する方法を説明します。
+title: パーソナライゼーションとコンテンツのターゲティング
+description: AEMを使用して、パーソナライズされたターゲットコンテンツを作成する方法を説明します
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 8b741b64db43369bf0ca3bfbe947fb58ef5ec05a
+source-git-commit: 635a9e577f03c865cdb31f539598fb8fe034d7b7
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 97%
+source-wordcount: '1041'
+ht-degree: 13%
 
 ---
 
-# パーソナライズとコンテンツのターゲティング {#personalization}
 
-## パーソナライゼーションとコンテンツのターゲティング {#personalization-and-content-targeting}
+# パーソナライゼーションとコンテンツのターゲティング {#personalization-and-content-targeting}
 
-AEM には、ターゲットとなるコンテンツをオーサリングして、パーソナライズされたエクスペリエンスを提供するためのツールのフレームワークが用意されています。
+顧客に提供する Web コンテンツのパーソナライゼーションとは、顧客の興味やニーズに合わせてエクスペリエンスを調整することを意味します。 これは、顧客に関する情報に基づいて行うことができます。例：買い物の概要、年齢、性別、地域など。
 
-## ターゲティングモード {#targeting-mode}
+Adobe Experience Manager as a Cloud Service(AEM) では、選択したコンテンツを作成し、個々のエクスペリエンスを表示するオーディエンス（エンドユーザーのグループ）を指定できます。 つまり、特定のオーディエンスでパーソナライズされたエクスペリエンスをターゲットに設定しています。
 
-[AEM のターゲットモードを使用してターゲットコンテンツをオーサリングします。](/help/sites-cloud/authoring/personalization/targeted-content.md)ターゲットモードと Target コンポーネントは、マーケティングアクティビティのエクスペリエンス用コンテンツを作成するためのツールを提供します。
+読者がオンラインになると、ターゲティングエンジンは、エンドユーザーに関する利用可能な情報を確認し、エクスペリエンスの定義と比較します。 その後、エンジンが *&quot;decifies&quot;* どのパーソナライズされたエクスペリエンスを表示するか。
 
-## アクティビティ {#activities}
+AEMは、次のツールのフレームワークを提供します。
 
-アクティビティは、マーケティング戦略を定義し、整理するためのものです。アクティビティは、ターゲットとするオーディエンスと、そのターゲット設定の適用期間から構成されます。
+* 利用可能な顧客情報に応じて、様々なオーディエンスに適したターゲットコンテンツをオーサリングします。
+* 既知のユーザー情報をオーディエンス定義に対して解決するために使用するルールを定義する。
+* ターゲットを絞り込んでパーソナライズされたエクスペリエンスを表示するためのページの設定を使用して、特定のコンテンツを現在のエンドユーザーに適用できます。
 
-例えば、季節商品に注目させるためのティーザーが商品カタログに含まれているとしましょう。Summer Sports アクティビティは、このティーザーが夏季のターゲットとするマーケティングセグメントを定義します。
+次の概要では、AEM as a Cloud Serviceのパーソナライゼーションに使用される用語の一部を示し、推奨されるアクション順を示します。
 
-アクティビティは、ページが使用する[ターゲティングエンジン](#targeting-engine)も識別します。
+## Experience {#experience}
 
-ブランドのアクティビティを作成および管理するには、[アクティビティコンソール](/help/sites-cloud/authoring/personalization/activities.md)を使用します。[ターゲットコンテンツをオーサリング](/help/sites-cloud/authoring/personalization/targeted-content.md)する際に、アクティビティを作成することもできます。
+エクスペリエンスとは、エンドユーザーに表示するコンテンツです。
 
-## エクスペリエンス {#experiences}
+## Personalized Experience {#personalized-experience}
 
-アクティビティごとに、ターゲットとするオーディエンスを識別する 1 つ以上のエクスペリエンスを定義します。AEM では、各エクスペリエンスを構成するコンテンツを自由に制御できます。
+パーソナライズされたエクスペリエンスとは、限られたオーディエンスに対して表示されるエクスペリエンスです。 オーディエンスはユーザーによって定義され、コンテンツは、現在のエンドユーザーに関する既知の情報がそのオーディエンス定義に対応する場合にのみ表示されます。
 
-オーディエンスは、AEM または Adobe Target で作成されたマーケティングセグメントをベースとします。訪問者が Web ページを開くと、そのページのロジックによってオーディエンスが判断され、そのオーディエンス向けに作成されたコンテンツが表示されます。
+ページを作成する際に、複数のエクスペリエンスを定義し、各エクスペリエンスを 1 つ以上のオーディエンスに解決します。 オーディエンスが解決されない場合は、デフォルトのエクスペリエンスが表示されます。
 
-例えば、あるアクティビティが「30 歳以上の女性」と「30 歳未満の女性」という 2 つの異なるオーディエンス用のエクスペリエンスを定義するものとします。Web サイトの女性用品ページでは、エクスペリエンスごとに異なる商品が表示されるでしょう。
+### オファー {#offer}
 
-1 つのアクティビティに複数のエクスペリエンスを定義できます。[アクティビティコンソール](/help/sites-cloud/authoring/personalization/activities.md#adding-editing-an-activity-using-the-activities-console)または[ターゲットモード](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode)を使用して、アクティビティにエクスペリエンスを追加できます。
+<!-- not clear - needs clarification -->
+<!-- is an offer a personalized experience, or an activity? -->
 
-## オファー {#offers}
+オファーは、パーソナライズされたエクスペリエンスで、多くの場合、期間を限定して利用できます。
 
-オファーは、それぞれのエクスペリエンスでページ上に表示されるコンテンツです。オーディエンス向けコンテンツの効果を最大限に高めるには、異なるエクスペリエンスに異なるオファーを使用します。
+例えば、サンプル Web サイトのページでは、オファーをティーザー画像として使用して、ページの上部に表示することができます。 30 歳以上の人と 30 歳未満の人は、異なるオファーをエクスペリエンスティーザーとして表示します。
 
-例えば、サンプル Web サイトの女性用品ページでは、オファーをティーザー画像として使用して、ページ上部に表示することができます。30 歳以上の女性向けエクスペリエンスと、30 歳未満の女性向けエクスペリエンスには、それぞれ異なるオファーをティーザーとして使用します。
+## 対象読者 {#audience}
 
-用途 [エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) を使用して、複数のエクスペリエンスで使用できるオファーを作成します。 [ターゲットコンテンツをオーサリング](/help/sites-cloud/authoring/personalization/targeted-content.md)するときは、単一エクスペリエンス用のオファーを作成するか、オファーライブラリからオファーを追加します。
+オーディエンスは、パーソナライズされたコンテンツでターゲットに設定するエンドユーザーのグループです。 訪問者が Web ページを開く際、ページロジックは既知の情報に基づいて、訪問者が属するオーディエンスを決定します。 この評価に基づいて、そのオーディエンス用に作成したコンテンツがAEMに表示されます。
 
-<!--
-Use the [Offers console](/help/sites-cloud/authoring/personalization/offers.md) to create offers that you can use in multiple experiences. Create single-use offers or add offers from an offer library when [authoring targeted content](/help/sites-cloud/authoring/personalization/targeted-content.md).
--->
+オーディエンスは、マーケティングセグメントに基づいています。 これらは、AEMまたはAdobe Targetで作成されます。オーディエンスコンソールを使用して、AEMで直接Adobe Targetオーディエンスを作成できます。
+
+### セグメント {#segment}
+
+AEM ContextHub 内では、オーディエンスは、ルール（条件）に基づくセグメントとして定義されます。 その後、これらは解決され、必要なコンテンツがレンダリングされます。
+
+## アクティビティ {#activity}
+
+アクティビティ：
+
+* 特定のエクスペリエンスと特定のオーディエンス（セグメント）のマッピングを定義します
+* ターゲティングが適用される期間を定義します。
+* を識別します。 [ターゲティングエンジン](#targeting-engine) ページが使用する
+
+<!-- an example for each of the two types would be good -->
+
+「 」アクティビティは、パーソナライゼーションアクティビティか、「 A/B テスト」アクティビティ (AEMとAdobe Targetのパーソナライゼーションワークフローの場合 ) のどちらかです。
+
+例えば、1 つのアクティビティで、2 つの異なるオーディエンス用のエクスペリエンスを定義できます。30 歳以上の人々と 30 歳未満の人々です。 その後、Web サイトの 1 ページに、閲覧者ごとに異なる製品が表示される場合があります。
+
+また、季節商品に注目を集めたティーザーが商品カタログに含まれている場合もあります。 したがって、サマースポーツアクティビティは、ティーザーが夏季のターゲットとするオーディエンスを定義する場合があります。
+
+以下を使用： [アクティビティコンソール](/help/sites-cloud/authoring/personalization/activities.md) のアクティビティを作成および管理するには、以下を実行します。 [ブランド](#brand). また、 [ターゲットコンテンツ](/help/sites-cloud/authoring/personalization/targeted-content.md) と [ターゲットモード](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode).
+
+### Brand  {#brand}
+
+ブランドには、様々なマーケティングアクティビティや領域が含まれます。
+
+アクティビティコンソールを使用してブランドを作成すると、そのブランドがオファーコンソールにも表示されます。
+
+### 領域 {#area}
+
+領域は、ブランドの下位区分です。
+
+## ターゲットモード {#targeting-mode}
+
+オーサリング時に、パーソナライゼーション用のコンポーネントをアクティベートおよび設定するために使用される編集モードです。
+
+以下が可能です。 [ターゲットコンテンツのオーサリング](/help/sites-cloud/authoring/personalization/targeted-content.md) AEMのターゲットモードを使用して ターゲットモードと Target コンポーネントは、マーケティングアクティビティのエクスペリエンス用コンテンツを作成するためのツールを提供します。
+
+## エクスペリエンスフラグメント {#experience-fragments}
+
+エクスペリエンスを構成するコンポーネントのグループセット。
+
+[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) は、エクスペリエンスを作成するためのコンテンツと情報（スタイル設定など）で構成されます。ページのオーサリング時に直接使用できます。 これらは、AEMページのサブセットと考えることができます。 コンテンツ作成者は、Sites ページやサードパーティ製システムを含む複数のチャネルをまたいでコンテンツを再利用できます。
+
+パーソナライゼーションの例では、タイトル、画像、説明およびコールトゥアクションボタンを組み合わせて、ティーザーエクスペリエンスを形成できます。 エクスペリエンスフラグメントの使用は、Adobe Targetのパーソナライゼーションの主な要素です。
 
 ## ターゲティングエンジン {#targeting-engine}
 
-ターゲティングエンジンは、ターゲットコンテンツ用のロジックを動かすメカニズムです。使用可能なターゲティングエンジンには AEM と Adobe Target の 2 種類があり、どちらを使用するかは[アクティビティ](/help/sites-cloud/authoring/personalization/activities.md)で設定します。
+ターゲティングエンジンは、ターゲットコンテンツのロジックを解決するメカニズムです。 使用可能なターゲティングエンジンには AEM と Adobe Target の 2 種類があり、どちらを使用するかは[アクティビティ](/help/sites-cloud/authoring/personalization/activities.md)で設定します。
 
-### AEM {#aem}
+ターゲティングエンジンは、使用するパーソナライゼーションシステムを決定するプラットフォームまたはメカニズムです。
 
-AEM は、ページリクエストの処理や、表示コンテンツの判断を行う組み込みのターゲティングエンジンを備えています。AEM ターゲティングエンジンを使用する場合、エクスペリエンスのオーディエンス定義に使用できるセグメントは、AEM で作成されるセグメントのみとなります。
+現在、AEMは次を使用できます。
+
+* [AEM ContextHub](#aem-contexthub) ( 標準AEM)
+* の [Adobe Target](#adobe-target) パーソナライゼーションエンジン
+
+>[!CAUTION]
+>
+>1 つのAEMページで、両方のエンジンを同時に使用することはできません。
+>
+>同じサイト内の別のページで、両方のエンジンを使用できます。
+
+### AEM ContextHub {#aem-contexthub}
+
+AEMには、ページリクエストを処理し、表示するコンテンツを決定する組み込みのターゲティングエンジン ContextHub が用意されています。 AEM ターゲティングエンジンを使用する場合、エクスペリエンスのオーディエンス定義に使用できるセグメントは、AEM で作成されるセグメントのみとなります。
 
 ### Adobe Target {#adobe-target}
 
@@ -66,4 +125,20 @@ Adobe Target ターゲティングエンジンを使用すると、ページの�
 * このターゲティングエンジンを使用する場合、エクスペリエンスのオーディエンス定義には Adobe Target から読み込んだセグメントを使用します。
 * Adobe Target エンジンを使用するアクティビティは、[Target と同期](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target)します。
 
-このエンジンを使用できるのは、Adobe Target と統合されている場合です。<!--You can use this engine when you have [integrated with Adobe Target](/help/sites-administering/opt-in.md).-->
+このエンジンを使用できるのは、[Adobe Target と統合](/help/sites-cloud/integrating/integration-adobe-target-ims.md)している場合のみです。
+
+## パーソナライズされたコンテンツの設定方法 {#how-to-setup-personalized-content}
+
+パーソナライズされたコンテンツを配信するには、次のように様々な手順と定義が必要です。
+
+1. AEMをターゲティングエンジンと統合します。
+
+1. オーディエンスを設定します。
+
+   1. ターゲティングエンジンに応じて、オーディエンスまたはセグメントをルールと共に定義します。
+
+1. ブランドとアクティビティを作成します。
+
+1. 様々なオーディエンスに表示するエクスペリエンスの選択を作成します。
+
+1. 特定のオーディエンス（セグメント）に対してターゲット設定することで、これらのエクスペリエンスをパーソナライズします。
