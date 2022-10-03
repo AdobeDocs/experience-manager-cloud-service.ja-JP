@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service の OSGi の設定
 description: シークレット値と環境固有の値を使用する OSGi 設定
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 339030fc5edd22f81f977046185b53649869cc83
+source-git-commit: aeff6c3e81eb71521dbd75fc73d3e177aac60abd
 workflow-type: tm+mt
-source-wordcount: '3285'
+source-wordcount: '3297'
 ht-degree: 83%
 
 ---
@@ -295,6 +295,10 @@ export ENV_VAR_NAME=my_value
 シークレットの値はファイルから読み取られます。したがって、シークレットを使用するプレースホルダーごとに、シークレット値を含むテキストファイルを作成する必要があります。
 
 例えば、`$[secret:server_password]` を使用する場合は、**server_password** という名前のテキストファイルを作成する必要があります。これらのシークレットファイルはすべて同じディレクトリに保存する必要があり、フレームワークプロパティ `org.apache.felix.configadmin.plugin.interpolation.secretsdir` は、そのローカルディレクトリを使用して設定する必要があります。
+
+>[!CAUTION]
+>
+>テキストファイルの名前を指定する必要があります **server_password**  — ファイル拡張子なし
 
 この `org.apache.felix.configadmin.plugin.interpolation.secretsdir` は Sling フレームワークのプロパティです。したがって、このプロパティは felix コンソール (/system/console) では設定されませんが、システムの起動時に使用される sling.properties ファイルで設定されます。 このファイルは、抽出した JAR/install フォルダー (crx-quickstart/conf) の/conf サブディレクトリにあります。
 
