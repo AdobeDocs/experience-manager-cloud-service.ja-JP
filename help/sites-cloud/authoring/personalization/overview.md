@@ -2,7 +2,7 @@
 title: パーソナライゼーションとコンテンツのターゲティング
 description: AEMを使用して、パーソナライズされたターゲットコンテンツを作成する方法を説明します
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 635a9e577f03c865cdb31f539598fb8fe034d7b7
+source-git-commit: d2975ec84745f9520ead89588ab727af8e43b740
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 13%
@@ -38,9 +38,6 @@ AEMは、次のツールのフレームワークを提供します。
 
 ### オファー {#offer}
 
-<!-- not clear - needs clarification -->
-<!-- is an offer a personalized experience, or an activity? -->
-
 オファーは、パーソナライズされたエクスペリエンスで、多くの場合、期間を限定して利用できます。
 
 例えば、サンプル Web サイトのページでは、オファーをティーザー画像として使用して、ページの上部に表示することができます。 30 歳以上の人と 30 歳未満の人は、異なるオファーをエクスペリエンスティーザーとして表示します。
@@ -62,8 +59,6 @@ AEM ContextHub 内では、オーディエンスは、ルール（条件）に�
 * 特定のエクスペリエンスと特定のオーディエンス（セグメント）のマッピングを定義します
 * ターゲティングが適用される期間を定義します。
 * を識別します。 [ターゲティングエンジン](#targeting-engine) ページが使用する
-
-<!-- an example for each of the two types would be good -->
 
 「 」アクティビティは、パーソナライゼーションアクティビティか、「 A/B テスト」アクティビティ (AEMとAdobe Targetのパーソナライゼーションワークフローの場合 ) のどちらかです。
 
