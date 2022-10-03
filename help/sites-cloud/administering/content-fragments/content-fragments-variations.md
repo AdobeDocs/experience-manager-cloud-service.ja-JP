@@ -4,9 +4,9 @@ description: バリエーションを使用して、フラグメントのコン�
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 3e08f725cfa0ba06b18da9e435978ba41eb4dbde
 workflow-type: tm+mt
-source-wordcount: '2287'
+source-wordcount: '2306'
 ht-degree: 96%
 
 ---
@@ -369,6 +369,12 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 
 
 ## バリエーションの管理 {#managing-variations}
+
+[!CONTEXTUALHELP]
+id="aemcloud_sites_contentfragments_variations"
+title="バリエーションの管理"
+abstract="特定のチャネルで使用するコンテンツのバリエーションを作成する方法を説明します。"
+additional-url="https://video.tv.adobe.com/v/333295" text="コンテンツフラグメントのバリエーション"
 
 ### バリエーションの作成 {#creating-a-variation}
 
