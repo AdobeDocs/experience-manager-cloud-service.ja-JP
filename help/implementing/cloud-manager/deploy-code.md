@@ -2,10 +2,10 @@
 title: コードのデプロイ
 description: AEM as a Cloud Service の Cloud Manager パイプラインを使用してコードをデプロイする方法を説明します。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: cb08fcbd6c1060466ca9e6b4639774d43b70c83c
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 100%
+source-wordcount: '1220'
+ht-degree: 98%
 
 ---
 
@@ -122,6 +122,10 @@ AEM サイト訪問者への影響を最小限に抑えるために、実稼動�
 ## デプロイメントプロセス {#deployment-process}
 
 Cloud Service のすべてのデプロイメントでは、ダウンタイムをなくすために、ローリングプロセスに従います。詳しくは、[ローリングデプロイメントの仕組み](/help/implementing/deploying/overview.md#how-rolling-deployments-work)を参照してください。
+
+>[!NOTE]
+>
+>Dispatcher のキャッシュは、デプロイメントのたびにワイプアウトされます。 その後、新しいパブリッシュノードがトラフィックを受け入れる前にウォームアップされます。
 
 ## 実稼動デプロイメントの再実行 {#Reexecute-Deployment}
 
