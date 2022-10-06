@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service の概要に
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 05adf79b66c36e6354fe95fe4d5f654b49980589
+source-git-commit: 115c98b207d3dea89cbeb3dbc8559a81efefe461
 workflow-type: tm+mt
-source-wordcount: '3726'
+source-wordcount: '3729'
 ht-degree: 94%
 
 ---
@@ -68,6 +68,7 @@ ht-degree: 94%
    + Cloud Manager のリリースノート {#cloud-manager}
       + [最新のリリースノート](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2022 年 {#2022}
+         + [リリースノート（2022.9.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-9-0.md)
          + [リリースノート（2022.8.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-8-0.md)
          + [リリースノート（2022.7.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-7-0.md)
          + [リリースノート（2022.6.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-6-0.md)
@@ -283,7 +284,7 @@ ht-degree: 94%
          + [AEMでのニュースレターの作成](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
    + 管理 {#administering}
       + コンテンツフラグメント {#content-fragments}
-         + [コンテンツフラグメントの操作](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+         + [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/content-fragments.md)
          + [コンテンツフラグメントと GraphQL のヘッドレス配信](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
          + [インスタンスに対するコンテンツフラグメント機能の有効化](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
          + [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
@@ -410,7 +411,7 @@ ht-degree: 94%
       + [ [!DNL Brand Portal] へのアセットの公開](/help/assets/publish-to-brand-portal.md)
       + [アセットを [!DNL Brand Portal] から  [!DNL Assets] に公開する](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ja)
    + コンテンツフラグメント {#content-fragments}
-      + [コンテンツフラグメントの操作](/help/assets/content-fragments/content-fragments.md)
+      + [コンテンツフラグメントの使用方法](/help/assets/content-fragments/content-fragments.md)
       + [コンテンツフラグメントと GraphQL のヘッドレス配信](/help/assets/content-fragments/content-fragments-graphql.md)
       + [インスタンスに対するコンテンツフラグメント機能の有効化](/help/assets/content-fragments/content-fragments-configuration-browser.md)
       + [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
