@@ -2,10 +2,10 @@
 title: ソースからのコンテンツの抽出
 description: ソースからのコンテンツの抽出
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: a2e14d73fd6b8138799799c6408a0846224cd8c9
+source-git-commit: 509715eb6324a370e28d681111ee0fd3fa2a7b44
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 100%
    >[!IMPORTANT]
    >
    >抽出キーが有効で、有効期限に近づいていないことを確認します。有効期限が近い場合は、移行セットを選択して「プロパティ」をクリックすることで、抽出キーを更新できます。「**更新**」をクリックします。Cloud Acceleration Manager が表示されるので、そこで「**抽出キーをコピー**」をクリックできます。「**抽出キーをコピー**」をクリックするたびに、新しい抽出キーが生成され、作成日から 14 日間有効です。
-   >[!画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
 1. 抽出ダイアログが表示されます。「**抽出**」をクリックして、抽出段階を開始します。
 
