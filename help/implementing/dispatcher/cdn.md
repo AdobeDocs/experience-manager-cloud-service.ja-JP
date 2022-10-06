@@ -3,10 +3,10 @@ title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 2e0846ba3addf2ecc7d075d4da85620d7d9e9e2f
+source-git-commit: 95dfcdbc434e4c65bbcae84d6cb45ecd1601f14a
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 87%
+source-wordcount: '1139'
+ht-degree: 77%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
 >title="AEM as a Cloud Service での CDN"
->abstract="AEM as Cloud Service の出荷時には、組み込みの CDN が搭載されています。その主な目的は、ブラウザーの近くの CDN エッジノードからキャッシュ可能なコンテンツを配信することで、待ち時間を減らすことです。AEM アプリケーションの最適なパフォーマンスを得るために、完全に管理および設定されています。"
+>abstract="AEM as Cloud Service の出荷時には、組み込みの CDN が搭載されています。主な目的は、ブラウザーの近くの CDN エッジノードからキャッシュ可能なコンテンツを配信することで、待ち時間を減らすことです。 AEM アプリケーションの最適なパフォーマンスを得るために、完全に管理および設定されています。"
 
 AEM as Cloud Service の出荷時には、組み込みの CDN が搭載されています。その主な目的は、ブラウザーの近くの CDN エッジノードからキャッシュ可能なコンテンツを配信することで、待ち時間を減らすことです。AEM アプリケーションの最適なパフォーマンスを得るために、完全に管理および設定されています。
 
@@ -25,7 +25,7 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 
 ## AEM 管理による CDN  {#aem-managed-cdn}
 
-次のセクションの説明に従って、Cloud Manager セルフサービス UI を使用し、AEM の標準搭載 CDN を使用してコンテンツ配信の準備を行います。
+標準搭載のAEM CDN を使用してコンテンツ配信に備えて Cloud Manager のセルフサービス UI を使用するには、以下の節に従います。
 
 1. [SSL 証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -38,7 +38,7 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 
 >[!CAUTION]
 >
->許可されている IP からの要求のみが AEM 管理による CDN で処理されます。AEM 管理による CDN に対して独自の CDN を指定する場合は、CDN の IP が許可リストに含まれていることを確認します。
+>許可されている IP からのリクエストのみがAEM管理 CDN によって提供されます。 AEM 管理による CDN に対して独自の CDN を指定する場合は、CDN の IP が許可リストに含まれていることを確認します。
 
 ## 顧客 CDN で AEM 管理 CDN を参照する {#point-to-point-CDN}
 
@@ -61,7 +61,7 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 
 設定手順：
 
-1. CDN が Adobe CDN の入口を接触チャネルドメインとして指すようにします（例：`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`）。
+1. CDN で、AdobeCDN の入口をオリジンドメインとして指定します。 （例：`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`）。
 1. また、SNI も Adobe CDN の入口に設定する必要があります。。
 1. ホストヘッダーを接触チャネルドメインに設定します（例：`Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`）。
 1. AEM がホストヘッダーを決定できるように、`X-Forwarded-Host` ヘッダーにドメイン名を設定します（例：`X-Forwarded-Host:example.com`）。
@@ -120,6 +120,19 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 ![Cloudflare1](assets/cloudflare1.png "雲フレア")
 ![Cloudflare2](assets/cloudflare2.png "雲フレア")
+
+## コンテンツの配置 {#content-disposition}
+
+パブリッシュ層では、BLOB を提供する際のデフォルトは添付ファイルとして使用されます。 これは、標準を使用して上書きできます [コンテンツ配置ヘッダー](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) dispatcher 内で使用する必要があります。
+
+設定の例を次に示します。
+
+```
+<LocationMatch "^\/content\/dam.*\.(pdf).*">
+ Header unset Content-Disposition
+ Header set Content-Disposition inline
+</LocationMatch>
+```
 
 ## 位置情報ヘッダー {#geo-headers}
 
