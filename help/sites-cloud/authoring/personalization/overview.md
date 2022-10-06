@@ -2,10 +2,10 @@
 title: パーソナライゼーションとコンテンツのターゲティング
 description: AEMを使用して、パーソナライズされたターゲットコンテンツを作成する方法を説明します
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: d2975ec84745f9520ead89588ab727af8e43b740
+source-git-commit: f2466cb5cda759f0c97cd69810d208d47fb73b98
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 13%
+source-wordcount: '1056'
+ht-degree: 12%
 
 ---
 
@@ -111,29 +111,32 @@ AEM ContextHub 内では、オーディエンスは、ルール（条件）に�
 
 ### AEM ContextHub {#aem-contexthub}
 
-AEMには、ページリクエストを処理し、表示するコンテンツを決定する組み込みのターゲティングエンジン ContextHub が用意されています。 AEM ターゲティングエンジンを使用する場合、エクスペリエンスのオーディエンス定義に使用できるセグメントは、AEM で作成されるセグメントのみとなります。
+AEMには、組み込みのターゲティングエンジンが用意されています。 [ContextHub](/help/implementing/developing/personalization/contexthub.md) はページリクエストを処理し、表示するコンテンツを決定します。 AEM ターゲティングエンジンを使用する場合、エクスペリエンスのオーディエンス定義に使用できるセグメントは、AEM で作成されるセグメントのみとなります。
 
 ### Adobe Target {#adobe-target}
 
-Adobe Target ターゲティングエンジンを使用すると、ページの訪問から収集された情報が Adobe Target で追跡されます。
+この [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) ターゲティングエンジンによって、ページ訪問から収集された情報がAdobe Targetで追跡されます。
 
 * このターゲティングエンジンを使用する場合、エクスペリエンスのオーディエンス定義には Adobe Target から読み込んだセグメントを使用します。
 * Adobe Target エンジンを使用するアクティビティは、[Target と同期](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target)します。
 
-このエンジンを使用できるのは、[Adobe Target と統合](/help/sites-cloud/integrating/integration-adobe-target-ims.md)している場合のみです。
+このエンジンを使用できるのは、[Adobe Target と統合](/help/sites-cloud/integrating/integrating-adobe-target.md)している場合のみです。
 
 ## パーソナライズされたコンテンツの設定方法 {#how-to-setup-personalized-content}
 
 パーソナライズされたコンテンツを配信するには、次のように様々な手順と定義が必要です。
 
-1. AEMをターゲティングエンジンと統合します。
+1. 次のいずれかの方法でターゲティングエンジンを設定します。
+
+   1. 設定 [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)
+   1. との統合 [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 
 1. オーディエンスを設定します。
 
-   1. ターゲティングエンジンに応じて、オーディエンスまたはセグメントをルールと共に定義します。
+   1. ターゲティングエンジンに応じて、 [ターゲットオーディエンス](https://experienceleague.adobe.com/docs/target/using/audiences/target.html) または [ContextHub セグメント](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)とルールを組み合わせて使用します。
 
-1. ブランドとアクティビティを作成します。
+1. を [ブランドとアクティビティ](/help/sites-cloud/authoring/personalization/activities.md).
 
 1. 様々なオーディエンスに表示するエクスペリエンスの選択を作成します。
 
-1. 特定のオーディエンス（セグメント）に対してターゲット設定することで、これらのエクスペリエンスをパーソナライズします。
+1. これらのエクスペリエンスをパーソナライズするには、 [ターゲット](/help/sites-cloud/authoring/personalization/targeted-content.md) 特定のオーディエンス（セグメント）に割り当てられます。
