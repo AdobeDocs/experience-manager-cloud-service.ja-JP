@@ -2,10 +2,10 @@
 title: コードのデプロイ
 description: AEM as a Cloud Service の Cloud Manager パイプラインを使用してコードをデプロイする方法を説明します。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: cb08fcbd6c1060466ca9e6b4639774d43b70c83c
+source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 98%
+source-wordcount: '1221'
+ht-degree: 97%
 
 ---
 
@@ -55,7 +55,7 @@ _コードスキャン、機能テスト、UI テスト、エクスペリエン�
 
 **ステージデプロイメント**&#x200B;フェーズには、以下のステップが含まれます。
 
-* **検証** - このステップでは、現在使用可能なリソースを使用するようにパイプラインが設定されていることを確認します。例えば、設定済みのブランチが存在することや環境が使用可能であることをテストします。
+* **検証** - このステップでは、現在使用可能なリソースを使用するようにパイプラインが設定されていることを確認します。例えば、設定済みのブランチが存在し、環境が使用可能であることをテストします。
 * **ビルドテストとユニットテスト - このステップでは、コンテナ化されたビルドプロセスを実行します。**
    * ビルド環境について詳しくは、[ビルド環境の詳細](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)を参照してください。
 * **コードスキャン** - このステップでは、アプリケーションコードの品質を評価します。

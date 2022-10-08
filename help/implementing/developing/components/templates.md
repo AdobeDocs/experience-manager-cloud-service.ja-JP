@@ -2,10 +2,10 @@
 title: ページテンプレート
 description: ページテンプレートは、新しいページのベースとして使用するページを作成する際に使用します
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '3296'
-ht-degree: 100%
+source-wordcount: '3297'
+ht-degree: 98%
 
 ---
 
@@ -188,7 +188,7 @@ ht-degree: 100%
    * 型：`String`
    * 値：**テンプレート**&#x200B;コンソールに表示される（フォルダーの）タイトルです。
 
-1. 作成者が新しいフォルダーにテンプレートを作成できるようにするには、標準のオーサリング権限（`content-authors` など）に加え、グループを割り当てて作成者に必要なアクセス権限（ACL）を定義する必要があります。
+1. 標準のオーサリング権限（例： ）に加えて、 `content-authors`) 作成者が新しいフォルダーにテンプレートを作成できるようにするには、グループを割り当てて、作成者に必要なアクセス権 (ACL) を定義する必要があります。
 
    割り当てる必要があるデフォルトのグループは、`template-authors` グループです。詳しくは、[ACL とグループ](#acls-and-groups)の節を参照してください。
 

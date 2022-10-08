@@ -3,10 +3,10 @@ title: AMS から AEM as a Cloud Service への Dispatcher 設定の移行
 description: AMS から AEM as a Cloud Service への Dispatcher 設定の移行
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1446'
-ht-degree: 100%
+source-wordcount: '1447'
+ht-degree: 98%
 
 ---
 
@@ -100,7 +100,7 @@ $ validator httpd .
 
 ### ファームファイルの名前を変更する
 
-`conf.d/enabled_farms` 内のすべてのファーム名は、`*.farm` のパターンに合わせて変更する必要があります。例えば、`customerX_farm.any` という名前のファームファイル名は、`customerX.farm` に変更します。
+内のすべてのファーム `conf.d/enabled_farms` は、パターンに合わせて名前を変更する必要があります `*.farm`（例：というファームファイル） `customerX_farm.any` 名前を変更する `customerX.farm`.
 
 ### キャッシュを確認する
 

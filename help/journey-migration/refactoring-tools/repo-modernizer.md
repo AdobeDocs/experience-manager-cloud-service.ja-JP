@@ -2,10 +2,10 @@
 title: Repository Modernizer
 description: Repository Modernizer
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 100%
+source-wordcount: '300'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ Repository Modenizer は、次のデプロイメント構造を作成するこ�
 
 * `ui.apps` パッケージは `/apps` にデプロイされ、すべてのコードが含まれます。
 
-* `ui.content` パッケージは実行時に書き込み可能な領域（例：`/content`、 `/conf`、`/home`のいずれか、または `/apps` 以外）にデプロイされ、すべてのコンテンツと設定が含まれます。
+* `ui.content` パッケージは、実行時に書き込み可能な領域にデプロイされます ( 例： `/content`, `/conf`, `/home`または何も `/apps`) およびには、すべてのコンテンツと設定が含まれます。
 
 * `all` パッケージは、`ui.apps` サブパッケージおよび `ui.content` サブパッケージを含むコンテナパッケージです。
 

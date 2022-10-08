@@ -2,16 +2,16 @@
 title: URL の外部化
 description: Externalizer は、プログラムによってリソースパスを外部 URL および絶対 URL に変換できる OSGi サービスです。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 28903c1cbadece9d0ef575cdc0f0d7fd32219538
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 80%
+source-wordcount: '661'
+ht-degree: 75%
 
 ---
 
 # URL の外部化 {#externalizing-urls}
 
-AEM の **Externalizer** は、プログラムによってリソースパス（例：`/path/to/my/page`）を外部の絶対 URL（例：`https://www.mycompany.com/path/to/my/page`）に変換できるようにする OSGi サービスであり、その変換はパスに事前設定済みの DNS をプレフィックスとして付けることで実現します。
+AEMで、 **Externalizer** は、リソースパス ( 例えば、 `/path/to/my/page`) を外部 URL や絶対 URL( 例えば、 `https://www.mycompany.com/path/to/my/page`) を追加する必要があります。
 
 AEM as a Cloud Service インスタンスには自分の外部向け URL がわからず、また、場合によってはリンクをリクエストスコープの範囲外で作成する必要があるので、このサービスは、そのような外部 URL を設定して作成するための一元的な場所を提供します。
 

@@ -4,10 +4,10 @@ description: コンテンツフラグメントに関連付けられたコンテ�
 feature: Content Fragments
 role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 60%
+source-wordcount: '244'
+ht-degree: 53%
 
 ---
 
@@ -19,7 +19,7 @@ AEM関連コンテンツ機能には接続が用意されており、フラグ�
 
 >[!NOTE]
 >
->[ビジュアルアセット（画像など）](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)をフラグメントやページに追加するには、様々な方法があります。
+>追加する方法は様々です。 [ビジュアルアセット（例：画像）](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) をフラグメントやページに追加します。
 
 関連付けを作成するには、最初に[メディアアセットをコレクションに追加](/help/assets/manage-collections.md)する必要があります。それが完了した後で以下を実行できます。
 

@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,DRM
 role: User,Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: f993148a9f678cfdaf0693e4964f02b9163cf2ff
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 100%
@@ -74,7 +74,7 @@ ht-degree: 100%
 1. Open [!DNL Experience Manager] Configuration Manager.
 1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time-based Scheduler]** is selected, which 
 
-1.  For example, the example expression '0 0 0 &ast; &ast; ?' triggers the job at 0000 hrs.
+1. For example, the example expression '0 0 0 &ast; &ast; ?' triggers the job at 0000 hrs.
 
 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
 

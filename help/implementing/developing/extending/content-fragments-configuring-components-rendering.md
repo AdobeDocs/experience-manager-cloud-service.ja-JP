@@ -2,10 +2,10 @@
 title: レンダリングコンポーネントのコンテンツフラグメントの設定
 description: レンダリングコンポーネントのコンテンツフラグメントの設定
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 100%
+source-wordcount: '522'
+ht-degree: 89%
 
 ---
 
@@ -73,12 +73,12 @@ OSGi の設定は次のとおりです。
   <tr>
    <td><strong>リソースタイプ</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>登録するリソースの種類。例：<br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>登録するリソースの種類。例： <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>参照のプロパティ</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>フラグメントへの参照を含むプロパティの名前。例：<code>fragmentPath</code> <code>fileReference</code></td>
+   <td>フラグメントへの参照を含むプロパティの名前。例： <code>fragmentPath</code> または <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>要素のプロパティ</strong></td>

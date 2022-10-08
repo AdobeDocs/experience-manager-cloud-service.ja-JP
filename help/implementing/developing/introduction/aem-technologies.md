@@ -2,10 +2,10 @@
 title: AEM 技術基盤
 description: AEM の構造化および JCR、Sling、OSGi などの基本的なテクノロジーを含む、AEM の技術基盤の概要です。
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2186'
-ht-degree: 100%
+source-wordcount: '2191'
+ht-degree: 95%
 
 ---
 
@@ -71,7 +71,7 @@ Sling を使用した開発の概要について詳しくは、『[15 分間で�
 Sling は *コンテンツ中心型* です。これは、各（HTTP）リクエストが JCR リソース（リポジトリーノード）の形でコンテンツにマッピングされるため、コンテンツに焦点を当てた処理が行われることを意味します。
 
 * 最初のターゲットは、コンテンツを保持しているリソース（JCR ノード）です。
-* 次に、表現、つまりスクリプトが、リソースプロパティから、リクエストの一部（セレクターや拡張子など）と組み合わせて配置されます。
+* 第 2 に、表現（スクリプト）は、リソースプロパティから、リクエストの特定の部分（セレクターや拡張子など）と組み合わせて配置されます
 
 ### RESTful Sling {#restful-sling}
 
@@ -121,10 +121,10 @@ Sling を使用して、特定のエンティティをレンダリングする�
 
 #### リクエストのリソースへのマッピング {#mapping-requests-to-resources}
 
-リクエストは分解され、必要な情報が抽出されます。リポジトリーで、リクエストされたリソース（コンテンツノード）の検索が行われます。
+リクエストを分解し、必要な情報を抽出します。リポジトリーで、リクエストされたリソース（コンテンツノード）を検索します。
 
-* 最初の Sling では、リクエストで指定されている場所（例：`../content/corporate/jobs/developer.html`）にノードが存在するかどうかを確認します。
-* ノードが見つからない場合は、拡張子なしで検索を繰り返します（例：`../content/corporate/jobs/developer`）。
+* 最初の Sling は、リクエストで指定された場所にノードが存在するかどうかを確認します。例： `../content/corporate/jobs/developer.html`
+* ノードが見つからない場合は、拡張機能は削除され、検索が繰り返されます。例： `../content/corporate/jobs/developer`
 * それでもノードが見つからない場合、Sling は HTTP コード 404（Not Found）を返します。
 
 Sling では JCR ノード以外のものをリソースとすることもできますが、これは高度な機能です。
@@ -146,7 +146,7 @@ Sling では JCR ノード以外のものをリソースとすることもでき
 
 その他の注意点は次のとおりです。
 
-* メソッド（GET、POST）が必要なときは、HTTP の仕様に従って大文字で指定します（例：`jobs.POST.esp`）。
+* メソッド (GET、POST) が必要な場合は、HTTP の仕様に従って大文字で指定します。例： `jobs.POST.esp`
 * 様々なスクリプトエンジンがサポートされていますが、一般的な推奨スクリプトは HTL と JavaScript です。
 
 AEM の特定のインスタンスでサポートされているスクリプトエンジンのリストは、Felix Management Console（`http://<host>:<port>/system/console/slingscripting`）にあります。
@@ -278,7 +278,7 @@ OSGi（Open Services Gateway Initiative）は、モジュラー型アプリケ�
 * アップデート
 * アンインストール
 * 現在のステータスの確認
-* 特定のバンドルに関する詳細情報（記号名、バージョン、場所など）へのアクセス
+* 特定のバンドルに関する詳細な情報（シンボリック名、バージョン、場所など）にアクセス
 
 詳しくは、「[AEM as a Cloud Service の OSGI の設定](/help/implementing/deploying/configuring-osgi.md)」を参照してください。
 

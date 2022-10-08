@@ -2,10 +2,10 @@
 title: AEM Developer Tools for Eclipse
 description: AEM Developer Tools for Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1182'
-ht-degree: 98%
+source-wordcount: '1183'
+ht-degree: 96%
 
 ---
 
@@ -196,7 +196,7 @@ AEM Developer Tools for Eclipse には、サンプルのマルチモジュール
 
 プロジェクトからパッケージを再ビルドする場合は、`PROJECT.ui.apps` または `PROJECT.ui.content` を右クリックし、**Run As**／**Maven install** を選択します。
 
-これで、ターゲットフォルダーが作成されて、その中にパッケージ（例：`PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`）が含まれています。
+これで、パッケージを含むターゲットフォルダーが作成されました ( 例： `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`) をクリックします。
 
 ## トラブルシューティング {#troubleshooting}
 

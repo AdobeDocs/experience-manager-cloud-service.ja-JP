@@ -1,10 +1,10 @@
 ---
 title: AMS を Adobe Experience Manager as a Cloud Service Dispatcher 設定に変換する方法
 description: AMS を Adobe Experience Manager as a Cloud Service Dispatcher 設定に変換する方法
-source-git-commit: 42c25579e66ed2a98ded1cca403292fd1843e9af
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 100%
+source-wordcount: '1342'
+ht-degree: 96%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 100%
 
 1. ポート 80 を参照しない仮想ホストセクションを削除またはコメント化する
 
-   仮想ホストファイルに、ポート 80 以外のポートを排他的に参照するセクションが、次のように残っている場合：
+   仮想ホストファイルに、ポート 80 以外のポートを排他的に参照するセクションが残っている場合は、次のように指定します。
 
    `<VirtualHost *:443>`
    `...`
@@ -86,7 +86,7 @@ ht-degree: 100%
 
 1. **ファームファイルの名前を変更する**
 
-   conf.dispatcher.d/enabled_farms 内のファームファイルはすべて、*.farm というパターンに一致するように名前を変更する必要があります。例えば、customerX_farm.any というファームファイルは、customerX.farm という名前に変更します。
+   conf.dispatcher.d/enabled_farms 内のファーム名はすべて、*.farm というパターンに合わせて変更する必要があります。例えば、customerX_farm.any というファームファイル名は、customerX.farm という名前に変更します。
 
 1. **キャッシュを確認する**
 

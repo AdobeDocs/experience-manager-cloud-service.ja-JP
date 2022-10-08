@@ -2,10 +2,10 @@
 title: コンテンツフラグメントのカスタマイズと拡張
 description: コンテンツフラグメントは、標準アセットを拡張します。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1808'
-ht-degree: 100%
+source-wordcount: '1811'
+ht-degree: 96%
 
 ---
 
@@ -63,11 +63,9 @@ Adobe Experience Manager as a Cloud Service 内で、コンテンツフラグメ
    * 要素データは次のプライマリサブノードに格納されます。
       `jcr:content/data/master`
 
-   * バリエーションは、そのバリエーション名のサブノードに格納されます。
-例：`jcr:content/data/myvariation`
+   * バリエーションは、そのバリエーションの名前を持つサブノードに格納されます。例： `jcr:content/data/myvariation`
 
-   * 各要素のデータは、その要素名のプロパティとしてそれぞれのサブノードに格納されます。
-例えば `text` 要素のコンテンツは、`text` プロパティとして `jcr:content/data/master` に格納されます。
+   * 各要素のデータは、それぞれのサブノードに、要素名を持つプロパティとして保存されます。例えば、要素のコンテンツ `text` はプロパティとして保存されます `text` オン `jcr:content/data/master`
 
 * メタデータと関連コンテンツは、`jcr:content/metadata` に格納されます。
 ただし、タイトルと説明は従来のメタデータと見なされないので、次の場所に格納されます。 
@@ -182,7 +180,7 @@ Assets コアと統合するには：
 
    このインターフェイスでは、次のことを実行できます。
 
-   * 基本データを管理する（名前の取得、タイトルまたは説明の取得／設定など）
+   * 基本データの管理 ( 例：get name;タイトル/説明を取得/設定
    * メタデータにアクセスする
    * 要素にアクセスする
 

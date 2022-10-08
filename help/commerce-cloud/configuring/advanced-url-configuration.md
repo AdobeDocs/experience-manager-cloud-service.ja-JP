@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2039'
-ht-degree: 100%
+source-wordcount: '2043'
+ht-degree: 98%
 
 ---
 
@@ -50,10 +50,10 @@ SEO の要件とニーズに応じて `UrlProvider` サービスを設定する�
 [Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)の場合は次のとおりです。
 
 * `{{page}}` は `/content/venia/us/en/products/product-page` に置き換えられます
-* `{{sku}}` は製品の SKU（例：`VP09`）に置き換えられます
-* `{{url_key}}` は製品の `url_key` プロパティ（例：`lenora-crochet-shorts`）に置き換えられます
-* `{{url_path}}` は製品の `url_path`（例：`venia-bottoms/venia-pants/lenora-crochet-shorts`）に置き換えられます
-* `{{variant_sku}}` は、現在選択されているバリアント（例：`VP09-KH-S`）に置き換えられます
+* `{{sku}}` が製品の sku に置き換えられます（例： ）。 `VP09`
+* `{{url_key}}` が製品の `url_key` プロパティ。例： `lenora-crochet-shorts`
+* `{{url_path}}` が製品の `url_path`例： `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` は、現在選択されているバリアントに置き換えられます（例： ）。 `VP09-KH-S`
 
 `url_path` が非推奨になったため、あらかじめ定義された製品のURLフォーマットは製品の `url_rewrites` を使用し、`url_path` が利用できない場合は最もパスセグメントが多いものを代替手段として選択します。
 

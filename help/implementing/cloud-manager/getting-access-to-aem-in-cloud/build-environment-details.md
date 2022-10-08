@@ -2,10 +2,10 @@
 title: ビルド環境
 description: Cloud Manager のビルド環境と、そこでコードがどのようにビルドされテストされるかを説明します。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 0e1fbef77cb42dd8bb280bb971dc0643019901a3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 93%
+source-wordcount: '986'
+ht-degree: 91%
 
 ---
 
@@ -220,7 +220,7 @@ Maven `pom.xml` ファイル内で使用する場合は、通常、次のよう�
         </profile>
 ```
 
-同じ方法を、言語固有のパッケージ（RubyGems 用の `gem` や Python パッケージ用の `pip` など）のインストールにも使用できます。
+同じ方法を、例えば `gem` RubyGems または `pip` （Python パッケージ用）
 
 >[!NOTE]
 >

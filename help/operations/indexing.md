@@ -2,10 +2,10 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 99%
+source-wordcount: '2255'
+ht-degree: 97%
 
 ---
 
@@ -56,7 +56,7 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 
 1. 標準提供のインデックス。例として、`/oak:index/cqPageLucene-2` があります。
 1. 標準提供のインデックスのカスタマイズ。お客様がカスタマイズを定義できます。例として、`/oak:index/cqPageLucene-2-custom-1` があります。
-1. 完全なカスタムインデックス。例として、`/oak:index/acme.product-1-custom-2` があります。名前の競合を避けるために、完全なカスタムインデックスには `acme.` のようなプレフィックスを付ける必要があります。
+1. 完全なカスタムインデックス。例として、`/oak:index/acme.product-1-custom-2` があります。名前の競合を避けるために、完全なカスタムインデックスにはプレフィックスが必要です（例： ）。 `acme.`
 
 標準提供のインデックスのカスタマイズと完全なカスタムインデックスの両方に、`-custom-` を含める必要があることに注意してください。完全なカスタムインデックスのみ、プレフィックスで始める必要があります。
 
@@ -88,7 +88,7 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 
 * インデックス定義自体（例 `/oak:index/ntBaseLucene-custom-1`）
 
-カスタムインデックスまたはカスタマイズ済みインデックスをデプロイするには、インデックス定義（`/oak:index/definitionname`）は、Git と Cloud Manager のデプロイメントプロセスを使用して `ui.apps` を介して配信される必要があります。FileVault フィルター、例えば `ui.apps/src/main/content/META-INF/vault/filter.xml` では、カスタムおよびカスタマイズ済み各インデックスを、`<filter root="/oak:index/damAssetLucene-7-custom-1"/>` のように個別にリストします。カスタムまたはカスタマイズ済みインデックス定義自体が、次のように `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml` ファイルに保存されます。
+カスタムインデックスまたはカスタマイズ済みインデックスをデプロイするには、インデックス定義（`/oak:index/definitionname`）は、Git と Cloud Manager のデプロイメントプロセスを使用して `ui.apps` を介して配信される必要があります。FileVault フィルタでは、次のようになります。 `ui.apps/src/main/content/META-INF/vault/filter.xml`、例えば、カスタムおよびカスタマイズされた各インデックスを個別にリストします。 `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. カスタムまたはカスタマイズ済みインデックス定義自体が、次のように `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml` ファイルに保存されます。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

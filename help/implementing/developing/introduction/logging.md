@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service 向けのログ
 description: AEM as a Cloud Service のログを使用して一元的なログサービスのグローバルパラメーターを設定する方法、個々のサービスに特有の設定またはデータのログ記録をリクエストする方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 437c6b3bcd331bf385f2845bfdb0be656a57488e
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
 source-wordcount: '2351'
 ht-degree: 99%

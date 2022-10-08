@@ -2,10 +2,10 @@
 title: Query Builder 用のカスタム述語エバリュエーターの実装
 description: AEM の Query Builder を使用すると、コンテンツリポジトリーへのクエリをカスタマイズして簡単に実行できます
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 100%
+source-wordcount: '669'
+ht-degree: 95%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 100%
 
 述語エバリュエーターは、クエリの制約を定義する特定の述語を評価します。
 
-抽象的な検索制約（`width>200` など）を、実際のコンテンツモデルに合った具体的な JCR クエリ（例：`metadata/@width > 200`）にマッピングします。ノードを手動でフィルタリングして、制約をチェックすることもできます。
+これは、より高いレベルの検索制約 ( `width>200`) を実際のコンテンツモデルに適合する特定の JCR クエリ ( 例えば、 `metadata/@width > 200`) をクリックします。 ノードを手動でフィルタリングして、制約をチェックすることもできます。
 
 >[!TIP]
 >
@@ -60,7 +60,7 @@ ht-degree: 100%
 
 * `cq:lastReplicated`：最終レプリケーションアクションの日付を格納
 * `cq:lastReplicatedBy`：最終レプリケーションアクションを呼び出したユーザーの ID を格納
-* `cq:lastReplicationAction`：最終レプリケーションアクション（アクティベート、アクティベート解除など）を格納
+* `cq:lastReplicationAction` 最後のレプリケーションアクション（Activation、Deactivation など）を保存する
 
 #### デフォルトの述語エバリュエーターを使用したレプリケーションメタデータのクエリ {#querying-replication-metadata-with-default-predicate-evaluators}
 

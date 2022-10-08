@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 リリースのリリースノート。'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: b71cd1394260c8ec14b661934199632987a034f6
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 100%
+source-wordcount: '1153'
+ht-degree: 97%
 
 ---
 
@@ -94,7 +94,7 @@ ht-degree: 100%
 
    ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
-* サーバー間 API 呼び出しの認証に使用される資格情報（例：GraphQL API リクエストの場合）は、Developer Console からセルフサービス方式で有効期限が切れる前に更新できるようになりました。詳しくは、[ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)を参照してください。
+* サーバー間 API 呼び出しの認証に使用される資格情報（例えば、GraphQL API 要求の場合）を、開発者コンソールからセルフサービス方式で有効期限前に更新できるようになりました。 詳しくは、[ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)を参照してください。
 
 * 以前に有効にしていなかったバージョンのパージと監査ログのパージのメンテナンスタスクが、新しい環境で有効になります。関連する値を、[メンテナンスタスク](/help/operations/maintenance.md)記事で参照してください。
 

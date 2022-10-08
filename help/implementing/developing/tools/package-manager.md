@@ -4,10 +4,10 @@ description: AE の基本を学ぶ。パッケージマネージャーを使用�
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '3584'
-ht-degree: 100%
+source-wordcount: '3585'
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ AEM as a Cloud Service のアプリケーション用に作成されたコンテ
 
 >[!NOTE]
 >
->パッケージには、コンテンツのみを含めることができます。すべての機能（`/apps` で保存されたコンテンツなど）は、 [Cloud Manager の CI/CD パイプラインを使用してデプロイ](/help/implementing/cloud-manager/deploy-code.md) する必要があります。
+>パッケージには、コンテンツのみを含めることができます。すべての機能 ( 例えば、 `/apps`) は [Cloud Manager の CI/CD パイプラインを使用してデプロイされます。](/help/implementing/cloud-manager/deploy-code.md)
 
 >[!IMPORTANT]
 >

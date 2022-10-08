@@ -2,10 +2,10 @@
 title: ページの公開
 description: AEM を使用してページを公開および非公開にする方法
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 5a804895013e19592f918341bbc7921261b26945
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1811'
-ht-degree: 97%
+source-wordcount: '1812'
+ht-degree: 95%
 
 ---
 
@@ -32,7 +32,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
    * 公開／非公開と同義です。
    * これらの用語は、以前のバージョンの AEM で使用されていました。
 * **レプリケート／レプリケーション**
-   * ページを公開する際に行われる、環境間でのデータ（ページコンテンツ、ファイル、コード、ユーザーコメントなど）の移動を表す技術用語です。
+   * ページを公開する際に環境間で行われるデータ（ページコンテンツ、ファイル、コード、ユーザーコメントなど）の移動を表す技術用語です。
    * これらの用語は主に開発者が使用します。
 
 ## ページの公開 {#publishing-pages-1}

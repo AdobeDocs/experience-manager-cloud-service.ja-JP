@@ -2,10 +2,10 @@
 title: 基本操作
 description: AEM のナビゲーションとその基本的な使用方法を習得します
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: df29eb83efc026bc7fc21dde228cdac47361282d
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2993'
-ht-degree: 98%
+source-wordcount: '2994'
+ht-degree: 97%
 
 ---
 
@@ -208,7 +208,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
 ## アクションツールバー {#actions-toolbar}
 
-リソース（ページやアセットなど）を選択するたびに、様々なアクションがアイコンで示され、ツールバーに説明テキストが表示されます。これらのアクションは、次によって決まります。
+リソース（ページやアセットなど）を選択するたびに、様々なアクションがアイコンで示され、ツールバーに説明テキストが表示されます。 これらのアクションは、次によって決まります。
 
 * 現在のコンソール
 * 現在のコンテキスト

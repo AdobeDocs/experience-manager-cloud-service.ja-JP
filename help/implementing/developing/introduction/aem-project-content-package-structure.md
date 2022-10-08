@@ -2,10 +2,10 @@
 title: AEM プロジェクトの構造
 description: Adobe Experience Manager as a Cloud Service へのデプロイメント用にパッケージ構造を定義する方法について説明します。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2930'
-ht-degree: 99%
+source-wordcount: '2931'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 99%
 
 AEM アプリケーションのデプロイメントは、単一の AEM パッケージで構成する必要があります。次に、そのパッケージには、コード、設定、補助的なベースラインコンテンツなど、アプリケーションが機能するのに必要なあらゆるもので構成されるサブパッケージが含まれている必要があります。
 
-AEM では、**コンテンツ**&#x200B;と&#x200B;**コード**&#x200B;を分離する必要があります。つまり、リポジトリーの `/apps` と実行時に書き込み可能な領域（例：`/content`、`/conf`、`/home`、その他 `/apps` 以外のすべて）の&#x200B;**両方**&#x200B;に 1 つのコンテンツパッケージをデプロイすることは&#x200B;**できません**。代わりに、アプリケーションを AEM にデプロイするには、コードとコンテンツを別々のパッケージに分離する必要があります。
+AEMでは **コンテンツ** および **コード**：単一のコンテンツパッケージを意味します。 **できません** デプロイ先 **両方** `/apps` と実行時に書き込み可能な領域 ( 例： `/content`, `/conf`, `/home`または何も `/apps`) が含まれます。 代わりに、アプリケーションを AEM にデプロイするには、コードとコンテンツを別々のパッケージに分離する必要があります。
 
 このドキュメントで概要を説明しているパッケージ構造は、ローカル開発デプロイメントと AEM as a Cloud Service デプロイメントの&#x200B;**両方**&#x200B;に対応しています。
 
@@ -27,7 +27,7 @@ AEM では、**コンテンツ**&#x200B;と&#x200B;**コード**&#x200B;を分�
 >
 >このドキュメントで概要を説明している設定は、[AEM プロジェクト Maven アーキタイプ 24 以降](https://github.com/adobe/aem-project-archetype/releases)で提供されます。
 
-## リポジトリーの可変領域と不変領域 {#mutable-vs-immutable}
+## リポジトリの可変領域と不変領域 {#mutable-vs-immutable}
 
 `/apps` と `/libs` は AEM の&#x200B;**不変**&#x200B;領域と見なされます。AEM の起動後（例：実行時）に変更（作成、更新、削除）できないからです。実行時に不変領域を変更しようとすると失敗します。
 
@@ -82,7 +82,7 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
 + `ui.content` パッケージには、すべてのコンテンツと設定が含まれています。コンテンツパッケージには、`ui.apps` パッケージまたは `ui.config` パッケージに含まれないすべてのノード定義が含まれます。言い換えれば、`/apps` または `/oak:index` に含まれないすべてが含まれます。`ui.content` パッケージの共通要素には次のものがありますが、これらに限定されるわけではありません。
    + コンテキスト対応の設定
       + `/conf`
-   + 必須の、複雑なコンテンツの構造。すなわち、Repo Init で定義された過去のベースラインコンテンツの構造に基づいて構築され、拡張されるコンテンツの構築。）
+   + 必須の、複雑なコンテンツの構造。すなわち、Repo Init で定義されたベースラインコンテンツの構造に基づいて構築され、そこからさらに拡張されるコンテンツの構築。）
       + `/content`、`/content/dam` など
    + 管理されるタグ付け分類
       + `/content/cq:tags`
@@ -116,7 +116,7 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
       + `/apps/my-app/osgiconfig`
    + すべてのターゲット AEM as a Cloud Service デプロイメントターゲットに適用されるデフォルトの OSGi 設定を含む、共通の OSGi 設定フォルダー
       + `/apps/my-app/osgiconfig/config`
-   + すべてのターゲット AEM as a Cloud Service デプロイメントターゲットに適用されるデフォルトの OSGi 設定を含む、ターゲット固有の OSGi 設定フォルダー
+   + すべてのターゲット AEM as a Cloud Service デプロイメントターゲットに適用されるデフォルトの OSGi 設定を含む、実行モード固有の OSGi 設定フォルダー
       + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
    + Repo Init OSGi 設定スクリプト
       + AEM アプリケーションの論理的な一部である（可変）コンテンツをデプロイする方法として、[Repo Init](#repo-init) を使用することをお勧めします。Repo Init OSGi 設定は、上述のように適切な `config.<runmode>` フォルダーに配置し、次の定義に使用します。
@@ -413,7 +413,7 @@ Maven の依存関係を追加する場合は、Maven の標準的な手法に�
 
 Repo Init スクリプトを含む Repo Init スクリプトは、`scripts` プロパティを介して `RepositoryInitializer` OSGi ファクトリ設定で定義されます。OSGi 設定内で定義されるこれらのスクリプトは、通常の `../config.<runmode>` フォルダーセマンティクスを使用して、実行モードで簡単にスコープできることに注意してください。
 
-スクリプトは通常複数行の宣言なので、JSON ベースの `.cfg.json` 形式よりも `.config` ファイルで定義するほうが容易なことに注意してください。
+スクリプトは通常複数行の宣言なので、JSON ベースの `.cfg.json` 形式よりも `.config` ファイルで定義するほうが簡単です。
 
 `/apps/my-app/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-author.config`
 

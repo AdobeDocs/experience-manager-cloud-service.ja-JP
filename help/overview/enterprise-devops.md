@@ -2,10 +2,10 @@
 title: Enterprise DevOps
 description: デプロイメントやコラボレーションを簡単にするために必要なプロセス、メソッドおよびコミュニケーションについて学習します。
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: 98eaa1390e499f48bb1a615e21b2dfb7a0523c57
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 100%
+source-wordcount: '1002'
+ht-degree: 97%
 
 ---
 
@@ -108,7 +108,7 @@ Adobe Experience Manager（AEM）as a Cloud Service は通常、次のような�
 * その後、ステージング環境でさらにテスト
 * その後初めてコードは実稼動環境にデプロイされる
 
-コード（カスタマイズされた Web アプリケーション機能やデザインテンプレートなど）は通常、異なるコンテンツリポジトリー間でパッケージを書き出したり読み込んだりすることによって転送されます。場合によっては、このレプリケーションを自動プロセスとして設定できます。
+通常、コード（カスタマイズされた Web アプリケーション機能やデザインテンプレートなど）は、様々なコンテンツリポジトリ間でパッケージを書き出したり読み込んだりすることで転送されます。 場合によっては、このレプリケーションを自動プロセスとして設定できます。
 
 AEM as a Cloud Service プロジェクトは、多くの場合、コードのデプロイメントをトリガーします。
 

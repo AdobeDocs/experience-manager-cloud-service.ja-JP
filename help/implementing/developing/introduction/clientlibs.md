@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service でのクライアントサイドライブラリの使用
 description: AEM では、クライアントサイドライブラリフォルダーが提供されています。これにより、クライアントサイドコード（clientlibs）をリポジトリーに格納し、カテゴリ別に整理して、それぞれのカテゴリのコードをクライアントに提供するタイミングと方法を定義できます。
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 014b53dfd35103660772d273dbf49d2388f6d000
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2565'
+source-wordcount: '2566'
 ht-degree: 97%
 
 ---
@@ -348,5 +348,5 @@ YUI は、AEM のデフォルト縮小ツールとして設定されています
 1. **Adobe Granite HTML ライブラリマネージャー**&#x200B;を検索して編集します。
 1. 「**Minify**」オプションを有効にします（まだ有効でない場合）。
 1. **JS Processor Default Configs** の値を `min:gcc` に設定します。
-   * セミコロンで区切られている場合、オプションを渡すことができます（例：`min:gcc;obfuscate=true`）。
+   * セミコロンで区切られている場合、次のようにオプションを渡すことができます。 `min:gcc;obfuscate=true`.
 1. 「**保存**」をクリックして、変更を保存します。

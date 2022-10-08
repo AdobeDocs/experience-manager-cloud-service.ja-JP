@@ -2,9 +2,9 @@
 title: サンドボックスプログラムの概要
 description: サンドボックスプログラムの概要と実稼動プログラムとの違いについて説明します。
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 05cba12cdd14c2e29f6a471047ce95fcf720abc4
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '438'
 ht-degree: 94%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 94%
 
 ### アドバンスドネットワークなし {#advanced-networking}
 
-[高度なネットワーク機能](/help/security/configuring-advanced-networking.md) （例： VPN のセルフサービスプロビジョニング、非標準ポート、専用の出力 IP アドレスなど） は、サンドボックスプログラムでは使用できません。
+[高度なネットワーク機能](/help/security/configuring-advanced-networking.md) （例えば、VPN、非標準ポート、専用のエグレス IP アドレスなどのセルフサービスプロビジョニング） は、サンドボックスプログラムでは使用できません。
 
 ### AEM の手動更新 {#updates}
 

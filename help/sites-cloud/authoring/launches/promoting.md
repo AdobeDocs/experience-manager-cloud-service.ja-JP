@@ -2,10 +2,10 @@
 title: ローンチの昇格
 description: コンテンツを公開する前にソース（実稼動）に戻すには、ローンチページを昇格させる必要があります。
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 100%
+source-wordcount: '818'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 100%
 1. 次を開きます。
    * **サイト**&#x200B;コンソール（ソースページのナビゲーション時）：
       1. [参照レール](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)を開き、[選択モード](/help/sites-cloud/authoring/getting-started/basic-handling.md)を使用して必要なソースページを選択します（または参照レールを選択して開きます。順序はどちらでもかまいません）。すべての参照が表示されます。
-      1. **ローンチ**（例：ローンチ（1））を選択して特定のローンチのリストを表示します。
+      1. 選択 **起動回数** ( 例：ローンチ (1)) を使用して、特定のローンチのリストを表示します。
       1. 特定のローンチを選択して使用可能なアクションを選択します。
       1. 「**ローンチを昇格**」を選択してウィザードを開きます。
    * **サイト**&#x200B;コンソール（ローンチページのナビゲーション時）：

@@ -2,10 +2,10 @@
 title: ContextHub JavaScript API リファレンス
 description: ContextHub コンポーネントをページに追加すると、ContextHub JavaScript API がスクリプトで使用できるようになります
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '4621'
-ht-degree: 100%
+source-wordcount: '4622'
+ht-degree: 99%
 
 ---
 
@@ -58,7 +58,7 @@ ContextHub ストアに対して発生する名前付きイベントを次の表
 | `ContextHub.Constants.EVENT_UI_CONTAINER_OPENED` | ContextHub UI が開かれると実行されます | `ui-container-opened` |
 | `ContextHub.Constants.EVENT_UI_CONTAINER_CLOSED` | ContextHub UI が折りたたまれると実行されます | `ui-container-closed` |
 | `ContextHub.Constants.EVENT_UI_PROPERTY_MODIFIED` | プロパティが変更されると実行されます | `ui-property-modified` |
-| `ContextHub.Constants.EVENT_UI_RENDERED` | ContextHub UI がレンダリングされるたび（例：プロパティの変更後）に実行されます | `ui-rendered` |
+| `ContextHub.Constants.EVENT_UI_RENDERED` | ContextHub UI がレンダリングされるたび（例えば、プロパティの変更後）に実行されます | `ui-rendered` |
 | `ContextHub.Constants.EVENT_UI_INITIALIZED` | UI コンテナが初期化されると実行されます | `ui-initialized` |
 | `ContextHub.Constants.ACTIVE_UI_MODE` | アクティブな UI モードを示します。 | `/_/active-ui-mode` |
 

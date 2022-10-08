@@ -4,10 +4,10 @@ description: Adobe Experience Manager(AEM) のコンテンツフラグメント�
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 91%
+source-wordcount: '2109'
+ht-degree: 90%
 
 ---
 
@@ -63,8 +63,8 @@ Adobe Experience Manager(AEM) をas a Cloud Serviceしたコンテンツフラ�
 
 通信チャネルの数は年々増加しています。通常、チャネルとは配信メカニズムのことであり、次のどちらも指します。
 
-* 物理チャネル（デスクトップ、モバイルなど）
-* 物理チャネルでの配信方法（デスクトップ用の「製品詳細ページ」や「製品カテゴリページ」、モバイル用の「モバイル Web」や「モバイルアプリ」など）
+* 物理チャネル例えば、デスクトップ、モバイルなどです。
+* 物理チャネルでの配信の形式例えば、デスクトップの場合は「製品詳細ページ」、デスクトップの場合は「製品カテゴリページ」、モバイルの場合は「モバイル web」、「モバイルアプリ」です。
 
 しかしながら、すべてのチャネルでのまったく同じコンテンツの使用はお勧めしません。特定のチャネルに合わせてコンテンツを最適化する必要があります。
 
