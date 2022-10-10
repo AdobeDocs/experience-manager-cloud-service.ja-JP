@@ -2,12 +2,13 @@
 title: AEM as a Cloud Service でのクライアントサイドライブラリの使用
 description: AEM では、クライアントサイドライブラリフォルダーが提供されています。これにより、クライアントサイドコード（clientlibs）をリポジトリーに格納し、カテゴリ別に整理して、それぞれのカテゴリのコードをクライアントに提供するタイミングと方法を定義できます。
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 51933d1ed509117f1ed0488900807b74f55ef46b
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2568'
 ht-degree: 97%
 
 ---
+
 
 # AEM as a Cloud Service でのクライアントサイドライブラリの使用 {#using-client-side-libraries}
 
@@ -55,7 +56,7 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルに 1 つの�
 
 各 `cq:ClientLibraryFolder` には、JS ファイルや CSS ファイルのセットと、いくつかのサポートファイルが入力されます（以下を参照）。`cq:ClientLibraryFolder` の重要なプロパティは、次のように設定されます。
 
-* `allowProxy`：すべての clientlibs は `apps` に保存する必要があるため、このプロパティを使用すると、プロキシサーブレットを介してクライアントライブラリにアクセスできます。後述の「[クライアントライブラリフォルダーの配置とプロキシクライアントライブラリサーブレットの使用](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet)」を参照してください。
+* `allowProxy`:すべての clientlibs は、 `apps`を指定すると、プロキシサーブレットを介してクライアントライブラリにアクセスできます。 の節を参照してください。 [クライアントライブラリフォルダーの配置とプロキシクライアントライブラリサーブレットの使用](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) 下
 * `categories`：`cq:ClientLibraryFolder` に含まれる JS ファイルや CSS ファイルのセットのカテゴリを特定します。`categories` プロパティは複数の値を取るため、ライブラリフォルダーを複数のカテゴリの一部にすることができます（これがどのように役立つかについては以下を参照）。
 
 クライアントライブラリフォルダーに 1 つ以上のソースファイルが含まれている場合は、そのソースファイルが実行時に単一の JS ファイルや CSS ファイルに結合されます。生成されるファイルの名前はノード名で、ファイル名の拡張子は `.js` または `.css` です。例えば、`cq.jquery` という名前のライブラリノードからは、 `cq.jquery.js` または `cq.jquery.css` という名前のファイルが生成されます。
@@ -87,7 +88,7 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルに 1 つの�
    * タイプ：Boolean
    * 値：`true`
 1. 静的リソースを管理する必要がある場合は、クライアントライブラリフォルダーの `resources` の下にサブフォルダーを作成します。
-   * `resources` フォルダーの下に静的リソースを格納した場合、静的リソースはパブリッシュインスタンスで参照できません。
+   * フォルダーの下以外の場所に静的リソースを格納する場合 `resources`の場合、パブリッシュインスタンスで参照することはできません。
 1. 追加ソースファイルをライブラリフォルダーに格納します。
    * これは、通常、 [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)のフロントエンドビルドプロセスで行われます。
    * 必要に応じて、サブフォルダーを使用してソースファイルを整理できます。
@@ -211,7 +212,7 @@ AEM のクライアントライブラリフォルダーでは、他にも多数�
 
 #### アプリケーション専用のクライアントライブラリフォルダー {#app-specific-client-library-folders}
 
-アプリケーション関連のすべてのファイルは、/apps の下のアプリケーションフォルダーに格納することをお勧めします。 また、Web サイト訪問者の/apps フォルダーへのアクセスを拒否することもお勧めします。 両方のベストプラクティスを満たすには、/etc フォルダーの下にクライアントライブラリフォルダーを作成し、/apps の下にクライアントライブラリを埋め込みます。
+アプリケーション関連のすべてのファイルは、`/apps` 内のアプリケーションフォルダーに格納することをお勧めします。Web サイト訪問者の `/apps` フォルダーに対するアクセスを拒否することもお勧めします。両方のベストプラクティスを満たすには、`/etc` にクライアントライブラリフォルダーを作成して、 `/apps` 内のクライアントライブラリを埋め込みます。
 
 埋め込むクライアントライブラリフォルダーを識別するには、categories プロパティを使用します。ライブラリを埋め込むには、次のプロパティ属性を使用して、埋め込み `cq:ClientLibraryFolder` ノードにプロパティを追加します。
 
