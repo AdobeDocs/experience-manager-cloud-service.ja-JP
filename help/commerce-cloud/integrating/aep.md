@@ -10,9 +10,9 @@ role: Architect, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
-source-git-commit: 4d8bb08b8791dcc576f1566f480519594ed2e9d4
+source-git-commit: 2ebe9ddccd0b657b8aaeaf005c0ecb5b16079dee
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2010'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 この [コマース統合フレームワーク (CIF)](https://github.com/adobe/aem-core-cif-components) コアコンポーネントは、 [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) ストアフロントイベントとそのデータを、次のようなクライアント側の操作から転送するには： __買い物かごに追加__.
 
-この [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components) プロジェクトは、 [Experience Platformコネクタ](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) Commerce ストアフロントからイベントデータを収集します。 このイベントデータはExperience Platformに送信され、Adobe AnalyticsやAdobe Targetなどの他のAdobe Experience Cloud製品で使用されて、カスタマージャーニーに対応する 360 度のプロファイルを作成します。 コマースデータをAdobe Experience Cloud内の他の製品に接続することで、サイトでのユーザー行動の分析、AB テストの実行、パーソナライズされたキャンペーンの作成などのタスクを実行できます。
+この [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components) プロジェクトは、 [Adobe Commerce用Adobe Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) Commerce ストアフロントからイベントデータを収集します。 このイベントデータはExperience Platformに送信され、Adobe AnalyticsやAdobe Targetなどの他のAdobe Experience Cloud製品で使用されて、カスタマージャーニーに対応する 360 度のプロファイルを作成します。 コマースデータをAdobe Experience Cloud内の他の製品に接続することで、サイトでのユーザー行動の分析、AB テストの実行、パーソナライズされたキャンペーンの作成などのタスクを実行できます。
 
 詳しくは、 [Experience Platformデータ収集](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) クライアント側のソースから顧客体験データを収集できるテクノロジーのスイート。
 
