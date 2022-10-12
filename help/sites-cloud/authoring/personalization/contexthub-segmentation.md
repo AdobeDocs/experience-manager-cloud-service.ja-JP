@@ -2,10 +2,10 @@
 title: ContextHub でのセグメント化の設定
 description: ContextHub を使用してセグメントを設定する方法を説明します。
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 43f0c3611f63b3e1ea9085d828d5daab7b361a8e
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 100%
+source-wordcount: '1697'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ AEM では、ユーザーエクスペリエンスを簡単にパーソナライ�
 
 [オーディエンス](audiences.md)コンソールは、ContextHub のセグメントを管理したり、Adobe Target アカウントのオーディエンスを管理したりする目的で使用します。このドキュメントでは、ContextHub のセグメントの管理について取り上げます。
 
-セグメントにアクセスするには、グローバルナビゲーションで&#x200B;**ナビゲーション／パーソナライズ機能／オーディエンス**&#x200B;を選択します。
+セグメントにアクセスするには、グローバルナビゲーションで「**ナビゲーション／パーソナライズ機能／オーディエンス**」を選択します。設定（WKND サイトなど）を選択して、セグメントを表示します。
 
 ![オーディエンスの管理](../assets/contexthub-segmentation-audiences.png)
 
@@ -86,7 +86,7 @@ AEM では、ユーザーエクスペリエンスを簡単にパーソナライ�
 
 新しいセグメントを定義するには、次の手順に従います。
 
-1. [セグメントへのアクセス](#accessing-segments)後、セグメントを作成する[フォルダーに移動](#organizing-segments)するか、ルートのままにしておきます。
+1. 後 [セグメントへのアクセス](#accessing-segments), [フォルダーに移動します。](#organizing-segments) セグメントを作成する場所です。
 
 1. 「**作成**」ボタンをタップまたはクリックし、「**ContextHub セグメントを作成**」を選択します。
 
