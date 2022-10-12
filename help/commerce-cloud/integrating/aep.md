@@ -10,7 +10,7 @@ role: Architect, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
-source-git-commit: 6b91c47f741f12cf66efd6a2ad6d9c1f4531ac70
+source-git-commit: 4d8bb08b8791dcc576f1566f480519594ed2e9d4
 workflow-type: tm+mt
 source-wordcount: '2006'
 ht-degree: 3%
@@ -148,7 +148,7 @@ Babel ローダ (`babel-loader`) や webpack の場合は、 `webpack.common.js`
 
 この [Apollo Client](https://www.apollographql.com/docs/react/) は、GraphQL を使用してローカルデータとリモートデータの両方を管理するために使用されます。 また、GraphQL クエリの結果は、ローカルの正規化されたメモリ内キャッシュに格納されます。
 
-の場合 [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) 効果的に働くには、 `possibleTypes.js` ファイル。 このファイルを生成するには、 [possibleTypes の自動生成](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). また、 [PWA Studio参照の実装](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) そして、 [`possibleTypes.js`](../assets/possibleTypes.js) ファイル。
+の場合 [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) 効果的に働くには、 `possibleTypes.js` ファイル。 このファイルを生成するには、 [possibleTypes の自動生成](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). また、 [PWA Studio参照の実装](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) そして、 [`possibleTypes.js`](../assets/aep-integration/possibleTypes.js) ファイル。
 
 
 1. 次に移動： `ui.frontend` モジュール化し、ファイルを `./src/main/possibleTypes.js`
