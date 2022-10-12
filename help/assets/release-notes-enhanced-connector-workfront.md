@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 14b779c476b88ff1ee9d2798296add14f337dbfa
+source-git-commit: 1509afad94208e62d5222f4c95c98d90f95be30e
 workflow-type: tm+mt
-source-wordcount: '568'
-ht-degree: 40%
+source-wordcount: '619'
+ht-degree: 37%
 
 ---
 
@@ -15,24 +15,19 @@ ht-degree: 40%
 
 ## リリース日 {#release-date}
 
-の最新バージョン 1.9.3 のリリース日 [!DNL Workfront for Experience Manager enhanced connector] は 2022 年 9 月 16 日です。
+の最新バージョン 1.9.4 のリリース日 [!DNL Workfront for Experience Manager enhanced connector] は 2022 年 10 月 7 日です。
 
 ## リリースのハイライト {#release-highlights}
 
 の最新バージョン [!DNL Workfront for Experience Manager enhanced connector] には、次の機能強化とバグ修正が含まれています。
 
-* サイズが 8 GB を超えるファイルをアップロードできません。
-* WorkfrontからAEMに送信されたアセットを自動公開する際に発生する問題を修正しました。
-* デフォルトのメタデータスキーマフォームの編集中、「ルートパス」フィールドを「タグ」フィールドで使用できません。
-* AEMワークフローを使用してWorkfrontで新しいバージョンを追加する際に発生する問題を修正しました。
-* Workfrontで使用可能なアセットに対してAEM検索を実行すると、AEMにエラーメッセージが表示されます。
-* アセットからタスク作成用のAEMワークフローを作成し、親タスク名を定義しない場合、Workfrontではタスクは作成されません。
+* 多数のイベントがあるので、拡張コネクタ設定ページの「イベント購読」タブを表示できません。
 
-
+* Workfrontは、プロジェクト内の既存のフォルダーのリストを取得できないので、フォルダーが重複して作成されます。
 
 >[!IMPORTANT]
 >
->Adobeが推奨する [最新バージョン 1.9.3 にアップグレード](../assets/update-workfront-enhanced-connector.md) の [!DNL Workfront for Experience Manager enhanced connector].
+>Adobeが推奨する [最新バージョン 1.9.4 にアップグレード](../assets/update-workfront-enhanced-connector.md) の [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 既知の問題 {#known-issues}
 
@@ -43,6 +38,17 @@ ht-degree: 40%
 * Workfrontに `SERVER_ERROR` リリース 8316 にアップグレードした後、ドキュメントをAEMにリンクする際のメッセージ 問題を解決するには、 `rep:readProperties` から `content/dam/collections` 対象 `wf-workfront-user` AEM User Group。
 
 ## 以前のリリース {#previous-releases}
+
+### 2022 年 9 月リリース {#september-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 9 月 17 日にリリースされたバージョン 1.9.3 には、次の更新が含まれています。
+
+* サイズが 8 GB を超えるファイルをアップロードできません。
+* WorkfrontからAEMに送信されたアセットを自動公開する際に発生する問題を修正しました。
+* デフォルトのメタデータスキーマフォームの編集中、「ルートパス」フィールドを「タグ」フィールドで使用できません。
+* AEMワークフローを使用してWorkfrontで新しいバージョンを追加する際に発生する問題を修正しました。
+* Workfrontで使用可能なアセットに対してAEM検索を実行すると、AEMにエラーメッセージが表示されます。
+* アセットからタスク作成用のAEMワークフローを作成し、親タスク名を定義しない場合、Workfrontではタスクは作成されません。
 
 ### 2022 年 8 月リリース {#august-2022-release}
 
