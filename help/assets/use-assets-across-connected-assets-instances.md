@@ -6,10 +6,10 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: 01d54ba56ccab372396829a012c4da8ef4a57fe2
 workflow-type: tm+mt
-source-wordcount: '3763'
-ht-degree: 99%
+source-wordcount: '3797'
+ht-degree: 97%
 
 ---
 
@@ -66,7 +66,9 @@ Connected Assets 機能では、[!DNL Experience Manager Sites] と [!DNL Experi
 
 ### Connected Assets のアーキテクチャ {#connected-assets-architecture}
 
-Experience Manager を使用すると、リモート DAM デプロイメントをソースとして複数の Experience Manager [!DNL Sites] デプロイメントに接続できます。最大 4 つの [!DNL Sites] デプロイメントをソースリモート DAM に接続できます。ただし、1 つの [!DNL Sites] デプロイメントに接続できるリモート DAM デプロイメントは 1 つだけです。
+Experience Manager を使用すると、リモート DAM デプロイメントをソースとして複数の Experience Manager [!DNL Sites] デプロイメントに接続できます。ただし、1 つの [!DNL Sites] デプロイメントに接続できるリモート DAM デプロイメントは 1 つだけです。
+
+リモート DAM デプロイメントに接続するための Sites インスタンスの最適な数を評価します。 Adobeでは、 Sites インスタンスをデプロイメントに増分的に接続し、接続された各 Sites インスタンスがリモート DAM のデータトラフィックに寄与するので、リモート DAM でのパフォーマンスに影響がないことをテストすることをお勧めします。
 
 次の図に、サポートされるシナリオを示します。
 
@@ -261,9 +263,9 @@ Experience Manager は、リモートアセットコンテンツファインダ�
 
 +++
 
-+++Connected Assets を設定した後、デプロイメントを&#x200B;**いくつ[!DNL Sites]リモート DAM デプロイメントに接続できますか？**
++++**複数の [!DNL Sites] Connected Assets の設定後にリモート DAM デプロイメントにデプロイした場合**
 
-Connected Assets を設定した後、最大 4 つの [!DNL Sites] デプロイメントをリモート DAM デプロイメントに接続できます。詳しくは、[Connected Assets のアーキテクチャ](#connected-assets-architecture)を参照してください。
+はい、複数の [!DNL Sites] Connected Assets の設定後にリモート DAM デプロイメントにデプロイメントします。 詳しくは、[Connected Assets のアーキテクチャ](#connected-assets-architecture)を参照してください。
 
 +++
 
