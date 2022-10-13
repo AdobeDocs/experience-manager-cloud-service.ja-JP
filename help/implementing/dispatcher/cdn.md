@@ -3,10 +3,10 @@ title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 95dfcdbc434e4c65bbcae84d6cb45ecd1601f14a
+source-git-commit: fe08925c86a82a600eabd5a7d4ad6e38b3e76dfe
 workflow-type: tm+mt
-source-wordcount: '1139'
-ht-degree: 77%
+source-wordcount: '1163'
+ht-degree: 71%
 
 ---
 
@@ -29,6 +29,10 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 
 1. [SSL 証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+
+>[!NOTE]
+>
+>カスタムドメインは Cloud Manager でサポートされています **のみ** AEM Managed CDN を使用している場合。 独自の CDN を持ってきて [AEMが管理する CDN を指すように設定する](/help/implementing/dispatcher/cdn.md) Cloud Manager ではなく、その特定の CDN を使用してドメインを管理する必要があります。
 
 **トラフィックの制限**
 
@@ -54,10 +58,6 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 * CDN を AEM as a Cloud Service と連携するように設定できる。設定手順を以下に示します。
 * 関連する問題が発生する事態に備えて、エンジニアリング CDN エキスパートが待機している。
 * 実稼動環境に移行する前に、負荷テストを実行し、成功している。
-
->[!NOTE]
->
->Adobe CDN はオプションではありません。独自の CDN を持ち込むお客様は、AEM が管理する CDN を指す必要があります。
 
 設定手順：
 
@@ -88,7 +88,9 @@ Windows の場合：
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
 ```
 
-なお、独自の CDN を使用する場合、Cloud Manager にドメインと証明書をインストールする必要はありません。Adobe CDN のルーティングは、デフォルトドメイン `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` を使用して行われます。
+>[!NOTE]
+>
+>独自の CDN を使用する場合、Cloud Manager にドメインと証明書をインストールする必要はありません。 AdobeCDN のルーティングは、デフォルトのドメインを使用しておこなわれます `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 
 >[!NOTE]
 >

@@ -2,10 +2,10 @@
 title: カスタムドメイン名の概要
 description: Cloud Manager の UI では、セルフサービス方式でカスタムドメインを追加して、サイトを独自のブランド名で識別することができます。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
+source-git-commit: fe08925c86a82a600eabd5a7d4ad6e38b3e76dfe
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 100%
+source-wordcount: '606'
+ht-degree: 92%
 
 ---
 
@@ -44,6 +44,10 @@ AEMaaCS でカスタムドメイン名を使用する場合は、多くの制限
 * 現在実行中のパイプラインが環境に接続されている間は、その環境にドメイン名を追加することはできません。
 * 一度に追加できるドメイン名は 1 つだけです。
 * 同じドメイン名を複数の環境で使用することはできません。
+
+>[!NOTE]
+>
+>カスタムドメインは Cloud Manager でサポートされています **のみ** AEM Managed CDN を使用している場合。 独自の CDN を持ってきて [AEMが管理する CDN を指すように設定する](/help/implementing/dispatcher/cdn.md) Cloud Manager ではなく、その特定の CDN を使用してドメインを管理する必要があります。
 
 ## ワークフロー {#workflow}
 
