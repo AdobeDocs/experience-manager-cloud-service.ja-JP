@@ -3,10 +3,10 @@ title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 95ec89fa4bb71a63121bc86a74a15cc7812ae342
+source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
 workflow-type: tm+mt
-source-wordcount: '1163'
-ht-degree: 71%
+source-wordcount: '1117'
+ht-degree: 74%
 
 ---
 
@@ -122,19 +122,6 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 ![Cloudflare1](assets/cloudflare1.png "雲フレア")
 ![Cloudflare2](assets/cloudflare2.png "雲フレア")
-
-## コンテンツの配置 {#content-disposition}
-
-パブリッシュ層では、BLOB を提供する際のデフォルトは添付ファイルとして使用されます。 これは、標準を使用して上書きできます [コンテンツ配置ヘッダー](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) dispatcher 内で使用する必要があります。
-
-設定の例を次に示します。
-
-```
-<LocationMatch "^\/content\/dam.*\.(pdf).*">
- Header unset Content-Disposition
- Header set Content-Disposition inline
-</LocationMatch>
-```
 
 ## 位置情報ヘッダー {#geo-headers}
 

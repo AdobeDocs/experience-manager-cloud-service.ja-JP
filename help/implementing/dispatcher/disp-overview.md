@@ -3,10 +3,10 @@ title: クラウド内の Dispatcher
 description: クラウド内の Dispatcher
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 90a49312d4609c2de992a93926a329bf50861801
+source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 98%
+source-wordcount: '998'
+ht-degree: 92%
 
 ---
 
@@ -56,6 +56,19 @@ Dispatcher ツールは、プロジェクトの Dispatcher 設定の検証とデ
 
 従来の設定モデルからより柔軟性の高い設定モデル（AEM アーキタイプ 28 以降に付属）に移行する方法について詳しくは、[このドキュメント](/help/implementing/dispatcher/validation-debug.md#migrating)を参照してください。
 
+## コンテンツの配置 {#content-disposition}
+
+パブリッシュ層では、BLOB を提供する際のデフォルトは添付ファイルとして使用されます。 これは、標準を使用して上書きできます [コンテンツ配置ヘッダー](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) dispatcher 内で使用する必要があります。
+
+設定の例を次に示します。
+
+```
+<LocationMatch "^\/content\/dam.*\.(pdf).*">
+ Header unset Content-Disposition
+ Header set Content-Disposition inline
+</LocationMatch>
+```
+
 ## サポートされている Apache モジュール {#supported-directives}
 
 次の表に、サポートされる Apache モジュールを示します。
@@ -89,7 +102,7 @@ Dispatcher ツールは、プロジェクトの Dispatcher 設定の検証とデ
 | `mod_macro` | [https://httpd.apache.org/docs/2.4/mod/mod_macro.html](https://httpd.apache.org/docs/2.4/mod/mod_macro.html) |
 
 
-お客様が任意のモジュールを追加することはできませんが、今後、上述の表にある以外のモジュールが追加で組み込まれる可能性があります。SDK でバリデーターの許可リストコマンドを実行すると、特定の Dispatcher バージョンで使用できるディレクティブのリストを確認できます。
+お客様が任意のモジュールを追加することはできませんが、今後、上述の表にある以外のモジュールが追加で組み込まれる可能性があります。SDK でバリデーターの Dispatcher コマンドを実行すると、特定の Dispatcher バージョンで使用できるディレクティブのリストを確認できま許可リストす。
 
 Apache の設定ファイルで許可されているディレクティブは、バリデーターの許可リストコマンドを実行すると表示できます。
 
