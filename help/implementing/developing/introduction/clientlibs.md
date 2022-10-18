@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service でのクライアントサイドライブラリの使用
 description: AEM では、クライアントサイドライブラリフォルダーが提供されています。これにより、クライアントサイドコード（clientlibs）をリポジトリーに格納し、カテゴリ別に整理して、それぞれのカテゴリのコードをクライアントに提供するタイミングと方法を定義できます。
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 51933d1ed509117f1ed0488900807b74f55ef46b
+source-git-commit: b93ec12616742910e35a3dac4224b690cd2c7116
 workflow-type: tm+mt
-source-wordcount: '2568'
+source-wordcount: '2567'
 ht-degree: 97%
 
 ---
@@ -114,7 +114,7 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルに 1 つの�
 
 `allowProxy` プロパティを使用して、次をリクエストできます。
 
-* clientlib（`/etc.clientlibs/myprojects/clientlibs/foo.js` を介す）
+* clientlib（を介す） `/etc.clientlibs/myprojects/clientlibs/foo.js`
 * 静的な画像（`/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png` を介す）
 
 ### クライアントライブラリの読み込み（HTL 経由） {#loading-via-htl}
