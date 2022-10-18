@@ -1,11 +1,11 @@
 ---
 title: AEM ヘッドレスデベロッパージャーニー
-description: Adobe Experience Manager(AEM) をヘッドレス CMS として使用し、ヘッドレスコンテンツ配信用のプロジェクトを開発する方法を説明します。 コンテンツモデル、コンテンツフラグメント、GraphQL API などの機能を使用してヘッドレスエクスペリエンスを強化する方法を説明します。
+description: Adobe Experience Manager(AEM) をヘッドレス CMS として使用したヘッドレス開発について説明します。 コンテンツモデル、コンテンツフラグメント、GraphQL API などの機能を使用してヘッドレスなコンテンツ配信を強化する方法について説明します。
 landing-page-description: ヘッドレスコンテンツの配信と実装について理解します。企業内での戦略の策定について詳しく説明します。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 2d0856b7370b6b50935378ad26c7361e95820f4d
+source-git-commit: 8932a8f158fe478d23457ac24afdd17f05a048f5
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1268'
 ht-degree: 95%
 
 ---
