@@ -2,9 +2,9 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: ac7e4f7d7b771c392d8f67bd0751dfeede970a5f
 workflow-type: tm+mt
-source-wordcount: '2255'
+source-wordcount: '2246'
 ht-degree: 97%
 
 ---
@@ -74,7 +74,9 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 
 パッケージのフィルターは、既存（標準提供のインデックス）が保持されるように設定する必要があります。`ui.apps/src/main/content/META-INF/vault/filter.xml` ファイルで、各カスタム（またはカスタマイズ済み）インデックスを、例えば `<filter root="/oak:index/damAssetLucene-6-custom-1"/>` のようにリストする必要があります。インデックスのバージョンを後で変更する場合は、フィルターを調整する必要があります。
 
-上記のサンプルのパッケージは、`com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT` としてビルドされます。
+<!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
+
+The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`. -->
 
 >[!NOTE]
 >
