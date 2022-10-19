@@ -2,9 +2,9 @@
 title: 統合シェルでas a Cloud ServiceのAEMを使用
 description: 統合シェルでas a Cloud ServiceのAEMを使用
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: c3b72395504b9e32178182d0a79db804d19fbcf3
+source-git-commit: 51ecb21bf479cfaacb01a9c99c88d7f112f6ff95
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '370'
 ht-degree: 6%
 
 ---
@@ -30,14 +30,14 @@ AEM as a Cloud Serviceは、Unified Shell と統合され、ユーザーエク�
 * 組織間の切り替えや、別のアプリケーションへの切り替えが容易
 * 製品ヘルプの改善
 * 製品内でのフィードバックボタンを使用して、問題を報告したり、Adobeとアイデアを共有したりできます。
-* 通知固有のAEMas a Cloud Serviceに加えて、グローバルな製品のお知らせや通知にアクセス
+* AEMas a Cloud Serviceに特有の通知に加えて、グローバルな製品のお知らせや通知にアクセス
 
 ## 統合シェルの無効化 {#disabling-unified-shell}
 
 標準では、AEM as a Cloud Serviceは統合シェルを有効にしています。 ただし、トップヘッダーがカスタマイズされている場合は、カスタマイズの問題を回避するために、統合シェルを無効にすることをお勧めします。 統合シェルを無効にするには、次の手順に従います。
 
 >[!NOTE]
->統合シェルは、管理特権を持つアカウントによってのみ無効にできます。
+>統合シェルは、管理者権限を持つアカウントでのみ無効にできます。
 
 1. に移動します。 **ツール/Cloud Services**.
 
@@ -49,7 +49,7 @@ AEM as a Cloud Serviceは、Unified Shell と統合され、ユーザーエク�
 
    ![画像](/help/overview/assets/unifiedshell3.png)
 
-## ダークテーマに変更 {#chaning-to-dark-theme}
+## ダークテーマに変更 {#changing-to-dark-theme}
 
 ダークテーマに変更するには、自分のプロファイルアイコンをクリックします。 これにより、次に示すようにポップオーバーが表示されます。 切り替えを使用して、統合シェルのダークテーマに切り替えることができます。
 
