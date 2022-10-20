@@ -2,9 +2,9 @@
 title: AEMでのコンテンツの復元as a Cloud Service
 description: Cloud Manager を使用して、AEMのas a Cloud Serviceのコンテンツをバックアップから復元する方法を説明します。
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 564be5a7bcbcab95b1bbf824b01f80e018aae2a2
+source-git-commit: a32b8d94be8119854e21fc89456474ac554082a3
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1262'
 ht-degree: 3%
 
 ---
@@ -41,7 +41,7 @@ Cloud Manager には、コンテンツを復元できる 2 種類のバックア
 AEM as a ContentService でコンテンツを復元するパフォーマンス指標は、標準化されたベンチマークを参照しています。
 
 * **目標復旧時間 (RTO):** Recovery Time Objective は、リポジトリのサイズによって異なりますが、経験則として、回復シーケンスが開始されると、約 30 分かかります。
-* **RPO（Recovery Point Objective：目標復旧時点）:** RPO（目標復旧時点）は、インスタンスが動作していた時間に応じて異なります。
+* **RPO（Recovery Point Objective：目標復旧時点）:** RPO（Recovery Point Objective：目標復旧時点）は、選択したリストア時間が過去にどの程度あるかによって異なります。
    * 最初の 24 時間の操作の場合：この 24 時間の任意の時点で
    * 最初の 24 時間の後：過去 6 日間は最大 12 時間です。
 
