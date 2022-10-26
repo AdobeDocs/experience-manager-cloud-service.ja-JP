@@ -2,10 +2,10 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: ac7e4f7d7b771c392d8f67bd0751dfeede970a5f
+source-git-commit: 82f959a8a4f02486c1b3431b40534cdb95853dd6
 workflow-type: tm+mt
-source-wordcount: '2246'
-ht-degree: 97%
+source-wordcount: '2289'
+ht-degree: 89%
 
 ---
 
@@ -34,11 +34,6 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 1. AEM as a Cloud Service の高レベルでは、[Blue-Green デプロイメントモデルが導入され](#index-management-using-blue-green-deployments)、1 つは古いバージョン用のセット（青）、もう 1 つは新しいバージョン用のセット（緑）の 2 組のインデックスが存在します。
 
 1. Cloud Manager のビルドページで、顧客はインデックス作成ジョブが完了したかどうかを確認できます。新しいバージョンでトラフィックを引き受ける準備ができたら、通知を受け取ります。
-
-1. 制限事項：
-* 現在、AEM as a Cloud Service のインデックス管理は、`lucene` 型のインデックスに対してのみサポートされています。
-* 標準のアナライザー（製品に付属しているアナライザー）のみサポートされています。カスタムアナライザーはサポートされていません。
-* 内部的には、他のインデックスがクエリに設定され使用される可能性があります。例えば、`damAssetLucene` インデックスに対して記述されたクエリは、Skyline 上では実際には、このインデックスの Elasticsearch バージョンに対して実行される可能性があります。この違いは、通常、アプリケーションとユーザーには見えませんが、`explain` 機能などの特定のツールでは異なるインデックスが報告されます。Lucene インデックスと Elasticsearch インデックスの違いについては、[Apache Jackrabbit Oak の Elastic 関連ドキュメント](https://jackrabbit.apache.org/oak/docs/query/elastic.html)を参照してください。ユーザーは、Elasticsearch インデックスを直接設定する必要はなく、また設定できません。
 
 ## 使用方法 {#how-to-use}
 
@@ -221,7 +216,11 @@ Blue-Green デプロイメントでは、ダウンタイムは発生しません
 
 ### 現在の制限事項 {#current-limitations}
 
-インデックス管理は、現在、`lucene` 型のインデックスに対してのみサポートされています。内部的には、他のインデックスがクエリに設定され使用される可能性があります（例えば Elasticsearch インデックスなど）。
+インデックス管理は、現在、タイプのインデックスに対してのみサポートされています `lucene`を `compatVersion` に設定 `2`. 内部的には、他のインデックスが設定され、クエリに使用される場合があります ( 例：Elasticsearchインデックス )。 に対して書き込まれるクエリ `damAssetLucene` インデックスは、AEMas a Cloud Serviceでは、実際には、このインデックスのElasticsearchバージョンに対して実行される場合があります。 この違いは、アプリケーションのエンドユーザーには見えませんが、 `explain` 機能は異なるインデックスをレポートします。 Lucene とElasticsearchインデックスの違いについては、 [Apache Jackrabbit Oak のElasticsearchドキュメント](https://jackrabbit.apache.org/oak/docs/query/elastic.html). お客様は、直接設定インデックスを設定する必要はなく、Elasticsearch・インデックスを設定する必要もありません。
+
+組み込みのアナライザーのみがサポートされます（つまり、製品に付属しているアナライザー）。 カスタムアナライザーはサポートされていません。
+
+最高のオペレーショナルパフォーマンスを得るには、インデックスを過度に大きくしないでください。 すべてのインデックスの合計サイズは、以下のガイドとして使用できます。開発環境でカスタムインデックスを追加し、標準インデックスを調整した後、この値が 100%以上増加する場合は、カスタムインデックス定義を調整する必要があります。 AEM as a Cloud Serviceを使用すると、システムの安定性とパフォーマンスに悪影響を与える可能性のあるインデックスのデプロイメントを防ぐことができます。
 
 ### インデックスの追加 {#adding-an-index}
 
