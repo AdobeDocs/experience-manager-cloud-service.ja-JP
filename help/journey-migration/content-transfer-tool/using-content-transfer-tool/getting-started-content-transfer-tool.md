@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの基本を学ぶ
 description: コンテンツ転送ツールの基本を学ぶ
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 501441717f541439ac8d914f1e419491399e6667
+source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 96%
+source-wordcount: '1292'
+ht-degree: 94%
 
 ---
 
@@ -34,16 +34,8 @@ ht-degree: 96%
 
 ソース AEM インスタンスがファイアウォールの内側で動作していて、許可リストに追加された特定のホストにしか到達できない場合があります。抽出を正常に実行するには、AEM を実行しているインスタンスから、次のエンドポイントにアクセスできる必要があります。
 
-* ターゲット AEM as a Cloud Service 環境：`author-p<program_id>-e<env_id>.adobeaemcloud.com`
 * Azure BLOB ストレージサービス：`casstorageprod.blob.core.windows.net`
 * ユーザーマッピング IO エンドポイント：`usermanagement.adobe.io`
-
-ターゲット AEM as a Cloud Service 環境への接続をテストするには、ソースインスタンスのシェルから次の cURL コマンドを発行します（`program_id`、`environment_id` および `migration_token` を実際の値に置き換えてください）。
-
-`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
-
->[!NOTE]
->`HTTP/2 200` を受け取った場合は、AEM as a Cloud Service への接続に成功しました。
 
 ### SSL ログを有効にする {#enable-ssl-logging}
 
@@ -111,7 +103,7 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 
 Cloud Acceleration Manager で作成した移行セットを入力するには、最新バージョンのコンテンツ転送ツールを移行元の Adobe Experience Manager（AEM）インスタンスにインストールする必要があります。移行セットの入力方法については、この節を参照してください。
 
-1. 移行元の Adobe Experience Manager インスタンスに最新バージョン（v2.0.10）のコンテンツ転送ツールをインストールしたら、**運用 - コンテンツ移行**&#x200B;に移動します。
+1. ソースAdobe Experience Managerインスタンスに最新バージョンのコンテンツ転送ツールをインストールしたら、に移動します。 **運用 — コンテンツ移行**
 
 1. 「**移行セットを作成**」をクリックします。
 
