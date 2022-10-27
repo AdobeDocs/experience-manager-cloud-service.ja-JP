@@ -3,25 +3,25 @@ title: AEM as a Cloud Service でのキャッシュ
 description: AEM as a Cloud Service でのキャッシュ
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 42c1d4fcfef4487aca6225821c16304ccf4deb04
+source-git-commit: c2160e7aee8ba0b322398614524ba385ba5c56cf
 workflow-type: tm+mt
-source-wordcount: '2591'
-ht-degree: 75%
+source-wordcount: '2580'
+ht-degree: 52%
 
 ---
 
 # はじめに {#intro}
 
-トラフィックは、CDN を経由して Apache Web サーバーレイヤーに渡されます。このレイヤーは、Dispatcher を含むモジュールをサポートします。パフォーマンスを向上させるために、Dispatcher は主にキャッシュとして使用され、公開ノードでの処理を制限します。
-Dispatcher の設定にルールを適用して、デフォルトのキャッシュ有効期限の設定を変更し、CDN でのキャッシュを可能にします。Dispatcher の設定で `enableTTL` が有効な場合、Dispatcher は、結果として生成されるキャッシュの有効期限のヘッダーも順守します。これは、再公開されるコンテンツの外部でも特定のコンテンツが更新されることを意味します。
+トラフィックは、CDN を経由して Apache Web サーバーレイヤーに渡されます。このレイヤーは、Dispatcher を含むモジュールをサポートします。 パフォーマンスを向上させるために、Dispatcher は主にキャッシュとして使用され、パブリッシュノードでの処理を制限します。
+ルールを Dispatcher の設定に適用して、デフォルトのキャッシュ有効期限の設定を変更し、CDN でのキャッシュを可能にします。 Dispatcher は、結果のキャッシュの有効期限のヘッダーも順守します ( `enableTTL` は Dispatcher 設定で有効になっています。これは、再公開されるコンテンツの外部でも特定のコンテンツが更新されることを意味します。
 
-また、このページでは、Dispatcher キャッシュの無効化の方法、およびクライアントサイドライブラリに関するブラウザーレベルでのキャッシュの動作についても説明します。
+また、このページでは、Dispatcher キャッシュの無効化方法と、クライアント側ライブラリに関してブラウザーレベルでのキャッシュの動作について説明します。
 
 ## キャッシュ {#caching}
 
 ### HTML/Text {#html-text}
 
-* デフォルトでは、Apache レイヤーで生成される `cache-control` ヘッダーに基づいて、ブラウザーによって 5 分間キャッシュされます。CDN はこの値も順守します。
+* デフォルトでは、に基づいて、ブラウザーによって 5 分間キャッシュされます。 `cache-control` Apache レイヤーによって生成されるヘッダー。 CDN はこの値も順守します。
 * デフォルトの HTML/Text キャッシュ設定は、`global.vars` で `DISABLE_DEFAULT_CACHING` 変数を次のように定義することで無効にできます。
 
 ```
@@ -31,7 +31,7 @@ Define DISABLE_DEFAULT_CACHING
 これは、例えば、デフォルトで年齢ヘッダーが 0 に設定されているので、ビジネスロジックで（カレンダー日に基づいた値による）年齢ヘッダーの微調整が必要な場合に便利です。ただし、**デフォルトのキャッシュをオフにする場合は注意が必要です。**
 
 * AEM as a Cloud Service の SDK Dispatcher ツールを使用して、`global.vars` の `EXPIRATION_TIME` 変数を定義することにより、すべての HTML/Text コンテンツに対して上書きできます。
-* 次の apache mod_headers ディレクティブを使用して、CDN とブラウザーキャッシュを独立に制御するなど、より詳細なレベルで上書きできます。
+* 次の Apache を使用して、CDN とブラウザーキャッシュを独立に制御するなど、より詳細なレベルで上書きできます `mod_headers` ディレクティブ：
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -44,7 +44,7 @@ Define DISABLE_DEFAULT_CACHING
    >[!NOTE]
    >サロゲート制御ヘッダーは、アドビが管理する CDN に適用されます。[顧客が管理する CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=ja#point-to-point-CDN) を使用する場合、CDN プロバイダーに応じて異なるヘッダーが必要になる場合があります。
 
-   グローバルキャッシュコントロールヘッダーや、広い範囲の正規表現に一致するヘッダーを設定する場合は、非公開にするコンテンツに適用されないように注意が必要です。複数のディレクティブを使用して、ルールをきめ細かく適用することを検討してください。ただし、ディスパッチャーのドキュメントに記載されているように、ディスパッチャーが検出したキャッシュヘッダーにキャッシュを適用できないことが検出された場合、AEM as a Cloud Service によってキャッシュヘッダーが削除されます。AEM で常にキャッシュヘッダーを適用するように強制するには、次のように **always** オプションを追加します。
+   グローバルキャッシュ制御ヘッダー、または広い正規表現に一致するヘッダーを設定して、非公開にする必要のあるコンテンツに適用されないようにする場合は、注意が必要です。 複数のディレクティブを使用して、ルールをきめ細かく適用することを検討してください。しかし、AEM as a Cloud Serviceは、Dispatcher ドキュメントで説明されているように、Dispatcher によってキャッシュ不可と検出された項目に適用された場合、キャッシュヘッダーを削除します。 AEM で常にキャッシュヘッダーを適用するように強制するには、次のように **always** オプションを追加します。
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -76,7 +76,7 @@ Define DISABLE_DEFAULT_CACHING
    >[dispatcher-ttl AEM ACS Commons プロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)を含む他のメソッドでは、値は上書きされません。
 
    >[!NOTE]
-   >しかし、それでも Dispatcher は、独自の[キャッシュルール](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=ja)に従ってコンテンツをキャッシュする可能性があります。コンテンツを本当にプライベートにするには、Dispatcher によってキャッシュされないようにする必要があります。
+   >Dispatcher は、独自の [キャッシュルール](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=ja). コンテンツを真に非公開にするには、Dispatcher によってキャッシュされないようにする必要があります。
 
 ### クライアントサイドライブラリ（js、css） {#client-side-libraries}
 
@@ -87,7 +87,7 @@ Define DISABLE_DEFAULT_CACHING
 
 2022年5月中旬以降に作成されたプログラム（特に、プログラム ID が 65000 より大きい場合）のデフォルトの動作は、デフォルトでキャッシュされると同時に、リクエストの認証コンテキストも考慮されます。古いプログラム（プログラム ID が 65000 以下）は、デフォルトでは BLOB コンテンツをキャッシュしません。
 
-どちらの場合も、Apache／Dispatcher レイヤーでキャッシュヘッダーをより詳細なレベルで上書きするには、Apache `mod_headers` ディレクティブを使用します。次に例を示します。
+どちらの場合も、Apache/Dispatcher レイヤーでキャッシュヘッダーをより詳細なレベルで上書きするには、Apache `mod_headers` ディレクティブ。次に例を示します。
 
 ```
    <LocationMatch "^/content/.*\.(jpeg|jpg)$">
@@ -96,7 +96,7 @@ Define DISABLE_DEFAULT_CACHING
    </LocationMatch>
 ```
 
-Dispatcher レイヤーのキャッシュヘッダーを変更する場合は、あまり広くキャッシュしないように注意してください。[上記](#html-text)の HTML/Text の節の説明を参照してください。また、（キャッシュせずに）非公開にするアセットが、`LocationMatch` ディレクティブフィルターの一部ではないことも確認してください。
+Dispatcher レイヤーのキャッシュヘッダーを変更する場合は、あまり広くキャッシュしないように注意してください。HTML/テキストの節の説明を参照してください [上](#html-text). また、（キャッシュせずに）非公開にするアセットが、`LocationMatch` ディレクティブフィルターの一部ではないことも確認してください。
 
 #### 新しいデフォルトのキャッシュ動作 {#new-caching-behavior}
 
@@ -128,7 +128,7 @@ AEM レイヤーは、デフォルトでは BLOB コンテンツをキャッシ�
 
 ### その他の最適化 {#further-optimizations}
 
-* `User-Agent` を `Vary` ヘッダーの一部として使用しないでください。（アーキタイプバージョン 28 以前）の古いバージョンのデフォルトの Dispatcher 設定には、これが含まれているので、次の手順を使用して削除することをお勧めします。
+* `User-Agent` を `Vary` ヘッダーの一部として使用しないでください。これには、デフォルトの Dispatcher 設定（アーキタイプバージョン 28 以前）の古いバージョンが含まれていました。次の手順を使用して削除することをお勧めします。
    * `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost` で vhost ファイルを見つけます。
    * すべての vhost ファイルから、`Header append Vary User-Agent env=!dont-vary` を行ごと削除またはコメントアウトします（読み取り専用の default.vhost を除く）。
 * ブラウザーのキャッシュとは別に、CDN キャッシュを制御するために `Surrogate-Control` ヘッダーを使用します。
@@ -154,7 +154,7 @@ AEM レイヤーは、デフォルトでは BLOB コンテンツをキャッシ�
       </LocationMatch>
       ```
 
-   * HTML ページを 5 分間キャッシュし、バックグラウンド更新でブラウザーに 1 時間、CDN に 12 時間キャッシュします。Cache-Control ヘッダーは常に追加されるので、/content/* 下の一致する html ページが公開を意図したものであることが重要です。そうでない場合は、より詳細な正規表現の使用を検討してください。
+   * HTML ページを 5 分間キャッシュし、バックグラウンド更新でブラウザーに 1 時間、CDN に 12 時間キャッシュします。Cache-Control ヘッダーは常に追加されるので、/content/* 下の一致する html ページが公開を意図したものであることが重要です。そうでない場合は、より具体的な正規表現を使用することを検討してください。
 
       ```
       <LocationMatch "^/content/.*\.html$">
@@ -195,21 +195,21 @@ AEM レイヤーは、デフォルトでは BLOB コンテンツをキャッシ�
 
 ### HEAD リクエスト動作 {#request-behavior}
 
-キャッシュされて&#x200B;**いない**&#x200B;リソースに対する HEAD リクエストを Adobe CDN で受信すると、リクエストは Dispatcher や AEM インスタンスによって GET リクエストとして変換および受信されます。応答がキャッシュ可能な場合、以降の HEAD リクエストは CDN から提供されます。レスポンスがキャッシュ可能でない場合、それ以降の HEAD リクエストは `Cache-Control` TTL に依存する期間、Dispatcher や AEM インスタンスに引き渡されます。
+AdobeCDN で、以下のHEADに関するリソースリクエストを受信したとき **not** キャッシュされた場合、リクエストは、Dispatcher またはAEMインスタンスによってGETリクエストとして変換され、受け取られます。 応答がキャッシュ可能な場合、以降のHEADリクエストは CDN から提供されます。 応答がキャッシュできない場合、後続のHEAD要求は、Dispatcher またはAEMインスタンス（あるいはその両方）に、 `Cache-Control` TTL。
 
 ## Dispatcher キャッシュの無効化 {#disp}
 
-一般に、Dispatcher キャッシュを無効にする必要はありません。代わりに、コンテンツが再公開される際に Dispatcher がキャッシュを更新し、CDN がキャッシュの有効期限のヘッダーを考慮することを信頼できます。
+一般に、Dispatcher キャッシュを無効にする必要はありません。 代わりに、コンテンツが再公開される際に Dispatcher がキャッシュを更新し、CDN がキャッシュの有効期限のヘッダーを考慮することを信頼できます。
 
 ### アクティベーション／非アクティベーション中の Dispatcher キャッシュの無効化 {#cache-activation-deactivation}
 
-以前のバージョンの AEM と同様に、ページの公開または非公開では、Dispatcher のキャッシュからコンテンツがクリアされます。キャッシュに問題があると疑われる場合は、該当するページを再度公開し、ServerAlias localhost に一致する仮想ホスト（Dispatcher キャッシュの無効化に必要）が使用可能であることを確認する必要があります。
+以前のバージョンのAEMと同様に、ページの公開または非公開は、Dispatcher キャッシュからコンテンツをクリアします。 キャッシュの問題の疑いがある場合は、該当するページを再公開し、 `ServerAlias` localhost :Dispatcher キャッシュの無効化に必要です。
 
-パブリッシュインスタンスは、オーサーから新しいバージョンのページまたはアセットを受け取ると、フラッシュエージェントを使用して Dispatcher 上の適切なパスを無効にします。更新されたパスは、親と共に、Dispatcher キャッシュから削除されます（削除されるレベルは [statfilelevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#invalidating-files-by-folder-level) で設定できます）。
+パブリッシュインスタンスは、オーサーから新しいバージョンのページまたはアセットを受け取ると、フラッシュエージェントを使用して Dispatcher 上の適切なパスを無効にします。 更新されたパスは、親と共に、Dispatcher キャッシュから削除されます ( これを [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#invalidating-files-by-folder-level)) をクリックします。
 
 ## Dispatcher キャッシュの明示的な無効化 {#explicit-invalidation}
 
-Adobeでは、標準のキャッシュヘッダーを使用して、コンテンツ配信のライフサイクルを制御することをお勧めします。 ただし、必要に応じて、Dispatcher 内のコンテンツを直接無効にすることができます。
+Adobeでは、標準のキャッシュヘッダーを使用して、コンテンツ配信のライフサイクルを制御することをお勧めします。 ただし、必要に応じて、Dispatcher 内で直接コンテンツを無効にすることができます。
 
 以下のリストに、（オプションで無効化の完了をリッスンしながら）キャッシュを明示的に無効にする場合があるシナリオを示します。
 
@@ -301,7 +301,7 @@ Adobeでは、標準のキャッシュヘッダーを使用して、コンテン
 
 * レプリケーション API の使用は一般的な使用例ではありませんが、キャッシュを無効にするトリガーがオーサー層ではなくパブリッシュ層から提供される場合に使用します。 これは、Dispatcher の TTL が設定されている場合に役立ちます。
 
-最後に、Dispatcher のキャッシュを無効にする場合は、オーサーから SCD API の無効化アクションを使用することをお勧めします。 また、イベントをリッスンして、さらにダウンストリームアクションをトリガー化することもできます。
+結論として、Dispatcher キャッシュを無効にする場合は、オーサーから SCD API 無効化アクションを使用することをお勧めします。 また、イベントをリッスンして、さらにダウンストリームアクションをトリガー化することもできます。
 
 ### Sling コンテンツ配布 (SCD) {#sling-distribution}
 
@@ -434,7 +434,7 @@ The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushe
 
 ## クライアントサイドライブラリとバージョンの整合性 {#content-consistency}
 
-ページは、HTML、JavaScript、CSS、画像で構成されます。JS ライブラリ間の依存関係を考慮して、[クライアントサイドライブラリ（clientlibs）フレームワーク](/help/implementing/developing/introduction/clientlibs.md)を活用し、JavaScript および CSS リソースを HTML ページに読み込むことをお勧めします。
+ページは、HTML、JavaScript、CSS、画像で構成されます。 JS ライブラリ間の依存関係を考慮して、[クライアントサイドライブラリ（clientlibs）フレームワーク](/help/implementing/developing/introduction/clientlibs.md)を活用し、JavaScript および CSS リソースを HTML ページに読み込むことをお勧めします。
 
 clientlibs フレームワークは、自動バージョン管理を提供します。つまり、開発者はソース管理で JS ライブラリに対する変更をチェックインでき、最新バージョンは、顧客がリリースをプッシュしたときに利用可能になります。この機能がないと、開発者は新しいバージョンのライブラリを参照して HTML を手動で変更する必要があります。同じライブラリを共有する HTML テンプレートが多い場合は特に負担がかかります。
 
@@ -464,5 +464,5 @@ HTML ページにインクルードされるデフォルトの clientlib は、�
 1. Adobe Granite HTML Library Manager の OSGi Config を探します。
    * 「厳密なバージョン管理」チェックボックスをオンにして有効にします。
    * 「長期クライアントサイドキャッシュキー」というラベルの付いたフィールドに、値「/.*;hash」を入力します。
-1. 変更内容を保存します。AEM as a Cloud Service は、開発、ステージ、実稼動環境でこの設定を自動的に有効にするので、この設定をソース管理に保存する必要はありません。
+1. 変更内容を保存します。AEM as a Cloud Serviceは開発、ステージ、実稼動環境でこの設定を自動的に有効にするので、この設定をソース管理に保存する必要はありません。
 1. クライアントライブラリのコンテンツが変更されるたびに、新しいハッシュキーが生成され、HTML 参照が更新されます。
