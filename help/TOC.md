@@ -8,7 +8,7 @@ user-guide-description: Adobe Experience Manager as a Cloud Service の概要に
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4d8bb08b8791dcc576f1566f480519594ed2e9d4
+source-git-commit: 2e0aef129333eb99933bc0adfc8a753069bd656f
 workflow-type: tm+mt
 source-wordcount: '3731'
 ht-degree: 94%
@@ -478,11 +478,11 @@ ht-degree: 94%
       + [DHTML ビューアの提供終了](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Adobe Workfront との統合 {#integrations}
       + [ [!DNL Adobe Workfront] との統合](/help/assets/workfront-integrations.md)
+      + [アセットメタデータマッピングの設定](/help/assets/configure-asset-metadata-mapping.md)
       + [ [!DNL Workfront] 用の  [!DNL enhanced connector]  のインストール](/help/assets/workfront-connector-install.md)
       + [既存のインストールの外部依存関係の削除](/help/assets/remove-external-dependencies.md)
       + [ [!DNL Workfront] 用の  [!DNL enhanced connector]  の設定](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
-      + [アセットメタデータマッピングの設定](/help/assets/configure-asset-metadata-mapping.md)
 + Forms {#forms}
    + [はじめに](/help/forms/home.md)
    + [主な機能](/help/forms/key-features.md)
