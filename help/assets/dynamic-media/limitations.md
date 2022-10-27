@@ -1,17 +1,17 @@
 ---
 title: Dynamic Mediaの制限
-description: 画像セットやスピンセットを作成したり、画像をアップロードしたりする際の、ベストプラクティスと適用される制限について説明します。PDF また、Dynamic Media Viewers でサポートされていない Web ブラウザーとオペレーティングシステムの組み合わせについても説明します。
+description: 画像セットやスピンセットを作成したり、画像をアップロードしたりする際の、ベストプラクティスと適用される制限について説明します。PDF また、Dynamic Mediaでサポートされていない Web ブラウザーとオペレーティングシステムの組み合わせについても説明します。
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
-feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
+feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
-source-git-commit: 479349d2dad841a782519de3302993ea2a9f5162
+source-git-commit: e669fc821402f84fae58f457d5d9d1680c39ffaf
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 4%
+source-wordcount: '278'
+ht-degree: 5%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 4%
 このトピックには、次の節が含まれます。
 
 * [アセットタイプに関するDynamic Mediaのベストプラクティスと適用される制限](#best-practice-enforced-limits)
-* [Dynamic Media Viewers でサポートされていない Web ブラウザーとオペレーティングシステムの組み合わせ](#unsupported-browser-os)
+* [Dynamic Mediaでサポートされていない Web ブラウザーとオペレーティングシステムの組み合わせ](#unsupported-browser-os)
 
 ## アセットタイプに関するDynamic Mediaのベストプラクティスと適用される制限 {#best-practice-enforced-limits}
 
@@ -38,9 +38,9 @@ Adobeでは、ページ抽出用にスピンセットや画像セットを作成
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
-## Dynamic Media Viewers でサポートされていない Web ブラウザーとオペレーティングシステムの組み合わせ {#unsupported-browser-os}
+## Dynamic Mediaでサポートされていない Web ブラウザーとオペレーティングシステムの組み合わせ {#unsupported-browser-os}
 
-Dynamic Mediaビューアでは、次の Web ブラウザーとオペレーティングシステムの組み合わせはサポートされていません。
+Dynamic Mediaでは、次の Web ブラウザーとオペレーティングシステムの組み合わせはサポートされていません。
 
 * Internet Explorer 11 + Windows 7
 * Internet Explorer 11 + Windows 8.1
@@ -56,7 +56,7 @@ Dynamic Mediaビューアでは、次の Web ブラウザーとオペレーテ�
 
 <!-- CQDOC-19433 -->
 
-2022 年 9 月 30 日に、AdobeDynamic Mediaビューアは次のサポートを終了します。
+AdobeDynamic Mediaは、2022 年 9 月 30 日に以下のサポートを終了します。
 
 * TLS(Transport Layer Security)1.0 および 1.1
 * TLS 1.2 での以下の脆弱な暗号：
