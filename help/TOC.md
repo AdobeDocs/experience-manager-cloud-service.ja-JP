@@ -8,10 +8,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service の概要に
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2e0aef129333eb99933bc0adfc8a753069bd656f
+source-git-commit: 733a4e6a4b4d485a36bcc2b9f043bd6295920bb9
 workflow-type: tm+mt
-source-wordcount: '3731'
-ht-degree: 94%
+source-wordcount: '3725'
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 94%
    + [用語 - AEM as a Cloud Service 関連の新しい用語](/help/overview/terminology.md)
    + [AEM as a Cloud Service のアーキテクチャの概要](/help/overview/architecture.md)
    + [SEO と URL の管理](/help/overview/seo-and-url-management.md)
-   + [統合シェルでas a Cloud ServiceのAEMを使用](/help/overview/aem-cloud-service-on-unified-shell.md)
+   + [統合シェルでの AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)
    + [KPI の評価](/help/overview/assessing-kpis.md)
    + [KPI の調整](/help/overview/aligning-kpis.md)
    + [適切なチームの選択](/help/overview/choose-right-team.md)
@@ -131,19 +131,19 @@ ht-degree: 94%
    + [AEM as a Cloud Service のサイト Cookie サポートポリシー](/help/security/same-site-cookie-support.md)
    + [メールサービスの OAuth2 サポート](/help/security/oauth2-support-for-mail-service.md)
 + オンボーディング {#onboarding}
-   + [ここから開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
+   + [ここから開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ja)
    + オンボーディングジャーニー {#journey}
       + [オンボーディングジャーニー概要](/help/journey-onboarding/overview.md)
       + [オンボーディングの準備](/help/journey-onboarding/preparation.md)
-      + [AEMas a Cloud Service用語](/help/journey-onboarding/terminology.md)
+      + [AEM as a Cloud Service の用語](/help/journey-onboarding/terminology.md)
       + [Admin Console](/help/journey-onboarding/admin-console.md)
       + [Cloud Manager 製品プロファイルの割り当て](/help/journey-onboarding/assign-profiles-cloud-manager.md)
       + [Cloud Manager へのアクセス](/help/journey-onboarding/cloud-manager.md)
       + [プログラムの作成](/help/journey-onboarding/create-program.md)
       + [環境の作成](/help/journey-onboarding/create-environments.md)
-      + [AEM製品プロファイルの割り当て](/help/journey-onboarding/assign-profiles-aem.md)
+      + [AEM 製品プロファイルの割り当て](/help/journey-onboarding/assign-profiles-aem.md)
       + [開発者およびデプロイメントマネージャーのタスク](/help/journey-onboarding/developers.md)
-      + [AEM User Tasks](/help/journey-onboarding/aem-users.md)
+      + [AEM ユーザータスク](/help/journey-onboarding/aem-users.md)
       + [ユーザーグループ](/help/journey-onboarding/user-groups.md)
    + AEM 参照デモのアドオンジャーニー {#demo-add-on}
       + [概要](/help/journey-sites/demos-add-on/overview.md)
@@ -280,8 +280,6 @@ ht-degree: 94%
          + [セグメント化について](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [ContextHub でのセグメント化の設定](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [登録、ログイン、ユーザープロファイル](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
-      + Campaign {#campaign}
-         + [AEMでのニュースレターの作成](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
    + 管理 {#administering}
       + コンテンツフラグメント {#content-fragments}
          + [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/content-fragments.md)
@@ -350,7 +348,7 @@ ht-degree: 94%
       + [Adobe Target との統合](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Adobe Target との統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [エクスペリエンスフラグメントの Adobe Target へのエクスポート](/help/sites-cloud/integrating/experience-fragments-target.md)
-      + [Adobe Campaign Classic との統合](/help/sites-cloud/integrating/integrating-campaign-classic.md)
+      + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
 + アセット {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [概要と新機能](/help/assets/overview.md)
@@ -452,7 +450,7 @@ ht-degree: 94%
       + [Dynamic Media アセットを配信する](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Dynamic Media でホットリンク保護を有効化する](/help/assets/dynamic-media/hotlink-protection.md)
       + [3D サポート](/help/assets/dynamic-media/assets-3d.md)
-      + [Dynamic Mediaの制限](/help/assets/dynamic-media/limitations.md)
+      + [Dynamic Media の制限](/help/assets/dynamic-media/limitations.md)
       + [画像セット](/help/assets/dynamic-media/image-sets.md)
       + [パノラマ画像](/help/assets/dynamic-media/panoramic-images.md)
       + [混在メディアセット](/help/assets/dynamic-media/mixed-media-sets.md)
@@ -513,7 +511,7 @@ ht-degree: 94%
       + アダプティブフォームへのコンポーネントの追加 {#add-components-to-an-adaptive-form}
          + [アダプティブフォームでの CAPTCHA の使用](/help/forms/captcha-adaptive-forms.md)
          + [コアコンポーネントの使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
-         + [手書き署名を適用](/help/forms/signing-forms-using-scribble.md)
+         + [手書き署名の適用](/help/forms/signing-forms-using-scribble.md)
       + アダプティブフォームのレイアウト設定とスタイルの適用{#configure-layout-of-an-adaptive-form}
          + [アダプティブフォームのレイアウト設定](/help/forms/layout-capabilities-adaptive-forms.md)
          + [レイアウトモードを使用したコンポーネントのサイズ変更](/help/forms/resize-using-layout-mode.md)
@@ -648,18 +646,18 @@ ht-degree: 94%
       + [コンテンツフラグメント](/help/headless/setup/create-content-fragment.md)
       + [GraphQL エンドポイント](/help/headless/setup/create-api-request.md)
    + コンテンツフラグメント {#content-fragments}
-      + [概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
-      + [コンテンツフラグメントコンソール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)
-      + [コンテンツフラグメントモデル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
-      + [プロジェクト管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
+      + [概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html?lang=ja)
+      + [コンテンツフラグメントコンソール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ja)
+      + [コンテンツフラグメントモデル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html?lang=ja)
+      + [プロジェクト管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html?lang=ja)
       + オーサリング{#authoring}
-         + [オーサリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html)
-         + [テキストエディター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html)
-         + [関連コンテンツ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html)
-         + [バリエーション](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#managing-variations)
-      + [メタデータ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html)
-      + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html)
-      + [JSON プレビュー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html)
+         + [オーサリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html?lang=ja)
+         + [テキストエディター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html?lang=ja)
+         + [関連コンテンツ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html?lang=ja)
+         + [バリエーション](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html?lang=ja#managing-variations)
+      + [メタデータ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html?lang=ja)
+      + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html?lang=ja)
+      + [JSON プレビュー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html?lang=ja)
    + GraphQL API {#graphql-api}
       + [コンテンツフラグメント用 GraphQL API](/help/headless/graphql-api/content-fragments.md)
       + [GraphQL エンドポイントを管理](/help/headless/graphql-api/graphql-endpoint.md)
