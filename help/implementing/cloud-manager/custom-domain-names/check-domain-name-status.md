@@ -2,10 +2,10 @@
 title: ドメイン名ステータスの確認
 description: Cloud Manager でカスタムドメイン名が正常に検証されたかどうかを判断する方法について説明します。
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: ba0226b5ad3852dd5f72dd7e0ace650035f5ac6a
+source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 100%
+source-wordcount: '663'
+ht-degree: 72%
 
 ---
 
@@ -52,21 +52,33 @@ Cloud Manager では、**カスタムドメイン追加**&#x200B;ウィザード
 
 ## ドメイン名エラー {#domain-error}
 
-この節では、表示される可能性のあるエラーと、その解決方法について説明します。
+次に、一般的なドメイン名のエラーとその一般的な解決方法を示します。
 
-**ドメインがインストールされていません** - レコードが適切に更新されたことを確認した後でも、TXT レコードのドメイン検証中にこのエラーが表示されます。
+### ドメインがインストールされていませんエラー {#domain-not-installed}
 
-**エラーの説明** - ドメインを登録した初期アカウントに対し、Fastly がドメインをロックし、他のアカウントが許可なくサブドメインを登録することはできません。さらに、Fastly では、apex ドメインと関連するサブドメインを 1 つの Fastly サービスおよびアカウントに割り当てることができます。AEM Cloud Service ドメインで使用されるのと同じ apex およびサブドメインをリンクする既存の Fastly アカウントがある場合、このエラーが表示されます。
+このエラーは、レコードが適切に更新されたことを確認した後でも、TXT レコードのドメイン検証中に発生する可能性があります。
 
-**エラーの解決** - エラーは次のように修正されます。
+#### エラーの原因 {#cause}
 
-* Cloud Manager にドメインをインストールする前に、既存のアカウントから apex とサブドメインを削除します。apex ドメインとすべてのサブドメインを AEM as a Cloud Service Fastly アカウントにリンクするには、このオプションを使用します。詳しくは、[Fastly でのドメインの使用ドキュメント](https://docs.fastly.com/en/guides/working-with-domains)を参照してください。
+ドメインを登録した初期アカウントに Fastly がロックし、許可を求めずに他のアカウントがサブドメインを登録することはできません。 さらに、Fastly では、apex ドメインと関連するサブドメインを 1 つの Fastly サービスおよびアカウントに割り当てることができます。AEM Cloud Service ドメインで使用されるのと同じ apex およびサブドメインをリンクする既存の Fastly アカウントがある場合、このエラーが表示されます。
 
-* 異なる Fastly アカウントにリンクする AEM as a Cloud Service および非 AEM as a Cloud Service サイトの複数のサブドメインが apex ドメインにある場合は、Cloud Manager にドメインをインストールしてみます。ドメインのインストールに失敗した場合は、Fastly でカスタマーサポートチケットを作成してください。アドビがフォローアップします。
+#### エラーの解決 {#resolution}
+
+エラーは次のように修正されました。
+
+* Cloud Manager にドメインをインストールする前に、既存のアカウントから apex とサブドメインを削除します。
+
+* apex ドメインとすべてのサブドメインを AEM as a Cloud Service Fastly アカウントにリンクするには、このオプションを使用します。詳しくは、[Fastly でのドメインの使用ドキュメント](https://docs.fastly.com/en/guides/working-with-domains)を参照してください。
+
+* apex ドメインに、異なる Fastly アカウントにリンクするAEMas a Cloud Serviceおよび非AEMas a Cloud Serviceサイト用の複数のサブドメインがある場合は、Cloud Manager にドメインをインストールしてみてください。 ドメインのインストールに失敗した場合は、Fastly でカスタマーサポートチケットを作成し、Adobeがお客様に代わって Fastly でフォローアップをおこなえるようにします。
+
+>[!TIP]
+>
+>Fastly でのドメインのデリゲーションに関する問題を解決するには、通常 1 ～ 2 営業日かかります。 このため、Go Live 日の前にドメインを適切にインストールすることを強くお勧めします。
 
 >[!NOTE]
 >
->注意：ドメインが正常にインストールされなかった場合は、サイトの DNS を AEM as a Cloud Service IP にルーティングしないでください。
+>ドメインが正常にインストールされなかった場合は、サイトの DNS をAEMas a Cloud Serviceの IP にルーティングしないでください。
 
 ## カスタムドメイン名の既存の CDN 設定 {#pre-existing-cdn}
 

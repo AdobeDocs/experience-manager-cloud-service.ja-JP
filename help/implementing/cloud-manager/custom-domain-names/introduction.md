@@ -2,10 +2,10 @@
 title: カスタムドメイン名の概要
 description: Cloud Manager の UI では、セルフサービス方式でカスタムドメインを追加して、サイトを独自のブランド名で識別することができます。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: fe08925c86a82a600eabd5a7d4ad6e38b3e76dfe
+source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 92%
+source-wordcount: '665'
+ht-degree: 84%
 
 ---
 
@@ -53,7 +53,7 @@ AEMaaCS でカスタムドメイン名を使用する場合は、多くの制限
 
 カスタムドメイン名を追加するには、DNS サービスと Cloud Manager 間のやり取りが必要です。このため、カスタムドメイン名のインストール、設定、検証には、いくつかの手順が必要です。次の表に、一般的なエラーが発生した場合の対処方法など、必要な手順の概要を示します。
 
-| 手順 | 説明 | 担当 | 詳細情報 |
+| ステップ | 説明 | 担当 | 詳細情報 |
 |--- |--- |--- |---|
 | 1 | Cloud Manager への SLL 証明書の追加 | 顧客 | [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | TXT レコードを追加してドメインを検証 | 顧客 | [TXT レコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
@@ -64,3 +64,7 @@ AEMaaCS でカスタムドメイン名を使用する場合は、多くの制限
 | 5 | DNS レコードのステータスを確認 | 顧客 | [DNS レコードのステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 | 5a | DNS レコードのステータスが次の条件で失敗した場合：`DNS status not detected` | 顧客 | [DNS レコードのステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 | 5b | DNS レコードのステータスが次の条件で失敗した場合：`DNS resolves incorrectly` | 顧客 | [DNS レコードのステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+
+>[!TIP]
+>
+>通常、AEM as a Cloud Service を使用したカスタムドメイン名の設定は簡単な手順です。 ただし、ドメインのデリゲーションに関する問題が発生する場合があり、解決に 1 ～ 2 営業日かかる場合があります。 このため、Go Live 日の前にドメインを適切にインストールすることを強くお勧めします。 ドキュメントを参照 [ドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) を参照してください。
