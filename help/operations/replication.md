@@ -2,10 +2,10 @@
 title: レプリケーション
 description: コンテンツ配布とレプリケーションのトラブルシューティング。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 30428716603a53f3a549a18541de593bbfe879df
+source-git-commit: 9260e3cfffdbff3469e92847af8d12c2eb52f5b1
 workflow-type: tm+mt
-source-wordcount: '1258'
-ht-degree: 87%
+source-wordcount: '1262'
+ht-degree: 99%
 
 ---
 
@@ -84,7 +84,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 * `enableVersion`（ブール値、デフォルト：`true`）。このパラメーターは、レプリケーション時に新しいバージョンが作成されるかどうかを指定します。
 * `agentId`（文字列値。デフォルトは、パブリッシュのエージェントのみが使用されることを意味します）。agentId を明確にすることをお勧めします。例えば、値「publish」を設定します。エージェントを `preview` に設定すると、プレビューサービスに公開されます。
 * `filters`（文字列値。デフォルトは、すべてのパスがアクティブ化されることを意味します）。使用できる値は次のとおりです。
-   * `onlyActivated`  — 有効化済みとマークされたパスのみが有効化されます。
+   * `onlyActivated` - （既に）アクティベートされたページのみをアクティベートします。 再アクティベートの形式で動作します。
    * `onlyModified` - 既にアクティブ化されており、変更日がアクティブ化の日付よりも後のパスのみをアクティブ化します。
    * 上記は、パイプ（|）で OR 結合できます。（例：`onlyActivated|onlyModified`）。
 
@@ -114,7 +114,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
 ### レプリケーション API {#replication-api}
 
-AEM as a Cloud Serviceの機能を備えたレプリケーション API を使用して、コンテンツを公開できます。
+AEM as a Cloud Service に備わっている Replication API を使用してコンテンツを公開できます。
 
 詳しくは、 [API のドキュメント](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html) を参照してください。
 
@@ -174,14 +174,14 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 ### コンテンツの無効化方法 {#invalidating-content}
 
-コンテンツを直接無効にするには、オーサーから Sling コンテンツ無効化 (SCD) を使用するか（推奨される方法）、レプリケーション API を使用してパブリッシュ Dispatcher フラッシュレプリケーションエージェントを呼び出します。 詳しくは、 [キャッシュ](/help/implementing/dispatcher/caching.md) ページを参照してください。
+コンテンツを直接無効にするには、作成者が Sling コンテンツ無効化（SCD）を使用するか（推奨される方法）、Replication API を使用して公開 Dispatcher フラッシュレプリケーションエージェントを呼び出します。詳しくは、 [キャッシュ](/help/implementing/dispatcher/caching.md) ページを参照してください。
 
-**レプリケーション API の容量の制限**
+**Replication API の容量制限**
 
-1 度に 100 個未満のパスをレプリケートすることをお勧めします。500 個がハードリミットです。 ハードリミットを超えて、 `ReplicationException` がスローされます。
-アプリケーションロジックがアトミックレプリケーションを必要としない場合、この制限は、 `ReplicationOptions.setUseAtomicCalls` を false に設定します。この値は任意の数のパスを受け入れますが、内部的にグループを作成して、この制限を下回るようにします。
+一度にレプリケートするパスは 100 個未満にすることをお勧めします。500 個のハードリミットを超えることはできません。ハードリミットを超えると、`ReplicationException` がスローされます。
+アプリケーションロジックにアトミックレプリケーションが必要ない場合は、`ReplicationOptions.setUseAtomicCalls` を false に設定することで、この制限を解除できます。これにより任意の数のパスを扱えますが、内部的には、この制限内に収まるようにバケットが作成されます。
 
-レプリケーション呼び出しごとに送信されるコンテンツのサイズは、 `10 MB`. ノードとプロパティが含まれますが、バイナリ（ワークフローパッケージとコンテンツパッケージはバイナリと見なされません）は含まれません。
+レプリケーション呼び出しごとに送信されるコンテンツのサイズは、`10 MB` を超えてはなりません。これにはノードとプロパティが含まれますが、バイナリは含まれません（ワークフローパッケージとコンテンツパッケージはバイナリと見なされません）。
 
 
 ## トラブルシューティング {#troubleshooting}
