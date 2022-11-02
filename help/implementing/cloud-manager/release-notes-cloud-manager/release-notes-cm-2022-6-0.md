@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.6.0 �
 description: AEM as a Cloud Service の Cloud Manager 2022.6.0 のリリースノートです。
 feature: Release Information
 exl-id: 0a348836-74cd-4fd4-aef4-6ffbd6483c24
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: e05c2fa2cfb035ed363e2c80d4aac33b022bd435
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 52%
+source-wordcount: '313'
+ht-degree: 100%
 
 ---
 
@@ -20,20 +20,18 @@ ht-degree: 52%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Serviceの Cloud Manager リリース 2022.6.0 のリリース日は 2022 年 6 月 9 日です。 次回のリリースは2022年6月30日（PT）に予定されています。
+AEM as a Cloud Service の Cloud Manager 2022.6.0 のリリース日は 2022年6月9日（PT）です。次回のリリースは 2022年6月30日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* Cloud Manager UI で、 [セルフサービスコンテンツの復元](/help/operations/backup.md) をAEMクラウド環境の正常な既知の状態に変更する。
-   * この機能は、2022.06.0リリース以降の数週間にわたって段階的なアプローチで展開されます。
 * Cloud Manager ランディングページの新しいウェルカムカードでは、テナントに関連するオンボーディングチュートリアルや進行状況指標にすばやくアクセスできます。
    * この機能は、2022.06.0 リリースの後、1 週間にわたって段階的アプローチで展開されます。
-* 必要な権限を持つユーザーが新しい [ライセンスダッシュボード](/help/implementing/cloud-manager/license-dashboard.md) Cloud Manager ランディングページで、テナントが使用できる権利の詳細を表示できます。
-   * AEM Sitesは、Cloud Manager ダッシュボードから可用性と使用状況の消費を提供する最初のソリューションです。
-   * この機能は、2022.06.0リリース以降の数週間にわたって段階的なアプローチで展開されます。
-* [New Relic サブアカウントおよびセルフサービスのユーザー管理](/help/implementing/cloud-manager/user-access-new-relic.md) は、Cloud Manager UI から使用できるようになりました。
-   * この機能は、2022.06.0リリース以降の数週間にわたって段階的なアプローチで展開されます。
-* Cloud Service制作プログラムのホームページ上にある新しい Go Live ウィジェットが、Go Live を成功に導くためのガイダンスを提供するようになりました。
+* 必要な権限を持つユーザーは、Cloud Manager ランディングページの新しい[ライセンスダッシュボード](/help/implementing/cloud-manager/license-dashboard.md)にアクセスして、テナントに割り当てられている使用資格の詳細を確認できます。
+   * AEM Sites は、Cloud Manager ダッシュボードで使用の可否と使用状況の情報が提供される最初のソリューションです。
+   * この機能は、2022.06.0 リリースの後、数週間にわたって段階的アプローチで展開されます。
+* [New Relic サブアカウントおよびセルフサービスユーザー管理](/help/implementing/cloud-manager/user-access-new-relic.md)が Cloud Manager UI から使用できるようになりました。
+   * この機能は、2022.06.0 リリースの後、数週間にわたって段階的アプローチで展開されます。
+* Cloud Service 実稼動プログラムのホームページにある新しい運用開始ウィジェットは、正常な運用開始エクスペリエンスを準備するためのガイダンスを提供するようになりました。
 * Git ミラーリングの使用時に、[ビルドアーティファクトを再利用できるようになりました](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)。
 
 ## API の変更点 {#api-changes}
