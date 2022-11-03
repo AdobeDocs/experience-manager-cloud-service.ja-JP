@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.10.0 のリリースノート
-description: AEM as a Cloud Service の Cloud Manager 2022.10.0 のリリースノートです。
+title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.11.0 のリリースノート
+description: AEM as a Cloud Service の Cloud Manager 2022.11.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a873b23f7dac8742820300ef154b94a72e4b8a23
+source-git-commit: b0d57f0ccfb80c8071026a53cab594cfced13497
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 41%
+source-wordcount: '191'
+ht-degree: 44%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.10.0 のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.11.0 のリリースノート {#release-notes}
 
-このページは、AEM as a Cloud Service の Cloud Manager 2022.10.0 のリリースノートです。
+このページは、AEM as a Cloud Service の Cloud Manager 2022.11.0 のリリースノートです。
 
 >[!NOTE]
 >
@@ -21,15 +21,14 @@ ht-degree: 41%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Serviceの Cloud Manager リリース 2022.9.0 のリリース日は 2022 年 10 月 6 日です。 次回のリリースは 2022 年 11 月 3 日に予定されています。
+AEM as a Cloud Serviceの Cloud Manager リリース2022.11.0のリリース日は 2022 年 11 月 3 日です。 次回のリリースは 2022年11月29日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* のバージョン。 [AEMプロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) Cloud Manager で使用されているをバージョン 39 に更新しました。
-* AEM上に CDN が設定されている Sites プログラムの場合、ライセンスダッシュボードの UI から通知が届くようになりました。
+* AEM Sitesソリューションのライセンスダッシュボードに、テナントがサブスクリプション内にあるかどうかなど、契約の詳細が表示されるようになりました。
+* パイプラインに関連付けられた環境のステータスが「パイプラインの実行」を許可しない場合、説明付きのツールチップで実行アクションが無効になります。
+* UI に、 **プログラムの追加** テナントの権限が不十分なので、ボタンは無効になっています。
 
-## バグ修正 {#bug-fixes}
+## バグの修正 {#bug-fixes}
 
-* E メールアドレスに大文字を含むユーザーを Cloud Manager の New Relic サブアカウントに追加できない問題を修正しました。
-* プログラムに複数のソリューションがある場合、Screens ソリューションが表示されるようになりました。
-* 環境のステータスが「更新中」の場合に、フロントエンドパイプライン実行が開始されない状況が修正されました。
+* 実稼動パイプラインの編集中のフィードバックが改善され、1 つ以上の見つからない環境の頻度が低い回数が検出されるようになりました。
