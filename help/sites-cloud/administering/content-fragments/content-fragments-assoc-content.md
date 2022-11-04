@@ -7,13 +7,13 @@ exl-id: eb524872-1403-42d1-b735-eaab382cf313
 source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
 source-wordcount: '244'
-ht-degree: 53%
+ht-degree: 79%
 
 ---
 
 # 関連コンテンツ{#associated-content}
 
-AEM関連コンテンツ機能には接続が用意されており、フラグメントをコンテンツページに追加する際に、アセットをオプションでフラグメントと共に使用できます ( [ページでコンテンツフラグメントを使用する際にアクセスできる様々なアセットを提供する](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) また、は、適切なアセットを検索するのに必要な時間を短縮するのに役立ちます。 これにより、ヘッドレスコンテンツ配信の柔軟性も高まります。
+AEM の関連コンテンツ機能には接続が用意されており、フラグメントをコンテンツページに追加する際に、アセットをオプションでフラグメントと共に使用できます。これは、[ページでコンテンツフラグメントを使用する際にアクセスできる様々なアセットを提供](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)することで行われ、適切なアセットを検索するために必要な時間を短縮させることもできます。これにより、ヘッドレスコンテンツ配信の柔軟性も向上させます。
 
 ## 関連コンテンツの追加 {#adding-associated-content}
 

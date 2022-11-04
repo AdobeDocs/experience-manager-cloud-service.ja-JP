@@ -12,7 +12,7 @@ exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
 source-git-commit: ccd52d147b1739330c3cb5a7d1952a7e9eec71ad
 workflow-type: tm+mt
 source-wordcount: '2525'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -136,7 +136,7 @@ Adobe® Photoshop® ファイルからのテンプレート作成、レイヤー
 
 ### 「PDF」タブ {#pdf-tab}
 
-新規のアップロードで、PDFの抽出で考慮される最大ページ数は 5,000 ページです。 この制限は、2022 年 12 月 31 日に ( すべてのPDFに対して )100 ページに変更されます。 関連トピック [Dynamic Mediaの制限](/help/assets/dynamic-media/limitations.md).
+抽出で考慮される PDF の最大ページ数は、新規アップロードの場合、5,000 です。この制限は、2022年12月31日（PT）に（すべての PDF に対して）100 ページに変更されます。 [Dynamic Media の制限事項](/help/assets/dynamic-media/limitations.md)も参照してください。
 
 ファイルのラスタライズ、検索単語とリンクの抽出、解像度の設定、カラースペースの選択を行うことができます。
 

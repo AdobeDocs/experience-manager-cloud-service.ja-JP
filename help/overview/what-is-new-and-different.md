@@ -5,7 +5,7 @@ exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 575be022704e998e63162f19c37ece877efef627
 workflow-type: tm+mt
 source-wordcount: '1903'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -150,7 +150,7 @@ AEM as a Cloud Service を使用すると、次のように作業の多くの側
 
 >[!TIP]
 >
->オンボーディングプロセスの完全な概要については、 [オンボーディングジャーニー。](/help/journey-onboarding/overview.md)
+>オンボーディングプロセスの完全な概要については、[オンボーディングジャーニー](/help/journey-onboarding/overview.md)を参照してください。
 
 ## 開発 {#developing}
 
@@ -200,7 +200,7 @@ OSGi バンドルとその関連設定を管理する web コンソール（以�
 
 >[!NOTE]
 >
->Cloud QuickStar では、AEM Sites および AEM Assets の機能をすべて使用できるわけではありません。この QuickStar は、拡張機能の大部分を開発およびテストできるシンプルなオーサー環境で構成されています。
+>Cloud QuickStart では、AEM Sites および AEM Assets の機能をすべて使用できるわけではありません。この QuickStart は、拡張機能の大部分を開発およびテストできるシンプルなオーサー環境で構成されています。
 
 ## 運用とパフォーマンス {#operations-and-performance}
 

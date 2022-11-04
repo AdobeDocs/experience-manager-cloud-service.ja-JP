@@ -1,5 +1,5 @@
 ---
-title: Dynamic Mediaへのジャーニー、第 2 部
+title: Dynamic Media へのジャーニー、パート 2
 description: Dynamic Media ジャーニーでは、Dynamic Media の基本的な仕組み、Dynamic Media で可能なこと、仕事や顧客にもたらす価値について説明します。
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
@@ -14,7 +14,7 @@ exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
 source-git-commit: c82707d07d888c48d3c02a76d58171720a6279eb
 workflow-type: tm+mt
 source-wordcount: '2878'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Dynamic Media アセットをアップロードして公開した後、アセッ
 ![Dynamic Media URL の分解](/help/assets/dynamic-media/assets/dm-colored-url.png)
 _Dynamic Media URL の分解。_
 
-URL の最初の部分（赤）は、サーバードメイン自体を参照しています。In this case, Dynamic Media is running on a generic server domain, which is `https://s7d1.scene7.com/is/image/`.一連の画像を見て、サーバードメインを調べるだけで、Dynamic Media で配信されているかどうかを簡単に理解できます。URL はかなり一貫しています。ただし、Dynamic Media のお客様の一部は、`name-of-your-company.scene7.com`.のように、専用のサーバードメインに切り替えている場合もあります。スマートイメージングには専用のサーバードメインが必要です。
+URL の最初の部分（赤）は、サーバードメイン自体を参照しています。In this case, Dynamic Media is running on a generic server domain, which is `https://s7d1.scene7.com/is/image/`. 一連の画像を見て、サーバードメインを調べるだけで、Dynamic Media で配信されているかどうかを簡単に理解できます。URL はかなり一貫しています。ただし、Dynamic Media のお客様の一部は、`name-of-your-company.scene7.com`.のように、専用のサーバードメインに切り替えている場合もあります。スマートイメージングには専用のサーバードメインが必要です。
 
 アカウント名は紫色の部分です。この場合、アカウントは `jpearldemo` です。
 
@@ -63,7 +63,7 @@ URL の最初の部分（赤）は、サーバードメイン自体を参照し�
 
 Dynamic Media には、web ページ上の画像アセットの微調整に使用できる、多数の画像処理パラメーターがあります。[こちらからリストを確認](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=ja)できます。
 
-次に、時計の画像に回転パラメーターを追加してみます。URL パスの末尾、`wid=1000` の直後に、`&rotate=90` と入力して **[!UICONTROL Enter]** キーを押します。[試してみる](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90)。
+次に、時計の画像に回転パラメーターを追加してみます。URL パスの末尾、`wid=1000` の直後に、`&rotate=90` と入力して **[!UICONTROL Enter]** キーを押します。[試してみる](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9)。
 
 時計はまだ少し左に歪んでいます。回転の値を `90` から `92` に変更し、**[!UICONTROL Enter]** キーを押します。[試してみる](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9)。
 
@@ -219,7 +219,7 @@ _Dynamic Media ヘルプトピック_
 
 _Dynamic Media チュートリアル_
 
-* [Experience Manager Assets での Dynamic Media の使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Experience Manager Assets での Dynamic Media の使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=ja)
 * [Adobe Experience Manager コンテンツライブラリ](https://experienceleague.adobe.com/?lang=ja#recommended/solutions/experience-manager)（_Dynamic Media_ で検索）
 
 _Dynamic Media ビューア_

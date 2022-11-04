@@ -7,7 +7,7 @@ exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
 source-git-commit: 5937ee8328be1af7e7f3f4765e24d65b074e02f1
 workflow-type: tm+mt
 source-wordcount: '1272'
-ht-degree: 60%
+ht-degree: 63%
 
 ---
 
@@ -39,9 +39,9 @@ Adobe [統合 [!DNL Workfront] および [!DNL Adobe Experience Manager Assets] 
 >
 >* アドビは、このコネクターを冗長にする[!DNL Adobe Workfront]および [!DNL Adobe Experience Manager] の更新をリリースする可能性があります。この場合、お客様はこのコネクターの使用から移行する必要が生じることがあります。
 >
->* Adobeは、拡張コネクタバージョン 1.7.4 以降をサポートしています。 以前のプレリリースおよびカスタムバージョンはサポートされていません。 拡張コネクタのバージョンを確認するには、次の手順 5(a) を参照してください： [コネクタのインストール手順の強化](workfront-connector-install.md).
+>* アドビでは、拡張コネクタバージョン 1.7.4 以降をサポートしています。以前のプレリリースバージョンやカスタムバージョンはサポートされていません。拡張コネクタのバージョンを確認するには、[拡張コネクタのインストール手順](workfront-connector-install.md)の手順 5(a) を参照してください。
 >
->* 詳しくは、[Workfront for Experience Manager Assets 拡張コネクタに関するパートナー認定試験](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html)を参照してください。試験について詳しくは、 [試験ガイド](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+>* 詳しくは、[Workfront for Experience Manager Assets 拡張コネクタに関するパートナー認定試験](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html)を参照してください。試験について詳しくは、[試験ガイド](https://express.adobe.com/page/Tc7Mq6zLbPFy8/)を参照してください。
 
 
 ## [!DNL Assets] と [!DNL Workfront] の間の異なる統合の比較  {#feature-parity-matrix}

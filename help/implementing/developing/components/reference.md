@@ -474,4 +474,4 @@ Granite UI および Granite UI ウィジェットでのフィールド検証は
 
 ![README.md がコンポーネントコンソールに表示される](assets/components-documentation-console.png)
 
-サポートされる Markdown は、 [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md).
+サポートされているマークダウンは、[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md)の場合と同じです。

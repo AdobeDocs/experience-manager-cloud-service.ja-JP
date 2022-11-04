@@ -5,7 +5,7 @@ exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 96%
 
 新しいモデルが必要な場合、情報アーキテクトはこれらのタスクを実行します。この「はじめる前に」ガイドの目的上、モデルを 1 つだけ作成します。
 
-1. AEM as a Cloud Serviceにログインし、メインメニューからを選択します。 **ツール**, **一般**, **コンテンツフラグメントモデル**.
+1. AEM as a Cloud Service にログインし、メインメニューで&#x200B;**ツール**／**一般**／**コンテンツフラグメントモデル**&#x200B;を選択します。
 1. 設定時に作成されたフォルダーをタップまたはクリックします。
 
    ![モデルフォルダー](../assets/models-folder.png)

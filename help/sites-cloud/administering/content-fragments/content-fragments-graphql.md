@@ -7,7 +7,7 @@ exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
 source-git-commit: bdbd78f0fdb14113d0eddccf4faba499849d48fe
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 88%
+ht-degree: 92%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 88%
 
 コンテンツフラグメントと GraphQL API を使用すると、Adobe Experience Manager（AEM）as a Cloud Service をヘッドレスコンテンツ管理システム（CMS）として使用できます。
 
-これを実現するには、AEM GraphQL API（標準 GraphQL に基づいてカスタマイズされた実装）と共にコンテンツフラグメントを使用して、アプリケーションで使用する構造化されたコンテンツをヘッドレスで配信します。単一の API クエリをカスタマイズする機能により、レンダリングする特定のコンテンツを（単一の API クエリに対する応答として）取得して配信できます。
+これを実現するには、AEM GraphQL API（標準 GraphQL に基づいてカスタマイズされた実装）と共にコンテンツフラグメントを使用して、アプリケーションで使用する構造化されたコンテンツをヘッドレスで配信します。単一の API クエリをカスタマイズできる機能により、レンダリングする特定のコンテンツを（単一の API クエリに対する応答として）取得して配信できます。
 
 >[!NOTE]
 >
 >関連トピック：
 >
->* [ヘッドレスとは](/help/headless/what-is-headless.md) を参照してください。
+>* ヘッドレスの概念と用語の概要については、[ヘッドレスとは](/help/headless/what-is-headless.md)を参照してください。
 >
->* [ヘッドレスとAEM](/help/headless/introduction.md) を参照してください。
+>* AEM Sites as a Cloud Service 向けヘッドレス開発の概要については、[ヘッドレスと AEM](/help/headless/introduction.md) を参照してください。
 
 
 >[!NOTE]

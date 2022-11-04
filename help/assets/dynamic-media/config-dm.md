@@ -6,7 +6,7 @@ exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 source-git-commit: 58aee2ad24b38fd8abc197961adda524832d2614
 workflow-type: tm+mt
 source-wordcount: '3596'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -269,10 +269,10 @@ Dynamic Media によって処理されるアセットタイプを定義して、
 
 **サポートされている形式の MIME タイプを編集するには：**
 
-1. 製品管理者としてas a Cloud ServiceのExperience Managerにログインします。
-1. Experience Manager as a Cloud Service で、Experience Manager as a Cloud Service ロゴを選択してグローバルナビゲーションコンソールにアクセスし、**[!UICONTROL 一般／CRXDE Lite]** に移動します。
+1. 製品管理者として Experience Manager as a Cloud Service にログインします。
+1. Experience Manager as a Cloud Service で、Experience Manager as a Cloud Service のロゴを選択してグローバルナビゲーションコンソールにアクセスし、**[!UICONTROL 一般／CRXDE Lite]** に移動します。
 
-   CRXDE Liteにアクセスできない場合は、 [使用CRXDE Lite](/help/implementing/developing/tools/crxde.md).
+   CRXDE Lite へのアクセス権がない場合は、[CRXDE Lite の使用](/help/implementing/developing/tools/crxde.md)を参照してください。
 
 1. 左側のパネルで、次の場所に移動します。
 
@@ -299,7 +299,7 @@ Experience Manager Assets でサポートされていない形式のカスタム
 
 **サポートされていない形式のカスタム MIME タイプを追加するには:**
 
-1. 製品管理者としてas a Cloud ServiceのExperience Managerにログインします。
+1. 製品管理者として Experience Manager as a Cloud Service にログインします。
 1. Experience Manager as a Cloud Service で、**[!UICONTROL ツール／操作／Web コンソール]**&#x200B;に移動します。
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
@@ -329,7 +329,7 @@ Experience Manager Assets でサポートされていない形式のカスタム
 1. Experience Manager as a Cloud Service のコンソールを開いているブラウザータブに戻ります。
 1. Experience Manager as a Cloud Service で、**[!UICONTROL ツール／一般／CRXDE Lite]** に移動します。
 
-   CRXDE Liteにアクセスできない場合は、 [使用CRXDE Lite](/help/implementing/developing/tools/crxde.md).
+   CRXDE Lite へのアクセス権がない場合は、[CRXDE Lite の使用](/help/implementing/developing/tools/crxde.md)を参照してください。
 
    ![ツール／一般／CRXDE Lite](assets/2019-08-02_16-55-41.png)
 
@@ -385,9 +385,9 @@ Granite のワークフローキューは、一時的でないワークフロー
 
 >[!NOTE]
 >
->このタスクを完了するには、製品管理者としてas a Cloud ServiceのExperience Managerにサインインする必要があります。
+>このタスクを完了するには、製品管理者として Experience Manager as a Cloud Service にログインする必要があります。
 
-OSGi へのアクセス権がない場合は、 [OSGi 設定](/help/implementing/developing/components/overview.md#osgi-configuration).
+OSGi へのアクセス権がない場合は、[OSGi 設定](/help/implementing/developing/components/overview.md#osgi-configuration)を参照してください。
 
 **事前定義済みの Granite のワークフローキュー（ビデオアセット）ワーカースレッドを更新するには：**
 
@@ -413,7 +413,7 @@ Granite の一時的なワークフローキューは、**[!UICONTROL DAM アセ
 
 >[!NOTE]
 >
->このタスクを完了するには、製品管理者としてas a Cloud ServiceのExperience Managerにサインインする必要があります。
+>このタスクを完了するには、製品管理者として Experience Manager as a Cloud Service にログインする必要があります。
 
 **事前定義済みの Granite の一時的なワークフローキューワーカースレッドを更新するには：**
 
@@ -438,11 +438,11 @@ Granite の一時的なワークフローキューは、**[!UICONTROL DAM アセ
 
 #### Dynamic Media Classic（Scene7）サーバーへの最大アップロード接続数の更新 {#update-max-s7-upload-connections}
 
-Dynamic Media Classic(Scene7) アップロード接続設定は、Experience ManagerアセットをDynamic Media Classicサーバーに同期します。
+Dynamic Media Classic（Scene7）アップロード接続の設定では、Experience Manager Assets を Dynamic Media Classic サーバーに同期します。
 
 >[!NOTE]
 >
->このタスクを完了するには、製品管理者としてas a Cloud ServiceのExperience Managerにサインインする必要があります。
+>このタスクを完了するには、製品管理者として Experience Manager as a Cloud Service にログインする必要があります。
 
 **Dynamic Media Classic（Scene7）サーバーへの最大アップロード接続数を更新するには：**
 

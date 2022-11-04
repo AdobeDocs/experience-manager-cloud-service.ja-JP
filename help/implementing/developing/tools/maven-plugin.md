@@ -5,7 +5,7 @@ exl-id: d631d6df-7507-4752-862b-9094af9759a0
 source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
 workflow-type: tm+mt
 source-wordcount: '1851'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->パッケージ **作成** は、現在、 [Apache Jackrabbit FileVault Package Maven プラグイン。](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
->* この `content-package-maven-plugin` は、リリース 1.0.2 からのパッケージ化をサポートしなくなりました。
->* この記事では、 **デプロイメント** 構築済みパッケージのAEMへの実行は、AdobeContent Package Maven プラグインがおこないます。
+>パッケージの&#x200B;**作成**&#x200B;は、[Apache Jackrabbit FileVault Package Maven プラグイン](https://jackrabbit.apache.org/filevault-package-maven-plugin/)で管理されるようになりました。
+>* `content-package-maven-plugin` は、リリース 1.0.2 以降、パッケージ化をサポートしなくなりました。
+>* この記事では、構築済みパッケージの AEM への&#x200B;**デプロイメント**&#x200B;を、Adobe Content Package Maven プラグインで実行する方法について説明します。
 
 
 ## パッケージと AEM プロジェクト構造 {#aem-project-structure}

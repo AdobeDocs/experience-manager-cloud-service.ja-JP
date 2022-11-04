@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '1781'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->コンテンツフラグメントは、 **Assets**. 主に **[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** コンソール ( 管理元は **Assets** コンソール。 この節では、 **Assets** コンソール。
+>コンテンツフラグメントは、**Assets** として保存されます。引き続き **Assets** コンソールから管理できますが、現在は主に&#x200B;**[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)**&#x200B;コンソールで管理します。このセクションでは、**Assets** コンソールでの管理を説明しています。
 
 ## コンテンツフラグメントの作成 {#creating-content-fragments}
 

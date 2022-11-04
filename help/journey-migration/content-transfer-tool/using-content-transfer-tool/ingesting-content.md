@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
 workflow-type: tm+mt
 source-wordcount: '908'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 74%
 
    >[!IMPORTANT]
    >
-   >ローカルの **AEM管理者** グループを作成します。 取り込みを開始できない場合は、 [取り込みを開始できません](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) を参照してください。
+   >宛先環境への取り込みを開始するには、宛先 Cloud Service オーサーサービスで、自身もローカルの **AEM 管理者**&#x200B;グループに属している必要があります。取り込みを開始できない場合、詳しくは、[取り込みを開始できない](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion)を参照してください。
 
    >[!IMPORTANT]
    >
@@ -104,21 +104,21 @@ ht-degree: 74%
 
 ## トラブルシューティング {#troubleshooting}
 
-### CAM は移行トークンを取得できません {#cam-unable-to-retrieve-the-migration-token}
+### CAM が移行トークンを取得できない {#cam-unable-to-retrieve-the-migration-token}
 
-移行トークンの自動取得が失敗する理由は、次のとおりです。 [Cloud Manager を使用した IP許可リストの設定](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) ( ターゲットCloud Service環境 )  このようなシナリオでは、取り込みを開始しようとすると、次のダイアログが表示されます。
+移行トークンの自動取得は、ターゲットの Cloud Service 環境における [Cloud Manager を介した IP 許可リストの設定](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)など、さまざまな理由で失敗する場合があります。このようなシナリオでは、取り込みを開始しようとすると、次のダイアログが表示されます。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
-ダイアログの「トークンを取得」リンクをクリックして、移行トークンを手動で取得する必要があります。 これにより、トークンを表示する別のタブが開きます。 その後、トークンをコピーし、 **移行トークン入力** フィールドに入力します。 これで、インジェストを開始できるようになります。
+ダイアログの「トークンを取得」リンクをクリックして、移行トークンを手動で取得する必要があります。 これにより、トークンを表示する別のタブが開きます。 その後、トークンをコピーし、**移行トークン入力**&#x200B;フィールドにペーストします。 これで、取り込みを開始できるようになります。
 
 >[!NOTE]
 >
->トークンは、ローカルのに属するユーザーが使用できます **AEM管理者** グループを作成します。
+>トークンは、宛先 Cloud Service オーサーサービスのローカル **AEM 管理者**&#x200B;グループに属するユーザーが使用することができます。
 
-### 取り込みを開始できません {#unable-to-start-ingestion}
+### 取り込みを開始できない {#unable-to-start-ingestion}
 
-ローカルの **AEM管理者** グループを作成します。 AEM 管理者グループに属していない場合は、取り込みを開始しようとすると、次に示すようなエラーが表示されます。管理者に問い合わせて、ローカルにユーザーを追加することもできます **AEM管理者** または、トークン自体を探し、 **移行トークン入力** フィールドに入力します。
+宛先 Cloud Service オーサーサービスのローカル **AEM 管理者** グループに属している場合にのみ、宛先環境への取り込みを開始することができます。AEM 管理者グループに属していない場合は、取り込みを開始しようとすると、次に示すようなエラーが表示されます。管理者に問い合わせてローカルの **AEM 管理者**&#x200B;に追加するよう依頼するか、トークン自体を依頼してから&#x200B;**移行トークン入力**&#x200B;フィールドにペーストすることができます。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 

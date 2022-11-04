@@ -7,7 +7,7 @@ exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
 source-git-commit: 109f07c7273cc9a4890e41bf29a1509f738d130b
 workflow-type: tm+mt
 source-wordcount: '1703'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 97%
 >
 >* アドビは、このコネクターを冗長にする[!DNL Adobe Workfront]および [!DNL Adobe Experience Manager] の更新をリリースする可能性があります。この場合、お客様はこのコネクターの使用から移行する必要が生じることがあります。
 >
->* Adobeは、拡張コネクタバージョン 1.7.4 以降をサポートしています。 以前のプレリリースおよびカスタムバージョンはサポートされていません。 拡張コネクタのバージョンを確認するには、次の手順 5(a) を参照してください： [コネクタのインストール手順の強化](workfront-connector-install.md).
+>* アドビでは、拡張コネクタバージョン 1.7.4 以降をサポートしています。以前のプレリリースバージョンやカスタムバージョンはサポートされていません。拡張コネクタのバージョンを確認するには、[拡張コネクタのインストール手順](workfront-connector-install.md)の手順 5(a) を参照してください。
 >
->* 詳しくは、[Workfront for Experience Manager Assets 拡張コネクタに関するパートナー認定試験](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html)を参照してください。試験について詳しくは、 [試験ガイド](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+>* 詳しくは、[Workfront for Experience Manager Assets 拡張コネクタに関するパートナー認定試験](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html)を参照してください。試験について詳しくは、[試験ガイド](https://express.adobe.com/page/Tc7Mq6zLbPFy8/)を参照してください。
 
 
 ## イベント購読の設定 {#event-subscriptions}

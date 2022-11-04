@@ -7,7 +7,7 @@ exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '365'
-ht-degree: 62%
+ht-degree: 94%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 62%
 コンテンツフラグメントを使用する前に、**設定ブラウザー**&#x200B;を使用して以下を有効にする必要があります。
 
 * **コンテンツフラグメントモデル** - 必須
-* **GraphQL 永続クエリ**  — オプション
+* **GraphQL 永続クエリ** - オプション
 
 >[!CAUTION]
 >
@@ -45,7 +45,7 @@ ht-degree: 62%
 
 >[!NOTE]
 >
->[サブ設定](/help/implementing/developing/introduction/configurations.md#configuration-resolution) （別の設定内にネストされた設定）は、コンテンツフラグメント、コンテンツフラグメントモデル、GraphQL クエリで使用できます。
+>[サブ設定](/help/implementing/developing/introduction/configurations.md#configuration-resolution)（別の設定内にネストされた設定）は、コンテンツフラグメント、コンテンツフラグメントモデルおよび GraphQL クエリでの使用が完全にサポートされています。
 >
 >注意：
 >
@@ -54,7 +54,7 @@ ht-degree: 62%
 >
 >* GraphQL エンドポイントは（引き続き）親（ルート）設定に基づいています。
 >
->* 永続化されたクエリは（引き続き）親（ルート）設定に関連して保存されます。
+>* 永続クエリは（引き続き）親（ルート）設定に関連して保存されます。
 
 
 
@@ -79,7 +79,7 @@ ht-degree: 62%
 
 ### フォルダーへの設定の適用 {#apply-the-configuration-to-your-folder}
 
-設定時 **global** コンテンツフラグメント機能が有効になっている場合は、これが適用されるのは、アセットフォルダー（からアクセス可能）に適用されます。 **Assets** コンソール。
+**グローバル**&#x200B;設定がコンテンツフラグメント機能に対して有効になっている場合、これは任意の Assets フォルダー（**Assets** コンソールからアクセスできます）に適用されます。
 
 他の設定（グローバル以外）を同等のアセットフォルダーで使用するには、接続を定義する必要があります。そのためには、適切なフォルダーの「**フォルダーのプロパティ**」の「**クラウドサービス**」タブで「**設定**」を適切に選択します。
 

@@ -7,7 +7,7 @@ exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 source-git-commit: 28dbb0afa6c63efd64d409f8df0ef837bc10f5d9
 workflow-type: tm+mt
 source-wordcount: '3333'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -54,13 +54,13 @@ ht-degree: 97%
 
 ## 切り抜きツールオプション {#crop-options}
 
-画像にスマート切り抜きを実装する場合、Adobeでは次のベストプラクティスを推奨し、次の制限を適用します。
+画像にスマート切り抜きを実装する場合、アドビでは次のベストプラクティスを推奨し、次の制限を適用します。
 
-| 制限タイプ | ベストプラクティス | 制限が適用されました | 2022 年 12 月 31 日の制限に変更 |
+| 制限タイプ | ベストプラクティス | 適用される制限 | 2022年12月31日（PT）の制限に変更 |
 | --- | --- | --- | --- |
 | 画像あたりのスマート切り抜き数 | 5 | 100 | 20 |
 
-関連トピック [Dynamic Mediaの制限](/help/assets/dynamic-media/limitations.md).
+[Dynamic Media の制限](/help/assets/dynamic-media/limitations.md)も参照してください。
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 

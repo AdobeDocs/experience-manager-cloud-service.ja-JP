@@ -1,19 +1,19 @@
 ---
 title: バリエーション - フラグメントコンテンツのオーサリング
-description: バリエーションを使用して、フラグメントのコンテンツを作成し、目的に応じてそのコンテンツのバリエーションを作成する方法を理解します。 これにより、ヘッドレス配信とページオーサリングの両方に柔軟性を提供します。
+description: バリエーションを使用してフラグメントのコンテンツをオーサリングする方法を理解してから、目的に応じてそのコンテンツのバリエーションを作成します。これにより、ヘッドレス配信とページオーサリングの両方の柔軟性が向上します。
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
 source-git-commit: d52372e69af2800703e20f36407a9b381db6264e
 workflow-type: tm+mt
 source-wordcount: '2310'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
 # バリエーション - フラグメントコンテンツのオーサリング{#variations-authoring-fragment-content}
 
-[バリエーション](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) はAEMコンテンツフラグメントの重要な機能で、特定のチャネルやシナリオで使用するためにマスターコンテンツのコピーを作成および編集でき、ページオーサリングとヘッドレスコンテンツ配信の両方をより柔軟に行うことができます。
+[バリエーション](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)は、特定のチャネルやシナリオで使用するためにマスターコンテンツのコピーを作成して編集できる、AEM のコンテンツフラグメントの重要な機能であり、ページオーサリングとヘッドレスコンテンツ配信の両方をさらに柔軟にします。
 
 「**バリエーション**」タブから、次の操作を実行できます。
 

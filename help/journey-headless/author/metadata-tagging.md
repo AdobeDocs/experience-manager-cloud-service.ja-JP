@@ -5,7 +5,7 @@ exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 source-git-commit: 0b953e0155fa1b90b5bccbf10b9ceaf1c1f63ae7
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 96%
 
 メタデータとタグを追加する方法は 3 とおりあります。
 
-* ( **Assets** コンソール ):
+* 最初にフラグメントを作成する場合（**Assets** コンソールから）：
 
    ![コンテンツフラグメント作成 - 名前の指定](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 

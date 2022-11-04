@@ -5,7 +5,7 @@ exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ GraphQL API を使用する前に、GraphQL エンドポイントを作成する
 
 情報アーキテクトは、コンテンツを配信するために、チャネルエンドポイント用のクエリを設計する必要があります。一般に、これらのクエリは、モデルやエンドポイントごとに 1 回だけ作成する必要があります。この「はじめる前に」ガイドの目的上、1 つだけ作成します。
 
-GraphiQL は IDE で、AEM環境に含まれます。次にアクセス/表示 [エンドポイントの設定](#enable-graphql-endpoint).
+GraphiQL は IDE であり、AEM 環境に含まれています。[エンドポイントを設定](#enable-graphql-endpoint)した後、アクセス可能になり表示されます。
 
 1. AEM as a Cloud Service にログインし、GraphiQL インターフェイスにアクセスします。
 

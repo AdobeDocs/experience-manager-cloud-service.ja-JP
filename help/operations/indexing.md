@@ -5,7 +5,7 @@ exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: 82f959a8a4f02486c1b3431b40534cdb95853dd6
 workflow-type: tm+mt
 source-wordcount: '2289'
-ht-degree: 89%
+ht-degree: 90%
 
 ---
 
@@ -285,4 +285,4 @@ Blue-Green デプロイメントでは、ダウンタイムは発生しません
 
 Apache Jackrabbit Oak では、柔軟なインデックス設定により検索クエリを効率的に処理できます。大規模なリポジトリーでは、インデックスは特に重要です。すべてのクエリに適切なインデックスを付与するようにしてください。適切なインデックスのないクエリを実行すると、何千ものノードが読み取られる可能性があり、その場合は警告として記録されます。
 
-詳しくは、 [このドキュメント](query-and-indexing-best-practices.md) クエリとインデックスを最適化する方法について詳しくは、を参照してください。
+クエリとインデックスを最適化する方法については、[このドキュメント](query-and-indexing-best-practices.md)を参照してください。

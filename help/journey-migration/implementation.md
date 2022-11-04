@@ -5,7 +5,7 @@ exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '2416'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Cloud Manager を使用すると、クラウド内の AEM を組織で自己管�
 
 Cloud Manager の使い方については、以下のリソースを参照してください。
 
-* [オンボーディングジャーニー](/help/journey-onboarding/overview.md) を参照して、Experience Manageras a Cloud Serviceのオンボーディングに関するセルフヘルプリソースを理解してください。
+* [オンボーディングジャーニー](/help/journey-onboarding/overview.md)：Experience Manager as a Cloud Service へのオンボーディングに関するセルフヘルプリソースについて理解します
 
 * [Git と Adobe Cloud Manager の統合](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)：1 つの Git リポジトリーを使用してコードをデプロイする方法について
 

@@ -6,19 +6,19 @@ exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
 workflow-type: tm+mt
 source-wordcount: '1008'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
 # GraphiQL IDE の使用 {#graphiql-ide}
 
-標準の [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE の実装は、Adobe Experience Manager（AEM）as a Cloud Service の GraphQL API で使用できます。
+標準の [GraphQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE の実装は、Adobe Experience Manager（AEM）as a Cloud Service の GraphQL API で使用できます。
 
 >[!NOTE]
 >
->GraphiQL はAEMのすべての環境に含まれています（ただし、エンドポイントを設定した場合にのみアクセス/表示できます）。
+>GraphiQL は AEM のすべての環境に含まれています（ただし、エンドポイントを設定した場合にのみアクセス可能／表示可能になります）。
 >
->以前のリリースでは、GraphiQL IDE をインストールするためにパッケージが必要でした。 これをインストール済みの場合は、削除できます。
+>以前のリリースでは、GraphiQL IDE をインストールするためにパッケージが必要でした。これをインストール済みの場合は、削除できます。
 
 >[!NOTE]
 >GraphiQL IDE を使用する前に、[設定ブラウザー](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)で[エンドポイントを設定](/help/headless/graphql-api/graphql-endpoint.md)しておく必要があります。
@@ -31,7 +31,7 @@ ht-degree: 68%
 * クエリを実行して結果をすぐに確認する
 * **クエリ変数**&#x200B;を管理する
 * **永続クエリ**&#x200B;を保存して管理する
-* 公開または非公開 **永続クエリ** （例：から/から） `dev-publish`)
+* **永続クエリ**&#x200B;を公開または非公開にする（`dev-publish` との間など）
 * 以前のクエリの&#x200B;**履歴**&#x200B;を確認する
 * **ドキュメントエクスプローラー**&#x200B;を使用してドキュメントにアクセスし、使用可能な方法を学び理解するのに役立てる
 
@@ -42,7 +42,7 @@ ht-degree: 68%
 
 ![GraphiQL インターフェイス](assets/cfm-graphiql-interface.png "GraphiQL インターフェイス")
 
-システムで GraphiQL を使用して、GETリクエストを使用してクライアントアプリケーションからクエリをリクエストできるようにし、クエリの公開に使用できます。 実稼動環境では、次の操作を実行できます。 [クエリを実稼動環境に移動する](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). 最初は実稼動オーサーに移行して、新しくオーサリングしたコンテンツをクエリで検証し、最終的には実稼動パブリッシュに移行してライブで利用できるようにします。
+システムで GraphiQL を使用すると、GET リクエストを使用してクライアントアプリケーションからクエリをリクエストしたり、クエリを公開したりできます。実稼動環境で使用する場合は、その後[クエリを実稼動環境に移動](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production)できます。最初は実稼動オーサーに移行して、新しくオーサリングしたコンテンツをクエリで検証し、最終的には実稼動パブリッシュに移行してライブで利用できるようにします。
 
 ## エンドポイントの選択 {#selecting-endpoint}
 
@@ -96,36 +96,36 @@ ht-degree: 68%
 
 ![GraphQL 変数](assets/cfm-graphqlapi-03.png "GraphQL 変数")
 
-## 永続化されたクエリのキャッシュの管理 {#managing-cache}
+## 永続クエリのキャッシュの管理 {#managing-cache}
 
-[永続クエリ](/help/headless/graphql-api/persisted-queries.md) は、要求元のクライアントアプリケーションのパフォーマンスを向上させるために、Dispatcher および CDN レイヤーでキャッシュできるので、お勧めします。 デフォルトでは、AEMはデフォルトの有効期間 (TTL) に基づいてコンテンツ配信ネットワーク (CDN) キャッシュを無効にします。
+[永続クエリ](/help/headless/graphql-api/persisted-queries.md)は、Dispatcher と CDN レイヤーでキャッシュできるので推奨されます。これにより、最終的に要求元のクライアントアプリケーションのパフォーマンスが向上します。デフォルトでは、AEM はデフォルトの有効期間（TTL）に基づいてコンテンツ配信ネットワーク（CDN）のキャッシュを無効にします。
 
-GraphQL を使用して、HTTP キャッシュヘッダーを設定し、個々の永続化されたクエリ用にこれらのパラメーターを制御できます。
+GraphQL を使用すると、HTTP キャッシュヘッダーを設定することにより、個々の永続クエリ用にこれらのパラメーターを制御できます。
 
-1. この **ヘッダー** オプションには、持続的なクエリ名（左端のパネル）の右側の 3 つの縦並びのドットからアクセスできます。
+1. 「**ヘッダー**」オプションには、永続クエリ名（左端のパネル）の右側にある 3 つの縦並びのドットからアクセスできます。
 
    ![永続クエリ HTTP キャッシュヘッダー](assets/cfm-graphqlapi-headers-01.png "永続クエリ HTTP キャッシュヘッダー")
 
-1. これを選択すると、 **キャッシュ設定** ダイアログ：
+1. これを選択すると、**キャッシュ設定**&#x200B;ダイアログが開きます。
 
    ![永続クエリ HTTP キャッシュヘッダー設定](assets/cfm-graphqlapi-headers-02.png "永続クエリ HTTP キャッシュヘッダー設定")
 
-1. 適切なパラメーターを選択し、必要に応じて値を調整します。
+1. 適切なパラメーターを選択し、必要に応じて次の値を調整します。
 
    * **cache-control** - **max-age**
-キャッシュは、指定された秒数間、このコンテンツを保存できます。 通常、これはブラウザーの TTL(Time To Live) です。
-   * **代理制御** - **s-maxage**
-max-age と同じですが、プロキシキャッシュに特に適用されます。
-   * **代理制御** - **stale-while-revalidate**
+キャッシュは、指定された秒数間、このコンテンツを保存できます。通常、これはブラウザーの TTL（有効期間）です。
+   * **surrogate-control** - **s-maxage**
+max-age と同じですが、特にプロキシキャッシュに適用されます。
+   * **surrogate-control** - **stale-while-revalidate**
 キャッシュは、古くなった後も、指定された秒数までキャッシュされた応答を引き続き提供します。
-   * **代理制御** - **stale-if-error**
-キャッシュは、エラーまたはオリジンエラーが発生した場合、指定された秒数まで、引き続きキャッシュされた応答を提供します。
+   * **surrogate-control** - **stale-if-error**
+キャッシュは、オリジンエラーが発生した場合、指定された秒数までキャッシュされた応答を引き続き提供します。
 
-1. 選択 **保存** をクリックして変更を保持します。
+1. 「**保存**」を選択して、変更内容を保持します。
 
-## 永続的なクエリの公開 {#publishing-persisted-queries}
+## 永続クエリの公開 {#publishing-persisted-queries}
 
-リスト（左パネル）から永続クエリを選択したら、「**公開**」アクションと「**非公開**」アクションを使用できます。これにより、パブリッシュ環境に対してアクティベートされます ( 例： `dev-publish`) を使用すると、テスト時にアプリケーションから簡単にアクセスできます。
+リスト（左パネル）から永続クエリを選択したら、「**公開**」アクションと「**非公開**」アクションを使用できます。これにより、パブリッシュ環境（`dev-publish` など）に対してアクティブ化され、テスト時にアプリケーションから簡単にアクセスできるようになります。
 
 >[!NOTE]
 >

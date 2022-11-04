@@ -4,8 +4,8 @@ description: AEM as a Cloud Service のバックアップと復元
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 source-git-commit: 3720ad4a7c7b20c7f594ecefbead669fa1280f75
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '505'
+ht-degree: 100%
 
 ---
 

@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
 source-wordcount: '3346'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -191,7 +191,7 @@ Cloud Manager を使用してインストールされたコンテンツパッケ
 
 アドビの翻訳パートナーを始めとするソフトウェアベンダーなどのサードパーティから提供される事前ビルド済みパッケージを組み込むことがよくあります。これらのパッケージをリモートリポジトリーでホストし、それらを `pom.xml` で参照することをお勧めします。これは、パブリックリポジトリーと、[パスワード保護 Maven リポジトリー](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)で説明されているパスワード保護を持つプライベートリポジトリーに対しても可能です。
 
-パッケージをリモートリポジトリーに格納できない場合は、ファイルシステムベースのローカルの Maven リポジトリーに保存できます。このリポジトリーは、プロジェクトの一環として SCM にコミットされ、利用元から参照されます。リポジトリは、次の図に示すように、プロジェクト POM 内で宣言されます。
+パッケージをリモートリポジトリーに格納できない場合は、ファイルシステムベースのローカルの Maven リポジトリーに保存できます。このリポジトリーは、プロジェクトの一環として SCM にコミットされ、利用元から参照されます。このリポジトリは、プロジェクトの POM で次の例のように宣言されます。
 
 
 ```
@@ -204,9 +204,9 @@ Cloud Manager を使用してインストールされたコンテンツパッケ
 
 <!-- formatting appears broken in the code sample above, check how it appears on AEM -->
 
-組み込まれるサードパーティパッケージはすべて、ここで説明している AEM as a Cloud Service のコーディングおよびパッケージングガイドラインに従う必要があります。従わない場合は、パッケージを組み込むとデプロイメントに失敗します。
+組み込まれるサードパーティパッケージは、この記事で説明している AEM as a Cloud Service のコーディングとパッケージングのガイドラインに従う必要があります。従わない場合は、パッケージを組み込むとデプロイメントに失敗します。
 
-次の Maven `POM.xml` スニペットでは、サードパーティパッケージをプロジェクトの「コンテナ」パッケージ（通常、という名前）に埋め込む方法を示します **&#39;all&#39;**、 **filevault-package-maven-plugin** Maven プラグイン設定
+Maven プラグイン設定 **filevault-package-maven-plugin** を使用してサードパーティパッケージをプロジェクトの「コンテナ」パッケージ（通常は、「**all**」）に埋め込む方法を、次の Maven `POM.xml` スニペットで示します。
 
 ```
 ...
@@ -301,13 +301,13 @@ AEM のアップデートと同様に、お客様向けリリースも、適切�
 * **config.publish.dev**（*開発環境の AEM パブリッシュサービスに適用*）
 * **config.publish.stage**（*ステージング環境の AEM パブリッシュサービスに適用*）
 * **config.publish.prod**（*実稼動環境の AEM パブリッシュサービスに適用*）
-* **config.dev** (*AEM Dev サービスに適用*)
-* **config.stage** (*AEM Staging Services に適用*)
-* **config.prod** (*AEM Production Services に適用されます*)
+* **config.dev**（*開発環境の AEM サービスに適用*）
+* **config.stage**（*ステージング環境の AEM サービスに適用*）
+* **config.prod**（*実稼動環境の AEM サービスに適用*）
 
 最も一致する実行モードを持つ OSGi 設定が使用されます。
 
-ローカルで開発する場合、実行モード起動パラメータ `-r`を使用して、実行モード OSGi 設定を指定します。
+ローカルで開発する場合、実行モード起動パラメーター `-r` を使用して、実行モード OSGi 設定を指定します。
 
 ```shell
 $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev

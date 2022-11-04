@@ -6,7 +6,7 @@ exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
 workflow-type: tm+mt
 source-wordcount: '680'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->関連トピック [ヘッドレスとは](/help/headless/what-is-headless.md) を参照してください。
+>ヘッドレスの概念と用語の概要については、[ヘッドレスとは](/help/headless/what-is-headless.md)を参照してください。
 
 ## 概要 {#overview}
 

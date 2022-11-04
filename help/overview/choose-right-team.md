@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# 適切な役割を担う適切な人材の獲得 {#get-the-right-people-in-the-right-roles}
+# まず、適切な役割を担う適切な人材を獲得 {#get-the-right-people-in-the-right-roles}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_chooseteam"

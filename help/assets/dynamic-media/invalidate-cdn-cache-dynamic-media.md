@@ -7,7 +7,7 @@ exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
 source-git-commit: 5c8e3a7ea87b70707b2613ffc7b4f51341303614
 workflow-type: tm+mt
 source-wordcount: '1384'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -17,20 +17,20 @@ Dynamic Media アセットは、顧客との配信を高速化するために、
 
 >[!NOTE]
 >
->この機能を使用するには、Adobe Experience Manager Dynamic Mediaに付属のAdobeバンドル CDN を使用する必要があります。 この機能では、その他のカスタム CDN はサポートされません。
+>この機能を使用するには、Adobe Experience Manager Dynamic Media に付属するアドビバンドルの CDN を使用する必要があります。この機能では、その他のカスタム CDN はサポートされません。
 
 <!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
 
-を有効にしている場合 [スマートイメージング](/help/assets/dynamic-media/imaging-faq.md) アカウント上およびAdobeバンドル CDN を使用している場合、単一のベース URL をパージすることで、異なるクエリ文字列を持つすべての URL をパージできます。
+アカウントで[スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)を有効にしており、アドビバンドルの CDN を使用している場合は、単一のベース URL をパージすることで、異なるクエリ文字列を持つすべての URL をパージできます。
 
-例：無効化 `https://weekendsite.scene7.com/is/image/grundfos/image`を使用すると、次の URL も無効にします。
+例えば、`https://weekendsite.scene7.com/is/image/grundfos/image` を無効にすると、次の URL も無効になります。
 
 * `https://weekendsite.scene7.com/is/image/grundfos/image`
 * `https://weekendsite.scene7.com/is/image/grundfos/image?wid=300`
 * `https://weekendsite.scene7.com/is/image/grundfos/image?$PLP$`
-* などなど.
+* その他。
 
-ただし、スマートイメージングをサポートしない汎用ドメイン ( 例： `s7d1.scene7.com`. そのようなドメインでは、引き続き無効化作業を正常におこなうために完全な URL が必要です。
+ただし、この無効化は、`s7d1.scene7.com` などのスマートイメージングをサポートしない汎用ドメインには当てはまりません。このようなドメインでは、無効化を正常に機能させるために完全な URL が必要です。
 
 **Dynamic Media を使用して CDN キャッシュを無効にするには:**
 

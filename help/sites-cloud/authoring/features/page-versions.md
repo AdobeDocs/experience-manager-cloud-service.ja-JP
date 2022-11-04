@@ -5,7 +5,7 @@ exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 source-git-commit: 2d1b40b8d6f7b6ca5ce112331a7d389816739494
 workflow-type: tm+mt
 source-wordcount: '1521'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -195,7 +195,7 @@ ht-degree: 99%
 
 >[!TIP]
 >
->[タイムワープは、ローンチと共に使用して、将来をプレビューすることもできます。](/help/sites-cloud/authoring/launches/preview.md)
+>[タイムワープは、未来をプレビューするローンチと組み合わせて使用することもできます。](/help/sites-cloud/authoring/launches/preview.md)
 
 コンテンツの作成は継続的な共同作業プロセスなので、コンテンツの変更内容を把握するために、公開された Web サイトを作成者が経時的に追跡できるようにすることがタイムワープの目的です。この機能では、ページのバージョンを使用してパブリッシュ環境の状態を判断します。
 

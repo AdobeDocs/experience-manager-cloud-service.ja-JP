@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
 workflow-type: tm+mt
 source-wordcount: '3053'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -209,7 +209,7 @@ API について詳しくは、[Cloud Manager API ドキュメント](https://de
 
 ### トラフィックルーティング {#dedcated-egress-ip-traffic-routing}
 
-HTTP トラフィックまたは HTTPS トラフィックは、事前設定済みのプロキシを経由します。ただし、プロキシ設定に標準の Java システムプロパティを使用する場合があります。
+プロキシ設定に標準の Java システムプロパティを使用する場合、http や https のトラフィックは事前に設定されたプロキシを経由します。
 
 `portForwards` パラメーターで宣言したポートで宛先とやり取りする HTTP/HTTPS 以外のトラフィックは、マッピングされたポートと共に、`AEM_PROXY_HOST` というプロパティを参照する必要があります。次に例を示します。
 

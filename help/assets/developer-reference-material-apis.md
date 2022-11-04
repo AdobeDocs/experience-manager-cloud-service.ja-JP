@@ -187,7 +187,7 @@ CDN エッジノードを使用すると、要求されたバイナリアップ�
 * [オープンソースコマンドラインツール](https://github.com/adobe/aio-cli-plugin-aem)。
 
 >[!NOTE]
-aem-upload ライブラリとコマンドラインツールの両方で、 [node-httptransfer ライブラリ](https://github.com/adobe/node-httptransfer/)
+aem-upload ライブラリとコマンドラインツールの両方で、[node-httptransfer ライブラリ](https://github.com/adobe/node-httptransfer/)を使用します
 
 ### 非推奨（廃止予定）のアセットアップロード API {#deprecated-asset-upload-api}
 

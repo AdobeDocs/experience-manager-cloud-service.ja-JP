@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
 source-wordcount: '986'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -97,9 +97,9 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 #### Maven 実行の代替 JDK バージョン {#alternate-maven-jdk-version}
 
-また、Maven の実行全体の JDK として Java 8 または Java 11 を選択することもできます。 この場合は、ツールチェーンオプションとは異なり、ツールチェーン設定も指定される場合を除き、すべてのプラグインに使用される JDK が変更されます。ツールチェーン設定が指定される場合は、そのツールチェーン設定が引き続きツールチェーン対応 Maven プラグインに適用されます。その結果、[Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) を使用して Java バージョンを確認および強制することができます。
+また、Maven 実行全体の JDK として Java 8 または Java 11 を選択することもできます。この場合は、ツールチェーンオプションとは異なり、ツールチェーン設定も指定される場合を除き、すべてのプラグインに使用される JDK が変更されます。ツールチェーン設定が指定される場合は、そのツールチェーン設定が引き続きツールチェーン対応 Maven プラグインに適用されます。その結果、[Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) を使用して Java バージョンを確認および強制することができます。
 
-それには、パイプラインで使用される Git リポジトリーブランチに `.cloudmanager/java-version` というファイルを作成します。このファイルの内容は 11 か 8 のどちらかにすることができます。その他の値は無視されます。11 を指定した場合、Oracle11 が使用され、 `JAVA_HOME` 環境変数はに設定されます。 `/usr/lib/jvm/jdk-11.0.2`. 8 を指定した場合、Oracle8 が使用され、 `JAVA_HOME` 環境変数はに設定されます。 `/usr/lib/jvm/jdk1.8.0_202`.
+それには、パイプラインで使用される Git リポジトリーブランチに `.cloudmanager/java-version` というファイルを作成します。このファイルの内容は 11 か 8 のどちらかにすることができます。その他の値は無視されます。11 を指定した場合は、Oracle 11 が使用され、`JAVA_HOME` 環境変数が `/usr/lib/jvm/jdk-11.0.2` に設定されます。8 を指定した場合は、Oracle 8 が使用され、`JAVA_HOME` 環境変数が `/usr/lib/jvm/jdk1.8.0_202` に設定されます。
 
 ## 環境変数 {#environment-variables}
 

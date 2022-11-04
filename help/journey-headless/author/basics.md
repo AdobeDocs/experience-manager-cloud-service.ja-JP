@@ -5,7 +5,7 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
 workflow-type: tm+mt
 source-wordcount: '1668'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -53,9 +53,9 @@ AEM インストールは、通常、少なくとも次の 2 つの環境で構�
 
 初めてログインすると、簡単なオンラインチュートリアルでユーザーインターフェイスの主な機能がいくつか紹介されます。
 
-その後、ナビゲーションパネルを使用して、AEMの主要な領域にアクセスできます。コンテンツフラグメントの場合、 **コンテンツフラグメント** コンソール ( 一部のアクションに対しては、 **Assets** コンソール )。
+その後、ナビゲーションパネルを使用して、AEMの主要な領域にアクセスできます。コンテンツフラグメントの場合、**コンテンツフラグメント**&#x200B;コンソールを使用します（一部のアクションに対しては、**Assets** コンソールも使用します）。
 
-ナビゲーションパネルを開くには、左上のAdobeアイコンを選択し、次に小さいコンパスアイコンを選択します。
+ナビゲーションパネルを開くには、左上の Adobe アイコンを選択し、次に小さいコンパスアイコンを選択します。
 
 <!--
 The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
@@ -64,29 +64,29 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 -->
 
 >[!NOTE]
->コンテンツフラグメントはAEMの機能ですが、 **サイト**、 **Assets**. これは技術的なことでユーザーには関係ありませんが、知っておくと役に立つ場合があります。
+>コンテンツフラグメントは AEM **Sites** の機能ですが、**Assets** として保存されます。これは技術的なことでユーザーには関係ありませんが、知っておくと役に立つ場合があります。
 
-コンソール内で、左側のパネルでフォルダーを選択して、コンテンツフラグメントに移動できます。 また、フィルターや検索も可能です。
+コンソール内では、左側のパネルでフォルダーを選択して、コンテンツフラグメントに移動できます。また、フィルターや検索も可能です。
 
 ![コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/assets/cfc-console-filter.png)
 
 ### アクション、選択、表示 {#actions-selecting-viewing}
 
-内 **コンテンツフラグメント** コンソールコンテンツフラグメントに対しては、ツールバーから様々なアクションを使用できます。
+**コンテンツフラグメント**&#x200B;コンソールでは、ツールバーからコンテンツフラグメントに対して様々なアクションを実行できます。
 
 <!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
 
-* **アセットで開く**
+* **Assets で開く**
 * **作成**
-* この **参照元** 列には、そのフラグメントのすべての親参照を表示するための直接リンクも表示されます。参照するコンテンツフラグメント、エクスペリエンスフラグメント、ページを含める。
-* フォルダー名の上にマウスポインターを置くと、JCR パスが表示されます。
+* **参照元**&#x200B;列には、そのフラグメントのすべての親参照を表示するための直接リンクもあります。コンテンツフラグメント、エクスペリエンスフラグメントおよびページの参照が含まれます。
+* フォルダー名にカーソルを合わせると、JCR パスが表示されます。
 
-フラグメントを選択したら、次の適切なアクションをすべて使用できます。
+フラグメントを選択すると、該当するすべてのアクションを使用できるようになります。
 
 <!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
 
-* **次を開きます：**
-* **公開** ( および **非公開**)
+* **開く**
+* **公開**（および **非公開**）
 * **コピー**
 * **移動**
 * **名前を変更**
@@ -94,7 +94,7 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 
 >[!NOTE]
 >
->公開、非公開、削除、移動、名前変更、コピー、非同期ジョブのトリガーなどのアクション。 そのジョブの進行状況は、AEM非同期ジョブ UI で監視できます。
+>公開、非公開、削除、移動、名前を変更、コピーなどのアクションは、非同期ジョブをトリガーします。そのジョブの進行状況は、AEM 非同期ジョブ UI で監視できます。
 
 <!--
 The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
@@ -128,7 +128,7 @@ You can view additional information about items using the Rail Selector. This al
 
 #### フォルダーの作成 {#creating-folder}
 
-そのためには、Assets コンソールの「**ファイル**」セクション内に一連のフォルダーを作成します。****「**作成**」オプション（右上）を選択したあと、「**フォルダー**」を選択します。
+これを行うには、**Assets** コンソールの「**ファイル**」セクション内に一連のフォルダーを作成します。「**作成**」オプション（右上）を選択したあと、「**フォルダー**」を選択します。
 
 ![フォルダー作成オプション](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -166,9 +166,9 @@ You can view additional information about items using the Rail Selector. This al
 
 ### コンテンツフラグメントの作成 {#creating-fragment}
 
-内 **コンテンツフラグメント** コンソールでは、 **作成** 開く **新しいコンテンツフラグメント** ダイアログ：
+**コンテンツフラグメント**&#x200B;コンソールでは、「**作成**」を使用して&#x200B;**新しいコンテンツフラグメント**&#x200B;ダイアログを開きます。
 
-![コンテンツフラグメントコンソール — 新しいフラグメントの作成](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
+![コンテンツフラグメントコンソール - 新しいフラグメントの作成](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
 以下を指定します。
 
@@ -178,7 +178,7 @@ You can view additional information about items using the Rail Selector. This al
 * **名前**
 * **説明**
 
-次に、次のいずれかで確定します。 **作成** または **作成して開く**.
+次に、「**作成**」または「**作成して開く**」で確定します。
 
 <!--
 Creating a Content Fragment is very similar - you just use the **Content Fragment** option instead:
@@ -198,7 +198,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 ### フラグメントの編集 {#editing-fragment}
 
-フラグメントは、作成後すぐに開くことも、コンテンツフラグメントコンソール（またはアセットコンソール）から選択することもできます。
+フラグメントは、作成後すぐに開くことも、コンテンツフラグメントコンソール（または Assets コンソール）から選択して開くこともできます。
 
 エディターが初めて開くと、以下のものが表示されます。
 
@@ -263,7 +263,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 フラグメントが完成したら&#x200B;**公開**&#x200B;して、ヘッドレスアプリケーションで利用できるようにします。
 
-公開アクションは、エディターで ( または **コンテンツフラグメント** コンソールまたは **Assets** コンソール ):
+公開アクションはエディターで（または、**コンテンツフラグメント**&#x200B;コンソールまたは **Assets** コンソールのツールバーから）利用できます。
 
 ![コンテンツフラグメントエディター - マイフラグメント](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
@@ -295,7 +295,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
       * [公開を管理](/help/assets/manage-publication.md#manage-publication)
 
-* [コンテンツフラグメントの操作](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
    * [コンテンツフラグメントの管理](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 

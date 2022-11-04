@@ -5,7 +5,7 @@ exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
 source-wordcount: '1636'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -177,7 +177,7 @@ SPA で作成したテキストコンポーネントのインプレースエデ�
 
 ### 制限事項 {#limitations}
 
-AEM SPA Editor SDK はAdobeで完全にサポートされ、引き続き拡張および拡張されます。 次の AEM 機能は、SPA エディターではまだサポートされていません。
+AEM SPA エディター SDK はアドビで完全にサポートされており、新機能として機能強化と拡張が続けられています。次の AEM 機能は、SPA エディターではまだサポートされていません。
 
 * ターゲットモード
 * ContextHub

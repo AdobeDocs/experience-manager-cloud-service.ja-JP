@@ -5,7 +5,7 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 source-git-commit: 698ea704d821d26067e29a89b562388d7517772e
 workflow-type: tm+mt
 source-wordcount: '989'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -44,11 +44,11 @@ Cloud Manager ビルドの場合、`maven-enforcer-plugin` がこのエラーで
 
 ## コード品質チェックに失敗し、デプロイメントが停止しています。このチェックを回避する方法はありますか？ {#deployment-stuck}
 
-はい。セキュリティ評価を除くコード品質チェックの失敗はすべて、重要でない指標なので、結果 UI の項目を展開することで、デプロイメントパイプラインの一部として回避できます。
+はい。セキュリティ評価以外のコード品質チェックのエラーはすべて、重要な指標ではありません。そのため、結果の UI で項目を展開することで、デプロイメントパイプラインの一部としてこれらのチェックを回避できます。
 
 [デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナー](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)の役割を持つユーザーは、問題をオーバーライドでき、その場合、パイプラインは続行されます。または、問題を受け入れることもでき、その場合、パイプラインはエラーで停止します。
 
-ドキュメントを参照 [コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate) および [実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines) を参照してください。
+[コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate)および[実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines)について詳しくは、ドキュメントを参照してください。
 
 ## Maven プロジェクトのバージョンに SNAPSHOT を使用できますか？ {#use-snapshot}
 

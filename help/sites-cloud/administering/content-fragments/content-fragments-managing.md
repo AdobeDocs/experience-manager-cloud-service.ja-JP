@@ -1,19 +1,19 @@
 ---
 title: コンテンツフラグメントの管理
-description: コンテンツフラグメントコンソールを使用してAEMコンテンツフラグメントを管理する方法を説明します。（ページオーサリング用、またはヘッドレスコンテンツの基礎として）。
+description: コンテンツフラグメントコンソールを使用して、（ページオーサリング用、またはヘッドレスコンテンツの基礎として）AEM コンテンツフラグメントを管理する方法を説明します。
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '1947'
-ht-degree: 66%
+ht-degree: 93%
 
 ---
 
 # コンテンツフラグメントの管理 {#managing-content-fragments}
 
-使用方法 **コンテンツフラグメント** コンソールを使用して、AEMコンテンツフラグメントを管理します。 これらは、ページオーサリングやヘッドレスコンテンツの基礎として使用できます。
+**コンテンツフラグメント**&#x200B;コンソールを使用して AEM コンテンツフラグメントを管理する方法を説明します。これらは、ページオーサリングやヘッドレスコンテンツの基礎として使用できます。
 
 [コンテンツフラグメントモデル](#creating-a-content-model)を定義した後、それらを使用して[コンテンツフラグメントを作成](#creating-a-content-fragment)できます。
 
@@ -37,7 +37,7 @@ ht-degree: 66%
 
 >[!NOTE]
 >
->コンテンツフラグメントは、 **Assets**. 主に **コンテンツフラグメント** コンソールでは管理できませんが、 **Assets** コンソール。
+>コンテンツフラグメントは&#x200B;**アセット**&#x200B;として保存されます。これらは主に&#x200B;**コンテンツフラグメント**&#x200B;コンソールから管理しますが、**Assets** コンソールからも管理できます。
 
 ## コンテンツフラグメントコンソール {#content-fragments-console}
 
@@ -68,38 +68,38 @@ ht-degree: 66%
 
 コンテンツフラグメントを作成するには：
 
-1. 次の **コンテンツフラグメント** コンソール、選択 **作成** （右上）。
+1. **コンテンツフラグメント**&#x200B;コンソールから、「**作成**」（右上）を選択します。
 
    >[!NOTE]
    >
    >新しいフラグメントの場所を事前に定義するには、フラグメントを作成するフォルダーに移動するか、作成プロセス中に場所を指定します。
 
-1. この **新しいコンテンツフラグメント** ダイアログが開き、ここから次の項目を指定できます。
+1. **新しいコンテンツフラグメント**&#x200B;ダイアログが開き、ここから次の項目を指定できます。
 
-   * **場所**  — 現在の場所で自動入力されますが、必要に応じて別の場所を選択できます
-   * **コンテンツフラグメントモデル**  — ドロップダウンリストからフラグメントの基礎として使用するモデルを選択します
+   * **場所** - 現在の場所がオートコンプリートされますが、必要に応じて別の場所を選択できます
+   * **コンテンツフラグメントモデル** - ドロップダウンリストからフラグメントの基礎として使用するモデルを選択します
    * **タイトル**
-   * **名前**  — これは、 **タイトル**&#x200B;必要に応じて編集できます。
+   * **名前** - **タイトル**&#x200B;に基づいてオートコンプリートされますが、必要に応じて編集できます
    * **説明**
 
    ![新しいコンテンツフラグメントダイアログ](assets/cfm-managing-new-cf-01.png)
 
-1. 選択 **作成**&#x200B;または **作成して開く** 定義を保持する。
+1. 「**作成**」または「**作成して開く**」を選択して、定義を保持します。
 
 ## コンテンツフラグメントのステータス {#statuses-content-fragments}
 
-コンテンツフラグメントの存在中は、次のように複数のステータスを持つことができます。 [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md):
+[コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)に表示されるように、コンテンツフラグメントは、存在中、複数のステータスを持つことができます。
 
 * **新規**
-新しいコンテンツフラグメントはコンテンツフラグメントエディターで作成されましたが、編集も開くこともできません。
+新しいコンテンツフラグメントが作成されましたが、コンテンツフラグメントエディターで編集したり、開いたりしていません。
 * **ドラフト**
-誰かがコンテンツフラグメントエディターで（新しい）コンテンツフラグメントを編集したり開いたりしましたが、まだ公開されていません。
+誰かがコンテンツフラグメントエディターで（新しい）コンテンツフラグメントを編集または開きましたが、まだ公開されていません。
 * **公開済み**
-コンテンツフラグメントが公開されました。
+コンテンツフラグメントが公開されています。
 * **変更済み**
-コンテンツフラグメントは、公開後（ただし変更が公開される前）に編集されました。
+コンテンツフラグメントが公開後（ただし、変更を公開する前）に編集されています。
 * **非公開**
-コンテンツフラグメントが非公開になりました。
+コンテンツフラグメントが公開されていません。
 
 ## フラグメントエディターを開く {#opening-the-fragment-editor}
 
@@ -109,8 +109,8 @@ ht-degree: 66%
 >
 >コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
 
-1. 以下を使用： **コンテンツフラグメント** コンソールを使用して、コンテンツフラグメントの場所に移動します。
-1. フラグメントを選択して編集するためにフラグメントを開き、次に **開く** をクリックします。
+1. **コンテンツフラグメント**&#x200B;コンソールを使用して、コンテンツフラグメントの場所に移動します。
+1. フラグメントを選択して編集するためにフラグメントを開き、ツールバーから「**開く**」を選択します。
 
 1. フラグメントエディターが開きます。必要に応じて変更を加えます。
 
@@ -249,18 +249,18 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 フラグメントがモデルに基づいている場合、その[モデルが公開されている](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)ことを確認してください。
 まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
 
-コンテンツフラグメントをパブリッシュ環境で使用するには、公開する必要があります。これは、標準の Assets 機能を使用しておこなわれます
+コンテンツフラグメントをパブリッシュ環境で使用するには、公開する必要があります。これは、Assets の標準機能を使用して行います。
 
-* 次の **公開** 」オプション ( [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
-   * **今すぐ**  — 確認後、フラグメントは直ちに公開されます
-   * **スケジュール**  — フラグメントを公開する日時を選択できます
+* [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)のツールバーの「**公開**」オプションから
+   * **今すぐ** - 確認後、フラグメントは直ちに公開されます
+   * **スケジュール** - フラグメントを公開する日時を選択できます
 
-   必要に応じて、 **有効化日** パブリッシュするを参照する 次に例を示します。
+   必要に応じて、**アクティベーション日**と公開する参照を指定する必要があります。次に例を示します。
    ![公開ダイアログ](assets/cfm-publish-01.png)
 
-* 次の [コンテンツフラグメントエディター](#toolbar-actions-in-the-content-fragment-editor)
+* [コンテンツフラグメントエディター](#toolbar-actions-in-the-content-fragment-editor)から
    * [**クイック公開**](/help/assets/manage-publication.md#quick-publish)
-   * [**公開を管理**](/help/assets/manage-publication.md#manage-publication)
+   * [**パブリケーションの管理**](/help/assets/manage-publication.md#manage-publication)
 
 さらに、[フラグメントを使用するページを公開](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)するとき。フラグメントはページ参照にリスト表示されます。
 
@@ -269,10 +269,10 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## フラグメントの非公開 {#unpublishing-a-fragment}
 
-コンテンツフラグメントを非公開にするには、1 つ以上のフラグメントを選択してから、 **非公開**.
+コンテンツフラグメントを非公開にするには、1 つ以上のフラグメントを選択してから、**非公開**&#x200B;します。
 
 >[!NOTE]
-この **非公開** 公開されたフラグメントを使用できる場合は、アクションが表示されます。
+公開されたフラグメントが利用可能になると、**非公開**&#x200B;アクションが表示されます。
 
 >[!CAUTION]
 フラグメントが既に別のフラグメントから参照されている場合、またはページから参照されている場合は、警告メッセージが表示され、続行を確認する必要があります。
@@ -281,7 +281,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 フラグメントを削除するには：
 
-1. 内 **コンテンツフラグメント** コンソールで、コンテンツフラグメントの場所に移動します。
+1. **コンテンツフラグメント**&#x200B;コンソールで、コンテンツフラグメントの場所に移動します。
 2. フラグメントを選択します。
 
    >[!NOTE]
@@ -291,7 +291,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 4. 「**削除**」アクションを確認します。
 
    >[!CAUTION]
-   フラグメントが既に別のフラグメントから参照されている場合、またはページから参照されている場合は、警告メッセージが表示され、 **削除を強制**. フラグメントはコンテンツフラグメントコンポーネントと一緒に、すべてのコンテンツページから削除されます。
+   フラグメントが既に別のフラグメントから参照されている場合、またはページから参照されている場合は、警告メッセージが表示されます。「**削除を強制**」を選択して続行を確認する必要があります。フラグメントはコンテンツフラグメントコンポーネントと一緒に、すべてのコンテンツページから削除されます。
 
 ## フラグメントの親参照の検索 {#parent-references-fragment}
 
@@ -304,7 +304,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## コンテンツフラグメントのタイムライン {#timeline-for-content-fragments}
 
 >[!NOTE]
-この機能は、 **Assets** コンソール
+この機能は、**Assets** コンソールでのみ利用できます
 
 [タイムライン](/help/assets/manage-digital-assets.md#timeline)では標準のオプションに加え、コンテンツフラグメントに固有の情報とアクションの両方が提供されます。
 
@@ -342,7 +342,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## フラグメントのバージョンの比較 {#comparing-fragment-versions}
 
 >[!NOTE]
-この機能は、 **Assets** コンソール
+この機能は、**Assets** コンソールでのみ利用できます
 
 特定のバージョンを選択したら、「[タイムライン](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)」から「**現在のバージョンと比較**」アクションを利用できるようになります。
 
@@ -372,7 +372,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## 特定のバージョンへの復帰   {#reverting-to-a-version}
 
 >[!NOTE]
-この機能は、 **Assets** コンソール
+この機能は、**Assets** コンソールでのみ利用できます
 
 次の方法で特定のバージョンのフラグメントに戻すことができます。
 

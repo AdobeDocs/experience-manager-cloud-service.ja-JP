@@ -7,7 +7,7 @@ exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 source-git-commit: 1ef60a024d6ffe704ef48df97ca998af3cd6b8a8
 workflow-type: tm+mt
 source-wordcount: '3029'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -155,7 +155,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 >[!NOTE]
 >
->外部ストレージアカウントには、一括読み込みツールとは異なるファイル名またはフォルダー名のルールが設定されている場合があります。 詳しくは、 [一括インポート中のファイル名の処理](#filename-handling-bulkimport) を参照してください。
+>外部ストレージアカウントには、一括読み込みツールとは異なるファイル名またはフォルダー名のルールが設定されている場合があります。使用できない名前やエスケープされた名前について詳しくは、[一括読み込み時のファイル名の処理](#filename-handling-bulkimport)を参照してください。
 
 
 ### 一括読み込みツールを設定 {#configure-bulk-ingestor-tool}
@@ -224,10 +224,10 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 次の文字は、ファイル名およびフォルダー名で使用できません。
 
-* 制御および私用文字 (0x00 ～ 0x1F、\u0081、\uE000)
-* ドット (.) で終わるファイル名またはフォルダー名
+* 制御文字および私用文字（0x00～0x1F、\u0081、\uE000）
+* ドット（.）で終わるファイル名またはフォルダー名
 
-これらの条件に一致する名前を持つファイルまたはフォルダーは、インポートプロセス中にスキップされ、失敗とマークされます。
+これらの条件に一致する名前を持つファイルまたはフォルダーは、読み込みプロセス中にスキップされ、失敗とマークされます。
 
 **一括読み込みでのアセット名の処理**
 

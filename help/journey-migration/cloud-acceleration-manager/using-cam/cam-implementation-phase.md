@@ -5,7 +5,7 @@ exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
 source-git-commit: 24331b974ded34ef949cc3d6fb157b124c145dee
 workflow-type: tm+mt
 source-wordcount: '792'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 96%
 
 ## コードリファクタリングカードの使用 {#code-refactoring}
 
-「コードリファクタリング」アクティビティカードは、すべての関連情報を提供し、AEM as a Cloud Serviceに移行する際に確認して解決する必要があるコードリファクタリング領域を強調表示します。
+「コードリファクタリング」アクティビティカードには、すべての関連情報が表示され、AEM as a Cloud Service への移行時に確認して解決する必要があるコードリファクタリング領域がハイライト表示されます。
 
 この節では、「コードリファクタリング」アクティビティカードについて説明します。
 

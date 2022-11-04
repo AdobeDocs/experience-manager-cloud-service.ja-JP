@@ -5,7 +5,7 @@ exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 73%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ AEM の強力なヘッドレス配信機能を活用するために、設定ブ�
 コンテンツフラグメントを使用する前に、**設定ブラウザー**&#x200B;を使用して以下を有効にする必要があります。
 
 * **コンテンツフラグメントモデル** - 必須
-* **GraphQL 永続クエリ**  — オプション
+* **GraphQL 永続クエリ** - オプション
 
 >[!CAUTION]
 >
@@ -43,7 +43,7 @@ AEM の強力なヘッドレス配信機能を活用するために、設定ブ�
 
 >[!NOTE]
 >
->[サブ設定](/help/implementing/developing/introduction/configurations.md#configuration-resolution) （別の設定内にネストされた設定）は、コンテンツフラグメント、コンテンツフラグメントモデル、GraphQL クエリで使用できます。
+>[サブ設定](/help/implementing/developing/introduction/configurations.md#configuration-resolution)（別の設定内にネストされた設定）は、コンテンツフラグメント、コンテンツフラグメントモデルおよび GraphQL クエリでの使用が完全にサポートされています。
 >
 >注意：
 >
@@ -52,7 +52,7 @@ AEM の強力なヘッドレス配信機能を活用するために、設定ブ�
 >
 >* GraphQL エンドポイントは（引き続き）親（ルート）設定に基づいています。
 >
->* 永続化されたクエリは（引き続き）親（ルート）設定に関連して保存されます。
+>* 永続クエリは（引き続き）親（ルート）設定に関連して保存されます。
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Markdown
+title: マークダウン
 description: コンテンツフラグメントエディターが Markdown 構文を使用してページのオーサリングとヘッドレス配信の両方でコンテンツを簡単に作成できる方法を説明します。
 feature: Content Fragments
 role: User
@@ -7,13 +7,13 @@ exl-id: 4e9b076e-7429-466b-bb53-2164da379650
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
-# Markdown {#markdown}
+# マークダウン {#markdown}
 
-現在 [オーサリング](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#authoring-your-content)の場合、コンテンツフラグメントエディターは *markdown* 構文を使用して、ページオーサリングとヘッドレス配信の両方でコンテンツを簡単に記述できます。
+コンテンツフラグメントの編集者は、[オーサリング](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#authoring-your-content)の際、ページオーサリングとヘッドレス配信の両方で、*マークダウン*&#x200B;構文を使用してコンテンツを簡単に記述できます。
 
 ![Markdown エディター](/help/sites-cloud/administering/content-fragments/assets/cfm-markdown-01.png)
 
@@ -129,7 +129,7 @@ ht-degree: 91%
 
 順序付きと順序なし両方のリストを作成できます。
 
-順序なしリストを作成するには、&amp;ast; 記号をリストの項目の前に付けます。次に例を示します。
+順序なしリストを作成するには、* 記号をリストの項目の前に付けます。次に例を示します。
 
     `* item in list`
 

@@ -6,7 +6,7 @@ exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 source-git-commit: 74fbf5e3e910106f48a1ec6e316e3ea7c71e65aa
 workflow-type: tm+mt
 source-wordcount: '3311'
-ht-degree: 82%
+ht-degree: 95%
 
 ---
 
@@ -38,17 +38,17 @@ OSGi 設定ファイルは次の場所で定義されます。
 
 `/apps/example/config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 
-次の `cfg.json` OSGi 設定形式。
+`cfg.json` OSGi 設定形式に従います。
 
 >[!NOTE]
 >
->以前のバージョンのAEMでは、次のような様々なファイル形式を使用して OSGi 設定ファイルがサポートされていました。 `.cfg`, `.config` XML として `sling:OsgiConfig` リソースの定義。 これらの形式は、 `.cfg.json` OSGi 設定形式。
+>以前のバージョンの AEM では、`.cfg`、`.config` などの様々なファイル形式を使用し、XML `sling:OsgiConfig` リソース定義として OSGi 設定ファイルをサポートしていました。これらの形式は、`.cfg.json` OSGi 設定形式に置き換えられています。
 
 ## 実行モードの解決 {#runmode-resolution}
 
 >[!TIP]
 >
->AEM 6.x はカスタム実行モードをサポートしていますが、AEM as a Cloud Serviceはサポートしていません。 AEMas a Cloud Serviceサポート [実行モードの正確なセット](./overview.md#runmodes). OSGi 設定のAEMas a Cloud Service環境間でのバリエーションは、を使用して処理する必要があります。 [OSGi 設定の環境変数](#environment-specific-configuration-values).
+>AEM 6.x はカスタム実行モードをサポートしていますが、AEM as a Cloud Service はサポートしていません。AEM as a Cloud Service は、[実行モードの正確なセット](./overview.md#runmodes)をサポートします。AEM as a Cloud Service 環境間の OSGi 設定の違いは、[OSGi 設定の環境変数](#environment-specific-configuration-values)を使用して処理する必要があります。
 
 実行モードを使用すると、特定の OSGi 設定を特定の AEM インスタンスにターゲット設定できます。実行モードを使用するには、次の形式で、`/apps/example`（「example」はプロジェクト名）の下に config フォルダーを作成します。
 
@@ -64,9 +64,9 @@ config フォルダー名で定義された実行モードが AEM で使用さ�
 
 >[!NOTE]
 >
->A `config.preview` OSGi 設定フォルダー **できません** 同じように宣言される `config.publish` は宣言されたフォルダーです。 代わりに、プレビュー層はパブリッシュ層の値から OSGi 設定を継承します。
+>`config.preview` OSGI 設定フォルダーは、`config.publish` フォルダーを宣言する場合と同じようには宣言&#x200B;**できません**。代わりに、プレビュー層はパブリッシュ層の値から OSGI 設定を継承します。
 
-ローカルで開発する場合、実行モード起動パラメータ `-r`を使用して、実行モード OSGi 設定を指定します。
+ローカルで開発する場合、実行モードの起動パラメーター `-r` を使用して、実行モードの OSGI 設定を指定します。
 
 ```shell
 $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
@@ -74,24 +74,24 @@ $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
 
 ### 実行モードの検証
 
-AEMas a Cloud Serviceの実行モードは、環境タイプとサービスに基づいて適切に定義されています。 以下を確認します。 [使用可能なAEMas a Cloud Service実行モードの完全なリスト](./overview.md#runmodes).
+AEM as a Cloud Service の実行モードは、環境のタイプとサービスに基づいて適切に定義されています。[使用可能な AEM as a Cloud Service 実行モードの完全なリスト](./overview.md#runmodes)をご確認ください。
 
 実行モードで指定された OSGi 設定値は、次の方法で検証できます。
 
-1. AEM as a Cloud Services環境の [開発者コンソール](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=ja)
-1. 検査するサービス層を、 __ポッド__ ドロップダウン
-1. の選択 __ステータス__ タブ
-1. 選択 __設定__ から __ステータスダンプ__ ドロップダウン
-1. の選択 __ステータスの取得__ ボタン
+1. AEM as a Cloud Services 環境の[開発者コンソール](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=ja)を開きます
+1. __ポッド__&#x200B;ドロップダウンを使用して、検査するサービス層を選択します
+1. 「__ステータス__」タブを選択します
+1. __ステータスダンプ__&#x200B;ドロップダウンから「__設定__」を選択します
+1. 「__ステータスの取得__」ボタンを選択します
 
-結果表示には、選択した層のすべての OSGi コンポーネント設定と、該当する OSGi 設定値が表示されます。 これらの値は、AEMプロジェクトのソースコード内の OSGi 設定値と相互参照できます ( `/apps/example/osgiconfig/config.<runmode(s)>`.
+結果には、選択した層のすべての OSGi コンポーネント設定と、該当する OSGi 設定値が表示されます。 これらの値は、`/apps/example/osgiconfig/config.<runmode(s)>` の下にある AEM プロジェクトのソースコード内の OSGi 設定値と相互参照できます
 
 
 適切な OSGi 設定値が適用されていることを確認するには：
 
-1. 開発者コンソールの設定出力内
-1. を `pid` 検証する OSGi 設定を表します。AEMプロジェクトのソースコード内の OSGi 設定ファイルの名前です。
-1. Inspect `properties` リスト `pid` キーと値が、検証する実行モードのAEMプロジェクトソースコードの OSGi 設定ファイルと一致することを確認します。=
+1. 開発者コンソールの設定出力で
+1. 検証する OSGi 設定を表す `pid` を見つけます。これは、AEM プロジェクトのソースコード内の OSGi 設定ファイルの名前です。
+1. `pid` の `properties` リストを検査し、キーと値が検査対象の実行モードの AEM プロジェクトソースコードの OSGi 設定ファイルと一致することを確認します。
 
 
 ## OSGi 設定値のタイプ {#types-of-osgi-configuration-values}
@@ -230,7 +230,7 @@ OSGi 設定では、環境ごとに定義する変数にプレースホルダー
 use $[env:ENV_VAR_NAME]
 ```
 
-この方法は、カスタムコードに関連する OSGi 設定プロパティにのみ使用する必要があります。Adobe定義の OSGi 設定を上書きする場合は使用しないでください。
+顧客は、カスタムコードに関連する OSGi 設定プロパティに対してのみ、この手法を使用する必要があります。アドビ定義の OSGi 設定を上書きする場合は使用しないでください。
 
 >[!NOTE]
 >
@@ -314,10 +314,10 @@ org.apache.felix.configadmin.plugin.interpolation.secretsdir=${sling.home}/secre
 
 OSGi プロパティで、オーサーとパブリッシュで異なる値が必要な場合：
 
-* [実行モードの解決](#runmode-resolution)の節で説明したように、`config.author` と `config.publish` の別個の OSGi フォルダーを使用する必要があります。
+* [実行モードの解決](#runmode-resolution)のセクションで説明したように、`config.author` と `config.publish` の別個の OSGi フォルダーを使用する必要があります。
 * 独立した変数名を作成する場合、次の 2 つのオプションを使用できます。
-   * 1 つ目のオプション（推奨）:すべての OSGi フォルダー ( `config.author` および `config.publish`) を宣言して異なる値を定義する場合は、同じ変数名を使用します。 例：
-      `$[env:ENV_VAR_NAME;default=<value>]`：デフォルトは、その層（オーサーまたはパブリッシュ）のデフォルト値です。環境変数を [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) またはクライアントを使用して設定する場合は、この [API リファレンスドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/)で説明されているように、「service」パラメーターを使用して層を区別します。「service」パラメーターは、変数の値を適切な OSGi 層にバインドします。 「author」、「publish」、「preview」のいずれかです。
+   * 最初のオプション（推奨）：異なる値を定義するように宣言されたすべての OSGI フォルダー（`config.author` と `config.publish` など）で、同じ変数名を使用します。例：
+      `$[env:ENV_VAR_NAME;default=<value>]`：デフォルトは、その層（オーサーまたはパブリッシュ）のデフォルト値です。環境変数を [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) またはクライアントを使用して設定する場合は、この [API リファレンスドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/)で説明されているように、「service」パラメーターを使用して層を区別します。「service」パラメーターは、変数の値を適切な OSGI 層にバインドします。「author」、「publish」、「preview」のいずれかです。
    * 2 つ目のオプション：`author_<samevariablename>` や `publish_<samevariablename>` などのプレフィックスを使用して個別の変数を宣言します。
 
 ### 設定例 {#configuration-examples}
@@ -326,7 +326,7 @@ OSGi プロパティで、オーサーとパブリッシュで異なる値が必
 
 **例 1**
 
-目的は OSGi プロパティの値です。 `my_var1` は、ステージと実稼動で同じにし、3 つの開発環境ではそれぞれ異なります。
+OSGi プロパティ `my_var1` の値を、ステージング環境と実稼働環境では同じ値にしつつ、3 つの開発環境ではそれぞれ異なる値にします。
 
 <table>
 <tr>
@@ -369,7 +369,7 @@ config.dev
 
 **例 2**
 
-目的は OSGi プロパティの値です。 `my_var1` を、ステージ、実稼動、および 3 つの開発環境でそれぞれ異なる値に設定します。 したがって、開発環境ごとに `my_var1` の値を設定するには、Cloud Manager API を呼び出す必要があります。
+OSGi プロパティ `my_var1` の値をステージング環境、実稼働環境、3 つの開発環境でそれぞれ異なる値にします。したがって、開発環境ごとに `my_var1` の値を設定するには、Cloud Manager API を呼び出す必要があります。
 
 <table>
 <tr>

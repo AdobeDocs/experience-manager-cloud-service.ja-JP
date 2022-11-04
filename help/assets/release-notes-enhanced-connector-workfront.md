@@ -5,7 +5,7 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 1509afad94208e62d5222f4c95c98d90f95be30e
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 37%
+ht-degree: 69%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 37%
 
 ## リリースのハイライト {#release-highlights}
 
-の最新バージョン [!DNL Workfront for Experience Manager enhanced connector] には、次の機能強化とバグ修正が含まれています。
+[!DNL Workfront for Experience Manager enhanced connector] の最新バージョンには、次の機能強化とバグ修正が含まれています。
 
 * 多数のイベントがあるので、拡張コネクタ設定ページの「イベント購読」タブを表示できません。
 
@@ -27,7 +27,7 @@ ht-degree: 37%
 
 >[!IMPORTANT]
 >
->Adobeが推奨する [最新バージョン 1.9.4 にアップグレード](../assets/update-workfront-enhanced-connector.md) の [!DNL Workfront for Experience Manager enhanced connector].
+>アドビは [ の](../assets/update-workfront-enhanced-connector.md)最新バージョン 1.9.4 へのアップグレード[!DNL Workfront for Experience Manager enhanced connector]を推奨します。
 
 ## 既知の問題 {#known-issues}
 
@@ -54,29 +54,29 @@ ht-degree: 37%
 
 [!DNL Workfront for Experience Manager enhanced connector] 8 月 3 日にリリースされたバージョン 1.9.2 には、次の更新が含まれています。
 
-* この **[!UICONTROL ドキュメントをアップロード]** ワークフローステップで、ドキュメントをWorkfrontに添付できません。
+* **[!UICONTROL ドキュメントをアップロード]**&#x200B;ワークフローの手順で、ドキュメントを Workfront に添付できない。
 
-* この **[!UICONTROL ドキュメントをアップロード]** ワークフローステップで、Workfrontのタスクと問題にドキュメントを添付できません。 ワークフローステップは、ドキュメントをプロジェクトに正常に添付します。
+* **[!UICONTROL ドキュメントをアップロード]**&#x200B;ワークフローの手順で、Workfront のタスクと問題にドキュメントを添付できない。ワークフローの手順で、プロジェクトにはドキュメントを正常に添付できる。
 
-### 2022 年 7 月リリース {#july-2022-release}
+### 2022年7月リリース {#july-2022-release}
 
 [!DNL Workfront for Experience Manager enhanced connector] バージョン 1.9.1 には、次の更新が含まれています。
 
-* Adobe IMSに移行されたインスタンスにWorkfront API キーを使用した、Experience ManagerとWorkfrontアプリケーション間の認証のサポートを追加しました。
+* Adobe IMS に移行されたインスタンス用の Workfront API キーを使用した、Experience Manager と Workfront アプリケーション間の認証のサポートが追加されました。
 
-* 外部のファイルまたはフォルダーをリンクすると、Workfrontアプリケーションに `SERVER_ERROR` エラーメッセージ。 エラーメッセージは、API キーの不一致が原因で未認証の例外を示しています。
+* 外部のファイルまたはフォルダーにリンクすると、Workfront アプリケーションに `SERVER_ERROR` エラーメッセージが表示されます。このエラーメッセージは、API キーの不一致による未認証の例外を示しています。
 
-* アセットに対してタスクを作成ワークフローを実行すると、ログメッセージに Null Pointer 例外が表示されます。
+* アセットに対してタスクの作成ワークフローを実行すると、ログメッセージに Null ポインター例外が表示されます。
 
-* 次を有効にした場合、 `Replace Spaces with DASH` 「Experience Managerの詳細設定」の「設定」オプションを使用すると、Workfrontでフォルダーが重複して作成されます。
+* Experience Manager の詳細設定にある「`Replace Spaces with DASH` 設定」オプションを有効にすると、Workfront でフォルダーが重複して作成されます。
 
-### 2022 年 6 月リリース {#june-2022-release}
+### 2022年6月リリース {#june-2022-release}
 
 [!DNL Workfront for Experience Manager enhanced connector] には、次の更新が含まれています。
 
-* リンクされたフォルダーを使用してアップロードする場合、または `Send To` WorkfrontでアセットをExperience Manageras a Cloud Serviceにアップロードするために使用できるアクション。アセットが破損し、Adobe Photoshopで開くことができない。
+* Experience Manager as a Cloud Service へアセットをアップロードする際、リンクされたフォルダーを使用したり、Workfront の `Send To` アクションを使用したりすると、アセットが破損し、Adobe Photoshop で開くことができなくなります。
 
-### 2022 年 3 月リリース {#march-2022-release}
+### 2022年3月リリース {#march-2022-release}
 
 [!DNL Workfront for Experience Manager enhanced connector] には、次の更新が含まれています。
 

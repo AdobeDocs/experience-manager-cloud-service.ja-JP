@@ -110,7 +110,7 @@ ht-degree: 100%
 
 ## その他のリソース {#additional-resources}
 
-* [コンテンツフラグメントの操作](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
    * [コンテンツフラグメントの管理](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 

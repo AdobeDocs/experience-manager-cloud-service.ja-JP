@@ -5,7 +5,7 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## コンテンツフラグメントモデルの作成 {#creating-content-fragment-models}
 
-コンテンツフラグメントモデルを作成し、構造を定義します。これは、以下で実行できます。 **ツール** -> **一般** -> **コンテンツフラグメントモデル**.
+コンテンツフラグメントモデルを作成し、構造を定義します。これは、**ツール**／**一般**／**コンテンツフラグメントモデル**&#x200B;で実行できます。
 
 ![ツールのコンテンツフラグメントモデル](assets/cfm-tools.png)
 
@@ -110,9 +110,9 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 * [オーサリングに関する概念](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — このページは主に次の項目に基づいています **サイト** コンソールですが、ほとんどの機能は、に移動したり、アクションを実行したりする場合にも関連します。 **コンテンツフラグメントモデル** の下に **一般** コンソール。
+* [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md) - このページは主に **Sites** コンソールに基づいていますが、ほとんどの機能は&#x200B;**一般**&#x200B;コンソールでの&#x200B;**コンテンツフラグメントモデル**&#x200B;への移動やアクションの実行にも関連しています。
 
-* [コンテンツフラグメントの操作](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
    * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 

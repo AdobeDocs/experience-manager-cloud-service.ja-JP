@@ -3,7 +3,7 @@ title: Experience Manager  [!DNL AEM Forms]  as a Cloud Service のアーキテ�
 description: ' [!DNL AEM Forms] a s a Cloud Service のアーキテクチャを理解し、プラットフォームの拡張性、回復性、パフォーマンスの側面について学習します。'
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 100%
 

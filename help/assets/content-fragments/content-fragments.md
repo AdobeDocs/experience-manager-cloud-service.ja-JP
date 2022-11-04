@@ -1,15 +1,15 @@
 ---
 title: コンテンツフラグメントの使用方法 （Assets — コンテンツフラグメント）
-description: Adobe Experience Manager(AEM) のコンテンツフラグメントを使用して、ページに依存しないコンテンツをデザイン、作成、キュレーション、使用する方法を説明します。これは、ページオーサリングやヘッドレス配信に最適です。
+description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントで、ページオーサリングやヘッドレス配信に最適な、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
 source-wordcount: '2075'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
-# コンテンツフラグメントの使用方法 {#working-with-content-fragments}
+# コンテンツフラグメントの操作 {#working-with-content-fragments}
 
 Adobe Experience Manager（AEM）as a Cloud Service でコンテンツフラグメントを使用すると、[ページに依存しないコンテンツ](/help/sites-cloud/authoring/fundamentals/content-fragments.md)をデザイン、作成、キュレーションおよび公開できます。（ヘッドレス配信に最適な）複数の場所や複数のチャネルでの使用に対応したコンテンツを準備できます。
 
@@ -34,9 +34,9 @@ Adobe Experience Manager（AEM）as a Cloud Service でコンテンツフラグ�
 
 >[!NOTE]
 >
->コンテンツフラグメントは、 **Assets**. 主に **[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** コンソール ( 管理元は **Assets** コンソール。 この節では、 **Assets** コンソール。
+>コンテンツフラグメントは **Assets** として保存されます。引き続き **Assets** コンソールから管理できますが、現在は主に&#x200B;**[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)**&#x200B;コンソールで管理します。このセクションでは、**Assets** コンソールからの管理について説明します。
 
-このページおよび以下のページでは、コンテンツフラグメントを作成、設定、維持管理および使用するためのタスクについて説明しています。
+このページと後続のページでは、コンテンツフラグメントを作成、設定、維持管理および使用するためのタスクについて説明しています。
 
 * [インスタンスに対するコンテンツフラグメント機能を有効化します。](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md) - モデルを有効化、作成および定義します。

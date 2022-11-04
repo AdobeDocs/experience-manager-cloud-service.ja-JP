@@ -1,47 +1,47 @@
 ---
 title: プログラムの作成
-description: Cloud Manager を使用して最初のプログラムを作成する方法を説明します。
+description: Cloud Manager で最初のプログラムを作成する方法を説明します。
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
 workflow-type: tm+mt
 source-wordcount: '648'
-ht-degree: 22%
+ht-degree: 97%
 
 ---
 
 # プログラムの作成 {#create-program}
 
-この部分では、 [オンボーディングジャーニー](overview.md) Cloud Manager を使用して最初のプログラムを作成する方法を学習します。
+[オンボーディングジャーニー](overview.md)のこのパートでは、Cloud Manager を使用して最初のプログラムを作成する方法を説明します。
 
 ## 目的 {#objective}
 
-このオンボーディングジャーニーの前のドキュメントを確認した後、 [Cloud Manager にアクセスする](cloud-manager.md) Cloud Manager への適切なアクセス権が確保されている。 これで、最初のプログラムを作成できます。
+オンボーディングジャーニーの前のドキュメント（[Cloud Manager へのアクセス](cloud-manager.md)）を確認し、Cloud Manager への適切なアクセス権があることを確認しました。これで、最初のプログラムを作成できます。
 
-このドキュメントを読むと、次の操作を実行できます。
+このドキュメントを読み終えると、次のことができるようになります。
 
 * プログラムとは何かを理解する。
 * 実稼動プログラムとサンドボックスプログラムの違いを理解する。
-* 独自のプログラムを作成できるようにする。
+* 独自のプログラムを作成できるようになる。
 
 ## プログラムとは {#programs}
 
-プログラムは、Cloud Manager の組織の最上位レベルです。 Adobeのライセンスに応じて、プログラムを使用すると、ソリューションを整理し、特定のチームメンバーに対してそれらのプログラムへのアクセス権を付与できます。
+プログラムとは、Cloud Manager での最上位レベルの組織です。 ご利用のアドビのライセンスによりますが、プログラムを使用するとソリューションを整理し、特定のチームメンバーにそのプログラムへのアクセス権を付与できます。
 
-Cloud Manager プログラムは、Cloud Manager 環境のセットを表します。 これらのプログラムは、通常、ライセンスを受けた SLA(Service Level Agreement) に対応する、ビジネスイニシアチブの論理的なセットをサポートします。 例えば、あるプログラムは組織のグローバルパブリック Web サイトをサポートするAEMリソースを表し、別のプログラムは内部の中央 DAM を表す場合があります。
+Cloud Manager のプログラムは、Cloud Manager の一連の環境を表します。 これらのプログラムは、論理的な一連のビジネスイニシアチブをサポートします。通常、ライセンス済みのサービスレベル契約（SLA）に対応しています。 例えば、あるプログラムが組織のグローバルなパブリック web サイトをサポートする AEM リソースを表す一方で、別のプログラムは社内の中核的 DAM を表すかもしれません。
 
-旅行関連のメディアに重点を置いたテナントである、理論上の WKND Travel and Adventure Enterprises の例を思い出してみれば、次の 2 つのプログラムがある可能性があります。WKND マガジン部門の 1 つのサイトプログラムと WKND メディア部門の 1 つのアセットプログラムです。 その後、異なるチームメンバーは、それぞれの分割の労働要件のため、異なるプログラムにアクセスできます。
+旅行関連のメディアに焦点を当てたテナントである理論上の WKND Travel and Adventure Enterprises の例を思い出すと、WKND マガジン部門用の Sites プログラムと WKND メディア部門用の Assets プログラムの 2 つのプログラムがある可能性があります。そして、チームメンバーの分業の必要性によって、異なるメンバーが、異なるプログラムにアクセスできるようになります。
 
 2 種類のプログラムがあります。
 
 * **実稼動プログラム**&#x200B;は、サイトのライブトラフィックを有効にするために作成されます。これは、「実際の」環境です。
 * **サンドボックスプログラム**&#x200B;は、通常、トレーニング、デモの実行、イネーブルメント、POC またはドキュメントの目的にかなうように作成されます。
 
-用途が異なるので、環境が異なれば、選択肢も異なります。 ただし、作成のプロセスは似ています。 このオンボーディングジャーニーに対して、サンドボックス環境を作成します。
+様々な目的があるので、環境の違いによってオプションが異なります。 ただし、環境を作成するプロセスは似ています。 このオンボーディングジャーニーでは、サンドボックス環境を作成します。
 
 >[!NOTE]
 >
->デフォルトでは、AEM環境へのアクセス権を持つユーザーは、 Cloud /Manager ユーザーの役割も持ちます。 およびその他のでのこの役割は、ユーザーにプログラムの詳細表示へのアクセス権を与えるには不十分です。 Cloud Manager のユーザーロールのみを持つユーザーは、プログラムメニューオプションからAEM環境のオーサー URL（環境が存在する場合）に移動できます。 プログラムレベルのアクセス権を取得したい場合は、管理者に問い合わせる必要があります。
+>デフォルトでは、AEM環境へのアクセス権を持つユーザーは、 Cloud /Manager ユーザーの役割も持ちます。 この役割だけでは、ユーザーにプログラムの詳細表示へのアクセス権を与えるには不十分です。 Cloud Manager のユーザーの役割のみを持つユーザーは、プログラムメニューオプションから AEM 環境のオーサー URL（環境が存在する場合）に移動できます。このようなユーザーがプログラムレベルのアクセス権を希望する場合は、管理者に問い合わせる必要があります。
 
 ## サンドボックスプログラムの作成 {#create-sandbox}
 
@@ -61,17 +61,17 @@ Cloud Manager プログラムは、Cloud Manager 環境のセットを表しま�
 
 ![概要ページからのサンドボックスの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/program-create-setupdemo2.png)
 
-プログラムが完了すると、組織のメンバーが **開発者** 製品プロファイルは、 Cloud Manager にログインして Cloud Manager の Git リポジトリーを管理できます。
+プログラムが完了すると、**開発者**&#x200B;製品プロファイルに割り当てられた組織のメンバーは、 Cloud Manager にログインして Cloud Manager の Git リポジトリを管理できるようになります。
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
-最初のプログラムが作成されたので、そのプログラムの環境を作成できます。 次にドキュメントを確認して、オンボーディングジャーニーを続行する必要があります [環境を作成する。](create-environments.md)
+最初のプログラムを作成したので、そのプログラムの環境を作成できるようになりました。 次に、[環境の作成](create-environments.md)ドキュメントを確認し、オンボーディングジャーニーを続けてください。
 
 ## その他のリソース {#additional-resources}
 
 その他に、次のリソースも参照してください。
 
-* [プログラムとプログラムの種類](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) - Cloud Manager の階層、および様々なタイプのプログラムが構造に適合する方法、およびプログラムの違いについて説明します。
-* [サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) - Cloud Manager を使用して、トレーニング、デモ、POC、またはその他の非実稼動用に独自のサンドボックスプログラムを作成する方法を説明します。
-* [実稼働プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) - Cloud Manager を使用して、ライブトラフィックをホストする独自の実稼動プログラムを作成する方法を説明します。
-* [AdobeCloud Manager の使用 — プログラム](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=ja) - Cloud Manager プログラムは、通常、購入したサービス契約 (SLA) に対応するビジネスイニシアチブの論理セットをサポートする、AEM環境のセットを表します。
+* [プログラムとプラグラムの種類](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) - Cloud Manager の階層、その構造に様々な種類のプログラムが収まる仕組み、それらのプログラムの違いなどについて説明します。
+* [サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) - Cloud Manager を使用して、トレーニング、デモ、POC などの実稼動以外の用途に使用する独自のサンドボックスプログラムを作成する方法を説明します。
+* [実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) - Cloud Manager を使用して、実トラフィックを取り扱う独自の実稼動プログラムを作成する方法について説明します。
+* [Adobe Cloud Manager の使用 - プログラム](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=ja) - Cloud Manager のプログラムは、論理的な一連のビジネスイニシアチブをサポートする一連の AEM 環境を表し、通常、購入したサービス契約（SLA）に対応しています。

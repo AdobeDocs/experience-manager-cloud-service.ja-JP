@@ -6,7 +6,7 @@ exl-id: d6853333-0b8c-4863-ad4c-98d8a76ec4f5
 source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
 workflow-type: tm+mt
 source-wordcount: '178'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 91%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Serviceの Cloud Manager リリース 2022.5.0 のリリース日は 2022 年 5 月 5 日です。 次回のリリースは2022年6月9日（PT）に予定されています。
+AEM as a Cloud Service の Cloud Manager 2022.5.0 のリリース日は 2022年5月5日です。次回のリリースは2022年6月9日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 

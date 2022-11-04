@@ -6,7 +6,7 @@ exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 source-git-commit: c2160e7aee8ba0b322398614524ba385ba5c56cf
 workflow-type: tm+mt
 source-wordcount: '2580'
-ht-degree: 52%
+ht-degree: 71%
 
 ---
 
@@ -209,24 +209,24 @@ AdobeCDN で、以下のHEADに関するリソースリクエストを受信し�
 
 ## Dispatcher キャッシュの明示的な無効化 {#explicit-invalidation}
 
-Adobeでは、標準のキャッシュヘッダーを使用して、コンテンツ配信のライフサイクルを制御することをお勧めします。 ただし、必要に応じて、Dispatcher 内で直接コンテンツを無効にすることができます。
+アドビでは、標準のキャッシュヘッダーを使用して、コンテンツ配信のライフサイクルを制御することをお勧めします。ただし、必要に応じて、Dispatcher 内で直接コンテンツを無効にすることができます。
 
-以下のリストに、（オプションで無効化の完了をリッスンしながら）キャッシュを明示的に無効にする場合があるシナリオを示します。
+次のリストには、キャッシュを明示的に無効にするシナリオ（オプションで無効化の完了をリッスン）が含まれています。
 
 * エクスペリエンスフラグメントやコンテンツフラグメントなどのコンテンツを公開した後、それらの要素を参照する公開済みおよびキャッシュされたコンテンツを無効化します。
-* 参照ページが正常に無効化された場合に外部システムに通知します。
+* 参照ページが正常に無効化されると外部システムに通知します。
 
 キャッシュを明示的に無効にする方法は 2 つあります。
 
-* 推奨されるアプローチは、オーサーから Sling コンテンツ配布 (SCD) を使用することです。
+* 推奨されるアプローチは、オーサーから Sling コンテンツ配布（SCD）を使用することです。
 * レプリケーション API を使用して、パブリッシュ Dispatcher フラッシュレプリケーションエージェントを呼び出す。
 
-アプローチは、階層の可用性、イベントの重複排除機能、イベント処理の保証の点で異なります。 次の表に、これらのオプションの概要を示します。
+アプローチは、階層の可用性、イベントの重複排除機能、イベント処理の保証の観点によって異なります。次の表に、これらのオプションの概要を示します。
 
 <table style="table-layout:auto">
  <tbody>
   <tr>
-    <th>該当なし</th>
+    <th>アプローチ</th>
     <th>階層の可用性</th>
     <th>重複排除 </th>
     <th>保証 </th>
@@ -235,21 +235,21 @@ Adobeでは、標準のキャッシュヘッダーを使用して、コンテン
     <th>説明 </th>
   </tr>  
   <tr>
-    <td>Sling コンテンツ配布 (SCD)API</td>
+    <td>Sling コンテンツ配布（SCD）API</td>
     <td>オーサー</td>
-    <td>Discovery API を使用するか、 <a href="https://github.com/apache/sling-org-apache-sling-distribution-journal/blob/e18f2bd36e8b43814520e87bd4999d3ca77ce8ca/src/main/java/org/apache/sling/distribution/journal/impl/publisher/DistributedEventNotifierManager.java#L146-L149">重複排除モード</a>.</td>
-    <td>少なくとも 1 回は。</td>
+    <td>Discovery API を使用するか、<a href="https://github.com/apache/sling-org-apache-sling-distribution-journal/blob/e18f2bd36e8b43814520e87bd4999d3ca77ce8ca/src/main/java/org/apache/sling/distribution/journal/impl/publisher/DistributedEventNotifierManager.java#L146-L149">重複排除モード</a>を有効にすることで可能です。</td>
+    <td>少なくとも 1 回。</td>
     <td>
      <ol>
-       <li>ADD</li>
-       <li>DELETE</li>
+       <li>追加</li>
+       <li>削除</li>
        <li>無効化</li>
      </ol>
      </td>
     <td>
      <ol>
-       <li>階層/統計レベル</li>
-       <li>階層/統計レベル</li>
+       <li>階層／統計レベル</li>
+       <li>階層／統計レベル</li>
        <li>レベルのリソースのみ</li>
      </ol>
      </td>
@@ -264,28 +264,28 @@ Adobeでは、標準のキャッシュヘッダーを使用して、コンテン
   <tr>
     <td>レプリケーション API</td>
     <td>パブリッシュ</td>
-    <td>不可能です。すべてのパブリッシュインスタンスで発生するイベントです。</td>
+    <td>不可です。すべてのパブリッシュインスタンスで発生するイベントです。</td>
     <td>ベストエフォート。</td>
     <td>
      <ol>
-       <li>有効化</li>
-       <li>無効化</li>
-       <li>DELETE</li>
+       <li>アクティブ化</li>
+       <li>非アクティブ化</li>
+       <li>削除</li>
      </ol>
      </td>
     <td>
      <ol>
-       <li>階層/統計レベル</li>
-       <li>階層/統計レベル</li>
-       <li>階層/統計レベル</li>
+       <li>階層／統計レベル</li>
+       <li>階層／統計レベル</li>
+       <li>階層／統計レベル</li>
      </ol>
      </td>
     <td>
      <ol>
        <li>コンテンツを公開し、キャッシュを無効にします。</li>
-       <li>オーサー層/パブリッシュ層から — コンテンツを削除し、キャッシュを無効にします。</li>
-       <li><p><strong>オーサー層から</strong>  — コンテンツを削除し、キャッシュを無効にします（パブリッシュエージェントの AEM オーサー層からトリガーされる場合）。</p>
-           <p><strong>パブリッシュ層から</strong>  — キャッシュのみを無効化します（フラッシュエージェントまたはリソースのみフラッシュエージェントの AEM パブリッシュ層からトリガーされた場合）。</p>
+       <li>オーサー層／パブリッシュ層から - コンテンツを削除し、キャッシュを無効にします。</li>
+       <li><p><strong>オーサー層から</strong> - コンテンツを削除し、キャッシュを無効にします（パブリッシュエージェントの AEM オーサー層からトリガーされる場合）。</p>
+           <p><strong>パブリッシュ層から</strong> - キャッシュのみを無効化します（フラッシュエージェントまたはリソースのみフラッシュエージェントの AEM パブリッシュ層からトリガーされる場合）。</p>
        </li>
      </ol>
      </td>
@@ -293,24 +293,24 @@ Adobeでは、標準のキャッシュヘッダーを使用して、コンテン
   </tbody>
 </table>
 
-キャッシュの無効化に直接関連する 2 つのアクションは、Sling Content Distribution(SCD)API 無効化とレプリケーション API 無効化です。
+キャッシュの無効化に直接関連する 2 つのアクションは、Sling コンテンツ配布（SCD）API の無効化とレプリケーション API の非アクティブ化です。
 
 また、表からは、次のことがわかります。
 
-* SCD API は、正確な知識を必要とする外部システムとの同期など、すべてのイベントが保証される必要がある場合に必要です。 無効化呼び出しの時点でパブリッシュ層のアップスケーリングイベントがある場合、新しい各パブリッシュが無効化を処理すると、追加のイベントが発生します。
+* SCD API は、正確な知識を必要とする外部システムとの同期など、すべてのイベントを保証する必要がある場合に必要です。無効化呼び出しの時点でパブリッシュ層のアップスケーリングイベントがある場合、新しい各パブリッシュが無効化を処理すると、追加のイベントが発生します。
 
-* レプリケーション API の使用は一般的な使用例ではありませんが、キャッシュを無効にするトリガーがオーサー層ではなくパブリッシュ層から提供される場合に使用します。 これは、Dispatcher の TTL が設定されている場合に役立ちます。
+* レプリケーション API の使用は一般的な使用例ではありませんが、キャッシュを無効にするトリガーがオーサー層ではなくパブリッシュ層から提供される場合に使用する必要があります。これは、Dispatcher の TTL が設定されている場合に役立ちます。
 
-結論として、Dispatcher キャッシュを無効にする場合は、オーサーから SCD API 無効化アクションを使用することをお勧めします。 また、イベントをリッスンして、さらにダウンストリームアクションをトリガー化することもできます。
+結論として、Dispatcher キャッシュを無効にする場合は、オーサーから SCD API 無効化アクションを使用することをお勧めします。 また、イベントをリッスンして、さらにダウンストリームアクションをトリガーすることもできます。
 
-### Sling コンテンツ配布 (SCD) {#sling-distribution}
+### Sling コンテンツ配布（SCD） {#sling-distribution}
 
 >[!NOTE]
->以下の手順を使用する場合、カスタムコードはローカルではなく、AEM Cloud Service開発環境でテストする必要があることに注意してください。
+>以下の手順を使用する場合、カスタムコードはローカルではなく、AEM Cloud Service 開発環境でテストする必要があることに注意してください。
 
-オーサーの SCD アクションを使用する場合、実装パターンは次のようになります。
+オーサーで SCD アクションを使用する場合、実装パターンは次のようになります。
 
-1. オーサーから、カスタムコードを記述して Sling コンテンツ配布を呼び出します。 [API](https://sling.apache.org/documentation/bundles/content-distribution.html)を呼び出し、パスのリストを持つ無効化アクションを渡す場合、以下の処理を実行します。
+1. オーサーからカスタムコードを記述して Sling コンテンツ配布 [API](https://sling.apache.org/documentation/bundles/content-distribution.html) を呼び出し、パスのリストを含む無効化アクションを渡します。
 
 ```
 @Reference
@@ -379,11 +379,11 @@ public class InvalidatedHandler implements EventHandler {
 
 <!-- Optionally, instead of using the isLeader approach, one could add an OSGi configuration for the PID org.apache.sling.distribution.journal.impl.publisher.DistributedEventNotifierManager and property deduplicateEvent=true. But we'll stick with just one strategy and not mention it (double-check this).**review this**-->
 
-* （オプション）ビジネスロジックを `invalidated(String[] paths, String packageId)` メソッドを使用します。
+* （オプション）上記の `invalidated(String[] paths, String packageId)` メソッドでビジネスロジックを実行します。
 
 >[!NOTE]
 >
->Dispatcher が無効化されると、AdobeCDN はフラッシュされません。 Adobeが管理する CDN は TTL に従うので、フラッシュする必要はありません。
+>Dispatcher が無効化されると、AdobeCDN はフラッシュされません。 アドビが管理する CDN は TTL に従うので、フラッシュする必要はありません。
 
 ### レプリケーション API {#replication-api}
 
@@ -393,7 +393,7 @@ public class InvalidatedHandler implements EventHandler {
 
 フラッシュエージェントエンドポイントは設定できず、フラッシュエージェントと共に実行されるパブリッシュサービスと一致する Dispatcher を指すように事前に設定されています。
 
-フラッシュエージェントは、通常、OSGi のイベントまたはワークフローに基づくカスタムコードによってトリガーされます。
+フラッシュエージェントは、通常、OSGi のイベントまたはワークフローに基づくカスタムコードでトリガーできます。
 
 ```
 String[] paths = …
@@ -464,5 +464,5 @@ HTML ページにインクルードされるデフォルトの clientlib は、�
 1. Adobe Granite HTML Library Manager の OSGi Config を探します。
    * 「厳密なバージョン管理」チェックボックスをオンにして有効にします。
    * 「長期クライアントサイドキャッシュキー」というラベルの付いたフィールドに、値「/.*;hash」を入力します。
-1. 変更内容を保存します。AEM as a Cloud Serviceは開発、ステージ、実稼動環境でこの設定を自動的に有効にするので、この設定をソース管理に保存する必要はありません。
+1. 変更内容を保存します。AEM as a Cloud Serviceは、開発、ステージ、実稼動環境でこの設定を自動的に有効にするので、この設定をソース管理に保存する必要はありません。
 1. クライアントライブラリのコンテンツが変更されるたびに、新しいハッシュキーが生成され、HTML 参照が更新されます。

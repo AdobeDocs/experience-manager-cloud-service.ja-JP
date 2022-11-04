@@ -1,39 +1,39 @@
 ---
 title: Cloud Manager 製品プロファイルへのチームメンバーの割り当て
-description: このページでは、チームメンバーを Cloud Manager 製品プロファイルに割り当てる方法について説明します
+description: このページでは、チームメンバーを Cloud Manager 製品プロファイルに割り当てる方法を説明します
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
 source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
 workflow-type: tm+mt
 source-wordcount: '1534'
-ht-degree: 42%
+ht-degree: 100%
 
 ---
 
 
 # Cloud Manager 製品プロファイルへのチームメンバーの割り当て {#assign-team-members}
 
-この部分では、 [オンボーディングジャーニー](overview.md) チームメンバーを Cloud Manager 製品プロファイルに割り当てる方法について説明します。
+[オンボーディングジャーニー](overview.md)のこのパートでは、チームメンバーを Cloud Manager 製品プロファイルに割り当てる方法を説明します。
 
 ## 目的 {#objective}
 
-このジャーニーの前の手順では、 [Admin Consoleへのアクセス](admin-console.md) ここで、Admin Consoleにログインし、システム管理者としての権限を確認する方法を学習しました。 これで、チームメンバーに Cloud Manager へのアクセスを許可する準備が整いました。 これをおこなうには、製品プロファイルを割り当てます。
+このジャーニーの前のステップ、[Admin Console へのアクセス](admin-console.md)では、Admin Console にログインして、システム管理者としての権限を確認することを理解しました。これで、チームメンバーが Cloud Manager にアクセスできるようにする準備が整いました。これを行うには、製品プロファイルを割り当てます。
 
-ユーザーにAdobeソリューションへのアクセス権を付与する場合、必ずしもユーザーにフルアクセス権を付与する必要はありません。 製品プロファイルを使用すると、各ソリューションに独自のユーザー権限セットを設定できます。 製品プロファイルの割り当てには、Admin Consoleを使用します。
+アドビソリューションに対するアクセス権をユーザーに付与する場合、必ずしも完全なアクセス権を付与する必要はありません。製品プロファイルを使用すると、ソリューションごとに独自のユーザー権限を設定できます。製品プロファイルを割り当てるには、Admin Console を使用します。
 
-最初の手順は、ユーザーに Cloud Manager へのアクセス権を付与することです。 Cloud Manager は、エンタープライズ開発の設定と専用に構築された CI/CD パイプラインをサポートします。これは、高度なテストと最高のコード品質を確実に実現し、優れたエクスペリエンスを提供するために備わっています。
+最初のステップは、Cloud Manager へのアクセス権をユーザーに付与することです。Cloud Manager を使用すると、エンタープライズ開発体制を設定し、CI/CD パイプラインを専用に構築することができます。これらが備わっていることにより、徹底したテストと最高のコード品質を確実に実現し、優れたエクスペリエンスを提供することができます。
 
-読み終えると、次のことが習得できます。
+このドキュメントを読み終えると、以下を理解できるようになります。
 
-* 製品プロファイルの概要
-* Cloud Manager とは何かを理解します。
-* 次の 3 つの重要な Cloud Manager 製品プロファイルを把握します。 **ビジネスオーナー**, **デプロイメントマネージャー**、および **開発者**.
+* 製品プロファイルを理解する。
+* Cloud Manager を理解する。
+* **ビジネスオーナー**、**デプロイメントマネージャー**、**開発者**&#x200B;という 3 種類の重要な Cloud Manager 製品プロファイルを理解する。
 * Cloud Manager 製品プロファイルにチームメンバーを割り当てることができる。
 
 ## 前提条件 {#prerequisites}
 
-チームメンバーを製品プロファイルに割り当てるには、チームメンバーに関する詳細が必要です。チームメンバーは、次の情報を含め、AEMas a Cloud Serviceにアクセスする必要があります。
+チームメンバーを製品プロファイルに割り当てるには、AEM as a Cloud Service にアクセスする必要があるチームメンバーについて、次のような詳細が必要です。
 
 * 氏名
 * 電子メールアドレス
@@ -41,29 +41,29 @@ ht-degree: 42%
 
 >[!TIP]
 >
->オンボーディングの目的で、Adobeは、管理者、開発者、コンテンツ作成者など、即時タスクに参加するユーザーを最初に追加することをお勧めします。
+>オンボーディングのために、管理者、開発者、コンテンツ作成者など、当面のタスクに携わるユーザーを最初に追加することをお勧めします。
 >
 >すべてのユーザーを追加しなくても、オンボーディングプロセスを続行できます。オンボーディングが完了したら、さらにユーザーを追加できます。
 
 ## 製品プロファイル {#product-profiles}
 
-ユーザーにAdobeソリューションへのアクセス権を付与する場合、必ずしもユーザーにフルアクセス権を付与する必要はありません。 製品プロファイルを使用すると、各ソリューションは、製品を使用して設定された、独自のユーザー権限を持つことができます。Admin Console
+アドビソリューションに対するアクセス権をユーザーに付与する場合、必ずしも完全なアクセス権を付与する必要はありません。製品プロファイルを使用すると、各ソリューションは一連の独自のユーザー権限を持つことができます。これらの権限は、Admin Console を使用して設定します。
 
-例えば、このジャーニーの後半で、Admin Consoleを使用して、AEM管理者とAEM作成者用の製品プロファイルを割り当て、AEMソリューションへのアクセス権をユーザーに付与します。
+例えば、このジャーニーの後半では、Admin Console を使用して AEM 管理者と AEM 作成者に製品プロファイルを割り当てて、AEM ソリューションへのアクセス権をユーザーに付与します。
 
-ただし、次の手順では、チームメンバーが最初に Cloud Manager にアクセスできるように製品プロファイルを付与します。
+ただし、次のステップでは、チームメンバーが最初に Cloud Manager にアクセスできるように製品プロファイルを付与します。
 
 ## Cloud Manager {#cloud-manager}
 
-システム管理者は、AEMas a Cloud Serviceプロジェクトを成功させるには、AEMを使用した驚くべきコンテンツの作成だけでなく、AEMコンテンツを提供するための独自のカスタムコードやアプリケーションの開発とデプロイメントにも依存することを知っています。
+システム管理者は、AEM as a Cloud Service プロジェクトを成功させるには、AEM を使用してすばらしいコンテンツを作成することだけでなく、AEM コンテンツを提供するために独自のカスタムコードやアプリケーションを開発してデプロイすることにも依存することを知っています。
 
-Cloud Manager はAEMas a Cloud Serviceの不可欠な要素で、コードデプロイメント用の CI/CD パイプラインの管理、コードリポジトリの管理、環境の管理に使用されます。
+Cloud Manager は、AEM as a Cloud Service の不可欠な部分であり、コードをデプロイするための CI/CD パイプラインの管理、コードリポジトリの管理、環境の管理に使用されます。
 
-チームが他の操作をおこなう前に、必要な製品プロファイルを付与して Cloud Manager に転送する必要があります。 次の手順では、Admin Consoleを使用して Cloud Manager 製品プロファイルを見つける場所と、それらをチームメンバーに割り当てる方法を示します。
+チームのメンバーは、何らかの操作を行う前に、必要な製品プロファイルを付与して Cloud Manager にオンボーディングする必要があります。次のステップでは、Cloud Manager 製品プロファイルを Admin Console を使用して見つける場所と、製品プロファイルをチームメンバーに割り当てる方法を示します。
 
 ## Cloud Manager 製品プロファイルの確認 {#review-product-profiles}
 
-このAdmin Consoleを使用して、Cloud Manager のプロファイルのリストを表示できます。
+ Admin Console で、Cloud Manager プロファイルのリストを確認できます。
 
 1. Adobe Admin Console（[adminconsole.adobe.com](https://adminconsole.adobe.com/)）にログインして、**概要**&#x200B;ページで、**製品とサービス**&#x200B;カードから「**Adobe Experience Manager as a Cloud Service**」を選択します。
 
@@ -77,21 +77,21 @@ Cloud Manager はAEMas a Cloud Serviceの不可欠な要素で、コードデプ
 
    ![製品プロファイル](/help/journey-onboarding/assets/assign-team3.png)
 
-初期オンボーディングプロセスの一環として割り当てる最も重要なプロファイルは次のとおりです。
+オンボーディングの初期プロセスの一環として割り当てる必要のある、最も重要なプロファイルは次のとおりです。
 
-* **ビジネスオーナー**  — これらのユーザーは様々なプログラムを管理します。
-* **デプロイメントマネージャー**  — これらのユーザーは、リポジトリーから実行中のAEM環境にコードをデプロイします。
-* **開発者**  — これらのユーザーは、カスタムAEMアプリケーションを開発し、コードをリポジトリにコミットします。
+* **ビジネスオーナー** - これらのユーザーは、それぞれ別個のプログラムを管理します。
+* **デプロイメントマネージャー** - これらのユーザーは、リポジトリから実行中の AEM 環境にコードをデプロイします。
+* **開発者** - これらのユーザーは、カスタム AEM アプリケーションを開発し、コードをリポジトリにコミットします。
 
-これらの役割とその役割を理解し、チームメンバーのリストを確認して、誰がどのプロファイルを必要とするかを判断します。 ユーザーはチーム内で複数の役割を持つことができ、多くの場合は複数のプロファイルも必要になることに注意してください。
+これらの役割とその作業内容を理解したら、チームメンバーのリストを確認して、誰がどのプロファイルを必要としているかを判断します。ユーザーはチーム内で複数の役割を持つことができ、多くの場合は複数のプロファイルも必要になることに注意してください。
 
 ## ビジネスオーナー製品プロファイルの割り当て {#assign-business-owner}
 
 これで、ユーザーを追加して、**ビジネスオーナー**&#x200B;製品プロファイルに割り当てる準備が整いました。
 
-1. Cloud Manager プログラムを管理する必要があるユーザーを特定します。 これらは、 **事業主**.
+1. Cloud Manager プログラムを管理する必要があるユーザーを特定します。これらは&#x200B;**ビジネスオーナー**&#x200B;になります。
 
-1. Admin Console（`[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)`）にログインして、**概要**&#x200B;ページで、**製品とサービス**&#x200B;カードから「**Adobe Experience Manager as a Cloud Service**」製品を選択します。
+1. Admin Console（`[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)`）にログインして、**概要**&#x200B;ページで&#x200B;**製品とサービス**&#x200B;カードから「**Adobe Experience Manager as a Cloud Service**」製品を選択します。
 
    ![製品とサービス](/help/journey-onboarding/assets/assign-team1.png)
 
@@ -108,7 +108,7 @@ Cloud Manager はAEMas a Cloud Serviceの不可欠な要素で、コードデプ
 1. 「**製品またはユーザーグループを選択**」見出しの下の「＋」ボタンをクリックして製品の選択を開始し、「**Adobe Experience Manager as a Cloud Service**」を選択して&#x200B;**ビジネスオーナー**&#x200B;製品プロファイルをユーザーに割り当てます。
 
    * ユーザーが Cloud Manager にアクセスできるように、すべてのユーザーを 1 つ以上の製品プロファイルに割り当てます。
-   * システム管理者として自分を **ビジネスオーナー** 役割。
+   * システム管理者は必ず自分自身を&#x200B;**ビジネスオーナー**&#x200B;の役割に割り当ててください。
 
    ![ユーザーの割り当て](/help/journey-onboarding/assets/assign-team6.png)
 
@@ -116,13 +116,13 @@ Cloud Manager はAEMas a Cloud Serviceの不可欠な要素で、コードデプ
 
 1. チームに属するユーザーに対して、上記の手順を繰り返します。
 
-お使いの **ビジネスオーナー**&#x200B;が割り当てられ、Cloud Manager にアクセスできるようになりました。 システム管理者としての自分を **ビジネスオーナー** プロファイル。
+**ビジネスオーナー**&#x200B;が割り当てられ、Cloud Manager にアクセスできるようになりました。 システム管理者は自分自身を&#x200B;**ビジネスオーナー**&#x200B;のプロファイルにも忘れずに割り当ててください。
 
 ## デプロイメントマネージャー製品プロファイルの割り当て {#assign-deployment-manager}
 
-1. コードのデプロイが必要なユーザーを特定します。
+1. コードをデプロイする必要があるユーザーを特定します。
 
-1. Admin Console（`[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)`）にログインして、**概要**&#x200B;ページで、**製品とサービス**&#x200B;カードから「**Adobe Experience Manager as a Cloud Service**」製品を選択します。
+1. Admin Console（`[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)`）にログインして、**概要**&#x200B;ページで&#x200B;**製品とサービス**&#x200B;カードから「**Adobe Experience Manager as a Cloud Service**」製品を選択します。
 
    ![製品とサービス](/help/journey-onboarding/assets/assign-team1.png)
 
@@ -140,13 +140,13 @@ Cloud Manager はAEMas a Cloud Serviceの不可欠な要素で、コードデプ
 
    ![プロファイルの割り当て](/help/journey-onboarding/assets/assign-team6.png)
 
-お使いの **デプロイメントマネージャー**&#x200B;が割り当てられ、Cloud Manager にアクセスできるようになりました。 今後の責任に応じて、システム管理者としての自分自身を **デプロイメントマネージャー** プロファイル。
+**デプロイメントマネージャー**&#x200B;が割り当てられ、Cloud Manager にアクセスできるようになりました。 システム管理者は、今後の担務に応じて、自分自身を&#x200B;**デプロイメントマネージャー**&#x200B;のプロファイルに割り当てる必要がある場合とない場合があります。
 
 ## 開発者製品プロファイルの割り当て {#assign-developer}
 
-1. AEMアプリケーションの開発とコードの管理を必要とするユーザーを特定します。
+1. AEM アプリケーションを開発してコードを管理する必要があるユーザーを特定します。
 
-1. Admin Console（`[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)`）にログインして、**概要**&#x200B;ページで、**製品とサービス**&#x200B;カードから「**Adobe Experience Manager as a Cloud Service**」製品を選択します。
+1. Admin Console（`[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)`）にログインして、**概要**&#x200B;ページで&#x200B;**製品とサービス**&#x200B;カードから「**Adobe Experience Manager as a Cloud Service**」製品を選択します。
 
    ![製品とサービス](/help/journey-onboarding/assets/assign-team1.png)
 
@@ -164,26 +164,26 @@ Cloud Manager はAEMas a Cloud Serviceの不可欠な要素で、コードデプ
 
    ![プロファイルの割り当て](/help/journey-onboarding/assets/assign-team6.png).
 
-お使いの **開発者**&#x200B;が割り当てられ、Cloud Manager にアクセスできるようになりました。 今後の責任に応じて、システム管理者としての自分自身を **開発者** プロファイル。
+**開発者**&#x200B;が割り当てられ、Cloud Manager にアクセスできるようになりました。 システム管理者は、今後の担務に応じて、自分自身を&#x200B;**開発者**&#x200B;のプロファイルに割り当てる必要がある場合とない場合があります。
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
-おめでとうございます。新しく作成された Cloud Manager チーム ( 自分が **ビジネスオーナー** プロファイル ) が設定されていることを確認します。 **ビジネスオーナー**&#x200B;の役割で Cloud Manager にログインしてクラウドリソースを作成できるようになるまであと少しです。
+おめでとうございます。これで、新しく構築された Cloud Manager チーム（**ビジネスオーナー**&#x200B;のプロファイルに割り当てられた自分自身を含む）の設定が完了しました。**ビジネスオーナー**&#x200B;の役割で Cloud Manager にログインしてクラウドリソースを作成できるようになるまであと少しです。
 
-オンボーディングジャーニーのこの部分では、Admin Console内のプロファイルにチームメンバーを割り当てる方法について学びました。 その結果、以下を習得しました。
+オンボーディングジャーニーのこのパートでは、Admin Console でチームメンバーをプロファイルに割り当てる方法について説明しました。その結果、以下を習得しました。
 
-* 製品プロファイルの概要
-* Cloud Manager とは何かを理解します。
-* 次の 3 つの重要な Cloud Manager 製品プロファイルを把握します。 **ビジネスオーナー**, **デプロイメントマネージャー**、および **開発者**.
+* 製品プロファイルを理解する。
+* Cloud Manager を理解する。
+* **ビジネスオーナー**、**デプロイメントマネージャー**、**開発者**&#x200B;という 3 種類の重要な Cloud Manager 製品プロファイルを理解する。
 * Cloud Manager 製品プロファイルにチームメンバーを割り当てることができる。
 
-これで、次にドキュメントを確認して、オンボーディングジャーニーを続行する準備が整いました [Cloud Manager にアクセスする](cloud-manager.md) ここでは、Cloud Manager にアクセスしてプロジェクトリソースを作成する方法について説明します。
+次に [Cloud Manager へのアクセス](cloud-manager.md)のドキュメントを確認して、オンボーディングジャーニーを続ける準備が整いました。このドキュメントでは、Cloud Manager にアクセスしてプロジェクトリソースを作成する方法を説明します。
 
 ## その他のリソース {#additional-resources}
 
 前述したようにオンボーディングジャーニーを続行することをお勧めします。以下は、このジャーニーで説明している特定のトピックの詳細を調べる場合に参考になる追加のリソースです。
 
 * [Cloud Manager の概要](/help/onboarding/cloud-manager-introduction.md) - Cloud Manager、Cloud Manager プログラム、環境について説明します。
-* [Cloud Manager 製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md) - AEMのas a Cloud Serviceのチームおよび製品プロファイルについて説明します。
-* [Adobe Admin Consoleの ID タイプ](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/identity.ug.html) -Adobeの id 管理システムは、管理者がアプリケーションやサービスへのユーザーのアクセスを作成および管理するのに役立ちます。 Adobeは、ユーザーの認証と承認をおこなうために、これらの ID タイプまたはアカウントを提供します。
+* [Cloud Manager 製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md) - AEM as a Cloud Service のチームおよび製品プロファイルについて説明します。
+* [Adobe Admin Console の ID タイプ](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/identity.ug.html) - アドビの ID 管理システムは、管理者がアプリケーションやサービスへのユーザーのアクセスを作成および管理するのに役立ちます。アドビでは、ユーザーを認証および承認するために、これらの ID タイプまたはアカウントを提供しています。
 

@@ -7,13 +7,13 @@ exl-id: 7e55d7b7-3a82-4665-b4aa-9b47094d91c9
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '112'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # コンテンツフラグメント構造ツリー {#content-fragment-structure-tree}
 
-AEMのコンテンツフラグメントエディターの構造ツリー機能を使用すると、ヘッドレスコンテンツを理解しやすくなります。
+AEM のコンテンツフラグメントエディターの構造ツリー機能を使用すると、ヘッドレスコンテンツをより深く理解できます。
 
 コンテンツフラグメントエディターで「構造ツリー」アイコンを選択できます。
 

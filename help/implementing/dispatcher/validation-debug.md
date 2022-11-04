@@ -6,7 +6,7 @@ exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
 workflow-type: tm+mt
 source-wordcount: '2693'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
@@ -440,11 +440,11 @@ Dispatcher をローカルで実行すると、ログが端末に直接出力さ
 >
 >Windows オペレーティングシステムの制限により、この機能はmacOSおよび Linux ユーザーに対してのみ使用できます。
 
-ローカル検証 (`validate.sh`) を開始し、docker コンテナ (`docker_run.sh`) を変更するたびに、 `docker_run_hot_reload.sh` スクリプト  スクリプトは、設定に対する変更を監視し、自動的に再読み込みして検証を再実行します。 このオプションを使用すると、デバッグ時にかなりの時間を節約できます。
+設定が変更されるたびにローカル検証（`validate.sh`）を実行してドッカーコンテナ（`docker_run.sh`）を開始する代わりに、`docker_run_hot_reload.sh` スクリプトを実行することもできます。  スクリプトは、設定に対する変更を監視し、自動的に再読み込みして検証を再実行します。このオプションを使用すると、デバッグ時にかなりの時間を節約できます。
 
-次のコマンドを使用して、スクリプトを実行できます。 `./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
+次のコマンドを使用して、スクリプトを実行できます。`./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
 
-出力の最初の行は、 `docker_run.sh`例：
+出力の最初の行は、`docker_run.sh` に対して実行されるものと似ています。例えば、次のようになります。
 
 ```
 ~ bin/docker_run_hot_reload.sh src host.docker.internal:8081 8082
