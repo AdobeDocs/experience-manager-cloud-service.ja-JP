@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.11.0 �
 description: AEM as a Cloud Service の Cloud Manager 2022.11.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: b0d57f0ccfb80c8071026a53cab594cfced13497
+source-git-commit: 0b60b0954c98c5d10227b4db002e3c70f47b6901
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 44%
