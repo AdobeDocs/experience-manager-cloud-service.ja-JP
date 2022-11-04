@@ -2,10 +2,10 @@
 title: 非推奨（廃止予定）の API
 description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の非推奨（廃止予定）の API と削除された API）。
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: ed57f15e2e85d1b2d957d396f9d93725d389375c
+source-git-commit: 89a50c17c10a19b394db5709692fb065c19e878f
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 95%
+source-wordcount: '1076'
+ht-degree: 98%
 
 ---
 
@@ -158,7 +158,7 @@ ht-degree: 95%
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>Apache Felix Http ホワイトボードはサポートされなくなりました。コードを OSGiHttp ホワイトボードに移行してください。</td>
+    <td>Apache Felix Http ホワイトボードはサポートされなくなりました。コードを OSGi Http ホワイトボードに移行してください。</td>
     <td>2022/1/27</td>
     <td>2022/3/24</td>
   </tr>
@@ -182,7 +182,7 @@ ht-degree: 95%
   </tr>
   <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
-    <td>Apache Log4j 1 は 2015 年に提供が終了し、サポートは終了しました。</td>
+    <td>Apache Log4j 1 は 2015年に提供が終了し、サポートは終了しました。</td>
     <td>2022/1/27</td>
     <td>2022/3/24</td>
   </tr>
@@ -193,16 +193,22 @@ ht-degree: 95%
     <td>削除</td>
   </tr>
   <tr>
-    <td>com.github.jknack.handlebars.js</td>
+    <td>com.github.jcotness.handlebars.js</td>
     <td>Handlebars のアップグレードは、セキュリティの脆弱性により、4.0.5 から 4.3.0 に必要です。 このパッケージは、アップグレードされたハンドルバーには存在しません。</td>
-    <td>5/5/2022</td>
-    <td>8/5/2022</td>
+    <td>2022/5/5（PT）</td>
+    <td>2022/8/5（PT）</td>
   </tr>
   <tr>
     <td>com.adobe.granite.resourceresolverhelper</td>
     <td>この API は、現在サポートされていません。 代わりに、 org.apache.sling.api.resource.ResourceResolverFactory を使用します。</td>
     <td>9/29/2022</td>
     <td>11/24/2022</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.contentsync.handler.util</td>
+    <td>この API は非推奨です。 代わりに、Apache Sling の Builder を使用してください。</td>
+    <td>10/31/2022</td>
+    <td>01/01/2023</td>
   </tr>
 </tbody>
 </table>
