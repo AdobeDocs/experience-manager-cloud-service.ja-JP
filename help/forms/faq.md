@@ -5,7 +5,7 @@ contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 index: false
 source-git-commit: 6355a6241c5b53585b80b2c2bc00556297766b49
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '993'
 ht-degree: 100%
 
