@@ -2,10 +2,10 @@
 title: 統合シェルでの AEM as a Cloud Service
 description: 統合シェルでの AEM as a Cloud Service
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 53e22737e62835872e47ac07530078c3d1dfcf31
+source-git-commit: 5d9acdd9b6a377a7509e0638984cb40983fa6652
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 65%
+source-wordcount: '372'
+ht-degree: 77%
 
 ---
 
@@ -58,12 +58,6 @@ AEMas a Cloud Service（オーサーサービス）は、統合シェルと統�
 >ダークテーマは、統合シェル（上部のバー）にのみ適用されます。
 
 ![画像](/help/overview/assets/unifiedshell4.png)
-
-## AEMas a Cloud Service環境の識別 {#identify-aemaacs-environment}
-
-AEMas a Cloud Serviceは、次の 3 種類の環境を提供します。実稼動、ステージング、開発。 参照： [環境タイプ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en) を参照してください。 この統合シェルとの統合により、以下に示すように、オーサーサービスにログインしているユーザーの環境のタイプが、上部のヘッダーにラベルを付けて表示されます。
-
-![画像](/help/overview/assets/unifiedshell_header_label.png)
 
 
 ## AEM インボックスへのアクセス {#accessing-the-aem-inbox}
