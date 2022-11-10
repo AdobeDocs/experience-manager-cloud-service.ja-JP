@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service の概要に
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 28c64256c64bf3f7f2e38e1f52a615ff8ca457bb
+source-git-commit: d310b48d3abe8ffba2f25a27899cd042a186db84
 workflow-type: tm+mt
-source-wordcount: '3738'
+source-wordcount: '3739'
 ht-degree: 99%
 
 ---
@@ -145,7 +145,6 @@ ht-degree: 99%
       + [AEM 製品プロファイルの割り当て](/help/journey-onboarding/assign-profiles-aem.md)
       + [開発者およびデプロイメントマネージャーのタスク](/help/journey-onboarding/developers.md)
       + [AEM ユーザータスク](/help/journey-onboarding/aem-users.md)
-      + [ユーザーグループ](/help/journey-onboarding/user-groups.md)
    + AEM 参照デモのアドオンジャーニー {#demo-add-on}
       + [概要](/help/journey-sites/demos-add-on/overview.md)
       + [インストール](/help/journey-sites/demos-add-on/installation.md)
@@ -156,6 +155,7 @@ ht-degree: 99%
    + その他のオンボーディングの概念 {#concepts}
       + [Cloud Manager の概要](/help/onboarding/cloud-manager-introduction.md)
       + [AEM as a Cloud Service チームおよび製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md)
+      + [通知ユーザーグループ](/help/journey-onboarding/user-groups.md)
 + AEM as a Cloud Service 移行ジャーニー {#migration-journey}
    + [AEM as a Cloud Service の移動の概要](/help/journey-migration/getting-started.md)
    + [準備段階](/help/journey-migration/readiness.md)

@@ -3,10 +3,10 @@ title: Cloud Manager へのアクセス
 description: プロジェクトリソースを設定するための Cloud Manager へのアクセス方法について説明します。
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
+source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 98%
+source-wordcount: '1055'
+ht-degree: 97%
 
 ---
 
@@ -32,10 +32,6 @@ Cloud Manager は、AEM as a Cloud Service に不可欠なコンポーネント�
 通常、**ビジネスオーナー**&#x200B;の製品プロファイルに割り当てられたグループメンバーは、プログラムや環境などのクラウドリソースの追加を担当します。この担当者は、ビジネスニーズを理解し、Cloud Manager の初期設定を実施します。
 
 このオンボーディングジャーニーの目的上、システム管理者は既に&#x200B;**ビジネスオーナー**&#x200B;の製品プロファイルに割り当てられており、クラウドリソースを設定します。実際のプロジェクト要件に応じて、ビジネスオーナーはシステム管理者と同じ場合も同じでない場合もあります。
-
->[!NOTE]
->
->デフォルトでは、AEM環境へのアクセス権を持つユーザーは、 Cloud /Manager ユーザーの役割も持ちます。 この役割だけでは、ユーザーにプログラムの詳細表示へのアクセス権を与えるには不十分です。 Cloud Manager のユーザーの役割のみを持つユーザーは、プログラムメニューオプションから AEM 環境のオーサー URL（環境が存在する場合）に移動できます。このようなユーザーがプログラムレベルのアクセス権を希望する場合は、管理者に問い合わせる必要があります。
 
 ## システム管理者およびビジネスオーナーとして Cloud Manager にアクセス {#access-sysadmin-bo}
 
@@ -137,3 +133,4 @@ Cloud Manager にビジネスオーナーとして正常にログインしまし
 その他に、次のリソースも参照してください。
 
 * [Cloud Manager の概要](/help/onboarding/cloud-manager-introduction.md) - Cloud Manager、Cloud Manager プログラム、環境について説明します。
+* [AEMas a Cloud Serviceのチームおよび製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md) - AEMのas a Cloud Serviceチームおよび製品プロファイルがライセンスを持つAdobeソリューションに対してアクセスを許可および制限する方法について説明します。

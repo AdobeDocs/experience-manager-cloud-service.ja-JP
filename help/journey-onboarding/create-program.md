@@ -3,10 +3,10 @@ title: プログラムの作成
 description: Cloud Manager で最初のプログラムを作成する方法を説明します。
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
+source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 97%
+source-wordcount: '604'
+ht-degree: 95%
 
 ---
 
@@ -38,10 +38,6 @@ Cloud Manager のプログラムは、Cloud Manager の一連の環境を表し�
 * **サンドボックスプログラム**&#x200B;は、通常、トレーニング、デモの実行、イネーブルメント、POC またはドキュメントの目的にかなうように作成されます。
 
 様々な目的があるので、環境の違いによってオプションが異なります。 ただし、環境を作成するプロセスは似ています。 このオンボーディングジャーニーでは、サンドボックス環境を作成します。
-
->[!NOTE]
->
->デフォルトでは、AEM環境へのアクセス権を持つユーザーは、 Cloud /Manager ユーザーの役割も持ちます。 この役割だけでは、ユーザーにプログラムの詳細表示へのアクセス権を与えるには不十分です。 Cloud Manager のユーザーの役割のみを持つユーザーは、プログラムメニューオプションから AEM 環境のオーサー URL（環境が存在する場合）に移動できます。このようなユーザーがプログラムレベルのアクセス権を希望する場合は、管理者に問い合わせる必要があります。
 
 ## サンドボックスプログラムの作成 {#create-sandbox}
 
@@ -75,3 +71,4 @@ Cloud Manager のプログラムは、Cloud Manager の一連の環境を表し�
 * [サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) - Cloud Manager を使用して、トレーニング、デモ、POC などの実稼動以外の用途に使用する独自のサンドボックスプログラムを作成する方法を説明します。
 * [実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) - Cloud Manager を使用して、実トラフィックを取り扱う独自の実稼動プログラムを作成する方法について説明します。
 * [Adobe Cloud Manager の使用 - プログラム](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=ja) - Cloud Manager のプログラムは、論理的な一連のビジネスイニシアチブをサポートする一連の AEM 環境を表し、通常、購入したサービス契約（SLA）に対応しています。
+* [AEMas a Cloud Serviceのチームおよび製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md) - AEMのas a Cloud Serviceチームおよび製品プロファイルがライセンスを持つAdobeソリューションに対してアクセスを許可および制限する方法について説明します。
