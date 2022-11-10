@@ -2,21 +2,14 @@
 title: 統合シェルでの AEM as a Cloud Service
 description: 統合シェルでの AEM as a Cloud Service
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 5d9acdd9b6a377a7509e0638984cb40983fa6652
+source-git-commit: 76b7fb1d354664ec9fa773623ea4dee09164bec8
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 77%
+source-wordcount: '328'
+ht-degree: 82%
 
 ---
 
 # 統合シェルでの AEM as a Cloud Service {#aem-as-a-cloud-service-on-unified-shell}
-
->[!NOTE]
->この機能は 2022 年 7 月のプレリリースチャネルにあります。
->
->これは、2022 年 8 月のリリースで一般に利用可能になる新機能の紹介です。
->
->お使いの環境でこの機能を有効にする方法については、[プレリリースチャネルのドキュメント](/help/release-notes/prerelease.md#enable-prerelease)を参照してください。
 
 ## 概要 {#overview}
 

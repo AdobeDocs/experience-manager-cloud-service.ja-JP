@@ -2,10 +2,10 @@
 title: アダプティブフォームテンプレートの作成方法
 description: テンプレートエディターを使用して、基本構造と初期コンテンツを定義するアダプティブフォームテンプレートを作成します。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1750'
-ht-degree: 100%
+source-wordcount: '1806'
+ht-degree: 96%
 
 ---
 
@@ -150,9 +150,17 @@ Experience Manager には、テンプレートを整理するためのグロー�
 
 フォームは、テンプレートと連携しています。カスタマイズしたテンプレートを使用して作成したアダプティブフォームをダウンロードする場合、テンプレートはダウンロードされません。別の [!DNL AEM Forms] インスタンス上の ftocorm を読み込む場合は、テンプレートなしで読み込まれます。フォームが読み込まれてもテンプレートを使用できない場合、フォームはレンダリングされません。`/conf` にある `https://<server>:<port>/crx/packmgr` ノードからカスタムテンプレートをパッケージ化し、フォームをアップロードする [!DNL AEM Forms] インスタンスに移植できます。また、[AEM アーキタイプを使用してテンプレートを作成し、Cloud Services インスタンスにデプロイ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=ja#prerequisites)することもできます。
 
+>[!NOTE]
+>
+> * 次の項目を [!UICONTROL フォームデータモデルスキーマ] をテンプレートエディターのアダプティブフォームテンプレートに追加します。 詳しくは、 [アダプティブフォームの作成](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) を参照してください。
+> * また、 [!UICONTROL レコードのドキュメント] テンプレートを、アダプティブフォームエディターまたはアダプティブフォームテンプレートエディターから直接作成します。 詳しくは、 [アダプティブFormsのレコードのドキュメントを生成](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
+
+
 ## テンプレートを使用したアダプティブフォームの作成 {#creating-an-adaptive-form-using-the-template}
 
 テンプレートを作成して有効にすると、アダプティブフォームを作成する際に Forms Manager でそのテンプレートを使用できます。テンプレートを使用したアダプティブフォームの作成方法について詳しくは、「[アダプティブフォームの作成](creating-adaptive-form.md)」を参照してください。
+
 
 <!--
 ## Change display option of out of the box templates  {#change-display-option-of-out-of-the-box-templates}

@@ -9,10 +9,10 @@ topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '2317'
-ht-degree: 100%
+source-wordcount: '2409'
+ht-degree: 98%
 
 ---
 
@@ -23,8 +23,8 @@ ht-degree: 100%
 
 アダプティブフォームを使用すると、魅力的でレスポンシブ、かつ動的でアダプティブなフォームを作成できます。[!DNL AEM Forms] には、アダプティブフォームを作成して操作するための直感的なユーザーインターフェイスと、すぐに使用できる各種のコンポーネントが用意されています。フォームモデルやスキーマをベースとしてアダプティブフォームを作成することも、フォームモデルを使用せずにアダプティブフォームを作成することもできます。フォームモデルを選択する場合、そのモデルが業務上の要件を満たしているかどうかだけでなく、インフラに対する現在の投資や既存のアセットを拡張できるかどうかについても慎重に検討することが重要です。アダプティブフォームは、以下のいずれかの方法で作成できます。
 
-<!-- * **Using a form data model**
-  [Data integration](data-integration.md) lets you integrate entities and services from disparate data sources in to a Form Data Model that you can use to create Adaptive Forms. Choose Form Data Model if the Adaptive Form you are creating involves fetching and write data from and to multiple data source. -->
+* **フォームデータモデルを使用**
+   [データ統合](data-integration.md) を使用すると、異なるデータソースのエンティティとサービスをフォームデータモデルに統合して、アダプティブフォームの作成に使用できます。作成するアダプティブフォームで、複数のデータソースに対するデータの取得と書き込みが必要になる場合は、フォームデータモデルを選択します。
 
 * **XDP フォームテンプレートの使用**
 XFA ベースまたは XDP フォームに投資している場合、これは理想的なフォームモデルです。XFA ベースのフォームをアダプティブフォームに直接変換する方法を提供します。すべての既存の XFA ルールは、関連付けられたアダプティブフォームに保持されます。結果のアダプティブフォームは、検証、イベント、プロパティ、パターンなどの XFA 構成をサポートします。
@@ -35,7 +35,11 @@ XML スキーマおよび JSON スキーマは、組織内のバックエンド�
 * **フォームモデルを使用せずに作成**
 このオプションで作成されたアダプティブフォームは、フォームモデルを使用しません。このようなフォームで生成されるデータ XML は、フィールドと対応する値を持つフラットな構造です。
 
-<!--  For more information about creating an Adaptive Form, see [Creating an Adaptive Form](creating-adaptive-form.md). -->
+   >[!NOTE]
+   >
+   > フォームモデルのプロパティは、アダプティブフォームエディターまたはアダプティブフォームテンプレートエディターで変更できます。 詳しくは、 [アダプティブフォームのフォームモデルプロパティの編集](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+
+アダプティブフォームを作成するには、 [アダプティブフォームの作成](creating-adaptive-form.md).
 
 ## アダプティブフォームオーサリング UI {#adaptive-form-authoring-ui}
 

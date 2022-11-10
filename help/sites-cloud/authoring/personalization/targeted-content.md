@@ -2,10 +2,10 @@
 title: ターゲットモードを使用したターゲットコンテンツのオーサリング
 description: ターゲットモードとターゲットコンポーネントには、エクスペリエンス用のコンテンツを作成するためのツールが用意されています。
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f619cc2b1fcc697ebe7af7370b6839fe5ce40419
 workflow-type: tm+mt
-source-wordcount: '5342'
-ht-degree: 100%
+source-wordcount: '5414'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,25 @@ AEM のターゲットモードを使用してターゲットコンテンツを�
 * 訪問者のエクスペリエンスをシミュレート
 * ターゲットコンポーネントの設定をカスタマイズ
 
-AEM または Adobe Target をターゲティングエンジンとして使用できます（Adobe Target を使用するには有効な Adobe Target アカウントが必要です）。Adobe Target を使用する場合は、まず統合を設定する必要があります。Adobe Target との統合手順を参照してください。<!--See the[instructions for integrating with Adobe Target](/help/sites-administering/target.md).-->
+>[!NOTE]
+>
+>ターゲットモードは、ページエディターとエクスペリエンスフラグメントエディターの両方で使用できます。
+>
+>次のドキュメントは両方（両方とも同じ基準で動作するので）に適用できますが、両方（ページエディター用に記述されているので）。
+
+>[!CAUTION]
+>
+>ページエディターでのターゲティングでは、エクスペリエンスフラグメントコンポーネントのみターゲット設定できます。
+>
+>他のコンポーネントタイプは、 **エクスペリエンスフラグメントバリエーションに変換** アイコンをクリックします。
+
+<!--
+>Other component types can be converted to an Experience Fragment using the **Convert to experience fragment variation** icon on the component toolbar:
+>
+>![Converting component to Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
+-->
+
+AEM または Adobe Target をターゲティングエンジンとして使用できます（Adobe Target を使用するには有効な Adobe Target アカウントが必要です）。Adobe Target を使用する場合は、まず統合を設定する必要があります。詳しくは、 [Adobe Targetとの統合手順](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 ![ターゲットコンテンツ](../assets/targeted-content.png)
 

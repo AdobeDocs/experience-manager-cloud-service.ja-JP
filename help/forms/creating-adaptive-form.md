@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: bcd9f3cfe6c22a6db51a9e6f96576bb8cdde7d0c
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1217'
-ht-degree: 30%
+source-wordcount: '1359'
+ht-degree: 27%
 
 ---
 
@@ -23,7 +23,7 @@ You can choose to create an Adaptive Form based on a form model or schema or wit
 
 -->
 
-![アダプティブフォームを作成するためのウィザード](/help/release-notes/assets/wizard.png)
+![アダプティブフォームの作成ウィザード](/help/release-notes/assets/wizard.png)
 
 <!-- 
 
@@ -64,6 +64,11 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 1. 「ソース」タブで、テンプレートを選択します。
 
    * 編集可能テンプレートを選択すると、テンプレートで指定されたテーマと送信アクションが自動選択され、 **[!UICONTROL 作成]** 」ボタンが有効になっている。 次に進むことができます： **[!UICONTROL スタイル]** または **[!UICONTROL 送信]** タブを使用して、別のテーマや送信アクションを選択します。 選択した編集可能テンプレートでテーマが指定されていない場合、作成ボタンは無効のままです。 次に進むことができます： **[!UICONTROL スタイル]** タブをクリックして、テーマを手動で選択します。
+
+      >[!NOTE]
+      >
+      > また、 [!UICONTROL レコードのドキュメント] アダプティブフォームエディターを使用したテンプレート 詳しくは、 [アダプティブフォームエディターでのレコードのドキュメントのサポート](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
    * 静的テンプレートを選択すると、データ、スタイル、送信、配信、プレビューの各オプションは使用できなくなります。 新しいアダプティブフォームを作成する場合は、編集可能なテンプレートを使用することをお勧めします。
 
 1. 「スタイル」タブで、テーマを選択します。
@@ -159,3 +164,15 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
    * アダプティブフォームがフォームモデルに基づいている場合、同じフォームモデルに対して別の <!-- form template, --> XML スキーマ、JSON スキーマまたはフォームデータモデルを選択できます。
 
 1. 「**[!UICONTROL 保存]**」をタップして、プロパティを保存します。
+
+フォームモデルのプロパティは、アダプティブフォームエディターまたはアダプティブフォームテンプレートエディターで変更することもできます。
+
+1. を選択します。 **[!UICONTROL アダプティブフォームコンテナ（ルート）]** コンポーネント。
+1. クリック ![設定アイコン](/help/forms/assets/configure-icon.svg) アイコンをクリックして開きます。 **[!UICONTROL プロパティ]** 」と入力します。
+1. を選択します。 **[!UICONTROL データモデル]** 」タブに移動し、次のいずれかの操作を行います。
+
+   * アダプティブフォームにフォームモデルがない場合は、フォームモデルを選択し、それに応じて「 」を選択できます <!-- a form template, --> XML スキーマ、JSON スキーマ、またはフォームデータモデル。
+   * アダプティブフォームがフォームモデルに基づいている場合、フォームモデルを変更することはできません。 別のものを選択できます <!-- form template, --> 同じフォームモデルに対して、XML スキーマ、JSON スキーマ、またはフォームデータモデルを適用できます。
+1. 「![保存](/help/forms/assets/check-button.png)」をタップして、プロパティを保存します。
+
+![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)
