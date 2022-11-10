@@ -2,10 +2,10 @@
 title: Target へのコンテンツの取り込み
 description: Target へのコンテンツの取り込み
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
+source-git-commit: e8b4fe047c9656aa592fc851279dc6a189144023
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 100%
+source-wordcount: '916'
+ht-degree: 96%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 100%
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. その後、取り込みジョブリストビューで取り込み段階を監視できます。
+1. その後、取り込みジョブリストビューで取り込み段階を監視できます。 また、インジェストのアクションメニューを使用して、インジェストの進行に応じてログを表示できます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
@@ -124,4 +124,4 @@ ht-degree: 100%
 
 ## 次の手順 {#whats-next}
 
-コンテンツ転送ツールで Target にコンテンツを取り込む方法を理解したら、各ステップ（抽出と取り込み）の完了時にログを表示し、エラーを探すことができます。詳しくは、[移行セットのログの表示](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ja)を参照してください。
+コンテンツの Target への取り込みが完了したら、各手順のログ（抽出および取り込み）を表示し、エラーを探すことができます。 詳しくは、[移行セットのログの表示](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ja)を参照してください。
