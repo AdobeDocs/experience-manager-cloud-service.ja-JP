@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service チームおよび製品プロファイル
 description: AEM as a Cloud Service チームおよび製品プロファイルでライセンス取得済みアドビソリューションへのアクセスを許可および制限する方法について説明します。
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: d54c25791cbb06232ff6e24bb7b8005b366a2144
+source-git-commit: d4786b5d527092027e8e825d0a2475a8be6a710a
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 94%
+source-wordcount: '687'
+ht-degree: 89%
 
 ---
 
@@ -35,7 +35,9 @@ AEM as a Cloud Service チームメンバーは、オンボーディング時に
 
 >[!TIP]
 >
->オンボーディングプロセスについて詳しくは、[オンボーディングジャーニー](/help/journey-onboarding/overview.md)を参照してください。
+>* AEM製品プロファイルの詳細については、ドキュメントを参照してください [AEM製品プロファイルの割り当て](/help/journey-onboarding/assign-profiles-aem.md)
+>* オンボーディングプロセスについて詳しくは、[オンボーディングジャーニー](/help/journey-onboarding/overview.md)を参照してください。
+
 
 ## Cloud Manager 製品プロファイル {#cloud-manager-product-profiles}
 
@@ -63,3 +65,9 @@ Cloud Manager チームには、少なくとも次の役割が含まれていま
 >[!NOTE]
 >
 >ユーザーに AEM as a Cloud Service へのアクセスを許可するには、ユーザーが「`AEM Users`」または「`AEM Administrators`」のどちらかの製品プロファイルに属している必要があります。Cloud Manager を管理する権限では不十分です。
+
+>[!TIP]
+>
+>* Cloud Manager 製品プロファイルの詳細については、このドキュメントを参照してください [Cloud Manager 製品プロファイルへのチームメンバーの割り当て。](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+>* オンボーディングプロセスについて詳しくは、[オンボーディングジャーニー](/help/journey-onboarding/overview.md)を参照してください。
+
