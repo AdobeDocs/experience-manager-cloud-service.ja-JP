@@ -2,9 +2,9 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 8bcfcae211b2203915e7facc361188a0f5739547
+source-git-commit: 31198a1279e07d0a1afe41100d3cfe59d02fd686
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '830'
 ht-degree: 52%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 52%
          `200` は、応答コードが誤ったイベントサブスクリプションを正常に削除したことを示しているので、
    >[!NOTE]
    >
-   >この手順を実行する前に、誤ったイベント購読を既に削除している場合は、手順 4 をスキップできます。
+   >この手順を実行する前に誤ったイベント購読を削除した場合は、この手順の最後の手順をスキップできます。
 
 
 >[!IMPORTANT]
