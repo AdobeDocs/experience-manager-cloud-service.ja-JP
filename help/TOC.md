@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service の概要に
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
+source-git-commit: dce60b09a93ddf09b6b9285b832de91f6233bdae
 workflow-type: tm+mt
-source-wordcount: '3764'
+source-wordcount: '3770'
 ht-degree: 98%
 
 ---
@@ -489,6 +489,8 @@ ht-degree: 98%
    + [主な機能](/help/forms/key-features.md)
    + [主要な変更点](/help/forms/notable-changes.md)
    + [アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
+   + AEM Forms リファレンス関連項目 {#formsreference-themes}
+      + [リファレンステーマ](/help/forms/reference-themes.md)
    + サービスのセットアップと設定 {#setup-environment}
       + [Cloud Service 環境へのオンボード](/help/forms/setup-forms-cloud-service.md)
       + [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
