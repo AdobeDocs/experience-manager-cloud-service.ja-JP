@@ -5,10 +5,10 @@ landing-page-description: ヘッドレスの使用例でコンテンツフラグ
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 61%
+source-wordcount: '901'
+ht-degree: 60%
 
 ---
 
@@ -33,6 +33,10 @@ ht-degree: 61%
 >[!NOTE]
 >
 >次の項目を選択： [このコンソールでは、キーボードショートカットを使用できます](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+
+>[!NOTE]
+>
+>必要に応じて、プロジェクトチームがコンソールをカスタマイズできます。 詳しくは、 [コンテンツフラグメントコンソールのカスタマイズ](/help/implementing/developing/extending/content-fragment-console-customizing.md) 詳しくは、を参照してください。
 
 コンテンツフラグメントコンソールは、グローバルナビゲーションの最上位レベルから直接アクセスできます。
 

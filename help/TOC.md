@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service の概要に
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 50b2859dc2a8a83a007bfef30d5c0959e92aa212
+source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
 workflow-type: tm+mt
-source-wordcount: '3759'
+source-wordcount: '3764'
 ht-degree: 98%
 
 ---
@@ -872,6 +872,7 @@ ht-degree: 98%
       + [エクスペリエンスフラグメントの拡張](/help/implementing/developing/extending/experience-fragments.md)
       + [コンテンツフラグメントのカスタマイズと拡張](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [レンダリングコンポーネントのコンテンツフラグメントの設定](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
+      + [コンテンツフラグメントコンソールのカスタマイズ](/help/implementing/developing/extending/content-fragment-console-customizing.md)
       + 検索フォームの管理 {#manage-search-forms}
          + [検索フォームの設定](/help/implementing/developing/extending/search-forms.md)
          + [インボックス用の検索フィルターの設定](/help/implementing/developing/extending/configure-inbox-search-rail.md)
