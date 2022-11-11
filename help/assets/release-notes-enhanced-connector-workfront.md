@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 1509afad94208e62d5222f4c95c98d90f95be30e
+source-git-commit: 8bcfcae211b2203915e7facc361188a0f5739547
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 69%
+source-wordcount: '825'
+ht-degree: 52%
 
 ---
 
@@ -15,19 +15,54 @@ ht-degree: 69%
 
 ## リリース日 {#release-date}
 
-の最新バージョン 1.9.4 のリリース日 [!DNL Workfront for Experience Manager enhanced connector] は 2022 年 10 月 7 日です。
+の最新バージョン 1.9.5 のリリース日 [!DNL Workfront for Experience Manager enhanced connector] は 2022 年 11 月 11 日です。
 
 ## リリースのハイライト {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] の最新バージョンには、次の機能強化とバグ修正が含まれています。
 
-* 多数のイベントがあるので、拡張コネクタ設定ページの「イベント購読」タブを表示できません。
+* Workfrontで複数値のフィールドに値を 1 つだけ定義した場合、そのフィールド値はExperience Managerに適切にマッピングされません。
 
-* Workfrontは、プロジェクト内の既存のフォルダーのリストを取得できないので、フォルダーが重複して作成されます。
+* Experience Managerに `SERVER_ERROR` の **[!UICONTROL 外部ファイルとフォルダのリンク]** の無効な権限が原因で、アセットフォルダーにアクセス中に画面が表示されました `/content/dam/collections`.
+
+* の有効化 **[!UICONTROL Brand Portalへのアセットの公開]** 「 Workfront拡張コネクタ設定」ページの「 」オプションを選択すると、間違ったイベントが作成されていました。 このオプションを無効にした後も、イベントは削除されません。
+
+   この問題を解決するには、以下の手順を実行する必要があります。
+
+   1. 拡張コネクタのバージョン 1.9.5 にアップグレードします。
+
+   1. を無効にします。 **[!UICONTROL Brand Portalへのアセットの公開]** オプションが追加されました。
+
+   1. を有効にします。 **[!UICONTROL Brand Portalへのアセットの公開]** オプション。
+
+   1. 間違ったイベント購読を削除します。
+
+      1. に対するGET呼び出しの実行 `/attask/eventsubscription/api/v1/subscriptions?page=<page-number>`
+
+         ページ番号ごとに 1 回の API 呼び出しを実行します。
+
+      1. 次のテキストを検索して、次の URL に一致し、 `objId`:
+
+         ```
+              "objId": "",
+             "url": "<your-aem-domain>/bin/workfront-tools/events/linkedfolderprojectupdate<your-aem-domain>/
+         ```
+
+         次の間のコンテンツを必ず `"objId": "",` および `"url"` は JSON 応答に一致します。 これをおこなうための推奨される方法は、 `objId` 数字を削除します。
+
+      1. イベント購読 ID をメモしておきます。
+
+      1. 間違ったイベントサブスクリプションを削除します。 への削除 API 呼び出しを実行する `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
+
+         `200` は、応答コードが誤ったイベントサブスクリプションを正常に削除したことを示しているので、
+   >[!NOTE]
+   >
+   >この手順を実行する前に、誤ったイベント購読を既に削除している場合は、手順 4 をスキップできます。
+
 
 >[!IMPORTANT]
 >
->アドビは [ の](../assets/update-workfront-enhanced-connector.md)最新バージョン 1.9.4 へのアップグレード[!DNL Workfront for Experience Manager enhanced connector]を推奨します。
+>アドビは [ の](../assets/update-workfront-enhanced-connector.md)最新バージョン 1.9.5 へのアップグレード[!DNL Workfront for Experience Manager enhanced connector]を推奨します。
 
 ## 既知の問題 {#known-issues}
 
@@ -35,9 +70,15 @@ ht-degree: 69%
 
 * 従来の Workfront エクスペリエンスを使用している場合、「**[!UICONTROL 詳細]**」ドロップダウンリストで選択できる「**[!UICONTROL 送信先]**」オプションでは、Experience Manager 内のターゲット宛先を選択できません。「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストを使用する場合、「**[!UICONTROL 送信先]**」オプションは正常に機能します。新しい Workfront エクスペリエンスの「**[!UICONTROL 詳細]**」ドロップダウンリストと「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストでは、「**[!UICONTROL 送信先]**」オプションは正常に機能します。
 
-* Workfrontに `SERVER_ERROR` リリース 8316 にアップグレードした後、ドキュメントをAEMにリンクする際のメッセージ 問題を解決するには、 `rep:readProperties` から `content/dam/collections` 対象 `wf-workfront-user` AEM User Group。
-
 ## 以前のリリース {#previous-releases}
+
+### 2022 年 10 月リリース {#october-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 2007 年 10 月 7 日にリリースされたバージョン 1.9.4 には、次の更新が含まれています。
+
+* 多数のイベントがあるので、拡張コネクタ設定ページの「イベント購読」タブを表示できません。
+
+* Workfrontは、プロジェクト内の既存のフォルダーのリストを取得できないので、フォルダーが重複して作成されます。
 
 ### 2022 年 9 月リリース {#september-2022-release}
 
