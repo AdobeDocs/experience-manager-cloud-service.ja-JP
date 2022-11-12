@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service の概要に
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: dce60b09a93ddf09b6b9285b832de91f6233bdae
+source-git-commit: 5d4da55a8485f9b1793dc0b997be40244188b052
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3766'
 ht-degree: 98%
 
 ---
@@ -489,8 +489,6 @@ ht-degree: 98%
    + [主な機能](/help/forms/key-features.md)
    + [主要な変更点](/help/forms/notable-changes.md)
    + [アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
-   + AEM Forms リファレンス関連項目 {#formsreference-themes}
-      + [リファレンステーマ](/help/forms/reference-themes.md)
    + サービスのセットアップと設定 {#setup-environment}
       + [Cloud Service 環境へのオンボード](/help/forms/setup-forms-cloud-service.md)
       + [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
@@ -509,6 +507,7 @@ ht-degree: 98%
          + [テンプレートの作成](/help/forms/template-editor.md)
          + [テーマの作成](/help/forms/themes.md)
          + [データソースの Cloud Service への接続](/help/forms/data-integration.md)
+         + [参照アセット](/help/forms/reference-assets.md)
       + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
          + [アダプティブフォームの作成](/help/forms/creating-adaptive-form.md)
          + [アダプティブフォームの JSON スキーマのデザイン](/help/forms/adaptive-form-json-schema-form-model.md)
