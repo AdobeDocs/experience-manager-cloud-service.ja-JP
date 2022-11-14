@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ac209259b8e8ac7c1734c0662dd640809b4e2932
+source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 16%
+source-wordcount: '1107'
+ht-degree: 13%
 
 ---
 
@@ -75,6 +75,18 @@ ht-degree: 16%
 * Experience Manager Assets now [は、SAS トークンをサポートします](/help/assets/add-assets.md#asset-bulk-ingestor) さらに、一括読み込みツールを使用してアセットを取り込むための Azure Blob ストレージデータソースに接続する際の認証用アクセスキーに加えて、
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### で使用できる新機能 [!DNL Forms] チャネル {#new-features-available-in-channel}
+
+* [アダプティブFormsウィザード](/help/forms/creating-adaptive-form.md):AEM Formsは、アダプティブFormsをすばやくオーサリングするための、ビジネスユーザーにとってわかりやすいウィザードを提供します。 このウィザードでは、事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択して、アダプティブフォームを作成するためのクイックタブナビゲーションが用意されています。 このリリースでは、ウィザードが次のように改善されました。
+
+   * フィールドを選択または選択解除します。ウィザードでは、JSON およびフォームデータモデルスキーマに基づくアダプティブフォームを作成できます。 スキーマ内のフィールドのサブセットを選択して、アダプティブフォームに含めることができるようになりました。 選択したフィールドは、対応するアダプティブフォームのデータキャプチャコンポーネントに変換され、目的のアダプティブフォームをすばやく作成できます。
+
+   * 静的テンプレートを使用：既存のレガシー静的テンプレートへの投資をお持ちのお客様は、ウィザードで静的テンプレートを使用してアダプティブフォームを作成することで、クラウドの採用プロセスを継続的に進めることができます。 これにより、古い静的テンプレートを最新の編集可能なテンプレートに移行する時間が増えます。
+
+* [サーバーサイドの処理中にレコードのドキュメント (DoR) から非表示のフィールドを削除する](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md):データ取得エクスペリエンスで表示されたフィールドのみを含むエンドユーザーのレコードのドキュメントPDFを生成できます。 フォームの送信時に、サーバーは送信されたデータに基づいてエンドユーザーに対して非表示にされたフィールドを検証し、レコードのドキュメントから一貫性を保つために除外します。
+
+
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms}
 

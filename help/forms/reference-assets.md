@@ -4,9 +4,9 @@ seo-title: Reference Themes
 description: AEM Forms には、ソフトウェア配布から取得してフォームのスタイル設定に使用できるアダプティブフォームテーマが用意されています。
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
-source-git-commit: 5d4da55a8485f9b1793dc0b997be40244188b052
+source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '513'
 ht-degree: 56%
 
 ---
@@ -14,8 +14,7 @@ ht-degree: 56%
 
 # Formsas a Cloud Serviceの参照アセット {#reference-themes}
 
-参照テーマ、テンプレート、およびフォームデータモデルは、 [参照アセットパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). これにより、アダプティブFormsの開発をすばやく開始し、迅速に進めることができます。 以下を使用できます。 [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=ja) このパッケージをAEM Formsas a Cloud Service環境にデプロイする場合。
-
+参照テーマ、テンプレート、およびフォームデータモデルは、 [参照アセットパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). これにより、アダプティブFormsの開発をすばやく開始し、迅速に進めることができます。 以下を使用できます。 [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=ja) このパッケージをFormsas a Cloud Service環境にデプロイする場合。
 パッケージに含まれる参照アセットは次のとおりです。
 
 ## テーマ {#themes}
