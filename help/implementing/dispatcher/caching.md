@@ -3,9 +3,9 @@ title: AEM as a Cloud Service でのキャッシュ
 description: AEM as a Cloud Service でのキャッシュ
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: e354443e4f21cd1bc61593b95f718fbb1126ea5a
+source-git-commit: 18f8a0737dbcce643a5949fb5f942e73f066fa59
 workflow-type: tm+mt
-source-wordcount: '2663'
+source-wordcount: '2666'
 ht-degree: 69%
 
 ---
@@ -199,9 +199,9 @@ AdobeCDN で、以下のHEADに関するリソースリクエストを受信し�
 
 ### マーケティングキャンペーンパラメーター {#marketing-parameters}
 
-Web サイトの URL には、キャンペーンの成功を追跡するために使用されるマーケティングキャンペーンパラメーターが含まれることがよくあります。 Dispatcher のキャッシュを効果的に使用するには、Dispatcher 設定の `ignoreUrlParams` プロパティとして [文書化](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#ignoring-url-parameters).
+Web サイトの URL には、キャンペーンの成功を追跡するために使用されるマーケティングキャンペーンパラメーターが含まれることがよくあります。 Dispatcher のキャッシュを効果的に使用するには、Dispatcher 設定の `ignoreUrlParams` プロパティとして [ここに記載されています](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#ignoring-url-parameters).
 
-この `ignoreUrlParams` セクションはコメントを解除し、ファイルを参照する必要があります `conf.dispatcher.d/cache/marketing_query_parameters.any`：マーケティングチャネルに関連するパラメーターに対応する行のコメントを解除することで変更できます。 他のパラメーターも追加できます。
+この `ignoreUrlParams` セクションはコメントを解除し、ファイルを参照する必要があります `conf.dispatcher.d/cache/marketing_query_parameters.any`. このファイルを変更するには、マーケティングチャネルに関連するパラメーターに対応する行のコメントを解除します。 他のパラメーターも追加できます。
 
 ```
 /ignoreUrlParams {
@@ -477,5 +477,5 @@ HTML ページにインクルードされるデフォルトの clientlib は、�
 1. Adobe Granite HTML Library Manager の OSGi Config を探します。
    * 「厳密なバージョン管理」チェックボックスをオンにして有効にします。
    * 「長期クライアントサイドキャッシュキー」というラベルの付いたフィールドに、値「/.*;hash」を入力します。
-1. 変更内容を保存します。AEM as a Cloud Serviceは、開発、ステージ、実稼動環境でこの設定を自動的に有効にするので、この設定をソース管理に保存する必要はありません。
+1. 変更内容を保存します。AEM as a Cloud Serviceは開発、ステージ、実稼動環境でこの設定を自動的に有効にするので、この設定をソース管理に保存する必要はありません。
 1. クライアントライブラリのコンテンツが変更されるたびに、新しいハッシュキーが生成され、HTML 参照が更新されます。
