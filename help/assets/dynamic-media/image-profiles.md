@@ -4,9 +4,9 @@ description: アンシャープマスクの設定、スマート切り抜きと�
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 7ab618893ab18dde6dbbceaf098fe7334b503d07
+source-git-commit: ce14d830db2f3e163102d748f5fbaa2de4da17b5
 workflow-type: tm+mt
-source-wordcount: '3351'
+source-wordcount: '3344'
 ht-degree: 97%
 
 ---
@@ -84,14 +84,13 @@ ht-degree: 97%
 
 サポートされる入力ファイルの最大サイズ解像度は 16K です。
 
-スマート切り抜きでは、CMYK 画像形式はサポートされていません。
-
 >[!NOTE]
 16K の解像度は、約 16,000 ピクセルの水平方向のディスプレイ解像度です。 16K の解像度について最も一般的に説明するのは15360 × 8640 で、各寸法で 8K の UHD のピクセル数を合計 4 倍にします。 この解像度は 132.7 メガピクセル、16 倍のピクセルと 4K の解像度、64 倍のピクセルと 1080p の解像度を持ちます。
 
 | 画像の形式 | 大文字と小文字を区別しないファイル拡張子 | MIME タイプ | サポートされる入力カラースペース | サポートされる入力ファイルの最大サイズ | サポートされる画像の形式？ |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | はい |
+| CMYK |  |  |  |  | いいえ |
 | EPS |  |  |  |  | いいえ |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | 対応。レンディションには、アニメーション GIF の最初のフレームが使用されます。最初のフレームは設定または変更できません。 |
 | JPEG | `.jpg` および `.jpeg` | image/jpeg | sRGB | 15 GB | はい |
