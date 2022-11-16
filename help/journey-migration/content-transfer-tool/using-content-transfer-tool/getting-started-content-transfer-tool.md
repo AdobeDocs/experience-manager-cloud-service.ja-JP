@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの基本を学ぶ
 description: コンテンツ転送ツールの基本を学ぶ
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
+source-git-commit: 1dfef0f1157ead7f1240e9a41794436197136daa
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 98%
+source-wordcount: '1327'
+ht-degree: 95%
 
 ---
 
@@ -36,6 +36,9 @@ ht-degree: 98%
 
 * Azure BLOB ストレージサービス：`casstorageprod.blob.core.windows.net`
 * ユーザーマッピング IO エンドポイント：`usermanagement.adobe.io`
+
+>[!NOTE]
+>次のエラーが原因で抽出が失敗した場合：&quot;javax.net.ssl.SSLHandshakeException:sun.security.validator.ValidatorException:PKIX パスの構築に失敗しました：sun.security.provider.certpath.SunCertPathBuilderException:リクエストされたターゲットへの有効な証明書パスが見つかりません」。このパスは、関連する CA 証明書をインポートすることで解決できます。
 
 ### SSL ログを有効にする {#enable-ssl-logging}
 
