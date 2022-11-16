@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 6446f5e334c3802505d6a41035b6d2ab3ad2b72c
+source-git-commit: 272225bbeea4443bf97349d11805dbb3386fd2cc
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1092'
 ht-degree: 13%
 
 ---
@@ -25,14 +25,13 @@ ht-degree: 13%
 
 >[!CAUTION]
 >
->**ブラックフライデーおよびクリスマスメンテナンスの除外期間**
+>**計画されたメンテナンスの除外期間**
 >
 > AEMaaCS の自動メンテナンスは、次の期間 ( 午前 0 時(00:00) CET から開始し、終了 ) には実行されません。
 >
 >* 11 月 21 日（月）～12 月 5 日（月）
 >* 12 月 19 日（月）～1 月 3 日（火）
->
-> この期間は、ブラックフライデー、サイバーマンデー、クリスマス、お正月を対象としています。
+
 
 ## リリース日 {#release-date}
 
