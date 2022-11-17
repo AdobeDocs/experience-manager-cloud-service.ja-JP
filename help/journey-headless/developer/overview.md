@@ -5,8 +5,8 @@ landing-page-description: ヘッドレスコンテンツの配信と実装につ
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 source-git-commit: 64862456bfbffe1799a3f0b6ea3353f45e60c52f
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 69%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
