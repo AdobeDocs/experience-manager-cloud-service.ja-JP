@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service の概要に
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5d4da55a8485f9b1793dc0b997be40244188b052
+source-git-commit: 6d5ca58e8545da89dc424304586bc8a1afc07540
 workflow-type: tm+mt
-source-wordcount: '3766'
+source-wordcount: '3786'
 ht-degree: 98%
 
 ---
@@ -645,6 +645,7 @@ ht-degree: 98%
 + ヘッドレス {#headless}
    + [ヘッドレス CMS とは](/help/headless/what-is-headless.md)
    + [AEM ヘッドレスの概要](/help/headless/introduction.md)
+   + [開発者ポータル（その他のリソース）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
    + セットアップ {#setup}
       + [はじめに](/help/headless/setup/introduction.md)
       + [設定](/help/headless/setup/create-configuration.md)
@@ -692,6 +693,7 @@ ht-degree: 98%
          + [アプリとコンテンツをすべて AEM ヘッドレスにまとめる方法](/help/journey-headless/developer/put-it-all-together.md)
          + [ヘッドレスアプリケーションの運用開始方法](/help/journey-headless/developer/go-live.md)
          + [オプション - AEM で単一ページアプリケーション（SPA）を作成する方法](/help/journey-headless/developer/create-spa.md)
+         + [開発者ポータル（その他のリソース）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
       + ヘッドレスコンテンツアーキテクトジャーニー {#architect}
          + [AEM ヘッドレスコンテンツアーキテクトジャーニーの概要](/help/journey-headless/architect/overview.md)
          + [AEM でのヘッドレス向けコンテンツモデリング - 概要](/help/journey-headless/architect/introduction.md)
