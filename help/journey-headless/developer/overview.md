@@ -3,9 +3,9 @@ title: AEMヘッドレス CMS 開発者ジャーニー
 description: Adobe Experience Manager(AEM) をヘッドレス CMS として使用したヘッドレス開発について説明します。 コンテンツモデル、コンテンツフラグメント、GraphQL API などの機能を使用してヘッドレスなコンテンツ配信を強化する方法について説明します。
 landing-page-description: ヘッドレスコンテンツの配信と実装について理解します。企業内での戦略の策定について詳しく説明します。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 06aec2fa43db2393416dd5efab886d9c301ffdb2
+source-git-commit: 64862456bfbffe1799a3f0b6ea3353f45e60c52f
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1051'
 ht-degree: 69%
 
 ---
@@ -61,6 +61,8 @@ AEM のヘッドレス実装では、コンテンツフラグメントモデル�
 | 7 | [すべてをまとめる方法 - アプリとコンテンツを AEM ヘッドレスに配置する方法](put-it-all-together.md) | AEM ヘッドレス SDK を使用して AEM プロジェクトを運用する準備をする方法について説明します。 |
 | 8 | [ヘッドレスアプリケーションを運用する方法](go-live.md) | アプリケーションをライブデプロイし、ローカルコードを Git に取り込んで、Cloud Manager Git に移動して CI/CD パイプラインに使用する方法を説明します。 |
 | 9 | [オプション - AEM を使用して単一ページアプリケーション（SPA）を作成する方法](create-spa.md) | ヘッドフル配信とヘッドレス配信を組み合わせる方法と、AEM SPA Editor フレームワークを使用して編集可能なSPAを作成する方法を説明します。 |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## 次のステップ {#what-is-next}
 
