@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Service のメンテナンスタスク
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 4e820caa043eeba22d14894d6943c957ea0bf80a
+source-git-commit: 174e9b2410745ec766dbcd071a3508a509b8367a
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 81%
+source-wordcount: '1023'
+ht-degree: 78%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 81%
     <td>顧客</td>
     <td>
     <p>Git で行う必要があります。<code>/libs</code> フォルダーまたは <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> フォルダーにプロパティを作成することで、<code>granite_daily</code> 内にある標準のメンテナンスウィンドウ設定ノードを上書きします。</p>
-    <p>詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。上記のノードの下に別のノードを追加し（<code>granite_TaskPurgeTask</code> という名前を付けて）、適切なプロパティを追加して、メンテナンスタスクを有効にします。OSGi プロパティを設定します。</p>
+    <p>詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。上記のノードの下に別のノードを追加して、メンテナンスタスクを有効にします。 名前を付ける <code>granite_TaskPurgeTask</code>、属性 <code>sling:resourceType</code> に設定 <code>granite/operations/components/maintenance/task</code> および属性 <code>granite.maintenance.name</code> に設定 <code>TaskPurge</code>. OSGi プロパティの設定 ( <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> プロパティのリスト。</p>
   </td>
   </tr>
     <tr>
