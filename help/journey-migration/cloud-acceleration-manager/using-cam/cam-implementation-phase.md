@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager での実装フェーズ
 description: このページでは、Cloud Acceleration Manager における実装フェーズの概要について説明します。
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 24331b974ded34ef949cc3d6fb157b124c145dee
+source-git-commit: dbf01e5bd9ee83e378b4297d2f3d341d548f9238
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '683'
 ht-degree: 100%
 
 ---
@@ -110,18 +110,18 @@ AEM as a Cloud Service デプロイメントカードには、コードを AEM a
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
-### コンテンツ転送時間の推定 {#calculating}
+<!--### Estimating Content Transfer Time {#calculating}
 
-コンテンツ転送アクティビティの完了に要する時間を推定するためのコンテンツ転送計算ツールが提供されました。コンテンツリポジトリーのサイズスライダーを使用して、プロジェクトに当てはまるサイズを選択できます。転送時間は、抽出段階と取り込み段階で異なります。
+A Content Transfer Tool calculator has been provided to estimate how long it could take to complete the content transfer activity. You can use the content repository size slider to select the size that applies to your project. The transfer times vary for the extraction and ingestion phases. 
 
-![画像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
 
->[!NOTE]
->この時間は推定値に過ぎません。ネットワーク速度やインスタンスの規模拡大に要する時間などの要因は、これらの推定では考慮されていません。
+   >[!NOTE]
+   >These times are estimates only. Factor such as network speeds and time to scale up instances have not been accounted for in these estimates.
 
-AEM リポジトリーのサイズを推定するには、`http://HOST:PORT/etc/reports/diskusage.html` のディスク使用状況レポートを実行します。
+To estimate the size of the AEM Repository, you can run the Disk Usage report under `http://HOST:PORT/etc/reports/diskusage.html`. 
 
-`path` パラメーターを使用して（例：`http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`）、特定のリポジトリーパスのサイズを推定することもできます。
+You can also estimate the size of specific repository paths by using the `path` parameter, for example, `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`. -->
 
 ## 次の手順 {#whats-next}
 
