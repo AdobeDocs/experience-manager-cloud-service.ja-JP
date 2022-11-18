@@ -2,9 +2,9 @@
 title: コンテンツフラグメントモデル（アセット — コンテンツフラグメント）
 description: コンテンツフラグメントモデルが AEM におけるヘッドレスコンテンツの基盤となっている仕組みと、構造化コンテンツを含んだコンテンツフラグメントを作成する方法について説明します。
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 17705b698915d4fac1e60ad06396d40f2e19ebd5
 workflow-type: tm+mt
-source-wordcount: '2893'
+source-wordcount: '2887'
 ht-degree: 99%
 
 ---
@@ -17,7 +17,7 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
 
 1. [インスタンスに対するコンテンツフラグメントモデル機能の有効化](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. コンテンツフラグメントモデルの[作成](#creating-a-content-fragment-model)と[設定](#defining-your-content-fragment-model)
-1. コンテンツフラグメントの作成時に使用する[コンテンツフラグメントモデルの有効化](#enabling-disabling-a-content-fragment-model)
+1. [コンテンツフラグメントモデルの有効化](#enabling-disabling-a-content-fragment-model) （コンテンツフラグメントの作成時に使用）
 1. **ポリシー**&#x200B;の設定による[必要なアセットフォルダーに対するコンテンツフラグメントモデルの許可](#allowing-content-fragment-models-assets-folder)
 
 ## コンテンツフラグメントモデルの作成 {#creating-a-content-fragment-model}

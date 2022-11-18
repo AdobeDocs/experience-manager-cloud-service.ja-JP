@@ -4,10 +4,10 @@ description: コンテンツフラグメントモデルが AEM のコンテン�
 feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 17705b698915d4fac1e60ad06396d40f2e19ebd5
 workflow-type: tm+mt
-source-wordcount: '2904'
-ht-degree: 100%
+source-wordcount: '2898'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
 
 1. [インスタンスに対するコンテンツフラグメントモデル機能の有効化](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
 1. コンテンツフラグメントモデルの[作成](#creating-a-content-fragment-model)と[設定](#defining-your-content-fragment-model)
-1. コンテンツフラグメントの作成時に使用する[コンテンツフラグメントモデルの有効化](#enabling-disabling-a-content-fragment-model)
+1. [コンテンツフラグメントモデルの有効化](#enabling-disabling-a-content-fragment-model) （コンテンツフラグメントの作成時に使用）
 1. **ポリシー**&#x200B;の設定による[必要なアセットフォルダーに対するコンテンツフラグメントモデルの許可](#allowing-content-fragment-models-assets-folder)
 
 ## コンテンツフラグメントモデルの作成 {#creating-a-content-fragment-model}
@@ -78,7 +78,6 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
          >データタイプの「**プロパティ名**」プロパティを手動で更新する場合、名前には、A～Z、a～z、0～9 および特殊文字のアンダースコア「_」のみを使用できます。
          >
          >以前のバージョンの AEM で作成されたモデルに不正な文字が含まれている場合は、それらの文字を削除または更新してください。
-
       次に例を示します。
 
       ![フィールドのプロパティ](assets/cfm-models-05.png)
@@ -229,10 +228,10 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
 >AEM では次のものの繰り返しを防止できます。
 >
 >* コンテンツ参照
->  これにより、現在のフラグメントへの参照を追加できなくなります。その結果、空のフラグメント参照選択ダイアログが表示される場合があります。
+   >  これにより、現在のフラグメントへの参照を追加できなくなります。その結果、空のフラグメント参照選択ダイアログが表示される場合があります。
 >
 >* GraphQL のフラグメント参照
->  相互に参照される複数のコンテンツフラグメントを返すディープクエリを作成する場合、最初に null が返されます。
+   >  相互に参照される複数のコンテンツフラグメントを返すディープクエリを作成する場合、最初に null が返されます。
 
 
 ### コンテンツ参照 {#content-reference}
