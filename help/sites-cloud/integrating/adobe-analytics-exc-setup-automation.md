@@ -1,23 +1,23 @@
 ---
 title: Adobe Analytics と Experience Cloud 設定自動化の統合
-description: Experience Cloud 設定自動化を使用すると、シンプルな UI ウィザードインターフェイスを介したわかりやすく自動化された方法で、Experience Manager Sites を Experience Platform Launch および Adobe Analytics と統合してツール化することができます。ご利用のサイトで自動設定を使用する方法を説明します。
+description: Experience Cloud設定の自動化は、Experience Manager SitesとExperience Platformタグ、Adobe Analyticsを統合し、シンプルな UI ウィザードインターフェイスで実装する、シンプルで自動化された方法を提供します。 ご利用のサイトで自動設定を使用する方法を説明します。
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 8b8811decee087291b74fa0e3839991f6a7f3850
+source-git-commit: 539d3947964652dd92620ce0b0b057754742be96
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 83%
+ht-degree: 66%
 
 ---
 
 # Adobe Analytics と Experience Cloud 設定自動化の統合 {#integrate-adobe-analytics-automation-setup}
 
-Experience Cloud 設定自動化を使用すると、シンプルな UI ウィザードインターフェイスを介したわかりやすく自動化された方法で、Experience Manager Sites を Experience Platform Launch および Adobe Analytics と統合してツール化することができます。
+Experience Cloud設定の自動化は、Experience Manager SitesとExperience Platformタグ、Adobe Analyticsを統合し、シンプルな UI ウィザードインターフェイスで実装する、シンプルで自動化された方法を提供します。
 
 Adobe Analytics と AEM Sites の統合は、かつてないほどシンプルになりました。Experience Cloud 設定自動化を使用すると、顧客のエンゲージメントとコンバージョンの状況を把握するパフォーマンス分析をキャプチャするためのサイトの設定、統合、ツール化を、数回のクリックですべて行うことができます。
 
-このビデオでは、Experience Cloud 設定自動化を使用して AEM Site を Experience Platform Launch および Analytics と統合する方法について説明します。
+このビデオでは、AEMサイトとExperience Platformタグおよび Analytics を統合する方法について、自動Experience Cloud設定を使用して説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/345372/?quality=12)
 
@@ -57,7 +57,7 @@ Adobe Analytics と AEM Sites の統合は、かつてないほどシンプル�
    自動化の設定は非同期で実行されます。**統合ステータスの確認** には、統合の現在のステータスが表示されます。
 
    * **処理中** - ジョブが実行中であることを示します。
-   * **統合完了** - ジョブが Analytics と Launch の統合、Launch の拡張機能と Launch ルールの設定、Adobe Analytics での新しいレポートスイートの作成を完了したことを示します。
+   * **統合の完了**  — ジョブが Analytics とタグの統合、タグの拡張機能とタグルールの設定、Adobe Analyticsでの新しいレポートスイートの作成を完了したことを示します。
    * **失敗** - 自動ジョブを正常に完了できなかったことを示します。「ログ」リンクをクリックして、このジョブのログファイルを確認します。
 
 ## AEM 設定の検証
@@ -66,7 +66,7 @@ Adobe Analytics と AEM Sites の統合は、かつてないほどシンプル�
 
 1. **サイトエディター** を使用してサイトのページを開きます。
 1. **公開済みとして表示** オプションを使用して、公開されたバージョンのページを読み込みます。
-1. ブラウザーの開発者ツールを使用して、ネットワークトラフィックを検査し、**起動** および `AppMeasurement.js` ファイルを読み込み中であることを確認します。
+1. ブラウザーの開発者ツールを使用して、ネットワークトラフィックと、 **タグ** および `AppMeasurement.js` ファイルを読み込み中です。
 1. ブラウザーのコンソールを検査し、ページおよびコンポーネントレベルのイベントが発生し、Adobe クライアントデータレイヤーによって収集されることを確認します。
 
 ## Analytics 設定の検証
