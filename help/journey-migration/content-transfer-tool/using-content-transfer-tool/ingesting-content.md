@@ -2,10 +2,10 @@
 title: Target へのコンテンツの取り込み
 description: Target へのコンテンツの取り込み
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: e8b4fe047c9656aa592fc851279dc6a189144023
+source-git-commit: 4b716f3a41e431b47c8f439d4d24610b79f22736
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 96%
+source-wordcount: '956'
+ht-degree: 92%
 
 ---
 
@@ -26,6 +26,11 @@ ht-degree: 96%
 1. Cloud Acceleration Manager に移動します。プロジェクトカードをクリックし、コンテンツ転送カードをクリックします。**取り込みジョブ**&#x200B;に移動し、「**新しい取り込み**」をクリックします。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
+
+
+1. 取り込みチェックリストを確認し、すべての手順が完了していることを確認します。 これらは、取り込みを正常におこなうために必要な手順です。 次の手順に進むことができます： **次へ** 手順は、チェックリストが完了した場合にのみ実行します。
+
+   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
 1. 新しい取り込みを作成するために必要な情報を入力します。
 

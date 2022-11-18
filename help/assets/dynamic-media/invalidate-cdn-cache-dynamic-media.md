@@ -4,7 +4,7 @@ description: コンテンツ配信ネットワーク（CDN）にキャッシュ�
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: 5c8e3a7ea87b70707b2613ffc7b4f51341303614
+source-git-commit: 532d32334456b4b791e3a5ffe17a780f378dd1cc
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 100%
@@ -23,11 +23,11 @@ Dynamic Media アセットは、顧客との配信を高速化するために、
 
 アカウントで[スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)を有効にしており、アドビバンドルの CDN を使用している場合は、単一のベース URL をパージすることで、異なるクエリ文字列を持つすべての URL をパージできます。
 
-例えば、`https://weekendsite.scene7.com/is/image/grundfos/image` を無効にすると、次の URL も無効になります。
+例えば、`https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image` を無効にすると、次の URL も無効になります。
 
-* `https://weekendsite.scene7.com/is/image/grundfos/image`
-* `https://weekendsite.scene7.com/is/image/grundfos/image?wid=300`
-* `https://weekendsite.scene7.com/is/image/grundfos/image?$PLP$`
+* `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image`
+* `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image?wid=300`
+* `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image?$PLP$`
 * その他。
 
 ただし、この無効化は、`s7d1.scene7.com` などのスマートイメージングをサポートしない汎用ドメインには当てはまりません。このようなドメインでは、無効化を正常に機能させるために完全な URL が必要です。
