@@ -4,7 +4,7 @@ description: Dispatcher ツールを使用した検証とデバッグ（レガ�
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
+source-git-commit: 687323031ecfd179a1875033411b8398a3d1d74b
 workflow-type: tm+mt
 source-wordcount: '2345'
 ht-degree: 95%
@@ -54,6 +54,7 @@ Cloud Manager 2021.7.0 リリースの時点では、新しい Cloud Manager プ
     ├── cache
     │   ├── default_invalidate.any
     │   ├── default_rules.any
+    │   ├── marketing_query_parameters.any
     │   └── rules.any
     ├── clientheaders
     │   ├── clientheaders.any
