@@ -2,7 +2,7 @@
 title: メールサービスの OAuth2 サポート
 description: Adobe Experience Manager as a Mail Service の Oauth2 サポート
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
+source-git-commit: 5f8da9f846c159aa00273909b93aa10358daf609
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 100%
@@ -125,7 +125,7 @@ AEM 側で Oauth を設定する前に、次の手順で accessToken と refresh
    * `https://outlook.office365.com/Mail.Send`
    * `https://outlook.office365.com/Mail.Read`
    * `https://outlook.office365.com/SMTP.Send`
-1. 次の構文で、OSGI プロパティファイル`called com.day.cq.mailer.impl.DefaultMailService.cfg.json`を  
+1. 次の構文で、OSGI プロパティファイル`called com.day.cq.mailer.DefaultMailService.cfg.json`を  
 `/apps/<my-project>/osgiconfig/config` に作成します。
 
    ```
