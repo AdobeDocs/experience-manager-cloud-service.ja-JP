@@ -2,10 +2,10 @@
 title: ユーザーマッピングツールの使用
 description: ユーザーマッピングツールの使用
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 68ade018185892528854a9438953ee7eb4b90f27
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 100%
+source-wordcount: '753'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 1. Adobe ID を使用して [Adobe 開発者コンソール](https://console.adobe.io)に移動します。
 1. 新しいプロジェクトを作成するか、既存のプロジェクトを開きます。
 1. API を追加します：「**プロジェクトに追加**」をクリックして、「**API**」を選択します。
-1. 「User Management API」を選択します。このオプションを使用するには、権限の取得が必要になる場合があります。
+1. 「User Management API」を選択します。このオプションを使用するには、システム管理者の権限が必要です。
 1. JWT 資格情報を作成します。
 1. キーペアを生成するか、公開鍵（rsa 以外）をアップロードします。これを実行する「**公開鍵 / 秘密鍵のペアを生成**」ボタンがあります。必ず、公開鍵と秘密鍵の両方を保存してください。
 1. User Management API に移動します。
