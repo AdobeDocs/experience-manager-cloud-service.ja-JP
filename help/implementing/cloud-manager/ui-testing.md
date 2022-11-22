@@ -2,10 +2,10 @@
 title: UI テスト
 description: カスタム UI テストは、カスタムアプリケーションの UI テストを作成して自動的に実行できるオプション機能です
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: 31e84b7383cd9774b0eaf8ee0f2fe39bcd77fa15
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 99%
+source-wordcount: '1407'
+ht-degree: 94%
 
 ---
 
@@ -51,7 +51,7 @@ Cloud Manager で UI テストを作成して実行するには、リポジト�
 <includes>
     <include>Dockerfile</include>
     <include>wait-for-grid.sh</include>
-    <include>testing.properties</include> <!- opt-in test module in Cloud Manager -->
+    <include>testing.properties</include> <!-- opt-in test module in Cloud Manager -->
 </includes>
 [...]
 ```
@@ -194,6 +194,24 @@ Selenium のステータスエンドポイントが肯定的な応答を返し�
 Docker イメージは、テストレポートを JUnit XML 形式で生成して、環境変数 `REPORTS_PATH` で指定されたパスに保存する必要があります。JUnit XML 形式は、テスト結果のレポートに広く使用されている形式です。Docker イメージで Java と Maven を使用する場合、[Maven Surefire プラグイン](https://maven.apache.org/surefire/maven-surefire-plugin/)や [Maven Failsafe プラグイン](https://maven.apache.org/surefire/maven-failsafe-plugin/) などの標準テストモジュールでは、すぐに使用できるレポートを生成できます。
 
 Docker イメージが他のプログラミング言語またはテストランナーで実装されている場合は、選択したツールのドキュメントを参照して、JUnit XML レポートの生成方法を確認してください。
+
+### スクリーンショットとビデオのキャプチャ {#capture-screenshots}
+
+Docker イメージでは、追加のテスト出力（スクリーンショット、ビデオなど）が生成され、環境変数で指定されたパスに保存される場合があります `REPORTS_PATH`. 次の場所にあるファイル `REPORTS_PATH` は、テスト結果アーカイブに含まれます。
+
+UI テストの実行中にテスト結果アーカイブが作成された場合、テストログファイルの最後には、テスト結果アーカイブの場所への参照が含まれます。
+
+```
+[...]
+
+===============================================================
+The detailed test results can be downloaded from the URL below.
+Note: the link will expire after 60 days
+
+    https://results-host/test-results.zip
+
+===============================================================
+```
 
 ### ファイルのアップロード {#upload-files}
 
