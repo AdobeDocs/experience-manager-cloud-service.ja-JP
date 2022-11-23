@@ -2,10 +2,10 @@
 title: ユーザーマッピングツールの使用
 description: ユーザーマッピングツールの使用
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
-source-git-commit: 68ade018185892528854a9438953ee7eb4b90f27
+source-git-commit: a9e30f6a15bbc9fc830849e05e1814a2cdd50fd5
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 98%
+source-wordcount: '816'
+ht-degree: 90%
 
 ---
 
@@ -14,6 +14,8 @@ ht-degree: 98%
 ユーザーマッピングツールで使用される API は、Adobe Identity Management System（IMS）ユーザーを電子メールアドレスで検索して、各ユーザーの IMS ID を返すことができます。この API では、ユーザーが自分の組織のクライアント ID、クライアントシークレット、アクセスまたはベアラートークンを作成する必要があります。
 
 ## ユーザーマッピングツールのセットアップ {#setting-up-user-mapping}
+
+**前提条件：** ユーザーマッピングでは、各ユーザーが IMS ID にマッピングされる際に、AEMのプロファイルと IMS に電子メールアドレスが含まれている必要があります。  ユーザーがログイン時に電子メールアドレスをユーザー ID として使用している場合でも、電子メールアドレスがプロファイルにも IMS にも存在しない限り、そのユーザーに対するマッピングは機能しません。
 
 これを設定するには、次の手順に従います。
 
