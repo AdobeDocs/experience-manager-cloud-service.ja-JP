@@ -4,7 +4,7 @@ description: AEM as a Cloud Service の Cloud Manager 2022.6.0 のリリース�
 feature: Release Information
 exl-id: 0a348836-74cd-4fd4-aef4-6ffbd6483c24
 source-git-commit: e05c2fa2cfb035ed363e2c80d4aac33b022bd435
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '313'
 ht-degree: 100%
 
