@@ -4,7 +4,7 @@ description: GraphQL を AEM と共に使用し、サンプルコンテンツと
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: d52372e69af2800703e20f36407a9b381db6264e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1456'
 ht-degree: 100%
 
@@ -1592,7 +1592,7 @@ query {
 |--- |--- |--- |
 | 会社名 | 1 行のテキスト |  |
 | CEO | フラグメント参照（1 つ） | [Person](#model-person) |
-| 従業員数 | フラグメント参照（複数フィールド） | [人物](#model-person) |
+| 従業員数 | フラグメント参照（複数フィールド） | [Person](#model-person) |
 
 #### Person（人物） {#model-person}
 
@@ -1654,7 +1654,7 @@ query {
 | ショートカット／ID | title |
 |--- |--- |
 | GB | Gameblitz |
-|  GS | 配偶星 |
+|  GS | Gamestar |
 |  OSC | Oscar |
 
 #### 都市 {#fragment-city}
