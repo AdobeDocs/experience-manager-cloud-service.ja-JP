@@ -3,7 +3,7 @@ title: Cloud Acceleration Manager での実装フェーズ
 description: このページでは、Cloud Acceleration Manager における実装フェーズの概要について説明します。
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
 source-git-commit: dbf01e5bd9ee83e378b4297d2f3d341d548f9238
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '683'
 ht-degree: 100%
 
