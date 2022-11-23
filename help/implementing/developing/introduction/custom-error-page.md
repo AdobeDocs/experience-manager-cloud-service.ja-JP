@@ -2,10 +2,10 @@
 title: カスタムエラーページ
 description: AEM には、HTTP エラーを処理するための標準的なエラーハンドラーが付属しており、これはカスタマイズできます。
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: db997127c6cbba434b86990852d1ba590d5f12a5
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 100%
+source-wordcount: '576'
+ht-degree: 87%
 
 ---
 
@@ -67,6 +67,12 @@ HTTP [500 内部サーバーエラー](https://www.w3.org/Protocols/rfc2616/rfc2
 それ以外の場合は、応答コードは 500 に設定されますが、`500.jsp` スクリプトは実行されません。
 
 500 エラーを処理するには、エラーハンドラースクリプトのファイル名を例外クラス（またはスーパークラス）と同じにする必要があります。このような例外をすべて処理するには、スクリプト `/apps/sling/servlet/errorhandler/Throwable.jsp` または `/apps/sling/servlet/errorhandler/Exception.jsp` を作成します。
+
+>[!NOTE]
+>
+>AEM as aCloud Serviceでは、CDN は、バックエンドから 5XX エラーを受け取るたびに、汎用エラーページを提供します。 バックエンドの実際の応答がを通過できるようにするには、応答に次のヘッダーを追加する必要があります。
+>`x-aem-error-pass: true`
+>これは、AEMまたは Apache/Dispatcher レイヤーからの応答に対してのみ機能します。 中間インフラストラクチャレイヤーから発生したその他の予期しないエラーは、一般的なエラーページに表示されます。
 
 >[!CAUTION]
 >
