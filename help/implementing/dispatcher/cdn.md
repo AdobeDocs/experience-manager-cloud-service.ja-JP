@@ -3,10 +3,10 @@ title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
+source-git-commit: 093a83b7e76167b1962639b245332e515df2447b
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 76%
+source-wordcount: '1145'
+ht-degree: 74%
 
 ---
 
@@ -90,7 +90,8 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->独自の CDN を使用する場合、Cloud Manager にドメインと証明書をインストールする必要はありません。 AdobeCDN のルーティングは、デフォルトのドメインを使用しておこなわれます `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+>独自の CDN を使用する場合、Cloud Manager にドメインと証明書をインストールする必要はありません。 AdobeCDN のルーティングは、デフォルトのドメインを使用しておこなわれます `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` リクエストで送信する `Host` ヘッダー。 リクエストの上書き `Host` ヘッダーとカスタムドメイン名を組み合わせると、リクエストがAdobeCDN によって誤ってルーティングされる可能性があります。
+
 
 >[!NOTE]
 >
