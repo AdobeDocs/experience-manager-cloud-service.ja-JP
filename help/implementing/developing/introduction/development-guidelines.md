@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service の開発ガイドライン
-description: AEM as a Cloud Service の開発ガイドライン
+description: AEM as a Cloud Service上での開発に関するガイドラインと、オンプレミスでのAEMおよび AMS でのAEMとは異なる重要な方法について説明します。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 88d7728758927f16ed0807de8d261ca1b4b8b104
 workflow-type: tm+mt
-source-wordcount: '2445'
-ht-degree: 98%
+source-wordcount: '2590'
+ht-degree: 90%
 
 ---
 
@@ -14,18 +14,16 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="development_guidelines"
 >title="AEM as a Cloud Service の開発ガイドライン"
->abstract="このタブでは、AEM as a Cloud Service でのコーディングに関して推奨されるベストプラクティスを確認できます。コーディングは、AMS やオンプレミスデプロイメントとは大きく異なる場合があります。"
+>abstract="AEM as a Cloud Service上での開発に関するガイドラインと、オンプレミスでのAEMおよび AMS でのAEMとは異なる重要な方法について説明します。"
 >additional-url="https://video.tv.adobe.com/v/330555/" text="パッケージ構造のデモ"
+
+このドキュメントでは、AEMas a Cloud Service上での開発に関するガイドラインと、オンプレミスおよび AMS のAEMとは異なる重要な方法について説明します。
+
+## コードはクラスター対応である必要があります {#cluster-aware}
 
 AEM as a Cloud Service で実行するコードは、常にクラスター内で実行されていることを認識している必要があります。つまり、常に複数のインスタンスが実行されています。インスタンスはいつ停止するかわからないので、コードには特に回復力が必要です。
 
 AEM as a Cloud Service を更新する間、古いコードと新しいコードが並行して実行されるインスタンスが存在します。したがって、新しいコードで作成されたコンテンツが古いコードによって中断されず、新しいコードが古いコンテンツを処理できる必要があります。
-<!--
-
->[!NOTE]
-> All of the best practices mentioned here hold true for on-premise deployments of AEM, if not stated otherwise. An instance can always stop due to various reasons. However, with Skyline it is more likely to happen therefore an instance stopping is the rule not an exception.
-
--->
 
 クラスター内のプライマリを識別する必要がある場合は、Apache Sling Discovery API を使用して検出できます。
 
@@ -266,7 +264,24 @@ AEM as a Cloud Service では、ポート 465 を通じてメールを送信す�
 
 SMTP サーバーホストは、メールサーバーのホストに設定してください。
 
+## 複数値の大きなプロパティの回避 {#avoid-large-mvps}
+
+AEM as a Cloud Serviceの基盤となる Oak コンテンツリポジトリは、多値プロパティ (MVP) の数が多すぎる場合に使用することは意図されていません。 経験則として、MVP を 1000 未満に保つことが挙げられます。 ただし、実際のパフォーマンスは多くの要因に左右されます。
+
+警告は、1,000 を超えるとデフォルトでログに記録されます。 次のようになります。
+
+```text
+org.apache.jackrabbit.oak.jcr.session.NodeImpl Large multi valued property [/path/to/property] detected (1029 values). 
+```
+
+16 MB を超える MongoDB ドキュメントが原因で、大きな MVP がエラーを引き起こす可能性があり、その結果、次のようなエラーが発生します。
+
+```text
+Caused by: com.mongodb.MongoWriteException: Resulting document after update is larger than 16777216
+```
+
+詳しくは、 [Apache Oak ドキュメント](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) を参照してください。
 
 ## [!DNL Assets] 開発のガイドラインとユースケース {#use-cases-assets}
 
-AEM Assets as a Cloud Service の開発のユースケース、推奨事項、参考資料については、[Assets の開発者向けリファレンス](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)を参照してください。
+Assets as a Cloud Serviceの開発ユースケース、推奨事項、リファレンス資料については、 [Assets の開発者向けリファレンス。](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)
