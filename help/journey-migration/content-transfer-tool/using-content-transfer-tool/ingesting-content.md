@@ -2,10 +2,10 @@
 title: Target へのコンテンツの取り込み
 description: Target へのコンテンツの取り込み
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 319a9bc2aa6d82d0fb322cd1f2ca37e95c33e97d
+source-git-commit: 71370cf59bd1f65db78c2818c118e7d9ec2c9196
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 85%
+source-wordcount: '1072'
+ht-degree: 82%
 
 ---
 
@@ -22,6 +22,9 @@ ht-degree: 85%
 コンテンツ転送ツールで移行セットを取り込むには、次の手順に従います。
 >[!NOTE]
 >オプションの事前コピー手順を実行して、取り込み段階を大幅に高速化できます。事前コピーステップは、1回目の完全抽出と取り込みに最も効果的です。詳しくは、[AzCopy を使用した取得](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy)を参照してください。
+
+>[!NOTE]
+>この取り込みのサポートチケットを記録しましたか？ 詳しくは、 [コンテンツ転送ツールを使用する前に考慮すべき重要事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) を参照してください。
 
 1. Cloud Acceleration Manager に移動します。プロジェクトカードをクリックし、コンテンツ転送カードをクリックします。**取り込みジョブ**&#x200B;に移動し、「**新しい取り込み**」をクリックします。
 
@@ -96,7 +99,8 @@ ht-degree: 85%
 ## 追加取り込み {#top-up-ingestion-process}
 
 >[!CONTEXTUALHELP]
->id="aemcloud_ctt_ingestion_topup" title="Top Up Ingestion"
+>id="aemcloud_ctt_ingestion_topup"
+>title="追加取り込み"
 >abstract="追加取り込み機能を使用すると、前回のコンテンツ転送アクティビティ以降に変更されたコンテンツが移行されます。取り込みが完了したら、ログを調べて、エラーや警告がないか確認します。エラーが発生した場合は、報告された問題を解決するかアドビカスタマーケアに連絡して、すぐに対処してください。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ja" text="ログの表示"
 
