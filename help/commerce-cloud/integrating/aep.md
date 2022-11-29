@@ -10,13 +10,13 @@ role: Architect, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
-source-git-commit: 2ebe9ddccd0b657b8aaeaf005c0ecb5b16079dee
+exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
+source-git-commit: c2fd3d33eb02ea671d9811ad527bf167a279ff01
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2080'
 ht-degree: 3%
 
 ---
-
 
 # AEM-CIF コアコンポーネントとAdobe Experience Platformの統合 {#aem-cif-aep-integration}
 
@@ -471,10 +471,31 @@ PWA Studioプロジェクトを使用すると、Adobe CommerceまたはMagento 
 
 現時点では、次のイベントがサポートされています。
 
-- addToCart
-- pageView
-- customUrl
-- referrerUrl
+__エクスペリエンス XDM イベント：__
+
+1. 買い物かごに追加 (AEM)
+1. ページを表示 (AEM)
+1. 製品を表示 (AEM)
+1. 送信された検索リクエスト (AEM)
+1. 受信した検索応答 (AEM)
+
+条件 [Peregrine コンポーネント](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) は、AEM Commerce プロジェクトで再利用されます。
+
+__エクスペリエンス XDM イベント：__
+
+1. 買い物かごから削除
+1. 買い物かごを開く
+1. 買い物かごを表示
+1. 即時購入
+1. チェックアウトを開始
+1. チェックアウトの完了
+
+__プロファイル XDM イベント：__
+
+1. サインイン
+1. アカウントを作成
+1. アカウントを編集
+
 
 ## その他のリソース {#additional-resources}
 
@@ -482,5 +503,5 @@ PWA Studioプロジェクトを使用すると、Adobe CommerceまたはMagento 
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
 - [Experience Platformコネクタの概要](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
+- [Experience Platformコネクタイベント](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html)
 - [Adobe Experience Platformの概要](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
-
