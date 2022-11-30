@@ -8,10 +8,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service の概要に
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ce2866c90353a086cd9288c0209bf624c597922d
+source-git-commit: f1e1e12d9a19afd6c98029fc5b7a7b73ebf41686
 workflow-type: tm+mt
-source-wordcount: '3789'
-ht-degree: 98%
+source-wordcount: '3816'
+ht-degree: 97%
 
 ---
 
@@ -158,6 +158,12 @@ ht-degree: 98%
       + [Cloud Manager の概要](/help/onboarding/cloud-manager-introduction.md)
       + [AEM as a Cloud Service チームおよび製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md)
       + [通知ユーザーグループ](/help/journey-onboarding/user-groups.md)
++ AEMaaCS 試用版 {#trials}
+   + ヘッドレス試用 {#headless}
+      + [サンプル React アプリのコンテンツのカスタマイズ](/help/trials/headless/customize-app.md)
+      + [アプリのコンテンツ構造の作成](/help/trials/headless/content-structure.md)
+      + [ヘッドレスコンテンツを作成](/help/trials/headless/create-content.md)
+      + [GraphQL API を使用したコンテンツの抽出](/help/trials/headless/extract-content.md)
 + AEM as a Cloud Service 移行ジャーニー {#migration-journey}
    + [AEM as a Cloud Service の移動の概要](/help/journey-migration/getting-started.md)
    + [準備段階](/help/journey-migration/readiness.md)
