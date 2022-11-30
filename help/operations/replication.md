@@ -2,10 +2,10 @@
 title: レプリケーション
 description: コンテンツ配布とレプリケーションのトラブルシューティング。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9260e3cfffdbff3469e92847af8d12c2eb52f5b1
+source-git-commit: b40c46ff5d4399e6feff0ccaf37bdf0336c88016
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 99%
+source-wordcount: '1374'
+ht-degree: 91%
 
 ---
 
@@ -18,6 +18,14 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 >詳しくは、[コンテンツ配布](/help/overview/architecture.md#content-distribution)を参照してください。
 
 ## コンテンツの公開方法 {#methods-of-publishing-content}
+
+>[!NOTE]
+>
+>コンテンツの一括公開に関心がある場合は、 [コンテンツツリーの公開ワークフロー](#publish-content-tree-workflow).
+>このワークフローステップは、特にCloud Service向けに構築されており、大きなペイロードを効率的に処理できます。
+>独自の一括公開カスタムコードを作成することはお勧めしません。
+>何らかの理由でをカスタマイズする必要がある場合は、既存の Workflow API を使用して、このワークフロー/ワークフローのステップにトリガーを付けることができます。
+>公開する必要のあるコンテンツのみを公開し、大量のコンテンツを公開しないことを慎重にお勧めしますが、公開コンテンツツリーワークフローで送信できるコンテンツの数に制限はありません。
 
 ### クイック公開／非公開 - 計画的公開／非公開 {#publish-unpublish}
 
