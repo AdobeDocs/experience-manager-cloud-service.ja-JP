@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Service のメンテナンスタスク
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 174e9b2410745ec766dbcd071a3508a509b8367a
+source-git-commit: 0e33ef91ce3668e7ce6aff98053c9f798b940dfd
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 78%
+source-wordcount: '1068'
+ht-degree: 75%
 
 ---
 
@@ -49,6 +49,7 @@ ht-degree: 78%
        <li>31 日以上前のバージョンは削除されます</li>
        <li>過去 30 日間の最新の 5 つのバージョンが保持されます</li>
        <li>上記のルールに関係なく、最新バージョンが保持されます</li>
+       <li>特定の日に表示されたとおりにサイトページをレンダリングするための規制要件を持つ顧客は、専門の外部サービスと統合することをお勧めします。<li>
      </ol></td>
   </td>
   </tr>
@@ -60,6 +61,7 @@ ht-degree: 78%
        <li>レプリケーション監査の場合、4 日以上前の監査ログは削除されます</li>
        <li>DAM（アセット）監査の場合、31 日以上前の監査ログは削除されます</li>
        <li>ページ監査の場合、4 日以上前のログは削除されます</li>
+       <li>編集できない監査ログを作成するための規制要件を持つお客様は、専門の外部サービスと統合することをお勧めします。<li>
      </ol></td>
    </td>
   </tr>
