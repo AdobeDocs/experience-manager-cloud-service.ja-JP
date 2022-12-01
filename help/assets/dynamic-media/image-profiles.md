@@ -4,7 +4,7 @@ description: アンシャープマスクの設定、スマート切り抜きと�
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 08b523fe66b86867f65c794e843fc55fe0faa050
+source-git-commit: 9e4f2be54ffbf52ded7175207db544be19679a79
 workflow-type: tm+mt
 source-wordcount: '3524'
 ht-degree: 87%
