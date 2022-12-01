@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 3255e988c5ec9a0de33660061aeb21d91c3bc4d3
+source-git-commit: 54057d6b5563de3455dddb7866c7c93a3b0294ec
 workflow-type: tm+mt
-source-wordcount: '2449'
-ht-degree: 66%
+source-wordcount: '2420'
+ht-degree: 62%
 
 ---
 
@@ -29,13 +29,13 @@ Experience Manager Assets as a でBrand Portalをアクティベートするに�
 
 >[!NOTE]
 >
->Experience Manager Assets as a [!DNL Cloud Service] インスタンスは、1 つのBrand Portalテナントにのみ接続できる権利を持っています。 Experience Manager Assets as a 用に複数の環境（開発、実稼動、ステージング）を持つことができます [!DNL Cloud Service] インスタンス。Brand Portalは 1 つの環境でアクティブ化されます。
+>Experience Manager Assets as a には、設定済みの実稼動環境が必要です [!DNL Cloud Service] Brand Portalテナントに接続するためのインスタンスです。
 
 **Brand Portal をアクティブ化する手順**
 
-Experience Manager Assets as a の環境を作成する際に、Brand Portalをアクティブ化できます [!DNL Cloud Service] インスタンス、または個別に。 環境が既に作成され、Brand Portal をライセンス認証する必要があるとします。
+Experience Manager Assets as a の実稼動環境を作成する際に、Brand Portalをアクティブ化できます [!DNL Cloud Service] インスタンス、または個別に。 環境が既に作成され、Brand Portalをアクティブ化する必要があるとします。
 
-1. Adobe Cloud Manager にログインし、「**[!UICONTROL 環境]**」に移動します。
+1. Cloud Manager にAdobeし、に移動します。 **[!UICONTROL 環境]**.
 
    **[!UICONTROL 環境]**&#x200B;ページには、既存の環境のリストが表示されます。
 
@@ -69,9 +69,9 @@ Experience Manager Assets as a の環境を作成する際に、Brand Portalを�
 * [Cloud Manager での環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja#adding-environments)
 
 
-**Brand Portal テナントへのログイン**
+**Brand Portalテナントにログイン**:
 
-Cloud Manager で Brand Portal テナントをライセンス認証した後、Admin Console から、またはテナント URL を使用して直接 Brand Portal にログインできます。
+Cloud Manager でBrand Portalテナントをアクティベートした後、Admin Consoleから、またはテナント URL を直接使用して、Brand Portalにログインできます。
 
 Brand Portal テナントのデフォルト URL は `https://<tenant-id>.brand-portal.adobe.com/` です。
 
@@ -79,8 +79,8 @@ Brand Portal テナントのデフォルト URL は `https://<tenant-id>.brand-p
 
 ブランドポータルの URL が不明な場合は、次の手順を実行します。
 
-1. [Admin Console](https://adminconsole.adobe.com/)にログインし、「**[!UICONTROL 製品]**」に移動します。
-1. 左パネルの「**[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**」を選択します。
+1. ログイン先 [Admin Console](https://adminconsole.adobe.com/) をクリックし、 **[!UICONTROL 製品]**.
+1. 左のパネルから、「 」を選択します。 **[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**.
 1. 「**[!UICONTROL Brand Portal に移動]**」をクリックして、ブラウザーで直接 Brand Portal を開きます。
 
    または、**[!UICONTROL Brand Portal へ移動]**&#x200B;リンクから Brand Portal テナント URL をコピーし、ブラウザーに貼り付けて Brand Portal インターフェイスを開きます。
@@ -256,7 +256,7 @@ Adobe 開発者コンソールで、プロジェクトと API を Brand Portal �
 
 サービスアカウント資格情報と JWT ペイロードを生成するには、次の手順を実行します。
 
-1. IMS 組織（Brand Portal テナント）のシステム管理者権限で Adobe 開発者コンソールにログインします。デフォルトの URL は [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui) です。
+1. IMS 組織 (Brand Portalテナント ) のシステム管理者権限でAdobe Developer Console にログインします。 デフォルトの URL は [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui) です。
 
 
    >[!NOTE]
@@ -403,7 +403,7 @@ Brand Portal Cloud Service を設定するには、次の手順を実行しま�
 
 Perform the following steps to validate the configuration:
 
-1. Log in to AEM Assets.
+1. Login to AEM Assets.
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
