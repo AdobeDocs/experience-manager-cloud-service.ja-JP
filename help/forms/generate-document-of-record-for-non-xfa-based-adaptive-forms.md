@@ -2,10 +2,10 @@
 title: アダプティブフォームにおけるレコードのドキュメントの生成
 description: ここでは、アダプティブフォーム向けのレコードのドキュメント（DoR）テンプレートを生成する方法について説明します。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
+source-git-commit: 8d6a5aceaf930c6597f570cdaec44015b86e20cd
 workflow-type: tm+mt
-source-wordcount: '4100'
-ht-degree: 87%
+source-wordcount: '4065'
+ht-degree: 86%
 
 ---
 
@@ -430,7 +430,7 @@ When you select a form model, configure Document of Record using options availab
 **フォームレベルの設定**
 
 * **バインドされていないフィールドをレコードのドキュメントに含める：**&#x200B;このプロパティを設定すると、スキーマベースのアダプティブフォームのバインドされていないフィールドがレコードのドキュメントに追加されます。デフォルトでは true になっています。
-* **非表示の場合はレコードのドキュメントからフィールドを除外**：このプロパティを設定すると、「レコードのドキュメントから除外」フィールドレベルプロパティが true でないときにその動作が上書きされます。フォームの送信時にフィールドが非表示の場合、これらのフィールドは、プロパティが true に設定されているとレコードのドキュメントから除外されます（ただし「レコードのドキュメントから除外」プロパティが設定されていない場合）。設定 [サーバーで再検証](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) プロパティを true に設定すると、サーバー側のレコードのドキュメントから除外される非表示フィールドが識別されます。
+* **非表示の場合に DoR からフィールドを除外：** フォーム送信時にレコードのドキュメントから非表示フィールドを除外するプロパティを設定します。 有効にする場合 [サーバーで再検証](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)を指定した場合、サーバーは非表示のフィールドを再計算してから、レコードのドキュメントからこれらのフィールドを除外します。
 
 ## カスタム XCI ファイルの使用
 
