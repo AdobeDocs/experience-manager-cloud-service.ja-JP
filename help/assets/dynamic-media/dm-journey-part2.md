@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: c82707d07d888c48d3c02a76d58171720a6279eb
+source-git-commit: 1200dc41af22ae8f34f33d176de1c0db7c7ae424
 workflow-type: tm+mt
-source-wordcount: '2878'
-ht-degree: 100%
+source-wordcount: '2900'
+ht-degree: 98%
 
 ---
 
@@ -47,15 +47,15 @@ URL の最初の部分（赤）は、サーバードメイン自体を参照し�
 
 最後に、画像処理パラメーター `?wid=1000&fmt=jpeg&qlt=85` が、末尾の黄色です。
 
-この URL パスは実稼働しています。[試してみる](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85)。
+この URL パスは実稼働しています。[所要時間](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85){target=&quot;_blank&quot;}。
 
 お使いのブラウザーウィンドウで Dynamic Media URL と腕時計の画像を開いたままにしておきます。URL を変更するだけで、画像のレンディションを作成する方法を詳しく見てみます。
 
 ### URL を使用した腕時計画像のレンダリング
 
-最初に、URL パス内の画像処理ルールのみを手動で削除します。サーバー名、アカウント名、アセット ID または画像名はそのままにします。[試してみる](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982)。
+最初に、URL パス内の画像処理ルールのみを手動で削除します。サーバー名、アカウント名、アセット ID または画像名はそのままにします。[所要時間](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982){target=&quot;_blank&quot;}。
 
-次に、URL の末尾に画像処理パラメーターを追加します。URL フィールドで、画像名の右側に「`?wid=500`」と入力し、**[!UICONTROL Enter]** キーを押します。[試してみる](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=500)。
+次に、URL の末尾に画像処理パラメーターを追加します。URL フィールドで、画像名の右側に「`?wid=500`」と入力し、**[!UICONTROL Enter]** キーを押します。[所要時間](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=500){target=&quot;_blank&quot;}。
 
 時計の新しいレンディションが生成されます。この簡単な演習で理解するべき重要な点は、画像の幅を変更すると、表示される画像が 100% 動的に生成されることです。
 
@@ -63,9 +63,9 @@ URL の最初の部分（赤）は、サーバードメイン自体を参照し�
 
 Dynamic Media には、web ページ上の画像アセットの微調整に使用できる、多数の画像処理パラメーターがあります。[こちらからリストを確認](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=ja)できます。
 
-次に、時計の画像に回転パラメーターを追加してみます。URL パスの末尾、`wid=1000` の直後に、`&rotate=90` と入力して **[!UICONTROL Enter]** キーを押します。[試してみる](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9)。
+次に、時計の画像に回転パラメーターを追加してみます。URL パスの末尾、`wid=1000` の直後に、`&rotate=90` と入力して **[!UICONTROL Enter]** キーを押します。[所要時間](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target=&quot;_blank&quot;}。
 
-時計はまだ少し左に歪んでいます。回転の値を `90` から `92` に変更し、**[!UICONTROL Enter]** キーを押します。[試してみる](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9)。
+時計はまだ少し左に歪んでいます。回転の値を `90` から `92` に変更し、**[!UICONTROL Enter]** キーを押します。[試してみる](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9)。{target=&quot;_blank&quot;}。
 
 先ほどと同様に、**[!UICONTROL Enter]** キーが押された瞬間に、新しいレンディションの腕時計がほぼ瞬時に生成されます。Dynamic Media が 80 万件を超える画像リクエストを、混雑する週末や主要な休日でも&#x200B;_秒_&#x200B;単位で配信できる理由は、このようなパフォーマンスにあります。
 
@@ -127,7 +127,7 @@ _「詳細」タブのオプションを選択して画像プリセットを作�
 ![画像プリセット *Medium* を適用して、画像のレンディションを生成](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _画像プリセット Medium を適用して、画像のレンディションを生成。_
 
-URL をコピーし、それをブラウザーに貼り付けて、画像の外観を確認します。[試してみる](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$)。ブラウザーで、フル URL パスに画像プリセットの名前 _Medium_ が表示されます。
+URL をコピーし、それをブラウザーに貼り付けて、画像の外観を確認します。[所要時間](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}。 ブラウザーで、フル URL パスに画像プリセットの名前 _Medium_ が表示されます。
 
 表示された画像の鮮明さを確認できると思います。この品質は、チョコレートボウルを撮影した方法に一部起因します。また、Dynamic Media では、デジタルチャネルに配信される画像よりも大きな画像を保存できることも一因です。
 
@@ -158,7 +158,7 @@ _画像セットの作成の開始。_
 
 画像セットを作成するには、「**[!UICONTROL 作成]**」プルダウンメニューから&#x200B;**[!UICONTROL 画像セット]**&#x200B;を選択します。メニューには、**[!UICONTROL 混在メディアセット]**、**[!UICONTROL スピンセット]**、**[!UICONTROL カルーセルセット]**&#x200B;を作成するためのオプションもあります。これらのセットは、画像セットと同じ方法で作成します。
 
-混在メディアセットには、画像、見本セット、スピンセット、ビデオおよびアダプティブビデオセットを含めることができます。[試してみる](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample)。スピンセットは、物体を回転させて調べるという現実世界の操作をシミュレートしたものです。スピンセットを使用すると、主要なビジュアルをあらゆる角度から視覚的に確認できます。[試してみる](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&amp;stagesize=500,400)。
+混在メディアセットには、画像、見本セット、スピンセット、ビデオおよびアダプティブビデオセットを含めることができます。[試してみる](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample)。スピンセットは、物体を回転させて調べるという現実世界の操作をシミュレートしたものです。スピンセットを使用すると、主要なビジュアルをあらゆる角度から視覚的に確認できます。[所要時間](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&amp;stagesize=500,400){target=&quot;_blank&quot;}。
 
 画像セットの作成は簡単です。セットに含める画像アセットを追加するだけです。
 
@@ -184,13 +184,13 @@ _「ビューア」オプションを選択した `Running` 画像セットの�
 ![Flyout ビューアを適用した Running 画像セット](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
 _Flyout ビューアを適用した `Running` 画像セット_
 
-ここでは、`Flyout` ビューアが選択されました。この時点で、ビューアで画像セットをプレビューできます。ただし、顧客が表示するときのように、ブラウザーで表示するのが最適です。左下にある **[!UICONTROL URL]** を選択し、URL をコピーしてブラウザーに貼り付けます。[試してみる](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout)。
+ここでは、`Flyout` ビューアが選択されました。この時点で、ビューアで画像セットをプレビューできます。ただし、顧客が表示するときのように、ブラウザーで表示するのが最適です。左下にある **[!UICONTROL URL]** を選択し、URL をコピーしてブラウザーに貼り付けます。[所要時間](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout){target=&quot;_blank&quot;}。
 
 単一の URL で、web サイト上で画像セットとビューアが使用できます。前の例で、「URL」ボタンの右に「**[!UICONTROL 埋め込み]**」ボタンがあることに気づいたでしょうか。「**[!UICONTROL 埋め込み]**」を選択すると、この画像セット／ビューアのコードをコピーして、web ページまたは Experience Manager Sites コンポーネントに追加できます。
 
 Flyout ビューアは、既定の標準提供ビューアで、プロパティを編集できます。または、画像プリセットの作成と同様に、独自のカスタムビューアを作成できます。
 
-ここで、セールスチームとマーケティングチームが Flyout ビューアが気に入らないとします。ズーム機能は気に入っているのですが、顧客には直接シューズの上でズーム効果を見てほしいと考えています。その場合は、InlineZoom ビューアを画像セットに適用し、その URL をブラウザーにコピー＆ペーストして、動作を確認します。[試してみる](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom)。
+ここで、セールスチームとマーケティングチームが Flyout ビューアが気に入らないとします。ズーム機能は気に入っているのですが、顧客には直接シューズの上でズーム効果を見てほしいと考えています。その場合は、InlineZoom ビューアを画像セットに適用し、その URL をブラウザーにコピー＆ペーストして、動作を確認します。[所要時間](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target=&quot;_blank&quot;}。
 
 マウスポインターをシューズの上に置くと、画像が拡大表示され、ポインターを動かして詳細を確認できます。これが可能な理由は、Dynamic Media に最初にアップロードされた画像のサイズです。
 
@@ -200,8 +200,8 @@ Flyout ビューアは、既定の標準提供ビューアで、プロパティ�
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 
-* 画像アセットに適用された `ZoomVertical_dark` ビューア。[試してみる](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark)。
-* 画像に適用された `Zoom_light` ビューア[試してみる](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light)。
+* 画像アセットに適用された `ZoomVertical_dark` ビューア。[所要時間](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark){target=&quot;_blank&quot;}。
+* 画像に適用された `Zoom_light` ビューア[所要時間](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light){target=&quot;_blank&quot;}。
 
 ## オプション - 詳細情報
 

@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: aea668753222e981a7f2c8bd71bc6c790aa32a15
+source-git-commit: 1200dc41af22ae8f34f33d176de1c0db7c7ae424
 workflow-type: tm+mt
-source-wordcount: '3710'
+source-wordcount: '3712'
 ht-degree: 99%
 
 ---
@@ -254,7 +254,7 @@ CMYK で配信しようとは思わないでしょう。その理由さえわか
 ![「Large」画像プリセットに基づくアセットのレンディションのプレビュー](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _選択した「Large」画像プリセットに基づくアセットのレンディションのプレビュー。「URL」ボタンをクリックしました。結果の URL パスには「Large」画像プリセット名が含まれており、このパスを web ページで使用できます。_
 
-上記の URL は実際のものです。[試してみる](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$)。
+上記の URL は実際のものです。[所要時間](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target=&quot;_blank&quot;}。
 
 アセットをプレビューするもう 1 つの方法は、画像アセットを選択したあと、_ビューア_&#x200B;プリセットを選択することです（下図を参照）。
 
