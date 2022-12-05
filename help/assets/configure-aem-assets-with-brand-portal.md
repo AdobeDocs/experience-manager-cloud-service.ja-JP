@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 54057d6b5563de3455dddb7866c7c93a3b0294ec
+source-git-commit: 85de154adbd0bc09aa9960665826c36af05b3a56
 workflow-type: tm+mt
-source-wordcount: '2420'
-ht-degree: 62%
+source-wordcount: '2478'
+ht-degree: 61%
 
 ---
 
@@ -397,6 +397,16 @@ Brand Portal Cloud Service を設定するには、次の手順を実行しま�
    Experience Manager Assets as a [!DNL Cloud Service] インスタンスがBrand Portalテナントで設定されました。
 
 これで、配信エージェントを確認し、Brand Portal にアセットを公開することで、設定をテストできます。
+
+**セキュアプ許可リストレビューが有効な場合に SPS でエグレス IP を**
+Dynamic Media-Scene7を [セキュアプレビューが有効になっています](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) （会社の場合）、Scene7の会社管理者にお勧めします。 [公許可リスト開エグレス IP の](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) SPS(Scene7 Publishing System)Flash UI を使用する各地域用。
+エグレス IP は次のとおりです。
+
+| **地域** | **エグレス IP** |
+|--- |--- |
+| 該当なし | 130.248.160.68,  20.94.203.130 |
+| EMEA | 185.34.189.3,  51.132.146.75 |
+| APAC | 63.140.44.54 |
 
 <!--
 ### Test configuration {#test-configuration}
