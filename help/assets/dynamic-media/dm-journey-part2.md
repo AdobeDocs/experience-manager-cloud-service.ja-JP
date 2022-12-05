@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 1200dc41af22ae8f34f33d176de1c0db7c7ae424
+source-git-commit: 9e425601c493740050d61e8025ea3f9e3dbdc4d8
 workflow-type: tm+mt
-source-wordcount: '2900'
+source-wordcount: '2902'
 ht-degree: 98%
 
 ---
@@ -59,7 +59,8 @@ URL の最初の部分（赤）は、サーバードメイン自体を参照し�
 
 時計の新しいレンディションが生成されます。この簡単な演習で理解するべき重要な点は、画像の幅を変更すると、表示される画像が 100% 動的に生成されることです。
 
-次に、幅の値 `500` ピクセルを `1000` ピクセルに変更し、**[!UICONTROL Enter]** キーを押します。[試してみる](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000)。**[!UICONTROL Enter]** キーが押された瞬間、ブラウザーは Dynamic Media Image Server に戻ります。入力した新しい幅の値に基づいて、新しいレンディションの時計が生成され、新しい画像がブラウザーに配信されてキャッシュされます。
+次に、幅の値 `500` ピクセルを `1000` ピクセルに変更し、**[!UICONTROL Enter]** キーを押します。[所要時間](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}.
+**[!UICONTROL Enter]** キーが押された瞬間、ブラウザーは Dynamic Media Image Server に戻ります。入力した新しい幅の値に基づいて、新しいレンディションの時計が生成され、新しい画像がブラウザーに配信されてキャッシュされます。
 
 Dynamic Media には、web ページ上の画像アセットの微調整に使用できる、多数の画像処理パラメーターがあります。[こちらからリストを確認](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=ja)できます。
 
@@ -127,7 +128,9 @@ _「詳細」タブのオプションを選択して画像プリセットを作�
 ![画像プリセット *Medium* を適用して、画像のレンディションを生成](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _画像プリセット Medium を適用して、画像のレンディションを生成。_
 
-URL をコピーし、それをブラウザーに貼り付けて、画像の外観を確認します。[所要時間](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}。 ブラウザーで、フル URL パスに画像プリセットの名前 _Medium_ が表示されます。
+URL をコピーし、それをブラウザーに貼り付けて、画像の外観を確認します。[所要時間](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}。
+
+ブラウザーで、フル URL パスに画像プリセットの名前 _Medium_ が表示されます。
 
 表示された画像の鮮明さを確認できると思います。この品質は、チョコレートボウルを撮影した方法に一部起因します。また、Dynamic Media では、デジタルチャネルに配信される画像よりも大きな画像を保存できることも一因です。
 
