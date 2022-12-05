@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] への�
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ad5bc4b1ae80421bc843d323c214c64334609de6
+source-git-commit: bc46064093c22d8902a673e76fdb53c626a5cbb0
 workflow-type: tm+mt
 source-wordcount: '3064'
 ht-degree: 93%
@@ -236,7 +236,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 アセットのファイル名の場合、JCR の名前とパスは、`JcrUtil.escapeIllegalJcrChars` API を使用してサニタイズされます。
 
 * Unicode 文字は変更されません。
-* 特殊文字を URL エスケープコードに置き換えます。例えば、`new asset.png` は `new%20asset.png` に更新されます。
+* 特殊文字を URL エスケープコードに置き換えます。例えば、`new%asset.png` は `new%25asset.png` に更新されます。
 
    ```
                    URL escape code   
@@ -245,16 +245,14 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    %               %25
    '               %27
    *               %2A
-   .               %2E
    /               %2F
    :               %3A
    [               %5B
-   \n              %5Cn
-   \r              %5Cr
-   \t              %5Ct
+   \n              %0A
+   \r              %0D
+   \t              %09
    ]               %5D
    |               %7C
-   space char      %20
    ```
 
 **一括読み込みでのフォルダー名の処理**
