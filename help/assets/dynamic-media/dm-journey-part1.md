@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
+source-git-commit: aea668753222e981a7f2c8bd71bc6c790aa32a15
 workflow-type: tm+mt
-source-wordcount: '3708'
-ht-degree: 100%
+source-wordcount: '3710'
+ht-degree: 99%
 
 ---
 
@@ -261,7 +261,7 @@ _選択した「Large」画像プリセットに基づくアセットのレン�
 ![ZoomVertical_light ビューアプリセットに基づくアセットのプレビュー](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _選択した「ZoomVertical_light」ビューアプリセットに基づくアセットのプレビュー。画像上でマウスポインター（「`+`」）を移動してズームインしました。「URL」ボタンと「埋め込み」ボタンに注目してください。_
 
-上記の レンディション は実際のものです。[試してみる](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light)。
+上記の レンディション は実際のものです。[所要時間](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target=&quot;_blank&quot;}。
 
 ## オプション - 詳細情報
 
