@@ -2,10 +2,10 @@
 title: エクスペリエンスフラグメント 概要
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントの拡張
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 912ecb02f0f38fc2766a81445c448f869964f94a
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 100%
+source-wordcount: '1651'
+ht-degree: 92%
 
 ---
 
@@ -48,6 +48,19 @@ URL で `.plain.` セレクターを使用すると、プレーン HTML レン�
 プレーンレンディションセレクターでは、追加スクリプトとは異なり、トランスフォーマーを使用します。[Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) がトランスフォーマーとして使用されます。これは次の場所で設定されています。
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
+
+### HTMLレンディション生成の設定 {#configuring-html-rendition-generation}
+
+HTMLレンディションは、Sling Rewriter Pipelines を使用して生成されます。 パイプラインは次の場所で定義されます。 `/libs/experience-fragments/config/rewriter/experiencefragments`. HTML変換サービスでは、次のオプションをサポートしています。
+
+* `allowedCssClasses`
+   * 最終レンディションに残す CSS クラスに一致する RegEx 式。
+   * これは、お客様が特定の CSS クラスを廃止したい場合に役立ちます
+* `allowedTags`
+   * 最終レンディションで許可するHTMLタグのリスト。
+   * デフォルトでは、次のタグを使用できます（設定は不要）。html, head, title, body, img, p, span, ul, li, a, a, a, a, a, a, a, em, strong, h1, h2, h3, h5, h6, br, noscript, div，リンク，スクリプト
+
+オーバーレイを使用してリライターを設定することをお勧めします。 詳しくは、 [AEMでのオーバーレイas a Cloud Service](/help/implementing/developing/introduction/overlays.md)
 
 ## エクスペリエンスフラグメントのテンプレート {#templates-for-experience-fragments}
 
