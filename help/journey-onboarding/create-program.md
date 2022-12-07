@@ -3,10 +3,10 @@ title: プログラムの作成
 description: Cloud Manager で最初のプログラムを作成する方法を説明します。
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
+source-git-commit: 228330465b6266590a5badbfa84644b3d1329033
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 95%
+source-wordcount: '626'
+ht-degree: 91%
 
 ---
 
@@ -38,6 +38,10 @@ Cloud Manager のプログラムは、Cloud Manager の一連の環境を表し�
 * **サンドボックスプログラム**&#x200B;は、通常、トレーニング、デモの実行、イネーブルメント、POC またはドキュメントの目的にかなうように作成されます。
 
 様々な目的があるので、環境の違いによってオプションが異なります。 ただし、環境を作成するプロセスは似ています。 このオンボーディングジャーニーでは、サンドボックス環境を作成します。
+
+>[!TIP]
+>
+>実稼動プログラムを作成する必要がある場合は、 [その他のリソース](#additional-resources) プログラムの詳細を説明するドキュメントへのリンクの節を参照してください。
 
 ## サンドボックスプログラムの作成 {#create-sandbox}
 

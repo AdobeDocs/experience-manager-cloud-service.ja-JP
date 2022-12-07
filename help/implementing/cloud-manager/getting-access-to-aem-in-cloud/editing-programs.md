@@ -2,10 +2,10 @@
 title: プログラムの編集
 description: 実稼動およびサンドボックスプログラムを編集し、作成後にオプションを調整する方法について説明します。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
+source-git-commit: b56b8b448060cd446c6f17689882bc0515e27d25
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 100%
+source-wordcount: '513'
+ht-degree: 87%
 
 ---
 
@@ -55,6 +55,12 @@ ht-degree: 100%
 1. 「**更新**」をクリックして、プログラムに対する変更を保存します。
 
 ソリューションやアドオンの追加や削除など、プログラムが編集されるたびに、その変更内容は次回のデプロイメント後に有効になります。
+
+実稼動プログラムでセキュリティが強化されている場合は、 **セキュリティの強化** タブが **プログラムを編集** ウィンドウが開き、プログラムに対して機能がアクティブであることが確認されます。
+
+![プログラムのセキュリティ強化](assets/edit-program-enhanced.png)
+
+この設定は、プログラムの作成後は変更できません。 拡張セキュリティオプションの詳細については、 [実稼働プログラムの作成](creating-production-programs.md) 文書。
 
 ## サンドボックスプログラムの削除 {#delete-sandbox-program}
 
