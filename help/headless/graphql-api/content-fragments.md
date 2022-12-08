@@ -3,10 +3,10 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: f773671e3c62e2dff6f843d42a5b36211e2d1fc3
-workflow-type: ht
-source-wordcount: '2708'
-ht-degree: 100%
+source-git-commit: 9ad36e1b81d41a49cd318bbbb6ff8f4aaf6efd4a
+workflow-type: tm+mt
+source-wordcount: '4179'
+ht-degree: 60%
 
 ---
 
@@ -101,18 +101,22 @@ GraphQL では、次のいずれかを返すクエリを実行できます。
 
 * **[エントリのリスト](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-また、次の操作も実行できます。
+AEMは、クエリ（両方のタイプ）をに変換する機能を提供します。 [キャッシュ可能な永続クエリ](/help/headless/graphql-api/persisted-queries.md) Dispatcher と CDN によって
 
-* [（キャッシュされる）永続的クエリ](/help/headless/graphql-api/persisted-queries.md)
+### GraphQLクエリのベストプラクティス（Dispatcher と CDN） {#graphql-query-best-practices}
 
-### GraphQL クエリのベストプラクティス（Dispatcher） {#graphql-query-best-practices}
-
-[永続クエリ](/help/headless/graphql-api/persisted-queries.md)が、以下の理由から推奨される方式です。
+この [永続クエリ](/help/headless/graphql-api/persisted-queries.md) パブリッシュインスタンスでは、次のように使用することをお勧めします。
 
 * キャッシュされます
 * AEM as a Cloud Service で一元管理されます
 
-直接クエリや POST クエリは、キャッシュされないのでお勧めしません。そのため、デフォルトのインスタンスでは、Dispatcher はそれらのクエリをブロックするように設定されています。
+>[!NOTE]
+>
+>通常、オーサー環境には Dispatcher/CDN がないので、そこでの永続化されたクエリの使用に利益はありません。テスト以外に
+
+POST要求を使用するGraphQLクエリはキャッシュされないので、お勧めしません。そのため、デフォルトインスタンスでは、Dispatcher は、このようなクエリをブロックするように設定されています。
+
+GraphQLはGETリクエストもサポートしますが、これらの制限（URL の長さなど）に達して、永続化クエリを使用するのを避けることができます。
 
 >[!NOTE]
 >
@@ -121,6 +125,8 @@ GraphQL では、次のいずれかを返すクエリを実行できます。
 >* `ENABLE_GRAPHQL_ENDPOINT` という Cloud Manager 環境変数を作成します
 >* （値：`true`）
 
+
+<!-- maybe add a link to the documentation that explains how to create that environment variable -->
 
 >[!NOTE]
 >
@@ -146,6 +152,10 @@ GraphQL では、次のいずれかを返すクエリを実行できます。
 
 Assets へのアクセスに必要な権限です。
 
+GraphQLクエリは、基になるリクエストのAEMユーザーの権限で実行されます。 一部のフラグメント（Assets として保存）への読み取りアクセス権を持っていない場合、ユーザーは結果セットに含まれません。
+
+また、GraphQLクエリを実行するには、ユーザーがGraphQLエンドポイントにアクセスできる必要があります。
+
 ## スキーマ生成 {#schema-generation}
 
 GraphQL は、厳密に型指定された API です。つまり、データは型別に明確に構造化され編成される必要があります。
@@ -160,7 +170,7 @@ GraphQL の仕様には、特定のインスタンス上のデータをクエリ
 >
 >つまり、漏洩するおそれがあるので、機密データが使用可能になっていないことを確認する必要があります。例えば、これには、モデル定義のフィールド名として存在する可能性のある情報が含まれます。
 
-例えば、ユーザーが `Article` という名前のコンテンツフラグメントモデルを作成した場合、AEM は `ArticleModel` 型のオブジェクト `article` を生成します。この型に含まれるフィールドは、モデルで定義されているフィールドとデータ型に対応しています。
+例えば、ユーザーが `Article`を生成した場合、AEMはGraphQLタイプを生成します `ArticleModel`. この型に含まれるフィールドは、モデルで定義されているフィールドとデータ型に対応しています。さらに、このタイプに対して動作するクエリのエントリポイント（例： ）が作成されます。 `articleByPath` または `articleList`.
 
 1. コンテンツフラグメントモデル：
 
@@ -173,11 +183,15 @@ GraphQL の仕様には、特定のインスタンス上のデータをクエリ
 
    * そのうちの 3 つ（`author`、`main`、`referencearticle`）は、ユーザーが管理しています。
 
-   * その他のフィールド（この例では `_path`、`_metadata`、`_variations`）は AEM によって自動的に追加されたもので、特定のコンテンツフラグメントに関する情報を提供する便利な手段となっています。これらの[ヘルパーフィールド](#helper-fields)は、ユーザーが定義したものと自動生成されたものを区別するために、先頭に `_` が付いています。
+   * その他のフィールドはAEMによって自動的に追加され、特定のコンテンツフラグメントに関する情報を提供する便利な方法を示します。この例では、 [ヘルパーフィールド](#helper-fields)) `_path`, `_metadata`, `_variations`.
 
 1. ユーザーが Article モデルに基づいてコンテンツフラグメントを作成すると、GraphQL を使用してそれをクエリできます。例については、（[GraphQL で使用するコンテンツフラグメント構造のサンプル](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)に基づいた）[サンプルクエリ](/help/headless/graphql-api/sample-queries.md#graphql-sample-queries)を参照してください。
 
 AEM 用 GraphQL では、スキーマには柔軟性があります。つまり、コンテンツフラグメントモデルを作成、更新、削除するたびに、スキーマが自動生成されます。また、コンテンツフラグメントモデルを更新すると、データスキーマキャッシュも更新されます。
+
+<!-- move the following to a separate "in depth" page -->
+
+また、コンテンツフラグメントモデルを更新すると、データスキーマキャッシュも更新されます。
 
 Sites GraphQL サービスは、コンテンツフラグメントモデルに対する変更を（バックグラウンドで）リッスンします。更新が検出されると、スキーマのその部分だけが再生成されます。この最適化により、時間が節約され、安定性も確保されます。
 
@@ -199,6 +213,8 @@ Sites GraphQL サービスは、コンテンツフラグメントモデルに対
 
 スキーマは、GraphQL クエリと同じエンドポイントを通じて提供され、クライアントはスキーマが拡張子 `GQLschema` で呼び出されることに対処します。例えば、`/content/cq:graphql/global/endpoint.GQLschema` で単純な `GET` リクエストを実行すると、`text/x-graphql-schema;charset=iso-8859-1` の Content-type を持つスキーマが出力されます。
 
+<!-- move through to here to a separate "in depth" page -->
+
 ### スキーマの生成 - 未公開のモデル {#schema-generation-unpublished-models}
 
 コンテンツフラグメントがネストされると、親のコンテンツフラグメントモデルは公開されますが、参照モデルは公開されません。
@@ -215,46 +231,46 @@ Sites GraphQL サービスは、コンテンツフラグメントモデルに対
 
 * ユーザーが生成するフィールド
 
-   選択された[フィールドタイプ](#field-types)を使用して、コンテンツフラグメントモデルの設定方法に基づいてフィールドが作成されます。フィールド名は、**データタイプ**&#x200B;の「**プロパティ名**」フィールドから取得されます。
+   次の項目を選択： [データタイプ](#Data-types) は、コンテンツフラグメントモデルの設定方法に基づいてフィールドを作成するために使用します。 フィールド名は **プロパティ名** フィールド **データタイプ** タブをクリックします。
 
-   * また、**レンダリング時の名前**&#x200B;プロパティも考慮する必要があります。ユーザーが特定のデータ型を、例えば、1 行のテキストか複数フィールドのどちらかとして設定できるからです。
+   * また、 **レンダリング形式** ユーザーが特定のデータタイプを設定できるので、考慮に入れるように設定する必要があります。 例えば、1 行のテキストフィールドに複数の 1 行のテキストを含めるように設定するには、「 `multifield` をドロップダウンから選択します。
 
 * AEM 用 GraphQL が生成する多数の[ヘルパーフィールド](#helper-fields)
 
-   これらは、コンテンツフラグメントを識別するためや、コンテンツフラグメントに関する詳細を取得するために使用されます。
-
-### フィールドタイプ {#field-types}
+### データタイプ {#data-types}
 
 AEM 用 GraphQL では一連のタイプをサポートしています。サポートされているすべてのコンテンツフラグメントモデルデータ型と、それに対応する GraphQL 型を以下の表に示します。
 
 | コンテンツフラグメントモデル - データ型 | GraphQL の型 | 説明 |
 |--- |--- |--- |
 | 1 行のテキスト | String、[String] |  作成者名、場所名などの単純な文字列に使用します。 |
-| 複数行テキスト | String |  記事の本文などのテキストを出力するために使用します |
+| 複数行テキスト | String, [String] |  記事の本文などのテキストを出力するために使用します |
 | Number |  Float、[Float] | 浮動小数点数と整数を表示するために使用します |
 | Boolean |  Boolean |  チェックボックスを表示するために使用します（単純な真／偽のステートメント） |
 | 日時 | Calendar |  日時を ISO 8086 形式で表示するために使用します。選択したタイプに応じて、AEM GraphQL で使用できるフレーバーは、`onlyDate`、`onlyTime`、`dateTime` の 3 つです。 |
 | 定義済みリスト |  String |  モデルの作成時に定義されたオプションのリストに含まれるオプションを表示するために使用します |
 |  タグ |  [String] |  AEM で使用されているタグを表す文字列のリストを表示するために使用します |
-| コンテンツ参照 |  String |  AEM 内の別のアセットへのパスを表示するために使用します |
+| コンテンツ参照 |  文字列, [文字列] |  AEM 内の別のアセットへのパスを表示するために使用します |
 | フラグメント参照 |  *モデルタイプ* |  特定のモデルタイプの別のコンテンツフラグメントを参照するために使用します（モデルの作成時に定義されます） |
 
 ### ヘルパーフィールド {#helper-fields}
 
 ユーザー生成フィールドのデータ型に加えて、AEM 用 GraphQL では、コンテンツフラグメントの識別やコンテンツフラグメントに関する追加情報の提供に役立つ多数の&#x200B;*ヘルパー*&#x200B;フィールドも生成されます。
 
-#### パス {#path}
+これらの[ヘルパーフィールド](#helper-fields)は、ユーザーが定義したものと自動生成されたものを区別するために、先頭に `_` が付いています。
 
-パスフィールドは、GraphQL で識別子として使用されます。これは、AEM リポジトリ内のコンテンツフラグメントアセットのパスを表します。これをコンテンツフラグメントの識別子として選択した理由は次のとおりです。
+#### パス  {#path}
+
+パスフィールドは、AEM GraphQLで識別子として使用されます。 これは、AEM リポジトリ内のコンテンツフラグメントアセットのパスを表します。これをコンテンツフラグメントの識別子として選択した理由は次のとおりです。
 
 * AEM 内で一意である
 * 取得しやすい
 
-次のコードでは、コンテンツフラグメントモデル `Person` に基づいて作成されたすべてのコンテンツフラグメントのパスを表示します。
+次のコードは、コンテンツフラグメントモデルに基づいて作成されたすべてのコンテンツフラグメントのパスを表示します `Author`（ WKND チュートリアルで提供される）
 
-```xml
+```graphql
 {
-  personList {
+  authorList {
     items {
       _path
     }
@@ -264,13 +280,13 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 特定のタイプのコンテンツフラグメントを 1 つ取得するには、まずそのパスも決定する必要があります。次に例を示します。
 
-```xml
+```graphql
 {
-  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/sofia-sj-berg") {
     item {
       _path
       firstName
-      name
+      lastName
     }
   }
 }
@@ -303,11 +319,10 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 メタデータをクエリするには、次のようにします。
 
-```xml
+```graphql
 {
-  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/sofia-sj-berg") {
     item {
-      _path
       _metadata {
         stringMetadata {
           name
@@ -334,9 +349,9 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 コンテンツフラグメントのバリエーションに対するクエリを簡略化するために、`_variations` フィールドが実装されています。次に例を示します。
 
-```xml
+```graphql
 {
-  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/ian-provo") {
     item {
       _variations
     }
@@ -344,11 +359,15 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 }
 ```
 
+>[!NOTE]
+>
+>なお、 `_variations` フィールドに次の値が含まれていない `master` バリエーション ( 技術的には元のデータ ( *マスター* （UI 内）は、明示的なバリエーションとは見なされません。
+
 詳しくは、[サンプルクエリ - 名前付きバリエーションを持つすべての都市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)を参照してください。
 
 >[!NOTE]
 >
->指定されたバリエーションがコンテンツフラグメントに対して存在しない場合、マスターバリエーションが（フォールバック）デフォルトとして返されます。
+>コンテンツフラグメントに対して指定されたバリエーションが存在しない場合は、元のデータ（マスターバリエーションとも呼ばれます）が（フォールバック）デフォルトとして返されます。
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -358,24 +377,51 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 GraphQL では、クエリに変数を含めることができます。詳しくは、[GraphQL の変数に関するドキュメント](https://graphql.org/learn/queries/#variables)を参照してください。
 
-例えば、特定のバリエーションを持つ `Article` タイプのコンテンツフラグメントをすべて取得するには、次のように、GraphiQL で変数 `variation` を指定します。
+例えば、すべてのタイプのコンテンツフラグメントを取得するには、次のようにします。 `Author` 特定のバリエーション（使用可能な場合）で、引数を指定できます `variation` （GraphiQL 内）
 
 ![GraphQL 変数](assets/cfm-graphqlapi-03.png "GraphQL 変数")
 
-```xml
-### query
-query GetArticlesByVariation($variation: String!) {
-    articleList(variation: $variation) {
-        items {
-            _path
-            author
-        }
+**クエリ**:
+
+```graphql
+query($variation: String!) {
+  authorList(variation: $variation) {
+    items {
+      _variation
+      lastName
+      firstName
     }
+  }
 }
- 
-### in query variables
+```
+
+**クエリ変数**:
+
+```json
 {
-    "variation": "Introduction"
+  "variation": "another"
+}
+```
+
+このクエリは、作成者の完全なリストを返します。 作成者 ( `another` バリエーションは元のデータ (`_variation` レポートの作成 `master` （この場合）。
+
+指定したバリエーションを提供する作成者にリストを制限する場合（および元のデータにフォールバックされる作成者をスキップする場合）、 [フィルター](#filtering):
+
+```graphql
+query($variation: String!) {
+  authorList(variation: $variation, filter: {
+    _variation: {
+      _expressions: {
+        value: $variation
+      }
+    }
+  }) {
+    items {
+      _variation
+      lastName
+      firstName
+    }
+  }
 }
 ```
 
@@ -387,18 +433,22 @@ GraphQL では、GraphQL ディレクティブと呼ばれる変数に基づい�
 
 ![GraphQL ディレクティブ](assets/cfm-graphqlapi-04.png "GraphQL ディレクティブ")
 
-```xml
-### query
+**クエリ**:
+
+```graphql
 query GetAdventureByType($includePrice: Boolean!) {
   adventureList {
     items {
-      adventureTitle
-      adventurePrice @include(if: $includePrice)
+      title
+      price @include(if: $includePrice)
     }
   }
 }
- 
-### in query variables
+```
+
+**クエリ変数**:
+
+```json
 {
     "includePrice": true
 }
@@ -410,30 +460,93 @@ GraphQL クエリでフィルタリングを使用して、特定のデータを
 
 フィルタリングでは、論理演算子と論理式に基づいた構文を使用します。
 
-例えば、次の（基本的な）クエリでは、`Jobs` または `Smith` という名前を持つすべての人を抜き出します。
+最も原子的な部分は、特定のフィールドの内容に適用できる単一の式です。 フィールドの内容を指定された定数値と比較します。
 
-```xml
-query {
-  personList(filter: {
-    name: {
+例えば、式
+
+```graphql
+{
+  value: "some text"
+  _op: EQUALS
+}
+```
+
+フィールドの内容と値を比較します `some text` コンテンツが値と等しい場合にが成功します。 そうしないと、式は失敗します。
+
+ 
+
+次の演算子を使用して、フィールドを特定の値と比較できます。
+
+| 演算子 | タイプ | 次の場合、式は成功します。 |
+|--- |--- |--- |
+| `EQUALS` | `String`、`ID`、`Boolean` | 値はフィールドの内容とまったく同じです |
+| `EQUALS_NOT` | `String`、`ID` | 値は *not* フィールドのコンテンツと同じ |
+| `CONTAINS` | `String` | ...フィールドのコンテンツに値 (`{ value: "mas", _op: CONTAINS }` 一致する `Christmas`, `Xmas`, `master`, ...) |
+| `CONTAINS_NOT` | `String` | ...フィールドの内容は次の処理を行います。 *not* 値を含む |
+| `STARTS_WITH` | `ID` | ID が特定の値 (`{ value: "/content/dam/", _op: STARTS_WITH` 一致する `/content/dam/path/to/fragment`ではなく `/namespace/content/dam/something` |
+| `EQUAL` | `Int`、`Float` | 値はフィールドの内容とまったく同じです |
+| `UNEQUAL` | `Int`、`Float` | 値は *not* フィールドのコンテンツと同じ |
+| `GREATER` | `Int`、`Float` | フィールドの内容が値より大きい |
+| `GREATER_EQUAL` | `Int`、`Float` | フィールドの内容が値以上です |
+| `LOWER` | `Int`、`Float` | フィールドの内容が値より小さい |
+| `LOWER_EQUAL` | `Int`、`Float` | フィールドの内容が値以下です |
+| `AT` | `Calendar`、`Date`、`Time` | フィールドの内容は、値と完全に同じです（タイムゾーン設定を含む）。 |
+| `NOT_AT` | `Calendar`、`Date`、`Time` | ...フィールドの内容は次のとおりです。 *not* 値と同じ |
+| `BEFORE` | `Calendar`、`Date`、`Time` | ...値で示されるポイントインタイムが、フィールドのコンテンツで示されるポイントインタイムの前にある場合。 |
+| `AT_OR_BEFORE` | `Calendar`、`Date`、`Time` | ...値で示される時点が、フィールドのコンテンツで示される同じ時点の前または前にある |
+| `AFTER` | `Calendar`、`Date`、`Time` | ...値で示されるポイントインタイムが、フィールドのコンテンツで示されるポイントインタイムの後になっている。 |
+| `AT_OR_AFTER` | `Calendar`、`Date`、`Time` | ...値で示される時点が、フィールドのコンテンツで示される時点の後または同じ時点にある |
+
+また、式の評価方法を変更する追加のオプションを指定できるタイプもあります。
+
+| オプション | タイプ | 説明 |
+|--- |--- |--- |
+| _ignoreCase | 文字列 | 文字列の大文字と小文字を無視します ( 例： `time` 一致する `TIME`, `time`, `tImE`, ... |
+| _感性 | 浮動小数 | 浮動小数値の特定の利益を同じとみなす（浮動小数値の内部表現による技術的な制限を回避する）ことを許可します。このオプションはパフォーマンスに悪影響を与える可能性があるので、避ける必要があります |
+
+式は、論理演算子 (`_logOp`):
+
+* `OR`  — 少なくとも 1 つの式が成功した場合、式のセットは成功します
+* `AND`  — すべての式が成功した場合、式のセットは成功します（デフォルト）
+
+各フィールドは、独自の式のセットでフィルタリングできます。 フィルター引数で指定されたすべてのフィールドの式セットは、最終的に独自の論理演算子で結合されます。
+
+フィルター定義 ( `filter` 引数をクエリに渡す ) には、次が含まれます。
+
+* 各フィールドのサブ定義 ( フィールド名を使用してアクセスできます ( 例： `lastName` フィールドの `lastName` フィールドタイプのフィールド )
+* 各サブ定義には、 `_expressions` 配列を作成し、式セットと `_logOp` 式を組み合わせる論理演算子を定義するフィールド
+* 各式は、値 (`value` フィールド ) と演算子 (`_operator` フィールド ) フィールドの内容を比較する必要があります
+
+省略できます `_logOp` 項目を `AND` および `_operator` 等価を確認する場合は、これらがデフォルト値になるので、等価を確認します。
+
+次の例は、 `lastName` / `Provo` または含む `sjö`（この場合とは無関係）。
+
+```graphql
+{
+  authorList(filter: {
+    lastname: {
       _logOp: OR
       _expressions: [
         {
-          value: "Jobs"
+          value: "sjö",
+          _operator: CONTAINS,
+          _ignoreCase: true
         },
         {
-          value: "Smith"
+          value: "Provo"
         }
       ]
     }
   }) {
     items {
-      name
+      lastName
       firstName
     }
   }
 }
 ```
+
+ネストされたフィールドに対してフィルタを適用することもできますが、パフォーマンスの問題を引き起こす可能性があるので、お勧めしません。
 
 その他の例については、以下を参照してください。
 
@@ -445,67 +558,120 @@ query {
 
 * [WKND プロジェクトに基づいたサンプルクエリ](/help/headless/graphql-api/sample-queries.md#sample-queries-using-wknd-project)
 
-<!-- CQDOC-19418 -->
+## 並べ替え {#sorting}
 
-<!--
-## Sorting {#sorting}
+この機能を使用すると、指定したフィールドに従ってクエリ結果を並べ替えることができます。
 
-This feature allows you to sort the query results according to a specified field.
+並べ替え条件：
 
-For example:
+* は、フィールドパスを表す値のコンマ区切りリストです
+   * リストの最初のフィールドでは主な並べ替え順が定義され、2 番目のフィールドでは主な並べ替え条件の 2 つの値が等しい場合に、3 番目のフィールドでは最初の 2 つの条件が等しい場合などに使用されます。
+   * ドット表記（field1.subfield.subfield など）
+* オプションの注文方向
+   * ASC （昇順）または DESC （降順）;デフォルトの ASC が適用されるので
+   * 方向は、フィールドごとに指定できます。つまり、あるフィールドを昇順で、別のフィールドを降順 (name、firstName DESC) で並べ替えることができます
+
+次に例を示します。
 
 ```graphql
 query {
-  articleList(sort:"author, _uuid DESC") {
+  authorList(sort: "lastName, firstName") {
     items {
-      author
-      _path
+      firstName
+      lastName
     }
   }
 }
 ```
 
-## Paging {#paging}
-
-This feature allows you to perform paging on query types that returns a list. Two methods are provided:
-
-* `offset` and `limit` in a `List` query
-* `first` and `after` in a `Paginated` query
-
-### List query - offset and limit {#list-offset-limit}
-
-In a `...List`query you can use `offset` and `limit` to return a specific subset of results:
-
-* `offset`: Specifies the first data set to return
-* `limit`: Specifies the maximum number of data sets to be returned
-
-For example, to output the page of results containing up to five articles, starting from the fifth article from the *complete* results list:
+また、次のこともおこないます。
 
 ```graphql
-query {
-   articleList(offset: 5, limit:5) {
+{
+  authorList(sort: "lastName DESC, firstName DESC") {
     items {
-      author
-      _path
+        lastName
+        firstName
     }
   }
 }
 ```
+
+<!-- to be included? -->
+
+ネストされたフラグメント内のフィールドでは、 `nestedFragmentname.fieldname`.
 
 >[!NOTE]
 >
->* Paging is impacted by the order to the jcr query result set. By default it uses `jcr:path` to make sure the order is always the same. If a different sort order is used, and if that sorting cannot be done at jcr query level, then there will be a negative performance impact as the paging cannot be done in memory.
+>これは、パフォーマンスに悪影響を与える可能性があります。
+
+次に例を示します。
+
+```graphql
+query {
+  articleList(sort: "authorFragment.lastName")  {
+    items {
+      title
+      authorFragment {
+        firstName
+        lastName
+        birthDay
+      }
+      slug
+    }
+  }
+}
+```
+
+## ページング {#paging}
+
+この機能を使用すると、リストを返すクエリタイプに対してページングを実行できます。 次の 2 つの方法が用意されています。
+
+* `offset` および `limit` 内 `List` クエリ
+* `first` および `after` 内 `Paginated` クエリ
+
+### リストクエリ — オフセットと制限 {#list-offset-limit}
+
+内 `...List`使用できるクエリ `offset` および `limit` 特定の結果サブセットを返すには、次の手順に従います。
+
+* `offset`:返す最初のデータセットを指定します
+* `limit`:返すデータセットの最大数を指定します
+
+例えば、最大 5 つの記事を含む結果のページを、 *完了* 結果リスト：
+
+```graphql
+query {
+   articleList(offset: 5, limit: 5) {
+    items {
+      authorFragment {
+        lastName
+        firstName
+      }
+    }
+  }
+}
+```
+
+<!-- When available link to BP and replace "jcr query level" with a more neutral term. -->
+
+<!-- When available link to BP and replace "jcr query result set" with a more neutral term. -->
+
+>[!NOTE]
 >
->* The higher the offset, the more time it will take to skip the items from the complete jcr query result set. An alternative solution for large result sets is to use the Paginated query with `first` and `after` method.
+>* ページングでは、同じ結果セットの異なるページをリクエストする複数のクエリで正しく機能するには、安定した並べ替え順が必要です。 デフォルトでは、結果セットの各アイテムのリポジトリパスを使用して、順序が常に同じであることを確認します。 異なる並べ替え順を使用し、その並べ替えを jcr クエリレベルで実行できない場合は、ページを決定する前に結果セット全体をメモリに読み込む必要があるので、パフォーマンスに悪影響が出ます。
+>
+>* オフセットが高いほど、jcr クエリの結果セット全体から項目をスキップするのに時間がかかります。 大きな結果セットに対する代替の解決策は、ページ分割されたクエリを `first` および `after` メソッド。
 
-### Paginated query - first and after {#paginated-first-after}
 
-The `...Paginated` query type reuses most of the `...List` query type features (filtering, sorting), but instead of using `offset`/`limit` arguments, it uses the standard `first`/`after` arguments defined by [GraphQL](https://graphql.org/learn/pagination/#pagination-and-edges).
+### ページ分割されたクエリ — 最初と次の後 {#paginated-first-after}
 
-* `first`: The `n` first items to return. The default is `50`.
-* `after`: The cursor-id as returned in the complete result set - if `cursor` is selected.
+この `...Paginated` クエリタイプは、ほとんどの `...List` クエリタイプ機能（フィルタリング、並べ替え）を使用する代わりに、 `offset`/`limit` 引数の場合は、 `first`/`after` で定義された引数 [GraphQL Cursor Connections の仕様](https://relay.dev/graphql/connections.htm). より正式でない紹介は、 [GraphQLはじめに](https://graphql.org/learn/pagination/#pagination-and-edges).
 
-For example, output the page of results containing up to five adventures, starting from the given cursor item in the *complete* results list:
+* `first`:この `n` 返す最初の項目。
+デフォルトは、`50` です。最大値はです。 `100`.
+* `after`:リクエストされたページの先頭を決定するカーソル。カーソルで表される項目は結果セットに含まれないことに注意してください。項目のカーソルは、 `cursor` フィールド `edges` 構造。
+
+例えば、最大 5 つの冒険を含む結果のページを、 *完了* 結果リスト：
 
 ```graphql
 query {
@@ -513,7 +679,7 @@ query {
         edges {
           cursor
           node {
-            adventureTitle
+            title
           }
         }
         pageInfo {
@@ -524,34 +690,37 @@ query {
 }
 ```
 
+<!-- When available link to BP -->
+<!-- Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level. For more information, see the [Best Practices document](link). -->
+
 >[!NOTE]
 >
->* Paging defaults use `_uuid` for ordering to ensure the order of results is always the same. When `sort` is used, `_uuid` is added as a last order-by field.
+>* デフォルトでは、ページングでは、結果の順序が常に同じになるように、フラグメントを表すリポジトリノードの UUID を使用して順序を指定します。 条件 `sort` が使用されている場合、UUID は暗黙的に使用されて一意の並べ替えがおこなわれます。同じ並べ替えキーを持つ 2 つの項目の場合も同様です。
 >
->* Performance is expected to be degraded if sort/filter parameters cannot be executed at jcr query level, as the query first has to gather the results in memory then sort them, then finally apply paging. Therefore it is recommended to use filter/sort fields stored at root level.
--->
+>* ネストされたフィールドに並べ替えとフィルタリングが適用されている場合、内部の技術的制約により、パフォーマンスが低下します。 したがって、ルートレベルで保存されたフィールドのフィルター/並べ替えを使用することをお勧めします。 また、大きなページ分割された結果セットに対してクエリを実行する場合は、この方法をお勧めします。
+
 
 ## AEM 用の GraphQL - 拡張機能の概要 {#graphql-extensions}
 
 AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様に従います。AEM での GraphQL クエリには、次のような拡張機能があります。
 
-<!-- CQDOC-19418 -->
+* 結果のリストを想定している場合：
+   * モデル名に `List` を付け加えます（例：`cityList`）
+   * [サンプルクエリ - すべての都市に関するすべての情報](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)を参照してください
 
-<!--
-* If you expect a list of results:
-  * add `List` to the model name; for example,  `cityList`
-  * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
-  
-  You can then:
-  
-  * [Sort the results](#sorting)
+   これにより、以下のことが可能になります。
 
-  * Return a page of results using either:
+   * [結果の並べ替え](#sorting)
 
-    * [A List query with offset and limit](#list-offset-limit)
-    * [A Paginated query with first and after](#paginated-first-after)
-  * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
--->
+      * `ASC` : 昇順
+      * `DESC` : 降順
+   * 次のいずれかを使用して、結果のページを返します。
+
+      * [オフセットと制限を含むリストクエリ](#list-offset-limit)
+      * [最初と次の後にページ分割されたクエリ](#paginated-first-after)
+   * [サンプルクエリ - すべての都市に関するすべての情報](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)を参照してください
+
+
 
 * 結果が 1 つだけ必要な場合：
    * モデル名（例：city）を使用します
@@ -627,18 +796,6 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 ## 認証 {#authentication}
 
 [コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証](/help/headless/security/authentication.md)を参照してください。
-
-<!-- to be addressed later -->
-
-<!--
-## Sorting {#sorting}
--->
-
-<!-- to be addressed later -->
-
-<!--
-## Paging {#paging}
--->
 
 ## FAQ {#faqs}
 

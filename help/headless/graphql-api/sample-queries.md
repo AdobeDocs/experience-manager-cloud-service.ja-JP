@@ -3,10 +3,10 @@ title: AEM での GraphQL の使用方法 - サンプルコンテンツとサン
 description: GraphQL を AEM と共に使用し、サンプルコンテンツとクエリを調べて、コンテンツをヘッドレスに提供する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: d52372e69af2800703e20f36407a9b381db6264e
-workflow-type: ht
-source-wordcount: '1456'
-ht-degree: 100%
+source-git-commit: dba0223fd05956934fe5a3405f21fcd099637726
+workflow-type: tm+mt
+source-wordcount: '1554'
+ht-degree: 94%
 
 ---
 
@@ -60,7 +60,7 @@ GraphQL クエリの基本と、AEM コンテンツフラグメントとの連�
 
 **サンプルクエリ**
 
-```xml
+```graphql
 {
   __schema {
     types {
@@ -73,7 +73,7 @@ GraphQL クエリの基本と、AEM コンテンツフラグメントとの連�
 
 **サンプル結果**
 
-```xml
+```json
 {
   "data": {
     "__schema": {
@@ -152,7 +152,7 @@ GraphQL クエリの基本と、AEM コンテンツフラグメントとの連�
 すべての都市に関するすべての情報を取得するには、次のような非常に基本的なクエリを使用します。
 **サンプルクエリ**
 
-```xml
+```graphql
 {
   cityList {
     items
@@ -162,7 +162,7 @@ GraphQL クエリの基本と、AEM コンテンツフラグメントとの連�
 
 実行時にクエリが自動的に展開されて、次のように、すべてのフィールドが組み込まれます。
 
-```xml
+```graphql
 {
   cityList {
     items {
@@ -177,7 +177,7 @@ GraphQL クエリの基本と、AEM コンテンツフラグメントとの連�
 
 **サンプル結果**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -236,7 +236,7 @@ GraphQL クエリの基本と、AEM コンテンツフラグメントとの連�
 
 **サンプルクエリ**
 
-```xml
+```graphql
 query {
   cityList {
     items {
@@ -248,7 +248,7 @@ query {
 
 **サンプル結果**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -286,7 +286,7 @@ query {
 
 **サンプルクエリ**
 
-```xml
+```graphql
 {
   cityByPath (_path: "/content/dam/sample-content-fragments/cities/berlin") {
     item {
@@ -302,7 +302,7 @@ query {
 
 **サンプル結果**
 
-```xml
+```json
 {
   "data": {
     "cityByPath": {
@@ -327,7 +327,7 @@ query {
 
 **サンプルクエリ**
 
-```xml
+```graphql
 {
   cityList (variation: "berlin_center") {
     items {
@@ -343,7 +343,7 @@ query {
 
 **サンプル結果**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -370,7 +370,7 @@ query {
 
 **サンプルクエリ**
 
-```xml
+```graphql
 query {
   companyList {
     items {
@@ -399,7 +399,7 @@ query {
 
 **サンプル結果**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -498,7 +498,7 @@ query {
 
 **サンプルクエリ**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -523,7 +523,7 @@ query {
 
 **サンプル結果**
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -552,7 +552,7 @@ query {
 
 **サンプルクエリ**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -574,7 +574,7 @@ query {
 
 **サンプル結果**
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -619,7 +619,7 @@ query {
 
 **サンプルクエリ**
 
-```xml
+```graphql
 query {
   adventureList(
     filter: {
@@ -641,7 +641,7 @@ query {
 
 **サンプル結果**
 
-```xml
+```json
 {
   "data": {
     "adventureList": {
@@ -664,7 +664,7 @@ query {
 
 **サンプルクエリ**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     population: {
@@ -700,7 +700,7 @@ query {
 
 **サンプル結果**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -727,7 +727,7 @@ query {
 
 **サンプルクエリ**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     name: {
@@ -751,7 +751,7 @@ query {
 
 **サンプル結果**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -778,7 +778,7 @@ query {
 
 **サンプルクエリ**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -802,7 +802,7 @@ query {
 
 **サンプル結果**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -836,7 +836,7 @@ query {
 
 **サンプルクエリ**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -862,7 +862,7 @@ query {
 
 **サンプル結果**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -888,7 +888,7 @@ query {
 
 **サンプルクエリ**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -920,7 +920,7 @@ query {
 
 **サンプル結果**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -954,7 +954,7 @@ query {
 
 **サンプルクエリ**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -996,7 +996,7 @@ query {
 
 **サンプル結果**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -1046,7 +1046,7 @@ query {
 
 **サンプルクエリ**
 
-```xml
+```graphql
 query {
   awardList(filter: {
       id: {
@@ -1073,7 +1073,7 @@ query {
 
 **サンプル結果**
 
-```xml
+```json
 {
   "data": {
     "awardList": {
@@ -1110,27 +1110,40 @@ query {
 * 次の URL で入手できるコンテンツフラグメント（およびその他のコンテンツ）：
    `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
+   `http://<hostname>:<port>/assets.html/content/dam/wknd-shared/en`
+
 >[!NOTE]
 >
 >結果は膨大な量になる可能性があるので、ここでは再現されていません。
+
+>[!NOTE]
+>
+>様々なクエリがバリエーションを参照しています `variation1`. これは、標準の WKND パッケージには含まれていません。 テスト用に作成する必要があります。
+>
+>If `variation1` が存在しない場合は、 `master`バリエーションはデフォルトとして返されます。
 
 ### 特定モデルのコンテンツフラグメントのうち指定のプロパティを持つものをすべて取得するサンプルクエリ {#sample-wknd-all-model-properties}
 
 このサンプルクエリでは次のものを検索します。
 
 * `article` タイプのすべてのコンテンツフラグメントについて
-* `path` および `author` プロパティを持つもの。
+* と `_path` と、 `authorFragment`.
 
 **サンプルクエリ**
 
-```xml
+```graphql
 {
   articleList {
     items {
       _path
-      author
+      authorFragment {
+        _path
+        firstName
+        lastName
+        birthDay
+      }
     }
-  }
+ }
 }
 ```
 
@@ -1143,7 +1156,7 @@ query {
 
 **サンプルクエリ**
 
-```xml
+```graphql
 {
   adventureList {
     items {
@@ -1208,12 +1221,17 @@ query {
 
 **サンプルクエリ**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures") {
+  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures") {
     item {
         _path
-        author
+        authorFragment {
+          _path
+          firstName
+          lastName
+          birthDay
+        }
         main {
           html
           markdown
@@ -1234,12 +1252,12 @@ query {
 
 **サンプルクエリ**
 
-```xml
+```graphql
 {
-  adventureByPath(_path: "/content/dam/wknd/en/adventures/riverside-camping-australia/riverside-camping-australia") {
+  adventureByPath(_path: "/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van") {
     item {
       _path
-      adventureTitle
+      title
       _model {
         _path
         title
@@ -1262,15 +1280,15 @@ query {
 
 **サンプルクエリ**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/skitouring/skitouring") {
+  adventureByPath(_path: "/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van") {
     item {
+      _path
+      title
+      _model {
         _path
-        author
-        referencearticle {
-          _path
-          author
+        title
       }
     }
   }
@@ -1288,7 +1306,9 @@ query {
 >
 >フィールド `fragments` のデータタイプは `fragment-reference` で、モデル `Article` および `Adventure` が選択されています。
 
-```xml
+<!-- need replacement query -->
+
+```graphql
 {
   bookmarkList {
     items {
@@ -1323,7 +1343,9 @@ query {
 
 次のクエリは、`_references` を使用して、すべてのコンテンツ参照を返します。
 
-```xml
+<!-- need replacement query -->
+
+```graphql
 {
   bookmarkList {
      _references {
@@ -1363,7 +1385,9 @@ query {
 >
 >フィールド `attachments` のデータタイプは `content-reference` で、様々なフ形式が選択されています。
 
-```xml
+<!-- need replacement query -->
+
+```graphql
 {
   bookmarkList {
     items {
@@ -1405,9 +1429,11 @@ query {
 >
 >RTE インライン参照は、`_references` 内に含まれます。
 
+<!-- need replacement query -->
+
 **サンプルクエリ**
 
-```xml
+```graphql
 {
   bookmarkByPath(_path: "/content/dam/wknd/en/bookmarks/skitouring") {
     item {
@@ -1449,12 +1475,17 @@ query {
 
 **サンプルクエリ**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
     item {
-      _path
-      author
+      authorFragment {
+        _path
+        _variation
+        firstName
+        lastName
+        birthDay
+      }
       main {
         html
         markdown
@@ -1474,12 +1505,19 @@ query {
 
 **サンプルクエリ**
 
-```xml
+```graphql
 {
-  articleList (variation: "variation1") {
+  articleList(variation: "variation1") {
     items {
       _path
-      author
+      _variation
+      authorFragment {
+        _path
+        _variation
+        firstName
+        lastName
+        birthDay
+      }
       main {
         html
         markdown
@@ -1499,12 +1537,17 @@ query {
 
 **サンプルクエリ**
 
-```xml
+```graphql
 { 
-  articleList (_locale: "fr") {
+  articleList(_locale: "fr") {
     items {
       _path
-      author
+      authorFragment {
+        _path
+        firstName
+        lastName
+        birthDay
+      }
       main {
         html
         markdown
@@ -1516,44 +1559,45 @@ query {
 }
 ```
 
-<!-- CQDOC-19418 -->
+### オフセットと制限を使用したリストクエリの例 {#sample-list-offset-limit}
 
-<!--
+このクエリでは次のものを検索します。
 
-### Sample List Query using offset and limit {#sample-list-offset-limit}
+* 5 つまでの記事を含む結果のページ、5 つ目の記事から始まる *完了* 結果リスト
 
-This query interrogates:
+**サンプルクエリ**
 
-* for the page of results containing up to five articles, starting from the fifth article from the *complete* results list
-
-**Sample Query**
-
-```xml
-query {
-   articleList(offset: 5, limit:5) {
+```graphql
+{
+   articleList(offset: 5, limit: 5) {
     items {
-      author
+      authorFragment {
+        _path
+        firstName
+        lastName
+        birthDay
+      }
       _path
     }
   }
 }
 ```
 
-### Sample Pagination Query using first and after  {#sample-pagination-first-after}
+### 最初と後を使用したページネーションクエリの例  {#sample-pagination-first-after}
 
-This query interrogates:
+このクエリでは次のものを検索します。
 
-* for the page of results containing up to five adventures, starting from the given cursor item in the *complete* results list
+* を返します。 *完了* 結果リスト
 
-**Sample Query**
+**サンプルクエリ**
 
-```xml
-query {
+```graphql
+{
     adventurePaginated(first: 5, after: "ODg1MmMyMmEtZTAzMy00MTNjLThiMzMtZGQyMzY5ZTNjN2M1") {
         edges {
           cursor
           node {
-            adventureTitle
+            title
           }
         }
         pageInfo {
@@ -1563,8 +1607,6 @@ query {
     }
 }
 ```
-
--->
 
 ## GraphQL で使用するコンテンツフラグメント構造のサンプル {#content-fragment-structure-graphql}
 
@@ -1592,7 +1634,7 @@ query {
 |--- |--- |--- |
 | 会社名 | 1 行のテキスト |  |
 | CEO | フラグメント参照（1 つ） | [Person](#model-person) |
-| 従業員数 | フラグメント参照（複数フィールド） | [Person](#model-person) |
+| 従業員数 | フラグメント参照（複数フィールド） | [人物](#model-person) |
 
 #### Person（人物） {#model-person}
 
@@ -1654,7 +1696,7 @@ query {
 | ショートカット／ID | title |
 |--- |--- |
 | GB | Gameblitz |
-|  GS | Gamestar |
+|  GS | 配偶星 |
 |  OSC | Oscar |
 
 #### 都市 {#fragment-city}
