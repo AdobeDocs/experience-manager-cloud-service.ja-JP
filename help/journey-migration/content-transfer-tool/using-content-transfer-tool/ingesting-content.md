@@ -2,10 +2,10 @@
 title: Target へのコンテンツの取り込み
 description: Target へのコンテンツの取り込み
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 71370cf59bd1f65db78c2818c118e7d9ec2c9196
+source-git-commit: ee2240eac76d4df372d94152a7c17b6e449ef7c8
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 82%
+source-wordcount: '1181'
+ht-degree: 74%
 
 ---
 
@@ -134,6 +134,14 @@ ht-degree: 82%
 宛先 Cloud Service オーサーサービスのローカル **AEM 管理者** グループに属している場合にのみ、宛先環境への取り込みを開始することができます。AEM 管理者グループに属していない場合は、取り込みを開始しようとすると、次に示すようなエラーが表示されます。管理者に問い合わせてローカルの **AEM 管理者**&#x200B;に追加するよう依頼するか、トークン自体を依頼してから&#x200B;**移行トークン入力**&#x200B;フィールドにペーストすることができます。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
+
+### Release Orchestrator による自動更新は、引き続き有効になっています
+
+Release Orchestrator は、更新を自動的に適用することで、環境を自動的に最新の状態に保ちます。 取り込みの実行中に更新がトリガーされた場合、環境の破損を含む予期しない結果が生じる可能性があります。 これは、取り込みを開始する前にサポートチケットをログに記録する必要がある理由の 1 つです（上記の「注意」を参照）。これにより、Release Orchestrator を一時的に無効にするようにスケジュールできます。
+
+取り込みの開始時に Release Orchestrator が実行中である場合は、UI にこのエラーメッセージが表示されます。 フィールドをチェックし、再度ボタンを押すことで、リスクを受け入れながら、続行することもできます。
+
+![画像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
 ## 次の手順 {#whats-next}
 
