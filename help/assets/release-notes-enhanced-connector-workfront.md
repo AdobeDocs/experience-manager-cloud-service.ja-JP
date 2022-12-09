@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 31198a1279e07d0a1afe41100d3cfe59d02fd686
+source-git-commit: f98704357c38f61e8e7d36b33ad32e9154c611e6
 workflow-type: tm+mt
-source-wordcount: '830'
-ht-degree: 52%
+source-wordcount: '948'
+ht-degree: 46%
 
 ---
 
@@ -15,11 +15,43 @@ ht-degree: 52%
 
 ## リリース日 {#release-date}
 
-の最新バージョン 1.9.5 のリリース日 [!DNL Workfront for Experience Manager enhanced connector] は 2022 年 11 月 11 日です。
+の最新バージョン 1.9.6 のリリース日 [!DNL Workfront for Experience Manager enhanced connector] は 2022 年 12 月 09 日です。
 
 ## リリースのハイライト {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] の最新バージョンには、次の機能強化とバグ修正が含まれています。
+
+**機能強化**
+
+<!--
+
+* Workfront enhanced connector now allows you to use new search parameters to be more specific while defining folder names on large repositories.
+
+-->
+
+* Workfront enhanced connector で、アセットおよびフォルダーに対する全文検索の実行がサポートされるようになりました。
+
+**バグ修正**
+
+* ドキュメントバージョンのメタデータは、WorkfrontとExperience Managerの間で適切に同期されません。
+* WorkfrontでExperience Managerにリンクされたフォルダーを作成する際に、グローバル設定で定義されていないスキーマをフォルダーで使用しているときに問題が発生します。
+* 読み込み時間が予想より長いので、任意のフィールドをクリックすると、メタデータスキーマエディターフォームが応答を停止します。 この問題を解決するために、カスタムフォーム用の特定の OSGi 設定を追加しました。 メタデータスキーマエディターに追加するカスタムフォームの名前は、ログで確認できます。
+
+>[!IMPORTANT]
+>
+>アドビは [ の](../assets/update-workfront-enhanced-connector.md)最新バージョン 1.9.6 へのアップグレード[!DNL Workfront for Experience Manager enhanced connector]を推奨します。
+
+## 既知の問題 {#known-issues}
+
+* AEM 6.4 でプロジェクトにリンクしたフォルダーを設定する際に、Experience Manager は「**[!UICONTROL sub-folders]**」フィールドと「**[!UICONTROL Create linked folder in projects with portfolio]**」フィールドの値を保存しません。設定を保存すると、「**[!UICONTROL sub-folders]**」フィールドの値が **[!UICONTROL undefined]** に、「**[!UICONTROL Create linked folder in projects with portfolio]**」フィールドの値が **[!UICONTROL Default Portfolio]** に、それぞれ自動的に更新されます。
+
+* 従来の Workfront エクスペリエンスを使用している場合、「**[!UICONTROL 詳細]**」ドロップダウンリストで選択できる「**[!UICONTROL 送信先]**」オプションでは、Experience Manager 内のターゲット宛先を選択できません。「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストを使用する場合、「**[!UICONTROL 送信先]**」オプションは正常に機能します。新しい Workfront エクスペリエンスの「**[!UICONTROL 詳細]**」ドロップダウンリストと「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストでは、「**[!UICONTROL 送信先]**」オプションは正常に機能します。
+
+## 以前のリリース {#previous-releases}
+
+### 2022 年 11 月リリース {#november-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 11 月 11 日にリリースされたバージョン 1.9.5 には、次の更新が含まれています。
 
 * Workfrontで複数値のフィールドに値を 1 つだけ定義した場合、そのフィールド値はExperience Managerに適切にマッピングされません。
 
@@ -58,19 +90,6 @@ ht-degree: 52%
    >[!NOTE]
    >
    >この手順を実行する前に誤ったイベント購読を削除した場合は、この手順の最後の手順をスキップできます。
-
-
->[!IMPORTANT]
->
->アドビは [ の](../assets/update-workfront-enhanced-connector.md)最新バージョン 1.9.5 へのアップグレード[!DNL Workfront for Experience Manager enhanced connector]を推奨します。
-
-## 既知の問題 {#known-issues}
-
-* AEM 6.4 でプロジェクトにリンクしたフォルダーを設定する際に、Experience Manager は「**[!UICONTROL sub-folders]**」フィールドと「**[!UICONTROL Create linked folder in projects with portfolio]**」フィールドの値を保存しません。設定を保存すると、「**[!UICONTROL sub-folders]**」フィールドの値が **[!UICONTROL undefined]** に、「**[!UICONTROL Create linked folder in projects with portfolio]**」フィールドの値が **[!UICONTROL Default Portfolio]** に、それぞれ自動的に更新されます。
-
-* 従来の Workfront エクスペリエンスを使用している場合、「**[!UICONTROL 詳細]**」ドロップダウンリストで選択できる「**[!UICONTROL 送信先]**」オプションでは、Experience Manager 内のターゲット宛先を選択できません。「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストを使用する場合、「**[!UICONTROL 送信先]**」オプションは正常に機能します。新しい Workfront エクスペリエンスの「**[!UICONTROL 詳細]**」ドロップダウンリストと「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストでは、「**[!UICONTROL 送信先]**」オプションは正常に機能します。
-
-## 以前のリリース {#previous-releases}
 
 ### 2022 年 10 月リリース {#october-2022-release}
 
