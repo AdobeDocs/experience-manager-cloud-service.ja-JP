@@ -2,10 +2,10 @@
 title: New Relic One
 description: AEM as a Cloud Service の New Relic One アプリケーションパフォーマンスモニタリング（APM）サービスと、そのサービスへのアクセス方法について説明します。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 8ae52afc366c6607cfc806f68bec2069a2e93f94
-workflow-type: ht
-source-wordcount: '1612'
-ht-degree: 100%
+source-git-commit: 9089c66a2fdb5a05eb888e2af736862aff1b7a11
+workflow-type: tm+mt
+source-wordcount: '1607'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ AEM as a Cloud Service の New Relic One アプリケーションパフォーマ
 
 AEM as a Cloud Service 用の New Relic One APM には、多くの機能があります。
 
-* 専用の New Relic One アカウントに直接アクセス（アドビサポートが管理するアクセス）。
+* 専用のNew Relic Oneアカウントへの直接アクセス
 
 * 外部の依存関係やデータベースを含む、行番号のある正確なメソッド呼び出しを表示する New Relic One APM エージェントを実装。
 
@@ -150,7 +150,7 @@ New Relic One にユーザーを追加する場合は、次の制限が適用さ
 * New Relic に追加されたユーザーは、**制限付き**&#x200B;のタイプになります。詳しくは、New Relic のドキュメントを参照してください。[](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)%20any%20New%20Relic%20features.)
 * AEM as a Cloud Service は New Relic One APM ソリューションのみを提供し、アラート、ログ、API 統合のサポートは提供していません。
 
-AEM as a Cloud Service の New Relic One 製品に関する詳細なヘルプまたは追加のガイダンスについては、[AEM サポートポータル](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)からサポートチケットを開いてください。
+AEM as a Cloud Service の New Relic One 製品に関する詳細なヘルプまたは追加のガイダンスについては、[AEM サポートポータル](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)からサポートチケットを開いてください。
 
 ## New Relic One に関するよくある質問（FAQ） {#faqs}
 
