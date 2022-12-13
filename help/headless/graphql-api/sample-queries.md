@@ -3,10 +3,10 @@ title: AEM での GraphQL の使用方法 - サンプルコンテンツとサン
 description: GraphQL を AEM と共に使用し、サンプルコンテンツとクエリを調べて、コンテンツをヘッドレスに提供する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
+source-git-commit: 31bd142b6748f2367f136975ead583982aab1b6e
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 92%
+source-wordcount: '1540'
+ht-degree: 93%
 
 ---
 
@@ -1116,12 +1116,6 @@ query {
 >
 >結果は膨大な量になる可能性があるので、ここでは再現されていません。
 
->[!NOTE]
->
->様々なクエリがバリエーションを参照しています `variation1`. これは、標準の WKND パッケージには含まれていません。 テスト用に作成する必要があります。
->
->If `variation1` が存在しない場合は、 `master`バリエーションはデフォルトとして返されます。
-
 ### 特定モデルのコンテンツフラグメントのうち指定のプロパティを持つものをすべて取得するサンプルクエリ {#sample-wknd-all-model-properties}
 
 このサンプルクエリでは次のものを検索します。
@@ -1471,27 +1465,19 @@ query {
 このクエリでは次のものを検索します。
 
 * 特定のパスにある `article` タイプの 1 つのコンテンツフラグメントについて
-   * その中の、バリエーション `variation1` に関するデータ
+   * その中の、バリエーション `another` に関するデータ
 
 **サンプルクエリ**
 
 ```graphql
 {
-  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/ian-provo", variation: "another") {
     item {
-      authorFragment {
         _path
         _variation
         firstName
         lastName
         birthDay
-      }
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
     }
   }
 }
@@ -1501,29 +1487,23 @@ query {
 
 このクエリでは次のものを検索します。
 
-* 特定のバリエーション `variation1` を持つ `article` タイプのコンテンツフラグメント
+* 特定のバリエーション `another` を持つ `article` タイプのコンテンツフラグメント
+
+>[!NOTE]
+>
+>これは、 [バリエーション](/help/headless/graphql-api/content-fragments.md#variations) 指定した名前の。
 
 **サンプルクエリ**
 
 ```graphql
 {
-  articleList(variation: "variation1") {
+  authorList(variation: "another") {
     items {
-      _path
-      _variation
-      authorFragment {
         _path
         _variation
         firstName
         lastName
         birthDay
-      }
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
     }
   }
 }
