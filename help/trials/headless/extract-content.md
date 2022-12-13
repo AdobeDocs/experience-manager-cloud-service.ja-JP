@@ -4,18 +4,18 @@ description: コンテンツフラグメントとGraphQL API をヘッドレス�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1216'
 ht-degree: 1%
 
 ---
 
 # GraphQL API を使用したコンテンツの抽出 {#extract-content}
 
-これまでのAEM Trials for headless では、 [独自のコンテンツフラグメントモデルを作成しました。](content-structure.md) 自分のヘッドレスコンテンツを作成し [コンテンツフラグメント。](create-content.md) コンテンツフラグメントと GraphQL API をヘッドレスコンテンツ管理システムとして使用し、コンテンツを配信する方法を学ぶことができます。
+これまでのAEM Trials for headless では、 [独自のコンテンツフラグメントモデルを作成しました。](content-structure.md) 自分のヘッドレスコンテンツを作成し [コンテンツフラグメント。](create-content.md) コンテンツフラグメントとGraphQL API をヘッドレスコンテンツ管理システムとして使用し、コンテンツを配信する方法を学ぶことができます。
 
-GraphQLは、1 回の API 呼び出しを使用して、外部のクライアントアプリケーションがAEMに対して、必要なコンテンツに対してのみクエリを実行できるクエリベースの API を提供します。
+GraphQL はクエリベースの API を提供し、1 回の API 呼び出しを使用して、外部のクライアントアプリケーションが必要なコンテンツに対してのみAEMをクエリできます。
 
 まず、2 つの異なるタイプのクエリを実行する方法を学びます。 **リスト** および **byPath** クエリ。 次に、前に作成したコンテンツフラグメントからコンテンツを取得する方法を学びます。 このドキュメントは、同じ手順を説明し、必要に応じて追加のリソースにリンクする、インタラクティブツアーの補足として機能します。
 
@@ -23,13 +23,18 @@ GraphQLは、1 回の API 呼び出しを使用して、外部のクライアン
 >
 >GraphQL API について詳しくは、 [「その他のリソース」セクション](#additional-resources) ( GraphQL API ガイド用 ) を参照してください。
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql"
+>title="GraphQL API を使用したコンテンツの抽出"
+>abstract="このモジュールでは、コンテンツフラグメントとGraphQL API をヘッドレスコンテンツ管理システムとして使用する方法について説明します。"
+
 ## GraphQL Explorer {#graphql-explorer}
 
 GraphQL Explorer を起動します。 ここで、ヘッドレスコンテンツに対するクエリを作成し、実行できます。
 
 ![GraphQL Query Editor](assets/extract-content/query-editor.png)
 
-アプリ内ガイダンスの外部からGraphQL Explorer に移動する場合は、ページの左上にあるAdobeアイコンを使用します。 AEMのグローバルナビゲーションが開きます。 ここから、 **ツール** タブと **一般** -> **GraphQL Query Editor**.
+アプリ内ガイダンスの外部からGraphQL Explorer に移動する場合は、ページの左上にあるAdobeアイコンを使用します。 AEMのグローバルナビゲーションが開きます。 ここから、 **ツール** タブと **一般** -> **GraphQL クエリエディター**.
 
 >[!TIP]
 >
@@ -161,7 +166,7 @@ byPath クエリを実行すると、特定のコンテンツフラグメント�
 
 ## コンテンツのクエリ方法を学びました。 {#conclusion}
 
-お疲れさまでした。ここでは、2 つの基本的なタイプのクエリと、独自のコンテンツに対するクエリ方法について説明します。 必ず [「その他のリソース」セクション](#additional-resources) を参照してください。
+お疲れさまでした。ここでは、2 つの基本的なタイプのクエリと、独自のコンテンツに対するクエリ方法について説明します。 必ず [「その他のリソース」セクション](#additional-resources) を参照し、GraphQL API で実行できるクエリの例を確認してください。
 
 抽出したコンテンツがカスタム React アプリでどのように使用されるかを学びたい場合は、必ずモジュールを確認してください [サンプル React アプリのコンテンツをカスタマイズします。](customize-app.md)
 

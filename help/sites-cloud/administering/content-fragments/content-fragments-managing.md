@@ -4,10 +4,10 @@ description: コンテンツフラグメントコンソールを使用して、�
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1947'
-ht-degree: 93%
+source-wordcount: '1915'
+ht-degree: 95%
 
 ---
 
@@ -54,11 +54,6 @@ ht-degree: 93%
 * [コンテンツフラグメントコンソールでの検索とフィルタリング](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
 ## コンテンツフラグメントの作成 {#creating-content-fragments}
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_create_content"
->title="新しいコンテンツを作成"
->abstract="モジュール 1 で作成したモデルを基に、ページオーサリングに使用できるコンテンツを作成する方法、またはヘッドレスコンテンツの基礎として使用できるコンテンツを作成する方法を学びます。"
 
 ### コンテンツモデルの作成 {#creating-a-content-model}
 

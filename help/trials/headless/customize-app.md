@@ -4,9 +4,9 @@ description: サンプルの React アプリを使用して、AEM as a Cloud Ser
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1400'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,11 @@ ht-degree: 0%
 ヘッドレス向けのAEMトライアルは、ヘッドレスコンテンツを紹介するシンプルな React アプリでプリロードされます。 このモジュールでは、そのアプリをプレビューし、画像を入れ替えて、そのアプリのショッパブルモーメントを作成することでそのアプリのコンテンツを変更する方法を学びます。
 
 アプリ自体は、コンテンツフラグメントの構造に基づいています。 AEMのコンテンツフラグメントエディターを使用して、アプリのコンテンツを変更できます。 このモジュールのAEM Trials では、このプロセスを簡単でインタラクティブなツアーで理解できます。 このドキュメントは、同じ手順を説明し、必要に応じて追加のリソースにリンクする、インタラクティブツアーの補足として機能します。
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_react_app"
+>title="サンプル React アプリのコンテンツのカスタマイズ"
+>abstract="ヘッドレス機能セットを使用してコンテンツをカスタマイズする方法を学ぶために使用できる最新の React アプリを設定しました。"
 
 ## コンテンツフラグメントエディター {#fragment-editor}
 

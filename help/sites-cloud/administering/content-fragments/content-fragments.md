@@ -4,10 +4,10 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のコンテン
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '2109'
-ht-degree: 96%
+source-wordcount: '2070'
+ht-degree: 98%
 
 ---
 
@@ -88,11 +88,6 @@ Adobe Experience Manager（AEM）as a Cloud Service でコンテンツフラグ�
 >エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
 >
 >詳細については、](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ja#content-fragments)AEM のコンテンツフラグメントおよびエクスペリエンスフラグメントについて[も参照してください。
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_overview"
->title="アプリのコンテンツ構造を作成する"
->abstract="アドビの一連のインタラクティブガイドに従うと、すべてのヘッドレスコンテンツの基盤となる構造（コンテンツフラグメントモデルとも呼ばれます）の作成について学習できます。"
 
 ## コンテンツフラグメントとコンテンツサービス {#content-fragments-and-content-services}
 

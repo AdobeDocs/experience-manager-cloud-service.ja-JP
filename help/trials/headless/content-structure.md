@@ -4,9 +4,9 @@ description: AEMコンテンツフラグメントモデルを使用して、す�
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1149'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,21 @@ ht-degree: 1%
 コンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーションおよび使用が可能になります。これらを使用すると、複数の場所や複数のチャネルで使用できるように、ヘッドレス配信に最適なコンテンツを準備できます。 コンテンツフラグメントモデルは、このコンテンツの構造を定義するために使用され、ヘッドレスコンテンツを管理するために最初に作成する必要がある要素です。
 
 このモジュールのAEM Trials では、このプロセスを理解しやすくするために、最初にモデルを作成し、構造を追加する、すばやくインタラクティブなツアーを利用できます。 このドキュメントは、同じ手順を説明し、必要に応じて追加のリソースにリンクする製品内ツアーの補足として機能します。
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide_br_test"
+>title="モデルエディターを起動します。"
+>abstract="コンテンツフラグメントモデルの作成は、モデル管理ワークフローでモデル項目を作成し、コンテンツフラグメントモデルエディターを使用して構造要素を追加することから始まります。<br><br>下をクリックして新しいタブで機能を起動し、この学習ドキュメントに従って最初のコンテンツフラグメントを作成します。"
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide_newline_test"
+>title="モデルエディターを起動します。"
+>abstract="コンテンツフラグメントモデルの作成は、モデル管理ワークフローでモデル項目を作成し、コンテンツフラグメントモデルエディターを使用して構造要素を追加することから始まります。\n\n 下をクリックして新しいタブで機能を起動し、この学習ドキュメントに従って最初のコンテンツフラグメントを作成します。"
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview"
+>title="アプリのコンテンツ構造を作成する"
+>abstract="アドビの一連のインタラクティブガイドに従うと、すべてのヘッドレスコンテンツの基盤となる構造（コンテンツフラグメントモデルとも呼ばれます）の作成について学習できます。"
 
 ## コンテンツフラグメントモデルコンソール {#content-fragment-model-console}
 
