@@ -2,7 +2,7 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: f98704357c38f61e8e7d36b33ad32e9154c611e6
+source-git-commit: 296c456470c8187c246426ae89abca6a48aa54be
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 46%

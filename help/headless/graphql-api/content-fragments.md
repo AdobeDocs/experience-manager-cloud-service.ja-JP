@@ -3,10 +3,10 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 9ad36e1b81d41a49cd318bbbb6ff8f4aaf6efd4a
+source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
 workflow-type: tm+mt
-source-wordcount: '4179'
-ht-degree: 60%
+source-wordcount: '4174'
+ht-degree: 58%
 
 ---
 
@@ -122,11 +122,9 @@ GraphQLはGETリクエストもサポートしますが、これらの制限（U
 >
 >Dispatcher での直接クエリや POST クエリを許可するには、システム管理者に次の操作を依頼してください。
 >
->* `ENABLE_GRAPHQL_ENDPOINT` という Cloud Manager 環境変数を作成します
+>* の作成 [Cloud Manager 環境変数](/help/implementing/cloud-manager/environment-variables.md) 呼び出し `ENABLE_GRAPHQL_ENDPOINT`
 >* （値：`true`）
 
-
-<!-- maybe add a link to the documentation that explains how to create that environment variable -->
 
 >[!NOTE]
 >
@@ -261,7 +259,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 #### パス  {#path}
 
-パスフィールドは、AEM GraphQLで識別子として使用されます。 これは、AEM リポジトリ内のコンテンツフラグメントアセットのパスを表します。これをコンテンツフラグメントの識別子として選択した理由は次のとおりです。
+パスフィールドは、AEM GraphQLで識別子として使用されます。 これは、AEM リポジトリ内のコンテンツフラグメントアセットのパスを表します。コンテンツフラグメントの識別子としてこれを選択したのは、次の理由からです。
 
 * AEM 内で一意である
 * 取得しやすい
@@ -296,7 +294,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 #### メタデータ {#metadata}
 
-また、AEM では GraphQL を通じて、コンテンツフラグメントのメタデータも公開します。メタデータは、コンテンツフラグメントのタイトル、サムネールパス、コンテンツフラグメントの説明、作成日など、コンテンツフラグメントを説明する情報です。
+また、AEM では GraphQL を通じて、コンテンツフラグメントのメタデータも公開します。メタデータは、コンテンツフラグメントのタイトル、サムネールのパス、コンテンツフラグメントの説明、作成日など、コンテンツフラグメントを説明する情報です。
 
 メタデータはスキーマエディターで生成され、特定の構造を持たないので、コンテンツフラグメントのメタデータを公開するために GraphQL 型 `TypedMetaData` が実装されました。`TypedMetaData` では、次のスカラー型でグループ化された情報を公開します。
 
@@ -501,8 +499,8 @@ GraphQL クエリでフィルタリングを使用して、特定のデータを
 
 | オプション | タイプ | 説明 |
 |--- |--- |--- |
-| _ignoreCase | 文字列 | 文字列の大文字と小文字を無視します ( 例： `time` 一致する `TIME`, `time`, `tImE`, ... |
-| _感性 | 浮動小数 | 浮動小数値の特定の利益を同じとみなす（浮動小数値の内部表現による技術的な制限を回避する）ことを許可します。このオプションはパフォーマンスに悪影響を与える可能性があるので、避ける必要があります |
+| `_ignoreCase` | `String` | 文字列の大文字と小文字を無視します ( 例： `time` 一致する `TIME`, `time`, `tImE`, ... |
+| `_sensitiveness` | `Float` | 特定の利益を `float` 同じと見なされる値（内部表現による技術的な制限を回避するため） `float` 値；このオプションはパフォーマンスに悪影響を与える可能性があるので、避ける必要があります |
 
 式は、論理演算子 (`_logOp`):
 
@@ -513,7 +511,7 @@ GraphQL クエリでフィルタリングを使用して、特定のデータを
 
 フィルター定義 ( `filter` 引数をクエリに渡す ) には、次が含まれます。
 
-* 各フィールドのサブ定義 ( フィールド名を使用してアクセスできます ( 例： `lastName` フィールドの `lastName` フィールドタイプのフィールド )
+* 各フィールドのサブ定義 ( フィールド名を使用してアクセスできます ( 例： `lastName` フィールドの `lastName` データ（フィールド）タイプのフィールド
 * 各サブ定義には、 `_expressions` 配列を作成し、式セットと `_logOp` 式を組み合わせる論理演算子を定義するフィールド
 * 各式は、値 (`value` フィールド ) と演算子 (`_operator` フィールド ) フィールドの内容を比較する必要があります
 
@@ -652,15 +650,15 @@ query {
 }
 ```
 
-<!-- When available link to BP and replace "jcr query level" with a more neutral term. -->
+<!-- When available link to BP and replace "JCR query level" with a more neutral term. -->
 
-<!-- When available link to BP and replace "jcr query result set" with a more neutral term. -->
+<!-- When available link to BP and replace "JCR query result set" with a more neutral term. -->
 
 >[!NOTE]
 >
->* ページングでは、同じ結果セットの異なるページをリクエストする複数のクエリで正しく機能するには、安定した並べ替え順が必要です。 デフォルトでは、結果セットの各アイテムのリポジトリパスを使用して、順序が常に同じであることを確認します。 異なる並べ替え順を使用し、その並べ替えを jcr クエリレベルで実行できない場合は、ページを決定する前に結果セット全体をメモリに読み込む必要があるので、パフォーマンスに悪影響が出ます。
+>* ページングでは、同じ結果セットの異なるページをリクエストする複数のクエリで正しく機能するには、安定した並べ替え順が必要です。 デフォルトでは、結果セットの各アイテムのリポジトリパスを使用して、順序が常に同じであることを確認します。 異なる並べ替え順を使用し、その並べ替えを JCR クエリレベルで実行できない場合、ページを決定する前に結果セット全体をメモリに読み込む必要があるので、パフォーマンスに悪影響が出ます。
 >
->* オフセットが高いほど、jcr クエリの結果セット全体から項目をスキップするのに時間がかかります。 大きな結果セットに対する代替の解決策は、ページ分割されたクエリを `first` および `after` メソッド。
+>* オフセットが高いほど、JCR クエリの結果セット全体から項目をスキップするのに時間がかかります。 大きな結果セットに対する代替の解決策は、ページ分割されたクエリを `first` および `after` メソッド。
 
 
 ### ページ分割されたクエリ — 最初と次の後 {#paginated-first-after}

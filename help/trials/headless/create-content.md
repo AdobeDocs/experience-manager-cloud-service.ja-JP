@@ -3,13 +3,13 @@ title: ヘッドレスコンテンツを作成
 description: 前に作成したコンテンツフラグメントモデルを使用して、ページオーサリングに使用できるコンテンツを作成するか、ヘッドレスコンテンツの基礎として使用します。
 hidefromtoc: true
 index: false
-source-git-commit: 7d5161d97a93d4731e33eda586179560a6a55ef3
+exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
+source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%
 
 ---
-
 
 # ヘッドレスコンテンツを作成 {#create-content}
 

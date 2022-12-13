@@ -8,7 +8,7 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
-source-git-commit: 284b46066a3cd64351c9915eb6a12875517a0c3d
+source-git-commit: 2d72a826007a41a73e112eed95b82863b2b48cb2
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 81%

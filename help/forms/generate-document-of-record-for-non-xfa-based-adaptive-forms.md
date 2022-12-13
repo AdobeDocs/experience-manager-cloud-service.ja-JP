@@ -2,7 +2,7 @@
 title: アダプティブフォームにおけるレコードのドキュメントの生成
 description: ここでは、アダプティブフォーム向けのレコードのドキュメント（DoR）テンプレートを生成する方法について説明します。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 8d6a5aceaf930c6597f570cdaec44015b86e20cd
+source-git-commit: d9b67c80c2e96b0403f801a20b72c9ed41d021aa
 workflow-type: tm+mt
 source-wordcount: '4065'
 ht-degree: 86%

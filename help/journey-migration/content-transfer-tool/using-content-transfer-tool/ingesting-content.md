@@ -2,7 +2,7 @@
 title: Target へのコンテンツの取り込み
 description: Target へのコンテンツの取り込み
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: ee2240eac76d4df372d94152a7c17b6e449ef7c8
+source-git-commit: b40f8808bad50b759c8cdc669dbcf9ca0e8bbd31
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 74%

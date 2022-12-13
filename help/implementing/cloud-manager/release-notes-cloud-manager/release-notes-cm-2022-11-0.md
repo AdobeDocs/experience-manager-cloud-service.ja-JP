@@ -2,13 +2,13 @@
 title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.11.0 のリリースノート
 description: AEM as a Cloud Service の Cloud Manager 2022.11.0 のリリースノートです。
 feature: Release Information
-source-git-commit: 1fce3525a0c48a68f268634e52f3872a49b7545f
+exl-id: 1014efb5-dddb-4997-8cef-afe6dfa61462
+source-git-commit: 5d9cd24ad11d03f61fa1a84227423d833e00841a
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 40%
+ht-degree: 62%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.11.0 のリリースノート {#release-notes}
 
@@ -30,9 +30,9 @@ AEM as a Cloud Serviceの Cloud Manager リリース2022.11.0のリリース日�
 >
 > この機能は、今後数週間の間にすべてのテナントに段階的に展開されます。
 
-* パイプラインに関連付けられた環境のステータスが「パイプラインの実行」を許可しない場合、説明付きのツールチップで実行アクションが無効になります。
+* パイプラインに関連付けられている環境が、パイプラインを実行できないステータスにある場合は、実行アクションが無効になっており、説明用のツールチップが表示されます。
 * UI に、 **プログラムの追加** テナントの権限が不十分なので、ボタンは無効になっています。
 
 ## バグの修正 {#bug-fixes}
 
-* 実稼動パイプラインの編集中のフィードバックが改善され、1 つ以上の見つからない環境の頻度が低い回数が検出されるようになりました。
+* 実稼動パイプラインの編集中のフィードバックが改善され、1 つ以上の環境が見つからないまれなケースの発生が検出されるようになりました。

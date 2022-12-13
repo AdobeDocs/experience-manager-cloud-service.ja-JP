@@ -2,7 +2,7 @@
 title: Experience Manager as a Cloud Service の基本を学ぶ
 description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: 76eb13cc1efeb8617b48b7e6134bdf1c7d324e27
+source-git-commit: 4a5e5f6a105db8f010fb7d49810e2ff2656f253a
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 93%
