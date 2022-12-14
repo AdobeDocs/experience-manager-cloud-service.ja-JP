@@ -3,10 +3,10 @@ title: AEM as a Cloud Service でのキャッシュ
 description: AEM as a Cloud Service でのキャッシュ
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: df892e49307a5c125016f3b21e4b5551020eb2b6
+source-git-commit: 762c30f83a15aba24b56a8d4a6059b371b87aae2
 workflow-type: tm+mt
-source-wordcount: '2753'
-ht-degree: 66%
+source-wordcount: '2833'
+ht-degree: 64%
 
 ---
 
@@ -220,7 +220,10 @@ Web サイトの URL には、キャンペーンの成功を追跡するため�
 
 ### アクティベーション／非アクティベーション中の Dispatcher キャッシュの無効化 {#cache-activation-deactivation}
 
-以前のバージョンのAEMと同様に、ページの公開または非公開は、Dispatcher キャッシュからコンテンツをクリアします。 キャッシュの問題の疑いがある場合は、該当するページを再公開し、 `ServerAlias` localhost :Dispatcher キャッシュの無効化に必要です。
+以前のバージョンのAEMと同様に、ページの公開または非公開は、Dispatcher キャッシュからコンテンツをクリアします。 キャッシュの問題の疑いがある場合は、問題のページを再公開し、 `ServerAlias` localhost :Dispatcher キャッシュの無効化に必要です。
+
+>[!NOTE]
+>ディスパッチャーを適切に無効化するには、「127.0.0.1」、「localhost」、「.local」、「.adobeaemcloud.com」および「.adobeaemcloud.net」からの要求がすべて vhost 設定で一致し、処理されることを確認してください。 これを行うには、参照内のパターンに従った包括的な vhost 設定で「*」をグローバルに一致させます [AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) または、前述のリストがいずれかの vhost によってキャッチされることを確認します。
 
 パブリッシュインスタンスは、オーサーから新しいバージョンのページまたはアセットを受け取ると、フラッシュエージェントを使用して Dispatcher 上の適切なパスを無効にします。 更新されたパスは、親と共に、Dispatcher キャッシュから削除されます ( これを [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#invalidating-files-by-folder-level)) をクリックします。
 
@@ -481,5 +484,5 @@ HTML ページにインクルードされるデフォルトの clientlib は、�
 1. Adobe Granite HTML Library Manager の OSGi Config を探します。
    * 「厳密なバージョン管理」チェックボックスをオンにして有効にします。
    * 「長期クライアントサイドキャッシュキー」というラベルの付いたフィールドに、値「/.*;hash」を入力します。
-1. 変更内容を保存します。AEM as a Cloud Serviceは開発、ステージ、実稼動環境でこの設定を自動的に有効にするので、この設定をソース管理に保存する必要はありません。
+1. 変更内容を保存します。AEM as a Cloud Serviceは、開発、ステージ、実稼動環境でこの設定を自動的に有効にするので、この設定をソース管理に保存する必要はありません。
 1. クライアントライブラリのコンテンツが変更されるたびに、新しいハッシュキーが生成され、HTML 参照が更新されます。
