@@ -2,9 +2,9 @@
 title: ページテンプレート
 description: ページテンプレートは、新しいページのベースとして使用するページを作成する際に使用します
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
 workflow-type: tm+mt
-source-wordcount: '3297'
+source-wordcount: '3300'
 ht-degree: 98%
 
 ---
@@ -357,7 +357,7 @@ When creating a new editable template, the value is copied from the template typ
 1. [こちらのドキュメント](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author)で説明されているページテンプレートと同じようにテンプレートを作成します。これは、テンプレートタイプの基盤となります。
 1. CRXDE Lite を使用している場合は、新しく作成したテンプレートを `templates` ノードから`template-types`テンプレートフォルダー[の下の ](#template-folders) ノードにコピーします。
 1. このテンプレートを[テンプレートフォルダー](#template-folders)の下の `templates` ノードから削除します。
-1. `template-types` ノードの下にあるテンプレートのコピーで、`cq:template` および `cq:templateType` `jcr:content` プロパティをすべて削除します。
+1. ( `template-types` ノード、すべて削除 `cq:template` および `cq:templateType` すべての `jcr:content` ノード。
 
 また、GitHub で入手できる、編集可能テンプレートのサンプルを基盤として使用し、独自のテンプレートタイプを作成することもできます。
 
