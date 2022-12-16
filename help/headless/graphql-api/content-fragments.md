@@ -3,7 +3,7 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 666125abe28ed71e85fdcf4a3b44f26e61c7795f
+source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
 source-wordcount: '4174'
 ht-degree: 58%
@@ -248,7 +248,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 | 日時 | Calendar |  日時を ISO 8601 形式で表示するために使用します. 選択したタイプに応じて、AEM GraphQL で使用できるフレーバーは、`onlyDate`、`onlyTime`、`dateTime` の 3 つです。 |
 | 定義済みリスト |  String |  モデルの作成時に定義されたオプションのリストに含まれるオプションを表示するために使用します |
 |  タグ |  [String] |  AEM で使用されているタグを表す文字列のリストを表示するために使用します |
-| コンテンツ参照 |  文字列, [文字列] |  AEM 内の別のアセットへのパスを表示するために使用します |
+| コンテンツ参照 |  String, [String] |  AEM 内の別のアセットへのパスを表示するために使用します |
 | フラグメント参照 |  *モデルタイプ* |  特定のモデルタイプの別のコンテンツフラグメントを参照するために使用します（モデルの作成時に定義されます） |
 
 ### ヘルパーフィールド {#helper-fields}

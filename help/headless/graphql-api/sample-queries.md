@@ -3,7 +3,7 @@ title: AEM での GraphQL の使用方法 - サンプルコンテンツとサン
 description: GraphQL を AEM と共に使用し、サンプルコンテンツとクエリを調べて、コンテンツをヘッドレスに提供する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: df1bccc632b3287c73a926bc5f9c6b63d51d8de6
+source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 93%
@@ -1614,7 +1614,7 @@ query {
 |--- |--- |--- |
 | 会社名 | 1 行のテキスト |  |
 | CEO | フラグメント参照（1 つ） | [Person](#model-person) |
-| 従業員数 | フラグメント参照（複数フィールド） | [人物](#model-person) |
+| 従業員数 | フラグメント参照（複数フィールド） | [Person](#model-person) |
 
 #### Person（人物） {#model-person}
 
@@ -1655,29 +1655,29 @@ query {
 | 会社名 | CEO | 従業員数 |
 |--- |--- |--- |
 | Apple Inc. | Steve Jobs | Duke Marsh<br>Max Caulfield |
-|  Little Pony, Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
+| Little Pony, Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
 | NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
 #### Person（人物） {#fragment-person}
 
 | name | 名 | 授賞歴 |
 |--- |--- |--- |
-| Lincoln |  Abe |  |
-| Smith | Adam |   |
-| Slade |  Cutter |  Gameblitz<br>Gamestar |
-| Marsh |  Duke |   |   |
-|  Smith |  Joe |   |
-| Croft |  Lara | Gamestar |
-| Caulfield |  Max |  Gameblitz |
-|  Jobs |  Steve |   |
+| Lincoln | Abe |  |
+| Smith | Adam |  |
+| Slade | Cutter | Gameblitz<br>Gamestar |
+| Marsh | Duke |  |
+| Smith | Joe |  |
+| Croft | Lara | Gamestar |
+| Caulfield | Max | Gameblitz |
+| ジョブ | Steve |  |
 
 #### 賞 {#fragment-award}
 
 | ショートカット／ID | title |
 |--- |--- |
 | GB | Gameblitz |
-|  GS | 配偶星 |
-|  OSC | Oscar |
+| GS | Gamestar |
+| OSC | Oscar |
 
 #### 都市 {#fragment-city}
 
@@ -1685,8 +1685,8 @@ query {
 |--- |--- |--- |--- |
 | Basel | Switzerland | 172258 | city:emea |
 | Berlin | Germany | 3669491 | city:capital<br>city:emea |
-| Bucharest | Romania | 1821000 |  city:capital<br>city:emea |
-| San Francisco |  USA |  883306 |  city:beach<br>city:na |
-| San Jose |  USA |  102635 |  city:na |
-| Stuttgart |  Germany |  634830 |  city:emea |
-|  Zurich |  Switzerland |  415367 |  city:capital<br>city:emea |
+| Bucharest | Romania | 1821000 | city:capital<br>city:emea |
+| San Francisco | USA | 883306 | city:beach<br>city:na |
+| サンノゼ | USA | 102635 | city:na |
+| Stuttgart | Germany | 634830 | city:emea |
+| Zurich | Switzerland | 415367 | city:capital<br>city:emea |
