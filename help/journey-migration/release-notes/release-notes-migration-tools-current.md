@@ -1,30 +1,25 @@
 ---
-title: AEM as a Cloud Service Release 2022.9.0 の移行ツールのリリースノート
-description: AEM as a Cloud Service Release 2022.9.0 の移行ツールのリリースノート
+title: AEM as a Cloud Service Release 2022.12.0 の移行ツールのリリースノート
+description: AEM as a Cloud Service Release 2022.12.0 の移行ツールのリリースノート
 feature: Release Information
-source-git-commit: 6b58b253c554fc2958fdff2b246f341f56b1639f
+exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
+source-git-commit: b88fec3247179beefd76c520b10a1145e9b0c911
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 41%
+source-wordcount: '74'
+ht-degree: 91%
 
 ---
 
-# AEM as a Cloud Service Release 2022.9.0 の移行ツールのリリースノート {#release-notes}
+# AEM as a Cloud Service Release 2022.12.0 の移行ツールのリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Service 2022.9.0 の移行ツールのリリースノートの概要を説明しています。
+このページでは、AEM as a Cloud Service 2022.12.0 の移行ツールのリリースノートの概要を説明しています。
 
 ## ベストプラクティスアナライザー {#bpa-release}
 
 ### リリース日 {#release-date-bpa}
 
-ベストプラクティスアナライザー v2.1.34 のリリース日は 2022 年 9 月 12 日です。
-
-### 新機能 {#what-is-new-bpa}
-
-* BPA は、顧客がカスタムロガー設定を追加したかどうかを検出し、レポートできるようになりました。 AEM as a Cloud Serviceはカスタムログファイルをサポートしていません。 すべてのログファイルをパイプ経由で `error.log`
-* BPA は、顧客のリポジトリに存在する様々なバイナリ MIME タイプと、それらに関連付けられたカウントをレポートできるようになりました。
+ベストプラクティスアナライザー v2.1.38 のリリース日は 2022年12月1日（PT）です。
 
 ### バグの修正 {#bug-fixes-bpa}
 
-* BPA UI で、1 つのパターンで多数の結果を表示する際に、レンダリングの問題が発生していました。 この問題が修正されました。
-* BPA は、一部の結果を重大度が重大な非互換性の変更と誤ってレポートしていました。 この問題が修正されました。
+* 偽陽性の数が修正されました。

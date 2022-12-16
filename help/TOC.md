@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4a5e5f6a105db8f010fb7d49810e2ff2656f253a
+source-git-commit: 91d3e2ea02f34963688dd9ee44aed17f55752587
 workflow-type: tm+mt
-source-wordcount: '3820'
+source-wordcount: '3823'
 ht-degree: 97%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 97%
          + [リリースノート（2020.2.0）](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
    + Cloud Manager のリリースノート {#cloud-manager}
       + [最新のリリースノート](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
-      + 2022 年 {#2022}
+      + 2022 {#2022}
          + [リリースノート（2022.11.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-11-0.md)
          + [リリースノート（2022.10.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-10-0.md)
          + [リリースノート（2022.9.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-9-0.md)
@@ -80,7 +80,7 @@ ht-degree: 97%
          + [リリースノート（2022.3.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
          + [リリースノート（2022.2.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
          + [リリースノート（2022.1.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
-      + 2021 年 {#2021}
+      + 2021 {#2021}
          + [リリースノート（202.12.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-12-0.md)
          + [リリースノート（2021.11.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
          + [リリースノート（2021.10.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
@@ -93,7 +93,7 @@ ht-degree: 97%
          + [リリースノート（2021.3.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
          + [リリースノート（2021.2.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
          + [リリースノート（2021.1.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
-      + 2020 年 {#2020}
+      + 2020 {#2020}
          + [リリースノート（2020.12.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
          + [リリースノート（2020.11.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
          + [リリースノート（2020.10.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
@@ -107,14 +107,15 @@ ht-degree: 97%
          + [リリースノート（2020.2.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
    + 移行ツールのリリースノート {#migration-tools}
       + [最新のリリースノート](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
-      + 2022 年 {#2022}
+      + 2022 {#2022}
+         + [リリースノート（2022.9.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-09-0.md)
          + [リリースノート（2022.7.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-07-0.md)
          + [リリースノート（2022.5.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-05-0.md)
          + [リリースノート（2022.4.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-04-0.md)
          + [リリースノート（2022.3.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
          + [リリースノート（2022.2.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
          + [リリースノート（2022.1.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
-      + 2021 年 {#2021}
+      + 2021 {#2021}
          + [リリースノート（2021.12.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [リリースノート（2021.11.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [リリースノート（2021.10.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
@@ -808,7 +809,7 @@ ht-degree: 97%
          + コンポーネントとテンプレート {#components-templates}
             + [コンポーネントの概要](/help/implementing/developing/components/overview.md)
             + [テンプレート](/help/implementing/developing/components/templates.md)
-            + [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+            + [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
             + [スタイルシステム](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=ja)
             + [コンテンツサービス用の JSON エクスポーター](/help/implementing/developing/components/json-exporter.md)
             + [コンポーネントの JSON 書き出しの有効化](/help/implementing/developing/components/enabling-json-exporter.md)
@@ -843,7 +844,7 @@ ht-degree: 97%
          + [AEM 内での外部 SPA の編集](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [SPA の複合コンポーネント](/help/implementing/developing/hybrid/composite-components.md)
          + [サーバーサイドレンダリング](/help/implementing/developing/hybrid/ssr.md)
-         + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=ja)
          + [ローンチの統合](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA リファレンスドキュメント](/help/implementing/developing/hybrid/reference-materials.md)
    + 開発者ツール {#developer-tools}
