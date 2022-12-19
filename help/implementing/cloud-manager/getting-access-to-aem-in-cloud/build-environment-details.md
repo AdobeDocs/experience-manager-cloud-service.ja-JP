@@ -2,12 +2,13 @@
 title: ビルド環境
 description: Cloud Manager のビルド環境と、そこでコードがどのようにビルドされテストされるかを説明します。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 95%
+source-wordcount: '1003'
+ht-degree: 94%
 
 ---
+
 
 # ビルド環境 {#build-environment}
 
@@ -225,3 +226,7 @@ Maven `pom.xml` ファイル内で使用する場合は、通常、次のよう�
 >[!NOTE]
 >
 >この方法でシステムパッケージをインストールしても、Adobe Experience Manager の実行に使用されているランタイム環境にはインストールされません。AEM 環境にシステムパッケージをインストールする必要がある場合は、アドビ担当者にお問い合わせください。
+
+>[!TIP]
+>
+>フロントエンドビルド環境の詳細については、ドキュメントを参照してください。 [フロントエンドパイプラインを使用したサイトの開発。](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)

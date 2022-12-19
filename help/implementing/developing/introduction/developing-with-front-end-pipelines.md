@@ -1,13 +1,14 @@
 ---
 title: フロントエンドパイプラインを使用したサイトの開発
-description: フロントエンドパイプラインを使用すると、フロントエンド開発者の自主性が高まり、開発プロセスを大幅に加速できます。
+description: フロントエンドパイプラインを使用すると、フロントエンド開発者の自主性が高まり、開発プロセスを大幅に加速できます。このドキュメントでは、フロントエンドビルドプロセスで特に考慮すべき事項について説明します。
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 868382c37c3744642e96353aecfc4369105a42ec
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 100%
+source-wordcount: '1157'
+ht-degree: 88%
 
 ---
+
 
 # フロントエンドパイプラインを使用したサイトの開発 {#developing-site-with-front-end-pipeline}
 
@@ -16,6 +17,20 @@ ht-degree: 100%
 >[!TIP]
 >
 >フロントエンドパイプラインの使用方法とそれによるメリットをまだ習熟していない場合は、 [クイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md) を参照して、新しいサイトをすばやくデプロイし、そのテーマをバックエンド開発と完全に切り離してカスタマイズする方法の例を確認してください。
+
+## フロントエンドビルド契約 {#front-end-build-contract}
+
+次に類似 [フルスタックビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) フロントエンドパイプラインには独自の環境があります。 次のフロントエンドビルド契約が確認されている限り、開発者はこのパイプラインである程度の柔軟性を持っています。
+
+フロントエンドパイプラインでは、 `build` フロントエンドパイプラインでデプロイされるビルドを生成するスクリプトディレクティブ。 つまり、Cloud Manager はコマンドを使用します。 `npm run build` デプロイ可能なプロジェクトを `dist` フォルダー。
+
+のコンテンツ `dist` フォルダーとは、最終的に Cloud Manager パイプラインからAEMas a Cloud Serviceにデプロイされるものです。
+
+### ノードのバージョン {#node-versions}
+
+デフォルトでは、フロントエンドパイプラインはノード 14 を使用しますが、16 と 16 も使用できます。
+
+以下を使用して、 `CM_CUSTOM_VAR_NODE_VERSION` 環境変数を使用して、目的のバージョンを設定します。
 
 ## 唯一の情報源 {#single-source-of-truth}
 
