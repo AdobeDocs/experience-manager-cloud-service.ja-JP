@@ -2,10 +2,10 @@
 title: コンテンツ転送ツール使用のガイドラインとベストプラクティス
 description: コンテンツ転送ツール使用のガイドラインとベストプラクティス
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
+source-git-commit: b0d219f712b1dbbfa70d66ac14c0a66dc89ebbab
 workflow-type: tm+mt
-source-wordcount: '1597'
-ht-degree: 94%
+source-wordcount: '1595'
+ht-degree: 93%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 94%
 
 * コンテンツ転送ツール（CTT）は、ソースインスタンスからターゲットインスタンスにコンテンツを転送する前に、どのような種類のコンテンツ分析も実行しません。例えば、CTT では、コンテンツをパブリッシュ環境に取り込む際に、公開済みコンテンツと非公開コンテンツを区別しません。移行セットで指定されているコンテンツは何であれ、選択したターゲットインスタンスに取り込まれます。オーサーインスタンスとパブリッシュインスタンスのどちらか一方または両方に移行セットを取り込むことができます。コンテンツを実稼動インスタンスに移動する際は、ソースオーサーインスタンスに CTT をインストールしてコンテンツをターゲットオーサーインスタンスに移動し、同様に、ソースパブリッシュインスタンスに CTT をインストールしてコンテンツをターゲットパブリッシュインスタンスに移動することをお勧めします。詳しくは、[パブリッシュインスタンスでのコンテンツ転送ツールの実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja#running-ctt-on-publish)を参照してください。
 
-* コンテンツ転送ツールによって転送されるユーザーとグループは、権限を満たすためにコンテンツで必要なものに限られます。*抽出*&#x200B;プロセスでは、`/home` 全体を移行セットにコピーし、*取り込み*&#x200B;プロセスでは、移行されたコンテンツ ACL で参照されているすべてのユーザーおよびグループをコピーします。既存のユーザーやグループを IMS ID に自動的にマッピングする場合は、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja#cloud-migration)を参照してください。
+* コンテンツ転送ツールによって転送されるユーザーとグループは、権限を満たすためにコンテンツで必要なものに限られます。*抽出*&#x200B;プロセスでは、`/home` 全体を移行セットにコピーし、*取り込み*&#x200B;プロセスでは、移行されたコンテンツ ACL で参照されているすべてのユーザーおよびグループをコピーします。既存のユーザーを自動的に IMS ID にマッピングするには、 [ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja#cloud-migration).
 
 * 抽出段階では、コンテンツ転送ツールはアクティブな AEM ソースインスタンスで実行されます。
 
