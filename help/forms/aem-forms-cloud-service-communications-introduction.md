@@ -2,10 +2,10 @@
 title: Forms as a Cloud Service の通信の概要
 description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
 workflow-type: tm+mt
-source-wordcount: '1442'
-ht-degree: 80%
+source-wordcount: '1136'
+ht-degree: 98%
 
 ---
 
@@ -126,29 +126,31 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ドキュメント操作 API を使用して、PDF ドキュメントを PDF/A 準拠のドキュメントに変換したり、PDF ドキュメントが PDF/A に準拠しているかどうかを判断したりできます。PDF/A は、ドキュメントのコンテンツを長期間保存するためのアーカイブ形式です。フォントはドキュメント内に埋め込まれ、ファイルは圧縮されません。その結果、通常、PDF/A ドキュメントは標準の PDF ドキュメントよりも大きくなります。なお、PDF/A ドキュメントには、オーディオおよびビデオのコンテンツは含まれません。
 
-## ドキュメントユーティリティ
+<!-- 
 
-Document Utilities 同期 API を使用すると、PDFと XDP ファイル形式の間でドキュメントを変換し、PDFドキュメントに関するクエリ情報を処理できます。 例えば、PDF ファイルにコメントや添付ファイルが含まれているかどうかを確認できます。
+## Document utilities
 
-### PDFドキュメントのプロパティの取得
+Document utilities synchronous APIs helps you convert documents between PDF and XDP file formats, and query information about a PDF document. For example, you can determine whether a PDF document contains comments or attachments. 
 
-以下が可能です。 [PDF文書のクエリ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Extraction/) を参照してください。
+### Retrieve PDF document properties
 
-* PDF文書：ソースドキュメントがPDFドキュメントかどうかを確認します。
-* 入力可能なフォームです。ソースPDFドキュメントが入力可能なフォームであるかどうかを確認します。
-* フォームタイプ：ドキュメントのフォームタイプを取得します。
-* 添付ファイルを確認：ソースPDFドキュメントに添付ファイルが含まれているかどうかを確認します。
-* コメントを確認：ソースPDFドキュメントにレビューコメントがあるかどうかを確認します。
-* PDFパッケージ：ドキュメントがPDFパッケージかどうかを確認します。
-* PDFの取得：の取得 [バージョンドキュメントのPDF](https://en.wikipedia.org/wiki/History_of_PDF).
-* 推奨Acrobatバージョン：必要なバージョンのAcrobat(Reader) を取得して、PDFドキュメントを開きます。
-* XFA ドキュメントです：ソースPDFドキュメントが XFA ベースのPDFドキュメントであるかどうかを確認します。
-* シェルPDF:ソースPDFドキュメントがシェルPDFかどうかを確認します。 シェルPDFには、XFA ストリーム、フォント、画像のリソースと、空白のページ、またはAcrobatまたはAdobe Readerを使用してドキュメントを開く必要があるという警告を含む 1 つのページのみが含まれます。 シェル PDF は、PDF 変換において、PDF フォームの変換の配信を最適化するためにのみ使用されます。
-* XFA バージョンの取得：の取得 [XFA ベースのバージョンドキュメントの XFAPDF](https://en.wikipedia.org/wiki/XFA#XFA_versions).
+You can [query a PDF document](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Extraction/) for the following information:
 
-### PDFドキュメントを XDP ドキュメントに変換
+* Is a PDF Document: Check whether the source document is a PDF document.
+* Is a fillable form: Check whether the source PDF document is a fillable form.
+* Form Type: Retrieve the form type of the document.
+* Check for Attachments: Check whether the source PDF document has any attachments.
+* Check for Comments: Check whether the source PDF document has any review comments.
+* Is a PDF Package: Check whether the document is a PDF package.
+* Get the PDF Version: Retrieve the [version of the PDF document](https://en.wikipedia.org/wiki/History_of_PDF).
+* Recommended Acrobat Version: Retrieve the required version of Acrobat (Reader) to open the PDF document.
+* Is an XFA Document: Check whether the source PDF document is an XFA-based PDF document.
+* Is Shell PDF: Check whether the source PDF document is shell PDF. A shell PDF contains only an XFA stream, font and image resources, and one page that is either blank or contains a warning that the document must be opened using Acrobat or Adobe Reader. The shell PDF is used with PDF transformation to optimize delivery of PDFForm transformations only.
+* Get the XFA Version: Retrieve the [XFA Version for an XFA-based PDF document](https://en.wikipedia.org/wiki/XFA#XFA_versions).
 
-この [XDP API へのPDF](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) PDFドキュメントを XDP ファイルに変換します。 PDF ドキュメントを XDP ファイルに正常に変換するには、ディクショナリ内の XFA ストリームが PDF ドキュメントに含まれている必要があります。
+### Convert PDF Documents into XDP Documents
+
+The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
 
 ## 通信 API のタイプ
 

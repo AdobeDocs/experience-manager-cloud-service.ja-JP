@@ -2,10 +2,10 @@
 title: AEM Forms as a Cloud Service - 通信
 description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 50%
+source-wordcount: '684'
+ht-degree: 79%
 
 ---
 
@@ -31,9 +31,11 @@ Formsas a Cloud Service — コミュニケーションは、スケジュール�
 * ドキュメント生成 API
 * ドキュメント操作 API
 
-### マルチテナント API
+<!-- 
+### Multi-tenant APIs
 
-* ドキュメントユーティリティ API
+* Document utility APIs -->
+
 
 ### シングルテナント API の認証
 
@@ -53,47 +55,52 @@ Formsas a Cloud Service — コミュニケーションは、スケジュール�
    >
    >アドビでは、実稼動環境でトークンベースの認証を使用することをお勧めします。
 
-### マルチテナント API の認証
+<!-- 
 
-#### 認証ヘッダー
+### Authenticate a multi-tenant API
 
-Cloud Manager API への受信 HTTP API 呼び出しには、次の 3 つのヘッダーを含める必要があります。
+#### Authentication Headers
+
+Every inbound HTTP API call to the multi-tenant API must contain these three headers:
+
 
 * `x-api-key`
 * `x-gw-ims-org-id`
 * `Authorization`
 
-送信する値 `x-api-key` および `x-gw-ims-org-id` ヘッダーは、 [Adobe Developer Console](https://developer.adobe.com/console). の値 `x-api-key` header はクライアント ID で、 `x-gw-ims-org-id` header は組織 ID です。
+The values which should be sent in the `x-api-key` and `x-gw-ims-org-id` headers are provided in the Credentials details screen in the [Adobe Developer Console](https://developer.adobe.com/console). The value of the `x-api-key` header is the Client ID and the value for the `x-gw-ims-org-id` header is the Organization ID.
 
-#### Adobe Developerコンソールを設定してアクセストークンを生成する
+#### Configure Adobe Developer console to generate an access token
 
-認証 API を設定するには、Adobe Developerコンソールでプロジェクトを作成し、Adobe Developerコンソールのプロジェクトに通信 API を追加します。 この統合環境により、API キー、クライアント秘密鍵、ペイロード (JWT) が生成されます。
+To set up authentication APIs, create a project in Adobe Developer Console and add Communication APIs to the project on Adobe Developer Console. The integration generates API Key, Client Secret, Payload (JWT):
 
-1. Adobe Developer Console 管理者にお問い合わせください。 管理者に、開発者としてを追加するよう依頼します。
-1. `https://developer.adobe.com/console/` にログインします。管理者がプロビジョニングした開発者アカウントを使用して、Adobe Developer Console にログインします。
-1. 右上隅で組織を選択します。自分がどの組織に属しているかわからない場合は、管理者に問い合わせてください。
-1. 「**[!UICONTROL 新規プロジェクトを作成]**」をタップします。新規プロジェクトを作成する画面が表示されます。「**[!UICONTROL API を追加]**」をタップします。お使いのアカウントで有効になっているすべての API を示す画面が表示されます。
-1. 選択 **[!UICONTROL AEM Forms — コミュニケーション]** とタップします。 **[!UICONTROL 次へ]**. API を設定する画面が表示されます。
-1. 選択 **[!UICONTROL オプション 1 キーペアを生成する]** とタップします。 **[!UICONTROL キーペアを生成]**. 設定ファイルが作成され、ダウンロードされます。 ダウンロードした設定ファイルには、すべてのアプリ設定と、秘密鍵のコピーのみが含まれています。 Adobeは秘密鍵を記録しません。ダウンロードしたファイルを安全に保存してください。 「**[!UICONTROL 次へ]**」をタップします。
-1. 選択 **[!UICONTROL 統合 —Cloud Service]** とタップします。 **[!UICONTROL 設定済み API を保存]**. タップ **[!UICONTROL サービスアカウント (JWT)]** をクリックして、API キー、クライアント秘密鍵、および API へのアクセスに必要なその他の情報を表示します。 トークンを使用して API にアクセスするように設定します。
+1. Contact you Adobe Developer Console administrator. Ask the administrator to add as a developer.
+1. Log in to `https://developer.adobe.com/console/`. Use your developer account that your administrator has provisioned to log in to Adobe Developer Console.
+1. Select your organization from the top-right corner. If you do not know your organization, contact your administrator.
+1. Tap **[!UICONTROL Create new project]**. A screen to get started with your new project appears. Tap **[!UICONTROL Add API]**. A screen with list of all the APIs enabled for your account appears.
+1. Select **[!UICONTROL AEM Forms - Communications]** and tap **[!UICONTROL Next]**. A screen to configure the API appears.
+1. Select **[!UICONTROL OPTION 1 Generate a key pair]** and tap **[!UICONTROL Generate keypair]**. It creates and downloads the configuration file. The downloaded configuration file contains all your app settings, along with the only copy of your private key. Adobe does not record your private key, make sure to securely store the downloaded file. Tap **[!UICONTROL Next]**.
+1. Select **[!UICONTROL Integrations - Cloud Service]** and tap **[!UICONTROL Save configured API]**. Tap **[!UICONTROL Service Account (JWT)]** to view the API Key, Client Secret, and other information required to access the APIs. You set to use the token to access the APIs.
 
-#### プログラムによるアクセストークンの生成と使用
+#### Programmatically generate and use an access token
 
-プログラムによってアクセストークンを生成するには、JSON Web トークン (JWT) を生成し、AdobeのIdentity Managementサービス (IMS) とアクセストークンと交換します。
+To programmatically generate an access token, generate a JSON Web Token (JWT) and exchange it with the Adobe Identity Management Service (IMS) for an access token.
 
-JWT JSON オブジェクトを構築するには、次のキー（claims と呼ばれます）を使用します。
+Use the following keys, referred to as claims, to construct JWT JSON object:
 
-* `exp` — アクセストークンの要求された有効期限（1970 年 1 月 1 日 GMT からの秒数） ほとんどの使用例では、これは比較的小さい値です。 例えば、5 分（今から 5 分）の場合、この値は1670923791にする必要があります。
-* `iss` - Adobe Developer Console プロジェクトの組織 ID( org_ident@AdobeOrgの形式 )。
-* `sub` - Adobe Developerコンソール統合からのテクニカルアカウント ID。次の形式で指定します。id@techacct.adobe.com.
-* `aud` - Adobe Developerコンソール統合のクライアント ID の前に、 `https://ims-na1.adobelogin.com/c/`.
-* `https://ims-na1-stg1.adobelogin.com/s/ent_aemforms_docprocessing`  — リテラル値に設定 `true`
 
-次に、この JSON オブジェクトは、プロジェクトの秘密鍵を使用して base64 エンコードし、署名する必要があります。 最後に、エンコードされた値がPOSTリクエストの本文でに送信され、 `https://ims-na1.adobelogin.com/ims/exchange/jwt` と共に、プロジェクトのクライアント ID およびクライアント秘密鍵も表示されます。
+* `exp`- the requested expiration of the access token, expressed as a number of seconds since January 1, 1970 GMT. For most use cases, this is a relatively small value. For example, 5 minutes, for five minutes from now, this value should be 1670923791.
+* `iss` - the Organization ID from the Adobe Developer Console project, in the format org_ident@AdobeOrg.
+* `sub` - the Technical Account ID from the Adobe Developer Console integration, in the format: id@techacct.adobe.com.
+* `aud` - the Client ID from the Adobe Developer Console integration prepended with `https://ims-na1.adobelogin.com/c/`.
+* `https://ims-na1-stg1.adobelogin.com/s/ent_aemforms_docprocessing` - set to the literal value `true`
 
-##### 例
+This JSON object must be then base64 encoded and signed using the private key for the project. Finally, the encoded value is sent in the body of a POST request to `https://ims-na1.adobelogin.com/ims/exchange/jwt` along with the Client ID and Client Secret for the project.
+
+##### Example
 
 ```JSON
+
     ========================= REQUEST ==========================
     POST https://ims-na1.adobelogin.com/ims/exchange/jwt
     -------------------------- body ----------------------------
@@ -101,11 +108,14 @@ JWT JSON オブジェクトを構築するには、次のキー（claims と呼�
     ------------------------- headers --------------------------
     Content-Type: application/x-www-form-urlencoded
     Cache-Control: no-cache
+
 ```
 
-#### JWT の言語サポート
+#### Language Support for JWT
 
-カスタムコードでは JWT の生成と交換のプロセス全体を実行できますが、それにはより高レベルのライブラリを使用する方が一般的です。 このようなライブラリの多くは、 [Adobe I/OJWT ドキュメント](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/).
+While it is possible to do the entire JWT generation and exchange process in custom code, it is more common to use a higher-level library to do so. A number of such libraries are listed on the [Adobe I/O JWT Documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/).
+
+-->
 
 ### （ドキュメント生成 API の場合のみ）アセットと権限の設定
 
