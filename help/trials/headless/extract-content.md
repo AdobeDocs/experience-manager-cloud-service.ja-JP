@@ -4,9 +4,9 @@ description: コンテンツフラグメントとGraphQL API をヘッドレス�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1301'
 ht-degree: 1%
 
 ---
@@ -15,18 +15,25 @@ ht-degree: 1%
 
 これまでのAEM Trials for headless では、 [独自のコンテンツフラグメントモデルを作成しました。](content-structure.md) 自分のヘッドレスコンテンツを作成し [コンテンツフラグメント。](create-content.md) コンテンツフラグメントとGraphQL API をヘッドレスコンテンツ管理システムとして使用し、コンテンツを配信する方法を学ぶことができます。
 
-GraphQL はクエリベースの API を提供し、1 回の API 呼び出しを使用して、外部のクライアントアプリケーションが必要なコンテンツに対してのみAEMをクエリできます。
+GraphQLは、1 回の API 呼び出しを使用して、外部のクライアントアプリケーションがAEMに対して、必要なコンテンツに対してのみクエリを実行できるクエリベースの API を提供します。
 
 まず、2 つの異なるタイプのクエリを実行する方法を学びます。 **リスト** および **byPath** クエリ。 次に、前に作成したコンテンツフラグメントからコンテンツを取得する方法を学びます。 このドキュメントは、同じ手順を説明し、必要に応じて追加のリソースにリンクする、インタラクティブツアーの補足として機能します。
 
 >[!TIP]
 >
->GraphQL API について詳しくは、 [「その他のリソース」セクション](#additional-resources) ( GraphQL API ガイド用 ) を参照してください。
+>GraphQL API について詳しくは、 [「その他のリソース」セクション](#additional-resources) （GraphQL API ガイド用）を参照してください。
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql"
 >title="GraphQL API を使用したコンテンツの抽出"
 >abstract="このモジュールでは、コンテンツフラグメントとGraphQL API をヘッドレスコンテンツ管理システムとして使用する方法について説明します。"
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
+>title="GraphQL Explorer を起動します。"
+>abstract="GraphQLはクエリベースの API を提供し、1 回の API 呼び出しを使用して、外部のクライアントアプリケーションが必要なコンテンツに対してのみAEMをクエリできるようにします。 このガイドでは、2 つの異なるタイプのクエリを実行し、前のモジュールで作成したコンテンツフラグメントからコンテンツを取得する方法について説明します。<br><br>以下をクリックして、新しいタブで機能を起動します。"
+>additional-url="https://video.tv.adobe.com/v/328618" text="導入ビデオのプレースホルダー"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="ビデオサムネール：GraphQLのクイックコンテンツ抽出"
 
 ## GraphQL Explorer {#graphql-explorer}
 
@@ -34,7 +41,7 @@ GraphQL Explorer を起動します。 ここで、ヘッドレスコンテン�
 
 ![GraphQL Query Editor](assets/extract-content/query-editor.png)
 
-アプリ内ガイダンスの外部からGraphQL Explorer に移動する場合は、ページの左上にあるAdobeアイコンを使用します。 AEMのグローバルナビゲーションが開きます。 ここから、 **ツール** タブと **一般** -> **GraphQL クエリエディター**.
+アプリ内ガイダンスの外部で GraphQL Explorer に移動する場合は、ページの左上にあるAdobeアイコンを使用します。 AEMのグローバルナビゲーションが開きます。 ここから、 **ツール** タブと **一般** -> **GraphQL Query Editor**.
 
 >[!TIP]
 >
