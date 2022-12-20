@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 2478276c8f8a2c92a63e24e50520e8d81b9a4e26
+source-git-commit: 5545cd1739db41dbabf06cff916811123e7e09be
 workflow-type: tm+mt
-source-wordcount: '2899'
-ht-degree: 100%
+source-wordcount: '2902'
+ht-degree: 97%
 
 ---
 
@@ -111,10 +111,10 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 デベロッパーは、[!DNL Asset Compute Service] を使用して、サポートされる使用例に応じた[カスタムアプリケーションを作成](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=ja)できます。[!DNL Experience Manager]は、管理者が設定したカスタムプロファイルを使用して、これらのカスタムアプリケーションをユーザーインターフェイスから呼び出すことができます。[!DNL Asset Compute Service] は、外部サービスを呼び出す次の使用例をサポートしています。
 
-* [!DNL Adobe Photoshop] の [ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) を使用して、結果をレンディションとして保存します。
+* [!DNL Adobe Photoshop] の [ImageCutout API](https://developer.adobe.com/photoshop/photoshop-api-docs/) を使用して、結果をレンディションとして保存します。
 * サードパーティシステムを呼び出して、PIM システムなどのデータをアップデートします。
 * [!DNL Photoshop] API を使用して、Photoshop テンプレートに基づいて様々なレンディションを生成します。 
-* [Adobe Lightroom API](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) を使用して、取得したアセットを最適化し、レンディションとして保存します。
+* [Adobe Lightroom API](https://developer.adobe.com/photoshop/photoshop-api-docs/) を使用して、取得したアセットを最適化し、レンディションとして保存します。
 
 >[!NOTE]
 >
@@ -129,17 +129,17 @@ The following video demonstrates the usefulness and usage of standard profile.
 1. 以下の情報を入力します。
 
    * 各レンディションのファイル名と、サポートされているファイル拡張子。
-   * [Firefly カスタムアプリのエンドポイント URL](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html?lang=ja)。アプリは、Experience Manager アカウントと同じ組織のものである必要があります。
+   * [App Builder カスタムアプリのエンドポイント URL](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html?lang=ja). アプリは、Experience Manager アカウントと同じ組織のものである必要があります。
    * サービスパラメーターを追加し、[追加の情報やパラメーターをカスタムアプリケーションに渡します](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=ja#extend)。
    * MIME タイプを追加および除外し、処理を特定のファイル形式のみに制限します。
 
    「**[!UICONTROL 保存]**」をクリックします。
 
-カスタムアプリケーションは、ヘッドレスな [Project Firefly](https://github.com/AdobeDocs/project-firefly) アプリです。処理プロファイルが設定されている場合、カスタムアプリケーションは指定されたすべてのファイルを取得します。アプリケーションは、ファイルをフィルタリングする必要があります。
+カスタムアプリケーションはヘッドレスです [プロジェクトアプリビルダー](https://developer.adobe.com/app-builder/docs/overview/) アプリ 処理プロファイルが設定されている場合、カスタムアプリケーションは指定されたすべてのファイルを取得します。 アプリケーションは、ファイルをフィルタリングする必要があります。
 
 >[!CAUTION]
 >
->Firefly アプリと [!DNL Experience Manager] アカウントが同じ組織に属していない場合、統合は機能しません。
+>App Builder アプリの場合、および [!DNL Experience Manager] アカウントが同じ組織に属していない場合、統合は機能しません。
 
 ### カスタムプロファイルの例 {#custom-profile-example}
 
@@ -268,9 +268,9 @@ OSGi 設定のデプロイ方法については、[ [!DNL Experience Manager]](/
 
 >[!MORELIKETHIS]
 >
->* [アセット計算サービスの紹介](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html)。
->* [拡張機能と使用するタイミングについて](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)。
->* [カスタムアプリケーションの作成方法](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html)。
+>* [アセット計算サービスの紹介](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html?lang=ja)。
+>* [拡張機能と使用するタイミングについて](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=ja)。
+>* [カスタムアプリケーションの作成方法](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=ja)。
 >* [様々な使用例でサポートされる MIME タイプ](/help/assets/file-format-support.md)。
 
 
