@@ -6,10 +6,10 @@ role: User, Developer
 level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 94825e3b60d970fec5bf696d932ca66bb83fd2f3
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 100%
+source-wordcount: '324'
+ht-degree: 91%
 
 ---
 
@@ -28,6 +28,10 @@ ht-degree: 100%
 * 標準の HTML アップロードフィールドを含んだアダプティブフォームを Apple iOS デバイスから送信すると、ファイルの内容が送信されず、送信先で 0 バイトのファイルを受信します。この問題は断続的に発生し、同期送信を使用した場合にのみ発生します。Apple iOS では、これは[既知の問題](https://feedbackassistant.apple.com/feedback/9117687)です。
 
 * 標準の HTML アップロードフィールドを含んだフォームを Apple iOS デバイスから送信すると、ファイルの内容が送信されず、送信先で 0 バイトのファイルを受信することがあります。Apple iOS では、これは既知の問題です。[FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+
+* AEM Forms as a Cloud Serviceは、XDP および JSON スキーマファイルのサムネールを生成しません。 サムネールの代わりにデフォルトのアイコンが表示されます。
+
+   ![Forms Thumbnail の既知の問題](/help/forms/assets/forms-tumbnail-known-issue.png)
 
 
 ## 制限事項 {#limitations}
