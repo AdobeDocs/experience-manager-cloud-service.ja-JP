@@ -2,10 +2,10 @@
 title: Target へのコンテンツの取り込み
 description: Target へのコンテンツの取り込み
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: acddd68b61173ab956cafcc7168fd7f898973638
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 74%
+source-wordcount: '1375'
+ht-degree: 64%
 
 ---
 
@@ -143,6 +143,18 @@ Release Orchestrator は、更新を自動的に適用することで、環境�
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
-## 次の手順 {#whats-next}
+### 追加取り込み失敗
+
+の一般的な原因 [追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失敗はノード id 内の競合です。 このエラーを識別するには、Cloud Acceleration Manager UI を使用して取り込みログをダウンロードし、次のようなエントリを探します。
+
+>java.lang.RuntimeException:org.apache.jackrabbit.oak.api.CommitFailedException:OakConstraint0030:一意性制約違反プロパティ [jcr:uuid] 値 a1a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5 の場合：/some/path/jcr:content, /some/other/path/jcr:content
+
+AEMの各ノードには、一意の UUID が必要です。 このエラーは、取り込まれるノードの uuid が、ターゲットインスタンス上の別のパスに既に存在する uuid と同じであることを示します。
+この問題は、抽出とそれ以降の抽出の間にソース上でノードが移動した場合に発生する可能性があります [追加抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
+また、ターゲット上のノードが取り込みとそれ以降の追加取り込みの間に移動した場合にも発生する可能性があります。
+
+この競合は手動で解決する必要があります。 コンテンツを参照する他のコンテンツに留意し、2 つのノードのうち、削除する必要があるノードを誰かが決定する必要があります。 ソリューションでは、問題のあるノードがなくても、追加抽出を再び実行する必要が生じる場合があります。
+
+## 次のステップ {#whats-next}
 
 コンテンツの Target への取り込みが完了したら、各手順のログ（抽出および取り込み）を表示し、エラーを探すことができます。 詳しくは、[移行セットのログの表示](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ja)を参照してください。
