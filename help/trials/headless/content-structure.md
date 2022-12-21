@@ -4,9 +4,9 @@ description: AEMコンテンツフラグメントモデルを使用して、す�
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1104'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,6 @@ ht-degree: 1%
 >title="モデルエディターを起動します。"
 >abstract="コンテンツフラグメントモデルの作成は、モデル管理ワークフローでモデル項目を作成し、コンテンツフラグメントモデルエディターを使用して構造要素を追加することから始まります。<br><br>下をクリックして新しいタブで機能を起動し、この学習ドキュメントに従って最初のコンテンツフラグメントモデルを作成します。"
 >additional-url="https://video.tv.adobe.com/v/328618" text="導入ビデオのプレースホルダー"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="ビデオサムネール：AEMヘッドレスの構成要素"
 
 ## コンテンツフラグメントモデルコンソール {#content-fragment-model-console}
 

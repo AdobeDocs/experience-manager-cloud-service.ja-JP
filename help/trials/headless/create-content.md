@@ -4,9 +4,9 @@ description: 前に作成したコンテンツフラグメントモデルを使�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '885'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,6 @@ ht-degree: 1%
 >title="コンテンツフラグメントコンソールを起動します。"
 >abstract="AEMヘッドレス CMS では、「コンテンツフラグメント」は、「コンテンツフラグメントモデル」と呼ばれる事前定義済みの構造に適合するコンテンツのすべての部分です。 このチュートリアルでは、コンテンツフラグメントモデルのコンテンツを作成する方法を学びます。<br><br>下をクリックして新しいタブで機能を起動し、この学習ドキュメントに従って最初のコンテンツフラグメントを作成します。"
 >additional-url="https://video.tv.adobe.com/v/328618" text="導入ビデオのプレースホルダー"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="ビデオサムネール：コンテンツの追加 — 勝者のレシピ"
 
 ## コンテンツフラグメント {#introduction}
 

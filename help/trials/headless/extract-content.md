@@ -4,9 +4,9 @@ description: コンテンツフラグメントとGraphQL API をヘッドレス�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1287'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ GraphQLは、1 回の API 呼び出しを使用して、外部のクライアン
 
 >[!TIP]
 >
->GraphQL API について詳しくは、 [「その他のリソース」セクション](#additional-resources) （GraphQL API ガイド用）を参照してください。
+>GraphQL API について詳しくは、 [「その他のリソース」セクション](#additional-resources) ( GraphQL API ガイド用 ) を参照してください。
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql"
@@ -33,7 +33,6 @@ GraphQLは、1 回の API 呼び出しを使用して、外部のクライアン
 >title="GraphQL Explorer を起動します。"
 >abstract="GraphQLはクエリベースの API を提供し、1 回の API 呼び出しを使用して、外部のクライアントアプリケーションが必要なコンテンツに対してのみAEMをクエリできるようにします。 このガイドでは、2 つの異なるタイプのクエリを実行し、前のモジュールで作成したコンテンツフラグメントからコンテンツを取得する方法について説明します。<br><br>以下をクリックして、新しいタブで機能を起動します。"
 >additional-url="https://video.tv.adobe.com/v/328618" text="導入ビデオのプレースホルダー"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="ビデオサムネール：GraphQLのクイックコンテンツ抽出"
 
 ## GraphQL Explorer {#graphql-explorer}
 
@@ -41,7 +40,7 @@ GraphQL Explorer を起動します。 ここで、ヘッドレスコンテン�
 
 ![GraphQL Query Editor](assets/extract-content/query-editor.png)
 
-アプリ内ガイダンスの外部で GraphQL Explorer に移動する場合は、ページの左上にあるAdobeアイコンを使用します。 AEMのグローバルナビゲーションが開きます。 ここから、 **ツール** タブと **一般** -> **GraphQL Query Editor**.
+アプリ内ガイダンスの外部からGraphQL Explorer に移動する場合は、ページの左上にあるAdobeアイコンを使用します。 AEMのグローバルナビゲーションが開きます。 ここから、 **ツール** タブと **一般** -> **GraphQL Query Editor**.
 
 >[!TIP]
 >
@@ -55,7 +54,7 @@ AEM Trials には、テスト用にコンテンツを抽出できるエンドポ
 
 ## リストクエリのコピーと実行 {#list-query}
 
-AEM as a Cloud ServiceのGraphQL API の動作に合わせて簡単なリストクエリから始めます。 このリストクエリの例は、特定のコンテンツフラグメントモデルを使用するすべてのコンテンツのリストを返します。 在庫ページとカテゴリページでは、通常、このクエリ形式を使用します。
+AEM as a Cloud Serviceの GraphQL API の動作に合わせた簡単なリストクエリから始めます。 このリストクエリの例は、特定のコンテンツフラグメントモデルを使用するすべてのコンテンツのリストを返します。 在庫ページとカテゴリページでは、通常、このクエリ形式を使用します。
 
 1. 次のコードスニペットをコピーします。
 
@@ -169,7 +168,7 @@ byPath クエリを実行すると、特定のコンテンツフラグメント�
 
    ![独自のクエリの結果](assets/extract-content/custom-query-results.png)
 
-コンテンツをオムニチャネルのデジタルエクスペリエンスに配信する方法は次のとおりです。 詳しくは、 [「その他のリソース」セクション](#additional-resources) を参照してください。
+コンテンツをオムニチャネルのデジタルエクスペリエンスに配信する方法は次のとおりです。 詳しくは、 [「その他のリソース」セクション](#additional-resources) を参照し、GraphQL API で実行できるクエリの例を確認してください。
 
 ## コンテンツのクエリ方法を学びました。 {#conclusion}
 

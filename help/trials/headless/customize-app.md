@@ -4,9 +4,9 @@ description: サンプルの React アプリを使用して、AEM as a Cloud Ser
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1465'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,6 @@ ht-degree: 0%
 >title="コンテンツフラグメントエディターを起動します。"
 >abstract="ヘッドレス向けのAEMトライアルは、ヘッドレスコンテンツを紹介するシンプルな React アプリでプリロードされます。 アプリは、コンテンツフラグメントの構造に基づいています。 AEMのコンテンツフラグメントエディターを使用して、アプリのコンテンツを変更できます。<br><br>以下をクリックして新しいタブで機能を起動し、このガイドに従ってください。"
 >additional-url="https://video.tv.adobe.com/v/328618" text="導入ビデオのプレースホルダー"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="ビデオサムネール：Flash でのアプリコンテンツの変更"
 
 ## コンテンツフラグメントエディター {#fragment-editor}
 
