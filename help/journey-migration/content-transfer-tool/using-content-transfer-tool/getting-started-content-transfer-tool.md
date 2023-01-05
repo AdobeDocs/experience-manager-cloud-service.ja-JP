@@ -2,7 +2,7 @@
 title: コンテンツ転送ツールの基本を学ぶ
 description: コンテンツ転送ツールの基本を学ぶ
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 4c2a02bb7ea981f78e51afc6ee20a3a936dfd666
+source-git-commit: eacd418ead2cc754a055449a99037b6541f55f6a
 workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 93%
@@ -18,7 +18,7 @@ ht-degree: 93%
 >id="aemcloud_ctt_download"
 >title="ダウンロード"
 >abstract="コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="リリースノート"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja" text="リリースノート"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="ソフトウェア配布ポータル"
 
 コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)を使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。最新バージョンの詳細については、「[リリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja)」を参照してください。
@@ -69,7 +69,7 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 >id="aemcloud_ctt_extraction_setup"
 >title="抽出設定フェーズ"
 >abstract="移行セットを作成し、抽出キーをコピーする方法を説明します。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="チュートリアル - コンテンツ転送ツールの使用"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ja#migration" text="チュートリアル - コンテンツ転送ツールの使用"
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
 

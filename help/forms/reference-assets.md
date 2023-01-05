@@ -4,13 +4,13 @@ seo-title: Reference Themes
 description: AEM Forms には、ソフトウェア配布から取得してフォームのスタイル設定に使用できるアダプティブフォームテーマが用意されています。
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
-source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
+exl-id: 92870b32-e0d5-4cb4-9b88-81f88ca8ff64
+source-git-commit: 575e9836d676cf6711e039a5bb6860ad04324d60
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 56%
 
 ---
-
 
 # Formsas a Cloud Serviceの参照アセット {#reference-themes}
 
@@ -35,7 +35,7 @@ ht-degree: 56%
 
 パッケージのインストールについて詳しくは、[パッケージの作業方法](/help/implementing/developing/tools/package-manager.md)を参照してください。
 
-### ベリル {#beryl}
+### Beryl {#beryl}
 
 Beryl テーマは、We.Gov アダプティブフォームで使用され、背景画像、透明度および大きくてフラットなアイコンの使用を強調します。以下のスクリーンショットで、Beryl テーマの外観と、フォームのスタイル設定がどのように拡張されるかを確認できます。
 

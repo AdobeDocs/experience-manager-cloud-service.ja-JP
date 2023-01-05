@@ -119,7 +119,7 @@ AEM レイヤーは、デフォルトでは BLOB コンテンツをキャッシ�
 >[!NOTE]
 >Cloud Manager 環境変数 AEM_BLOB_ENABLE_CACHING_HEADERS を true に設定して、古いデフォルトの動作を、新しい動作（65000 より大きいプログラム ID）と一致するように変更することをお勧めします。プログラムが既に実稼働している場合は、変更後に、コンテンツが期待どおりに動作することを確認してください。
 
-現在、非公開とマークされた BLOB ストレージ内の画像は、 [権限に影響を受けるキャッシュ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). 画像は常にAEM接触チャネルから要求され、ユーザーが承認されている場合に提供されます。
+現在、非公開とマークされた BLOB ストレージ内の画像は、 [権限に影響を受けるキャッシュ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ja). 画像は常にAEM接触チャネルから要求され、ユーザーが承認されている場合に提供されます。
 
 >[!NOTE]
 >[dispatcher-ttl AEM ACS Commons プロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)を含む他のメソッドでは、値は上書きされません。
@@ -484,5 +484,5 @@ HTML ページにインクルードされるデフォルトの clientlib は、�
 1. Adobe Granite HTML Library Manager の OSGi Config を探します。
    * 「厳密なバージョン管理」チェックボックスをオンにして有効にします。
    * 「長期クライアントサイドキャッシュキー」というラベルの付いたフィールドに、値「/.*;hash」を入力します。
-1. 変更内容を保存します。AEM as a Cloud Serviceは、開発、ステージ、実稼動環境でこの設定を自動的に有効にするので、この設定をソース管理に保存する必要はありません。
+1. 変更内容を保存します。AEM as a Cloud Serviceは開発、ステージ、実稼動環境でこの設定を自動的に有効にするので、この設定をソース管理に保存する必要はありません。
 1. クライアントライブラリのコンテンツが変更されるたびに、新しいハッシュキーが生成され、HTML 参照が更新されます。

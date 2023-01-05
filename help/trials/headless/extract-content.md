@@ -1,6 +1,6 @@
 ---
 title: GraphQL API を使用したコンテンツの抽出
-description: コンテンツフラグメントとGraphQL API をヘッドレスコンテンツ管理システムとして使用する方法について説明します。
+description: コンテンツフラグメントと GraphQL API をヘッドレスコンテンツ管理システムとして使用する方法を説明します。
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # GraphQL API を使用したコンテンツの抽出 {#extract-content}
 
-これまでのAEM Trials for headless では、 [独自のコンテンツフラグメントモデルを作成しました。](content-structure.md) 自分のヘッドレスコンテンツを作成し [コンテンツフラグメント。](create-content.md) コンテンツフラグメントとGraphQL API をヘッドレスコンテンツ管理システムとして使用し、コンテンツを配信する方法を学ぶことができます。
+これまでのAEM Trials for headless では、 [独自のコンテンツフラグメントモデルを作成しました。](content-structure.md) 自分のヘッドレスコンテンツを作成し [コンテンツフラグメント。](create-content.md) コンテンツフラグメントと GraphQL API をヘッドレスコンテンツ管理システムとして使用し、コンテンツを配信する方法を学ぶことができます。
 
 GraphQLは、1 回の API 呼び出しを使用して、外部のクライアントアプリケーションがAEMに対して、必要なコンテンツに対してのみクエリを実行できるクエリベースの API を提供します。
 
@@ -40,7 +40,7 @@ GraphQL Explorer を起動します。 ここで、ヘッドレスコンテン�
 
 ![GraphQL Query Editor](assets/extract-content/query-editor.png)
 
-アプリ内ガイダンスの外部からGraphQL Explorer に移動する場合は、ページの左上にあるAdobeアイコンを使用します。 AEMのグローバルナビゲーションが開きます。 ここから、 **ツール** タブと **一般** -> **GraphQL Query Editor**.
+アプリ内ガイダンスの外部で GraphQL Explorer に移動する場合は、ページの左上にあるAdobeアイコンを使用します。 AEMのグローバルナビゲーションが開きます。 ここから、 **ツール** タブと **一般** -> **GraphQL Query Editor**.
 
 >[!TIP]
 >
@@ -54,7 +54,7 @@ AEM Trials には、テスト用にコンテンツを抽出できるエンドポ
 
 ## リストクエリのコピーと実行 {#list-query}
 
-AEM as a Cloud Serviceの GraphQL API の動作に合わせた簡単なリストクエリから始めます。 このリストクエリの例は、特定のコンテンツフラグメントモデルを使用するすべてのコンテンツのリストを返します。 在庫ページとカテゴリページでは、通常、このクエリ形式を使用します。
+AEM as a Cloud ServiceのGraphQL API の動作に合わせて簡単なリストクエリから始めます。 このリストクエリの例は、特定のコンテンツフラグメントモデルを使用するすべてのコンテンツのリストを返します。 在庫ページとカテゴリページでは、通常、このクエリ形式を使用します。
 
 1. 次のコードスニペットをコピーします。
 
@@ -168,7 +168,7 @@ byPath クエリを実行すると、特定のコンテンツフラグメント�
 
    ![独自のクエリの結果](assets/extract-content/custom-query-results.png)
 
-コンテンツをオムニチャネルのデジタルエクスペリエンスに配信する方法は次のとおりです。 詳しくは、 [「その他のリソース」セクション](#additional-resources) を参照し、GraphQL API で実行できるクエリの例を確認してください。
+コンテンツをオムニチャネルのデジタルエクスペリエンスに配信する方法は次のとおりです。 詳しくは、 [「その他のリソース」セクション](#additional-resources) を参照してください。
 
 ## コンテンツのクエリ方法を学びました。 {#conclusion}
 

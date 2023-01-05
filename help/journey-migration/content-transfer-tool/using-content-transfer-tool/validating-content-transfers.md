@@ -2,7 +2,7 @@
 title: コンテンツ転送の検証
 description: コンテンツ転送ツールを使用してコンテンツ転送を検証します
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 99ecf1309b9fa7613bfb9c99de9677700082f128
+source-git-commit: b6c9d7411e84b18926aa525efe25296002c2d3d2
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 94%

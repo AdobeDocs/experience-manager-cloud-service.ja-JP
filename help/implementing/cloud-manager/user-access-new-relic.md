@@ -72,7 +72,7 @@ AEM as a Cloud Service 用の New Relic One APM には、多くの機能があ�
 
 次の手順に従って、New Relic ユーザーとしてアカウントを有効にします。
 
-1. New Relic からのメールに記載されているリンクをクリックします。 これにより、ブラウザーが開き、New Relic ログインページが表示されます。
+1. New Relic からのメールに記載されているリンクをクリックします。これにより、ブラウザーが開き、New Relic ログインページが表示されます。
 
 1. New Relic ログインページで、「**パスワードを忘れた場合**」を選択します。
 
@@ -147,7 +147,7 @@ New Relic から電子メールが届かない場合：
 New Relic One にユーザーを追加する場合は、次の制限が適用されます。
 
 * 最大 30 人のユーザーを追加できます。ユーザーの最大数に達した場合は、新しいユーザーを追加できるように、ユーザーを削除します。
-* New Relic に追加されたユーザーは、**制限付き**&#x200B;のタイプになります。詳しくは、New Relic のドキュメントを参照してください。[](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)%20any%20New%20Relic%20features.)
+* New Relic に追加されたユーザーは、**制限付き**&#x200B;のタイプになります。詳しくは、[New Relic のドキュメントを参照してください。](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)%20any%20New%20Relic%20features.)
 * AEM as a Cloud Service は New Relic One APM ソリューションのみを提供し、アラート、ログ、API 統合のサポートは提供していません。
 
 AEM as a Cloud Service の New Relic One 製品に関する詳細なヘルプまたは追加のガイダンスについては、[AEM サポートポータル](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)からサポートチケットを開いてください。

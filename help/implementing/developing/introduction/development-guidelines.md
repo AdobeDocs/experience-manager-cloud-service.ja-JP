@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service上での開発に関するガイドラインと、オンプレミスでのAEMおよび AMS でのAEMとは異なる重要な方法について説明します。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 88d7728758927f16ed0807de8d261ca1b4b8b104
+source-git-commit: e305f9fa7d1c485362bddb8fcd7c9e3e2edefe10
 workflow-type: tm+mt
 source-wordcount: '2590'
 ht-degree: 90%
@@ -220,7 +220,7 @@ AEM as a Cloud Service 開発者環境でデバッグするためのツールセ
 
 ### 設定 {#email-configuration}
 
-AEM 内の電子メールは、[Day CQ Mail Service OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) サービスを使用して送信する必要があります。
+AEM 内の電子メールは、[Day CQ Mail Service OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja#configuring-the-mail-service) サービスを使用して送信する必要があります。
 
 電子メールの設定について詳しくは、 [AEM 6.5 ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja) を参照してください。AEM as a Cloud Service の場合は、`com.day.cq.mailer.DefaultMailService OSGI` サービスへの次のような調整が必要になります。
 

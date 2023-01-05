@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 218dd65d1969f92317ae1d9877e2e37bb201ea6a
+source-git-commit: 33bf3dbf6118a9d93e0fe021736b74079100a214
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 13%
+ht-degree: 17%
 
 ---
 
@@ -25,12 +25,12 @@ ht-degree: 13%
 
 >[!CAUTION]
 >
->**計画されたメンテナンスの除外期間**
+>**計画されたメンテナンス除外期間**
 >
-> AEMaaCS の自動メンテナンスは、次の期間 ( 午前 0 時(00:00) CET から開始し、終了 ) には実行されません。
+> AEMaaCS の自動メンテナンスは、次の期間（中央ヨーロッパ時間 00:00 に開始および終了）には実行されません。
 >
->* 11 月 21 日（月）～12 月 12 日（月）
->* 12 月 19 日（月）～1 月 3 日（火）
+>* 11月21日 月曜日～12月12日 月曜日
+>* 12月19日 月曜日～1月3日 火曜日
 
 
 ## リリース日 {#release-date}
@@ -60,7 +60,7 @@ ht-degree: 13%
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-* Experience Manager Assetsで、他のサポートされている形式のドキュメントをアップロードし、[ 付属のDocument Cloudビューアを使用してプレビュー](/help/assets/manage-pdf-documents.md). サポートされる形式の種類には、TXT、RTF、DOC、DOCX、PPT、PPTX、XLS、XLSX が含まれます。
+* Experience Manager Assetsで、他のサポートされている形式のドキュメントをアップロードし、[ 付属のDocument Cloudビューアを使用してプレビュー](/help/assets/manage-pdf-documents.md). サポートされている形式タイプには、TXT、RTF、DOC、DOCX、PPT、PPTX、XLS および XLSX が含まれます。
 
    ![他の形式のPDFレンディション](/help/release-notes/assets/multi-page-other-formats.png)
 

@@ -2,7 +2,7 @@
 title: カスタムドメイン名の概要
 description: Cloud Manager の UI では、セルフサービス方式でカスタムドメインを追加して、サイトを独自のブランド名で識別することができます。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 42318a42a55134501eb13feca22791bb5db4e83f
+source-git-commit: 01ff58fee9d309de75afcb556726e1cf32b9f70a
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 83%

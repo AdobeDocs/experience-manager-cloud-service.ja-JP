@@ -2,7 +2,7 @@
 title: デモサイトで AEM Screens を有効にする
 description: デモサイトで AEM Screens as a Cloud Service の完全なエクスペリエンスを有効にする手順を説明します。
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 71e318f93b6edab5d2ae685d8603c3d0040f72a3
+source-git-commit: 8ee3de944290a917c320ad9aa4205b28ad1620bb
 workflow-type: tm+mt
 source-wordcount: '2699'
 ht-degree: 98%

@@ -4,8 +4,8 @@ description: コンテンツ配信ネットワーク（CDN）にキャッシュ�
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: 532d32334456b4b791e3a5ffe17a780f378dd1cc
-workflow-type: ht
+source-git-commit: db0451e76564f238b34555aafa3692202887a1d6
+workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 100%
 

@@ -2,7 +2,7 @@
 title: コンテンツフラグメントモデル（アセット — コンテンツフラグメント）
 description: コンテンツフラグメントモデルが AEM におけるヘッドレスコンテンツの基盤となっている仕組みと、構造化コンテンツを含んだコンテンツフラグメントを作成する方法について説明します。
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 17705b698915d4fac1e60ad06396d40f2e19ebd5
+source-git-commit: f1a97c4bbb07accb33aa449a07ced0c0ac255b9e
 workflow-type: tm+mt
 source-wordcount: '2887'
 ht-degree: 99%

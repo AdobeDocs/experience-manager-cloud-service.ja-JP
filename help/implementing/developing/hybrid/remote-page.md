@@ -4,8 +4,8 @@ description: RemotePage コンポーネントは、AEM 内のリモート React 
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 source-git-commit: d213dd0788e66015237d241caf0f3b5737ce725c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '392'
+ht-degree: 87%
 
 ---
 

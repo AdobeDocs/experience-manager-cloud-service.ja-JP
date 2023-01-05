@@ -3,7 +3,7 @@ title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager as a Cloud Service で Dynamic Media を設定する方法を説明します。
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 50a7db14a378f99eeadc3f9cb91f228ea4139ff4
+source-git-commit: 8066d24193822a79d88f564a2db26b3acbb4e918
 workflow-type: tm+mt
 source-wordcount: '3795'
 ht-degree: 93%
@@ -162,7 +162,7 @@ Dynamic Media でのパスワードの有効期限は、現在のシステム日
 
 * 大文字
 * 小文字
-* 数値
+* Number
 * 特殊文字：`# $ & . - _ : { }`
 
 必要に応じて、パスワードの目のアイコンを選択してパスワードを表示し、入力または再入力したパスワードのスペルを確認できます。アイコンをもう一度選択すると、パスワードが非表示になります。

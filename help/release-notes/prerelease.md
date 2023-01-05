@@ -48,7 +48,7 @@ AEM as a Cloud Serviceには 2 種類のリリースがあります。
 
 ## カレンダーのマーク {#mark-calendars}
 
-毎月のリリースは十分に事前に予定されており、リリース日は [Adobe Experience League。](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
+毎月のリリースは十分に事前に予定されており、リリース日は [Adobe Experience League。](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja#aem-as-cloud-service)
 
 リリース日を控えておくと、今後の機能の確認やテストを計画できます。
 
