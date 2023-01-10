@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# AEM Screensas a Cloud Service {#aem-screens-as-a-cloud-service-guide}
+# AEM Screens as a Cloud Service {#aem-screens-as-a-cloud-service-guide}
 
 このページでは、AEM Screens と、デジタルサイネージソリューションの仕組みについて詳しく説明します。セルフヘルプのリソースを入手し、新機能を確認します。
 
