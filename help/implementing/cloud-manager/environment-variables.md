@@ -2,10 +2,10 @@
 title: Cloud Manager 環境変数
 description: 標準環境変数は、Cloud Manager を介して設定および管理でき、ランタイム環境に提供され、OSGi 設定で使用できます。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: abce1369b3b97a1e9ff7d0c8434b671cc7c5f8c2
+source-git-commit: 6c2d5c4c1dd9ca56cf3ab5487d9a8794f4fbd97b
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 97%
+source-wordcount: '1015'
+ht-degree: 87%
 
 ---
 
@@ -107,3 +107,29 @@ ht-degree: 97%
 `pom.xml` ファイルで両方のタイプの変数を使用する方法の例については、[プロジェクトの設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories)を参照してください。
 
 詳しくは、[Maven の公式ドキュメント](https://maven.apache.org/settings.html#quick-overview)を参照してください。
+
+## 環境変数の可用性 {#availability}
+
+環境変数は、様々な場所で使用できます。
+
+### 作成、プレビュー、公開 {#author-preview-publish}
+
+通常の環境変数とシークレットは、オーサリング、プレビューおよび公開の各環境で使用できます。
+
+### Dispatcher {#dispatcher}
+
+Dispatcher で使用できるのは、通常の環境変数のみです。 シークレットは使用できません。
+
+ただし、環境変数は `IfDefine` ディレクティブ。
+
+>[!TIP]
+>
+>環境変数の使用を検証するには、 [ローカルでの dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) デプロイする前に
+
+### OSGi 設定 {#osgi}
+
+通常の環境変数とシークレットは、OSGi 設定で使用できます。
+
+### パイプライン変数 {#pipeline}
+
+環境変数に加えて、ビルドフェーズで公開されるパイプライン変数もあります。 [パイプライン変数の詳細については、こちらを参照してください。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
