@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] への�
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: a01a9e34fed9182c6c1e7325b2035c63acf875dd
+source-git-commit: 55e117bba7037d44eaadab8bd2de7164e23b47fa
 workflow-type: tm+mt
 source-wordcount: '3064'
 ht-degree: 93%
@@ -257,11 +257,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 **一括読み込みでのフォルダー名の処理**
 
-フォルダーのファイル名の場合、JCR の名前とパスは、`JcrUtil.createValidName` API を使用してサニタイズされます。
+フォルダーのファイル名の場合、JCR の名前とパスは、`DamUtil.getSanitizedFolderName` API を使用してサニタイズされます。
 
 * 大文字は小文字に変換されます。
 * Unicode 文字は変更されません。
-* 特殊文字をダッシュ（「-」）に置き換えます。例えば、`new asset.png` は `new-asset.png` に更新されます。
+* 特殊文字をダッシュ（「-」）に置き換えます。例えば、`new folder` は `new-folder` に更新されます。
 
    ```
    "                           
