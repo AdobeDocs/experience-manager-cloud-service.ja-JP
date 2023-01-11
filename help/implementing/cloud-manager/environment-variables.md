@@ -2,9 +2,9 @@
 title: Cloud Manager 環境変数
 description: 標準環境変数は、Cloud Manager を介して設定および管理でき、ランタイム環境に提供され、OSGi 設定で使用できます。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 6c2d5c4c1dd9ca56cf3ab5487d9a8794f4fbd97b
+source-git-commit: a8a7bd1f892c7c6eeb1753c8a55f884a33b397d4
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1021'
 ht-degree: 87%
 
 ---
@@ -118,7 +118,7 @@ ht-degree: 87%
 
 ### Dispatcher {#dispatcher}
 
-Dispatcher で使用できるのは、通常の環境変数のみです。 シークレットは使用できません。
+で使用できるのは通常の環境変数のみです [dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja) シークレットは使用できません。
 
 ただし、環境変数は `IfDefine` ディレクティブ。
 
@@ -128,7 +128,7 @@ Dispatcher で使用できるのは、通常の環境変数のみです。 シ�
 
 ### OSGi 設定 {#osgi}
 
-通常の環境変数とシークレットは、OSGi 設定で使用できます。
+通常の環境変数とシークレットは、 [OSGi 設定。](/help/implementing/deploying/configuring-osgi.md)
 
 ### パイプライン変数 {#pipeline}
 
