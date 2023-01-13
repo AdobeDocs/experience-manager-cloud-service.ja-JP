@@ -2,10 +2,10 @@
 title: AEM Developer Tools for Eclipse
 description: AEM Developer Tools for Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 3af790d9b42eb2f685258eb18352ec4cd752efcc
+source-git-commit: cac6692e10da4b271610edd495d4cb38507a726b
 workflow-type: tm+mt
-source-wordcount: '1179'
-ht-degree: 94%
+source-wordcount: '1182'
+ht-degree: 93%
 
 ---
 
@@ -40,11 +40,11 @@ AEM Developer Tools を使用する前に、次の作業が必要です。
 
 あなたが [要件](#requirements) 上記の手順で、次のようにプラグインをインストールできます。
 
-1. を開きます。 [AEM Developer Tools Web Site](https://eclipse.adobe.com/aem/dev-tools/).
+1. を開きます。 [AEM Developer Tools Web Site](https://eclipse.adobe.com/aem/dev-tools/). <!-- RB: This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
 1. **インストール用リンク**&#x200B;をコピーします。
 
-   または、インストール用リンクを使用する代わりに、アーカイブをダウンロードすることもできます。この方法ではオフラインインストールが可能ですが、自動アップデート通知は受けられません。
+   または、インストール用リンクを使用する代わりに、アーカイブをダウンロードすることもできます。この方法では、オフラインでのインストールが可能ですが、この方法では、自動更新通知が送信されないので、エラーは発生しません。
 
 1. Eclipse で、**Help** メニューを開きます。
 1. 「**Install New Software**」をクリックします。
