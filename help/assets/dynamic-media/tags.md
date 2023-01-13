@@ -4,10 +4,10 @@ description: Experience Platform タグおよび Dynamic Media Viewers 5.13 用�
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: 3060b6b411c3ce2f0b70e08628bccfece3e1fd49
 workflow-type: tm+mt
-source-wordcount: '6675'
-ht-degree: 100%
+source-wordcount: '6679'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ Experience Platform タグおよび Dynamic Media Viewers 5.13 用の *Dynamic M
 * Dynamic Media ビューアの Experience Platform タグ統合は、Experience Manager オーサーノードでは機能しません。公開されるまで、WCM ページからのトラッキングを表示することはできません。
 * Dynamic Media ビューアの Experience Platform タグ統合は、「ポップアップ」操作モードではサポートされません。このモードでは、ビューア URL は、アセットの詳細ページの「URL」ボタンを使用して取得します。
 * Experience Platform タグ統合は、（`config2=` パラメーターを介して）従来のビューアの Analytics 統合と同時に使用することはできません。
-* ビデオトラッキングのサポートは、[トラッキングの概要](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html?lang=ja#player-events)で説明されているように、コア再生トラッキングのみに制限されます。具体的には、QoS、広告、チャプター／セグメント、エラーのトラッキングはサポートされていません。
+* ビデオトラッキングのサポートは、[トラッキングの概要](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en#player-events)で説明されているように、コア再生トラッキングのみに制限されます。具体的には、QoS、広告、チャプター／セグメント、エラーのトラッキングはサポートされていません。
 * データ要素のストレージデュレーション設定は、*Dynamic Media ビューア*&#x200B;拡張機能を使用したデータ要素ではサポートされません。ストレージデュレーションは **[!UICONTROL None]** に設定する必要があります。
 
 ### 統合の事例 {#use-cases-for-the-integration}
@@ -127,7 +127,7 @@ Experience Cloud アカウントが Adobe Analytics for Audio and Video を使�
 
 詳しくは、[拡張機能のインストールとセットアップ](#installing-and-setup-of-extensions)を参照してください。
 
-現在、ビデオトラッキングのサポートは、[トラッキングの概要](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events)で説明されているように、「コア再生」トラッキングのみに制限されます。具体的には、QoS、広告、チャプター／セグメント、エラーのトラッキングはサポートされていません。
+現在、ビデオトラッキングのサポートは、[トラッキングの概要](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en#player-events)で説明されているように、「コア再生」トラッキングのみに制限されます。具体的には、QoS、広告、チャプター／セグメント、エラーのトラッキングはサポートされていません。
 
 ## Dynamic Media ビューア拡張機能の使用  {#using-the-dynamic-media-viewers-extension}
 
@@ -149,7 +149,7 @@ Experience Manager Sites を使用していない、または Experience Manager
 
 適切に設定すれば、Dynamic Media ビューアを使用した Web ページに Experience Platform タグサポートを追加できます。
 
-Experience Platform タグライブラリの埋め込みコードの使用方法について詳しくは、[Experience Platform タグの埋め込みコードの追加](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html?lang=ja#configure-launch)を参照してください。
+Experience Platform タグライブラリの埋め込みコードの使用方法について詳しくは、[Experience Platform タグの埋め込みコードの追加](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code.html)を参照してください。
 
 Experience Manager Dynamic Media の埋め込みコード機能の使用方法について詳しくは、[Web ページへのビデオまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)を参照してください。
 
@@ -224,7 +224,7 @@ Dynamic Media ビューアは Web ページ上で一意の識別子を持ちま�
 
 エンドユーザーのアクティビティによって、Adobe Analytics に対して次の 2 つのトラッキングコールが実行されます。
 
-* 最初の呼び出しは、ユーザーが *viewer1* でパンしたときに **[!UICONTROL TrackPan]** ルールがトリガーされることから発生します。この呼び出しでは、ルールが *viewer1* によってトリガーされたことをデータ要素が認識し、対応するスケール値が取得されるので、**[!UICONTROL ZoomScale]** データ要素の値として 50％が送信されます。
+* 最初の呼び出しは、ユーザーが *viewer1* でパンしたときに **[!UICONTROL TrackPan]** ルールがトリガーされることから発生します。この呼び出しでは、**[!UICONTROL ZoomScale]**&#x200B;データ要素の値として 50％が送信されます。これはデータ要素が、ルールが&#x200B;*viewer1*&#x200B;によってトリガーされることを認識しており、対応するスケール値をフェッチするためです。 
 * 2 回目の呼び出しは、ユーザーがキーボードのキーを押したときに **[!UICONTROL TrackKey]** ルールがトリガーされるので発生します。ルールをトリガーしたのがビューアでなかったので、この呼び出しでは **[!UICONTROL ZoomScale]** データ要素の値として 25％が送信されます。このようにして、データ要素は最新の値を返します。
 
 上記のサンプル設定は、データ要素の値の寿命にも影響します。Dynamic Media ビューアで管理されるデータ要素の値は、Web ページにビューア自体が配置された後でも、Experience Platform タグライブラリコードに保存されます。つまり、Dynamic Media 以外のビューアの拡張によってトリガーされるルールがあり、そのようなデータ要素を参照する場合、データ要素は最後に認識された値を返します。これには、ビューアが Web ページに存在しなくなった場合も含みます。
@@ -412,7 +412,7 @@ Dynamic Media ビューア拡張機能を使用すると、Dynamic Media ビュ�
 
 また、この統合ソリューションを Experience Manager Sites で使用する場合は、次の設定を行う必要があります。
 
-* Adobe I/O コンソール - Experience Platform タグ用に統合が作成されます。
+* [Adobe Developer Console](https://developer.adobe.com/console/home)  — 統合は、Experience Platformタグ用に作成されます。
 * Experience Manager オーサーノード - IMS 設定と Experience Platform タグクラウド設定。
 
 設定の一環として、Adobe Analytics と Experience Platform タグが既に有効になっている Adobe Experience Cloud の会社にアクセスできることを確認してください。
@@ -443,7 +443,7 @@ Adobe Analytics を設定した後、統合のために次の設定が行われ�
 
    使用できるレポートスイートがない場合は、設定を続行する前に、ユーザーまたは Adobe Analytics 管理者がレポートスイートを作成する必要があります。
 
-   [レポートとレポートスイート](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html?lang=ja#manage-report-suites)および[レポートスイートの作成](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=ja#manage-report-suites)を参照してください。
+   [レポートとレポートスイート](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html)および[レポートスイートの作成](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html)を参照してください。
 
    Adobe Analytics では、**[!UICONTROL 管理者]**／**[!UICONTROL レポートスイート]**&#x200B;でレポートスイートを管理します。
 
@@ -505,7 +505,7 @@ Experience Platform タグを設定した後、統合のために次の設定が
 
 Experience Platform タグのプロパティは、すべての設定をまとめた名前付きの設定です。構成設定のライブラリが様々な環境レベル（開発、ステージングおよび実稼動）で生成され、公開されます。
 
-「[タグプロパティの作成](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html?lang=ja#configure-launch)」も参照してください。
+関連トピック [タッププロパティの設定](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
 
 **Experience Platform タグでプロパティを作成するには：**
 
@@ -532,7 +532,7 @@ Experience Platform タグで使用可能なすべての拡張機能は、**[!UI
 
 追加の設定は必要ありません。提案されたあらゆる値を受け入れます。完了したら、必ず「**[!UICONTROL 保存]**」を選択します。
 
-詳しくは、[Experience Cloud ID サービス拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=ja)を参照してください。
+詳しくは、[Experience Cloud ID サービス拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html)を参照してください。
 
 * （必須）*Adobe Analytics*&#x200B;拡張機能
 
@@ -552,7 +552,7 @@ Experience Platform タグで使用可能なすべての拡張機能は、**[!UI
 
 「**[!UICONTROL 保存]**」を選択します。
 
-詳しくは、[Adobe Analytics 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=ja)を参照してください。
+詳しくは、[Adobe Analytics 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html)を参照してください。
 
 * （オプション。ビデオトラッキングが必要な場合のみ必須）*Adobe Media Analytics for Audio and Video* 拡張機能
 
@@ -560,7 +560,7 @@ Experience Platform タグで使用可能なすべての拡張機能は、**[!UI
 
 その他のフィールドはオプションです。
 
-詳しくは、[Adobe Media Analytics for Audio and Video 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=ja)を参照してください。
+詳しくは、[Adobe Media Analytics for Audio and Video 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html)を参照してください。
 
 * （必須）*Dynamic Media ビューア*&#x200B;拡張機能
 
@@ -677,7 +677,7 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
 
    次の情報メッセージが表示されます。
 
-   *有効なアクセストークンを取得するには、新しい証明書の公開鍵を Adobe I/O のテクニカルアカウントに追加する必要があります*
+   *有効なアクセストークンを取得するには、新しい証明書の公開鍵をAdobe Developerのテクニカルアカウントに追加する必要があります。*
 
    情報ダイアログボックスを閉じるには、「**[!UICONTROL OK]**」を選択します。
 
@@ -691,12 +691,12 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
-1. 新しいブラウザータブで、[Adobe I/O コンソール](https://console.adobe.io/integrations)に移動します。
+1. 新しいブラウザータブで、 [Adobe Developer Console](https://developer.adobe.com/console/integrations).
 
 1. **[!UICONTROL Adobe I/O コンソール統合]**&#x200B;ページの右上隅近くにある「**[!UICONTROL 新規の統合]**」を選択します。
 1. **[!UICONTROL 統合の新規作成]**&#x200B;ダイアログボックスで、「**[!UICONTROL API へのアクセス]**」ラジオボタンが選択されていることを確認し、「**[!UICONTROL 続行]**」を選択します。
 
-   ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
+![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
 
 1. **[!UICONTROL 統合の新規作成]**&#x200B;の 2 ページ目で、「**[!UICONTROL Experience Platform タグ API]**」ラジオボタンを有効（オン）にします。ページの右下隅にある「**[!UICONTROL 続行]**」を選択します。
 
@@ -728,19 +728,19 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
    >***この統合の詳細ページは開いたままにします***。「**[!UICONTROL 概要]**」タブと「**[!UICONTROL JWT]**」タブの様々な情報がすぐに必要になります。
 
    ![2019-07-25_14-35-30](assets/2019-07-25_14-35-30.png)
-   _統合の詳細ページ_
+   *統合の詳細ページ*
 
 1. 前に開いておいた **[!UICONTROL Adobe IMS テクニカルアカウント設定]**&#x200B;ページに戻ります。ページの右上隅にある「**[!UICONTROL 次へ]**」を選択して、**[!UICONTROL Adobe IMS テクニカルアカウント設定]**&#x200B;ウィンドウで&#x200B;**[!UICONTROL アカウント]**&#x200B;ページを開きます。
 
    先に誤ってページを閉じてしまった場合は、Experience Manager オーサーに戻り、**[!UICONTROL ツール]**／**[!UICONTROL セキュリティ]**／**[!UICONTROL Adobe IMS 設定]**&#x200B;に移動します。「**[!UICONTROL 作成]**」を選択します。**[!UICONTROL クラウドソリューション]**&#x200B;ドロップダウンリストから、「**[!UICONTROL Experience Platform タグ]**」を選択します。「**[!UICONTROL 証明書]**」ドロップダウンリストで、以前に作成した証明書の名前を選択します。
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
-   _Adobe IMS テクニカルアカウント設定 - 証明書ページ_
+   *Adobe IMS テクニカルアカウント設定 - 証明書ページ*
 
 1. **[!UICONTROL アカウント]**&#x200B;ページには 5 つのフィールドがあり、前の手順の統合詳細ページの情報を使って入力する必要があります。
 
    ![2019-07-25_20-42-45](assets/2019-07-25_20-42-45.png)
-   _Adobe IMS テクニカルアカウント設定 - アカウントページ_
+   *Adobe IMS テクニカルアカウント設定 - アカウントページ*
 
 1. **[!UICONTROL アカウント]**&#x200B;ページで以下のフィールドに入力します。
 
@@ -751,14 +751,14 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
 例：`https://ims-na1.adobelogin.com/`（サーバー名の例は説明用です）。
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
-   _統合の詳細ページ - 「JWT」タブ_
+   *統合の詳細ページ - 「JWT」タブ*
 
 1. **[!UICONTROL API キー]** - 統合の詳細ページに戻ります。「**[!UICONTROL 概要]**」タブを選択し、「**[!UICONTROL API キー（クライアント ID）]**」フィールドの右にある「**[!UICONTROL コピー]**」を選択します。
 
    **[!UICONTROL アカウント]**&#x200B;ページに戻り、キーを各フィールドに貼り付けます。
 
    ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
-   _統合の詳細ページ_
+   *統合の詳細ページ*
 
 1. **[!UICONTROL クライアントシークレット]** - 統合の詳細ページに戻ります。「**[!UICONTROL 概要]**」タブで、「**[!UICONTROL クライアント秘密鍵を取得]**」を選択します。「**[!UICONTROL クライアントの秘密鍵]**」フィールドの右側にある「**[!UICONTROL コピー]**」を選択します。
 
@@ -769,7 +769,7 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
    **[!UICONTROL アカウント]**&#x200B;ページに戻り、コードを各フィールドに貼り付けます。
 
    ![2019-07-25_21-59-12](assets/2019-07-25_21-59-12.png)
-   _統合の詳細ページ - 「JWT」タブ_
+   *統合の詳細ページ - 「JWT」タブ*
 
    すべてのフィールドに値が入力されたアカウントページは、次のようになります。
 
@@ -803,9 +803,10 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
    * **[!UICONTROL 会社]** - 「**[!UICONTROL 会社]**」ドロップダウンリストから、Experience Cloud の会社を選択します。リストが自動的に入力されます。
 
    * **[!UICONTROL プロパティ]** - プロパティドロップダウンリストから、以前に作成した Experience Platform タグプロパティを選択します。リストが自動的に入力されます。
-   すべてのフィールドに入力すると、**[!UICONTROL 一般]**&#x200B;ページは次のようになります。
 
-   ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
+すべてのフィールドに入力すると、**[!UICONTROL 一般]**&#x200B;ページは次のようになります。
+
+![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
 
 1. 左上隅付近にある「**[!UICONTROL 次へ]**」を選択します。
 1. **[!UICONTROL Experience Platform タグの設定を作成]**&#x200B;ウィンドウの&#x200B;**[!UICONTROL ステージング]**&#x200B;ページ（2/3 ページ）で、次のフィールドに入力します。
