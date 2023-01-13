@@ -4,9 +4,9 @@ description: AEMコンテンツフラグメントモデルを使用して、す�
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
+source-git-commit: 900f9fc951a2b95b77abc5835ef9651128824826
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1129'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,12 @@ ht-degree: 1%
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="モデルエディターを起動します。"
 >abstract="コンテンツフラグメントモデルの作成は、モデル管理ワークフローでモデル項目を作成し、コンテンツフラグメントモデルエディターを使用して構造要素を追加することから始まります。<br><br>下をクリックして新しいタブで機能を起動し、この学習ドキュメントに従って最初のコンテンツフラグメントモデルを作成します。"
->additional-url="https://video.tv.adobe.com/v/328618" text="導入ビデオのプレースホルダー"
+>additional-url="https://video.tv.adobe.com/v/3413261" text="コンテンツ構造の概要ビデオ"
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide_footer"
+>title="モデルエディターを起動します。"
+>abstract="おめでとうございます。コンテンツフラグメントモデルを作成すると、最初の手順として、オムニチャネルコンテンツを拡大/縮小および標準的な方法で配信できました。"
 
 ## コンテンツフラグメントモデルコンソール {#content-fragment-model-console}
 
