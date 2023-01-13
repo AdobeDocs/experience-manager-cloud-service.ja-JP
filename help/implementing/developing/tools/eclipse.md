@@ -2,10 +2,10 @@
 title: AEM Developer Tools for Eclipse
 description: AEM Developer Tools for Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3af790d9b42eb2f685258eb18352ec4cd752efcc
 workflow-type: tm+mt
-source-wordcount: '1183'
-ht-degree: 96%
+source-wordcount: '1179'
+ht-degree: 94%
 
 ---
 
@@ -196,7 +196,7 @@ AEM Developer Tools for Eclipse には、サンプルのマルチモジュール
 
 プロジェクトからパッケージを再ビルドする場合は、`PROJECT.ui.apps` または `PROJECT.ui.content` を右クリックし、**Run As**／**Maven install** を選択します。
 
-これで、パッケージを含むターゲットフォルダーが作成されました ( 例： `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`) をクリックします。
+これで、パッケージを含むターゲットフォルダーが作成されました（例： ）。 `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`) をクリックします。
 
 ## トラブルシューティング {#troubleshooting}
 
@@ -216,7 +216,7 @@ AEM Developer Tools for Eclipse には、サンプルのマルチモジュール
 
 Apache Sling IDE tooling for Eclipse の公式 web サイトでは、次の有益な情報を参照できます。
 
-* 『[**Apache Sling IDE tooling for Eclipse** ユーザーガイド](https://sling.apache.org/documentation/development/ide-tooling.html)』：このドキュメントでは、全体のコンセプト、AEM Development Tools でサポートされているサーバー統合およびデプロイメント機能について説明しています。
+* この [**Eclipse 用 Apache Sling IDE ツール** ユーザーガイド](https://sling.apache.org/documentation/development/ide-tooling.html)このドキュメントでは、AEM開発ツールでサポートされる全体的な概念、サーバー統合およびデプロイメント機能について説明します。
 * [トラブルシューティング情報](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)
 * [既知の問題リスト](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues)
 
