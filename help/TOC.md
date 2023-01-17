@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 156cf55a33184bd986628d775475ed1f841e8ef4
+source-git-commit: 077ab3c83e3d97cfdec939081b5862e173f17603
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3834'
 ht-degree: 97%
 
 ---
@@ -525,6 +525,7 @@ ht-degree: 97%
          + [アダプティブフォームでの CAPTCHA の使用](/help/forms/captcha-adaptive-forms.md)
          + [コアコンポーネントの使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
          + [手書き署名の適用](/help/forms/signing-forms-using-scribble.md)
+         + [アダプティブフォームに表を追加する](/help/forms/adaptive-forms-tables.md)
       + アダプティブフォームのレイアウト設定とスタイルの適用{#configure-layout-of-an-adaptive-form}
          + [アダプティブフォームのレイアウト設定](/help/forms/layout-capabilities-adaptive-forms.md)
          + [レイアウトモードを使用したコンポーネントのサイズ変更](/help/forms/resize-using-layout-mode.md)
