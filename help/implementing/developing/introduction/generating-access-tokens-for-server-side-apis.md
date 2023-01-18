@@ -2,14 +2,14 @@
 title: サーバー側 API のアクセストークンの生成
 description: セキュアな JWT トークンを生成してサードパーティサーバーと AEM as a Cloud Service の間の通信を容易にする方法について説明します。
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: fc49b004a61d5f981ac61cca684dc0bacf843443
+source-git-commit: dd6753c6605d5c48c54d173803a541db54991481
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1436'
 ht-degree: 100%
 
 ---
 
-# はじめに {#introduction}
+# サーバー側 API のアクセストークンの生成 {#generating-access-tokens-for-server-side-apis}
 
 一部のアーキテクチャでは、AEM インフラストラクチャの外部にあるサーバーにホストされているアプリケーションから AEM as a Cloud Service への呼び出しの実行がベースになっています。例えば、モバイルアプリケーションがサーバーを呼び出し、その後、サーバーが AEM as a Cloud Service に対して API リクエストを行います。
 
