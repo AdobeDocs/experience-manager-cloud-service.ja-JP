@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.1.0 �
 description: AEM as a Cloud Service の Cloud Manager 2024.1.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 5aabdf22a040a031a3fa2a1a9f70247cf2e38f2e
+source-git-commit: 26a2ed4ee613b77c192652ae9afa99d5a86f72ce
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 36%
+source-wordcount: '207'
+ht-degree: 33%
 
 ---
 
@@ -26,6 +26,8 @@ AEM as a Cloud Serviceの Cloud Manager リリース 2023.1.0 のリリース日
 ## 新機能 {#what-is-new}
 
 * ユーザビリティの強化は、ユーザがアクションを実行できる場所とデフォルトのポインタとを区別するカーソルスタイルを更新することで行われました。
+
+* 環境およびパイプライン実行のリストで、個々の行をクリックして詳細にアクセスできるようになりました。
 
 * カスタム UI テストレポートは、Cloud Manager ストレージにコピーされ、Cloud Manager API 呼び出しを介してアクセスできるようになりました。
 
