@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.12.0 のリリースノート
-description: AEM as a Cloud Service の Cloud Manager 2022.12.0 のリリースノートです。
+title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.1.0 のリリースノート
+description: AEM as a Cloud Service の Cloud Manager 2024.1.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 516c0027f917ea1e54286b268e7a0fb4c4e2b3d7
+source-git-commit: 5aabdf22a040a031a3fa2a1a9f70247cf2e38f2e
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 48%
+source-wordcount: '190'
+ht-degree: 36%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.12.0 のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.1.0 のリリースノート {#release-notes}
 
-このページは、AEM as a Cloud Service の Cloud Manager 2022.12.0 のリリースノートです。
+このページでは、AEM as a Cloud Serviceの Cloud Manager リリース 2023.1.0 のリリースノートについて説明します。
 
 >[!NOTE]
 >
@@ -21,15 +21,20 @@ ht-degree: 48%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Serviceの Cloud Manager リリース2022.12.0のリリース日は 2022 年 11 月 29 日です。 次回のリリースは 2023年1月19日（PT）の予定です。
+AEM as a Cloud Serviceの Cloud Manager リリース 2023.1.0 のリリース日は 2023 年 1 月 19 日です。 次回のリリースは 2023年2月16日（PT）の予定です。
 
 ## 新機能 {#what-is-new}
 
-* の通知 [AEMメンテナンスの更新](/help/overview/what-is-new-and-different.md#aem-updates) が Cloud Manager UI で表示されます。 この変更は、2022.12.0リリース後の数週間で段階的に実施される予定です。
-* を使用してインジェストする場合 [コンテンツ転送ツール (CTT)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) が進行中の場合、開発者コンソールと Cloud Manager の両方で環境ステータスが「 `Ingestion in Progress`.
-* [Cloud Manager パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)の可用性と信頼性が向上しました。
+* ユーザビリティの強化は、ユーザがアクションを実行できる場所とデフォルトのポインタとを区別するカーソルスタイルを更新することで行われました。
+
+* カスタム UI テストレポートは、Cloud Manager ストレージにコピーされ、Cloud Manager API 呼び出しを介してアクセスできるようになりました。
+
+* ユーザーは、左向き矢印を使用して、GoLive ウィジェットの状態間を移行できるようになりました。
+
+   ![GoLive ウィジェットの切り替え](assets/go-live-transitions.gif)
+
+* セルフサービス [HIPAA 対応プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 対応する権限と権限が利用可能な場合に、が使用できるようになりました。
 
 ## バグの修正 {#bug-fixes}
 
-* 防ぐために変更が加えられました [フロントエンドパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 同じ環境でパイプライン実行が進行中の間に実行されるまで
-* を防ぐために変更が加えられました `PATCH /program//environment//variables` を含む環境のリクエスト `FAILED` ステータス。
+* Cloud Manager では、2 つのパイプライン実行が（またはほぼ同時に）同時に開始されるのを防ぐので、パイプラインのエラーを回避できます。
