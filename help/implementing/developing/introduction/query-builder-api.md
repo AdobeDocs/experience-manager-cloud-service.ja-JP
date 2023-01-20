@@ -3,9 +3,9 @@ title: Query Builder API
 description: アセット共有の Query Builder の機能は、Java API と REST API を通して公開されます。
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2040'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -279,7 +279,7 @@ property.3_value=Whistler Mountain Biking
 
 ## 返されるプロパティの絞り込み {#refining-what-is-returned}
 
-デフォルトでは、QueryBuilder JSON サーブレットは、検索結果内の各ノードのデフォルトのプロパティセット（パス、名前、タイトルなど）を返します。 返されるプロパティを制御するために、次のいずれかの操作を実行できます。
+デフォルトでは、QueryBuilder JSON サーブレットは検索結果内の各ノードに関するデフォルトのプロパティのセット（path、name、title など）を返します。返されるプロパティを制御するために、次のいずれかの操作を実行できます。
 
 以下のように
 
