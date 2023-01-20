@@ -4,9 +4,9 @@ description: AEM Content and Commerce の入門と概要。Experience Manager Co
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '895'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ CIF は、常に最新のアドオンを使用した継続的なイノベーシ�
 
 ### 統合 {#integrations}
 
-を使用して、エコシステム（例えば、コマースソリューション）をExperience Cloudに接続する  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html)、マイクロサービスベースのサーバレス PaaS、 [CIF の参照実装](https://github.com/adobe/commerce-cif-graphql-integration-reference).
+[Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html)、マイクロサービスベースのサーバーレス PaaS、[CIF の参照実装](https://github.com/adobe/commerce-cif-graphql-integration-reference)などを使用して、エコシステム（例：コマースソリューション）を Experience Cloud に接続します。
 
 ## 実証済みのパターンとベストプラクティス {#proven}
 
