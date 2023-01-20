@@ -3,9 +3,9 @@ title: コンテンツフラグメント
 description: Adobe Experience Manager as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、使用が可能になります。
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1166'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -153,7 +153,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 >[!NOTE]
 >
->追加する方法は様々です。 [ビジュアルアセット（例：画像）](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) をフラグメントやページに追加します。
+>[ビジュアルアセット（画像など）](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)をフラグメントやページに追加するには、様々な方法があります。
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 ### フラグメントに挿入されたアセット {#assets-inserted-into-the-fragment}
 
-アセット（画像など）がフラグメント自体に ( 例えば、 [混在メディアフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)) が含まれている場合、ページエディターでこれらのアセットを編集するためのオプションは制限されます。
+アセット（画像など）がフラグメント自体に（[混在メディアフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)として）挿入されている場合、ページエディターでこれらのアセットを編集するためのオプションは制限されます。
 
 例えば、画像の場合、次のことができます。
 
