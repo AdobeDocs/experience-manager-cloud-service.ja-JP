@@ -1,6 +1,6 @@
 ---
-title: AEM as a Cloud Service Release 2022.12.0 の移行ツールのリリースノート
-description: AEM as a Cloud Service Release 2022.12.0 の移行ツールのリリースノート
+title: AEM as a Cloud Service リリース 2022.12.0 の移行ツールのリリースノート
+description: AEM as a Cloud Service リリース 2022.12.0 の移行ツールのリリースノート
 feature: Release Information
 exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
 source-git-commit: b88fec3247179beefd76c520b10a1145e9b0c911
@@ -10,7 +10,7 @@ ht-degree: 91%
 
 ---
 
-# AEM as a Cloud Service Release 2022.12.0 の移行ツールのリリースノート {#release-notes}
+# AEM as a Cloud Service リリース 2022.12.0 の移行ツールのリリースノート {#release-notes}
 
 このページでは、AEM as a Cloud Service 2022.12.0 の移行ツールのリリースノートの概要を説明しています。
 

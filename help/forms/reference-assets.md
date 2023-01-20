@@ -8,13 +8,13 @@ exl-id: 92870b32-e0d5-4cb4-9b88-81f88ca8ff64
 source-git-commit: 575e9836d676cf6711e039a5bb6860ad04324d60
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
-# Formsas a Cloud Serviceの参照アセット {#reference-themes}
+# Forms as a Cloud Service の参照アセット {#reference-themes}
 
-参照テーマ、テンプレート、およびフォームデータモデルは、 [参照アセットパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). これにより、アダプティブFormsの開発をすばやく開始し、迅速に進めることができます。 以下を使用できます。 [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=ja) このパッケージをFormsas a Cloud Service環境にデプロイする場合。
+[参照アセットパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip)をインストールすると、参照テーマ、テンプレート、およびフォーム データモデルを取得できます。これにより、アダプティブフォームの開発にすばやく着手し、迅速に進めることができます。 [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=ja)を使用して、このパッケージを Forms as a Cloud Service 環境にデプロイできます。
 パッケージに含まれる参照アセットは次のとおりです。
 
 ## テーマ {#themes}
@@ -27,11 +27,11 @@ ht-degree: 56%
 * Urbane
 * Canva
 
-各テーマには、独自のエレガントなスタイルが含まれていて、ユーザー向けの使いやすいアダプティブフォームの作成に使用できます。パネル、テキストボックス、数値ボックス、ラジオボタン、表、スイッチなど、セレクター用の独自のスタイル設定が含まれています。これらのテーマ内のスタイルは、要件に基づいています。たとえば、特定のシナリオでは、クリーンなフォントを含む最小限のテーマが必要です。Urbane テーマを使用すると、その外観を実現できます。
+各テーマには、独自のエレガントなスタイルが含まれていて、ユーザー向けの使いやすいアダプティブフォームの作成に使用できます。パネル、テキストボックス、数値ボックス、ラジオボタン、表、スイッチなど、セレクター用の独自のスタイル設定が含まれています。これらのテーマ内のスタイルは、要件に基づいています。たとえば、特定のシナリオでは、クリーンなフォントを含む最小限のテーマが必要です。Urbane テーマなら、その外観を実現できます。
 
 ![リファレンステーマ](/help/forms/assets/ref-themes.png)
 
-このパッケージに含まれるテーマはレスポンシブで、これらのテーマ内のスタイルはモバイルディスプレイとデスクトップディスプレイに対して定義されます。 様々なデバイス上のほとんどの最新のブラウザーは、これらのテーマのいずれかが適用されたフォームを問題なくレンダリングできます。
+このパッケージに含まれるテーマはレスポンシブで、これらのテーマ内のスタイルはモバイルおよびデスクトップ表示用として定義されています。様々なデバイス上の最新ブラウザーのほとんどは、これらのテーマのいずれかが適用されたフォームを問題なくレンダリングできます。
 
 パッケージのインストールについて詳しくは、[パッケージの作業方法](/help/implementing/developing/tools/package-manager.md)を参照してください。
 
@@ -104,7 +104,7 @@ U.S. Web Design Standards theme, as the name suggests, uses typefaces and styles
 
 ## テンプレート
 
-テンプレートを使用すると、コンポーネントをドラッグ&amp;ドロップして、アダプティブフォームの初期構造を定義できます。 次のアセットが含まれます。
+テンプレートを使用すると、コンポーネントをドラッグ＆ドロップして、アダプティブフォームの初期構造を定義できます。 次のアセットが含まれます。
 
 ### 基本 {#basic}
 
@@ -120,12 +120,12 @@ U.S. Web Design Standards theme, as the name suggests, uses typefaces and styles
 
 ### Microsoft® Dynamics 365
 
-Microsoft Dynamics 365 データモデルは、Microsoft Dynamics 365 をデータソースとして使用する場合に役立ちます。 また、データを読み取り、更新、削除し、Microsoft Dynamics 365 データソースに追加するサンプルサービスも提供しています。
+Microsoft Dynamics 365 データモデルは、Microsoft Dynamics 365 をデータソースとして使用する場合に役立ちます。 また、Microsoft Dynamics 365 データソースへのデータの読み取り、更新、削除および追加を行うためのサンプルサービスも提供しています。
 
 ![Microsoft® Dynamics 365 フォームデータモデル](/help/forms/assets/microsoft-dynamic-fdm.png)
 
 ### Salesforce
 
-Salesforce データモデルは、Salesforce をデータソースとして使用する際に役立ちます。 また、Salesforce に対して、データの読み取り、更新、削除、追加を行うサンプルサービスも提供します。
+Salesforce データモデルは、Salesforce をデータソースとして使用する際に役立ちます。 また、Salesforce に対して、データの読み取り、更新、削除、追加を行うサンプルサービスも提供しています。
 
 ![Salesforce フォームデータモデル](/help/forms/assets/salesforce-fdm.png)

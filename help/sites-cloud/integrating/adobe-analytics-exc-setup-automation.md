@@ -1,23 +1,23 @@
 ---
 title: Adobe Analytics と Experience Cloud 設定自動化の統合
-description: Experience Cloud設定の自動化は、Experience Manager SitesとExperience Platformタグ、Adobe Analyticsを統合し、シンプルな UI ウィザードインターフェイスで実装する、シンプルで自動化された方法を提供します。 ご利用のサイトで自動設定を使用する方法を説明します。
+description: Experience Cloud 設定自動化を使用すると、シンプルな UI ウィザードインターフェイスを介して、わかりやすく自動化された方法で、Experience Manager Sites を Experience Platform タグおよび Adobe Analytics と統合してツール化することができます。ご利用のサイトで自動設定を使用する方法を説明します。
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 source-git-commit: f91885a7d15c0ff927c6e10f65852f787cf26eb3
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 # Adobe Analytics と Experience Cloud 設定自動化の統合 {#integrate-adobe-analytics-automation-setup}
 
-Experience Cloud設定の自動化は、Experience Manager SitesとExperience Platformタグ、Adobe Analyticsを統合し、シンプルな UI ウィザードインターフェイスで実装する、シンプルで自動化された方法を提供します。
+Experience Cloud 設定自動化を使用すると、シンプルな UI ウィザードインターフェイスを介して、わかりやすく自動化された方法で、Experience Manager Sites を Experience Platform タグおよび Adobe Analytics と統合してツール化することができます。
 
 Adobe Analytics と AEM Sites の統合は、かつてないほどシンプルになりました。Experience Cloud 設定自動化を使用すると、顧客のエンゲージメントとコンバージョンの状況を把握するパフォーマンス分析をキャプチャするためのサイトの設定、統合、ツール化を、数回のクリックですべて行うことができます。
 
-このビデオでは、AEMサイトとExperience Platformタグおよび Analytics を統合する方法について、自動Experience Cloud設定を使用して説明します。
+このビデオでは、Experience Cloud 設定自動化を使用して AEM サイトを Experience Platform タグおよび Analytics と統合する方法について説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/345372/?quality=12)
 
@@ -29,17 +29,17 @@ Adobe Analytics と AEM Sites の統合は、かつてないほどシンプル�
 
 この機能を使用する前に、次の手順に従って、お使いの環境で前提条件のサービスが正しく設定されていることを確認することが重要です。
 
-1. Adobe Admin Console(https://adminconsole.adobe.com/) にログインします。
-1. 右上隅で適切な IMS Org ID が選択されていることを確認します。
-1. 「製品」ナビゲーションオプションをクリックします。
-1. 「Adobe Experience Manager as a Cloud Service」が IMS Org 用にプロビジョニングされていることを確認します。
-1. 「Adobe Analytics」が IMS Org 用にプロビジョニングされていることを確認します。
-1. Cloud Manager(https://experience.adobe.com/cloud-manager) に移動します。
+1. Adobe Admin Console（https://adminconsole.adobe.com/）にログインします。
+1. 右上隅で適切な IMS 組織 ID が選択されていることを確認します。
+1. 「製品ナビゲーション」オプションをクリックします。
+1. 「Adobe Experience Manager as a Cloud Service」が IMS 組織用にプロビジョニングされていることを確認します。
+1. 「Adobe Analytics」が IMS 組織用にプロビジョニングされていることを確認します。
+1. Cloud Manager（https://experience.adobe.com/cloud-manager）に移動します。
 1. 適切なプログラムを選択します。
-1. 環境が最新バージョンのCloud Serviceであることを確認します（存在しない場合は、メニューオプションの「更新」を選択します）。
+1. 環境が最新バージョンの Cloud Service であることを確認します（そうでない場合は、メニューオプションの「更新」を選択します）。
 1. Cloud Manager でフルスタックパイプラインを実行します。
 
-これで、環境のセットアップ自動化のExperience Cloud準備が整いました。
+これで、Experience Cloud 設定自動化の環境の準備ができました。
 
 ## 設定方法
 
@@ -57,7 +57,7 @@ Adobe Analytics と AEM Sites の統合は、かつてないほどシンプル�
    自動化の設定は非同期で実行されます。**統合ステータスの確認** には、統合の現在のステータスが表示されます。
 
    * **処理中** - ジョブが実行中であることを示します。
-   * **統合の完了**  — ジョブが Analytics とタグの統合、タグの拡張機能とタグルールの設定、Adobe Analyticsでの新しいレポートスイートの作成を完了したことを示します。
+   * **統合完了** - ジョブが Analytics とタグの統合、タグの拡張機能とタグルールの設定、Adobe Analytics での新しいレポートスイートの作成を完了したことを示します。
    * **失敗** - 自動ジョブを正常に完了できなかったことを示します。「ログ」リンクをクリックして、このジョブのログファイルを確認します。
 
 ## AEM 設定の検証
@@ -66,7 +66,7 @@ Adobe Analytics と AEM Sites の統合は、かつてないほどシンプル�
 
 1. **サイトエディター** を使用してサイトのページを開きます。
 1. **公開済みとして表示** オプションを使用して、公開されたバージョンのページを読み込みます。
-1. ブラウザーの開発者ツールを使用して、ネットワークトラフィックと、 **タグ** および `AppMeasurement.js` ファイルを読み込み中です。
+1. ブラウザーの開発者ツールを使用して、ネットワークトラフィックを検査し、**タグ**&#x200B;および `AppMeasurement.js` ファイルを読み込み中であることを確認します。
 1. ブラウザーのコンソールを検査し、ページおよびコンポーネントレベルのイベントが発生し、Adobe クライアントデータレイヤーによって収集されることを確認します。
 
 ## Analytics 設定の検証

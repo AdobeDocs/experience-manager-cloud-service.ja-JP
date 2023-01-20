@@ -5,7 +5,7 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: f1d1009db31585ff82c02080a6ab7ea7ca5bf66b
 workflow-type: tm+mt
 source-wordcount: '1068'
-ht-degree: 75%
+ht-degree: 95%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 75%
   <tr>
     <td>バージョンのパージ</td>
     <td>アドビ</td>
-    <td>既存の環境（2023 年 3 月 1 日より前に作成された環境）の場合、パージは無効になり、お客様が明示的に有効にしない限り、将来は有効になりません。その時点で、カスタム値を使用して設定することもできます。<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->新しい環境（2023 年 3 月 1 日以降に作成された環境）では、デフォルトで以下の値でパージが有効になり、お客様はカスタム値でを設定できます。
+    <td>既存の環境（2023年3月1日（PT）より前に作成された環境）の場合、パージは無効になり、お客様が明示的に有効にしない限り、今後有効にはなりません。その時点で、カスタム値を使用して設定することもできます。<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->新しい環境（2023年3月1日（PT）以降に作成された環境）では、デフォルトで以下の値でパージが有効になり、お客様はカスタム値を使用して設定できます。
      <ol>
        <li>31 日以上前のバージョンは削除されます</li>
        <li>過去 30 日間の最新の 5 つのバージョンが保持されます</li>
@@ -56,7 +56,7 @@ ht-degree: 75%
   <tr>
     <td>監査ログの削除</td>
     <td>アドビ</td>
-    <td>既存の環境（2023 年 3 月 1 日より前に作成された環境）の場合、パージは無効になり、お客様が明示的に有効にしない限り、将来は有効になりません。その時点で、カスタム値を使用して設定することもできます。<br><br> <!-- See above for the two line breaks -->新しい環境（2023 年 3 月 1 日以降に作成された環境）では、デフォルトで、 <code>/content</code> 次の動作に従ったリポジトリのノード：
+    <td>既存の環境（2023年3月1日（PT）より前に作成された環境）の場合、パージは無効になり、お客様が明示的に有効にしない限り、今後有効にはなりません。その時点で、カスタム値を使用して設定することもできます。<br><br> <!-- See above for the two line breaks -->新しい環境（2023年3月1日（PT）以降に作成された環境）では、次の動作に従って、リポジトリの <code>/content</code> ノードでデフォルトでパージが有効になります。
      <ol>
        <li>レプリケーション監査の場合、4 日以上前の監査ログは削除されます</li>
        <li>DAM（アセット）監査の場合、31 日以上前の監査ログは削除されます</li>
@@ -76,7 +76,7 @@ ht-degree: 75%
     <td>顧客</td>
     <td>
     <p>Git で行う必要があります。<code>/libs</code> フォルダーまたは <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> フォルダーにプロパティを作成することで、<code>granite_daily</code> 内にある標準のメンテナンスウィンドウ設定ノードを上書きします。</p>
-    <p>詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。上記のノードの下に別のノードを追加して、メンテナンスタスクを有効にします。 名前を付ける <code>granite_TaskPurgeTask</code>、属性 <code>sling:resourceType</code> に設定 <code>granite/operations/components/maintenance/task</code> および属性 <code>granite.maintenance.name</code> に設定 <code>TaskPurge</code>. OSGi プロパティの設定 ( <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> プロパティのリスト。</p>
+    <p>詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。上記のノードの下に別のノードを追加して、メンテナンスタスクを有効にします。 属性 <code>sling:resourceType</code> を <code>granite/operations/components/maintenance/task</code> に設定し、属性 <code>granite.maintenance.name</code> を <code>TaskPurge</code> に設定して、<code>granite_TaskPurgeTask</code> という名前を付けます。OSGi プロパティを設定します。プロパティのリストについては <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> を参照してください。</p>
   </td>
   </tr>
     <tr>
@@ -124,7 +124,7 @@ ht-degree: 75%
     <p><strong>windowSchedule=weekly</strong>（この値は変更しないでください）</p>
     <p><strong>windowStartTime=HH:MM</strong>（24 時間形式）週次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。</p>
     <p><strong>windowEndTime=HH:MM</strong>（24 時間形式）週次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。</p>
-    <p><strong>windowScheduleWeekdays= 1 ～ 7 の 2 つの値の配列（例：[5,5]）</strong> 配列の最初の値はジョブがスケジュールされる開始日で、2 番目の値はジョブが停止される終了日です。 開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。</p>
+    <p><strong>windowScheduleWeekdays=1 から 7 までの 2 つの値の配列（例：[5,5]）</strong> 配列の最初の値はジョブがスケジュールされる開始日で、2 番目の値はジョブが停止される終了日です。開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。</p>
     </td>
   </tr>
   <tr>
@@ -135,7 +135,7 @@ ht-degree: 75%
     <p><strong>windowSchedule=daily</strong>（この値は変更しないでください）</p>
     <p><strong>windowStartTime=HH:MM</strong>（24 時間形式）月次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行をいつ開始するかを定義します。</p>
     <p><strong>windowEndTime=HH:MM</strong>（24 時間形式）月次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。</p>
-    <p><strong>windowScheduleWeekdays=1 ～ 7 の 2 つの値の配列（例：[5,5]）</strong> 配列の最初の値はジョブがスケジュールされる開始日で、2 番目の値はジョブが停止される終了日です。 開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。</p>
+    <p><strong>windowScheduleWeekdays=1 から 7 までの 2 つの値の配列（例：[5,5]）</strong> 配列の最初の値はジョブがスケジュールされる開始日で、2 番目の値はジョブが停止される終了日です。開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。</p>
     <p><strong>windowFirstLastStartDay = 0 または 1</strong> 0（月の最初の週にスケジュールを設定）、1（月の最後の週にスケジュールを設定）。値を指定しないと、毎月 windowScheduleWeekdays の規定に従って、事実上ジョブを毎日スケジュールします。</p>
     </td> 
     </tr>

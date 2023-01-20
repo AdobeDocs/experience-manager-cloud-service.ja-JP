@@ -188,7 +188,7 @@ mvn clean install -PautoInstallSinglePackage
 ### AEM 認証可能なページ {#aem-authorable-pages}
 
 1. SPA でのオーサリング用に追加するページを指定します。この例では `/content/wknd-spa-react/us/en/home.html` を使用しています。
-1. 新しいファイルを作成します ( 例： `Page.js`) をクリックします。 ここでは、`@adobe/cq-react-editable-components` で提供されるページコンポーネントを再利用できます。
+1. オーサリング可能なページコンポーネントに対して、新しいファイル（例：`Page.js`）を作成します。ここでは、`@adobe/cq-react-editable-components` で提供されるページコンポーネントを再利用できます。
 1. [ AEM 認証可能なリーフコンポーネントのセクションで手順 4 を繰り返します。](#authorable-leaf-components) コンポーネントで `withMappable` ラッパー関数を使用します。
 1. 前に行ったように、ページ内のすべての子コンポーネントの AEM リソースタイプに `MapTo` を適用します。
 

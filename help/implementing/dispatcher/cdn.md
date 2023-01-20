@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: c419da88ccfe97cf8b80e68ddd402196c2ec58e3
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 74%
+ht-degree: 94%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 74%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
 >title="AEM as a Cloud Service での CDN"
->abstract="AEM as Cloud Service の出荷時には、組み込みの CDN が搭載されています。主な目的は、ブラウザーの近くの CDN エッジノードからキャッシュ可能なコンテンツを配信することで、待ち時間を減らすことです。 AEM アプリケーションの最適なパフォーマンスを得るために、完全に管理および設定されています。"
+>abstract="AEM as Cloud Service には、ビルトイン CDN が出荷時に搭載されています。その主な目的は、ブラウザーに近いエッジにある CDN ノードからキャッシュ可能なコンテンツを配信することで、待ち時間を減らすことです。AEM アプリケーションの最適なパフォーマンスを得るために、完全に管理および設定されています。"
 
 AEM as Cloud Service の出荷時には、組み込みの CDN が搭載されています。その主な目的は、ブラウザーの近くの CDN エッジノードからキャッシュ可能なコンテンツを配信することで、待ち時間を減らすことです。AEM アプリケーションの最適なパフォーマンスを得るために、完全に管理および設定されています。
 
@@ -23,16 +23,16 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 
 また、AEM as a Cloud Service での CDN について詳しくは、[Cloud 5 AEM CDN（パート 1）](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html?lang=ja)および [Cloud 5 AEM CDN（パート 2）](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html?lang=ja)のビデオもご覧ください。
 
-## AEM 管理による CDN  {#aem-managed-cdn}
+## AEM の管理による CDN  {#aem-managed-cdn}
 
-標準搭載のAEM CDN を使用してコンテンツ配信に備えて Cloud Manager のセルフサービス UI を使用するには、以下の節に従います。
+Cloud Manager セルフサービス UI を使用して、AEM の標準搭載 CDN でコンテンツ配信の準備をするには、以下の節に従います。
 
 1. [SSL 証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 >[!NOTE]
 >
->カスタムドメインは Cloud Manager でサポートされています **のみ** AEM Managed CDN を使用している場合。 独自の CDN を持ってきて [AEMが管理する CDN を指すように設定する](#point-to-point-CDN) Cloud Manager ではなく、その特定の CDN を使用してドメインを管理する必要があります。
+>AEM の管理による CDN を使用している場合、カスタムドメインは Cloud Manager **のみ**&#x200B;でサポートされます。独自の CDN を導入し、[AEM の管理による CDN を参照させる](#point-to-point-CDN)場合、Cloud Manager ではなく、その特定の CDN を使用してドメインを管理する必要があります。
 
 **トラフィックの制限**
 
@@ -42,7 +42,7 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 
 >[!CAUTION]
 >
->許可されている IP からのリクエストのみがAEM管理 CDN によって提供されます。 AEM 管理による CDN に対して独自の CDN を指定する場合は、CDN の IP が許可リストに含まれていることを確認します。
+>許可されている IP からのリクエストのみが、AEM の管理による CDN で処理されます。独自の CDN に AEM の管理による CDN を参照させる場合は、CDN の IP が許可リストに含まれていることを確認します。
 
 ## 顧客 CDN で AEM 管理 CDN を参照する {#point-to-point-CDN}
 
@@ -61,7 +61,7 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 
 設定手順：
 
-1. CDN で、AdobeCDN の入口をオリジンドメインとして指定します。 （例：`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`）。
+1. お使いの CDN が Adobe CDN のイングレスを元のドメインとして指すようにします。（例：`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`）。
 1. また、SNI も Adobe CDN の入口に設定する必要があります。。
 1. ホストヘッダーを接触チャネルドメインに設定します（例：`Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`）。
 1. AEM がホストヘッダーを決定できるように、`X-Forwarded-Host` ヘッダーにドメイン名を設定します（例：`X-Forwarded-Host:example.com`）。
@@ -70,9 +70,9 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
    * これは、Adobe CDN でリクエストのソースを検証し、`X-Forwarded-*` ヘッダーを AEM アプリケーションに渡すために必要です。例えば、`X-Forwarded-For` を使用してクライアント IP を決定します。したがって、`X-Forwarded-*` ヘッダーが正しいことを確認するのは、信頼できる呼び出し元（顧客が管理する CDN）の責任となります（以下のメモを参照）。
    * 必要に応じて、`X-AEM-Edge-Key` が存在しない場合に Adobe CDN の入口へのアクセスをブロックできます。Adobe CDN の入力に直接アクセスする必要がある場合（ブロックする場合）は、アドビにお知らせください。
 
-詳しくは、 [CDN ベンダー設定のサンプル](#sample-configurations) の節で、主要な CDN ベンダーの設定例を参照してください。
+主要な CDN ベンダーの設定例については、[CDN ベンダー設定のサンプル](#sample-configurations)の節を参照してください。
 
-ライブトラフィックを受け入れる前に、アドビカスタマーサポートに問い合わせて、エンドツーエンドのトラフィックルーティングが正しく機能していることを検証する必要があります。
+ライブトラフィックを受け入れる前に、アドビカスタマーサポートに問い合わせて、エンドツーエンドのトラフィックルーティングが正しく機能していることを検証してください。
 
 `X-AEM-Edge-Key` を取得後、リクエストが正しくルーティングされているかどうかを、次のようにテストできます。
 
@@ -101,13 +101,13 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 >
 >サンドボックスプログラム環境では、顧客提供の CDN をサポートしていません。
 
-顧客 CDN とAEM CDN 間の追加のホップは、キャッシュミスの場合にのみ必要です。 この記事で説明するキャッシュ最適化戦略を使用すると、顧客 CDN を追加した場合に待ち時間がわずかに短縮されます。
+顧客 CDN と AEM CDN の間の追加ホップは、キャッシュミスの場合にのみ必要です。この記事で説明しているキャッシュ最適化戦略を使用すると、顧客 CDN を追加した場合でも、無視できるほどわずかな待ち時間しか発生しません。
 
-この顧客 CDN 設定は、パブリッシュ層に対してサポートされていますが、オーサー層の前ではサポートされていません。
+なお、この顧客 CDN 設定は、パブリッシュ層に対してサポートされていますが、オーサー層の前ではサポートされていません。
 
 ### CDN ベンダー設定のサンプル {#sample-configurations}
 
-以下に、多数の主要な CDN ベンダーの設定例をいくつか示します。
+いくつかの主要な CDN ベンダーの設定例を以下に示します。
 
 **Akamai**
 
@@ -119,10 +119,10 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 ![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
 ![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
 
-**雲フレア**
+**Cloudflare**
 
-![Cloudflare1](assets/cloudflare1.png "雲フレア")
-![Cloudflare2](assets/cloudflare2.png "雲フレア")
+![Cloudflare1](assets/cloudflare1.png "Cloudflare")
+![Cloudflare2](assets/cloudflare2.png "Cloudflare")
 
 ## 位置情報ヘッダー {#geo-headers}
 
@@ -133,7 +133,7 @@ AEM が管理する CDN は、次の情報を含む各リクエストにヘッ�
 
 >[!NOTE]
 >
->顧客が管理する CDN の場合、これらのヘッダーは、実際のクライアントではなく、顧客の CDN プロキシサーバーの場所を反映します。  したがって、顧客が管理する CDN の場合、位置情報ヘッダーは顧客の CDN で管理する必要があります。
+>顧客の管理による CDN の場合、これらのヘッダーは、実際のクライアントではなく、顧客の CDN プロキシサーバーの場所を反映します。したがって、顧客の管理による CDN の場合、位置情報ヘッダーは顧客の CDN で管理する必要があります。
 
 国コードの値は、Alpha-2 コード（[ここ](https://ja.wikipedia.org/wiki/ISO_3166-1)で説明）です。
 

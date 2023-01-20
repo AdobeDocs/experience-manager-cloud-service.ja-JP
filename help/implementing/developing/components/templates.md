@@ -5,7 +5,7 @@ exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
 workflow-type: tm+mt
 source-wordcount: '3300'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -188,7 +188,7 @@ ht-degree: 98%
    * 型：`String`
    * 値：**テンプレート**&#x200B;コンソールに表示される（フォルダーの）タイトルです。
 
-1. 標準のオーサリング権限（例： ）に加えて、 `content-authors`) 作成者が新しいフォルダーにテンプレートを作成できるようにするには、グループを割り当てて、作成者に必要なアクセス権 (ACL) を定義する必要があります。
+1. 作成者が新しいフォルダーにテンプレートを作成できるようにするには、標準のオーサリング権限と特権（`content-authors` など）に加え、グループを割り当てて作成者に必要なアクセス権限（ACL）を定義する必要があります。
 
    割り当てる必要があるデフォルトのグループは、`template-authors` グループです。詳しくは、[ACL とグループ](#acls-and-groups)の節を参照してください。
 

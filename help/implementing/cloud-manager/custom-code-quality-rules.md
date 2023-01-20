@@ -5,7 +5,7 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: 2935338b847f7e852dfd31c93a61e737e8a3ec80
 workflow-type: tm+mt
 source-wordcount: '3485'
-ht-degree: 45%
+ht-degree: 46%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 45%
 >title="カスタムコード品質ルール"
 >abstract="このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。これらは、Adobe Experience Manager Engineering のベストプラクティスに基づいています。"
 
-このページでは、Cloud Manager が [コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md). これらは、Experience Manager・エンジニアリングのベスト・プラクティスに基づいています。
+このページでは、[コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)の一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。これらは、Experience Manager・エンジニアリングのベスト・プラクティスに基づいています。
 
 >[!NOTE]
 >

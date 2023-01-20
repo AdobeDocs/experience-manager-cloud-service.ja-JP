@@ -5,7 +5,7 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 source-git-commit: a8a7bd1f892c7c6eeb1753c8a55f884a33b397d4
 workflow-type: tm+mt
 source-wordcount: '1021'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->次のメンバーである必要があります： [**デプロイメントマネージャー** 役割](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) 環境変数を追加または変更するために使用します。
+>環境変数を追加または変更するには、[**デプロイメントマネージャー** 役割](/help/onboarding/cloud-manager-introduction.md#role-based-premissions)のメンバーである必要があります。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Adobe Cloud Manager にログインします。
 1. Cloud Manager に、使用可能な様々なプログラムのリストが表示されます。管理するものを選択します。

@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: e305f9fa7d1c485362bddb8fcd7c9e3e2edefe10
 workflow-type: tm+mt
 source-wordcount: '2590'
-ht-degree: 90%
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 90%
 >id="development_guidelines"
 >title="AEM as a Cloud Service の開発ガイドライン"
 >abstract="AEM as a Cloud Service上での開発に関するガイドラインと、オンプレミスでのAEMおよび AMS でのAEMとは異なる重要な方法について説明します。"
->additional-url="https://video.tv.adobe.com/v/330555/" text="パッケージ構造のデモ"
+>additional-url="https://video.tv.adobe.com/v/330555/?captions=jpn" text="パッケージ構造のデモ"
 
 このドキュメントでは、AEMas a Cloud Service上での開発に関するガイドラインと、オンプレミスおよび AMS のAEMとは異なる重要な方法について説明します。
 
@@ -208,7 +208,7 @@ AEM as a Cloud Service 開発者環境でデバッグするためのツールセ
 
 ### 送信電子メールの有効化 {#enabling-outbound-email}
 
-電子メールの送信に使用されるポートは、デフォルトでは無効になっています。ポートをアクティブにするには、 [高度なネットワーク](/help/security/configuring-advanced-networking.md)を設定し、必要な各環境に対して `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントのポート転送ルール。対象のポート（例：465 や 587）をプロキシポートにマッピングします。
+電子メールの送信に使用されるポートは、デフォルトでは無効になっています。ポートをアクティブにするには、[高度なネットワーク](/help/security/configuring-advanced-networking.md)を設定して、対象となるポート（465 や 587 など）をプロキシポートにマッピングするエンドポイントのポート転送ルールを、必要な環境ごとに設定するようにします（`PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`）。
 
 `kind` パラメータを `flexiblePortEgress` に設定して高度なネットワーク機能を設定することをお勧めします。アドビがフレキシブルポートエグレストラフィックのパフォーマンスを最適化できるからです。一意のエグレス IP アドレスが必要な場合は、`kind` パラメーターを `dedicatedEgressIp` に設定します。他の理由で既に VPN を設定してある場合は、その高度なネットワークバリエーションから提供される一意の IP アドレスも使用できます。
 

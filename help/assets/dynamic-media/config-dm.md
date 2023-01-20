@@ -6,7 +6,7 @@ exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 source-git-commit: 8066d24193822a79d88f564a2db26b3acbb4e918
 workflow-type: tm+mt
 source-wordcount: '3795'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -92,7 +92,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    | プロパティ | 説明 |
    |---|---|
-   | 会社情報 | Dynamic Media アカウントの名前です。<br>**重要**:Experience ManagerのインスタンスでサポートされるDynamic MediaCloud Servicesは 1 つだけです。複数の設定を追加しないでください。 1 つのExperience Managerインスタンス上の複数のDynamic Media設定 _not_ Adobeでサポートまたは推奨。<!-- CQDOC-19579 and CQDOC-19612 --><br>[Dynamic Media の会社エイリアスアカウントの設定](/help/assets/dynamic-media/dm-alias-account.md)も参照してください。 |
+   | 会社情報 | Dynamic Media アカウントの名前です。<br>**重要**：Experience Manager の 1 つのインスタンスでサポートされる、Cloud Services の Dynamic Media 設定は 1 つだけです。複数の設定を追加しないでください。 1 つの Experience Manager インスタンスでの複数の Dynamic Media 設定は、アドビではサポートも推奨もされて&#x200B;_いません_。<!-- CQDOC-19579 and CQDOC-19612 --><br>[Dynamic Media の会社エイリアスアカウントの設定](/help/assets/dynamic-media/dm-alias-account.md)も参照してください。 |
    | 会社のルートフォルダーのパス | 会社のルートフォルダーパスです。 |
    | アセットの公開 | 次の 3 つのオプションから選択できます。<br>**[!UICONTROL 即時&#x200B;]**：アセットがアップロードされると、システムによってアセットが取り込まれ、URL／埋め込みがすぐに提供されます。アセットを公開するためにユーザーが操作する必要はありません。<br>**[!UICONTROL アクティベーション時]**：URL／埋め込みリンクの提供の前に、最初にアセットを明示的に公開する必要があります。<br>**[!UICONTROL 選択的公開&#x200B;]**：アセットは、セキュリティで保護されたプレビューのみを目的として自動公開されます。また、パブリックドメインでの配信用に DMS7 に公開することなく、Experience Manager as a Cloud Service に明示的に公開することもできます。将来的には、このオプションでアセットを相互排他的に Experience Manager as a Cloud Service に公開したり、Dynamic Media に公開したりするようになります。つまり、アセットを DMS7 に公開して、スマート切り抜きや動的レンディションなどの機能を使用できます。または、アセットを、プレビュー用に Experience Manager as a Cloud Service でのみ公開し、パブリックドメイン配信用の DMS7 で公開しないようにすることもできます。 |
    | プレビューサーバーを保護 | セキュアなレンディションプレビューサーバーへの URL パスを指定できます。つまり、レンディションが生成されると、Experience Manager as a Cloud Service は、リモート Dynamic Media レンディションに安全にアクセスしてプレビューできます（バイナリが Experience Manager as a Cloud Service インスタンスに送り返されることはありません）。<br>自社のサーバーまたは特別なサーバーを使用する特別な取り決めがない限り、アドビでは、この設定を指定されたとおりにしておくことをお勧めします。 |

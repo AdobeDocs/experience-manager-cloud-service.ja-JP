@@ -7,7 +7,7 @@ exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
 source-git-commit: deb604c6edfe4feb2ded00827fd2f96638e9335b
 workflow-type: tm+mt
 source-wordcount: '2345'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -271,11 +271,12 @@ Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも�
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-または、 **デフォルト** 名前の前にが付いているファイルのバージョン `default_`例： `../filters/default_filters.any`.
+別の方法として、これらのファイルの&#x200B;**デフォルト**&#x200B;バージョンを含めることもできます。その名前の先頭には `default_`（例：`../filters/default_filters.any`）という単語が追加されます。
 
-**include statement at (...), outside any known location: ...**
+**既知の場所ではない (...) に include ステートメントがあります：...**
 
-上記の 6 つのセクション以外では、 `$include` ステートメントの例を次に示すと、このエラーが発生します。
+上記のパラグラフで述べた 6 つのセクションを除いて、
+`$include` ステートメントを使用することは許可されていません。このエラーは、次のような場合に生成されます。
 
 ```
 /invalidate {
@@ -289,7 +290,7 @@ Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも�
 
 **filter must not use glob pattern to allow requests**
 
-を使用した要求の許可は安全ではありません。 `/glob` 要求行全体に一致するスタイルルール。例：
+`/glob` スタイルのルールはは完全なリクエスト行と照合されるので、このルールを使用してリクエストを許可することは安全ではありません。次に例を示します。
 
 ```
 /0100 {
@@ -311,7 +312,7 @@ Apache 仮想ホスト設定には、インクルードとして指定できる 
 
 >[!TIP]
 >
->限られた方法でより多くのファイルを含めることができるようにするには、柔軟な Dispatcher 設定モードに切り替えることができます。 ドキュメントを参照してください [Dispatcher ツールを使用した検証とデバッグ](/help/implementing/dispatcher/validation-debug.md) フレキシブルモードの詳細については、を参照してください。
+>制限の少ない方法でより多くのファイルを含めることができるようにするには、柔軟な Dispatcher 設定モードに切り替えることをお勧めします。フレキシブルモードについて詳しくは、[Dispatcher ツールを使用した検証とデバッグ](/help/implementing/dispatcher/validation-debug.md)のドキュメントを参照してください。
 
 または、`conf.d/rewrites/default_rewrite.rules` という名前の、書き換えルールの&#x200B;**デフォルト**バージョンをインクルードすることもできます。
 変数ファイルにはデフォルトバージョンはありません。
