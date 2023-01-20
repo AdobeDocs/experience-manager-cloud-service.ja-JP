@@ -4,9 +4,9 @@ description: シークレット値と環境固有の値を使用する OSGi 設�
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 source-git-commit: 74fbf5e3e910106f48a1ec6e316e3ea7c71e65aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3311'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -122,7 +122,7 @@ Adobe Experience Manager as a Cloud Service で使用できる OSGi 設定値は
    }
    ```
 
-   1 つの OSGi 設定ファイルで、これらの設定値タイプの任意の組み合わせを組み合わせて使用できます。 次に例を示します。
+   1 つの OSGi 設定ファイルで、これらの設定値タイプを任意に組み合わせて使用できます。次に例を示します。
 
    ```json
    {
@@ -174,7 +174,7 @@ Adobe Experience Manager as a Cloud Service では、セキュリティ上の理
 JSON 形式の OSGi 設定ファイルは、AEM プロジェクト内から直接手動で書き込むことができます。これは、よく知られている OSGi コンポーネント、特に、設定を定義した同じ開発者により設計および開発されたカスタム OSGi コンポーネントに対して、OSGi 設定をすばやく作成する方法です。この方法は、同じ OSGi コンポーネントの設定を様々な実行モードフォルダーにコピー／貼り付け、更新する場合にも使用できます。
 
 1. IDE で `ui.apps` プロジェクトを開き、新しい OSGi 設定が有効となる実行モードをターゲットに設定する config フォルダー（`/apps/.../config.<runmode>`）を探すか作成します。
-1. この config フォルダーに、 `<PID>.cfg.json` ファイル。 PID は OSGi コンポーネントの永続 ID です。通常は、OSGi コンポーネント実装の完全なクラス名になります。次に例を示します。
+1. この config フォルダーで、`<PID>.cfg.json` ファイルを作成します。PID は OSGi コンポーネントの永続 ID です。通常は、OSGi コンポーネント実装の完全なクラス名になります。次に例を示します。
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 OSGi 設定ファクトリのファイル名には `<factoryPID>-<name>.cfg.json` 命名規則を使用します。
 1. 新しい `.cfg.json` ファイルを開き、[JSON OSGi 設定形式](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)に従って、OSGi プロパティと値のペアのキー／値の組み合わせを定義します。
@@ -202,7 +202,7 @@ AEM SDK Quickstart Jar の AEM Web コンソールは、OSGi コンポーネン�
 1. JSON 形式の OSGi 設定は、「シリアライズされた設定プロパティ」セクションに表示されます。
    ![OSGi インストーラー設定プリンター](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. IDE で `ui.apps` プロジェクトを開き、新しい OSGi 設定が有効となる実行モードをターゲットに設定する config フォルダー（`/apps/.../config.<runmode>`）を探すか作成します。
-1. この config フォルダーに、 `<PID>.cfg.json` ファイル。 PID は、手順 5 と同じ値です。
+1. この config フォルダーで、`<PID>.cfg.json` ファイルを作成します。PID は、手順 5 と同じ値です。
 1. 手順 10 のシリアライズされた設定プロパティを `.cfg.json` ファイルに貼り付けます。
 1. 変更を新しい `.cfg.json` ファイルに保存します。
 1. 新しい追加 OSGi 構成ファイルを Git にコミットします。
@@ -298,11 +298,11 @@ export ENV_VAR_NAME=my_value
 
 >[!CAUTION]
 >
->このテキストファイルではファイル拡張子を使用できません。
+>テキストファイルにファイル拡張子は使用できません。
 >
->したがって、上記の例では、テキストファイルの名前をにする必要があります **server_password**  — ファイル拡張子なし
+>上記の例では、テキストファイルの名前は **server_password** にする必要があります（ファイル拡張子は付けません）。
 
-この `org.apache.felix.configadmin.plugin.interpolation.secretsdir` は Sling フレームワークのプロパティです。したがって、このプロパティは felix コンソール (/system/console) では設定されませんが、システムの起動時に使用される sling.properties ファイルで設定されます。 このファイルは、抽出した JAR/install フォルダー (crx-quickstart/conf) の/conf サブディレクトリにあります。
+`org.apache.felix.configadmin.plugin.interpolation.secretsdir` は Sling フレームワークのプロパティです。そのため、このプロパティは felix コンソール（/system/console）では設定しませんが、システムの起動時に使用する sling.properties ファイルで設定します。このファイルは、抽出された Jar/install フォルダー（crx-quickstart/conf）の /conf サブディレクトリにあります。
 
 例：「crx-quickstart/conf/sling.properties」ファイルの末尾に次の行を追加して、「crx-quickstart/secretsdir」をシークレットフォルダーとして設定します。
 
@@ -414,7 +414,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ "my_var1" :"$[env:my_var1]" "my_var2":"abc", "my_var3":500 }
+{ 
+ "my_var1" : "$[env:my_var1]"
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
@@ -439,7 +443,11 @@ config
 </td>
 <td>
 <pre>
-{ "my_var1":"val1", "my_var2":"abc", "my_var3":500 }
+{ 
+ "my_var1": "val1",
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
@@ -449,7 +457,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ "my_var1" :"$[env:my_var1]" "my_var2":"abc", "my_var3":500 }
+{ 
+ "my_var1" : "$[env:my_var1]"
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
@@ -472,7 +484,11 @@ config
 </td>
 <td>
 <pre>
-{ "my_var1":"val1", "my_var2":"abc", "my_var3":500 }
+{ 
+ "my_var1": "val1",
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
