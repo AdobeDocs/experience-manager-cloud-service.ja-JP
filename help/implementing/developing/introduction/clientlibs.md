@@ -3,9 +3,9 @@ title: AEM as a Cloud Service でのクライアントサイドライブラリ�
 description: AEM では、クライアントサイドライブラリフォルダーが提供されています。これにより、クライアントサイドコード（clientlibs）をリポジトリーに格納し、カテゴリ別に整理して、それぞれのカテゴリのコードをクライアントに提供するタイミングと方法を定義できます。
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 source-git-commit: b93ec12616742910e35a3dac4224b690cd2c7116
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2567'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ clientlibs は、AEM から CSS と JavaScript を配信するための組み込
 
 >[!TIP]
 >
->AEM プロジェクト用に CSS と JavaScript を作成するフロントエンドデベロッパーは、 [AEM プロジェクトアーキタイプと、自動化されたフロントエンドビルドプロセス](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)にも慣れている必要があります。
+>AEM プロジェクト用に CSS と JavaScript を作成するフロントエンドデベロッパーは、 [AEM プロジェクトアーキタイプと、自動化されたフロントエンドビルドプロセス](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja)にも慣れている必要があります。
 
 ## クライアントサイドライブラリとは {#what-are-clientlibs}
 
@@ -35,7 +35,7 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルに 1 つの�
 
 ## AEM as a Cloud Service 向けフロントエンド開発 {#fed-for-aemaacs}
 
-すべての JavaScript、CSS、およびその他のフロントエンドアセットは、AEM プロジェクトアーキタイプの [ui.frontend モジュールで管理する必要があります。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) アーキタイプの柔軟性により、最新の Web ツールを使用して、これらのリソースを作成および管理できます。
+すべての JavaScript、CSS、およびその他のフロントエンドアセットは、AEM プロジェクトアーキタイプの [ui.frontend モジュールで管理する必要があります。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja) アーキタイプの柔軟性により、最新の Web ツールを使用して、これらのリソースを作成および管理できます。
 
 次に、アーキタイプは、リソースを単一の CSS ファイルと JS ファイルにコンパイルし、自動的にリポジトリーの `cq:clientLibraryFolder` に埋め込むことができます。
 
@@ -56,7 +56,7 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルに 1 つの�
 
 各 `cq:ClientLibraryFolder` には、JS ファイルや CSS ファイルのセットと、いくつかのサポートファイルが入力されます（以下を参照）。`cq:ClientLibraryFolder` の重要なプロパティは、次のように設定されます。
 
-* `allowProxy`:すべての clientlibs は、 `apps`を指定すると、プロキシサーブレットを介してクライアントライブラリにアクセスできます。 の節を参照してください。 [クライアントライブラリフォルダーの配置とプロキシクライアントライブラリサーブレットの使用](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) 下
+* `allowProxy`：すべての clientlibs は `apps` に保存する必要があるため、このプロパティを使用すると、プロキシサーブレット経由でクライアントライブラリにアクセスできます。後述の[クライアントライブラリフォルダーの配置とプロキシクライアントライブラリサーブレットの使用](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet)の節を参照してください。
 * `categories`：`cq:ClientLibraryFolder` に含まれる JS ファイルや CSS ファイルのセットのカテゴリを特定します。`categories` プロパティは複数の値を取るため、ライブラリフォルダーを複数のカテゴリの一部にすることができます（これがどのように役立つかについては以下を参照）。
 
 クライアントライブラリフォルダーに 1 つ以上のソースファイルが含まれている場合は、そのソースファイルが実行時に単一の JS ファイルや CSS ファイルに結合されます。生成されるファイルの名前はノード名で、ファイル名の拡張子は `.js` または `.css` です。例えば、`cq.jquery` という名前のライブラリノードからは、 `cq.jquery.js` または `cq.jquery.css` という名前のファイルが生成されます。
@@ -88,9 +88,9 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルに 1 つの�
    * タイプ：Boolean
    * 値：`true`
 1. 静的リソースを管理する必要がある場合は、クライアントライブラリフォルダーの `resources` の下にサブフォルダーを作成します。
-   * フォルダーの下以外の場所に静的リソースを格納する場合 `resources`の場合、パブリッシュインスタンスで参照することはできません。
+   * フォルダー `resources` 以外の場所に静的リソースを格納した場合、静的リソースはパブリッシュインスタンスで参照できません。
 1. 追加ソースファイルをライブラリフォルダーに格納します。
-   * これは、通常、 [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)のフロントエンドビルドプロセスで行われます。
+   * これは、通常、 [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja)のフロントエンドビルドプロセスで行われます。
    * 必要に応じて、サブフォルダーを使用してソースファイルを整理できます。
 1. クライアントライブラリフォルダーを選択して、**作成／ファイルを作成**&#x200B;をクリックします。
 1. ファイル名ボックスに、次のいずれかのファイル名を入力して、「OK」をクリックします。
@@ -114,7 +114,7 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルに 1 つの�
 
 `allowProxy` プロパティを使用して、次をリクエストできます。
 
-* clientlib（を介す） `/etc.clientlibs/myprojects/clientlibs/foo.js`
+* `/etc.clientlibs/myprojects/clientlibs/foo.js` 経由の clientlib
 * 静的な画像（`/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png` を介す）
 
 ### クライアントライブラリの読み込み（HTL 経由） {#loading-via-htl}
@@ -349,5 +349,5 @@ YUI は、AEM のデフォルト縮小ツールとして設定されています
 1. **Adobe Granite HTML ライブラリマネージャー**&#x200B;を検索して編集します。
 1. 「**Minify**」オプションを有効にします（まだ有効でない場合）。
 1. **JS Processor Default Configs** の値を `min:gcc` に設定します。
-   * セミコロンで区切られている場合、次のようにオプションを渡すことができます。 `min:gcc;obfuscate=true`.
+   * セミコロンで区切られている場合、オプションを渡すことができます（例：`min:gcc;obfuscate=true`）。
 1. 「**保存**」をクリックして、変更を保存します。
