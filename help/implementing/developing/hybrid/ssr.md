@@ -3,9 +3,9 @@ title: SPA およびサーバーサイドレンダリング
 description: SPA でサーバーサイドレンダリング（SSR）を使用すると、ページの初期読み込みが高速化し、その後、クライアントにさらにレンダリングを渡すことができます。
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
 source-git-commit: cc50520d7ee2bb3e7d1491154d531aa84ac9e956
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1512'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -26,17 +26,17 @@ SSR を実装することに決めたら、長期的なメンテナンスを含�
 * **SEO：**&#x200B;トラフィックをもたらす検索エンジンでサイトのインデックスを適切に作成するために SSR が実際に必要ですか。メインの検索エンジンクローラーが JS を評価するようになったことに注意してください。
 * **ページ速度：** SSR によって実際の環境の速度が大幅に上がり、全体的なユーザーエクスペリエンスが向上しますか。
 
-この 2 つの質問のうち少なくとも 1 つに対して明確な「はい」で回答できた場合にのみ、プロジェクトで SSR を実装するようお勧めします。次の節では、の一部であるAdobe I/O Runtimeを使用してこれをおこなう方法について説明します。 [App Builder](https://developer.adobe.com/app-builder).
+この 2 つの質問のうち少なくとも 1 つに対して明確な「はい」で回答できた場合にのみ、プロジェクトで SSR を実装するようお勧めします。次の節では、[App Builder](https://developer.adobe.com/app-builder) の一部である Adobe I/O Runtime を使用してこれを行う方法について説明します。
 
 ## Adobe I/O Runtime {#adobe-i-o-runtime}
 
 [プロジェクトに SSR の実装が必要であると確信できる](#when-to-use-ssr)場合、Adobe I/O Runtime を使用したソリューションが推奨されます。
 
-Adobe I/O Runtimeについて詳しくは、
+Adobe I/O Runtime について詳しくは、以下を参照してください。
 
 * [https://developer.adobe.com/runtime](https://developer.adobe.com/runtime) - App Builder のランタイム機能の概要
 * [https://developer.adobe.com/app-builder](https://developer.adobe.com/app-builder) - App Builder 製品全体の詳細
-* [https://developer.adobe.com/runtime/docs/](https://developer.adobe.com/runtime/docs)  — 詳細なドキュメント
+* [https://developer.adobe.com/runtime/docs/](https://developer.adobe.com/runtime/docs) - 詳細なドキュメント
 
 次の節では、2 つの異なるモデルで、SPA に SSR を実装する際に Adobe I/O Runtime を使用する方法について詳しく説明します。
 
@@ -45,7 +45,7 @@ Adobe I/O Runtimeについて詳しくは、
 
 >[!NOTE]
 >
->アドビでは、環境（ステージング、実稼動、テストなど）ごとに個別の Adobe I/O Runtime ワークスペースを使用することをお勧めします。これにより、異なる環境にデプロイされた単一アプリケーションの異なるバージョンを使用する、一般的なシステム開発ライフサイクル（SDLC）パターンを使用できます。ドキュメントを参照 [App Builder アプリケーション用 CI/CD](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) を参照してください。
+>アドビでは、環境（ステージング、実稼動、テストなど）ごとに個別の Adobe I/O Runtime ワークスペースを使用することをお勧めします。これにより、異なる環境にデプロイされた単一アプリケーションの異なるバージョンを使用する、一般的なシステム開発ライフサイクル（SDLC）パターンを使用できます。詳しくは、[App Builder アプリケーション用の CI/CD](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/)ドキュメントを参照してください。
 >
 >インスタンスタイプごとのランタイム実装に違いがない限り、インスタンス（オーサー、パブリッシュ）ごとに個別のワークスペースは必要ありません。
 
