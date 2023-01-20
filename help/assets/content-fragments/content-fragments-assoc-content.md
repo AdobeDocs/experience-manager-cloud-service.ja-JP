@@ -1,11 +1,11 @@
 ---
-title: 関連コンテンツ（アセット — コンテンツフラグメント）
-description: AEM関連のコンテンツ機能によって接続が提供される方法を理解し、アセットをフラグメントと共に任意で使用できるようにします。
+title: 関連コンテンツ（アセット - コンテンツフラグメント）
+description: AEM 関連のコンテンツ機能で接続を提供してアセットを任意でフラグメントと共に使用できるようにする方法を説明します。
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '233'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ AEM の関連コンテンツ機能によって関連性がわかり、フラグ�
 
 >[!NOTE]
 >
->追加する方法は様々です。 [ビジュアルアセット（例：画像）](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) をフラグメントやページに追加します。
+>[ビジュアルアセット（画像など）](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)をフラグメントやページに追加するには、様々な方法があります。
 
 関連付けを作成するには、最初に[メディアアセットをコレクションに追加](/help/assets/manage-collections.md)する必要があります。それが完了した後で以下を実行できます。
 
