@@ -6,9 +6,9 @@ feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 source-git-commit: 4f6901de479086ac40471885292ae82824516bd1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1189'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 74%
 >Recipients of emails must be members of the `dam-users` group to access the ZIP download link in the email message. To be able to download the assets, the members must have permissions to launch workflows that trigger downloading of assets.
 -->
 
-次のアセットタイプはダウンロードできません：画像セット、スピンセット、混在メディアセット、カルーセルセットの 3 つのビューで構成されます。
+画像セット、スピンセット、混合メディアセット、カルーセルセットの各アセットタイプはダウンロードできません。
 
-次の方法を使用して、Experience Managerからアセットをダウンロードできます。
+次の方法を使用すると、Experience Manager からアセットをダウンロードできます。
 
 <!-- * [Link Share](#link-share-download) -->
 
@@ -35,9 +35,9 @@ ht-degree: 74%
 
 ## [!DNL Experience Manager] インターフェイスを使用したアセットのダウンロード {#download-assets}
 
-Experience Managerは、アセットの数とサイズに基づいてダウンロードエクスペリエンスを最適化します。 サイズの小さいファイルはユーザーインターフェイスからリアルタイムでダウンロードされます。[!DNL Experience Manager] 単一のアセットを ZIP アーカイブに含めるのではなく、元のファイルに対する単一のアセット要求を直接ダウンロードして、より高速なダウンロードを可能にします。 Experience Managerは、非同期リクエストで大規模なダウンロードをサポートします。 100 GB を超えるダウンロードリクエストは、最大サイズが 100 GB の複数の ZIP アーカイブに分割されます。
+Experience Manager では、アセットの量とサイズに基づいてダウンロードエクスペリエンスを最適化します。サイズの小さいファイルはユーザーインターフェイスからリアルタイムでダウンロードされます。[!DNL Experience Manager] では、単一のアセットを ZIP アーカイブに格納するのではなく、元のファイルの単一のアセットリクエストを直接ダウンロードして、ダウンロードを高速化します。Experience Manager では、非同期リクエストによる大規模なダウンロードをサポートしています。100 GB を超えるダウンロードリクエストは、それぞれ最大 100 GB の複数の ZIP アーカイブに分割されます。
 
-デフォルトでは、 [!DNL Experience Manager] トリガー [[!DNL Experience Manager] インボックス](/help/sites-cloud/authoring/getting-started/inbox.md) ダウンロードアーカイブの生成時
+デフォルトでは、[!DNL Experience Manager] は、ダウンロードアーカイブの生成時に [[!DNL Experience Manager] インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)で通知をトリガーします。
 
 ![インボックス通知](assets/inbox-notification-for-large-downloads.png)
 
@@ -50,15 +50,15 @@ Experience Managerは、アセットの数とサイズに基づいてダウン�
 * ダウンロードサイズが 100 MB を超える場合
 * ダウンロードの準備に 30 秒以上かかる場合
 
-非同期ダウンロードがバックエンドで実行される間、ユーザーは Experience Manager で調査を続行し、さらに作業できます。Experience Managerは、Experience Managerのインボックス通知に加えて、ダウンロード処理の完了時にユーザーに通知する E メールを送信できます。 この機能を有効にするには、管理者が電子メールサービスを [SMTP サーバー接続の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=ja#sending-email).
+非同期ダウンロードがバックエンドで実行される間、ユーザーは Experience Manager で調査を続行し、さらに作業できます。Experience Manager のインボックス通知に加えて、Experience Manager ではメールを送信して、ダウンロードプロセスの完了時にユーザーに通知することができます。この機能を有効にするために、管理者は [SMTP サーバー接続を設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=ja#sending-email)することにより、メールサービスを設定できます。
 
 メールサービスを設定すると、管理者とユーザーは、Experience Manager インターフェイスからメール通知を行えます。
 
 メール通知を有効にする手順は次のとおりです。
 
 1. [!DNL Experience Manager Assets] にログインします。
-1. 右上隅のユーザーアイコンをクリックし、 **[!UICONTROL 環境設定]** をクリックして、User Preferences ウィンドウを開きます。
-1. を選択します。 **[!UICONTROL アセットのダウンロードの電子メール通知]** チェックボックスをオンにして「 」をクリックします。 **[!UICONTROL 確定]**.
+1. 右上隅のユーザーアイコンをクリックし、「**[!UICONTROL 環境設定]**」をクリックして ユーザーの環境設定ウィンドウを開きます。
+1. 「**[!UICONTROL アセットのダウンロードのメール通知]**」チェックボックスをオンにして、「**[!UICONTROL 確定]**」をクリックします。
 
    ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
 
@@ -66,7 +66,7 @@ Experience Managerは、アセットの数とサイズに基づいてダウン�
 アセットをダウンロードするには、次の手順に従います。
 
 1. [!DNL Experience Manager] ユーザーインターフェイスで、**[!UICONTROL アセット]**／**[!UICONTROL ファイル]**&#x200B;をクリックします。
-1. ダウンロードするアセットに移動します。 フォルダーを選択するか、フォルダー内の 1 つ以上のアセットを選択します。ツールバーの「**[!UICONTROL ダウンロード]**」をクリックします。
+1. ダウンロードするアセットに移動します。フォルダーを選択するか、フォルダー内の 1 つ以上のアセットを選択します。ツールバーの「**[!UICONTROL ダウンロード]**」をクリックします。
 
    ![ からアセットをダウンロードする際に使用できるオプション[!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
 
@@ -74,16 +74,16 @@ Experience Managerは、アセットの数とサイズに基づいてダウン�
 
    | ダウンロードオプション | 説明 |
    |---|---|
-   | **[!UICONTROL アセットごとに別のフォルダーを作成]** | このオプションを選択して、アセットのダウンロードされたレンディションをすべて含むアセットごとにフォルダーを作成します。 選択しない場合、各アセット（およびダウンロード用に選択されている場合はそのレンディション）は、生成されたアーカイブの親フォルダーに含まれます。 |
-   | **[!UICONTROL 電子メール]** | （ダウンロードへのリンクを含む）メール通知を別のユーザーに送信する場合は、このオプションを選択します。受信者ユーザーは `dam-users` グループのメンバーである必要があります。次の場所にある標準の電子メールテンプレートを利用できます。<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> デプロイメント時にカスタマイズしたテンプレートは、次の場所で利用できます。 <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>テナント固有のカスタムテンプレートは、次の場所に保存できます。<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
-   | **[!UICONTROL アセット]** | 元の形式でアセットをダウンロードする場合は、このオプションを選択します。<br>オリジナルアセットにサブアセットがある場合は、サブアセットオプションを使用できます。 |
+   | **[!UICONTROL アセットごとに別のフォルダーを作成]** | このオプションを選択すると、アセットごとに、アセットのダウンロード済みレンディションをすべて含んだフォルダーを作成できます。このオプションを選択しない場合、各アセット（ダウンロード用に選択した場合はそのレンディションも含む）は、生成されたアーカイブの親フォルダーに格納されます。 |
+   | **[!UICONTROL メール]** | （ダウンロードへのリンクを含む）メール通知を別のユーザーに送信する場合は、このオプションを選択します。受信者ユーザーは `dam-users` グループのメンバーである必要があります。次の場所にある標準の電子メールテンプレートを利用できます。<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> デプロイメント時にカスタマイズしたテンプレートは、次の場所で利用できます。 <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>テナント固有のカスタムテンプレートは、次の場所に保存できます。<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
+   | **[!UICONTROL アセット]** | このオプションを選択すると、アセットを元の形式でダウンロードできます。<br>オリジナルアセットにサブアセットがある場合は、サブアセットオプションを使用できます。 |
    | **[!UICONTROL レンディション]** | レンディションは、アセットのバイナリ表現です。アセットは、（アップロードされたファイルの）一次表現を持ちます。アセットは任意の数の追加の表現を持つことができます。<br>このオプションを選択すると、ダウンロードするレンディションを選択できます。使用できるレンディションは、選択したアセットによって異なります。 |
    | **[!UICONTROL スマート切り抜き]** | このオプションを選択すると、選択したアセットのすべてのスマート切り抜きレンディションが Adobe [!DNL Experience Manager] 内からダウンロードされます。スマート切り抜きレンディションを含む zip ファイルが作成され、ローカルコンピューターにダウンロードされます。 |
    | **[!UICONTROL 動的レンディション]** | 一連の代替レンディションをリアルタイムで生成するには、このオプションを選択します。また、このオプションを選択すると、動的に作成するレンディションを[画像プリセット](/help/assets/dynamic-media/image-presets.md)リストから選択します。<br>さらに、サイズ、測定単位、形式、カラースペース、解像度および、画像の反転用などのオプションの画像修飾子を選択できます。このオプションは、[!DNL Dynamic Media] を有効にしている場合にのみ使用できます。 |
 
 1. ダイアログボックスで、「**[!UICONTROL ダウンロード]**」をクリックします。
 
-   大量のダウンロードに対するメール通知が有効になっている場合は、アーカイブされた zip フォルダーのダウンロード URL を記載したメールがインボックスに表示されます。電子メールからダウンロードリンクをクリックして、zip アーカイブをダウンロードします。
+   大量のダウンロードに対するメール通知が有効になっている場合は、アーカイブされた zip フォルダーのダウンロード URL を記載したメールがインボックスに表示されます。メールのダウンロードリンクをクリックして、zip アーカイブをダウンロードします。
 
    ![email-notifications-for-large-downloads](/help/assets/assets/email-for-large-notification.png)
 
@@ -95,7 +95,7 @@ Experience Managerは、アセットの数とサイズに基づいてダウン�
 
 リンクを使用したアセットの共有は、関心のあるユーザーが [!DNL Assets] にログインしなくてもアセットを利用できるようにするための便利な方法です。[リンク共有機能](/help/assets/share-assets.md#sharelink)を参照してください。
 
-ユーザーが共有リンクからアセットをダウンロードする場合、[!DNL Assets] では、高速で途切れないダウンロードを可能にする非同期サービスを使用します。ダウンロードされるアセットは、バックグラウンドで、扱いやすいファイルサイズの ZIP アーカイブにまとめられてインボックスのキューに入れられます。大量のダウンロードの場合、ダウンロードは 100 GB のファイルにまとめられます。
+ユーザーが共有リンクからアセットをダウンロードする場合、[!DNL Assets] では、高速で途切れないダウンロードを可能にする非同期サービスを使用します。ダウンロードされるアセットは、バックグラウンドで、扱いやすいファイルサイズの ZIP アーカイブにまとめられてインボックスのキューに入れられます。大容量のダウンロードの場合、ダウンロードは 100 GB のファイルに分割されます。
 
 [!UICONTROL ダウンロードインボックス]には、各アーカイブの処理ステータスが表示されます。処理が完了したら、インボックスからアーカイブをダウンロードできます。
 
@@ -103,16 +103,16 @@ Experience Managerは、アセットの数とサイズに基づいてダウン�
 
 ## アセットダウンロードサーブレットの有効化 {#enable-asset-download-servlet}
 
-のデフォルトサーブレット [!DNL Experience Manager] を使用すると、認証済みユーザーは任意の大きさの同時ダウンロードリクエストを発行してアセットの ZIP ファイルを作成できます。 ダウンロードの準備でパフォーマンスに影響が及ぶ場合や、サーバーやネットワークに過重な負荷がかかる場合があります。この機能で生じる可能性がある DoS に似たリスクを軽減するため、パブリッシュインスタンスに対して `AssetDownloadServlet` OSGi コンポーネントが無効になっています。オーサーインスタンスでダウンロード機能が必要ない場合は、オーサーインスタンスでサーブレットを無効にします。
+[!DNL Experience Manager] のデフォルトサーブレットを使用すると、認証済みユーザーは、任意の大きさの同時ダウンロードリクエストを発行してアセットの ZIP ファイルを作成することができます。ダウンロードの準備でパフォーマンスに影響が及ぶ場合や、サーバーやネットワークに過重な負荷がかかる場合があります。この機能で生じる可能性がある DoS に似たリスクを軽減するため、パブリッシュインスタンスに対して `AssetDownloadServlet` OSGi コンポーネントが無効になっています。オーサーインスタンスでダウンロード機能が必要ない場合は、オーサーインスタンスでサーブレットを無効にします。
 
 例えば Asset Share Commons やポータルのような実装などを使用する場合に DAM からアセットをダウンロードできるようにするには、OSGi 設定を通じてサーブレットを手動で有効にします。日常的なダウンロードの要件に影響を与えない範囲で、許容ダウンロードサイズをできるだけ小さく設定することをお勧めします。この値を大きくすれば、パフォーマンスに影響を与える可能性があります。
 
-1. パブリッシュ実行モード ( つまり、 `config.publish`:
+1. 次のように、パブリッシュ実行モードを対象とする命名規則（`config.publish`）でフォルダーを作成します。
 
    `/apps/<your-app-name>/config.publish`
 
 1. config フォルダーに、`nt:file` タイプのファイル `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` を新しく作成します。
-1. `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` に以下を入力します。ダウンロードの最大サイズ（バイト単位）を `asset.download.prezip.maxcontentsize` の値として設定します。以下のサンプルでは、ZIP ダウンロードの最大サイズを 100 KB を超えないように設定しています。
+1. `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` に以下を入力します。ダウンロードの最大サイズ（バイト単位）を `asset.download.prezip.maxcontentsize` の値として設定します。以下のサンプルでは、100 KB を超えないように ZIP ダウンロードの最大サイズを設定しています。
 
    ```java
    enabled=B"true"
