@@ -4,17 +4,17 @@ seo-title: Reference Themes
 description: AEM Forms には、ソフトウェア配布から取得してフォームのスタイル設定に使用できるアダプティブフォームテーマが用意されています。
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
-source-git-commit: 3ca1996ac3a19151c0c05bd972f0aec07edabf69
-workflow-type: tm+mt
+exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
+source-git-commit: bca7d28ab6cd846df0c51a8bece17e11304129df
+workflow-type: ht
 source-wordcount: '514'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
+# Forms as a Cloud Service の参照アセット {#reference-themes}
 
-# Formsas a Cloud Serviceの参照アセット {#reference-themes}
-
-参照テーマ、テンプレート、およびフォームデータモデルは、 [参照アセットパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). これにより、アダプティブFormsの開発をすばやく開始し、迅速に進めることができます。 以下を使用できます。 [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=ja) このパッケージをAEM Formsas a Cloud Service環境にデプロイする場合。
+[参照アセットパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip)をインストールすると、参照テーマ、テンプレート、およびフォーム データモデルを取得できます。これにより、アダプティブフォームの開発にすばやく着手し、迅速に進めることができます。 [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=ja)を使用して、このパッケージを AEM Forms as a Cloud Service 環境にデプロイできます。
 
 パッケージに含まれる参照アセットは次のとおりです。
 
@@ -28,15 +28,15 @@ ht-degree: 56%
 * Urbane
 * Canva
 
-各テーマには、独自のエレガントなスタイルが含まれていて、ユーザー向けの使いやすいアダプティブフォームの作成に使用できます。パネル、テキストボックス、数値ボックス、ラジオボタン、表、スイッチなど、セレクター用の独自のスタイル設定が含まれています。これらのテーマ内のスタイルは、要件に基づいています。たとえば、特定のシナリオでは、クリーンなフォントを含む最小限のテーマが必要です。Urbane テーマを使用すると、その外観を実現できます。
+各テーマには、独自のエレガントなスタイルが含まれていて、ユーザー向けの使いやすいアダプティブフォームの作成に使用できます。パネル、テキストボックス、数値ボックス、ラジオボタン、表、スイッチなど、セレクター用の独自のスタイル設定が含まれています。これらのテーマ内のスタイルは、要件に基づいています。たとえば、特定のシナリオでは、クリーンなフォントを含む最小限のテーマが必要です。Urbane テーマなら、その外観を実現できます。
 
 ![リファレンステーマ](/help/forms/assets/ref-themes.png)
 
-このパッケージに含まれるテーマはレスポンシブで、これらのテーマ内のスタイルはモバイルディスプレイとデスクトップディスプレイに対して定義されます。 様々なデバイス上のほとんどの最新のブラウザーは、これらのテーマのいずれかが適用されたフォームを問題なくレンダリングできます。
+このパッケージに含まれるテーマはレスポンシブで、これらのテーマ内のスタイルはモバイルおよびデスクトップ表示用として定義されています。様々なデバイス上の最新ブラウザーのほとんどは、これらのテーマのいずれかが適用されたフォームを問題なくレンダリングできます。
 
 パッケージのインストールについて詳しくは、[パッケージの作業方法](/help/implementing/developing/tools/package-manager.md)を参照してください。
 
-### ベリル {#beryl}
+### Beryl {#beryl}
 
 Beryl テーマは、We.Gov アダプティブフォームで使用され、背景画像、透明度および大きくてフラットなアイコンの使用を強調します。以下のスクリーンショットで、Beryl テーマの外観と、フォームのスタイル設定がどのように拡張されるかを確認できます。
 
@@ -105,7 +105,7 @@ U.S. Web Design Standards theme, as the name suggests, uses typefaces and styles
 
 ## テンプレート
 
-テンプレートを使用すると、コンポーネントをドラッグ&amp;ドロップして、アダプティブフォームの初期構造を定義できます。 次のアセットが含まれます。
+テンプレートを使用すると、コンポーネントをドラッグ＆ドロップして、アダプティブフォームの初期構造を定義できます。 次のアセットが含まれます。
 
 ### 基本 {#basic}
 
@@ -121,12 +121,12 @@ U.S. Web Design Standards theme, as the name suggests, uses typefaces and styles
 
 ### Microsoft® Dynamics 365
 
-Microsoft Dynamics 365 データモデルは、Microsoft Dynamics 365 をデータソースとして使用する場合に役立ちます。 また、データを読み取り、更新、削除し、Microsoft Dynamics 365 データソースに追加するサンプルサービスも提供しています。
+Microsoft Dynamics 365 データモデルは、Microsoft Dynamics 365 をデータソースとして使用する場合に役立ちます。 また、Microsoft Dynamics 365 データソースへのデータの読み取り、更新、削除および追加を行うためのサンプルサービスも提供しています。
 
 ![Microsoft® Dynamics 365 フォームデータモデル](/help/forms/assets/microsoft-dynamic-fdm.png)
 
 ### Salesforce
 
-Salesforce データモデルは、Salesforce をデータソースとして使用する際に役立ちます。 また、Salesforce に対して、データの読み取り、更新、削除、追加を行うサンプルサービスも提供します。
+Salesforce データモデルは、Salesforce をデータソースとして使用する際に役立ちます。 また、Salesforce に対して、データの読み取り、更新、削除、追加を行うサンプルサービスも提供しています。
 
 ![Salesforce フォームデータモデル](/help/forms/assets/salesforce-fdm.png)
