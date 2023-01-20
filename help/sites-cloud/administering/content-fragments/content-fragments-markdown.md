@@ -1,13 +1,13 @@
 ---
 title: マークダウン
-description: コンテンツフラグメントエディターが Markdown 構文を使用してページのオーサリングとヘッドレス配信の両方でコンテンツを簡単に作成できる方法を説明します。
+description: コンテンツフラグメントエディターがページオーサリングとヘッドレス配信の両方にマークダウン構文を使用して、コンテンツを簡単に作成する仕組みを説明します。
 feature: Content Fragments
 role: User
 exl-id: 4e9b076e-7429-466b-bb53-2164da379650
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '534'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
