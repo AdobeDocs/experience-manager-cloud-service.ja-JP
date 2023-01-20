@@ -4,9 +4,9 @@ description: 大規模法人では、ストアフロントを強化するため�
 thumbnail: cif-third-party-architecture.jpg
 exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c,42dd8922-540d-4a93-9e45-b5e83dc11e16
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '521'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ CIF は、製品カタログへのリアルタイムのアクセスと製品エ�
 
 [参照実装](https://github.com/adobe/commerce-cif-graphql-integration-reference)は、コマースソリューションへの統合を構築するための出発点として最適です。GraphQL がサポートされていますが、REST などの他のタイプの API と統合することもできます。
 
-この統合レイヤーは、サードパーティのレイヤー（Mulesoft など）が使用可能な場合や、統合がサードパーティのソリューションの上に構築される場合は必要ありません。
+この統合レイヤーは、サードパーティレイヤー（Mulesoft など）が使用可能な場合や、統合がサードパーティソリューションに基づいて構築される場合には必要ありません。
 
 ## 事前定義済みコネクタ {#connectors}
 
