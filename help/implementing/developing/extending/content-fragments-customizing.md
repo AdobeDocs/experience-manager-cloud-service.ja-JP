@@ -3,9 +3,9 @@ title: コンテンツフラグメントのカスタマイズと拡張
 description: コンテンツフラグメントは、標準アセットを拡張します。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1811'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -63,9 +63,9 @@ Adobe Experience Manager as a Cloud Service 内で、コンテンツフラグメ
    * 要素データは次のプライマリサブノードに格納されます。
       `jcr:content/data/master`
 
-   * バリエーションは、そのバリエーションの名前を持つサブノードに格納されます。例： `jcr:content/data/myvariation`
+   * バリエーションは、そのバリエーション名のサブノードに格納されます。例：`jcr:content/data/myvariation`
 
-   * 各要素のデータは、それぞれのサブノードに、要素名を持つプロパティとして保存されます。例えば、要素のコンテンツ `text` はプロパティとして保存されます `text` オン `jcr:content/data/master`
+   * 各要素のデータは、その要素名のプロパティとしてそれぞれのサブノードに格納されます。例えば、`text` 要素のコンテンツは、`text` プロパティとして `jcr:content/data/master` に格納されます。
 
 * メタデータと関連コンテンツは、`jcr:content/metadata` に格納されます。
 ただし、タイトルと説明は従来のメタデータと見なされないので、次の場所に格納されます。 
@@ -97,7 +97,7 @@ Assets コアと統合するには：
 >
 >[コンテンツフラグメントコンポーネントは、コアコンポーネントの一部です](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ja)。詳しくは、[コアコンポーネントの開発](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ja)を参照してください。
 
-コンテンツフラグメントは、その他のアセットタイプと同様に、AEM ページから参照できます。AEM では、**[コンテンツフラグメントコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)**&#x200B;を利用できます。これは、[コンテンツフラグメントをページ上に含めることができるコンポーネント](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page)です。この&#x200B;**[コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)**&#x200B;コアコンポーネントを拡張することもできます。
+コンテンツフラグメントは、その他のアセットタイプと同様に、AEM ページから参照できます。AEM では、**[コンテンツフラグメントコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ja)**&#x200B;を利用できます。これは、[コンテンツフラグメントをページ上に含めることができるコンポーネント](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page)です。この&#x200B;**[コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ja)**&#x200B;コアコンポーネントを拡張することもできます。
 
 * このコンポーネントは、`fragmentPath` プロパティを使用して、実際のコンテンツフラグメントを参照します。`fragmentPath` プロパティは、その他のアセットタイプの類似プロパティと同じ方法で処理されます。例えば、コンテンツフラグメントが別の場所に移動された場合などです。
 
@@ -180,7 +180,7 @@ Assets コアと統合するには：
 
    このインターフェイスでは、次のことを実行できます。
 
-   * 基本データの管理 ( 例：get name;タイトル/説明を取得/設定
+   * 基本データを管理する（名前の取得、タイトルまたは説明の取得／設定など）
    * メタデータにアクセスする
    * 要素にアクセスする
 
@@ -346,4 +346,4 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 詳しくは、次を参照してください。
 
-* [コアコンポーネント - コンテンツフラグメントコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)（推奨）
+* [コアコンポーネント - コンテンツフラグメントコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ja)（推奨）
