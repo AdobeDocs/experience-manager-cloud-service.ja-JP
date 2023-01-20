@@ -5,9 +5,9 @@ description: リポジトリーブラウザーは、オーサー層、パブリ�
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 source-git-commit: 46d8d78bd14f6e311d62266aa19825f82f82030d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '899'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -66,13 +66,13 @@ ht-degree: 90%
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
 
-または、 **パス** フィールドに含まれる値を指定します。 これにより、左側のコンテンツ階層ビューでの場所も展開されます。
+または、以下に示すように、「**パス**」フィールドにパスを入力して、パスに直接移動することもできます。これにより、左側のコンテンツ階層表示での場所も拡張されます。
 
 ![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
 
-左側のフォルダーをクリックするたびに、「パス」フィールドにその場所が自動的に入力されます。 これは、後で使用するために値をコピー&amp;ペーストする場合に便利です。
+左側のフォルダーをクリックするたびに、「パス」フィールドにその場所が自動的に入力されます。 これは、後で使用するために値をコピーおよびペーストする場合に便利です。
 
-さらに、フォルダーをクリックすると、そのフォルダーのパスが含まれるように URL が動的に変更されます。 これにより、ブックマーク可能な URL を作成できます。
+これに加えて、フォルダーをクリックすると、そのパスがクリックしたフォルダーに含まれるように URL が動的に変更されます。 これにより、ブックマーク可能な URL が可能になります。
 
 パブリッシュ層の場合、デフォルトでは、リポジトリーブラウザーには公開コンテンツのみが表示されます。したがって、`/conf` や `/home` などの特定のフォルダーは表示されません。
 
