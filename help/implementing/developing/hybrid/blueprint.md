@@ -3,9 +3,9 @@ title: SPA ブループリント
 description: このドキュメントでは、AEM 内に編集可能な SPA コンポーネントを実装するために SPA フレームワークが満たす必要がある、フレームワークに依存しない一般的な契約について説明します。
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2057'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -227,7 +227,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 プロジェクトコンポーネントでは、エディターによる操作を可能にするために、少なくとも次のデータ属性を生成する必要があります。
 
-* `data-cq-data-path`:コンポーネントの相対パス ( `PageModel` ( 例： `"root/responsivegrid/image"`) をクリックします。 この属性はページには追加しないでください。
+* `data-cq-data-path`：`PageModel` によって指定されたコンポーネントの相対パス（`"root/responsivegrid/image"` など）。この属性はページには追加しないでください。
 
 要約すると、エディターによって編集可能と認識されるためには、プロジェクトコンポーネントは次の契約に準拠する必要があります。
 
