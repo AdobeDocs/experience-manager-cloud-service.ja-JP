@@ -4,9 +4,9 @@ description: AEM as a Cloud Service へのデプロイ
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3346'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -104,7 +104,7 @@ Cloud Manager で可変リポジトリーにデプロイされるコンテンツ
    * フォルダー（追加、変更、削除）
    * 編集可能なテンプレート（追加、変更、削除）
    * コンテキスト対応の設定（`/conf` 配下のあらゆるもの）（追加、変更、削除）
-   * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）：<!-- MISDIRECTED REQUEST, 421 ERROR, CAN'T FIND CORRECT PATH See the [Jackrabbit filevault documentation](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks. -->AEM as a Cloud Service では現在、FileVault バージョン 3.4.0 を使用しています（インストールフックの使用は管理者ユーザー、システムユーザー、管理者グループのメンバーに限定されています）。
+   * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）：<!-- MISDIRECTED REQUEST, 421 ERROR, CAN'T FIND CORRECT PATH See the [Jackrabbit filevault documentation](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks. --> AEM as a Cloud Service では現在、FileVault バージョン 3.4.0 を使用しています（インストールフックの使用は管理者ユーザー、システムユーザー、管理者グループのメンバーに限定されています）。
 
 `/apps` 配下の install.author フォルダーまたは install.publish フォルダーにパッケージを埋め込むことで、可変コンテンツのインストールをオーサーまたはパブリッシュのみに制限することができます。この分離を反映した再構築は AEM 6.5 で行われました。推奨されるプロジェクト再構築の詳細については、 [AEM 6.5 のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja) を参照してください。
 
@@ -115,7 +115,7 @@ Cloud Manager で可変リポジトリーにデプロイされるコンテンツ
 
 サードパーティパッケージが含まれている場合は、それらが AEM as a Cloud Service と互換性があるかどうかを検証する必要があります。互換性がない場合は、それらのパッケージを組み込むとデプロイメントエラーが発生します。
 
-前述のように、コードベースが既にある場合は、[AEM 6.5 のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)に記載されている 6.5 リポジトリーの変更に伴うリポジトリー再構築演習に準拠してください。
+前述のように、コードベースが既にある場合は、[AEM 6.5 のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja)に記載されている 6.5 リポジトリーの変更に伴うリポジトリー再構築演習に準拠してください。
 
 ## repoinit {#repoinit}
 
