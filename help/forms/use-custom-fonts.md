@@ -3,9 +3,9 @@ title: カスタムフォントを使用
 description: カスタムフォントを使用
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
 source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '456'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
