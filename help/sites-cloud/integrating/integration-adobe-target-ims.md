@@ -3,9 +3,9 @@ title: Adobe Target との統合時に使用する IMS 設定
 description: Adobe Target との統合時に使用する IMS 設定について説明します
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '860'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -161,7 +161,7 @@ AEM に戻り、Target の IMS 統合から必要な値を追加して、IMS 設
 1. ここで、[Adobe 開発者コンソールのプロジェクト設定から得られる詳細](#details-stored-for-the-ims-integration-project)を使用できます。
 
    * **タイトル**：テキスト。
-   * **認証サーバー**:次の場所からコピー&amp;ペースト `aud` 行 **ペイロード** の下のセクション。例： `https://ims-na1.adobelogin.com` 以下の例では
+   * **認証サーバー**：以下の&#x200B;**ペイロード**&#x200B;セクションの `aud` 行からこれをコピーして貼り付けます。（たとえば以下の例では `https://ims-na1.adobelogin.com`）
    * **API キー**：これはプロジェクトの「[概要](#details-stored-for-the-ims-integration-project)」セクションからコピーします
    * **クライアントの秘密鍵**：これはプロジェクトの「[概要](#details-stored-for-the-ims-integration-project)」セクションで生成しコピーします
    * **ペイロード**：これは「[JWT を生成](#details-stored-for-the-ims-integration-project)」セクションからコピーします
