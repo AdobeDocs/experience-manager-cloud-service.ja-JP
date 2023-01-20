@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
 source-git-commit: 72c53bf69c36c265d25d136c0d2887cac2fe98fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1028'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -46,9 +46,9 @@ ht-degree: 89%
 1. 設定ページで「**[!UICONTROL 作成]**」をタップして、AEM Forms 内に [!DNL Adobe Sign] の設定を作成します。
 1. **[!UICONTROL Adobe Sign 設定を作成]**&#x200B;ページの「**[!UICONTROL 一般]**」タブで、設定の&#x200B;**[!UICONTROL 名前]**&#x200B;を指定して「**[!UICONTROL 次へ]**」をタップします。必要に応じて&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定し、設定の&#x200B;**[!UICONTROL サムネ―ル]**&#x200B;を参照して選択することもできます。
 
-1. 現在のブラウザーウィンドウの URL をメモ帳にコピーします。この URL は、後の手順で [!DNL AEM Forms] と [!DNL Adobe Sign] アプリケーションを設定する際に必要です。「**[!UICONTROL 次へ]**」をタップします。
+1. 現在のブラウザーウィンドウの URL をメモ帳にコピーします。この URL は、後の手順で [!DNL Adobe Sign] アプリケーションと [!DNL AEM Forms] の連携を設定する際に必要です。「**[!UICONTROL 次へ]**」をタップします。
 
-1. 内 **[!UICONTROL 設定]** タブ、 **[!UICONTROL OAuth URL]** フィールドにはデフォルトの URL が含まれます。 URL の形式は次の通りです。
+1. 「**[!UICONTROL 設定]**」タブで、「**[!UICONTROL OAuth URL]**」フィールドにはデフォルトの URL が入力されています。URL の形式は次の通りです。
 
    `https://<shard>/public/oAuth/v2`
 
@@ -63,15 +63,15 @@ ht-degree: 89%
 
    >[!NOTE]
    >
-   > キープ **Adobe Sign設定を作成** ページが開きます。 閉じないでください。 次を検索： **クライアント ID** および **クライアント秘密鍵** 次の項目の OAuth 設定を行った後 [!DNL Adobe Sign] 今後の手順で説明するアプリケーション
+   > 「**Adobe Sign 設定を作成**」ページを開いたままにします。 閉じないでください。 **クライアント ID** および&#x200B;**クライアントシークレット**&#x200B;は、以降の手順で説明するように、[!DNL Adobe Sign] アプリケーションの OAuth 設定を行った後に取得できます。
 
 
 1. 以下の手順により、[!DNL Adobe Sign] アプリケーション用に OAuth 設定を構成します。
 
    1. ブラウザーウィンドウを開き、[!DNL Adobe Sign] 開発者アカウントにログインします。
    1. [!DNL AEM Forms] 用に設定されているアプリケーションを選択し、「**[!UICONTROL アプリケーションの OAuth を設定]**」をタップします。
-   1. 内 **[!UICONTROL リダイレクト URL]** ボックスに、前の手順（手順 7）でコピーした URL を追加し、 **[!UICONTROL 保存]**.
-   1. 次のスコープを [!DNL Adobe Sign] アプリケーションとクリック **[!UICONTROL 保存]**.
+   1. 前述の手順（手順 7）でコピーした URL を「**[!UICONTROL リダイレクト URL]**」ボックスに追加して「**[!UICONTROL 保存]**」をクリックします。
+   1. [!DNL Adobe Sign] アプリケーションに対して以下の範囲を有効にして、「**[!UICONTROL 保存]**」をクリックします。
    * [!DNL aggrement_read]
    * [!DNL aggrement_write]
    * [!DNL aggrement_send]
@@ -83,7 +83,7 @@ ht-degree: 89%
 
    ![OAuth 設定](assets/oauthconfig_new.png)
 
-1. **[!UICONTROL Adobe Sign 設定を作成]**&#x200B;ページに戻ります。内 **[!UICONTROL 設定]** タブで、[**[!UICONTROL クライアント ID]** （アプリケーション ID とも呼ばれます）および **[!UICONTROL クライアント秘密鍵]**]. 以下を使用： [Adobe Signアプリケーションのクライアント ID およびクライアント秘密鍵](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) 前の手順で作成しました。
+1. **[!UICONTROL Adobe Sign 設定を作成]**&#x200B;ページに戻ります。「**[!UICONTROL 設定]**」タブで、「**[!UICONTROL クライアント ID]**（アプリケーション ID）と&#x200B;**[!UICONTROL クライアントシークレット]**」の値を指定します。前述の手順で作成した [Adobe Sign アプリケーションのクライアント ID とクライアントシークレット](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret)を使用します。
 
 1. 「**[!UICONTROL 添付ファイルの Adobe Sign を有効にする]**」オプションを選択すると、アダプティブフォームに添付されているファイルが、署名用に送信された対応する [!DNL Adobe Sign] ドキュメントに添付されます。
 
