@@ -1,13 +1,13 @@
 ---
 title: 関連コンテンツ
-description: コンテンツフラグメントに関連付けられたコンテンツ機能で、フラグメントで使用するアセットへの接続が（オプションで）どのように提供されるかを理解し、ページオーサリングとヘッドレスコンテンツ配信の両方に柔軟性を追加します。
+description: コンテンツフラグメントの関連コンテンツ機能が、フラグメントで（オプションで）使用されるアセットの接続を提供し、ページのオーサリングとヘッドレスコンテンツ配信の両方にさらなる柔軟性を追加する方法を理解します。
 feature: Content Fragments
 role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
 source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '244'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ AEM の関連コンテンツ機能には接続が用意されており、フラ�
 
 >[!NOTE]
 >
->追加する方法は様々です。 [ビジュアルアセット（例：画像）](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) をフラグメントやページに追加します。
+>[ビジュアルアセット（画像など）](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)をフラグメントやページに追加するための様々な方法があります。
 
 関連付けを作成するには、最初に[メディアアセットをコレクションに追加](/help/assets/manage-collections.md)する必要があります。それが完了した後で以下を実行できます。
 
