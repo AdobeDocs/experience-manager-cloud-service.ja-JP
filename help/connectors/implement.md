@@ -3,9 +3,9 @@ title: AEM コネクタの実装
 description: AEM コネクタの実装
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '968'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ AEM コネクタの実装
 
 [AEM コネクタ](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html)の作成に役立つリファレンス情報を以下に示します。コネクタの[登録](submit.md)と[管理](maintain.md)に関するガイダンスと共に参照してください。
 
-AEM の開発者用ライセンスは、[Adobe Exchange プログラム](https://partners.adobe.com/jp/exchangeprogram/experiencecloud)を通じて取得できます。
+AEM の開発者用ライセンスは、[Adobe Exchange プログラム](https://partners.adobe.com/exchangeprogram/experiencecloud)を通じて取得できます。
 
 一般的な統合パターン
 ---------------------------
@@ -47,7 +47,7 @@ Adobe Experience Manager as a Cloud Service の[ドキュメント](../overview/
 
 * アドビコミュニティの [AEM フォーラム](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)は、同業者が質問をしたり質問に答えたりする活発なサイトです。
 * アドビのその他の技術リソースは、個々のパートナーレベルで利用できます。詳しくは、[Adobe Exchange プログラム](https://partners.adobe.com/exchangeprogram/experiencecloud)を参照してください。
-* 組織が実装の支援を希望する場合は、アドビの [Professional Services](https://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) チームへの依頼を検討するか、[ソリューションパートナーファインダー](https://solutionpartners.adobe.com/home/partnerFinder.html)でアドビの世界中のパートナーのリストを確認してください。
+* 組織が実装の支援を希望する場合は、アドビの [Professional Services](https://www.adobe.com/jp/marketing-cloud/service-support/professional-consulting-training.html) チームへの依頼を検討するか、[ソリューションパートナーファインダー](https://solutionpartners.adobe.com/home/partnerFinder.html)でアドビの世界中のパートナーのリストを確認してください。
 
 パッケージ構成ルール
 -----------------------
