@@ -3,7 +3,7 @@ title: AEM プロジェクトリポジトリの構造パッケージ
 description: Adobe Experience Manager as a Cloud Service の Maven プロジェクトには、リポジトリ構造サブパッケージ定義が必要です。この定義の目的は、プロジェクトのコードサブパッケージがデプロイされる JCR リポジトリルートを定義することです。
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '526'
 ht-degree: 100%
 
