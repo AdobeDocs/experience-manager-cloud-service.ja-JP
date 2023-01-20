@@ -1,48 +1,48 @@
 ---
 title: コンテンツフラグメントコンソールのキーボードショートカット
-description: AEM全体で様々なキーボードショートカットを利用できます。コンテンツフラグメントの管理には、これらを含みます
+description: AEM 全体を通して、コンテンツフラグメント管理用のものを始めとして、様々なキーボードショートカットを使用できます
 feature: Content Fragments
 role: User
 exl-id: fe6ea615-43aa-41cd-a21c-50d855084154
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '222'
-ht-degree: 27%
+ht-degree: 100%
 
 ---
 
 # コンテンツフラグメントコンソールのキーボードショートカット {#keyboard-shortcuts-content-fragments-console}
 
-コンテンツフラグメントコンソールでは、様々なキーボードショートカットを使用できます。
+様々なキーボードショートカットを、コンテンツフラグメントコンソールで使用することができます。
 
-AEM 全体で様々なキーボードショートカットを利用できます。一部は、 [ページの編集](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)その他は将軍に [コンソールの使用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+AEM 全体で様々なキーボードショートカットを利用できます。キーボードショートカットの中には、[ページの編集](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)時に適用されるものもあれば、一般的な[コンソール使用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)に適用されるものもあります。
 
 >[!NOTE]
 >
 >AEM キーボードショートカットに必要な[修飾キー](#os-specific-modifier-keys)は、オペレーティングシステムによって異なります。
 
-## コンテンツフラグメントコンソール — キーボードショートカット {#content-fragments-console-keyboard-shortcuts}
+## コンテンツフラグメントコンソール - キーボードショートカット {#content-fragments-console-keyboard-shortcuts}
 
 >[!NOTE]
 >
->ショートカットでは、大文字と小文字が区別されません。
+>ショートカットでは、大文字と小文字を区別しません。
 
 | 場所 | ショートカット | 説明 |
 |---|---|---|
-| コンテンツフラグメントが選択されていません | `n` | 作成ダイアログを開く |
-| 1 つ以上のコンテンツフラグメントを選択 | `m` | 移動ダイアログを開く |
-| 1 つ以上のコンテンツフラグメントを選択 | `Backspace` | 削除ダイアログを開く |
-| 1 つ以上のコンテンツフラグメントを選択 | `r` | 名前を変更ダイアログを開く |
-| 1 つ以上のコンテンツフラグメントを選択 | `Ctrl-c` | コピーダイアログを開く |
-| 1 つ以上のコンテンツフラグメントを選択 | `p` | 今すぐ公開ダイアログを開く |
-| 1 つ以上のコンテンツフラグメントを選択 | `u` | 今すぐ非公開ダイアログを開く |
-| 任意の開いたダイアログ | `esc` | ダイアログが閉じます |
+| コンテンツフラグメントが選択されていない | `n` | 作成ダイアログを開きます |
+| 1 つ以上のコンテンツフラグメントを選択 | `m` | 移動ダイアログを開きます |
+| 1 つ以上のコンテンツフラグメントを選択 | `Backspace` | 削除ダイアログを開きます |
+| 1 つ以上のコンテンツフラグメントを選択 | `r` | 名前を変更ダイアログを開きます |
+| 1 つ以上のコンテンツフラグメントを選択 | `Ctrl-c` | コピーダイアログを開きます |
+| 1 つ以上のコンテンツフラグメントを選択 | `p` | 今すぐ公開ダイアログを開きます |
+| 1 つ以上のコンテンツフラグメントを選択 | `u` | 今すぐ非公開ダイアログを開きます |
+| 開いている任意のダイアログ | `esc` | ダイアログが閉じます |
 
-デスクトップユーザー向けの様々なキーボードショートカットも利用できます。 一部は、 [ページの編集](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)その他は将軍に [コンソールの使用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+デスクトップユーザー向けの様々なキーボードショートカットも利用できます。 キーボードショートカットの中には、[ページの編集](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)時に適用されるものもあれば、一般的な[コンソール使用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)に適用されるものもあります。
 
 >[!NOTE]
 >
->[コンソールのショートカットがアクティベート解除](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)されているかどうかにかかわらず、エディターのキーボードショートカットは、常にアクティブです。
+>[コンソールのショートカットが非アクティブになっている](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)かどうかにかかわらず、エディターのキーボードショートカットは常にアクティブです。
 
 ## OS 特有の修飾子キー {#os-specific-modifier-keys}
 
