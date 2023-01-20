@@ -3,9 +3,9 @@ title: ページの公開
 description: AEM を使用してページを公開および非公開にする方法
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1812'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
    * 公開／非公開と同義です。
    * これらの用語は、以前のバージョンの AEM で使用されていました。
 * **レプリケート／レプリケーション**
-   * ページを公開する際に環境間で行われるデータ（ページコンテンツ、ファイル、コード、ユーザーコメントなど）の移動を表す技術用語です。
+   * ページを公開する際に行われる、環境間でのデータ（ページコンテンツ、ファイル、コード、ユーザーコメントなど）の移動を表す技術用語です。
    * これらの用語は主に開発者が使用します。
 
 ## ページの公開 {#publishing-pages-1}
@@ -215,9 +215,9 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 ## ページを非公開にする {#unpublishing-pages}
 
-ページを非公開にすると、そのページはパブリッシュから削除されます。または [プレビュー](/help/sites-cloud/authoring/fundamentals/previewing-content.md)、読者が使用できなくなるように環境を設定します。
+ページを非公開にすると、そのページが公開または[プレビュー](/help/sites-cloud/authoring/fundamentals/previewing-content.md)環境から削除され、読者からアクセスできなくなります。
 
-内 [出版に似た方法](#publishing-pages)を使用すると、1 つ以上のページを目的の宛先から非公開にすることができます。
+[公開と同様の方法](#publishing-pages)で、目的の宛先から 1 つ以上のページを非公開にすることができます。
 
 * [ページエディターから](#unpublishing-from-the-editor)
 * [サイトコンソールから](#unpublishing-from-the-console)
@@ -246,7 +246,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
    >公開／非公開を後からキャンセルする場合は、[ワークフローコンソール](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)に移動して、対応するワークフローを終了します。
 
    >[!NOTE]
-   >次の場合、 [プレビュー](/help/sites-cloud/authoring/fundamentals/previewing-content.md) 環境を選択し、 **宛先** 公開を管理中。
+   >[プレビュー](/help/sites-cloud/authoring/fundamentals/previewing-content.md)環境がある場合は、公開を管理中に&#x200B;**宛先**&#x200B;を選択できます。
 
 1. 非公開の操作を完了するには、[ページを公開する](#manage-publication)場合と同様にウィザードを続行します。
 
