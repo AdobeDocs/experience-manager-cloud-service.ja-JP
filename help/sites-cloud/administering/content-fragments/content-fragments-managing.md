@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1915'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -290,11 +290,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## フラグメントの親参照の検索 {#parent-references-fragment}
 
-親参照の詳細は、 **参照** 列 [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+親参照の詳細には、[コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)の&#x200B;**参照**&#x200B;列からアクセスできます。
 
 ## フラグメントの言語コピーの検索 {#language-copies-fragment}
 
-言語コピーの詳細は、 **言語** 列 [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+言語コピーの詳細には、[コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)の&#x200B;**言語**&#x200B;列からアクセスできます。
 
 ## コンテンツフラグメントのタイムライン {#timeline-for-content-fragments}
 
