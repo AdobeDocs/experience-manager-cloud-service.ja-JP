@@ -3,9 +3,9 @@ title: SPA エディターの概要
 description: この記事では、SPA エディターの包括的な概要と動作の仕組み（AEM 内での SPA エディターの詳細なインタラクションワークフローなど）を説明します。
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1636'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -171,7 +171,7 @@ AEM SPA Editor SDK で動作する他の SPA フレームワークを追加で�
 SPA で作成したテキストコンポーネントのインプレースエディタを使用する場合は、追加の設定が必要です。
 
 1. テキスト HTML を含んだコンテナラッパー要素に（任意の）属性を設定します。WKND SPA プロジェクトの場合は、`<div>` 要素がこれに該当し、使用されているセレクターは `data-rte-editelement` です。
-1. 設定 `editElementQuery` 対応するAEMテキストコンポーネントの `cq:InplaceEditingConfig` 例えば、このセレクターを指す `data-rte-editelement`. これにより、HTML テキストを折り返す HTML 要素をエディターが把握できます。
+1. 対応する AEM テキストコンポーネントの `cq:InplaceEditingConfig` で、そのセレクター（例：`data-rte-editelement` など）を指す設定 `editElementQuery` を指定します。これにより、HTML テキストを折り返す HTML 要素をエディターが把握できます。
 
 `editElementQuery` プロパティとリッチテキストエディターの設定について詳しくは、[リッチテキストエディターの設定](/help/implementing/developing/extending/rich-text-editor.md)を参照してください。
 
