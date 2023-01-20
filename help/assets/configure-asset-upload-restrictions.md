@@ -1,21 +1,21 @@
 ---
 title: アセットのアップロード制限を設定する
-description: Adobe Experience Manager Assets の設定で、ユーザーがアップロードできるアセットのタイプを MIME タイプに基づいて制限します。 これにより、望ましくない形式や悪意のあるファイルが誤ってアップロードされるのを防ぐことができます。
+description: Adobe Experience Manager Assets を設定して、ユーザーがアップロードできるアセットのタイプを MIME タイプに基づいて制限します。 これにより、望ましくない形式や悪意のあるファイルが誤ってアップロードされるのを防ぐことができます。
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
 source-git-commit: d2d0d8b0d484d2e5cd2bf44449e7d71d3da98eea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '333'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
 # アセットのアップロード制限を設定する {#configure-asset-upload-restrictions}
 
-Adobe Experience Manager Assets を設定して、ユーザーがアップロードできるアセットのタイプを MIME タイプに基づいて制限できます。
+Adobe Experience Manager Assets を設定して、ユーザーがアップロードできるアセットのタイプを MIME タイプに基づいて制限することができます。
 
 >[!IMPORTANT]
 >
->デフォルトでは、Experience Manager Assetsでは、すべての MIME タイプのアセットのアップロードが許可されます。 ただし、特定の MIME タイプのファイルのみをアップロードするようにユーザーを制限する設定を指定できます。
+>デフォルトでは、Experience Manager Assets はユーザーに対して、すべての MIME タイプのアセットのアップロードを許可します。ただし設定を構成して、ユーザーが特定の MIME タイプのファイルのみをアップロードできるように制限することができます。
 
 ## 前提条件 {#prerequisites-asset-upload-restrictions}
 
@@ -23,36 +23,36 @@ Adobe Experience Manager Assets を設定して、ユーザーがアップロー
 
 ## アセットのアップロードに制限を適用する {#apply-restrictions-asset-uploadsssssss}
 
-を設定するには、以下を実行します。 [!DNL Experience Manager] 特定の MIME タイプのファイルをアップロードするようにユーザーを制限するには：
+ユーザーによる特定の MIME タイプのファイルのアップロードを制限するように [!DNL Experience Manager] を設定するには、以下のようにします：
 
 1. **[!UICONTROL ツール／アセット／アセット設定]**&#x200B;に移動します。
 
-1. クリック **[!UICONTROL 制限をアップロード]**.
+1. **[!UICONTROL 制限をアップロード]**&#x200B;をクリックます。
 
-1. クリック **[!UICONTROL 追加]** 許可する MIME タイプを定義します。
+1. 「**[!UICONTROL 追加]**」をクリックして、許可される MIME タイプを定義します。
 
-1. テキストボックスに MIME タイプを指定します。 次をクリックできます。 **[!UICONTROL 追加]** 許可する MIME タイプをさらに指定する場合に、を再度追加します。 また、 ![削除アイコン](assets/delete-icon.svg) をクリックして、MIME タイプをリストから削除します。
+1. テキストボックスに MIME タイプを指定します。 「**[!UICONTROL 追加]**」をもう一度クリックして、その他の許可される MIME タイプをさらに指定することができます。また、「![アイコンを削除](assets/delete-icon.svg)」をクリックして、MIME タイプをリストから削除することもできます。
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
-**例 1:すべての画像とPDFファイルのExperience Manager Assetsへのアップロードを許可**
+**例 1：Experience Manager Assets へのすべての画像と PDF ファイルのアップロードを許可する**
 
-すべての形式およびPDFファイルの画像をExperience Manager Assetsにアップロードできるようにするには、次の設定をおこないます。
+すべての形式の画像と PDF ファイルを Experience Manager Assets にアップロードできるようにするには、次の設定を行います：
 
-![アセットのアップロード制限](assets/asset-upload-restrictions.png)
+![アセットアップロードの制限](assets/asset-upload-restrictions.png)
 
-`image/*` を MIME タイプとして使用すると、すべての形式の画像をアップロードできます。 `application/pdf` を MIME タイプとして使用すると、PDFファイルをExperience Manager Assetsにアップロードできます。
+`image/*` を MIME タイプとして使用すると、すべての形式の画像をアップロードすることができます。 `application/pdf` を MIME タイプとして使用すると、PDF ファイルを Experience Manager Assets にアップロードすることができます。
 
-許可されている MIME タイプのリストに含まれていないファイルをアップロードしようとすると、Experience Manager Assetsに次のエラーメッセージが表示されます。
+許可されている MIME タイプのリストに含まれていないファイルをアップロードしようとすると、Experience Manager Assets には次のエラーメッセージが表示されます。
 
 ![制限付きファイル](assets/asset-upload-restricted-files.png)
 
 `Screen Recording 2022-08-31 at 3.36.09 PM.mov` は、許可されている MIME タイプに含まれていないファイル名を参照します。
 
-**例 2:特定の画像形式のExperience Manager Assetsへのアップロードを許可**
+**例 2：特定の画像形式の Experience Manager Assets へのアップロードを許可**
 
-許可する MIME タイプに特定の画像形式を追加し、その他すべてのアセット形式のアップロードを制限するには、次の設定を実行します。
+許可する MIME タイプに特定の画像形式を追加し、その他すべてのアセット形式のアップロードを制限するには、次の設定を実行します：
 
 ![アセットの制限](assets/asset-restrictions.png)
 
-画像に表示される設定に基づいて、.JPG、.PNG および。GIF形式の画像をExperience Manager Assetsにアップロードできます。
+画像に表示されている設定に基づいて、.JPG、.PNG、および .GIF 形式の画像を Experience Manager Assets にアップロードすることができます。
