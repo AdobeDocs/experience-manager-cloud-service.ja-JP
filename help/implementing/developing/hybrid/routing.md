@@ -3,9 +3,9 @@ title: SPA モデルルーティング
 description: AEM の単一ページアプリケーションの場合、アプリはルーティングを担当します。このドキュメントでは、ルーティングメカニズム、契約、使用可能なオプションについて説明します。
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '442'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ AEM の単一ページアプリケーションの場合、アプリはルーテ�
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-SPAのすべてのルートは、AEM内のアクセス可能なリソースに対応している必要があります ( 例： `/content/mysite/mypage"`) `PageModelManager` ルートが選択されると、対応するページモデルの読み込みが自動的に試行されます。 ただし、SPA では、必要に応じて、`PageModelManager` で無視する必要があるルートの「ブロックリスト」を定義することもできます。
+なお、ルートが選択されると、対応するページモデルの読み込みが `PageModelManager` で自動的に試行されるので、SPA のすべてのルートを AEM 内のアクセス可能なリソース（例：&quot;`/content/mysite/mypage"` など）に対応させる必要があります。ただし、SPA では、必要に応じて、`PageModelManager` で無視する必要があるルートの「ブロックリスト」を定義することもできます。
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>
