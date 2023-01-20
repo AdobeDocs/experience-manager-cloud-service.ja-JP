@@ -3,15 +3,15 @@ title: コンソールのキーボードショートカット
 description: これらのキーボードショートカットを使用することで、オーサリング時の時間を節約できます
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '373'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # コンソールのキーボードショートカット {#keyboard-shortcuts-for-consoles}
 
-サイト、アセット、ユーザー、グループ、プロジェクト、エクスペリエンスフラグメントの各コンソールで、次のショートカットを使用できます。また、 [コンテンツフラグメントコンソール](#keyboard-shortcuts-for-the-content-fragments-console).
+サイト、アセット、ユーザー、グループ、プロジェクト、エクスペリエンスフラグメントの各コンソールで、次のショートカットを使用できます。また、[コンテンツフラグメントコンソール](#keyboard-shortcuts-for-the-content-fragments-console)の特定のショートカットもあります。
 
 | 場所 | ショートカット | 説明 |
 |---|---|---|
@@ -84,4 +84,4 @@ AEM 全体で様々なキーボードショートカットを利用できます�
 
 ## コンテンツフラグメントコンソールのキーボードショートカット {#keyboard-shortcuts-for-the-content-fragments-console}
 
-一部のキーボードショートカットは、 [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
+一部のキーボードショートカットは、[コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)に適用できます
