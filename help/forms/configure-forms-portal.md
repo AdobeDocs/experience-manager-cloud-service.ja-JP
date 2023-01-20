@@ -3,9 +3,9 @@ title: Experience Manager Sites ページでフォームポータルを作成す
 description: フォームポータルを作成し、標準搭載のコアコンポーネントを AEM Sites ページで使用する方法を説明します。
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 source-git-commit: 05bdc24974d2b82c1350bf6f75873cd7027f7d4a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1764'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ AEM プロジェクトアーキタイプから [標準搭載のフォームポ�
 
    また、上記のコマンドで `appTitle`、`appId`、`groupId` を変更し、環境に反映します。
 
-   プロジェクトの準備が整ったら、 `<core.forms.components.version>x.y.z</core.forms.components.version>` 最上位の `pom.xml` 最新バージョンの [core-forms-components](https://github.com/adobe/aem-core-forms-components) の `AEM Archetype` プロジェクト。
+   プロジェクトが準備完了したら、アーキタイププロジェクトの`<core.forms.components.version>x.y.z</core.forms.components.version>`最高レベルのプロパティ`pom.xml`をアップデートし、`AEM Archetype`プロジェクトの最新バージョンの [core-forms-components](https://github.com/adobe/aem-core-forms-components) を反映させます。
 
 1. **プロジェクトをローカル開発環境にデプロイ：** 次のコマンドを使用して、ローカル開発環境にデプロイできます
 
