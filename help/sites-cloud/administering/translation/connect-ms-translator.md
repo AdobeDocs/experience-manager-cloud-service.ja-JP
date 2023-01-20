@@ -5,15 +5,15 @@ feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '517'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Microsoft Translator への接続 {#connecting-to-microsoft-translator}
 
-AEM ページのコンテンツまたはアセットの翻訳に Microsoft Translation アカウントを使用するには、[Microsoft Translator](https://www.microsoft.com/en-us/translator/business/) クラウドサービスの設定を作成します。
+AEM ページのコンテンツまたはアセットの翻訳に Microsoft Translation アカウントを使用するには、[Microsoft Translator](https://www.microsoft.com/ja-jp/translator/business/) クラウドサービスの設定を作成します。
 
 >[!TIP]
 >
