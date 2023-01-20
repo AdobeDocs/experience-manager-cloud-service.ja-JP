@@ -3,9 +3,9 @@ title: AEM アプリケーションへのタグ付けの構築
 description: カスタム AEM アプリケーション内のタグまたは拡張タグをプログラムで操作します
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '762'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-JCR ベースの実装の場合、 `Tags` JCR に `Nodes`を使用すると、Sling の `adaptTo` メカニズムを使用します。 `/content/cq:tags/default/my/tag`):
+`Tags` を JCR `Nodes` にマップする JCR ベースの実装の場合、リソースがあれば（例：`/content/cq:tags/default/my/tag`）、Sling の `adaptTo` メカニズムを直接使用できます。
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
@@ -121,7 +121,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## タグのガベージコレクター {#the-tag-garbage-collector}
 
-タグのガベージコレクターは、非表示および未使用のタグをクリーンアップするバックグラウンドサービスです。非表示および未使用のタグは、`/content/cq:tags` の下のタグで、`cq:movedTo` プロパティを持ち、コンテンツノードでは使用されません。これらのタグのカウントはゼロです。この遅延削除プロセスを使用すると、移動や結合操作の一環としてコンテンツノード（`cq:tags` プロパティ）をアップデートする必要がありません。の参照 `cq:tags` プロパティは、 `cq:tags` 例えば、ページのプロパティダイアログでプロパティが更新されます。
+タグのガベージコレクターは、非表示および未使用のタグをクリーンアップするバックグラウンドサービスです。非表示および未使用のタグは、`/content/cq:tags` の下のタグで、`cq:movedTo` プロパティを持ち、コンテンツノードでは使用されません。これらのタグのカウントはゼロです。この遅延削除プロセスを使用すると、移動や結合操作の一環としてコンテンツノード（`cq:tags` プロパティ）をアップデートする必要がありません。`cq:tags` プロパティの参照は、`cq:tags` プロパティがアップデートされると自動的にアップデートされます（例：ページプロパティダイアログを介して）。
 
 タグのガベージコレクターは、デフォルトで 1 日に 1 回実行されます。これは、次の場所で設定できます。
 
@@ -136,7 +136,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## 他の言語のタグ {#tags-in-different-languages}
 
-タグ `title` は異なる言語で定義できます。言語に依存するプロパティがタグノードに追加されます。このプロパティは形式を持ちます `jcr:title.<locale>`例： `jcr:title.fr` フランス語訳。 `<locale>` は、小文字の ISO ロケール文字列で、ハイフン／ダッシュ（`-`）ではなくアンダースコア（`_`）を使用します（例：`de_ch`）。
+タグ `title` は異なる言語で定義できます。言語に依存するプロパティがタグノードに追加されます。このプロパティは `jcr:title.<locale>` の形式を持ちます（例：フランス語訳は `jcr:title.fr`）`<locale>` は、小文字の ISO ロケール文字列で、ハイフン／ダッシュ（`-`）ではなくアンダースコア（`_`）を使用します（例：`de_ch`）。
 
 例：**Animals** タグが **Products** ページに追加されると、値 `stockphotography:animals` は `/content/wknd/en/products/jcr:content` ノードの `cq:tags` プロパティに追加されます。翻訳は、タグノードから参照されます。
 
@@ -159,7 +159,7 @@ AEM では、言語はページ言語またはユーザー言語のどちらか�
 
 ### タグを編集ダイアログへの新しい言語の追加 {#adding-a-new-language-to-the-edit-tag-dialog}
 
-以下の手順では、新しい言語（フィンランド語など）を **タグ編集** ダイアログ：
+次の手順では、新しい言語（例：フィンランド語）を&#x200B;**タグを編集**&#x200B;ダイアログに追加する方法を説明します。
 
 1. **CRXDE** で、ノード `/content/cq:tags` の複数値プロパティ `languages` を編集します。
 1. フィンランド語のロケールを表す `fi_fi` を追加して、変更を保存します。
