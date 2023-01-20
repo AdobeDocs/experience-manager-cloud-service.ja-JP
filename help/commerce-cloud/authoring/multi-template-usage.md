@@ -11,9 +11,9 @@ kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '187'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
-> この機能は、CIF に基づく店舗フロント（例：Venia）に対してのみ機能します。
+> この機能は、CIF（Venia など）に基づくストアフロントに対してのみ機能します。
 
 [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)を使用すると、コンテンツ作成者は、追加のカテゴリページや製品ページを作成できます。これらのページは、追加のマーケティングコンテンツで強化し、特定のカテゴリや製品をターゲットするように設定できます。次のビデオでは、この機能の設定について説明します。
 
