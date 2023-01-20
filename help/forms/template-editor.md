@@ -3,9 +3,9 @@ title: アダプティブフォームテンプレートの作成方法
 description: テンプレートエディターを使用して、基本構造と初期コンテンツを定義するアダプティブフォームテンプレートを作成します。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
 source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1806'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -152,8 +152,8 @@ Experience Manager には、テンプレートを整理するためのグロー�
 
 >[!NOTE]
 >
-> * 次の項目を [!UICONTROL フォームデータモデルスキーマ] をテンプレートエディターのアダプティブフォームテンプレートに追加します。 詳しくは、 [アダプティブフォームの作成](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) を参照してください。
-> * また、 [!UICONTROL レコードのドキュメント] テンプレートを、アダプティブフォームエディターまたはアダプティブフォームテンプレートエディターから直接作成します。 詳しくは、 [アダプティブFormsのレコードのドキュメントを生成](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+> * テンプレートエディターで、[!UICONTROL フォームデータモデルスキーマ]をアダプティブフォームテンプレートに関連付けることができます。詳しくは、[アダプティブフォームの作成](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)を参照してください。
+> * また、[!UICONTROL レコードのドキュメント]テンプレートは、アダプティブフォームエディターまたはアダプティブフォームテンプレートエディターから直接設定することもできます。詳しくは、[アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)を参照してください。
 
 
 
