@@ -3,15 +3,15 @@ title: URL の外部化
 description: Externalizer は、プログラムによってリソースパスを外部 URL および絶対 URL に変換できる OSGi サービスです。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '661'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
 # URL の外部化 {#externalizing-urls}
 
-AEMで、 **Externalizer** は、リソースパス ( 例えば、 `/path/to/my/page`) を外部 URL や絶対 URL( 例えば、 `https://www.mycompany.com/path/to/my/page`) を追加する必要があります。
+AEM の **Externalizer** は、あらかじめ設定された DNS をプレフィックスとして、リソースパス（例えば`/path/to/my/page`）をプログラム的に外部の絶対URL（例えば`https://www.mycompany.com/path/to/my/page`）に変換できる OSGi サービスです。
 
 AEM as a Cloud Service インスタンスには自分の外部向け URL がわからず、また、場合によってはリンクをリクエストスコープの範囲外で作成する必要があるので、このサービスは、そのような外部 URL を設定して作成するための一元的な場所を提供します。
 
@@ -19,9 +19,9 @@ AEM as a Cloud Service インスタンスには自分の外部向け URL がわ�
 
 ## Externalizer のデフォルトの動作とオーバーライド方法 {#default-behavior}
 
-Externalizer サービスは、初期設定で、一部のドメイン識別子を、環境用に生成されたAEMサービス URL に一致する絶対 URL プレフィックス（例： ）にマッピングします `author https://author-p12345-e6789.adobeaemcloud.com` および `publish https://publish-p12345-e6789.adobeaemcloud.com`. これらの各デフォルトドメインのベース URL は、Cloud Manager で定義された環境変数から読み取られます。
+Externalizer サービスはすぐに使用でき、いくつかのドメイン識別子を、環境用に生成された AEM サービスの URL に一致する絶対 URL プレフィックス（`author https://author-p12345-e6789.adobeaemcloud.com` や `publish https://publish-p12345-e6789.adobeaemcloud.com` など）にマップします。これらの各デフォルトドメインのベース URL は、Cloud Manager で定義された環境変数から読み取られます。
 
-参照用に、のデフォルトの OSGi 設定 `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` 効果的には次のようになります。
+参考までに、`com.day.cq.commons.impl.ExternalizerImpl.cfg.json` のデフォルトの OSGi 設定は実質的に次のとおりです：
 
 ```json
 {
@@ -36,11 +36,11 @@ Externalizer サービスは、初期設定で、一部のドメイン識別子�
 
 >[!CAUTION]
 >
->デフォルト `local`, `author`, `preview`、および `publish` OSGi 設定の Externalizer ドメインマッピングは、元の `$[env:...]` 上記の値。
+>OSGi 設定のデフォルトの `local`、`author`、`preview` および `publish` OSGi 設定の Externalizer ドメインマッピングは、上記にリストされた元の `$[env:...]` 値で保持する必要があります。
 >
->カスタムのデプロイ `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` ファイルをAEMにas a Cloud Serviceし、これらの標準のドメインマッピングを省略すると、予期しないアプリケーション動作が発生する可能性があります。
+>カスタム `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` ファイルを AEM as a Cloud Service にデプロイして、これらの標準提供のドメインマッピングを省略した場合、アプリケーションの予期しない動作が発生する可能性があります。
 
-を上書きするには、 `preview` および `publish` の値を使用する場合は、Cloud Manager の環境変数を使用します。詳しくは、この記事を参照してください。 [AEM as a Cloud Service用の OSGi の設定](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) および事前定義済みの `AEM_CDN_DOMAIN_PUBLISH` および `AEM_CDN_DOMAIN_PREVIEW` 変数。
+`preview` および `publish` の値をオーバーライドするには、記事 [AEM as a Cloud Service 用の OSGi の設定](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties)の説明に従って Cloud Manager 環境変数を使用し、事前定義された `AEM_CDN_DOMAIN_PUBLISH` および `AEM_CDN_DOMAIN_PREVIEW` 変数を設定します。
 
 ## Externalizer サービスの設定 {#configuring-the-externalizer-service}
 
