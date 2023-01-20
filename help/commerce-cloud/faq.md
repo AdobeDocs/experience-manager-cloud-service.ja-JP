@@ -3,9 +3,9 @@ title: Commerce Integration Framework を使用した AEM と Commerce の統合
 description: Commerce Integration Framework を使用した AEM と Commerce の統合に関する FAQ
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '969'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 76%
 
 ## 2. 製品アセット（画像）は、Adobe Commerce 管理を介して AEM から保存および参照できますか。Dynamic Media のアセットはどのように使用できますか。
 
-公式のAEM AssetsとAdobe Commerceの統合は利用できません。 で使用できるパートナーコネクタがあります [marketplace](https://marketplace.magento.com) <!-- THIS IS THE OLD URL THAT WAS USED. IT WAS 404 (https://marketplace.magento.com/bounteous-dam.html) -->
+AEM Assets と Adobe Commerce の公式の統合はありません。[Marketplace](https://marketplace.magento.com) で利用できるパートナーコネクタがあります<!-- THIS IS THE OLD URL THAT WAS USED. IT WAS 404 (https://marketplace.magento.com/bounteous-dam.html) -->
 
-または、回避策として、製品アセット（画像）をAEM Assetsに格納できますが、アセット URL をAdobe Commerceに手動で格納する必要があります。 Dynamic MediaはAEM Assetsの一部になり、同じように機能します。
+回避策として、製品アセット（画像）を AEM Assets に格納できますが、アセットの URL を手動で Adobe Commerce に格納する必要があります。Dynamic Media は AEM Assets の一部となったので、同じように機能します。
 
 ## 3. コマースソリューションをどこにデプロイするかは重要ですか（オンプレミスまたはクラウド内）。
 
-いいえ、コマースソリューションをどこにデプロイするかは重要ではありません。CIF とAEMストアフロントは、デプロイメントモデルに関係なく機能します。 ただし、推奨される E2E 参照アーキテクチャを使用してソリューションをデプロイする場合、E2E テストは、一般的なエンタープライズ顧客プロファイルを表すパフォーマンス KPI に対して実行できます。この方法では、ベンチマークとして使用できる追加情報を提供します。
+いいえ、コマースソリューションをどこにデプロイするかは重要ではありません。CIF および AEM ストアフロントは、デプロイメントモデルに関係なく機能します。ただし、推奨される E2E 参照アーキテクチャを使用してソリューションをデプロイする場合、E2E テストは、一般的なエンタープライズ顧客プロファイルを表すパフォーマンス KPI に対して実行できます。これにより、ベンチマークとして使用できる追加情報が得られます。
 
 ## 4. AEM でカタログページや製品ページを作成する方法を教えてください。AEM でどのように持続されますか。
 
@@ -35,7 +35,7 @@ AEM Cloud Service で使用する CIF アドオンでは、コマースソリュ
 
 ## 6. CIF を含んだ AEM でサポートされているカタログサイズは何ですか。
 
-これは、追加の検討が必要な側面に依存します。 カタログデータとページのキャッシュ率ピーク時に予想される同時リクエストの数コマースソリューションの API はどの程度の拡張性がありますか？
+これは、考慮すべき以下のいくつかの追加の側面によって異なります。カタログデータとページのキャッシュ率ピーク時に予想される同時リクエストの数コマースソリューションの API はどの程度の拡張性がありますか？
 
 ## 7. PIM はこのフレームワークでどのように機能しますか。
 
@@ -43,23 +43,23 @@ PIM データは、GraphQL 要求を介して AEM およびクライアントに
 
 ## 8. Dispatcher を使用して、価格や他のデータもキャッシュしますか。キャッシュ無効化の課題が頻繁に発生しませんか。
 
-Dispatcher には、価格や在庫などの動的データはキャッシュされません。動的データは、GraphQL API を介し、Web コンポーネントを使用してクライアントサイドで直接フェッチされます。静的データ（製品やカテゴリデータなど）のみが Dispatcher にキャッシュされます。製品データを変更する場合、キャッシュを無効にする必要があります。
+Dispatcher には、価格や在庫などの動的データはキャッシュされません。動的データは、GraphQL API を介し、Web コンポーネントを使用してクライアントサイドで直接フェッチされます。静的データ（製品やカテゴリデータなど）のみが Dispatcher にキャッシュされます。製品データを変更する場合、キャッシュの無効化が必要です。
 
 ## 9. AEM Dispatcher のキャッシュ無効化は、AEM とコマースでどのように機能しますか。
 
-Dispatcher にキャッシュされたページに対しては、TTL ベースのキャッシュ無効化を設定することをお勧めします。価格や在庫などの動的な情報については、クライアントサイドで日付を処理することをお勧めします。TTL ベースのキャッシュの無効化について詳しくは、 [Dispatcher キャッシュの最適化](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=ja) および [AEM Performance optimization](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
+Dispatcher にキャッシュされたページに対しては、TTL ベースのキャッシュ無効化を設定することをお勧めします。価格や在庫などの動的な情報については、クライアントサイドで日付を処理することをお勧めします。TTL ベースのキャッシュの無効化について詳しくは、[Dispatcher キャッシュの最適化](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=ja)および [AEM パフォーマンスの最適化](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html?lang=ja)を参照してください。
 
 ## 10. コマースでの、AEM コンテンツをまたぐ統合検索に関して推奨事項はありますか。
 
-製品検索の参照の実装が提供されていますが、コンテンツに関する統合検索はありません。この機能は、お客様固有で、プロジェクト固有のレベルでより適切に解決されます。
+製品検索の参照の実装が提供されていますが、コンテンツに関する統合検索はありません。この機能は顧客に固有のもので、プロジェクト固有のレベルでより適切に解決されます。
 
 ## 11.検索は、CIF を使用した AEM とコマースの統合でどのように機能しますか。
 
-CIF には、検索バーと検索結果のコンポーネントが用意されています。検索バーコンポーネントは、検索語を含む GraphQL 要求をコマースソリューションに送信し、次に製品名、価格、SLUG などを含む製品リストを返します。 その後、検索結果コンポーネントは、AEM で作成された検索結果ページのギャラリー表示に検索結果を表示します。検索では、基本的なフルテキスト検索がサポートされています。PDP への参照を作成するには、SLUG/URL キーを使用します。
+CIF には、検索バーと検索結果のコンポーネントが用意されています。検索バーコンポーネントは、検索語句を含んだ GraphQL リクエストをコマースソリューションに送信します。コマースソリューションは、製品名、価格、スラッグなどを含む製品リストを返します。その後、検索結果コンポーネントは、AEM で作成された検索結果ページのギャラリー表示に検索結果を表示します。検索では、基本的なフルテキスト検索がサポートされています。PDP への参照を作成するには、SLUG/URL キーを使用します。
 
 ## 12. MSM や翻訳で製品データをどのように使用できますか。
 
-製品データは、PIM またはAdobe Commerceで既に翻訳されています。 AEM - Adobe Commerce統合は、複数のAdobe Commerceストアおよびストア表示への接続をサポートします。 MSM の設定では、通常、1 つのAEMサイトが 1 つのAdobe Commerceストアビューにリンクされます。
+製品データは PIM または Adobe Commerce で既に翻訳されています。AEM と Adobe Commerce の統合では、複数の Adobe Commerce ストアおよびストア表示への接続をサポートしています。MSM の設定では通常、1 つの AEM サイトが 1 つの Adobe Commerce ストア表示にリンクされています。
 
 ## 13. 商業文で製品データを充実させる方法はありますか。それはどこでできますか。AEM とコマースソリューションのどちらですか。
 
@@ -67,7 +67,7 @@ AEM でマーケティング関連のデータとコンテンツを管理する�
 
 ## 14. プレゼンテーションレイヤー全体に AEM を使用する場合、PCI への準拠をどのように確保できますか。
 
-抽象化された支払い方法を使用することをお勧めします。これにより、ブラウザークライアントは支払いゲートウェイプロバイダーと直接通信し、アドビもコマースソリューションもカード所有者データを保持したり受け渡したりしないようになります。このアプローチには レベル 3 の PCI コンプライアンスのみ必要です。ただし、従業員がシステムやデータとやり取りする方法など、完全に PCI に準拠するために考慮すべき点が他にもあります。 Adobe Commerce PCI への準拠について詳しくは、[PCI コンプライアンス要件](https://business.adobe.com/jp/products/magento/pci-compliance.html)を参照してください。
+抽象化された支払い方法を使用することをお勧めします。これにより、ブラウザークライアントは支払いゲートウェイプロバイダーと直接通信し、アドビもコマースソリューションもカード所有者データを保持したり受け渡したりしないようになります。このアプローチには レベル 3 の PCI コンプライアンスのみ必要です。しかし、従業員がシステムやデータとやり取りする方法など、完全に PCI に準拠するには、考慮されるべき点が他にもあります。Adobe Commerce PCI への準拠について詳しくは、[PCI コンプライアンス要件](https://business.adobe.com/jp/products/magento/pci-compliance.html)を参照してください。
 
 ## 15. AEM バージョンと Adobe Commerce クラウドバージョンを使用する場合、この共同ソリューションは PCI に準拠していますか。
 
