@@ -3,9 +3,9 @@ title: コード品質テスト
 description: パイプラインのコード品質テストの仕組みと、デプロイメントの品質を向上させる方法について説明します。
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1176'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->参照： [SonarQube の指標の定義](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) を参照してください。
+>詳しくは、[SonarQube の指標の定義](https://docs.sonarqube.org/latest/user-guide/metric-definitions/)を参照してください。
 
 >[!NOTE]
 >
