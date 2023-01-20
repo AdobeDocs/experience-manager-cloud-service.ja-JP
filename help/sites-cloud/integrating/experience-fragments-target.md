@@ -3,9 +3,9 @@ title: Adobe Target へのエクスペリエンスフラグメントの書き出
 description: Adobe Target へのエクスペリエンスフラグメントの書き出し
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 source-git-commit: d3b2b779b2b435309255e7a4f7957a94be520b34
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2249'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -182,7 +182,7 @@ Adobe Target からセグメントを同期するように、クラウド設定�
 
    * **API タイプ**：デフォルトは REST です（XML は非推奨／廃止予定です）
 
-   * **A4T Analytics クラウド設定**：ターゲットアクティビティの目標と指標に使用する Analytics クラウド設定を選択します。これは、コンテンツをターゲット化するときに、Adobe Analytics をレポートソースとして使用している場合に必要です。
+   * **A4T Analytics Cloud 設定**：ターゲットアクティビティの目標と指標に使用する Analytics Cloud 設定を選択します。これは、コンテンツをターゲティングするときに、Adobe Analytics をレポートソースとして使用している場合に必要です。
 
       <!-- Is this needed?
      If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
