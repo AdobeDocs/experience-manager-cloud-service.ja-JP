@@ -1,17 +1,17 @@
 ---
 title: AEM as a Cloud Service チームおよび製品プロファイル
-description: AEMのas a Cloud Serviceチームおよび製品プロファイルが、ライセンスを受けたAdobeソリューションに対してアクセスを許可および制限する方法について説明します。
+description: AEM as a Cloud Service チームおよび製品プロファイルでライセンス取得済みアドビソリューションへのアクセスを許可および制限する方法について説明します。
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '748'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # AEM as a Cloud Service チームおよび製品プロファイル {#product-profiles}
 
-AEMのas a Cloud Serviceチームおよび製品プロファイルが、ライセンスを受けたAdobeソリューションに対してアクセスを許可および制限する方法について説明します。
+AEM as a Cloud Service チームおよび製品プロファイルでライセンス取得済みアドビソリューションへのアクセスを許可および制限する方法について説明します。
 
 ## 製品プロファイル {#profiles}
 
@@ -31,13 +31,13 @@ AEM as a Cloud Service チームメンバーは、オンボーディング時に
 
 >[!NOTE]
 >
->AEMas a Cloud Serviceの製品プロファイルに割り当てられたすべてのユーザーは、 **Cloud Manager ユーザー** 役割。
+>AEM as a Cloud Service の製品プロファイルに割り当てられたすべてのユーザーは、**Cloud Manager ユーザー**&#x200B;の役割を介して Cloud Manager に読み取り専用でアクセスできます。
 >
->次のみを持つユーザー **Cloud Manager ユーザー** ロールは、 Cloud Manager にログインし、（存在する場合） **プログラム** メニューオプション。 この **Cloud Manager ユーザー** 役割は、プログラムの詳細にアクセスするのに十分ではありません。 そのようなアクセスが必要な場合は、システム管理者から追加の役割を付与される必要があります。
+>**Cloud Manager ユーザー**&#x200B;の役割のみを持つユーザーは、Cloud Manager にログインし、**プログラム**&#x200B;メニューオプションを使用して AEM オーサー環境（存在する場合）に移動できます。**Cloud Manager ユーザー**&#x200B;の役割では、プログラムの詳細にアクセスするのに十分ではありません。 そのようなアクセスが必要な場合は、システム管理者から追加の役割を付与してもらう必要があります。
 
 >[!TIP]
 >
->* AEM製品プロファイルの詳細については、ドキュメントを参照してください [AEM製品プロファイルの割り当て](/help/journey-onboarding/assign-profiles-aem.md)
+>* AEM 製品プロファイルについて詳しくは、[AEM 製品プロファイルの割り当て](/help/journey-onboarding/assign-profiles-aem.md)のドキュメントを参照してください。 
 >* オンボーディングプロセスについて詳しくは、[オンボーディングジャーニー](/help/journey-onboarding/overview.md)を参照してください。
 
 
@@ -51,7 +51,7 @@ Cloud Manager には、役割ベースの権限と考えられる事前設定済
 
 それぞれの製品プロファイルには、固有の権限が関連付けられています。
 
-* **ビジネスオーナー**  — このロールでは、新しいプログラムの追加、プログラムの編集、環境の追加または更新、AEM環境へのコードのデプロイ、コード品質チェックの実行の権限を持っています。
+* **ビジネスオーナー** - この役割には、新しいプログラムの追加、プログラムの編集、環境の追加または更新、AEM 環境へのコードのデプロイ、コード品質チェックの実行などを行う権限があります。
 * **デプロイメントマネージャー** - この役割には、環境の追加または更新、任意のパイプラインの実行、AEM 環境へのコードのデプロイ、コード品質チェックの実行などを行う権限があります。
 * **デベロッパー** - この役割には、Git にアクセスするための個人用アクセストークンを生成する権限があります。
 * **プログラムマネージャー** - この役割には、パイプラインのスケジュール設定、3 層品質ゲートのオーバーライド、実稼動の承認などを行う権限があります。
@@ -70,6 +70,6 @@ Cloud Manager チームには、少なくとも次の役割が含まれていま
 
 >[!TIP]
 >
->* Cloud Manager 製品プロファイルの詳細については、このドキュメントを参照してください [Cloud Manager 製品プロファイルへのチームメンバーの割り当て。](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+>* Cloud Manager 製品プロファイルについて詳しくは、[Cloud Manager 製品プロファイルへのチームメンバーの割り当てのドキュメントを参照してください。](/help/journey-onboarding/assign-profiles-cloud-manager.md)
 >* オンボーディングプロセスについて詳しくは、[オンボーディングジャーニー](/help/journey-onboarding/overview.md)を参照してください。
 
