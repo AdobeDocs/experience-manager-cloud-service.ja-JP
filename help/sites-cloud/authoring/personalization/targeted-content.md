@@ -3,9 +3,9 @@ title: ターゲットモードを使用したターゲットコンテンツの�
 description: ターゲットモードとターゲットコンポーネントには、エクスペリエンス用のコンテンツを作成するためのツールが用意されています。
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
 source-git-commit: f619cc2b1fcc697ebe7af7370b6839fe5ce40419
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5414'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,15 +24,15 @@ AEM のターゲットモードを使用してターゲットコンテンツを�
 
 >[!NOTE]
 >
->ターゲットモードは、ページエディターとエクスペリエンスフラグメントエディターの両方で使用できます。
+>ターゲティングモードは、ページエディターとエクスペリエンスフラグメントエディターの両方で使用することができます。
 >
->次のドキュメントは両方（両方とも同じ基準で動作するので）に適用できますが、両方（ページエディター用に記述されているので）。
+>次のドキュメントは、ページエディター用に記述されていますが、（両方とも同じ基準で動作するので）両方に適用することができます。
 
 >[!CAUTION]
 >
->ページエディターでのターゲティングでは、エクスペリエンスフラグメントコンポーネントのみターゲット設定できます。
+>ページエディターでのターゲティングの場合は、エクスペリエンスフラグメントコンポーネントのみターゲット設定することができます。
 >
->他のコンポーネントタイプは、 **エクスペリエンスフラグメントバリエーションに変換** アイコンをクリックします。
+>他のコンポーネントタイプは、コンポーネントツールバーの「**エクスペリエンスフラグメントバリエーションに変換**」アイコンを使用して、エクスペリエンスフラグメントに変換することができます。
 
 <!--
 >Other component types can be converted to an Experience Fragment using the **Convert to experience fragment variation** icon on the component toolbar:
@@ -40,7 +40,7 @@ AEM のターゲットモードを使用してターゲットコンテンツを�
 >![Converting component to Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
 -->
 
-AEM または Adobe Target をターゲティングエンジンとして使用できます（Adobe Target を使用するには有効な Adobe Target アカウントが必要です）。Adobe Target を使用する場合は、まず統合を設定する必要があります。詳しくは、 [Adobe Targetとの統合手順](/help/sites-cloud/integrating/integrating-adobe-target.md).
+AEM または Adobe Target をターゲティングエンジンとして使用できます（Adobe Target を使用するには有効な Adobe Target アカウントが必要です）。Adobe Target を使用する場合は、まず統合を設定する必要があります。[Adobe Target との統合手順](/help/sites-cloud/integrating/integrating-adobe-target.md)を参照してください。
 
 ![ターゲットコンテンツ](../assets/targeted-content.png)
 
@@ -520,13 +520,13 @@ Adobe Target を使用する場合に目標と設定を構成するには：
 
    ![レポートソース](../assets/targeted-reporting-source.png)
 
-1. 「**目標指標**」領域の「**主な目標**」で、コンバージョン、売上高、エンゲージメントなど追跡する成功指標を選択し、その指標の測定方法（または目標に達したことを示すためにオーディエンスが取るアクション）を入力します。成功指標については、前の表の目標指標の定義および [Adobe Target のドキュメント](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)を参照してください。
+1. 「**目標指標**」領域の「**主な目標**」で、コンバージョン、売上高、エンゲージメントなど追跡する成功指標を選択し、その指標の測定方法（または目標に達したことを示すためにオーディエンスが取るアクション）を入力します。成功指標については、前の表の目標指標の定義および [Adobe Target のドキュメント](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=ja)を参照してください。
 
    右上隅の 3 つのドットをクリックし、「**名前を変更**」を選択して、目標の名前を変更できます。
 
    すべてのフィールドをクリアする必要がある場合は、右上隅の 3 つのドットをクリックし、「**すべてのフィールドをクリア**」を選択します。
 
-   どの指標にも定義可能な詳細設定があります。この設定にアクセスするには、「**詳細設定**」を選択します。前の表の成功指標のカウント方法の定義と [Adobe Target のドキュメント](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)を参照してください。
+   どの指標にも定義可能な詳細設定があります。この設定にアクセスするには、「**詳細設定**」を選択します。前の表の成功指標のカウント方法の定義と [Adobe Target のドキュメント](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=ja)を参照してください。
 
    >[!NOTE]
    >
