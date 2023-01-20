@@ -3,9 +3,9 @@ title: ページの作成と整理
 description: AEM でページを作成および整理する方法
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2561'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ Web サイトの構造は、コンテンツページを保持するツリーと�
 >
 >ページ名を定義するときは、ページ名をできるだけ簡潔にしつつ、読者がわかりやすいようにできるだけ表現力のある覚えやすいものにすることをお勧めします。詳しくは、[ 要素の ](https://www.w3.org/Provider/Style/TITLE.html)W3C スタイルガイド`title`を参照してください。
 >
->また、一部のブラウザー（IE の旧バージョンなど）では、特定の長さまでの URL しか受け付けないので、ページ名を短くしておく技術的な理由もあります。
+>また、一部のブラウザー（旧バージョンの IE など）では、特定の長さまでの URL しか受け付けないので、ページ名を短くするには技術的な理由もあります。
 
 [新しいページを作成するとき、AEM では AEM と JCR によって課された規則に基づいてページ名が検証されます。](/help/implementing/developing/introduction/naming-conventions.md)
 
