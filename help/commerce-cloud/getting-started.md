@@ -9,9 +9,9 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 source-git-commit: 118945f407dab8ccad1ec018b588b64972fb5f12
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1099'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -141,5 +141,5 @@ CIF アドオンと [CIF コアコンポーネント](https://github.com/adobe/a
 - [AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)
 - [コマースマルチストアの設定](configuring/multi-store-setup.md)
-- [複数のコマースシステムのセットアップ](configuring/multiple-commerce-systems-setup.md)
+- [複数のコマースシステムの設定](configuring/multiple-commerce-systems-setup.md)
 
