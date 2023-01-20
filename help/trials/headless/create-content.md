@@ -4,10 +4,10 @@ description: 前に作成したコンテンツフラグメントモデルを使�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: bcab02cbd84955ecdc239d4166ae38e5f79b3264
+source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 1%
+source-wordcount: '478'
+ht-degree: 3%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 1%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
->title="新しいコンテンツを作成"
+>title="コンテンツの新規作成"
 >abstract="前のモジュールで作成したモデルを使用して、ページオーサリングに使用できるコンテンツ、またはヘッドレスコンテンツの基礎として使用できるコンテンツを作成する方法を学びます。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="コンテンツフラグメントコンソールを起動します。"
 >abstract="アプリや Web サイト全体でシームレスに機能する、一貫性のある高品質なコンテンツを作成することで、優れた顧客体験を実現します。 このモジュールでは、最初のコンテンツフラグメントの作成手順を説明し、この方法を説明します。 これが重要な手順である理由については、ビデオをご覧ください。<br><br>下のボタンをクリックして、このモジュールを新しいタブで起動し、このガイドに従ってください。"
->additional-url="https://video.tv.adobe.com/v/328618" text="新しいコンテンツの作成の導入ビデオ"
+>additional-url="https://video.tv.adobe.com/v/328618/?captions=jpn" text="新しいコンテンツの作成の導入ビデオ"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
@@ -32,17 +32,11 @@ ht-degree: 1%
 
 ## コンテンツフラグメントを作成 {#create-fragment}
 
-クリック **コンテンツフラグメントコンソールを起動します。** 上のボタンをクリックすると、コンテンツフラグメントコンソールが新しいタブに開きます。
-
-![フラグメントのコンテンツの編集](assets/create-content/content-fragment-console.png)
-
-コンテンツフラグメントはヘッドレスコンテンツを表し、コンテンツフラグメントモデルと呼ばれる事前定義済みの構造に基づいています。 コンテンツフラグメントコンソールは、ヘッドレスコンテンツのライブラリと考えてください。 新しいコンテンツフラグメントを作成し、既存のコンテンツフラグメントを管理する場合に使用します。 コンソールが空になるので、新しいフラグメントを作成しましょう。
+コンテンツフラグメントはヘッドレスコンテンツを表し、コンテンツフラグメントモデルと呼ばれる事前定義済みの構造に基づいています。 コンテンツフラグメントコンソールは、ヘッドレスコンテンツのライブラリと考えてください。 この機能を使用して、新しいコンテンツフラグメントを作成し、既存のフラグメントを管理します。
 
 1. をタップまたはクリックします。 **作成** ボタンを使用して、コンソールの右上に表示されます。
 
 1. この **新しいコンテンツフラグメント** 新しいコンテンツフラグメントの作成を開始できるダイアログが開きます。 **場所** は、新しいコンテンツを保存する場所を自動的に設定します。
-
-   ![コンテンツフラグメントを作成ダイアログ](assets/create-content/create-content-fragment.png)
 
 1. 内 **コンテンツフラグメントモデル** ドロップダウンから、以前に作成したコンテンツフラグメントモデルを選択します。
 
@@ -50,26 +44,24 @@ ht-degree: 1%
 
 1. タップまたはクリック **作成して開く**.
 
+![新しいコンテンツフラグメントの作成](assets/do-not-localize/create-content-3-4-5.png)
+
 ## コンテンツフラグメントにコンテンツを追加 {#add-content}
 
 新しいコンテンツフラグメントを保存して開くと、新しいタブにコンテンツフラグメントエディターが開きます。 ここで、新しいフラグメントのコンテンツを追加できます。
 
 1. コンテンツフラグメントエディターには、選択したモデルで定義したフィールドが表示されます。 ここで、各フィールドにコンテンツを追加して、コンテンツフラグメントを完成させます。 進行状況は自動的に保存されます。
 
-   ![コンテンツフラグメントエディター](assets/create-content/content-fragment-editor.png)
-
 1. コンテンツの追加が完了したら、「 **公開** ボタンをクリックします。 これにより、コンテンツフラグメントを外部アプリで使用できるようになります。
 
 1. 選択 **今すぐ** 」をクリックします。 また、後で公開するようにスケジュールすることもできます。
 
-   ![「公開」ボタン](assets/create-content/publish.png)
+   ![コンテンツを作成](assets/do-not-localize/add-content-1-2.png)
 
 1. この **コンテンツフラグメントを公開** ダイアログが表示されます。 AEMは自動的に参照チェックを実行し、コンテンツフラグメントに必要なすべてのリソースが公開されていることを確認します。 この場合、作成したモデルも公開する必要があります。 「**公開**」をタップまたはクリックします。
 
-   ![参照チェック](assets/create-content/references.png)
+   ![公開と参照の確認](assets/do-not-localize/publish-4.png)
 
 1. バナーで公開が確認されました。
-
-   ![公開の確認](assets/create-content/publish-confirm.png)
 
 コンテンツが公開され、コンテンツフラグメントとしてアプリまたは Web サイトに配信される準備が整いました。
