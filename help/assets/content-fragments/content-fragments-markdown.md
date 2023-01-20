@@ -1,13 +1,13 @@
 ---
-title: Markdown （Assets — コンテンツフラグメント）
-description: コンテンツフラグメントエディターで Markdown 構文を使用してヘッドレスコンテンツを簡単に作成する方法を説明します。
+title: マークダウン（アセット - コンテンツフラグメント）
+description: コンテンツフラグメントエディターでマークダウン構文を使用してヘッドレスコンテンツを簡単に作成する方法を説明します。
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '525'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -129,7 +129,7 @@ ht-degree: 99%
 
 順序付きと順序なし両方のリストを作成できます。
 
-順序なしリストを作成するには、&amp;ast; 記号をリストの項目の前に付けます。次に例を示します。
+順序なしリストを作成するには、* 記号をリストの項目の前に付けます。次に例を示します。
 
     `* item in list`
 
