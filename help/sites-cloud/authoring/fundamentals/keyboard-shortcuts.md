@@ -3,15 +3,15 @@ title: ページ編集用のキーボードショートカット
 description: AEM ではページ編集用を含む様々なキーボードショートカットを使用できます
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '238'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 # ページ編集用のキーボードショートカット {#keyboard-shortcuts-when-editing-pages}
 
-AEM 全体で様々なキーボードショートカットを利用できます。ページの編集時に適用されるものと、 [コンソールの使用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)特に [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+AEM 全体で様々なキーボードショートカットを利用できます。ページの編集時に適用されるものと、[コンソールの使用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)に適用されるもの、特に[コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)に適用されるものがあります。
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ AEM 全体で様々なキーボードショートカットを利用できます�
 
 | 場所 | ショートカット | 説明 |
 |---|---|---|
-| 任意の編集ウィンドウモード | `Ctrl-Shift-m` | 切り替え **プレビュー** および現在選択されている [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> ( 例： **編集**, **レイアウト**, etc)* |
+| 任意の編集ウィンドウモード | `Ctrl-Shift-m` | **プレビュー**&#x200B;と、現在選択されている[モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a>（**編集**、 **レイアウト**&#x200B;など）を切り替えます * |
 | **編集**&#x200B;モード | `Ctrl-z` | [最後におこなった変更操作を取り消す](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [最後におこなった変更操作をやり直す](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | 複数の段落を選択する |
@@ -37,7 +37,7 @@ AEM 全体で様々なキーボードショートカットを利用できます�
 >
 >ユーザーがプレビューモードでページの操作を開始すると、`Ctrl-Shift-m` ショートカットは使用できなくなります。ショートカットをもう一度使用できるようにするには、エディターバーの上部をクリックするか、編集モードに戻る必要があります。
 
-また、 [コンソール](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)特に [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+[コンソール](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)、特に[コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)の使用時には、デスクトップユーザーは様々なキーボードショートカットを利用できます。
 
 >[!NOTE]
 >
