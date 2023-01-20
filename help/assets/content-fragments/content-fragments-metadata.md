@@ -1,11 +1,11 @@
 ---
-title: メタデータ — フラグメントのプロパティ（アセット — コンテンツフラグメント）
-description: コンテンツフラグメントのメタデータプロパティの表示方法と編集方法を参照してください。
+title: メタデータ - フラグメントのプロパティ（アセット - コンテンツフラグメント）
+description: コンテンツフラグメントのメタデータプロパティの表示と編集の方法について説明します。
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '202'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
