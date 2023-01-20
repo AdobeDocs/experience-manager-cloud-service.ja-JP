@@ -2,13 +2,13 @@
 title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.10.0 のリリースノート
 description: AEM as a Cloud Service の Cloud Manager 2022.10.0 のリリースノートです。
 feature: Release Information
-source-git-commit: 435d42e750f868970bed8f6b3f30a2762c5ce395
-workflow-type: tm+mt
+exl-id: 2e502ead-8515-4594-becc-caa207643a36
+source-git-commit: 83e49215eff975300f263dcf0215081b02260e70
+workflow-type: ht
 source-wordcount: '207'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.10.0 のリリースノート {#release-notes}
 
@@ -20,15 +20,15 @@ ht-degree: 52%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Serviceの Cloud Manager リリース2022.10.0のリリース日は 2022 年 10 月 6 日です。 次回のリリースは 2022年11月3日（PT）に予定されています。
+AEM as a Cloud Service の Cloud Manager リリース 2022.10.0 のリリース日は 2022年10月6日（PT）です。次回のリリースは 2022年11月3日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* Cloud Manager で使用される [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)のバージョンが 39 に更新されました。
-* AEM上に CDN が設定されている Sites プログラムの場合、ライセンスダッシュボードの UI から通知が届くようになりました。
+* Cloud Manager で使用される [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)のバージョンが 39 に更新されました。
+* AEM as a Cloud Service 上に Sites プログラムと CDN の連携が設定されている場合、ライセンスダッシュボード UI がそれをユーザーに通知するようになりました。
 
-## バグの修正 {#bug-fixes}
+## バグ修正 {#bug-fixes}
 
-* E メールアドレスに大文字を含むユーザーを Cloud Manager の New Relic サブアカウントに追加できない問題を修正しました。
+* メールアドレスに大文字を含むユーザーを Cloud Manager の New Relic サブアカウントに追加できない問題を修正しました。
 * プログラムに複数のソリューションがある場合、Screens ソリューションが表示されるようになりました。
 * 環境のステータスが「更新中」の場合に、フロントエンドパイプライン実行が開始されない状況が修正されました。
