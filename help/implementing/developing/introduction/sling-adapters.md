@@ -3,9 +3,9 @@ title: Sling アダプターの使用
 description: Sling には、Adaptable インターフェイスを実装するオブジェクトを適切に変換するアダプターパターンが用意されています
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2221'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -290,7 +290,7 @@ null のケースを問題なく処理することが重要です。JSP レン�
    <td>ラベル付きリソース（== this）。</td>
   </tr>
   <tr>
-   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">ノード</a></td>
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Node</a></td>
    <td>ページのノード。</td>
   </tr>
   <tr>
@@ -302,7 +302,7 @@ null のケースを問題なく処理することが重要です。JSP レン�
 
 **[Component](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/components/Component.html)** は次の項目に適応します。
 
-| [リソース](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) | コンポーネントのリソース。 |
+| [Resource](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) | コンポーネントのリソース。 |
 |---|---|
 | [LabeledResource](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/LabeledResource.html) | ラベル付きリソース（== this）。 |
 | [Node](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | コンポーネントのノード。 |
@@ -321,7 +321,7 @@ null のケースを問題なく処理することが重要です。JSP レン�
    <td>ラベル付きリソース（== this）。</td>
   </tr>
   <tr>
-   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">ノード</a></td>
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Node</a></td>
    <td>このテンプレートのノード。</td>
   </tr>
   <tr>
@@ -335,7 +335,7 @@ null のケースを問題なく処理することが重要です。JSP レン�
 
 **Authorizable**、**User** および **Group** は以下に適応します。
 
-| [ノード](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | ユーザーまたはグループのホームノードを返します。 |
+| [Node](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | ユーザーまたはグループのホームノードを返します。 |
 |---|---|
 | [ReplicationStatus](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/ReplicationStatus.html) | ユーザーまたはホームノードのレプリケーションステータスを返します。 |
 
@@ -343,18 +343,18 @@ null のケースを問題なく処理することが重要です。JSP レン�
 
 **Asset** は次の項目に適応します。
 
-| [リソース](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) | アセットのリソース。 |
+| [Resource](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) | アセットのリソース。 |
 |---|---|
-| [ノード](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | アセットのノード。 |
+| [Node](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | アセットのノード。 |
 | ... | アセットのリソースが適応可能なすべての項目。 |
 
 #### タグ付け {#tagging}
 
 **Tag** は次の項目に適応します。
 
-| [リソース](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) | タグのリソース。 |
+| [Resource](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) | タグのリソース。 |
 |---|---|
-| [ノード](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | タグのノード。 |
+| [Node](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | タグのノード。 |
 | ... | タグのリソースが適応可能なすべての項目。 |
 
 #### その他 {#other}
