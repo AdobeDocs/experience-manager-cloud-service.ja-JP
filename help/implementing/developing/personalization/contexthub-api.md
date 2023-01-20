@@ -3,9 +3,9 @@ title: ContextHub JavaScript API リファレンス
 description: ContextHub コンポーネントをページに追加すると、ContextHub JavaScript API がスクリプトで使用できるようになります
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4622'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ ContextHub ストアに対して発生する名前付きイベントを次の表
 | `ContextHub.Constants.EVENT_UI_CONTAINER_OPENED` | ContextHub UI が開かれると実行されます | `ui-container-opened` |
 | `ContextHub.Constants.EVENT_UI_CONTAINER_CLOSED` | ContextHub UI が折りたたまれると実行されます | `ui-container-closed` |
 | `ContextHub.Constants.EVENT_UI_PROPERTY_MODIFIED` | プロパティが変更されると実行されます | `ui-property-modified` |
-| `ContextHub.Constants.EVENT_UI_RENDERED` | ContextHub UI がレンダリングされるたび（例えば、プロパティの変更後）に実行されます | `ui-rendered` |
+| `ContextHub.Constants.EVENT_UI_RENDERED` | ContextHub UI がレンダリングされるたびに発生します（プロパティの変更後など）。 | `ui-rendered` |
 | `ContextHub.Constants.EVENT_UI_INITIALIZED` | UI コンテナが初期化されると実行されます | `ui-initialized` |
 | `ContextHub.Constants.ACTIVE_UI_MODE` | アクティブな UI モードを示します。 | `/_/active-ui-mode` |
 
@@ -207,7 +207,7 @@ ContextHub ストアのベースクラス。
 
 ##### パラメーター {#parameters-getitem}
 
-* **`key`：**（String）値を返すキー。
+* **`key`：**（文字列）値を返すキー。
 
 ##### 戻り値 {#returns-getitem}
 
@@ -415,9 +415,9 @@ JSONP サービスへの最後の呼び出し以降キャッシュされてい�
 * **`path`：**（String）サービスへのパス。
 * **`port`：**（Number）サービスのポート番号。
 * **`secure`：**（String または Boolean）サービス URL に使用するプロトコルを決定します。
-   * `auto`://
-   * `true`:https://
-   * `false`:http://
+   * `auto`: //
+   * `true`: https://
+   * `false`: http://
 
 #### getServiceURL(resolve) {#getserviceurl-resolve}
 
@@ -449,9 +449,9 @@ JSONP サービスの URL を取得します。
       * `path`：（String）サービスへのパス。
       * `port`：（Number）サービスのポート番号。
       * `secure`：（String または Boolean）サービス URL に使用するプロトコルを決定します。
-         * `auto`://
-         * `true`:https://
-         * `false`:http://
+         * `auto`: //
+         * `true`: https://
+         * `false`: http://
       * `timeout`：（Number）タイムアウトまでに JSONP サービスの応答を待機する時間（ミリ秒単位）。
          * `ttl`：JSONP サービスの最小呼び出し間隔（ミリ秒単位）。（[queryService](#queryservice-reload) 関数を参照）。
 
@@ -463,7 +463,7 @@ JSONP サービスの URL を取得します。
 
 ##### パラメーター {#parameters-queryservice}
 
-* **`reload`：**（Boolean）値が true の場合、キャッシュされた応答を削除し、JSONP サービスを強制的に呼び出します。
+* **`reload`：**（ブーリアン）値が true の場合、キャッシュされた応答を削除し、JSONP サービスを強制的に呼び出します。
 
 #### reset {#reset}
 
@@ -527,7 +527,7 @@ cookie が存在するかどうかを判断します。
 
 ##### パラメーター {#parameters-exists}
 
-* **`key`：**&#x200B;テストする cookie のキーを格納した `String`。
+* **`key`：**&#x200B;テストする cookie のキーが格納されている `String`。
 
 ##### 戻り値 {#returns-exists}
 
@@ -595,7 +595,7 @@ ContextHub.Utils.Cookie.getItem("name");
 
 ##### 戻り値 {#returns-getkeys-1}
 
-それぞれがフィルターに一致する cookie のキーである文字列からなる配列。
+フィルターに一致する cookie のキーである文字列からなる配列。
 
 ##### 例 {#example-getkeys-1}
 
@@ -923,7 +923,7 @@ Object {
 
 ##### 戻り値 {#returns-getkeys-2}
 
-キーからなる配列。
+キーの配列。
 
 ##### 例 {#example-getkeys-2}
 
