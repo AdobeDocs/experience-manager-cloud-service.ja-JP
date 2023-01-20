@@ -3,9 +3,9 @@ title: SPA ページコンポーネント
 description: SPA では、ページコンポーネントは子コンポーネントの HTML 要素を提供せず、代わりに SPA フレームワークに委任します。このドキュメントでは、これにより SPA のページコンポーネントがどのように一意になるかを説明します。
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '599'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ SPA コンテンツを記述するメタリソースプロパティです。
 
 ## メタプロパティ {#meta-properties}
 
-* `cq:wcmmode`:エディターの WCM モード（ページ、テンプレートなど）
+* `cq:wcmmode`：エディターの WCM モード（ページ、テンプレートなど）
 * `cq:pagemodel_root_url`：アプリのルートモデルの URL。子ページモデルはアプリのルートモデルのフラグメントなので、子ページに直接アクセスする場合に重要です。次に、`PageModelManager` は、アプリケーションの初期モデルを、そのルートエントリポイントからアプリケーションに入るときに体系的に再構成します。
 * `cq:pagemodel_router`：`PageModelManager` ライブラリの [`ModelRouter`](routing.md) を有効化または無効化
 * `cq:pagemodel_route_filters`：[`ModelRouter`](routing.md) が無視する必要があるルートを指定するための、カンマ区切りのリストまたは正規表現。
