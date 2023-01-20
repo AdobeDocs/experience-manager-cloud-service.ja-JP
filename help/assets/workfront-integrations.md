@@ -4,7 +4,7 @@ description: ' [!DNL Assets]  と  [!DNL Workfront] の統合の概要'
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 5bc048052ca579707fb2508d3f436f1755a5d218
+source-git-commit: 269dff32b41dba86fb048418da3f3b3ef8a6781e
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 63%
@@ -49,7 +49,7 @@ Adobe [統合 [!DNL Workfront] および [!DNL Adobe Experience Manager Assets] 
 [!DNL Assets] と [!DNL Workfront] の間の様々なタイプの統合を通じて利用できる機能の詳細は、以下のとおりです。
 
 | 機能 | 説明 | [!DNL Workfront] および [!DNL Assets Essentials] *コネクタなし (OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *コネクタが必要* | Workfrontと [!DNL Experience Manager as a Cloud Service] *コネクタなし (OOTB)* |
-|----|----|----|------|-----|-----|
+|----|----|----|-----|-----|
 | デプロイメント方法 | どの [!DNL Assets] の提供に適切か。 | Assets Essentials | Cloud Service、Adobe Managed Services、オンプレミス | Cloud Service |
 | **一般** |
 | [!DNL Workfront] から [!DNL Assets] へのデジタルファイルの送信  | WF ドキュメントの最新バージョンを AEM Assets にアップロードして、ドキュメントの新しいバージョンとしてリンクさせることができます。 | ✓ | ✓ | ✓ |
