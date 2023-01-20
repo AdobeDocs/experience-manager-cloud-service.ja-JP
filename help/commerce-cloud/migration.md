@@ -3,9 +3,9 @@ title: AEM Commerce Integration Framework（CIF）アドオンへの移行
 description: 旧バージョンから AEM Commerce Integration Framework（CIF）アドオンに移行する方法
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '491'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -51,4 +51,4 @@ AEM 6.5 デプロイメントと比較して、主な違いは次の 2 つです
 
 ## キャッシュ不可データとショッピングインタラクション
 
-キャッシュ不能なデータおよびインタラクション（例えば、買い物かごへの追加、検索）に対するクライアント側のリクエストは、CDN/Dispatcher 経由で、コマースエンドポイント（コマースソリューションまたは統合レイヤー）に直接送信する必要があります。 AEM がプロキシに過ぎない呼び出しは、すべて削除します。
+キャッシュ不可データおよびインタラクションについてのクライアントサイドのリクエスト（例：買い物かごへの追加、検索）は、CDN や Dispatcher を介してコマースエンドポイント（コマースソリューションまたは統合レイヤー）に直接送信する必要があります。AEM がプロキシに過ぎない呼び出しは、すべて削除します。
