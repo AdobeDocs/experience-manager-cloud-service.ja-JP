@@ -3,9 +3,9 @@ title: Screens サービスプロバイダーへの移動
 description: ここでは、Screens サービスプロバイダーへの移動方法について説明します。
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '266'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -36,8 +36,8 @@ Screens サービスプロバイダーをセットアップするには、次の
    ![画像](/help/screens-cloud/assets/configure/configure-screens0.png)
 
 3. 設定を編集ダイアログボックスに、次の詳細を入力します。
-   * **発行 URL** - AEM公開 URL( 例： `https://publish-p12345-e12345.adobeaemcloud.com`)
-   * **作成者 URL** - AEM作成者 URL( 例： `https://author-p12345-e12345.adobeaemcloud.com`)
+   * **パブリッシュ URL** - AEM のパブリッシュ URL（例：`https://publish-p12345-e12345.adobeaemcloud.com`）
+   * **オーサー URL** - AEM のオーサー URL（例：`https://author-p12345-e12345.adobeaemcloud.com`）
 
    ![画像](/help/screens-cloud/assets/configure/configure-screens4.png)
 
