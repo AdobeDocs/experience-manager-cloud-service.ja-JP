@@ -3,9 +3,9 @@ title: React を使用した AEM での SPA の概要
 description: この記事では、サンプルの SPA アプリケーションを紹介し、その設定方法を説明するほか、React を使用して独自の SPA の運用を速やかに開始する方法についても説明します。
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1144'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -140,7 +140,7 @@ ReactDOM.render(
 
 #### 静的インスタンス化 {#static-instantiation}
 
-コンポーネントテンプレート（JSX など）を使用して静的にコンポーネントをインスタンス化する場合は、モデルからコンポーネントのプロパティに値を渡す必要があります。
+コンポーネントテンプレート（JSX など）を使用してコンポーネントを静的にインスタンス化する場合は、モデルからコンポーネントのプロパティに値を渡す必要があります。
 
 ### App.js {#app-js}
 
