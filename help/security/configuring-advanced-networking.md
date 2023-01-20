@@ -3,9 +3,9 @@ title: AEM as a Cloud Service の高度なネットワーク機能の設定
 description: AEM as a Cloud Service の高度なネットワーク機能（VPN やフレキシブルエグレス IP アドレスまたは専用エグレス IP アドレスなど）を設定する方法を説明します
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3053'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -48,13 +48,13 @@ AEM as a Cloud Service には、複数のタイプの高度なネットワーク
 
 ### 設定 {#configuring-flexible-port-egress-provision}
 
-プログラムごとに 1 回、POST `/program/<programId>/networkInfrastructures` エンドポイントが呼び出され、`kind` パラメーターの `flexiblePortEgress` の値とリージョンが渡されます。エンドポイントは、応答として `network_id` の他に、ステータスなどの他の情報も返します。パラメーターの完全なセットと正確な構文、および後で変更できないパラメーターなどの重要な情報。 [は、API ドキュメントで参照できます。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+プログラムごとに 1 回、POST `/program/<programId>/networkInfrastructures` エンドポイントが呼び出され、`kind` パラメーターの `flexiblePortEgress` の値とリージョンが渡されます。エンドポイントは、応答として `network_id` の他に、ステータスなどの他の情報も返します。パラメーターの完全なセットと正確な構文、および後で変更できないパラメーターなどの重要な情報は、[API ドキュメントで参照できます。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 呼び出しの後、ネットワークインフラストラクチャがプロビジョニングされるまで、通常は 15 分ほどかかります。Cloud Manager の [ネットワークインフラストラクチャ GET エンドポイント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) の呼び出しで「準備完了」のステータスが表示されます。
 
 プログラムスコープのフレキシブルポートエグレス設定の準備ができている場合は、環境ごとに `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントを呼び出して、環境レベルでネットワーク機能を有効にすると共に、ポート転送ルールを必要に応じて宣言する必要があります。柔軟性を持たせるために、パラメーターは環境ごとに設定できます。
 
-ポート転送規則は、80/443以外の宛先ポートに対して宣言する必要がありますが、http または https プロトコルを使用しない場合にのみ、宛先ホストのセット（名前または IP、およびポート）を指定します。 宛先ホストごとに、宛先ポートを 30000～30999 のポートにマッピングする必要があります。
+ポート転送ルールは、80／443 以外の宛先ポートに対して宣言する必要がありますが、http または https プロトコルを使用しない場合にのみ、宛先ホストのセット（名前または IP、およびポート）を指定します。 宛先ホストごとに、宛先ポートを 30000～30999 のポートにマッピングする必要があります。
 
 API が数秒以内に応答して「更新中」のステータスを返し、約 10 分後に、高度なネットワーク機能が有効であることがエンドポイントの `GET` メソッドで示されます。
 
@@ -333,7 +333,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ## 従来の専用エグレスアドレスを使用する場合 {#legacy-dedicated-egress-address-customers}
 
-2021年9月30日以前に専用エグレス IP がプロビジョニングされている場合、専用エグレス IP 機能は HTTP ポートと HTTPS ポートのみをサポートします。これには、HTTP/1.1 と HTTP/2（暗号化時）が含まれます。さらに、1 つの専用の出力エンドポイントが、それぞれポート80/443の HTTP/HTTPS 経由でのみ任意のターゲットと通信できます。
+2021年9月30日以前に専用エグレス IP がプロビジョニングされている場合、専用エグレス IP 機能は HTTP ポートと HTTPS ポートのみをサポートします。これには、HTTP/1.1 と HTTP/2（暗号化時）が含まれます。さらに、1 つの専用の出力エンドポイントは、それぞれポート 80／443 の HTTP／HTTPS 経由でのみ任意のターゲットと通信できます。
 
 ## 仮想プライベートネットワーク（VPN） {#vpn}
 
