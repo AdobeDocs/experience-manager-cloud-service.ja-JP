@@ -4,9 +4,9 @@ description: AEM as a Cloud Service Release 2021.3.0 Cloud Manager のリリー�
 feature: Release Information
 exl-id: f826e0c6-3b1d-44f5-99a2-f792f5df3a55
 source-git-commit: 575be022704e998e63162f19c37ece877efef627
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '447'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ AEM as a Cloud Service 2021.3.0 の Cloud Manager のリリース日は 2021 年
    * Sites と Assets の両方を使用している既存のプログラムから Sites または Assets を削除する。
    * 使用されていない 2 つ目のソリューション使用権限を既存のプログラムに追加するか、新しいプログラムとして追加する。
 
-* **AEMメンテナンスの更新** ラベルが、パイプライン実行画面とアクティビティ画面の両方に表示されるようになりました。
+* パイプラインの実行画面とアクティビティ画面の両方に **AEM メンテナンスアップデート**&#x200B;ラベルが表示されるようになりました。
 
 * 環境が休止状態になっている場合は、AEM アップデートが使用可能でも、**休止状態**&#x200B;ステータスが&#x200B;**アップデート利用可能**&#x200B;ステータスより優先されます。
 
