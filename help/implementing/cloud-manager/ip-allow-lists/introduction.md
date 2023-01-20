@@ -3,9 +3,9 @@ title: IP 許可リストの概要
 description: AEM as a Cloud Service ドメインにユーザーがアクセスできるアドレスを IP 許可リストで制限する方法を説明します。
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 source-git-commit: 18ecf3394ff575213756fced84a3b08795188240
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '319'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -19,15 +19,15 @@ ht-degree: 56%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html?lang=ja" text="IP 許可リストの追加"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html?lang=ja" text="IP 許可リストの表示および更新"
 
-AEM as a cloud service は、デフォルトでは、インターネット経由でアクセスできます。 セキュリティはユーザーの認証と承認によって処理されますが、IP 許可リストは、信頼できる IP アドレスにのみアクセスを制限する方法です。
+AEM as a cloud service は、デフォルトでは、インターネット経由でアクセスできます。 セキュリティはユーザーの認証および認可によって処理されますが、信頼できる IP アドレスにのみアクセスを制限する方法は IP 許可リストです。
 
-Cloud Manager の IP許可リストを使用して、このような信頼済み IP アドレスへのアクセスのみを制限し、制御することができます。 適切な権限を持つ Cloud Manager ユーザーが以下を実行できる [許可リスト](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) を使用します。
+Cloud Manager の IP 許可リストを使用すると、そのような信頼できる IP アドレスのみにアクセスを制限および制御できます。適切な権限を持つ Cloud Manager ユーザーは、信頼できる IP アドレスの[許可リストを作成](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)し、そのアドレスからのみ、サイトのユーザーが AEM ドメインにアクセスできるようにすることができます。
 
-追加後、 [IP許可リストの適用/適用解除が可能](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 環境内のオーサーサービスやパブリッシャーサービスに対する単位またはエンティティとして複数回
+IP 許可リストを一度追加すれば、環境内のオーサー／パブリッシュサービスに対して、ユニットやエンティティとして何度でも [IP 許可リストを適用または適用解除](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)できます。
 
 >[!NOTE]
 >
->IP許可リストが適用されない場合、デフォルトでは、すべての IP アドレスが許可されます。 IP許可リストが適用されると、IP許可リスト上の IP アドレスを除き、IP アドレスは許可されません。
+>IP 許可リストが適用されない場合、デフォルトでは、すべての IP アドレスが許可されます。 IP 許可リストが適用され次第、IP 許可リスト上の IP アドレス以外は禁止されます。
 
 ## 制限事項 {#limitations}
 
