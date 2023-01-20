@@ -3,9 +3,9 @@ title: Cloud Manager リポジトリー
 description: Cloud Manager で Git リポジトリを作成、表示および削除する方法について説明します。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '582'
-ht-degree: 30%
+ht-degree: 100%
 
 ---
 
@@ -16,51 +16,51 @@ Cloud Manager で Git リポジトリを作成、表示および削除する方�
 
 >[!NOTE]
 >
->任意の会社または IMS 組織のすべてのプログラムに対して、300 個のリポジトリーの制限があります。
+>特定の企業または IMS 組織のすべてのプログラムで、使用できるリポジトリは 300 個までです。
 
-## リポジトリーの追加と管理 {#add-manage-repos}
+## リポジトリの追加と管理 {#add-manage-repos}
 
-Cloud Manager でリポジトリを表示および管理する手順に従います。
+Cloud Manager でリポジトリを表示および管理するには、次の手順に従います。
 
 1. **プログラムの概要**&#x200B;ページで、「**リポジトリー**」タブをクリックし、**リポジトリー**&#x200B;ページに移動します。
 
-1. クリック **リポジトリを追加** をクリックして、ウィザードを起動します。
+1. 「**リポジトリーを追加**」をクリックして、ウィザードを起動します。
 
-   ![リポジトリ追加ボタン](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
+   ![「リポジトリーを追加」ボタン](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
 
-1. 必要に応じて名前と説明を入力し、「 」をクリックします。 **保存**.
+1. 必要に応じて名前と説明を入力し、「**保存**」をクリックします。
 
-   ![リポジトリを追加ダイアログ](/help/implementing/cloud-manager/assets/repos/repo-1.png)
+   ![リポジトリーを追加ダイアログ](/help/implementing/cloud-manager/assets/repos/repo-1.png)
 
 ウィザードが閉じると、新しいリポジトリがテーブルに表示されます。
 
-テーブル内のリポジトリーを選択し、省略記号ボタンをクリックして、「 」を選択します。 **リポジトリ URL をコピー**, **表示と更新**&#x200B;または **削除**.
+テーブルでリポジトリを選択し、省略記号ボタンをクリックして、「**リポジトリー URL をコピー**」、「**表示と更新**」または「**削除**」を選択できます。
 
-![リポジトリオプション](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
+![リポジトリ関連オプション](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-Cloud Manager で作成されたリポジトリは、パイプラインの追加や編集の際に選択することもできます。 ドキュメントを参照してください [CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) を参照してください。
+Cloud Manager で作成されたリポジトリは、パイプラインの追加や編集の際にも選択できます。 詳しくは、[CI／CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)のドキュメントを参照してください。
 
-どのパイプラインにも 1 つのプライマリリポジトリーまたはブランチがあります。を使用 [git サブモジュールのサポート](#git-submodule-support)で指定した場合、ビルド時に多数のセカンダリブランチを含めることができます。
+どのパイプラインにも 1 つのプライマリリポジトリまたはブランチがあります。[Git サブモジュールのサポート](#git-submodule-support)を使用すると、ビルド時に多数のセカンダリブランチを含めることができます。
 
 >[!NOTE]
 >
->ユーザーは、の役割を持っている必要があります **デプロイメントマネージャー** または **ビジネスオーナー** を追加して、リポジトリを追加できるようにします。
+>リポジトリを追加するには、**デプロイメントマネージャー**&#x200B;または&#x200B;**ビジネスオーナー**&#x200B;の役割が必要です。
 
-## リポジトリーの削除 {#delete-repo}
+## リポジトリの削除 {#delete-repo}
 
-リポジトリーを削除すると、次のようになります。
+リポジトリを削除すると、次のようになります。
 
-* 削除したリポジトリー名は、今後作成される可能性のある新しいリポジトリーに使用できなくなります。
-   * エラーメッセージ `Repository name should be unique within organization.` この場合、が表示されます。
-* 削除したリポジトリを Cloud Manager で使用できなくし、パイプラインへのリンクに使用できなくします。
+* 削除したリポジトリ名は、今後作成される可能性のある新しいリポジトリに使用できなくなります。
+   * このような場合、「`Repository name should be unique within organization.`」というエラーメッセージが表示されます。
+* 削除したリポジトリを Cloud Manager で使用不可にし、パイプラインにリンクできないようにします。
 
 Cloud Manager でリポジトリを削除するには、次の手順に従います。
 
 1. **プログラムの概要**&#x200B;ページで、「**リポジトリー**」タブをクリックし、**リポジトリー**&#x200B;ページに移動します。
 
-1. リポジトリを選択し、省略記号ボタンをクリックして、「 」を選択します。 **削除** をクリックして、リポジトリを削除します。
+1. リポジトリを選択し、省略記号ボタンをクリックして「**削除**」を選択すると、リポジトリが削除されます。
 
-   ![リポジトリーを削除](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
+   ![リポジトリの削除](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 
 ## Git サブモジュールのサポート {#git-submodule-support}
 
@@ -74,9 +74,9 @@ Cloud Manager のビルドプロセスを実行すると、パイプライン用
 $ git submodule update --init
 ```
 
-この方法は、ドキュメントで説明されているソリューションの代わりに使用できる可能性があります [複数のソース Git リポジトリーの操作](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) git サブモジュールの使用に慣れており、外部マージプロセスを管理したくない組織向けの機能です。
+この手法は、Git サブモジュールの使用に慣れていて、外部マージプロセスの管理を望まない組織にとっては、[複数のソース Git リポジトリの操作](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)に関するドキュメントで説明しているソリューションの代わりになる可能性があります。
 
-例えば、3 つのリポジトリがあり、それぞれに `main` という名前のブランチが 1 つあるとします。プライマリリポジトリ（パイプラインで設定されたリポジトリ）では、 `main` ブランチに `pom.xml` 他の 2 つのリポジトリーに含まれるプロジェクトを宣言するファイル。
+例えば、3 つのリポジトリがあり、それぞれに `main` という名前のブランチが 1 つあるとします。プライマリリポジトリ（パイプラインで設定されたもの）の `main` ブランチには、他の 2 つのリポジトリに含まれているプロジェクトを宣言している `pom.xml` ファイルがあります。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -97,14 +97,14 @@ $ git submodule update --init
 </project>
 ```
 
-次に、他の 2 つのリポジトリ用のサブモジュールを追加します。
+この状況で、他の 2 つのリポジトリにサブモジュールを追加します。
 
 ```shell
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectA/ project-a
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectB/ project-b
 ```
 
-その結果、 `.gitmodules` ファイルの内容は次のようになります。
+その結果、`.gitmodules` ファイルの内容は次のようになります。
 
 ```text
 [submodule "project-a"]
@@ -117,16 +117,16 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
     branch = main
 ```
 
-git サブモジュールについて詳しくは、 [Git リファレンスマニュアル](https://git-scm.com/book/ja/v2/Git-Tools-Submodules)
+Git サブモジュールについて詳しくは、[Git リファレンスマニュアル](https://git-scm.com/book/ja/v2/Git-Tools-Submodules)を参照してください。
 
-### 制限と Recommendations {#limitations-recommendations}
+### 制限事項と推奨事項 {#limitations-recommendations}
 
 Git サブモジュールを使用する場合は、次の制限事項に注意してください。
 
-* Git の URL は、前の節で説明した構文に正確に含まれている必要があります。
+* Git の URL は、前述の節で説明した構文に正確に一致している必要があります。
 * ブランチのルートにあるサブモジュールのみがサポートされます。
-* セキュリティ上の理由から、資格情報を Git URL に埋め込まないでください。
+* セキュリティ上の理由から、Git の URL に資格情報を埋め込まないでください。
 * 特に必要がない限り、シャローサブモジュールを使用することを強くお勧めします。
    * それには、サブモジュールごとに `git config -f .gitmodules submodule.<submodule path>.shallow true` を実行します。
-* Git サブモジュール参照は、特定の Git コミットに保存されます。 その結果、サブモジュールリポジトリを変更する場合は、参照されるコミットを更新する必要があります。
-   * 例えば、 `git submodule update --remote`
+* Git サブモジュール参照は、特定の Git コミットに保存されます。その結果、サブモジュールリポジトリに対して変更を加えた場合は、 参照されるコミットを更新する必要があります。
+   * 使用するコマンドの例：`git submodule update --remote`
