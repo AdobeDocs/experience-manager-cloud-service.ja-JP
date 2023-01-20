@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2337'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 | ブループリントのアクティベート時にアクティベート | ソースが公開されたときにライブコピーを公開します。 | アクティベート時 | `targetActivate` |
 | ブループリントのアクティベート解除時にアクティベート解除 | ソースがアクティベート解除されたときにライブコピーをアクティベート解除します。 | アクティベート解除時 | `targetDeactivate` |
 | 変更時にプッシュ | ソースが変更されたときに、ライブコピーにコンテンツをプッシュします。<br>このロールアウト設定は慎重に使用してください（「変更時」トリガーを使用するので）。 | 変更時 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren` |
-| 変更時にプッシュ（シャロー） | 参照を更新することなく、ブループリントページが変更されたときに、ライブコピーにコンテンツをプッシュします（シャローコピーの場合など）<br>このロールアウト設定は、[ 変更時 ]トリガーを使用するので、慎重に使用してください。 | 変更時 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
+| 変更時にプッシュ（シャロー） | ブループリントページが変更された場合に、参照を更新せずにコンテンツをライブコピーにプッシュします（シャローコピーの場合など）。<br>このロールアウト設定は、変更時トリガーを使用するため、慎重に使用してください。 | 変更時 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
 | ローンチを昇格 | ローンチページを昇格するための標準のロールアウト設定。 | ロールアウト時 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
 
 ### 同期アクション {#synchronization-actions}
