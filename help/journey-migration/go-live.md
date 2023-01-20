@@ -3,9 +3,9 @@ title: 運用開始
 description: コードとコンテンツがクラウドに対応した後に移行を実行する方法について
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 source-git-commit: 6e5743a1b31cf4992e6477050e434a651153fad1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1729'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -144,7 +144,7 @@ ht-degree: 95%
          * [SSL 証明書の管理の概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          * [SSL 証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * カスタムドメイン名（DNS）の管理
-         * DNS カットオーバーで予期しない問題が発生しないようにするには、運用を開始して UAT テストを実行する前に、実稼動インスタンスをに接続するテストサブドメインを作成することをお勧めします。 したがって、ドメインが example.com の場合は、サブドメイン test.example.com を作成し、実稼動環境に適用できます。 ドメインの UAT テスト中に、適切なリンクリダイレクト、キャッシュ、Dispatcher 設定などを探す必要があります。
+         * DNS カットオーバーによって予期しない問題が発生しないことを確認するには、実稼動インスタンスを接続するテスト用サブドメインを作成してから、運用を開始して一連の UAT テストを行うことをお勧めします。したがって、ドメインが example.com の場合は、サブドメイン test.example.com を作成して、実稼動環境に適用することができます。 ドメインの UAT テスト中に、適切なリンクリダイレクト、キャッシュ、Dispatcher 設定などを探す必要があります。
          * [カスタムドメイン名の概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          * [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          * [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
@@ -153,7 +153,7 @@ ht-degree: 95%
       * TTL が非常に大きい場合、DNS レコードの更新が反映されるまでに時間がかかります。
 * ビジネス要件とビジネス目標を満たすパフォーマンステストとセキュリティテストを実行します。
 * カットオーバーし、新しいデプロイメントやコンテンツの更新を行わずに実際の運用開始が確実に実行されるようにします。
-* Admin Consoleユーザー通知グループを作成します。 詳しくは、 [通知用のユーザーグループ](/help/journey-onboarding/user-groups.md)
+* Admin Console ユーザー通知グループを作成します。 詳しくは、[通知用のユーザーグループ](/help/journey-onboarding/user-groups.md)を参照してください。
 
 移行の実行中にタスクを再調整する必要がある場合は、いつでもリストを参照できます。
 
