@@ -3,9 +3,9 @@ title: 大規模なコンテンツリポジトリーの処理
 description: この節では、大規模なコンテンツリポジトリーの処理について説明します
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 source-git-commit: 7a9c601dd42aed9fbd0113e71c1c7a58b5bba8f7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1732'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -32,16 +32,16 @@ ht-degree: 76%
 
 * 各移行セットはデータストア全体をコピーするので、1 つの移行セットのみを使用する必要がある。
 
-* ソース AEM インスタンスを実行するインスタンス（または VM）に [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) をインストールするには、アクセス権が必要である。
+* ソース AEM インスタンスを実行するインスタンス（または VM）に [AzCopy](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-v10) をインストールするには、アクセス権が必要である。
 
 * データストアのガベージコレクションが、ソース上で過去 7 日以内に実行されている。詳しくは、[データストアのガベージコレクション](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=ja#data-store-garbage-collection)を参照してください。
 
 
 ### ソース AEM インスタンスが Amazon S3 または Azure Blob Storage データストアを使用するように設定されている場合の追加の考慮事項 {#additional-considerations-amazons3-azure}
 
-* Amazon S3 と Azure Blob Storage の両方からのデータ転送に関連するコストがあるので、転送コストは既存のストレージコンテナ内のデータの総量 (AEMで参照されているかどうかに関わらず ) に対する相対的な値になります。 詳しくは、[Amazon S3](https://aws.amazon.com/s3/pricing/) および [Azure Blob Storage](https://azure.microsoft.com/ja-jp/pricing/details/bandwidth/) を参照してください。
+* Amazon S3 と Azure Blob Storage の両方からのデータ転送にはコストがかかるため、転送コストは、（AEM で参照されているかどうかに関係なく）既存のストレージ コンテナ内のデータの総量に比例します。詳しくは、[Amazon S3](https://aws.amazon.com/s3/pricing/) および [Azure Blob Storage](https://azure.microsoft.com/ja-jp/pricing/details/bandwidth/) を参照してください。
 
-* 既存のソースAmazon S3 バケット用のアクセスキーと秘密鍵のペア、または既存のソース Azure Blob Storage コンテナ用の SAS URI が必要です（読み取り専用アクセスは問題ありません）。
+* 既存のソース Amazon S3 バケット用のアクセスキーと秘密鍵のペア、または既存のソース Azure Blob Storage コンテナ用の SAS URI が必要です（読み取り専用アクセスで問題ありません）。
 
 ### ソース AEM インスタンスがファイルデータストアを使用するように設定されている場合の追加の考慮事項 {#additional-considerations-aem-instance-filedatastore}
 
@@ -49,7 +49,7 @@ ht-degree: 76%
 
 * AzCopy を有効にして抽出を実行するたびに、ファイルデータストア全体が統合され、クラウド移行コンテナにコピーされます。移行セットがデータストアのサイズより大幅に小さい場合、AzCopy 抽出は最適なアプローチではありません。
 
-* AzCopy を使用して既存のデータストアをコピーした後は、差分抽出または追加抽出で無効にします。
+* AzCopy を使用して既存のデータストアをコピーした後は、差分抽出または追加抽出に対しては AzCopy を無効にします。
 
 ## AzCopy をコピー前手順として使用する設定 {#setting-up-pre-copy-step}
 
@@ -63,7 +63,7 @@ ht-degree: 76%
 
 #### Azure Blob ストレージデータストア {#azure-blob-storage}
 
-Azure ポータルの既存のコンテナプロパティページから、 **サイズを計算** ボタンを使用して、コンテナ内のすべてのコンテンツのサイズを指定します。 次に例を示します。
+Azure portal の既存のコンテナープロパティページから、「**サイズを計算**」ボタンを使用して、コンテナ内のすべてのコンテンツのサイズを決定します。次に例を示します。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
@@ -77,26 +77,26 @@ Azure ポータルの既存のコンテナプロパティページから、 **�
 #### ファイルデータストア {#file-data-store-determine-size}
 
 * Mac および UNIX システムの場合は、データストアディレクトリで du コマンドを実行してサイズを取得します。
-   `du -sh [path to datastore on the instance]` を使用して作成します。例えば、データストアが `/mnt/author/crx-quickstart/repository/datastore` にある場合は、次のコマンドでそのサイズを取得できます。`du -sh /mnt/author/crx-quickstart/repository/datastore`
+   `du -sh [path to datastore on the instance]`例えば、データストアが `/mnt/author/crx-quickstart/repository/datastore` にある場合は、次のコマンドでそのサイズを取得できます。`du -sh /mnt/author/crx-quickstart/repository/datastore`
 
 * Windows の場合は、データストアディレクトリで dir コマンドを使用してサイズを取得します。
    `dir /a/s [location of datastore]`
 
 ### 1. AzCopy をインストールする {#install-azcopy}
 
-[AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) は、Microsoft が提供するコマンドラインツールであり、この機能を有効にするには、ソースインスタンス上で利用可能である必要があります。
+[AzCopy](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-v10) は、Microsoft が提供するコマンドラインツールであり、この機能を有効にするには、ソースインスタンス上で利用可能である必要があります。
 
-つまり、 [AzCopy のドキュメントページ](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) から Linux x86-64 バイナリをダウンロードし、/usr/bin のような場所に un-tar する必要があります。
+つまり、 [AzCopy のドキュメントページ](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-v10) から Linux x86-64 バイナリをダウンロードし、/usr/bin のような場所に un-tar する必要があります。
 
 >[!IMPORTANT]
 >後の手順でバイナリへのフルパスが必要になるので、バイナリを配置した場所をメモしておきます。
 
-### 2. AzCopy サポートを使用してコンテンツ転送ツール (CTT) リリースをインストールする {#install-ctt-azcopy-support}
+### 2. AzCopy をサポートするコンテンツ転送ツール（CTT）リリースをインストールする {#install-ctt-azcopy-support}
 
 >[!IMPORTANT]
 >最新のリリースバージョンの CTT を使用する必要があります。
 
-Amazon S3、Azure Blob ストレージ、ファイルデータストアの AzCopy のサポートは、最新の CTT リリースに含まれています。
+最新の CTT リリースには Amazon S3、Azure Blob Storage、ファイルデータストアの AzCopy のサポートが含まれています。
 CTT の最新リリースは、[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)ポータルからダウンロードできます。
 
 
@@ -113,7 +113,7 @@ Azcopy.config ファイルには、次のプロパティを含める必要があ
 
 >[!NOTE]
 >
-> 既存の BLOB ストレージコンテナに対する書き込みアクセス権を付与しない場合は、読み取りおよびリスト権限のみを持つ新しい SAS URI を生成できます。
+> 既存の BLOB ストレージコンテナへの書き込みアクセスを許可しない場合は、読み取りとリストの権限のみを持つ新しい SAS URI を生成することができます。
 
 ```
 azCopyPath=/usr/bin/azcopy
@@ -138,7 +138,7 @@ s3SecretKey=--REDACTED--
 
 #### ファイルデータストア {#file-data-store-azcopy-config}
 
-お使いの `azcopy.config` ファイルには、azCopyPath プロパティと、ファイルデータストアの場所を指すオプションの repository.home プロパティを含める必要があります。 インスタンスに正しい値を使用します。
+お使いの `azcopy.config` ファイルには、azCopyPath プロパティと、ファイルデータストアの場所を指すオプションの repository.home プロパティが記述されている必要があります。インスタンスに正しい値を使用します。
 ファイルデータストア
 
 ```
@@ -146,7 +146,7 @@ azCopyPath=/usr/bin/azcopy
 repository.home=/mnt/crx/author/crx-quickstart/repository/datastore
 ```
 
-azCopyPath プロパティには、ソースAEMインスタンスに azCopy コマンドラインツールがインストールされている場所のフルパスを含める必要があります。 azCopyPath プロパティが見つからない場合、BLOB の事前コピー手順は実行されません。
+azCopyPath プロパティには、ソース AEM インスタンスに azCopy コマンドラインツールがインストールされている場所のフルパスを記述する必要があります。azCopyPath プロパティが見つからない場合は、BLOB の事前コピー手順は実行されません。
 
 `repository.home` プロパティが azcopy.config にない場合は、デフォルトのデータストア場所 `/mnt/crx/author/crx-quickstart/repository/datastore` が事前コピーの実行に使用されます。
 
@@ -194,12 +194,11 @@ AzCopy がソースファイルデータストアに対して実行されてい�
 
 ### 5. AzCopy で取り込む {#ingesting-azcopy}
 
-参照： [Target へのコンテンツの取り込み](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html)
-Cloud Acceleration Manager(CAM) からターゲットにコンテンツを取り込む方法に関する一般的な情報 (「新規取り込み」ダイアログで AzCopy（プリコピー）を使用する方法や使用しない方法など )。
+Cloud Acceleration Manager（CAM）からターゲットにコンテンツを取り込む方法に関する一般的な情報については、[ターゲットへのコンテンツの取り込み](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=ja)を参照してください。これには、「新規取り込み」ダイアログで AzCopy（事前コピー）を使用する方法、または使用しない方法が含まれます。 
 
-取り込み中に AzCopy を利用するには、少なくともバージョン 2021.6.5561 のAEMas a Cloud Serviceバージョンを使用する必要があります。
+取り込み中に AzCopy を利用するには、バージョン 2021.6.5561 以上の AEM as a Cloud Service バージョンを使用する必要があります。
 
-進行状況を確認するには、Cloud Acceleration Manager の「取り込みジョブ」リストと取り込みのログを参照してください。  成功した AzCopy タスクに関連するログエントリは、次のように表示されます（いくつかの違いを許可）。 ログを確認すると、問題が早く発生したことが警告され、問題の迅速な解決に役立つ場合があります。
+進行状況を確認するには、Cloud Acceleration Manager の「取り込みジョブ」リストと取り込みのログを参照してください。  成功した AzCopy タスクに関連するログエントリは、次のように表示されます（多少の違いがあります）。 ログを時々確認することで、早い段階で問題を警告し、問題の迅速な解決策を見つけることができます。
 
 ```
 *************** Beginning AzCopy pre-copy phase ***************
@@ -229,4 +228,4 @@ Final Job Status: CompletedWithSkipped
 
 ## 次のステップ {#whats-next}
 
-大きなコンテンツリポジトリの処理を学習し、コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮して、コンテンツをAEM as a Cloud Serviceに移動する方法を学習したら、コンテンツ転送ツールを使用して抽出プロセスを学習できます。 コンテンツ転送ツールで移行セットを抽出する方法について詳しくは、[ソースからのコンテンツの抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)を参照してください。
+コンテンツを AEM as a Cloud Service に移行するコンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮するための大規模コンテンツリポジトリ処理を理解したら、コンテンツ転送ツールでの抽出プロセスを学ぶ準備が整いました。コンテンツ転送ツールで移行セットを抽出する方法について詳しくは、[ソースからのコンテンツの抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)を参照してください。
