@@ -11,9 +11,9 @@ kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '386'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -52,10 +52,10 @@ AEM サイトと AEM CIF コアコンポーネントを専用のストア表示�
 4. AEM Sites に子設定を割り当てます。
 
    * AEM Sites コンソールに移動します。
-   * サイト構造の地域または言語ルート（例：/content/venia/us）に移動します。 _または_ Venia サンプルページの場合は/content/venia/us/en
+   * サイト構造の地域または言語ルート（例えば、Venia サンプルページの場合は /content/venia/us _または_ /content/venia/us/en）に移動します。
    * ページを選択し、ページのプロパティを開きます。
    * 「詳細」タブを選択します。
-   * `Configuration` セクションで、手順で作成した設定を選択します。3
+   * `Configuration` セクションで、手順で作成した設定を選択します。 3
 
 ## その他のリソース
 
