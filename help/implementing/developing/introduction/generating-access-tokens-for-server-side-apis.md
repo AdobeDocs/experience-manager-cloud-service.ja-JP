@@ -2,26 +2,32 @@
 title: サーバー側 API のアクセストークンの生成
 description: セキュアな JWT トークンを生成してサードパーティサーバーと AEM as a Cloud Service の間の通信を容易にする方法について説明します。
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: dd6753c6605d5c48c54d173803a541db54991481
+source-git-commit: 41458eb1fba12e8ef45a32d3bb6fc5dd732f78ec
 workflow-type: tm+mt
-source-wordcount: '1436'
-ht-degree: 100%
+source-wordcount: '2199'
+ht-degree: 36%
 
 ---
 
 # サーバー側 API のアクセストークンの生成 {#generating-access-tokens-for-server-side-apis}
 
+>[!AVAILABILITY]
+>
+>Adobeは、この記事で説明する新しい多資格情報および資格情報の失効機能を徐々に展開する過程です。 組織のAEM開発者コンソールの「統合」タブを確認すると、画面が以下のスクリーンショットとは異なる場合、新しい変更はまだ組織にロールアウトされていないことを意味します。 この場合、 [レガシードキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md).
+
 一部のアーキテクチャでは、AEM インフラストラクチャの外部にあるサーバーにホストされているアプリケーションから AEM as a Cloud Service への呼び出しの実行がベースになっています。例えば、モバイルアプリケーションがサーバーを呼び出し、その後、サーバーが AEM as a Cloud Service に対して API リクエストを行います。
 
 サーバー間フローと簡略化した開発フローを以下に示します。認証プロセスに必要なトークンの生成には、AEM as a Cloud Service [開発者コンソール](development-guidelines.md#crxde-lite-and-developer-console)を使用します。
 
+<!-- Alexandru: hiding this until the tutorials reflect the new UI
+
 >[!NOTE]
 >
->このドキュメントに加えて、[AEM as a Cloud Service のトークンベース認証](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ja#authentication)と[統合のためのログイントークンの取得](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html?lang=ja)チュートリアルも参考にしてください。
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## サーバー間フロー {#the-server-to-server-flow}
 
-IMS 組織管理者の役割を持ち、AEM オーサー上の「AEM ユーザー」または「AEM 管理者」製品プロファイルのメンバーでもあるユーザーは、AEM as a Cloud Service 資格情報を生成できます。その資格情報は後で、AEM as a Cloud Service 環境管理者の役割を持つユーザーに取得され、サーバーにインストールされることになるので、秘密鍵として慎重に取り扱う必要があります。この JSON 形式のファイルには、AEM as a Cloud Service API との統合に必要なすべてのデータが含まれています。このデータを使用して署名済み JWT トークンが作成され、IMS との間で IMS アクセストークンと交換されます。その後、このアクセストークンをベアラー認証トークンとして使用して、AEM as a Cloud Service にリクエストを行うことができます。資格情報はデフォルトで 1 年後に期限切れになりますが、[ここ](#refresh-credentials)の説明に従って、必要に応じて更新することができます。
+IMS 組織管理者の役割を持ち、AEM オーサーのAEM Users またはAEM Administrators 製品プロファイルのメンバーでもあるユーザーは、AEMのas a Cloud Serviceの資格情報のセットを生成できます。各資格情報は、証明書（公開鍵）、秘密鍵、次にから成る技術アカウントを含む JSON ペイロードです `clientId` および `clientSecret`. その後、これらの資格情報は、AEMas a Cloud Serviceの環境管理者の役割を持つユーザーが取得でき、AEM以外のサーバーにインストールして、秘密鍵として慎重に扱う必要があります。 この JSON 形式のファイルには、AEM as a Cloud Service API との統合に必要なすべてのデータが含まれています。このデータは、署名済みの JWT トークンの作成に使用され、AdobeのIdentity Management Services(IMS) と IMS アクセストークンと交換されます。 その後、このアクセストークンをベアラー認証トークンとして使用して、AEM as a Cloud Service にリクエストを行うことができます。資格情報に含まれる証明書は、デフォルトで 1 年後に期限切れになりますが、説明に従って、必要に応じて更新できます [ここ](#refresh-credentials).
 
 サーバー間フローは次のステップで構成されます。
 
@@ -33,41 +39,35 @@ IMS 組織管理者の役割を持ち、AEM オーサー上の「AEM ユーザ�
 
 ### AEM as a Cloud Service 資格情報の取得 {#fetch-the-aem-as-a-cloud-service-credentials}
 
-AEM as a Cloud Service 開発者コンソールにアクセスできるユーザーには、特定の環境用の「統合」タブのほか、2 つのボタンが開発者コンソールに表示されます。AEM as a Cloud Service 環境管理者の役割を持つユーザーは、「**サービス資格情報を生成**」ボタンをクリックして、サービス資格情報の JSON を生成および表示できます。この JSON には、ポッドの選択に関係なく、クライアント ID、クライアントシークレット、秘密鍵、証明書、環境のオーサー層とパブリッシュ層の設定など、AEM 以外のサーバーに必要な情報がすべて含まれています。
+AEM as a Cloud Service開発者コンソールへのアクセス権を持つユーザーには、特定の環境の開発者コンソールに「統合」タブが表示されます。 AEMas a Cloud Service環境管理者の役割を持つユーザーは、資格情報の作成、表示、管理をおこなうことができます。
 
-![JWT の生成](assets/JWTtoken3.png)
+クリック **新しいテクニカルアカウントを作成** ボタンをクリックすると、ポッドの選択に関係なく、環境のオーサー層とパブリッシュ層用のクライアント id、クライアントの秘密鍵、秘密鍵、証明書、設定を含む新しい資格情報のセットが作成されます。
 
-出力は次のようになります。
+![新しいテクニカルアカウントの作成](/help/implementing/developing/introduction/assets/s2s-createtechaccount.png)
 
-```
-{
-  "ok": true,
-  "integration": {
-    "imsEndpoint": "ims-na1.adobelogin.com",
-    "metascopes": "ent_aem_cloud_sdk,ent_cloudmgr_sdk",
-    "technicalAccount": {
-      "clientId": "cm-p123-e1234",
-      "clientSecret": "4AREDACTED17"
-    },
-    "email": "abcd@techacct.adobe.com",
-    "id": "ABCDAE10A495E8C@techacct.adobe.com",
-    "org": "1234@AdobeOrg",
-    "privateKey": "-----BEGIN RSA PRIVATE KEY-----\r\REDACTED\r\n==\r\n-----END RSA PRIVATE KEY-----\r\n",
-    "publicKey": "-----BEGIN CERTIFICATE-----\r\nREDACTED\r\n-----END CERTIFICATE-----\r\n"
-  },
-  "statusCode": 200
-}
-```
+新しいブラウザータブが開き、資格情報が表示されます。 この表示を使用して、ステータスのタイトルの横にあるダウンロードアイコンをクリックすると、資格情報をダウンロードできます。
 
-生成後、同じ場所の「**サービス資格情報を取得**」ボタンをクリックすることで、後日、資格情報を取得することができます。
+![認証情報のダウンロード](/help/implementing/developing/introduction/assets/s2s-credentialdownload.png)
+
+資格情報が作成されると、その資格情報が「 **テクニカルアカウント** 」タブをクリックします。 **統合** セクション：
+
+![認証情報の表示](/help/implementing/developing/introduction/assets/s2s-viewcredentials.png)
+
+ユーザーは、後で表示アクションを使用して資格情報を表示できます。 また、証明書を更新または取り消す必要がある場合に備えて、後述のように、ユーザーは新しい秘密鍵または証明書を作成することで、同じテクニカルアカウントの資格情報を変更できます。
+
+AEMas a Cloud Serviceの環境管理者の役割を持つユーザーは、後で追加のテクニカルアカウントの新しい資格情報を作成できます。 これは、API が異なればアクセス要件が異なる場合に役立ちます。 例えば、読み取りと読み取り/書き込みが可能です。
+
+>[!NOTE]
+>
+>お客様は、既に削除されているテクニカルアカウントを含め、最大 10 個のテクニカルアカウントを作成できます。
 
 >[!IMPORTANT]
 >
->資格情報を生成して、AEM as a Cloud Service 環境への管理者権限を持つユーザーが後で取得できるようにするには、AEM オーサー上の「AEM ユーザー」または「AEM 管理者」製品プロファイルのメンバーでもある IMS 組織管理者（通常は、Cloud Manager を介して環境をプロビジョニングしたユーザーと同じ）が、まず開発者コンソールにアクセスして「**サービス資格情報を生成**」ボタンをクリックする必要があります。IMS 組織管理者がこの操作をまだ行っていない場合は、IMS 組織管理者の役割が必要であることを通知するメッセージが表示されます。
+>AEM オーサーインスタンスのAEMユーザーまたはAEM管理者製品プロファイルのメンバーでもある IMS 組織管理者（通常は Cloud Manager を使用して環境をプロビジョニングした同じユーザー）は、最初に開発者コンソールにアクセスし、 **新しいテクニカルアカウントを作成** ボタンを使用して、資格情報を生成し、AEMas a Cloud Service環境に対する管理者権限を持つユーザーが後で取得することができます。 IMS 組織管理者がこの操作をまだ行っていない場合は、IMS 組織管理者の役割が必要であることを通知するメッセージが表示されます。
 
 ### AEM 以外のサーバーへの AEM サービス資格情報のインストール {#install-the-aem-service-credentials-on-a-non-aem-server}
 
-AEM に対して呼び出しを行う AEM 以外のアプリケーションは、AEM as a Cloud Service 資格情報にアクセスしてそれをシークレットとして扱える必要があります。
+AEMを呼び出すアプリケーションは、AEMのas a Cloud Serviceの資格情報にアクセスし、秘密鍵として扱うことができます。
 
 ### JWT トークンの生成とアクセストークンとの交換  {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
@@ -97,6 +97,9 @@ exchange(config).then(accessToken => {
 
 アクセストークンには有効期限が定義されます（通常は 24 時間です）。Git リポジトリーには、アクセストークンを管理して期限切れの前に更新するサンプルコードが含まれています。
 
+>[!NOTE]
+>複数の資格情報がある場合は、後で呼び出されるAEMへの API 呼び出しに適した JSON ファイルを必ず参照してください。
+
 ### AEM API の呼び出し {#calling-the-aem-api}
 
 ヘッダーにアクセストークンを含めて、AEM as a Cloud Service 環境に対して適切なサーバー間 API 呼び出しを行います。そのため、「Authorization」ヘッダーには `"Bearer <access_token>"` の値を使用します。例えば、`curl` を使用して次のように呼び出します。
@@ -107,11 +110,80 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ### AEM のテクニカルアカウントユーザーに対する適切な権限の設定 {#set-the-appropriate-permissions-for-the-technical-account-user-in-aem}
 
-テクニカルアカウントユーザーが AEM に作成されたら（これは、対応するアクセストークンを含んだ初回リクエストの後で行われます）、AEM **内の**&#x200B;適切な権限がテクニカルアカウントユーザーに付与される必要があります。
+まず、新しい製品プロファイルをAdobe Admin Consoleで作成する必要があります。 これは、次の手順に従って実行できます。
 
-デフォルトでは、テクニカルアカウントユーザーは AEM オーサーサービスで寄稿者ユーザーグループに追加されます。このグループは AEM への読み取りアクセスが可能です。
+1. Adobe Admin Console( ) に移動します。 [https://adminconsole.adobe.com/](https://adminconsole.adobe.com/)
+1. を押します。 **管理** 下のリンク **製品とサービス** 列を左側に配置します。
+1. 選択 **AEMas a Cloud Service**
+1. を押します。 **新しいプロファイル** ボタン
 
-AEM のこのテクニカルアカウントユーザーには、通常の方法を使用して、さらに権限を付与することができます。
+   ![新しいプロファイル](/help/implementing/developing/introduction/assets/s2s-newproductprofile.png)
+
+1. プロファイルに名前を付け、 **保存**
+
+   ![プロファイルを保存](/help/implementing/developing/introduction/assets/s2s-saveprofile.png)
+
+1. 作成したプロファイルをプロファイルリストから選択します
+1. を押します。 **ユーザーを追加** ボタン
+
+   ![ユーザーを追加](/help/implementing/developing/introduction/assets/s2s-addusers.png)
+
+1. 作成したテクニカルアカウントを追加します ( この場合は `84b2c3a2-d60a-40dc-84cb-e16b786c1673@techacct.adobe.com`) をクリックし、 **保存**
+
+   ![テクニカルアカウントを追加](/help/implementing/developing/introduction/assets/s2s-addtechaccount.png)
+
+1. 変更が有効になるまで 10 分待ち、新しい資格情報から生成されたアクセストークンでAEMに対する API 呼び出しをおこないます。 cURL コマンドの場合、次の例のようになります。
+
+   `curl -H "Authorization: Bearer <access_token>" https://author-pXXXXX-eXXXXX.adobeaemcloud.net/content/dam.json `
+
+
+API 呼び出しをおこなうと、製品プロファイルがAEMas a Cloud Serviceのオーサーインスタンスにユーザーグループとして表示され、適切なテクニカルアカウントがそのグループのメンバーとして表示されます。
+
+これを確認するには、次の手順を実行する必要があります。
+
+1. オーサーインスタンスにログインします。
+1. に移動します。 **ツール** - **セキュリティ** をクリックし、 **グループ** カード
+1. グループのリストで作成したプロファイルの名前を探し、それをクリックします。
+
+   ![グループプロファイル](/help/implementing/developing/introduction/assets/s2s-groupprofile.png)
+
+1. 次のウィンドウで、 **メンバー** 」タブに移動し、テクニカルアカウントが正しく一覧表示されているかどうかを確認します。
+
+   ![「メンバー」タブ](/help/implementing/developing/introduction/assets/s2s-techaccountmembers.png)
+
+
+または、オーサーインスタンスで次の手順を実行して、テクニカルアカウントがユーザーリストに表示されることを確認することもできます。
+
+1. に移動します。 **ツール** - **セキュリティ** - **ユーザー**
+1. お使いのテクニカルアカウントがユーザーリストであることを確認し、それをクリックします
+1. をクリックします。 **グループ** 」タブを使用して、ユーザーが製品プロファイルに対応するグループに属していることを確認します。 また、このユーザーは、寄稿者を含む一部の他のグループのメンバーでもあります。
+
+   ![グループのメンバーシップ](/help/implementing/developing/introduction/assets/s2s-groupmembership.png)
+
+>[!NOTE]
+>
+>2023 年半ば以前は、複数の資格情報を作成できる前は、Adobeの Admin Console で製品プロファイルを作成するガイドがおこなわれていなかったので、技術アカウントはAEMas a Cloud Serviceインスタンスの「寄稿者」以外のグループに関連付けられていませんでした。 一貫性を保つため、このテクニカルアカウントの場合は、前述のようにAdobe Admin Consoleで新しい製品プロファイルを作成し、既存のテクニカルアカウントをそのグループに追加することをお勧めします。
+
+<u>**適切なグループ権限の設定**</u>
+
+最後に、API を適切に呼び出すかロックダウンするために必要な適切な権限でグループを設定します。 次の方法で実行できます。
+
+1. 適切なオーサーインスタンスにログインし、に移動します。 **設定** - **セキュリティ** - **権限**
+1. 左側のパネルで製品プロファイルに対応するグループの名前（この場合は読み取り専用 API）を検索し、クリックします。
+
+   ![グループを検索](/help/implementing/developing/introduction/assets/s2s-searchforgroup.png)
+
+1. 次のウィンドウで「編集」ボタンをクリックします。
+
+   ![権限を編集](/help/implementing/developing/introduction/assets/s2s-editpermissions.png) 
+
+1. 権限を適切に変更し、「 **保存**
+
+   ![権限の編集の確認](/help/implementing/developing/introduction/assets/s2s-confirmeditpermissions.png)
+
+>[!INFO]
+>
+>Identity Management System(IMS)AdobeとAEMユーザーおよびグループについて詳しくは、 [ドキュメント](/help/security/ims-support.md).
 
 ## 開発者フロー {#developer-flow}
 
@@ -134,9 +206,10 @@ AEM as a Cloud Service 開発者コンソールの使用に必要な権限につ
 
 ### アクセストークンの生成 {#generating-the-access-token}
 
-アクセストークンを生成するには、開発者コンソールで「**ローカル開発トークンを取得**」ボタンをクリックします。
+1. 次に移動： **ローカルトークン** under **統合**
+1. アクセストークンを生成するには、開発者コンソールで「**ローカル開発トークンを取得**」ボタンをクリックします。
 
-### アクセストークンを指定した AEM アプリケーションの呼び出し {#call-the-aem-application-with-an-access-token}
+### アクセストークンでのAEMアプリケーションの呼び出し {#call-the-aem-application-with-an-access-token}
 
 ヘッダーにアクセストークンを含めて、AEM 以外のアプリケーションから AEM as a Cloud Service 環境に対して適切なサーバー間 API 呼び出しを行います。そのため、「Authorization」ヘッダーには `"Bearer <access_token>"` の値を使用します。
 
@@ -144,23 +217,41 @@ AEM as a Cloud Service 開発者コンソールの使用に必要な権限につ
 
 デフォルトでは、AEM as a Cloud Service 資格情報は 1 年後に期限切れになります。サービスの継続性を確保するために、開発者は資格情報を更新して、利用期間をさらに 1 年間延長することができます。
 
-それには、開発者コンソールの「**統合**」タブで「**サービス資格情報を更新**」ボタンを使用します（下図を参照）。
+これを実現するには、次の操作を実行します。
 
-![資格情報の更新](assets/credential-refresh.png)
+* 以下を使用： **証明書を追加** 下のボタン **統合** - **テクニカルアカウント** 開発者コンソールで、次に示すように
 
-ボタンをクリックすると、新しい資格情報セットが生成されます。新しい資格情報でシークレットストレージを更新し、新しい資格情報が正常に機能していることを検証できます。
+   ![資格情報の更新](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
 
->[!NOTE]
->
-> 「**サービス資格情報を更新**」ボタンをクリックしても、古い資格情報は期限が切れるまで登録されたままになりますが、開発者コンソールには常に最新のセットのみ表示されます。
+* ボタンを押すと、新しい証明書を含む一連の資格情報が生成されます。 古い資格情報を削除せずに、オフAEMサーバーに新しい資格情報をインストールし、接続が期待どおりに動作することを確認します。 
+* アクセストークンを生成する際に、古い資格情報ではなく新しい資格情報が使用されていることを確認します
+* 必要に応じて、以前の証明書を失効（および削除）して、AEM as a Cloud Serviceでの認証に使用できなくします。
 
-## サービス資格情報の失効 {#service-credentials-revocation}
+## 資格情報失効 {#credentials-revocation}
 
-資格情報を取り消す必要がある場合は、次の手順に従って、カスタマーサポートにリクエストを送信する必要があります。
+秘密鍵が侵害された場合は、新しい証明書と新しい秘密鍵で資格情報を作成する必要があります。 アプリケーションが新しい資格情報を使用してアクセストークンを生成した後、古い証明書を失効および削除できます。
 
-1. ユーザーインターフェイスで Adobe Admin Console のテクニカルアカウントユーザーを無効にします。
-   * Cloud Manager で、環境の横にある **...** ボタンをクリックします。製品プロファイルページが開きます。
-   * **AEM ユーザー**&#x200B;プロファイルをクリックして、ユーザーのリストを表示します。
-   * 「**API 資格情報**」タブをクリックし、該当するテクニカルアカウントユーザーを探して削除します。
-2. カスタマーサポートに連絡し、その特定の環境のサービス資格情報を削除するようにリクエストします。
-3. 最後に、このドキュメントの説明に従って、資格情報を再生成します。また、作成した新しいテクニカルアカウントユーザーに適切な権限があることも確認してください。
+これは、次の手順で行います。
+
+1. まず、新しいキーを追加します。 これにより、新しい秘密鍵と新しい証明書を持つ資格情報が生成されます。 新しい秘密鍵は、UI で **現在** 今後、このテクニカルアカウントのすべての新しい資格情報に使用されます。 古い秘密鍵に関連付けられている資格情報は、取り消されるまで有効です。 これを行うには、**...**) をクリックし、を押します。 **新しい秘密鍵を追加**:
+
+   ![新しい秘密鍵を追加](/help/implementing/developing/introduction/assets/s2s-addnewprivatekey.png)
+
+1. 押す **追加** 次のプロンプトに対して実行します。
+
+   ![新しい秘密鍵の追加を確認](/help/implementing/developing/introduction/assets/s2s-addprivatekeyconfirm.png)
+
+   新しいレンダリアルを含む新しい参照タブが開き、UI が更新されて秘密鍵が両方とも表示されます。新しい参照タブは **現在**:
+
+   ![UI の秘密鍵](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
+
+1. AEM以外のサーバーに新しい資格情報をインストールし、接続が期待どおりに動作することを確認します。 詳しくは、 [サーバー間フローセクション](#the-server-to-server-flow) この方法の詳細については、を参照してください。
+1. 古い証明書を失効します。 これを行うには、3 つのドット (**...**) をクリックし、 **失効**:
+
+   ![証明書を失効](/help/implementing/developing/introduction/assets/s2s-revokecert.png)
+
+   次に、次のプロンプトで「 **失効** ボタン：
+
+   ![証明書の確認を取り消す](/help/implementing/developing/introduction/assets/s2s-revokecertificateconfirmation.png)
+
+1. 最後に、問題が発生した証明書を削除します。
