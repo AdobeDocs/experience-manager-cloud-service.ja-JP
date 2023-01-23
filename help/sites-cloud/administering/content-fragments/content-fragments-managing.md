@@ -241,8 +241,8 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## フラグメントの公開と参照 {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
-フラグメントがモデルに基づいている場合、その[モデルが公開されている](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)ことを確認してください。
-まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
+>フラグメントがモデルに基づいている場合、その[モデルが公開されている](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)ことを確認してください。
+>まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
 
 コンテンツフラグメントをパブリッシュ環境で使用するには、公開する必要があります。これは、Assets の標準機能を使用して行います。
 
@@ -260,17 +260,17 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 さらに、[フラグメントを使用するページを公開](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)するとき。フラグメントはページ参照にリスト表示されます。
 
 >[!CAUTION]
-フラグメントが公開または参照（あるいは両方）された後に、作成者がフラグメントを開いて編集しようとすると警告が表示され、フラグメントを変更すると、参照されているページにも影響が及ぶことが警告されます。
+>フラグメントが公開または参照（あるいは両方）された後に、作成者がフラグメントを開いて編集しようとすると警告が表示され、フラグメントを変更すると、参照されているページにも影響が及ぶことが警告されます。
 
 ## フラグメントの非公開 {#unpublishing-a-fragment}
 
 コンテンツフラグメントを非公開にするには、1 つ以上のフラグメントを選択してから、**非公開**&#x200B;します。
 
 >[!NOTE]
-公開されたフラグメントが利用可能になると、**非公開**&#x200B;アクションが表示されます。
+>公開されたフラグメントが利用可能になると、**非公開**&#x200B;アクションが表示されます。
 
 >[!CAUTION]
-フラグメントが既に別のフラグメントから参照されている場合、またはページから参照されている場合は、警告メッセージが表示され、続行を確認する必要があります。
+>フラグメントが既に別のフラグメントから参照されている場合、またはページから参照されている場合は、警告メッセージが表示され、続行を確認する必要があります。
 
 ## フラグメントの削除 {#deleting-a-fragment}
 
@@ -280,13 +280,13 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 2. フラグメントを選択します。
 
    >[!NOTE]
-   **削除**&#x200B;アクションはクイックアクションとして実行できません。
+   >**削除**&#x200B;アクションはクイックアクションとして実行できません。
 
 3. ツールバーから「**削除**」を選択します。
 4. 「**削除**」アクションを確認します。
 
    >[!CAUTION]
-   フラグメントが既に別のフラグメントから参照されている場合、またはページから参照されている場合は、警告メッセージが表示されます。「**削除を強制**」を選択して続行を確認する必要があります。フラグメントはコンテンツフラグメントコンポーネントと一緒に、すべてのコンテンツページから削除されます。
+   >フラグメントが既に別のフラグメントから参照されている場合、またはページから参照されている場合は、警告メッセージが表示されます。「**削除を強制**」を選択して続行を確認する必要があります。フラグメントはコンテンツフラグメントコンポーネントと一緒に、すべてのコンテンツページから削除されます。
 
 ## フラグメントの親参照の検索 {#parent-references-fragment}
 
@@ -299,7 +299,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## コンテンツフラグメントのタイムライン {#timeline-for-content-fragments}
 
 >[!NOTE]
-この機能は、**Assets** コンソールでのみ利用できます
+>この機能は、**Assets** コンソールでのみ利用できます
 
 [タイムライン](/help/assets/manage-digital-assets.md#timeline)では標準のオプションに加え、コンテンツフラグメントに固有の情報とアクションの両方が提供されます。
 
@@ -319,14 +319,13 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * **削除**
 
 >[!NOTE]
-コメントは次のとおりです。
-* すべてのアセットの標準機能
-* タイムラインで追加
-* フラグメントアセットに関連付けられる
->
-注釈（コンテンツフラグメント用）は次のとおりです。
-* フラグメントエディターで入力
-* フラグメント内の選択されたテキストセグメントに固有
+>コメントは次のとおりです。
+>* すべてのアセットの標準機能
+>* タイムラインで追加
+>* フラグメントアセットに関連付けられる
+>注釈（コンテンツフラグメント用）は次のとおりです。
+>* フラグメントエディターで入力
+>* フラグメント内の選択されたテキストセグメントに固有
 >
 
 
@@ -337,7 +336,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## フラグメントのバージョンの比較 {#comparing-fragment-versions}
 
 >[!NOTE]
-この機能は、**Assets** コンソールでのみ利用できます
+>この機能は、**Assets** コンソールでのみ利用できます
 
 特定のバージョンを選択したら、「[タイムライン](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)」から「**現在のバージョンと比較**」アクションを利用できるようになります。
 
@@ -360,14 +359,14 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * 「**完了**」を選択すると、コンソールに戻ります
 
 >[!NOTE]
-フラグメントの比較中にフラグメントコンテンツを編集することはできません。
+>フラグメントの比較中にフラグメントコンテンツを編集することはできません。
 
 ![比較](assets/cfm-managing-06.png)
 
 ## 特定のバージョンへの復帰   {#reverting-to-a-version}
 
 >[!NOTE]
-この機能は、**Assets** コンソールでのみ利用できます
+>この機能は、**Assets** コンソールでのみ利用できます
 
 次の方法で特定のバージョンのフラグメントに戻すことができます。
 
