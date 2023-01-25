@@ -3,10 +3,10 @@ title: アダプティブフォームのローカリゼーション用に新し�
 seo-title: Supporting new locales for adaptive forms localization
 description: AEM Formsでは、アダプティブフォームのローカライズ用に新しいロケールを追加できます。 英語 (en)、スペイン語 (es)、フランス語 (fr)、イタリア語 (it)、ドイツ語 (de)、日本語 (ja)、ポルトガル語 — ブラジル語 (pt-BR)、中国語 (zh-TW)、韓国語 (ko-KR) のロケールです。
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: eb722054f6a51320a7772bf666f656418f8392cd
+source-git-commit: 848c6a4ea403f644408407aed0a7e06c3524d942
 workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 33%
+ht-degree: 34%
 
 ---
 
@@ -34,8 +34,8 @@ AEM Formsでは現在、アダプティブFormsコンテンツのローカライ
 1. [リポジトリを複製](#1-clone-the-repository-clone-the-repository)
 1. [GuideLocalizationService へのロケールの追加](#1-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
 1. [locale-name 固有のフォルダーを追加](#3-add-locale-name-specific-folder-add-locale-name-specific-folder)
-3.1 [XFA クライアントライブラリをロケール用に追加する](#3-add-xfa-client-library-for-a-locale)
-3.2 [アダプティブフォームのクライアントライブラリをロケール用に追加する](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
+   * [XFA クライアントライブラリをロケール用に追加](#3-add-xfa-client-library-for-a-locale)
+   * [アダプティブフォームのクライアントライブラリをロケール用に追加](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
 1. [辞書のロケールサポートの追加](#5-add-locale-support-for-the-dictionary-add-locale-support-for-the-dictionary-br)
 1. [リポジトリ内の変更をコミットし、パイプラインをデプロイします。](#7-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-changes-in-repo-deploy-pipeline)
 
@@ -63,9 +63,9 @@ AEM Formsでは現在、アダプティブFormsコンテンツのローカライ
 #### 3.1 ロケール用の XFA クライアントライブラリを locale-name フォルダーに追加する
 
 1. という名前のノードを作成します。 `[locale-name]_xfa` と入力します。 `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`、カテゴリ `xfaforms.I18N.<locale>`をクリックし、次のファイルを追加します。
-* `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N` で定義されている `<locale>` の `xfalib.locale.Strings` を定義している **I18N.js**。
-* 以下を含む **js.txt** ファイル。
-   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
+   * `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N` で定義されている `<locale>` の `xfalib.locale.Strings` を定義している **I18N.js**。
+   * 以下を含む **js.txt** ファイル。
+      */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
 
 #### 3.2.ロケール locale-name フォルダー用のアダプティブフォームクライアントライブラリを追加する {#add-adaptive-form-client-library-for-a-locale-br}
 
@@ -77,9 +77,9 @@ AEM Formsでは現在、アダプティブFormsコンテンツのローカライ
 
 1. 追加 **js.txt** には、次の情報が含まれます。
 
-   ```text
+   ```
      i18n.js
-       LogMessages.js
+     LogMessages.js
    ```
 
 ### 4.辞書のロケールサポートを追加する {#add-locale-support-for-the-dictionary-br}
@@ -143,7 +143,7 @@ Add the newly created folders in the `filter.xml` under etc/META-INF/[folder hie
 
 取得 [サンプルクライアントライブラリ](/help/forms/assets/locale-support-sample.zip) 新しいロケールのサポートを追加する場合。 必要なロケールでフォルダーのコンテンツを変更する必要があります。
 
-### 新しいローカライゼーションをサポートするためのベストプラクティス {#best-practices}
+## 新しいローカライゼーションをサポートするためのベストプラクティス {#best-practices}
 
 * Adobeは、アダプティブフォームの作成後に翻訳プロジェクトを作成することをお勧めします。
 
