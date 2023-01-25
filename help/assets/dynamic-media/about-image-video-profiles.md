@@ -4,10 +4,10 @@ description: イメージプロファイルまたはビデオプロファイル�
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: f2f805043ab3037cb8dcc8636ab162c9d0f80e19
+source-git-commit: 419ec6604ee8c93510cb8bf4e1d46bc9b9c9383a
 workflow-type: tm+mt
-source-wordcount: '1261'
-ht-degree: 100%
+source-wordcount: '1376'
+ht-degree: 89%
 
 ---
 
@@ -55,7 +55,7 @@ Dynamic Media イメージプロファイルまたは Dynamic Media ビデオプ
 
 <!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
-Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media’s Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
+Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
 
 -->
 
@@ -74,13 +74,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. ページの左上隅付近にあるドロップダウンリストで「**[!UICONTROL タイムライン]**」を選択します。
 1. ページ左下隅付近の「[!UICONTROL コメント]」フィールドの右側にあるカラットアイコン（**^**）を選択します。
 
-   ![アセット再処理ワークフロー（その 1）](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![Experience Manager内のアセットのスクリーンショットが、選択したアセットのフォルダーを示し、タイムラインドロップダウンリストがハイライト表示され、「ワークフローを開始」ボタンがハイライト表示され、「コメント」フィールドの右側にあるカラットアイコンもハイライト表示されます。](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
 1. 「**[!UICONTROL ワークフローを開始]**」を選択します。
 1. 「**[!UICONTROL ワークフローを開始]**」ドロップダウンリストから「**[!UICONTROL Scene7：アセットを再処理]**」を選択します。
 1. （オプション）「**ワークフローのタイトルを入力**」テキストフィールドに、ワークフローの名前を入力します。必要に応じて、ワークフローインスタンスを参照する名前を使用できます。
 
-   ![アセット再処理ワークフロー（その 2）](/help/assets/dynamic-media/assets/reprocess-assets2.png)
+   ![「Scene7」を使用したタイムラインユーザーインターフェイスのスクリーンショット：「ワークフローを開始」ドロップダウンリストから選択した「アセットを再処理」を選択し、「開始」ボタンがハイライト表示されます。](/help/assets/dynamic-media/assets/reprocess-assets2.png)
 
 1. 「**[!UICONTROL 開始]**」を選択したあと、「**[!UICONTROL 確認]**」を選択します。
 
@@ -95,13 +95,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. [!DNL Experience Manager] で、「**[!UICONTROL Adobe Experience Manager]**」を選択してグローバルナビゲーションコンソールにアクセスし、**[!UICONTROL ツール]**（ハンマーアイコン）／**[!UICONTROL ワークフロー／モデル]**&#x200B;を選択します。
 1. ワークフローモデルページのカード表示またはリスト表示で、「**[!UICONTROL Scene7：アセットを再処理]**」を選択します。
 
-   ![カード表示で「Scene7：アセットを再処理」ワークフローが選択されたワークフローモデルページ](/help/assets/dynamic-media/assets/reprocess-assets7.png)
+   ![ワークフローモデルページの「Scene7」のスクリーンショットExperience Managerのカード表示で選択された「アセットを再処理」ワークフロー。](/help/assets/dynamic-media/assets/reprocess-assets7.png)
 
 1. ツールバーの「**[!UICONTROL 編集]**」を選択します。新しいブラウザータブに、「Scene7：アセットを再処理」ワークフローモデルページが開きます。
 1. 「Scene7：アセットを再処理」ワークフローページで、右上隅付近の「**[!UICONTROL 編集]**」を選択して、ワークフローを「ロック解除」します。
 1. ワークフローで、Scene7 バッチアップロードコンポーネントを選択してツールバーを開き、ツールバーの「**[!UICONTROL 設定]**」を選択します。
 
-   ![Scene7 バッチアップロードコンポーネント](/help/assets/dynamic-media/assets/reprocess-assets8.png)
+   ![「Scene7 Batch Upload」コンポーネントの「Scene7」のスクリーンショット：アセットを再処理」ページを開き、「設定」アイコンの上にマウスポインターを置きます。](/help/assets/dynamic-media/assets/reprocess-assets8.png)
 
 1. **[!UICONTROL Scene7 へのバッチアップロード - ステップのプロパティ]**&#x200B;ダイアログボックスで、以下の設定を行います。
    * 「**[!UICONTROL タイトル]**」および「**[!UICONTROL 説明]**」テキストフィールドに、必要に応じて、ジョブの新しいタイトルと説明を入力します。
@@ -111,13 +111,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * 「**[!UICONTROL バッチ]**」フィールドに、Dynamic Media サーバーのアップロードジョブのバッチ処理で処理するアセットの最大数（50～1,000）を入力します。
    * タイムアウトに達したときに先に進む場合は、「**[!UICONTROL タイムアウトで先に進む]**」を選択します。タイムアウトに達したときにインボックスまで進む場合は、選択を解除します。
 
-   ![プロパティダイアログボックス](/help/assets/dynamic-media/assets/reprocess-assets3.png)
+   ![「Scene7へのバッチアップロード — ステップのプロパティ」ページのスクリーンショット。](/help/assets/dynamic-media/assets/reprocess-assets3.png)
 
 1. **[!UICONTROL Scene7 へのバッチアップロード - ステップのプロパティ]** ダイアログボックスの右上隅にある「**[!UICONTROL 完了]**」を選択します。
 
 1. 「Scene7：アセットを再処理」ワークフローモデルページの右上隅にある「**[!UICONTROL 同期]**」を選択します。「**[!UICONTROL 同期済み]**」と表示された場合、ワークフローランタイムモデルは正常に同期されており、フォルダー内のアセットを再処理する準備が整います。
 
-   ![ワークフローモデルの同期](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![Experience Manager内のアセットのスクリーンショットが、選択したアセットのフォルダーを示し、タイムラインドロップダウンリストがハイライト表示され、「ワークフローを開始」ボタンがハイライト表示され、「コメント」フィールドの右側にあるカラットアイコンもハイライト表示されます。](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
 1. 「Scene7：アセットを再処理」ワークフローモデルを表示しているブラウザータブを閉じます。
 

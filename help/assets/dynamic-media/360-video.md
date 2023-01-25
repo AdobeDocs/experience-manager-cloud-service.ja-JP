@@ -4,10 +4,10 @@ description: Dynamic Media で 360 および VR（Virtual Reality）ビデオを
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 033692b82ee366b70f69ca35d55bfac59da3157f
-workflow-type: ht
-source-wordcount: '929'
-ht-degree: 100%
+source-git-commit: 419ec6604ee8c93510cb8bf4e1d46bc9b9c9383a
+workflow-type: tm+mt
+source-wordcount: '989'
+ht-degree: 91%
 
 ---
 
@@ -29,8 +29,8 @@ Dynamic Media には、360 ビデオアセット配信のネイティブサポ�
 
 「[Space Station 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS)」を選択して、ブラウザーウィンドウを開き、360 度ビデオを視聴します。ビデオ再生中にポインターを新しい位置にドラッグすると、表示角度が変更されます。
 
-![360 ビデオのサンプル](assets/6_5_360videoiss_simplified.png)
-*Space Station 360（国際宇宙ステーションの 360 度ビデオ）のビデオフレーム*
+![Space Station 360 ビデオのビデオフレーム](assets/6_5_360videoiss_simplified.png)
+*Space Station 360 からのビデオフレーム*
 
 ## 360/VR ビデオと Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
@@ -42,8 +42,8 @@ Adobe Premier Pro を使用すれば、360/VR シーンを表示および編集�
 
 [!DNL Experience Manager] にアップロードされた 360 ビデオアセットには、通常のビデオアセットの場合と同じく、アセットページで「**マルチメディア**」というラベルが付けられます。
 
-![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
-*アップロードされた 360 ビデオアセット（カード表示）。アセットには「マルチメディア」というラベルが付けられます。*
+![カード表示に表示される、アップロードされた 360 ビデオアセット](assets/6_5_360video-selecttopreview.png)
+*アップロードされた 360 ビデオアセット（カード表示）。 アセットには「マルチメディア」というラベルが付けられます。*
 
 **360 ビデオビューアで使用するアセットをアップロードするには：**
 
@@ -104,25 +104,25 @@ Start by uploading 360 Videos.
 
 1. **[!UICONTROL Assets]** で、作成した既存の 360 ビデオに移動します。プレビューモードで開くには、360 ビデオアセットを選択します。
 
-   ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
+   ![Experience Managerのカード表示に示された、アップロードされた 360 ビデオアセットのスクリーンショット。](assets/6_5_360video-selecttopreview-1.png)
 
    ビデオをプレビューするには、360 ビデオアセットを選択します。
 
 1. プレビューページで、ページの左上隅付近にあるドロップダウンリストを選択し、「**[!UICONTROL ビューア]**」を選択します。
 
-   ![6_5_360video-preview-viewers](assets/6_5_360video-preview-viewers.png)
+   ![使用可能なビデオビューアのリストを表示するには、「ビューア」を選択した場合のスクリーンショット。](assets/6_5_360video-preview-viewers.png)
 
    「ビューア」リストから **[!UICONTROL Video360_social]** を選択した後、次のいずれかの操作を行います。
 
    * 静的シーンの視野角を変更するには、ビデオ上でポインターをドラッグします。
    * 再生を開始するには、ビデオの&#x200B;**[!UICONTROL 再生]**&#x200B;ボタンを選択します。ビデオの再生中にビデオ上でポインターをドラッグすると、視野角を変更できます。
 
-   ![6_5_360video-preview-video360-social ](assets/6_5_360video-preview-video360-social.png)*360 ビデオのスクリーンショット。*
+   ![360 度ビデオをプレビューする Video360_Social ビューアを選択するユーザーのスクリーンショット。](assets/6_5_360video-preview-video360-social.png)*360 ビデオのスクリーンショット。*
 
    * 「ビューア」リストから **[!UICONTROL Video360VR]** を選択します。
 
       バーチャルリアリティ（VR）ビデオは、バーチャルリアリティヘッドセットで視聴する、没入感のあるビデオコンテンツです。通常のビデオと同様に、360 度ビデオカメラを使用してビデオを録画またはキャプチャする際、最初に VR ビデオを作成します。
-   ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
+   ![Video360VR ビューアオプションにマウスポインターを置いたユーザーのスクリーンショット。](assets/6_5_360video-preview-video360vr.png)
    *360 VR ビデオのスクリーンショット。*
 
 1. プレビューページの右上隅付近にある「**[!UICONTROL 閉じる]**」を選択します。
