@@ -4,10 +4,10 @@ description: コンテンツフラグメントとGraphQL API をヘッドレス�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+source-git-commit: 9997e0ea1d78ab2c8bab46a95a664e8537f16b13
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 1%
+source-wordcount: '725'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,6 @@ ht-degree: 1%
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
 >title="GraphQL Explorer を起動します。"
 >abstract="GraphQLはクエリベースの API を提供し、1 回の API 呼び出しを使用して、外部のクライアントアプリケーションが必要なコンテンツに対してのみAEMをクエリできるようにします。 このモジュールでは、2 つの異なるタイプのクエリを実行する方法について説明します。 次に、前のモジュールで作成したコンテンツフラグメントからコンテンツを取得する方法を説明します。<br><br>以下をクリックして、新しいタブでこのモジュールを起動します。"
->additional-url="https://video.tv.adobe.com/v/328618/?captions=jpn" text="コンテンツの抽出の導入ビデオ"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"

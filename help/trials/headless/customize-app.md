@@ -4,9 +4,9 @@ description: サンプルの React アプリを使用して、AEM as a Cloud Ser
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+source-git-commit: c811268d4882204c5a5610c9f45cd344df50b8dd
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,6 @@ ht-degree: 0%
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="コンテンツフラグメントエディターを起動します。"
 >abstract="AEMのヘッドレス体験版には、サンプルの React アプリが統合されているので、開発時間をかけずに誰でも個別にコンテンツを簡単に管理できます。<br><br>以下をクリックして、新しいタブでこのモジュールを起動し、このガイドに従ってください。"
->additional-url="https://video.tv.adobe.com/v/328618/?captions=jpn" text="アプリの導入ビデオのカスタマイズ"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"

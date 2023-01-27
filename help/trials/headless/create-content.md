@@ -4,9 +4,9 @@ description: 前に作成したコンテンツフラグメントモデルを使�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+source-git-commit: 4a99ce530f3ca13f52648ffc0782d62cd5ebf395
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '459'
 ht-degree: 3%
 
 ---
@@ -22,8 +22,7 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="コンテンツフラグメントコンソールを起動します。"
->abstract="アプリや Web サイト全体でシームレスに機能する、一貫性のある高品質なコンテンツを作成することで、優れた顧客体験を実現します。 このモジュールでは、最初のコンテンツフラグメントの作成手順を説明し、この方法を説明します。 これが重要な手順である理由については、ビデオをご覧ください。<br><br>下のボタンをクリックして、このモジュールを新しいタブで起動し、このガイドに従ってください。"
->additional-url="https://video.tv.adobe.com/v/328618/?captions=jpn" text="新しいコンテンツの作成の導入ビデオ"
+>abstract="アプリや Web サイト全体でシームレスに機能する、一貫性のある高品質なコンテンツを作成することで、優れた顧客体験を実現します。 このモジュールでは、最初のコンテンツフラグメントの作成手順を説明し、この方法を説明します。<br><br>下のボタンをクリックして、このモジュールを新しいタブで起動し、このガイドに従ってください。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
