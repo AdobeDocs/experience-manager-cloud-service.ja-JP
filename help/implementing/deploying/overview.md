@@ -3,10 +3,10 @@ title: AEM as a Cloud Service へのデプロイ
 description: AEM as a Cloud Service へのデプロイ
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: ht
-source-wordcount: '3346'
-ht-degree: 100%
+source-git-commit: 8e9ff8f77ac4920f87adcba0258cfccb15f9a5b9
+workflow-type: tm+mt
+source-wordcount: '3415'
+ht-degree: 96%
 
 ---
 
@@ -171,6 +171,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="パッケージマネージャー - 可変コンテンツパッケージの移行"
 >abstract="コンテンツパッケージを「1回限り」としてインストールするユースケースへのパッケージマネージャーの使用方法を参照します。このようなユースケースには、実稼動環境での問題をデバッグするために特定のコンテンツを実稼動環境からステージング環境に読み込む場合や、オンプレミス環境から AEM Cloud 環境に小規模なコンテンツパッケージを転送する場合などが含まれます。"
+>abstract="パッケージマネージャーの使用例を調べて、実稼動環境での問題のデバッグ、オンプレミス環境からAEM Cloud 環境への小規模なコンテンツパッケージの転送などのために、コンテンツパッケージを「1 つ」でインストールする必要がある場合を確認します。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja#cloud-migration" text="コンテンツ転送ツール"
 
 コンテンツパッケージを「1 回限りのもの」としてインストールする必要がある場合が考えられます。例えば、実稼動環境での問題をデバッグするために、実稼動環境からステージング環境に特定のコンテンツを読み込む場合などです。これらのシナリオでは、AEM as a Cloud Service 環境で [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) を使用できます。
@@ -281,27 +282,30 @@ AEM のアップデートと同様に、お客様向けリリースも、適切�
 
 ## 実行モード {#runmodes}
 
-既存の AEM ソリューションでは、お客様は任意の実行モードでインスタンスを実行することができ、それらの特定のインスタンスに OSGi 設定を適用したり OSGi バンドルをインストールしたりできます。定義されている実行モードには、通常、*サービス*（author および publish）と環境（dev、stage、prod）があります。
+既存の AEM ソリューションでは、お客様は任意の実行モードでインスタンスを実行することができ、それらの特定のインスタンスに OSGi 設定を適用したり OSGi バンドルをインストールしたりできます。定義されている実行モードには、通常、 *サービス* （オーサーとパブリッシュ）および環境 (rde、dev、stage、prod) に関連付けられています。
 
 一方、AEM as a Cloud Service は、使用可能な実行モードと、それらへの OSGi バンドルおよび OSGi 設定のマッピング方法について、より保守的です。
 
-* OSGi 設定の実行モードでは、環境については dev（開発）、stage（ステージ）、prod（実稼動）のいずれかを、サービスについては author（オーサー）または publish（パブリッシュ）を参照する必要があります。`<service>.<environment_type>` の組み合わせはサポートされていますが、この特定の順序で使用する必要があります（例えば、`author.dev` や `publish.prod` など）。OSGi トークンは、`getRunModes` メソッドを使用するのではなく、コードから直接参照する必要があります。このメソッドは、実行時に `environment_type` を組み込まなくなりました。詳しくは、[AEM as a Cloud Service の OSGi の設定](/help/implementing/deploying/configuring-osgi.md)を参照してください。
+* OSGi 設定の実行モードでは、環境の RDE、dev、stage、prod を参照するか、サービスのオーサー、パブリッシュを参照する必要があります。 `<service>.<environment_type>` の組み合わせはサポートされていますが、この特定の順序で使用する必要があります（例えば、`author.dev` や `publish.prod` など）。OSGi トークンは、`getRunModes` メソッドを使用するのではなく、コードから直接参照する必要があります。このメソッドは、実行時に `environment_type` を組み込まなくなりました。詳しくは、[AEM as a Cloud Service の OSGi の設定](/help/implementing/deploying/configuring-osgi.md)を参照してください。
 * OSGi バンドルの実行モードは、サービス（author、publish）のみに制限されます。実行モードごとに、OSGi バンドルを `install/author` または `install/publish` の配下のコンテンツパッケージにインストールする必要があります。
 
 既存の AEM ソリューションと同様に、実行モードを使用して特定の環境やサービス用のコンテンツだけをインストールすることはできません。ステージ環境または実稼動環境にないデータや HTML を含んだ開発環境をシードする必要がある場合は、パッケージマネージャーを使用できます。
 
 サポートされている実行モード設定は次のとおりです。
 
-* **config**（*デフォルト。すべての AEM サービスに適用*）
+* **config** (*デフォルトは、すべてのAEMサービスに適用されます*)
 * **config.author**（*すべての AEM オーサーサービスに適用*）
 * **config.author.dev**（*開発環境の AEM オーサーサービスに適用*）
+* **config.author.rde** (*AEM RDE Author サービスに適用されます*)
 * **config.author.stage**（*ステージング環境の AEM オーサーサービスに適用*）
 * **config.author.prod**（*実稼動環境の AEM オーサーサービスに適用*）
 * **config.publish**（*AEM パブリッシュサービスに適用*）
 * **config.publish.dev**（*開発環境の AEM パブリッシュサービスに適用*）
+* **config.publish.rde** (*AEM RDE Publish サービスに適用されます*)
 * **config.publish.stage**（*ステージング環境の AEM パブリッシュサービスに適用*）
 * **config.publish.prod**（*実稼動環境の AEM パブリッシュサービスに適用*）
 * **config.dev**（*開発環境の AEM サービスに適用*）
+* **config.rde** (*RDE サービスに適用*)
 * **config.stage**（*ステージング環境の AEM サービスに適用*）
 * **config.prod**（*実稼動環境の AEM サービスに適用*）
 
