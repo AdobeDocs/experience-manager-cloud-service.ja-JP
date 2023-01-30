@@ -2,7 +2,7 @@
 title: 迅速な開発環境
 description: クラウド環境で迅速な開発反復処理を行うために、高速開発環境を活用する方法を説明します。
 hidefromtoc: true
-source-git-commit: c8cb222cdba805652123df852410ffed8b047ceb
+source-git-commit: 966644ae0027264f25a3aaf3b2f777fb3e97c556
 workflow-type: tm+mt
 source-wordcount: '2446'
 ht-degree: 7%
@@ -126,14 +126,14 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
 
    `aio cloudmanager:environment:open-developer-console`
 
->[!TIP]
->
->   表示された `Warning: cloudmanager:list-programs is not a aio command.` エラーが発生した場合は、 [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) 次のコマンドを実行します。
->
->   
-```
->   aio plugins:install @adobe/aio-cli-plugin-cloudmanager
->   ```
+   >[!TIP]
+   >
+   >表示された `Warning: cloudmanager:list-programs is not a aio command.` エラーが発生した場合は、 [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) 次のコマンドを実行します。
+   >
+   >
+   ```
+   >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+   >```
 
 
 ## 新機能の開発時の RDE の使用 {#using-rde-while-developing-a-new-feature}
