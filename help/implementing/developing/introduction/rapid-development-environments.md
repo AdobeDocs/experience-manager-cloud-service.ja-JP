@@ -2,9 +2,9 @@
 title: 迅速な開発環境
 description: クラウド環境で迅速な開発反復処理を行うために、高速開発環境を活用する方法を説明します。
 hidefromtoc: true
-source-git-commit: 755e24ab8add432bf399e2674870d781f532302f
+source-git-commit: c8cb222cdba805652123df852410ffed8b047ceb
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2446'
 ht-degree: 7%
 
 ---
@@ -390,6 +390,20 @@ RDE のリセットプロセスが開始されると、通常は完了し、環�
 ![環境カードから RDE をリセット](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
 Cloud Manager を使用した環境の管理方法について詳しくは、 [Cloud Manager のドキュメント。](/help/implementing/cloud-manager/manage-environments.md)
+
+## 実行モード {#runmodes}
+
+以下の例のように、フォルダー名にサフィックスを使用して、RDE 固有の OSGI 設定を適用できます。
+
+* `config.rde`
+* `config.author.rde`
+* `config.publish.rde`
+
+詳しくは、 [実行モードのドキュメント](/help/implementing/deploying/overview.md#runmodes) 実行モードの一般的な情報については、を参照してください。
+
+>[!NOTE]
+>
+>RDE OSGI 設定は、バンドルの `dev` 実行モード。
 
 ## ログ {#logging}
 
