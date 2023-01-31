@@ -1,10 +1,11 @@
 ---
 title: 混在メディアセット
 description: Dynamic Media での混在メディアセットの使用方法について説明します.
+contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1501'
 ht-degree: 100%

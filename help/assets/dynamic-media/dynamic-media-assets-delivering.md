@@ -1,7 +1,8 @@
 ---
 title: Dynamic Media アセットの配信
 description: Dynamic Media を使用する場合、ビデオでも画像でも、Dynamic Media アセットを Web サイトに配信するオプションは複数あります。
-source-git-commit: 6933f053e11320d8201922723879983084c52209
+contentOwner: Rick Brough
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 100%

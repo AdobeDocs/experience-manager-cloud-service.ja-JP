@@ -1,10 +1,11 @@
 ---
 title: Dynamic Media ビューアと Adobe Analytics および Experience Platform タグとの統合
 description: Experience Platform タグおよび Dynamic Media Viewers 5.13 用の Dynamic Media ビューア拡張機能について説明します。この拡張機能によって、Adobe Analytics および Platform タグのユーザーは、Experience Platform タグの設定で Dynamic Media ビューアーに固有のイベントやデータを使用することができます。
+contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 3060b6b411c3ce2f0b70e08628bccfece3e1fd49
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '6679'
 ht-degree: 97%
@@ -548,7 +549,7 @@ Experience Platform タグで使用可能なすべての拡張機能は、**[!UI
 
 *ビデオトラッキングを使用する予定の場合のみ、次の項目を設定します。*
 
-**[!UICONTROL 拡張機能のインストール]**&#x200B;ページで、「**[!UICONTROL 一般]**」を展開し、「トラッキングサーバー」を指定します。トラッキングサーバーはテンプレート `<trackingNamespace>.sc.omtrdc.net` に従います。`<trackingNamespace>` は、プロビジョニング電子メールで取得した情報です。
+**[!UICONTROL 拡張機能のインストール]**&#x200B;ページで、「**[!UICONTROL 一般]**」を展開し、「トラッキングサーバー」を指定します。トラッキングサーバーはテンプレート `<trackingNamespace>.sc.omtrdc.net` に従います。`<trackingNamespace>` は、プロビジョニングメールで取得した情報です。
 
 「**[!UICONTROL 保存]**」を選択します。
 
@@ -556,7 +557,7 @@ Experience Platform タグで使用可能なすべての拡張機能は、**[!UI
 
 * （オプション。ビデオトラッキングが必要な場合のみ必須）*Adobe Media Analytics for Audio and Video* 拡張機能
 
-「トラッキングサーバー」フィールドに入力します。*Adobe Media Analytics for Audio and Video* 拡張機能のトラッキングサーバーは、Adobe Analytics で使用されるトラッキングサーバーとは異なります。これはテンプレート `<trackingNamespace>.hb.omtrdc.net` に従います。`<trackingNamespace>` は、プロビジョニング電子メールの情報です。
+「トラッキングサーバー」フィールドに入力します。*Adobe Media Analytics for Audio and Video* 拡張機能のトラッキングサーバーは、Adobe Analytics で使用されるトラッキングサーバーとは異なります。これはテンプレート `<trackingNamespace>.hb.omtrdc.net` に従います。`<trackingNamespace>` は、プロビジョニングメールの情報です。
 
 その他のフィールドはオプションです。
 

@@ -1,13 +1,14 @@
 ---
 title: Dynamic Media ビデオプロファイル
 description: Dynamic Media には、事前定義済みのアダプティブビデオエンコーディングプロファイルが最初から付属しています。この標準提供プロファイルの設定は、ユーザーができる限り最高の閲覧エクスペリエンスを得られるように最適化されています。また、ビデオにスマート切り抜きを追加することもできます。
+contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '3656'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -23,7 +24,7 @@ Dynamic Media には、事前定義済みのアダプティブビデオエンコ
 
 * **ビデオプレーヤーのサイズ**
 
-   デフォルトでは、アダプティブビデオエンコーディングプロファイルの「幅」は「自動」に設定されています。再生中は、プレーヤーのサイズに応じた最適な品質が使用されます。
+   デフォルトでは、アダプティブビデオエンコーディングプロファイルの「幅」は「自動」に設定されています。 再生中は、プレーヤーのサイズに応じた最適な品質が使用されます。
 
 [ビデオエンコーディングのベストプラクティス](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos)を参照してください。
 

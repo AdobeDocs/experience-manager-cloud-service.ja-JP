@@ -1,9 +1,10 @@
 ---
 title: クライアントサイドのデバイスピクセル比（DPR）を使用したスマートイメージングについて
 description: Dynamic Media を含む Adobe Experience Manager as a Cloud Service のスマートイメージングでクライアントサイドのデバイスピクセル比を使用する方法について説明します。
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
-source-git-commit: 1dae0459073e84eee4382b4b7ec864b3ef55a5bd
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 100%

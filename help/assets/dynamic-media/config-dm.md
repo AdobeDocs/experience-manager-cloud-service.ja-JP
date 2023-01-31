@@ -1,9 +1,10 @@
 ---
 title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager as a Cloud Service で Dynamic Media を設定する方法を説明します。
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 8066d24193822a79d88f564a2db26b3acbb4e918
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '3795'
 ht-degree: 94%
@@ -67,7 +68,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. Experience Manager as a Cloud Service で、Experience Manager as a Cloud Service ロゴを選択し、グローバルナビゲーションコンソールにアクセスします。
 1. コンソールの左側にあるツールアイコンを選択したあと、**[!UICONTROL Cloud Services／Dynamic Media 設定]**&#x200B;に移動します。
 1. Dynamic Media 設定ブラウザーページの左側のパネルで、「**[!UICONTROL グローバル]**」を選択します（「**[!UICONTROL グローバル]**」の左側にあるフォルダーアイコンを選択しないでください）。次に、「**[!UICONTROL 作成]**」を選択します。
-1. **[!UICONTROL ダイナミックメディア設定を作成]**&#x200B;ページで、Dynamic Media アカウントの会社管理者の役職、Dynamic Media アカウントの電子メールアドレスおよびパスワードを入力したあと、地域を選択します。この情報は、プロビジョニングの電子メールでアドビから提供されます。この電子メールを受け取っていない場合は、アドビカスタマーサポートにお問い合せください。
+1. **[!UICONTROL ダイナミックメディア設定を作成]**&#x200B;ページで、Dynamic Media アカウントの会社管理者の役職、Dynamic Media アカウントのメールアドレスおよびパスワードを入力したあと、地域を選択します。この情報は、プロビジョニングのメールでアドビから提供されます。このメールを受け取っていない場合は、アドビカスタマーサポートにお問い合せください。
 1. 「**[!UICONTROL Dynamic Media に接続]**」をクリックします。
 1. **[!UICONTROL パスワードを変更]**&#x200B;ダイアログボックスの「**[!UICONTROL 新しいパスワード]**」フィールドに、8～25 文字の新しいパスワードを入力します。パスワードには、次のうち少なくとも 1 つを含める必要があります。
 

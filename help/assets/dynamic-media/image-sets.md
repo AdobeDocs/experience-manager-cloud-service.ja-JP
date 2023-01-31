@@ -1,10 +1,11 @@
 ---
 title: 画像セット
 description: Dynamic Media の画像セットの操作方法について説明します.
+contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '2135'
 ht-degree: 100%

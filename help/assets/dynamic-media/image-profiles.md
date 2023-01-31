@@ -1,10 +1,11 @@
 ---
 title: Dynamic Media 画像プロファイル
 description: アンシャープマスクの設定、スマート切り抜きとスマートスウォッチのいずれかまたは両方の設定を含む Dynamic Media 画像プロファイルを作成する方法について説明します。次に、画像アセットのフォルダーにプロファイルを適用します。
+contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 163b6b19f0401213813d8de30caf8144855b4e4c
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '3488'
 ht-degree: 92%
