@@ -2,9 +2,9 @@
 title: 迅速な開発環境
 description: クラウド環境で迅速な開発反復処理を行うために、高速開発環境を活用する方法を説明します。
 hidefromtoc: true
-source-git-commit: 966644ae0027264f25a3aaf3b2f777fb3e97c556
+source-git-commit: ca6e0fa5a4f34c84a523821a6615f4c70e457fcf
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2476'
 ht-degree: 7%
 
 ---
@@ -202,6 +202,8 @@ RDE は、一度に 1 つのプロジェクトをサポートします。 コー
 オプションで、リモートリポジトリを参照できます。
 
 `aio aem:rde:install 'https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip'`
+
+デフォルトでは、アーティファクトはオーサー層とパブリッシュ層の両方にデプロイされますが、「 —s」フラグを使用して特定の層をターゲットにすることができます。
 
 <u>OSGi 設定のデプロイ</u>
 
@@ -415,9 +417,10 @@ RDE はクラウド開発環境に似た多くの方法で用意されていま�
 
 このような理由から、RDE 環境でコードを検証した後、実稼動以外のパイプラインを使用して Cloud Development Environment にコードをデプロイすることをお勧めします。 最後に、実稼動パイプラインでをデプロイする前に、コードをテストします。
 
-また、次のソリューション固有の考慮事項にも注意してください。
+また、次の考慮事項にも注意してください。
 
 * RDE は、現在、Cloud Manager フロントエンドパイプラインを使用してデプロイされたフロントエンドコードの表示とデバッグをサポートしていません。
+* RDE は現在、プレリリースチャネルをサポートしていません。
 
 
 ## 必要な RDE の数 {#how-many-rds-do-i-need}
