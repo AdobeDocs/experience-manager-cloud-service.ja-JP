@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service のバックアップと復元
 description: AEM as a Cloud Service のバックアップと復元
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 12e747ff73e9416775a3f26040ac7e15c21505ec
+source-git-commit: eec03acf5d208236ddac338134f95fb3aaa5ee26
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 94%
+source-wordcount: '515'
+ht-degree: 92%
 
 ---
 
@@ -36,7 +36,7 @@ AEM as a Cloud Service のサポートは次のとおりです。
 
 どのような場合でも、カスタムコードバージョンは、復元ポイント前の、最後に正常にデプロイされた状態から取得されます。
 
-目標復旧時間 (RTO) は様々ですが、一般的なガイドラインとして、リカバリの順序は、リポジトリのサイズなどのいくつかの要因に応じて、平均で 60 ～ 90 分かかります。
+目標復旧時間 (RTO) は様々ですが、一般的なガイドラインとして、リカバリの順序は、リポジトリのサイズなどのいくつかの要因に応じて、平均で 60 ～ 90 分かかります。 プレビュー環境と複数地域のパブリッシャーは、復元の目標を延長できます。
 
 復元後、AEM のバージョンは最新のバージョンに更新されます。
 
