@@ -2,10 +2,10 @@
 title: エクスペリエンスフラグメント
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントを使用すると、エクスペリエンスの再利用性と柔軟性を高めることができます。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: ccf5cdf56867ca077d7ff71bfb2f1f4af1b32bd9
-workflow-type: ht
-source-wordcount: '1971'
-ht-degree: 100%
+source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
+workflow-type: tm+mt
+source-wordcount: '2064'
+ht-degree: 98%
 
 ---
 
@@ -38,6 +38,16 @@ Adobe Experience Manager as a Cloud Service 内では、エクスペリエンス
 エクスペリエンスフラグメントは、コピー／貼り付けを不要にします。
 * ヘッドレス CMS の使用例をサポートする場合。
 作成者は AEM をオーサリングにのみ使用し、顧客への配信には使用しないようにします。サードパーティシステム／タッチポイントは、そのエクスペリエンスを使用してエンドユーザーに配信します。
+
+>[!NOTE]
+>
+>**[コンテンツフラグメント](/help/sites-cloud/authoring/fundamentals/content-fragments.md)**&#x200B;と&#x200B;**エクスペリエンスフラグメント**&#x200B;は、AEM 内の異なる機能です。
+>* **コンテンツフラグメント** は編集コンテンツで、定義と構造は含まれますが、追加の視覚的なデザインやレイアウトは含まれません。 これらを使用して、テキスト、数値、日付などの構造化データにアクセスできます。
+>* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツであり、web ページのフラグメントです。
+>
+>エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
+>
+>詳細については、](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ja#content-fragments)AEM のコンテンツフラグメントおよびエクスペリエンスフラグメントについて[も参照してください。
 
 >[!NOTE]
 >
@@ -346,11 +356,11 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
    >**パーソナライゼーション**&#x200B;タブで選択されたこの **ContextHub パス** は、次のいずれかである必要があります。
    >
    >* フラグメントがレンダリングされるページ用に設定されたパスと同じパス
-   >または：
+      >または：
    >* ページ用に設定された ContextHub で定義されたストアのサブセットを含むパス
-   >
-   >
 
+   >
+   >
 「**パーソナライゼーション**」タブで選択された&#x200B;**セグメントパス**&#x200B;は、次のいずれかである必要があります。
    * フラグメントがレンダリングされるページ用に設定されたものと同じパス
 または
@@ -381,8 +391,8 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
    プロパティが次のように様々なタブに表示されます。
 
    >[!CAUTION]
-   >これらのタブは、エクスペリエンスフラグメントコンソールから「**プロパティ**」を開くと表示されます。
-   >エクスペリエンスフラグメントの編集時に&#x200B;**プロパティを開く**&#x200B;と、適切な[ページのプロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md)が表示されます。
+   これらのタブは、エクスペリエンスフラグメントコンソールから「**プロパティ**」を開くと表示されます。
+   エクスペリエンスフラグメントの編集時に&#x200B;**プロパティを開く**&#x200B;と、適切な[ページのプロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md)が表示されます。
 
    ![エクスペリエンスフラグメントのプロパティ](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -411,7 +421,7 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 URL の `.plain.` セレクターを使用すると、ブラウザーからプレーン HTML レンディションにアクセスできます。
 
 >[!NOTE]
->ブラウザーから直接利用することもできますが、[主な目的は、他のアプリケーション（例えば、サードパーティ Web アプリ、カスタムモバイル実装など）が、URL のみを使用して、エクスペリエンスフラグメントのコンテンツに直接アクセスできるようにすることです。](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)
+ブラウザーから直接利用することもできますが、[主な目的は、他のアプリケーション（例えば、サードパーティ Web アプリ、カスタムモバイル実装など）が、URL のみを使用して、エクスペリエンスフラグメントのコンテンツに直接アクセスできるようにすることです。](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)
 
 ## エクスペリエンスフラグメントの公開 {#publishing-experience-fragments}
 

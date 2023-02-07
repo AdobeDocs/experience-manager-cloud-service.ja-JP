@@ -2,10 +2,10 @@
 title: コンテンツフラグメントの使用方法（アセット - コンテンツフラグメント）
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントで、ページオーサリングやヘッドレス配信に最適な、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
-workflow-type: ht
-source-wordcount: '2075'
-ht-degree: 100%
+source-git-commit: 4478cee8f9a20e0b70bfe2fa8767e3262188cb33
+workflow-type: tm+mt
+source-wordcount: '2071'
+ht-degree: 98%
 
 ---
 
@@ -79,7 +79,7 @@ Adobe Experience Manager（AEM）as a Cloud Service でコンテンツフラグ�
 >[!NOTE]
 >
 >**コンテンツフラグメント**&#x200B;と&#x200B;**[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;は、AEM 内の異なる機能です。
->* **コンテンツフラグメント**&#x200B;は編集コンテンツで、テキスト、数値、日付などの構造化されたデータにアクセスするのに使用できます。これらは、定義と構造を備えた純粋なコンテンツですが、視覚的なデザインやレイアウトは追加されていません。
+>* **コンテンツフラグメント** は編集コンテンツで、定義と構造は含まれますが、追加の視覚的なデザインやレイアウトは含まれません。 これらを使用して、テキスト、数値、日付などの構造化データにアクセスできます。
 >* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツであり、web ページのフラグメントです。
 >
 >エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
