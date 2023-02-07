@@ -2,18 +2,14 @@
 title: サーバー側 API のアクセストークンの生成
 description: セキュアな JWT トークンを生成してサードパーティサーバーと AEM as a Cloud Service の間の通信を容易にする方法について説明します。
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: 41458eb1fba12e8ef45a32d3bb6fc5dd732f78ec
+source-git-commit: 9f7157be1a9e7b635b9c7d0f0c653646e6f1b43b
 workflow-type: tm+mt
-source-wordcount: '2199'
-ht-degree: 36%
+source-wordcount: '2132'
+ht-degree: 37%
 
 ---
 
 # サーバー側 API のアクセストークンの生成 {#generating-access-tokens-for-server-side-apis}
-
->[!AVAILABILITY]
->
->Adobeは、この記事で説明する新しい多資格情報および資格情報の失効機能を徐々に展開する過程です。 組織のAEM開発者コンソールの「統合」タブを確認すると、画面が以下のスクリーンショットとは異なる場合、新しい変更はまだ組織にロールアウトされていないことを意味します。 この場合、 [レガシードキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md).
 
 一部のアーキテクチャでは、AEM インフラストラクチャの外部にあるサーバーにホストされているアプリケーションから AEM as a Cloud Service への呼び出しの実行がベースになっています。例えば、モバイルアプリケーションがサーバーを呼び出し、その後、サーバーが AEM as a Cloud Service に対して API リクエストを行います。
 
