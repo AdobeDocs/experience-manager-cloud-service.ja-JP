@@ -3,9 +3,9 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 24dda46f8a3ac5179ae3bc95fba38c5d1f0660ca
+source-git-commit: 17b0604cb192a375c3097255812c89caa8580d5b
 workflow-type: tm+mt
-source-wordcount: '4174'
+source-wordcount: '4173'
 ht-degree: 58%
 
 ---
@@ -470,8 +470,6 @@ GraphQL クエリでフィルタリングを使用して、特定のデータを
 ```
 
 フィールドの内容と値を比較します `some text` コンテンツが値と等しい場合にが成功します。 そうしないと、式は失敗します。
-
- 
 
 次の演算子を使用して、フィールドを特定の値と比較できます。
 
