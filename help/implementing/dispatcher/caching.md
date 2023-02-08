@@ -3,9 +3,9 @@ title: AEM as a Cloud Service でのキャッシュ
 description: AEM as a Cloud Service でのキャッシュ
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 762c30f83a15aba24b56a8d4a6059b371b87aae2
+source-git-commit: b0db2224e3dd7af01bf61fe29e8e24793ab33c5b
 workflow-type: tm+mt
-source-wordcount: '2833'
+source-wordcount: '2832'
 ht-degree: 92%
 
 ---
@@ -72,7 +72,7 @@ Define DISABLE_DEFAULT_CACHING
      </LocationMatch>
    ```
 
-* private に設定されたHTMLコンテンツは CDN にキャッシュされませんが、次の場合は Dispatcher にキャッシュできます。 [権限に影響を受けるキャッシュ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ja) を効率的に設定し、許可されたユーザーのみがコンテンツを提供できるようにします。
+* private に設定されたHTMLコンテンツは CDN にキャッシュされませんが、次の場合は Dispatcher にキャッシュできます。 [権限に影響を受けるキャッシュ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ja) が設定され、許可されたユーザーのみがコンテンツを提供できるようになっています。
 
    >[!NOTE]
    >[dispatcher-ttl AEM ACS Commons プロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)を含む他のメソッドでは、値は上書きされません。
