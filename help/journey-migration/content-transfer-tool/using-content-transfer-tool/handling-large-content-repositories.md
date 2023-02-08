@@ -2,10 +2,10 @@
 title: 大規模なコンテンツリポジトリーの処理
 description: この節では、大規模なコンテンツリポジトリーの処理について説明します
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 7a9c601dd42aed9fbd0113e71c1c7a58b5bba8f7
-workflow-type: ht
-source-wordcount: '1732'
-ht-degree: 100%
+source-git-commit: 1a2ff747361bb0def718bee2e8eb0a1055b8efcf
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -36,6 +36,9 @@ ht-degree: 100%
 
 * データストアのガベージコレクションが、ソース上で過去 7 日以内に実行されている。詳しくは、[データストアのガベージコレクション](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=ja#data-store-garbage-collection)を参照してください。
 
+### AzCopy を使用する際のその他の考慮事項
+
+AzCopy を使用した事前コピーは、現在、CTT 抽出中の Windows ではサポートされていません。
 
 ### ソース AEM インスタンスが Amazon S3 または Azure Blob Storage データストアを使用するように設定されている場合の追加の考慮事項 {#additional-considerations-amazons3-azure}
 
@@ -77,7 +80,7 @@ Azure portal の既存のコンテナープロパティページから、「**�
 #### ファイルデータストア {#file-data-store-determine-size}
 
 * Mac および UNIX システムの場合は、データストアディレクトリで du コマンドを実行してサイズを取得します。
-   `du -sh [path to datastore on the instance]`例えば、データストアが `/mnt/author/crx-quickstart/repository/datastore` にある場合は、次のコマンドでそのサイズを取得できます。`du -sh /mnt/author/crx-quickstart/repository/datastore`
+   `du -sh [path to datastore on the instance]` を使用して作成します。例えば、データストアが `/mnt/author/crx-quickstart/repository/datastore` にある場合は、次のコマンドでそのサイズを取得できます。`du -sh /mnt/author/crx-quickstart/repository/datastore`
 
 * Windows の場合は、データストアディレクトリで dir コマンドを使用してサイズを取得します。
    `dir /a/s [location of datastore]`
