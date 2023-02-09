@@ -4,10 +4,10 @@ description: クラウドリソースを設定したら、AEM 製品プロファ
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 050e5966728e157bf2ae51f99a31f68a1d347e4b
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 100%
+source-wordcount: '769'
+ht-degree: 96%
 
 ---
 
@@ -34,12 +34,16 @@ AEM を使用するには、チームメンバーが 1 つまたは複数の AEM
 
 AEM 製品プロファイルに割り当てられたすべてのユーザーは、Cloud Manager に対する読み取りのみのアクセス権も取得します。 Cloud Manager への書き込みアクセス権は、他の製品プロファイルを介して付与される場合があります。
 
+>[!CAUTION]
+>
+>AEM Administrators またはAEM Users という名前の製品プロファイルを編集または削除しないでください。 これらのプロファイル名を編集すると、AEMクラウドインスタンスへのログインが中断する場合があります。
+
 ## 前提条件 {#prerequisites}
 
 このセクションを読む前に、AEM を使用するチームに関する次の情報を入手する必要があります。
 
 * 氏名
-* 電子メールアドレス
+* メールアドレス
 * 役割と責務
 
 >[!TIP]
