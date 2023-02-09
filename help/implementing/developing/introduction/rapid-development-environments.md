@@ -2,9 +2,9 @@
 title: 迅速な開発環境
 description: クラウド環境で迅速な開発反復処理を行うために、高速開発環境を活用する方法を説明します。
 hidefromtoc: true
-source-git-commit: 6751a14ba38d038b006b8499feb517b7ae2d00bd
+source-git-commit: 10d74413ece591de52b7dbebd59191cace81e238
 workflow-type: tm+mt
-source-wordcount: '2634'
+source-wordcount: '2664'
 ht-degree: 6%
 
 ---
@@ -201,9 +201,13 @@ RDE は、一度に 1 つのプロジェクトをサポートします。 コー
 
 オプションで、リモートリポジトリを参照できます。
 
-`aio aem:rde:install 'https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip'`
+`aio aem:rde:install -t content-package "https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip"`
 
 デフォルトでは、アーティファクトはオーサー層とパブリッシュ層の両方にデプロイされますが、「 —s」フラグを使用して特定の層をターゲットにすることができます。
+
+>[!IMPORTANT]
+>
+>WKND プロジェクトの Dispatcher 設定は、上記の content-package インストール経由でデプロイされません。 「Apache/Dispatcher 設定のデプロイ」の手順に従って、別途デプロイする必要があります。
 
 <u>OSGi 設定のデプロイ</u>
 
