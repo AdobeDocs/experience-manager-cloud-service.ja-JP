@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 983f1b815fd213863ddbcd83ac7e3f076c57d761
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 100%
+source-wordcount: '2227'
+ht-degree: 89%
 
 ---
 
@@ -33,40 +33,43 @@ ht-degree: 100%
 >
 >[!UICONTROL Experience Manager Forms] はリレーショナルデータベースをサポートしていません。
 
-<!-- ## Configure relational database {#configure-relational-database}
+## リレーショナルデータベースの設定 {#configure-relational-database}
 
-You can configure relational databases using [!DNL Experience Manager] Web Console Configuration. Do the following:
+### 前提条件
 
-1. Go to [!DNL Experience Manager] web console at `https://server:host/system/console/configMgr`.
-1. Look for **[!UICONTROL Apache Sling Connection Pooled DataSource]** configuration. Tap to open the configuration in edit mode.
-1. In the configuration dialog, specify the details for the database you want to configure, such as:
+を使用してリレーショナルデータベースを設定する前に [!DNL Experience Manager] Web コンソールの設定では、 [cloud manager API を使用した高度なネットワークの有効化](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)（ポートはデフォルトで無効になっているので）
 
-    * Name of the data source
-    * Data source service property that stores the data source name
-    * Java class name for the JDBC driver
-    * JDBC connection URI
-    * Username and password to establish connection with the JDBC driver
+### リレーショナルデータベースを設定する手順
+
+リレーショナルデータベースは、 [!DNL Experience Manager] Web コンソールの設定 次の手順を実行します。
+
+1. に移動します。 [!DNL Experience Manager] web コンソールの場所： `https://server:host/system/console/configMgr`.
+1. 場所 **[!UICONTROL Day Commons JDBC 接続プール]** 設定。 その設定をタップして編集モードで開きます。
+<br>
+
+![JDBC コネクタプール](/help/forms/assets/jdbc_connector.png)
+<br>
+1. 設定ダイアログで、設定するデータベースの詳細を指定します。例えば、以下のような詳細を指定します。
+
+   * JDBC ドライバーの Java クラス名
+   * JDBC 接続 URI
+   * JDBC ドライバーとの接続を確立するためのユーザー名とパスワード
+   * 「**[!UICONTROL 検証クエリ]**」フィールドで SQL SELECT クエリを指定して、プールからの接続を検証します。このクエリでは、1 行以上の行が返される必要があります。使用しているデータベースに応じて、以下のいずれかを指定します。
+      * SELECT 1（MySQL または MS SQL の場合）
+      * SELECT 1 from dual（Oracle の場合）
+   * を選択します。 **デフォルトでは読み取り専用** チェックボックスをオンにして、変更できないようにします。
+   * 選択 **デフォルトで自動コミット** チェックボックスを使用して、変更を自動的にコミットします。
+   * プールのサイズとプールの待機時間をミリ秒単位で指定します。
+   * データソースの名前
+   * データソース名が保管されるデータソースサービスプロパティ
 
    >[!NOTE]
    >
-   >Ensure that you encrypt sensitive information like passwords before configuring the data source. To encrypt:
-   >
-   >    
-   >    
-   >    1. Go to https://'[server]:[port]'/system/console/crypto.
-   >    1. In the **[!UICONTROL Plain Text]** field, specify the password or any string to encrypt and tap **[!UICONTROL Protect]**.
-   >    
-   >    
-   >    
-   >The encrypted text appears in the Protected Text field that you can specify in the configuration.
+   > 参照 [JDBC DataSourcePool を使用した SQL 接続](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html#mysql-driver-dependencies) を参照してください。
 
-1. Enable **[!UICONTROL Test on Borrow]** or **[!UICONTROL Test on Return]** to specify that the objects are validated before being borrowed or returned from and to the pool, respectively.
-1. Specify a SQL SELECT query in the **[!UICONTROL Validation Query]** field to validate connections from the pool. The query must return at least one row. Based on your database, specify one of the following:
+1. 「**[!UICONTROL 保存]**」をタップして、設定内容を保存します。
 
-    * SELECT 1 (MySQL and MS SQL) 
-    * SELECT 1 from dual (Oracle)
-
-1. Tap **[!UICONTROL Save]** to save the configuration. -->
+これで、設定済みのリレーショナルデータベースをフォームデータモデルと共に使用できます。
 
 <!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
@@ -113,9 +116,9 @@ RESTful サービス、SOAP サービス、OData サービスのクラウドサ�
 
 ## RESTful Web サービスの設定 {#configure-restful-web-services}
 
-RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式または YAML 形式で [Swagger 定義ファイル](https://swagger.io/specification/v2/)内に記述できます。[!DNL Experience Manager] as a Cloud Service で RESTful web サービスを設定するには、ファイルシステムに [!DNL Swagger] ファイル（[Swagger Version 2.0](https://swagger.io/specification/v2/)）が存在しているか、Swagger ファイルがホストされる URL を指定する必要があります。
+RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式または YAML 形式で [Swagger 定義ファイル](https://swagger.io/specification/v2/)内に記述できます。で RESTful Web サービスを設定するには、以下を実行します。 [!DNL Experience Manager] as a Cloud Service [!DNL Swagger] ファイル ([Swagger バージョン 2.0](https://swagger.io/specification/v2/)) または [!DNL Swagger] ファイル ([Swagger バージョン 3.0](https://swagger.io/specification/v3/)) をファイルシステムまたはファイルがホストされている URL に設定する必要があります。
 
-RESTful サービスを設定するには、以下の手順を実行します。
+### Open API 仕様バージョン 2.0 用の RESTful サービスの設定 {#configure-restful-services-swagger-version2.0}
 
 1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーをタップして選択します。
 
@@ -125,7 +128,7 @@ RESTful サービスを設定するには、以下の手順を実行します。
 1. 以下に示す RESTful サービスの詳細情報を指定します。
 
    * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL  Swagger] 定義ファイルに対する [!DNL Swagger URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
-   * [!DNL  Swagger] ソース入力に基づいて、次のフィールドに値が事前入力されます。
+   * 次に基づいて[!DNL  Swagger] ソース入力。次のフィールドには、値が事前に入力されています。
 
       * スキーム：REST API で使用される転送プロトコル。ドロップダウンリストに表示されるスキームの種類の数は、[!DNL Swagger] ソースで定義されているスキームによって異なります。
       * ホスト：REST API を提供するホストのドメイン名または IP アドレス。このフィールドは必須です。
@@ -138,6 +141,33 @@ RESTful サービスを設定するには、以下の手順を実行します。
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
 1. 「**[!UICONTROL 作成]**」をタップして、RESTful サービス用のクラウド設定を作成します。
+
+### RESTful サービスオープン API 仕様バージョン 2.0 の設定 {#configure-restful-services-swagger-version3.0}
+
+1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーをタップして選択します。
+
+   クラウドサービス設定用フォルダーの作成方法と構成方法については、「[クラウドサービス設定用フォルダーの構成](configure-data-sources.md#cloud-folder)」を参照してください。
+
+1. 「**[!UICONTROL 作成]**」をタップして、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL RESTful サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」をタップします。
+1. 以下に示す RESTful サービスの詳細情報を指定します。
+
+   * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL  Swagger] 定義ファイルに対する [!DNL Swagger 3.0 URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
+   * 次に基づいて[!DNL  Swagger] ソース入力。サーバー名が自動的に表示されます。
+   * RESTful サービスにアクセスするための認証タイプ（「なし」、「OAuth2.0 認証」、「基本認証」、「API キー認証」、「カスタム認証」）を選択し、その選択内容に応じて認証の詳細を指定します。
+
+   認証タイプとして **[!UICONTROL API キー]**&#x200B;を選択した場合は、API キーの値を指定します。API キーは、リクエストヘッダーまたはクエリパラメーターとして送信できます。「**[!UICONTROL 場所]**」ドロップダウンリストから次のオプションの 1 つを選択し、それに応じて「**[!UICONTROL パラメーター名]**」フィールドにヘッダーまたはクエリパラメーターの名前を指定します。
+
+   <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
+
+1. 「**[!UICONTROL 作成]**」をタップして、RESTful サービス用のクラウド設定を作成します。
+
+RESTful services Swagger バージョン 3.0 でサポートされていない操作の一部は次のとおりです。
+* コールバック
+* 1/任意
+* リモート参照
+* 1 回の操作に対する異なる MIME タイプに対する異なるリクエスト本文
+
+以下を参照してください。 [OpenAPI 3.0 仕様](https://swagger.io/specification/v3/) を参照してください。
 
 ### パフォーマンスを最適化するためのフォームデータモデル HTTP クライアント設定 {#fdm-http-client-configuration}
 
@@ -226,7 +256,7 @@ SOAP Web サービス WSDL のインポート文として許可される絶対 U
 }
 ```
 
-設定の値をセットするには、[AEM SDK を使用して OSGi 設定を生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)し、Cloud Service インスタンスに[設定をデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)します。
+設定の値をセットするには、[AEM SDK を使用して OSGi 設定を生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#generating-osgi-configurations-using-the-aem-sdk-quickstart)し、Cloud Service インスタンスに[設定をデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja#deployment-process)します。
 
 ## OData サービスの設定 {#config-odata}
 
@@ -257,7 +287,7 @@ OData サービスは、そのサービスのルート URL によって識別さ
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
-When you enable mutual authentication for form data model, both the data source and [!DNL Experience Manager] Server running Form Data Model authenticate each other’s identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model on your [!DNL Experience Manager Forms] environment:
+When you enable mutual authentication for form data model, both the data source and [!DNL Experience Manager] Server running Form Data Model authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model on your [!DNL Experience Manager Forms] environment:
 
 1. Upload the private key (certificate) to [!DNL Experience Manager Forms] server. To upload the private key:
    1. Log in to your [!DNL Experience Manager Forms] server as an administrator.

@@ -6,21 +6,15 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3072'
 ht-degree: 100%
 
 ---
 
 
 # アダプティブフォームでの [!DNL Adobe Sign] の使用 {#using-adobe-sign-in-an-adaptive-form}
-
-
->[!NOTE]
->
->アダプティブフォームで Adobe Sign の役割を使用する機能は、2021 年 8 月のプレリリースチャネルに含まれています。この機能は 2021 年 9 月リリースで一般公開される予定です。
-
 
 [!DNL Adobe Sign] により、アダプティブフォームの電子サインワークフローを有効にできます。電子サインにより、法務、販売、給与、人事管理などに関するドキュメントを処理するためのワークフローが改善されます。
 
@@ -195,11 +189,11 @@ Cloud Service と署名する順序を選択するには：
 
    * **[!UICONTROL 受信者の役割]：**&#x200B;受信者の役割を選択します。ビジネスおよびエンタープライズサービスレベルの Adobe Sign では、ワークフロー要件に適切に合致するように、[契約書受信者の役割](https://helpx.adobe.com/jp/sign/using/set-up-signer-approver-roles.html)を&#x200B;**署名者**&#x200B;以外に拡張できます。
 
-   * **[!UICONTROL 受信者の電子メールアドレス]：**&#x200B;受信者の電子メールアドレスを指定します。受信者は、指定した電子メールアドレスで Adobe Sign 契約書を受け取ります。フォームフィールドで指定した電子メールアドレスを使用することも、ログインユーザーの Experience Manager ユーザープロファイルで指定した電子メールアドレスを使用することも、電子メールアドレスを手動で入力することもできます。このステップは、必ず実行する必要があります。
+   * **[!UICONTROL 受信者のメールアドレス]：**&#x200B;受信者のメールアドレスを指定します。受信者は、指定したメールアドレスで Adobe Sign 契約書を受け取ります。フォームフィールドで指定したメールアドレスを使用することも、ログインユーザーの Experience Manager ユーザープロファイルで指定したメールアドレスを使用することも、メールアドレスを手動で入力することもできます。このステップは、必ず実行する必要があります。
 
       >[!NOTE]
       >
-      >最初の受信者または唯一の受信者（受信者が 1 人の場合）の電子メールアドレスが、AEM Cloud Services の設定に使用された [!DNL Adobe Sign] アカウントと一致していないことを確認します。
+      >最初の受信者または唯一の受信者（受信者が 1 人の場合）のメールアドレスが、AEM Cloud Services の設定に使用された [!DNL Adobe Sign] アカウントと一致していないことを確認します。
 
    * **[!UICONTROL 受信者の認証方法]：** Adobe Sign 契約書を開く前に受信者を認証する方法を指定します。電話、ナレッジベース、ソーシャル ID ベースの認証、[Government ID](https://helpx.adobe.com/jp/sign/using/adobesign-authentication-government-id.html) から選択できます。
    >[!NOTE]
@@ -286,7 +280,7 @@ Adobe Sign 契約 ID（agreementId）は、アダプティブフォームの送�
 >Data of the Adaptive Form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
-これで、フォームに署名するための準備が整いました。フォームのプレビューを表示して、署名の方法を確認することができます。受信者が電子メールで署名用のフォームを受信すると、公開済みフォーム上に [!DNL Adobe Sign] ブロックのフィールドが表示されます。「**[!UICONTROL 受信者とフォーム記入者は同一ですか？]**」オプションが「はい」とマークされ、条件が満たされると、ユーザーは送信後に Adobe Sign 契約書にリダイレクトされ、契約書が電子メールに表示されるのを待たずに、即座にドキュメントに署名できます。
+これで、フォームに署名するための準備が整いました。フォームのプレビューを表示して、署名の方法を確認することができます。受信者がメールで署名用のフォームを受信すると、公開済みフォーム上に [!DNL Adobe Sign] ブロックのフィールドが表示されます。「**[!UICONTROL 受信者とフォーム記入者は同一ですか？]**」オプションが「はい」とマークされ、条件が満たされると、ユーザーは送信後に Adobe Sign 契約書にリダイレクトされ、契約書がメールに表示されるのを待たずに、即座にドキュメントに署名できます。
 
 ## アダプティブフォームのクラウド署名の設定 {#configure-cloud-signatures-for-an-adaptive-form}
 
@@ -314,7 +308,7 @@ Adobe Sign 契約 ID（agreementId）は、アダプティブフォームの送�
 
    次を使用して、アダプティブフォームに電子署名を適用します。
 
-   * クラウド署名：トラストサービスプロバイダーがホストする[デジタル ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) を使用して署名します。
+   * クラウド署名：トラストサービスプロバイダーがホストする[デジタル ID](https://helpx.adobe.com/jp/sign/kb/digital-certificate-providers.html) を使用して署名します。
    * Adobe Acrobat または Reader：ドキュメントをダウンロードして Adobe Acrobat または Reader で開き、スマートカード、USB トークン、ファイルベースのデジタル ID を使用して署名します。
 
    クラウド署名フィールドをアダプティブフォームに追加した後、次の手順を実行して設定プロセスを完了します。
@@ -350,7 +344,7 @@ Adobe Sign 契約 ID（agreementId）は、アダプティブフォームの送�
 * [!DNL Adobe Sign] Cloud Service の設定に使用する [!DNL Adobe Sign] サーバー上の API アプリケーションに、必要な権限があることを確認します。
 * 複数の [!DNL Adobe Sign] Cloud Services を使用している場合は、すべてのサービスの **[!UICONTROL OAuth URL]** を同じ **[!UICONTROL Adobe Sign シャード]**&#x200B;に指定します。
 
-* [!DNL Adobe Sign] アカウントと、最初または唯一の受信者を設定するには、別々の電子メールアドレスを使用します。最初の受信者または唯一の受信者（受信者が 1 人の場合）の電子メールアドレスを、AEM Cloud Serviceｓ の設定に使用された [!DNL Adobe Sign] アカウントと同一にすることはできません。
+* [!DNL Adobe Sign] アカウントと、最初または唯一の受信者を設定するには、別々のメールアドレスを使用します。最初の受信者または唯一の受信者（受信者が 1 人の場合）のメールアドレスを、AEM Cloud Serviceｓ の設定に使用された [!DNL Adobe Sign] アカウントと同一にすることはできません。
 
 ## 関連記事 {#related-articles}
 

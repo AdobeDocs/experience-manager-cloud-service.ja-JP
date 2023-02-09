@@ -3,21 +3,23 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: b54f3fd476fb9537184e423c6506e0485092b451
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1061'
-ht-degree: 99%
+source-wordcount: '1031'
+ht-degree: 21%
 
 ---
 
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート  {#release-notes}
 
-以下では、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンのリリースノート全般の概要を説明します。
+以下の節では、の現在（最新）バージョンの機能リリースノートの概要を説明します [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
->ここから、以前のバージョン（例えば、2020 年、2021 年のバージョンなど）のリリースノートに移動できます。
+>ここから、以前のバージョン（例えば、2021 年、2022 年のバージョンなど）のリリースノートに移動できます。
+>
+>以下をご覧ください： [Experience Managerリリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja) の今後の機能のアクティベーションについて [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
@@ -25,65 +27,56 @@ ht-degree: 99%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の月間リリース（2022.10.0）のリリース日は 2022 年11月10日です。次の毎月のリリース (2023.1.0) は、2023 年 2 月 9 日に予定されています。
+のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在の機能リリース (2023.1.0) は 2023 年 2 月 10 日です。 次の機能リリース (2023.2.0) は、2023 年 3 月 3 日に予定されています。
 
 ## リリースビデオ {#release-video}
 
-2022.10.0 リリースで追加された機能の概要については、2022年10月リリースの概要ビデオをご覧ください。
+2023.1.0 リリースに追加された機能の概要については、 2023 年 1 月リリースの概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3409801/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3413479/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
+### [!DNL Sites] プレリリースの新機能 {#prerelease-features-sites}
 
-### の新機能[!DNL Sites] {#sites-features}
-
-* この[エクスペリエンスフラグメントのパーソナライゼーションタブ](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment)では、エクスペリエンスフラグメントエディターに対してセグメント化の仕様機能を使用できるほか、ネストされたエクスペリエンスフラグメントを柔軟に作成できるため、複数のセグメントに対してヘッダーとフッターのバリエーションを作成することができます。 この機能を開始する前は、AEM が提供するパーソナライゼーションはサイトのページでのみ使用できますが、エクスペリエンスフラグメントでは使用できません
-
-* この[コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)では、ユーザーが翻訳されたコンテンツフラグメントを効率的に管理できるようになりました。 すべての言語コピーを表示するための 1 回のクリックアクセスが提供されています。 また、ユーザーは、関心があるロケールに基づいてテーブル表示をフィルタリングすることもできます。
-
-![コンテンツフラグメントの言語](/help/release-notes/assets/cfconsole-languages.png)
-
-* テンプレートの画像サイズ設定を最適化することで、訪問者のページ読み込み時間をさらに短縮します。 画像コンポーネントの詳細については、[コア WCM コンポーネント](https://github.com/adobe/aem-core-wcm-components)を参照してください
+* AEM GraphQLコンテンツ配信 API でGraphQLがサポートされるようになりました [ページング](/help/headless/graphql-api/content-fragments.md#paging) および [並べ替え](/help/headless/graphql-api/content-fragments.md#sorting)を使用して、大きなコンテンツセットの取得とレンダリングをより効率的におこなうことができます。 GraphQLのページネーションを使用すると、すべてを一度に返すのではなく、サブセットで結果を返すことで、クエリの応答時間を短縮できます。 GraphQLでの並べ替えでは、コンテンツセットを目的の順序で配置できるので、クライアントアプリケーションでのコンテンツの処理が容易になります。  AEM GraphQLエンジンのハイブリッドフィルタリングにより、クエリの応答時間がさらに短縮されました。 コンテンツは、クエリフィルターに対応する小さなセットで JCR から読み取られるようになりました。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-* Experience Manager Assets で、他のサポートされている形式のドキュメントをアップロードし、[付属の Document Cloud ビューアを使用してプレビューができるようになりました](/help/assets/manage-pdf-documents.md)。サポートされる形式の種類には、TXT、RTF、DOC、DOCX、PPT、PPTX、XLS、XLSX が含まれます。
+* アセットレポートに、管理者が次の操作を実行できるようになりました。 [アセットダウンロードレポートを生成](/help/assets/asset-reports.md) Experience Manager Assetsas a Cloud Serviceデプロイメントから。 このデータにより、管理者はさらに、企業やお客様での Assets の採用状況を測定するために、主要な成功指標から洞察を得ることができます。
 
-   ![他の形式向けの PDF レンディション](/help/release-notes/assets/multi-page-other-formats.png)
+   ![他の形式向けの PDF レンディション](/help/release-notes/assets/choose_report.png)
 
+* Experience Manager Assets now は、Azure Blob ストレージデータ ソースに接続し、一括インポート ツールを使用してアセットを取り込む際に、認証用のアクセス キーに加えて [SAS Token](/help/assets/add-assets.md#asset-bulk-ingestor) をサポートするようになりました。
+
+* asset computeでの CMYK 画像の管理が改善され、CMYK 画像用のスマート切り抜きとスマートタグを生成できるようになりました。
 
 ### [!DNL Assets] プレリリースの新機能 {#prerelease-features-assets}
 
-* Experience Manager Assets は、画像スマートタグ用に改善された人工知能フレームワークを使用するようになりました。 このコンテンツインテリジェンスにより、取り込み時にすべての画像アセットで使用できるスマートタグの関連性と精度が向上します。 さらに、向き情報が`cq:tags`に取り込まれ、向きフィルターを使用してより良い検索結果が得られます。
-
-   ベータ版への参加を希望される場合は、11月14日までに [このフォームに入力](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) してください。
-
-* Experience Manager Assets now は、Azure Blob ストレージデータ ソースに接続し、一括インポート ツールを使用してアセットを取り込む際に、認証用のアクセス キーに加えて [SAS Token](/help/assets/add-assets.md#asset-bulk-ingestor) をサポートするようになりました。
+* Experience Manager Assetsは、 [Google Cloud Platform からの大規模なアセットの取り込み](/help/assets/add-assets.md#asset-bulk-ingestor) 一括読み込みツールを使用して読み込みます。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] で利用できる新機能 {#new-features-available-in-channel}
 
+* **[非インタラクティブワークフロードキュメントと印刷可能なPDF出力を生成するためのワークフローステップ](/help/forms/aem-forms-workflow-step-reference.md)**:AEM Workflow ステップを使用して、非インタラクティブPDFドキュメントの作成とビジネスプロセスの印刷可能な出力の自動化を行い、ドキュメント生成プロセスを合理化し、時間を節約します。
+* **[脚注を使用して、アダプティブFormsで引用文や追加情報を提供する](/help/forms/footnotes-richtextsupport.md)**:アダプティブフォーム内の脚注を使用して、フォームの入力方法や使用方法に関する情報を表示します。 また、括弧で囲まれた情報や著作権に関する権限、その他の役に立つ情報を提供する場合にも使用できます。
 
-* [アダプティブフォームウィザード](/help/forms/creating-adaptive-form.md)：AEM Forms は、ビジネスユーザー向けの使いやすいウィザードで、アダプティブフォームをすばやく作成することができます。このウィザードはクイックタブナビゲーション機能を備えており、アダプティブフォームを作成するための事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択することができます。このリリースでは、ウィザードが次のように改善されました：
+### [!DNL Forms] プレリリースの新機能 {#prerelease-features-forms}
 
-   * フィールドを選択または選択解除：このウィザードを使用すると、JSON およびフォームデータモデルスキーマに基づくアダプティブフォームを作成することができます。 スキーマ内のフィールドのサブセットを選択して、アダプティブフォームに含めることができるようになりました。 選択したフィールドは、対応するアダプティブフォームのデータキャプチャコンポーネントに変換され、目的のアダプティブフォームをすばやく作成することができます。
+* **[データキャプチャコアコンポーネントを使用したアダプティブFormsの構築](/help/forms/creating-adaptive-form-core-components.md)**:アダプティブFormsエディターを使用して、標準化されたデータキャプチャコンポーネント（コアコンポーネント）に基づいてフォームを作成します。 これらのコンポーネントは、カスタマイズ機能を提供し、開発時間を短縮し、デジタル登録エクスペリエンスのメンテナンスコストを削減します。
+* **[アダプティブFormsに基づくコアコンポーネントのスタイル設定のためのフロントエンドパイプラインのサポート](/help/forms/using-themes-in-core-components.md)**:コアコンポーネントベースのアダプティブFormsに対して、容易にカスタマイズ可能な BEM ベースのテーマを利用し、フロントエンドデプロイメントパイプラインと共にデプロイして、フォームのルックアンドフィールを強化します。
+* **[コアコンポーネントベースのアダプティブFormsに関するレコードのドキュメントを生成する](/help/forms/generate-document-of-record-core-components.md)**:長期保存用、印刷またはドキュメント形式での送信時に、コアコンポーネントベースのアダプティブフォームのレコードを作成します。
 
-   * 静的テンプレートを使用：従来の静的テンプレートにすでに投資している顧客は、ウィザードで静的テンプレートを使用してアダプティブ フォームを作成することにより、クラウド導入のジャーナリストを続けることができます。これにより、顧客にとっての、古い静的テンプレートを最新の編集可能なテンプレートに移行する時間が増加します。
+![](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* [サーバーサイドの処理中にレコードのドキュメント（DoR）から非表示のフィールドを削除する](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)：データキャプチャエクスペリエンス中にエンドユーザーに表示されたフィールドのみを含む、エンド ユーザー用のレコード PDF ドキュメントを生成することができます。フォームの送信時に、サーバーは送信されたデータに基づいて、どのフィールドがエンド ユーザーに対して非表示になっているかを検証し、一貫性を保つためにレコードのドキュメントから除外します。
-
-### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms}
-
-* **アダプティブフォームテンプレートエディター**：テンプレートエディターを使用すると、組織のアダプティブフォームの基本構造と外観を事前に定義することができます。このリリースでは、テンプレートエディターが次のように改善されました：
-   * **[テンプレートエディターのフォームデータモデル](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**：テンプレートエディター内で、フォームデータモデルスキーマをアダプティブフォームテンプレートに関連付けることができます。 これにより、アダプティブフォームの作成に要する時間を短縮します。 このオプションはアダプティブ フォームエディターにも追加され、ユーザーは既存のフォームのフォームデータモデルを選択または変更することができます。
-   * **[テンプレートエディターでのレコードのドキュメント](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**：テンプレートを使用して作成されたすべてのフォームのレコードのドキュメント生成を標準化できるようになりました。これにより、組織の要件に対するコンプライアンスと標準化が強化されます。
-
-* **[AEM Sites ページからアダプティブフォームウィザードを起動](/help/forms/embed-adaptive-form-aem-sites.md)**：AEM Sites ページでは、アダプティブフォームのサポートが拡張されました。AEM Sites ページを表示したまま、新しいアダプティブフォームを作成したり、既存のアダプティブフォームを埋め込んだりすることができるようになりました。
-* **[DoR でチェックボックスとラジオボタンの表示の配置を変更](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**：レコードのドキュメントのチェックボックスおよびラジオボタンに対して、配置（水平、垂直、アダプティブフォームと同じ）を設定できるようになりました。このオプションは、レコードのドキュメント内でのチェックボックスおよびラジオボタンの位置を決定します。
+* **レビュー用にアダプティブフォームを共有する**:アダプティブFormsのレビューメカニズムを使用して、1 人または複数のレビュー担当者がフォームをレビューできるようにします。
+* **[Microsoft SharePointとMicrosoft OneDrive にアダプティブFormsを送信する](/help/forms/configuring-submit-actions.md)**:Microsoft SharePointとMicrosoft OneDrive の両方にアダプティブフォームのデータを直接送信できるので、データ送信を効率化します。 スキーマベースのデータとスキーマレスのデータの両方を送信できます。 これらの送信アクションは、既に使用可能な送信アクションに加えて実行されます。
+* **[「アダプティブフォームをテンプレートとして保存」機能を使用した効率的なフォーム作成](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**:アダプティブフォームをテンプレートとして保存し、そのテンプレートを次のアダプティブフォーム用に再利用することで、フォームの作成プロセスを合理化します。
+* **[JDBC をサポートするデータベースにForms Data Model を接続する](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)**:JDBC をサポートするデータベースにAEM Formsを接続し、このようなデータベースに対してデータを読み書きします。
+* **Open API 仕様バージョン 3.0 をサポートする REST エンドポイントにフォームデータモデルを接続**:Open API 仕様バージョン 3.0 をサポートする REST エンドポイントに、AEM Formsas a Cloud Serviceのを接続してデータを送受信します。
 
 ## CIF アドオン {#cloud-services-cif}
 
@@ -98,11 +91,25 @@ ht-degree: 99%
 
 ### 新機能 {#what-is-new-foundation}
 
-* AEM as a Cloud Service（オーサーサービス）が統合シェルと統合され、ユーザーエクスペリエンスが向上し、他のすべての Experience Cloud アプリケーションと統合されました。詳しくは、[統合シェル上の AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) を参照してください。
+* [迅速な開発環境](/help/implementing/developing/introduction/rapid-development-environments.md) - RDE を使用すると、開発者は問題を迅速にトラブルシューティングし、AEM as a Cloud Serviceに新しい機能をデプロイできます。
 
-* リリースノートで前述したように、レプリケーションエージェントの管理画面またはレプリケーション API を使用して 10 MB を超えるコンテンツパッケージ（バイナリを含まないプロパティを持つノード）を配布することは非推奨で、近日中に適用される予定です。これらの大きなコンテンツ パッケージをレプリケートするための推奨アプローチについて詳しくは、[公開の管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow)を参照してください。
+   迅速な開発環境は、迅速で一貫性のある、拡張可能な方法として設計された新しいタイプのクラウド環境で、ローカルで動作するコードを検証する方法も、クラウド内での期待どおりに機能します。 コマンドラインツールを使用して、コンテンツパッケージ、バンドル、コンテンツファイル、OSGi 設定、Dispatcher 設定をすばやく「同期」します。 以下のビデオで、実際の動作でこれを確認してください。
 
-* Dispatcher 設定で、一般的なマーケティングキャンペーンのクエリパラメーターをリストするファイルが参照されるようになりました。顧客が関連するパラメーターのコメント解除を選択できるので、キャッシュが改善されました。詳しくは、[マーケティングキャンペーンパラメーター](/help/implementing/dispatcher/caching.md#marketing-parameters)を参照してください。
+   >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
+
+   RDE でコードを正常に検証した後、実稼動パイプラインを介してステージおよび実稼動環境にデプロイする前に、Cloud Dev Environment にデプロイして Cloud Manager の品質ゲートを使用することをお勧めします。
+
+   各プログラムには 1 つの RDE が含まれ、オプションで、さらにライセンスを取得できます。
+
+   >[!NOTE]
+   >
+   >RDE は、今後数週間で徐々に展開される予定です。メールをaemcs-rde-support@adobe.comに送信して、スキップして行の先頭に進むことができます。
+
+* [サーバー側 API アクセストークンの拡張サポート](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)  — 複数の資格情報を生成できるようになりました。これは、API の特性が異なるシナリオで役立ちます。 また、セルフサービス方式で資格情報を失効させることもできるようになりました。
+
+## メンテナンスリリースノート {#maintenance}
+
+最新のメンテナンスリリースノートがあります [ここ](/help/release-notes/maintenance/latest.md).
 
 ## Cloud Manager {#cloud-manager}
 

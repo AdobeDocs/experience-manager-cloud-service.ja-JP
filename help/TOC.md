@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: edb6e23341289308837509eef444a8642b903bb7
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '3857'
-ht-degree: 98%
+source-wordcount: '3918'
+ht-degree: 95%
 
 ---
 
@@ -32,9 +32,10 @@ ht-degree: 98%
    + [ドキュメントジャーニー](/help/journey-documentation/documentation-journeys.md)
 + リリースノート {#release-notes}
    + [リリース情報](/help/release-notes/home.md)
-   + AEMaaCS の一般リリースノート {#release-notes}
+   + AEMaaCS 機能リリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [リリースノート（2022.10.0）](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
          + [リリースノート（2022.8.0）](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
          + [リリースノート（2022.7.0）](/help/release-notes/release-notes-cloud/2022/release-notes-2022-7-0.md)
          + [リリースノート（2022.6.0）](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
@@ -66,7 +67,7 @@ ht-degree: 98%
          + [リリースノート（2020.4.0）](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
          + [リリースノート（2020.3.0）](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
          + [リリースノート（2020.2.0）](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
-   + メンテナンス AEMaaCS リリースノート {#maintenance}
+   + AEMaaCS メンテナンスリリースノート {#maintenance}
       + [最新のメンテナンスリリースノート](/help/release-notes/maintenance/latest.md)
    + Cloud Manager のリリースノート {#cloud-manager}
       + [最新のリリースノート](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
@@ -496,90 +497,100 @@ ht-degree: 98%
       + [ [!DNL Workfront] 用の  [!DNL enhanced connector]  の設定](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + Forms {#forms}
-   + [はじめに](/help/forms/home.md)
-   + [主な機能](/help/forms/key-features.md)
-   + [主要な変更点](/help/forms/notable-changes.md)
-   + [アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
-   + サービスのセットアップと設定 {#setup-environment}
+   + 概要 {#forms-overview}
+      + [はじめに](/help/forms/home.md)
+      + [主な機能](/help/forms/key-features.md)
+      + [主要な変更点](/help/forms/notable-changes.md)
+      + [アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
+      + [よくある質問](/help/forms/faq.md)
+      + [既知の問題](/help/forms/known-issues.md)
+   + セットアップ {#setup-environment}
       + [Cloud Service 環境へのオンボード](/help/forms/setup-forms-cloud-service.md)
       + [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
       + [Forms Designer のインストールと設定](/help/forms/installing-configuring-designer.md)
       + [統合ストレージコネクタの設定](/help/forms/configure-unified-storage-connector.md)
-   + ユーザーグループ、フォームおよび関連アセットの管理 {#manage-forms-and-related-assets}
+   + 移行中 {#setup-environment}
+      + [ [!DNL AEM Forms]  as a Cloud Service への移行](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+   + 管理 {#administering}
       + [グループと権限](/help/forms/forms-groups-privileges-tasks.md)
       + [アダプティブフォーム、PDF フォームおよびその他のアセットの読み込み、書き出し、整理](/help/forms/import-export-forms-templates.md)
-   + PDF forms のアダプティブフォームへの変換 {#afcs}
-      + [自動フォーム変換サービスの概要](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ja)
-      + [既存の PDF フォームからアダプティブフォームへの変換](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ja)
-      + [変換後のフォームのレビューと修正](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=ja#welcome-to-review-and-correct-editor)
-   + アダプティブフォームの作成と公開 {#create-an-adaptive-form}
-      + 事前準備 {#before-you-start}
-         + [アダプティブフォームのオーサリングの概要](/help/forms/introduction-forms-authoring.md)
-         + [テンプレートの作成](/help/forms/template-editor.md)
-         + [テーマの作成](/help/forms/themes.md)
+   + 統合 {#integrate}
+      + [AEM FormsとAdobe Signのas a Cloud Service](/help/forms/adobe-sign-integration-adaptive-forms.md)
+      + [AEM Forms as a Cloud Serviceと DocuSign の統合](/help/forms/integrate-docusign-adaptive-forms.md)
+      + [AEM FormsとAdobe Analyticsのas a Cloud Service](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+      + [アダプティブフォームと Microsoft Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)
+      + [AEM SitesページにアダプティブFormsを埋め込む](/help/forms/embed-adaptive-form-aem-sites.md)
+   + アダプティブフォーム {#adaptive-forms-authoring}
+      + アダプティブFormsのオーサリング — コアコンポーネント {#authoring-adaptive-forms-core-components}
+         + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
+            + [アダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
+            + [アダプティブフォームのテーマを作成する — コアコンポーネント](/help/forms/using-themes-in-core-components.md)
+            + [アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-core-components.md)
+      + アダプティブFormsのオーサリング — 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
+         + PDF formsをアダプティブFormsに変換する {#afcs}
+            + [自動フォーム変換サービスの概要](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ja)
+            + [既存の PDF フォームからアダプティブフォームへの変換](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ja)
+            + [変換後のフォームのレビューと修正](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=ja#welcome-to-review-and-correct-editor)
+         + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
+            + [アダプティブフォームのオーサリングの概要](/help/forms/introduction-forms-authoring.md)
+            + [アダプティブフォームの作成](/help/forms/creating-adaptive-form.md)
+            + [テンプレートの作成](/help/forms/template-editor.md)
+            + [テーマの作成](/help/forms/themes.md)
+            + [参照アセット](/help/forms/reference-assets.md)
+            + [アダプティブフォームの JSON スキーマのデザイン](/help/forms/adaptive-form-json-schema-form-model.md)
+            + [Forms Designer の使用](/help/forms/use-forms-designer.md)
+            + [遅延読み込みによる大きなフォームのパフォーマンスの向上](/help/forms/lazy-loading-adaptive-forms.md)
+         + アダプティブフォームへのコンポーネントの追加 {#add-components-to-an-adaptive-form}
+            + [アダプティブフォームでの CAPTCHA の使用](/help/forms/captcha-adaptive-forms.md)
+            + [コアコンポーネントの使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
+            + [手書き署名の適用](/help/forms/signing-forms-using-scribble.md)
+            + [アダプティブフォームに表を追加する](/help/forms/adaptive-forms-tables.md)
+            + [アダプティブフォームへの脚注のサポートの追加](/help/forms/footnotes-richtextsupport.md)
+         + アダプティブフォームのレイアウト設定とスタイルの適用{#configure-layout-of-an-adaptive-form}
+            + [アダプティブフォームのレイアウト設定](/help/forms/layout-capabilities-adaptive-forms.md)
+            + [レイアウトモードを使用したコンポーネントのサイズ変更](/help/forms/resize-using-layout-mode.md)
+            + [複数手順のデータキャプチャエクスペリエンスの作成](/help/forms/introduction-form-sequence.md)
+            + [インライン CSS スタイルのアダプティブフォームの個々のコンポーネントへの適用](/help/forms/inline-style-adaptive-forms.md)
+         + アダプティブフォームでのルール追加と式の使用 {#add-rules-and-use-expressions-in-an-adaptive-form}
+            + [アダプティブフォームへのルールの追加](/help/forms/rule-editor.md)
+         + [!DNL Adobe Sign] の使用 {#use-adobe-sign}
+            + [Adobe Sign を使用したアダプティブフォームの電子サイン](/help/forms/working-with-adobe-sign.md)
+         + 送信アクションとメタデータ送信の設定 {#configure-submit-actions-and-metadata-submission}
+            + [アダプティブフォームの送信アクションを設定](/help/forms/configuring-submit-actions.md)
+            + [リダイレクトページの設定](/help/forms/configuring-redirect-page.md)
+            + [アダプティブフォームの非同期送信を設定](/help/forms/asynchronous-submissions-adaptive-forms.md)
+            + [カスタム送信アクションの作成](/help/forms/custom-submit-action-form.md)
+         + [アダプティブフォームフィールドに事前入力](/help/forms/prepopulate-adaptive-form-fields.md)
+         + [レコードのドキュメントを生成](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+         + メタデータの追加または向上 {#manage-metadata}
+            + [アダプティブフォームのメタデータの追加、削除、編集](/help/forms/manage-form-metadata.md)
+            + [アダプティブフォームのメタデータプロパティの再利用](/help/forms/reusing-adaptive-forms.md)
+         + アダプティブフォームのアクセシビリティの向上 {#accessible-adaptive-forms}
+            + [アクセシブルなアダプティブフォームの作成](/help/forms/creating-accessible-adaptive-forms.md)
+         + [フォームポータルの設定](/help/forms/configure-forms-portal.md)
+      + フォームデータモデル {#use-form-data-model}
          + [データソースの Cloud Service への接続](/help/forms/data-integration.md)
-         + [参照アセット](/help/forms/reference-assets.md)
-      + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
-         + [アダプティブフォームの作成](/help/forms/creating-adaptive-form.md)
-         + [アダプティブフォームの JSON スキーマのデザイン](/help/forms/adaptive-form-json-schema-form-model.md)
-         + [Forms Designer の使用](/help/forms/use-forms-designer.md)
-         + [遅延読み込みによる大きなフォームのパフォーマンスの向上](/help/forms/lazy-loading-adaptive-forms.md)
-      + アダプティブフォームへのコンポーネントの追加 {#add-components-to-an-adaptive-form}
-         + [アダプティブフォームでの CAPTCHA の使用](/help/forms/captcha-adaptive-forms.md)
-         + [コアコンポーネントの使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
-         + [手書き署名の適用](/help/forms/signing-forms-using-scribble.md)
-         + [新しい言語のローカライゼーションのサポート](/help/forms/supporting-new-language-localization.md)
-         + [アダプティブフォームに表を追加する](/help/forms/adaptive-forms-tables.md)
-      + アダプティブフォームのレイアウト設定とスタイルの適用{#configure-layout-of-an-adaptive-form}
-         + [アダプティブフォームのレイアウト設定](/help/forms/layout-capabilities-adaptive-forms.md)
-         + [レイアウトモードを使用したコンポーネントのサイズ変更](/help/forms/resize-using-layout-mode.md)
-         + [複数手順のデータキャプチャエクスペリエンスの作成](/help/forms/introduction-form-sequence.md)
-         + [インライン CSS スタイルのアダプティブフォームの個々のコンポーネントへの適用](/help/forms/inline-style-adaptive-forms.md)
-      + アダプティブフォームでのルール追加と式の使用 {#add-rules-and-use-expressions-in-an-adaptive-form}
-         + [アダプティブフォームへのルールの追加](/help/forms/rule-editor.md)
-      + [!DNL Adobe Sign] の使用 {#use-adobe-sign}
-         + [Adobe Sign を使用したアダプティブフォームの電子サイン](/help/forms/working-with-adobe-sign.md)
-      + 送信アクションとメタデータ送信の設定 {#configure-submit-actions-and-metadata-submission}
-         + [アダプティブフォームの送信アクションを設定](/help/forms/configuring-submit-actions.md)
-         + [リダイレクトページの設定](/help/forms/configuring-redirect-page.md)
-         + [アダプティブフォームの非同期送信を設定](/help/forms/asynchronous-submissions-adaptive-forms.md)
-         + [カスタム送信アクションの作成](/help/forms/custom-submit-action-form.md)
-      + [アダプティブフォームフィールドに事前入力](/help/forms/prepopulate-adaptive-form-fields.md)
-      + [レコードのドキュメントを生成](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-      + メタデータの追加または向上 {#manage-metadata}
-         + [アダプティブフォームのメタデータの追加、削除、編集](/help/forms/manage-form-metadata.md)
-         + [アダプティブフォームのメタデータプロパティの再利用](/help/forms/reusing-adaptive-forms.md)
-      + アダプティブフォームのアクセシビリティの向上 {#accessible-adaptive-forms}
-         + [アクセシブルなアダプティブフォームの作成](/help/forms/creating-accessible-adaptive-forms.md)
-      + [フォームポータルの設定](/help/forms/configure-forms-portal.md)
-   + {#integrate} の統合
-      + フォームと 1 つ以上のデータソースの統合 {#use-form-data-model}
          + [データソースの設定](/help/forms/configure-data-sources.md)
          + [ [!DNL Microsoft Dynamics]  OData の設定](/help/forms/ms-dynamics-odata-configuration.md)
          + [ [!DNL Azure]  ストレージの設定](/help/forms/configure-azure-storage.md)
          + [ [!DNL Microsoft Dynamics 365] および [!DNL Salesforce] クラウドサービスの設定](/help/forms/configure-msdynamics-salesforce.md)
          + [フォームデータモデルの作成](/help/forms/create-form-data-models.md)
-      + [フォームデータモデルの操作](/help/forms/work-with-form-data-model.md)
-      + [フォームデータモデルの使用](/help/forms/using-form-data-model.md)
-      + [Adobe Sign との統合](/help/forms/adobe-sign-integration-adaptive-forms.md)
-      + [DocuSign との統合](/help/forms/integrate-docusign-adaptive-forms.md)
-      + [Sites との統合](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
-      + [Adobe Analytics との統合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-      + [アダプティブフォームと Microsoft Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)
-      + [AEM Sites でのアダプティブフォームの埋め込み](/help/forms/embed-adaptive-form-aem-sites.md)
-   + ワークフローの作成と使用 {#create-form-centric-workflows}
-      + [ワークフローでの Forms 中心のステップの使用 + ステップリファレンス](/help/forms/aem-forms-workflow-step-reference.md)
-      + [Forms 中心のワークフローでの変数の使用](/help/forms/variable-in-aem-workflows.md)
-      + [「不在」オプションの使用](/help/forms/configure-out-of-office-settings.md)
-   + Communications の使用 {#using-communications}
-      + [はじめに通信 API](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+         + [フォームデータモデルの操作](/help/forms/work-with-form-data-model.md)
+         + [フォームデータモデルの使用](/help/forms/using-form-data-model.md)
+      + Forms中心のワークフロー {#create-form-centric-workflows}
+         + [ワークフローでの Forms 中心のステップの使用 + ステップリファレンス](/help/forms/aem-forms-workflow-step-reference.md)
+         + [Forms 中心のワークフローでの変数の使用](/help/forms/variable-in-aem-workflows.md)
+         + [「不在」オプションの使用](/help/forms/configure-out-of-office-settings.md)
+   + 通信 API の使用 {#using-communications}
+      + [通信 API の概要](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [通信 API - 同期処理](/help/forms/aem-forms-cloud-service-communications.md)
       + [通信 API - バッチ処理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [PDF ドキュメントでのカスタムフォントの使用](/help/forms/use-custom-fonts.md)
       + [既知の問題、ベストプラクティス、よくある質問](/help/forms/communications-known-issues-limitations.md)
-   + [ [!DNL AEM Forms]  as a Cloud Service への移行](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-   + [よくある質問](/help/forms/faq.md)
-   + [既知の問題](/help/forms/known-issues.md)
+      + 開発者 API リファレンス {#aem-forms-developer-api-reference}
+      + [AEM FormsCloud Service通信 API リファレンス](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
+      + [AEM FormsCloud ServiceJavaScript API リファレンス](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
+      + [AEM FormsCloud ServiceJava API リファレンス](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
    + トラブルシューティング {#troubleshooting-aem-forms-cloud-service}
       + [インストールと設定](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher と CDN のキャッシュ](/help/forms/troubleshooting-caching-performance.md)

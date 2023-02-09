@@ -1,12 +1,12 @@
 ---
-title: 他のユーザーにワークフローを割り当て、電子メールを送信、およびワークフローで Adobe Sign を使用する方法
-description: Forms 中心のワークフローを使用すると、アダプティブフォームベースのワークフローを迅速に構築できます。Adobe Sign を使用して、ドキュメントへの電子サイン、フォームをベースとしたビジネスプロセスの作成、複数データソースへのデータの取得と送信、電子メール通知の送信を行うことができます
+title: 他のユーザーにワークフローを割り当て、メールを送信、およびワークフローで Adobe Sign を使用する方法
+description: Forms 中心のワークフローを使用すると、アダプティブフォームベースのワークフローを迅速に構築できます。Adobe Sign を使用して、ドキュメントへの電子サイン、フォームをベースとしたビジネスプロセスの作成、複数データソースへのデータの取得と送信、メール通知の送信を行うことができます
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: a8dae80f79e32117341519b31c389f8fc30b5957
-workflow-type: ht
-source-wordcount: '6132'
-ht-degree: 100%
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+workflow-type: tm+mt
+source-wordcount: '7210'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ Forms 中心のワークフローステップは、AEM ワークフローで AEM
 
 * ワークフローモデルを様々なデータソースに接続し、データを容易に保存および取得する。
 
-* 電子メールステップを使用して、アクションの完了時やワークフローの開始時または完了時に、通知電子メールおよびその他の添付ファイルを送信する。
+* メールステップを使用して、アクションの完了時やワークフローの開始時または完了時に、通知メールおよびその他の添付ファイルを送信する。
 
 >[!NOTE]
 >
@@ -124,11 +124,11 @@ Forms 中心のワークフローステップは、AEM ワークフローで AEM
 * **[!UICONTROL ユーザーまたはグループ]**：選択したユーザーまたはグループにタスクが割り当てられます。このオプションは、「**[!UICONTROL 割り当てオプション]**」フィールドで「**[!UICONTROL 特定のユーザーまたはグループに割り当て]**」オプションを選択した場合に使用できます。このフィールドには、[!DNL workflow-users] グループのすべてのユーザーとグループが一覧表示されます。\
    「**[!UICONTROL ユーザーまたはグループ]**」ドロップダウンメニューには、ログインユーザーおよびグループがアクセスできるリストが表示されます。ユーザー名の表示は、その特定のユーザーの crx-repository の **[!UICONTROL users]** ノードに対するアクセス権限があるかどうかによって異なります。
 
-* **[!UICONTROL 通知メールを送信]**： 電子メール通知を担当者に送信するには、このオプションを選択します。この通知は、タスクがユーザーまたはグループに割り当てられたときに送信されます。「**[!UICONTROL 受信者の電子メールアドレス]**」オプションを使用して、電子メールアドレスを取得するメカニズムを指定できます。
+* **[!UICONTROL 通知メールを送信]**： メール通知を担当者に送信するには、このオプションを選択します。この通知は、タスクがユーザーまたはグループに割り当てられたときに送信されます。「**[!UICONTROL 受信者のメールアドレス]**」オプションを使用して、メールアドレスを取得するメカニズムを指定できます。
 
-* **[!UICONTROL 受信者の電子メールアドレス]**：電子メールアドレスは、変数に格納したり、リテラルを使用して永続的な電子メールアドレスを指定したり、担当者のプロファイルで指定したデフォルトの電子メールアドレスを使用したりできます。リテラルまたは変数を使用して、グループの電子メールアドレスを指定できます。変数オプションは、電子メールアドレスを動的に取得して使用する場合に便利です。「**[!UICONTROL 担当者のデフォルトの電子メールアドレスを使用する]**」オプションは、1 人の担当者に対してのみ使用できます。この場合、担当者のユーザープロファイルに保存されている電子メールアドレスが使用されます。
+* **[!UICONTROL 受信者のメールアドレス]**：メールアドレスは、変数に格納したり、リテラルを使用して永続的なメールアドレスを指定したり、担当者のプロファイルで指定したデフォルトのメールアドレスを使用したりできます。リテラルまたは変数を使用して、グループのメールアドレスを指定できます。変数オプションは、メールアドレスを動的に取得して使用する場合に便利です。「**[!UICONTROL 担当者のデフォルトのメールアドレスを使用する]**」オプションは、1 人の担当者に対してのみ使用できます。この場合、担当者のユーザープロファイルに保存されているメールアドレスが使用されます。
 
-* **[!UICONTROL HTML 電子メールテンプレート]**： 通知電子メールの電子メールテンプレートを選択します。テンプレートを編集するには、crx リポジトリの /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt にあるファイルを変更します。
+* **[!UICONTROL HTML メールテンプレート]**： 通知メールのメールテンプレートを選択します。テンプレートを編集するには、crx リポジトリの /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt にあるファイルを変更します。
 * **[!UICONTROL 許可する委任先]**：AEM インボックスには、ログインユーザーが、割り当てられたワークフローを別のユーザーに委任するオプションが用意されています。同じグループ内または別のグループのワークフローユーザーに委任することができます。タスクが 1 人のユーザーに割り当てられていて、「**[!UICONTROL 担当者グループのメンバーへの委任を許可する]**」オプションが選択されている場合、そのタスクを別のユーザーまたはグループに委任することはできません。
 * **[!UICONTROL 共有設定]**：AEM インボックスには、インボックス内の 1 人またはすべてのタスクを他のユーザーと共有するオプションが用意されています。
    * 「**[!UICONTROL 担当者がインボックスで明示的に共有することを許可する]**」オプションが選択されている場合、ユーザーは AEM インボックスでタスクを選択し、別の AEM ユーザーと共有できます。
@@ -150,8 +150,8 @@ Forms 中心のワークフローステップは、AEM ワークフローで AEM
 
 * **[!UICONTROL 次を使用して出力タスクの添付ファイルを保存]**：添付ファイルフォルダーの場所を指定します。出力タスクの添付ファイルは、ペイロードに対する相対パスを使用するか、ドキュメントデータタイプの配列の変数に保存できます。このオプションは、「**[!UICONTROL 担当者がタスクに添付ファイルを追加することを許可]**」チェックボックスを選択し、「**[!UICONTROL フォーム / ドキュメント]**」タブの「**[!UICONTROL タイプ]**」ドロップダウンリストから、「**[!UICONTROL アダプティブフォーム]**」、「**[!UICONTROL 読み取り専用アダプティブフォーム]**」または「**[!UICONTROL 非インタラクティブ PDF ドキュメント]**」を選択した場合にのみ表示されます。
 
-* **[!UICONTROL カスタムメタデータを使用]**： カスタムメタデータフィールドを有効にするには、このオプションを選択します。カスタムメタデータは電子メールテンプレートで使用されます。
-* **[!UICONTROL カスタムメタデータ]**： 電子メールテンプレートのカスタムメタデータを選択します。カスタムメタデータは、crx リポジトリの apps/fd/dashboard/scripts/metadataScripts にあります。指定されたパスは crx リポジトリに存在しません。このパスは、使用する前に管理者が作成します。また、カスタムメタデータ用のサービスを使用することもできます。さらに、`WorkitemUserMetadataService` インターフェイスを拡張してカスタムメタデータを提供することもできます。
+* **[!UICONTROL カスタムメタデータを使用]**： カスタムメタデータフィールドを有効にするには、このオプションを選択します。カスタムメタデータはメールテンプレートで使用されます。
+* **[!UICONTROL カスタムメタデータ]**： メールテンプレートのカスタムメタデータを選択します。カスタムメタデータは、crx リポジトリの apps/fd/dashboard/scripts/metadataScripts にあります。指定されたパスは crx リポジトリに存在しません。このパスは、使用する前に管理者が作成します。また、カスタムメタデータ用のサービスを使用することもできます。さらに、`WorkitemUserMetadataService` インターフェイスを拡張してカスタムメタデータを提供することもできます。
 * **[!UICONTROL 前のステップのデータを表示します]**：以前の担当者、タスクに対して既に実行されたアクション、タスクに追加されたコメントおよび完了したタスクのレコードのドキュメント（使用可能な場合）を担当者が表示できるようにするには、このオプションを選択します。
 * **[!UICONTROL 以降のステップのデータを表示します]**： 後続の担当者が実行したアクションと追加したコメントを現在の担当者が表示できるようにするには、このオプションを選択します。また、このオプションを選択すると、完了したタスクのレコードのドキュメント（使用可能な場合）を現在の担当者が表示できるようになります。
 * **[!UICONTROL データタイプの表示]**：デフォルトで、担当者は、レコードのドキュメント、担当者、実行されたアクションに加え、前の担当者および後続の担当者が追加したコメントを表示することができます。「データタイプの表示」オプションを使用すると、担当者に表示されるデータタイプが制限されます。
@@ -177,27 +177,27 @@ PDF/A に変換ステップには、次のプロパティがあります。
 **[!UICONTROL 出力ドキュメント]**：出力ファイルを保存する場所を指定します。出力ファイルは、ペイロードに関連する場所に保存でき、ペイロードがファイルの場合はペイロードを上書きするか、ドキュメントデータタイプの変数に保存できます。
 
 
-## 電子メールを送信ステップ {#send-email-step}
+## メールを送信ステップ {#send-email-step}
 
-電子メールのステップを使用して、レコードのドキュメント、アダプティブフォームのリンク<!-- , link of an interactive communication-->または添付 PDF ドキュメントを含む電子メールを送信します。電子メールを送信ステップは、[HTML 電子メール](https://ja.wikipedia.org/wiki/HTML_email)をサポートします。HTML 電子メールは、受信者の電子メールクライアントや画面サイズにレスポンシブに対応します。HTML 電子メールテンプレートを使用して、電子メールの外観、カラースキーム、動作を定義できます。
+メールのステップを使用して、レコードのドキュメント、アダプティブフォームのリンク<!-- , link of an interactive communication-->または添付 PDF ドキュメントを含むメールを送信します。電子メールを送信ステップは、[HTML 電子メール](https://ja.wikipedia.org/wiki/HTML_email)をサポートします。HTML 電子メールは、受信者の電子メールクライアントや画面サイズにレスポンシブに対応します。HTML メールテンプレートを使用して、メールの外観、カラースキーム、動作を定義できます。
 
-電子メールステップは、Day CQ Mail Service を使用して電子メールを送信します。電子メールステップを使用する前に、電子メールサービスが設定されていることを確認してください。電子メールは、デフォルトでは HTTP プロトコルおよび HTTPs プロトコルのみをサポートします。[サポートチームに問い合わせて](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ja#sending-email)、電子メールの送信用のポートと、環境用の SMTP プロトコルを有効にします。この制限は、プラットフォームのセキュリティの向上に役立ちます。
+メールステップは、Day CQ Mail Service を使用してメールを送信します。メールステップを使用する前に、メールサービスが設定されていることを確認してください。メールは、デフォルトで HTTP および HTTPs プロトコルのみをサポートします。[サポートチームに問い合わせて](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ja#sending-email)、メールの送信用のポートと、環境用の SMTP プロトコルを有効にします。この制限は、プラットフォームのセキュリティの向上に役立ちます。
 
-電子メールステップには、次のプロパティがあります。
+メールステップには、次のプロパティがあります。
 
 **[!UICONTROL タイトル]**：ステップのタイトルは、ワークフローエディターでステップを識別するのに役立ちます。
 
 **[!UICONTROL 説明]**：説明は、共通の開発環境で作業する他のプロセス開発者にとって有用です。
 
-**[!UICONTROL 電子メールの件名]**：件名は、ワークフローメタデータから取得でき、手動で指定することも、変数に格納されている値から取得することもできます。次のいずれかのオプションを選択します。
+**[!UICONTROL メールの件名]**：件名は、ワークフローメタデータから取得でき、手動で指定することも、変数に格納されている値から取得することもできます。次のいずれかのオプションを選択します。
 
 * **[!UICONTROL リテラル]** - 件名を手動で指定します。
 * **[!UICONTROL ワークフローメタデータから取得]** - メタデータプロパティから件名を取得します。
 * **[!UICONTROL 変数]** - 文字列データ型の変数に格納された値から件名を取得します。
 
-**[!UICONTROL HTML 電子メールテンプレート：]**&#x200B;電子メール用の HTML テンプレートです。電子メールテンプレート内で変数を指定することができます。電子メールステップは、入力のため、テンプレートに含まれるすべての変数を抽出して表示します。
+**[!UICONTROL HTML 電子メールテンプレート：]**&#x200B;電子メール用の HTML テンプレートです。電子メールテンプレート内で変数を指定することができます。メールステップは、入力のため、テンプレートに含まれるすべての変数を抽出して表示します。
 
-**[!UICONTROL 電子メールテンプレートメタデータ]**：電子メールテンプレート変数の値は、ユーザー指定の値にすることも、オーサーサーバーまたはパブリッシュサーバー上のアセットのパスや、画像、ワークフローメタデータプロパティにすることもできます。
+**[!UICONTROL メールテンプレートメタデータ]**：メールテンプレート変数の値は、ユーザー指定の値にすることも、オーサーサーバーまたはパブリッシュサーバー上のアセットのパスや、画像、ワークフローメタデータプロパティにすることもできます。
 
 * **[!UICONTROL リテラル]**：指定する値が正確に分かっている場合は、このオプションを使用します。例えば、[example@example.com](mailto:example@example.com) と指定します。
 
@@ -209,16 +209,16 @@ PDF/A に変換ステップには、次のプロパティがあります。
 
 -->
 
-* **[!UICONTROL 画像]**：画像を電子メールに埋め込むには、このオプションを使用します。このオプションを選択したら、画像を参照して選択します。「画像」オプションは、メールテンプレートで使用できる画像タグ（&lt;img src=&quot;&#42;&quot;/>）に対してのみ使用できます。
+* **[!UICONTROL 画像]**：画像をメールに埋め込むには、このオプションを使用します。このオプションを選択したら、画像を参照して選択します。「画像」オプションは、メールテンプレートで使用できる画像タグ（&lt;img src=&quot;&#42;&quot;/>）に対してのみ使用できます。
 
-**[!UICONTROL 送信者／受信者の電子メールアドレス]**： 電子メールアドレスを手動で指定するには、「**[!UICONTROL リテラル]**」オプションを選択します。電子メールアドレスをメタデータプロパティから取得するには、「**[!UICONTROL ワークフローメタデータから取得]**」オプションを選択します。
-「**[!UICONTROL ワークフローメタデータから取得]**」オプションのメタデータプロパティ配列のリストを指定することもできます。「**[!UICONTROL 変数]**」オプションを選択して、文字列データ型の変数に格納されている値から電子メールアドレスを取得します。
+**[!UICONTROL 送信者／受信者のメールアドレス]**： メールアドレスを手動で指定するには、「**[!UICONTROL リテラル]**」オプションを選択します。メールアドレスをメタデータプロパティから取得するには、「**[!UICONTROL ワークフローメタデータから取得]**」オプションを選択します。
+「**[!UICONTROL ワークフローメタデータから取得]**」オプションのメタデータプロパティ配列のリストを指定することもできます。「**[!UICONTROL 変数]**」オプションを選択して、文字列データ型の変数に格納されている値からメールアドレスを取得します。
 
-* **[!UICONTROL 添付ファイル]**：指定された場所で使用可能なアセットが電子メールに添付されます。アセットのパスは、ペイロードに対する相対パスまたは絶対パスのどちらでもかまいません。一例として、[Payload_Directory]/attachments/ というパスを指定します。
+* **[!UICONTROL 添付ファイル]**：指定された場所で使用可能なアセットがメールに添付されます。アセットのパスは、ペイロードに対する相対パスまたは絶対パスのどちらでもかまいません。一例として、[Payload_Directory]/attachments/ というパスを指定します。
 
 「**[!UICONTROL 変数]**」オプションを選択して、ドキュメント、XML、JSON データ型の変数に格納された添付ファイルを取得します。
 
-**[!UICONTROL ファイル名]**：電子メール添付ファイルの名前です。電子メールステップは、添付ファイルの元のファイル名を指定されたファイル名に変更します。この名前は、手動で指定することも、ワークフローメタデータのプロパティまたは変数から取得することもできます。指定する値が正確に分かっている場合は、「**[!UICONTROL リテラル]**」オプションを使用します。「**[!UICONTROL 変数]**」オプションを使用して、文字列データ型の変数に格納された値からファイル名を取得します。使用する値がワークフローメタデータプロパティに保存されている場合は、「**[!UICONTROL ワークフローメタデータから取得]**」オプションを使用します。
+**[!UICONTROL ファイル名]**：メール添付ファイルの名前です。メールステップは、添付ファイルの元のファイル名を指定されたファイル名に変更します。この名前は、手動で指定することも、ワークフローメタデータのプロパティまたは変数から取得することもできます。指定する値が正確に分かっている場合は、「**[!UICONTROL リテラル]**」オプションを使用します。「**[!UICONTROL 変数]**」オプションを使用して、文字列データ型の変数に格納された値からファイル名を取得します。使用する値がワークフローメタデータプロパティに保存されている場合は、「**[!UICONTROL ワークフローメタデータから取得]**」オプションを使用します。
 
 ## レコードのドキュメントを生成ステップ {#generate-document-of-record-step}
 
@@ -293,7 +293,7 @@ DDX を呼び出しステップには次のプロパティがあります。
    <td>1</td> 
   </tr> 
   <tr> 
-   <td>電子メールアドレス<br /> </td> 
+   <td>メールアドレス<br /> </td> 
    <td>srose@we.info</td> 
   </tr> 
  </tbody> 
@@ -377,30 +377,29 @@ DDX を呼び出しステップには次のプロパティがあります。
 
 ドキュメントへの署名手順には、次のプロパティがあります。
 
-* **[!UICONTROL 契約名]**：契約のタイトルを指定します。契約名は、署名者に送信される電子メールの件名と本文の一部として使用されます。名前は文字列データ型の変数に格納するか、**[!UICONTROL リテラル]**&#x200B;を選択して手動で追加できます。
+* **[!UICONTROL 契約名]**：契約のタイトルを指定します。契約名は、署名者に送信されるメールの件名と本文の一部として使用されます。名前は文字列データ型の変数に格納するか、**[!UICONTROL リテラル]**&#x200B;を選択して手動で追加できます。
 
-* **[!UICONTROL ロケール]**：電子メールと検証オプションの言語を指定します。ロケールは文字列データ型の変数に格納するか、**[!UICONTROL リテラル]**&#x200B;を選択して、使用可能なオプションのリストからロケールを選択できます。ロケールの値を変数に格納する際は、ロケールコードを定義する必要があります。例えば、英語は **[!UICONTROL en_US]**、フランス語は **[!UICONTROL fr_FR]** と指定します。
+* **[!UICONTROL ロケール]**：メールと検証オプションの言語を指定します。ロケールは文字列データ型の変数に格納するか、**[!UICONTROL リテラル]**&#x200B;を選択して、使用可能なオプションのリストからロケールを選択できます。ロケールの値を変数に格納する際は、ロケールコードを定義する必要があります。例えば、英語は **[!UICONTROL en_US]**、フランス語は **[!UICONTROL fr_FR]** と指定します。
 
 * **[!UICONTROL Adobe Sign クラウド設定]**：[!DNL Adobe Sign] クラウド設定を選択します。[!DNL Adobe Sign] を [!DNL AEM Forms] 用に設定していない場合は、 [Adobe Sign と  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) の統合を参照してください。
 
 * **[!UICONTROL 次を使用して署名するドキュメントを選択]**：ペイロードに対する相対的な場所からドキュメントを選択、ドキュメントとしてペイロードを使用、ドキュメントの絶対パスを指定、またはドキュメントデータ型の変数に格納されたドキュメントを取得できます。
 * **[!UICONTROL 期限までの残り日数]**：「**[!UICONTROL 期限までの残り日数]**」フィールドに指定された日数の間にタスクのアクティビティがない場合、ドキュメントは期限切れとマークされます。日数は、ドキュメントが署名のためにユーザーに割り当てられた後にカウントされます。
-* **[!UICONTROL リマインダー電子メールの頻度]**：リマインダー電子メールを日単位または週単位で送信できます。週のカウントは、ドキュメントが署名のためにユーザーに割り当てられた日から始まります。
+* **[!UICONTROL リマインダーメールの頻度]**：リマインダーメールを日単位または週単位で送信できます。週のカウントは、ドキュメントが署名のためにユーザーに割り当てられた日から始まります。
 * **[!UICONTROL 署名プロセス：]**&#x200B;ドキュメントへの署名を順次おこなうか並列でおこなうかを選択できます。順次署名する場合、ドキュメントは署名のために一度に 1 人の署名者に送信されます。最初の署名者がドキュメントの署名を完了すると、ドキュメントは 2 人目の署名者に送信され、それ以降も同様です。並列で署名する場合、複数の署名者が同時に 1 つのドキュメントに署名することができます。
 * **[!UICONTROL リダイレクト URL]**：リダイレクト URL を指定します。ドキュメントへの署名が完了したら、担当者を URL にリダイレクトすることができます。通常、この URL には、感謝のメッセージやその後の手順が含まれています。
 * **[!UICONTROL ワークフローステージ]**：1 つのワークフローに複数のステージを含めることができます。これらのステージは、AEM インボックスに表示されます。これらのステージは、モデルのプロパティ（**[!UICONTROL サイドキック]**／**[!UICONTROL ページ]**／**[!UICONTROL ページのプロパティ]**／**[!UICONTROL ステージ]**）で定義できます。
 * **[!UICONTROL 署名者を選択]**：ドキュメントの署名者を選択する方法を指定します。ワークフローを動的にユーザーまたはグループに割り当てることも、手動で署名者の詳細を追加することもできます。
 * **[!UICONTROL 署名者を選択するスクリプトまたはサービス]**：このオプションを使用できるのは、「署名者を選択」フィールドで「動的」オプションが選択されている場合のみです。ECMAScript またはサービスを指定して、ドキュメントの署名者と検証オプションを選択することができます。
-* **[!UICONTROL 署名者の詳細]**：このオプションを使用できるのは、「署名者を選択」フィールドで「手動」オプションが選択されている場合のみです。電子メールアドレスを指定し、オプションの検証メカニズムを選択します。2 段階認証メカニズムを選択する前に、設定済みの [!DNL Adobe Sign] アカウントに対して対応する認証オプションが有効になっていることを確認してください。文字列データ型の変数を使用して、「電子メール」、「国コード」、「電話番号」の各フィールドの値を定義できます。「国コード」と「電話番号」フィールドは、「2 段階認証」ドロップダウンリストから「電話の検証」を選択した場合にのみ表示されます。
+* **[!UICONTROL 署名者の詳細]**：このオプションを使用できるのは、「署名者を選択」フィールドで「手動」オプションが選択されている場合のみです。メールアドレスを指定し、オプションの検証メカニズムを選択します。2 段階認証メカニズムを選択する前に、設定済みの [!DNL Adobe Sign] アカウントに対して対応する認証オプションが有効になっていることを確認してください。文字列データ型の変数を使用して、「メール」、「国コード」、「電話番号」の各フィールドの値を定義できます。「国コード」と「電話番号」フィールドは、「2 段階認証」ドロップダウンリストから「電話の検証」を選択した場合にのみ表示されます。
 
-<!-- 
-
+<!--
 ## Document Services steps {#document-services-steps}
 
 AEM Document services are a set of services for creating, assembling, and securing PDF Documents. [!DNL AEM Forms] provides a separate AEM Workflow step for each document service.
 
 Similar to other [!DNL AEM Forms] workflow steps, such as Assign Task, Send Email, and Sign Document, you can use variables in all AEM Document services steps. For more information on creating and managing variables, see [Variables in AEM workflows](variable-in-aem-workflows.md).
-
+ 
 ### Apply Document Time Stamp step {#apply-document-time-stamp-step}
 
 Add time stamp to a document. You provide document details such as input document path, input document name, location to store exported data. You may choose to overwrite existing payload file, choose a different file name to store data in a different file under payload folder, provide an absolute path to the data, or store data in a variable of Document data type.
@@ -488,65 +487,85 @@ Send a document directly to a printer. It supports the following printing access
 
 * **[!UICONTROL Direct accessible printer]**: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.
 * **[!UICONTROL Indirect accessible printer]**: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.
-
-### Generate Printed Output Step {#generatePrintedOutput}
-
-The step generates a PCL, PostScript, ZPL, IPL, TPCL, or DPL output given a form design and data file. The data file is merged with the form design and formatted for printing. The output generated by this step can be sent directly to a printer or saved as file. It is recommended that you use this step when you want to use form designs or data from an application. If your form designs or form designs are located on the network, local file system, or HTTP location, use the generatePrintedOutput operation operation.
-
-For example, your application requires that you merge a form design with a data file. The data contains hundreds of records. In addition, it requires the output is sent to a printer that supports ZPL. The form design and your input data are located in an application. Use the generatePrintedOutput operation to merge each record with a form design and send the output to a printer that supports ZPL.
-
-The Generate Printed Output step has the following properties:
-
-**[!UICONTROL Input properties]**
-
-* **[!UICONTROL Select template file using]**: Specify the path of the template file. You can select the template file using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/data.xml. If the path does not exist in crx-repository, an administrator can create the path before using it. Moreover, you can also accept payload as the input data file.
-
-* **[!UICONTROL Select data document using]**: Specify the path of a input data file. You can select the input data file using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/data.xml. If the path does not exist in crx-repository, an administrator can create the path before using it.
-
-* **[!UICONTROL Printer Format]**: A Print Format value that specifies the page description language to use, when an XDC file is not provided, to generate the output stream. If you provide a literal value, select one of these values:
-
-  * **[!UICONTROL Custom PCL]**: Use the option to specify a custom XDC file for PCL.
-  * **[!UICONTROL Custom PostScript]**: Use the option to specify a custom XDC file for PostScript.
-  * **[!UICONTROL Custom ZPL]**: Use the option to specify a custom XDC file file for ZPL.
-  * **[!UICONTROL Generic Color PCL (5c)]**: Use a generic color PCL (5c).
-  * **[!UICONTROL Generic PostScript Level3]**: Use generic PostScript Level 3.
-  * **[!UICONTROL ZPL 300 DPI]**: Use ZPL 300 DPI. The zpl300.xdc is used.
-  * **[!UICONTROL ZPL 600 DPI]**: Use ZPL 600 DPI. The zpl600.xdc file is used.
-  * **[!UICONTROL Custom IPL]**: Use the option to specify a custom XDC file for IPL.
-  * **[!UICONTROL IPL 300 DPI]**: Use IPL 300 DPI. The ipl300.xdc is used.
-  * **[!UICONTROL IPL 400 DPI]**: Use IPL 400 DPI. The ipl400.xdc file is used.
-  * **[!UICONTROL Custom TPCL]**: Use the option to specify a custom XDC file for TPCL.
-  * **[!UICONTROL TPCL 305 DPI]**: Use TPCL 300 DPI. The tpcl305.xdc file is used.
-  * **[!UICONTROL PCL 600 DPI]**: Use TPCL 600 DPI. The tpcl600.xdc file is used.
-  * **[!UICONTROL Custom DPL]**: Use the option to specify a custom XDC file DPL.
-  * **[!UICONTROL DPL300DPI]**: Use DPL 300 DPI. The dpl300.xdc file is used.
-  * **[!UICONTROL DPL406DPI]**: Use DPL 400 DPI. The dpl406.xdc is used.
-  * **[!UICONTROL DPL600DPI]**: Use DPL 600 DPI. The dpl600.xdc is used.
-
-**[!UICONTROL Output Properties]**
-
-* **[!UICONTROL Save output document using]**: Specify the location to save the output file. You can save the output file at an location  which is relative to the payload, in a variable, or specify an absolute location to save the output file. If the path does not exist in crx-repository, an administrator can create the path before using it.
-
-**[!UICONTROL Advanced Properties]**
-
-* **[!UICONTROL Select Content Root location using]**: Content root is a string value that specifies the URI, absolute reference, or location in the repository to retrieve relative assets used by the form design. For example, if the form design references an image relatively, such as ../myImage.gif, myImage.gif must be located at repository://. The default value is repository://, which points to the root level of the repository.
-
-  When you pick an asset from your application, the Content Root URI path must have the correct structure. For example, if a form is picked from an application named SampleApp, and is placed at SampleApp/1.0/forms/Test.xdp, the Content Root URI must be specified as repository://administrator@password/Applications/SampleApp/1.0/forms/, or repository:/Applications/SampleApp/1.0/forms/ (when authority is null). When the Content Root URI is specified this way, the paths of all of the referenced assets in the form will be resolved against this URI.
-
-* **[!UICONTROL Select XCI file using]**: XCI files are used to describe fonts and other properties that are used for form design elements. You can keep an XCI file relative to the payload, at an absolute path, or using a variable of Document data type.
-
-* **[!UICONTROL Locale]**: Specifies the language used for generating the PDF document. If you provide a literal value, select a language from the list or select one of these values:
-  * **[!UICONTROL To use server default]**:
-    (Default) Use the Locale setting configured on the [!DNL AEM Forms] Server. The Locale setting is configured using Administration Console. (See [Designer Help](http://www.adobe.com/go/learn_aemforms_designer_65).)
-
-  * **[!UICONTROL To use custom value]**:
-    Type the Locale code in the literal box or select a string variable containing the locale code. For a complete list of supported locale codes, see http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
-
-* **[!UICONTROL Copies]**: An integer value that specifies the number of copies to generate for the output. The default value is 1.
-
-* **[!UICONTROL Duplex Printing]**:  A Pagination value that specifies whether to use two-sided or single-sided printing. Printers that support PostScript and PCL use this value.If you provide a literal value, select one of these values:
-    * **[!UICONTROL Duplex Long Edge]**: Use two-sided printing and print using long-edge pagination. 
-    * **[!UICONTROL Duplex Short Edge]**: Use two-sided printing and print using short-edge pagination. 
-    * **[!UICONTROL Simplex]**: Use single-sided printing.
-    
     -->
+
+## 印刷出力ステップを生成 {#generatePrintedOutput}
+
+指定したフォームデザインとデータファイルに対して PCL、PostScript、ZPL、IPL、TPCL または DPL の出力を生成します。データファイルはフォームデザインとマージされ、印刷用にフォーマットされます。この操作で生成された出力はプリンターに直接送信したり、ファイルとして保存したりできます。この操作はフォームデザインやデータをアプリケーションから使用する場合に実行することをお勧めします。フォームデザインがネットワーク、ローカルファイルシステム、または HTTP 上の場所にある場合は、「generatePrintedOutput」操作を使用します。
+
+例えば、アプリケーションでフォームデザインをデータファイルとマージする必要があるとします。データには数百件のレコードがあります。さらに、ZPL をサポートしているプリンターに出力を送信する必要があります。フォームデザインと入力データはアプリケーション内にあります。「generatePrintedOutput」操作を使用して、レコードをフォームデザインとマージし、ZPL がサポートされるプリンターに出力を送信します。
+
+「印刷出力を生成」ステップには、次のプロパティがあります。
+
+**[!UICONTROL Input プロパティ]**
+
+* **[!UICONTROL 次を使用してテンプレートファイルを選択]**：テンプレートファイルのパスを指定します。 テンプレートファイルは、ペイロードに対する相対パス、絶対パスで保存されたもの、またはドキュメントデータタイプの変数を使用して選択できます。例： [Payload_Directory]/Workflow/data.xml。パスが crx-repository に存在しない場合、管理者はパスを作成してから使用できます。 さらに、ペイロードを入力データファイルとして受け入れることもできます。
+
+* **[!UICONTROL 次を使用してデータドキュメントを選択]**：入力データファイルのパスを指定します。 入力データファイルは、ペイロードに対する相対パス、絶対パスで保存されたもの、またはドキュメントデータタイプの変数を使用して選択できます。例： [Payload_Directory]/Workflow/data.xml。パスが crx-repository に存在しない場合、管理者はパスを作成してから使用できます。
+
+* **[!UICONTROL プリンター形式]**：XDC ファイルがない場合に出力ストリームの生成に使用するページ説明言語を指定する値。リテラル値を指定する場合、次のいずれかの値を選択します。
+
+   * **[!UICONTROL color PCL]**:PCL 用の XDC ファイルを指定するには、このオプションを使用します。
+   * **[!UICONTROL 汎用 PostScript]**:PostScript の汎用 XDC ファイルを指定するには、「 」オプションを使用します。
+   * **[!UICONTROL ZPL 300 DPI]**：ZPL 300 DPI を使用します。 zpl300.xdc が使用されます。
+   * **[!UICONTROL ZPL 600 DPI]**：ZPL 600 DPI を使用します。 zpl600.xdc ファイルが使用されます。
+   * **[!UICONTROL IPL 300 DPI]**：IPL 300 DPI を使用します。 ipl300.xdc が使用されます。
+   * **[!UICONTROL IPL 400 DPI]**：IPL 400 DPI を使用します。 ipl400.xdc ファイルが使用されます。
+   * **[!UICONTROL TPCL 600 DPI]**：TPCL 600 DPI を使用します。 tpcl600.xdc ファイルが使用されます。
+   * **[!UICONTROL PostScript Plain]**:PostScript 用のプレーンテキスト XDC ファイルを指定するには、このオプションを使用します。
+   * **[!UICONTROL DPL300DPI]**：DPL 300 DPI を使用します。 dpl300.xdc が使用されます。
+   * **[!UICONTROL DPL400DPI]**：DPL 400 DPI を使用します。 dpl400.xdc が使用されます。
+   * **[!UICONTROL DPL600DPI]**：DPL 600 DPI を使用します。 dpl600.xdc が使用されます。
+   * **[!UICONTROL HP_PCL_5e]**:複数の Canon デバイスをサポートするには、オプションを使用します。
+
+
+**[!UICONTROL 出力プロパティ]**
+
+* **[!UICONTROL 次を使用して出力ドキュメントを保存]**：出力ファイルを保存する場所を指定します。 出力ファイルは、ペイロードに相対した場所の変数に保存するか、出力ファイルを保存する絶対位置を指定することができます。 パスが crx-repository に存在しない場合、管理者はパスを作成してから使用できます。
+
+**[!UICONTROL 詳細プロパティ]**
+
+* **[!UICONTROL 次を使用してコンテンツルートの場所を選択]**：コンテンツルートは、フォームデザインで使用される相対アセットを取得するための、リポジトリ内の URI、絶対参照、または場所を指定する文字列値です。 例えば、フォームデザインが ../myImage.gif のようにイメージを相対的に参照する場合、myImage.gif は repository:// に配置する必要があります。デフォルト値は repository:// で、これはリポジトリのルートレベルをポイントします。
+
+   アプリケーションからアセットを選択するとき、コンテンツルート URI パスは正確な構造になっている必要があります。例えば、フォームを SampleApp というアプリケーションから選択し、SampleApp/1.0/forms/Test.xdp に配置する場合、コンテンツルート URI は repository://administrator@password/Applications/SampleApp/1.0/forms/ または repository:/Applications/SampleApp/1.0/forms/（認証機関情報が NULL の場合）と指定する必要があります。コンテンツルート URI をこの方式で指定すると、フォーム内で参照されているすべてのアセットのパスがこの URI を基準に解決されます。
+
+* **[!UICONTROL を使用して XCI ファイルを選択]**：XCI ファイルは、フォームデザイン要素に使用されるフォントやその他のプロパティを記述するために使用されます。 XCI ファイルは、ペイロードに対する相対パス、絶対パス、またはドキュメントデータタイプの変数を使用して保持できます。
+
+* **[!UICONTROL ロケール]**：PDF ドキュメントの生成に使用する言語を設定します。リテラル値を指定する場合、リストから言語を選択するか、次のいずれかの値を選択します。
+   * **[!UICONTROL Use Server Default]**[!DNL AEM Forms]：
+（デフォルト） サーバー上で設定されているロケール設定を使用します。ロケール設定は、管理コンソールを使用して設定します（「[Designer ヘルプ](http://www.adobe.com/go/learn_aemforms_designer_65_jp)」を参照）。
+
+   * **[!UICONTROL カスタム値を使用するには]**：
+リテラルボックスにロケールコードを入力するか、ロケールコードを含む文字列変数を選択します。サポートされているすべてのロケールコードのリストについては、http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html を参照してください。
+
+* **[!UICONTROL Copies]**：出力の作成部数を指定する整数値。デフォルト値は 1 です。
+
+* **[!UICONTROL Duplex Printing]**：両面印刷か片面印刷かを指定する Pagination 値。PostScript および PCL をサポートするプリンターでは、この値を使用します。リテラル値を指定する場合は、次のいずれかの値を選択します。
+   * **[!UICONTROL Duplex Long Edge]**：両面印刷を使用し、長辺のページネーションを使用して印刷します。
+   * **[!UICONTROL Duplex Short Edge]**：両面印刷を使用し、短辺のページネーションを使用して印刷します。
+   * **[!UICONTROL Simplex]**：片面印刷を使用します。
+
+## 非インタラクティブPDF出力ステップの生成   {#generatePDFdocuments}
+
+1. Sidekickのフォームワークフロータブの下にあるGenerate Non Interactive PDF Outputワークフローをドラッグします。
+1. 追加されたワークフローステップをダブルクリックしてコンポーネントを編集します。
+1. 編集コンポーネントダイアログでは、入力ドキュメント、出力ドキュメントおよびその他のパラメーターを設定して、**[!UICONTROL OK]** をクリックします。
+
+### 入力ドキュメント {#input-documents-3}
+
+* **テンプレートファイル**：XDPテンプレートの場所を指定します。このフィールドは必須です。
+
+* **データドキュメント**：テンプレートとマージする必要があるデータxmlの場所を指定します。
+
+### 出力ドキュメント {#output-document}
+
+**出力ドキュメント**：生成されたPDFフォームの名前を指定します。
+
+### その他のパラメーター {#additional-parameters-1}
+
+* **Content Root**：入力XDPテンプレートに使用されているフラグメントまたは画像が保存されているリポジトリ内のフォルダーへのパスを指定します。
+* ロケール&#x200B;**：生成されたPDFフォームのデフォルトロケールを指定します。**
+* **Acrobatのバージョン**：生成されたPDFフォームのターゲットのAcrobatバージョンを指定します。
+* **** Linearized PDF：Web表示のために生成されたPDFフォームを最適化するかどうかを指定します。
+* **タグ付きPDF**：生成されたPDFフォームをアクセシビリティ対応にするかどうかを指定します。
+* **XCIドキュメント**：XCIファイルへのパスを指定します。

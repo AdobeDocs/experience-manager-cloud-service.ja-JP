@@ -2,7 +2,7 @@
 title: Adobe Experience Manager（AEM）as a Cloud Service のリリースノート。
 description: Adobe Experience Manager（AEM）as a Cloud Service のリリースノート。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: e98ba2840795f136bf2c10c66863b52beede1342
+source-git-commit: fda4fdd3a28caa0a35014fbf4b0bbac8800e343c
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 100%
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 | 製品 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| バージョン | 2022.10.0 |
+| バージョン | 2023.1.0 |
 | タイプ | 継続的アップデート |
 | 公開日 | 継続的アップデート |
 
@@ -21,8 +21,8 @@ ht-degree: 100%
 
 [!DNL Adobe Experience Manager] as a Cloud Service の継続的なリリースモデルを使用すると、アプリケーションは継続的に自動アップデートされます。アップデートには、機能リリースとメンテナンスアップデートの 2 種類があります。
 
-* 機能リリースは、予測可能な月次の頻度で行われ、新機能と製品の革新に重点を置いています。
-* メンテナンスリリースは頻繁に行われ、セキュリティアップデート、バグ修正、パフォーマンスの強化に重点を置いています。これにより、[!DNL Adobe Experience Manager] as a Cloud Service は常に最新で、重要な修正が加えられます。
+* [機能リリースは、予測可能な月次の頻度で行われ、新機能と製品の革新に重点を置いています。](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [メンテナンスリリースは頻繁に行われ、セキュリティアップデート、バグ修正、パフォーマンスの強化に重点を置いています。](/help/release-notes/maintenance/latest.md)これにより、[!DNL Adobe Experience Manager] as a Cloud Service は常に最新で、重要な修正が加えられます。
 
 イノベーションのスピードに加えて、[!DNL Adobe Experience Manager] as a Cloud Service は、実稼動にリリースされる 1 か月前に今後の機能を予めプレビューできる柔軟性を備えています。独自のカスタム環境で機能をテストし、事前に内部ユーザーのトレーニング／準備を行うことで、今後のリリースが組織に与える影響を評価できます。
 

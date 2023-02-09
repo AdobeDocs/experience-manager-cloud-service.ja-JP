@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: ede33e43bdfd4b6aa4670fe74c2133a7a3b54b75
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 100%
+source-wordcount: '890'
+ht-degree: 92%
 
 ---
 
 # アセットレポート {#asset-reports}
 
-アセットレポートを使用すると、 [!DNL Adobe Experience Manager Assets] デプロイメントのユーティリティを評価できます。[!DNL Assets] を使用すると、デジタルアセットに関する様々なレポートを生成できます。レポートでは、システムの使用状況、ユーザーによるアセットの操作方法、<!-- downloaded and -->共有されているアセットなどに関する役に立つ情報が提供されます。
+アセットレポートを使用すると、 [!DNL Adobe Experience Manager Assets] デプロイメントのユーティリティを評価できます。[!DNL Assets] を使用すると、デジタルアセットに関する様々なレポートを生成できます。レポートには、システムの使用状況、ユーザーによるアセットの操作方法、アセットの種類に関する有用な情報が表示されます <!-- downloaded and --> 共有されました。
 
 レポートの情報を使用して重要な成功指標を導き出し、企業やお客様における [!DNL Assets] の採用状況を測定することができます。
 
@@ -29,6 +29,7 @@ ht-degree: 100%
 [!DNL Experience Manager Assets] では、次の標準レポートが生成されます。
 
 * アップロード
+* ダウンロード
 * 有効期限
 * 変更
 * 公開
@@ -60,7 +61,7 @@ ht-degree: 100%
 
    ![レポートタイプの選択](assets/choose_report.png)
 
-1. タイトル、説明、サムネール、CRX リポジトリー内のフォルダーパス（レポートの保存場所）など、レポートの詳細を設定します。デフォルトでは、フォルダーパスは `/content/dam` です。別のパスを指定することもできます。
+1. タイトル、説明、サムネール、フォルダーパスなど、レポートの詳細を設定します。 デフォルトでは、フォルダーパスは `/content/dam` です。特定のフォルダーに関するレポートを実行するための別のパスを指定できます。
 
    ![レポートの詳細を追加するページ](assets/report_configuration.png)
 
@@ -104,6 +105,10 @@ ht-degree: 100%
    ![生成されたレポート](assets/report_page.png)
 
    ツールバーの「**[!UICONTROL ダウンロード]**」をクリックすると、レポートを CSV 形式でダウンロードできます。
+
+   >[!NOTE]
+   >
+   >過去 360 日間に生成されたイベントに基づいて、レポートを生成できます。 Experience Managerはユーザー ID データを 30 日間保持します。
 
 ## レポートへのカスタム列の追加 {#add-custom-columns}
 

@@ -2,10 +2,10 @@
 title: アダプティブフォームテンプレートの作成方法
 description: テンプレートエディターを使用して、基本構造と初期コンテンツを定義するアダプティブフォームテンプレートを作成します。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
-workflow-type: ht
-source-wordcount: '1806'
-ht-degree: 100%
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+workflow-type: tm+mt
+source-wordcount: '1920'
+ht-degree: 94%
 
 ---
 
@@ -181,6 +181,23 @@ Perform the following steps to show and hide templates:
     * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, in order to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
 
 1. Click **Save**. The display options for the out of the box templates are changed. -->
+
+## アダプティブフォームをテンプレートとして保存する {#saving-adaptive-form-as-template}
+
+アダプティブフォームをテンプレートとして保存し、後で使用することもできます。 アダプティブフォームをテンプレートとして保存するには：
+
+1. アダプティブフォームを選択し、テンプレートとして保存します。
+1. クリック **[!UICONTROL テンプレートとして保存]**. ダイアログボックスが表示されます。
+1. 指定 **[!UICONTROL タイトル]** （必須フィールド）、 **[!UICONTROL 場所]** （必須フィールド）と **[!UICONTROL 説明]** （オプションのフィールド）を使用します。
+1. 「**[!UICONTROL 作成]**」をクリックします。
+
+   ![フォームをテンプレートとして保存](/help/forms/assets/saveformastemplate.png)
+
+
+
+>[!NOTE]
+>
+>ソースのアダプティブフォームと同じコンテナポリシーを使用するには、ソースのアダプティブフォームと同じフォルダーにテンプレートを保存することをお勧めします。 場合によっては、作成したテンプレートがデフォルトのコンテナポリシーを使用するのではなく、テンプレートが他のフォルダーに保存されます。
 
 ## 推奨事項 {#recommendations}
 
