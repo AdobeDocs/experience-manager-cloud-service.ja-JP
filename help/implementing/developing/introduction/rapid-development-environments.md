@@ -1,10 +1,10 @@
 ---
 title: 迅速な開発環境
 description: クラウド環境で迅速な開発反復処理を行うために、高速開発環境を活用する方法を説明します。
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: 1d34834af35451b072afde536ee8aaa5155c58b3
 workflow-type: tm+mt
-source-wordcount: '2898'
-ht-degree: 6%
+source-wordcount: '3062'
+ht-degree: 5%
 
 ---
 
@@ -26,6 +26,8 @@ RDE を使用すると、ローカル開発環境で動作すると証明され�
 RDE は、コード、コンテンツ、Apache または Dispatcher の設定に使用できます。 通常のクラウド開発環境とは異なり、開発者はローカルのコマンドラインツールを使用して、ローカルで作成されたコードを RDE に同期できます。
 
 すべてのプログラムには RDE がプロビジョニングされます。 Sandbox アカウントの場合、数時間使用されなかった後に休止状態になります。
+
+作成時に、RDE は利用可能な最新のAEMバージョンに設定されます。 RDE リセット（Cloud Manager を使用して実行できます）は、RDE をサイクルし、最新のAEMバージョンに設定します。
 
 通常、特定の機能のテストとデバッグには、特定の時点で 1 人の開発者が RDE を使用します。 開発セッションが完了すると、RDE は次の使用時にデフォルトの状態にリセットできます。
 
@@ -64,6 +66,8 @@ Cloud Manager を使用してプログラムの RDE を作成するには、次�
 1. 「**保存**」をクリックして、指定された環境を追加します。
 
 これで、**概要**&#x200B;画面の&#x200B;**環境**&#x200B;カードに新しい環境が表示されます。
+
+作成時に、RDE は利用可能な最新のAEMバージョンに設定されます。 RDE リセット（Cloud Manager を使用して実行することもできます）は、RDE をサイクルし、最新のAEMバージョンに設定します。
 
 Cloud Manager を使用した環境の作成、環境へのアクセス権のあるユーザーの管理、カスタムドメインの割り当てについて詳しくは、 [Cloud Manager のドキュメント。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
@@ -141,7 +145,12 @@ Adobeでは、新しい機能を開発する際に、次のワークフローを
 
 * 中間マイルストーンに達し、AEMas a Cloud ServiceSDK でローカルで正常に検証された場合、コードは、git へのコミットはオプションですが、メイン行にまだ含まれていない git 機能ブランチにコミットする必要があります。 「中間マイルストーン」を構成する要素は、チームの習慣に応じて異なります。 例としては、新しいコード行や、半日の作業、サブ機能の完了などがあります。
 
-* RDE が別の機能で使用されていて、次の操作を行う場合は、RDE をリセットします。 [デフォルトの状態にリセット](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->リセットには数分かかり、既存のコンテンツとコードはすべて削除されます。 RDE ステータスコマンドを使用して、RDE の準備が完了したことを確認できます。
+* RDE が別の機能で使用されていて、次の操作を行う場合は、RDE をリセットします。 [デフォルトの状態にリセット](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->リセットには数分かかり、既存のコンテンツとコードはすべて削除されます。 RDE ステータスコマンドを使用して、RDE の準備が完了したことを確認できます。 RDE は最新のAEMリリースバージョンに戻ります。
+
+   >[!IMPORTANT]
+   >
+   > ステージング環境および実稼動環境で、AEMの自動リリース更新を受け取っておらず、最新のAEMリリースバージョンよりはるかに古い場合は、RDE で実行されるコードが、ステージング環境および実稼動環境でのコードの機能と一致しない可能性があります。 この場合、コードを実稼動環境にデプロイする前に、ステージング環境でコードの徹底的なテストを実行することが特に重要です。
+
 
 * RDE コマンドラインインターフェイスを使用して、ローカルコードを RDE に同期します。 オプションとしては、コンテンツパッケージ、特定のバンドル、OSGi 設定ファイル、コンテンツファイル、Apache/Dispatcher 設定の zip ファイルのインストールがあります。 リモートコンテンツパッケージの参照も可能です。 詳しくは、 [RDE コマンドラインツール](#rde-cli-commands) 」の節を参照してください。 status コマンドを使用すると、デプロイメントが成功したことを検証できます。 必要に応じて、パッケージマネージャーを使用してコンテンツパッケージをインストールします。
 
@@ -337,6 +346,8 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 ## リセット {#reset-rde}
 
 RDE をリセットすると、オーサーインスタンスとパブリッシュインスタンスの両方から、すべてのカスタムコード、設定およびコンテンツが削除されます。 これは、例えば、RDE を使用して特定の機能をテストしていて、別の機能をテストするためにデフォルトの状態にリセットしたい場合に便利です。
+
+リセットをおこなうと、RDE は最新のAEMバージョンに設定されます。
 
 <!-- Alexandru: hiding for now, please don't delete
 
