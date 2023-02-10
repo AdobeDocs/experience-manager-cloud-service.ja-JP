@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: ef617b38c8dec355a0fa8ca72af652f37d6668a4
 workflow-type: tm+mt
-source-wordcount: '3932'
+source-wordcount: '3931'
 ht-degree: 95%
 
 ---
@@ -504,22 +504,30 @@ ht-degree: 95%
       + [アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
       + [よくある質問](/help/forms/faq.md)
       + [既知の問題](/help/forms/known-issues.md)
-   + セットアップ {#setup-environment}
+   + セットアップと移行 {#setup-configure-migrate}
       + [Cloud Service 環境へのオンボード](/help/forms/setup-forms-cloud-service.md)
       + [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
       + [Forms Designer のインストールと設定](/help/forms/installing-configuring-designer.md)
       + [統合ストレージコネクタの設定](/help/forms/configure-unified-storage-connector.md)
-   + 移行 {#setup-environment}
       + [ [!DNL AEM Forms]  as a Cloud Service への移行](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-   + 設定と管理 {#administering}
       + [グループと権限](/help/forms/forms-groups-privileges-tasks.md)
       + [アダプティブフォーム、PDF フォームおよびその他のアセットの読み込み、書き出し、整理](/help/forms/import-export-forms-templates.md)
    + {#integrate} の統合
-      + [AEM FormsとAdobe Signのas a Cloud Service](/help/forms/adobe-sign-integration-adaptive-forms.md)
-      + [AEM Forms as a Cloud Serviceと DocuSign の統合](/help/forms/integrate-docusign-adaptive-forms.md)
-      + [AEM FormsとAdobe Analyticsのas a Cloud Service](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-      + [アダプティブフォームと Microsoft Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)
-      + [AEM SitesページにアダプティブFormsを埋め込む](/help/forms/embed-adaptive-form-aem-sites.md)
+      + サービス {#services}
+         + [AEM FormsとAdobe Signのas a Cloud Service](/help/forms/adobe-sign-integration-adaptive-forms.md)
+         + [AEM Forms as a Cloud Serviceと DocuSign の統合](/help/forms/integrate-docusign-adaptive-forms.md)
+         + [AEM FormsとAdobe Analyticsのas a Cloud Service](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+         + [アダプティブフォームと Microsoft Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)
+         + [AEM SitesページにアダプティブFormsを埋め込む](/help/forms/embed-adaptive-form-aem-sites.md)
+      + フォームデータモデル {#use-form-data-model}
+         + [データソースの Cloud Service への接続](/help/forms/data-integration.md)
+         + [データソースの設定](/help/forms/configure-data-sources.md)
+         + [ [!DNL Microsoft Dynamics]  OData の設定](/help/forms/ms-dynamics-odata-configuration.md)
+         + [ [!DNL Azure]  ストレージの設定](/help/forms/configure-azure-storage.md)
+         + [ [!DNL Microsoft Dynamics 365] および [!DNL Salesforce] クラウドサービスの設定](/help/forms/configure-msdynamics-salesforce.md)
+         + [フォームデータモデルの作成](/help/forms/create-form-data-models.md)
+         + [フォームデータモデルの操作](/help/forms/work-with-form-data-model.md)
+         + [フォームデータモデルの使用](/help/forms/using-form-data-model.md)
    + アダプティブフォーム {#adaptive-forms-authoring}
       + アダプティブFormsのオーサリング — コアコンポーネント {#authoring-adaptive-forms-core-components}
          + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
@@ -570,15 +578,6 @@ ht-degree: 95%
             + [アクセシブルなアダプティブフォームの作成](/help/forms/creating-accessible-adaptive-forms.md)
          + [フォームポータルの設定](/help/forms/configure-forms-portal.md)
          + [レビューの作成と管理](/help/forms/create-reviews-forms.md)
-   + フォームデータモデル {#use-form-data-model}
-      + [データソースの Cloud Service への接続](/help/forms/data-integration.md)
-      + [データソースの設定](/help/forms/configure-data-sources.md)
-      + [ [!DNL Microsoft Dynamics]  OData の設定](/help/forms/ms-dynamics-odata-configuration.md)
-      + [ [!DNL Azure]  ストレージの設定](/help/forms/configure-azure-storage.md)
-      + [ [!DNL Microsoft Dynamics 365] および [!DNL Salesforce] クラウドサービスの設定](/help/forms/configure-msdynamics-salesforce.md)
-      + [フォームデータモデルの作成](/help/forms/create-form-data-models.md)
-      + [フォームデータモデルの操作](/help/forms/work-with-form-data-model.md)
-      + [フォームデータモデルの使用](/help/forms/using-form-data-model.md)
    + Forms中心のワークフロー {#create-form-centric-workflows}
       + [ワークフローでの Forms 中心のステップの使用 + ステップリファレンス](/help/forms/aem-forms-workflow-step-reference.md)
       + [Forms 中心のワークフローでの変数の使用](/help/forms/variable-in-aem-workflows.md)
@@ -589,7 +588,7 @@ ht-degree: 95%
       + [通信 API - バッチ処理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [PDF ドキュメントでのカスタムフォントの使用](/help/forms/use-custom-fonts.md)
       + [既知の問題、ベストプラクティス、よくある質問](/help/forms/communications-known-issues-limitations.md)
-      + 開発者 API リファレンス {#aem-forms-developer-api-reference}
+   + 開発者 API リファレンス {#aem-forms-developer-api-reference}
       + [AEM FormsCloud Service通信 API リファレンス](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [AEM FormsCloud ServiceJavaScript API リファレンス](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
       + [AEM FormsCloud ServiceJava API リファレンス](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
