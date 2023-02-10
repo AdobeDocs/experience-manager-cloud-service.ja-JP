@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '3918'
+source-wordcount: '3932'
 ht-degree: 95%
 
 ---
@@ -509,12 +509,12 @@ ht-degree: 95%
       + [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
       + [Forms Designer のインストールと設定](/help/forms/installing-configuring-designer.md)
       + [統合ストレージコネクタの設定](/help/forms/configure-unified-storage-connector.md)
-   + 移行中 {#setup-environment}
+   + 移行 {#setup-environment}
       + [ [!DNL AEM Forms]  as a Cloud Service への移行](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-   + 管理 {#administering}
+   + 設定と管理 {#administering}
       + [グループと権限](/help/forms/forms-groups-privileges-tasks.md)
       + [アダプティブフォーム、PDF フォームおよびその他のアセットの読み込み、書き出し、整理](/help/forms/import-export-forms-templates.md)
-   + 統合 {#integrate}
+   + {#integrate} の統合
       + [AEM FormsとAdobe Signのas a Cloud Service](/help/forms/adobe-sign-integration-adaptive-forms.md)
       + [AEM Forms as a Cloud Serviceと DocuSign の統合](/help/forms/integrate-docusign-adaptive-forms.md)
       + [AEM FormsとAdobe Analyticsのas a Cloud Service](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
@@ -562,26 +562,28 @@ ht-degree: 95%
             + [カスタム送信アクションの作成](/help/forms/custom-submit-action-form.md)
          + [アダプティブフォームフィールドに事前入力](/help/forms/prepopulate-adaptive-form-fields.md)
          + [レコードのドキュメントを生成](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+         + [アダプティブフォームに新しいロケールのサポートを追加する](/help/forms/supporting-new-language-localization.md)
          + メタデータの追加または向上 {#manage-metadata}
             + [アダプティブフォームのメタデータの追加、削除、編集](/help/forms/manage-form-metadata.md)
             + [アダプティブフォームのメタデータプロパティの再利用](/help/forms/reusing-adaptive-forms.md)
          + アダプティブフォームのアクセシビリティの向上 {#accessible-adaptive-forms}
             + [アクセシブルなアダプティブフォームの作成](/help/forms/creating-accessible-adaptive-forms.md)
          + [フォームポータルの設定](/help/forms/configure-forms-portal.md)
-      + フォームデータモデル {#use-form-data-model}
-         + [データソースの Cloud Service への接続](/help/forms/data-integration.md)
-         + [データソースの設定](/help/forms/configure-data-sources.md)
-         + [ [!DNL Microsoft Dynamics]  OData の設定](/help/forms/ms-dynamics-odata-configuration.md)
-         + [ [!DNL Azure]  ストレージの設定](/help/forms/configure-azure-storage.md)
-         + [ [!DNL Microsoft Dynamics 365] および [!DNL Salesforce] クラウドサービスの設定](/help/forms/configure-msdynamics-salesforce.md)
-         + [フォームデータモデルの作成](/help/forms/create-form-data-models.md)
-         + [フォームデータモデルの操作](/help/forms/work-with-form-data-model.md)
-         + [フォームデータモデルの使用](/help/forms/using-form-data-model.md)
-      + Forms中心のワークフロー {#create-form-centric-workflows}
-         + [ワークフローでの Forms 中心のステップの使用 + ステップリファレンス](/help/forms/aem-forms-workflow-step-reference.md)
-         + [Forms 中心のワークフローでの変数の使用](/help/forms/variable-in-aem-workflows.md)
-         + [「不在」オプションの使用](/help/forms/configure-out-of-office-settings.md)
-   + 通信 API の使用 {#using-communications}
+         + [レビューの作成と管理](/help/forms/create-reviews-forms.md)
+   + フォームデータモデル {#use-form-data-model}
+      + [データソースの Cloud Service への接続](/help/forms/data-integration.md)
+      + [データソースの設定](/help/forms/configure-data-sources.md)
+      + [ [!DNL Microsoft Dynamics]  OData の設定](/help/forms/ms-dynamics-odata-configuration.md)
+      + [ [!DNL Azure]  ストレージの設定](/help/forms/configure-azure-storage.md)
+      + [ [!DNL Microsoft Dynamics 365] および [!DNL Salesforce] クラウドサービスの設定](/help/forms/configure-msdynamics-salesforce.md)
+      + [フォームデータモデルの作成](/help/forms/create-form-data-models.md)
+      + [フォームデータモデルの操作](/help/forms/work-with-form-data-model.md)
+      + [フォームデータモデルの使用](/help/forms/using-form-data-model.md)
+   + Forms中心のワークフロー {#create-form-centric-workflows}
+      + [ワークフローでの Forms 中心のステップの使用 + ステップリファレンス](/help/forms/aem-forms-workflow-step-reference.md)
+      + [Forms 中心のワークフローでの変数の使用](/help/forms/variable-in-aem-workflows.md)
+      + [「不在」オプションの使用](/help/forms/configure-out-of-office-settings.md)
+   + 通信 API {#using-communications}
       + [通信 API の概要](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [通信 API - 同期処理](/help/forms/aem-forms-cloud-service-communications.md)
       + [通信 API - バッチ処理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

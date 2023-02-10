@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1032'
 ht-degree: 21%
 
 ---
@@ -66,17 +66,18 @@ ht-degree: 21%
 
 ### [!DNL Forms] プレリリースの新機能 {#prerelease-features-forms}
 
-* **[データキャプチャコアコンポーネントを使用したアダプティブFormsの構築](/help/forms/creating-adaptive-form-core-components.md)**:アダプティブFormsエディターを使用して、標準化されたデータキャプチャコンポーネント（コアコンポーネント）に基づいてフォームを作成します。 これらのコンポーネントは、カスタマイズ機能を提供し、開発時間を短縮し、デジタル登録エクスペリエンスのメンテナンスコストを削減します。
+* **[データキャプチャコアコンポーネントを使用したアダプティブFormsの構築](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**: [アダプティブFormsエディターを使用](/help/forms/creating-adaptive-form-core-components.md) 標準化されたデータキャプチャコンポーネント（コアコンポーネント）に基づいてフォームを作成する場合。 これらのコンポーネントは、カスタマイズ機能を提供し、開発時間を短縮し、デジタル登録エクスペリエンスのメンテナンスコストを削減します。
 * **[アダプティブFormsに基づくコアコンポーネントのスタイル設定のためのフロントエンドパイプラインのサポート](/help/forms/using-themes-in-core-components.md)**:コアコンポーネントベースのアダプティブFormsに対して、容易にカスタマイズ可能な BEM ベースのテーマを利用し、フロントエンドデプロイメントパイプラインと共にデプロイして、フォームのルックアンドフィールを強化します。
 * **[コアコンポーネントベースのアダプティブFormsに関するレコードのドキュメントを生成する](/help/forms/generate-document-of-record-core-components.md)**:長期保存用、印刷またはドキュメント形式での送信時に、コアコンポーネントベースのアダプティブフォームのレコードを作成します。
 
-![](/help/forms/assets/sample-core-components-based-adaptive-form.png)
+![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* **レビュー用にアダプティブフォームを共有する**:アダプティブFormsのレビューメカニズムを使用して、1 人または複数のレビュー担当者がフォームをレビューできるようにします。
 * **[Microsoft SharePointとMicrosoft OneDrive にアダプティブFormsを送信する](/help/forms/configuring-submit-actions.md)**:Microsoft SharePointとMicrosoft OneDrive の両方にアダプティブフォームのデータを直接送信できるので、データ送信を効率化します。 スキーマベースのデータとスキーマレスのデータの両方を送信できます。 これらの送信アクションは、既に使用可能な送信アクションに加えて実行されます。
 * **[「アダプティブフォームをテンプレートとして保存」機能を使用した効率的なフォーム作成](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**:アダプティブフォームをテンプレートとして保存し、そのテンプレートを次のアダプティブフォーム用に再利用することで、フォームの作成プロセスを合理化します。
-* **[JDBC をサポートするデータベースにForms Data Model を接続する](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)**:JDBC をサポートするデータベースにAEM Formsを接続し、このようなデータベースに対してデータを読み書きします。
-* **Open API 仕様バージョン 3.0 をサポートする REST エンドポイントにフォームデータモデルを接続**:Open API 仕様バージョン 3.0 をサポートする REST エンドポイントに、AEM Formsas a Cloud Serviceのを接続してデータを送受信します。
+* **[AEM Formsを JDBC-Supported データベースに接続する](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**:AEM Formsデータモデルを JDBC をサポートするデータベースに簡単に接続でき、データの読み取りと書き込みをシームレスに行うことができます。
+* **[Open API 3.0 を使用した REST エンドポイントとの統合](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**:Open API 仕様バージョン 3.0 をサポートする REST エンドポイントにAEM Formsas a Cloud Serviceのフォームデータモデルを接続すると、簡単にデータを送受信できます。
+* **[レビュー用にアダプティブフォームを共有する](/help/forms/create-reviews-forms.md)**:アダプティブFormsのレビューメカニズムを使用して、1 人または複数のレビュー担当者がフォームをレビューできるようにします。
+
 
 ## CIF アドオン {#cloud-services-cif}
 

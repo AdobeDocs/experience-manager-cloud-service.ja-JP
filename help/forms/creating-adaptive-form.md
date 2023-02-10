@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 93%
+source-wordcount: '1500'
+ht-degree: 87%
 
 ---
 
@@ -17,9 +17,12 @@ ht-degree: 93%
 
 アダプティブフォームを使用すると、魅力的でレスポンシブ、かつ動的でアダプティブなフォームを作成できます。AEM Forms は、アダプティブ Forms を素早くオーサリングするための、ビジネスユーザーにとってわかりやすいウィザードを提供します。 このウィザードはクイックタブナビゲーションを備えており、アダプティブフォームを作成するための事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択することができます。
 
->[!NOTE]
->
-> この記事では、アダプティブフォームを作成する古い方法について説明します。 最新のアプローチに基づくアダプティブFormsを作成するには、 [アダプティブフォームの作成（コアコンポーネント）](creating-adaptive-form.md).
+開始する前に、使用可能なFormsコンポーネントのタイプについて学習します。
+
+* [アダプティブFormsコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) は、標準化されたデータキャプチャコンポーネントです。 これらのコンポーネントは、カスタマイズ機能を提供し、開発時間を短縮し、デジタル登録エクスペリエンスのメンテナンスコストを削減します。 開発者は、これらのコンポーネントを容易にカスタマイズおよびスタイル設定できます。 Adobeでは、アダプティブFormsを開発する際に、これらの最新の拡張可能なコンポーネントを活用することをお勧めします。
+
+* [アダプティブForms Foundation コンポーネント](creating-adaptive-form.md) は、従来の（古い）データキャプチャコンポーネントです。 これらを引き続き使用して、既存の基盤コンポーネントベースのアダプティブフォームを編集できます。 新しいフォームを作成する場合、Adobeでは  [アダプティブFormsコアコンポーネント](creating-adaptive-form-core-components.md) アダプティブFormsを作成する
+
 
 
 <!-- 

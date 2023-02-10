@@ -1,16 +1,18 @@
 ---
-title: アダプティブフォームのローカリゼーション用に新しいロケールをサポート
-seo-title: Supporting new locales for adaptive forms localization
+title: アダプティブフォームに新しいロケールのサポートを追加する
+seo-title: Learn to add support for new locales to your adaptive forms
 description: AEM Formsでは、アダプティブフォームのローカライズ用に新しいロケールを追加できます。 英語 (en)、スペイン語 (es)、フランス語 (fr)、イタリア語 (it)、ドイツ語 (de)、日本語 (ja)、ポルトガル語 — ブラジル語 (pt-BR)、中国語 (zh-TW)、韓国語 (ko-KR) のロケールです。
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: 848c6a4ea403f644408407aed0a7e06c3524d942
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 34%
+source-wordcount: '1180'
+ht-degree: 29%
 
 ---
 
-# アダプティブフォームのローカライゼーション用に新しいロケールをサポート{#supporting-new-locales-for-adaptive-forms-localization}
+# アダプティブフォームのローカライゼーション用に新しいロケールをサポート {#supporting-new-locales-for-adaptive-forms-localization}
+
+AEM Formsでは、英語 (en)、スペイン語 (es)、フランス語 (fr)、イタリア語 (it)、ドイツ語 (de)、日本語 (ja)、ポルトガル語 — ブラジル語 (pt-BR)、中国語 (zh-TW)、韓国語 (ko-KR) のロケールを初期設定でサポートしています。 Hindi(hi_IN) のように、より多くのロケールのサポートを追加することもできます。
 
 ## ロケールの辞書について {#about-locale-dictionaries}
 
@@ -20,33 +22,33 @@ ht-degree: 34%
 
 * **グローバル辞書** 2 つのグローバル辞書があり、AEM クライアントライブラリで JSON オブジェクトの形で管理されています。これらの辞書にはデフォルトのエラーメッセージ、12 か月の名前、通貨シンボル、日付と時間のパターンなどが含まれます。これらの辞書は、 `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. これらの場所には、ロケールごとに別々のフォルダーが含まれます。 グローバル辞書は頻繁に更新されないので、各ロケールで別々の JavaScript ファイルを保持することで、同じサーバー上の異なるアダプティブフォームにアクセスする際にブラウザーがそれらをキャッシュし、ネットワーク帯域幅の使用量を削減できます。
 
-AEM Formsの新しいローカライゼーションをサポートする手順：
+## 新しいロケールのサポートを追加 {#add-support-for-new-locales}
+
+新しいロケールのサポートを追加する手順は、次のとおりです。
 
 1. [サポートされていないロケールにローカリゼーションのサポートを追加する](#add-localization-support-for-non-supported-locales-add-localization-support-for-non-supported-locales)
 1. [Adaptive Formsで追加されたロケールを使用する](#use-added-locale-in-adaptive-forms-use-added-locale-in-af)
 
-## サポートされていないロケールにローカリゼーションのサポートを追加する {#add-localization-support-for-non-supported-locales}
+### サポートされていないロケールにローカリゼーションのサポートを追加する {#add-localization-support-for-non-supported-locales}
 
 AEM Formsでは現在、アダプティブFormsコンテンツのローカライゼーションを英語 (en)、スペイン語 (es)、フランス語 (fr)、イタリア語 (it)、ドイツ語 (de)、日本語 (ja)、ポルトガル語 — ブラジル語 (pt-BR)、中国語 (zh-TW)、韓国語 (ko-KR) のロケールでサポートしています。
 
 アダプティブフォーム実行時に新しいロケールのサポートを追加するには、次を参照してください。
 
 1. [リポジトリを複製](#1-clone-the-repository-clone-the-repository)
-1. [GuideLocalizationService へのロケールの追加](#1-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
-1. [locale-name 固有のフォルダーを追加](#3-add-locale-name-specific-folder-add-locale-name-specific-folder)
-   * [XFA クライアントライブラリをロケール用に追加](#3-add-xfa-client-library-for-a-locale)
-   * [アダプティブフォームのクライアントライブラリをロケール用に追加](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
-1. [辞書のロケールサポートの追加](#5-add-locale-support-for-the-dictionary-add-locale-support-for-the-dictionary-br)
-1. [リポジトリ内の変更をコミットし、パイプラインをデプロイします。](#7-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-changes-in-repo-deploy-pipeline)
+1. [GuideLocalizationService へのロケールの追加](#2-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
+1. [locale-name 固有のフォルダーを追加](#3-add-locale-name-specific-folder-client-library-add-locale-name-specific-folder)
+1. [辞書のロケールサポートの追加](#about-locale-dictionaries-about-locale-dictionaries)
+1. [リポジトリ内の変更をコミットし、パイプラインをデプロイします。](#5-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-chnages-in-repo-deploy-pipeline)
 
-### 1.リポジトリのクローンを作成します。 {#clone-the-repository}
+#### 1.リポジトリのクローンを作成します。 {#clone-the-repository}
 
 1. コマンドラインから、FormsCloud Serviceリポジトリのクローン先に移動します。
 1. 次のコマンドを実行します。 [Cloud Manager から取得したもの。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) これは次のようになります。 `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
 1. git のユーザー名とパスワードを使用して、リポジトリを複製します。
 1. クローンされたFormsCloud Serviceリポジトリフォルダーを任意のエディターで開きます。
 
-### 2.ロケールを Guide Localization サービスに追加する {#add-a-locale-to-the-guide-localization-service-br}
+#### 2.ロケールを Guide Localization サービスに追加する {#add-a-locale-to-the-guide-localization-service-br}
 
 1. を `Guide Localization Service.cfg.json` ファイルを作成し、追加するロケールを、サポート対象のロケールのリストに追加します。
 
@@ -55,19 +57,20 @@ AEM Formsでは現在、アダプティブFormsコンテンツのローカライ
    >* という名前のファイルを作成します。 `Guide Localization Service.cfg.json` ファイルに含めます（存在しない場合）。
 
 
-### 3.ロケール名固有のフォルダークライアントライブラリを追加する {#add-locale-name-specific-folder}
+#### 3.ロケール名固有のフォルダークライアントライブラリを追加する {#add-locale-name-specific-folder}
 
 1. UI.content フォルダーで、 `etc/clientlibs` フォルダー。
 1. さらに、という名前のフォルダーを作成します。 `locale-name` under `etc/clientlibs` xfa および af clientlibs のコンテナとして機能します。
 
-#### 3.1 ロケール用の XFA クライアントライブラリを locale-name フォルダーに追加する
+##### 3.1 ロケール用の XFA クライアントライブラリを locale-name フォルダーに追加する
 
-1. という名前のノードを作成します。 `[locale-name]_xfa` と入力します。 `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`、カテゴリ `xfaforms.I18N.<locale>`をクリックし、次のファイルを追加します。
-   * `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N` で定義されている `<locale>` の `xfalib.locale.Strings` を定義している **I18N.js**。
-   * 以下を含む **js.txt** ファイル。
-      */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
+という名前のノードを作成します。 `[locale-name]_xfa` と入力します。 `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`、カテゴリ `xfaforms.I18N.<locale>`をクリックし、次のファイルを追加します。
 
-#### 3.2.ロケール locale-name フォルダー用のアダプティブフォームクライアントライブラリを追加する {#add-adaptive-form-client-library-for-a-locale-br}
+* `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N` で定義されている `<locale>` の `xfalib.locale.Strings` を定義している **I18N.js**。
+* 以下を含む **js.txt** ファイル。
+   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
+
+##### 3.2.ロケール locale-name フォルダー用のアダプティブフォームクライアントライブラリを追加する {#add-adaptive-form-client-library-for-a-locale-br}
 
 1. という名前のノードを作成します。 `[locale-name]_af` と入力します。 `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`、カテゴリを `guides.I18N.<locale>` および依存関係 `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` および `guide.common`.
 1. という名前のフォルダーを作成します。 `javascript` 次のファイルを追加します。
@@ -82,7 +85,7 @@ AEM Formsでは現在、アダプティブFormsコンテンツのローカライ
      LogMessages.js
    ```
 
-### 4.辞書のロケールサポートを追加する {#add-locale-support-for-the-dictionary-br}
+#### 4.辞書のロケールサポートを追加する {#add-locale-support-for-the-dictionary-br}
 
 追加する `<locale>` が、`en`、`de`、`es`、`fr`、`it`、`pt-br`、`zh-cn`、`zh-tw`、`ja`、`ko-kr` 以外の場合にのみ、この手順を実行してください。
 
@@ -102,7 +105,7 @@ Add the newly created folders in the `filter.xml` under etc/META-INF/[folder hie
 
 変更をAEM Git リポジトリにコミットする前に、 [Git リポジトリ情報](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
 
-### 5.リポジトリ内の変更をコミットし、パイプラインをデプロイします {#commit-chnages-in-repo-deploy-pipeline}
+#### 5.リポジトリ内の変更をコミットし、パイプラインをデプロイします {#commit-chnages-in-repo-deploy-pipeline}
 
 新しいロケールサポートを追加した後、変更を GIT リポジトリにコミットします。 フルスタックパイプラインを使用してコードをデプロイします。 学ぶ [パイプラインの設定方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) 新しいロケールサポートを追加する。
 
@@ -110,7 +113,7 @@ Add the newly created folders in the `filter.xml` under etc/META-INF/[folder hie
 
 ### アダプティブFormsで追加されたロケールを使用する {#use-added-locale-in-af}
 
-新しく追加されたロケールを使用してアダプティブフォームを使用してレンダリングする手順は次のとおりです。
+新しく追加されたロケールを使用してアダプティブフォームを使用およびレンダリングするには、次の手順を実行します。
 
 1. AEM オーサーインスタンスにログインします。
 1. に移動します。 **Forms** >  **Formsとドキュメント**.
@@ -123,9 +126,9 @@ Add the newly created folders in the `filter.xml` under etc/META-INF/[folder hie
 
 アダプティブフォームのロケールを識別する方法は 2 つあります。 アダプティブフォームがレンダリングされると、リクエストされたロケールが次のように識別されます。
 
-* アダプティブフォームの URL の `[local]` セレクターを確認します。URL の形式は、`http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled` です。`[local]` セレクターを使用すると、アダプティブフォームをキャッシュできます。
+* の取得 `[local]` セレクターを使用して、アダプティブフォームの URL 内で選択することができます。 URL の形式は、`http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled` です。`[local]` セレクターを使用すると、アダプティブフォームをキャッシュできます。
 
-* 指定した順序で次のパラメーターを確認します。
+* 次のパラメーターをリストに表示された順序で取得します。
 
    * リクエストパラメーター`afAcceptLang`
 ユーザーのブラウザーロケールを上書きするには、 
