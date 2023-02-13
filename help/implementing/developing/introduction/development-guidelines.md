@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service上での開発に関するガイドラインと、オンプレミスでのAEMおよび AMS でのAEMとは異なる重要な方法について説明します。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: e305f9fa7d1c485362bddb8fcd7c9e3e2edefe10
+source-git-commit: 01087aa2ec621d6bebd4d62edbc320df8122f71d
 workflow-type: tm+mt
-source-wordcount: '2590'
-ht-degree: 92%
+source-wordcount: '2591'
+ht-degree: 91%
 
 ---
 
@@ -166,7 +166,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 代わりに、開発者コンソールからリポジトリーブラウザーを起動して、オーサー層、パブリッシュ層およびプレビュー層にあるすべての環境のリポジトリーに対して読み取り専用ビューを提供できます。リポジトリーブラウザーについて詳しくは、[こちら](/help/implementing/developing/tools/repository-browser.md)を参照してください。
 
-AEM as a Cloud Service 開発者環境でデバッグするためのツールセットが開発環境、ステージ環境、実稼動環境の開発者コンソールで利用できます。URL は、次のようにオーサーサービス URL またはパブリッシュサービス URL を調整して決定できます。
+RDE、開発、ステージ、実稼動環境用の開発者コンソールで、AEMのas a Cloud Serviceの開発者環境をデバッグするための一連のツールを使用できます。 URL は、次のようにオーサーサービス URL またはパブリッシュサービス URL を調整して決定できます。
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -198,31 +198,31 @@ AEM as a Cloud Service 開発者環境でデバッグするためのツールセ
 
 アドビはアプリケーションのパフォーマンスを監視し、劣化が観察された場合に対処します。現時点では、アプリケーションの指標を確認できません。
 
-## 電子メールの送信 {#sending-email}
+## メールの送信 {#sending-email}
 
-以下の節では、電子メールのリクエスト、設定、送信の方法について説明します。
+以下の節では、メールのリクエスト、設定、送信の方法について説明します。
 
 >[!NOTE]
 >
 >メールサービスは、OAuth2 サポートを使用して設定できます。詳しくは、[メールサービスの OAuth2 サポート](/help/security/oauth2-support-for-mail-service.md)を参照してください。
 
-### 送信電子メールの有効化 {#enabling-outbound-email}
+### 送信メールの有効化 {#enabling-outbound-email}
 
-電子メールの送信に使用されるポートは、デフォルトでは無効になっています。ポートをアクティブにするには、[高度なネットワーク](/help/security/configuring-advanced-networking.md)を設定して、対象となるポート（465 や 587 など）をプロキシポートにマッピングするエンドポイントのポート転送ルールを、必要な環境ごとに設定するようにします（`PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`）。
+メールの送信に使用されるポートは、デフォルトでは無効になっています。ポートをアクティブにするには、[高度なネットワーク](/help/security/configuring-advanced-networking.md)を設定して、対象となるポート（465 や 587 など）をプロキシポートにマッピングするエンドポイントのポート転送ルールを、必要な環境ごとに設定するようにします（`PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`）。
 
 `kind` パラメータを `flexiblePortEgress` に設定して高度なネットワーク機能を設定することをお勧めします。アドビがフレキシブルポートエグレストラフィックのパフォーマンスを最適化できるからです。一意のエグレス IP アドレスが必要な場合は、`kind` パラメーターを `dedicatedEgressIp` に設定します。他の理由で既に VPN を設定してある場合は、その高度なネットワークバリエーションから提供される一意の IP アドレスも使用できます。
 
-電子メールクライアントに直接送信するのではなく、メールサーバーを通じて電子メールを送信する必要があります。そうしないと、電子メールがブロックされる可能性があります。
+メールクライアントに直接送信するのではなく、メールサーバーを通じてメールを送信する必要があります。そうしないと、メールがブロックされる可能性があります。
 
-### 電子メールの送信 {#sending-emails}
+### メールの送信 {#sending-emails}
 
-[Day CQ Mail Service OSGi サービス](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja#configuring-the-mail-service)を使用してください。また、受信者に直接送信するのではなく、サポートリクエストに明示されたメールサーバーに電子メールを送信する必要があります。
+[Day CQ Mail Service OSGi サービス](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja#configuring-the-mail-service)を使用してください。また、受信者に直接送信するのではなく、サポートリクエストに明示されたメールサーバーにメールを送信する必要があります。
 
 ### 設定 {#email-configuration}
 
-AEM 内の電子メールは、[Day CQ Mail Service OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja#configuring-the-mail-service) サービスを使用して送信する必要があります。
+AEM 内のメールは、[Day CQ Mail Service OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja#configuring-the-mail-service) サービスを使用して送信する必要があります。
 
-電子メールの設定について詳しくは、 [AEM 6.5 ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja) を参照してください。AEM as a Cloud Service の場合は、`com.day.cq.mailer.DefaultMailService OSGI` サービスへの次のような調整が必要になります。
+メールの設定について詳しくは、 [AEM 6.5 ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja) を参照してください。AEM as a Cloud Service の場合は、`com.day.cq.mailer.DefaultMailService OSGI` サービスへの次のような調整が必要になります。
 
 * SMTP サーバーのホスト名を $[env:AEM_PROXY_HOST;default=proxy.tunnel] に設定する必要があります
 * SMTP サーバーポートは、高度なネットワーク機能を設定する際に、API 呼び出しで使用される portForwards パラメーターに設定された元のプロキシポートの値に設定してください。例えば、（465 ではなく）30465 などとします。
@@ -244,9 +244,9 @@ SMTP サーバーポートには、高度なネットワーク設定時に API �
 
 オプションで、メールサービスに OAuth2 サポートを設定できます。詳しくは、[メールサービスの OAuth2 サポート](/help/security/oauth2-support-for-mail-service.md)を参照してください。
 
-### 従来の電子メール設定 {#legacy-email-configuration}
+### 従来のメール設定 {#legacy-email-configuration}
 
-2021.9.0 リリースより前は、カスタマーサポートへの依頼を通じて電子メールが設定されていました。`com.day.cq.mailer.DefaultMailService OSGI` サービスへの次のような調整が必要になります。
+2021.9.0 リリースより前は、カスタマーサポートへの依頼を通じてメールが設定されていました。`com.day.cq.mailer.DefaultMailService OSGI` サービスへの次のような調整が必要になります。
 
 AEM as a Cloud Service では、ポート 465 を通じてメールを送信する必要があります。TLS オプションが有効になっている限り、メールサーバーがポート 465 をサポートしていない場合は、ポート 587 を使用できます。
 

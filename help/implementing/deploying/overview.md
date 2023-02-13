@@ -3,10 +3,10 @@ title: AEM as a Cloud Service へのデプロイ
 description: AEM as a Cloud Service へのデプロイ
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 8e9ff8f77ac4920f87adcba0258cfccb15f9a5b9
+source-git-commit: 0481267958fe8ac4b28b2742924d2bc2c337eebc
 workflow-type: tm+mt
-source-wordcount: '3415'
-ht-degree: 96%
+source-wordcount: '3497'
+ht-degree: 92%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 96%
 
 ## はじめに {#introduction}
 
-AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Managed Services ソリューション上の AEM の場合と同様です。開発者はコードを作成しローカルでテストします。コードはその後、リモートの AEM as a Cloud Service 環境にプッシュされます。Cloud Manager（Managed Services のオプションのコンテンツ配信ツール）が必要です。これが、AEM as a Cloud Service 環境にコードをデプロイするための唯一のメカニズムになりました。
+AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Managed Services ソリューション上の AEM の場合と同様です。開発者はコードを作成しローカルでテストします。コードはその後、リモートの AEM as a Cloud Service 環境にプッシュされます。Cloud Manager（Managed Services のオプションのコンテンツ配信ツール）が必要です。これが、AEMのas a Cloud Serviceの開発環境、ステージ環境および実稼動環境にコードをデプロイするための唯一のメカニズムになりました。 これらの環境をデプロイする前に、機能の検証とデバッグをすばやくおこなうために、コードをローカル環境からに同期できます。 [迅速な開発環境](/help/implementing/developing/introduction/rapid-development-environments.md).
 
 [AEM バージョン](/help/implementing/deploying/aem-version-updates.md)のアップデートは、常に、[カスタムコード](#customer-releases)のプッシュとは別のデプロイメントイベントになります。別の見方をすれば、カスタムコードリリースは実稼動環境にある AEM バージョンに照らしてテストする必要があります。カスタムコードがその AEM 上にデプロイされるからです。その後に発生する AEM バージョンの更新で、頻繁に自動的に適用されます。これらは、既に導入されている顧客コードとの後方互換性を保つためのものです。
 
@@ -170,7 +170,6 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="パッケージマネージャー - 可変コンテンツパッケージの移行"
->abstract="コンテンツパッケージを「1回限り」としてインストールするユースケースへのパッケージマネージャーの使用方法を参照します。このようなユースケースには、実稼動環境での問題をデバッグするために特定のコンテンツを実稼動環境からステージング環境に読み込む場合や、オンプレミス環境から AEM Cloud 環境に小規模なコンテンツパッケージを転送する場合などが含まれます。"
 >abstract="パッケージマネージャーの使用例を調べて、実稼動環境での問題のデバッグ、オンプレミス環境からAEM Cloud 環境への小規模なコンテンツパッケージの転送などのために、コンテンツパッケージを「1 つ」でインストールする必要がある場合を確認します。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja#cloud-migration" text="コンテンツ転送ツール"
 
@@ -279,6 +278,12 @@ AEM のアップデートと同様に、お客様向けリリースも、適切�
 ### ロールバックに備えた保守的なコーディング {#conservative-coding-for-rollbacks}
 
 デプロイメント後にエラーが報告または検出された場合は、ブルーバージョンへのロールバックが必要になる可能性があります。新しい構造（可変コンテンツ）はロールバックされないので、ブルーコードとグリーンバージョンで作成された新しい構造との互換性を確保することをお勧めします。古いコードに互換性がない場合は、それ以降のお客様向けリリースで修正を適用する必要があります。
+
+## 迅速な開発環境 (RDE) {#rde}
+
+[迅速な開発環境](/help/implementing/developing/introduction/rapid-development-environments.md) （つまり、RDE）を使用すると、ローカル開発環境で動作することが既に証明されている機能のテストに必要な時間を最小限に抑え、変更のデプロイとレビューを迅速におこなうことができます。
+
+Cloud Manager パイプラインを介してコードをデプロイする通常の開発環境とは異なり、開発者はコマンドラインツールを使用してローカル開発環境から RDE にコードを同期します。 変更が RDE で正常にテストされたら、Cloud Manager パイプラインを通じて通常の Cloud Development 環境にデプロイする必要があります。このパイプラインにより、コードは適切な品質ゲートを経由します。
 
 ## 実行モード {#runmodes}
 

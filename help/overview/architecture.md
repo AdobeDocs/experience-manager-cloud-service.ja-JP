@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service のアーキテクチャの概要
 description: Adobe Experience Manager as a Cloud Service のアーキテクチャの概要。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 01087aa2ec621d6bebd4d62edbc320df8122f71d
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 100%
+source-wordcount: '1797'
+ht-degree: 98%
 
 ---
 
@@ -79,6 +79,8 @@ AEM as a Cloud Service で使用できる環境には、次の 3 種類があり
 
    詳しくは、[環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja#using-cloud-manager)を参照してください。
 
+* **迅速な開発環境**:を使用すると、新しいコードや既存のコードを迅速に開発を繰り返しデバッグできます。
+
 ## プログラム {#programs}
 
 新しい AEM プロジェクトは常に 1 つの特定のコードベースに関連付けられ、プロジェクトの設定とカスタムコードをそこに保存できます。この情報はコードリポジトリーに保存されています。通常の Git クライアントを通じてアクセスでき、プログラムの新規作成時に提供されます。
@@ -90,7 +92,7 @@ AEM プログラムは、次のものを含んだコンテナです。
 | コードリポジトリー（Git） |  1 |
 | ベースラインイメージ（Sites または Assets） |  1 |
 | ステージ環境と実稼動環境のセット（1 対 1 対応） | 0 または 1 |
-| 非実稼動環境（開発またはデモ） | 0～N |
+| 非実稼動環境（RDE、開発またはデモ） | 0～N |
 | 各環境のパイプライン | 0 または 1 |
 
 AEM as a Cloud Service では、次の 2 種類のプログラムが最初から使用可能です。
