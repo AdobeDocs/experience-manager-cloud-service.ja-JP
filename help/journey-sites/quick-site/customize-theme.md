@@ -2,10 +2,10 @@
 title: サイトテーマのカスタマイズ
 description: サイトテーマの作成方法、カスタマイズ方法、および AEM のライブコンテンツを使用したテスト方法を説明します。
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9f5930fce8c2a7768cad696746a7c9fa3d8c2f9e
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 100%
+source-wordcount: '963'
+ht-degree: 97%
 
 ---
 
@@ -67,6 +67,10 @@ AEM 管理者が提供するテーマを編集場所に抽出し、目的のエ�
 1. プロキシサーバーが起動すると、`http://localhost:7001/` へのブラウザーが自動的に開きます。「**ローカルでログイン（管理者タスクのみ）**」をタップまたはクリックし、AEM 管理者から提供されたプロキシユーザーの資格情報を使用してサインオンします。
 
    ![ローカルでログイン](assets/sign-in-locally.png)
+
+   >[!TIP]
+   >
+   >これらの資格情報がない場合は、管理者に問い合わせて、 [「テンプレートからサイトを作成」記事の「プロキシユーザーを設定」セクション](/help/journey-sites/quick-site/create-site.md#proxy-user) このジャーニー内。
 
 1. ログインしたら、AEM 管理者が指定したサンプルコンテンツのパスを指すように、ブラウザーで URL を変更します。
 
