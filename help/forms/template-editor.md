@@ -2,10 +2,10 @@
 title: アダプティブフォームテンプレートの作成方法
 description: テンプレートエディターを使用して、基本構造と初期コンテンツを定義するアダプティブフォームテンプレートを作成します。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: fce9900a1979875fc725318a6cd735341d0b6275
 workflow-type: tm+mt
-source-wordcount: '1920'
-ht-degree: 94%
+source-wordcount: '2017'
+ht-degree: 87%
 
 ---
 
@@ -49,7 +49,7 @@ Experience Manager には、テンプレートを整理するためのグロー�
    * **ページ情報**：公開／非公開の時間、サムネール、クライアントサイドライブラリ、ページポリシー、ページデザインのクライアントサイドライブラリなどの情報を指定できます。
 
    <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-   * **モードセレクター**：モードを変更できます。**[!UICONTROL 構造]**&#x200B;モード、**[!UICONTROL 初期コンテンツ]**、**[!UICONTROL レイアウト制御]**&#x200B;モードを選択できます。構造モードを使用すると、ヘッダーとフッターを追加してカスタマイズできます。初期コンテンツモードを使用すると、フォームコンテンツをカスタマイズできます。
+   * **モードセレクター：** モードを変更できます。次を選択できます。 **[!UICONTROL 構造]** モード **[!UICONTROL 初期コンテンツ]**, **[!UICONTROL レイアウト制御]** モード。 構造モードを使用すると、ヘッダーとフッターを追加してカスタマイズできます。初期コンテンツモードを使用すると、フォームコンテンツをカスタマイズできます。
    * **プレビュー**：テンプレート公開時の外観をプレビューできます。「レイヤーセレクター」と「プレビュー」を使用して、編集モードとプレビューモードを切り替えることができます。
 * **サイドバー**：コンテンツブラウザー、プロパティブラウザー、アセットブラウザー、コンポーネントブラウザーを提供します。
 * **コンポーネントツールバー**：コンポーネントを選択すると、コンポーネントをカスタマイズできるツールバーが表示されます。
@@ -148,12 +148,24 @@ Experience Manager には、テンプレートを整理するためのグロー�
 
 ## テンプレートの読み込みまたは書き出し {#importing-or-exporting-a-template}
 
-フォームは、テンプレートと連携しています。カスタマイズしたテンプレートを使用して作成したアダプティブフォームをダウンロードする場合、テンプレートはダウンロードされません。別の [!DNL AEM Forms] インスタンス上の ftocorm を読み込む場合は、テンプレートなしで読み込まれます。フォームが読み込まれてもテンプレートを使用できない場合、フォームはレンダリングされません。`/conf` にある `https://<server>:<port>/crx/packmgr` ノードからカスタムテンプレートをパッケージ化し、フォームをアップロードする [!DNL AEM Forms] インスタンスに移植できます。また、[AEM アーキタイプを使用してテンプレートを作成し、Cloud Services インスタンスにデプロイ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=ja#prerequisites)することもできます。
+フォームは、テンプレートと連携しています。カスタマイズしたテンプレートを使用して作成したアダプティブフォームをダウンロードする場合、テンプレートはダウンロードされません。別の [!DNL AEM Forms] インスタンスの場合、テンプレートなしでインポートされます。 フォームが読み込まれてもテンプレートを使用できない場合、フォームはレンダリングされません。`/conf` にある `https://<server>:<port>/crx/packmgr` ノードからカスタムテンプレートをパッケージ化し、フォームをアップロードする [!DNL AEM Forms] インスタンスに移植できます。また、[AEM アーキタイプを使用してテンプレートを作成し、Cloud Services インスタンスにデプロイ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=ja#prerequisites)することもできます。
 
 >[!NOTE]
 >
-> * テンプレートエディターで、[!UICONTROL フォームデータモデルスキーマ]をアダプティブフォームテンプレートに関連付けることができます。詳しくは、[アダプティブフォームの作成](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)を参照してください。
 > * また、[!UICONTROL レコードのドキュメント]テンプレートは、アダプティブフォームエディターまたはアダプティブフォームテンプレートエディターから直接設定することもできます。詳しくは、[アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)を参照してください。
+
+
+
+### フォームデータモデルスキーマをテンプレートに関連付ける {#associating-form-data-model-schema-in-template}
+
+作成者は、 [!UICONTROL フォームデータモデルスキーマ] をテンプレートエディターのアダプティブフォームテンプレートに追加します。 作成者は、テンプレートエディターからスキーマを選択できます。 スキーマをテンプレートに関連付け、フォーム作成者がそのテンプレートに基づいてフォームを作成すると、そのスキーマはフォーム用に事前に選択されています。 フォーム作成者がスキーマの使用を規制し、フォーム作成者の時間を節約するのに役立ちます。 テンプレートエディターでフォームデータモデルスキーマを選択するには：
+
+1. タップ **[!UICONTROL コンテンツブラウザー]** 左側にある
+1. フォームコンテナに移動します。 **[!UICONTROL 設定]**.
+1. 選択 **[!UICONTROL データモデル]**.
+1. を使用してフォームデータモデルを選択します **[!UICONTROL フォームデータモデルを選択]** 設定を保存します。
+
+![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img.png)
 
 
 
