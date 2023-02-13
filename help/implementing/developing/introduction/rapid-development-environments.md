@@ -1,9 +1,9 @@
 ---
 title: 迅速な開発環境
 description: クラウド環境で迅速な開発反復処理を行うために、高速開発環境を活用する方法を説明します。
-source-git-commit: 1d34834af35451b072afde536ee8aaa5155c58b3
+source-git-commit: 79f58c14625ed3e7a9d684006b3abbc97334ceeb
 workflow-type: tm+mt
-source-wordcount: '3062'
+source-wordcount: '3069'
 ht-degree: 5%
 
 ---
@@ -447,6 +447,7 @@ RDE はクラウド開発環境に似た多くの方法で用意されていま�
 
 また、次の考慮事項にも注意してください。
 
+* RDE にプレビュー層が含まれていません
 * RDE は、現在、Cloud Manager フロントエンドパイプラインを使用してデプロイされたフロントエンドコードの表示とデバッグをサポートしていません。
 * RDE は現在、プレリリースチャネルをサポートしていません。
 
