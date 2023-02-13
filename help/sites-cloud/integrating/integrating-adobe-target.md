@@ -4,10 +4,10 @@ description: Adobe Target との統合
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: ht
-source-wordcount: '1036'
-ht-degree: 100%
+source-git-commit: 9df5c3326d80e1a6c1726395722d86556af1ee29
+workflow-type: tm+mt
+source-wordcount: '1042'
+ht-degree: 97%
 
 ---
 
@@ -36,7 +36,7 @@ Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／
 
 ### IMS 設定 {#ims-configuration}
 
-Target を AEM および Launch と適切に統合するには、Launch と Target の両方の IMS 設定が必要です。Launch の IMS 設定は AEM as a Cloud Service で事前に設定されていますが、Target の IMS 設定は、Target のプロビジョニング後に作成する必要があります。Target IMS 設定の作成方法については、 [このビデオ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=ja)および[このページ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html?lang=ja)を参照してください。
+Target を AEM および Launch と適切に統合するには、Launch と Target の両方の IMS 設定が必要です。Launch の IMS 設定は AEM as a Cloud Service で事前に設定されていますが、Target の IMS 設定は、Target のプロビジョニング後に作成する必要があります。参照： [Adobe Targetとの統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-target-ims.md) とビデオ [Experience Platform LaunchとAEMの統合](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=ja) Target IMS 設定の作成方法を説明します。
 
 ### Adobe Target テナント ID と Adobe Target クライアントコード {#tenant-client}
 
