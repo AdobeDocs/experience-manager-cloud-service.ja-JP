@@ -2,10 +2,10 @@
 title: アダプティブフォームにおけるレコードのドキュメントの生成
 description: ここでは、アダプティブフォーム向けのレコードのドキュメント（DoR）テンプレートを生成する方法について説明します。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 90a10fd4e414f3457fa9658a50ccd0cf935fdb69
+source-git-commit: b0e49296344a4f52a07699a308eb0cbeef897bb9
 workflow-type: tm+mt
-source-wordcount: '3172'
-ht-degree: 78%
+source-wordcount: '3109'
+ht-degree: 79%
 
 ---
 
@@ -326,8 +326,10 @@ When you select a form model, configure Document of Record using options availab
       * **テンプレート**:カスタムテンプレートを選択する場合は、 [!DNL AEM Forms] サーバー。 使用できないテンプレートを [!DNL AEM Forms] サーバー上で、最初に XDP を [!DNL AEM Forms] サーバー。
       * **アクセントの色**:レコードのドキュメントPDFでヘッダーテキストと区切り線がレンダリングされる色。
       * **フォントファミリー**：レコードのドキュメントの PDF にあるテキストのフォントファミリー。
+
       * **データモデルにバインドされていないフォームオブジェクトを含める**:このプロパティを設定すると、レコードのドキュメント内のスキーマベースのアダプティブフォームの連結されていないフィールドが含まれます。
-      * **レコードのドキュメントから非表示フィールドを除外**：このプロパティを設定すると、レコードのドキュメントから除外する非表示フィールドが識別されます。
+      <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
+
       * **パネルの説明を非表示にする**:このプロパティを設定すると、パネル/テーブルの説明がレコードのドキュメントから除外されます。 パネルとテーブルに対して適用可能です。
    1. **フォームフィールドのプロパティ**:
       * **チェックボックスおよびラジオボタンのコンポーネントには、選択した値のみを表示**：このプロパティを設定すると、チェックボックスとラジオボタンの選択された値のみが[!UICONTROL レコードのドキュメント]に表示されます。
@@ -341,7 +343,6 @@ When you select a form model, configure Document of Record using options availab
       * **免責事項ラベル**：免責事項のラベル。
       * **免責事項**：レコードのドキュメントに対する権利と義務の範囲を指定するテキスト。
       * **免責事項テキスト**：免責事項のテキスト。
-
       ![マスターページのプロパティ](/help/forms/assets/dorpropertiesimg.png)
    >[!NOTE]
    >
@@ -394,4 +395,4 @@ When you select a form model, configure Document of Record using options availab
 **フォームレベルの設定**
 
 * **バインドされていないフィールドをレコードのドキュメントに含める：**&#x200B;このプロパティを設定すると、スキーマベースのアダプティブフォームのバインドされていないフィールドがレコードのドキュメントに追加されます。デフォルトでは true になっています。
-* **非表示の場合に DoR からフィールドを除外：** フォーム送信時にレコードのドキュメントから非表示フィールドを除外するプロパティを設定します。 有効にする場合 [サーバーで再検証](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)を指定した場合、サーバーは非表示のフィールドを再計算してから、レコードのドキュメントからこれらのフィールドを除外します。
+<!-- **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.->>
