@@ -4,10 +4,10 @@ description: AEM で機械翻訳と人間による翻訳の両方のプロジェ
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 998b71903f3ea0c3c1082ecc800331811c2af8cf
+source-git-commit: c9d901db6873965643f5ababe544be3aa635a8e4
 workflow-type: tm+mt
-source-wordcount: '3992'
-ht-degree: 100%
+source-wordcount: '4086'
+ht-degree: 97%
 
 ---
 
@@ -445,6 +445,16 @@ AEM の翻訳プロジェクトでは、標準の [AEM プロジェクトコン�
 
 1. 2 つのページ（ローンチページとソースページ）が左右に並んで開きます。
    * この機能の使用方法について詳しくは、[ページの差分](/help/sites-cloud/authoring/features/page-diff.md)を参照してください。
+
+## ソースページの移動または名前の変更 {#move-source}
+
+翻訳済みのソースページを [名前が変更されたか、移動されました](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page)移動後に再度ページを翻訳すると、新しいページ名と場所に基づいて新しい言語コピーが作成されます。 以前の名前/場所に基づく古い言語コピーは、引き続き存在します。
+
+このシナリオのベストプラクティスは、次の手順に従うことです。
+1. 移動するソースページに関連付けられている言語コピーを非公開にします。
+1. 削除します。
+1. 新しく移動したソースページから新しい言語コピーを作成します。
+1. 新しく作成された言語コピーを公開します。
 
 ## 翻訳ジョブの読み込みと書き出し {#import-export}
 
