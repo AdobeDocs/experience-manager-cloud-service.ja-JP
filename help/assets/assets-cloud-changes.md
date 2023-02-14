@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  6.5 と比較した、  [!DNL Ex
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: fe662a515a52bcf4648585366422064edce1a7fd
+source-git-commit: 2e4f57f86346074432996901985671939bcafeb0
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1004'
 ht-degree: 100%
 
 ---
@@ -62,7 +62,6 @@ ht-degree: 100%
 | ZIP アーカイブからのアセットの抽出 | サポート対象外 | [ [!DNL Experience Manager]  6.5 の ZIP 抽出](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=ja#extractzip) を参照してください。 |
 | アセット評価 | サポート対象外 | メタデータスキーマエディターの評価ウィジェットはサポートされていません。 |
 | Content Disposition フィルター | サポート対象外 | `ContentDispositionFilter` の一般的なユースケースは、HTML ファイルを配信するように、また PDF ファイルをダウンロードする代わりにインラインで開くように管理者が [!DNL Experience Manager] を設定できるようにすることです。パブリッシュインスタンスでは、Dispatcher 設定を使用して処理を管理できます。オーサーインスタンスでは、Content-Disposition ヘッダーの変更をお勧めしません。[Content Disposition フィルター： [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html?lang=ja) を参照してください。 |
-| [レポートをダウンロード](/help/assets/asset-reports.md) | サポート対象外 | 現時点では、アセットの使用を通知するダウンロードレポートは使用できません。[ダウンロードレポート： [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=ja) を参照してください。 |
 | 製品撮影テンプレート | サポート対象外 | [製品撮影テンプレート： [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html?lang=ja) を参照してください。 |
 | スマート翻訳 | サポート対象外 | [スマート翻訳](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html?lang=ja) は [!DNL Experience Manager] as a [!DNL Cloud Service] ではサポートされていません。 |
 | WebDAV | サポート対象外 | 代替手段については、[[!DNL Creative Cloud] 統合](/help/assets/aem-cc-integration-best-practices.md)または[開発者向けリファレンス資料](/help/assets/developer-reference-material-apis.md)を参照してください。 |
