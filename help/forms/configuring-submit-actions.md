@@ -2,10 +2,10 @@
 title: アダプティブフォームの送信アクションの設定方法
 description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自のアクションを作成できます。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 6a124b476b4dd18ea38d35438866a07958918461
 workflow-type: tm+mt
-source-wordcount: '3065'
-ht-degree: 62%
+source-wordcount: '3131'
+ht-degree: 60%
 
 ---
 
@@ -185,6 +185,10 @@ AEM FormsをMicrosoft Sharepoint ストレージに接続するには：
    * API 権限の追加 `offline_access` および `Sites.Manage.All` 読み取り/書き込み権限を付与する。
    * OAuth URL を使用： `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. 置換 `<tenant-id>` と `tenant-id` Microsoft Azure ポータルからのアプリの
 
+   >[!NOTE]
+   >
+   > この **クライアント秘密鍵** フィールドは、Azure Active Directory アプリケーションの構成に応じて、必須またはオプションです。 アプリケーションでクライアントの秘密鍵を使用するように設定されている場合は、クライアントの秘密鍵を指定する必要があります。
+
 1. 「**[!UICONTROL 接続]**」をクリックします。接続に成功した場合、 `Connection Successful` メッセージが表示されます。
 
 1. 次に、 **SharePoint Site** > **ドキュメントライブラリ** > **SharePoint Folder**、データを保存します。
@@ -239,6 +243,10 @@ AEM FormsをMicrosoft OneDrive ストレージに接続するには：
    * Microsoft Azure ポータルで、リダイレクト URI を `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. 置換 `[author-instance]` を作成します。
    * API 権限の追加 `offline_access` および `Files.ReadWrite.All` 読み取り/書き込み権限を付与する。
    * OAuth URL を使用： `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. 置換 `<tenant-id>` と `tenant-id` Microsoft Azure ポータルからのアプリの
+
+   >[!NOTE]
+   >
+   > この **クライアント秘密鍵** フィールドは、Azure Active Directory アプリケーションの構成に応じて、必須またはオプションです。 アプリケーションでクライアントの秘密鍵を使用するように設定されている場合は、クライアントの秘密鍵を指定する必要があります。
 
 1. 「**[!UICONTROL 接続]**」をクリックします。接続に成功した場合、 `Connection Successful` メッセージが表示されます。
 
