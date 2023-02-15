@@ -1,10 +1,10 @@
 ---
 title: 迅速な開発環境
 description: クラウド環境で迅速な開発反復処理を行うために、高速開発環境を活用する方法を説明します。
-source-git-commit: 79f58c14625ed3e7a9d684006b3abbc97334ceeb
+source-git-commit: e5a9f497e753f328ff14487f4985541c1c77ae0e
 workflow-type: tm+mt
-source-wordcount: '3069'
-ht-degree: 5%
+source-wordcount: '3259'
+ht-degree: 7%
 
 ---
 
@@ -15,11 +15,17 @@ ht-degree: 5%
 >
 >この機能は、2 月を通じて徐々にお客様に提供される予定です。
 
-変更をデプロイするために、現在のクラウド開発環境では、CI/CD パイプラインと呼ばれる広範なコードセキュリティと品質ルールを採用したプロセスを使用する必要があります。 迅速で反復的な変更が必要な状況では、Adobeが迅速な開発環境 (RDE) を導入しました。
+変更をデプロイするために、現在のクラウド開発環境では、CI／CD パイプラインと呼ばれる広範なコードセキュリティと品質ルールを採用したプロセスを使用する必要があります。迅速かつ繰り返し変更が必要な状況のために、アドビは迅速な開発環境（RDE）を導入しました。
 
-RDE を使用すると、ローカル開発環境で動作すると証明された機能のテストに必要な時間を最小限に抑え、変更を迅速にデプロイおよび確認できます。
+
+RDE を使用すると、開発者は変更を迅速にデプロイしてレビューできるので、ローカル開発環境で動作することが証明されている機能をテストするために必要な時間を、最小限に抑えることができます。
 
 変更が RDE でテストされたら、Cloud Manager パイプラインを通じて通常のクラウド開発環境にデプロイできます。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
+
+
+追加のデモビデオを参照できます。 [設定方法](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html), [使用方法](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html)、および [開発ライフサイクル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) RDE を使用している。
 
 ## はじめに {#introduction}
 
@@ -138,6 +144,7 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
 
+詳しくは、 [RDE の設定方法](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html) ビデオチュートリアル
 
 ## 新機能の開発時の RDE の使用 {#using-rde-while-developing-a-new-feature}
 
@@ -256,13 +263,23 @@ RDE は、一度に 1 つのプロジェクトをサポートします。 コー
 
 <u>Apache/Dispatcher 設定のデプロイ</u>
 
-このタイプの設定では、フォルダー構造全体を zip ファイルの形式で指定する必要があります。 Dispatcher 設定フォルダーのルートから次のコマンドを実行して、zip ファイルを圧縮できます。
+このタイプの設定では、フォルダー構造全体を zip ファイルの形式で指定する必要があります。
 
-`zip -y -r dispatcher.zip`
+次の `dispathcer` AEMプロジェクトのモジュールでは、次の maven コマンドを実行して、dispatcher 設定を zip 形式で圧縮できます。
+
+`mvn clean package`
+
+または以下の zip コマンドを `src` ディレクトリ `dispatcher` モジュール：
+
+`zip -y -r dispatcher.zip .`
 
 次に、次のコマンドで設定をデプロイします。
 
-`aio aem:rde:install -t dispatcher-config dispatcher-wknd-2.1.0.zip`
+`aio aem:rde:install target/aem-guides-wknd.dispatcher.cloud-X.X.X-SNAPSHOT.zip`
+
+>[!TIP]
+>
+>上記のコマンドは、 [WKND](https://github.com/adobe/aem-guides-wknd) プロジェクトの dispatcher 設定。 必ず `X.X.X` を、対応する WKND プロジェクトのバージョン番号、またはプロジェクトの dispatcher 設定をデプロイする際にプロジェクト固有のバージョン番号に置き換えます。
 
 デプロイメントが成功すると、次のような応答が生成されます。
 
@@ -342,6 +359,8 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #13: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on author - done by karl at 2022-09-12T22:01:01.955Z
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
+
+詳しくは、 [RDE コマンドの使用方法](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html) ビデオチュートリアル
 
 ## リセット {#reset-rde}
 
@@ -464,7 +483,7 @@ RDE は、ライセンスが必要な各ソリューションで使用でき、A
 
 ## AEM FormsCloud Serviceラピッド開発環境 (RDE) は他の環境とどのように異なりますか？ {#how-are-forms-rds-different-from-cloud-development-environments}
 
-Formsの開発者は、AEM FormsCloud Serviceラピッド開発環境を使用して、アダプティブForms、ワークフロー、およびコアコンポーネントのカスタマイズ、サードパーティシステムとの統合などのカスタマイズを迅速に開発できます。 AEM FormsCloud Serviceラピッド開発環境 (RDE) は、通信 API をサポートしておらず、アダプティブフォームの送信時にレコードのドキュメントを生成するなど、レコードのドキュメントを必要とする機能に対応していません。 以下に示すAEM Formsの機能は、急速開発環境 (RDE) では使用できません。
+Formsの開発者は、AEM FormsCloud Serviceラピッド開発環境を使用して、アダプティブForms、ワークフロー、およびコアコンポーネントのカスタマイズ、サードパーティシステムとの統合などのカスタマイズを迅速に開発できます。 AEM FormsCloud Serviceラピッド開発環境 (RDE) は、アダプティブフォームの送信時にレコードのドキュメントを生成するなど、レコードのドキュメントを必要とする機能や機能に対して、通信 API をサポートしていません。 以下に示すAEM Formsの機能は、急速開発環境 (RDE) では使用できません。
 
 * アダプティブフォーム用のレコードのドキュメントの設定
 * アダプティブフォームの送信時またはワークフローステップでのレコードのドキュメントの生成
@@ -474,5 +493,9 @@ Formsの開発者は、AEM FormsCloud Serviceラピッド開発環境を使用�
 
 >[!NOTE]
 >
-> Formsの UI と他の開発環境 (RDE) の間に変更はありません。 レコードのドキュメント関連のすべてのオプション（アダプティブフォームのレコードのドキュメントテンプレートの選択など）は、UI に引き続き表示されます。 これらの環境には、通信 API やレコードのドキュメント機能がなく、これらのオプションをテストできます。 そのため、通信 API またはレコードのドキュメント機能を必要とするオプションを選択した場合、アクションは実行されず、エラーメッセージが表示または返されます。
+> Formsの UI と他のCloud Service環境の UI に違いはありません。 レコードのドキュメント関連のすべてのオプション（アダプティブフォームのレコードのドキュメントテンプレートの選択など）は、UI に引き続き表示されます。 これらの環境には、通信 API やレコードのドキュメント機能がなく、これらのオプションをテストできます。 そのため、通信 API またはレコードのドキュメント機能を必要とするオプションを選択した場合、アクションは実行されず、エラーメッセージが表示または返されます。
+
+## RDE チュートリアル
+
+AEM as a Cloud Serviceでの RDE について詳しくは、 [設定方法、使用方法、開発ライフサイクルを示すビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
 
