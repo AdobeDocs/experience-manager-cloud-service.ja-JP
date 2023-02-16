@@ -1,11 +1,11 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 リリースのリリースノート。'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 リリースのリリースノート。'
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0 リリースのリリースノート。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0 リリースのリリースノート。'
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '642'
-ht-degree: 22%
+ht-degree: 96%
 
 ---
 
@@ -23,13 +23,13 @@ ht-degree: 22%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在のリリース (2022.6.0) は 2022 年 6 月 30 日です。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新リリース（2022.6.0）のリリース日は 2022年6月30日（PT）です。
 
-次回のリリース (2022.7.0) は、2022 年 8 月 8 日に予定されています。
+次回のリリース（2022.7.0）は 2022年8月8日（PT）に予定されています。
 
 ## リリースビデオ {#release-video}
 
-2022.6.0 リリースに追加された機能の概要については、 2022 年 6 月リリースの概要ビデオをご覧ください。
+2022.6.0 リリースで追加された機能の概要については、2022年6月リリースの概要ビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/344308/?quality=12)
 
@@ -37,68 +37,68 @@ ht-degree: 22%
 
 ### の新機能[!DNL Sites] {#sites-features}
 
-* 新しい [ユーザーインターフェイス](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) は、コンテンツ管理者やコンテンツ作成者が効率的に管理（公開、非公開、コピー、移動などのアクションを実行）、検索/フィルタリング、ヘッドレスユースケース向けのコンテンツフラグメントの作成をおこなえるようになりました。
+* コンテンツ管理者やコンテンツ作成者が効率的に管理（公開、非公開、コピー、移動などのアクションを実行）、検索とフィルター、ヘッドレスユースケース向けのコンテンツフラグメントの作成を行える、新しい[ユーザーインターフェイス](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)を使用できるようになりました。
 
    ![コンテンツフラグメントコンソール](/help/release-notes/assets/cf-ui.png)
 
-* 新しい [目次コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html) は、コアコンポーネントだけでなく、すべてのコンポーネントで機能し、コンテンツページ上で ToCs が自動的にレンダリングされます。 また、Dispatcher はサーバー側でレンダリングされ、完全にキャッシュされるので、読み込みも効率的です。
+* 新しい[目次コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html?lang=ja)は、コアコンポーネントだけでなく、すべてのコンポーネントで機能し、コンテンツページの目次を自動的にレンダリングします。 また、Dispatcher はサーバー側でレンダリングされ、完全にキャッシュされるので、読み込みも効率的です。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-Experience Manager AssetsはAdobe Sensei AI 機能を今まで使用 [画像内の色を区別し、取り込み時に自動的にタグとして適用する](/help/assets/color-tag-images.md). これらのタグは、画像の色合いに基づいて、より強化された検索エクスペリエンスを可能にします。 1 ～ 40 の範囲で、画像にタグ付けされるカラーの数を設定し、後でそれらのカラーに基づいて画像を検索できます。
+Experience Manager Assets は Adobe Sensei AI 機能を使用して、[画像内の色を区別し、取り込み時に自動的にタグとして適用するようになりました](/help/assets/color-tag-images.md)。 これらのタグを使用すると、画像の色の構成に基づいて、検索エクスペリエンスを強化できます。 画像にタグ付けされるカラーの数を 1～40 の範囲で設定し、後でそれらのカラーに基づいて画像を検索できます。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### の新機能[!DNL Forms] {#forms-features}
 
-* **[アダプティブFormsとMicrosoft® Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)**:送信時にMicrosoft® Power Automate Cloud Flow を実行するようにアダプティブフォームを設定できるようになりました。 設定済みのアダプティブフォームは、キャプチャされたデータ、添付ファイルおよびレコードのドキュメントを Power Automate Cloud Flow に送信して処理します。 Microsoft® Power Automate の機能を活用しながら、カスタムのデータキャプチャエクスペリエンスを構築し、取り込んだデータに関するビジネスロジックを構築し、顧客ワークフローを自動化できます。
+* **[アダプティブフォームと Microsoft® Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)**：送信時に Microsoft® Power Automate クラウドフローを実行するようにアダプティブフォームを設定できるようになりました。 設定済みのアダプティブフォームは、キャプチャされたデータ、添付ファイルおよびレコードのドキュメントを Power Automate クラウドフローに送信して処理します。 Microsoft® Power Automate の機能を活用して、キャプチャされたデータを中心にビジネスロジックを構築し、顧客のワークフローを自動化しながら、カスタムのデータキャプチャエクスペリエンスを構築するのに役立ちます。
 
-* **アダプティブフォームを作成するためのウィザード**:ビジネスユーザーに適したウィザードを使用して、アダプティブFormsをすばやくオーサリングできます。 このウィザードでは、事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択して、アダプティブフォームを作成するためのクイックタブナビゲーションが提供されます。
+* **アダプティブフォームの作成ウィザード**：ビジネスユーザー向けの使いやすいウィザードで、アダプティブフォームをすばやく作成できます。このウィザードではクイックタブナビゲーションを使用して、アダプティブフォームを作成するための事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択できます。
 
-   ![アダプティブフォームを作成するためのウィザード](/help/release-notes/assets/wizard.png)
+   ![アダプティブフォームの作成ウィザード](/help/release-notes/assets/wizard.png)
 
 ## CIF アドオン {#cloud-services-cif}
 
 ### 新機能 {#what-is-new-cif}
 
-* より良くシンプルな概要を示す新しい製品コックピットプロパティページ
+* よりわかりやすいシンプルな概要を示す新しい製品コックピットのプロパティページ
 
-![製品コクピットのプロパティの概要](/help/assets/CIF/product_cockpit_properties_overview.png)
+![製品コックピットのプロパティの概要](/help/assets/CIF/product_cockpit_properties_overview.png)
 
-* I/O Runtime 上のサードパーティコネクタの互換性と堅牢性の向上
+* I/O Runtime でのサードパーティコネクタの互換性と堅牢性の向上
 
 * GQL クライアント設定の上書きのサポートを改善しました（例えば、カスタムキャッシュ動作を設定する）。
 
-* 複数のコマースエンドポイントが標準でサポートされるようになり、Cloud Manager を介して設定できるようになりました。 詳細は、CIF ブログを参照してください [ここ](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
+* 複数のコマースエンドポイントが標準でサポートされるようになり、Cloud Manager を介して設定できるようになりました。 詳細については、[こちら](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554)の CIF ブログを参照してください。
 
 
 ### バグ修正 {#bug-fixes-cif}
 
-* 複数値の製品ピッカーフィールドに、2 番目と追加の製品が無効と表示される
+* 複数値の製品ピッカーフィールドに、2 番目の製品と追加の製品が無効と表示されます
 
 * 製品ピッカーがコンポーネントの背後に隠れている場合があります
 
-## 参照デモアドオン {#cloud-services-demos}
+## 参照デモのアドオン {#cloud-services-demos}
 
 ### 新機能 {#what-is-new-demos}
 
-* 新しい WKND コンテンツ&amp;コマーステンプレート。WKND を拡張して、製品カタログ、買い物かご、チェックアウト、myAccount などの E2E ショッピングエクスペリエンスを実現します。 このテンプレートでは、CIF とその CIF コアコンポーネントを使用するので、CIF アドオンもインストールする必要があります。 詳細は、CIF ブログを参照してください [ここ](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
+* 新しい WKND コンテンツとコマーステンプレート。WKND を拡張して、製品カタログ、買い物かご、チェックアウト、myAccount などの E2E ショッピングエクスペリエンスを実現します。 このテンプレートでは、CIF とその CIF コアコンポーネントを使用するので、CIF アドオンもインストールする必要があります。 詳細については、[こちら](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e)の CIF ブログを参照してください。
 
 ![WKND ショップ](/help/assets/CIF/wknd_shop.png)
 
-![WKNDpdp](/help/assets/CIF/wknd_pdp.png)
+![WKND pdp](/help/assets/CIF/wknd_pdp.png)
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
 ### 新機能 {#what-is-new-foundation}
 
-* (2022.5.0)5 月のリリースノートで述べたように、レプリケーションエージェント管理画面の「ツリーを追加」オプション **分布** 」タブが削除されました。 代わりに、コンテンツのツリー階層を持つパッケージは、 [公開を管理](/help/operations/replication.md#manage-publication) または [コンテンツツリーを公開](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) ワークフロー。
+* 5月（2022.5.0）のリリースノートに記載されているように、レプリケーションエージェント管理画面の「**分布**」タブにある「ツリーを追加」オプションが削除されました。代わりに、コンテンツのツリー階層を持つパッケージは、[公開を管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーを公開](/help/operations/replication.md#manage-publication#publish-content-tree-workflow)ワークフローを使用して複製する必要があります。
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager の月次リリースの完全なリストは、[こちら](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)で確認できます。
+Cloud Manager の毎月のリリースの完全なリストを確認できます [こちら。](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## 移行ツール {#migration-tools}
 

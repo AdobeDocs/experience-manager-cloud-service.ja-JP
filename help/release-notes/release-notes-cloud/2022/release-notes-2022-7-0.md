@@ -1,13 +1,13 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.7.0 リリースのリリースノート。'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.7.0 リリースのリリースノート。'
-source-git-commit: b1c4706d2d148c136eed66b0bff6f792a89e9d8c
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.7.0 リリースのリリースノート。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.7.0 リリースのリリースノート。'
+exl-id: b339ab48-e836-4589-a573-9c50917b9280
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '958'
-ht-degree: 19%
+ht-degree: 28%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート {#release-notes}
 
@@ -57,7 +57,7 @@ ht-degree: 19%
 
 Adobe Experience Manager Assets を [MIME タイプに基づいてユーザーがアップロードできるアセットのタイプを制限します](/help/assets/configure-asset-upload-restrictions.md).
 
-![アセットのアップロード制限](/help/assets/assets/asset-upload-restrictions.png)
+![アセットアップロードの制限](/help/assets/assets/asset-upload-restrictions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -79,7 +79,7 @@ Adobe Experience Manager Assets を [MIME タイプに基づいてユーザー�
 
 -->
 
-* **[Invoke DDX - An AEM Workflow step](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**:Document Description XML (DDX) は、宣言的なマークアップ言語です。この言語の要素は、ドキュメントの構築ブロックを表します。 これらの構築ブロックには、PDFおよび XDP ドキュメントと、コメント、しおり、スタイル設定されたテキストなどのその他の要素が含まれます。 DDX ドキュメントはドキュメントのテンプレートで、結果のドキュメントに表示するソースドキュメントの必要な特性を記述します。 1 つの DDX を様々なソースドキュメントと共に使用できます。 AEMワークフローを起動ステップを使用して、ドキュメントの分解、Acrobatと XFA Formsの作成と変更、および [DDX リファレンス](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) ドキュメント。
+* **[Invoke DDX - An AEM Workflow step](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**:Document Description XML (DDX) は、宣言的なマークアップ言語です。この言語の要素は、ドキュメントの構築ブロックを表します。 この構築ブロックには、PDF ドキュメント、XDP ドキュメントおよびその他の要素（コメント、しおり、スタイルを設定したテキストなど）が含まれます。DDX ドキュメントはドキュメントのテンプレートで、結果のドキュメントに表示するソースドキュメントの必要な特性を記述します。 1 つの DDX を様々なソースドキュメントに使用できます。AEMワークフローを起動ステップを使用して、ドキュメントの分解、Acrobatと XFA Formsの作成と変更、および [DDX リファレンス](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) ドキュメント。
 
 * **[PDF/A に変換 — AEMワークフローステップ](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**:PDF/A は、ドキュメントのコンテンツを長期保存するためのアーカイブ形式で、すべてのフォントが埋め込まれ、ファイルが非圧縮になります。 これで、PDF/A に変換ステップを使用して、任意の形式のドキュメントまたはファイルをPDF/A 形式に変換できます。
 
@@ -88,13 +88,13 @@ Adobe Experience Manager Assets を [MIME タイプに基づいてユーザー�
 
 ### 新機能 {#what-is-new-cif}
 
-* 製品カタログのエンリッチメントでAEMページがサポートされるようになりました。 これにより、作成者はページと製品の関連付けを管理できます。
+* 製品カタログのエンリッチメントで AEM ページがサポートされるようになりました。 これにより、作成者はページと製品の関連付けを管理できます。
 
 * CIF コアコンポーネントの様々な改善点
 
 ### バグ修正 {#bug-fixes-cif}
 
-* クライアント側の価格取得にログイントークンを追加
+* クライアントサイドの価格取得にログイントークンを追加
 
 * データレイヤーのページコンポーネントが正しくありません
 
@@ -113,7 +113,7 @@ Adobe Experience Manager Assets を [MIME タイプに基づいてユーザー�
 
 ### [!DNL Experience Manager] プレリリースチャネルで利用できる新機能 {#prerelease-features-foundation}
 
-* AEM as a Cloud Serviceが統合シェルと統合され、ユーザーエクスペリエンスが向上し、他のすべてのExperience Cloudアプリケーションと統合されました。 参照： [統合シェルでas a Cloud ServiceのAEMを使用](/help/overview/aem-cloud-service-on-unified-shell.md) を参照してください。
+* AEM as a Cloud Service が統合シェルと統合され、ユーザーエクスペリエンスが向上し、他のすべての Experience Cloud アプリケーションと統合されました。詳しくは、[統合シェル上の AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) を参照してください。
 
 ## Adobeラーニングマネージャーコネクタ {#learn-manage}
 
@@ -121,7 +121,7 @@ Adobe Experience Manager Assets を [MIME タイプに基づいてユーザー�
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager の月次リリースの完全なリストは、[こちら](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)で確認できます。
+Cloud Manager の毎月のリリースの完全なリストを確認できます [こちら。](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## 移行ツール {#migration-tools}
 

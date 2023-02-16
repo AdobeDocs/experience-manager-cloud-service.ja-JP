@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 リリースのリリースノート。'
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 100%
@@ -62,7 +62,7 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 
 * 混乱を避けるために、環境の詳細ページのパブリッシュ AEM とパブリッシュ Dispatcher のセグメント行が統合されました。
 
-   ![](/help/implementing/cloud-manager/release-notes-cloud-manager/assets/aem-dispatcher.png)
+   ![](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
 * `damAssetLucene` インデックスの構造を検証するための新しいコード品質ルールが追加されました。詳しくは、[カスタム DAM Asset Lucene Oak インデックス](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check)を参照してください。
 
@@ -133,7 +133,7 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 
 * **Variable Data Externalizer**：AEM ワークフロー変数のデータを、組織で管理される外部ストレージシステムに保存できます。
 
-ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てに電子メールを送信します。
+ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てにメールを送信します。
 
 ### [!DNL Forms] で修正されたバグ  {#forms-bugs-fixed}
 

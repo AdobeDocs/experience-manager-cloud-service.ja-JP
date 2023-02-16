@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 リリースのリリースノート。'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '1153'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 97%
 
    * [画像へのデジタル透かしの追加](/help/assets/watermark-assets.md)の設定。
 
-* 管理者は、大量のダウンロードに備えて電子メールサービスを設定できるようになりました。これにより、ユーザーは [!DNL Experience Manager Assets] インターフェイスから[大量ダウンロード時の電子メール通知を有効にする](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads)ことができます。ダウンロード処理の完了時に、アーカイブされた zip フォルダーのダウンロードリンクを記載した電子メール通知がユーザーに届きます。
+* 管理者は、大量のダウンロードに備えてメールサービスを設定できるようになりました。これにより、ユーザーは [!DNL Experience Manager Assets] インターフェイスから[大量ダウンロード時のメール通知を有効にする](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads)ことができます。ダウンロード処理の完了時に、アーカイブされた zip フォルダーのダウンロードリンクを記載したメール通知がユーザーに届きます。
 
 * [公開を管理](/help/assets/manage-publication.md)機能が強化され、ユーザーインターフェイスが改善されました。ユーザーは、選択した宛先にコンテンツを公開または選択した宛先からコンテンツを非公開にしたり、DAM リポジトリー全体から公開リストに[コンテンツを追加](/help/assets/manage-publication.md#add-content)したり、[フォルダー設定を含めて](/help/assets/manage-publication.md#include-folder-settings)選択したフォルダーのコンテンツを公開しフィルターを適用したり、後の日時に[公開をスケジュール](/help/assets/manage-publication.md#publish-assets-later)したりできます。
 
@@ -94,7 +94,7 @@ ht-degree: 97%
 
    ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
-* サーバー間 API 呼び出しの認証に使用される資格情報（例えば、GraphQL API 要求の場合）を、開発者コンソールからセルフサービス方式で有効期限前に更新できるようになりました。 詳しくは、[ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)を参照してください。
+* サーバー間 API 呼び出しの認証に使用される資格情報 ( 例えば、GraphQL API リクエストの場合 ) は、開発者コンソールからセルフサービス方式で有効期限が切れる前に更新できるようになりました。 詳しくは、[ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)を参照してください。
 
 * 以前に有効にしていなかったバージョンのパージと監査ログのパージのメンテナンスタスクが、新しい環境で有効になります。関連する値を、[メンテナンスタスク](/help/operations/maintenance.md)記事で参照してください。
 
@@ -102,7 +102,7 @@ ht-degree: 97%
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager の月次リリースの完全なリストは、[こちら](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)で確認できます。
+Cloud Manager の毎月のリリースの完全なリストを確認できます [こちら。](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## コンテンツ転送ツール {#ctt-release}
 

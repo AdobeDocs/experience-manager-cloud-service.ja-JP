@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 リリースのリリースノート。'
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -97,7 +97,7 @@ Experience Manager Assets は、Adobe Sensei AI 機能を使用して、[画像�
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager の月次リリースの完全なリストは、[こちら](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)で確認できます。
+Cloud Manager の毎月のリリースの完全なリストを確認できます [こちら。](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## 移行ツール {#migration-tools}
 

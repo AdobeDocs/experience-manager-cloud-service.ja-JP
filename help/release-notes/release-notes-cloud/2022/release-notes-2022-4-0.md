@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.4.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.4.0 リリースのリリースノート。'
 exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
-source-git-commit: f42cf1b82f7cf42be2afd30d69d71354fe0afeb3
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service の SDK ビルドアナライザー Maven プラグイン
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager の月次リリースの完全なリストは、[こちら](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)で確認できます。
+Cloud Manager の毎月のリリースの完全なリストを確認できます [こちら。](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## 移行ツール {#migration-tools}
 
