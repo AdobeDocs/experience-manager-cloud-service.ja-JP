@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの基本を学ぶ
 description: コンテンツ転送ツールの基本を学ぶ
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: eacd418ead2cc754a055449a99037b6541f55f6a
+source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 93%
+source-wordcount: '1343'
+ht-degree: 96%
 
 ---
 
@@ -23,6 +23,8 @@ ht-degree: 93%
 
 コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)を使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。最新バージョンの詳細については、「[リリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja)」を参照してください。
 
+サポートされるのはバージョン 2.0.0 以降のみで、最新バージョンを使用することをお勧めします。
+
 >[!NOTE]
 >[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)からコンテンツ転送ツールをダウンロードします。
 
@@ -38,7 +40,7 @@ ht-degree: 93%
 * ユーザーマッピング IO エンドポイント：`usermanagement.adobe.io`
 
 >[!NOTE]
->次のエラーが原因で抽出が失敗した場合：&quot;javax.net.ssl.SSLHandshakeException:sun.security.validator.ValidatorException:PKIX パスの構築に失敗しました：sun.security.provider.certpath.SunCertPathBuilderException:リクエストされたターゲットへの有効な証明書パスが見つかりません」。このパスは、関連する CA 証明書をインポートすることで解決できます。
+>エラー： 「javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX パスのビルドに失敗しました: sun.security.provider.certpath.SunCertPathBuilderException: リクエストされたターゲットへの有効な証明書パスが見つかりません」が原因で抽出に失敗した場合は、関連する CA 証明書を読み込むことで問題を解決できます。
 
 ### SSL ログを有効にする {#enable-ssl-logging}
 
@@ -93,7 +95,7 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 
    >[!NOTE]
    >
-   >抽出キーを使用すると、移行元の AEM 環境から移行セットに安全に接続できます。このキーは、パスワードと同じ注意を払って扱ってください。また、電子メールのような安全でないメディアでは、キーを共有しないでください。
+   >抽出キーを使用すると、移行元の AEM 環境から移行セットに安全に接続できます。このキーは、パスワードと同じ注意を払って扱ってください。また、メールのような安全でないメディアでは、キーを共有しないでください。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam4.png)
 
@@ -107,7 +109,7 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 
 Cloud Acceleration Manager で作成した移行セットを入力するには、最新バージョンのコンテンツ転送ツールを移行元の Adobe Experience Manager（AEM）インスタンスにインストールする必要があります。移行セットの入力方法については、この節を参照してください。
 
-1. ソースAdobe Experience Managerインスタンスに最新バージョンのコンテンツ転送ツールをインストールしたら、に移動します。 **運用 — コンテンツ移行**
+1. 移行元の Adobe Experience Manager インスタンスに最新バージョンのコンテンツ転送ツールをインストールしたら、**運用 - コンテンツ移行**&#x200B;に移動します。
 
 1. 「**移行セットを作成**」をクリックします。
 

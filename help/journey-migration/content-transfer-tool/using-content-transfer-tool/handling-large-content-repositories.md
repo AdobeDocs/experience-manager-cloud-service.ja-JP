@@ -2,10 +2,10 @@
 title: 大規模なコンテンツリポジトリーの処理
 description: この節では、大規模なコンテンツリポジトリーの処理について説明します
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 1a2ff747361bb0def718bee2e8eb0a1055b8efcf
+source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1771'
+ht-degree: 97%
 
 ---
 
@@ -100,8 +100,7 @@ Azure portal の既存のコンテナープロパティページから、「**�
 >最新のリリースバージョンの CTT を使用する必要があります。
 
 最新の CTT リリースには Amazon S3、Azure Blob Storage、ファイルデータストアの AzCopy のサポートが含まれています。
-CTT の最新リリースは、[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)ポータルからダウンロードできます。
-
+CTT の最新リリースは、[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)ポータルからダウンロードできます。サポートされるのはバージョン 2.0.0 以降のみであり、最新バージョンを使用することをお勧めします。
 
 ### 3. azcopy.config ファイルを設定する {#configure-azcopy-config-file}
 
