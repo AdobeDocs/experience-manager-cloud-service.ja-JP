@@ -4,10 +4,10 @@ description: ワークフローインスタンスの管理方法について説�
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: c03959a9acc22a119b2a4c8c473abc84b0b9bf0d
+source-git-commit: 594efd18c7358505c859ca7e6269a3fc5e517926
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 100%
+source-wordcount: '1165'
+ht-degree: 95%
 
 ---
 
@@ -63,6 +63,12 @@ ht-degree: 100%
 
    ![wf-97-1](/help/sites-cloud/administering/assets/wf-97-1.png)
 
+   >[!NOTE]
+   >
+   >
+   >ワークフローを終了または中止するには、参加者ステップなど、ユーザーの操作を待っている状態にある必要があります。 現在ジョブを実行中のワークフロー（実行中のアクティブなスレッド）を中止しようとすると、予期した結果が生じない場合があります。
+
+
 ## アーカイブされたワークフローの表示 {#viewing-archived-workflows}
 
 1. ナビゲーションを使用して、**ツール**／**ワークフロー**&#x200B;を選択します。
@@ -76,6 +82,7 @@ ht-degree: 100%
    >
    >* 「**終了**」アクションが使用された場合
    >* ワークフローの対象となるページが（強制的に）削除されたことによって、ワークフローが終了した場合
+
 
 
 1. 特定の項目を選択し、「**履歴を開く**」で詳細を確認します。
