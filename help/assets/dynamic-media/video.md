@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d711057024e62aab00d76f40a729ee59590bbb59
+source-git-commit: 1fb28674df6ea45589d3b44237edfb51ef167756
 workflow-type: tm+mt
 source-wordcount: '10264'
 ht-degree: 85%
@@ -1398,8 +1398,7 @@ dependency>
 </dependency> 
 ```
 
-+++
-**サンプルサーブレット**
++++**サンプルサーブレット**
 
 ```java
 @Component
@@ -1476,8 +1475,7 @@ public class ManifestServlet extends HttpServlet {
 
 +++
 
-+++
-**サーブレットの応答クラス**
++++**サーブレットの応答クラス**
 
 ```java
 public class ManifestUrl extends VideoResponse { 
@@ -1505,9 +1503,7 @@ public abstract class VideoResponse {
 
 +++
 
-
-+++
-**サーブレットで参照される定数ファイル**
++++**サーブレットで参照される定数ファイル**
 
 ```java
 public final class Constants { 
@@ -1524,8 +1520,7 @@ public final class Constants {
 
 +++
 
-+++
-**ServletContext**
++++**ServletContext**
 
 上記のサーブレットを、 `servletContext`. 次に、 `servletContext`.
 
