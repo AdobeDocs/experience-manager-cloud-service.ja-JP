@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 4b51ace98d547a6a31f30d6348508a71266dbfed
+source-git-commit: 499fcda8ab6639de8f41383b1334a1e92aa52656
 workflow-type: tm+mt
-source-wordcount: '10300'
-ht-degree: 85%
+source-wordcount: '10318'
+ht-degree: 84%
 
 ---
 
@@ -157,9 +157,9 @@ Dynamic Media の HTML5 ビデオビューアプリセットは堅牢なビデ�
 
 ビューアの再生側では、ブラウザーのビデオ機能が自動的に検出されます。 次に、HLS または DASH（アダプティブビデオストリーミングとも呼ばれる）を使用してビデオを配信します。 または、これらの配信方法が使用できない場合は、HTML5 プログレッシブが代わりに使用されます。
 
->[!IMPORTANT]
+>[!NOTE]
 >
->DASH を表示または使用するには、まずアカウントのAdobeテクニカルサポートが有効にする必要があります。 詳しくは、 [アカウントで DASH を有効にする](#enable-dash).)
+>ビデオに DASH を使用するには、まずアカウントのAdobeテクニカルサポートが有効にする必要があります。 詳しくは、 [アカウントで DASH を有効にする](#enable-dash).)
 
 HTML5 と CSS を使用して再生コンポーネントを設計できる機能を 1 つのプレーヤーに統合できます。埋め込み再生が可能で、ブラウザーの機能に応じて、アダプティブストリーミングとプログレッシブストリーミングを使用できます。 これらの結果、リッチメディアコンテンツの配信範囲をデスクトップユーザーとモバイルユーザーの両方に拡大し、ビデオエクスペリエンスを確実に効率化することができます。
 
@@ -174,9 +174,9 @@ HTML5 と CSS を使用して再生コンポーネントを設計できる機能
 
 ただし、Experience Manager6.3 以降では、DM ゲートウェイサービスの URL も常に HTTPS を使用するので、ビデオは HTTPS（つまり、HLS または DASH）経由でストリーミングされるようになりました。 このデフォルトの動作はユーザーに影響しません。つまり、ブラウザーでサポートされていない場合を除き、ビデオストリーミングは常に HTTPS 上で行われます（以下の表を参照してください）。
 
->[!IMPORTANT]
+>[!NOTE]
 >
->DASH を表示または使用するには、まずアカウントのAdobeテクニカルサポートが有効にする必要があります。 詳しくは、 [アカウントで DASH を有効にする](#enable-dash).)
+>ビデオに DASH を使用するには、まずアカウントのAdobeテクニカルサポートが有効にする必要があります。 詳しくは、 [アカウントで DASH を有効にする](#enable-dash).)
 
 したがって、次のようになります。
 
@@ -256,7 +256,7 @@ HLS は、アダプティブビデオストリーミングの Apple 標準で、
 
 >[!IMPORTANT]
 >
->*DASH を表示または使用するには、まずアカウントのAdobeテクニカルサポートが有効にする必要があります。 詳しくは、 [アカウントで DASH を有効にする](#enable-dash).)
+>*ビデオに DASH を使用するには、まずアカウントのAdobeテクニカルサポートが DASH を有効にする必要があります。 詳しくは、 [アカウントで DASH を有効にする](#enable-dash).)
 
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
@@ -1385,9 +1385,13 @@ String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean
 * `IOException` Dynamic Mediaへの接続で問題が発生した場合にログに記録されます。
 * `UnsupportedOperationException` がログに記録されるのは、 `manifestType` 渡されたパラメータ `ManifestType.DASH`の場合、ビデオは DASH 形式で処理されていません。
 
-以下は、 *HTTPWhiteBoard* 仕様。
+以下は、 *HTTPWhiteBoard* 仕様。 コード構文の各タブを選択します。
 
-**pom.xml に依存関係を追加**
+>[!BEGINTABS]
+
+>[!TAB pom.xml に依存関係を追加]
+
++++**pom.xml に依存関係を追加**
 
 ```java
 dependency> 
@@ -1398,7 +1402,7 @@ dependency>
 </dependency> 
 ```
 
->[!BEGINTABS]
++++
 
 >[!TAB サンプルサーブレット]
 
@@ -1639,6 +1643,19 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 +++
 
 >[!ENDTABS]
+
++++**pom.xml に依存関係を追加**
+
+```java
+dependency> 
+     <groupId>com.day.cq.dam</groupId> 
+     <artifactId>cq-scene7-api</artifactId> 
+     <version>5.12.64</version> 
+     <scope>provided</scope> 
+</dependency> 
+```
+
++++
 
 +++**サンプルサーブレット**
 
