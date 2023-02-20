@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 499fcda8ab6639de8f41383b1334a1e92aa52656
+source-git-commit: f3d8f0a7a5c41ecca7bced1d5de9017ada422f7a
 workflow-type: tm+mt
-source-wordcount: '10318'
+source-wordcount: '10322'
 ht-degree: 84%
 
 ---
@@ -204,7 +204,7 @@ HLS は、アダプティブビデオストリーミングの Apple 標準で、
   <tr>
    <td>デスクトップ</td>
    <td>Internet Explorer 11+</td>
-   <td>Windows® 8 および Windows® 10 では、HLS が要求されるたびに HTTPS を強制的に使用します。既知の制約事項：このブラウザー／オペレーティングシステムの組み合わせでは、HLS での HTTP は機能しません。<br /> <br /> Windows® 7 - プログレッシブダウンロード。HTTP プロトコルと HTTPS プロトコルの選択には標準的なロジックが使用されます。</td>
+   <td>Windows® 8 および Windows® 10 - DASH または HLS が要求された場合は必ず HTTPS を強制的に使用します。 既知の制限事項：このブラウザー/オペレーティングシステムの組み合わせでは、DASH または HLS での HTTP は機能しません<br /> <br /> Windows® 7 — プログレッシブダウンロード。 HTTP プロトコルと HTTPS プロトコルの選択には標準的なロジックが使用されます。</td>
   </tr>
   <tr>
    <td>デスクトップ</td>
@@ -445,8 +445,7 @@ DASH を使用するリクエストを開始します。お使いのアカウン
 1. Adobeカスタマーサポートにより、リクエストの送信順に基づいて DASH カスタマー待機リストに追加されます。
 1. Adobeがリクエストを処理する準備が整うと、カスタマーサポートから連絡があり、DASH を有効にするための目標日を調整して設定できます。
 1. 完了後、カスタマーサポートから通知があります。
-1. を [ビデオビューアプリセット](#creating-a-new-viewer-preset) いつも通り
-
+1. を [ビデオビューアプリセット](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) いつも通り
 
 ## YouTube へのビデオの公開 {#publishing-videos-to-youtube}
 
