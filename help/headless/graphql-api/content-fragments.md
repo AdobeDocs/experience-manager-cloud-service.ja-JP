@@ -3,9 +3,9 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 17b0604cb192a375c3097255812c89caa8580d5b
+source-git-commit: e156ed7348815e02c942cb8feace70c675956752
 workflow-type: tm+mt
-source-wordcount: '4173'
+source-wordcount: '4203'
 ht-degree: 58%
 
 ---
@@ -556,6 +556,10 @@ GraphQL クエリでフィルタリングを使用して、特定のデータを
 
 ## 並べ替え {#sorting}
 
+>[!NOTE]
+>
+>最高のパフォーマンスを得るには、以下を考慮してください。 [GraphQLフィルタリングでのページングと並べ替えのためのコンテンツフラグメントの更新](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
+
 この機能を使用すると、指定したフィールドに従ってクエリ結果を並べ替えることができます。
 
 並べ替え条件：
@@ -593,8 +597,6 @@ query {
 }
 ```
 
-<!-- to be included? -->
-
 ネストされたフラグメント内のフィールドでは、 `nestedFragmentname.fieldname`.
 
 >[!NOTE]
@@ -620,6 +622,10 @@ query {
 ```
 
 ## ページング {#paging}
+
+>[!NOTE]
+>
+>最高のパフォーマンスを得るには、以下を考慮してください。 [GraphQLフィルタリングでのページングと並べ替えのためのコンテンツフラグメントの更新](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
 
 この機能を使用すると、リストを返すクエリタイプに対してページングを実行できます。 次の 2 つの方法が用意されています。
 
