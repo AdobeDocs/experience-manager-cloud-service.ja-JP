@@ -4,10 +4,10 @@ description: ' [!DNL Experience Manager Forms] を使用したアダプティブ
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
+source-git-commit: 0d158082973cd0f0745f5e3f0391119e585fc743
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 49%
+source-wordcount: '1458'
+ht-degree: 47%
 
 ---
 
@@ -29,7 +29,8 @@ ht-degree: 49%
 
 アダプティブフォームを作成するには、以下が必要です。
 
-* **環境でのアダプティブFormsコアコンポーネントの有効化**:AEM Archetype バージョン 40 以降ベースのプログラムを使用している場合、お使いの環境でコアコンポーネントが自動的に有効になります。 古いバージョンのアーキタイプに基づいてAEM Formsas a Cloud Service環境でアダプティブFormsコアコンポーネントを有効にするには、を参照してください。 [環境でのアダプティブFormsコアコンポーネントの有効化](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)
+* **環境でのアダプティブFormsコアコンポーネントの有効化**:新しいプログラムを作成すると、お使いの環境で既にアダプティブFormsコアコンポーネントが有効になっています。 アーキタイプ 39 以前に基づくFormsas a Cloud Service環境がある場合、 [環境でのアダプティブFormsコアコンポーネントの有効化](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). お使いの環境に対してコアコンポーネントを有効にすると、 **アダプティブForms（コアコンポーネント）** テンプレートとキャンバステーマが環境に追加されます。
+
 * **アダプティブフォームテンプレート**：テンプレートは基本構造を提供し、アダプティブフォームのアピアランス（レイアウトとスタイル）を定義します。これには、特定のプロパティやコンテンツ構造を有するフォーマット済みのコンポーネントが含まれます。また、テーマと送信アクションを定義するオプションも提供されます。 テーマは、ルックアンドフィールと送信アクションを定義し、アダプティブフォームの送信時に実行するアクションを定義します。 例えば、収集したデータをデータソースに送信する場合などです。 クラウドサービスは、空のという名前の OOTB テンプレートを提供します。
 
    * この `blank` すべての新しいAEM Formsas a Cloud Serviceプログラムに、テンプレートが含まれます。
@@ -55,6 +56,11 @@ ht-degree: 49%
    ![コアコンポーネントテンプレート](/help/forms/assets/core-components-template.png)
 
    テンプレートを選択すると、テンプレートで指定されたテーマと送信アクションが自動選択され、 **[!UICONTROL 作成]** 」ボタンが有効になっている。 「**[!UICONTROL スタイル]**」または「**[!UICONTROL 送信]**」タブを使用して、別のテーマや送信アクションを選択することができます。 選択したテンプレートにテーマが指定されていない場合、「作成」ボタンは無効のままです。 「**[!UICONTROL スタイル]**」タブに進み、テーマを手動で選択することができます。
+
+   >[!NOTE]
+   >
+   >
+   > がない場合は、 **アダプティブForms（コアコンポーネント）** 環境のテンプレート [環境でのアダプティブFormsコアコンポーネントの有効化](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). お使いの環境に対してコアコンポーネントを有効にすると、 **アダプティブForms（コアコンポーネント）** テンプレートが環境に追加されました。
 
 1. 内 **[!UICONTROL スタイル]** タブで、テーマを選択します。
 
