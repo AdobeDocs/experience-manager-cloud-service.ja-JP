@@ -2,10 +2,10 @@
 title: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境の設定
 description: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境の設定
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: c7b4907a2d4dbecf03ac5b51376fb534096f5212
+source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
 workflow-type: tm+mt
-source-wordcount: '2704'
-ht-degree: 100%
+source-wordcount: '2974'
+ht-degree: 89%
 
 ---
 
@@ -196,9 +196,9 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
    > * Apple macOS の場合は、ローカルの AEM オーサーインスタンスを格納したフォルダーを許可リストに加えます。
    >
    > * Windows 用 Docker Desktop は、Hyper-V
-   > （レガシー）と WSL2（最新）という 2 つのバックエンドをサポートします。ファイル共有は、WSL2（最新）を使用する場合、
-   > 自動的に Docker によって管理されます。Hyper-V（レガシー）を
-   > 使用している間に、ファイル共有を明示的に構成します。
+      > （レガシー）と WSL2（最新）という 2 つのバックエンドをサポートします。ファイル共有は、WSL2（最新）を使用する場合、
+      > 自動的に Docker によって管理されます。Hyper-V（レガシー）を
+      > 使用している間に、ファイル共有を明示的に構成します。
 
 
 1. オーサーインスタンスとパブリッシュインスタンスに並行して、aem-sdk などのフォルダーを作成します。例：C:\aem-sdk
@@ -240,8 +240,7 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
 
 >[!NOTE]
 >
-> Microsoft® Dynamics 365 および Salesforce フォームデータモデルを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 30 以降に基づくプロジェクトをセットアップします。
-> Tranquil、Urbane、Ultramarine テーマを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 32 以降に基づくプロジェクトをセットアップします。
+> Microsoft® Dynamics 365 および Salesforce フォームデータモデルを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 30 以降に基づくプロジェクトをセットアップします。Tranquil、Urbane、Ultramarine テーマを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 32 以降に基づくプロジェクトをセットアップします。
 
 プロジェクトを設定するには、以下を実行します。
 
@@ -252,19 +251,21 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
 **Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
 
-1. **[!DNL Experience Manager Forms] as a [Cloud Service] プロジェクトを作成する：**[AEM アーキタイプ 32](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-32) 以降に基づいて [!DNL Experience Manager Forms] as a [Cloud Service] プロジェクトを作成します。このアーキタイプは、開発者が [!DNL AEM Forms] as a Cloud Service の開発を容易に開始するのに役立ちます。また、すぐに使い始めるのに役立つテーマとテンプレートのサンプルも含まれています。
+1. **の作成 [!DNL Experience Manager Forms] as a [Cloud Service] プロジェクト：** の作成 [!DNL Experience Manager Forms] as a [Cloud Service] 最新に基づくプロジェクト [AEM Archetype](https://github.com/adobe/aem-project-archetype) または後で。 このアーキタイプは、開発者が [!DNL AEM Forms] as a Cloud Service の開発を容易に開始するのに役立ちます。また、すぐに使い始めるのに役立つテーマとテンプレートのサンプルも含まれています。
 
    コマンドプロンプトを開き、以下のコマンドを実行して [!DNL Experience Manager Forms] as a Cloud Service プロジェクトを作成します。
 
    ```shell
-   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y"
+   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y" includeFormsheadless="y"    
    ```
 
-   上記のコマンドで `appTitle`、`appId`、`groupId` を変更し、環境に反映します。
+   上記のコマンドで `appTitle`、`appId`、`groupId` を変更し、環境に反映します。また、includeFormsenrollment、includeFormscommunications および includeFormsheadless の値をに設定します。 `y` または `n` ライセンスと要件に応じて異なります。 includeFormsheadless は、コアコンポーネントに基づくアダプティブFormsの作成に必須です。
 
-   * `includeFormsenrollment=y` オプションを使用して、アダプティブフォームの作成に必要なフォーム固有の設定、テーマ、テンプレート、コアコンポーネントおよび依存関係を含めます。フォームポータルを使用している場合、`includeExamples=y` オプションを設定します。これにより、フォームポータルのコアコンポーネントがプロジェクトに追加されます。
+   * `includeFormsenrollment=y` オプションを使用して、アダプティブフォームの作成に必要なフォーム固有の設定、テーマ、テンプレート、コアコンポーネントおよび依存関係を含めます。フォームポータルを使用している場合、`includeExamples=y` オプションを設定します。また、Forms Portal のコアコンポーネントもプロジェクトに追加されます。
 
-   * `includeFormscommunications=y` オプションを使用して、Forms コアコンポーネントとカスタマーコミュニケーション機能を含めるために必要な依存関係を含めます。
+   * 以下を使用： `includeFormscommunications=y` 顧客コミュニケーション機能を組み込むために必要なFormsコアコンポーネントと依存関係を含めるオプション。
+
+   * 以下を使用： `includeFormsheadless` ヘッドレスアダプティブFormsの作成に必要なアーティファクトとライブラリを追加するオプション。
 
 1. プロジェクトをローカル開発環境にデプロイします。以下のコマンドを使用して、ローカル開発環境にデプロイできます
 
@@ -329,6 +330,101 @@ Dispatcher を設定する詳細な手順については、「[ローカル Disp
 
 ローカル開発環境の準備が整いました。
 
+## 既存のAEMアーキタイプベースのプロジェクトに対するアダプティブFormsコアコンポーネントの有効化 {#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project}
+
+AEM Forms as a Cloud Service用にAEM Archetype バージョン 40 以降ベースのプログラムを使用している場合、お使いの環境でコアコンポーネントが自動的に有効になります。
+
+古いバージョンのアーキタイプに基づいてAEM Formsas a Cloud Service環境でアダプティブFormsコアコンポーネントを有効にするには、 WCM コアコンポーネントの例アーティファクトとFormsコアコンポーネントのアーティファクト（例を含む）の両方をプロジェクトに埋め込みます。
+
+1. プレーンテキストコードエディターでAEM Archetype プロジェクトフォルダーを開きます。 例えば、VS Code です。
+
+1. ローカル環境でAEM Archetype プロジェクトの最上位の.pom ファイル（親 pom）を開き、次のプロパティをファイルに追加して保存します。
+
+   ```XML
+   <properties>
+       <core.forms.components.version>2.0.4</core.forms.components.version> <!-- Replace the version with the latest released version at https://github.com/adobe/aem-core-forms-components/tags -->
+       <core.wcm.components.version>2.21.2</core.wcm.components.version>
+   </properties>
+   ```
+
+   の最新バージョンの `core.forms.components` および `core.wcm.components`, check [コアコンポーネントのドキュメント](https://github.com/adobe/aem-core-forms-components).
+
+1. トップレベル（親） ppm.xml ファイルの dependencies セクションに、次の依存関係を追加します。
+
+   ```XML
+       <!-- Forms Core Component Dependencies -->
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-core</artifactId>
+                   <version>${core.forms.components.version}</version>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-apps</artifactId>
+                   <version>${core.forms.components.version}</version>
+                   <type>zip</type>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-af-core</artifactId>
+                   <version>${core.forms.components.version}</version>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-af-apps</artifactId>
+                   <version>${core.forms.components.version}</version>
+                   <type>zip</type>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-examples-apps</artifactId>
+                   <type>zip</type>
+                   <version>${core.forms.components.version}</version>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-examples-content</artifactId>
+                   <type>zip</type>
+                   <version>${core.forms.components.version}</version>
+               </dependency>
+       <!-- End of AEM Forms Core Component Dependencies -->
+   ```
+
+1. all/pom.xmlファイルを開き、次の依存関係を追加して、アダプティブFormsコアコンポーネントアーティファクトをAEMアーキタイププロジェクトに追加します。
+
+   ```XML
+       <dependency>
+           <groupId>com.adobe.aem</groupId>
+           <artifactId>core-forms-components-af-apps</artifactId>
+           <type>zip</type>
+       </dependency>
+       <dependency>
+           <groupId>com.adobe.aem</groupId>
+           <artifactId>core-forms-components-examples-apps</artifactId>
+           <type>zip</type>
+       </dependency>
+       <dependency>
+           <groupId>com.adobe.aem</groupId>
+           <artifactId>core-forms-components-examples-content</artifactId>
+           <type>zip</type>
+       </dependency>
+   ```
+
+   >[!NOTE]
+   次のアダプティブFormsコアコンポーネントアーティファクトがプロジェクトに含まれていないことを確認します。
+   `<dependency>`
+   `<groupId>com.adobe.aem</groupId>`
+   `<artifactId>core-forms-components-apps</artifactId>`
+   `</dependency>`
+   および
+   `<dependency>`
+   `<groupId>com.adobe.aem</groupId>`
+   `<artifactId>core-forms-components-core</artifactId>`
+   `</dependency>`
+
+1. [パイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja). パイプラインが正常に実行されると、お使いの環境でアダプティブFormsコアコンポーネントが有効になります。 また、アダプティブForms（コアコンポーネント）テンプレートとキャンバステーマが、Formsas a Cloud Service環境に追加されます。
+
+
 ## ローカル開発環境のアップグレード {#upgrade-your-local-development-environment}
 
 SDK を新しいバージョンにアップグレードするには、ローカルの開発環境全体を置き換える必要があり、その結果、ローカルリポジトリー内のコード、設定およびコンテンツがすべて失われます。確実に、破棄すべきでないコード、設定またはコンテンツが Git に安全にコミットされるか、ローカル Experience Manager インスタンスから CRX パッケージとして書き出されるようにします。
@@ -383,7 +479,7 @@ For information about troubleshooting, stopping local AEM environment, run modes
    * /conf/global/settings/wcm
    * /var/workflow/models
    * /conf/global/settings/workflow
-1. ローカル開発環境から電子メール設定、送信、事前入力アクションコードを書き出します。これらの設定と構成を書き出すには、以下のフォルダーとファイルのコピーをローカル開発環境上に作成します。
+1. ローカル開発環境からメール設定、送信、事前入力アクションコードを書き出します。これらの設定と構成を書き出すには、以下のフォルダーとファイルのコピーをローカル開発環境上に作成します。
 
    * `[Archetype Project in Cloud Service Git]/core/src/main/java/com/<program name>/core/service`
    * `[Archetype Project in Cloud Service Git] /core/src/main/java/com/<program name>/core/servlets/FileAttachmentServlet.java`
@@ -400,7 +496,7 @@ For information about troubleshooting, stopping local AEM environment, run modes
 
 1. 編集可能なテンプレート、クラウド設定、ワークフローモデルを読み込みます。前述のすべての項目を新しい SDK 環境に読み込むには、これらの項目を含む CRX パッケージを新しい SDK 環境に読み込みます。
 
-1. ローカル開発環境から、電子メール設定、送信、事前入力アクションのコードを読み込みます。これらの設定と構成を読み込むには、古いアーキタイププロジェクトから新しいアーキタイププロジェクトに以下のファイルを配置します。
+1. ローカル開発環境から、メール設定、送信、事前入力アクションのコードを読み込みます。これらの設定と構成を読み込むには、古いアーキタイププロジェクトから新しいアーキタイププロジェクトに以下のファイルを配置します。
 
    * `[Archetype Project in Cloud Service Git]/core/src/main/java/com/<program name>/core/service`
    * `[Archetype Project in Cloud Service Git] /core/src/main/java/com/<program name>/core/servlets/FileAttachmentServlet.java`

@@ -4,10 +4,10 @@ description: ' [!DNL Experience Manager Forms] を使用したアダプティブ
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
 workflow-type: tm+mt
-source-wordcount: '1349'
-ht-degree: 51%
+source-wordcount: '1406'
+ht-degree: 49%
 
 ---
 
@@ -29,6 +29,7 @@ ht-degree: 51%
 
 アダプティブフォームを作成するには、以下が必要です。
 
+* **環境でのアダプティブFormsコアコンポーネントの有効化**:AEM Archetype バージョン 40 以降ベースのプログラムを使用している場合、お使いの環境でコアコンポーネントが自動的に有効になります。 古いバージョンのアーキタイプに基づいてAEM Formsas a Cloud Service環境でアダプティブFormsコアコンポーネントを有効にするには、を参照してください。 [環境でのアダプティブFormsコアコンポーネントの有効化](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)
 * **アダプティブフォームテンプレート**：テンプレートは基本構造を提供し、アダプティブフォームのアピアランス（レイアウトとスタイル）を定義します。これには、特定のプロパティやコンテンツ構造を有するフォーマット済みのコンポーネントが含まれます。また、テーマと送信アクションを定義するオプションも提供されます。 テーマは、ルックアンドフィールと送信アクションを定義し、アダプティブフォームの送信時に実行するアクションを定義します。 例えば、収集したデータをデータソースに送信する場合などです。 クラウドサービスは、空のという名前の OOTB テンプレートを提供します。
 
    * この `blank` すべての新しいAEM Formsas a Cloud Serviceプログラムに、テンプレートが含まれます。
