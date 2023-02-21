@@ -1,7 +1,7 @@
 ---
 title: ページングと並べ替えのためのコンテンツフラグメントの更新
 description: ヘッドレスコンテンツ配信のためにAdobe Experience Manager as a Cloud Serviceのページングと並べ替えのコンテンツフラグメントを更新する方法について説明します。
-source-git-commit: 130f653a1b0db55ea6d49a87be1215001223bf78
+source-git-commit: d12e2c3c23b5c0eebe35038c6c461c7f05dedc55
 workflow-type: tm+mt
 source-wordcount: '741'
 ht-degree: 6%
@@ -32,7 +32,7 @@ GraphQLフィルターのパフォーマンスを最適化するには、コン�
 
    使用可能な変数は次のとおりです。
 
-   <table>
+   <table style="table-layout:auto">
     <tbody>
      <tr>
       <th> </th>
