@@ -1,12 +1,12 @@
 ---
-title: AEM ヘッドレスの概要
-description: 詳細なドキュメントとヘッドレスジャーニーを組み合わせた Adobe Experience Manager（AEM）as a Headless CMS について説明します。コンテンツモデル、コンテンツフラグメント、GraphQL API などの機能を使用してヘッドレスエクスペリエンスを強化する方法について説明します。
-landing-page-description: Experience Manager Headless as a Cloud Service の使用方法と管理方法について説明します。
+title: AEMのヘッドレスの概要
+description: 詳細なドキュメントとヘッドレスジャーニーを組み合わせたAdobe Experience Manager(AEM) のヘッドレスについて説明します。 コンテンツモデル、コンテンツフラグメント、GraphQL API などの機能を使用してヘッドレスエクスペリエンスを強化する方法について説明します。
+landing-page-description: Adobe Experience Manager as a Cloud Serviceでヘッドレスを使用および管理する方法について説明します。
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
+source-git-commit: 58a7886e32664dddfd3ca9c888717452ed5d362a
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 100%
+source-wordcount: '675'
+ht-degree: 94%
 
 ---
 
@@ -29,7 +29,7 @@ AEM ヘッドレスは、AEM 内の構造化コンテンツ（コンテンツフ
 
 ![AEM 実装モデル](assets/aem-implementation-models.png)
 
-## AEM ヘッドレスの機能 {#aem-headless-features}
+## 機能 {#aem-headless-features}
 
 AEM as a Cloud Service は、次の 3 つの強力な機能を提供することで、ヘッドレス実装モデルの柔軟なツールになっています。
 
@@ -46,7 +46,7 @@ AEM as a Cloud Service は、次の 3 つの強力な機能を提供すること
    * AEM Assets REST API では、コンテンツフラグメントの CRUD 操作をサポートしています。
    * ダイレクトコンテンツ配信は、[コンテンツフラグメントコアコンポーネントの JSON 書き出し](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ja)を使用して実行することもできます。
 
-## AEM ヘッドレスを使用した最初の手順 {#first-steps}
+## 最初の手順 {#first-steps}
 
 AEM ヘッドレス機能を使い始めるためのリソースがいくつか用意されています。各ガイドは、様々な使用例やオーディエンス向けにカスタマイズされています。
 
