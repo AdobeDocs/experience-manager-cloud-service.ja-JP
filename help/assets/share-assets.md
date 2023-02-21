@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 86bf6ba711740bd4c39070c2fa600d23f201ee7e
+source-git-commit: 0d4db4fc19180cff5e15d58c4506933597ca7cce
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1292'
 ht-degree: 100%
 
 ---
@@ -40,7 +40,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 1. 共有リンクを生成し、 [コピーして、他のユーザーとアセットリンク](#copy-and-share-assets-link) を共有します。リンクのデフォルトの有効期間は 1 日です。コピーしたリンクを他のユーザーと共有する場合、有効期間は変更できません。
 
-1. 共有リンクを生成し、 [電子メールでアセットリンクを共有します](#share-assets-link-through-email)。この場合、有効期限の日時などのデフォルト値を変更し、元のアセットとそのレンディションをダウンロードできます。 メールアドレスを追加することで、複数のユーザーに電子メールを送信できます。
+1. 共有リンクを生成し、 [メールでアセットリンクを共有します](#share-assets-link-through-email)。この場合、有効期限の日時などのデフォルト値を変更し、元のアセットとそのレンディションをダウンロードできます。 メールアドレスを追加することで、複数のユーザーにメールを送信できます。
 
 ![リンク共有ダイアログ](assets/link-sharing-dialog.png)
 
@@ -53,21 +53,21 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 1. **[!UICONTROL リンク共有]** ダイアログが表示され、 **[!UICONTROL 共有リンク]** フィールドに自動生成されたアセットリンクが含まれます。
 1. アセットリンクをコピーしてユーザーと共有します。
 
-### 電子メール通知によるアセットリンクの共有 {#share-assets-link-through-email}
+### メール通知によるアセットリンクの共有 {#share-assets-link-through-email}
 
-電子メールでアセットを共有するには：
+メールでアセットを共有するには：
 
 1. アセットまたはアセットを含むフォルダーを選択します。ツールバーで「**[!UICONTROL リンクを共有]**」をクリックします。
 1. **[!UICONTROL リンク共有]** ダイアログが表示され、 **[!UICONTROL 共有リンク]** フィールドに自動生成されたアセットリンクが含まれます。
 
-   * 「電子メールアドレス」ボックスに、リンクを共有するユーザーの電子メール ID を入力します。リンクを複数のユーザーと共有できます。ユーザーが組織のメンバーの場合は、ドロップダウンリストに表示される候補の中から電子メール ID を選択します。外部ユーザーの場合は、電子メール ID を入力し、**[!UICONTROL Enter]** キーを押します。電子メール ID がユーザーの一覧に追加されます。
+   * 「メールアドレス」ボックスに、リンクを共有するユーザーのメール ID を入力します。リンクを複数のユーザーと共有できます。ユーザーが組織のメンバーの場合は、ドロップダウンリストに表示される候補の中から電子メール ID を選択します。外部ユーザーの場合は、メール ID を入力し、**[!UICONTROL Enter]** キーを押します。メール ID がユーザーの一覧に追加されます。
 
    * **[!UICONTROL 件名]** ボックスに、共有するアセットの目的を指定する件名を入力します。
    * 「**[!UICONTROL メッセージ]**」ボックスに、必要に応じてメッセージを入力します。
    * 「**[!UICONTROL 有効期限]**」フィールドに、日付選択を使用して、リンクの有効期限を指定します。
    * 「**[!UICONTROL 元のファイルのダウンロードを許可]**」チェックボックスをオンにして、受信者が元のレンディションをダウンロードできるようにします。
 
-1. 「**[!UICONTROL 共有]**」をクリックします。リンクをユーザーと共有することを確認するメッセージが表示されます。共有リンクを含む電子メールがユーザーに届きます。
+1. 「**[!UICONTROL 共有]**」をクリックします。リンクをユーザーと共有することを確認するメッセージが表示されます。共有リンクを含むメールがユーザーに届きます。
 
 ![リンク共有メール](assets/link-sharing-email-notification.png)
 
@@ -175,7 +175,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 マーケティング担当者や事業部門のユーザーは、次のいずれかを使用して、承認済みアセットをクリエイティブプロフェッショナルと容易に共有できます。
 
-* **Adobe Experience Manager デスクトップアプリケーション**：このアプリケーションは Windows と Mac で動作します。[AEM デスクトップアプリケーションの概要](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)を参照してください。承認済みのデスクトップユーザーが共有アセットに容易にアクセスできる方法については、[アセットの参照、検索、プレビュー](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#browse-search-preview-assets)を参照してください。デスクトップユーザーは、アセットを作成し、新しい画像をアップロードするなどして、Experience Manager ユーザーである相手とアセットを共有することができます。詳しくは、[デスクトップアプリケーションを使用したアセットのアップロード方法](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#upload-and-add-new-assets-to-aem)を参照してください。
+* **Adobe Experience Manager デスクトップアプリケーション**：このアプリケーションは Windows と Mac で動作します。[AEM デスクトップアプリケーションの概要](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)を参照してください。承認済みのデスクトップユーザーが共有アセットに容易にアクセスできる方法については、[アセットの参照、検索、プレビュー](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#browse-search-preview-assets)を参照してください。デスクトップユーザーは、アセットを作成し、新しい画像をアップロードするなどして、Experience Manager ユーザーである相手とアセットを共有することができます。詳しくは、[デスクトップアプリケーションを使用したアセットのアップロード方法](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#upload-and-add-new-assets-to-aem)を参照してください。
 
 * **Adobe Asset Link**：クリエイティブプロフェッショナルは、[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]、[!DNL Adobe Photoshop] 内から直接アセットを検索および使用できます。
 
@@ -245,7 +245,7 @@ Adobe Asset Link を使用すると、コンテンツ作成プロセスでのク
 ## ベストプラクティスとトラブルシューティング {#bestpractices}
 
 * 名前に空白を含むアセットフォルダーまたはコレクションは共有されない可能性があります。
-* ユーザーが共有アセットをダウンロードできない場合は、Experience Manager 管理者に[ダウンロード制限](#maxdatasize)を確認してください。
+* ユーザーが共有アセットをダウンロードできない場合は、Experience Manager 管理者にダウンロード制限を確認してください。デフォルト値は 100 MB です。
 * リンク共有を使用して共有されているビデオをプレビューするには、リポジトリー内でそのビデオノードの場所 `/jcr:content/renditions` に静的ビデオレンディションが必要です。プレビューは、[!DNL Dynamic Media] レンディションの有無には依存しません。
 * リンク共有を介してビデオアセットをダウンロードする場合、ダウンロードされたアーカイブに [!DNL Dynamic Media] レンディションは含まれません。
 
