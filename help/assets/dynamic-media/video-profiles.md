@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 41e17fdae57244d83c8ee715326a0ee41488ba60
+source-git-commit: 73b23ec17c987b1dbcbc868143e2b7159cf21408
 workflow-type: tm+mt
 source-wordcount: '3707'
 ht-degree: 94%
@@ -270,7 +270,7 @@ Dynamic Media には、最高の閲覧エクスペリエンスを実現できる
    <td><code>keyframe</code></td>
    <td>キーフレーム間のターゲットフレーム数。2～10 秒ごとにキーフレームを生成できるように、この値を計算します。例えば、1 秒あたり 30 フレームの場合、キーフレーム間隔は 60～300 です。<br /> <br />キーフレーム間隔を短くすると、アダプティブビデオエンコーディングでストリームのシークと切り替えの動作が向上し、動きの多いビデオの画質も向上します。ただし、キーフレームが増えるとファイルのサイズも増えるので、通常、キーフレーム間隔を短くすると、特定のビットレートでの全体的なビデオの画質は低下します。</td>
    <td><code>String</code></td>
-   <td><p>正の数。</p> <p>初期設定は 300 です。</p> <p>HLS または DASH（アダプティブストリーミング）の推奨値は 60～90 です。 ( ビデオで DASH を使用するには、まずアカウントのAdobeテクニカルサポートが有効にする必要があります。 詳しくは、 <a href="/help/assets/dynamic-media/video.md#enable-dash">アカウントで DASH を有効にする</a>.)</p> </td>
+   <td><p>正の数。</p> <p>初期設定は 300 です。</p> <p>HLS または DASH（アダプティブストリーミング）の推奨値は 60～90 です。 ( ビデオに DASH を使用するには、まずアカウントのAdobeテクニカルサポートが有効にする必要があります。 詳しくは、 <a href="/help/assets/dynamic-media/video.md#enable-dash">アカウントで DASH を有効にする</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
