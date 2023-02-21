@@ -1,7 +1,7 @@
 ---
 title: GraphQLクエリの最適化
 description: ヘッドレスコンテンツ配信のためにAdobe Experience Manager as a Cloud Serviceでコンテンツフラグメントをフィルタリング、ページング、並べ替える際に、GraphQLクエリを最適化する方法について説明します。
-source-git-commit: e156ed7348815e02c942cb8feace70c675956752
+source-git-commit: 0fe0bd301fb09cdc631878926f2e40df51a2cc23
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->これらの最適化レコメンデーションを適用する前に、以下を検討してください。 [GraphQLフィルタリングでのページングと並べ替えのためのコンテンツフラグメントの更新](/help/headless/graphql-api/graphql-paging-sorting-content-update.md) 最高のパフォーマンスを実現するには
+>これらの最適化レコメンデーションを適用する前に、以下を検討してください。 [GraphQLフィルタリングでのページングと並べ替えのためのコンテンツフラグメントの更新](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md) 最高のパフォーマンスを実現するには
 
 同じモデルを共有するコンテンツフラグメントが多数あるAEMインスタンスでは、GraphQLのリストクエリに（リソースの点で）コストがかかる場合があります。
 
