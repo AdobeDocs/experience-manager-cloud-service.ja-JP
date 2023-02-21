@@ -1,10 +1,10 @@
 ---
 title: 最適化されたGraphQLフィルタリング用にコンテンツフラグメントを更新する
 description: ヘッドレスコンテンツ配信のためにAdobe Experience Manager as a Cloud Serviceで最適化されたGraphQLフィルタリング用にコンテンツフラグメントを更新する方法について説明します。
-source-git-commit: 1561668046909e88c283145205c16b167c04ca8c
+source-git-commit: 7c6dcf4548972740803d64e21a74e885caf8b487
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -158,7 +158,7 @@ GraphQLフィルターのパフォーマンスを最適化するには、コン�
 
    更新手順を実行した後、クラウド環境変数をリセットします。 `CF_MIGRATION_ENABLED` を「0」に変更して、すべてのポッドのリサイクルをトリガー化します。
 
-   <table>
+   <table style="table-layout:auto">
     <tbody>
      <tr>
       <th> </th>
