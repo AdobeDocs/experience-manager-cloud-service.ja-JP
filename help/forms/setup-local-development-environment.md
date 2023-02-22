@@ -2,10 +2,10 @@
 title: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境の設定
 description: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境の設定
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
+source-git-commit: 55a53f23ee81877bd3a6ba3b9b0a1c3c98edb764
 workflow-type: tm+mt
-source-wordcount: '2974'
-ht-degree: 89%
+source-wordcount: '2960'
+ht-degree: 90%
 
 ---
 
@@ -256,7 +256,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    コマンドプロンプトを開き、以下のコマンドを実行して [!DNL Experience Manager Forms] as a Cloud Service プロジェクトを作成します。
 
    ```shell
-   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y" includeFormsheadless="y"    
+   mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=40 -D aemVersion="cloud" -D appTitle="Borgo AEM Forms" -D appId="bgaemforms" -D groupId="com.bgaemforms" -D includeFormsenrollment="y" -D includeFormscommunications="y" -D includeExamples="y" -D 
    ```
 
    上記のコマンドで `appTitle`、`appId`、`groupId` を変更し、環境に反映します。また、includeFormsenrollment、includeFormscommunications および includeFormsheadless の値をに設定します。 `y` または `n` ライセンスと要件に応じて異なります。 includeFormsheadless は、コアコンポーネントに基づくアダプティブFormsの作成に必須です。
@@ -264,8 +264,6 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    * `includeFormsenrollment=y` オプションを使用して、アダプティブフォームの作成に必要なフォーム固有の設定、テーマ、テンプレート、コアコンポーネントおよび依存関係を含めます。フォームポータルを使用している場合、`includeExamples=y` オプションを設定します。また、Forms Portal のコアコンポーネントもプロジェクトに追加されます。
 
    * 以下を使用： `includeFormscommunications=y` 顧客コミュニケーション機能を組み込むために必要なFormsコアコンポーネントと依存関係を含めるオプション。
-
-   * 以下を使用： `includeFormsheadless` ヘッドレスアダプティブFormsの作成に必要なアーティファクトとライブラリを追加するオプション。
 
 1. プロジェクトをローカル開発環境にデプロイします。以下のコマンドを使用して、ローカル開発環境にデプロイできます
 
