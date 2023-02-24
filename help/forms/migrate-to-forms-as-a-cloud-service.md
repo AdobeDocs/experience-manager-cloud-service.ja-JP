@@ -7,10 +7,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 8e28cff5b964005278858b6c8dd8a0f5f8156eaa
-workflow-type: ht
-source-wordcount: '1218'
-ht-degree: 100%
+source-git-commit: b11979acc23efe5f1af690443180a6b456d589ed
+workflow-type: tm+mt
+source-wordcount: '1816'
+ht-degree: 74%
 
 ---
 
@@ -28,6 +28,21 @@ ht-degree: 100%
 * このサービスは、OSGi 環境上の [!DNL AEM Forms] のみからコンテンツを移行するのに役立ちます。JEE 上の [!DNL AEM Forms] からクラウドサービス環境へのコンテンツの移行はサポートされていません。
 
 * （AEM 6.3 Forms、または AEM 6.4 Forms または AEM 6.5 Forms にアップグレードした旧バージョンの環境のみ）AEM 6.3 Forms または以前のバージョンで使用可能な、初期設定のテンプレートおよびテーマに基づくアダプティブフォームは、[!DNL AEM Forms] as a Cloud Service ではサポートされていません。
+
+* 検証ステップは使用できません。こうしたフォームを Cloud Service 環境に移動する前に、既存のアダプティブフォームから検証ステップを削除します。
+
+* アダプティブFormsの署名ステップは使用できません。 既存のアダプティブフォームから署名ステップを削除します。ブラウザー内署名エクスペリエンスを使用するようにアダプティブフォームを設定します。アダプティブフォームの送信時に、ブラウザー内で契約書に署名するための Adobe Sign 契約書が表示されます。ブラウザー内署名エクスペリエンスにより、署名をより迅速に行えるようになり、署名者にとって時間の節約になります。
+
+## AEM 6.5 Formsとの違い
+
+| 機能 | AEM 6.5 Formsとの違い |
+|--------------|-----------|
+| HTML5 Forms (Mobile Forms) | このサービスは、HTML5 Forms (Mobile Forms) をサポートしていません。 XDP ベースのフォームをHTML5 Formsとしてレンダリングする場合、AEM 6.5 Forms上で引き続きこの機能を使用できます。 |
+| アダプティブフォーム | <li><b>XSD ベースのアダプティブForms:</b> このサービスは、HTML5 Forms (Mobile Forms) をサポートしていません。 XDP ベースのフォームをHTML5 Formsとしてレンダリングする場合、AEM 6.5 Forms上で引き続きこの機能を使用できます。 </li> <li><b> アダプティブフォームテンプレート：</b> ビルドパイプラインと、プログラムの対応する Git リポジトリを使用して、既存のアダプティブフォームテンプレートを読み込みます。 </li><li><b>ルールエディター：</b> AEM Formsas a Cloud Service家は、堅固な [ルールエディター](rule-editor.md#visual-rule-editor). コードエディターは、Forms as a Cloud Serviceでは使用できません。 移行ユーティリティは、カスタムルール（コードエディターで作成）を持つフォームを移行する場合に役立ちます。 ユーティリティは、これらのルールを、Forms as a Cloud Serviceでサポートされるカスタム関数に変換します。 ルールエディタで再利用可能な関数を使用して、ルールスクリプトで取得した結果を引き続き取得できます。 `onSubmitError` または `onSubmitSuccess` 関数は、ルールエディターのアクションとして使用できるようになりました。 </li> <li><b>ドラフトと送信：</b> このサービスは、ドラフトおよび送信されたアダプティブFormsのメタデータを保持しません。 </li> <li><b> 事前入力サービス：</b> デフォルトでは、事前入力サービスは、AEM 6.5 Formsでのサーバー上のデータの結合とは異なり、クライアント側でデータをアダプティブフォームに結合します。 この機能により、アダプティブフォームの事前入力に要する時間が短縮されます。 Adobe Experience Manager Forms Server で結合アクションを実行するようにをいつでも設定できます。 </li><li><b>送信アクション：</b> この **メールをPDF** アクションは使用できません。 **メール**&#x200B;の送信アクションでは、添付ファイルを送信し、メールにレコードのドキュメント（DoR）を添付するオプションが提供されます。 </li> |
+| フォームデータモデル | <li>Formsデータモデルでは、データの送信に HTTP および HTTPs エンドポイントのみをサポートしています。 </li><li>Forms as a Cloud Serviceでは、Microsoft Azure Blob、Microsoft Sharepoint、Microsoft OneDrive および一般的な CRUD（作成、読み取り、更新、削除）操作をサポートするサービスをデータストアとして使用できます。 このサービスは、JDBC コネクタ、Rest コネクタの相互 SSL、SOAP データソースの x509 証明書ベースの認証をサポートしていません。 </li> |
+| 自動フォーム変換サービス | このサービスは、Automated forms conversionサービスのメタモデルを提供しません。 以下が可能です。 [automated forms conversionサービスドキュメントからダウンロード](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model). |
+| 設定 | <li>メールは、デフォルトでは HTTP プロトコルおよび HTTPs プロトコルのみをサポートします。[サポートチームに問い合わせて](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ja#sending-email)、メールの送信用のポートと、環境用の SMTP プロトコルを有効にします。 </li> <li>カスタムバンドルを使用する場合は、Forms as a Cloud Serviceでこれらのバンドルを使用する前に、最新バージョンの adobe-aemfd-docmanager でコードを再コンパイルします。</li> |
+| ドキュメント操作 API（Assembler サービス） | このサービスは、他のサービスやアプリケーションに依存する操作をサポートしていません。 <li>ドキュメント形式以外のドキュメントをPDF形式に変換することはできません。 例えば、Microsoft Word からPDFへ、Microsoft Excel からPDFへ、PDFへのHTMLはサポートされていません</li><li>AdobeDistillerベースの変換はサポートされていません。 例えば、PostScript(PS) からPDF</li><li>Forms Service-based Conversions はサポートされていません。 例えば、XDP からPDF forms。</li><li>署名付きPDFまたは透明PDFを別の形式に変換することはサポートされていません。</li> |
 
 ## 前提条件 {#prerequisites}
 
