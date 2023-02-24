@@ -3,10 +3,10 @@ title: ' [!DNL AEM Forms] as a Cloud Service の概要'
 description: AEM Forms を理解し、ビジネスに適したドキュメントやコンテンツの作成にどのように役立つのかを学びます。サービスとしてのプラットフォーム（PaaS）、エンタープライズクラスのデジタルフォームとビジネスプロセスを管理する方法、現在のデータソースに Forms を接続する方法について学びます。
 landing-page-description: AEM as a Cloud Service でのフォームの使用方法を理解します。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: f8e229820bb7aef3923e955c928033ef7d3d9460
+source-git-commit: 95e1981faf9532aa56cc8a2e18166d08f35ecf29
 workflow-type: tm+mt
-source-wordcount: '1108'
-ht-degree: 26%
+source-wordcount: '1251'
+ht-degree: 23%
 
 ---
 
@@ -44,9 +44,11 @@ The service provides OOTB support to connect with Adobe Analytics. Connecting fo
 
 >[!ENDTABS] -->
 
-| アダプティブフォーム | 自動フォーム変換サービス | 通信 API | Forms Analytics |
-|---|---|---|---|
-| アダプティブFormsを使用すると、企業は、レスポンシブでモバイルに適した Web サイトやその他のデジタルチャネル用のインタラクティブなデータ駆動型フォームを作成および管理できます。 | automated forms conversionサービスを使用すると、企業は従来のPDFベースのフォームを、オンラインで簡単に管理および配布できる、インタラクティブなデジタルフォームに変換できます。 | 通信 API は、パーソナライズされたデータ駆動型通信の作成、管理および配信を自動化するための RESTful API(Application Programming Interfaces) のセットです。 | このサービスは、Adobe Analyticsとの接続に OOTB サポートを提供します。 フォームをAdobe Analyticsと連携させると、ユーザー行動の理解の向上、マーケティング活動のターゲティングの向上、エラー状態の軽減、ROI の向上など、ビジネスにいくつかのメリットがもたらされます。 |
+
+| アダプティブフォーム | 自動フォーム変換サービス | 通信 API | 統合 | Forms Workflow |
+|---|---|---|---|---|
+| アダプティブFormsを使用すると、企業は、レスポンシブでモバイルに適した Web サイトやその他のデジタルチャネル用のインタラクティブなデータ駆動型フォームを作成および管理できます。 | automated forms conversionサービスを使用すると、企業は従来のPDFベースのフォームを、オンラインで簡単に管理および配布できる、インタラクティブなデジタルフォームに変換できます。 | 通信 API は、パーソナライズされたデータ駆動型通信の作成、管理および配信を自動化するための RESTful API(Application Programming Interfaces) のセットです。 | このプラットフォームをAdobe Signおよび DocuSign と統合すると、ユーザーはアダプティブフォームから直接電子署名の要求を簡単に送信および追跡できます。 </br></br>さらに、プラットフォームをAdobe Analyticsと統合して、組織がユーザーの行動と環境設定に関する貴重なインサイトを得ることができます。 </br></br> 最後に、AEM FormsCloud Serviceを使用すると、ユーザーはアダプティブフォームを直接AEM Sitesページに埋め込み、シームレスなユーザーエクスペリエンスを作成できます | Adobe Experience Manager(AEM)FormsのForms中心のワークフローは、フォームに関連するビジネスプロセスを自動化するように設計されています。 これらのワークフローは、ビジネスプロセスの様々な段階を進むたびに、フォームのルーティング、レビュー、承認を自動化します。 Forms中心のワークフローは、AEM Forms Workflow Designer を使用して視覚的に作成でき、フォームの送信時にAEM Formsと統合してトリガーワークフローに統合できます。 ワークフローは、特定の条件に基づいて様々なユーザーやグループにフォームをルーティングするように設定でき、自動通知やリマインダーを含めて、フォームがタイムリーに処理されるようにすることができます。 AEM Formsの全般的なフォーム中心のワークフローは、組織がビジネスプロセスの合理化、効率の向上、エラーの削減を支援します。 |
+
 
 <!--
 | | |
