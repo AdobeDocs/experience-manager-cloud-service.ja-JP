@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 73b23ec17c987b1dbcbc868143e2b7159cf21408
+source-git-commit: 572e8ed320dcfb9619110b42229ef81adb726790
 workflow-type: tm+mt
-source-wordcount: '10066'
+source-wordcount: '10103'
 ht-degree: 86%
 
 ---
@@ -245,7 +245,7 @@ HLS は、アダプティブビデオストリーミングの Apple 標準で、
   <tr>
    <td>モバイル</td>
    <td>Chrome（iOS）</td>
-   <td>HLS または DASH*アダプティブストリーミング</td>
+   <td>HLS アダプティブストリーミング</td>
   </tr>
  </tbody>
 </table>
@@ -411,7 +411,7 @@ Dynamic Media では、MP4 H.264 ビデオエンコーディングプリセッ�
 
 ### アカウントで DASH を有効にする {#enable-dash}
 
-DASH(Digital Adaptive Streaming over HTTP) は、ビデオストリーミングの国際標準で、様々なビデオビューアで広く採用されています。 DASH を有効にすると、アダプティブビデオストリーミング用に HLS または DASH から選択するオプションが表示されます。 プレーヤー間の自動切り替えで、両方をオプトすることもできます。
+DASH(Digital Adaptive Streaming over HTTP) は、ビデオストリーミングの国際標準で、様々なビデオビューアで広く採用されています。 アカウントで DASH が有効になっている場合、アダプティブビデオストリーミング用に DASH または HLS のいずれかを選択できます。 または、プレーヤー間の自動切り替えで両方をオプトできます ( **[!UICONTROL auto]** ビューアプリセットで再生タイプとしてが選択されています。
 
 アカウントで DASH を有効にする主なメリットには、次のようなものがあります。
 
@@ -422,13 +422,13 @@ DASH(Digital Adaptive Streaming over HTTP) は、ビデオストリーミング�
 * ビデオ配信をよりアクセシブルにするのに役立ちます。
 * API を使用してストリーミング URL も取得します。
 
+   >[!IMPORTANT]
+   >
+   >現在、アカウントで DASH を有効にするのは、北米でのみ利用できます。
+
 DASH を使用するリクエストを開始します。お使いのアカウントでは、自動的には有効になりません。
 
->[!IMPORTANT]
->
->現在、アカウントで DASH を有効にするのは、北米でのみ利用できます。
-
-以下の説明に従って、サポートケースを作成します。サポートケースでは、アカウントで DASH を有効にしておく必要があります。
+お使いのアカウントで DASH を有効にするには、以下に示すようにカスタマーサポートケースを作成します。 サポートケースで、Dynamic MediaアカウントとExperience Managerで DASH を有効にするように指定します。
 
 **アカウントで DASH を有効にするには：**
 
@@ -436,7 +436,8 @@ DASH を使用するリクエストを開始します。お使いのアカウン
 1. 手順に従い、次の情報を入力しながら、サポートケースを作成します。
 
    * 主要連絡先の氏名、メールアドレス、電話番号。
-   * Dynamic Mediaアカウントで DASH を有効にします。
+   * Dynamic Mediaアカウントの名前。
+   * Dynamic MediaアカウントとExperience Managerで DASH を有効にするように指定します。
 
 1. Adobeカスタマーサポートにより、リクエストの送信順に基づいて DASH カスタマー待機リストに追加されます。
 1. Adobeがリクエストを処理する準備が整うと、カスタマーサポートから連絡があり、DASH を有効にするための目標日を調整して設定できます。
