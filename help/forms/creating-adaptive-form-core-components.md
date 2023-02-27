@@ -4,7 +4,7 @@ description: ' [!DNL Experience Manager Forms] を使用したアダプティブ
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 0d158082973cd0f0745f5e3f0391119e585fc743
+source-git-commit: 37274b28ab2343fd3cdfb4747c9dee701c699b46
 workflow-type: tm+mt
 source-wordcount: '1458'
 ht-degree: 47%
@@ -18,7 +18,7 @@ ht-degree: 47%
 
 開始する前に、使用可能なFormsコンポーネントのタイプについて学習します。
 
-* [アダプティブFormsコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en):これらは標準化されたデータキャプチャコンポーネントです。 これらのコンポーネントは、カスタマイズ機能を提供し、開発時間を短縮し、デジタル登録エクスペリエンスのメンテナンスコストを削減します。 開発者は、これらのコンポーネントを容易にカスタマイズおよびスタイル設定できます。 Adobeでは、アダプティブFormsを開発する際に、これらの最新の拡張可能なコンポーネントを活用することをお勧めします。
+* [アダプティブFormsコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en):これらは標準化されたデータキャプチャコンポーネントです。 これらのコンポーネントは、カスタマイズ機能を提供し、開発時間を短縮し、デジタル登録エクスペリエンスの維持費を削減します。 開発者は、これらのコンポーネントを容易にカスタマイズおよびスタイル設定できます。 Adobeでは、アダプティブFormsを開発する際に、これらの最新の拡張可能なコンポーネントを活用することをお勧めします。
 
 * [アダプティブForms Foundation コンポーネント](creating-adaptive-form.md):これらは、従来の（古い）データキャプチャコンポーネントです。 これらを引き続き使用して、既存の基盤コンポーネントベースのアダプティブフォームを編集できます。 新しいフォームを作成する場合、Adobeでは  [アダプティブFormsコアコンポーネント](creating-adaptive-form-core-components.md) アダプティブFormsを作成する
 
@@ -96,7 +96,7 @@ ht-degree: 47%
 
 ## 使用可能なアダプティブFormsコアコンポーネント
 
-アダプティブFormsコアコンポーネントは、標準化されたデータキャプチャコンポーネントです。 これらのコンポーネントは、カスタマイズ機能を提供し、開発時間の短縮と、デジタル登録エクスペリエンスのメンテナンスコストの削減に役立ちます。 [アダプティブFormsコアコンポーネントドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) には、使用可能なコンポーネントの詳細なリストと、各コンポーネントの機能に関する詳細情報が含まれています。 また、 [https://aemcomponents.dev/](https://aemcomponents.dev/) 使用可能なコアコンポーネントの動作を確認する
+アダプティブFormsコアコンポーネントは、標準化されたデータキャプチャコンポーネントです。 これらのコンポーネントは、カスタマイズ機能を提供し、開発時間の短縮とデジタル登録エクスペリエンスのメンテナンスコストの削減に役立ちます。 [アダプティブFormsコアコンポーネントドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) には、使用可能なコンポーネントの詳細なリストと、各コンポーネントの機能に関する詳細情報が含まれています。 また、 [https://aemcomponents.dev/](https://aemcomponents.dev/) 使用可能なコアコンポーネントの動作を確認する
 
 ## アダプティブフォームのフォームモデルプロパティの編集 {#edit-form-model}
 
