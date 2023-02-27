@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Manager（AEM）Forms as a Cloud Service の主な機能と特徴
-description: "[!DNL AEM Forms] as a Cloud Service は、エンタープライズクラスのフォームとビジネスプロセスを作成、管理、公開するためのプラットフォームです。"
+title: Adobe Experience Manager(AEM)Formsas a Cloud Serviceの最新の革新
+description: «の最新の機能を理解する [!DNL AEM Forms] エンタープライズクラスのフォームとビジネスプロセスの作成、管理、公開をas a Cloud Serviceできます。」
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: d77b8d389be4b5c0ffa262ad6f1ff8b4d899e82b
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 100%
+source-wordcount: '678'
+ht-degree: 0%
 
 ---
 
@@ -19,33 +19,48 @@ The organization can use [!DNL AEM Forms] as a Cloud Service to create digital f
 
 An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start using all these features without waiting to buy and set up a local infrastructure. The service also frees the organizations from the cycle of upgrades as it is always up to date and always offers the latest feature.  -->
 
-# 主な機能と特徴 {#key-features}
 
-[!DNL AEM Forms] as a Cloud Service は、クラウドネイティブアーキテクチャ、自動拡張、アップグレードのダウンタイムゼロ、CDN（コンテンツ配信環境）、クラウドネイティブ開発環境、クラウドマネージャーを使用した環境のセルフサービス機能など、複数のクラウドネイティブ機能を提供します。サービスを使用して以下のことが行えます。
+# 最新のイノベーション {#latest-innovations}
 
-* 作成ユーザーのデバイスとブラウザーに自動的に適応する[アダプティブフォームの作成](creating-adaptive-form.md#strong-create-an-adaptive-form-strong)。
+AEM Formsas a Cloud Serviceの最新のイノベーションの一部を次に示します。
 
-   ![アダプティブフォーム](assets/rule-editor-example.gif)
+|  |  |
+|---|---|
+| ヘッドレスアダプティブForms | 作成と管理 [ヘッドレスアダプティブForms](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) をAdobe Experience Managerプラットフォーム内で使用する。 開発者が、従来のグラフィカルユーザーインターフェイスを使用するのではなく、API を使用してアクセスし、操作できるインタラクティブフォームを作成、公開、管理できるようにします。 <br/> <br/> これらのフォームは、従来のHTMLフォームインターフェイスを使用せずに送信できるように設計されています。 つまり、フロントエンドに表示可能なフォーム要素を必要とせずに、API またはバックエンドコードを介してプログラムを使用してフォームデータを送信できます。 <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/assets/how-headless-adaprive-forms-work.png?)<br/> ヘッドレスフォームは、シングルページアプリケーション、プログレッシブ Web アプリ、モバイルアプリケーションを構築する場合など、従来のHTMLフォームインターフェイスが必要でない場合や実用的でない場合に、様々なシナリオで役立ちます。 開発者が API やバックエンドコードを介して直接フォームデータを送信できるようにすることで、ヘッドレスフォームを利用してワークフローを合理化し、Web アプリケーションの全体的なパフォーマンスを向上させることができます。 |
+| コアコンポーネント | この [アダプティブFormsコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) は、Adobe Experience Manager WCM コアコンポーネントの基盤上に構築された、24 個のオープンソースの BEM 準拠コンポーネントのセットです。 これらは、アダプティブFormsの作成に使用するように特別に設計されています。アダプティブフォームとは、ユーザーのデバイス、ブラウザー、画面サイズに応じたフォームです。 <br/> <br/> これらのコンポーネントは、テキストフィールド、チェックボックス、ドロップダウンメニューなど、様々なフォームフィールドオプションを提供することで、例外的なデータ取得および登録エクスペリエンスを作成するために使用できます。 また、検証、条件付きロジック、レスポンシブデザインなどの機能も含まれ、使いやすく使いやすいフォームを作成するのに使用できます。 <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/assets/sample-core-components-based-adaptive-form.png?)<br/>  さらに、これらのコンポーネントはオープンソースなので、開発者は、組織の特定のニーズに合わせてコンポーネントを簡単にカスタマイズおよび拡張できます。 また、これらのコンポーネントは、拡張性と保守性を確保する BEM 手法に基づいて構築されます。 |
+| Microsoft PowerAutomate Connector | AEM Forms Power Automate Connector を使用すると、Adobe Experience Manager(AEM)FormsをMicrosoft Power Automate( 旧称Microsoftフロー ) と統合できます。 Power Automate は、様々なアプリケーションやサービス間で自動ワークフローを作成できるクラウドベースのサービスです。  <br/> <br/> AEM Form Power Automate Connector を使用すると、アダプティブフォームの送信に基づいて自動的にトリガーを設定するワークフローを作成できます。 例えば、ユーザーがフォームを送信したときに電子メール通知を特定のユーザーに自動的に送信するワークフローや、ユーザーがフォームを完了したときにMicrosoft Planner でタスクを作成するワークフローを作成できます。  <br/> ![](https://powerusers.microsoft.com/t5/image/serverpage/image-id/182924i17C4BEA1C045D731/image-size/large/is-moderation-mode/true?v=1.0&amp;px=999) <br/> AEM Forms Power Automate Connector は、Microsoft Power Automate に接続する他のアプリケーションやサービスとアダプティブFormsを自動化および統合し、様々なツールを操作できる強力なツールです。 特定のニーズに合わせてワークフローを作成し、カスタムのアクション、条件およびトリガーを追加できます。 さらに、Power Automate では詳細な分析とレポート機能を提供し、時間の経過と共にワークフローを監視および最適化できます。 |
+| Microsoft Storage Connectors | AEM Forms Microsoft Storage Connectors for <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-sharedrive">OneDrive</a>, <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?#submit-to-sharedrive"> SharePoint </a> および <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?#submit-to-azure-blob-storage"> Azure Blob ストレージ </a> は、Adobe Experience Manager(AEM)FormsをMicrosoft OneDrive およびSharePointと統合するためのコネクタです。 このコネクタを使用すると、アダプティブFormsから直接 OneDrive とSharePointにデータファイルと添付ファイルをアップロードできます。 <br/> ![](/help/forms/assets/onedrive-and-sharepoint.jpg) <br/>OneDrive とSharePointは、CRM システム、会計ソフトウェア、プロジェクト管理ツールなど、他のビジネスアプリケーションと統合できます。 これにより、ビジネス・プロセスを合理化し、手動でのデータ入力を削減し、全体的な効率を向上させることができます。 |
 
-* 紙とほぼ同様のピクセルパーフェクトな [PDF フォームの作成](use-forms-designer.md#create-an-adaptive-form)。
 
-* [自動フォーム変換サービス](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ja)を使用した、PDF フォームのアダプティブフォームへの変換。組織のデータキャプチャエクスペリエンスのデジタル化と最新化に役立ちます。
+<!-- 
 
-   ![自動フォーム変換サービス](assets/pdf-to-adaptive-form-gitx50.gif)
+# Key features and capabilities {#key-features}
 
-* [ビジネスプロセスの作成](aem-forms-workflow-step-reference.md#create-form-centric-workflows)。例えば、アダプティブフォームの送信時に、承認と却下のワークフローを作成してトリガーできます。
+[!DNL AEM Forms] as a Cloud Service provides several cloud-native capabilities such as a cloud-native architecture, auto-scaling, zero downtime for upgrades, a CDN (Content Delivery Network), cloud-native development environment, and ability to self-Service the environments via Cloud Manager. You can use the service to: 
 
-上記に加えて、[!DNL AEM Forms] as a Cloud Service は次の機能を提供します。
+* [Create Adaptive Forms](creating-adaptive-form.md#strong-create-an-adaptive-form-strong) that automatically render for a user's device and browser.
 
-* 使いやすいグラフィカルユーザーインターフェイスにより、ビジネスユーザーは簡単にフォームのインポート、管理、プレビュー、および公開が可能
-* キーワード、タグ、およびメタデータをサポートする、強力な検索機能を備えたレスポンシブなフォームディレクトリ
-* ユーザーのデバイスや場所を動的に検出することにより、web チャネルやモバイルチャネルに最適化されたフォーム描画を実現
-* [Adobe Sign サービスや Scribble との統合](adobe-sign-integration-adaptive-forms.md)により、機密情報を含むドキュメントへの電子署名に対応
-* [様々なタイプのデータソースにサービスを接続](data-integration.md#create-an-adaptive-form)して、データの送信と取得が可能。このサービスは、RESTful web サービス、SOAP ベースの web サービスおよび OData 対応のサービスからのデータの送信と取得をサポートしています。
-* AEM Sites との統合。アダプティブフォームを AEM Sites ページに埋め込むことができます。アダプティブフォームを任意の web ページに統合することもできます。
-* レコードのドキュメント（DoR）を作成して、提供および送信した情報の記録をアダプティブフォームに保持し、後で参照する機能。DoR は、フォームの PDF 版です。テンプレートとデータの両方が含まれます。このサービスには、デフォルトの DoR テンプレートと、カスタムテンプレートを開発するためのツールが用意されています。
-* アダプティブフォームを作成して、スキーマに準拠したデータを作成する機能。これにより、最小限の変更を加えることなく、取得したデータを既存のプロセスおよびデータソースに送信できます。
-* 条件に基づいて既存の顧客データをフォームに入力する事前入力サービスを作成する機能。これはフォーム入力プロセスに集中させて、破棄率を下げるのに役立ちます。
+    ![Adaptive Forms](assets/rule-editor-example.gif)
+
+* [Create pixel-perfect PDF forms](use-forms-designer.md#create-an-adaptive-form) that look almost like paper.
+
+* Use [Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) to convert a PDF Form to an Adaptive Form. It helps you accelerate digitization and modernization of data capture experiences of your organization.
+
+    ![Automated Forms Conversion service](assets/pdf-to-adaptive-form-gitx50.gif)
+
+* [Create business processes](aem-forms-workflow-step-reference.md#create-form-centric-workflows). For example, You can create and trigger an approval and rejection workflow on submission of an Adaptive Form.
+
+In addition to above [!DNL AEM Forms] as a Cloud Service offers the following features and capabilities:
+
+* An easy-to-use graphical user interface to let business users easily import, manage, preview, and publish forms
+* A responsive forms directory with powerful search features using keywords, tags, and metadata
+* Dynamic detection of a user's device and location to render the form appropriately across web and mobile channels
+* [Integration with Adobe Sign](adobe-sign-integration-adaptive-forms.md) services or Scribble to electronically sign documents containing confidential information
+* Ability to [connect the service to various types of data sources](data-integration.md#create-an-adaptive-form) to send and retrieve data. The service supports sending and retrieving data from RESTful web services, SOAP-based web services, and OData enabled services.
+* Integration with AEM Sites. It allows to embed an adaptive form in an AEM Sites page. You can also integrate an adaptive form to any webpage. 
+* Ability to create a Document of Record (DoR) to keep a record of the information that you provide and submit in an Adaptive Form so that you can refer to it later. A DoR is a PDF version of a form. It includes both a template and data. The service provides a default DoR template and tools to develop a custom template.
+* Ability to create Adaptive Forms to produce schema-compliant data. It helps you submit captured data to existing processes and data sources without any or minimal modifications.
+* Ability to create a prefill service to fill a form with existing customer data based on a criteria. It helps fasten the form filling process and reduce the abandon rate.
 
 
 <!-- 
