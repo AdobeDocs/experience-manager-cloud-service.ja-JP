@@ -1,10 +1,10 @@
 ---
 title: テーマの作成および使用
 description: テーマを使用して、コアコンポーネントを使用してアダプティブフォームのスタイルを設定し、視覚的な ID を付けることができます。 任意の数のアダプティブフォームで、テーマを共有できます。
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: e3fa30d5be29b4070a09873e8ca20036a788486a
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 21%
+source-wordcount: '1669'
+ht-degree: 20%
 
 ---
 
@@ -51,6 +51,7 @@ ht-degree: 21%
 キャンバステーマをカスタマイズするには：
 1. [キャンバステーマのクローン](#1-download-canvas-theme-download-canvas-theme)
 1. [テーマの構造を理解する](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
+1. [package.json と package_lock.json の名前を変更します。](#changename-packagelock-packagelockjson)
 1. [を作成します。 ](#3-create-the-env-file-in-a-theme-folder-creating-env-file-theme-folder)
 1. [ローカルの プロキシサーバーを開始します。](#4-start-a-local-proxy-server-starting-a-local-proxy-server)
 1. [テーマのカスタマイズ](#customize-the-theme-customizing-theme)
@@ -67,7 +68,7 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
 >[!NOTE]
 >
-> フォーム作成ウィザードの「スタイル」タブには、 package.json と同じテーマ名が表示されます。
+> フォーム作成ウィザードの「スタイル」タブには、package.json ファイルと同じテーマ名が表示されます。
 
 ### 2.テーマの構造を理解する {#structure-of-canvas-theme}
 
@@ -85,12 +86,22 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
 テーマをカスタマイズするには、ローカルプロキシサーバーを起動して、実際のAEMコンテンツに基づいたテーマのカスタマイズをリアルタイムで確認します。
 
+### 4.キャンバステーマの package.json と package_lock.json で名前を変更する {#changename-packagelock-packagelockjson}
+
+でキャンバステーマの名前とバージョンを更新する `package.json` および `package_lock.json` ファイル。
+
+>[!NOTE]
+>
+> 名前に次の文字列を含めることはできません `@aemforms` タグを使用します。 ユーザーが指定した名前の単純なテキストにする必要があります。
+
+![キャンバステーマ画像](/help/forms/assets/changename_canvastheme.png)
+
 ### 3.テーマフォルダーに.env ファイルを作成する {#creating-env-file-theme-folder}
 
 の作成 `.env` theme フォルダーにファイルを作成し、次のパラメーターを追加します。
 
 * **AEM url**
-AEM_URL=https://[author-instance] またはhttp://localhost:[ポート]/
+AEM_URL=https://[author-instance]
 
 * **AEM site name**
 AEM_ADAPTIVE_FORM=Form_name
@@ -109,7 +120,7 @@ AEM_PROXY_PORT=7000
 
    ![npm run live](/help/forms/assets/theme_proxy.png)
 
-1. プロキシサーバーが起動すると、`http://localhost:[port]/` へのブラウザーが自動的に開きます。
+
 1. タップまたはクリック **ローカルでログイン（管理者タスクのみ）** をクリックし、AEM管理者から提供されたプロキシユーザーの資格情報を使用してログインします。
 
    ![ローカルでログイン](/help/forms/assets/local_signin.png)
@@ -168,18 +179,33 @@ AEM_PROXY_PORT=7000
 
 変更をAEM FormsCloud Serviceの Git リポジトリにコミットする前に、ローカルマシン上にリポジトリのクローンを作成する必要があります。 リポジトリを複製するには：
 
-1. 置き換え後にコマンドプロンプトを開き、次のコマンドを実行します。 [my-org] および [マイプログラム] AEM管理者から提供された値を含む 詳細は、 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git):
+1. 新しいテーマリポジトリを作成するには、 **[!UICONTROL リポジトリ]** オプション。
+
+   ![新しいテーマリポジトリを作成](/help/forms/assets/createrepo_canvastheme.png)
+
+1. クリック **[!UICONTROL リポジトリを追加]** をクリックし、 **リポジトリ名** 内 **リポジトリを追加** ダイアログボックス 「**[!UICONTROL 保存]**」をクリックします。
+
+   ![キャンバステーマリポジトリを追加](/help/forms/assets/addcanvasthemerepo.png)
+
+1. クリック **[!UICONTROL リポジトリ URL をコピー]** 作成したリポジトリの URL をコピーします。
+
+   ![キャンバステーマの URL](/help/forms/assets/copyurl_canvastheme.png)
+
+1. コマンドプロンプトを開き、上記で作成したクラウドリポジトリのクローンを作成します。
 
    ```
-   git clone https://git.cloudmanager.adobe.com/[my-org]/[my-org]/
+   git clone https://git.cloudmanager.adobe.com/aemforms/Canvasthemerepo/
    ```
-1. 編集中のテーマプロジェクトを、次のようなコマンドを使用して、クローンリポジトリに移動します。 `mv <theme-sources> <cloned-repo>`.
-1. CSS ファイルを変更して、テーマコンポーネントフォルダーで必要な変更を行います。
-1. クローンリポジトリのディレクトリで、先ほど移動したテーマファイルを次のコマンドでコミットします。
+
+1. 編集中のテーマリポジトリのファイルをクラウドリポジトリに移動するには、次のようなコマンドを使用します。
+   `cp -r [source-theme-folder]/* [destination-cloud-repo]`
+例えば、次のコマンドを使用します。 
+`cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
+1. クラウドリポジトリのディレクトリで、次のコマンドを使用して、に移動したテーマファイルをコミットします。
 
    ```text
-   git add <theme-file-name>
-   git commit -m "Adding theme sources"
+   git add .
+   git commit -a -m "Adding theme files"
    git push
    ```
 
@@ -190,10 +216,10 @@ AEM_PROXY_PORT=7000
 これで、カスタマイズ内容が Git リポジトリに安全に保存されました。
 
 
-### 7.フロントエンドパイプラインのデプロイ {#deploy-pipeline}
+### 7.フロントエンドパイプラインを実行する {#deploy-pipeline}
 
-フロントエンドパイプラインを使用して、カスタマイズしたテーマをデプロイします。 学ぶ [カスタマイズしたテーマをデプロイするための最前線パイプラインの設定方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
-
+1. フロントエンドパイプラインを作成して、カスタマイズしたテーマをデプロイします。 学ぶ [カスタマイズしたテーマをデプロイするための最前線パイプラインの設定方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
+1. 作成したフロントエンドパイプラインを実行し、 **[!UICONTROL スタイル]** タブをクリックします。
 
 >[!NOTE]
 >
@@ -205,13 +231,13 @@ AEM_PROXY_PORT=7000
 1. コアコンポーネントを使用して作成されたアダプティブフォームを開きます。
 1. コマンドプロンプトでローカルプロキシサーバーを起動し、 **ローカルでログイン（管理者タスクのみ）**.
 1. サインインすると、ブラウザーにリダイレクトされ、適用されたテーマが表示されます。
-1. キャンバステーマをダウンロードし、ダウンロードした zip フォルダーを展開します。
+1. をダウンロードします。 [キャンバステーマ](https://github.com/adobe/aem-forms-theme-canvas) ダウンロードした zip フォルダーを展開します。
 1. 展開した zip フォルダーを目的のエディターで開きます。
 1. の作成 `.env` theme フォルダー内のファイルに次のパラメーターを追加します。 **AEM URL**, **AEM_ADAPTIVE_FORM** および **AEM_PROXY_PORT**.
 1. キャンバステーマフォルダーのテキストボックスの CSS ファイルを開き、境界線の色を次のように変更します。 `red` 色を付けて変更を保存します。
 1. ブラウザーを再度開くと、変更が直ちにアダプティブフォームに反映されます。
 1. クローンリポジトリ内のキャンバステーマフォルダを移動します。
-1. 変更をコミットし、フロントエンドパイプラインをデプロイします。
+1. 変更をコミットし、フロントエンドパイプラインを実行します。
 
 パイプラインを実行すると、「スタイル」タブでテーマを使用できるようになります。
 
