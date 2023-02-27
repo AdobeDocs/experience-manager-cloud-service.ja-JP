@@ -1,7 +1,7 @@
 ---
 title: テーマの作成および使用
 description: テーマを使用して、コアコンポーネントを使用してアダプティブフォームのスタイルを設定し、視覚的な ID を付けることができます。 任意の数のアダプティブフォームで、テーマを共有できます。
-source-git-commit: 0205ffeabcb422ad70fd9439a1af246f438c52d5
+source-git-commit: 1357b36dc3d14d2ceceb6761cb005b592472890a
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 20%
@@ -86,7 +86,7 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
 テーマをカスタマイズするには、ローカルプロキシサーバーを起動して、実際のAEMコンテンツに基づいたテーマのカスタマイズをリアルタイムで確認します。
 
-### 4.キャンバステーマの package.json と package_lock.json で名前を変更する {#changename-packagelock-packagelockjson}
+### 3.キャンバステーマの package.json と package_lock.json の名前を変更する {#changename-packagelock-packagelockjson}
 
 でキャンバステーマの名前とバージョンを更新する `package.json` および `package_lock.json` ファイル。
 
@@ -96,7 +96,7 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
 ![キャンバステーマ画像](/help/forms/assets/changename_canvastheme.png)
 
-### 3.テーマフォルダーに.env ファイルを作成する {#creating-env-file-theme-folder}
+### 4.テーマフォルダーに.env ファイルを作成する {#creating-env-file-theme-folder}
 
 の作成 `.env` theme フォルダーにファイルを作成し、次のパラメーターを追加します。
 
@@ -112,7 +112,7 @@ AEM_PROXY_PORT=7000
 
 ![キャンバステーマの構造](/help/forms/assets/env-file-canvas-theme.png)
 
-### 4.ローカルプロキシサーバーを起動する {#starting-a-local-proxy-server}
+### 5.ローカルプロキシサーバーを起動する {#starting-a-local-proxy-server}
 
 1. コマンドラインから、ローカルマシン上のテーマのルートに移動します。
 1. `npm install` を実行すると、npm は依存関係を取得し、プロジェクトをインストールします。
@@ -139,7 +139,7 @@ AEM_PROXY_PORT=7000
 
 アダプティブフォームに移動して、アダプティブフォームに適用されたキャンバステーマを確認します。
 
-### 5.テーマをカスタマイズする {#customize-theme}
+### 6.テーマをカスタマイズする {#customize-theme}
 
 1. エディターで、ファイルを開きます。 `<your-theme-sources>/src/site/_variables.scss`.
 
@@ -173,7 +173,7 @@ AEM_PROXY_PORT=7000
 
 変更をAEM Git リポジトリにコミットする前に、 [Git リポジトリ情報](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git).
 
-### 6.変更をコミットする {#committing-the-changes}
+### 7.変更をコミットする {#committing-the-changes}
 
 テーマに変更を加え、ローカルプロキシCloud Serviceでテストした後、その変更をAEM Formsサーバーの Git リポジトリにコミットします。 これにより、カスタマイズされたテーマがFormsCloud Service環境で使用でき、アダプティブFormsの作成者が使用できるようになります。
 
@@ -216,7 +216,7 @@ AEM_PROXY_PORT=7000
 これで、カスタマイズ内容が Git リポジトリに安全に保存されました。
 
 
-### 7.フロントエンドパイプラインを実行する {#deploy-pipeline}
+### 8.フロントエンドパイプラインを実行する {#deploy-pipeline}
 
 1. フロントエンドパイプラインを作成して、カスタマイズしたテーマをデプロイします。 学ぶ [カスタマイズしたテーマをデプロイするための最前線パイプラインの設定方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
 1. 作成したフロントエンドパイプラインを実行し、 **[!UICONTROL スタイル]** タブをクリックします。
