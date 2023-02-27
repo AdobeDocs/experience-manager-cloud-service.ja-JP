@@ -3,10 +3,10 @@ title: ' [!DNL AEM Forms] as a Cloud Service の概要'
 description: AEM Forms を理解し、ビジネスに適したドキュメントやコンテンツの作成にどのように役立つのかを学びます。サービスとしてのプラットフォーム（PaaS）、エンタープライズクラスのデジタルフォームとビジネスプロセスを管理する方法、現在のデータソースに Forms を接続する方法について学びます。
 landing-page-description: AEM as a Cloud Service でのフォームの使用方法を理解します。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: e28eb4340f9beb2d350620d635dc00de11c6e32b
+source-git-commit: 2f9c4d85c55ee63a769c0137d4a70b2126228d5b
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 24%
+source-wordcount: '1144'
+ht-degree: 25%
 
 ---
 
@@ -15,6 +15,8 @@ ht-degree: 24%
 Adobe [!DNL Experience Manager Forms as a Cloud Service] は、複雑なデジタルフォームを作成、管理、公開、更新しながら、送信データをバックエンドプロセス、ビジネスルール、外部データストアに保存する、クラウドネイティブのサービスとしてのプラットフォーム（PaaS）ソリューションを提供します。このサービスは常に最新で、常に利用可能で、常に学習可能です。
 
 このサービスを使用して、インタラクティブで魅力的なデジタルフォームを作成し、展開できます。例えば、顧客登録ジャーニーのデジタル化を検討している組織について考えてみます。既存の顧客データを持つ複数のデータソースがあります。フォームに事前入力したり、フォームの電子サインを追加したり、入力済みのフォームを PDF ファイルとしてアーカイブしたりすることを検討しています。さらに、組織には複数の印刷フォーム（PDF フォーム）があり、すべての印刷フォームをデジタルフォームに変換することも検討しています。
+
+
 
 組織は、[!DNL AEM Forms] as a Cloud Service を使用して、デジタルフォームを作成したり、フォームを既存のデータソースに接続したり、フォームを [!DNL Adobe Sign] と統合して電子サインをフォームに追加したり、送信されたフォームを PDF ファイルとしてアーカイブするためにレコードのドキュメント（DoR）を生成したりできます。また、このサービスを使用して、既存の PDF フォームをデジタルフォームに変換することもできます。
 
@@ -44,9 +46,9 @@ The service provides OOTB support to connect with Adobe Analytics. Connecting fo
 
 >[!ENDTABS] -->
 
-| アダプティブフォーム | 自動フォーム変換サービス | 通信 API | Forms Workflow | E 署名 | Forms Analytics |
-|---|---|---|---|---|---|
-| アダプティブFormsを使用すると、企業は、レスポンシブでモバイルに適した Web サイトやその他のデジタルチャネル用のインタラクティブなデータ駆動型フォームを作成および管理できます。 | automated forms conversionサービスを使用すると、企業は従来のPDFベースのフォームを、オンラインで簡単に管理および配布できる、インタラクティブなデジタルフォームに変換できます。 | 通信 API は、パーソナライズされたデータ駆動型通信の作成、管理および配信を自動化するための RESTful API(Application Programming Interfaces) のセットです。 | Forms中心のワークフローは、フォームやドキュメントサービスに関するビジネスプロセスを自動化するように設計されています。 これらのワークフローは、ビジネスプロセスの様々な段階を進むたびに、フォームとドキュメント生成のルーティング、レビュー、承認を自動化します。 | このプラットフォームをAdobe Analyticsと統合して、組織はユーザーの行動と環境設定に関する貴重なインサイトを得ることができます。 | プラットフォームは、Adobe Signとの標準の統合を提供します。 また、と DocuSign と統合して、ユーザーが電子署名用にFormsを簡単に送信できるようにします。 |
+| アダプティブフォーム | 通信 API | 自動フォーム変換サービス | Forms Workflow | E 署名 | Forms Analytics | データモデル |
+|---|---|---|---|---|---| ---|
+| Web サイト、アプリ、その他のデジタルチャネルや印刷チャネル向けの、インタラクティブで動的で、レスポンシブで、モバイルに適した、データ駆動型のフォームを作成および管理します。 | RESTful API(Application Programming Interfaces) とのパーソナライズされたデータ駆動型通信の作成、管理、および配信を、オンデマンドで、またはスケジュールされた間隔で自動化します。 | 従来のPDFベースのフォームを、オンラインで容易に管理および配布できるアダプティブFormsに変換する。 | フォームとドキュメントサービスに関するビジネスプロセスを自動化します。 ビジネスプロセスの様々な段階を進めるにつれ、フォームとドキュメントの割り当て、ルーティング、確認、承認を行います。 | Adobe Signや DocuSign と統合して、電子署名用にFormsとドキュメントを簡単にユーザーに送信できます。 | Adobe Analyticsを使用して、ユーザーの行動と環境設定に関する貴重なインサイトを得ます。 | フォームとドキュメントを外部データソースと簡単に接続して、データを取得して送信します。 |
 
 <!--
 | | |
@@ -64,51 +66,26 @@ The service provides OOTB support to connect with Adobe Analytics. Connecting fo
 
 >[!TAB ヘッドレスアダプティブForms &#x200B;]
 
-[ヘッドレスアダプティブForms](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) は、Adobe Experience Managerプラットフォーム内でヘッドレス web フォームを作成および管理するためのソリューションです。 この機能を使用すると、従来のグラフィカルユーザーインターフェイスではなく、API を使用してアクセスし操作できるインタラクティブフォームを作成、公開、管理できます。 AEMヘッドレスアダプティブFormsでは、フォームの開発とデプロイメントの柔軟性と拡張性が高まり、フォームのデザインと機能を特定のニーズに合わせてカスタマイズする機能を通じてユーザーエクスペリエンスが向上します。 このソリューションは、AEMおよびヘッドレステクノロジーの機能を利用することで、様々な用途やアプリケーション向けの Web フォームを作成、管理およびデプロイするための堅牢なプラットフォームを提供します。
+||| |—|—| |![](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/assets/how-headless-adaprive-forms-work.png?lang=en)|作成と管理 [ヘッドレス web フォーム](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) をAdobe Experience Managerプラットフォーム内で使用する。 開発者が、従来のグラフィカルユーザーインターフェイスを使用するのではなく、API を使用してアクセスし、操作できるインタラクティブフォームを作成、公開、管理できるようにします。 <br/> <br/> これらのフォームは、従来のHTMLフォームインターフェイスを使用せずに送信できるように設計されています。 つまり、フロントエンドに表示可能なフォーム要素を必要とせずに、API またはバックエンドコードを介してプログラムを使用してフォームデータを送信できます。 <br/> <br/> ヘッドレスフォームは、シングルページアプリケーション、プログレッシブ Web アプリ、モバイルアプリケーションを構築する場合など、従来のHTMLフォームインターフェイスが必要でない場合や実用的でない場合に、様々なシナリオで役立ちます。 開発者が API やバックエンドコードを介して直接フォームデータを送信できるようにすることで、ヘッドレスフォームはワークフローを合理化し、Web アプリケーションの全体的なパフォーマンスを向上させます。|
+
+
 
 
 >[!TAB コアコンポーネント]
 
-この [アダプティブFormsコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) は、Adobe Experience Manager WCM コアコンポーネントの基盤上に構築された、24 個のオープンソースの BEM 準拠コンポーネントのセットです。 これらは、アダプティブFormsの作成に使用するように特別に設計されています。アダプティブフォームとは、ユーザーのデバイス、ブラウザー、画面サイズに応じたフォームです。
+||| |—|—| |![](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/assets/sample-core-components-based-adaptive-form.png?lang=en) | [アダプティブFormsコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) は、Adobe Experience Manager WCM コアコンポーネントの基盤上に構築された、24 個のオープンソースの BEM 準拠コンポーネントのセットです。 これらは、アダプティブFormsの作成に使用するように特別に設計されています。アダプティブフォームとは、ユーザーのデバイス、ブラウザー、画面サイズに応じたフォームです。 <br/> <br/> これらのコンポーネントは、テキストフィールド、チェックボックス、ドロップダウンメニューなど、様々なフォームフィールドオプションを提供することで、例外的なデータ取得および登録エクスペリエンスを作成するために使用できます。 また、検証、条件付きロジック、レスポンシブデザインなどの機能も含まれ、使いやすく使いやすいフォームを作成するのに使用できます。 <br/> <br/>  さらに、これらのコンポーネントはオープンソースなので、開発者は、組織の特定のニーズに合わせてコンポーネントを簡単にカスタマイズおよび拡張できます。 また、これらのコンポーネントは、拡張性と保守性を確保する BEM 手法に基づいて構築されています。|
 
-これらのコンポーネントは、テキストフィールド、チェックボックス、ドロップダウンメニューなど、様々なフォームフィールドオプションを提供することで、例外的なデータ取得および登録エクスペリエンスを作成するために使用できます。 また、検証、条件付きロジック、レスポンシブデザインなどの機能も含まれ、使いやすく使いやすいフォームを作成するのに使用できます。
-
-さらに、これらのコンポーネントはオープンソースなので、開発者は、組織の特定のニーズに合わせてコンポーネントを簡単にカスタマイズおよび拡張できます。 また、これらのコンポーネントは、拡張性と保守性を確保する BEM 手法に基づいて構築されます。
 
 
 >[!TAB Microsoft PowerAutomate Connector &#x200B;]
 
-Microsoft Power Automate Connector for AEM Formsは、Adobe Experience Manager(AEM)FormsとMicrosoft Power Automate( 旧称Microsoftフロー ) を統合できるコネクタです。 Power Automate は、様々なアプリケーションやサービス間で自動ワークフローを作成できるクラウドベースのサービスです。
+||| |—|—| |![](https://powerusers.microsoft.com/t5/image/serverpage/image-id/182924i17C4BEA1C045D731/image-size/large/is-moderation-mode/true?v=1.0&amp;px=999)| AEM Forms Power Automate Connector を使用すると、Adobe Experience Manager(AEM)FormsをMicrosoft Power Automate( 旧称Microsoftフロー ) と統合できます。 Power Automate は、様々なアプリケーションやサービス間で自動ワークフローを作成できるクラウドベースのサービスです。  <br/> <br/> AEM Form Power Automate Connector を使用すると、アダプティブフォームの送信に基づいて自動的にトリガーを設定するワークフローを作成できます。 例えば、ユーザーがフォームを送信したときに電子メール通知を特定のユーザーに自動的に送信するワークフローや、ユーザーがフォームを完了したときにMicrosoft Planner でタスクを作成するワークフローを作成できます。  <br/> <br/> AEM Forms Power Automate Connector は、Microsoft Power Automate に接続する他のアプリケーションやサービスとアダプティブFormsを自動化および統合し、様々なツールを操作できる強力なツールです。 特定のニーズに合わせてワークフローを作成し、カスタムのアクション、条件およびトリガーを追加できます。 さらに、Power Automate は詳細な分析とレポート機能を提供し、時間の経過と共にワークフローを監視および最適化できます。|
 
-Power Automate Connector for AEM Form を使用すると、アダプティブフォームの送信に基づいて自動的にトリガーを設定するワークフローを作成できます。 例えば、ユーザーがフォームを送信したときに電子メール通知を特定のユーザーに自動的に送信するワークフローや、ユーザーがフォームを完了したときにMicrosoft Planner でタスクを作成するワークフローを作成できます。
-
-Power Automate Connector for AEM Formsを使用するには、次のような多くの利点があります。
-
-* **自動処理**:日常的なタスクを自動化し、プロセスを合理化して、時間を節約し、エラーを減らすことができます。
-
-* **統合**:コネクタを使用すると、Adobe Experience Manager Formsを他のアプリケーションやサービスと統合し、様々なツールを操作できます。
-
-* **カスタマイズ**:特定のニーズに合わせてワークフローを作成し、カスタムのアクション、条件およびトリガーを追加できます。
-
-* **Analytics**:Power Automate には、詳細な分析とレポート機能が用意されており、時間の経過と共にワークフローを監視および最適化できます。
-
-Power Automate Connector for AEM Formsは、AEM Formsを他のアプリケーションやサービスと自動化および統合し、効率と生産性を向上させる強力なツールです。
 
 >[!TAB Microsoft Storage Connectors:OneDrive と SharePoint]
 
-AEM Forms Microsoft Storage Connectors for OneDrive とSharePointは、Adobe Experience Manager(AEM)FormsをMicrosoft OneDrive およびSharePointと統合するためのコネクタです。 これらのコネクタを使用すると、Microsoftのクラウドベースのストレージソリューション内にAEM Formsのデータとドキュメントを保存および管理できます。
+||| |—|—| |![](/help/forms/assets/onedrive-and-sharepoint.jpg)|AEM Forms Microsoft Storage Connectors for OneDrive とSharePointは、Adobe Experience Manager(AEM)FormsをMicrosoft OneDrive およびSharePointと統合するためのコネクタです。 これらのコネクタを使用すると、Microsoftのクラウドベースのストレージソリューション内にAEM Formsのデータとドキュメントを保存および管理できます。 <br/> <br/> これらのコネクタを使用すると、Microsoft OneDrive 内にAEM Formsのデータとドキュメントを保存および管理できます。 このコネクタを使用すると、データファイルと添付ファイルをAEM Formsから直接 OneDrive とSharePointにアップロードできます。 <br/> <br/> AEM Forms Microsoft Storage Connectors for OneDrive およびSharePointを使用するには、いくつかのメリットがあります。 <ul><li> **統合**:これらのコネクタを使用すると、AEM FormsとMicrosoftのクラウドベースのストレージソリューションを統合し、これらのプラットフォームの機能を活用できます。 </li> <li> **共同作業**:OneDrive とSharePointは、チームメンバーがファイルやドキュメントを共同で作業できるようにするコラボレーションプラットフォームです。 AEM Formsをこれらのプラットフォームと統合することで、コラボレーションとチームワークを改善できます。 </li> <li> **セキュリティ**:OneDrive とSharePointは堅牢なセキュリティ機能を備え、データとドキュメントを安全に保存し、安全にアクセスできます。 </li> <br/> AEM Forms Microsoft Storage Connectors for OneDrive とSharePointは、Microsoftのクラウドベースのストレージソリューション内にAEM Formsのデータとドキュメントを保存および管理し、コラボレーションとセキュリティを向上させる強力なツールです。|
 
-これらのコネクタを使用すると、Microsoft OneDrive 内にAEM Formsのデータとドキュメントを保存および管理できます。 このコネクタを使用すると、データファイルと添付ファイルをAEM Formsから直接 OneDrive とSharePointにアップロードできます。
-
-AEM Forms Microsoft Storage Connectors for OneDrive およびSharePointを使用するには、いくつかのメリットがあります。
-
-* **統合**:これらのコネクタを使用すると、AEM FormsとMicrosoftのクラウドベースのストレージソリューションを統合し、これらのプラットフォームの機能を活用できます。
-
-* **共同作業**:OneDrive とSharePointは、チームメンバーがファイルやドキュメントを共同で作業できるようにするコラボレーションプラットフォームです。 AEM Formsをこれらのプラットフォームと統合することで、コラボレーションとチームワークを改善できます。
-
-* **セキュリティ**:OneDrive とSharePointは堅牢なセキュリティ機能を備え、データとドキュメントを安全に保存し、安全にアクセスできます。
-
-AEM Forms Microsoft Storage Connectors for OneDrive とSharePointは、Microsoftのクラウドベースのストレージソリューション内にAEM Formsのデータとドキュメントを保存および管理し、コラボレーションとセキュリティを向上させる強力なツールです。
 
 >[!ENDTABS]
 
