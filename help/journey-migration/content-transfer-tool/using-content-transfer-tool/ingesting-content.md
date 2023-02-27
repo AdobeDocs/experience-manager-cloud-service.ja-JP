@@ -2,10 +2,10 @@
 title: Target へのコンテンツの取り込み
 description: Target へのコンテンツの取り込み
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: acddd68b61173ab956cafcc7168fd7f898973638
+source-git-commit: 3ccc225a665392552621c78615a31917eb44f1fd
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 64%
+source-wordcount: '1660'
+ht-degree: 61%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 64%
 >id="aemcloud_ctt_ingestion"
 >title="コンテンツの取得"
 >abstract="取得とは、移行セットからターゲット Cloud Service インスタンスにコンテンツを取り込むことです。コンテンツ転送ツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja#top-up-ingestion-process" text="追加インジェスト"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-ingestion-process" text="追加インジェスト"
 
 コンテンツ転送ツールで移行セットを取り込むには、次の手順に従います。
 >[!NOTE]
@@ -31,7 +31,7 @@ ht-degree: 64%
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
 
-1. 取り込みチェックリストを確認し、すべての手順が完了していることを確認します。 これらは、取り込みを正常におこなうために必要な手順です。 次の手順に進むことができます： **次へ** 手順は、チェックリストが完了した場合にのみ実行します。
+1. 取り込みチェックリストをレビューし、すべての手順が完了していることを確認します。 これらは、取り込みを正常に行うために必要な手順です。 チェックリストが完了した場合にのみ、**次**&#x200B;の手順に進むことができます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
@@ -46,7 +46,7 @@ ht-degree: 64%
 
    >[!NOTE]
    >
-   >ターゲット層が `Author`に設定すると、オーサーインスタンスは取り込み中にシャットダウンされ、ユーザー（作成者やメンテナンスを実行しているすべてのユーザーなど）は使用できなくなります。 これは、システムを保護し、失われたり取り込みの競合を引き起こしたりする可能性のある変更を防ぐためです。 チームがこの事実を認識していることを確認してください。 また、オーサーの取り込み中に環境が休止状態で表示されることに注意してください。
+   >ターゲット層が `Author` の場合、オーサーインスタンスは取り込み期間中にシャットダウンされ、ユーザー（作成者やメンテナンスを実行中のユーザーなど）が使用できなくなります。 これは、システムを保護し、変更を防ぐことを目的としています。変更は、失われたり取り込みの競合を引き起こしたりする可能性があるためです。チームがこの事実を認識していることを確認してください。 また、オーサーの取り込み中は環境が休止状態と表示されることに注意してください。
 
    >[!NOTE]
    >
@@ -66,7 +66,7 @@ ht-degree: 64%
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. その後、取り込みジョブリストビューで取り込み段階を監視できます。 また、インジェストのアクションメニューを使用して、インジェストの進行に応じてログを表示できます。
+1. その後、取り込みジョブリストビューで取り込み段階を監視できます。 また、取り込みのアクションメニューを使用し、取り込みの進行に伴ってログを表示できます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
@@ -135,11 +135,28 @@ ht-degree: 64%
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
+### 移行サービスに接続できません {#unable-to-reach-migration-service}
+
+取り込みが要求されると、次のようなメッセージがユーザーに表示される場合があります。「宛先環境の移行サービスには現在到達できません。 後でやり直すか、Adobeサポートにお問い合わせください。」
+
+![画像](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
+
+これは、Cloud Acceleration Manager が、ターゲット環境の移行サービスに到達して取り込みを開始できなかったことを示しています。 これは多くの理由で発生する可能性があります。
+
+>[!NOTE]
+> 
+> 「移行トークン」フィールドが表示されるのは、場合によっては、そのトークンを取得することは実際には許可されないからです。 手動で指定できるので、ユーザーは追加のヘルプを必要とせずに、すばやく取り込みを開始できます。 トークンが指定され、メッセージが表示される場合は、トークンの取得は問題ではありませんでした。
+
+* AEM as a Cloud Serviceは環境の状態を維持し、多くの通常の理由で移行サービスの再起動が必要になる場合があります。 そのサービスが再起動中の場合は、サービスに到達できませんが、間もなく利用可能になります。
+* 別のプロセスがインスタンス上で実行されている可能性があります。 例えば、Release Orchestrator が更新を適用している場合、システムがビジー状態で、移行サービスが定期的に使用できない可能性があります。 これと、ステージインスタンスまたは実稼動インスタンスを破損する可能性が、取り込み中に更新を一時停止することを強くお勧めする理由です。
+* 次の場合、 [IP許可リストが適用されました](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Cloud Manager を使用すると、Cloud Acceleration Manager が移行サービスに到達するのをブロックします。 アドレスが非常に動的なので、取り込み用に IP アドレスを追加できません。 現在、唯一の解決策は、取り込みの実行中に IP許可リストを無効にすることです。
+* 調査が必要な理由が他にもあるかもしれません。 それでも取り込みに失敗する場合は、Adobeカスタマーケアにお問い合わせください。
+
 ### Release Orchestrator による自動更新は、引き続き有効になっています
 
 Release Orchestrator は、更新を自動的に適用することで、環境を自動的に最新の状態に保ちます。 取り込みの実行中に更新がトリガーされた場合、環境の破損を含む予期しない結果が生じる可能性があります。 これは、取り込みを開始する前にサポートチケットをログに記録する必要がある理由の 1 つです（上記の「注意」を参照）。これにより、Release Orchestrator を一時的に無効にするようにスケジュールできます。
 
-取り込みの開始時に Release Orchestrator が実行中である場合は、UI にこのエラーメッセージが表示されます。 フィールドをチェックし、再度ボタンを押すことで、リスクを受け入れながら、続行することもできます。
+取り込みの開始時に Release Orchestrator が実行中の場合は、UI にこのメッセージが表示されます。 フィールドをチェックし、再度ボタンを押すことで、リスクを受け入れながら、続行することもできます。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
@@ -157,4 +174,4 @@ AEMの各ノードには、一意の UUID が必要です。 このエラーは�
 
 ## 次のステップ {#whats-next}
 
-コンテンツの Target への取り込みが完了したら、各手順のログ（抽出および取り込み）を表示し、エラーを探すことができます。 詳しくは、[移行セットのログの表示](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ja)を参照してください。
+Target へのコンテンツの取り込みが完了したら、各ステップ（抽出と取り込み）のログを表示し、エラーを探すことができます。詳しくは、[移行セットのログの表示](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ja)を参照してください。
