@@ -1,9 +1,9 @@
 ---
 title: AEM 6.5 Forms と AEM Cloud Services の間での変更点
 description: Experience Manager Forms のユーザーで、Adobe Experience Manager Forms as aCloud Service にアップグレードする予定ですか？Cloud Service にアップグレードまたは移行する前に、最も重要な変更点を説明します。
-contentOwner: khsingh
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
-source-git-commit: d77b8d389be4b5c0ffa262ad6f1ff8b4d899e82b
+contentOwner: khsingh
+source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
 workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 27%
@@ -16,39 +16,39 @@ Adobe Experience Manager Forms as a Cloud Serviceは、Adobe Experience Manager 
 
 | 機能/機能 | [!DNL AEM Forms] as a Cloud Service | AEM 6.5 Forms |
 |---|---|---|
-| クラウドネイティブなアーキテクチャ | ☑ | ☒ |
-| 負荷に基づく自動スケーリング | ☑ | ☒ |
-| アップグレードのダウンタイムなし | ☑ | ☒ |
+| クラウドネイティブなアーキテクチャ | ✅ | ⛌ |
+| 負荷に基づく自動スケーリング | ✅ | ⛌ |
+| アップグレードのダウンタイムなし | ✅ | ⛌ |
 | 機能のロールアウト頻度 | アジャイル* | 毎四半期 |
-| CDN（コンテンツ配信ネットワーク）を含む | ☑ | ☒ |
-| 耐障害性と効率性を最大限に高めるために最適化されたトポロジ | ☑ | ☒ |
-| クラウドネイティブ開発環境 | ☑ | ☒ |
-| Cloud Manager を介したセルフサービス | ☑ | ☒ |
-| 継続的統合および継続的配信 (CI/CD) による自動アップグレード | ☑ | ☒ |
-| [!DNL Micosoft Power Automate] との統合 | ☑ | ☒ |
-| [!DNL DocuSign] との統合 | ☑ | ☒ |
-| Microsoft Dynamics と Salesforce との簡単な接続 | ☑ | ☒ |
-| Microsoft Azure データストアとの簡単な接続 | ☑ | ☒ |
-| 堅牢化されたルールエディター | ☑ | ☒ |
-| フォーム作成ウィザード | ☑ | ☒ |
-| レコードのドキュメントのカスタム XCI のサポート | ☑ | ☒ |
-| アダプティブForms <sup>1</sup> | ☑ | ☑ |
-| 複数のデータソースとのデータ統合 | ☑ | ☑ |
-| 通信 API(Document Services) <sup>2,3</sup> | ☑ | ☑ |
-| automated forms conversionサービス <sup>4</sup> | ☑ | ☑ |
-| [!DNL Adobe Sign] との統合 | ☑ | ☑ |
-| [!DNL AEM Sites] との統合 | ☑ | ☑ |
-| [!DNL Adobe Launch] との統合 | ☑ | ☑ |
-| [!DNL Adobe Analytics] との統合 | ☑ | ☑ |
-| Forms Portal <sup>5</sup> | ☑ | ☑ |
-| AEM ワークフロー | ☑ | ☑ |
-| レコードのドキュメント | ☑ | ☑ |
-| 非表示の Captcha | ☑ | ☑ |
-| 再利用可能なフォームデータモデルの設定 | ☑ | ☑ |
-| Acroform ベースのレコードのドキュメント | ☑ | ☑ |
-| Adobe Sign対応アダプティブFormsの政府機関 ID ベースの ID 認証 | ☑ | ☑ |
-| HTML5 <sup>6</sup> | ☒ | ☑ |
-| Document Security | ☒ | ☑ |
+| CDN（コンテンツ配信ネットワーク）を含む | ✅ | ⛌ |
+| 耐障害性と効率性を最大限に高めるために最適化されたトポロジ | ✅ | ⛌ |
+| クラウドネイティブ開発環境 | ✅ | ⛌ |
+| Cloud Manager を介したセルフサービス | ✅ | ⛌ |
+| 継続的統合および継続的配信 (CI/CD) による自動アップグレード | ✅ | ⛌ |
+| [!DNL Micosoft Power Automate] との統合 | ✅ | ⛌ |
+| [!DNL DocuSign] との統合 | ✅ | ⛌ |
+| Microsoft Dynamics と Salesforce との簡単な接続 | ✅ | ⛌ |
+| Microsoft Azure データストアとの簡単な接続 | ✅ | ⛌ |
+| 堅牢化されたルールエディター | ✅ | ⛌ |
+| フォーム作成ウィザード | ✅ | ⛌ |
+| レコードのドキュメントのカスタム XCI のサポート | ✅ | ⛌ |
+| アダプティブForms <sup>1</sup> | ✅ | ✅ |
+| 複数のデータソースとのデータ統合 | ✅ | ✅ |
+| 通信 API(Document Services) <sup>2,3</sup> | ✅ | ✅ |
+| automated forms conversionサービス <sup>4</sup> | ✅ | ✅ |
+| [!DNL Adobe Sign] との統合 | ✅ | ✅ |
+| [!DNL AEM Sites] との統合 | ✅ | ✅ |
+| [!DNL Adobe Launch] との統合 | ✅ | ✅ |
+| [!DNL Adobe Analytics] との統合 | ✅ | ✅ |
+| Forms Portal <sup>5</sup> | ✅ | ✅ |
+| AEM ワークフロー | ✅ | ✅ |
+| レコードのドキュメント | ✅ | ✅ |
+| 非表示の Captcha | ✅ | ✅ |
+| 再利用可能なフォームデータモデルの設定 | ✅ | ✅ |
+| Acroform ベースのレコードのドキュメント | ✅ | ✅ |
+| Adobe Sign対応アダプティブFormsの政府機関 ID ベースの ID 認証 | ✅ | ✅ |
+| HTML5 <sup>6</sup> | ⛌ | ✅ |
+| Document Security | ⛌ | ✅ |
 
 本サービスを進める前に、以下の例外事例を考慮してください。
 
