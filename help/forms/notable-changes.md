@@ -3,10 +3,10 @@ title: AEM 6.5 Forms と AEM Cloud Services の間での変更点
 description: Experience Manager Forms のユーザーで、Adobe Experience Manager Forms as aCloud Service にアップグレードする予定ですか？Cloud Service にアップグレードまたは移行する前に、最も重要な変更点を説明します。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
+source-git-commit: 7c157cbeb530627c1b888379896ddffda3f3efb3
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 27%
+source-wordcount: '1215'
+ht-degree: 26%
 
 ---
 
@@ -103,14 +103,18 @@ Formsポータルの匿名使用に対するサポートは、標準では利用
 
 +++ 6.HTML5 Forms(Mobile Forms)
 
-このサービスは、HTML5 Forms (Mobile Forms) をサポートしていません。 XDP ベースのフォームをHTML5 Formsとしてレンダリングする場合、AEM 6.5 Forms上で引き続きこの機能を使用できます。
+* このサービスは、HTML5 Forms (Mobile Forms) をサポートしていません。 XDP ベースのフォームをHTML5 Formsとしてレンダリングする場合、AEM 6.5 Forms上で引き続きこの機能を使用できます。
+
+* データをオフラインでキャプチャし、次にオンラインに戻る際に同期するユーザーがいる場合は、 [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) AEM 6.5 Formsの機能
 
 +++
 
 
 +++ 7.フォームデータモデル
 
-Formsデータモデルでは、データの送信に HTTP および HTTPs エンドポイントのみをサポートしています。 このサービスは、REST コネクタの相互 SSL および SOAP データソースの x509 証明書ベースの認証をサポートしていません。 * Formsas a Cloud Serviceでは、Microsoft Azure Blob、Microsoft Sharepoint、Microsoft OneDrive、一般的な CRUD（作成、読み取り、更新、削除）操作をサポートするサービスをデータストアとして使用できます。Open API 仕様 2.0 と Open API 仕様の両方がサポートされています。 また、このサービスは JDBC コネクタのサポートも提供します。
+* Formsデータモデルでは、データの送信に HTTP および HTTPs エンドポイントのみをサポートしています。 このサービスは、REST コネクタの相互 SSL および SOAP データソースの x509 証明書ベースの認証をサポートしていません。
+
+* Formsas a Cloud Serviceでは、Microsoft Azure Blob、Microsoft Sharepoint、Microsoft OneDrive および一般的な CRUD（作成、読み取り、更新、削除）操作をサポートするサービスをデータストアとして使用できます。Open API 仕様 2.0 と Open API 仕様の両方がサポートされています。 また、このサービスは JDBC コネクタのサポートも提供します。
 
 +++
 
