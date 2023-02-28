@@ -3,9 +3,9 @@ title: ' [!DNL AEM Forms] as a Cloud Service の概要'
 description: AEM Forms を理解し、ビジネスに適したドキュメントやコンテンツの作成にどのように役立つのかを学びます。サービスとしてのプラットフォーム（PaaS）、エンタープライズクラスのデジタルフォームとビジネスプロセスを管理する方法、現在のデータソースに Forms を接続する方法について学びます。
 landing-page-description: AEM as a Cloud Service でのフォームの使用方法を理解します。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: c51aa20a37e27252a8c1e6a72d4bc6ffacea46f7
+source-git-commit: 3b6bf70ffefeb067620d6071b339384c53820ab5
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '952'
 ht-degree: 42%
 
 ---
@@ -20,7 +20,8 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] は、複雑なデジ�
 
 組織は、[!DNL AEM Forms] as a Cloud Service を使用して、デジタルフォームを作成したり、フォームを既存のデータソースに接続したり、フォームを [!DNL Adobe Sign] と統合して電子サインをフォームに追加したり、送信されたフォームを PDF ファイルとしてアーカイブするためにレコードのドキュメント（DoR）を生成したりできます。また、このサービスを使用して、既存の PDF フォームをデジタルフォームに変換することもできます。
 
-![データ収集 — レスポンシブフォームデザイン](/help/forms/assets/data-collection.jpeg){width="40%"}
+![データ収集 — レスポンシブフォームデザイン](/help/forms/assets/data-collection.jpeg "複数のデバイス向けのアダプティブFormsエクスペリエンス"){width="70%" align="center"}
+
 レスポンシブフォームデザイン
 
 大企業では、一度フォームを作成し、その後はコンテンツ管理システムにコピーして再利用されることも多くあります。フォームの大規模なデータベースを最新状態に維持し、検索可能な状態に保つことは非常に頭の痛い課題となることもあります。AEM はカスタマイズ可能な「フォームポータル」を提供することにより、Web チャネルおよびモバイルチャネルの双方から必要なフォームを見つけ、アクセスできる状態に保ちます。
@@ -34,7 +35,8 @@ AEM Formsを使用すると、ビジネスユーザーは、ドキュメント�
 領収書、ウェルカムキット、明細書など、パーソナライズされたドキュメントを簡単に生成できます。 組織では、パーソナライズされた Web ポータルへトラフィックを引き込み、別のサービスへの登録や購入を促進することができます。
 
 
-![パーソナライズされたコミュニケーション — レスポンシブデザイン](/help/forms/assets/personalized-communication.jpeg){width="40%"}
+![パーソナライズされたコミュニケーション — レスポンシブデザイン](/help/forms/assets/personalized-communication.jpeg "オンデマンドで生成されたパーソナライズされたPDF請求書"){width="70%" align="center"}
+
 パーソナライズされた請求書
 
 このサービスは常に最新で、常に利用可能で、常に学習可能です。組織では [!DNL AEM Forms] as a Cloud Serviceのインフラストラクチャを必要とせずに、クラウド内のこれらの機能をすべて入手できます。 また、このサービスは常に最新の機能を備えているので、複雑なアップグレードサイクルから組織を解放します。
