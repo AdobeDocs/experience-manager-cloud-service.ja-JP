@@ -3,10 +3,10 @@ title: AEM 6.5 Forms と AEM Cloud Services の間での変更点
 description: Experience Manager Forms のユーザーで、Adobe Experience Manager Forms as aCloud Service にアップグレードする予定ですか？Cloud Service にアップグレードまたは移行する前に、最も重要な変更点を説明します。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 7c157cbeb530627c1b888379896ddffda3f3efb3
+source-git-commit: f44a789984c38f6d34eb5c7d6999d5148b15aec8
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 26%
+source-wordcount: '1179'
+ht-degree: 25%
 
 ---
 
@@ -33,21 +33,11 @@ Adobe Experience Manager Forms as a Cloud Serviceは、Adobe Experience Manager 
 | フォーム作成ウィザード | ✅ | ⛌ |
 | レコードのドキュメントのカスタム XCI のサポート | ✅ | ⛌ |
 | アダプティブForms <sup>1</sup> | ✅ | ✅ |
-| 複数のデータソースとのデータ統合 | ✅ | ✅ |
 | 通信 API(Document Services) <sup>2,3</sup> | ✅ | ✅ |
 | automated forms conversionサービス <sup>4</sup> | ✅ | ✅ |
-| [!DNL Adobe Sign] との統合 | ✅ | ✅ |
-| [!DNL AEM Sites] との統合 | ✅ | ✅ |
-| [!DNL Adobe Launch] との統合 | ✅ | ✅ |
-| [!DNL Adobe Analytics] との統合 | ✅ | ✅ |
 | Forms Portal <sup>5</sup> | ✅ | ✅ |
-| AEM ワークフロー | ✅ | ✅ |
-| レコードのドキュメント | ✅ | ✅ |
-| 非表示の Captcha | ✅ | ✅ |
-| 再利用可能なフォームデータモデルの設定 | ✅ | ✅ |
-| Acroform ベースのレコードのドキュメント | ✅ | ✅ |
-| Adobe Sign対応アダプティブFormsの政府機関 ID ベースの ID 認証 | ✅ | ✅ |
-| HTML5 <sup>6</sup> | ⛌ | ✅ |
+| Forms Data Model <sup>6</sup> | ✅ | ✅ |
+| HTML5 Forms <sup>7</sup> | ⛌ | ✅ |
 | Document Security | ⛌ | ✅ |
 
 本サービスを進める前に、以下の例外事例を考慮してください。
@@ -84,7 +74,7 @@ Adobe Experience Manager Forms as a Cloud Serviceは、Adobe Experience Manager 
 
 +++ 3.ドキュメントサービス：ドキュメント生成 API（Output サービス）
 
-1 回の API 呼び出しまたはバッチで、複数の DATA XML ファイルで使用できるテンプレートは 1 つだけです。 1 回の API 呼び出しでの複数のデータファイルでの複数のテンプレートの使用はサポートされていません。
+1 回の API 呼び出しまたはバッチで、複数の DATA XML ファイルで使用できるテンプレートは 1 つだけです。 1 回の API 呼び出しで複数のデータファイルで複数のテンプレートを使用することはできません。
 
 +++
 
@@ -94,29 +84,31 @@ Adobe Experience Manager Forms as a Cloud Serviceは、Adobe Experience Manager 
 
 +++
 
-+++ 5.Formsポータル
++++ 5. Forms Portal
 
-Formsポータルの匿名使用に対するサポートは、標準では利用できません (OOTB)。 フォームポータルをカスタマイズして、ログインしていないユーザーに対して表示するフォームを有効にすることができます。
-
-+++
-
-
-+++ 6.HTML5 Forms(Mobile Forms)
-
-* このサービスは、HTML5 Forms (Mobile Forms) をサポートしていません。 XDP ベースのフォームをHTML5 Formsとしてレンダリングする場合、AEM 6.5 Forms上で引き続きこの機能を使用できます。
-
-* データをオフラインでキャプチャし、次にオンラインに戻る際に同期するユーザーがいる場合は、 [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) AEM 6.5 Formsの機能
+Forms Portal の匿名での使用は、標準ではサポートされていません (OOTB)。 Forms Portal をカスタマイズして、ログインしていないユーザー向けのフォームの表示を有効にすることができます。
 
 +++
 
-
-+++ 7.フォームデータモデル
++++ 6.フォームデータモデル
 
 * Formsデータモデルでは、データの送信に HTTP および HTTPs エンドポイントのみをサポートしています。 このサービスは、REST コネクタの相互 SSL および SOAP データソースの x509 証明書ベースの認証をサポートしていません。
 
 * Formsas a Cloud Serviceでは、Microsoft Azure Blob、Microsoft Sharepoint、Microsoft OneDrive および一般的な CRUD（作成、読み取り、更新、削除）操作をサポートするサービスをデータストアとして使用できます。Open API 仕様 2.0 と Open API 仕様の両方がサポートされています。 また、このサービスは JDBC コネクタのサポートも提供します。
 
 +++
+
+
++++ 7.HTML5 Forms(Mobile Forms)
+
+* このサービスは、HTML5 Forms (Mobile Forms) をサポートしていません。 XDP ベースのフォームをHTML5 Formsとしてレンダリングする場合、AEM 6.5 Forms上で引き続きこの機能を使用できます。
+
+* データをオフラインでキャプチャし、次回オンラインに戻る際に同期する使用例がある場合は、 [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) AEM 6.5 Formsの機能
+
++++
+
+
+
 
 
 +++ 8.開発環境

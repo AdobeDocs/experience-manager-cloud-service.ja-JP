@@ -1,10 +1,10 @@
 ---
-title: Adobe Experience Manager(AEM)Formsas a Cloud Serviceの最新の革新
+title: Adobe Experience Manager Forms as a Cloud Serviceの最新のイノベーションをご覧ください。
 description: «の最新の機能を理解する [!DNL AEM Forms] エンタープライズクラスのフォームとビジネスプロセスの作成、管理、公開をas a Cloud Serviceできます。」
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
+source-git-commit: f44a789984c38f6d34eb5c7d6999d5148b15aec8
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start us
 
 AEM Formsas a Cloud Serviceの最新のイノベーションの一部を次に示します。
 
-|  |  |
+| 機能 | 詳細 |
 |---|---|
 | ヘッドレスアダプティブForms | 作成と管理 [ヘッドレスアダプティブForms](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) をAdobe Experience Managerプラットフォーム内で使用する。 開発者が、従来のグラフィカルユーザーインターフェイスを使用するのではなく、API を使用してアクセスし、操作できるインタラクティブフォームを作成、公開、管理できるようにします。 <br/> <br/> これらのフォームは、従来のHTMLフォームインターフェイスを使用せずに送信できるように設計されています。 つまり、フロントエンドに表示可能なフォーム要素を必要とせずに、API またはバックエンドコードを介してプログラムを使用してフォームデータを送信できます。 <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/assets/how-headless-adaprive-forms-work.png?)<br/> ヘッドレスフォームは、シングルページアプリケーション、プログレッシブ Web アプリ、モバイルアプリケーションを構築する場合など、従来のHTMLフォームインターフェイスが必要でない場合や実用的でない場合に、様々なシナリオで役立ちます。 開発者が API やバックエンドコードを介して直接フォームデータを送信できるようにすることで、ヘッドレスフォームを利用してワークフローを合理化し、Web アプリケーションの全体的なパフォーマンスを向上させることができます。 |
 | コアコンポーネント | この [アダプティブFormsコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) は、Adobe Experience Manager WCM コアコンポーネントの基盤上に構築された、24 個のオープンソースの BEM 準拠コンポーネントのセットです。 これらは、アダプティブFormsの作成に使用するように特別に設計されています。アダプティブフォームとは、ユーザーのデバイス、ブラウザー、画面サイズに応じたフォームです。 <br/> <br/> これらのコンポーネントは、テキストフィールド、チェックボックス、ドロップダウンメニューなど、様々なフォームフィールドオプションを提供することで、例外的なデータ取得および登録エクスペリエンスを作成するために使用できます。 また、検証、条件付きロジック、レスポンシブデザインなどの機能も含まれ、使いやすく使いやすいフォームを作成するのに使用できます。 <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/assets/sample-core-components-based-adaptive-form.png?)<br/>  さらに、これらのコンポーネントはオープンソースなので、開発者は、組織の特定のニーズに合わせてコンポーネントを簡単にカスタマイズおよび拡張できます。 また、これらのコンポーネントは、拡張性と保守性を確保する BEM 手法に基づいて構築されます。 |

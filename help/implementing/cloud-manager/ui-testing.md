@@ -2,9 +2,9 @@
 title: UI テスト
 description: カスタム UI テストは、カスタムアプリケーションの UI テストを作成して自動的に実行できるオプション機能です
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: b1eacc8432a73f015529975e6960afbe9dee7565
+source-git-commit: 3e31b065999d36717b81253d2773e41b76949954
 workflow-type: tm+mt
-source-wordcount: '2143'
+source-wordcount: '2141'
 ht-degree: 56%
 
 ---
@@ -221,7 +221,7 @@ Adobeのサンプルを使用する場合：
 Adobeテストサンプルには、設定パラメーターにアクセスするためのヘルパー関数が用意されています。
 
 * JavaScript:詳しくは、 [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) モジュール
-* Java:詳しくは、 [設定](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) クラス
+* Java:詳しくは、 [設定](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) クラス
 
 ### Selenium の準備完了までの待機 {#waiting-for-selenium}
 
@@ -255,21 +255,9 @@ Docker イメージでは、追加のテスト出力（スクリーンショッ�
 ヘルパー関数を使用して、テストを通じてスクリーンショットを作成できます。
 
 * JavaScript: [takeScreenshot コマンド](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
-* Java: [コマンド](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
+* Java: [コマンド](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-UI テストの実行中にテスト結果アーカイブが作成された場合、テストログファイルには、最後のテスト結果アーカイブの場所への参照が含まれます。
-
-```
-[...]
-
-===============================================================
-The detailed test results can be downloaded from the URL below.
-Note: the link will expire after 60 days
-
-    https://results-host/test-results.zip
-
-===============================================================
-```
+UI テストの実行中にテスト結果アーカイブが作成された場合は、Cloud Manager から、 `Download Details` ボタン [**カスタム UI テスト** 手順](/help/implementing/cloud-manager/deploy-code.md)
 
 ### ファイルのアップロード {#upload-files}
 
@@ -282,7 +270,7 @@ Note: the link will expire after 60 days
    * このような HTTP リクエストを実行する方法については、Docker イメージで使用されているプログラミング言語のドキュメントやライブラリを参照してください。
    * Adobeのテストサンプルには、ファイルをアップロードするためのヘルパー関数が用意されています。
       * JavaScript:詳しくは、 [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) コマンドを使用します。
-      * Java:詳しくは、 [FileHandler](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) クラス。
+      * Java:詳しくは、 [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) クラス。
 1. アップロードが成功した場合、リクエストは `200 OK` タイプの `text/plain` 応答を返します。
    * この応答の内容は不透明なファイルハンドルです。
    * `<input>` 要素のファイルパスの代わりにこのハンドルを使用して、アプリケーション内のアップロードファイルをテストできます。
@@ -344,4 +332,4 @@ Cloud Manager のテストは、技術管理者ユーザーを使用して実行
 >
 >* ログファイルは、 `target/reports` リポジトリのフォルダー。
 >
->詳しくは、 [AEM Test Samples リポジトリ。](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/README.MD)
+>詳しくは、 [AEM Test Samples リポジトリ。](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)
