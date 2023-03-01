@@ -12,9 +12,9 @@ hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
 source-git-commit: 803c4dc44189d58ddbd2669b00dd8107b2a926ae
-workflow-type: tm+mt
-source-wordcount: '3712'
-ht-degree: 99%
+workflow-type: ht
+source-wordcount: '3708'
+ht-degree: 100%
 
 ---
 
@@ -254,14 +254,14 @@ CMYK で配信しようとは思わないでしょう。その理由さえわか
 ![「Large」画像プリセットに基づくアセットのレンディションのプレビュー](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _選択した「Large」画像プリセットに基づくアセットのレンディションのプレビュー。「URL」ボタンをクリックしました。結果の URL パスには「Large」画像プリセット名が含まれており、このパスを web ページで使用できます。_
 
-上記の URL は実際のものです。[所要時間](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target=&quot;_blank&quot;}。
+上記の URL は実際のものです。[試してみる](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}。
 
 アセットをプレビューするもう 1 つの方法は、画像アセットを選択したあと、_ビューア_&#x200B;プリセットを選択することです（下図を参照）。
 
 ![ZoomVertical_light ビューアプリセットに基づくアセットのプレビュー](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _選択した「ZoomVertical_light」ビューアプリセットに基づくアセットのプレビュー。画像上でマウスポインター（「`+`」）を移動してズームインしました。「URL」ボタンと「埋め込み」ボタンに注目してください。_
 
-上記の レンディション は実際のものです。[所要時間](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target=&quot;_blank&quot;}。
+上記の レンディション は実際のものです。[試してみる](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target="_blank"}。
 
 ## オプション - 詳細情報
 
@@ -282,7 +282,7 @@ _Dynamic Media ヘルプトピック_
 
 _Dynamic Media チュートリアル_
 
-* [Experience Manager Assets での Dynamic Media の使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Experience Manager Assets での Dynamic Media の使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=pt-BR)
 * [Adobe Experience Manager コンテンツライブラリ](https://experienceleague.adobe.com/?lang=ja#recommended/solutions/experience-manager)（_Dynamic Media_ で検索）
 
 _Dynamic Media ビューア_
