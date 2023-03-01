@@ -3,9 +3,9 @@ title: New Relic One
 description: AEM as a Cloud Service の New Relic One アプリケーションパフォーマンスモニタリング（APM）サービスと、そのサービスへのアクセス方法について説明します。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: c265ce6f29dee1760049a8d296f00a3c2484fb77
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1603'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ AEM as a Cloud Service の New Relic One アプリケーションパフォーマ
 
 AEM as a Cloud Service 用の New Relic One APM には、多くの機能があります。
 
-* 専用のNew Relic Oneアカウントへの直接アクセス
+* 専用の New Relic One アカウントへの直接アクセス
 
 * 外部の依存関係やデータベースを含む、行番号のある正確なメソッド呼び出しを表示する New Relic One APM エージェントを実装。
 
