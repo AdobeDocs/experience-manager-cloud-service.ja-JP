@@ -5,14 +5,14 @@ description: AEM Forms の表コンポーネントでは、モバイルレイア
 seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
-source-git-commit: c9cfaff7f155dc85b2f2ee4e2851e3eb59f5871d
+source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
 workflow-type: tm+mt
 source-wordcount: '2418'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# アダプティブフォームの表 {#tables-in-adaptive-forms}
+# アダプティブフォームのテーブル {#tables-in-adaptive-forms}
 
 複雑なデータであっても、テーブルを使用することで、効果的かつシンプルにまとめて提示できます。情報をわかりやすく配置し、行と列に分けて規則正しく配列することで、ユーザーも入力しやすくなります。金融サービスや政府機関が提供するフォームの大部分は、数字を入力して計算を実行できる大規模なデータテーブルを必要とします。
 
@@ -48,26 +48,27 @@ AEM Forms を使用すると、サイドバーにあるコンポーネントブ�
 
 ### 行および列の追加、削除、移動 {#add-delete-move-rows-and-columns}
 
-行または列を追加／削除したり、テーブルの中で行を上下に移動させることができます。
+テーブルの行または列を追加／削除したり、行を上下に移動させることができます。
 
 #### 行の追加、削除、移動
 
-行を追加、削除、または移動するには、行の任意のセルをクリックします。 コンテンツブラウザーを開く ![コンテンツブラウザー](/help/forms/assets/Smock_Layers_18_N.svg) をクリックし、対応する行を選択すると、ツールバーオプションで選択した行がハイライト表示され、ここから行の追加、削除または上下への移動を行うことができます。
-* この **[!UICONTROL 上に移動]** および **[!UICONTROL 下に移動]** 選択した行を上下に移動します。
+行を追加、削除、移動するには、行の任意のセルをクリックします。コンテンツブラウザー![コンテンツブラウザー](/help/forms/assets/Smock_Layers_18_N.svg)を開き、対応する行を選択すると、選択した行がハイライトされ、ツールバーオプションから行の追加、削除、上下の移動ができるようになります。
 
-* この **[!UICONTROL 列を追加]** 選択した行の下に行が追加されます。
+* **[!UICONTROL 上へ移動]**、**[!UICONTROL 下へ移動]**&#x200B;の操作を行うと、選択した行が上下に移動します。
 
-* この **[!UICONTROL 列を削除]** 選択した行を削除します。
+* **[!UICONTROL 列を追加]**&#x200B;の操作を行うと、選択した行の下に行が追加されます。
 
-![add-delete-move-row-column](assets/add-delete-move-row.png)
+* **[!UICONTROL 列を削除]**&#x200B;の操作を行うと、選択した行が削除されます。
+
+![行および列の追加-削除-移動](assets/add-delete-move-row.png)
 
 行をダブルクリックして、名前、バインド参照、繰り返し設定、CSS クラスなど、行のプロパティを設定します。
-![add-delete-move-row-column](assets/row-properties-image.png)
+![行および列の追加-削除-移動](assets/row-properties-image.png)
 
 
 #### 列の追加または削除
 
-列を追加または削除するには、ヘッダーセクションのテキストセルをクリックすると、列を追加または削除するオプションを含むツールバーが開きます。
+列を追加または削除するには、ヘッダーセクションのテキストセルをクリックします。ツールバーが開き、列を追加または削除するオプションが表示されます。
 
 ![add-delete-move-row-column](assets/add-delet-column.png)
 
@@ -120,7 +121,7 @@ AEM Forms を使用すると、サイドバーにあるコンポーネントブ�
 
 1. 「**[!UICONTROL コンテンツ]**」タブで、 **[!UICONTROL テーブル]**&#x200B;コンポーネントをタップし、設定（![設定](assets/configure-icon.svg)）アイコンをタップします。
 
-1. **[!UICONTROL 列の幅]** 「 」フィールドでは、テーブルの各列の幅を比例して指定します。 例えば、3 つの列を含むテーブルの場合、「**[!UICONTROL 列幅]**」フィールドの値で 2、4、6 を指定すると、1 列目の幅は 2/12、2 列目は 4/12、3 列目は 6/12 に設定されます。最初の列の幅である 2/12 は、テーブル幅の 6 分の 1 を表します。同様に、4/12 は 2 番目の列の幅をテーブル幅の 3 分の 1 に設定し、6/12 は 3 番目の列の幅をテーブル幅の半分に設定します。
+1.「**[!UICONTROL 列幅]**」フィールドに値のコンマ区切りリストを入力して、テーブルの各列の比例する幅を指定します。例えば、3 つの列を含むテーブルの場合、「**[!UICONTROL 列幅]**」フィールドの値で 2、4、6 を指定すると、1 列目の幅は 2/12、2 列目は 4/12、3 列目は 6/12 に設定されます。最初の列の幅である 2/12 は、テーブル幅の 6 分の 1 を表します。同様に、4/12 は 2 番目の列の幅をテーブル幅の 3 分の 1 に設定し、6/12 は 3 番目の列の幅をテーブル幅の半分に設定します。
 
 ## テーブルのスタイルの設定 {#configure}
 
@@ -134,7 +135,7 @@ AEM Forms を使用すると、サイドバーにあるコンポーネントブ�
 
 >[!NOTE]
 >
->ヘッダー行とボディ行のカラーテーマは、 [LESS 変数](https://lesscss.org//). 詳しくは、「[AEM Forms のテーマ](/help/forms/themes.md)」を参照してください。
+>[LESS 変数](https://lesscss.org//)の値を変更することで、ヘッダー行と本文行のカラーテーマを変更できます。詳しくは、[AEM Forms のテーマ](/help/forms/themes.md)を参照してください。
 
 ## 動的に行を追加または削除する {#add-or-delete-a-row-dynamically}
 
@@ -144,7 +145,7 @@ AEM Forms を使用すると、サイドバーにあるコンポーネントブ�
 1. 「設定を繰り返し」タブで、テーブルの行の数を制限する最大値と最小値を指定します。
 1. 「**完了**」をクリックします。
 
-実行時またはプレビュー時に、 **+** および ![削除ボタン](/help/forms/assets/Smock_Delete.svg) ボタンを使用して行を追加または削除します。
+実行時やプレビュー時に、行を追加/削除するための **+** ボタンと ![削除ボタン](/help/forms/assets/Smock_Delete.svg) ボタンが表示されます。
 
 ![add-delete-rows-dynamically](assets/add-delete-layout.png)
 
@@ -172,7 +173,7 @@ AEM Forms を使用すると、サイドバーにあるコンポーネントブ�
 
 テーブルまたは行の表示の式は、対応する編集コンポーネントダイアログの「パネルプロパティ」タブで定義できます。セルの式は、編集コンポーネントダイアログの「スクリプト」タブで定義できます。
 
-アダプティブフォームクラス、イベント、オブジェクト、パブリック API の完全なリストについては、「[アダプティブフォームの JavaScript ライブラリ API リファレンス](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)」を参照してください。
+アダプティブフォームクラス、イベント、オブジェクト、パブリック API の完全なリストについては、「[アダプティブフォームの JavaScript ライブラリ API リファレンス](https://helpx.adobe.com/jp/experience-manager/6-5/forms/javascript-api/index.html)」を参照してください。
 
 ## モバイルレイアウト {#mobile-layouts}
 
@@ -214,7 +215,7 @@ AEM Forms を使用すると、サイドバーにあるコンポーネントブ�
 
 アダプティブフォームの表では、実行時に、XML ファイルからのデータを使用して表にデータを入力することができます。データ XML ファイルは、AEM Forms サーバーが稼動しているマシンのローカルファイルシステム、または CRX リポジトリに置くことができます。
 
-XML ファイルのデータを使用して入力する、次の銀行取引要約テーブルの例を見てみましょう。
+XML ファイルからのデータを使って銀行取引概略表に入力する例を次に示します。
 
 ![data-merge-table](assets/data-merge-table.png)
 

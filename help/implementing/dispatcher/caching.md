@@ -3,10 +3,10 @@ title: AEM as a Cloud Service でのキャッシュ
 description: AEM as a Cloud Service でのキャッシュ
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: b0db2224e3dd7af01bf61fe29e8e24793ab33c5b
+source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
 workflow-type: tm+mt
 source-wordcount: '2832'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -68,21 +68,21 @@ Define DISABLE_DEFAULT_CACHING
       <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
       Header unset Cache-Control
       Header unset Expires
-      Header always set Cache-Control “private”
+      Header always set Cache-Control "private"
      </LocationMatch>
    ```
 
 * private に設定されたHTMLコンテンツは CDN にキャッシュされませんが、次の場合は Dispatcher にキャッシュできます。 [権限に影響を受けるキャッシュ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ja) が設定され、許可されたユーザーのみがコンテンツを提供できるようになっています。
 
    >[!NOTE]
-   >[dispatcher-ttl AEM ACS Commons プロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)を含む他のメソッドでは、値は上書きされません。
+   >[dispatcher-ttl AEM ACS Commons プロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)などの他のメソッドでは、値は上書きされません。
 
    >[!NOTE]
    >Dispatcher は独自の[キャッシュ ルール](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=ja)に従ってコンテンツをキャッシュする場合があることに注意してください。コンテンツを完全にプライベートにするには、Dispatcher によってコンテンツがキャッシュされないようにする必要があります。
 
 ### クライアントサイドライブラリ（js、css） {#client-side-libraries}
 
-* AEMクライアントサイドライブラリフレームワークを使用する場合、変更は新しいファイルとして一意のパスで表示されるので、JavaScript と CSS コードは、ブラウザーで無期限にキャッシュできるように生成されます。  つまり、クライアントライブラリを参照する HTML は必要に応じて作成されるので、顧客は公開時に新しいコンテンツを体験できます。「immutable」値を考慮しない古いブラウザーでは、cache-control は「immutable」または 30 日に設定されます。
+* AEM のクライアントサイドライブラリフレームワークを使用する場合、変更があると一意のパスを持つ新しいファイルとして表現されるので、JavaScript と CSS コードはブラウザーが無期限にキャッシュできるような方法で生成されます。つまり、クライアントライブラリを参照する HTML は必要に応じて作成されるので、顧客は公開時に新しいコンテンツを体験できます。「immutable」値を考慮しない古いブラウザーでは、cache-control は「immutable」または 30 日に設定されます。
 * 詳しくは、[クライアントサイドライブラリとバージョンの整合性](#content-consistency)を参照してください。
 
 ### BLOB ストレージに格納される大きい画像とコンテンツ {#images}
@@ -119,7 +119,7 @@ AEM レイヤーは、デフォルトでは BLOB コンテンツをキャッシ�
 >[!NOTE]
 >Cloud Manager 環境変数 AEM_BLOB_ENABLE_CACHING_HEADERS を true に設定して、古いデフォルトの動作を、新しい動作（65000 より大きいプログラム ID）と一致するように変更することをお勧めします。プログラムが既に実稼働している場合は、変更後に、コンテンツが期待どおりに動作することを確認してください。
 
-現在、非公開とマークされた BLOB ストレージ内の画像は、 [権限に影響を受けるキャッシュ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ja). 画像は常にAEM接触チャネルから要求され、ユーザーが承認されている場合に提供されます。
+現在、プライベートとマークされた Blob ストレージ内の画像は、[権限に影響を受けるキャッシュ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ja)を使用して Dispatcher でキャッシュできません。画像は常に AEM 接触チャネルから要求され、ユーザーが承認されている場合に提供されます。
 
 >[!NOTE]
 >[dispatcher-ttl AEM ACS Commons プロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)を含む他のメソッドでは、値は上書きされません。
@@ -220,10 +220,10 @@ Web サイトの URL には、キャンペーンの成功をトラックする�
 
 ### アクティベーション／非アクティベーション中の Dispatcher キャッシュの無効化 {#cache-activation-deactivation}
 
-以前のバージョンの AEM と同様に、ページを公開または非公開にすると、Dispatcher のキャッシュからコンテンツがクリアされます。キャッシュの問題の疑いがある場合は、問題のページを再公開し、 `ServerAlias` localhost :Dispatcher キャッシュの無効化に必要です。
+以前のバージョンの AEM と同様に、ページを公開または非公開にすると、Dispatcher のキャッシュからコンテンツがクリアされます。キャッシュに問題があると疑われる場合は、該当するページを再度公開し、`ServerAlias` localhost に一致する仮想ホスト（Dispatcher キャッシュの無効化に必要）が使用可能であることを確認する必要があります。
 
 >[!NOTE]
->ディスパッチャーを適切に無効化するには、「127.0.0.1」、「localhost」、「.local」、「.adobeaemcloud.com」および「.adobeaemcloud.net」からの要求がすべて vhost 設定で一致し、処理されることを確認してください。 これを行うには、参照内のパターンに従った包括的な vhost 設定で「*」をグローバルに一致させます [AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) または、前述のリストがいずれかの vhost によってキャッチされることを確認します。
+>Dispatcher を適切に無効化するには、「127.0.0.1」、「localhost」、「.local」、「.adobeaemcloud.com」、「.adobeaemcloud.net」からの要求がすべて vhost 設定で一致し、処理されることを確認してください。これを行うには、[AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) の参照パターンに従って、キャッチオール vhost 設定で「*」をグローバルに一致させるか、前述のリストがいずれかの vhost によってキャッチされるようにします。
 
 パブリッシュインスタンスは、オーサーから新しいバージョンのページまたはアセットを受け取ると、フラッシュエージェントを使用して Dispatcher 上の該当するパスを無効にします。更新されたパスは、そのパスの親とともに、Dispatcher キャッシュから最大で 1 レベル上位まで削除されます（削除されるレベルは [statfilelevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#invalidating-files-by-folder-level) で設定できます）。
 
@@ -319,7 +319,7 @@ Web サイトの URL には、キャンペーンの成功をトラックする�
 
 * SCD API は、正確な知識を必要とする外部システムとの同期など、すべてのイベントを保証する必要がある場合に必要です。無効化呼び出しの時点でパブリッシュ層のアップスケーリングイベントがある場合、新しいパブリッシュがそれぞれ無効化を処理すると、追加のイベントが発生します。
 
-* レプリケーション API の使用は一般的な使用例ではありませんが、キャッシュを無効にするトリガーがオーサー層ではなくパブリッシュ層から提供される場合に使用する必要があります。これは、Dispatcher の TTL が設定されている場合に役立ちます。
+* レプリケーション API の使用は一般的な使用例ではありませんが、キャッシュを無効にするトリガーがオーサー層ではなくパブリッシュ層から提供される場合に使用します。 これは、Dispatcher の TTL が設定されている場合に役立ちます。
 
 最後に、Dispatcher のキャッシュを無効にする場合は、オーサーの SCD API の無効化アクションを使用することをお勧めします。また、イベントをリッスンして、さらにダウンストリームアクションをトリガーすることもできます。
 
@@ -421,7 +421,7 @@ ReplicationOptions options = new ReplicationOptions();
 options.setSynchronous(true);
 options.setFilter( new AgentFilter {
   public boolean isIncluded (Agent agent) {
-   return agent.getId().equals(“flush”);
+   return agent.getId().equals("flush");
   }
 });
 

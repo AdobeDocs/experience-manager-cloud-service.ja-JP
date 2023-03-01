@@ -5,7 +5,7 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: e353fd386d2dfbc39c76a0ab56b50c44f3c54afc
+source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
 workflow-type: tm+mt
 source-wordcount: '2139'
 ht-degree: 86%
@@ -282,8 +282,7 @@ OData サービスは、そのサービスのルート URL によって識別さ
    認証タイプとして **[!UICONTROL API キー]**&#x200B;を選択した場合は、API キーの値を指定します。API キーは、リクエストヘッダーまたはクエリパラメーターとして送信できます。「**[!UICONTROL 場所]**」ドロップダウンリストから次のオプションの 1 つを選択し、それに応じて「**[!UICONTROL パラメーター名]**」フィールドにヘッダーまたはクエリパラメーターの名前を指定します。
 
    >[!NOTE]
-   >
-   >OData エンドポイントをサービスルートとして使用して [!DNL Microsoft® Dynamics] サービスに接続する場合は、OAuth 2.0 認証を選択する必要があります。
+   OData エンドポイントをサービスルートとして使用して [!DNL Microsoft® Dynamics] サービスに接続する場合は、OAuth 2.0 認証を選択する必要があります。
 
 1. 「**[!UICONTROL 作成]**」をタップして、OData サービス用のクラウド設定を作成します。
 
@@ -302,4 +301,4 @@ When you enable mutual authentication for form data model, both the data source 
 
 ## 次の手順 {#next-steps}
 
-上記の手順により、データソースが設定されました。次に、フォームデータモデルを作成できます。データソースを持たないフォームデータモデルを既に作成している場合は、そのモデルを設定したデータソースに関連付けることができます。 詳しくは、「[フォームデータモデルの作成](create-form-data-models.md)」を参照してください。
+上記の手順により、データソースが設定されました。次に、フォームデータモデルを作成できます。データソースを持たないフォームデータモデルを既に作成している場合は、そのモデルを設定したデータソースに関連付けることができます。 詳しくは、[フォームデータモデルの作成](create-form-data-models.md)を参照してください。
