@@ -4,9 +4,9 @@ description: Dispatcher ツールを使用した検証とデバッグ
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: 21447e625d418bbb3f96c08991294e66659f7f51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2701'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -132,7 +132,7 @@ ht-degree: 93%
 
 * `conf.d/available_vhosts/default.vhost`
 
-仮想ホストのサンプルが含まれています。お使いの仮想ホストに対して、このファイルのコピーを作成し、カスタマイズしてから `conf.d/enabled_vhosts` に移動し、カスタマイズしたコピーのシンボリックリンクを作成します。default.vhost ファイルを次の場所に直接コピーしないでください。 `conf.d/enabled_vhosts`.
+仮想ホストのサンプルが含まれています。お使いの仮想ホストに対して、このファイルのコピーを作成し、カスタマイズしてから `conf.d/enabled_vhosts` に移動し、カスタマイズしたコピーのシンボリックリンクを作成します。`conf.d/enabled_vhosts` に default.vhost ファイルを直接コピーしないでください。
 
 ServerAlias `\*.local` と、アドビの内部処理に必要な localhost に一致する仮想ホストを常に使用できるようにします。
 
@@ -234,7 +234,7 @@ Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも�
 
 >[!NOTE]
 >
->詳しくは、 [自動再読み込みと検証](#automatic-loading) 実行に代わる効率的なセクション `validate.sh` 設定を変更するたびに、
+>各設定を変更後に `validate.sh` を実行する代わりの効率的な方法については、[自動読み込みと検証](#automatic-loading)のセクションを参照してください。
 
 ### フェーズ 1 {#first-phase}
 
@@ -284,11 +284,12 @@ Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも�
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-または、 **デフォルト** 名前の前にが付いているファイルのバージョン `default_`例： `../filters/default_filters.any`.
+別の方法として、これらのファイルの&#x200B;**デフォルト**&#x200B;バージョンを含めることもできます。その名前の先頭には `default_`（例：`../filters/default_filters.any`）という単語が追加されます。
 
-**include statement at (...), outside any known location: ...**
+**既知の場所ではない (...) に include ステートメントがあります：...**
 
-上記の 6 つのセクション以外では、 `$include` ステートメントの例を次に示すと、このエラーが発生します。
+上記のパラグラフで述べた 6 つのセクションを除いて、
+`$include` ステートメントを使用することは許可されていません。このエラーは、次のような場合に生成されます。
 
 ```
 /invalidate {
@@ -302,7 +303,7 @@ Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも�
 
 **filter must not use glob pattern to allow requests**
 
-を使用した要求の許可は安全ではありません。 `/glob` 要求行全体に一致するスタイルルール。例：
+`/glob` スタイルのルールはは完全なリクエスト行と照合されるので、このルールを使用してリクエストを許可することは安全ではありません。次に例を示します。
 
 ```
 /0100 {
@@ -314,14 +315,14 @@ Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも�
 
 **included file (...) does not match any known file**
 
-デフォルトでは、Apache 仮想ホスト設定に次の 2 種類のファイルをインクルードとして指定できます。書き換えと変数。
+デフォルトでは、Apache 仮想ホスト設定内の 2 種類のファイル（リライトと変数）をインクルードとして指定することができます。
 
 | タイプ | インクルードファイル名 |
 |-----------|---------------------------------|
 | 書き換え | `conf.d/rewrites/rewrite.rules` |
 | 変数 | `conf.d/variables/custom.vars` |
 
-フレキシブルモードでは、（あらゆるレベルの）のサブディレクトリにある限り、他のファイルも含めることができます。 `conf.d` ディレクトリの先頭には次のようにプレフィックスが付きます。
+フレキシブルモードでは、次のようにプレフィックスが付けられた `conf.d` ディレクトリのサブディレクトリ（任意のレベル）に配置されている限り、他のファイルを含めることもできます。
 
 | ファイルの上位ディレクトリのプレフィックスを含める |
 |-------------------------------------|
@@ -329,7 +330,7 @@ Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも�
 | `conf.d/modsec` |
 | `conf.d/rewrites` |
 
-例えば、新しく作成したディレクトリの下にファイルを含めることができます。 `conf.d/includes` ディレクトリの内容は次のとおりです。
+例えば、次のように `conf.d/includes` ディレクトリの下に新しく作成されたディレクトリにファイルを含めることができます。
 
 ```
 Include conf.d/includes/mynewdirectory/myincludefile.conf
@@ -441,7 +442,7 @@ Dispatcher をローカルで実行すると、ログが端末に直接出力さ
 
 >[!NOTE]
 >
->Windows オペレーティングシステムの制限により、この機能はmacOSおよび Linux ユーザーに対してのみ使用できます。
+>Windows オペレーティングシステムの制限により、この機能は macOS および Linux ユーザーのみ利用できます。
 
 設定が変更されるたびにローカル検証（`validate.sh`）を実行してドッカーコンテナ（`docker_run.sh`）を開始する代わりに、`docker_run_hot_reload.sh` スクリプトを実行することもできます。  スクリプトは、設定に対する変更を監視し、自動的に再読み込みして検証を再実行します。このオプションを使用すると、デバッグ時にかなりの時間を節約できます。
 
