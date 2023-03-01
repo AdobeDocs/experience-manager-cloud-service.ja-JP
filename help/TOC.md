@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
+source-git-commit: 4416c43b408f576a547590796141a6b551e25681
 workflow-type: tm+mt
-source-wordcount: '3946'
-ht-degree: 94%
+source-wordcount: '3952'
+ht-degree: 95%
 
 ---
 
@@ -125,7 +125,7 @@ ht-degree: 94%
          + [リリースノート（2021.12.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [リリースノート（2021.11.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [リリースノート（2021.10.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
-   + Workfront for Experience Manager 拡張コネクタのリリースノート{#workfront}
+   + Workfront for Experience Manager 拡張コネクタのリリースノート {#workfront}
       + [Workfront for Experience Manager 拡張コネクタの最新リリースノート](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [新機能](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service の主要な変更点](/help/release-notes/aem-cloud-changes.md)
@@ -165,11 +165,11 @@ ht-degree: 94%
       + [Cloud Manager の概要](/help/onboarding/cloud-manager-introduction.md)
       + [AEM as a Cloud Service チームおよび製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md)
       + [通知ユーザーグループ](/help/journey-onboarding/user-groups.md)
-+ AEMaaCS 試用版 {#trials}
-   + ヘッドレス試用 {#headless}
++ AEMaaCS 体験版 {#trials}
+   + ヘッドレス体験版 {#headless}
       + [サンプル React アプリのコンテンツのカスタマイズ](/help/trials/headless/customize-app.md)
       + [アプリのコンテンツ構造の作成](/help/trials/headless/content-structure.md)
-      + [ヘッドレスコンテンツを作成](/help/trials/headless/create-content.md)
+      + [ヘッドレスコンテンツの作成](/help/trials/headless/create-content.md)
       + [GraphQL API を使用したコンテンツの抽出](/help/trials/headless/extract-content.md)
 + AEM as a Cloud Service 移行ジャーニー {#migration-journey}
    + [AEM as a Cloud Service の移動の概要](/help/journey-migration/getting-started.md)
@@ -182,7 +182,7 @@ ht-degree: 94%
       + Cloud Acceleration Manager{#introduction-cam} の概要
          + [概要](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
          + [メリット](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)
-      + Cloud Acceleration Manager の使用{#using-cam}
+      + Cloud Acceleration Manager の使用 {#using-cam}
          + [Cloud Acceleration Manager の基本を学ぶ](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)
          + [準備段階](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
          + [実装段階](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
@@ -509,9 +509,8 @@ ht-degree: 94%
    + セットアップと移行 {#setup-configure-migrate}
       + [Cloud Service 環境へのオンボード](/help/forms/setup-forms-cloud-service.md)
       + [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
-      + [Forms Designer のインストールと設定](/help/forms/installing-configuring-designer.md)
       + [統合ストレージコネクタの設定](/help/forms/configure-unified-storage-connector.md)
-      + [ [!DNL AEM Forms]  as a Cloud Service への移行](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+      + [移行元 [!DNL AEM 6.5 Forms] 以前 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [グループと権限](/help/forms/forms-groups-privileges-tasks.md)
       + [アダプティブフォーム、PDF フォームおよびその他のアセットの読み込み、書き出し、整理](/help/forms/import-export-forms-templates.md)
    + {#integrate} の統合
@@ -548,15 +547,14 @@ ht-degree: 94%
             + [テーマの作成](/help/forms/themes.md)
             + [参照アセット](/help/forms/reference-assets.md)
             + [アダプティブフォームの JSON スキーマのデザイン](/help/forms/adaptive-form-json-schema-form-model.md)
-            + [Forms Designer の使用](/help/forms/use-forms-designer.md)
             + [遅延読み込みによる大きなフォームのパフォーマンスの向上](/help/forms/lazy-loading-adaptive-forms.md)
          + アダプティブフォームへのコンポーネントの追加 {#add-components-to-an-adaptive-form}
             + [アダプティブフォームでの CAPTCHA の使用](/help/forms/captcha-adaptive-forms.md)
             + [コアコンポーネントの使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
             + [手書き署名の適用](/help/forms/signing-forms-using-scribble.md)
-            + [アダプティブフォームに表を追加する](/help/forms/adaptive-forms-tables.md)
+            + [アダプティブフォームへのテーブルの追加](/help/forms/adaptive-forms-tables.md)
             + [アダプティブフォームへの脚注のサポートの追加](/help/forms/footnotes-richtextsupport.md)
-         + アダプティブフォームのレイアウト設定とスタイルの適用{#configure-layout-of-an-adaptive-form}
+         + アダプティブフォームのレイアウト設定とスタイルの適用 {#configure-layout-of-an-adaptive-form}
             + [アダプティブフォームのレイアウト設定](/help/forms/layout-capabilities-adaptive-forms.md)
             + [レイアウトモードを使用したコンポーネントのサイズ変更](/help/forms/resize-using-layout-mode.md)
             + [複数手順のデータキャプチャエクスペリエンスの作成](/help/forms/introduction-form-sequence.md)
@@ -588,6 +586,8 @@ ht-degree: 94%
       + [通信 API の概要](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [通信 API - 同期処理](/help/forms/aem-forms-cloud-service-communications.md)
       + [通信 API - バッチ処理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [Forms Designer のインストールと設定](/help/forms/installing-configuring-designer.md)
+      + [Forms Designer を使用したテンプレートの作成](/help/forms/use-forms-designer.md)
       + [PDF ドキュメントでのカスタムフォントの使用](/help/forms/use-custom-fonts.md)
       + [既知の問題、ベストプラクティス、よくある質問](/help/forms/communications-known-issues-limitations.md)
    + 開発者 API リファレンス {#aem-forms-developer-api-reference}
@@ -610,7 +610,7 @@ ht-degree: 94%
       + [ブランチの作成](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)
       + [環境の作成](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md)
       + [パイプラインの実行](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md)
-   + Screens as a Cloud Service プロジェクトの設定{#configure-screens-cloud}
+   + Screens as a Cloud Service プロジェクトの設定 {#configure-screens-cloud}
       + [Screens サービスプロバイダーへの移動](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)
       + [Screens コンテンツプロバイダーの使用](/help/screens-cloud/configuring/using-screens-content-provider.md)
       + [Screens ビデオレンディションの作成](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
@@ -647,7 +647,7 @@ ht-degree: 94%
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
       + [サードパーティコマースソリューション](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
-   + AEM ストアフロント{#storefront}
+   + AEM ストアフロント {#storefront}
       + [はじめに](/help/commerce-cloud/getting-started.md)
       + オーサリング {#authoring}
          + [コマースエクスペリエンス](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
@@ -685,7 +685,7 @@ ht-degree: 94%
       + [コンテンツフラグメントコンソール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ja)
       + [コンテンツフラグメントモデル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html?lang=ja)
       + [プロジェクト管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html?lang=ja)
-      + オーサリング{#authoring}
+      + オーサリング {#authoring}
          + [オーサリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html?lang=ja)
          + [テキストエディター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html?lang=ja)
          + [関連コンテンツ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html?lang=ja)
@@ -806,7 +806,7 @@ ht-degree: 94%
       + [AEM プロジェクトの構造](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [AEM プロジェクトリポジトリーの構造パッケージ](/help/implementing/developing/introduction/repository-structure-package.md)
       + [AEM as a Cloud Service の SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-      + [AEMの迅速な開発環境](/help/implementing/developing/introduction/rapid-development-environments.md)
+      + [AEM の迅速な開発環境](/help/implementing/developing/introduction/rapid-development-environments.md)
       + [AEM as a Cloud Service の開発ガイドライン](/help/implementing/developing/introduction/development-guidelines.md)
       + [ログ](/help/implementing/developing/introduction/logging.md)
       + [設定と設定ブラウザー](/help/implementing/developing/introduction/configurations.md)
@@ -890,7 +890,7 @@ ht-degree: 94%
       + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
       + [ContextHub でのセグメント化の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=ja)
    + AEM as a Cloud Service の設定と拡張 {#configuring-and-extending}
-      + App Builder を使用した AEM の拡張{#app-builder}
+      + App Builder を使用した AEM の拡張 {#app-builder}
          + [Adobe Developer App Builder を使用した AEM の拡張](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [App Builder の概要](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe 開発者コンソール](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
