@@ -2,10 +2,10 @@
 title: エクスペリエンス監査テスト
 description: エクスペリエンス監査でデプロイメントプロセスを検証し、デプロイされた変更がパフォーマンス、アクセシビリティ、ベストプラクティス、SEO のベースライン標準を満たしていることを確認する方法について説明します。
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 1a7a9ee78d09a9360922a63dfa315ef9d106209e
+source-git-commit: fe9d76362f7d2bd7d0ebe89d5161f0c1868e80a3
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 100%
+source-wordcount: '552'
+ht-degree: 97%
 
 ---
 
@@ -33,6 +33,10 @@ Cloud Manager のエクスペリエンス監査を使用すると、サイト上
 
 エクスペリエンス監査は、Google のオープンソースツールである Google Lighthouse を活用し、すべての Cloud Manager 実稼動パイプラインで有効になります。
 
+>[!TIP]
+>
+>エクスペリエンス監査に含めるページは、次の場合に設定します [パイプラインを設定します。](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+
 ## エクスペリエンス監査結果について {#understanding-experience-audit-results}
 
 エクスペリエンス監査は、[実稼働パイプラインの実行ページ](/help/implementing/cloud-manager/deploy-code.md)で集計された詳細なページレベルのテスト結果を提供します。
@@ -59,7 +63,6 @@ Cloud Manager のエクスペリエンス監査を使用すると、サイト上
 * **該当なし** - 比較できる以前のスコアはありませんでした。
 
 ![エクスペリエンス監査結果](/help/implementing/cloud-manager/assets/exp-audit-1.png)
-
 
 ### ページレベルのスコア {#page-level-scores}
 
