@@ -3,9 +3,9 @@ title: RemotePage コンポーネント
 description: RemotePage コンポーネントは、AEM 内のリモート React SPA を編集するためのカスタムページコンポーネントです。
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 source-git-commit: d213dd0788e66015237d241caf0f3b5737ce725c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '392'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ RemotePage コンポーネントは、アプリケーションで生成された
 * 仮想フロントエンドコンポーネントを使用すると、AEM SPA エディターでセクションを編集可能としてマークできます。
 * これとともに、異なるドメインでホストされている SPA を AEM で編集可能にすることができます。
 
-AEM の編集可能な外部 SPA の詳細については、](editing-external-spa.md)AEM 内の外部 SPA の編集[を参照してください。
+AEM の編集可能な外部 SPA の詳細については、[AEM 内の外部 SPA の編集](editing-external-spa.md)を参照してください。
 
 ## 要件 {#requirements}
 
@@ -37,7 +37,7 @@ AEM の編集可能な外部 SPA の詳細については、](editing-external-s
 
 ## 制限事項 {#limitations}
 
-* RemotePage コンポーネントは、実装が、 [ここにあります。](https://github.com/shellscape/webpack-manifest-plugin) ただし、RemotePage コンポーネントは、（remote-page-next コンポーネントを介して）React フレームワークと連携することをテストされただけなので、Angularなど他のフレームワークからのアプリケーションのリモート読み込みはサポートされていません。
+* RemotePage コンポーネントでは、実装によりアセットマニフェストが指定されることを想定しています。[アセットマニフェストの例についてはこちらを参照してください。](https://github.com/shellscape/webpack-manifest-plugin) ただし、RemotePage コンポーネントは、React フレームワーク（および remote-page-next コンポーネントを介した Next.js）での動作のみがテストされているので、Angular など他のフレームワークからのアプリケーションのリモート読み込みはサポートされていません。
 * AEM でリモートレンダリングを行う場合、アプリケーションのルート HTML ファイルに定義された内部 CSS と、ルート DOM ノードのインライン CSS は使用できません。
 
 ## 技術的詳細 {#technical-details}
