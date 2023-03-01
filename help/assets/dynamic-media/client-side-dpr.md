@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 role: Admin,User
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
 source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '323'
 ht-degree: 100%
 
