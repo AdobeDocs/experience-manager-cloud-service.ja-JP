@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: 59392c3a3dd7481d63ed0a79a018a4d6878011ed
 workflow-type: tm+mt
-source-wordcount: '3488'
+source-wordcount: '3490'
 ht-degree: 99%
 
 ---
@@ -57,9 +57,9 @@ ht-degree: 99%
 
 画像にスマート切り抜きを実装する場合、アドビでは次のベストプラクティスを推奨し、次の制限を適用します。
 
-| 制限タイプ | ベストプラクティス | 適用される制限 |
+| アセット - 制限タイプ | ベストプラクティス | 適用される制限 |
 | --- | --- | --- |
-| 画像あたりのスマート切り抜き数 | 5 | 100 |
+| **画像** - 画像あたりのスマート切り抜き数 | 5 | 100 |
 
 [Dynamic Media の制限](/help/assets/dynamic-media/limitations.md)も参照してください。
 
