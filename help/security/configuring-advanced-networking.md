@@ -2,8 +2,8 @@
 title: AEM as a Cloud Service の高度なネットワーク機能の設定
 description: AEM as a Cloud Service の高度なネットワーク機能（VPN やフレキシブルエグレス IP アドレスまたは専用エグレス IP アドレスなど）を設定する方法を説明します
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
-workflow-type: ht
+source-git-commit: 9efa730f7a8bdc01d19511100e611f9f15c64f19
+workflow-type: tm+mt
 source-wordcount: '3053'
 ht-degree: 100%
 
@@ -486,7 +486,7 @@ API が数秒以内に応答して「`updating`」のステータスを返し、
     <td>VPN からの接続は、CDN ではこの IP からの接続と見なされます。VPN からの接続のみ AEM に着信するように設定するには、この IP のみを許可し、それ以外のすべてをブロックするように、Cloud Manager を設定します。詳しくは、「VPN をイングレス接続に限定する方法」の節を参照してください。</td>
   </tr>
   <tr>
-    <td><code>p{PROGRAM_ID}-gateway.external.adobeaemcloud.com</code></td>
+    <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
     <td>該当なし</td>
     <td>AEM 側の VPN ゲートウェイの IP。顧客のネットワークエンジニアリングチームでは、これを使用して、特定の IP アドレスから VPN ゲートウェイへの VPN 接続のみを許可することができます。 </td>
   </tr>
