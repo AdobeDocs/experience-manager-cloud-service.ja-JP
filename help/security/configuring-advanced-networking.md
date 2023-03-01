@@ -3,7 +3,7 @@ title: AEM as a Cloud Service の高度なネットワーク機能の設定
 description: AEM as a Cloud Service の高度なネットワーク機能（VPN やフレキシブルエグレス IP アドレスまたは専用エグレス IP アドレスなど）を設定する方法を説明します
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: 9efa730f7a8bdc01d19511100e611f9f15c64f19
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3053'
 ht-degree: 100%
 
