@@ -6,7 +6,7 @@ feature: Asset Management,Dynamic Media Classic
 role: Admin,User
 exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
 source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '676'
 ht-degree: 100%
 
