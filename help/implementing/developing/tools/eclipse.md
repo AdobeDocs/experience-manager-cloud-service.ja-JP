@@ -3,9 +3,9 @@ title: AEM Developer Tools for Eclipse
 description: AEM Developer Tools for Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 source-git-commit: cac6692e10da4b271610edd495d4cb38507a726b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1182'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -36,15 +36,15 @@ AEM Developer Tools を使用する前に、次の作業が必要です。
 >
 >macOS では、**Eclipse.app** を右クリックし、「**パッケージの内容を表示**」を選択して、`eclipse.ini`**を探します。**
 
-## AEM Developer Tools for Eclipse のインストール方法 {#how-to-install-the-aem-developer-tools-for-eclipse}
+## Eclipse 用 AEM 開発者ツールのインストール方法 {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-あなたが [要件](#requirements) 上記の手順で、次のようにプラグインをインストールできます。
+前述の[要件](#requirements)を満たしたら、次の手順でプラグインをインストールできます。
 
-1. を開きます。 [AEM Developer Tools Web Site](https://eclipse.adobe.com/aem/dev-tools/). <!-- RB: This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
+1. [AEM 開発者ツールの web サイト](https://eclipse.adobe.com/aem/dev-tools/)を開きます。<!-- RB: This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
 1. **インストール用リンク**&#x200B;をコピーします。
 
-   または、インストール用リンクを使用する代わりに、アーカイブをダウンロードすることもできます。この方法では、オフラインでのインストールが可能ですが、この方法では、自動更新通知が送信されないので、エラーは発生しません。
+   または、インストール用リンクを使用する代わりに、アーカイブをダウンロードすることもできます。この方法ではオフラインインストールが可能ですが、自動アップデート通知は受けられません。
 
 1. Eclipse で、**Help** メニューを開きます。
 1. 「**Install New Software**」をクリックします。
@@ -196,7 +196,7 @@ AEM Developer Tools for Eclipse には、サンプルのマルチモジュール
 
 プロジェクトからパッケージを再ビルドする場合は、`PROJECT.ui.apps` または `PROJECT.ui.content` を右クリックし、**Run As**／**Maven install** を選択します。
 
-これで、パッケージを含むターゲットフォルダーが作成されました（例： ）。 `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`) をクリックします。
+これで、パッケージ（例えば、`PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`）を含んだターゲットフォルダーが作成されました。
 
 ## トラブルシューティング {#troubleshooting}
 
@@ -216,7 +216,7 @@ AEM Developer Tools for Eclipse には、サンプルのマルチモジュール
 
 Apache Sling IDE tooling for Eclipse の公式 web サイトでは、次の有益な情報を参照できます。
 
-* この [**Eclipse 用 Apache Sling IDE ツール** ユーザーガイド](https://sling.apache.org/documentation/development/ide-tooling.html)このドキュメントでは、AEM開発ツールでサポートされる全体的な概念、サーバー統合およびデプロイメント機能について説明します。
+* [**Apache Sling IDE tooling for Eclipse** ユーザーガイド](https://sling.apache.org/documentation/development/ide-tooling.html)。このドキュメントでは、全体のコンセプト、AEM 開発ツールがサポートするサーバー統合およびデプロイメント機能について説明します。
 * [トラブルシューティング情報](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)
 * [既知の問題リスト](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues)
 
