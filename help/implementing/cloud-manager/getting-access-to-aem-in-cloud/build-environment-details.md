@@ -3,9 +3,9 @@ title: ビルド環境
 description: Cloud Manager のビルド環境と、そこでコードがどのようにビルドされテストされるかを説明します。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1003'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 | `sun` | `8` |
 | `sun` | `11` |
 
-この表は、製品のバージョン番号を示します。 Java のビルド番号またはインストールパスは、Java 8 用の 1.8 など、古い Java バージョンの規則を反映している場合があります。
+この表は製品のバージョン番号を示しています。 Java のビルド番号またはインストールパスは、Java 8 の場合の 1.8 など、古い Java バージョン規則を反映している場合があります。
 
 >[!NOTE]
 >
@@ -221,7 +221,7 @@ Maven `pom.xml` ファイル内で使用する場合は、通常、次のよう�
         </profile>
 ```
 
-同じ方法を、例えば `gem` RubyGems または `pip` （Python パッケージ用）
+これと同じ手法を使用して、言語固有のパッケージをインストールすることができます。例えば、RubyGems には `gem` を使用し、Python パッケージには `pip` を使用します。
 
 >[!NOTE]
 >
@@ -229,4 +229,4 @@ Maven `pom.xml` ファイル内で使用する場合は、通常、次のよう�
 
 >[!TIP]
 >
->フロントエンドビルド環境の詳細については、ドキュメントを参照してください。 [フロントエンドパイプラインを使用したサイトの開発。](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
+>フロントエンドビルド環境について詳しくは、[フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)のドキュメントを参照してください。
