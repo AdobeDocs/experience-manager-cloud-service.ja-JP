@@ -4,9 +4,9 @@ description: Cloud Manager の CI／CD パイプラインと、CI／CD パイプ
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1368'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -123,7 +123,7 @@ Cloud Manager で使用できるすべてのパイプラインとその用途を
 >
 >ただし、プログラムごとに（すべてのタイプで）最大 300 パイプラインの制限があります。
 
-フロントエンドパイプラインには、コード品質パイプラインまたはデプロイメントパイプラインを使用できます。
+フロントエンドパイプラインは、コード品質パイプラインとすることも、デプロイメントパイプラインとすることもできます。
 
 ### フロントエンドパイプラインを設定する前に {#before-start}
 
