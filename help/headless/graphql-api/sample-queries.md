@@ -4,9 +4,9 @@ description: GraphQL を AEM と共に使用し、サンプルコンテンツと
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1540'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ GraphQL クエリの基本と、AEM コンテンツフラグメントとの連�
 
 * [サンプルコンテンツフラグメント構造](#content-fragment-structure-graphql)
 
-* そして、いくつか [GraphQLクエリの例](#graphql-sample-queries)に基づきます。
+* サンプルコンテンツフラグメント構造（コンテンツフラグメントモデルと関連するコンテンツフラグメント）に基づく、いくつかの[サンプル GraphQL クエリ](#graphql-sample-queries)。
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"
@@ -1121,7 +1121,7 @@ query {
 このサンプルクエリでは次のものを検索します。
 
 * `article` タイプのすべてのコンテンツフラグメントについて
-* と `_path` と、 `authorFragment`.
+* `_path` と、`authorFragment` のプロパティを備えたもの。
 
 **サンプルクエリ**
 
@@ -1289,7 +1289,7 @@ query {
 }
 ```
 
-### ネストされたコンテンツフラグメントのサンプルクエリ - 複数モデルタイプ{#sample-wknd-nested-fragment-multiple-model}
+### ネストされたコンテンツフラグメントのサンプルクエリ - 複数モデルタイプ {#sample-wknd-nested-fragment-multiple-model}
 
 このクエリでは次のものを検索します。
 
@@ -1321,7 +1321,7 @@ query {
 }
 ```
 
-### 特定モデルのコンテンツフラグメントのうちコンテンツ参照を含んだものを取得するサンプルクエリ{#sample-wknd-fragment-specific-model-content-reference}
+### 特定モデルのコンテンツフラグメントのうちコンテンツ参照を含んだものを取得するサンプルクエリ {#sample-wknd-fragment-specific-model-content-reference}
 
 このクエリには次の 2 種類があります。
 
@@ -1491,7 +1491,7 @@ query {
 
 >[!NOTE]
 >
->これは、 [バリエーション](/help/headless/graphql-api/content-fragments.md#variations) 指定した名前の。
+>これにより、指定した名前の[バリエーション](/help/headless/graphql-api/content-fragments.md#variations)がないコンテンツフラグメントのフォールバックが示されます。
 
 **サンプルクエリ**
 
@@ -1539,11 +1539,11 @@ query {
 }
 ```
 
-### オフセットと制限を使用したリストクエリの例 {#sample-list-offset-limit}
+### オフセットと制限を使用したサンプルリストクエリ {#sample-list-offset-limit}
 
-このクエリでは次のものを検索します。
+このクエリでは次のものを問い合わせます。
 
-* 5 つまでの記事を含む結果のページ、5 つ目の記事から始まる *完了* 結果リスト
+* *完全*&#x200B;な結果リストの 5 番目の記事から始まる最大 5 つの記事を含む結果のページ
 
 **サンプルクエリ**
 
@@ -1563,11 +1563,11 @@ query {
 }
 ```
 
-### 最初と後を使用したページネーションクエリの例  {#sample-pagination-first-after}
+### first と after を使用したサンプルページネーションクエリ  {#sample-pagination-first-after}
 
-このクエリでは次のものを検索します。
+このクエリでは次のものを問い合わせます。
 
-* を返します。 *完了* 結果リスト
+* *完全*&#x200B;な結果リストで指定したカーソル項目から始まる最大 5 つのアドベンチャーを含む結果のページについて
 
 **サンプルクエリ**
 
@@ -1686,7 +1686,7 @@ query {
 | Basel | Switzerland | 172258 | city:emea |
 | Berlin | Germany | 3669491 | city:capital<br>city:emea |
 | Bucharest | Romania | 1821000 | city:capital<br>city:emea |
-| San Francisco | USA | 883306 | city:beach<br>city:na |
+| サンフランシスコ | 米国 | 883306 | city:beach<br>city:na |
 | サンノゼ | USA | 102635 | city:na |
-| Stuttgart | Germany | 634830 | city:emea |
-| Zurich | Switzerland | 415367 | city:capital<br>city:emea |
+| シュトゥットガルト | ドイツ | 634830 | city:emea |
+| チューリッヒ | スイス | 415367 | city:capital<br>city:emea |
