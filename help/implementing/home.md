@@ -4,7 +4,7 @@ description: Adobe Experience Manager as a Cloud Service の実装に関する�
 landing-page-description: Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法を説明します。
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
 source-git-commit: 4a5e5f6a105db8f010fb7d49810e2ff2656f253a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '402'
 ht-degree: 100%
 
