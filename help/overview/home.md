@@ -3,24 +3,24 @@ title: Experience Manager as a Cloud Service の基本を学ぶ
 description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
 source-git-commit: 4a5e5f6a105db8f010fb7d49810e2ff2656f253a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Experience Manageras a Cloud Service文書 {#aem-overview-guide}
+# Experience Manager as a Cloud Service ドキュメント {#aem-overview-guide}
 
 ここでは、Experience Manager as a Cloud Service の仕組みと機能を説明します。
 
-## 概要に関する主要な記事 {#key-articles}
+## 主な概要記事 {#key-articles}
 
 * [はじめに](introduction.md)
 * [用語](terminology.md)
 * [新機能と相違点](what-is-new-and-different.md)
 * [アーキテクチャの概要](architecture.md)
 
-## Experience Manageras a Cloud Serviceガイド {#aem-guides}
+## Experience Manager as a Cloud Service ガイド {#aem-guides}
 
 | ユーザーガイド | 説明 |
 |---|---|
@@ -36,7 +36,7 @@ ht-degree: 93%
 | [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe Experience Manager as a Cloud Service のバックエンド運用について説明します。 |
 | [Commerce ユーザーガイド](/help/commerce-cloud/home.md) | AEM as a Cloud Service の Commerce Integration Framework について説明します。 |
 
-## その他のExperience Managerヘルプリソース {#other-resources}
+## その他の Experience Manager ヘルプリソース {#other-resources}
 
 * [最近のドキュメントの更新](https://helpx.adobe.com/jp/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Dispatcher のドキュメント](/help/implementing/dispatcher/overview.md)
