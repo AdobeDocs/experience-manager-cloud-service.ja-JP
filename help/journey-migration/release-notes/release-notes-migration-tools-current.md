@@ -6,7 +6,7 @@ exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
 source-git-commit: b88fec3247179beefd76c520b10a1145e9b0c911
 workflow-type: tm+mt
 source-wordcount: '74'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -22,4 +22,4 @@ ht-degree: 91%
 
 ### バグの修正 {#bug-fixes-bpa}
 
-* 偽陽性の数が修正されました。
+* いくつかの誤検出を修正しました。

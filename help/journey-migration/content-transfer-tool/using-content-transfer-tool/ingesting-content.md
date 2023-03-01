@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 3ccc225a665392552621c78615a31917eb44f1fd
 workflow-type: tm+mt
 source-wordcount: '1660'
-ht-degree: 61%
+ht-degree: 81%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 61%
 >オプションの事前コピー手順を実行して、取り込み段階を大幅に高速化できます。事前コピーステップは、1回目の完全抽出と取り込みに最も効果的です。詳しくは、[AzCopy を使用した取得](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy)を参照してください。
 
 >[!NOTE]
->この取り込みのサポートチケットを記録しましたか？ 詳しくは、 [コンテンツ転送ツールを使用する前に考慮すべき重要事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) を参照してください。
+>この取り込みのサポートチケットを忘れずにログに記録しましたか？[コンテンツ転送ツールを使用する前の重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja#important-considerations)を参照して、取り込みを成功させるためのその他の考慮事項を確認してください。
 
 1. Cloud Acceleration Manager に移動します。プロジェクトカードをクリックし、コンテンツ転送カードをクリックします。**取り込みジョブ**&#x200B;に移動し、「**新しい取り込み**」をクリックします。
 
@@ -119,7 +119,7 @@ ht-degree: 61%
 
 ### CAM が移行トークンを取得できない {#cam-unable-to-retrieve-the-migration-token}
 
-移行トークンの自動取得は、ターゲットの Cloud Service 環境における [Cloud Manager を介した IP 許可リストの設定](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)など、さまざまな理由で失敗する場合があります。このようなシナリオでは、取り込みを開始しようとすると、次のダイアログが表示されます。
+移行トークンの自動取得は、ターゲットの Cloud Service 環境における [Cloud Manager を介した IP 許可リストの設定](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)など、様々な理由で失敗する場合があります。このようなシナリオでは、取り込みを開始しようとすると、次のダイアログが表示されます。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
@@ -152,26 +152,26 @@ ht-degree: 61%
 * 次の場合、 [IP許可リストが適用されました](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Cloud Manager を使用すると、Cloud Acceleration Manager が移行サービスに到達するのをブロックします。 アドレスが非常に動的なので、取り込み用に IP アドレスを追加できません。 現在、唯一の解決策は、取り込みの実行中に IP許可リストを無効にすることです。
 * 調査が必要な理由が他にもあるかもしれません。 それでも取り込みに失敗する場合は、Adobeカスタマーケアにお問い合わせください。
 
-### Release Orchestrator による自動更新は、引き続き有効になっています
+### リリースオーケストレーターによる自動更新は引き続き有効です
 
-Release Orchestrator は、更新を自動的に適用することで、環境を自動的に最新の状態に保ちます。 取り込みの実行中に更新がトリガーされた場合、環境の破損を含む予期しない結果が生じる可能性があります。 これは、取り込みを開始する前にサポートチケットをログに記録する必要がある理由の 1 つです（上記の「注意」を参照）。これにより、Release Orchestrator を一時的に無効にするようにスケジュールできます。
+リリースオーケストレーターは、更新を自動的に適用することで、環境を自動的に最新の状態に保ちます。取り込みの実行中に更新がトリガーされると、環境の破損など、予期しない結果が生じる可能性があります。これは、取り込みを開始する前にサポートチケットをログに記録する必要がある理由の 1 つです（上記の「メモ」を参照）。これにより、リリースオーケストレーターの一時的な無効化をスケジュールできます。
 
-取り込みの開始時に Release Orchestrator が実行中の場合は、UI にこのメッセージが表示されます。 フィールドをチェックし、再度ボタンを押すことで、リスクを受け入れながら、続行することもできます。
+取り込みの開始時に Release Orchestrator が実行中の場合は、UI にこのメッセージが表示されます。 フィールドをチェックしてもう一度ボタンを押すことにより、リスクを受け入れて続行することを選択できます。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
-### 追加取り込み失敗
+### 追加取り込みエラー
 
-の一般的な原因 [追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失敗はノード id 内の競合です。 このエラーを識別するには、Cloud Acceleration Manager UI を使用して取り込みログをダウンロードし、次のようなエントリを探します。
+[追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)エラーの一般的な原因は、ノード ID の競合です。このエラーを識別するには、Cloud Acceleration Manager UI を使用して取り込みログをダウンロードし、次のようなエントリを探します。
 
->java.lang.RuntimeException:org.apache.jackrabbit.oak.api.CommitFailedException:OakConstraint0030:一意性制約違反プロパティ [jcr:uuid] 値 a1a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5 の場合：/some/path/jcr:content, /some/other/path/jcr:content
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
-AEMの各ノードには、一意の UUID が必要です。 このエラーは、取り込まれるノードの uuid が、ターゲットインスタンス上の別のパスに既に存在する uuid と同じであることを示します。
-この問題は、抽出とそれ以降の抽出の間にソース上でノードが移動した場合に発生する可能性があります [追加抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
-また、ターゲット上のノードが取り込みとそれ以降の追加取り込みの間に移動した場合にも発生する可能性があります。
+AEM の各ノードには、一意の UUID が必要です。このエラーは、取り込まれているノードが、ターゲットインスタンスの別のパスに既に存在するノードと同じ uuid を持っていることを示します。
+これは、抽出と後続の[追加抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)の間でノードがソース上で移動された場合に発生する可能性があります。
+また、ターゲット上のノードが取り込みと後続の追加取り込みの間に移動した場合にも発生する可能性があります。
 
-この競合は手動で解決する必要があります。 コンテンツを参照する他のコンテンツに留意し、2 つのノードのうち、削除する必要があるノードを誰かが決定する必要があります。 ソリューションでは、問題のあるノードがなくても、追加抽出を再び実行する必要が生じる場合があります。
+この競合は手動で解決する必要があります。コンテンツを参照する他のコンテンツに留意し、2 つのノードのうち、削除する必要があるノードをコンテンツに精通したユーザーが決定する必要があります。解決策として、問題のあるノードがなくても、追加抽出を再度行う必要が生じる場合があります。
 
-## 次のステップ {#whats-next}
+## 次の手順 {#whats-next}
 
 Target へのコンテンツの取り込みが完了したら、各ステップ（抽出と取り込み）のログを表示し、エラーを探すことができます。詳しくは、[移行セットのログの表示](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ja)を参照してください。

@@ -5,7 +5,7 @@ exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
 workflow-type: tm+mt
 source-wordcount: '1613'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 97%
 
 * コンテンツ転送ツール（CTT）は、ソースインスタンスからターゲットインスタンスにコンテンツを転送する前に、どのような種類のコンテンツ分析も実行しません。例えば、CTT では、コンテンツをパブリッシュ環境に取り込む際に、公開済みコンテンツと非公開コンテンツを区別しません。移行セットで指定されているコンテンツは何であれ、選択したターゲットインスタンスに取り込まれます。オーサーインスタンスとパブリッシュインスタンスのどちらか一方または両方に移行セットを取り込むことができます。コンテンツを実稼動インスタンスに移動する際は、ソースオーサーインスタンスに CTT をインストールしてコンテンツをターゲットオーサーインスタンスに移動し、同様に、ソースパブリッシュインスタンスに CTT をインストールしてコンテンツをターゲットパブリッシュインスタンスに移動することをお勧めします。詳しくは、[パブリッシュインスタンスでのコンテンツ転送ツールの実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja#running-ctt-on-publish)を参照してください。
 
-* コンテンツ転送ツールによって転送されるユーザーとグループは、権限を満たすためにコンテンツで必要なものに限られます。*抽出*&#x200B;プロセスでは、`/home` 全体を移行セットにコピーし、*取り込み*&#x200B;プロセスでは、移行されたコンテンツ ACL で参照されているすべてのユーザーおよびグループをコピーします。既存のユーザーを自動的に IMS ID にマッピングするには、 [ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja#cloud-migration).
+* コンテンツ転送ツールによって転送されるユーザーとグループは、権限を満たすためにコンテンツで必要なものに限られます。*抽出*&#x200B;プロセスでは、`/home` 全体を移行セットにコピーし、*取り込み*&#x200B;プロセスでは、移行されたコンテンツ ACL で参照されているすべてのユーザーおよびグループをコピーします。既存のユーザーを IMS ID に自動的にマッピングする場合は、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja#cloud-migration)を参照してください。
 
 * 抽出段階では、コンテンツ転送ツールはアクティブな AEM ソースインスタンスで実行されます。
 

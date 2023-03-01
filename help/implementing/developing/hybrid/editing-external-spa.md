@@ -5,7 +5,7 @@ exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 source-git-commit: b06e734fd6874946323cdc71073ecb1c50945845
 workflow-type: tm+mt
 source-wordcount: '2456'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -361,7 +361,7 @@ mvn clean install -PautoInstallSinglePackage
 
 ## フレームワークの制限 {#framework-limitations}
 
-RemotePage コンポーネントは、実装が、 [ここにあります。](https://github.com/shellscape/webpack-manifest-plugin) ただし、RemotePage コンポーネントは、（remote-page-next コンポーネントを介して）React フレームワークと連携することをテストされただけなので、Angularなど他のフレームワークからのアプリケーションのリモート読み込みはサポートされていません。
+RemotePage コンポーネントでは、実装によりアセットマニフェストが指定されることを想定しています。[アセットマニフェストの例についてはこちらを参照してください。](https://github.com/shellscape/webpack-manifest-plugin)ただし、RemotePage コンポーネントは React フレームワーク（および remote-page-next コンポーネントを介した Next.js）で動作するようにのみテストされているので、Angular など他のフレームワークからのアプリケーションのリモート読み込みはサポートされていません。
 
 ## その他のリソース {#additional-resources}
 

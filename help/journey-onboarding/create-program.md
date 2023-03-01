@@ -6,7 +6,7 @@ exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 source-git-commit: 971ef47b66da6d7e032f6109afb4830d49c00071
 workflow-type: tm+mt
 source-wordcount: '626'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Cloud Manager のプログラムは、Cloud Manager の一連の環境を表し�
 
 >[!TIP]
 >
->実稼動プログラムを作成する必要がある場合は、 [その他のリソース](#additional-resources) プログラムの詳細を説明するドキュメントへのリンクの節を参照してください。
+>実稼動プログラムを作成する必要がある場合は、[その他のリソース](#additional-resources)の節で、プログラムを詳細に説明しているドキュメントへのリンクを参照してください。
 
 ## サンドボックスプログラムの作成 {#create-sandbox}
 

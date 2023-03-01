@@ -9,7 +9,7 @@ ht-degree: 37%
 
 ---
 
-# サーバー側 API のアクセストークンの生成 {#generating-access-tokens-for-server-side-apis}
+# サーバーサイド API のアクセストークンの生成 {#generating-access-tokens-for-server-side-apis}
 
 一部のアーキテクチャでは、AEM インフラストラクチャの外部にあるサーバーにホストされているアプリケーションから AEM as a Cloud Service への呼び出しの実行がベースになっています。例えば、モバイルアプリケーションがサーバーを呼び出し、その後、サーバーが AEM as a Cloud Service に対して API リクエストを行います。
 

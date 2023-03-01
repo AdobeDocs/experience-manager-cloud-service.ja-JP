@@ -8,7 +8,7 @@ exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 source-git-commit: 4f58f36e646677071d7f9a4aa56238d68c7689ba
 workflow-type: tm+mt
 source-wordcount: '2478'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -29,13 +29,13 @@ Experience Manager Assets as a [!DNL Cloud Service] インスタンスで Brand 
 
 >[!NOTE]
 >
->Experience Manager Assets as a には、設定済みの実稼動環境が必要です [!DNL Cloud Service] Brand Portalテナントに接続するためのインスタンスです。
+>Brand Portal テナントに接続するには、Experience Manager Assets as a [!DNL Cloud Service] インスタンスに設定済みの実稼動環境が必要です。
 
 **Brand Portal をアクティブ化する手順**
 
-Experience Manager Assets as a の実稼動環境を作成する際に、Brand Portalをアクティブ化できます [!DNL Cloud Service] インスタンス、または個別に。 環境が既に作成され、Brand Portalをアクティブ化する必要があるとします。
+Brand Portal のライセンス認証は、Experience Manager Assets as a [!DNL Cloud Service] インスタンス用の実稼動環境を作成する際に行うことも、別個に行うこともできます。環境が既に作成されており、Brand Portal をライセンス認証する必要があるとします。
 
-1. Cloud Manager にAdobeし、に移動します。 **[!UICONTROL 環境]**.
+1. Adobe Cloud Manager にログインし、**[!UICONTROL 環境]**&#x200B;に移動します。
 
    **[!UICONTROL 環境]**&#x200B;ページには、既存の環境のリストが表示されます。
 
@@ -69,9 +69,9 @@ Experience Manager Assets as a の実稼動環境を作成する際に、Brand P
 * [Cloud Manager での環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja#adding-environments)
 
 
-**Brand Portalテナントにログイン**:
+**Brand Portal テナントにログイン**：
 
-Cloud Manager でBrand Portalテナントをアクティベートした後、Admin Consoleから、またはテナント URL を直接使用して、Brand Portalにログインできます。
+Cloud Manager で Brand Portal テナントをライセンス認証した後、Admin Console から、またはテナント URL を直接使用して、Brand Portal にログインできます。
 
 Brand Portal テナントのデフォルト URL は `https://<tenant-id>.brand-portal.adobe.com/` です。
 
@@ -79,8 +79,8 @@ Brand Portal テナントのデフォルト URL は `https://<tenant-id>.brand-p
 
 ブランドポータルの URL が不明な場合は、次の手順を実行します。
 
-1. ログイン先 [Admin Console](https://adminconsole.adobe.com/) をクリックし、 **[!UICONTROL 製品]**.
-1. 左のパネルから、「 」を選択します。 **[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**.
+1. [Admin Console](https://adminconsole.adobe.com/) にログインし、**[!UICONTROL 製品]**&#x200B;に移動します。
+1. 左パネルの「**[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**」を選択します。
 1. 「**[!UICONTROL Brand Portal に移動]**」をクリックして、ブラウザーで直接 Brand Portal を開きます。
 
    または、**[!UICONTROL Brand Portal へ移動]**&#x200B;リンクから Brand Portal テナント URL をコピーし、ブラウザーに貼り付けて Brand Portal インターフェイスを開きます。
@@ -92,7 +92,7 @@ Brand Portal テナントのデフォルト URL は `https://<tenant-id>.brand-p
 
 Experience Manager Assets as a [!DNL Cloud Service] インスタンスと Brand Portal テナントとの接続を検証するには、次の手順を実行します。
 
-1. Experience Manager Assetsにログインします。
+1. Experience Manager Assets にログインします。
 
 1. **ツール**&#x200B;パネルで、**[!UICONTROL 導入]**／**[!UICONTROL 配布版]**&#x200B;に移動します。
 
@@ -229,7 +229,7 @@ IMS 設定には、次の 2 つの手順が含まれます。
 
 公開鍵（証明書）は、Adobe 開発者コンソールでプロファイルを認証します。
 
-1. Experience Manager Assetsにログインします。
+1. Experience Manager Assets にログインします。
 1. **ツール**&#x200B;パネルで、**[!UICONTROL セキュリティ]**／**[!UICONTROL Adobe IMS 設定]**&#x200B;に移動します。
 1. Adobe IMS 設定ページで、「**[!UICONTROL 作成]**」をクリックします。**[!UICONTROL Adobe IMS 技術アカウント設定]**&#x200B;ページにリダイレクトされます。デフォルトでは、「**証明書**」タブが開きます。
 1. 「**[!UICONTROL クラウドソリューション]**」ドロップダウンリストで「**[!UICONTROL Adobe Brand Portal]**」を選択します。
@@ -256,7 +256,7 @@ Adobe 開発者コンソールで、プロジェクトと API を Brand Portal �
 
 サービスアカウント資格情報と JWT ペイロードを生成するには、次の手順を実行します。
 
-1. IMS 組織 (Brand Portalテナント ) のシステム管理者権限でAdobe Developer Console にログインします。 デフォルトの URL は [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui) です。
+1. IMS 組織（Brand Portal テナント）のシステム管理者権限で Adobe Developer Console にログインします。デフォルトの URL は [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui) です。
 
 
    >[!NOTE]
@@ -378,7 +378,7 @@ IMS アカウントを設定するには、次の手順を実行します。
 
 Brand Portal Cloud Service を設定するには、次の手順を実行します。
 
-1. Experience Manager Assetsにログインします。
+1. Experience Manager Assets にログインします。
 
 1. **ツール**&#x200B;パネルで、**[!UICONTROL クラウドサービス]**／**[!UICONTROL AEM Brand Portal]** に移動します。
 
@@ -398,14 +398,14 @@ Brand Portal Cloud Service を設定するには、次の手順を実行しま�
 
 これで、配信エージェントを確認し、Brand Portal にアセットを公開することで、設定をテストできます。
 
-**セキュアプ許可リストレビューが有効な場合に SPS でエグレス IP を**
-Dynamic Media-Scene7を [セキュアプレビューが有効になっています](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) （会社の場合）、Scene7の会社管理者にお勧めします。 [公許可リスト開エグレス IP の](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) SPS(Scene7 Publishing System)Flash UI を使用する各地域用。
+**セキュアプレビューが有効な場合は、SPS でエグレス IP を許可リストに登録する**
+（会社に対して[セキュアプレビューが有効](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en)な状態で）Dynamic Media - Scene7 を使用する場合は、Scene7 会社管理者が SPS（Scene7 Publishing System）Flash UI を使用して、それぞれの地域の[公開エグレス IP を許可リストに登録する](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service)ことをお勧めします。
 エグレス IP は次のとおりです。
 
 | **地域** | **エグレス IP** |
 |--- |--- |
-| 該当なし | 130.248.160.68,  20.94.203.130 |
-| EMEA | 185.34.189.3,  51.132.146.75 |
+| 該当なし | 130.248.160.68, 20.94.203.130 |
+| EMEA | 185.34.189.3, 51.132.146.75 |
 | APAC | 63.140.44.54 |
 
 <!--

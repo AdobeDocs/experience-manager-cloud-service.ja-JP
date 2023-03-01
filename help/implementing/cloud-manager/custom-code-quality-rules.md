@@ -5,7 +5,7 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: 2935338b847f7e852dfd31c93a61e737e8a3ec80
 workflow-type: tm+mt
 source-wordcount: '3485'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 46%
 >title="カスタムコード品質ルール"
 >abstract="このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。これらは、Adobe Experience Manager Engineering のベストプラクティスに基づいています。"
 
-このページでは、[コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)の一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。これらは、Experience Manager・エンジニアリングのベスト・プラクティスに基づいています。
+このページでは、[コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)の一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。これらは、Experience Manager Engineering のベストプラクティスに基づいています。
 
 >[!NOTE]
 >
@@ -33,9 +33,9 @@ ht-degree: 46%
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-メソッド `Thread.stop()` および `Thread.interrupt()` は再現が困難な問題を引き起こし、場合によってはセキュリティの脆弱性を引き起こす可能性があります。 その使用状況は、厳密に監視および検証する必要があります。一般的に、似た目標を達成するにはメッセージを渡すとより安全です。
+`Thread.stop()` と `Thread.interrupt()` のメソッドは、再現が困難な問題を引き起こし、場合によってはセキュリティの脆弱性を生み出す可能性があります。その使用状況は、厳密に監視および検証する必要があります。一般的に、似た目標を達成するにはメッセージを渡すとより安全です。
 
-#### 準拠していないコード {#non-compliant-code}
+#### 非準拠コード {#non-compliant-code}
 
 ```java
 public class DontDoThis implements Runnable {
@@ -58,7 +58,7 @@ public class DontDoThis implements Runnable {
 }
 ```
 
-#### 準拠しているコード {#compliant-code}
+#### 準拠コード {#compliant-code}
 
 ```java
 public class DoThis implements Runnable {
@@ -91,7 +91,7 @@ public class DoThis implements Runnable {
 
 外部ソース（リクエストパラメーターやユーザー生成コンテンツなど）の書式指定文字列を使用すると、アプリケーションが DoS 攻撃にさらされる可能性があります。書式指定文字列は外部で制御できる場合がありますが、信頼できるソースからのみ許可されます。
 
-#### 準拠していないコード {#non-compliant-code-1}
+#### 非準拠コード {#non-compliant-code-1}
 
 ```java
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
@@ -108,9 +108,9 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **深刻度**：致命的
 * **最初の対象バージョン**：バージョン 2018.6.0
 
-Experience Managerアプリケーション内から HTTP 要求を実行する場合、不要なスレッドの使用を避けるために、適切なタイムアウトが設定されていることを確認することが重要です。 残念ながら、Java™のデフォルト HTTP クライアント (`java.net.HttpUrlConnection`) と一般的に使用される Apache HTTP Components クライアントはタイムアウトしないので、タイムアウトを明示的に設定する必要があります。 また、ベストプラクティスとして、これらのタイムアウトは 60 秒以内にする必要があります。
+Experience Manager アプリケーション内から HTTP 要求を実行する場合、不要なスレッドの使用を防ぐために、適切なタイムアウトが設定されていることを確認することが重要です。ただし、Java™ のデフォルト HTTP クライアント（`java.net.HttpUrlConnection`）および一般的に使用される Apache HTTP コンポーネントクライアントのデフォルトの動作はタイムアウトしないので、タイムアウトを明示的に設定する必要があります。また、ベストプラクティスとして、これらのタイムアウトは 60 秒以内にする必要があります。
 
-#### 準拠していないコード {#non-compliant-code-2}
+#### 非準拠コード {#non-compliant-code-2}
 
 ```java
 @Reference
@@ -139,7 +139,7 @@ public void dontDoThisEither() {
 }
 ```
 
-#### 準拠しているコード {#compliant-code-1}
+#### 準拠コード {#compliant-code-1}
 
 ```java
 @Reference
@@ -185,9 +185,9 @@ public void orDoThis() {
 
 `ResourceResolverFactory` から取得された `ResourceResolver` オブジェクトは、システムリソースを使用します。`ResourceResolver` が使用されなくなった場合に、これらのリソースを再利用する指標がありますが、`close()` メソッドを呼び出し、開いている `ResourceResolver` オブジェクトを明示的に閉じるほうが効率的です。
 
-一つの比較的一般的な誤解は `ResourceResolver` 既存の JCR セッションを使用して作成したオブジェクトは、明示的に閉じたり、基になる JCR セッションを閉じたりしないでください。 これは該当しません。どの方法で `ResourceResolver` を開いても、使用しなくなったら閉じる必要があります。`ResourceResolver` は閉じることのできる `Closeable` インターフェイスを実装するので、`close()` を明示的に呼び出す代わりに、`try-with-resources` 構文を使用することもできます。
+比較的一般的な誤解として、既存の JCR セッションを使用して作成された `ResourceResolver` オブジェクトは明示的に閉じることはできず、そうすると基になる JCR セッションを閉じてしまうというものがあります。これは該当しません。どの方法で `ResourceResolver` を開いても、使用しなくなったら閉じる必要があります。`ResourceResolver` は閉じることのできる `Closeable` インターフェイスを実装するので、`close()` を明示的に呼び出す代わりに、`try-with-resources` 構文を使用することもできます。
 
-#### 準拠していないコード {#non-compliant-code-4}
+#### 非準拠コード {#non-compliant-code-4}
 
 ```java
 public void dontDoThis(Session session) throws Exception {
@@ -196,7 +196,7 @@ public void dontDoThis(Session session) throws Exception {
 }
 ```
 
-#### 準拠しているコード {#compliant-code-2}
+#### 準拠コード {#compliant-code-2}
 
 ```java
 public void doThis(Session session) throws Exception {
@@ -227,7 +227,7 @@ public void orDoThis(Session session) throws Exception {
 
 [Sling ドキュメント](https://sling.apache.org/documentation/the-sling-engine/servlets.html)で説明されているように、パスによってサーブレットをバインドすることは推奨されません。パスバインドサーブレットでは、標準 JCR アクセス制御を使用できないので、追加のセキュリティをより厳格にする必要があります。パスバインドサーブレットを使用する代わりに、リポジトリにノードを作成し、リソースタイプによってサーブレットを登録することをお勧めします。
 
-#### 準拠していないコード {#non-compliant-code-5}
+#### 非準拠コード {#non-compliant-code-5}
 
 ```java
 @Component(property = {
@@ -238,7 +238,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 }
 ```
 
-### キャッチされた例外は、両方ではなく、ログまたはスローする必要があります {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
+### キャッチされた例外は、ログに記録またはスローする必要があるが、両方は行わない {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 * **キー**：CQRules:CQBP-44---CatchAndEitherLogOrThrow
 * **タイプ**：コードスメル
@@ -247,7 +247,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 
 一般に、例外は 1 回だけログに記録する必要があります。複数回ログに記録すると、例外が発生した回数がわからなくなるので、混乱が生じる可能性があります。最も一般的なパターンは、キャッチされた例外をログに記録してスローすることです。
 
-#### 準拠していないコード {#non-compliant-code-6}
+#### 非準拠コード {#non-compliant-code-6}
 
 ```java
 public void dontDoThis() throws Exception {
@@ -260,7 +260,7 @@ public void dontDoThis() throws Exception {
 }
 ```
 
-#### 準拠しているコード {#compliant-code-3}
+#### 準拠コード {#compliant-code-3}
 
 ```java
 public void doThis() {
@@ -280,16 +280,16 @@ public void orDoThis() throws MyCustomException {
 }
 ```
 
-### ログ文の直後にスロー文が続くのを避ける {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
+### ログステートメントの直後にスローステートメントを使用しない {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
 * **キー**：CQRules:CQBP-44---ConsecutivelyLogAndThrow
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-もうひとつの避けるべき一般的なパターンは、メッセージをログに記録してからすぐに例外をスローすることです。この方法は、通常、例外メッセージがログファイルに複製されることを示します。
+もうひとつの避けるべき一般的なパターンは、メッセージをログに記録してからすぐに例外をスローすることです。これは一般に、ログファイルで例外メッセージが重複することを示します。
 
-#### 準拠していないコード {#non-compliant-code-7}
+#### 非準拠コード {#non-compliant-code-7}
 
 ```java
 public void dontDoThis() throws Exception {
@@ -298,7 +298,7 @@ public void dontDoThis() throws Exception {
 }
 ```
 
-#### 準拠しているコード {#compliant-code-4}
+#### 準拠コード {#compliant-code-4}
 
 ```java
 public void doThis() throws Exception {
@@ -312,13 +312,13 @@ public void doThis() throws Exception {
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 
-一般に、INFO ログレベルは重要なアクションを区切るために使用し、デフォルトでは、Experience Managerは INFO レベル以上をログに記録するように設定されています。 GET および HEAD メソッドは読み取り専用操作に過ぎず、重要なアクションを構成しません。GETやHEADの要求に応じて INFO レベルでログに記録すると、大量のログノイズが発生する可能性が高く、ログファイル内の有用な情報を特定しにくくなります。 GET または HEAD 要求処理時のログへの記録は、WARN または ERROR レベル（問題が発生した場合）、または、DEBUG または TRACE レベル（詳細なトラブルシューティング情報が役立つ可能性がある場合）で行います。
+一般的に、INFO ログレベルは重要なアクションを区切るために使用し、デフォルトでは、Experience Manager は INFO レベル以上をログに記録するように設定されています。GET および HEAD メソッドは読み取り専用操作に過ぎず、重要なアクションを構成しません。GET または HEAD 要求に応答して INFO レベルでログに記録すると、大量のログノイズが作成されるので、ログファイル内の有用な情報を特定するのが難しくなります。GET または HEAD 要求処理時のログへの記録は、WARN または ERROR レベル（問題が発生した場合）、または、DEBUG または TRACE レベル（詳細なトラブルシューティング情報が役立つ可能性がある場合）で行います。
 
 >[!NOTE]
 >
->これは、 `access.log`各リクエストの —type ログ。
+>これは、各リクエストの `access.log`-type ログには適用されません。
 
-#### 準拠していないコード {#non-compliant-code-8}
+#### 非準拠コード {#non-compliant-code-8}
 
 ```java
 public void doGet() throws Exception {
@@ -326,7 +326,7 @@ public void doGet() throws Exception {
 }
 ```
 
-#### 準拠しているコード {#compliant-code-5}
+#### 準拠コード {#compliant-code-5}
 
 ```java
 public void doGet() throws Exception {
@@ -341,9 +341,9 @@ public void doGet() throws Exception {
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-ベストプラクティスとして、ログメッセージは、アプリケーション内での問題の発生場所に関するコンテキスト情報を提供する必要があります。コンテキストはスタックトレースを使用して決定することもできますが、一般に、ログメッセージは読みやすく、理解しやすくなります。 その結果、例外をログに記録する場合、例外のメッセージをログメッセージとして使用するのは悪い方法です。 例外メッセージには、何が起こったかが含まれますが、ログメッセージは、例外が発生したときにアプリケーションが何を実行していたかをログリーダーに伝えるために使用する必要があります。 例外メッセージはログに記録されます。 独自のメッセージを指定すると、ログがわかりやすくなります。
+ベストプラクティスとして、ログメッセージは、アプリケーション内での問題の発生場所に関するコンテキスト情報を提供する必要があります。また、スタックトレースを使用してコンテキストを判断することもできます。これにより、一般的にログメッセージが読みやすく、わかりやすくなります。その結果、例外をログに記録する際に、例外のメッセージをログメッセージとして使用するのは適切ではありません。例外メッセージには、何が起こったかが含まれますが、ログメッセージは、例外が発生したときにアプリケーションが何を実行していたかをログリーダーに伝えるために使用する必要があります。例外メッセージはログに記録されます。独自のメッセージを指定すると、ログがわかりやすくなります。
 
-#### 準拠していないコード {#non-compliant-code-9}
+#### 非準拠コード {#non-compliant-code-9}
 
 ```java
 public void dontDoThis() {
@@ -355,7 +355,7 @@ public void dontDoThis() {
 }
 ```
 
-#### 準拠しているコード {#compliant-code-6}
+#### 準拠コード {#compliant-code-6}
 
 ```java
 public void doThis() {
@@ -374,9 +374,9 @@ public void doThis() {
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-名前が示すように、Java™例外は常に例外的な状況で使用する必要があります。 結果として、例外が検出されたときには、ログメッセージが適切なレベル（WARN または ERROR）で記録されるようにすることが重要です。これにより、これらのメッセージがログに正しく表示されます。
+名前が示すように、Java™ の例外は常に例外的な状況で使用する必要があります。結果として、例外が検出されたときには、ログメッセージが適切なレベル（WARN または ERROR）で記録されるようにすることが重要です。これにより、これらのメッセージがログに正しく表示されます。
 
-#### 準拠していないコード {#non-compliant-code-10}
+#### 非準拠コード {#non-compliant-code-10}
 
 ```java
 public void dontDoThis() {
@@ -388,7 +388,7 @@ public void dontDoThis() {
 }
 ```
 
-#### 準拠しているコード {#compliant-code-7}
+#### 準拠コード {#compliant-code-7}
 
 ```java
 public void doThis() {
@@ -407,9 +407,9 @@ public void doThis() {
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-既に述べたように、コンテキストはログメッセージを理解する場合に重要です。使用 `Exception.printStackTrace()` は、スタックトレースのみを標準エラーストリームに出力し、すべてのコンテキストを失います。 さらに、Experience Managerなどのマルチスレッドアプリケーションでは、このメソッドを同時に使用して複数の例外が印刷される場合、スタックトレースが重なり、大きな混乱を招く可能性があります。 例外は、ログフレームワークによってのみ記録される必要があります。
+既に述べたように、コンテキストはログメッセージを理解する場合に重要です。`Exception.printStackTrace()` を使用すると、スタックトレースのみが標準エラーストリームに出力されるので、すべてのコンテキストが失われます。さらに、Experience Manager などのマルチスレッドアプリケーションで、このメソッドを同時に使用して複数の例外が出力される場合、スタックトレースが重なって大きな混乱を招くことがあります。例外は、ログフレームワークによってのみ記録される必要があります。
 
-#### 準拠していないコード {#non-compliant-code-11}
+#### 非準拠コード {#non-compliant-code-11}
 
 ```java
 public void dontDoThis() {
@@ -421,7 +421,7 @@ public void dontDoThis() {
 }
 ```
 
-#### 準拠しているコード {#compliant-code-8}
+#### 準拠コード {#compliant-code-8}
 
 ```java
 public void doThis() {
@@ -440,9 +440,9 @@ public void doThis() {
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-ログインExperience Managerは、常にログフレームワーク (SLF4J) を通じておこなう必要があります。 標準出力または標準エラーストリームに直接出力すると、ログフレームワークによって提供される構造およびコンテキスト情報が失われます。 場合によっては、パフォーマンスの問題が発生することがあります。
+Experience Manager にログインする場合は、常にログフレームワーク（SLF4J）を使用してログインする必要があります。標準出力または標準エラーストリームに直接出力すると、ログフレームワークによって提供される構造およびコンテキスト情報が失われます。場合によっては、パフォーマンスの問題が発生することがあります。
 
-#### 準拠していないコード {#non-compliant-code-12}
+#### 非準拠コード {#non-compliant-code-12}
 
 ```java
 public void dontDoThis() {
@@ -454,7 +454,7 @@ public void dontDoThis() {
 }
 ```
 
-#### 準拠しているコード {#compliant-code-9}
+#### 準拠コード {#compliant-code-9}
 
 ```java
 public void doThis() {
@@ -466,16 +466,16 @@ public void doThis() {
 }
 ```
 
-### /apps および/libs パスをハードコードしない {#avoid-hardcoded-apps-and-libs-paths}
+### /apps および /libs パスをハードコーディングしない  {#avoid-hardcoded-apps-and-libs-paths}
 
 * **キー**：CQRules:CQBP-71
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-一般に、`/libs` および `/apps` で始まるパスは、参照元としてハードコーディングせず、Sling 検索パス（デフォルトで `/libs,/apps` に設定されている）に対する相対パスで格納する必要があります。絶対パスを使用すると、プロジェクトライフサイクルの後になって初めて現れる、わかりにくい不具合が生じる可能性があります。
+一般に、`/libs` および `/apps` で始まるパスは、参照元としてハードコーディングせず、Sling 検索パス（デフォルトで `/libs,/apps` に設定されている）に対する相対パスで格納する必要があります。絶対パスを使用すると、プロジェクトライフサイクルで後になってから初めて現れる、細かい不具合が生じる可能性があります。
 
-#### 準拠していないコード {#non-compliant-code-13}
+#### 非準拠コード {#non-compliant-code-13}
 
 ```java
 public boolean dontDoThis(Resource resource) {
@@ -483,7 +483,7 @@ public boolean dontDoThis(Resource resource) {
 }
 ```
 
-#### 準拠しているコード {#compliant-code-10}
+#### 準拠コード {#compliant-code-10}
 
 ```java
 public void doThis(Resource resource) {
@@ -498,22 +498,22 @@ public void doThis(Resource resource) {
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
-確実な実行を必要とするタスクには、 Sling スケジューラーを使用しないでください。 Sling スケジュールジョブは実行を保証し、クラスター化ジョブと非クラスター化環境の両方に適しています。
+確実な実行を必要とするタスクには、 Sling スケジューラーを使用しないでください。Sling スケジュールジョブは実行を保証し、クラスター化環境と非クラスター化環境の両方に適しています。
 
-参照： [Apache Sling Eventing and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) を参照して、Sling ジョブがクラスター環境で処理される方法について確認してください。
+Sling ジョブがクラスター環境で処理される方法について詳しくは、[Apache Sling のイベントとジョブの取り扱い](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)を参照してください。
 
-### Experience Managerの非推奨 API は使用しない {#sonarqube-aem-deprecated}
+### Experience Manager の非推奨 API は使用しない {#sonarqube-aem-deprecated}
 
 * **キー**：AMSCORE-553
 * **タイプ**：コードスメル／Cloud Service との互換性
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
-Experience ManagerAPI の表面は、使用が推奨されず非推奨と見なされた API を識別するために、継続的に改訂されています。
+Experience Manager API のサーフェスは、使用が勧められず、非推奨と見なされる API を識別するため、継続的に改訂されます。
 
-多くの場合、これらの API は標準の Java™を使用して非推奨（廃止予定）になっています `@Deprecated` 注釈と、 `squid:CallToDeprecatedMethod`.
+多くの場合、これらの API は、標準の Java™ `@Deprecated` 注釈を使用して非推奨とされ、その結果、`squid:CallToDeprecatedMethod` によって識別されます。
 
-ただし、API がExperience Managerのコンテキストで非推奨となるが、他のコンテキストでは非推奨とならない場合があります。 このルールは、この 2 番目のクラスを識別します。
+ただし、API が Experience Manager のコンテキストで非推奨となるものの、他のコンテキストでは非推奨とならない場合があります。このルールは、この 2 番目のクラスを識別します。
 
 
 ## OakPAL コンテンツルール {#oakpal-rules}
@@ -522,7 +522,7 @@ Experience ManagerAPI の表面は、使用が推奨されず非推奨と見な�
 
 >[!NOTE]
 >
->OakPAL は、スタンドアロンの Oak リポジトリを使用してコンテンツパッケージを検証するフレームワークです。2019 年Experience Manager・ロックスター・ノース・アメリカ賞を受賞したExperience Manager・パートナーによって開発されました。
+>OakPAL は、スタンドアロンの Oak リポジトリを使用してコンテンツパッケージを検証するフレームワークです。2019 Experience Manager Rockstar North America 賞を受賞した Experience Manager Partner が開発しました。
 
 ### @ProviderType の注釈が付いた製品 API は、お客様による実装または拡張はできない  {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
@@ -531,13 +531,13 @@ Experience ManagerAPI の表面は、使用が推奨されず非推奨と見な�
 * **深刻度**：致命的
 * **最初の対象バージョン**：バージョン 2018.7.0
 
-Experience ManagerAPI には、カスタムコードで使用する（ただし実装しない）ための Java™インターフェイスとクラスが含まれています。 例えば、インターフェイス `com.day.cq.wcm.api.Page` は、Experience Managerのみで実装する必要があります。
+Experience Manager API には、カスタムコードで使用するけれど実装できない Java™ インターフェイスとクラスが含まれています。例えば、インターフェイス `com.day.cq.wcm.api.Page` は、Experience Manager のみで実装する必要があります。
 
-新しいメソッドがこれらのインターフェイスに追加された場合、これらのインターフェイスを使用する既存のコードには、これらの追加のメソッドは影響しません。 その結果、これらのインターフェイスに新しいメソッドが追加された場合、後方互換性があると見なされます。 ただし、カスタムコードがこれらのインターフェイスのいずれかを実装する場合、そのカスタムコードによってお客様に後方互換性のリスクがもたらされます。
+新しいメソッドがこれらのインターフェイスに追加された場合、これらのインターフェイスを使用する既存のコードには、これらの追加のメソッドは影響しません。その結果、これらのインターフェイスに新しいメソッドが追加された場合、後方互換性があると見なされます。ただし、カスタムコードがこれらのインターフェイスのいずれかを実装する場合、そのカスタムコードによってお客様に後方互換性のリスクがもたらされます。
 
-インターフェイスとクラスは、Experience Managerが実装したように、 `org.osgi.annotation.versioning.ProviderType` または同様の従来の注釈 `aQute.bnd.annotation.ProviderType`. このルールは、カスタムコードによってこのようなインターフェイスが実装されている（またはクラスが拡張されている）場合を特定します。
+インターフェイスとクラス（Experience Manager によって実装される）には、`org.osgi.annotation.versioning.ProviderType` または場合によっては従来の類似の注釈 `aQute.bnd.annotation.ProviderType` が付けられます。このルールは、カスタムコードによってこのようなインターフェイスが実装されている（またはクラスが拡張されている）場合を特定します。
 
-#### 準拠していないコード {#non-compliant-code-3}
+#### 非準拠コード {#non-compliant-code-3}
 
 ```java
 import com.day.cq.wcm.api.Page;
@@ -554,11 +554,11 @@ public class DontDoThis implements Page {
 * **重大度**：ブロッカー
 * **開始バージョン**：2021.8.0
 
-標準搭載の複数のExperience ManagerOak インデックスには Tika 設定が含まれ、これらのインデックスのカスタマイズには Tika 設定が含まれている必要があります。 このルールは、 `damAssetLucene`、 `lucene`、`graphqlConfig` インデックスのカスタマイズを確認し、 `tika` ノードがない場合、または `tika` ノードに `config.xml` という名前の子ノードがない場合には問題を報告します。
+標準提供の複数の Experience Manager Oak インデックスには Tika 設定が含まれており、これらのインデックスをカスタマイズする場合は Tika 設定を含める必要があります。このルールは、 `damAssetLucene`、 `lucene`、`graphqlConfig` インデックスのカスタマイズを確認し、 `tika` ノードがない場合、または `tika` ノードに `config.xml` という名前の子ノードがない場合には問題を報告します。
 
 インデックス定義のカスタマイズについて詳しくは、[インデックス作成に関するドキュメント](/help/operations/indexing.md#preparing-the-new-index-definition)を参照してください。
 
-#### 準拠していないコード {#non-compliant-code-indextikanode}
+#### 非準拠コード {#non-compliant-code-indextikanode}
 
 ```text
 + oak:index
@@ -571,7 +571,7 @@ public class DontDoThis implements Page {
       - type: lucene
 ```
 
-#### 準拠しているコード {#compliant-code-indextikanode}
+#### 準拠コード {#compliant-code-indextikanode}
 
 ```text
 + oak:index
@@ -593,9 +593,9 @@ public class DontDoThis implements Page {
 * **重大度**：ブロッカー
 * **開始バージョン**：2021.8.0
 
-`lucene` タイプの Oak インデックスは常に非同期でインデックスを作成する必要があります。これに従わないと、システムが不安定になる可能性があります。Lucene インデックスの構造について詳しくは、 [Oak ドキュメント。](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)
+`lucene` タイプの Oak インデックスは常に非同期でインデックスを作成する必要があります。これに従わないと、システムが不安定になる可能性があります。Lucene インデックスの構造について詳しくは、[Oak ドキュメント](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)を参照してください。
 
-#### 準拠していないコード {#non-compliant-code-indexasync}
+#### 非準拠コード {#non-compliant-code-indexasync}
 
 ```text
 + oak:index
@@ -611,7 +611,7 @@ public class DontDoThis implements Page {
         + config.xml
 ```
 
-#### 準拠しているコード {#compliant-code-indexasync}
+#### 準拠コード {#compliant-code-indexasync}
 
 ```text
 + oak:index
@@ -633,9 +633,9 @@ public class DontDoThis implements Page {
 * **重大度**：ブロッカー
 * **開始バージョン**：2021.6.0
 
-Experience Manager Assetsでアセット検索が正しく機能するように、 `damAssetLucene` Oak インデックスは、このインデックスに固有の一連のガイドラインに従う必要があります。 このルールは、インデックス定義に `tags` という複数の値を持つプロパティがあり `visualSimilaritySearch` という値を含むかどうかを確認します。
+Experience Manager Assets でアセット検索が正しく機能するようにするには、`damAssetLucene` Oak インデックスのカスタマイズはこのインデックスに固有の一連のガイドラインに従う必要があります。このルールは、インデックス定義に `tags` という複数の値を持つプロパティ（`visualSimilaritySearch` という値を含む）があるかどうかを確認します。
 
-#### 準拠していないコード {#non-compliant-code-damAssetLucene}
+#### 非準拠コード {#non-compliant-code-damAssetLucene}
 
 ```text
 + oak:index
@@ -649,7 +649,7 @@ Experience Manager Assetsでアセット検索が正しく機能するように�
         + config.xml
 ```
 
-#### 準拠しているコード {#compliant-code-damAssetLucene}
+#### 準拠コード {#compliant-code-damAssetLucene}
 
 ```text
 + oak:index
@@ -664,33 +664,33 @@ Experience Manager Assetsでアセット検索が正しく機能するように�
         + config.xml
 ```
 
-### 顧客パッケージでは、/libs の下のノードを作成または変更しないでください {#oakpal-customer-package}
+### 顧客パッケージでは /libs 下のノードを作成／変更しない {#oakpal-customer-package}
 
 * **キー**：BannedPath
 * **タイプ**：バグ
 * **深刻度**：致命的
 * **最初の対象バージョン**：バージョン 2019.6.0
 
-これは長い間のベストプラクティスでした `/libs` Experience Managerコンテンツリポジトリーのコンテンツツリーは、顧客は読み取り専用と見なす必要があります。 `/libs` 下のノードやプロパティを変更すると、メジャーアップデートおよびマイナーアップデートの際に重大な問題が発生する可能性があります。変更先 `/libs` は、公式チャネルを通じてAdobeがおこなう必要があります。
+Experience Manager コンテンツリポジトリ内の `/libs` コンテンツツリーを読み取り専用と見なすことは、長年のベストプラクティスとなっています。`/libs` の下のノードやプロパティを変更すると、メジャーアップデートやマイナーアップデートの際に重大な問題が発生する可能性があります。`/libs` への変更は、アドビの公式チャネルを通じて行う必要があります。
 
-### パッケージには重複する OSGi 設定を含めないでください {#oakpal-package-osgi}
+### パッケージには重複する OSGi 設定を含めない {#oakpal-package-osgi}
 
 * **キー**：DuplicateOsgiConfigurations
 * **タイプ**：バグ
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2019.6.0
 
-複雑なプロジェクトでよく発生する問題は、同じ OSGi コンポーネントが複数回設定されることです。この問題は、どの設定が適用できるかをあいまいにします。 このルールは「実行モード対応」です。つまり、同じ実行モードまたは実行モードの組み合わせで同じコンポーネントが複数回設定される問題のみを識別します。
+複雑なプロジェクトでよく発生する問題は、同じ OSGi コンポーネントが複数回設定されることです。この問題により、どの設定が適用可能かがあいまいになります。このルールは「実行モード対応」です。つまり、同じコンポーネントが同じ実行モード（または実行モードの組み合わせ）で複数回設定されている問題のみを特定します。
 
 >[!NOTE]
 >
->このルールでは、同じ設定が同じパスで複数のパッケージで定義される場合、ビルドパッケージの全体的なリストで同じパッケージが複製される場合など、問題が発生します。
+>このルールの結果、ビルド済みパッケージのリスト全体で同じパッケージが重複する場合など、同じパスの同じ設定が複数のパッケージで定義される問題が発生します。
 >
->例えば、ビルドで、という名前のパッケージが生成される場合、 `com.myco:com.myco.ui.apps` および `com.myco:com.myco.all` 場所 `com.myco:com.myco.all` 埋め込み `com.myco:com.myco.ui.apps`の場合、 `com.myco:com.myco.ui.apps` は、重複としてレポートされます。
+>例えば、ビルドで `com.myco:com.myco.ui.apps` と `com.myco:com.myco.all` というパッケージが生成され、`com.myco:com.myco.all` に `com.myco:com.myco.ui.apps` が組み込まれている場合、`com.myco:com.myco.ui.apps` 内のすべての設定が重複としてレポートされます。
 >
->これは、通常、 [コンテンツパッケージ構造のガイドライン](/help/implementing/developing/introduction/aem-project-content-package-structure.md).この例では、パッケージ `com.myco:com.myco.ui.apps` が見つからない `<cloudManagerTarget>none</cloudManagerTarget>` プロパティ。
+>これは一般に、[コンテンツパッケージ構造ガイドライン](/help/implementing/developing/introduction/aem-project-content-package-structure.md)に従っていない場合に発生します。この例では、パッケージ `com.myco:com.myco.ui.apps` に `<cloudManagerTarget>none</cloudManagerTarget>` プロパティがありません。
 
-#### 準拠していないコード {#non-compliant-code-osgi}
+#### 非準拠コード {#non-compliant-code-osgi}
 
 ```text
 + apps
@@ -702,7 +702,7 @@ Experience Manager Assetsでアセット検索が正しく機能するように�
       + com.day.cq.commons.impl.ExternalizerImpl
 ```
 
-#### 準拠しているコード {#compliant-code-osgi}
+#### 準拠コード {#compliant-code-osgi}
 
 ```text
 + apps
@@ -711,18 +711,18 @@ Experience Manager Assetsでアセット検索が正しく機能するように�
       + com.day.cq.commons.impl.ExternalizerImpl
 ```
 
-### config および install フォルダーには OSGi ノードのみを含める必要があります {#oakpal-config-install}
+### config および install フォルダーには OSGi ノードのみを含める {#oakpal-config-install}
 
 * **キー**：ConfigAndInstallShouldOnlyContainOsgiNodes
 * **タイプ**：バグ
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2019.6.0
 
-セキュリティ上の理由から、パスには `/config/` および `/install/` は、管理者ユーザーのみがExperience Managerで読み取り可能で、OSGi 設定と OSGi バンドルにのみ使用してください。 これらのセグメントを含むパスの下に他のタイプのコンテンツを配置すると、アプリケーションの動作が管理者ユーザーと非管理者ユーザーとで意図せず異なることになります。
+セキュリティ上の理由から、`/config/` と `/install/` を含むパスを判読できるのは Experience Manager の管理者ユーザーのみとなっており、これらのパスは OSGi 設定と OSGi バンドルにのみ使用する必要があります。これらのセグメントを含むパスの下に他のタイプのコンテンツを配置すると、アプリケーションの動作が管理者ユーザーと非管理者ユーザーとで意図せず異なることになります。
 
-よくある問題としては、コンポーネントダイアログ内や、インライン編集にリッチテキストエディター設定を指定する際に、`config` というノードを使用するケースがあります。この問題を解決するには、問題のあるノードの名前を、準拠した名前に変更する必要があります。 リッチテキストエディターの設定には、 `configPath` プロパティ `cq:inplaceEditing` 新しい場所を指定するノード。
+よくある問題としては、コンポーネントダイアログ内や、インライン編集にリッチテキストエディター設定を指定する際に、`config` というノードを使用するケースがあります。この問題を解決するには、問題のノードを準拠した名前に変更する必要があります。リッチテキストエディター設定については、`cq:inplaceEditing` ノードの `configPath` プロパティを使用して新しい場所を指定します。
 
-#### 準拠していないコード {#non-compliant-code-config-install}
+#### 非準拠コード {#non-compliant-code-config-install}
 
 ```text
 + cq:editConfig [cq:EditConfig]
@@ -731,7 +731,7 @@ Experience Manager Assetsでアセット検索が正しく機能するように�
       + rtePlugins [nt:unstructured]
 ```
 
-#### 準拠しているコード {#compliant-code-config-install}
+#### 準拠コード {#compliant-code-config-install}
 
 ```text
 + cq:editConfig [cq:EditConfig]
@@ -741,7 +741,7 @@ Experience Manager Assetsでアセット検索が正しく機能するように�
       + rtePlugins [nt:unstructured]
 ```
 
-### パッケージは重複しない {#oakpal-no-overlap}
+### パッケージは重複させない {#oakpal-no-overlap}
 
 * **キー**：PackageOverlaps
 * **タイプ**：バグ
@@ -757,37 +757,37 @@ Experience Manager Assetsでアセット検索が正しく機能するように�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
-OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、デフォルトのオーサリングモードをExperience Manager内で定義します。 理由： [クラシック UI は、Experience Manager6.4 以降、非推奨（廃止予定）となりました。](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=ja)の場合、デフォルトのオーサリングモードがクラシック UI に設定されていると問題が発生するようになりました。
+OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、Experience Manager 内でデフォルトのオーサリングモードを定義します。[Experience Manager 6.4 以降、クラシック UI は非推奨となった](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=ja)ため、デフォルトのオーサリングモードがクラシック UI に設定されている場合、問題が発生するようになりました。
 
-### タッチ UI ダイアログが必要なダイアログを持つコンポーネント {#oakpal-components-dialogs}
+### ダイアログを持つコンポーネントはタッチ UI ダイアログが必要 {#oakpal-components-dialogs}
 
 * **キー**：ComponentWithOnlyClassicUIDialog
 * **タイプ**：コードスメル／Cloud Service との互換性
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
-クラシック UI ダイアログを持つExperience Managerコンポーネントには、対応するタッチ UI ダイアログが常に存在する必要があります。 どちらも、最適なオーサリングエクスペリエンスを提供し、クラシック UI がサポートされていないCloud Serviceデプロイメントモデルとの互換性を持たせます。 このルールは、次のシナリオを検証します。
+クラシック UI ダイアログを持つ Experience Manager コンポーネントには、対応するタッチ UI ダイアログが常に存在する必要があります。どちらも、最適なオーサリングエクスペリエンスを提供し、クラシック UI がサポートされていない Cloud Service デプロイメントモデルとの互換性を持たせます。このルールは、次のシナリオを検証します。
 
 * クラシック UI ダイアログ（`dialog` 子ノード）を持つコンポーネントには、対応するタッチ UI ダイアログ（`cq:dialog` 子ノード）が必要です。
 * クラシック UI デザインダイアログ（`design_dialog` ノード）を使用しているコンポーネントには、対応するタッチ UI デザインダイアログ（`cq:design_dialog` 子ノード）が必要です。
 * クラシック UI ダイアログとクラシック UI デザインダイアログの両方を持つコンポーネントには、対応するタッチ UI ダイアログと対応するタッチ UI デザインダイアログの両方が必要です。
 
-Experience Manager最新化ツールのドキュメントには、コンポーネントをクラシック UI からタッチ UI に変換する方法に関するドキュメントとツールが記載されています。 詳しくは、 [Experience Manager最新化ツールのドキュメント](https://opensource.adobe.com/aem-modernize-tools/) を参照してください。
+Experience Manager 最新化ツールのドキュメントには、コンポーネントをクラシック UI からタッチ UI に変換する方法に関するドキュメントとツールが記載されています。詳しくは、[Experience Manager 最新化ツールのドキュメント](https://opensource.adobe.com/aem-modernize-tools/)を参照してください。
 
-### 可変コンテンツと不変コンテンツをパッケージに混在させない {#oakpal-packages-immutable}
+### 可変コンテンツと不変コンテンツがパッケージ内に混在してはならない {#oakpal-packages-immutable}
 
 * **キー**：ImmutableMutableMixedPackage
 * **タイプ**：コードスメル／Cloud Service との互換性
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
-Cloud Serviceデプロイメントモデルとの互換性を保つには、個々のコンテンツパッケージに、リポジトリの不変領域 (`/apps` および `/libs`) または可変領域 ( `/apps` または `/libs`) ですが、両方ではありません。 例えば、両方を含むパッケージ `/apps/myco/components/text` および `/etc/clientlibs/myco` はCloud Serviceと互換性がないので、問題が報告されます。
+Cloud Service デプロイメントモデルとの互換性を保つには、個々のコンテンツパッケージに、リポジトリの不変領域（`/apps` および `/libs`）または可変領域（`/apps` または `/libs`）のいずれか（ただし両方ではない）のコンテンツが含まれている必要があります。例えば、`/apps/myco/components/text` と `/etc/clientlibs/myco` の両方を含むパッケージは Cloud Service と互換性がなく、問題が報告されます。
 
 >[!NOTE]
 >
 >[顧客パッケージでは /libs 下のノードを作成／変更しない](#oakpal-customer-package)のルールが常に適用されます。
 
-参照： [Experience Managerプロジェクト構造](/help/implementing/developing/introduction/aem-project-content-package-structure.md) を参照してください。
+詳しくは、[Experience Manager プロジェクト構造](/help/implementing/developing/introduction/aem-project-content-package-structure.md)を参照してください。
 
 ### リバースレプリケーションエージェントを使用しない {#oakpal-reverse-replication}
 
@@ -796,20 +796,20 @@ Cloud Serviceデプロイメントモデルとの互換性を保つには、個�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
-リバースレプリケーションのサポートは、Cloud Serviceのas a Cloud Serviceの一部として説明されているように、Experience Managerのデプロイメントでは利用できません。 [リリースノート。](/help/release-notes/aem-cloud-changes.md#replication-agents)
+リバースレプリケーションのサポートは、Experience Manager as a Cloud Service の[リリースノート](/help/release-notes/aem-cloud-changes.md#replication-agents)で説明しているように、Cloud Service のデプロイメントでは利用できません。
 
 リバースレプリケーションを使用するお客様は、アドビに問い合わせて、代替ソリューションをご利用ください。
 
-### プロキシが有効なクライアントライブラリに含まれるリソースは、resources という名前のフォルダーに格納する必要があります {#oakpal-resources-proxy}
+### プロキシ対応のクライアントライブラリに含まれるリソースは resources という名前のフォルダーに格納する {#oakpal-resources-proxy}
 
 * **キー**：ClientlibProxyResource
 * **タイプ**：バグ
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-Experience Managerのクライアントライブラリには、画像やフォントなどの静的リソースが含まれる場合があります。 [プリプロセッサーの使用](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors)のドキュメントで説明しているように、プロキシ化されたクライアントライブラリを使用する場合、パブリッシュインスタンスで効果的に参照するために、これらの静的リソースを という名前の子フォルダーに格納する必要があります。`resources`
+Experience Manager クライアントライブラリには、画像やフォントなどの静的リソースが含まれている場合があります。[プリプロセッサーの使用](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors)のドキュメントで説明しているように、プロキシ化されたクライアントライブラリを使用する場合、パブリッシュインスタンスで効果的に参照するために、これらの静的リソースを という名前の子フォルダーに格納する必要があります。`resources`
 
-#### 準拠していないコード {#non-compliant-proxy-enabled}
+#### 非準拠コード {#non-compliant-proxy-enabled}
 
 ```text
 + apps
@@ -820,7 +820,7 @@ Experience Managerのクライアントライブラリには、画像やフォ�
         + myimage.jpg
 ```
 
-#### 準拠しているコード {#compliant-proxy-enabled}
+#### 準拠コード {#compliant-proxy-enabled}
 
 ```tet
 + apps
@@ -831,38 +831,38 @@ Experience Managerのクライアントライブラリには、画像やフォ�
         + myimage.jpg
 ```
 
-### 互換性のないCloud Serviceプロセスの使用 {#oakpal-usage-cloud-service}
+### Cloud Service と互換性のないワークフロープロセスの使用 {#oakpal-usage-cloud-service}
 
 * **キー**：CloudServiceIncompatibleWorkflowProcess
 * **タイプ**：バグ
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-Experience Manager上でのアセット処理に対するアセットマイクロサービスへの移行に伴い、Experience Managerのオンプレミス版と AMS 版で使用されていたいくつかのワークフロープロセスは、サポートされなくなったか不要になりました。
+Experience Manager as a Cloud Service 上でのアセット処理をアセットマイクロサービスに移行するのに伴い、Experience Manager のオンプレミスバージョンと AMS バージョンで使用されていたワークフロープロセスが、サポートされなくなる、または不要になります。
 
-移行ツール ( [Experience Managerのas a Cloud ServiceAssets GitHub リポジトリ](https://github.com/adobe/aem-cloud-migration) を使用して、Experience Manageras a Cloud Serviceへの移行中にワークフローモデルを更新できます。
+[Experience Manager as a Cloud Service Assets GitHub リポジトリ](https://github.com/adobe/aem-cloud-migration)の移行ツールを使用すると、Experience Manager as a Cloud Service への移行中にワークフローモデルを更新できます。
 
-### 静的テンプレートの使用は、編集可能なテンプレートのためにお勧めしません {#oakpal-static-template}
+### 静的なテンプレートより編集可能なテンプレートの使用を推奨 {#oakpal-static-template}
 
 * **キー**：StaticTemplateUsage
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-静的テンプレートの使用は、Experience Managerプロジェクトでは従来より一般的ですが、静的テンプレートでは、編集可能なテンプレートを推奨します。これは、静的テンプレートにはない追加機能を最大限に柔軟に提供し、サポートするからです。 詳しくは、[ページテンプレート](/help/implementing/developing/components/templates.md)のドキュメントを参照してください。
+従来、Experience Manager プロジェクトでは静的テンプレートを使用するのが一般的でしたが、アドビでは、最も柔軟性が高く、静的テンプレートにはない追加機能をサポートしている編集可能なテンプレートをお勧めします。詳しくは、[ページテンプレート](/help/implementing/developing/components/templates.md)のドキュメントを参照してください。
 
-静的テンプレートから編集可能テンプレートへの移行は、 [Experience Manager最新化ツール。](https://opensource.adobe.com/aem-modernize-tools/)
+静的なテンプレートから編集可能なテンプレートへの移行は、[Experience Manager 最新化ツール](https://opensource.adobe.com/aem-modernize-tools/) を使用して、ほとんど自動化することができます。
 
-### 従来の基盤コンポーネントは使用しないでください {#oakpal-usage-legacy}
+### 従来の基盤コンポーネントの使用は推奨されない {#oakpal-usage-legacy}
 
 * **キー**：LegacyFoundationComponentUsage
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-従来の基盤コンポーネント（例：下のコンポーネント） `/libs/foundation`) は [いくつかのExperience Managerリリースで非推奨](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=ja) コアコンポーネントに優先して 使用する方法がオーバーレイであろうと継承であろうと、基盤コンポーネントに基づいてカスタムコンポーネントを作成することは、お勧めしません。対応するコアコンポーネントに移行してください。
+従来の基盤コンポーネント（`/libs/foundation` 下のコンポーネントなど）は、[一部の Experience Manager リリースでは廃止](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=ja)され、コアコンポーネントに置き換わりました。使用する方法がオーバーレイであろうと継承であろうと、基盤コンポーネントに基づいてカスタムコンポーネントを作成することは、お勧めしません。対応するコアコンポーネントに移行してください。
 
-この変換は、 [Experience Manager最新化ツール。](https://opensource.adobe.com/aem-modernize-tools/)
+この変換は、[Experience Manager 最新化ツール](https://opensource.adobe.com/aem-modernize-tools/)で容易に行うことができます。
 
 ### サポートされている実行モード名と順序のみを使用 {#oakpal-supported-runmodes}
 
@@ -871,36 +871,36 @@ Experience Manager上でのアセット処理に対するアセットマイク�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-Experience Manageras a Cloud Serviceでは、実行モード名に対して厳密な命名ポリシーを適用し、それらの実行モードに対して厳密な順序を指定します。 サポートされている実行モードのリストは、ドキュメントに記載されています [Experience Managerへのデプロイas a Cloud Service](/help/implementing/deploying/overview.md#runmodes) これから逸脱した場合は、問題と見なされます。
+Experience Manager as a Cloud Service では、実行モード名に対して厳密な命名ポリシーを適用し、それらの実行モードに対して厳密な順序を指定します。サポートされている実行モードのリストは、[Experience Manager as a Cloud Service へのデプロイ](/help/implementing/deploying/overview.md#runmodes)のドキュメントで確認でき、このリストからの逸脱は問題として特定されます。
 
-### カスタム検索インデックス定義ノードは、/oak:index の直接の子である必要があります {#oakpal-custom-search}
+### カスタム検索インデックス定義ノードは、/oak:index の直接の子にする必要がある {#oakpal-custom-search}
 
 * **キー**：OakIndexLocation
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-Experience Manageras a Cloud Serviceには、カスタム検索インデックスの定義（つまり、タイプのノード）が必要です `oak:QueryIndexDefinition`) の直接の子ノード `/oak:index`. 他の場所のインデックスは、as a Cloud ServiceのExperience Managerとの互換性を保つために移動する必要があります。 検索インデックスの詳細については、[コンテンツの検索とインデックス作成](/help/operations/indexing.md)のドキュメントを参照してください。
+Experience Manager as a Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）が `/oak:index` の直接の子ノードである必要があります。Experience Manager as a Cloud Service と互換性を持たせるため、他の場所にあるインデックスは移動する必要があります。検索インデックスの詳細については、[コンテンツの検索とインデックス作成](/help/operations/indexing.md)のドキュメントを参照してください。
 
-### カスタム検索インデックス定義ノードの compatVersion は 2 である必要があります {#oakpal-custom-search-compatVersion}
+### カスタム検索インデックス定義ノードの compatVersion は 2 にする {#oakpal-custom-search-compatVersion}
 
 * **キー**：IndexCompatVersion
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-Experience Manageras a Cloud Serviceには、カスタム検索インデックスの定義（タイプのノードなど）が必要です `oak:QueryIndexDefinition`) には、 `compatVersion` プロパティを `2`. その他の値は、as a Cloud ServiceExperience Managerではサポートされません。 検索インデックスの詳細については、[コンテンツの検索とインデックス作成](/help/operations/indexing.md)を参照してください。
+Experience Manager as a Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）の `compatVersion` プロパティを `2` に設定する必要があります。その他の値は、Experience Manager as a Cloud Service ではサポートされていません。検索インデックスの詳細については、[コンテンツの検索とインデックス作成](/help/operations/indexing.md)を参照してください。
 
-### カスタム検索インデックス定義ノードの子孫ノードは、nt:unstructured 型である必要があります {#oakpal-descendent-nodes}
+### カスタム検索インデックス定義ノードの子孫ノードのタイプは、nt:unstructured にする {#oakpal-descendent-nodes}
 
 * **キー**：IndexDescendantNodeType
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-カスタム検索インデックス定義ノードに順序が指定されていない子ノードがある場合、問題のトラブルシューティングが困難になることがあります。 この状況を回避するには、 `oak:QueryIndexDefinition` ノードのタイプは `nt:unstructured`.
+カスタム検索インデックス定義ノードに順序なしの子ノードがある場合、トラブルシューティングしにくい問題が発生するおそれがあります。このような状況を避けるために、`oak:QueryIndexDefinition` ノードのすべての子孫ノードは、タイプを `nt:unstructured` にすることをお勧めします。
 
-### カスタム検索インデックス定義ノードには、子を持つ indexRules という名前の子ノードが含まれている必要があります {#oakpal-custom-search-index}
+### カスタム検索インデックス定義ノードには、子を持つ indexRules という名前の子ノードを含める {#oakpal-custom-search-index}
 
 * **キー**：IndexRulesNode
 * **タイプ**：コードスメル
@@ -909,38 +909,38 @@ Experience Manageras a Cloud Serviceには、カスタム検索インデック�
 
 適切に定義されたカスタム検索インデックス定義ノードには、`indexRules` という名前の子ノードが含まれている必要があり、今度は、この子ノードに少なくとも 1 つの子が必要です。詳しくは、[Oak ドキュメント](https://jackrabbit.apache.org/oak/docs/query/lucene.html)を参照してください。
 
-### カスタム検索インデックス定義ノードは、命名規則に従う必要があります {#oakpal-custom-search-definitions}
+### カスタム検索インデックス定義ノードは命名規則に従う {#oakpal-custom-search-definitions}
 
 * **キー**：IndexName
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-Experience Manageras a Cloud Serviceには、カスタム検索インデックスの定義（つまり、タイプのノード）が必要です `oak:QueryIndexDefinition`) には、ドキュメントで説明されている特定のパターンに従って名前を付ける必要があります [コンテンツの検索とインデックス作成。](/help/operations/indexing.md)
+Experience Manager as a Cloud Service では、[コンテンツの検索とインデックス作成](/help/operations/indexing.md)のドキュメントで説明されている特定のパターンに従ってカスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）に名前を付ける必要があります。
 
-### カスタム検索インデックス定義ノードは、インデックスタイプ Lucene を使用する必要があります  {#oakpal-index-type-lucene}
+### カスタム検索インデックス定義ノードでは lucene 型のインデックスを使用する  {#oakpal-index-type-lucene}
 
 * **キー**：IndexType
 * **タイプ**：バグ
 * **重大度**：ブロッカー
 * **最初の対象バージョン**：バージョン2021.2.0（2021.8.0でタイプと重大度が変更されました）
 
-Experience Manageras a Cloud Serviceには、カスタム検索インデックスの定義（つまり、タイプのノード）が必要です `oak:QueryIndexDefinition`) が `type` プロパティの値を次に設定 `lucene`. 従来のインデックスタイプを使用するインデックス作成は、Experience Manageras a Cloud Serviceに移行する前に更新する必要があります。 詳しくは、[コンテンツの検索とインデックス作成](/help/operations/indexing.md#how-to-use)を参照してください。
+Experience Manager as a Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）に、値が `lucene` に設定された `type` プロパティが必要です。Experience Manager as a Cloud Service に移行する前に、従来のインデックスタイプを使用したインデックス作成を更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](/help/operations/indexing.md#how-to-use)を参照してください。
 
-### カスタム検索インデックス定義ノードに seed という名前のプロパティを含めることはできません {#oakpal-property-name-seed}
+### カスタム検索インデックス定義ノードに seed という名前のプロパティを含めない {#oakpal-property-name-seed}
 
 * **キー**：IndexSeedProperty
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-Experience Manageras a Cloud Serviceは、カスタム検索インデックスの定義（つまり、タイプのノード）を禁止します `oak:QueryIndexDefinition`) に、 `seed`. このプロパティを使用するインデックス作成は、Experience Manageras a Cloud Serviceに移行する前に更新する必要があります。 詳しくは、[コンテンツの検索とインデックス作成](/help/operations/indexing.md#how-to-use)のドキュメントを参照してください。
+Experience Manager as a Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に `seed` という名前のプロパティを含めることが禁止されています。Experience Manager as a Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](/help/operations/indexing.md#how-to-use)のドキュメントを参照してください。
 
-### カスタム検索インデックス定義ノードに reindex という名前のプロパティを含めることはできません {#oakpal-reindex-property}
+### カスタム検索インデックス定義ノードに reindex というプロパティを含めない {#oakpal-reindex-property}
 
 * **キー**：IndexReindexProperty
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-Experience Manageras a Cloud Serviceは、カスタム検索インデックスの定義（つまり、タイプのノード）を禁止します `oak:QueryIndexDefinition`) に、 `reindex`. このプロパティを使用するインデックス作成は、Experience Manageras a Cloud Serviceに移行する前に更新する必要があります。 詳しくは、[コンテンツの検索とインデックス作成](/help/operations/indexing.md#how-to-use)のドキュメントを参照してください。
+Experience Manager as a Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に `reindex` という名前のプロパティを含めることが禁止されています。Experience Manager as a Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](/help/operations/indexing.md#how-to-use)のドキュメントを参照してください。

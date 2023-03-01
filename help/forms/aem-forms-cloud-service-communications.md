@@ -5,18 +5,18 @@ exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
 workflow-type: tm+mt
 source-wordcount: '684'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 
 # 同期処理を使用 {#sync-processing-introduction}
 
-Formsas a Cloud Service — コミュニケーション API を使用すると、ビジネス通信、ドキュメント、声明、請求処理レター、給付通知、請求処理レター、月次請求、ウェルカムキットなど、ブランド指向でパーソナライズされたコミュニケーションを作成、組み立て、提供できます。 通信 API を使用して、テンプレート（XFA または PDF）と顧客データを組み合わせ、PDF、PS、PCL、DPL、IPL、ZPL 形式のドキュメントを生成できます。
+Forms as a Cloud Service - コミュニケーション API では、ビジネスコミュニケーション、ドキュメント、声明書、請求処理レター、給付通知、請求処理レター、月次請求書、ウェルカムキットなど、ブランド志向でパーソナライズされたコミュニケーションを作成、組み立て、配信できます。コミュニケーション API を使用して、テンプレート（XFA または PDF）と顧客データを組み合わせ、PDF、PS、PCL、DPL、IPL、ZPL 形式のドキュメントを生成できます。
 
 例えば、1 つ以上のテンプレートが存在しており、各テンプレートには XML データの複数のレコードがあるシナリオを考えてみましょう。通信 API を使用して、各レコードの印刷用ドキュメントを生成できます。<!-- You can also combine the records into a single document. -->結果は非インタラクティブ PDF ドキュメントになります。非インタラクティブ PDF ドキュメントのフィールドには、ユーザーがデータを入力することはできません。
 
-Formsas a Cloud Service — コミュニケーションは、スケジュールに沿ったドキュメント生成用のオンデマンド API とバッチ API（非同期 API）を提供します。
+Formsas a Cloud Service - コミュニケーションは、スケジュールされたドキュメント生成にオンデマンドおよびバッチ API（非同期 API）を提供します。
 
 * 同期 API は、オンデマンド、低遅延および単一レコードドキュメントを生成するユースケースに適しています。これらの API は、ユーザーアクションに基づいたユースケースにより適しています。例えば、ユーザーがフォームに入力した後にドキュメントを生成する場合などです。
 
@@ -39,14 +39,14 @@ Formsas a Cloud Service — コミュニケーションは、スケジュール�
 
 ### シングルテナント API の認証
 
-シングルテナント API 操作は、次の 2 種類の認証をサポートします。
+シングルテナント API 操作は、次の 2 種類の認証をサポートしています。
 
 * **基本認証**：基本認証は、HTTP プロトコルに組み込まれたシンプルな認証スキームです。クライアントは、Basic という単語に続いてスペースと、base64 でエンコードされた文字列 username:password を含む Authorization ヘッダーを含む HTTP リクエストを送信します。例えば、管理者／管理者として認証するために、クライアントは Basic [base64 エンコードされたユーザー名文字列]: [base64 でエンコードされたパスワード文字列]を送信します。
 
 * **トークンベースの認証：**&#x200B;トークンベースの認証では、アクセストークン（Bearer 認証トークン）を使用して、Experience Manager as a Cloud Service にリクエストを送信します。AEM Forms as a Cloud Service は、アクセストークンを安全に取得する API を提供します。トークンを取得して使用し、要求を認証するには、次の手順を実行します。
 
-   1. [開発者コンソールからExperience Managerのas a Cloud Serviceの資格情報を取得します。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ja).
-   1. [環境にExperience Manageras a Cloud Serviceの資格情報をインストールする](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ja). Cloud Service にリクエストを送信する（呼び出しを行う）ように設定された（AEM Server、web サーバーまたはその他の非アプリケーションサーバー）。
+   1. [Developer Console から Experience Manager as a Cloud Service の資格情報を取得する](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ja)。
+   1. [環境に Experience Manager as a Cloud Service の資格情報をインストールする](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ja)。Cloud Service にリクエストを送信する（呼び出しを行う）ように設定された（AEM Server、web サーバーまたはその他の非アプリケーションサーバー）。
    1. [JWT トークンを生成し、アクセストークン用の Adobe IMSAPI と交換します](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ja)。
    1. アクセストークンを Bearer 認証トークンとして使用して Experience Manager API を実行します。
    1. [Experience Manager 環境のテクニカルアカウントユーザーに適切な権限を設定します](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ja#aemでのアクセスの設定)。
@@ -135,10 +135,10 @@ API を使用するために必要なものは、次のとおりです。
 
 ### API の呼び出し
 
-API から提供されるすべてのパラメーター、認証方法および各種サービスの詳細については、[API リファレンスドキュメント](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)を参照してください。API リファレンスドキュメントでは、API 定義ファイルの.yaml 形式も提供しています。 .yaml ファイルをダウンロードし、次の場所にアップロードできます。 [Postman](https://www.postman.com/) をクリックして、API の機能を確認します。
+API から提供されるすべてのパラメーター、認証方法および各種サービスの詳細については、[API リファレンスドキュメント](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)を参照してください。また、API リファレンスドキュメントでは、API 定義ファイルを .yaml 形式で提供しています。.yaml ファイルをダウンロードし、[Postman](https://www.postman.com/) にアップロードして API の機能を確認できます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
 >[!NOTE]
 >
->通信 API にアクセスできるのは、forms-users グループのメンバーだけです。
+>コミュニケーション API にアクセスできるのは、forms-users グループのメンバーだけです。

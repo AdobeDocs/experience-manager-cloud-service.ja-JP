@@ -7,7 +7,7 @@ exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
 source-git-commit: 1631ec4b7174c9d98747fe290e21db3839777fcb
 workflow-type: tm+mt
 source-wordcount: '1224'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 94%
 
 [!DNL Adobe Workfront] は作業管理アプリケーションで、作業のライフサイクル全体を一元的に管理するのに役立ちます。[!DNL Workfront] と [!DNL Adobe Experience Manager Assets] の統合により、組織は、作業とデジタルアセット管理を本質的に関連付けることで、コンテンツベロシティを向上させ市場投入までの時間を短縮することができます。Workfront での作業を管理するコンテキスト内で、ユーザーは必要なドキュメントと画像にアクセスできます。
 
-Adobe [統合 [!DNL Workfront] および [!DNL Adobe Experience Manager Assets] ネイティブ (Assets Essentialsと Assetsas a Cloud Serviceをサポート )、またはWorkfront for Assets 拡張コネクタの使用](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=ja). ネイティブ統合の場合、2 つのソリューションを統合するためのコネクタは必要ありません。
+アドビでは、[ [!DNL Workfront]  と  [!DNL Adobe Experience Manager Assets]  のネイティブでの統合（Assets Essentials と Assets as a Cloud Service をサポート）または、Workfront for Experience Manager 拡張コネクタを使用した統合](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=ja)を用意しています。ネイティブ統合の場合、2 つのソリューションを統合するためのコネクタは必要ありません。
 
 >[!NOTE]
 >
->Adobeは、Experience Manager強化コネクタとExperience Managerの統合に対するWorkfrontの並行使用をサポートしていません。
+>アドビでは、 Workfront for AEM コネクタまたは Workfront for Experience Manager 拡張コネクタと Experience Manager 統合の並行使用をサポートしていません。
 
 ネイティブ Experience Manager 統合と [!DNL Workfront for Experience Manager enhanced connector] を使用すると、以下が可能です。
 
@@ -66,7 +66,7 @@ Adobe [統合 [!DNL Workfront] および [!DNL Adobe Experience Manager Assets] 
 | 「ユーザーを AEM に誘導」をクリックしたときに Workfront でリンクされたアセット | ユーザーは、Workfront 内からリンクされたアセットをプレビューするように AEM に誘導されます。 | ✓ | ✓ | 今後提供予定 |
 | リンクされた AEM フォルダーを Workfront に自動的に作成 | プロジェクトのステータスを使用して、リンクされた AEM フォルダーを Workfront に自動的に作成します。Workfront のポートフォリオ、プログラムおよびプロジェクトに基づいて、AEM フォルダーを自動的に設定します。 | 不可 | ✓ | なし |
 | Workfront から AEM リポジトリに直接移動 | ユーザーが Workfront 内に設定された使用可能な AEM リポジトリに移動できるようになります。 | ✓ | なし | ✓ |
-| WorkfrontでのリンクされたAEMフォルダーの作成 | 「ドキュメント」タブのオプションを使用して、WorkfrontでリンクされたAEMフォルダーを手動で作成します。 | ✓ | なし | ✓ |
+| リンクされた AEM フォルダーを Workfront に作成 | 「ドキュメント」タブのオプションを使用して、リンクされた AEM フォルダーを Workfront に作成します。 | ✓ | なし | ✓ |
 | コメントの同期 | アセットのコメントを [!DNL Workfront] から [!DNL Assets] への自動的に同期 | 不可 | ✓ | なし |
 | 単一の AEM 環境に接続する複数の Workfront 環境をサポート | 複数の Workfront 環境のユーザーが単一の AEM 環境に接続できます。 | ✓ | なし | ✓ |
 | 単一の Workfront 環境に接続する複数の AEM 環境をサポート | 単一の Workfront 環境内のユーザーが、複数の AEM 環境間でアセットを送信またはリンクすることができます。 | ✓ | ✓ | ✓ |

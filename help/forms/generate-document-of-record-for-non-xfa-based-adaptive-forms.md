@@ -4,7 +4,7 @@ description: ここでは、アダプティブフォーム向けのレコード�
 source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
 source-wordcount: '4065'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -108,7 +108,7 @@ In the following video Adaptive Form components are binded with corresponding Ac
 
 ![オリジナルのテンプレート](assets/we-retail-invoice.png)
 
-このテンプレートをしばらく使用した後、組織は `invoice-number` フィールドの名前を `bill-number` フィールドに変更し、購入者のメールアドレスを取り込むことにします。開発者は `invoice-number` フィールドの名前を更新し、テンプレートに「Email」フィールドを追加します。また、 *we-retail-invoice-v2.pdf* という新しいバージョンのテンプレートも作成します。
+このテンプレートをしばらく使用した後、組織は `invoice-number` フィールドの名前を `bill-number` フィールドに変更し、購入者のメールアドレスを取り込むことにします。開発者は `invoice-number` フィールドの名前を更新し、テンプレートに「メール」フィールドを追加します。また、 *we-retail-invoice-v2.pdf* という新しいバージョンのテンプレートも作成します。
 
 ![更新されたテンプレート](assets/we-retail-new-invoice.png)
 
@@ -429,7 +429,7 @@ When you select a form model, configure Document of Record using options availab
 **フォームレベルの設定**
 
 * **バインドされていないフィールドをレコードのドキュメントに含める：**&#x200B;このプロパティを設定すると、スキーマベースのアダプティブフォームのバインドされていないフィールドがレコードのドキュメントに追加されます。デフォルトでは true になっています。
-* **非表示の場合に DoR からフィールドを除外：** フォーム送信時にレコードのドキュメントから非表示フィールドを除外するプロパティを設定します。 有効にする場合 [サーバーで再検証](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)を指定した場合、サーバーは非表示のフィールドを再計算してから、レコードのドキュメントからこれらのフィールドを除外します。
+* **非表示の場合に DoR からフィールドを除外：**&#x200B;フォーム送信時にレコードのドキュメントから非表示のフィールドを除外するようにプロパティを設定します。[サーバーで再検証](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)を有効にすると、サーバーは非表示のフィールドを再計算してから、レコードのドキュメントから非表示のフィールドを除外します。
 
 ## カスタム XCI ファイルの使用
 

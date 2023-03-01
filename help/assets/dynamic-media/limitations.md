@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media の制限
-description: 画像セットやスピンセットを作成したり、PDF をアップロードしたりする際の、ベストプラクティスと適用される制限について説明します。また、Dynamic Media でサポートしていない web ブラウザーとオペレーティングシステムの組み合わせについても説明します。
+description: 画像セットやスピンセットを作成したり、PDF をアップロードしたりする際の、ベストプラクティスと適用される制限について説明します。また、Dynamic Media でサポートしていない web ブラウザーとオペレーティングシステムの組み合わせについても学びます。
 contentOwner: Rick Brough
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic

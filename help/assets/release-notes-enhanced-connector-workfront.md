@@ -5,7 +5,7 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 56fe4fde38fd6662c30b313a887f9740e919e0dc
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 82%
+ht-degree: 93%
 
 ---
 
@@ -50,17 +50,17 @@ ht-degree: 82%
 
 -->
 
-* Workfront enhanced connector で、アセットおよびフォルダーに対する全文検索の実行がサポートされるようになりました。
+* Workfront 拡張コネクタで、アセットおよびフォルダーに対する全文検索の実行がサポートされるようになりました。
 
 **バグ修正**
 
-* ドキュメントバージョンのメタデータは、WorkfrontとExperience Managerの間で適切に同期されません。
-* WorkfrontでExperience Managerにリンクされたフォルダーを作成する際に、グローバル設定で定義されていないスキーマをフォルダーで使用しているときに問題が発生します。
-* 読み込み時間が予想より長いので、任意のフィールドをクリックすると、メタデータスキーマエディターフォームが応答を停止します。 この問題を解決するために、カスタムフォーム用の特定の OSGi 設定を追加しました。 メタデータスキーマエディターに追加するカスタムフォームの名前は、ログで確認できます。
+* ドキュメントバージョンのメタデータが、Workfront と Experience Manager の間で適切に同期されません。
+* Workfront で Experience Manager にリンクされたフォルダーを作成する際に、グローバル設定で定義されていないスキーマをフォルダーで使用すると問題が発生します。
+* 予想より読み込み時間が長いので、任意のフィールドをクリックすると、メタデータスキーマエディターフォームが応答しません。 この問題を解決するために、カスタムフォーム用の特定の OSGi 設定を追加しました。 メタデータスキーマエディターに追加するカスタムフォームの名前は、ログで確認できます。
 
-### 2022 年 11 月リリース {#november-2022-release}
+### 2022年11月リリース {#november-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] 11 月 11 日にリリースされたバージョン 1.9.5 には、次の更新が含まれています。
+11月11日（PT）にリリースされた [!DNL Workfront for Experience Manager enhanced connector] バージョン 1.9.5 では、次の問題が修正されています。
 
 * Workfront で複数値のフィールドに値を 1 つだけ定義した場合、そのフィールド値は Experience Manager に適切にマッピングされません。
 

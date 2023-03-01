@@ -5,7 +5,7 @@ exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 source-git-commit: aeb8244b4da17a0675b86a69727807abf45ca84a
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -52,9 +52,9 @@ AEM as a Cloud Service（オーサーサービス）は統合シェルと統合�
 
 ![画像](/help/overview/assets/unifiedshell4.png)
 
-## AEMas a Cloud Service環境の識別 {#identify-aemaacs-environment}
+## AEM as a Cloud Service 環境の識別 {#identify-aemaacs-environment}
 
-AEMas a Cloud Serviceは、次の 3 種類の環境を提供します。実稼動、ステージング、開発。 参照： [環境タイプ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en) を参照してください。 この統合シェルとの統合により、以下に示すように、オーサーサービスにログインしているユーザーの環境のタイプが、上部のヘッダーにラベルを付けて表示されます。
+AEM as a Cloud Service には、実稼動環境、ステージ環境、開発環境の 3 つの環境タイプがあります。詳しくは、[環境タイプ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=ja)を参照してください。この統合シェルとの統合により、以下に示すように、オーサーサービスにログインしているユーザーの環境タイプが、ラベルを介して上部ヘッダーに表示されます。
 
 ![画像](/help/overview/assets/unifiedshell_header_label.png)
 

@@ -8,7 +8,7 @@ exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
 source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '6679'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Experience Platform タグおよび Dynamic Media Viewers 5.13 用の *Dynamic M
 * Dynamic Media ビューアの Experience Platform タグ統合は、Experience Manager オーサーノードでは機能しません。公開されるまで、WCM ページからのトラッキングを表示することはできません。
 * Dynamic Media ビューアの Experience Platform タグ統合は、「ポップアップ」操作モードではサポートされません。このモードでは、ビューア URL は、アセットの詳細ページの「URL」ボタンを使用して取得します。
 * Experience Platform タグ統合は、（`config2=` パラメーターを介して）従来のビューアの Analytics 統合と同時に使用することはできません。
-* ビデオトラッキングのサポートは、[トラッキングの概要](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en#player-events)で説明されているように、コア再生トラッキングのみに制限されます。具体的には、QoS、広告、チャプター／セグメント、エラーのトラッキングはサポートされていません。
+* ビデオトラッキングのサポートは、[トラッキングの概要](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=ja#player-events)で説明されているように、コア再生トラッキングのみに制限されます。具体的には、QoS、広告、チャプター／セグメント、エラーのトラッキングはサポートされていません。
 * データ要素のストレージデュレーション設定は、*Dynamic Media ビューア*&#x200B;拡張機能を使用したデータ要素ではサポートされません。ストレージデュレーションは **[!UICONTROL None]** に設定する必要があります。
 
 ### 統合の事例 {#use-cases-for-the-integration}
@@ -42,7 +42,7 @@ Experience Platform タグとの統合の主なユースケースは、Experienc
 
 [Experience Manager Sites での Dynamic Media ビューアのトラッキング](#tracking-dynamic-media-viewers-in-aem-sites)を参照してください。
 
-統合の 2 番目の事例は、Experience Manager Assets のみ、または Dynamic Media Classic を使用する顧客です。その場合、ビューアの埋め込みコードを取得して、Web サイトページに追加します。次に、Experience Platform タグから Experience Platform タグライブラリの実稼動用 URL を取得し、Web ページのコードに手動で追加します。
+統合の 2 番目の事例は、Experience Manager Assets のみ、または Dynamic Media Classic を使用する顧客です。その場合、ビューアの埋め込みコードを取得して、Web サイトページに追加します。次に、Experience Platform タグから Experience Platform タグライブラリの実稼動用 URL を取得し、web ページのコードに手動で追加します。
 
 [埋め込みコードを使用した Dynamic Media ビューアのトラッキング](#tracking-dynamic-media-viewers-using-embed-code)を参照してください。
 
@@ -58,7 +58,7 @@ Experience Platform タグでは、*データ要素*&#x200B;と&#x200B;*ルー�
 
 #### Experience Platform タグのデータ要素について {#about-data-elements-in-adobe-launch}
 
-Experience Platform タグのデータ要素は、名前の付いたプロパティです。このプロパティの値は、静的に定義されるか、Web ページの状態や Dynamic Media ビューアのデータに基づいて動的に計算されます。
+Experience Platform タグのデータ要素は、名前の付いたプロパティです。このプロパティの値は、静的に定義されるか、web ページの状態や Dynamic Media ビューアのデータに基づいて動的に計算されます。
 
 データ要素の定義で使用できるオプションは、Experience Platform タグプロパティにインストールされている拡張機能によって異なります。「コア」拡張機能はプレインストールされており、どのような設定でもすぐに使用できます。この「コア」拡張機能を使用すると、cookie、JavaScript コード、クエリ文字列、その他多くのソースから取得した値を持つデータ要素を定義できます。
 
@@ -128,7 +128,7 @@ Experience Cloud アカウントが Adobe Analytics for Audio and Video を使�
 
 詳しくは、[拡張機能のインストールとセットアップ](#installing-and-setup-of-extensions)を参照してください。
 
-現在、ビデオトラッキングのサポートは、[トラッキングの概要](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en#player-events)で説明されているように、「コア再生」トラッキングのみに制限されます。具体的には、QoS、広告、チャプター／セグメント、エラーのトラッキングはサポートされていません。
+現在、ビデオトラッキングのサポートは、[トラッキングの概要](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=ja#player-events)で説明されているように、「コア再生」トラッキングのみに制限されます。具体的には、QoS、広告、チャプター／セグメント、エラーのトラッキングはサポートされていません。
 
 ## Dynamic Media ビューア拡張機能の使用  {#using-the-dynamic-media-viewers-extension}
 
@@ -144,22 +144,22 @@ Experience Manager Sites で Dynamic Media ビューアを追跡するには、[
 
 ### 埋め込みコードを使用した Dynamic Media ビューアのトラッキング {#tracking-dynamic-media-viewers-using-embed-code}
 
-Experience Manager Sites を使用していない、または Experience Manager Sites 以外の Web ページに Dynamic Media ビューアを埋め込んでいる、またはその両方に該当するお客様は、引き続き Experience Platform タグ統合を使用できます。
+Experience Manager Sites を使用していない、または Experience Manager Sites 以外の web ページに Dynamic Media ビューアを埋め込んでいる、またはその両方に該当するお客様は、引き続き Experience Platform タグ統合を使用できます。
 
 [Adobe Analytics の設定](#configuring-adobe-analytics-for-the-integration)および [Experience Platform タグの設定](#configuring-adobe-launch-for-the-integration)の設定手順を実行してください。ただし、Experience Manager 関連の設定手順は不要です。
 
-適切に設定すれば、Dynamic Media ビューアを使用した Web ページに Experience Platform タグサポートを追加できます。
+適切に設定すれば、Dynamic Media ビューアを使用した web ページに Experience Platform タグサポートを追加できます。
 
-Experience Platform タグライブラリの埋め込みコードの使用方法について詳しくは、[Experience Platform タグの埋め込みコードの追加](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code.html)を参照してください。
+Experience Platform タグライブラリの埋め込みコードの使用方法について詳しくは、[Experience Platform タグの埋め込みコードの追加](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code.html?lang=ja)を参照してください。
 
-Experience Manager Dynamic Media の埋め込みコード機能の使用方法について詳しくは、[Web ページへのビデオまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)を参照してください。
+Experience Manager Dynamic Media の埋め込みコード機能の使用方法について詳しくは、[web ページへのビデオまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)を参照してください。
 
 **埋め込みコードを使用した Dynamic Media ビューアのトラッキング：**
 
-1. Dynamic Media ビューアを埋め込む Web ページを準備します。
+1. Dynamic Media ビューアを埋め込む web ページを準備します。
 1. まず、Experience Platform タグにログインして、Experience Platform タグライブラリの埋め込みコードを取得します（[Experience Platform タグの設定](#configuring-adobe-launch-for-the-integration)を参照）。
 1. 「**[!UICONTROL プロパティ]**」を選択したあと、「**[!UICONTROL 環境]**」タブを選択します。
-1. Web ページの環境に関連する環境レベルを取得します。次に、「**[!UICONTROL インストール]**」列のボックスアイコンを選択します。
+1. web ページの環境に関連する環境レベルを取得します。次に、「**[!UICONTROL インストール]**」列のボックスアイコンを選択します。
 1. **[!UICONTROL Web インストール手順]**&#x200B;ダイアログボックスで、Experience Platform タグライブラリの埋め込みコード全体と、それを囲む `<script/>` タグをコピーします。
 
 ## Dynamic Media ビューア拡張機能リファレンスガイド {#reference-guide-for-the-dynamic-media-viewers-extension}
@@ -202,13 +202,13 @@ Dynamic Media ビューア拡張機能で提供されるデータ要素タイプ
 
 同様に、ビューアがページ上の対応するイベントを送信すると、データ要素の値は自動的に更新されます。値の更新は、特定のイベントがルール設定で指定されていない場合でも行われます。例えば、ZOOM イベントの「scale」パラメーターにデータ要素 **[!UICONTROL ZoomScale]** が定義されているとします。ただし、ルール設定に存在する唯一のルールは、**[!UICONTROL LOAD]** イベントによってトリガーされます。**[!UICONTROL ZoomScale]** の値は、ユーザーがビューア内でズームを実行するたびに更新されます。
 
-Dynamic Media ビューアは Web ページ上で一意の識別子を持ちます。データ要素は、値自体と、値が入力されたビューアを追跡します。例えば、同じページに複数のビューアがあり、**[!UICONTROL LOAD]** イベントとその「asset」引数を指す **[!UICONTROL AssetName]** データ要素があるとします。**[!UICONTROL AssetName]** データ要素は、ページに読み込まれた各ビューアに関連付けられたアセット名のコレクションを保持します。
+Dynamic Media ビューアは web ページ上で一意の識別子を持ちます。データ要素は、値自体と、値が入力されたビューアを追跡します。例えば、同じページに複数のビューアがあり、**[!UICONTROL LOAD]** イベントとその「asset」引数を指す **[!UICONTROL AssetName]** データ要素があるとします。**[!UICONTROL AssetName]** データ要素は、ページに読み込まれた各ビューアに関連付けられたアセット名のコレクションを保持します。
 
 データ要素から返される正確な値は、コンテキストによって異なります。Dynamic Media ビューアイベントによってトリガーされたルール内でデータ要素が要求された場合、ルールを開始したビューアに対してデータ要素の値が返されます。また、他の Experience Platform タグ拡張機能のイベントによってトリガーされたルール内でもデータ要素が要求されます。この時点で、データ要素の値は、このデータ要素を最後に更新したビューアから取得されます。
 
 **次の設定例を考えてみましょう**。
 
-* 2 つの Dynamic Media ズームビューアを持つ Web ページ：*viewer1* および *viewer2*。
+* 2 つの Dynamic Media ズームビューアを持つ web ページ：*viewer1* および *viewer2*。
 
 * **[!UICONTROL ZoomScale]** データ要素は、**[!UICONTROL ZOOM]** イベントとその「scale」引数を指します。
 * **[!UICONTROL TrackPan]** ルールには、次の情報が含まれます。
@@ -221,16 +221,16 @@ Dynamic Media ビューアは Web ページ上で一意の識別子を持ちま�
    * Core Experience Platform タグ拡張機能のキー押下イベントをトリガーとして使用。
    * **[!UICONTROL ZoomScale]** データ要素の値を Adobe Analytics に送信。
 
-ここで、エンドユーザーが 2 つのビューアで Web ページを読み込んだとします。*viewer1* では 50％の拡大率でズームインし、次に、*viewer2* では 25％の拡大率でズームインします。*viewer1* では、画像がパンされ、最後にキーボードのキーが押されます。
+ここで、エンドユーザーが 2 つのビューアで web ページを読み込んだとします。*viewer1* では 50％の拡大率でズームインし、次に、*viewer2* では 25％の拡大率でズームインします。*viewer1* では、画像がパンされ、最後にキーボードのキーが押されます。
 
 エンドユーザーのアクティビティによって、Adobe Analytics に対して次の 2 つのトラッキングコールが実行されます。
 
 * 最初の呼び出しは、ユーザーが *viewer1* でパンしたときに **[!UICONTROL TrackPan]** ルールがトリガーされることから発生します。この呼び出しでは、**[!UICONTROL ZoomScale]**&#x200B;データ要素の値として 50％が送信されます。これはデータ要素が、ルールが&#x200B;*viewer1*&#x200B;によってトリガーされることを認識しており、対応するスケール値をフェッチするためです。 
 * 2 回目の呼び出しは、ユーザーがキーボードのキーを押したときに **[!UICONTROL TrackKey]** ルールがトリガーされるので発生します。ルールをトリガーしたのがビューアでなかったので、この呼び出しでは **[!UICONTROL ZoomScale]** データ要素の値として 25％が送信されます。このようにして、データ要素は最新の値を返します。
 
-上記のサンプル設定は、データ要素の値の寿命にも影響します。Dynamic Media ビューアで管理されるデータ要素の値は、Web ページにビューア自体が配置された後でも、Experience Platform タグライブラリコードに保存されます。つまり、Dynamic Media 以外のビューアの拡張によってトリガーされるルールがあり、そのようなデータ要素を参照する場合、データ要素は最後に認識された値を返します。これには、ビューアが Web ページに存在しなくなった場合も含みます。
+上記のサンプル設定は、データ要素の値の寿命にも影響します。Dynamic Media ビューアで管理されるデータ要素の値は、web ページにビューア自体が配置された後でも、Experience Platform タグライブラリコードに保存されます。つまり、Dynamic Media 以外のビューアの拡張によってトリガーされるルールがあり、そのようなデータ要素を参照する場合、データ要素は最後に認識された値を返します。これには、ビューアが web ページに存在しなくなった場合も含みます。
 
-いずれの場合も、Dynamic Media ビューアによって駆動されるデータ要素の値は、ローカルストレージやサーバーに保存されず、クライアント側の Experience Platform タグライブラリにのみ保存されます。Web ページがリロードされると、このようなデータ要素の値は消去されます。
+いずれの場合も、Dynamic Media ビューアによって駆動されるデータ要素の値は、ローカルストレージやサーバーに保存されず、クライアント側の Experience Platform タグライブラリにのみ保存されます。web ページがリロードされると、このようなデータ要素の値は消去されます。
 
 一般に、データ要素エディターでは、[ストレージ期間の選択](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=ja#create-a-data-element)がサポートされます。ただし、Dynamic Media ビューア拡張機能を使用するデータ要素では、ストレージ期間「**[!UICONTROL なし]**」オプションのみがサポートされます。その他の値はユーザーインターフェイスで設定可能ですが、この場合、データ要素の動作は定義されていません。拡張機能は、データ要素の値を独自に管理します。データ要素は、ビューアのライフサイクル全体でビューアのイベント引数の値を維持します。
 
@@ -263,7 +263,7 @@ Dynamic Media ビューア拡張機能を使用すると、Dynamic Media ビュ�
 
 ![image2019-7-12_19-2-35](assets/image2019-7-12_19-2-35.png)
 
-データ要素を使用する場合と、直接イベント引数の参照を使用する場合では、重要な違いがあることに注意してください。データ要素の場合、「変数を設定」トリガーがどのイベントに属していてもかまいません。ルールをトリガーするイベントは、動的ビューアとは無関係の場合があります（例えば、Core 拡張機能から Web ページを選択する場合など）。ただし、直接引数参照を使用する場合は、ルールをトリガーするイベントが、参照するイベント引数に対応していることを確認することが重要です。
+データ要素を使用する場合と、直接イベント引数の参照を使用する場合では、重要な違いがあることに注意してください。データ要素の場合、「変数を設定」トリガーがどのイベントに属していてもかまいません。ルールをトリガーするイベントは、動的ビューアとは無関係の場合があります（例えば、Core 拡張機能から web ページを選択する場合など）。ただし、直接引数参照を使用する場合は、ルールをトリガーするイベントが、参照するイベント引数に対応していることを確認することが重要です。
 
 例えば、`%event.detail.dm.LOAD.asset%` の参照は、ルールが Dynamic Media ビューア拡張機能の **[!UICONTROL LOAD]** イベントによってトリガーされる場合、正しいアセット名を返します。ただし、他のイベントの場合は空の値を返します。
 
@@ -413,7 +413,7 @@ Dynamic Media ビューア拡張機能を使用すると、Dynamic Media ビュ�
 
 また、この統合ソリューションを Experience Manager Sites で使用する場合は、次の設定を行う必要があります。
 
-* [Adobe Developer Console](https://developer.adobe.com/console/home)  — 統合は、Experience Platformタグ用に作成されます。
+* [Adobe Developer Console](https://developer.adobe.com/console/home) - Experience Platform タグ用に統合が作成されます。
 * Experience Manager オーサーノード - IMS 設定と Experience Platform タグクラウド設定。
 
 設定の一環として、Adobe Analytics と Experience Platform タグが既に有効になっている Adobe Experience Cloud の会社にアクセスできることを確認してください。
@@ -444,7 +444,7 @@ Adobe Analytics を設定した後、統合のために次の設定が行われ�
 
    使用できるレポートスイートがない場合は、設定を続行する前に、ユーザーまたは Adobe Analytics 管理者がレポートスイートを作成する必要があります。
 
-   [レポートとレポートスイート](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html)および[レポートスイートの作成](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html)を参照してください。
+   [レポートとレポートスイート](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html?lang=ja)および[レポートスイートの作成](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html?lang=ja)を参照してください。
 
    Adobe Analytics では、**[!UICONTROL 管理者]**／**[!UICONTROL レポートスイート]**&#x200B;でレポートスイートを管理します。
 
@@ -454,13 +454,13 @@ Adobe Analytics を設定した後、統合のために次の設定が行われ�
 
 ### Adobe Analytics 変数の設定 {#setting-up-adobe-analytics-variables}
 
-1. Web ページ上の Dynamic Media ビューアの動作を追跡するために使用する、1 つ以上の Adobe Analytics 変数を指定します。
+1. web ページ上の Dynamic Media ビューアの動作を追跡するために使用する、1 つ以上の Adobe Analytics 変数を指定します。
 
    Adobe Analytics でサポートされている任意のタイプの変数を使用できます。変数のタイプ（カスタムトラフィック [prop] や、コンバージョン [eVar] など）は、Adobe Analytics 実装の具体的なニーズに応じて決めます。
 
    [prop と eVar の概要](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=ja#vars)を参照してください。
 
-   このドキュメントでは、カスタムトラフィック（prop）変数のみを使用します。これは、Web ページでアクションが発生した場合、数分以内に Analytics のレポートで使用できるようになるためです。
+   このドキュメントでは、カスタムトラフィック（prop）変数のみを使用します。これは、web ページでアクションが発生した場合、数分以内に Analytics のレポートで使用できるようになるためです。
 
    新しいカスタムトラフィック変数を有効にするには、Adobe Analytics のツールバーで、**[!UICONTROL 管理者]**／**[!UICONTROL レポートスイート]**&#x200B;に移動します。
 
@@ -490,7 +490,7 @@ Adobe Analytics を設定した後、統合のために次の設定が行われ�
 Experience Platform タグを設定した後、統合のために次の設定が行われます。
 
 * すべての設定をまとめるための新しいプロパティの作成。
-* 拡張機能のインストールとセットアップ。プロパティにインストールされたすべての拡張機能のクライアント側コードは、1 つのライブラリにまとめられる。このライブラリは後で Web ページで使用されます。
+* 拡張機能のインストールとセットアップ。プロパティにインストールされたすべての拡張機能のクライアント側コードは、1 つのライブラリにまとめられる。このライブラリは後で web ページで使用されます。
 * データ要素とルールの設定。この設定は、Dynamic Media ビューアから取得するデータ、トラッキングロジックをトリガーするタイミング、Adobe Analytics でビューアのデータを送信する場所を定義するものです。
 * ライブラリの公開。
 
@@ -506,7 +506,7 @@ Experience Platform タグを設定した後、統合のために次の設定が
 
 Experience Platform タグのプロパティは、すべての設定をまとめた名前付きの設定です。構成設定のライブラリが様々な環境レベル（開発、ステージングおよび実稼動）で生成され、公開されます。
 
-関連トピック [タッププロパティの設定](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
+[タッププロパティの設定](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=ja)も参照してください。
 
 **Experience Platform タグでプロパティを作成するには：**
 
@@ -533,7 +533,7 @@ Experience Platform タグで使用可能なすべての拡張機能は、**[!UI
 
 追加の設定は必要ありません。提案されたあらゆる値を受け入れます。完了したら、必ず「**[!UICONTROL 保存]**」を選択します。
 
-詳しくは、[Experience Cloud ID サービス拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html)を参照してください。
+詳しくは、[Experience Cloud ID サービス拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html?lang=ja)を参照してください。
 
 * （必須）*Adobe Analytics*&#x200B;拡張機能
 
@@ -553,7 +553,7 @@ Experience Platform タグで使用可能なすべての拡張機能は、**[!UI
 
 「**[!UICONTROL 保存]**」を選択します。
 
-詳しくは、[Adobe Analytics 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html)を参照してください。
+詳しくは、[Adobe Analytics 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html?lang=ja)を参照してください。
 
 * （オプション。ビデオトラッキングが必要な場合のみ必須）*Adobe Media Analytics for Audio and Video* 拡張機能
 
@@ -561,7 +561,7 @@ Experience Platform タグで使用可能なすべての拡張機能は、**[!UI
 
 その他のフィールドはオプションです。
 
-詳しくは、[Adobe Media Analytics for Audio and Video 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html)を参照してください。
+詳しくは、[Adobe Media Analytics for Audio and Video 拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=ja)を参照してください。
 
 * （必須）*Dynamic Media ビューア*&#x200B;拡張機能
 
@@ -678,7 +678,7 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
 
    次の情報メッセージが表示されます。
 
-   *有効なアクセストークンを取得するには、新しい証明書の公開鍵をAdobe Developerのテクニカルアカウントに追加する必要があります。*
+   *有効なアクセストークンを取得するには、新しい証明書の公開鍵を Adobe Developer のテクニカルアカウントに追加する必要があります。*
 
    情報ダイアログボックスを閉じるには、「**[!UICONTROL OK]**」を選択します。
 
@@ -692,7 +692,7 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
-1. 新しいブラウザータブで、 [Adobe Developer Console](https://developer.adobe.com/console/integrations).
+1. 新しいブラウザータブで、「[Adobe Developer Console](https://developer.adobe.com/console/integrations)」に移動します。
 
 1. **[!UICONTROL Adobe I/O コンソール統合]**&#x200B;ページの右上隅近くにある「**[!UICONTROL 新規の統合]**」を選択します。
 1. **[!UICONTROL 統合の新規作成]**&#x200B;ダイアログボックスで、「**[!UICONTROL API へのアクセス]**」ラジオボタンが選択されていることを確認し、「**[!UICONTROL 続行]**」を選択します。
