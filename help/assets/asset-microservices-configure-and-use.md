@@ -6,9 +6,9 @@ feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
 source-git-commit: 5545cd1739db41dbabf06cff916811123e7e09be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2902'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -129,17 +129,17 @@ The following video demonstrates the usefulness and usage of standard profile.
 1. 以下の情報を入力します。
 
    * 各レンディションのファイル名と、サポートされているファイル拡張子。
-   * [App Builder カスタムアプリのエンドポイント URL](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html?lang=ja). アプリは、Experience Manager アカウントと同じ組織のものである必要があります。
+   * [App Builder カスタムアプリのエンドポイント URL](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html?lang=ja)。アプリは、Experience Manager アカウントと同じ組織のものである必要があります。
    * サービスパラメーターを追加し、[追加の情報やパラメーターをカスタムアプリケーションに渡します](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=ja#extend)。
    * MIME タイプを追加および除外し、処理を特定のファイル形式のみに制限します。
 
    「**[!UICONTROL 保存]**」をクリックします。
 
-カスタムアプリケーションはヘッドレスです [プロジェクトアプリビルダー](https://developer.adobe.com/app-builder/docs/overview/) アプリ 処理プロファイルが設定されている場合、カスタムアプリケーションは指定されたすべてのファイルを取得します。 アプリケーションは、ファイルをフィルタリングする必要があります。
+カスタムアプリケーションは、ヘッドレスな [Project App Builder](https://developer.adobe.com/app-builder/docs/overview/) アプリです。処理プロファイルが設定されている場合、カスタムアプリケーションは指定されたすべてのファイルを取得します。アプリケーションは、ファイルをフィルタリングする必要があります。
 
 >[!CAUTION]
 >
->App Builder アプリの場合、および [!DNL Experience Manager] アカウントが同じ組織に属していない場合、統合は機能しません。
+>App Builder アプリと [!DNL Experience Manager] アカウントが同じ組織に属していない場合、統合は機能しません。
 
 ### カスタムプロファイルの例 {#custom-profile-example}
 
