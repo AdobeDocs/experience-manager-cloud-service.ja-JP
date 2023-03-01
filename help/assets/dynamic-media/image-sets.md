@@ -6,7 +6,7 @@ feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2135'
 ht-degree: 100%
 
