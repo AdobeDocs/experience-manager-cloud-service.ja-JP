@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b81ac7529e7757fbd9f9fbc48e47e740ab9ecbf3
+workflow-type: tm+mt
 source-wordcount: '1050'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -52,7 +52,7 @@ Experience League 提供の Dynamic Media ニュースレターは、Dynamic Med
    * Dynamic Media Classic のオンデマンドのスキルビルダー Web セミナーの視聴
    * Online Adobe Summit 2020 の Dynamic Media セッションを表示
    * 無料の Dynamic Media Classic 監査の詳細
-   * `John Monroe` 氏（カスタマーサクセスサービス担当シニアプログラムマネージャー）へのインタビュー
+   * Meet `John Monroe`：シニアプログラムマネージャー (Adobeアカウントチーム )。
 
 * **[2020 年 2 月、第 2 号](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html?lang=ja)**
 
