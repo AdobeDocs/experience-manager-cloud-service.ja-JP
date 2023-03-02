@@ -2,10 +2,10 @@
 title: コンソールのキーボードショートカット
 description: これらのキーボードショートカットを使用することで、オーサリング時の時間を節約できます
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
-workflow-type: ht
-source-wordcount: '373'
-ht-degree: 100%
+source-git-commit: 1698b78c3d58714c6e1d354143964741ee17d60e
+workflow-type: tm+mt
+source-wordcount: '376'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 |  | `Left Arrow` | ツリー構造を上に移動／ツリーノードを折りたたむ |
 |  | `Down Arrow` | ページのリストを（同じレベルで）下に移動 |
 |  | `Up Arrow` | ページのリストを（同じレベルで）上に移動 |
-| コンソール - 列表示 | `Shift-Up/Down Arrow` | ページのリストを（同じレベルで）上に移動 |
+| コンソール - 列表示 | `Shift-Up/Down Arrow` | ページのリストを上下に移動し、同じレベルで選択する |
 |  | `Esc` | ページのリストを（同じレベルで）上に移動 |
 | コンソール | `?` | キーボードショートカットヘルプ |
 |  | `/` | [検索](/help/sites-cloud/authoring/getting-started/search.md)を呼び出す |
