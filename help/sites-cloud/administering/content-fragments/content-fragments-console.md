@@ -5,10 +5,10 @@ landing-page-description: コンテンツフラグメントコンソールでコ
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
-workflow-type: ht
-source-wordcount: '901'
-ht-degree: 100%
+source-git-commit: db81eac064d4616cb6b1beae85abc0c55a993fce
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 96%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 100%
             * 参照に関する情報を表示
             * フラグメントの言語バージョンに関する情報を表示
          * [1 つ以上のコンテンツフラグメントを選択して、使用可能なアクションを表示](#actions-selected-content-fragment)することができます。
-      * 列ヘッダーを選択すると、その列に従ってテーブルを並べ替えることができます。昇順と降順を切り替えるには、再度選択します。
+      * 列ヘッダーを選択すると、その列に従ってテーブルを並べ替えることができます。「 」を再度選択して、昇順と降順を切り替えます。 現在、並べ替えは **タイトル**, **変更済み**、および **変更者** 列。
    * 新しいコンテンツフラグメントを&#x200B;**[作成](#creating-new-content-fragment)**&#x200B;します
    * 述語の選択に従ってコンテンツフラグメントを[フィルタリング](#filtering-fragments)し、今後の使用のためにフィルターを保存します
    * コンテンツフラグメントを[検索](#searching-fragments)します
