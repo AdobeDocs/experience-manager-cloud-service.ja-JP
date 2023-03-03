@@ -1,9 +1,9 @@
 ---
 title: 迅速な開発環境
 description: クラウド環境で迅速な開発反復処理を行うために、迅速な開発環境を活用する方法について説明します。
-source-git-commit: e5a9f497e753f328ff14487f4985541c1c77ae0e
+source-git-commit: 74ccf3a22043bfc7ac47e8fa1c9d064ad88a886e
 workflow-type: tm+mt
-source-wordcount: '3259'
+source-wordcount: '3293'
 ht-degree: 64%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 64%
 
 >[!AVAILABILITY]
 >
->この機能は、2 月を通じて徐々にお客様に提供される予定です。
+>この機能は、お客様に対して徐々に公開される予定です。
 
 変更をデプロイするために、現在のクラウド開発環境では、CI／CD パイプラインと呼ばれる広範なコードセキュリティと品質ルールを採用したプロセスを使用する必要があります。 迅速かつ反復的な変更が必要な状況に対応するために、アドビは迅速な開発環境（RDE）を導入しました。
 
@@ -264,7 +264,7 @@ RDE は、一度に 1 つのプロジェクトをサポートします。コー�
 
 このタイプの設定では、フォルダー構造全体を zip ファイル形式にする必要があります。 
 
-次の `dispathcer` AEMプロジェクトのモジュールでは、次の maven コマンドを実行して、dispatcher 設定を zip 形式で圧縮できます。
+次の `dispatcher` AEMプロジェクトのモジュールでは、次の maven コマンドを実行して、dispatcher 設定を zip 形式で圧縮できます。
 
 `mvn clean package`
 
@@ -279,6 +279,10 @@ RDE は、一度に 1 つのプロジェクトをサポートします。コー�
 >[!TIP]
 >
 >上記のコマンドは、 [WKND](https://github.com/adobe/aem-guides-wknd) プロジェクトの dispatcher 設定。 必ず `X.X.X` を、対応する WKND プロジェクトのバージョン番号、またはプロジェクトの dispatcher 設定をデプロイする際にプロジェクト固有のバージョン番号に置き換えます。
+
+>[!NOTE]
+>
+>RDE は、「フレキシブルモード」の Dispatcher 設定をサポートしていますが、「レガシーモード」の Dispatcher 設定はサポートしていません。 詳しくは、 [dispatcher ドキュメント](/help/implementing/dispatcher/disp-overview.md#validation-debug) 」を参照してください。 また、 [フレキシブルモードへの移行](/help/implementing/dispatcher/validation-debug.md#migrating)まだおこなっていない場合は、をクリックします。
 
 デプロイメントが成功すると、次のような応答が生成されます。
 
