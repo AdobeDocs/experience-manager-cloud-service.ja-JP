@@ -2,10 +2,10 @@
 title: 廃止される機能および削除された機能
 description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の非推奨（廃止予定）の機能と削除された機能）。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: c4809bcbeae5339427b1da588021606d18b482a5
+source-git-commit: d848c1a9369a91cbfd0105e4acf2fb390ca20b1a
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 100%
+source-wordcount: '673'
+ht-degree: 99%
 
 ---
 
@@ -60,6 +60,8 @@ ht-degree: 100%
 | [!DNL Foundation] | Apache Sling データソースのサポート（OSGi バンドル org.apache.sling.datasource） | 該当なし | 削除済み |
 | [!DNL Foundation] | JST スクリプティングテンプレートのサポート（OSGi バンドル org.apache.sling.scripting.jst） | 該当なし | 削除済み |
 | [!DNL Foundation] | Apache Felix Http Whiteboard のサポート | OSGi Http Whiteboard | 2022年3月 |
+| [!DNL Foundation] | com.adobe.granite.oauth.server のサポート | Adobe IMS統合 | 2023年3月 |
+
 
 ## Java API {#java-api}
 
