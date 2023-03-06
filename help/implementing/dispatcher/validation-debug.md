@@ -3,8 +3,8 @@ title: Dispatcher ツールを使用した検証とデバッグ
 description: Dispatcher ツールを使用した検証とデバッグ
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 21447e625d418bbb3f96c08991294e66659f7f51
-workflow-type: ht
+source-git-commit: 37c948b8906bcf6dd7ee3acdc6c6b7d211a33058
+workflow-type: tm+mt
 source-wordcount: '2701'
 ht-degree: 100%
 
@@ -415,23 +415,23 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 ```
 # Log level for the dispatcher
 #
-# Possible values are: Error, Warn, Info, Debug and Trace1
-# Default value: Warn
+# Possible values are: error, warn, info, debug and trace1
+# Default value: warn
 #
-# Define DISP_LOG_LEVEL Warn
+# Define DISP_LOG_LEVEL warn
  
 # Log level for mod_rewrite
 #
-# Possible values are: Error, Warn, Info, Debug and Trace1 - Trace8
-# Default value: Warn
+# Possible values are: error, warn, info, debug and trace1 - trace8
+# Default value: warn
 #
 # To debug your RewriteRules, it is recommended to raise your log
-# level to Trace2.
+# level to trace2.
 #
 # More information can be found at:
 # https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging
 #
-# Define REWRITE_LOG_LEVEL Warn
+# Define REWRITE_LOG_LEVEL warn
 ```
 
 Dispatcher をローカルで実行すると、ログが端末に直接出力されます。ほとんどの場合、これらのログは DEBUG モードで出力すべきもので、それには、Docker の実行時にデバッグレベルをパラメーターとして渡します。（例：`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`）。

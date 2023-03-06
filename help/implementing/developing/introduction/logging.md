@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 向けのログ
 description: AEM as a Cloud Service のログを使用して一元的なログサービスのグローバルパラメーターを設定する方法、個々のサービスに特有の設定またはデータのログ記録をリクエストする方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
-workflow-type: ht
+source-git-commit: 37c948b8906bcf6dd7ee3acdc6c6b7d211a33058
+workflow-type: tm+mt
 source-wordcount: '2351'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -396,23 +396,23 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 mod_rewrite ログレベルは、`conf.d/variables/global.var` ファイル内の変数 REWRITE_LOG_LEVEL によって定義されます。
 
-Error、Warn、Info、Debug、および Trace1～Trace8 に設定でき、デフォルト値は Warn です。RewriteRules をデバッグするには、ログレベルを Trace2 に上げることをお勧めします。
+error、warn、info、debug、trace1 ～ trace8 に設定でき、デフォルト値は warn です。 RewriteRules をデバッグするには、ログレベルを trace2 に上げることをお勧めします。
 
 詳細は、[mod_rewrite モジュールのドキュメント](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging)を参照してください。
 
 環境ごとのログレベルを設定するには、次に示すように、global.var ファイル内で適切な条件付き分岐を使用します。
 
 ```
-Define REWRITE_LOG_LEVEL Debug
+Define REWRITE_LOG_LEVEL debug
   
 <IfDefine ENVIRONMENT_STAGE>
   ...
-  Define REWRITE_LOG_LEVEL Warn
+  Define REWRITE_LOG_LEVEL warn
   ...
 </IfDefine>
 <IfDefine ENVIRONMENT_PROD>
   ...
-  Define REWRITE_LOG_LEVEL Error
+  Define REWRITE_LOG_LEVEL error
   ...
 </IfDefine>
 ```
@@ -474,23 +474,23 @@ Define REWRITE_LOG_LEVEL Debug
 
 Dispatcher ログレベルは、`conf.d/variables/global.var` ファイル内の変数 DISP_LOG_LEVEL によって定義されます。
 
-Error、Warn、Info、Debug、および Trace1 に設定でき、デフォルト値は Warn です。
+error、warn、info、debug および trace1 に設定でき、デフォルト値は warn です。
 
 Dispatcher ログはその他にも複数レベルのログ精度をサポートしていますが、AEM as a Cloud Service では、次のレベルを使用することをお勧めします。
 
 環境ごとのログレベルを設定するには、次に示すように、`global.var` ファイル内で適切な条件付き分岐を使用します。
 
 ```
-Define DISP_LOG_LEVEL Debug
+Define DISP_LOG_LEVEL debug
   
 <IfDefine ENVIRONMENT_STAGE>
   ...
-  Define DISP_LOG_LEVEL Warn
+  Define DISP_LOG_LEVEL warn
   ...
 </IfDefine>
 <IfDefine ENVIRONMENT_PROD>
   ...
-  Define DISP_LOG_LEVEL Error
+  Define DISP_LOG_LEVEL error
   ...
 </IfDefine>
 ```
