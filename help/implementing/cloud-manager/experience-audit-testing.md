@@ -2,7 +2,7 @@
 title: エクスペリエンス監査テスト
 description: エクスペリエンス監査でデプロイメントプロセスを検証し、デプロイされた変更がパフォーマンス、アクセシビリティ、ベストプラクティス、SEO のベースライン標準を満たしていることを確認する方法について説明します。
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: fe9d76362f7d2bd7d0ebe89d5161f0c1868e80a3
+source-git-commit: c8bfeda015962d3f327057a375b4edd3d80c6316
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 97%
