@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4416c43b408f576a547590796141a6b551e25681
+source-git-commit: 5815dacd2806cc7886aa0c7c5c9fd329306b3e1b
 workflow-type: tm+mt
-source-wordcount: '3952'
+source-wordcount: '3955'
 ht-degree: 95%
 
 ---
@@ -71,9 +71,9 @@ ht-degree: 95%
       + [最新のメンテナンスリリースノート](/help/release-notes/maintenance/latest.md)
    + Cloud Manager のリリースノート {#cloud-manager}
       + [最新のリリースノート](/help/implementing/cloud-manager/release-notes/current.md)
-      + 2023年度 {#2023}
+      + 2023年 {#2023}
          + [リリースノート（2023.1.0）](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
-      + 2022年度 {#2022}
+      + 2022年 {#2022}
          + [リリースノート（2022.12.0）](/help/implementing/cloud-manager/release-notes/2022/2022-12-0.md)
          + [リリースノート（2022.11.0）](/help/implementing/cloud-manager/release-notes/2022/2022-11-0.md)
          + [リリースノート（2022.10.0）](/help/implementing/cloud-manager/release-notes/2022/2022-10-0.md)
@@ -113,7 +113,8 @@ ht-degree: 95%
          + [リリースノート（2020.2.0）](/help/implementing/cloud-manager/release-notes/2020/2020-2-0.md)
    + 移行ツールのリリースノート {#migration-tools}
       + [最新のリリースノート](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
-      + 2022 {#2022}
+      + 2022年 {#2022}
+         + [リリースノート（2022.12.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-12-0.md)
          + [リリースノート（2022.9.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-09-0.md)
          + [リリースノート（2022.7.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-07-0.md)
          + [リリースノート（2022.5.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-05-0.md)
