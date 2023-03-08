@@ -2,10 +2,10 @@
 title: ソースからのコンテンツの抽出
 description: ソースからのコンテンツの抽出
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 509715eb6324a370e28d681111ee0fd3fa2a7b44
-workflow-type: ht
-source-wordcount: '765'
-ht-degree: 100%
+source-git-commit: 5a4592531377109fba88b5cdc9df027803feca7a
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 98%
 
 ---
 
@@ -17,16 +17,13 @@ ht-degree: 100%
 >id="aemcloud_ctt_extraction"
 >title="コンテンツの抽出"
 >abstract="抽出とは、ソース AEM インスタンスから、移行セットと呼ばれる一時領域にコンテンツを抽出することです。移行セットは、アドビが提供するクラウドストレージ領域で、ソース AEM インスタンスと AEM as a Cloud Service インスタンスの間で転送されるコンテンツを一時的に保存するためのものです。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja#top-up-extraction-process" text="追加抽出"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-extraction-process" text="追加抽出"
 
 
 コンテンツ転送ツールで移行セットを抽出するには、次の手順に従います。
 
 >[!NOTE]
->Amazon S3、Azure データストア、ファイルデータストアのいずれかをデータストアのタイプとして使用する場合は、オプションの事前コピーステップを実行して、抽出段階を大幅に迅速化できます。事前コピーステップは、1回目の完全抽出と取り込みに最も効果的です。それには、抽出を実行する前に `azcopy.config` ファイルを設定する必要があります。詳しくは、[大規模なコンテンツリポジトリーの処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja)を参照してください。
-
->[!IMPORTANT]
->ソースからコンテンツを抽出する前に、ユーザーマッピングツールを実行する必要があります。詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=ja)を参照してください。
+>Amazon S3、Azure データストア、ファイルデータストアのいずれかをデータストアのタイプとして使用する場合は、オプションの事前コピーステップを実行して、抽出段階を大幅に迅速化できます。事前コピーステップは、1回目の完全抽出と取り込みに最も効果的です。それには、抽出を実行する前に `azcopy.config` ファイルを設定する必要があります。詳しくは、[大規模なコンテンツリポジトリーの処理](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)を参照してください。
 
 1. **コンテンツ転送**&#x200B;ウィザードで移行セットを選択し、「**抽出**」をクリックして抽出を開始します。
 
@@ -43,9 +40,6 @@ ht-degree: 100%
 
    >[!NOTE]
    >抽出段階でステージングコンテナを上書きするオプションがあります。「**ステージングコンテナを上書き**」が無効になっている場合、コンテンツパスやインクルードバージョンの設定が変更されていない後続の移行については、抽出を高速化できます。ただし、コンテンツパスやインクルードバージョンの設定が変更されている場合は、「**ステージングコンテナを上書き**」を有効にしてください。
-
-   >[!IMPORTANT]
-   >この移行セットに対してユーザーマッピングを実行しないでソースからコンテンツを抽出すると、ユーザーマッピングステップが保留中であることを示す警告が表示されます（上図を参照）。「**ユーザーをマッピング**」をクリックして、ユーザーマッピングツールを実行します。
 
 1. 「**抽出**」フィールドに「**実行中**」ステータスが表示され、抽出が進行中であることを示します。
 

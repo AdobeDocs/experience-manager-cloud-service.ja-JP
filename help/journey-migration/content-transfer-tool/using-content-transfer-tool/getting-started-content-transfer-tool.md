@@ -2,9 +2,9 @@
 title: コンテンツ転送ツールの基本を学ぶ
 description: コンテンツ転送ツールの基本を学ぶ
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
+source-git-commit: b36756395cc516ab4e4725f718ed6de77d9872f8
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1328'
 ht-degree: 96%
 
 ---
@@ -37,7 +37,6 @@ ht-degree: 96%
 ソース AEM インスタンスがファイアウォールの内側で動作していて、許可リストに追加された特定のホストにしか到達できない場合があります。抽出を正常に実行するには、AEM を実行しているインスタンスから、次のエンドポイントにアクセスできる必要があります。
 
 * Azure BLOB ストレージサービス：`casstorageprod.blob.core.windows.net`
-* ユーザーマッピング IO エンドポイント：`usermanagement.adobe.io`
 
 >[!NOTE]
 >エラー： 「javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX パスのビルドに失敗しました: sun.security.provider.certpath.SunCertPathBuilderException: リクエストされたターゲットへの有効な証明書パスが見つかりません」が原因で抽出に失敗した場合は、関連する CA 証明書を読み込むことで問題を解決できます。
@@ -194,4 +193,4 @@ Cloud Acceleration Manager で作成した移行セットを入力するには�
 
 ## 次の手順 {#whats-next}
 
-移行セットの作成方法を理解したら、コンテンツ転送ツールでの抽出プロセスと取り込みプロセスについて学ぶ準備が整います。これらのプロセスを学ぶ前に、コンテンツを AEM as a Cloud Service に移行するコンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮する[大規模なコンテンツリポジトリーの処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja)を参照する必要があります。
+移行セットの作成方法を理解したら、コンテンツ転送ツールでの抽出プロセスと取り込みプロセスについて学ぶ準備が整います。これらのプロセスを学ぶ前に、コンテンツを AEM as a Cloud Service に移行するコンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮する[大規模なコンテンツリポジトリーの処理](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)を参照する必要があります。

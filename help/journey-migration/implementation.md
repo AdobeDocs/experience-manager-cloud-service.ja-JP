@@ -2,10 +2,10 @@
 title: 実装段階
 description: クラウドに移行するためのコードとコンテンツの準備が整っていることの確認
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: fedaa9b8a7baf707c71acd0535ad890254b6793a
 workflow-type: tm+mt
-source-wordcount: '2416'
-ht-degree: 100%
+source-wordcount: '2353'
+ht-degree: 99%
 
 ---
 
@@ -160,7 +160,12 @@ Cloud Manager パイプラインは、ステージング環境に対するテス
 * 追加 [抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) に要した合計時間
 * 追加 [取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) に要した合計時間
 
-もう 1 つの重要なデータポイントは、コンテンツの移行と組み合わせた場合、 [ユーザーマッピング](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md) を完了するのに要する時間です。このデータポイントは、全体的な抽出タイムラインに追加され、追加中に実行する必要がない場合があるため、より現実的な見積もりのために考慮に入れることができます。
+
+<!-- Alexandru: hiding this for now
+
+One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, since it will be added to the overall extraction timeline and it may not be required to run it during top-ups.
+
+-->
 
 これらのデータポイントは、「[KPI の設定](/help/journey-migration/readiness.md#establish-kpis)」やその他の移行関連タスクにも役立ちます。
 
@@ -238,7 +243,7 @@ Cloud Manager パイプラインは、ステージング環境に対するテス
    * クローンの作成と公開 - クラスターまたは公開ファームの場合は、それぞれ 1 つのノード
 * 次のことができるように、移行するコンテンツのサブセットを選択します。
    * 使用可能なすべてのコンテンツタイプの組み合わせです
-   * [ユーザーマッピング](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md) が必要な場合、すべてのユーザーとグループが含まれます。
+   * すべてのユーザーとグループを含む
 * コンテンツの 25% または最大 1 TB のコンテンツのいずれか小さい方を含みます。
 * 実稼働クローンから AEM as a Cloud Service 非実稼働環境へ、完全な [追加](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 移行を少なくとも 1 回実施します。
 * 次のような潜在的な問題を解決します。
