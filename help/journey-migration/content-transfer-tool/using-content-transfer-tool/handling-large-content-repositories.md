@@ -2,10 +2,10 @@
 title: 大規模なコンテンツリポジトリーの処理
 description: この節では、大規模なコンテンツリポジトリーの処理について説明します
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 5043caa54c3ba4553245a948758ee7da40c1e227
+source-git-commit: cf09c7774b633ae2cf1c5b28fee2bd8191d80bb3
 workflow-type: tm+mt
-source-wordcount: '1878'
-ht-degree: 89%
+source-wordcount: '1846'
+ht-degree: 91%
 
 ---
 
@@ -37,9 +37,6 @@ ht-degree: 89%
 * ソース AEM インスタンスを実行するインスタンス（または VM）に [AzCopy](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-v10) をインストールするには、アクセス権が必要である。
 
 * データストアのガベージコレクションが、ソース上で過去 7 日以内に実行されている。詳しくは、[データストアのガベージコレクション](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection)を参照してください。
-
->[!NOTE]
->現在、テキストレンディションが Windows コンピューターで正しく機能していないので、これは既知の問題です。 ただし、今後のリリースでこの問題に対処し、修正をおこないます。
 
 ### ソース AEM インスタンスが Amazon S3 または Azure Blob Storage データストアを使用するように設定されている場合の追加の考慮事項 {#additional-considerations-amazons3-azure}
 
