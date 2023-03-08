@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5815dacd2806cc7886aa0c7c5c9fd329306b3e1b
+source-git-commit: 59cc80d66880398bb7c7a065a7c9d4baee5141db
 workflow-type: tm+mt
-source-wordcount: '3955'
+source-wordcount: '3960'
 ht-degree: 95%
 
 ---
@@ -69,6 +69,8 @@ ht-degree: 95%
          + [リリースノート（2020.2.0）](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
    + AEMaaCS メンテナンスリリースノート {#maintenance}
       + [最新のメンテナンスリリースノート](/help/release-notes/maintenance/latest.md)
+      + 2023年 {#2023}
+         + [メンテナンスリリースノート (2023.1.0)](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Cloud Manager のリリースノート {#cloud-manager}
       + [最新のリリースノート](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023年 {#2023}
