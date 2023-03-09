@@ -4,10 +4,10 @@ description: コンテンツ転送ツールの概要
 hide: true
 hidefromtoc: true
 exl-id: dd031580-e9d7-461e-8689-9bc3dbb2121b
-source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
+source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 100%
+source-wordcount: '475'
+ht-degree: 72%
 
 ---
 
@@ -23,14 +23,14 @@ ht-degree: 100%
 
 1. **抽出**：抽出とは、ソース AEM インスタンスから、*移行セット*&#x200B;と呼ばれる一時領域にコンテンツを抽出することです。*移行セット*&#x200B;は、アドビが提供するクラウドストレージ領域で、ソース AEM インスタンスと AEM as a Cloud Service インスタンスの間で転送されるコンテンツを一時的に保存するためのものです。
 
-   詳しくは、[コンテンツ転送の抽出プロセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=ja)を参照してください。
+   詳しくは、[コンテンツ転送の抽出プロセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=ja)を参照してください。
 
    >[!NOTE]
-   > 抽出段階の一環として、ユーザマッピングツールを実行することをお勧めします。詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=ja)を参照してください。
+   >抽出段階の一環として、ユーザーマッピングツールを実行します。 詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en)を参照してください。
 
 1. **インジェスト**：インジェストとは、*移行セット*&#x200B;からターゲット Cloud Service インスタンスにコンテンツを取り込むことです。
 
-   詳しくは、[コンテンツ転送の取り込みプロセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=ja)を参照してください。
+   詳しくは、[コンテンツ転送の取り込みプロセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=ja)を参照してください。
 
 ## 移行セットの属性 {#attributes-migration-set}
 
@@ -47,10 +47,10 @@ ht-degree: 100%
 >[!NOTE]
 >最初のコンテンツ転送の後は、差分コンテンツ追加を頻繁に行って、Cloud Service での運用を開始する前に行う最後の差分コンテンツ転送に必要なコンテンツ凍結期間を短縮することをお勧めします。
 
-抽出段階で既存の移行セットに&#x200B;***追加***&#x200B;するには、*上書き*&#x200B;オプションを無効にする必要があります。詳しくは、[追加抽出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=ja#top-up-extraction-process)を参照してください。
+抽出段階で、次の操作を実行します。 ***トップアップ*** 既存の移行セット *上書き* オプションを無効にする必要があります。 詳しくは、[追加抽出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=en#top-up-extraction-process)を参照してください。
 
-インジェストフェーズで現在のコンテンツの上に差分コンテンツを適用するには、*ワイプ*&#x200B;オプションを無効にする必要があります。詳しくは、[追加インジェスト](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=ja#top-up-ingestion-process)を参照してください。
+インジェストフェーズで現在のコンテンツの上に差分コンテンツを適用するには、*ワイプ*&#x200B;オプションを無効にする必要があります。詳しくは、[追加インジェスト](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en#top-up-ingestion-process)を参照してください。
 
 ## 次の手順 {#whats-next}
 
-コンテンツ転送ツールとその概要を理解したら、[コンテンツ転送ツールの前提条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=ja)を確認する必要があります。概要では、このツールを使用してソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM Cloud Service インスタンスに既存のコンテンツを移行できることを説明しました。
+コンテンツ転送ツールとその概要を学習したら、このツールを使用して、既存のコンテンツをソースAEMインスタンス（オンプレミスまたは AMS）からターゲットAEM Cloud Serviceインスタンスに移動できます。 レビュー [コンテンツ転送ツールの前提条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en).

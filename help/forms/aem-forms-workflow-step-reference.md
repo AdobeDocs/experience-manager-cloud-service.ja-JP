@@ -3,10 +3,10 @@ title: 他のユーザーにワークフローを割り当て、メールを送�
 description: Forms 中心のワークフローを使用すると、アダプティブフォームベースのワークフローを迅速に構築できます。Adobe Sign を使用して、ドキュメントへの電子サイン、フォームをベースとしたビジネスプロセスの作成、複数データソースへのデータの取得と送信、メール通知の送信を行うことができます
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
-source-wordcount: '7210'
-ht-degree: 99%
+source-wordcount: '7190'
+ht-degree: 94%
 
 ---
 
@@ -162,15 +162,15 @@ Forms 中心のワークフローステップは、AEM ワークフローで AEM
 
 ## PDF/A に変換ステップ {#convert-pdfa}
 
-PDF/A は、フォントを埋め込み、ファイルを解凍することで、ドキュメントのコンテンツを長期保存するためのアーカイブ形式です。その結果、通常、PDF/A ドキュメントは標準の PDF ドキュメントよりも大きくなります。AEM ワークフローの ***PDF/A に変換***&#x200B;ステップを使用して、PDF ドキュメントを PDF/A 形式に変換できます。
+PDF/A は、フォントを埋め込み、ファイルを圧縮解除することで、ドキュメントのコンテンツを長期保存するためのアーカイブ形式です。 その結果、通常、PDF/A ドキュメントは標準の PDF ドキュメントよりも大きくなります。AEM ワークフローの ***PDF/A に変換***&#x200B;ステップを使用して、PDF ドキュメントを PDF/A 形式に変換できます。
 
 PDF/A に変換ステップには、次のプロパティがあります。
 
 **[!UICONTROL 入力ドキュメント]**：入力ドキュメントは、ペイロードに対して相対的であり、絶対パスを持ち、ペイロードとして提供するか、ドキュメントデータタイプの変数に格納することができます。
 
 **[!UICONTROL 変換オプション]**：このプロパティを使用して、PDF ドキュメントを PDF/A ドキュメントに変換するための設定を指定します。 このタブで使用できる様々なオプションを次に示します。
-* **[!UICONTROL 互換性]**：出力 PDF/A ドキュメントが準拠しなければならない標準を指定します。PDF/A-1b、PDF/A-2b、PDF/A-3b など、様々な PDF 規格をサポートします。
-* **[!UICONTROL 結果レベル]**：変換出力の結果レベルを PassFail、Summary または Detailed と指定します。
+* **[!UICONTROL 互換性]**：出力 PDF/A ドキュメントが準拠しなければならない標準を指定します。PDF/A-1b、PDF/A-2b、PDF/A-3b など、様々なPDF標準をサポートします。
+* **[!UICONTROL 結果レベル]**:変換出力の結果レベルを PassFail、Summary、または Detailed として指定します。
 * **[!UICONTROL カラースペース]**：事前に定義されたカラースペースを、出力 PDF/A ファイルに使用できる S_RGB、COATED_FOGRA27、JAPAN_COLOR_COATED または SWOP と指定します。
 * **[!UICONTROL オプションコンテンツ]**：指定した基準のセットを満たした場合にのみ、特定のグラフィックオブジェクトや注釈を出力 PDF/A ドキュメントに表示できるようにします。
 
@@ -179,9 +179,9 @@ PDF/A に変換ステップには、次のプロパティがあります。
 
 ## メールを送信ステップ {#send-email-step}
 
-メールのステップを使用して、レコードのドキュメント、アダプティブフォームのリンク<!-- , link of an interactive communication-->または添付 PDF ドキュメントを含むメールを送信します。電子メールを送信ステップは、[HTML 電子メール](https://ja.wikipedia.org/wiki/HTML_email)をサポートします。HTML 電子メールは、受信者の電子メールクライアントや画面サイズにレスポンシブに対応します。HTML メールテンプレートを使用して、メールの外観、カラースキーム、動作を定義できます。
+メールのステップを使用して、レコードのドキュメント、アダプティブフォームのリンク<!-- , link of an interactive communication-->または添付 PDF ドキュメントを含むメールを送信します。電子メールを送信ステップは、[HTML 電子メール](https://ja.wikipedia.org/wiki/HTML電子メール)をサポートします。HTML 電子メールは、受信者の電子メールクライアントや画面サイズにレスポンシブに対応します。HTML メールテンプレートを使用して、メールの外観、カラースキーム、動作を定義できます。
 
-メールステップは、Day CQ Mail Service を使用してメールを送信します。メールステップを使用する前に、メールサービスが設定されていることを確認してください。メールは、デフォルトで HTTP および HTTPs プロトコルのみをサポートします。[サポートチームに問い合わせて](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ja#sending-email)、メールの送信用のポートと、環境用の SMTP プロトコルを有効にします。この制限は、プラットフォームのセキュリティの向上に役立ちます。
+メールステップは、Day CQ Mail Service を使用してメールを送信します。メールステップを使用する前に、メールサービスが設定されていることを確認してください。メールは、デフォルトで HTTP および HTTPs プロトコルのみをサポートします。[サポートチームに問い合わせて](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email)、メールの送信用のポートと、環境用の SMTP プロトコルを有効にします。この制限は、プラットフォームのセキュリティの向上に役立ちます。
 
 メールステップには、次のプロパティがあります。
 
@@ -211,8 +211,7 @@ PDF/A に変換ステップには、次のプロパティがあります。
 
 * **[!UICONTROL 画像]**：画像をメールに埋め込むには、このオプションを使用します。このオプションを選択したら、画像を参照して選択します。「画像」オプションは、メールテンプレートで使用できる画像タグ（&lt;img src=&quot;&#42;&quot;/>）に対してのみ使用できます。
 
-**[!UICONTROL 送信者／受信者のメールアドレス]**： メールアドレスを手動で指定するには、「**[!UICONTROL リテラル]**」オプションを選択します。メールアドレスをメタデータプロパティから取得するには、「**[!UICONTROL ワークフローメタデータから取得]**」オプションを選択します。
-「**[!UICONTROL ワークフローメタデータから取得]**」オプションのメタデータプロパティ配列のリストを指定することもできます。「**[!UICONTROL 変数]**」オプションを選択して、文字列データ型の変数に格納されている値からメールアドレスを取得します。
+**[!UICONTROL 送信者/受信者のメールアドレス]**:を選択します。 **[!UICONTROL リテラル]** 電子メールアドレスを手動で指定するか、 **[!UICONTROL ワークフローメタデータから取得]** オプションを使用して、メタデータプロパティから電子メールアドレスを取得できます。 「**[!UICONTROL ワークフローメタデータから取得]**」オプションのメタデータプロパティ配列のリストを指定することもできます。「**[!UICONTROL 変数]**」オプションを選択して、文字列データ型の変数に格納されている値からメールアドレスを取得します。
 
 * **[!UICONTROL 添付ファイル]**：指定された場所で使用可能なアセットがメールに添付されます。アセットのパスは、ペイロードに対する相対パスまたは絶対パスのどちらでもかまいません。一例として、[Payload_Directory]/attachments/ というパスを指定します。
 
@@ -239,7 +238,7 @@ PDF/A に変換ステップには、次のプロパティがあります。
 
 **[!UICONTROL 以下のオプションを使用して生成されたレコードのドキュメントを保存]**：レコードのドキュメントファイルを保持する場所を指定します。ペイロードフォルダーを上書き、ペイロードディレクトリ内の任意の場所にレコードのドキュメントを配置、ドキュメントデータ型の変数にレコードのドキュメントを格納することを選択できます。
 
-**[!UICONTROL ロケール]**：レコードのドキュメントの言語を指定します。ドロップダウンリストからロケールを選択する場合は「**[!UICONTROL リテラル]**」を選択し、文字列データ型の変数に格納されている値からロケールを取得する場合は「**[!UICONTROL 変数]**」を選択します。ロケールの値を変数に格納する際は、ロケールコードを定義する必要があります。例えば、英語は **en_US**、フランス語は **fr_FR** と指定します。
+**[!UICONTROL ロケール]**：レコードのドキュメントの言語を指定します。ドロップダウンリストからロケールを選択する場合は「**[!UICONTROL リテラル]**」を選択し、文字列データ型の変数に格納されている値からロケールを取得する場合は「**[!UICONTROL 変数]**」を選択します。ロケールの値を変数に格納する際に、ロケールコードを定義します。 例えば、英語は **en_US**、フランス語は **fr_FR** と指定します。
 
 ## DDX を呼び出しステップ {#invokeddx}
 
@@ -249,12 +248,12 @@ DDX を呼び出しステップには次のプロパティがあります。
 
 **[!UICONTROL 入力ドキュメント]**：入力ドキュメントのプロパティを設定するために使用します。このタブで使用できる様々なオプションを次に示します。
 * **[!UICONTROL 次を使用して DDX を指定]**：ペイロードに関連する入力ドキュメントを指定し、絶対パスを持ち、ペイロードとして提供するか、ドキュメントデータタイプの変数に格納できます。
-* **[!UICONTROL ペイロードからマップを作成]**：ペイロードフォルダーの下のすべてのドキュメントを Assembler で API を呼び出すのための入力ドキュメントマップに追加します。各ドキュメントのノード名は、マップのキーとして使用されます。
-* **[!UICONTROL 入力ドキュメントのマップ]**：オプションは、「**[!UICONTROL 追加]**」ボタンで複数のエントリを追加するために使用します。各エントリは、マップ内のドキュメントのキーとドキュメントのソースを表します。
+* **[!UICONTROL ペイロードからマップを作成]**:Assembler で呼び出し API 用に、ペイロードフォルダーの下のすべてのドキュメントを Input Document&#39;s Map に追加します。 各ドキュメントのノード名は、マップのキーとして使用されます。
+* **[!UICONTROL 入力ドキュメントのマップ]**:オプションは、 **[!UICONTROL 追加]** 」ボタンをクリックします。 各エントリは、マップ内のドキュメントのキーとドキュメントのソースを表します。
 
 **[!UICONTROL 環境オプション]**：このオプションは、呼び出し API の処理設定を設定するために使用します。 このタブで使用できる様々なオプションを次に示します。
 * **[!UICONTROL 検証のみ]**：入力DDXの有効性をチェックします。
-* **[!UICONTROL エラー時に失敗]**：エラーの場合に呼び出し API サービスが失敗するかどうかを示すブーリアン値。 デフォルトでは、この値は False に設定されています。
+* **[!UICONTROL エラー時に失敗]**:エラーが発生した場合に呼び出し API サービスが失敗するかどうかを示すブール値。 デフォルトでは、この値は False に設定されています。
 * **[!UICONTROL 最初のベイツ番号]**：自己増分する数を指定します。 この自己増分値は、連続する各ページに自動的に表示されます。
 * **[!UICONTROL デフォルトのスタイル]**：出力ファイルのデフォルトのスタイルを設定します。
 
@@ -264,7 +263,7 @@ DDX を呼び出しステップには次のプロパティがあります。
 
 **[!UICONTROL 出力ドキュメント]**：出力ファイルを保存する場所を指定します。 このタブで使用できる様々なオプションを次に示します。
 * **[!UICONTROL ペイロードでの出力ドキュメント保存]**：ペイロードフォルダーの下で出力ドキュメントを保存したり、ペイロードがファイルの場合はペイロードを上書きしたりします。
-* **[!UICONTROL 出力ドキュメントのマップ]**：ドキュメントごとに 1 つのエントリを追加して、各ドキュメントファイルを保存する場所を明示的に指定します。 各エントリは、ドキュメントと、その保存場所を表します。 出力ドキュメントが複数ある場合は、このオプションが使用されます。
+* **[!UICONTROL 出力ドキュメントのマップ]**:ドキュメントごとに 1 つのエントリを追加して、各ドキュメントファイルを明示的に保存する場所を指定します。 各エントリは、ドキュメントと、その保存場所を表します。 出力ドキュメントが複数ある場合は、このオプションが使用されます。
 
 ## フォームデータモデルサービスを呼び出しステップ {#invoke-form-data-model-service-step}
 
@@ -486,14 +485,14 @@ Encrypt, Sign, and certify a document. [!DNL AEM Forms] supports both password b
 Send a document directly to a printer. It supports the following printing access mechanisms:
 
 * **[!UICONTROL Direct accessible printer]**: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.
-* **[!UICONTROL Indirect accessible printer]**: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.
+* **[!UICONTROL Indirect accessible printer]**: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX&reg; printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server's IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.
     -->
 
 ## 印刷出力ステップを生成 {#generatePrintedOutput}
 
-指定したフォームデザインとデータファイルに対して PCL、PostScript、ZPL、IPL、TPCL または DPL の出力を生成します。データファイルはフォームデザインとマージされ、印刷用にフォーマットされます。この操作で生成された出力はプリンターに直接送信したり、ファイルとして保存したりできます。この操作はフォームデザインやデータをアプリケーションから使用する場合に実行することをお勧めします。フォームデザインがネットワーク、ローカルファイルシステム、または HTTP 上の場所にある場合は、「generatePrintedOutput」操作を使用します。
+指定したフォームデザインとデータファイルに対して PCL、PostScript、ZPL、IPL、TPCL または DPL の出力を生成します。データファイルはフォームデザインとマージされ、印刷用にフォーマットされます。この操作で生成された出力はプリンターに直接送信したり、ファイルとして保存したりできます。この操作はフォームデザインやデータをアプリケーションから使用する場合に実行することをお勧めします。フォームデザインがネットワーク上、ローカルファイルシステム上、または HTTP 上の場所にある場合は、「generatePrintedOutput」操作を使用します。
 
-例えば、アプリケーションでフォームデザインをデータファイルとマージする必要があるとします。データには数百件のレコードがあります。さらに、ZPL をサポートしているプリンターに出力を送信する必要があります。フォームデザインと入力データはアプリケーション内にあります。「generatePrintedOutput」操作を使用して、レコードをフォームデザインとマージし、ZPL がサポートされるプリンターに出力を送信します。
+例えば、アプリケーションでフォームデザインをデータファイルとマージする必要があるとします。データには数百件のレコードがあります。さらに、ZPL をサポートしているプリンターに出力を送信する必要があります。フォームデザインと入力データはアプリケーション内にあります。 「generatePrintedOutput」操作を使用して、レコードをフォームデザインとマージし、ZPL がサポートされるプリンターに出力を送信します。
 
 「印刷出力を生成」ステップには、次のプロパティがあります。
 
@@ -501,7 +500,7 @@ Send a document directly to a printer. It supports the following printing access
 
 * **[!UICONTROL 次を使用してテンプレートファイルを選択]**：テンプレートファイルのパスを指定します。 テンプレートファイルは、ペイロードに対する相対パス、絶対パスで保存されたもの、またはドキュメントデータタイプの変数を使用して選択できます。例： [Payload_Directory]/Workflow/data.xml。パスが crx-repository に存在しない場合、管理者はパスを作成してから使用できます。 さらに、ペイロードを入力データファイルとして受け入れることもできます。
 
-* **[!UICONTROL 次を使用してデータドキュメントを選択]**：入力データファイルのパスを指定します。 入力データファイルは、ペイロードに対する相対パス、絶対パスで保存されたもの、またはドキュメントデータタイプの変数を使用して選択できます。例： [Payload_Directory]/Workflow/data.xml。パスが crx-repository に存在しない場合、管理者はパスを作成してから使用できます。
+* **[!UICONTROL 次を使用してデータドキュメントを選択]**:入力データファイルのパスを指定します。 入力データファイルは、ペイロードに対する相対パス、絶対パスで保存されたもの、またはドキュメントデータタイプの変数を使用して選択できます。例： [Payload_Directory]/Workflow/data.xml。パスが crx-repository に存在しない場合、管理者はパスを作成してから使用できます。
 
 * **[!UICONTROL プリンター形式]**：XDC ファイルがない場合に出力ストリームの生成に使用するページ説明言語を指定する値。リテラル値を指定する場合、次のいずれかの値を選択します。
 
@@ -521,26 +520,26 @@ Send a document directly to a printer. It supports the following printing access
 
 **[!UICONTROL 出力プロパティ]**
 
-* **[!UICONTROL 次を使用して出力ドキュメントを保存]**：出力ファイルを保存する場所を指定します。 出力ファイルは、ペイロードに相対した場所の変数に保存するか、出力ファイルを保存する絶対位置を指定することができます。 パスが crx-repository に存在しない場合、管理者はパスを作成してから使用できます。
+* **[!UICONTROL 次を使用して出力ドキュメントを保存]**：出力ファイルを保存する場所を指定します。 出力ファイルは、ペイロードに対する相対的な場所、変数、または出力ファイルを保存する絶対位置を指定できます。 パスが crx-repository に存在しない場合、管理者はパスを作成してから使用できます。
 
 **[!UICONTROL 詳細プロパティ]**
 
-* **[!UICONTROL 次を使用してコンテンツルートの場所を選択]**：コンテンツルートは、フォームデザインで使用される相対アセットを取得するための、リポジトリ内の URI、絶対参照、または場所を指定する文字列値です。 例えば、フォームデザインが ../myImage.gif のようにイメージを相対的に参照する場合、myImage.gif は repository:// に配置する必要があります。デフォルト値は repository:// で、これはリポジトリのルートレベルをポイントします。
+* **[!UICONTROL 次を使用してコンテンツルートの場所を選択]**：コンテンツルートは、フォームデザインで使用される相対アセットを取得するための、リポジトリ内の URI、絶対参照、または場所を指定する文字列値です。 例えば、フォームデザインが画像を相対的に参照する場合、例えば `../myImage.gif`, `myImage.gif` は、 `repository://`. デフォルト値は `repository://`：リポジトリのルートレベルを指します。
 
-   アプリケーションからアセットを選択するとき、コンテンツルート URI パスは正確な構造になっている必要があります。例えば、フォームを SampleApp というアプリケーションから選択し、SampleApp/1.0/forms/Test.xdp に配置する場合、コンテンツルート URI は repository://administrator@password/Applications/SampleApp/1.0/forms/ または repository:/Applications/SampleApp/1.0/forms/（認証機関情報が NULL の場合）と指定する必要があります。コンテンツルート URI をこの方式で指定すると、フォーム内で参照されているすべてのアセットのパスがこの URI を基準に解決されます。
+   アプリケーションからアセットを選択するとき、コンテンツルート URI パスは正確な構造になっている必要があります。例えば、フォームが SampleApp という名前のアプリケーションから選択され、 `SampleApp/1.0/forms/Test.xdp`を指定する場合、コンテンツルート URI は `repository://administrator@password/Applications/SampleApp/1.0/forms/`または `repository:/Applications/SampleApp/1.0/forms/` （authority が null の場合）。 コンテンツルート URI をこの方式で指定すると、フォーム内で参照されているすべてのアセットのパスがこの URI を基準に解決されます。
 
 * **[!UICONTROL を使用して XCI ファイルを選択]**：XCI ファイルは、フォームデザイン要素に使用されるフォントやその他のプロパティを記述するために使用されます。 XCI ファイルは、ペイロードに対する相対パス、絶対パス、またはドキュメントデータタイプの変数を使用して保持できます。
 
 * **[!UICONTROL ロケール]**：PDF ドキュメントの生成に使用する言語を設定します。リテラル値を指定する場合、リストから言語を選択するか、次のいずれかの値を選択します。
    * **[!UICONTROL Use Server Default]**[!DNL AEM Forms]：
-（デフォルト） サーバー上で設定されているロケール設定を使用します。ロケール設定は、管理コンソールを使用して設定します（「[Designer ヘルプ](http://www.adobe.com/go/learn_aemforms_designer_65_jp)」を参照）。
+（デフォルト） サーバー上で設定されているロケール設定を使用します。ロケール設定は、管理コンソールを使用して設定します（「[Designer ヘルプ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf)」を参照）。
 
    * **[!UICONTROL カスタム値を使用するには]**：
-リテラルボックスにロケールコードを入力するか、ロケールコードを含む文字列変数を選択します。サポートされているすべてのロケールコードのリストについては、http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html を参照してください。
+リテラルボックスにロケールコードを入力するか、ロケールコードを含む文字列変数を選択します。サポートされるロケールコードの完全なリストについては、https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.htmlを参照してください。
 
 * **[!UICONTROL Copies]**：出力の作成部数を指定する整数値。デフォルト値は 1 です。
 
-* **[!UICONTROL Duplex Printing]**：両面印刷か片面印刷かを指定する Pagination 値。PostScript および PCL をサポートするプリンターでは、この値を使用します。リテラル値を指定する場合は、次のいずれかの値を選択します。
+* **[!UICONTROL Duplex Printing]**：両面印刷か片面印刷かを指定する Pagination 値。PostScript と PCL をサポートするプリンターでこの値を使用します。リテラル値を指定する場合、次のいずれかの値を選択します。
    * **[!UICONTROL Duplex Long Edge]**：両面印刷を使用し、長辺のページネーションを使用して印刷します。
    * **[!UICONTROL Duplex Short Edge]**：両面印刷を使用し、短辺のページネーションを使用して印刷します。
    * **[!UICONTROL Simplex]**：片面印刷を使用します。

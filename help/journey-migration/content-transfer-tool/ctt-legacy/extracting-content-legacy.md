@@ -4,10 +4,10 @@ description: ソースからのコンテンツの抽出
 hide: true
 hidefromtoc: true
 exl-id: 9f43356c-ba51-48bc-97f5-f1f5db81e7f3
-source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
+source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 100%
+source-wordcount: '534'
+ht-degree: 69%
 
 ---
 
@@ -17,10 +17,10 @@ ht-degree: 100%
 
 コンテンツ転送ツールで移行セットを抽出するには、次の手順に従います。
 >[!NOTE]
->Amazon S3 または Azure データストアをデータストアのタイプとして使用する場合は、オプションの事前コピーステップを実行して、抽出段階を大幅に迅速化できます。それには、抽出を実行する前に `azcopy.config` ファイルを設定する必要があります。詳しくは、[大規模なコンテンツリポジトリーの処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja)を参照してください。
+>Amazon S3 または Azure データストアをデータストアのタイプとして使用する場合は、オプションの事前コピーステップを実行して、抽出段階を大幅に迅速化できます。そのためには、 `azcopy.config` ファイルを作成してください。 詳しくは、[大規模なコンテンツリポジトリーの処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en)を参照してください。
 
 >[!IMPORTANT]
->ソースからコンテンツを抽出する前に、ユーザーマッピングツールを実行する必要があります。詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=ja)を参照してください。
+>ソースからコンテンツを抽出する前に、ユーザーマッピングツールを実行する必要があります。詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en)を参照してください。
 
 1. **コンテンツ転送**&#x200B;ウィザードで移行セットを選択し、「**抽出**」をクリックして抽出を開始します。
 
@@ -31,10 +31,10 @@ ht-degree: 100%
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-02.png)
 
    >[!NOTE]
-   >抽出段階では、ステージングコンテナを上書きするオプションがあります。
+   >オプションで、抽出段階でステージングコンテナを上書きできます。
 
    >[!IMPORTANT]
-   >この移行セットに対してユーザーマッピングを実行しないでソースからコンテンツを抽出すると、ユーザーマッピングステップが保留中であることを示す警告が表示されます（下図を参照）。「**ユーザーをマッピング**」をクリックして、ユーザーマッピングツールを実行します。
+   >ソースからコンテンツを抽出する前に、この移行セットでユーザーマッピングが実行されていない場合は、次の図に示すように、ユーザーマッピング手順が保留中であることを示す警告が表示されます。 選択 **ユーザーをマッピング** をクリックして、[ ユーザマッピング ] ツールを実行します。
    >![画像](/help/journey-migration/content-transfer-tool/assets-ctt/user-mapping-extract.png)
 
 1. 「**抽出**」フィールドに「**実行中**」ステータスが表示され、抽出が進行中であることを示します。
@@ -55,7 +55,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >最初のコンテンツ転送の後は、差分コンテンツ追加を頻繁に行って、Cloud Service での運用を開始する前に行う最後の差分コンテンツ転送に必要なコンテンツ凍結期間を短縮することをお勧めします。
->さらに、最初の抽出を実行した時点から、追加抽出を実行する時点まで、既存コンテンツのコンテンツ構造が変わらないことが不可欠です。最初の抽出以降に構造が変更されたコンテンツに対しては、追加を実行できません。移行プロセス中は、必ずこの制限を実施してください。
+>また、追加抽出を実行する際に、最初の抽出を実行した時点からに対して、既存のコンテンツのコンテンツ構造が変更されないようにしてください。 最初の抽出以降に構造が変更されたコンテンツでは、トップアップを実行できません。 移行プロセス中は、必ずこの制限を実施してください。
 
 抽出プロセスが完了したら、追加抽出方式を使用して差分コンテンツを転送できます。
 
@@ -74,4 +74,4 @@ ht-degree: 100%
 
 ## 次の手順 {#whats-next}
 
-コンテンツ転送ツールでソースからコンテンツを抽出する方法について理解したら、コンテンツ転送ツールでの取り込みプロセスについて学ぶ準備が整いました。コンテンツ転送ツールから移行セットを取り込む方法については、[Target へのコンテンツの取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)を参照してください。
+コンテンツ転送ツールの「ソースからのコンテンツの抽出」について学習したら、コンテンツ転送ツールの取り込みプロセスについて学ぶ準備が整いました。 コンテンツ転送ツールから移行セットを取り込む方法については、[Target へのコンテンツの取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)を参照してください。
