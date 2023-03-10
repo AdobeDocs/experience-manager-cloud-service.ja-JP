@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 向けアクセシブルコンテンツの作成（WCAG 2.1 準拠）
 description: AEM as a Cloud Service を使用すると、障碍のあるユーザーが Web コンテンツにアクセスして利用できるようになります。
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
-source-wordcount: '13853'
-ht-degree: 72%
+source-wordcount: '13870'
+ht-degree: 71%
 
 ---
 
@@ -100,7 +100,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * アイコン：特定の情報を伝える小さい絵文字です。ページおよびサイト全体で一貫して使用する必要があります。1 つのページまたはサイト上の同じアイコンにはすべて、短く簡潔な同じ代替テキストを含める必要があります。ただし、そうすることにより、隣接するテキストと不要な重複が発生する場合を除きます。
 * グラフとグラフ：これらは通常、数値データを表します。したがって、代替テキストを指定する 1 つの方法は、グラフや図に示す主なトレンドの簡単な概要を含めることです。必要に応じて、 **説明** フィールド **詳細** 「画像のプロパティ」タブ また、ページやサイトの別の場所で、ソースデータを表形式で提供することもできます。
 * 地図、図、フローチャート：空間データを提供するグラフィックの場合（例：オブジェクト間の関係やプロセスの説明をサポートする場合）は、主要なメッセージをテキスト形式で提供し、このテキスト情報を各関連データポイントの近くに配置します。地図の場合、完全に同等なテキストを提供することは困難な場合が多いものの、特定の場所への行き方を見つける手段として地図が提供されている場合は、地図画像の代替テキストで「*X の地図*」と簡単に示し、ページ内の別の場所または&#x200B;**画像**&#x200B;コンポーネントの「**詳細**」タブの「**説明**」フィールドで、目的の場所への道案内を提供します。
-* CAPTCHA:CAPTCHA は *コンピュータと人間を分かち合うための完全に自動化された公開チューリングテスト*.これは、悪意のあるソフトウェアと人間を区別するために Web ページで使用されるセキュリティチェックですが、アクセシビリティの問題を引き起こす可能性があります。セキュリティテストに合格するために、ユーザーが表示する内容を説明する必要がある画像です。 画像の代替テキストを指定することはできません。代わりに、グラフィック以外の代替ソリューションを検討する必要があります。 W3C は、いくつかの提案を提供します。 これらのアプローチにはそれぞれ独自のメリットと欠点があります。
+* CAPTCHA:CAPTCHA は *コンピュータと人間を分かち合うための完全に自動化された公開チューリングテスト*. web ページで人間と悪意のあるソフトウェアを区別するために使用されるセキュリティチェックですが、アクセス障害の原因となる可能性があります。これらの画像をユーザーが見て説明することにより、セキュリティテストに合格します。画像の代替テキストを指定することはできません。代わりに、グラフィック以外の代替ソリューションを検討する必要があります。 W3C は、いくつかの提案を提供します。 これらのアプローチにはそれぞれ独自のメリットと欠点があります。
 
    * 論理パズル
    * 画像の代わりに音声出力を使用
@@ -115,7 +115,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 * [達成基準 1.1.1 について](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
 * [達成基準 1.1.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
-* [W3C：CAPTCHA の説明と代替機能](https://www.w3.org/TR/turingtest/)
+* [W3C:CAPTCHA の説明と代替手段](https://www.w3.org/TR/turingtest/)
 
 <!--
 * [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
@@ -197,10 +197,10 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * [達成基準 1.2.2 について](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [達成基準 1.2.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
-<!--
-* [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/)
-* [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
--->
+c
+* [W3C：Synchronized Multimedia](https://www.w3.org/AudioVideo/)
+* [Captions, Transcripts, and Audio Descriptions（WebAIM）](https://webaim.org/techniques/captions/)
+—>
 
 ### 音声解説または代替メディア（収録済み）（1.2.3） {#audio-description-or-media-alternative-prerecorded}
 
@@ -247,11 +247,11 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 #### 達成方法 - キャプション（ライブ）（1.2.4） {#how-to-meet-captions-live}
 
-次に示すガイダンスに従います。 [キャプション（収録済み）](#captions-prerecorded) 上ただし、メディアの生きた性質上、キャプションのプロビジョニングは、可能な限り迅速に、また、何が起きているかに応じて作成する必要があります。 したがって、リアルタイムキャプションまたは音声ツーテキストツールの使用を検討する必要があります。
+次に示すガイダンスに従います。 [キャプション（収録済み）](#captions-prerecorded) 上ただし、メディアの生きた性質上、キャプションのプロビジョニングは、可能な限り迅速に、また、何が起こっているかに応じて作成する必要があります。 したがって、リアルタイムキャプションまたは音声ツーテキストツールの使用を検討する必要があります。
 
 詳細な手順説明はこのドキュメントの範囲外ですが、次のリソースで役に立つ情報が提供されています。
 
-* [WebAIM：Real Time Captioning](https://webaim.org/techniques/captions/realtime)
+* [WebAIM:リアルタイムキャプション](https://webaim.org/techniques/captions/realtime)
 
 * [AccessComputing プロジェクト（University of Washington）：Can captions be generated automatically using speech recognition?](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
@@ -538,13 +538,13 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 Web コンテンツ用の適切なフォントとサイズ設定を選択する際は、読みやすさと使いやすさを慎重に考慮し、適切な判断を下してください。
 
 >[!NOTE]
-次のツールは、他の単位に変換する際に役立ちます。
-* [Px to Em Calculator](https://www.omnicalculator.com/conversion/px-to-em)
-* [Font size conversion: pixel-point-em-rem-percent](https://www.websemantics.uk/tools/)
-* [Pixel to EM Converter](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
+次のフレーズに従って Web 検索を実行し、他の単位への変換に役立つツールを検索します。
+* Px to Em Calculator <!--  (https://www.omnicalculator.com/conversion/px-to-em) -->
+* Font size conversion: pixel-point-em-rem-percent <!-- CAUSES 404 ERROR DESPITE URL BEING CORRECT https://www.websemantics.uk/tools/ -->
+* Pixel to EM Converter <!-- (https://www.w3schools.com/tags/ref_pxtoemconversion.asp) -->
 
 
-コントラスト比を確認するには、[Paciello Group の Color Contrast Analyser](https://www.tpgi.com/resources/contrast-analyser.html) や [WebAIM の Color Contrast Checker](https://webaim.org/resources/contrastchecker/) などの色コントラストツールを使用してください。これらのツールを使用すると、色のペアを確認し、コントラストの問題を報告できます。
+コントラスト比を確認するには、 [Paciello Group 色コントラストアナライザ](https://www.tpgi.com/resources/contrast-analyser.html) または [WebAIM カラーコントラストチェッカー](https://webaim.org/resources/contrastchecker/). これらのツールを使用すると、色のペアを確認し、コントラストの問題を報告できます。
 
 また、ページの外観の指定にそれほど関心がない場合は、背景や前面のテキストの色を指定しないことを選択できます。ユーザーのブラウザーがテキストと背景の色を決定するので、コントラストチェックは必要ありません。
 
@@ -846,7 +846,7 @@ John Smith's publications
 >[!NOTE]
 上記のスニペットは図です。**画像**&#x200B;コンポーネントを使用することをお勧めします。
 
-追加のコンテキストを必要とせずにリンクの目的を識別するリンクテキストを提供することが望ましいものの、これが常に可能とは限らないことがわかっています。コンテキストのないリンクは、次の場合に使用できます。HTMLの例は、 [達成基準 2.4.4 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
+追加のコンテキストを必要とせずに、リンクの目的を識別するリンクテキストを提供することをお勧めしますが、これは常に可能とは限らないことが認識されます。 コンテキストのないリンクは、次の場合に使用できます。HTMLの例は、 [達成基準 2.4.4 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
 * リンクテキストが、密接に関連するリンクのリストの一部であり、リンクを含むリスト項目で十分なコンテンツが提供されている場合。
 * リンクの目的が、前の（後ろではない）段落テキストから明確に識別できる場合&#x200B;*。*

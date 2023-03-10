@@ -4,10 +4,10 @@ description: コンテンツ転送ツール使用のガイドラインとベス�
 hide: true
 hidefromtoc: true
 exl-id: 03449606-0fb4-4a9f-9abb-6b17c27a6046
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
-source-wordcount: '1477'
-ht-degree: 55%
+source-wordcount: '1476'
+ht-degree: 54%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 55%
 
 * アクセストークンは、特定の期間の後、または Cloud Service 環境のアップグレード後に、定期的に期限切れになる場合があります。アクセストークンの有効期限が切れている場合、Cloud Serviceインスタンスに接続できません。 その場合は、新しいアクセストークンを取得する必要があります。 既存の移行セットに関連付けられているステータスアイコンは、赤い雲に変わり、その上にマウスポインターを置くとメッセージが表示されます。
 
-* コンテンツ転送ツール（CTT）は、ソースインスタンスからターゲットインスタンスにコンテンツを転送する前に、どのような種類のコンテンツ分析も実行しません。例えば、CTT では、コンテンツをパブリッシュ環境に取り込む際に、公開済みコンテンツと非公開コンテンツを区別しません。移行セットで指定されているコンテンツが、選択したターゲットインスタンスに取り込まれます。 ユーザーは、移行セットをオーサーインスタンス、パブリッシュインスタンス、またはその両方に取り込むことができます。 コンテンツを実稼動インスタンスに移動する際に、ソースオーサーインスタンスに CTT をインストールして、コンテンツをターゲットオーサーインスタンスに移動します。 同様に、ソースパブリッシュインスタンスに CTT をインストールして、コンテンツをターゲットパブリッシュインスタンスに移動します。 詳しくは、[パブリッシュインスタンスでのコンテンツ転送ツールの実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool)を参照してください。
+* コンテンツ転送ツール（CTT）は、ソースインスタンスからターゲットインスタンスにコンテンツを転送する前に、どのような種類のコンテンツ分析も実行しません。例えば、CTT では、コンテンツをパブリッシュ環境に取り込む際に、公開済みコンテンツと非公開コンテンツを区別しません。移行セットで指定されているコンテンツが、選択したターゲットインスタンスに取り込まれます。 ユーザーは、移行セットをオーサーインスタンス、パブリッシュインスタンス、またはその両方に取り込むことができます。 コンテンツを実稼動インスタンスに移動する際に、ソースオーサーインスタンスに CTT をインストールして、コンテンツをターゲットオーサーインスタンスに移動します。 同様に、ソースパブリッシュインスタンスに CTT をインストールして、コンテンツをターゲットパブリッシュインスタンスに移動します。 詳しくは、 [パブリッシュインスタンスでのコンテンツ転送ツールの実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) を参照してください。
 
 * コンテンツ転送ツールによって転送されるユーザーとグループは、権限を満たすためにコンテンツで必要なものに限られます。*抽出*&#x200B;プロセスでは、`/home` 全体を移行セットにコピーし、*取り込み*&#x200B;プロセスでは、移行されたコンテンツ ACL で参照されているすべてのユーザーおよびグループをコピーします。既存のユーザーやグループを IMS ID に自動的にマッピングする場合は、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en)を参照してください。
 
