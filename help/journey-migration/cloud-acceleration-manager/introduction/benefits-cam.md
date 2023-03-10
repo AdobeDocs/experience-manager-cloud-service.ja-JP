@@ -2,10 +2,10 @@
 title: Cloud Acceleration Manager を使用するメリット
 description: ここでは、Cloud Acceleration Manager を使用する主なメリットについて説明します。
 exl-id: d7a6c4f6-0f50-4f44-8a62-4a5769c76bd5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 100%
+source-wordcount: '261'
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 >id="aemcloud_cam_benefits"
 >title="Cloud Acceleration Manager を使用するメリット"
 >abstract="Cloud Acceleration Manager（CAM）では、チームが自信を持って計画し実装して運用開始できるように、アドビ推奨のベストプラクティスと手法を案内するガイド付きエクスペリエンスを提供します。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en" text="Cloud Acceleration Manager の基本を学ぶ"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html" text="Cloud Acceleration Manager の基本を学ぶ"
 
 様々なビジネス要件とカスタマイズが存在するので、クラウドへの移行は複雑なプロジェクトになる可能性があります。Cloud Acceleration Manager（CAM）では、チームが自信を持って計画し実装して運用開始できるように、アドビ推奨のベストプラクティスと手法を案内するガイド付きエクスペリエンスを提供します。
 

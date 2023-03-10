@@ -2,9 +2,9 @@
 title: ソースからのコンテンツの抽出
 description: ソースからのコンテンツの抽出
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 5a4592531377109fba88b5cdc9df027803feca7a
+source-git-commit: 614b2d9e0b3c34bdef854115dce91effed0b36f8
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '663'
 ht-degree: 98%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 98%
 コンテンツ転送ツールで移行セットを抽出するには、次の手順に従います。
 
 >[!NOTE]
->Amazon S3、Azure データストア、ファイルデータストアのいずれかをデータストアのタイプとして使用する場合は、オプションの事前コピーステップを実行して、抽出段階を大幅に迅速化できます。事前コピーステップは、1回目の完全抽出と取り込みに最も効果的です。それには、抽出を実行する前に `azcopy.config` ファイルを設定する必要があります。詳しくは、[大規模なコンテンツリポジトリーの処理](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)を参照してください。
+>Amazon S3、Azure データストア、ファイルデータストアのいずれかをデータストアのタイプとして使用する場合は、オプションの事前コピーステップを実行して、抽出段階を大幅に迅速化できます。事前コピーステップは、1回目の完全抽出と取り込みに最も効果的です。詳しくは、[大規模なコンテンツリポジトリーの処理](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)を参照してください。
 
 1. **コンテンツ転送**&#x200B;ウィザードで移行セットを選択し、「**抽出**」をクリックして抽出を開始します。
 

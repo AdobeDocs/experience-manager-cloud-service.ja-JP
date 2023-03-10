@@ -2,10 +2,10 @@
 title: Cloud Acceleration Manager での実装フェーズ
 description: このページでは、Cloud Acceleration Manager における実装フェーズの概要について説明します。
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: cdf5280a3875eefa1fe19ddb985d550d00fd418e
+source-git-commit: cba5dccd3b66220bbcd6d3b4dd5298702902b0e5
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 ![画像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
->詳しくは、[Cloud Acceleration Manager でのプロジェクトの作成と管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=ja#create-project)を参照してください。
+>詳しくは、[Cloud Acceleration Manager でのプロジェクトの作成と管理](getting-started-cam.md#create-project)を参照してください。
 
 
 ## ローカル開発カードの使用 {#local-development}
@@ -102,9 +102,12 @@ AEM as a Cloud Service デプロイメントカードには、コードを AEM a
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
-   >コンテンツ転送ツールを使用する前に、[前提条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=ja)および[ベストプラクティスとガイドライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja)を確認してください。
+   >移行セットは、無操作状態が長時間続くと有効期限が切れることに注意してください。 確認してください [移行セットの有効期限](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 」を参照してください。
 
-1. 移行セットに入力し、コンテンツ転送の抽出段階を完了するには、コンテンツ転送ツールをダウンロードしてインストールする必要があります。[コンテンツ転送ツールの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja)を参照して、コンテンツ転送ツールの使用方法を確認してください。
+   >[!NOTE]
+   >コンテンツ転送ツールを使用する前に、[前提条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html)および[ベストプラクティスとガイドライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja)を確認してください。
+
+1. 移行セットに入力し、コンテンツ転送の抽出段階を完了するには、コンテンツ転送ツールをダウンロードしてインストールする必要があります。[コンテンツ転送ツールの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html)を参照して、コンテンツ転送ツールの使用方法を確認してください。
 
 1. 移行セットから AEM as a Cloud Service 上の環境にコンテンツを取り込むには、取り込みを開始する必要があります。**取り込みジョブ**&#x200B;に移動し、「**新しい取り込み**」をクリックします。[Target へのコンテンツの取り込み](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=ja)を参照して、コンテンツ転送の取り込みフェーズを完了する方法を確認してください。
 
@@ -125,4 +128,4 @@ You can also estimate the size of specific repository paths by using the `path` 
 
 ## 次の手順 {#whats-next}
 
-Cloud Acceleration Manager へのログイン方法と実装フェーズの利用方法を理解したら、次のステップの[運用開始フェーズ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=ja)に進みます。
+Cloud Acceleration Manager へのログイン方法と実装フェーズの利用方法を理解したら、次のステップの[運用開始フェーズ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html)に進みます。

@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの基本を学ぶ
 description: コンテンツ転送ツールの基本を学ぶ
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: b36756395cc516ab4e4725f718ed6de77d9872f8
+source-git-commit: 8264aef85a1d76db1cc04e0a01839089ee5f4b66
 workflow-type: tm+mt
-source-wordcount: '1328'
-ht-degree: 96%
+source-wordcount: '1388'
+ht-degree: 88%
 
 ---
 
@@ -60,7 +60,7 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 >title="コンテンツ転送ツールの実行"
 >abstract="この節では、コンテンツ転送ツールを使用してコンテンツを AEM as a Cloud Service（オーサー／パブリッシュ）に移行する方法について説明します。"
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" デモを見る"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ja#migration" text="チュートリアル - コンテンツ転送ツールの使用"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="チュートリアル - コンテンツ転送ツールの使用"
 
 次の節は、コンテンツ転送ツールの新しいバージョンに適用されます。この節では、コンテンツ転送ツールを使用してコンテンツを AEM as a Cloud Service に移行する方法について説明します。
 
@@ -69,8 +69,8 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction_setup"
 >title="抽出設定フェーズ"
->abstract="移行セットを作成し、抽出キーをコピーする方法を説明します。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ja#migration" text="チュートリアル - コンテンツ転送ツールの使用"
+>abstract="移行セットの作成および管理方法と、抽出キーのコピー方法について説明します。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="チュートリアル - コンテンツ転送ツールの使用"
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
 
@@ -84,9 +84,11 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 
    >[!NOTE]
    >
-   >Cloud Acceleration Manager では、プロジェクトごとに最大 5 つの移行セットを作成できます。
+   >Cloud Acceleration Manager では、プロジェクトごとに最大 5 つの移行セット（有効期限切れのセットを含む）を作成できます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
+
+   次のダイアログが表示されます。 移行セットは、無操作状態が長時間続くと有効期限が切れます。 警告がプロジェクトカードおよび移行ジョブテーブルの行に一定期間表示された後、移行セットは期限切れになり、そのデータは使用できなくなります。 レビュー [移行セットの有効期限](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 」を参照してください。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 

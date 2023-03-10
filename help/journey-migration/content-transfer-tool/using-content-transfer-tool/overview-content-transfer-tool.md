@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの概要
 description: コンテンツ転送ツールの概要
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 5a4592531377109fba88b5cdc9df027803feca7a
+source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 94%
+source-wordcount: '708'
+ht-degree: 77%
 
 ---
 
@@ -63,6 +63,25 @@ ht-degree: 94%
 抽出段階で既存の移行セットに&#x200B;***追加***&#x200B;するには、*上書き*&#x200B;オプションを無効にする必要があります。詳しくは、[追加抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)を参照してください。
 
 インジェストフェーズで現在のコンテンツの上に差分コンテンツを適用するには、*ワイプ*&#x200B;オプションを無効にする必要があります。詳しくは、[追加インジェスト](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)を参照してください。
+
+## 移行セットの有効期限 {#migration-set-expiry}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_migrationset_expiry"
+>title="移行セットの有効期限"
+>abstract="移行セットの有効期限について説明します。"
+
+90 日間の無操作状態が長引くと、すべての移行セットは最終的に期限切れになります。 プロジェクトカードおよび移行ジョブテーブルの行に一定期間インジケーターが表示された後、移行セットは期限切れになり、そのデータは使用できなくなります。 有効期限は、次の方法で設定された移行に従って簡単に延長できます。
+
+* 説明の編集
+* 抽出キーを取得しています
+* 抽出を実行する
+* それからの取り込みの実行
+
+移行セット行で移行セットの有効期限を監視できます。 移行セットの有効期限が近づいていることを示す便利な視覚的インジケーターにも、プロジェクトのカードが追加されました。
+
+![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
+
 
 ## 次の手順 {#whats-next}
 

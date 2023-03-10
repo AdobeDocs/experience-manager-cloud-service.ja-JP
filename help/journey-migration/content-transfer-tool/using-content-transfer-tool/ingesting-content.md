@@ -2,10 +2,10 @@
 title: Target へのコンテンツの取り込み
 description: Target へのコンテンツの取り込み
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 3ccc225a665392552621c78615a31917eb44f1fd
+source-git-commit: 7e5a966693b139efa42111d8b6d675674516cfc6
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 81%
+source-wordcount: '1693'
+ht-degree: 78%
 
 ---
 
@@ -37,7 +37,8 @@ ht-degree: 81%
 
 1. 新しい取り込みを作成するために必要な情報を入力します。
 
-   * 抽出した移行セットをソースとして選択します。
+   * 抽出したデータをソースとして含む移行セットを選択します。
+      * 移行セットは、無操作状態が長時間続くと有効期限が切れるので、抽出が実行された後は取り込みが比較的早くおこなわれます。 レビュー [移行セットの有効期限](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 」を参照してください。
    * 移行先の環境を選択します。移行セットのコンテンツは、ここに取り込まれます。階層を選択します（オーサー／パブリッシュ）。
 
    >[!NOTE]
@@ -90,7 +91,7 @@ ht-degree: 81%
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
    
-   Also, refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations) to learn more.
+   Also, refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) to learn more.
 
 1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
 
