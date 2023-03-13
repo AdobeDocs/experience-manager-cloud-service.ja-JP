@@ -3,7 +3,7 @@ title: ' [!DNL AEM Forms] as a Cloud Service の概要'
 description: AEM Formsを理解し、ビジネスに適したフォームやドキュメントを作成する方法を学びます。 Platform-as-a-Service(PaaS) の概要と、エンタープライズクラスのデジタルフォームとビジネスプロセスの管理方法、およびFormsを Adobe Sign と現在のデータソースに接続する方法について説明します。
 landing-page-description: AEM as a Cloud Service でのフォームの使用方法を理解します。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 2a464a0a11396a1948ba7211d5c0534769e6659c
+source-git-commit: fa8629fefe3ad29f70213b15bb31623a2f7d5420
 workflow-type: tm+mt
 source-wordcount: '1109'
 ht-degree: 33%
