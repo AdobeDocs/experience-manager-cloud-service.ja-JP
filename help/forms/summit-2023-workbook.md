@@ -5,9 +5,10 @@ description: コアコンポーネントとヘッドレスを使用して魅力�
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 hide: true
-source-git-commit: 8f3ffc72507be1d28bc437041579578d6a479e23
+hidefromtoc: true
+source-git-commit: b68902ef4f7c61f77aa0d03ad718d5bf3023dea0
 workflow-type: tm+mt
-source-wordcount: '2453'
+source-wordcount: '2465'
 ht-degree: 1%
 
 ---
@@ -242,8 +243,6 @@ AEM Forms as a Cloud Service環境の理解。
 
    ![](/help/forms/assets/screenshot2028116429.png)
 
-   ![](/help/forms/assets/screenshot20228116569.png)
-
 
 1. [ コマンドプロンプト ] ウィンドウで、次のコマンドを実行します。
 
@@ -271,8 +270,7 @@ AEM Forms as a Cloud Service環境の理解。
 
    >[!NOTE]
    >
-   >を実行した後、ブラウザーで空白の画面が表示される場合、 `npm run live` コマンド、変更 `localhost` （ブラウザー URL が 127.0.0.1 に達し、を押します） **入力**.
-
+   >を実行した後、ブラウザーで空白の画面が表示される場合、 `npm run live` 3 ～ 4 分以上のコマンド、変更 `localhost` （ブラウザー URL が 127.0.0.1 に達し、を押します） **入力**.
 
 
    ![](/help/forms/assets/screenshot2028115129.png)
@@ -381,7 +379,8 @@ React スタータープロジェクトを使用してローカルリポジト�
 
    >[!NOTE]
    >
-   >を実行した後、ブラウザーで空白の画面が表示される場合、 `npm start` コマンド、変更 `localhost` （ブラウザー URL が 127.0.0.1 に達し、を押します） **入力**.
+   > 
+   > を実行した後、ブラウザーで空白の画面が表示される場合、 `npm start` 3 ～ 4 分以上のコマンド、変更 `localhost` （ブラウザー URL が 127.0.0.1 に達し、を押します） **入力**.
 
    ![](/help/forms/assets/screenshot2028118229.png)
 
@@ -529,7 +528,7 @@ Material UI スタータープロジェクトを使用してローカルリポ�
 
    >[!NOTE]
    >
-   >を実行した後、ブラウザーで空白の画面が表示される場合、 `npm start` コマンド、変更 `localhost` （ブラウザー URL が 127.0.0.1 に達し、を押します） **入力**.
+   >を実行した後、ブラウザーで空白の画面が表示される場合、 `npm start` 3 ～ 4 分以上のコマンド、変更 `localhost` （ブラウザー URL が 127.0.0.1 に達し、を押します） **入力**.
 
    ![](/help/forms/assets/screenshot2028127229.png)
 
