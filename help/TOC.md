@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d6d7fefce814063476aae8cdafc9cc6b084361a3
+source-git-commit: 4c5c5eed984dcc9361ae2316ce466b4a73c0bf19
 workflow-type: tm+mt
-source-wordcount: '3967'
+source-wordcount: '3969'
 ht-degree: 95%
 
 ---
@@ -941,6 +941,7 @@ ht-degree: 95%
    + [AEM コネクタの保守](/help/connectors/maintain.md)
 + 運用 {#operations}
    + [AEM as a Cloud Service の運用と保守](/help/operations/home.md)
+   + [通知センター](/help/operations/notification-center.md)
    + [コンテンツの検索とインデックス作成](/help/operations/indexing.md)
    + [コンテンツレプリケーションサービス](/help/operations/replication.md)
    + [AEM as a Cloud Service のインフラストラクチャとサービスモニタリング](/help/operations/monitoring.md)
