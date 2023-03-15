@@ -9,18 +9,14 @@ level: Beginner
 kt: 9461
 thumbnail: 339250.jpg
 exl-id: 54ad1cbc-a8b5-44b2-b12c-24c530a5a929
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '52'
+source-wordcount: '36'
 ht-degree: 100%
 
 ---
 
 # App Builder アプリケーションのデプロイ
-
->[!IMPORTANT]
->
-> _Adobe Project Firefly は、このシリーズのビデオで言及されているように、現在は App Builder という名前になっています_
 
 App Builder におけるデプロイの意味と、 Adobe I/O CLI を使用して App Builder アプリケーションをデプロイする方法を説明します。
 

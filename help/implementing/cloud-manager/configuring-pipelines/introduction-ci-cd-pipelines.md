@@ -3,10 +3,10 @@ title: CI／CD パイプライン
 description: Cloud Manager の CI／CD パイプラインと、CI／CD パイプラインを使用してコードを効率的にデプロイする方法について説明します。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
-workflow-type: ht
-source-wordcount: '1368'
-ht-degree: 100%
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+workflow-type: tm+mt
+source-wordcount: '1367'
+ht-degree: 98%
 
 ---
 
@@ -109,7 +109,7 @@ Cloud Manager で使用できるすべてのパイプラインとその用途を
 
 ## フロントエンドパイプライン {#front-end}
 
-フロントエンドコードは、静的ファイルとして機能する任意のコードです。これは AEM から提供される UI コードとは別個のもので、サイトテーマ、顧客定義の SPA、Firefly SPA、他のソリューションなどが含まれる可能性があります。
+フロントエンドコードは、静的ファイルとして機能する任意のコードです。AEMが提供する UI コードとは別のもので、サイトテーマ、顧客定義SPA、SPA、その他のソリューションを含めることができます。
 
 フロントエンドパイプラインは、バックエンド開発と同期せずにフロントエンドコードのデプロイメントを速めることができるので、チームが設計および開発プロセスを効率化するのに役立ちます。この専用パイプラインは、JavaScript と CSS をテーマとして AEM 配布レイヤーにデプロイして、AEM により配信されるページから参照できる新しいテーマバージョンを作成します。
 

@@ -2,16 +2,16 @@
 title: Adobe Developer App Builder を使用した [!DNL Adobe Experience Manager] as a Cloud Service の拡張
 description: Adobe Developer App Builder を使用した [!DNL Adobe Experience Manager] as a Cloud Service の拡張
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: ht
-source-wordcount: '589'
-ht-degree: 100%
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 97%
 
 ---
 
 # Adobe Developer App Builder を使用した [!DNL Adobe Experience Manager] as a Cloud Service の拡張 {#extend-using-app-builder}
 
-## AEM as a Cloud Service の App Builder とは {#project-firefly}
+## AEM as a Cloud Service の App Builder とは {#project-appbuilder}
 
 新しい Adobe Developer App Builder は、AEM as a Cloud Service の機能を開発者が容易に拡張できる拡張フレームワークを提供します。
 
@@ -23,7 +23,7 @@ App Builder を使用すると、次のような様々なユースケースで A
 * コアサービス拡張 - カスタム機能およびビジネスロジックを使用してデフォルトの動作を拡張することで、コアアプリケーション機能を拡張します。
 * ユーザーエクスペリエンス拡張 - コアエクスペリエンスを拡張してビジネス要件をサポートするか、顧客固有のデジタルプロパティ、ストアフロントおよびバックオフィスアプリを構築します。
 
-App Builder（旧称 Project Firefly）は、2020年夏以降、開発者プレビューを通じて、法人のお客様やパートナーが利用できるようになりました。App Builder の一般リリース（GA）は 2021年12月に予定されています。アドビの[体験版プログラム](https://adobe.ly/appbuilder-trial)を通じて開発者が App Builder を試すことを歓迎します。
+2020 年夏以降、App Builder は、エンタープライズのお客様およびパートナーに対して、アドビの開発者プレビューを通じて使用できるようになりました。 App Builder の一般リリース（GA）は 2021年12月に予定されています。アドビの[体験版プログラム](https://adobe.ly/appbuilder-trial)を通じて開発者が App Builder を試すことを歓迎します。
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ App Builder（旧称 Project Firefly）は、2020年夏以降、開発者プレ�
 
 次の図は、App Builder 上で構築された標準アプリケーションでこれらの機能がどのように利用されているかを示しています。
 
-![アーキテクチャ](/help/implementing/developing/extending/assets/firefly-architecture.jpg)
+![アーキテクチャ](/help/implementing/developing/extending/assets/appbuilder-architecture.jpg)
 
 App Builder のアーキテクチャについて詳しくは、[アーキテクチャの概要](https://www.adobe.io/app-builder/docs/guides/)を参照してください。
 
@@ -62,7 +62,3 @@ App Builder には、開発者向けのビデオとドキュメントが用意�
 開発を開始する準備はできていますか？迅速に作業を進めるのに役立つサンプルアプリケーションが多数用意されています。
 
 * [Adobe Developer Web サイトの App Builder コードラボ](https://www.adobe.io/app-builder/docs/resources/)
-
-## サポート {#support}
-
-開発者サポートに類するリクエストについては、開発者が [Experience League フォーラム](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/project-firefly?profile.language=ja)を使用することをお勧めします。
