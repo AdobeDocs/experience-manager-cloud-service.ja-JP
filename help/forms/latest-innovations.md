@@ -2,9 +2,9 @@
 title: Adobe Experience Manager Forms as a Cloud Serviceの最新のイノベーションをご覧ください。
 description: «の最新の機能を理解する [!DNL AEM Forms] エンタープライズクラスのフォームとビジネスプロセスの作成、管理、公開をas a Cloud Serviceできます。」
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: 6949e35b65f4c21b4304fb99bfe71bd4b952ef20
+source-git-commit: 5c4248d520cb0f956206d76692041ef980099002
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1123'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ The organization can use [!DNL AEM Forms] as a Cloud Service to create digital f
 An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start using all these features without waiting to buy and set up a local infrastructure. The service also frees the organizations from the cycle of upgrades as it is always up to date and always offers the latest feature.  -->
 
 
-# 最新のイノベーション {#latest-innovations}
+# 上位のAdobe Experience Manager Formsイノベーション {#latest-innovations}
 
-AEM Formsas a Cloud Serviceの最新のイノベーションの一部を次に示します。
+Adobe Experience Manager Formsの主なイノベーションの一部を次に示します。
 
 | イノベーション | 詳細 |
 |---|---|
@@ -32,4 +32,4 @@ AEM Formsas a Cloud Serviceの最新のイノベーションの一部を次に�
 | Microsoft Storage Connectors | AEM Forms Microsoft Storage Connectors for <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-sharedrive">OneDrive</a>, <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?#submit-to-sharedrive"> SharePoint </a> および <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?#submit-to-azure-blob-storage"> Azure Blob ストレージ </a> は、Adobe Experience Manager(AEM)FormsをMicrosoft OneDrive およびSharePointと統合するためのコネクタです。 このコネクタを使用すると、アダプティブFormsから直接 OneDrive とSharePointにデータファイルと添付ファイルをアップロードできます。 <br/> ![](/help/forms/assets/onedrive-and-sharepoint.jpg) <br/>OneDrive とSharePointは、CRM システム、会計ソフトウェア、プロジェクト管理ツールなど、他のビジネスアプリケーションと統合できます。 これにより、ビジネス・プロセスを合理化し、手動でのデータ入力を削減し、全体的な効率を向上させることができます。 |
 | ウィザード UI | アダプティブFormsウィザード UI は、アダプティブフォームをすばやく簡単に作成するための強力なツールです。 使いやすいインターフェイスとカスタマイズオプションにより、技術的な専門知識のレベルに関係なく、すべてのユーザーがアクセスできます。 <br/> <br/> ウィザード UI を使用すると、フォーム作成プロセスを段階的に進め、アダプティブフォームの作成プロセスを簡単に実行できます。 ウィザード — UI は複数のタブに分かれており、各タブには、アダプティブフォームを設定するためのオプションが明確に表示されます。 フォーム作成者は、テンプレート、送信アクション、フォームコンポーネントのデータソースなどのオプションを選択するために、タブ内を線形方式で移動します。 <br/> ![](/help/release-notes/assets/wizard.png) <br/>このウィザードインターフェイスは、アダプティブフォームの基本的なオプションをすべて検出するプロセスを合理化し、この技術に精通していないユーザーでも、フォームの作成を容易にします。 |
 | Fast Track Analytics | フォーム分析は、ユーザーのエンゲージメントを測定し、コンバージョン率を最適化し、フォームのパフォーマンスを監視し、ユーザーエクスペリエンスを向上させることで、フォームのパフォーマンスに関する貴重なインサイトを提供します。  ユーザーの行動とフィードバックを追跡することで、Analytics は、不満や混乱を引き起こしているフォームの領域を識別し、フォームのデザインと機能の改善についてガイドします。 <br/> <br/> Fast Track Analytics を使用すると、1 回のボタンの反転でForms Analytics を有効にできます。 高速追跡分析を使用すると、AEM Formsas a Cloud ServiceをExperience PlatformタグとAdobe Analyticsに接続して、公開済みフォームのパフォーマンス指標を取得し、追跡できます。 <br/> <br/> ![](/help/forms/assets/forms-analytics-report.png) <br/><br/> Forms as a Cloud ServiceがAdobe Analyticsレポート OOTB を提供します。 これにより、フォームのパフォーマンスを簡単に理解できます。 フォームレベルの指標を使用すると、レンディション、訪問者、送信、平均記入時間など、複数の主要業績評価指標 (KPI) に対するフォームのパフォーマンスに関するインサイトを得ることができます。 <br/> <br/> また、ユーザーがパネル内のフィールドの文脈依存ヘルプにアクセスした平均回数に関する詳細も提供され、ユーザーが情報を提供する前に情報を停止し、シークする原因となるフィールドを確認するのに役立ちます。 このようなフィールドをさらに簡素化したり、コンテンツを活用してコンバージョンを改善したりできます。 |
-| 次世代の合成性 | 次世代のコンポーザビリティは、誰にでもフォームの作成を可能にし、企業全体の従業員がMicrosoft Excel やGoogleシートなど、選択したツールでフォームを作成できるようにします。 これにより、コンテンツの速度が向上し、新しい UI ワークフローに関するトレーニングをおこなう必要がなくなります。 また、次世代のコンポーザビリティは、Office365 とGoogle Suite 製品の組み込み機能を活用し、直接のコラボレーションとバージョン管理を可能にします。 <br/> <br/> 次世代のコンポーザビリティを使用すると、開発時間を最小限に抑え、運用開始までのパスを効率化する簡単なツールを使用して、フォームをすばやく簡単にデプロイできます。 さらに、比類のない速度で読み込まれるフォームを使用して、優れたエクスペリエンスを提供できます。 ライブページでは、Google Lighthouse のスコアは 100 近くにする必要があります。 <br/> <br/> ![](/help/forms/assets/web-vitals.jpeg) <br/> <br/> 総合的に、次世代のコンポーザビリティは、優れた Web パフォーマンスとコラボレーション機能を提供しながら、コンテンツの作成と公開をシンプル化します。 チームメンバーが使い慣れたオーサリングツールを使用し、コンテンツ管理システムに関する広範なトレーニングを不要にすることで、企業はコンテンツの速度を向上させ、運用を合理化できます。 次世代のコンポーザビリティにより、お客様は迅速で適切に設計された Web エクスペリエンスを楽しむことができ、企業は効率と生産性の向上からメリットを得ることができます。 |
+| 次世代の合成性 | 次世代の合成機能を使用すると、すべてのユーザーがフォームを作成でき、企業全体の従業員がMicrosoft Excel やGoogleシートなど、選択したツールでフォームを作成できます。 これにより、コンテンツの速度が向上し、新しい UI ワークフローに関するトレーニングをおこなう必要がなくなります。 さらに、次世代のコンポーザビリティは、Office365 とGoogle Suite 製品の組み込み機能を活用して、直接のコラボレーションとバージョン管理を可能にします。 <br/> <br/> 次世代のコンポーザビリティを使用すると、開発時間を最小限に抑え、運用開始までのパスを効率化する簡単なツールを使用して、フォームをすばやく簡単にデプロイできます。 さらに、比類のない速度で読み込まれるフォームを使用して、優れたエクスペリエンスを提供できます。 ライブページでは、Google Lighthouse のスコアは 100 近くにする必要があります。 <br/> ![](/help/forms/assets/web-vitals.jpeg) |
