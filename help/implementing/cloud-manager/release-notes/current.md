@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.2.0 のリリースノート
-description: AEM as a Cloud Service の Cloud Manager 2023.2.0 のリリースノートです。
+title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.3.0 のリリースノート
+description: AEM as a Cloud Service の Cloud Manager 2023.3.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 9fe49df47c985f94e45d60673f6742788c8014d5
+source-git-commit: bfd2cbd574cac8de226903f923e774875a54ca4b
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 33%
+source-wordcount: '131'
+ht-degree: 64%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.2.0 のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.3.0 のリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Serviceの Cloud Manager リリース 2023.2.0 のリリースノートについて説明します。
+このページは、AEM as a Cloud Service の Cloud Manager リリース 2023.3.0 のリリースノートです。
 
 >[!NOTE]
 >
@@ -21,16 +21,9 @@ ht-degree: 33%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Serviceの Cloud Manager リリース 2023.2.0 のリリース日は 2023 年 2 月 16 日です。 次回のリリースは 2023年3月16日（PT）の予定です。
+AEM as a Cloud Serviceの Cloud Manager リリース 2023.3.0 のリリース日は 2023 年 3 月 16 日です。 次回のリリースは 2023年4月13日（PT）に予定されています。
 
-## 新機能 {#what-is-new}
+## バグの修正 {#bug-fixes}
 
-* ユーザーがダウンロードできる [カスタム UI テスト](/help/implementing/cloud-manager/ui-testing.md) UI からの結果。
-* [迅速な開発環境](/help/implementing/developing/introduction/rapid-development-environments.md) (RDE) は、迅速で一貫性のある、拡張可能な方法として設計された新しいタイプのクラウド環境で、ローカルで動作するコードを検証し、クラウドでの期待どおりに機能させます。
-   * RDE を使用すると、開発者は問題を迅速にトラブルシューティングし、AEM as a Cloud Serviceに新しい機能をデプロイできます。
-   * コマンドラインツールを使用すると、開発者はコンテンツパッケージ、バンドル、コンテンツファイル、OSGi 設定、Dispatcher 設定を RDE にすばやく同期できます。
-
-## API の変更点 {#api-changes}
-
-* をサポートするために API が変更されました [RDEs.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Rapid-Development-Environments)
-* API で [実行アーティファクト。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Execution-Artifacts)
+* go-live ウィジェットが以前に設定した日付を正しく設定しない問題が修正されました。
+* 上のコマースタイル **学ぶ** Cloud Manager の「 」タブで、ユーザーを正しいページに移動するようになりました。
