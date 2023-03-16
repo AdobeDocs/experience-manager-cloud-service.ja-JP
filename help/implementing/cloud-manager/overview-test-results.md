@@ -2,10 +2,10 @@
 title: Cloud Manager テストの概要
 description: カスタムコードの品質を確保するために Cloud Manager が自動的に実行する 3 種類のテストの概要を説明します。
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
-source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
+source-git-commit: 94f818b7622e0f878d15ba30e2f07a169bd114c3
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 9%
+source-wordcount: '164'
+ht-degree: 8%
 
 ---
 
@@ -22,7 +22,7 @@ Cloud Manager では、テストパイプラインに対して 3 つのカテゴ
 
 1. [機能テスト](/help/implementing/cloud-manager/functional-testing.md)
 
-   * 機能テストは、実稼動パイプラインのステージテスト段階の一部です。
+   * 機能テストは、 [実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) また、必要に応じてテスト段階の一部 [実稼動以外のパイプライン。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
 
 1. [エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md)
 
