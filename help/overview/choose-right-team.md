@@ -77,4 +77,4 @@ Adobe Experience Manager Assets の導入を成功させるために必要な人
 
 >[!TIP]
 >
-> [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) で Adobe Experience Cloud の詳細を理解し、その他の各種リソースを活用して、[アドビデジタルラーニング](https://learning.adobe.com/certification.html)で認定を受けることができます。
+> [Experience League](https://experienceleague.adobe.com/?lang=ja#recommended/solutions/experience-manager) で Adobe Experience Cloud の詳細を理解し、その他の各種リソースを活用して、[アドビデジタルラーニング](https://learning.adobe.com/certification.html)で認定を受けることができます。

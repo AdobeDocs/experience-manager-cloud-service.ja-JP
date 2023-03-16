@@ -59,7 +59,7 @@ UI を使用して、または Cloud Manager 経由で API を使用してログ
 >id="aemcloud_golive_support"
 >title="ヘルプ＆サポート"
 >abstract="詳しい説明が必要な場合や、懸念事項の対応については、AEM サポートチームまでお問い合わせください。"
->additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud のサポート"
+>additional-url="https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud のサポート"
 
 Cloud Service へのアクセスに関するご質問については、アドビ担当者または [Experience Cloud のサポート](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)にお問い合わせください。
 

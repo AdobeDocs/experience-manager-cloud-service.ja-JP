@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service のアーキテクチャの概要
 description: Adobe Experience Manager as a Cloud Service のアーキテクチャの概要。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 01087aa2ec621d6bebd4d62edbc320df8122f71d
+source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
 workflow-type: tm+mt
 source-wordcount: '1797'
 ht-degree: 98%

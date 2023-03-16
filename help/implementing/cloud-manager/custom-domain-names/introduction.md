@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 01ff58fee9d309de75afcb556726e1cf32b9f70a
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -47,11 +47,11 @@ AEMaaCS でカスタムドメイン名を使用する場合は、多くの制限
 
 >[!NOTE]
 >
->カスタムドメインは Cloud Manager でサポートされています **のみ** AEM Managed CDN を使用している場合。 独自の CDN を持ってきて [AEMが管理する CDN を指すように設定する](/help/implementing/dispatcher/cdn.md) Cloud Manager ではなく、その特定の CDN を使用してドメインを管理する必要があります。
+>AEM の管理による CDN を使用している場合、カスタムドメインは Cloud Manager で&#x200B;**のみ**&#x200B;サポートされます。 独自の CDN を導入し、[AEM の管理による CDN を参照させる](/help/implementing/dispatcher/cdn.md)場合、Cloud Manager ではなく、その特定の CDN を使用してドメインを管理する必要があります。
 
 ## ワークフロー {#workflow}
 
-カスタムドメイン名を追加するには、DNS サービスと Cloud Manager 間のやり取りが必要です。このため、カスタムドメイン名のインストール、設定、検証には、いくつかの手順が必要です。次の表に、一般的なエラーが発生した場合の対処方法など、必要な手順の概要を示します。
+カスタムドメイン名を追加するには、DNS サービスと Cloud Manager 間のやり取りが必要です。このため、カスタムドメイン名のインストール、設定および検証には、いくつかの手順が必要です。次の表に、一般的なエラーが発生した場合の対処方法など、必要な手順の概要を示します。
 
 | 手順 | 説明 | 担当 | 詳細情報 |
 |--- |--- |--- |---|
@@ -67,4 +67,4 @@ AEMaaCS でカスタムドメイン名を使用する場合は、多くの制限
 
 >[!TIP]
 >
->通常、AEM as a Cloud Service を使用したカスタムドメイン名の設定は簡単な手順です。 ただし、ドメインのデリゲーションに関する問題が発生する場合があり、解決に 1 ～ 2 営業日かかる場合があります。 このため、Go Live 日の前にドメインを適切にインストールすることを強くお勧めします。 ドキュメントを参照 [ドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) を参照してください。
+>通常、AEM as a Cloud Service でのカスタムドメイン名の設定手順は簡単です。 ただし、ドメインのデリゲーションに関する問題が発生することがあり、その場合は解決に 1～2 営業日かかる可能性があります。そのため、運用開始日の前にドメインを適切にインストールしておくことを強くお勧めします。 詳しくは、[ドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)のドキュメントを参照してください。

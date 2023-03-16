@@ -17,7 +17,7 @@ ht-degree: 100%
 >title="SSL 証明書の管理"
 >abstract="Cloud Manager が、ユーザーに対してサイトを保護するために、SSL 証明書をインストールおよび管理するセルフサービスツールを提供する方法について説明します。Cloud Manager は、プラットフォーム TLS サービスを使用して、SSL 証明書と、サードパーティの証明機関から取得され、顧客が所有する秘密鍵を管理します。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=ja" text="SSL 証明書の表示、更新、置換"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="SSL 証明書のステータスの確認"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=ja" text="SSL 証明書のステータスの確認"
 
 Cloud Manager には、SSL 証明書をインストールおよび管理するセルフサービスツールが用意されており、これを使用してサイトをユーザーに対して保護できます。Cloud Manager は、プラットフォーム TLS サービスを使用して、SSL 証明書と、サードパーティの証明機関（Let’s Encrypt など）から取得され、顧客が所有する秘密鍵を管理します。
 
@@ -56,7 +56,7 @@ AEM as a Cloud Service は、セキュリティで保護された `https` サイ
 * DV（ドメイン検証）ポリシーは受け付けられません。
 * 自己署名証明書は受け付けられません。
 
-OV 証明書と EV 証明書は、CA で検証された追加の情報をユーザーに提供します。ユーザーは、この情報を使用して、web サイトの所有者、電子メールの送信者、実行可能なコードや PDF ドキュメントのデジタル署名者の信頼性を判断できます。DV 証明書では、このような所有権の検証は許可されません。
+OV 証明書と EV 証明書は、CA で検証された追加の情報をユーザーに提供します。ユーザーは、この情報を使用して、web サイトの所有者、メールの送信者、実行可能なコードや PDF ドキュメントのデジタル署名者の信頼性を判断できます。DV 証明書では、このような所有権の検証は許可されません。
 
 ## 制限事項 {#limitations}
 

@@ -4,7 +4,7 @@ description: コンテンツ フラグメントと GraphQL API をヘッドレ�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: a33ca1698b30a075d80929b7c59961beecc3a9e0
+source-git-commit: 30fca14949e379fb427252f43d9f31d062e7e445
 workflow-type: tm+mt
 source-wordcount: '725'
 ht-degree: 100%

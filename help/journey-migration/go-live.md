@@ -2,8 +2,8 @@
 title: 運用開始
 description: コードとコンテンツがクラウドに対応した後に移行を実行する方法について
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 6e5743a1b31cf4992e6477050e434a651153fad1
-workflow-type: ht
+source-git-commit: 7f43e09c411b0402701b5c65639ca988702ab75e
+workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 100%
 

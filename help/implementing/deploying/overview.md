@@ -3,7 +3,7 @@ title: AEM as a Cloud Service へのデプロイ
 description: AEM as a Cloud Service へのデプロイ
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 0481267958fe8ac4b28b2742924d2bc2c337eebc
+source-git-commit: 0d586bf7e9ad6653f9a45c2fe9f0f8a156de5133
 workflow-type: tm+mt
 source-wordcount: '3497'
 ht-degree: 92%

@@ -6,7 +6,7 @@ exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 source-git-commit: 6ea869b3067d168c661ea925e112857c4bbd70e9
 workflow-type: tm+mt
 source-wordcount: '1010'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -56,11 +56,11 @@ Dispatcher ツールは、プロジェクトの Dispatcher 設定の検証とデ
 
 従来の設定モデルからより柔軟性の高い設定モデル（AEM アーキタイプ 28 以降に付属）に移行する方法について詳しくは、[このドキュメント](/help/implementing/dispatcher/validation-debug.md#migrating)を参照してください。
 
-## コンテンツの配置 {#content-disposition}
+## Content-Disposition {#content-disposition}
 
-パブリッシュ層では、BLOB を提供する際のデフォルトは添付ファイルとして使用されます。 これは、標準を使用して上書きできます [コンテンツ配置ヘッダー](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) dispatcher 内で使用する必要があります。
+パブリッシュ層では、BLOB のデフォルトの配信方法は添付ファイルです。 これは、Dispatcher で標準の [Content-Disposition ヘッダー](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/Headers/Content-Disposition)を使用してオーバーライドすることができます。
 
-設定の例を次に示します。
+どのような設定になるかを次の例で示します。
 
 ```
 <LocationMatch "^\/content\/dam.*\.(pdf).*">
@@ -103,9 +103,9 @@ Dispatcher ツールは、プロジェクトの Dispatcher 設定の検証とデ
 | `mod_include (no directives supported)` | [https://httpd.apache.org/docs/2.4/mod/mod_include.html](https://httpd.apache.org/docs/2.4/mod/mod_include.html) |
 
 
-お客様が任意のモジュールを追加することはできませんが、今後、上述の表にある以外のモジュールが追加で組み込まれる可能性があります。SDK でバリデーターの Dispatcher コマンドを実行すると、特定の Dispatcher バージョンで使用できるディレクティブのリストを確認できま許可リストす。
+お客様が任意のモジュールを追加することはできませんが、今後、上記の表にある以外のモジュールが追加で組み込まれる可能性があります。お客様は、SDK でバリデーターの allowlist コマンドを実行することにより、特定の Dispatcher バージョンで使用可能なディレクティブのリストを見つけることができます。
 
-Apache の設定ファイルで許可されているディレクティブは、バリデーターの許可リストコマンドを実行すると表示できます。
+Apache の設定ファイルで許可されているディレクティブは、バリデーターの allowlist コマンドを実行すると表示できます。
 
 ```
 $ validator allowlist

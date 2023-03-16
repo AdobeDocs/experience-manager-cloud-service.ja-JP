@@ -5,7 +5,7 @@ exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
 source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 92%
 |--- |--- |
 | AEM のバージョン | コンテンツ転送ツールは、AEM 6.3 以降のバージョンでのみ実行できます。 |
 | セグメントストアのサイズ | 現在、5,500 万個未満の JCR ノードと、*オーサー*&#x200B;上で最大 250 GB（オンライン圧縮サイズ）、パブリッシュ上で最大&#x200B;*パブリッシュ*&#x200B;上で最大 50 GB の既存のリポジトリーがサポートされています。これらの制限を超えるセグメントストアのサイズに関するオプションについては、Adobe カスタマーケアでサポートチケットを作成してご相談ください。 |
-| コンテンツリポジトリーの合計サイズ&#x200B;<br>*（セグメントストア+データストア）* | コンテンツ転送ツールは、ファイルデータストアタイプのデータストアに対して最大 20 TB のコンテンツを転送できるように設計されています。20 TB を超えるものは現在はサポートされていません。20 TB を超えるコンテンツのオプションについては、アドビのカスタマーサポートでサポートチケットを作成してご相談ください。<br>大規模なリポジトリーのコンテンツ転送プロセスを大幅に高速化するには、オプションで [事前コピー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step) 手順を使用できます。これは、ファイルデータストア、Amazon S3、Azure データストアなどのタイプのデータストアに適用できます。Amazon S3 および Azure データストアでは、20 TB を超えるリポジトリーサイズがサポートされます。 |
+| コンテンツリポジトリーの合計サイズ&#x200B;<br>*（セグメントストア+データストア）* | コンテンツ転送ツールは、ファイルデータストアタイプのデータストアに対して最大 20 TB のコンテンツを転送できるように設計されています。20 TB を超えるものは現在はサポートされていません。20 TB を超えるコンテンツのオプションについては、アドビのカスタマーサポートでサポートチケットを作成してご相談ください。<br>大規模なリポジトリーのコンテンツ転送プロセスを大幅に高速化するには、オプションで [事前コピー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja#setting-up-pre-copy-step) 手順を使用できます。これは、ファイルデータストア、Amazon S3、Azure データストアなどのタイプのデータストアに適用できます。Amazon S3 および Azure データストアでは、20 TB を超えるリポジトリーサイズがサポートされます。 |
 | Lucene インデックスの合計サイズ | 現在、`/oak:index/lucene` と `/oak:index/damAssetLucene` を除外した最大 25GB の Lucene インデックスの合計サイズがサポートされています。この制限を超えるインデックスサイズのオプションについては、Adobe カスタマーケアでサポートチケットを作成してご相談ください。 |
 | ノード名の長さ | ノードの親パスが 350 バイト以上の場合、ノード名の長さは 150 バイト以下にする必要があります。ノード名を AEM as a Cloud Service のドキュメントノードストアでサポートするには、150 バイト以下に短縮する必要があります。長いノード名が修正されていない場合、取り込みは失敗します。 |
 | 不変パスのコンテンツ | コンテンツ転送ツールを使用して不変パスのコンテンツを移行することはできません。コンテンツを `/etc` から転送するには、特定の `/etc` パスのみを選択できますが、これは [AEM Forms から AEM Forms as Cloud Service をへの移行をサポート](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html#paths-of-various-aem-forms-specific-assets)するためのものです。その他の使用例については、[一般的なリポジトリーの再構築](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html#restructuring)を参照して、リポジトリー再構築の詳細を確認してください。 |
