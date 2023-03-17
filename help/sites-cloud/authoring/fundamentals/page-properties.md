@@ -2,10 +2,10 @@
 title: ページプロパティの編集
 description: ページに必要なプロパティを定義します
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 628a95d7b7d0e84bfc8edecaaf127dd83ce1e578
+source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
 workflow-type: tm+mt
-source-wordcount: '2428'
-ht-degree: 83%
+source-wordcount: '2387'
+ht-degree: 81%
 
 ---
 
@@ -168,17 +168,6 @@ ht-degree: 83%
    * **画像を選択** - サムネールとして使用する既存のアセットを選択します
    * **元に戻す** - このオプションは、サムネールを変更した後で使用できるようになります。変更を維持しない場合は、保存前にその変更を元に戻すことができます。
 
-### ソーシャルメディア {#social-media}
-
-* **ソーシャルメディア共有**
-
-   ページで使用可能な共有オプションを定義します。使用可能なオプションを[コアコンポーネントの共有](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html?lang=ja)に公開します。
-
-   * **Facebook に対してユーザー共有を有効にする**
-   * **Pinterest に対してユーザー共有を有効にする**
-   * **優先 XF バリエーション**
-      * ページのメタデータの生成に使用されるエクスペリエンスフラグメントのバリエーションを定義します
-
 ### Cloud Services {#cloud-services}
 
 * **クラウドサービスの設定** - Cloud Services のプロパティを定義します
@@ -208,7 +197,7 @@ ht-degree: 83%
 
 ### ブループリント {#blueprint}
 
-このタブは、ブループリントとして機能するページの場合にのみ表示されます。ブループリントはライブコピーの基盤となるもので、[マルチサイト管理](/help/sites-cloud/administering/msm/overview.md)の要素です。
+このタブは、ブループリントとして機能するページの場合にのみ表示されます。ブループリントはライブコピーの基礎となり、 [マルチサイト管理。](/help/sites-cloud/administering/msm/overview.md)
 
 * **現在のライブコピー** - このブループリントページに基づくページ（このブループリントページのライブコピーであるページ）を一覧表示します
 
@@ -216,7 +205,7 @@ ht-degree: 83%
 
 ### ライブコピー {#live-copy}
 
-このタブは、ライブコピーとして設定されたページに対してのみ表示されます。
+このタブは、ライブコピーとして設定されたページに対してのみ表示されます。 ブループリントと同様、ライブコピーは [マルチサイト管理。](/help/sites-cloud/administering/msm/overview.md).
 
 * **同期** - ローカルでの変更内容を保持して、ライブコピーをブループリントと同期します
 * **リセット** - ローカルでの変更内容を削除して、ライブコピーをブループリントの状態にリセットします
