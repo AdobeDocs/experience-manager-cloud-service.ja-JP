@@ -4,10 +4,10 @@ description: サンプル React アプリを使用して、AEM as a Cloud Servic
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 8ce4868ab62316514a34af84696b4d9b9c2821cf
+source-git-commit: f3f7102496e846705718a65d69f59e110fbecae9
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -93,7 +93,7 @@ AEM ヘッドレス CMS を使用すると、アプリ内の画像やアセッ�
 
 ## 新しいコンテンツフラグメントへの参照をアプリに追加する {#create-moment}
 
-バイカーの画像を更新したので、新しいコンテンツフラグメントを作成して参照することで、アプリに新しいコンテンツを追加する方法を説明します。アプリの 2 番目のパネルに、「ショッパブルモーメント」コンテンツフラグメントで管理される製品コールアウトを追加します。
+バイカーの画像を更新したので、新しいコンテンツフラグメントを作成して参照し、アプリに新しいコンテンツを追加する方法を順を追って説明します。 アプリの 2 番目のパネルに、「ショッパブルモーメント」コンテンツフラグメントで管理される製品コールアウトを追加します。
 
 ![ショッパブルモーメントの例](assets/do-not-localize/example-shoppable-moment.png)
 
