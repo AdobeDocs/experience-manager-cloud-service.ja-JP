@@ -49,8 +49,7 @@ ht-degree: 99%
 ベストプラクティスアナライザーは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) を使用して、このパッケージを AEM（Adobe Experience Manager）ソースインスタンスにインストールできます。
 
 >[!NOTE]
->
-[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) ポータルからベストプラクティスアナライザーをダウンロードします。
+>[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) ポータルからベストプラクティスアナライザーをダウンロードします。
 
 ## ベストプラクティスアナライザーレポートの表示 {#viewing-report}
 
@@ -105,6 +104,7 @@ ht-degree: 99%
 
    >[!NOTE]
    > 
+
 左レールアイコンは、BPA が ACS Commons の使用を検出した場合にのみ表示されます。
 
 1. このボックスの選択を解除すると、ACS Commons に関連するすべての結果が除外されます。次の画像に示すように、**フィルター適用済みの結果数**&#x200B;がレポートに表示されます。このフィルターは、レポートがコンマ区切り値（CSV）形式で書き出される場合にも適用されます。
@@ -113,6 +113,7 @@ ht-degree: 99%
 
    >[!NOTE]
    > 
+
 ACS Commons の結果は無視しないでください。AEM as a Cloud Service との互換性を確認するには、[ドキュメント](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)を参照してください。
 
 
