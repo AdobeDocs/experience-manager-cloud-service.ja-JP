@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Service のメンテナンスタスク
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: f1d1009db31585ff82c02080a6ab7ea7ca5bf66b
+source-git-commit: 8209faed876f5ab37a0332d72327aad76228063b
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 100%
+source-wordcount: '1075'
+ht-degree: 88%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 100%
   <tr>
     <td>バージョンのパージ</td>
     <td>アドビ</td>
-    <td>既存の環境（2023年3月1日（PT）より前に作成された環境）の場合、パージは無効になり、お客様が明示的に有効にしない限り、今後有効にはなりません。その時点で、カスタム値を使用して設定することもできます。<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->新しい環境（2023年3月1日（PT）以降に作成された環境）では、デフォルトで以下の値でパージが有効になり、お客様はカスタム値を使用して設定できます。
+    <td>既存の環境（2023 年 6 月 1 日より前に作成された環境）の場合、パージは無効になり、お客様が明示的に有効にしない限り、将来は有効になりません。その時点で、カスタム値を使用して設定することもできます。<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->新しい環境（2023 年 6 月 1 日以降に作成された環境）では、デフォルトで以下の値でパージが有効になり、お客様はカスタム値でを設定できます。
      <ol>
        <li>31 日以上前のバージョンは削除されます</li>
        <li>過去 30 日間の最新の 5 つのバージョンが保持されます</li>
@@ -56,7 +56,7 @@ ht-degree: 100%
   <tr>
     <td>監査ログの削除</td>
     <td>アドビ</td>
-    <td>既存の環境（2023年3月1日（PT）より前に作成された環境）の場合、パージは無効になり、お客様が明示的に有効にしない限り、今後有効にはなりません。その時点で、カスタム値を使用して設定することもできます。<br><br> <!-- See above for the two line breaks -->新しい環境（2023年3月1日（PT）以降に作成された環境）では、次の動作に従って、リポジトリの <code>/content</code> ノードでデフォルトでパージが有効になります。
+    <td>既存の環境（2023 年 6 月 1 日より前に作成された環境）の場合、パージは無効になり、お客様が明示的に有効にしない限り、将来は有効になりません。その時点で、カスタム値を使用して設定することもできます。<br><br> <!-- See above for the two line breaks -->新しい環境（2023 年 6 月 1 日に作成された環境）では、デフォルトで、 <code>/content</code> 次の動作に従ったリポジトリのノード：
      <ol>
        <li>レプリケーション監査の場合、4 日以上前の監査ログは削除されます</li>
        <li>DAM（アセット）監査の場合、31 日以上前の監査ログは削除されます</li>
@@ -92,7 +92,7 @@ ht-degree: 100%
     <td>顧客</td>
     <td>
     <p>Git で行う必要があります。<code>/libs</code> フォルダーまたは <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> フォルダーにプロパティを作成することで、<code>granite_daily</code> 内にある標準のメンテナンスウィンドウ設定ノードを上書きします。詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。</p>
-    <p>上記のノードの下に別のノードを追加し（<code>granite_ProjectPurgeTask</code> という名前を付けて）、適切なプロパティを追加して、メンテナンスタスクを有効にします。OSGi プロパティを設定します。</p>
+    <p>上記のノードの下に別のノードを追加し（<code>granite_ProjectPurgeTask</code> という名前を付けて）、適切なプロパティを追加して、メンテナンスタスクを有効にします。「設定プロジェクトのパージ設定」の OSGi プロパティのAdobeを参照してください。</p>
   </td>
   </tr>
   </tbody>
