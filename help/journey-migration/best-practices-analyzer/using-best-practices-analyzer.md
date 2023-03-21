@@ -2,7 +2,7 @@
 title: ベストプラクティスアナライザーの使用
 description: ベストプラクティスアナライザーの使用
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: e11cb3215dc005bfd38959f3ceaaad25becad65c
 workflow-type: tm+mt
 source-wordcount: '2490'
 ht-degree: 99%
@@ -49,7 +49,8 @@ ht-degree: 99%
 ベストプラクティスアナライザーは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) を使用して、このパッケージを AEM（Adobe Experience Manager）ソースインスタンスにインストールできます。
 
 >[!NOTE]
->[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) ポータルからベストプラクティスアナライザーをダウンロードします。
+>
+[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) ポータルからベストプラクティスアナライザーをダウンロードします。
 
 ## ベストプラクティスアナライザーレポートの表示 {#viewing-report}
 
@@ -68,7 +69,6 @@ ht-degree: 99%
 1. BPA がレポートを生成している間は、ツールの進行状況を画面で確認できます。分析された項目の数と、見つかった結果の数が表示されます。
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
-
 
 1. BPA レポートが生成されると、概要と結果の数が、結果のタイプと重要度レベル別に整理された表形式で表示されます。特定の結果の詳細を取得するには、表で結果のタイプに対応する番号をクリックします。
 
@@ -92,8 +92,6 @@ ht-degree: 99%
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
-
-
 #### ベストプラクティスアナライザーレポートでのフィルターの使用 {#bpa-filters}
 
 [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) に関連する結果を除外するには、次の手順に従います。
@@ -103,15 +101,16 @@ ht-degree: 99%
    ![画像](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
-   >左レールアイコンは、BPA が ACS Commons の使用を検出した場合にのみ表示されます。
+   > 
+左レールアイコンは、BPA が ACS Commons の使用を検出した場合にのみ表示されます。
 
 1. このボックスの選択を解除すると、ACS Commons に関連するすべての結果が除外されます。次の画像に示すように、**フィルター適用済みの結果数**&#x200B;がレポートに表示されます。このフィルターは、レポートがコンマ区切り値（CSV）形式で書き出される場合にも適用されます。
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   >ACS Commons の結果は無視しないでください。AEM as a Cloud Service との互換性を確認するには、[ドキュメント](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)を参照してください。
-
+   > 
+ACS Commons の結果は無視しないでください。AEM as a Cloud Service との互換性を確認するには、[ドキュメント](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)を参照してください。
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
@@ -158,7 +157,6 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 | ADVISORY | アップグレードに関する問題の可能性があります。さらに調査を行うことをお勧めします。 |
 | MAJOR | 対処する必要があるアップグレードに関する問題の可能性があります。 |
 | CRITICAL | アップグレードの問題が発生する可能性が高く、機能やパフォーマンスの低下を防ぐために対処する必要があります。 |
-
 
 ## ベストプラクティスアナライザーの CSV レポートの説明 {#cra-csv-report}
 
