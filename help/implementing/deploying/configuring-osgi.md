@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service の OSGi の設定
 description: シークレット値と環境固有の値を使用する OSGi 設定
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 74fbf5e3e910106f48a1ec6e316e3ea7c71e65aa
-workflow-type: ht
-source-wordcount: '3311'
-ht-degree: 100%
+source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
+workflow-type: tm+mt
+source-wordcount: '3312'
+ht-degree: 99%
 
 ---
 
@@ -165,7 +165,7 @@ Adobe Experience Manager as a Cloud Service では、セキュリティ上の理
 
 シークレットの環境固有の設定を使用して、ステージングや実稼働などのあらゆる Adobe Experience Manager as a Cloud Service 環境にシークレットの値を保存します。
 
-## OSGi 設定の作成 {#creating-sogi-configurations}
+## OSGi 設定の作成 {#creating-osgi-configurations}
 
 以下に説明するように、OSGi 設定を作成する方法は 2 とおりあります。前者の方法は、通常、開発者によってよく知られている OSGi のプロパティと値を持つカスタム OSGi コンポーネントの設定に使用され、後者は AEM が提供する OSGi コンポーネントの設定に使用されます。
 
@@ -189,8 +189,8 @@ AEM SDK Quickstart Jar の AEM Web コンソールは、OSGi コンポーネン�
 >
 >AEM Web コンソールの設定 UI では、`.cfg.json` ファイルをリポジトリーに書き込みます。したがって、AEM プロジェクトで定義した OSGi 設定が、生成された設定と異なる可能性がある場合は、ローカル開発時に予期しない動作が発生するのを避けるために、この点に注意してください。
 
-1. AEM SDK Quickstart Jar の AEM Web コンソールに管理者ユーザーとしてログインします。
-1. OSGi／設定に移動します。
+1. AEM SDK Quickstart Jar のAEM Web コンソール ( ) にログインします。 `https://<host>:<port>/system/console` 管理者ユーザーとして
+1. に移動します。 **OSGi** > **設定**
 1. 設定するには、該当する OSGi コンポーネントを見つけ、タイトルをタップして編集に入ります。
    ![OSGi 設定](./assets/configuring-osgi/configuration.png)
 1. 必要に応じて Web UI を使用して OSGi 設定プロパティの値を編集します。
@@ -265,7 +265,7 @@ use $[secret:SECRET_VAR_NAME]
 >1. お客様は、プレフィックスが `INTERNAL_` または `ADOBE_` の変数を参照しないでください。
 >
 >1. `AEM_` のプレフィックスが付いた環境変数は、お客様が使用および設定するパブリック API として製品で定義されています。
->   お客様はプレフィックスが `AEM_` で始まる環境変数を使用および設定できますが、このプレフィックスを使用して独自の変数を定義しないでください。
+   >   お客様はプレフィックスが `AEM_` で始まる環境変数を使用および設定できますが、このプレフィックスを使用して独自の変数を定義しないでください。
 
 
 ### デフォルト値 {#default-values}
@@ -317,7 +317,6 @@ OSGi プロパティで、オーサーとパブリッシュで異なる値が必
 * [実行モードの解決](#runmode-resolution)のセクションで説明したように、`config.author` と `config.publish` の別個の OSGi フォルダーを使用する必要があります。
 * 独立した変数名を作成する場合、次の 2 つのオプションを使用できます。
    * 最初のオプション（推奨）：異なる値を定義するように宣言されたすべての OSGI フォルダー（`config.author` と `config.publish` など）で、同じ変数名を使用します。例：
-
       `$[env:ENV_VAR_NAME;default=<value>]`：デフォルトは、その層（オーサーまたはパブリッシュ）のデフォルト値です。環境変数を [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) またはクライアントを使用して設定する場合は、この [API リファレンスドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/)で説明されているように、「service」パラメーターを使用して層を区別します。「service」パラメーターは、変数の値を適切な OSGI 層にバインドします。「author」、「publish」、「preview」のいずれかです。
    * 2 つ目のオプション：`author_<samevariablename>` や `publish_<samevariablename>` などのプレフィックスを使用して個別の変数を宣言します。
 
@@ -344,11 +343,11 @@ config
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -358,11 +357,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -387,11 +386,11 @@ config.stage
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -401,11 +400,11 @@ config.prod
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val2",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -415,11 +414,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -444,11 +443,11 @@ config
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -458,11 +457,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -485,11 +484,11 @@ config
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -499,11 +498,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "$[env:my_var1;default=val1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>

@@ -3,10 +3,10 @@ title: AEM as a Cloud Service へのデプロイ
 description: AEM as a Cloud Service へのデプロイ
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 0d586bf7e9ad6653f9a45c2fe9f0f8a156de5133
+source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
 workflow-type: tm+mt
-source-wordcount: '3497'
-ht-degree: 92%
+source-wordcount: '3509'
+ht-degree: 91%
 
 ---
 
@@ -104,7 +104,7 @@ Cloud Manager で可変リポジトリーにデプロイされるコンテンツ
    * フォルダー（追加、変更、削除）
    * 編集可能なテンプレート（追加、変更、削除）
    * コンテキスト対応の設定（`/conf` 配下のあらゆるもの）（追加、変更、削除）
-   * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）：<!-- MISDIRECTED REQUEST, 421 ERROR, CAN'T FIND CORRECT PATH See the [Jackrabbit filevault documentation](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks. --> AEM as a Cloud Service では現在、FileVault バージョン 3.4.0 を使用しています（インストールフックの使用は管理者ユーザー、システムユーザー、管理者グループのメンバーに限定されています）。
+   * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）：インストールフックについては、 [Jackrabbit FileVault のドキュメント](https://jackrabbit.apache.org/filevault/installhooks.html) を参照してください。AEM as a Cloud Service では現在、FileVault バージョン 3.4.0 を使用しています（インストールフックの使用は管理者ユーザー、システムユーザー、管理者グループのメンバーに限定されています）。
 
 `/apps` 配下の install.author フォルダーまたは install.publish フォルダーにパッケージを埋め込むことで、可変コンテンツのインストールをオーサーまたはパブリッシュのみに制限することができます。この分離を反映した再構築は AEM 6.5 で行われました。推奨されるプロジェクト再構築の詳細については、 [AEM 6.5 のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja) を参照してください。
 
@@ -292,9 +292,9 @@ Cloud Manager パイプラインを介してコードをデプロイする通常
 一方、AEM as a Cloud Service は、使用可能な実行モードと、それらへの OSGi バンドルおよび OSGi 設定のマッピング方法について、より保守的です。
 
 * OSGi 設定の実行モードでは、環境の RDE、dev、stage、prod を参照するか、サービスのオーサー、パブリッシュを参照する必要があります。 `<service>.<environment_type>` の組み合わせはサポートされていますが、この特定の順序で使用する必要があります（例えば、`author.dev` や `publish.prod` など）。OSGi トークンは、`getRunModes` メソッドを使用するのではなく、コードから直接参照する必要があります。このメソッドは、実行時に `environment_type` を組み込まなくなりました。詳しくは、[AEM as a Cloud Service の OSGi の設定](/help/implementing/deploying/configuring-osgi.md)を参照してください。
-* OSGi バンドルの実行モードは、サービス（author、publish）のみに制限されます。実行モードごとに、OSGi バンドルを `install/author` または `install/publish` の配下のコンテンツパッケージにインストールする必要があります。
+* OSGi バンドルの実行モードは、サービス（author、publish）のみに制限されます。実行モードごとに、OSGi バンドルを `install.author` または `install.publish` の配下のコンテンツパッケージにインストールする必要があります。
 
-既存の AEM ソリューションと同様に、実行モードを使用して特定の環境やサービス用のコンテンツだけをインストールすることはできません。ステージ環境または実稼動環境にないデータや HTML を含んだ開発環境をシードする必要がある場合は、パッケージマネージャーを使用できます。
+AEM as a Cloud Serviceでは、実行モードを使用して特定の環境やサービスのコンテンツをインストールすることはできません。 開発環境で、ステージング環境または実稼動環境にないデータまたはHTMLを使用して開発環境をシードする必要がある場合は、パッケージマネージャーを使用できます。
 
 サポートされている実行モード設定は次のとおりです。
 
