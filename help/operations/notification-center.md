@@ -2,7 +2,7 @@
 title: 通知センター
 description: 通知センターを活用して、インシデントやその他の重要な情報に関する便利な対応を取る
 hidefromtoc: true
-source-git-commit: a5977c667d831c47d41cd86b68e9196fbe726899
+source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 次の手順に従って、受信通知を設定できます。
 
-1. 説明に従って、次の製品プロファイルを作成します。 [この記事では、](/help/journey-onboarding/user-groups.md)で、組織の適切なAdobeID をこれらのプロファイルに割り当てます。
+1. 説明に従って、次の製品プロファイルを作成します。 [この記事では、](/help/journey-onboarding/notification-profiles.md)で、組織の適切なAdobeID をこれらのプロファイルに割り当てます。
 1. 通知設定を決定します。 [このページ](https://experience.adobe.com/preferences/notification-section)を設定する場合は、Experience Manager配信登録が有効になっていて、 **その他** チェックボックスがオンになっている。 また、E メールセクションを **インスタント通知** したがって、インシデントが発生した直後に通知を受け取ります。
 
 >[!NOTE]
