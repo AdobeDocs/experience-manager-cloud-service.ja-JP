@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Service のメンテナンスタスク
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 8209faed876f5ab37a0332d72327aad76228063b
+source-git-commit: 020d9a73141f650ebafcdec0a5976e5060fd16c2
 workflow-type: tm+mt
 source-wordcount: '1075'
-ht-degree: 88%
+ht-degree: 81%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 88%
     <td>アドホックタスクの削除</td>
     <td>顧客</td>
     <td>
-    <p>Git で行う必要があります。<code>/libs</code> フォルダーまたは <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> フォルダーにプロパティを作成することで、<code>granite_daily</code> 内にある標準のメンテナンスウィンドウ設定ノードを上書きします。</p>
+    <p>Git で行う必要があります。の標準のメンテナンスウィンドウ設定ノードを上書きします。 <code>/libs</code> フォルダーの下にプロパティを作成して、 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> または <code>granite_monthly</code>.</p>
     <p>詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。上記のノードの下に別のノードを追加して、メンテナンスタスクを有効にします。 属性 <code>sling:resourceType</code> を <code>granite/operations/components/maintenance/task</code> に設定し、属性 <code>granite.maintenance.name</code> を <code>TaskPurge</code> に設定して、<code>granite_TaskPurgeTask</code> という名前を付けます。OSGi プロパティを設定します。プロパティのリストについては <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> を参照してください。</p>
   </td>
   </tr>
@@ -83,7 +83,7 @@ ht-degree: 88%
     <td>ワークフローのパージ</td>
     <td>顧客</td>
     <td>
-    <p>Git で行う必要があります。<code>/libs</code> フォルダーまたは <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> フォルダーにプロパティを作成することで、<code>granite_daily</code> 内にある標準のメンテナンスウィンドウ設定ノードを上書きします。詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。</p>
+    <p>Git で行う必要があります。の標準のメンテナンスウィンドウ設定ノードを上書きします。 <code>/libs</code> フォルダーの下にプロパティを作成して、 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> または <code>granite_monthly</code>. 詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。</p>
     <p> 上記のノードの下に別のノードを追加し（<code>granite_WorkflowPurgeTask</code> という名前を付けて）、適切なプロパティを追加して、メンテナンスタスクを有効にします。OSGi プロパティの設定については、<a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html#regular-purging-of-workflow-instances?lang=ja">AEM 6.5 メンテナンスタスクのドキュメント</a>を参照してください。</p>
   </td>
   </tr>
@@ -91,7 +91,7 @@ ht-degree: 88%
     <td>プロジェクトのパージ</td>
     <td>顧客</td>
     <td>
-    <p>Git で行う必要があります。<code>/libs</code> フォルダーまたは <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> フォルダーにプロパティを作成することで、<code>granite_daily</code> 内にある標準のメンテナンスウィンドウ設定ノードを上書きします。詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。</p>
+    <p>Git で行う必要があります。の標準のメンテナンスウィンドウ設定ノードを上書きします。 <code>/libs</code> フォルダーの下にプロパティを作成して、 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> または <code>granite_monthly</code>. 詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。</p>
     <p>上記のノードの下に別のノードを追加し（<code>granite_ProjectPurgeTask</code> という名前を付けて）、適切なプロパティを追加して、メンテナンスタスクを有効にします。「設定プロジェクトのパージ設定」の OSGi プロパティのAdobeを参照してください。</p>
   </td>
   </tr>
@@ -132,12 +132,12 @@ ht-degree: 88%
     <td>顧客</td>
     <td>JCR ノード定義</td>
     <td>
-    <p><strong>windowSchedule=daily</strong>（この値は変更しないでください）</p>
+    <p><strong>windowSchedule=monthly</strong> （この値は変更しないでください）</p>
     <p><strong>windowStartTime=HH:MM</strong>（24 時間形式）月次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行をいつ開始するかを定義します。</p>
     <p><strong>windowEndTime=HH:MM</strong>（24 時間形式）月次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。</p>
     <p><strong>windowScheduleWeekdays=1 から 7 までの 2 つの値の配列（例：[5,5]）</strong> 配列の最初の値はジョブがスケジュールされる開始日で、2 番目の値はジョブが停止される終了日です。開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。</p>
-    <p><strong>windowFirstLastStartDay = 0 または 1</strong> 0（月の最初の週にスケジュールを設定）、1（月の最後の週にスケジュールを設定）。値を指定しないと、毎月 windowScheduleWeekdays の規定に従って、事実上ジョブを毎日スケジュールします。</p>
-    </td> 
+    <p><strong>windowFirstLastStartDay = 0 または 1</strong> 0（月の最初の週にスケジュールを設定）、1（月の最後の週にスケジュールを設定）。値を指定しないと、windowScheduleWeekdays（毎月）の規定に従う日に、事実上ジョブをスケジュールします。</p>
+    </td>
     </tr>
     </tbody>
 </table>
