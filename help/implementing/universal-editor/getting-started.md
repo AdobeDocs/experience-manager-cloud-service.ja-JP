@@ -1,9 +1,9 @@
 ---
 title: AEMのユニバーサルエディターの概要
 description: ユニバーサルエディターへのアクセス権を取得する方法と、それを使用する最初のAEMアプリの実装を開始する方法について説明します。
-source-git-commit: acafa752c354781e41b11e46ac31a59feb8d94e7
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '773'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ import "@adobe/universal-editor-cors";
 
 ### 非 React アプリの代替 {#alternative}
 
-React アプリを実装していない場合や、サーバーサイドでのレンダリングが必要な場合、ドキュメント本文に次の情報を含める方法があります。
+React アプリを実装していない場合や、サーバーサイドでのレンダリングが必要な場合は、ドキュメント本文に次のものを含める方法もあります。
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
@@ -157,50 +157,6 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-### ユニバーサルエディター翻訳サービス {#translation}
-
-ユニバーサルエディタは、計測メタデータに基づいて翻訳を実行します。
-
-#### 基本翻訳の原則 {#principle}
-
-前の例の次の選択について考えてみましょう。
-
-```html
-<meta name="urn:auecon:aemconnection" content="aem:https://localhost:4502">
-<ul itemscope itemid="urn:aemconnection:/content/example/list" itemtype="urn:fcs:type/list">
-```
-
-エディターは置き換えを実行し、内部的に `itemid` が次のように書き換えられます。
-
-```html
-itemid="urn:aem:https://localhost:4502/content/example/list"
-```
-
-これは、「 `aemconnection` 次の内容に置き換えられる： `<meta>` タグを使用します。
-
-#### クエリセレクター {#query-selector}
-
-この置き換えにより、John Smith の次のクエリ文字列が生成されます。
-
-```html
-<ul itemscope itemid="urn:aemconnection:/content/example/list" itemtype="urn:fcs:type/list">
-  <li itemscope itemid="urn:fcsconnection:/documents/mytext" itemtype="urn:fcs:type/fragment">.  
-    <p itemprop="name" itemtype="text">John Smith</p>
-    <p itemid="urn:aemconnection/content/example/another-source" itemprop="title" itemtype="text">Photographer</p>
-    <img itemprop="avatar" src="urn:fcs:missing" itemtype="image" alt="avatar"/>
-  </li>
-```
-
-`[itemid="urn:fcs:https://example.franklin.adobe.com/345fcdd/content/example/list][itemprop="name"]`
-
-John Smith のタイルを変更する場合、セレクターは次のようになります。
-
-`[itemid="urn:aem:https://localhost:4502/content/example/another-source"][itemprop="title"]`
-
-の継承の代わりに `itemid`およびリソースの場合、ユニバーサルエディタはスコープと連携します。 スコープは、ノードレベルで定義でき、サブ構造全体で継承されます。
-
-構造内のサブ構造または定義された休暇に異なるスコープが必要な場合は、別の `itemid` を定義できます。
-
 ## ユニバーサルエディターを使用する準備が整いました {#youre-ready}
 
 アプリがユニバーサルエディターを使用するように実装されました。
@@ -213,6 +169,7 @@ John Smith のタイルを変更する場合、セレクターは次のように
 
 * [ユニバーサルエディターの概要](introduction.md)  — ユニバーサルエディターを使用して、優れたエクスペリエンスを提供し、コンテンツ速度を向上し、最新の開発者エクスペリエンスを提供するために、あらゆる実装のコンテンツのあらゆる側面を編集できる方法を説明します。
 * [ユニバーサルエディターを使用したコンテンツのオーサリング](authoring.md)  — コンテンツ作成者がユニバーサルエディターを使用してコンテンツを作成するのが、簡単で直感的な方法について説明します。
+* [ユニバーサルエディターを使用したコンテンツの公開](publishing.md)  — ユニバーサルビジュアルエディターでのコンテンツの公開方法と、アプリでの公開済みコンテンツの処理方法を説明します。
 * [ユニバーサルエディターのアーキテクチャ](architecture.md)  — ユニバーサルエディターのアーキテクチャと、そのサービスとレイヤー間でのデータのフローについて説明します。
 * [属性とタイプ](attributes-types.md)  — ユニバーサルエディターで必要なデータ属性とデータ型について説明します。
 * [ユニバーサルエディタ認証](authentication.md)  — ユニバーサルエディターの認証方法を説明します。
