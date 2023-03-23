@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Service のメンテナンスタスク
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 020d9a73141f650ebafcdec0a5976e5060fd16c2
+source-git-commit: d4d1e97df58f8bd0951f0d5b0bf46e118b163457
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 81%
+source-wordcount: '1111'
+ht-degree: 78%
 
 ---
 
@@ -114,6 +114,7 @@ ht-degree: 81%
   <p><strong>windowSchedule=daily</strong>（この値は変更しないでください）</p>
   <p><strong>windowStartTime=HH:MM</strong>（24 時間形式）日次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。</p>
   <p><strong>windowEndTime=HH:MM</strong>（24 時間形式）日次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。</p>
+  <p>この期間は、メンテナンスタスクを複数回実行することはできません。</p>
   </td> 
   </tr>
   <tr>
@@ -124,6 +125,7 @@ ht-degree: 81%
     <p><strong>windowSchedule=weekly</strong>（この値は変更しないでください）</p>
     <p><strong>windowStartTime=HH:MM</strong>（24 時間形式）週次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。</p>
     <p><strong>windowEndTime=HH:MM</strong>（24 時間形式）週次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。</p>
+    <p>この期間は、メンテナンスタスクを複数回実行することはできません。</p>
     <p><strong>windowScheduleWeekdays=1 から 7 までの 2 つの値の配列（例：[5,5]）</strong> 配列の最初の値はジョブがスケジュールされる開始日で、2 番目の値はジョブが停止される終了日です。開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。</p>
     </td>
   </tr>
@@ -135,6 +137,7 @@ ht-degree: 81%
     <p><strong>windowSchedule=monthly</strong> （この値は変更しないでください）</p>
     <p><strong>windowStartTime=HH:MM</strong>（24 時間形式）月次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行をいつ開始するかを定義します。</p>
     <p><strong>windowEndTime=HH:MM</strong>（24 時間形式）月次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。</p>
+    <p>この期間は、メンテナンスタスクを複数回実行することはできません。</p>
     <p><strong>windowScheduleWeekdays=1 から 7 までの 2 つの値の配列（例：[5,5]）</strong> 配列の最初の値はジョブがスケジュールされる開始日で、2 番目の値はジョブが停止される終了日です。開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。</p>
     <p><strong>windowFirstLastStartDay = 0 または 1</strong> 0（月の最初の週にスケジュールを設定）、1（月の最後の週にスケジュールを設定）。値を指定しないと、windowScheduleWeekdays（毎月）の規定に従う日に、事実上ジョブをスケジュールします。</p>
     </td>
