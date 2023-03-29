@@ -1,10 +1,10 @@
 ---
 title: の最新のメンテナンスリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
 description: の最新のメンテナンスリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
-source-git-commit: 7e66c9f26211bd92119c74f311f3e9b3195a8d98
+source-git-commit: c6acdd922c052d0db5bf1f05bc03329fbc44ca33
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 6%
+source-wordcount: '306'
+ht-degree: 8%
 
 ---
 
@@ -27,6 +27,11 @@ ht-degree: 6%
 #### Sites {#sites-issues}
 
 - SITES-7796 — ターゲットに書き出す際に、コンテンツ作成者がマスターコンテンツフラグメントとそれぞれのバリエーションを公開する機能
+- SITES-97 - GraphQL:ページネーションと並べ替え、ハイブリッドフィルター
+
+>[!NOTE]
+>
+> SITES-97 では、GraphQLの実装が改善され、予期しない動作を引き起こす可能性がありました。 詳しくは、 [null 値の処理に関するAEM GraphQLの変更](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html?lang=ja) を参照してください。
 
 #### Assets {#assets-issues}
 
