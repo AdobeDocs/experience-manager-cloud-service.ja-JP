@@ -8,7 +8,7 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 1d192c1b568aeec2fd40ff47e63fe9dae9a9932b
+source-git-commit: 48ec92d559f9d1ead096316e77e04f2e1e02526d
 workflow-type: tm+mt
 source-wordcount: '4009'
 ht-degree: 94%
