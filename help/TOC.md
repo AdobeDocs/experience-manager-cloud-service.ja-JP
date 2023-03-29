@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: c5395c9c844744655054bb15e1b9b2178792b8b5
+source-git-commit: 1d192c1b568aeec2fd40ff47e63fe9dae9a9932b
 workflow-type: tm+mt
-source-wordcount: '4011'
+source-wordcount: '4009'
 ht-degree: 94%
 
 ---
@@ -133,7 +133,6 @@ ht-degree: 94%
       + [Workfront for Experience Manager 拡張コネクタの最新リリースノート](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [新機能](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service の主要な変更点](/help/release-notes/aem-cloud-changes.md)
-   + [既知の問題](/help/release-notes/known-issues.md)
    + [廃止される機能および削除された機能](/help/release-notes/deprecated-removed-features.md)
    + [非推奨（廃止予定）の API](/help/release-notes/deprecated-apis.md)
    + [プレリリースチャネル](/help/release-notes/prerelease.md)

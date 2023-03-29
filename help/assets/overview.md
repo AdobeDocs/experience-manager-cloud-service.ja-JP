@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: efc0f317cf4540db49b6caf7bb9f6fd31b311583
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 100%
+source-wordcount: '457'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service] は、クラウドネ�
 
 まず、[クラウドネイティブな製品／サービスのメリット](#solution-benefits)を理解します。[Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) の主な変更点を確認します。これらの変更は Experience Manager Assets にも影響を及ぼします（[Assets の主な変更点](/help/assets/assets-cloud-changes.md)を参照）。
 
-[新しい Assets の機能の詳細](#whats-new-assets)と[既知の問題](/help/release-notes/known-issues.md)を理解します。本リリースで削除された機能を確認するには、[非推奨（廃止予定）の機能と削除された機能](/help/release-notes/deprecated-removed-features.md)のリストを参照します。また、近日中にリリースされる機能を確認するには、[今後予定されている Assets の機能](/help/release-notes/known-issues.md#upcoming-assets-capabilities)を参照します。最後に、この[用語集](/help/overview/terminology.md)を利用して Experience Manager の用語を理解します。
+[新しい Assets の機能の詳細](#whats-new-assets)と[既知の問題](/help/release-notes/maintenance/latest.md)を理解します。次のリストを参照： [非推奨（廃止予定）または削除された機能](/help/release-notes/deprecated-removed-features.md) を参照して、このリリースで削除された機能を確認してください。 最後に、この[用語集](/help/overview/terminology.md)を利用して Experience Manager の用語を理解します。
 
 ## ソリューションのメリット {#solution-benefits}
 

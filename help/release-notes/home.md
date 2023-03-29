@@ -2,9 +2,9 @@
 title: Adobe Experience Manager（AEM）as a Cloud Service のリリースノート。
 description: Adobe Experience Manager（AEM）as a Cloud Service のリリースノート。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 554912f0e08fdf699b16ab9bf0b12ee84e8a682b
+source-git-commit: 9a00889f06a5ecf277cd99d4adbc8341480caa17
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '643'
 ht-degree: 95%
 
 ---
@@ -39,10 +39,10 @@ ht-degree: 95%
 
 ## 主要なリリース情報 {#key-articles}
 
-* [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [機能リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [メンテナンスリリースノート](/help/release-notes/maintenance/latest.md)
 * [新機能](what-is-new.md)
 * [主要な変更点](aem-cloud-changes.md)
-* [既知の問題](known-issues.md)
 * [廃止される機能および削除された機能](deprecated-removed-features.md)
 
 ## Experience Manager as a Cloud Service のガイド {#aem-guides}

@@ -1,48 +1,45 @@
 ---
 title: の最新のメンテナンスリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
 description: の最新のメンテナンスリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
-source-git-commit: edb8949b532b80a55106e706a49e2ada68722a67
+source-git-commit: 7e66c9f26211bd92119c74f311f3e9b3195a8d98
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 7%
+source-wordcount: '265'
+ht-degree: 6%
 
 ---
 
 
 # メンテナンスリリースノート {#maintenance-release-notes}
 
-次の節では、as a Cloud ServiceExperience Managerの最新メンテナンスリリースに関する技術リリースノートの概要を説明します。
+以下の節では、as a Cloud ServiceExperience Managerの現在のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 11289 {#release-11289}
+## リリース11382 {#release-11382}
 
-2023 年 3 月 7 日に公開されたメンテナンスリリース11289の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース10912のアップデートです。
+2023 年 3 月 28 日に公開されたメンテナンスリリース11382の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース11289のアップデートです。
 
 このメンテナンスリリースで機能を有効にすると、すべての機能セットが提供されます。 詳しくは、 [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md) 詳細はこちら。
 
-### 既知の問題 {#known-issues}
-
-CORS を使用している場合はアップグレードしないでください。 このリリースでは、GraphQLのコンテンツ配信機能に影響を与える問題が特定されました。 GraphQLで保持されたクエリのキャッシュ方法に関するデフォルトのAEM Dispatcher 設定の変更により、そのようなクエリのGraphQLコンテンツ配信が中断される場合があります。 この問題は、次回のメンテナンスリリースで修正されます。
-
 ### 修正された問題 {#fixed-issues}
+
+- ASSETS-21023 — スマート切り抜きレンディションを修正しました。API を使用してこれらのレンディションにアクセスしようとすると、すべてのAEM環境の公開者インスタンスでヌルポインターの例外が発生する可能性がありました。
+- SKYOPS-49280 - RDE を使用して設定またはバンドルの更新を Publish にインストールする場合、Publish Dispatcher のキャッシュが無効化されていないので、結果を観察できない可能性があります
 
 #### Sites {#sites-issues}
 
-- SITES-11584注釈の付いたページでライブコピーを作成できなかった問題を修正しました。
-- SITES-11683部分的に継承が壊れた状態で MSM ライブコピーを無効化
+- SITES-7796 — ターゲットに書き出す際に、コンテンツ作成者がマスターコンテンツフラグメントとそれぞれのバリエーションを公開する機能
 
 #### Assets {#assets-issues}
 
-- ASSETS-20879修正回帰により、アセットレポートの UI が正しく機能せず、生成されたレポートで誤った結果が返されていました。
-- ASSETS-21020アセットのダウンロードが壊れた問題を修正 — アセットを移動した後、イメージプロファイルが存在しない
-- ASSETS-21023 Dynamic Mediaの画像レンディションが API を介してアクセスできない問題を修正しました。
+- ASSETS-20076 — 現在の画像の透かしのサポートに一致するビデオの透かしのサポートを追加
+- ASSETS-21428 - CSS 変更の除外の追加
 
 #### Forms {#forms-issues}
 
-- なし
+- CQ-4351502 - Sites での読み取りアクセスを許可するようにサービスユーザーマッピングを更新しています
 
 #### プラットフォーム {#platform-issues}
 
-- GRANITE-44467 — 特定のインスタンス下の既存のノードを更新する際に、Filevault が mixin タイプと子ノードを保持しなかった問題を修正しました。
+- SITES-11040 - Dispatcher でのGraphQLの永続的なクエリキャッシュの条件付き有効化
 
 ### 組み込みテクノロジ {#embedded-tech}
 

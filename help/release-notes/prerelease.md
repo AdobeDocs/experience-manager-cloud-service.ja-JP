@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service プレリリースチャネル
 description: プレリリースチャネルを使用して、AEM as a Cloud Service の今後の機能のプレビューを取得する方法について説明します。
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: 9a76a1c2b5e3b7986654b0843842b015811679a2
-workflow-type: ht
-source-wordcount: '1306'
-ht-degree: 100%
+source-git-commit: a66814c0f7f8dbdf794ff1867c7a4d7fdc2956cf
+workflow-type: tm+mt
+source-wordcount: '1311'
+ht-degree: 86%
 
 ---
 
@@ -16,22 +16,22 @@ ht-degree: 100%
 
 ## はじめに {#introduction}
 
-Adobe Experience Manager as a Cloud Service は、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja#aem-as-cloud-service)に従って、毎月のリリースサイクルで新機能を提供します。
+Adobe Experience Manager as a Cloud Serviceは、 [Experience Managerリリースロードマップ。](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja#aem-as-cloud-service)
 
-翌月に公開予定の機能を把握できるように、プレリリースチャネルを購読できます。プレリリースチャネルにアクセスするには、開発環境または任意のサンドボックス環境を設定します。AEM UI からアクセス可能な変更をプレビューしたり、新しいプレリリース API に対してコードを作成したりできます。
+次の機能リリースで公開予定の機能に慣れるには、プレリリースチャネルを購読します。プレリリースチャネルは、開発環境または任意のサンドボックス環境を設定することでアクセスできます。 AEM UI からアクセス可能な変更をプレビューしたり、新しいプレリリース API に対してコードを作成したりできます。
 
-特定月のプレリリース機能のリストは、[月次リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)に掲載されています。
+特定の機能リリースのプレリリース機能のリストは、 [リリースノート。](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
 ## AEM as a Cloud Service のリリース {#releases}
 
 AEM as a Cloud Service には 2 種類のリリースがあります。
 
-* **月次リリース** AEM as a Cloud Service に機能と特徴を追加します
-* **重要な更新** セキュリティ更新、パフォーマンス強化、バグ修正を追加し、毎日適用されます。
+* **機能リリース** アクティベーション時にAEMas a Cloud Serviceに機能を追加
+* **メンテナンスリリース** セキュリティ更新、パフォーマンス強化、バグ修正を追加し、定期的かつ頻繁に適用されます。
 
 このパターンにより、サービスが中断されることなく継続的にリリースされます。
 
-プレリリースチャネルでは、今後の機能を評価し、独自のプロジェクトで可能な実装を計画するために、今後の毎月のリリースでスケジュールされている機能をプレビューできます。これにより、次の月次リリースに向けて事前に計画できます。
+プレリリースチャネルでは、今後の機能リリースでスケジュールされる機能をプレビューして、今後の機能を評価し、独自のプロジェクトで考えられる実装を計画できます。 次の機能リリースに向けて事前に計画できます。
 
 例えば、5月にプレリリースチャネルを購読している場合、今後の 6月のリリースで機能を評価できます。
 
@@ -48,7 +48,7 @@ AEM as a Cloud Service には 2 種類のリリースがあります。
 
 ## カレンダーをマークする {#mark-calendars}
 
-毎月のリリースは事前にスケジュールされており、リリース日は [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja#aem-as-cloud-service) で公開されています。
+機能リリースは十分に事前にスケジュールされており、機能リリースのアクティブ化日はに公開されています。 [Adobe Experience League。](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja#aem-as-cloud-service)
 
 リリース日を控えておくと、今後の機能の確認やテストを計画できます。
 
@@ -58,11 +58,11 @@ AEM as a Cloud Service には 2 種類のリリースがあります。
 
 各リリースには、そのリリースの新機能だけでなく、プレリリース評価で使用できる機能についても記載したリリースノートが付属しています。事前に情報を取得して、AEMaaCS の最新機能を活用する計画を立ててください。
 
-また、すべてのリリースと共に公開されている[既知の問題を確認](/help/release-notes/known-issues.md)することもできます。これにより、新機能の評価や最終的な採用に課題が生じる可能性のある技術的な問題を認識することもできます。
+また、すべてのリリースと共に公開されている[既知の問題を確認](/help/release-notes/maintenance/latest.md)することもできます。これにより、新機能の評価や最終的な採用に課題が生じる可能性のある技術的な問題を認識することもできます。
 
 ## プレリリースチャネルを有効にして新機能にアクセスして試す {#new-features}
 
-プレリリースチャネルは、任意の開発環境またはサンドボックス環境で有効にできます。プレリリースは、ステージング環境または実稼動環境では有効にできません。
+プレリリースチャネルは、任意の開発環境またはサンドボックス環境で有効にできます。ステージング環境または実稼動環境では、プレリリースを有効にできません。
 
 プレリリース機能は、次のような異なる方法で使用できます。
 
