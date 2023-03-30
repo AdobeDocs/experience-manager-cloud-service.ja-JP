@@ -3,7 +3,7 @@ title: 永続的な GraphQL クエリ
 description: Adobe Experience Manager as a Cloud Service で GraphQL クエリを永続化してパフォーマンスを最適化する方法を説明します。クライアントアプリケーションで HTTP GET メソッドを使用して永続的クエリをリクエストでき、応答を Dispatcher および CDN レイヤーにキャッシュできるので、最終的にクライアントアプリケーションのパフォーマンスが向上します。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 872fe7a96f58df0e1e9cce29367cc71778fedb78
+source-git-commit: 0cac51564468c414866d29c8f0be82f77625eaeb
 workflow-type: tm+mt
 source-wordcount: '1541'
 ht-degree: 74%
@@ -271,6 +271,8 @@ query getAdventuresByActivity($activity: String!) {
 | CDN | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` | `graphqlStaleWhileRevalidate` |
 | CDN | `stale-if-error` | `surrogate-control : stale-if-error` | `surrogateControlStaleIfError` | `graphqlStaleIfError` |
 
+{style="table-layout:auto"}
+
 ### オーサーインスタンス {#author-instances}
 
 オーサーインスタンスの場合、デフォルト値は次のとおりです。
@@ -344,6 +346,8 @@ curl -u admin:admin -X POST \
 | `graphqlStaleIfError` | 86400 | *適宜* | *適宜* |
 | `graphqlSurrogateControl` | 600 | *適宜* | *適宜* |
 
+{style="table-layout:auto"}
+
 ### OSGi 設定を使用したキャッシュの管理 {#cache-osgi-configration}
 
 キャッシュをグローバルに管理するには、次の手順を実行します。 [OSGi 設定の指定](/help/implementing/deploying/configuring-osgi.md) の **永続的なクエリサービス設定**.
@@ -362,6 +366,8 @@ curl -u admin:admin -X POST \
    | `surrogateControlMaxAge` | 読み取り | `graphqlSurrogateControl` |
    | `surrogateControlStaleWhileRevalidate` | 読み取り | `graphqlStaleWhileRevalidate` |
    | `surrogateControlStaleIfError` | 読み取り | `graphqlStaleIfError` |
+
+   {style="table-layout:auto"}
 
 * 使用できない場合、OSGi 設定は [パブリッシュインスタンスのデフォルト値](#publish-instances).
 
