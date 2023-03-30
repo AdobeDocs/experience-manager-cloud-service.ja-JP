@@ -3,10 +3,10 @@ title: AEM での GraphiQL IDE の使用
 description: Adobe Experience Manager で GraphiQL IDE を使用する方法について説明します。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 6e6bdc539f07fd15649a4f99d491f0486a511bdc
+source-git-commit: 4f2b5fa59d3c68dd1244fa5b2a8dc30d848ba4a4
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 96%
+source-wordcount: '1058'
+ht-degree: 95%
 
 ---
 
@@ -88,8 +88,6 @@ ht-degree: 96%
 
 ## クエリ変数 {#query-variables}
 
-<!-- more details needed here? -->
-
 また、GraphiQL IDE では、[クエリ変数](/help/headless/graphql-api/content-fragments.md#graphql-variables)を管理することもできます。
 
 次に例を示します。
@@ -99,6 +97,10 @@ ht-degree: 96%
 ## 永続クエリのキャッシュの管理 {#managing-cache}
 
 [永続クエリ](/help/headless/graphql-api/persisted-queries.md)は、Dispatcher と CDN レイヤーでキャッシュできるので推奨されます。これにより、最終的に要求元のクライアントアプリケーションのパフォーマンスが向上します。デフォルトでは、AEM はデフォルトの有効期間（TTL）に基づいてコンテンツ配信ネットワーク（CDN）のキャッシュを無効にします。
+
+>[!NOTE]
+>
+>詳しくは、 [永続化されたクエリのキャッシュ](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >
