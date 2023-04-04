@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 37274b28ab2343fd3cdfb4747c9dee701c699b46
+source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 87%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -53,14 +53,17 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 アダプティブフォームを作成するには、以下が必要です。
 
-* **アダプティブフォームテンプレート**：テンプレートは基本構造を提供し、アダプティブフォームのアピアランス（レイアウトとスタイル）を定義します。これには、特定のプロパティやコンテンツ構造を有するフォーマット済みのコンポーネントが含まれます。また、テーマと送信アクションを定義するオプションも提供されます。 テーマは、ルックアンドフィールと送信アクションを定義し、アダプティブフォームの送信時に実行するアクションを定義します。 例えば、収集したデータをデータソースに送信する場合などです。 Cloud Service は、2 種類のテンプレートをサポートしています。
-
-* **編集可能テンプレート**：[新しいテンプレートを作成](template-editor.md)または[既存の編集可能テンプレートを読み込むことができます](migrate-to-forms-as-a-cloud-service.md)。また、[最新のアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#:~:text=AEM アーキタイプは、次のモジュール,Java バンドル。%20it.tests%3A%20are%20Java-based%20integration%20tests.)をデプロイして、編集可能なテンプレートのサンプルを取得することもできます。
-* **静的テンプレート**：これらは従来のテンプレートで、Adobe Managed Services（AMS）およびオンプレミスの AEM Forms のインストール（AEM 6.5 Forms 以前）から移行する顧客にのみ推奨されます。 静的テンプレートに対する既存の投資を引き続き活用することができます。 新しいアダプティブフォームを作成する場合は、編集可能なテンプレートを使用することをお勧めします。
+* **権限**：ユーザーを [!DNL forms-users] に追加し、アダプティブフォームを作成するための権限をユーザーに付与します。フォーム専用のユーザーグループの詳細なリストについては、[グループと権限](forms-groups-privileges-tasks.md)を参照してください。
 
 * **アダプティブフォームのテーマ**：テーマには、コンポーネントとパネル向けのスタイル設定の詳細が含まれます。 スタイルには、背景カラー、ステートカラー、透明度、配置、サイズなどのプロパティが含まれます。テーマを適用すると、指定したスタイルが対応するコンポーネントに反映されます。[新しいテーマを作成する](themes.md)または[既存のテーマを読み込む](import-export-forms-templates.md#uploading-a-theme)ことができます。一部のサンプル テーマでは、[最新のアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#create-project)をデプロイすることもできます。
 
-* **権限**：ユーザーを [!DNL forms-users] に追加し、アダプティブフォームを作成するための権限をユーザーに付与します。フォーム専用のユーザーグループの詳細なリストについては、[グループと権限](forms-groups-privileges-tasks.md)を参照してください。
+* **アダプティブフォームテンプレート**：テンプレートは基本構造を提供し、アダプティブフォームのアピアランス（レイアウトとスタイル）を定義します。これには、特定のプロパティやコンテンツ構造を有するフォーマット済みのコンポーネントが含まれます。また、テーマと送信アクションを定義するオプションも提供されます。 テーマは、ルックアンドフィールと送信アクションを定義し、アダプティブフォームの送信時に実行するアクションを定義します。 例えば、収集したデータをデータソースに送信する場合などです。 Cloud Service は、2 種類のテンプレートをサポートしています。
+
+   * **編集可能テンプレート**：[新しいテンプレートを作成](template-editor.md)または[既存の編集可能テンプレートを読み込むことができます](migrate-to-forms-as-a-cloud-service.md)。また、[最新のアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#:~:text=AEM アーキタイプは、次のモジュール,Java バンドル。%20it.tests%3A%20are%20Java-based%20integration%20tests.)をデプロイして、編集可能なテンプレートのサンプルを取得することもできます。
+
+   * **静的テンプレート**：これらは従来のテンプレートで、Adobe Managed Services（AMS）およびオンプレミスの AEM Forms のインストール（AEM 6.5 Forms 以前）から移行する顧客にのみ推奨されます。 静的テンプレートに対する既存の投資を引き続き活用することができます。 新しいアダプティブフォームを作成する場合は、編集可能なテンプレートを使用することをお勧めします。
+
+
 
 ## アダプティブフォームの作成（基盤コンポーネント） {#create-an-adaptive-form-foundation-components}
 

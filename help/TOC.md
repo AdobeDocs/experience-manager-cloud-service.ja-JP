@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 196a2f221c637d58ea6642177f530f158888efe0
+source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
 workflow-type: tm+mt
-source-wordcount: '4015'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -517,7 +517,6 @@ ht-degree: 93%
       + [移行元 [!DNL AEM 6.5 Forms] 以前 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [グループと権限](/help/forms/forms-groups-privileges-tasks.md)
       + [アダプティブフォーム、PDF フォームおよびその他のアセットの読み込み、書き出し、整理](/help/forms/import-export-forms-templates.md)
-      + [参照テーマ、テンプレート、およびデータモデル](/help/forms/reference-themes-templates-data-models.md)
    + {#integrate} の統合
       + サービス {#services}
          + [AEM FormsとAdobe Signのas a Cloud Service](/help/forms/adobe-sign-integration-adaptive-forms.md)
@@ -549,9 +548,9 @@ ht-degree: 93%
          + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
             + [アダプティブフォームのオーサリングの概要](/help/forms/introduction-forms-authoring.md)
             + [アダプティブフォームの作成](/help/forms/creating-adaptive-form.md)
+            + [参照テーマ、テンプレート、およびデータモデル](/help/forms/reference-themes-templates-data-models.md)
             + [テンプレートの作成](/help/forms/template-editor.md)
             + [テーマの作成](/help/forms/themes.md)
-            + [参照アセット](/help/forms/reference-assets.md)
             + [アダプティブフォームの JSON スキーマのデザイン](/help/forms/adaptive-form-json-schema-form-model.md)
             + [遅延読み込みによる大きなフォームのパフォーマンスの向上](/help/forms/lazy-loading-adaptive-forms.md)
          + アダプティブフォームへのコンポーネントの追加 {#add-components-to-an-adaptive-form}
