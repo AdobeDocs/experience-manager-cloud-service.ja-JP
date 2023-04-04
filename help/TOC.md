@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 48ec92d559f9d1ead096316e77e04f2e1e02526d
+source-git-commit: 196a2f221c637d58ea6642177f530f158888efe0
 workflow-type: tm+mt
-source-wordcount: '4009'
-ht-degree: 94%
+source-wordcount: '4015'
+ht-degree: 93%
 
 ---
 
@@ -517,6 +517,7 @@ ht-degree: 94%
       + [移行元 [!DNL AEM 6.5 Forms] 以前 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [グループと権限](/help/forms/forms-groups-privileges-tasks.md)
       + [アダプティブフォーム、PDF フォームおよびその他のアセットの読み込み、書き出し、整理](/help/forms/import-export-forms-templates.md)
+      + [参照テーマ、テンプレート、およびデータモデル](/help/forms/reference-themes-templates-data-models.md)
    + {#integrate} の統合
       + サービス {#services}
          + [AEM FormsとAdobe Signのas a Cloud Service](/help/forms/adobe-sign-integration-adaptive-forms.md)
