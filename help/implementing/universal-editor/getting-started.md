@@ -1,9 +1,9 @@
 ---
 title: AEMのユニバーサルエディターの概要
 description: ユニバーサルエディターへのアクセス権を取得する方法と、それを使用する最初のAEMアプリの実装を開始する方法について説明します。
-source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
+source-git-commit: 7389e20ba73e84c2320ea8a834b381f415ad3983
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,13 @@ AEMアプリをオンボーディングし、ユニバーサルエディター�
 
 ## ユニバーサルエディターへのアクセスのリクエスト {#request-access}
 
-最初にユニバーサルエディターへのアクセスをリクエストする必要があります。 次に進んでください： [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor) ユニバーサルエディターにアクセスできるかどうかを検証します。
+最初にユニバーサルエディターへのアクセスをリクエストする必要があります。 次に進んでください： [https://experience.adobe.com/#/aem/editor,](https://experience.adobe.com/#/aem/editor) ログインし、ユニバーサルエディターにアクセスできるかどうかを検証します。
 
 アクセス権がない場合は、同じページにリンクされたフォームからリクエストできます。
+
+![ユニバーサルエディターへのアクセスのリクエスト](assets/request-access.png)
+
+クリック **アクセスのリクエスト** また、Adobe担当者がリクエストを確認し、使用例について話し合うように依頼します。
 
 ## ユニバーサルエディターコアライブラリを含める {#core-library}
 
