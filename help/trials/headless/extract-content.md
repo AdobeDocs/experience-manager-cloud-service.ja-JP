@@ -4,10 +4,10 @@ description: コンテンツ フラグメントと GraphQL API をヘッドレ�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 30fca14949e379fb427252f43d9f31d062e7e445
+source-git-commit: 09396211b428884f4d522fbcc2dd13086af51dfd
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 100%
+source-wordcount: '755'
+ht-degree: 96%
 
 ---
 
@@ -34,6 +34,10 @@ ht-degree: 100%
 新しいタブで、GraphQL Explorer を起動します。ここでは、ヘッドレスコンテンツに対するクエリを作成して検証してから、アプリや web サイトのコンテンツを強化できます。
 
 1. AEM ヘッドレス体験版には、テスト目的でコンテンツを抽出できるコンテンツフラグメントがプリロードされたエンドポイントが付属しています。エディターの右上隅にある「**エンドポイント**」ドロップダウンメニューで **AEM デモアセット**&#x200B;エンドポイントが選択されていることを確認します。
+
+1. 既知の問題：( **AEMデモアセット** エンドポイントがドロップダウンメニューに表示されない場合は、パッケージマネージャー (`/crx/packmgr` AEM環境のパス ) を参照し、を再インストールします。 `aem-demo-assets.ui.content-{VERSION}.zip` パッケージ：
+
+   ![パッケージを再インストール](assets/do-not-localize/reinstall-aem-demo-assets-package.png)
 
 1. プリロードされた **AEM デモアセット** エンドポイントのリストクエリの次のコードスニペットをコピーします。リストクエリは、特定のコンテンツフラグメントモデルを使用するすべてのコンテンツのリストを返します。在庫ページとカテゴリページでは、通常、このクエリ形式を使用します。
 
