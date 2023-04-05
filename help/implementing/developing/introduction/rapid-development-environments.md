@@ -1,10 +1,10 @@
 ---
 title: 迅速な開発環境
 description: クラウド環境で迅速な開発反復処理を行うために、迅速な開発環境を活用する方法について説明します。
-source-git-commit: 74ccf3a22043bfc7ac47e8fa1c9d064ad88a886e
+source-git-commit: 95787669581c906a9cdc35a0ac450adf17b0b402
 workflow-type: tm+mt
-source-wordcount: '3293'
-ht-degree: 64%
+source-wordcount: '3314'
+ht-degree: 63%
 
 ---
 
@@ -218,6 +218,8 @@ RDE は、一度に 1 つのプロジェクトをサポートします。コー�
 `aio aem:rde:install -t content-package "https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip"`
 
 デフォルトでは、アーティファクトはオーサー層とパブリッシュ層の両方にデプロイされますが、「 —s」フラグを使用して特定の層をターゲットにすることができます。
+
+任意のAEMパッケージをデプロイできます ( コード、コンテンツ、または [コンテナパッケージ](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages) （「all」パッケージとも呼ばれます）。
 
 >[!IMPORTANT]
 >
