@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: ede33e43bdfd4b6aa4670fe74c2133a7a3b54b75
+source-git-commit: 7c67b72a5dd10dd6c9db8be1812f66dc20e0f85a
 workflow-type: tm+mt
 source-wordcount: '890'
-ht-degree: 92%
+ht-degree: 84%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 92%
 
 レポートの情報を使用して重要な成功指標を導き出し、企業やお客様における [!DNL Assets] の採用状況を測定することができます。
 
-[!DNL Assets] のレポートフレームワークでは、[!DNL Sling] ジョブを利用して、レポートの要求が順序立てて非同期的に処理されます。このフレームワークは大規模なリポジトリーに合わせて拡張することができます。レポートの非同期処理により、レポートを生成する際の効率性とスピードが向上します。
+[!DNL Assets] のレポートフレームワークでは、[!DNL Sling] ジョブを利用して、レポートの要求が順序立てて非同期的に処理されます。このフレームワークは大規模なリポジトリーに合わせて拡張することができます。非同期レポート処理により、レポートの生成速度と効率が向上します。
 
-直観的なレポート管理インターフェイスに備わっているきめ細かなオプションやコントロールを使用すれば、アーカイブされたレポートにアクセスしたり、レポートの実行ステータス（成功、失敗および待機中）を表示したりすることができます。
+レポート管理インターフェイスは直感的で、アーカイブされたレポートにアクセスし、レポートの実行ステータス（成功、失敗、待機済み）を表示する詳細なオプションとコントロールが含まれます。
 
 レポートが生成されると、インボックス通知<!-- through an email (optional) and -->で通知されます。それまでに生成されたすべてのレポートが示されるレポートリストページで、レポートの表示、ダウンロードまたは削除を行うことができます。
 
@@ -112,7 +112,7 @@ ht-degree: 92%
 
 ## レポートへのカスタム列の追加 {#add-custom-columns}
 
-次のレポートにカスタム列を追加し、独自の要件に応じてさらに多くのデータを表示することができます。
+次のレポートにカスタム列を追加して、カスタム要件に応じてさらに多くのデータを表示できます。
 
 <!-- Remove download report.
 * Upload
@@ -166,7 +166,7 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 
 ## トラブルシューティング情報 {#tips-troubleshoot}
 
-* [!DNL Dynamic Media] を使用していて、[!UICONTROL ディスク使用量レポート]が生成されない場合は、すべてのアセットが正しく処理されていることを確認します。問題を解決するには、アセットを再処理し、レポートを再度生成します。
+* この [!UICONTROL ディスク使用量レポート] を生成せず、 [!DNL Dynamic Media]を使用する場合は、すべてのアセットが正しく処理されていることを確認します。 問題を解決するには、アセットを再処理し、レポートを再度生成します。
 
 <!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
 
