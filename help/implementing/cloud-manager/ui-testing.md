@@ -2,10 +2,10 @@
 title: UI テスト
 description: カスタム UI テストは、カスタムアプリケーションの UI テストを作成して自動的に実行できるオプション機能です
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: a2507c65df5d42ac53fcbb0a81cc2fb897438f44
+source-git-commit: 53f1a6bb83e4ad52d00f9899db0a87c3cb3e2653
 workflow-type: tm+mt
 source-wordcount: '2147'
-ht-degree: 54%
+ht-degree: 52%
 
 ---
 
@@ -23,15 +23,15 @@ ht-degree: 54%
 
 AEM には、[Cloud Manager 品質ゲート](/help/implementing/cloud-manager/custom-code-quality-rules.md)の統合スイートが用意されており、カスタムアプリケーションをスムーズに更新できるようになっています。特に、IT テストゲートは、AEM API を使用したカスタムテストの作成と自動化を既にサポートしています。
 
-UI テストは、言語とフレームワークの幅広い選択肢（Java と Maven、Node と WebDriver.io、Selenium に基づいて構築されたその他のフレームワークとテクノロジーなど）を可能にするために Docker イメージにパッケージ化された Selenium ベースのテストです。また、 [AEMプロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)
+UI テストは、言語とフレームワークの幅広い選択肢（Java と Maven、Node と WebDriver.io、Selenium に基づいて構築されたその他のフレームワークとテクノロジーなど）を可能にするために Docker イメージにパッケージ化された Selenium ベースのテストです。また、 [AEMプロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja).
 
-UI テストは、Cloud Manager の各パイプラインの特定の品質ゲートの一部として、 [**カスタム UI テスト** 手順](/help/implementing/cloud-manager/deploy-code.md) in [実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) または [実稼動以外のパイプライン。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)を含む Cloud Manager パイプラインごとに、特定の品質ゲートの一部として実行されます。リグレッションや新しい機能を含む UI テストでは、エラーの検出とレポートが可能です。
+UI テストは、Cloud Manager の各パイプラインの特定の品質ゲートの一部として、 [**カスタム UI テスト** 手順](/help/implementing/cloud-manager/deploy-code.md) in [実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) または [非実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). を含む Cloud Manager パイプラインごとに、特定の品質ゲートの一部として実行されます。リグレッションや新しい機能を含む UI テストでは、エラーの検出とレポートが可能です。
 
-UI テストは、Java で記述された HTTP テストであるカスタム機能テストとは異なり、[UI テストの作成](#building-ui-tests)の節で定義されている規則に従う限り、任意の言語で記述されたテストを含む Docker イメージにすることができます。
+Java で記述された HTTP テストであるカスタム機能テストとは異なり、UI テストは、の節で定義された規則に従う限り、任意の言語で記述されたテストを含む Docker イメージにすることができます [UI テストの構築](#building-ui-tests).
 
 >[!TIP]
 >
->[AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)で提供される構造と言語（JavaScript および WDIO）に従うことをお勧めします。
+>Adobeでは、 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
 >
 >Adobeは、Java および WebDriver に基づく UI テストモジュールの例も提供しています。 詳しくは、 [AEM Test Samples リポジトリ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver) 」を参照してください。
 
@@ -45,15 +45,15 @@ UI テストは、Java で記述された HTTP テストであるカスタム機
 
       >[!NOTE]
       >
-      >Cloud Manager が自動的に作成される前にリポジトリが作成された場合 `it.tests` フォルダーの場合は、 [AEMプロジェクトアーキタイプ。](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+      >Cloud Manager が自動的に作成される前にリポジトリが作成された場合 `it.tests` フォルダーの場合は、 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
 
-   * Java および WebDriver の場合は、 [AEM Test Samples リポジトリ。](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)
+   * Java および WebDriver の場合は、 [AEM Test Samples リポジトリ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
    * その他のプログラミング言語については、を参照してください。 [UI テストの構築](#building-ui-tests) このドキュメントでは、テストプロジェクトを設定します。
 
 1. の節に従って、UI テストがアクティベートされていることを確認します。 [顧客オプトイン](#customer-opt-in) 」を参照してください。
 
-1. テストケースを作成し、 [ローカルでテストを実行します。](#run-ui-tests-locally)
+1. テストケースを作成し、 [ローカルでテストを実行](#run-ui-tests-locally).
 
 1. コードを Cloud Manager リポジトリにコミットし、Cloud Manager パイプラインを実行します。
 
@@ -257,7 +257,7 @@ Docker イメージでは、追加のテスト出力（スクリーンショッ�
 * JavaScript: [takeScreenshot コマンド](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
 * Java: [コマンド](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-UI テストの実行中にテスト結果アーカイブが作成された場合は、Cloud Manager から、 `Download Details` ボタン [**カスタム UI テスト** 手順](/help/implementing/cloud-manager/deploy-code.md)
+UI テストの実行中にテスト結果アーカイブが作成された場合は、Cloud Manager から、 `Download Details` ボタン [**カスタム UI テスト** 手順](/help/implementing/cloud-manager/deploy-code.md).
 
 ### ファイルのアップロード {#upload-files}
 
@@ -309,7 +309,7 @@ Cloud Manager のテストは、技術管理者ユーザーを使用して実行
 >* ログファイルは、 `target/reports` リポジトリのフォルダー
 >* テストで ChromeDriver の最新リリースがテスト用に自動的にダウンロードされるので、最新バージョンの Chrome を使用していることを確認する必要があります。
 >
->詳しくは、 [AEM Project Archetype リポジトリー。](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md)
+>詳しくは、 [AEM Project Archetype リポジトリ](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
 
 ### Java テストの例 {#java-sample}
 
@@ -332,4 +332,4 @@ Cloud Manager のテストは、技術管理者ユーザーを使用して実行
 >
 >* ログファイルは、 `target/reports` リポジトリのフォルダー。
 >
->詳しくは、 [AEM Test Samples リポジトリ。](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)
+>詳しくは、 [AEM Test Samples リポジトリ](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
