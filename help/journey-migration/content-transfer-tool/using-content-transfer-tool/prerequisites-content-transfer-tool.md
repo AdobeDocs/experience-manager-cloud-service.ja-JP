@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの前提条件
 description: コンテンツ転送ツールの前提条件
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 93%
+source-wordcount: '547'
+ht-degree: 88%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_prereqs"
 >title="コンテンツ転送ツール使用時の重要な考慮事項"
->abstract="Java と AEM のバージョン、サポートされるデータストアのタイプ、ユーザーグループの考慮事項など、コンテンツ転送ツールの使用に関する重要な考慮事項を確認します。"
+>abstract="Java バージョンとAEMバージョン、サポートされるデータストアタイプ、ユーザーグループの考慮事項など、コンテンツ転送ツールの使用に関する重要な考慮事項を確認します。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#pre-reqs" text="コンテンツ転送ツール使用時の重要な考慮事項"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#best-practices" text="ベストプラクティスとガイドライン"
 
@@ -23,7 +23,7 @@ ht-degree: 93%
 以下に示す考慮事項をすべて確認してください。
 
 | 考慮事項 | 現在サポートされている内容 |
-|--- |--- |
+|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AEM のバージョン | コンテンツ転送ツールは、AEM 6.3 以降のバージョンでのみ実行できます。 |
 | セグメントストアのサイズ | 現在、5,500 万個未満の JCR ノードと、*オーサー*&#x200B;上で最大 250 GB（オンライン圧縮サイズ）、パブリッシュ上で最大&#x200B;*パブリッシュ*&#x200B;上で最大 50 GB の既存のリポジトリーがサポートされています。これらの制限を超えるセグメントストアのサイズに関するオプションについては、Adobe カスタマーケアでサポートチケットを作成してご相談ください。 |
 | コンテンツリポジトリーの合計サイズ&#x200B;<br>*（セグメントストア+データストア）* | コンテンツ転送ツールは、ファイルデータストアタイプのデータストアに対して最大 20 TB のコンテンツを転送できるように設計されています。20 TB を超えるものは現在はサポートされていません。20 TB を超えるコンテンツのオプションについては、アドビのカスタマーサポートでサポートチケットを作成してご相談ください。<br>大規模なリポジトリーのコンテンツ転送プロセスを大幅に高速化するには、オプションで [事前コピー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja#setting-up-pre-copy-step) 手順を使用できます。これは、ファイルデータストア、Amazon S3、Azure データストアなどのタイプのデータストアに適用できます。Amazon S3 および Azure データストアでは、20 TB を超えるリポジトリーサイズがサポートされます。 |
@@ -34,4 +34,4 @@ ht-degree: 93%
 
 ## 次の手順 {#whats-next}
 
-前提条件を確認し、移行プロジェクトでコンテンツ転送ツールを使用できるかどうかを判断したら、[コンテンツ転送ツール使用のガイドラインとベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja)を参照してください。
+前提条件を確認し、移行プロジェクトでコンテンツ転送ツールを使用できるかどうかを判断したら、[コンテンツ転送ツール使用のガイドラインとベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html)を参照してください。

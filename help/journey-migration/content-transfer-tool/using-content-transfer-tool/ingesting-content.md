@@ -2,10 +2,10 @@
 title: Target へのコンテンツの取り込み
 description: Target へのコンテンツの取り込み
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 7e5a966693b139efa42111d8b6d675674516cfc6
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 78%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 78%
 
    * 抽出したデータをソースとして含む移行セットを選択します。
       * 移行セットは、無操作状態が長時間続くと有効期限が切れるので、抽出が実行された後は取り込みが比較的早くおこなわれます。 レビュー [移行セットの有効期限](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 」を参照してください。
-   * 移行先の環境を選択します。移行セットのコンテンツは、ここに取り込まれます。階層を選択します（オーサー／パブリッシュ）。
+   * 移行先の環境を選択します。移行セットのコンテンツは、ここに取り込まれます。階層を選択します（オーサー／パブリッシュ）。迅速な開発環境はサポートされていません。
 
    >[!NOTE]
    >
@@ -55,9 +55,13 @@ ht-degree: 78%
    > 
    >事前コピーを使用した取得を（S3 または Azure データストアに対して）使用する場合は、最初にオーサーの取得を単独で実行することをお勧めします。これにより、後で実行する際に、パブリッシュの取り込みが高速化されます。
 
+   >[!NOTE]
+   >
+   >取り込みは、Rapid Development Environment(RDE) の宛先をサポートしていません。 ユーザーがアクセス権を持っている場合でも、これらは選択可能な宛先として表示されません。
+
    >[!IMPORTANT]
    >
-   >宛先環境への取り込みを開始するには、宛先 Cloud Service オーサーサービスで、自身もローカルの **AEM 管理者**&#x200B;グループに属している必要があります。取り込みを開始できない場合、詳しくは、[取り込みを開始できない](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion)を参照してください。
+   >ローカルの **AEM管理者** グループを作成します。 取り込みを開始できない場合、詳しくは、[取り込みを開始できない](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion)を参照してください。
 
    >[!IMPORTANT]
    >
@@ -67,11 +71,11 @@ ht-degree: 78%
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. その後、取り込みジョブリストビューで取り込み段階を監視できます。 また、取り込みのアクションメニューを使用し、取り込みの進行に伴ってログを表示できます。
+1. その後、取り込みジョブリスト表示で取り込み段階を監視できます。 また、取り込みのアクションメニューを使用し、取り込みの進行に伴ってログを表示できます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. 取り込みが完了したら、画面の右上隅にある「i」ボタンをクリックして、取り込みジョブに関する詳細情報を取得できます。
+1. 取り込みが完了したら、画面の右上隅にある (i) ボタンをクリックして、取り込みジョブに関する詳細情報を取得します。
 
 <!-- Alexandru: hiding temporarily, until it's reviewed 
 
@@ -103,7 +107,7 @@ ht-degree: 78%
 >id="aemcloud_ctt_ingestion_topup"
 >title="追加取り込み"
 >abstract="追加取り込み機能を使用すると、前回のコンテンツ転送アクティビティ以降に変更されたコンテンツが移行されます。取り込みが完了したら、ログを調べて、エラーや警告がないか確認します。エラーが発生した場合は、報告された問題を解決するかアドビカスタマーケアに連絡して、すぐに対処してください。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ja" text="ログの表示"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="ログの表示"
 
 コンテンツ転送ツールには、*差分コンテンツ追加*&#x200B;をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。
 
@@ -132,7 +136,7 @@ ht-degree: 78%
 
 ### 取り込みを開始できない {#unable-to-start-ingestion}
 
-宛先 Cloud Service オーサーサービスのローカル **AEM 管理者** グループに属している場合にのみ、宛先環境への取り込みを開始することができます。AEM 管理者グループに属していない場合は、取り込みを開始しようとすると、次に示すようなエラーが表示されます。管理者に問い合わせてローカルの **AEM 管理者**&#x200B;に追加するよう依頼するか、トークン自体を依頼してから&#x200B;**移行トークン入力**&#x200B;フィールドにペーストすることができます。
+ローカルの **AEM管理者** グループを作成します。 AEM 管理者グループに属していない場合は、取り込みを開始しようとすると、次に示すようなエラーが表示されます。管理者に問い合わせてローカルの **AEM 管理者**&#x200B;に追加するよう依頼するか、トークン自体を依頼してから&#x200B;**移行トークン入力**&#x200B;フィールドにペーストすることができます。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
@@ -175,4 +179,4 @@ AEM の各ノードには、一意の UUID が必要です。このエラーは�
 
 ## 次の手順 {#whats-next}
 
-Target へのコンテンツの取り込みが完了したら、各ステップ（抽出と取り込み）のログを表示し、エラーを探すことができます。詳しくは、[移行セットのログの表示](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ja)を参照してください。
+Target へのコンテンツの取り込みが完了したら、各ステップ（抽出と取り込み）のログを表示し、エラーを探すことができます。詳しくは、[移行セットのログの表示](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html)を参照してください。

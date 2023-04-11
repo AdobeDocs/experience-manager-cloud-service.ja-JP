@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの基本を学ぶ
 description: コンテンツ転送ツールの基本を学ぶ
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 8264aef85a1d76db1cc04e0a01839089ee5f4b66
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
 source-wordcount: '1388'
-ht-degree: 88%
+ht-degree: 85%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 88%
 
 ### SSL ログを有効にする {#enable-ssl-logging}
 
-SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プロセス中に接続の問題を回避するには、次の手順に従って、ソースAEM環境のシステムコンソールで SSL ログを有効にします。
+SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プロセス中の接続の問題をトラブルシューティングするには、次の手順に従って、ソースAEM環境のシステムコンソールで SSL ログを有効にします。
 
 1. **ツール／運営／Web コンソール**&#x200B;を選択するか、URL（*https://serveraddress:serverport/system/console/configMgr*）に直接アクセスして、ソースインスタンス上の Adobe Experience Manager Web コンソールに移動します。
 1. **Content Transfer Tool Extraction Service Configuration** を検索します。
@@ -76,7 +76,7 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 
 1. Cloud Acceleration Manager（CAM）にログインし、以前に作成した CAM プロジェクトをクリックして、AEM as a Cloud Service への移行に対する準備状況を評価します。CAM プロジェクトをまだ作成していない場合は、「CAM でのプロジェクトの作成と管理」を参照してください。
 
-1. **コンテンツ転送**&#x200B;カードをクリックします。これにより、移行セットのリストビューが表示されます。
+1. **コンテンツ転送**&#x200B;カードをクリックします。これにより、移行セットのリスト表示に移動します。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
@@ -176,7 +176,7 @@ Cloud Acceleration Manager で作成した移行セットを入力するには�
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. 「**サイズを確認**」をクリックして、プロセスを開始します。移行セットリスト表示に戻り、**サイズ確認**&#x200B;が実行中であることを示すメッセージが表示されます。
+1. 「**サイズを確認**」をクリックして、プロセスを開始します。移行セットのリストビューに戻り、次のことを示すメッセージが表示されます。 **サイズを確認** が実行中です。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
