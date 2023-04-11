@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 0ba6ce129322df9ad108822e86e5acfdbf99e613
+source-git-commit: 57666d474cd2ae41048e2d30eb27b0719a447005
 workflow-type: tm+mt
-source-wordcount: '5892'
-ht-degree: 60%
+source-wordcount: '5899'
+ht-degree: 59%
 
 ---
 
@@ -424,7 +424,7 @@ DASH(Digital Adaptive Streaming over HTTP) は、ビデオストリーミング�
 
    >[!IMPORTANT]
    >
-   >現在、アカウントで DASH を有効にするのは、北米でのみ利用できます。
+   >現在、アカウントで DASH を有効にするのは、アジア太平洋および北米でのみ利用できます。ヨーロッパ中東アフリカで間もなく登場する
 
 DASH を使用するリクエストを開始します。お使いのアカウントでは、自動的には有効になりません。
 
