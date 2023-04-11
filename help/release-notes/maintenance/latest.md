@@ -1,10 +1,10 @@
 ---
 title: の最新のメンテナンスリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
 description: の最新のメンテナンスリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
-source-git-commit: c56ed1878b89a1f31c5b7b44696511d51cfa5351
+source-git-commit: ea71ca9fe259fbbf497a35930a10450bd4e26ce8
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 7%
+source-wordcount: '402'
+ht-degree: 6%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 7%
 
 以下の節では、as a Cloud ServiceExperience Managerの現在のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース11382 {#release-11382}
+## リリース 11382 {#release-11382}
 
 2023 年 3 月 28 日に公開されたメンテナンスリリース11382の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース11289のアップデートです。
 
@@ -22,6 +22,8 @@ ht-degree: 7%
 ### 既知の問題 {#known-issues-11382}
 
 - SITES-12573 - 1 つの変数が指定されていない場合、フィルター内の変数を使用するGraphQLクエリは失敗します。 このリリースにはアップデートしないでください。AEM as a Cloud Serviceと共にGraphQLを使用する必要があります。
+- SKYOPS-51970 - buildImage ステップで使用される FACT バージョンの回帰を識別し、一致しないユーザーマッピングを引き起こしました。
+- GRANITE-44542 — パッケージフィルターに含まれるフォルダーに対して（jcr:primaryType を含む.content.xml を提供することで）パッケージノードタイプを指定しなかったお客様に対して、問題が報告されています。 その結果、これらのフォルダーが nt:folder として扱われ、様々な状況で問題が発生していました。
 
 ### 修正された問題 {#fixed-issues-11382}
 
