@@ -2,7 +2,7 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: a65f736f922bcb58c09773ff9c6d6f7104b6157d
+source-git-commit: 2fb929cae03fa9ac0bf6d18d5eb3cf19bb35fa37
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## リリースのハイライト {#release-highlights}
 
-の最新バージョン [!DNL Workfront for Experience Manager enhanced connector] 更新が含まれます。
+の最新バージョン [!DNL Workfront for Experience Manager enhanced connector] には、次の更新が含まれています。
 
 * Experience Managerに `DateTimeParseException` リンクされたフォルダーの作成中にWorkfrontから最終変更日を受け取った場合に例外が発生しました。
 
