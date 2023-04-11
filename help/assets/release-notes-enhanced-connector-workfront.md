@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 8ce5b0a163c8ddf7f9c9672eff6d752a58c464bb
+source-git-commit: a65f736f922bcb58c09773ff9c6d6f7104b6157d
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 89%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -15,22 +15,21 @@ ht-degree: 89%
 
 ## リリース日 {#release-date}
 
-の最新バージョン 1.9.8 のリリース日 [!DNL Workfront for Experience Manager enhanced connector] は 2023 年 3 月 3 日です。
+の最新バージョン 1.9.9 のリリース日 [!DNL Workfront for Experience Manager enhanced connector] は 2023 年 4 月 10 日です。
 
 ## リリースのハイライト {#release-highlights}
 
-の最新バージョン [!DNL Workfront for Experience Manager enhanced connector] には、次の更新が含まれています。
+の最新バージョン [!DNL Workfront for Experience Manager enhanced connector] 更新が含まれます。
 
-* WorkfrontでプロジェクトにリンクされたExperience Managerーを作成する際のフォルダーのパフォーマンスが向上しました。
+* Experience Managerに `DateTimeParseException` リンクされたフォルダーの作成中にWorkfrontから最終変更日を受け取った場合に例外が発生しました。
 
-* Workfrontのコメントの削除がExperience Managerに反映されるようになりました。
+* 短期間で複数のリンクされたプロジェクトフォルダーを作成する際に発生する問題。
 
-* コネクタの設定からas a Cloud ServiceしたExperience Managerの新規顧客のブロックを管理する機能。
-
+* 新しいプロジェクトリンクフォルダーのセット数のしきい値制限を設定できません。
 
 >[!IMPORTANT]
 >
->アドビでは [ の](../assets/update-workfront-enhanced-connector.md)最新バージョン 1.9.8 へのアップグレード[!DNL Workfront for Experience Manager enhanced connector]をお勧めします。
+>アドビでは [ の](../assets/update-workfront-enhanced-connector.md)最新バージョン 1.9.9 へのアップグレード[!DNL Workfront for Experience Manager enhanced connector]をお勧めします。
 
 ## 既知の問題 {#known-issues}
 
@@ -40,7 +39,18 @@ ht-degree: 89%
 
 ## 以前のリリース {#previous-releases}
 
-### 2022 年 1 月リリース {#january-2022-release}
+### 2023年3月リリース {#march-2023-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 2023 年 3 月 3 日にリリースされたバージョン 1.9.8 には、次の更新が含まれています。
+
+* WorkfrontでプロジェクトにリンクされたExperience Managerーを作成する際のフォルダーのパフォーマンスが向上しました。
+
+* Workfrontのコメントの削除がExperience Managerに反映されるようになりました。
+
+* コネクタの設定からas a Cloud ServiceしたExperience Managerの新規顧客のブロックを管理する機能。
+
+
+### 2023 年 1 月リリース {#january-2022-release}
 
 [!DNL Workfront for Experience Manager enhanced connector] 2023 年 2 月 2 日にリリースされたバージョン 1.9.7 には、次の更新が含まれています。
 
