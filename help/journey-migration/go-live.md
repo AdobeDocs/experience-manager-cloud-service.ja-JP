@@ -2,10 +2,10 @@
 title: 運用開始
 description: コードとコンテンツがクラウドに対応した後に移行を実行する方法について
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
+source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -107,7 +107,7 @@ ht-degree: 99%
 上記の節と比較すると、以下のアセットの問題が原因で取り込みが失敗することは **ありません**。ただし、次のシナリオでは、適切な手順を実行することを強くお勧めします。
 
 * 元のレンディションがないアセット
-* `jcr:content` ノードが見つからないフォルダー
+* `jcr:content` ノードが見つからないフォルダー。
 
 上記の両方の項目が識別され、 [ベストプラクティスアナライザー](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) レポートで報告されます。
 
