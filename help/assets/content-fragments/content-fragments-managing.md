@@ -2,10 +2,10 @@
 title: コンテンツフラグメントの管理（アセット - コンテンツフラグメント）
 description: ヘッドレスコンテンツの基礎となる AEM コンテンツフラグメントを Assets コンソールを使用して管理する方法について説明します。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: ht
-source-wordcount: '1781'
-ht-degree: 100%
+source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
+workflow-type: tm+mt
+source-wordcount: '1761'
+ht-degree: 78%
 
 ---
 
@@ -90,8 +90,8 @@ ht-degree: 100%
 
 **Assets** コンソールでは、次のいずれかからコンテンツフラグメントに対して様々なアクションを使用できます。
 
-* ツールバーから。フラグメントを選択すると、該当するすべてのアクションを使用できるようになります。
-* [クイックアクション](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)として。個別のフラグメントカードに使用可能なアクションのサブセット。
+* ツールバーから。フラグメントを選択した後は、適切なアクションをすべて使用できます。
+* 形式 [クイックアクション](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions);個々のフラグメントカードで使用できるアクションのサブセット。
 
 ![アクション](assets/cfm-managing-02.png)
 
@@ -106,7 +106,7 @@ ht-degree: 100%
 * **チェックアウト**
 * **プロパティ**
 
-   * フラグメントのメタデータを表示したり、編集したりできます。
+   * フラグメントのメタデータを表示または編集できます。
 
 * **編集**
 
@@ -130,16 +130,12 @@ ht-degree: 100%
 
 >[!CAUTION]
 >
->コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
-
->[!CAUTION]
->
->コンテンツフラグメントを編集するには、適切な権限が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
+>コンテンツフラグメントを編集するには、 [適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). 問題が発生している場合は、システム管理者に問い合わせてください。
 
 1. **Assets** コンソールを使用して、コンテンツフラグメントの場所に移動します。
-1. フラグメントを開いて編集するには、以下のいずれかを実行します。
+1. 次のいずれかの方法で、フラグメントを編集用に開きます。
 
-   * フラグメントまたはフラグメントリンクをクリック／タップ（これはコンソールビューによって異なります）。
+   * フラグメントまたはフラグメントリンクをクリックまたはタップします（これは、コンソール表示によって異なります）。
    * フラグメントを選択してから、ツールバーの「**編集**」を選択。
 
 1. フラグメントエディターが開きます。必要に応じて変更を加えます。
@@ -222,7 +218,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
    >[!CAUTION]
    >
-   >コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
+   >コンテンツフラグメントを編集するには、 [適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). 問題が発生している場合は、システム管理者に問い合わせてください。
 
    >[!NOTE]
    >
@@ -230,7 +226,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
    >[!CAUTION]
    >
-   >これらの操作では、変更を保存するだけでなく、参照もすべて更新し、Dispatcher が必要に応じてフラッシュされます。これらの変更が処理されるまでに時間がかかることがあります。このため、大きなシステムや複雑なシステム、高負荷のシステムのパフォーマンスに影響することがあります。
+   >これらの操作では、変更を保存するだけでなく、参照もすべて更新し、Dispatcher が必要に応じてフラッシュされます。これらの変更の処理には時間がかかる場合があります。 このため、大規模/複雑/負荷の高いシステムにパフォーマンスが影響を与える可能性があります。
    >
    >「**保存して閉じる**」を使用する際はこの点に留意し、フラグメントエディターをすぐに開いて、さらに変更を加え保存してください。
 
@@ -259,15 +255,15 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## フラグメントのコンテンツの編集 {#editing-the-content-of-your-fragment}
 
-フラグメントを開いたら、「[バリエーション](/help/assets/content-fragments/content-fragments-variations.md)」タブを使用してコンテンツをオーサリングできます。
+フラグメントを開いたら、 [バリエーション](/help/assets/content-fragments/content-fragments-variations.md) タブを使用して、コンテンツを作成します。
 
 ## フラグメント内のバリエーションの作成と管理 {#creating-and-managing-variations-within-your-fragment}
 
 プライマリコンテンツを作成したら、そのコンテンツの[バリエーション](/help/assets/content-fragments/content-fragments-variations.md)を作成して管理できます。
 
-## コンテンツをフラグメントと関連付ける {#associating-content-with-your-fragment}
+## コンテンツとフラグメントの関連付け {#associating-content-with-your-fragment}
 
-フラグメントに[コンテンツを関連付ける](/help/assets/content-fragments/content-fragments-assoc-content.md)こともできます。これにより関連性を付加して、フラグメントをコンテンツページに追加するときに、アセット（画像など）を（オプションで）フラグメントと一緒に使用できるようになります。
+また、 [コンテンツを関連付け](/help/assets/content-fragments/content-fragments-assoc-content.md) フラグメントを含む これにより、アセット（画像）をフラグメントと共に（オプションで）コンテンツページに追加する際に使用できるようにする接続が提供されます。
 
 ## フラグメントのメタデータ（プロパティ）の表示と編集 {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -275,10 +271,10 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## コンテンツフラグメントのタイムライン {#timeline-for-content-fragments}
 
-[タイムライン](/help/assets/manage-digital-assets.md#timeline)では標準のオプションに加え、コンテンツフラグメントに固有の情報とアクションの両方が提供されます。
+標準オプションに加えて、 [タイムライン](/help/assets/manage-digital-assets.md#timeline) には、コンテンツフラグメントに固有の情報とアクションの両方が用意されています。
 
-* バージョン、コメントおよび注釈に関する情報の表示
-* バージョンに関するアクション
+* バージョン、コメント、注釈に関する情報の表示
+* バージョンに対するアクション
 
    * **[このバージョンに戻る](#reverting-to-a-version)**（既存のフラグメントを選択してから特定のバージョンを選択）
 
@@ -286,20 +282,21 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
    * **ラベル**&#x200B;や&#x200B;**コメント**&#x200B;の追加（既存のフラグメントを選択してから特定のバージョンを選択）
 
-   * **バージョンとして保存**（既存のフラグメントを選択してからタイムライン下部の上矢印を選択）
+   * **バージョンとして保存** （既存のフラグメントを選択してから、タイムラインの下部にある上向き矢印を選択）
 
-* 注釈に関するアクション
+* 注釈のアクション
 
    * **削除**
 
 >[!NOTE]
->コメントは次のとおりです。
->* すべてのアセットの標準機能
->* タイムラインで追加
->* フラグメントアセットに関連付けられる
->注釈（コンテンツフラグメント用）は次のとおりです。
->* フラグメントエディターで入力
->* フラグメント内の選択されたテキストセグメントに固有
+コメントは次のとおりです。
+* すべてのアセットの標準機能
+* タイムラインで作成
+* フラグメントアセットに関連
+>
+注釈（コンテンツフラグメント用）は次のとおりです。
+* フラグメントエディターに入力
+* フラグメント内の選択したテキストセグメントに固有
 >
 
 
@@ -309,9 +306,9 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## フラグメントのバージョンの比較 {#comparing-fragment-versions}
 
-特定のバージョンを選択したら、「[タイムライン](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)」から「**現在のバージョンと比較**」アクションを利用できるようになります。
+この **現在と比較** アクションは、 [タイムライン](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) 特定のバージョンを選択した後。
 
-これにより、次の情報が表示されます。
+開く：
 
 * **現在**（最新）のバージョン（左）
 
@@ -319,26 +316,26 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 これらは左右に並んで表示されます。この画面について以下で説明します。
 
-* すべての相違点がハイライト表示されます
+* 違いが強調表示されます
 
-   * 削除されたテキスト - 赤
+   * 削除されたテキスト — 赤
    * 挿入されたテキスト - 緑
-   * 置き換えられたテキスト - 青
+   * 置換されたテキスト — 青
 
 * 全画面表示アイコンを使用すれば、どちらかのバージョンで開いた後で、並列表示に切り替えることができます
-* 特定のバージョンに&#x200B;**戻す**&#x200B;ことができます
-* 「**完了**」を選択すると、コンソールに戻ります
+* 以下が可能です。 **元に戻す** 特定のバージョンに
+* **完了** コンソールに戻ります
 
 >[!NOTE]
->フラグメントの比較中にフラグメントコンテンツを編集することはできません。
+フラグメントの比較時にフラグメントコンテンツを編集することはできません。
 
 ![比較](assets/cfm-managing-06.png)
 
 ## 特定のバージョンへの復帰   {#reverting-to-a-version}
 
-次の方法で特定のバージョンのフラグメントに戻すことができます。
+フラグメントの特定のバージョンに戻すことができます。
 
-* 直接[タイムライン](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)から。
+* 直接 [タイムライン](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
    必要なバージョンを選択した後、「**このバージョンに戻す**」アクションを選択します。
 
@@ -347,8 +344,8 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## フラグメントの公開と参照 {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
->フラグメントがモデルに基づいている場合、その[モデルが公開されている](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)ことを確認してください。
->まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
+フラグメントがモデルに基づいている場合、 [モデルが公開されました](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
 
 コンテンツフラグメントをパブリッシュ環境で使用するには、公開する必要があります。これは、Assets の標準機能を使用して行います。
 
@@ -363,7 +360,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 さらに、[フラグメントを使用するページを公開](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)するとき。フラグメントはページ参照にリスト表示されます。
 
 >[!CAUTION]
->フラグメントが公開または参照（あるいは両方）された後に、作成者がフラグメントを開いて編集しようとすると警告が表示され、フラグメントを変更すると、参照されているページにも影響が及ぶことが警告されます。
+フラグメントが公開または参照（あるいは両方）された後に、作成者がフラグメントを開いて編集しようとすると警告が表示され、フラグメントを変更すると、参照されているページにも影響が及ぶことが警告されます。
 
 ## フラグメントの削除 {#deleting-a-fragment}
 
@@ -373,10 +370,10 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 2. フラグメントを選択します。
 
    >[!NOTE]
-   >**削除**&#x200B;アクションはクイックアクションとして実行できません。
+   この **削除** アクションは、クイックアクションとして使用できません。
 
 3. ツールバーから「**削除**」を選択します。
 4. 「**削除**」アクションを確認します。
 
    >[!CAUTION]
-   >フラグメントが既にページで参照されている場合は、警告メッセージが表示されます。「**削除を強制**」を選択して続行を確認する必要があります。フラグメントはコンテンツフラグメントコンポーネントと一緒に、すべてのコンテンツページから削除されます。
+   フラグメントが既にページで参照されている場合は、警告メッセージが表示されます。「**削除を強制**」を選択して続行を確認する必要があります。フラグメントはコンテンツフラグメントコンポーネントと一緒に、すべてのコンテンツページから削除されます。

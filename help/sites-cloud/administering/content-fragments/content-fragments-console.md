@@ -5,7 +5,7 @@ landing-page-description: コンテンツフラグメントコンソールでコ
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 13e75e8b0f08463f5fd941263497f5cf0a31129c
+source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 96%
@@ -69,7 +69,7 @@ ht-degree: 96%
    * 新しいコンテンツフラグメントを&#x200B;**[作成](#creating-new-content-fragment)**&#x200B;します
    * 述語の選択に従ってコンテンツフラグメントを[フィルタリング](#filtering-fragments)し、今後の使用のためにフィルターを保存します
    * コンテンツフラグメントを[検索](#searching-fragments)します
-   * [テーブル表示をカスタマイズして、選択した情報列を表示します](#selectuse-available-columns)
+   * [テーブル表示をカスタマイズして、選択した情報列を表示します](#select-available-columns)
    * **アセットで開く**&#x200B;を使用して、**アセット**&#x200B;コンソールで現在の場所を直接開きます
 
       >[!NOTE]
