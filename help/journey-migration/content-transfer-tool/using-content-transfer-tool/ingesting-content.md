@@ -2,10 +2,10 @@
 title: Target へのコンテンツの取り込み
 description: Target へのコンテンツの取り込み
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: 7854a0217c5d2e7d260a6fbe893aef1e6d4a4c72
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 71%
+source-wordcount: '1687'
+ht-degree: 70%
 
 ---
 
@@ -20,8 +20,6 @@ ht-degree: 71%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-ingestion-process" text="追加インジェスト"
 
 コンテンツ転送ツールで移行セットを取り込むには、次の手順に従います。
->[!NOTE]
->オプションの事前コピー手順を実行して、取り込み段階を大幅に高速化できます。事前コピーステップは、1回目の完全抽出と取り込みに最も効果的です。詳しくは、[AzCopy を使用した取得](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy)を参照してください。
 
 >[!NOTE]
 >この取り込みのサポートチケットを忘れずにログに記録しましたか？[コンテンツ転送ツールを使用する前の重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja#important-considerations)を参照して、取り込みを成功させるためのその他の考慮事項を確認してください。
@@ -29,7 +27,6 @@ ht-degree: 71%
 1. Cloud Acceleration Manager に移動します。プロジェクトカードをクリックし、コンテンツ転送カードをクリックします。**取り込みジョブ**&#x200B;に移動し、「**新しい取り込み**」をクリックします。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
-
 
 1. 取り込みチェックリストをレビューし、すべての手順が完了していることを確認します。 これらは、取り込みを正常に行うために必要な手順です。 チェックリストが完了した場合にのみ、**次**&#x200B;の手順に進むことができます。
 
