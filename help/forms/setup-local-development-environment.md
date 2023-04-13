@@ -3,9 +3,9 @@ title: Adobe Experience Manager Forms as a Cloud Service 用のローカル開�
 description: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境の設定
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 source-git-commit: dea6c266e5c10135a320f923dc77d0fd2050988e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2960'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -240,7 +240,8 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
 
 >[!NOTE]
 >
-> Microsoft® Dynamics 365 および Salesforce フォームデータモデルを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 30 以降に基づくプロジェクトをセットアップします。Tranquil、Urbane、Ultramarine テーマを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 32 以降に基づくプロジェクトをセットアップします。
+> Microsoft® Dynamics 365 および Salesforce フォームデータモデルを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 30 以降に基づくプロジェクトをセットアップします。
+Tranquil、Urbane、Ultramarine テーマを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 32 以降に基づくプロジェクトをセットアップします。
 
 プロジェクトを設定するには、以下を実行します。
 
@@ -251,7 +252,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
 **Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
 
-1. **の作成 [!DNL Experience Manager Forms] as a [Cloud Service] プロジェクト：** の作成 [!DNL Experience Manager Forms] as a [Cloud Service] 最新に基づくプロジェクト [AEM Archetype](https://github.com/adobe/aem-project-archetype) または後で。 このアーキタイプは、開発者が [!DNL AEM Forms] as a Cloud Service の開発を容易に開始するのに役立ちます。また、すぐに使い始めるのに役立つテーマとテンプレートのサンプルも含まれています。
+1. **[!DNL Experience Manager Forms] as a [Cloud Service] プロジェクトの作成：**&#x200B;最新の [AEM アーキタイプ](https://github.com/adobe/aem-project-archetype)以降に基づいて [!DNL Experience Manager Forms] as a [Cloud Service] プロジェクトを作成します。このアーキタイプは、開発者が [!DNL AEM Forms] as a Cloud Service の開発を容易に開始するのに役立ちます。また、すぐに使い始めるのに役立つテーマとテンプレートのサンプルも含まれています。
 
    コマンドプロンプトを開き、以下のコマンドを実行して [!DNL Experience Manager Forms] as a Cloud Service プロジェクトを作成します。
 
@@ -261,11 +262,11 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion="41" -D appTitle=mysite -D appId=mysite -D groupId=com.mysite -D includeFormsenrollment="y" -D aemVersion="cloud"
    ```
 
-   上記のコマンドで `appTitle`、`appId`、`groupId` を変更し、環境に反映します。また、includeFormsenrollment、includeFormscommunications および includeFormsheadless の値をに設定します。 `y` または `n` ライセンスと要件に応じて異なります。 includeFormsheadless は、コアコンポーネントに基づくアダプティブFormsの作成に必須です。
+   上記のコマンドで `appTitle`、`appId`、`groupId` を変更し、環境に反映します。また、ライセンスと要件に応じて、includeFormsenrollment、includeFormscommunications および includeFormsheadless の値を `y` または `n` に設定します。コアコンポーネントに基づくアダプティブフォームの作成には、includeFormsheadless が必須です。
 
-   * `includeFormsenrollment=y` オプションを使用して、アダプティブフォームの作成に必要なフォーム固有の設定、テーマ、テンプレート、コアコンポーネントおよび依存関係を含めます。フォームポータルを使用している場合、`includeExamples=y` オプションを設定します。また、Forms Portal のコアコンポーネントもプロジェクトに追加されます。
+   * `includeFormsenrollment=y` オプションを使用して、アダプティブフォームの作成に必要なフォーム固有の設定、テーマ、テンプレート、コアコンポーネントおよび依存関係を含めます。フォームポータルを使用している場合、`includeExamples=y` オプションを設定します。また、フォームポータルのコアコンポーネントをプロジェクトに追加します。
 
-   * 以下を使用： `includeFormscommunications=y` 顧客コミュニケーション機能を組み込むために必要なFormsコアコンポーネントと依存関係を含めるオプション。
+   * `includeFormscommunications=y` オプションを使用して、Forms コアコンポーネントとカスタマーコミュニケーション機能を含めるために必要な依存関係を含めます。
 
 1. プロジェクトをローカル開発環境にデプロイします。以下のコマンドを使用して、ローカル開発環境にデプロイできます
 
@@ -330,15 +331,15 @@ Dispatcher を設定する詳細な手順については、「[ローカル Disp
 
 ローカル開発環境の準備が整いました。
 
-## 既存のAEMアーキタイプベースのプロジェクトに対するアダプティブFormsコアコンポーネントの有効化 {#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project}
+## 既存の AEM アーキタイプベースのプロジェクトに対するアダプティブフォームコアコンポーネントの有効化 {#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project}
 
-AEM Forms as a Cloud Service用にAEM Archetype バージョン 40 以降ベースのプログラムを使用している場合、お使いの環境でコアコンポーネントが自動的に有効になります。
+AEM Forms as a Cloud Service 用に AEM アーキタイプのバージョン 40 以降ベースのプログラムを使用している場合、お使いの環境でコアコンポーネントが自動的に有効になります。
 
-古いバージョンのアーキタイプに基づいてAEM Formsas a Cloud Service環境でアダプティブFormsコアコンポーネントを有効にするには、 WCM コアコンポーネントの例アーティファクトとFormsコアコンポーネントのアーティファクト（例を含む）の両方をプロジェクトに埋め込みます。
+古いバージョンのアーキタイプに基づく AEM Formsas a Cloud Service 環境でアダプティブフォームのコアコンポーネントを有効にするには、 WCM コアコンポーネント例のアーティファクトとフォームコアコンポーネントのアーティファクト（例を含む）の両方をプロジェクトに埋め込みます。
 
-1. プレーンテキストコードエディターでAEM Archetype プロジェクトフォルダーを開きます。 例えば、VS Code です。
+1. プレーンテキストコードエディターで AEM アーキタイプのプロジェクトフォルダーを開きます。 例：VS Code
 
-1. ローカル環境でAEM Archetype プロジェクトの最上位の.pom ファイル（親 pom）を開き、次のプロパティをファイルに追加して保存します。
+1. ローカル環境で AEM アーキタイププロジェクトの最上位の .pom ファイル（親 pom）を開き、次のプロパティをファイルに追加して保存します。
 
    ```XML
    <properties>
@@ -347,9 +348,9 @@ AEM Forms as a Cloud Service用にAEM Archetype バージョン 40 以降ベー�
    </properties>
    ```
 
-   の最新バージョンの `core.forms.components` および `core.wcm.components`, check [コアコンポーネントのドキュメント](https://github.com/adobe/aem-core-forms-components).
+   `core.forms.components` および `core.wcm.components` の最新バージョンについては、[コアコンポーネントのドキュメント](https://github.com/adobe/aem-core-forms-components)を確認してください。
 
-1. トップレベル（親） ppm.xml ファイルの dependencies セクションに、次の依存関係を追加します。
+1. 最上位（親）ppm.xml ファイルの依存関係セクションで、次の依存関係を追加します。
 
    ```XML
        <!-- Forms Core Component Dependencies -->
@@ -390,7 +391,7 @@ AEM Forms as a Cloud Service用にAEM Archetype バージョン 40 以降ベー�
        <!-- End of AEM Forms Core Component Dependencies -->
    ```
 
-1. all/pom.xmlファイルを開き、次の依存関係を追加して、アダプティブFormsコアコンポーネントアーティファクトをAEMアーキタイププロジェクトに追加します。
+1. all/pom.xml ファイルを開き、次の依存関係を追加して、アダプティブフォームのコアコンポーネントアーティファクトを AEM アーキタイププロジェクトに追加します。
 
    ```XML
        <dependency>
@@ -411,7 +412,7 @@ AEM Forms as a Cloud Service用にAEM Archetype バージョン 40 以降ベー�
    ```
 
    >[!NOTE]
-   次のアダプティブFormsコアコンポーネントアーティファクトがプロジェクトに含まれていないことを確認します。
+   次のアダプティブフォームのコアコンポーネントアーティファクトがプロジェクトに含まれていないことを確認します。
    `<dependency>`
    `<groupId>com.adobe.aem</groupId>`
    `<artifactId>core-forms-components-apps</artifactId>`
@@ -422,7 +423,7 @@ AEM Forms as a Cloud Service用にAEM Archetype バージョン 40 以降ベー�
    `<artifactId>core-forms-components-core</artifactId>`
    `</dependency>`
 
-1. [パイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja). パイプラインが正常に実行されると、お使いの環境でアダプティブFormsコアコンポーネントが有効になります。 また、アダプティブForms（コアコンポーネント）テンプレートとキャンバステーマが、Formsas a Cloud Service環境に追加されます。
+1. [パイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja). パイプラインが正常に実行されると、お使いの環境でアダプティブフォームのコアコンポーネントが有効になります。 また、アダプティブフォーム（コアコンポーネント）のテンプレートとキャンバステーマが、Forms as a Cloud Service 環境に追加されます。
 
 
 ## ローカル開発環境のアップグレード {#upgrade-your-local-development-environment}
