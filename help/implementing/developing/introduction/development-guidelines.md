@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service の開発ガイドライン
-description: AEM as a Cloud Service上での開発に関するガイドラインと、オンプレミスでのAEMおよび AMS でのAEMとは異なる重要な方法について説明します。
+description: AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスでの AEM および AMS での AEM との重要な違いについて説明します。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
 workflow-type: tm+mt
 source-wordcount: '2591'
-ht-degree: 91%
+ht-degree: 96%
 
 ---
 
@@ -14,10 +14,10 @@ ht-degree: 91%
 >[!CONTEXTUALHELP]
 >id="development_guidelines"
 >title="AEM as a Cloud Service の開発ガイドライン"
->abstract="AEM as a Cloud Service上での開発に関するガイドラインと、オンプレミスでのAEMおよび AMS でのAEMとは異なる重要な方法について説明します。"
+>abstract="AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスでの AEM および AMS での AEM との重要な違いについて説明します。"
 >additional-url="https://video.tv.adobe.com/v/330555/?captions=jpn" text="パッケージ構造のデモ"
 
-このドキュメントでは、AEMas a Cloud Service上での開発に関するガイドラインと、オンプレミスおよび AMS のAEMとは異なる重要な方法について説明します。
+このドキュメントでは、AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスおよび AMS の AEM とは異なる重要な方法について説明します。
 
 ## コードはクラスター対応である必要があります {#cluster-aware}
 
@@ -134,7 +134,7 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 |  ステージング | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN |
 |  実稼働 | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERROR |
 
-デバッグファイルの行は、通常は DEBUG で始まり、その後にログレベル、インストーラーのアクション、ログメッセージが示されます。次に例を示します。
+デバッグファイルの行は、通常は DEBUG で始まり、ログレベル、インストーラーのアクション、ログメッセージを示します。 次に例を示します。
 
 ```text
 DEBUG 3 WebApp Panel: WebApp successfully deployed
@@ -142,10 +142,10 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ログレベルは次のとおりです。
 
-| 0 | 重大なエラー | アクションが失敗し、インストーラーの処理を続行できません。 |
+| 0 | 致命的なエラー | アクションに失敗したので、インストーラーを続行できません。 |
 |---|---|---|
-| 1 | エラー | アクションが失敗しました。インストールは続行しますが、CRX の一部が正常にインストールされなかったので、機能しません。 |
-| 2 | 警告 | アクションは成功しましたが、問題が発生しました。CRX が正常に機能するかどうかは不明です。 |
+| 1 | エラー | アクションが失敗しました。 インストールは続行しますが、CRX の一部が正しくインストールされず、動作しません。 |
+| 2 | 警告 | アクションは成功しましたが、問題が発生しました。 CRX が正しく動作する場合と動作しない場合があります。 |
 | 3 | 情報 | アクションが成功しました。 |
 
 ### スレッドダンプ {#thread-dumps}
@@ -166,7 +166,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 代わりに、開発者コンソールからリポジトリーブラウザーを起動して、オーサー層、パブリッシュ層およびプレビュー層にあるすべての環境のリポジトリーに対して読み取り専用ビューを提供できます。リポジトリーブラウザーについて詳しくは、[こちら](/help/implementing/developing/tools/repository-browser.md)を参照してください。
 
-RDE、開発、ステージ、実稼動環境用の開発者コンソールで、AEMのas a Cloud Serviceの開発者環境をデバッグするための一連のツールを使用できます。 URL は、次のようにオーサーサービス URL またはパブリッシュサービス URL を調整して決定できます。
+AEM as a Cloud Service 開発者環境をデバッグするための一連のツールは、RDE 環境、開発環境、ステージ環境、実稼動環境の開発者コンソールで利用できます。URL は、次のようにオーサーサービス URL またはパブリッシュサービス URL を調整して決定できます。
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -266,22 +266,22 @@ SMTP サーバーホストは、メールサーバーのホストに設定して
 
 ## 複数値の大きなプロパティの回避 {#avoid-large-mvps}
 
-AEM as a Cloud Serviceの基盤となる Oak コンテンツリポジトリは、多値プロパティ (MVP) の数が多すぎる場合に使用することは意図されていません。 経験則として、MVP を 1000 未満に保つことが挙げられます。 ただし、実際のパフォーマンスは多くの要因に左右されます。
+AEM as a Cloud Service の基盤となる Oak コンテンツリポジトリは、複数値プロパティ（MVP）の数が非常に多い状況での使用を意図していません。経験則として、MVP を 1000 未満に保ってください。ただし、実際のパフォーマンスは多くの要因に左右されます。
 
-警告は、1,000 を超えるとデフォルトでログに記録されます。 次のようになります。
+警告は、1000 件を超えるとデフォルトでログに記録されます。 次のようになります。
 
 ```text
 org.apache.jackrabbit.oak.jcr.session.NodeImpl Large multi valued property [/path/to/property] detected (1029 values). 
 ```
 
-16 MB を超える MongoDB ドキュメントが原因で、大きな MVP がエラーを引き起こす可能性があり、その結果、次のようなエラーが発生します。
+大規模な MVP では、16 MB を超える MongoDB ドキュメントが原因で、次のようなエラーが発生する可能性があります。
 
 ```text
 Caused by: com.mongodb.MongoWriteException: Resulting document after update is larger than 16777216
 ```
 
-詳しくは、 [Apache Oak ドキュメント](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) を参照してください。
+詳しくは、[Apache Oak のドキュメント](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property)を参照してください。
 
 ## [!DNL Assets] 開発のガイドラインとユースケース {#use-cases-assets}
 
-Assets as a Cloud Serviceの開発ユースケース、推奨事項、リファレンス資料については、 [Assets の開発者向けリファレンス。](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)
+Assets as a Cloud Service の開発のユースケース、推奨事項、参考資料については、[Assets の開発者向けリファレンス](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)を参照してください。

@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
 workflow-type: tm+mt
 source-wordcount: '3509'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 91%
 
 ## はじめに {#introduction}
 
-AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Managed Services ソリューション上の AEM の場合と同様です。開発者はコードを作成しローカルでテストします。コードはその後、リモートの AEM as a Cloud Service 環境にプッシュされます。Cloud Manager（Managed Services のオプションのコンテンツ配信ツール）が必要です。これが、AEMのas a Cloud Serviceの開発環境、ステージ環境および実稼動環境にコードをデプロイするための唯一のメカニズムになりました。 これらの環境をデプロイする前に、機能の検証とデバッグをすばやくおこなうために、コードをローカル環境からに同期できます。 [迅速な開発環境](/help/implementing/developing/introduction/rapid-development-environments.md).
+AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Managed Services ソリューション上の AEM の場合と同様です。開発者はコードを作成しローカルでテストします。コードはその後、リモートの AEM as a Cloud Service 環境にプッシュされます。Cloud Manager（Managed Services のオプションのコンテンツ配信ツール）が必要です。これが、AEM as a Cloud Service 開発、ステージ、および実稼動環境にコードをデプロイするための唯一のメカニズムになりました。前述の環境をデプロイする前に、機能の検証とデバッグを迅速に行うために、コードをローカル環境から[迅速な開発環境](/help/implementing/developing/introduction/rapid-development-environments.md)に同期できます。
 
 [AEM バージョン](/help/implementing/deploying/aem-version-updates.md)のアップデートは、常に、[カスタムコード](#customer-releases)のプッシュとは別のデプロイメントイベントになります。別の見方をすれば、カスタムコードリリースは実稼動環境にある AEM バージョンに照らしてテストする必要があります。カスタムコードがその AEM 上にデプロイされるからです。その後に発生する AEM バージョンの更新で、頻繁に自動的に適用されます。これらは、既に導入されている顧客コードとの後方互換性を保つためのものです。
 
@@ -170,7 +170,7 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="パッケージマネージャー - 可変コンテンツパッケージの移行"
->abstract="パッケージマネージャーの使用例を調べて、実稼動環境での問題のデバッグ、オンプレミス環境からAEM Cloud 環境への小規模なコンテンツパッケージの転送などのために、コンテンツパッケージを「1 つ」でインストールする必要がある場合を確認します。"
+>abstract="コンテンツパッケージを「1 回限り」としてインストールするユースケースへのパッケージマネージャーの使用方法を説明します。これには、実稼動環境での問題をデバッグするために実稼動環境からステージング環境に特定のコンテンツを読み込む場合や、オンプレミス環境から AEM Cloud 環境に小規模なコンテンツパッケージを転送する場合などが含まれます。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja#cloud-migration" text="コンテンツ転送ツール"
 
 コンテンツパッケージを「1 回限りのもの」としてインストールする必要がある場合が考えられます。例えば、実稼動環境での問題をデバッグするために、実稼動環境からステージング環境に特定のコンテンツを読み込む場合などです。これらのシナリオでは、AEM as a Cloud Service 環境で [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) を使用できます。
@@ -279,38 +279,38 @@ AEM のアップデートと同様に、お客様向けリリースも、適切�
 
 デプロイメント後にエラーが報告または検出された場合は、ブルーバージョンへのロールバックが必要になる可能性があります。新しい構造（可変コンテンツ）はロールバックされないので、ブルーコードとグリーンバージョンで作成された新しい構造との互換性を確保することをお勧めします。古いコードに互換性がない場合は、それ以降のお客様向けリリースで修正を適用する必要があります。
 
-## 迅速な開発環境 (RDE) {#rde}
+## 迅速な開発環境（RDE） {#rde}
 
-[迅速な開発環境](/help/implementing/developing/introduction/rapid-development-environments.md) （つまり、RDE）を使用すると、ローカル開発環境で動作することが既に証明されている機能のテストに必要な時間を最小限に抑え、変更のデプロイとレビューを迅速におこなうことができます。
+[迅速な開発環境](/help/implementing/developing/introduction/rapid-development-environments.md)（略して RDE）を使用すると、デベロッパーは、ローカル開発環境での動作が既に証明済みの機能に要するテスト時間を最小限に抑え、変更を迅速にデプロイし確認できます。
 
-Cloud Manager パイプラインを介してコードをデプロイする通常の開発環境とは異なり、開発者はコマンドラインツールを使用してローカル開発環境から RDE にコードを同期します。 変更が RDE で正常にテストされたら、Cloud Manager パイプラインを通じて通常の Cloud Development 環境にデプロイする必要があります。このパイプラインにより、コードは適切な品質ゲートを経由します。
+Cloud Manager パイプラインを使用してコードをデプロイする通常の開発環境とは異なり、開発者はコマンドラインツールを使用してローカル開発環境から RDE にコードを同期できます。変更が RDE で正常にテストされたら、Cloud Manager パイプラインを通じて通常のクラウド開発環境にデプロイする必要があります。これにより、コードが適切な品質ゲートを経由します。
 
 ## 実行モード {#runmodes}
 
-既存の AEM ソリューションでは、お客様は任意の実行モードでインスタンスを実行することができ、それらの特定のインスタンスに OSGi 設定を適用したり OSGi バンドルをインストールしたりできます。定義されている実行モードには、通常、 *サービス* （オーサーとパブリッシュ）および環境 (rde、dev、stage、prod) に関連付けられています。
+既存の AEM ソリューションでは、お客様は任意の実行モードでインスタンスを実行することができ、それらの特定のインスタンスに OSGi 設定を適用したり OSGi バンドルをインストールしたりできます。定義されている実行モードには、通常、*サービス*（author および publish）と環境（rde、dev、stage、prod）があります。
 
 一方、AEM as a Cloud Service は、使用可能な実行モードと、それらへの OSGi バンドルおよび OSGi 設定のマッピング方法について、より保守的です。
 
-* OSGi 設定の実行モードでは、環境の RDE、dev、stage、prod を参照するか、サービスのオーサー、パブリッシュを参照する必要があります。 `<service>.<environment_type>` の組み合わせはサポートされていますが、この特定の順序で使用する必要があります（例えば、`author.dev` や `publish.prod` など）。OSGi トークンは、`getRunModes` メソッドを使用するのではなく、コードから直接参照する必要があります。このメソッドは、実行時に `environment_type` を組み込まなくなりました。詳しくは、[AEM as a Cloud Service の OSGi の設定](/help/implementing/deploying/configuring-osgi.md)を参照してください。
+* OSGi 設定の実行モードでは、環境については RDE（迅速な開発環境）、dev（開発）、stage（ステージ）、prod（実稼動）のいずれかを、サービスについては author（オーサー）または publish（パブリッシュ）を参照する必要があります。`<service>.<environment_type>` の組み合わせはサポートされていますが、この特定の順序で使用する必要があります（例えば、`author.dev` や `publish.prod` など）。OSGi トークンは、`getRunModes` メソッドを使用するのではなく、コードから直接参照する必要があります。このメソッドは、実行時に `environment_type` を組み込まなくなりました。詳しくは、[AEM as a Cloud Service の OSGi の設定](/help/implementing/deploying/configuring-osgi.md)を参照してください。
 * OSGi バンドルの実行モードは、サービス（author、publish）のみに制限されます。実行モードごとに、OSGi バンドルを `install.author` または `install.publish` の配下のコンテンツパッケージにインストールする必要があります。
 
 AEM as a Cloud Serviceでは、実行モードを使用して特定の環境やサービスのコンテンツをインストールすることはできません。 開発環境で、ステージング環境または実稼動環境にないデータまたはHTMLを使用して開発環境をシードする必要がある場合は、パッケージマネージャーを使用できます。
 
 サポートされている実行モード設定は次のとおりです。
 
-* **config** (*デフォルトは、すべてのAEMサービスに適用されます*)
+* **config**（(*デフォルト。すべての AEM サービスに適用*）
 * **config.author**（*すべての AEM オーサーサービスに適用*）
 * **config.author.dev**（*開発環境の AEM オーサーサービスに適用*）
-* **config.author.rde** (*AEM RDE Author サービスに適用されます*)
+* **config.author.rde**（*AEM RDE オーサーサービスに適用*）
 * **config.author.stage**（*ステージング環境の AEM オーサーサービスに適用*）
 * **config.author.prod**（*実稼動環境の AEM オーサーサービスに適用*）
 * **config.publish**（*AEM パブリッシュサービスに適用*）
 * **config.publish.dev**（*開発環境の AEM パブリッシュサービスに適用*）
-* **config.publish.rde** (*AEM RDE Publish サービスに適用されます*)
+* **config.publish.rde**（*AEM RDE パブリッシュサービスに適用*）
 * **config.publish.stage**（*ステージング環境の AEM パブリッシュサービスに適用*）
 * **config.publish.prod**（*実稼動環境の AEM パブリッシュサービスに適用*）
 * **config.dev**（*開発環境の AEM サービスに適用*）
-* **config.rde** (*RDE サービスに適用*)
+* **config.rde**（*RDE サービスに適用*）
 * **config.stage**（*ステージング環境の AEM サービスに適用*）
 * **config.prod**（*実稼動環境の AEM サービスに適用*）
 

@@ -63,7 +63,7 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 });
 ```
 
-最後に、関数 `fetchJsonFromGraphQL()` は、AEMヘッドレスクライアントを使用して取得リクエストを実行するために使用されます。 コードが変更されるたびに呼び出されます。または、「Refetch」リンクを押すことでトリガーできます。 実際の `aemHeadlessClient.runPersistedQuery(..)` 呼び出しは 34 行目で発生します。 少し後で、この JSON データのレンダリング方法を変更しますが、現時点では、このデータを `#output` div を `resultToPreTag(queryResult)` 関数に置き換えます。
+最後に、関数 `fetchJsonFromGraphQL()` は、AEMヘッドレスクライアントを使用して取得リクエストを実行するために使用されます。 コードが変更されるたびに呼び出されます。または、「Refetch」リンクを押すことでトリガーできます。 実際の `aemHeadlessClient.runPersistedQuery(..)` 呼び出しは 34 行目で発生します。 少し後で、この JSON データのレンダリング方法を変更しますが、現時点では、このデータを `#output` div を使用 `resultToPreTag(queryResult)` 関数に置き換えます。
 
 ## 永続クエリからデータを取得 {#use-persisted-query}
 
