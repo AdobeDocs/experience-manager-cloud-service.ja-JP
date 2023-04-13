@@ -6,7 +6,7 @@ feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 source-git-commit: 0d4db4fc19180cff5e15d58c4506933597ca7cce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1292'
 ht-degree: 100%
 
