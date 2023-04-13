@@ -1,14 +1,14 @@
 ---
 title: クイックビューを使用したカスタムポップアップの作成
-description: e コマースエクスペリエンスでデフォルトのクイックビューがどのように使用され、ポップアップウィンドウに購入を促す製品情報が表示されるかを説明します。 カスタムコンテンツをトリガーして、ポップアップウィンドウに表示できます。
+description: e コマースエクスペリエンスでデフォルトのクイックビューが使用され、ポップアップウィンドウに購入を促すための商品情報が表示される方法を説明します。ポップアップウィンドウに表示するカスタムコンテンツをトリガーできます。
 contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1002'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
