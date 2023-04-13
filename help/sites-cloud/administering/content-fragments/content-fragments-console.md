@@ -5,10 +5,10 @@ landing-page-description: コンテンツフラグメントコンソールでコ
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: d02bfc6fc6502a96e270e87ea8567d7a55e33b3a
+source-git-commit: 6c15a4dc408d96a6532da67c1736bc3e96824321
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1028'
+ht-degree: 85%
 
 ---
 
@@ -162,6 +162,22 @@ ht-degree: 0%
 * 再利用のために保存した検索条件フィルターを取得するオプション
 
 ![コンテンツフラグメントコンソール - フィルタリング](assets/cfc-console-filter.png)
+
+### 高速フィルタリング {#fast-filtering}
+
+リスト内の特定の列の値をクリックして、述語を選択することもできます。 1 つ以上の値を選択して、述語を組み合わせることができます。
+
+例えば、「 **公開済み** 内 **ステータス** 列：
+
+>[!NOTE]
+>
+>高速フィルターは、 **モデル**, **ステータス**, **変更者**、および **公開者** 列。
+
+![コンテンツフラグメントコンソール - フィルタリング](assets/cfc-console-fast-filter-01.png)
+
+選択すると、フィルターの述語として表示され、それに応じてリストがフィルターされます。
+
+![コンテンツフラグメントコンソール - フィルタリング](assets/cfc-console-fast-filter-02.png)
 
 ## フラグメントの検索 {#searching-fragments}
 
