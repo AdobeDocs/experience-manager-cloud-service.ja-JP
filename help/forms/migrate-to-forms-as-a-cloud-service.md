@@ -1,6 +1,6 @@
 ---
 title: AEM 6.5 Forms と AEM 6.4 Forms から  [!DNL AEM Forms] as a Cloud Service 環境に移行する方法
-description: からの移行 [!DNL AEM Forms] （オンプレミス環境と AMS 環境）から [!DNL AEM Forms] as a Cloud Service環境
+description: ' [!DNL AEM Forms] （オンプレミス環境と AMS 環境）から [!DNL AEM Forms]  as a Cloud Servicee 環境への移行'
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
@@ -8,13 +8,13 @@ level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
 source-git-commit: 4416c43b408f576a547590796141a6b551e25681
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1335'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-# からの移行 [!DNL AEM Forms] （オンプレミス環境と AMS 環境）から [!DNL AEM Forms] as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
+# [!DNL AEM Forms]（オンプレミス環境と AMS 環境）から [!DNL AEM Forms] as a Cloud Service への移行  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
 
 アダプティブフォーム、テーマ、テンプレート、クラウドの設定情報は、OSGi 上の <!-- AEM 6.3 Forms--> AEM 6.4 Forms および OSGi の AEM 6.5 Forms から [!DNL AEM] as a Cloud Service に移行できます。これらのアセットを移行する前に、移行ユーティリティを使用して、以前のバージョンで使用されていた形式を [!DNL AEM] as a Cloud Service で使用されていた形式に変換します。移行ユーティリティを実行すると、以下の項目が更新されます。
 
@@ -29,7 +29,7 @@ ht-degree: 88%
 
 * （AEM 6.3 Forms、または AEM 6.4 Forms または AEM 6.5 Forms にアップグレードした旧バージョンの環境のみ）AEM 6.3 Forms または以前のバージョンで使用可能な、初期設定のテンプレートおよびテーマに基づくアダプティブフォームは、[!DNL AEM Forms] as a Cloud Service ではサポートされていません。
 
-* Adobe Experience Manager Forms as a Cloud Serviceでは、Adobe Experience Manager 6.5 Forms( オンプレミスおよびAdobe管理サービス ) 環境と比較して、既存の機能にいくつかの注目すべき変更が加えられました。 サービスへの移行を進める前に、 [これらの注意すべき変更について学ぶ](notable-changes.md) そして [機能レベルの違い](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#viewing-report) 組織で必要な機能に基づいて移行を決定する場合。
+* Adobe Experience Manager Forms as a Cloud Service は、Adobe Experience Manager 6.5 Forms（オンプレミスおよびアドビのマネージドサービス）環境と比較して、既存の機能にいくつかの顕著な変更を加えました。サービスへの移行を進める前に、[これらの注目すべき変更点](notable-changes.md)と、[機能レベルの違い](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=ja#viewing-report)について説明し、組織で必要な機能に基づいて移行を決定してください。
 
 
 
@@ -58,7 +58,7 @@ ht-degree: 88%
 * [!DNL AEM Forms] as a Cloud Service およびローカル [!DNL AEM Forms] 環境の管理者権限を持つアカウント。
 * [ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) からベストプラクティスアナライザー、コンテンツ転送ツール、[!DNL AEM Forms] 移行ユーティリティをダウンロードしてインストールする
 
-* [ベストプラクティスアナライザー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=ja#cloud-migration) ツールを実行し、報告された問題を修正します。Adobe Experience Manager FormsからAdobe Experience Manager Formsへのas a Cloud Service的な移行に関して考えられる問題については、 [Formsas a Cloud ServiceのAEM Pattern Detection](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#viewing-report).
+* [ベストプラクティスアナライザー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=ja#cloud-migration) ツールを実行し、報告された問題を修正します。Adobe Experience Manager Forms から Adobe Experience Manager Forms as a Cloud Service への移行に関して考えられる問題については、[Forms as a Cloud Service の AEM パターン検出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=ja#viewing-report)を参照してください。
 
 
 <!-- * Download the latest [compatibility package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases) for your [!DNL AEM Forms] version. -->
