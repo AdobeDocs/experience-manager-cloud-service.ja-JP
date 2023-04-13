@@ -3,9 +3,9 @@ title: エクスペリエンスフラグメント
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントを使用すると、エクスペリエンスの再利用性と柔軟性を高めることができます。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2064'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Adobe Experience Manager as a Cloud Service 内では、エクスペリエンス
 >[!NOTE]
 >
 >**[コンテンツフラグメント](/help/sites-cloud/authoring/fundamentals/content-fragments.md)**&#x200B;と&#x200B;**エクスペリエンスフラグメント**&#x200B;は、AEM 内の異なる機能です。
->* **コンテンツフラグメント** は編集コンテンツで、定義と構造は含まれますが、追加の視覚的なデザインやレイアウトは含まれません。 これらを使用して、テキスト、数値、日付などの構造化データにアクセスできます。
+>* **コンテンツフラグメント**&#x200B;は、定義と構造を備えたエディトリアルコンテンツですが、視覚的なデザインやレイアウトは追加されていません。コンテンツフラグメントを使用すれば、テキスト、数値、日付などの構造化データにアクセスできます。
 >* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツであり、web ページのフラグメントです。
 >
 >エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
