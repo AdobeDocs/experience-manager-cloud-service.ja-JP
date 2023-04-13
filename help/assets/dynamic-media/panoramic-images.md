@@ -6,7 +6,7 @@ feature: Panoramic Images
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
 source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '147'
 ht-degree: 100%
 
@@ -25,7 +25,6 @@ ht-degree: 100%
 アップロードするアセットが、パノラマ画像ビューアで使用する球体パノラマ画像として認められるためには、アセットが次のいずれかまたは両方を満たしている必要があります。
 
 * 縦横比が 2 である。
-
 
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
