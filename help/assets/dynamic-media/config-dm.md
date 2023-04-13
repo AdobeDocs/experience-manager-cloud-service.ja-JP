@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3795'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -130,7 +130,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 これで基本設定は完了です。Dynamic Media を使用する準備が整いました。
 
-ACL（アクセス制御リスト）権限の有効化など、設定をさらにカスタマイズする場合は、必要に応じて、 [Dynamic Mediaでの詳細設定](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+ACL（アクセス制御リスト）権限など、さらに設定をカスタマイズする場合は、[Dynamic Media の詳細設定](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)で示す任意のタスクを実行できます。
 
 ### 新しい Dynamic Media 設定のトラブルシューティング {#troubleshoot-dm-config}
 
@@ -188,7 +188,7 @@ Dynamic Media でのパスワードの有効期限は、現在のシステム日
 
 Dynamic Media のセットアップと設定をさらにカスタマイズしたり、パフォーマンスを最適化したりする場合は、次の&#x200B;_オプション_&#x200B;タスクを 1 つまたは複数実行できます。
 
-* [（オプション） Dynamic Mediaでの ACL 権限の有効化](#optional-enable-acl)
+* [（オプション）Dynamic Media での ACL 権限の有効化](#optional-enable-acl)
 * [（オプション）Dynamic Media 設定のセットアップと設定](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [（オプション）Dynamic Media のパフォーマンスの調整](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
@@ -198,11 +198,11 @@ Dynamic Media のセットアップと設定をさらにカスタマイズした
 
 -->
 
-### （オプション） Dynamic Mediaでのアクセス制御リスト権限の有効化 {#optional-enable-acl}
+### （オプション）Dynamic Media でのアクセス制御リスト権限の有効化 {#optional-enable-acl}
 
-AEMでDynamic Mediaを実行すると、現在転送されています `/is/image` PlatformServerServlet の ACL（アクセス制御リスト）権限を確認せずに、セキュアプレビュー画像サービングに対する要求を送信します。 しかし、 _有効_ ACL 権限。 これにより、認証された `/is/image` リクエスト。 ユーザーがアセットへのアクセスを許可されていない場合は、「403 - Forbidden」エラーが表示されます。
+AEM で Dynamic Media を実行すると、現在、PlatformServerServlet の ACL（アクセス制御リスト）権限を確認せずに、`/is/image` リクエストをセキュアプレビュー画像サーバー側に転送します。ただし、ACL 権限を&#x200B;_有効にする_&#x200B;ことはできます。これにより、許可された `/is/image` リクエストが転送されます。 アセットへのアクセスを許可されていないユーザーには、「403 - Forbidden」エラーが表示されます。
 
-**Dynamic Mediaで ACL 権限を有効にするには：**
+**Dynamic Media で ACL 権限を有効にする手順は次のとおりです。**
 
 1. Experience Manager から、**[!UICONTROL ツール]**／**[!UICONTROL 操作]**／**[!UICONTROL Web コンソール]**&#x200B;に移動します。
 
@@ -212,18 +212,18 @@ AEMでDynamic Mediaを実行すると、現在転送されています `/is/imag
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
-1. ページで、名前までスクロールします。 _Adobe CQ Scene7 PlatformServer_.
+1. ページで、_Adobe CQ Scene7 PlatformServer_ という名前までスクロールします。
 
-1. 名前の右側にある鉛筆アイコン (**[!UICONTROL 設定値の編集]**) をクリックします。
+1. 名前の右側にある鉛筆アイコン（**[!UICONTROL 設定値を編集]**）を選択します。
 
-1. の **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** ページで、次の 2 つの設定のチェックボックスをオンにします。
+1. **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** ページで、次の 2 つの設定のチェックボックスをオンにします。
 
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name`  — この設定を有効にすると、保存する権限の結果が 2 分（デフォルト）間キャッシュされます。
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name`  — この設定を有効にすると、Dynamic Media Image Server を介してアセットをプレビューする際のユーザーのアクセスを検証します。
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - この設定を有効にすると、保存する権限の結果が 2 分間（デフォルト）キャッシュされます。
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` - この設定を有効にすると、Dynamic Media 画像サーバーを介してアセットをプレビューする際のユーザーのアクセスを検証します。
 
-   ![Dynamic Media - Scene7モードでアクセス制御リスト設定を有効にする](/help/assets/dynamic-media/assets/acl.png)
+   ![Dynamic Media - Scene7 モードでアクセス制御リスト設定を有効にする](/help/assets/dynamic-media/assets/acl.png)
 
-1. ページの右下隅にある「 」を選択します。 **[!UICONTROL 保存]**.
+1. ページの右下隅付近にある「**[!UICONTROL 保存]**」を選択します。
 
 ### （オプション）Dynamic Media 設定のセットアップと設定 {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
