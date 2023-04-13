@@ -3,9 +3,9 @@ title: 相違点と新機能 - Adobe Experience Manager as a Cloud Service
 description: 相違点と新機能 - Adobe Experience Manager（AEM）as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 6c06df453a2c9116889c25b1d1198df2dbf26f88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1903'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ AEM as a Cloud Service には次の機能が追加されました。
 
 ## AEM のアップデート {#aem-updates}
 
-AEM as a Cloud Service では、継続的統合および継続的配信（CI／CD）を使用して、プロジェクトが確実に最新の AEM バージョンで稼働できるようになりました。つまり、ユーザーに対するサービスが中断されることなく、実稼動インスタンスとステージングインスタンスが最新のAEMバージョンに更新されます。
+AEM as a Cloud Service では、継続的統合および継続的配信（CI／CD）を使用して、プロジェクトが確実に最新の AEM バージョンで稼働できるようになりました。これは、ユーザーへのサービスが中断されることなく、実稼働インスタンスとステージングインスタンスが AEM の最新バージョンに更新されることを意味します。
 
 >[!NOTE]
 >
