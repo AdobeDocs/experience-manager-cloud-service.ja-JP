@@ -3,9 +3,9 @@ title: サイトテーマのカスタマイズ
 description: サイトテーマの作成方法、カスタマイズ方法、および AEM のライブコンテンツを使用したテスト方法を説明します。
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
 source-git-commit: 9f5930fce8c2a7768cad696746a7c9fa3d8c2f9e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '963'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ AEM 管理者が提供するテーマを編集場所に抽出し、目的のエ�
 
    >[!TIP]
    >
-   >これらの資格情報がない場合は、管理者に問い合わせて、 [「テンプレートからサイトを作成」記事の「プロキシユーザーを設定」セクション](/help/journey-sites/quick-site/create-site.md#proxy-user) このジャーニー内。
+   >これらの資格情報がない場合は、このジャーニーにおける[「テンプレートからサイトを作成」記事の「プロキシユーザーを設定」の節](/help/journey-sites/quick-site/create-site.md#proxy-user)を言及したうえで、管理者にお問い合わせください。
 
 1. ログインしたら、AEM 管理者が指定したサンプルコンテンツのパスを指すように、ブラウザーで URL を変更します。
 
