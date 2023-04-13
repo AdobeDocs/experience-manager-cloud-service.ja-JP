@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 0529156e83ebb4d74d76ebc5c0bf882bd09f7b43
+source-git-commit: 18549d90d9e326e30c5835a97c2c446dff616ee7
 workflow-type: tm+mt
-source-wordcount: '4026'
+source-wordcount: '4031'
 ht-degree: 98%
 
 ---
@@ -177,6 +177,7 @@ ht-degree: 98%
       + [アプリのコンテンツ構造の作成](/help/trials/headless/content-structure.md)
       + [ヘッドレスコンテンツの作成](/help/trials/headless/create-content.md)
       + [GraphQL API を使用したコンテンツの抽出](/help/trials/headless/extract-content.md)
+      + [JavaScript で JSON コンテンツを取得](/help/trials/headless/code-playground.md)
 + AEM as a Cloud Service 移行ジャーニー {#migration-journey}
    + [AEM as a Cloud Service の移動の概要](/help/journey-migration/getting-started.md)
    + [準備段階](/help/journey-migration/readiness.md)
