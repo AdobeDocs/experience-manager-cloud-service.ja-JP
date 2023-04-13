@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: af3b5950a36bbd4a8d1e0de9591d31c50fa774c8
 workflow-type: tm+mt
 source-wordcount: '4023'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -32,11 +32,11 @@ ht-degree: 93%
    + [ドキュメントジャーニー](/help/journey-documentation/documentation-journeys.md)
 + リリースノート {#release-notes}
    + [リリース情報](/help/release-notes/home.md)
-   + AEMaaCS 機能リリースノート {#release-notes}
+   + AEMaaCS 機能のリリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
-      + 2023年 {#2023}
+      + 2023年度 {#2023}
          + [リリースノート（2023.1.0）](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
-      + 2022年 {#2022}
+      + 2022年度 {#2022}
          + [リリースノート（2022.10.0）](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
          + [リリースノート（2022.8.0）](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
          + [リリースノート（2022.7.0）](/help/release-notes/release-notes-cloud/2022/release-notes-2022-7-0.md)
@@ -71,14 +71,14 @@ ht-degree: 93%
          + [リリースノート（2020.2.0）](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
    + AEMaaCS メンテナンスリリースノート {#maintenance}
       + [最新のメンテナンスリリースノート](/help/release-notes/maintenance/latest.md)
-      + 2023年 {#2023}
+      + 2023年度 {#2023}
          + [メンテナンスリリースノート (2023.1.0)](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Cloud Manager のリリースノート {#cloud-manager}
       + [最新のリリースノート](/help/implementing/cloud-manager/release-notes/current.md)
-      + 2023年 {#2023}
+      + 2023年度 {#2023}
          + [リリースノート（2023.2.0）](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [リリースノート（2023.1.0）](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
-      + 2022年 {#2022}
+      + 2022年度 {#2022}
          + [リリースノート（2022.12.0）](/help/implementing/cloud-manager/release-notes/2022/2022-12-0.md)
          + [リリースノート（2022.11.0）](/help/implementing/cloud-manager/release-notes/2022/2022-11-0.md)
          + [リリースノート（2022.10.0）](/help/implementing/cloud-manager/release-notes/2022/2022-10-0.md)
@@ -118,7 +118,7 @@ ht-degree: 93%
          + [リリースノート（2020.2.0）](/help/implementing/cloud-manager/release-notes/2020/2020-2-0.md)
    + 移行ツールのリリースノート {#migration-tools}
       + [最新のリリースノート](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
-      + 2022年 {#2022}
+      + 2022年度 {#2022}
          + [リリースノート（2022.12.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-12-0.md)
          + [リリースノート（2022.9.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-09-0.md)
          + [リリースノート（2022.7.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-07-0.md)
@@ -513,20 +513,20 @@ ht-degree: 93%
       + [アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
       + [よくある質問](/help/forms/faq.md)
       + [既知の問題](/help/forms/known-issues.md)
-   + セットアップと移行 {#setup-configure-migrate}
+   + 設定と移行 {#setup-configure-migrate}
       + [Cloud Service 環境へのオンボード](/help/forms/setup-forms-cloud-service.md)
       + [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
       + [統合ストレージコネクタの設定](/help/forms/configure-unified-storage-connector.md)
-      + [移行元 [!DNL AEM 6.5 Forms] 以前 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+      + [as a Cloud Service の移行元 [!DNL AEM 6.5 Forms] または以前のバージョン [!DNL AEM Forms] ](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [グループと権限](/help/forms/forms-groups-privileges-tasks.md)
       + [アダプティブフォーム、PDF フォームおよびその他のアセットの読み込み、書き出し、整理](/help/forms/import-export-forms-templates.md)
    + {#integrate} の統合
       + サービス {#services}
-         + [AEM FormsとAdobe Signのas a Cloud Service](/help/forms/adobe-sign-integration-adaptive-forms.md)
-         + [AEM Forms as a Cloud Serviceと DocuSign の統合](/help/forms/integrate-docusign-adaptive-forms.md)
-         + [AEM FormsとAdobe Analyticsのas a Cloud Service](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+         + [AEM Forms as a Cloud Service と Adobe Sign の統合](/help/forms/adobe-sign-integration-adaptive-forms.md)
+         + [AEM Forms as a Cloud Service と DocuSign の統合](/help/forms/integrate-docusign-adaptive-forms.md)
+         + [AEM Forms as a Cloud Service と Adobe Analytics の統合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [アダプティブフォームと Microsoft Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)
-         + [AEM SitesページにアダプティブFormsを埋め込む](/help/forms/embed-adaptive-form-aem-sites.md)
+         + [AEM Sites ページへのアダプティブフォームの埋め込み](/help/forms/embed-adaptive-form-aem-sites.md)
       + フォームデータモデル {#use-form-data-model}
          + [データソースの Cloud Service への接続](/help/forms/data-integration.md)
          + [データソースの設定](/help/forms/configure-data-sources.md)
@@ -537,14 +537,14 @@ ht-degree: 93%
          + [フォームデータモデルの操作](/help/forms/work-with-form-data-model.md)
          + [フォームデータモデルの使用](/help/forms/using-form-data-model.md)
    + アダプティブフォーム {#adaptive-forms-authoring}
-      + アダプティブFormsのオーサリング — コアコンポーネント {#authoring-adaptive-forms-core-components}
+      + アダプティブフォームのオーサリング - コアコンポーネント {#authoring-adaptive-forms-core-components}
          + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
             + [アダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
-            + [アダプティブフォームのテーマを作成する — コアコンポーネント](/help/forms/using-themes-in-core-components.md)
+            + [アダプティブフォームのテーマの作成 - コアコンポーネント](/help/forms/using-themes-in-core-components.md)
             + [アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-core-components.md)
             + [Summit ワークブック](/help/forms/summit-2023-workbook.md)
-      + アダプティブFormsのオーサリング — 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
-         + PDF formsをアダプティブFormsに変換する {#afcs}
+      + アダプティブフォームのオーサリング - 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
+         + PDF フォームのアダプティブフォームへの変換 {#afcs}
             + [自動フォーム変換サービスの概要](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ja)
             + [既存の PDF フォームからアダプティブフォームへの変換](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ja)
             + [変換後のフォームのレビューと修正](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=ja#welcome-to-review-and-correct-editor)
@@ -561,7 +561,7 @@ ht-degree: 93%
             + [コアコンポーネントの使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
             + [手書き署名の適用](/help/forms/signing-forms-using-scribble.md)
             + [アダプティブフォームへのテーブルの追加](/help/forms/adaptive-forms-tables.md)
-            + [アダプティブフォームへの脚注のサポートの追加](/help/forms/footnotes-richtextsupport.md)
+            + [アダプティブフォームへの脚注サポートの追加](/help/forms/footnotes-richtextsupport.md)
          + アダプティブフォームのレイアウト設定とスタイルの適用 {#configure-layout-of-an-adaptive-form}
             + [アダプティブフォームのレイアウト設定](/help/forms/layout-capabilities-adaptive-forms.md)
             + [レイアウトモードを使用したコンポーネントのサイズ変更](/help/forms/resize-using-layout-mode.md)
@@ -578,7 +578,7 @@ ht-degree: 93%
             + [カスタム送信アクションの作成](/help/forms/custom-submit-action-form.md)
          + [アダプティブフォームフィールドに事前入力](/help/forms/prepopulate-adaptive-form-fields.md)
          + [レコードのドキュメントを生成](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-         + [アダプティブフォームに新しいロケールのサポートを追加する](/help/forms/supporting-new-language-localization.md)
+         + [アダプティブフォームへの新しいロケールのサポートの追加](/help/forms/supporting-new-language-localization.md)
          + メタデータの追加または向上 {#manage-metadata}
             + [アダプティブフォームのメタデータの追加、削除、編集](/help/forms/manage-form-metadata.md)
             + [アダプティブフォームのメタデータプロパティの再利用](/help/forms/reusing-adaptive-forms.md)
@@ -586,7 +586,7 @@ ht-degree: 93%
             + [アクセシブルなアダプティブフォームの作成](/help/forms/creating-accessible-adaptive-forms.md)
          + [フォームポータルの設定](/help/forms/configure-forms-portal.md)
          + [レビューの作成と管理](/help/forms/create-reviews-forms.md)
-   + Forms中心のワークフロー {#create-form-centric-workflows}
+   + Forms 中心のワークフロー {#create-form-centric-workflows}
       + [ワークフローでの Forms 中心のステップの使用 + ステップリファレンス](/help/forms/aem-forms-workflow-step-reference.md)
       + [Forms 中心のワークフローでの変数の使用](/help/forms/variable-in-aem-workflows.md)
       + [「不在」オプションの使用](/help/forms/configure-out-of-office-settings.md)
@@ -599,9 +599,9 @@ ht-degree: 93%
       + [PDF ドキュメントでのカスタムフォントの使用](/help/forms/use-custom-fonts.md)
       + [既知の問題、ベストプラクティス、よくある質問](/help/forms/communications-known-issues-limitations.md)
    + 開発者 API リファレンス {#aem-forms-developer-api-reference}
-      + [AEM FormsCloud Service通信 API リファレンス](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
-      + [AEM FormsCloud ServiceJavaScript API リファレンス](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
-      + [AEM FormsCloud ServiceJava API リファレンス](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
+      + [AEM Forms Cloud Service 通信 API リファレンス](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
+      + [AEM Forms Cloud Service JavaScript API リファレンス](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
+      + [AEM Forms Cloud Service Java API リファレンス](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
    + トラブルシューティング {#troubleshooting-aem-forms-cloud-service}
       + [インストールと設定](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher と CDN のキャッシュ](/help/forms/troubleshooting-caching-performance.md)
@@ -707,7 +707,7 @@ ht-degree: 93%
       + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
       + [永続的な GraphQL クエリ](/help/headless/graphql-api/persisted-queries.md)
       + [GraphQLクエリの最適化](/help/headless/graphql-api/graphql-optimization.md)
-      + [最適化されたGraphQLフィルタリング用にコンテンツフラグメントを更新する](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
+      + [最適化された GraphQL フィルタリング用コンテンツフラグメントの更新](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [GraphQL クエリの例](/help/headless/graphql-api/sample-queries.md)
    + [コンテンツフラグメント REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=ja)
    + セキュリティ {#security}
@@ -821,7 +821,7 @@ ht-degree: 93%
       + [AEM 技術基盤](/help/implementing/developing/introduction/aem-technologies.md)
       + [API リファレンス資料](/help/implementing/developing/reference-materials.md)
       + [サーバー側 API のアクセストークンの生成](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-      + [サーバー側 API（レガシー）用のアクセストークンの生成](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
+      + [サーバーサイド API のアクセストークンの生成（レガシー）](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [サイトのクイック作成とフロントエンドのカスタマイズ](/help/implementing/developing/introduction/quick-site-creation.md)
       + [フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [サイトのテンプレートとテーマのカスタマイズ](/help/implementing/developing/introduction/customizing-site-templates-themes.md)

@@ -5,7 +5,7 @@ exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 source-git-commit: cf09c7774b633ae2cf1c5b28fee2bd8191d80bb3
 workflow-type: tm+mt
 source-wordcount: '1846'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -101,7 +101,8 @@ Azure portal の既存のコンテナープロパティページから、「**�
 >最新のリリースバージョンの CTT を使用する必要があります。
 
 最新の CTT リリースには Amazon S3、Azure Blob Storage、ファイルデータストアの AzCopy のサポートが含まれています。
-CTT の最新リリースは、[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)ポータルからダウンロードできます。サポートされるのはバージョン 2.0.0 以降のみであり、最新バージョンを使用することをお勧めします。
+CTT の最新リリースは、[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)ポータルからダウンロードできます。
+なお、バージョン 2.0.0 以降しかサポートされていませんので、最新バージョンの使用をお勧めします。
 
 ### 3. azcopy.config ファイルを設定する {#configure-azcopy-config-file}
 

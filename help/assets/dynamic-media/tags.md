@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
 source-wordcount: '6679'
 ht-degree: 100%

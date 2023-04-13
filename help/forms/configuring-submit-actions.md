@@ -2,10 +2,10 @@
 title: アダプティブフォームの送信アクションの設定方法
 description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自のアクションを作成できます。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 7a608304dc93e53815b488de4087f26e346be4b5
+source-git-commit: 921dc0f109b1faaa6d53086c4ca29627cb30bef8
 workflow-type: tm+mt
 source-wordcount: '3133'
-ht-degree: 60%
+ht-degree: 85%
 
 ---
 
@@ -159,170 +159,170 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 * **[!UICONTROL 処理サーバー URL]**：処理サーバーは、Forms または AEM ワークフローがトリガーされるサーバーです。これは、AEM オーサーインスタンスまたは別のサーバーの URL と同じです。
 
-* **[!UICONTROL 処理サーバーのユーザー名]**:ワークフローユーザーのユーザー名
+* **[!UICONTROL 処理サーバーのユーザー名]**：ワークフローユーザーのユーザー名
 
-* **[!UICONTROL 処理サーバーのパスワード]**:ワークフローユーザーのパスワード
+* **[!UICONTROL 処理サーバーのパスワード]**：ワークフローユーザーのパスワード
 
 ## SharePoint に送信 {#submit-to-sharedrive}
 
-この **[!UICONTROL SharePointに送信]** 送信アクションは、アダプティブフォームとMicrosoft® SharePointストレージを接続します。 接続されたMicrosoft® Sharepoint ストレージに、フォームデータファイル、添付ファイル、またはレコードのドキュメントを送信できます。 次の手順で **[!UICONTROL SharePointに送信]** アダプティブフォームでの送信アクション：
+この **[!UICONTROL SharePointに送信]** 送信アクションは、アダプティブフォームとMicrosoft® SharePointストレージを接続します。 接続されたMicrosoft® Sharepoint ストレージに、フォームデータファイル、添付ファイル、またはレコードのドキュメントを送信できます。 アダプティブフォームで「**[!UICONTROL SharePoint に送信]**」送信アクションを使用するには、次の手順に従います。
 
 1. [SharePoint設定の作成](#create-a-sharepoint-configuration-create-sharepoint-configuration):AEM FormsをMicrosoft® Sharepoint ストレージに接続します。
 2. [アダプティブフォームで「SharePointに送信」送信アクションを使用する](#use-sharepoint-configuartion-in-af):アダプティブフォームが設定済みのMicrosoft® SharePointに接続されます。
 
-### SharePoint設定の作成 {#create-sharepoint-configuration}
+### Microsoft SharePoint 設定の作成 {#create-sharepoint-configuration}
 
 AEM FormsをMicrosoft® Sharepoint ストレージに接続するには：
 
 1. 次に移動： **AEM Forms Author** インスタンス > **[!UICONTROL ツール]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
 1. 次に、 **[!UICONTROL Microsoft® SharePoint]**&#x200B;にリダイレクトされている場合、 **[!UICONTROL SharePoint Browser]**.
-1. を選択します。 **設定コンテナ**. 設定は、選択した設定コンテナに保存されます。
-1. 「**[!UICONTROL 作成]**」をクリックします。SharePoint設定ウィザードが表示されます。
+1. **設定コンテナ**&#x200B;を選択します。設定は、選択した設定コンテナに保存されます。
+1. 「**[!UICONTROL 作成]**」をクリックします。SharePoint 設定ウィザードが表示されます。
    ![SharePoint の設定](/help/forms/assets/sharepoint_configuration.png)
-1. 次を指定： **[!UICONTROL タイトル]**, **[!UICONTROL クライアント ID]**, **[!UICONTROL クライアント秘密鍵]** および **[!UICONTROL OAuth URL]**. OAuth URL のクライアント ID、クライアント秘密鍵、テナント ID を取得する方法について詳しくは、 [Microsoft®ドキュメント](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+1. 「**[!UICONTROL タイトル]**」、「**[!UICONTROL クライアント ID]**」、「**[!UICONTROL クライアント秘密鍵]**」および「**[!UICONTROL OAuth URL]**」を指定します。OAuth URL のクライアント ID、クライアント秘密鍵、テナント ID を取得する方法について詳しくは、 [Microsoft®ドキュメント](https://learn.microsoft.com/ja-jp/graph/auth-register-app-v2).
    * 次の `Client ID` および `Client Secret` Microsoft® Azure ポータルからのアプリの
-   * Microsoft® Azure ポータルで、リダイレクト URI を `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. 置換 `[author-instance]` を作成します。
-   * API 権限の追加 `offline_access` および `Sites.Manage.All` 読み取り/書き込み権限を付与する。
-   * OAuth URL を使用： `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. 置換 `<tenant-id>` と `tenant-id` Microsoft® Azure ポータルからのアプリの
+   * Microsoft® Azure ポータルで、リダイレクト URI を `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. `[author-instance]` をオーサーインスタンスの URL に置き換えます。
+   * API 権限 `offline_access` および `Sites.Manage.All` を追加して、読み取り／書き込み権限を付与します。
+   * OAuth URL `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize` を使用します。置換 `<tenant-id>` と `tenant-id` Microsoft® Azure ポータルからのアプリの
 
    >[!NOTE]
    >
-   > この **クライアント秘密鍵** フィールドは、Azure Active Directory アプリケーションの構成に応じて、必須またはオプションです。 アプリケーションでクライアントシークレットを使用するように設定されている場合は、クライアントシークレットを指定する必要があります。
+   > **クライアント秘密鍵**&#x200B;フィールドは、Azure Active Directory アプリケーションの設定に応じて、必須またはオプションになります。アプリケーションでクライアントシークレットを使用するように設定されている場合は、クライアントシークレットを指定する必要があります。
 
 1. 「**[!UICONTROL 接続]**」をクリックします。接続が成功した場合、 `Connection Successful` メッセージが表示されます。
 
-1. 次に、 **SharePoint Site** > **ドキュメントライブラリ** > **SharePoint Folder**、データを保存します。
+1. **SharePoint サイト**／**ドキュメントライブラリ**／**SharePoint フォルダー**&#x200B;を選択して、データを保存します。
 
    >[!NOTE]
    >
-   >* デフォルトでは、 `forms-ootb-storage-adaptive-forms-submission` は、選択したSharePoint Site に存在します。
-   >* フォルダーを次の形式で作成 `forms-ootb-storage-adaptive-forms-submission`( まだに `Documents` 選択したSharePoint Site のライブラリ ( **フォルダーを作成**.
+   >* デフォルトでは、`forms-ootb-storage-adaptive-forms-submission` は選択した SharePoint サイトに存在します。
+   >* 選択した SharePoint サイトの `Documents` ライブラリにまだ存在しない場合は、「**フォルダーを作成**」をクリックして、フォルダーを `forms-ootb-storage-adaptive-forms-submission` として作成します。
 
 
-これで、アダプティブフォーム内の送信アクションにこのSharePoint Sites 設定を使用できます。
+アダプティブフォームの送信アクションに、この SharePoint サイト設定を使用できるようになりました。
 
-### アダプティブフォームでのSharePoint設定の使用 {#use-sharepoint-configuartion-in-af}
+### アダプティブフォームでの SharePoint 設定の使用 {#use-sharepoint-configuartion-in-af}
 
-作成したSharePoint設定をアダプティブフォーム内で使用して、データや生成後のレコードのドキュメントをSharePointフォルダーに保存することができます。 アダプティブフォームでSharePointストレージ設定を使用するには、以下の手順を実行します。
-1. の作成 [アダプティブフォーム](/help/forms/creating-adaptive-form.md).
+作成した SharePoin 設定をアダプティブフォーム内で使用すると、データや生成済みレコードのドキュメントを SharePoint フォルダーに保存できます。 アダプティブフォームで SharePoint ストレージ設定を使用するには、次の手順を実行します。
+1. [アダプティブフォーム](/help/forms/creating-adaptive-form.md)を作成します。
 
    >[!NOTE]
    >
-   > * 同じを選択 [!UICONTROL 設定コンテナ] SharePointストレージを作成したアダプティブフォーム用。
-   > * 指定しない場合 [!UICONTROL 設定コンテナ] が選択されている場合、グローバル [!UICONTROL ストレージ設定] 送信アクションのプロパティウィンドウにフォルダが表示されます。
+   > * SharePoint ストレージを作成したアダプティブ フォームと同じ[!UICONTROL 設定コンテナ]を選択します。
+   > * [!UICONTROL 設定コンテナ]が選択されていない場合、グローバルな[!UICONTROL ストレージ設定]フォルダーが送信アクションのプロパティウィンドウに表示されます。
 
 
-1. 選択 **送信アクション** as **[!UICONTROL SharePointに送信]**.
-   ![SharePointGIF](/help/forms/assets/sharedrive-video.gif)
-1. を選択します。 **[!UICONTROL ストレージ設定]**」で、データを保存する場所を指定します。
-1. クリック **[!UICONTROL 保存]** をクリックして「送信」設定を保存します。
+1. 「**送信アクション**」を「**[!UICONTROL SharePoint に送信]**」として選択します。
+   ![SharePoint GIF](/help/forms/assets/sharedrive-video.gif)
+1. データを保存する場所に「**[!UICONTROL ストレージ設定]**」を選択します。
+1. 「**[!UICONTROL 保存]**」をクリックして、送信設定を保存します。
 
 フォームを送信すると、データは指定したMicrosoft® Sharepoint ストレージに保存されます。
-データを保存するフォルダー構造は `/folder_name/form_name/year/month/date/submission_id/data`.
+データを保存するフォルダー構造は `/folder_name/form_name/year/month/date/submission_id/data` です。
 
 ## OneDrive に送信 {#submit-to-onedrive}
 
-この **[!UICONTROL OneDrive に送信]** 送信アクションは、アダプティブフォームをMicrosoft® OneDrive に接続します。 接続されているMicrosoft® OneDrive ストレージに、フォームデータ、ファイル、添付ファイル、またはレコードのドキュメントを送信できます。 次の手順で [!UICONTROL OneDrive に送信] アダプティブフォームでの送信アクション：
+この **[!UICONTROL OneDrive に送信]** 送信アクションは、アダプティブフォームをMicrosoft® OneDrive に接続します。 接続されているMicrosoft® OneDrive ストレージに、フォームデータ、ファイル、添付ファイル、またはレコードのドキュメントを送信できます。 アダプティブフォームで「[!UICONTROL OneDrive に送信]」送信アクションを使用するには、次の手順に従います。
 
 1. [OneDrive 構成の作成](#create-a-onedrive-configuration-create-onedrive-configuration):AEM FormsをMicrosoft® OneDrive ストレージに接続します。
 2. [アダプティブフォームで OneDrive への送信アクションを使用する](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af):アダプティブフォームが設定済みのMicrosoft® OneDrive に接続されます。
 
-### OneDrive 構成の作成 {#create-onedrice-configuration}
+### Microsoft OneDrive 設定の作成 {#create-onedrice-configuration}
 
 AEM FormsをMicrosoft® OneDrive ストレージに接続するには：
 
 1. 次に移動： **AEM Forms Author** インスタンス > **[!UICONTROL ツール]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® OneDrive]**.
 1. 次に、 **[!UICONTROL Microsoft® OneDrive]**&#x200B;にリダイレクトされている場合、 **[!UICONTROL OneDrive ブラウザ]**.
-1. を選択します。 **設定コンテナ**. 設定は、選択した設定コンテナに保存されます。
-1. 「**[!UICONTROL 作成]**」をクリックします。OneDrive 構成ウィザードが表示されます。
+1. **設定コンテナ**&#x200B;を選択します。設定は、選択した設定コンテナに保存されます。
+1. 「**[!UICONTROL 作成]**」をクリックします。OneDrive 設定ウィザードが表示されます。
 
-   ![OneDrive 構成画面](/help/forms/assets/onedrive-configuration.png)
+   ![OneDrive 設定画面](/help/forms/assets/onedrive-configuration.png)
 
-1. 次を指定： **[!UICONTROL タイトル]**, **[!UICONTROL クライアント ID]**, **[!UICONTROL クライアント秘密鍵]** および **[!UICONTROL OAuth URL]**. OAuth URL のクライアント ID、クライアント秘密鍵、テナント ID を取得する方法について詳しくは、 [Microsoft®ドキュメント](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+1. 「**[!UICONTROL タイトル]**」、「**[!UICONTROL クライアント ID]**」、「**[!UICONTROL クライアント秘密鍵]**」および「**[!UICONTROL OAuth URL]**」を指定します。OAuth URL のクライアント ID、クライアント秘密鍵、テナント ID を取得する方法について詳しくは、 [Microsoft®ドキュメント](https://learn.microsoft.com/ja-jp/graph/auth-register-app-v2).
    * 次の `Client ID` および `Client Secret` Microsoft® Azure ポータルからのアプリの
-   * Microsoft® Azure ポータルで、リダイレクト URI を `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. 置換 `[author-instance]` を作成します。
-   * API 権限の追加 `offline_access` および `Files.ReadWrite.All` 読み取り/書き込み権限を付与する。
-   * OAuth URL を使用： `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. 置換 `<tenant-id>` と `tenant-id` Microsoft® Azure ポータルからのアプリの
+   * Microsoft® Azure ポータルで、リダイレクト URI を `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. `[author-instance]` をオーサーインスタンスの URL に置き換えます。
+   * API 権限 `offline_access` および `Files.ReadWrite.All` を追加して、読み取り／書き込み権限を付与します。
+   * OAuth URL `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize` を使用します。置換 `<tenant-id>` と `tenant-id` Microsoft® Azure ポータルからのアプリの
 
    >[!NOTE]
    >
-   > この **クライアント秘密鍵** フィールドは、Azure Active Directory アプリケーションの構成に応じて、必須またはオプションです。 アプリケーションでクライアントシークレットを使用するように設定されている場合は、クライアントシークレットを指定する必要があります。
+   > **クライアント秘密鍵**&#x200B;フィールドは、Azure Active Directory アプリケーションの設定に応じて、必須またはオプションになります。アプリケーションでクライアントシークレットを使用するように設定されている場合は、クライアントシークレットを指定する必要があります。
 
 1. 「**[!UICONTROL 接続]**」をクリックします。接続が成功した場合、 `Connection Successful` メッセージが表示されます。
 
-1. 次に、 **[!UICONTROL OneDrive コンテナ]** > **[OneDrive フォルダ]**  をクリックしてデータを保存します。
+1. **[!UICONTROL OneDrive コンテナ]**／**[OneDrive フォルダー]**&#x200B;を選択して、データを保存します。
 
    >[!NOTE]
    >
-   >* デフォルトでは、 `forms-ootb-storage-adaptive-forms-submission` は OneDrive コンテナに存在します。
-   > * フォルダーを次の形式で作成 `forms-ootb-storage-adaptive-forms-submission`をクリックして、まだ存在しない場合は **フォルダーを作成**.
+   >* デフォルトでは、`forms-ootb-storage-adaptive-forms-submission` は OneDrive コンテナに存在します。
+   > * 「**フォルダーを作成**」をクリックして、まだ存在しない場合は、フォルダーを `forms-ootb-storage-adaptive-forms-submission` として作成します。
 
 
-これで、アダプティブフォームの送信アクションに、この OneDrive ストレージ構成を使用できます。
+アダプティブフォームの送信アクションに、この OneDrive ストレージ設定を使用できるようになりました。
 
 ### アダプティブフォームでの OneDrive 設定の使用 {#use-onedrive-configuartion-in-af}
 
-作成した OneDrive ストレージ構成をアダプティブフォームで使用して、データまたは生成されたレコードのドキュメントを OneDrive フォルダに保存することができます。 アダプティブフォームで OneDrive ストレージ構成を使用するには、次の手順を実行します。
-1. の作成 [アダプティブフォーム](/help/forms/creating-adaptive-form.md).
+アダプティブフォームで作成した OneDrive ストレージ設定を使用して、データまたは生成済みレコードのドキュメントを OneDrive フォルダーに保存できます。 アダプティブフォームで OneDrive ストレージ設定を使用するには、次の手順を実行します。
+1. 「[アダプティブフォーム](/help/forms/creating-adaptive-form.md)」を作成します。
 
    >[!NOTE]
    >
-   > * 同じを選択 [!UICONTROL 設定コンテナ] OneDrive ストレージを作成したアダプティブフォーム用。
-   > * 指定しない場合 [!UICONTROL 設定コンテナ] が選択されている場合、グローバル [!UICONTROL ストレージ設定] 送信アクションのプロパティウィンドウにフォルダが表示されます。
+   > * OneDrive ストレージを作成したアダプティブ フォームと同じ[!UICONTROL 設定コンテナ]を選択します。
+   > * [!UICONTROL 設定コンテナ]が選択されていない場合、グローバルな[!UICONTROL ストレージ設定]フォルダーが送信アクションのプロパティウィンドウに表示されます。
 
 
-1. 選択 **送信アクション** as **[!UICONTROL OneDrive に送信]**.
-   ![OneDriveGIF](/help/forms/assets/onedrive-video.gif)
-1. を選択します。 **[!UICONTROL ストレージ設定]**」で、データを保存する場所を指定します。
-1. クリック **[!UICONTROL 保存]** をクリックして「送信」設定を保存します。
+1. 「**送信アクション**」を「**[!UICONTROL OneDrive に送信]**」として選択します。
+   ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
+1. データを保存する場所に「**[!UICONTROL ストレージ設定]**」を選択します。
+1. 「**[!UICONTROL 保存]**」をクリックして、送信設定を保存します。
 
 フォームを送信すると、データは指定したMicrosoft® OneDrive ストレージに保存されます。
-データを保存するフォルダー構造は `/folder_name/form_name/year/month/date/submission_id/data`.
+データを保存するフォルダー構造は `/folder_name/form_name/year/month/date/submission_id/data` です。
 
 ## Azure Blob Storage に送信 {#submit-to-azure-blob-storage}
 
-この **[!UICONTROL Azure Blob ストレージに送信]**  送信アクションは、アダプティブフォームとMicrosoft® Azure ポータルを接続します。 フォームデータ、ファイル、添付ファイル、またはレコードのドキュメントを、接続された Azure Storage コンテナに送信できます。 Azure Blob Storage の送信アクションを使用するには、次の手順に従います。
+この **[!UICONTROL Azure Blob ストレージに送信]**  送信アクションは、アダプティブフォームとMicrosoft® Azure ポータルを接続します。 フォームデータ、ファイル、添付ファイル、またはレコードのドキュメントを、接続された Azure ストレージコンテナに送信できます。 Azure Blob Storage の送信アクションを使用するには、次の手順に従います。
 
 1. [Azure Blob ストレージコンテナの作成](#create-a-azure-blob-storage-container-create-azure-configuration):AEM Formsを Azure ストレージコンテナに接続します。
-2. [アダプティブフォームでの Azure ストレージ設定の使用 ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af):アダプティブフォームを設定済みの Azure ストレージコンテナに接続します。
+2. [アダプティブフォームでの Azure ストレージ設定の使用 ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af)：アダプティブフォームを、設定済みの Azure ストレージコンテナに接続します。
 
 ### Azure Blob ストレージコンテナの作成 {#create-azure-configuration}
 
-AEM Formsを Azure ストレージコンテナに接続するには：
-1. 次に移動： **AEM Forms Author** インスタンス > **[!UICONTROL ツール]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Azure ストレージ]**.
-1. 次に、 **[!UICONTROL Azure ストレージ]**&#x200B;にリダイレクトされている場合、 **[!UICONTROL Azure ストレージブラウザー]**.
-1. を選択します。 **設定コンテナ**. 設定は、選択した設定コンテナに保存されます。
-1. 「**[!UICONTROL 作成]**」をクリックします。[Azure ストレージ構成の作成 ] ウィザードが表示されます。
+AEM Forms を Azure ストレージコンテナに接続するには、次の手順に従います。
+1. **AEM Forms オーサー**&#x200B;インスタンス／**[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL Azure ストレージ]**&#x200B;に移動します。
+1. **[!UICONTROL Azure ストレージ]**&#x200B;を選択すると、**[!UICONTROL Azure ストレージブラウザー]**&#x200B;にリダイレクトされます。
+1. **設定コンテナ**&#x200B;を選択します。設定は、選択した設定コンテナに保存されます。
+1. 「**[!UICONTROL 作成]**」をクリックします。Azure ストレージ設定の作成ウィザードが表示されます。
 
    ![Azure ストレージ設定](/help/forms/assets/azure-storage-configuration.png)
 
-1. 次を指定： **[!UICONTROL タイトル]**, **[!UICONTROL Azure ストレージアカウント]** および **[!UICONTROL Azure アクセスキー]**.
+1. 「**[!UICONTROL タイトル]**」、「**[!UICONTROL Azure ストレージアカウント]**」および「**[!UICONTROL Azure アクセスキー]**」を指定します。
 
    * 次を検索： `Azure Storage Account` 名前と `Azure Access key` Microsoft® Azure ポータルの「ストレージアカウント」から。
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
-これで、アダプティブフォームの送信アクションに、この Azure ストレージコンテナ設定を使用できます。
+アダプティブフォームの送信アクションに、この Azure ストレージコンテナ設定を使用できるようになりました。
 
 ### アダプティブフォームでの Azure ストレージ設定の使用 {#use-azure-storage-configuartion-in-af}
 
-作成した Azure ストレージコンテナ設定をアダプティブフォームで使用して、データや生成したレコードのドキュメントを Azure ストレージコンテナに保存することができます。 アダプティブフォームで Azure ストレージコンテナ設定を使用するには、次の手順を実行します。
-1. の作成 [アダプティブフォーム](/help/forms/creating-adaptive-form.md).
+アダプティブフォームで作成した Azure ストレージコンテナ設定を使用して、データや生成済みレコードのドキュメントを Azure ストレージコンテナに保存できます。 アダプティブフォームで Azure ストレージコンテナ設定を使用するには、次の手順を実行します。
+1. [アダプティブフォーム](/help/forms/creating-adaptive-form.md)を作成します。
 
    >[!NOTE]
    >
-   > * 同じを選択 [!UICONTROL 設定コンテナ] OneDrive ストレージを作成したアダプティブフォーム用。
-   > * 指定しない場合 [!UICONTROL 設定コンテナ] が選択されている場合、グローバル [!UICONTROL ストレージ設定] 送信アクションのプロパティウィンドウにフォルダが表示されます。
+   > * OneDrive ストレージを作成したアダプティブ フォームと同じ[!UICONTROL 設定コンテナ]を選択します。
+   > * [!UICONTROL 設定コンテナ]が選択されていない場合、グローバルな[!UICONTROL ストレージ設定]フォルダーが送信アクションのプロパティウィンドウに表示されます。
 
 
-1. 選択 **送信アクション** as **[!UICONTROL Azure Blob ストレージに送信]**.
-   ![Azure Blob ストレージGIF](/help/forms/assets/azure-submit-video.gif)
+1. 「**送信アクション**」を「**[!UICONTROL Azure Blob Storage に送信]**」として選択します。
+   ![Azure Blob Storage GIF](/help/forms/assets/azure-submit-video.gif)
 
-1. を選択します。 **[!UICONTROL ストレージ設定]**」で、データを保存する場所を指定します。
-1. クリック **[!UICONTROL 保存]** をクリックして「送信」設定を保存します。
+1. データを保存する場所に「**[!UICONTROL ストレージ設定]**」を選択します。
+1. 「**[!UICONTROL 保存]**」をクリックして、送信設定を保存します。
 
 フォームを送信すると、データは指定された Azure ストレージコンテナ設定に保存されます。
-データを保存するフォルダー構造は `/configuration_container/form_name/year/month/date/submission_id/data`.
+データを保存するフォルダー構造は `/configuration_container/form_name/year/month/date/submission_id/data` です。
 
 設定の値をセットするには、[AEM SDK を使用して OSGi 設定を生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#generating-osgi-configurations-using-the-aem-sdk-quickstart)し、Cloud Service インスタンスに[設定をデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja#deployment-process)します。
 

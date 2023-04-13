@@ -6,13 +6,13 @@ contentOwner: khsingh
 source-git-commit: 54a1ae1cc030030e44612b502b70c9b567144538
 workflow-type: tm+mt
 source-wordcount: '1352'
-ht-degree: 14%
+ht-degree: 33%
 
 ---
 
-# 既存のAdobe Experience Manager 6.5 Formsユーザーの主な変更点  {#notable-changes-for-existing-AEM-Forms-users}
+# 既存の Adobe Experience Manager 6.5 Forms ユーザー向けの主な変更点  {#notable-changes-for-existing-AEM-Forms-users}
 
-Adobe Experience Manager Forms as a Cloud Serviceは、Adobe Experience Manager Formsオンプレミスおよび [!DNL Adobe-Managed Service] 環境。 主な違いを以下に示します。
+Adobe Experience Manager Forms as a Cloud Service では、Adobe Experience Manager Forms オンプレミスおよび [!DNL Adobe-Managed Service] 環境と比較して、既存の機能にいくつかの注目すべき変更点があります。主な違いを以下に示します。
 
 ## クラウドネイティブ機能
 
@@ -48,23 +48,23 @@ Adobe Experience Manager Forms as a Cloud Serviceは、Adobe Experience Manager 
 
 ## アダプティブフォーム
 
-* **ルールエディター：** AEM Formsas a Cloud Service家は、堅固な [ルールエディター](rule-editor.md#visual-rule-editor). コードエディターは、Forms as a Cloud Serviceでは使用できません。
+* **ルールエディター：** AEM Forms as a Cloud Service は、強化された[ルールエディター](rule-editor.md#visual-rule-editor)を提供します。Forms as a Cloud Service では、コードエディターは使用できません。
 
-   この [移行ユーティリティ](/help/forms/migrate-to-forms-as-a-cloud-service.md) は、（コードエディターで作成された）カスタムルールを持つフォームを移行する際に役立ちます。 ユーティリティは、これらのルールを、Forms as a Cloud Serviceでサポートされるカスタム関数に変換します。 ルールエディターで再利用可能な関数を使用して、ルールスクリプトで取得した結果を引き続き取得できます。 この `onSubmitError` または `onSubmitSuccess` 関数は、ルールエディターでアクションとして使用できるようになりました。
+   この [移行ユーティリティ](/help/forms/migrate-to-forms-as-a-cloud-service.md) は、（コードエディターで作成された）カスタムルールを持つフォームを移行する際に役立ちます。 ユーティリティは、このようなルールを Forms as a Cloud Service でサポートされるカスタム関数に変換します。ルールエディターで再利用可能な関数を使用して、ルールスクリプトで取得した結果を引き続き取得できます。 この `onSubmitError` または `onSubmitSuccess` 関数は、ルールエディターでアクションとして使用できるようになりました。
 
-* **事前入力サービス：** デフォルトでは、事前入力サービスは、AEM 6.5 Formsでのサーバー上のデータの結合とは異なり、クライアント側でデータをアダプティブフォームに結合します。 この機能により、アダプティブフォームの事前入力に要する時間が短縮されます。 Adobe Experience Manager Forms Server で結合アクションを実行するようにをいつでも設定できます。
+* **事前入力サービス：**&#x200B;デフォルトでは、事前入力サービスは、AEM 6.5 Forms のサーバー上でデータを結合するのではなく、クライアントでアダプティブフォームとデータを結合します。この機能により、アダプティブフォームの事前入力に必要な時間を短縮できます。Adobe Experience Manager Forms Server で結合アクションを実行するように常に設定できます。
 
 * **送信アクション：** この **電子メール** 送信アクションには、添付ファイルを送信し、電子メールにレコードのドキュメント (DoR) を添付するオプションが用意されています。 これを **メールをPDF** AEM 6.5 Formsで使用可能なアクション。
 
-* **automated forms conversionサービス**:このサービスは、Automated forms conversionサービスのメタモデルを提供しません。 以下が可能です。 [automated forms conversionサービスドキュメントからダウンロード](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model).
+* **automated forms conversionサービス**:このサービスは、Automated forms conversionサービスのメタモデルを提供しません。 メタモデルは、[フォームの自動変換サービスドキュメントからダウンロード](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=ja#default-meta-model)できます。
 
-* **XSD ベースのアダプティブForms:** XDP-template を使用して、レコード用のドキュメントのテンプレートをデザインできます。 このサービスは、XFA ベースのアダプティブFormsをサポートしていません
+* **XSD ベースのアダプティブForms:** XDP-template を使用して、レコード用のドキュメントのテンプレートをデザインできます。 このサービスは、XFA ベースのアダプティブフォームをサポートしていません
 
 * **コンポーネント**:以下を使用できます。 [アダプティブFormsコアコンポーネント](/help/forms/creating-adaptive-form-core-components.md) フォームをデザインする場合。 これらのコンポーネントは、WCM コアコンポーネントに基づいており、BEM 標準に従っており、容易にカスタマイズできます。 このサービスは、フォーム内署名機能をサポートしておらず、アダプティブフォームの概要コンポーネントと検証コンポーネントが含まれていません
 
 ## Forms ポータル
 
-* Forms Portal の Search &amp; Lister、ドラフトと送信およびリンクコンポーネントを使用して、ログインしているユーザーのフォームを一覧表示できます。 Forms Portal の匿名での使用は、標準ではサポートされていません (OOTB)。 Forms Portal をカスタマイズして、ログインしていないユーザー向けのフォームの表示を有効にすることができます。
+* Forms Portal の Search &amp; Lister、ドラフトと送信およびリンクコンポーネントを使用して、ログインしているユーザーのフォームを一覧表示できます。 フォームポータルの匿名での使用は、標準（OOTB）ではサポートされていません。フォームポータルをカスタマイズして、ログインしていないユーザー向けのフォームの表示を有効にすることができます。
 
 * このサービスは、ドラフトおよび送信されたアダプティブFormsのメタデータを保持しません。
 
@@ -72,13 +72,13 @@ Adobe Experience Manager Forms as a Cloud Serviceは、Adobe Experience Manager 
 
 Forms as a Cloud Serviceには、ドキュメント生成とドキュメント操作の RESTful API が用意されています。 これらの API を使用して、必要に応じて、ドキュメントをオンデマンドで、またはバッチで生成または操作できます。
 
-* **ドキュメントサービス：ドキュメント生成 API（Output サービス）**:1 回の API 呼び出しまたはバッチで、複数の DATA XML ファイルで使用できるテンプレートは 1 つだけです。 1 回の API 呼び出しで複数のデータファイルで複数のテンプレートを使用することはできません。
+* **ドキュメントサービス：ドキュメント生成 API（Output サービス）**:1 回の API 呼び出しまたはバッチで、複数の DATA XML ファイルで使用できるテンプレートは 1 つだけです。 1 回の API 呼び出しで、複数のデータファイルで複数のテンプレートを使用することはできません。
 
 * **ドキュメント操作 API（Assembler サービス）**:
 
    * Document Services またはアプリケーションに依存する操作は使用できません。 例えば、Microsoft Word からPDFへ、Microsoft Excel からPDFへ、およびPDFへのHTML、PostScript(PS) からPDFへの、XDP からPDF formsへの変換はサポートされていません。 これらの操作は、それぞれMicrosoft Office、Adobe Acrobat、AdobeDistiller、Forms Document Service に依存します。
 
-   * Communications Document Manipulation API でドキュメントを使用する前に、PDF以外の形式のドキュメントをPDF形式に変換してください。 例えば、ドキュメントがMicrosoft Office、HTML、PostScript(PS)、XDP 形式の場合、PDFドキュメントで使用する前に、これらのドキュメントをPDF形式に変換します。 以下を使用して、 [ConvertPDF](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html) このようなコンバージョンに対するサービス。
+   * Communications Document Manipulation API でドキュメントを使用する前に、PDF以外の形式のドキュメントをPDF形式に変換してください。 例えば、ドキュメントが Microsoft Office、HTML、PostScript（PS）、XDP 形式である場合、PDF でこれらのドキュメントを使用する前に、PDF 形式に変換します。以下を使用して、 [ConvertPDF](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html) このようなコンバージョンに対するサービス。
 
 * デジタル署名、暗号化、Reader拡張、プリンターに送信、PDFの変換、および Barcoded FormsサービスにAEM 6.5 Forms環境を使用できます。
 
@@ -89,7 +89,7 @@ Forms as a Cloud Serviceには、ドキュメント生成とドキュメント�
 
 * また、AEMユーザープロファイルに接続して、ユーザー情報を取得および更新することもできます。
 
-* Formsデータモデルでは、データの送信に HTTP および HTTPS エンドポイントのみをサポートしています。 このサービスは、REST コネクタの相互 SSL および SOAP データソースの x509 証明書ベースの認証をサポートしていません。
+* Formsデータモデルでは、データの送信に HTTP および HTTPS エンドポイントのみをサポートしています。 このサービスでは、REST コネクターの相互 SSL および SOAP データソースの x509 証明書ベースの認証をサポートしていません。
 
 * Formsas a Cloud Serviceでは、Microsoft Azure Blob、Microsoft Sharepoint、Microsoft OneDrive および一般的な CRUD（作成、読み取り、更新、削除）操作をサポートするサービスをデータストアとして使用できます。Open API 仕様 2.0 と Open API 3.0 の両方の仕様がサポートされています。
 
@@ -105,9 +105,9 @@ Forms as a Cloud Serviceには、ドキュメント生成とドキュメント�
 
 * AEM 6.5 Forms環境を使用して、次のことができます。
 
-   * XDP ベースのフォームをHTML5 Formsとしてレンダリングします。 このサービスは、HTML5 Forms (Mobile Forms) をサポートしていません。
+   * XDP ベースのフォームをHTML5 Formsとしてレンダリングします。 このサービスでは、HTML5 フォーム（モバイルフォーム）をサポートしていません。
 
-   * 次回オンラインに戻る際にオフラインでデータをキャプチャし、同期する [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) アプリを使用します。
+   * 次回オンラインに戻る際にオフラインでデータをキャプチャし、同期する [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html?lang=ja) アプリを使用します。
 
 ## インタラクティブコミュニケーション
 

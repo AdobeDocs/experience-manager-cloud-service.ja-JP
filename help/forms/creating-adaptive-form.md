@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
 source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1500'
+ht-degree: 100%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 アダプティブフォームを使用すると、魅力的でレスポンシブ、かつ動的でアダプティブなフォームを作成できます。AEM Forms は、アダプティブ Forms を素早くオーサリングするための、ビジネスユーザーにとってわかりやすいウィザードを提供します。 このウィザードはクイックタブナビゲーションを備えており、アダプティブフォームを作成するための事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択することができます。
 
-開始する前に、使用可能なFormsコンポーネントのタイプについて学習します。
+開始する前に、使用可能な Forms コンポーネントのタイプについて学習します。
 
-* [アダプティブFormsコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) は、標準化されたデータキャプチャコンポーネントです。 これらのコンポーネントは、カスタマイズ機能を提供し、開発時間を短縮し、デジタル登録エクスペリエンスのメンテナンスコストを削減します。 開発者は、これらのコンポーネントを容易にカスタマイズおよびスタイル設定できます。 Adobeでは、アダプティブFormsを開発する際に、これらの最新の拡張可能なコンポーネントを活用することをお勧めします。
+* [アダプティブフォームコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)は、標準化されたデータキャプチャコンポーネントです。これらのコンポーネントは、デジタル登録エクスペリエンスでのカスタマイズ機能を提供し、開発時間を短縮し、メンテナンスコストを削減します。開発者は、これらのコンポーネントを簡単にカスタマイズし、スタイルを設定できます。これらの最新かつ拡張性の高いコンポーネントを活用してアダプティブフォームを開発することをお勧めします。
 
-* [アダプティブForms Foundation コンポーネント](creating-adaptive-form.md) は、従来の（古い）データキャプチャコンポーネントです。 これらを引き続き使用して、既存の基盤コンポーネントベースのアダプティブフォームを編集できます。 新しいフォームを作成する場合、Adobeでは  [アダプティブFormsコアコンポーネント](creating-adaptive-form-core-components.md) アダプティブFormsを作成する
+* [アダプティブフォーム基盤コンポーネント](creating-adaptive-form.md)は、従来の（古い）データキャプチャコンポーネントです。引き続きこれらを使用して、既存の基盤コンポーネントベースのアダプティブフォームを編集できます。 新しいフォームを作成する場合は、[アダプティブフォームコアコンポーネント](creating-adaptive-form-core-components.md)を使用してアダプティブフォームを作成することをお勧めします。
 
 
 
@@ -59,7 +59,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 * **アダプティブフォームテンプレート**：テンプレートは基本構造を提供し、アダプティブフォームのアピアランス（レイアウトとスタイル）を定義します。これには、特定のプロパティやコンテンツ構造を有するフォーマット済みのコンポーネントが含まれます。また、テーマと送信アクションを定義するオプションも提供されます。 テーマは、ルックアンドフィールと送信アクションを定義し、アダプティブフォームの送信時に実行するアクションを定義します。 例えば、収集したデータをデータソースに送信する場合などです。 Cloud Service は、2 種類のテンプレートをサポートしています。
 
-   * **編集可能テンプレート**：[新しいテンプレートを作成](template-editor.md)または[既存の編集可能テンプレートを読み込むことができます](migrate-to-forms-as-a-cloud-service.md)。また、[最新のアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#:~:text=AEM アーキタイプは、次のモジュール,Java バンドル。%20it.tests%3A%20are%20Java-based%20integration%20tests.)をデプロイして、編集可能なテンプレートのサンプルを取得することもできます。
+   * **編集可能テンプレート**：[新しいテンプレートを作成](template-editor.md)または[既存の編集可能テンプレートを読み込むことができます](migrate-to-forms-as-a-cloud-service.md)。また、[最新のアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#:~:text=AEM%20アーキタイプは、次のモジュール,Java%20バンドル。%20it.tests%3A%20are%20Java-based%20integration%20tests.)をデプロイして、編集可能なテンプレートのサンプルを取得することもできます。
 
    * **静的テンプレート**：これらは従来のテンプレートで、Adobe Managed Services（AMS）およびオンプレミスの AEM Forms のインストール（AEM 6.5 Forms 以前）から移行する顧客にのみ推奨されます。 静的テンプレートに対する既存の投資を引き続き活用することができます。 新しいアダプティブフォームを作成する場合は、編集可能なテンプレートを使用することをお勧めします。
 
@@ -71,7 +71,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 1. Experience Manager のログインページに資格情報を入力します。
 
-   ログイン後、左上隅の **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL フォーム]**／**[!UICONTROL フォームとドキュメント]**&#x200B;をタップします。
+   ログイン後、左上隅の **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;をタップします。
 
 1. 「**[!UICONTROL 作成]**」をタップして、「**[!UICONTROL アダプティブフォーム]**」を選択します。ウィザードが開きます。
 1. ソースタブで、テンプレートを選択します。
@@ -80,16 +80,16 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
       >[!NOTE]
       >
-      > また、 [!UICONTROL レコードのドキュメント] アダプティブFormsエディターを使用したテンプレート 詳しくは、「[アダプティブフォームエディターでのレコードのドキュメントのサポート](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)」を参照してください。
+      > アダプティブフォームエディターを使用して、[!UICONTROL レコードのドキュメント]テンプレートを作成することもできます。詳しくは、「[アダプティブフォームエディターでのレコードのドキュメントのサポート](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)」を参照してください。
 
    * 静的テンプレートを選択すると、データ、スタイル、送信、配信、プレビューの各オプションは使用できなくなります。 新しいアダプティブフォームを作成する場合は、編集可能なテンプレートを使用することをお勧めします。
 
-1. 内 **[!UICONTROL スタイル]** タブで、テーマを選択します。
+1. 「**[!UICONTROL スタイル]**」タブで、テーマを選択します。
 
    * 選択したテンプレートでテーマを指定すると、ウィザードでテーマが自動的に選択されます。 「スタイル」タブから別のテーマを選択することもできます。
    * 選択したテンプレートにテーマが指定されていない場合は、「スタイル」タブを使用してテーマを選択することができます。 この「**[!UICONTROL 作成]**」ボタンは、テーマが選択された後にのみ有効になります。
 
-1. （オプション） **[!UICONTROL データ]** 「 」タブで、データモデルを選択します。
+1. （オプション）「**[!UICONTROL データ]**」タブで、データモデルを選択します。
 
    * **フォームデータモデル**：[フォームデータモデル](data-integration.md)を使用すると、異なるデータソースのエンティティやサービスをアダプティブフォームに統合することができます。 作成するアダプティブフォームで、複数のデータソースに対するデータの取得と書き込みが必要になる場合は、フォームデータモデルを選択します。
 
@@ -103,7 +103,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    
    -->
 
-1. 内 **[!UICONTROL 送信]** タブで、送信アクションを選択します。
+1. 「**[!UICONTROL 送信]**」タブで、送信アクションを選択します。
 
    * テンプレートを選択すると、テンプレートで指定された送信アクションが自動選択されます。 「送信」タブから、別の送信アクションを選択することができます。 「**[!UICONTROL 送信]**」タブには、使用可能なすべての送信アクションが表示されます。
 
@@ -196,4 +196,4 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 >[!NOTE]
 >
-> アダプティブフォームをテンプレートとして保存することもできます。 詳しくは、 [アダプティブフォームを使用したテンプレートの作成](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).
+> アダプティブフォームをテンプレートとして保存することもできます。 詳しくは、[アダプティブフォームを使用したテンプレートの作成](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template)を参照してください。

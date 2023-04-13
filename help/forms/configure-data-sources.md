@@ -8,7 +8,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: 936aa33ca334523aa84300f540bde9543eb7ffb4
 workflow-type: tm+mt
 source-wordcount: '2135'
-ht-degree: 78%
+ht-degree: 93%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 78%
 
 [!DNL Experience Manager Forms] のデータ統合機能により、複数の異なるデータソースを設定して接続することができます。以下のタイプがサポートされています。これらのタイプは、すぐに使用することができます。
 
-* リレーショナルデータベース — MySQL [!DNL Microsoft SQL Server], [!DNL IBM DB2]、および [!DNL Oracle RDBMS]
+* リレーショナルデータベース - MySQL、[!DNL Microsoft SQL Server]、[!DNL IBM DB2]、および [!DNL Oracle RDBMS]
 * RESTful Web サービス
 * SOAP ベースの Web サービス
 * OData サービス（バージョン 4.0）
 * Microsoft® Dynamics
 * Salesforce
-* Microsoft® Azure Blob ストレージ
+* Microsoft® Azure Blob Storage
 
 データ統合では、すぐに使用できる認証タイプとして、OAuth2.0 認証、基本認証、API キー認証がサポートされています。また、Web サービスにアクセスするためのカスタムの認証タイプを実装することもできます。RESTful、SOAP ベース、OData の各サービスは、 [!DNL Experience Manager] as a Cloud Service、リレーショナルデータベース用の JDBC および用のコネクタ [!DNL Experience Manager] ユーザープロファイルを [!DNL Experience Manager] web コンソール。
 
@@ -32,23 +32,23 @@ ht-degree: 78%
 
 ### 前提条件
 
-を使用してリレーショナルデータベースを設定する前に [!DNL Experience Manager] Web コンソール設定では、次の操作が必須です。
-* [Cloud Manager API を使用した高度なネットワークの有効化](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)（ポートはデフォルトで無効になっているので）
-* [Maven に JDBC ドライバーの依存関係を追加](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies).
+[!DNL Experience Manager] web コンソール設定を使用してリレーショナルデータベースを設定する前に、次の操作が必須です。
+* ポートはデフォルトで無効になっているので、[Cloud Manager API から高度なネットワークを有効にします。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
+* [Maven に JDBC ドライバーの依存関係を追加](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=ja).
 
 
 ### リレーショナルデータベースを設定する手順
 
-リレーショナルデータベースは、 [!DNL Experience Manager] Web コンソールの設定 次の手順を実行します。
+[!DNL Experience Manager] web コンソールの設定を使用して、リレーショナルデータベースを設定することができます。次の手順を実行します。
 
-1. に移動します。 [!DNL Experience Manager] web コンソールの場所： `https://server:host/system/console/configMgr`.
-1. 場所 **[!UICONTROL Day Commons JDBC 接続プール]** 設定。 をタップして、設定を編集モードで開きます。
+1. `https://server:host/system/console/configMgr` で [!DNL Experience Manager] web コンソールに移動します。
+1. **[!UICONTROL 「Day Commons JDBC 接続プール」]**&#x200B;設定を見つけます。その設定をタップして編集モードで開きます。
 
-   ![JDBC コネクタプール](/help/forms/assets/jdbc_connector.png)
+   ![JDBC コネクタープール](/help/forms/assets/jdbc_connector.png)
 
-1. 設定ダイアログで、次のように、設定するデータベースの詳細を指定します。
+1. 設定ダイアログで、設定するデータベースの詳細を指定します。例えば、以下のような詳細を指定します。
 
-   * JDBC ドライバーの Java™クラス名
+   * JDBC ドライバーの Java™ のクラス名
    * JDBC 接続 URI
    * JDBC ドライバとの接続を確立するためのユーザー名とパスワード
    * SQL SELECT クエリを **[!UICONTROL 検証クエリ]** プールからの接続を検証するフィールド。 クエリは、少なくとも 1 つの行を返す必要があります。 データベースに応じて、次のいずれかを指定します。
@@ -56,7 +56,7 @@ ht-degree: 78%
       * SELECT 1 from dual（Oracle の場合）
    * データソースの名前
 
-   リレーショナル・データベースを構成するための文字列の例：
+   リレーショナルデータベースを構成するための文字列の例：
 
    ```text
       "datasource.name": "sqldatasourcename-mysql",
@@ -66,7 +66,7 @@ ht-degree: 78%
 
    >[!NOTE]
    >
-   > 参照 [JDBC DataSourcePool を使用した SQL 接続](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) を参照してください。
+   > [JDBC DataSourcePool を使用した SQL 接続](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=ja)を参照してください。
 
 1. 「**[!UICONTROL 保存]**」をタップして、設定内容を保存します。
 
@@ -112,14 +112,14 @@ RESTful サービス、SOAP サービス、OData サービスのクラウドサ�
    1. 「**[!UICONTROL 保存して閉じる]**」をタップして設定内容を保存し、ダイアログを閉じます。
 
 1. 内 **[!UICONTROL 設定ブラウザー]**&#x200B;をタップします。 **[!UICONTROL 作成]**.
-1. 内 **[!UICONTROL 設定を作成]** ダイアログで、フォルダーのタイトルを指定し、有効にします。 **[!UICONTROL クラウド設定]**.
+1. 「**[!UICONTROL 設定を作成]**」ダイアログでフォルダーのタイトルを指定し、「**[!UICONTROL クラウド設定]**」を有効にします。
 1. 「**[!UICONTROL 作成]**」をタップします。これで、クラウドサービス設定が有効になったフォルダーが作成されました。
 
 ## RESTful Web サービスの設定 {#configure-restful-web-services}
 
-RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式または YAML 形式で [Swagger 定義ファイル](https://swagger.io/specification/v2/)内に記述できます。で RESTful Web サービスを設定するには、以下を実行します。 [!DNL Experience Manager] as a Cloud Service [!DNL Swagger] ファイル ([Swagger バージョン 2.0](https://swagger.io/specification/v2/)) または [!DNL Swagger] ファイル ([Swagger バージョン 3.0](https://swagger.io/specification/v3/)) をファイルシステムまたはファイルがホストされている URL に設定する必要があります。
+RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式または YAML 形式で [Swagger 定義ファイル](https://swagger.io/specification/v2/)内に記述できます。[!DNL Experience Manager] as a Cloud Service で RESTful web サービスを設定するには、ファイルシステムまたはファイルがホストされている URL に [!DNL Swagger] ファイル（[Swagger Version 2.0](https://swagger.io/specification/v2/)）[!DNL Swagger] ファイル（[Swagger Version 3.0](https://swagger.io/specification/v3/)）が存在しているか、Swagger ファイルがホストされる URL を指定する必要があります。
 
-### Open API 仕様バージョン 2.0 用の RESTful サービスの設定 {#configure-restful-services-open-api-2.0}
+### Open API 仕様バージョン 2.0 {#configure-restful-services-open-api-2.0} 用の RESTful サービスの設定
 
 1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーをタップして選択します。
 
@@ -129,7 +129,7 @@ RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式ま
 1. RESTful サービスの次の詳細を指定します。
 
    * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL  Swagger] 定義ファイルに対する [!DNL Swagger URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
-   * 次に基づいて[!DNL  Swagger] ソース入力。次のフィールドには、値が事前に入力されています。
+   * [!DNL  Swagger] ソース入力に基づいて、次のフィールドに値が事前入力されます。
 
       * スキーム：REST API で使用される転送プロトコル。ドロップダウンリストに表示されるスキームの種類の数は、[!DNL Swagger] ソースで定義されているスキームによって異なります。
       * ホスト：REST API を提供するホストのドメイン名または IP アドレス。このフィールドは必須です。
@@ -143,7 +143,7 @@ RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式ま
 
 1. 「**[!UICONTROL 作成]**」をタップして、RESTful サービス用のクラウド設定を作成します。
 
-### Open API 仕様バージョン 3.0 用の RESTful サービスの設定 {#configure-restful-services-open-api-3.0}
+### Open API 仕様バージョン 3.0 {#configure-restful-services-open-api-3.0} 用の RESTful サービスの設定
 
 1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーをタップして選択します。
 
@@ -153,7 +153,7 @@ RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式ま
 1. RESTful サービスの次の詳細を指定します。
 
    * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL  Swagger] 定義ファイルに対する [!DNL Swagger 3.0 URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
-   * 次に基づいて[!DNL  Swagger] ソース入力、ターゲットサーバとの接続情報が表示されます。
+   * [!DNL  Swagger] ソース入力に基づいて、ターゲットサーバとの接続情報が表示されます。
    * RESTful サービスにアクセスするための認証タイプ（「なし」、「OAuth2.0 認証」、「基本認証」、「API キー認証」、「カスタム認証」）を選択し、その選択内容に応じて認証の詳細を指定します。
 
    認証タイプとして **[!UICONTROL API キー]**&#x200B;を選択した場合は、API キーの値を指定します。API キーは、リクエストヘッダーまたはクエリパラメーターとして送信できます。「**[!UICONTROL 場所]**」ドロップダウンリストから次のオプションの 1 つを選択し、それに応じて「**[!UICONTROL パラメーター名]**」フィールドにヘッダーまたはクエリパラメーターの名前を指定します。
@@ -164,12 +164,12 @@ RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式ま
 
 RESTful サービス Open API 仕様バージョン 3.0 でサポートされていない操作の一部は次のとおりです。
 * コールバック
-* 1/任意
+* oneof/anyof
 * リモート参照
 * リンク
-* 1 回の操作に対する異なる MIME タイプに対する異なるリクエスト本文
+* 1 回の操作に対する異なる MIME タイプの異なるリクエスト本文
 
-以下を参照してください。 [OpenAPI 3.0 仕様](https://swagger.io/specification/v3/) を参照してください。
+詳細については、[OpenAPI 3.0 仕様](https://swagger.io/specification/v3/)を参照してください。
 
 ### パフォーマンスを最適化するためのフォームデータモデル HTTP クライアント設定 {#fdm-http-client-configuration}
 
@@ -297,4 +297,4 @@ When you enable mutual authentication for form data model, both the data source 
 
 ## 次の手順 {#next-steps}
 
-上記の手順により、データソースが設定されました。次に、フォームデータモデルを作成できます。データソースを持たないフォームデータモデルを既に作成している場合は、そのモデルを設定したデータソースに関連付けることができます。 詳しくは、[フォームデータモデルの作成](create-form-data-models.md)を参照してください。
+上記の手順により、データソースが設定されました。次に、フォームデータモデルを作成できます。データソースのないフォームデータモデルが既に作成されている場合は、設定したデータソースにそのフォームデータモデルを関連付けることができます。詳しくは、[フォームデータモデルの作成](create-form-data-models.md)を参照してください。

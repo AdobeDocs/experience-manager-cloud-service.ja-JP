@@ -4,7 +4,7 @@ description: の最新のメンテナンスリリースノート [!DNL Adobe Exp
 source-git-commit: ea71ca9fe259fbbf497a35930a10450bd4e26ce8
 workflow-type: tm+mt
 source-wordcount: '402'
-ht-degree: 6%
+ht-degree: 15%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 2023 年 3 月 28 日に公開されたメンテナンスリリース11382の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース11289のアップデートです。
 
-このメンテナンスリリースで機能を有効にすると、すべての機能セットが提供されます。 詳しくは、 [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md) 詳細はこちら。
+このメンテナンスリリースにおける機能イネーブルメントでは、包括的な機能セットを提供します。詳しくは、[最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
 ### 既知の問題 {#known-issues-11382}
 
@@ -52,11 +52,11 @@ ht-degree: 6%
 
 - SITES-11040 - Dispatcher でのGraphQLの永続的なクエリキャッシュの条件付き有効化
 
-### 組み込みテクノロジ {#embedded-tech-11382}
+### 組み込みテクノロジー {#embedded-tech-11382}
 
-| 科学技術 | バージョン | リンク |
+| テクノロジー | バージョン | リンク |
 |---|---|---|
 | AEM OAK | 1.44-T20221206170501-6d59064 | [Oak API 1.44.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.44.0/index.html) |
-| AEM SLING API | バージョン2.27.0 | [Apache Sling API 2.27.0 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| AEM SLING API | バージョン 2.27.0 | [Apache Sling API 2.27.0 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | バージョン 1.4.20 ～ 1.4.0 | [HTMLテンプレート言語の仕様](https://github.com/adobe/htl-spec) |
-| AEM コアコンポーネント | バージョン2.21.2 | [AEM WCM コアコンポーネント](https://github.com/adobe/aem-core-wcm-components) |
+| AEM コアコンポーネント | バージョン 2.21.2 | [AEM WCM コアコンポーネント](https://github.com/adobe/aem-core-wcm-components) |

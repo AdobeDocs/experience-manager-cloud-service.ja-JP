@@ -4,8 +4,8 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] のリ
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 2fb929cae03fa9ac0bf6d18d5eb3cf19bb35fa37
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1090'
+ht-degree: 89%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## リリースのハイライト {#release-highlights}
 
-の最新バージョン [!DNL Workfront for Experience Manager enhanced connector] には、次の更新が含まれています。
+[!DNL Workfront for Experience Manager enhanced connector] の最新バージョンには、次のアップデートが含まれています。
 
 * Experience Managerに `DateTimeParseException` リンクされたフォルダーの作成中にWorkfrontから最終変更日を受け取った場合に例外が発生しました。
 
@@ -54,13 +54,13 @@ ht-degree: 0%
 
 [!DNL Workfront for Experience Manager enhanced connector] 2023 年 2 月 2 日にリリースされたバージョン 1.9.7 には、次の更新が含まれています。
 
-* 1.9.6 リリースをインストールした後、メタデータエディターにWorkfrontカスタムフォームのプロパティが表示されない。
+* 1.9.6 リリースをインストールした後、メタデータエディターに Workfront カスタムフォームのプロパティが表示されない。
 
-* 開発コンソールが表示されます `/content/dam/jcr:content/metadata/wfProjectURL not found` Workfront enhanced connector をインストールして Assets のホームページを開いた後のエラーメッセージ
+* Workfront の拡張コネクタをインストールして Assets のホームページを開くと、開発コンソールに `/content/dam/jcr:content/metadata/wfProjectURL not found` というエラーメッセージが表示される。
 
-### 2022 年 12 月リリース {#december-2022-release}
+### 2022年12月リリース {#december-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] 12 月 09 日にリリースされたバージョン 1.9.6 には、次の更新が含まれています。
+12月9日（PT）にリリースされた [!DNL Workfront for Experience Manager enhanced connector] バージョン 1.9.6 には、次のアップデートが含まれています。
 
 **機能強化**
 
