@@ -1,10 +1,10 @@
 ---
 title: の最新のメンテナンスリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
 description: の最新のメンテナンスリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
-source-git-commit: ea71ca9fe259fbbf497a35930a10450bd4e26ce8
+source-git-commit: fb9b735c44dddda9572d3a1f90d49452c6ddc094
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 15%
+source-wordcount: '436'
+ht-degree: 13%
 
 ---
 
@@ -18,6 +18,11 @@ ht-degree: 15%
 2023 年 3 月 28 日に公開されたメンテナンスリリース11382の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース11289のアップデートです。
 
 このメンテナンスリリースにおける機能イネーブルメントでは、包括的な機能セットを提供します。詳しくは、[最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
+
+>[!IMPORTANT]
+>
+> CloudManager UI では「2023.3.11382」と表示され、正式リリースは「2023.02」と表示されています。 これは、2023.02 機能のアクティベーションが遅れたためです。
+> 今後のリリースでこの問題を修正する予定です。
 
 ### 既知の問題 {#known-issues-11382}
 
