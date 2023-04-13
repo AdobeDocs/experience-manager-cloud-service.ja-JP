@@ -5,7 +5,7 @@ role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
 source-git-commit: 68f84de83873029f7cd16cb9ed70f916170cb566
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '635'
 ht-degree: 100%
 
