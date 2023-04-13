@@ -2,23 +2,23 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
-source-git-commit: 085ce15ebe4d48d32a437f13e728f60cfc57d0fa
+source-git-commit: 34313a984b8ddb76211ed97dd11c437cbefa90c2
 workflow-type: tm+mt
 source-wordcount: '733'
-ht-degree: 14%
+ht-degree: 33%
 
 ---
 
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート  {#release-notes}
 
-以下の節では、の現在（最新）バージョンの機能リリースノートの概要を説明します [!DNL Experience Manager] as a Cloud Service。
+以下のセクションでは、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンの機能リリースノートの概要について説明します。
 
 >[!NOTE]
 >
->ここから、以前のバージョン（例えば、2021 年、2022 年のバージョンなど）のリリースノートに移動できます。
+>ここから、以前のバージョン（例えば、2021年、2022年のバージョンなど）のリリースノートに移動できます。
 >
->以下をご覧ください： [Experience Managerリリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja) の今後の機能のアクティベーションについて [!DNL Experience Manager] as a Cloud Service。
+>[!DNL Experience Manager] as a Cloud Service の今後の機能のアクティベーションについての詳細は、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja)をご覧ください。
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ ht-degree: 14%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在の機能リリース (2023.2.0) は 2023 年 4 月 12 日です。 次の機能リリース (2023.4.0) は、2023 年 4 月 27 日に予定されています。
+のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在の機能リリース (2023.2.0) は 2023 年 4 月 12 日です。 次回の機能リリース (2023.4.0) は、2023 年 5 月 4 日に予定されています。
 
 ## リリースビデオ {#release-video}
 
@@ -56,7 +56,7 @@ ht-degree: 14%
 
 ### [!DNL Forms] で利用できる新機能 {#new-features-available-in-channel}
 
-* **[データキャプチャコアコンポーネントを使用したアダプティブFormsの構築](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**: [アダプティブFormsエディターを使用](/help/forms/creating-adaptive-form-core-components.md) 標準化されたデータキャプチャコンポーネント（コアコンポーネント）に基づいてフォームを作成する場合。 これらのコンポーネントは、カスタマイズ機能を提供し、開発時間を短縮し、デジタル登録エクスペリエンスのメンテナンスコストを削減します。
+* **[データキャプチャコアコンポーネントを使用したアダプティブフォームの構築](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)**: [アダプティブフォームエディターを使用](/help/forms/creating-adaptive-form-core-components.md)して、標準化されたデータキャプチャコンポーネント（コアコンポーネント）に基づいてフォームを作成します。これらのコンポーネントは、デジタル登録エクスペリエンスでのカスタマイズ機能を提供し、開発時間を短縮し、メンテナンスコストを削減します。
 
 * **[アダプティブFormsに基づくコアコンポーネントのスタイル設定のためのフロントエンドパイプラインのサポート](/help/forms/using-themes-in-core-components.md)**:コアコンポーネントベースのアダプティブFormsに標準化された BEM ベースのテーマを利用するには、フロントエンドデプロイメントパイプラインと共にデプロイして、フォームのルックアンドフィールを強化し、組織が承認したデザインガイドラインに合わせます。
 
@@ -70,7 +70,7 @@ ht-degree: 14%
 
 * **[Open API 3.0 を使用した REST エンドポイントとの統合](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**:Open API 3.0 をサポートするレコードシステムとシームレスに統合し、フォームデータモデルを使用してデータを保存および取得します。
 
-* **[レビュー用にアダプティブフォームを共有する](/help/forms/create-reviews-forms.md)**:アダプティブFormsのレビューメカニズムを使用して、1 人または複数のレビュー担当者がフォームをレビューできるようにします。
+* **[レビュー用にアダプティブフォームを共有](/help/forms/create-reviews-forms.md)**：アダプティブフォームのレビュー機能を使用する、1 人または複数のレビュー担当者がフォームをレビューできます。
 
 
 ### の機能 [!DNL Forms] プレリリース {#prerelease-features-forms}
@@ -93,11 +93,11 @@ ht-degree: 14%
 
 ## メンテナンスリリースノート {#maintenance}
 
-最新のメンテナンスリリースノートがあります [ここ](/help/release-notes/maintenance/latest.md).
+最新のメンテナンスリリースノートについては、[こちら](/help/release-notes/maintenance/latest.md)をご覧ください。
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager の毎月のリリースの完全なリストを確認できます [こちら。](/help/implementing/cloud-manager/release-notes/current.md)
+Cloud Manager の月次リリースの完全なリストは、 [こちら](/help/implementing/cloud-manager/release-notes/current.md)で確認できます。
 
 ## 移行ツール {#migration-tools}
 
