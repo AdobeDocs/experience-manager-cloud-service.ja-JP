@@ -6,9 +6,9 @@ feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4176'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -140,7 +140,7 @@ Mac の場合、Command + Option + I キーを押してデベロッパーツー�
 
 この 3 つの例で使用されているものと同じアプローチを次の[デモ Web ページ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=ja)に適用できます。
 
-デモ Web ページには複数の製品サムネールがあり、それぞれに「詳細を表示」というラベルの付いたクイックビューボタンがあります。 Web ブラウザーのデバッグツールをアクティブにしたまま各ボタンを選択し、記録されたクイックビュー URL に注目してください。そのページの 4 つの製品クイックビューをすべてアクティベートすると、バックエンドに対して次のリストのクイックビューリクエストが作成されます。
+このデモ web ページにはいくつかの製品サムネールがあり、それぞれのサムネールには、「詳しく見る」というラベルの付いたクイックビューボタンが用意されています。Web ブラウザーのデバッグツールをアクティブにしたまま各ボタンを選択し、記録されたクイックビュー URL に注目してください。そのページの 4 つの製品クイックビューをすべてアクティベートすると、バックエンドに対して次のリストのクイックビューリクエストが作成されます。
 
 * `/datafeed/Male-Windbreaker.json`
 * `/datafeed/Male-SimpleHenley.json`
