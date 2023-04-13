@@ -1,10 +1,10 @@
 ---
 title: コンテンツフラグメントのAdobe Targetへの書き出し
 description: コンテンツフラグメントのAdobe Targetへの書き出し
-source-git-commit: 78840c83d91d6e4f35ec7ca8d14f52024d3535ff
+source-git-commit: 61266ca2caf4cbc02b79a14349c73dced456b5a3
 workflow-type: tm+mt
-source-wordcount: '2193'
-ht-degree: 42%
+source-wordcount: '2228'
+ht-degree: 41%
 
 ---
 
@@ -320,7 +320,7 @@ When you associate a page with the framework, the child pages inherit the associ
 1. 内のコンテンツフラグメントに移動します。 **Assets** コンソール。
 1. ターゲットに書き出すコンテンツフラグメントを選択します。
 
-1. タップまたはクリック **Adobe Targetに書き出し**.
+1. タップまたはクリック **Adobe Targetオファーに書き出し**.
 
    ![Adobe Target に書き出し](assets/cfm-export-target-01.png)
 
@@ -338,7 +338,13 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >選択 **公開** コンテンツフラグメントをすぐに公開し、Target に送信します。
+   >表示される実際のアクションは、フラグメントのステータスと関連アセットによって異なります。
+   >
+   >すべてが既に公開されていて、それ以降に何も変更されていない場合、この手順が渡されます。
+
+   >[!NOTE]
+   >
+   >選択 **公開** コンテンツフラグメントを直ちに公開し、Target に送信します。
 
 1. 確認ダイアログで「**OK**」をタップ／クリックします。
 
