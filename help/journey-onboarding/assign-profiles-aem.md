@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: 050e5966728e157bf2ae51f99a31f68a1d347e4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '769'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ AEM 製品プロファイルに割り当てられたすべてのユーザーは�
 
 >[!CAUTION]
 >
->AEM Administrators またはAEM Users という名前の製品プロファイルを編集または削除しないでください。 これらのプロファイル名を編集すると、AEMクラウドインスタンスへのログインが中断する場合があります。
+>AEM 管理者または AEM ユーザーという名前の製品プロファイルは、編集または削除しないでください。これらのプロファイル名を編集すると、AEM クラウドインスタンスへのログインが中断する場合があります。
 
 ## 前提条件 {#prerequisites}
 
