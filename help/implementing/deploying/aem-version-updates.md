@@ -4,9 +4,9 @@ description: AEM バージョンのアップデート
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 source-git-commit: c3e1559923699d300d78a71195bd5658c3323331
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '399'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 94%
 
 ## はじめに {#introduction}
 
-AEM as a Cloud Service では、継続的統合および継続的配信（CI／CD）を使用して、プロジェクトが確実に最新の AEM バージョンで稼働できるようになりました。つまり、ユーザーに対するサービスが中断されることなく、実稼動インスタンスとステージングインスタンスが最新のAEMバージョンに更新されます。
+AEM as a Cloud Service では、継続的統合および継続的配信（CI／CD）を使用して、プロジェクトが確実に最新の AEM バージョンで稼働できるようになりました。これは、ユーザーへのサービスが中断されることなく、実稼働インスタンスとステージングインスタンスが AEM の最新バージョンに更新されることを意味します。
 
 >[!NOTE]
 >
