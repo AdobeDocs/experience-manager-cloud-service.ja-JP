@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2066'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ Adobe Experience Manager（AEM）as a Cloud Service でコンテンツフラグ�
 >[!NOTE]
 >
 >**コンテンツフラグメント**&#x200B;と&#x200B;**[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;は、AEM 内の異なる機能です。
->* **コンテンツフラグメント** は編集コンテンツで、定義と構造は含まれますが、追加の視覚的なデザインやレイアウトは含まれません。 これらを使用して、テキスト、数値、日付などの構造化データにアクセスできます。
+>* **コンテンツフラグメント**&#x200B;は、定義と構造を伴う編集コンテンツです。ただし、ビジュアルデザインやレイアウトは追加できません。コンテンツフラグメントを使用すれば、テキスト、数値、日付などの構造化データにアクセスできます。
 >* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツであり、web ページのフラグメントです。
 >
 >エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
