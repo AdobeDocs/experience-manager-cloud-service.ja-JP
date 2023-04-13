@@ -3,9 +3,9 @@ title: AEM Cloud Service の AEM Sites の主な変更点
 description: AEM Cloud Service の AEM Sites の主な変更点
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: 7becee73a64fbfd2b4f89c307f63868461b0e853
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '534'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -46,9 +46,9 @@ AEM Cloud Service では、従来 UI をブロックしていた操作は、バ�
 
 ## 新しい参照サイトおよびチュートリアル {#new-reference-site-and-tutorial}
 
-[WKND](https://wknd.site/)新しいAEMリファレンスサイトが更新および公開され、AEMで Web サイトを構築するためのベストプラクティスと、AEMで使用可能な機能、コンポーネント、デプロイメントモデルの包括的なセットを反映しています。 新しい参照サイトおよび [付随チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja) では、プロジェクトの設定、コアコンポーネント、編集可能なテンプレート、クライアントライブラリ、Adobe Experience Manager Sitesでのコンポーネント開発など、基本的なトピックについて説明します。
+[WKND](https://wknd.site/)（新しい AEM の参照用サイト）が更新および公開されました。このサイトには、AEM で web サイトを構築するためのベストプラクティスや、AEM で使用可能な機能、コンポーネント、デプロイメントモデルの包括的なセットが反映されています。新しい参照サイトと[付属のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja)では、プロジェクトの設定、コアコンポーネント、編集可能なテンプレート、クライアントライブラリ、Adobe Experience Manager Sites を使用したコンポーネント開発などの基本的なトピックについて説明します。
 
-これまで、AEM と共にデフォルトで We.Retail がインストールされていました（実稼動モードで開始した場合を除く）。AEM as a Cloud Serviceでは、参照サイトはデフォルトではインストールされません。 代わりに、更新された WKND 参照サイトコードを含んだ [Git リポジトリー](https://github.com/adobe/aem-guides-wknd/)および[付属のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja)が提供されます。
+これまで、AEM と共にデフォルトで We.Retail がインストールされていました（実稼動モードで開始した場合を除く）。AEM as a Cloud Service では、参照サイトはデフォルトではインストールされません。 代わりに、更新された WKND 参照サイトコードを含んだ [Git リポジトリー](https://github.com/adobe/aem-guides-wknd/)および[付属のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja)が提供されます。
 
 ## 実行時に使用できない機能 {#capabilities-not-available-at-runtime}
 
