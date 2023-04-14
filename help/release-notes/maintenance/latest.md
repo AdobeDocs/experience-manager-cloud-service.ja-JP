@@ -1,10 +1,10 @@
 ---
 title: の最新のメンテナンスリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
 description: の最新のメンテナンスリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
-source-git-commit: fb9b735c44dddda9572d3a1f90d49452c6ddc094
+source-git-commit: 3378322c16f12c5ec4a741b912bbe0833f68d8e4
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 13%
+source-wordcount: '470'
+ht-degree: 12%
 
 ---
 
@@ -29,6 +29,7 @@ ht-degree: 13%
 - SITES-12573 - 1 つの変数が指定されていない場合、フィルター内の変数を使用するGraphQLクエリは失敗します。 このリリースにはアップデートしないでください。AEM as a Cloud Serviceと共にGraphQLを使用する必要があります。
 - SKYOPS-51970 - buildImage ステップで使用される FACT バージョンの回帰を識別し、一致しないユーザーマッピングを引き起こしました。
 - GRANITE-44542 — パッケージフィルターに含まれるフォルダーに対して（jcr:primaryType を含む.content.xml を提供することで）パッケージノードタイプを指定しなかったお客様に対して、問題が報告されています。 その結果、これらのフォルダーが nt:folder として扱われ、様々な状況で問題が発生していました。
+- SKYOPS-56928 - Apache HTTPD 回帰は、404 エラーを引き起こす可能性があります。 これらの問題が発生した場合は、安全上の理由から、以前のバージョンにロールバックし、その期間中にパイプラインが実行されるのを防ぐことをお勧めします。
 
 ### 修正された問題 {#fixed-issues-11382}
 
