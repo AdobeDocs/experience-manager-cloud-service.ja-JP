@@ -119,8 +119,7 @@ GraphQL フィルターのパフォーマンスを最適化するには、コン
    >* CF_MIGRATION_LIMIT = 1000
    >* CF_MIGRATION_INTERNAL = 60（秒）
    >* 移行完了に要する概算時間 = 60 + (20,000÷1000 x 60) = 1,260 秒 = 21 分
-      >  開始時に追加される「60」秒は、ジョブの開始時の初期遅延によるものです。
-
+   >  開始時に追加される「60」秒は、ジョブの開始時の初期遅延によるものです。
    >
    >また、これはジョブの完了に必要な&#x200B;*最小*&#x200B;時間であって、I/O 時間は含まれないことにも注意してください。実際の所要時間は、この推定値よりも大幅に長くなる場合があります。
 
@@ -139,6 +138,7 @@ GraphQL フィルターのパフォーマンスを最適化するには、コン
          
          23.01.2023 13:20:40.960 *INFO* [sling-threadpool-09cbdb47-4d99-4c4c-b6d5-781b635ee21b-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 6m, slingJobId: 2023/1/23/13/13/50e1a575-4cd7-497b-adf0-62cb5768eedb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
          ```
+
    * Golden-publish ログの例：
 
       ```shell

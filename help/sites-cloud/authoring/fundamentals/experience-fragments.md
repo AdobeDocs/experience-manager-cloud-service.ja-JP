@@ -47,7 +47,7 @@ Adobe Experience Manager as a Cloud Service 内では、エクスペリエンス
 >
 >エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
 >
->詳細については、](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ja#content-fragments)AEM のコンテンツフラグメントおよびエクスペリエンスフラグメントについて[も参照してください。
+>詳細については、[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ja#content-fragments)AEM のコンテンツフラグメントおよびエクスペリエンスフラグメントについても参照してください。
 
 >[!NOTE]
 >
@@ -356,11 +356,11 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
    >**パーソナライゼーション**&#x200B;タブで選択されたこの **ContextHub パス** は、次のいずれかである必要があります。
    >
    >* フラグメントがレンダリングされるページ用に設定されたパスと同じパス
-      >または：
+   >または：
    >* ページ用に設定された ContextHub で定義されたストアのサブセットを含むパス
+   >
+   >
 
-   >
-   >
 「**パーソナライゼーション**」タブで選択された&#x200B;**セグメントパス**&#x200B;は、次のいずれかである必要があります。
    * フラグメントがレンダリングされるページ用に設定されたものと同じパス
 または
@@ -391,8 +391,8 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
    プロパティが次のように様々なタブに表示されます。
 
    >[!CAUTION]
-   これらのタブは、エクスペリエンスフラグメントコンソールから「**プロパティ**」を開くと表示されます。
-   エクスペリエンスフラグメントの編集時に&#x200B;**プロパティを開く**&#x200B;と、適切な[ページのプロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md)が表示されます。
+   >これらのタブは、エクスペリエンスフラグメントコンソールから「**プロパティ**」を開くと表示されます。
+   >エクスペリエンスフラグメントの編集時に&#x200B;**プロパティを開く**&#x200B;と、適切な[ページのプロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md)が表示されます。
 
    ![エクスペリエンスフラグメントのプロパティ](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -421,7 +421,7 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 URL の `.plain.` セレクターを使用すると、ブラウザーからプレーン HTML レンディションにアクセスできます。
 
 >[!NOTE]
-ブラウザーから直接利用することもできますが、[主な目的は、他のアプリケーション（例えば、サードパーティ Web アプリ、カスタムモバイル実装など）が、URL のみを使用して、エクスペリエンスフラグメントのコンテンツに直接アクセスできるようにすることです。](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)
+>ブラウザーから直接利用することもできますが、[主な目的は、他のアプリケーション（例えば、サードパーティ Web アプリ、カスタムモバイル実装など）が、URL のみを使用して、エクスペリエンスフラグメントのコンテンツに直接アクセスできるようにすることです。](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)
 
 ## エクスペリエンスフラグメントの公開 {#publishing-experience-fragments}
 
