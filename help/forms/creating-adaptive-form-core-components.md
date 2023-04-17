@@ -4,10 +4,10 @@ description: ' [!DNL Experience Manager Forms] を使用したアダプティブ
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 37274b28ab2343fd3cdfb4747c9dee701c699b46
-workflow-type: ht
-source-wordcount: '1458'
-ht-degree: 100%
+source-git-commit: a4fd268cb143c1356de3db9d55b16ccb58b67d4b
+workflow-type: tm+mt
+source-wordcount: '1496'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 アダプティブフォームを作成するには、以下が必要です。
 
-* **お使いの環境でアダプティブフォームズコアコンポーネントを有効化**：新しいプログラムを作成すると、アダプティブコアコンポーネントはお使いの環境で既に有効になっています。アーキタイプ 39 以前の Forms as a Cloud Service 環境をご利用の場合は、[ご利用の環境でアダプティブフォームコアコンポーネントを有効にします](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)。ご利用の環境でコアコンポーネントを有効にすると、**アダプティブフォーム（コアコンポーネント）**&#x200B;のテンプレートとキャンバステーマが環境に追加されます。
+* **お使いの環境でアダプティブフォームズコアコンポーネントを有効化**：新しいプログラムを作成すると、アダプティブコアコンポーネントはお使いの環境で既に有効になっています。アーキタイプ 39 以前の Forms as a Cloud Service 環境をご利用の場合は、[ご利用の環境でアダプティブフォームコアコンポーネントを有効にします](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)。ご利用の環境でコアコンポーネントを有効にすると、**アダプティブフォーム（コアコンポーネント）**&#x200B;のテンプレートとキャンバステーマが環境に追加されます。AEM SDK のバージョンが2023.02.0より前の場合、 [次のことを確認します。 `prerelease` お使いの環境で有効にしたフラグ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) アダプティブFormsコアコンポーネントは、2023.02.0リリース前のプリリースに含まれていたので、
 
 * **アダプティブフォームテンプレート**：テンプレートは基本構造を提供し、アダプティブフォームのアピアランス（レイアウトとスタイル）を定義します。これには、特定のプロパティやコンテンツ構造を有するフォーマット済みのコンポーネントが含まれます。また、テーマと送信アクションを定義するオプションも提供されます。 テーマは、ルックアンドフィールと送信アクションを定義し、アダプティブフォームの送信時に実行するアクションを定義します。 例えば、収集したデータをデータソースに送信する場合などです。 クラウドサービスでは、空白という名前の OOTB テンプレートが提供されます。
 
