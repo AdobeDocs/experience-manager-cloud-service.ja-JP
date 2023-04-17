@@ -2,10 +2,10 @@
 title: コンテンツのプレビュー
 description: AEM プレビューサービスを使用して、運用を開始する前にコンテンツをプレビューする方法を説明します。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 5a804895013e19592f918341bbc7921261b26945
-workflow-type: ht
-source-wordcount: '407'
-ht-degree: 100%
+source-git-commit: 7b56bb05e31d7a61d7a8fb13e2bd0ff6e4fb301d
+workflow-type: tm+mt
+source-wordcount: '277'
+ht-degree: 95%
 
 ---
 
@@ -16,11 +16,7 @@ AEM は、web サイトがパブリッシュ環境になって一般公開され
 
 これにより、ページトランジションやその他のパブリッシュ側のコンテンツなど、オーサー環境からは見えないページエクスペリエンスのプレビューが容易になります。
 
-プレビュー環境について詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)のドキュメントを参照してください。
-
->[!NOTE]
->
->エクスペリエンスフラグメントをプレビューに公開する手順は、エクスペリエンスフラグメントコンソールまたはエディターを使用しますが、基本的にはページの場合と同じです。
+プレビュー環境について詳しくは、ドキュメントを参照してください。 [環境の管理](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## プレビュー用のコンテンツの公開 {#publishing-content-to-preview}
 
@@ -52,27 +48,10 @@ https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.htm
 
 唯一の違いは、**プレビュー**&#x200B;する&#x200B;**宛先**&#x200B;を選択できることです。
 
-## プレビュー層の OSGi 設定の指定 {#configuring-osgi-settings-for-the-preview-tier}
+## その他の情報 {#further-information}
 
-プレビュー層の OSGi プロパティ値は、パブリッシュ層から継承されます。ただし、`service` パラメーターを `preview` 値に設定することで、プレビュー層の値をパブリッシュ層と区別することができます。次の OSGi プロパティの例では、統合エンドポイントの URL を決定しています。
+関連トピック：
 
-```
-[
-{
-"name":"INTEGRATION_URL",
-"type":"string",
-"value":"http://s2.integrationvendor.com",
-"service": "preview"
-}
-]
-```
+* [プレビュー層の OSGi 設定の指定](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
 
-詳しくは、OSGi 設定ドキュメントの[この節](/help/implementing/deploying/configuring-osgi.md#author-vs-publish-configuration)を参照してください。
-
-## 開発者コンソールを使用したプレビューのデバッグ {#debugging-preview-using-the-developer-console}
-
-開発者コンソールを使用してプレビュー層をデバッグするには、次の手順に従います。
-
-* [開発者コンソール](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)で、「**-- すべてのプレビュー --**」または名前に **prev** を含む実稼動環境を選択します。
-* プレビューインスタンスの関連情報を生成します。
-お使いの環境の URL を取得する方法の詳細については、[環境の管理](/help/implementing/cloud-manager/manage-environments.md)を参照してください。
+* [開発者コンソールを使用したプレビューのデバッグ](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
