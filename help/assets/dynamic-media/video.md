@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 57666d474cd2ae41048e2d30eb27b0719a447005
+source-git-commit: 13a1915e9aca812024e8eb27c131500cdc8e01b2
 workflow-type: tm+mt
-source-wordcount: '5899'
+source-wordcount: '5887'
 ht-degree: 82%
 
 ---
@@ -95,7 +95,6 @@ ht-degree: 82%
 
       * Web ページの埋め込みコードを使用したビデオの統合：
          [Web ページにビデオビューアを埋め込みます](/help/assets/dynamic-media/embed-code.md)。
-   * [YouTube にビデオを公開します](#publishing-videos-to-youtube)。
    * [ビデオレポートを生成します](#viewing-video-reports)。
 
    * [ビデオにキャプションを追加します](#adding-captions-to-video)。
@@ -273,7 +272,7 @@ DASH は国際標準、HLS は Apple の標準です。 どちらもアダプテ
 
 ## ビデオエンコーディングのベストプラクティス {#best-practices-for-encoding-videos}
 
-Dynamic Media を有効にし、ビデオ Cloud Services を設定済みの場合、**Dynamic Media エンコードビデオ**&#x200B;ワークフローがビデオをエンコードします。このワークフローは、ワークフローの処理履歴とエラー情報を取り込みます。詳しくは、[ビデオエンコーディングと YouTube への公開の進行状況の監視](#monitoring-video-encoding-and-youtube-publishing-progress)を参照してください。Dynamic Media を有効にし、ビデオ Cloud Services を設定してある場合は、ビデオをアップロードすると、**[!UICONTROL Dynamic Media エンコーディングビデオ]**&#x200B;ワークフローが自動的に有効になります（Dynamic Media を使用していない場合は、**[!UICONTROL DAM アセットの更新]**&#x200B;ワークフローが有効になります）。
+Dynamic Media を有効にし、ビデオ Cloud Services を設定済みの場合、**Dynamic Media エンコードビデオ**&#x200B;ワークフローがビデオをエンコードします。このワークフローは、ワークフローの処理履歴とエラー情報を取り込みます。Dynamic Media を有効にし、ビデオ Cloud Services を設定してある場合は、ビデオをアップロードすると、**[!UICONTROL Dynamic Media エンコーディングビデオ]**&#x200B;ワークフローが自動的に有効になります（Dynamic Media を使用していない場合は、**[!UICONTROL DAM アセットの更新]**&#x200B;ワークフローが有効になります）。
 
 ここでは、ソースビデオファイルのエンコードにおけるベストプラクティスのヒントを説明します。
 
