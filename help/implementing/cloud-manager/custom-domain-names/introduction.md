@@ -2,9 +2,9 @@
 title: カスタムドメイン名の概要
 description: Cloud Manager の UI では、セルフサービス方式でカスタムドメインを追加して、サイトを独自のブランド名で識別することができます。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 5649f083c55cd84296f38acbff3f395e77a7e422
+source-git-commit: cc6910bad0d0a62232bd66e0080b6802b9a1110b
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '673'
 ht-degree: 82%
 
 ---
@@ -42,7 +42,7 @@ AEMaaCS でカスタムドメイン名を使用する場合は、多くの制限
 * 現在実行中のパイプラインが環境に添付されている間は、ドメイン名を環境に追加できません。
 * 同じドメイン名を複数の環境で使用することはできません。
 * 一度に追加できるドメイン名は 1 つだけです。
-* AEM as a Cloud Serviceは、次のようなワイルドカードドメインをサポートしていません `*.example.com`.
+* AEM as a Cloud Serviceは、次のようなワイルドカードドメインをサポートしていません。 `*.example.com`.
 * カスタムドメイン名を追加する前に、カスタムドメイン名（ワイルドカード証明書が有効）を含む有効な SSL 証明書をプログラムにインストールする必要があります。 詳しくは、 [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。
 
 >[!NOTE]
