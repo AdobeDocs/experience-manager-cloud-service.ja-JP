@@ -2,10 +2,10 @@
 title: サンドボックスプログラムの概要
 description: サンドボックスプログラムの概要と実稼動プログラムとの違いについて説明します。
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
-source-wordcount: '438'
-ht-degree: 100%
+source-git-commit: 18c5d2ba77a97413d0d83235ad2baec9fe4b0238
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 88%
 
 ---
 
@@ -69,3 +69,9 @@ AEM のアップデートは、サンドボックスプログラムに自動的�
 サンドボックスプログラムは、連続休止モードになってから 6 か月が経過すると削除され、その後、再作成できます。
 
 詳しくは、[サンドボックス環境の休止と休止解除](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)を参照してください。
+
+### テクニカルサポートなし {#no-support}
+
+サンドボックスプログラムは、通常、トレーニング、デモの実行、有効化、または概念実証 (POC) の目的を満たすために作成されるので、サンドボックスプログラムで発生する問題に対してはテクニカルサポートを利用できません。
+
+サンドボックスプログラムの作成と管理で問題が発生した場合でも、これはテクニカルサポートの範囲内です。
