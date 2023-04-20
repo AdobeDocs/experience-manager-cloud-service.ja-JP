@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 向けのログ
 description: AEM as a Cloud Service のログを使用して一元的なログサービスのグローバルパラメーターを設定する方法、個々のサービスに特有の設定またはデータのログ記録をリクエストする方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 33dfe795140f2780f7f2cf876f3ebc725310214d
+source-git-commit: 9e67b4f68fe450e80249c3959e3517c6cba3275d
 workflow-type: tm+mt
-source-wordcount: '2351'
-ht-degree: 97%
+source-wordcount: '2382'
+ht-degree: 96%
 
 ---
 
@@ -494,6 +494,10 @@ Define DISP_LOG_LEVEL debug
   ...
 </IfDefine>
 ```
+
+>[!NOTE]
+>
+>AEMas a Cloud Service環境の場合、debug は最大の詳細レベルです。 トレースログレベルはサポートされていないので、クラウド環境で動作する場合は設定しないでください。
 
 ## ログのアクセス方法 {#how-to-access-logs}
 
