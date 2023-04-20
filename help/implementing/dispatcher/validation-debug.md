@@ -3,10 +3,10 @@ title: Dispatcher ツールを使用した検証とデバッグ
 description: Dispatcher ツールを使用した検証とデバッグ
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 33dfe795140f2780f7f2cf876f3ebc725310214d
-workflow-type: ht
-source-wordcount: '2701'
-ht-degree: 100%
+source-git-commit: 614834961c23348cd97e367074db0a767d31bba9
+workflow-type: tm+mt
+source-wordcount: '2732'
+ht-degree: 98%
 
 ---
 
@@ -275,7 +275,7 @@ Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも�
 
 **file included at unknown location: ...**
 
-ファーム設定には、独自のファイルをインクルードできる 4 つのセクション、`/clientheaders`、`filters`、`/cache` セクションの `/rules`、および `/virtualhosts` があります。インクルードされるファイルの名前は、次のように指定する必要があります。
+ファーム設定には、独自のファイルをインクルードできる 4 つのセクションがあります。 `/clientheaders`, `filters`, `/rules` in `/cache` セクションと `/virtualhosts`. インクルードされるファイルの名前は、次のように指定する必要があります。
 
 | セクション | インクルードファイル名 |
 |------------------|--------------------------------------|
@@ -437,6 +437,10 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 Dispatcher をローカルで実行すると、ログが端末に直接出力されます。ほとんどの場合、これらのログは DEBUG モードで出力すべきもので、それには、Docker の実行時にデバッグレベルをパラメーターとして渡します。（例：`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`）。
 
 クラウド環境のログは、Cloud Manager で利用可能なログサービスを通じて公開されます。
+
+>[!NOTE]
+>
+>AEMas a Cloud Service環境の場合、debug は最大の詳細レベルです。 トレースログレベルはサポートされていないので、クラウド環境で動作する場合は設定しないでください。
 
 ### 自動再読み込みと検証 {#automatic-reloading}
 
