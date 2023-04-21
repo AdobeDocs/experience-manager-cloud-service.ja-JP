@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service のアーキテクチャの概要
 description: Adobe Experience Manager as a Cloud Service のアーキテクチャの概要。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
+source-git-commit: c67be5b7f5dc454511753faa16bc46b10e72dde4
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 100%
+source-wordcount: '1807'
+ht-degree: 96%
 
 ---
 
@@ -56,11 +56,11 @@ AEM as a Cloud Service では、次の特長を備えたオーケストレーシ
 
 * AEM as a Cloud Service がトラフィックパターンの変更に対応できるようになります。
 
-テナントごとのサービスインスタンスのスケーリングは、次の 2 つの軸に基づいて自動または手動でおこなうことができます。
+テナントごとのサービスインスタンスのスケーリングは、次の 2 つの軸に適用されます。
 
-* 垂直：一定数のノードに対して、割り当てるメモリ量と CPU 処理能力を増減できます。
+* 水平方向：特定のサービスのノード数は、自動的に増減し、個々のデフォルト設定で使用できます。
 
-* 水平：指定されたサービスのノード数を増減できます。
+* 縦：割り当てメモリと CPU 容量は、必要に応じて個々の要件に対応するために、一定数のノードを構成することで、拡張または縮小できます。
 
 ## 環境 {#environments}
 
