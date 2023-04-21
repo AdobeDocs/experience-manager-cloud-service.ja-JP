@@ -5,7 +5,7 @@ exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 source-git-commit: c8bfeda015962d3f327057a375b4edd3d80c6316
 workflow-type: tm+mt
 source-wordcount: '552'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Cloud Manager のエクスペリエンス監査を使用すると、サイト上
 
 >[!TIP]
 >
->エクスペリエンス監査に含めるページは、次の場合に設定します [パイプラインを設定します。](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+>[パイプラインを設定するときに](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)、エクスペリエンス監査に含めるページを設定します。
 
 ## エクスペリエンス監査結果について {#understanding-experience-audit-results}
 

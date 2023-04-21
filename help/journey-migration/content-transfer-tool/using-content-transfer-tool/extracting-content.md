@@ -5,7 +5,7 @@ exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 source-git-commit: 614b2d9e0b3c34bdef854115dce91effed0b36f8
 workflow-type: tm+mt
 source-wordcount: '663'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 98%
 >id="aemcloud_ctt_extraction"
 >title="コンテンツの抽出"
 >abstract="抽出とは、ソース AEM インスタンスから、移行セットと呼ばれる一時領域にコンテンツを抽出することです。移行セットは、アドビが提供するクラウドストレージ領域で、ソース AEM インスタンスと AEM as a Cloud Service インスタンスの間で転送されるコンテンツを一時的に保存するためのものです。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-extraction-process" text="追加抽出"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja#top-up-extraction-process" text="追加抽出"
 
 
 コンテンツ転送ツールで移行セットを抽出するには、次の手順に従います。

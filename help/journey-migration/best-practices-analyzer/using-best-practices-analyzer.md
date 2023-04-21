@@ -5,7 +5,7 @@ exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: e11cb3215dc005bfd38959f3ceaaad25becad65c
 workflow-type: tm+mt
 source-wordcount: '2490'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 99%
 >id="aemcloud_bpa_using"
 >title="ベストプラクティスアナライザーの使用"
 >abstract="ベストプラクティスアナライザー（旧称 Cloud Readiness Analyzer）と生成されたレポートの使用に関するドキュメントを確認します。ベストプラクティスアナライザーレポートは、アップグレードの全般的な準備状況を大まかに理解するために使用します。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[ ウェビナー ] Adobe Experience Manager as a Cloud Serviceへのジャーニーを加速するツールの紹介"
+>additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[ウェビナー] Adobe Experience Manager as a Cloud Service へのジャーニーを加速するツールの導入"
 
 ## ベストプラクティスアナライザーを使用する際の重要な検討事項 {#imp-considerations}
 
@@ -101,14 +101,16 @@ ht-degree: 99%
    ![画像](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
-   >左レールアイコンは、BPA が ACS Commons の使用を検出した場合にのみ表示されます。
+   > 
+左レールアイコンは、BPA が ACS Commons の使用を検出した場合にのみ表示されます。
 
 1. このボックスの選択を解除すると、ACS Commons に関連するすべての結果が除外されます。次の画像に示すように、**フィルター適用済みの結果数**&#x200B;がレポートに表示されます。このフィルターは、レポートがコンマ区切り値（CSV）形式で書き出される場合にも適用されます。
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   >ACS Commons の結果は無視しないでください。AEM as a Cloud Service との互換性を確認するには、[ドキュメント](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)を参照してください。
+   > 
+ACS Commons の結果は無視しないでください。AEM as a Cloud Service との互換性を確認するには、[ドキュメント](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)を参照してください。
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}

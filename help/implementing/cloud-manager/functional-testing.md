@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: cd0b40ffa54eac0d7488b23329c4d2666c992da7
 workflow-type: tm+mt
 source-wordcount: '1124'
-ht-degree: 67%
+ht-degree: 94%
 
 ---
 
@@ -40,29 +40,29 @@ AEM as a Cloud Service には 3 種類の機能テストがあります。
 * [実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md):製品機能テストは、新しいコードを Cloud Manager にデプロイするたびに自動的に実行され、スキップすることはできません。
 * [実稼動以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md):製品機能テストは、オプションで、実稼動以外のパイプラインを実行する際に実行するように選択できます。
 
-製品機能テストは、オープンソースプロジェクトとして維持されます。 詳しくは、GitHub の[製品機能テスト](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)を参照してください。
+製品機能テストは、オープンソースプロジェクトとして維持されます。詳しくは、GitHub の[製品機能テスト](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)を参照してください。
 
 ### カスタム機能テスト {#custom-functional-testing}
 
 製品機能テストはアドビで定義されますが、独自のアプリケーション用に独自の品質テストを作成することもできます。これは、 [実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) または [非実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) を使用して、アプリケーションの品質を確保します。
 
-カスタム機能テストは、カスタムコードのデプロイメントとプッシュアップグレードの両方で実行されるので、AEMコードの変更によってアプリケーションコードが破損するのを防ぐ、適切な機能テストを作成することが特に重要です。 カスタム機能テストステップは常に存在し、スキップできません。
+カスタム機能テストは、カスタムコードのデプロイメントとプッシュアップグレードの両方で実行されます。そのため、AEM コードの変更によってアプリケーションコードが機能しなくなることを防ぐ適切な機能テストを作成することが特に重要になります。カスタム機能テストステップは常に存在し、スキップできません。
 
 ### カスタム UI テスト {#custom-ui-testing}
 
-カスタム UI テストは、アプリケーションの UI テストを作成して自動的に実行できるオプション機能です。UI テストは、Java や Maven、Node や WebDriver.io などの幅広い言語とフレームワーク、または Selenium に基づいて構築されたその他のフレームワークとテクノロジーを可能にするために、Docker イメージにパッケージ化された Selenium ベースのテストです。
+カスタム UI テストは、アプリケーションの UI テストを作成して自動的に実行できるオプション機能です。UI テストは、Docker イメージにパッケージ化された Selenium ベースのテストです。幅広い言語とフレームワーク（Java、Maven、Node、WebDriver.io、Selenium 上に構築されたその他のフレームワークとテクノロジーなど）を選択できるようにします。
 
 詳しくは、[カスタム UI テスト](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)を参照してください。
 
 ## 機能テストの概要 {#getting-started-functional-tests}
 
-Cloud Manager で新しいコードリポジトリを作成すると、 `it.tests` フォルダーがサンプルテストケースで自動的に作成されます。
+Cloud Manager で新しいコードリポジトリを作成すると、サンプルテストケースを含む `it.tests` フォルダーが自動的に作成されます。
 
 >[!NOTE]
 >
->Cloud Manager が自動的に作成される前にリポジトリが作成された場合 `it.tests` フォルダーの場合は、 [AEMプロジェクトアーキタイプ。](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+>Cloud Manager が `it.tests` フォルダーを自動作成する前にリポジトリが作成された場合は、[AEM プロジェクトアーキタイプを使用して最新バージョンを生成することもできます。](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
 
-次に、 `it.tests` フォルダーに保存されている場合、それを独自のテストの基礎として使用し、次の操作を実行できます。
+`it.tests` フォルダーの内容を取得したら、それを独自のテストの基礎として使用し、次の操作を実行できます。
 
 1. [テストケースを作成します。](#writing-functional-tests)
 1. [テストをローカルで実行します。](#local-test-execution)
@@ -131,17 +131,17 @@ Cloud Manager で新しいコードリポジトリを作成すると、 `it.test
 
 ### ローカルテストの実行 {#local-test-execution}
 
-Cloud Manager パイプラインで機能テストをアクティブ化する前に、 [AEMas a Cloud ServiceSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) または実際のAEMas a Cloud Serviceインスタンス
+Cloud Manager パイプラインで機能テストをアクティブ化する前に、[AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) または実際の AEM as a Cloud Service インスタンスを使用して、機能テストをローカルで実行することをお勧めします。
 
 #### 前提条件 {#prerequisites}
 
-Cloud Manager のテストは、技術管理者ユーザーを使用して実行されます。
+Cloud Manager でのテストは、技術管理者ユーザーを使用して実行されます。
 
-ローカルマシンから機能テストを実行する場合は、同じ動作を実現する管理者のような権限を持つユーザーを作成します。
+ローカルマシンから機能テストを実行する場合は、管理者のような権限を持つユーザーを作成して、同じ動作を実現します。
 
 #### IDE での実行 {#running-in-an-ide}
 
-テストクラスは JUnit テストなので、Eclipse、IntelliJ、NetBeans などの主要な Java IDE から実行できます。 製品機能テストとカスタム機能テストはどちらも同じテクノロジーに基づいているので、製品テストをカスタムテストにコピーすることで、両者をローカルで実行できます。
+テストクラスは JUnit テストなので、Eclipse、IntelliJ、NetBeans などの主要な Java IDE から実行できます。製品機能テストとカスタム機能テストはどちらも同じテクノロジーに基づいているので、製品テストをカスタムテストにコピーすることで、両者をローカルで実行できます。
 
 ただし、これらのテストを実行する際は、`aem-testing-clients`（およびそのベースとなる Sling Testing Client）ライブラリで想定されている様々なシステムプロパティを設定する必要があります。
 
@@ -159,9 +159,9 @@ Cloud Manager のテストは、技術管理者ユーザーを使用して実行
 
 #### Maven を使用したすべてのテストの実行 {#using-maven}
 
-1. シェルを開き、 `it.tests` フォルダー内に保存します。
+1. シェルを開き、リポジトリの `it.tests` フォルダーに移動します。
 
-1. 次のコマンドを実行し、Maven を使用してテストを開始するために必要なパラメーターを指定します。
+1. Maven を使用してテストを開始するために必要なパラメーターを指定して、次のコマンドを実行します。
 
 ```shell
 mvn verify -Plocal \

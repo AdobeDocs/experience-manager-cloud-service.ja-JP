@@ -1,6 +1,6 @@
 ---
 title: ユーザーマッピングツールの概要（レガシー）
-description: 概要 ユーザーマッピングツール（レガシー）へ
+description: ユーザーマッピングツールの概要（レガシー）
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 hide: true
 hidefromtoc: true

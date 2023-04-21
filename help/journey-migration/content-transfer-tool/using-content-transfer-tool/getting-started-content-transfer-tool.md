@@ -5,7 +5,7 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
 source-wordcount: '1388'
-ht-degree: 88%
+ht-degree: 91%
 
 ---
 
@@ -60,7 +60,7 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 >title="コンテンツ転送ツールの実行"
 >abstract="この節では、コンテンツ転送ツールを使用してコンテンツを AEM as a Cloud Service（オーサー／パブリッシュ）に移行する方法について説明します。"
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" デモを見る"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="チュートリアル - コンテンツ転送ツールの使用"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ja#migration" text="チュートリアル - コンテンツ転送ツールの使用"
 
 次の節は、コンテンツ転送ツールの新しいバージョンに適用されます。この節では、コンテンツ転送ツールを使用してコンテンツを AEM as a Cloud Service に移行する方法について説明します。
 
@@ -69,8 +69,8 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction_setup"
 >title="抽出設定フェーズ"
->abstract="移行セットの作成および管理方法と、抽出キーのコピー方法について説明します。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="チュートリアル - コンテンツ転送ツールの使用"
+>abstract="移行セットを作成および管理し、抽出キーをコピーする方法を説明します。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ja#migration" text="チュートリアル - コンテンツ転送ツールの使用"
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
 

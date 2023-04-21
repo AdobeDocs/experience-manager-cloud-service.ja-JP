@@ -4,7 +4,7 @@ description: ユーザーマッピングとプリンシパル移行の概要
 source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 28%
+ht-degree: 32%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 28%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
 >title="ユーザーマッピング"
->abstract="コンテンツ転送ツールは、ユーザーとグループを既存の AEM システムから AEM as a Cloud Service に移動する際に役に立ちます。既存のユーザーが IMS オーサーインスタンスで重複しないように、それらのユーザーを IMS ID にマッピングする必要がありますCloud Service。"
+>abstract="コンテンツ転送ツールは、ユーザーとグループを既存の AEM システムから AEM as a Cloud Service に移動する際に役に立ちます。Cloud Service オーサーインスタンスでのユーザーの重複を避けるために、既存のユーザーを IMS ID にマッピングする必要があります。"
 
 >[!NOTE]
 >以前のバージョンのユーザーマッピングツールについては、 [レガシードキュメント](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).
