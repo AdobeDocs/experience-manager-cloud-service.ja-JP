@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d6242e12f650845c778a0cc0850dacdd18dc7a0e
+source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
 workflow-type: tm+mt
-source-wordcount: '4051'
+source-wordcount: '4062'
 ht-degree: 97%
 
 ---
@@ -77,7 +77,7 @@ ht-degree: 97%
    + Cloud Manager のリリースノート {#cloud-manager}
       + [最新のリリースノート](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023年度 {#2023}
-         + [リリースノート（2023.3.0）](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
+         + [ 2023.3.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
          + [リリースノート（2023.2.0）](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [リリースノート（2023.1.0）](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
       + 2022年度 {#2022}
@@ -546,6 +546,7 @@ ht-degree: 97%
             + [アダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
             + [アダプティブフォームのテーマの作成 - コアコンポーネント](/help/forms/using-themes-in-core-components.md)
             + [アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-core-components.md)
+            + [AEM SitesページでのアダプティブForms — コアコンポーネントの作成](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [Summit ワークブック](/help/forms/summit-2023-workbook.md)
       + アダプティブフォームのオーサリング - 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
          + PDF フォームのアダプティブフォームへの変換 {#afcs}
