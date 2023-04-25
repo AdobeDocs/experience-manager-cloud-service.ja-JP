@@ -2,8 +2,8 @@
 title: コンテンツフラグメント - 設定ブラウザー（アセット - コンテンツフラグメント）
 description: 設定ブラウザーでコンテンツフラグメント機能を有効にする方法について説明します。
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: ht
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 100%
 

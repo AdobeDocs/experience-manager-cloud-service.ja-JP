@@ -131,5 +131,5 @@ AEM ヘッドレスアプリケーションの使用時に最高のユーザー�
 ## その他のリソース {#additional-resources}
 
 * [AEM as a Cloud Service へのデプロイの概要](/help/implementing/deploying/overview.md)
-* [Cloud Manager を使用したコードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
+* [Cloud Manager を使用したコードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja#how-to-use)
 * [Cloud Manager Git リポジトリーと外部 Git リポジトリーの統合および AEM as a Cloud Service へのプロジェクトのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=ja)

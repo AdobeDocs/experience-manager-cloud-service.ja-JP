@@ -8,7 +8,7 @@ exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1515'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 100%
 
 ## 概要 {#overview}
 
-[!DNL Assets] HTTP API を使用すれば、デジタルアセット（メタデータ、レンディション、コメントのほか、[!DNL Experience Manager] コンテンツフラグメントを使用した構造化コンテンツも含む）に対して作成、読み取り、更新、削除（CRUD）操作を実行できます。この API は `/api/assets` で公開されており、REST API として実装されています。[コンテンツフラグメントをサポート](/help/assets/content-fragments/assets-api-content-fragments.md)しています。
+[!DNL Assets] HTTP API を使用すれば、デジタルアセット（メタデータ、レンディション、コメントのほか、[!DNL Experience Manager] コンテンツフラグメントを使用した構造化コンテンツも含む）に対して作成、読み取り、更新、削除（CRUD）操作を実行できます。この API は `/api/assets` で公開されており、REST API として実装されています。これには以下が含まれます。 [コンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md).
 
-この API にアクセスするには、次の手順を実行します。
+API にアクセスするには：
 
 1. API サービスドキュメント（`https://[hostname]:[port]/api.json`）を開きます。
 1. `https://[hostname]:[server]/api/assets.json` への [!DNL Assets] サービスリンクをクリックします。
 
-API の応答は、一部の MIME タイプに対する JSON ファイル、およびすべての MIME タイプに対する応答コードです。JSON 応答はオプションであり、PDF ファイルなどでは利用できない場合があります。詳細な分析やアクションを行う場合は、応答コードを利用します。
+API の応答は、一部の MIME タイプに対する JSON ファイル、およびすべての MIME タイプに対する応答コードです。JSON 応答はオプションで、PDFファイルなどは使用できない場合があります。 詳細な分析やアクションを行う場合は、応答コードを利用します。
 
 >[!NOTE]
 >
