@@ -3,9 +3,9 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 32f14d94e2eb9e9ec9e6d04b663733bf5087a736
+source-git-commit: 1d7cbec55c5f3fcfbc217bf53d006a56bdf37f4e
 workflow-type: tm+mt
-source-wordcount: '4768'
+source-wordcount: '4746'
 ht-degree: 87%
 
 ---
@@ -241,14 +241,14 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 | コンテンツフラグメントモデル - データ型 | GraphQL の型 | 説明 |
 |--- |--- |--- |
-| 1 行のテキスト | String、[String] | 作成者名、場所名などの単純な文字列に使用します. |
+| 1 行のテキスト | 文字列、[文字列] | 作成者名、場所名などの単純な文字列に使用します. |
 | 複数行テキスト | String、[文字列] | 記事の本文などのテキストを出力するために使用します |
-| Number | Float、[Float] | 浮動小数点数と整数を表示するために使用します |
+| 数値 | 浮動小数、[浮動小数] | 浮動小数点数と整数を表示するために使用します |
 | Boolean | ブール値 | チェックボックスを表示するために使用します（単純な真／偽のステートメント） |
 | 日時 | Calendar | 日時を ISO 8601 形式で表示するために使用します. 選択したタイプに応じて、AEM GraphQL で使用できるフレーバーは、`onlyDate`、`onlyTime`、`dateTime` の 3 つです。 |
-| 定義済みリスト | String | モデルの作成時に定義されたオプションのリストに含まれるオプションを表示するために使用します |
-| タグ | [String] | AEM で使用されているタグを表す文字列のリストを表示するために使用します |
-| コンテンツ参照 | String、[String] | AEM 内の別のアセットへのパスを表示するために使用します |
+| 定義済みリスト | 文字列 | モデルの作成時に定義されたオプションのリストに含まれるオプションを表示するために使用します |
+| タグ | [文字列] | AEM で使用されているタグを表す文字列のリストを表示するために使用します |
+| コンテンツ参照 | 文字列、[文字列] | AEM 内の別のアセットへのパスを表示するために使用します |
 | フラグメント参照 | *モデルタイプ* | 特定のモデルタイプの別のコンテンツフラグメントを参照するために使用します（モデルの作成時に定義されます） |
 
 ### ヘルパーフィールド {#helper-fields}
@@ -345,7 +345,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 #### バリエーション {#variations}
 
-コンテンツフラグメントのバリエーションに対するクエリを簡略化するために、`_variations` フィールドが実装されています。次に例を示します。
+コンテンツフラグメントのバリエーションに対するクエリを簡略化するために、`_variations` フィールドが実装されています。例：
 
 ```graphql
 {
@@ -558,7 +558,7 @@ GraphQL クエリでフィルタリングを使用して、特定のデータを
 
 >[!NOTE]
 >
->最高のパフォーマンスを得るには、以下を考慮してください。 [GraphQLフィルタリングでのページングと並べ替えのためのコンテンツフラグメントの更新](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+>最高のパフォーマンスを得るには、[GraphQL フィルタリングでページングと並べ替えのためにコンテンツフラグメントを更新すること](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)を検討してください。
 
 この機能を使用すると、指定したフィールドに従ってクエリ結果を並べ替えることができます。
 
@@ -625,7 +625,7 @@ query {
 
 >[!NOTE]
 >
->最高のパフォーマンスを得るには、以下を考慮してください。 [GraphQLフィルタリングでのページングと並べ替えのためのコンテンツフラグメントの更新](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+>最高のパフォーマンスを得るには、[GraphQL フィルタリングでページングと並べ替えのためにコンテンツフラグメントを更新すること](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)を検討してください。
 
 この機能を使用すると、リストを返すクエリタイプに対してページングを実行できます。 次の 2 つの方法があります。
 
@@ -698,7 +698,7 @@ query {
 
 >[!NOTE]
 >
->* デフォルトのページングでは、結果の順序が常に同じになるように、フラグメントを表すリポジトリノードの UUID を順序付けに使用します。 `sort` を使用すると、UUID は一意の並べ替えを保証するために暗黙的に使用されます。同じ並べ替えキーを持つ 2 つの項目の場合も同様です。
+>* デフォルトでは、ページングでは、結果の順序が常に同じになるように、フラグメントを表すリポジトリノードの UUID を使用して順序を指定します。 `sort` を使用すると、UUID は一意の並べ替えを保証するために暗黙的に使用されます。同じ並べ替えキーを持つ 2 つの項目の場合も同様です。
 >
 >* 内部の技術的な制約により、ネストされたフィールドに並べ替えとフィルタリングを適用すると、パフォーマンスが低下します。したがって、ルートレベルで保存されたフィールドのフィルター／並べ替えを使用することをお勧めします。 これは、ページ分割された大きな結果セットをクエリする場合にも推奨される方法です。
 
@@ -909,6 +909,9 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
 AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様に従います。AEM での GraphQL クエリには、次のような拡張機能があります。
 
+* 結果が 1 つだけ必要な場合：
+   * モデル名（例：city）を使用します
+
 * 結果のリストを想定している場合：
    * モデル名に `List` を付け加えます（例：`cityList`）
    * [サンプルクエリ - すべての都市に関するすべての情報](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)を参照してください
@@ -926,13 +929,6 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
    * [サンプルクエリ - すべての都市に関するすべての情報](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)を参照してください
 
 
-
-* 結果が 1 つだけ必要な場合：
-   * モデル名（例：city）を使用します
-
-* 結果のリストを想定している場合：
-   * モデル名に `List` を付け加えます（例：`cityList`）
-   * [サンプルクエリ - すべての都市に関するすべての情報](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)を参照してください
 
 * 論理和（OR）を使用する場合：
    * ` _logOp: OR` を使用します
