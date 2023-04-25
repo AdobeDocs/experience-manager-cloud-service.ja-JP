@@ -1,47 +1,57 @@
 ---
-title: JavaScript で JSON コンテンツを取得
-description: CodePen アプリとAEM Headless Client for JavaScript を使用して、体験環境から JSON コンテンツを取得する方法を説明します。
+title: シンプルなアプリでコンテンツをレンダリング
+description: CodePen サンプルアプリとAEM Headless Client for JavaScript を使用して、体験環境から JSON コンテンツを取得する方法を説明します。
 hidefromtoc: true
 index: false
-source-git-commit: 3aff5ef2fb9ecdd815f0bc1a813d3a3982b4e0ed
+exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
+source-git-commit: 3bfecf4d577c8cb81b1c1cf02b1f9299277fbc8b
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '1004'
 ht-degree: 0%
 
 ---
 
 
-# JavaScript で JSON コンテンツを取得 {#fetch-json}
+# シンプルなアプリでコンテンツをレンダリング {#render-content-simple-app}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript"
->title="JavaScript で JSON コンテンツを取得"
->abstract="CodePen アプリとAEM Headless Client for JavaScript を使用して、体験環境から JSON コンテンツを取得する方法を説明します。"
+>title="シンプルなアプリでコンテンツをレンダリング"
+>abstract="CodePen サンプルアプリとAEM Headless Client for JavaScript を使用して、体験環境から JSON コンテンツを取得する方法を説明します。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="サンプルの CodePen アプリケーションを起動します。"
->abstract="最小限の CodePen アプリを組み立て、GraphQLで永続的なクエリを使用して、体験環境から JSON データを取得する方法を紹介しました。<br><br>以下をクリックして CodePen の例を起動し、このガイドに従って詳細を確認します。"
+>abstract="このガイドでは、体験環境から基本的な JavaScript Web アプリケーションに JSON データをクエリする手順を説明します。 前の学習モジュールでモデル化して作成したコンテンツフラグメントを使用するので、このガイドに進む前に、まずこれらのガイドを参照してください。<br><br>JavaScript Web アプリからコンテンツを照会する方法を示すために、そのまま使用する CodePen を設定したり、独自のアカウントにフォークしてさらにカスタマイズしたりします。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
 >title="このモジュールでは、AEM Headless Client for JavaScript を使用して、GraphQLで保持されたクエリを使用して体験環境から JSON データを取得する方法を学びました。<br><br>これで、このクライアントを使用して、独自の Web アプリケーション内からデータを使用する方法を理解できます。"
 >abstract=""
 
-## はじめに {#intro}
+## CodePen アプリ {#codepen-app}
 
-最初に、CodePen アプリを使用します。これは、JSON データを取得する際に、 [JavaScript 用AEMヘッドレスクライアント](https://github.com/adobe/aem-headless-client-js). サンプルアプリは、基になるコンテンツフラグメントモデルの構造に関係なく、返される JSON コンテンツをレンダリングするように設計されています。 CodePen アプリは、エラーが発生した場合に詳細を表示しようとします。そのため、アプリの下部のウィンドウに次のエラーメッセージが表示される場合があります。
+CodePen は、フロントエンド Web 開発用のオンラインコードエディターで、プレイグラウンドです。 ブラウザーでHTML、CSS、JavaScript コードを記述し、作業の結果をほぼ瞬時に確認できます。 作業内容を保存して他のユーザーと共有することもできます。 体験環境から JSON データを取得するために、 [JavaScript 用AEMヘッドレスクライアント](https://github.com/adobe/aem-headless-client-js). このアプリをそのまま使用するか、または独自の CodePen アカウントにフォークして、さらにカスタマイズできます。
+
+上の「Launch」ボタンをクリックすると、JavaScript を使用して JSON データを取得する最小の例として機能する CodePen アプリが表示されます。 サンプルアプリは、基になるコンテンツフラグメントモデルの構造に関係なく、返される JSON コンテンツをレンダリングするように設計されています。 デフォルトでは、アプリケーションは `aem-demo-assets` 試用環境に含まれる永続的なクエリ。 次のような JSON 応答が表示されます。
 
 ```
 {
-  "status": "Failed to fetch persisted query: your-project/USE-YOUR-QUERY-HERE from publishHost: https://publish-p00000-e12345.adobeaemcloud.com",
-  "message": "[AEMHeadless:REQUEST_ERROR] General Request error: Failed to fetch."
-}
+  "data": {
+    "adventureList": {
+      "items": [
+        {
+          "_path": "/content/dam/aem-demo-assets/en/adventures/bali-surf-camp/bali-surf-camp",
+          "title": "Bali Surf Camp",
+          "price": "$5000 USD",
+          ...
 ```
 
-前のモジュールで保存して公開した、永続化されたクエリをアプリが使用するように設定されていないので、このエラーが発生すると考えられます。 次の手順で、特定のクエリからデータを取得するようにアプリを設定します。
+代わりにエラーが発生した場合は、ブラウザーコンソールで詳細を確認するか、アドビまでお問い合わせください [Slack](https://adobe-dx-support.slack.com).
 
-## CodePen のチュートリアル {#code-walkthrough}
+次に、前のモジュールで作成した永続化クエリからデータを取得するようにアプリを設定します。
+
+## JavaScript コードのチュートリアル {#code-walkthrough}
 
 CodePen の JS(JavaScript) ペインには、サンプルアプリの脳が含まれています。 2 行目から、JavaScript 用AEMヘッドレスクライアントを Skypack CDN から読み込みます。 Skypack は、ビルド手順を必要とせずに開発を容易にするために使用されますが、独自のプロジェクトでAEM Headless Client と NPM または Yarn を使用することもできます。 使用手順については、 [README](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) を参照してください。
 
@@ -67,28 +77,28 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 
 ## 永続クエリからデータを取得 {#use-persisted-query}
 
-行 25 で、アプリがデータを取得する、永続化されたGraphQLのクエリを示します。 永続化されたクエリ名は、プロジェクトの名前 ( `your-project`) に続いてスラッシュを付け、次にクエリ名を付けます。
+行 25 で、アプリがデータを取得する、永続化されたGraphQLのクエリを示します。 永続化されたクエリ名は、エンドポイントの名前 ( `your-project` または `aem-demo-assets`) に続いてスラッシュを付け、次にクエリ名を付けます。 前のモジュールの指示に正確に従った場合、作成した永続化クエリは、 `your-project` endpoint.
 
-を更新します。 `persistedQueryName` 変数を使用して、前のモジュールで作成した永続化されたクエリを使用します。 命名の提案に正確に従った場合は、次の名前の永続的なクエリを作成します。 `adventures` 内 `your-project` プロジェクトの場合は、 `persistedQueryName` 変数を `your-project/adventures`:
+1. を更新します。 `persistedQueryName` 変数を使用して、前のモジュールで作成した永続化されたクエリを使用します。 命名の提案に従った場合は、という名前の永続的なクエリを作成しました。 `adventure-list` 内 `your-project` エンドポイントを選択し、 `persistedQueryName` 変数を `your-project/adventure-list`:
 
-```
+```javascript
 //
 // TODO: Use your persisted query here
 //
-persistedQueryName = 'your-project/adventures';
+persistedQueryName = 'your-project/adventure-list';
 ```
 
-この変更がおこなわれると、アプリが自動的に更新され、永続化されたクエリからに生の JSON 応答を出力します。 `#output` div. エラーメッセージが表示された場合は、コンソールで詳細を確認してください。
+1. この変更がおこなわれると、アプリが自動的に更新され、永続化されたクエリからに生の JSON 応答を出力します。 `#output` div. エラーメッセージが表示された場合は、コンソールで詳細を確認してください。 お問い合わせください [Slack](https://adobe-dx-support.slack.com) この手順でまだ問題が発生している場合は、をクリックします。
 
-この JSON には、アプリで必要な正確なプロパティが含まれていますか？ そうでない場合は、AEM オーサー環境、ツール、GraphQL Query Editor に戻ります ( または、 `/aem/graphiql.html` パス ) を参照し、持続的なクエリに変更を加えます。 完了したら、クエリを保存して公開するのを忘れないでください。
+1. この JSON には、アプリで必要な正確なプロパティが含まれていますか？ そうでない場合は、 [GraphQL API を使用したコンテンツの抽出](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql) 変更を加えるための学習ガイドです。 完了したら、忘れずにクエリを保存して公開してください。
 
 ## JSON レンダリングの変更 {#change-rendering}
 
 現在、JSON は、 `pre` タグに貼り付けます。これはあまり創造的ではありません。 CodePen を切り替えて、 `resultToDom()` 関数を使用して、より興味深い結果を生成するために JSON 応答を繰り返し処理する方法を説明する代わりに、関数を使用する必要があります。
 
-この変更を行うには、37 行目をコメントアウトし、40 行目からコメントを削除します。
+1. この変更を行うには、37 行目をコメントアウトし、40 行目からコメントを削除します。
 
-```
+```javascript
 // Output the results to a pre tag
 //resultToPreTag(queryResult);
 
@@ -96,7 +106,7 @@ persistedQueryName = 'your-project/adventures';
 resultToDom(queryResult);
 ```
 
-また、この関数は、JSON 応答に含まれる画像を `img` タグを使用します。 作成した「アドベンチャー」コンテンツフラグメントに画像が含まれていない場合は、 `aem-demo-assets/adventures-all` 行 25 を変更して永続化されたクエリ
+1. また、この関数は、JSON 応答に含まれる画像を `img` タグを使用します。 作成した「アドベンチャー」コンテンツフラグメントに画像が含まれていない場合は、 `aem-demo-assets/adventures-all` 行 25 を変更して永続化されたクエリ
 
 ```
 persistedQueryName = 'aem-demo-assets/adventures-all';
@@ -105,3 +115,5 @@ persistedQueryName = 'aem-demo-assets/adventures-all';
 このクエリにより、画像と `resultToDom()` 関数はそれらをインラインでレンダリングします。
 
 ![adventures-all クエリと resultToDom レンダリング関数の結果](assets/do-not-localize/adventures-all-query-result.png)
+
+モデルとクエリの構築が完了したので、コンテンツチームは簡単に引き継ぐことができます。 次のモジュールでは、コンテンツ作成者のフローを示します。
