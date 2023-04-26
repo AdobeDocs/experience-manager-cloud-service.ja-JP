@@ -2,10 +2,10 @@
 title: UI テスト
 description: カスタム UI テストは、カスタムアプリケーションの UI テストを作成して自動的に実行できるオプション機能です
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 53f1a6bb83e4ad52d00f9899db0a87c3cb3e2653
+source-git-commit: 24796bd7d9c5e726cda13885bc4bd7e4155610dc
 workflow-type: tm+mt
-source-wordcount: '2147'
-ht-degree: 91%
+source-wordcount: '2238'
+ht-degree: 86%
 
 ---
 
@@ -275,15 +275,32 @@ UI テストの実行中にテスト結果アーカイブが作成された場�
    * この応答の内容は不透明なファイルハンドルです。
    * `<input>` 要素のファイルパスの代わりにこのハンドルを使用して、アプリケーション内のアップロードファイルをテストできます。
 
-## UI テストのローカルでの実行 {#run-ui-tests-locally}
-
-Cloud Manager パイプラインで UI テストをアクティブ化する前に、UI テストを [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) に対してローカルで実行するか、または実際の AEM as a Cloud Service インスタンスで実行することをお勧めします。
-
 ### 前提条件 {#prerequisites}
 
-Cloud Manager でのテストは、技術管理者ユーザーを使用して実行されます。
+1. Cloud Manager でのテストは、技術管理者ユーザーを使用して実行されます。
 
-ローカルマシンから UI テストを実行するには、管理者のような権限を持つユーザーを作成して、同じ動作を実現します。
+>[!NOTE]
+>
+>ローカルマシンから機能テストを実行する場合は、管理者のような権限を持つユーザーを作成して、同じ動作を実現します。
+
+1. 機能テストの範囲を定義するコンテナ化されたインフラストラクチャは、次の境界によって制限されます。
+
+| タイプ | 値 | 説明 |
+|----------------------|-------|--------------------------------------------------------------------|
+| CPU | 2.0 | テスト実行ごとに予約される CPU 時間の量 |
+| メモリ | 1Gi | テストに割り当てられたメモリの量（GB 単位の値） |
+| タイムアウト | 30m | テストを終了するまでの期間。 |
+| 推奨期間 | 15m | この時間を超えないようにテストを書き込むことをお勧めします。 |
+
+>[!NOTE]
+>
+> より多くのリソースが必要な場合は、カスタマーケアケースを作成し、使用例を説明してください。アドビのチームがお客様のリクエストを確認し、適切な支援を提供します。
+
+
+## UI テストのローカルでの実行 {#run-ui-tests-locally}
+
+Cloud Manager パイプラインで UI テストをアクティブ化する前に、UI テストを [AEMas a Cloud ServiceSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+実際のAEM as a Cloud Serviceインスタンスに対して
 
 ### JavaScript テストの例 {#javascript-sample}
 

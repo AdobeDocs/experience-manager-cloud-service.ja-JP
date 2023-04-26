@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+source-git-commit: 91b8fe48d72da9ef764732e5188bb8340b7a660a
 workflow-type: tm+mt
-source-wordcount: '4062'
+source-wordcount: '4068'
 ht-degree: 97%
 
 ---
@@ -789,8 +789,10 @@ ht-degree: 97%
          + [概要](/help/implementing/cloud-manager/overview-test-results.md)
          + [コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)
          + [カスタムコード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md)
-         + [機能テスト](/help/implementing/cloud-manager/functional-testing.md)
-         + [UI テスト](/help/implementing/cloud-manager/ui-testing.md)
+         + 機能テスト {#functional-testing}
+            + [機能テストの概要](/help/implementing/cloud-manager/functional-testing.md)
+            + [Java 機能テスト](/help/implementing/cloud-manager/java-functional-testing.md)
+            + [UI テスト](/help/implementing/cloud-manager/ui-testing.md)
          + [エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [ログへのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md)
       + [SLA レポート](/help/implementing/cloud-manager/sla-reporting.md)
