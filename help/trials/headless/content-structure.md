@@ -4,9 +4,9 @@ description: AEMコンテンツフラグメントモデルを使用して、ヘ�
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 49301c21e3b97b4bdf29fdccc53339149ac5a63b
+source-git-commit: 7134951a588eae3ee0c7c11abea17a34eac21474
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1062'
 ht-degree: 37%
 
 ---
@@ -68,11 +68,9 @@ ht-degree: 37%
 
 1. フィールドのプロパティを定義したら、 **データタイプ** 「 」タブをクリックし、ドラッグ&amp;ドロップしてフィールドを追加します。
 
-1. タップまたはクリック **保存** をクリックして、モデルを保存します。
-
 この方法では、モデルに必要な数のフィールドを追加して、必要なデータ構造に応じてサポートできます。 データフィールドのタイプは異なりますが、モデルに追加するプロセスは変わりません。
 
-次の節に進み、 **冒険** モデル。
+次の節に進み、 **冒険** モデル
 
 ![フィールドをモデルに追加する手順 1、2、3](assets/do-not-localize/define-model-fields.png)
 
@@ -104,4 +102,3 @@ ht-degree: 37%
 1. コンテンツフラグメントモデルに必要なすべてのフィールドを追加したら、ウィンドウの右上にある 「**保存**」をクリックします。
 
 1. モデルが保存され、コンテンツフラグメントモデルコンソールに戻ります。
-
