@@ -4,10 +4,10 @@ description: ユーザーマッピングツール（レガシー）の重要な�
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
 hide: true
 hidefromtoc: true
-source-git-commit: 154c3eb3dbee07e830f489212777540a18c952b3
+source-git-commit: 8a258c2c929f9af84a1cde99072291a3e7f6cfc3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '620'
+ht-degree: 81%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->このドキュメントでは、このツールの廃止バージョンを参照しています。 最新バージョンについて詳しくは、 [ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>このドキュメントでは、ツールの廃止バージョンを参照しています。 最新バージョンについて詳しくは、 [ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 ## 例外的な状況 {#exceptional-cases}
 

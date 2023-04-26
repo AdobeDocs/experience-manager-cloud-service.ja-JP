@@ -4,10 +4,10 @@ description: ユーザーマッピングツールの使用（レガシー）
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: 154c3eb3dbee07e830f489212777540a18c952b3
+source-git-commit: 8a258c2c929f9af84a1cde99072291a3e7f6cfc3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '842'
+ht-degree: 87%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->このドキュメントでは、このツールの廃止バージョンを参照しています。 最新バージョンについて詳しくは、 [ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>このドキュメントでは、ツールの廃止バージョンを参照しています。 最新バージョンについて詳しくは、 [ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 ユーザーマッピングツールで使用される API は、Adobe Identity Management System（IMS）ユーザーをメールアドレスで検索して、各ユーザーの IMS ID を返すことができます。この API では、ユーザーが自分の組織のクライアント ID、クライアントシークレット、アクセスまたはベアラートークンを作成する必要があります。
 
