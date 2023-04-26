@@ -3,10 +3,10 @@ title: Dispatcher ツールを使用した検証とデバッグ
 description: Dispatcher ツールを使用した検証とデバッグ
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 614834961c23348cd97e367074db0a767d31bba9
+source-git-commit: a56b0ed1efff7b8d04e65921ee9dd25ae7030dbd
 workflow-type: tm+mt
-source-wordcount: '2732'
-ht-degree: 98%
+source-wordcount: '2865'
+ht-degree: 91%
 
 ---
 
@@ -86,6 +86,27 @@ ht-degree: 98%
 >
 >フレキシブルモードでは、絶対パスの代わりに相対パスを使用する必要があります。
 
+ServerAlias に一致する 1 つ以上の仮想ホストが常に使用可能であることを確認してください `\*.local`, `localhost` および `127.0.0.1` dispatcher の無効化に必要な サーバーのエイリアス `*.adobeaemcloud.net` および `*.adobeaemcloud.com` は、少なくとも 1 つの vhost 設定でも必要で、内部Adobeプロセスに必要です。
+
+複数の vhost ファイルがあるので、正確なホストを一致させる場合は、次の例に従います。
+
+```
+<VirtualHost *:80>
+	ServerName	"example.com"
+	# Put names of which domains are used for your published site/content here
+	ServerAlias	 "*example.com" "\*.local" "localhost" "127.0.0.1" "*.adobeaemcloud.net" "*.adobeaemcloud.com"
+	# Use a document root that matches the one in conf.dispatcher.d/default.farm
+	DocumentRoot "${DOCROOT}"
+	# URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
+	AllowEncodedSlashes NoDecode
+	# Add header breadcrumbs for help in troubleshooting which vhost file is chosen
+	<IfModule mod_headers.c>
+		Header add X-Vhost "publish-example-com"
+	</IfModule>
+  ...
+</VirtualHost>
+```
+
 * `conf.d/rewrites/rewrite.rules`
 
 このファイルは、`.vhost` ファイル内からインクルードされます。`mod_rewrite` には一連の書き換えルールがあります。
@@ -134,7 +155,7 @@ ht-degree: 98%
 
 仮想ホストのサンプルが含まれています。お使いの仮想ホストに対して、このファイルのコピーを作成し、カスタマイズしてから `conf.d/enabled_vhosts` に移動し、カスタマイズしたコピーのシンボリックリンクを作成します。`conf.d/enabled_vhosts` に default.vhost ファイルを直接コピーしないでください。
 
-ServerAlias `\*.local` と、アドビの内部処理に必要な localhost に一致する仮想ホストを常に使用できるようにします。
+ServerAlias に一致する仮想ホストが常に使用可能であることを確認する `\*.local`, `localhost` および `127.0.0.1` dispatcher の無効化に必要な サーバーのエイリアス `*.adobeaemcloud.net` および `*.adobeaemcloud.com` は、内部Adobeプロセスに必要です。
 
 * `conf.d/dispatcher_vhost.conf`
 
@@ -227,8 +248,8 @@ Phase 3 finished
 スクリプトには次の 3 つのフェーズがあります。
 
 1. バリデーターを実行します。設定が有効でない場合、スクリプトは失敗します。
-2. Apache httpd を起動できるように、`httpd -t` コマンドを実行して、構文が正しいかどうかをテストします。テストが成功した場合は、設定をデプロイする準備が整っています.
-3. 「[ファイル構造](##flexible-mode-file-structure)」節で説明されているように不変であることが意図されている、Dispatcher SDK 設定ファイルのサブセットが変更されていないことを確認します。
+2. 実行されるのは `httpd -t` コマンドを使用して、apache httpd が起動できるように構文が正しいかどうかをテストします。 テストが成功した場合は、設定をデプロイする準備が整っています。
+3. Dispatcher SDK 設定ファイルのサブセットをチェックします。このサブセットは、 [ファイル構造セクション](##flexible-mode-file-structure)に含まれるユーザーは、変更されておらず、現在の SDK のバージョンと一致しています。
 
 Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも実行され、エラーは Cloud Manager の `Build Images step failure` ログに記録されます。
 
@@ -369,11 +390,12 @@ Cloud manager validator 2.0.xx
 
 ### フェーズ 2 {#second-phase}
 
-このフェーズでは、イメージで Docker を起動して Apache 構文をチェックします。Docker をローカルにインストールする必要がありますが、AEM を実行する必要はありません。
+このフェーズでは、Docker コンテナで Apache HTTPD を開始することで、Apache の構文をチェックします。 Docker をローカルにインストールする必要がありますが、AEM を実行する必要はありません。
 
 >[!NOTE]
 >
 >Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。
+>Windows とmacOSの両方で、Docker Desktop を使用することをお勧めします。
 
 このフェーズは、`bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080` を使用して独立に実行することもできます。
 
@@ -401,6 +423,8 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 ```
 
 このフェーズは、`bin/docker_immutability_check.sh src/dispatcher` を使用して独立に実行することもできます。
+
+ローカルの不変ファイルは、 `bin/update_maven.sh src/dispatcher` スクリプトをディスパッチャーフォルダーに追加します。 `src/dispatcher` は dispatcher 設定ディレクトリです。 これにより、親ディレクトリ内の pom.xml ファイルも更新され、Maven の不変性チェックも更新されます。
 
 ## Apache および Dispatcher 設定のデバッグ {#debugging-apache-and-dispatcher-configuration}
 
