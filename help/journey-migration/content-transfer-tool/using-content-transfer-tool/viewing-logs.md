@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールにおける移行セットのログの表示
 description: コンテンツ転送ツールにおける移行セットのログの表示
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
-source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
+source-git-commit: 9d236e459f13fec6f0aaf80f588d20760636b9bb
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 86%
+source-wordcount: '246'
+ht-degree: 84%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 86%
 >title="ログの表示"
 >abstract="取得の抽出が完了したら、エラーや警告がないかログを確認します。エラーが発生した場合は、報告された問題を解決するかアドビサポートに連絡して、即座に対処してください。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja#troubleshooting" text="トラブルシューティング"
->additional-url="https://helpx.adobe.com/jp/enterprise/admin-guide.html/jp/enterprise/using/support-for-experience-cloud.ug.html" text="アドビサポートのご案内"
+>additional-url="https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html" text="アドビサポートのご案内"
 
 各ステップ（抽出と取り込み）が完了したら、ログを確認してエラーを探します。エラーが発生した場合は、報告された問題を解決するかアドビサポートに連絡して、即座に対処してください。
 
