@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1356'
+source-wordcount: '1386'
 ht-degree: 97%
 
 ---
@@ -123,3 +123,18 @@ ht-degree: 97%
 1. Experience Manager のロゴをクリックして「**[!UICONTROL アセット]**」に移動した後、メタデータプロファイルを削除するフォルダーに移動します。
 1. チェックマークをクリックして対象のフォルダーを選択し、「**[!UICONTROL プロパティ]**」をクリックします。
 1. 「**[!UICONTROL メタデータプロファイル]**」タブを選択し、ドロップダウンメニューから「**[!UICONTROL なし]**」を選択して、「**[!UICONTROL 保存]**」をクリックします。既にプロファイルが割り当てられているフォルダーには、フォルダー名のすぐ下にプロファイルの名前が表示されます。
+
+**関連情報**
+
+* [アセットを翻訳](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
+* [アセットの検索](search-assets.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットレポート](asset-reports.md)
+* [メタデータスキーマ](metadata-schemas.md)
+* [アセットのダウンロード](download-assets-from-aem.md)
+* [メタデータの管理](manage-metadata.md)
+* [検索ファセット](search-facets.md)
+* [コレクションの管理](manage-collections.md)
+* [一括メタデータ読み込み](metadata-import-export.md)

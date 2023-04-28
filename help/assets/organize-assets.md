@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 333a0b0f6e0937a5ac6dc1a697c773f7bada45cc
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 100%
+source-wordcount: '909'
+ht-degree: 99%
 
 ---
 
@@ -109,6 +109,21 @@ Date24/08/2021
 処理プロファイルには、事前定義済みフォルダーにアップロードされたアセットに適用される [!DNL Assets] 処理コマンドが含まれています。プロファイルは、フォルダーのコンテンツや新しくアップロードされたアセットの処理を自動化するために使用されます。プロファイルを使用すると、アセットをより良く整理することができます。
 
 メタデータの使用方法、ファイル命名規則およびフォルダー構造を標準化することで、デジタルアセットのプールが拡大しても、より高い精度と一貫性を保って、フォルダーに処理プロファイルを適用できます。
+
+**関連情報**
+
+* [アセットを翻訳](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
+* [アセットの検索](search-assets.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットレポート](asset-reports.md)
+* [メタデータスキーマ](metadata-schemas.md)
+* [アセットのダウンロード](download-assets-from-aem.md)
+* [メタデータの管理](manage-metadata.md)
+* [検索ファセット](search-facets.md)
+* [コレクションの管理](manage-collections.md)
+* [一括メタデータ読み込み](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

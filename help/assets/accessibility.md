@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 3130f374859c1bb67f6311d2decfdd537eabf14f
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1913'
-ht-degree: 100%
+source-wordcount: '1943'
+ht-degree: 99%
 
 ---
 
@@ -216,6 +216,21 @@ CRUD 操作、アセットのダウンロード、メタデータの追加など
 * 画像や図には代替テキストが用意されている。
 * キーボードナビゲーションが可能である。
 * コントラスト比は、ドキュメント Web サイトの一部を強調表示するのに役立つ。
+
+**関連情報**
+
+* [アセットを翻訳](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
+* [アセットの検索](search-assets.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットレポート](asset-reports.md)
+* [メタデータスキーマ](metadata-schemas.md)
+* [アセットのダウンロード](download-assets-from-aem.md)
+* [メタデータの管理](manage-metadata.md)
+* [検索ファセット](search-facets.md)
+* [コレクションの管理](manage-collections.md)
+* [一括メタデータ読み込み](metadata-import-export.md)
 
 ## フィードバックの提供 {#a11y-feedback}
 

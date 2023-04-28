@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: ca01102673211f17e58af36ef2a59d0e964022d5
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 100%
+source-wordcount: '1465'
+ht-degree: 96%
 
 ---
 
@@ -96,7 +96,7 @@ Only the selected folder content and references are published.
 
 上図で、「**[!UICONTROL 公開ターゲット]**」属性の値が異なることがわかります。[!DNL Experience Manager Assets] への公開（`Destination: Publish`）を選択したことを思い出してください。表示では、フォルダーと 1 つのアセットのみ `AEM` に公開され、他の 2 つのアセットは `AEM` と `Dynamic Media` の両方に公開されますが、これはなぜでしょうか。
 
-ここで、フォルダープロパティの役割を理解しておく必要があります。フォルダーの **[!UICONTROL Dynamic Media 公開モード]**&#x200B;プロパティは、公開で重要な役割を果たします。フォルダーのプロパティを表示するには、フォルダーを選択し、ツールバーの「**[!UICONTROL プロパティ]**」をクリックします。アセットの場合は、アセットの親フォルダーのプロパティを参照します。
+ここで、フォルダープロパティの役割を理解しておく必要があります。フォルダーの **[!UICONTROL Dynamic Media Publishing Mode]** プロパティは、パブリッシュに重要な役割を果たします。 フォルダーのプロパティを表示するには、フォルダーを選択し、 **[!UICONTROL プロパティ]** をクリックします。 アセットの場合は、アセットの親フォルダーのプロパティを参照します。
 
 定義されている&#x200B;**[!UICONTROL 宛先]**&#x200B;と **[!UICONTROL Dynamic Media 公開モード]**&#x200B;に応じて公開がどのように行われるかを次の表に示します。
 
@@ -181,5 +181,20 @@ Only the selected folder content and references are published.
 
 * 「[!UICONTROL 公開を管理]」のオプションは、レプリケーション権限を持つユーザーアカウントでのみ使用できます。
 * 空のフォルダーは公開されません。
-* 処理中のアセットを公開した場合は、オリジナルのコンテンツのみが公開されます。処理中のレンディションは失われます。処理が完了するまで待ってから公開するか、処理の完了後にアセットを公開し直してください。
+* 処理中のアセットを公開すると、元のコンテンツのみが公開されます。 処理中のレンディションは失われます。処理が完了するまで待ってから公開するか、処理の完了後にアセットを公開し直してください。
 * 複雑なアセットを非公開にする場合は、アセットだけを非公開にします。参照は他の公開済みアセットから参照されている可能性があるので、非公開にしないでください。
+
+**関連情報**
+
+* [アセットを翻訳](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
+* [アセットの検索](search-assets.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットレポート](asset-reports.md)
+* [メタデータスキーマ](metadata-schemas.md)
+* [アセットのダウンロード](download-assets-from-aem.md)
+* [メタデータの管理](manage-metadata.md)
+* [検索ファセット](search-facets.md)
+* [コレクションの管理](manage-collections.md)
+* [一括メタデータ読み込み](metadata-import-export.md)

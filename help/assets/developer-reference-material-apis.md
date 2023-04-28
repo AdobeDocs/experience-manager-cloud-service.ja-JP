@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 153cc482047c3235b0f62bb94051c884b4cf29d4
-workflow-type: ht
-source-wordcount: '1869'
-ht-degree: 100%
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+workflow-type: tm+mt
+source-wordcount: '1899'
+ht-degree: 99%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 100%
 ![直接バイナリアップロードプロトコルの概要](assets/add-assets-technical.png)
 
 >[!IMPORTANT]
->上記の手順は、[!DNL Experience Manager] JVM 内ではなく、外部アプリケーションで実行します。
+上記の手順は、[!DNL Experience Manager] JVM 内ではなく、外部アプリケーションで実行します。
 
 このアプローチで、アセットのアップロードをスケーラブルかつより効率的に処理できます。[!DNL Experience Manager] 6.5 と比較した場合の違いは次のとおりです。
 
@@ -83,9 +83,9 @@ ht-degree: 100%
 * バイナリクラウドストレージは、コンテンツ配信ネットワーク（CDN）または Edge ネットワークと連携します。CDN は、クライアントに近いアップロードエンドポイントを選択します。特に地理的に分散したチームでは、データが近くのエンドポイントに転送される距離が短いほど、アップロードのパフォーマンスとユーザーエクスペリエンスが向上します。
 
 >[!NOTE]
->この方法を実装するクライアントコードを確認するには、オープンソースの [aem-upload ライブラリ](https://github.com/adobe/aem-upload)を参照してください。
->[!IMPORTANT]
->特定の状況では、Cloud Service 内のストレージの一貫性が最終的に維持されるので、Experience Manager に対するリクエスト間で変更が完全に反映されない場合があります。これにより、必要なフォルダー作成が反映されないので、アップロード呼び出しを開始または完了するための応答が 404 になります。クライアントは 404 応答を想定し、バックオフ戦略を使用して再試行を実装することでそれらを処理する必要があります。
+この方法を実装するクライアントコードを確認するには、オープンソースの [aem-upload ライブラリ](https://github.com/adobe/aem-upload)を参照してください。
+[!IMPORTANT]
+特定の状況では、Cloud Service 内のストレージの一貫性が最終的に維持されるので、Experience Manager に対するリクエスト間で変更が完全に反映されない場合があります。これにより、必要なフォルダー作成が反映されないので、アップロード呼び出しを開始または完了するための応答が 404 になります。クライアントは 404 応答を想定し、バックオフ戦略を使用して再試行を実装することでそれらを処理する必要があります。
 
 ### アップロードの開始 {#initiate-upload}
 
@@ -154,7 +154,7 @@ CDN エッジノードを使用すると、要求されたバイナリアップ�
 アップロードに成功した場合、サーバーは各リクエストへの応答として `201` ステータスコードを返します。
 
 >[!NOTE]
->アップロードアルゴリズムについて詳しくは、[公式機能ドキュメント](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload)および Apache Jackrabbit Oak プロジェクトの [API ドキュメント](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html)を参照してください。
+アップロードアルゴリズムについて詳しくは、[公式機能ドキュメント](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload)および Apache Jackrabbit Oak プロジェクトの [API ドキュメント](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html)を参照してください。
 
 ### アップロードの完了 {#complete-upload}
 
@@ -173,7 +173,7 @@ CDN エッジノードを使用すると、要求されたバイナリアップ�
 | `fileSize` | Number | オプション | ファイルのサイズ（バイト単位）。これを指定した場合、ファイルサイズは転送レートの分析用にシステムのログファイルに記録されます。 |
 
 >[!NOTE]
->アセットが存在し、`createVersion` も `replace` も指定されていない場合、Adobe [!DNL Experience Manager] はアセットの現在のバージョンを新しいバイナリで更新します。
+アセットが存在し、`createVersion` も `replace` も指定されていない場合、Adobe [!DNL Experience Manager] はアセットの現在のバージョンを新しいバイナリで更新します。
 
 開始プロセスと同様に、完了リクエストデータには、複数のファイルに関する情報が含まれる場合があります。
 
@@ -187,7 +187,7 @@ CDN エッジノードを使用すると、要求されたバイナリアップ�
 * [オープンソースコマンドラインツール](https://github.com/adobe/aio-cli-plugin-aem)。
 
 >[!NOTE]
->aem-upload ライブラリとコマンドラインツールの両方で、[node-httptransfer ライブラリ](https://github.com/adobe/node-httptransfer/)を使用します
+aem-upload ライブラリとコマンドラインツールの両方で、[node-httptransfer ライブラリ](https://github.com/adobe/node-httptransfer/)を使用します
 
 ### 非推奨（廃止予定）のアセットアップロード API {#deprecated-asset-upload-api}
 
@@ -199,9 +199,9 @@ CDN エッジノードを使用すると、要求されたバイナリアップ�
 * `AssetManager`Java API（`AssetManager.createAsset(..)` など）
 
 >[!MORELIKETHIS]
->* [オープンソース aem-upload ライブラリ](https://github.com/adobe/aem-upload)。
->* [オープンソースコマンドラインツール](https://github.com/adobe/aio-cli-plugin-aem)。
->* [直接アップロード用の Apache Jackrabbit Oak ドキュメント](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload)。
+* [オープンソース aem-upload ライブラリ](https://github.com/adobe/aem-upload)。
+* [オープンソースコマンドラインツール](https://github.com/adobe/aio-cli-plugin-aem)。
+* [直接アップロード用の Apache Jackrabbit Oak ドキュメント](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload)。
 
 
 ## アセット処理ワークフローとアセット後処理ワークフロー {#post-processing-workflows}
@@ -290,6 +290,21 @@ Adobe [!DNL Experience Manager] の以前のバージョンからアップグレ
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
+**関連情報**
+
+* [アセットを翻訳](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
+* [アセットの検索](search-assets.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットレポート](asset-reports.md)
+* [メタデータスキーマ](metadata-schemas.md)
+* [アセットのダウンロード](download-assets-from-aem.md)
+* [メタデータの管理](manage-metadata.md)
+* [検索ファセット](search-facets.md)
+* [コレクションの管理](manage-collections.md)
+* [一括メタデータ読み込み](metadata-import-export.md)
+
 >[!MORELIKETHIS]
->* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)。
+* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)。
 

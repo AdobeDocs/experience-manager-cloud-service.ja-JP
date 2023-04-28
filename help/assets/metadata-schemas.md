@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: 7ea0e6c2d277199fc5216aab70e587bd23ac6baa
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '2592'
-ht-degree: 89%
+source-wordcount: '2620'
+ht-degree: 88%
 
 ---
 
@@ -254,3 +254,17 @@ Experience Manager では、カスタムのスキーマフォームのみを削�
    >[!CAUTION]
    >
    >メタデータの検証チェックはリソースを大量に消費し、システムのパフォーマンスに影響を与える可能性があります。 検証チェックのスケジュール設定は、適切に行う必要があります。サーバーが負荷に対処できない場合は、このジョブを無効にしてみてください
+
+**関連情報**
+
+* [アセットを翻訳](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
+* [アセットの検索](search-assets.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットレポート](asset-reports.md)
+* [アセットのダウンロード](download-assets-from-aem.md)
+* [メタデータの管理](manage-metadata.md)
+* [検索ファセット](search-facets.md)
+* [コレクションの管理](manage-collections.md)
+* [一括メタデータ読み込み](metadata-import-export.md)

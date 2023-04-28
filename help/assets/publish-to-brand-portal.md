@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 13ea0161771776f23d3789adfb8487df06a7e4b1
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1153'
-ht-degree: 100%
+source-wordcount: '1183'
+ht-degree: 98%
 
 ---
 
@@ -95,7 +95,7 @@ Brand Portal インターフェイスにログインして、公開されたア�
 
 1. **フォルダーを今すぐ公開**
 
-   選択したフォルダーを Brand Portal に公開するには、次のいずれかを実行します。
+   選択したフォルダーをBrand Portalに公開するには、次のいずれかの操作を行います。
 
    * ツールバーで「**[!UICONTROL クイック公開]**」を選択します。
 
@@ -244,3 +244,18 @@ AEM Assets インスタンスから非公開にすることで、Brand Portal �
 
    <li>Step text</li>
    -->
+
+**関連情報**
+
+* [アセットを翻訳](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
+* [アセットの検索](search-assets.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットレポート](asset-reports.md)
+* [メタデータスキーマ](metadata-schemas.md)
+* [アセットのダウンロード](download-assets-from-aem.md)
+* [メタデータの管理](manage-metadata.md)
+* [検索ファセット](search-facets.md)
+* [コレクションの管理](manage-collections.md)
+* [一括メタデータ読み込み](metadata-import-export.md)

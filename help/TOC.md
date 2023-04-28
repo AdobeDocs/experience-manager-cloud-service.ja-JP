@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 91b8fe48d72da9ef764732e5188bb8340b7a660a
+source-git-commit: 06a10f1ec7a3f4842a9cac1f1fe8a889a275cabb
 workflow-type: tm+mt
-source-wordcount: '4068'
+source-wordcount: '4066'
 ht-degree: 97%
 
 ---
@@ -420,7 +420,7 @@ ht-degree: 97%
       + [フォルダーメタデータスキーマ](/help/assets/folder-metadata-schema.md)
       + [イメージプロファイルとビデオプロファイルの操作](/help/assets/dynamic-media/about-image-video-profiles.md)
       + [オーディオおよびビデオアセットのトランスクリプションの設定](/help/assets/configure-transcription.md)
-      + [多言語アセットと翻訳](/help/assets/translate-assets.md)
+      + [アセットの翻訳](/help/assets/translate-assets.md)
       + [検索ファセット](/help/assets/search-facets.md)
       + [Assets HTTP API](/help/assets/mac-api-assets.md)
       + [Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)

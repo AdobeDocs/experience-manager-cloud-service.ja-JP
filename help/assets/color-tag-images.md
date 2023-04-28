@@ -2,10 +2,10 @@
 title: 画像のカラータグ
 description: Experience Manager Assets を使用すると、画像内のカラーを識別し、自動的にタグとして適用できます。その後、これらのタグを使用して、画像を検索およびフィルタリングできます。
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: 2859fa68713b46083314d207abc4dec2e088a173
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 100%
+source-wordcount: '1225'
+ht-degree: 99%
 
 ---
 
@@ -181,3 +181,18 @@ DAM 内の既存の画像には、自動的にカラーがタグ付けされま�
    1 つのカラーの選択することにより、画像をフィルタリングできます。スマートカラータグの 1 つに選択されたカラーがあり、[カバレッジ／ドミナンスしきい値 %](#manage-color-tagging-settings) を超える画像が、右側のパネルに表示されます。
 
 1. 検索バーの「x」をクリックして、フィルターをクリアします。
+
+**関連情報**
+
+* [アセットを翻訳](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
+* [アセットの検索](search-assets.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットレポート](asset-reports.md)
+* [メタデータスキーマ](metadata-schemas.md)
+* [アセットのダウンロード](download-assets-from-aem.md)
+* [メタデータの管理](manage-metadata.md)
+* [検索ファセット](search-facets.md)
+* [コレクションの管理](manage-collections.md)
+* [一括メタデータ読み込み](metadata-import-export.md)

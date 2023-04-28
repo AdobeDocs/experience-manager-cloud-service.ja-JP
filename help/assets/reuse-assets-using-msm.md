@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3251'
 ht-degree: 76%
 
 ---
@@ -321,3 +321,18 @@ MSM for [!DNL Assets] の制限事項を次に示します。
 * コンテンツフラグメントはサポートされていません。ライブコピーを作成しようとすると、コンテンツフラグメントは関係を除きそのままコピーされます。コピーされたコンテンツフラグメントはある時点のスナップショットであり、元のコンテンツフラグメントを更新しても更新されません。
 
 * MSM for Assets は、メタデータの書き戻しが有効になっている場合には機能しません。書き戻し時に、継承が解除されます。
+
+**関連情報**
+
+* [アセットを翻訳](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
+* [アセットの検索](search-assets.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットレポート](asset-reports.md)
+* [メタデータスキーマ](metadata-schemas.md)
+* [アセットのダウンロード](download-assets-from-aem.md)
+* [メタデータの管理](manage-metadata.md)
+* [検索ファセット](search-facets.md)
+* [コレクションの管理](manage-collections.md)
+* [一括メタデータ読み込み](metadata-import-export.md)

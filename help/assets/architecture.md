@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Asset Compute Microservices
 role: Architect
 exl-id: 0440c6a0-97c7-440e-a96e-629825d34a73
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 100%
+source-wordcount: '116'
+ht-degree: 95%
 
 ---
 
@@ -17,6 +17,21 @@ ht-degree: 100%
 Adobe [!DNL Experience Manager Assets] as a [!DNL Cloud Service] は [!DNL Adobe Experience Manager] をベースとしており、最新の Adobe [!DNL Experience Manager] 6.5 と比べても遜色がありません。[!DNL Cloud Service] のアーキテクチャと機能は、クラウドネイティブなサービスとなるように調整されています。基盤となるアーキテクチャが変更されたので、Adobe Experience Manager 6.5 のすべての機能が [!DNL Cloud Service] に含まれるわけではありません。
 
 アセットマイクロサービスのアーキテクチャの概要については、[アセットマイクロサービスの概要](asset-microservices-overview.md#asset-microservices-architecture)を参照してください。
+
+**関連情報**
+
+* [アセットを翻訳](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
+* [アセットの検索](search-assets.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットレポート](asset-reports.md)
+* [メタデータスキーマ](metadata-schemas.md)
+* [アセットのダウンロード](download-assets-from-aem.md)
+* [メタデータの管理](manage-metadata.md)
+* [検索ファセット](search-facets.md)
+* [コレクションの管理](manage-collections.md)
+* [一括メタデータ読み込み](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

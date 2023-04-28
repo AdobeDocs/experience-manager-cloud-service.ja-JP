@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 0ba6ce129322df9ad108822e86e5acfdbf99e613
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '4886'
-ht-degree: 88%
+source-wordcount: '4916'
+ht-degree: 99%
 
 ---
 
@@ -37,7 +37,7 @@ Experience Manager Assets で管理されているビデオアセットは、以
 
 ビデオアセットを YouTube に公開するには、Experience Manager Assets のビデオアセットにタグを付けます。これらのタグを YouTube チャンネルに関連付けます。ビデオアセットのタグが YouTube チャンネルのタグと一致する場合、ビデオが YouTube に公開されます。YouTube への公開は、関連するタグが使用されている限り、ビデオの通常公開と一緒に行われます。
 
-YouTube は独自のエンコーディングを行います。したがって、Experience Managerにアップロードされた元のビデオファイルは、Dynamic Media のエンコーディングで作成されたビデオレンディションの代わりにYouTubeに公開されます。 Dynamic Media を使用してビデオを処理する必要はありませんが、再生にビューアプリセットが必要な場合は、それが行われます。
+YouTube は独自のエンコーディングを行います。そのため、Dynamic Media のエンコーディングで作成した版のビデオではなく、Experience Manager にアップロードされた元のビデオファイルが YouTube に公開されます。Dynamic Media を使用してビデオを処理する必要はありませんが、再生にビューアプリセットが必要な場合は、それが行われます。
 
 ビデオ処理プロファイルをスキップして YouTube に直接公開すると、Experience Manager Assets のビデオアセットに対して、表示可能なサムネールが作成されません。また、エンコードされていないビデオは、Dynamic Media のアセットタイプのいずれでも動作しないことを意味します。
 
@@ -88,7 +88,7 @@ Google ではユーザーインターフェイスが定期的に変更されま�
 
 1. 次のいずれかの操作を行います。
 
-   * プロジェクトのダッシュボードで、 **[!UICONTROL はじめに]** カード、選択 **[!UICONTROL API の確認と有効化]**.
+   * プロジェクトのダッシュボードの「**[!UICONTROL スタートガイド]**」カードで、「**[!UICONTROL API を確認して有効化]**」を選択します。
    * プロジェクトのダッシュボードの「**[!UICONTROL API]**」カードで「**[!UICONTROL API の概要に移動]**」を選択します。
 
 1. **[!UICONTROL API とサービス]**&#x200B;ページの上部にある「**[!UICONTROL API とサービスを有効にする]**」を選択します。<!-- NEXT STEP BELOW IS STEP 10 -->
@@ -222,10 +222,10 @@ Experience Manager 6.4 以降では、Experience Manager で YouTube への公�
    オプションで、必要に応じて説明を追加できます。
 
 1. 「**[!UICONTROL 追加]**」を選択します。
-1. YouTube／Google 検証が表示されます。まだGoogle Cloud アカウントにログインしていない場合は、この手順をスキップします。
+1. YouTube／Google 検証が表示されます。まだ Google Cloud アカウントにログインしていない場合は、この手順をスキップします。
 
-   * 上記のGoogleプロジェクト ID と JSON テキストに関連付けられたGoogleのユーザー名とパスワードを入力します。
-   * アカウントのチャネル数に応じて、2 つ以上の項目が表示されます。 チャネルを選択します。 電子メールアドレスを選択しないでください。チャネルではありません。
+   * 上記の Google プロジェクト ID と JSON テキストに関連付けられた Google のユーザー名とパスワードを入力します。
+   * アカウントのチャネル数に応じて、2 つ以上の項目が表示されます。チャネルを選択します。メールアドレスを選択しないでください（チャネルではありません）。
    * 次のページで、「**[!UICONTROL 確定]**」を選択して、このチャネルへのアクセスを許可します。
 
 1. 「**[!UICONTROL 許可]**」を選択します。
@@ -236,9 +236,9 @@ Experience Manager 6.4 以降では、Experience Manager で YouTube への公�
 1. Experience Manager で使用可能なタグのリストを表示するには、ドロップダウンリストアイコン（上下逆のキャレット）を選択します。
 1. タグを追加するには、1 つ以上のタグを選択します。
 
-   追加したタグを削除するには、タグを選択し、 **[!UICONTROL X]**.
+   追加したタグを削除するには、そのタグを選択して、**[!UICONTROL X]** を選択します。
 
-1. 使用するタグの追加が終了したら、「 **[!UICONTROL 保存]**.
+1. 使用するタグの追加が終了したら、「**[!UICONTROL 保存]**」を選択します。
 
    次は、YouTube チャンネルにビデオを公開します。
 
@@ -254,7 +254,7 @@ Experience Manager 6.4 以降では、Experience Manager で YouTube への公�
 
    このプロジェクト ID は、先ほど [Google Cloud 設定を行った](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings)ときに指定したものです。YouTube アカウント設定ダイアログボックスを開いたままにしておきます。このダイアログボックスには後ですぐ戻ります。
 
-1. プレーンテキストエディターを使用して、「 Google Cloud 設定」タスクでダウンロードして保存した JSON ファイルを開きます。
+1. プレーンテキストのエディターを使用して、「Google Cloud 設定」のタスクでダウンロードして保存しておいた JSON ファイルを開きます。
 1. この JSON テキスト全体を選択してコピーします。
 1. YouTube アカウント設定ダイアログボックスに戻ります。「**[!UICONTROL JSON 設定]**」フィールドに JSON テキストを貼り付けます。
 1. 「**[!UICONTROL OK]**」を選択します。
@@ -267,10 +267,10 @@ Experience Manager 6.4 以降では、Experience Manager で YouTube への公�
    オプションで、必要に応じて説明を追加できます。
 
 1. 「**[!UICONTROL OK]**」を選択します。
-1. YouTube／Google 検証が表示されます。まだGoogle Cloud アカウントにログインしていない場合は、この手順をスキップします。
+1. YouTube／Google 検証が表示されます。まだ Google Cloud アカウントにログインしていない場合は、この手順をスキップします。
 
-   * 上記のGoogleプロジェクト ID と JSON テキストに関連付けられたGoogleのユーザー名とパスワードを入力します。
-   * アカウントのチャネル数に応じて、2 つ以上の項目が表示されます。 チャネルを選択します。 電子メールアドレスを選択しないでください。チャネルではありません。
+   * 上記の Google プロジェクト ID と JSON テキストに関連付けられた Google のユーザー名とパスワードを入力します。
+   * アカウントのチャネル数に応じて、2 つ以上の項目が表示されます。チャネルを選択します。メールアドレスを選択しないでください（チャネルではありません）。
    * 次のページで、「**[!UICONTROL 確定]**」を選択して、このチャネルへのアクセスを許可します。
 
 1. 「**[!UICONTROL 許可]**」を選択します。
@@ -281,9 +281,9 @@ Experience Manager 6.4 以降では、Experience Manager で YouTube への公�
 1. Experience Manager で使用可能なタグのリストを表示するには、ドロップダウンリストアイコン（上下逆のキャレット）を選択します。
 1. タグを追加するには、1 つ以上のタグを選択します。
 
-   追加したタグを削除するには、タグを選択し、 **X**.
+   追加したタグを削除するには、そのタグを選択して、**X** を選択します。
 
-1. 使用するタグの追加が終了したら、「 **[!UICONTROL OK]**.
+1. 使用するタグの追加が終了したら、「**[!UICONTROL OK]**」を選択します。
 
    次は、YouTube チャンネルにビデオを公開します。
 
@@ -302,16 +302,16 @@ Experience Manager 6.4 以降では、Experience Manager で YouTube への公�
 1. 「YouTube への公開」の下で、「**[!UICONTROL YouTube カテゴリ]**」を選択します。
 1. ページの右側の「**[!UICONTROL 設定]**」タブで次の手順を実行します。
 
-   * 「**[!UICONTROL プロパティにマッピング]**」テキストフィールドで、値を選択してコピーします。コピーした値を、開いているテキストエディターに貼り付けます。この値は、後でメタデータ処理プロファイルを作成する際に必要になります。 テキストエディターを開いたままにします。
+   * 「**[!UICONTROL プロパティにマッピング]**」テキストフィールドで、値を選択してコピーします。コピーした値を、開いているテキストエディターに貼り付けます。この値は、後でメタデータ処理プロファイルを作成する際に必要になります。テキストエディターを開いたままにします。
 
-   * 「**[!UICONTROL 選択肢]**」の下で、使用するデフォルト値（「人とブログ」または「科学と技術」など）を選択してコピーします。コピーした値を、開いているテキストエディターに貼り付けます。この値は、後でメタデータ処理プロファイルを作成する際に必要になります。 テキストエディターを開いたままにします。
+   * 「**[!UICONTROL 選択肢]**」の下で、使用するデフォルト値（「人とブログ」または「科学と技術」など）を選択してコピーします。コピーした値を、開いているテキストエディターに貼り付けます。この値は、後でメタデータ処理プロファイルを作成する際に必要になります。テキストエディターを開いたままにします。
 
 1. 「YouTube への公開」の下で、「**[!UICONTROL YouTube のプライバシー]**」を選択します。
 1. ページの右側の「**[!UICONTROL 設定]**」タブで次の手順を実行します。
 
-   * 「**[!UICONTROL プロパティにマッピング]**」テキストフィールドで、値を選択してコピーします。コピーした値を、開いているテキストエディターに貼り付けます。この値は、後でメタデータ処理プロファイルを作成する際に必要になります。 テキストエディターを開いたままにします。
+   * 「**[!UICONTROL プロパティにマッピング]**」テキストフィールドで、値を選択してコピーします。コピーした値を、開いているテキストエディターに貼り付けます。この値は、後でメタデータ処理プロファイルを作成する際に必要になります。テキストエディターを開いたままにします。
 
-   * の下 **[!UICONTROL 選択肢]**&#x200B;を選択し、使用するデフォルト値をコピーします。 選択肢は、2 つのペアにグループ化されています。 1 組の下のフィールドは、コピーするデフォルト値（公開、非公開またはプライベート）です。コピーした値を、開いているテキストエディターに貼り付けます。この値は、後でメタデータ処理プロファイルを作成する際に必要になります。 テキストエディターを開いたままにします。
+   * **[!UICONTROL 選択肢]**&#x200B;で、使用するデフォルト値を選択してコピーします。選択肢は 2 つが 1 組になっています。1 組の下のフィールドは、コピーするデフォルト値（公開、非公開またはプライベート）です。コピーした値を、開いているテキストエディターに貼り付けます。この値は、後でメタデータ処理プロファイルを作成する際に必要になります。テキストエディターを開いたままにします。
 
 1. メタデータスキーマエディターページの右上隅付近にある「**[!UICONTROL キャンセル]**」を選択します。
 1. Experience Manager の左上隅にある Experience Manager ロゴを選択し、左のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）／**[!UICONTROL アセット]**／**[!UICONTROL メタデータプロファイル]**&#x200B;を選択します。
@@ -330,7 +330,7 @@ Experience Manager 6.4 以降では、Experience Manager で YouTube への公�
    * コンポーネントを選択するには、「**[!UICONTROL フィールドラベル]**」を選択します。
    * ページの右側にある「設定」タブで、先ほどコピーした「YouTube への公開」の値（フィールドラベル値と、プロパティにマッピング値）をフォームのそれぞれのフィールドに貼り付けます。選択肢値を「デフォルト値」フィールドに貼り付けます。
 
-1. 次の手順を実行して、コピーしたYouTube Privacy の値をプロファイルに追加します。
+1. 次の手順を実行して、コピーした「YouTube のプライバシー」の値を、プロファイルに追加します。
 
    * ページの右側にある「**[!UICONTROL フォームを作成]**」タブを選択します。
    * （オプション）**[!UICONTROL セクションヘッダー]**&#x200B;というラベルのコンポーネントを左にドラッグして、フォーム領域にドロップします。
@@ -357,9 +357,9 @@ Experience Manager 6.4 以降では、Experience Manager で YouTube への公�
 >**[!UICONTROL 即時公開する]**&#x200B;の場合、アップロードされたアセットは、IPS と同期された後、配信システムに自動的に公開されます。これは Dynamic Media には当てはまりますが、YouTube には当てはまりません。YouTube に公開するには、Experience Manager オーサーを介して公開する必要があります。
 
 >[!NOTE]
->Experience Manager では、YouTube からのコンテンツの公開に **[!UICONTROL YouTube に公開]**&#x200B;ワークフローを使用します。このワークフローでは、進行状況を監視して、エラー情報を表示できます。
->詳しくは、[ビデオエンコーディングと YouTube への公開の進行状況の監視](#monitoring-video-encoding-and-youtube-publishing-progress)を参照してください。
->詳細な進行状況については、レプリケーション下の YouTube ログを監視できます。ただし、このような監視には管理者アクセスが必要です。
+Experience Manager では、YouTube からのコンテンツの公開に **[!UICONTROL YouTube に公開]**&#x200B;ワークフローを使用します。このワークフローでは、進行状況を監視して、エラー情報を表示できます。
+詳しくは、[ビデオエンコーディングと YouTube への公開の進行状況の監視](#monitoring-video-encoding-and-youtube-publishing-progress)を参照してください。
+詳細な進行状況については、レプリケーション下の YouTube ログを監視できます。ただし、このような監視には管理者アクセスが必要です。
 
 **YouTube チャンネルにビデオを公開するには：**
 
@@ -367,9 +367,9 @@ Experience Manager 6.4 以降では、Experience Manager で YouTube への公�
 1. ビデオアセット（アダプティブビデオセット）を選択します。
 1. ツールバーの「**[!UICONTROL プロパティ]**」を選択します。
 1. 「基本」タブの「メタデータ」で、「タグ」フィールドの右側にある「**[!UICONTROL 選択ダイアログを開く]**」を選択します。
-1. タグを選択ページで、使用するタグに移動し、1 つ以上のタグを選択します。
+1. 「タグを選択」ページで、使用するタグに移動し、1 つまたは複数のタグを選択します。
 
-   タグはYouTubeチャネルに関連付ける必要があります。
+   タグは YouTube チャネルに関連付ける必要があります。
 
 1. ページの右上隅にある「**[!UICONTROL 選択]**」を選択します。
 1. ビデオのプロパティページの右上隅にある「**[!UICONTROL 保存して閉じる]**」を選択します。
@@ -394,11 +394,11 @@ Experience Manager 6.4 以降では、Experience Manager で YouTube への公�
 ビデオの公開後、Dynamic Media によって生成された YouTube URL 文字列を取得できます。YouTube URL をコピーしたらクリップボードに配置されるので、必要に応じて web サイトのページまたはアプリケーションに貼り付けることができます。
 
 >[!NOTE]
->YouTube URL は、ビデオアセットを YouTube に公開するまではコピーできません。
+YouTube URL は、ビデオアセットを YouTube に公開するまではコピーできません。
 
 Web アプリケーションに YouTube URL をリンクするには：
 
-1. 次に移動： *YouTube公開* URL をコピーして選択するビデオアセット。
+1. URL をコピーする、*YouTube への公開済み*&#x200B;ビデオアセットの場所に移動して選択します。
 
    YouTube URL をコピーするには、*その前に*&#x200B;ビデオアセットを YouTube に&#x200B;*公開しておく*&#x200B;必要があります。
 
@@ -411,16 +411,16 @@ Web アプリケーションに YouTube URL をリンクするには：
 Experience Manager のビデオアセットを非公開にすると、そのビデオは YouTube から削除されます。
 
 >[!CAUTION]
->YouTube 内からビデオを直接削除すると、Experience Manager はそのことを認識できないので、そのビデオがまだ YouTube に公開されているかのように動作を続けます。ビデオアセットを YouTube で非公開にするときは、必ず Experience Manager から行ってください。
+YouTube 内からビデオを直接削除すると、Experience Manager はそのことを認識できないので、そのビデオがまだ YouTube に公開されているかのように動作を続けます。ビデオアセットを YouTube で非公開にするときは、必ず Experience Manager から行ってください。
 
 >[!NOTE]
->Experience Manager では、YouTube からのコンテンツの削除に **[!UICONTROL YouTube で非公開]**&#x200B;ワークフローを使用します。このワークフローでは、進行状況を監視して、エラー情報を表示できます。
->詳しくは、[ビデオエンコーディングと YouTube への公開の進行状況の監視](#monitoring-video-encoding-and-youtube-publishing-progress)を参照してください。
+Experience Manager では、YouTube からのコンテンツの削除に **[!UICONTROL YouTube で非公開]**&#x200B;ワークフローを使用します。このワークフローでは、進行状況を監視して、エラー情報を表示できます。
+詳しくは、[ビデオエンコーディングと YouTube への公開の進行状況の監視](#monitoring-video-encoding-and-youtube-publishing-progress)を参照してください。
 
 **ビデオを非公開にして YouTube から削除するには：**
 
-1. YouTubeチャネルから非公開にするビデオアセットに移動します。
-1. アセット選択モードで、1 つ以上の公開済みビデオアセットを選択します。
+1. YouTube チャネルから非公開にするビデオアセットに移動します。
+1. アセット選択モードで、1 つまたは複数の公開済みビデオアセットを選択します。
 1. ツールバーで「**[!UICONTROL 公開を管理]**」を選択します。必要に応じて、ツールバーの 3 ドットアイコン（`. . .`）を選択して、**[!UICONTROL 公開を管理]**&#x200B;を表示します。
 1. 公開を管理ページで、「**[!UICONTROL 非公開]**」を選択します。
 1. ページの右上隅にある「**[!UICONTROL 次へ]**」を選択します。
@@ -434,9 +434,9 @@ Experience Manager のビデオアセットを非公開にすると、そのビ�
 
 進行状況（エンコーディング／YouTube の公開の失敗を含む）を監視できます。
 
-1. アセットフォルダーでビデオエンコーディングの進行状況を表示します。
+1. アセットフォルダー内のビデオエンコーディングの進行状況を表示します。
 
-   * カード表示では、ビデオエンコーディングの進行状況は、アセットにパーセント単位で表示されます。 エラーが発生した場合は、この情報もアセットに表示されます。
+   * カードビューでは、ビデオエンコーディングの進行状況がパーセント単位でアセットに表示されます。エラーが発生した場合は、その情報もアセットに表示されます。
 
    ![chlimage_1-429](/help/assets/dynamic-media/assets/chlimage_1-429.png)
 
@@ -452,20 +452,20 @@ Experience Manager のビデオアセットを非公開にすると、そのビ�
 
    ![chlimage_1-432](/help/assets/dynamic-media/assets/chlimage_1-432.png)
 
-   エンコーディングなどのワークフロー情報がタイムラインに表示されます。 YouTube公開の場合、ワークフロータイムラインには、YouTubeチャネルの名前とYouTubeビデオの URL も含まれます。 また、公開が完了した後、ワークフロータイムラインにエラー通知が表示されます。
+   エンコーディングなどのワークフロー情報がタイムラインに表示されます。 YouTube での公開の場合、ワークフロータイムラインには YouTube チャンネルの名前と YouTube 動画の URL も含まれます。また、公開が完了した後、ワークフロータイムラインにエラー通知が表示されます。
 
    >[!NOTE]
-   >[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) からの&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**&#x200B;および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;に関する複数のワークフロー設定があるので、失敗／エラーメッセージが最終的に記録されるまでには時間がかかる可能性があります。例えば、次の設定です。
-   >* Apache Sling Job Queue Configuration
-   >* AdobeGranite Workflow External Process Job Handler
-   >* Granite のワークフロータイムアウトキュー
+   [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) からの&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**&#x200B;および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;に関する複数のワークフロー設定があるので、失敗／エラーメッセージが最終的に記録されるまでには時間がかかる可能性があります。例えば、次の設定です。
+   * Apache Sling ジョブキューの構成
+   * Adobe Granite ワークフロー外部プロセスジョブハンドラー
+   * Granite ワークフロータイムアウトキュー
 
    これらの設定の&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**&#x200B;および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;プロパティは調整できます。
 
 1. 進行中のワークフローについては、**[!UICONTROL ツール]**／**[!UICONTROL ワークフロー]**／**[!UICONTROL インスタンス]**&#x200B;からワークフローインスタンスを表示します。
 
    >[!NOTE]
-   >**[!UICONTROL ツール]**&#x200B;メニューにアクセスするには、管理者権限が必要です。
+   **[!UICONTROL ツール]**&#x200B;メニューにアクセスするには、管理者権限が必要です。
 
    ![chlimage_1-433](/help/assets/dynamic-media/assets/chlimage_1-433.png)
 
@@ -478,22 +478,22 @@ Experience Manager のビデオアセットを非公開にすると、そのビ�
 1. エラーが発生したジョブについては、**[!UICONTROL ツール]**／**[!UICONTROL ワークフロー]**／**[!UICONTROL エラー]**&#x200B;からワークフローエラーを表示します。**[!UICONTROL ワークフローエラー]**&#x200B;に、エラーが発生したすべてのワークフローアクティビティが表示されます。
 
    >[!NOTE]
-   >**[!UICONTROL ツール]**&#x200B;メニューにアクセスするには、管理者権限が必要です。
+   **[!UICONTROL ツール]**&#x200B;メニューにアクセスするには、管理者権限が必要です。
 
    ![chlimage_1-435](/help/assets/dynamic-media/assets/chlimage_1-435.png)
 
    >[!NOTE]
-   >[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) からの&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**、および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;に関する複数のワークフロー設定があるので、エラーメッセージが最終的に記録されるまでには時間がかかる可能性があります。例えば、次の設定です。
-   >* Apache Sling Job Queue Configuration
-   >* AdobeGranite Workflow External Process Job Handler
-   >* Granite のワークフロータイムアウトキュー
+   [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) からの&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**、および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;に関する複数のワークフロー設定があるので、エラーメッセージが最終的に記録されるまでには時間がかかる可能性があります。例えば、次の設定です。
+   * Apache Sling ジョブキューの構成
+   * Adobe Granite ワークフロー外部プロセスジョブハンドラー
+   * Granite ワークフロータイムアウトキュー
 
    これらの設定の&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**&#x200B;および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;プロパティは調整できます。
 
 1. 完了したワークフローについては、**[!UICONTROL ツール]**／**[!UICONTROL ワークフロー]**／**[!UICONTROL アーカイブ]**&#x200B;からワークフローアーカイブを表示します。**[!UICONTROL ワークフローアーカイブ]**&#x200B;に、完了したすべてのワークフローアクティビティが表示されます。
 
    >[!NOTE]
-   >**[!UICONTROL ツール]**&#x200B;メニューにアクセスするには、管理者権限が必要です。
+   **[!UICONTROL ツール]**&#x200B;メニューにアクセスするには、管理者権限が必要です。
 
    ![chlimage_1-436](/help/assets/dynamic-media/assets/chlimage_1-436.png)
 
@@ -562,7 +562,7 @@ For YouTube publishing jobs, do the following:
 ビデオアセットに注釈を追加できます。ビデオに注釈を追加する際は、ユーザーがフレームに注釈を追加できるようにプレーヤーが一時停止します。詳しくは、 [ビデオアセットの管理](manage-video-assets.md) を参照してください。
 
 >[!NOTE]
->MXF ビデオ形式は、ビデオアセットの注釈では、まだサポートされていません。
+MXF ビデオ形式は、ビデオアセットの注釈では、まだサポートされていません。
 
 1. [!DNL Assets] コンソールから、アセットカードの「**[!UICONTROL 編集]**」を選択して、アセット詳細ページを表示します。
 1. ビデオを再生するには、「**[!UICONTROL プレビュー]**」をクリックします。
@@ -584,8 +584,22 @@ For YouTube publishing jobs, do the following:
       * 8 GB（720p トランスコードの場合）
    * 4k 解像度にトランスコードできる最大ファイルサイズは、解像度 4k、ビットレート 12 Mbps、23 fps の MP4 ファイルで 2.55 GB です。
 
+   **関連情報**
+
+* [アセットを翻訳](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
+* [アセットの検索](search-assets.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットレポート](asset-reports.md)
+* [メタデータスキーマ](metadata-schemas.md)
+* [アセットのダウンロード](download-assets-from-aem.md)
+* [メタデータの管理](manage-metadata.md)
+* [検索ファセット](search-facets.md)
+* [コレクションの管理](manage-collections.md)
+* [一括メタデータ読み込み](metadata-import-export.md)
 
 >[!MORELIKETHIS]
->* [Dynamic Media ビデオドキュメント。](/help/assets/dynamic-media/video.md)
->* [処理プロファイルの使用、タイプ、設定について詳しく知る](/help/assets/asset-microservices-configure-and-use.md)。
+* [Dynamic Media ビデオドキュメント。](/help/assets/dynamic-media/video.md)
+* [処理プロファイルの使用、タイプ、設定について詳しく知る](/help/assets/asset-microservices-configure-and-use.md)。
 

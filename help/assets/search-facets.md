@@ -4,9 +4,9 @@ description: この記事では、Adobe Experience Manager で検索ファセッ
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 8a9a3f60d6d52f6cc18a079f372a55d15bb60790
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2425'
 ht-degree: 81%
 
 ---
@@ -322,6 +322,20 @@ CRX リポジトリーのオプションでノード構造を手動で作成す�
 | 編集 | CRX の `/apps` ノードに対する読み取りおよび書き込み権限。 |
 | 削除 | CRX の `/apps` ノードに対する読み取り、書き込みおよび削除権限。 |
 | プレビュー | CRX の `/var/dam/content` ノードに対する読み取り、書き込みおよび削除権限。`/apps` ノードの読み取りおよび書き込み権限。 |
+
+**関連情報**
+
+* [アセットを翻訳](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
+* [アセットの検索](search-assets.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットレポート](asset-reports.md)
+* [メタデータスキーマ](metadata-schemas.md)
+* [アセットのダウンロード](download-assets-from-aem.md)
+* [メタデータの管理](manage-metadata.md)
+* [コレクションの管理](manage-collections.md)
+* [一括メタデータ読み込み](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
