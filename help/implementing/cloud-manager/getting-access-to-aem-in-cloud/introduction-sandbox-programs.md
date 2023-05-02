@@ -2,10 +2,10 @@
 title: サンドボックスプログラムの概要
 description: サンドボックスプログラムの概要と実稼動プログラムとの違いについて説明します。
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: e43dd379169b4048347ecce6d10652e9f8835333
+source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 81%
+source-wordcount: '487'
+ht-degree: 82%
 
 ---
 
@@ -64,15 +64,9 @@ AEM のアップデートは、サンドボックスプログラムに自動的�
 
 ### 休止と削除 {#hibernation}
 
-サンドボックスプログラム内の環境は、8 時間、無操作状態になると、自動的に休止状態になります。休止状態になったら、手動で休止状態を解除できます。
+サンドボックスプログラム内の環境は、8 時間、無操作状態になると、自動的に休止状態になります。サンドボックス環境は、6 ヶ月間休止状態が続くと削除されます。
 
-サンドボックス環境は、6 ヶ月間休止状態が続いた後に削除され、その後再度作成できます。
-
->[!NOTE]
->
->サンドボックス環境のみが、6 か月間の継続的な休止の後に自動的に削除されます。 リポジトリとコードを含むサンドボックスプログラムは保持されます。
-
-詳しくは、[サンドボックス環境の休止と休止解除](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)を参照してください。
+詳しくは、 [サンドボックス環境の休止と休止解除](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) 環境の休止状態を解除する方法と自動サンドボックス削除の方法の詳細については、を参照してください。
 
 ### テクニカルサポートなし {#no-support}
 
