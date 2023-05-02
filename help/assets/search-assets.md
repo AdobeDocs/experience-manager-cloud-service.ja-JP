@@ -1,25 +1,25 @@
 ---
-title: でのデジタルアセットと画像の検索 [!DNL Adobe Experience Manager]
-description: フィルターパネルを使用した [!DNL Adobe Experience Manager] での必要なアセットの検索方法と検索で表示されたアセットの使用方法を説明します。
+title: AEMでのアセットの検索方法は？
+description: フィルターパネルを使用してAEMでアセットを検索する方法と、アセット検索に表示される結果の使用方法について説明します。
 contentOwner: AG
 mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: bb067222423ba70c412a80e210bd79d0f72b7ccb
 workflow-type: tm+mt
-source-wordcount: '4925'
-ht-degree: 94%
+source-wordcount: '4931'
+ht-degree: 92%
 
 ---
 
-# [!DNL Adobe Experience Manager] でのアセットの検索  {#search-assets-in-aem}
+# AEMでのアセットの検索 {#search-assets-in-aem}
 
-[!DNL Adobe Experience Manager Assets] は、コンテンツ速度の向上を達成するのに役立つ堅牢なアセット検出方法を備えています。標準搭載の機能とカスタム方法を使用すると、シームレスでインテリジェントな検索エクスペリエンスでチームが市場投入までの時間を短縮できます。アセットの検索は、デジタルアセット管理システムの利用の中核を成します。用途は、クリエイティブ担当者によるさらなる利用、ビジネスユーザーやマーケティング担当者によるアセットの堅牢な管理、DAM 管理者による管理などです。[!DNL Assets] ユーザーインターフェイスまたは他のアプリやサーフェスで実行できる簡易検索、詳細検索、カスタム検索は、これらの使用目的を達成するのに役立ちます。
+[!DNL Adobe Experience Manager Assets] では、コンテンツ速度の向上に役立つ堅牢なアセット検索方法を提供します。 標準搭載の機能とカスタム方法を使用すると、シームレスでインテリジェントなアセット検索エクスペリエンスで、チームは市場投入までの時間を短縮できます。 アセット検索機能は、デジタルアセット管理システムの使用の中心となるものです。クリエイティブがさらに使用したり、ビジネスユーザーやマーケターがアセットを堅牢に管理したり、DAM 管理者が管理したりする場合などです。 [!DNL Assets] ユーザーインターフェイスまたは他のアプリやサーフェスで実行できる簡易検索、詳細検索、カスタム検索は、これらの使用目的を達成するのに役立ちます。
 
-[!DNL Experience Manager Assets] は次の使用例をサポートしています。ここでは、これらの使用例での使用法、概念、設定、制限事項、トラブルシューティングについて説明します。
+[!DNL Experience Manager Assets] では、アセットの検索に次の使用例をサポートしています。この記事では、これらの使用例での使用方法、概念、設定、制限事項、トラブルシューティングについて説明します。
 
-| アセットの検索 | 検索機能の設定と管理 | 検索結果の操作 |
+| アセットの検索 | 検索機能の設定と管理 | アセット検索結果の操作 |
 |---|---|---|
 | [基本検索](#searchbasics) | [検索インデックス](#searchindex) | [結果の並べ替え](#sort) |
 | [検索 UI について](#searchui) | [テキスト抽出](#extracttextupload) | [アセットのプロパティとメタデータの確認](#checkinfo) |
