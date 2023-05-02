@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: bb067222423ba70c412a80e210bd79d0f72b7ccb
+source-git-commit: 33baeea93c1fa2b74946699e53d2f428e77aee77
 workflow-type: tm+mt
-source-wordcount: '4931'
+source-wordcount: '4934'
 ht-degree: 92%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 92%
 
 [!DNL Adobe Experience Manager Assets] では、コンテンツ速度の向上に役立つ堅牢なアセット検索方法を提供します。 標準搭載の機能とカスタム方法を使用すると、シームレスでインテリジェントなアセット検索エクスペリエンスで、チームは市場投入までの時間を短縮できます。 アセット検索機能は、デジタルアセット管理システムの使用の中心となるものです。クリエイティブがさらに使用したり、ビジネスユーザーやマーケターがアセットを堅牢に管理したり、DAM 管理者が管理したりする場合などです。 [!DNL Assets] ユーザーインターフェイスまたは他のアプリやサーフェスで実行できる簡易検索、詳細検索、カスタム検索は、これらの使用目的を達成するのに役立ちます。
 
-[!DNL Experience Manager Assets] では、アセットの検索に次の使用例をサポートしています。この記事では、これらの使用例での使用方法、概念、設定、制限事項、トラブルシューティングについて説明します。
+AEMでのアセット検索では、次の使用例をサポートしています。この記事では、これらの使用例での使用方法、概念、設定、制限事項、トラブルシューティングについて説明します。
 
 | アセットの検索 | 検索機能の設定と管理 | アセット検索結果の操作 |
 |---|---|---|
@@ -38,9 +38,9 @@ ht-degree: 92%
 
 [!DNL Experience Manager] 検索機能では、コレクションの検索とコレクション内のアセットの検索をサポートしています。詳しくは、[コレクションの検索](/help/assets/manage-collections.md)を参照してください。
 
-## 検索インターフェイスについて {#searchui}
+## アセット検索インターフェイスについて {#searchui}
 
-検索インターフェイスと使用可能なアクションについて理解します。
+アセット検索インターフェイスと使用可能なアクションについて確認します。
 
 ![Experience Manager Assets の検索結果インターフェイスを理解する](assets/aem_search_results.png)
 
