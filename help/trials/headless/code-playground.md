@@ -7,7 +7,7 @@ exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: 3b64b909996674bcbe36f746bcfd15e1422a8a4b
 workflow-type: tm+mt
 source-wordcount: '1013'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
->title="サンプルの CodePen アプリケーションを起動します。"
+>title="サンプル CodePen アプリの起動"
 >abstract="このガイドでは、体験環境から基本的な JavaScript Web アプリケーションに JSON データをクエリする手順を説明します。 前の学習モジュールでモデル化して作成したコンテンツフラグメントを使用するので、このガイドに進む前に、まずこれらのガイドを参照してください。<br><br>JavaScript Web アプリからコンテンツを照会する方法を示すために、そのまま使用する CodePen を設定したり、独自のアカウントにフォークしてさらにカスタマイズしたりします。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
->title="このモジュールでは、AEM Headless Client for JavaScript を使用して、GraphQLで保持されたクエリを使用して体験環境から JSON データを取得する方法を学びました。<br><br>これで、このクライアントを使用して、独自の Web アプリケーション内からデータを使用する方法を理解できます。"
+>title="このモジュールでは、JavaScript 用 AEM ヘッドレスクライアントを使用して、GraphQL 永続クエリを使用して体験版環境から JSON データを取得する方法を説明します。<br><br>これで、このクライアントを使用して独自の web アプリケーション内からデータを使用する方法を理解できます。"
 >abstract=""
 
 ## CodePen {#codepen}

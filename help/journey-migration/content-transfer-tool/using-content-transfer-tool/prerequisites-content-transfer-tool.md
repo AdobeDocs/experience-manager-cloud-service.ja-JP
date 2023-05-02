@@ -5,7 +5,7 @@ exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
 source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
 source-wordcount: '547'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 91%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_prereqs"
 >title="コンテンツ転送ツール使用時の重要な考慮事項"
->abstract="Java バージョンとAEMバージョン、サポートされるデータストアタイプ、ユーザーグループの考慮事項など、コンテンツ転送ツールの使用に関する重要な考慮事項を確認します。"
+>abstract="Java と AEM のバージョン、サポートされるデータストアのタイプ、ユーザーグループの考慮事項など、コンテンツ転送ツールの使用に関する重要な考慮事項を確認します。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja#pre-reqs" text="コンテンツ転送ツール使用時の重要な考慮事項"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja#best-practices" text="ベストプラクティスとガイドライン"
 
