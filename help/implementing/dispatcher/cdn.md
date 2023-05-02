@@ -3,9 +3,9 @@ title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: c419da88ccfe97cf8b80e68ddd402196c2ec58e3
+source-git-commit: 49ffc9ff848a5cca960263d6bcce5c4b6383a6d0
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1101'
 ht-degree: 94%
 
 ---
@@ -29,10 +29,6 @@ Cloud Manager セルフサービス UI を使用して、AEM の標準搭載 CDN
 
 1. [SSL 証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-
->[!NOTE]
->
->AEM の管理による CDN を使用している場合、カスタムドメインは Cloud Manager **のみ**&#x200B;でサポートされます。独自の CDN を導入し、[AEM の管理による CDN を参照させる](#point-to-point-CDN)場合、Cloud Manager ではなく、その特定の CDN を使用してドメインを管理する必要があります。
 
 **トラフィックの制限**
 

@@ -2,10 +2,10 @@
 title: カスタムドメイン名の概要
 description: Cloud Manager の UI では、セルフサービス方式でカスタムドメインを追加して、サイトを独自のブランド名で識別することができます。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: cc6910bad0d0a62232bd66e0080b6802b9a1110b
+source-git-commit: 1862ae2d0d60ac9ed89a4ba3da82dcf8f032ee65
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 82%
+source-wordcount: '770'
+ht-degree: 66%
 
 ---
 
@@ -33,21 +33,16 @@ Cloud Manager の UI では、セルフサービス方式でカスタムドメ�
 >
 >Cloud Manager はドメイン名登録機関ではないため、DNS サービスを提供しません。
 
-## 制限事項 {#limitations}
+## カスタムドメイン名と BYO CDN {#byo-cdn}
 
-AEMaaCS でカスタムドメイン名を使用する場合は、多くの制限があります。
+AEM as a Cloud Serviceは、組み込みのコンテンツ配信ネットワーク (CDN) サービスを提供しますが、独自の (BYO)CDN をAEMと共に使用することもできます。 カスタムドメインは、AEMが管理する CDN または管理する CDN のいずれかにインストールできます。
 
-* Cloud Manager では、Sites プログラムの公開サービスとプレビューサービスの両方で、カスタムのドメイン名がサポートされています。 オーサーサービスのカスタムドメインはサポートされていません。
-* 各 Cloud Manager 環境では、環境ごとに最大 500 個のカスタムドメインをホストできます。
-* 現在実行中のパイプラインが環境に添付されている間は、ドメイン名を環境に追加できません。
-* 同じドメイン名を複数の環境で使用することはできません。
-* 一度に追加できるドメイン名は 1 つだけです。
-* AEM as a Cloud Serviceは、次のようなワイルドカードドメインをサポートしていません。 `*.example.com`.
-* カスタムドメイン名を追加する前に、カスタムドメイン名（ワイルドカード証明書が有効）を含む有効な SSL 証明書をプログラムにインストールする必要があります。 詳しくは、 [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。
+* AEMが管理する CDN にインストールされるカスタムドメイン名（および証明書）は、Cloud Manager で管理されます。
+* 独自の CDN にインストールされているカスタムドメイン名（および証明書）は、その特定の CDN で管理されます。
 
->[!NOTE]
->
->AEM の管理による CDN を使用している場合、カスタムドメインは Cloud Manager **のみ**&#x200B;でサポートされます。独自の CDN を導入し、[AEM の管理による CDN を参照させる](/help/implementing/dispatcher/cdn.md)場合、Cloud Manager ではなく、その特定の CDN を使用してドメインを管理する必要があります。
+独自の CDN で管理するドメインは、Cloud Manager を通じてインストールする必要はありません。 X-Forwarded-Host を介してAEMで使用可能になり、Dispatcher で定義された vhosts と一致します。 [詳しくは、 CDN のドキュメントを参照してください。](/help/implementing/dispatcher/cdn.md)
+
+1 つの環境で、AEMが管理する CDN に両方のドメインをインストールし、独自の CDN にインストールすることができます。
 
 ## ワークフロー {#workflow}
 
@@ -68,3 +63,15 @@ AEMaaCS でカスタムドメイン名を使用する場合は、多くの制限
 >[!TIP]
 >
 >通常、AEM as a Cloud Service でのカスタムドメイン名の設定手順は簡単です。 ただし、ドメインのデリゲーションに関する問題が発生することがあり、その場合は解決に 1～2 営業日かかる可能性があります。そのため、運用開始日の前にドメインを適切にインストールしておくことを強くお勧めします。 詳しくは、[ドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)のドキュメントを参照してください。
+
+## 制限事項 {#limitations}
+
+AEMaaCS でカスタムドメイン名を使用する場合は、多くの制限があります。
+
+* Cloud Manager では、Sites プログラムの公開サービスとプレビューサービスの両方で、カスタムのドメイン名がサポートされています。 オーサーサービスのカスタムドメインはサポートされていません。
+* 各 Cloud Manager 環境では、環境ごとに最大 500 個のカスタムドメインをホストできます。
+* 現在実行中のパイプラインが環境に添付されている間は、ドメイン名を環境に追加できません。
+* 同じドメイン名を複数の環境で使用することはできません。
+* 一度に追加できるドメイン名は 1 つだけです。
+* AEM as a Cloud Serviceは、次のようなワイルドカードドメインをサポートしていません。 `*.example.com`.
+* カスタムドメイン名を追加する前に、カスタムドメイン名（ワイルドカード証明書が有効）を含む有効な SSL 証明書をプログラムにインストールする必要があります。 詳しくは、 [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。
