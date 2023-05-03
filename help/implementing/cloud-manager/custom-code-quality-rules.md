@@ -2,10 +2,10 @@
 title: カスタムコード品質ルール
 description: このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。これらは、Adobe Experience Manager Engineering のベストプラクティスに基づいています。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 0b71e15c956cd39907440be319347bd1a749eb0b
+source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
 workflow-type: tm+mt
-source-wordcount: '3485'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -757,7 +757,7 @@ Experience Manager コンテンツリポジトリ内の `/libs` コンテンツ�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
-OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、Experience Manager 内でデフォルトのオーサリングモードを定義します。[Experience Manager 6.4 以降、クラシック UI は非推奨となった](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=ja)ため、デフォルトのオーサリングモードがクラシック UI に設定されている場合、問題が発生するようになりました。
+OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、Experience Manager 内でデフォルトのオーサリングモードを定義します。Experience Manager 6.4 以降、クラシック UI は非推奨となったため、デフォルトのオーサリングモードがクラシック UI に設定されている場合、問題が発生するようになりました。
 
 ### ダイアログを持つコンポーネントはタッチ UI ダイアログが必要 {#oakpal-components-dialogs}
 
@@ -860,7 +860,7 @@ Experience Manager as a Cloud Service 上でのアセット処理をアセット
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-従来の基盤コンポーネント（`/libs/foundation` 下のコンポーネントなど）は、[一部の Experience Manager リリースでは廃止](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=ja)され、コアコンポーネントに置き換わりました。使用する方法がオーバーレイであろうと継承であろうと、基盤コンポーネントに基づいてカスタムコンポーネントを作成することは、お勧めしません。対応するコアコンポーネントに移行してください。
+従来の基盤コンポーネント（`/libs/foundation` 下のコンポーネントなど）は、一部の Experience Manager リリースでは廃止され、コアコンポーネントに置き換わりました。使用する方法がオーバーレイであろうと継承であろうと、基盤コンポーネントに基づいてカスタムコンポーネントを作成することは、お勧めしません。対応するコアコンポーネントに移行してください。
 
 この変換は、[Experience Manager 最新化ツール](https://opensource.adobe.com/aem-modernize-tools/)で容易に行うことができます。
 

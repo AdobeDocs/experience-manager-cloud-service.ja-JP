@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 9abafe051672de65f042332314445b239f95852b
 workflow-type: tm+mt
-source-wordcount: '2441'
+source-wordcount: '2423'
 ht-degree: 97%
 
 ---
@@ -236,7 +236,7 @@ ht-degree: 97%
 
 * 画像内の細かい違いを認識することはできません。例えば、シャツのサイズが細身か標準かなどです。
 * 画像の細かい模様や部分に基づいてタグを識別することはできません。例えば、シャツのロゴなどです。
-* タグ付けは、[!DNL Experience Manager] がサポートする言語でサポートされています。言語の一覧については、[スマートコンテンツサービスのリリースノート](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html?lang=ja#languages)を参照してください。
+* タグ付けは、[!DNL Experience Manager] がサポートする言語でサポートされています。
 * 処理されないタグは、次のものに関係しています。
 
    * 視覚的でない、抽象的な側面。製品のリリースの年や季節、画像によって誘発されるムードや感情、ビデオの主観的な意味などがその例です。
