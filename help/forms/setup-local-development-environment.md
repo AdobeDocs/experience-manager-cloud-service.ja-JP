@@ -2,10 +2,10 @@
 title: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境の設定
 description: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境の設定
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 2a2becb12b7724720821f895b0631d8d82e4cd79
+source-git-commit: a1b186fec2d6de0934ffebc96967d36a967c044e
 workflow-type: tm+mt
 source-wordcount: '3042'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -523,7 +523,7 @@ AEM Forms as a Cloud Service 用に AEM アーキタイプのバージョン 40 
    `<artifactId>core-forms-components-core</artifactId>`
    `</dependency>`
 
-1. [パイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja). パイプラインが正常に実行されると、お使いの環境でアダプティブフォームのコアコンポーネントが有効になります。 また、アダプティブフォーム（コアコンポーネント）のテンプレートとキャンバステーマが、Forms as a Cloud Service 環境に追加されます。
+1. [パイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja). パイプラインが正常に実行されると、お使いの環境でアダプティブフォームのコアコンポーネントが有効になります。 また、アダプティブForms（コアコンポーネント）テンプレートとキャンバステーマが、Formsas a Cloud Service環境に追加されます。
 
 
 ## ローカル開発環境のアップグレード {#upgrade-your-local-development-environment}
