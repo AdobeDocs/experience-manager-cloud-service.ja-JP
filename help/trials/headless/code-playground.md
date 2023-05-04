@@ -4,9 +4,9 @@ description: CodePen サンプルアプリとAEM Headless Client for JavaScript 
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 3b64b909996674bcbe36f746bcfd15e1422a8a4b
+source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '987'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="サンプル CodePen アプリの起動"
->abstract="このガイドでは、体験環境から基本的な JavaScript Web アプリケーションに JSON データをクエリする手順を説明します。 前の学習モジュールでモデル化して作成したコンテンツフラグメントを使用するので、このガイドに進む前に、まずこれらのガイドを参照してください。<br><br>JavaScript Web アプリからコンテンツを照会する方法を示すために、そのまま使用する CodePen を設定したり、独自のアカウントにフォークしてさらにカスタマイズしたりします。"
+>abstract="このガイドでは、体験環境から基本的な JavaScript Web アプリケーションに JSON データをクエリする手順を説明します。 前の学習モジュールでモデル化して作成したコンテンツフラグメントを使用するので、このガイドに進む前に、まずこれらのガイドを参照してください。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
@@ -61,7 +61,7 @@ import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headles
 
 6 行目では、公開ホストの詳細を `publishHost` クエリパラメーター。 これは、AEMヘッドレスクライアントがデータを取得するホストです。 これは通常はアプリにコード化されますが、CodePen アプリが異なる環境で簡単に動作できるように、クエリパラメーターを使用します。
 
-CORS の問題を回避するために、プロキシAdobeIO Runtime 関数を使用するようにAEM Headless Client を 12 行目に設定します。 これは、独自のプロジェクトに必要なわけではありませんが、CodePen アプリが体験環境で動作するために必要になります。 プロキシ関数は、 `publishHost` クエリパラメーターで指定された値。
+12 行目にAEM Headless Client を設定します。
 
 ```javascript
 const aemHeadlessClient = new AdobeAemHeadlessClientJs({
@@ -72,6 +72,10 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
   }
 });
 ```
+
+>[!NOTE]
+>
+>この **serviceURL** は、CORS の問題を回避するために、プロキシAdobeIO Runtime 関数を使用するように設定されています。 これは、独自のプロジェクトに必要なわけではありませんが、CodePen アプリが体験環境で動作するために必要になります。 プロキシ関数は、 **publishHost** クエリパラメーターで指定された値。
 
 最後に、関数 `fetchJsonFromGraphQL()` は、AEMヘッドレスクライアントを使用して取得リクエストを実行するために使用されます。 この呼び出しは、コードが変更されるたびに実行されます。または、 **再取得** リンク。 実際の `aemHeadlessClient.runPersistedQuery(..)` 呼び出しは 34 行目で発生します。 少し後で、この JSON データのレンダリング方法を変更しますが、現時点では、このデータを `#output` div を使用 `resultToPreTag(queryResult)` 関数に置き換えます。
 
