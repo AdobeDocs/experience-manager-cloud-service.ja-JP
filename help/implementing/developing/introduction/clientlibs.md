@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service でのクライアントサイドライブラリの使用
 description: AEM では、クライアントサイドライブラリフォルダーが提供されています。これにより、クライアントサイドコード（clientlibs）をリポジトリーに格納し、カテゴリ別に整理して、それぞれのカテゴリのコードをクライアントに提供するタイミングと方法を定義できます。
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: b93ec12616742910e35a3dac4224b690cd2c7116
-workflow-type: ht
+source-git-commit: 906fbefdbd100a7874b6f58ef23b7aaa46ac4ba3
+workflow-type: tm+mt
 source-wordcount: '2567'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -210,7 +210,7 @@ AEM のクライアントライブラリフォルダーでは、他にも多数�
 
 コードの埋め込みは、リポジトリーのセキュリティ保護された領域に格納されているライブラリへのアクセスを提供する際に便利です。
 
-#### アプリケーション専用のクライアントライブラリフォルダー {#app-specific-client-library-folders}
+#### アプリ固有のクライアントライブラリフォルダー {#app-specific-client-library-folders}
 
 アプリケーション関連のすべてのファイルは、`/apps` 内のアプリケーションフォルダーに格納することをお勧めします。Web サイト訪問者の `/apps` フォルダーに対するアクセスを拒否することもお勧めします。両方のベストプラクティスを満たすには、`/etc` にクライアントライブラリフォルダーを作成して、 `/apps` 内のクライアントライブラリを埋め込みます。
 
@@ -270,27 +270,27 @@ body {
 
 1. Web ブラウザーのアドレスボックスで、HTML の URL に次のテキストを付加します。
    * `?debugClientLibs=true`
-1. ページが読み込まれたら、ページソースを表示します。
-1. リンク要素の href として指定されているリンクをクリックしてファイルを開き、ソースコードを表示します。
+1. ページが読み込まれたら、ページのソースを表示します。
+1. リンク要素の href として指定されているリンクをクリックして、ファイルを開き、ソースコードを表示します。
 
 ### プリプロセッサーの使用 {#using-preprocessors}
 
 AEM では、プラグ可能なプリプロセッサーを使用でき、AEM のデフォルトプリプロセッサーとして、CSS および JavaScript 用の [YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) と YUI が定された JavaScript 用の [Google Closure Compiler（GCC）](https://developers.google.com/closure/compiler/)をサポートします。
 
-プラグ可能なプリプロセッサーは、次のように柔軟な使用が可能です。
+プラグ可能なプリプロセッサーを使用すると、次のような柔軟な使用が可能になります。
 
-* スクリプトソースを処理できる ScriptProcessors を定義する
-* プロセッサーはオプションを使用して設定できる
-* プロセッサーは縮小用に使用できるが、縮小以外の場合にも使用できる
-* clientlib はどのプロセッサーを使用するかを定義できる
+* スクリプトソースを処理できる ScriptProcessor の定義
+* プロセッサはオプションで設定可能
+* プロセッサーは縮小に使用できますが、縮小されていない場合にも使用できます
+* clientlib は、使用するプロセッサーを定義できます
 
 >[!NOTE]
 >
->デフォルトでは、AEM は YUI Compressor を使用します。既知の問題のリストについては、[YUI Compressor GitHub ドキュメント](https://github.com/yui/yuicompressor/issues)を参照してください。特定の clientlibs 用の GCC コンプレッサーに切り替えると、YUI を使用しているときに発生していたいくつかの問題が解決することがあります。
+>デフォルトでは、AEMは YUI Compressor を使用します。 詳しくは、 [YUI Compressor GitHub ドキュメント](https://github.com/yui/yuicompressor/issues) 」を参照してください。 特定の clientlibs 用の GCC コンプレッサーに切り替えると、YUI を使用しているときに発生していたいくつかの問題が解決することがあります。
 
 >[!CAUTION]
 >
->縮小化したライブラリをクライアントライブラリに配置しないでください。代わりに、生のライブラリを提供し、縮小が必要な場合は、プリプロセッサーのオプションを使用します。
+>縮小されたライブラリをクライアントライブラリに配置しないでください。 代わりに生のライブラリを提供し、縮小が必要な場合は、プリプロセッサーのオプションを使用します。
 
 #### 使用方法 {#usage}
 
@@ -339,11 +339,11 @@ languageOut (defaults to "ECMASCRIPT5")
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
-GCC オプションについて詳しくは、[GCC ドキュメント](https://developers.google.com/closure/compiler/docs/compilation_levels)を参照してください。
+GCC オプションの詳細については、 [GCC ドキュメント](https://developers.google.com/closure/compiler/docs/compilation_levels).
 
-#### システムのデフォルト縮小ツールの設定 {#set-system-default-minifier}
+#### システムの既定のミニファイヤを設定 {#set-system-default-minifier}
 
-YUI は、AEM のデフォルト縮小ツールとして設定されています。これを GCC に変更するには、次の手順に従います。
+YUI はAEMのデフォルトの縮小機能として設定されています。 これを GCC に変更するには、次の手順に従います。
 
 1. Apache Felix Config Manager（`http://<host>:<portY/system/console/configMgr`）に移動します。
 1. **Adobe Granite HTML ライブラリマネージャー**&#x200B;を検索して編集します。

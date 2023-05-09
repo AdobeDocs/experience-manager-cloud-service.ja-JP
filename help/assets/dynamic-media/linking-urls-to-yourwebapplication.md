@@ -4,8 +4,8 @@ description: Dynamic Media で Web アプリケーションに URL をリンク�
 contentOwner: Rick Brough
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
-workflow-type: ht
+source-git-commit: 2009e549eadd97d4d2bfcccd728ece17ecfeede5
+workflow-type: tm+mt
 source-wordcount: '1276'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Web アプリケーションへの URL のリンク {#linking-urls-to-your-web-application}
 
-Web サイトやアプリケーションは、URL コールによって Dynamic Media のサービスにアクセスします。アセットの公開後、Dynamic Media によって、そのアセットを参照する URL 文字列がアクティベートされます。これらの URL を Web ブラウザーに貼り付けてテストすることができます。
+Web サイトやアプリケーションは、URL コールによって Dynamic Media のサービスにアクセスします。アセットを公開すると、Dynamic Media はそのアセットを参照する URL 文字列をアクティベートします。これらの URL を web ブラウザーに貼り付けてテストできます。
 
 Adobe Experience Manager を WCM として使用&#x200B;*していない*&#x200B;場合に限り、URL へのリンクを使用します。ビデオプレーヤーをポップアップウィンドウまたはモーダルウィンドウとして配信する場合には、（埋め込みではなく）リンク機能を使用します。Experience Manager を WCM として使用している場合は、[ページに直接アセットを追加します。](adding-dynamic-media-assets-to-pages.md)
 
@@ -33,7 +33,7 @@ Web ページやアプリケーションにこれらの URL 文字列を配置�
 
 ## アセットの URL の取得 {#obtaining-a-url-for-an-asset}
 
-画像プリセットまたはビューアプリセットによって生成された URL 文字列を取得できます。URL をコピーしたらクリップボードに配置されるので、必要に応じて Web サイトのページまたはアプリケーションに貼り付けることができます。
+画像プリセットまたはビューアープリセットによって生成された URL 文字列を取得できます。URL をコピーするとクリップボードに配置されるので、必要に応じて、web サイトやアプリケーションのページに貼り付けることができます。
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Web ページやアプリケーションにこれらの URL 文字列を配置�
 >
 >[画像プリセットの公開](managing-image-presets.md#publishing-image-presets)を参照してください。
 
-URL 文字列を取得するには複数の方法があります。以下の手順では、使用できる方法の 1 つを紹介します。
+URL 文字列を取得する方法はいくつかあります。ただし、次の手順では、使用できる方法を 1 つだけ示します。
 
 **アセットの URL を取得するには:**
 
@@ -191,7 +191,7 @@ Dynamic Media では静的アセットの配信をサポートしています。
 
 1. Dynamic Media で処理される Experience Manager のビデオアセットのフルパスをコピーします。コピーしたビデオアセットパスは後の手順で必要になります。
 
-   次に例を示します。
+   例：
 
    `/content/dam/marketing/MyVideo.mp4`
 
@@ -209,6 +209,6 @@ Dynamic Media では静的アセットの配信をサポートしています。
 
 ## HTTP/2 を使用した Dynamic Media アセットの配信 {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 は、ブラウザーとサーバーの交信を強化する、新しく更新された Web プロトコルです。このプロトコルを使用すれば、情報の伝送を高速化し、必要な処理能力を抑えることができます。HTTP/2 上で Dynamic Media アセットの配信が可能になり、応答時間と読み込み時間が短縮されました。
+HTTP/2 は、ブラウザーとサーバーの通信方法を改善する、新しく更新された web プロトコルです。情報の転送を高速化し、必要な処理能力を削減します。Dynamic Media アセットの配信は HTTP/2 を使用して行うことができ、応答時間と読み込み時間を短縮できます。
 
 Dynamic Media アカウントでの HTTP/2 の使用方法について詳しくは、[コンテンツの HTTP/2 配信](http2faq.md)を参照してください。

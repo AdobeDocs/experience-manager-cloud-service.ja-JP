@@ -1,7 +1,7 @@
 ---
 title: 手書き署名を使用したフォームへの電子署名の適用
 seo-title: Apply electronic signatures to a form using scribble signatures
-description: 手書きでのフォームへの署名
+description: 手書きを使用したフォームへの署名
 seo-description: Signing forms using scribble
 uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 source-git-commit: 76f13cb4236b8c7eb515d647a1cede6fa2cf4799
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 100%
 * 手書き署名キャンバスのアスペクト比が 1 を超える場合、位置情報は手書き署名キャンバスの右側に追加されます。
 
 
-![手書き署名-下部](assets/scribble-signature-aspectratio.PNG)
+![手書き署名 -下部](assets/scribble-signature-aspectratio.PNG)
 
 
 
@@ -56,20 +56,20 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >署名ステップコンポーネントは、フォームの幅いっぱいに表示されます。そのため、署名ステップコンポーネントが含まれているセクションに他のコンポーネントを配置しないようにすることをお勧めします。
+   >署名ステップコンポーネントは、フォームで使用できる全幅を取ります。 署名ステップコンポーネントを含むセクションには、他のコンポーネントを含めないことをお勧めします。
 
-1. コンテンツブラウザーで「**フォームコンテナ**」をタップし、**設定**（![](assets/configure.png)）アイコンをタップします。この操作により、アダプティブフォームのコンテナプロパティを表示するプロパティブラウザーが開きます。**アダプティブフォームコンテナ**／**電子署名**&#x200B;に移動して、「**Adobe Sign を有効にする**」オプションを選択解除します。完了 ![aem_forms_save](assets/aem_forms_save.png) アイコンをタップして、変更を保存します。
+1. コンテンツブラウザーで「**フォームコンテナ**」をタップし、**設定**（![](assets/configure.png)）アイコンをタップします。この操作により、アダプティブフォームのコンテナプロパティを表示するプロパティブラウザーが開きます。に移動します。 **アダプティブフォームコンテナ** > **電子署名** を選択し、選択を解除します。 **Adobe Signを有効にする** オプション。 完了 ![aem_forms_save](assets/aem_forms_save.png) アイコンをタップして、変更を保存します。
 
    >[!NOTE]
    >
    >署名ステップコンポーネントをアダプティブフォームに追加すると、「Adobe Sign を有効にする」オプションが自動的に選択されます。
 
-1. **設定**（![設定](assets/configure.png)）アイコンをタップします。この操作により、署名ステップのプロパティを表示するプロパティブラウザーが開きます。以下のプロパティを設定します。
+1. **設定**（![設定](assets/configure.png)）アイコンをタップします。これにより、プロパティブラウザーが開き、署名ステップのプロパティが表示されます。 以下のプロパティを設定します。
 
    * **要素名**：コンポーネントの名前を指定します。
 
-   * **タイトル：**&#x200B;コンポーネントの一意のタイトルを指定します。
-   * **テンプレートメッセージ：**&#x200B;署名 PDF の読み込み中に表示するメッセージを指定します。Adobe Sign サービスによる署名 PDF の準備と読み込みには、ある程度の時間がかかります。
+   * **タイトル：** コンポーネントの一意のタイトルを指定します。
+   * **テンプレートメッセージ：** 署名メッセージの読み込み中に表示するPDFを指定します。 Adobe Signサービスでは、署名PDFの準備と読み込みに時間がかかります。
    * **署名サービス：**「**手書き署名**」オプションを選択します。
 
    * **CSS クラス**：クライアントライブラリの CSS クラスを指定します（存在する場合）。CSS クラスの代わりに[テーマ](themes.md)や[インラインスタイル](inline-style-adaptive-forms.md)を使用することをお勧めします。
@@ -84,7 +84,7 @@ ht-degree: 100%
 
    ![EchoSign ページの署名画面](assets/esignscribblesign.jpg)
 
-1. 「**[!UICONTROL 署名]**」をクリックします。手書き署名ダイアログが表示されます。フォームに署名し、完了 ![aem_forms_save](assets/aem_forms_save.png) アイコンをクリックして、変更内容を保存します。
+1. クリック **[!UICONTROL 署名]**. 手書き署名ダイアログが表示されます。 フォームに署名し、完了 ![aem_forms_save](assets/aem_forms_save.png) アイコンをクリックして、変更内容を保存します。
 
    ![手書き署名ダイアログ](assets/scribblewidget.png)
 

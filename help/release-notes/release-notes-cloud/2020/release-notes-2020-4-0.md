@@ -48,8 +48,8 @@ ht-degree: 100%
 >[!MORELIKETHIS]
 >
 >* [Adobe Asset Link について](https://www.adobe.com/jp/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Brand Portal の設定](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
->* [Asset Link を使用するための Experience Manager の設定](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
+>* [Brand Portal の設定](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html?lang=ja)
+>* [Asset Link を使用するための Experience Manager の設定](https://helpx.adobe.com/jp/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [アセットマイクロサービスを使用した、Experience Manager でのワークフロー作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=ja#post-processing-workflows)
 
 

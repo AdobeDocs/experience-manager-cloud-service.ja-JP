@@ -8,7 +8,7 @@ exl-id: 92870b32-e0d5-4cb4-9b88-81f88ca8ff64
 source-git-commit: 575e9836d676cf6711e039a5bb6860ad04324d60
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 * Urbane
 * Canva
 
-各テーマには、独自のエレガントなスタイルが含まれていて、ユーザー向けの使いやすいアダプティブフォームの作成に使用できます。パネル、テキストボックス、数値ボックス、ラジオボタン、表、スイッチなど、セレクター用の独自のスタイル設定が含まれています。これらのテーマ内のスタイルは、要件に基づいています。たとえば、特定のシナリオでは、クリーンなフォントを含む最小限のテーマが必要です。Urbane テーマなら、その外観を実現できます。
+各テーマには、ユーザー向けの快適なアダプティブフォームを作成するために使用できる、独自のエレガントなスタイルが含まれています。 パネル、テキストボックス、数値ボックス、ラジオボタン、テーブル、スイッチなど、セレクターに固有のスタイルが設定されています。 これらのテーマのスタイルは、要件に基づいています。 例えば、特定のシナリオでは、クリーンなフォントを備えたミニマリストテーマが必要です。 Urbane テーマなら、その外観を実現できます。
 
 ![リファレンステーマ](/help/forms/assets/ref-themes.png)
 
@@ -74,7 +74,7 @@ Liberty theme uses a minimalist approach to highlight the important. For example
 
 ### Tranquil {#tranquil}
 
-Tranquil テーマは、Tranquil カラースキームの明るいシェーディングと暗いシェーディングを提供して、フォームの様々なコンポーネントを強調します。たとえば、ラジオボタン、パネルおよびタブは、様々なシェーディングの緑色になります。
+Tranquil テーマは、Tranquil カラースキームの明るい色合いと暗い色合いを提供し、フォームの様々なコンポーネントをハイライトします。 例えば、ラジオボタン、パネル、タブでは、異なるグリーンのシェードが表示されます。
 
 ![Tranquil テーマ](/help/forms/assets/tranquil.png)
 
@@ -82,7 +82,7 @@ Tranquil テーマは、Tranquil カラースキームの明るいシェーデ�
 
 ### Ultramarine {#ultramarine}
 
-Ultramarine テーマは、濃い青色のシェーディングを使用して、タブ、パネル、テキストボックス、ボタンなどのコンポーネントを強調します。
+Ultramarine テーマでは、濃い青色のシェードを使用して、タブ、パネル、テキストボックス、ボタンなどのコンポーネントをハイライトします。
 
 ![Ultramarine テーマ](/help/forms/assets/ultramarine.png)
 <!--[Click to enlarge](assets/ultramarine-1.png)-->

@@ -2,14 +2,14 @@
 title: SPA モデルルーティング
 description: AEM の単一ページアプリケーションの場合、アプリはルーティングを担当します。このドキュメントでは、ルーティングメカニズム、契約、使用可能なオプションについて説明します。
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
-# SPA モデルルーティング{#spa-model-routing}
+# SPA モデルルーティング {#spa-model-routing}
 
 AEM の単一ページアプリケーションの場合、アプリはルーティングを担当します。このドキュメントでは、ルーティングメカニズム、契約、使用可能なオプションについて説明します。
 
@@ -41,7 +41,7 @@ AEM の単一ページアプリケーションの場合、アプリはルーテ�
 
 `ModelRouter` では、`pushState` 呼び出しと `replaceState` 呼び出しをリッスンしてモデルフラグメントをプリフェッチするので、モデルルーティングの概念をサポートしています。内部では、`PageModelManager` をトリガーして指定の URL に対応するモデルを読み込み、他のモジュールがリッスンできる `cq-pagemodel-route-changed` イベントを発生させます。
 
-デフォルトではこの処理が自動的に有効になっています。無効にする場合は、SPA で次のメタプロパティをレンダリングする必要があります。
+デフォルトでは、この動作は自動的に有効になっています。 無効にするには、SPAで次のメタプロパティをレンダリングする必要があります。
 
 ```
 <meta property="cq:pagemodel_router" content="disabled"\>

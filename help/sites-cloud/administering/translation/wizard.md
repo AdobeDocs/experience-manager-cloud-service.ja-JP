@@ -1,13 +1,13 @@
 ---
 title: 言語コピーウィザード
-description: AEM での言語コピーウィザードの使用について説明します。
+description: AEMでの言語コピーウィザードの使用について説明します。
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
 source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
 source-wordcount: '286'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >デフォルトでは、翻訳設定は 1 つのみです。他の設定を選択するには、最初にクラウド設定を設定する必要があります。[翻訳統合フレームワークの設定](integration-framework.md)を参照してください。
+   >デフォルトでは、翻訳設定は 1 つだけです。 他の設定を選択できるようにするには、まずクラウド設定を指定する必要があります。 詳しくは、 [翻訳統合フレームワークの設定](integration-framework.md).
 
 1. ウィザードの&#x200B;**翻訳**&#x200B;手順では、構造のみを作成、新しい翻訳プロジェクトを作成、既存の翻訳プロジェクトを追加のいずれかを選択できます。
 

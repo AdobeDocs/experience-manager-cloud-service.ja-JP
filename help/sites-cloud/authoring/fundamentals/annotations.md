@@ -5,7 +5,7 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: 64d801b108229866394e993811a67f983be5df6c
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 100%
 
    ![注釈の追加](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-   このダイアログで適切なフィールドやアイコンを使用し、次の操作を実行できます。
+   ここで、適切なフィールドやアイコンを使用して、次の操作を実行できます。
 
    * 注釈テキストを入力します。
    * スケッチ（線と図形）を作成して、コンポーネントの特定の領域を強調表示します。

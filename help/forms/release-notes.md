@@ -5,7 +5,7 @@ exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '2024'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改善を受け取ります。最新の開発状況を確認するには、このページに定期的にアクセスしてください。このページでは、次の情報が確認できます。
 
 - 新機能
-- 機能強化
+- 改善点
 - プレリリース機能
 - ベータ版機能
 - バグの修正
@@ -44,7 +44,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
    - テンプレートファイル（PDF および XDP）に XML データを格納することで、最終形式のドキュメントを生成します。
    - 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
 
-ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てに電子メールを送信します。
+ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てにメールを送信します。
 
 ## 2021.9.0 {#sep-2021-09-0}
 
@@ -60,8 +60,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
 
 ### [!DNL Forms] のベータ版機能 {#sep-what-is-new-forms-prerelease}
 
-- **統合ストレージコネクタ：**&#x200B;統合ストレージコネクタを使用すると、顧客側で管理されるリポジトリ内の処理中のデータを外部化することができます。例えば、個人の機密情報（SPD）を含んだ処理中の AEM ワークフローデータ（AEM ワークフロー変数データ）を顧客側で管理されるリポジトリに格納できます。
-
+- **統合ストレージコネクタ：**統合ストレージコネクタを使用すると、顧客側で管理されるリポジトリ内の処理中のデータを外部化することができます。例えば、個人の機密情報（SPD）を含んだ処理中の AEM ワークフローデータ（AEM ワークフロー変数データ）を顧客側で管理されるリポジトリに格納できます。
    <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) では、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
@@ -69,7 +68,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
    - 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
    - XFA フォーム PDF および Adobe Acrobat フォームから印刷用 PDF ファイルを生成します。
 
-ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てに電子メールを送信します。
+ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てにメールを送信します。
 
 ### 制限事項 {#limitations}
 
@@ -119,7 +118,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
    - 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
    - XFA フォーム PDF および Adobe Acrobat フォームから印刷用 PDF ファイルを生成します。
 
-ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てに電子メールを送信します。
+ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てにメールを送信します。
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms-aug-2021}
 
@@ -170,7 +169,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
 
 - **Variable Data Externalizer**：AEM ワークフロー変数のデータを、組織で管理される外部ストレージシステムに保存できます。
 
-ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てに電子メールを送信します。
+ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てにメールを送信します。
 
 ### [!DNL Forms] で修正されたバグ  {#june-forms-bugs-fixed}
 
@@ -188,13 +187,13 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
 
 ### [!DNL Forms] の今後のベータ版機能 {#may-what-is-new-forms-prerelease}
 
-Output as a Cloud service：出力サービスを使用すると、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期および非同期の一括モードでドキュメントを生成できます。出力サービスにより、以下のような機能を備えたアプリケーションを作成することができます。
+Output as a Cloud service：出力サービスを使用すると、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期および非同期の一括モードでドキュメントを生成できます。出力サービスを使用すると、次のことを可能にするアプリケーションを作成できます。
 
 - テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成する。
 - 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
 - XFA フォームの PDF ファイルから印刷用 PDF を生成する。
 
-ベータ版プログラムに新規登録する場合は、 formscsbeta@adobe.com までお問い合わせください。
+ベータ版プログラムに新規登録するには、formscsbeta@adobe.com 宛てにメールを送信します。
 
 ### [!DNL Forms] で修正されたバグ  {#may-forms-bugs-fixed}
 

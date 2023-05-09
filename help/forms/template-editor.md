@@ -2,8 +2,8 @@
 title: アダプティブフォームテンプレートの作成方法
 description: テンプレートエディターを使用して、基本構造と初期コンテンツを定義するアダプティブフォームテンプレートを作成します。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: b4cc89f32dcdddf93f12f087a20395e055ea85bb
-workflow-type: ht
+source-git-commit: c101ed97388b06dc71edfc9e13fac8a3e889c249
+workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 100%
 
@@ -47,8 +47,7 @@ Experience Manager には、テンプレートを整理するためのグロー�
 
    * **サイドパネルを切り替え**：サイドバーの表示と非表示を切り替えることができます。
    * **ページ情報**：公開／非公開の時間、サムネール、クライアントサイドライブラリ、ページポリシー、ページデザインのクライアントサイドライブラリなどの情報を指定できます。
-
-   <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
+      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
    * **モードセレクター：**&#x200B;モードを変更できます。**[!UICONTROL 構造]**&#x200B;モード、**[!UICONTROL 初期コンテンツ]**、**[!UICONTROL レイアウトコントロール]**&#x200B;モードを選択できます。構造モードを使用すると、ヘッダーとフッターを追加してカスタマイズできます。初期コンテンツモードを使用すると、フォームコンテンツをカスタマイズできます。
    * **プレビュー**：テンプレート公開時の外観をプレビューできます。「レイヤーセレクター」と「プレビュー」を使用して、編集モードとプレビューモードを切り替えることができます。
 * **サイドバー**：コンテンツブラウザー、プロパティブラウザー、アセットブラウザー、コンポーネントブラウザーを提供します。

@@ -2,10 +2,10 @@
 title: Adobe Target との統合
 description: Adobe Target との統合
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: e6fc31a5c4b3bb62f7d6e639eae7e1f222b2f5ed
-workflow-type: ht
+source-git-commit: f40a2db6616aeaaf13f8ae19ab429a7301e6c05a
+workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -15,10 +15,10 @@ Adobe Marketing Cloud に含まれている [Adobe Target](https://www.adobe.com
 
 AEM Sites を Adobe Target に統合して、ページ内のコンテンツを次のようにパーソナライズできます。
 
-* コンテンツのターゲティングを実装する。
+* コンテンツのターゲティングを実装します。
 * Target のオーディエンスを使用してパーソナライズされたエクスペリエンスを作成する。
 * 訪問者がページとやり取りを行ったときにコンテキストデータを Target に送信する。
-* コンバージョン率を追跡する。
+* コンバージョン率を追跡します。
 
 >[!NOTE]
 >
@@ -57,9 +57,9 @@ Target に統合するには、次のタスクを実行します。
 
 >[!CAUTION]
 >
->権限のないユーザーがアクセスできないように、パブリッシュインスタンスでアクティビティ設定ノード **cq:ActivitySettings** を保護する必要があります。アクティビティ設定ノードには、Adobe Target へのアクティビティの同期を処理するサービスのみがアクセスできるようにしてください。
+>アクティビティ設定ノードを保護する必要があります **cq:ActivitySettings** 通常のユーザーがアクセスできないように、パブリッシュインスタンス上で実行します。 アクティビティ設定ノードには、Adobe Target へのアクティビティの同期を処理するサービスのみがアクセスできるようにしてください。
 >
->詳しくは、[Adobe Target との統合の前提条件](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html?lang=ja#securing-the-activity-settings-node)を参照してください。
+>詳しくは、 [Adobe Targetとの統合の前提条件](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html?lang=ja#securing-the-activity-settings-node) を参照してください。
 
 統合が完了したら、訪問者データを Adobe Target に送信する[ターゲットコンテンツを作成](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/content-targeting-touch.html?lang=ja)できます。コンテンツのターゲティングを有効にするには、ページのコンポーネントに固有のコードが必要です（[ターゲットコンテンツの作成](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/target.html?lang=ja)を参照）。
 
@@ -73,14 +73,14 @@ AEM as a Cloud Service と Adobe Target を統合するには、Adobe Target、A
 
 * Adobe Target（[Adobe Target のドキュメント](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=ja)を参照）
 * AEM アクティビティコンソール（[アクティビティの管理](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html?lang=ja)を参照）。
-* AEM オーディエンス（[オーディエンスの管理](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html?lang=ja)を参照）
+* AEM Audiences( [オーディエンスの管理](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html?lang=ja)) をクリックします。
 
 >[!NOTE]
 >
->Adobe Target を操作するときのキャンペーン内で許可されるアーティファクトの最大数は次のとおりです。
+>Adobe Targetを操作する場合、1 つのキャンペーンで許可されるアーティファクトの最大数は次のとおりです。
 >
->* 場所：50
->* エクスペリエンス：2,000
->* 指標：50
->* レポートのセグメント：50
+>* 50 の場所
+>* 2,000 個のエクスペリエンス
+>* 50 個の指標
+>* 50 個のレポートセグメント
 

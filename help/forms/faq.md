@@ -4,8 +4,8 @@ description: Forms as a Cloud Service のよくある質問
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 index: false
-source-git-commit: 6355a6241c5b53585b80b2c2bc00556297766b49
-workflow-type: ht
+source-git-commit: 93e7c4b31ea3037c98b64790ffdee11f94cc6134
+workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 100%
 

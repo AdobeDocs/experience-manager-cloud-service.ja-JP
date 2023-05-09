@@ -6,10 +6,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
-workflow-type: ht
+source-git-commit: 3d713304512065819ed16bbc9604f2cf9d1cf43f
+workflow-type: tm+mt
 source-wordcount: '3072'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 100%
 
 [!DNL Adobe Sign] とアダプティブフォームの一般的なシナリオでは、ユーザーがアダプティブフォームに入力し、1 人以上の関係者の署名を必要とするサービスに申し込みます。例えば、住宅ローンやクレジットカードに申請する際には、すべての借り手と共同申請者から、法的に有効な署名を取得する必要があります。同様のシナリオで電子サインワークフローを有効にするには、[!DNL Adobe Sign] をアダプティブフォームに統合します。例えば、[!DNL Adobe Sign] を使用して、以下のような処理を実行できます。
 
-* 完全に自動化された提案プロセス、見積りプロセス、契約プロセスを使用して、任意のデバイスで契約を締結する。
-* 人事プロセスを短時間で完了し、従業員に対してデジタルエクスペリエンスを提供する。
-* 契約のサイクルタイムを短縮し、ベンダーとの取引を早期に開始する。
+* 完全に自動化された提案、見積り、契約プロセスを持つ任意のデバイスから契約を締結します。
+* 人事プロセスを迅速に完了し、従業員にデジタル体験を提供します。
+* 契約サイクル時間を短縮し、ベンダーのオンボーディングを迅速に実行できます。
 * 共通するプロセスを自動化するためのデジタルワークフローを作成する。
 
 [!DNL Adobe Sign] と [!DNL AEM Forms] を統合することにより、次の機能がサポートされます。
@@ -280,7 +280,7 @@ Adobe Sign 契約 ID（agreementId）は、アダプティブフォームの送�
 >Data of the Adaptive Form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
-これで、フォームに署名するための準備が整いました。フォームのプレビューを表示して、署名の方法を確認することができます。受信者がメールで署名用のフォームを受信すると、公開済みフォーム上に [!DNL Adobe Sign] ブロックのフィールドが表示されます。「**[!UICONTROL 受信者とフォーム記入者は同一ですか？]**」オプションが「はい」とマークされ、条件が満たされると、ユーザーは送信後に Adobe Sign 契約書にリダイレクトされ、契約書がメールに表示されるのを待たずに、即座にドキュメントに署名できます。
+フォームの署名操作の準備が整いました。 フォームをプレビューして、署名操作を確認できます。 受信者がメールで署名用のフォームを受信すると、公開済みフォーム上に [!DNL Adobe Sign] ブロックのフィールドが表示されます。「**[!UICONTROL 受信者とフォーム記入者は同一ですか？]**」オプションが「はい」とマークされ、条件が満たされると、ユーザーは送信後に Adobe Sign 契約書にリダイレクトされ、契約書がメールに表示されるのを待たずに、即座にドキュメントに署名できます。
 
 ## アダプティブフォームのクラウド署名の設定 {#configure-cloud-signatures-for-an-adaptive-form}
 

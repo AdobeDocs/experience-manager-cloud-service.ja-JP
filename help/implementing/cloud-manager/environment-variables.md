@@ -2,7 +2,7 @@
 title: Cloud Manager 環境変数
 description: 標準環境変数は、Cloud Manager を介して設定および管理でき、ランタイム環境に提供され、OSGi 設定で使用できます。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: a8a7bd1f892c7c6eeb1753c8a55f884a33b397d4
+source-git-commit: 774a27e78abf091d96978911deea945ac35b7a44
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 100%

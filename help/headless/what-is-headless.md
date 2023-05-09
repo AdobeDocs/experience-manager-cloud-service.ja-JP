@@ -2,8 +2,8 @@
 title: ヘッドレス CMS とは
 description: ヘッドレス CMS について説明します。仕組み代替手段と違いヘッドレス CMS を使用する理由
 exl-id: 53f24f69-ad49-4b8e-9a91-36cd64c1f2b9
-source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
-workflow-type: ht
+source-git-commit: 3306bde7b94b9f863b57d36542e8822df38c79ba
+workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 100%
 

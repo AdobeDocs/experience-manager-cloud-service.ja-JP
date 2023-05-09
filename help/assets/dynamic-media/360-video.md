@@ -1,14 +1,14 @@
 ---
 title: 360/VR ビデオ
-description: Dynamic Media で 360 および VR（Virtual Reality）ビデオを操作する方法を学びます。
+description: Dynamic Mediaで 360 と Virtual Reality(VR) ビデオを操作する方法を説明します。
 contentOwner: Rick Brough
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+workflow-type: tm+mt
 source-wordcount: '989'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 360 度ビデオでは、すべての方向のビューが同時に記録されます。このタイプのビデオは、全方位カメラやカメラのコレクションを使用して撮影されます。フラットディスプレイでの再生時に、ユーザーは視野角を制御できます。また、モバイルデバイスでの再生では通常、デバイス組み込みのジャイロスコープ制御を適用します。
 
-Dynamic Media には、360 ビデオアセット配信のネイティブサポートが含まれています。デフォルトでは、表示または再生するための追加設定は不要です。360 ビデオは、.mp4、.mkv、.mov といった標準のビデオ拡張子を使用して配信されます。最も一般的なコーデックは H.264 です。
+Dynamic Media には、360 ビデオアセット配信のネイティブサポートが含まれています。デフォルトでは、表示や再生のために追加の設定は必要ありません。360 ビデオは、.mp4、.mkv、.mov などの標準のビデオ拡張子を使用して配信します。最も一般的なコーデックは H.264 です。
 
 360/VR ビデオビューアを使用して、エクイレクタングラー形式のビデオをレンダリングできます。その結果、室内、物件、場所、風景、医療処置などの臨場感あふれる表示を実現できます。
 
@@ -24,9 +24,9 @@ Dynamic Media には、360 ビデオアセット配信のネイティブサポ�
 
 詳しくは、[AEM Assets での Dynamic Media 360 ビデオとカスタムビデオサムネールの使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html?lang=ja#dynamic-media)を参照してください。
 
-[ビューアプリセットの管理](/help/assets/dynamic-media/managing-viewer-presets.md)も参照してください。
+関連トピック [ビューアプリセットの管理](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-## 360 ビデオの視聴 {#video-in-action}
+## 360 ビデオの動作 {#video-in-action}
 
 「[Space Station 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS)」を選択して、ブラウザーウィンドウを開き、360 度ビデオを視聴します。ビデオ再生中にポインターを新しい位置にドラッグすると、表示角度が変更されます。
 
@@ -35,7 +35,7 @@ Dynamic Media には、360 ビデオアセット配信のネイティブサポ�
 
 ## 360/VR ビデオと Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
-Adobe Premier Pro を使用すれば、360/VR シーンを表示および編集できます。例えば、シーン内にロゴやテキストを適切に配置したり、エクイレクタングラー形式のメディアに特化して設計されたエフェクトやトランジションを適用したりできます。
+AdobePremier Pro を使用して、360/VR フッテージを表示および編集できます。 例えば、シーン内にロゴやテキストを適切に配置したり、エクイレクタングラー形式のメディアに特化して設計されたエフェクトやトランジションを適用したりできます。
 
 [360/VR ビデオの編集](https://helpx.adobe.com/jp/premiere-pro/how-to/edit-360-vr-video.html)を参照してください。
 

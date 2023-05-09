@@ -4,10 +4,10 @@ description: HTTP/2 コンテンツ配信について説明します。
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -31,16 +31,16 @@ Web サイトの記事 [What you must know about HTTP/2](https://www.engadget.co
 
 アドビ独自のテストでは、以下の結果が出ています。
 
-* 画像の場合、デバイスおよびブラウザーに応じて、応答時間が 7％～28％向上しました。パフォーマンスの向上は、iOS デバイスにおいて最も顕著でした。
+* 画像の場合、デバイスおよびブラウザーに応じて、応答時間が 7％～28％向上しました。パフォーマンスの最も顕著な向上は、iOSデバイスでした。
 * ビューアの場合、読み込み時間のパフォーマンスが 15％向上しました。
 
-以下のデモは、HTTP/1 と HTTP/2 の読み込みの差異を示しています。
+次のデモは、HTTP/1 と HTTP/2 の読み込みの違いを示しています。
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
-## HTTP/2 に切り替えるには {#am-i-eligible-to-switch-over-to-http}
+## HTTP/2 に切り替える資格はありますか？ {#am-i-eligible-to-switch-over-to-http}
 
-HTTP/2 を使用するには、以下の要件を満たしている必要があります。
+HTTP/2 を使用するには、次の要件を満たす必要があります。
 
 * リッチメディアリクエストにセキュア HTTPS を使用している。
 * アドビ製品にバンドルされた CDN（コンテンツ配信ネットワーク）を、Dynamic Media Classic ライセンスの一部として使用している。
@@ -63,8 +63,8 @@ HTTP/2 を使用するには、以下の要件を満たしている必要があ�
 
    **[!UICONTROL 設定]**／**[!UICONTROL アプリケーション設定]**／**[!UICONTROL 一般設定]**&#x200B;に移動します。「**[!UICONTROL 公開先サーバー名]**」というラベルの付いたフィールドを見つけます。
 
-   * リッチメディアリクエストについて、セキュリティで保護された HTTPS を使用していることを確認します。
-   * 直接的関係で管理するのではなく、アドビを介して CDN を使用していることを確認します。
+   * リッチメディアリクエストにセキュアな HTTPS を使用していることを確認します。
+   * 直接の関係で管理されていない、Adobeを通じて CDN を使用していることを確認します。
    * 専用ドメインを使用していることを確認します。つまり、`s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com` などの汎用の Dynamic Media ドメインではなく、`images.company.com` または `mycompany.scene7.com` です。
 
    ドメインを探すには、[Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started)を開き、アカウントにログインします。
@@ -89,7 +89,7 @@ HTTP/2 を使用するには、以下の要件を満たしている必要があ�
 
 HTTP/2 への切り替えには、新しい CDN 設定への移行が伴うので、CDN でキャッシュがクリアされます。
 
-キャッシュが再作成されるまで、キャッシュされていないコンテンツはアドビの元のサーバーに直接アクセスして取得されます。この措置により、アドビは一度に複数の顧客トランジションを処理する予定です。この方法を使用すると、接触チャネルからリクエストを取り込む際に、許容可能なパフォーマンスが維持されます。
+キャッシュされていないコンテンツは、キャッシュが再構築されるまで、Adobeの元のサーバーに直接ヒットします。 この措置により、アドビは一度に複数の顧客トランジションを処理する予定です。この方法を使用すると、接触チャネルからリクエストを取り込む際に、許容可能なパフォーマンスが維持されます。
 
 ## URL または Web サイトが HTTP/2 でアクティベートされていることを確認する方法 {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 

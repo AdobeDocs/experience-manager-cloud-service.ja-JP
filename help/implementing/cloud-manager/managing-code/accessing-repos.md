@@ -5,7 +5,7 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 source-git-commit: 4729574eb31e01077f0d2a35efcef6d134f6aa5c
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 8%
+ht-degree: 55%
 
 ---
 
@@ -19,19 +19,19 @@ Cloud Manager では、 **リポジトリ情報にアクセス** ボタンがパ
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. に移動します。 **パイプライン** カードから **プログラムの概要** ページで **リポジトリ情報にアクセス** ボタンをクリックして、git リポジトリにアクセスして管理します。
+1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動し、「**リポジトリ情報にアクセス**」ボタンを見つけて、Git リポジトリにアクセスして管理します。
 
-   ![環境カードの「リポジトリ情報」ボタンにアクセス](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
+   ![環境カードの「リポジトリ情報にアクセス」ボタン](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. をクリックします。 **リポジトリ情報を表示** ボタンをクリックして、表示するダイアログを開きます。
+1. 「**リポジトリ情報を表示**」ボタンをクリックして、以下を表示するダイアログを開きます。
 
-   * Cloud Manager の Git リポジトリの URL です。
-   * Git のユーザー名。
-   * git パスワード。この値は、 **パスワードを生成** 」ボタンがクリックされたときに表示されます。
+   * Cloud Manager Git リポジトリへの URL。
+   * Git ユーザー名。
+   * Git パスワード。この値は、「**パスワードを生成**」ボタンをクリックすると表示されます。
 
    ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
-ユーザーは、これらの資格情報を使用して、リポジトリのローカルコピーを複製し、そのローカルリポジトリで変更を加えることができます。準備が整ったら、Cloud Manager のリモートコードリポジトリにコードの変更をコミットして戻すことができます。
+これらの資格情報を使用して、リポジトリのローカルコピーを複製し、そのローカルリポジトリで変更を加えることができます。変更できたら、Cloud Manager のリモートコードリポジトリにコードの変更をコミットして戻すことができます。
 
 この **リポジトリ情報にアクセス** オプションは **非実稼動** の「パイプライン」タブ **パイプライン** カード。
 

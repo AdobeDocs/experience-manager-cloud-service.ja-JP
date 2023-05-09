@@ -4,8 +4,8 @@ seo-title: Repository Browser
 description: リポジトリーブラウザーは、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対して、リポジトリーへの読み取り専用ビューを提供します。
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: 46d8d78bd14f6e311d62266aa19825f82f82030d
-workflow-type: ht
+source-git-commit: 43429562ea4292f38d3459e03185270ec950a58a
+workflow-type: tm+mt
 source-wordcount: '899'
 ht-degree: 100%
 

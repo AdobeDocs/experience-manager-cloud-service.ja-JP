@@ -1,21 +1,21 @@
 ---
 title: ContextHub ストア候補のサンプル
-description: ContextHub には、ソリューションで利用できるサンプルストア候補がいくつか用意されています
+description: ContextHub には、ソリューションで使用できるサンプルストア候補がいくつか用意されています
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '466'
-ht-degree: 100%
+ht-degree: 77%
 
 ---
 
 # ContextHub ストア候補のサンプル {#sample-contexthub-store-candidates}
 
-ContextHub には、ソリューションで利用できるサンプルストア候補がいくつか用意されています。各サンプルでは次の情報が提供されます。
+ContextHub には、ソリューションで使用できるサンプルストア候補がいくつか用意されています。 各サンプルについて、次の情報が提供されます。
 
-* 学習用に参照できるソースコードの場所。
+* 学習目的で開くことのできるソースコードの場所。
 * ストア候補から作成するストアの設定方法。
-* アクセスするためのストアデータの構造。
+* ストアデータの構造は、アクセスできるようにする方法です。
 
 >[!WARNING]
 >
@@ -23,7 +23,7 @@ ContextHub には、ソリューションで利用できるサンプルストア
 
 ## aem.segmentation サンプルストア候補 {#aem-segmentation-sample-store-candidate}
 
-解決済みおよび未解決の ContextHub セグメント用のストア。ContextHub SegmentManager からセグメントを自動的に取得します.
+解決された ContextHub セグメントと未解決の ContextHub セグメントを保存します。 ContextHub SegmentManager からセグメントを自動的に取得します.
 
 ### ソースの場所 {#source-location-segmentation}
 
@@ -235,7 +235,7 @@ aem.segmentation ストア候補は、[`ContextHub.Store.PersistedJSONPStore`](c
 
 ### データ項目 {#data-items-emulators}
 
-このストアのデータツリーは、次の例のようになります。
+ストアのデータツリーは、次の例のようになります。
 
 ```javascript
 {
@@ -321,7 +321,7 @@ aem.segmentation ストア候補は、[`ContextHub.Store.PersistedJSONPStore`](c
 
 ### 設定 {#configuration-profile}
 
-次のデフォルトの設定を使用します。この設定は変更しないでください。
+次のデフォルト設定が使用されます。 この設定は変更しないでください。
 
 ```javascript
 {

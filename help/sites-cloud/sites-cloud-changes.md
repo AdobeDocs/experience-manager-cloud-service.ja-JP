@@ -2,8 +2,8 @@
 title: AEM Cloud Service の AEM Sites の主な変更点
 description: AEM Cloud Service の AEM Sites の主な変更点
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: 7becee73a64fbfd2b4f89c307f63868461b0e853
-workflow-type: ht
+source-git-commit: 8e06dff01e06ced62686a4784619278f29345082
+workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 100%
 

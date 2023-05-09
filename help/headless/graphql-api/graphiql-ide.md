@@ -6,7 +6,7 @@ exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 4f2b5fa59d3c68dd1244fa5b2a8dc30d848ba4a4
 workflow-type: tm+mt
 source-wordcount: '1058'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -90,7 +90,7 @@ ht-degree: 95%
 
 また、GraphiQL IDE では、[クエリ変数](/help/headless/graphql-api/content-fragments.md#graphql-variables)を管理することもできます。
 
-次に例を示します。
+例：
 
 ![GraphQL 変数](assets/cfm-graphqlapi-03.png "GraphQL 変数")
 
@@ -104,9 +104,9 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->Dispatcher 上のカスタム書き換えルールが、AEM publish のデフォルトを上書きする場合があります。
+>Dispatcher 上のカスタム書き換えルールが、AEM パブリッシュのデフォルトを上書きする場合があります。
 >
->TTL ベースのキャッシュ制御ヘッダーを Dispatcher から送信する場合、場所の一致パターンに基づいて、必要に応じて除外することができます `/graphql/execute.json/*` マッチから
+>TTL ベースのキャッシュコントロールヘッダーを Dispatcher から送信する場合、場所の一致パターンにもとづいて、必要に応じて一致パターンから `/graphql/execute.json/*` を除外できます。
 
 GraphQL を使用すると、HTTP キャッシュヘッダーを設定することにより、個々の永続クエリ用にこれらのパラメーターを制御できます。
 
@@ -151,7 +151,7 @@ max-age と同じですが、特にプロキシキャッシュに適用されま
   >The target environment might need adjusting, depending on your requirements.
 -->
 
-次に例を示します。
+例：
 
 `http://localhost:4502/graphql/execute.json/global/article-list-01`
 

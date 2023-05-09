@@ -87,7 +87,7 @@ AEM Forms と [Adobe Analytics](https://experienceleague.adobe.com/docs/experien
    <td>PageName</td>
   </tr>
   <tr>
-   <td>PageURL<br /> </td>
+   <td>PageURL<br />。 </td>
    <td>PanelTitle<br /> </td>
    <td>TimeSpent</td>
   </tr>
@@ -205,7 +205,7 @@ Adobe Launch 設定を作成するには、次の手順を実行します。
 
 1. 「**[!UICONTROL タイトル]**」フィールドで設定のタイトルを指定します。
 
-1. 「[関連付けられている Adobe IMS 設定](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html)」を選択します。
+1. 「[関連付けられている Adobe IMS 設定](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=ja)」を選択します。
 
 1. [Adobe Analytics の設定](#Configure-adobe-analytics) 時に使用した会社の名前を選択します。
 

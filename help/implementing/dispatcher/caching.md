@@ -3,10 +3,10 @@ title: AEM as a Cloud Service でのキャッシュ
 description: AEM as a Cloud Service でのキャッシュ
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
+source-git-commit: 6bca307dcf41b138b5b724a8eb198ac35e2d906e
 workflow-type: tm+mt
 source-wordcount: '2832'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Define DISABLE_DEFAULT_CACHING
      </LocationMatch>
    ```
 
-* private に設定されたHTMLコンテンツは CDN にキャッシュされませんが、次の場合は Dispatcher にキャッシュできます。 [権限に影響を受けるキャッシュ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ja) が設定され、許可されたユーザーのみがコンテンツを提供できるようになっています。
+* プライベートに設定された HTML コンテンツは CDN でキャッシュされませんが、[権限に影響を受けるキャッシュ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ja)が設定されている場合は Dispatcher でキャッシュでき、許可されたユーザーのみにコンテンツを提供できるようになります。
 
    >[!NOTE]
    >[dispatcher-ttl AEM ACS Commons プロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)などの他のメソッドでは、値は上書きされません。
@@ -108,7 +108,7 @@ AEM レイヤーは、キャッシュヘッダーの設定の有無、および�
 |------------------------------|---------------|------------------------------------------------|
 | いいえ | パブリック | Cache-Control: public, max-age=600, immutable |
 | いいえ | 認証済み | Cache-Control: private, max-age=600, immutable |
-| はい | 任意 | 変更されない |
+| はい | いずれか | 変更されない |
 
 推奨はしませんが、Cloud Manager の環境変数 `AEM_BLOB_ENABLE_CACHING_HEADERS` を false に設定することで、新しいデフォルトの動作を古い動作（プログラム ID が 65000 以下）に従うように変更することが可能です。
 
@@ -319,7 +319,7 @@ Web サイトの URL には、キャンペーンの成功をトラックする�
 
 * SCD API は、正確な知識を必要とする外部システムとの同期など、すべてのイベントを保証する必要がある場合に必要です。無効化呼び出しの時点でパブリッシュ層のアップスケーリングイベントがある場合、新しいパブリッシュがそれぞれ無効化を処理すると、追加のイベントが発生します。
 
-* レプリケーション API の使用は一般的な使用例ではありませんが、キャッシュを無効にするトリガーがオーサー層ではなくパブリッシュ層から提供される場合に使用します。 これは、Dispatcher の TTL が設定されている場合に役立ちます。
+* レプリケーション API の使用は一般的なユースケースではありませんが、キャッシュを無効にするトリガーがオーサー層ではなくパブリッシュ層から提供される場合に使用する必要があります。これは、Dispatcher の TTL が設定されている場合に役立ちます。
 
 最後に、Dispatcher のキャッシュを無効にする場合は、オーサーの SCD API の無効化アクションを使用することをお勧めします。また、イベントをリッスンして、さらにダウンストリームアクションをトリガーすることもできます。
 

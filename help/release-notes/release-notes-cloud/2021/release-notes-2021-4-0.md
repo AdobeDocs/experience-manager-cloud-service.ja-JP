@@ -2,8 +2,8 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 リリースのリリースノート。'
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: 8f4b504898b1332c21f3cb82ab9bbf663c9dc312
-workflow-type: ht
+source-git-commit: a2c844d6f72c22ed085690ff98572a52e97de40d
+workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 100%
 
@@ -155,7 +155,7 @@ AEM as a Cloud Service 2021.4.0 Cloud Manager のリリース日は 2021 年 4 �
 
 * 必要な権限を持つユーザーが、UI を使用してコマースエンドポイントを送信できるようになりました。
 
-* 環境変数を、オーサーまたはパブリッシュのいずれかの特定のサービスに対して適用できるようになりました。AEM バージョン `2021.03.5104.20210328T185548Z` 以降が必要です。
+* 環境変数を、オーサーまたは公開のいずれかの特定のサービスに対して適用できるようになりました。AEM バージョン `2021.03.5104.20210328T185548Z` 以降が必要です。
 
 * パイプラインが設定されていない場合でも、「**Git を管理**」ボタンがパイプラインカードに表示されます。
 

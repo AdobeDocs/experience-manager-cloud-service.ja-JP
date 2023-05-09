@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service で Dynamic Media を�
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+workflow-type: tm+mt
 source-wordcount: '3795'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -277,9 +277,9 @@ Dynamic Media カラーマネジメントを使用すると、アセットをカ
 
 例えば、**[!UICONTROL RGB の初期設定カラースペース]**&#x200B;を *sRGB* に、**[!UICONTROL CMYK の初期設定カラースペース]**&#x200B;を *WebCoated* に設定できます。
 
-それには、次のようにします。
+これにより、次の操作が行われます。
 
-* RGB および CMYK 画像のカラー補正を有効にします。
+* 画像と CMYK 画像のカラー補正をRGBにします。
 * カラープロファイルを持たない RGB 画像は、*sRGB* カラースペースにあると見なされます。
 * カラープロファイルを持たない CMYK 画像は、*WebCoated* カラースペースにあると見なされます。
 * RGB 出力を返す動的レンディションは、RGB 出力を *sRGB* カラースペース内で返します。
@@ -289,8 +289,8 @@ Dynamic Media カラーマネジメントを使用すると、アセットをカ
 
 Dynamic Media によって処理されるアセットタイプを定義して、高度なアセット処理パラメーターをカスタマイズできます。例えば、アセット処理パラメーターを指定して次のことができます。
 
-* Adobe PDF を eCatalog アセットに変換する。
-* Adobe Photoshop ドキュメント（.PSD）をパーソナライズ用のバナーテンプレートアセットに変換する。
+* Adobe PDFを eCatalog アセットに変換する
+* パーソナライズのためにAdobe Photoshopドキュメント (.PSD) をバナーテンプレートアセットに変換します。
 * Adobe Illustrator ファイル（.AI）または Adobe Photoshop Encapsulated PostScript® ファイル（.EPS）をラスタライズする。
 * [ビデオプロファイル](/help/assets/dynamic-media/video-profiles.md)および[イメージングプロファイル](/help/assets/dynamic-media/image-profiles.md)は、それぞれ、ビデオおよび画像の処理を定義するのに使用できます。
 
@@ -428,7 +428,7 @@ OSGi へのアクセス権がない場合は、[OSGi 設定](/help/implementing/
 
 1. 「**[!UICONTROL 並列ジョブの最大数]**」フィールドで、目的の値に数値を変更します。
 
-   デフォルトでは、並列ジョブの最大数は、使用可能な CPU コア数によって異なります。例えば、4 コアサーバーでは、2 つの作業スレッドが割り当てられます。（0.0～1.0 の値は比率ベースです。1 より大きい場合は作業スレッドが割り当てられます）。
+   デフォルトでは、並列ジョブの最大数は、使用可能な CPU コアの数によって異なります。 例えば、4 コアサーバーでは、2 つの作業スレッドが割り当てられます。（0.0～1.0 の値は比率ベースです。1 より大きい場合は作業スレッドが割り当てられます）。
 
    ほとんどの事例では、デフォルト設定の 0.5 で十分です。
 

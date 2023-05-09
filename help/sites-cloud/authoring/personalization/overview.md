@@ -2,10 +2,10 @@
 title: パーソナライゼーションとコンテンツのターゲティング
 description: パーソナライズされたターゲットコンテンツを AEM で作成する方法について説明します。
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: f2466cb5cda759f0c97cd69810d208d47fb73b98
-workflow-type: ht
+source-git-commit: 566cd449c536de4179e32c94df90b46d61e0103a
+workflow-type: tm+mt
 source-wordcount: '1056'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -118,7 +118,7 @@ AEM には、ページリクエストの処理や表示するコンテンツの�
 [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) ターゲティングエンジンを使用すると、ページへの訪問から収集された情報が Adobe Target で追跡されます。
 
 * このターゲティングエンジンを使用する場合、エクスペリエンスのオーディエンス定義には、Adobe Target から読み込んだセグメントを使用します。
-* Adobe Target エンジンを使用するアクティビティは、[Target と同期](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target)します。
+* Adobe Targetエンジンを使用するアクティビティは、 [Target に同期済み](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
 
 このエンジンを使用できるのは、[Adobe Target と統合](/help/sites-cloud/integrating/integrating-adobe-target.md)している場合のみです。
 

@@ -5,7 +5,7 @@ exl-id: b339ab48-e836-4589-a573-9c50917b9280
 source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
 source-wordcount: '955'
-ht-degree: 26%
+ht-degree: 27%
 
 ---
 
@@ -121,7 +121,7 @@ Adobe Experience Manager Assets を [MIME タイプに基づいてユーザー�
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager の毎月のリリースの完全なリストを確認できます [こちら。](/help/implementing/cloud-manager/release-notes/current.md)
+Cloud Manager の月次リリースの完全なリストは、 [こちら](/help/implementing/cloud-manager/release-notes/current.md)で確認できます。
 
 ## 移行ツール {#migration-tools}
 

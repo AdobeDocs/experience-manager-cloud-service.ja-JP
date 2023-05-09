@@ -5,7 +5,7 @@ exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
 source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
 source-wordcount: '625'
-ht-degree: 59%
+ht-degree: 61%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 59%
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager の毎月のリリースの完全なリストを確認できます [こちら。](/help/implementing/cloud-manager/release-notes/current.md)
+Cloud Manager の月次リリースの完全なリストは、 [こちら](/help/implementing/cloud-manager/release-notes/current.md)で確認できます。
 
 ## 移行ツール {#migration-tools}
 

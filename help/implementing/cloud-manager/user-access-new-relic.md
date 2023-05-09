@@ -2,8 +2,8 @@
 title: New Relic One
 description: AEM as a Cloud Service の New Relic One アプリケーションパフォーマンスモニタリング（APM）サービスと、そのサービスへのアクセス方法について説明します。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: c265ce6f29dee1760049a8d296f00a3c2484fb77
-workflow-type: ht
+source-git-commit: 6a633881be57b79ee167c3a16d514b903bc460ad
+workflow-type: tm+mt
 source-wordcount: '1603'
 ht-degree: 100%
 
@@ -78,9 +78,9 @@ AEM as a Cloud Service 用の New Relic One APM には、多くの機能があ�
 
    ![New Relic ログイン](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
 
-1. 確認メールを受信した電子メールアドレスを入力し、「**リセットリンクを送信**」を選択します。
+1. 確認メールを受信したメールアドレスを入力し、「**リセットリンクを送信**」を選択します。
 
-   ![電子メールアドレスを入力](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
+   ![メールアドレスを入力](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
 
 1. New Relic から、アカウントを確認するためのリンクが記載されたメールが送信されます。
 
@@ -110,11 +110,11 @@ New Relic One に直接アクセスするには：
 
 1. New Relic One にログインします。
 
-### 電子メールの確認 {#verify-email}
+### メールの確認 {#verify-email}
 
-New Relic One へのログイン中にご利用の電子メールを確認するように求められた場合は、電子メールが複数のアカウントに関連付けられていることを意味します。これにより、アクセスするアカウントを選択できます。
+New Relic One へのログイン中にご利用のメールを確認するように求められた場合は、メールが複数のアカウントに関連付けられていることを意味します。これにより、アクセスするアカウントを選択できます。
 
-電子メールアドレスを確認しない場合、New Relic は、電子メールアドレスに関連付けられた最新のユーザーレコードを使用してログインを試みます。ログイン時に電子メールが確認されないようにするには、ログイン画面の「**このアカウントを記憶する**」チェックボックスをクリックします。
+メールアドレスを確認しない場合、New Relic は、メールアドレスに関連付けられた最新のユーザーレコードを使用してログインを試みます。ログイン時にメールが確認されないようにするには、ログイン画面の「**このアカウントを記憶する**」チェックボックスをクリックします。
 
 詳細なヘルプについては、 [AEM サポートポータル](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)からサポートチケットを開いてください。
 
@@ -128,15 +128,15 @@ New Relic One へのログイン中にご利用の電子メールを確認する
 
    ![New Relic ログイン](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
 
-1. アカウントの作成に使用した電子メールアドレスを入力し、「**リセットリンクを送信**」を選択します。
+1. アカウントの作成に使用したメールアドレスを入力し、「**リセットリンクを送信**」を選択します。
 
-   ![電子メールアドレスを入力](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
+   ![メールアドレスを入力](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
 
 1. New Relic から、アカウントを確認するためのリンクが記載されたメールが送信されます。
 
-新規登録プロセスを完了し、電子メールまたはパスワードのエラーメッセージが原因でアカウントにログインできない場合は、[Admin Console](https://adminconsole.adobe.com/) からサポートチケットをログに記録します。
+新規登録プロセスを完了し、メールまたはパスワードのエラーメッセージが原因でアカウントにログインできない場合は、[Admin Console](https://adminconsole.adobe.com/) からサポートチケットをログに記録します。
 
-New Relic から電子メールが届かない場合：
+New Relic からメールが届かない場合：
 
 * [スパムフィルター](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/)を確認します。
 * 該当する場合、[メール許可リストに New Relic を追加](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist)してください。

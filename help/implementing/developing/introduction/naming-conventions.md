@@ -5,7 +5,7 @@ exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '223'
-ht-degree: 100%
+ht-degree: 61%
 
 ---
 
@@ -17,17 +17,17 @@ ht-degree: 100%
 
 これらの命名規則は、以下のような様々なレベルで実装されます。
 
-* JcrUtil：[JCR ユーティリティ](#jcr-utilities)の AEM 実装。
+* JcrUtil:のAEM実装 [JCR ユーティリティ](#jcr-utilities).
 * ページマネージャー：[ページマネージャー](#page-manager)は、ページレベルの操作用のメソッドを提供します。
 * AEM UI 内 {#ui-behavior}
 
 ### JCR ユーティリティ {#jcr-utilities}
 
-[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) は JCR ユーティリティの AEM 実装です。名前の検証では特に、文字マッピングと次の点が確認されます。
+[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) は、JCR ユーティリティのAEM実装です。 名前の検証に特に関心があるのは、文字マッピングを制御し、次の検証を行う点です。
 
 * `isValidName`
-   * 名前が空でなく、有効な文字のみが含まれるかどうかを確認します。
-   * 推奨される名前が有効かどうかを確認するのに使用できます。
+   * 名前が空でなく、有効な文字のみを含んでいるかどうかをチェックします。
+   * 提案された名前が有効かどうかを確認するために使用できます。
 * `createValidName`
    * 任意の文字列から有効なラベルを作成します。
    * タイトルから名前を作成するのに使用できます。
@@ -40,6 +40,6 @@ ht-degree: 100%
 
 コンテンツを管理する際の AEM UI の動作は次のとおりです。
 
-* 次のいずれかの場合、ページマネージャーによって課せられる制約に従って名前が確認されます。
-   * ノード名に変換されるようにページタイトルが提供されている。
-   * 明示的なノード名が提供されている。
+* 次のいずれかの場合に、PageManager が課した制限に従って名前を検証します。
+   * ノード名に変換するために、ページタイトルが指定されます。
+   * 明示的なノード名が提供されています

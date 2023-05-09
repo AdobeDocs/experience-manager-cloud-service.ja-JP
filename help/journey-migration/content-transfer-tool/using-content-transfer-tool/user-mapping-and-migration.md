@@ -1,7 +1,8 @@
 ---
 title: ユーザーマッピングとプリンシパルの移行
 description: ユーザーマッピングとプリンシパル移行の概要
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '757'
 ht-degree: 32%

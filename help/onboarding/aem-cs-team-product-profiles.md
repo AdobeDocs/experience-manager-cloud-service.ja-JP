@@ -2,8 +2,8 @@
 title: AEM as a Cloud Service チームおよび製品プロファイル
 description: AEM as a Cloud Service チームおよび製品プロファイルでライセンス取得済みアドビソリューションへのアクセスを許可および制限する方法について説明します。
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
-workflow-type: ht
+source-git-commit: 225b34f081a942d67dfc1f6faeb09763ea9fde03
+workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 100%
 

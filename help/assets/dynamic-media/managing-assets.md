@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
 exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+workflow-type: tm+mt
 source-wordcount: '117'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 アップロード後の Dynamic Media アセット（画像、ビデオ、インタラクティブアセット）の管理には、アセットのプレビュー、ダウンロード、公開など、多数のタスクが必要になります。
 
-プレビューをするときには、画像プリセット（画像の場合のみ）またはビューアプリセット（ビデオおよび画像の場合）を適用することもできます。この両方をアセットに適用することはできません。詳しくは、[ビューアプリセットを適用する](viewer-presets.md)および[画像プリセットを適用する](image-presets.md)を参照してください。
+プレビュー時には、（画像のみ）画像プリセットまたは（ビデオと画像の）ビューアプリセットを適用することもできます。 両方をアセットに適用することはできません。 詳しくは、[ビューアプリセットを適用する](viewer-presets.md)および[画像プリセットを適用する](image-presets.md)を参照してください。
 
 アセットの管理に関する一般的な情報については、[タッチ UI を使用してアセットを管理する](/help/assets/manage-digital-assets.md)を参照してください。
 

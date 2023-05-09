@@ -1,8 +1,9 @@
 ---
 title: 脚注のサポート
 description: 脚注の RTE サポート。
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
-workflow-type: ht
+exl-id: f04dae84-daab-42f8-876f-02fe426f62be
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 100%
 

@@ -5,7 +5,7 @@ exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '936'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 100%
 1. [!DNL AEM Forms] オーサーインスタンスで、**[!UICONTROL ツール]** ![ハンマーアイコン](assets/hammer.png)／**[!UICONTROL クラウドサービス]**／**[!UICONTROL データソース]**&#x200B;に移動します。使用可能なラッパーフォルダーのリストには、[AEM アーキタイププロジェクトの生成](setup-local-development-environment.md##forms-cloud-service-local-development-environment)時に `DappTitle` のタイトルを指定したフォルダーが含まれています。
 1. このフォルダー名をタップし、「**[!UICONTROL Microsoft Dynamics 365 クラウド設定]**」を選択して「**[!UICONTROL プロパティ]**」をタップします。
 1. 「**[!UICONTROL 認証設定]**」タブで、次のように設定します。
-   1. 「**[!UICONTROL サービスルート]**」フィールドの値を入力します。Dynamics インスタンスの「[開発者向けリソース](https://docs.microsoft.com/ja-jp/powerapps/developer/data-platform/view-download-developer-resources)」に移動し、「サービスルート」フィールドの値を表示します。例：`https://<tenant-name>.dynamics.com/api/data/v9.1/`
+   1. の値を入力します。 **[!UICONTROL サービスルート]** フィールドに入力します。 Dynamics インスタンスの「[開発者向けリソース](https://docs.microsoft.com/ja-jp/powerapps/developer/data-platform/view-download-developer-resources)」に移動し、「サービスルート」フィールドの値を表示します。例：`https://<tenant-name>.dynamics.com/api/data/v9.1/`
    1. 接続アプリケーションのクライアント ID（「アプリケーション ID」とも呼ばれます）とクライアントの秘密鍵を指定します。
    1. 「**[!UICONTROL OAuth URL]**」、「**[!UICONTROL 更新トークン URL]**」、「**[!UICONTROL アクセストークン URL]**」の各フィールドの `{tenant}` をテナント ID に置き換えます。
    1. [!UICONTROL Microsoft Dynamics] にフォームデータモデルを設定するには、「**[!UICONTROL リソース]**」フィールドに Dynamics インスタンスの URL を指定します。サービスルート URL を使用して、Dynamics インスタンスの URL を取得します。（例：`https://<tenant-name>.dynamics.com`）。

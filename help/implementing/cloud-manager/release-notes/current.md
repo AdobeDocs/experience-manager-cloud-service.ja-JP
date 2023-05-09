@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: be39b09b609cccff916db462af9a84149d23a698
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 50%
+ht-degree: 55%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 50%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Serviceの Cloud Manager リリース 2023.4.0 のリリース日は 2023 年 4 月 13 日です。 次回のリリースは 2023年11月5日（PT）に予定されています。
+AEM as a Cloud Serviceの Cloud Manager リリース 2023.4.0 のリリース日は 2023 年 4 月 13 日です。 次回のリリースは 2023年5月11日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* [AEMプロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) はバージョン 41 に更新されました。
+* [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)は、バージョン 41 に更新されました。
 
 ## バグの修正 {#bug-fixes}
 

@@ -5,7 +5,7 @@ exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
 source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
 source-wordcount: '1150'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -102,7 +102,7 @@ ht-degree: 94%
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager の毎月のリリースの完全なリストを確認できます [こちら。](/help/implementing/cloud-manager/release-notes/current.md)
+Cloud Manager の月次リリースの完全なリストは、 [こちら](/help/implementing/cloud-manager/release-notes/current.md)で確認できます。
 
 ## コンテンツ転送ツール {#ctt-release}
 

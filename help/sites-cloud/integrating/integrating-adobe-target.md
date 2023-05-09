@@ -7,7 +7,7 @@ exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 source-git-commit: 856ad73d31257bf40cd4594c313d0d7e09ba1cf9
 workflow-type: tm+mt
 source-wordcount: '1047'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／
 
 ### IMS 設定 {#ims-configuration}
 
-Target を AEM および Launch と適切に統合するには、Launch と Target の両方の IMS 設定が必要です。Launch の IMS 設定は AEM as a Cloud Service で事前に設定されていますが、Target の IMS 設定は、Target のプロビジョニング後に作成する必要があります。参照： [Adobe Targetとの統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-target-ims.md) とビデオ [Experience Platform LaunchとAEMの統合](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=ja) Target IMS 設定の作成方法を説明します。
+Target を AEM および Launch と適切に統合するには、Launch と Target の両方の IMS 設定が必要です。Launch の IMS 設定は AEM as a Cloud Service で事前に設定されていますが、Target の IMS 設定は、Target のプロビジョニング後に作成する必要があります。[Adobe Target との統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-target-ims.md)とビデオ（[Experience Platform Launch と AEM の統合](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=ja)）を参照して、Target IMS 設定の作成方法を学びます。
 
 ### Adobe Target テナント ID と Adobe Target クライアントコード {#tenant-client}
 
@@ -91,7 +91,7 @@ AEM は、Experience Platform Launch との標準の統合を提供します。A
 2. 必要な拡張機能の追加
 3. データ要素の作成（コンテキストハブのパラメーターを取り込むため）
 4. ページルールの作成
-5. ビルドとパブリッシュ
+5. ビルドと公開
 
 ### Launch プロパティの作成 {#create-property}
 
@@ -134,9 +134,9 @@ AEM は、Experience Platform Launch との標準の統合を提供します。A
 2. 「すべての mbox にパラメーターを追加」で、前に設定したデータ要素（前述のデータ要素を参照）を、mbox 呼び出しで送信されるパラメーターに追加します。
    ![Mbox](assets/map_data1.png " アクション")
 
-### ビルドとパブリッシュ {#build-publish}
+### ビルドと公開 {#build-publish}
 
-ビルドとパブリッシュの方法については、この[ページ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html?lang=ja)を参照してください。
+ビルドと公開の方法については、この[ページ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html?lang=ja)を参照してください。
 
 ## Classic とタッチ操作対応 UI の設定の間のコンテンツ構造の変更 {#changes-content-structure}
 

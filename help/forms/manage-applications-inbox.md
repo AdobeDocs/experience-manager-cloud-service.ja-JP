@@ -89,7 +89,7 @@ Forms ワークフローがトリガーされ、自分が担当者であるま�
 
 #### ワークフローの詳細 {#workflow-details}
 
-上部にある「ワークフローの詳細」タブには、ワークフロー全体を通してタスクの進捗が表示されます。タスクの完了、現在、保留の各段階を示します。ワークフローの各段階は、関連するワークフローの[タスクを割り当てステップ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)で定義されます。
+上部にある「ワークフローの詳細」タブには、ワークフロー全体を通してタスクの進捗が表示されます。タスクの完了、現在、保留の各段階を示します。ワークフローの各段階は、関連するワークフローの[タスクを割り当てステップ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=ja#extending-aem)で定義されます。
 
 さらに、タブはワークフローの完了した各段階ごとのタスクの履歴を表示します。完了した段階の「**[!UICONTROL 詳細を表示]**」をタップして、その段階の詳細を知ることができます。タスクに関するコメント、フォーム、タスクの添付ファイル、状態、開始日、終了日などが表示されます。
 
@@ -97,7 +97,7 @@ Forms ワークフローがトリガーされ、自分が担当者であるま�
 
 #### アクションツールバー {#actions-toolbar}
 
-アクションツールバーは、タスクの使用可能なすべてのオプションを表示します。デフォルトのアクションは、保存、リセット、委任です。その他のアクションは、[タスクを割り当てステップ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)で設定されます。上記の例では、ワークフローに承認と拒否が設定されています。
+アクションツールバーは、タスクの使用可能なすべてのオプションを表示します。デフォルトのアクションは、保存、リセット、委任です。その他のアクションは、[タスクを割り当てステップ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=ja#extending-aem)で設定されます。上記の例では、ワークフローに承認と拒否が設定されています。
 
 タスクに対してアクションを実行すると、ワークフローの次の段階に進みます。
 
@@ -112,7 +112,7 @@ AEM インボックスでは、アクティブなタスクのみが表示され�
 
 1. タップしてタスクを選択し、「**[!UICONTROL 開く]**」をクリックします。
 
-タスクが開き、タスクに関連するドキュメントまたはアダプティブフォームが表示されます。アダプティブフォームの場合、タスクは、[タスクを割り当てワークフローステップ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)の「フォーム／ドキュメント」タブで設定された読み取り専用のアダプティブフォームまたはその PDF ドキュメントを表示します。
+タスクが開き、タスクに関連するドキュメントまたはアダプティブフォームが表示されます。アダプティブフォームの場合、タスクは、[タスクを割り当てワークフローステップ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=ja#extending-aem)の「フォーム／ドキュメント」タブで設定された読み取り専用のアダプティブフォームまたはその PDF ドキュメントを表示します。
 
 「タスクの詳細」セクションでは、実行済みアクション、タスクのステータス、開始日、終了日が表示されます。
 
@@ -135,8 +135,8 @@ AEM インボックスでは、アクティブなタスクのみが表示され�
       | ノード | プロパティ | タイプ |
       |---|---|---|
       | sharedWith | sharedWith | 文字列 |
-      | locked | ロック済み | ブール値 |
-      | returned | 返された | ブール値 |
+      | locked | locked | ブール値 |
+      | returned | returned | ブール値 |
       | allowInboxSharing | allowInboxSharing | ブール値 |
       | allowExplicitSharing | allowExplicitSharing | ブール値 |
 

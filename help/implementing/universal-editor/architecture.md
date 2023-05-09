@@ -1,13 +1,13 @@
 ---
 title: ユニバーサルエディターのアーキテクチャ
 description: ユニバーサルエディターのアーキテクチャと、そのサービスとレイヤー間でのデータのフローについて説明します。
-source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
+exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 1%
 
 ---
-
 
 # ユニバーサルエディターのアーキテクチャ {#architecture}
 

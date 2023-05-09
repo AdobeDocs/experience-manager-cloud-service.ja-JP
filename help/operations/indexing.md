@@ -5,7 +5,7 @@ exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: 6fd5f8e7a9699f60457e232bb3cfa011f34880e9
 workflow-type: tm+mt
 source-wordcount: '2498'
-ht-degree: 88%
+ht-degree: 96%
 
 ---
 
@@ -49,7 +49,7 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 
 1. 標準提供のインデックス。例として、`/oak:index/cqPageLucene-2` があります。
 1. 標準提供のインデックスのカスタマイズ。お客様がカスタマイズを定義できます。例として、`/oak:index/cqPageLucene-2-custom-1` があります。
-1. 完全なカスタムインデックス。例として、`/oak:index/acme.product-1-custom-2` があります。名前の競合を避けるために、完全なカスタムインデックスにはプレフィックスが必要です（例： ）。 `acme.`
+1. 完全なカスタムインデックス。例として、`/oak:index/acme.product-1-custom-2` があります。名前の競合を避けるために、完全なカスタムインデックスには `acme.` のようなプレフィックスを付ける必要があります。
 
 標準提供のインデックスのカスタマイズと完全なカスタムインデックスの両方に、`-custom-` を含める必要があることに注意してください。完全なカスタムインデックスのみ、プレフィックスで始める必要があります。
 
@@ -73,7 +73,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->インデックス定義を含んだコンテンツパッケージには、コンテンツパッケージのプロパティファイル（`/META-INF/vault/properties.xml`）で次のプロパティを設定する必要があります。
+>インデックス定義を含んだコンテンツパッケージには、コンテンツパッケージのプロパティファイル（場所は `/META-INF/vault/properties.xml`）で次のプロパティを設定する必要があります。
 >
 >`noIntermediateSaves=true`
 
@@ -83,7 +83,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 * インデックス定義自体（例 `/oak:index/ntBaseLucene-custom-1`）
 
-カスタムインデックスまたはカスタマイズ済みインデックスをデプロイするには、インデックス定義（`/oak:index/definitionname`）は、Git と Cloud Manager のデプロイメントプロセスを使用して `ui.apps` を介して配信される必要があります。FileVault フィルタでは、次のようになります。 `ui.apps/src/main/content/META-INF/vault/filter.xml`、例えば、カスタムおよびカスタマイズされた各インデックスを個別にリストします。 `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. カスタムまたはカスタマイズ済みインデックス定義自体が、次のように `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml` ファイルに保存されます。
+カスタムインデックスまたはカスタマイズ済みインデックスをデプロイするには、インデックス定義（`/oak:index/definitionname`）は、Git と Cloud Manager のデプロイメントプロセスを使用して `ui.apps` を介して配信される必要があります。FileVault フィルター、例えば `ui.apps/src/main/content/META-INF/vault/filter.xml` では、カスタムおよびカスタマイズ済みの各インデックスを、`<filter root="/oak:index/damAssetLucene-7-custom-1"/>` のように個別にリストします。カスタムまたはカスタマイズ済みインデックス定義自体が、次のように `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml` ファイルに保存されます。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -145,7 +145,7 @@ Jackrabbit Filevault Maven パッケージプラグインを使用するバー�
 
 新しいインデックス定義を追加したら、Cloud Manager を使用して新しいアプリケーションをデプロイする必要があります。デプロイメントを開始すると、2 つのジョブが開始され、それぞれ MongoDB と Azure Segment Store にオーサー用とパブリッシュ用のインデックス定義を追加（また必要に応じて結合）します。Blue-Green スイッチが起こる前に、基になるリポジトリーのインデックスが新しいインデックス定義で再作成されています。
 
-### 注意
+### メモ
 
 失敗の検証で次のエラーが発生した場合 <br>
 `[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"` <br>
@@ -272,11 +272,11 @@ Blue-Green デプロイメントでは、ダウンタイムは発生しません
 
 ### 現在の制限事項 {#current-limitations}
 
-インデックス管理は、現在、タイプのインデックスに対してのみサポートされています `lucene`を `compatVersion` に設定 `2`. 内部的には、他のインデックスが設定され、クエリに使用される場合があります ( 例：Elasticsearchインデックス )。 に対して書き込まれるクエリ `damAssetLucene` インデックスは、AEMas a Cloud Serviceでは、実際には、このインデックスのElasticsearchバージョンに対して実行される場合があります。 この違いは、アプリケーションのエンドユーザーには見えませんが、 `explain` 機能は異なるインデックスをレポートします。 Lucene とElasticsearchインデックスの違いについては、 [Apache Jackrabbit Oak のElasticsearchドキュメント](https://jackrabbit.apache.org/oak/docs/query/elastic.html). お客様は、直接設定インデックスを設定する必要はなく、Elasticsearch・インデックスを設定する必要もありません。
+インデックス管理は現在、`compatVersion` が `2` に設定された `lucene` 型のインデックスに対してのみサポートされています。内部的には、例えば Elasticsearch インデックスなどの他のインデックスが設定され、クエリに使用される場合があります。`damAssetLucene` インデックスに対して書き込まれるクエリは、AEM as a Cloud Serviceでは、実際には、このインデックスの Elasticsearch バージョンに対して実行される場合があります。 この違いは、アプリケーションのエンドユーザーには見えませんが、`explain` 機能などの特定のツールでは異なるインデックスがレポートされます。Lucene インデックスと Elasticsearch インデックスの違いについては、[Apache Jackrabbit Oak の Elasticsearch ドキュメント](https://jackrabbit.apache.org/oak/docs/query/elastic.html)を参照してください。顧客が Elasticsearch インデックスを直接設定することはできず、またその必要もありません。
 
-組み込みのアナライザーのみがサポートされます（つまり、製品に付属しているアナライザー）。 カスタムアナライザーはサポートされていません。
+ビルトインアナライザー（製品に付属しているアナライザー）のみがサポートされています。カスタムアナライザーはサポートされていません。
 
-最高のオペレーショナルパフォーマンスを得るには、インデックスを過度に大きくしないでください。 すべてのインデックスの合計サイズは、以下のガイドとして使用できます。開発環境でカスタムインデックスを追加し、標準インデックスを調整した後、この値が 100%以上増加する場合は、カスタムインデックス定義を調整する必要があります。 AEM as a Cloud Serviceを使用すると、システムの安定性とパフォーマンスに悪影響を与える可能性のあるインデックスのデプロイメントを防ぐことができます。
+最高のオペレーショナルパフォーマンスを得るには、インデックスを過度に大きくしないようにします。 すべてのインデックスの合計サイズを目安にすることができます。開発環境でカスタムインデックスを追加し、標準インデックスを調整した後に、このサイズが 100% を超えて増加する場合は、カスタムインデックスの定義を調整する必要があります。AEM as a Cloud Service を使用すると、システムの安定性とパフォーマンスに悪影響を与える可能性のあるインデックスのデプロイメントを防ぐことができます。
 
 ### インデックスの追加 {#adding-an-index}
 

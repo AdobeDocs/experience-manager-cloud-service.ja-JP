@@ -1,14 +1,14 @@
 ---
 title: パノラマ画像
-description: Dynamic Media でのパノラマ画像の使用方法を学習します。
+description: Dynamic Mediaでパノラマ画像を使用する方法を説明します。
 contentOwner: Rick Brough
 feature: Panoramic Images
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+workflow-type: tm+mt
 source-wordcount: '147'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 

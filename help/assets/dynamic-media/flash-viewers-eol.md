@@ -4,8 +4,8 @@ description: 2017 年 1 月 31 日をもって、Flash ビューア Platform の
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: d1f34d22-abcc-422e-b6da-3fa8097078b0
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 100%
 

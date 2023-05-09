@@ -2,8 +2,8 @@
 title: Cloud Manager の概要
 description: プログラム、環境、パイプラインを通じて、Cloud Manager がどのように AEM プロジェクトをサポートするかについて説明します。
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 50217b0ff63eb87123c3a1238822441a56c1995e
-workflow-type: ht
+source-git-commit: 33d587baba27ad54b1c9e34a36fadbd1dc56e3f5
+workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 100%
 

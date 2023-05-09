@@ -3,7 +3,8 @@ title: アダプティブフォームへの新しいロケールのサポート�
 seo-title: Learn to add support for new locales to your adaptive forms
 description: AEM Forms は、アダプティブフォームのローカライズ用に新しくロケールを追加できます。英語（en）、スペイン語（es）、フランス語（fr）、イタリア語（it）、ドイツ語（de）、日本語（ja）、ブラジルポルトガル語（pt-BR）、中国語（zh-CN）、台湾中国語（zh-TW）、韓国語（ko-KR）のロケールがあります。
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: 00fcdb3530a441bde2f7f91515aaaec341615a3f
+exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 91%

@@ -1,13 +1,13 @@
 ---
 title: ユニバーサルビジュアルエディタの概要
 description: ユニバーサルビジュアルエディタ (Universal Visual Editor) を使用して、ヘッドレスでヘッドフルなエクスペリエンスを何が見え、何が得られるか (WYSIWYG) を設定する方法を説明します。 コンテンツ作成者が優れたエクスペリエンスを提供し、コンテンツの速度を向上させ、で最新の開発者エクスペリエンスを提供する方法を理解します。
-source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
+exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 0%
 
 ---
-
 
 # ユニバーサルビジュアルエディタの概要 {#introduction}
 

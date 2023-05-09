@@ -5,24 +5,24 @@ exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '368'
-ht-degree: 100%
+ht-degree: 48%
 
 ---
 
 # ContextHub データを使用したページのプレビュー  {#previewing-pages-using-contexthub-data}
 
-ContextHub ツールバーには、ContextHub ストアのデータが表示され、このツールバーを使用してストアデータを変更することができます。ContextHub ツールバーは、ContextHub ストア内のデータによって決定されるコンテンツのプレビューに役立ちます。
+ContextHub ツールバーは、ContextHub ストアのデータを表示し、ストアデータを変更できます。 ContextHub ツールバーは、ContextHub ストア内のデータによって決定されるコンテンツをプレビューする場合に役立ちます。
 
-このツールバーは、1 つ以上の UI モジュールを含む一連の UI モードで構成されます。
+ツールバーは、1 つ以上の UI モジュールを含む一連の UI モードで構成されます。
 
-* UI モードは、ツールバーの左側に表示されるアイコンです。アイコンをクリックまたはタップすると、そのモードに含まれる UI モジュールがツールバーに表示されます。
-* UI モジュールは、1 つ以上の ContextHub ストアのデータを表示します。一部の UI モジュールでは、ストアデータを操作することもできます。
+* UI モードは、ツールバーの左側に表示されるアイコンです。 アイコンをクリックまたはタップすると、その中に含まれている UI モジュールがツールバーに表示されます。
+* UI モジュールは、1 つ以上の ContextHub ストアのデータを表示します。 また、一部の UI モジュールでは、ストアデータを操作することもできます。
 
-ContextHub によって、いくつかの UI モードと UI モジュールがインストールされます。管理者によって、異なる UI モードと UI モジュールを表示するように [ContextHub が設定されている](/help/implementing/developing/personalization/configuring-contexthub.md)場合もあります。
+ContextHub によって、いくつかの UI モードと UI モジュールがインストールされます。管理者が [設定済みの ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) を使用して、異なるものを表示できます。
 
 ## ContextHub ツールバーの表示 {#revealing-the-contexthub-toolbar}
 
-ContextHub ツールバーはプレビューモードで使用できます。このツールバーは、オーサーインスタンス上で、管理者が有効にしている場合にのみ使用できます。
+ContextHub ツールバーは、プレビューモードで使用できます。 このツールバーは、オーサーインスタンス上で、管理者が有効にしている場合にのみ使用できます。
 
 ![ContextHub ツールバー](/help/sites-cloud/authoring/assets/contexthub-toolbar.png)
 
@@ -36,9 +36,9 @@ ContextHub ツールバーはプレビューモードで使用できます。こ
 
 ## UI モジュールの機能 {#ui-module-features}
 
-提供する機能セットは UI モジュールごとに異なりますが、以下のタイプの機能は共通です。UI モジュールは拡張可能なので、開発者は必要に応じて他の機能を実装できます。
+各 UI モジュールは異なる機能セットを提供しますが、次のタイプの機能が一般的です。 UI モジュールは拡張可能なので、開発者は必要に応じて他の機能を実装できます。
 
-### ツールバーコンテンツ {#toolbar-content}
+### ツールバーの内容 {#toolbar-content}
 
 UI モジュールは、1 つ以上の ContextHub ストアのデータをツールバーに表示できます。UI モジュールは、アイコンとタイトルで識別されます。
 
@@ -52,7 +52,7 @@ UI モジュールは、1 つ以上の ContextHub ストアのデータをツー
 
 ### ポップアップフォーム {#popup-forms}
 
-モジュールのポップアップオーバーレイには、ContextHub ストア内のデータを変更するためのフォーム要素を含めることができます。ページコンテンツがストアデータによって決定される場合は、このフォームを使用してページコンテンツの変更を監視できます。
+モジュールのポップアップオーバーレイには、ContextHub ストア内のデータを変更できるフォーム要素を含めることができます。 ページのコンテンツがストアデータによって決まる場合は、フォームを使用して、ページコンテンツの変更を観察できます。
 
 ### 全画面表示モード {#fullscreen-mode}
 

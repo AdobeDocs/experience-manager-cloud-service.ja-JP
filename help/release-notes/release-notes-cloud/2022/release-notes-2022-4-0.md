@@ -5,7 +5,7 @@ exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
 source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
 source-wordcount: '570'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service の SDK ビルドアナライザー Maven プラグイン
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager の毎月のリリースの完全なリストを確認できます [こちら。](/help/implementing/cloud-manager/release-notes/current.md)
+Cloud Manager の月次リリースの完全なリストは、 [こちら](/help/implementing/cloud-manager/release-notes/current.md)で確認できます。
 
 ## 移行ツール {#migration-tools}
 

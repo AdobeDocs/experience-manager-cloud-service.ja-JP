@@ -6,7 +6,7 @@ exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
 source-wordcount: '1964'
-ht-degree: 100%
+ht-degree: 83%
 
 ---
 
@@ -34,13 +34,13 @@ RTE インターフェイスは、オーサリング環境に[レスポンシブ
 
 ## 各種編集モード {#editingmodes}
 
-[!DNL Experience Manager] では、コンポーネントの各種モードを使用して、テキストコンテンツを作成および編集できます。コンテンツを作成およびフォーマットするためのツールバーオプションと、各種編集モードにおける RTE 対応コンポーネントのユーザーエクスペリエンスは、RTE 設定によって異なります。
+[!DNL Experience Manager] では、コンポーネントの各種モードを使用して、テキストコンテンツを作成および編集できます。コンテンツのオーサリングと書式設定をおこなうためのツールバーオプションと、異なる編集モードでの RTE 対応コンポーネントのユーザーエクスペリエンスは、RTE 設定によって異なります。
 
 | 編集モード | 編集領域 | 有効化が推奨される機能 |
 |--- |--- |--- |
-| インライン | 小さな編集をすばやくおこなうのに適したインプレース編集。ダイアログボックスを開かないフォーマット。 | 最小限の RTE 機能。 |
+| インライン | インプレース編集を使用して、小さな編集作業をすばやくおこなうことができます。ダイアログボックスを開かない書式 | 最小限の RTE 機能。 |
 | RTE フルスクリーン | ページ全体に広がる。 | 必要なすべての RTE 機能。 |
-| ダイアログ | ページコンテンツの上面にダイアログボックスが表示されるが、ページ全体に広がらない. | 慎重に有効化された機能。 |
+| ダイアログ | ページコンテンツの上にあるダイアログボックス。ページ全体はカバーされません。 | 慎重に有効化された機能。 |
 | ダイアログフルスクリーン | フルスクリーンモードと同じ。RTE の横にダイアログのフィールドを含む。 | 必要なすべての RTE 機能。 |
 
 >[!NOTE]
@@ -67,7 +67,7 @@ RTE インターフェイスは、オーサリング環境に[レスポンシブ
 
 ### ダイアログ編集 {#dialog-editing}
 
-コンポーネントをダブルクリックすると、コンテンツ編集用のダイアログボックスが開きます。既存のページの上面に開きます。一部のシナリオでは、ポップアップウィンドウとして開くこともあります。例えば、複数列から成るページレイアウト内の列の一部がテキストコンポーネントで、ダイアログ用の領域が少ない場合などです。
+コンポーネントをダブルクリックすると、ダイアログボックスが開き、コンテンツを編集できます。 既存のページの上部にダイアログボックスが開きます。 特定のシナリオでは、ダイアログがポップアップウィンドウとして開きます。 例えば、複数列のページレイアウトの列の一部がテキストコンポーネントで、ダイアログで使用できる領域が少ない場合などです。
 
 ![ダイアログ編集モード](assets/dialog_editing_modetouchui.png)
 
@@ -86,26 +86,26 @@ RTE インターフェイスは、オーサリング環境に[レスポンシブ
 
 RTE の基本機能は、該当するプラグインのノードにある `features` プロパティの値によって、アクティベートまたはアクティベート解除されます。
 
-以下の表に最新のプラグインを示します。
+次の表に、現在のプラグインを示します。
 
-* API ドキュメントへのリンクを含むプラグイン ID。ID は、[プラグインをアクティベート](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin)するときにノード名として使用されます。
+* API ドキュメントへのリンクを含むプラグイン ID。 ID は、 [プラグインのアクティベート](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin).
 * `features` プロパティの許可されている値。
 * プラグインが提供する機能の説明。
 
 | プラグイン ID | 機能 | 説明 |
 |--- |--- |--- |
-| edit | `cut`、`copy`、`paste-default`、`paste-plaintext`、`paste-wordhtml` | [切り取り、コピーおよび 3 つの貼り付けモード](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles)。 |
+| edit | `cut`、`copy`、`paste-default`、`paste-plaintext`、`paste-wordhtml` | [切り取り、コピーおよび 3 つの貼り付けモード](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles). |
 | [findreplace](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | `find`、`replace` | 検索と置換。 |
-| [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | `bold`、`italic`、`underline` | [基本的なテキストフォーマット](configure-rich-text-editor-plug-ins.md#textstyles)。 |
+| [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | `bold`、`italic`、`underline` | [基本的なテキストの書式設定](configure-rich-text-editor-plug-ins.md#textstyles). |
 | [画像](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | `image` | 基本的な画像サポート（コンテンツまたはコンテンツファインダーからのドラッグ）。ブラウザーの種類に応じて、様々なサポート機能が提供されます |
-| [keys](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) | - | この値を定義するには、[タブサイズ](configure-rich-text-editor-plug-ins.md#tabsize)を参照してください。 |
+| [keys](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) | - | この値を定義するには、 [タブのサイズ](configure-rich-text-editor-plug-ins.md#tabsize). |
 | [justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | `justifyleft`、`justifycenter`、`justifyright` | 段落の整列。 |
-| [links](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | `modifylink`、`unlink`、`anchor` | [ハイパーリンクおよびアンカー](configure-rich-text-editor-plug-ins.md#linkstyles)。 |
+| [リンク](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | `modifylink`、`unlink`、`anchor` | [ハイパーリンクとアンカー](configure-rich-text-editor-plug-ins.md#linkstyles). |
 | [lists](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | `ordered`、`unordered`、`indent`、`outdent` | このプラグインは、[インデントとリスト](configure-rich-text-editor-plug-ins.md#indentmargin)（ネストされたリストを含む）の両方を制御します。 |
 | [misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | `specialchars`、`sourceedit` | 各種ツールを使用して、[特殊文字](configure-rich-text-editor-plug-ins.md#spchar)の入力や HTML ソースの編集をおこなえます。また、独自のリストを定義する場合は、[特殊文字の範囲](configure-rich-text-editor-plug-ins.md#definerangechar)を追加できます。 |
-| Paraformat | `paraformat` | `<h2>`デフォルトの段落形式は、段落、見出し 1、見出し 2 および見出し 3（`<p>`、`<h1>`、`<h3>`）です。[他の段落フォーマットを追加](configure-rich-text-editor-plug-ins.md#paraformats)したり、リストを拡張したりできます。 |
-| spellcheck | `checktext` | [言語ごとのスペルチェッカー](configure-rich-text-editor-plug-ins.md#adddict)。 |
-| styles | `styles` | CSS クラスを使用したスタイル設定のサポート。テキストで使用するスタイルの範囲を独自に追加（または拡張）する場合は、[新しいテキストスタイルを追加](configure-rich-text-editor-plug-ins.md#textstyles)します。 |
+| Paraformat | `paraformat` | `<h2>`デフォルトの段落形式は、段落、見出し 1、見出し 2 および見出し 3（`<p>`、`<h1>`、`<h3>`）です。以下が可能です。 [他の段落書式を追加する](configure-rich-text-editor-plug-ins.md#paraformats) またはリストを拡張します。 |
+| spellcheck | `checktext` | [言語対応スペルチェッカー](configure-rich-text-editor-plug-ins.md#adddict). |
+| スタイル | `styles` | CSS クラスを使用したスタイル設定のサポート。テキストで使用するスタイルの範囲を独自に追加（または拡張）する場合は、[新しいテキストスタイルを追加](configure-rich-text-editor-plug-ins.md#textstyles)します。 |
 | subsuperscript | `subscript`、`superscript` | 下付き文字や上付き文字を追加して基本的なフォーマットを拡張。 |
 | table | `table`、`removetable`、`insertrow`、`removerow`、`insertcolumn`、`removecolumn`、`cellprops`、`mergecells`、`splitcell`、`selectrow`、`selectcolumns` | テーブル全体または個々のセルに独自のスタイルを追加する場合は、[テーブルスタイルの設定](configure-rich-text-editor-plug-ins.md#tablestyles)を参照してください。 |
 | undo | `undo`、`redo` | [取り消しおよびやり直し](configure-rich-text-editor-plug-ins.md#undohistory)操作の履歴サイズ。 |
@@ -145,9 +145,9 @@ RTE の基本機能は、該当するプラグインのノードにある `featu
 
 ## プラグインのアクティベートによる RTE 機能の有効化 {#enable-rte-functionalities-by-activating-plug-ins}
 
-リッチテキストエディター（RTE）の各機能は一連のプラグインから使用でき、それぞれに features プロパティがあります。features プロパティを設定することで、各プラグインの各種機能を有効化または無効化できます。
+リッチテキストエディター（RTE）の各機能は一連のプラグインから使用でき、それぞれに features プロパティがあります。features プロパティを設定して、各プラグインの様々な機能を有効または無効にできます。
 
-RTE プラグインの設定について詳しくは、[RTE プラグインのアクティベートおよび設定方法に関する説明](configure-rich-text-editor-plug-ins.md)を参照してください。
+RTE プラグインの詳細な設定については、 [RTE プラグインのアクティベートと設定の方法](configure-rich-text-editor-plug-ins.md).
 
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
@@ -159,11 +159,11 @@ RTE プラグインの設定について詳しくは、[RTE プラグインの�
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
 >
->独自のテキストコンポーネントを作成するには、上記のコンポーネントを直接編集するのではなく、コピーしてください。
+>独自のテキストコンポーネントを作成するには、これらのコンポーネントを編集する代わりに、上記のコンポーネントをコピーします。
 
 ## RTE ツールバーの設定 {#dialogfullscreen}
 
-[!DNL Experience Manager] では、リッチテキストエディターのインターフェイスを編集モードごとに異なる設定にできます。デフォルト設定を以下に示します。これらの設定を必要に応じて上書きできます。作成者に提供するツールバー機能のみをカスタマイズします。すべてのツールバー設定を指定する必要はありません。
+[!DNL Experience Manager] では、リッチテキストエディターのインターフェイスを編集モードごとに異なる設定にできます。デフォルト設定を以下に示します。これらのデフォルト値は、要件に応じて上書きできます。 作成者に提供するツールバー機能のみをカスタマイズします。すべてのツールバー設定を指定する必要はありません。
 
 `dialogFullScreen` 用のツールバーを設定するには、次のサンプル設定を使用します。
 
@@ -218,7 +218,7 @@ RTE プラグインの設定について詳しくは、[RTE プラグインの�
 
 ## RTE ユーザーインターフェイス設定とコンテンツポリシー {#rtecontentpolicies}
 
-管理者は、上述のような設定をおこなわなくても、コンテンツポリシーを使用して RTE オプションを制御することができます。コンテンツポリシーでは、[編集可能テンプレート](/help/sites-cloud/authoring/features/templates.md)の一部として使用されるコンポーネントのデザインプロパティが定義されます。例えば、RTE を使用するテキストコンポーネントが編集可能テンプレートで使用される場合は、コンテンツポリシーの定義によって、太字オプションやいくつかの段落フォーマットオプションを使用可能にできます。コンテンツポリシーは再利用が可能であり、複数のテンプレートに対して適用できます。
+管理者は、前述のように設定をおこなう代わりに、コンテンツポリシーを使用して RTE オプションを制御できます。 コンテンツポリシーは、コンポーネントの一部として使用する場合のデザインプロパティを定義します [編集可能なテンプレート](/help/sites-cloud/authoring/features/templates.md). 例えば、RTE を使用するテキストコンポーネントが編集可能なテンプレートと共に使用されている場合、コンテンツポリシーでは太字オプションを使用可能にし、一部の段落書式オプションを使用可能にするように定義できます。 コンテンツポリシーは再利用可能で、複数のテンプレートに適用できます。
 
 RTE フローで使用可能なオプションに関するユーザーインターフェイス設定がコンテンツポリシーに影響します。
 
@@ -226,7 +226,7 @@ RTE フローで使用可能なオプションに関するユーザーインタ�
 * RTE のユーザーインターフェイス設定が削除されたか、どの項目も有効にしていない場合、コンテンツポリシーではその設定ができません。
 * 作成者は、ユーザーインターフェイス設定およびコンテンツポリシーによって使用可能となっている機能にのみアクセスできます。
 
-例については、[テキストコアコンポーネントのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)を参照してください。
+例については、[テキストコアコンポーネントのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=ja#the-text-component-and-the-rich-text-editor)を参照してください。
 
 ## ツールバーアイコンとコマンドのマッピングのカスタマイズ {#iconstoolbar}
 

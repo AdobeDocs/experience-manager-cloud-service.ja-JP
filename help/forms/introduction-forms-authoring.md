@@ -10,8 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 51d7198ccf24ca0b46c4e4a34cb1d1ee8ed7e2c0
-workflow-type: ht
+source-git-commit: 041f0fb62b1bca79cdf4b47f971c060deb77d28f
+workflow-type: tm+mt
 source-wordcount: '2409'
 ht-degree: 100%
 
@@ -149,8 +149,8 @@ XML スキーマおよび JSON スキーマは、組織内のバックエンド�
    <td>ドロップダウンリストを追加します（単独または複数選択）。</td>
   </tr>
   <tr>
-   <td>電子メール</td>
-   <td><p>電子メールアドレスを取得するためのフィールドを追加します。電子メールコンポーネントは、デフォルトで、以下の正規表現を使用して電子メールアドレスを検証します。</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td>メール</td>
+   <td><p>メールアドレスを取得するためのフィールドを追加します。メールコンポーネントは、デフォルトで、以下の正規表現を使用してメールアドレスを検証します。</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>ファイル添付</td>

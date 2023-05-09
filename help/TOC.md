@@ -77,7 +77,7 @@ ht-degree: 97%
    + Cloud Manager のリリースノート {#cloud-manager}
       + [最新のリリースノート](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023年度 {#2023}
-         + [ 2023.3.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
+         + [リリースノート（2023.3.0）](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
          + [リリースノート（2023.2.0）](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [リリースノート（2023.1.0）](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
       + 2022年度 {#2022}
@@ -179,7 +179,7 @@ ht-degree: 97%
       + [アプリのコンテンツ構造の作成](/help/trials/headless/content-structure.md)
       + [ヘッドレスコンテンツの作成](/help/trials/headless/create-content.md)
       + [GraphQL API を使用したコンテンツの抽出](/help/trials/headless/extract-content.md)
-      + [JavaScript で JSON コンテンツを取得](/help/trials/headless/code-playground.md)
+      + [JavaScript での JSON コンテンツの取得](/help/trials/headless/code-playground.md)
 + AEM as a Cloud Service 移行ジャーニー {#migration-journey}
    + [AEM as a Cloud Service の移動の概要](/help/journey-migration/getting-started.md)
    + [準備段階](/help/journey-migration/readiness.md)

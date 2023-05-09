@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -38,7 +38,7 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
     </tr>
     <tr>
     <td>インタラクティブ画像</td>
-    <td><a href="/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner" target="_blank">画像バナーへのホットスポットの追加</a></td>
+    <td><a href="/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner" target="_blank">画像バナーへのホットスポットの追加</a>.</td>
     </tr>
     <tr>
     <td>インタラクティブビデオ</td>
@@ -46,12 +46,12 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
     </tr>
     <tr>
     <td>カルーセルバナー</td>
-    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">バナーへのホットスポットまたは画像マップの追加</a><br /> </td>
+    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">バナーへのホットスポットまたは画像マップの追加</a>.<br /> </td>
     </tr>
     </tbody>
    </table>
 
-1. ビューアの埋め込みコードを取得し、Web サイトにビューアを統合します。
+1. ビューアの埋め込みコードを取得して、Web サイト内にビューアを統合します。
 
    <table>
     <tbody>
@@ -123,7 +123,7 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
 
-   **関数呼び出し**&#x200B;ハンドラーには、クイックビューを機能させるために関数呼び出しも必要です。この関数は、ホストページからアクセスできることが前提となります。埋め込みコードは、サンプル関数呼び出しを提供します。
+   **関数呼び出し**&#x200B;ハンドラーには、クイックビューを機能させるために関数呼び出しも必要です。関数は、ホストページからアクセス可能であると想定されます。 埋め込みコードは、次のサンプル関数呼び出しを提供しています。
 
    `loadQuickView(sku)`
 
@@ -137,8 +137,8 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
 
 1. 以下の操作を実行してください。
 
-   * 埋め込みコードの setHandlers セクションのコメントアウトを解除します。
-   * クイックビューに含まれる追加変数をマッピングします。
+   * 埋め込みコードの setHandlers セクションのコメントを解除します。
+   * クイックビューに含まれる追加の変数をマッピングします。
 
       * さらに変数を追加する場合は、`loadQuickView(sku,*var1*,*var2*)` 呼び出しを更新します。
    * ビューア外でページにシンプルな `loadQuickView` () 関数を作成します。
@@ -227,9 +227,9 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
    上記のコードでは、以下を行っています。
 
    * カスタムポップアップウィンドウの特定
-   * DOM からの削除
-   * ビューアコンテナの指定
-   * ビューアコンテナへのポップアップのアタッチ
+   * DOM から削除しました。
+   * ビューアのコンテナを識別しました。
+   * ビューアのコンテナにポップアップをアタッチしました。
 
 1. setHandlers コード全体は以下のようになります（インタラクティブビデオビューアを使用しています）。
 

@@ -2,10 +2,10 @@
 title: Query Builder 用のカスタム述語エバリュエーターの実装
 description: AEM の Query Builder を使用すると、コンテンツリポジトリーへのクエリをカスタマイズして簡単に実行できます
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 100%
 
 [Query Builder](query-builder-api.md) を使用すると、コンテンツリポジトリーへのクエリを簡単に実行できます。AEM には、データのクエリに役立つ一連の[述語エバリュエーター](#query-builder-predicates.md)が付属しています。
 
-しかし、カスタム述語エバリュエーターを実装することによって、複雑さを軽減し、セマンティックを向上させて、クエリを単純化することができます。
+ただし、複雑さを軽減し、より良いセマンティックを確保するカスタム述語エバリュエーターを実装することで、クエリを簡略化することもできます。
 
-他にも、カスタム述語では、以下のような XPath では直接実行できないことも実行できます。
+また、カスタム述語は、XPath で直接実行できない他の操作も実行できます。例えば、次の操作を行います。
 
 * 別のサービスからのデータのクエリ
 * 計算に基づくカスタムフィルタリング

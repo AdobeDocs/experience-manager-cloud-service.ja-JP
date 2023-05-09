@@ -23,7 +23,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >**前提条件**
->この節を読む前に、[Screens サービスプロバイダーの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)を参照して、Screens サービスプロバイダーからこのユーザーインターフェイスに移動する方法を確認してください。
+>この節を読む前に、[Screens サービスプロバイダーの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=ja)を参照して、Screens サービスプロバイダーからこのユーザーインターフェイスに移動する方法を確認してください。
 
 次の手順に従って、Screens コンテンツプロバイダーにログインします。
 

@@ -12,7 +12,7 @@ hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
 source-git-commit: 803c4dc44189d58ddbd2669b00dd8107b2a926ae
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3708'
 ht-degree: 100%
 
@@ -222,7 +222,7 @@ _Dynamic Media システム内でのアセットのフロー。_
 
 作成フェーズが完了したら、アセットを Dynamic Media にアップロードすることで、アセットをオーサリングソリューションに配置します。Dynamic Media 内で、サイト上の様々な web ページに適した画像プリセットおよびビューアを準備します。
 
-最終的には、web、印刷、電子メール、デスクトップ、モバイルデバイスで使用できるように、コンテンツをすべて最適化して Dynamic Media サーバーに公開します。
+最終的には、web、印刷、メール、デスクトップ、モバイルデバイスで使用できるように、コンテンツをすべて最適化して Dynamic Media サーバーに公開します。
 
 ### Dynamic Media へのアセットのアップロード
 

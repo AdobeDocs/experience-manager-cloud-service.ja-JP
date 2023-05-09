@@ -5,8 +5,8 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: 8b878a26653874c94a671a404d9b35740e43a514
-workflow-type: ht
+source-git-commit: a641903bf47634cd969f23840c5e6e6fa5a3693b
+workflow-type: tm+mt
 source-wordcount: '1377'
 ht-degree: 100%
 

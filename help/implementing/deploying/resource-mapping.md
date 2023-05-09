@@ -1,6 +1,6 @@
 ---
 title: リソースマッピング
-description: リソースマッピングを使用してリダイレクト、バニティー URL および AEM 用の仮想ホストを定義する方法について説明します。
+description: リソースマッピングを使用して、AEMのリダイレクト、バニティー URL および仮想ホストを定義する方法について説明します。
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
@@ -9,15 +9,15 @@ exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '547'
-ht-degree: 100%
+ht-degree: 77%
 
 ---
 
 # リソースマッピング{#resource-mapping}
 
-リソースマッピングは、リダイレクト、バニティー URL および AEM 用の仮想ホストを定義するために使用します。
+リソースマッピングは、AEMのリダイレクト、バニティー URL および仮想ホストを定義するために使用されます。
 
-例えば、これらのマッピングを使用すると次のことが可能です。
+例えば、これらのマッピングを使用して、次のことをおこなうことができます。
 
 * すべてのリクエストに `/content` というプレフィックスを付けて、web サイトの訪問者に内部構造が表示されないようにする。
 * Web サイトの `/content/en/gateway` ページへのリクエストがすべて `https://gbiv.com/` にリダイレクトされるように、リダイレクトを定義する。
@@ -40,9 +40,9 @@ HTTP マッピングの一例として、`localhost:4503` に対するすべて�
 >
 >詳しくは、Sling のドキュメントと「[Mappings for Resource Resolution](https://sling.apache.org/site/resources.html)」と「[Resources](https://sling.apache.org/site/mappings-for-resource-resolution.html)」を参照してください。
 
-## マッピング定義の確認 {#viewing-mapping-definitions}
+## マッピング定義の表示 {#viewing-mapping-definitions}
 
-マッピングでは 2 つのリストが作成されます。JCR Resource Resolver は、これらのリストを（トップダウン）評価して一致項目を探します。
+このマッピングは、JCR Resource Resolver が（トップダウン）評価して一致を見つける 2 つのリストを形成します。
 
 これらのリストは、Felix コンソールの **JCR ResourceResolver** オプション（例：`https://<*host*>:<*port*>/system/console/jcrresolver`）で（設定情報と一緒に）確認できます。
 
@@ -58,11 +58,11 @@ URL をリソースにマップするために ResourceResolver.resolve メソ�
 * **Mapping Map Entries**
 リソースパスを URL にマップするために ResourceResolver.map メソッドが使用するエントリのリストです。
 
-2 つのリストには、アプリケーションでデフォルトとして定義されたエントリを含む様々なエントリが表示されます。これらのエントリの目的は、多くの場合、ユーザーのために URL を簡略化することです。
+2 つのリストには、アプリケーションでデフォルトとして定義されたエントリを含む、様々なエントリが表示されます。 多くの場合、ユーザーの URL を簡素化することを目的としています。
 
-リストでは、**パターン**（要求に適合する正規表現）と&#x200B;**リプレースメント**（適用するリダイレクトを定義します）がペアになっています。
+リストはペア a **パターン**&#x200B;の場合は、リクエストに一致する正規表現と **代替手段** これは、適用するリダイレクトを定義します。
 
-例えば、次のパターンがあるとします。
+例えば、次のような場合です。
 
 **パターン** `^[^/]+/[^/]+/welcome$`
 
@@ -84,9 +84,9 @@ URL をリソースにマップするために ResourceResolver.resolve メソ�
 >
 >正規表現の定義方法について説明したリソースは多数あります（例：[https://www.regular-expressions.info/](https://www.regular-expressions.info/)）。
 
-### AEM でのマッピング定義の作成 {#creating-mapping-definitions-in-aem}
+### AEMでのマッピング定義の作成 {#creating-mapping-definitions-in-aem}
 
-AEM の標準インストールには、次のフォルダーがあります。
+AEMの標準インストールでは、次のフォルダーを検索できます。
 
 `/etc/map/http`
 

@@ -11,8 +11,8 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
-workflow-type: ht
+source-git-commit: d054f960f13b7308dbf42556ef60a971e880197e
+workflow-type: tm+mt
 source-wordcount: '2598'
 ht-degree: 100%
 

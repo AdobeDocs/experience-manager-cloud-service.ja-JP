@@ -4,8 +4,8 @@ description: ' [!DNL Assets]  と  [!DNL Workfront] の統合の概要'
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 1631ec4b7174c9d98747fe290e21db3839777fcb
-workflow-type: ht
+source-git-commit: 5bcc2e420c1683509e29eba41f5b1847cf2cfa72
+workflow-type: tm+mt
 source-wordcount: '1224'
 ht-degree: 100%
 

@@ -1,19 +1,19 @@
 ---
 title: ページのコンテンツの編集
-description: ページを作成したら、必要な変更をおこなうためにコンテンツを編集できます
+description: ページを作成したら、コンテンツを編集して、必要な更新を行うことができます
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 2bfabfc2c12faf6f813ecd5b11b289117724d9ec
-workflow-type: ht
+source-git-commit: 81d58f25af8b023774ce8653154597d92a7ac70b
+workflow-type: tm+mt
 source-wordcount: '3019'
-ht-degree: 100%
+ht-degree: 63%
 
 ---
 
 # ページのコンテンツの編集 {#editing-page-content}
 
-ページが作成されたら（新規作成、またはローンチやライブコピーの一部として作成）、コンテンツを編集して、必要な更新をおこなうことができます。
+ページが作成されたら（新規またはローンチまたはライブコピーの一部として）、コンテンツを編集して、必要な更新をおこなうことができます。
 
-コンテンツは、ページにドラッグ可能な[コンポーネント](/help/sites-cloud/authoring/features/components-console.md)（コンテンツのタイプに適したもの）を使用して追加されます。コンポーネントはその後、そのまま編集したり、移動や削除をおこなったりすることができます。
+コンテンツを追加するには、 [コンポーネント](/help/sites-cloud/authoring/features/components-console.md) （コンテンツタイプに適した）ページにドラッグできます。 コンポーネントはその後、そのまま編集したり、移動や削除をおこなったりすることができます。
 
 >[!NOTE]
 >
@@ -38,23 +38,23 @@ ht-degree: 100%
 
 ![ページツールバー](/help/sites-cloud/authoring/assets/editing-page-toolbar.png)
 
-ツールバーを使用すると、様々なオプションにアクセスできます。現在のコンテキストと設定によっては、一部のオプションを使用できないことがあります。
+ツールバーを使用すると、多数のオプションにアクセスできます。 現在のコンテキストと設定によっては、一部のオプションを使用できない場合があります。
 
 * **サイドパネルを切り替え**
 
-   サイドパネルが開きます（または閉じます）。このパネルには、[アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)、[コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)および[コンテンツツリー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree)が含まれています。
+   これにより、サイドパネルが開く（または閉じる）ので、 [アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser), [コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)、および [コンテンツツリー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree).
 
    ![サイドパネルの切り替え](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
 * **ページ情報**
 
-   ページの詳細およびページに対して実行できるアクション（ページ情報の表示と編集、ページのプロパティの表示、およびページの公開／非公開など）を含む[ページ情報](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)メニューにアクセスできます。
+   次にアクセスできる [ページ情報](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) ページ上で実行できるページの詳細やアクションを含むメニュー（ページ情報の表示と編集、ページプロパティの表示、ページの公開/非公開を含む）。
 
    ![ページ情報ボタン](/help/sites-cloud/authoring/assets/page-information-icon.png)
 
 * **エミュレーター**
 
-   別のデバイスでのページのルックアンドフィールをエミュレートするために使用する[エミュレーターツールバー](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate)を切り替えます。レイアウトモードでは自動的に切り替わります。
+   を切り替えます。 [エミュレーターツールバー](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate)：別のデバイスでのページのルックアンドフィールをエミュレートするために使用されます。 これは、レイアウトモードで自動的に切り替えられます。
 
    ![エミュレーターボタン](/help/sites-cloud/authoring/assets/emulator.png)
 
@@ -66,25 +66,25 @@ ht-degree: 100%
 
 * **ページタイトル**
 
-   情報のためにのみ表示されます。
+   これは単なる情報です。
 
    ![ページタイトル](/help/sites-cloud/authoring/assets/page-title.png)
 
 * **モードセレクター**
 
-   現在の[モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)が表示され、別のモード（編集、レイアウト、タイムワープ、ターゲット設定など）を選択できます。
+   現在の [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) また、編集、レイアウト、タイムワープ、ターゲット設定など、別のモードを選択することもできます。
 
    ![モードセレクターボタン](/help/sites-cloud/authoring/assets/mode-selector.png)
 
 * **プレビュー**
 
-   [プレビューモード](#preview-mode)を有効にします。公開時に表示されるとおりにページを表示します。
+   有効 [プレビューモード](#preview-mode). 公開時に表示されるページが表示されます。
 
    ![「プレビュー」ボタン](/help/sites-cloud/authoring/assets/preview.png)
 
 * **注釈**
 
-   ページをレビューするときに、ページに[注釈](/help/sites-cloud/authoring/fundamentals/annotations.md)を追加できます。最初の注釈を追加後、アイコンは、ページ上の注釈の数を示す数字に切り替わります。
+   次を追加できます： [注釈](/help/sites-cloud/authoring/fundamentals/annotations.md) をページに追加します。 最初の注釈の後、アイコンはページ上の注釈の数を示す番号に切り替わります。
 
    ![注釈ボタン](/help/sites-cloud/authoring/assets/annotations.png)
 
@@ -98,7 +98,7 @@ ht-degree: 100%
 >
 >ステータスバーは、適切な特権を持つユーザーアカウントにのみ表示されます。
 
-通知には、ページに対して実行されているワークフローが一覧表示されます。ユーザーが現在のワークフローステップに関係している場合は、[ワークフローのステータスに影響する](/help/sites-cloud/authoring/workflows/participating.md)オプションや、ワークフローの詳細を取得するオプションを使用できます。例えば、次のようなものがあります。
+通知には、ページに対して実行されているワークフローが一覧表示されます。 ユーザーが現在のワークフローステップに関与している場合は、次のオプションを選択します。 [ワークフローのステータスに影響を与える](/help/sites-cloud/authoring/workflows/participating.md) また、ワークフローに関する詳細情報も次のように表示されます。
 
 * **完了** - **作業項目を完了**&#x200B;ダイアログを開きます
 * **委任** - **作業項目を完了**&#x200B;ダイアログを開きます
@@ -112,9 +112,9 @@ ht-degree: 100%
 
 ## コンポーネントプレースホルダー {#component-placeholder}
 
-コンポーネントプレースホルダーは、コンポーネントをドロップしたときのコンポーネントの配置場所（現在ポインターを置いているコンポーネントの上）を示します。
+コンポーネントプレースホルダーは、コンポーネントをドロップしたときの位置を示すインジケーターで、現在カーソルを合わせているコンポーネントの上に表示されます。
 
-* ページに新しいコンポーネントを追加する場合（コンポーネントブラウザーからドラッグ）：
+* 新しいコンポーネントをページに追加する場合（コンポーネントブラウザーからドラッグ）:
 
    ![ページに新しいコンポーネントを追加する際のプレースホルダー](/help/sites-cloud/authoring/assets/editing-component-placeholder.png)
 
@@ -135,7 +135,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->モバイルデバイスでは、コンポーネントブラウザーは画面全体に表示されます。コンポーネントをドラッグすると、ブラウザーが閉じて、コンポーネントを配置できるようにページが再び表示されます。
+>モバイルデバイスでは、コンポーネントブラウザーが画面全体に表示されます。 コンポーネントのドラッグを開始すると、ブラウザーが閉じてページが再度表示され、コンポーネントを配置できます。
 
 ### 段落システムからのコンポーネントの挿入 {#inserting-a-component-from-the-paragraph-system}
 
@@ -144,7 +144,7 @@ ht-degree: 100%
 1. ページが&#x200B;[**編集**&#x200B;モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)であることを確認します。
 1. 段落システムから新しいコンポーネントを選択して追加する方法は 2 つあります。
 
-   * 既存のコンポーネントのツールバーまたは「**コンポーネントをここにドラッグ**」ボックスから&#x200B;**コンポーネントを挿入**&#x200B;オプション（+）を選択します。
+   * を選択します。 **コンポーネントを挿入** オプション (+) を既存のコンポーネントのツールバーまたは **ここにコンポーネントをドラッグ** ボックス
 
       ![コンポーネントの挿入](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
@@ -158,25 +158,25 @@ ht-degree: 100%
 
 ### アセットブラウザーを使用したコンポーネントの挿入 {#inserting-a-component-using-the-assets-browser}
 
-[アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)からアセットをドラッグして、ページに新しいコンポーネントを追加することもできます。この操作により、適切なタイプの新しいコンポーネント（アセットが格納される）が自動的に作成されます。
+また、ページに新しいコンポーネントを追加するには、 [アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). これにより、適切なタイプ（およびアセットを含む）の新しいコンポーネントが自動的に作成されます。
 
 この動作は使用しているインストール環境で設定できます。詳しくは、「アセットをドラッグするとコンポーネントインスタンスが作成されるように段落システムを設定」を参照してください。<!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
 
 前述のいずれかのアセットタイプをドラッグしてコンポーネントを作成するには：
 
 1. ページが&#x200B;[**編集**&#x200B;モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)であることを確認します。
-1. [アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)を開きます。
-1. 必要なアセットを必要な位置までドラッグします。[コンポーネントプレースホルダー](#component-placeholder)にコンポーネントの配置先が表示されます。
+1. を開きます。 [アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
+1. 必要なアセットを必要な位置までドラッグします。 この [コンポーネントプレースホルダー](#component-placeholder) コンポーネントを配置する場所を示します。
 
-   アセットタイプに適したコンポーネントが、必要な場所に作成されます。これには選択したアセットが含まれます。
+   アセットタイプに適したコンポーネントが必要な場所に作成され、選択したアセットが格納されます。
 
-1. 必要に応じて、コンポーネントを[編集](#edit-content)します。
+1. [編集](#edit-content) 必要に応じて、コンポーネントを選択します。
 
 >[!NOTE]
 >
->モバイルデバイスでは、アセットブラウザーは画面全体に表示されます。アセットをドラッグすると、ブラウザーが閉じて、アセットを配置できるようにページが再び表示されます。
+>モバイルデバイスでは、アセットブラウザーが画面全体に表示されます。 アセットのドラッグを開始すると、ブラウザーが閉じてページが再度表示され、アセットを配置できます。
 
-アセットを参照したとき、アセットをすぐに変更する必要があることに気づいた場合は、アセット名の横にある編集アイコンをクリックすると、ブラウザーから直接[アセットエディター](/help/assets/manage-digital-assets.md)を開始できます。
+アセットを参照したときに、アセットをすばやく変更する必要があることに気づいた場合は、 [アセットエディター](/help/assets/manage-digital-assets.md) ブラウザーから直接アセット名の横にある編集アイコンをクリックします。
 
 ![アセット編集ボタン](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
@@ -202,45 +202,45 @@ ht-degree: 100%
 
 * **コピー**
 
-   コンポーネントをクリップボードにコピーします。貼り付け後も、元のコンポーネントは残ります。
+   これにより、コンポーネントがクリップボードにコピーされます。 貼り付け操作の後も、元のコンポーネントは保持されます。
 
    ![コピーボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-copy.png)
 
 * **切り取り**
 
-   コンポーネントをクリップボードにコピーします。貼り付け後、元のコンポーネントは削除されます。
+   これにより、コンポーネントがクリップボードにコピーされます。 貼り付け操作の後、元のコンポーネントは削除されます。
 
    ![切り取りボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-cut.png)
 
 * **削除**
 
-   確認後に、ページからコンポーネントを削除します。
+   これにより、確認を含むページからコンポーネントが削除されます。
 
    ![削除ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-delete.png)
 
 * **コンポーネントの挿入**
 
-   [新しいコンポーネントを追加](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-from-the-paragraph-system)するためのダイアログが開きます。
+   これにより、次のダイアログが開きます。 [新しいコンポーネントを追加](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
    ![挿入ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-insert.png)
 
 * **貼り付け**
 
-   クリップボードにコピーしたコンポーネントをページに貼り付けます。元のコンポーネントが残るかどうかは、コピーするか、切り取るかによって決まります。
+   これにより、コンポーネントがクリップボードからページに貼り付けられます。 オリジナルが残るかどうかは、コピーを使用したか切り取ったかによって異なります。
 
-   * 同じページ、または別のページに貼り付けることができます。
-   * 項目は、貼り付けアクションを選択した項目の上に貼り付けられます。
+   * 同じページまたは別のページに貼り付けることができます。
+   * 貼り付けられた項目は、貼り付けアクションを選択した項目の上に貼り付けられます。
    * 貼り付けアクションは、クリップボードにコンテンツがある場合にのみ表示されます。
 
    ![貼り付けボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
 
    >[!NOTE]
    >
-   >切り取り／コピー操作の前に既に開いていた別のページに貼り付ける場合は、ページを更新して、貼り付けたコンテンツを表示する必要があります。
+   >切り取り/コピー操作の前に開いていた別のページに貼り付ける場合は、ページを更新して、貼り付けたコンテンツを表示する必要があります。
 
 * **グループ**
 
-   複数のコンポーネントを一度に選択できます。デスクトップデバイスで同じ操作をおこなうには、**Ctrl キーを押しながらクリック**&#x200B;するか、または **Command キーを押しながらクリック**&#x200B;します。
+   これにより、複数のコンポーネントを一度に選択できます。 デスクトップデバイスで同じ操作をおこなうには、**Ctrl キーを押しながらクリック**&#x200B;するか、または **Command キーを押しながらクリック**&#x200B;します。
 
    ![グループボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
 
@@ -252,7 +252,7 @@ ht-degree: 100%
 
 * **レイアウト**
 
-   選択したコンポーネントの[レイアウト](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)を変更できます。選択したコンポーネントにのみ適用され、ページ全体の[レイアウトモード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)はアクティブ化されません。
+   これにより、 [レイアウト](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) 選択したコンポーネントの。 これは、選択したコンポーネントにのみ適用され、 [レイアウトモード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) ページ全体に対して
 
    ![レイアウトボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
@@ -266,10 +266,10 @@ ht-degree: 100%
 
 コンポーネント内のコンテンツを追加または編集するには、次の 2 つの方法があります。
 
-* [編集用のコンポーネントのダイアログ](#component-edit-dialog)を開きます。
-* アセットブラウザーから[アセットをドラッグ＆ドロップ](#drag-and-drop-assets-into-component)して、コンテンツを直接追加します。
+* を開きます。 [編集用のコンポーネントダイアログ](#component-edit-dialog).
+* [アセットをドラッグ&amp;ドロップ](#drag-and-drop-assets-into-component) アセットブラウザーからコンテンツを直接追加します。
 
-### コンポーネントの編集ダイアログ {#component-edit-dialog}
+### コンポーネント編集ダイアログ {#component-edit-dialog}
 
 [コンポーネントツールバーの編集（鉛筆）アイコン](#component-toolbar)を使用して、コンポーネントを開いてコンテンツを編集できます。
 
@@ -289,7 +289,7 @@ ht-degree: 100%
    >
    >画像を編集するには、まず、画像をコンポーネントにドラッグまたはアップロードする必要があります。
 
-* 画像コンポーネント - 全画面
+* 画像コンポーネント — 全画面表示
 
    画像コンポーネント[の全画面表示モードに入ると](#edit-content-full-screen-mode)、画像を編集する領域が広くなり、追加の編集オプション（「**マップを起動**」や「**ズームをリセット**」など）が表示されます。また、全画面表示では切り抜きプリセットを選択できます。
 
@@ -319,8 +319,8 @@ ht-degree: 100%
 
 段落コンポーネントを移動するには：
 
-1. タップ＆ホールドまたはクリック＆ホールドによって移動する段落を選択します。
-1. 段落を新しい場所にドラッグします。段落を配置できる場所が示されます。目的の場所にドロップします。
+1. タップ&amp;ホールドまたはクリック&amp;ホールドで移動する段落を選択します。
+1. 段落を新しい場所にドラッグします。 AEMは、段落を預ける場所を示します。 目的の場所にドロップします。
 
    ![コンポーネントの移動](/help/sites-cloud/authoring/assets/editing-moving-component.png)
 
@@ -342,11 +342,11 @@ ht-degree: 100%
 
    ![コンポーネントツールバーのレイアウトボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
-1. レイアウトアクションを選択すると、
+1. 「Layout」アクションを選択したら、次の操作を実行します。
 
    * コンポーネントのサイズ変更ハンドルが表示されます。
-   * エミュレーターツールバーが画面の上部に表示されます。
-   * 標準の編集アクションの代わりにレイアウトアクションが、コンポーネントツールバーに表示されます。
+   * 画面の上部にエミュレーターツールバーが表示されます。
+   * 標準の編集アクションの代わりにレイアウトアクションがコンポーネントツールバーに表示されます。
 
    ![レイアウトモードのコンポーネント](/help/sites-cloud/authoring/assets/editing-layout-mode.png)
 
@@ -395,10 +395,10 @@ ht-degree: 100%
 
 ## ライブコピーステータス {#live-copy-status}
 
-[ライブコピーステータスページモード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)では、ライブコピーのステータスの簡単な概要、および継承される（または継承されない）コンポーネントを示すことができます。
+この [ライブコピーステータスページモード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) ライブコピーのステータスと継承される（または継承されない）コンポーネントの概要を簡単に確認できます。
 
-* 緑のボーダー：継承
-* ピンクのボーダー：継承がキャンセルされている
+* 緑の境界線：継承
+* ピンクの境界線：継承がキャンセルされました
 
 次に例を示します。
 
@@ -406,18 +406,18 @@ ht-degree: 100%
 
 ## 注釈の追加 {#adding-annotations}
 
-[注釈](/help/sites-cloud/authoring/fundamentals/annotations.md)を使用すると、レビュー担当者や他の作成者がコンテンツに関するフィードバックを提供できます。注釈は、レビューや検証の目的でよく使用されます。
+[注釈](/help/sites-cloud/authoring/fundamentals/annotations.md) レビュー担当者や他の作成者がコンテンツに関するフィードバックを提供することを許可します。 多くの場合、レビューや検証の目的で使用されます。
 
 ## ページのプレビュー {#previewing-pages}
 
 ページをプレビューするには、以下の 2 つの方法があります。
 
 * [プレビューモード](#preview-mode) - その場ですばやく確認できるプレビュー
-* [公開済みとして表示](#view-as-published) - ページを新しいタブに開くフルプレビュー
+* [公開済みとして表示](#view-as-published)  — ページを新しいタブで開く完全なプレビュー
 
 >[!TIP]
 >
->* コンテンツ内のリンクは表示されますが、編集モードでアクセスすることはできません。
+>* コンテンツ内のリンクは表示されますが、編集モードではアクセスできません。
 >* リンクを使用して移動する場合には、いずれかのプレビューオプションを使用してください。
 >* プレビューと最後に選択したモードを切り替えるには、[キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` を使用します。
 
@@ -428,37 +428,37 @@ ht-degree: 100%
 
 ### プレビューモード {#preview-mode}
 
-コンテンツの編集時に、プレビュー[モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)を使用してページをプレビューすることができます。このモードでは、次の操作を実行できます。
+コンテンツの編集時に、プレビューを使用してページをプレビューできます [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes). このモード：
 
 * 各種編集メカニズムを非表示にして公開時にページがどのように表示されるかをすばやく確認できます。
 * リンクを使用して移動できます。
-* ページコンテンツは更新&#x200B;**されません**。
+* 実行 **not** ページコンテンツを更新します。
 
-オーサリング時に、ページエディターの右上にある次のアイコンを使用して、プレビューモードに切り替えることができます。
+オーサリング時には、ページエディターの右上にある次のアイコンを使用してプレビューモードを使用できます。
 
 ![「プレビュー」ボタン](/help/sites-cloud/authoring/assets/preview.png)
 
 ### 公開済みとして表示 {#view-as-published}
 
-「**公開済みとして表示**」オプションは、[ページ情報](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)メニューで使用できます。これによりページが新しいタブで開き、コンテンツが更新され、ページがパブリッシュ環境で表示されるとおりに表示されます。
+この **公開済みとして表示** オプションは、 [ページ情報](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) メニュー これにより、新しいタブでページが開き、コンテンツが更新され、ページがパブリッシュ環境で表示されるとおりに表示されます。
 
 ## ページのロック {#locking-a-page}
 
 AEM では、他のユーザーによるコンテンツの変更を防ぐためにページをロックすることができます。ページのロックは、1 つの特定のページで大量の編集作業をおこなう場合や、短期間ページを凍結する必要がある場合に便利です。
 
-ページは次のいずれかの場所からロックできます。
+ページは次のいずれかからロックできます。
 
-* **サイト**&#x200B;コンソール
+* **サイト** コンソール
 
-   1. [選択モード](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)でページを選択します。
+   1. を含むページを選択します。 [選択モード](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
    1. ロックアイコンを選択します。
 
       ![「ロック」ボタン](/help/sites-cloud/authoring/assets/lock.png)
 
 * **ページエディター**
 
-   1. **ページ情報**&#x200B;アイコンを選択して、メニューを開きます。
-   1. 「**ページをロック**」オプションを選択します。
+   1. を選択します。 **ページ情報** アイコンをクリックしてメニューを開きます。
+   1. を選択します。 **ページをロック** オプション。
 
 ロックすると、コンソール表示の情報が更新され、編集時にロック記号がツールバーに表示されます。
 
@@ -522,24 +522,24 @@ AEM では、ユーザーが実行するアクションの履歴と、それら�
 
 コンテンツページで要素（テキストコンポーネントなど）が選択されている場合、取り消しコマンドとやり直しコマンドは選択した項目に適用されます。
 
-取り消しコマンドとやり直しコマンドの動作は、他のソフトウェアの場合と同様です。これらのコマンドを使用すると、コンテンツに関する決定をおこなう中で、Web ページの最新の状態に復元できます。例えば、テキスト段落をページ上の別の場所に移動した場合に、取り消しコマンドを使用して、その段落を元の場所に戻すことができます。前の場所のほうがいい場合は、やり直しコマンドを使用して「取り消しを取り消し」ます。
+取り消しコマンドとやり直しコマンドの動作は、他のソフトウェアの場合と同様です。これらのコマンドを使用すると、コンテンツに関する決定をおこなう中で、Web ページの最新の状態に復元できます。例えば、テキスト段落をページ上の別の場所に移動した場合に、取り消しコマンドを使用して、その段落を元の場所に戻すことができます。その後、前の位置の方が良いと判断した場合は、やり直しコマンドを使用して「元に戻す」操作を元に戻します。
 
 例えば、次のことができます。
 
-* 取り消しを使用してからページの編集をおこなっていない限り、アクションをやり直すことができます。
-* 最大 20 回の編集アクションを取り消すことができます（デフォルト設定）。
-* 様々な[キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)を利用して取り消しとやり直しをおこなうこともできます。
+* 取り消しを使用してからページの編集を行っていない限り、操作をやり直します。
+* 最大 20 個の編集アクションを取り消します（デフォルト設定）。
+* また、 [キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) 元に戻す/やり直しの場合。
 
-取り消しおよびやり直しは、次のようなページの変更に対して使用できます。
+取り消しとやり直しは、次のタイプのページの変更に対して使用できます。
 
 * 段落の追加、編集、削除および移動
 * 段落コンテンツのインプレース編集
-* ページ内部での項目のコピー、カットおよび貼り付け
+* ページ内の項目のコピー、切り取り、貼り付け
 
 >[!NOTE]
 >
 >* ファイルと画像に対する変更の取り消しおよびやり直しには、特別な権限が必要になります。
->* ファイルや画像への変更の履歴は、少なくとも 10 時間維持されます。この時間を経過すると、変更の取り消しは保証されません。管理者はデフォルトの 10 時間を変更できます。
+>* ファイルおよび画像に対する変更の履歴は、少なくとも 10 時間保持されます。 ただし、これ以降は、変更の取り消しは保証されません。 管理者は、デフォルトの 10 時間を変更できます。
 >* システム管理者は、インスタンスの要件に従って取り消しおよびやり直し機能の様々な面を設定できます。
+   <!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->
 
-<!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->

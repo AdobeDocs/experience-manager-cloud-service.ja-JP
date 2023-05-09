@@ -7,8 +7,8 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 4416c43b408f576a547590796141a6b551e25681
-workflow-type: ht
+source-git-commit: d9c19d0b567a9a97973c4c4e25e64722da109dbb
+workflow-type: tm+mt
 source-wordcount: '1335'
 ht-degree: 100%
 

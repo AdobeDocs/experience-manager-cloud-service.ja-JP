@@ -2,8 +2,8 @@
 title: 登録、ログイン、ユーザープロファイル
 description: AEM as a Cloud Service の登録、ログイン、ユーザーデータおよびグループ同期について説明します
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: ht
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ Web アプリケーションは、多くの場合、Web サイトへの登録用
    1. UserManager API の `findAuthorizables()` メソッドの 1 つを使用して、既存のユーザーが存在しないことを確認します。
    1. UserManager API の `createUser()` メソッドの 1 つを使用して、ユーザーレコードを作成します。
    1. Authorizable インターフェイスの `setProperty()` メソッドを使用して、キャプチャされたプロファイルデータを永続化します。
-1. ユーザーに電子メールの検証を求めるなどの、オプションのフロー。
+1. ユーザーにメールの検証を求めるなどの、オプションのフロー。
 
 ### 外部 web アプリケーション {#external-managed-registration}
 

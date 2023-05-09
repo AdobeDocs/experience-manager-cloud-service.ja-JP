@@ -1,11 +1,11 @@
 ---
 title: CSV ファイルへの書き出し
-description: ページの情報をローカルシステムの CSV ファイルに書き出します
+description: ページに関する情報をローカルシステムの CSV ファイルに書き出す
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 * 書き出すプロパティ
    * メタデータ
       * 名前
-      * 変更済み
+      * 変更
       * 公開済み
       * テンプレート
       * ワークフロー
@@ -56,6 +56,6 @@ CSV の書き出しファイルを作成するには、次の手順を実行し�
 
    ![CSV 書き出しオプション](/help/sites-cloud/authoring/assets/csv-options.png)
 
-1. 書き出す必要があるプロパティを選択します。
+1. 書き出す必要のあるプロパティを選択します。
 1. 「**作成**」を選択します。
    ![CSV への書き出しで生成された Excel ファイル](/help/sites-cloud/authoring/assets/csv-example.png)

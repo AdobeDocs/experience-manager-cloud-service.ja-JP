@@ -4,10 +4,10 @@ description: 使用できる強力なライブコピー同期オプションと�
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '2337'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Manager には、そのまま使用できる多数の同期設�
 
 ### ロールアウトトリガー {#rollout-triggers}
 
-各ロールアウト設定では、ロールアウトトリガーを使用してロールアウトを発生させます。ロールアウト設定では、以下のいずれかのトリガーを使用できます。
+各ロールアウト設定は、ロールアウトトリガーを使用してロールアウトを発生させます。 ロールアウト設定では、次のいずれかのトリガーを使用できます。
 
 * **ロールアウト時**：**ロールアウト**&#x200B;コマンドがブループリントページで使用されます。または&#x200B;**同期**&#x200B;コマンドがライブコピーページで使用されます。
 * **変更時**：ソースページが変更されます。
@@ -50,12 +50,12 @@ If the installed rollout configuration actions do not meet your requirements, yo
 
 | 名前 | 説明 | トリガー | [同期アクション](#synchronization-actions) |
 |---|---|---|---|
-| 標準のロールアウト設定 | ロールアウトトリガーでロールアウトプロセスを開始するのを許可したり、アクション（コンテンツの作成、更新、削除や子ノードの整理）を実行したりする標準のロールアウト設定です。 | ロールアウト時 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`productUpdate`<br>`orderChildren` |
+| 標準ロールアウト設定 | ロールアウトトリガーでロールアウトプロセスを開始するのを許可したり、アクション（コンテンツの作成、更新、削除や子ノードの整理）を実行したりする標準のロールアウト設定です。 | ロールアウト時 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`productUpdate`<br>`orderChildren` |
 | ブループリントのアクティベート時にアクティベート | ソースが公開されたときにライブコピーを公開します。 | アクティベート時 | `targetActivate` |
 | ブループリントのアクティベート解除時にアクティベート解除 | ソースがアクティベート解除されたときにライブコピーをアクティベート解除します。 | アクティベート解除時 | `targetDeactivate` |
 | 変更時にプッシュ | ソースが変更されたときに、ライブコピーにコンテンツをプッシュします。<br>このロールアウト設定は慎重に使用してください（「変更時」トリガーを使用するので）。 | 変更時 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren` |
 | 変更時にプッシュ（シャロー） | ブループリントページが変更された場合に、参照を更新せずにコンテンツをライブコピーにプッシュします（シャローコピーの場合など）。<br>このロールアウト設定は、変更時トリガーを使用するため、慎重に使用してください。 | 変更時 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
-| ローンチを昇格 | ローンチページを昇格するための標準のロールアウト設定。 | ロールアウト時 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
+| ローンチを昇格 | ローンチページを昇格するための標準ロールアウト設定です。 | ロールアウト時 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
 
 ### 同期アクション {#synchronization-actions}
 
@@ -100,9 +100,9 @@ The new rollout configuration is then available to you when configuring rollout 
 
 AEM と連携する場合は、いくつかの方法でこのようなサービスの設定を管理できます。詳細および推奨事項については、[OSGi の設定](/help/implementing/deploying/configuring-osgi.md)を参照してください。
 
-以下の表は、除外するノードを指定できる同期アクションを示しています。この表には、Web コンソールを使用して設定する場合のサービスの名前とリポジトリーノードを使用して設定する場合の PID が示されています。
+次の表に、除外するノードを指定できる同期アクションを示します。 この表には、Web コンソールを使用して設定する場合のサービスの名前とリポジトリーノードを使用して設定する場合の PID が示されています。
 
-| 同期アクション | Web コンソールでのサービス名 | サービス PID |
+| 同期アクション | Web コンソールのサービス名 | サービス PID |
 |---|---|---|
 | `contentCopy` | CQ MSM Content Copy Action | `com.day.cq.wcm.msm.impl.actions.ContentCopyActionFactory` |
 | `contentDelete` | CQ MSM Content Delete Action | `com.day.cq.wcm.msm.impl.actions.ContentDeleteActionFactory` |
@@ -112,7 +112,7 @@ AEM と連携する場合は、いくつかの方法でこのようなサービ�
 
 次の表は、設定可能なプロパティを示しています。
 
-| Web コンソールのプロパティ | OSGi のプロパティ | 説明 |
+| Web コンソールのプロパティ | OSGi プロパティ | 説明 |
 |---|---|---|
 | Excluded Nodetypes | `cq.wcm.msm.action.excludednodetypes` | 同期アクションから除外するノードタイプに一致する正規表現 |
 | Excluded Paragraph Items | `cq.wcm.msm.action.excludedparagraphitems` | 同期アクションから除外する段落項目に一致する正規表現 |
@@ -121,9 +121,9 @@ AEM と連携する場合は、いくつかの方法でこのようなサービ�
 
 #### CQ MSM Content Update Action - 除外 {#cq-msm-content-update-action-exclusions}
 
-いくつかのプロパティやノードタイプはデフォルトで除外されています。これらは **CQ MSM Content Update Action** の OSGi の設定の、**Excluded Page Properties** の下に定義されています。
+いくつかのプロパティとノードタイプは、デフォルトで除外されます。これらは、の OSGi 設定で定義されます。 **CQ MSM Content Update Action**&#x200B;の下 **除外されたページのプロパティ**.
 
-デフォルトでは、次の正規表現に一致するプロパティがロールアウト時に除外されます（更新されません）。
+デフォルトでは、次の正規表現に一致するプロパティは、ロールアウト時に除外されます（つまり、更新されません）。
 
 ![ライブコピーの除外の正規表現](../assets/live-copy-exclude.png)
 
@@ -139,11 +139,11 @@ AEM と連携する場合は、いくつかの方法でこのようなサービ�
 
 AEM と連携する場合は、いくつかの方法でこのようなサービスの設定を管理できます。詳細および推奨事項については、[OSGi の設定](/help/implementing/deploying/configuring-osgi.md)を参照してください。
 
-次の表は、参照の更新を指定できる同期アクションを示します。この表には、Web コンソールを使用して設定する場合のサービスの名前とリポジトリーノードを使用して設定する場合の PID が示されています。
+次の表に、参照の更新を指定できる同期アクションを示します。 この表には、Web コンソールを使用して設定する場合のサービスの名前とリポジトリーノードを使用して設定する場合の PID が示されています。
 
-| Web コンソールのプロパティ | OSGi のプロパティ | 説明 |
+| Web コンソールのプロパティ | OSGi プロパティ | 説明 |
 |---|---|---|
-| Update Reference across nested LiveCopies | `cq.wcm.msm.impl.action.referencesupdate.prop_updateNested` | 最上位ライブコピーのブランチ内にあるリソースをターゲットとする参照を置き換えるには、Web コンソールでこのオプションを選択するか、リポジトリー設定を使用してこのブール値プロパティを `true` に設定します。`referencesUpdate` アクションでのみ使用可能です。 |
+| ネストされたライブコピーの参照を更新 | `cq.wcm.msm.impl.action.referencesupdate.prop_updateNested` | 最上位ライブコピーのブランチ内にあるリソースをターゲットとする参照を置き換えるには、Web コンソールでこのオプションを選択するか、リポジトリー設定を使用してこのブール値プロパティを `true` に設定します。`referencesUpdate` アクションでのみ使用可能です。 |
 | Update Referencing Pages | `cq.wcm.msm.impl.actions.pagemove.prop_referenceUpdate` | 元のページを使用する参照を、ライブコピーページを参照するように更新するには、Web コンソールでこのオプションを選択するか、リポジトリー設定を使用してこのブール値プロパティを `true` に設定します。`PageMoveAction` でのみで使用可能です。 |
 
 ## 使用するロールアウト設定の指定 {#specifying-the-rollout-configurations-to-use}
@@ -157,7 +157,7 @@ MSM を使用すると、通常使用するロールアウト設定のセット�
 * **ライブコピーの親ページプロパティ：**&#x200B;ライブコピーページもブループリントのソースページもロールアウト設定を使用して設定されない場合は、ライブコピーページの親ページに適用されるロールアウト設定が使用されます。
 * **[システムのデフォルト](live-copy-sync-config.md#setting-the-system-default-rollout-configuration)：**&#x200B;ライブコピーの親ページのロールアウト設定を特定できない場合は、システムのデフォルトのロールアウト設定が使用されます。
 
-例えば、ブループリントで [WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)サイトをソースコンテンツとして使用しているとします。サイトはブループリントから作成されます。次のリスト内の各項目は、ロールアウト設定の使用に関する様々なシナリオを示しています。
+例えば、ブループリントで [WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)サイトをソースコンテンツとして使用しているとします。ブループリントからサイトが作成されます。 次のリストの各項目では、ロールアウト設定の使用に関する様々なシナリオについて説明します。
 
 * どのブループリントページまたはライブコピーページもロールアウト設定を使用するように設定されていない。この場合、MSM では、システムのデフォルトのロールアウト設定をすべてのライブコピーページに使用します。
 * WKND サイトのルートページが複数のロールアウト設定を使用して設定されている。この場合、MSM では、これらのロールアウト設定をすべてのライブコピーページに使用します。
@@ -179,7 +179,7 @@ MSM を使用すると、通常使用するロールアウト設定のセット�
 
 1. 必要に応じて、「**ライブコピーの継承**」フラグを変更します。オンにした場合、ライブコピー設定がすべての子で有効になります。
 
-1. 「**ロールアウト設定を親から継承**」プロパティをオフにして、1 つ以上のロールアウト設定をリストから選択します。
+1. をクリア **ロールアウト設定を親から継承** プロパティを選択し、リストから 1 つ以上のロールアウト設定を選択します。
 
    選択したロールアウト設定がドロップダウンリストの下に表示されます。
 
@@ -189,9 +189,9 @@ MSM を使用すると、通常使用するロールアウト設定のセット�
 
 ### ブループリントページ用のロールアウト設定の指定 {#setting-the-rollout-configuration-for-a-blueprint-page}
 
-ブループリントページがロールアウトされる場合に使用するロールアウト設定を使用してブループリントページを設定します。
+ブループリントページがロールアウトされる際に使用するロールアウト設定を含むブループリントページを設定します。
 
-ブループリントページの子ページがその設定を継承します。使用するロールアウト設定を指定する場合は、ページがその親から継承する設定を上書きできます。
+ブループリントページの子ページは設定を継承します。 使用するロールアウト設定を設定する際に、ページが親から継承する設定を上書きできます。
 
 1. **サイト**&#x200B;コンソールを使用してブループリントのルートページを選択します。
 1. ツールバーの「**プロパティ**」を選択します。

@@ -10,7 +10,7 @@ discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '480'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
 
-`guidelib.dataIntegrationUtils.executeOperation` API の構造は、サービス操作の詳細を指定します。この構造の構文は以下のとおりです。
+`guidelib.dataIntegrationUtils.executeOperation` API の構造は、サービス操作の詳細を指定します。構造の構文は次のとおりです。
 
 ```javascript
 var operationInfo = {
@@ -49,7 +49,7 @@ outputFieldN
 }
 ```
 
-API 構造は、サービス操作の以下の詳細を指定します。
+API 構造では、サービス操作に関する次の詳細を指定します。
 
 <table>
  <tbody>

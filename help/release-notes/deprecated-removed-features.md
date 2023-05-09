@@ -5,7 +5,7 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: 459e6cbf91f9b7f995bd1fd9c8758962c41c9341
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 98%
 | [!DNL Foundation] | Apache Sling データソースのサポート（OSGi バンドル org.apache.sling.datasource） | 該当なし | 削除済み |
 | [!DNL Foundation] | JST スクリプティングテンプレートのサポート（OSGi バンドル org.apache.sling.scripting.jst） | 該当なし | 削除済み |
 | [!DNL Foundation] | Apache Felix Http Whiteboard のサポート | OSGi Http Whiteboard | 2022年3月 |
-| [!DNL Foundation] | com.adobe.granite.oauth.server のサポート | Adobe IMS統合 | 2023 年 3 月 |
+| [!DNL Foundation] | com.adobe.granite.oauth.server のサポート | Adobe IMS統合 | 2023年3月日（PT） |
 
 
 ## Java API {#java-api}

@@ -1,9 +1,10 @@
 ---
-title: サーバー側 API のアクセストークンの生成（レガシー）
+title: サーバーサイド API のアクセストークンの生成（レガシー）
 description: セキュアな JWT トークンを生成してサードパーティサーバーと AEM as a Cloud Service の間の通信を容易にする方法について説明します。
 hidefromtoc: true
-source-git-commit: aad1033828e400aaf4d9418f8e57afb61f05eecc
-workflow-type: ht
+exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+workflow-type: tm+mt
 source-wordcount: '1438'
 ht-degree: 100%
 

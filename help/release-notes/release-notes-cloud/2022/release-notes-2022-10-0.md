@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 リリースのリリースノート。'
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '850'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
-
 
 # 2022.10.0リリースノート： [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -93,7 +93,7 @@ ht-degree: 94%
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager の毎月のリリースの完全なリストを確認できます [こちら。](/help/implementing/cloud-manager/release-notes/current.md)
+Cloud Manager の月次リリースの完全なリストは、 [こちら](/help/implementing/cloud-manager/release-notes/current.md)で確認できます。
 
 ## 移行ツール {#migration-tools}
 

@@ -4,8 +4,8 @@ description: ' [!DNL AEM Forms]  as a Cloud Service 環境のセットアップ�
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 source-git-commit: 4d91808aa46cf34772a88a2864c1e3acf27102f7
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 100%
+source-wordcount: '614'
+ht-degree: 95%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 ## ペルソナの決定 {#personas-aem-forms-project}
 
-<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Before onboarding to an [!DNL AEM Forms] as a Cloud Service environment, decide personas and structure a team for your project. A typical [!DNL AEM Forms] project team has the following personas:
+<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> にオンボーディングする前に [!DNL AEM Forms] as a Cloud Serviceの環境では、ペルソナを決定し、プロジェクトのチームを構築します。 典型的な [!DNL AEM Forms] プロジェクトチームには次のペルソナがあります。
 
 * **ユーザーエクスペリエンス（UX）デザイナー**：ユーザーエクスペリエンス（UX）デザイナーは、[!DNL AEM Forms] のアセットのスタイル、レイアウト、ブランディングを定義します。
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 * **Forms 開発者**：Forms 開発者は、カスタムフォームソリューションを開発します。Forms 開発者は、通常、カスタムコンポーネント、AEM ワークフロー、事前入力サービスなどのバックエンド開発を担当します。
 
-* **AEM 管理者**：AEM 管理者は、ユーザーの設定、環境の堅牢化、データソースの設定、電子メールの設定、サードパーティ製ソフトウェアなど、全体的な設定を支援します。AEM 管理者は、Adobe Analytics、Adobe Target、Adobe Sign との統合なども支援します。
+* **AEM 管理者**：AEM 管理者は、ユーザーの設定、環境の堅牢化、データソースの設定、メールの設定、サードパーティ製ソフトウェアなど、全体的な設定を支援します。AEM 管理者は、Adobe Analytics、Adobe Target、Adobe Sign との統合なども支援します。
 
 * **エンドユーザー**：エンドユーザーは、公開されたフォームとやり取りして送信し、送信されたフォームに署名し、送信された申請を Web ポータル経由でトラックし、パーソナライズされたコミュニケーションを受信します。
 
@@ -39,7 +39,7 @@ ht-degree: 100%
 
 * （サンドボックスのみ）サービスにオンボードした後、[作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=ja#how-to-use)と[実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja)は、実稼働用と非実稼働用の両方のパイプラインを実行します。[!DNL AEM Forms] as a Cloud Service の最新機能を有効にし、環境に提供します。
 
-Forms as a Cloud Service を使用してアダプティブフォーム（デジタル登録）を作成したり、顧客通信を生成したりできます。[!DNL Adobe Experience Manager] as a Cloud Service の[オンボーディング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html)完了後、次のいずれかの操作を実行して、デジタル登録またはカスタマーコミュニケーション機能を有効にします。また、次の両方の機能を有効にすることもできます。
+Forms as a Cloud Service を使用してアダプティブフォーム（デジタル登録）を作成したり、顧客通信を生成したりできます。[!DNL Adobe Experience Manager] as a Cloud Service の[オンボーディング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=ja)完了後、次のいずれかの操作を実行して、デジタル登録またはカスタマーコミュニケーション機能を有効にします。また、次の両方の機能を有効にすることもできます。
 
 1. Cloud Manager にログインし、AEM Forms as a Cloud Service インスタンスを開きます。
 

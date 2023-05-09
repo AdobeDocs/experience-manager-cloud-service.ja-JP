@@ -5,7 +5,7 @@ exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
 source-wordcount: '1190'
-ht-degree: 69%
+ht-degree: 64%
 
 ---
 
@@ -42,17 +42,17 @@ AEM Developer Tools を使用する前に、次の作業が必要です。
 
 1. [AEM 開発者ツールの web サイト](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip)を開きます。 <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
-1. **インストール用リンク**&#x200B;をコピーします。
+1. を **インストールリンク**.
 
    または、インストールリンクを使用する代わりにアーカイブをダウンロードできます。 この方法ではオフラインインストールが可能ですが、自動アップデート通知は受けられません。
 
-1. Eclipse で、**Help** メニューを開きます。
-1. 「**Install New Software**」をクリックします。
-1. 「**Add...**」をクリックします。
+1. Eclipse で、 **ヘルプ** メニュー
+1. クリック **新しいソフトウェアのインストール**.
+1. クリック **追加…**.
 1. 内 **名前** フィールドに入力 `AEM Developer Tools`.
 1. 内 **場所** 「 」フィールドで、インストール URL をコピーします。
 1. 「**Add**」をクリックします。
-1. 「**AEM**」プラグインと「**Sling**」プラグインの両方をオンにします。
+1. 両方を選択 **AEM** および **Sling** プラグイン
 1. 「**Next**」をクリックします。
 1. **Install Details** ウィンドウで、「**Next**」を再度クリックします。
 1. 使用許諾契約書に同意し、「**Finish**」をクリックします。
@@ -73,9 +73,9 @@ _Eclipse 用Experience Manager開発ツール_ AEMプロジェクトとインス
 
 この _Eclipse のExperience Manager開発者ツール_ には、Eclipse でのプロジェクト設定をすばやく習得できる、サンプルのマルチモジュールプロジェクトが付属しています。 また、AEMのいくつかの機能のベストプラクティスガイドとしても機能します。 プロジェクトのアーキタイプについて詳しくは、[こちら](https://github.com/adobe/aem-project-archetype)を参照してください。
 
-次の手順を実行して、サンプルプロジェクトを作成します。
+サンプルプロジェクトを作成するには、次の手順に従います。
 
-1. **File**／**New**／**Project**&#x200B;メニューで、「**AEM**」セクションを参照して、「**AEM Sample Multi-Module Project**」を選択します。
+1. 内 **ファイル** > **新規** > **プロジェクト** メニュー、参照 **AEM** 「 」セクションで「 」を選択します。 **AEM Sample Multi-Module Project**.
 
    ![AEM サンプルマルチモジュールプロジェクト](assets/aem-sample-project.png)
 

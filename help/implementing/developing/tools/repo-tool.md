@@ -5,7 +5,7 @@ exl-id: fb887ba3-e40b-4ab1-b142-0748c6d9f18e
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '266'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -23,7 +23,7 @@ AEM Repo ツールは、FTP に相当するコマンドラインを使用して�
 
 >[!CAUTION]
 >
->AEM Repo ツールは、指定したファイル全体またはディレクトリを常に上書きすることに注意してください。
+>AEM Repo Tool は常に、指定されたファイルまたはディレクトリ全体を上書きします。
 
 ## ダウンロードとドキュメント {#download-and-documentation}
 

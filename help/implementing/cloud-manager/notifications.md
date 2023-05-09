@@ -2,8 +2,8 @@
 title: 通知
 description: Adobe Experience Cloud 通知システムを使用して、パイプラインデプロイメントに関する情報を受け取る方法を説明します。
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 451b5a089645004c58c2674fd1fb13afbe1201cf
-workflow-type: ht
+source-git-commit: 6f390df560e9eeb76a8c4f1904e500aa5ed2bd65
+workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 100%
 

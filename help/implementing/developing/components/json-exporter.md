@@ -1,11 +1,11 @@
 ---
 title: コンテンツサービス用の JSON エクスポーター
-description: AEM コンテンツサービスは、Web ページだけに焦点を置かずに AEM のコンテンツの記述と配信を一般化するように設計されています。AEM コンテンツサービスにより、あらゆるクライアントで使用できる標準化された方法で、従来の AEM Web ページとは異なるチャネルにコンテンツを配信できます。
+description: AEM Content Services は、AEMでのコンテンツの説明と配信を、Web ページに焦点を当てるだけでなく、一般化するように設計されています。 従来のAEM Web ページではないチャネルに対して、あらゆるクライアントが利用できる標準化された方法を使用してコンテンツを配信します。
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 100%
+ht-degree: 58%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 AEM コンテンツサービスは、Web ページだけに焦点を置かずに AEM のコンテンツの記述と配信を一般化するように設計されています。
 
-AEM コンテンツサービスにより、あらゆるクライアントで使用できる標準化された方法で、従来の AEM Web ページとは異なるチャネルにコンテンツを配信できます。そうしたチャネルの例を次に示します。
+従来のAEM Web ページではないチャネルに対して、あらゆるクライアントが利用できる標準化された方法を使用してコンテンツを配信します。 次のチャネルが含まれます。
 
 * 単一ページアプリケーション
 * ネイティブモバイルアプリケーション
@@ -21,21 +21,21 @@ AEM コンテンツサービスにより、あらゆるクライアントで使�
 
 構造化コンテンツを使用するコンテンツフラグメントでは、JSON エクスポーターを使用して、任意の AEM ページのコンテンツを JSON データモデル形式で配信することで、コンテンツサービスを提供できます。その後、独自のアプリケーションでコンテンツを使用できるようになります。
 
-## JSON エクスポーターとコンテンツフラグメントコアコンポーネント {#json-exporter-with-content-fragment-core-components}
+## コンテンツフラグメントコアコンポーネントを使用した JSON エクスポーター {#json-exporter-with-content-fragment-core-components}
 
-AEM JSON エクスポーターを使用すると、任意の AEM ページのコンテンツを JSON データモデル形式で配信できます。その後、独自のアプリケーションでコンテンツを使用できるようになります。
+AEM JSON エクスポーターを使用して、任意のAEMページのコンテンツを JSON データモデル形式で配信できます。 その後、独自のアプリケーションでコンテンツを使用できるようになります。
 
 AEM 内では、セレクター `model` と `.json` 拡張機能を使用して配信をおこないます。
 
 `.model.json`
 
-1. 例えば、次の URL では
+1. 例えば、次のような URL があります。
 
    ```shell
    http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks.model.json
    ```
 
-1. 次のようなコンテンツが配信されます。
+1. 次のようなコンテンツを配信します。
 
    ![WKND コンテンツの JSON モデル](assets/json-model-wknd.png)
 
@@ -45,15 +45,15 @@ AEM 内では、セレクター `model` と `.json` 拡張機能を使用して�
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 
-ページには、単一のコンテンツフラグメントまたはタイプが異なる複数のコンポーネントを含めることができます。また、リストコンポーネントなどのメカニズムを使用して、関連するコンテンツを自動的に検索することもできます。
+ページには、1 つのコンテンツフラグメントを含めることも、様々なタイプの複数のコンポーネントを含めることもできます。 また、リストコンポーネントなどのメカニズムを使用して、関連するコンテンツを自動的に検索することもできます。
 
-* 例えば、次の URL では
+* 例えば、次のような URL があります。
 
    ```shell
    http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks/jcr:content/root/container/container/contentfragment.model.json
    ```
 
-* 次のようなコンテンツが配信されます。
+* 次のようなコンテンツを配信します。
 
    ![WKND コンテンツフラグメントの JSON モデル](assets/json-model-wknd-content-fragment.png)
 
@@ -72,8 +72,8 @@ AEM 内では、セレクター `model` と `.json` 拡張機能を使用して�
 * Assets HTTP API
    * [Assets HTTP API](/help/assets/developer-reference-material-apis.md)
 * Sling モデル：
-   * [Sling モデル - 130 以降のモデルクラスとリソースタイプの関連付け](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
-* AEM と JSON：
+   * [Sling モデル — 130 以降のモデルクラスとリソースタイプの関連付け](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+* AEM with JSON:
    * [コンポーネントの JSON 書き出しの有効化](enabling-json-exporter.md)
 
 ## 関連ドキュメント {#related-documentation}

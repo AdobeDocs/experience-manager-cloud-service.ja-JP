@@ -1,7 +1,8 @@
 ---
 title: Java 機能テスト
 description: AEM as a Cloud Service用の Java 機能テストの作成方法を説明します
-source-git-commit: 24796bd7d9c5e726cda13885bc4bd7e4155610dc
+exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
+source-git-commit: cda1f51c89a98cfb75d63f8bd9b54e76ee745aa7
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 77%

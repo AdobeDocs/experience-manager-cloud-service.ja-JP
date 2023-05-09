@@ -2,10 +2,10 @@
 title: 非推奨（廃止予定）の API
 description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の非推奨（廃止予定）の API と削除された API）。
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 89a50c17c10a19b394db5709692fb065c19e878f
-workflow-type: ht
+source-git-commit: 983e26980cace26d1e62334cb44088d9e3e5c34a
+workflow-type: tm+mt
 source-wordcount: '1076'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 

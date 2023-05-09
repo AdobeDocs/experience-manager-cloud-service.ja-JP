@@ -31,7 +31,7 @@ ht-degree: 100%
 
 * 各移行セットはデータストア全体をコピーするので、1 つの移行セットのみを使用する必要がある。
 
-* ソース AEM インスタンスを実行するインスタンス（または VM）に [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) をインストールするには、アクセス権が必要である。
+* ソース AEM インスタンスを実行するインスタンス（または VM）に [AzCopy](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-v10) をインストールするには、アクセス権が必要である。
 
 * データストアのガベージコレクションが、ソース上で過去 7 日以内に実行されている。詳しくは、[データストアのガベージコレクション](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=ja#data-store-garbage-collection)を参照してください。
 
@@ -78,16 +78,16 @@ Azure ポータルのコンテナプロパティページで、「**サイズを
 #### ファイルデータストア {#file-data-store-determine-size}
 
 * Mac および UNIX システムの場合は、データストアディレクトリで du コマンドを実行してサイズを取得します。
-   `du -sh [path to datastore on the instance]` を使用して作成します。例えば、データストアが `/mnt/author/crx-quickstart/repository/datastore` にある場合は、次のコマンドでそのサイズを取得できます。`du -sh /mnt/author/crx-quickstart/repository/datastore`
+   `du -sh [path to datastore on the instance]`。例えば、データストアが `/mnt/author/crx-quickstart/repository/datastore` にある場合は、次のコマンドでそのサイズを取得できます。`du -sh /mnt/author/crx-quickstart/repository/datastore`
 
 * Windows の場合は、データストアディレクトリで dir コマンドを使用してサイズを取得します。
-   `dir /a/s [location of datastore]`
+   `dir /a/s [location of datastore]`。
 
 ### 1. AzCopy をインストールする {#install-azcopy}
 
-[AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) は、Microsoft が提供するコマンドラインツールであり、この機能を有効にするには、ソースインスタンス上で利用可能である必要があります。
+[AzCopy](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-v10) は、Microsoft が提供するコマンドラインツールであり、この機能を有効にするには、ソースインスタンス上で利用可能である必要があります。
 
-つまり、 [AzCopy のドキュメントページ](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) から Linux x86-64 バイナリをダウンロードし、/usr/bin のような場所に un-tar する必要があります。
+つまり、 [AzCopy のドキュメントページ](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-v10) から Linux x86-64 バイナリをダウンロードし、/usr/bin のような場所に un-tar する必要があります。
 
 >[!IMPORTANT]
 >後の手順でバイナリへのフルパスが必要になるので、バイナリを配置した場所をメモしておきます。

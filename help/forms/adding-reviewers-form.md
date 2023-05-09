@@ -11,7 +11,7 @@ docset: aem65
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 メタデータスキーマを編集するには、以下の手順に従います。
 
 1. オーサーモードで、Experience Manager の **ツール**／**アセット**／**メタデータスキーマ** をクリックします。
-1. スキーマフォームページで、「**フォーム**／**AEM で作成されたフォーム**」に移動します。
+1. スキーマFormsページで、に移動します。 **Forms** > **FormsがAEMで作成されました。**
 
    ページの URL は以下のとおりです。
 

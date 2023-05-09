@@ -8,8 +8,8 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 118945f407dab8ccad1ec018b588b64972fb5f12
-workflow-type: ht
+source-git-commit: aa7b9daba4242965baf20a77af356952cd7bc279
+workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ CIF アドオンと [AEM CIF コアコンポーネント](https://github.com/ado
 この環境変数は、次の 2 つの場所で使用されます。
 
 - AEM CIF コアコンポーネントと顧客プロジェクトコンポーネントで使用される、共有可能な共通の GraphQl クライアントを介した、AEM からコマースバックエンドへの GraphQL 呼び出し。
-- `/api/graphql` で変数が使用可能に設定された各 AEM 環境への GraphQL プロキシ URL の設定。これは、AEM コマースオーサリングツール（CIF アドオン）および CIF クライアントサイドコンポーネントで使用されます。
+- `/api/graphql` で変数が使用可能に設定された各 AEM 環境への GraphQL プロキシ URL の設定。これは、AEM Commerce オーサリングツール（CIF アドオン）および CIF クライアントサイドコンポーネントで使用されます。
 
 AEM as a Cloud Service 環境ごとに異なる GraphQL エンドポイント URL を使用できます。この方法で、プロジェクトは AEM ステージング環境をコマースステージングシステムに、また、AEM 実稼働環境をコマース実稼働システムに接続できます。GraphQL エンドポイントは、公開されている必要があります。プライベート VPN またはローカル接続はサポートされていません。オプションで、認証が必要な追加の CIF 機能を使用するために認証ヘッダーを指定できます。
 

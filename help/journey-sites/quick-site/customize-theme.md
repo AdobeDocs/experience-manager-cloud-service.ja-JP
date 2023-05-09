@@ -2,8 +2,8 @@
 title: サイトテーマのカスタマイズ
 description: サイトテーマの作成方法、カスタマイズ方法、および AEM のライブコンテンツを使用したテスト方法を説明します。
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: 9f5930fce8c2a7768cad696746a7c9fa3d8c2f9e
-workflow-type: ht
+source-git-commit: 64509c13abacd6a6b54b58245acbf510feafdffa
+workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 100%
 

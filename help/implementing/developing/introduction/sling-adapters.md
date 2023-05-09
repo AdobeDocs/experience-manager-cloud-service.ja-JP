@@ -1,11 +1,11 @@
 ---
 title: Sling アダプターの使用
-description: Sling には、Adaptable インターフェイスを実装するオブジェクトを適切に変換するアダプターパターンが用意されています
+description: Sling には、Adaptable インターフェイスを実装するオブジェクトを簡単に翻訳するためのアダプターパターンが用意されています
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '2221'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -39,14 +39,14 @@ Node node = resource.adaptTo(Node.class);
 
 `adaptTo()` は null を返す場合があります。
 
-これには様々な理由がありますが、その一部は次のとおりです。
+これには、次のような様々な理由があります。
 
-* 実装がターゲットタイプをサポートしていない
-* このケースを処理するアダプターファクトリがアクティブでない（サービスの参照が見つからないなどの理由で）
-* 内部的な条件が合わなかった
+* この実装はターゲットの種類をサポートしていません
+* このケースを処理するアダプターファクトリはアクティブではありません ( 例： サービス参照が見つからないため )
+* 内部条件に失敗しました
 * サービスを利用できない
 
-null のケースを問題なく処理することが重要です。JSP レンダリングでは、JSP の問題によってコンテンツの一部が空になる場合に、その問題が受容されることもあります。
+null ケースを適切に処理することが重要です。 JSP レンダリングの場合、JSP の失敗がコンテンツの一部になる場合は、JSP の失敗が許容されることがあります。
 
 ### キャッシュ {#caching}
 
@@ -54,7 +54,7 @@ null のケースを問題なく処理することが重要です。JSP レン�
 
 このキャッシュ処理は、すべての `AdapterFactory` ベースのケースで実行されます。
 
-ただし、汎用的なルールは存在せず、オブジェクトが新しいインスタンスである場合も既存のインスタンスである場合もあります。したがって、いずれの動作にも依存することはできません。重要なのは、特に `AdapterFactory` 内部において、このシナリオでオブジェクトが再利用可能であるということです。
+ただし、一般的なルールはありません。オブジェクトは、新しいインスタンスでも既存のインスタンスでもかまいません。 つまり、どちらの動作にも依存できません。 重要なのは、特に `AdapterFactory` 内部において、このシナリオでオブジェクトが再利用可能であるということです。
 
 ### 仕組み {#how-it-works}
 
@@ -270,7 +270,7 @@ null のケースを問題なく処理することが重要です。JSP レン�
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/org/xml/sax/ContentHandler.html">ContentHandler</a><br />
 （XML）</td>
-   <td>この応答が Sling リライター応答である場合。</td>
+   <td>これが Sling リライター応答の場合。</td>
   </tr>
  </tbody>
 </table>
@@ -337,7 +337,7 @@ null のケースを問題なく処理することが重要です。JSP レン�
 
 | [Node](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | ユーザーまたはグループのホームノードを返します。 |
 |---|---|
-| [ReplicationStatus](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/ReplicationStatus.html) | ユーザーまたはホームノードのレプリケーションステータスを返します。 |
+| [ReplicationStatus](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/ReplicationStatus.html) | ユーザーまたはグループのホームノードのレプリケーションステータスを返します。 |
 
 #### DAM {#dam}
 

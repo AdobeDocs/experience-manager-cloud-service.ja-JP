@@ -17,7 +17,7 @@ ht-degree: 54%
 
 コンテンツ転送ツールを使用する際には、以下のガイドラインとベストプラクティスに従ってください。
 
-* 実行 [リビジョンのクリーンアップ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=ja) および [データストアの整合性チェック](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=en) の **ソース** リポジトリを使用して、潜在的な問題を特定し、リポジトリのサイズを小さくします。
+* 実行 [リビジョンのクリーンアップ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=ja) および [データストアの整合性チェック](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=ja) の **ソース** リポジトリを使用して、潜在的な問題を特定し、リポジトリのサイズを小さくします。
 
 * AEM Cloud オーサーコンテンツ配信ネットワーク (CDN) の設定に IP のが設定されている場合許可リストは、ソース環境の IP も必ず設定に追加し許可リストます。 これにより、ソース環境とAEM Cloud 環境が相互に通信できるようになります。
 

@@ -4,8 +4,8 @@ description: コンテンツ転送ツールの前提条件
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
 source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '546'
+ht-degree: 95%
 
 ---
 

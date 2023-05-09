@@ -3,9 +3,9 @@ title: エクスペリエンスフラグメント 概要
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントの拡張
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 source-git-commit: 5968554ec221b1fe9969b131ccf0b08ffb7f6494
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1651'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 100%
 
 URL で `.plain.` セレクターを使用すると、プレーン HTML レンディションにアクセスできます。
 
-これはブラウザーから利用できますが、主な目的は、他のアプリケーション（例えば、サードパーティ Web アプリ、カスタムモバイル実装など）が、URL のみを使用して、エクスペリエンスフラグメントのコンテンツに直接アクセスできるようにすることです。
+これはブラウザーから使用できますが、主な目的は、他のアプリケーション（サードパーティの Web アプリ、カスタムモバイル実装など）が URL のみを使用してエクスペリエンスフラグメントのコンテンツに直接アクセスできるようにすることです。
 
-プレーン HTML レンディションは、次のようなパスにプロトコル、ホストおよびコンテキストパスを追加します。
+プレーンHTMLレンディションは、次のパスにプロトコル、ホストおよびコンテキストパスを追加します。
 
 * タイプが `src`、`href`、`action` のいずれか
 
@@ -41,7 +41,7 @@ URL で `.plain.` セレクターを使用すると、プレーン HTML レン�
 
 >[!NOTE]
 >
->リンクは、常に、パブリッシュインスタンスを参照します。リンクは、サードパーティによって使用されることを意図しているので、オーサーインスタンスではなく、常にパブリッシュインスタンスから呼び出されます。
+>リンクは常にパブリッシュインスタンスを参照します。 これらはサードパーティによって使用されることを目的としているので、リンクは常にオーサーからではなくパブリッシュインスタンスから呼び出されます。
 
 ![プレーン HTML レンディション](assets/xf-14.png)
 
@@ -58,9 +58,9 @@ HTML レンディションは、Sling Rewriter パイプラインを使用して
    * これは、顧客が特定の CSS クラスを取り除きたい場合に便利です。
 * `allowedTags`
    * 最終的なレンディションで許可される HTML タグのリスト。
-   * デフォルトでは、次のタグが許可されています（設定は不要）。html、head、title、body、img、p、span、ul、li、a、b、i、em、strong、h1、h2、h3、h4、h5、h6、br、noscript、div、link、script
+   * デフォルトでは、次のタグが許可されています（設定は不要）：html、head、title、body、img、p、span、ul、li、a、b、i、em、strong、h1、h2、h3、h4、h5、h6、br、noscript、div、link、script
 
-オーバーレイを使用してリライターを設定することをお勧めします。 詳しくは、[AEM as a Cloud Service でのオーバーレイ](/help/implementing/developing/introduction/overlays.md)を参照してください。
+オーバーレイを使用してリライターを設定することをお勧めします。詳しくは、[AEM as a Cloud Service でのオーバーレイ](/help/implementing/developing/introduction/overlays.md)を参照してください。
 
 ## エクスペリエンスフラグメントのテンプレート {#templates-for-experience-fragments}
 

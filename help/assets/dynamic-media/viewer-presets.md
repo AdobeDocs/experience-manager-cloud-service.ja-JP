@@ -5,8 +5,8 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 [ビューアプリセットの公開](managing-viewer-presets.md#publishing-viewer-presets)も参照してください。
 
-使用しているパブリッシュモードによっては、ビューアプリセットを公開する必要がない場合があります。
+使用している公開モードによっては、ビューアプリセットを公開する必要がない場合があります。
 
 ビューアプリセットで問題が発生した場合は、[Dynamic Media のトラブルシューティング](troubleshoot-dm.md#viewers)を参照してください。
 

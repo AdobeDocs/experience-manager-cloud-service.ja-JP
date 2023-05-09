@@ -5,13 +5,13 @@ exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
 source-git-commit: d67e46e2f798e56e322d5c4aad536e718c7aae1a
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
 # グループと権限 {#aem-forms-on-osgi-groups-and-privileges}
 
-[グループを作成し](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ja#accessing)、そのグループにポリシーと[ユーザー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)を割り当てることができます。これらのポリシーは、グループに含まれるユーザーの権限を制御します。
+[グループを作成し](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ja#accessing)、そのグループにポリシーと[ユーザー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ja#accessing)を割り当てることができます。これらのポリシーは、グループに含まれるユーザーの権限を制御します。
 
 [!DNL AEM Forms] as a Cloud Service を設定すると、次の表に示すグループ（[!DNL forms-users]、forms-power-user など）を自動的に割り当てることができます。
 
@@ -25,22 +25,22 @@ ht-degree: 100%
    <td>[!DNL forms-users] <sup>[1]</sup></td> 
    <td>
     <ul> 
-     <li>アダプティブフォームを作成、プレビュー、パブリッシュ、送信する</li> 
+     <li>アダプティブフォームを作成、プレビュー、公開、送信する</li> 
     <!-- <li>Create, preview, and publish interactive communications and document fragments</li> -->
-     <li>AEM インスタンスにアセットをアップロードする</li> 
-     <li>テーマを作成する</li> 
+     <li>アセットのAEMインスタンスへのアップロード</li> 
+     <li>テーマを作成</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td>[!DNL forms-power-user]</td> 
    <td>
     <ul> 
-     <li>アダプティブフォームを作成、プレビュー、パブリッシュ、送信する</li> 
+     <li>アダプティブフォームを作成、プレビュー、公開、送信する</li> 
      <!-- <li>Create, preview, and publish interactive communications and document fragments</li> 
      <li>Create scripts for Adaptive Forms using code editor</li> -->
-     <li>スクリプトを含むアセットをアップロードする</li> 
-     <li>テーマを作成する</li> 
-     <li>XDP を含むパッケージを読み込む</li> 
+     <li>スクリプトを含むアセットのアップロード</li> 
+     <li>テーマを作成</li> 
+     <li>XDP を含むパッケージのインポート</li> 
     </ul> </td> 
   </tr>
   <!-- <tr>

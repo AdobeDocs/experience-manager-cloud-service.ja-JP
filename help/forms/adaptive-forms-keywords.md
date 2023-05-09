@@ -10,7 +10,7 @@ discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 100%
+ht-degree: 52%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 <table>
  <tbody>
   <tr>
-   <td><p>intialize</p> </td>
+   <td><p>初期化する</p> </td>
    <td><p>getOnOffValues</p> </td>
    <td><p>minOccur</p> </td>
   </tr>
@@ -43,18 +43,18 @@ ht-degree: 100%
   </tr>
   <tr>
    <td><p>playJson</p> </td>
-   <td><p>prepare</p> </td>
+   <td><p>準備</p> </td>
    <td><p>instanceCount</p> </td>
   </tr>
   <tr>
    <td><p>resetData</p> </td>
    <td><p>runPendingExpressions</p> </td>
-   <td><p>repeatable</p> </td>
+   <td><p>repateable</p> </td>
   </tr>
   <tr>
    <td><p>calcExp</p> </td>
    <td><p>queueExpressions</p> </td>
-   <td><p>instances</p> </td>
+   <td><p>インスタンス</p> </td>
   </tr>
   <tr>
    <td><p>title</p> </td>
@@ -64,7 +64,7 @@ ht-degree: 100%
   <tr>
    <td><p>valueCommitScript</p> </td>
    <td><p>autoSaveStart</p> </td>
-   <td><p>visit</p> </td>
+   <td><p>訪問</p> </td>
   </tr>
   <tr>
    <td><p>validateExp</p> </td>
@@ -74,7 +74,7 @@ ht-degree: 100%
   <tr>
    <td><p>placeholderText</p> </td>
    <td><p>autoSaveStartExpression</p> </td>
-   <td><p>children</p> </td>
+   <td><p>子</p> </td>
   </tr>
   <tr>
    <td><p>value</p> </td>
@@ -132,7 +132,7 @@ ht-degree: 100%
    <td><p>索引</p> </td>
   </tr>
   <tr>
-   <td><p>height</p> </td>
+   <td><p>高さ</p> </td>
    <td><p>showComment</p> </td>
    <td><p>visible</p> </td>
   </tr>
@@ -212,7 +212,7 @@ ht-degree: 100%
    <td><p>currentActivePart</p> </td>
   </tr>
   <tr>
-   <td><p>summary</p> </td>
+   <td><p>概要</p> </td>
    <td><p>completionFailureScript</p> </td>
    <td><p>sectionName</p> </td>
   </tr>

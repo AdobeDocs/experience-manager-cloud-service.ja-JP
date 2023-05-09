@@ -30,9 +30,9 @@ Adobe Admin Console では、アドビ製品のライセンスとユーザーを
 
 ## Adobe ID {#adobe-id}
 
-Admin Console にサインインするには、Adobe ID が必要です。 また、Adobe ID は、AEM as a Cloud Service や任意のアドビソリューションにログインしてアクセスするために必要な、特定の電子メールアドレスに関連付けられたアカウントです。Adobe ID を使用すると、アドビのすべてのプランと製品を 1 つのアカウントに関連付けることができます。
+Admin Console にサインインするには、Adobe ID が必要です。 また、Adobe ID は、AEM as a Cloud Service や任意のアドビソリューションにログインしてアクセスするために必要な、特定のメールアドレスに関連付けられたアカウントです。Adobe ID を使用すると、アドビのすべてのプランと製品を 1 つのアカウントに関連付けることができます。
 
-システム管理者が Admin Console でチームを設定する際に、Adobe ID として使用する電子メールアドレスを指定します。
+システム管理者が Admin Console でチームを設定する際に、Adobe ID として使用するメールアドレスを指定します。
 
 Adobe ID には次の 3 種類があります。
 
@@ -48,9 +48,9 @@ Adobe ID には次の 3 種類があります。
 
 Admin Console を使用してチーム内のユーザーを管理する前に、自分自身が正常にアクセスでき、適切な権限を持っていることを確認する必要があります。
 
-1. システム管理者は、オンボーディングプロセスの一環としてアドビから複数の電子メールを受信します。アクセス権が付与された組織名に関する情報を記載したお知らせメールを探します。
+1. システム管理者は、オンボーディングプロセスの一環としてアドビから複数のメールを受信します。アクセス権が付与された組織名に関する情報を記載したお知らせメールを探します。
 
-1. お知らせメールの&#x200B;**使用開始**&#x200B;リンクをクリックして、Admin Console に移動します。電子メールが見つからない場合は、ブラウザーを開いて [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) の Admin Console に直接アクセスします。
+1. お知らせメールの&#x200B;**使用開始**&#x200B;リンクをクリックして、Admin Console に移動します。メールが見つからない場合は、ブラウザーを開いて [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) の Admin Console に直接アクセスします。
 
    ![お知らせメール](/help/journey-onboarding/assets/get-started-email.png)
 

@@ -69,10 +69,10 @@ JSON 要素とアダプティブフォームコンポーネントのマッピン
     </ul> </td>
   </tr>
   <tr>
-   <td><p>format 制約を含む string プロパティ。例えば、電子メール、日付など。</p> <p>構文</p> <p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"format" : "email"</code></p> <p><code>}</code></p> <p> </p> </td>
+   <td><p>format 制約を含む string プロパティ。例えば、メール、日付など。</p> <p>構文</p> <p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"format" : "email"</code></p> <p><code>}</code></p> <p> </p> </td>
    <td>
     <ul>
-     <li>type が string で format が email の場合、電子メールコンポーネントがマップされます。</li>
+     <li>type が string で format が email の場合、メールコンポーネントがマップされます。</li>
      <li>type が string で format が hostname の場合、検証を含むテキストボックスコンポーネントがマップされます。</li>
     </ul> </td>
   </tr>
