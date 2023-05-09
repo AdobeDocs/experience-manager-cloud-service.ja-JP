@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 リリースのリリースノート。'
 description: 「[!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 のリリースノート」
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
+source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1297'
 ht-degree: 100%
 
 ---
@@ -61,7 +61,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 
 AEM Forms は、長年にわたって、優れたオンボーディングと登録のエクスペリエンスの提供で、多くの組織を支援してきました。これらのエクスペリエンスは、組織がリードを売上にコンバージョンしたり、取得した顧客データを処理したり、オーディエンスプロファイルに基づいてレスポンシブなエクスペリエンスを提供するのに役立っています。現在、AEM Forms はクラウドサービスとして提供されています。
 
-[AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html?lang=ja) を使用して、デジタルフォームを作成したり、フォームを既存のデータソースに接続したり、フォームを Adobe Sign と統合して電子サインをフォームに追加したり、送信されたフォームを PDF ファイルとしてアーカイブするためにレコードのドキュメント（DoR）を生成したりできます。また、既存の PDF フォームをデジタルフォームに変換することもできます。このサービスは、AEM Forms の標準的な機能に加えて、自動スケーリング、ダウンタイムなしアップグレード、クラウドネイティブ開発環境など、いくつかのクラウドネイティブ機能を提供します。AEM Forms as a Cloud Service の機能については、[このブログ記事](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html)を参照してください。
+[AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html?lang=ja) を使用して、デジタルフォームを作成したり、フォームを既存のデータソースに接続したり、フォームを Adobe Sign と統合して電子サインをフォームに追加したり、送信されたフォームを PDF ファイルとしてアーカイブするためにレコードのドキュメント（DoR）を生成したりできます。また、既存の PDF フォームをデジタルフォームに変換することもできます。このサービスは、AEM Forms の標準的な機能に加えて、自動スケーリング、ダウンタイムなしアップグレード、クラウドネイティブ開発環境など、いくつかのクラウドネイティブ機能を提供します。
 
 デモが必要な場合は、アドビ担当者に問い合わせるか、サービスに登録してください。
 

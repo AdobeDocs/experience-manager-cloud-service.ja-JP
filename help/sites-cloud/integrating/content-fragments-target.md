@@ -1,9 +1,10 @@
 ---
 title: コンテンツフラグメントのAdobe Targetへの書き出し
 description: コンテンツフラグメントのAdobe Targetへの書き出し
-source-git-commit: 61266ca2caf4cbc02b79a14349c73dced456b5a3
+exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
+source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2229'
 ht-degree: 41%
 
 ---
@@ -192,7 +193,7 @@ AEMで Target クラウド設定を作成するには、以下の手順を実行
 
       >[!NOTE]
       >
-      >Target ライブラリファイル [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/implement-target-for-client-side-web.html?lang=ja) は、Adobe Target 用の新しい実装ライブラリであり、通常の web 実装と単一ページアプリケーションの両方に使用できるように設計されています。
+      >Target ライブラリファイル [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html) は、Adobe Target 用の新しい実装ライブラリであり、通常の web 実装と単一ページアプリケーションの両方に使用できるように設計されています。
       >
       >mbox.js は非推奨（廃止予定）となり、後日で削除される予定です。
       >

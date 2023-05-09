@@ -5,7 +5,7 @@ description: レビューとは、レビュー担当者がタスクの割り当�
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+source-git-commit: daeb407e27b9f1d390fe40151ca16ec0196712e6
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 6%
@@ -29,8 +29,8 @@ ht-degree: 6%
 1. タップ ![settings_icon](assets/settings_icon.png) をクリックします。 この **[!UICONTROL タスクを割り当て]** ダイアログが開きます。
 1. 開く [!UICONTROL フォームとドキュメント] タブと開く [!UICONTROL 事前入力済み] ドロップダウンして次を指定します。
 
-* 次を使用して入力データファイルを選択
-* 次を使用して入力添付ファイルを選択
+   * 次を使用して入力データファイルを選択
+   * 次を使用して入力添付ファイルを選択
 
    ![レビューステップ](/help/forms/assets/assigntask-review1.gif)
 

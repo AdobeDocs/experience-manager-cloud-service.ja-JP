@@ -6,13 +6,13 @@ seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 hide: true
 hidefromtoc: true
-source-git-commit: f65c5241e1e61e5a0bd9981778939caa313de76a
+exl-id: e1eb0812-c92e-4a18-aabb-5a70b9e6fc7d
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
-source-wordcount: '3412'
-ht-degree: 3%
+source-wordcount: '3360'
+ht-degree: 4%
 
 ---
-
 
 # コアコンポーネントとヘッドレスを使用して魅力的なFormsを構築
 
@@ -60,8 +60,7 @@ AEM Forms as a Cloud Service環境の理解。
 
 ### 演習
 
-1. ブラウザーを開き、ブラウザーオーサー環境の URL をCloud Serviceします。 次に例を示します。
-   [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html)
+1. ブラウザーを開き、ブラウザーオーサー環境の URL をCloud Serviceします。
 
 1. Cloud Serviceオーサー環境にログインします。 ラボでは、オーサー環境のログイン資格情報が共有されます。
 
@@ -407,8 +406,8 @@ React スタータープロジェクトを使用してローカルリポジト�
 
 サーバー上のフォームをビジネスユーザーとして変更し、ヘッドレスフォームに自動的に反映された変更を表示します。
 
-1. ブラウザーでAEM Forms管理インターフェイスを開きます。 例： [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments).
-
+1. ブラウザーでAEM Forms管理インターフェイスを開きます。
+\
 1. を選択します。 **登録** フォームとクリック **編集。** アダプティブフォームエディターでフォームが開きます。
 
    ![](/help/forms/assets/screenshot2028118529.png)
@@ -513,7 +512,7 @@ Material UI スタータープロジェクトを使用してローカルリポ�
 
 1. .env ファイル内の変数に次の値を設定します。 変数を更新したら、ファイルを保存します。 以下を使用： **Ctrl + S** 組み合わせを切り替えてファイルを保存します。
 
-   * **AEM_URL**:クラウドサービスパブリッシュ環境の URL を指定します。 例： [https://publish-p105303-e986623.adobeaemcloud.com](https://publish-p105303-e986623.adobeaemcloud.com/)
+   * **AEM_URL**:クラウドサービスパブリッシュ環境の URL を指定します。
 
    * **AEM_FORM_PATH**:前のレッスンで作成したアダプティブフォームのパスを指定します。 例： /content/forms/af/registration/
 
@@ -637,14 +636,12 @@ Material UI スタータープロジェクトを使用してローカルリポ�
 
 ## リソース
 
-* [アダプティブフォームのコアコンポーネントの概要](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)
+* [アダプティブフォームのコアコンポーネントの概要](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)
 
-* [コアコンポーネントを使用してアダプティブフォームを作成する](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+* [コアコンポーネントを使用してアダプティブフォームを作成する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=ja)
 
 * [コアコンポーネントベースの AF のスタイル設定を更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=en)
 
 * [ヘッドレスアダプティブフォーム](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=en)
 
 * [ヘッドレス React スターターキットの使用](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form.html?lang=en)
-
-

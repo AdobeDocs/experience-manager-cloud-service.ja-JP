@@ -2,10 +2,10 @@
 title: データ保護とデータプライバシーに関する規制 - Adobe Experience Manager as a Cloud Service の対応
 description: 様々なデータ保護およびデータプライバシー規則に対する Adobe Experience Manager as a Cloud Service のサポートについて説明します。これには、EU 一般データ保護規則（GDPR）、カリフォルニア州消費者プライバシー法、および新しい AEM as a Cloud Service プロジェクトを実装する際に準拠する方法が含まれます。
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
-source-wordcount: '730'
-ht-degree: 100%
+source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+workflow-type: tm+mt
+source-wordcount: '729'
+ht-degree: 98%
 
 ---
 
@@ -94,6 +94,6 @@ AEM as a Cloud Service の製品範囲に関する規制ドキュメントにつ
 これらの Adobe Experience Manager as a Cloud Service 統合は、データ保護およびプライバシー（GDPR など）に対応したサービスと連携しています。Adobe Target や Adobe Analytics の個人データは、統合に関連して AEM に保存されません。
 詳しくは、次のセクションを参照してください。
 
-* [Adobe Target - プライバシーの概要](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/privacy.html?lang=ja)
+* [Adobe Target - プライバシーの概要](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)
 
 * [Adobe Analytics データプライバシーのワークフロー](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=ja)

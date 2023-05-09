@@ -2,10 +2,10 @@
 title: データ保護およびデータプライバシーに関する規制 - Adobe Experience Manager as a Cloud Service Sites の対応
 description: EU 一般データ保護規則（GDPR）やカリフォルニア州消費者プライバシー法など、データ保護およびデータプライバシーに関する様々な規制に対する Adobe Experience Manager as a Cloud Service Sites のサポートと、新しい AEM as a Cloud Service プロジェクトを実装する際にこれらの規制に準拠する方法について説明します。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
+source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 100%
+source-wordcount: '1031'
+ht-degree: 69%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Adobe Experience Manager as a Cloud Service Sites は、データのプライバシーと保護に関するコンプライアンス義務の遂行でお客様を支援する用意が整っています。このページでは、AEM Sites でこのような要求を処理する手順について説明します。プライベートデータの格納場所や、それらのデータを手動で、またはコードを使用して削除する方法について説明します。
 
-詳しくは、[アドビプライバシーセンター](https://www.adobe.com/privacy.html)を参照してください。
+詳しくは、[アドビプライバシーセンター](https://www.adobe.com/jp/privacy.html)を参照してください。
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ Adobe Analytics に関連するデータ主体からの要求の管理につい�
 
 AEM Sites には、Adobe Target On-demand Services 内の機能を使用した Personalization Foundation by Target との統合（オプション）が含まれています。
 
-Adobe Target に関連する データサブジェクトリクエストの管理についての詳細は、[Adobe Target - プライバシーと一般データ保護規則](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=ja)を参照してください。
+Adobe Target に関連する データサブジェクトリクエストの管理についての詳細は、[Adobe Target - プライバシーと一般データ保護規則](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)を参照してください。
 
 ## ContextHub {#contexthub}
 
@@ -89,30 +89,30 @@ Adobe Target に関連する データサブジェクトリクエストの管理
 AEM provides an optional data layer with [ContextHub](/help/sites-developing/contexthub.md).
 -->
 
-AEM には、ContextHub を使用するオプションのデータレイヤーが用意されています。ContextHub を使用する場合、訪問者固有のデータがブラウザー内に格納され、そのデータに基づいてルールベースのパーソナライゼーションが実行されます。
+AEM には、ContextHub を使用するオプションのデータレイヤーが用意されています。これにより、ブラウザーに訪問者固有のデータを保持し、ルールベースのパーソナライゼーションに使用できます。
 
 この訪問者データはデフォルトでは AEM に格納されません。ブラウザー内でパーソナライゼーションに関する決定を行うためのルールが、AEM からデータレイヤーに送信されます。
 
 ### オプトイン／オプトアウトの実装 {#implementing-opt-in-opt-out}
 
-サイトの所有者は、オプトアウトコンポーネントを実装する際、以下のガイドラインに従う必要があります。
+サイトの所有者は、次のガイドラインに従ってオプトアウトコンポーネントを実装する必要があります。
 
-これらのガイドラインでは、デフォルトでオプトインが実装されます。そのため、Web サイトの訪問者は、個人データがブラウザーの（クライアントサイド）永続ストレージに格納される前に、明確に同意する必要があります。
+以下のガイドラインでは、オプトインがデフォルトとして実装されています。 そのため、Web サイトの訪問者は、個人データがブラウザーの（クライアントサイド）永続ストレージに格納される前に、明確に同意する必要があります。
 
 * オプトアウトコンポーネントは、ContextHub コンポーネントを組み込むたびに必ず組み込んでください。
 * Web サイトのデータ保護およびプライバシーに関連する利用条件を Web サイトの訪問者に表示して、訪問者が以下を行えるようにする必要があります。
 
    * 同意
    * reject
-   * 以前の選択の変更
+   * 以前の選択を変更する
 
-* サイト訪問者がサイトの利用条件に同意する場合は、次のようにして、ContextHub のオプトアウト Cookie を削除する必要があります。
+* サイトの訪問者がサイトの利用条件に同意した場合は、ContextHub のオプトアウト Cookie を削除する必要があります。
 
    ```
    ContextHub.Utils.Cookie.removeItem('cq-opt-out');
    ```
 
-* サイト訪問者がサイトの利用条件に同意しない場合は、次のようにして、ContextHub のオプトアウト Cookie を設定する必要があります。
+* サイトの訪問者がサイトの利用条件に同意しない場合は、ContextHub オプトアウト Cookie を次のように設定する必要があります。
 
    ```
    ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
@@ -127,32 +127,32 @@ AEM には、ContextHub を使用するオプションのデータレイヤー�
 
 ### ContextHub の永続性のプレビュー {#previewing-persistence-of-contexthub}
 
-ContextHub で使用されている永続性をプレビューするには、次の方法があります。
+ContextHub で使用される永続性をプレビューするには、次の操作をおこないます。
 
-* ブラウザーのコンソールを使用する。以下に例を示します。
+* ブラウザーのコンソールを使用します。例：
 
    * Chrome:
 
-      * デベロッパー ツール／Application／Storage を選択
+      * 開発者ツール/アプリケーション/ストレージを開きます。
 
          * ローカルストレージ／（Web サイト）／ContextHubPersistence
-         * Session Storage／（Web サイト）／ContextHubPersistence
+         * セッションストレージ/（Web サイト）/ContextHubPersistence
          * Cookie／（Web サイト）／SessionPersistence
    * Firefox:
 
-      * 開発ツールを表示／ストレージを選択
+      * 開発者ツール/ストレージを開きます。
 
          * ローカルストレージ／（Web サイト）／ContextHubPersistence
-         * Session Storage／（Web サイト）／ContextHubPersistence
+         * セッションストレージ/（Web サイト）/ContextHubPersistence
          * Cookie／（Web サイト）／SessionPersistence
    * Safari:
 
-      * 環境設定／詳細／メニューバーに“開発”メニューを表示を選択
-      * 開発／JavaScriptコンソールを表示を選択
+      * メニューバーで、環境設定/詳細設定/開発メニューを表示を開きます。
+      * 開発/ JavaScript コンソールを表示を開きます。
 
-         * コンソール／ストレージ／ローカルストレージ／（Web サイト）／ContextHubPersistence
-         * コンソール／ストレージ／セッションストレージ／（Web サイト）／ContextHubPersistence
-         * コンソール／ストレージ／Cookie／（Web サイト）／ContextHubPersistence
+         * コンソール/ストレージ/ローカルストレージ/（Web サイト）/ContextHubPersistence
+         * コンソール/ストレージ/セッションストレージ/ （Web サイト）/ ContextHubPersistence
+         * コンソール/ストレージ/ Cookies / （Web サイト）/ ContextHubPersistence
    * Internet Explorer:
 
       * F12 開発者ツール／コンソールを選択
@@ -164,60 +164,60 @@ ContextHub で使用されている永続性をプレビューするには、次
 
 
 
-* ブラウザーのコンソールで ContextHub API を使用する。
+* ブラウザーのコンソールで ContextHub API を使用します。
 
-   * ContextHub には次のデータ永続性レイヤーが用意されています。
-
-      * `ContextHub.Utils.Persistence.Modes.LOCAL`（デフォルト）
-      * `ContextHub.Utils.Persistence.Modes.SESSION`
-      * `ContextHub.Utils.Persistence.Modes.COOKIE`
-      * `ContextHub.Utils.Persistence.Modes.WINDOW`
-
-      どの永続性レイヤーが使用されるかは ContextHub ストアに定義されているので、永続性の現在の状態を確認するには、すべてのレイヤーをチェックする必要があります。
-
-
-例えば、ローカルストレージに格納されているデータを表示するには、次のようにします。
-
-ContextHub で使用されている永続性をプレビューするには、次の方法があります。
-
-* ブラウザーのコンソールを使用する。以下に例を示します。
-
-   * Chrome の場合：デベロッパー ツール／Application／Storage を選択
-
-      * ローカルストレージ／（Web サイト）／ContextHubPersistence
-      * Session Storage／（Web サイト）／ContextHubPersistence
-      * Cookie／（Web サイト）／SessionPersistence
-   * Firefox の場合：開発ツールを表示／ストレージを選択
-
-      * ローカルストレージ／（Web サイト）／ContextHubPersistence
-      * Session Storage／（Web サイト）／ContextHubPersistence
-      * Cookie／（Web サイト）／SessionPersistence
-
-
-* ブラウザーのコンソールで ContextHub API を使用する。
-
-   * ContextHub には次のデータ永続性レイヤーが用意されています。
+   * ContextHub には、次のデータ永続性レイヤーが用意されています。
 
       * `ContextHub.Utils.Persistence.Modes.LOCAL`（デフォルト）
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-      どの永続性レイヤーが使用されるかは ContextHub ストアに定義されているので、永続性の現在の状態を確認するには、すべてのレイヤーをチェックする必要があります。
+      ContextHub ストアは、使用する永続性レイヤーを定義します。これにより、永続性の現在の状態を表示するために、すべてのレイヤーを確認する必要があります。
 
 
-例えば、ローカルストレージに格納されているデータを表示するには、次のようにします。
+例えば、localStorage に格納されたデータを表示するには、次のようにします。
+
+ContextHub で使用される永続性をプレビューするには、次の操作をおこないます。
+
+* ブラウザーのコンソールを使用します。
+
+   * Chrome — デベロッパーツール/アプリケーション/ストレージを開きます。
+
+      * ローカルストレージ／（Web サイト）／ContextHubPersistence
+      * セッションストレージ/（Web サイト）/ContextHubPersistence
+      * Cookie／（Web サイト）／SessionPersistence
+   * Firefox — デベロッパーツール/ストレージを開きます。
+
+      * ローカルストレージ／（Web サイト）／ContextHubPersistence
+      * セッションストレージ/（Web サイト）/ContextHubPersistence
+      * Cookie／（Web サイト）／SessionPersistence
+
+
+* ブラウザーのコンソールで ContextHub API を使用します。
+
+   * ContextHub には、次のデータ永続性レイヤーが用意されています。
+
+      * `ContextHub.Utils.Persistence.Modes.LOCAL`（デフォルト）
+      * `ContextHub.Utils.Persistence.Modes.SESSION`
+      * `ContextHub.Utils.Persistence.Modes.COOKIE`
+      * `ContextHub.Utils.Persistence.Modes.WINDOW`
+
+      ContextHub ストアは、使用する永続性レイヤーを定義します。これにより、永続性の現在の状態を表示するために、すべてのレイヤーを確認する必要があります。
+
+
+例えば、localStorage に格納されたデータを表示するには、次のようにします。
 
 ```
 var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.LOCAL });
 console.log(storage.getTree());
 ```
 
-### ContextHub の永続性の解除 {#clearing-persistence-of-contexthub}
+### ContextHub の永続性のクリア {#clearing-persistence-of-contexthub}
 
-ContextHub の永続性を解除するには：
+ContextHub の永続性をクリアするには：
 
-* 現在読み込まれているストアの永続性を解除するには、以下を実行します。
+* 現在読み込まれているストアの永続性をクリアするには：
 
    ```
    // in order to be able to fully access persistence layer, Opt-Out must be turned off
@@ -230,7 +230,7 @@ ContextHub の永続性を解除するには：
    ContextHub.resetAllStores();
    ```
 
-* 特定の永続性レイヤー（例：セッションストレージ）を解除するには、以下を実行します。
+* 特定の永続性レイヤーをクリアするには：例えば、sessionStorage は次のようになります。
 
    ```
    var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
@@ -241,7 +241,7 @@ ContextHub の永続性を解除するには：
    console.log(storage.getTree());
    ```
 
-* ContextHub のすべての永続性レイヤーを解除するには、以下のすべてのレイヤーに対して適切なコードを呼び出す必要があります。
+* すべての ContextHub 永続性レイヤーをクリアするには、すべてのレイヤーに対して適切なコードを呼び出す必要があります。
 
    * `ContextHub.Utils.Persistence.Modes.LOCAL`（デフォルト）
    * `ContextHub.Utils.Persistence.Modes.SESSION`

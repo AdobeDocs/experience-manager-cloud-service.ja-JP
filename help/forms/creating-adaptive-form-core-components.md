@@ -1,20 +1,20 @@
 ---
 title: アダプティブフォームの作成方法
-description: ' [!DNL Experience Manager Forms] を使用したアダプティブフォームの作成方法を説明します。アダプティブフォームは、情報の収集および処理を合理化するレスポンシブ HTML5 フォームです。フォームデータモデルと XML または JSON スキーマに基づいてアダプティブフォームを作成する方法について詳しく調べます。 '
+description: ' [!DNL Experience Manager Forms] を使用したアダプティブフォームの作成方法を説明します。アダプティブフォームは、情報の収集および処理を合理化するレスポンシブ HTML5 フォームです。フォームデータモデルと XML または JSON スキーマに基づいてアダプティブフォームを作成する方法について詳しく調べます。'
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: a4fd268cb143c1356de3db9d55b16ccb58b67d4b
+exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 97%
+source-wordcount: '1495'
+ht-degree: 98%
 
 ---
 
-
 # アダプティブフォーム（コアコンポーネント）の作成 {#creating-an-adaptive-form-core-components}
 
-アダプティブフォームを使用すると、魅力的でレスポンシブ、かつ動的でアダプティブなフォームを作成できます。AEM Forms は、アダプティブフォームを素早く作成するための、ビジネスユーザーにとってわかりやすいウィザードを提供します。このウィザードはクイックタブナビゲーションを備えており、アダプティブフォームを作成するための事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択することができます。
+アダプティブFormsを使用すると、動的で柔軟で柔軟な、魅力的なフォームを作成できます。 AEM Forms は、アダプティブフォームを素早く作成するための、ビジネスユーザーにとってわかりやすいウィザードを提供します。このウィザードはクイックタブナビゲーションを備えており、アダプティブフォームを作成するための事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択することができます。
 
 開始する前に、使用可能な Forms コンポーネントのタイプについて学習します。
 
@@ -29,7 +29,7 @@ ht-degree: 97%
 
 アダプティブフォームを作成するには、以下が必要です。
 
-* **お使いの環境でアダプティブフォームズコアコンポーネントを有効化**：新しいプログラムを作成すると、アダプティブコアコンポーネントはお使いの環境で既に有効になっています。アーキタイプ 39 以前の Forms as a Cloud Service 環境をご利用の場合は、[ご利用の環境でアダプティブフォームコアコンポーネントを有効にします](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)。ご利用の環境でコアコンポーネントを有効にすると、**アダプティブフォーム（コアコンポーネント）**&#x200B;のテンプレートとキャンバステーマが環境に追加されます。AEM SDK のバージョンが2023.02.0より前の場合、 [次のことを確認します。 `prerelease` お使いの環境で有効にしたフラグ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) アダプティブFormsコアコンポーネントは、2023.02.0リリース前のプリリースに含まれていたので、
+* **お使いの環境でアダプティブフォームズコアコンポーネントを有効化**：新しいプログラムを作成すると、アダプティブコアコンポーネントはお使いの環境で既に有効になっています。アーキタイプ 39 以前の Forms as a Cloud Service 環境をご利用の場合は、[ご利用の環境でアダプティブフォームコアコンポーネントを有効にします](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)。ご利用の環境でコアコンポーネントを有効にすると、**アダプティブフォーム（コアコンポーネント）**&#x200B;のテンプレートとキャンバステーマが環境に追加されます。AEM SDK バージョンが 2023.02.0 より前の場合は、2023.02.0 リリースより前にアダプティブフォームのコアコンポーネントがプレリリースの一部であったので、[お使いの環境で `prerelease` フラグが有効になっていることを確認してください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)。
 
 * **アダプティブフォームテンプレート**：テンプレートは基本構造を提供し、アダプティブフォームのアピアランス（レイアウトとスタイル）を定義します。これには、特定のプロパティやコンテンツ構造を有するフォーマット済みのコンポーネントが含まれます。また、テーマと送信アクションを定義するオプションも提供されます。 テーマは、ルックアンドフィールと送信アクションを定義し、アダプティブフォームの送信時に実行するアクションを定義します。 例えば、収集したデータをデータソースに送信する場合などです。 クラウドサービスでは、空白という名前の OOTB テンプレートが提供されます。
 
