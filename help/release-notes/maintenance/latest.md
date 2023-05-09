@@ -1,32 +1,41 @@
 ---
 title: の最新のメンテナンスリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
 description: の最新のメンテナンスリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
-source-git-commit: 4aa4954f214545dcd768fdf955f1fc2f776da939
+exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
+source-git-commit: ea3a476f7f2d7d97a2428c6facf61b746dba7a23
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 17%
+source-wordcount: '208'
+ht-degree: 25%
 
 ---
-
 
 # メンテナンスリリースノート {#maintenance-release-notes}
 
 以下の節では、as a Cloud ServiceExperience Managerの現在のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 11835 {#release-11835}
+## リリース 11873 {#release-11873}
 
-2023 年 4 月 19 日に公開されたメンテナンスリリース11835の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース11382のアップデートです。
+2023 年 5 月 3 日に公開されたメンテナンスリリース11873の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース11835のアップデートです。
 
 このメンテナンスリリースにおける機能イネーブルメントでは、包括的な機能セットを提供します。詳しくは、[最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
-### 修正された問題 {#fixed-issues-11835}
+### 機能強化 {#enhancements}
 
-- SITES-12573 - 1 つの変数が指定されていない場合、フィルター内の変数を使用するGraphQLクエリは失敗します。 このリリースにはアップデートしないでください。AEM as a Cloud Serviceと共にGraphQLを使用する必要があります。
-- SKYOPS-51970 - buildImage ステップで使用される FACT バージョンの回帰を識別し、一致しないユーザーマッピングを引き起こしました。
-- GRANITE-44542 — パッケージフィルターに含まれるフォルダーに対して（jcr:primaryType を含む.content.xml を提供することで）パッケージノードタイプを指定しなかったお客様に対して、問題が報告されています。 その結果、これらのフォルダーが nt:folder として扱われ、様々な状況で問題が発生していました。
-- SKYOPS-56928 - Apache HTTPD 回帰は、404 エラーを引き起こす可能性があります。 これらの問題が発生した場合は、安全上の理由から、以前のバージョンにロールバックし、その期間中にパイプラインが実行されるのを防ぐことをお勧めします。
+- SITES-1200 — タグベースのフィルタリングによる Search API の強化
+- GRANITE-42939 - OAUTH-server コードに廃止の注釈と警告を追加する
 
-### 組み込みテクノロジー {#embedded-tech-11835}
+### 既知の問題 {#known-issues-11873}
+
+なし。
+
+### 修正された問題 {#fixed-issues-11873}
+
+- SKYSI-19884/SKYOPS-53745 - PublishPageRenderingErrorsHigh の問題を修正しました。
+- GRANITE-4388 - Mongo で大量の DAM アセット書き込みがおこなわれた後のスループットの低下を修正しました。
+- SITES-11922 — プレビューから非公開にすると同期ステータスが削除されなかった問題を修正しました。
+- ASSETS-21648 — アセット関連機能に関する権限の問題を修正しました。
+
+### 組み込みテクノロジー {#embedded-tech-11873}
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
