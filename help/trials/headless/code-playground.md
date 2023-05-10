@@ -1,13 +1,13 @@
 ---
 title: シンプルなアプリでのコンテンツのレンダリング
-description: CodePen サンプルアプリとAEM Headless Client for JavaScript を使用して、体験環境から JSON コンテンツを取得する方法を説明します。
+description: CodePen サンプルアプリと JavaScript 用 AEM ヘッドレスクライアントを使用して、体験版環境から JSON コンテンツを取得する方法を説明します。
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 5%
+ht-degree: 14%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 5%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript"
->title="シンプルなアプリでコンテンツをレンダリング"
->abstract="CodePen サンプルアプリとAEM Headless Client for JavaScript を使用して、体験環境から JSON コンテンツを取得する方法を説明します。"
+>title="シンプルなアプリでのコンテンツのレンダリング"
+>abstract="CodePen サンプルアプリと JavaScript 用 AEM ヘッドレスクライアントを使用して、体験版環境から JSON コンテンツを取得する方法を説明します。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="サンプル CodePen アプリの起動"
->abstract="このガイドでは、体験環境から基本的な JavaScript Web アプリケーションに JSON データをクエリする手順を説明します。 前の学習モジュールでモデル化して作成したコンテンツフラグメントを使用するので、このガイドに進む前に、まずこれらのガイドを参照してください。"
+>abstract="このガイドでは、体験版環境から基本的な JavaScript web アプリへの JSON データのクエリについて説明します。以前の学習モジュールでモデル化および作成したコンテンツフラグメントを使用するので、このガイドに進む前に、最初にこれらのガイドを確認してください。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"

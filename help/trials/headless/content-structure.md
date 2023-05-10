@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: 7134951a588eae3ee0c7c11abea17a34eac21474
 workflow-type: tm+mt
 source-wordcount: '1062'
-ht-degree: 37%
+ht-degree: 43%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 37%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="アプリのコンテンツ構造の作成"
->abstract="この一連のインタラクティブガイドに従うことで、ヘッドレスコンテンツの基盤となる構造（コンテンツフラグメントモデルと呼ばれます）を作成する方法を学習できます。"
+>abstract="この一連のインタラクティブガイドに従うと、ヘッドレスコンテンツの基盤となる構造（コンテンツフラグメントモデルと呼ばれる）の作成方法を習得できます。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="モデルコンソールの起動"
->abstract="Adobe Experience Manager as a Cloud Service のコンテンツに対して、コンテンツフラグメントモデルと呼ばれる再利用可能なスキーマを作成する方法について説明します。これが重要な手順である理由については、ビデオをご覧ください。 <br><br>この学習モジュールでは、旅行サイトを例として使用し、旅行を表すモデルの作成を順を追って説明します。 このモデルは後のモジュールで参照するので、指定された命名スキーマに従ってください。<br><br>下のボタンをクリックし、このガイドに従って、新しいタブでこのモジュールを起動します。"
+>abstract="Adobe Experience Manager as a Cloud Service のコンテンツに対して、コンテンツフラグメントモデルと呼ばれる再利用可能なスキーマを作成する方法について説明します。これが重要な手順である理由については、ビデオをご覧ください。 <br><br>この学習モジュールでは、旅行サイトを例として使用し、旅行を表すモデルの作成について順を追って説明します。このモデルは後のモジュールで参照するので、指定された命名スキーマに従ってください。<br><br>下のボタンをクリックし、このガイドに従って、新しいタブでこのモジュールを起動します。"
 >additional-url="https://video.tv.adobe.com/v/3413261/?captions=jpn" text="コンテンツ構造の概要ビデオ"
 
 >[!CONTEXTUALHELP]
