@@ -2,10 +2,10 @@
 title: ソースからのコンテンツの抽出
 description: ソースからのコンテンツの抽出
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 614b2d9e0b3c34bdef854115dce91effed0b36f8
+source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 100%
+source-wordcount: '701'
+ht-degree: 87%
 
 ---
 
@@ -49,13 +49,13 @@ ht-degree: 100%
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
-   また、コンテンツ転送ページに移動して、Cloud Acceleration Manager で抽出段階の進行状況を監視することもできます。
+   また、 Cloud Acceleration Manager からコンテンツ転送ページに移動して抽出段階の進行状況を監視し、「 」をクリックして詳細を確認することもできます。 **...** そしてそれから **詳細を表示**.
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
-1. 抽出が完了したら、「**...**」に続いて「**詳細を表示**」をクリックして、「**ソース**」や「**パス**」などの他の列で、データを入力した移行セットの詳細を確認します。
+1. 抽出が完了したら、次のような他の列を確認します。 **ソース** および **パス** をクリックして入力した移行セットの詳細を表示するには、 **...** そしてそれから **詳細を表示** をクリックすると、抽出の各ステップの期間を含む詳細が表示されます。 抽出中にこのダイアログを表示して、手順の進行状況を確認します。
 
-   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18.png)
+   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18b.png)
 
 
 ## 追加抽出 {#top-up-extraction-process}

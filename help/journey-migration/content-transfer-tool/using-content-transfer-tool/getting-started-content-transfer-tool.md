@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの基本を学ぶ
 description: コンテンツ転送ツールの基本を学ぶ
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
 workflow-type: tm+mt
-source-wordcount: '1388'
-ht-degree: 91%
+source-wordcount: '1406'
+ht-degree: 89%
 
 ---
 
@@ -91,6 +91,10 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
    次のダイアログが表示されます。 移行セットは、無操作状態が長時間続くと有効期限が切れます。 警告がプロジェクトカードおよび移行ジョブテーブルの行に一定期間表示された後、移行セットは期限切れになり、そのデータは使用できなくなります。 レビュー [移行セットの有効期限](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 」を参照してください。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
+
+   >[!NOTE]
+   >
+   >名前は、AEMノードと同じ規則に従う必要があるので、次の文字を含めることはできません。. / : [ ] | *
 
 1. これで、リスト表示に移行リストが表示されます。3 つのドット記号（**...**）をクリックしてドロップダウンを開き、「**抽出キーをコピー**」をクリックします。このキーは、抽出段階で必要になります。この抽出キーをコピーします。
 

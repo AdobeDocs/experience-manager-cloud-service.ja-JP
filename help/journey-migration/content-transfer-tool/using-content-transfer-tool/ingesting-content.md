@@ -2,10 +2,10 @@
 title: Target へのコンテンツの取り込み
 description: Target へのコンテンツの取り込み
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 79f5133e681261fa8f7604f1fc9c3fbf5c6a5f59
+source-git-commit: addfa18ed8fa45b1cfc17d4e35cbdde47b491507
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 86%
+source-wordcount: '1753'
+ht-degree: 85%
 
 ---
 
@@ -59,7 +59,9 @@ ht-degree: 86%
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. 取り込みが完了したら、画面の右上隅にある (i) ボタンをクリックして、取り込みジョブに関する詳細情報を取得します。
+1. クリック **一** ボタンをクリックして、取り込みジョブの詳細を取得します。 取り込みの実行中または完了中に、取り込みの各手順の期間を確認するには、 **...** そしてそれから **期間を表示**. また、抽出した情報は、取り込まれている内容を実現するためにも示されます。
+
+   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
 <!-- Alexandru: hiding temporarily, until it's reviewed 
 
@@ -85,7 +87,7 @@ ht-degree: 86%
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-05.png) -->
 
-## 追加取り込み {#top-up-ingestion-process}
+## 追加インジェスト {#top-up-ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
