@@ -2,10 +2,10 @@
 title: カスタムコード品質ルール
 description: このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。これらは、Adobe Experience Manager Engineering のベストプラクティスに基づいています。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
+source-git-commit: 288faf39a86411bb96d781a320abfa47538b2066
 workflow-type: tm+mt
-source-wordcount: '3473'
-ht-degree: 100%
+source-wordcount: '3508'
+ht-degree: 99%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 100%
 >abstract="このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。これらは、Adobe Experience Manager Engineering のベストプラクティスに基づいています。"
 
 このページでは、[コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)の一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。これらは、Experience Manager Engineering のベストプラクティスに基づいています。
+
+>[!NOTE]
+>
+>完全な SonarQube ルールは、Adobe固有の情報が原因で、ダウンロードできません。 [このリンクを使用して、ルールの完全なリストをダウンロードできます。](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) ルールの説明と例については、このドキュメントを引き続きお読みください。
 
 >[!NOTE]
 >
