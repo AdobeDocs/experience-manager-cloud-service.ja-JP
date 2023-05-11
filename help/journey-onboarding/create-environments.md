@@ -3,10 +3,10 @@ title: 環境の作成
 description: Cloud Manager を使用して最初の環境を作成する方法を説明します。
 role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 100%
+source-wordcount: '773'
+ht-degree: 86%
 
 ---
 
@@ -30,12 +30,13 @@ ht-degree: 100%
 
 旅行関連のメディアに焦点を当てたテナントである理論上の WKND Travel and Adventure Enterprises の例を思い出すと、WKND マガジン部門用の Sites プログラムと WKND メディア部門用の Assets プログラムの 2 つのプログラムがある可能性があります。各プログラムには、サイトの実際のトラフィックを処理する 1 つの実稼動環境と、新しいアプリケーションコードをテストするための 1 つの開発環境など、いくつかの環境が含まれる可能性があります。
 
-環境には、次の 3 つのタイプがあります。
+環境には、次の 4 つのタイプがあります。
 
 * **実稼動環境とステージング環境** - 実稼動環境とステージング環境はペアとして使用でき、それぞれ実稼動およびテストのために使用されます。
 * **開発環境**：開発環境は、開発およびテストのために構築でき、実稼動以外のパイプラインにのみ関連付けることができます。
+* **迅速な開発** - 迅速な開発環境（RDE）を使用すると、開発者は、ローカル開発環境での動作が証明済みの機能に要するテスト時間を最小限に抑え、変更を迅速にデプロイおよび確認できます。
 
-このオンボーディングジャーニーを目的として、開発環境を作成します。
+このオンボーディングジャーニーの目的上、最小限の作業を開始するために、AEMas a Cloud Serviceの機能の調査に使用できる開発環境を作成します。
 
 ## 環境の作成 {#creating-environments}
 
@@ -81,7 +82,9 @@ ht-degree: 100%
 
 ## その他のリソース {#additional-resources}
 
-その他に、次のリソースも参照してください。
+オンボーディングジャーニーのコンテンツの範囲を超えたい場合の追加のオプションリソースを次に示します。
 
 * [環境の管理](/help/implementing/cloud-manager/manage-environments.md) - 作成できる環境のタイプと、Cloud Manager プロジェクト用に環境を作成する方法について説明します。
 * [Adobe Cloud Manager の使用 - 環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=ja) - Cloud Manager 環境は、AEM オーサリング、パブリッシング、およびディスパッチャーの各サービスで構成されています。様々な環境がどのように役割をサポートし、様々な CI／CD パイプラインを使用して関与できるかについて説明します。
+* [AEMチャンピオンのヒントとテクニック — Cloud Manager 環境タイプ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md) - AEMチャンピオンの Cloud Manager 環境タイプの概要については、このビデオをご覧ください。
+* [迅速な開発環境](/help/implementing/developing/introduction/rapid-development-environments.md) - RDE の使用方法の詳細については、このドキュメントを参照してください

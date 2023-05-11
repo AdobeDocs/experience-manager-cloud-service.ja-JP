@@ -4,10 +4,10 @@ description: システム管理者が必要なクラウドリソースを設定�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 100%
+source-wordcount: '581'
+ht-degree: 93%
 
 ---
 
@@ -81,5 +81,7 @@ AEM as a Cloud Service で開発者とデプロイメントマネージャーが
 
 ## その他のリソース {#additional-resources}
 
-[ページのオーサリングのクイックスタートガイド](/help/sites-cloud/authoring/getting-started/quick-start.md)- AEM におけるオーサリングの基本事項の概要を参照するには、ここから始めてください。
+オンボーディングジャーニーのコンテンツの範囲を超えたい場合の追加のオプションリソースを次に示します。
+
+[ページのオーサリングのクイックスタートガイド](/help/sites-cloud/authoring/getting-started/quick-start.md) - AEMのオーサリングの基本事項の概要については、ここから始めてください。
 [ヘッドレスオーサリングジャーニー](/help/journey-headless/author/overview.md) - ヘッドレスコンテンツを作成する場合は、このガイド付きの説明に従ってください。

@@ -4,10 +4,10 @@ description: クラウドリソースを設定したら、AEM 製品プロファ
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: fd0716a95d66908e215ed44bc773ed3c26e0382b
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 100%
+source-wordcount: '788'
+ht-degree: 95%
 
 ---
 
@@ -101,6 +101,8 @@ AEM 製品プロファイルに割り当てられたすべてのユーザーは�
 
 ## その他のリソース {#additional-resources}
 
-* [Admin Console での製品とユーザーアクセスの管理](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console)- Admin Console を使用してユーザーアクセスを管理する方法を説明します。
+オンボーディングジャーニーのコンテンツの範囲を超えたい場合の追加のオプションリソースを次に示します。
+
+* [製品とユーザーアクセスのAdmin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console)  — ユーザーアクセスを管理するAdmin Consoleの使用方法を説明します。
 * [AEM へのアクセスの設定のウォークスルー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=ja) - Admin Console で Adobe IMS ユーザー、ユーザーグループ、製品プロファイルを設定する方法については、こちらの簡潔なウォークスルーを参照してください。
 

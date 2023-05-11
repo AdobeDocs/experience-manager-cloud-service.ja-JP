@@ -4,10 +4,10 @@ description: システム管理者が必要なクラウドリソースを設定�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 100%
+source-wordcount: '1419'
+ht-degree: 98%
 
 ---
 
@@ -143,6 +143,8 @@ Cloud Manager でセルフサービスの Git アカウント管理を使用す�
 >オンボーディングした後は、最小限の AEM 構成でサンドボックス環境に [AEM Reference Demos Add-On を簡単に追加する方法を学ぶ](/help/journey-sites/demos-add-on/overview.md) ことができ、ベストプラクティスに基づいた豊富な例を使用して AEM の強力な機能をテストできます。
 
 ## その他のリソース {#additional-resources}
+
+オンボーディングジャーニーのコンテンツの範囲を超えたい場合の追加のオプションリソースを次に示します。
 
 * [リポジトリへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md) - Cloud Manager でセルフサービスの Git アカウント管理を使用して、Git リポジトリにアクセスして管理する方法について説明します。
 * [Cloud Manager での Git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - Cloud Manager の Git リポジトリを使用する方法と、オンプレミスで顧客管理された独自の Git リポジトリを Cloud Manager と統合する方法について説明します。
