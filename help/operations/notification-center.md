@@ -3,9 +3,9 @@ title: 通知センター
 description: 通知センターを活用して、インシデントやその他の重要な情報に関する便利な対応を取る
 hidefromtoc: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: b72d22e8788c04ab4faa3616a4a0ce5e6d8ce991
+source-git-commit: 283493187142e1aeaaf272818bb9b7921841ed67
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,9 @@ AEM as aCloud Serviceは、即時の対応が必要な重大なインシデン�
 次の手順に従って、受信通知を設定します。
 
 1. 説明に従って、次の製品プロファイルを作成します。 [この記事では、](/help/journey-onboarding/notification-profiles.md)」で、組織の適切なAdobeID をこれらのプロファイルに割り当てます。 これにより、管理者は、これらの通知を受け取る資格を持つユーザーを決定できます。
-1. 前の手順で割り当てられた各ユーザーは、通知の受信方法を設定できます。 の [Experience Cloud設定ページ](https://experience.adobe.com/preferences/notification-section)、Experience Manager購読が有効になっていること、および **運用インシデント** および **事前の推奨事項** チェックボックスがオンになっている。 また、E メールセクションを **インスタント通知** したがって、インシデントが発生するとすぐに通知が受信されます。
+1. 前の手順で割り当てられた各ユーザーは、通知の受信方法を設定できます。 の [Experience Cloud設定ページ](https://experience.adobe.com/preferences/notification-section)、Experience Manager購読が有効になっていること、および **運用インシデント** および **事前の推奨事項** アプリ内列と E メール列の両方にチェックボックスがオンになっている（下図を参照）。 また、E メールセクションを **インスタント通知** したがって、インシデントが発生するとすぐに通知が受信されます。
+
+![購読を設定](/help/operations/assets/configure-subscriptions.png)
 
 >[!NOTE]
 >通知は組織レベルで機能するので、購読者は、プログラム内のすべてのプログラムと環境に関する通知を受け取ります。
