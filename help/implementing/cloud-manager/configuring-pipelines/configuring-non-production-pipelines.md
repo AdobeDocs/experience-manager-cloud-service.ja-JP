@@ -3,10 +3,10 @@ title: 実稼動以外のパイプラインの設定
 description: 実稼動環境にデプロイする前にコードの品質をテストするための実稼動以外のパイプラインを設定する方法を説明します。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 0dd1cfba81eb8dfab3e002333868ec79ebc5e96c
+source-git-commit: 5b4366c1e8791ffca4b5ad47f94de44f6df2cd0b
 workflow-type: tm+mt
-source-wordcount: '1403'
-ht-degree: 87%
+source-wordcount: '1369'
+ht-degree: 90%
 
 ---
 
@@ -94,12 +94,6 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
 パイプラインが保存され、**プログラムの概要**&#x200B;ページの&#x200B;**パイプライン**&#x200B;カードの[パイプラインを管理](managing-pipelines.md)できるようになります。
 
 ### フルスタックコード {#full-stack-code}
-
->[!NOTE]
->
->* この機能は、まだ一般には利用できません。 2023 年 6 月に公開予定です。
->* この機能を試して、改善に関するフィードバックを提供したい場合は、Adobe担当者にお問い合わせください。
-
 
 フルスタックコードパイプラインは、1 つ以上の AEM サーバーアプリケーションを含んだバックエンドおよびフロンエンドコードビルドと HTTPD／Dispatcher 設定を同時にデプロイします。このタイプのパイプラインについて詳しくは、[CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)のドキュメントを参照してください。
 
