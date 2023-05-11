@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service のコンテンツ�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service のコンテンツを作成するためにリッチテキストエディターを設定します。'
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: e6ab7ba91b52d3479a85870e8ffa8e8d2f1e303e
 workflow-type: tm+mt
-source-wordcount: '1964'
-ht-degree: 83%
+source-wordcount: '1876'
+ht-degree: 82%
 
 ---
 
@@ -95,14 +95,14 @@ RTE の基本機能は、該当するプラグインのノードにある `featu
 | プラグイン ID | 機能 | 説明 |
 |--- |--- |--- |
 | edit | `cut`、`copy`、`paste-default`、`paste-plaintext`、`paste-wordhtml` | [切り取り、コピーおよび 3 つの貼り付けモード](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles). |
-| [findreplace](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | `find`、`replace` | 検索と置換。 |
-| [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | `bold`、`italic`、`underline` | [基本的なテキストの書式設定](configure-rich-text-editor-plug-ins.md#textstyles). |
-| [画像](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | `image` | 基本的な画像サポート（コンテンツまたはコンテンツファインダーからのドラッグ）。ブラウザーの種類に応じて、様々なサポート機能が提供されます |
-| [keys](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) | - | この値を定義するには、 [タブのサイズ](configure-rich-text-editor-plug-ins.md#tabsize). |
-| [justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | `justifyleft`、`justifycenter`、`justifyright` | 段落の整列。 |
-| [リンク](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | `modifylink`、`unlink`、`anchor` | [ハイパーリンクとアンカー](configure-rich-text-editor-plug-ins.md#linkstyles). |
-| [lists](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | `ordered`、`unordered`、`indent`、`outdent` | このプラグインは、[インデントとリスト](configure-rich-text-editor-plug-ins.md#indentmargin)（ネストされたリストを含む）の両方を制御します。 |
-| [misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | `specialchars`、`sourceedit` | 各種ツールを使用して、[特殊文字](configure-rich-text-editor-plug-ins.md#spchar)の入力や HTML ソースの編集をおこなえます。また、独自のリストを定義する場合は、[特殊文字の範囲](configure-rich-text-editor-plug-ins.md#definerangechar)を追加できます。 |
+| findreplace | `find`、`replace` | 検索と置換。 |
+| format | `bold`、`italic`、`underline` | [基本的なテキストの書式設定](configure-rich-text-editor-plug-ins.md#textstyles). |
+| 画像 | `image` | 基本的な画像サポート（コンテンツまたはコンテンツファインダーからのドラッグ）。ブラウザーの種類に応じて、様々なサポート機能が提供されます |
+| keys | - | この値を定義するには、 [タブのサイズ](configure-rich-text-editor-plug-ins.md#tabsize). |
+| justify | `justifyleft`、`justifycenter`、`justifyright` | 段落の整列。 |
+| リンク | `modifylink`、`unlink`、`anchor` | [ハイパーリンクとアンカー](configure-rich-text-editor-plug-ins.md#linkstyles). |
+| lists | `ordered`、`unordered`、`indent`、`outdent` | このプラグインは、[インデントとリスト](configure-rich-text-editor-plug-ins.md#indentmargin)（ネストされたリストを含む）の両方を制御します。 |
+| misctools | `specialchars`、`sourceedit` | 各種ツールを使用して、[特殊文字](configure-rich-text-editor-plug-ins.md#spchar)の入力や HTML ソースの編集をおこなえます。また、独自のリストを定義する場合は、[特殊文字の範囲](configure-rich-text-editor-plug-ins.md#definerangechar)を追加できます。 |
 | Paraformat | `paraformat` | `<h2>`デフォルトの段落形式は、段落、見出し 1、見出し 2 および見出し 3（`<p>`、`<h1>`、`<h3>`）です。以下が可能です。 [他の段落書式を追加する](configure-rich-text-editor-plug-ins.md#paraformats) またはリストを拡張します。 |
 | spellcheck | `checktext` | [言語対応スペルチェッカー](configure-rich-text-editor-plug-ins.md#adddict). |
 | スタイル | `styles` | CSS クラスを使用したスタイル設定のサポート。テキストで使用するスタイルの範囲を独自に追加（または拡張）する場合は、[新しいテキストスタイルを追加](configure-rich-text-editor-plug-ins.md#textstyles)します。 |
