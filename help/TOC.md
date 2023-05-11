@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 06a10f1ec7a3f4842a9cac1f1fe8a889a275cabb
+source-git-commit: 6e451739a2d2f9cd045824658fe0f3c5bd1d245b
 workflow-type: tm+mt
-source-wordcount: '4066'
+source-wordcount: '4068'
 ht-degree: 97%
 
 ---
@@ -887,7 +887,8 @@ ht-degree: 97%
          + [SPA リファレンスドキュメント](/help/implementing/developing/hybrid/reference-materials.md)
    + 開発者ツール {#developer-tools}
       + [開発者モード](/help/implementing/developing/tools/developer-mode.md)
-      + [AEM Developer Tools for Eclipse ](/help/implementing/developing/tools/eclipse.md)
+      + [Eclipse 用 AEM 開発者ツール](/help/implementing/developing/tools/eclipse.md)
+      + [コンテンツのコピー](/help/implementing/developing/tools/content-copy.md)
       + [Content Package Maven プラグイン](/help/implementing/developing/tools/maven-plugin.md)
       + [AEM Repo ツール](/help/implementing/developing/tools/repo-tool.md)
       + [CRXDE Lite の使用](/help/implementing/developing/tools/crxde.md)
