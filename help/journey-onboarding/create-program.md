@@ -3,10 +3,10 @@ title: プログラムの作成
 description: Cloud Manager で最初のプログラムを作成する方法を説明します。
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 97%
+source-wordcount: '686'
+ht-degree: 87%
 
 ---
 
@@ -51,11 +51,15 @@ Cloud Manager のプログラムは、Cloud Manager の一連の環境を表し�
 
 1. Cloud Manager のランディングページで、画面の右上隅にある「**プログラムを追加**」をクリックします。
 
-   ![Cloud Manager ランディングページ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+   ![Cloud Manager ランディングページ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. プログラム作成ウィザードで、「**サンドボックスを設定する**」を選択し、プログラム名を入力して、「**作成**」をクリックします。
+1. プログラムの作成ウィザードで、「 」を選択します。 **サンドボックスの設定** プログラム名を入力し、タップまたはクリックします。 **続行**.
 
    ![指定タイプのプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
+
+1. 内 **サンドボックスの設定** ダイアログが表示されたら、サンドボックスプログラムで有効にするソリューションを選択できます。 この **サイト** および **Assets** ソリューションは、常にサンドボックスプログラムに含まれ、自動的に選択されます。 オンボーディングの例ではこれで十分です。 「**作成**」をクリックします。
+
+   ![ソリューションの選択](assets/set-up-sandbox-onboarding.png)
 
 ランディングページに新しいサンドボックスプログラムカードが表示され、セットアッププロセスの進行に応じてステータスインジケーターも表示されます。
 

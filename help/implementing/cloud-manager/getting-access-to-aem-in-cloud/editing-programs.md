@@ -2,10 +2,10 @@
 title: プログラムの編集
 description: 実稼動およびサンドボックスプログラムを編集し、作成後にオプションを調整する方法について説明します。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 3e2635ff34f66c9f7504799204091ef921ccd860
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 100%
+source-wordcount: '525'
+ht-degree: 98%
 
 ---
 
@@ -53,6 +53,7 @@ ht-degree: 100%
    ![運用開始設定の編集](assets/edit-program-go-live.png)
 
    * この日付は情報提供のみを目的とし、プログラム概要ページの運用開始ウィジェットをトリガーし、AEM as a Cloud Service のベストプラクティスドキュメントへの製品内リンクをタイムリーに提供して、運用開始エクスペリエンスの成功とスムーズ化を実現します。
+   * このタブは、サンドボックスプログラムでは使用できません。
 
 1. 「**更新**」をクリックして、プログラムに対する変更を保存します。
 
