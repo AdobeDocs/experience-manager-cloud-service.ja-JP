@@ -2,10 +2,10 @@
 title: の最新のメンテナンスリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
 description: の最新のメンテナンスリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: ea3a476f7f2d7d97a2428c6facf61b746dba7a23
+source-git-commit: 3823b9369c612058998e265346b3f727001aef4b
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 25%
+source-wordcount: '238'
+ht-degree: 21%
 
 ---
 
@@ -26,7 +26,10 @@ ht-degree: 25%
 
 ### 既知の問題 {#known-issues-11873}
 
-なし。
+- SITES-13253 — コアコンポーネント v2.22.6の RecursionTooDeepException
+- SITES-13256 — 特別な URL で設定されたコア WCM ティーザーにより、ページのレンダリングが壊れる
+- GRANITE-45462 — メッセージングクライアントの複数地域設定
+- GRANITE-45562 — 画像の組み合わせで 404 ではなく 200 が返される問題
 
 ### 修正された問題 {#fixed-issues-11873}
 
