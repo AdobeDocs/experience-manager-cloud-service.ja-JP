@@ -2,10 +2,10 @@
 title: 迅速な開発環境
 description: クラウド環境で迅速な開発反復処理を行うために、迅速な開発環境を活用する方法について説明します。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: 0095cb1fff99a52f5a048833b3d5a65643c1056d
 workflow-type: tm+mt
-source-wordcount: '3304'
-ht-degree: 98%
+source-wordcount: '3325'
+ht-degree: 97%
 
 ---
 
@@ -450,6 +450,8 @@ RDE がリセットされると、すべてのコンテンツが削除される�
 1. コマンドラインツールを使用したコンテンツパッケージの RDE への明示的な同期化
 
 1. /apps の下の install.rde フォルダー内の Git にサンプルコンテンツを配置してコミットし、コマンドラインツールを使用して包括的なコンテンツパッケージを RDE に同期します。
+
+1. 以下を使用： [コンテンツコピーツール](/help/implementing/developing/tools/content-copy.md) を使用して、実稼動、ステージング、開発環境、または別の RDE から定義済みのコンテンツセットをコピーできます。
 
 1. パッケージマネージャーの使用
 
