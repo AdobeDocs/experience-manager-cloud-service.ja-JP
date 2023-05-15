@@ -2,7 +2,7 @@
 title: AEMのユニバーサルエディターの概要
 description: ユニバーサルエディターへのアクセス権を取得する方法と、それを使用する最初のAEMアプリの実装を開始する方法について説明します。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 1a98abc3baffe2de63a6030d9d65b7137603bec5
+source-git-commit: e62ddc2a72d12ad356decc0e2a933d8c7d308469
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 0%
@@ -109,7 +109,7 @@ Universal Editor サービスには、 [URN (Uniform Resource Name)](https://en.
 アプリで使用される接続は、 `<meta>` ページの `<head>`.
 
 ```html
-<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aem:editor:aemconnection:<referenceName>" content="<protocol>:<url>">
 ```
 
 * `<referenceName>`  — これは、接続を識別するためにドキュメントで再利用される短い名前です。 例： `aemconnection`
