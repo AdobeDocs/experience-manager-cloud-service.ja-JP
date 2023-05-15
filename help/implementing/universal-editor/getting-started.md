@@ -2,9 +2,9 @@
 title: AEMのユニバーサルエディターの概要
 description: ユニバーサルエディターへのアクセス権を取得する方法と、それを使用する最初のAEMアプリの実装を開始する方法について説明します。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: a933073346e6b7c3b4256269f5796a64a6dfbfa8
+source-git-commit: 1a98abc3baffe2de63a6030d9d65b7137603bec5
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ Universal Editor サービスには、 [URN (Uniform Resource Name)](https://en.
 * `<protocol>`  — 使用する Universal Editor Persistence Service の永続化プラグインを示します。 例： `aem`
 * `<url>`  — 変更が保持されるシステムへの URL です。 例： `http://localhost:4502`
 
-短い識別子 `auecon` は、Universal Editor ConnectionAdobeの略です。
+識別子 `adobe:aem:editor:aemconnection` は、ユニバーサルエディターのAdobeを表します。
 
 `itemid`が `urn` プレフィックスを使用して識別子を短縮します。
 
@@ -136,8 +136,8 @@ itemid="urn:<referenceName>:<resource>"
 ```html
 <html>
 <head>
-    <meta name="urn:auecon:aemconnection" content="aem:https://localhost:4502">
-    <meta name="urn:auecon:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
+    <meta name="urn:adobe:aem:editor:aemconnection:aemconnection" content="aem:https://localhost:4502">
+    <meta name="urn:adobe:aem:editor:aemconnection:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
 </head>
 <body>
         <aside>

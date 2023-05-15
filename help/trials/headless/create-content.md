@@ -4,7 +4,7 @@ description: 前に作成したコンテンツフラグメントモデルを使�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 73ff4edc591e64e797e14d00d6f87759e3f1301a
+source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 65%
@@ -57,7 +57,7 @@ ht-degree: 65%
 
 1. コンテンツフラグメントエディターには、選択したモデルで定義したフィールドが表示されます。ここで、各フィールドにコンテンツを追加してコンテンツフラグメントを完成させることができます。進行状況は自動的に保存されます。
 
-1. 次を提供： **タイトル** 」と入力して、 `Tuscan adventure`.
+1. 次を提供： **タイトル** 」と入力して、 `Tuscan Adventure`.
 
 1. 次を提供： **説明** を次のテキストに貼り付けます。
 
