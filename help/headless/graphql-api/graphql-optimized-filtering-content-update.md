@@ -2,9 +2,9 @@
 title: 最適化された GraphQL フィルタリング用コンテンツフラグメントの更新
 description: ヘッドレスコンテンツ配信のために、Adobe Experience Manager as a Cloud Service で最適化された GraphQL フィルタリング用にコンテンツフラグメントを更新する方法について説明します。
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 02e27a8eee18893e0183b3ace056b396a9084b12
+source-git-commit: a18742abdd4693ab1e97d7db3ed6854b735bc0f9
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '913'
 ht-degree: 80%
 
 ---
@@ -50,18 +50,9 @@ GraphQL フィルターのパフォーマンスを最適化するには、コン
       <th>タイプ</th>
       <th>メモ</th>
      </tr>
-     <tr>
+
+   <tr>
       <td>1</td>
-      <td>`AEM_RELEASE_CHANNEL` </td>
-      <td>`prerelease` </td>
-      <td> </td>
-      <td>すべて </td>
-      <td> </td>
-      <td>変数 </td>
-      <td>この機能を有効にするのに必須です。 </td>
-     </tr>
-     <tr>
-      <td>2</td>
       <td>`CF_MIGRATION_ENABLED` </td>
       <td>`1` </td>
       <td>`0` </td>
@@ -71,7 +62,7 @@ GraphQL フィルターのパフォーマンスを最適化するには、コン
       <td>コンテンツ移行ジョブのトリガーを有効（!=0）または無効（0）にします。 </td>
      </tr>
      <tr>
-      <td>3</td>
+      <td>2</td>
       <td>`CF_MIGRATION_ENFORCE` </td>
       <td>`1` </td>
       <td>`0` </td>
@@ -81,7 +72,7 @@ GraphQL フィルターのパフォーマンスを最適化するには、コン
       <td>コンテンツフラグメントの再移行を実施（!=0）します。<br>このフラグを 0 に設定すると、CF の増分移行が行われます。つまり、何らかの理由でジョブが終了した場合、ジョブの次回の実行ではジョブが終了した時点から移行が開始されます。最初の移行を適用することをお勧めします（値 = 1）。 </td>
      </tr>
      <tr>
-      <td>4</td>
+      <td>3</td>
       <td>`CF_MIGRATION_BATCH` </td>
       <td>`50` </td>
       <td>`50` </td>
@@ -91,7 +82,7 @@ GraphQL フィルターのパフォーマンスを最適化するには、コン
       <td>移行後にコンテンツフラグメント数を保存するためのバッチのサイズ。<br>1 つのバッチでリポジトリに保存される CF の数に関連し、リポジトリへの書き込み数を最適化するために使用できます。 </td>
      </tr>
      <tr>
-      <td>5</td>
+      <td>4</td>
       <td>`CF_MIGRATION_LIMIT` </td>
       <td>`1000` </td>
       <td>`1000` </td>
@@ -101,7 +92,7 @@ GraphQL フィルターのパフォーマンスを最適化するには、コン
       <td>一度に処理するコンテンツフラグメントの最大数。<br>`CF_MIGRATION_INTERVAL` に関する注意事項も参照してください。 </td>
      </tr>
      <tr>
-      <td>6</td>
+      <td>5</td>
       <td>`CF_MIGRATION_INTERVAL` </td>
       <td>`60` </td>
       <td>`600` </td>
