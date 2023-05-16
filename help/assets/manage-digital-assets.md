@@ -6,14 +6,19 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '4356'
+source-wordcount: '4378'
 ht-degree: 84%
 
 ---
 
 # アセットの管理 {#manage-assets}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=ja) |
+| AEM as a Cloud Service | この記事 |
 
 ここでは、[!DNL Adobe Experience Manager Assets] でアセットを管理および編集する方法を説明します。[!DNL Content Fragments] を管理するには、[[!DNL Content Fragments]](content-fragments/content-fragments.md) アセットを参照してください。
 

@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Asset Management,DRM
 role: User,Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '1345'
+source-wordcount: '1367'
 ht-degree: 93%
 
 ---
 
 # デジタルアセットのデジタル著作権管理 {#digital-rights-management-in-assets}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=ja) |
+| AEM as a Cloud Service | この記事 |
 
 多くの場合、デジタルアセットは、利用の条件と期間を明記したライセンスに関連付けられています。[!DNL Experience Manager] プラットフォームを使用すると、アセットの有効期限に関する情報とライセンス情報を効率的に管理できます。
 
