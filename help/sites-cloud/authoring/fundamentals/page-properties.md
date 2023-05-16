@@ -2,9 +2,9 @@
 title: ページプロパティの編集
 description: ページに必要なプロパティを定義する
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
+source-git-commit: 5a43b6db8a5743b87d6eafdad31418e6cb45d22b
 workflow-type: tm+mt
-source-wordcount: '2387'
+source-wordcount: '2363'
 ht-degree: 66%
 
 ---
@@ -345,11 +345,3 @@ ht-degree: 66%
       * 新しい値は、「**完了**」を選択したときに、選択したすべてのページに適用されます。
       * フィールドが複数値（タグなど）の場合は、新しい値を追加するか、共通の値を削除できます。
    * 共通のフィールドに、ページによって異なる値が設定されている場合、それらのフィールドは特別な値（「`<Mixed Entries>`」というテキストなど）で示されます。
-
->[!NOTE]
->
->ページコンポーネントを設定して、一括編集が可能なフィールドを指定できます。ページプロパティの一括編集のためのページの設定を参照してください。
-
-<!--
->The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
--->
