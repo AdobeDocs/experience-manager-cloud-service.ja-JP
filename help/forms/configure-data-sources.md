@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 936aa33ca334523aa84300f540bde9543eb7ffb4
+source-git-commit: 8d1a19f62d58bc9087991fb861adc6e8205e92d2
 workflow-type: tm+mt
 source-wordcount: '2135'
-ht-degree: 93%
+ht-degree: 88%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 93%
 * Salesforce
 * Microsoft® Azure Blob Storage
 
-データ統合では、すぐに使用できる認証タイプとして、OAuth2.0 認証、基本認証、API キー認証がサポートされています。また、Web サービスにアクセスするためのカスタムの認証タイプを実装することもできます。RESTful、SOAP ベース、OData の各サービスは、 [!DNL Experience Manager] as a Cloud Service、リレーショナルデータベース用の JDBC および用のコネクタ [!DNL Experience Manager] ユーザープロファイルを [!DNL Experience Manager] web コンソール。
+データ統合は、OAuth2.0 をサポートしています。<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->、基本認証、および API キー認証の種類が標準で用意されており、Web サービスにアクセスするためのカスタム認証を実装できます。 RESTful、SOAP ベース、OData の各サービスは、 [!DNL Experience Manager] as a Cloud Service、リレーショナルデータベース用の JDBC および用のコネクタ [!DNL Experience Manager] ユーザープロファイルを [!DNL Experience Manager] web コンソール。
 
 ## リレーショナルデータベースの設定 {#configure-relational-database}
 
@@ -135,7 +135,7 @@ RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式ま
       * ホスト：REST API を提供するホストのドメイン名または IP アドレス。このフィールドは必須です。
       * 基本パス：すべての API パスの URL プリフィックス。これはオプションのフィールドです。\
          必要に応じて、これらのフィールドの事前入力された値を編集します。
-   * RESTful サービスにアクセスするための認証タイプ（「なし」、「OAuth2.0 認証」、「基本認証」、「API キー認証」、「カスタム認証」）を選択し、その選択内容に応じて認証の詳細を指定します。
+   * 認証タイプの選択 — なし、OAuth2.0<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->、基本認証、API キー、またはカスタム認証：RESTful サービスにアクセスし、それに応じて認証の詳細を提供します。
 
    認証タイプとして **[!UICONTROL API キー]**&#x200B;を選択した場合は、API キーの値を指定します。API キーは、リクエストヘッダーまたはクエリパラメーターとして送信できます。「**[!UICONTROL 場所]**」ドロップダウンリストから次のオプションの 1 つを選択し、それに応じて「**[!UICONTROL パラメーター名]**」フィールドにヘッダーまたはクエリパラメーターの名前を指定します。
 
@@ -154,7 +154,7 @@ RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式ま
 
    * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL  Swagger] 定義ファイルに対する [!DNL Swagger 3.0 URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
    * [!DNL  Swagger] ソース入力に基づいて、ターゲットサーバとの接続情報が表示されます。
-   * RESTful サービスにアクセスするための認証タイプ（「なし」、「OAuth2.0 認証」、「基本認証」、「API キー認証」、「カスタム認証」）を選択し、その選択内容に応じて認証の詳細を指定します。
+   * 認証タイプの選択 — なし、OAuth2.0<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->、基本認証、API キー、またはカスタム認証：RESTful サービスにアクセスし、それに応じて認証の詳細を提供します。
 
    認証タイプとして **[!UICONTROL API キー]**&#x200B;を選択した場合は、API キーの値を指定します。API キーは、リクエストヘッダーまたはクエリパラメーターとして送信できます。「**[!UICONTROL 場所]**」ドロップダウンリストから次のオプションの 1 つを選択し、それに応じて「**[!UICONTROL パラメーター名]**」フィールドにヘッダーまたはクエリパラメーターの名前を指定します。
 
@@ -231,14 +231,14 @@ SOAP ベースの web サービスは、[Web Services Description Language（WSD
 
    * Web サービスの WSDL URL。
    * サービスエンドポイント。WSDL で指定されているサービスエンドポイントを上書きするには、このフィールドの値を指定します。
-   * SOAP サービスにアクセスするための認証タイプ（なし、OAuth2.0 認証、基本認証、カスタム認証）を選択し、その選択内容に応じて認証の詳細を指定します。
+   * 認証タイプの選択 — なし、OAuth2.0<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->、基本認証、またはカスタム認証：SOAP サービスにアクセスし、それに応じて認証の詳細を提供します。
 
       <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
       <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
 
       <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. 「**[!UICONTROL 作成]**」をタップして、SOAP Web サービス用のクラウド設定を作成します。
+1. 「**[!UICONTROL 作成]**」をタップして、SOAP web サービス用のクラウド設定を作成します。
 
 ### SOAP Web サービス WSDL でのインポート文の使用を有効にする {#enable-import-statements}
 
@@ -273,7 +273,7 @@ OData サービスは、そのサービスのルート URL によって識別さ
 1. OData サービスの次の詳細を指定します。
 
    * 設定する OData サービスのサービスルート URL。
-   * OData サービスにアクセスするための認証タイプ（なし、OAuth2.0 認証、基本認証、API キー認証、カスタム認証）を選択し、その選択内容に応じて認証の詳細を指定します。
+   * 認証タイプの選択 — なし、OAuth2.0<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->、基本認証、API キー、またはカスタム認証：OData サービスにアクセスし、それに応じて認証の詳細を提供します。
 
    認証タイプとして **[!UICONTROL API キー]**&#x200B;を選択した場合は、API キーの値を指定します。API キーは、リクエストヘッダーまたはクエリパラメーターとして送信できます。「**[!UICONTROL 場所]**」ドロップダウンリストから次のオプションの 1 つを選択し、それに応じて「**[!UICONTROL パラメーター名]**」フィールドにヘッダーまたはクエリパラメーターの名前を指定します。
 
