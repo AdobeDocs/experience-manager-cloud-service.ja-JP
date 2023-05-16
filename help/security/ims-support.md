@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 description: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
 workflow-type: tm+mt
-source-wordcount: '2022'
-ht-degree: 100%
+source-wordcount: '2054'
+ht-degree: 97%
 
 ---
 
@@ -142,11 +142,15 @@ Adobe IMS を OAuth プロバイダーとして設定することが全体的な
 
 各製品コンテキストインスタンスの下に、実稼動、ステージング、または開発環境全体でオーサーサービスまたはパブリッシュサービスにまたがるインスタンスがあります。各インスタンスは、製品プロファイルまたは Cloud Manager の役割に関連付けられます。これらの製品プロファイルは、必要な特権を持つユーザーおよびグループにアクセス権を割り当てるために使用されます。
 
-**Administrator_xxx** プロファイルは、関連する AEM インスタンスで管理者特権を付与するために使用されるのに対して、**User_xxx** プロファイルは、通常のユーザーを追加するために使用されます。
+この **AEM Administrators_xxx** プロファイルは、関連するAEMインスタンスで管理者権限を付与するために使用されます。 **AEM Users_xxx** プロファイルは、通常のユーザーを追加するために使用されます。
 
 この製品プロファイルの下に追加されたすべてのユーザーおよびグループは、以下の例に示すように、その特定のインスタンスにログインできます。
 
 ![製品プロファイル](/help/security/assets/ims8.png)
+
+>[!WARNING]
+>
+>この **AEM Administrators** 製品プロファイル名は変更できません。 名前の変更 **AEM Administrators** 製品プロファイルは、そのプロファイルに割り当てられているすべてのユーザーから管理者権限を削除します。
 
 ### Adobe Experience Manager as a Cloud Service へのログイン {#logging-in-to-aem}
 

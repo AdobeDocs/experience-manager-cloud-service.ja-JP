@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service チームおよび製品プロファイル
 description: AEM as a Cloud Service チームおよび製品プロファイルでライセンス取得済みアドビソリューションへのアクセスを許可および制限する方法について説明します。
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 225b34f081a942d67dfc1f6faeb09763ea9fde03
+source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 100%
+source-wordcount: '778'
+ht-degree: 96%
 
 ---
 
@@ -34,6 +34,10 @@ AEM as a Cloud Service チームメンバーは、オンボーディング時に
 >AEM as a Cloud Service の製品プロファイルに割り当てられたすべてのユーザーは、**Cloud Manager ユーザー**&#x200B;の役割を介して Cloud Manager に読み取り専用でアクセスできます。
 >
 >**Cloud Manager ユーザー**&#x200B;の役割のみを持つユーザーは、Cloud Manager にログインし、**プログラム**&#x200B;メニューオプションを使用して AEM オーサー環境（存在する場合）に移動できます。**Cloud Manager ユーザー**&#x200B;の役割では、プログラムの詳細にアクセスするのに十分ではありません。 そのようなアクセスが必要な場合は、システム管理者から追加の役割を付与してもらう必要があります。
+
+>[!WARNING]
+>
+>この **AEM Administrators** 製品プロファイル名は変更できません。 名前の変更 **AEM Administrators** 製品プロファイルは、そのプロファイルに割り当てられているすべてのユーザーから管理者権限を削除します。
 
 >[!TIP]
 >
