@@ -2,9 +2,9 @@
 title: の最新のメンテナンスリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
 description: の最新のメンテナンスリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 3823b9369c612058998e265346b3f727001aef4b
+source-git-commit: 4353f2a9f6cd649a4377adb9891e0873a51d6ab2
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '240'
 ht-degree: 21%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 21%
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
-| AEM OAK | 1.44-T20221206170501-6d59064 | [Oak API 1.44.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.44.0/index.html) |
+| AEM OAK | 1.50-T20230405052634-f9df4aa | [Oak API 1.50.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.50.0/index.html) |
 | AEM SLING API | バージョン 2.27.0 | [Apache Sling API 2.27.0 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | バージョン 1.4.20 ～ 1.4.0 | [HTMLテンプレート言語の仕様](https://github.com/adobe/htl-spec) |
-| AEM コアコンポーネント | バージョン 2.21.2 | [AEM WCM コアコンポーネント](https://github.com/adobe/aem-core-wcm-components) |
+| AEM コアコンポーネント | バージョン 2.22.6 | [AEM WCM コアコンポーネント](https://github.com/adobe/aem-core-wcm-components) |
