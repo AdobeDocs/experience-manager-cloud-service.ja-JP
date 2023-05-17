@@ -4,7 +4,7 @@ description: Adobe Target との統合
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 856ad73d31257bf40cd4594c313d0d7e09ba1cf9
+source-git-commit: 588825f910b3b9ad6a491c57322971200cea1d15
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 97%
@@ -150,7 +150,7 @@ AEM は、Experience Platform Launch との標準の統合を提供します。A
   <tr>
     <td>ターゲット設定の場所。</td>
     <td>/etc/cloudservices/testandtarget/</td>
-    <td>/conf/tenant/settings/cloudservices/target／</td>
+    <td>/conf/tenant/settings/cloudconfigs/target/</td>
     <td> 以前は、/etc/cloudservices/testandtarget 内に複数の設定が存在していましたが、現在は 1 つの設定がテナントの下に存在します。</td>
   </tr>
 </table>
