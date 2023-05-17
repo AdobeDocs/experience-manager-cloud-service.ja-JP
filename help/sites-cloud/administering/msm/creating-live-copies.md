@@ -4,10 +4,10 @@ description: ライブコピーを作成および同期して、サイト全体�
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 17d828f7813657aaeca49bfc87447c2bc24e712d
 workflow-type: tm+mt
-source-wordcount: '4274'
-ht-degree: 81%
+source-wordcount: '4322'
+ht-degree: 80%
 
 ---
 
@@ -136,6 +136,10 @@ ht-degree: 81%
 
 1. （オプション）ライブコピーコピーに使用する 1 つ以上のロールアウト設定を指定するには、「**ロールアウトの設定**」ドロップダウンリストを使用して選択します。選択した設定がドロップダウンセレクターの下に表示されます。
 1. 「**作成**」をクリックまたはタップします。確認メッセージが表示されます。ここから、次のいずれかを選択できます。 **開く** または **完了**.
+
+   >[!NOTE]
+   >
+   >エラーダイアログが表示され、「フォームを送信できませんでした」というメッセージが表示される場合があります。 これは、ネットワークのタイムアウトが原因で発生します。 ただし、ライブコピーを作成するプロセスはバックグラウンドで実行されています。 数分待ってから、ライブコピーのページが正しく作成されたことを確認します。
 
 ### ブループリント設定からのサイトのライブコピーの作成 {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
