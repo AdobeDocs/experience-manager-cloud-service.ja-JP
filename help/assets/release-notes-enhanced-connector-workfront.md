@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
+source-git-commit: 3a00faaf285be693243e3fb55159149520293610
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 89%
+source-wordcount: '1113'
+ht-degree: 86%
 
 ---
 
@@ -15,21 +15,18 @@ ht-degree: 89%
 
 ## リリース日 {#release-date}
 
-の最新バージョン 1.9.9 のリリース日 [!DNL Workfront for Experience Manager enhanced connector] は 2023 年 4 月 10 日です。
+の最新バージョン 1.9.10 のリリース日 [!DNL Workfront for Experience Manager enhanced connector] は 2023 年 5 月 18 日です。
 
 ## リリースのハイライト {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] の最新バージョンには、次のアップデートが含まれています。
 
-* Experience Managerに `DateTimeParseException` リンクされたフォルダーの作成中にWorkfrontから最終変更日を受け取った場合に例外が発生しました。
+* Workfrontは、Experience ManagerからWorkfrontへの REST 呼び出しに基づいて、重複イベント購読に対して 409 HTTP 応答を返します。これにより、null ポインター例外が発生します。
 
-* 短期間で複数のリンクされたプロジェクトフォルダーを作成する際に発生する問題。
-
-* 新しいプロジェクトリンクフォルダーのセット数のしきい値制限を設定できません。
 
 >[!IMPORTANT]
 >
->アドビでは [ の](../assets/update-workfront-enhanced-connector.md)最新バージョン 1.9.9 へのアップグレード[!DNL Workfront for Experience Manager enhanced connector]をお勧めします。
+>アドビでは [ の](../assets/update-workfront-enhanced-connector.md)最新バージョン 1.9.10 へのアップグレード[!DNL Workfront for Experience Manager enhanced connector]をお勧めします。
 
 ## 既知の問題 {#known-issues}
 
@@ -38,6 +35,16 @@ ht-degree: 89%
 * 従来の Workfront エクスペリエンスを使用している場合、「**[!UICONTROL 詳細]**」ドロップダウンリストで選択できる「**[!UICONTROL 送信先]**」オプションでは、Experience Manager 内のターゲット宛先を選択できません。「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストを使用する場合、「**[!UICONTROL 送信先]**」オプションは正常に機能します。新しい Workfront エクスペリエンスの「**[!UICONTROL 詳細]**」ドロップダウンリストと「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストでは、「**[!UICONTROL 送信先]**」オプションは正常に機能します。
 
 ## 以前のリリース {#previous-releases}
+
+### 2023 年 4 月リリース {#april-2023-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 2023 年 4 月 11 日にリリースされたバージョン 1.9.9 には、次の更新が含まれています。
+
+* Experience Managerに `DateTimeParseException` リンクされたフォルダーの作成中にWorkfrontから最終変更日を受け取った場合に例外が発生しました。
+
+* 短期間で複数のリンクされたプロジェクトフォルダーを作成する際に発生する問題。
+
+* 新しいプロジェクトリンクフォルダーのセット数のしきい値制限を設定できません。
 
 ### 2023年3月リリース {#march-2023-release}
 
