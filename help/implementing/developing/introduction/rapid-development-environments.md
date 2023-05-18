@@ -2,7 +2,7 @@
 title: 迅速な開発環境
 description: クラウド環境で迅速な開発反復処理を行うために、迅速な開発環境を活用する方法について説明します。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 0095cb1fff99a52f5a048833b3d5a65643c1056d
+source-git-commit: 5bfa5a1df940b8903acd08f4c3cb7443adb897d8
 workflow-type: tm+mt
 source-wordcount: '3325'
 ht-degree: 97%
@@ -118,13 +118,7 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
    3. Workspace: <no workspace selected>
    ```
 
-1. 以下を実行して、ログインが正常に完了したことを確認します。
-
-   `aio cloudmanager:list-programs`
-
-   設定した組織の下にあるすべてのプログラムがリストされます。
-
-   上記では、Cloud Manager **デベロッパー - Cloud Service** 製品プロファイルのメンバーである必要があります。詳しくは、[このページ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)を参照してください。
+   この手順を実行するには、Cloud Manager のメンバーである必要があります **開発者 —Cloud Service** 製品プロファイル。 詳しくは、[このページ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)を参照してください。
 
    また、このデベロッパーの役割を持っていることを、以下のコマンドを実行して Developer Console にログインすることでも確認できます。
 
@@ -138,6 +132,13 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
    ```
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
+
+1. 以下を実行して、ログインが正常に完了したことを確認します。
+
+   `aio cloudmanager:list-programs`
+
+   設定した組織の下にあるすべてのプログラムがリストされます。
+
 
 詳細とデモンストレーションについては、[RDE の設定方法](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html?lang=ja)のビデオチュートリアルを参照してください。
 
