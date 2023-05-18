@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service のインフラストラクチャとサービスモニタリング
 description: AEM as a Cloud Service のインフラストラクチャとサービスモニタリング
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
-source-git-commit: eb4c49b8d173d1d402d22824bc98e4713ab54c31
+source-git-commit: 34fed4e64b49ab32e7025c9654d930e3fa362a52
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 100%
+source-wordcount: '600'
+ht-degree: 95%
 
 ---
 
@@ -32,6 +32,10 @@ Cloud Manager を使用したログや監視など、他の種類の監視に関
 ### カスタム監視 {#custom-monitoring}
 
 カスタム監視機能を使用する場合は、[運行開始](/help/journey-migration/go-live.md)前に最大 5 つの異なる web プロパティ URL を指定できます。これらの URL は有効で、かつ HTTP 200 応答コードを返す必要があります。 これらのモニターでは、Adobe CDN の前に[独自の CDN を導入する](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)顧客や、アドビの管理下にない AEM as a Cloud Service の前での外部トラフィックルーティングの使用をサポートしています。カスタム監視チェックで生成されるアラートによって、アドビのサポートチームとプロセスが関与します。
+
+>[!NOTE]
+>
+> この機能は、高度なクラウドサポートをお持ちのお客様にのみ提供されます。 ご質問がある場合は、Admin Console からサポートケースを発表してください。
 
 ## 内部モジュールの監視 {#module-monitoring}
 
