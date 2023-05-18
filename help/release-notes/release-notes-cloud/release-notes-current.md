@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 371a8a0af731c1d9c139d08e4c773c0654dafd4e
+source-git-commit: d202b0543020b277de982e3965475074a71b286d
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '730'
 ht-degree: 33%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 33%
    * DASH はアダプティブビデオストリーミング用の国際標準プロトコルで、業界で広く採用されています
    * NA で利用可能で、サポートチケットを介して有効にできます。APAC、EMEA で近日公開
 
-* メタデータの自動抽出、サムネールおよびカスタムレンディションの生成を行う WebP 画像のサポートが追加されました。 これらのファイルで、スマートタグおよびスマート切り抜き機能もサポートされるようになりました。
+* メタデータの自動抽出、サムネールおよびカスタムレンディションの生成を行う WebP 画像のサポートが追加されました。 これらのファイルでスマートタグ機能もサポートされるようになりました。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
