@@ -2,9 +2,9 @@
 title: レプリケーション
 description: コンテンツ配布とレプリケーションのトラブルシューティング。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1a42cfaa1010686279bc11ca92f50afc75d89e9d
+source-git-commit: 6b2ce7a4fb355e9ce78fbd7e0efee65c09fed932
 workflow-type: tm+mt
-source-wordcount: '1374'
+source-wordcount: '1381'
 ht-degree: 91%
 
 ---
@@ -70,7 +70,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
    ![プロセスステップ](/help/operations/assets/processstep.png)
 
 1. フローのプロセスステップをクリックし、レンチアイコンを押して「**設定**」を選択します。
-1. 「**プロセス**」タブをクリックし、ドロップダウンリストから「`Publish Content Tree`」を選択します。
+1. 「**プロセス**」タブをクリックし、ドロップダウンリストから「`Publish Content Tree`」を選択します。をクリックし、 **ハンドラー処理の設定** チェックボックス
 
    ![Treeactivation](/help/operations/assets/newstep.png)
 
