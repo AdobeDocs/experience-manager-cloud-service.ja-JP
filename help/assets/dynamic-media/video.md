@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 96d11aad425ba7c78a685b3509cd96749d938229
+source-git-commit: 124b363fe341199fdc9b25d25bbf2a9bc8f87d87
 workflow-type: tm+mt
-source-wordcount: '5887'
+source-wordcount: '5868'
 ht-degree: 98%
 
 ---
@@ -421,10 +421,6 @@ DASH（HTTP での動的アダプティブストリーミング）はビデオ�
 * 顧客がビデオ配信をアクセスしやすくなります。
 * API を使用してストリーミング URL を取得することもできます。
 
-   >[!IMPORTANT]
-   >
-   >現在、アカウントで DASH を有効にするのは、アジア太平洋および北米でのみ利用できます。ヨーロッパ中東アフリカで間もなく登場する
-
 DASH を使用するリクエストを開始します。お使いのアカウントで自動的には有効になりません。
 
 お使いのアカウントで DASH を有効にするには、以下に示すようにカスタマーサポートケースを作成します。サポートケースで、Dynamic Media アカウントと Experience Manager で DASH を有効にするように指定します。
@@ -432,7 +428,7 @@ DASH を使用するリクエストを開始します。お使いのアカウン
 **アカウントで DASH を有効にするには：**
 
 1. [Admin Console を使用して、新しいサポートケースの作成を開始します](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)。
-1. 手順に従って、次の情報を入力し、サポートケースを作成します。
+1. サポートケースを作成するには、次の情報を必ず指定しながら、指示に従ってください。
 
    * 主要連絡先の氏名、メールアドレス、電話番号。
    * Dynamic Media アカウントの名前。
