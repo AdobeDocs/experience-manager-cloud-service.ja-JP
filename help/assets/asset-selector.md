@@ -3,9 +3,9 @@ title: のアセットセレクター [!DNL Adobe Experience Manager] as a [!DNL
 description: アセットセレクターを使用して、アプリケーション内のアセットのメタデータとレンディションを検索、検索、取得します。
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: 22d2a2235c8696fce76369d3ffe369bcbaa3f6f2
+source-git-commit: af36101d8fecd7fab2300f93d40bba4c92f8eafe
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2378'
 ht-degree: 4%
 
 ---
@@ -30,6 +30,8 @@ Micro-Frontend ユーザーインターフェイスは、アセットセレク�
 * IMS 組織内のリポジトリを切り替えて、アセットを選択できるようになりました。
 
 * 名前、サイズ、サイズでアセットを並べ替え、リスト、グリッド、ギャラリー、ウォーターフォールの各表示でアセットを表示できます。
+
+この記事の範囲は、アセットセレクターを [!DNL Adobe] 統合シェルの下のアプリケーション、または認証用に生成された imsToken が既にある場合。 この記事では、これらのワークフローを非 SUSI フローと呼びます。
 
 アセットセレクターを [!DNL Experience Manager Assets as a Cloud Service] リポジトリ：
 
@@ -361,8 +363,8 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 |---|---|---|---|---|
 | *パネル* | ブール値 | いいえ | false | マークされている場合 `true`の場合、アセットセレクターが左側のパネル表示でレンダリングされます。 マークが付いている場合 `false`を指定した場合、アセットセレクターがモーダルビューでレンダリングされます。 |
 | *imsOrg* | 文字列 | はい |  | プロビジョニング中に割り当てられるAdobeIdentity Management System(IMS)ID [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 組織の この `imsOrg` キーは、アクセスしようとしている組織がAdobe IMS中かどうかを認証するために必要です。 |
-| *imsToken* | 文字列 | いいえ |  | 認証に使用される IMS ベアラートークン。 `imsToken` は、SUSI フローを使用する場合は必須ではありません。 ただし、非 SUSI フローを使用する場合は必須です。 |
-| *apiKey* | 文字列 | いいえ |  | AEM Discovery サービスへのアクセスに使用する API キー。 `apiKey` は、SUSI フローを使用する場合は必須ではありません。 ただし、SUSI 以外のフローでは必要です。 |
+| *imsToken* | 文字列 | いいえ |  | 認証に使用される IMS ベアラートークン。 `imsToken` 非 SUSI フローを使用する場合は必須です。 |
+| *apiKey* | 文字列 | いいえ |  | AEM Discovery サービスへのアクセスに使用する API キー。 `apiKey` 非 SUSI フローを使用する場合は必須です。 |
 | *rootPath* | 文字列 | いいえ | /content/dam/ | アセットセレクターにアセットを表示するフォルダーパス。 `rootPath` また、カプセル化の形で使用することもできます。 例えば、次のパスを指定すると、 `/content/dam/marketing/subfolder/`の場合、アセットセレクターを使用すると、親フォルダーをトラバースできず、子フォルダーのみが表示されます。 |
 | *パス* | 文字列 | いいえ |  | アセットセレクターがレンダリングされる際に、アセットの特定のディレクトリに移動するために使用されるパス。 |
 | *filterSchema* | 配列 | いいえ |  | フィルタープロパティの設定に使用するモデル。 これは、アセットセレクターで特定のフィルターオプションを制限する場合に便利です。 |
