@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
 workflow-type: tm+mt
 source-wordcount: '1023'
-ht-degree: 52%
+ht-degree: 62%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 52%
 
 AEM as Cloud Service の出荷時には、組み込みの CDN が搭載されています。その主な目的は、ブラウザーの近くの CDN エッジノードからキャッシュ可能なコンテンツを配信することで、待ち時間を減らすことです。AEM アプリケーションの最適なパフォーマンスを得るために、完全に管理および設定されています。
 
-AEMが管理する CDN は、ほとんどのお客様のパフォーマンスとセキュリティに関する要件を満たします。 パブリッシュ層では、オプションで、顧客は独自の CDN からその CDN を参照することができますが、その CDN を管理する必要があります。 このシナリオは、放棄が困難な CDN ベンダーとのレガシー統合を持つ顧客など（ただし、これに限定されない）、特定の前提条件を満たしていることに基づいて、ケースバイケースで使用できます。
+AEMが管理する CDN は、ほとんどのお客様のパフォーマンスとセキュリティに関する要件を満たします。 顧客は、オプションで、独自の CDN から公開層を参照することもできますが、その場合は自社で管理する必要があります。このシナリオは、放棄が困難な CDN ベンダーとのレガシー統合を保有する顧客など（ただし、これに限定されない）、特定の前提条件を満たしていることに基づき、ケースバイケースで使用できます。
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
@@ -45,7 +45,7 @@ Cloud Manager セルフサービス UI を使用して、AEM の標準搭載 CDN
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
 >title="顧客 CDN で AEM 管理 CDN を参照する"
->abstract="AEM as a Cloud Service は、顧客が既存の CDN を使用するためのオプションを提供しています。パブリッシュ層では、オプションで、顧客は独自の CDN からその CDN を参照することができますが、その CDN を管理する必要があります。 このシナリオは、放棄が困難な CDN ベンダーとのレガシー統合を持つ顧客など（ただし、これに限定されない）、特定の前提条件を満たしていることに基づいて、ケースバイケースで使用できます。"
+>abstract="AEM as a Cloud Service は、顧客が既存の CDN を使用するためのオプションを提供しています。顧客は、オプションで、独自の CDN から公開層を参照することもできますが、その場合は自社で管理する必要があります。このシナリオは、放棄が困難な CDN ベンダーとのレガシー統合を保有する顧客など（ただし、これに限定されない）、特定の前提条件を満たしていることに基づき、ケースバイケースで使用できます。"
 
 顧客が既存の CDN を使用する必要がある場合は、その顧客を管理して、AEMが管理する CDN を指すように設定できます。ただし、次の条件を満たす必要があります。
 

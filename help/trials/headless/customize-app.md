@@ -22,7 +22,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="コンテンツフラグメントエディターの起動"
->abstract="次に、ヘッドレスコンテンツオーサリングの仕組みを見てみましょう。 AEM のヘッドレス体験版は、サンプル React アプリと統合されているので、開発に時間をかけることなく、誰でも簡単に独自にコンテンツを管理できることが理解できます。<br><br>下をクリックして、新しいタブでこのモジュールを起動し、このガイドに従ってください。"
+>abstract="次に、ヘッドレスコンテンツオーサリングの仕組みを見てみましょう。AEM のヘッドレス体験版は、サンプル React アプリと統合されているので、開発に時間をかけることなく、誰でも簡単に独自にコンテンツを管理できることが理解できます。<br><br>下をクリックして、新しいタブでこのモジュールを起動し、このガイドに従ってください。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
