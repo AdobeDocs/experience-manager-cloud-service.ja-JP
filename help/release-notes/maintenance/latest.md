@@ -1,21 +1,21 @@
 ---
-title: の最新のメンテナンスリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
-description: の最新のメンテナンスリリースノート [!DNL Adobe Experience Manager] as a Cloud Service。
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 56eaacc1ad78b47ef90f9c04fa09a4b751bff78d
 workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 26%
+ht-degree: 68%
 
 ---
 
 # メンテナンスリリースノート {#maintenance-release-notes}
 
-以下の節では、as a Cloud ServiceExperience Managerの現在のメンテナンスリリースに関する技術リリースノートの概要を説明します。
+次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
 ## リリース 11983 {#release-11983}
 
-2023 年 5 月 17 日に公開されたメンテナンスリリース11983の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース11873のアップデートです。
+2023 年 5 月 17 日に公開されたメンテナンスリリース11983の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース 11873 からのアップデートです。
 
 このメンテナンスリリースにおける機能イネーブルメントでは、包括的な機能セットを提供します。詳しくは、[最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
@@ -40,5 +40,5 @@ ht-degree: 26%
 |---|---|---|
 | AEM OAK | 1.50-T20230405052634-f9df4aa | [Oak API 1.50.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.50.0/index.html) |
 | AEM SLING API | バージョン 2.27.0 | [Apache Sling API 2.27.0 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
-| AEM HTL | バージョン 1.4.20 ～ 1.4.0 | [HTMLテンプレート言語の仕様](https://github.com/adobe/htl-spec) |
+| AEM HTL | Version 1.4.20-1.4.0 | [HTML テンプレート言語仕様](https://github.com/adobe/htl-spec) |
 | AEM コアコンポーネント | バージョン 2.22.10 | [AEM WCM コアコンポーネント](https://github.com/adobe/aem-core-wcm-components) |

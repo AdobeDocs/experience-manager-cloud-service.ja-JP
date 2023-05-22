@@ -18,6 +18,6 @@ ht-degree: 100%
 
 # App Builder アプリケーションのデプロイ
 
-App Builder におけるデプロイの意味と、 Adobe I/O CLI を使用して App Builder アプリケーションをデプロイする方法を説明します。
+App Builder におけるデプロイの意味と、Adobe I/O CLI を使用して App Builder アプリケーションをデプロイする方法を説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339250/?quality=12&learn=on)

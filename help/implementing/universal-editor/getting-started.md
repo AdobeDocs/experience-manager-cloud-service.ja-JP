@@ -1,27 +1,27 @@
 ---
-title: AEMのユニバーサルエディターの概要
-description: ユニバーサルエディターへのアクセス権を取得する方法と、それを使用する最初のAEMアプリの実装を開始する方法について説明します。
+title: AEM のユニバーサルエディターの概要
+description: ユニバーサルエディターへのアクセス権を取得する方法と、これを使用するために最初の AEM アプリのインストルメントを開始する方法について説明します。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 source-git-commit: de33ea3efed87170b081ea467f12a997e0d41a83
 workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 0%
+ht-degree: 98%
 
 ---
 
-# AEMのユニバーサルエディターの概要 {#getting-started}
+# AEM のユニバーサルエディターの概要 {#getting-started}
 
-ユニバーサルエディターへのアクセス権を取得する方法と、それを使用する最初のAEMアプリの実装を開始する方法について説明します。
+ユニバーサルエディターへのアクセス権を取得する方法と、これを使用するために最初の AEM アプリのインストルメントを開始する方法について説明します。
 
 >[!TIP]
 >
->例に目を通したい場合は、 [GitHub のユニバーサルエディターサンプルアプリ。](https://github.com/adobe/universal-editor-sample-editable-app)
+>すぐに例を確認したい場合は、[GitHub のユニバーサルエディターサンプルアプリ](https://github.com/adobe/universal-editor-sample-editable-app)を参照してください。
 
 ## オンボーディング手順 {#onboarding}
 
-ユニバーサルエディターは任意のソースからコンテンツを編集できますが、このドキュメントではAEMアプリを例として使用します。
+ユニバーサルエディターは任意のソースからコンテンツを編集できますが、このドキュメントでは AEM アプリを例として使用します。
 
-AEMアプリをオンボーディングし、ユニバーサルエディターを使用するために実装する手順はいくつかあります。
+AEM アプリをオンボーディングし、ユニバーサルエディターを使用するために実装する手順はいくつかあります。
 
 1. [ユニバーサルエディターへのアクセスをリクエストします。](#request-access)
 1. [ユニバーサルエディターのコアライブラリを含めます。](#core-library)
@@ -30,25 +30,25 @@ AEMアプリをオンボーディングし、ユニバーサルエディター�
 
 このドキュメントでは、これらの手順を説明します。
 
-## ユニバーサルエディターへのアクセスのリクエスト {#request-access}
+## ユニバーサルエディターへのアクセスをリクエスト {#request-access}
 
-最初にユニバーサルエディターへのアクセスをリクエストする必要があります。 次に進んでください： [https://experience.adobe.com/#/aem/editor,](https://experience.adobe.com/#/aem/editor) ログインし、ユニバーサルエディターにアクセスできるかどうかを検証します。
+最初にユニバーサルエディターへのアクセスをリクエストする必要があります。[https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor) に移動し、ログインしてユニバーサルエディターにアクセスできるかどうかを確認します。
 
 アクセス権がない場合は、同じページにリンクされたフォームからリクエストできます。
 
-![ユニバーサルエディターへのアクセスのリクエスト](assets/request-access.png)
+![ユニバーサルエディターへのアクセスをリクエスト](assets/request-access.png)
 
-クリック **アクセスのリクエスト** アクセスを要求する際にフォームに入力します。 Adobeの担当者がリクエストを確認し、使用例について話し合うように依頼します。
+「**利用申請**」をクリックして、アクセスをリクエストするフォームに入力します。リクエストを確認したアドビ担当者から、ユースケースについて話し合うために連絡が届きます。
 
 ## ユニバーサルエディターコアライブラリを含める {#core-library}
 
-アプリをユニバーサルエディターで使用するために実装する前に、次の依存関係を含める必要があります。
+ユニバーサルエディターで使用するためにアプリの実装を行う前に、次の依存関係を含める必要があります。
 
 ```javascript
 @adobe/universal-editor-cors
 ```
 
-計測機能を有効にするには、次のインポートを `index.js`.
+実装を有効にするには、以下の読み込みを `index.js` に追加する必要があります。
 
 ```javascript
 import "@adobe/universal-editor-cors";
@@ -62,20 +62,20 @@ React アプリを実装していない場合や、サーバーサイドでの�
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
 ```
 
-## 必要な OSGi 設定の追加 {#osgi-configurations}
+## 必要な OSGi 設定を追加 {#osgi-configurations}
 
-ユニバーサルエディターを使用してAEMコンテンツをアプリで編集するには、AEM内で CORS と Cookie の設定をおこなう必要があります。
+ユニバーサルエディターを使用して AEM コンテンツをアプリで編集するには、AEM 内で CORS と Cookie の設定を行う必要があります。
 
-以下 [OSGi 設定は、AEMオーサリングインスタンスで設定する必要があります。](/help/implementing/deploying/configuring-osgi.md)
+次の [OSGi 設定は、AEM オーサリングインスタンスで設定する必要があります。](/help/implementing/deploying/configuring-osgi.md)
 
-* `SameSite Cookies = None`in `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
-* X-FRAME-RemoveOPTIONS:の SAMEORIGIN ヘッダー `org.apache.sling.engine.impl.SlingMainServlet`
+* `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` の `SameSite Cookies = None`
+* `org.apache.sling.engine.impl.SlingMainServlet` の X-FRAME-OPTIONS: SAMEORIGIN ヘッダーを削除します
 
-### com.day.crx.security.token.impl.impl.TokenAuthenticationHandler {#samesite-cookies}
+### com.day.crx.security.token.impl.impl.impl.TokenAuthenticationHandler {#samesite-cookies}
 
-ログイントークン cookie は、サードパーティドメインとしてAEMに送信する必要があります。 したがって、SameSite cookie をに明示的に設定する必要があります。 `None`.
+ログイントークン cookie は、サードパーティドメインとして AEM に送信する必要があります。したがって、SameSite cookie を明示的に `None` に設定する必要があります。
 
-このプロパティは、 `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` OSGi 設定。
+このプロパティは、`com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` OSGi 設定で設定される必要があります。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -86,9 +86,9 @@ React アプリを実装していない場合や、サーバーサイドでの�
 
 ### org.apache.sling.engine.impl.SlingMainServlet {#sameorigin}
 
-X-Frame-Options:SAMEORIGIN は、iframe 内でAEMページをレンダリングできないようにします。 ヘッダーを削除すると、ページを読み込むことができます。
+X-Frame-Options: SAMEORIGIN は、iframe 内で AEM ページのレンダリングを防ぎます。ヘッダーを削除すると、ページを読み込むことができます。
 
-このプロパティは、 `org.apache.sling.engine.impl.SlingMainServlet` OSGi 設定。
+このプロパティは、`org.apache.sling.engine.impl.SlingMainServlet` OSGi 設定で設定する必要があります。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -100,36 +100,36 @@ X-Frame-Options:SAMEORIGIN は、iframe 内でAEMページをレンダリング�
 
 ## ページの実装 {#instrument-page}
 
-Universal Editor サービスには、 [URN (Uniform Resource Name)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) 編集中のアプリ内のコンテンツに対して正しいバックエンドシステムを識別し、利用する。 したがって、コンテンツをコンテンツリソースにマッピングし直すには、URN スキーマが必要です。
+ユニバーサルエディターサービスは、編集中のアプリのコンテンツに対して正しいバックエンドシステムを識別して利用するために、[統一リソース名（URN）](https://ja.wikipedia.org/wiki/Uniform_Resource_Name)を要求します。したがって、コンテンツをコンテンツリソースにマッピングし直すには、URN スキーマが必要です。
 
-ページに追加される計測属性は、主に [HTMLマイクロデータ、](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) HTMLをより意味的にし、HTMLドキュメントをインデックス付け可能にするなどにも使用できる業界標準
+ページに追加されたインストルメンテーション属性は、ほとんどが [HTML マイクロデータ](https://developer.mozilla.org/ja/docs/Web/HTML/Microdata)で構成されており、HTML により適切な意味を持たせたり、HTML 文書をインデックス化したりなどに使用することもできる、業界標準です。
 
 ### 接続の作成 {#connections}
 
-アプリで使用される接続は、 `<meta>` ページの `<head>`.
+アプリで使用する接続は、ページの `<head>` 内に `<meta>` タグとして格納されます。
 
 ```html
 <meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
 ```
 
-* `<referenceName>`  — これは、接続を識別するためにドキュメントで再利用される短い名前です。 例： `aemconnection`
-* `<protocol>`  — 使用する Universal Editor Persistence Service の永続化プラグインを示します。 例： `aem`
-* `<url>`  — 変更が保持されるシステムへの URL です。 例： `http://localhost:4502`
+* `<referenceName>` - 接続を識別するためにドキュメントで再利用される短い名前です。例：`aemconnection`
+* `<protocol>` - 使用するユニバーサルエディター永続化サービスの永続化プラグインを示します。例：`aem`
+* `<url>` - 変更が保持されるシステムの URL です。例：`http://localhost:4502`
 
 識別子 `adobe:aem:editor` は、ユニバーサルエディターのAdobeを表します。
 
-`itemid`が `urn` プレフィックスを使用して識別子を短縮します。
+`itemid` は `urn` プレフィックスを使用して識別子を短縮します。
 
 ```html
 itemid="urn:<referenceName>:<resource>"
 ```
 
-* `<referenceName>`  — これは、 `<meta>` タグを使用します。 例： `aemconnection`
-* `<resource>`  — ターゲットシステム内のリソースへのポインタです。 例：AEMコンテンツのパス `/content/page/jcr:content`
+* `<referenceName>` - `<meta>` タグに記載されている名前付きリファレンスです。例：`aemconnection`
+* `<resource>` - ターゲットシステム内のリソースへのポインターです。例：`/content/page/jcr:content` などの AEM コンテンツのパス
 
 >[!TIP]
 >
->ドキュメントを参照 [属性とタイプ](attributes-types.md) に、ユニバーサルエディターで必要なデータ属性とタイプの詳細を示します。
+>ユニバーサルエディターが必要とするデータ属性とタイプについて詳しくは、ドキュメント[属性とタイプ](attributes-types.md)を参照してください。
 
 ### 接続例 {#example}
 
@@ -163,17 +163,17 @@ itemid="urn:<referenceName>:<resource>"
 
 ## ユニバーサルエディターを使用する準備が整いました {#youre-ready}
 
-アプリがユニバーサルエディターを使用するように実装されました。
+ユニバーサルエディターを使用するようにアプリのインストルメントが行われました。
 
-ドキュメントを参照してください [ユニバーサルエディターを使用したコンテンツのオーサリング](authoring.md) コンテンツ作成者がユニバーサルエディターを使用してコンテンツを作成する際に、簡単で直感的な方法を学習します。
+コンテンツ作成者がユニバーサルエディターを使用して、簡単かつ直感的にコンテンツを作成する方法については、ドキュメント[ユニバーサルエディターを使用したコンテンツのオーサリング](authoring.md)を参照してください。
 
 ## その他のリソース {#additional-resources}
 
 ユニバーサルエディターの詳細については、次のドキュメントを参照してください。
 
-* [ユニバーサルエディターの概要](introduction.md)  — ユニバーサルエディターを使用して、優れたエクスペリエンスを提供し、コンテンツ速度を向上し、最新の開発者エクスペリエンスを提供するために、あらゆる実装のコンテンツのあらゆる側面を編集できる方法を説明します。
-* [ユニバーサルエディターを使用したコンテンツのオーサリング](authoring.md)  — コンテンツ作成者がユニバーサルエディターを使用してコンテンツを作成するのが、簡単で直感的な方法について説明します。
-* [ユニバーサルエディターを使用したコンテンツの公開](publishing.md)  — ユニバーサルビジュアルエディターでのコンテンツの公開方法と、アプリでの公開済みコンテンツの処理方法を説明します。
-* [ユニバーサルエディターのアーキテクチャ](architecture.md)  — ユニバーサルエディターのアーキテクチャと、そのサービスとレイヤー間でのデータのフローについて説明します。
-* [属性とタイプ](attributes-types.md)  — ユニバーサルエディターで必要なデータ属性とデータ型について説明します。
-* [ユニバーサルエディタ認証](authentication.md)  — ユニバーサルエディターの認証方法を説明します。
+* [ユニバーサルエディターの概要](introduction.md) - ユニバーサルエディターを使用することで、あらゆる実装において、あらゆるコンテンツのあらゆる側面を編集し、卓越したエクスペリエンスを提供、コンテンツベロシティを向上、最新のデベロッパーエクスペリエンスを提供できる仕組みを説明します。
+* [ユニバーサルエディターを使用したコンテンツのオーサリング](authoring.md) - コンテンツ作成者がユニバーサルエディターを使用して、コンテンツを簡単かつ直感的に作成する方法について説明します。
+* [ユニバーサルエディターを使用したコンテンツの公開](publishing.md) - ユニバーサルビジュアルエディターでのコンテンツの公開方法と、アプリでの公開済みコンテンツの処理方法を説明します。
+* [ユニバーサルエディターのアーキテクチャ](architecture.md) - ユニバーサルエディターのアーキテクチャと、そのサービスとレイヤー間のデータフローについて説明します。
+* [属性とタイプ](attributes-types.md) - ユニバーサルエディターで必要なデータ属性とデータ型について説明します。
+* [ユニバーサルエディターの認証](authentication.md) - ユニバーサルエディターの認証方法について説明します。

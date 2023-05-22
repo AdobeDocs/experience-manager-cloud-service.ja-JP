@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
 workflow-type: tm+mt
 source-wordcount: '1761'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -90,8 +90,8 @@ ht-degree: 78%
 
 **Assets** コンソールでは、次のいずれかからコンテンツフラグメントに対して様々なアクションを使用できます。
 
-* ツールバーから。フラグメントを選択した後は、適切なアクションをすべて使用できます。
-* 形式 [クイックアクション](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions);個々のフラグメントカードで使用できるアクションのサブセット。
+* ツールバーから。フラグメントを選択すると、該当するすべてのアクションを使用できるようになります。
+* [クイックアクション](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)として。個別のフラグメントカードに使用可能なアクションのサブセット。
 
 ![アクション](assets/cfm-managing-02.png)
 
@@ -130,12 +130,12 @@ ht-degree: 78%
 
 >[!CAUTION]
 >
->コンテンツフラグメントを編集するには、 [適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). 問題が発生している場合は、システム管理者に問い合わせてください。
+>コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
 
 1. **Assets** コンソールを使用して、コンテンツフラグメントの場所に移動します。
 1. 次のいずれかの方法で、フラグメントを編集用に開きます。
 
-   * フラグメントまたはフラグメントリンクをクリックまたはタップします（これは、コンソール表示によって異なります）。
+   * フラグメントまたはフラグメントリンク（コンソール表示によって異なる）をクリックまたはタップします。
    * フラグメントを選択してから、ツールバーの「**編集**」を選択。
 
 1. フラグメントエディターが開きます。必要に応じて変更を加えます。
@@ -218,7 +218,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
    >[!CAUTION]
    >
-   >コンテンツフラグメントを編集するには、 [適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). 問題が発生している場合は、システム管理者に問い合わせてください。
+   >コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
 
    >[!NOTE]
    >
@@ -226,7 +226,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
    >[!CAUTION]
    >
-   >これらの操作では、変更を保存するだけでなく、参照もすべて更新し、Dispatcher が必要に応じてフラッシュされます。これらの変更の処理には時間がかかる場合があります。 このため、大規模/複雑/負荷の高いシステムにパフォーマンスが影響を与える可能性があります。
+   >これらの操作では、変更を保存するだけでなく、参照もすべて更新し、Dispatcher が必要に応じてフラッシュされます。これらの変更の処理には時間がかかる場合があります。このため、大きなシステムや複雑なシステム、高負荷のシステムのパフォーマンスに影響することがあります。
    >
    >「**保存して閉じる**」を使用する際はこの点に留意し、フラグメントエディターをすぐに開いて、さらに変更を加え保存してください。
 
@@ -255,7 +255,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## フラグメントのコンテンツの編集 {#editing-the-content-of-your-fragment}
 
-フラグメントを開いたら、 [バリエーション](/help/assets/content-fragments/content-fragments-variations.md) タブを使用して、コンテンツを作成します。
+フラグメントを開いたら、「[バリエーション](/help/assets/content-fragments/content-fragments-variations.md)」タブを使用してコンテンツをオーサリングできます。
 
 ## フラグメント内のバリエーションの作成と管理 {#creating-and-managing-variations-within-your-fragment}
 
@@ -263,7 +263,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## コンテンツとフラグメントの関連付け {#associating-content-with-your-fragment}
 
-また、 [コンテンツを関連付け](/help/assets/content-fragments/content-fragments-assoc-content.md) フラグメントを含む これにより、アセット（画像）をフラグメントと共に（オプションで）コンテンツページに追加する際に使用できるようにする接続が提供されます。
+フラグメントに[コンテンツを関連付ける](/help/assets/content-fragments/content-fragments-assoc-content.md)こともできます。これにより関連性を付加して、フラグメントをコンテンツページに追加するときに、アセット（画像など）を（オプションで）フラグメントと一緒に使用できるようになります。
 
 ## フラグメントのメタデータ（プロパティ）の表示と編集 {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -271,7 +271,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## コンテンツフラグメントのタイムライン {#timeline-for-content-fragments}
 
-標準オプションに加えて、 [タイムライン](/help/assets/manage-digital-assets.md#timeline) には、コンテンツフラグメントに固有の情報とアクションの両方が用意されています。
+[タイムライン](/help/assets/manage-digital-assets.md#timeline)では標準のオプションに加え、コンテンツフラグメントに固有の情報とアクションの両方が提供されます。
 
 * バージョン、コメント、注釈に関する情報の表示
 * バージョンに対するアクション
@@ -282,9 +282,9 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
    * **ラベル**&#x200B;や&#x200B;**コメント**&#x200B;の追加（既存のフラグメントを選択してから特定のバージョンを選択）
 
-   * **バージョンとして保存** （既存のフラグメントを選択してから、タイムラインの下部にある上向き矢印を選択）
+   * **バージョンとして保存**（既存のフラグメントを選択してから、タイムラインの下部にある上向き矢印を選択）
 
-* 注釈のアクション
+* 注釈に関するアクション
 
    * **削除**
 
@@ -292,11 +292,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 コメントは次のとおりです。
 * すべてのアセットの標準機能
 * タイムラインで作成
-* フラグメントアセットに関連
+* フラグメントアセットに関連付けられる
 >
 注釈（コンテンツフラグメント用）は次のとおりです。
-* フラグメントエディターに入力
-* フラグメント内の選択したテキストセグメントに固有
+* フラグメントエディターで入力
+* フラグメント内の選択されたテキストセグメントに固有
 >
 
 
@@ -306,9 +306,9 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## フラグメントのバージョンの比較 {#comparing-fragment-versions}
 
-この **現在と比較** アクションは、 [タイムライン](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) 特定のバージョンを選択した後。
+特定のバージョンを選択したら、「[タイムライン](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)」から「**現在のバージョンと比較**」アクションを利用できるようになります。
 
-開く：
+これにより、次の情報が表示されます。
 
 * **現在**（最新）のバージョン（左）
 
@@ -316,26 +316,26 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 これらは左右に並んで表示されます。この画面について以下で説明します。
 
-* 違いが強調表示されます
+* すべての相違点がハイライト表示されます
 
-   * 削除されたテキスト — 赤
+   * 削除されたテキスト - 赤
    * 挿入されたテキスト - 緑
-   * 置換されたテキスト — 青
+   * 置き換えられたテキスト - 青
 
 * 全画面表示アイコンを使用すれば、どちらかのバージョンで開いた後で、並列表示に切り替えることができます
-* 以下が可能です。 **元に戻す** 特定のバージョンに
-* **完了** コンソールに戻ります
+* 特定のバージョンに&#x200B;**戻す**&#x200B;ことができます
+* 「**完了**」を選択すると、コンソールに戻ります
 
 >[!NOTE]
-フラグメントの比較時にフラグメントコンテンツを編集することはできません。
+フラグメントの比較中にフラグメントコンテンツを編集することはできません。
 
 ![比較](assets/cfm-managing-06.png)
 
 ## 特定のバージョンへの復帰   {#reverting-to-a-version}
 
-フラグメントの特定のバージョンに戻すことができます。
+次の方法で特定のバージョンのフラグメントに戻すことができます。
 
-* 直接 [タイムライン](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
+* 直接[タイムライン](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)から。
 
    必要なバージョンを選択した後、「**このバージョンに戻す**」アクションを選択します。
 
@@ -344,7 +344,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## フラグメントの公開と参照 {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
-フラグメントがモデルに基づいている場合、 [モデルが公開されました](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+フラグメントがモデルに基づいている場合、その[モデルが公開されている](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)ことを確認してください。
 まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
 
 コンテンツフラグメントをパブリッシュ環境で使用するには、公開する必要があります。これは、Assets の標準機能を使用して行います。
@@ -364,13 +364,13 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## フラグメントの削除 {#deleting-a-fragment}
 
-フラグメントを削除するには：
+レポートを削除する手順は次のとおりです。
 
 1. **Assets** コンソールで、コンテンツフラグメントの場所に移動します。
 2. フラグメントを選択します。
 
    >[!NOTE]
-   この **削除** アクションは、クイックアクションとして使用できません。
+   **削除**&#x200B;アクションは、クイックアクションとしては実行できません。
 
 3. ツールバーから「**削除**」を選択します。
 4. 「**削除**」アクションを確認します。

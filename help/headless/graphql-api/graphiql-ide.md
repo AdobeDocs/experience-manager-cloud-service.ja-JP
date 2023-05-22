@@ -6,7 +6,7 @@ exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 4f2b5fa59d3c68dd1244fa5b2a8dc30d848ba4a4
 workflow-type: tm+mt
 source-wordcount: '1058'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -100,7 +100,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->詳しくは、 [永続化されたクエリのキャッシュ](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
+>詳しくは、[永続クエリのキャッシュ](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)をご覧ください。
 
 >[!NOTE]
 >

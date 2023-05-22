@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: 7d15440159a8e24314753acd5b37fcd2c5e8ec4c
 workflow-type: tm+mt
 source-wordcount: '554'
-ht-degree: 72%
+ht-degree: 83%
 
 ---
 
@@ -45,14 +45,14 @@ AEM as a Cloud Service には 3 種類の機能テストがあります。
 
 製品機能テストは、オーサリングタスクやレプリケーションタスクなど、AEM のコア機能の安定した HTTP 統合テスト（IT）のセットです。これらのテストは、アドビで管理され、コア機能に障害が発生した場合に、カスタムアプリケーションコードに対する変更がデプロイされるのを防ぐことを目的としています。
 
-* [実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md):製品機能テストは、新しいコードを Cloud Manager にデプロイするたびに自動的に実行され、スキップすることはできません。
-* [実稼動以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md):製品機能テストは、オプションで、実稼動以外のパイプラインを実行する際に実行するように選択できます。
+* [製品機能テスト](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)：製品機能テストは、新しいコードを Cloud Manager にデプロイするたびに自動的に実行され、省略することはできません。
+* [実稼動以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)：製品機能テストは、実稼動以外のパイプラインを実行する際に、オプションで実行するように選択できます。
 
 製品機能テストは、オープンソースプロジェクトとして維持されます。詳しくは、GitHub の[製品機能テスト](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)を参照してください。
 
 ### カスタム機能テスト {#custom-functional-testing}
 
-製品機能テストはアドビで定義されますが、独自のアプリケーション用に独自の品質テストを作成することもできます。これは、 [実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) または [非実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) を使用して、アプリケーションの品質を確保します。
+製品機能テストはアドビで定義されますが、独自のアプリケーション用に独自の品質テストを作成することもできます。これは、アプリケーションの品質を確保するために、[実稼働パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)またはオプションで[実稼働以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)の一部としてカスタム機能テストとして実行されます。
 
 カスタム機能テストは、カスタムコードのデプロイメントとプッシュアップグレードの両方で実行されます。そのため、AEM コードの変更によってアプリケーションコードが機能しなくなることを防ぐ適切な機能テストを作成することが特に重要になります。カスタム機能テストステップは常に存在し、スキップできません。
 

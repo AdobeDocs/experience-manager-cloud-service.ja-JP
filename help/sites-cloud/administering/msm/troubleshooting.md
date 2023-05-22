@@ -26,12 +26,12 @@ MSM は、リソース URL のセレクターと共に要求できる複数の�
 
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * ブループリントページでこの情報を使用して、リンクされているすべてのライブコピーのリストと、追加のライブコピーのステータス情報を取得します。
-   * 例：
+   * 次に例を示します。
       `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * ライブコピーページでこれを使用して、ブループリントページとの接続に関する詳細情報を取得します。ページがライブコピーでない場合は、何も返されません。
-   * 例：
+   * 次に例を示します。
       `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 これらのサーブレットは、`com.day.cq.wcm.msm` ロガーを介して DEBUG ログメッセージを生成します。これも役に立ちます。

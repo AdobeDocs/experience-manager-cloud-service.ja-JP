@@ -8,7 +8,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: ac525d2500177229221a5d6f79d2a8feeefe3f06
 workflow-type: tm+mt
 source-wordcount: '2195'
-ht-degree: 85%
+ht-degree: 91%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 85%
 
 * リレーショナルデータベース - MySQL、[!DNL Microsoft SQL Server]、[!DNL IBM DB2]、および [!DNL Oracle RDBMS]
 * RESTful Web サービス
-* SOAP ベースの Web サービス
+* SOAP ベースの web サービス
 * OData サービス（バージョン 4.0）
 * Microsoft® Dynamics
 * Salesforce
 * Microsoft® Azure Blob Storage
 
-データ統合は、OAuth2.0([認証コード](https://oauth.net/2/grant-types/authorization-code/), [クライアント資格情報](https://oauth.net/2/grant-types/client-credentials/))、基本認証、API キー認証の各認証タイプが標準で用意されており、Web サービスにアクセスするためのカスタム認証を実装できます。 RESTful、SOAP ベース、OData の各サービスは、 [!DNL Experience Manager] as a Cloud Service、リレーショナルデータベース用の JDBC および用のコネクタ [!DNL Experience Manager] ユーザープロファイルを [!DNL Experience Manager] web コンソール。
+データ統合は、OAuth2.0([認証コード](https://oauth.net/2/grant-types/authorization-code/), [クライアント資格情報](https://oauth.net/2/grant-types/client-credentials/))、基本認証、API キー認証の各認証タイプが標準で用意されており、Web サービスにアクセスするためのカスタム認証を実装できます。 RESTful サービス、SOAP ベースサービス、OData サービスは [!DNL Experience Manager] as a Cloud Service で設定し、リレーショナルデータベース用の JDBC と [!DNL Experience Manager] ユーザープロファイル用のコネクタは、[!DNL Experience Manager] web コンソールで設定します。
 
 ## リレーショナルデータベースの設定 {#configure-relational-database}
 
@@ -50,8 +50,8 @@ ht-degree: 85%
 
    * JDBC ドライバーの Java™ のクラス名
    * JDBC 接続 URI
-   * JDBC ドライバとの接続を確立するためのユーザー名とパスワード
-   * SQL SELECT クエリを **[!UICONTROL 検証クエリ]** プールからの接続を検証するフィールド。 クエリは、少なくとも 1 つの行を返す必要があります。 データベースに応じて、次のいずれかを指定します。
+   * JDBC ドライバーとの接続を確立するためのユーザー名とパスワード
+   * 「**[!UICONTROL 検証クエリ]**」フィールドの SQL SELECT クエリを指定して、プールからの接続を検証します。クエリは、少なくとも 1 つのレコードを返す必要があります。データベースに応じて、次のいずれかを指定します。
       * SELECT 1（MySQL または MS SQL の場合）
       * SELECT 1 from dual（Oracle の場合）
    * データソースの名前
@@ -107,11 +107,11 @@ RESTful サービス、SOAP サービス、OData サービスのクラウドサ�
 
    1. **[!UICONTROL 設定ブラウザー]**&#x200B;で、「`global`」フォルダーを選択して「**[!UICONTROL プロパティ]**」をタップします。
 
-   1. 内 **[!UICONTROL 設定プロパティ]** ダイアログ、有効 **[!UICONTROL クラウド設定]**.
+   1. **[!UICONTROL 設定プロパティ]**&#x200B;ダイアログで、「**[!UICONTROL クラウド設定]**」を有効にします。
 
    1. 「**[!UICONTROL 保存して閉じる]**」をタップして設定内容を保存し、ダイアログを閉じます。
 
-1. 内 **[!UICONTROL 設定ブラウザー]**&#x200B;をタップします。 **[!UICONTROL 作成]**.
+1. **[!UICONTROL 設定ブラウザー]**&#x200B;で「**[!UICONTROL 作成]**」をタップします。
 1. 「**[!UICONTROL 設定を作成]**」ダイアログでフォルダーのタイトルを指定し、「**[!UICONTROL クラウド設定]**」を有効にします。
 1. 「**[!UICONTROL 作成]**」をタップします。これで、クラウドサービス設定が有効になったフォルダーが作成されました。
 
@@ -227,7 +227,7 @@ SOAP ベースの web サービスは、[Web Services Description Language（WSD
    クラウドサービス設定用フォルダーの作成方法と構成方法については、「[クラウドサービス設定用フォルダーの構成](configure-data-sources.md#cloud-folder)」を参照してください。
 
 1. 「**[!UICONTROL 作成]**」をタップして、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL SOAP Web サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」をタップします。
-1. SOAP Web サービスに対して次の情報を指定します。
+1. SOAP web サービスに対して次の情報を指定します。
 
    * Web サービスの WSDL URL。
    * サービスエンドポイント。WSDL で指定されているサービスエンドポイントを上書きするには、このフィールドの値を指定します。

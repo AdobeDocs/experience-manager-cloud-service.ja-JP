@@ -5,7 +5,7 @@ exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 source-git-commit: cf09c7774b633ae2cf1c5b28fee2bd8191d80bb3
 workflow-type: tm+mt
 source-wordcount: '1846'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -26,9 +26,9 @@ ht-degree: 92%
 
 開始する前に、次の重要事項を確認してください。
 
-* CTT のバージョン 2.0.16 以降では、バンドルのインストール時にプレコピーの設定が自動的に行われます。 さらに、移行セットのサイズが 200GB を超える場合、抽出プロセスは自動的にプリコピー機能を利用します。 azcopy.config ファイルは、crx-quickstart/cloud-migration/ディレクトリに作成されます。 CTT バージョン 2.0.16 以降を使用している場合は、プリコピーの設定を手動でおこなう必要はありません。
+* CTT のバージョン 2.0.16 以降では、バンドルのインストール時にプレコピーの設定が自動的に行われます。さらに、移行セットのサイズが 200 GB を超える場合、抽出プロセスは自動的にプレコピー機能を利用します。azcopy.config ファイルは、crx-quickstart/cloud-migration/ ディレクトリに作成されます。CTT バージョン 2.0.16 以降を使用している場合は、プレコピー設定を手動で行う必要はありません。
 
-* ソース AEM のバージョンは 6.3 ～ 6.5 である必要がある.
+* ソース AEM のバージョンは 6.3 ～ 6.5 である必要があります。
 
 * ソース AEM のデータストアが Amazon S3 または Azure Blob Storage を使用するように設定されている。詳しくは、[AEM 6 でのノードストアとデータストアの設定を参照してください](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=ja)。
 
@@ -36,7 +36,7 @@ ht-degree: 92%
 
 * ソース AEM インスタンスを実行するインスタンス（または VM）に [AzCopy](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-v10) をインストールするには、アクセス権が必要である。
 
-* データストアのガベージコレクションが、ソース上で過去 7 日以内に実行されている。詳しくは、[データストアのガベージコレクション](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection)を参照してください。
+* データストアのガベージコレクションが、ソース上で過去 7 日以内に実行されている。詳しくは、[データストアのガベージコレクション](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=ja#data-store-garbage-collection)を参照してください。
 
 ### ソース AEM インスタンスが Amazon S3 または Azure Blob Storage データストアを使用するように設定されている場合の追加の考慮事項 {#additional-considerations-amazons3-azure}
 
@@ -55,7 +55,7 @@ ht-degree: 92%
 ## AzCopy をコピー前手順として使用する設定 {#setting-up-pre-copy-step}
 
 >[!NOTE]
->CTT のバージョン 2.0.16 以降では、バンドルのインストール時にプレコピーの設定が自動的に行われます。 さらに、移行セットのサイズが 200GB を超える場合、抽出プロセスは自動的にプリコピー機能を利用します。 azcopy.config ファイルは、crx-quickstart/cloud-migration/ディレクトリに作成されます。 ファイルの設定を手動で更新する場合は、以下の節を参照してください。
+>CTT のバージョン 2.0.16 以降では、バンドルのインストール時にプレコピーの設定が自動的に行われます。さらに、移行セットのサイズが 200 GB を超える場合、抽出プロセスは自動的にプレコピー機能を利用します。azcopy.config ファイルは、crx-quickstart/cloud-migration/ ディレクトリに作成されます。ファイルの設定を手動で更新する場合は、以下の節を参照してください。
 
 この節では、コンテンツ転送ツールを使用して AzCopy をコピー前手順として使用し、コンテンツを AEM as a Cloud Service に移行する方法を説明します。
 

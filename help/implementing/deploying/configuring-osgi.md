@@ -6,7 +6,7 @@ exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
 workflow-type: tm+mt
 source-wordcount: '3312'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -189,8 +189,8 @@ AEM SDK Quickstart Jar の AEM Web コンソールは、OSGi コンポーネン�
 >
 >AEM Web コンソールの設定 UI では、`.cfg.json` ファイルをリポジトリーに書き込みます。したがって、AEM プロジェクトで定義した OSGi 設定が、生成された設定と異なる可能性がある場合は、ローカル開発時に予期しない動作が発生するのを避けるために、この点に注意してください。
 
-1. AEM SDK Quickstart Jar のAEM Web コンソール ( ) にログインします。 `https://<host>:<port>/system/console` 管理者ユーザーとして
-1. に移動します。 **OSGi** > **設定**
+1. AEM SDK Quickstart Jar の AEM webコンソール（`https://<host>:<port>/system/console`）にadmin ユーザーでログインする。
+1. **OSGi**／**設定**&#x200B;に移動する。
 1. 設定するには、該当する OSGi コンポーネントを見つけ、タイトルをタップして編集に入ります。
    ![OSGi 設定](./assets/configuring-osgi/configuration.png)
 1. 必要に応じて Web UI を使用して OSGi 設定プロパティの値を編集します。

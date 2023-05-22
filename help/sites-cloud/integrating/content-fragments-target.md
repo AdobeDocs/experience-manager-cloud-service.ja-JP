@@ -1,31 +1,31 @@
 ---
-title: コンテンツフラグメントのAdobe Targetへの書き出し
-description: コンテンツフラグメントのAdobe Targetへの書き出し
+title: Adobe Target へのコンテンツフラグメントの書き出し
+description: Adobe Target へのコンテンツフラグメントの書き出し
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
 workflow-type: tm+mt
 source-wordcount: '2229'
-ht-degree: 41%
+ht-degree: 99%
 
 ---
 
-# コンテンツフラグメントのAdobe Targetへの書き出し {#exporting-content-fragments-to-adobe-target}
+# Adobe Target へのコンテンツフラグメントの書き出し {#exporting-content-fragments-to-adobe-target}
 
 >[!CAUTION]
 >
->* AEMコンテンツフラグメントは、Adobe Targetのデフォルトのワークスペースに書き出されます。
+>* AEM コンテンツフラグメントは、Adobe Target のデフォルトのワークスペースに書き出されます。
 >* [Adobe Target との統合](/help/sites-cloud/integrating/integrating-adobe-target.md)で説明されている手順に従って、AEM と Adobe Target を統合する必要があります。
 
 
-書き出し可能 [コンテンツフラグメント](/help/sites-cloud/authoring/fundamentals/content-fragments.md)(Adobe Experience Manager as a Cloud Service(AEM) で作成、Adobe Target(Target) に対して ) 書き出したエクスペリエンスフラグメントは、Target アクティビティのオファーとして使用し、幅広くエクスペリエンスをテストおよびパーソナライズできます。
+Adobe Experience Manager as a Cloud Service（AEM）で作成された[コンテンツフラグメント](/help/sites-cloud/authoring/fundamentals/content-fragments.md)を Adobe Target（Target）に書き出すことができます。書き出したエクスペリエンスフラグメントは、Target アクティビティのオファーとして使用し、幅広くエクスペリエンスをテストおよびパーソナライズできます。
 
-コンテンツフラグメントをAdobe Targetに書き出すには、次のオプションを使用できます。
+コンテンツフラグメントを Adobe Target に書き出すには、次のオプションを使用できます。
 
 * JSON：ヘッドレスコンテンツ配信のサポート
 
 <!-- * GraphQL query ??? -->
 
-AEMコンテンツフラグメントをAdobe Targetに書き出すインスタンスを準備するには、次の操作が必要です。
+AEM コンテンツフラグメントを Adobe Target に書き出すためのインスタンスを準備するには、次の作業が必要です。
 
 * [Adobe Target との統合](/help/sites-cloud/integrating/integrating-adobe-target.md)
 * [クラウド設定の追加](#add-the-cloud-configuration)
@@ -33,11 +33,11 @@ AEMコンテンツフラグメントをAdobe Targetに書き出すインスタ�
 
 その後、以下が可能になります。
 
-* [コンテンツフラグメントをAdobe Targetに書き出す](#exporting-a-content-fragment-to-adobe-target)
-* [Adobe Targetでのコンテンツフラグメントの使用](#using-your-content-fragments-in-adobe-target)
-* また、 [既にAdobe Targetに書き出されたコンテンツフラグメントを削除する](#deleting-a-content-fragment-already-exported-to-adobe-target)
+* [コンテンツフラグメントを Adobe Target に書き出す](#exporting-a-content-fragment-to-adobe-target)
+* [Adobe Target でコンテンツフラグメントを使用する](#using-your-content-fragments-in-adobe-target)
+* [Adobe Target に書き出し済みのコンテンツフラグメントを削除する](#deleting-a-content-fragment-already-exported-to-adobe-target)
 
-コンテンツフラグメントは、Adobe Targetのデフォルトのワークスペースに書き出すことも、Adobe Targetのユーザー定義ワークスペースに書き出すこともできます。
+コンテンツフラグメントは、Adobe Target のデフォルトのワークスペースに書き出すことも、Adobe Target のユーザー定義のワークスペースに書き出すこともできます。
 
 >[!NOTE]
 >
@@ -68,11 +68,11 @@ AEMコンテンツフラグメントをAdobe Targetに書き出すインスタ�
 
 * 書き出しに使用する形式オプションを指定する
 * Target ワークスペースを宛先として選択する
-* コンテンツフラグメント内の参照を書き換える externalizer ドメインを選択します（オプション）
+* コンテンツフラグメントに含まれる参照を書き換えるための Externalizer ドメインを選択する（オプション）
 
 必要なオプションは、必要なフォルダーやフラグメントの&#x200B;**ページのプロパティ**&#x200B;で選択できます。仕様は必要に応じて継承されます。
 
-1. 次に移動： **Assets** コンソール。
+1. **Assets** コンソールに移動します。
 
 1. 適切なフォルダーまたはフラグメントの&#x200B;**ページのプロパティ**&#x200B;を開きます。
 
@@ -90,9 +90,9 @@ AEMコンテンツフラグメントをAdobe Targetに書き出すインスタ�
 
    >[!NOTE]
    >
-   >コンテンツフラグメントオファーの JSON 形式はカスタマイズできます。 これをおこなうには、顧客のコンテンツフラグメントコンポーネントを定義し、そのプロパティを Sling Model コンポーネントに書き出す方法に注釈を付けます。
+   >コンテンツフラグメントオファーの JSON 形式はカスタマイズできます。それには、顧客のコンテンツフラグメントコンポーネントを定義したあと、そのコンポーネントのプロパティを書き出す方法についてコンポーネントの Sling Model に注釈を付けます。
    >
-   >次のコアコンポーネントを参照してください。 [コアコンポーネント — コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
+   >詳しくは、コアコンポーネントガイドの[コアコンポーネント - コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ja)を参照してください。
 
 1. **Adobe Target** で以下を選択します。
 
@@ -107,7 +107,7 @@ AEMコンテンツフラグメントをAdobe Targetに書き出すインスタ�
    >
    > AEM Externalizer を設定するのは、コンテンツの書き出し先を特定の&#x200B;*パブリッシュ*&#x200B;ドメインに指定する場合です。詳しくは、[AEM Link Externalizer の設定](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer)を参照してください。
    >
-   > また、Externalizer ドメインは、Target に送信されるコンテンツフラグメントのコンテンツにのみ関連し、「オファーコンテンツを表示」などのメタデータには関連しません。
+   > また、Externalizer ドメインは、Target に送信されるコンテンツフラグメントのコンテンツにのみ関連し、「オファーコンテンツを表示」などのメタデータとは関係ありません。
 
    例えば、フォルダーの場合は下図のようになります。
 
@@ -123,17 +123,17 @@ AEMコンテンツフラグメントをAdobe Targetに書き出すインスタ�
 
 >[!IMPORTANT]
 >
->新しいレガシー設定の追加は、コンテンツフラグメントの書き出しでのみサポートされる特殊なシナリオです。
+>新しいレガシー設定の追加は、コンテンツフラグメントの書き出しでのみサポートされている特殊なケースのシナリオです。
 
 Adobe Experience Platform Launch を使用するための[クラウド設定を追加](#add-the-cloud-configuration)した後で、最初 AEM を Adobe Target と統合するには、レガシー設定を使用して Adobe Target と手動で統合する必要もあります。
 
 ### Target クラウド設定の作成 {#creating-a-target-cloud-configuration}
 
-AEMがAdobe Targetとやり取りできるようにするには、Target クラウド設定を作成します。 設定を作成するには、Adobe Targetのクライアントコードとユーザーの資格情報を指定します。
+AEM が Adobe Target とやり取りできるようにするには、Target クラウド設定を作成します。設定を作成するには、Adobe Target のクライアントコードとユーザーの資格情報を指定します。
 
-Target クラウド設定を作成するのは、1 回のみです。これは、設定を複数のAEMキャンペーンに関連付けることができるからです。 複数のAdobe Targetクライアントコードがある場合、各クライアントコードに対して 1 つの設定を作成します。
+複数の AEM キャンペーンに設定を関連付けることができるので、Target クラウド設定を作成するのは 1 回のみです。複数の Adobe Target クライアントコードがある場合、各クライアントコードに対して 1 つの設定を作成します。
 
-クラウド設定を設定して、Adobe Targetからセグメントを同期することができます。 同期を有効にした場合、クラウド設定が保存されるとすぐに、セグメントがバックグラウンドで Target から読み込まれます。
+クラウド設定を設定して、Adobe Target からセグメントを同期することができます。同期を有効にした場合、クラウド設定が保存されるとすぐに、バックグラウンドでセグメントが Target から読み込まれます。
 
 AEMで Target クラウド設定を作成するには、以下の手順を実行します。
 
@@ -185,9 +185,9 @@ AEMで Target クラウド設定を作成するには、以下の手順を実行
      If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
      -->
 
-   * **正確なターゲット設定を使用**：デフォルトでは、このチェックボックスはオンになっています。選択した場合、クラウドサービス設定は、コンテキストの読み込みを待ってから、コンテンツを読み込みます。 次の注意を参照してください。
+   * **正確なターゲット設定を使用**：デフォルトでは、このチェックボックスはオンになっています。選択した場合、クラウドサービス設定は、コンテキストの読み込みを待ってからコンテンツを読み込みます。次のメモを参照してください。
 
-   * **Adobe Target からセグメントを同期**：Target で定義されているセグメントをダウンロードして AEM で使用するには、このオプションをオンにします。API Type プロパティが REST の場合は、このオプションを選択する必要があります。インラインセグメントはサポートされず、常に Target のセグメントを使用する必要があるからです。 (「セグメント」のAEM用語は、Target の「オーディエンス」と同じです )。
+   * **Adobe Target からセグメントを同期**：Target で定義されているセグメントをダウンロードして AEM で使用するには、このオプションをオンにします。API Type プロパティが REST の場合は、このオプションを選択する必要があります。インラインセグメントはサポートされず、常に Target のセグメントを使用する必要があるからです。（AEM の用語「セグメント」は、Target の「オーディエンス」と同じです。）
 
    * **クライアントライブラリ**：デフォルトは AT.js です（mbox.js は非推奨／廃止予定です）。
 
@@ -197,14 +197,14 @@ AEMで Target クラウド設定を作成するには、以下の手順を実行
       >
       >mbox.js は非推奨（廃止予定）となり、後日で削除される予定です。
       >
-      >Adobeでは、mbox.js ではなく AT.js をクライアントライブラリとして使用することをお勧めします。
+      >アドビは、クライアントライブラリとして mbox.js ではなく AT.js を使用することをお勧めします。
       >
-      >AT.js は、mbox.js ライブラリに対していくつかの強化点を提供します。
+      >AT.js は mbox.js ライブラリよりも、次のような強化点を提供します。
       >
-      >* Web 実装のページ読み込み時間の改善
+      >* Web 実装のページ読み込み時間の向上
       >* セキュリティの向上
-      >* シングルページアプリケーション向けの実装オプションの改善
-      >* AT.js は、target.js に含まれるコンポーネントを含むので、target.js を呼び出す必要がなくなりました
+      >* 単一ページアプリケーション向けの実装オプションの改善
+      >* AT.js は、target.js に含まれていたコンポーネントを含むので、target.js を呼び出す必要がなくなりました
 
       >
       >**クライアントライブラリ**&#x200B;ドロップダウンメニューでは、AT.js または mbox.js を選択できます。
@@ -217,11 +217,11 @@ AEMで Target クラウド設定を作成するには、以下の手順を実行
       >
       >デフォルトでは、Adobe Target 設定ウィザードをオプトインすると、正確なターゲット設定が有効になります。
       >
-      >正確なターゲティングとは、クラウドサービスの設定が、コンテキストの読み込みを待ってからコンテンツを読み込むことを意味します。 その結果、パフォーマンスに関しては、正確なターゲティングによって、コンテンツを読み込む前に数ミリ秒の遅延が生じる場合があります。
+      >正確なターゲティングとは、クラウドサービスの設定が、コンテキストの読み込みを待ってからコンテンツを読み込むことを意味します。その結果、パフォーマンスに関しては、正確なターゲティングによって、コンテンツを読み込む前に数ミリ秒の遅延が生じる場合があります。
       >
-      >正確なターゲット設定は、オーサーインスタンスで常に有効になっています。 ただし、パブリッシュインスタンスでは、クラウドサービス設定の「正確なターゲティング」の横にあるチェックマークをオフにすることで、正確なターゲティングをグローバルにオフにすることができます (**http://localhost:4502/etc/cloudservices.html**) をクリックします。 また、クラウドサービス設定での設定に関係なく、個々のコンポーネントに対して正確なターゲティングのオン/オフを切り替えることもできます。
+      >正確なターゲティングは、オーサーインスタンスで常に有効になっています。ただし、パブリッシュインスタンスでは、クラウドサービス設定（**http://localhost:4502/etc/cloudservices.html**）の「正確なターゲティング」の横にあるチェックマークをオフにすることで、正確なターゲティングをグローバルにオフにできますまた、クラウドサービス設定での設定に関係なく、個々のコンポーネントに対して正確なターゲティングのオン／オフを切り替えることもできます。
       >
-      >この設定を変更しても、作成済みの対象コンポーネントには影響しません&#x200B;***。***&#x200B;これらのコンポーネントに対して直接変更を加える必要があります。
+      >この設定を変更しても、作成済みの対象コンポーネントには影響しません&#x200B;***。***&#x200B;これらのコンポーネントには直接変更を加える必要があります。
 
 1. 「**Adobe Target に接続**」をクリックして、Target の接続を開始します。接続に成功すると、「**接続に成功しました**」というメッセージが表示されます。メッセージの「**OK**」をクリックして、ダイアログの「**OK**」をクリックします。
 
@@ -231,7 +231,7 @@ AEMで Target クラウド設定を作成するには、以下の手順を実行
 
 Target クラウド設定を設定したら、Target フレームワークを追加します。このフレームワークは、使用可能な [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) コンポーネントから Adobe Target に送信されるデフォルトのパラメーターを識別します。Target は、パラメーターを使用して、現在のコンテキストに適用されるセグメントを決定します。
 
-1 つの Target 設定に対して複数のフレームワークを作成できます。 Web サイトのセクションごとに異なるパラメーターセットを Target に送信する必要がある場合は、複数のフレームワークが便利です。 送信する必要のあるパラメーターの各セットに対してフレームワークを作成します。 Web サイトの各セクションを適切なフレームワークに関連付けます。 1 つの web ページは一度に 1 つのフレームワークしか使用できません。
+1 つの Target 設定に対して複数のフレームワークを作成できます。Web サイトのセクションごとに異なるパラメーターセットを Target に送信する必要がある場合は、複数のフレームワークが便利です。送信する必要のあるパラメーターのセットごとにフレームワークを作成します。Web サイトの各セクションを適切なフレームワークに関連付けます。1 つの web ページは一度に 1 つのフレームワークしか使用できません。
 
 1. Target 設定ページで、「利用可能な設定」の横の「**+**」（プラス符号）をクリックします。
 
@@ -247,7 +247,7 @@ Target クラウド設定を設定したら、Target フレームワークを追
 
    >[!NOTE]
    >
-   >マッピング時に、パラメーターは単純な文字列を使用して mbox に渡されます。 ContextHub から配列をマッピングすることはできません。
+   >マッピング時に、パラメーターは単純な文字列を使用して mbox に渡されます。ContextHub から配列をマッピングすることはできません。
 
    例えば、サイト訪問者に関する&#x200B;**プロファイルデータ**&#x200B;を使用して Target キャンペーンを管理するには、「**プロファイルデータ**」コンポーネントをページにドラッグします。Target パラメーターへのマッピングに使用できるプロファイルデータ変数が表示されます。
 
@@ -259,9 +259,9 @@ Target クラウド設定を設定したら、Target フレームワークを追
 
    >[!NOTE]
    >
-   >パラメーターの同期は、AEMからAdobe Targetへの 1 つの方法のみです。
+   >パラメーターの同期は、AEM から Adobe Target への一方向のみです。
 
-フレームワークが作成されました。 フレームワークをパブリッシュインスタンスにレプリケートするには、 **フレームワークを有効化** オプションを選択します。
+フレームワークが作成されました。フレームワークをパブリッシュインスタンスにレプリケートするには、サイドキックの「**フレームワークをアクティベート**」オプションを使用します。
 
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
@@ -308,20 +308,20 @@ When you associate a page with the framework, the child pages inherit the associ
    >If the framework you attached to the page was not activated yet, a wizard opens which allows you to publish it as well.
 -->
 
-## コンテンツフラグメントのAdobe Targetへの書き出し {#exporting-a-content-fragment-to-adobe-target}
+## Adobe Target へのコンテンツフラグメントの書き出し {#exporting-a-content-fragment-to-adobe-target}
 
 >[!CAUTION]
 >
->画像などのメディアアセットの場合、参照のみが Target に書き出されます。 アセット自体はAEM Assetsに保存されたままで、AEMパブリッシュインスタンスから配信されます。
+>画像などのメディアアセットの場合、参照のみが Target に書き出されます。アセット自体は AEM Assets に保存されたままで、AEM パブリッシュインスタンスから配信されます。
 >
 >このため、Target に書き出す前に、関連するすべてのアセットを含むコンテンツフラグメントを公開する必要があります。
 
-（クラウド設定を指定した後に）コンテンツフラグメントをAEMから Target に書き出すには、次の手順を実行します。
+（クラウド設定を指定した後に）コンテンツフラグメントを AEM から Target に書き出すには、次の手順を実行します。
 
-1. 内のコンテンツフラグメントに移動します。 **Assets** コンソール。
-1. ターゲットに書き出すコンテンツフラグメントを選択します。
+1. **Assets** コンソールのコンテンツフラグメントに移動します。
+1. Target に書き出すコンテンツフラグメントを選択します。
 
-1. タップまたはクリック **Adobe Targetオファーに書き出し**.
+1. 「**Adobe Target オファーに書き出し**」をタップまたはクリックします。
 
    ![Adobe Target に書き出し](assets/cfm-export-target-01.png)
 
@@ -335,21 +335,21 @@ When you associate a page with the framework, the child pages inherit the associ
    
    -->
 
-1. タップまたはクリック **公開せずに書き出し** または **公開** 必要に応じて。
+1. 必要に応じて、「**公開せずに書き出し**」または「**公開**」をタップまたはクリックします。
 
    >[!NOTE]
    >
    >表示される実際のアクションは、フラグメントのステータスと関連アセットによって異なります。
    >
-   >すべてが既に公開されていて、それ以降に何も変更されていない場合、この手順が渡されます。
+   >すべてが既に公開されていて、それ以降に何も変更されていない場合、この手順は飛ばされます。
 
    >[!NOTE]
    >
-   >選択 **公開** コンテンツフラグメントを直ちに公開し、Target に送信します。
+   >「**公開**」を選択すると、コンテンツフラグメントはすぐに公開され、Target に送信されます。
 
 1. 確認ダイアログで「**OK**」をタップ／クリックします。
 
-   これで、コンテンツフラグメントが Target に表示されます。
+   コンテンツフラグメントは Target に送信されているはずです。
 
    >[!NOTE]
    >
@@ -357,42 +357,42 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >Adobe Targetでコンテンツフラグメントを表示すると、 *最終変更日* 表示される日付は、フラグメントがAdobe Targetに最後に書き出された日付ではなく、AEMでフラグメントが最後に変更された日付です。
+   >Adobe Target でコンテンツフラグメントを表示するときに表示される&#x200B;*最終変更日*&#x200B;は、フラグメントが Adobe Target に最後に書き出された日付ではなく、AEM でフラグメントが最後に変更された日付です。
 
 >[!NOTE]
 >
->または、ページエディターで、 [ページ情報](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) メニュー
+>あるいは、[ページ情報](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)メニューの同等のコマンドを使用して、ページエディターから書き出しを実行することもできます。
 
-## Adobe Targetでのコンテンツフラグメントの使用 {#using-your-content-fragments-in-adobe-target}
+## Adobe Target でのコンテンツフラグメントの使用 {#using-your-content-fragments-in-adobe-target}
 
-上記のタスクを実行すると、コンテンツフラグメントが Target のオファーページに表示されます。 ご覧ください [特定の Target ドキュメント](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html) そこで何を達成できるかを学ぶために
+ここまでのタスクを完了すると、コンテンツフラグメントが Target のオファーページに表示されます。Target 側でできることを詳しく知るには、[Target に特化したドキュメント](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=ja)を参照してください。
 
 >[!NOTE]
 >
->Adobe Targetでコンテンツフラグメントを表示すると、 *最終変更日* 表示される日付は、フラグメントがAdobe Targetに最後に書き出された日付ではなく、AEMでフラグメントが最後に変更された日付です。
+>Adobe Target でコンテンツフラグメントを表示するときに表示される&#x200B;*最終変更日*&#x200B;は、フラグメントが最後に Adobe Target に書き出された日付ではなく、AEM でフラグメントが最後に変更された日付です。
 
-## Adobe Targetに既に書き出されているコンテンツフラグメントの削除 {#deleting-a-content-fragment-already-exported-to-adobe-target}
+## Adobe Target に書き出し済みのコンテンツフラグメントの削除 {#deleting-a-content-fragment-already-exported-to-adobe-target}
 
-書き出しと同様に、Adobe Targetからコンテンツフラグメントを削除する場合は、 **Assets** フラグメントを選択した場合のコンソール：
+書き出しと同様に、Adobe Target からコンテンツフラグメントを削除する場合も、フラグメントを選択した後、**Assets** コンソールの上部ツールバーから選択できます。
 
 ![Adobe Target で削除](assets/cfm-export-target-02.png)
 
-Target に既に書き出されているコンテンツフラグメントを削除すると、そのフラグメントが既に Target のオファーで使用されている場合に問題が発生する可能性があります。 フラグメントコンテンツがAEMによって配信されるので、フラグメントを削除すると、オファーが使用できなくなります。
+Target に書き出し済みのコンテンツフラグメントを削除すると、そのフラグメントが既に Target のオファーで使用されている場合は、問題が発生する可能性があります。フラグメントコンテンツが AEM によって配信されるので、フラグメントを削除すると、オファーが使用できなくなります。
 
 <!-- if the information about deleting-if-used correct, or is it not allowed at all? -->
 
 このような状況を回避するには、次の手順に従います。
 
-* コンテンツフラグメントが現在アクティビティで使用されていない場合、AEMを使用すると、警告メッセージを表示せずにフラグメントを削除できます。
-* コンテンツフラグメントが Target のアクティビティで現在使用中の場合は、フラグメントを削除するとアクティビティに発生する可能性がある結果について、AEMユーザーに警告するエラーメッセージが表示されます。
+* コンテンツフラグメントが現在アクティビティで使用されていない場合、AEM を使用すると、警告メッセージを表示せずにフラグメントを削除できます。
+* コンテンツフラグメントが現在 Target のアクティビティで使用されている場合、フラグメントを削除するとアクティビティに影響が及ぶ可能性があると、AEM ユーザーに警告メッセージが表示されます。
 
-   AEMのエラーメッセージは、ユーザーによるコンテンツフラグメントの削除（強制）を禁止していません。 コンテンツフラグメントを削除した場合：
+   AEM のエラーメッセージは、ユーザーによるコンテンツフラグメントの（強制）削除を禁止するものではありません。コンテンツフラグメントが削除された場合は、次のような結果になります。
 
-   * AEMコンテンツフラグメントを含む Target オファーで、望ましくない動作が表示される場合があります
+   * AEM コンテンツフラグメントを使用した Target オファーで望ましくない動作が見られる場合があります。
 
-      * コンテンツフラグメントが Target にプッシュされたので、オファーは引き続きレンダリングされる可能性が高くなります
-      * 参照元のアセットがAEMでも削除された場合、コンテンツフラグメント内の参照は正しく機能しない可能性があります。
-   * もちろん、コンテンツフラグメントはAEMには存在しなくなったので、コンテンツフラグメントに対するそれ以上の変更はできません。
+      * コンテンツフラグメント が Target にプッシュされたため、オファーは引き続きレンダリングされる可能性があります。
+      * 参照されているアセットが AEM でも削除されている場合、コンテンツフラグメント内の参照はすべて正しく機能しない可能性があります。
+   * 当然ながら、コンテンツフラグメントは AEM にはもう存在しないため、さらに変更することは不可能です。
 
 
 ## その他のリソース {#further-resources}
@@ -403,10 +403,10 @@ Target に既に書き出されているコンテンツフラグメントを削�
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)
 -->
 
-* [コアコンポーネント — コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
+* [コアコンポーネント - コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ja)
 
 * [Adobe Target Developers](https://developers.adobetarget.com/)
 
-* [Adobe Target - Target アクティビティでAEMコンテンツフラグメントを使用して、最適化やパーソナライゼーションを支援する](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)
+* [Adobe Target - Target アクティビティで AEM コンテンツフラグメントを使用して、最適化やパーソナライゼーションを支援](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=ja)
 
-* [Adobe Target - AEMエクスペリエンスフラグメントとコンテンツフラグメントの概要](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html)
+* [Adobe Target - AEM エクスペリエンスフラグメントとコンテンツフラグメントの概要](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html?lang=ja)

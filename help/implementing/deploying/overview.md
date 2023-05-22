@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
 workflow-type: tm+mt
 source-wordcount: '3509'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -294,11 +294,11 @@ Cloud Manager パイプラインを使用してコードをデプロイする通
 * OSGi 設定の実行モードでは、環境については RDE（迅速な開発環境）、dev（開発）、stage（ステージ）、prod（実稼動）のいずれかを、サービスについては author（オーサー）または publish（パブリッシュ）を参照する必要があります。`<service>.<environment_type>` の組み合わせはサポートされていますが、この特定の順序で使用する必要があります（例えば、`author.dev` や `publish.prod` など）。OSGi トークンは、`getRunModes` メソッドを使用するのではなく、コードから直接参照する必要があります。このメソッドは、実行時に `environment_type` を組み込まなくなりました。詳しくは、[AEM as a Cloud Service の OSGi の設定](/help/implementing/deploying/configuring-osgi.md)を参照してください。
 * OSGi バンドルの実行モードは、サービス（author、publish）のみに制限されます。実行モードごとに、OSGi バンドルを `install.author` または `install.publish` の配下のコンテンツパッケージにインストールする必要があります。
 
-AEM as a Cloud Serviceでは、実行モードを使用して特定の環境やサービスのコンテンツをインストールすることはできません。 開発環境で、ステージング環境または実稼動環境にないデータまたはHTMLを使用して開発環境をシードする必要がある場合は、パッケージマネージャーを使用できます。
+AEM as a Cloud Service では、実行モードを使用して特定の環境やサービスのコンテンツをインストールすることはできません。開発環境で、ステージング環境または実稼動環境にないデータや、HTML を使用して開発環境をシードする必要がある場合は、パッケージマネージャーを使用できます。
 
 サポートされている実行モード設定は次のとおりです。
 
-* **config**（(*デフォルト。すべての AEM サービスに適用*）
+* **config**（*デフォルト。すべての AEM サービスに適用*）
 * **config.author**（*すべての AEM オーサーサービスに適用*）
 * **config.author.dev**（*開発環境の AEM オーサーサービスに適用*）
 * **config.author.rde**（*AEM RDE オーサーサービスに適用*）

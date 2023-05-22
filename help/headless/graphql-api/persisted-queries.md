@@ -6,7 +6,7 @@ exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: 0cac51564468c414866d29c8f0be82f77625eaeb
 workflow-type: tm+mt
 source-wordcount: '1541'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 74%
 >
 >永続クエリをお勧めします。詳しくは、[GraphQL クエリのベストプラクティス（Dispatcher）](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices)と、関連する Dispatcher の設定を参照してください。
 
-AEM では [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) を使用して、[実稼動環境に移行](#transfer-persisted-query-production)する前に GraphQL クエリを開発、テスト、保持できます。カスタマイズが必要な場合 ( 例： [キャッシュのカスタマイズ](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) を使用すると、API を使用できます。cURL の例は、 [GraphQLクエリの永続化方法](#how-to-persist-query).
+AEM では [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) を使用して、[実稼動環境に移行](#transfer-persisted-query-production)する前に GraphQL クエリを開発、テスト、保持できます。カスタマイズが必要な場合（例えば、[キャッシュをカスタマイズする場合](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)）、API を使用できます。[GraphQL クエリを永続化する方法](#how-to-persist-query)で示される cURL の例を参照してください。
 
 ## 永続的なクエリとエンドポイント {#persisted-queries-and-endpoints}
 
@@ -55,10 +55,10 @@ AEM では [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) を使用�
 クエリを永続化するには、次のような様々な方法があります。
 
 * GraphiQL IDE - [永続クエリの保存](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries)を参照してください（推奨される方法）
-* cURL — 次の例を参照
+* cURL - 次の例を参照してください。
 * その他のツール（[Postman](https://www.postman.com/) など）
 
-GraphiQL IDE は、クエリを保持するための&#x200B;**推奨**&#x200B;される方法です。を使用して特定のクエリを保持するには **cURL** コマンドラインツール：
+GraphiQL IDE は、クエリを保持するための&#x200B;**推奨**&#x200B;される方法です。**cURL** コマンドラインツールを使用して特定のクエリを保持する手順は次のとおりです。
 
 1. 新しいエンドポイント URL `/graphql/persist.json/<config>/<persisted-label>` に PUT してクエリを準備します。
 
@@ -260,11 +260,11 @@ query getAdventuresByActivity($activity: String!) {
 
 ## 永続クエリのキャッシュ {#caching-persisted-queries}
 
-永続化されたクエリは、 [Dispatcher](/help/headless/deployment/dispatcher.md) およびコンテンツ配信ネットワーク (CDN) レイヤーを使用すると、最終的に、要求元のクライアントアプリケーションのパフォーマンスを向上できます。
+永続クエリが推奨されます。永続クエリは、[Dispatcher](/help/headless/deployment/dispatcher.md) とコンテンツ配信ネットワーク（CDN）レイヤーでキャッシュされ、最終的に要求元のクライアントアプリケーションのパフォーマンスを向上させることができるためです。
 
-デフォルトでは、AEMは有効期間 (TTL) の定義に基づいてキャッシュを無効にします。 これらの TTL は、次のパラメーターで定義できます。 これらのパラメーターには様々な方法でアクセスでき、使用するメカニズムに応じて名前が異なります。
+デフォルトでは、AEM は有効期間（TTL）の定義に基づいてキャッシュを無効にします。これらの TTL は、次のパラメーターで定義できます。これらのパラメーターには様々な手段でアクセスでき、使用するメカニズムに応じて異なる名前で呼ばれます。
 
-| キャッシュタイプ | [HTTP ヘッダー](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi 設定  | Cloud Manager |
+| キャッシュタイプ | [HTTP ヘッダー](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Cache-Control) | cURL | OSGi 設定  | Cloud Manager |
 |--- |--- |--- |--- |--- |
 | ブラウザー | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` | `graphqlCacheControl` |
 | CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` | `graphqlSurrogateControl` | 60 |
@@ -277,47 +277,47 @@ query getAdventuresByActivity($activity: String!) {
 
 オーサーインスタンスの場合、デフォルト値は次のとおりです。
 
-* `max-age`  : 60
-* `s-maxage` : 60
-* `stale-while-revalidate` : 86400
-* `stale-if-error` : 86400
+* `max-age`：60
+* `s-maxage`：60
+* `stale-while-revalidate`：86400
+* `stale-if-error`：86400
 
-次のもの：
+これらは
 
-* 上書きできません：
-   * OSGi 設定を使用
-* 上書き可能：
-   * cURL を使用して HTTP ヘッダー設定を定義するリクエストによって適切な設定を含める必要があります `cache-control` および/または `surrogate-control`;例については、 [永続化されたクエリレベルでのキャッシュの管理](#cache-persisted-query-level)
-   * の値を **ヘッダー** 対話 [GraphiQL IDE](#http-cache-headers-graphiql-ide)
+* OSGi の設定で
+   * 上書きすることはできません。
+* cURL を使った
+   *  HTTP ヘッダー設定を定義するリクエストによって上書きできます。リクエストには、`cache-control` や `surrogate-control` に適した設定を含む必要があります。例として、[永続クエリレベルでのキャッシュの管理](#cache-persisted-query-level)を参照してください。
+   * [GraphiQL IDE](#http-cache-headers-graphiql-ide) の&#x200B;**ヘッダー**&#x200B;ダイアログで値を指定する場合。
 
 ### パブリッシュインスタンス {#publish-instances}
 
 パブリッシュインスタンスの場合、デフォルト値は次のとおりです。
 
-* `max-age`  : 60
-* `s-maxage` : 7200
-* `stale-while-revalidate` : 86400
-* `stale-if-error` : 86400
+* `max-age`：60
+* `s-maxage`：7200
+* `stale-while-revalidate`：86400
+* `stale-if-error`：86400
 
-これらは上書きできます。
+これらは、次のように上書きできます。
 
 * [GraphQL IDE から](#http-cache-headers-graphiql-ide)
 
-* [永続化されたクエリレベルで](#cache-persisted-query-level);これには、コマンドラインインターフェイスで cURL を使用してAEMにクエリを投稿し、永続化されたクエリを公開する必要があります。
+* [永続クエリレベルで](#cache-persisted-query-level)。これを行うには、コマンドラインインターフェイスで cURL を使用して AEM にクエリを実行し、永続クエリを公開する必要があります。
 
 * [Cloud Manager 変数を使用](#cache-cloud-manager-variables)
 
-* [OSGi 設定を使用](#cache-osgi-configration)
+* [上書きすることはできません。](#cache-osgi-configration)
 
-### GraphiQL IDE での HTTP キャッシュヘッダーの管理 {#http-cache-headers-graphiql-ide}
+### GraphiQL IDE の HTTP キャッシュヘッダーの管理 {#http-cache-headers-graphiql-ide}
 
 GraphiQL IDE - [永続クエリの保存](/help/headless/graphql-api/graphiql-ide.md#managing-cache)を参照してください。
 
-### 永続化されたクエリレベルでのキャッシュの管理 {#cache-persisted-query-level}
+### 永続クエリレベルでのキャッシュの管理 {#cache-persisted-query-level}
 
-これには、コマンドラインインターフェイスで cURL を使用してAEMにクエリを投稿する必要があります。
+これを行うには、コマンドラインインターフェイスで cURL を使用して AEM にクエリを実行する必要があります。
 
-PUT(create) メソッドの例を次に示します。
+PUT（作成）メソッドの例を次に示します。
 
 ```bash
 curl -u admin:admin -X PUT \
@@ -326,7 +326,7 @@ curl -u admin:admin -X PUT \
 --data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-POST(update) メソッドの例を次に示します。
+POST（更新）メソッドの例を次に示します。
 
 ```bash
 curl -u admin:admin -X POST \
@@ -335,11 +335,11 @@ curl -u admin:admin -X POST \
 --data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-`cache-control` は、作成時に設定することもできますし（PUT リクエストを使用）、後で設定することもできます（例えば、POST リクエストを使用）。AEM ではデフォルト値を提供できるので、永続クエリを作成する際に cache-control はオプションです。詳しくは、 [GraphQLクエリの永続化方法](#how-to-persist-query)（cURL を使用してクエリを永続化する例）。
+`cache-control` は、作成時に設定することもできますし（PUT リクエストを使用）、後で設定することもできます（例えば、POST リクエストを使用）。AEM ではデフォルト値を提供できるので、永続クエリを作成する際に cache-control はオプションです。cURL を使用してクエリを永続化する例については、[GraphQL クエリを永続化する方法](#how-to-persist-query)を参照してください。
 
 ### Cloud Manager 変数を使用したキャッシュの管理 {#cache-cloud-manager-variables}
 
-[Cloud Manager 環境変数](/help/implementing/cloud-manager/environment-variables.md) は、Cloud Manager で定義して必要な値を定義できます。
+[Cloud Manager 環境変数](/help/implementing/cloud-manager/environment-variables.md)は、Cloud Manager で定義して必要な値を定義できます。
 
 | 名前 | 値 | 適用されるサービス | タイプ |
 |--- |--- |--- |--- |
@@ -350,26 +350,26 @@ curl -u admin:admin -X POST \
 
 ### OSGi 設定を使用したキャッシュの管理 {#cache-osgi-configration}
 
-キャッシュをグローバルに管理するには、次の手順を実行します。 [OSGi 設定の指定](/help/implementing/deploying/configuring-osgi.md) の **永続的なクエリサービス設定**.
+キャッシュをグローバルに管理するには、**永続クエリサービス設定**&#x200B;の [OSGi 設定](/help/implementing/deploying/configuring-osgi.md)を行います。
 
 >[!NOTE]
 >
->OSGi の設定は、パブリッシュインスタンスにのみ適しています。 この設定はオーサーインスタンス上に存在しますが、無視されます。
+>OSGi 設定は、パブリッシュインスタンスにのみ適しています。この設定はオーサーインスタンス上に存在しますが、無視されます。
 
 パブリッシュインスタンスのデフォルトの OSGi 設定は次のとおりです。
 
-* 次の場合、Cloud Manager 変数を読み取ります。
+* 使用可能な場合、次の Cloud Manager 変数を読み取ります。
 
-   | OSGi 設定プロパティ | この | Cloud Manager 変数 |
+   | OSGi 設定のプロパティ | 読み取り対象 | Cloud Manager 変数 |
    |--- |--- |--- |
-   | `cacheControlMaxAge` | 読み取り | `graphqlCacheControl` |
-   | `surrogateControlMaxAge` | 読み取り | `graphqlSurrogateControl` |
-   | `surrogateControlStaleWhileRevalidate` | 読み取り | `graphqlStaleWhileRevalidate` |
-   | `surrogateControlStaleIfError` | 読み取り | `graphqlStaleIfError` |
+   | `cacheControlMaxAge` | が読み取るのは | `graphqlCacheControl` |
+   | `surrogateControlMaxAge` | が読み取るのは | `graphqlSurrogateControl` |
+   | `surrogateControlStaleWhileRevalidate` | が読み取るのは | `graphqlStaleWhileRevalidate` |
+   | `surrogateControlStaleIfError` | が読み取るのは | `graphqlStaleIfError` |
 
    {style="table-layout:auto"}
 
-* 使用できない場合、OSGi 設定は [パブリッシュインスタンスのデフォルト値](#publish-instances).
+* 使用できない場合、OSGi 設定は[パブリッシュインスタンスのデフォルト値](#publish-instances)を使用します。
 
 ## アプリで使用するクエリ URL のエンコード {#encoding-query-url}
 

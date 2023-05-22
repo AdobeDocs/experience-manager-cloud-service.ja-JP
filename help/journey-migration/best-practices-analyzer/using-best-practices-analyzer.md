@@ -15,7 +15,7 @@ ht-degree: 100%
 >id="aemcloud_bpa_using"
 >title="ベストプラクティスアナライザーの使用"
 >abstract="ベストプラクティスアナライザー（旧称 Cloud Readiness Analyzer）と生成されたレポートの使用に関するドキュメントを確認します。ベストプラクティスアナライザーレポートは、アップグレードの全般的な準備状況を大まかに理解するために使用します。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[ウェビナー] Adobe Experience Manager as a Cloud Service へのジャーニーを加速するツールの導入"
+>additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="［ウェビナー］Adobe Experience Manager as a Cloud Service へのジャーニーを加速するツールの紹介"
 
 ## ベストプラクティスアナライザーを使用する際の重要な検討事項 {#imp-considerations}
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 * BPA は、バージョン 6.1 以降の AEM インスタンスでサポートされます。
 
    >[!NOTE]
-   >AEM 6.1 に BPA をインストールするための特別な要件については、「[AEM 6.1 へのインストール](#installing-on-aem61)」を参照してください。
+   >AEM 6.1 に BPA をインストールするための特別な要件については、[AEM 6.1 へのインストール](#installing-on-aem61)を参照してください。
 
 * BPA はどの環境でも実行できますが、*ステージング*&#x200B;環境で実行することをお勧めします。
 
@@ -49,7 +49,7 @@ ht-degree: 100%
 ベストプラクティスアナライザーは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) を使用して、このパッケージを AEM（Adobe Experience Manager）ソースインスタンスにインストールできます。
 
 >[!NOTE]
->[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) ポータルからベストプラクティスアナライザーをダウンロードします。
+>[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)ポータルからベストプラクティスアナライザーをダウンロードします。
 
 ## ベストプラクティスアナライザーレポートの表示 {#viewing-report}
 

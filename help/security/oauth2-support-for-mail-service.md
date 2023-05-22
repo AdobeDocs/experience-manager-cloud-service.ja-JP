@@ -5,7 +5,7 @@ exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 source-git-commit: fb6fd4a86f94ae282d95c73ecb702a372d7c1f86
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -103,7 +103,7 @@ AEM 側で Oauth を設定する前に、次の手順で accessToken と refresh
 >
 > [この場所](https://docs.microsoft.com/ja-jp/azure/active-directory/develop/v2-oauth2-auth-code-flow)から Postman API コレクションを取得できます。
 >
-> MSFT OAuth のドキュメントを確認してください [ここ](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) を参照してください。
+> 詳しくは、[ここ](https://learn.microsoft.com/ja-jp/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth)から MSFT OAuth のドキュメントを参照してください。
 
 ### AEM as a Cloud Service との統合 {#integration-with-aem-as-a-cloud-service}
 
