@@ -3,7 +3,7 @@ title: 脚注のサポート
 description: 脚注の RTE サポート。
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '369'
 ht-degree: 100%
 
