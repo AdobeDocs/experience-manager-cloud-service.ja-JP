@@ -5,21 +5,21 @@ description: AEM Forms は、アダプティブフォームのローカライズ
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1188'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # アダプティブフォームのローカライゼーション用に新しいロケールをサポート {#supporting-new-locales-for-adaptive-forms-localization}
 
-AEM Formsでは、英語 (en)、スペイン語 (es)、フランス語 (fr)、イタリア語 (it)、ドイツ語 (de)、日本語 (ja)、ポルトガル語 — ブラジル語 (pt-BR)、中国語 (zh-TW)、韓国語 (ko-KR) のロケールを初期設定でサポートしています。 ヒンディー語（hi_IN）のように、より多くのロケールのサポートを追加することもできます。
+AEM Forms が標準でサポートしているロケールは、英語（en）、スペイン語（es）、フランス語（fr）、イタリア語（it）、ドイツ語（de）、日本語（ja）、ブラジルポルトガル語（pt-br）、中国語（zh-tn）、台湾中国語（zh-tw）、韓国語（ko-kr）です。その他のロケール（ヒンディー語（hi_IN）など）のサポートを追加することもできます。
 
 ## ロケールの辞書について {#about-locale-dictionaries}
 
 アダプティブフォームのローカリゼーションは、次の 2 種類のロケールの辞書に基づいています。
 
-* **フォーム固有の辞書**&#x200B;は、アダプティブフォーム使用する文字列を含みます。例えば、ラベル、フィールド名、エラーメッセージ、ヘルプの説明などです。 各ロケールごとに、XLIFF ファイルのセットの形で管理されています。`[author-instance]/libs/cq/i18n/gui/translator.html` からアクセスできます。
+* **フォーム固有の辞書**&#x200B;は、アダプティブフォーム使用する文字列を含みます。例：ラベル、フィールド名、エラーメッセージ、ヘルプの説明など。各ロケールごとに、XLIFF ファイルのセットの形で管理されています。`[author-instance]/libs/cq/i18n/gui/translator.html` からアクセスできます。
 
 * **グローバル辞書** 2 つのグローバル辞書があり、AEM クライアントライブラリで JSON オブジェクトの形で管理されています。これらの辞書にはデフォルトのエラーメッセージ、12 か月の名前、通貨シンボル、日付と時間のパターンなどが含まれます。これらの辞書は `[author-instance]/libs/fd/xfaforms/clientlibs/I18N` にあります。これらの場所では、各ロケールごとに別々のフォルダーが用意されています。グローバルの辞書は頻繁に更新されることはありません。各ロケールごとに個別の JavaScript ファイルを保持することで、ブラウザーはそれらをキャッシュし、同一サーバー上で異なるアダプティブフォームにアクセスする際に、ネットワーク帯域幅の使用量を減らすことができます。
 
@@ -74,7 +74,7 @@ I18N.js
 
 ##### 3.2. ロケール用のアダプティブ フォームクライアントライブラリを locale-name フォルダーに追加する
 
-1. という名前のノードを作成します。 `[locale-name]_af` と入力します。 `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`、カテゴリを `guides.I18N.<locale>` および依存関係 `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` および `guide.common`.
+1. `[locale-name]_af` という名前のノードを作成し、`etc/clientlibs/locale_name` の下に `cq:ClientLibraryFolder` と入力します。カテゴリを `guides.I18N.<locale>`、依存関係を `xfaforms.3rdparty`、`xfaforms.I18N.<locale>` および `guide.common` に指定します。
 1. `javascript` という名前のフォルダーを作成し、次のファイルを追加します。
 
    * **i18n.js** は `guidelib.i18n` を定義し、`datePatterns` の「calendarSymbols」、`timePatterns`、`dateTimeSymbols`、`numberPatterns`、`numberSymbols`、`currencySymbols`、`typefaces`、`<locale>` のパターンを持つファイルです。これらは[ロケールセットの仕様](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf)に記載されている XFA 仕様に従います。
@@ -97,7 +97,7 @@ I18N.js
 1. 既に存在しない場合は、`<locale-name>`デフォルトのロケール値`de`、`es`、`fr`、`it`、`pt-br`、`zh-cn`、`zh-tw`、`ja`、`ko-kr` を追加します。
 
 1. `<locale>` を `/etc/languages` の `languages` プロパティの値に追加します。
-1. 新しく作成したフォルダーを `filter.xml` etc/META-INF/の下[フォルダー階層] 形式：
+1. etc/META-INF/[ フォルダー階層]の `filter.xml` に、新しく作成したフォルダーを次のように追加します。
 
    ```
    <filter root="/etc/clientlibs/[locale-name]"/>
@@ -108,7 +108,8 @@ I18N.js
 
 #### 5. リポジトリ内の変更をコミットし、パイプラインをデプロイする {#commit-changes-in-repo-deploy-pipeline}
 
-新しいロケールサポートを追加した後、変更を Git リポジトリにコミットします。 フルスタックパイプラインを使用してコードをデプロイします。 [パイプラインの設定方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)を学び、新しいロケールのサポートを追加します。パイプラインが完了すると、新しく追加されたロケールが AEM 環境に表示されます。
+新しいロケールサポートを追加した後、変更を Git リポジトリにコミットします。 フルスタックパイプラインを使用してコードをデプロイします。 [パイプラインの設定方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)を学び、新しいロケールのサポートを追加します。
+パイプラインが完了すると、新しく追加されたロケールが AEM 環境に表示されます。
 
 ### アダプティブフォームで追加されたロケールの使用 {#use-added-locale-in-af}
 
@@ -125,9 +126,9 @@ I18N.js
 
 アダプティブフォームのロケールを識別する方法は 2 つあります。アダプティブフォームがレンダリングされると、リクエストされたロケールが次のように識別されます。
 
-* の取得 `[local]` セレクターを使用して、アダプティブフォームの URL 内で選択することができます。 URL の形式は、`http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled` です。`[local]` セレクターを使用すると、アダプティブフォームをキャッシュできます。
+* アダプティブフォームの URL の `[local]` セレクターを取得します。URL の形式は、`http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled` です。`[local]` セレクターを使用すると、アダプティブフォームをキャッシュできます。
 
-* リストに表示された順序で次のパラメーターを取得します。
+* 次のパラメーターをリスト順に取得します。
 
    * リクエストパラメーター`afAcceptLang`
 ユーザーのブラウザーロケールを上書きするには、 
@@ -147,7 +148,7 @@ I18N.js
 
 ## 新しいローカライゼーションをサポートする上でのベストプラクティス {#best-practices}
 
-* Adobeは、アダプティブフォームを作成した後に翻訳プロジェクトを作成することをお勧めします。
+* アドビは、アダプティブフォームの作成後に翻訳プロジェクトを作成することをお勧めします。
 
 * 新しいフィールドが既存のアダプティブ フォームに追加された場合：
    * **機械翻訳の場合**：辞書を再作成し、翻訳プロジェクトを実行します。 翻訳プロジェクトの作成後にアダプティブフォームに追加されたフィールドは、未翻訳になります。
