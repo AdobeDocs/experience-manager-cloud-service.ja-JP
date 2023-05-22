@@ -3,7 +3,7 @@ title: テーマの作成および使用
 description: テーマとコアコンポーネントを使用して、アダプティブフォームのスタイルを設定し、視覚的に表現できます。任意の数のアダプティブフォームで、テーマを共有できます。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1666'
 ht-degree: 100%
 
