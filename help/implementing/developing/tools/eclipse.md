@@ -173,6 +173,7 @@ _Eclipse 用Experience Manager開発ツール_ AEMプロジェクトとインス
             <filter root="/etc/designs/foo"/>
          </workspaceFilter>
          ```
+
    1. 次に、`PROJECT.ui.content/src/main/content/META-INF/filter.xml` を開きます。
    1. ルールを、`/content` で始まる、パッケージのルールに置き換えます。
       * 例えば、次のようにします。
