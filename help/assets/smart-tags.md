@@ -1,19 +1,19 @@
 ---
-title: ' [!DNL Adobe Sensei] スマートサービスを使用したアセットの自動タグ付け'
-description: コンテキストタグと説明的なビジネスタグを適用する人工知能サービスを使用したアセットのタグ付け。
+title: AEMでアセットにスマートタグを追加する方法は？
+description: コンテキストに沿った説明的なビジネスタグを適用する人工知能サービスを使用して、AEM内のアセットにスマートタグを追加します。
 contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f8535b9d1b8334bede817714eab469fbb1fcbb03
 workflow-type: tm+mt
-source-wordcount: '2445'
-ht-degree: 97%
+source-wordcount: '2462'
+ht-degree: 94%
 
 ---
 
 
-# アセットへのスマートタグの追加と検索操作の向上 {#smart-tag-assets-for-faster-search}
+# AEMでのアセットへのスマートタグの追加 {#smart-tags-assets-aem}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -24,13 +24,13 @@ ht-degree: 97%
 
 自然言語語彙と比較して、ビジネス上の分類に基づいたタグ付けでは、デジタルアセットを会社のビジネスと容易に連携させることができ、関連性の最も高いアセットが検索で表示されるようになります。例えば、自動車メーカーでは、プロモーションキャンペーンを計画するために様々なモデルの画像を検索する際、関連性の高い画像のみが表示されるように、モデル名を使用して車の画像をタグ付けすることができます。
 
-そのバックグラウンドで、機能は [Adobe Sensei](https://business.adobe.com/jp/why-adobe/experience-cloud-artificial-intelligence.html) の人工知能フレームワークを使用して、タグ構造とビジネス上の分類に基づいて画像認識アルゴリズムのトレーニングを行います。その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。デフォルトでは、[!DNL Experience Manager Assets] は、アップロードされたアセットにスマートタグを自動的に適用します。
+そのバックグラウンドで、機能は [Adobe Sensei](https://business.adobe.com/jp/why-adobe/experience-cloud-artificial-intelligence.html) の人工知能フレームワークを使用して、タグ構造とビジネス上の分類に基づいて画像認識アルゴリズムのトレーニングを行います。その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。AEMは、デフォルトで、アップロードされたアセットにスマートタグを自動的に適用します。
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-## サポートされているアセットタイプ {#smart-tags-supported-file-formats}
+## AEMでスマートタグでサポートされるアセットタイプ {#smart-tags-supported-file-formats}
 
 次のタイプのアセットにタグを付けることができます。
 
@@ -59,7 +59,7 @@ ht-degree: 97%
 | image/psd |  |  |
 | image/vnd.adobe.photoshop |  |  |
 
-[!DNL Experience Manager] ではデフォルトで、スマートタグがテキストベースのアセットとビデオに自動的に追加されます。画像にスマートタグを自動追加するには、次のタスクを実行します。
+AEMは、デフォルトで、スマートタグをテキストベースのアセットとビデオに自動的に追加します。 画像にスマートタグを自動追加するには、次のタスクを実行します。
 
 * [タグモデルとガイドラインの理解](#understand-tag-models-guidelines)。
 * [モデルのトレーニング](#train-model)。
@@ -189,9 +189,9 @@ ht-degree: 97%
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## スマートタグを使用したアセットのタグ付け {#tag-assets}
+## スマートタグを使用したアセットのタグ付け AEM内 {#tag-assets}
 
-サポートされているすべてのタイプのアセットは、アップロード時に [!DNL Experience Manager Assets] によって自動的にタグ付けされます。タグ付けはデフォルトで有効になっており、機能します。[!DNL Experience Manager] は適切なタグをほぼリアルタイムで適用します。 <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+サポートされているすべてのタイプのアセットは、アップロード時に [!DNL Experience Manager Assets] によって自動的にタグ付けされます。タグ付けはデフォルトで有効になっており、機能します。AEMは、ほぼリアルタイムで適切なスマートタグを適用します。 <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
 * 画像およびビデオの場合、スマートタグは視覚的な観点に基づいて生成されます。
 
