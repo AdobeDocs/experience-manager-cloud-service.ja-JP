@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: d202b0543020b277de982e3965475074a71b286d
+source-git-commit: 11e0a0872e5bd0ce18043e227fdcd3e609cf28d8
 workflow-type: tm+mt
 source-wordcount: '730'
-ht-degree: 33%
+ht-degree: 97%
 
 ---
 
@@ -26,31 +26,31 @@ ht-degree: 33%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在の機能リリース (2023.2.0) は 2023 年 4 月 12 日です。 次回の機能リリース (2023.4.0) は、2023 年 5 月 25 日に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.2.0）のリリース日は、2023年4月12日（PT）です。次回の機能リリース (2023.4.0) は、2023 年 5 月 31 日に予定されています。
 
 ## リリースビデオ {#release-video}
 
-2023.2.0 リリースに追加された機能の概要については、 2023 年 2 月リリースの概要ビデオをご覧ください。
+2023.2.0 リリースで追加された機能の概要については、2023年2月リリースの概要ビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416885/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### の新機能[!DNL Experience Manager Sites] 予約 {#prerelease-sites}
+### の新機能[!DNL Experience Manager Sites]プレリリース {#prerelease-sites}
 
-* コンテンツフラグメントをAEM as a cloud service から JSON オファーとしてAdobeターゲットに書き出します。
-* 複雑なGraphQLのクエリとフィルターを使用して大きなコンテンツセットをAEMから取得する際、GraphQLのページネーションと並べ替えおよび内部キャッシュの強化に加えて、切り離されたクライアントアプリケーションのパフォーマンスを改善しました。
+* AEM as a Cloud Service からコンテンツフラグメントを JSON オファーとして Adobe Target に書き出します。
+* 複雑な GraphQL のクエリとフィルターを使用して大きなコンテンツセットを AEM から取得する際、GraphQL のページネーションと並べ替えのサポートに加え、内部キャッシュの強化によって、切り離されたクライアントアプリケーションのパフォーマンスの向上を支援するようになりました。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-* Dynamic Mediaビデオ配信でアダプティブストリーミング用に開始された新しいプロトコル (DASH - Dynamic Adaptive Streaming over HTTP) のサポート（CMAF を有効にした場合）:
-   * アダプティブストリーミング (DASH/HLS) により、エンドユーザーがビデオを視聴する際の操作性が向上します
+* Dynamic Media ビデオ配信でアダプティブストリーミング用に開始された新しいプロトコル（DASH - Dynamic Adaptive Streaming over HTTP）のサポート（CMAF を有効にした場合）:
+   * アダプティブストリーミング（DASH／HLS）により、エンドユーザーがビデオを視聴する際の操作性が向上します
    * DASH はアダプティブビデオストリーミング用の国際標準プロトコルで、業界で広く採用されています
-   * NA で利用可能で、サポートチケットを介して有効にできます。APAC、EMEA で近日公開
+   * NA で利用可能で、サポートチケットを介して有効にできます（APAC、EMEA で近日公開）
 
-* メタデータの自動抽出、サムネールおよびカスタムレンディションの生成を行う WebP 画像のサポートが追加されました。 これらのファイルでスマートタグ機能もサポートされるようになりました。
+* メタデータの自動抽出、サムネールおよびカスタムレンディションの生成を行う WebP 画像のサポートが追加されました。これらのファイルでスマートタグ機能もサポートされるようになりました。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -58,38 +58,38 @@ ht-degree: 33%
 
 * **[データキャプチャコアコンポーネントを使用したアダプティブフォームの構築](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)**: [アダプティブフォームエディターを使用](/help/forms/creating-adaptive-form-core-components.md)して、標準化されたデータキャプチャコンポーネント（コアコンポーネント）に基づいてフォームを作成します。これらのコンポーネントは、デジタル登録エクスペリエンスでのカスタマイズ機能を提供し、開発時間を短縮し、メンテナンスコストを削減します。
 
-* **[アダプティブFormsに基づくコアコンポーネントのスタイル設定のためのフロントエンドパイプラインのサポート](/help/forms/using-themes-in-core-components.md)**:コアコンポーネントベースのアダプティブFormsに標準化された BEM ベースのテーマを利用するには、フロントエンドデプロイメントパイプラインと共にデプロイして、フォームのルックアンドフィールを強化し、組織が承認したデザインガイドラインに合わせます。
+* **[アダプティブフォームに基づくコアコンポーネントのスタイル設定のためのフロントエンドパイプラインのサポート](/help/forms/using-themes-in-core-components.md)**：コアコンポーネントベースのアダプティブフォームに対して、容易にカスタマイズできる AEM ベースのテーマを利用し、フロントエンドデプロイメントパイプラインと共にデプロイして、フォームのルックアンドフィールを向上させ、組織のブランド承認済みのデザインガイドラインに沿うことができます。
 
-* **[コアコンポーネントベースのアダプティブFormsに関するレコードのドキュメントを生成する](/help/forms/generate-document-of-record-core-components.md)**:エンドユーザーへのアーカイブや参照用のコアコンポーネントを使用して構築された、アダプティブForms用の送信済みデータを、印刷形式またはドキュメント形式で含むレコードのドキュメントを作成します。
+* **[コアコンポーネントベースのアダプティブフォーム用のレコードのドキュメントを生成](/help/forms/generate-document-of-record-core-components.md)**：コアコンポーネントを使用して構築されたアダプティブフォームの送信データを含むレコードのドキュメントを、印刷物またはドキュメント形式で、エンドユーザーへのアーカイブまたは参照用に作成します。
 
 ![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* **[「アダプティブフォームをテンプレートとして保存」機能を使用した効率的なフォーム作成](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**:既存の承認済みフォームをフォームテンプレートとして保存して、すばやく再利用できるようにすることで、フォームの開発を迅速に進め、標準化します。
+* **[アダプティブフォームをテンプレートとして保存機能を使用した効率的なフォーム作成](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**：既存の承認済みフォームをフォームテンプレートとして保存して、素早く再利用できるようにすることで、フォームの開発を迅速に進め、標準化します。
 
-* **[AEM Formsを JDBC-Supported データベースに接続する](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**:JDBC プロトコルを使用してAEM Cloud Service から直接エンタープライズデータベースに接続できます。REST API で公開する必要はありません。
+* **[AEM Forms を JDBC対応データベースに接続](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**：JDBC プロトコルを使用して AEM Cloud Service から直接エンタープライズデータベースに接続できます。REST API で公開する必要はありません。
 
-* **[Open API 3.0 を使用した REST エンドポイントとの統合](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**:Open API 3.0 をサポートするレコードシステムとシームレスに統合し、フォームデータモデルを使用してデータを保存および取得します。
+* **[Open API 3.0 を使用した REST エンドポイントとの統合](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**：Open API 3.0 をサポートするレコードのシステムとシームレスに統合し、フォームデータモデルを使用してデータを保存および取得します。
 
 * **[レビュー用にアダプティブフォームを共有](/help/forms/create-reviews-forms.md)**：アダプティブフォームのレビュー機能を使用する、1 人または複数のレビュー担当者がフォームをレビューできます。
 
 
-### の機能 [!DNL Forms] プレリリース {#prerelease-features-forms}
+### [!DNL Forms] の機能プレリリース {#prerelease-features-forms}
 
-* **[Microsoft SharePointとMicrosoft OneDrive にアダプティブFormsを送信する](/help/forms/configuring-submit-actions.md)**:ビジネスユーザーの俊敏性を向上させ、新しいフォームをすばやく起動し、送信されたデータをMicrosoft SharePointサイトや OneDrive フォルダーなどの毎日のツールに保存します。
+* **[Microsoft SharePoint と Microsoft OneDrive にアダプティブフォームを送信](/help/forms/configuring-submit-actions.md)**：ビジネスユーザーの俊敏性を向上させ、新しいフォームを素早く起動し、送信されたデータを Microsoft SharePoint サイトや OneDrive フォルダーなどの毎日使用するツールに保存します。
 
-![Microsoft SharePointとMicrosoft OneDrive にアダプティブFormsを送信する](/help/forms/assets/onedrive-and-sharepoint.jpg)
+![Microsoft SharePoint と Microsoft OneDrive にアダプティブフォームを送信](/help/forms/assets/onedrive-and-sharepoint.jpg)
 
 
-## ヘッドレスアダプティブFormsアーリーアダプタープログラム {#forms-early-adopter}
+## ヘッドレスアダプティブフォーム早期導入者プログラム {#forms-early-adopter}
 
-ヘッドレスアダプティブFormsを使用すると、開発者は、従来のグラフィカルユーザーインターフェイスを使用するのではなく、API を使用してアクセスし、操作できるインタラクティブフォームを作成、公開、管理できます。 ヘッドレスアダプティブフォームは以下の場合に役立ちます。
+ヘッドレスアダプティブフォームを使用すると、開発者は、従来のグラフィカルユーザーインターフェイスではなく、API を介してアクセスおよび操作できるインタラクティブなフォームを作成、公開、管理できます。ヘッドレスアダプティブフォームは以下の場合に役立ちます。
 
 * 高品質のマルチチャネルフォームを好みのプログラミング言語で作成
 * デスクトップおよびモバイルアプリ、web サイト、チャットアプリケーションにフォームをネイティブに統合
-* フォームアプリケーションで独自の UI コンポーネントを再利用する
-* Adobe Experience Manager Formsの力を活用する
+* フォームアプリケーションで独自の UI コンポーネントを再利用
+* Adobe Experience Manager Forms の機能を活用
 
-アーリーアダプタープログラムに参加するため、公式メール ID からaem-forms-headless@adobe.comまでメールを送信できます。
+ご自身の公式メール ID から aem-forms-headless@adobe.com にメールを送信して、早期導入者プログラムにご参加ください。
 
 ## メンテナンスリリースノート {#maintenance}
 
