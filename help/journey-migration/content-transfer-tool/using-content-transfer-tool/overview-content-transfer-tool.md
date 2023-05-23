@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの概要
 description: コンテンツ転送ツールの概要
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
+source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 79%
+source-wordcount: '717'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 79%
 
 コンテンツ転送ツールは、アドビが開発したツールで、既存のコンテンツをソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM as a Cloud Service インスタンスに移動するためのものです。
 
-プリンシパル（ユーザーやグループ）も自動的に転送されます。
+プリンシパル（ユーザーやグループ）も自動的に転送されます。詳しくは、 [ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) を参照してください。
 
 コンテンツ転送ツールの新しいバージョンが利用可能です。新バージョンでは、コンテンツ転送プロセスと Cloud Acceleration Manager が統合されています。次の利点をすべて活用するには、この新しいバージョンに切り替えることを強くお勧めします。
 
@@ -42,7 +42,7 @@ ht-degree: 79%
    詳しくは、[コンテンツ転送の抽出プロセス](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)を参照してください。
 
    >[!NOTE]
-   >ユーザーマッピングは、オーサー環境の抽出段階の一環として自動的に実行されるようになりました（ただし、オーサー環境ではオプションで無効にしたり、パブリッシュ環境では有効にしたりできます）。 詳しくは、 [ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) を参照してください。
+   >ユーザーマッピングは、オーサー環境の抽出段階の一環として自動的に実行されるようになりました（ただし、オプションとしてオーサー環境で無効にしたり、パブリッシュ環境で有効にしたりできます）。詳しくは、[ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)を参照してください。
 
 1. **インジェスト**：インジェストとは、*移行セット*&#x200B;からターゲット Cloud Service インスタンスにコンテンツを取り込むことです。
 
@@ -68,17 +68,17 @@ ht-degree: 79%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_migrationset_expiry"
->title="移行セットの有効期限"
+>title="マイグレーションセットの有効期限"
 >abstract="移行セットの有効期限について説明します。"
 
-90 日間の無操作状態が長引くと、すべての移行セットは最終的に期限切れになります。 プロジェクトカードおよび移行ジョブテーブルの行に一定期間インジケーターが表示された後、移行セットは期限切れになり、そのデータは使用できなくなります。 有効期限は、次の方法で設定された移行に従って簡単に延長できます。
+およそ 90 日間無操作状態が続くと、すべての移行セットは最終的に期限切れになります。プロジェクトカードおよび移行ジョブテーブルの行に一定期間インジケーターが表示された後、移行セットは期限切れになり、そのデータは使用できなくなります。有効期限は、次の操作を移行セットに対して行うことで簡単に延長できます。
 
 * 説明の編集
-* 抽出キーを取得しています
-* 抽出を実行する
-* それからの取り込みの実行
+* 抽出キーの取得
+* 抽出の実行
+* 取り込みの実行
 
-移行セット行で移行セットの有効期限を監視できます。 移行セットの有効期限が近づいていることを示す便利な視覚的インジケーターにも、プロジェクトのカードが追加されました。
+移行セット行で移行セットの有効期限を監視できます。移行セットの有効期限が近づいていることを示す便利な視覚的インジケーターが、プロジェクトのカードにも追加されました。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
 

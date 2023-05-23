@@ -2,10 +2,10 @@
 title: コンテンツ転送の検証
 description: コンテンツ転送ツールを使用してコンテンツ転送を検証します
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b6c9d7411e84b18926aa525efe25296002c2d3d2
+source-git-commit: c1f60a1ead466b47694b8918e5b39011041c5f25
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 100%
+source-wordcount: '1070'
+ht-degree: 84%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 100%
 取り込みが完了し、検証が開始されると、次のログエントリが取り込みログに記録されます。
 
 ```
-Gathering artifacts for migration validation...  
+Gathering artifacts for migration validation...
 ```
 
 検証の詳細は、このエントリの後に記録されます。以下に大規模な移行の例を示します。
@@ -131,6 +131,24 @@ Migration validation took 0 minutes
 
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+
+## プリンシパルの移行を検証する方法 {#how-to-validate-principal-migration}
+
+詳しくは、 [ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) プリンシパルマイグレーションの詳細と必要な理由を読み取る
+
+抽出と取り込みが正常に完了すると、主要な移行の概要とレポートを使用できるようになります。 この情報を使用して、どのユーザーおよびグループが正常に移行されたかを検証し、おそらく一部が移行されなかった理由を判断できます。
+
+この情報を表示するには、Cloud Acceleration Manager に移動します。 プロジェクトカードをクリックし、コンテンツ転送カードをクリックします。に移動します。 **取り込みジョブ** 検証する取り込みを見つけます。 3 つのドット (**...**) をクリックし、 **プリンシパルの概要を表示** をクリックします。
+
+![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
+
+概要情報を含むダイアログが表示されます。 ヘルプアイコンを使用して、詳細な説明を読みます。 次をクリック： **ダウンロードレポート** ボタンをクリックして、完全なコンマ区切り (CSV) レポートをダウンロードします。
+
+![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
+
+>[!NOTE]
+>
+>ユーザーマッピングが無効な場合は、このダイアログの別のバリアントが表示されます。 これは、ユーザーマッピングが無効であることを示し、ユーザーマッピング値を示す 3 つのフィールドは表示されません。
 
 ## トラブルシューティング {#troubleshooting}
 
