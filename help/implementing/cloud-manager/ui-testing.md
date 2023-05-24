@@ -2,10 +2,10 @@
 title: UI テスト
 description: カスタム UI テストは、カスタムアプリケーションの UI テストを作成して自動的に実行できるオプション機能です
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: bf3b7286bbf77f5a45884d4d3a40c020fe42411f
+source-git-commit: 84b2648fe06b556534b53023769abaa69ef1ec2b
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 81%
+source-wordcount: '2411'
+ht-degree: 75%
 
 ---
 
@@ -23,19 +23,19 @@ ht-degree: 81%
 
 AEM には、[Cloud Manager 品質ゲート](/help/implementing/cloud-manager/custom-code-quality-rules.md)の統合スイートが用意されており、カスタムアプリケーションをスムーズに更新できるようになっています。特に、IT テストゲートでは、AEM API を使用したカスタムテストの作成と自動化に既に対応しています。
 
-UI テストは、言語とフレームワーク（Cypress.IO、Selenium、Java と Maven、Javascript など）を幅広く選択できるように、Docker イメージでパッケージ化されています。 また、[AEM プロジェクトアーキタイプを使用すると、UI テストプロジェクトを容易に生成できます。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)
+UI テストは、言語とフレームワーク（Cypress、Selenium、Java と Maven、JavaScript など）を幅広く選択できるように、Docker イメージでパッケージ化されています。 また、[AEM プロジェクトアーキタイプを使用すると、UI テストプロジェクトを容易に生成できます。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)
 
-Adobeは、リアルタイムの再読み込みと自動待ちを提供するので、Cypress.IO の使用を推奨します。これにより、時間を節約し、テスト中の生産性を向上させます。 Cypress.IO は、簡単で直感的な構文を提供し、テストを初めて行うユーザーでも簡単に学習し、使用できます。
+Adobeは、リアルタイムの再読み込みと自動待ちを提供するので、Cypress を使用することを推奨します。これにより、時間を節約し、テスト中の生産性を向上させることができます。 Cypress は、簡単で直感的な構文を提供し、テストを初めて行うユーザーでも簡単に学習し、使用できます。
 
-UI テストは、Cloud Manager の各パイプラインの特定の品質ゲートの一部として、 [**カスタム UI テスト** 手順](/help/implementing/cloud-manager/deploy-code.md) in [実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) または [非実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). を含む Cloud Manager パイプラインごとに、特定の品質ゲートの一部として実行されます。リグレッションや新しい機能を含む UI テストでは、エラーの検出とレポートが可能です。
+UI テストは、[実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)またはオプションで[非実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)の&#x200B;[**カスタム UI テスト**&#x200B;手順](/help/implementing/cloud-manager/deploy-code.md)で、各 Cloud Manager パイプラインの特定の品質ゲートの一部として実行します。回帰や新しい機能を含む UI テストでは、エラーの検出とレポートが可能です。
 
-Java で記述された HTTP テストであるカスタム機能テストとは異なり、UI テストは、の節で定義された規則に従う限り、任意の言語で記述されたテストを含む Docker イメージにすることができます [UI テストの構築](#building-ui-tests).
+UI テストは、Java で記述された HTTP テストであるカスタム機能テストとは異なり、[UI テストの作成](#building-ui-tests)の節で定義されている規則に従う限り、任意の言語で記述されたテストを含む Docker イメージにすることができます。
 
 >[!TIP]
 >
->Adobeでは、 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
->
->アドビは、Java および WebDriver に基づく UI テストモジュールの例も提供しています。 詳しくは、[AEM テストサンプルのリポジトリ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)を参照してください。
+>Adobeでは、UI テストに Cypress を使用することをお勧めします ( [AEM Test Samples リポジトリ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
+> 
+>Adobeでは、WebdriverIO を使用した JavaScript に基づく UI テストモジュールの例も提供しています ( [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) および Java と WebDriver( [AEM Test Samples リポジトリ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)) をクリックします。
 
 ## UI テストの概要 {#get-started-ui-tests}
 
@@ -43,19 +43,21 @@ Java で記述された HTTP テストであるカスタム機能テストとは
 
 1. 使用するプログラミング言語を決定します。
 
+   * Cypress の場合は、 [AEM Test Samples リポジトリ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
+
    * JavaScript と WDIO の場合は、Cloud Manager リポジトリの `ui.tests` フォルダーに自動的に生成されるサンプルコードを使用します。
 
       >[!NOTE]
       >
-      >Cloud Manager が自動的に作成される前にリポジトリが作成された場合 `it.tests` フォルダーの場合は、 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
+      >Cloud Manager が `ui.tests` フォルダーを自動作成する前にリポジトリが作成された場合は、[AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)を使用して最新バージョンを生成することもできます。
 
-   * Java および WebDriver の場合は、 [AEM Test Samples リポジトリ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
+   * Java および WebDriver の場合は、[AEM テストサンプルのリポジトリ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)からサンプルコードを使用します。
 
    * その他のプログラミング言語については、このドキュメントの [UI テストの構築](#building-ui-tests)の節を参照して、テストプロジェクトを設定してください。
 
 1. このドキュメントの[顧客オプトイン](#customer-opt-in)の節に従って、UI テストがアクティベートされていることを確認してください。
 
-1. テストケースを作成し、 [ローカルでテストを実行](#run-ui-tests-locally).
+1. テストケースを作成し、 [ローカルでテストを実行する](#run-ui-tests-locally).
 
 1. コードを Cloud Manager リポジトリにコミットし、Cloud Manager パイプラインを実行します。
 
@@ -71,7 +73,7 @@ Maven プロジェクトでは、Docker ビルドコンテキストを生成し�
 
 ### Docker ビルドコンテキストの生成 {#generate-docker-build-context}
 
-Docker ビルドコンテキストを生成するには、次の処理を行う Maven モジュールが必要です。
+Docker ビルドコンテキストを生成するには、次の Maven モジュールが必要です。
 
 * `Dockerfile`と、テストを含んだ Docker イメージの作成に必要なその他のすべてのファイルを格納したアーカイブを作成する。
 * アーカイブに `ui-test-docker-context` 分類子をタグ付けする。
@@ -183,7 +185,7 @@ Cloud Manager で UI テストを作成して実行するには、リポジト�
 >
 >プロジェクトにこの行が含まれていない場合、UI テストをオプトインするには、このファイルを編集する必要があります。
 >
->このファイルには、編集しないように指示する行が含まれている場合があります。これは、このファイルが、オプトイン UI テストが導入される前にプロジェクトに導入され、クライアントがファイルを編集することが想定さていなかったためです。これは無視してかまいません。
+>このファイルには、編集しないように指示する行が含まれている場合があります。これは、オプトイン UI テストが導入される前にプロジェクトに導入され、クライアントがファイルを編集する意図がなかったためです。 これは無視してかまいません。
 
 アドビが指定したサンプルを使用する場合：
 
@@ -197,7 +199,7 @@ Cloud Manager で UI テストを作成して実行するには、リポジト�
    fi
    ```
 
-* 提供済みの Java テストサンプルでは、既にオプトインフラグが設定されています。
+* Adobeが提供する Cypress および Java Selenium のテストサンプルには、既にオプトインフラグが設定されています。
 
 ## UI テストの書き込み {#writing-ui-tests}
 
@@ -222,14 +224,50 @@ Cloud Manager で UI テストを作成して実行するには、リポジト�
 
 アドビテストサンプルには、設定パラメーターにアクセスするためのヘルパー関数が用意されています。
 
+* ヒノキ：標準関数を使用 `Cypress.env('VARIABLE_NAME')`
 * JavaScript：詳しくは、[lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) モジュールを参照してください
 * Java：詳しくは、[Config](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) クラスを参照してください
 
-### Selenium の準備完了までの待機 {#waiting-for-selenium}
+### テストレポートの生成 {#generate-test-reports}
+
+Docker イメージは、テストレポートを JUnit XML 形式で生成して、環境変数 `REPORTS_PATH` で指定されたパスに保存する必要があります。JUnit XML 形式は、テストの結果を報告するために広く使用されている形式です。 Docker イメージで Java と Maven を使用する場合、[Maven Surefire プラグイン](https://maven.apache.org/surefire/maven-surefire-plugin/)や [Maven Failsafe プラグイン](https://maven.apache.org/surefire/maven-failsafe-plugin/) などの標準テストモジュールでは、すぐに使用できるレポートを生成できます。
+
+Docker イメージが他のプログラミング言語またはテストランナーで実装されている場合は、選択したツールのドキュメントを参照して、JUnit XML レポートの生成方法を確認してください。
+
+>[!NOTE]
+>
+>UI テスト手順の結果は、テストレポートに基づいてのみ評価されます。 テストの実行に合わせてレポートを生成するようにしてください。
+>
+>エラーを STDERR に記録したり、ゼロ以外の終了コードを返すのではなく、アサーションを使用してください。そうしない場合、デプロイメントパイプラインが正常に実行されます。
+
+### 前提条件 {#prerequisites}
+
+* Cloud Manager でのテストは、技術管理者ユーザーを使用して実行されます。
+
+>[!NOTE]
+>
+>ローカルマシンから機能テストを実行する場合は、管理者のような権限を持つユーザーを作成して、同じ動作を実現します。
+
+* 機能テストの範囲を定義するコンテナ化されたインフラストラクチャは、次の境界によって制限されます。
+
+| タイプ | 値 | 説明 |
+|----------------------|-------|-----------------------------------------------------------------------|
+| CPU | 2.0 | テスト実行ごとに予約される CPU 時間の量 |
+| メモリ | 1Gi | テストに割り当てられたメモリ量（GB 単位） |
+| タイムアウト | 30m | テストを終了するまでの期間。 |
+| 推奨期間 | 15m | Adobeは、この時間を超えないようにテストを書き込むことをお勧めします。 |
+
+>[!NOTE]
+>
+> より多くのリソースが必要な場合は、カスタマーケアケースを作成し、使用例を説明してください。Adobeがリクエストを確認し、適切な支援を提供します。
+
+## Selenium 固有の詳細
 
 >[!NOTE]
 >
 >このセクションは、Selenium が選択されたテストインフラストラクチャの場合にのみ適用されます。
+
+### Selenium の準備完了までの待機 {#waiting-for-selenium}
 
 テストを開始する前に、Selenium サーバーが実行状態にあることを Docker イメージ側で確認する必要があります。Selenium サービスの準備が完了するまで、次の 2 段階の手順で待機します。
 
@@ -240,21 +278,9 @@ Selenium のステータスエンドポイントが肯定的な応答を返し�
 
 Adobe UI のテストサンプルでは、これをスクリプト `wait-for-grid.sh` で処理します。Docker の起動時に実行され、グリッドの準備が整った場合にのみ、実際のテストが実行されます。
 
-### テストレポートの生成 {#generate-test-reports}
-
-Docker イメージは、テストレポートを JUnit XML 形式で生成して、環境変数 `REPORTS_PATH` で指定されたパスに保存する必要があります。JUnit XML 形式は、テスト結果のレポートに広く使用されている形式です。Docker イメージで Java と Maven を使用する場合、[Maven Surefire プラグイン](https://maven.apache.org/surefire/maven-surefire-plugin/)や [Maven Failsafe プラグイン](https://maven.apache.org/surefire/maven-failsafe-plugin/) などの標準テストモジュールでは、すぐに使用できるレポートを生成できます。
-
-Docker イメージが他のプログラミング言語またはテストランナーで実装されている場合は、選択したツールのドキュメントを参照して、JUnit XML レポートの生成方法を確認してください。
-
->[!NOTE]
->
->UI テスト手順の結果は、テストレポートに基づいてのみ評価されます。 テストの実行に合わせてレポートを生成するようにしてください。
->
->エラーを STDERR に記録したり、ゼロ以外の終了コードを返すのではなく、アサーションを使用してください。そうしない場合、デプロイメントパイプラインが正常に実行されます。
-
 ### スクリーンショットとビデオのキャプチャ {#capture-screenshots}
 
-Docker イメージでは、追加のテスト出力（スクリーンショット、ビデオなど）を生成し、それらを環境変数 `REPORTS_PATH` で指定されたパスに保存する場合があります。`REPORTS_PATH` の下にあるファイルはすべて、テスト結果のアーカイブに含まれます。
+Docker イメージでは、追加のテスト出力（スクリーンショットやビデオなど）が生成され、環境変数で指定されたパスに保存される場合があります `REPORTS_PATH`. `REPORTS_PATH` の下にあるファイルはすべて、テスト結果のアーカイブに含まれます。
 
 デフォルトでアドビが提供するテストサンプルは、失敗したテストのスクリーンショットを作成します。
 
@@ -263,11 +289,11 @@ Docker イメージでは、追加のテスト出力（スクリーンショッ�
 * JavaScript：[takeScreenshot コマンド](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
 * Java：[コマンド](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-UI テストの実行中にテスト結果アーカイブが作成された場合は、Cloud Manager から、 `Download Details` ボタン [**カスタム UI テスト** 手順](/help/implementing/cloud-manager/deploy-code.md).
+UI テストの実行中にテスト結果アーカイブが作成された場合は、[**カスタム UI テスト**&#x200B;手順](/help/implementing/cloud-manager/deploy-code.md)の下にある「`Download Details`」ボタンを使用して、Cloud Manager からダウンロードできます。
 
 ### ファイルのアップロード {#upload-files}
 
-テストでは、場合によって、テスト中のアプリケーションにファイルをアップロードする必要があります。テストに対する Selenium デプロイメントの柔軟性を維持するため、Selenium に直接アセットをアップロードすることはできません。ファイルをアップロードするには、代わりに次の手順を実行する必要があります。
+テストでは、場合によって、テスト中のアプリケーションにファイルをアップロードする必要があります。テストに対する Selenium のデプロイメントを柔軟に保つため、Selenium に直接アセットをアップロードすることはできません。 ファイルをアップロードするには、代わりに次の手順を実行する必要があります。
 
 1. `UPLOAD_URL` 環境変数で指定された URL にファイルをアップロードします。
    * アップロードは、マルチパートフォームを含んだ 1 つの POST リクエストで実行する必要があります。
@@ -281,34 +307,47 @@ UI テストの実行中にテスト結果アーカイブが作成された場�
    * この応答の内容は不透明なファイルハンドルです。
    * `<input>` 要素のファイルパスの代わりにこのハンドルを使用して、アプリケーション内のアップロードファイルをテストできます。
 
-### 前提条件 {#prerequisites}
-
-1. Cloud Manager でのテストは、技術管理者ユーザーを使用して実行されます。
-
->[!NOTE]
->
->ローカルマシンから機能テストを実行する場合は、管理者のような権限を持つユーザーを作成して、同じ動作を実現します。
-
-1. 機能テストの範囲を定義するコンテナ化されたインフラストラクチャは、次の境界によって制限されます。
-
-| タイプ | 値 | 説明 |
-|----------------------|-------|--------------------------------------------------------------------|
-| CPU | 2.0 | テスト実行ごとに予約される CPU 時間の量 |
-| メモリ | 1Gi | テストに割り当てられたメモリの量（GB 単位の値） |
-| タイムアウト | 30m | テストを終了するまでの期間。 |
-| 推奨期間 | 15m | この時間を超えないようにテストを書き込むことをお勧めします。 |
-
->[!NOTE]
->
-> より多くのリソースが必要な場合は、カスタマーケアケースを作成し、使用例を説明してください。アドビのチームがお客様のリクエストを確認し、適切な支援を提供します。
-
-
 ## UI テストのローカルでの実行 {#run-ui-tests-locally}
 
-Cloud Manager パイプラインで UI テストをアクティブ化する前に、UI テストを [AEMas a Cloud ServiceSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-実際のAEM as a Cloud Serviceインスタンスに対して
+Cloud Manager パイプラインで UI テストをアクティブ化する前に、UI テストを [AEMas a Cloud ServiceSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 実際のAEM as a Cloud Serviceインスタンスに対して
 
-### JavaScript テストの例 {#javascript-sample}
+### ヒノキ試験サンプル {#cypress-sample}
+
+1. シェルを開き、リポジトリ内の `ui.tests/test-module` フォルダーに移動します
+
+1. Cypress とその他の前提条件のインストール
+
+   ```shell
+   npm install
+   ```
+
+1. テストの実行に必要な環境変数の設定
+
+   ```shell
+   export AEM_AUTHOR_URL=https://author-<program-id>-<environment-id>.adobeaemcloud.com
+   export AEM_AUTHOR_USERNAME=<user>
+   export AEM_AUTHOR_PASSWORD=<password>
+   export AEM_PUBLISH_URL=https://publish-<program-id>-<environment-id>.adobeaemcloud.com
+   export AEM_PUBLISH_USERNAME=<user>
+   export AEM_PUBLISH_PASSWORD=<password>
+   export REPORTS_PATH=target/
+   ```
+
+1. 次のいずれかのコマンドでテストを実行します。
+
+   ```shell
+   npm test              # Using default Cypress browser
+   npm run test-chrome   # Using Google Chrome browser
+   npm run test-firefox  # Using Firefox browser
+   ```
+
+>[!NOTE]
+>
+>ログファイルは、リポジトリの `target/` フォルダーに保存されます。
+>
+>詳しくは、 [AEM Test Samples リポジトリ](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
+
+### JavaScript WebdriverIO テストの例 {#javascript-sample}
 
 1. シェルを開き、リポジトリ内の `ui.tests` フォルダーに移動します
 
@@ -321,18 +360,18 @@ Cloud Manager パイプラインで UI テストをアクティブ化する前�
     -DAEM_AUTHOR_PASSWORD=<password> \
     -DAEM_PUBLISH_URL=https://publish-<program-id>-<environment-id>.adobeaemcloud.com \
     -DAEM_PUBLISH_USERNAME=<user> \
-    -DAEM_PUBLISH_PASSWORD=<password> \
+    -DAEM_PUBLISH_PASSWORD=<password>
    ```
 
 >[!NOTE]
 >
->* これにより、スタンドアロンの Selenium インスタンスが起動し、それに対するテストが実行されます。
+>* これにより、スタンドアロンの Selenium インスタンスが開始され、それに対するテストが実行されます。
 >* ログファイルは、リポジトリの `target/reports` フォルダーに保存されます。
->* テストでは ChromeDriver の最新リリースがテスト用に自動的にダウンロードされるので、最新バージョンの Chrome を使用していることを確認する必要があります。
+>* テストで ChromeDriver の最新リリースがテスト用に自動的にダウンロードされるので、お使いのコンピューターで最新バージョンの Chrome が実行されていることを確認する必要があります。
 >
 >詳しくは、 [AEM Project Archetype リポジトリ](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
 
-### Java テストの例 {#java-sample}
+### Java Selenium WebDriver テストの例 {#java-sample}
 
 1. シェルを開き、リポジトリ内の `ui.tests/test-module` フォルダーに移動します
 
@@ -346,11 +385,11 @@ Cloud Manager パイプラインで UI テストをアクティブ化する前�
    docker run -d -p 4444:4444 seleniarm/standalone-chromium
    
    # Run the tests using the previously started Selenium instance
-   mvn verify -Pui-tests-local-execution -DSELENIUM_BASE_URL=http://<server>:<port>
+   mvn verify -Pui-tests-local-execution -DSELENIUM_BASE_URL=http://<server>:4444
    ```
 
 >[!NOTE]
 >
->* ログファイルは、リポジトリの `target/reports` フォルダーに保存されます。
+>ログファイルは、リポジトリの `target/reports` フォルダーに保存されます。
 >
 >詳しくは、 [AEM Test Samples リポジトリ](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
