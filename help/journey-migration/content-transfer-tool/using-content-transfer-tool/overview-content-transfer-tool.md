@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの概要
 description: コンテンツ転送ツールの概要
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
+source-git-commit: 8197b4f4e5cda21532c3660c2f0ec4855ba53a6a
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 98%
+source-wordcount: '648'
+ht-degree: 81%
 
 ---
 
@@ -14,24 +14,19 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="概要"
->abstract="コンテンツ転送ツールは、アドビが開発したツールで、既存のコンテンツをソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM as a Cloud Service インスタンスに移動するためのものです。プリンシパル（ユーザーやグループ）も自動的に転送されます。"
+>abstract="コンテンツ転送ツールは、Adobeが開発したツールで、既存のコンテンツをソースAEMインスタンス（オンプレミスまたは AMS）からターゲットAEM Cloud Serviceインスタンスに移行する際に使用できます。 プリンシパル（ユーザーやグループ）も自動的に転送されます。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja" text="ガイドラインとベストプラクティス"
 
-コンテンツ転送ツールは、アドビが開発したツールで、既存のコンテンツをソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM as a Cloud Service インスタンスに移動するためのものです。
+コンテンツ転送ツールは、Adobeが開発したツールで、既存のコンテンツをソースAEMインスタンス（オンプレミスまたは AMS）からターゲットAEM Cloud Serviceインスタンスに移行する際に使用できます。
 
 プリンシパル（ユーザーやグループ）も自動的に転送されます。詳しくは、 [ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) を参照してください。
 
-コンテンツ転送ツールの新しいバージョンが利用可能です。新バージョンでは、コンテンツ転送プロセスと Cloud Acceleration Manager が統合されています。次の利点をすべて活用するには、この新しいバージョンに切り替えることを強くお勧めします。
+コンテンツ転送ツールは、コンテンツ転送プロセスを Cloud Acceleration Manager と統合します。 これにより、ユーザーは以下のようなすべての利点を利用できます。
 
 * セルフサービス方式で、移行セットを 1 回抽出し、同時に複数の環境に取り込めます。
-* 読み込み状態、ガードレール、エラー処理が改善され、ユーザーエクスペリエンスが向上しました
+* 読み込み状態、ガードレール、エラー処理が改善され、ユーザーエクスペリエンスが向上しました。
 * 取り込みログは永続化され、常にトラブルシューティングに使用することができます。
-
-新しいバージョンの使用を開始するには、ツールのアーキテクチャが大きく変更されたため、古いバージョンのコンテンツ移行ツールをアンインストールする必要があります。
-
->[!NOTE]
->
-> 移行が既に進行中の場合は、移行が完了するまで以前のバージョンの CTT を使用し続けることができます。以前のバージョンの CTT に関連するドキュメントについては、[レガシードキュメント](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)を参照してください。
+* 検証およびプリンシパル移行レポートを使用して検証できます
 
 ## コンテンツ転送ツールの諸段階 {#phases-content-transfer-tool}
 

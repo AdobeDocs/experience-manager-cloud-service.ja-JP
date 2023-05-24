@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: cf927f5cc1fca3720716349b1758a47c7b395218
+source-git-commit: 8197b4f4e5cda21532c3660c2f0ec4855ba53a6a
 workflow-type: tm+mt
-source-wordcount: '4074'
-ht-degree: 97%
+source-wordcount: '4011'
+ht-degree: 99%
 
 ---
 
@@ -72,8 +72,8 @@ ht-degree: 97%
    + AEMaaCS メンテナンスリリースノート {#maintenance}
       + [最新のメンテナンスリリースノート](/help/release-notes/maintenance/latest.md)
       + 2023年度 {#2023}
-         + [メンテナンスリリースノート (2023.2.0)](/help/release-notes/maintenance/2023/2023.2.0.md)
-         + [メンテナンスリリースノート (2023.1.0)](/help/release-notes/maintenance/2023/2023.1.0.md)
+         + [メンテナンスリリースノート（2023.2.0）](/help/release-notes/maintenance/2023/2023.2.0.md)
+         + [メンテナンスリリースノート（2023.1.0）](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Cloud Manager のリリースノート {#cloud-manager}
       + [最新のリリースノート](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023年度 {#2023}
@@ -215,23 +215,10 @@ ht-degree: 97%
          + [移行セットの削除](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [パブリッシュインスタンスでのコンテンツ転送ツールの実行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [コンテンツ転送ツールのトラブルシューティング](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
-         + 従来のユーザーマッピングツール（レガシー）{#legacy-user-mapping-tool}
+         + 従来のユーザーマッピングツール（従来）{#legacy-user-mapping-tool}
             + [概要](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [重要な検討事項](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [ユーザーマッピングツールの使用](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
-         + コンテンツ転送ツール（レガシー） {#legacy}
-            + [概要](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
-            + [コンテンツ転送ツールの前提条件](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
-            + [コンテンツ転送ツール使用のガイドラインとベストプラクティス](/help/journey-migration/content-transfer-tool/ctt-legacy/guidelines-best-practices-content-transfer-tool-legacy.md)
-            + [コンテンツ転送ツールの基本を学ぶ](/help/journey-migration/content-transfer-tool/ctt-legacy/getting-started-content-transfer-tool-legacy.md)
-            + [コンテンツ転送の検証](/help/journey-migration/content-transfer-tool/ctt-legacy/validating-content-transfers-legacy.md)
-            + [大規模なコンテンツリポジトリーの処理](/help/journey-migration/content-transfer-tool/ctt-legacy/handling-large-content-repositories-legacy.md)
-            + [ソースからのコンテンツの抽出](/help/journey-migration/content-transfer-tool/ctt-legacy/extracting-content-legacy.md)
-            + [Target へのコンテンツの取り込み](/help/journey-migration/content-transfer-tool/ctt-legacy/ingesting-content-legacy.md)
-            + [移行セットのログの表示](/help/journey-migration/content-transfer-tool/ctt-legacy/viewing-logs-legacy.md)
-            + [移行セットの削除](/help/journey-migration/content-transfer-tool/ctt-legacy/deleting-migrationset-legacy.md)
-            + [パブリッシュインスタンスでのコンテンツ転送ツールの実行](/help/journey-migration/content-transfer-tool/ctt-legacy/running-content-transfer-tool-publish-instance-legacy.md)
-            + [コンテンツ転送ツールのトラブルシューティング](/help/journey-migration/content-transfer-tool/ctt-legacy/troubleshooting-content-transfer-tool-legacy.md)
    + コードリファクタリングツール {#refactoring-tools}
       + [Unified Experience](/help/journey-migration/unified-experience.md)
       + [Repository Modernizer](/help/journey-migration/refactoring-tools/repo-modernizer.md)
@@ -374,7 +361,7 @@ ht-degree: 97%
       + [Adobe Learning Manager との統合](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Adobe Target との統合](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Adobe Target との統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
-      + [コンテンツフラグメントのAdobe Targetへの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
+      + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し ](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
 + アセット {#assets}
@@ -514,7 +501,7 @@ ht-degree: 97%
 + Forms {#forms}
    + 概要 {#forms-overview}
       + [はじめに](/help/forms/home.md)
-      + [上位のAdobe Experience Manager Formsイノベーション](/help/forms/latest-innovations.md)
+      + [トップ Adobe Experience Manager Forms イノベーション](/help/forms/latest-innovations.md)
       + [主要な変更点](/help/forms/notable-changes.md)
       + [アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
       + [よくある質問](/help/forms/faq.md)
@@ -558,7 +545,7 @@ ht-degree: 97%
          + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
             + [アダプティブフォームのオーサリングの概要](/help/forms/introduction-forms-authoring.md)
             + [アダプティブフォームの作成](/help/forms/creating-adaptive-form.md)
-            + [参照テーマ、テンプレート、およびデータモデル](/help/forms/reference-themes-templates-data-models.md)
+            + [参照テーマ、テンプレート、データモデル](/help/forms/reference-themes-templates-data-models.md)
             + [テンプレートの作成](/help/forms/template-editor.md)
             + [テーマの作成](/help/forms/themes.md)
             + [アダプティブフォームの JSON スキーマのデザイン](/help/forms/adaptive-form-json-schema-form-model.md)
@@ -979,7 +966,7 @@ ht-degree: 97%
    + [ユニバーサルエディターの概要](/help/implementing/universal-editor/introduction.md)
    + [ユニバーサルエディターを使用したコンテンツのオーサリング](/help/implementing/universal-editor/authoring.md)
    + [ユニバーサルエディターを使用したコンテンツの公開](/help/implementing/universal-editor/publishing.md)
-   + [AEMのユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md)
+   + [AEM のユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md)
    + [ユニバーサルエディターのアーキテクチャ](/help/implementing/universal-editor/architecture.md)
    + [属性とタイプ](/help/implementing/universal-editor/attributes-types.md)
-   + [ユニバーサルエディタ認証](/help/implementing/universal-editor/authentication.md)
+   + [ユニバーサルエディターの認証](/help/implementing/universal-editor/authentication.md)
