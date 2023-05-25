@@ -4,18 +4,18 @@ description: Adobe Sensei AI を活用したスマートイメージングが、
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
-mini-toc-levels: 3
+mini-toc-levels: null
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 5cc750b3ea9a911355220f8b95f769000be9f41a
+source-git-commit: 2b1030a32733154491aa178f390038ef7d552151
 workflow-type: tm+mt
 source-wordcount: '3630'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
 # スマートイメージング {#smart-imaging}
 
-## スマートイメージングとは  {#what-is-smart-imaging}
++++**スマートイメージングとは**{#what-is-smart-imaging}
 
 スマートイメージングテクノロジーは、Adobe Sensei AI 機能を使用し、既存の「画像プリセット」と連携して動作します。クライアントのブラウザー機能に基づいて画像形式、サイズ、および画質を自動的に最適化し、画像配信のパフォーマンスを向上させます。
 
@@ -60,7 +60,9 @@ WebP および AVIF を PNG と比較すると、サイズ削減は WebP で 84�
 
 In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
 
-## 最新のスマートイメージングの主要なメリットは何ですか？ {#what-are-the-key-benefits-of-smart-imaging}
++++
+
++++###最新のスマートイメージングの主なメリットとは {#what-are-the-key-benefits-of-smart-imaging}
 
 スマートイメージングは、使用しているクライアントブラウザー、デバイスのディスプレイおよびネットワーク状況に応じて画像ファイルサイズを自動的に最適化することで、より優れた画像配信パフォーマンスを実現します。画像はページの読み込み時間のほとんどを占めるので、こうしたパフォーマンス向上はビジネス KPI（より高いコンバージョン率、より長いサイト滞在時間、より低いサイトバウンス率など）に大きな影響を及ぼす可能性があります。
 
@@ -72,7 +74,9 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 * デバイスピクセル比（`dpr`）
 * ネットワーク帯域幅（`network`）
 
-### ブラウザーフォーマット変換（bfc）について {#bfc}
++++
+
+**ブラウザー形式の変換 (bfc) について** {#bfc}
 
 画像 URL に `bfc=on` を追加してブラウザーフォーマット変換を有効にすると、異なるブラウザー向けに JPEG と PNG が非可逆 AVIF、非可逆 WebP、非可逆 JPEGXR、非可逆 JPEG2000 に自動的に変換されます。これらの形式をサポートしていないブラウザーでは、スマートイメージングは引き続き JPEG または PNG を提供します。形式と共に、新しい形式の品質はスマートイメージングによって再計算されます。
 
@@ -80,7 +84,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 Dynamic Media 画像サービングおよび画像レンダリング API の [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=ja) も参照してください。
 
-### デバイスピクセル比（dpr）の最適化について {#dpr}
+**デバイスのピクセル比 (dpr) について** 最適化 {#dpr}
 
 デバイスピクセル比（DPR）は、CSS ピクセル比とも呼ばれ、デバイスの物理ピクセルと論理ピクセルの関係を表します。特に、Retina 画面の出現に伴い、最新のモバイルデバイスのピクセル解像度が急速に増加しています。
 
@@ -106,7 +110,7 @@ Dynamic Media 画像サービングおよび画像レンダリング API の [bf
 
 [画像を操作する場合](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images)および[スマート切り抜きを操作する場合](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop)も参照してください。
 
-### ネットワーク帯域幅の最適化について {#network}
+**ネットワーク帯域幅の最適化について** {#network}
 
 「ネットワーク帯域幅」をオンにすると、提供される画質が、実際のネットワーク帯域幅に基づいて自動的に調整されます。ネットワーク帯域幅が不十分な場合は、DPR（デバイスピクセル比）の最適化がオンになっていても、自動的にオフになります。
 
@@ -118,7 +122,7 @@ Dynamic Media 画像サービングおよび画像レンダリング API の [bf
 
 DPR とネットワーク帯域幅の値は、バンドルされた CDN のクライアント側の検出値に基づいています。これらの値は不正確な場合があります。例えば、dpr=2 の iPhone5 と `dpr=3` の iPhone12 では、どちらも `dpr=2` と表示されます。それでも、高解像度デバイスの場合は、`dpr=1` を送信するより `dpr=2` を送信する方が適切です。この不正確さを克服する最善の方法は、クライアントサイドの DPR を使用して 100％正確な値を指定することです。また、これは、Apple か他のデバイスかに関わらず、発売された任意のデバイスで機能します。[クライアントサイドのデバイスピクセル比（DPR）を使用したスマートイメージングについて](/help/assets/dynamic-media/client-side-dpr.md)を参照してください。
 
-### スマートイメージングのその他の主要なメリット
+**スマートイメージングのその他の主要なメリット**
 
 * 最新のスマートイメージングを使用する Web ページの Google SEO ランキングを改善しました。
 * 最適化されたコンテンツをすぐに提供（実行時）
@@ -127,7 +131,9 @@ DPR とネットワーク帯域幅の値は、バンドルされた CDN のク�
 * 以前は、元の画像と派生画像の両方がキャッシュされていて、キャッシュを無効にする 2 つの手順がありました。最新のスマートイメージングでは、派生画像のみがキャッシュされ、1 ステップのキャッシュ無効化プロセスが可能です。
 * ルールセットでカスタムヘッダーを使用しているユーザーは、以前のバージョンのスマートイメージングとは異なってこれらのヘッダーがブロックされないので、最新のスマートイメージングのメリットが得られます。例えば、「[画像応答へのカスタム接触チャネル値の追加 | Dynamic Media Classic](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)」で推奨される「Timing Allow Header」、「X-Robot」などは、最新のスマートイメージングによるメリットを享受できます。
 
-## スマートイメージングにはライセンス費用がかかりますか？ {#are-there-any-licensing-costs-associated-with-smart-imaging}
++++
+
++++**スマートイメージングにはライセンス費用がかかりますか？** {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
 いいえ。スマートイメージングは、既存のライセンスに含まれています。この規則は、Dynamic Media Classic または Experience Manager Dynamic Media（オンプレミス、AMS、および Experience Manager as a Cloud Service）に当てはまります。
 
@@ -135,7 +141,9 @@ DPR とネットワーク帯域幅の値は、バンドルされた CDN のク�
 >
 >Dynamic Media - ハイブリッドのユーザーはスマートイメージングを使用できません。
 
-## スマートイメージングはどのように機能しますか？ {#how-does-smart-imaging-work}
++++
+
++++**スマートイメージングはどのように機能しますか？** {#how-does-smart-imaging-work}
 
 画像が消費者から要求されると、スマートイメージングがそのユーザーの特性を確認し、使用中のブラウザーに基づいて適切な画像形式に変換します。これらの形式変換は、視覚的忠実性を低下させない方法で行われます。スマートイメージングは、次のような方法で、ブラウザーの機能に基づいて、自動的に画像を別の形式に変換します。
 
@@ -152,6 +160,8 @@ DPR とネットワーク帯域幅の値は、バンドルされた CDN のク�
 * 上記形式をサポートしていないブラウザーの場合は、元々要求された画像形式が提供されます。
 
 元の画像サイズがスマートイメージングの生成するサイズより小さい場合は、元の画像が提供されます。
+
++++
 
 ## どんな画像形式がサポートされていますか？ {#what-image-formats-are-supported}
 
