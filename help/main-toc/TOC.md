@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b4aa3495538eebc2e87383e1490bc60403025fb0
+source-git-commit: f9e05b8d8fa6286c121f32e1e1f390a149471921
 workflow-type: tm+mt
-source-wordcount: '4012'
+source-wordcount: '4011'
 ht-degree: 99%
 
 ---
@@ -462,7 +462,7 @@ ht-degree: 99%
       + [バッチセットプリセット](/help/assets/dynamic-media/batch-set-presets-dm.md)
       + [Dynamic Media を使用して CDN キャッシュを無効化する](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [Dynamic Media Classic を使用して CDN キャッシュを無効化する](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
-      + [スマートイメージング FAQ](/help/assets/dynamic-media/imaging-faq.md)
+      + [スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)
       + [クライアントサイドのデバイスピクセル比（DPR）を使用したスマートイメージング](/help/assets/dynamic-media/client-side-dpr.md)
       + [Dynamic Media アセットを配信する](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Dynamic Media でホットリンク保護を有効化する](/help/assets/dynamic-media/hotlink-protection.md)
