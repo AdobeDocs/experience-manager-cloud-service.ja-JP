@@ -4,14 +4,19 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] の設
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 109f07c7273cc9a4890e41bf29a1509f738d130b
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '1703'
-ht-degree: 100%
+source-wordcount: '1723'
+ht-degree: 99%
 
 ---
 
 # [!DNL Workfront for Experience Manager enhanced connector] の設定 {#assets-integration-overview}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html) |
+| AEM as a Cloud Service | この記事 |
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] で管理者アクセス権を持つユーザーが、インストール後に拡張コネクタを設定します。インストール手順については、 [コネクタのインストール](/help/assets/workfront-integrations.md) を参照してください。
 
@@ -124,14 +129,14 @@ Adobe Workfront ドキュメントとアセット間のメタデータマッピ�
    * AEM プロパティ。この参照は、ワークフローペイロードに対する相対参照にする必要があります。
    * 名前付きの値。これらは角括弧で囲む必要があります。
    * 上記の 3 つの項目を連結したもの。`{+}` を使用して指定します。
-   * 値を `{replace(<value>,”old-char”,”new-char”)}` で囲むことによる上記の 3 つの項目の変更。
+   * 値を `{replace(<value>,"old-char","new-char")}` で囲むことによる上記の 3 つの項目の変更。
 
 * 次に例を示します。
 
    * `status="INP"`
    * `DE:Asset Type=jcr:content/metadata/assetType`
    * `DE:Path={path}`
-   * `URL=”https://my-aem-author/assets.html”{+}{path}`
+   * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![プロパティをマッピングするための設定](/help/assets/assets/wf-map-property-config.png)
 

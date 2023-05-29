@@ -6,15 +6,20 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '3796'
-ht-degree: 97%
+source-wordcount: '3816'
+ht-degree: 99%
 
 ---
 
 
 # Connected Assets を使用した [!DNL Experience Manager Sites] での DAM アセットの共有  {#use-connected-assets-to-share-dam-assets-in-aem-sites}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html?lang=ja) |
+| AEM as a Cloud Service | この記事 |
 
 大企業では、web サイトの作成に必要なインフラストラクチャが分散していることがあります。Web サイト作成機能と、それらの web サイトの作成に使用されたデジタルアセットが、別々のデプロイメントに格納されている場合もあります。その理由の 1 つは、連携して動作する必要がある既存のデプロイメントが地理的に分散していることです。もう 1 つの理由は、買収によって、親会社が一緒に使用したいと考えている [!DNL Experience Manager] のバージョンが異なるなど、インフラストラクチャが異種混在になることです。
 
@@ -61,7 +66,7 @@ Connected Assets 機能では、[!DNL Experience Manager Sites] と [!DNL Experi
 | [!DNL Sites] 作成者 | ローカル | <ul><li>`Authors`（リモート DAM での読み取りアクセス権とローカル [!DNL Sites] での作成者アクセス権を持つ） </li> <li>ローカル [!DNL Sites] の `dam-users`</li></ul> | エンドユーザーは、この統合を使用してコンテンツの速度を向上させる [!DNL Sites] 作成者です。作成者は、[!UICONTROL コンテンツファインダー]を使用して、リモート DAM 内のアセットを検索および閲覧し、ローカル web ページで必要な画像を使用することができます。 |
 | [!DNL Assets] administrator | リモート | [!DNL Experience Manager] `administrators` | クロスオリジンリソース共有（CORS）を設定します。 |
 | DAM ユーザー | リモート | `Authors` | リモート [!DNL Experience Manager] デプロイメントでの作成者の役割。[!UICONTROL コンテンツファインダー]を使用して Connected Assets 内のアセットを検索／参照します。 |
-| DAM ディストリビューター（技術ユーザー） | リモート | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | リモートデプロイメント上に存在するこのユーザーは、（[!DNL Sites] 作成者の役割ではなく）[!DNL Experience Manager]ローカルサーバーによって、[!DNL Sites] 作成者の代わりにリモートアセットを取得するために使用されます。 |
+| DAM 提供者（技術ユーザー） | リモート | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | リモートデプロイメント上に存在するこのユーザーは、（[!DNL Sites] 作成者の役割ではなく）[!DNL Experience Manager]ローカルサーバーによって、[!DNL Sites] 作成者の代わりにリモートアセットを取得するために使用されます。 |
 | [!DNL Sites] 技術ユーザー | ローカル | `connectedassets-sites-techaccts` | [!DNL Assets] デプロイメントで、[!DNL Sites] web ページ内のアセットへの参照を検索できるようにします。 |
 
 ### Connected Assets のアーキテクチャ {#connected-assets-architecture}
@@ -190,7 +195,7 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
 1. Connected Assets にログオンするための資格情報を指定します。このユーザーには、両方の [!DNL Experience Manager] デプロイメントのオーサリング権限があります。
 
-1. DAM に追加したアセットを検索します。 リモートアセットが左側のパネルに表示されます。 画像またはドキュメントのフィルターと、サポートされているドキュメントのタイプのフィルターです。 `Image` コンポーネント上の画像と `Download` コンポーネント上のドキュメントをドラッグします。
+1. DAM に追加したアセットを検索します。リモートアセットが左側のパネルに表示されます。画像またはドキュメントでフィルタリングしてから、サポートされているドキュメントのタイプでさらにフィルタリングします。`Image` コンポーネント上の画像と `Download` コンポーネント上のドキュメントをドラッグします。
 
    ローカル [!DNL Sites] デプロイメントでは、取得されたアセットは読み取り専用です。[!DNL Sites] コンポーネントが提供するオプションを使用して、取得したアセットを編集できます。コンポーネントによる編集は非破壊的です。
 
@@ -315,13 +320,13 @@ Connected Assets の設定後、[!DNL Dynamic Media] アセットは、[!DNL Sit
 ### 権限とアセット管理 {#permissions-and-managing-assets}
 
 * ローカルアセットは読み取り専用のコピーです。[!DNL Experience Manager] コンポーネントは、アセットに対して非破壊編集を行います。その他のいかなる編集もできません。
-* ローカルに取得されたアセットは、オーサリングの目的でのみ使用できます。 アセット更新ワークフローの適用やメタデータの編集は行えません。
+* ローカルに取得されたアセットは、オーサリング用途でのみ使用できます。アセット更新ワークフローの適用やメタデータの編集は行えません。
 * [!DNL Sites] ページで [!DNL Dynamic Media] を使用する場合、元のアセットは取得されず、ローカルデプロイメントにも保存されません。`dam:Asset` ノード、メタデータ、および [!DNL Assets] デプロイメントで生成されたレンディションは、すべて [!DNL Sites] デプロイメントで取得されます。
 * 画像とリストに表示されるドキュメント形式のみがサポートされます。[!DNL Content Fragments] および [!DNL Experience Fragments] ではサポートされていません。
 * Adobe [!DNL Experience Manager] はメタデータスキーマを取得しません。つまり、取得されたすべてのメタデータが表示されない可能性があります。[!DNL Sites] デプロイメントでスキーマが別個に更新されると、すべてのメタデータプロパティが表示されます。
 * [!DNL Sites] 作成者は全員、リモート DAM デプロイメントへのアクセス権限を持っていなくても、取得されたコピーに対する読み取り権限を持ちます。
 * 統合をカスタマイズする API はサポートされていません。
-* この機能は、リモートアセットのシームレスな検索と使用をサポートします。 多くのリモートアセットをローカルデプロイメントで一度に利用できるようにするには、リモートアセットの移行を検討します。
+* この機能は、リモートアセットのシームレスな検索と使用をサポートします。多くのリモートアセットをローカルデプロイメントで一度に利用できるようにするには、リモートアセットの移行を検討します。
 * リモートアセットを[!UICONTROL ページプロパティ]ユーザーインターフェイスのページサムネールとして使用することはできません。Web ページのサムネールは、[!UICONTROL ページプロパティ]ユーザインターフェイスの[!UICONTROL サムネール]から、「[!UICONTROL 画像を選択]」をクリックして設定できます。
 
 ### セットアップとライセンス {#setup-licensing}
@@ -334,7 +339,7 @@ Connected Assets の設定後、[!DNL Dynamic Media] アセットは、[!DNL Sit
 ### 使用方法 {#usage}
 
 * ユーザーは、オーサリング時にリモートアセットを検索し、ローカルページにドラッグできます。その他の機能はサポートされていません。
-* 取得操作が 5 秒後にタイムアウトしました。 作成者は、ネットワークに問題がある場合など、アセットの取得に関する問題を発生させる可能性があります。 作成者は、再試行を行い、リモートアセットを[!UICONTROL コンテンツファインダー]から[!UICONTROL ページエディター]にドラッグ＆ドロップできます。
+* 取得操作は 5 秒後にタイムアウトします。ネットワークに問題がある場合などに、オーサーではアセットの取得に関する問題が発生する可能性があります。作成者は、再試行を行い、リモートアセットを[!UICONTROL コンテンツファインダー]から[!UICONTROL ページエディター]にドラッグ＆ドロップできます。
 * 取得されたアセットに対しては、単純な非破壊編集と、 `Image` コンポーネント経由でサポートされている編集を行えます。アセットは読み取り専用です。
 * アセットを再取得する唯一の方法は、アセットをページにドラッグすることです。アセットを再取得して更新するための API サポートなどの手段はありません。
 * アセットが DAM から廃止されても、それらは引き続き [!DNL Sites] ページで使用されます。
