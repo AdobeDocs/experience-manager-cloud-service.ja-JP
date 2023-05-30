@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: dbc6b5c0f11e52b45981cab36381258edcf6c167
 workflow-type: tm+mt
-source-wordcount: '3816'
+source-wordcount: '3829'
 ht-degree: 99%
 
 ---
@@ -316,6 +316,7 @@ Connected Assets の設定後、[!DNL Dynamic Media] アセットは、[!DNL Sit
 ## 制限事項とベストプラクティス {#tip-and-limitations}
 
 * アセットの使用状況に関するインサイトを取得するには、[!DNL Sites] インスタンスで[アセットインサイト](/help/assets/assets-insights.md)機能を設定します。
+* オーサリングコンポーネントでのパスブラウザーの使用は、接続されたアセットではサポートされていません。
 
 ### 権限とアセット管理 {#permissions-and-managing-assets}
 
