@@ -77,7 +77,7 @@ ht-degree: 99%
    + Cloud Manager のリリースノート {#cloud-manager}
       + [最新のリリースノート](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023年度 {#2023}
-         + [ 2023.4.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
+         + [2023.4.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
          + [リリースノート（2023.3.0）](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
          + [リリースノート（2023.2.0）](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [リリースノート（2023.1.0）](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
