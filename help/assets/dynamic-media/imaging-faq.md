@@ -4,11 +4,11 @@ description: Adobe Sensei AI を活用したスマートイメージングが、
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
-mini-toc-levels: null
+mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: fca1da512c4015e77c1a982a551db354a0b1cace
+source-git-commit: c7555ef31d7657b4a90764224f4c8c58a6228157
 workflow-type: tm+mt
-source-wordcount: '3531'
+source-wordcount: '3539'
 ht-degree: 86%
 
 ---
@@ -80,7 +80,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 Dynamic Media 画像サービングおよび画像レンダリング API の [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=ja) も参照してください。
 
-### デバイスのピクセル比の最適化について** {#dpr}
+### デバイスのピクセル比の最適化について {#dpr}
 
 デバイスピクセル比（DPR）は、CSS ピクセル比とも呼ばれ、デバイスの物理ピクセルと論理ピクセルの関係を表します。特に、Retina 画面の出現に伴い、最新のモバイルデバイスのピクセル解像度が急速に増加しています。
 
@@ -127,17 +127,7 @@ DPR とネットワーク帯域幅の値は、バンドルされた CDN のク�
 * 以前は、元の画像と派生画像の両方がキャッシュされていて、キャッシュを無効にする 2 つの手順がありました。最新のスマートイメージングでは、派生画像のみがキャッシュされ、1 ステップのキャッシュ無効化プロセスが可能です。
 * ルールセットでカスタムヘッダーを使用しているユーザーは、以前のバージョンのスマートイメージングとは異なってこれらのヘッダーがブロックされないので、最新のスマートイメージングのメリットが得られます。例えば、「[画像応答へのカスタム接触チャネル値の追加 | Dynamic Media Classic](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)」で推奨される「Timing Allow Header」、「X-Robot」などは、最新のスマートイメージングによるメリットを享受できます。
 
-+++**スマートイメージングにはライセンス費用がかかりますか？**
-
-いいえ。スマートイメージングは、既存のライセンスに含まれています。この規則は、Dynamic Media Classic または Experience Manager Dynamic Media（オンプレミス、AMS、および Experience Manager as a Cloud Service）に当てはまります。
-
->[!IMPORTANT]
->
->Dynamic Media - ハイブリッドのユーザーはスマートイメージングを使用できません。
-
-+++
-
-+++**スマートイメージングはどのように機能しますか？**
+## スマートイメージングの仕組み**
 
 画像が消費者から要求されると、スマートイメージングがそのユーザーの特性を確認し、使用中のブラウザーに基づいて適切な画像形式に変換します。これらの形式変換は、視覚的忠実性を低下させない方法で行われます。スマートイメージングは、次のような方法で、ブラウザーの機能に基づいて、自動的に画像を別の形式に変換します。
 
@@ -154,6 +144,30 @@ DPR とネットワーク帯域幅の値は、バンドルされた CDN のク�
 * 上記形式をサポートしていないブラウザーの場合は、元々要求された画像形式が提供されます。
 
 元の画像サイズがスマートイメージングの生成するサイズより小さい場合は、元の画像が提供されます。
+
+## スマートイメージングでサポートされる画像形式
+
+スマートイメージングでは次の画像形式がサポートされています。
+
+* JPEG
+* PNG
+
+JPEG画像ファイル形式の場合、新しい形式の品質はスマートイメージングによって再計算されます。
+
+透明度をサポートしている PNG などの画像ファイル形式の場合は、非可逆の AVIF および WebP を配信するようにスマートイメージングを設定できます。スマートイメージングでは、非可逆の形式変換の場合、画像の URL で指定されている画質を使用します。それ以外の場合は、Dynamic Media の会社アカウントで設定されている画質を使用します。
+
+## スマートイメージングで無視されサポートされる画像サービングコマンド
+
+スマートイメージングで無視される画像サービングコマンドは次のみです。 `fmt` および `qlt`. 残りのコマンドはすべてサポートされています。
+
+
++++**スマートイメージングにはライセンス費用がかかりますか？**
+
+いいえ。スマートイメージングは、既存のライセンスに含まれています。この規則は、Dynamic Media Classic または Experience Manager Dynamic Media（オンプレミス、AMS、および Experience Manager as a Cloud Service）に当てはまります。
+
+>[!IMPORTANT]
+>
+>Dynamic Media - ハイブリッドのユーザーはスマートイメージングを使用できません。
 
 +++
 
@@ -174,19 +188,6 @@ DPR とネットワーク帯域幅の値は、バンドルされた CDN のク�
 * [ブラウザーフォーマット変換](#bfc)
 * [デバイスピクセル比](#dpr)
 * [ネットワーク帯域幅](#network)
-
-+++
-
-+++**どんな画像形式がサポートされていますか？**
-
-スマートイメージングでは次の画像形式がサポートされています。
-
-* JPEG
-* PNG
-
-JPEG画像ファイル形式の場合、新しい形式の品質はスマートイメージングによって再計算されます。
-
-透明度をサポートしている PNG などの画像ファイル形式の場合は、非可逆の AVIF および WebP を配信するようにスマートイメージングを設定できます。スマートイメージングでは、非可逆の形式変換の場合、画像の URL で指定されている画質を使用します。それ以外の場合は、Dynamic Media の会社アカウントで設定されている画質を使用します。
 
 +++
 
@@ -395,12 +396,6 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 +++**スマートイメージングは画質の出力の割合の設定を調整しますか？**
 
 はい。スマートイメージングでは、画質（％単位）を自動的に調整します。この画質（％単位）は、アドビで開発された機械学習アルゴリズムを使用して決定されます。このパーセントは、範囲固有のものではありません。
-
-+++
-
-+++**どの画像サービングコマンドがサポートされていますか、または無視されていますか。**
-
-無視されるコマンドは `fmt` と `qlt` だけです。残りのコマンドはすべてサポートされています。
 
 +++
 
