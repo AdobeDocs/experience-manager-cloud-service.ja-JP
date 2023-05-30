@@ -2,7 +2,7 @@
 title: AEM ヘッドレスコンテンツアーキテクトジャーニー
 description: AEM の強力で柔軟なヘッドレス機能とその能力および初めてのヘッドレスプロジェクトでコンテンツをモデル化する方法を説明するガイド付きジャーニーは、ここから始めてください。
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 100%
@@ -12,6 +12,8 @@ ht-degree: 100%
 # AEM ヘッドレスコンテンツアーキテクトジャーニー {#aem-headless-content-architect-journey}
 
 AEM の強力で柔軟なヘッドレス機能とその能力および初めてのヘッドレスプロジェクトでの活用方法を説明するガイド付きジャーニーは、ここから始めてください。
+
+{{headless-trials-promotion}}
 
 ## はじめに {#introduction}
 

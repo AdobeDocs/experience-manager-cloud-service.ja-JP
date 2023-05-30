@@ -2,7 +2,7 @@
 title: AEM as a Headless CMS 用のオーサリング - はじめに
 description: Adobe Experience Manager as a Cloud Service の機能をヘッドレス CMS として使用し、プロジェクトのコンテンツをオーサリングする方法を紹介します。
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
+source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 100%
@@ -12,6 +12,8 @@ ht-degree: 100%
 # AEM as a Headless CMS 用のオーサリング - はじめに {#author-headless-introduction}
 
 [AEM ヘッドレスコンテンツ作成者ジャーニー](overview.md)のこの手順では、Adobe Experience Manager（AEM）as a Cloud Service をヘッドレス CMS として使用した場合の、コンテンツのオーサリングを理解するために必要な（基本）概念と用語について説明します。これには、ヘッドレスコンテンツ配信用のコンテンツの構造化と作成が含まれます。
+
+{{headless-trials-promotion}}
 
 ## 目的 {#objective}
 

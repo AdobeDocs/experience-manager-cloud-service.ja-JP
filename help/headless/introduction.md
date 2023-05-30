@@ -3,17 +3,17 @@ title: AEM のヘッドレスの概要
 description: 詳細なドキュメントとヘッドレスジャーニーを組み合わせた Adobe Experience Manager（AEM）のヘッドレスについて説明します。 コンテンツフラグメントモデル、コンテンツフラグメント、GraphQL API などの機能を使用してヘッドレスエクスペリエンスを強化する方法について説明します。
 landing-page-description: Adobe Experience Manager as a Cloud Service でヘッドレスを使用および管理する方法を説明します。
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 6d8d75cd0b01154f420dd3d5f14589bb8a2b8297
+source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 
 # Adobe Experience Manager as a Headless CMS の概要 {#introduction-aem-headless}
 
-Adobe Experience Manager(AEM) をヘッドレス CMS（コンテンツ管理システム）として使用し、コンテンツフラグメントモデル、コンテンツフラグメント、GraphQL API などの機能を組み合わせて、ヘッドレスエクスペリエンスを大規模に強化する方法を説明します。
+ヘッドレスエクスペリエンスを大規模に強化するコンテンツフラグメントモデル、コンテンツフラグメント、GraphQL API などの機能を備えた、ヘッドレス CMS（コンテンツ管理システム）としての Adobe Experience Manager（AEM）の使用方法について説明します。
 
 関係する様々な機能の詳細なドキュメントを読んだり、[最初のステップの概要を把握するためのヘッドレスジャーニー](#first-steps)に従うことができます。
 
@@ -21,11 +21,13 @@ Adobe Experience Manager(AEM) をヘッドレス CMS（コンテンツ管理シ�
 >
 >ヘッドレスの概念と用語の概要については、[ヘッドレスとは](/help/headless/what-is-headless.md)を参照してください。
 
+{{headless-trials-promotion}}
+
 ## 概要 {#overview}
 
 AEM ヘッドレスは、AEM 内の構造化コンテンツ（コンテンツフラグメント）を、GraphQL を使用して HTTP 経由で任意のアプリで使用できるようにする、Experience Manager の CMS ソリューションです。ヘッドレス実装により、複数のプラットフォームやチャネルにわたって、大規模なエクスペリエンスを提供できます。
 
-フルスタックおよびハイブリッドソリューションで従来のように、ヘッドレス実装はページおよびコンポーネントの管理に向けています。 代わりに、チャネルに依存しない、再利用可能なコンテンツフラグメントの作成と、そのクロスチャネル配信に重点を置いています。 これは、web エクスペリエンスを実装するための最新の動的な開発パターンです。
+ヘッドレス実装では、フルスタックソリューションやハイブリッドソリューションで従来から行われている、ページやコンポーネントの管理が不要になります。代わりに、チャネルに依存しない再利用可能なコンテンツのフラグメントの作成と、クロスチャネル配信に基づいています。これは、web エクスペリエンスを実装するための最新の動的な開発パターンです。
 
 ![AEM 実装モデル](assets/aem-implementation-models.png)
 
@@ -34,13 +36,13 @@ AEM ヘッドレスは、AEM 内の構造化コンテンツ（コンテンツフ
 AEM as a Cloud Service は、次の 3 つの強力な機能を提供することで、ヘッドレス実装モデルの柔軟なツールになっています。
 
 1. **コンテンツフラグメントモデル**
-   * コンテンツフラグメントモデルは、コンテンツを構造化して表現したものです。
-   * コンテンツフラグメントモデルは、情報アーキテクトがAEMコンテンツフラグメントモデルエディターで定義します。
+   * コンテンツフラグメントモデルは、コンテンツの構造化表現です。
+   * コンテンツフラグメントモデルは、情報アーキテクトによって AEM コンテンツフラグメントモデルエディターで定義されます。
    * コンテンツフラグメントモデルは、コンテンツフラグメントの基盤となります。
 1. **コンテンツフラグメント**
    * コンテンツフラグメントは、コンテンツフラグメントモデルに基づいて作成されます。
-   * コンテンツフラグメントは、コンテンツ作成者がAEMコンテンツフラグメントエディターを使用して作成します。
-   * コンテンツフラグメントはAEM Assetsとして保存されますが、Assets コンソールまたは [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md).
+   * コンテンツフラグメントは、コンテンツ作成者によって AEM コンテンツフラグメントエディターで作成されます。
+   * コンテンツフラグメントは AEM Assets として保存されますが、Assets コンソールまたは [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)を使用して管理できます。
 1. **配信用のコンテンツ API**
    * AEM GraphQL API では、コンテンツフラグメント配信をサポートしています。
    * AEM Assets REST API では、コンテンツフラグメントの CRUD 操作をサポートしています。
