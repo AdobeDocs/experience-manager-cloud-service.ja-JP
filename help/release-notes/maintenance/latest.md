@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 4b86e35efb11aca16f0d69c7a9b82b53bdb867a5
+source-git-commit: 66c77dd90fb220993e113fb3c4cfbaec879c1dee
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 74%
@@ -13,7 +13,7 @@ ht-degree: 74%
 
 次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 11983 {#release-12142}
+## リリース 12142 {#release-12142}
 
 2023 年 5 月 31 日に公開されたメンテナンスリリース12142の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース 11983 からのアップデートです。
 
