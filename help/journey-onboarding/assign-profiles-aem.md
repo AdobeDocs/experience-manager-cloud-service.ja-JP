@@ -4,14 +4,19 @@ description: クラウドリソースを設定したら、AEM 製品プロファ
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: fd14d9f88fed4ef0f90b5dd0c92c53b1a298bd76
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 95%
+source-wordcount: '805'
+ht-degree: 93%
 
 ---
 
 # AEM 製品プロファイルの割り当て {#assign-profiles-aem}
+
+>[!CONTEXTUALHELP]
+>id="assets_user_entitlements"
+>title="AEM製品プロファイルの割り当て"
+>abstract="Experience Manager Assetsを使用する資格がありません。 管理者にお問い合わせください。"
 
 [オンボーディングジャーニー](overview.md)のこのパートでは、AEM 製品プロファイルを使用して、AEM へのアクセス権をチームに付与する方法を説明します。
 
