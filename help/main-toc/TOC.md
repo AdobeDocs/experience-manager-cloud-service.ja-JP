@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f9e05b8d8fa6286c121f32e1e1f390a149471921
+source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
 workflow-type: tm+mt
-source-wordcount: '4011'
-ht-degree: 99%
+source-wordcount: '4027'
+ht-degree: 98%
 
 ---
 
@@ -509,6 +509,7 @@ ht-degree: 99%
    + 設定と移行 {#setup-configure-migrate}
       + [Cloud Service 環境へのオンボード](/help/forms/setup-forms-cloud-service.md)
       + [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
+      + [AEM Formsas a Cloud Serviceおよびローカル開発環境でのアダプティブFormsコアコンポーネントの有効化](/help/forms/enable-adaptive-forms-core-components.md)
       + [統合ストレージコネクタの設定](/help/forms/configure-unified-storage-connector.md)
       + [as a Cloud Service の移行元 [!DNL AEM 6.5 Forms] または以前のバージョン [!DNL AEM Forms] ](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [グループと権限](/help/forms/forms-groups-privileges-tasks.md)
@@ -970,3 +971,4 @@ ht-degree: 99%
    + [ユニバーサルエディターのアーキテクチャ](/help/implementing/universal-editor/architecture.md)
    + [属性とタイプ](/help/implementing/universal-editor/attributes-types.md)
    + [ユニバーサルエディターの認証](/help/implementing/universal-editor/authentication.md)
+
