@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 493a2bae1d97424b4a1664e9f421d3f19b0cb477
+source-git-commit: d6ea74834f73ad90f5df929a2806cd1ed53af0aa
 workflow-type: tm+mt
-source-wordcount: '4027'
+source-wordcount: '4030'
 ht-degree: 98%
 
 ---
@@ -374,6 +374,7 @@ ht-degree: 98%
    + [ [!DNL Assets] でのアクセシビリティ](/help/assets/accessibility.md)
    + デジタルアセットの管理 {#manage}
       + [マイクロフロントエンドアセットセレクター](/help/assets/asset-selector.md)
+      + [マイクロフロントエンドの宛先セレクター](/help/assets/destination-selector.md)
       + [アセットの共有](/help/assets/share-assets.md)
       + [アクティビティと DAM タスクの監視](/help/assets/assets-activity-history.md)
       + [アセットマイクロサービスの基本](/help/assets/asset-microservices-configure-and-use.md)
