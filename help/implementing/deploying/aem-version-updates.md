@@ -3,10 +3,10 @@ title: AEM バージョンのアップデート
 description: AEMas a Cloud Serviceで継続的な統合および配信 (CI/CD) を使用して、プロジェクトを最新バージョンに保つ方法を説明します。
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 7cdc7bb56565cccc04a2dcb74a6c8088ed4e7847
+source-git-commit: dd1560aa4d260320f565ad993a8b3650c3ee5288
 workflow-type: tm+mt
 source-wordcount: '483'
-ht-degree: 65%
+ht-degree: 54%
 
 ---
 
@@ -49,8 +49,8 @@ AEM のアップデートは、複数のステップを含む集中的かつ完�
 
 ## 複合ノードストア {#composite-node-store}
 
-ノードのクラスターであるオーサリングインスタンスの場合も含め、ほとんどの場合、アップデートでダウンタイムは発生しません。次の理由により、ローリングアップデートが可能です： [Oak の複合ノードストア機能。](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
+ほとんどの場合、ノードのクラスターであるオーサリングインスタンスを含め、更新でダウンタイムは発生しません。 次の理由により、ローリングアップデートが可能です： [Oak の複合ノードストア機能。](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-この機能を利用すると、AEM で複数のリポジトリを同時に参照できます。周期的に [blue-green デプロイメント](/help/implementing/deploying/overview.md#how-rolling-deployments-work) 新しい緑のAEMバージョンには独自の `/libs` （TarMK ベースの不変リポジトリ）古いブルーのAEMバージョンとは異なります。両方とも、以下のような領域を含む共有の DocumentMK ベースの可変リポジトリを参照します。 `/content` , `/conf` , `/etc` その他
+この機能を利用すると、AEM で複数のリポジトリを同時に参照できます。内 [ローリングデプロイメント](/help/implementing/deploying/overview.md#how-rolling-deployments-work) 新しいAEMバージョンには独自の `/libs` （TarMK ベースの不変リポジトリ）古いAEMバージョンとは異なります。両方とも、以下のような領域を含む共有の DocumentMK ベースの可変リポジトリを参照します。 `/content` , `/conf` , `/etc` その他
 
-青色バージョンにも緑色バージョンにも独自の `/libs` のバージョがあるので、ローリングアップデート中に両方ともアクティブにでき、青色が完全に緑色に置き換わるまで両方ともトラフィックを処理します。
+古いバージョンと新しいバージョンの両方には、 `/libs`を使用すると、両方をローリング更新中にアクティブにでき、両方をトラフィックに引き継ぐことができます。このとき、古いが新しいに完全に置き換えられるまで、トラフィックは引き継がれます。
