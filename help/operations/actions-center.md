@@ -4,7 +4,7 @@ description: アクションセンターを活用して、インシデントや�
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: ca7cad567a5f83cd1edc14def6d961b8ba3b7f1f
+source-git-commit: 9302220536e7a541d44d96626c65de94ee5d64c3
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 20%
@@ -40,7 +40,7 @@ AEM as aCloud Serviceは、即時の対応が必要な重大なインシデン�
 
 ## 詳細なユーザーフロー {#detailed-user-flow}
 
-E メールをクリックすると、アラートセンターに移動し、クリックした通知のコンテキストを示すポップアップと、修正処理の実行方法を説明する追加情報へのリンクが表示されます。
+電子メールをクリックすると、アクションセンターに移動し、クリックした通知のコンテキストを示すポップアップと、修正処理の実行方法を説明する追加情報へのリンクが表示されます。
 
 ![インシデントの詳細](/help/operations/assets/incident-details.png)
 
@@ -64,7 +64,7 @@ E メールをクリックすると、アラートセンターに移動し、ク
 
 AEM as a Cloud Serviceには複数のタイプの通知がありますが、次の表に示すように、アクションセンターにはサブセットのみが表示されます。
 
-| 通知タイプ | 説明 | 設定方法 | アラートセンターに表示 |
+| 通知タイプ | 説明 | 設定方法 | アクションセンターに表示 |
 |---|---|---|---|
 | 運用インシデント | 迅速な対応が必要な重大なインシデント | 「インシデント通知 —Cloud Service」製品プロファイルに割り当てられたユーザー | X |
 | 事前の推奨事項 | 計画する必要がある最適化 | 「Proactive Notification - Product」製品プロファイルに割り当てられたCloud Service | X |
