@@ -3,10 +3,10 @@ title: AEM as a Cloud Service リリース 2023.03.0 の移行ツールのリリ
 description: AEM as a Cloud Service リリース 2022.03.0 の移行ツールのリリースノート
 feature: Release Information
 exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: b2681113f5565e4f63c76abeaf46d5f4b1a8a8ea
+source-git-commit: 586fbc136b866be149db1d4fcdd6ea2ef18a97b1
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 100%
+source-wordcount: '321'
+ht-degree: 96%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 ### 新機能 {#what-is-new-ctt}
 
-* ユーザーマッピングが合理化され、コンテンツ抽出手順に統合されました。設定は必要なく、デフォルトでは、ユーザーがコンテンツの抽出を開始する際に、ユーザーマッピングが自動的に行われます。ユーザーは、必要に応じてユーザーマッピングを無効にするオプションがあります。詳細は[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=ja#user-mapping-detail)をご覧ください。
+* ユーザーマッピングが合理化され、コンテンツ抽出手順に統合されました。設定は必要なく、デフォルトでは、ユーザーがコンテンツの抽出を開始する際に、ユーザーマッピングが自動的に行われます。ユーザーは、必要に応じてユーザーマッピングを無効にするオプションがあります。 詳細は[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=ja#user-mapping-detail)をご覧ください。
 * [AzCopy](https://learn.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-v10) を使用したプレコピー手順がコンテンツ転送ツールと統合され、コンテンツ抽出が大幅に高速化しました。このバージョンの CTT がインストールされると、プレコピーは自動的に設定およびインストールされます。デフォルトでは、抽出が開始されると、200 GB を超える移行セットに対してプレコピーが自動的に実行されます。必要に応じて、無効にするオプションがあります。詳しくは[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja)を参照してください。
 * CTT を Windows サーバーで使用できるようになりました。
 
