@@ -2,7 +2,7 @@
 title: プレビュー - JSON 表現（アセット - コンテンツフラグメント）
 description: AEM ヘッドレスソリューションの実装時にコンテンツフラグメントの JSON 表現を簡単にプレビューする方法について説明します。
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 344d04eb18c100835b78fe59c909d92c1e42111b
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 100%
@@ -20,3 +20,7 @@ AEM ヘッドレス実装の一環としてコンテンツフラグメントの�
 現在のフラグメントの JSON 表現を表示できます。次に例を示します。
 
 ![コンテンツフラグメントエディター - フラグメントのプレビュー](assets/cfm-preview-02.png)
+
+<!--
+**Copy URL** allows you to copy to clipboard the URL for either author or publish.
+-->

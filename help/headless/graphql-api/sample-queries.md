@@ -3,10 +3,10 @@ title: AEM での GraphQL の使用方法 - サンプルコンテンツとサン
 description: GraphQL を AEM と共に使用し、サンプルコンテンツとクエリを調べて、コンテンツをヘッドレスに提供する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 12df921d7a6dbc46ee9effcdabe948a692eb64d9
+source-git-commit: 063d8a23c0634de7c5c25b4e617cc536c2dc3a3b
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 97%
+source-wordcount: '1760'
+ht-degree: 95%
 
 ---
 
@@ -356,6 +356,58 @@ query {
           "categories": [
             "city:capital",
             "city:emea"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+### サンプルクエリ - すべての都市の名前都市滞在型休暇としてタグ付けされた {#sample-names-all-cities-tagged-city-breaks}
+
+次の場合：
+
+* `Tourism` : `Business`、`City Break`、`Holiday` という名前の様々なタグを作成し、
+* これらを様々な `City` インスタンスのマスターバリエーションに割り当てます
+
+この場合、クエリを使用して、`city` スキーマで都市滞在型休暇としてタグ付けされたすべてのエントリの `name` および `tags` の詳細を返すことができます。
+
+**サンプルクエリ**
+
+```xml
+query {
+  cityList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "tourism:city-break", _operator: CONTAINS}]}}
+  ){
+    items {
+      name,
+      _tags
+    }
+  }
+}
+```
+
+**サンプル結果**
+
+```xml
+{
+  "data": {
+    "cityList": {
+      "items": [
+        {
+          "name": "Berlin",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
+          ]
+        },
+        {
+          "name": "Zurich",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
           ]
         }
       ]
@@ -1533,6 +1585,62 @@ query {
 }
 ```
 
+### 特定モデルの複数のコンテンツフラグメントとそのバリエーションのサンプルクエリ {#sample-wknd-multiple-fragment-variations-given-model}
+
+このクエリでは次のものを検索します。
+
+* `article` タイプのコンテンツフラグメントとすべてのバリエーション
+
+**サンプルクエリ**
+
+```xml
+query {
+  articleList(
+    includeVariations: true  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
+      }
+    }
+  }
+}
+```
+
+### 特定のタグが設定された特定モデルのコンテンツフラグメントバリエーションのサンプルクエリ{#sample-wknd-fragment-variations-given-model-specific-tag}
+
+このクエリでは次のものを検索します。
+
+* タグ `WKND : Activity / Hiking` の付いた 1 つ以上のバリエーションを持つ `article` タイプのコンテンツフラグメント
+
+**サンプルクエリ**
+
+```xml
+{
+  articleList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "wknd:activity/hiking", _operator: CONTAINS}]}}
+  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
+      }
+    }
+  }
+}
+```
+
 ### 特定ロケールの複数のコンテンツフラグメントのサンプルクエリ {#sample-wknd-multiple-fragments-given-locale}
 
 このクエリでは次のものを検索します。
@@ -1610,6 +1718,84 @@ query {
         }
     }
 }
+```
+
+### _tags ID でフィルタリングし、バリエーションを除外したクエリ例 {#sample-filtering-tag-not-variations}
+
+このクエリでは次のものを問い合わせます。
+
+* （タイプのコンテンツフラグメントの場合） `vehicle` タグを持つ `big-block`
+* バリエーションの除外
+
+**サンプルクエリ**
+
+```graphql
+query {
+  vehicleList(
+    filter: {
+    _tags: {
+      _expressions: [
+        {
+          value: "vehicles:big-block"
+          _operator: CONTAINS
+        }
+      ]
+    }
+  }) {
+    items {
+      _variation
+      _path
+      type
+      name
+      model
+      fuel
+      _tags
+    }
+  }
+} 
+```
+
+### _tags ID でフィルタリングし、バリエーションを含むクエリ例 {#sample-filtering-tag-with-variations}
+
+このクエリでは次のものを問い合わせます。
+
+* （タイプのコンテンツフラグメントの場合） `vehicle` タグを持つ `big-block`
+* バリエーションを含む
+
+**サンプルクエリ**
+
+```graphql
+{
+  enginePaginated(after: "SjkKNmVkODFmMGQtNTQyYy00NmQ4LTljMzktMjhlNzQwZTY1YWI2Cmo5", first: 9 ,includeVariations:true, sort: "name",
+    filter: {
+    _tags: {
+      _expressions: [
+        {
+          value: "vehicles:big-block"
+          _operator: CONTAINS
+        }
+      ]
+    }
+  }) {
+    edges{
+    node {
+        _variation
+        _path
+        name
+        type
+        size
+        _tags
+        _metadata {
+          stringArrayMetadata {
+            name
+            value
+          }
+        }
+    }
+      cursor
+    }
+  }
+} 
 ```
 
 ## GraphQL で使用するコンテンツフラグメント構造のサンプル {#content-fragment-structure-graphql}

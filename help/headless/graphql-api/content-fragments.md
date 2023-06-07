@@ -3,10 +3,10 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: fa178192d74dfa9eb44835e31a111daf00f6d7d1
+source-git-commit: 7e6a42f5804ddef918df859811ba48f27ebbf19a
 workflow-type: tm+mt
-source-wordcount: '4789'
-ht-degree: 97%
+source-wordcount: '4934'
+ht-degree: 96%
 
 ---
 
@@ -936,6 +936,13 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
 
 
+
+* フィルター `includeVariations` が `List` および `Paginated` クエリのタイプ。  クエリ結果でコンテンツフラグメントのバリエーションを取得するには、`includeVariations` フィルターは `true` に設定する必要があります。
+
+   * 詳しくは、 [特定のモデルの複数のコンテンツフラグメントとそのバリエーションのサンプルクエリ](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
+   >[!CAUTION]
+   >フィルター `includeVariations` システム生成フィールド `_variation` は、同じクエリ定義で一緒に使用することはできません。
+
 * 論理和（OR）を使用する場合：
    * ` _logOp: OR` を使用します
    * [サンプルクエリ - 「Jobs」または「Smith」という名前を持つすべての人物](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)を参照してください
@@ -965,6 +972,10 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
          >
          >指定されたバリエーションがコンテンツフラグメントに対して存在しない場合、マスターバリエーションが（フォールバック）デフォルトとして返されます。
 
+         >[!CAUTION]
+         >
+         >システム生成フィールド `_variation` は、フィルター `includeVariations` と併用できません。
+
          * [サンプルクエリ - 名前付きバリエーションを持つすべての都市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)を参照してください
    * [画像配信](#image-delivery)の場合：
 
@@ -977,6 +988,17 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
          * [すべてのパラメーターを使用した画像配信用サンプルクエリ](#image-delivery-full-parameters)
 
          * [単一の指定パラメーターを使用した画像配信用サンプルクエリ](#image-delivery-single-specified-parameter)
+   * `_tags`：タグを含むコンテンツフラグメントまたはバリエーションの ID を表示する `cq:tags` 識別子の配列です。
+
+      * [サンプルクエリ - 市区町村の区切り文字としてタグ付けされた、すべての都市の名前](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)を参照してください。
+      * 詳しくは、[特定のタグが添付された、任意のモデルのコンテンツフラグメントバリエーションのサンプルクエリ](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)を参照してください。
+      * 詳しくは、 [_tags ID でフィルタリングし、バリエーションを除外したクエリ例](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+      * 詳しくは、 [_tags ID でフィルタリングし、バリエーションを含むクエリ例](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
+
+      >[!NOTE]
+      >
+      >また、コンテンツフラグメントのメタデータを一覧表示して、タグをクエリできます。
+
    * 操作の場合：
 
       * `_operator`：特定の演算子（`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`、`STARTS_WITH`）を適用します
@@ -986,6 +1008,7 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
          * [サンプルクエリ - 少なくとも 1 回は現れる項目を含んだ配列をフィルタリング](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)を参照してください
       * `_ignoreCase`：クエリの実行時に大文字と小文字を区別しません
          * [サンプルクエリ - 名前に SAN が含まれるすべての都市（大文字と小文字を区別しない場合）](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)を参照してください
+
 
 
 
