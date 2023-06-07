@@ -5,7 +5,7 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: 8197b4f4e5cda21532c3660c2f0ec4855ba53a6a
 workflow-type: tm+mt
 source-wordcount: '648'
-ht-degree: 81%
+ht-degree: 86%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 81%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="概要"
->abstract="コンテンツ転送ツールは、Adobeが開発したツールで、既存のコンテンツをソースAEMインスタンス（オンプレミスまたは AMS）からターゲットAEM Cloud Serviceインスタンスに移行する際に使用できます。 プリンシパル（ユーザーやグループ）も自動的に転送されます。"
+>abstract="コンテンツ転送ツールは、アドビが開発したツールで、ソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM Cloud Service インスタンスへの既存のコンテンツの移行を開始するために使用できます。プリンシパル（ユーザーやグループ）も自動的に転送されます。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja" text="ガイドラインとベストプラクティス"
 
 コンテンツ転送ツールは、Adobeが開発したツールで、既存のコンテンツをソースAEMインスタンス（オンプレミスまたは AMS）からターゲットAEM Cloud Serviceインスタンスに移行する際に使用できます。
