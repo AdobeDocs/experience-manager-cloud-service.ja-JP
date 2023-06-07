@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の高度なネットワーク機能の設定
 description: AEM as a Cloud Service の高度なネットワーク機能（VPN やフレキシブルエグレス IP アドレスまたは専用エグレス IP アドレスなど）を設定する方法を説明します
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 67e801cc22adfbe517b769e829e534eadb1806f5
-workflow-type: ht
-source-wordcount: '3053'
-ht-degree: 100%
+source-git-commit: 7d74772bf716e4a818633a18fa17412db5a47199
+workflow-type: tm+mt
+source-wordcount: '3595'
+ht-degree: 84%
 
 ---
 
@@ -535,3 +535,34 @@ Header always set Cache-Control private
 > この手順を実行すると、削除と再作成の間に高度なネットワークサービスのダウンタイムが発生します
 
 ダウンタイムがビジネスに大きな影響を与える場合は、カスタマーサポートにお問い合わせください。既に作成された内容と変更の理由を説明します。
+
+## 追加のパブリッシュ地域の高度なネットワーク設定 {#advanced-networking-configuration-for-additional-publish-regions}
+
+高度なネットワークが既に設定されている環境に追加の地域が追加されると、高度なネットワークルールに一致する追加のパブリッシュ地域からのトラフィックは、デフォルトでプライマリー地域を経由します。 ただし、プライマリージョンが使用できなくなった場合、その他のリージョンでアドバンスドネットワークが有効になっていないと、アドバンスドネットワークトラフィックは削除されます。 いずれかの地域で停止が発生した場合に、待ち時間を最適化して可用性を高めるには、追加のパブリッシュ地域の高度なネットワークを有効にする必要があります。 次の節では、2 つの異なるシナリオについて説明します。
+
+>[!NOTE]
+>
+>すべての地域が同じを共有します [環境の高度なネットワーク構成](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration)したがって、トラフィックが出てくる地域に基づいて、別の宛先にトラフィックをルーティングすることはできません。
+
+### 出力専用 IP アドレス {#additional-publish-regions-dedicated-egress}
+
+#### プライマリ地域で既に有効になっているアドバンスドネットワーク {#already-enabled}
+
+プライマリリージョンで既に高度なネットワーク構成が有効になっている場合は、次の手順に従います。
+
+1. 専用のAEM IP アドレスが許可リストに表示されるようにインフラストラクチャをロックダウンした場合は、そのインフラストラクチャ内の拒否ルールを一時的に無効にすることをお勧めします。 この処理が行われない場合、新しい地域の IP アドレスからの要求が、お客様独自のインフラストラクチャによって拒否される短い期間が発生します。 完全修飾ドメイン名 (FQDN) (`p1234.external.adobeaemcloud.com`例えば、すべてのAEM地域は同じ FQDN からの高度なネットワークトラフィックを引き出すので、
+1. 高度なネットワークドキュメントに記載されているように、 Cloud Manager のネットワークインフラストラクチャの作成 API へのPOST呼び出しを通じて、セカンダリ地域のプログラム範囲のネットワークインフラストラクチャを作成します。 ペイロードの JSON 設定のプライマリ領域に対する唯一の違いは、region プロパティです
+1. AEMトラフィックを許可するために、インフラストラクチャを IP でロックダウンする必要がある場合は、 `p1234.external.adobeaemcloud.com`. 地域ごとに 1 つのが必要です。
+
+#### どの地域にもまだ構成されていない高度なネットワーク {#not-yet-configured}
+
+この手順は、前述の手順とほとんど同じです。 ただし、実稼動環境がまだ高度なネットワーク機能を有効にしていない場合は、まずステージング環境で有効にして設定をテストすることができます。
+
+1. へのPOSTコールで、すべての地域のネットワークインフラストラクチャを構築 [Cloud Manager ネットワークインフラストラクチャ作成 API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). ペイロードの JSON 設定のプライマリ領域に対する相対的な違いは、region プロパティのみです。
+1. ステージング環境の場合は、次を実行して、環境範囲を指定した高度なネットワークを有効にし、構成します。 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. 詳しくは、 API ドキュメントを参照してください。 [ここ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
+1. 必要に応じて、外部インフラストラクチャをロックダウンします。FQDN（例： ）でロックダウンします。 `p1234.external.adobeaemcloud.com`) をクリックします。 それ以外の場合は、IP アドレスでおこなうことができます
+1. ステージング環境が期待どおりに動作する場合は、実稼動環境用に環境範囲を定めた高度なネットワーク設定を有効にして設定します。
+
+#### VPN {#vpn-regions}
+
+手順は、専用の出力 IP アドレスの指示とほとんど同じです。 唯一の違いは、主要地域とは異なる設定で地域プロパティが設定される点に加えて、 `connections.gateway` フィールドは、組織が運用する別の VPN エンドポイント（地理的に新しい地域に近い場合もあります）にルーティングするように設定することもできます。

@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service のアーキテクチャの概要
 description: Adobe Experience Manager as a Cloud Service のアーキテクチャの概要。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: c67be5b7f5dc454511753faa16bc46b10e72dde4
+source-git-commit: 1e9ca4f18c3698dbf4bbc0f104559e14f429e28e
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 96%
+source-wordcount: '1827'
+ht-degree: 94%
 
 ---
 
@@ -124,7 +124,15 @@ AEM as a Cloud Service では、次の 2 種類のプログラムが最初から
       * Assets の統合と処理には、専用のアセットコンピューティングサービスが使用されます。
    * プレビュー層は、1 つのプレビューノードで構成されます。これは、パブリッシュ層に公開する前のコンテンツの品質保証に使用されます。
 
-   * パブリッシュ層は、1 つのパブリッシュファーム内の 2 つ以上のノードで構成されます。ノードは互いに独立して動作できます。各ノードは、AEM パブリッシャーと、AEM Dispatcher モジュールを備えた Web サーバーで構成されます。サイトトラフィックのニーズに合わせて、規模が自動的に拡大／縮小されます。
+   * パブリッシュ層は、1 つのパブリッシュファーム内の 2 つ以上のノードで構成されます。
+
+      * 各ノードは、互いに独立して動作することができます。
+
+      * 各ノードは、AEM パブリッシャーと、AEM Dispatcher モジュールを備えた Web サーバーで構成されます。
+
+      * サイトトラフィックのニーズに合わせて、規模が自動的に拡大／縮小されます。
+
+      * ただし、デフォルトでは、プライマリリージョンには 1 つのパブリッシュファームが存在します [追加の公開地域](/help/operations/additional-publish-regions.md) はライセンスを受けることができます。
 
       * エンドユーザーつまりサイト訪問者は、AEM パブリッシュサービスを通じて Web サイトにアクセスします。
 
