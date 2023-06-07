@@ -3,10 +3,10 @@ title: AEM での GraphiQL IDE の使用
 description: Adobe Experience Manager で GraphiQL IDE を使用する方法について説明します。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 4f2b5fa59d3c68dd1244fa5b2a8dc30d848ba4a4
+source-git-commit: 6063c587c1d65587c44e551f3a5c2f3c34ced011
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 100%
+source-wordcount: '1147'
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,6 @@ ht-degree: 100%
 >[!NOTE]
 >GraphiQL IDE を使用する前に、[設定ブラウザー](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)で[エンドポイントを設定](/help/headless/graphql-api/graphql-endpoint.md)しておく必要があります。
 
-
 **GraphiQL** ツールを使用すると、次のことが可能になるので、GraphQL クエリをテストおよびデバッグできます。
 * クエリに使用する Sites 設定に適した&#x200B;**エンドポイント**&#x200B;を選択する
 * 新しいクエリを直接入力する
@@ -31,7 +30,7 @@ ht-degree: 100%
 * クエリを実行して結果をすぐに確認する
 * **クエリ変数**&#x200B;を管理する
 * **永続クエリ**&#x200B;を保存して管理する
-* **永続クエリ**&#x200B;を公開または非公開にする（`dev-publish` との間など）
+* 公開または非公開 **永続クエリ**&#x200B;を **公開** または **プレビュー** サービス例：to/from `dev-publish`
 * 以前のクエリの&#x200B;**履歴**&#x200B;を確認する
 * **ドキュメントエクスプローラー**&#x200B;を使用してドキュメントにアクセスし、使用可能な方法を学び理解するのに役立てる
 
@@ -131,13 +130,27 @@ max-age と同じですが、特にプロキシキャッシュに適用されま
 
 1. 「**保存**」を選択して、変更内容を保持します。
 
-## 永続クエリの公開 {#publishing-persisted-queries}
+## 永続化されたクエリの公開とプレビュー {#publishing-previewing-persisted-queries}
 
-リスト（左パネル）から永続クエリを選択したら、「**公開**」アクションと「**非公開**」アクションを使用できます。これにより、パブリッシュ環境（`dev-publish` など）に対してアクティブ化され、テスト時にアプリケーションから簡単にアクセスできるようになります。
+リスト（左パネル）から永続化されたクエリを選択したら、 **公開** アクション。
+
+これにより、選択した環境に対するクエリがアクティブ化されます。 次のいずれかを選択できます： **公開** 環境 ( 例： `dev-publish`) または **プレビュー** 環境を使用して、テスト時にアプリケーションから簡単にアクセスできます。
+
+![GraphiQL — 公開済みの永続クエリ](assets/cfm-graphiql-publish.png "GraphiQL — 公開永続クエリ")
 
 >[!NOTE]
 >
 >永続クエリのキャッシュ `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} の定義では、デフォルト値は 2 時間（7200 秒）になっています。
+
+## 永続化されたクエリの非公開 {#unpublishing-persisted-queries}
+
+公開時と同様に、リスト（左パネル）から持続的なクエリを選択すると、 **非公開** アクション。
+
+これにより、選択した環境からクエリが非アクティブ化されます。どちらか **公開** 環境、または **プレビュー** 環境。
+
+>[!NOTE]
+>
+>また、潜在的な問題を回避するために、クライアントアプリケーションに必要な変更を加えたことを確認する必要があります。
 
 ## URL をコピーしてクエリに直接アクセスする {#copy-url}
 

@@ -2,10 +2,10 @@
 title: コンテンツフラグメントの使用方法（アセット - コンテンツフラグメント）
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントで、ページオーサリングやヘッドレス配信に最適な、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: ca41657057211cb0736a866771253b166fa139b4
+source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
 workflow-type: tm+mt
-source-wordcount: '2063'
-ht-degree: 66%
+source-wordcount: '2135'
+ht-degree: 65%
 
 ---
 
@@ -46,6 +46,7 @@ Adobe Experience Manager（AEM）as a Cloud Service でコンテンツフラグ�
 * [関連コンテンツの使用](/help/assets/content-fragments/content-fragments-assoc-content.md) - 関連コンテンツを追加します。
 * [メタデータ - フラグメントのプロパティ](/help/assets/content-fragments/content-fragments-metadata.md) - フラグメントのプロパティを表示および編集します。
 * [コンテンツフラグメントと GraphQL を併用してアプリケーション用コンテンツを配信](/help/assets/content-fragments/content-fragments-graphql.md)します。その一助として、[JSON 出力](/help/assets/content-fragments/content-fragments-json-preview.md)をプレビューできます。
+* [MSM for Assets を使用したコンテンツフラグメントの再利用](#reusing-content-fragments-with-msm-assets)
 
 >[!NOTE]
 >
@@ -84,7 +85,7 @@ Adobe Experience Manager（AEM）as a Cloud Service でコンテンツフラグ�
 >
 >エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
 >
->詳しくは、 [AEMのコンテンツフラグメントとエクスペリエンスフラグメントについて](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ja#content-fragments).
+>さらなる情報については、[AEM のコンテンツフラグメントとエクスペリエンスフラグメントについて](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ja#content-fragments)も参照してください。
 
 ## コンテンツフラグメントとコンテンツサービス {#content-fragments-and-content-services}
 
@@ -109,6 +110,16 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 >[!NOTE]
 >
 >AEM はフラグメントコンテンツの翻訳もサポートしています。詳しくは、「[アセットの翻訳](/help/assets/translate-assets.md)」を参照してください。
+
+## MSM for Assets でのコンテンツフラグメントの再利用 {#reusing-content-fragments-with-msm-assets}
+
+を通じてアクセスする場合 **Assets** コンソールでは、MSM を使用してフラグメントのライブコピーを作成できます。
+
+詳しくは、 [MSM for Assets を使用したコンテンツフラグメントの再利用](/help/assets/reuse-assets-using-msm.md).
+
+>[!CAUTION]
+>
+>MSM（コンテンツフラグメントのコピーを作成する）を使用する場合は、 **ユニーク** 制約は、それぞれの [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md).
 
 ## コンテンツタイプ {#content-type}
 
@@ -256,7 +267,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 >[!CAUTION]
 >
->中間コンテンツはページコンテンツです。 コンテンツフラグメントには保存されません。
+>中間コンテンツはページコンテンツです。コンテンツフラグメントには保存されません。
 
 ### フラグメントを利用するための要件 {#required-by-fragments}
 

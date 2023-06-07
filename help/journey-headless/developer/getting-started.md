@@ -2,10 +2,10 @@
 title: AEM Headless as a Cloud Service - はじめに
 description: ここでは、AEM ヘッドレスデベロッパージャーニーのこの部分では、AEM ヘッドレスの前提条件について説明します。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 28ed228d02e09f273fa8713bad0f7194e1e25cf0
 workflow-type: tm+mt
-source-wordcount: '3058'
-ht-degree: 100%
+source-wordcount: '3090'
+ht-degree: 98%
 
 ---
 
@@ -45,6 +45,10 @@ AEM 内でヘッドレスプロジェクトを定義する前に、AEM の基本
 ### パブリッシュインスタンス {#publish}
 
 オーサーインスタンスでコンテンツを作成したら、他のサービスで利用できるように、コンテンツを公開する必要があります。パブリッシュインスタンスには、公開されたすべてのコンテンツが含まれます。
+
+### プレビューサービス {#preview}
+
+パブリッシュインスタンスに公開する前に、コンテンツフラグメントを **プレビューサービス** テストとレビューのために使用します。 これは、 **コンテンツフラグメント** コンソール。
 
 ### レプリケーション {#replication}
 

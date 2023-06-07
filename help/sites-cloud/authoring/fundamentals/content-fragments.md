@@ -2,7 +2,7 @@
 title: コンテンツフラグメント
 description: Adobe Experience Manager as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、使用が可能になります。
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 7ce05d282d553c5552cd828d08aaf6b7b5fb4e05
+source-git-commit: 3f7c9240a81062c335c33b0e59971de43cacf87b
 workflow-type: tm+mt
 source-wordcount: '1227'
 ht-degree: 100%
@@ -183,7 +183,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 フラグメントを公開済みの web ページで使用できるようにするには、フラグメントを公開する必要があります。
 
-* フラグメントは、[フラグメントをコンテンツフラグメントコンソールで作成](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment)した後に公開できます。
+* フラグメントは、[フラグメントをコンテンツフラグメントコンソールで作成](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)した後に公開できます。
 * 公開されるページに&#x200B;*非公開のフラグメント*&#x200B;があると、そのタイミングでフラグメントも公開できます。
 
 ## コンテンツフラグメントの書き出し {#exporting-content-fragments}

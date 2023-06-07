@@ -3,10 +3,10 @@ title: 永続的な GraphQL クエリ
 description: Adobe Experience Manager as a Cloud Service で GraphQL クエリを永続化してパフォーマンスを最適化する方法を説明します。クライアントアプリケーションで HTTP GET メソッドを使用して永続的クエリをリクエストでき、応答を Dispatcher および CDN レイヤーにキャッシュできるので、最終的にクライアントアプリケーションのパフォーマンスが向上します。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 0cac51564468c414866d29c8f0be82f77625eaeb
+source-git-commit: c3d7cd591bce282bb4d3b5b5d0ee2e22fd337a83
 workflow-type: tm+mt
-source-wordcount: '1541'
-ht-degree: 100%
+source-wordcount: '1687'
+ht-degree: 90%
 
 ---
 
@@ -354,7 +354,11 @@ curl -u admin:admin -X POST \
 
 >[!NOTE]
 >
->OSGi 設定は、パブリッシュインスタンスにのみ適しています。この設定はオーサーインスタンス上に存在しますが、無視されます。
+>キャッシュ制御の場合、OSGi 設定はパブリッシュインスタンスにのみ適しています。 この設定はオーサーインスタンス上に存在しますが、無視されます。
+
+>[!NOTE]
+>
+>この **永続的なクエリサービス設定** は、 [クエリ応答コードの設定](#configuring-query-response-code).
 
 パブリッシュインスタンスのデフォルトの OSGi 設定は次のとおりです。
 
@@ -370,6 +374,26 @@ curl -u admin:admin -X POST \
    {style="table-layout:auto"}
 
 * 使用できない場合、OSGi 設定は[パブリッシュインスタンスのデフォルト値](#publish-instances)を使用します。
+
+## クエリ応答コードの設定 {#configuring-query-response-code}
+
+デフォルトでは、 `PersistedQueryServlet` を送信 `200` 応答を返します（実際の結果に関係なく）。
+
+以下が可能です。 [OSGi 設定の指定](/help/implementing/deploying/configuring-osgi.md) の **永続的なクエリサービス設定** が返すステータスコードを制御する `/execute.json/persisted-query` エンドポイントに設定されます。
+
+>[!NOTE]
+>
+>この **永続的なクエリサービス設定** は、 [キャッシュの管理](#cache-osgi-configration).
+
+フィールド `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) は、必要に応じて定義できます。
+
+* `false` （デフォルト値）:永続化されたクエリが成功したかどうかは関係ありません。 この `/execute.json/persisted-query` はステータスコードを返します。 `200` そして `Content-Type` 返されるヘッダーは `application/json`.
+
+* `true`:エンドポイントが返されます `400` または `500` 必要に応じて、永続化されたクエリの実行時に何らかのエラーが発生する場合。 また、 `Content-Type` は `application/graphql-response+json`.
+
+   >[!NOTE]
+   >
+   >詳しくは、 https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codesを参照してください。
 
 ## アプリで使用するクエリ URL のエンコード {#encoding-query-url}
 

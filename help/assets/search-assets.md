@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: ca58b4df232dc658d7843ede2386710c4da43fcb
 workflow-type: tm+mt
-source-wordcount: '4954'
-ht-degree: 92%
+source-wordcount: '5094'
+ht-degree: 89%
 
 ---
 
@@ -411,6 +411,10 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 * 1 つ以上のアセットをダウンロードする。
 * デスクトップアクションを使用してデスクトップアプリケーションでアセットを開く。
 * スマートコレクションを作成する。
+* バージョンを作成します。
+* ワークフローを開始
+* アセットの関連付けまたは関連付け解除
+* 検索を実行した後に自動的に表示されるフィルターパネルを使用してフィルターを適用し、検索結果を絞り込みます。
 
 ### 検索結果の並べ替え {#sort}
 
@@ -450,6 +454,18 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 * 検索条件に基づいてコレクション内のアセットが決まる動的リスト（スマートコレクション）。
 
 検索条件に基づいて、スマートコレクションを作成できます。**[!UICONTROL フィルター]**&#x200B;パネルで「**[!UICONTROL ファイル]**」を選択し、「**[!UICONTROL スマートコレクションを保存]**」をクリックします。詳しくは、[コレクションの管理](/help/assets/manage-collections.md)を参照してください。
+
+### バージョンを作成します。 {#create-version}
+
+検索結果に表示されるアセットのバージョンを作成します。 アセットを選択し、 **[!UICONTROL 作成]** > **[!UICONTROL バージョン]**. オプションのラベルまたはコメントを追加し、「 **[!UICONTROL 作成]**. また、複数のアセットを選択して、それらのアセットのバージョンを同時に作成することもできます。
+
+### ワークフローの作成 {#create-workflow}
+
+「バージョンを作成」機能と同様に、検索結果に表示されるアセットのワークフローを作成することもできます。 アセットを選択し、 **[!UICONTROL 作成]** > **[!UICONTROL ワークフロー]**. ワークフローモデルを選択し、ワークフローのタイトルを指定して、「 **[!UICONTROL 開始]**.
+
+### アセットの関連付けと関連付け解除 {#relate-unrelate-assets}
+
+検索結果に表示されるアセットの関連付けと関連付け解除 アセットを選択し、 **[!UICONTROL 関連付け]** または **[!UICONTROL 関連付けを解除]**.
 
 ## 予期しない検索結果と問題 {#unexpected-results}
 

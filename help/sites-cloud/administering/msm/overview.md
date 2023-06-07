@@ -4,10 +4,10 @@ description: AEM の強力なライブコピーとマルチサイトマネージ
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
 workflow-type: tm+mt
-source-wordcount: '2683'
-ht-degree: 94%
+source-wordcount: '2710'
+ht-degree: 93%
 
 ---
 
@@ -29,6 +29,10 @@ ht-degree: 94%
 * [ライブコピーの同期の設定](live-copy-sync-config.md)
 * [MSM ロールアウトの競合](rollout-conflicts.md)
 * [MSM のベストプラクティス](best-practices.md)
+
+>[!NOTE]
+>
+>MSM は、コンテンツフラグメントを含むアセットにも使用できます。 詳しくは、 [MSM for Assets を使用したコンテンツフラグメントの再利用](/help/assets/reuse-assets-using-msm.md) （Assets コンソールからのみ使用できます）。
 
 ## 考えられるシナリオ {#possible-scenarios}
 

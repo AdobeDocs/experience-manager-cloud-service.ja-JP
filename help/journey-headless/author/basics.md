@@ -2,10 +2,10 @@
 title: オーサリングの基本
 description: コンテンツフラグメントを使用したヘッドレス CMS のコンテンツオーサリングの概念と仕組みについて説明します。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
+source-git-commit: 37a2afca3131acceebbd7732844fa5953a7fd4fc
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 100%
+source-wordcount: '1711'
+ht-degree: 95%
 
 ---
 
@@ -28,16 +28,19 @@ ht-degree: 100%
 
 コンテンツフラグメントについて理解する前に、AEM の使用方法を簡単に説明します。実際には、ログインしてシステムを実際に使用してみるのが一番です。
 
-### オーサーとパブリッシュ {#author-preview-publish}
+### オーサー、プレビュー、パブリッシュ {#author-preview-publish}
 
-AEM インストールは、通常、少なくとも次の 2 つの環境で構成されます。
+AEMのインストールは、通常、次の 3 つの環境で構成されます。
 
 * 作成者
 * 公開
+* プレビュー
 
 ログインし、オーサー環境を使用してコンテンツを生成します。準備が整ったら、コンテンツを公開して、一般に利用できるようにします。ヘッドレスの場合は、他のアプリケーションに対して行われ、web ページの場合は、web 上の読者に対して行われます。
 
 詳しくは、「オーサリングに関する概念」を参照してください。
+
+次の **コンテンツフラグメント** コンソールで、 **プレビューサービス**（公開前のテストおよびプレビュー用） 詳しくは、フラグメントの公開とプレビューを参照してください。
 
 ### ログイン {#signing-in}
 
@@ -263,9 +266,13 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 フラグメントが完成したら&#x200B;**公開**&#x200B;して、ヘッドレスアプリケーションで利用できるようにします。
 
-公開アクションはエディターで（または、**コンテンツフラグメント**&#x200B;コンソールまたは **Assets** コンソールのツールバーから）利用できます。
+エディターでは、公開アクションを使用できます。
 
 ![コンテンツフラグメントエディター - マイフラグメント](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
+
+>[!NOTE]
+>
+>また、 **Assets** または **コンテンツフラグメント** コンソール。
 
 ## 次の手順 {#whats-next}
 
@@ -289,21 +296,26 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
    * [パネルセレクター](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
-   * 公開
-
-      * [クイック公開](/help/assets/manage-publication.md#quick-publish)
-
-      * [公開を管理](/help/assets/manage-publication.md#manage-publication)
-
 * [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
    * [コンテンツフラグメントの管理](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-      * [アセットフォルダーへの設定の適用](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+   * [アセットフォルダーへの設定の適用](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [コンテンツフラグメントの作成](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [コンテンツフラグメントの作成](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+
    * [バリエーション - コンテンツフラグメントのオーサリング](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
+   * 公開
+
+      * エディターから、または **Assets** コンソール
+
+         * [クイック公開](/help/assets/manage-publication.md#quick-publish)
+
+         * [公開を管理](/help/assets/manage-publication.md#manage-publication)
+      * 次の **コンテンツフラグメント** コンソール
+
+         * [コンテンツフラグメントの公開とプレビュー](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
    * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
       * [コンテンツフラグメントモデル - データタイプ](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
@@ -311,6 +323,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
       * [コンテンツフラグメントモデル - プロパティ](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
       * [コンテンツフラグメントモデル - アセットフォルダーでのコンテンツフラグメントモデルの許可](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+
 
 
 * はじめる前に

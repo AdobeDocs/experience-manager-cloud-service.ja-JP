@@ -1,21 +1,20 @@
 ---
 title: 公開の管理
 description: Experience Manager Assets、Dynamic Media および Brand Portal へのアセットの公開または非公開
-contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 8466595f988d3a10806d4654885c14a622d14057
 workflow-type: tm+mt
-source-wordcount: '1465'
-ht-degree: 96%
+source-wordcount: '1630'
+ht-degree: 84%
 
 ---
 
 # Experience Manager Assets での公開の管理 {#manage-publication-in-aem}
 
-[!DNL Adobe Experience Manager Assets] 管理者は、アセットやアセットを含んだフォルダーをオーサーインスタンスから [!DNL Experience Manager Assets]、[!DNL Dynamic Media] および [!DNL Brand Portal]. に公開できます。また、アセットまたはフォルダーの公開ワークフローを後の日時にスケジューリングすることもできます。公開すると、ユーザーはアセットにアクセスでき、さらに他のユーザーにアセットを配布できます。デフォルトでは、アセットやフォルダーを [!DNL Experience Manager Assets] に公開できます。ただし、[!DNL Experience Manager Assets] を設定して [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=ja) と [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=ja) への公開を有効にすることができます。
+[!DNL Adobe Experience Manager Assets] 管理者は、アセットやアセットを含んだフォルダーをオーサーインスタンスから [!DNL Experience Manager Assets]、[!DNL Dynamic Media] および [!DNL Brand Portal]. に公開できます。また、アセットやフォルダーを後で公開するようにスケジュールを設定することもできます。 公開すると、ユーザーはアセットにアクセスでき、さらに他のユーザーにアセットを配布できます。デフォルトでは、アセットやフォルダーを [!DNL Experience Manager Assets] に公開できます。ただし、[!DNL Experience Manager Assets] を設定して [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=ja) と [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=ja) への公開を有効にすることができます。
 
 [!DNL Experience Manager Assets] インターフェイスで使用できる「**[!UICONTROL クイック公開]**」または「**[!UICONTROL 公開を管理]**」オプションを使用して、アセットレベルまたはフォルダーレベルでアセットを公開または非公開にすることができます。その後、[!DNL Experience Manager Assets] で元のアセットやフォルダーに変更を加えても、その変更は、[!DNL Experience Manager Assets] から再公開するまでパブリッシュインスタンスには反映されません。これにより、処理中の変更はパブリッシュインスタンスでは使用できなくなります。管理者が公開した承認済みの変更のみがパブリッシュインスタンスで提供されます。
 
@@ -24,6 +23,7 @@ ht-degree: 96%
 * [後からのアセットの公開](#publish-assets-later)
 * [Dynamic Media へのアセットの公開](#publish-assets-to-dynamic-media)
 * [Brand Portal へのアセットの公開](#publish-assets-to-brand-portal)
+* [公開をリクエスト](#request-publication)
 * [制限事項とヒント](#limitations-and-tips)
 
 ## 「クイック公開」を使用したアセットの公開 {#quick-publish}
@@ -61,7 +61,7 @@ ht-degree: 96%
 
 ### コンテンツの追加 {#add-content}
 
-[!DNL Experience Manager Assets] に公開する場合は、公開リストにさらにコンテンツ（アセットやフォルダー）を追加できます。DAM リポジトリー全体からリストにアセットやフォルダーをさらに追加できます。コンテンツをさらに追加するには、「**[!UICONTROL コンテンツを追加]**」ボタンをクリックします。
+[!DNL Experience Manager Assets] に公開する場合は、公開リストにさらにコンテンツ（アセットやフォルダー）を追加できます。DAM リポジトリー全体からリストにアセットやフォルダーをさらに追加できます。クリック **[!UICONTROL コンテンツを追加]** ボタンをクリックして、コンテンツを追加します。
 
 フォルダーから複数のアセットを一度に追加したり、複数のフォルダーを一度に追加したりできます。しかし、複数のフォルダーからアセットを一度に追加することはできません。
 
@@ -96,7 +96,7 @@ Only the selected folder content and references are published.
 
 上図で、「**[!UICONTROL 公開ターゲット]**」属性の値が異なることがわかります。[!DNL Experience Manager Assets] への公開（`Destination: Publish`）を選択したことを思い出してください。表示では、フォルダーと 1 つのアセットのみ `AEM` に公開され、他の 2 つのアセットは `AEM` と `Dynamic Media` の両方に公開されますが、これはなぜでしょうか。
 
-ここで、フォルダープロパティの役割を理解しておく必要があります。フォルダーの **[!UICONTROL Dynamic Media Publishing Mode]** プロパティは、パブリッシュに重要な役割を果たします。 フォルダーのプロパティを表示するには、フォルダーを選択し、 **[!UICONTROL プロパティ]** をクリックします。 アセットの場合は、アセットの親フォルダーのプロパティを参照します。
+ここで、フォルダープロパティの役割を理解しておく必要があります。フォルダーの **[!UICONTROL Dynamic Media 公開モード]**&#x200B;プロパティは、公開で重要な役割を果たします。フォルダーのプロパティを表示するには、フォルダーを選択し、ツールバーの「**[!UICONTROL プロパティ]**」をクリックします。アセットの場合は、アセットの親フォルダーのプロパティを参照します。
 
 定義されている&#x200B;**[!UICONTROL 宛先]**&#x200B;と **[!UICONTROL Dynamic Media 公開モード]**&#x200B;に応じて公開がどのように行われるかを次の表に示します。
 
@@ -177,24 +177,27 @@ Only the selected folder content and references are published.
 * [Brand Portal へのフォルダーの公開](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=ja#publish-folders-to-brand-portal)
 * [Brand Portal へのコレクションの公開](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=ja#publish-collections-to-brand-portal)
 
+## 公開をリクエスト {#request-publication}
+
+この `Request Publication` オプションは、アセットを公開する前に、そのアセットのワークフローを認証する際に役立ちます。 [!DNL AEM] Assets 環境 [!DNL AEM] は、様々なユーザーに異なるレベルの権限を提供します。 次の場合、 *投稿者* この訪問者はアセットをアップロードしていますが、アップロードを検証するまでアセットを公開できません。 また、は *管理者* アセットの読み取りワークフローと書き込みワークフローを管理できます。
+
+「公開をリクエスト」オプションは、次のユーザーが使用できます。
+* **寄稿者：** 以下に貢献できるユーザーの場合： [!DNL AEM] Assets の場合、 [!DNL AEM] Assets ワークフロー `Manage publication` 」ボタンが非表示になっています。 投稿者は、アセットを追加することによってのみ投稿できますが、投稿したり、ワークフローに対する読み取りアクセス権を持つことはできません。
+
+* **ワークフローユーザ：** このユーザーはアセットを公開できませんが、ワークフローに対する読み取りアクセス権があります。 ワークフローユーザーは、次の操作を実行できます。
+   * 公開をリクエスト
+   * 表示 `Manage publication` ボタン
+   * ワークフローのスケジュールを設定し、オプションを確認する `schedule now` および `schedule later`
+
+* **管理者：** 管理者タイプのユーザーは、アセットの全体的なワークフローステップを管理できます。 `Manage publication` ボタンが表示されます。 宛先の場合 `publish` 「 」が選択されている場合、後でアセットをワークフローステップ用にスケジュールできます。
+
+>[!NOTE]
+>
+>If [!DNL Dynamic Media] が宛先として選択されている場合、ワークフローステップは無効になっています。 **ワークフローユーザー** および **admin** ユーザー。
+
 ## 制限事項とヒント {#limitations-and-tips}
 
-* 「[!UICONTROL 公開を管理]」のオプションは、レプリケーション権限を持つユーザーアカウントでのみ使用できます。
+* `Manage publication` は、ワークフローに対する読み取り権限を持つユーザーが使用できます。
 * 空のフォルダーは公開されません。
 * 処理中のアセットを公開すると、元のコンテンツのみが公開されます。 処理中のレンディションは失われます。処理が完了するまで待ってから公開するか、処理の完了後にアセットを公開し直してください。
 * 複雑なアセットを非公開にする場合は、アセットだけを非公開にします。参照は他の公開済みアセットから参照されている可能性があるので、非公開にしないでください。
-
-**関連情報**
-
-* [アセットを翻訳](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットの検索](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
-* [アセットレポート](asset-reports.md)
-* [メタデータスキーマ](metadata-schemas.md)
-* [アセットのダウンロード](download-assets-from-aem.md)
-* [メタデータの管理](manage-metadata.md)
-* [検索ファセット](search-facets.md)
-* [コレクションの管理](manage-collections.md)
-* [一括メタデータ読み込み](metadata-import-export.md)

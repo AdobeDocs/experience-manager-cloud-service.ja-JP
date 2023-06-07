@@ -3,10 +3,10 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 9c4d416b37be684aae37d42a02cc86dfa87fbc2f
+source-git-commit: fa178192d74dfa9eb44835e31a111daf00f6d7d1
 workflow-type: tm+mt
-source-wordcount: '4769'
-ht-degree: 86%
+source-wordcount: '4789'
+ht-degree: 97%
 
 ---
 
@@ -134,12 +134,16 @@ GraphQL は GET リクエストもサポートしていますが、永続クエ�
 
 また、[GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) を使用して、GraphQL クエリのテストとデバッグを行うこともできます。
 
-## オーサー環境とパブリッシュ環境の使用例 {#use-cases-author-publish-environments}
+## オーサー、プレビュー、パブリッシュの使用例 {#use-cases-author-preview-publish}
 
 使用例は、AEM as a Cloud Service 環境のタイプに応じて異なる場合があります。
 
 * パブリッシュ環境の使用目的：
    * JS アプリケーションのデータのクエリ（標準の使用例）
+
+* プレビュー環境使用先：
+   * パブリッシュ環境にデプロイする前にクエリをプレビューします
+      * JS アプリケーションのデータのクエリ（標準の使用例）
 
 * オーサー環境の使用目的：
    * 「コンテンツ管理用」のデータのクエリ：
@@ -709,57 +713,57 @@ query {
 
 Web に最適化された画像配信を使用すると、Graphql クエリを使用して次のことができます。
 
-* AEM Asset イメージへの URL の要求
+* AEM Asset 画像に URL をリクエストする
 
-* 画像の特定のレンディションが自動的に生成されて返されるように、クエリでパラメーターを渡します
+* 画像の特定のレンディションが自動的に生成されて返されるように、クエリでパラメーターを渡す
 
    >[!NOTE]
    >
-   >指定されたレンディションはAEM Assetsに保存されていません。 レンディションが生成され、短期間キャッシュに保持されます。
+   >指定されたレンディションは AEM Assets に保存されません。レンディションは生成され、短期間キャッシュに保持されます。
 
 * JSON 配信の一部として URL を返す
 
-AEMを使用して、次のことができます。
+AEM を使用して、次のことができます。
 
-* パス [Web に最適化された画像配信](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) をGraphQLクエリに追加します。
+* [Web に最適化された画像配信](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=ja)を GraphQL クエリに渡す。
 
-つまり、クエリの実行中に、これらのイメージに対するGETリクエストの URL パラメーターと同じ方法でコマンドが適用されます。
+つまり、クエリの実行中に、これらの画像に対する GET リクエストの URL パラメーターと同じ方法でコマンドが適用されます。
 
 これにより、JSON 配信の画像レンディションを動的に作成できるので、これらのレンディションを手動で作成してリポジトリに保存する必要がなくなります。
 
-GraphQLのソリューションでは、次のことが可能です。
+GraphQL のソリューションでは、次のことが可能です。
 
-* use `_dynamicUrl` の `ImageRef` 参照
+* `ImageRef` 参照で `_dynamicUrl` を使用する
 
-* 追加 `_assetTransform` を、フィルターが定義されているリストヘッダーに追加します。
+* フィルターが定義されているリストヘッダーに `_assetTransform` を追加する
 
 ### 変換リクエストの構造 {#structure-transformation-request}
 
-`AssetTransform` (`_assetTransform`) は、URL 変換リクエストの作成に使用されます。
+`AssetTransform`（`_assetTransform`）は、URL 変換リクエストの作成に使用されます。
 
 構造と構文は次のとおりです。
 
-* `format`:拡張子でサポートされるすべての形式を持つ列挙：GIF, PNG, PNG8,JPG, PJPG, BJPG, WEBP, WEBPLL または WEBPLY
-* `seoName`:ノード名の代わりにファイル名として使用される文字列
-* `crop`:幅または高さを省略した場合、高さまたは幅が同じ値として使用されるフレームサブ構造
-   * `xOrigin`:フレームの x 起源（必須）
-   * `yOrigin`:フレームの y 起源（必須）
-   * `width`:フレームの幅
-   * `height`:枠の高さ
-* `size`:幅または高さを省略した場合、高さまたは幅が同じ値として使用されます
-   * `width`:寸法の幅
-   * `height`:寸法の高さ
-* `rotation`:サポートされているすべての回転の列挙：R90、R180、R270
-* `flip`:HORIZONTAL、VERTICAL、HORIZONTAL_AND_VERTICAL の列挙
-* `quality`:画質の割合を示す 1 ～ 100 の整数
-* `width`:出力画像の幅を定義する整数ですが、Image Generator では無視されます
-* `preferWebp`:webp が優先されるかどうかを示すブール値（デフォルト値は false）
+* `format`：拡張子でサポートされるすべての形式を持つ列挙（GIF、PNG、PNG8、JPG、PJPG、BJPG、WEBP、WEBPLL、WEBPLY）
+* `seoName`：ノード名の代わりにファイル名として使用される文字列
+* `crop`：フレームサブ構造。幅または高さが省略された場合、高さまたは幅が同じ値として使用されます
+   * `xOrigin`：フレームの x 原点（必須）
+   * `yOrigin`：フレームの y 原点（必須）
+   * `width`：フレームの幅
+   * `height`：フレームの高さ
+* `size`：寸法サブ構造。幅または高さが省略された場合、高さまたは幅が同じ値として使用されます
+   * `width`：寸法の幅
+   * `height`：寸法の高さ
+* `rotation`：サポートされているすべての回転の列挙（R90、R180、R270）
+* `flip`：HORIZONTAL、VERTICAL、HORIZONTAL_AND_VERTICAL の列挙
+* `quality`：画質の割合を示す 1～100 の整数
+* `width`：出力画像の幅を定義する整数ですが、画像ジェネレーターでは無視されます
+* `preferWebp`：webp が優先されるかどうかを示すブール値（デフォルト値は false）
 
-URL 変換は、次のすべてのクエリタイプで使用できます。パス別、リスト別またはページ分割別
+URL 変換は、パス別、リスト別またはページ分割別のすべてのクエリタイプで使用できます。
 
-### 完全なパラメーターを含む、Web に最適化された画像配信 {#web-optimized-image-delivery-full-parameters}
+### すべてのパラメーターを使用した web に最適化された画像配信 {#web-optimized-image-delivery-full-parameters}
 
-次に、完全なパラメーターセットを持つクエリ例を示します。
+すべてのパラメーターを使用したクエリ例を次に示します。
 
 ```graphql
 {
@@ -796,9 +800,9 @@ URL 変換は、次のすべてのクエリタイプで使用できます。パ�
 }
 ```
 
-### 単一のクエリ変数を使用して Web に最適化された画像配信 {#web-optimized-image-delivery-single-query-variable}
+### 単一のクエリ変数を使用した web に最適化された画像配信 {#web-optimized-image-delivery-single-query-variable}
 
-次の例は、単一のクエリ変数の使用を示しています。
+単一のクエリ変数を使用した例を次に示します。
 
 ```graphql
 query ($seoName: String!) {
@@ -835,9 +839,9 @@ query ($seoName: String!) {
 }
 ```
 
-### 複数のクエリ変数を使用した Web に最適化された画像配信 {#web-optimized-image-delivery-multiple-query-variables}
+### 複数のクエリ変数を使用した web に最適化された画像配信 {#web-optimized-image-delivery-multiple-query-variables}
 
-次の例は、複数のクエリ変数の使用を示しています。
+複数のクエリ変数を使用した例を次に示します。
 
 ```graphql
 query ($seoName: String!, $format: AssetTransformFormat!) {
@@ -874,13 +878,13 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 }
 ```
 
-### URL による Web に最適化された画像配信リクエスト {#web-optimized-image-delivery-request-url}
+### URL による web に最適化された画像配信リクエスト {#web-optimized-image-delivery-request-url}
 
-クエリを永続化されたクエリ（例えば、という名前で）として保存する場合 `dynamic-url-x`) を使用して、 [永続化されたクエリを直接実行](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query).
+クエリを永続化クエリとして保存した場合（例えば `dynamic-url-x` という名前を使用）、[永続化クエリを直接](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query)実行できます。
 
-例えば、以前のサンプルを（永続化されたクエリとして保存された）直接実行するには、次の URL を使用します。
+例えば、以前のサンプル（永続化されたクエリとして保存）を直接実行するには、次の URL を使用します。
 
-* [単一のパラメータ](#dynamic-image-delivery-single-specified-parameter);次の名前の永続クエリ `dynamic-url-x`
+* [単一のパラメーター](#dynamic-image-delivery-single-specified-parameter)、`dynamic-url-x` という名前の永続クエリ
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
 
@@ -888,24 +892,24 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
       ![パラメーターを使用した画像配信](assets/cfm-graphiql-sample-image-delivery.png "パラメーターを使用した画像配信")
 
-* [複数のパラメーター](#dynamic-image-delivery-multiple-specified-parameters);次の名前の永続クエリ `dynamic`
+* [複数のパラメーター](#dynamic-image-delivery-multiple-specified-parameters)、`dynamic` という名前の永続クエリ
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic;seoName=billiboy;format=GIF;`
 
       >[!CAUTION]
       >
-      >末尾の `;`は、パラメーターのリストを明確に終了するために必須です。
+      >末尾の `;` は、パラメーターのリストを明確に終了するために必須です。
 
 ### 画像配信の制限 {#image-delivery-limitations}
 
 次の制限があります。
 
-* クエリのすべての画像部分に適用される修飾子（グローバルパラメータ）
+* クエリのすべての画像部分に適用される修飾子（グローバルパラメーター）
 
 * ヘッダーのキャッシュ
 
-   * オーサーにキャッシュがありません
-   * パブリッシュ時のキャッシュ — 10 分の最大経過時間（クライアントは変更できません）
+   * オーサーにキャッシュされない
+   * パブリッシュのキャッシュ - 10 分の最大経過時間（クライアントは変更できません）
 
 ## AEM 用の GraphQL - 拡張機能の概要 {#graphql-extensions}
 
@@ -962,17 +966,17 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
          >指定されたバリエーションがコンテンツフラグメントに対して存在しない場合、マスターバリエーションが（フォールバック）デフォルトとして返されます。
 
          * [サンプルクエリ - 名前付きバリエーションを持つすべての都市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)を参照してください
-   * の場合 [画像配信](#image-delivery):
+   * [画像配信](#image-delivery)の場合：
 
-      * `_dynamicUrl`:の `ImageRef` 参照
+      * `_dynamicUrl`：`ImageRef` 参照で
 
-      * `_assetTransform`:フィルターを定義するリストヘッダーの
+      * `_assetTransform`：フィルターを定義するリストヘッダーで
 
       * 以下を参照してください。
 
-         * [完全なパラメーターを持つ画像配信用サンプルクエリ](#image-delivery-full-parameters)
+         * [すべてのパラメーターを使用した画像配信用サンプルクエリ](#image-delivery-full-parameters)
 
-         * [単一の指定パラメーターを持つ画像配信用のサンプルクエリ](#image-delivery-single-specified-parameter)
+         * [単一の指定パラメーターを使用した画像配信用サンプルクエリ](#image-delivery-single-specified-parameter)
    * 操作の場合：
 
       * `_operator`：特定の演算子（`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`、`STARTS_WITH`）を適用します

@@ -4,10 +4,10 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のコンテン
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 448851bdbcdf626ef1b8cf2765ba54bb0576bec8
+source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
 workflow-type: tm+mt
-source-wordcount: '2058'
-ht-degree: 66%
+source-wordcount: '2127'
+ht-degree: 65%
 
 ---
 
@@ -59,6 +59,7 @@ Adobe Experience Manager（AEM）as a Cloud Service でコンテンツフラグ�
 >* [レンダリングコンポーネントのコンテンツフラグメントの設定](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [AEM Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [コンテンツフラグメントと共に使用する AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
+>* [MSM for Assets を使用したコンテンツフラグメントの再利用](/help/assets/reuse-assets-using-msm.md) ( **Assets** コンソール )
 
 
 通信チャネルの数は年々増加しています。通常、チャネルとは配信メカニズムのことであり、次のどちらも指します。
@@ -87,7 +88,7 @@ Adobe Experience Manager（AEM）as a Cloud Service でコンテンツフラグ�
 >
 >エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
 >
->詳しくは、 [AEMのコンテンツフラグメントとエクスペリエンスフラグメントについて](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ja#content-fragments).
+>さらなる情報については、[AEM のコンテンツフラグメントとエクスペリエンスフラグメントについて](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ja#content-fragments)も参照してください。
 
 ## コンテンツフラグメントとコンテンツサービス {#content-fragments-and-content-services}
 
@@ -112,6 +113,16 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 >[!NOTE]
 >
 >AEM はフラグメントコンテンツの翻訳もサポートしています。詳しくは、「[アセットの翻訳](/help/assets/translate-assets.md)」を参照してください。
+
+## 公開とプレビュー {#publish-and-preview}
+
+すべてのコンテンツと同様に、最終的には、コンテンツフラグメントをに公開します。 **[パブリッシュサービス](/help/overview/architecture.md#runtime-architecture)**.
+
+それ以前に、コンテンツフラグメントを使用して配信されたエクスペリエンスをプレビューすることもできます。それには、 [コンテンツフラグメントの公開](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md##publishing-and-previewing-a-fragment) AEM **[プレビューサービス](/help/overview/architecture.md#runtime-architecture)**.
+
+>[!CAUTION]
+>
+>への公開 **プレビューサービス** は、 **コンテンツフラグメント** コンソール。
 
 ## コンテンツタイプ {#content-type}
 
@@ -261,7 +272,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 >[!CAUTION]
 >
->中間コンテンツはページコンテンツです。 コンテンツフラグメントには保存されません。
+>中間コンテンツはページコンテンツです。コンテンツフラグメントには保存されません。
 
 ### フラグメントを利用するための要件 {#required-by-fragments}
 
