@@ -2,8 +2,8 @@
 title: テーマの作成および使用
 description: テーマとコアコンポーネントを使用して、アダプティブフォームのスタイルを設定し、視覚的に表現できます。任意の数のアダプティブフォームで、テーマを共有できます。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
-workflow-type: ht
+source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 100%
 
@@ -49,6 +49,7 @@ ht-degree: 100%
 * [Git リポジトリと Cloud Service Git リポジトリの基礎知識](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=jp#accessing-git)が必要です。
 
 キャンバステーマをカスタマイズするには、次の手順を実行します。
+
 1. [キャンバステーマをクローン](#1-download-canvas-theme-download-canvas-theme)
 1. [テーマの構造を理解する](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
 1. [package.json と package_lock.json の名前を変更する](#changename-packagelock-packagelockjson)

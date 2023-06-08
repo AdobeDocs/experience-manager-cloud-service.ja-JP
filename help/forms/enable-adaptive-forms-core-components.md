@@ -6,9 +6,7 @@ seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-hide: true
-hidefromtoc: true
-source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
+source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 6%
@@ -67,9 +65,9 @@ AEM Formsas a Cloud Service環境でアダプティブFormsコアコンポーネ
    <!-- Replace the version with the latest released version at https://github.com/adobe/aem-core-forms-components/tags -->
    
    <properties>
-       <core.forms.components.version>2.0.14</core.formscomponents.version>
-       <core.forms.components.af.version>2.0.14</core.forms.components.af.version>  
-       <core.wcm.components.version>2.21.2</core.wcmcomponents.version>
+       <core.wcm.components.version>2.22.10</core.wcm.components.version>
+       <core.forms.components.version>2.0.18</core.forms.components.version>
+       <core.forms.components.af.version>2.0.18</core.forms.components.af.version>
    </properties>
    ```
 

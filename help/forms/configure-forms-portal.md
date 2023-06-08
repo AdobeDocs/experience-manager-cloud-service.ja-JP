@@ -2,7 +2,7 @@
 title: Experience Manager Sites ページでフォームポータルを作成する方法
 description: フォームポータルを作成し、標準搭載のコアコンポーネントを AEM Sites ページで使用する方法を説明します。
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: a243664302c75fcb3125d68838353bd87cf24de3
+source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 92%
@@ -39,8 +39,11 @@ AEM Forms は、次のポータルコンポーネントを標準搭載してい�
 * リンク：このコンポーネントを使用すると、ページの任意の場所にフォームへのリンクを作成できます。
 
 AEM プロジェクトアーキタイプから [標準搭載のフォームポータルコンポーネントを読み込む](#import-forms-portal-components-aem-archetype) ことができます。 読み込んだ後、次の設定を実行します。
+
 * [外部ストレージの設定](#configure-azure-storage-adaptive-forms)
+
 * [フォームポータルコンポーネントを有効にする](#enable-forms-portal-components)
+
 * [フォームポータルコンポーネントの設定](#configure-forms-portal-components)
 
 ## フォームポータルコンポーネントの読み込み {#import-forms-portal-components-aem-archetype}
