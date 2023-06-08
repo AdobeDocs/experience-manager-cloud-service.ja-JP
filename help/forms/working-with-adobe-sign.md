@@ -5,11 +5,10 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 3d713304512065819ed16bbc9604f2cf9d1cf43f
+source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
 workflow-type: tm+mt
-source-wordcount: '3072'
-ht-degree: 98%
+source-wordcount: '3073'
+ht-degree: 97%
 
 ---
 
@@ -195,7 +194,11 @@ Cloud Service と署名する順序を選択するには：
       >
       >最初の受信者または唯一の受信者（受信者が 1 人の場合）のメールアドレスが、AEM Cloud Services の設定に使用された [!DNL Adobe Sign] アカウントと一致していないことを確認します。
 
-   * **[!UICONTROL 受信者の認証方法]：** Adobe Sign 契約書を開く前に受信者を認証する方法を指定します。電話、ナレッジベース、ソーシャル ID ベースの認証、[Government ID](https://helpx.adobe.com/jp/sign/using/adobesign-authentication-government-id.html) から選択できます。
+   * **[!UICONTROL 受信者の認証方法]：** Adobe Sign 契約書を開く前に受信者を認証する方法を指定します。電話、ナレッジベース、ソーシャル ID ベースの認証、 [政府 ID](https://helpx.adobe.com/jp/sign/using/adobesign-authentication-government-id.html) 対象 [!DNL Adobe Acrobat Sign].
+
+      <!-- 
+      For [!DNL Adobe Acrobat Sign for Government] you can choose between phone and knowledge-based authentication.
+      -->
    >[!NOTE]
    >
    >    * ソーシャル ID に基づく認証の場合、Facebook、Google、LinkedIn を使用した認証オプションがデフォルトで用意されています。これ以外のソーシャル認証プロバイダーを使用する場合は、[!DNL Adobe Sign] サポートまでお問い合わせください。
@@ -255,7 +258,7 @@ Adobe Sign 契約 ID（agreementId）は、アダプティブフォームの送�
          </afUnboundData>
          <afBoundData>
             <config xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-               <agreementID>3AAABLblqZhC2MWu7GFauKh45j_t2ih8mAtmbdIcNSl1HgQubhMJfDaDfylyN7NQiYRam_44ISKm45enIOafHqWZrdaxShf9r</agreementID>
+               <userName>3AAABLblqZhC2MWu7GFauKh45j_t2ih8mAtmbdIcNSl1HgQubhMJfDaDfylyN7NQiYRam_44ISKm45enIOafHqWZrdaxShf9r</userName>
                <dateOfBirth>0001-01-01</dateOfBirth>
             </config>
          </afBoundData>
@@ -311,6 +314,11 @@ Adobe Sign 契約 ID（agreementId）は、アダプティブフォームの送�
    * クラウド署名：トラストサービスプロバイダーがホストする[デジタル ID](https://helpx.adobe.com/jp/sign/kb/digital-certificate-providers.html) を使用して署名します。
    * Adobe Acrobat または Reader：ドキュメントをダウンロードして Adobe Acrobat または Reader で開き、スマートカード、USB トークン、ファイルベースのデジタル ID を使用して署名します。
 
+      <!-- 
+      >[!NOTE]
+      >
+      > * [!DNL Adobe Acrobat Sign for Government] can use Digitial Signature but can not use Cloud Signatures in the current version.
+      -->
    クラウド署名フィールドをアダプティブフォームに追加した後、次の手順を実行して設定プロセスを完了します。
 
    * [アダプティブフォームに対して Adobe Sign を有効にする](#enableadobsignforanadaptiveform)
