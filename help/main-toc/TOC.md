@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 7823f35e0b78584cfb17f0efed7f36e3a2cb408d
+source-git-commit: 0ef684cde1fe4fa47214fddf2c2a75d1743943e2
 workflow-type: tm+mt
-source-wordcount: '4049'
+source-wordcount: '4055'
 ht-degree: 98%
 
 ---
@@ -203,6 +203,9 @@ ht-degree: 98%
       + ベストプラクティスアナライザー {#best-practices-analyzer}
          + [概要](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [ベストプラクティスアナライザーの使用](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
+      + Content Transformer {#content-transformer}
+         + [概要](/help/journey-migration/content-transformer/overview.md)
+         + [Content Transformer の使用](/help/journey-migration/content-transformer/using.md)
       + コンテンツ転送ツール {#content-transfer-tool}
          + [概要](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [コンテンツ転送ツールの前提条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
