@@ -4,9 +4,9 @@ description: アダプティブフォームを容易に作成したり、シー�
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
 workflow-type: tm+mt
-source-wordcount: '3186'
+source-wordcount: '3182'
 ht-degree: 1%
 
 ---
@@ -277,4 +277,4 @@ Forms Portal Draft Prefill サービスを使用すると、保存されたア�
 * [アダプティブFormsに基づくコアコンポーネントのスタイル設定](using-themes-in-core-components.md)
 * [ルールエディターを使用して、アダプティブFormsに動的な動作を追加する](rule-editor.md)
 * [アダプティブフォームのレイアウトの変更](/help/sites-cloud/authoring/features/responsive-layout.md)
-* [レコードのドキュメントを生成](generate-document-of-record-core-components.md)
+

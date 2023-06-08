@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3a17f02b6544669e07adabfd4f50905eb6afd51e
+source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 40%
+source-wordcount: '1049'
+ht-degree: 39%
 
 ---
 
@@ -74,26 +74,23 @@ ht-degree: 40%
 
 * **[Microsoft SharePoint と Microsoft OneDrive にアダプティブフォームを送信](/help/forms/configuring-submit-actions.md)**：ビジネスユーザーの俊敏性を向上させ、新しいフォームを素早く起動し、送信されたデータを Microsoft SharePoint サイトや OneDrive フォルダーなどの毎日使用するツールに保存します。
 
-![Microsoft SharePoint と Microsoft OneDrive にアダプティブフォームを送信](/help/forms/assets/onedrive-and-sharepoint.jpg)
-
-
 ### [!DNL Forms] の機能プレリリース {#prerelease-features-forms}
 
-* Adobe Acrobat Signの統合とコンプライアンスの強化：AEM Formsは、Adobe Acrobat Sign for Government と統合され、e-Signatures の高度なレベルのコンプライアンスとセキュリティを、政府関連のアカウント（政府機関や機関）に対するアダプティブフォーム送信と共に提供するようになりました。
+* [Adobe Acrobat Signの統合とコンプライアンスの強化](/help/forms/adobe-sign-integration-adaptive-forms.md):AEM Formsは、Adobe Acrobat Sign for Government と統合され、e-Signatures の高度なレベルのコンプライアンスとセキュリティを、政府関連のアカウント（政府機関や機関）に対するアダプティブフォーム送信と共に提供するようになりました。
 
-Adobe Acrobat Sign for Government との統合により、パートナーや政府のお客様は、最もミッションクリティカルで機密性の高い業務の一部に対して、Adaptive Formsで電子署名を使用できます。 このセキュリティの追加層により、すべての電子署名が FedRAMP Moderate コンプライアンスに完全に準拠し、政府のお客様に安心を提供します。
+   Adobe Acrobat Sign for Government との統合により、パートナーや政府のお客様は、最もミッションクリティカルで機密性の高い業務の一部に対して、Adaptive Formsで電子署名を使用できます。 このセキュリティの追加層により、すべての電子署名が FedRAMP Moderate コンプライアンスに完全に準拠し、政府のお客様に安心を提供します。
 
-* AEM Sitesエディター内のアダプティブForms:AEM Sitesエディターを使用して、複数のフォームをすばやく作成し、サイトページに追加できるようになりました。 この機能を使用すると、コンテンツ作成者は、動的な動作、検証、データ統合、レコードのドキュメントの生成、ビジネスプロセスの自動化など、アダプティブフォームコンポーネントの機能を利用して、Sites ページ内にシームレスなデータ取得エクスペリエンスを作成できます。 以下の操作を実行できます。
+* [AEM Sitesエディター内のアダプティブForms](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md):AEM Sitesエディターを使用して、複数のフォームをすばやく作成し、サイトページに追加できるようになりました。 この機能を使用すると、コンテンツ作成者は、動的な動作、検証、データ統合、レコードのドキュメントの生成、ビジネスプロセスの自動化など、アダプティブフォームコンポーネントの機能を利用して、Sites ページ内にシームレスなデータ取得エクスペリエンスを作成できます。 以下の操作を実行できます。
 
-   * AEM SitesエディターでフォームコンポーネントをアダプティブFormsコンテナコンポーネントにドラッグ&amp;ドロップして、アダプティブフォームを作成します。
+   * フォームコンポーネントをAEM SitesエディターまたはエクスペリエンスフラグメントのアダプティブFormsコンテナコンポーネントにドラッグ&amp;ドロップして、アダプティブフォームを作成します。
    * AEM Sitesエディター内でアダプティブFormsウィザードを使用すると、任意のサイトページとは独立したフォームを作成でき、複数のページで自由にそのようなフォームを再利用できます。
    * 複数のフォームを Sites ページに追加し、ユーザーエクスペリエンスを合理化し、より柔軟に提供します。
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 * ルールエディターのカスタムエラーハンドラーによるエラー処理の強化：外部サービスから返されたエラーに応じて（クライアントライブラリを使用して）カスタム関数を呼び出し、エンドユーザーに合わせて応答を提供したり、サービスから返されたエラーに対して特定のアクションを実行したりできるようになりました。 例えば、特定のエラーコードに対してバックエンドでカスタムワークフローを呼び出したり、サービスが停止していることを顧客に通知したりできます。
 
-これにより、OOTB エラーハンドラとの下位互換性を持つ標準ベースのエラー応答を導入し、柔軟性と制御性を高め、全体的なエラー処理機能を改善できます。
+   これにより、OOTB エラーハンドラとの下位互換性を持つ標準ベースのエラー応答を導入し、柔軟性と制御性を高め、全体的なエラー処理機能を改善できます。
 
 ## ヘッドレスアダプティブフォーム早期導入者プログラム {#forms-early-adopter}
 
