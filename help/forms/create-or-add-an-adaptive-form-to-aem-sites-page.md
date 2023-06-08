@@ -4,15 +4,18 @@ description: アダプティブフォームを容易に作成したり、シー�
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
+source-git-commit: 4d32a1768a97505ec2e7288904dde0c9120041a7
 workflow-type: tm+mt
-source-wordcount: '3182'
+source-wordcount: '3196'
 ht-degree: 1%
 
 ---
 
 
 # アダプティブフォームを作成するか、AEM Sitesページに追加する {#create-or-add-an-adaptive-form-to-aem-sites-page}
+
+|注意|[!BADGE リリース前のドキュメント]{type=Caution tooltip="黄色のステータス"}
+<span class="preview"> これはリリース前のドキュメントで、変更される可能性があります。</span>
 
 AEM Formsを使用すれば、アダプティブフォームを Web ページにシームレスに組み込むことができます。 これにより、訪問者は、ページを離れることなく、フォームに簡単に入力して送信できます。 これにより、Web サイト上の他の要素とのやり取りを容易に行いながら、フォームを積極的に操作することができます。
 
@@ -122,7 +125,7 @@ AEM FormsにはアダプティブフォームコンテナとアダプティブFo
 
 +++
 
-+++ 有効にする**[!UICONTROL アダプティブFormsコンテナ]
++++ アダプティブFormsコンテナの有効化
 
 有効にするには [!UICONTROL アダプティブFormsコンテナ] テンプレートのポリシーのコンポーネントで、次の手順を実行します。
 
@@ -246,7 +249,7 @@ Sites ページでアダプティブフォームを作成するには：
 
 ### Forms Portal Draft Prefill サービスを使用する {#forms-portal-prefill-service}
 
-Forms Portal Draft Prefill サービスを使用すると、保存されたアダプティブフォームのドラフトを使用して、フォームのフィールドに事前入力することができます。 Forms Portal Draft Prefill サービスを使用する前に、 [アダプティブForms Portal コンポーネントが有効になり、設定されている ](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) 環境に適用されます。
+Forms Portal Draft Prefill サービスを使用すると、保存されたアダプティブフォームのドラフトを使用して、フォームのフィールドに事前入力することができます。 Forms Portal Draft Prefill サービスを使用する前に、 [アダプティブForms Portal コンポーネントが有効になり、設定されている](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) 環境に適用されます。
 
 1. アダプティブフォームを含むAEM Sitesのページエディターまたはエクスペリエンスフラグメントを開きます。
 1. ページのプロパティを開き、クラウド設定を設定します。
