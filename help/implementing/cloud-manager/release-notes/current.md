@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.6.0 �
 description: AEM as a Cloud Service の Cloud Manager 2023.6.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 80a5f58119dc304161d324491cd65c50e981ccd4
+source-git-commit: 6dac8611cba8d924eb4509e699350be5b159e3d2
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 37%
+source-wordcount: '238'
+ht-degree: 33%
 
 ---
 
@@ -25,6 +25,7 @@ AEM as a Cloud Serviceの Cloud Manager リリース 2023.6.0 のリリース日
 
 ## 新機能 {#what-is-new}
 
+* お客様は、プライマリ領域に加えてセカンダリ公開領域を追加で購入できるので、待ち時間の短縮と可用性の向上に関するメリットが得られます。 注意：一定の制限が適用される場合があります。
 * 新しい [プログラムまたは環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) この名前は、英数字のみを使用でき、特殊文字の制限を受けるようになりました。
 * を再開する際 [実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 承認ステップに確認ダイアログが表示されるようになりました。
 * の **[顧客機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)** および **[カスタム UI テスト](/help/implementing/cloud-manager/ui-testing.md)** パイプラインステップ、新しい `INCOMPLETE` ステータスが可能になりました。これは、そのようなテストが存在せず、したがって実行されなかったことを示します。
