@@ -1,46 +1,29 @@
 ---
-title: AEM as a Cloud Service リリース 2023.03.0 の移行ツールのリリースノート
-description: AEM as a Cloud Service リリース 2022.03.0 の移行ツールのリリースノート
+title: AEM as a Cloud Service リリース 2023.06.0 の移行ツールのリリースノート
+description: AEM as a Cloud Service リリース 2022.06.0 の移行ツールのリリースノート
 feature: Release Information
 exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: 586fbc136b866be149db1d4fcdd6ea2ef18a97b1
+source-git-commit: a1597e4102589dfc9b5bdb8c2a54e8e9ec3392b7
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 96%
+source-wordcount: '237'
+ht-degree: 33%
 
 ---
 
-# AEM as a Cloud Service リリース 2023.03.0 の移行ツールのリリースノート {#release-notes}
+# AEM as a Cloud Service リリース 2023.06.0 の移行ツールのリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Service 2022.03.0 の移行ツールのリリースノートの概要を説明しています。
-
-## ベストプラクティスアナライザー {#bpa-release}
-
-### リリース日 {#release-date-bpa}
-
-ベストプラクティスアナライザー v2.1.40 のリリース日は 2023年3月3日（PT）です。
-
-### 新機能 {#what-is-new-bpa}
-
-* BPA は、競合するノード（同じ `jcr:uuid` を持つノード）を検出し、レポートできるようになりました。このような結果は、コンテンツを AEM as a Cloud Service に移動する際にコンテンツ取り込みに失敗する可能性があるので、重要としてフラグ付けされます。
-* BPA は、イベントリスナーの使用状況を検出し、報告できるようになりました。AEM as a Cloud Service に移行する際には、このタイプのイベント処理メカニズムを Sling ジョブにリファクタリングすることをお勧めします。
-
-### バグの修正 {#bug-fixes-bpa}
-
-* BPA は、`grouprendercondition` に関して偽陽性をレポートしていました。この問題が修正されました。
+このページでは、AEM as a Cloud Service 2022.06.0 の移行ツールのリリースノートの概要を説明しています。
 
 ## コンテンツ転送ツール {#ctt-release}
 
 ### リリース日 {#release-date-ctt}
 
-コンテンツ転送ツール v2.0.16 のリリース日は 2022年3月8日（PT）です。
+コンテンツ転送ツール v2.0.20 のリリース日は 2023 年 6 月 08 日です。
 
 ### 新機能 {#what-is-new-ctt}
 
-* ユーザーマッピングが合理化され、コンテンツ抽出手順に統合されました。設定は必要なく、デフォルトでは、ユーザーがコンテンツの抽出を開始する際に、ユーザーマッピングが自動的に行われます。ユーザーは、必要に応じてユーザーマッピングを無効にするオプションがあります。 詳細は[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=ja#user-mapping-detail)をご覧ください。
-* [AzCopy](https://learn.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-v10) を使用したプレコピー手順がコンテンツ転送ツールと統合され、コンテンツ抽出が大幅に高速化しました。このバージョンの CTT がインストールされると、プレコピーは自動的に設定およびインストールされます。デフォルトでは、抽出が開始されると、200 GB を超える移行セットに対してプレコピーが自動的に実行されます。必要に応じて、無効にするオプションがあります。詳しくは[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja)を参照してください。
-* CTT を Windows サーバーで使用できるようになりました。
-
-### バグの修正 {#bug-fixes-ctt}
-
-* コンテンツの抽出の回復性を向上させるために、複数のバグを修正しました。
+* 新しい移行ツールである Content Transformer(CT) が、このリリースのコンテンツ転送ツール (CTT) と統合されました。 Content Transformer は、 [ベストプラクティスアナライザー (BPA)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=ja) 現在のAEM実装 ( オンプレミスまたはManaged Services) からAEM as a Cloud Serviceにコンテンツを移行する前に。
+Content Transformer が提供するメリットは次のとおりです。
+   * フェイルセーフ：パッケージは、問題を修正するためにリポジトリを変更するたびに、Content Transformer によって作成されます。 必要に応じて、パッケージをインストールして前の状態に戻すことができます。
+   * 使いやすさ：Content Transformer は、コンテンツ転送ツールに統合され、直感的なシンプルなユーザーインターフェイスを備えています。
+   * 時間を節約：1 つのパターンに該当するコンテンツの問題が多数ある場合、Content Transformer を使用して、数回のクリックですべての問題を解決でき、時間と移行の複雑さを大幅に削減できます。
