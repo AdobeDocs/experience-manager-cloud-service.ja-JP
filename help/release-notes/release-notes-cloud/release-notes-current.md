@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3209b3098544275bd31ee19842bef0eb2e7a29d8
+source-git-commit: d4d44f452406e452372e409c6594ef4a256b9682
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 39%
+source-wordcount: '1095'
+ht-degree: 30%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 39%
 
 >[!NOTE]
 >
->ここから、以前のバージョン（例えば、2021年、2022年のバージョンなど）のリリースノートに移動できます。
+>ここから、2021 年や 2022 年など、以前のバージョンのリリースノートに移動できます。
 >
 >[!DNL Experience Manager] as a Cloud Service の今後の機能のアクティベーションについての詳細は、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja)をご覧ください。
 
@@ -54,43 +54,47 @@ ht-degree: 39%
 * [検索エクスペリエンスの強化](/help/assets/search-assets.md#aftersearch)  — 検索結果に表示されるアセットに対して、次の操作をすばやく実行できるようになりました。
 
    * ワークフローの作成
-   * 新しいバージョンを作成
+   * バージョンを作成します。
    * アセットの関連付けまたは関連付け解除
 
      これらの操作を実行する場合、アセットの場所に移動してアセットのプロパティを表示する必要はありません。
 
 * カラー検索ファセットのユーザビリティの改善 — カラー値の入力フィールドが編集可能になり、カラーピッカーを終了した場合にのみ検索結果が更新されるようになりました。
 
-* Dynamic Media ビデオ配信でアダプティブストリーミング用に開始された新しいプロトコル（DASH - Dynamic Adaptive Streaming over HTTP）のサポート（CMAF を有効にした場合）:
+* Dynamic Mediaビデオ配信でアダプティブストリーミング用に起動された新しいプロトコルのサポート (DASH - Dynamic Adaptive Streaming over HTTP)（CMAF を有効にした場合）:
    * アダプティブストリーミング（DASH／HLS）により、エンドユーザーがビデオを視聴する際の操作性が向上します
    * DASH はアダプティブビデオストリーミング用の国際標準プロトコルで、業界で広く採用されています
    * すべての地域で利用可能で、サポートチケットを介して有効にできます。
 
-* Dynamic Media _スナップショット_  — テスト画像やDynamic Media URL を試して、様々な画像修飾子の出力を確認し、スマートイメージングを最適化してファイルサイズ（WebP および AVIF 配信を使用）、ネットワーク帯域幅、デバイスピクセル比を確認します。 詳しくは、 [Dynamic Media Snapshot](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+* Dynamic Media _スナップショット_  — テスト画像やDynamic Media URL を試して、様々な画像修飾子の出力を確認し、スマートイメージングの最適化でファイルサイズ（WebP および AVIF 配信を使用）、ネットワーク帯域幅、デバイスピクセル比を評価します。 詳しくは、 [Dynamic Media Snapshot](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+
+### の機能 [!DNL Assets] プレリリース {#prerelease-feature-assets}
+
+* Dynamic Media — イメージプロファイル内の一部のスマート切り抜き関連フィールドのユーザーインターフェイスが更新され、スマート切り抜きを定義する際の現在のガイドラインが反映されるようになりました。 詳しくは、 [切り抜きオプション](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] で利用できる新機能 {#new-features-available-in-channel}
 
-* **[Microsoft SharePoint と Microsoft OneDrive にアダプティブフォームを送信](/help/forms/configuring-submit-actions.md)**：ビジネスユーザーの俊敏性を向上させ、新しいフォームを素早く起動し、送信されたデータを Microsoft SharePoint サイトや OneDrive フォルダーなどの毎日使用するツールに保存します。
+* **[Microsoft® SharePointとMicrosoft® OneDrive にアダプティブFormsを送信する](/help/forms/configuring-submit-actions.md)**:ビジネスユーザーの俊敏性を向上させ、Microsoft® SharePointサイトや OneDrive フォルダーなど、新しいフォームをすばやく起動し、送信されたデータを使用する毎日のツールに保存できるようにします。
 
 ### [!DNL Forms] の機能プレリリース {#prerelease-features-forms}
 
 * [AEM Page Editor 内のアダプティブForms](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md):AEMページエディターを使用して、複数のフォームをすばやく作成し、サイトページに追加できるようになりました。 この機能を使用すると、コンテンツ作成者は、動的な動作、検証、データ統合、レコードのドキュメントの生成、ビジネスプロセスの自動化など、アダプティブフォームコンポーネントの機能を利用して、Sites ページ内にシームレスなデータ取得エクスペリエンスを作成できます。 以下の操作を実行できます。
 
    * フォームコンポーネントをAEM SitesエディターまたはエクスペリエンスフラグメントのアダプティブFormsコンテナコンポーネントにドラッグ&amp;ドロップして、アダプティブフォームを作成します。
-   * AEM Sitesエディター内でアダプティブFormsウィザードを使用すると、任意のサイトページとは独立したフォームを作成でき、複数のページで自由にそのようなフォームを再利用できます。
+   * AEM Sitesエディター内でアダプティブFormsウィザードを使用すると、任意の Sites ページとは独立したフォームを作成して、自由に複数のページでそのようなフォームを再利用できます。
    * 複数のフォームを Sites ページに追加し、ユーザーエクスペリエンスを合理化し、より柔軟に提供します。
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
-* [Adobe Acrobat Signの統合とコンプライアンスの強化](/help/forms/adobe-sign-integration-adaptive-forms.md):AEM Formsは、Adobe Acrobat Sign for Government と統合され、e-Signatures の高度なレベルのコンプライアンスとセキュリティを、政府関連のアカウント（政府機関や機関）に対するアダプティブフォーム送信と共に提供するようになりました。
+* [Adobe Acrobat Signの統合とコンプライアンスの強化](/help/forms/adobe-sign-integration-adaptive-forms.md):AEM FormsはAdobe Acrobat Signと統合され、政府機関向けになりました。 この統合により、政府関連のアカウント（政府機関および機関）に対するアダプティブフォーム送信により、e-Signatures の高度なコンプライアンスとセキュリティを提供します。
 
-  Adobe Acrobat Sign for Government との統合により、パートナーや政府のお客様は、最もミッションクリティカルで機密性の高い業務の一部に対して、Adaptive Formsで電子署名を使用できます。 このセキュリティの追加層により、すべての電子署名が FedRAMP Moderate コンプライアンスに完全に準拠し、政府のお客様に安心を提供します。
+  Adobe Acrobat Sign for Government との統合により、Adobeのパートナーや政府のお客様は、Adaptive Formsで最もミッションクリティカルで機密性の高い業務の一部に電子署名を使用できます。 このセキュリティの強化により、すべての電子署名が FedRAMP Moderate コンプライアンスに完全に準拠し、Adobeの政府のお客様に安心して対応できます。
 
-* ルールエディターのカスタムエラーハンドラーによるエラー処理の強化：外部サービスから返されたエラーに応じて（クライアントライブラリを使用して）カスタム関数を呼び出し、エンドユーザーに合わせて応答を提供したり、サービスから返されたエラーに対して特定のアクションを実行したりできるようになりました。 例えば、特定のエラーコードに対してバックエンドでカスタムワークフローを呼び出したり、サービスが停止していることを顧客に通知したりできます。
+* ルールエディターでのカスタムエラーハンドラーによるエラー処理の機能が強化されました。 外部サービスから返されたエラーに応じて（クライアントライブラリを使用して）カスタム関数を呼び出し、エンドユーザーに対してカスタマイズされた応答を提供できるようになりました。 または、サービスから返されたエラーに対して特定のアクションを実行できます。 例えば、特定のエラーコードに対してバックエンドでカスタムワークフローを呼び出したり、サービスが停止していることを顧客に通知したりできます。
 
-  これにより、OOTB エラーハンドラとの下位互換性を持つ標準ベースのエラー応答を導入し、柔軟性と制御性を高め、全体的なエラー処理機能を改善できます。
+  この機能は、OOTB エラーハンドラとの下位互換性のある標準ベースのエラー応答を導入し、柔軟性と制御性を高め、全体的なエラー処理機能を改善するのに役立ちます。
 
 ### ヘッドレスアダプティブフォーム早期導入者プログラム {#forms-early-adopter}
 
@@ -99,7 +103,7 @@ ht-degree: 39%
 * 高品質のマルチチャネルフォームを好みのプログラミング言語で作成
 * デスクトップおよびモバイルアプリ、web サイト、チャットアプリケーションにフォームをネイティブに統合
 * フォームアプリケーションで独自の UI コンポーネントを再利用
-* Adobe Experience Manager Forms の機能を活用
+* Adobe Experience Manager Formsの力を使う
 
 メールを `aem-forms-headless@adobe.com` アーリーアダプタープログラムに参加するための公式電子メール ID から
 
@@ -107,7 +111,7 @@ ht-degree: 39%
 
 ### 新機能 {#what-is-new-foundation}
 
-* その他の公開地域：Sites のお客様は、主要地域に加えて、最大 3 つのパブリッシュ地域のライセンスを取得できます。 トラフィックは追加の公開ファームにルーティングされ、特定のリクエストの遅延が短縮され、地域の停止に対する耐障害性が向上します。 ライセンスについて詳しくは、Adobeのアカウントマネージャーにお問い合わせください [その他の公開地域](/help/operations/additional-publish-regions.md) プログラムの
+* その他の公開地域：Sites のお客様は、主要地域に加えて、最大 3 つのパブリッシュ地域のライセンスを取得できます。 トラフィックは追加の公開ファームにルーティングされるので、特定のリクエストの待ち時間が短縮され、地域の停止に対する回復力が向上します。 ライセンスについて詳しくは、Adobeのアカウントマネージャーにお問い合わせください [その他の公開地域](/help/operations/additional-publish-regions.md) プログラムの
 
 ## メンテナンスリリースノート {#maintenance}
 
