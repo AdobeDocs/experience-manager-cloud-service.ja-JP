@@ -2,10 +2,10 @@
 title: Adobe Target との統合時に使用する IMS 設定
 description: Adobe Target との統合時に使用する IMS 設定について説明します
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 100%
+source-wordcount: '863'
+ht-degree: 99%
 
 ---
 
@@ -72,9 +72,9 @@ Adobe 開発者コンソールを開いて、AEM で使用する Adobe Target �
 1. 既に作成したプロジェクトが表示されます。**新規プロジェクトの作成**&#x200B;を選択 - 場所と使用方法は、以下に依存します。
 
    * まだプロジェクトがない場合は、 **新規プロジェクトを作成**が中央の下に表示されます。
-      ![新規プロジェクトの作成 - 最初のプロジェクト](assets/integration-target-ims-02.png)
+     ![新規プロジェクトの作成 - 最初のプロジェクト](assets/integration-target-ims-02.png)
    * 既存のプロジェクトがある場合は、それらがリストされ、 **新規プロジェクトの作成**が右上に表示されます。
-      ![新規プロジェクトの作成 - 複数のプロジェクト](assets/integration-target-ims-03.png)
+     ![新規プロジェクトの作成 - 複数のプロジェクト](assets/integration-target-ims-03.png)
 
 
 1. **プロジェクトに追加**&#x200B;を選択し、続いて **API** を選択します。
@@ -87,7 +87,7 @@ Adobe 開発者コンソールを開いて、AEM で使用する Adobe Target �
    >
    >Adobe Target を購読しているが、リストに表示されない場合は、 [前提条件](#prerequisites)を確認する必要があります。
 
-   ![](assets/integration-target-ims-12.png)
+   ![Adobe Targetを選択](assets/integration-target-ims-12.png)
 
 1. **公開鍵**&#x200B;をアップロードして、完了したら&#x200B;**次へ**&#x200B;をクリックして進みます。
 
@@ -105,7 +105,6 @@ Adobe 開発者コンソールを開いて、AEM で使用する Adobe Target �
    >
    >* Adobe Target Standard - **デフォルトのワークスペース**&#x200B;のみ使用可能です
    >* Adobe Target Premium - 以下に示すように、使用可能なすべてのワークスペースが一覧表示されます
-
 
    ![製品プロファイルを選択し設定済み API を保存](assets/integration-target-ims-16.png)
 
@@ -185,7 +184,6 @@ AEM に戻り、Target の IMS 統合から必要な値を追加して、IMS 設
    次に例を示します。
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
-
 
 1. 設定を選択します。
 1. ツールバーから&#x200B;**ヘルスチェック**&#x200B;を選択し、次に&#x200B;**チェック**&#x200B;を選択します。
