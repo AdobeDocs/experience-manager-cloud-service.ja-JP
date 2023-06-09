@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
+source-git-commit: 3209b3098544275bd31ee19842bef0eb2e7a29d8
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 39%
@@ -76,10 +76,6 @@ ht-degree: 39%
 
 ### [!DNL Forms] の機能プレリリース {#prerelease-features-forms}
 
-* [Adobe Acrobat Signの統合とコンプライアンスの強化](/help/forms/adobe-sign-integration-adaptive-forms.md):AEM Formsは、Adobe Acrobat Sign for Government と統合され、e-Signatures の高度なレベルのコンプライアンスとセキュリティを、政府関連のアカウント（政府機関や機関）に対するアダプティブフォーム送信と共に提供するようになりました。
-
-  Adobe Acrobat Sign for Government との統合により、パートナーや政府のお客様は、最もミッションクリティカルで機密性の高い業務の一部に対して、Adaptive Formsで電子署名を使用できます。 このセキュリティの追加層により、すべての電子署名が FedRAMP Moderate コンプライアンスに完全に準拠し、政府のお客様に安心を提供します。
-
 * [AEM Page Editor 内のアダプティブForms](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md):AEMページエディターを使用して、複数のフォームをすばやく作成し、サイトページに追加できるようになりました。 この機能を使用すると、コンテンツ作成者は、動的な動作、検証、データ統合、レコードのドキュメントの生成、ビジネスプロセスの自動化など、アダプティブフォームコンポーネントの機能を利用して、Sites ページ内にシームレスなデータ取得エクスペリエンスを作成できます。 以下の操作を実行できます。
 
    * フォームコンポーネントをAEM SitesエディターまたはエクスペリエンスフラグメントのアダプティブFormsコンテナコンポーネントにドラッグ&amp;ドロップして、アダプティブフォームを作成します。
@@ -87,6 +83,10 @@ ht-degree: 39%
    * 複数のフォームを Sites ページに追加し、ユーザーエクスペリエンスを合理化し、より柔軟に提供します。
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+
+* [Adobe Acrobat Signの統合とコンプライアンスの強化](/help/forms/adobe-sign-integration-adaptive-forms.md):AEM Formsは、Adobe Acrobat Sign for Government と統合され、e-Signatures の高度なレベルのコンプライアンスとセキュリティを、政府関連のアカウント（政府機関や機関）に対するアダプティブフォーム送信と共に提供するようになりました。
+
+  Adobe Acrobat Sign for Government との統合により、パートナーや政府のお客様は、最もミッションクリティカルで機密性の高い業務の一部に対して、Adaptive Formsで電子署名を使用できます。 このセキュリティの追加層により、すべての電子署名が FedRAMP Moderate コンプライアンスに完全に準拠し、政府のお客様に安心を提供します。
 
 * ルールエディターのカスタムエラーハンドラーによるエラー処理の強化：外部サービスから返されたエラーに応じて（クライアントライブラリを使用して）カスタム関数を呼び出し、エンドユーザーに合わせて応答を提供したり、サービスから返されたエラーに対して特定のアクションを実行したりできるようになりました。 例えば、特定のエラーコードに対してバックエンドでカスタムワークフローを呼び出したり、サービスが停止していることを顧客に通知したりできます。
 

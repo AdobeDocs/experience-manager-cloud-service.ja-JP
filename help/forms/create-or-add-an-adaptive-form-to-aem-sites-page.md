@@ -4,9 +4,9 @@ description: アダプティブフォームを容易に作成したり、シー�
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
+source-git-commit: 3209b3098544275bd31ee19842bef0eb2e7a29d8
 workflow-type: tm+mt
-source-wordcount: '3061'
+source-wordcount: '3073'
 ht-degree: 1%
 
 ---
@@ -136,14 +136,15 @@ AEM Page Editor でアダプティブフォームコンテナを使用すると�
 
 ## アダプティブフォームの作成 {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
-新しいフォームを最初から作成し、要件やデザインの環境設定に合わせて、AEMのサイトページまたはエクスペリエンスフラグメント内で直接新しいフォームを作成できます。 単一使用フォームの場合は、AEMサイトページへの直接オーサリングをお勧めします。エクスペリエンスフラグメントは、Web サイトの複数のページで再利用する必要があるフォームに最適です。
+新しいフォームを最初から作成し、要件やデザインの環境設定に合わせて、AEM Sitesページまたはエクスペリエンスフラグメント内で直接新しいフォームを作成できます。 単一使用フォームの場合は、AEM Sitesページへの直接オーサリングをお勧めします。一方、エクスペリエンスフラグメントは、Web サイトの複数のページで再利用する必要があるフォームに最適です。
 
 * [AEM Sitesページでのフォームの作成](#create-an-adaptive-form-in-sites-editor)
 * [エクスペリエンスフラグメント内にフォームを作成する](#create-an-adaptive-form-in-experience-fragment)
+* [AEM Sitesページ内のアダプティブフォームをエクスペリエンスフラグメントに変換する](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)
 
 ### AEM Sitesページでのフォームの作成 {#create-an-adaptive-form-in-sites-editor}
 
-AEM Sitesエディターでアダプティブフォームコンテナコンポーネントを使用して、カスタムフォームを作成することができます。 このコンポーネントを使用すると、フォームコンポーネントをドラッグ&amp;ドロップしてフォームを作成できます。 フォームコンポーネントは、コアコンポーネントに基づいています。 これらは、組織の要件に応じて簡単にカスタマイズできます。
+AEMページエディターのアダプティブフォームコンテナコンポーネントを使用して、カスタムフォームを作成できます。 このコンポーネントを使用すると、フォームコンポーネントをドラッグ&amp;ドロップしてフォームを作成できます。 フォームコンポーネントは、コアコンポーネントに基づいています。 これらは、組織の要件に応じて簡単にカスタマイズできます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
@@ -169,7 +170,7 @@ Sites ページでアダプティブフォームを作成するには：
 
 次に、 [送信アクションの設定](#configure-submit-action-for-form) および詳細プロパティ。
 
-### AEM Sitesページ内のアダプティブフォームをエクスペリエンスフラグメントに変換する
+### AEM Sitesページ内のアダプティブフォームをエクスペリエンスフラグメントに変換する {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
 
 複数のページまたはサイトでフォームを再利用するには、 Sites のページエディターにある既存のアダプティブフォームをエクスペリエンスフラグメントに変換します。
 
