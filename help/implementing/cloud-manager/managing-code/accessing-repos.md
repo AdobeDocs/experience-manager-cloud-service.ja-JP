@@ -2,10 +2,10 @@
 title: リポジトリへのアクセス
 description: Cloud Manager のセルフサービス Git アカウント管理を使用して、Git リポジトリにアクセスし、管理する方法について説明します。
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: 4729574eb31e01077f0d2a35efcef6d134f6aa5c
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 55%
+source-wordcount: '232'
+ht-degree: 54%
 
 ---
 
@@ -29,7 +29,7 @@ Cloud Manager では、 **リポジトリ情報にアクセス** ボタンがパ
    * Git ユーザー名。
    * Git パスワード。この値は、「**パスワードを生成**」ボタンをクリックすると表示されます。
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
+   ![リポジトリ情報表示](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
 これらの資格情報を使用して、リポジトリのローカルコピーを複製し、そのローカルリポジトリで変更を加えることができます。変更できたら、Cloud Manager のリモートコードリポジトリにコードの変更をコミットして戻すことができます。
 

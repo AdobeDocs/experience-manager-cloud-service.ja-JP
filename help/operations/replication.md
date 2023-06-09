@@ -2,9 +2,9 @@
 title: レプリケーション
 description: レプリケーションの配布とトラブルシューティング。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 91a13f8b23136298e0ccf494e51fccf94fa1e0b4
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1341'
 ht-degree: 45%
 
 ---
@@ -53,7 +53,7 @@ Adobe Experience Manager as a Cloud Serviceは [Sling コンテンツ配布](htt
 
 次に示すように、 **ツール／ワークフロー／モデル**&#x200B;を選択し、「**コンテンツツリーを公開**」という標準のワークフローモデルをコピーして、ツリーレプリケーションをトリガーできます。
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
+![「コンテンツツリーを公開」ワークフローカード](/help/operations/assets/publishcontenttreeworkflow.png)
 
 元のモデルを修正したり呼び出さないでください。必ずモデルをコピーして、そのコピーを修正または呼び出してください。
 

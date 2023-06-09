@@ -2,10 +2,10 @@
 title: メールサービスの OAuth2 サポート
 description: Adobe Experience Manager as a Mail Service の Oauth2 サポート
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 4997c506e1cd467255fe11cb596fb64d74a511af
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 100%
+source-wordcount: '695'
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,7 @@ AEM as a Cloud Service のメールサービスの詳細については、[メ�
 1. 検索バーで **Azure Active Directory** を検索し、結果をクリックします。または、[https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) を直接参照することもできます。
 1. **アプリの登録**／**新しい登録**&#x200B;をクリックします。
 
-   ![](assets/oauth-outlook1.png)
+   ![アプリ登録プロセスを開始](assets/oauth-outlook1.png)
 
 1. 必要に応じて情報を入力し、**登録**&#x200B;をクリックします。
 1. 新しく作成されたアプリに移動し、**API 権限**&#x200B;を選択します。
@@ -134,8 +134,7 @@ AEM 側で Oauth を設定する前に、次の手順で accessToken と refresh
    * `offline_access`
    * `email`
    * `profile`
-1. 次の構文で、OSGI プロパティファイル`called com.day.cq.mailer.DefaultMailService.cfg.json`を  
-`/apps/<my-project>/osgiconfig/config` に作成します。
+1. 次の構文で、OSGI プロパティファイル`called com.day.cq.mailer.DefaultMailService.cfg.json`を `/apps/<my-project>/osgiconfig/config` に作成します。
 
    ```
    {
