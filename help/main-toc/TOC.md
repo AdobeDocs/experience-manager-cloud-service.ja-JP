@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 3fe6553953866a33bb7d2f1473f066984425255c
+source-git-commit: b104c7ddd102b3600384bf7472b166131e334c35
 workflow-type: tm+mt
-source-wordcount: '4059'
+source-wordcount: '4064'
 ht-degree: 98%
 
 ---
@@ -546,7 +546,7 @@ ht-degree: 98%
             + [アダプティブフォームのテーマの作成 - コアコンポーネント](/help/forms/using-themes-in-core-components.md)
             + [アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-core-components.md)
             + [AEM SitesページでのアダプティブForms — コアコンポーネントの作成](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
-            + [Summit ワークブック](/help/forms/summit-2023-workbook.md)
+            + [リダイレクトページまたは「ありがとうございます」メッセージの設定](/help/forms/configure-redirect-page-or-thank-you-message.md)
       + アダプティブフォームのオーサリング - 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
          + PDF フォームのアダプティブフォームへの変換 {#afcs}
             + [自動フォーム変換サービスの概要](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ja)
