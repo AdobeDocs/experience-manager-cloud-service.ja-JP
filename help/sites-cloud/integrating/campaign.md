@@ -1,24 +1,30 @@
 ---
-title: Adobe Campaign との統合
+title: AEM as a Cloud ServiceとAdobe Campaignの統合
 description: Adobe Campaignとの統合に対するAEMas a Cloud Serviceのサポートについて説明します。
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: b107d66803fea2422a681763314bcfaed4a729db
+source-git-commit: 6d391ea86a950a3777311543492b5b89813ae377
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 23%
+source-wordcount: '176'
+ht-degree: 10%
 
 ---
 
 
-# Adobe Campaign との統合 {#integrating-campaign}
+# AEM as a Cloud ServiceとAdobe Campaignの統合 {#integrating-campaign}
 
 Adobe Campaignとの統合に対するAEMas a Cloud Serviceのサポートについて説明します。
 
+>[!NOTE]
+>
+>このドキュメントでは、Adobe CampaignとAEM as a Cloud Service( クラウドネイティブAEMソリューション ) の統合について説明します。
+>
+>Adobe CampaignとAEM 6.5 の統合に関する詳細は、オンプレミスまたは AMS がホストするAEMソリューションを参照してください。 [この文書をご覧ください。](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html)
+
 ## Adobe Campaign Classic との統合 {#acc}
 
-Adobe Campaign Classic(ACC) バージョンは多数あります。 AEMaaCS との統合に対するサポートは、実装した ACC バージョンによって異なります。
+Adobe Campaign Classic(ACC) バージョンは多数あります。 AEM as a Cloud Serviceとの統合に対するサポートは、実装した ACC バージョンによって異なります。
 
 | ACC バージョン | AEMaCS との統合 |
 |---|---|
@@ -30,4 +36,4 @@ Adobe Campaign Classic(ACC) バージョンは多数あります。 AEMaaCS と�
 
 ## Adobe Campaign Standard との統合 {#acs}
 
-AEM as a Cloud Serviceは、Adobe Campaign Standard(ACS) との統合をサポートしていません。
+AEMas a Cloud Serviceは [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html) (ACS)。
