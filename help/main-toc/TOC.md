@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b104c7ddd102b3600384bf7472b166131e334c35
+source-git-commit: 663dae5785c13d74524054287869310d1fce5bd6
 workflow-type: tm+mt
-source-wordcount: '4064'
-ht-degree: 98%
+source-wordcount: '4079'
+ht-degree: 97%
 
 ---
 
@@ -73,6 +73,7 @@ ht-degree: 98%
    + AEMaaCS メンテナンスリリースノート {#maintenance}
       + [最新のメンテナンスリリースノート](/help/release-notes/maintenance/latest.md)
       + 2023年度 {#2023}
+         + [メンテナンスリリースノート（2023.4.0）](/help/release-notes/maintenance/2023/2023.4.0.md)
          + [メンテナンスリリースノート（2023.2.0）](/help/release-notes/maintenance/2023/2023.2.0.md)
          + [メンテナンスリリースノート（2023.1.0）](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Cloud Manager のリリースノート {#cloud-manager}
@@ -546,6 +547,7 @@ ht-degree: 98%
             + [アダプティブフォームのテーマの作成 - コアコンポーネント](/help/forms/using-themes-in-core-components.md)
             + [アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-core-components.md)
             + [AEM SitesページでのアダプティブForms — コアコンポーネントの作成](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+            + [機械翻訳または人間翻訳を使用したアダプティブフォームの翻訳](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [リダイレクトページまたは「ありがとうございます」メッセージの設定](/help/forms/configure-redirect-page-or-thank-you-message.md)
       + アダプティブフォームのオーサリング - 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
          + PDF フォームのアダプティブフォームへの変換 {#afcs}
