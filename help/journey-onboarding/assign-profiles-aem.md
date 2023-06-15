@@ -4,10 +4,10 @@ description: クラウドリソースを設定したら、AEM 製品プロファ
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: fd14d9f88fed4ef0f90b5dd0c92c53b1a298bd76
+source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 93%
+source-wordcount: '899'
+ht-degree: 88%
 
 ---
 
@@ -37,7 +37,12 @@ AEM を使用するには、チームメンバーが 1 つまたは複数の AEM
 * `AEM Users` - このグループには、コンテンツのオーサリング作業を日々行う通常のユーザーが含まれます。
 * `AEM Administrators` - このグループには、高度な機能や AEM を担当するユーザーが含まれます。
 
-AEM 製品プロファイルに割り当てられたすべてのユーザーは、Cloud Manager に対する読み取りのみのアクセス権も取得します。 Cloud Manager への書き込みアクセス権は、他の製品プロファイルを介して付与される場合があります。
+>[!NOTE]
+>
+>AEM as a Cloud Service の製品プロファイルに割り当てられたすべてのユーザーは、**Cloud Manager ユーザー**&#x200B;の役割を介して Cloud Manager に読み取り専用でアクセスできます。
+>
+>を持つ **Cloud Manager** ユーザーの役割のみが Cloud Manager にログインし、プログラムメニューオプションを使用して、AEMオーサー環境（存在する場合）に移動できます。 **Cloud Manager ユーザー**の役割では、プログラムの詳細にアクセスするのに十分ではありません。 そのようなアクセスが必要な場合は、システム管理者から追加の役割を付与してもらう必要があります。
+>詳しくは、 [以下の「その他のリソース」節](#additional-resources) Cloud Manager のユーザーの役割について詳しくは、を参照してください。
 
 >[!CAUTION]
 >
@@ -108,6 +113,7 @@ AEM 製品プロファイルに割り当てられたすべてのユーザーは�
 
 オンボーディングジャーニーのコンテンツの範囲を超えたい場合の追加のオプションリソースを次に示します。
 
+* [AEM as a Cloud Service のチームおよび製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md) - ライセンス取得済みのアドビソリューションに対するアクセスを AEM as a Cloud Service のチームおよび製品プロファイルで許可および制限する方法について説明します。
 * [製品とユーザーアクセスのAdmin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console)  — ユーザーアクセスを管理するAdmin Consoleの使用方法を説明します。
-* [AEM へのアクセスの設定のウォークスルー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=ja) - Admin Console で Adobe IMS ユーザー、ユーザーグループ、製品プロファイルを設定する方法については、こちらの簡潔なウォークスルーを参照してください。
+* [AEM へのアクセスの設定のウォークスルー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html) - Admin Console で Adobe IMS ユーザー、ユーザーグループ、製品プロファイルを設定する方法については、こちらの簡潔なウォークスルーを参照してください。
 

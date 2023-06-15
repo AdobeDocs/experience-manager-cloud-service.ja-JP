@@ -2,10 +2,10 @@
 title: 環境の管理
 description: 作成できる環境のタイプと、Cloud Manager プロジェクト用に環境を作成する方法について説明します。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: ecc15501b6187380c2039afdf68cbef909c54721
+source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
 workflow-type: tm+mt
-source-wordcount: '2302'
-ht-degree: 78%
+source-wordcount: '2336'
+ht-degree: 77%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 78%
 
    * 「**環境を追加**」オプションは「**環境**」タブでも使用できます。
 
-      ![「環境」タブ](assets/environments-tab.png)
+     ![「環境」タブ](assets/environments-tab.png)
 
    * 「**環境を追加**」オプションは、権限がない場合やライセンスされているリソースによっては、無効になっている場合があります。
 
@@ -129,7 +129,7 @@ ht-degree: 78%
 
    * または、**環境**&#x200B;カードの「**すべて表示**」ボタンをクリックして、「**環境**」タブに直接ジャンプします。
 
-      ![「すべて表示」オプション](assets/environment-showall.png)
+     ![「すべて表示」オプション](assets/environment-showall.png)
 
 1. **環境**&#x200B;が開いて、プログラムのすべての環境が一覧表示されます。
 
@@ -231,12 +231,15 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 >* 実稼動プログラムに作成された実稼動環境とステージング環境は削除できません。
 >* サンドボックスプログラム内の実稼動環境とステージング環境は削除できます。
 
-
 ## アクセスの管理 {#managing-access}
 
 **環境**&#x200B;カードで環境の省略記号メニューから「**アクセスを管理**」を選択します。オーサーインスタンスに直接移動して、環境のアクセスを管理できます。
 
 ![「アクセスを管理」オプション](assets/environ-access.png)
+
+>[!TIP]
+>
+>ドキュメントを参照 [AEMas a Cloud Serviceのチームおよび製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md) AEMas a Cloud Serviceのチームおよび製品プロファイルがライセンスを取得したAdobeソリューションに対してアクセスを許可および制限する方法を学ぶには、以下を参照してください。
 
 ## 開発者コンソールへのアクセス {#accessing-developer-console}
 
