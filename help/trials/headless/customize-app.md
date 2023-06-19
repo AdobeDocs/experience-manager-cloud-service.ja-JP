@@ -4,10 +4,10 @@ description: サンプル React アプリを使用して、AEM as a Cloud Servic
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
+source-git-commit: 469ebc7c3cae6dbfc38077e841db3c61ca16c680
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 97%
+source-wordcount: '1038'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ AEM ヘッドレス体験版で提供されるサンプルアプリが既に読�
 
 1. エディター画面の右上にある「**プレビュー**」ボタンをタップまたはクリックします。
 
-1. デモアプリが新しいタブで開きます。このアプリは、架空の WKND アウトドアライフスタイルブランド用です。クリックしてサンプルコンテンツに移動します。
+1. デモアプリが新しいタブで開きます。このアプリは、架空の WKND アウトドアライフスタイルブランド用です。ページを下にスクロールして、サンプルコンテンツに移動します。
 
 1. コンテンツフラグメントエディターのブラウザータブに戻って続行します。
 
