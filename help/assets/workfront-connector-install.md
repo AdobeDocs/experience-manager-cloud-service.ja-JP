@@ -4,10 +4,10 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] のイ
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 21f33c0b8710dd9d9db30543defff7dae9942c06
+source-git-commit: aa183901e80ba414fc3db5af01fbc49d082af7b6
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 98%
+source-wordcount: '779'
+ht-degree: 78%
 
 ---
 
@@ -30,14 +30,28 @@ ht-degree: 98%
 >
 >* 詳しくは、[Workfront for Experience Manager Assets 拡張コネクタに関するパートナー認定試験](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html)を参照してください。試験について詳しくは、[試験ガイド](https://express.adobe.com/page/Tc7Mq6zLbPFy8/)を参照してください。
 
-
 コネクタをインストールする前に、次のプリインストール手順に従います。
 
-1. [ファイアウォールの設定](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html?lang=ja)。[!DNL Workfront] の IP クラスターを調べるには、[!UICONTROL 設定]／[!UICONTROL システム]／[!UICONTROL 顧客情報]に移動します。
+1. AEMas a Cloud Serviceプログラムで Advanced Networking が設定され、IP 許可リストへの登録が有効になっている場合は、Workfront IP をこの許可リストに追加して、イベント購読と様々な API 呼び出しがAEMに渡されるようにする必要があります。
 
-1. Dispatcher で、`authorization`、`username` および `apikey` という名前の HTTP ヘッダーを許可します。`/bin/workfront-tools` への `GET`、`POST` および `PUT` リクエストを許可します。
+   * [Workfront Cluster IPs](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=en#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). [!DNL Workfront] の IP クラスターを調べるには、**[!UICONTROL 設定]**／**[!UICONTROL システム]**／**[!UICONTROL 顧客情報]**&#x200B;に移動します。
 
-1. 次のパスが [!DNL Experience Manager] リポジトリーに存在しないことを確認します。
+   * [Workfrontイベント購読 API の IP](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html)
+
+   >[!IMPORTANT]
+   >
+   >* お使いのプログラム用に詳細設定があり、IP 許可リストへの登録を使用している場合は、拡張Workfrontコネクタアーキテクチャの制限により、Cloud Manager の許可リストにプログラムエグレス IP を追加する必要もあります。
+   >
+   >* p{PROGRAM_ID}.external.adobeaemcloud.com
+   >
+   >* プログラムの IP を見つけるには、ターミナルウィンドウを開き、次のようなコマンドを実行します。
+   >
+   >    ```TXT
+   >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
+   >
+   >    ```
+
+1. 次のオーバーレイがに存在しないことを確認します。 [!DNL Experience Manager] リポジトリ。 これらのパスに既にオーバーレイが存在する場合は、オーバーレイを削除するか、2 つの間の変更の差分を結合する必要があります。
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`
    * `/apps/dam/gui/coral/components/admin/folderschemaforms/formbuilder`
