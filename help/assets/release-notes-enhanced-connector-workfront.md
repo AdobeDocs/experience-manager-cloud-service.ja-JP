@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 3a00faaf285be693243e3fb55159149520293610
+source-git-commit: 0cc57a144b69799cfabc8baae2051e9ac8701d49
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 86%
+source-wordcount: '1167'
+ht-degree: 92%
 
 ---
 
@@ -15,18 +15,22 @@ ht-degree: 86%
 
 ## リリース日 {#release-date}
 
-の最新バージョン 1.9.10 のリリース日 [!DNL Workfront for Experience Manager enhanced connector] は 2023 年 5 月 18 日です。
+の最新バージョン 1.9.11 のリリース日 [!DNL Workfront for Experience Manager enhanced connector] は 2023 年 6 月 20 日です。
 
 ## リリースのハイライト {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] の最新バージョンには、次のアップデートが含まれています。
 
-* Workfrontは、Experience ManagerからWorkfrontへの REST 呼び出しに基づいて、重複イベント購読に対して 409 HTTP 応答を返します。これにより、null ポインター例外が発生します。
+* 高度なネットワークを設定している場合、Adobe WorkfrontからAEM as a Cloud Serviceにコンテンツを送信する際に問題が発生します。
+
+>[!NOTE]
+>
+>AEM 6.4 は、拡張サポートの終了に達しました。 詳細は、 [技術サポート期間](https://helpx.adobe.com/jp/support/programs/eol-matrix.html). サポートされているバージョンを見つける [ここ](https://experienceleague.adobe.com/docs/?lang=en).
 
 
 >[!IMPORTANT]
 >
->アドビでは [ の](../assets/update-workfront-enhanced-connector.md)最新バージョン 1.9.10 へのアップグレード[!DNL Workfront for Experience Manager enhanced connector]をお勧めします。
+>アドビでは [ の](../assets/update-workfront-enhanced-connector.md)最新バージョン 1.9.11 へのアップグレード[!DNL Workfront for Experience Manager enhanced connector]をお勧めします。
 
 ## 既知の問題 {#known-issues}
 
@@ -36,11 +40,15 @@ ht-degree: 86%
 
 ## 以前のリリース {#previous-releases}
 
+### 2023年5月リリース {#may-2023-release}
+
+* Workfrontは、Experience ManagerからWorkfrontへの REST 呼び出しに基づいて、重複イベント購読に対して 409 HTTP 応答を返します。これにより、null ポインター例外が発生します。
+
 ### 2023 年 4 月リリース {#april-2023-release}
 
 [!DNL Workfront for Experience Manager enhanced connector] 2023 年 4 月 11 日にリリースされたバージョン 1.9.9 には、次の更新が含まれています。
 
-* Experience Managerに `DateTimeParseException` リンクされたフォルダーの作成中にWorkfrontから最終変更日を受け取った場合に例外が発生しました。
+* リンクされたフォルダーの作成中に Workfront から最終変更日を受け取ると、Experience Manager で `DateTimeParseException` 例外が表示されます。
 
 * 短期間で複数のリンクされたプロジェクトフォルダーを作成する際に発生する問題。
 
@@ -48,18 +56,18 @@ ht-degree: 86%
 
 ### 2023年3月リリース {#march-2023-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] 2023 年 3 月 3 日にリリースされたバージョン 1.9.8 には、次の更新が含まれています。
+2023年3月3日（PT）にリリースされた [!DNL Workfront for Experience Manager enhanced connector] バージョン 1.9.8 には、次のアップデートが含まれています。
 
-* WorkfrontでプロジェクトにリンクされたExperience Managerーを作成する際のフォルダーのパフォーマンスが向上しました。
+* Workfront でプロジェクトにリンクしたフォルダーを作成する際の Experience Manager のパフォーマンス改善。
 
-* Workfrontのコメントの削除がExperience Managerに反映されるようになりました。
+* Workfront のコメントの削除が Experience Manager に反映されるようになりました。
 
-* コネクタの設定からas a Cloud ServiceしたExperience Managerの新規顧客のブロックを管理する機能。
+* コネクタの設定から、Experience Manager as a Cloud Service で純新規顧客のブロッキングを管理できる機能。
 
 
-### 2023 年 1 月リリース {#january-2022-release}
+### 2023年1月リリース {#january-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] 2023 年 2 月 2 日にリリースされたバージョン 1.9.7 には、次の更新が含まれています。
+2023年2月2日（PT）にリリースされた [!DNL Workfront for Experience Manager enhanced connector] バージョン 1.9.7 には、次のアップデートが含まれています。
 
 * 1.9.6 リリースをインストールした後、メタデータエディターに Workfront カスタムフォームのプロパティが表示されない。
 
@@ -95,7 +103,7 @@ ht-degree: 86%
 
 * Workfront 拡張コネクタ設定ページで 「**[!UICONTROL アセットを Brand Portal に公開]**」オプションを有効にすると、不正確なイベントが作成されます。このオプションを無効にした後も、このイベントは削除されません。
 
-   この問題を解決するには、以下の手順を実行する必要があります。
+  この問題を解決するには、以下の手順を実行する必要があります。
 
    1. 拡張コネクタのバージョン 1.9.5 へのアップグレード。
 
@@ -123,9 +131,9 @@ ht-degree: 86%
       1. 間違ったイベント購読を削除します。 `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>` に対する DELETE 呼び出しを行います。
 
          応答コード `200` は、間違ったイベント購読が正常に削除されたことを示します。
-   >[!NOTE]
-   >
-   >ここで示している手順を実行する前に間違ったイベント購読を既に削除している場合は、最後の手順を省略することができます。
+  >[!NOTE]
+  >
+  >ここで示している手順を実行する前に間違ったイベント購読を既に削除している場合は、最後の手順を省略することができます。
 
 ### 2022年10月リリース {#october-2022-release}
 
@@ -189,4 +197,3 @@ ht-degree: 86%
 >[!MORELIKETHIS]
 >
 >* [ [!DNL Workfront for Experience Manager enhanced connector]  と Experience Manager 6.5 の統合](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=ja)
-
