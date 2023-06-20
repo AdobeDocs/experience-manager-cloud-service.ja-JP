@@ -2,10 +2,10 @@
 title: コンテンツフラグメント
 description: Adobe Experience Manager as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、使用が可能になります。
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 3f7c9240a81062c335c33b0e59971de43cacf87b
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1227'
-ht-degree: 100%
+source-wordcount: '1222'
+ht-degree: 92%
 
 ---
 
@@ -62,7 +62,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
    >
    >特定のコンテンツフラグメントをページに直接ドラッグすることもできます。これにより、関連コンポーネントが自動的に作成されます（コンテンツフラグメント）。
 
-4. 最初に、**メイン**&#x200B;要素および&#x200B;**マスター**（バリエーション）からのコンテンツが表示されます。必要に応じて、[他のエレメントやバリエーションを選択](#selecting-the-element-or-variation)できます。
+4. 最初に、 **メイン** 要素および **マスター** （バリエーション）が表示されます。 必要に応じて、[他のエレメントやバリエーションを選択](#selecting-the-element-or-variation)できます。
 
    ![Assets ブラウザーのコンテンツフラグメント](/help/sites-cloud/authoring/assets/content-fragments.png)
 
@@ -72,7 +72,6 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
    >
    >* [レスポンシブレイアウト](/help/sites-cloud/authoring/features/responsive-layout.md)
    >* [ページのコンテンツの編集](/help/sites-cloud/authoring/fundamentals/editing-content.md)
-
 
 ### 要素またはバリエーションの選択 {#selecting-the-element-or-variation}
 
@@ -90,15 +89,15 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
    * **単一のテキスト要素**
    * **複数の要素**
 * **エレメント**
-   * 使用するモデルに応じて選択を使用できます。
+   * 使用するモデルに応じて、選択を使用できます。
 
-   >[!NOTE]
-   >
-   >使用できるエレメントは、使用するモデルによって異なります。
+  >[!NOTE]
+  >
+  >使用できるエレメントは、使用するモデルによって異なります。
 
 * **バリエーション**
-   * デフォルトの「**マスター**」は常に利用できます。
-   * フラグメントにバリエーションが作成されている場合に選択できます。
+   * デフォルト **マスター** は常に使用可能です。
+   * フラグメントのバリエーションが作成されている場合は、選択を使用できます。
 
 * **ID**
 
@@ -147,10 +146,9 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 >  中間段落は隣に位置する（フラグメント）段落とコンテキスト関係を持たないので、これにより、相対位置が変更したかのように見せることができます。
 >* 2 つの段落構造が競合する場合を除きます。競合する場合、中間コンテンツは（内部的には存在していますが）表示されません。
 
-
 ### 関連コンテンツの使用 {#using-associated-content}
 
-[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md)に[コンテンツを関連付けた](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)場合、これらのアセットは（フラグメントをコンテンツページに配置した後に）サイドパネルから使用できます。関連付けられたコンテンツは、事実上、[中間コンテンツ](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)用のコンテンツの特別なソースになります。
+次の場合： [関連コンテンツ](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) と [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md) これらのアセットは、（フラグメントをコンテンツページに配置した後に）サイドパネルから使用できます。 関連付けられたコンテンツは、事実上、[中間コンテンツ](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)用のコンテンツの特別なソースになります。
 
 >[!NOTE]
 >
@@ -162,7 +160,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 コンテンツが関連付けられたフラグメントをページに追加すると、サイドパネルに新しいタブ（**関連コンテンツ**）が開きます。
 
-ここから、アセットを必要な場所（既存の位置または適切なコンポーネントが作成される必要がある位置）にドラッグできます。
+ここから、アセットを必要な場所（既存のコンポーネントまたは適切なコンポーネントが作成される必要のある位置）にドラッグできます。
 
 ![画像の挿入](/help/sites-cloud/authoring/assets/content-fragments-image.png)
 

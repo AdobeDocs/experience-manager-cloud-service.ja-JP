@@ -2,10 +2,10 @@
 title: ページのオーサリングのクイックスタートガイド
 description: ページコンテンツのオーサリングに初めて取り組む際に役立つ概要レベルのクイックガイドです。
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 07702fbebc768ee877d68219eff5551b09c7ff3e
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1585'
-ht-degree: 70%
+source-wordcount: '1572'
+ht-degree: 62%
 
 ---
 
@@ -33,7 +33,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
 * ページの順序変更
 
-   * これは[リスト表示](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view)で実行できます。変更内容が適用され、別の形式で表示できます。
+   * これは、で実行できます。 [リスト表示](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view). 変更が適用され、他のビューに表示されます。
 
 ### ページオーサリング {#page-authoring}
 
@@ -52,7 +52,6 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 >
 >* [ページ編集時のキーボードショートカット](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
 >* [コンソールのキーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-
 
 ### ページの検索 {#finding-your-page}
 
@@ -103,7 +102,8 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
       * モバイルデバイス：カードをタップ＆ホールドする
       * デスクトップデバイス：チェックマークアイコンで表される[クイックアクション](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)を使用する
-   * ページが選択されていることを示すために、カードにチェックマークが付けられます。
+
+   * ページが選択されていることを示すために、カードにチェックマークが付きます。
 
    ![カードの例](/help/sites-cloud/authoring/assets/card.png)
 
@@ -112,7 +112,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 次のようにして、[クイックアクション](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)を使用できます。
 
 1. アクションを実行する[ページに移動](#finding-your-page)します。
-1. 必要なリソースを表すカードの上にマウスポインターを置きます。クイックアクションが表示されます。
+1. 必要なリソースを表すカードの上にマウスポインターを置きます。 クイックアクションが表示されます。
 
    ![カードのアクション](/help/sites-cloud/authoring/assets/card-actions.png)
 
@@ -138,27 +138,31 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
       * 「コンポーネント」タブを選択する（[コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)）。
       * 必要なコンポーネントをページにドラッグする。
 
-      サイドパネルは、次のアイコンで開く（および閉じる）ことができます。
+     サイドパネルは、次のアイコンで開く（および閉じる）ことができます。
 
-      ![サイドパネルの切り替えボタン](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
+     ![サイドパネルの切り替えボタン](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
    * [既存のコンポーネントのコンテンツを編集](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) ページ上：
 
       * タップまたはクリックしてコンポーネントツールバーを開きます。以下を使用： **編集** （鉛筆）アイコンをクリックして、ダイアログを開きます。
-      * タップ&amp;ホールドまたはダブルスロークリックで、コンポーネントのインプレースエディターを開きます。 使用可能なアクションが表示されます（一部のコンポーネントでは、これは制限付きで選択されます）。
+      * タップ&amp;ホールドまたはダブルスロークリックで、コンポーネントのインプレースエディターを開きます。 使用可能なアクションが表示されます（一部のコンポーネントでは、選択は制限されています）。
       * 使用可能なすべてのアクションを表示するには、次を使用してフルスクリーンモードに入ります。
 
-         ![全画面表示ボタン](/help/sites-cloud/authoring/assets/full-screen.png)
+        ![全画面表示ボタン](/help/sites-cloud/authoring/assets/full-screen.png)
+
    * [既存のコンポーネントのプロパティを設定します。](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
       * タップまたはクリックしてコンポーネントツールバーを開きます。以下を使用： **設定** （レンチ）アイコンを使用して、ダイアログを開きます。
+
    * [コンポーネントの移動](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) 次のいずれか：
 
       * 必要なコンポーネントを新しい場所にドラッグします。
       * タップまたはクリックしてコンポーネントツールバーを開きます。必要に応じて、**切り取り**&#x200B;アイコン、続いて&#x200B;**貼り付け**&#x200B;アイコンを使用します。
+
    * [コピー（および貼り付け）](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 1 つのコンポーネント：
 
       * タップまたはクリックしてコンポーネントツールバーを開きます。必要に応じて、**コピー**&#x200B;アイコン、続いて&#x200B;**貼り付け**&#x200B;アイコンを使用します。
+
    >[!NOTE]
    >
    >同じページ、または別のページにコンポーネントを&#x200B;**貼り付ける**&#x200B;ことができます。切り取り／コピー操作を実行する前に開かれていたページに貼り付けるには、そのページを更新する必要があります。
@@ -166,14 +170,17 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
    * コンポーネントを[削除します。](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)
 
       * タップまたはクリックしてコンポーネントツールバーを開き、**削除**&#x200B;アイコンを使用します。
+
    * [注釈の追加](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) を次のページに追加します。
 
       * を選択します。 **注釈** モード（吹き出しアイコン） を使用した注釈の追加 **注釈を追加** （プラス）アイコン 右上の X を使用して注釈モードを終了します。
 
-         ![注釈ボタン](/help/sites-cloud/authoring/assets/annotations.png)
+        ![注釈ボタン](/help/sites-cloud/authoring/assets/annotations.png)
+
    * [ページのプレビュー](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) （パブリッシュ環境での表示方法を確認するため）
 
       * 選択 **プレビュー** をクリックします。
+
    * を使用して編集モードに戻る（または別のモードを選択する） **編集** ドロップダウンセレクター
 
    >[!NOTE]
@@ -194,8 +201,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
       ![「プロパティ」ボタン](/help/sites-cloud/authoring/assets/properties.png)
 
-   1. ページのプロパティが表示されます。必要に応じて変更を加え、「保存」を使用してそれらを保持します。
-
+   1. ページのプロパティが表示されます。 必要に応じて変更を加え、「保存」を使用してそれらを保持します。
 
 * 条件 [ページの編集](#editing-your-page-content):
 
@@ -218,7 +224,6 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
       ![「クイック公開」ボタン](/help/sites-cloud/authoring/assets/quick-publish.png)
 
-
 * 条件 [ページの編集](#editing-your-page-content):
 
    1. を開きます。 **ページ情報** メニュー
@@ -226,11 +231,11 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
 * コンソールからページを非公開にする場合は、「**公開を管理**」オプションからのみおこなうことができます。このオプションは、ツールバーでのみ使用できます（クイックアクションからは使用できません）。
 
-   ![「公開を管理」ボタン](/help/sites-cloud/authoring/assets/manage-publication.png)
+  ![「公開を管理」ボタン](/help/sites-cloud/authoring/assets/manage-publication.png)
 
-   この **ページを非公開にする** オプションは、 **ページ情報** 」メニューが表示されます。
+  この **ページを非公開にする** オプションは、 **ページ情報** 」メニューが表示されます。
 
-   詳しくは、 [ページの公開](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) を参照してください。
+  詳しくは、 [ページの公開](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) を参照してください。
 
 ### ページの移動、コピー、貼り付け、削除 {#move-copy-and-paste-or-delete-your-page}
 
@@ -247,12 +252,15 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
    * [コピー](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#copying-and-pasting-a-page):
 
       * 新しい場所に移動して、ペーストを行う必要があります。
+
    * [移動](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page)：
 
       * ページの移動に必要な情報を収集するためのウィザードが開きます。画面に表示される手順に従ってください。
+
    * [削除](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page)：
 
-      * この操作の確認が求められます。
+      * アクションの確認を求められます。
+
    >[!NOTE]
    >
    >削除は、クイックアクションでは使用できません。
@@ -305,13 +313,14 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
    ![「タイムライン」表示オプション](/help/sites-cloud/authoring/assets/timeline.png)
 
-   ページのバージョンが既に保存されている場合、そのバージョンがタイムラインに表示されます。
+   ページのバージョンが既に保存されている場合は、そのバージョンがタイムラインに表示されます。
 
 1. 復元するバージョンをタップまたはクリックします。これにより、追加のアクションボタンが表示されます。
 
    * **このバージョンに戻る**
 
-      * このバージョンが復元されます。
+      * バージョンが復元されます。
+
    * **違いを表示**
 
-      * ページが開き、（2 つのバージョン間の）違いが強調表示されます。
+      * ページが開き、（2 つのバージョン間の）違いがハイライト表示されます。

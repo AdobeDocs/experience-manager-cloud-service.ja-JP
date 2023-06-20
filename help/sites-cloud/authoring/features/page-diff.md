@@ -2,10 +2,10 @@
 title: ページの差分
 description: ページの差分機能を使用すると、2 つのページを並べて比較し、違いを強調表示するのに便利です。
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 50%
+source-wordcount: '616'
+ht-degree: 37%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 50%
 
 >[!NOTE]
 >
->この機能を使用するには、ノード `/content/versionhistory` に対する&#x200B;**変更／作成／削除**&#x200B;権限が必要です。
+>ユーザーは、 **変更/作成/削除** ノードに対する権限 `/content/versionhistory` 」をクリックして機能を使用します。
 >
 >この機能の技術的詳細については、[開発とページの差分](/help/implementing/developing/introduction/page-diff.md#operation-details)を参照してください。
 
@@ -65,7 +65,7 @@ ht-degree: 50%
 
 ### 全画面表示および終了 {#fullscreen-and-exiting}
 
-特定のコンテンツに集中するには、並列比較による差分表示のいずれかの「サイド」の全画面表示アイコンをクリックすると、ブラウザーの全画面に拡大することができます。
+特定のコンテンツに焦点を当てるには、並列比較による差分表示の「側」の全画面表示アイコンをクリックして、それをフルブラウザーウィンドウに拡大します。
 
 ![全画面表示ボタン](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 
@@ -75,7 +75,7 @@ ht-degree: 50%
 
 >[!NOTE]
 >
->全画面表示で両方のページ名がブラウザーの幅に収まらない場合は、表示中のページの名前のみ表示され、もう一方のページは省略記号の後ろに隠されます。
+>全画面表示で両方のページ名がブラウザーの幅に収まらない場合は、表示中のページの名前のみが表示され、もう一方のページは省略記号の後ろに表示されます。
 
 また全画面表示終了アイコンをクリックして、全画面表示を閉じることができます。
 

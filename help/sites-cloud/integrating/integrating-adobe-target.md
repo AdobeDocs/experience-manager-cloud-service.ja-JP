@@ -4,10 +4,10 @@ description: Adobe Target との統合
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 588825f910b3b9ad6a491c57322971200cea1d15
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 97%
+source-wordcount: '1042'
+ht-degree: 90%
 
 ---
 
@@ -18,9 +18,9 @@ Adobe Experience Cloud に含まれている Adobe Target を使用すると、�
 * タッチ操作対応 UI を使用して、AEM as a Cloud Service で Target 設定を作成します（IMS 設定が必要）。
 * [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=ja) の拡張機能として Adobe Target を追加し、設定する方法について説明します。
 
-Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／タグ）の両方のクライアントサイドプロパティを管理するために必要です。ただし、「エクスペリエンスのターゲット設定」には、Launch との統合が必要です。
+Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／タグ）の両方のクライアントサイドプロパティを管理するために必要です。ただし、「エクスペリエンスのターゲット設定」には、Experience Platform Launch との統合が必要です。
 
-エクスペリエンスフラグメントやコンテンツフラグメントを Target に書き出す場合は、 [Adobe Target Configuration と IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
+エクスペリエンスフラグメントやコンテンツフラグメントを Target に書き出す場合は、[Adobe Target 設定と IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md) のみ必要です。
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Adobe Target テナント ID と Adobe Target クライアントコードのフ�
 
 * デフォルトでは、（最初に追加された場合は）「クライアントコード」も「テナント ID」フィールドに自動的にコピーされます。
 * デフォルトのテナント ID 設定を変更するオプションがあります。
-* これにより、バックエンドから Target への呼び出しはテナント ID に基づいて行われ、クライアントサイドから Target への呼び出しはクライアントコードに基づいて行われます。
+* したがって、Target へのバックエンド呼び出しはテナント ID に基づき、Target へのクライアント側呼び出しはクライアントコードに基づきます。
 
 前述したように、AEM as a Cloud Service では最初のケースが最も一般的です。どちらの場合も、**両方の**&#x200B;フィールドに、要件に応じた正しい情報が含まれていることを確認してください。
 
@@ -62,7 +62,6 @@ Adobe Target テナント ID と Adobe Target クライアントコードのフ�
 > 1. テナント ID を再入力します。
 > 2. Target に再接続します。
 > 3. 設定を保存します。
-
 
 ### Target 設定の編集 {#edit-target-configuration}
 
@@ -113,7 +112,7 @@ AEM は、Experience Platform Launch との標準の統合を提供します。A
 3. 「**設定**」ボタンを選択します。設定ウィンドウに、読み込まれた Target アカウントの資格情報と、この拡張機能の at.js バージョンが表示されます。
 4. 「**保存**」を選択して、Target 拡張機能を Launch プロパティに追加します。「**インストール済みの拡張機能**」リストの下に Target 拡張機能が表示されます。
    ![拡張機能の保存](assets/configure_extension1.png "拡張機能の保存")
-5. 上記の手順を繰り返して、**Adobe ContextHub** 拡張機能を検索してインストールします（これは、どのターゲットが設定されるかに基づいて contexthub パラメーターとの統合に必要です）。
+5. 上記の手順を繰り返して、 **AdobeContextHub** 拡張機能をインストールします（これは、どのターゲティングがおこなわれているかに基づいて contexthub パラメーターとの統合に必要です）。
 
 ### データ要素の作成 {#data-element}
 
@@ -131,7 +130,7 @@ AEM は、Experience Platform Launch との標準の統合を提供します。A
 
 1. スクリーンショットに示されたように、一連のアクションを追加します。
    ![アクション](assets/rules1.png "アクション")
-2. 「すべての mbox にパラメーターを追加」で、前に設定したデータ要素（前述のデータ要素を参照）を、mbox 呼び出しで送信されるパラメーターに追加します。
+2. 「すべての mbox にパラメーターを追加」で、前に設定したデータ要素（上記のデータ要素を参照）を、mbox 呼び出しで送信されるパラメーターに追加します。
    ![Mbox](assets/map_data1.png " アクション")
 
 ### ビルドと公開 {#build-publish}

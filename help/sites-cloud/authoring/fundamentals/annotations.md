@@ -2,10 +2,10 @@
 title: ページ注釈の追加
 description: コンテンツレビュープロセスを支援するために、付箋と同様に、注釈モードを使用して注釈やスケッチをページに残します
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 64d801b108229866394e993811a67f983be5df6c
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 97%
+source-wordcount: '698'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 97%
 
 1. 注釈の追加を開始するには、注釈を追加アイコン（ツールバーの左側にあるプラス記号）をクリックまたはタップします。
 
-1. 注釈を追加するために必要なコンポーネント（注釈を追加できるコンポーネントは青いボーダーで強調表示されます）をクリックまたはタップして、ダイアログを開きます。
+1. 注釈を追加する必要のあるコンポーネント（注釈を付けることのできるコンポーネントは青い境界線でハイライト表示されます）をクリックまたはタップして、ダイアログを開きます。
 
    ![注釈の追加](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -66,13 +66,13 @@ ht-degree: 97%
    * 注釈テキストを入力します。
    * スケッチ（線と図形）を作成して、コンポーネントの特定の領域を強調表示します。
 
-      ![注釈のスケッチボタン](/help/sites-cloud/authoring/assets/annotation-sketch.png)
+     ![注釈のスケッチボタン](/help/sites-cloud/authoring/assets/annotation-sketch.png)
 
-      スケッチの作成中は、カーソルが十字型に変わります。複数の異なる線を描くことができます。スケッチ線は注釈と同じ色で、矢印、円、楕円のいずれかにすることができます。
+     スケッチの作成中は、カーソルが十字型に変わります。複数の異なる線を描くことができます。スケッチ線は注釈と同じ色で、矢印、円、楕円のいずれかにすることができます。
 
    * 色を選択または変更します。
 
-      ![注釈のカラースウォッチボタン](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
+     ![注釈のカラースウォッチボタン](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
 
 1. ダイアログの外側をクリックまたはタップして、注釈ダイアログを閉じることができます。注釈の一部の表示とスケッチが一緒に表示されます。
 

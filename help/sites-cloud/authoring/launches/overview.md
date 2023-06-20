@@ -2,10 +2,10 @@
 title: ローンチ
 description: ローンチを使用すると、将来のリリース用にコンテンツを効率的に開発できます。 現在のページを維持しながら、今後のパブリケーションに合わせて変更を加えることができます。
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 57%
+source-wordcount: '903'
+ht-degree: 51%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 57%
    * トップレベルのソースページは、「**実稼働**」と呼ばれます。
       * ソースページは、複数の（別々の）ブランチから取得できます。
 
-   ![ローンチの操作の順序](/help/sites-cloud/authoring/assets/launches-order.png)
+  ![ローンチの操作の順序](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * ローンチの設定を編集できます。
    * ローンチに対して、ページやブランチを追加または削除します。
@@ -64,23 +64,23 @@ ht-degree: 57%
    * 自動 - これには次の要素が関与します。
       * 「**ローンチ日**（**ライブ日付**）」**フィールド**：ローンチを作成または編集するときに設定できます。
       * この **実稼動準備完了** フラグ：これは、ローンチの編集時にのみ設定できます。
-      * 「**実稼動準備完了**」フラグが設定されると、ローンチは指定の「**ローンチ** **日**（**ライブ日付**）」に実稼動ページに自動的に昇格されます。昇格後、実稼働ページは自動的に公開されます。\
-         日付が設定されていない場合、フラグの効果はありません。
+      * この **実稼動準備完了** フラグが設定されている場合、ローンチは指定した **起動**(**ライブ**) **日付**. 昇格後、実稼働ページは自動的に公開されます。\
+        日付が設定されていない場合、フラグの効果はありません。
 * ソースの更新とページのローンチを並行して行うことができます。
    * ソースページに対する変更は、ローンチコピーに自動的に反映されます（ライブコピーなど、継承するように設定されている場合）。
    * ローンチコピーに対する変更は、ソースコピーの自動更新を中断することなく行うことができます。
 
-   ![並行実行されるアクション](/help/sites-cloud/authoring/assets/launches-parallel.png)
+  ![並行実行されるアクション](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
 * [ネストされたローンチの作成](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch)  — ローンチ内のローンチ：
    * ソースは既存のローンチです。
    * 以下が可能です。 [ネストされたローンチを昇格](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) 任意のターゲットに対して親ローンチまたはトップレベルのソースページ（実稼動）を指定できます。
 
-   ![ネストされたローンチ](/help/sites-cloud/authoring/assets/launches-nested.png)
+  ![ネストされたローンチ](/help/sites-cloud/authoring/assets/launches-nested.png)
 
-   >[!CAUTION]
-   >
-   >ローンチを削除すると、ローンチ自体およびネストされているすべてのローンチが削除されます。
+  >[!CAUTION]
+  >
+  >ローンチを削除すると、ローンチ自体およびネストされているすべてのローンチが削除されます。
 
 >[!NOTE]
 >
@@ -92,7 +92,7 @@ ht-degree: 57%
 
 1. 内 **サイト** コンソールで、ローンチのソースに移動します。
 1. を開きます。 **参照** をパネルして、ソースページを選択します。
-1. 「**ローンチ**」を選択すると、既存のローンチが一覧表示され、**ローンチコンソール**&#x200B;にアクセスできます。
+1. 選択 **起動回数**&#x200B;に設定すると、既存のローンチがリストに表示され、 **ローンチコンソール**:
 
    ![サイトコンソールでのローンチの参照](/help/sites-cloud/authoring/assets/launches-references.png)
 
@@ -108,11 +108,11 @@ ht-degree: 57%
 
 * Sites コンソールでソースコンテンツをナビゲートする際に、**参照**&#x200B;パネルの「**ローンチ**」セクションの下部にある「**ローンチコンソール**」をクリックします。
 
-   ![Sites コンソールのローンチの「参照」にあるローンチコンソール](/help/sites-cloud/authoring/assets/launches-references.png)
+  ![Sites コンソールのローンチの「参照」にあるローンチコンソール](/help/sites-cloud/authoring/assets/launches-references.png)
 
 * 右上の「**ローンチ**」ボタン（Sites コンソールでローンチコンテンツをナビゲーションする場合）。
 
-   ![Sites コンソールのローンチオプション](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+  ![Sites コンソールのローンチオプション](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
 
 * または、例えば次のように指定します。
-   `https://<host>:<port>/libs/launches/content/launches.html`
+  `https://<host>:<port>/libs/launches/content/launches.html`

@@ -2,10 +2,10 @@
 title: ContextHub でのセグメント化の設定
 description: ContextHub を使用してセグメントを設定する方法を説明します。
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: a278b3925180f4baa3b82af84080c947a72c9844
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 74%
+source-wordcount: '1694'
+ht-degree: 69%
 
 ---
 
@@ -71,7 +71,7 @@ AEM では、ユーザーエクスペリエンスを簡単にパーソナライ�
 >
 >したがって、[セグメントの作成](#creating-a-new-segment)時に比較対象の値のタイプがわかる場合は、常に&#x200B;**データタイプ**&#x200B;を選択してください。次に例を示します。
 >
->`profile/age` プロパティを比較する場合は、比較対象のタイプが&#x200B;**数値**&#x200B;であることが既にわかっているので、`profile/age` が設定されていなくても、`profile/age` が 30 より小さいという比較では、想定どおりに **false** が返されます。
+>プロパティを比較する場合 `profile/age`を比較する場合、比較対象のタイプが **数値**&#x200B;例えば、 `profile/age` が設定されていない場合、比較 `profile/age` 返される値が 30 未満 **false**&#x200B;想定どおりに
 
 ### 参照 {#references}
 
@@ -96,7 +96,7 @@ AEM では、ユーザーエクスペリエンスを簡単にパーソナライ�
 
    ![新しいセグメント](../assets/contexthub-new-segment.png)
 
-   各セグメントには、重み付け係数として使用されるブーストパラメーターがあります。複数のセグメントが有効である場合、数値が小さいセグメントよりも、数値が大きいセグメントのほうが優先して選択されます。
+   各セグメントには、重み付け係数として使用されるブーストパラメーターがあります。複数のセグメントが有効な場合、数値が小さいセグメントよりも、数値が大きいセグメントの方が優先して選択されます。
 
    * 最小値：`0`
    * 最大値：`1000000`
@@ -199,8 +199,8 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 1. フォルダーの「**タイトル**」と「**名前**」を指定します。
    * **タイトル**&#x200B;は内容がわかるように付けます。
-   * **名前**&#x200B;はリポジトリのノード名になります。
-      * タイトルに基づいて自動的に生成され、[AEM の命名規則](/help/implementing/developing/introduction/naming-conventions.md)に従って調整されます。
+   * この **名前** はリポジトリ内のノード名になります。
+      * タイトルに基づいて自動的に生成され、 [AEM命名規則。](/help/implementing/developing/introduction/naming-conventions.md)
       * 必要に応じて調整できます。
 
    ![フォルダーの作成](../assets/contexthub-create-folder.png)
@@ -212,7 +212,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. フォルダーがセグメントのリストに表示されます。
    * 列の並べ替え方法によって、リスト内の新しいフォルダーの表示場所が異なります。
    * 列見出しをタップまたはクリックして、並べ替えを調整できます。
-      ![新規フォルダー](../assets/contexthub-folder.png)
+     ![新規フォルダー](../assets/contexthub-folder.png)
 
 ### 既存のフォルダーの変更 {#modify-folders}
 

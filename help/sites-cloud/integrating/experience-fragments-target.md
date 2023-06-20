@@ -2,10 +2,10 @@
 title: Adobe Target へのエクスペリエンスフラグメントの書き出し
 description: Adobe Target へのエクスペリエンスフラグメントの書き出し
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
 source-wordcount: '2250'
-ht-degree: 64%
+ht-degree: 87%
 
 ---
 
@@ -15,7 +15,6 @@ ht-degree: 64%
 >
 >* AEM エクスペリエンスフラグメントは、Adobe Target のデフォルトのワークスペースに書き出されます。
 >* [Adobe Target との統合](/help/sites-cloud/integrating/integrating-adobe-target.md)で説明されている手順に従って、AEM と Adobe Target を統合する必要があります。
-
 
 Adobe Experience Manager as a Cloud Service（AEM）で作成された[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)を Adobe Target（Target）に書き出すことができます。書き出したエクスペリエンスフラグメントは、Target アクティビティのオファーとして使用し、幅広くエクスペリエンスをテストおよびパーソナライズできます。
 
@@ -56,7 +55,6 @@ AEM エクスペリエンスフラグメントを Adobe Target に書き出す�
 >* [Adobe Target - Adobe Experience Manager（AEM）エクスペリエンスフラグメントの使用方法](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=ja)
 >* [AEM 6.5 - 手動での Adobe Target との統合の設定 - Target クラウド設定の作成](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html?lang=ja#creating-a-target-cloud-configuration)
 
-
 ## 前提条件 {#prerequisites}
 
 様々なアクションが必要です。
@@ -77,7 +75,7 @@ AEM エクスペリエンスフラグメントを Adobe Target に書き出す�
 * Target ワークスペースを宛先として選択する
 * エクスペリエンスフラグメントに含まれる参照を書き換えるための Externalizer ドメインを選択する（オプション）
 
-必要なオプションは、必要なフォルダーやフラグメントの&#x200B;**ページのプロパティ**&#x200B;で選択できます。仕様は必要に応じて継承されます。
+必要なオプションは、 **ページプロパティ** 必要なフォルダー、フラグメント、またはその両方の仕様は必要に応じて継承されます。
 
 1. **エクスペリエンスフラグメント**&#x200B;コンソールに移動します。
 
@@ -132,11 +130,11 @@ Adobe Experience Platform Launch を使用するための[クラウド設定を�
 
 ### Target クラウド設定の作成 {#creating-a-target-cloud-configuration}
 
-AEMがAdobe Targetとやり取りできるようにするには、Target クラウド設定を作成します。 設定を作成するには、Adobe Targetのクライアントコードとユーザーの資格情報を指定します。
+AEM が Adobe Target とやり取りできるようにするには、Target クラウド設定を作成します。設定を作成するには、Adobe Target のクライアントコードとユーザーの資格情報を指定します。
 
-Target クラウド設定を作成するのは、1 回のみです。これは、設定を複数のAEMキャンペーンに関連付けることができるからです。 複数のAdobe Targetクライアントコードがある場合、各クライアントコードに対して 1 つの設定を作成します。
+複数の AEM キャンペーンに設定を関連付けることができるので、Target クラウド設定を作成するのは 1 回のみです。複数の Adobe Target クライアントコードがある場合、各クライアントコードに対して 1 つの設定を作成します。
 
-クラウド設定を設定して、Adobe Targetからセグメントを同期することができます。 同期を有効にした場合、クラウド設定が保存されるとすぐに、セグメントがバックグラウンドで Target から読み込まれます。
+クラウド設定を設定して、Adobe Target からセグメントを同期することができます。同期を有効にした場合、クラウド設定が保存されるとすぐに、バックグラウンドでセグメントが Target から読み込まれます。
 
 AEMで Target クラウド設定を作成するには、以下の手順を実行します。
 
@@ -184,47 +182,46 @@ AEMで Target クラウド設定を作成するには、以下の手順を実行
 
    * **A4T Analytics Cloud 設定**：ターゲットアクティビティの目標と指標に使用する Analytics Cloud 設定を選択します。これは、コンテンツをターゲティングするときに、Adobe Analytics をレポートソースとして使用している場合に必要です。
 
-      <!-- Is this needed?
+     <!-- Is this needed?
      If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
      -->
 
-   * **正確なターゲット設定を使用**：デフォルトでは、このチェックボックスはオンになっています。選択した場合、クラウドサービス設定は、コンテキストの読み込みを待ってから、コンテンツを読み込みます。 次の注意を参照してください。
+   * **正確なターゲット設定を使用**：デフォルトでは、このチェックボックスはオンになっています。選択した場合、クラウドサービス設定は、コンテキストの読み込みを待ってからコンテンツを読み込みます。次のメモを参照してください。
 
-   * **Adobe Target からセグメントを同期**：Target で定義されているセグメントをダウンロードして AEM で使用するには、このオプションをオンにします。API Type プロパティが REST の場合は、このオプションを選択する必要があります。インラインセグメントはサポートされず、常に Target のセグメントを使用する必要があるからです。 (「セグメント」のAEM用語は、Target の「オーディエンス」と同じです )。
+   * **Adobe Target からセグメントを同期**：Target で定義されているセグメントをダウンロードして AEM で使用するには、このオプションをオンにします。API Type プロパティが REST の場合は、このオプションを選択する必要があります。インラインセグメントはサポートされず、常に Target のセグメントを使用する必要があるからです。（AEM の用語「セグメント」は、Target の「オーディエンス」と同じです。）
 
    * **クライアントライブラリ**：デフォルトは AT.js です（mbox.js は非推奨／廃止予定です）。
 
-      >[!NOTE]
-      >
-      >Target ライブラリファイル [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html) は、Adobe Target 用の新しい実装ライブラリであり、通常の web 実装と単一ページアプリケーションの両方に使用できるように設計されています。
-      >
-      >mbox.js は非推奨（廃止予定）となり、後日で削除される予定です。
-      >
-      >Adobeでは、mbox.js ではなく AT.js をクライアントライブラリとして使用することをお勧めします。
-      >
-      >AT.js は、mbox.js ライブラリに対していくつかの強化点を提供します。
-      >
-      >* Web 実装のページ読み込み時間の改善
-      >* セキュリティの向上
-      >* シングルページアプリケーション向けの実装オプションの改善
-      >* AT.js は、target.js に含まれるコンポーネントを含むので、target.js を呼び出す必要がなくなりました
-
-      >
-      >**クライアントライブラリ**&#x200B;ドロップダウンメニューでは、AT.js または mbox.js を選択できます。
+     >[!NOTE]
+     >
+     >Target ライブラリファイル [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html) は、Adobe Target 用の新しい実装ライブラリであり、通常の web 実装と単一ページアプリケーションの両方に使用できるように設計されています。
+     >
+     >mbox.js は非推奨（廃止予定）となり、後日で削除される予定です。
+     >
+     >アドビは、クライアントライブラリとして mbox.js ではなく AT.js を使用することをお勧めします。
+     >
+     >AT.js は mbox.js ライブラリよりも、次のような強化点を提供します。
+     >
+     >* Web 実装のページ読み込み時間の向上
+     >* セキュリティの向上
+     >* 単一ページアプリケーション向けの実装オプションの改善
+     >* AT.js は、target.js に含まれていたコンポーネントを含むので、target.js を呼び出す必要がなくなりました
+     >
+     >**クライアントライブラリ**&#x200B;ドロップダウンメニューでは、AT.js または mbox.js を選択できます。
 
    * **タグ管理システムを使用してクライアントライブラリを提供**：このオプションを選択すると、Adobe Launch または別のタグ管理システム（DTM は非推奨／廃止予定）からクライアントライブラリを使用できます。
 
    * **カスタムの AT.js**：参照してカスタム AT.js をアップロードします。デフォルトのライブラリを使用する場合は、空白のままにします。
 
-      >[!NOTE]
-      >
-      >デフォルトでは、Adobe Target 設定ウィザードをオプトインすると、正確なターゲット設定が有効になります。
-      >
-      >正確なターゲティングとは、クラウドサービスの設定が、コンテキストの読み込みを待ってからコンテンツを読み込むことを意味します。 その結果、パフォーマンスに関しては、正確なターゲティングによって、コンテンツを読み込む前に数ミリ秒の遅延が生じる場合があります。
-      >
-      >正確なターゲット設定は、オーサーインスタンスで常に有効になっています。 ただし、パブリッシュインスタンスでは、クラウドサービス設定の「正確なターゲティング」の横にあるチェックマークをオフにすることで、正確なターゲティングをグローバルにオフにすることができます (**http://localhost:4502/etc/cloudservices.html**) をクリックします。 また、クラウドサービス設定での設定に関係なく、個々のコンポーネントに対して正確なターゲティングのオン/オフを切り替えることもできます。
-      >
-      >この設定を変更しても、作成済みの対象コンポーネントには影響しません&#x200B;***。***&#x200B;これらのコンポーネントに対して直接変更を加える必要があります。
+     >[!NOTE]
+     >
+     >デフォルトでは、Adobe Target 設定ウィザードをオプトインすると、正確なターゲット設定が有効になります。
+     >
+     >正確なターゲティングとは、クラウドサービスの設定が、コンテキストの読み込みを待ってからコンテンツを読み込むことを意味します。その結果、パフォーマンスに関しては、正確なターゲティングによって、コンテンツを読み込む前に数ミリ秒の遅延が生じる場合があります。
+     >
+     >正確なターゲティングは、オーサーインスタンスで常に有効になっています。ただし、パブリッシュインスタンスでは、クラウドサービス設定（**http://localhost:4502/etc/cloudservices.html**）の「正確なターゲティング」の横にあるチェックマークをオフにすることで、正確なターゲティングをグローバルにオフにできますまた、クラウドサービス設定での設定に関係なく、個々のコンポーネントに対して正確なターゲティングのオン／オフを切り替えることもできます。
+     >
+     >この設定を変更しても、作成済みの対象コンポーネントには影響しません&#x200B;***。***&#x200B;これらのコンポーネントには直接変更を加える必要があります。
 
 1. 「**Adobe Target に接続**」をクリックして、Target の接続を開始します。接続に成功すると、「**接続に成功しました**」というメッセージが表示されます。メッセージの「**OK**」をクリックして、ダイアログの「**OK**」をクリックします。
 
@@ -234,7 +231,7 @@ AEMで Target クラウド設定を作成するには、以下の手順を実行
 
 Target クラウド設定を設定したら、Target フレームワークを追加します。このフレームワークは、使用可能な [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) コンポーネントから Adobe Target に送信されるデフォルトのパラメーターを識別します。Target は、パラメーターを使用して、現在のコンテキストに適用されるセグメントを決定します。
 
-1 つの Target 設定に対して複数のフレームワークを作成できます。 Web サイトのセクションごとに異なるパラメーターセットを Target に送信する必要がある場合は、複数のフレームワークが便利です。 送信する必要のあるパラメーターの各セットに対してフレームワークを作成します。 Web サイトの各セクションを適切なフレームワークに関連付けます。 1 つの web ページは一度に 1 つのフレームワークしか使用できません。
+1 つの Target 設定に対して複数のフレームワークを作成できます。Web サイトのセクションごとに異なるパラメーターセットを Target に送信する必要がある場合は、複数のフレームワークが便利です。送信する必要のあるパラメーターのセットごとにフレームワークを作成します。Web サイトの各セクションを適切なフレームワークに関連付けます。1 つの web ページは一度に 1 つのフレームワークしか使用できません。
 
 1. Target 設定ページで、「利用可能な設定」の横の「**+**」（プラス符号）をクリックします。
 
@@ -250,7 +247,7 @@ Target クラウド設定を設定したら、Target フレームワークを追
 
    >[!NOTE]
    >
-   >マッピング時に、パラメーターは単純な文字列を使用して mbox に渡されます。 ContextHub から配列をマッピングすることはできません。
+   >マッピング時に、パラメーターは単純な文字列を使用して mbox に渡されます。ContextHub から配列をマッピングすることはできません。
 
    例えば、サイト訪問者に関する&#x200B;**プロファイルデータ**&#x200B;を使用して Target キャンペーンを管理するには、「**プロファイルデータ**」コンポーネントをページにドラッグします。Target パラメーターへのマッピングに使用できるプロファイルデータ変数が表示されます。
 
@@ -262,9 +259,9 @@ Target クラウド設定を設定したら、Target フレームワークを追
 
    >[!NOTE]
    >
-   >パラメーターの同期は、AEMからAdobe Targetへの 1 つの方法のみです。
+   >パラメーターの同期は、AEM から Adobe Target への一方向のみです。
 
-フレームワークが作成されました。 フレームワークをパブリッシュインスタンスにレプリケートするには、 **フレームワークを有効化** オプションを選択します。
+フレームワークが作成されました。フレームワークをパブリッシュインスタンスにレプリケートするには、サイドキックの「**フレームワークをアクティベート**」オプションを使用します。
 
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
@@ -315,7 +312,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 >[!CAUTION]
 >
->画像などのメディアアセットの場合、参照のみが Target に書き出されます。 アセット自体はAEM Assetsに保存されたままで、AEMパブリッシュインスタンスから配信されます。
+>画像などのメディアアセットの場合、参照のみが Target に書き出されます。アセット自体は AEM Assets に保存されたままで、AEM パブリッシュインスタンスから配信されます。
 >
 >このため、Target に書き出す前に、エクスペリエンスフラグメントと関連するすべてのアセットを公開する必要があります。
 
@@ -334,7 +331,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >
    >エクスペリエンスフラグメントが既に書き出されている場合は、**Adobe Target でアップデート** を選択します。
 
-1. タップまたはクリック **公開せずに書き出し** または **公開** 必要に応じて。
+1. 必要に応じて、「**公開せずに書き出し**」または「**公開**」をタップまたはクリックします。
 
    >[!NOTE]
    >
@@ -354,11 +351,11 @@ When you associate a page with the framework, the child pages inherit the associ
 
 >[!NOTE]
 >
->または、ページエディターで、 [ページ情報](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) メニュー
+>あるいは、[ページ情報](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)メニューの同等のコマンドを使用して、ページエディターから書き出しを実行することもできます。
 
 ## Adobe Target でのエクスペリエンスフラグメントの使用 {#using-your-experience-fragments-in-adobe-target}
 
-ここまでのタスクを完了すると、エクスペリエンスフラグメントが Target のオファーページに表示されます。ご覧ください [特定の Target ドキュメント](https://experiencecloud.adobe.com/resources/help/ja_JP/target/target/aem-experience-fragments.html) そこで何を達成できるかを学ぶために
+ここまでのタスクを完了すると、エクスペリエンスフラグメントが Target のオファーページに表示されます。Target 側でできることを詳しく知るには、[Target に特化したドキュメント](https://experiencecloud.adobe.com/resources/help/ja_JP/target/target/aem-experience-fragments.html)を参照してください。
 
 >[!NOTE]
 >
@@ -366,17 +363,18 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ## Adobe Target に書き出し済みのエクスペリエンスフラグメントの削除 {#deleting-an-experience-fragment-already-exported-to-adobe-target}
 
-Target に書き出し済みのエクスペリエンスフラグメントを削除すると、そのフラグメントが既に Target のオファーで使用されている場合に問題が発生する可能性があります。フラグメントコンテンツがAEMによって配信されるので、フラグメントを削除すると、オファーが使用できなくなります。
+Target に書き出し済みのエクスペリエンスフラグメントを削除すると、そのフラグメントが既に Target のオファーで使用されている場合に問題が発生する可能性があります。フラグメントコンテンツが AEM によって配信されるので、フラグメントを削除すると、オファーが使用できなくなります。
 
 このような状況を回避するには、次の手順に従います。
 
 * エクスペリエンスフラグメントが現在アクティビティで使用されていない場合、AEMを使用すると、警告メッセージを表示せずにフラグメントを削除できます。
 * エクスペリエンスフラグメントが現在 Target のアクティビティで使用されている場合、フラグメントを削除するとアクティビティに影響が及ぶ可能性があると、AEM ユーザーに警告メッセージが表示されます。
 
-   AEMのエラーメッセージは、ユーザーによるエクスペリエンスフラグメントの削除（強制）を禁止していません。 エクスペリエンスフラグメントが削除された場合は、次のような結果になります。
+  AEMのエラーメッセージは、ユーザーによるエクスペリエンスフラグメントの削除（強制）を禁止していません。 エクスペリエンスフラグメントが削除された場合は、次のような結果になります。
 
    * AEM エクスペリエンスフラグメントを使用した Target オファーで望ましくない動作が見られる場合があります。
 
       * エクスペリエンスフラグメント HTML が Target にプッシュされたため、オファーが引き続きレンダリングされる可能性があります。
       * 参照されているアセットが AEM でも削除されている場合、エクスペリエンスフラグメント内の参照はどれも正しく機能しない可能性があります。
+
    * 当然ながら、エクスペリエンスフラグメントが AEM には存在しないため、さらに変更することは不可能です。

@@ -2,10 +2,10 @@
 title: ローンチを使用した未来のプレビュー
 description: タイムワープを使用すると、ローンチに基づいてコンテンツを表示できます。
 exl-id: 3e19f11c-53cc-491b-8d9b-1e82745caebc
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 100%
+source-wordcount: '97'
+ht-degree: 56%
 
 ---
 
@@ -13,12 +13,12 @@ ht-degree: 100%
 
 [タイムワープは](/help/sites-cloud/authoring/features/page-versions.md#timewarp)、ローンチに含まれるページでも使用できます。
 
-1. ページエディターで&#x200B;**タイムワープ**モードを選択すると、日付の入力が求められます。ローンチのプロモーション日より後の日付を選択します。
+1. 選択時 **タイムワープ** モードを選択すると、日付の入力が求められます。 ローンチのプロモーション日より後の日付を選択します。
    ![ページエディターからローンチをナビゲーション](/help/sites-cloud/authoring/assets/launches-timewarp-01.png)
 
-1. この日に適したコンテンツが表示されます。
+1. その日に適したコンテンツが表示されます。
    ![ページエディターからローンチをナビゲーション](/help/sites-cloud/authoring/assets/launches-timewarp-02.png)
 
    >[!NOTE]
    >
-   >どちらのローンチにも、選択した日付に最も近い有効日があり、それ以前の日付が適用され、その内容が表示されます。
+   >ローンチのライブ日付が、選択した日付とそれ以前の日付のどれにも適用され、そのコンテンツが表示されます。

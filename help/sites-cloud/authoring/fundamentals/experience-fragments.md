@@ -2,10 +2,10 @@
 title: エクスペリエンスフラグメント
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントを使用すると、エクスペリエンスの再利用性と柔軟性を高めることができます。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 9c3153efe4aacd1666663cd5eb718f75329202af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2064'
-ht-degree: 86%
+source-wordcount: '2052'
+ht-degree: 80%
 
 ---
 
@@ -47,7 +47,7 @@ Adobe Experience Manager as a Cloud Service 内では、エクスペリエンス
 >
 >エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
 >
->詳しくは、 [AEMのコンテンツフラグメントとエクスペリエンスフラグメントについて](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ja#content-fragments).
+>さらなる情報については、[AEM のコンテンツフラグメントとエクスペリエンスフラグメントについて](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ja#content-fragments)も参照してください。
 
 >[!NOTE]
 >
@@ -83,15 +83,15 @@ Adobe Experience Manager as a Cloud Service 内では、エクスペリエンス
 
 * エクスペリエンスフラグメントにとって意味のある構造（例：分類に従った構造）を作成する。
 
-   >[!NOTE]
-   >
-   >エクスペリエンスフラグメントの構造をサイトのページ構造に合わせる必要はありません。
+  >[!NOTE]
+  >
+  >エクスペリエンスフラグメントの構造をサイトのページ構造に合わせる必要はありません。
 
 * [許可されたテンプレートをフォルダーレベルで割り当てる。](#configure-allowed-templates-folder)
 
-   >[!NOTE]
-   >
-   >[テンプレートエディター](/help/sites-cloud/authoring/features/templates.md)を使用すると、独自のテンプレートを作成できます。
+  >[!NOTE]
+  >
+  >[テンプレートエディター](/help/sites-cloud/authoring/features/templates.md)を使用すると、独自のテンプレートを作成できます。
 
 WKND プロジェクトでは、`Contributors` に従って一部のエクスペリエンスフラグメントを構造化します。また、使用される構造は、マルチサイト管理（言語コピーを含む）などの他の機能の使用方法の例も示します。
 
@@ -241,7 +241,7 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 
    * **テンプレート**
    * **タイトル**
-   * **名前**（空欄のままの場合、タイトルから派生される）
+   * **名前**  — 空白のままの場合は、タイトルから派生します
    * **説明**
    * **バリエーションのタグ**
 
@@ -250,7 +250,7 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
    ![バリエーションのプロパティ](/help/sites-cloud/authoring/assets/xf-07.png)
 
 
-1. 「**完了**」で確定すると、新しいバリエーションがパネルに表示されます。
+1. 次で確認： **完了**&#x200B;に設定すると、新しいバリエーションがパネルに表示されます。
 
 ## エクスペリエンスフラグメントの使用 {#using-your-experience-fragment}
 
@@ -293,7 +293,7 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 
    ![構築ブロック名の設定](/help/sites-cloud/authoring/assets/xf-11.png)
 
-1. **構築ブロック**&#x200B;が左タブ（「**ローカル**」）に表示され、以降のアクションで選択できます。
+1. この **構築ブロック** が左側のタブに表示される (**ローカル**)、およびを選択して、さらにアクションを実行できます。
 
    ![パネル内の構築ブロック](/help/sites-cloud/authoring/assets/xf-12.png)
 
@@ -341,7 +341,7 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 
    >[!NOTE]
    >
-   >フォルダーに定義されたパーソナライゼーションプロパティは、サブツリー内のすべての子フォルダーと、そのサブツリー内のエクスペリエンスフラグメント（およびバリエーション）に継承されます。 継承を解除することで、上書きできます。
+   >フォルダーに定義されたパーソナライゼーションプロパティは、サブツリー内のすべての子フォルダーに継承され、サブツリー内のエクスペリエンスフラグメント（とバリエーション）が継承されます。 継承を解除することで、上書きできます。
 
 1. **パーソナライゼーション**&#x200B;タブをを開き、設定を定義して保存します。 例えば、フォルダーの場合：
 
@@ -349,23 +349,21 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 
    >[!CAUTION]
    >
-   >フラグメントが Sites ページに埋め込まれたとき、および&#x200B;**パーソナライゼーション**&#x200B;が設定されている場合、ページのレンダリング時には、ページのパーソナライゼーションバージョンのみが使用されます。
+   >フラグメントが Sites ページに埋め込まれたとき、および **パーソナライズ** が設定されている場合、ページのレンダリング時には、ページのパーソナライゼーションバージョンのみが使用されます。
    >
    >フラグメント内のコンポーネントで実行されるターゲティングがページレンダリングで機能するには、次の条件を満たす必要があります。
    >
    >**パーソナライゼーション**&#x200B;タブで選択されたこの **ContextHub パス** は、次のいずれかである必要があります。
    >
    >* フラグメントがレンダリングされるページ用に設定されたパスと同じパス
-      >または：
+   >または：
    >* ページ用に設定された ContextHub で定義されたストアのサブセットを含むパス
-
    >
    >
 「**パーソナライゼーション**」タブで選択された&#x200B;**セグメントパス**&#x200B;は、次のいずれかである必要があります。
-   * フラグメントがレンダリングされるページ用に設定されたものと同じパス
-または
+   >
+   * フラグメントがレンダリングされるページ用に設定されたパスと同じです。または
    * ページ用に設定されたセグメントのサブセットを含むパス
-
 
 ### エクスペリエンスフラグメントのターゲティングの定義 {#defining-targeting-experience-fragment}
 
@@ -391,7 +389,9 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
    プロパティが次のように様々なタブに表示されます。
 
    >[!CAUTION]
+   >
    これらのタブは、エクスペリエンスフラグメントコンソールから「**プロパティ**」を開くと表示されます。
+   >
    エクスペリエンスフラグメントの編集時に&#x200B;**プロパティを開く**&#x200B;と、適切な[ページのプロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md)が表示されます。
 
    ![エクスペリエンスフラグメントのプロパティ](/help/sites-cloud/authoring/assets/xf-17.png)
@@ -421,6 +421,7 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 URL の `.plain.` セレクターを使用すると、ブラウザーからプレーン HTML レンディションにアクセスできます。
 
 >[!NOTE]
+>
 ブラウザーから直接利用することもできますが、[主な目的は、他のアプリケーション（例えば、サードパーティ Web アプリ、カスタムモバイル実装など）が、URL のみを使用して、エクスペリエンスフラグメントのコンテンツに直接アクセスできるようにすることです。](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)
 
 ## エクスペリエンスフラグメントの公開 {#publishing-experience-fragments}

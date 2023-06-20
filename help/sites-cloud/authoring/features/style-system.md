@@ -2,10 +2,10 @@
 title: スタイルシステム
 description: スタイルシステムを使用すると、テンプレート作成者がコンポーネントのコンテンツポリシーのスタイルクラスを定義し、コンテンツ作成者がページでのコンポーネントの編集時にそのスタイルクラスを選択できます。これらのスタイルは、1 つのコンポーネントの別の視覚的バリエーションとして使用することができるので、コンポーネントがより柔軟で扱いやすいものになります。
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1327'
-ht-degree: 67%
+source-wordcount: '1319'
+ht-degree: 63%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 67%
 スタイルシステムでは、テンプレート作成者とコンテンツ作成者の両方の要件に対応する統一ソリューションを提供します。
 
 * テンプレート作成者は、コンポーネントのコンテンツポリシーでスタイルクラスを定義できます。
-* その後、コンテンツ作成者は、ページ上のコンポーネントの編集時にドロップダウンからこれらのクラスを選択して、対応するスタイルを適用できます。
+* その後、コンテンツ作成者は、ページ上のコンポーネントの編集時にドロップダウンリストからこれらのクラスを選択し、対応するスタイルを適用できます。
 
 次に、style クラスがコンポーネントの装飾ラッパー要素に挿入されるので、コンポーネント開発者は、CSS ルールを提供する以外にスタイルの処理に関心を持つ必要はありません。
 
@@ -104,7 +104,7 @@ AEMでは、実際には最後の 3 つの手順のみが実行されます。 �
 
 >[!CAUTION]
 >
->コンポーネントポリシーのスタイルプロパティとして設定されている CSS クラス（および必要な JavaScript）を動作可能にするには、[クライアントライブラリ](/help/implementing/developing/introduction/clientlibs.md)としてデプロイする必要があります。
+>CSS クラス（および必要な JavaScript）をコンポーネントポリシーのスタイルプロパティとして設定する場合は、をとしてデプロイする必要があります [クライアントライブラリ](/help/implementing/developing/introduction/clientlibs.md) を有効にします。
 
 ## セットアップ {#setup}
 
@@ -119,8 +119,7 @@ AEMでは、実際には最後の 3 つの手順のみが実行されます。 �
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
->[!NOTE]
->これは、[Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) を介して[オーバーレイ](/help/implementing/developing/introduction/overlays.md)を使用します。
+>[!NOTE]これは、[Sling Resource Merger](/help/implementing/developing/introduction/overlays.md) を介して[オーバーレイ](/help/implementing/developing/introduction/sling-resource-merger.md)を使用します。
 
 コンポーネントが設定されると、AEMが編集可能なすべてのコンポーネントを自動的にラップする装飾要素に対して、ページ作成者が設定したスタイルがAEMによって自動的に挿入されます。 この他にコンポーネント自体で行う必要があることはありません。
 
@@ -133,12 +132,11 @@ AEMでは、実際には最後の 3 つの手順のみが実行されます。 �
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
->[!NOTE]
->これは、[Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) を介して[オーバーレイ](/help/implementing/developing/introduction/overlays.md)を使用します。
+>[!NOTE]これは、[Sling Resource Merger](/help/implementing/developing/introduction/overlays.md) を介して[オーバーレイ](/help/implementing/developing/introduction/sling-resource-merger.md)を使用します。
 
 >[!NOTE]
 >
->編集ダイアログの「スタイル」タブは、デフォルトでは有効になっていません。
+編集ダイアログの「スタイル」タブは、デフォルトでは有効になっていません。
 
 ### 要素名を持つスタイル {#styles-with-element-names}
 
@@ -150,15 +148,13 @@ AEMでは、実際には最後の 3 つの手順のみが実行されます。 �
 
 >[!CAUTION]
 >
->組み合わせ可能なスタイルには要素名を定義しないでください。 複数の要素名を定義する場合の優先順序は次のとおりです。
+組み合わせ可能なスタイルには要素名を定義しないでください。 複数の要素名を定義する場合の優先順序は次のとおりです。
 >
->1. HTL（`data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`）が他のすべての要素よりも優先されます。
->1. 次に、複数のアクティブなスタイルの中で、コンポーネントのポリシーで設定されたスタイルのリストの最初のスタイルが優先されます。
->1. 最後に、コンポーネントの `cq:htmlTag` または `cq:tagName` がフォールバック値と見なされます。
-
+1. HTL（`data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`）が他のすべての要素よりも優先されます。
+1. 次に、複数のアクティブなスタイルの中で、コンポーネントのポリシーで設定されたスタイルのリストの最初のスタイルが優先されます。
+1. 最後に、コンポーネントの `cq:htmlTag`/ `cq:tagName` はフォールバック値と見なされます。
 >
 
-
-スタイル名を定義するこの機能は、レイアウトコンテナやコンテンツフラグメントコンポーネントなどの非常に一般的なコンポーネントに意味を追加できます。
+スタイル名を定義するこの機能は、レイアウトコンテナやコンテンツフラグメントコンポーネントなどの汎用コンポーネントに意味を追加する場合に役立ちます。
 
 例えば、レイアウトコンテナに `<main>`、`<aside>`、`<nav>` のようなセマンティクスを指定できます。

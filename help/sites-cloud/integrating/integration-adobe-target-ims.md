@@ -2,10 +2,10 @@
 title: Adobe Target との統合時に使用する IMS 設定
 description: Adobe Target との統合時に使用する IMS 設定について説明します
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 99%
+source-wordcount: '856'
+ht-degree: 91%
 
 ---
 
@@ -53,7 +53,7 @@ Target Standard API を介して AEM と Adobe Target を統合するには、Ad
 
    >[!CAUTION]
    >
-   >この設定は、[AEM で IMS 設定を完了する](#completing-the-ims-configuration-in-aem)ときに再び必要になるため、開いたままにしてください。
+   >この設定は開いたままにしておきます。 [AEMでの IMS 設定の完了](#completing-the-ims-configuration-in-aem).
 
    ![証明書をダウンロード](assets/integrate-target-ims-02.png)
 
@@ -69,11 +69,11 @@ Adobe 開発者コンソールを開いて、AEM で使用する Adobe Target �
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. 既に作成したプロジェクトが表示されます。**新規プロジェクトの作成**&#x200B;を選択 - 場所と使用方法は、以下に依存します。
+1. 既に表示されているプロジェクトがすべて表示されます。 **新規プロジェクトの作成**&#x200B;を選択 - 場所と使用方法は、以下に依存します。
 
-   * まだプロジェクトがない場合は、 **新規プロジェクトを作成**が中央の下に表示されます。
+   * まだプロジェクトがない場合は、 **新規プロジェクトを作成** 中央、下
      ![新規プロジェクトの作成 - 最初のプロジェクト](assets/integration-target-ims-02.png)
-   * 既存のプロジェクトがある場合は、それらがリストされ、 **新規プロジェクトの作成**が右上に表示されます。
+   * 既存のプロジェクトがある場合は、それらのプロジェクトがリストされ、 **新規プロジェクトを作成** が右上に表示されます。
      ![新規プロジェクトの作成 - 複数のプロジェクト](assets/integration-target-ims-03.png)
 
 
@@ -108,10 +108,10 @@ Adobe 開発者コンソールを開いて、AEM で使用する Adobe Target �
 
    ![製品プロファイルを選択し設定済み API を保存](assets/integration-target-ims-16.png)
 
-1. 作成が確定します。
+1. 作成が確認されました。
 
 <!--
-1. The creation will be confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
+1. The creation is confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
 
    ![](assets/integrate-target-ims-07.png)
 -->
@@ -167,9 +167,9 @@ AEM に戻り、Target の IMS 統合から必要な値を追加して、IMS 設
 
    ![Adobe IMS テクニカルアカウント設定](assets/integrate-target-ims-10.png)
 
-1. 「**作成**」で確認します。
+1. 「**作成**」で確定します。
 
-1. Adobe Target の設定が AEM コンソールに表示されます。
+1. Adobe Targetの設定がAEMコンソールに表示されます。
 
    ![IMS 設定](assets/integrate-target-ims-11.png)
 
@@ -207,7 +207,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
    The **Create Configuration** dialog will open.
 
-1. Enter a **Title** and, if you want, a **Name** (if left blank this will be generated from the title).
+1. Enter a **Title** and, if you want, a **Name** (if left blank it is generated from the title).
 
    You can also select the required template (if more than one is available).
 
@@ -265,7 +265,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 1. Select **OK** on the message, followed by **OK** on the dialog to confirm the configuration.
 
-1. You can now proceed to [Adding a Target Framework](/help/sites-administering/target-configuring.md#adding-a-target-framework) to configure ContextHub or ClientContext parameters that will be sent to Target. Note this may not be required for exporting AEM Experience Fragments to Target.
+1. You can now proceed to [Adding a Target Framework](/help/sites-administering/target-configuring.md#adding-a-target-framework) to configure ContextHub or ClientContext parameters that are sent to Target. Note this may not be required for exporting AEM Experience Fragments to Target.
 
 ### Tenant ID and Client Code {#tenant-client}
 
@@ -281,7 +281,7 @@ In both cases, be aware that:
 
 * By default, the Client Code (if added first) will also be automatically copied into the Tenant ID field.
 * You have the option to change the default Tenant ID set.
-* Accordingly, the backend calls to Target will be based on the **Tenant ID** and the client side calls to Target will be based on the **Client Code**.
+* Accordingly, the backend calls to Target are based on the **Tenant ID** and the client side calls to Target are based on the **Client Code**.
 
 As stated previously, the default case is the most common for AEM as a Cloud Service. Either way, make sure **both** fields contain the correct information depending on your requirements.
 

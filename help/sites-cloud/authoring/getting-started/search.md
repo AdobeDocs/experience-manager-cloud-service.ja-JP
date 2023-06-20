@@ -2,10 +2,10 @@
 title: 検索
 description: 包括的な検索でより迅速にコンテンツを見つける
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 75%
+source-wordcount: '491'
+ht-degree: 68%
 
 ---
 
@@ -33,7 +33,7 @@ AEM のオーサー環境は、リソースタイプに応じて、コンテン�
 
 リソースを検索およびフィルターするには、次のようにします。
 
-1. 開く **検索** （ツールバーの虫眼鏡アイコンを使用）をクリックし、検索語句を入力します。 候補が作成され、次の項目を選択できます。
+1. 開く **検索** （ツールバーの虫眼鏡アイコンを使用）をクリックし、検索語句を入力します。 候補が作成され、次の中から選択できます。
 
    ![検索語句](/help/sites-cloud/authoring/assets/search-term.png)
 
@@ -68,7 +68,6 @@ AEM のオーサー環境は、リソースタイプに応じて、コンテン�
    >* 選択したリソースタイプによって。例えば、アセットとコミュニティの条件はわかりやすく細分化されています。
    >* 検索フォームのインスタンスを（AEM 内の場所に適切なように）カスタマイズできる場合。
 
-
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
   -->
@@ -97,7 +96,7 @@ AEM のオーサー環境は、リソースタイプに応じて、コンテン�
 
    ![名前を付けて検索を保存](/help/sites-cloud/authoring/assets/search-save-name.png)
 
-1. 保存済みの検索結果は、次回検索パネルにアクセスするときにセレクターで選択できます。
+1. 保存済みの検索結果は、次回検索パネルにアクセスする際にセレクターから使用できます。
 
    ![保存済みの検索結果](/help/sites-cloud/authoring/assets/saved-searches.png)
 

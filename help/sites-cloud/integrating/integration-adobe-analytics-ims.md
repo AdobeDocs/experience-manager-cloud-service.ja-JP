@@ -2,10 +2,10 @@
 title: Adobe Analytics との統合時に使用する IMS 設定
 description: Adobe Analytics との統合時に使用する IMS 設定について説明します
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 100%
+source-wordcount: '887'
+ht-degree: 92%
 
 ---
 
@@ -55,7 +55,7 @@ Analytics Standard API を使用して Adobe Experience Manager as a Cloud Servi
 
    >[!CAUTION]
    >
-   >この設定は、[AEM で IMS 設定を完了する](#completing-the-ims-configuration-in-aem)ときに再び必要になるため、開いたままにしてください。
+   >この設定は開いたままにしておきます。 [AEMでの IMS 設定の完了](#completing-the-ims-configuration-in-aem).
 
    ![証明書をダウンロード](assets/integrate-analytics-ims-02.png)
 
@@ -71,12 +71,12 @@ Adobe Developer Console を開いて、AEM が使用する Adobe Analytics で�
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. 既に作成したプロジェクトが表示されます。**新規プロジェクトの作成**&#x200B;を選択 - 場所と使用方法は、以下に依存します。
+1. 既に表示されているプロジェクトがすべて表示されます。 **新規プロジェクトの作成**&#x200B;を選択 - 場所と使用方法は、以下に依存します。
 
-   * まだプロジェクトがない場合は、 **新規プロジェクトを作成**が中央の下に表示されます。
-      ![新規プロジェクトの作成 - 最初のプロジェクト](assets/integration-analytics-ims-02.png)
-   * 既存のプロジェクトがある場合は、それらがリストされ、 **新規プロジェクトの作成**が右上に表示されます。
-      ![新規プロジェクトの作成 - 複数のプロジェクト](assets/integration-analytics-ims-03.png)
+   * まだプロジェクトがない場合は、 **新規プロジェクトを作成** 中央、下
+     ![新規プロジェクトの作成 - 最初のプロジェクト](assets/integration-analytics-ims-02.png)
+   * 既存のプロジェクトがある場合は、それらのプロジェクトがリストされ、 **新規プロジェクトを作成** が右上に表示されます。
+     ![新規プロジェクトの作成 - 複数のプロジェクト](assets/integration-analytics-ims-03.png)
 
 
 1. **プロジェクトに追加**&#x200B;を選択し、続いて **API** を選択します。
@@ -107,7 +107,7 @@ Adobe Developer Console を開いて、AEM が使用する Adobe Analytics で�
 
    ![必要な製品プロファイルを選択](assets/integration-analytics-ims-16.png)
 
-1. 設定が確定します。
+1. 設定が確認されました。
 
 ### 統合への権限の割り当て {#assigning-privileges-to-the-integration}
 
@@ -160,7 +160,7 @@ AEM に戻り、Analytics の IMS 統合から必要な値を追加して、IMS 
 
 1. 「**作成**」で確定します。
 
-1. Adobe Analytics の設定が AEM コンソールに表示されます。
+1. Adobe Analyticsの設定がAEMコンソールに表示されます。
 
    ![IMS 設定](assets/integrate-analytics-ims-11.png)
 
@@ -175,7 +175,6 @@ AEM に戻り、Analytics の IMS 統合から必要な値を追加して、IMS 
    次に例を示します。
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
-
 
 1. 設定を選択します。
 1. ツールバーから&#x200B;**ヘルスチェック**&#x200B;を選択し、次に&#x200B;**チェック**&#x200B;を選択します。
@@ -198,7 +197,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
    The **Create Configuration** dialog will open.
 
-1. Enter a **Title** and, if you want, a **Name** (if left blank this will be generated from the title).
+1. Enter a **Title** and, if you want, a **Name** (if left blank, it is generated from the title).
 
    You can also select the required template (if more than one is available).
 
@@ -220,5 +219,5 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
 1. Complete other parameters as required, followed by **OK** on the dialog to confirm the configuration.
 
-1. You can now proceed to [Adding an Analytics Framework](/help/sites-administering/adobeanalytics-connect.md) to configure parameters that will be sent to Adobe Analytics. 
+1. You can now proceed to [Adding an Analytics Framework](/help/sites-administering/adobeanalytics-connect.md) to configure parameters that are sent to Adobe Analytics. 
 -->

@@ -2,10 +2,10 @@
 title: ページのコンテンツの編集
 description: ページを作成したら、コンテンツを編集して、必要な更新を行うことができます
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 81d58f25af8b023774ce8653154597d92a7ac70b
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '3019'
-ht-degree: 63%
+source-wordcount: '3004'
+ht-degree: 60%
 
 ---
 
@@ -42,51 +42,51 @@ ht-degree: 63%
 
 * **サイドパネルを切り替え**
 
-   これにより、サイドパネルが開く（または閉じる）ので、 [アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser), [コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)、および [コンテンツツリー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree).
+  これにより、サイドパネルが開く（または閉じる）ので、 [アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser), [コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)、および [コンテンツツリー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree).
 
-   ![サイドパネルの切り替え](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
+  ![サイドパネルの切り替え](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
 * **ページ情報**
 
-   次にアクセスできる [ページ情報](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) ページ上で実行できるページの詳細やアクションを含むメニュー（ページ情報の表示と編集、ページプロパティの表示、ページの公開/非公開を含む）。
+  次にアクセスできる [ページ情報](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) ページ上で実行できるページの詳細やアクションを含むメニュー（ページ情報の表示と編集、ページプロパティの表示、ページの公開/非公開を含む）。
 
-   ![ページ情報ボタン](/help/sites-cloud/authoring/assets/page-information-icon.png)
+  ![ページ情報ボタン](/help/sites-cloud/authoring/assets/page-information-icon.png)
 
 * **エミュレーター**
 
-   を切り替えます。 [エミュレーターツールバー](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate)：別のデバイスでのページのルックアンドフィールをエミュレートするために使用されます。 これは、レイアウトモードで自動的に切り替えられます。
+  を切り替えます。 [エミュレーターツールバー](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate)：別のデバイスでのページのルックアンドフィールをエミュレートするために使用されます。 これは、レイアウトモードで自動的に切り替えられます。
 
-   ![エミュレーターボタン](/help/sites-cloud/authoring/assets/emulator.png)
+  ![エミュレーターボタン](/help/sites-cloud/authoring/assets/emulator.png)
 
 * **ContextHub**
 
-   [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md) を開きます。プレビューモードでのみ使用できます。
+  [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md) を開きます。プレビューモードでのみ使用できます。
 
-   ![ContextHub ボタン](/help/sites-cloud/authoring/assets/context-hub.png)
+  ![ContextHub ボタン](/help/sites-cloud/authoring/assets/context-hub.png)
 
 * **ページタイトル**
 
-   これは単なる情報です。
+  これは単なる情報です。
 
-   ![ページタイトル](/help/sites-cloud/authoring/assets/page-title.png)
+  ![ページタイトル](/help/sites-cloud/authoring/assets/page-title.png)
 
 * **モードセレクター**
 
-   現在の [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) また、編集、レイアウト、タイムワープ、ターゲット設定など、別のモードを選択することもできます。
+  現在の [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) また、編集、レイアウト、タイムワープ、ターゲット設定など、別のモードを選択することもできます。
 
-   ![モードセレクターボタン](/help/sites-cloud/authoring/assets/mode-selector.png)
+  ![モードセレクターボタン](/help/sites-cloud/authoring/assets/mode-selector.png)
 
 * **プレビュー**
 
-   有効 [プレビューモード](#preview-mode). 公開時に表示されるページが表示されます。
+  有効 [プレビューモード](#preview-mode). 公開時に表示されるページが表示されます。
 
-   ![「プレビュー」ボタン](/help/sites-cloud/authoring/assets/preview.png)
+  ![「プレビュー」ボタン](/help/sites-cloud/authoring/assets/preview.png)
 
 * **注釈**
 
-   次を追加できます： [注釈](/help/sites-cloud/authoring/fundamentals/annotations.md) をページに追加します。 最初の注釈の後、アイコンはページ上の注釈の数を示す番号に切り替わります。
+  次を追加できます： [注釈](/help/sites-cloud/authoring/fundamentals/annotations.md) をページに追加します。 最初の注釈の後、アイコンはページ上の注釈の数を示す番号に切り替わります。
 
-   ![注釈ボタン](/help/sites-cloud/authoring/assets/annotations.png)
+  ![注釈ボタン](/help/sites-cloud/authoring/assets/annotations.png)
 
 ### ステータスの通知 {#status-notification}
 
@@ -112,21 +112,21 @@ ht-degree: 63%
 
 ## コンポーネントプレースホルダー {#component-placeholder}
 
-コンポーネントプレースホルダーは、コンポーネントをドロップしたときの位置を示すインジケーターで、現在カーソルを合わせているコンポーネントの上に表示されます。
+コンポーネントプレースホルダーは、コンポーネントをドロップしたときの位置（現在カーソルを合わせているコンポーネントの上）を示すインジケーターです。
 
 * 新しいコンポーネントをページに追加する場合（コンポーネントブラウザーからドラッグ）:
 
-   ![ページに新しいコンポーネントを追加する際のプレースホルダー](/help/sites-cloud/authoring/assets/editing-component-placeholder.png)
+  ![ページに新しいコンポーネントを追加する際のプレースホルダー](/help/sites-cloud/authoring/assets/editing-component-placeholder.png)
 
 * 既存のコンポーネントを移動する場合：
 
-   ![ページ上の既存のコンポーネントを移動する際のプレースホルダー](/help/sites-cloud/authoring/assets/editing-component-placeholder-existing.png)
+  ![ページ上の既存のコンポーネントを移動する際のプレースホルダー](/help/sites-cloud/authoring/assets/editing-component-placeholder-existing.png)
 
 ## コンポーネントの挿入 {#inserting-a-component}
 
 ### コンポーネントブラウザーからのコンポーネントの挿入 {#inserting-a-component-from-the-components-browser}
 
-[コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)を使用して、新しいコンポーネントを追加できます。[コンポーネントプレースホルダー](#component-placeholder)にコンポーネントの配置先が表示されます。
+新しいコンポーネントを追加するには、 [コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). この [コンポーネントプレースホルダー](#component-placeholder) コンポーネントの配置場所が表示されます。
 
 1. ページが&#x200B;[**編集**&#x200B;モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)であることを確認します。
 1. [コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)を開きます。
@@ -146,15 +146,15 @@ ht-degree: 63%
 
    * を選択します。 **コンポーネントを挿入** オプション (+) を既存のコンポーネントのツールバーまたは **ここにコンポーネントをドラッグ** ボックス
 
-      ![コンポーネントの挿入](/help/sites-cloud/authoring/assets/editing-insert-component.png)
+     ![コンポーネントの挿入](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
    * デスクトップデバイスを使用している場合は、「**コンポーネントをここにドラッグ**」ボックスをダブルクリックします。
 
    * **新規コンポーネントを挿入**&#x200B;ダイアログが表示され、必要なコンポーネントを選択できるようになります。
 
-      ![新規コンポーネントを挿入ダイアログ](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
+     ![新規コンポーネントを挿入ダイアログ](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
-1. 選択したコンポーネントがページの下部に追加されます。必要に応じてコンポーネントを[編集](#edit-content)します。
+1. 選択したコンポーネントがページの下部に追加されます。 [編集](#edit-content) 必要に応じて、コンポーネントを選択します。
 
 ### アセットブラウザーを使用したコンポーネントの挿入 {#inserting-a-component-using-the-assets-browser}
 
@@ -166,7 +166,7 @@ ht-degree: 63%
 
 1. ページが&#x200B;[**編集**&#x200B;モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)であることを確認します。
 1. を開きます。 [アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
-1. 必要なアセットを必要な位置までドラッグします。 この [コンポーネントプレースホルダー](#component-placeholder) コンポーネントを配置する場所を示します。
+1. 必要なアセットを必要な位置までドラッグします。 この [コンポーネントプレースホルダー](#component-placeholder) コンポーネントの配置場所が表示されます。
 
    アセットタイプに適したコンポーネントが必要な場所に作成され、選択したアセットが格納されます。
 
@@ -184,83 +184,83 @@ ht-degree: 63%
 
 コンポーネントを選択すると、ツールバーが開きます。このツールバーからコンポーネントに対して様々なアクションを実行できます。
 
-ユーザーが使用できる実際のアクションは、必要に応じて表示されます。ここではすべてのアクションについては説明していません。
+ユーザーが使用できる実際のアクションは、必要に応じて表示されます。ここでは、すべてのアクションについて説明するわけではありません。
 
 ![コンポーネントツールバー](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 
 * **編集**
 
-   [コンポーネントの種類に応じて](/help/sites-cloud/authoring/fundamentals/components.md)[コンポーネントのコンテンツを編集](#edit-content)できます。多くの場合、ツールバーが提供されます。
+  [コンポーネントタイプに応じて異なる](/help/sites-cloud/authoring/fundamentals/components.md)を設定すると、 [コンポーネントのコンテンツを編集](#edit-content). 多くの場合、ツールバーが用意されています。
 
-   ![「編集」ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
+  ![「編集」ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
 
 * **設定**
 
-   [コンポーネントの種類に応じて](/help/sites-cloud/authoring/fundamentals/components.md)、コンポーネントのプロパティを編集および設定できます。多くの場合、ダイアログが開きます。
+  [コンポーネントタイプに応じて異なる](/help/sites-cloud/authoring/fundamentals/components.md)を使用すると、コンポーネントのプロパティを編集および設定できます。 多くの場合、ダイアログが開きます。
 
-   ![設定ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-configure.png)
+  ![設定ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-configure.png)
 
 * **コピー**
 
-   これにより、コンポーネントがクリップボードにコピーされます。 貼り付け操作の後も、元のコンポーネントは保持されます。
+  これにより、コンポーネントがクリップボードにコピーされます。 貼り付け操作の後も、元のコンポーネントは保持されます。
 
-   ![コピーボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-copy.png)
+  ![コピーボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-copy.png)
 
 * **切り取り**
 
-   これにより、コンポーネントがクリップボードにコピーされます。 貼り付け操作の後、元のコンポーネントは削除されます。
+  これにより、コンポーネントがクリップボードにコピーされます。 貼り付け操作の後、元のコンポーネントは削除されます。
 
-   ![切り取りボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-cut.png)
+  ![切り取りボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-cut.png)
 
 * **削除**
 
-   これにより、確認を含むページからコンポーネントが削除されます。
+  これにより、確認を含むページからコンポーネントが削除されます。
 
-   ![削除ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-delete.png)
+  ![削除ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-delete.png)
 
 * **コンポーネントの挿入**
 
-   これにより、次のダイアログが開きます。 [新しいコンポーネントを追加](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-from-the-paragraph-system).
+  これにより、次のダイアログが開きます。 [新しいコンポーネントを追加](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
-   ![挿入ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-insert.png)
+  ![挿入ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-insert.png)
 
 * **貼り付け**
 
-   これにより、コンポーネントがクリップボードからページに貼り付けられます。 オリジナルが残るかどうかは、コピーを使用したか切り取ったかによって異なります。
+  これにより、コンポーネントがクリップボードからページに貼り付けられます。 オリジナルが残るかどうかは、コピーを使用したか切り取ったかによって異なります。
 
    * 同じページまたは別のページに貼り付けることができます。
    * 貼り付けられた項目は、貼り付けアクションを選択した項目の上に貼り付けられます。
    * 貼り付けアクションは、クリップボードにコンテンツがある場合にのみ表示されます。
 
-   ![貼り付けボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
+  ![貼り付けボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
 
-   >[!NOTE]
-   >
-   >切り取り/コピー操作の前に開いていた別のページに貼り付ける場合は、ページを更新して、貼り付けたコンテンツを表示する必要があります。
+  >[!NOTE]
+  >
+  >切り取り/コピー操作の前に開いていた別のページに貼り付ける場合は、ページを更新して、貼り付けたコンテンツを表示する必要があります。
 
 * **グループ**
 
-   これにより、複数のコンポーネントを一度に選択できます。 デスクトップデバイスで同じ操作をおこなうには、**Ctrl キーを押しながらクリック**&#x200B;するか、または **Command キーを押しながらクリック**&#x200B;します。
+  これにより、複数のコンポーネントを一度に選択できます。 デスクトップデバイスで同じ操作をおこなうには、**Ctrl キーを押しながらクリック**&#x200B;するか、または **Command キーを押しながらクリック**&#x200B;します。
 
-   ![グループボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
+  ![グループボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
 
 * **親**
 
-   選択したコンポーネントの親コンポーネントを選択できます。
+  選択したコンポーネントの親コンポーネントを選択できます。
 
-   ![親ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
+  ![親ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
 * **レイアウト**
 
-   これにより、 [レイアウト](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) 選択したコンポーネントの。 これは、選択したコンポーネントにのみ適用され、 [レイアウトモード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) ページ全体に対して
+  これにより、 [レイアウト](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) 選択したコンポーネントの。 これは、選択したコンポーネントにのみ適用され、 [レイアウトモード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) ページ全体に対して
 
-   ![レイアウトボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
+  ![レイアウトボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **エクスペリエンスフラグメントバリエーションに変換**
 
-   これを使用すると、選択したコンポーネントから新しい[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)を作成したり、既存のエクスペリエンスフラグメントに追加したりできます。
+  これを使用すると、選択したコンポーネントから新しい[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)を作成したり、既存のエクスペリエンスフラグメントに追加したりできます。
 
-   ![エクスペリエンスフラグメントへの変換ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
+  ![エクスペリエンスフラグメントへの変換ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
 ## コンテンツの編集 {#edit-content}
 
@@ -277,23 +277,23 @@ ht-degree: 63%
 
 * テキストコンポーネント
 
-   ![テキストコンポーネントのツールバー](/help/sites-cloud/authoring/assets/editing-text-component-toolbar.png)
+  ![テキストコンポーネントのツールバー](/help/sites-cloud/authoring/assets/editing-text-component-toolbar.png)
 
 * 画像コンポーネント
 
-   ![画像コンポーネントのツールバー](/help/sites-cloud/authoring/assets/editing-image-component-toolbar.png)
+  ![画像コンポーネントのツールバー](/help/sites-cloud/authoring/assets/editing-image-component-toolbar.png)
 
-   >[!NOTE]
-   >
-   >編集は、空の画像コンポーネントでは動作しません。
-   >
-   >画像を編集するには、まず、画像をコンポーネントにドラッグまたはアップロードする必要があります。
+  >[!NOTE]
+  >
+  >編集は、空の画像コンポーネントでは動作しません。
+  >
+  >画像を編集するには、まず、画像をコンポーネントにドラッグまたはアップロードする必要があります。
 
 * 画像コンポーネント — 全画面表示
 
-   画像コンポーネント[の全画面表示モードに入ると](#edit-content-full-screen-mode)、画像を編集する領域が広くなり、追加の編集オプション（「**マップを起動**」や「**ズームをリセット**」など）が表示されます。また、全画面表示では切り抜きプリセットを選択できます。
+  画像コンポーネント[の全画面表示モードに入ると](#edit-content-full-screen-mode)、画像を編集する領域が広くなり、追加の編集オプション（「**マップを起動**」や「**ズームをリセット**」など）が表示されます。また、全画面表示では切り抜きプリセットを選択できます。
 
-   ![画像コンポーネントの全画面表示モード](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
+  ![画像コンポーネントの全画面表示モード](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
 * 複数の基本コンポーネントで構成されるコンポーネントでは、最初に、必要な編集オプションセットを確認するメッセージが表示されます。
 
@@ -377,15 +377,15 @@ ht-degree: 63%
 
 * 継承をキャンセル
 
-   ![継承のキャンセルボタン](/help/sites-cloud/authoring/assets/editing-cancel-inheritance.png)
+  ![継承のキャンセルボタン](/help/sites-cloud/authoring/assets/editing-cancel-inheritance.png)
 
 * 継承を再度有効にする（既に継承がキャンセルされている場合）
 
-   ![継承再有効化ボタン](/help/sites-cloud/authoring/assets/editing-reenable-inheritance.png)
+  ![継承再有効化ボタン](/help/sites-cloud/authoring/assets/editing-reenable-inheritance.png)
 
 * ブループリントまたはライブコピーのソースでは、ロールアウトアクションも使用できます。
 
-   ![ロールアウトボタン](/help/sites-cloud/authoring/assets/editing-rollout.png)
+  ![ロールアウトボタン](/help/sites-cloud/authoring/assets/editing-rollout.png)
 
 ## ページテンプレートの編集 {#editing-the-page-template}
 
@@ -420,7 +420,6 @@ ht-degree: 63%
 >* コンテンツ内のリンクは表示されますが、編集モードではアクセスできません。
 >* リンクを使用して移動する場合には、いずれかのプレビューオプションを使用してください。
 >* プレビューと最後に選択したモードを切り替えるには、[キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` を使用します。
-
 
 >[!NOTE]
 >
@@ -511,7 +510,6 @@ AEM では、他のユーザーによるコンテンツの変更を防ぐため�
 >* [キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Z` を使用して、ページの編集アクションを取り消すこともできます。
 >* キーボードショートカット `Ctrl-Y` を使用して、ページの編集アクションをやり直すこともできます。
 
-
 >[!NOTE]
 >
 >ページ編集の取り消しとやり直しによって実行可能なことについて詳しくは、[ページ編集の取り消しとやり直し - 理論](#undoing-and-redoing-page-edits-the-theory)を参照してください。
@@ -541,5 +539,4 @@ AEM では、ユーザーが実行するアクションの履歴と、それら�
 >* ファイルと画像に対する変更の取り消しおよびやり直しには、特別な権限が必要になります。
 >* ファイルおよび画像に対する変更の履歴は、少なくとも 10 時間保持されます。 ただし、これ以降は、変更の取り消しは保証されません。 管理者は、デフォルトの 10 時間を変更できます。
 >* システム管理者は、インスタンスの要件に従って取り消しおよびやり直し機能の様々な面を設定できます。
-   <!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->
-
+<!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->

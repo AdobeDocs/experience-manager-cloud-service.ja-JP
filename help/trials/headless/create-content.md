@@ -4,10 +4,10 @@ description: 前に作成したコンテンツフラグメントモデルを使�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
 source-wordcount: '659'
-ht-degree: 65%
+ht-degree: 61%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 65%
 
 1. コンソールの右上にある「**作成**」ボタンをタップまたはクリックします。
 
-1. **新しいコンテンツフラグメント**&#x200B;ダイアログが開き、新しいコンテンツフラグメントの作成を開始できます。**場所**&#x200B;には、新しいコンテンツが保存される場所が自動的に入力されます。
+1. この **新しいコンテンツフラグメント** 新しいコンテンツフラグメントの作成を開始できるダイアログボックスが開きます。 **場所** は、新しいコンテンツが保存される場所を自動的に設定します。
 
 1. 内 **コンテンツフラグメントモデル** ドロップダウンで、 **冒険** 前に作成したコンテンツフラグメントモデル。
 
@@ -62,7 +62,7 @@ ht-degree: 65%
 1. 次を提供： **説明** を次のテキストに貼り付けます。
 
    ```text
-   Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour will be rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality.  Tuscany’s natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
+   Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour are rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality. Tuscany's natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
    ```
 
 1. 次を提供： **価格** 」と入力して、 `$700`.

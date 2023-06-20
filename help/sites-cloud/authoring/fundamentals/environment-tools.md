@@ -2,10 +2,10 @@
 title: オーサリング環境とツール
 description: AEM のオーサリング環境は、コンテンツを編成および編集するための様々なメカニズムを提供しています
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2157'
-ht-degree: 62%
+source-wordcount: '2153'
+ht-degree: 60%
 
 ---
 
@@ -46,7 +46,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 
 ## コンポーネントブラウザー {#components-browser}
 
-コンポーネントは AEM コンテンツの構成要素です。AEM でコンテンツページを作成するには、ページ上に複数のコンポーネントを配置し、そのオプションを設定します。
+コンポーネントは AEM コンテンツの構成要素です。ページ上に複数のコンポーネントを配置し、それらのオプションを設定して、AEMでコンテンツページを作成します。
 
 コンポーネントブラウザーには、現在のページで使用可能なすべてのコンポーネントが表示されます。 これらは適切な場所にドラッグし、編集してコンテンツを追加できます。
 
@@ -60,21 +60,21 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 
 * **モバイルデバイス（例：iPad）**
 
-   コンポーネントブラウザーは、編集中のページを完全にカバーします。
+  コンポーネントブラウザーは、編集中のページを完全にカバーします。
 
-   ページにコンポーネントを追加する場合は、必要なコンポーネントをタッチ&amp;ホールドして右側に移動すると、コンポーネントブラウザーが閉じてページが再度表示され、コンポーネントの配置先になります。
+  ページにコンポーネントを追加する場合は、必要なコンポーネントをタッチ&amp;ホールドして右側に移動すると、コンポーネントブラウザーが閉じてページが再度表示され、コンポーネントの配置先になります。
 
-   ![モバイル版のコンポーネントブラウザー](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
+  ![モバイル版のコンポーネントブラウザー](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
 
 * **デスクトップデバイス**
 
-   ウィンドウの左側にコンポーネントブラウザが開きます。
+  ウィンドウの左側にコンポーネントブラウザが開きます。
 
-   ページにコンポーネントを追加するには、必要なコンポーネントをクリックし、必要な場所にドラッグします。
+  ページにコンポーネントを追加するには、必要なコンポーネントをクリックし、必要な場所にドラッグします。
 
-   ![デスクトップデバイス上のコンポーネントブラウザー](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
+  ![デスクトップデバイス上のコンポーネントブラウザー](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
-   コンポーネントは、
+  コンポーネントは、
 
    * コンポーネント名
    * コンポーネントグループ（グレー）
@@ -82,16 +82,16 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
       * 標準コンポーネントのアイコンはモノクロです。
       * 略語は常にコンポーネント名の最初の 2 文字です。
 
-   **コンポーネント**&#x200B;ブラウザーの上部のツールバーでは、次の操作を実行できます。
+  **コンポーネント**&#x200B;ブラウザーの上部のツールバーでは、次の操作を実行できます。
 
    * コンポーネントを名前でフィルターします。
    * ドロップダウンから選択して特定のグループのみを表示します。
 
-   コンポーネントについて詳しくは、**コンポーネント**&#x200B;ブラウザー内のコンポーネントの横にある情報アイコンをクリックまたはタップしてください（使用可能な場合）。例えば、**コンテンツフラグメント**&#x200B;の場合は、次のようになります。
+  コンポーネントについて詳しくは、**コンポーネント**&#x200B;ブラウザー内のコンポーネントの横にある情報アイコンをクリックまたはタップしてください（使用可能な場合）。例えば、**コンテンツフラグメント**&#x200B;の場合は、次のようになります。
 
-   ![コンポーネントブラウザーに表示される情報](/help/sites-cloud/authoring/assets/component-browser-information.png)
+  ![コンポーネントブラウザーに表示される情報](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
-   使用可能なコンポーネントについて詳しくは、[コンポーネントコンソール](/help/sites-cloud/authoring/features/components-console.md)を参照してください。
+  使用可能なコンポーネントについて詳しくは、[コンポーネントコンソール](/help/sites-cloud/authoring/features/components-console.md)を参照してください。
 
 >[!NOTE]
 >
@@ -136,19 +136,19 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 
 * **モバイルデバイス**
 
-   アセットブラウザーは、編集中のページの上に完全に表示されます。
+  アセットブラウザーは、編集中のページの上に完全に表示されます。
 
-   ページにアセットを追加するには、必要なアセットをタッチ&amp;ホールドし、右側に移動します。アセットブラウザーが閉じてページが再度表示され、必要なコンポーネントにアセットを追加できます。
+  ページにアセットを追加するには、必要なアセットをタッチ&amp;ホールドし、右側に移動します。アセットブラウザーが閉じてページが再度表示され、必要なコンポーネントにアセットを追加できます。
 
-   ![モバイル版のアセットブラウザー](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
+  ![モバイル版のアセットブラウザー](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
 
 * **デスクトップデバイス**
 
-   アセットブラウザーがウィンドウの左側に開きます。
+  アセットブラウザーがウィンドウの左側に開きます。
 
-   ページにアセットを追加するには、目的のアセットをクリックし、必要なコンポーネントまたは場所にドラッグします。
+  ページにアセットを追加するには、目的のアセットをクリックし、必要なコンポーネントまたは場所にドラッグします。
 
-   ![デスクトップ版のアセットブラウザー](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
+  ![デスクトップ版のアセットブラウザー](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 
 >[!NOTE]
 >
@@ -182,13 +182,13 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 
 * 基本ページの例を以下に示します。
 
-   ![強調表示されたコンテンツツリー](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
+  ![強調表示されたコンテンツツリー](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
 
-   基本ページのコンポーネントには通常のオプションがあります。
+  基本ページのコンポーネントには通常のオプションがあります。
 
-   ツリー内でクリックしたコンポーネントが編集可能な場合は、レンチアイコンが名前の右に表示されます。 このアイコンをクリックすると、コンポーネントの編集ダイアログが直接開始されます。
+  ツリー内でクリックしたコンポーネントが編集可能な場合は、レンチアイコンが名前の右に表示されます。 このアイコンをクリックすると、コンポーネントの編集ダイアログが直接開始されます。
 
-   ![コンテンツツリー編集ボタン](/help/sites-cloud/authoring/assets/content-tree-edit.png)
+  ![コンテンツツリー編集ボタン](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
 * または、[ライブコピー](/help/sites-cloud/administering/msm/overview.md)の一部を構成するページが開かれます。ここではコンポーネントが別のページから継承されます。
 
@@ -270,7 +270,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 * [タイムワープ](/help/sites-cloud/authoring/features/page-versions.md#timewarp) ：特定の時点のページの状態を表示できます。
 * [ライブコピーステータス](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status)  — ライブコピーのステータスと継承される（または継承されない）コンポーネントの概要をすばやく確認できます。
 * [開発者モード](/help/implementing/developing/tools/developer-mode.md)
-* [プレビュー](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - パブリッシュ環境とまったく同じ形式でページを表示する、またはコンテンツ内のリンクを使用して移動するために使用します。
+* [プレビュー](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages)  — パブリッシュ環境で表示されるページを表示するために使用します。またはコンテンツ内のリンクを使用して移動する場合に使用します。
 * [注釈](/help/sites-cloud/authoring/fundamentals/annotations.md) - ページで注釈の追加または表示を行う場合に使用するモード。
 
 これらのモードには右上のアイコンを使用してアクセスできます。実際のアイコンは、現在利用中のモードに合わせて変化します。
@@ -284,7 +284,6 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 >* モバイルデバイスでは、スペースが制限されているので、開発者モードを使用できません。
 >* [キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)（`Ctrl-Shift-M`）で、**プレビュー**&#x200B;と、現在選択されているモード（**編集モード**、**レイアウトモード**&#x200B;など）を切り替えることができます。
 >
-
 
 ## パスの選択 {#path-selection}
 
@@ -316,7 +315,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 * ダイアログの上部にある検索フィールドは、いつでも使用できます。 次をクリック： **X** をクリックして、検索をクリアします。
 * 検索を絞り込むには、フィルターオプションを表示して、特定のパスに基づいて結果をフィルターできます。
 
-   ![フィルターオプション](/help/sites-cloud/authoring/assets/filters-option.png)
+  ![フィルターオプション](/help/sites-cloud/authoring/assets/filters-option.png)
 
 ## キーボードショートカット {#keyboard-shortcuts}
 

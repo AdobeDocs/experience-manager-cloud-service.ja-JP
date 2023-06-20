@@ -2,10 +2,10 @@
 title: ローンチの編集
 description: ページ（またはページのセット）のローンチを作成した後、ページのローンチコピーのコンテンツを編集できます。
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 72%
+source-wordcount: '552'
+ht-degree: 73%
 
 ---
 
@@ -27,7 +27,6 @@ ht-degree: 72%
 >ローンチ内でページを移動することはできません。この操作を試みると、次の警告メッセージが表示されます：
 >
 >* 警告：このページはローンチのソースです。ページの移動は許可されません。
-
 
 ### ライブコピーへのローンチページサブジェクトの編集 {#editing-launch-pages-subject-to-a-live-copy}
 

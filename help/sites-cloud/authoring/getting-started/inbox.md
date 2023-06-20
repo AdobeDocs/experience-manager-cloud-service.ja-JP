@@ -2,10 +2,10 @@
 title: インボックス
 description: インボックスを使用したタスクの管理
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 78%
+source-wordcount: '905'
+ht-degree: 73%
 
 ---
 
@@ -30,7 +30,6 @@ ht-degree: 78%
 >* [プロジェクト](/help/sites-cloud/authoring/projects/overview.md)
 >* [プロジェクト - タスクの操作](/help/sites-cloud/authoring/projects/tasks.md)
 >* [ワークフロー](/help/sites-cloud/authoring/workflows/overview.md)
-
 
 ## ヘッダー内のインボックス {#inbox-in-the-header}
 
@@ -86,26 +85,26 @@ AEM通知インボックスを開くには：
 
 * **カレンダー表示**
 
-   の場合 **カレンダー表示** 以下を設定できます。
+  の場合 **カレンダー表示** 以下を設定できます。
 
    * **グループ化の基準**
    * **予定**&#x200B;または&#x200B;**なし**
    * **カードサイズ**
 
-   ![インボックスのカレンダー表示の設定](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
+  ![インボックスのカレンダー表示の設定](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **リスト表示**
 
-   の場合 **リスト表示** 並べ替えメカニズムを設定できます。
+  の場合 **リスト表示** 並べ替えメカニズムを設定できます。
 
    * **並べ替え基準**
    * **並べ替え順序**
 
-   ![インボックスのリスト表示の設定](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
+  ![インボックスのリスト表示の設定](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-   カレンダーを他のユーザーに委任したり、他のユーザーに委任を依頼したり、委任を管理したりすることもできます。
+  カレンダーを他のユーザーに委任したり、他のユーザーに委任を依頼したり、委任を管理したりすることもできます。
 
-   ![インボックスのリスト表示の委任設定](/help/sites-cloud/authoring/assets/inbox-delegation.png)
+  ![インボックスのリスト表示の委任設定](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
 ## 項目に対するアクションの実行 {#taking-action-on-an-item}
 
@@ -126,6 +125,7 @@ AEM通知インボックスを開くには：
       * 項目のプロパティを表示する
       * さらなるアクションに適したダッシュボードやウィザードを開く
       * 関連するドキュメントを開く
+
    * 前のステップに&#x200B;**戻す**
    * ワークフローのペイロードを表示する
    * 項目からプロジェクトを作成する
@@ -136,11 +136,10 @@ AEM通知インボックスを開くには：
    >
    >* ワークフロー項目 — [ワークフローへの参加](/help/sites-cloud/authoring/workflows/participating.md)
 
+2. 選択した項目に応じて、アクションが開始されます。例：
 
-2. 選択した項目に応じて、アクションが開始されます。例えば、次の操作がおこなわれます。
-
-   * そのアクションに適したダイアログが開きます
-   * アクションウィザードが開始されます
+   * アクションに適したダイアログボックスが開きます
+   * アクションウィザードが起動します
    * ドキュメントページが開きます
 
    例えば、「**委任**」を選択するとダイアログが開きます。
@@ -152,7 +151,6 @@ AEM通知インボックスを開くには：
    * 適切なアクション（再割り当てなど）を確認する
    * アクションをキャンセルする
    * 戻る矢印を選択してインボックスに戻る（例えば、アクションウィザードやドキュメントページが開いている場合は、インボックスに戻ることができます）
-
 
 ## タスクの作成 {#creating-a-task}
 
@@ -176,7 +174,7 @@ AEM通知インボックスを開くには：
 
    * **アドバンス**
 
-      * **名前**：URL を作成するために使用されます。空の場合は、**タイトル**&#x200B;に基づいて設定されます。
+      * **名前**:URL を作成するために使用され、空白の場合は、 **タイトル**.
 
    ![インボックスのタスク追加の詳細オプション](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
@@ -205,9 +203,11 @@ AEM通知インボックスを開くには：
       * **開始日**
       * **期限**
       * **ユーザー** および役割
+
    * **アドバンス**
 
       * **名前**
+
    >[!NOTE]
    >
    >詳しくは、 [プロジェクトの作成](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) を参照してください。

@@ -2,10 +2,10 @@
 title: ワークフローへの参加
 description: ワークフローには通常、ページまたはアセットでユーザーがアクティビティを実行する必要があるステップが含まれています。
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1545'
-ht-degree: 62%
+source-wordcount: '1542'
+ht-degree: 61%
 
 ---
 
@@ -24,13 +24,13 @@ ht-degree: 62%
 
 作業項目（**コンテンツを承認**&#x200B;など）が割り当てられると、様々なアラートや通知が表示されます。
 
-* お使いの [通知](/help/sites-cloud/authoring/getting-started/inbox.md) インジケーター（ツールバー）は、次のように増分されます。
+* お使いの [通知](/help/sites-cloud/authoring/getting-started/inbox.md) インジケータ（ツールバー）の値は次のように増分されます。
 
-   ![通知ツールバー](/help/sites-cloud/authoring/assets/workflows-notifications.png)
+  ![通知ツールバー](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* 通知[インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)に項目がリストされます
+* 通知に項目がリスト表示されます [インボックス](/help/sites-cloud/authoring/getting-started/inbox.md):
 
-   ![インボックス内の通知](/help/sites-cloud/authoring/assets/workflows-inbox.png)
+  ![インボックス内の通知](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
 * ページエディターを使用している場合、ステータスバーには次の情報が表示されます。
    * アクティベーションのリクエストなど、ページに適用されるワークフローの名前。
@@ -39,18 +39,18 @@ ht-degree: 62%
       * 左右の矢印を使用して、様々なワークフローのステータス情報間を移動します。
       * 実際の数をクリックまたはタップして、該当するすべてのワークフローのドロップダウンリストを開き、ステータスバーに表示するワークフローを選択します。
 
-   ![複数のワークフローを含むページ](/help/sites-cloud/authoring/assets/workflows-multiple.png)
+  ![複数のワークフローを含むページ](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
-   >[!NOTE]
-   >
-   >ステータスバーは、例えば `workflow-users` グループのメンバーなど、ワークフロー特権のあるユーザーだけに表示されます。
-   >
-   >
-   >現在のユーザーがワークフローの現在のステップに直接関与している場合、アクションが表示されます。
+  >[!NOTE]
+  >
+  >ステータスバーは、例えば `workflow-users` グループのメンバーなど、ワークフロー特権のあるユーザーだけに表示されます。
+  >
+  >
+  >現在のユーザーがワークフローの現在のステップに直接関与している場合、アクションが表示されます。
 
-* 条件 **タイムライン** がリソースに対して開いている場合は、ワークフローステップが表示されます。 アラートバナーをクリックまたはタップすると、使用可能なアクションも表示されます。
+* 条件 **タイムライン** がリソースに対して開いている場合は、ワークフローの手順が表示されます。 アラートバナーをクリックまたはタップすると、使用可能なアクションも表示されます。
 
-   ![タイムライン内のワークフロー](/help/sites-cloud/authoring/assets/workflows-timeline.png)
+  ![タイムライン内のワークフロー](/help/sites-cloud/authoring/assets/workflows-timeline.png)
 
 ### 参加者ステップの完了 {#completing-a-participant-step}
 
@@ -219,19 +219,19 @@ ht-degree: 62%
 
 * 「**作業項目**」タブ
 
-   ![「作業項目」タブ](/help/sites-cloud/authoring/assets/workflows-work-item.png)
+  ![「作業項目」タブ](/help/sites-cloud/authoring/assets/workflows-work-item.png)
 
 * 「**ワークフロー情報**」タブ
 
-   ![「ワークフロー情報」タブ](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
+  ![「ワークフロー情報」タブ](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
 
-   ワークフローステージがモデルのために設定されている場合は、これらに従って進捗を表示できます。<!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
+  ワークフローステージがモデルのために設定されている場合は、これらに従って進捗を表示できます。<!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
 
-   ![ワークフローステージ](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
+  ![ワークフローステージ](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
 
 * 「**コメント**」タブ
 
-   ![「コメント」タブ](/help/sites-cloud/authoring/assets/workflows-comments.png)
+  ![「コメント」タブ](/help/sites-cloud/authoring/assets/workflows-comments.png)
 
 以下のいずれかから作業項目の詳細を開くことができます。
 

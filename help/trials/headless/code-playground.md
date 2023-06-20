@@ -4,9 +4,9 @@ description: CodePen サンプルアプリと JavaScript 用 AEM ヘッドレス
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '986'
 ht-degree: 14%
 
 ---
@@ -77,7 +77,7 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 >
 >この **serviceURL** は、CORS の問題を回避するために、プロキシAdobeIO Runtime 関数を使用するように設定されています。 これは、独自のプロジェクトに必要なわけではありませんが、CodePen アプリが体験環境で動作するために必要になります。 プロキシ関数は、 **publishHost** クエリパラメーターで指定された値。
 
-最後に、関数 `fetchJsonFromGraphQL()` は、AEMヘッドレスクライアントを使用して取得リクエストを実行するために使用されます。 この呼び出しは、コードが変更されるたびに実行されます。または、 **再取得** リンク。 実際の `aemHeadlessClient.runPersistedQuery(..)` 呼び出しは 34 行目で発生します。 少し後で、この JSON データのレンダリング方法を変更しますが、現時点では、このデータを `#output` div を使用 `resultToPreTag(queryResult)` 関数に置き換えます。
+最後に、関数 `fetchJsonFromGraphQL()` は、AEMヘッドレスクライアントを使用して取得リクエストを実行するために使用されます。 この呼び出しは、コードが変更されるたびに実行されます。または、 **再取得** リンク。 実際の `aemHeadlessClient.runPersistedQuery(..)` 呼び出しは 34 行目で発生します。 少し後で、この JSON データのレンダリング方法を変更しますが、現時点では、このデータを `#output` div を `resultToPreTag(queryResult)` 関数に置き換えます。
 
 ## 永続クエリからデータを取得 {#use-persisted-query}
 
