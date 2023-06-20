@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの基本を学ぶ
 description: コンテンツ転送ツールの基本を学ぶ
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
+source-git-commit: ea5d86e1a43bb7ae0c7608fc0625983cf2bf273f
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 98%
+source-wordcount: '1439'
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 98%
 
 コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)を使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。最新バージョンの詳細については、「[リリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja)」を参照してください。
 
-サポートされるのはバージョン 2.0.0 以降のみで、最新バージョンを使用することをお勧めします。
+バージョン 2.0.0 以降のみがサポートされており、最新バージョンを使用することをお勧めします。
 
 >[!NOTE]
 >[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)からコンテンツ転送ツールをダウンロードします。
@@ -34,7 +34,7 @@ ht-degree: 98%
 >
 >移行セットが Cloud Acceleration Manager から削除されている場合も、接続エラーが発生する可能性があります。
 
-ソース AEM インスタンスがファイアウォールの内側で動作していて、許可リストに追加された特定のホストにしか到達できない場合があります。抽出を正常に実行するには、AEM を実行しているインスタンスから、次のエンドポイントにアクセスできる必要があります。
+ソース AEM インスタンスがファイアウォールの内側で動作していて、許可リストに追加された特定のホストにしか到達できない場合があります。抽出を正常に実行するには、AEMを実行しているインスタンスから次のエンドポイントにアクセスできる必要があります。
 
 * Azure BLOB ストレージサービス：`casstorageprod.blob.core.windows.net`
 
@@ -52,6 +52,8 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 
    ![画像](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
+>[!NOTE]
+>このフラグは、SSL の問題のデバッグにのみ使用されます。 抽出を実行する前に、フラグが無効になっていることを確認してください。これには大量のディスク領域が必要になる場合があります。 これにより、ドライブ容量がいっぱいになり、抽出プロセスが失敗する可能性があります。
 
 ## コンテンツ転送ツールの実行 {#running-tool}
 
@@ -88,7 +90,7 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-   次のダイアログが表示されます。移行セットは、無操作状態が長時間続くと有効期限が切れます。警告がプロジェクトカードおよび移行ジョブテーブルの行に一定期間表示された後、移行セットは期限切れになり、そのデータは使用できなくなります。詳しくは、[移行セットの有効期限](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry)を参照してください。
+   次のダイアログボックスが表示されます。 移行セットは、無操作状態が長時間続くと有効期限が切れます。警告がプロジェクトカードおよび移行ジョブテーブルの行に一定期間表示された後、移行セットは期限切れになり、そのデータは使用できなくなります。詳しくは、[移行セットの有効期限](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry)を参照してください。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
@@ -120,7 +122,7 @@ Cloud Acceleration Manager で作成した移行セットを入力するには�
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
-1. 先ほど CAM からコピーした抽出キーを、**移行セットを作成**&#x200B;フォームの抽出キー入力フィールドに貼り付けます。その後、移行セット名と Cloud Acceleration Manager（CAM）プロジェクト名フィールドが自動的に入力されます。これらは、CAM の移行セット名と、作成した CAM プロジェクト名に一致する必要があります。コンテンツのパスを追加できるようになりました。コンテンツのパスを追加したら、移行セットを保存できます。抽出は、含めるバージョンまたは除外するバージョンで実行できます。
+1. 先ほど CAM からコピーした抽出キーを、**移行セットを作成**&#x200B;フォームの抽出キー入力フィールドに貼り付けます。その後、移行セット名と Cloud Acceleration Manager(CAM) プロジェクト名フィールドが自動的に入力されます。 これらは、CAM の移行セット名と、作成した CAM プロジェクト名に一致する必要があります。コンテンツのパスを追加できるようになりました。コンテンツのパスを追加したら、移行セットを保存します。 抽出は、含めるバージョンまたは除外するバージョンで実行できます。
 
    >[!NOTE]
    >
@@ -147,7 +149,6 @@ Cloud Acceleration Manager で作成した移行セットを入力するには�
       >* `/home`
       >* `/etc`（`/etc` の一部のパスは CTT で選択できます）
 
-
 1. **移行セットを作成**&#x200B;画面のすべてのフィールドに値を入力したら、「**保存**」をクリックします。
 
 <!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
@@ -166,7 +167,8 @@ Cloud Acceleration Manager で作成した移行セットを入力するには�
 
 ### 移行セットのサイズの決定 {#migration-set-size}
 
-移行セットを作成した後、抽出プロセスを開始する前に、移行セットに対してサイズ確認を実行することを強くお勧めします。移行セットに対してサイズ確認を実行すると、以下が可能になります。
+移行セットを作成した後、抽出プロセスを開始する前に、移行セットに対してサイズ確認を実行することを強くお勧めします。移行セットでサイズチェックを実行すると、次の操作を実行できます。
+
 * 抽出を正常に完了できるだけの十分なディスク容量が `crx-quickstart` サブディレクトリにあるかどうかを確認します。
 * 移行セットのサイズが製品の制限内に収まるかどうかを判断し、コンテンツの取り込みに失敗しないようにします。
 
@@ -184,11 +186,11 @@ Cloud Acceleration Manager で作成した移行セットを入力するには�
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
-1. **サイズ確認**&#x200B;プロセスが完了したら、ステータスが&#x200B;**完了**&#x200B;に変わります。同じ移行セットを選択し、「**サイズを確認**」をクリックして結果を表示します。以下は、警告を含まない&#x200B;**サイズ確認**&#x200B;結果の例です。
+1. 後 **サイズを確認** 処理が完了すると、ステータスは **完了**. 同じ移行セットを選択し、「**サイズを確認**」をクリックして結果を表示します。以下は、警告を含まない&#x200B;**サイズ確認**&#x200B;結果の例です。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
-1. **サイズ確認**&#x200B;の結果、空きディスク容量が不足しているか、移行セットが製品の制限を超えていることがわかった場合は、**警告**&#x200B;ステータスが表示されます。
+1. この **サイズを確認** 結果は、ディスク容量が不足しているか、移行セットが製品の制限を超えているか、または両方を超えているか、 **警告** ステータスが表示されます。
 
 <!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    
