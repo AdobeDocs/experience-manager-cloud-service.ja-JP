@@ -2,10 +2,10 @@
 title: UI テスト
 description: カスタム UI テストは、カスタムアプリケーションの UI テストを作成して自動的に実行できるオプション機能です
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 84b2648fe06b556534b53023769abaa69ef1ec2b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2411'
-ht-degree: 75%
+source-wordcount: '2401'
+ht-degree: 73%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 75%
 
 AEM には、[Cloud Manager 品質ゲート](/help/implementing/cloud-manager/custom-code-quality-rules.md)の統合スイートが用意されており、カスタムアプリケーションをスムーズに更新できるようになっています。特に、IT テストゲートでは、AEM API を使用したカスタムテストの作成と自動化に既に対応しています。
 
-UI テストは、言語とフレームワーク（Cypress、Selenium、Java と Maven、JavaScript など）を幅広く選択できるように、Docker イメージでパッケージ化されています。 また、[AEM プロジェクトアーキタイプを使用すると、UI テストプロジェクトを容易に生成できます。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)
+UI テストは、言語およびフレームワーク（Cypress、Selenium、Java および Maven、JavaScript など）の幅広い選択を可能にするために、Docker イメージでパッケージ化されています。 また、[AEM プロジェクトアーキタイプを使用すると、UI テストプロジェクトを容易に生成できます。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)
 
 Adobeは、リアルタイムの再読み込みと自動待ちを提供するので、Cypress を使用することを推奨します。これにより、時間を節約し、テスト中の生産性を向上させることができます。 Cypress は、簡単で直感的な構文を提供し、テストを初めて行うユーザーでも簡単に学習し、使用できます。
 
@@ -47,9 +47,9 @@ UI テストは、Java で記述された HTTP テストであるカスタム機
 
    * JavaScript と WDIO の場合は、Cloud Manager リポジトリの `ui.tests` フォルダーに自動的に生成されるサンプルコードを使用します。
 
-      >[!NOTE]
-      >
-      >Cloud Manager が `ui.tests` フォルダーを自動作成する前にリポジトリが作成された場合は、[AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)を使用して最新バージョンを生成することもできます。
+     >[!NOTE]
+     >
+     >Cloud Manager が `ui.tests` フォルダーを自動作成する前にリポジトリが作成された場合は、[AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)を使用して最新バージョンを生成することもできます。
 
    * Java および WebDriver の場合は、[AEM テストサンプルのリポジトリ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)からサンプルコードを使用します。
 
@@ -191,13 +191,13 @@ Cloud Manager で UI テストを作成して実行するには、リポジト�
 
 * [AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)に基づいて生成された JavaScript ベースの `ui.tests` フォルダーの場合、以下のコマンドを実行して必要な設定を追加できます。
 
-   ```shell
-   echo "ui-tests.version=1" > testing.properties
-   
-   if ! grep -q "testing.properties" "assembly-ui-test-docker-context.xml"; then
-     awk -v line='                <include>testing.properties</include>' '/<include>wait-for-grid.sh<\/include>/ { printf "%s\n%s\n", $0, line; next }; 1' assembly-ui-test-docker-context.xml > assembly-ui-test-docker-context.xml.new && mv assembly-ui-test-docker-context.xml.new assembly-ui-test-docker-context.xml
-   fi
-   ```
+  ```shell
+  echo "ui-tests.version=1" > testing.properties
+  
+  if ! grep -q "testing.properties" "assembly-ui-test-docker-context.xml"; then
+    awk -v line='                <include>testing.properties</include>' '/<include>wait-for-grid.sh<\/include>/ { printf "%s\n%s\n", $0, line; next }; 1' assembly-ui-test-docker-context.xml > assembly-ui-test-docker-context.xml.new && mv assembly-ui-test-docker-context.xml.new assembly-ui-test-docker-context.xml
+  fi
+  ```
 
 * Adobeが提供する Cypress および Java Selenium のテストサンプルには、既にオプトインフラグが設定されています。
 
@@ -242,7 +242,7 @@ Docker イメージが他のプログラミング言語またはテストラン�
 
 ### 前提条件 {#prerequisites}
 
-* Cloud Manager でのテストは、技術管理者ユーザーを使用して実行されます。
+* Cloud Manager のテストは、技術管理者ユーザーを使用して実行されます。
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ Docker イメージが他のプログラミング言語またはテストラン�
 |----------------------|-------|-----------------------------------------------------------------------|
 | CPU | 2.0 | テスト実行ごとに予約される CPU 時間の量 |
 | メモリ | 1Gi | テストに割り当てられたメモリ量（GB 単位） |
-| タイムアウト | 30m | テストを終了するまでの期間。 |
+| タイムアウト | 30m | テストが終了するまでの期間。 |
 | 推奨期間 | 15m | Adobeは、この時間を超えないようにテストを書き込むことをお勧めします。 |
 
 >[!NOTE]
@@ -343,7 +343,7 @@ Cloud Manager パイプラインで UI テストをアクティブ化する前�
 
 >[!NOTE]
 >
->ログファイルは、リポジトリの `target/` フォルダーに保存されます。
+>ログファイルは、 `target/` リポジトリのフォルダー。
 >
 >詳しくは、 [AEM Test Samples リポジトリ](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
 
@@ -390,6 +390,6 @@ Cloud Manager パイプラインで UI テストをアクティブ化する前�
 
 >[!NOTE]
 >
->ログファイルは、リポジトリの `target/reports` フォルダーに保存されます。
+>ログファイルは、 `target/reports` リポジトリのフォルダー。
 >
 >詳しくは、 [AEM Test Samples リポジトリ](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).

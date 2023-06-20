@@ -2,10 +2,10 @@
 title: 大規模なコンテンツリポジトリーの処理
 description: この節では、大規模なコンテンツリポジトリーの処理について説明します
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: cf09c7774b633ae2cf1c5b28fee2bd8191d80bb3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1846'
-ht-degree: 100%
+source-wordcount: '1837'
+ht-degree: 86%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_precopy"
 >title="大規模なコンテンツリポジトリーの処理"
->abstract="コンテンツを AEM as a Cloud Service に移動するコンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮するために、CTT は、オプションのコピー前手順として AzCopy を活用できます。この前段階が設定されたら、AzCopy は、抽出段階で Amazon S3 または Azure Blob Storage から移行セット BLOB ストアに BLOB をコピーします。取り込み段階では、AzCopy は、移行セットの BLOB ストアから宛先の AEM as a Cloud Service BLOB ストアに BLOB をコピーします。"
+>abstract="コンテンツ転送アクティビティの抽出と取り込みの段階を大幅に短縮してコンテンツをAEMas a Cloud Serviceに移動するために、CTT は AzCopy をオプションのプリコピー手順として使用できます。 この前段階が設定されたら、AzCopy は、抽出段階で Amazon S3 または Azure Blob Storage から移行セット BLOB ストアに BLOB をコピーします。取り込み段階では、AzCopy は、移行セットの BLOB ストアから宛先の AEM as a Cloud Service BLOB ストアに BLOB をコピーします。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja#setting-up-pre-copy-step" text="AzCopy をコピー前手順として使用する"
 
 コンテンツ転送ツール（CTT）で大量の BLOB をコピーするには、数日かかる場合があります。
-コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮して、コンテンツを AEM as a Cloud Service に移動するために、CTT では、オプションのコピー前手順として [AzCopy](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-v10) を活用できます。この事前コピー手順を使用できるのは、ソース AEM インスタンスが Amazon S3、Azure Blob Storage データストアまたはファイルデータストアを使用するように設定されている場合です。  事前コピーステップは、1回目の完全抽出と取り込みに最も効果的です。ただし、後続のトップアップに対して事前コピーを使用することは、プロセス全体に時間がかかる可能性があるので推奨されません（トップアップのサイズが 200GB 未満の場合）。この事前手順が設定されたら、AzCopy は、抽出段階で Amazon S3、Azure Blob Storage またはファイルデータストアから移行セット BLOB ストアに BLOB をコピーします。取り込み段階では、AzCopy は、移行セットの BLOB ストアから宛先の AEM as a Cloud Service BLOB ストアに BLOB をコピーします。
+コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮してコンテンツをAEM as a Cloud Serviceに移動するには、CTT で次を使用します。 [AzCopy](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-v10) を追加します。 この事前コピー手順を使用できるのは、ソース AEM インスタンスが Amazon S3、Azure Blob Storage データストアまたはファイルデータストアを使用するように設定されている場合です。  事前コピーステップは、1回目の完全抽出と取り込みに最も効果的です。ただし、後続のトップアップに対して事前コピーを使用することは、プロセス全体に時間がかかる可能性があるので推奨されません（トップアップのサイズが 200GB 未満の場合）。この事前手順が設定されたら、AzCopy は、抽出段階で Amazon S3、Azure Blob Storage またはファイルデータストアから移行セット BLOB ストアに BLOB をコピーします。取り込み段階では、AzCopy は、移行セットの BLOB ストアから宛先の AEM as a Cloud Service BLOB ストアに BLOB をコピーします。
 
 ## 開始する前に考慮すべき重要事項 {#important-considerations}
 
 開始する前に、次の重要事項を確認してください。
 
-* CTT のバージョン 2.0.16 以降では、バンドルのインストール時にプレコピーの設定が自動的に行われます。さらに、移行セットのサイズが 200 GB を超える場合、抽出プロセスは自動的にプレコピー機能を利用します。azcopy.config ファイルは、crx-quickstart/cloud-migration/ ディレクトリに作成されます。CTT バージョン 2.0.16 以降を使用している場合は、プレコピー設定を手動で行う必要はありません。
+* CTT のバージョン 2.0.16 以降では、バンドルのインストール時にプリコピーの設定が自動的に行われます。 さらに、移行セットのサイズが 200 GB を超える場合、抽出プロセスは自動的にプレコピー機能を利用します。azcopy.config ファイルは、crx-quickstart/cloud-migration/ ディレクトリに作成されます。CTT バージョン 2.0.16 以降を使用している場合は、プレコピー設定を手動で行う必要はありません。
 
 * ソース AEM のバージョンは 6.3 ～ 6.5 である必要があります。
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 ### ソース AEM インスタンスが Amazon S3 または Azure Blob Storage データストアを使用するように設定されている場合の追加の考慮事項 {#additional-considerations-amazons3-azure}
 
-* Amazon S3 と Azure Blob Storage の両方からのデータ転送にはコストがかかるため、転送コストは、（AEM で参照されているかどうかに関係なく）既存のストレージ コンテナ内のデータの総量に比例します。詳しくは、[Amazon S3](https://aws.amazon.com/s3/pricing/) および [Azure Blob Storage](https://azure.microsoft.com/ja-jp/pricing/details/bandwidth/) を参照してください。
+* Amazon S3 と Azure Blob Storage の両方からのデータ転送に関連するコストがあるので、転送コストは既存のストレージコンテナ内のデータの総量 (AEMで参照されているかどうかに関わらず ) に対する相対的なコストになります。 詳しくは、[Amazon S3](https://aws.amazon.com/s3/pricing/) および [Azure Blob Storage](https://azure.microsoft.com/ja-jp/pricing/details/bandwidth/) を参照してください。
 
 * 既存のソース Amazon S3 バケット用のアクセスキーと秘密鍵のペア、または既存のソース Azure Blob Storage コンテナ用の SAS URI が必要です（読み取り専用アクセスで問題ありません）。
 
@@ -55,7 +55,7 @@ ht-degree: 100%
 ## AzCopy をコピー前手順として使用する設定 {#setting-up-pre-copy-step}
 
 >[!NOTE]
->CTT のバージョン 2.0.16 以降では、バンドルのインストール時にプレコピーの設定が自動的に行われます。さらに、移行セットのサイズが 200 GB を超える場合、抽出プロセスは自動的にプレコピー機能を利用します。azcopy.config ファイルは、crx-quickstart/cloud-migration/ ディレクトリに作成されます。ファイルの設定を手動で更新する場合は、以下の節を参照してください。
+>CTT のバージョン 2.0.16 以降では、バンドルのインストール時にプレコピーの設定が自動的におこなわれます。 さらに、移行セットのサイズが 200 GB を超える場合、抽出プロセスは自動的にプレコピー機能を利用します。azcopy.config ファイルは、crx-quickstart/cloud-migration/ ディレクトリに作成されます。ファイルの設定を手動で更新する場合は、以下の節を参照してください。
 
 この節では、コンテンツ転送ツールを使用して AzCopy をコピー前手順として使用し、コンテンツを AEM as a Cloud Service に移行する方法を説明します。
 
@@ -81,10 +81,10 @@ Azure portal の既存のコンテナープロパティページから、「**�
 #### ファイルデータストア {#file-data-store-determine-size}
 
 * Mac および UNIX システムの場合は、データストアディレクトリで du コマンドを実行してサイズを取得します。
-   `du -sh [path to datastore on the instance]`。例えば、データストアが `/mnt/author/crx-quickstart/repository/datastore` にある場合は、次のコマンドでそのサイズを取得できます。`du -sh /mnt/author/crx-quickstart/repository/datastore`
+  `du -sh [path to datastore on the instance]`。例えば、データストアが `/mnt/author/crx-quickstart/repository/datastore` にある場合は、次のコマンドでそのサイズを取得できます。`du -sh /mnt/author/crx-quickstart/repository/datastore`
 
 * Windows の場合は、データストアディレクトリで dir コマンドを使用してサイズを取得します。
-   `dir /a/s [location of datastore]`。
+  `dir /a/s [location of datastore]`。
 
 ### 1. AzCopy をインストールする {#install-azcopy}
 
@@ -102,14 +102,14 @@ Azure portal の既存のコンテナープロパティページから、「**�
 
 最新の CTT リリースには Amazon S3、Azure Blob Storage、ファイルデータストアの AzCopy のサポートが含まれています。
 CTT の最新リリースは、[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)ポータルからダウンロードできます。
-なお、バージョン 2.0.0 以降しかサポートされていませんので、最新バージョンの使用をお勧めします。
+サポートされているのはバージョン 2.0.0 以降のみであり、最新バージョンを使用することをお勧めします。
 
 ### 3. azcopy.config ファイルを設定する {#configure-azcopy-config-file}
 
 ソース AEM インスタンスの `crx-quickstart/cloud-migration` で、`azcopy.config` という新しいファイルを作成します。
 
 >[!NOTE]
->この設定ファイルの内容は、ソース AEM インスタンスが Azure データストア、Amazon S3 データストア、ファイルデータストアのどれを使用しているかによって異なります。
+>この設定ファイルの内容は、ソースAEMインスタンスが Azure とAmazon S3 のどちらのデータストアを使用しているかによって異なります。
 
 #### Azure Blob ストレージデータストア {#azure-blob-storage-data}
 
@@ -152,7 +152,7 @@ repository.home=/mnt/crx/author/crx-quickstart/repository/datastore
 
 azCopyPath プロパティには、ソース AEM インスタンスに azCopy コマンドラインツールがインストールされている場所のフルパスを記述する必要があります。azCopyPath プロパティが見つからない場合は、BLOB の事前コピー手順は実行されません。
 
-`repository.home` プロパティが azcopy.config にない場合は、デフォルトのデータストア場所 `/mnt/crx/author/crx-quickstart/repository/datastore` が事前コピーの実行に使用されます。
+If `repository.home` プロパティが azcopy.config から見つからず、その後デフォルトのデータストアの場所が見つかりません `/mnt/crx/author/crx-quickstart/repository/datastore` は、プリコピーの実行に使用されます。
 
 ### 4. AzCopy を使用して抽出する {#extracting-azcopy}
 
@@ -172,7 +172,7 @@ c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy p
 
 おめでとうございます。このログエントリは、設定が有効と見なされ、AzCopy がソースコンテナから移行コンテナにすべての BLOB をコピー中であることを意味します。
 
-AzCopy のログエントリは抽出ログに表示され、先頭に c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [AzCopy pre-copy ]が付きます。
+AzCopy のログエントリは抽出ログに表示され、先頭に c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy — が付きます。 [AzCopy プリコピー]
 
 >[!CAUTION]
 >
@@ -189,7 +189,7 @@ AzCopy のログエントリは抽出ログに表示され、先頭に c.a.g.s.m
 
 AzCopy に問題が発生した場合、抽出は直ちに失敗し、抽出ログには失敗の詳細が記録されます。
 
-エラーの発生前にコピーされた BLOB は、その後の実行で AzCopy によって自動的にスキップされ、再度コピーされることはありません。
+エラーの前にコピーされた BLOB は、その後の実行時に AzCopy によって自動的にスキップされ、再度コピーする必要はありません。
 
 #### ファイルデータストアの場合 {#file-data-store-extract}
 

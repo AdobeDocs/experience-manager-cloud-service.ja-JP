@@ -2,10 +2,10 @@
 title: SSL 証明書の管理の概要
 description: Cloud Manager が、SSL 証明書をインストールするセルフサービスツールを提供する方法について説明します。
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: f69a26c6156c1f9038d612a00b16cac0e51e17ca
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 100%
+source-wordcount: '632'
+ht-degree: 79%
 
 ---
 
@@ -15,17 +15,17 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="SSL 証明書の管理"
->abstract="Cloud Manager が、ユーザーに対してサイトを保護するために、SSL 証明書をインストールおよび管理するセルフサービスツールを提供する方法について説明します。Cloud Manager は、プラットフォーム TLS サービスを使用して、SSL 証明書と、サードパーティの証明機関から取得され、顧客が所有する秘密鍵を管理します。"
+>abstract="Cloud Manager が、SSL 証明書をインストールおよび管理して、ユーザーのためにサイトを保護するセルフサービスツールを提供する方法について説明します。 Cloud Manager は、プラットフォーム TLS サービスを使用して、SSL 証明書と、サードパーティの証明機関から取得され、顧客が所有する秘密鍵を管理します。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=ja" text="SSL 証明書の表示、更新、置換"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=ja" text="SSL 証明書のステータスの確認"
 
-Cloud Manager には、SSL 証明書をインストールおよび管理するセルフサービスツールが用意されており、これを使用してサイトをユーザーに対して保護できます。Cloud Manager は、プラットフォーム TLS サービスを使用して、SSL 証明書と、サードパーティの証明機関（Let’s Encrypt など）から取得され、顧客が所有する秘密鍵を管理します。
+Cloud Manager には、SSL 証明書をインストールおよび管理するセルフサービスツールが用意されており、これにより、サイトをユーザーに対して保護できます。 Cloud Manager は、プラットフォーム TLS サービスを使用して、顧客が所有し、Let&#39;s Encrypt などのサードパーティの証明機関から取得した SSL 証明書および秘密鍵を管理します。
 
 ## 証明書の概要 {#certificates}
 
-企業は SSL 証明書を使用して自社の web サイトを保護し、顧客の信頼を確保します。SSL プロトコルを使用するには、web サーバーが SSL 証明書の使用を要求します。
+企業は SSL 証明書を使用して自社の web サイトを保護し、顧客の信頼を確保します。SSL プロトコルを使用するには、Web サーバーで SSL 証明書を使用する必要があります。
 
-事業体が CA に証明書を要求すると、CA は検証プロセスを完了します。これは、ドメイン名制御の検証から、会社登録書や加入者契約書の収集まで多岐にわたります。事業体の情報が検証されると、CA は CA の秘密鍵を使用して公開鍵に署名します。主要な認証機関はすべて web ブラウザーのルート証明書を持っているので、事業体の証明書は&#x200B;*信頼チェーン*&#x200B;を介してリンクされ、web ブラウザーはそれを信頼済み証明書と認識します。
+事業体が CA に証明書を要求すると、CA は検証プロセスを完了します。これは、ドメイン名制御の検証から、会社登録書や加入者契約書の収集まで多岐にわたります。事業体の情報が検証されると、CA は CA の秘密鍵を使用して公開鍵に署名します。主要な認証局はすべて Web ブラウザーでルート証明書を持つので、エンティティの証明書は *信頼の連鎖* Web ブラウザーは、この証明書を信頼済みの証明書と認識します。
 
 >[!IMPORTANT]
 >
@@ -47,7 +47,7 @@ Cloud Manager では、次の顧客向け SSL 証明書の使用オプション�
 AEM as a Cloud Service は、セキュリティで保護された `https` サイトのみをサポートしています。
 
 * 複数のカスタムドメインを持つ顧客の場合、ドメインを追加するたびに証明書をアップロードしたくはありません。
-* 複数のドメインを持つ 1 つの証明書を取得することで、そのような顧客にメリットが得られます。
+* このようなお客様には、複数のドメインで 1 つの証明書を取得するというメリットがあります。
 
 ## 要件 {#requirements}
 
