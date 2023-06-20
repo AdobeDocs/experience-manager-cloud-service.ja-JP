@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: beb6ac3dbb036559510e6a2e2700b28c433ef98d
+source-git-commit: 26178edc3308801e0273aca67b7cd82180131483
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 37%
+source-wordcount: '372'
+ht-degree: 36%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 37%
 
 - ASSETS-25729 — ビュースイッチャーメニューが切れている
 - ASSETS-25728 - 「アセットを再処理」オプションは検索表示で使用できません
+- ASSETS-22603 — 一部のダウンロードタイプのアセットレポート列には、UI に「null」値が表示されます。 ダウンロード可能な CSV は影響を受けません。
 
 ### 修正された問題 {#fixed-issues-12255}
 
