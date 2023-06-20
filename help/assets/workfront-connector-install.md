@@ -4,10 +4,10 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] のイ
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: aa183901e80ba414fc3db5af01fbc49d082af7b6
+source-git-commit: 5568be57db4e270fcee22e637fc40f07529e0ecd
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 78%
+source-wordcount: '854'
+ht-degree: 71%
 
 ---
 
@@ -22,6 +22,7 @@ ht-degree: 78%
 
 >[!IMPORTANT]
 >
+>* 2022 年 6 月より、Adobeは、WorkfrontとAdobe Experience Manager Assets as a Cloud Serviceを接続するための新しいネイティブ統合をリリースしました。 この統合は、これら 2 つのソリューションを接続するために必要な方法となりました。 Workfront as a Cloud ServiceとAEM Assetsを接続するための拡張コネクタ（1.9.8 以降）の今後の新しい実装は、ブロックされます。 この統合の設定方法について詳しくは、 [Experience Manager Assets統合の設定](workfront-connector-configure.md).
 >* Adobeは、認定パートナーまたは [!DNL Adobe Professional Services] を介してのみ [!DNL Adobe Workfront for Experience Manager enhanced connector] のデプロイメントと構成を必要とします。認定パートナーなしでデプロイおよび設定した場合、または [!DNL Adobe Professional Services]の場合、Adobe ではサポートされません。
 >
 >* アドビは、このコネクターを冗長にする[!DNL Adobe Workfront]および [!DNL Adobe Experience Manager] の更新をリリースする可能性があります。この場合、お客様はこのコネクターの使用から移行する必要が生じることがあります。
@@ -46,7 +47,7 @@ ht-degree: 78%
    >
    >* プログラムの IP を見つけるには、ターミナルウィンドウを開き、次のようなコマンドを実行します。
    >
-   >    ```TXT
+   >    ```
    >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
    >
    >    ```

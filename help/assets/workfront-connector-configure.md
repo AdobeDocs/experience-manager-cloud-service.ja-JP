@@ -4,10 +4,10 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] の設
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: 5568be57db4e270fcee22e637fc40f07529e0ecd
 workflow-type: tm+mt
-source-wordcount: '1723'
-ht-degree: 99%
+source-wordcount: '1787'
+ht-degree: 86%
 
 ---
 
@@ -22,6 +22,7 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
+>* 2022 年 6 月より、Adobeは、WorkfrontとAdobe Experience Manager Assets as a Cloud Serviceを接続するための新しいネイティブ統合をリリースしました。 この統合は、これら 2 つのソリューションを接続するために必要な方法となりました。 Workfront as a Cloud ServiceとAEM Assetsを接続するための拡張コネクタ（1.9.8 以降）の今後の新しい実装は、ブロックされます。 この統合の設定方法について詳しくは、 [Experience Manager Assets統合の設定](workfront-connector-configure.md).
 >* Adobeは、認定パートナーまたは [!DNL Adobe Professional Services] を介してのみ [!DNL Adobe Workfront for Experience Manager enhanced connector] のデプロイメントと構成を必要とします。認定パートナーなしでデプロイおよび設定した場合、または [!DNL Adobe Professional Services]の場合、Adobe ではサポートされません。
 >
 >* アドビは、このコネクターを冗長にする[!DNL Adobe Workfront]および [!DNL Adobe Experience Manager] の更新をリリースする可能性があります。この場合、お客様はこのコネクターの使用から移行する必要が生じることがあります。
@@ -30,10 +31,9 @@ ht-degree: 99%
 >
 >* 詳しくは、[Workfront for Experience Manager Assets 拡張コネクタに関するパートナー認定試験](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html)を参照してください。試験について詳しくは、[試験ガイド](https://express.adobe.com/page/Tc7Mq6zLbPFy8/)を参照してください。
 
-
 ## イベント購読の設定 {#event-subscriptions}
 
-イベント購読は、[!DNL Adobe Workfront] で発生するイベントを AEM に通知するために使用されます。動作するのにイベント購読が必要な [!DNL Workfront for Experience Manager enhanced connector] 機能は 3 つあります。
+イベント購読は、[!DNL Adobe Workfront] で発生するイベントを AEM に通知するために使用されます。三つある [!DNL Workfront for Experience Manager enhanced connector] イベントサブスクリプションが機能する必要がある機能は、次のとおりです。
 
 * プロジェクトにリンクされたフォルダーの自動作成。
 * Workfront ドキュメントのカスタムフォーム値の変更を AEM アセットメタデータに同期します。
@@ -45,7 +45,7 @@ ht-degree: 99%
 * セクション 6 で作成した [!UICONTROL Workfront カスタム統合]を選択します。
 * 「[!UICONTROL Workfront イベント購読の有効化]」をクリック します。
 
-   ![イベント購読](/help/assets/assets/event-subs.png)
+  ![イベント購読](/help/assets/assets/event-subs.png)
 
 ## リンクされたフォルダーの設定 {#linked-folders}
 
@@ -63,8 +63,8 @@ ht-degree: 99%
 1. Workfront のフォルダーのタイトルに構造内のすべてのフォルダーを含める必要がある場合は、「フォルダー構造名を使用して Workfront でリンクされたフォルダーのタイトルを作成」チェックボックスをオンにする必要があります。それ以外の場合は、最後のフォルダーのタイトルになります。
 1. サブフォルダーのマルチフィールドでは、リンクされたフォルダーの子フォルダーとして作成するフォルダーのリストを指定できます。
 1. プロジェクトのステータス：リンクされたフォルダーを作成するためにプロジェクトを設定する必要があるステータスを選択します。
-1. ポートフォリオを使用してプロジェクトにリンクフォルダーを作成：リンクされたフォルダーを作成するためにプロジェクトが属する必要のあるポートフォリオのリスト。この一覧を空のままにして、すべてのプロジェクトポートフォリオのリンクフォルダーを作成します。
-1. カスタムフォームフィールドを使用してプロジェクトにリンクフォルダーを作成：カスタムフォームフィールドとそれに対応する値（リンクされたフォルダーを作成するためにプロジェクトに必要な値）。この設定は、空のままにした場合は無視されます。フィールドに `CUSTOM FORMS: Create DAM Linked Folder` を選択して、値に `Yes` を入力します。
+1. ポートフォリオを含むプロジェクトで、リンクされたフォルダーを作成します。リンクされたPortfolioーを作成できるように、プロジェクトが属する必要があるフォルダーのリスト。 この一覧を空のままにして、すべてのプロジェクトポートフォリオのリンクフォルダーを作成します。
+1. カスタムフォームフィールドを含む、プロジェクト内にリンクされたフォルダーを作成します。リンクされたフォルダーを作成できるように、カスタムフォームフィールドと、プロジェクトに必要な対応する値。 この設定は、空のままにした場合は無視されます。 フィールドに `CUSTOM FORMS: Create DAM Linked Folder` を選択して、値に `Yes` を入力します。
 1. 「リンクされたフォルダーの自動作成を有効にする」をクリックします。「イベントの購読」タブに戻ると、作成イベントが 1 つ表示されます。
 
 ![リンクされたフォルダー設定](/help/assets/assets/wf-linked-folder-config.png)
@@ -104,7 +104,7 @@ Adobe Workfront ドキュメントとアセット間のメタデータマッピ�
    * タスクのカスタムフォームフィールド
    * プロジェクトの概要フィールド（ID、名前、説明、参照番号）
 
-1. [!UICONTROL Workfront カスタムフォームフィールド]で選択された [!DNL Workfront] フィールドが Workfront User type-ahead フィールドである場合、マッピングする Workfront ユーザーフィールドを指定する必要があります。これを行うには、「Workfront の参照オブジェクトから値を取得」フィールドをオンにしてから、マッピングする値を取得する [!UICONTROL Workfront ユーザーカスタムフォームフィールド]の名前を指定します。
+1. 例えば、 [!DNL Workfront] 選択されたフィールド [!UICONTROL Workfrontカスタムフォームフィールド] はWorkfront User type-ahead フィールドです。マッピングするWorkfrontユーザーフィールドを指定する必要があります。 これを行うには、「Workfront の参照オブジェクトから値を取得」フィールドをオンにしてから、マッピングする値を取得する [!UICONTROL Workfront ユーザーカスタムフォームフィールド]の名前を指定します。
 
    ![メタデータマッピング設定](/help/assets/assets/wf-metadata-mapping-config1.png)
 
@@ -170,7 +170,7 @@ AEM でアセットのバージョン履歴を管理するには、AEM でアセ
 
 1. Experience Manager で、**[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／ **[!UICONTROL Workfront ツール設定]**&#x200B;をクリックし、「**[!UICONTROL 詳細]**」タブを開きます。
 
-1. 「**[!UICONTROL 既存のアセットのバージョンと同じ名前のアセットを保存]**」オプションを選択します。オプションをオンにすると、既存のアセットのバージョンとして同じ名前で同じ場所にアップロードされたアセットを保存できます。オプションをオフにすると、新しいアセットは別の名前（例：`asset-name.pdf` および `asset-name-1.pdf`）で作成されます。
+1. 「**[!UICONTROL 既存のアセットのバージョンと同じ名前のアセットを保存]**」オプションを選択します。オプションをオンにすると、既存のアセットのバージョンとして同じ名前で同じ場所にアップロードされたアセットを保存できます。オフのままにすると、別の名前 ( 例： `asset-name.pdf` および `asset-name-1.pdf`) をクリックします。
 
 1. 「**[!UICONTROL 新しいバージョンの作成時にアセットメタデータを更新]**」オプションを選択します。オプションをオンにすると、アセットの新しいバージョンが作成されるたびに、アセットのメタデータが更新されます。オプションをオフにすると、アセットは新しいバージョンの作成前のメタデータを保持します。
 
@@ -182,7 +182,7 @@ AEM でアセットのバージョン履歴を管理するには、AEM でアセ
 
 ## カスタムフォームを添付 {#attach-custom-forms}
 
-このワークフローステップでは、ユーザーはカスタムフォームを [!DNL Workfront] アーティファクトに添付できます。このワークフローステップは、任意のワークフローモデルに追加できます。この手順の影響を受ける [!DNL Workfront] アーティファクトは、ペイロードからの相対パスを使用して検索されます。
+このワークフローステップでは、ユーザーはカスタムフォームを [!DNL Workfront] アーティファクトに添付できます。このワークフローステップは、任意のワークフローモデルに追加できます。この手順が影響を与える [!DNL Workfront] アーティファクトは、ペイロードからの相対パスを使用して検索されます。
 
 Experience Manager のワークフローエディターで、[!UICONTROL Workfront - カスタムフォームを添付]ワークフローステップのプロパティを編集します。
 
@@ -192,7 +192,7 @@ Experience Manager のワークフローエディターで、[!UICONTROL Workfro
 
 1. Experience Manager で、**[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／ **[!UICONTROL Workfront ツール設定]** をクリックし、「**[!UICONTROL 詳細]**」タブを開きます。
 
-1. 「**[!UICONTROL Workfront から送信されたときにアセットを自動的に公開する]**」を選択します。このオプションを使用すると、Workfront から AEM にアセットが送信される際に、アセットの自動公開を有効にできます。この機能は、Workfront カスタムフォームフィールドと、そのフィールドを設定する値を指定することで、条件付きで有効にできます。ドキュメントが AEM に送信されるたびに、条件を満たしている場合、アセットは自動的に公開されます。
+1. 「**[!UICONTROL Workfront から送信されたときにアセットを自動的に公開する]**」を選択します。このオプションを使用すると、Workfront から AEM にアセットが送信される際に、アセットの自動公開を有効にできます。この機能は、Workfront カスタムフォームフィールドと、そのフィールドを設定する値を指定することで、条件付きで有効にできます。ドキュメントがAEMに送信されるたびに、その条件が満たされた場合は、アセットが自動的に公開されます。
 
 1. 「**[!UICONTROL プロジェクトの完了時に、すべてのプロジェクトアセットを Brand Portal に公開する]**」を選択します。このオプションを使用すると、属する Workfront プロジェクトのステータスが `Complete` に変更された場合、[!DNL Brand Portal] にアセットを自動的に公開できます。
 
