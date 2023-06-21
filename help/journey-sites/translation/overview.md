@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 100%
+source-wordcount: '931'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ AEM の強力な翻訳ツールを使用して AEM Sites コンテンツを翻�
 
 ## はじめに {#introduction}
 
-AEM Sites は、デジタルエクスペリエンスを作成および管理するための強力なツールセットです。コンテンツ作成者は、サイトエディターを使用してデジタルエクスペリエンスをたやすく作成し、Sites コンソールを使用してコンテンツを整理することができます。それと同時に、AEM により、あらゆるチャネルにわたってオーディエンスに配信されるコンテンツをライブで確認できます。
+AEM Sites は、デジタルエクスペリエンスを作成および管理するための強力なツールセットです。コンテンツ作成者は、サイトエディターを使用してデジタルエクスペリエンスを簡単に作成し、サイトコンソールを使用してコンテンツを整理し、AEMがチャネルをまたいでオーディエンスに配信したコンテンツをライブで表示できます。
 
 AEM には、コンテンツを翻訳するための強力なツールが用意されているので、他の地域やロケールのオーディエンスにも限りなく迅速にコンテンツを配信できます。このドキュメントジャーニーでは、オーサリングツールについても紹介するので、AEM でのコンテンツの作成および管理方法を理解したあと、独自の翻訳プロジェクトの管理に必要な詳細情報を入手することができます。
 
@@ -75,6 +75,6 @@ AEM の強力な機能の連携の仕組みについて詳しくは、次に示�
 
 * [ヘッドレスオーサリングジャーニー](/help/journey-headless/author/overview.md) - AEM の強力で柔軟なヘッドレス機能とその能力および初めてのヘッドレスプロジェクトでコンテンツをモデル化する方法を説明するガイド付きジャーニーは、ここから始めてください。
 * [ヘッドレスアーキテクトジャーニー](/help/journey-headless/architect/overview.md) - Adobe Experience Manager as a Cloud Service の強力で柔軟なヘッドレス機能と、プロジェクトのコンテンツをモデル化する方法の入門的解説が必要であれば、ここから始めてください。
-* [AEM ヘッドレス開発者ジャーニー](/help/journey-headless/developer/overview.md) - AEM の強力で柔軟なヘッドレス機能とその能力、および初めての開発プロジェクトでの活用方法を説明するガイド付きジャーニーは、ここから始めてください。
+* [AEMヘッドレス開発者ジャーニー](/help/journey-headless/developer/overview.md) - AEMの強力で柔軟なヘッドレス機能、その機能、最初の開発プロジェクトでの使用方法を示すガイド付きのジャーニーを開始します。
 * [AEM as a Cloud Service 技術ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ja) - AEM およびヘッドレステクノロジーを既にしっかり理解している場合は、アドビの詳細な技術ドキュメントを直接参照することをお勧めします。
 * [AEM ヘッドレスチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja) - 技術指向の方が実践による学習を希望する場合は、API とフレームワーク別に整理された実践チュートリアルを利用してください。このチュートリアルでは、AEM ヘッドレスに基づくアプリケーションの作成と使用の詳細を紹介しています。

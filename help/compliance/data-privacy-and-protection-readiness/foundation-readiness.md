@@ -2,10 +2,10 @@
 title: データ保護とデータプライバシーに関する規制 - Adobe Experience Manager as a Data Foundation の対応
 description: 様々なデータ保護およびデータプライバシー規則に対する Adobe Experience Manager as a Cloud Service のサポートについて説明します。これには、EU 一般データ保護規則（GDPR）、カリフォルニア州消費者プライバシー法、および新しい AEM as a Cloud Service プロジェクトを実装する際の準拠方法が含まれます。
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
-source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 94%
+source-wordcount: '504'
+ht-degree: 92%
 
 ---
 
@@ -45,7 +45,7 @@ AEM Foundation レベルでは、保存される個人データはユーザー�
 
 ### HTTP API {#http-api}
 
-前述したように、自動化を促進するために、ユーザーデータにアクセスするための API が用意されています。利用可能な API には、以下のようにいくつかのタイプがあります。
+既に述べたように、Adobeは、自動化を容易にするユーザーデータにアクセスするための API を提供します。 利用可能な API には、以下のようにいくつかのタイプがあります。
 
 **UserProperties API**
 

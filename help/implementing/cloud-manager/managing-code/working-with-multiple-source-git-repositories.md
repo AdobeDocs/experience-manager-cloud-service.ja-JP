@@ -2,10 +2,10 @@
 title: 複数のリポジトリの使用
 description: Cloud Manager を操作する際に複数の Git リポジトリを管理する方法について説明します。
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
-source-git-commit: 5ea5c3f03642ae2f7471165d4d0ee33c2cc31b6b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 100%
+source-wordcount: '756'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Cloud Manager の Git リポジトリを直接操作するのではなく、[顧
 
 以下は、顧客が所有する 2 つの Git リポジトリのサンプル `pom.xml` ファイルです。
 
-* 最初のプロジェクトは、`project-a` という名前のディレクトリに格納されます。
+* 最初のプロジェクトは、 `project-a`.
 * 2 番目のプロジェクトは、`project-b` という名前のディレクトリに格納されます。
 
 ```xml

@@ -3,10 +3,10 @@ title: サーバー側 API（レガシー）用のアクセストークンの生
 description: セキュアな JWT トークンを生成することで、サードパーティサーバーとAEMas a Cloud Serviceの間の通信を容易にする方法を説明します
 hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 55%
+source-wordcount: '1359'
+ht-degree: 54%
 
 ---
 
@@ -122,6 +122,7 @@ AEM のこのテクニカルアカウントユーザーには、通常の方法�
 AEM as a Cloud Service 開発者コンソールの使用に必要な権限については、[開発者ガイドラインドキュメント](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)を参照してください。
 
 >[!NOTE]
+>
 ローカル開発アクセストークンは最大 24 時間有効で、その後は同じ方法で再生成する必要があります。
 
 開発者は、このトークンを使用して AEM 以外のテストアプリケーションから AEM as a Cloud Service 環境に呼び出しを行うことができます。通常、開発者は、このトークンを、自分のノート PC 上の非AEMアプリケーションで使用します。 また、AEM as a Cloud Service は通常、非実稼働環境です。
@@ -147,9 +148,10 @@ AEM as a Cloud Service 開発者コンソールの使用に必要な権限につ
 
 ![資格情報の更新](assets/credential-refresh.png)
 
-ボタンをクリックすると、新しい資格情報セットが生成されます。新しい資格情報でシークレットストレージを更新し、新しい資格情報が正常に機能していることを検証できます。
+ボタンを押すと、一連の新しい資格情報が生成されます。 新しい資格情報でシークレットストレージを更新し、新しい資格情報が正常に機能していることを検証できます。
 
 >[!NOTE]
+>
 「**サービス資格情報を更新**」ボタンをクリックしても、古い資格情報は期限が切れるまで登録されたままになりますが、開発者コンソールには常に最新のセットのみ表示されます。
 
 ## サービス資格情報の失効 {#service-credentials-revocation}

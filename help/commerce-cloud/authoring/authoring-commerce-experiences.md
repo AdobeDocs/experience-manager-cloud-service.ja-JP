@@ -2,10 +2,10 @@
 title: コマースエクスペリエンスのオーサリング
 description: コマースエクスペリエンスの作業
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: b72565e45087a1237eb7e5fa5eb4706d1d534975
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
+source-wordcount: '701'
+ht-degree: 98%
 
 ---
 
@@ -69,9 +69,9 @@ CIF 製品カタログページは、その場でレンダリングされる仮�
 
 ![RTE](../assets/authoring/RTE.png)
 
-    >[!NOTE]
+    >[！注意 ]
     >
-    > カテゴリと製品の両方が選択された場合、製品のほうを取る。
+    > カテゴリと製品の両方が選択された場合、製品が選択されます。
 
 これにより、ページのレンダリング時に実際のリンクに置き換えられるプレースホルダーリンクが作成されます。
 

@@ -3,10 +3,10 @@ title: AEM ヘッドレスを使用した Dispatcher 設定
 description: Dispatcher は、Adobe Experience Manager パブリッシュ環境の前にあるキャッシュとセキュリティのレイヤーです。ヘッドレスアプリケーションに対して GraphQL エンドポイントを開くには、いくつかの設定が使用されます。
 feature: Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
-source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 100%
+source-wordcount: '232'
+ht-degree: 93%
 
 ---
 
@@ -28,7 +28,7 @@ AEM プロジェクトの一部として、Dispatcher の設定を含む Dispatc
 /0060 { /type "allow" /method '(POST|OPTIONS)' /url "/content/_cq_graphql/*/endpoint.json" }
 ```
 
-`*` ワイルドカードを使用すると、AEM インスタンス上で複数のエンドポイントが開きます。GraphQL エンドポイントを使用したクエリは、`POST` を使用して作成され、応答は&#x200B;**キャッシュされません**。
+`*` ワイルドカードを使用すると、AEM インスタンス上で複数のエンドポイントが開きます。GraphQLエンドポイントを使用したクエリは、 `POST` そして応答は **not** をキャッシュします。
 
 ## GraphQL 永続クエリ
 

@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service 用カスタムコンポーネントの開発
 description: 以下のチュートリアルでは、AEM Screens 用のカスタムコンポーネントを作成する手順について説明します。AEM Screens では、他の AEM 製品の様々な既存のデザインパターンやテクノロジーを再利用しています。このチュートリアルでは、AEM Screens 用に開発する際の相違点と特別な考慮事項について重点的に説明します。
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2115'
-ht-degree: 100%
+source-wordcount: '2106'
+ht-degree: 94%
 
 ---
 
@@ -69,7 +69,7 @@ Screens プロジェクトのソースコードは、通常、マルチモジュ
 
    CRXDE Lite での ui.apps コードの表現
 
-   **helloworld** コンポーネントは、現時点では、プレースホルダーにすぎません。チュートリアルの過程で機能が追加されて、コンポーネントに表示されるメッセージを作成者が更新できるようになります。
+   **helloworld** コンポーネントは、現時点では、プレースホルダーにすぎません。チュートリアルの過程で、機能が追加され、作成者はコンポーネントに表示されるメッセージを更新できます。
 
 1. **screens-weretail-run.ui.content** パッケージでは、以下のパスにコードがインストールされます。
 
@@ -184,7 +184,7 @@ AEM Screens には、従来の WCM Sites コンポーネントには必ずしも
 
    上記は、Hello World コンポーネントの編集用マークアップです。ダイアログメッセージが既に入力されている場合、最初のブロックにはコンポーネントの編集バージョンが表示されます。
 
-   ダイアログメッセージがまだ入力されていない場合は、2 番目のブロックがレンダリングされます。その場合、`cq-placeholder` と `data-emptytext` は、「***Hello World***」というラベルをプレースホルダーとしてレンダリングします。複数のロケールでのオーサリングをサポートするために、ラベルの文字列を i18n を使用して国際化することができます。
+   ダイアログメッセージがまだ入力されていない場合は、2 番目のブロックがレンダリングされます。その場合、`cq-placeholder` と `data-emptytext` は、「***Hello World***」というラベルをプレースホルダーとしてレンダリングします。ラベルの文字列は、複数のロケールでのオーサリングをサポートするために、i18n を使用して国際化できます。
 
 1. **Hello World コンポーネントに使用する Screens 画像ダイアログをコピーします。**
 
@@ -242,7 +242,7 @@ AEM Screens には、従来の WCM Sites コンポーネントには必ずしも
                                    jcr:primaryType="nt:unstructured"
                                    sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
                                    defaultValue=""
-                                   fieldDescription="Amount of time the image will be shown in the sequence, in milliseconds"
+                                   fieldDescription="Amount of time the image is shown in the sequence, in milliseconds"
                                    fieldLabel="Duration (ms)"
                                    min="0"
                                    name="./duration"/>
@@ -255,7 +255,7 @@ AEM Screens には、従来の WCM Sites コンポーネントには必ずしも
    </jcr:root>
    ```
 
-   メッセージのテキストフィールドは `message` というプロパティに保存され、期間の数値フィールドは `duration` というプロパティに保存されます。`/apps/weretail-run/components/content/helloworld/production.html` では、これら 2 つのプロパティは `${properties.message}` および `${properties.duration}` として HTL で参照されます。
+   メッセージのテキストフィールドは、 `message` 期間の数値フィールドが `duration`. `/apps/weretail-run/components/content/helloworld/production.html` では、これら 2 つのプロパティは `${properties.message}` および `${properties.duration}` として HTL で参照されます。
 
    ![Hello World - 完成したダイアログ](/help/screens-cloud/developing/assets/2018-04-29_at_5_21pm.png)
 
@@ -265,7 +265,7 @@ AEM Screens には、従来の WCM Sites コンポーネントには必ずしも
 
 クライアント側ライブラリは、AEM の実装で必要な CSS および JavaScript ファイルの編成および管理のための仕組みを提供します。
 
-AEM Screens コンポーネントは、編集モードとプレビュー／実稼動モードではレンダリングが異なります。2 つのクライアントライブラリが作成されます。1 つは編集モード用、もう 1 つはプレビュー／実稼動用です。
+AEM Screensのコンポーネントは、編集モードとプレビュー/実稼働モードではレンダリングが異なります。 2 つのクライアントライブラリが作成されます。1 つは編集モード用、もう 1 つはプレビュー/実稼動用です。
 
 1. Hello World コンポーネントのクライアント側ライブラリ用のフォルダーを作成します。
 
@@ -411,6 +411,7 @@ Hello World コンポーネントは、シーケンスチャネルで使用す�
 1. テンプレートの手順 - 「**シーケンスチャネル**」を選択します
 
    1. プロパティの手順
+
    * 「基本」タブ／「タイトル」に「**Idle Channel**」を入力
    * 「チャネル」タブ／「**チャンネルをオンラインにする**」をオン
 
@@ -446,7 +447,7 @@ Hello World コンポーネントは、シーケンスチャネルで使用す�
 
 カスタムコンポーネントがアセット（画像、ビデオ、フォント、アイコンなど）、特定のアセットレンディションまたはクライアント側ライブラリ（css、js など）などの外部リソースを使用している場合、デフォルトでは HTML マークアップのみがバンドルされるので、オフライン設定には自動的に追加されません。
 
-プレーヤーにダウンロードされる正確なアセットをカスタマイズして最適化するには、カスタムコンポーネントの拡張メカニズムを使用して、Screens のオフラインキャッシュロジックに依存関係を公開します。
+プレーヤーにダウンロードされる正確なアセットをカスタマイズし最適化するには、カスタムコンポーネントの拡張メカニズムを使用して、Screens のオフラインキャッシュロジックに依存関係を公開します。
 
 次の節では、カスタムオフラインリソースハンドラーのテンプレートと、そのプロジェクトに対する `pom.xml` の最小要件について説明します。
 

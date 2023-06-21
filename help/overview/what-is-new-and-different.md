@@ -2,10 +2,10 @@
 title: 相違点と新機能 - Adobe Experience Manager as a Cloud Service
 description: 相違点と新機能 - Adobe Experience Manager（AEM）as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 6c06df453a2c9116889c25b1d1198df2dbf26f88
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1903'
-ht-degree: 100%
+source-wordcount: '1899'
+ht-degree: 97%
 
 ---
 
@@ -192,7 +192,7 @@ OSGi バンドルとその関連設定を管理する web コンソール（以�
 
 ### ローカル開発 {#aem-as-a-cloud-service-developing-local-development}
 
-迅速な反復と開発をサポートするために、AEM as a Cloud Service のコンテキスト以外で AEM アプリケーションを開発することもできます。このために、次のアーティファクトが開発者に公開されています。
+迅速な反復と開発をサポートするために、AEMのas a Cloud Serviceのコンテキスト以外でAEMアプリケーションを開発することもできます。 このために、次のアーティファクトが開発者に公開されています。
 
 * AEM as a Cloud Service QuickStart：最新 AEM コードベースの `.jar` ベーススタンドアロンインストーラーで、同じ機能と API サーフェスを備えています。
 
@@ -242,7 +242,7 @@ AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用した
 >
 >詳しくは、まず[基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)を参照してください。
 
-AEM Sites についても AEM Assets についても、オーサリングユーザーインターフェイス（UI）の基本原則は、これまでに AEM を使用したことがある人にとってはなじみ深いものです。
+Sites と Assets の両方に対するオーサリングユーザーインターフェイス (UI) の基本原則は、以前にAEMを使用したことのあるユーザーにとってはなじみのあるものです。
 
 主な違いは、UI が完全にタッチ対応であることです。クラシック UI は使用できなくなりました。それ以外の点では、基本はそのまま変わらず、見た目のわずかな変更があるだけです。
 

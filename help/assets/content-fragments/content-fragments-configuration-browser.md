@@ -2,16 +2,16 @@
 title: コンテンツフラグメント - 設定ブラウザー（アセット - コンテンツフラグメント）
 description: 設定ブラウザーでコンテンツフラグメント機能を有効にする方法について説明します。
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 100%
+source-wordcount: '360'
+ht-degree: 88%
 
 ---
 
 # コンテンツフラグメント - 設定ブラウザー{#content-fragments-configuration-browser}
 
-AEM の強力なヘッドレス配信機能を活用するために、設定ブラウザーで特定のコンテンツフラグメント機能を有効にする方法を説明します。
+設定ブラウザーで特定のコンテンツフラグメント機能を有効にして、AEMの強力なヘッドレス配信機能を使用する方法を説明します。
 
 ## インスタンスに対するコンテンツフラグメント機能の有効化 {#enable-content-fragment-functionality-instance}
 
@@ -26,7 +26,6 @@ AEM の強力なヘッドレス配信機能を活用するために、設定ブ�
 >
 >* 新しいモデルを作成する&#x200B;**作成**&#x200B;オプションは使用できません。
 >* [Sites 設定を選択して関連するエンドポイントを作成する](/help/headless/graphql-api/graphql-endpoint.md)ことはできません。
-
 
 コンテンツフラグメント機能を有効にするには、次の操作を実行する必要があります。
 
@@ -55,21 +54,19 @@ AEM の強力なヘッドレス配信機能を活用するために、設定ブ�
 >* 永続クエリは（引き続き）親（ルート）設定に関連して保存されます。
 
 
-
 1. **ツール**／**一般**&#x200B;に移動し、**設定ブラウザー**&#x200B;を開きます。
 
 1. 「**作成**」を使用してダイアログを開き、次の操作を行います。
 
    1. 「**タイトル**」を指定します。
-   1. **名前**&#x200B;はリポジトリのノード名になります。
-      * タイトルに基づいて自動的に生成され、[AEM の命名規則](/help/implementing/developing/introduction/naming-conventions.md)に従って調整されます。
+   1. この **名前** はリポジトリ内のノード名になります。
+      * タイトルに基づいて自動的に生成され、 [AEM命名規則。](/help/implementing/developing/introduction/naming-conventions.md)
       * 必要に応じて調整できます。
    1. 使用できるようにするには、以下を選択します。
       * **コンテンツフラグメントモデル**
       * **GraphQL 永続クエリ**
 
       ![設定の定義](assets/cfm-conf-01.png)
-
 
 1. 「**作成**」を選択して、定義を保存します。
 

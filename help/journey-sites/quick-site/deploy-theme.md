@@ -2,10 +2,10 @@
 title: カスタマイズしたテーマのデプロイ
 description: パイプラインを使用してサイトテーマをデプロイする方法を説明します。
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '1027'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -117,4 +117,4 @@ AEM は強力なツールであり、その他にも使用可能なオプショ�
 * [オンボーディングジャーニー](/help/journey-onboarding/overview.md) - このガイドは、チームが確実に設定され、AEM as a Cloud Service にアクセスできるようにするための出発点となります。
 * [Adobe Experience Manager Cloud Manager ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja) - Cloud Manager の機能について詳しくは、Cloud Manager のドキュメントを参照してください。
 * [サイト管理ドキュメント](/help/sites-cloud/administering/site-creation/create-site.md) - クイックサイト作成ツールの機能について詳しくは、サイト作成に関する技術ドキュメントを参照してください。
-* [フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - このドキュメントでは、フロントエンドパイプラインを使用したフロントエンド開発プロセスから、最大限の能力を引き出すために考慮すべき事項を説明します。
+* [フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)  — このドキュメントでは、注意が必要な考慮事項について説明し、フロントエンドパイプラインを使用してフロントエンド開発プロセスから最大限の機能を引き出すためのものです。

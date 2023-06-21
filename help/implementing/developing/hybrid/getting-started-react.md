@@ -2,10 +2,10 @@
 title: React を使用した AEM での SPA の概要
 description: この記事では、サンプルの SPA アプリケーションを紹介し、その設定方法を説明するほか、React を使用して独自の SPA の運用を速やかに開始する方法についても説明します。
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 94%
+source-wordcount: '1142'
+ht-degree: 85%
 
 ---
 
@@ -31,7 +31,7 @@ AEM での SPA の動作について詳しくは、次のドキュメントを�
 
 >[!NOTE]
 >
->SPA 内のコンテンツを作成するには、コンテンツを AEM に格納し、コンテンツモデルによって公開する必要があります。
+>SPA内でコンテンツを作成するには、コンテンツをAEMに格納し、コンテンツモデルによって公開する必要があります。
 >
 >AEM 外で開発された SPA については、コンテンツモデルの契約に準拠していない場合、オーサリングをおこなうことはできません。
 
@@ -39,7 +39,7 @@ AEM での SPA の動作について詳しくは、次のドキュメントを�
 
 ## 依存関係、設定、ビルド {#dependencies-configuration-and-building}
 
-サンプルの SPA では、必要な React の依存関係以外に、追加のライブラリも利用して SPA の作成を効率化できます。
+サンプルのSPAでは、必要な React 依存関係に加えて、追加のライブラリを使用してSPAの作成をより効率的におこなうことができます。
 
 ### 依存関係 {#dependencies}
 
@@ -60,7 +60,7 @@ AEM での SPA の動作について詳しくは、次のドキュメントを�
  react-dom
 ```
 
-クライアントライブラリの作成をビルドプロセスの一部として自動化するために、`aem-clientlib-generator` が活用されています。
+この `aem-clientlib-generator` は、クライアントライブラリの作成をビルドプロセスの一部として自動化するために使用されます。
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -97,7 +97,7 @@ module.exports = {
 
 ### ビルド {#building}
 
-実際には、 [Webpack](https://webpack.js.org/) aem-clientlib-generator に加え、クライアントライブラリの自動作成に使用するトランスパイルのため。 したがって、build コマンドは次のようになります。
+アプリで実際にを使用してビルドする [Webpack](https://webpack.js.org/) aem-clientlib-generator に加え、クライアントライブラリの自動作成に使用するトランスパイルのため。 したがって、build コマンドは次のようになります。
 
 `"build": "webpack && clientlib --verbose"`
 
@@ -105,7 +105,7 @@ module.exports = {
 
 ### AEM プロジェクトアーキタイプ {#aem-project-archetype}
 
-AEM プロジェクトでは、 [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)を活用します。このアーキタイプは、React または Angular を使用する SPA プロジェクトをサポートし、SPA SDK を活用します。
+任意のAEMプロジェクトでは、 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja):React またはAngularを使用したSPAプロジェクトをサポートし、SPA SDK を使用します。
 
 ## アプリケーション構造 {#application-structure}
 
@@ -134,7 +134,7 @@ ReactDOM.render(
 });
 ```
 
-`index.js` の主要機能は、`ReactDOM.render` 関数を活用して、DOM 内でアプリケーションをインジェクトする場所を決めることです。
+の主な機能 `index.js` は `ReactDOM.render` 関数を使用して、DOM 内でアプリケーションをインジェクトする場所を決定します。
 
 これはこの関数の標準的な使用方法です。このアプリ例に独自の使用方法ではありません。
 

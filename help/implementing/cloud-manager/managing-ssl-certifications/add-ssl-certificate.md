@@ -2,10 +2,10 @@
 title: SSL 証明書の追加
 description: Cloud Manager のセルフサービスツールを使用して独自の SSL 証明書を追加する方法を説明します。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: d0d4b22cdca02d81ca755e4045ffccb110739303
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 100%
+source-wordcount: '574'
+ht-degree: 86%
 
 ---
 
@@ -25,21 +25,21 @@ SSL 証明書ファイルを Cloud Manager にインストールするには、S
 
 * PFX を PEM に変換
 
-   ```shell
-   openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
-   ```
+  ```shell
+  openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
+  ```
 
 * P7B を PEM に変換
 
-   ```shell
-   openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
-   ```
+  ```shell
+  openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
+  ```
 
 * DER を PEM に変換
 
-   ```shell
-   openssl x509 -inform der -in certificate.cer -out certificate.pem
-   ```
+  ```shell
+  openssl x509 -inform der -in certificate.cer -out certificate.pem
+  ```
 
 ## 証明書の追加 {#adding-a-cert}
 
@@ -65,7 +65,6 @@ Cloud Manager を使用して証明書を追加するには、次の手順に従
       * 証明書を保存する前に、すべてのエラーを解決する必要があります。
       * 一般的なエラーの対処方法の詳細については、[証明書エラー](#certificate-errors)の節を参照してください。
 
-
 1. 「**保存**」をクリックして証明書を保存します。
 
 保存すると、証明書が表の新しい行として表示されます。
@@ -74,7 +73,7 @@ Cloud Manager を使用して証明書を追加するには、次の手順に従
 
 >[!NOTE]
 >
->Cloud Manager で SSL 証明書をインストールするには、ユーザーが&#x200B;**ビジネスオーナー**&#x200B;のメンバーまたは&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持っている必要があります。
+>ユーザーは、 **ビジネスオーナー** または **デプロイメントマネージャー** Cloud Manager に SSL 証明書をインストールするための役割。
 
 ## 証明書エラー {#certificate-errors}
 
@@ -154,7 +153,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->これらの 2 つのコマンドの出力は、完全に同じである必要があります。`main/server` 証明書と一致する秘密鍵が見つからない場合は、新しい CSR を生成するか、更新された証明書を SSL ベンダーに要求して、証明書を再入力する必要があります。
+>これらの 2 つのコマンドの出力は、完全に同じである必要があります。の `main/server` 証明書の場合は、新しい CSR を生成して証明書のキーを再設定するか、SSL ベンダーから更新済み証明書を要求する必要があります。
 
 ### 証明書の有効期限 {#certificate-validity-dates}
 

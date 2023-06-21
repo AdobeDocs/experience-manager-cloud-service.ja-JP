@@ -2,14 +2,14 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 リリースのリリースノート。'
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 97%
+source-wordcount: '795'
+ht-degree: 87%
 
 ---
 
-# 2022.5.0 リリースノート： [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の 2022.5.0 リリースノート {#release-notes}
 
 以下の節では、の 2022.5.0 バージョンの機能リリースノートの概要を説明します [!DNL Experience Manager] as a Cloud Service。
 
@@ -60,7 +60,7 @@ Experience Manager Assets は、Adobe Sensei AI 機能を使用して、[画像�
 
 * **アダプティブフォームの作成ウィザード**：ビジネスユーザー向けの使いやすいウィザードで、アダプティブフォームをすばやく作成できます。このウィザードではクイックタブナビゲーションを使用して、アダプティブフォームを作成するための事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択できます。
 
-   ![アダプティブフォームの作成ウィザード](/help/release-notes/assets/wizard.png)
+  ![アダプティブフォームの作成ウィザード](/help/release-notes/assets/wizard.png)
 
 ## CIF アドオン {#cloud-services-cif}
 
@@ -68,30 +68,30 @@ Experience Manager Assets は、Adobe Sensei AI 機能を使用して、[画像�
 
 * 製品コックピットに素早くアクセス：サイトエディターでワンクリックで詳細な製品情報に簡単にアクセス
 
-   ![ウィッシュリストを有効にする](/help/assets/CIF/enable-wishlist.png)
+  ![ウィッシュリストを有効にする](/help/assets/CIF/enable-wishlist.png)
 
 * 追加のマーケティングコマースコンポーネントのサポート：コンポーネントを、買い物かごへの追加と、リストへの追加のコールトゥアクションを表示するように設定できます。
 
-   ![製品コックピットへのサイトエディターショートカット](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+  ![製品コックピットへのサイトエディターショートカット](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
 ### 新機能 {#what-is-new-foundation}
 
-* レプリケーションエージェント管理画面の&#x200B;**「配布」タブ**&#x200B;にある「ツリーを追加」オプションは、以前に非推奨として発表されていましたが、2022年6月20日以降に削除されます。代わりに、コンテンツのツリー階層を持つパッケージは、[公開を管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow)を使用してレプリケートする必要があります。
+* レプリケーションエージェント管理画面の「ツリーを追加」オプション **「分布」タブ**（以前は非推奨と発表）は、2022 年 6 月 20 日以降に削除されました。 代わりに、コンテンツのツリー階層を持つパッケージは、[公開を管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow)を使用してレプリケートする必要があります。
 
-* レプリケーションエージェント管理画面またはレプリケーション API を使用して 10 MB を超えるコンテンツパッケージ （バイナリを含まないプロパティを持つノード）を配布することは非推奨であり、2022年9 月12日以降に使用できなくなります。代わりに、[公開を管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow)を使用して、これらの大規模なコンテンツパッケージをレプリケートする必要があります。 7月に、これらの大規模なコンテンツパッケージをレプリケートしようとすると、レプリケーションエージェント管理画面の&#x200B;**「配布」タブ**&#x200B;に警告メッセージが表示されます。また、レプリケーション API を使用してこれらの大規模なコンテンツパッケージをレプリケートしようとすると、AEM エラーログに警告メッセージが表示されます。9月には、警告はエラーに置き換えられます。プロセスを適宜調整してください。
+* 10 MB を超えるコンテンツパッケージ（バイナリを含まないプロパティを持つノード）を配布するためのレプリケーションエージェント管理画面またはレプリケーション API の使用は、廃止され、2022 年 9 月 12 日以降に適用されます。 代わりに、[公開を管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow)を使用して、これらの大規模なコンテンツパッケージをレプリケートする必要があります。 7月に、これらの大規模なコンテンツパッケージをレプリケートしようとすると、レプリケーションエージェント管理画面の&#x200B;**「配布」タブ**&#x200B;に警告メッセージが表示されます。また、レプリケーション API を使用してこれらの大規模なコンテンツパッケージをレプリケートしようとすると、AEM エラーログに警告メッセージが表示されます。9 月には、警告はエラーに置き換えられました。 プロセスを適宜調整します。
 
 ### [!DNL Experience Manager] プレリリースチャネルで利用できる新機能 {#prerelease-features-foundation}
 
-* AEM as a Cloud Service が統合シェルと統合され、ユーザーエクスペリエンスが向上し、他のすべての Experience Cloud アプリケーションと統合されました。詳しくは、[統合シェル上の AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) を参照してください。
+* AEM as a Cloud Service が統合シェルと統合され、ユーザーエクスペリエンスが向上し、他のすべての Experience Cloud アプリケーションと統合されました。詳しくは、 [統合シェルでas a Cloud ServiceのAEMを使用](/help/overview/aem-cloud-service-on-unified-shell.md) を参照してください。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] 基盤セキュリティ {#foundation-security}
 
 ### TLS 1.0、1.1 の廃止
 
-2022年6月30日以降、Experience Manager as a Cloud Service は、より安全なネットワーク通信とユーザーシステムとのデータ交換を必要とします。AEM は、TLS（トランスポートレイヤーセキュリティ）1.2 プロトコルのみを使用します。古いバージョンの TLS 1.0 および 1.1 は非推奨となります。
+2022年6月30日以降、Experience Manager as a Cloud Service は、より安全なネットワーク通信とユーザーシステムとのデータ交換を必要とします。AEM は、TLS（トランスポートレイヤーセキュリティ）1.2 プロトコルのみを使用します。古い TLS バージョン 1.0 および 1.1 は非推奨（廃止予定）となりました。
 
 古いバージョンの TLS 1.0 および 1.1 を引き続き使用する場合、Experience Manager as a Cloud Service のへのアクセス権が失われる可能性があります。
 

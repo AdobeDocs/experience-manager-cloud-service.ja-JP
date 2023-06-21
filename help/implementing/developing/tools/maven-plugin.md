@@ -2,10 +2,10 @@
 title: Adobe Content Package Maven Plugin
 description: Content Package Maven Plugin を使用した AEM アプリケーションのデプロイについて説明します
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1851'
-ht-degree: 93%
+source-wordcount: '1847'
+ht-degree: 92%
 
 ---
 
@@ -28,7 +28,6 @@ ht-degree: 93%
 >パッケージの&#x200B;**作成**&#x200B;は、[Apache Jackrabbit FileVault Package Maven プラグイン](https://jackrabbit.apache.org/filevault-package-maven-plugin/)で管理されるようになりました。
 >* `content-package-maven-plugin` は、リリース 1.0.2 以降、パッケージ化をサポートしなくなりました。
 >* この記事では、構築済みパッケージの AEM への&#x200B;**デプロイメント**&#x200B;を、Adobe Content Package Maven プラグインで実行する方法について説明します。
-
 
 ## パッケージと AEM プロジェクト構造 {#aem-project-structure}
 
@@ -95,7 +94,7 @@ AEM にプロキシを使用するゴールでは、Maven 設定で最初に見�
 | `serverId` | `String` | いいえ | 認証用のユーザー名とパスワードの取得元のサーバー ID | `package` を除くすべてのゴール |
 | `targetURL` | `String` | はい | `http://localhost:4502/crx/packmgr/service.jsp` | AEM パッケージマネージャーの HTTP サービス API の URL | `package` を除くすべてのゴール |
 | `timeout` | `int` | いいえ | `5` | パッケージマネージャーサービスとの通信の接続タイムアウト（秒） | `package` を除くすべてのゴール |
-| `useProxy` | `boolean` | いいえ | `true` | 値 `true` を指定すると、Maven は最初に見つかったアクティブなプロキシ設定を使用してパッケージマネージャーへのリクエストをプロキシします。 | `package` を除くすべてのゴール |
+| `useProxy` | `boolean` | いいえ | `true` | 値： `true` を使用すると、Maven は、見つかった最初のアクティブなプロキシ設定を使用してパッケージマネージャーにリクエストをプロキシします。 | `package` を除くすべてのゴール |
 | `userId` | `String` | はい | `admin` | AEM で認証するユーザー名 | `package` を除くすべてのゴール |
 | `verbose` | `boolean` | いいえ | `false` | 詳細ログを有効または無効にします | `package` を除くすべてのゴール |
 
@@ -182,7 +181,7 @@ uninstall ゴールのすべてのパラメーターについては、[共通パ
 | `prefix` | `java.lang.String` | いいえ | なし |  |
 | `project` | `org.apache.maven.project.MavenProject` | はい | なし | Maven プロジェクト |
 | `properties` | `java.util.Map` | いいえ | なし | これらのパラメーターは、`properties.xml` ファイルに設定できる追加のプロパティを定義します。これらのプロパティで次の定義済みプロパティを上書きすることはできません。`group`（`group` パラメーターを使用して設定）、`name`（`name` パラメーターを使用して設定）、`version`（`version` パラメーターを使用して設定）、`description`（プロジェクトの説明から設定）、`groupId`（Maven プロジェクト記述子の `groupId`）、`artifactId`（Maven プロジェクト記述子の `artifactId`）、`dependencies`（`dependencies` パラメーターを使用して設定）、`createdBy`（システムプロパティ `user.name` の値）、`created`（現在のシステム時刻）、`requiresRoot`（`requiresRoot` パラメーターを使用して設定）、`packagePath`（グループ名とパッケージ名から自動的に生成） |
-| `requiresRoot` | `boolean` | はい | false | パッケージにルートが必要かどうかを定義します。これは `properties.xml` ファイルの `requiresRoot` プロパティになります。 |
+| `requiresRoot` | `boolean` | はい | false | パッケージにルートが必要かどうかを定義します。が `requiresRoot` プロパティ `properties.xml` ファイル。 |
 | `subPackages` | `java.util.List` | いいえ | なし |  |
 | `version` | `java.lang.String` | はい | Maven プロジェクトで定義されるバージョン | コンテンツパッケージのバージョン |
 | `workDirectory` | `java.io.File` | はい | Maven プロジェクト（build フェーズ）で定義されるディレクトリ | パッケージに含める内容を格納するディレクトリ |

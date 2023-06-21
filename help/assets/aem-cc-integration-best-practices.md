@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '3495'
 ht-degree: 75%
@@ -138,9 +138,9 @@ Experience Manager と Creative Cloud の統合に関するベストプラクテ
 
 ### アセットが DAM に保存される理由 {#why-assets-are-stored-in-dam}
 
-DAM にアセットを保存すると、アクセスしやすくなり、見つけやすくなります。 これにより、組織やエコシステム全体の多数のユーザー（パートナー、顧客などを含む）がアセットを活用できるようになります。
+DAM にアセットを保存すると、アクセスしやすくなり、見つけやすくなります。 これにより、組織やエコシステム全体の多数のユーザー（パートナー、顧客などを含む）がアセットを使用できるようになります。
 
-ほとんどの組織では、ダウンストリームマーケティング／LOB プロセスに関連するアセットのみを保存するようにしています（例えば、Experience Manager Sites 経由での Web チャネルなどのチャネルへの公開、Adobe Experience Cloud（Experience Cloud、Advertising Cloud）により提供され、Analytics Cloud により測定される他のチャネルへの公開、ユーザー／パートナーへの提供などのプロセス）。さらに、DAM でのレビュー/承認プロセスの対象となる可能性のあるアセットを保存します。 このようにして、DAM には、利用可能な可能性の高いアセットが大部分保存され、アイドル状態のアセットを保存するのを防ぎます。
+ほとんどの組織では、ダウンストリームマーケティング／LOB プロセスに関連するアセットのみを保存するようにしています（例えば、Experience Manager Sites 経由での Web チャネルなどのチャネルへの公開、Adobe Experience Cloud（Experience Cloud、Advertising Cloud）により提供され、Analytics Cloud により測定される他のチャネルへの公開、ユーザー／パートナーへの提供などのプロセス）。さらに、DAM でのレビュー/承認プロセスの対象となる可能性のあるアセットを保存します。 これにより、DAM には、使用可能性の高いアセットが大部分保存され、アイドル状態のアセットが保存されるのを防ぎます。
 
 アセットの保存は、技術的およびリソース的な使用に関する考慮事項の影響も受けます。 DAM では、保存されたアセットに関する追加のサービス（メタデータの抽出、バージョン管理、プレビュー/トランスコードの生成、参照の管理、アクセス制御情報の追加など）を提供します。 これらのサービスは、時間とインフラストラクチャのリソースをさらに消費します。
 
@@ -220,7 +220,7 @@ Experience Manager デスクトップアプリケーションは、ネイティ�
 
 これは、デスクトップユーザーの通常のワークフローの一部として、一定のルールに従って（例：毎週、撮影するたびに毎回）ファイルをアップロードする場合についての説明です。大規模なアセット移行については、ここでは説明しません。
 
-次のアップロード機能を利用できます。
+次のアップロード機能を使用できます。
 
 * 大きなフォルダーや階層フォルダーをまとめてアップロードするには、[フォルダーアップロード](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#bulk-upload-assets)機能を提供する Experience Manager デスクトップアプリケーションを使用します。フォルダーの階層構造もアップロードできます。アセットはバックグラウンドでアップロードされるので、Web ブラウザーセッションに結び付けられることはありません
 * 1 つのフォルダーから少数のファイルをアップロードするには、ファイルを直接 Web インターフェイスにドラッグするか、Experience Manager Assets Web インターフェイスの「作成」オプションを使用します。

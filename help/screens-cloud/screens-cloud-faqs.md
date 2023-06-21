@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service の FAQ
 description: このページでは、Screens as a Cloud Service に関する FAQ を説明します。
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: 02c9cbff56399ea2ca1baad7d2289d5d4c17c1c5
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -43,7 +43,7 @@ scripts=[
 
 ## 開発者モード（オンライン）のチャネルが AEM Screens Player でレンダリングされない場合、どうすればよいですか？{#screens-cloud-online-channel-blank-iframe}
 
-AEM Screens のキャッシュ機能を活用することをお勧めしますが、チャネルを開発者モードで実行する必要があり、AEM Screens Player に空白の画面が表示される場合は、Player の開発者ツールを確認し、`X-Frame-Options` エラーまたは `frame-ancestors` エラーを検索します。解決策は、コンテンツが iFrame で実行できるように Dispatcher を設定することです。通常、次の設定で動作します。
+AEM Screensのキャッシュ機能を使用することをお勧めしますが、チャネルを開発者モードで実行する必要があり、AEM Screens Player に空白の画面が表示される場合は、Player の開発者ツールを確認し、 `X-Frame-Options` または `frame-ancestors` エラー。 解決策は、コンテンツが iFrame で実行できるように Dispatcher を設定することです。通常、次の設定で動作します。
 
 ```
 Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"

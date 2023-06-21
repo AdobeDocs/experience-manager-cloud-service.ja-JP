@@ -2,10 +2,10 @@
 title: コンテンツ転送の検証
 description: コンテンツ転送ツールを使用してコンテンツ転送を検証します
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: c1f60a1ead466b47694b8918e5b39011041c5f25
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 84%
+source-wordcount: '1062'
+ht-degree: 75%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 84%
 >
 >この機能は、コンテンツ転送ツール（CTT）バージョン 1.8.x リリース以降で使用できるようになります。AEM Cloud Service のターゲット環境は、バージョン 6158 以降を実行している必要があります。また、[事前コピー](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step)を実行するようにソース環境をセットアップする必要があります。検証機能は、ソース上の azcopy.config ファイルを探します。このファイルが見つからない場合、検証は実行されません。azcopy.config ファイルの設定方法について詳しくは、[このページ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file)を参照してください。
 
-コンテンツ転送の検証はオプション機能です。この機能を有効にすると、抽出にかかる時間と取り込みにかかる時間の両方が長くなります。この機能を使用するには、次の手順に従って、ソース AEM 環境のシステムコンソールで有効にします。
+コンテンツ転送の検証はオプション機能です。この機能を有効にすると、抽出にかかる時間と取り込みにかかる時間の両方が長くなります。この機能を使用するには、次の手順に従って、ソースAEM環境のシステムコンソールでこの機能を有効にします。
 
 1. **ツール／運営／Web コンソール**&#x200B;を選択するか、URL（*https://serveraddress:serverport/system/console/configMgr*）に直接アクセスして、ソースインスタンス上の Adobe Experience Manager Web コンソールに移動します。
 1. **Content Transfer Tool Extraction Service Configuration** を検索します。
@@ -36,7 +36,7 @@ ht-degree: 84%
 
 ソース AEM 環境で移行の検証を有効にしたうえで、抽出を開始します。
 
-「**抽出時にステージングコンテナを上書き**」が有効になっている場合は、抽出に関係するすべてのノードが抽出パスダイジェストに記録されます。この設定を使用する場合は、取り込み時に「**取り込み前にクラウドインスタンス上の既存のコンテンツを消去**」設定を有効にすることが重要です。そうしないと、取り込みダイジェストに見つからないノードがあるように見える場合があります。これらは、以前の取り込み時からターゲットに既に存在するノードです。
+If **抽出時にステージングコンテナを上書き** が有効な場合、抽出に関係するすべてのノードが抽出パスダイジェストに記録されます。 この設定を使用する場合は、取り込み時に「**取り込み前にクラウドインスタンス上の既存のコンテンツを消去**」設定を有効にすることが重要です。そうしないと、取り込みダイジェストに見つからないノードがあるように見える場合があります。これらは、以前の取り込み時からターゲットに既に存在するノードです。
 
 この例については、以下の図を参照してください。
 
@@ -44,31 +44,31 @@ ht-degree: 84%
 
 * **抽出（上書き）**
 
-   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+  ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
 
 * **取り込み（ワイプ）**
 
-   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
+  ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
 
 * **備考**
 
-   この「上書き」と「ワイプ」の組み合わせにより、取り込みを繰り返す場合でも、一貫した検証結果が得られます。
+  この「上書き」と「ワイプ」の組み合わせにより、取り込みを繰り返す場合でも、一貫した検証結果が得られます。
 
 ### 例 2 {#example-2}
 
 * **抽出**
 
-   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+  ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
 
 * **取り込み**
 
-   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+  ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
 
 * **備考**
 
-   この「上書き」と「ワイプ」の組み合わせにより、最初の取り込みでは一貫した検証結果が得られます。
+  この「上書き」と「ワイプ」の組み合わせにより、最初の取り込みでは一貫した検証結果が得られます。
 
-   取り込みを繰り返すと、取り込みダイジェストが空になり、検証が失敗したように見えます。これは、この抽出で得られたすべてのノードが既にターゲット上に存在するので、取り込みダイジェストが空になるからです。
+  取り込みを繰り返す場合、取り込みダイジェストは空になり、検証が失敗したように見えます。 取り込みダイジェストは空です。この取り込みのすべてのノードが既にターゲット上に存在しているからです。
 
 抽出が完了したら、取り込みを開始します。
 
@@ -136,7 +136,7 @@ Migration validation took 0 minutes
 
 詳しくは、 [ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) プリンシパルマイグレーションの詳細と必要な理由を読み取る
 
-抽出と取り込みが正常に完了すると、主要な移行の概要とレポートを使用できるようになります。 この情報を使用して、どのユーザーおよびグループが正常に移行されたかを検証し、おそらく一部が移行されなかった理由を判断できます。
+抽出と取り込みが正常に完了したら、主要な移行の概要とレポートを使用できます。 この情報を使用して、どのユーザーおよびグループが正常に移行されたかを検証し、おそらく一部が移行されなかった理由を判断できます。
 
 この情報を表示するには、Cloud Acceleration Manager に移動します。 プロジェクトカードをクリックし、コンテンツ転送カードをクリックします。に移動します。 **取り込みジョブ** 検証する取り込みを見つけます。 3 つのドット (**...**) をクリックし、 **プリンシパルの概要を表示** をクリックします。
 
@@ -148,7 +148,7 @@ Migration validation took 0 minutes
 
 >[!NOTE]
 >
->ユーザーマッピングが無効な場合は、このダイアログの別のバリアントが表示されます。 これは、ユーザーマッピングが無効であることを示し、ユーザーマッピング値を示す 3 つのフィールドは表示されません。
+>ユーザーマッピングが無効な場合は、このダイアログボックスの別のバリアントが表示されます。 これは、ユーザーマッピングが無効であることを示し、ユーザーマッピング値を示す 3 つのフィールドは表示されません。
 
 ## トラブルシューティング {#troubleshooting}
 

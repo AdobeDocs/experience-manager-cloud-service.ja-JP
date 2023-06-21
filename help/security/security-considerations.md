@@ -4,9 +4,9 @@ description: AEM as a Cloud Serviceを使用する際のセキュリティに関
 hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 * お客様は、 [keystore API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-)
 * トラストストアは、UI( **ツール** - **セキュリティ** - **トラストストア** または、 *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`*、以下に示すように。
 
-   ![Trust Store の管理](/help/security/assets/global-trust-store-modified.png)
+  ![Trust Store の管理](/help/security/assets/global-trust-store-modified.png)
 
 * trust-store へのアクセスは、使用事例に応じて、リポジトリのアクセス制御によってさらに制限されます。
 

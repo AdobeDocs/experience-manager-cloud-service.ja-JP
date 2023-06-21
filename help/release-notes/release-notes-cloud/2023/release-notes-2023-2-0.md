@@ -1,10 +1,10 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.2.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.2.0 リリースのリリースノート。'
-source-git-commit: 937921e0310a659f52803de3d6895db8fcac4d2b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '732'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 98%
 * 高品質のマルチチャネルフォームを好みのプログラミング言語で作成
 * デスクトップおよびモバイルアプリ、web サイト、チャットアプリケーションにフォームをネイティブに統合
 * フォームアプリケーションで独自の UI コンポーネントを再利用
-* Adobe Experience Manager Forms の機能を活用
+* Adobe Experience Manager Formsの力を使う
 
 ご自身の公式メール ID から aem-forms-headless@adobe.com にメールを送信して、早期導入者プログラムにご参加ください。
 

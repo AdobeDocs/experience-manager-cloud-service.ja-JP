@@ -2,10 +2,10 @@
 title: URL の外部化
 description: Externalizer は、プログラムによってリソースパスを外部 URL および絶対 URL に変換できる OSGi サービスです。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 100%
+source-wordcount: '660'
+ht-degree: 97%
 
 ---
 
@@ -73,7 +73,8 @@ Externalizer サービスのドメインマッピングを定義するには：
    * **`scheme`** は通常、http または https ですが、別のプロトコルを指定することもできます。
 
       * https リンクを強制するには、https を使用することをお勧めします。
-      * URL の外部化を要求する際にクライアントコードがスキームを上書きしない場合に使用されます。
+      * URL の外部化を要求する際に、クライアントコードがスキームを上書きしない場合に使用されます。
+
    * **`server`** はホスト名（ドメイン名または IP アドレス）です。
    * **`port`**（オプション）はポート番号です。
    * **`contextpath`**（オプション）は、AEM が異なるコンテキストパスの下の Web アプリケーションとしてインストールされている場合に限り設定します。
@@ -102,11 +103,11 @@ Externalizer サービスのドメインマッピングを定義するには：
 
 * **「publish」ドメインを付与してパスを外部化するには：**
 
-   ```java
-   String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
+  ```
 
-   ドメインマッピングが次のような場合：
+  ドメインマッピングが次のような場合：
 
    * `publish https://www.website.com`
 
@@ -116,11 +117,11 @@ Externalizer サービスのドメインマッピングを定義するには：
 
 * **「author」ドメインを付与してパスを外部化するには：**
 
-   ```java
-   String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
+  ```
 
-   ドメインマッピングが次のような場合：
+  ドメインマッピングが次のような場合：
 
    * `author https://author.website.com`
 
@@ -130,11 +131,11 @@ Externalizer サービスのドメインマッピングを定義するには：
 
 * **「local」ドメインを付与してパスを外部化するには：**
 
-   ```java
-   String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
+  ```
 
-   ドメインマッピングが次のような場合：
+  ドメインマッピングが次のような場合：
 
    * `local https://publish-3.internal`
 

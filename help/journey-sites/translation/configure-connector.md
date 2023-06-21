@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 100%
+source-wordcount: '1166'
+ht-degree: 96%
 
 ---
 
@@ -61,7 +61,7 @@ AEM の翻訳統合フレームワーク（TIF）は、AEM コンテンツの翻
 >
 >テスト目的で Microsoft Translator コネクタを使用する場合は、この後の 2 つの節で示している手順を実行する必要はありません（[翻訳統合設定の作成](#create-config)および[設定とコンテンツの関連付け](#associate)）。ただし、希望するコネクタを設定する必要がある場合に備えて手順を把握しておけるように、これらの節に目を通しておくことをお勧めします。
 >
->Microsoft Translator コネクタの体験版ライセンスは、実稼動用ではありません。実稼動ライセンスを取得する場合は、システム管理者が、このドキュメントの最後にある[その他のリソース](#additional-resources)の節で紹介している記事の手順に従ってライセンスを設定する必要があります。
+>Microsoft Translator Connector の体験版ライセンスは、実稼動用のライセンスではありません。ライセンスを取得する場合は、システム管理者が、 [その他のリソース](#additional-resources) の節を参照して、このドキュメントの最後にそのライセンスを設定してください。
 
 ## 翻訳統合フレームワーク設定の作成 {#create-config}
 

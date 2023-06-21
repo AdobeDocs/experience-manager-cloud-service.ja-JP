@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '6679'
-ht-degree: 100%
+source-wordcount: '6666'
+ht-degree: 98%
 
 ---
 
@@ -292,7 +292,7 @@ Dynamic Media ビューア拡張機能を使用すると、Dynamic Media ビュ�
    <td><code>%event.detail.dm.timeStamp%</code></td>
   </tr>
   <tr>
-   <td><code>BANNER</code> </td>
+   <td><code>BANNER</code><br /> </td>
    <td><code>%event.detail.dm.BANNER.asset%</code></td>
   </tr>
   <tr>
@@ -420,7 +420,7 @@ Dynamic Media ビューア拡張機能を使用すると、Dynamic Media ビュ�
 
 ## 統合のための Adobe Analytics の設定 {#configuring-adobe-analytics-for-the-integration}
 
-Adobe Analytics を設定した後、統合のために次の設定が行われます。
+Adobe Analyticsを設定した後、統合に対して次の設定がおこなわれます。
 
 * レポートスイートが配置され、選択される。
 * Analytics 変数がトラッキングデータを受け取るために使用可能になる。
@@ -460,7 +460,7 @@ Adobe Analytics を設定した後、統合のために次の設定が行われ�
 
    [prop と eVar の概要](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=ja#vars)を参照してください。
 
-   このドキュメントでは、カスタムトラフィック（prop）変数のみを使用します。これは、web ページでアクションが発生した場合、数分以内に Analytics のレポートで使用できるようになるためです。
+   このドキュメントの目的では、カスタムトラフィック (prop) 変数のみが使用されます。これは、Web ページでアクションが発生してから数分以内に Analytics レポートで使用できるようになるからです。
 
    新しいカスタムトラフィック変数を有効にするには、Adobe Analytics のツールバーで、**[!UICONTROL 管理者]**／**[!UICONTROL レポートスイート]**&#x200B;に移動します。
 
@@ -487,7 +487,7 @@ Adobe Analytics を設定した後、統合のために次の設定が行われ�
 
 ## 統合用の Experience Platform タグの設定 {#configuring-adobe-launch-for-the-integration}
 
-Experience Platform タグを設定した後、統合のために次の設定が行われます。
+統合タグを設定した後、Experience Platformに対して次の設定がおこなわれます。
 
 * すべての設定をまとめるための新しいプロパティの作成。
 * 拡張機能のインストールとセットアップ。プロパティにインストールされたすべての拡張機能のクライアント側コードは、1 つのライブラリにまとめられる。このライブラリは後で web ページで使用されます。
@@ -571,7 +571,7 @@ Experience Platform タグで使用可能なすべての拡張機能は、**[!UI
 
 [Experience Platform タグでのプロパティの作成](#creating-a-property-in-adobe-launch)を参照してください。
 
-拡張機能のインストールと設定が完了すると、少なくとも次の 5 つの拡張機能（ビデオをトラッキングしていない場合は 4 つ）が拡張機能／インストール領域に表示されます。
+拡張機能のインストールと設定が完了すると、少なくとも次の 5 つの拡張機能（ビデオをトラッキングしていない場合は 4 つ）が拡張機能/インストール領域に表示されます。
 
 ![image2019-7-22_12-7-36](assets/image2019-7-22_12-7-36.png)
 
@@ -748,7 +748,7 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
    * **[!UICONTROL タイトル]** - 説明的なアカウントのタイトルを入力します。
    * **[!UICONTROL 認証サーバー]** - 以前に開いた統合の詳細ページに戻ります。「**[!UICONTROL JWT]**」タブを選択します。次に示すように、サーバー名（パスを除く）をコピーします。
 
-（サーバー名の例は説明用です）   **[!UICONTROL アカウント]**ページに戻り、その名前を各フィールドに貼り付けます。
+   **[!UICONTROL アカウント]**ページに戻り、その名前を各フィールドに貼り付けます。
 例：`https://ims-na1.adobelogin.com/`（サーバー名の例は説明用です）。
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)

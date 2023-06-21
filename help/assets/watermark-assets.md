@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 95%
    >`com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` 設定ファイル（OSGi 設定）を使用してシステム透かしプロファイルを設定してある場合は、それを引き続き使用できますが、アドビでは新しい手段を使用することをお勧めします。
 
 
-1. 透かしを適用する際にアセットマイクロサービスを利用する[処理プロファイルを作成します](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile)。
+1. [処理プロファイルの作成](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) 透かしを適用する際にアセットマイクロサービスを使用する場合。
 
    ![透かしを作成するアセット処理プロファイル](assets/watermark-processing-profile.png)
 
@@ -75,4 +75,3 @@ ht-degree: 95%
 >
 >* [アセットマイクロサービスの概要](/help/assets/asset-microservices-overview.md)。
 >* [処理プロファイルでアセットマイクロサービスを使用します](/help/assets/asset-microservices-configure-and-use.md)。
-

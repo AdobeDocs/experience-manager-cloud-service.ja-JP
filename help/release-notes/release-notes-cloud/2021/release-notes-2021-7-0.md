@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0 リリースのリリースノート。'
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1316'
-ht-degree: 98%
+source-wordcount: '1315'
+ht-degree: 94%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 98%
 
 ### 新機能 {#what-is-new-foundation}
 
-* より柔軟な Dispatcher 設定：プロジェクトをより簡単に整理できます。例えば、サイト構造を反映した複数の書き換えルールファイルを含めることができるようになりました。このモードを活用するために Dispatcher 設定を構築する方法など、この柔軟なモードについて[ご確認](/help/implementing/dispatcher/disp-overview.md#validation-debug)ください。
+* より柔軟な Dispatcher 設定：プロジェクトをより簡単に整理できます。例えば、サイト構造を反映した複数の書き換えルールファイルを含めることができるようになりました。[詳細](/help/implementing/dispatcher/disp-overview.md#validation-debug) この柔軟なモード（dispatcher 設定を構築して活用する方法など）。
 * レプリケーションエージェントの「配布」タブにあるツリーレプリケーション UI は、非推奨と見なされ、9 月 30 日以降に削除される予定です。代替レプリケーション戦略について[ご確認](/help/operations/replication.md#tree-activation)ください。
 * Sling 用 `org.apache.sling.datasource-1.0.4.jar` データソースサポート用バンドルは、機能が古く、顧客に使用されていないので、削除されました。
 
@@ -42,23 +42,23 @@ ht-degree: 98%
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-* コンテンツ自動処理機能を使用すると、 [!DNL Experience Manager Assets] で [!DNL Adobe Creative Cloud] API を活用して、アセットの大規模な生成を自動化できます。同じアセットのバリエーションを作成するのに必要な時間と繰り返しを大幅に減らし、コンテンツベロシティを向上させます。この機能はプログラミングを必要とせず、DAM 内で動作します。[アセットの統合を使用して Creative Cloud のバリエーションを生成する](/help/assets/cc-api-integration.md)を参照してください。
+* コンテンツ自動化機能により、 [!DNL Experience Manager Assets] を使用します。 [!DNL Adobe Creative Cloud] 大規模なアセット作成を自動化する API。 同じアセットのバリエーションを作成するのに必要な時間と繰り返しを大幅に減らし、コンテンツベロシティを向上させます。この機能はプログラミングを必要とせず、DAM 内で動作します。[アセットの統合を使用して Creative Cloud のバリエーションを生成する](/help/assets/cc-api-integration.md)を参照してください。
 
-* [!DNL Experience Manager Assets] には [!DNL Document Cloud] PDF ビューアが含まれており、PDF ドキュメントをネイティブにプレビューできます。この機能を使用すると、ファイルの処理や変換をおこなわずに、複数ページの PDF ファイルをプレビューできます。この機能により、[!DNL Experience Manager] 6.5 と同等の機能が使用できるようになりました。ビューアで使用できるコントロールには、ズーム、ページへ移動、ドッキング解除、全画面表示などがあります。また、ページをプレビューしたり、ブックマークにジャンプしたりすることもできます。ファイル自体へのコメントはサポート済で、PDF ファイル内のコンテンツに対するコメントと注釈が今後のリリースで追加される予定です。
+* [!DNL Experience Manager Assets] には [!DNL Document Cloud] PDF ビューアが含まれており、PDF ドキュメントをネイティブにプレビューできます。この機能を使用すると、ファイルの処理や変換をおこなわずに、複数ページの PDF ファイルをプレビューできます。この機能により、[!DNL Experience Manager] 6.5 と同等の機能が使用できるようになりました。ビューアで使用できるコントロールには、ズーム、ページへ移動、ドッキング解除、全画面表示などがあります。また、ページをプレビューしたり、ブックマークにジャンプしたりすることもできます。ファイル自体に対するコメントがサポートされます。PDFファイル内のコンテンツに対するコメントと注釈は、今後のリリースで追加される予定です。
 
-   ![PDF ビューアを使用した [!DNL Experience Manager] での PDF ファイルのプレビュー](/help/assets/assets/preview-pdf-file-viewer.png)
+  ![PDF ビューアを使用した [!DNL Experience Manager] での PDF ファイルのプレビュー](/help/assets/assets/preview-pdf-file-viewer.png)
 
 * リンク共有ダウンロード機能では、非同期ダウンロードを使用してダウンロード速度を向上させています。[リンク共有を使用して共有アセットをダウンロードする](/help/assets/download-assets-from-aem.md#link-share-download)を参照してください。
 
-   ![ダウンロードインボックス](/help/assets/assets/download-inbox.png)
+  ![ダウンロードインボックス](/help/assets/assets/download-inbox.png)
 
 * ビュー設定が強化され、デフォルトのビューとデフォルトの並べ替えパラメーターを選択できるようになりました。
 
-   ![[!UICONTROL 表示設定]](/help/assets/assets/view-settings-for-defaults.png)でデフォルト表示を設定する
+  ![[!UICONTROL 表示設定]](/help/assets/assets/view-settings-for-defaults.png)でデフォルト表示を設定する
 
 * プロパティの述語に基づいて、フォルダーを検索およびフィルタリングできます。
 
-   ![検索用述語を使用して検索フォルダーをフィルタリングする](/help/assets/assets/search-folders-via-predicates.png)
+  ![検索用述語を使用して検索フォルダーをフィルタリングする](/help/assets/assets/search-folders-via-predicates.png)
 
 ### [!DNL Assets]プレリリースチャネルで利用できる新機能 {#assets-prerelease-features}
 

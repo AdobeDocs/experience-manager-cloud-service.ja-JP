@@ -2,10 +2,10 @@
 title: Cloud Manager リポジトリ
 description: Cloud Manager で Git リポジトリを作成、表示および削除する方法について説明します。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 100%
+source-wordcount: '580'
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ Cloud Manager で作成されたリポジトリは、パイプラインの追加
 リポジトリを削除すると、次のようになります。
 
 * 削除したリポジトリ名は、今後作成される可能性のある新しいリポジトリに使用できなくなります。
-   * このような場合、「`Repository name should be unique within organization.`」というエラーメッセージが表示されます。
+   * エラーメッセージ `Repository name should be unique within organization.` がそのような場合に表示されます。
 * 削除したリポジトリを Cloud Manager で使用不可にし、パイプラインにリンクできないようにします。
 
 Cloud Manager でリポジトリを削除するには、次の手順に従います。

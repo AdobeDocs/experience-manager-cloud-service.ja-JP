@@ -2,10 +2,10 @@
 title: 設定と設定ブラウザー
 description: AEM 設定と、AEM でのワークスペース設定の管理方法について理解します。
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 3be936be09f205a73dd053ac28df936d58e50919
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 100%
+source-wordcount: '1492'
+ht-degree: 95%
 
 ---
 
@@ -62,7 +62,7 @@ WKND-General を WKND サイトのすべてのコンテンツに関連付ける�
 
 >[!NOTE]
 >
->ユーザーに `admin` 権限がある場合にのみ、設定ブラウザーを使用して設定を作成できます。アクセス権を設定に割り当てたり、設定を変更したりするには、`admin` 権限も必要です。
+>ユーザーに `admin` 権限がある場合にのみ、設定ブラウザーを使用して設定を作成できます。`admin` アクセス権を設定に割り当てたり、設定を変更したりするには、権限も必要です。
 
 #### 設定の作成 {#creating-a-configuration}
 
@@ -75,8 +75,8 @@ WKND-General を WKND サイトのすべてのコンテンツに関連付ける�
    ![設定の作成](assets/configuration-create.png)
 
    * **タイトル**&#x200B;は内容がわかるように付けます。
-   * **名前**&#x200B;はリポジトリのノード名になります。
-      * タイトルに基づいて自動的に生成され、[AEM の命名規則](naming-conventions.md)に従って調整されます。
+   * この **名前** はリポジトリ内のノード名になります。
+      * タイトルに基づいて自動的に生成され、 [AEM命名規則。](naming-conventions.md)
       * 必要に応じて調整できます。
 1. 許可する設定のタイプを確認します。
    * [ContextHub セグメント](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -91,7 +91,7 @@ WKND-General を WKND サイトのすべてのコンテンツに関連付ける�
 
 #### 設定とそのアクセス権の編集 {#access-rights}
 
-設定をワークスペースと考える場合、これらの設定にアクセス権を設定して、それらのワークスペースにアクセスできるユーザーとアクセスできないユーザーを指定することができます。
+設定をワークスペースと考えた場合、これらの設定に対してアクセス権を設定して、誰がワークスペースにアクセスし、誰がアクセスしないかを強制できます。
 
 1. AEM as a Cloud Service にログインし、メインメニューで&#x200B;**ツール**／**一般**／**設定ブラウザー**&#x200B;を選択します。
 1. 変更する設定を選択し、ツールバーの&#x200B;**プロパティ**&#x200B;をタップまたはクリックします。

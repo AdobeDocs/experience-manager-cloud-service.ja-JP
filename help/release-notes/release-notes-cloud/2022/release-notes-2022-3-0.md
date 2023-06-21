@@ -2,14 +2,14 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 リリースのリリースノート。'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1150'
-ht-degree: 95%
+ht-degree: 88%
 
 ---
 
-# 2022.3.0 リリースノート： [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の 2022.3.0 リリースノート {#release-notes}
 
 以下の節では、の 2022.3.0 バージョンの機能リリースノートの概要を説明します [!DNL Experience Manager] as a Cloud Service。
 
@@ -90,13 +90,13 @@ ht-degree: 95%
 
 ### 新機能 {#what-is-new-foundation}
 
-* クラウド環境のカスタム機能のトラブルシューティングをより効率的かつ効果的に行うために、新しい開発者ツール、[リポジトリーブラウザー](/help/implementing/developing/tools/repository-browser.md)がリリースされました。Developer Console から起動できる、軽量で読み取り専用の HTML ブラウザーです。パブリッシュ、オーサー、プレビューの各層および実稼動、ステージ、開発を含むすべての環境で、コンテンツリポジトリーを表示できます。コンテンツ構造を参照し、プロパティを表示し、バイナリをプレビューおよびダウンロードします。
+* クラウド環境のカスタム機能のトラブルシューティングをより効率的かつ効果的におこなうために、新しい開発者ツールがリリースされました。 [リポジトリブラウザ](/help/implementing/developing/tools/repository-browser.md). 開発者コンソールから起動できる、軽量で読み取り専用のHTMLブラウザーです。 パブリッシュ、オーサー、プレビューの各層および実稼動、ステージ、開発を含むすべての環境で、コンテンツリポジトリーを表示できます。コンテンツ構造を参照し、プロパティを表示し、バイナリをプレビューおよびダウンロードします。
 
-   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
+  ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
 * サーバー間 API 呼び出しの認証に使用される資格情報 ( 例えば、GraphQL API リクエストの場合 ) は、開発者コンソールからセルフサービス方式で有効期限が切れる前に更新できるようになりました。 詳しくは、[ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)を参照してください。
 
-* 以前に有効にしていなかったバージョンのパージと監査ログのパージのメンテナンスタスクが、新しい環境で有効になります。関連する値を、[メンテナンスタスク](/help/operations/maintenance.md)記事で参照してください。
+* 以前に有効にしていなかったバージョンのパージと監査ログのパージのメンテナンスタスクが、新しい環境で有効になりました。 関連する値を、[メンテナンスタスク](/help/operations/maintenance.md)記事で参照してください。
 
 * AEM as a Cloud Service SDK Dispatcher ツールで、M1 チップを搭載した Mac コンピューターがサポートされるようになりました。
 
@@ -112,7 +112,7 @@ Cloud Manager の月次リリースの完全なリストは、 [こちら](/help
 
 ### 新機能 {#what-is-new-ctt}
 
-* サイズ確認ガードレール - コンテンツ転送ツールのサイズ確認機能は、コンテンツ転送の失敗を減らすうえで役に立ちます。サイズ確認機能を使用すると、1) `crx-quickstart` サブディレクトリに十分な空きディスク容量があるかどうかを抽出前に判断でき、2) 移行セットのサイズを推定し、それが対応可能かどうかを確認できます。これらのチェックのどちらか一方または両方に違反した場合、CTT UI に警告が表示されます。このガードレールを使用すると、コンテンツ転送の失敗を回避し、アドビカスタマーケアと一緒に移行オプションについて事前に検討することができます。詳しくは、[移行セットのサイズとディスク空き容量の決定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja#migration-set-size)を参照してください。
+* サイズ確認ガードレール - コンテンツ転送ツールのサイズ確認機能は、コンテンツ転送の失敗を減らすうえで役に立ちます。[ サイズの確認 ] 機能を使用すると、1) に十分なディスク容量があるかどうかを `crx-quickstart` 抽出前のサブディレクトリ、2) 移行セットのサイズを推定し、サポートされているかどうかを確認します。 これらのチェックのどちらか一方または両方に違反した場合、CTT UI に警告が表示されます。このガードレールを使用すると、コンテンツ転送の失敗を回避し、アドビカスタマーケアと一緒に移行オプションについて事前に検討することができます。詳しくは、[移行セットのサイズとディスク空き容量の決定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja#migration-set-size)を参照してください。
 
 ## ベストプラクティスアナライザー {#bpa-release}
 

@@ -3,13 +3,13 @@ title: のアセットセレクター [!DNL Adobe Experience Manager] as a [!DNL
 description: アセットセレクターを使用して、アプリケーション内のアセットのメタデータとレンディションを検索、検索、取得します。
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: af36101d8fecd7fab2300f93d40bba4c92f8eafe
+exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2378'
+source-wordcount: '2376'
 ht-degree: 4%
 
 ---
-
 
 # マイクロフロントエンドアセットセレクター {#Overview}
 
@@ -76,7 +76,6 @@ You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken
 * imsOrg
 * imsToken
 * apikey
-
 <!--
 The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI flow.
 
@@ -361,28 +360,28 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 
 | プロパティ | タイプ | 必須 | デフォルト | 説明 |
 |---|---|---|---|---|
-| *パネル* | ブール値 | いいえ | false | マークされている場合 `true`の場合、アセットセレクターが左側のパネル表示でレンダリングされます。 マークが付いている場合 `false`を指定した場合、アセットセレクターがモーダルビューでレンダリングされます。 |
-| *imsOrg* | 文字列 | はい |  | プロビジョニング中に割り当てられるAdobeIdentity Management System(IMS)ID [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 組織の この `imsOrg` キーは、アクセスしようとしている組織がAdobe IMS中かどうかを認証するために必要です。 |
-| *imsToken* | 文字列 | いいえ |  | 認証に使用される IMS ベアラートークン。 `imsToken` 非 SUSI フローを使用する場合は必須です。 |
-| *apiKey* | 文字列 | いいえ |  | AEM Discovery サービスへのアクセスに使用する API キー。 `apiKey` 非 SUSI フローを使用する場合は必須です。 |
+| *パネル* | ブール値 | いいえ | false | マークされている場合 `true`の場合、アセットセレクターが左側のパネル表示でレンダリングされます。 マークが付いている場合 `false`の場合、アセットセレクターがモーダルビューでレンダリングされます。 |
+| *imsOrg* | 文字列 | はい | | プロビジョニング中に割り当てられるAdobeIdentity Management System(IMS)ID [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 組織の この `imsOrg` キーは、アクセスしようとしている組織がAdobe IMS中かどうかを認証するために必要です。 |
+| *imsToken* | 文字列 | いいえ | | 認証に使用される IMS ベアラートークン。 `imsToken` 非 SUSI フローを使用する場合は必須です。 |
+| *apiKey* | 文字列 | いいえ | | AEM Discovery サービスへのアクセスに使用する API キー。 `apiKey` 非 SUSI フローを使用する場合は必須です。 |
 | *rootPath* | 文字列 | いいえ | /content/dam/ | アセットセレクターにアセットを表示するフォルダーパス。 `rootPath` また、カプセル化の形で使用することもできます。 例えば、次のパスを指定すると、 `/content/dam/marketing/subfolder/`の場合、アセットセレクターを使用すると、親フォルダーをトラバースできず、子フォルダーのみが表示されます。 |
-| *パス* | 文字列 | いいえ |  | アセットセレクターがレンダリングされる際に、アセットの特定のディレクトリに移動するために使用されるパス。 |
-| *filterSchema* | 配列 | いいえ |  | フィルタープロパティの設定に使用するモデル。 これは、アセットセレクターで特定のフィルターオプションを制限する場合に便利です。 |
-| *filterFormProps* | オブジェクト | いいえ |  | 検索を絞り込むために使用する必要があるフィルタープロパティを指定します。 例えば、MIME タイプのJPG、PNG、GIF。 |
-| *selectedAssets* | 配列 `<Object>` | いいえ |  | アセットセレクターがレンダリングされる際に、「選択したアセット」を指定します。 アセットの id プロパティを含むオブジェクトの配列が必要です。 例： `[{id: 'urn:234}, {id: 'urn:555'}]` アセットは、現在のディレクトリに存在する必要があります。 別のディレクトリを使用する必要がある場合は、 `path` プロパティも同様に使用します。 |
-| *acvConfig* | オブジェクト | いいえ |  | デフォルトを上書きするカスタム設定を含むオブジェクトを含むアセットコレクション表示プロパティ。 |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | いいえ |  | OOTB 翻訳がアプリケーションのニーズに合わない場合は、独自のカスタムローカライズされた値を `i18nSymbols` prop. このインターフェイスに値を渡すと、提供されたデフォルトの翻訳が上書きされ、代わりに独自の翻訳が使用されます。  上書きを実行するには、有効な [メッセージ記述子](https://formatjs.io/docs/react-intl/api/#message-descriptor) ～の鍵に対して異議を唱える `i18nSymbols` 上書きする値を指定します。 |
-| *intl* | オブジェクト | いいえ |  | アセットセレクターは、デフォルトの標準翻訳を提供します。 翻訳言語を選択するには、 `intl.locale` prop. 例： `intl={{ locale: "es-es" }}` </br></br> サポートされるロケール文字列は、 [ISO 639 — コード](https://www.iso.org/iso-639-language-codes.html) 言語標準の名前を表すための </br></br> サポートされているロケールの一覧：英語 — 「en-us」（デフォルト）スペイン語 — 「es-es」ドイツ語 — 「de-de」フランス語 — 「fr-fr」イタリア語 — 「it-it」日本語 — 「ja-jp」韓国語 — 「ko-kr」ポルトガル語 — 「pt-br」中国語（繁体字） — 「zh-cn」中国語（台湾） — 「zh-tw」 |
+| *パス* | 文字列 | いいえ | | アセットセレクターがレンダリングされる際に、アセットの特定のディレクトリに移動するために使用されるパス。 |
+| *filterSchema* | 配列 | いいえ | | フィルタープロパティの設定に使用するモデル。 これは、アセットセレクターで特定のフィルターオプションを制限する場合に便利です。 |
+| *filterFormProps* | オブジェクト | いいえ | | 検索を絞り込むために使用する必要があるフィルタープロパティを指定します。 例えば、MIME タイプのJPG、PNG、GIF。 |
+| *selectedAssets* | 配列 `<Object>` | いいえ |                 | アセットセレクターがレンダリングされる際に、「選択したアセット」を指定します。 アセットの id プロパティを含むオブジェクトの配列が必要です。 例： `[{id: 'urn:234}, {id: 'urn:555'}]` アセットは、現在のディレクトリに存在する必要があります。 別のディレクトリを使用する必要がある場合は、 `path` プロパティも同様に使用します。 |
+| *acvConfig* | オブジェクト | いいえ | | デフォルトを上書きするカスタム設定を含むオブジェクトを含むアセットコレクション表示プロパティ。 |
+| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | いいえ |                 | OOTB 翻訳がアプリケーションのニーズに合わない場合は、独自のカスタムローカライズされた値を `i18nSymbols` prop. このインターフェイスに値を渡すと、提供されたデフォルトの翻訳が上書きされ、代わりに独自の翻訳が使用されます。  上書きを実行するには、有効な [メッセージ記述子](https://formatjs.io/docs/react-intl/api/#message-descriptor) ～の鍵に対して異議を唱える `i18nSymbols` 上書きする値を指定します。 |
+| *intl* | オブジェクト | いいえ | | アセットセレクターは、デフォルトの標準翻訳を提供します。 翻訳言語を選択するには、 `intl.locale` prop. 例： `intl={{ locale: "es-es" }}` </br></br> サポートされるロケール文字列は、 [ISO 639 — コード](https://www.iso.org/iso-639-language-codes.html) 言語標準の名前を表すための </br></br> サポートされているロケールの一覧：英語 — 「en-us」（デフォルト）スペイン語 — 「es-es」ドイツ語 — 「de-de」フランス語 — 「fr-fr」イタリア語 — 「it-it」日本語 — 「ja-jp」韓国語 — 「ko-kr」ポルトガル語 — 「pt-br」中国語（繁体字） — 「zh-cn」中国語（台湾） — 「zh-tw」 |
 | *repositoryId* | 文字列 | いいえ | &quot; | アセットセレクターがコンテンツを読み込む元のリポジトリ。 |
 | *additionalAemSolutions* | `Array<string>` | いいえ | [ ] | 追加のAEMリポジトリのリストを追加できます。 このプロパティで情報が提供されない場合、メディアライブラリまたはAEM Assetsリポジトリのみが考慮されます。 |
 | *hideTreeNav* | ブール値 | いいえ |  | アセットツリーのナビゲーションサイドバーを表示するか非表示にするかを指定します。 このプロパティはモーダルビューでのみ使用されるので、レールビューではこのプロパティの効果はありません。 |
-| *onDrop* | 関数 | いいえ |  | プロパティは、アセットのドロップ機能を許可します。 |
-| *dropOptions* | `{allowList?: Object}` | いいえ |  | 「設許可リスト定」を使用してドロップオプションを設定します。 |
-| *colorScheme* | 文字列 | いいえ |  | テーマの設定 (`light` または `dark`) をクリックします。 |
-| *handleSelection* | 関数 | いいえ |  | アセットが選択され、 `Select` 」ボタンがクリックされました。 この関数は、モーダルビューでのみ呼び出されます。 パネル表示の場合は、 `handleAssetSelection` または `onDrop` 関数 例： <pre>handleSelection=(assets:アセット[])=> {...}</pre> 詳しくは、 [選択したアセットタイプ](#selected-asset-type) 」を参照してください。 |
-| *handleAssetSelection* | 関数 | いいえ |  | アセットが選択または選択解除されているので、項目の配列を使用して呼び出されます。 これは、ユーザーがアセットを選択したときにアセットをリッスンする場合に役立ちます。 例： <pre>handleSelection=(assets:アセット[])=> {...}</pre> 詳しくは、 [選択したアセットタイプ](#selected-asset-type) 」を参照してください。 |
-| *onClose* | 関数 | いいえ |  | 次の場合に呼び出し `Close` モーダルビューのボタンが押された。 これは、 `modal` ～に対する見解と無視 `rail` 表示 |
-| *onFilterSubmit* | 関数 | いいえ |  | ユーザーが異なるフィルター条件を変更したときに、フィルター項目を使用して呼び出されました。 |
+| *onDrop* | 関数 | いいえ | | プロパティは、アセットのドロップ機能を許可します。 |
+| *dropOptions* | `{allowList?: Object}` | いいえ | | 「設許可リスト定」を使用してドロップオプションを設定します。 |
+| *colorScheme* | 文字列 | いいえ | | テーマの設定 (`light` または `dark`) をクリックします。 |
+| *handleSelection* | 関数 | いいえ | | アセットが選択され、 `Select` 」ボタンがクリックされました。 この関数は、モーダルビューでのみ呼び出されます。 パネル表示の場合は、 `handleAssetSelection` または `onDrop` 関数 例： <pre>handleSelection=(assets:アセット[])=> {...}</pre> 詳しくは、 [選択したアセットタイプ](#selected-asset-type) 」を参照してください。 |
+| *handleAssetSelection* | 関数 | いいえ | | アセットが選択または選択解除されているので、項目の配列を使用して呼び出されます。 これは、ユーザーがアセットを選択したときにアセットをリッスンする場合に役立ちます。 例： <pre>handleSelection=(assets:アセット[])=> {...}</pre> 詳しくは、 [選択したアセットタイプ](#selected-asset-type) 」を参照してください。 |
+| *onClose* | 関数 | いいえ | | 次の場合に呼び出し `Close` モーダルビューのボタンが押された。 これは、 `modal` ～に対する見解と無視 `rail` 表示 |
+| *onFilterSubmit* | 関数 | いいえ | | ユーザーが異なるフィルター条件を変更したときに、フィルター項目を使用して呼び出されました。 |
 | *selectionType* | 文字列 | いいえ | 1 人 | の設定 `single` または `multiple` 一度に選択したアセット。 |
 
 ## アセットセレクタープロパティの使用例 {#usage-examples}

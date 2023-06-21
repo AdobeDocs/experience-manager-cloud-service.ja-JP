@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2932'
 ht-degree: 99%
@@ -143,7 +143,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ### カスタムプロファイルの例 {#custom-profile-example}
 
-カスタムプロファイルの使用方法を説明するために、キャンペーン画像にカスタムテキストを適用する使用例を考えてみましょう。Photoshop API を利用して画像を編集する処理プロファイルを作成できます。
+カスタムプロファイルの使用方法を説明するために、キャンペーン画像にカスタムテキストを適用する使用例を考えてみましょう。Photoshop API を使用して画像を編集する処理プロファイルを作成できます。
 
 アセット計算サービスの統合により、Experience Manager は、「[!UICONTROL サービスパラメーター]」フィールドを使用して、これらのパラメーターをカスタムアプリケーションに渡すことができます。次に、カスタムアプリケーションが Photoshop API を呼び出し、これらの値を API に渡します。例えば、フォント名、テキストカラー、テキスト重み付け、テキストサイズを渡して、カスタムテキストをキャンペーン画像に追加できます。
 
@@ -161,7 +161,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 * 管理者が、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL 処理プロファイル]**&#x200B;で処理プロファイルの定義を選択し、「**[!UICONTROL プロファイルをフォルダーに適用]**」アクションを使用します。コンテンツブラウザーが開き、そこで特定のフォルダーに移動したり、フォルダーを選択したり、プロファイルの適用を確定したりできます。
 * Assets ユーザーインターフェイスでフォルダーを選択し、「**[!UICONTROL プロパティ]**」アクションを使用してフォルダーのプロパティ画面を開き、「**[!UICONTROL アセット処理]**」タブをクリックし、 [!UICONTROL 処理プロファイル] リストでそのフォルダーに適した処理プロファイルを選択します。変更を保存するには、「**[!UICONTROL 保存して閉じる]**」をクリックします。
-   ![「アセットのプロパティ」タブからのフォルダーへの処理プロファイルの適用](assets/folder-properties-processing-profile.png)
+  ![「アセットのプロパティ」タブからのフォルダーへの処理プロファイルの適用](assets/folder-properties-processing-profile.png)
 
 * Assets ユーザーインターフェイスでフォルダーまたは特定のアセットを選択して処理プロファイルを適用し、上部にあるオプションから![アセット再処理アイコン](assets/do-not-localize/reprocess-assets-icon.png)「**[!UICONTROL アセットを再処理]**」オプションを選択できます。
 
@@ -287,7 +287,6 @@ OSGi 設定のデプロイ方法については、[ [!DNL Experience Manager]](/
 >* [拡張機能と使用するタイミングについて](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=ja)。
 >* [カスタムアプリケーションの作成方法](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=ja)。
 >* [様々な使用例でサポートされる MIME タイプ](/help/assets/file-format-support.md)。
-
 
 <!-- TBD: 
 * How/where can admins check what's already configured and provisioned.

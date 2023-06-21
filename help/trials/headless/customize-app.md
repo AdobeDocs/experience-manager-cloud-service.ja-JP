@@ -4,10 +4,10 @@ description: サンプル React アプリを使用して、AEM as a Cloud Servic
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 469ebc7c3cae6dbfc38077e841db3c61ca16c680
+source-git-commit: 3645918f6ce592b6c70cb4339ab6f0e5e9d71519
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 96%
+source-wordcount: '1036'
+ht-degree: 95%
 
 ---
 
@@ -105,7 +105,7 @@ AEM ヘッドレス CMS を使用すると、アプリ内の画像やアセッ�
 
 1. **Mtn Biking - Shoppable** レイヤーを選択します。
 
-1. このパネルで新しいコールアウトを作成するには、新しいショッパブルモーメントコンテンツフラグメントを作成する必要があります。「**+ 新しいフラグメントを作成**」ボタンをタップまたはクリックします。
+1. このパネルで新しいコールアウトを作成するには、新しいショッパブルモーメントコンテンツフラグメントを作成する必要があります。 「**+ 新しいフラグメントを作成**」ボタンをタップまたはクリックします。
 
    ![ショッパブルモーメントを追加](assets/do-not-localize/add-reference-1-5.png)
 

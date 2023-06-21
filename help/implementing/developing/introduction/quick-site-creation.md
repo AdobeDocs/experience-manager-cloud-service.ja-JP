@@ -2,10 +2,10 @@
 title: サイトのクイック作成とフロントエンドのカスタマイズ
 description: クイックサイト作成ツールでサイトテンプレート、テーマ、フロントエンドパイプラインを使用して、新しいサイトの迅速なデプロイを可能にし、フロントエンド開発を切り離す方法を説明します。
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 100%
+source-wordcount: '328'
+ht-degree: 89%
 
 ---
 
@@ -29,8 +29,8 @@ ht-degree: 100%
 
 ## その他のリソース {#additional-resources}
 
-クイックサイト作成ツールは多くの AEM 機能を利用するので、これらの追加リソースが役に立つ場合があります。
+クイックサイト作成ツールは多くのAEM機能を使用するので、これらの追加リソースが役立つ場合があります。
 
 * [サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md) - AEM サイトテンプレートを使用して、サイト構造と初期コンテンツを事前に定義し、新しいサイトをすばやく作成する方法を説明します。
 * [サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md) - AEM サイトテーマを使用して、サイトのスタイルとデザインをカスタマイズする方法を説明します。
-* [フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - フロントエンドパイプラインを使用すると、フロントエンド開発者により多くの独立性が与えられ、開発プロセスの速度を大幅に上げることができます。このドキュメントでは、このプロセスを最大限に活用するために考慮すべき事項を説明します。
+* [フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - フロントエンドパイプラインを使用すると、フロントエンド開発者により多くの独立性が与えられ、開発プロセスの速度を大幅に上げることができます。このドキュメントでは、このプロセスを最大限に活用するために考慮すべき考慮事項について説明します。

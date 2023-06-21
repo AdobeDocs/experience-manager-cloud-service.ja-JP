@@ -2,10 +2,10 @@
 title: AEM Delivery API を使用してコンテンツにアクセスする方法
 description: AEM ヘッドレスデベロッパージャーニーのこのパートでは、GraphQL クエリを使用してコンテンツフラグメントのコンテンツにアクセスする方法を説明します。
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 100%
+source-wordcount: '1358'
+ht-degree: 99%
 
 ---
 
@@ -181,7 +181,7 @@ So for example, if you:
 
 1. Install a package containing `Content-Fragment-Model-1` and `Content-Fragment-Model-2`:
  
-   1. GraphQL types for `Model-1` and `Model-2` will be generated.
+   1. GraphQL types for `Model-1` and `Model-2` are generated.
 
 1. Then modify `Content-Fragment-Model-2`:
 
@@ -260,7 +260,7 @@ AEM GraphQL API をクエリで実際に使用するにあたって、次のよ�
 
 ご覧のように、「CEO」フィールドと「従業員」フィールドは、「人」フラグメントを参照しています。
 
-フラグメントモデルが使用されるのは、次の場合です。
+フラグメントモデルは次の場合に使用されます。
 
 * コンテンツフラグメントエディターでコンテンツを作成する場合
 * クエリの実行対象となる GraphQL スキーマを生成する場合

@@ -2,10 +2,10 @@
 title: AEM プロジェクトリポジトリの構造パッケージ
 description: Adobe Experience Manager as a Cloud Service の Maven プロジェクトには、リポジトリ構造サブパッケージ定義が必要です。この定義の目的は、プロジェクトのコードサブパッケージがデプロイされる JCR リポジトリルートを定義することです。
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 100%
+source-wordcount: '525'
+ht-degree: 96%
 
 ---
 
@@ -69,12 +69,12 @@ Maven プロジェクトのリポジトリ構造パッケージを作成する�
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <properties>
-                    <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                    <!-- Set Cloud Manager Target to none, else this package is deployed and remove all defined filter roots -->
                     <cloudManagerTarget>none</cloudManagerTarget>
                 </properties>
                 <configuration>
                     <properties>
-                        <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                        <!-- Set Cloud Manager Target to none, else this package is deployed and remove all defined filter roots -->
                         <cloudManagerTarget>none</cloudManagerTarget>
                     </properties>
                     <filters>
@@ -171,7 +171,7 @@ JCR リポジトリの同じ領域にインストールされる複数のコー�
 
 ## エラーとデバッグ
 
-リポジトリ構造パッケージが正しくセットアップされていない場合は、Maven のビルド時に次のようなエラーが報告されます。
+リポジトリ構造パッケージが正しく設定されていない場合、Maven のビルド時に次のエラーが報告されます。
 
 ```
 1 error(s) detected during dependency analysis.

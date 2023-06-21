@@ -9,11 +9,11 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
-exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 9c25d9991b41a5a714df3f07e84946162e5495c0
+exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2211'
-ht-degree: 100%
+source-wordcount: '2197'
+ht-degree: 95%
 
 ---
 
@@ -49,11 +49,11 @@ SEO の要件とニーズに応じて `UrlProvider` サービスを設定する�
 
 [Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)の場合は次のとおりです。
 
-* `{{page}}` は `/content/venia/us/en/products/product-page` に置き換えられます
-* `{{sku}}` は製品の SKU（例：`VP09`）に置き換えられます
-* `{{url_key}}` は製品の `url_key` プロパティ（例：`lenora-crochet-shorts`）に置き換えられます
-* `{{url_path}}` は製品の `url_path`（例：`venia-bottoms/venia-pants/lenora-crochet-shorts`）に置き換えられます
-* `{{variant_sku}}` は、現在選択されているバリアント（例：`VP09-KH-S`）に置き換えられます
+* `{{page}}` は、 `/content/venia/us/en/products/product-page`
+* `{{sku}}` が製品の sku に置き換えられている（例： ） `VP09`
+* `{{url_key}}` は製品の `url_key` プロパティ。例： `lenora-crochet-shorts`
+* `{{url_path}}` は製品の `url_path`例： `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` は、現在選択されているバリアントに置き換えられます（例： ）。 `VP09-KH-S`
 
 `url_path` が非推奨になったため、あらかじめ定義された製品のURLフォーマットは製品の `url_rewrites` を使用し、`url_path` が利用できない場合は最もパスセグメントが多いものを代替手段として選択します。
 
@@ -68,9 +68,9 @@ SEO の要件とニーズに応じて `UrlProvider` サービスを設定する�
 
 [Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)の場合は次のとおりです。
 
-* `{{page}}` は `/content/venia/us/en/products/category-page` に置き換えられます
-* `{{url_key}}` はカテゴリの `url_key` プロパティに置き換えられます
-* `{{url_path}}` はカテゴリの `url_path` に置き換えられます
+* `{{page}}` は、 `/content/venia/us/en/products/category-page`
+* `{{url_key}}` はカテゴリの `url_key` プロパティ
+* `{{url_path}}` はカテゴリの `url_path`
 
 上記のサンプルデータでは、デフォルトの URL 形式を使用して設定されたカテゴリページ URL は `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html` のようになります。
 
@@ -206,7 +206,7 @@ CIF 設定では、エディターが別の製品またはカテゴリページ�
 
 ### Sling マッピングとの結合 {#sling-mapping}
 
-`UrlProvider` に加え、URL の書き換えと処理を行うために、[Sling マッピング](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)を設定することもできます。AEM アーキタイププロジェクトでは、ポート 4503（パブリッシュ）および 80（ディスパッチャー）の Sling マッピングを設定する[設定例](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish)も提供されています。
+また、 `UrlProvider`を使用する場合、 [Sling マッピング](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) を使用して、URL を書き換え、処理します。 AEM アーキタイププロジェクトでは、ポート 4503（パブリッシュ）および 80（ディスパッチャー）の Sling マッピングを設定する[設定例](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish)も提供されています。
 
 ### AEM Dispatcher との統合 {#dispatcher}
 
@@ -230,7 +230,7 @@ _**URL の長さとエンコードされた情報のバランス。**_
 
 カタログのサイズ、特にカテゴリツリーのサイズと深さによっては、カテゴリの完全な `url_path` を URL にエンコードすることが合理的でない場合があります。その場合、代わりにカテゴリの `url_key` のみを含めることで、URL の長さを短くすることができます。これにより、カテゴリ `url_path` を使用する際に利用できるほとんどの機能がサポートされるようになります。
 
-さらに、 [Sling マッピング](#sling-mapping) を使用して、SKU を製品 `url_key` と組み合わせます。ほとんどの e コマースシステムでは、SKU は特定の形式に従っており、受信リクエストのために SKU と `url_key` を分離することは簡単にできます。そのことを念頭に置くと、製品ページの URL を `/p/{{category}}/{{sku}}-{{url_key}}.html` に、カテゴリ URL を `/c/{{url_key}}.html` にそれぞれ書き換えることができます。`/p` および `/c` プレフィックスは、製品ページとカテゴリページを他のコンテンツページと区別するために、引き続き必要です。
+また、 [Sling マッピング](#sling-mapping) sku と商品を組み合わせるには `url_key`. ほとんどの e コマースシステムでは、SKU は特定の形式に従っており、受信リクエストのために SKU と `url_key` を分離することは簡単にできます。そのことを念頭に置くと、製品ページの URL を `/p/{{category}}/{{sku}}-{{url_key}}.html` に、カテゴリ URL を `/c/{{url_key}}.html` にそれぞれ書き換えることができます。この `/p` および `/c` 製品ページとカテゴリページを他のコンテンツページと区別するためには、プレフィックスが引き続き必要です。
 
 ### 新しい URL 形式への移行 {#migrate-url-formats}
 

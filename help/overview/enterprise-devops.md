@@ -2,9 +2,9 @@
 title: Enterprise DevOps
 description: 導入を容易にし、コラボレーションを簡素化するために必要なプロセス、方法、コミュニケーションについて説明します。
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1000'
 ht-degree: 45%
 
 ---

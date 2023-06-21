@@ -1,13 +1,13 @@
 ---
 title: ライブコピーの概要コンソール
-description: ライブコピーの概要コンソールの基本事項について説明し、コンテンツを同期するためにライブコピーの状態をすばやく把握できるようにします。
+description: ライブコピーの概要コンソールの基本を学習し、コンテンツを同期するためのライブコピーのステータスをすばやく把握します。
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 94%
+source-wordcount: '731'
+ht-degree: 88%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 94%
 **ライブコピーの概要**&#x200B;を使用して、ライブコピーに対するアクションを実行することもできます。
 
 1. **ライブコピーの概要**&#x200B;を開きます。
-1. 必要なブループリントページまたはライブコピーページを選択します。ツールバーが更新され、使用できるアクションが表示されます。使用できる[アクション](overview.md#terms-used)は、[ブループリント](#actions-for-a-blueprint-page)ページと[ライブコピー](#actions-for-a-live-copy-page)ページのどちらを選択したかによって異なります。
+1. 必要なブループリントまたはライブコピーページを選択すると、ツールバーが更新され、使用可能なアクションが表示されます。 使用できる[アクション](overview.md#terms-used)は、[ブループリント](#actions-for-a-blueprint-page)ページと[ライブコピー](#actions-for-a-live-copy-page)ページのどちらを選択したかによって異なります。
 
 ### ブループリントページのアクション {#actions-for-a-blueprint-page}
 

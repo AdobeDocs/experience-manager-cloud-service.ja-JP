@@ -2,10 +2,10 @@
 title: ビルド環境
 description: Cloud Manager のビルド環境と、そこでコードがどのようにビルドされテストされるかを説明します。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 100%
+source-wordcount: '994'
+ht-degree: 95%
 
 ---
 
@@ -94,7 +94,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 >[!NOTE]
 >
->2022年4月以降、Oracle JDK は、AEM アプリケーションの開発と運用のためのデフォルト JDK になります。Cloud Manager のビルドプロセスは、Maven ツールチェーンで代替オプションを明示的に選択した場合でも、Oracle JDK の使用に自動的に切り替わります。詳しくは、公開後の 4月のリリースノートを参照してください。
+>2022 年 4 月以降、OracleJDK がAEMアプリケーションの開発と操作のデフォルト JDK になります。 Cloud Manager のビルドプロセスは、Maven ツールチェーンで代替オプションが明示的に選択されている場合でも、OracleJDK の使用に自動的に切り替わります。 2022 年 4 月のリリースノートを参照してください。
 
 #### Maven 実行の代替 JDK バージョン {#alternate-maven-jdk-version}
 

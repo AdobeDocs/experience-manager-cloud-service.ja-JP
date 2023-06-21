@@ -2,10 +2,10 @@
 title: エディターの制限事項
 description: タッチ操作対応 UI のエディターは、オーバーレイを使用して iframe に含まれるコンテンツを操作します。 この操作には、エディターの使用と開発者に対していくつかの制限事項があります。
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 60%
+source-wordcount: '315'
+ht-degree: 54%
 
 ---
 
@@ -51,7 +51,7 @@ iframe の高さは AEM によって自動調整されるので、`vh` 単位は
 
 ページの body 要素では、100 ％の高さはサポートされていません。
 
-* フルスクリーンの body を実装するために次のように body 要素を「拡張」することで、回避することが可能です。
+* フルスクリーンの body を実装する場合は、次のように body 要素を「拡張」します。
 
 ```xml
 body {

@@ -1,11 +1,11 @@
 ---
 title: 準備段階
-description: AEM インストールをクラウドに移動する準備ができていることを確認するために必要な手順を説明します。
+description: AEMのインストールをクラウドに移行する準備ができていることを確認するために必要な手順について説明します。
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2079'
-ht-degree: 100%
+source-wordcount: '2074'
+ht-degree: 88%
 
 ---
 
@@ -21,11 +21,11 @@ AEM as a Cloud Service 移行ジャーニーのこの段階では、AEM as a Clo
 
 ## これまでの説明内容 {#story-so-far}
 
-前のドキュメント [AEM as a Cloud Service への移行の手引き](/help/journey-migration/getting-started.md) では、AEM as a Cloud Service に移行するために必要な段階のリストと、その利点について説明しました。
+前のドキュメント [AEM as a Cloud Serviceへの移行の手引き](/help/journey-migration/getting-started.md)では、AEM as a Cloud Serviceに移行するために必要なフェーズのリストと、その利点について説明します。
 
 ## 目的 {#objective}
 
-このドキュメントでは、AEM インストールをクラウドに移動する準備ができていることを確かめるために考慮が必要な点を確認します。
+このドキュメントでは、考慮する必要のある要因を理解し、AEMのインストールをクラウドに移行する準備が整っていることを確認できます。
 
 * 主な変更点と非推奨（廃止予定）の機能を確認します。
 * AEM as a Cloud Service への移行を計画する方法を確認します。
@@ -60,7 +60,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
   <tr>
     <td>カスタム実行モードは許可されていません</td>
     <td></td>
-    <td>AEM as a Cloud Service で標準で提供されている実行モードのみがサポートされます。<br>さらに開発環境が追加されると、すべての環境が「開発」実行モードに結び付けられます。</td>
+    <td>AEM as a Cloud Service で標準で提供されている実行モードのみがサポートされます。<br>追加の開発環境が追加されると、すべての開発環境が「開発」実行モードに結び付けられます。</td>
   </tr>
   <tr>
     <td>Cloud Manager パイプラインの実行は、デプロイする唯一の方法です</td>
@@ -150,7 +150,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
   <tr>
     <td>認証の変更</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=ja">AEM as a Cloud Service の IMS サポート</td>
-    <td>Cloud Service に移行する前に、オーサーとパブリッシュの両方で SAML 2.0 統合を使用していた場合、主な変更点は、AEM as a Cloud Service オーサーが Adobe IMS のみと統合される点です。ただし、AEM as a Cloud Service パブリッシュ層では、SAML や他の認証統合を引き続き利用できます。AEM as a Cloud Service では、作成者、管理者および開発者ユーザーに対してのみ IMS 認証をサポートしています。IMS 認証では、サイト訪問者など、顧客サイトの外部エンドユーザーに対してはサポートしていません。</td>
+    <td>Cloud Service に移行する前に、オーサーとパブリッシュの両方で SAML 2.0 統合を使用していた場合、主な変更点は、AEM as a Cloud Service オーサーが Adobe IMS のみと統合される点です。ただし、AEMas a Cloud Serviceパブリッシュ層では、SAML または他の認証統合を引き続き使用できます。 AEM as a Cloud Service では、作成者、管理者および開発者ユーザーに対してのみ IMS 認証をサポートしています。IMS 認証では、サイト訪問者など、顧客サイトの外部エンドユーザーに対してはサポートしていません。</td>
   </tr>
 </tbody>
 </table>
@@ -163,7 +163,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 
 ## AEM インストールのレビューのプラン {#review-planning}
 
-AEM as a Cloud Service で導入された変更を把握したら、既存のインストールをレビューする計画に取りかかり、クラウドに移行するために必要な変更のレベルを見定めます。
+AEM as a Cloud Serviceで導入された変更に慣れたら、既存のインストールのレビューを計画し始めます。 これにより、クラウドに移動するのに必要な変更のレベルを測定できます。
 
 レビュー段階で必要になる主なステップを次の図に示します。
 
@@ -173,7 +173,7 @@ AEM as a Cloud Service で導入された変更を把握したら、既存のイ
 
 ### Cloud Service への対応準備状況の評価 {#assess-cloud-readiness}
 
-最初のステップは、既存の AEM バージョンから Cloud Service に移行する準備ができているかどうかを評価し、AEM as a Cloud Service に対応するためにリファクタリングが必要な領域を判断することです。
+最初の手順は、既存のAEMバージョンからCloud Serviceに移行する準備ができているかを評価し、AEM as a Cloud Serviceと互換性を持たせるためにリファクタリングが必要な領域を決定することです。
 
 移行ジャーニーで予想される作業レベルを決定するには、現在ご利用の AEM ソースコードを、主要な変更点および非推奨（廃止予定）の機能に照らして包括的に評価する必要があります。
 
@@ -198,7 +198,7 @@ AEM as a Cloud Service で導入された変更を把握したら、既存のイ
 
 **レポートをソーシャル化**
 
-ベストプラクティスアナライザーレポートが完了したら、関連するチームと共有して評価結果を確認し、次のステップのプランを立てます。必要に応じて、 [印刷プレビュー](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam) を使用してレポートの印刷バージョンを配布することもできます。
+ベストプラクティスアナライザーレポートが完了したら、関連するチームとレポートを共有し、結果を確認して次の手順の計画を立てます。 必要に応じて、 [印刷プレビュー](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam) を使用してレポートの印刷バージョンを配布することもできます。
 
 ### リソース計画のレビュー {#review-resource-planning}
 

@@ -2,10 +2,10 @@
 title: テンプレートからサイトを作成
 description: サイトテンプレートを使用して新しい AEM サイトをすばやく作成する方法を説明します。
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 100%
+source-wordcount: '1485'
+ht-degree: 99%
 
 ---
 
@@ -85,7 +85,7 @@ AEM クイックサイト作成ジャーニーの前のドキュメントであ�
 
    ![テンプレートを選択](assets/select-site-template.png)
 
-1. サイトのタイトルを指定します。サイト名を指定できます。省略した場合はタイトルからサイト名が生成されます。
+1. サイトのタイトルを指定します。省略した場合、サイト名はタイトルから指定または生成できます。
 
    * サイトのタイトルは、ブラウザーのタイトルバーに表示されます。
    * サイト名が URL の一部になります。

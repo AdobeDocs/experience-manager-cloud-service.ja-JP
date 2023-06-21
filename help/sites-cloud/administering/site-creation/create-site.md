@@ -4,10 +4,10 @@ description: AEM でサイトテンプレートを使用してサイトを作成
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 100%
+source-wordcount: '786'
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ AEM クイックサイト作成ツールを使用すると、開発者以外の�
 
    ![テンプレートを選択](../assets/select-site-template.png)
 
-1. サイトのタイトルを指定します。サイト名を指定できます。省略した場合はタイトルからサイト名が生成されます。
+1. サイトのタイトルを指定します。サイト名は、省略した場合、タイトルから指定または生成できます。
 
    * サイトのタイトルは、ブラウザーのタイトルバーに表示されます。
    * サイト名が URL の一部になります。

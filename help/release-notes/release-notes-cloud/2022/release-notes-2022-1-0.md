@@ -2,14 +2,14 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 リリースのリリースノート。'
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: a66215277ca83c011f2f4df621d055049c4c93a7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1081'
 ht-degree: 97%
 
 ---
 
-# 2022.1.0 リリースノート： [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の 2022.1.0 リリースノート {#release-notes}
 
 以下の節では、の 2022.1.0 バージョンの機能リリースノートの概要を説明します [!DNL Experience Manager] as a Cloud Service。
 
@@ -105,7 +105,7 @@ AEM as a Cloud Service 2022.01.0 における Cloud Manager のリリース日�
 * Cloud Manager は、複数のフルスタックパイプライン実行で [同じ git コミットが使用されていることを検出した場合、コードベースの再ビルドを避けます](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)。
 * AEM 環境ログにアクセスするには、**Deployment Manager** 製品プロファイルが必要になりました。このプロファイルを持たないユーザーには、ユーザーインターフェイスに無効なボタンが表示されます。
 * UI は、Sites がソリューションとして有効化されていないプログラムのフロントエンドパイプライン設定を許可しません。
-* Git パスワードの生成時に、有効期限が表示されます。
+* Git パスワードを生成する際に、有効期限が表示されます。
 
 ### バグの修正 {#bug-fixes-cm}
 

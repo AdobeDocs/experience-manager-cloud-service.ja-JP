@@ -2,14 +2,14 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 リリースのリリースノート。'
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 96%
+source-wordcount: '842'
+ht-degree: 91%
 
 ---
 
-# 2022.10.0リリースノート： [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の 2022.10.0 リリースノート {#release-notes}
 
 以下の節では、の2022.10.0版の機能リリースノートの概要を説明します。 [!DNL Experience Manager] as a Cloud Service。
 
@@ -50,14 +50,14 @@ ht-degree: 96%
 
 * Experience Manager Assets で、他のサポートされている形式のドキュメントをアップロードし、[付属の Document Cloud ビューアを使用してプレビューができるようになりました](/help/assets/manage-pdf-documents.md)。サポートされる形式の種類には、TXT、RTF、DOC、DOCX、PPT、PPTX、XLS、XLSX が含まれます。
 
-   ![他の形式向けの PDF レンディション](/help/release-notes/assets/multi-page-other-formats.png)
+  ![他の形式向けの PDF レンディション](/help/release-notes/assets/multi-page-other-formats.png)
 
 
 ### [!DNL Assets] プレリリースの新機能 {#prerelease-features-assets}
 
 * Experience Manager Assets は、画像スマートタグ用に改善された人工知能フレームワークを使用するようになりました。 このコンテンツインテリジェンスにより、取り込み時にすべての画像アセットで使用できるスマートタグの関連性と精度が向上します。 さらに、向き情報が`cq:tags`に取り込まれ、向きフィルターを使用してより良い検索結果が得られます。
 
-   ベータ版への参加を希望される場合は、11月14日までに [このフォームに入力](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) してください。
+  ベータ版への参加を希望される場合は、11月14日までに [このフォームに入力](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) してください。
 
 * Experience Manager Assets now は、Azure Blob ストレージデータ ソースに接続し、一括インポート ツールを使用してアセットを取り込む際に、認証用のアクセス キーに加えて [SAS Token](/help/assets/add-assets.md#asset-bulk-ingestor) をサポートするようになりました。
 
@@ -87,7 +87,7 @@ ht-degree: 96%
 
 * AEM as a Cloud Service（オーサーサービス）が統合シェルと統合され、ユーザーエクスペリエンスが向上し、他のすべての Experience Cloud アプリケーションと統合されました。詳しくは、[統合シェル上の AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) を参照してください。
 
-* リリースノートで前述したように、レプリケーションエージェントの管理画面またはレプリケーション API を使用して 10 MB を超えるコンテンツパッケージ（バイナリを含まないプロパティを持つノード）を配布することは非推奨で、近日中に適用される予定です。これらの大きなコンテンツ パッケージをレプリケートするための推奨アプローチについて詳しくは、[公開の管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow)を参照してください。
+* リリースノートで前述したように、10 MB を超えるコンテンツパッケージ（バイナリを含まないプロパティを持つノード）を配布するためのレプリケーションエージェント管理画面またはレプリケーション API を使用する方法は、非推奨（廃止予定）となりました。 詳しくは、 [公開を管理](/help/operations/replication.md#manage-publication) または [コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow) を参照してください。
 
 * Dispatcher 設定で、一般的なマーケティングキャンペーンのクエリパラメーターをリストするファイルが参照されるようになりました。顧客が関連するパラメーターのコメント解除を選択できるので、キャッシュが改善されました。詳しくは、[マーケティングキャンペーンパラメーター](/help/implementing/dispatcher/caching.md#marketing-parameters)を参照してください。
 

@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2308'
 ht-degree: 83%
@@ -24,7 +24,7 @@ CSS と LESS フレームワークに関する知識
 
 ## カスタマイズの対象 {#what-can-be-customized}
 
-この記事では、公開されているアダプティブフォームの CSS クラスについて説明します。これらのクラスを使用して、アダプティブフォームの様々なコンポーネントのスタイルを設定できます。警告を表示するダイアログやステータスバーなどのオーサリングコンポーネントのスタイル設定は、この記事の範囲外です。 これらのスタイル構成を使用して、を使用してコンポーネントのスタイルを設定できない場合にのみ、スタイル（CSS または LESS を使用）を作成します [テーマエディター](https://helpx.adobe.com/jp/experience-manager/6-3/forms/using/themes.html).
+この記事では、公開されているアダプティブフォームの CSS クラスについて説明します。これらのクラスを使用して、アダプティブフォームの様々なコンポーネントのスタイルを設定できます。 警告を表示するダイアログやステータスバーなどのオーサリングコンポーネントのスタイル設定は、この記事の範囲外です。 これらのスタイル構成を使用して、を使用してコンポーネントのスタイルを設定できない場合にのみ、スタイル（CSS または LESS を使用）を作成します [テーマエディター](https://helpx.adobe.com/jp/experience-manager/6-3/forms/using/themes.html).
 
 ## アダプティブフォームのスタイルのカスタマイズ {#customizing-styles-in-adaptive-forms}
 

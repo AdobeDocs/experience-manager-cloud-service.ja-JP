@@ -2,10 +2,10 @@
 title: GraphQL クエリの最適化
 description: ヘッドレスコンテンツ配信用の Adobe Experience Manager as a Cloud Service でコンテンツフラグメントをフィルタリング、ページング、並べ替える際に、GraphQL クエリを最適化する方法について説明します。
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
-workflow-type: ht
-source-wordcount: '1192'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '1193'
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ AEM には、GraphQL クエリを最適化する 2 つの方法があります�
 
 >[!NOTE]
 >
->技術的な理由（柔軟性、フラグメントのネストなど）により、AEM はフィルタリング全体を JCR に委任できません。
+>技術的な理由（柔軟性、フラグメントのネストなど）により、AEMはフィルター全体を JCR に委任できません。
 
 この方法では、GraphQL フィルターが提供する柔軟性を維持しながら、可能な限り多くのフィルタリングを JCR に委任できます。
 
@@ -49,21 +49,20 @@ AEM には、GraphQL クエリを最適化する 2 つの方法があります�
 AEM の GraphQL では、次の 2 種類のページネーションに対応しています。
 
 * [制限／オフセットベースのページネーション](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
-これは、リストクエリに使用されます。これらは次の値で終わります 
-`List`（例：`articleList`）。
+これは、リストクエリに使用されます。これらは次の値で終わります`List`（例：`articleList`）。
 これを使用するには、最初に返す項目（`offset`）と返す項目の数（`limit` またはページサイズ）を指定する必要があります。
 
 * [カーソルベースのページネーション](/help/headless/graphql-api/content-fragments.md#paginated-first-after)（`first` および `after` で表される）
 これにより、項目ごとに一意の ID が提供されます。「カーソル」とも呼ばれます。
 クエリでは、前のページの最後の項目のカーソルとページサイズ（返される項目の最大数）を指定します。
 
-   カーソルベースのページネーションはリストベースのクエリのデータ構造内に収まらないので、AEM では `Paginated` クエリタイプ（例： `articlePaginated`）を導入しました。 使用するデータ構造とパラメーターは、[GraphQL Cursor ConnectionSpecification](https://relay.dev/graphql/connections.htm) に準拠します。
+  カーソルベースのページネーションはリストベースのクエリのデータ構造内に収まらないので、AEM では `Paginated` クエリタイプ（例： `articlePaginated`）を導入しました。 使用するデータ構造とパラメーターは、[GraphQL Cursor ConnectionSpecification](https://relay.dev/graphql/connections.htm) に準拠します。
 
-   >[!NOTE]
-   >
-   >AEM は現在、前方ページングをサポートしています（`after`/`first` パラメーターを使用）。
-   >
-   >後方ページング（`before`/`last` パラメーターを使用）はサポートされていません。
+  >[!NOTE]
+  >
+  >AEM は現在、前方ページングをサポートしています（`after`/`first` パラメーターを使用）。
+  >
+  >後方ページング（`before`/`last` パラメーターを使用）はサポートされていません。
 
 ## 並べ替え {#sorting}
 
@@ -130,7 +129,7 @@ AEM では、通常、リポジトリ構造を使用して、処理するコン�
 
 ### フィルター式の論理演算 {#logical-operations-in-filter-expressions}
 
-ネストされたフラグメントをフィルタリングする場合でも、JCR フィルタリングを活用できます。`AND` 演算子を使用して組み合わされた最上位フィールドに付随するフィルターを指定して行います。
+ネストされたフラグメントをフィルタリングする場合、 `AND` 演算子
 
 一般的なユースケースは、最上位フラグメントの `_path` フィールドでフィルターを使用してクエリの範囲を制限し、最上位またはネストされたフラグメント上の追加フィールドでフィルタリングすることです。
 

@@ -2,10 +2,10 @@
 title: デモサイトを作成
 description: 事前設定済みのテンプレートのライブラリに基づいて、AEM にデモサイトを作成します。
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 100%
+source-wordcount: '842'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ AEM Reference Demo Add-On ジャーニーの前のドキュメントである[�
 
    ![サイト作成ウィザード](assets/site-creation-wizard.png)
 
-1. 次の画面で、サイトのタイトルまたは Screens プロジェクトのタイトルを指定します。サイト名を指定できます。省略した場合はタイトルからサイト名が生成されます。「**作成**」をタップまたはクリックします。
+1. 次の画面で、サイトのタイトルまたは Screens プロジェクトのタイトルを指定します。省略した場合、サイト名はタイトルから指定または生成できます。 「**作成**」をタップまたはクリックします。
 
    * サイトのタイトルは、ブラウザーのタイトルバーに表示されます。
    * サイト名が URL の一部になります。

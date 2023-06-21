@@ -2,10 +2,10 @@
 title: Java 機能テスト
 description: AEM as a Cloud Service用の Java 機能テストの作成方法を説明します
 exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
-source-git-commit: cda1f51c89a98cfb75d63f8bd9b54e76ee745aa7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 77%
+source-wordcount: '848'
+ht-degree: 73%
 
 ---
 
@@ -91,7 +91,7 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 
 ### 前提条件 {#prerequisites}
 
-1. Cloud Manager でのテストは、技術管理者ユーザーを使用して実行されます。
+1. Cloud Manager のテストは、技術管理者ユーザーを使用して実行されます。
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0.5 | テスト実行ごとに予約される CPU 時間の量 |
 | メモリ | 0.5Gi | テストに割り当てられたメモリの量（GB 単位の値） |
-| タイムアウト | 30m | テストを終了するまでの期間。 |
+| タイムアウト | 30m | テストが終了するまでの期間。 |
 | 推奨期間 | 15m | この時間を超えないようにテストを書き込むことをお勧めします。 |
 
 >[!NOTE]
@@ -120,7 +120,7 @@ Cloud Manager パイプラインで機能テストをアクティブ化する前
 
 テストクラスは JUnit テストなので、Eclipse、IntelliJ、NetBeans などの主要な Java IDE から実行できます。製品機能テストとカスタム機能テストはどちらも同じテクノロジーに基づいているので、製品テストをカスタムテストにコピーすることで、両者をローカルで実行できます。
 
-ただし、これらのテストを実行する際は、`aem-testing-clients`（およびそのベースとなる Sling Testing Client）ライブラリで想定されている様々なシステムプロパティを設定する必要があります。
+ただし、これらのテストを実行する場合は、 `aem-testing-clients` （および基になる Sling Testing Clients）ライブラリ。
 
 これらのシステムプロパティは次のとおりです。
 
@@ -130,11 +130,11 @@ Cloud Manager パイプラインで機能テストをアクティブ化する前
 | `sling.it.instance.url.1` | は作成者 URL に設定する必要があります | `http://localhost:4502` |
 | `sling.it.instance.runmode.1` | 最初のインスタンスの実行モードは、に設定する必要があります。 `author` | `author` |
 | `sling.it.instance.adminUser.1` | は author admin user に設定する必要があります。 | `admin` |
-| `sling.it.instance.adminPassword.1` | は author 管理者パスワードに設定する必要があります。 |  |
+| `sling.it.instance.adminPassword.1` | は author 管理者パスワードに設定する必要があります。 |                         |
 | `sling.it.instance.url.2` | はパブリッシュ URL に設定する必要があります。 | `http://localhost:4503` |
 | `sling.it.instance.runmode.2` | 2 番目のインスタンスの実行モードは、に設定する必要があります。 `publish` | `publish` |
 | `sling.it.instance.adminUser.2` | を publish admin user に設定する必要があります。 | `admin` |
-| `sling.it.instance.adminPassword.2` | は publish 管理者パスワードに設定する必要があります。 |  |
+| `sling.it.instance.adminPassword.2` | は publish 管理者パスワードに設定する必要があります。 |                         |
 
 
 

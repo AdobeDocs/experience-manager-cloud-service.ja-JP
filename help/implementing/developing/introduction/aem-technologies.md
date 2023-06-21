@@ -2,10 +2,10 @@
 title: AEM 技術基盤
 description: AEM の構造化および JCR、Sling、OSGi などの基本的なテクノロジーを含む、AEM の技術基盤の概要です。
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2191'
-ht-degree: 95%
+source-wordcount: '2180'
+ht-degree: 88%
 
 ---
 
@@ -113,7 +113,7 @@ URL 分解の原則を使用します。
 * マッピングはリクエストから抽出されたコンテンツパスを使用してリソースを見つけます。
 * 適切なリソースが見つかると、Sling リソースタイプが抽出され、コンテンツのレンダリングに使用するスクリプトを見つけるために使用されます。
 
-下の図は、使用するメカニズムを示しています。これについては、以下の各項で詳細に説明します。
+次の図に、使用するメカニズムを示します。このメカニズムについては、以降の節で詳しく説明します。
 
 ![URL マッピングメカニズム](assets/url-mapping.png)
 
@@ -142,11 +142,11 @@ Sling では JCR ノード以外のものをリソースとすることもでき
 >
 >移植性を高めるため、相対パスが推奨されます。
 
-すべての Sling スクリプトは、`/apps`（可変、ユーザースクリプト）または`/libs`（不可変、システムスクリプト）のサブフォルダーに格納され、この順序で検索されます。
+すべての Sling スクリプトは、次の `/apps` （可変、ユーザースクリプト）または `/libs` （不変、システムスクリプト）。この順序で検索されます。
 
 その他の注意点は次のとおりです。
 
-* メソッド（GET、POST）が必要なときは、HTTP の仕様に従って大文字で指定します（例：`jobs.POST.esp`）。
+* メソッド (GET、POST) が必要な場合は、HTTP の仕様に従って大文字で指定します。例： `jobs.POST.esp`
 * 様々なスクリプトエンジンがサポートされていますが、一般的な推奨スクリプトは HTL と JavaScript です。
 
 AEM の特定のインスタンスでサポートされているスクリプトエンジンのリストは、Felix Management Console（`http://<host>:<port>/system/console/slingscripting`）にあります。
@@ -154,22 +154,22 @@ AEM の特定のインスタンスでサポートされているスクリプト�
 以前の例を使用すると、`sling:resourceType` が `hr/jobs` の場合は、次のようになります。
 
 * `.html`で終わる GET/HEAD リクエストと URL（デフォルトのリクエストタイプ、デフォルトの形式）
-   * スクリプトは `/apps/hr/jobs/jobs.esp` です。`sling:resourceType` の最後のセクションがファイル名になります。
+   * スクリプトは `/apps/hr/jobs/jobs.esp`;の最後のセクション `sling:resourceType` はファイル名を形成します。
 * POST 要求（GET/HEAD を除くすべての要求タイプ。メソッド名は大文字にする必要があります）
-   * スクリプト名に POST が使用されます。
-   * スクリプトは `/apps/hr/jobs/jobs.POST.esp` です。
+   * POSTはスクリプト名に使用されます。
+   * スクリプトは `/apps/hr/jobs/jobs.POST.esp`.
 * `.html`で終わらない、他の形式の URL
    * 例：`../content/corporate/jobs/developer.pdf`
-   * スクリプトは `/apps/hr/jobs/jobs.pdf.esp` です。スクリプト名にサフィックスが追加されます。
+   * スクリプトは `/apps/hr/jobs/jobs.pdf.esp`;サフィックスがスクリプト名に追加されます。
 * セレクターを含む URL
    * セレクターを使用して、同じコンテンツを別の形式で表示できます。例：プリンターに適したバージョン、rss フィード、概要など。
    * プリンターに適したバージョンでは、セレクターが `print` である可能性がります。例：`../content/corporate/jobs/developer.print.html` 
-   * スクリプトは `/apps/hr/jobs/jobs.print.esp` です。セレクターがスクリプト名に追加されます。
+   * スクリプトは `/apps/hr/jobs/jobs.print.esp`;セレクターがスクリプト名に追加されます。
 * `sling:resourceType` が定義されていない場合は、次のようになります。
-   * コンテンツパスは、適切なスクリプトを検索するために使用されます（パスに基づいた `ResourceTypeProvider` がアクティブな場合）。
+   * コンテンツパスは、適切なスクリプトを検索するために使用されます ( パスが `ResourceTypeProvider` がアクティブな場合 )。
    * 例えば、`../content/corporate/jobs/developer.html` のスクリプトは、`/apps/content/corporate/jobs/` で検索を生成します。
    * プライマリノードタイプが使用されます。
-* スクリプトがまったく見つからない場合は、デフォルトのスクリプトが使用されます。
+* スクリプトが見つからない場合は、デフォルトのスクリプトが使用されます。
    * デフォルトのレンディションは現在、プレーンテキスト（`.txt`）、HTML（`.html`）、JSON（`.json`）としてサポートされています。これらのレンディションでは、ノードのプロパティ（適切な形式）がリストされます。拡張子 `.res` のデフォルトのレンディション、または要求拡張子のない要求は、（可能な場合は）リソースをスプールします。
 * HTTP エラー処理（コード 403 または 404）の場合、Sling は以下のいずれかの場所でスクリプトを検索します。
    * カスタマイズされたスクリプトの場所 `/apps/sling/servlet/errorhandler`

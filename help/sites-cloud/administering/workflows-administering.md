@@ -3,10 +3,10 @@ title: ワークフローインスタンスの管理
 description: ワークフローインスタンスの管理方法について説明します。
 feature: Administering
 role: Admin
-source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 63%
+source-wordcount: '1279'
+ht-degree: 61%
 
 ---
 
@@ -33,7 +33,6 @@ ht-degree: 63%
    ![status-healthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
 1. の場合 **ステータスの詳細** ワークフローインスタンスの **詳細**、 **実行中のワークフローインスタンスの数**, **完了したワークフローインスタンス**, **中止されたワークフローインスタンス**, **失敗したワークフローインスタンス**&#x200B;など。 例えば、以下は以下の画像で、 **ステータスの詳細** と **ステータス：正常** および **ステータス：異常**.
    ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
-
    ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
@@ -93,7 +92,6 @@ ht-degree: 63%
    >* 使用 **終了** アクション
    >* ワークフローの対象となるページが（強制的に）削除された場合、ワークフローは終了します。
 
-
 1. 特定の項目を選択し、「**履歴を開く**」で詳細を確認します。
 
    ![wf-99](/help/sites-cloud/administering/assets/wf-99.png)
@@ -102,8 +100,7 @@ ht-degree: 63%
 
 ワークフローが失敗した場合、AEM の&#x200B;**エラー**&#x200B;コンソールを使用してエラーの原因を調べ、特定された原因に応じて適切なアクションを取ることができます。
 
-* **失敗の詳細**：ウィンドウを開き、 
-**失敗メッセージ**、 **ステップ、 **失敗スタック**.
+* **失敗の詳細**：ウィンドウを開き、 **失敗メッセージ**、 **ステップ、 **失敗スタック**.
 
 * **履歴を開く**&#x200B;ワークフローの履歴の詳細を表示します。
 
@@ -190,7 +187,7 @@ ht-degree: 63%
 
 ワークフローモデルのレベルでは、モデル（およびそのランタイムインスタンス）にメタデータの外部ストレージが含まれていることを示すフラグが用意されています。外部ストレージ用にマークされたモデルのワークフローインスタンスに対するワークフロー変数は JCR に保持されません。
 
-*userMetadataPersistenceEnabled* プロパティがワークフローモデルの *jcr:content* ノードに格納されます。このフラグは、ワークフローメタデータに *cq:userMetaDataCustomPersistenceEnabled* として保持されます。
+プロパティ *userMetadataPersistenceEnabled* が *jcr:content ノード* ワークフローモデルの。 このフラグは、次のようにワークフローメタデータに保持されます。 *cq:userMetaDataCustomPersistenceEnabled*.
 
 以下の図は、ワークフローにフラグを設定する方法を示しています。
 

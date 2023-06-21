@@ -6,10 +6,10 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: dbc6b5c0f11e52b45981cab36381258edcf6c167
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '3829'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Connected Assets 機能では、[!DNL Experience Manager Sites] と [!DNL Experi
 
 ## Connected Assets の概要 {#overview-of-connected-assets}
 
-[!UICONTROL ページエディター]でページをターゲット先として編集する場合、作成者は、アセットのソースとして機能する別の [!DNL Assets] デプロイメントのアセットをシームレスに検索、参照および埋め込むことができます。管理者は、 [!DNL Sites] の機能を備える [!DNL Experience Manager] のデプロイメントと [!DNL Assets] の機能を備える [!DNL Experience Manager] 別のデプロイメントとの 1 回限りの統合を作成します。また、Connected Assets を通じてサイトの web ページで Dynamic Media 画像を使用し、スマート切り抜きや画像プリセットなどの Dynamic Media 機能を利用することもできます。
+[!UICONTROL ページエディター]でページをターゲット先として編集する場合、作成者は、アセットのソースとして機能する別の [!DNL Assets] デプロイメントのアセットをシームレスに検索、参照および埋め込むことができます。管理者は、 [!DNL Sites] の機能を備える [!DNL Experience Manager] のデプロイメントと [!DNL Assets] の機能を備える [!DNL Experience Manager] 別のデプロイメントとの 1 回限りの統合を作成します。また、Connected Assets を通じてサイトの Web ページでDynamic Media画像を使用し、スマート切り抜きや画像プリセットなどのDynamic Media機能を使用することもできます。
 
 [!DNL Sites] 作成者の場合、リモートアセットは読み取り専用のローカルアセットとして利用できます。この機能は、サイトエディター上のリモートアセットへのシームレスな検索とアクセスをサポートします。Sites で完全なアセットコーパスを使用する必要があるその他のユースケースについては、Connected Assets を活用する代わりにアセットの一括移行を検討してください。
 
@@ -42,11 +42,11 @@ Connected Assets 機能では、[!DNL Experience Manager Sites] と [!DNL Experi
 * ユーザーがそれぞれのデプロイメント上で適切なユーザーグループに属している。
 * [!DNL Adobe Experience Manager] のデプロイメントタイプでは、サポートされている条件の 1 つが満たされます。[!DNL Experience Manager] as a Cloud Service [!DNL Assets] は [!DNL Experience Manager] 6.5 で動作します。この機能が [!DNL Experience Manager] 6.5 でどのように動作するかについて詳しくは、「[ [!DNL Experience Manager]  6.5  [!DNL Assets] の Connected Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html?lang=ja)」を参照してください。
 
-   |  | [!DNL Sites] as a [!DNL Cloud Service] | AMS 上の [!DNL Experience Manager] 6.5 [!DNL Sites] | [!DNL Experience Manager] 6.5 [!DNL Sites] On-Premise |
-   |---|---|---|---|
-   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | サポート対象 | サポート対象 | サポート対象 |
-   | AMS 上の **[!DNL Experience Manager]6.5 [!DNL Assets]** | サポート対象 | サポート対象 | サポート対象 |
-   | **[!DNL Experience Manager]6.5 [!DNL Assets] On-Premise** | サポート対象外 | サポート対象外 | サポート対象外 |
+  | | [!DNL Sites] as a [!DNL Cloud Service] | AMS 上の [!DNL Experience Manager] 6.5 [!DNL Sites] | [!DNL Experience Manager] 6.5 [!DNL Sites] On-Premise |
+  |---|---|---|---|
+  | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | サポート対象 | サポート対象 | サポート対象 |
+  | AMS 上の **[!DNL Experience Manager]6.5 [!DNL Assets]** | サポート対象 | サポート対象 | サポート対象 |
+  | **[!DNL Experience Manager]6.5 [!DNL Assets] On-Premise** | サポート対象外 | サポート対象外 | サポート対象外 |
 
 ### サポートされているファイル形式 {#mimetypes}
 
@@ -144,7 +144,7 @@ Connected Assets とローカル [!DNL Sites] の接続を構成するには、�
 ## Dynamic Media アセットの使用 {#dynamic-media-assets}
 
 
-Connected Assets では、[!DNL Dynamic Media] で処理された画像アセットをリモート DAM デプロイメントから Sites ページで使用したり、スマート切り抜きや画像プリセットなどの Dynamic Media 機能を活用することができます。
+Connected Assets では、 [!DNL Dynamic Media] Sites ページのリモート DAM デプロイメントから削除し、スマート切り抜きや画像プリセットなどのDynamic Media機能を使用します。
 
 Connected Assets で [!DNL Dynamic Media] を使用するには、以下の手順に従います。
 
@@ -356,11 +356,11 @@ Connected Assets の設定後、[!DNL Dynamic Media] アセットは、[!DNL Sit
 
 * ローカルの [!DNL Sites] デプロイメントからリモート DAM デプロイメントにアクセスできない場合は、クロスサイト cookie が許可され、[同じサイト cookie サポート](/help/security/same-site-cookie-support.md)が設定されていることを確認します。クロスサイト cookie がブロックされると、[!DNL Experience Manager] のデプロイメントが認証されない場合があります。例えば、匿名モードの [!DNL Google Chrome] は、サードパーティ cookie をブロックする可能性があります。[!DNL Chrome] ブラウザーで cookie を許可するには、アドレスバーの目アイコンをクリックし、**サイトが動作していません**／**ブロック**&#x200B;に移動し、リモート DAM URL を選択して、ログイントークン cookie を許可します。または、「[サードパーティ cookie を有効にする方法](https://support.google.com/chrome/answer/95647)」を参照してください。
 
-   ![シークレットモードでの Chrome での cookie エラー](assets/chrome-cookies-incognito-dialog.png)
+  ![シークレットモードでの Chrome での cookie エラー](assets/chrome-cookies-incognito-dialog.png)
 
 * リモート参照が取得されず、エラーメッセージが表示される場合は、[!DNL Sites] のデプロイメントが使用可能かどうか、また、ネットワーク接続の問題がないかどうかを確認します。確認のために後で再試行します。[!DNL Assets] デプロイメントは、 [!DNL Sites] デプロイメントとの接続の確立を 2 回試み、失敗を報告します。
 
-   ![アセットのリモート参照の再試行に失敗](assets/reference-report-failure.png)
+  ![アセットのリモート参照の再試行に失敗](assets/reference-report-failure.png)
 
 **関連情報**
 

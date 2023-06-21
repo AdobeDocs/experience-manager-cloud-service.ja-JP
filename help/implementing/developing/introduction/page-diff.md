@@ -2,10 +2,10 @@
 title: 開発とページの差分
 description: ページの差分機能の仕組みと開発者への影響の説明
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 68%
+source-wordcount: '334'
+ht-degree: 60%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 68%
 
 ## 操作の詳細 {#operation-details}
 
-ページのバージョンを比較する場合、差分を検出しやすくするために、比較対象となる以前のバージョンが AEM によってバックグラウンドで再作成されます。これは、[並べて比較](/help/sites-cloud/authoring/features/page-diff.md)できるようにコンテンツをレンダリングするために必要です。
+ページのバージョンを比較する場合、比較対象となる以前のバージョンがAEMによってバックグラウンドで再作成され、差分表示が容易になります。 これは、[並べて比較](/help/sites-cloud/authoring/features/page-diff.md)できるようにコンテンツをレンダリングするために必要です。
 
 この再作成操作は AEM の内部でおこなわれるもので、ユーザーに対しては透過的であり、ユーザーの介入は必要ありません。ただし、管理者が CRX DE Lite などでリポジトリーを閲覧している場合は、再作成されたこれらのバージョンがコンテンツ構造内に表示されます。
 

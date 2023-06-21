@@ -1,13 +1,13 @@
 ---
-title: ユーザーマッピングツールの使用（レガシー）
-description: ユーザーマッピングツールの使用（レガシー）
+title: ユーザーマッピングツールの使用（従来）
+description: ユーザーマッピングツールの使用（従来）
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: 8a258c2c929f9af84a1cde99072291a3e7f6cfc3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 87%
+source-wordcount: '831'
+ht-degree: 79%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 87%
 
 ## ユーザーマッピングツールのセットアップ {#setting-up-user-mapping}
 
-**前提条件：** ユーザーマッピングでは、各ユーザーが IMS ID にマッピングされる際に、AEMのプロファイルと IMS に電子メールアドレスが含まれている必要があります。  ユーザーがログイン時に電子メールアドレスをユーザー ID として使用している場合でも、電子メールアドレスがプロファイルにも IMS にも存在しない限り、そのユーザーに対するマッピングは機能しません。
+**前提条件：**&#x200B;ユーザーマッピングでは、IMS ID にマッピングされる各ユーザーは、AEM のプロファイルと IMS にメールアドレスを持っている必要があります。ユーザーがログイン時にメールアドレスをユーザー ID として使用している場合でも、メールアドレスがプロファイルと IMS に存在しない限り、そのユーザーに対するマッピングは機能しません。
 
 これを設定するには、次の手順に従います。
 
@@ -61,17 +61,17 @@ ht-degree: 87%
 
    * **組織 ID**：ユーザーが移行する組織の Adobe Identity Management System（IMS）組織 ID を入力します。
 
-      >[!NOTE]
-      >組織 ID を取得するには、[Admin Console](https://adminconsole.adobe.com/) にログインし、（右上の領域で）組織を選択します（複数の組織に属している場合）。組織 IDは、そのページの URL に `xx@AdobeOrg` のような形式で含まれます（xx が IMS 組織 ID です）。または、アクセストークンを生成した [Adobe 開発者コンソール](https://console.adobe.io)ページでも組織 ID が見つかります。
+     >[!NOTE]
+     >組織 ID を取得するには、[Admin Console](https://adminconsole.adobe.com/) にログインし、（右上の領域で）組織を選択します（複数の組織に属している場合）。組織 IDは、そのページの URL に `xx@AdobeOrg` のような形式で含まれます（xx が IMS 組織 ID です）。または、アクセストークンを生成した [Adobe 開発者コンソール](https://console.adobe.io)ページでも組織 ID が見つかります。
 
    * **クライアントID**：設定手順で保存したクライアント ID を入力します。
 
    * **アクセストークン**：設定手順で保存したアクセストークンを入力します。
 
-      >[!NOTE]
-      >アクセストークンの有効期限は 24 時間で切れるので、そのたびに新しいアクセストークンを作成する必要があります。新しいトークンを作成するには、[Adobe 開発者コンソール](https://console.adobe.io)に戻り、プロジェクトを選択し、「**User Management API**」をクリックして、同じ秘密鍵をボックスに貼り付けます。
+     >[!NOTE]
+     >アクセストークンの有効期限は 24 時間で切れるので、そのたびに新しいアクセストークンを作成する必要があります。新しいトークンを作成するには、 [Adobe Developer Console](https://console.adobe.io)、プロジェクトを選択、 **ユーザー管理 API**&#x200B;をクリックし、ボックスに同じ秘密鍵を貼り付けます。
 
-1. フィールドに値を入力したら、「**設定をテスト**」をクリックして、User Management API サービスへの接続をテストします。接続に成功した場合は、「**保存**」をクリックして設定を保存できます。
+1. フィールドに値を入力した後、 **設定をテスト** をクリックして、User Management API サービスへの接続をテストします。 接続に成功した場合は、 **保存** 設定を保存します。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 
@@ -88,13 +88,12 @@ ht-degree: 87%
    ![画像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-start1.png)
 
 
-1. ユーザーマッピングが完了したら、「**結果**」をクリックして概要を表示します。
+1. ユーザーマッピングが完了したら、「 **結果** をクリックして概要を表示します。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
    >[!IMPORTANT]
-   >* ユーザーマッピングが完了したら、パンくずリストを使用してコンテンツ移行ページに戻ることができます。ユーザーマッピングカードにステータスとタイムスタンプが表示されます。「**コンテンツ転送**」をクリックして移行セットを作成し、抽出を実行します。詳しくは、[コンテンツ転送ツールの実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja#running-tool)を参照してください。
-
+   >* ユーザーマッピングが完了したら、パンくずリストを使用してコンテンツ移行ページに戻ることができます。 ユーザーマッピングカードにステータスとタイムスタンプが表示されます。「**コンテンツ転送**」をクリックして移行セットを作成し、抽出を実行します。詳しくは、[コンテンツ転送ツールの実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja#running-tool)を参照してください。
 
 ### ユーザーマッピングプロセスの再開 {#resume-user-mapping-process}
 
@@ -104,26 +103,26 @@ ht-degree: 87%
 * プロセスの実行中にアクセストークンが期限切れになった
 * その他の理由
 
-   >[!NOTE]
-   >進行状況がプロセスの停止位置から保存されます。
+  >[!NOTE]
+  >進行状況がプロセスの停止位置から保存されます。
 
 ユーザーマッピングプロセスを再開するには、次の手順に従います。
 
-1. 「**ログを表示**」をクリックしてユーザーマッピングログを確認し、保存された進行状況をチェックします。
+1. クリック **ログを表示** をクリックしてユーザーマッピングログを確認し、保存された進行状況を確認します。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
 
-1. 「**ユーザーマッピングを開始**」ボタンを再度クリックすると、中断した位置から再開できます。
+1. クリック **ユーザーマッピングを開始** ボタンを再度クリックすると、中断した位置から再開できます。
 
    >[!NOTE]
    >再起動する前に、アクセストークンが引き続き有効であるか、更新されていることを確認してください。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
 
-1. ダイアログボックスの「**開始**」をクリックして、ユーザーマッピングプロセスを再開します。
+1. クリック **開始** をクリックして、ユーザーマッピングプロセスを再開します。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
 
-   ユーザーマッピングプロセスが完了したら、問題の設定の「**ステータス**」が&#x200B;**完了**&#x200B;と表示されます。
+   ユーザーマッピングプロセスが完了したら、 **ステータス** as **完了** を設定します。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)

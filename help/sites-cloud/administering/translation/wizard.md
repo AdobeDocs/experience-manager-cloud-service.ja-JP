@@ -4,10 +4,10 @@ description: AEMでの言語コピーウィザードの使用について説明�
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 87%
+source-wordcount: '285'
+ht-degree: 82%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 87%
 
    >[!NOTE]
    >
-   >前の手順で複数言語を選択した場合は、複数の翻訳プロジェクトが作成されます。
+   >前の手順で複数の言語を選択した場合は、複数の翻訳プロジェクトが作成されます。
 
    ![ウィザードの翻訳手順](../assets/language-copy-wizard-translate.png)
 

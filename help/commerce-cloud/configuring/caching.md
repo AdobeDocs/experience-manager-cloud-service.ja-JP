@@ -1,11 +1,11 @@
 ---
 title: キャッシュとパフォーマンス
 description: GraphQL とコンテンツキャッシュを有効にしてコマース実装のパフォーマンス最適化に利用できる様々な設定について説明します。
-exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 100%
+source-wordcount: '844'
+ht-degree: 97%
 
 ---
 
@@ -53,7 +53,7 @@ venia/components/structure/navigation:true:10:600
 
 AEM Dispatcher で CIF ページを限られた時間だけキャッシュできるようにするため、AEM Dispatcher で CIF ページをキャッシュする場合は、[時間ベースのキャッシュの無効化](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#configuring-time-based-cache-invalidation-enablettl)（TTL ベースのキャッシュとも呼ばれます）を使用することをお勧めします。この機能は、追加の [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) パッケージを使用して AEM で設定できます。
 
-TTL ベースのキャッシュを使用する場合、デベロッパーは通常、選択した AEM ページに対して 1 つまたは複数のキャッシュ期間を定義します。これにより、CIF ページは設定された期間まで AEM Dispatcher にのみキャッシュされ、コンテンツは頻繁にアップデートされます。
+TTL ベースのキャッシュを使用する場合、デベロッパーは通常、選択した AEM ページに対して 1 つまたは複数のキャッシュ期間を定義します。これにより、CIF ページは設定された期間までAEM Dispatcher にのみキャッシュされ、コンテンツは頻繁に更新されます。
 
 >[!NOTE]
 >

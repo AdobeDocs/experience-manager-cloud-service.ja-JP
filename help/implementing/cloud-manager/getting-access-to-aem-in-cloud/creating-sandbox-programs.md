@@ -2,10 +2,10 @@
 title: サンドボックスプログラムの作成
 description: Cloud Manager を使用して、トレーニング、デモ、POC などの実稼動以外の用途に使用する独自のサンドボックスプログラムを作成する方法を説明します。
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 67%
+source-wordcount: '462'
+ht-degree: 62%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 67%
 
    ![プログラムの概要へのアクセス](assets/program-overview-sandbox.png)
 
-1. プロジェクト作成手順が完了したら、Git リポジトリを使用できるように、「**リポジトリ情報にアクセス**」リンクをクリックします。
+1. プロジェクト作成手順が完了したら、 **リポジトリ情報にアクセス** git リポジトリを使用するためのリンク。
 
    ![プログラム設定](assets/create-program4.png)
 

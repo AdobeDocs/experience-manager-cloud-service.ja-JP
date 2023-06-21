@@ -2,10 +2,10 @@
 title: カスタムコード品質ルール
 description: このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。これらは、Adobe Experience Manager Engineering のベストプラクティスに基づいています。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 288faf39a86411bb96d781a320abfa47538b2066
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '3508'
-ht-degree: 99%
+source-wordcount: '3504'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->完全な SonarQube ルールは、Adobe固有の情報が原因で、ダウンロードできません。 [このリンクを使用して、ルールの完全なリストをダウンロードできます。](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) ルールの説明と例については、このドキュメントを引き続きお読みください。
+>完全な SonarQube ルールは、アドビ独自の情報が原因でダウンロードできません。[このリンクを使用して、ルールの完全なリストをダウンロードできます。](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)ルールの説明と例については、このドキュメントを引き続き参照してください。
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **深刻度**：致命的
 * **最初の対象バージョン**：バージョン 2018.6.0
 
-Experience Manager アプリケーション内から HTTP 要求を実行する場合、不要なスレッドの使用を防ぐために、適切なタイムアウトが設定されていることを確認することが重要です。ただし、Java™ のデフォルト HTTP クライアント（`java.net.HttpUrlConnection`）および一般的に使用される Apache HTTP コンポーネントクライアントのデフォルトの動作はタイムアウトしないので、タイムアウトを明示的に設定する必要があります。また、ベストプラクティスとして、これらのタイムアウトは 60 秒以内にする必要があります。
+Experience Managerアプリケーション内から HTTP 要求を実行する場合は、不要なスレッドの使用を避けるために、適切なタイムアウトが設定されていることを確認することが重要です。 ただし、Java™ のデフォルト HTTP クライアント（`java.net.HttpUrlConnection`）および一般的に使用される Apache HTTP コンポーネントクライアントのデフォルトの動作はタイムアウトしないので、タイムアウトを明示的に設定する必要があります。また、ベストプラクティスとして、これらのタイムアウトは 60 秒以内にする必要があります。
 
 #### 非準拠コード {#non-compliant-code-2}
 
@@ -811,7 +811,7 @@ Cloud Service デプロイメントモデルとの互換性を保つには、個
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-Experience Manager クライアントライブラリには、画像やフォントなどの静的リソースが含まれている場合があります。[プリプロセッサーの使用](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors)のドキュメントで説明しているように、プロキシ化されたクライアントライブラリを使用する場合、パブリッシュインスタンスで効果的に参照するために、これらの静的リソースを という名前の子フォルダーに格納する必要があります。`resources`
+Experience Manager クライアントライブラリには、画像やフォントなどの静的リソースが含まれている場合があります。このドキュメントの説明に従って [プリプロセッサの使用](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) プロキシ化されたクライアントライブラリを使用する場合、これらの静的リソースは、 `resources` パブリッシュインスタンスで効果的に参照されます。
 
 #### 非準拠コード {#non-compliant-proxy-enabled}
 

@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4378'
+source-wordcount: '4377'
 ht-degree: 84%
 
 ---
@@ -30,7 +30,6 @@ ht-degree: 84%
 >
 >* `sling:OrderedFolder` タイプのアセットフォルダーの共有は、Experience Cloud との共有時はサポートされません。フォルダーを共有する場合は、フォルダーを作成するときに [!UICONTROL Ordered] を選択しないでください。
 >* Experience Manager では、`subassets` をフォルダーの名前として使用することはできません。これは、複合アセットのサブアセットを含むノード用に予約されているキーワードです
-
 
 1. 新しいフォルダーを作成するデジタルアセットフォルダー内の場所に移動します。 メニューで、「**[!UICONTROL 作成]**」をクリックします。「**[!UICONTROL 新規フォルダー]**」を選択します。
 1. 「**[!UICONTROL タイトル]**」フィールドにフォルダー名を入力します。デフォルトでは、DAM は指定したタイトルをフォルダー名として使用します。 フォルダーを作成したら、デフォルトのフォルダーを上書きし、別のフォルダー名を指定できます。
@@ -184,11 +183,11 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    * 移動後のアセットの名前を指定します。その後、「**[!UICONTROL 次へ]**」をタップまたはクリックして先に進みます。
 
    * 「**[!UICONTROL キャンセル]**」をタップまたはクリックして、プロセスを停止します。
+
    >[!NOTE]
    >
    >* 新しい場所に同じ名前のアセットがない場合は、アセットに同じ名前を指定できます。 ただし、同じ名前のアセットが存在する場所にアセットを移動する場合は、別の名前を使用する必要があります。 同じ名前を使用すると、名前のバリエーションが自動的に生成されます。 例えば、アセットの名前が「Square」の場合、コピーの名前は「Square1」になります。
    >* 名前を変更する場合、ファイル名に空白は使用できません。
-
 
 1. **[!UICONTROL 宛先を選択]**&#x200B;ダイアログで、次のいずれかの操作を行います。
 
@@ -486,7 +485,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 >[!NOTE]
 >
->複数の注釈を選択する場合は、最新の注釈がユーザーインターフェイスに表示されます。
+>複数の注釈を選択すると、最新の注釈がユーザーインターフェイスに表示されます。
 >
 >複数選択は、注釈付きアセットを PDF で印刷する場合にのみサポートされます。
 

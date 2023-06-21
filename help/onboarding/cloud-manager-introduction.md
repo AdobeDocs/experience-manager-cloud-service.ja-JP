@@ -2,10 +2,10 @@
 title: Cloud Manager の概要
 description: プログラム、環境、パイプラインを通じて、Cloud Manager がどのように AEM プロジェクトをサポートするかについて説明します。
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 33d587baba27ad54b1c9e34a36fadbd1dc56e3f5
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 100%
+source-wordcount: '851'
+ht-degree: 98%
 
 ---
 
@@ -75,7 +75,7 @@ Cloud Manager プログラムの使用方法について詳しくは、こちら
 
 ## Cloud Manager 環境 {#cloud-manager-environments}
 
-クラウド環境は、Cloud Manager で作成、アクセス、表示されます。これらの環境は、実稼動環境、ステージング環境または開発環境にすることができます。環境が異なれば目的も異なり、異なる CI/CD パイプラインで使用できます。環境は、次のようなサービスで構成されます。
+クラウド環境は、Cloud Manager を使用して作成、アクセス、表示されます。 これらの環境は、実稼動環境、ステージング環境または開発環境にすることができます。環境が異なれば目的も異なり、異なる CI/CD パイプラインで使用できます。環境は、次のようなサービスで構成されます。
 
 * [AEM オーサーサービス](#author-services)
 * [AEM パブリッシュサービス](#publish-services)

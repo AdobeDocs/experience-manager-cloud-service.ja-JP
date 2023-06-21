@@ -2,10 +2,10 @@
 title: 実稼動プログラムの作成
 description: Cloud Manager を使用して、ライブトラフィックをホストする独自の実稼動プログラムを作成する方法について説明します。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 82%
+source-wordcount: '581'
+ht-degree: 78%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 82%
 1. 「**ソリューションとアドオン**」タブで、プログラムに含めるソリューションを選択します。
 
    * 利用可能な様々なソリューションに 1 つ以上のプログラムが必要かどうかが不明な場合は、最も興味のあるプログラムを選択します。 追加のソリューションは、 [プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) 後で。 詳しくは、 [実稼働プログラムドキュメントの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) その他のプログラム設定の推奨事項については、を参照してください。
-   * 以前に「**セキュリティの強化を有効にする**」を選択した場合は、HIPAA 資格が使用可能なソリューションのみを選択できます。
+   * 選択した **拡張セキュリティの有効化** 以前は、HIPAA の使用権限を持つソリューションを選択できる数に制限されていました。
 
    ![ソリューションを選択](assets/setup-prod-select.png)
 

@@ -4,10 +4,10 @@ description: AEM サイトテーマを使用して、サイトのスタイルや
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
-source-git-commit: a77c31ebfce01834325bfdb806793dcd8ba169d4
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 100%
+source-wordcount: '353'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ AEM サイトテンプレートを使用して作成されたサイトでは、�
 
 >[!NOTE]
 >
->AEM サイトテーマを [AEM サイトテンプレートと混同しないでください。](site-templates.md) AEM サイトテーマには、AEM サイトのスタイル設定情報のみが含まれます。AEM サイトテンプレートは、サイト構造と初期コンテンツを定義し、 [クイックサイト作成](create-site.md) を可能にするために AEM サイトテーマを含みます。
+>AEM サイトテーマを [AEM サイトテンプレートと混同しないでください。](site-templates.md) AEM サイトテーマには、AEM サイトのスタイル設定情報のみが含まれます。AEMのサイトテンプレートは、サイト構造と初期コンテンツを定義し、次の目的で使用できるAEMのサイトテーマを含みます。 [クイックサイトの作成。](create-site.md)
 
 ## サイトテーマの使用 {#using-themes}
 

@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service プレリリースチャネル
 description: プレリリースチャネルを使用して、AEM as a Cloud Service の今後の機能のプレビューを取得する方法について説明します。
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: a66814c0f7f8dbdf794ff1867c7a4d7fdc2956cf
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 100%
+source-wordcount: '1305'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Adobe Experience Manager as a Cloud Service は、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja#aem-as-cloud-service)に従って、毎月のリリースサイクルで新機能を提供します。
 
-翌月に公開予定の機能を把握できるように、プレリリースチャネルを購読できます。プレリリースチャネルにアクセスするには、開発環境または任意のサンドボックス環境を設定します。AEM UI からアクセス可能な変更をプレビューしたり、新しいプレリリース API に対してコードを作成したりできます。
+次の機能リリースで公開予定の機能について理解するには、プレリリースチャネルを購読します。プレリリースチャネルは、開発環境または任意のサンドボックス環境を設定することでアクセスできます。 AEM UI からアクセス可能な変更をプレビューしたり、新しいプレリリース API に対してコードを作成したりできます。
 
 特定の機能リリースのプレリリース機能のリストは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)に掲載されています。
 
@@ -31,7 +31,7 @@ AEM as a Cloud Service には 2 種類のリリースがあります。
 
 このパターンにより、サービスが中断されることなく継続的にリリースされます。
 
-プレリリースチャネルでは、今後の機能を評価し、独自のプロジェクトで可能な実装を計画するために、今後の機能リリースでスケジュールされている機能をプレビューできます。これにより、次の機能リリースに向けて事前に計画できます。
+プレリリースチャネルでは、今後の機能リリースでスケジュールされた機能をプレビューできるので、今後の機能を評価し、独自のプロジェクトで考えられる実装を計画できます。 次の機能リリースの前に計画できます。
 
 例えば、5月にプレリリースチャネルを購読している場合、今後の 6月のリリースで機能を評価できます。
 
@@ -97,22 +97,22 @@ Cloud Manager API と CLI を使用して環境変数を更新することもで
 
 * [Cloud Manager API の環境変数エンドポイント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables)を使用して、`AEM_RELEASE_CHANNEL` 環境変数に値 `prerelease` を設定します。
 
-   ```text
-   PATCH /program/{programId}/environment/{environmentId}/variables
-   [
-           {
-                   "name" : "AEM_RELEASE_CHANNEL",
-                   "value" : "prerelease",
-                   "type" : "string"
-           }
-   ]
-   ```
+  ```text
+  PATCH /program/{programId}/environment/{environmentId}/variables
+  [
+          {
+                  "name" : "AEM_RELEASE_CHANNEL",
+                  "value" : "prerelease",
+                  "type" : "string"
+          }
+  ]
+  ```
 
 * [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) も使用できます
 
-   ```shell
-   aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease
-   ```
+  ```shell
+  aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL "prerelease
+  ```
 
 環境を通常の（プレリリース以外の）チャネルの動作に戻す場合は、変数を削除するか、別の値に設定し直します。
 
@@ -157,7 +157,7 @@ Javadoc は Maven Central に公開されます。
      </dependency>
    ```
 
-   プレリリース SDK に変更するには、次に示すように、依存関係を `com.adobe.aem:aem-sdk-api` から `com.adobe.aem:aem-prerelease-sdk-api` に変更するだけです。
+   プレリリース SDK に変更するには、依存関係を `com.adobe.aem:aem-sdk-api` から `com.adobe.aem:aem-prerelease-sdk-api` 以下に示すように。
 
    ```
    <dependencyManagement>
@@ -189,7 +189,7 @@ Javadoc は Maven Central に公開されます。
 
 ## ユーザーのトレーニング {#train-users}
 
-プレリリースチャネルの新機能をテストし、プロジェクトで活用することにしたら、ユーザーのトレーニングを行う必要があります。
+プレリリースチャネルの新機能をテストし、プロジェクトで使用することにしたら、ユーザーのトレーニングをおこなう必要があります。
 
 Adobe Experience League では、AEMaaCS を学ぶための多くのリソースを提供しています。
 

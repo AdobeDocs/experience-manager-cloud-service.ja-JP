@@ -4,9 +4,9 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のコンテン
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2127'
+source-wordcount: '2121'
 ht-degree: 65%
 
 ---
@@ -60,7 +60,6 @@ Adobe Experience Manager（AEM）as a Cloud Service でコンテンツフラグ�
 >* [AEM Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [コンテンツフラグメントと共に使用する AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 >* [MSM for Assets を使用したコンテンツフラグメントの再利用](/help/assets/reuse-assets-using-msm.md) ( **Assets** コンソール )
-
 
 通信チャネルの数は年々増加しています。通常、チャネルとは配信メカニズムのことであり、次のどちらも指します。
 
@@ -162,9 +161,9 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
    * アセットの位置を定義します。
    * 詳しくは、 [フラグメントへのアセットの挿入](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) （フラグメントエディター）を参照してください。
 
-   >[!NOTE]
-   >
-   >コンテンツフラグメント自体に挿入したビジュアルアセットは、前の段落に添付されます。このコンテンツフラグメントをページに追加した場合、ビジュアルアセットは、中間コンテンツが追加されたタイミングで前の段落との関連で移動します。
+  >[!NOTE]
+  >
+  >コンテンツフラグメント自体に挿入したビジュアルアセットは、前の段落に添付されます。このコンテンツフラグメントをページに追加した場合、ビジュアルアセットは、中間コンテンツが追加されたタイミングで前の段落との関連で移動します。
 
 * **関連コンテンツ**
 
@@ -207,13 +206,13 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
    * 複数行テキスト要素（任意のフラグメントタイプ）にのみ追加できます。
    * 前のテキスト（段落）に添付されます。
 
-      >[!CAUTION]
-      >
-      >プレーンテキスト形式に切り替えると、アセットが（誤って）フラグメントから削除されるおそれがあります。
+     >[!CAUTION]
+     >
+     >プレーンテキスト形式に切り替えると、アセットが（誤って）フラグメントから削除されるおそれがあります。
 
-      >[!NOTE]
-      >
-      >ページでフラグメントを使用する場合は、アセットを[追加の（中間）コンテンツ](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)として追加することもできます。その場合は、関連コンテンツ、または Assets ブラウザー内のアセットを使用します。
+     >[!NOTE]
+     >
+     >ページでフラグメントを使用する場合は、アセットを[追加の（中間）コンテンツ](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)として追加することもできます。その場合は、関連コンテンツ、または Assets ブラウザー内のアセットを使用します。
 
 * **関連コンテンツ**
 
@@ -236,9 +235,9 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
          * フラグメントを表示または編集する **プロパティ** コンソールから
          * を編集する **メタデータ** フラグメントエディターで
 
-   >[!CAUTION]
-   >
-   >メタデータ処理プロファイルは、コンテンツフラグメントには適用されません。
+  >[!CAUTION]
+  >
+  >メタデータ処理プロファイルは、コンテンツフラグメントには適用されません。
 
 * **マスター**
 
@@ -246,9 +245,9 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
       * すべてのコンテンツフラグメントには 1 つのマスターのインスタンスがあります。
       * マスターは削除できません。
+
    * マスターには、フラグメントエディターの「**[バリエーション](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)**」の下でアクセスできます。
    * マスター自体はバリエーションではありませんが、すべてのバリエーションの基礎となります。
-
 
 * **バリエーション**
 
@@ -301,7 +300,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 ## 使用例 {#example-usage}
 
-フラグメントと、その要素およびバリエーションを一緒に使用して、複数のチャネルに対応した一貫性のあるコンテンツを作成できます。フラグメントを設計するときは、何をどこで使用するかを考慮する必要があります。
+フラグメントと、その要素およびバリエーションを一緒に使用して、複数のチャネルに対応した一貫性のあるコンテンツを作成できます。フラグメントをデザインする際は、何をどこで使用したかを考慮します。
 
 ### WKND サンプル {#wknd-sample}
 
@@ -310,7 +309,7 @@ AEM as a Cloud Service の習得に役立つ [WKND サイト](/help/implementing
 WKND プロジェクトには、次のものが含まれます。
 
 * 次の URL で入手できるコンテンツフラグメントモデル：
-   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * 次の URL で入手できるコンテンツフラグメント（およびその他のコンテンツ）：
-   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`

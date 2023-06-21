@@ -4,10 +4,10 @@ description: システム管理者が必要なクラウドリソースを設定�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 98%
+source-wordcount: '1417'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 98%
 開発者またはデプロイメントマネージャーは、このドキュメントで説明するタスクを開始する前に、システム管理者がこのオンボーディングジャーニーのすべての手順を完了していることを確認してください。以下の手順です。
 
 * システム管理者が、開発者とデプロイメントマネージャーをそれぞれの製品プロファイルに割り当てている。
-* AEM も使用するには、開発者を **AEM ユーザー**&#x200B;または **AEM 管理者**&#x200B;の製品プロファイルに追加で割り当てる必要があります。
+* 開発者は、 **AEM Users** または **AEM Administrators** 製品プロファイルはAEMも使用します。
 * クラウドリソースが設定されている。
 
 ## Git へのアクセス {#accessing-git}
@@ -127,7 +127,7 @@ Cloud Manager でセルフサービスの Git アカウント管理を使用す�
 
 おめでとうございます。これで、Git リポジトリから実稼動以外の環境にコードをデプロイしました。
 
-## 次のステップ {#whats-next}
+## 次の手順 {#whats-next}
 
 このドキュメントを読み終えたので、次のことをできるようになりました。
 

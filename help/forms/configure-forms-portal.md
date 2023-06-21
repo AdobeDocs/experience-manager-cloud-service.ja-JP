@@ -2,10 +2,10 @@
 title: Experience Manager Sites ページでフォームポータルを作成する方法
 description: フォームポータルを作成し、標準搭載のコアコンポーネントを AEM Sites ページで使用する方法を説明します。
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 92%
+source-wordcount: '1762'
+ht-degree: 90%
 
 ---
 
@@ -97,7 +97,7 @@ AEM ワークフロー用の統合ストレージコネクタを設定するに�
 
 ## フォームポータルコンポーネントを有効にする {#enable-forms-portal-components}
 
-Adobe Experience Manager（AEM）サイトで任意のコアコンポーネント（標準のポータルコンポーネントを含む）を使用するには、プロキシコンポーネントを作成して、サイトに対してそれを有効にする必要があります。プロキシコンポーネントの作成とポータルコンポーネントの有効化については、 [コアコンポーネントの使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=ja#create-proxy-components) を参照してください。
+Adobe Experience Manager(AEM) サイトでコアコンポーネント（ポータルコンポーネントを含む）を使用するには、プロキシコンポーネントを作成して、サイトで有効にする必要があります。 プロキシコンポーネントの作成とポータルコンポーネントの有効化については、 [コアコンポーネントの使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=ja#create-proxy-components) を参照してください。
 
 ポータルコンポーネントを有効にすると、サイトページのオーサーインスタンスで使用できるようになります。
 

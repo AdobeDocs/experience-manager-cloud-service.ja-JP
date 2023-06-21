@@ -4,10 +4,10 @@ description: コンテンツフラグメントの関連コンテンツ機能が�
 feature: Content Fragments
 role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: 737d4d56312b763a50c2dfad0ea51feb9dbf4dde
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 89%
+source-wordcount: '240'
+ht-degree: 84%
 
 ---
 
@@ -29,7 +29,7 @@ AEM の関連コンテンツ機能には接続が用意されており、フラ�
 
 1. コレクションが既に関連付けられているかどうかに応じて、次のいずれかを選択します。
 
-   * **コンテンツを関連付け** - これが最初に関連付けられるコレクションになります
+   * **コンテンツを関連付け**  — 最初に関連付けられたコレクション
    * **コレクションを関連付け** - 関連付けられたコレクションが既に設定されています
 
 1. 必要なコレクションを選択します。
@@ -38,7 +38,7 @@ AEM の関連コンテンツ機能には接続が用意されており、フラ�
 
    ![コレクションの選択](assets/cfm-assoc-content-02.png)
 
-1. 確定します（「**選択**」を使用）。コレクションが関連付けられて表示されます。
+1. 確定します（「**選択**」を使用）。コレクションが関連付けられて一覧表示されます。
 
    ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 

@@ -3,10 +3,10 @@ title: AEM as a Cloud Service Release 2022.7.0 の移行ツールのリリース
 description: AEM as a Cloud Service Release 2022.7.0 の移行ツールのリリースノート
 feature: Release Information
 exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
-source-git-commit: cc52dfac1e7495d6a792bc7525720695022db8eb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 100%
+source-wordcount: '429'
+ht-degree: 95%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 100%
 * 抽出中の SSL/TLS 接続の問題のデバッグに役立つように、ユーザーは SSL ログを有効にできるようになりました。
 * ソース接続の問題のデバッグに役立つように、Azure への接続に失敗した場合にサブドメイン名がログに表示されるようになりました。
 * 事前コピー中の問題のデバッグに役立つように、事前コピーが失敗した場合に AzCopy ログが抽出ログに追加されるようになりました。
-* チェックサイズの結果が古くならないようにするため、前のチェックサイズが完了した後でのみ、ユーザーはチェックサイズを再実行できるようになります。
+* チェックサイズの結果が古くなるのを避けるために、以前のチェックサイズが完了した後でのみ、ユーザーはチェックサイズを再実行できます。
 
 ### バグの修正 {#bug-fixes-ctt}
 

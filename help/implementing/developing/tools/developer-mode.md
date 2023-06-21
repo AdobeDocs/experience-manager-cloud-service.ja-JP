@@ -4,10 +4,10 @@ seo-title: Developer Mode
 description: 開発者モードで開かれるサイドパネルのタブには、現在のページに関する開発者向けの情報が表示されます
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 88%
+source-wordcount: '528'
+ht-degree: 80%
 
 ---
 
@@ -32,7 +32,6 @@ AEMでページを編集する場合、複数の [モード](/help/sites-cloud/a
 >* モバイルデバイスまたはデスクトップ上の小さいウィンドウでは、スペースの制約があるので使用できません。
 >  * ウィンドウの幅が 1024 px 未満の場合は使用できません。
 >* `administrators` グループに所属しているユーザーのみ使用できます。
-
 
 ## 開発者モードを開く {#opening-developer-mode}
 
@@ -73,7 +72,7 @@ AEMでページを編集する場合、複数の [モード](/help/sites-cloud/a
    * コンポーネントのレンダリングに使用されるすべてのコンポーネントスクリプト。
    * この特定のコンポーネントのリポジトリーコンテンツパス。
 
-      ![詳細を表示](assets/developer-mode-view-details.png)
+     ![詳細を表示](assets/developer-mode-view-details.png)
 
 * **スクリプトを編集**：CRXDE Lite にコンポーネントスクリプトを開くためのリンクです。
 
@@ -93,4 +92,4 @@ AEMでページを編集する場合、複数の [モード](/help/sites-cloud/a
 * 警告とエラーの詳細および CRXDE Lite 内の適切なコードへの直接リンク（コンポーネントによってエラーログにエントリが作成された場合）
 * 警告（コンポーネントによって管理セッションが開かれた場合）
 
-例えば、未定義のメソッドが呼び出された場合は、発生したエラーが「**エラー**」タブに表示され、「**コンポーネント**」タブのツリーにあるコンポーネントエントリにも、エラー発生時のインジケーターが表示されます。
+例えば、未定義のメソッドが呼び出された場合、結果のエラーは **エラー** タブと、 **コンポーネント** また、エラーが発生した場合は、タブにインジケーターが表示されます。

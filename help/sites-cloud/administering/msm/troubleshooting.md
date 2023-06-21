@@ -4,10 +4,10 @@ description: MSM に関する最も一般的な問題のトラブルシューテ
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: 7c0be1a7bdc9ccb788ba41eb6ee83b89df94f500
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 88%
 
 ---
 
@@ -27,12 +27,12 @@ MSM は、リソース URL のセレクターと共に要求できる複数の�
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * ブループリントページでこの情報を使用して、リンクされているすべてのライブコピーのリストと、追加のライブコピーのステータス情報を取得します。
    * 次に例を示します。
-      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
+     `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * ライブコピーページでこれを使用して、ブループリントページとの接続に関する詳細情報を取得します。ページがライブコピーでない場合は、何も返されません。
    * 次に例を示します。
-      `http://localhost:4502/content/wknd/ca/en.msm.json`
+     `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 これらのサーブレットは、`com.day.cq.wcm.msm` ロガーを介して DEBUG ログメッセージを生成します。これも役に立ちます。
 
@@ -55,7 +55,7 @@ MSM は、リソース URL のセレクターと共に要求できる複数の�
 
 これらのプロパティに表示される情報は UI に反映される必要がありますが、トラブルシューティングをおこなう場合は、MSM アクションが発生したときにリポジトリで直接 MSM の動作を確認すると便利です。
 
-また、リポジトリでクエリーを実行し、特定の状態にあるページのセットを見つけるためにも、これらのプロパティを知ることが役立ちます。例：
+これらのプロパティを把握することも役に立つので、リポジトリに対してクエリを実行し、特定の状態にあるページのセットを見つけることができます。 例：
 
 * `select * from cq:LiveSync` は、すべてのライブコピーのルートページを返します。
 
@@ -82,9 +82,9 @@ AEM プリンシパル（ユーザーまたはグループ）の&#x200B;**ロー
 
 ブループリントページがロールアウトされる場合は、そのライブコピーページが更新されます。または、ライブコピーページがまだ存在しない場合（初めてロールアウトされるとき、またはライブコピーページが手動で削除されたときなど）には新しいライブコピーページが作成されます。
 
-ただし、後者の場合、`cq:LiveRelationship` プロパティのないページが同じ名前で存在する場合は、ライブコピーページが作成される前に、このページの名前が適宜変更されます。
+ただし、後者の場合、 `cq:LiveRelationship` プロパティが同じ名前で存在する場合は、ライブコピーページを作成する前に、このページの名前が適宜変更されます。
 
-既定では、ロールアウトは、ライブコピーページが作成されたときに、設計図の更新がロールアウトされるリンクされたライブコピーページ、またはページが作成されないことを前提とします。
+デフォルトでは、ロールアウトは、ライブコピーページの作成時にブループリントの更新がロールアウトされる、リンクされたライブコピーページ、またはページが作成されないことを前提としています。
 
 「スタンドアロン」ページが見つかった場合、MSM はこのページの名前を変更し、別のリンク付きライブコピーページを作成することにします。
 

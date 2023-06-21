@@ -1,9 +1,9 @@
 ---
 title: 追加の公開地域
 description: AEM as a Cloud Serviceが、可用性の向上と待ち時間の短縮のために、追加の公開領域をサポートする方法を説明します。
-source-git-commit: 9fccc1672aad243b648115e657396be1ce4ed614
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '545'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ AEM Sitesで設定されたプログラムで、追加の公開領域をライ�
 
 ## 高度なネットワークに関する考慮事項 {#advanced-networking-considerations}
 
-高度なネットワークが既に設定されているプログラムで追加の発行領域が有効になっている場合、高度なネットワークルールに一致する追加の発行領域のトラフィックは、デフォルトでプライマリ領域を経由します。 可用性の向上を活用するために、追加の地域で高度なネットワークを有効にすることをお勧めします。
+高度なネットワークが既に設定されているプログラムで追加の発行領域が有効になっている場合、高度なネットワークルールに一致する追加の発行領域のトラフィックは、デフォルトでプライマリ領域を経由します。 可用性の向上を活用するには、追加の地域で高度なネットワークを有効にすることをお勧めします。
 
 詳しくは、 [追加のパブリッシュ地域の高度なネットワーク設定](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) の節を参照してください。この節には、接続を失うことなく高度なネットワーク構成を他の地域に追加する方法が含まれます。
 

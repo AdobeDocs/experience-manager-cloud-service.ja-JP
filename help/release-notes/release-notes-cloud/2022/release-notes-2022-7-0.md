@@ -2,14 +2,14 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.7.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.7.0 リリースのリリースノート。'
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 27%
+source-wordcount: '953'
+ht-degree: 29%
 
 ---
 
-# 202278.0 リリースノート： [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の 202278.0 リリースノート {#release-notes}
 
 以下の節では、の 2022.7.0 バージョンの機能リリースノートの概要を説明します [!DNL Experience Manager] as a Cloud Service。
 
@@ -40,9 +40,9 @@ ht-degree: 27%
 
 * この [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) がサポートされるようになりました [キーボードショートカット](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
-* AEM as aCloud Service [web に最適化された画像配信](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) を使用すると、WebP などの形式を配信することで、ページの速度を大幅に向上できます。 この新しいサービスでは、より柔軟に画像のサイズを変更したり、変換したりすることもできます。 のすべてのバージョン [コア画像コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ja) を使用すると、このサービスを利用し、画像コンポーネントのポリシーのオプションをクリックして、画像を WebP として配信できます。
+* AEM as aCloud Service [web に最適化された画像配信](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=ja) を使用すると、WebP などの形式を配信することで、ページの速度を大幅に向上できます。 この新しいサービスでは、より柔軟に画像のサイズを変更したり、変換したりすることもできます。 のすべてのバージョン [コア画像コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ja) を使用すると、このサービスを使用し、画像コンポーネントのポリシーのオプションをクリックして、画像を WebP として配信できます。
 
-* AEMのパーソナライゼーションアクティビティは、従来のオファーの代わりにエクスペリエンスフラグメントを利用できるようになりました。 この機能：
+* AEMのパーソナライゼーションアクティビティで、従来のオファーの代わりにエクスペリエンスフラグメントを使用できるようになりました。 この機能：
    * 従来のライブラリオファーではなく、AEMコンテンツでエクスペリエンスフラグメントオファーを促進する移行パスを有効にして、大規模なパーソナライゼーションに合わせて適切にスタイル設定されたコンテンツを提供します。
    * は、コンテンツ作成者が誤ってサイトでスタイル設定されていないコンテンツを提供するのを防ぎます。
    * を使用すると、任意のコンポーネントのターゲットモードを、編集可能なテンプレートを使用するエクスペリエンスフラグメント (JSON とHTMLタイプの両方 ) に変換できます。
@@ -103,7 +103,7 @@ Adobe Experience Manager Assets を [MIME タイプに基づいてユーザー�
 ### 新機能 {#what-is-new-foundation}
 
 * この [リポジトリブラウザ](/help/implementing/developing/tools/repository-browser.md) にパス入力フィールドが追加され、リポジトリ階層内の特定のフォルダーに直接ジャンプできるようになりました。
-* Sling コンテンツ配布 (SCD) で、コンテンツが公開されずにコンテンツを無効にするための明示的な「無効化」アクションがサポートされるようになりました。 詳しくは、 [AEMでのキャッシュのas a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) ページを参照してください。
+* Sling コンテンツ配布 (SCD) で、コンテンツが公開されずにコンテンツを無効にする明示的な「無効化」アクションがサポートされるようになりました。 詳しくは、 [AEMでのキャッシュのas a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) ページを参照してください。
 * mod_macro がAEM as a Cloud Serviceで使用できるようになりました。 参照： [このテーブル](/help/implementing/dispatcher/disp-overview.md) を参照してください。
 
 ### AEMas a Cloud ServiceSDK Dispatcher ツールの機能強化 {#dispatcher-tools-enhancements}

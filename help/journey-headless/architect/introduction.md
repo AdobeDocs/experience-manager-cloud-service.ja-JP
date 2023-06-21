@@ -2,10 +2,10 @@
 title: AEM as a Headless CMS のコンテンツモデリング：概要
 description: Adobe Experience Manager as a Cloud Service as a Headless CMS の機能を使用して、プロジェクトのコンテンツをモデル化する方法を紹介します。
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '721'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ## フルスタックコンテンツ配信 {#full-stack}
 
-使いやすい大規模なコンテンツ管理システム（CMS）が登場して以来、組織はこれらをメッセージング、ブランディング、コミュニケーションを管理する一元的な場所として活用してきました。CMS をエクスペリエンス管理の中心として使用することで、異なるシステムでタスクを重複させる必要がなくなり、効率が向上しました。
+使いやすい大規模なコンテンツ管理システム (CMS) が登場して以来、組織はこれらをメッセージング、ブランディング、コミュニケーションを管理する一元的な場所として使用してきました。 CMS をエクスペリエンス管理の中心として使用することで、異なるシステムでタスクを重複させる必要がなくなり、効率が向上しました。
 
 ![従来のフルスタック CMS](/help/journey-headless/developer/assets/full-stack.png)
 

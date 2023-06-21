@@ -3,10 +3,10 @@ title: AMS から AEM as a Cloud Service への Dispatcher 設定の移行
 description: AMS から AEM as a Cloud Service への Dispatcher 設定の移行
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1447'
-ht-degree: 100%
+source-wordcount: '1445'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ AEM as a Cloud Service の Apache および Dispatcher の設定は、AMS のそ
 
 * AEM as a Cloud Service では、一部の Apache ディレクティブ（例えば、`Listen` または `LogLevel`）が使用されません。
 * AEM as a Cloud Service では、Dispatcher 設定の一部のみがインクルードファイルに置かれ、名前付けが重要です。例えば、異なるホスト間で再利用するフィルタールールは、`filters/filters.any` という名前のファイルに入れる必要があります。詳しくは、参照ページを参照してください。
-* AEM as a Cloud Service には、セキュリティの問題を防ぐために、`/glob` を使用して記述されたフィルタールールを無効にする、追加の検証があります。（使用できない）`allow *`の代わりに `deny *` が使用されるので、Dispatcher をローカルで実行して、トライアンドエラーを繰り返し、Dispatcher フィルターがブロックしているパスをログから調べて、それらを追加します。
+* AEM as a Cloud Service には、セキュリティの問題を防ぐために、`/glob` を使用して記述されたフィルタールールを無効にする、追加の検証があります。理由： `deny *` は、 `allow *` （使用できません）Dispatcher をローカルで実行し、トライアンドエラーを繰り返して、Dispatcher フィルターがブロックしているパスをログから調べ、それらのパスを追加する方法を確認できます。
 
 ## Dispatcher 設定の AMS から AEM as a Cloud Service への移行に関するガイドライン
 

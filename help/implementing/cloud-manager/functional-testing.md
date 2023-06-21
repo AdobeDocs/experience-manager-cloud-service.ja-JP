@@ -2,10 +2,10 @@
 title: 機能テスト
 description: コードの品質と信頼性を確保するために、AEM as a Cloud Service デプロイメントプロセスに組み込まれている 3 種類の機能テストについて説明します。
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 7d15440159a8e24314753acd5b37fcd2c5e8ec4c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 83%
+source-wordcount: '551'
+ht-degree: 72%
 
 ---
 
@@ -52,7 +52,7 @@ AEM as a Cloud Service には 3 種類の機能テストがあります。
 
 ### カスタム機能テスト {#custom-functional-testing}
 
-製品機能テストはアドビで定義されますが、独自のアプリケーション用に独自の品質テストを作成することもできます。これは、アプリケーションの品質を確保するために、[実稼働パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)またはオプションで[実稼働以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)の一部としてカスタム機能テストとして実行されます。
+製品機能テストはアドビで定義されますが、独自のアプリケーション用に独自の品質テストを作成することもできます。これは、 [実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) または [非実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) を使用して、アプリケーションの品質を確保します。
 
 カスタム機能テストは、カスタムコードのデプロイメントとプッシュアップグレードの両方で実行されます。そのため、AEM コードの変更によってアプリケーションコードが機能しなくなることを防ぐ適切な機能テストを作成することが特に重要になります。カスタム機能テストステップは常に存在し、スキップできません。
 
@@ -61,7 +61,7 @@ AEM as a Cloud Service には 3 種類の機能テストがあります。
 
 ### カスタム UI テスト {#custom-ui-testing}
 
-カスタム UI テストは、アプリケーションの UI テストを作成して自動的に実行できるオプション機能です。UI テストは、Docker イメージにパッケージ化された Selenium ベースのテストです。幅広い言語とフレームワーク（Java、Maven、Node、WebDriver.io、Selenium 上に構築されたその他のフレームワークとテクノロジーなど）を選択できるようにします。
+カスタム UI テストは、アプリケーションの UI テストを作成して自動的に実行できるオプション機能です。UI テストは、Java や Maven、Node や WebDriver.io などの幅広い言語とフレームワーク、または Selenium に基づいて構築されたその他のフレームワークとテクノロジーを可能にする、Docker イメージにパッケージ化された Selenium ベースのテストです。
 
 詳しくは、 [カスタム UI テスト](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) を参照してください。
 

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 リリースのリリースノート。'
 description: "[!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 のリリースノート。"
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 100%
+source-wordcount: '1264'
+ht-degree: 95%
 
 ---
 
@@ -31,16 +31,16 @@ ht-degree: 100%
 
 ### [!DNL Assets] と [!DNL Dynamic Media] の新機能  {#what-is-new-assets}
 
-* **アセットの一括取り込み**：アセットマイクロサービスなど、[!DNL Experience Manager] as a Cloud Service アーキテクチャを活用する拡張可能でクラウドネイティブな取り込みサービスを提供します。主な使用例としては、監視、レポート、スケジュール機能を備えた大規模な取り込みや、クラウドデータストアへの初回のアセット転送を一般的なクラウドアップロードツールで行えることなどが挙げられます。詳しくは、[アセット一括取り込みツール](/help/assets/add-assets.md#asset-bulk-ingestor)の説明を参照してください。
+* **アセットの一括取り込み**:を使用する、拡張性の高いクラウドネイティブな取り込みサービスをお客様に提供する [!DNL Experience Manager] as a Cloud Serviceアーキテクチャ（アセットマイクロサービスを含む）。 主な使用例としては、監視、レポート、スケジュール機能を備えた大規模な取り込みや、クラウドデータストアへの初回のアセット転送を一般的なクラウドアップロードツールで行えることなどが挙げられます。詳しくは、[アセット一括取り込みツール](/help/assets/add-assets.md#asset-bulk-ingestor)の説明を参照してください。
 
 
-   このツールは、システム管理者、コンサルタント、実装パートナーのいずれかのペルソナを対象としています。この機能により、大規模な取り込みが可能になります。これは、初回の取り込み時や大量の取り込みを行うときに使用するのが理想的です。より小規模な取り込みジョブの場合は、[Assets ユーザーインターフェイスを使用したアップロード](/help/assets/add-assets.md#upload-assets)または[[!DNL Experience Manager] デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)を使用します。
+  このツールは、システム管理者、コンサルタント、実装パートナーのいずれかのペルソナを対象としています。この機能により、大規模な取り込みが可能になります。これは、初回の取り込み時や大量の取り込みを行うときに使用するのが理想的です。より小規模な取り込みジョブの場合は、[Assets ユーザーインターフェイスを使用したアップロード](/help/assets/add-assets.md#upload-assets)または[[!DNL Experience Manager] デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)を使用します。
 
-   ![一括読み込みの設定](/help/assets/assets/bulk-import-config-low-res.png)
+  ![一括読み込みの設定](/help/assets/assets/bulk-import-config-low-res.png)
 
 * デジタルアセットをカード表示と列表示で並べ替えることができるようになりました。
 
-   ![アセットの並べ替え](/help/assets/assets/asset-sort-options.png)
+  ![アセットの並べ替え](/help/assets/assets/asset-sort-options.png)
 
 * このリリースでは、[!DNL Experience Manager Assets] のアクセシビリティに関する次の機能強化が行われています。詳しくは、[ [!DNL Assets]](/help/assets/accessibility.md) のアクセシビリティ機能を参照してください。
 
@@ -54,7 +54,7 @@ ht-degree: 100%
 
 * **Dynamic Media のバッチセットプリセット**：アセットファイルを個別にアップロードする場合や一括取り込みを使用してアップロードする場合に、複数のアセットを画像セットまたはスピンセットとして自動的に作成および編成できるようになりました。
 
-   詳しくは、[バッチセットプリセットについて](/help/assets/dynamic-media/batch-set-presets-dm.md)を参照してください。
+  詳しくは、[バッチセットプリセットについて](/help/assets/dynamic-media/batch-set-presets-dm.md)を参照してください。
 
 * [!DNL Dynamic Media] では、アクセシビリティが次のように強化されました。
 
@@ -67,7 +67,7 @@ ht-degree: 100%
    * キーボードおよびスクリーンリーダーのユーザーは切り抜き機能を使用できます。
    * キーボードユーザーによるホットスポットの管理が向上しました。
 
-   詳しくは、[ [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md)のアクセシビリティを参照してください。
+  詳しくは、[ [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md)のアクセシビリティを参照してください。
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -98,7 +98,7 @@ AEM as a Cloud Service 2020.11.0 の Cloud Manager のリリース日は 2020 �
 * ビルドの実行に先立って行われる依存関係の読み込みには、Maven プラグインのダウンロードが必要でした。
 * 言語を選択するための Cloud Manager フッターからのリンクが、正しい場所を指すようになりました。
 * コードスキャン時に SonarQube プロセスが起動しないことがあります。これが自動検出され、再起動が試行されるようになりました。
-* 「エクスペリエンス監査」ステップで既存のすべての実稼働パイプラインが自動的に有効になります。
+* 既存のすべての実稼動パイプラインは、エクスペリエンス監査ステップで自動的に有効になります。
 
 ## Adobe Experience Manager as a Cloud Service の基盤 {#cloud-service-foundation}
 
@@ -116,7 +116,7 @@ AEM as a Cloud Service の SDK ビルドアナライザー Maven プラグイン
 
 ### その他 {#others-foundation}
 
-Cloud Manager によるビルド時には Apache および Dispatcher 設定の新しい[「httpd -t」構文チェック](/help/implementing/dispatcher/disp-overview.md#local-validation)が実行されますが、これを、AEM as a Cloud Service SDK の Dispatcher ツールを使用して実行することもできます。
+新規 [&quot;httpd -t&quot;構文](/help/implementing/dispatcher/disp-overview.md#local-validation) Cloud Manager のビルド中に実行される Apache および Dispatcher 設定を確認します。これは、AEMas a Cloud ServiceSDK の Dispatcher ツールを使用して実行することもできます。
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 

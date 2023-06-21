@@ -3,16 +3,16 @@ title: AEM as a Cloud Service でのキャッシュ
 description: AEM as a Cloud Service でのキャッシュ
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 6bca307dcf41b138b5b724a8eb198ac35e2d906e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2832'
-ht-degree: 100%
+source-wordcount: '2819'
+ht-degree: 90%
 
 ---
 
 # はじめに {#intro}
 
-トラフィックは、CDN を経由して Apache Web サーバーレイヤーに渡されます。このレイヤーは、Dispatcher を含むモジュールをサポートします。パフォーマンスを向上させるために、主にキャッシュとして Dispatcher を使用し、パブリッシュノードでの処理を制限します。
+トラフィックは、CDN を経由して Apache Web サーバーレイヤーに渡されます。このレイヤーは、Dispatcher を含むモジュールをサポートします。パフォーマンスを向上させるために、Dispatcher は主にキャッシュとして使用され、パブリッシュノードでの処理を制限します。
 Dispatcher 設定にルールを適用して、デフォルトのキャッシュ有効期限設定を変更すると、CDN でキャッシュできるようになります。Dispatcher の設定で `enableTTL` が有効な場合、Dispatcher は、結果として生成されるキャッシュの有効期限のヘッダーも順守することに注意してください。これは、再公開されているコンテンツ以外でも特定のコンテンツを更新することを意味します。
 
 またこのページでは、Dispatcher キャッシュの無効化の方法、およびクライアントサイドライブラリに関するブラウザーレベルでのキャッシュの動作についても説明します。
@@ -33,56 +33,56 @@ Define DISABLE_DEFAULT_CACHING
 * AEM as a Cloud Service の SDK Dispatcher ツールを使用して、`global.vars` の `EXPIRATION_TIME` 変数を定義することにより、すべての HTML/Text コンテンツに対して上書きできます。
 * 次の Apache `mod_headers` ディレクティブを使用して、CDN とブラウザーキャッシュを個別に制御するなど、より細かいレベルでオーバーライドすることができます。
 
-   ```
-   <LocationMatch "^/content/.*\.(html)$">
-        Header set Cache-Control "max-age=200"
-        Header set Surrogate-Control "max-age=3600"
-        Header set Age 0
-   </LocationMatch>
-   ```
+  ```
+  <LocationMatch "^/content/.*\.(html)$">
+       Header set Cache-Control "max-age=200"
+       Header set Surrogate-Control "max-age=3600"
+       Header set Age 0
+  </LocationMatch>
+  ```
 
-   >[!NOTE]
-   >サロゲート制御ヘッダーは、アドビが管理する CDN に適用されます。[顧客が管理する CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=ja#point-to-point-CDN) を使用する場合、CDN プロバイダーに応じて異なるヘッダーが必要になる場合があります。
+  >[!NOTE]
+  >サロゲート制御ヘッダーは、アドビが管理する CDN に適用されます。[顧客が管理する CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=ja#point-to-point-CDN) を使用する場合、CDN プロバイダーに応じて異なるヘッダーが必要になる場合があります。
 
-   グローバルキャッシュコントロールヘッダーや、広範囲の正規表現に一致するヘッダーを設定する場合は、プライベートに保つ必要があるコンテンツに適用されないように注意が必要です。複数のディレクティブを使用して、ルールをきめ細かく適用することを検討してください。とは言え、Dispatcher のドキュメントに記載されているように、AEM as a Cloud Service は Dispatcher によってキャッシュ不可であることが検出されたものに対してキャッシュヘッダーが適用されていることを検出すると、キャッシュヘッダーを削除します。AEM で常にキャッシュヘッダーを適用するように強制するには、次のように **always** オプションを追加します。
+  グローバルキャッシュコントロールヘッダーや、広範囲の正規表現に一致するヘッダーを設定する場合は、プライベートに保つ必要があるコンテンツに適用されないように注意が必要です。複数のディレクティブを使用して、ルールをきめ細かく適用することを検討してください。とは言え、Dispatcher のドキュメントに記載されているように、AEM as a Cloud Service は Dispatcher によってキャッシュ不可であることが検出されたものに対してキャッシュヘッダーが適用されていることを検出すると、キャッシュヘッダーを削除します。AEMで常にキャッシュヘッダーを適用するように強制するには、 **常に** オプションは次のとおりです。
 
-   ```
-   <LocationMatch "^/content/.*\.(html)$">
-        Header unset Cache-Control
-        Header unset Expires
-        Header always set Cache-Control "max-age=200"
-        Header set Age 0
-   </LocationMatch>
-   ```
+  ```
+  <LocationMatch "^/content/.*\.(html)$">
+       Header unset Cache-Control
+       Header unset Expires
+       Header always set Cache-Control "max-age=200"
+       Header set Age 0
+  </LocationMatch>
+  ```
 
-   `src/conf.dispatcher.d/cache` の下のファイルに次のルール（デフォルト設定）があることを確認する必要があります。
+  `src/conf.dispatcher.d/cache` の下のファイルに次のルール（デフォルト設定）があることを確認する必要があります。
 
-   ```
-   /0000
-   { /glob "*" /type "allow" }
-   ```
+  ```
+  /0000
+  { /glob "*" /type "allow" }
+  ```
 
 * 特定のコンテンツが **CDN で**&#x200B;キャッシュされないようにするには、Cache-Control ヘッダーを *private* に設定します。例えば、次の例では、**secure** という名前のディレクトリ下の HTML コンテンツが CDN でキャッシュされないようにしています。
 
-   ```
-      <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
-      Header unset Cache-Control
-      Header unset Expires
-      Header always set Cache-Control "private"
-     </LocationMatch>
-   ```
+  ```
+     <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
+     Header unset Cache-Control
+     Header unset Expires
+     Header always set Cache-Control "private"
+    </LocationMatch>
+  ```
 
 * プライベートに設定された HTML コンテンツは CDN でキャッシュされませんが、[権限に影響を受けるキャッシュ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ja)が設定されている場合は Dispatcher でキャッシュでき、許可されたユーザーのみにコンテンツを提供できるようになります。
 
-   >[!NOTE]
-   >[dispatcher-ttl AEM ACS Commons プロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)などの他のメソッドでは、値は上書きされません。
+  >[!NOTE]
+  >[dispatcher-ttl AEM ACS Commons プロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)などの他のメソッドでは、値は上書きされません。
 
-   >[!NOTE]
-   >Dispatcher は独自の[キャッシュ ルール](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=ja)に従ってコンテンツをキャッシュする場合があることに注意してください。コンテンツを完全にプライベートにするには、Dispatcher によってコンテンツがキャッシュされないようにする必要があります。
+  >[!NOTE]
+  >Dispatcher は独自の[キャッシュ ルール](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=ja)に従ってコンテンツをキャッシュする場合があることに注意してください。コンテンツを完全にプライベートにするには、Dispatcher によってコンテンツがキャッシュされないようにする必要があります。
 
 ### クライアントサイドライブラリ（js、css） {#client-side-libraries}
 
-* AEM のクライアントサイドライブラリフレームワークを使用する場合、変更があると一意のパスを持つ新しいファイルとして表現されるので、JavaScript と CSS コードはブラウザーが無期限にキャッシュできるような方法で生成されます。つまり、クライアントライブラリを参照する HTML は必要に応じて作成されるので、顧客は公開時に新しいコンテンツを体験できます。「immutable」値を考慮しない古いブラウザーでは、cache-control は「immutable」または 30 日に設定されます。
+* AEM のクライアントサイドライブラリフレームワークを使用する場合、変更があると一意のパスを持つ新しいファイルとして表現されるので、JavaScript と CSS コードはブラウザーが無期限にキャッシュできるような方法で生成されます。つまり、クライアントライブラリを参照するHTMLは必要に応じて作成されるので、公開時に新しいコンテンツを体験できます。 「immutable」値を考慮しない古いブラウザーでは、cache-control は「immutable」または 30 日に設定されます。
 * 詳しくは、[クライアントサイドライブラリとバージョンの整合性](#content-consistency)を参照してください。
 
 ### BLOB ストレージに格納される大きい画像とコンテンツ {#images}
@@ -102,7 +102,7 @@ Dispatcher レイヤーのキャッシュヘッダーを変更する場合は、
 
 #### 新しいデフォルトのキャッシュ動作 {#new-caching-behavior}
 
-AEM レイヤーは、キャッシュヘッダーの設定の有無、およびリクエストタイプの値に応じて、キャッシュヘッダーを設定します。キャッシュ制御ヘッダーが設定されていない場合、パブリックコンテンツはキャッシュされ、認証済みトラフィックはプライベートに設定されます。キャッシュコントロールヘッダーが設定されている場合、キャッシュヘッダーは変更されません。
+AEM レイヤーは、キャッシュヘッダーの設定の有無、およびリクエストタイプの値に応じて、キャッシュヘッダーを設定します。キャッシュ制御ヘッダーが設定されていない場合、パブリックコンテンツはキャッシュされ、認証済みトラフィックはプライベートに設定されます。キャッシュ制御ヘッダーが設定されている場合、キャッシュヘッダーは変更されません。
 
 | キャッシュ制御ヘッダーが存在するか？ | リクエストタイプ | AEM が次に対してキャッシュヘッダーを設定 |
 |------------------------------|---------------|------------------------------------------------|
@@ -142,68 +142,68 @@ AEM レイヤーは、デフォルトでは BLOB コンテンツをキャッシ�
 
    * 可変クライアントライブラリリソースを 12 時間キャッシュし、12 時間後にバックグラウンド更新を行います。
 
-      ```
-      <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
-         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200,public" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
+        Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200,public" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * ミスを避けるために、不変のクライアントライブラリリソースをバックグラウンド更新で長期（30 日）にキャッシュします。
 
-      ```
-      <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
-         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
+        Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * HTML ページを 5 分間キャッシュし、バックグラウンド更新でブラウザーに 1 時間、CDN に 12 時間キャッシュします。Cache-Control ヘッダーは常に追加されるので、/content/* 下の一致する html ページが公開を意図したものであることが重要です。そうでない場合は、より詳細な正規表現の使用を検討してください。
 
-      ```
-      <LocationMatch "^/content/.*\.html$">
-         Header unset Cache-Control
-         Header always set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
-         Header always set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/.*\.html$">
+        Header unset Cache-Control
+        Header always set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+        Header always set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * コンテンツサービス／Sling モデルエクスポーターの json レスポンスを 5 分間キャッシュし、バックグラウンド更新でブラウザーに 1 時間、CDN に 12 時間キャッシュします。
 
-      ```
-      <LocationMatch "^/content/.*\.model\.json$">
-         Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
-         Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/.*\.model\.json$">
+        Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+        Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * ミスを避けるために、コア画像コンポーネントからの不変 URL をバックグラウンド更新で長期（30 日）にキャッシュします。
 
-      ```
-      <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
-         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
+        Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * ミスを避けるために、24 時間の画像やビデオなど、DAM の可変リソースをキャッシュし、12 時間後にバックグラウンド更新を行います
 
-      ```
-      <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
-         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
+        Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
 ### HEAD リクエスト動作 {#request-behavior}
 
-キャッシュされて&#x200B;**いない**&#x200B;リソースに対する HEAD リクエストを Adobe CDN で受信すると、そのリクエストは Dispatcher や AEM インスタンスによって GET リクエストとして変換および受信されます。応答がキャッシュ可能な場合、以降の HEAD リクエストは CDN から提供されます。応答がキャッシュ可能でない場合、それ以降の HEAD リクエストは `Cache-Control` TTL に依存する期間、Dispatcher や AEM インスタンスに引き渡されます。
+キャッシュされて&#x200B;**いない**&#x200B;リソースに対する HEAD リクエストを Adobe CDN で受信すると、そのリクエストは Dispatcher や AEM インスタンスによって GET リクエストとして変換および受信されます。応答がキャッシュ可能な場合、以降のHEADリクエストは CDN から提供されます。 応答がキャッシュ可能でない場合、後続のHEAD要求は、Dispatcher またはAEMインスタンス、またはその両方に、 `Cache-Control` TTL。
 
 ### マーケティングキャンペーンパラメーター {#marketing-parameters}
 
-Web サイトの URL には、キャンペーンの成功をトラックするために使用されるマーケティングキャンペーンパラメーターが含まれることがよくあります。 Dispatcher のキャッシュを効果的に使用するには、Dispatcher 設定の `ignoreUrlParams` プロパティを[ここに記載されている](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#ignoring-url-parameters)ように設定することをお勧めします。
+Web サイトの URL には、キャンペーンの成功をトラックするために使用されるマーケティングキャンペーンパラメーターが含まれることがよくあります。 Dispatcher キャッシュを効果的に使用するには、Dispatcher 設定の `ignoreUrlParams` プロパティとして [ここに記載されています](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#ignoring-url-parameters).
 
 この `ignoreUrlParams` セクションに対してはコメントを解除し、`conf.dispatcher.d/cache/marketing_query_parameters.any` のファイルを参照する必要があります。このファイルは、マーケティング チャネルに関連するパラメーターに対応する行のコメントを解除することで変更することができます。他のパラメーターも追加することができます。
 
@@ -454,11 +454,11 @@ The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushe
 
 ## クライアントサイドライブラリとバージョンの整合性 {#content-consistency}
 
-ページは、HTML、JavaScript、CSS、画像で構成されています。JS ライブラリ間の依存関係を考慮して、[クライアントサイドライブラリ（clientlibs）フレームワーク](/help/implementing/developing/introduction/clientlibs.md)を活用し、JavaScript および CSS リソースを HTML ページに読み込むことをお勧めします。
+ページは、HTML、JavaScript、CSS、画像で構成されています。お客様は、 [クライアント側ライブラリ (clientlibs) フレームワーク](/help/implementing/developing/introduction/clientlibs.md) JS ライブラリ間の依存関係を考慮して、JavaScript および CSS リソースをHTMLページに読み込む。
 
-clientlibs フレームワークは、自動バージョン管理を提供します。つまり、開発者はソース管理で JS ライブラリに対する変更をチェックインでき、最新バージョンは、顧客がリリースをプッシュしたときに利用可能になります。この機能がないと、開発者は新しいバージョンのライブラリを参照して HTML を手動で変更する必要があります。同じライブラリを共有する HTML テンプレートが多い場合は特に負担がかかります。
+clientlibs フレームワークは、自動バージョン管理を提供します。つまり、開発者はソース管理で JS ライブラリに対する変更をチェックインでき、最新バージョンは、顧客がリリースをプッシュしたときに利用可能になります。 この機能がないと、開発者は新しいバージョンのライブラリを参照して HTML を手動で変更する必要があります。同じライブラリを共有する HTML テンプレートが多い場合は特に負担がかかります。
 
-新しいバージョンのライブラリが実稼動環境にリリースされると、参照する HTML ページは、更新されたライブラリバージョンへの新しいリンクで更新されます。特定の HTML ページのブラウザーキャッシュの有効期限が切れると、（AEM から）更新されたページが新しいバージョンのライブラリを参照することが保証されるので、古いライブラリがブラウザーキャッシュから読み込まれる心配はありません。更新された HTML ページには、最新のライブラリバージョンがすべて含まれます。
+新しいバージョンのライブラリが実稼動環境にリリースされると、参照する HTML ページは、更新されたライブラリバージョンへの新しいリンクで更新されます。特定のHTMLページのブラウザーキャッシュが期限切れになった後は、古いライブラリがブラウザーキャッシュから読み込まれる心配はありません。更新されたページ (AEMから ) は、ライブラリの新しいバージョンを参照することが保証されるからです。 更新された HTML ページには、最新のライブラリバージョンがすべて含まれます。
 
 このメカニズムはシリアル化されたハッシュで、クライアントライブラリリンクに追加され、ブラウザーが CSS／JS をキャッシュするための一意のバージョン付き URL を確保します。シリアル化されたハッシュは、クライアントライブラリの内容が変更された場合にのみ更新されます。つまり、新しいデプロイメントでも、関係ない更新（クライアントライブラリの基になる CSS／JS の変更はなし）が発生した場合、参照は同じままになるので、ブラウザーのキャッシュの中断が少なくなります。
 
@@ -485,4 +485,4 @@ HTML ページにインクルードされるデフォルトの clientlib は、�
    * 「厳密なバージョン管理」チェックボックスをオンにして有効にします。
    * 「長期クライアントサイドキャッシュキー」というラベルの付いたフィールドに、値「/.*;hash」を入力します。
 1. 変更内容を保存します。AEM as a Cloud Service は、開発、ステージ、実稼動環境でこの設定を自動的に有効にするので、この設定をソース管理に保存する必要はありません。
-1. クライアントライブラリのコンテンツが変更されるたびに、新しいハッシュキーが生成され、HTML 参照が更新されます。
+1. クライアントライブラリの内容が変更されるたびに、新しいハッシュキーが生成され、HTML参照が更新されます。

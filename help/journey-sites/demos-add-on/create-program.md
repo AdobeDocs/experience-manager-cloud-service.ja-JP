@@ -2,10 +2,10 @@
 title: プログラムを作成
 description: 新しいプログラムとパイプラインを設定してアドオンをデプロイする方法を説明します。
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 100%
+source-wordcount: '713'
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ Cloud Manager にログインした後、テストやデモを目的とした新
 
 >[!NOTE]
 >
->プログラムを作成するには、組織の Cloud Manager で&#x200B;**ビジネスオーナー**&#x200B;の役割を持つメンバーである必要があります。
+>ユーザーは、 **ビジネスオーナー** 組織内の Cloud Manager で、プログラムを作成するための役割。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Adobe Cloud Manager にログインします。
 

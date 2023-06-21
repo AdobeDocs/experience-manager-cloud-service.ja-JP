@@ -2,10 +2,10 @@
 title: プレビュー層の OSGi 設定の指定
 description: 運用を開始する前にコンテンツをプレビューするようにAEMプレビューサービスを設定する方法について説明します。
 exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 64%
+ht-degree: 58%
 
 ---
 
@@ -40,7 +40,7 @@ AEMは、Web サイトのパブリッシュ環境に到達する前に開発者�
 
 ## 開発者コンソールを使用したプレビューのデバッグ {#debugging-preview-using-the-developer-console}
 
-開発者コンソールを使用してプレビュー層をデバッグするには、次の手順に従います。
+開発者コンソールを使用してプレビュー層をデバッグできるようにするには、次の手順に従います。
 
 * [開発者コンソール](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)で、「**-- すべてのプレビュー --**」または名前に **prev** を含む実稼動環境を選択します。
 * プレビューインスタンスの関連情報を生成します。

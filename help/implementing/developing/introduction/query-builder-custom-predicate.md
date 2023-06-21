@@ -2,10 +2,10 @@
 title: Query Builder 用のカスタム述語エバリュエーターの実装
 description: AEM の Query Builder を使用すると、コンテンツリポジトリーへのクエリをカスタマイズして簡単に実行できます
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 94%
+source-wordcount: '668'
+ht-degree: 92%
 
 ---
 
@@ -38,7 +38,6 @@ ht-degree: 94%
 >
 >* [GitHub の aem-search-custom-predicate-evaluator プロジェクト](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)を開きます
 >* プロジェクトを [ZIP ファイル](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)としてダウンロードします
-
 
 >[!NOTE]
 >
@@ -106,7 +105,7 @@ replic.action=Activate
 
 >[!NOTE]
 >
->`cq-search` は `OSGi` コンテナで提供されるので、`cq-search` の依存関係の範囲は `provided` に設定されます。
+>の範囲 `cq-search` 依存関係は次のように設定されます。 `provided` 理由 `cq-search` が `OSGi` コンテナ。
 
 次のスニペットは、`pom.xml` ファイルの差分を[ユニファイド diff 形式](https://ja.wikipedia.org/wiki/Diff#.E3.83.A6.E3.83.8B.E3.83.95.E3.82.A1.E3.82.A4.E3.83.89.E5.BD.A2.E5.BC.8F_.28Unified_format.29)で示しています。
 

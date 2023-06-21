@@ -3,10 +3,10 @@ title: 実稼動パイプラインの設定
 description: 実稼動パイプラインを設定し、コードをビルドして実稼働環境にデプロイする方法について説明します。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1520'
-ht-degree: 100%
+source-wordcount: '1513'
+ht-degree: 91%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 100%
    **重要な指標のエラー動作** - パイプラインの設定または編集中に、**デプロイメントマネージャー**&#x200B;には、品質ゲートのいずれかで重要なエラーが発生した場合のパイプラインの動作を定義するオプションがあります。使用できるオプションは以下のとおりです。
 
    * **毎回確認する** - デフォルトの設定。重要なエラーが検出されたときに手動で介入する必要があります。
-   * **直ちに失敗** - 重要なエラーが検出されると、パイプラインはキャンセルされます。このオプションでは、基本的に、各エラーをユーザーが手動で拒否する状況をエミュレートします。
+   * **すぐに失敗**  — 重要なエラーが発生すると、常にパイプラインはキャンセルされます。 このオプションでは、基本的に、各エラーをユーザーが手動で拒否する状況をエミュレートします。
    * **直ちに続行** - 重要なエラーが検出されても、パイプラインは自動的に続行されます。このオプションでは、基本的に、各エラーをユーザーが手動で承認する状況をエミュレートします。
 
    ![実稼働パイプライン設定](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
@@ -73,6 +73,7 @@ ht-degree: 100%
 1. 「**ソースコード**」タブで、次のオプションを定義する必要があります。
 
    * **リポジトリー** - このオプションは、パイプラインがコードを取得する Git リポジトリーを定義します。
+
    >[!TIP]
    > 
    >Cloud Manager でリポジトリーを追加および管理する方法については、[リポジトリーの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)のドキュメントを参照してください。
@@ -101,6 +102,7 @@ ht-degree: 100%
 1. 「**ソースコード**」タブで、次のオプションを定義する必要があります。
 
    * **リポジトリー** - このオプションは、パイプラインがコードを取得する Git リポジトリーを定義します。
+
    >[!TIP]
    > 
    >Cloud Manager でリポジトリーを追加および管理する方法については、[リポジトリーの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)のドキュメントを参照してください。
@@ -124,18 +126,18 @@ ht-degree: 100%
 
    ![エクスペリエンス監査に含めるパスの定義](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
-1. 「**ページを追加**」をクリックすると、パスが使用中の環境のアドレスで自動的に補完され、パスのテーブルに追加されます。
+1. クリック **ページを追加** パスは、環境のアドレスで自動入力され、パスのテーブルに追加されます。
 
    ![テーブルへのパスの保存](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
 1. 上記の 2 つの手順を繰り返して、必要なパスを追加します。
 
    * 最大 25 個のパスを追加できます。
-   * パスを定義しない場合は、デフォルトでサイトのホームページがエクスペリエンス監査に含められます。
+   * パスを定義しない場合、サイトのホームページはデフォルトでエクスペリエンス監査に含まれます。
 
 1. 「**保存**」をクリックして、パイプラインを保存します。
 
-エクスペリエンス監査の対象として設定されたパスはサービスに送信され、パイプラインの実行時にパフォーマンス、アクセシビリティ、SEO（検索エンジン最適化）、ベストプラクティス、PWA（プログレッシブ ｗeb アプリ）の各テストに従って評価されます。詳しくは、「[エクスペリエンス監査結果について](/help/implementing/cloud-manager/experience-audit-testing.md)」を参照してください。
+エクスペリエンス監査用に設定されたパスはサービスに送信され、パイプライン実行時のパフォーマンス、アクセシビリティ、SEO（検索エンジン最適化）、ベストプラクティス、PWA（プログレッシブ Web アプリ）のテストに従って評価されます。 詳しくは、「[エクスペリエンス監査結果について](/help/implementing/cloud-manager/experience-audit-testing.md)」を参照してください。
 
 パイプラインが保存され、**プログラムの概要**&#x200B;ページの&#x200B;**パイプライン**&#x200B;カードで[パイプラインを管理](managing-pipelines.md)できるようになりました。
 
@@ -148,6 +150,7 @@ Web 階層設定パイプラインは HTTPD／Dispatcher 設定をデプロイ�
 1. 「**ソースコード**」タブで、次のオプションを定義する必要があります。
 
    * **リポジトリー** - このオプションは、パイプラインがコードを取得する Git リポジトリーを定義します。
+
    >[!TIP]
    > 
    >Cloud Manager でリポジトリーを追加および管理する方法については、[リポジトリーの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)のドキュメントを参照してください。
@@ -174,7 +177,7 @@ Web 階層設定パイプラインは HTTPD／Dispatcher 設定をデプロイ�
 
 フロントエンドパイプラインを使用すると、フロントエンド開発者の作業の独立性が高まるほか、開発プロセスを速めることができます。
 
-このプロセスの可能性を最大限に引き出すために知っておくべきいくつかの考慮事項と、このプロセスがどのように機能するかについては、[フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)のドキュメントを参照してください。
+ドキュメントを参照してください [フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) このプロセスの仕組みと、このプロセスを最大限に活用するために考慮すべきいくつかの検討事項について説明します。
 
 ## Dispatcher パッケージのスキップ {#skip-dispatcher-packages}
 

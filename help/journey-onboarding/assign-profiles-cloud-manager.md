@@ -4,10 +4,10 @@ description: このページでは、チームメンバーを Cloud Manager 製�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1534'
-ht-degree: 100%
+source-wordcount: '1532'
+ht-degree: 95%
 
 ---
 
@@ -89,9 +89,9 @@ Cloud Manager は、AEM as a Cloud Service の不可欠な部分であり、コ�
 
 これで、ユーザーを追加して、**ビジネスオーナー**&#x200B;製品プロファイルに割り当てる準備が整いました。
 
-1. Cloud Manager プログラムを管理する必要があるユーザーを特定します。これらは&#x200B;**ビジネスオーナー**&#x200B;になります。
+1. Cloud Manager プログラムを管理する必要があるユーザーを特定します。 これらは、 **事業主**.
 
-1. Admin Console（`[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)`）にログインして、**概要**&#x200B;ページで&#x200B;**製品とサービス**&#x200B;カードから「**Adobe Experience Manager as a Cloud Service**」製品を選択します。
+1. Admin Console( ) にログオンします。 `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` そして **概要** ページ、選択 **Adobe Experience Manager as a Cloud Service** 製品 **製品とサービス** カード。
 
    ![製品とサービス](/help/journey-onboarding/assets/assign-team1.png)
 
@@ -166,7 +166,7 @@ Cloud Manager は、AEM as a Cloud Service の不可欠な部分であり、コ�
 
 **開発者**&#x200B;が割り当てられ、Cloud Manager にアクセスできるようになりました。 システム管理者は、今後の担務に応じて、自分自身を&#x200B;**開発者**&#x200B;のプロファイルに割り当てる必要がある場合とない場合があります。
 
-## 次のステップ {#whats-next}
+## 次の手順 {#whats-next}
 
 おめでとうございます。これで、新しく構築された Cloud Manager チーム（**ビジネスオーナー**&#x200B;のプロファイルに割り当てられた自分自身を含む）の設定が完了しました。**ビジネスオーナー**&#x200B;の役割で Cloud Manager にログインしてクラウドリソースを作成できるようになるまであと少しです。
 
@@ -185,5 +185,5 @@ Cloud Manager は、AEM as a Cloud Service の不可欠な部分であり、コ�
 
 * [Cloud Manager の概要](/help/onboarding/cloud-manager-introduction.md) - Cloud Manager、Cloud Manager プログラム、環境について説明します。
 * [Cloud Manager 製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md) - AEM as a Cloud Service のチームおよび製品プロファイルについて説明します。
-* [Adobe Admin Console の ID タイプ](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/identity.ug.html) - アドビの ID 管理システムは、管理者がアプリケーションやサービスへのユーザーのアクセスを作成および管理するのに役立ちます。アドビでは、ユーザーを認証および承認するために、これらの ID タイプまたはアカウントを提供しています。
+* [Adobe Admin Consoleの ID タイプ](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/identity.ug.html) -Adobeの id 管理システムは、管理者がアプリケーションやサービスへのユーザーのアクセスを作成および管理するのに役立ちます。 アドビでは、ユーザーを認証および承認するために、これらの ID タイプまたはアカウントを提供しています。
 

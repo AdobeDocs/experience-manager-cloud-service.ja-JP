@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service の OSGi の設定
 description: シークレット値と環境固有の値を使用する OSGi 設定
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3323'
-ht-degree: 99%
+source-wordcount: '3318'
+ht-degree: 97%
 
 ---
 
@@ -60,7 +60,7 @@ config フォルダー名で定義された実行モードが AEM で使用さ�
 
 同じ PID に複数の設定が該当する場合は、一致する実行モードの数が最も大きい設定が適用されます。
 
-このルールの精度は PID レベルです。つまり、`/apps/example/config.author/` で同じ PID の一部のプロパティと、`/apps/example/config.author.dev/` で同じ PID のより具体的なプロパティを定義することはできません。一致する実行モードの数が最も多い設定は、PID 全体に対して効果的です。
+このルールの精度は PID レベルです。つまり、`/apps/example/config.author/` で同じ PID の一部のプロパティと、`/apps/example/config.author.dev/` で同じ PID のより具体的なプロパティを定義することはできません。一致する実行モードの数が最も多い設定は、PID 全体に対して有効です。
 
 >[!NOTE]
 >
@@ -187,7 +187,7 @@ AEM SDK Quickstart Jar の AEM Web コンソールは、OSGi コンポーネン�
 
 >[!NOTE]
 >
->AEM Web コンソールの設定 UI では、`.cfg.json` ファイルをリポジトリーに書き込みます。したがって、AEM プロジェクトで定義した OSGi 設定が、生成された設定と異なる可能性がある場合は、ローカル開発時に予期しない動作が発生するのを避けるために、この点に注意してください。
+>AEM Web コンソールの設定 UI では、`.cfg.json` ファイルをリポジトリーに書き込みます。したがって、AEMプロジェクトで定義された OSGi 設定が生成された設定と異なる場合、ローカル開発中に予期しない動作が発生する可能性を防ぐために、このワークフローに注意してください。
 
 1. AEM SDK Quickstart Jar の AEM webコンソール（`https://<host>:<port>/system/console`）にadmin ユーザーでログインする。
 1. **OSGi**／**設定**&#x200B;に移動する。
@@ -260,7 +260,7 @@ use $[secret:SECRET_VAR_NAME]
 >
 >変数名に特定のプレフィックスを使用することに関連するルールがあります。
 >
->1. `INTERNAL_`、`ADOBE_` または `CONST_` のプレフィックスが付いた変数名は、アドビによって予約されています。これらのプレフィックスで始まる顧客設定変数は無視されます。
+>1. `INTERNAL_`、`ADOBE_` または `CONST_` のプレフィックスが付いた変数名は、アドビによって予約されています。これらのプレフィックスで始まる顧客セット変数は無視されます。
 >
 >1. お客様は、プレフィックスが `INTERNAL_` または `ADOBE_` の変数を参照しないでください。
 >
@@ -594,7 +594,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 シークレットと環境に固有の設定値は Git の外部に存在するので、Adobe Experience Manager as a Cloud Service の正式なデプロイメントメカニズムには含まれません。そのため、顧客が管理および統括し、Adobe Experience Manager as a Cloud Service のデプロイメントプロセスに統合する必要があります。
 
-前述したように、API を呼び出すと、一般的なカスタマーコードのデプロイメントパイプラインと同様に、新しい変数と値がクラウド環境にデプロイされます。オーサーサービスとパブリッシュサービスは再起動され、新しい値が参照されます（通常、数分かかります）。通常のコードのデプロイメント中に Cloud Manager によって実行される品質ゲートおよびテストは、このプロセス中は実行されません。
+前述したように、API を呼び出すと、一般的なカスタマーコードのデプロイメントパイプラインと同様に、新しい変数と値がクラウド環境にデプロイされます。オーサーサービスとパブリッシュサービスは再起動され、新しい値が参照されます（通常、数分かかります）。 通常のコードのデプロイメント中に Cloud Manager によって実行される品質ゲートおよびテストは、このプロセス中は実行されません。
 
 通常、Cloud Manager で API を使用するコードをデプロイする前に、API を呼び出して環境変数を設定します。場合によっては、コードが既にデプロイされた後で既存の変数を変更する必要があります。
 

@@ -2,10 +2,10 @@
 title: ヘッドレスコンテンツ用の翻訳コネクタの設定
 description: AEM を翻訳サービスに接続する方法を説明します。
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 100%
+source-wordcount: '1233'
+ht-degree: 95%
 
 ---
 
@@ -58,7 +58,7 @@ AEM の翻訳統合フレームワーク（TIF）は、AEM コンテンツの翻
 >
 >テスト目的で Microsoft Translator コネクタを使用する場合は、この後の 2 つの節で示している手順を実行する必要はありません（[翻訳統合設定の作成](#create-config)および[設定とコンテンツの関連付け](#associate)）。ただし、希望するコネクタを設定する必要がある場合に備えて手順を把握しておけるように、これらの節に目を通しておくことをお勧めします。
 >
->Microsoft Translator コネクタの体験版ライセンスは、実稼動用ではありません。実稼動ライセンスを取得する場合は、システム管理者が、このドキュメントの最後にある[その他のリソース](#additional-resources)の節で紹介している記事の手順に従ってライセンスを設定する必要があります。
+>Microsoft Translator Connector の体験版ライセンスは、実稼動用のライセンスではありません。ライセンスを取得する場合は、システム管理者が、 [その他のリソース](#additional-resources) 」セクションを参照してください。
 
 ## 翻訳統合フレームワーク設定の作成 {#create-config}
 

@@ -2,10 +2,10 @@
 title: AEM 内での外部 SPA の編集
 description: このドキュメントでは、スタンドアロン SPA を AEM インスタンスにアップロードし、編集可能なコンテンツのセクションを追加し、オーサリングを有効にするための推奨手順について説明します。
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: b06e734fd6874946323cdc71073ecb1c50945845
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2456'
-ht-degree: 100%
+source-wordcount: '2447'
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 * AEM のインスタンスがローカルで実行されていることを確認します。
 * [AEM プロジェクトのアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja?#available-properties)を使用して、基本 AEM SPA プロジェクトを作成します。
-   * これは AEM プロジェクトの基盤となり、外部 SPA を含むように更新されます。
+   * FormsはAEMプロジェクトの基盤を更新し、外部SPAを含めます。
    * このドキュメントの例では、[WKND SPA プロジェクト](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ja#spa-editor)の開始点を使用しています。
 * 統合したい外部の React SPA を用意します。
 
@@ -81,7 +81,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 ### AEM 認証可能なリーフコンポーネント {#authorable-leaf-components}
 
-1. 認証可能な React コンポーネントが作成される AEM コンポーネントを作成または識別します。この例では、WKND プロジェクトのテキストコンポーネントを使用しています。
+1. オーサリング可能な React コンポーネントを作成するAEMコンポーネントを作成または識別します。 この例では、WKND プロジェクトのテキストコンポーネントを使用しています。
 
    ![WKND テキストコンポーネント](assets/external-spa-text-component.png)
 
@@ -237,7 +237,7 @@ mvn clean install -PautoInstallSinglePackage
 >
 >この機能を有効にするには、`AEMText` コンポーネントの `resourceType` が構成内に設定されていることを確認します。
 
-「[AEM でのテキストコンテンツの編集の確認](#verify-text-edit)」節の手順に従って、AEM に変更をデプロイできるようになりました。現在は存在しない `text_20` ノードに対してプレースホルダーが表示されます。
+「[AEM でのテキストコンテンツの編集の確認](#verify-text-edit) 現在存在しないプレースホルダーが表示されます `text_20` ノード。
 
 ![AEM の text_20 ノード](assets/external-spa-text20-aem.png)
 
@@ -253,7 +253,7 @@ mvn clean install -PautoInstallSinglePackage
 * `pagePath` のパスに指定されたページノードは、AEM プロジェクト内に存在する必要があります。
 * 作成するノードの名前は、`itemPath` で指定する必要があります。
 * コンポーネントは任意のレベルで作成できます。
-   * 前の例で `itemPath='text_20'` を提供すると、新しいノードはページのすぐ下（`/content/wknd-spa-react/us/en/home/jcr:content/text_20`）に作成されます。
+   * 以下を指定する場合、 `itemPath='text_20'` 前の例では、新しいノードはページのすぐ下に作成されます。つまり、 `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
 * 新しいノードが作成されるノードへのパスは、`itemPath` 経由で提供された場合に有効である必要があります。
    * この例では、新しいノード `text_20` を作成できるように、`root/responsivegrid` が存在する必要があります。
 * リーフコンポーネントの作成のみがサポートされます。仮想コンテナと仮想ページは、今後のバージョンでサポートされる予定です。
@@ -282,13 +282,13 @@ mvn clean install -PautoInstallSinglePackage
 
 ![JCR にコンテンツがあるコンテナ](assets/container-with-content-jcr.png)
 
-作成者の必要に応じて、さらにコンポーネントとコンテンツをコンテナに追加できます。変更内容は保持されます。
+作成者が必要に応じて、変更が保持されるので、コンポーネントとコンテンツを今すぐコンテナに追加できます。
 
 #### 要件と制限 {#container-limitations}
 
 仮想コンテナを追加するための要件はいくつかあり、制限もいくつかあります。
 
-* 追加できるコンポーネントを決定するためのポリシーは、親コンテナから継承されます。
+* 追加できるコンポーネントを決定するポリシーは、親コンテナから継承されます。
 * 作成するコンテナの直近の親が既に AEM に存在している必要があります。
    * コンテナ `root/responsivegrid` が既に AEM コンテナに存在する場合は、パス `root/responsivegrid/newContainer` を指定して新しいコンテナを作成できます。
    * ただし、 `root/responsivegrid/newContainer/secondNewContainer` は使用できません。
@@ -326,7 +326,7 @@ mvn clean install -PautoInstallSinglePackage
 
 外部 React SPA アプリケーションに複数のページがある場合、[レンダリングするページ／コンポーネントを決定する際にルーティングを使用できます。](/help/implementing/developing/hybrid/routing.md)基本的な使用例は、現在アクティブな URL とルートに指定されたパスを一致させることです。このようなルーティング対応アプリケーションでの編集を可能にするには、対応するパスを AEM 固有の情報に合わせて変換する必要があります。
 
-次の例では、2 つのページを含む単純な React アプリケーションを示します。レンダリングするページは、ルーターに提供されるパスとアクティブな URL とを一致させることで決定されます。例えば、`mydomain.com/test` 上にある場合、`TestPage` がレンダリングされます。
+次の例では、2 つのページを含む単純な React アプリケーションを示します。レンダリングするページは、ルーターに提供されるパスとアクティブな URL とを一致させることで決定されます。例えば、 `mydomain.com/test`, `TestPage` がレンダリングされます。
 
 ![外部 SPA のルーティング](assets/external-spa-routing.png)
 
@@ -351,9 +351,8 @@ mvn clean install -PautoInstallSinglePackage
       * ルーティングに必要なパス
       * SPA が編集される AEM インスタンスのオリジン URL
       * 最初の手順で決定した AEM のプロジェクトルート
+
    * これらの値は、環境変数として設定でき、より柔軟に設定できます。
-
-
 
 1. AEM でのページの編集を確認します。
 

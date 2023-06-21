@@ -2,10 +2,10 @@
 title: Adobe Developer App Builder を使用した [!DNL Adobe Experience Manager] as a Cloud Service の拡張
 description: Adobe Developer App Builder を使用した [!DNL Adobe Experience Manager] as a Cloud Service の拡張
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 100%
+source-wordcount: '560'
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ App Builder は、Adobe Experience Manager を拡張したカスタムエクス�
 
 App Builder を使用すると、次のような様々なユースケースで Adobe Experience Manager を容易に拡張できます。
 
-* ミドルウェア拡張 - カスタムコネクタを構築するか、事前に構築された統合のスイートを活用して、外部システムとアドビアプリケーションを接続します。
+* ミドルウェア拡張機能 — 外部システムとAdobeアプリケーションとを接続し、カスタムコネクタを構築するか、事前に構築された統合のスイートを使用します。
 * コアサービス拡張 - カスタム機能およびビジネスロジックを使用してデフォルトの動作を拡張することで、コアアプリケーション機能を拡張します。
 * ユーザーエクスペリエンス拡張 - コアエクスペリエンスを拡張してビジネス要件をサポートするか、顧客固有のデジタルプロパティ、ストアフロントおよびバックオフィスアプリを構築します。
 
@@ -27,18 +27,18 @@ Application Builder は、2020 年夏以降、開発者プレビューを通じ�
 
 >[!NOTE]
 >
-> AEM 6.5 のお客様が App Builder を利用する場合は、[Adobe Developer App Builder を使用した Adobe Experience Manager 6.5 の拡張](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=ja)を参照してください。
+> AEM 6.5 のお客様が App Builder を使用する場合は、 [Adobe Developer App Builder を使用したAdobe Experience Manager 6.5 の拡張](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=ja).
 
 ## アーキテクチャ {#architecture}
 
 標準のソリューションではなく、Adobe Developer App Builder では、AEM などのアドビクラウドソリューションを拡張するための、一貫性のある標準化された共通の開発プラットフォームを提供します。例えば、次のようなものがありす。
 
 * アドビ開発者コンソール - カスタムマイクロサービスおよび拡張機能の開発の場合、開発者は、プラグインや統合の作成に必要なすべてのツールと API にアクセスしながら、プロジェクトを構築および管理できます。
-* 開発者ツール - 開発者がカスタムの拡張機能や統合を容易に構築できるオープンソースのツール、SDK およびライブラリです。React Spectrum（アドビの UI ツールキット）を使用すれば、すべてのアドビアプリに共通の UI を 1 つ用意できます。
+* 開発者ツール - 開発者がカスタムの拡張機能や統合を容易に構築できるオープンソースのツール、SDK およびライブラリです。React Spectrum(Adobeの UI ツールキット ) を使用して、すべてのAdobeアプリに共通の UI を 1 つ用意します。
 * サービス - サーバーレスプラットフォーム上でインフラストラクチャをホスティングするための I/O Runtime や、イベントベースの統合のための I/O Events があります。また、データやファイルの保存も標準でサポートされています。
 * Adobe Experience Cloud - 開発者は、拡張機能や統合を送信して Experience Cloud 組織内で公開できます。その後、システム管理者がこれらの拡張機能を審査、管理および承認できます。App Builder のカスタム拡張機能およびツールは、公開されると、他の Adobe Experience Cloud アプリと一緒に表示されます。
 
-次の図は、App Builder 上で構築された標準アプリケーションでこれらの機能がどのように利用されているかを示しています。
+次の図は、App Builder 上に構築された標準アプリケーションがこれらの機能をどのように使用するかを示しています。
 
 ![アーキテクチャ](/help/implementing/developing/extending/assets/appbuilder-architecture.jpg)
 

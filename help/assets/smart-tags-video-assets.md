@@ -4,10 +4,10 @@ description: Adobe Experience Manager では、 [!DNL Adobe Sensei] を使用し
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1213'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 99%
 
 ## アップロードのビデオのスマートタグ {#smart-tag-assets-on-ingestion}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] に[ビデオアセットをアップロード](add-assets.md#upload-assets)すると、ビデオが処理されます。処理が完了したら、アセット[!UICONTROL プロパティ]ページの「[!UICONTROL 基本]」タブを参照してください。スマートタグは、ビデオの[!UICONTROL スマートタグ]に自動的に追加されます。アセットマイクロサービスは、[!DNL Adobe Sensei] を利用してこれらのスマートタグを作成します。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] に[ビデオアセットをアップロード](add-assets.md#upload-assets)すると、ビデオが処理されます。処理が完了したら、アセット[!UICONTROL プロパティ]ページの「[!UICONTROL 基本]」タブを参照してください。スマートタグは、ビデオの[!UICONTROL スマートタグ]に自動的に追加されます。アセットマイクロサービスは [!DNL Adobe Sensei] をクリックして、これらのスマートタグを作成します。
 
 ![スマートタグはビデオに追加され、アセットプロパティの「基本」タブに表示されます](assets/smart-tags-added-to-videos.png)
 
@@ -153,4 +153,3 @@ DAM 内の既存のビデオアセットに対しては、スマートタグが�
 >
 >* [スマートタグとアセット検索の管理](smart-tags.md#manage-smart-tags-and-searches)
 >* [スマートタグサービスのトレーニングと画像のタグ付け](smart-tags.md)
-

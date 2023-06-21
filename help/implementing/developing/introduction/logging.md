@@ -1,17 +1,17 @@
 ---
 title: AEM as a Cloud Service 向けのログ
-description: AEM as a Cloud Service のログを使用して一元的なログサービスのグローバルパラメーターを設定する方法、個々のサービスに特有の設定またはデータのログ記録をリクエストする方法について説明します。
+description: AEM as a Cloud Serviceのログを使用して、中央のログサービスのグローバルパラメーター、個々のサービス固有の設定、データログの要求方法を設定する方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 9e67b4f68fe450e80249c3959e3517c6cba3275d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2382'
-ht-degree: 96%
+source-wordcount: '2376'
+ht-degree: 92%
 
 ---
 
 # AEM as a Cloud Service 向けのログ {#logging-for-aem-as-a-cloud-service}
 
-AEM as a Cloud Service は、カスタムコードを含めて、顧客ベースに独自のエクスペリエンスを作成する顧客のためのプラットフォームです。このことを念頭に置いた上で、ログサービスは、ローカル開発およびクラウド環境、特に AEM as a Cloud Service の開発環境をデバッグし、実行されるコードを理解するための重要な機能となります。
+AEM as a Cloud Service は、カスタムコードを含めて、顧客ベースに独自のエクスペリエンスを作成する顧客のためのプラットフォームです。これを念頭に置いた上で、ログサービスは、ローカル開発およびクラウド環境、特にAEM as a Cloud Serviceの開発環境でのコード実行をデバッグおよび理解するための重要な機能です。
 
 AEM as a Cloud Service のログ設定とログレベルは、AEM プロジェクトの一部として Git に保存され、AEM プロジェクトの一部として Cloud Manager を介してデプロイされる構成ファイルで管理されます。AEM as a Cloud Service のログは、次の 2 つの論理セットに分割できます。
 
@@ -94,7 +94,7 @@ ERROR ログがアクティブになっている場合は、エラーを示す�
 
 Java ログはその他にも複数レベルのログ精度をサポートしていますが、AEM as a Cloud Service では、上記の 3 つのレベルを使用することをお勧めします。
 
-AEM ログレベルは、OSGi 設定を介して環境の種類ごとに設定され、次に Git にコミットされて、Cloud Manager を介して AEM as a Cloud Service にデプロイされます。そのため、ログレベルの設定を更新した環境を再デプロイせずに、AEM as a Cloud Service 経由で利用可能なログを最適なログレベルで確実に使用できるように、ログステートメントの一貫性と既知の環境の種類を保つことをお勧めします。
+AEM ログレベルは、OSGi 設定を介して環境の種類ごとに設定され、次に Git にコミットされて、Cloud Manager を介して AEM as a Cloud Service にデプロイされます。このため、ログレベルの設定を更新してCloud Serviceを再デプロイする必要なく、AEMを通じて使用可能なログを最適なログレベルで確実に利用できるようにするには、ログステートメントの一貫性を維持し、環境タイプにとってよく知られている方法をお勧めします。
 
 **ログ出力の例**
 
@@ -396,7 +396,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 mod_rewrite ログレベルは、`conf.d/variables/global.var` ファイル内の変数 REWRITE_LOG_LEVEL によって定義されます。
 
-error、warn、info、debug、trace1 ～ trace8 に設定でき、デフォルト値は warn です。 RewriteRules をデバッグするには、ログレベルを trace2 に上げることをお勧めします。
+Error、Warn、Info、Debug および Trace1～Trace8 に設定でき、デフォルト値は Warn です。RewriteRules をデバッグするには、ログレベルを Trace2 に上げることをお勧めします。
 
 詳細は、[mod_rewrite モジュールのドキュメント](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging)を参照してください。
 
@@ -474,7 +474,7 @@ Define REWRITE_LOG_LEVEL debug
 
 Dispatcher ログレベルは、`conf.d/variables/global.var` ファイル内の変数 DISP_LOG_LEVEL によって定義されます。
 
-error、warn、info、debug および trace1 に設定でき、デフォルト値は warn です。
+Error、Warn、Info、Debug および 1～Trace に設定でき、デフォルト値は Warn です。
 
 Dispatcher ログはその他にも複数レベルのログ精度をサポートしていますが、AEM as a Cloud Service では、次のレベルを使用することをお勧めします。
 
@@ -545,7 +545,7 @@ Debug によって書き込まれるログステートメントのトラフィ�
 
 ## Splunk ログ {#splunk-logs}
 
-Splunk アカウントを持っている顧客は、カスタマーサポートチケットを介して、AEM Cloud Service のログを適切なインデックスに転送するように依頼できます。ログデータは、Cloud Manager のログのダウンロードで利用できるものと同じですが、Splunk 製品のクエリ機能を利用すると便利です。
+Splunk アカウントを持っている顧客は、カスタマーサポートチケットを介して、AEM Cloud Service のログを適切なインデックスに転送するように依頼できます。ログデータは、Cloud Manager のログのダウンロードで利用できるものと同じですが、Splunk 製品で利用できるクエリ機能を使用すると便利です。
 
 Splunk に送信されるログに関連付けられるネットワーク帯域幅は、お客様のネットワーク I/O 使用の一部と見なされます。
 

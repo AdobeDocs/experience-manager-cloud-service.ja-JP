@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 71%
@@ -41,7 +41,6 @@ ht-degree: 71%
    >* ブラウザーウィンドウでローカライズ版のフォームを開く前に、ブラウザーのロケールがフォームのロケールと一致するように設定されていることを確認します。 例えば、フォームがドイツ語 (de) に翻訳されている場合は、ブラウザーのロケールをドイツ語 (de) に設定します。
    >* アダプティブフォームコンポーネントは、右から左（RTL）言語をサポートしていません（例：ヘブライ語）。
 
-
    アダプティブフォームと共に、自動生成されるレコードのドキュメントもローカライズされます。
 
    レコードのドキュメントの設定と構成について詳しくは、以下を参照してください。
@@ -57,7 +56,7 @@ ht-degree: 71%
 
 In Human translation the content is sent to a translation provider and translated by professional translators. When complete, the translated content is returned and imported into AEM. When your translation provider is integrated with AEM, content is automatically sent between AEM and the translation provider.
 
-For translation, a dictionary containing files in XLIFF format is shared with the professional translators. The dictionary includes a separate XLIFF file for each locale. Each XLIFF file contains text that will be displayed to the end users and placeholders for the corresponding localized text.
+For translation, a dictionary containing files in XLIFF format is shared with the professional translators. The dictionary includes a separate XLIFF file for each locale. Each XLIFF file contains text that is displayed to the end users and placeholders for the corresponding localized text.
 
 Perform the following steps to localize a form and its Document of Record using Human Translators:
 

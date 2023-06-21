@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の 2020.9.0 リリースのリリースノート。'
 description: "[!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 のリリースノート。"
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 100%
+source-wordcount: '723'
+ht-degree: 97%
 
 ---
 
@@ -74,7 +74,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * 「コンテンツ監査」の名称が「エクスペリエンス監査」に変更されました。
 * ビルドプロセスは、3 つの Maven コマンドに分けられました。
-* git リポジトリをクローンできない場合は、最大 3 回再試行されます。
+* Git リポジトリを複製できない場合は、最大 3 回再試行されます。
 
 ### バグの修正 {#bug-fixes-cm}
 
@@ -118,8 +118,8 @@ Cloud Readiness Analyzer リリース v1.1.0 の新機能と更新点につい�
 
 * AIO-CLI プラグインは、Repository Modenizer をサポートしており、ユーザーはこのプラグインを使用してツールを実行できます。
 
-   詳しくは、[Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) を参照してください。
+  詳しくは、[Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) を参照してください。
 
 * Repository Modenizer ユーティリティを使用すると、既存のプロジェクトパッケージを、AEM as a Cloud Service 用に定義されたプロジェクト構造と互換性のあるパッケージに再構築できます。
 
-   詳しくは、[Git リソース：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) を参照してください。
+  詳しくは、[Git リソース：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) を参照してください。

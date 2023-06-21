@@ -2,10 +2,10 @@
 title: Adobe Experience Manager（AEM）as a Cloud Service の主な変更点
 description: Adobe Experience Manager（AEM）as a Cloud Service の主な変更点
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: d3208a9a0785909e9b62d4033437a8ff44f7ba3e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 100%
+source-wordcount: '845'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,6 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 >* [ AEM Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
 >* [AEM Assets as a Cloud Service の主な変更点](/help/assets/assets-cloud-changes.md)
 
-
 主な違いは次の点にあります。
 
 * [/apps と /libs が実行時に不変](#apps-libs-immutable)
@@ -50,14 +49,14 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 
 ## /apps と /libs が実行時に不変 {#apps-libs-immutable}
 
-`/apps` および `/libs` 内のコンテンツとサブフォルダーはすべて読み取り専用です。それらの変更が必要な機能やカスタムコードは、変更に失敗します。コンテンツが読み取り専用である、または書き込み操作を完了できなかったというエラーが返されます。これは、次のように、AEM の様々な領域に影響を及ぼします。
+`/apps` および `/libs` 内のコンテンツとサブフォルダーはすべて読み取り専用です。それらの変更が必要な機能やカスタムコードは、変更に失敗します。コンテンツが読み取り専用で、書き込み操作を完了できなかったというエラーが返されます。 これは、次のように、AEM の様々な領域に影響を及ぼします。
 
 * `/libs` では変更は一切できません。
    * これは新しいルールではありませんが、以前のオンプレミスバージョンの AEM では適用されていませんでした。
 * `/libs` 内のオーバーレイ可能な領域のオーバーレイについては、`/apps` 内では引き続き可能です。
    * このようなオーバーレイは、CI/CD パイプラインを通じて Git から取得する必要があります。
 * `/apps` に保存されている静的テンプレートデザイン情報は、UI では編集できません。
-   * 代わりに、編集可能なテンプレートを利用することをお勧めします。
+   * 代わりに、編集可能テンプレートを使用することをお勧めします。
    * 静的テンプレートが引き続き必要な場合は、CI/CD パイプラインを通じて Git から設定情報を取得する必要があります。
 * MSM ブループリントおよびカスタム MSM ロールアウト設定は、CI/CD パイプラインを通じて Git からインストールする必要があります。
 * 多言語翻訳の変更は、CI/CD パイプラインを通じて Git から提供される必要があります。

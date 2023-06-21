@@ -2,10 +2,10 @@
 title: Angular を使用した AEM での SPA の概要
 description: この記事では、サンプルの SPA アプリケーションを紹介し、その設定方法を説明するほか、Angular フレームワークを使用して独自の SPA の運用をすぐに開始する方法についても説明します。
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 93%
+source-wordcount: '991'
+ht-degree: 84%
 
 ---
 
@@ -31,7 +31,7 @@ AEM での SPA の動作について詳しくは、次のドキュメントを�
 
 >[!NOTE]
 >
->SPA 内のコンテンツを作成するには、コンテンツを AEM に格納し、コンテンツモデルによって公開する必要があります。
+>SPA内でコンテンツを作成するには、コンテンツをAEMに格納し、コンテンツモデルによって公開する必要があります。
 >
 >AEM 外で開発された SPA については、コンテンツモデルの契約に準拠していない場合、オーサリングを行うことはできません。
 
@@ -39,7 +39,7 @@ AEM での SPA の動作について詳しくは、次のドキュメントを�
 
 ## 依存関係、設定、ビルド {#dependencies-configuration-and-building}
 
-サンプルの SPA では、必要な Angular の依存関係以外に、追加のライブラリも利用して SPA の作成を効率化できます。
+サンプルのSPAでは、必要なAngularの依存関係に加えて、追加のライブラリを使用してSPAの作成をより効率的におこなうことができます。
 
 ### 依存関係 {#dependencies}
 
@@ -53,7 +53,7 @@ AEM での SPA の動作について詳しくは、次のドキュメントを�
 }
 ```
 
-`aem-clientlib-generator` は、クライアントライブラリの作成をビルドプロセスの一部として自動化しています。
+この `aem-clientlib-generator` は、クライアントライブラリの作成をビルドプロセスの一部として自動化するために使用されます。
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -90,7 +90,7 @@ module.exports = {
 
 ### ビルド {#building}
 
-実際には、 [Webpack](https://webpack.js.org/) aem-clientlib-generator に加え、クライアントライブラリの自動作成に使用するトランスパイルのため。 したがって、build コマンドは次のようになります。
+アプリで実際にを使用してビルドする [Webpack](https://webpack.js.org/) aem-clientlib-generator に加え、クライアントライブラリの自動作成に使用するトランスパイルのため。 したがって、build コマンドは次のようになります。
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
@@ -98,7 +98,7 @@ module.exports = {
 
 ### AEM プロジェクトアーキタイプ {#aem-project-archetype}
 
-AEM プロジェクトでは、 [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)を活用します。このアーキタイプは、React または Angular を使用する SPA プロジェクトをサポートし、SPA SDK を活用します。
+任意のAEMプロジェクトでは、 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja):React またはAngularを使用したSPAプロジェクトをサポートし、SPA SDK を使用します。
 
 ## アプリケーション構造 {#application-structure}
 

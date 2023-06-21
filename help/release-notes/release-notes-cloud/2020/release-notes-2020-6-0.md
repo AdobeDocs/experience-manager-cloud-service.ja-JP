@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 のリリースノート
 description: Experience Manager 2020.6.0 のリリースノート
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 100%
+source-wordcount: '1939'
+ht-degree: 94%
 
 ---
 
@@ -48,9 +48,9 @@ AEM as a Cloud Service リリース 2020.6.0 の AEM Sites の新機能と更新
 
 ## AEM as a Cloud Service の基盤における新機能 {#foundations}
 
-AEM プロジェクトの pom.xml 内のリモートリポジトリーへの参照をすべて削除することで、AEM プロジェクトのビルド時間が短縮されます`https://downloads.experiencecloud.adobe.com/content/maven/public`。
+AEMプロジェクトの pom.xml 内のリモートリポジトリへの参照をすべて削除することで、AEMプロジェクトのビルド時間が短縮されます。 `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
-以前その場所でホストされていた AEM as a Cloud Service の SDK API Jar は、Maven のデフォルトのアーティファクトリポジトリーである Maven Central に配置されています。
+以前はこの場所でホストされていたAEMas a Cloud ServiceSDK API Jar は、Maven のデフォルトのアーティファクトリポジトリである Maven Central に配置されています。
 
 ## Cloud Manager の新機能 {#cloud-manager}
 
@@ -60,11 +60,11 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 * Cloud Manager でのロールが&#x200B;*ビジネス所有者*&#x200B;のユーザーは、サンドボックスプログラムをランディングページから（プログラムカードのクイックアクションボタンを使用して）またはプログラム内から削除できるようになりました。
 
-   詳細は、[サンドボックスプログラムの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=ja)を参照してください。
+  詳細は、[サンドボックスプログラムの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=ja)を参照してください。
 
 * Cloud Manager の&#x200B;*ビジネス所有者*&#x200B;または&#x200B;*デプロイメントマネージャー*&#x200B;のロールにあるサンドボックスプログラムユーザーが、Cloud Manager UI を使用して、実稼動環境とステージ環境のセットを削除できるようになりました。削除オプションが、**プログラムの概要ページの環境カード**&#x200B;と、**環境**&#x200B;ページの両方から利用できるようになりました。実稼動環境またはステージ環境で削除オプションを選択すると、セットの他の内容も削除されます。
 
-   詳細は、[サンドボックスプログラムの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=ja)を参照してください。
+  詳細は、[サンドボックスプログラムの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=ja)を参照してください。
 
 * ランディングページにコーチマークを付け、基本的なナビゲーションについてユーザーに通知し、指示します。
 
@@ -72,15 +72,15 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 * Cloud Manager で&#x200B;**学習**&#x200B;ページが利用できるようになり、トップナビゲーションからアクセスできます。このページには、Cloud Manager で割り当てられたロールに関連して、最も頻繁に使用されるワークフローについてユーザーが知るのに役立つリソースが含まれています。
 
-* サンドボックスプログラムは、**サンドボックス**&#x200B;バッジによって識別されるようになります。このバッジは、ランディングページのプログラムカードと、**プログラムの概要**&#x200B;ページで、プログラム名の横に表示されます。
+* サンドボックスプログラムは、 **サンドボックス** ランディングページのプログラムカードおよび **プログラムの概要** ページ。
 
 * 「システム管理者」のロールを持つユーザーは、Admin Console 内の場所に 1 回のクリックでアクセスできるようになりました。この場所から、ユーザーのロールや Cloud Manager への権限を管理できます。「**アクセスを管理**」ボタンが、ランディングページの「**プログラムを追加**」ボタンの横に表示されて使用できるようになりました。
 
-   詳細は、[システム管理者のタスク](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=ja#sysadmin-tasks)を参照してください。
+  詳細は、[システム管理者のタスク](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=ja#sysadmin-tasks)を参照してください。
 
 * 「システム管理者」のロールを持つユーザーは、Cloud Manager から直接オーサーインスタンスに対して 1 回のクリックでアクセスできるようになりました。
 
-   詳細は、[オーサーインスタンスへのアクセス管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=ja#manage-access-aem)を参照してください。
+  詳細は、[オーサーインスタンスへのアクセス管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=ja#manage-access-aem)を参照してください。
 
 * ビルドログに、スキップされたコンテンツパッケージを含む、検出されたアーティファクトのリストが含まれるようになりました。
 
@@ -98,7 +98,7 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 ### 既知の問題 {#known-issues-cm}
 
-* サンドボックスプログラム内の環境が、一定期間アクティビティが検出されない場合、休止状態になる。このステータスは、Cloud Manager では確認されません。このステータスが確認されるのは、開発者コンソールを経由した場合です。この問題は、今後のリリースで修正される予定です。
+* サンドボックスプログラム内の環境は、一定期間アクティビティが検出されなかった場合、休止状態になります。 このステータスは、Cloud Manager では確認されません。このステータスが確認されるのは、開発者コンソールを経由した場合です。この問題は、今後のリリースで修正される予定です。
 
 * Cloud Manager から開発者コンソールへの直接リンクが、サンドボックスプログラムの環境を非休止／休止にするオプションを表示しない。これを解決するには、開発者コンソールで、url の末尾にパターン `#release-cm-p1234-e5678` を追加します。ここで、*1234* はプログラム ID、*5678* は環境 ID です。この問題は、今後のリリースで修正される予定です。
 
@@ -176,7 +176,7 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 * アセット処理プロファイルを使用してアセットを再処理し、プロセスをフルコントロールできる機能（フルアセット処理を実行し、特定の処理プロファイルのみを適用して後処理ワークフローを実行するかどうかを決定できる）。
 * 基になるクラスターインスタンスがバックグラウンドで再起動された場合に、検索クエリがより高速に結果を返すようになりました（以前は、初期検索の実行が長時間続くことがありました）。
 * Assets インターフェイスのリスト表示および検索結果で表示されるアセットを「名前」で並べ替えました。[アセットの検索](/help/assets/search-assets.md#sort)を参照してください。
-* Assets インターフェイスのリスト表示および検索結果で表示されるアセットを「作成日」（日付）で並べ替えました。[アセットの検索](/help/assets/search-assets.md#sort)を参照してください。
+* Assets インターフェイスのリスト表示および検索結果で表示されるアセットを「作成日」（日付）で並べ替えました。 [アセットの検索](/help/assets/search-assets.md#sort)を参照してください。
 * アセットマイクロサービスを使用した EPS ファイルの画像への変換をサポート。
 
 ### バグ修正 {#assets-bug-fixes}

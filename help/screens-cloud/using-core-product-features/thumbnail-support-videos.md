@@ -3,10 +3,10 @@ title: Screens as a Cloud Service でのビデオのサムネールサポート
 description: このページでは、Screens as a Cloud Service にビデオのサムネールサポートを追加する方法について説明します。
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 100%
+source-wordcount: '490'
+ht-degree: 91%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 100%
 
 1. 「**プレビュー**」をクリックします。
 
-1. コンポーネントにビデオが設定されている場合は、ビデオが再生されます。ビデオが設定されておらず、サムネールが設定されている場合は、サムネールが再生されます。それ以外の場合、コンポーネントは未設定と見なされ、スキップされます。
+1. コンポーネントでビデオが設定されている場合、ビデオが再生されます。 設定されていない場合は、サムネールが設定され、サムネールが再生されます。 それ以外の場合、コンポーネントは設定されていないと見なされ、スキップされます。
 
 ## ビデオでサムネールを使用する際にサポートされているユースケース {#understand-use-case}
 

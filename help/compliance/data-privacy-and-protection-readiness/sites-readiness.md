@@ -2,10 +2,10 @@
 title: データ保護およびデータプライバシーに関する規制 - Adobe Experience Manager as a Cloud Service Sites の対応
 description: EU 一般データ保護規則（GDPR）やカリフォルニア州消費者プライバシー法など、データ保護およびデータプライバシーに関する様々な規制に対する Adobe Experience Manager as a Cloud Service Sites のサポートと、新しい AEM as a Cloud Service プロジェクトを実装する際にこれらの規制に準拠する方法について説明します。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 69%
+source-wordcount: '1028'
+ht-degree: 68%
 
 ---
 
@@ -60,11 +60,12 @@ Adobe Experience Manager には、ユーザーのオプトイン／オプトア�
 
    * このサイトへのユーザーの訪問に関するデータ集計および解析をオプトアウトするには、ブラウザーに cookie をインストールする必要があります。この cookie はユーザーがオプトアウトしたことを識別します。
 
-      オプトアウト cookie を削除する、またはコンピューターまたは Web ブラウザーを変更する場合は、再度オプトアウトする必要があります。
+     オプトアウト cookie を削除する、またはコンピューターまたは Web ブラウザーを変更する場合は、再度オプトアウトする必要があります。
 
-      オプトアプト - ユーザーを訪問者セッション集計や解析から除外 (`amcglobal.sc.omtrdc.net` オプトアウト cookie をインストール) - ここをクリック
+     オプトアプト - ユーザーを訪問者セッション集計や解析から除外 (`amcglobal.sc.omtrdc.net` オプトアウト cookie をインストール) - ここをクリック
 
-      オプトイン - ユーザーを訪問者セッション集計や解析に含める (`amcglobal.sc.omtrdc.net` オプトアウト cookie をインストールしない) - ここをクリック
+     オプトイン - ユーザーを訪問者セッション集計や解析に含める (`amcglobal.sc.omtrdc.net` オプトアウト cookie をインストールしない) - ここをクリック
+
    上記の手順に従って、実際のリンクにアクセスします。
 
    >[!NOTE]
@@ -108,22 +109,22 @@ AEM には、ContextHub を使用するオプションのデータレイヤー�
 
 * サイトの訪問者がサイトの利用条件に同意した場合は、ContextHub のオプトアウト Cookie を削除する必要があります。
 
-   ```
-   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
-   ```
+  ```
+  ContextHub.Utils.Cookie.removeItem('cq-opt-out');
+  ```
 
 * サイトの訪問者がサイトの利用条件に同意しない場合は、ContextHub オプトアウト Cookie を次のように設定する必要があります。
 
-   ```
-   ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
-   ```
+  ```
+  ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
+  ```
 
 * ContextHub がオプトアウトモードで動作しているかどうかを確認するには、ブラウザーのコンソールで次の呼び出しを行う必要があります。
 
-   ```
-   var isOptedOut = ContextHub.isOptedOut(true) === true;
-   // if isOptedOut is true, ContextHub is running in opt-out mode
-   ```
+  ```
+  var isOptedOut = ContextHub.isOptedOut(true) === true;
+  // if isOptedOut is true, ContextHub is running in opt-out mode
+  ```
 
 ### ContextHub の永続性のプレビュー {#previewing-persistence-of-contexthub}
 
@@ -138,6 +139,7 @@ ContextHub で使用される永続性をプレビューするには、次の操
          * ローカルストレージ／（Web サイト）／ContextHubPersistence
          * セッションストレージ/（Web サイト）/ContextHubPersistence
          * Cookie／（Web サイト）／SessionPersistence
+
    * Firefox:
 
       * 開発者ツール/ストレージを開きます。
@@ -145,6 +147,7 @@ ContextHub で使用される永続性をプレビューするには、次の操
          * ローカルストレージ／（Web サイト）／ContextHubPersistence
          * セッションストレージ/（Web サイト）/ContextHubPersistence
          * Cookie／（Web サイト）／SessionPersistence
+
    * Safari:
 
       * メニューバーで、環境設定/詳細設定/開発メニューを表示を開きます。
@@ -153,6 +156,7 @@ ContextHub で使用される永続性をプレビューするには、次の操
          * コンソール/ストレージ/ローカルストレージ/（Web サイト）/ContextHubPersistence
          * コンソール/ストレージ/セッションストレージ/ （Web サイト）/ ContextHubPersistence
          * コンソール/ストレージ/ Cookies / （Web サイト）/ ContextHubPersistence
+
    * Internet Explorer:
 
       * F12 開発者ツール／コンソールを選択
@@ -160,9 +164,6 @@ ContextHub で使用される永続性をプレビューするには、次の操
          * `localStorage.getItem('ContextHubPersistence')`
          * `sessionStorage.getItem('ContextHubPersistence')`
          * `document.cookie`
-
-
-
 
 * ブラウザーのコンソールで ContextHub API を使用します。
 
@@ -173,8 +174,7 @@ ContextHub で使用される永続性をプレビューするには、次の操
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-      ContextHub ストアは、使用する永続性レイヤーを定義します。これにより、永続性の現在の状態を表示するために、すべてのレイヤーを確認する必要があります。
-
+     ContextHub ストアは、使用する永続性レイヤーを定義します。これにより、永続性の現在の状態を表示するために、すべてのレイヤーを確認する必要があります。
 
 例えば、localStorage に格納されたデータを表示するには、次のようにします。
 
@@ -187,12 +187,12 @@ ContextHub で使用される永続性をプレビューするには、次の操
       * ローカルストレージ／（Web サイト）／ContextHubPersistence
       * セッションストレージ/（Web サイト）/ContextHubPersistence
       * Cookie／（Web サイト）／SessionPersistence
+
    * Firefox — デベロッパーツール/ストレージを開きます。
 
       * ローカルストレージ／（Web サイト）／ContextHubPersistence
       * セッションストレージ/（Web サイト）/ContextHubPersistence
       * Cookie／（Web サイト）／SessionPersistence
-
 
 * ブラウザーのコンソールで ContextHub API を使用します。
 
@@ -203,8 +203,7 @@ ContextHub で使用される永続性をプレビューするには、次の操
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-      ContextHub ストアは、使用する永続性レイヤーを定義します。これにより、永続性の現在の状態を表示するために、すべてのレイヤーを確認する必要があります。
-
+     ContextHub ストアは、使用する永続性レイヤーを定義します。これにより、永続性の現在の状態を表示するために、すべてのレイヤーを確認する必要があります。
 
 例えば、localStorage に格納されたデータを表示するには、次のようにします。
 
@@ -219,27 +218,27 @@ ContextHub の永続性をクリアするには：
 
 * 現在読み込まれているストアの永続性をクリアするには：
 
-   ```
-   // in order to be able to fully access persistence layer, Opt-Out must be turned off
-   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
-   
-   // following call asks all currently loaded stores to clear their data
-   ContextHub.cleanAllStores();
-   
-   // following call asks all currently loaded stores to set back default values (provided in their configs)
-   ContextHub.resetAllStores();
-   ```
+  ```
+  // to be able to fully access persistence layer, Opt-Out must be turned off
+  ContextHub.Utils.Cookie.removeItem('cq-opt-out');
+  
+  // following call asks all currently loaded stores to clear their data
+  ContextHub.cleanAllStores();
+  
+  // following call asks all currently loaded stores to set back default values (provided in their configs)
+  ContextHub.resetAllStores();
+  ```
 
 * 特定の永続性レイヤーをクリアするには：例えば、sessionStorage は次のようになります。
 
-   ```
-   var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
-   storage.setItem('/store', null);
-   storage.setItem('/_', null);
-   
-   // to confirm that nothing is stored:
-   console.log(storage.getTree());
-   ```
+  ```
+  var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
+  storage.setItem('/store', null);
+  storage.setItem('/_', null);
+  
+  // to confirm that nothing is stored:
+  console.log(storage.getTree());
+  ```
 
 * すべての ContextHub 永続性レイヤーをクリアするには、すべてのレイヤーに対して適切なコードを呼び出す必要があります。
 

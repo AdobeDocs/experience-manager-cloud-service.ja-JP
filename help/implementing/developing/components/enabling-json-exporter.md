@@ -2,10 +2,10 @@
 title: コンポーネントの JSON 書き出しの有効化
 description: モデラーフレームワークに基づいてコンテンツの JSON 書き出しを生成するように、コンポーネントを適応させることができます。
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 76%
+source-wordcount: '472'
+ht-degree: 77%
 
 ---
 
@@ -66,7 +66,7 @@ JSON エクスポーターフレームワークで認識されるようにする
 
 対応する Sling Model インターフェイス（`MyComponent`）には、[Jackson 注釈](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)を使用して注釈が付けられ、どのように書き出し（シリアル化）が行われるかが定義されます。
 
-モデルインターフェイスに適切な注釈を付けて、シリアル化するメソッドを定義する必要があります。 デフォルトでは、getter の通常の命名規則に従うすべてのメソッドがシリアル化され、JSON プロパティ名はゲッター名から自然に派生します。 これを回避または上書きするには、`@JsonIgnore` または `@JsonProperty` を使用して JSON プロパティの名前を変更します。
+モデルインターフェイスに適切な注釈を付けて、シリアル化するメソッドを定義する必要があります。 デフォルトでは、ゲッターの通常の命名規則に従うすべてのメソッドがシリアル化され、JSON プロパティ名はゲッター名から自然に派生します。 これを回避または上書きするには、`@JsonIgnore` または `@JsonProperty` を使用して JSON プロパティの名前を変更します。
 
 ## 例 {#example}
 

@@ -2,10 +2,10 @@
 title: Cloud Manager 環境変数
 description: 標準環境変数は、Cloud Manager を介して設定および管理でき、ランタイム環境に提供され、OSGi 設定で使用できます。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 774a27e78abf091d96978911deea945ac35b7a44
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 100%
+source-wordcount: '1016'
+ht-degree: 96%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->環境変数を追加または変更するには、[**デプロイメントマネージャー** 役割](/help/onboarding/cloud-manager-introduction.md#role-based-premissions)のメンバーである必要があります。
+>次のメンバーである必要があります： [**デプロイメントマネージャー** 役割](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) をクリックして、環境変数を追加または変更します。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Adobe Cloud Manager にログインします。
 1. Cloud Manager に、使用可能な様々なプログラムのリストが表示されます。管理するものを選択します。
@@ -59,7 +59,7 @@ ht-degree: 100%
 
 1. 「**保存**」を選択して、変数を保持します。
 
-表の上部と新しく追加された変数の横に、ステータスが **更新中** のインジケーターが表示され、環境が設定で更新されていることを示します。完了すると、新しい環境変数がテーブルに表示されます。
+表の上部と新しく追加された変数の横に、ステータスが **更新中** のインジケーターが表示され、環境が設定で更新されていることを示します。完了すると、新しい環境変数が表に表示されます。
 
 ![変数の更新](assets/updating-variables.png)
 

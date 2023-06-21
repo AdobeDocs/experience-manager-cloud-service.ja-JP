@@ -2,10 +2,10 @@
 title: コンテンツフラグメントの管理（アセット - コンテンツフラグメント）
 description: ヘッドレスコンテンツの基礎となる AEM コンテンツフラグメントを Assets コンソールを使用して管理する方法について説明します。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 100%
+source-wordcount: '1754'
+ht-degree: 94%
 
 ---
 
@@ -31,7 +31,6 @@ ht-degree: 100%
 >
 >* ページのオーサリング時 -「[コンテンツフラグメントを使用したページオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)」を参照してください。
 >* [GraphQL でコンテンツフラグメントを使用するヘッドレスコンテンツ配信用。](/help/assets/content-fragments/content-fragments-graphql.md)
-
 
 >[!NOTE]
 >
@@ -65,21 +64,21 @@ ht-degree: 100%
 
       * **タイトル**
 
-         フラグメントタイトル。
+        フラグメントタイトル。
 
-         必須です。
+        必須です。
 
       * **説明**
 
       * **タグ**
+
    * **詳細**
 
       * **名前**
 
-         URL の作成に使用される名前です。
+        名前を使用して URL が作成されます。
 
-         必須。タイトルから自動的に派生しますが、変更が可能です。
-
+        必須はタイトルから自動的に派生しますが、更新できます。
 
 1. 「**作成**」を選択して操作を完了してから、編集するためにフラグメントを&#x200B;**開く**&#x200B;か、「**完了**」でコンソールに戻ります。
 
@@ -176,7 +175,7 @@ ht-degree: 100%
 
 ![モード](assets/cfm-managing-top-toolbar.png)
 
-* フラグメントがコンテンツページで既に参照されている場合は、メッセージが表示されます。このメッセージは&#x200B;**閉じる**&#x200B;ことができます。
+* フラグメントがコンテンツページで既に参照されている場合は、メッセージが表示されます。 このメッセージは&#x200B;**閉じる**&#x200B;ことができます。
 
 * **サイドパネルを切り替え**&#x200B;アイコンを使用してサイドパネルを非表示／表示できます。
 
@@ -216,23 +215,23 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * 「**保存**」を選択すると、最新の変更が保存され、その後もエディターは開いたままです。
    * 「**保存して閉じる**」を選択すると、最新の変更が保存された後、エディターが終了します。
 
-   >[!CAUTION]
-   >
-   >コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
+  >[!CAUTION]
+  >
+  >コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
 
-   >[!NOTE]
-   >
-   >エディターを開いたまま、一連の変更を加えてから保存することもできます。
+  >[!NOTE]
+  >
+  >エディターを開いたまま、一連の変更を加えてから保存することもできます。
 
-   >[!CAUTION]
-   >
-   >これらの操作では、変更を保存するだけでなく、参照もすべて更新し、Dispatcher が必要に応じてフラッシュされます。これらの変更の処理には時間がかかる場合があります。このため、大きなシステムや複雑なシステム、高負荷のシステムのパフォーマンスに影響することがあります。
-   >
-   >「**保存して閉じる**」を使用する際はこの点に留意し、フラグメントエディターをすぐに開いて、さらに変更を加え保存してください。
+  >[!CAUTION]
+  >
+  >これらの操作では、変更を保存するだけでなく、参照もすべて更新し、Dispatcher が必要に応じてフラッシュされます。これらの変更の処理には時間がかかる場合があります。このため、大きなシステムや複雑なシステム、高負荷のシステムのパフォーマンスに影響することがあります。
+  >
+  >「**保存して閉じる**」を使用する際はこの点に留意し、フラグメントエディターをすぐに開いて、さらに変更を加え保存してください。
 
 * **閉じる**
 
-   最新の変更（前回の「**保存**」操作以降に行った変更）を保存せずにエディターを終了します。
+  最新の変更（前回の「**保存**」操作以降に行った変更）を保存せずにエディターを終了します。
 
 コンテンツフラグメントを編集するとき、AEM によって自動的にバージョンが作成されます。これにより、（保存せずに「**閉じる**」を使用して）変更内容を取り消した場合でも、以前のコンテンツを復元できるようになります。
 
@@ -289,15 +288,18 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * **削除**
 
 >[!NOTE]
->コメントは次のとおりです。
->* すべてのアセットの標準機能
->* タイムラインで作成
->* フラグメントアセットに関連付けられる
->注釈（コンテンツフラグメント用）は次のとおりです。
->* フラグメントエディターで入力
->* フラグメント内の選択されたテキストセグメントに固有
 >
-
+コメントは次のとおりです。
+>
+* すべてのアセットの標準機能
+* タイムラインで作成
+* フラグメントアセットに関連付けられる
+>
+注釈（コンテンツフラグメント用）は次のとおりです。
+>
+* フラグメントエディターで入力
+* フラグメント内の選択されたテキストセグメントに固有
+>
 
 次に例を示します。
 
@@ -313,7 +315,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 * 選択されたバージョン **v&lt;*x.y*>**（右）
 
-これらは左右に並んで表示されます。この画面について以下で説明します。
+これらは並べて表示され、次の場所にあります。
 
 * すべての相違点がハイライト表示されます
 
@@ -326,7 +328,8 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * 「**完了**」を選択すると、コンソールに戻ります
 
 >[!NOTE]
->フラグメントの比較中にフラグメントコンテンツを編集することはできません。
+>
+フラグメントの比較中にフラグメントコンテンツを編集することはできません。
 
 ![比較](assets/cfm-managing-06.png)
 
@@ -336,15 +339,17 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 * 直接[タイムライン](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)から。
 
-   必要なバージョンを選択した後、「**このバージョンに戻す**」アクションを選択します。
+  必要なバージョンを選択した後、「**このバージョンに戻す**」アクションを選択します。
 
 * [あるバージョンと現在のバージョンを比較](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions)し、選択したバージョンに&#x200B;**戻す**&#x200B;ことができます。
 
 ## フラグメントの公開と参照 {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
->フラグメントがモデルに基づいている場合、その[モデルが公開されている](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)ことを確認してください。
->まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
+>
+フラグメントがモデルに基づいている場合、その[モデルが公開されている](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)ことを確認してください。
+>
+モデルがまだ公開されていないコンテンツフラグメントを公開する場合は、選択リストにその旨が表示され、モデルがフラグメントと共に公開されます。
 
 コンテンツフラグメントをパブリッシュ環境で使用するには、公開する必要があります。これは、Assets の標準機能を使用して行います。
 
@@ -356,10 +361,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * 作成後、[Assets コンソールで使用可能なアクション](#actions-for-a-content-fragment-assets-console)を使用して。
 * [コンテンツフラグメントエディター](#toolbar-actions-in-the-content-fragment-editor)から。
 
-さらに、[フラグメントを使用するページを公開](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)するとき。フラグメントはページ参照にリスト表示されます。
+また、 [フラグメントを使用するページを公開する](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing);フラグメントはページ参照に一覧表示されます。
 
 >[!CAUTION]
->フラグメントが公開または参照（あるいは両方）された後に、作成者がフラグメントを開いて編集しようとすると警告が表示され、フラグメントを変更すると、参照されているページにも影響が及ぶことが警告されます。
+>
+フラグメントが公開または参照（あるいは両方）された後に、作成者がフラグメントを開いて編集しようとすると警告が表示され、フラグメントを変更すると、参照されているページにも影響が及ぶことが警告されます。
 
 ## フラグメントの削除 {#deleting-a-fragment}
 
@@ -369,10 +375,12 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 2. フラグメントを選択します。
 
    >[!NOTE]
-   >**削除**&#x200B;アクションは、クイックアクションとしては実行できません。
+   >
+   **削除**&#x200B;アクションは、クイックアクションとしては実行できません。
 
 3. ツールバーから「**削除**」を選択します。
 4. 「**削除**」アクションを確認します。
 
    >[!CAUTION]
-   >フラグメントが既にページで参照されている場合は、警告メッセージが表示されます。「**削除を強制**」を選択して続行を確認する必要があります。フラグメントはコンテンツフラグメントコンポーネントと一緒に、すべてのコンテンツページから削除されます。
+   >
+   フラグメントが既にページで参照されている場合は、警告メッセージが表示されます。「**削除を強制**」を選択して続行を確認する必要があります。フラグメントはコンテンツフラグメントコンポーネントと共に、すべてのコンテンツページから削除されます。

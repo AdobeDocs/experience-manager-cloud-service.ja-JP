@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.1.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.1.0 リリースのリリースノート。'
 exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 100%
+source-wordcount: '976'
+ht-degree: 97%
 
 ---
 
@@ -43,9 +43,9 @@ ht-degree: 100%
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-* 管理者はアセットレポートで Experience Manager Assetsas a Cloud Service デプロイメントから[アセットダウンロードレポートを生成](/help/assets/asset-reports.md)できるようになりました。このデータにより、企業や顧客での Assets の採用状況を測定するために、管理者は主要な成功指標からさらに洞察を得ることができます。
+* 管理者はアセットレポートで Experience Manager Assetsas a Cloud Service デプロイメントから[アセットダウンロードレポートを生成](/help/assets/asset-reports.md)できるようになりました。このデータにより、管理者はさらに、主要な成功指標から洞察を得て、企業やお客様での Assets の採用状況を測定できます。
 
-   ![他の形式向けの PDF レンディション](/help/release-notes/assets/choose_report.png)
+  ![他の形式向けの PDF レンディション](/help/release-notes/assets/choose_report.png)
 
 * Experience Manager Assets now は、Azure Blob ストレージデータ ソースに接続し、一括インポート ツールを使用してアセットを取り込む際に、認証用のアクセス キーに加えて [SAS Token](/help/assets/add-assets.md#asset-bulk-ingestor) をサポートするようになりました。
 
@@ -82,17 +82,17 @@ ht-degree: 100%
 
 * [迅速な開発環境](/help/implementing/developing/introduction/rapid-development-environments.md) - RDE を使用すると、デベロッパーは問題を迅速にトラブルシューティングして、AEM as a Cloud Service に新しい機能をデプロイできます。
 
-   迅速な開発環境とは、迅速で一貫性のある拡張可能な方法として設計された新しいタイプのクラウド環境であり、ローカルで動作するコードの検証もクラウドで期待通りに機能します。コマンドラインツールを使用して、コンテンツパッケージ、バンドル、コンテンツファイル、OSGi 設定、Dispatcher 設定をすばやく「同期」します。以下のビデオで、実際の動作を確認してください。
+  迅速な開発環境とは、迅速で一貫性のある拡張可能な方法として設計された新しいタイプのクラウド環境であり、ローカルで動作するコードの検証もクラウドで期待通りに機能します。コマンドラインツールを使用して、コンテンツパッケージ、バンドル、コンテンツファイル、OSGi 設定、Dispatcher 設定をすばやく「同期」します。以下のビデオで、実際の動作を確認してください。
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
+  >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
 
-   RDE でコードを正常に検証した後、実稼動パイプラインを介してステージおよび実稼動環境にデプロイする前に、クラウド開発環境にデプロイして Cloud Manager の品質ゲートを実行することをお勧めします。
+  RDE でコードを正常に検証した後、実稼動パイプラインを介してステージおよび実稼動環境にデプロイする前に、クラウド開発環境にデプロイして Cloud Manager の品質ゲートを実行することをお勧めします。
 
-   各プログラムには 1 つの RDE が含まれ、オプションでさらにライセンスを取得できます。
+  各プログラムには 1 つの RDE が含まれ、オプションでさらにライセンスを取得できます。
 
-   >[!NOTE]
-   >
-   >RDE は今後数週間で徐々に展開される予定です。メールを aemcs-rde-support@adobe.com に送信すると、行の先頭にスキップすることができます。
+  >[!NOTE]
+  >
+  >RDE は今後数週間で徐々に展開される予定です。メールを aemcs-rde-support@adobe.com に送信すると、行の先頭にスキップすることができます。
 
 * [サーバーサイド API アクセストークンの拡張サポート](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) - 複数の資格情報を生成できるようになりました。これは、API の特性が異なるシナリオで役立ちます。また、セルフサービス方式で資格情報を失効させることもできるようになりました。
 

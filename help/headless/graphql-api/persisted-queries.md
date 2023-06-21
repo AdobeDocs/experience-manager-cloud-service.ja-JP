@@ -3,10 +3,10 @@ title: 永続的な GraphQL クエリ
 description: Adobe Experience Manager as a Cloud Service で GraphQL クエリを永続化してパフォーマンスを最適化する方法を説明します。クライアントアプリケーションで HTTP GET メソッドを使用して永続的クエリをリクエストでき、応答を Dispatcher および CDN レイヤーにキャッシュできるので、最終的にクライアントアプリケーションのパフォーマンスが向上します。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: c3d7cd591bce282bb4d3b5b5d0ee2e22fd337a83
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 90%
+source-wordcount: '1681'
+ht-degree: 88%
 
 ---
 
@@ -37,10 +37,10 @@ AEM では [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) を使用�
 
 例えば、`my-query` という特定のクエリがあり、このクエリが Sites 設定 `my-conf` のモデル `my-model` を使用する場合は、次のようになります。
 
-* 特定エンドポイント `my-conf` を使用してクエリを作成すると、クエリは次のように保存されます。
-   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* `global` エンドポイントを使用して同じクエリを作成できますが、クエリは次のように保存されます。
-   `/conf/global/settings/graphql/persistentQueries/my-query`
+* クエリを作成するには、 `my-conf` 特定のエンドポイントに設定した後、クエリは次のように保存されます。
+  `/conf/my-conf/settings/graphql/persistentQueries/my-query`
+* 同じクエリを `global` エンドポイントのみを選択し、クエリは次のように保存されます。
+  `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
 >
@@ -364,14 +364,14 @@ curl -u admin:admin -X POST \
 
 * 使用可能な場合、次の Cloud Manager 変数を読み取ります。
 
-   | OSGi 設定のプロパティ | 読み取り対象 | Cloud Manager 変数 |
-   |--- |--- |--- |
-   | `cacheControlMaxAge` | が読み取るのは | `graphqlCacheControl` |
-   | `surrogateControlMaxAge` | が読み取るのは | `graphqlSurrogateControl` |
-   | `surrogateControlStaleWhileRevalidate` | が読み取るのは | `graphqlStaleWhileRevalidate` |
-   | `surrogateControlStaleIfError` | が読み取るのは | `graphqlStaleIfError` |
+  | OSGi 設定のプロパティ | 読み取り対象 | Cloud Manager 変数 |
+  |--- |--- |--- |
+  | `cacheControlMaxAge` | が読み取るのは | `graphqlCacheControl` |
+  | `surrogateControlMaxAge` | が読み取るのは | `graphqlSurrogateControl` |
+  | `surrogateControlStaleWhileRevalidate` | が読み取るのは | `graphqlStaleWhileRevalidate` |
+  | `surrogateControlStaleIfError` | が読み取るのは | `graphqlStaleIfError` |
 
-   {style="table-layout:auto"}
+  {style="table-layout:auto"}
 
 * 使用できない場合、OSGi 設定は[パブリッシュインスタンスのデフォルト値](#publish-instances)を使用します。
 
@@ -387,13 +387,13 @@ curl -u admin:admin -X POST \
 
 フィールド `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) は、必要に応じて定義できます。
 
-* `false` （デフォルト値）:永続化されたクエリが成功したかどうかは関係ありません。 この `/execute.json/persisted-query` はステータスコードを返します。 `200` そして `Content-Type` 返されるヘッダーは `application/json`.
+* `false` （デフォルト値）:永続化されたクエリが成功したかどうかは関係ありません。 この `/execute.json/persisted-query` ステータスコードを返します。 `200` そして `Content-Type` 返されるヘッダー `application/json`.
 
-* `true`:エンドポイントが返されます `400` または `500` 必要に応じて、永続化されたクエリの実行時に何らかのエラーが発生する場合。 また、 `Content-Type` は `application/graphql-response+json`.
+* `true`:エンドポイントが返されます `400` または `500` 必要に応じて、永続化されたクエリの実行時に何らかのエラーが発生する場合。 また、 `Content-Type` が `application/graphql-response+json`.
 
-   >[!NOTE]
-   >
-   >詳しくは、 https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codesを参照してください。
+  >[!NOTE]
+  >
+  >詳しくは、 https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codesを参照してください。
 
 ## アプリで使用するクエリ URL のエンコード {#encoding-query-url}
 
@@ -439,7 +439,7 @@ URL は次の部分に分解できます。
 1. 「**パッケージを作成**」をタップして新しいパッケージを作成します。パッケージを定義するダイアログが開きます。
 1. パッケージ定義ダイアログの「**一般**」で、「wknd-persistent-queries」などの&#x200B;**名前**&#x200B;を入力します。
 1. 「1.0」のようなバージョン番号を入力します。
-1. 「**フィルター**」で、新しい&#x200B;**フィルター**&#x200B;を追加します。パスファインダーを使用して、設定の下にある `persistentQueries` フォルダーを選択します。例えば、`wknd` 設定の場合、フルパスは `/conf/wknd/settings/graphql/persistentQueries` になります。
+1. 「**フィルター**」で、新しい&#x200B;**フィルター**&#x200B;を追加します。パスファインダーを使用して、設定の下にある `persistentQueries` フォルダーを選択します。例えば、 `wknd` 設定の場合、フルパスは `/conf/wknd/settings/graphql/persistentQueries`.
 1. 「**保存**」をタップして新しいパッケージ定義を保存し、ダイアログを閉じます。
 1. 新しく作成されたパッケージ定義で「**ビルド**」ボタンをタップします。
 

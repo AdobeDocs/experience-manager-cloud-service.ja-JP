@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 100%
+source-wordcount: '1361'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ AEM Sites 翻訳ジャーニーの以前のドキュメント（[コンテンツ
 
 >[!TIP]
 >
->複数の翻訳を一度に公開するために、公開時に複数の項目（複数の言語フォルダー）を選択することができます。
+>一度に複数の翻訳を公開するために公開する際に、複数の項目（複数の言語フォルダー）を選択できます。
 
 コンテンツを公開する際には、公開時刻のスケジュールなど、さらにオプションがありますが、それらはこのジャーニーの範囲外ですので、ここでは扱いません。詳しくは、このドキュメントの最後にある [その他のリソース](#additional-resources) の節を参照してください。
 

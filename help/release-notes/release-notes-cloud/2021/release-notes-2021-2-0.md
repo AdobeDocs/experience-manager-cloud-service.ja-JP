@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 リリースのリリースノート。'
 description: 「[!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 のリリースノート」
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1237'
-ht-degree: 100%
+source-wordcount: '1234'
+ht-degree: 95%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 100%
 
 * [!DNL Experience Manager Assets] as a [!DNL Cloud Service] には、事前設定済みの [!DNL Brand Portal] インスタンスが用意されています。[!DNL Cloud Manager] ユーザーは、[!DNL Experience Manager Assets] as a [!DNL Cloud Service] 上で [!DNL Brand Portal] をアクティブ化できます。[Brand Portal のライセンス認証](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=ja)を参照してください。
 
-* 企業が [!DNL Brand Portal] を使用してアセットソーシングを行えるようになりました。アセットソーシング機能では、[!DNL Brand Portal] を活用して顧客とエージェンシーユーザーの連携を支援し、顧客が新しいマーケティングキャンペーン、撮影、プロジェクトのためのアセットソーシングを行えるようにします。詳しくは、[ [!DNL Brand Portal] でのアセットソーシング](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ja)を参照してください。
+* 企業が [!DNL Brand Portal] を使用してアセットソーシングを行えるようになりました。アセットソーシング機能では、 [!DNL Brand Portal] を使用すれば、代理店ユーザーとの関わり合いを助け、新しいマーケティングキャンペーン、撮影、プロジェクト用にアセットをソースすることができます。 詳しくは、[ [!DNL Brand Portal] でのアセットソーシング](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ja)を参照してください。
 
 * [!DNL Brand Portal] 使用状況レポートには、アクティブユーザーのみ表示されるようになりました。非アクティブユーザーは表示されなくなりました。アクティブユーザーとは、[!DNL Admin Console] で製品プロファイルにアカウントが割り当てられているユーザーのことです。詳しくは、[[!DNL Brand Portal] レポート](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html?lang=ja)を参照してください。
 
@@ -100,7 +100,7 @@ AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 �
 
 * 関連付けられた環境で、実行中のパイプラインが割り当てられているか、現在、承認ステップ待ちの状態にあるため、一時的にドメイン名を追加／更新できない可能性がある場合は、Cloud Manager UI からユーザーに通知されるようになりました。
 
-* ユーザーの `pom.xml` ファイルで設定されたプロパティのうち、先頭に sonar が付いているものは、ビルドおよび品質スキャン時のエラーを避けるために、動的に削除されるようになりました。
+* 顧客で設定されたプロパティ `pom.xml` sonar のプレフィックスが付いたファイルが動的に削除され、ビルドおよび品質スキャンの失敗を回避できるようになりました。
 
 * 現在デプロイ中のドメイン名で使用されている SSL 証明書を一時的に選択できない可能性がある場合は、Cloud Manager UI からユーザーに通知されるようになりました。
 
@@ -126,7 +126,7 @@ AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 �
 
 ### バグの修正 {#bug-fixes-ctt}
 
-* 複数のユーザーをマッピングする際に、一部のユーザーの IMS ID が正しくマッピングされていませんでした。この問題が修正されました。
+* 複数のユーザーをマッピングする際に、一部のユーザーの IMS ID が正しくマッピングされなかった問題を修正しました。 この問題が修正されました。
 
 ### リリース日 {#release-date-ctt-feb}
 

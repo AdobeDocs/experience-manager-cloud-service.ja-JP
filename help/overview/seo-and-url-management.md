@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service の SEO および URL 管理のベストプラクティス
 description: Adobe Experience Manager as a Cloud Service の SEO および URL 管理のベストプラクティス
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3714'
-ht-degree: 82%
+source-wordcount: '3709'
+ht-degree: 79%
 
 ---
 
@@ -25,7 +25,7 @@ URL には、認められているベストプラクティスがいくつかあ�
 
 AEM プロジェクトで URL を評価するときには、次のことを確認してください。
 
-*「ユーザーがこの URL を目にしたときに、ページのコンテンツを見なくても、このページの内容を説明できますか？」*
+*「ユーザーがこの URL を見ても、ページのコンテンツを見ていない場合、そのユーザーはこのページの内容を説明できますか？」*
 
 答えが「はい」であれば、その URL は検索エンジンに効果があります。
 
@@ -46,9 +46,8 @@ SEO 用の URL を作成する方法に関する一般的なヒントを以下�
    * ページでセレクターを使用する場合は、セマンティックな値を提供するセレクターをお勧めします。
    * 人が URL を読み取れない場合、検索エンジンも読み取れません。
    * 次に例を示します。
-      `mybrand.com/products/product-detail.product-category.product-name.html`
-の方が より望ましい 
-`mybrand.com/products/product-detail.1234.html`
+     `mybrand.com/products/product-detail.product-category.product-name.html`
+の方が `mybrand.com/products/product-detail.1234.html` より望ましい
 
 * 検索エンジンではサブドメインは異なるエンティティとして扱われ、サイトの SEO 値が分断されるので、可能な限りサブドメインの使用は避けてください。
 
@@ -78,9 +77,9 @@ SEO 用の URL を作成する方法に関する一般的なヒントを以下�
 
 * 各ページが 1 つのプロトコルからのみ提供されていることを確認します。
 
-   * サイトが `http` 経由で提供され、ユーザーがチェックアウトまたはログインフォームを使用してページに到達した時点で、`https` に切り替わることがあります。このページからリンクするときに、ユーザーが `http` ページに戻り、`https` 経由でそれらのページにアクセスできる場合、検索エンジンは、2 つの異なるページとして追跡します。
+   * サイトが経由で提供される場合があります `http` は、ユーザーがチェックアウトまたはログインフォームを含むページに到達した時点で、そのページが `https`. このページからリンクするときに、ユーザーが `http` ページに戻り、`https` 経由でそれらのページにアクセスできる場合、検索エンジンは、2 つの異なるページとして追跡します。
 
-   * Google では現在、`https` ページの方が `http` ページよりも推奨されています。こうした理由から、多くの場合、サイト全体を `https` で提供する方が問題が少なくなります。
+   * Google では現在、`https` ページの方が `http` ページよりも推奨されています。このため、多くの場合、サイト全体を経由で提供する方が便利です `https`.
 
 ### サーバーの設定 {#server-configuration}
 
@@ -151,7 +150,7 @@ String myParam = req.getParameter("myParam");
 このタイプのサーブレットの SCR 注釈は、次のようになります。
 
 ```
-@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json”, methods=”GET”)
+@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json", methods="GET")
 ```
 
 この場合、URL によってアドレス指定されるリソース（`myPageType` リソースのインスタンス）にサーブレットで自動的にアクセスできます。アクセスするには、次の呼び出しをおこないます。
@@ -186,20 +185,20 @@ AEM では、すべての Web ページが `/content/my-brand/my-content` に保
 翻訳されたコンテンツのユーザーには、ローカライズされたページ名を表示した方がよい場合があります。次に例を示します。
 
 * スペイン語を話すユーザーが次のページにアクセスするとします。
-   `www.mydomain.com/es/home.html`
+  `www.mydomain.com/es/home.html`
 
 * この場合、URL を次のように表示した方が効果的です。
-   `www.mydomain.com/es/casa.html`。
+  `www.mydomain.com/es/casa.html`。
 
-ページ名のローカライズに伴う課題は、AEM プラットフォームで使用可能なローカリゼーションツールの多くでは、コンテンツを同期しておくためには、ロケール間でページ名を一致させる必要があるという点です。
+ページ名のローカライズに伴う課題は、AEMプラットフォームで使用可能なローカリゼーションツールの多くでは、コンテンツを同期しておくために、ロケール間でページ名を一致させる必要がある点です。
 
 `sling:alias` プロパティを使用すると、両方を同時に実現できます。`sling:alias` を任意のリソースにプロパティとして追加すると、リソースのエイリアス名を使用することができます。前述の例では、次のようになります。
 
 * JCR の次の場所にページがあるとします。
-   `…/es/home`
+  `…/es/home`
 
 * プロパティを追加します。
-   `sling:alias` = `casa`
+  `sling:alias` = `casa`
 
 これにより、マルチサイトマネージャーなどの AEM 翻訳ツールでは、次のページ間の関係を引き続き維持できます。
 
@@ -218,12 +217,11 @@ AEM では、すべての Web ページが `/content/my-brand/my-content` に保
 標準 AEM インストールでは、
 
 * OSGi 設定には
-   **Apache Sling Resource Resolver Factory**
-（ 
-`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`）
+  **Apache Sling Resource Resolver Factory**
+( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * プロパティ
-   **マッピング場所**（`resource.resolver.map.location`）
+  **マッピング場所**（`resource.resolver.map.location`）
 
 * デフォルト `/etc/map` に設定。
 
@@ -252,8 +250,8 @@ AEM で受信要求のマッピングまたはページ上の URL の書き換�
    Web コンソール（例えば、localhost:4502/system/console/configMgr）を使用して、Sling Resource Resolver を設定できます。
 
    * **Apache Sling Resource Resolver Factory**
+     `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`。
 
-      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`。
    URL を短縮するために必要なマッピングを正規表現として構築した後、ビルドに含まれている OsgiConfignode の `config.publish` でこれらの設定を定義することをお勧めします。
 
    `/etc/map`マッピングを定義する代わりに、プロパティ **URL Mappings**（`resource.resolver.mapping`）に直接割り当てることができます。
@@ -315,7 +313,7 @@ AEM で受信要求のマッピングまたはページ上の URL の書き換�
 両方について、ページの先頭に次のタグを適用します。
 
 ```xml
-<link rel=”canonical” href=”my-brand/my-page.html”/>
+<link rel="canonical" href="my-brand/my-page.html"/>
 ```
 
 `href` は、相対パスとして指定することも、絶対パスとして指定することもできます。ページの正規 URL を確認し、このタグを出力するには、このコードをページマークアップに挿入する必要があります。
@@ -373,7 +371,7 @@ Apache Sling Sitemap モジュールは、最上位のサイトマップとネ�
 
 デフォルトの設定では、ページのプロパティダイアログには、ページをサイトマップルートとしてマークオプションがあり、前述したように、ページ自体とその下位要素のサイトマップを生成します。この動作は `SitemapGenerator` インターフェイスの実装によって実装されており、代替実装を追加することで拡張することができます。ただし、XML サイトマップを再生成する頻度は、コンテンツオーサリングワークフローとワークロードに大きく依存するので、製品には `SitemapScheduler` 設定は含まれていません。これにより、機能が効果的にオプトインします。
 
-XML サイトマップを生成するバックグラウンドジョブを有効にするには、`SitemapScheduler` を設定する必要があります。それには、PID `org.apache.sling.sitemap.impl.SitemapScheduler` の OSGi 設定を作成します。スケジューラー式 `0 0 0 * * ?` は、1 日 1 回午前 0 時にすべての XML サイトマップを再生成するための開始点として使用できます。
+XML サイトマップを生成するバックグラウンドジョブを有効にするには、 `SitemapScheduler` を設定する必要があります。 それには、PID `org.apache.sling.sitemap.impl.SitemapScheduler` の OSGi 設定を作成します。スケジューラー式 `0 0 0 * * ?` は、1 日 1 回午前 0 時にすべての XML サイトマップを再生成するための開始点として使用できます。
 
 ![Apache Sling Sitemap - スケジューラー](assets/sling-sitemap-scheduler.png)
 

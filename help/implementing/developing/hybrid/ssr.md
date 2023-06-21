@@ -2,10 +2,10 @@
 title: SPA およびサーバーサイドレンダリング
 description: SPA でサーバーサイドレンダリング（SSR）を使用すると、ページの初期読み込みが高速化し、その後、クライアントにさらにレンダリングを渡すことができます。
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: a9eb03d4db478a4db8e6d2436bd06dcde70a3eeb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 100%
+source-wordcount: '1498'
+ht-degree: 87%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 単一ページアプリケーション（SPA）では、使い慣れたネイティブアプリケーションと同様に反応して動作するリッチで動的なエクスペリエンスを提供できます。[これは、コンテンツを事前に読み込こんでからユーザーとのやり取りを処理するという負荷のかかる作業をクライアントにまかせることで](introduction.md#how-does-a-spa-work)、クライアントとサーバーの間で必要な通信量を最小限に抑え、アプリケーションの反応を良くすることで達成できます。
 
-ただし、SPA のサイズが大きくコンテンツが豊富な場合などは、初期読み込み時間が長くなる可能性があります。読み込み時間を最適化するために、コンテンツの一部はサーバーサイドでレンダリングできます。サーバーサイドレンダリング（SSR）を使用すると、ページの初期読み込みが高速化し、その後、クライアントにさらにレンダリングを渡すことができます。
+ただし、SPA のサイズが大きくコンテンツが豊富な場合などは、初期読み込み時間が長くなる可能性があります。読み込み時間を最適化するために、コンテンツの一部はサーバーサイドでレンダリングできます。 サーバーサイドレンダリング（SSR）を使用すると、ページの初期読み込みが高速化し、その後、クライアントにさらにレンダリングを渡すことができます。
 
 ## SSR を使用するタイミング {#when-to-use-ssr}
 
@@ -59,7 +59,7 @@ AEM は、リモートレンダリングされたコンテンツをどこで取�
 
 この設定では、次のフィールドを使用できます。
 
-* **コンテンツパスパターン** - 必要に応じて、コンテンツの一部を一致させるための正規表現。
+* **コンテンツパスパターン**  — 必要に応じて、コンテンツの一部を一致させる正規表現。
 * **リモートエンドポイント URL** - コンテンツの生成を担当するエンドポイントの URL。
    * ローカルネットワークにない場合は、保護された HTTPS プロトコルを使用します。
 * **追加の要求ヘッダー** - リモートエンドポイントに送信される要求に追加するヘッダー。
@@ -72,7 +72,7 @@ AEM は、リモートレンダリングされたコンテンツをどこで取�
 
 >[!NOTE]
 >
->この設定では、[リモートコンテンツレンダラー](#remote-content-renderer)が活用されます。このレンダラーには、追加の拡張機能とカスタマイズオプションが用意されています。
+>この設定では、 [リモートコンテンツレンダラー](#remote-content-renderer) 追加の拡張機能とカスタマイズオプションを使用できます。
 
 ## AEM 主導の通信フロー {#aem-driven-communication-flow}
 
@@ -130,15 +130,15 @@ SSR を使用する場合、AEM にある SPA の[コンポーネントインタ
 
 ## SSR の計画 {#planning-for-ssr}
 
-通常は、アプリケーションの一部のみをサーバーサイドでレンダリングする必要があります。一般的な例として、ページの初回読み込み時に一画面に表示されるコンテンツはサーバーサイドでレンダリングされます。既にレンダリングされたコンテンツをクライアントに配信することで時間を節約できます。ユーザーが SPA とやり取りすると、追加のコンテンツがクライアントによってレンダリングされます。
+通常、サーバーサイドでレンダリングする必要があるのは、アプリケーションの一部のみです。 一般的な例としては、ページの初回読み込み時に一画面に表示されるコンテンツがサーバーサイドでレンダリングされます。 既にレンダリングされたコンテンツをクライアントに配信することで時間を節約できます。ユーザーが SPA とやり取りすると、追加のコンテンツがクライアントによってレンダリングされます。
 
-SPA にサーバーサイドレンダリングを実装する場合は、アプリのどの部分について必要かを確認する必要があります。
+SPAにサーバーサイドレンダリングを実装する場合は、アプリのどの部分について必要かを確認する必要があります。
 
 ## SSR を使用した SPA の開発 {#developing-an-spa-using-ssr}
 
-SPA コンポーネントは、クライアント（ブラウザー内）またはサーバーサイドでレンダリングできます。サーバーサイドでレンダリングすると、ウィンドウのサイズや位置などのブラウザーのプロパティは存在しません。したがって、SPA のコンポーネントは、レンダリングされる場所を前提としない、同型のものである必要があります。
+SPA コンポーネントは、クライアント（ブラウザー内）またはサーバーサイドでレンダリングできます。サーバーサイドでレンダリングすると、ウィンドウのサイズや位置などのブラウザーのプロパティは存在しません。したがって、SPAのコンポーネントは、レンダリングされる場所を前提としない、同型のものである必要があります。
 
-SSR を活用するには、サーバーサイドレンダリングを担当する Adobe I/O Runtime だけでなく、AEM にもコードをデプロイする必要があります。ほとんどのコードは同じですが、サーバー固有のタスクは異なります。
+SSR を使用するには、サーバーサイドレンダリングを担当するAEMとAdobe I/O Runtimeにコードをデプロイする必要があります。 ほとんどのコードは同じですが、サーバー固有のタスクは異なります。
 
 ## AEM の SPA 向け SSR {#ssr-for-spas-in-aem}
 
@@ -160,7 +160,7 @@ AEM で SSR を SPA と使用するために必要な[リモートコンテン�
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
-`RemoteContentRendererRequestHandlerServlet` を使用して、要求の設定をプログラムで作成できます。`DefaultRemoteContentRendererRequestHandlerImpl` では、デフォルトのリクエストハンドラーの実装が提供されており、コンテンツ構造内の場所をリモートエンドポイントにマップするために、複数の OSGi 設定を作成できます。
+`RemoteContentRendererRequestHandlerServlet` を使用して、要求の設定をプログラムで作成できます。`DefaultRemoteContentRendererRequestHandlerImpl`では、デフォルトのリクエストハンドラーの実装が提供されており、複数の OSGi 設定を作成して、コンテンツ構造内の場所をリモートエンドポイントにマッピングできます。
 
 カスタム要求ハンドラーを追加するには、`RemoteContentRendererRequestHandler` インターフェイスを実装します。`Constants.SERVICE_RANKING` コンポーネントプロパティは、100（`DefaultRemoteContentRendererRequestHandlerImpl` のランク）より大きい整数に設定してください。
 
@@ -194,4 +194,4 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 ### 要件 {#requirements}
 
-このサーブレットでは、Sling モデルエクスポーターを活用してコンポーネントデータをシリアライズします。デフォルトでは、`com.adobe.cq.export.json.ContainerExporter` および `com.adobe.cq.export.json.ComponentExporter` の両方が Sling モデルアダプターとしてサポートされています。必要に応じて、`RemoteContentRendererServlet` を使用して `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses` を実装するように要求を適合させる必要があるクラスを追加できます。追加のクラスは、`ComponentExporter` を拡張する必要があります。
+このサーブレットでは、Sling Model Exporter を使用してコンポーネントデータをシリアル化します。 デフォルトでは、`com.adobe.cq.export.json.ContainerExporter` および `com.adobe.cq.export.json.ComponentExporter` の両方が Sling モデルアダプターとしてサポートされています。必要に応じて、`RemoteContentRendererServlet` を使用して `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses` を実装するように要求を適合させる必要があるクラスを追加できます。追加のクラスは、`ComponentExporter` を拡張する必要があります。

@@ -2,9 +2,9 @@
 title: カスタムドメイン名の概要
 description: Cloud Manager の UI では、セルフサービス方式でカスタムドメインを追加して、サイトを独自のブランド名で識別することができます。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 1862ae2d0d60ac9ed89a4ba3da82dcf8f032ee65
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '768'
 ht-degree: 66%
 
 ---
@@ -40,7 +40,7 @@ AEM as a Cloud Serviceは、組み込みのコンテンツ配信ネットワー�
 * AEMが管理する CDN にインストールされるカスタムドメイン名（および証明書）は、Cloud Manager で管理されます。
 * 独自の CDN にインストールされているカスタムドメイン名（および証明書）は、その特定の CDN で管理されます。
 
-独自の CDN で管理するドメインは、Cloud Manager を通じてインストールする必要はありません。 X-Forwarded-Host を介してAEMで使用可能になり、Dispatcher で定義された vhosts と一致します。 [詳しくは、 CDN のドキュメントを参照してください。](/help/implementing/dispatcher/cdn.md)
+独自の CDN で管理されるドメインは、Cloud Manager を通じてインストールする必要はありません。 X-Forwarded-Host を介してAEMで使用可能になり、Dispatcher で定義された vhosts と一致します。 詳しくは、 [CDN ドキュメント](/help/implementing/dispatcher/cdn.md).
 
 1 つの環境で、AEMが管理する CDN に両方のドメインをインストールし、独自の CDN にインストールすることができます。
 

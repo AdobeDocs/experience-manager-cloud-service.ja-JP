@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 リリースのリリースノート。'
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 99%
+source-wordcount: '1352'
+ht-degree: 95%
 
 ---
 
@@ -46,19 +46,19 @@ ht-degree: 99%
 
 * リンク共有機能を使用して、共有アセットをダウンロードできます。このダウンロードには、非同期サービスが採用されており、大容量のダウンロードであっても、高速で中断のないダウンロードが可能になっています。詳しくは、「[アセットのダウンロード](/help/assets/download-assets-from-aem.md#link-share-download)」を参照してください。
 
-   ![インボックスをダウンロード](/help/assets/assets/download-inbox.png)
+  ![インボックスをダウンロード](/help/assets/assets/download-inbox.png)
 
 ### プレリリースチャネルで使用できる新機能 {#what-is-new-assets-prerelease}
 
 * メタデータスキーマは、フォルダーのプロパティに直接適用できます。
 
-   ![フォルダープロパティからメタデータスキーマを追加する](/help/assets/assets/metadata-schema-folder-properties.png)
+  ![フォルダープロパティからメタデータスキーマを追加する](/help/assets/assets/metadata-schema-folder-properties.png)
 
 * アセット一括取得ツールを使用すると、一括取得中にメタデータを追加できます。
 
 * ユーザーエクスペリエンスが改善され、フォルダー内に存在するアセットの数が表示されます。1 つのフォルダー内のアセットが 1000 個を超える場合、[!DNL Assets] には「1000+」と表示されます。
 
-   ![フォルダー内のアセット数がインターフェイスに表示されます](/help/assets/assets/browse-folder-number-of-assets.png)
+  ![フォルダー内のアセット数がインターフェイスに表示されます](/help/assets/assets/browse-folder-number-of-assets.png)
 
 ### [!DNL Assets] で修正されたバグ  {#assets-bugs-fixed}
 
@@ -108,7 +108,7 @@ AEM as a Cloud Service 2021.5.0 Cloud Manager のリリース日は 2021 年 5 �
 
 * パブリック API のリポジトリーエンドポイントに Git の URL が含まれるようになりました。
 
-* Cloud Manager ユーザーがダウンロードしたデプロイメントログは、失敗と成功シナリオに関する詳細が含まれるようになり、よりわかりやすくなりました。
+* Cloud Manager ユーザーがダウンロードしたデプロイメントログは、より洞察力に富み、エラーと成功シナリオに関する詳細が含まれています。
 
 * コードを Adobe Git にプッシュ中に発生していた断続的なエラーが解決されました。
 
@@ -146,7 +146,7 @@ AEM as a Cloud Service 2021.5.0 Cloud Manager のリリース日は 2021 年 5 �
 
 * ユーザーに Java 実行可能ファイルの実行権限がない場合、新しいログ文がクイックスタートのエラーログに追加されました。
 
-* 抽出を実行した CTT UI から移行セットを削除すると、その移行セットに関連付けられている `tmp` フォルダーが削除され、領域を節約できます。
+* 抽出が実行された CTT ユーザーインターフェイスから移行セットを削除した場合、 `tmp` その移行セットに関連付けられているフォルダが削除され、容量が節約されます。
 
 ### バグ修正 {#bug-fixes-ctt-latest}
 

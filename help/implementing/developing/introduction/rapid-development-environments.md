@@ -1,17 +1,17 @@
 ---
 title: 迅速な開発環境
-description: クラウド環境で迅速な開発反復処理を行うために、迅速な開発環境を活用する方法について説明します。
+description: クラウド環境で迅速な開発反復処理を行うための、高速開発環境の使用方法を説明します。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 5bfa5a1df940b8903acd08f4c3cb7443adb897d8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3325'
-ht-degree: 97%
+source-wordcount: '3317'
+ht-degree: 94%
 
 ---
 
 # 迅速な開発環境 {#rapid-development-environments}
 
-変更をデプロイするために、現在のクラウド開発環境では、CI／CD パイプラインと呼ばれる広範なコードセキュリティと品質ルールを採用したプロセスを使用する必要があります。 迅速かつ反復的な変更が必要な状況に対応するために、アドビは迅速な開発環境（RDE）を導入しました。
+変更をデプロイするには、現在のクラウド開発環境で、CI/CD パイプラインと呼ばれる広範なコードセキュリティと品質ルールを採用したプロセスを使用する必要があります。 迅速かつ反復的な変更が必要な状況に対応するために、アドビは迅速な開発環境（RDE）を導入しました。
 
 RDE を使用すると、デベロッパーは、ローカル開発環境での動作が証明済みの機能に要するテスト時間を最小限に抑え、変更を迅速にデプロイおよび確認できます。
 
@@ -26,7 +26,7 @@ RDE を使用すると、デベロッパーは、ローカル開発環境での�
 
 RDE は、コード、コンテンツ、Apache または Dispatcher の設定に使用できます。通常のクラウド開発環境とは異なり、デベロッパーはローカルのコマンドラインツールを使用して、ローカルで作成されたコードを RDE に同期できます。
 
-すべてのプログラムには RDE がプロビジョニングされます。サンドボックスアカウントの場合、数時間使用されなかった後に休止状態になります。
+すべてのプログラムには RDE がプロビジョニングされます。Sandbox アカウントの場合、数時間非使用の後で休止状態になります。
 
 作成時に、RDE は使用可能な最新の AEM バージョンに設定されます。Cloud Manager を使用して実行できる RDE のリセットは、RDE を循環させ、使用可能な最新の AEM バージョンに設定します。
 
@@ -50,7 +50,7 @@ Cloud Manager を使用してプログラムの RDE を作成するには、次�
 
    * 「**環境を追加**」オプションは「**環境**」タブでも使用できます。
 
-      ![「環境」タブ](/help/implementing/cloud-manager/assets/environments-tab.png)
+     ![「環境」タブ](/help/implementing/cloud-manager/assets/environments-tab.png)
 
    * 「**環境を追加**」オプションは、権限がない場合やライセンスされているリソースによっては、無効になっている場合があります。
 
@@ -128,8 +128,7 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
    >
    >`Warning: cloudmanager:list-programs is not a aio command.` エラーが表示された場合は、以下のコマンドを実行して [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) をインストールする必要があります。
    >
-   >
-   ```
+   >```
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
 
@@ -148,11 +147,11 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
 
 * 中間マイルストーンに達し、AEM as a Cloud Service SDK を使用してローカルで正常に検証された場合、コードは、メイン行にまだ含まれていない Git feature ブランチにコミットする必要があります。ただし、Git へのコミットはオプションです。「中間マイルストーン」を構成するものは、チームの習慣に応じて異なります。 例えば、数行の新しいコードや、半日の作業、サブ機能の完了といったものがあります。
 
-* RDE が別の機能で使用されていて、[デフォルトの状態にリセット](#reset-rde)したい場合は、RDE をリセットします。<!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->リセットには数分かかり、既存のコンテンツとコードはすべて削除されます。 RDE ステータスコマンドを使用すると、RDE の準備が完了したことを確認できます。RDE は、最新の AEM リリースバージョンで復活します。
+* RDE が別の機能で使用されていて、[デフォルトの状態にリセット](#reset-rde)したい場合は、RDE をリセットします。<!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->リセットには数分かかり、既存のコンテンツとコードがすべて削除されます。 RDE ステータスコマンドを使用すると、RDE の準備が完了したことを確認できます。RDE は、最新の AEM リリースバージョンで復活します。
 
-   >[!IMPORTANT]
-   >
-   > ステージング環境と実稼動環境が AEM リリースの自動更新を受信しておらず、最新の AEM リリースバージョンから大幅に遅れている場合は、RDE で実行されているコードが、ステージング環境と実稼動環境でのコードの機能と一致しない可能性があることに留意してください。その場合、実稼動環境にデプロイする前に、ステージングでコードのテストを徹底的に実行することが特に重要です。
+  >[!IMPORTANT]
+  >
+  > ステージング環境と実稼動環境が AEM リリースの自動更新を受信しておらず、最新の AEM リリースバージョンから大幅に遅れている場合は、RDE で実行されているコードが、ステージング環境と実稼動環境でのコードの機能と一致しない可能性があることに留意してください。その場合、実稼動環境にデプロイする前に、ステージングでコードのテストを徹底的に実行することが特に重要です。
 
 
 * RDE コマンドラインインターフェイスを使用して、ローカルコードを RDE に同期します。 オプションには、コンテンツパッケージ、特定のバンドル、OSGi 設定ファイル、コンテンツファイル、Apache／Dispatcher 設定の zip ファイルのインストールが含まれます。 リモートコンテンツパッケージの参照も可能です。 詳しくは、[RDE コマンドラインツール](#rde-cli-commands)の節を参照してください。 ステータスコマンドを使用すると、デプロイメントが成功したことを検証できます。必要に応じて、パッケージマネージャーを使用してコンテンツパッケージをインストールします。
@@ -185,11 +184,11 @@ RDE は、一度に 1 つのプロジェクトをサポートします。コー�
 
 * コマンドのリストを表示するには、次のように入力します。
 
-   `aio aem:rde`
+  `aio aem:rde`
 
 * コマンドの詳細なヘルプを表示するには、次のように入力します。
 
-   `aio aem rde <command> --help`
+  `aio aem rde <command> --help`
 
 ### RDE へのデプロイ {#deploying-to-rde}
 
@@ -216,7 +215,7 @@ RDE は、一度に 1 つのプロジェクトをサポートします。コー�
 
 デフォルトでは、アーティファクトはオーサー層とパブリッシュ層の両方にデプロイされますが、「-s」フラグを使用して特定の層をターゲットにすることができます。
 
-任意のAEMパッケージをデプロイできます ( コード、コンテンツ、または [コンテナパッケージ](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages) （「all」パッケージとも呼ばれます）。
+コードやコンテンツを含むパッケージ、[コンテナパッケージ](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages)（「all」パッケージとも呼ばれる）など、どの AEM パッケージもデプロイ可能です。
 
 >[!IMPORTANT]
 >
@@ -281,7 +280,7 @@ AEM プロジェクトの `dispatcher` モジュールから、以下の maven �
 
 >[!NOTE]
 >
->RDE は、「フレキシブルモード」の Dispatcher 設定をサポートしていますが、「レガシーモード」の Dispatcher 設定はサポートしていません。 詳しくは、 [dispatcher ドキュメント](/help/implementing/dispatcher/disp-overview.md#validation-debug) 」を参照してください。 また、 [フレキシブルモードへの移行](/help/implementing/dispatcher/validation-debug.md#migrating)まだおこなっていない場合は、をクリックします。
+>RDE は、「フレキシブルモード」の Dispatcher 設定をサポートしていますが、「レガシーモード」の Dispatcher 設定はサポートしていません。2 つのモードについて詳しくは、[Dispatcher ドキュメント](/help/implementing/dispatcher/disp-overview.md#validation-debug)を参照してください。また、[フレキシブルモードへの移行](/help/implementing/dispatcher/validation-debug.md#migrating)に関するドキュメントをまだ確認していない場合は、そちらも参照してください。
 
 デプロイメントが成功すると、次のような応答が生成されます。
 
@@ -352,7 +351,7 @@ CLI ツールを使用すると、RDE に以前にデプロイされた設定や
 
 例えば、`com.adobe.granite.demo.MyServlet.cfg.json` がインストールされている場合、`bsn` は `com.adobe.granite.demo.MyServlet` のみ（**cfg.json** サフィックスなし）になります。
 
-コンテンツパッケージまたはコンテンツファイルは削除対象外です。 削除するには、RDE をリセットする必要があります。これにより、デフォルトの状態に戻ります。
+コンテンツパッケージまたはコンテンツファイルは削除対象外です。 削除するには、RDE をリセットし、デフォルトの状態に戻す必要があります。
 
 詳しくは、以下の例を参照してください。
 
@@ -366,17 +365,17 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 ## リセット {#reset-rde}
 
-RDE をリセットすると、すべてのカスタムコード、設定およびコンテンツが、オーサーインスタンスとパブリッシュインスタンスの両方から削除されます。これは、例えば、RDE を使用して特定の機能をテストしていて、別の機能をテストするためにデフォルトの状態にリセットしたい場合に便利です。
+RDE をリセットすると、すべてのカスタムコード、設定およびコンテンツが、オーサーインスタンスとパブリッシュインスタンスの両方から削除されます。このリセットは、例えば、RDE を使用して特定の機能をテストし、別の機能をテストできるようにデフォルトの状態にリセットする場合に便利です。
 
 リセットすると、RDE が使用可能な最新の AEM バージョンに設定されます。
 
 <!-- Alexandru: hiding for now, please don't delete
 
-Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code will be deleted from the RDE.
+Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
 
 >[NOTE!]
 >
->You must be assigned the Cloud Manager Developer role in order to be able to use the reset feature. If not, a reset action will result in an error.
+>You must be assigned the Cloud Manager Developer role to use the reset feature. If not, a reset action results in an error.
 
 ### Reset the RDE via Command Line {#reset-the-rde-command-line}
 
@@ -400,7 +399,7 @@ This usually takes a few minutes. Use the [status command](#checking-rde-status)
 
    * または、**環境**&#x200B;カードの「**すべて表示**」ボタンをクリックして、「**環境**」タブに直接ジャンプします。
 
-      ![「すべて表示」オプション](/help/implementing/cloud-manager/assets/environment-showall.png)
+     ![「すべて表示」オプション](/help/implementing/cloud-manager/assets/environment-showall.png)
 
 1. **環境**&#x200B;ウィンドウが開いて、プログラムのすべての環境が一覧表示されます。
 
@@ -464,7 +463,7 @@ OSGi 設定を変更すると、ログレベルを設定できます。 詳し�
 
 ## RDE とクラウド開発環境の違いは何ですか？ {#how-are-rds-different-from-cloud-development-environments}
 
-RDE は多くの点でクラウド開発環境に似ていますが、コードをすばやく同期できるように、アーキテクチャ上の小さな違いが若干あります。 コードを RDE に取得するメカニズムが異なります。RDE の場合はローカル開発環境からコードを同期し、クラウド開発環境の場合は Cloud Manager を使用してコードをデプロイします。
+RDE はクラウド開発環境に似た多くの方法で用意されていますが、コードをすばやく同期できるように、アーキテクチャには若干の小さな違いがあります。 コードを RDE に取得するメカニズムが異なります。RDE の場合はローカル開発環境からコードを同期し、クラウド開発環境の場合は Cloud Manager を使用してコードをデプロイします。
 
 このような理由から、RDE 環境でコードを検証した後、実稼動以外のパイプラインを使用してコードをクラウド開発環境にデプロイすることをお勧めします。最後に、実稼動パイプラインでデプロイする前に、コードをテストします。
 

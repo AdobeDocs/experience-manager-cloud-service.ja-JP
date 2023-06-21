@@ -3,10 +3,10 @@ title: 実稼動以外のパイプラインの設定
 description: 実稼動環境にデプロイする前にコードの品質をテストするための実稼動以外のパイプラインを設定する方法を説明します。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 5b4366c1e8791ffca4b5ad47f94de44f6df2cd0b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1369'
-ht-degree: 100%
+source-wordcount: '1362'
+ht-degree: 94%
 
 ---
 
@@ -55,7 +55,7 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
 1. **デプロイメントパイプライン**&#x200B;を作成する場合、**重要な指標のエラー動作**&#x200B;も定義する必要があります。
 
    * **毎回確認する** - デフォルトの設定。重要なエラーが検出されたときに手動で介入する必要があります。
-   * **直ちに失敗** - 重要なエラーが検出されると、パイプラインはキャンセルされます。このオプションでは、基本的に、各エラーをユーザーが手動で拒否する状況をエミュレートします。
+   * **すぐに失敗**  — 重要なエラーが発生すると、常にパイプラインはキャンセルされます。 このオプションでは、基本的に、各エラーをユーザーが手動で拒否する状況をエミュレートします。
    * **直ちに続行** - 重要なエラーが検出されても、パイプラインは自動的に続行されます。このオプションでは、基本的に、各エラーをユーザーが手動で承認する状況をエミュレートします。
 
 1. 「**続行**」をクリックします。
@@ -130,11 +130,11 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
 
 ### Web 階層設定 {#web-tier-config}
 
-Web 階層設定パイプラインは HTTPD／Dispatcher 設定をデプロイします。このタイプのパイプラインについて詳しくは、[CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline)ドキュメントを参照してください。
+Web 階層設定パイプラインは HTTPD／Dispatcher 設定をデプロイします。このタイプのパイプラインについて詳しくは、[CI／CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline)のドキュメントを参照してください。
 
 >[!NOTE]
 >
->選択した環境に web 階層コードパイプラインが既に存在する場合、この選択は無効になります。
+>選択した環境に Web 層コードパイプラインが既に存在する場合、この選択は無効になります。
 
 Web 階層コードの実稼動以外のパイプラインの設定を完了するには、次の手順に従います。
 
@@ -166,7 +166,7 @@ Web 階層コードの実稼動以外のパイプラインの設定を完了す�
 
 フロントエンドパイプラインを使用すると、フロントエンド開発者の作業の独立性が高まるほか、開発プロセスを速めることができます。
 
-このプロセスの可能性を最大限に引き出すために知っておくべきいくつかの考慮事項と、このプロセスがどのように機能するかについては、[フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)のドキュメントを参照してください。
+ドキュメントを参照 [フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) このプロセスの仕組みと、このプロセスを最大限に活用するために考慮すべきいくつかの検討事項について説明します。
 
 ## Dispatcher パッケージのスキップ {#skip-dispatcher-packages}
 

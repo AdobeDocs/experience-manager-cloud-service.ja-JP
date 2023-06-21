@@ -4,10 +4,10 @@ description: Dispatcher ツールを使用した検証とデバッグ（レガ�
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 33dfe795140f2780f7f2cf876f3ebc725310214d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2345'
-ht-degree: 100%
+source-wordcount: '2337'
+ht-degree: 94%
 
 ---
 
@@ -81,7 +81,7 @@ Cloud Manager 2021.7.0 リリースの時点では、新しい Cloud Manager プ
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-これらのファイルは 1 つ以上持つことができます。ファイルには、ホスト名に一致する `<VirtualHost>` エントリが含まれ、Apache が異なるルールで各ドメイントラフィックを扱うことができます。ファイルは `available_vhosts` ディレクトリ内に作成され、`enabled_vhosts` ディレクトリ内のシンボリックリンクで有効になります。`.vhost` ファイルから、書き換えや変数などその他のファイルがインクルードされます。
+これらのファイルは 1 つ以上持つことができます。ファイルには、ホスト名に一致する `<VirtualHost>` エントリが含まれ、Apache が異なるルールで各ドメイントラフィックを扱うことができます。ファイルは `available_vhosts` ディレクトリ内に作成され、`enabled_vhosts` ディレクトリ内のシンボリックリンクで有効になります。次の `.vhost` ファイル、書き換え、変数などのその他のファイルが含まれます。
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -101,7 +101,7 @@ Cloud Manager 2021.7.0 リリースの時点では、新しい Cloud Manager プ
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-これらのファイルは 1 つ以上持つことができます。ファイルにはホスト名と一致するファームが含まれ、Dispatcher モジュールに異なるルールで各ファームを処理することを可能にします。ファイルは `available_farms` ディレクトリ内に作成され、`enabled_farms` ディレクトリ内のシンボリックリンクで有効になります。`.farm` ファイルから、フィルター、キャッシュルールなどその他のファイルがインクルードされます。
+これらのファイルは 1 つ以上持つことができます。ファイルにはホスト名と一致するファームが含まれ、Dispatcher モジュールに異なるルールで各ファームを処理することを可能にします。ファイルは `available_farms` ディレクトリ内に作成され、`enabled_farms` ディレクトリ内のシンボリックリンクで有効になります。次の `.farm` ファイル、フィルター、キャッシュルールなどのその他のファイルが含まれます。
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -218,10 +218,10 @@ Phase 3 finished
 このスクリプトは次の処理を行います。
 
 1. バリデーターを実行します。設定が有効でない場合、スクリプトは失敗します。
-2. Apache httpd を起動できるように、`httpd -t` コマンドを実行して、構文が正しいかどうかをテストします。テストが成功した場合は、設定をデプロイする準備が整っています。
+2. 実行される `httpd -t` コマンドを使用して、apache httpd が起動できるように構文が正しいかどうかをテストします。 テストが成功した場合は、設定をデプロイする準備が整っています。
 3. 「[ファイル構造](##legacy-mode-file-structure)」節で説明されているようにで不変であることが意図されている、Dispatcher SDK 設定ファイルのサブセットが変更されていないことを確認します。これは、Dispatcher ツールバージョン 2.0.36 を含む AEM SDK バージョン v2021.1.4738 で導入された新しいチェックです。この更新前には、これらの不変ファイルのローカル SDK での変更がクラウド環境にも適用されると誤って想定されていました。
 
-Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも実行され、エラーは Cloud Manager の `Build Images step failure` ログに記録されます。
+Cloud Manager のデプロイメント中に、 `httpd -t` 構文チェックも実行され、エラーが Cloud Manager に含まれます。 `Build Images step failure` ログ。
 
 ### フェーズ 1 {#first-phase}
 
@@ -348,14 +348,14 @@ Cloud manager validator 2.0.xx
 
 ### フェーズ 2 {#second-phase}
 
-このフェーズでは、イメージで Docker を起動して Apache 構文をチェックします。Docker をローカルにインストールする必要がありますが、AEM を実行する必要はありません。
+このフェーズでは、イメージで Docker を起動して Apache 構文をチェックします。Docker はローカルにインストールする必要がありますが、AEMを実行する必要はありません。
 
 >[!NOTE]
 >Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。
 
 このフェーズは、`validator full -d out src/dispatcher` を使用して独立して実行することもできます。このコマンドは、コマンド `bin/docker_run.sh out host.docker.internal:4503 8080` に必要な out ディレクトリを生成します。
 
-Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも実行され、エラーは Cloud Manager のイメージのビルドステップのエラーログに記録されます。
+Cloud Manager のデプロイメント中に、 `httpd -t` 構文チェックが実行され、「 Cloud Manager ビルドイメージ」のステップの失敗ログにエラーが含まれます。
 
 ### フェーズ 3 {#third-phase}
 

@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: aa7b9daba4242965baf20a77af356952cd7bc279
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 100%
+source-wordcount: '1092'
+ht-degree: 92%
 
 ---
 
@@ -28,7 +28,7 @@ AEM Commerce as a Cloud Service のオンボーディングは、次の 2 つの
 
 最初のオンボーディング手順はアドビが行います。価格とプロビジョニングの詳細については、セールス担当者にお問い合わせください。
 
-CIF アドオンのプロビジョニングが完了すると、既存の Cloud Manager プログラムに適用されます。Cloud Manager プログラムがない場合は、新しく作成する必要があります。詳しくは、「[プログラムの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?lang=ja)」を参照してください。
+CIF アドオンのプロビジョニングが完了すると、既存の Cloud Manager プログラムに適用されます。 Cloud Manager プログラムがない場合は、新しく作成する必要があります。詳しくは、「[プログラムの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?lang=ja)」を参照してください。
 
 2 つ目の手順は、各 AEM as a Cloud Service 環境のセルフサービスです。CIF アドオンの初期プロビジョニングの後で、いくつかの追加の設定を行う必要があります。
 
@@ -41,7 +41,7 @@ CIF アドオンと [AEM CIF コアコンポーネント](https://github.com/ado
 - AEM CIF コアコンポーネントと顧客プロジェクトコンポーネントで使用される、共有可能な共通の GraphQl クライアントを介した、AEM からコマースバックエンドへの GraphQL 呼び出し。
 - `/api/graphql` で変数が使用可能に設定された各 AEM 環境への GraphQL プロキシ URL の設定。これは、AEM Commerce オーサリングツール（CIF アドオン）および CIF クライアントサイドコンポーネントで使用されます。
 
-AEM as a Cloud Service 環境ごとに異なる GraphQL エンドポイント URL を使用できます。この方法で、プロジェクトは AEM ステージング環境をコマースステージングシステムに、また、AEM 実稼働環境をコマース実稼働システムに接続できます。GraphQL エンドポイントは、公開されている必要があります。プライベート VPN またはローカル接続はサポートされていません。オプションで、認証が必要な追加の CIF 機能を使用するために認証ヘッダーを指定できます。
+AEM as a Cloud Service 環境ごとに異なる GraphQL エンドポイント URL を使用できます。この方法で、プロジェクトは AEM ステージング環境をコマースステージングシステムに、また、AEM 実稼働環境をコマース実稼働システムに接続できます。GraphQL エンドポイントは、公開されている必要があります。プライベート VPN またはローカル接続はサポートされていません。オプションで、認証を必要とする追加の CIF 機能を使用するために認証ヘッダーを指定できます。
 
 Adobe Commerce Enterprise／Cloud の場合のみ、CIF アドオンはオプションで AEM 作成者向けのステージング済みカタログデータの使用をサポートします。これには、Authorization ヘッダーを設定する必要があります。このヘッダーは、セキュリティ上の理由から、AEM オーサーインスタンスでのみ使用できます。AEM パブリッシュインスタンスでは、ステージング済みデータを表示できません。
 
@@ -51,7 +51,7 @@ Adobe Commerce Enterprise／Cloud の場合のみ、CIF アドオンはオプシ
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
-これは、環境の詳細ページのダイアログを使用して行うことができます。コマース対応プログラムでこのページを表示すると、エンドポイントが設定されていない場合は、ボタンが表示されます。
+これは、環境の詳細ページのダイアログを使用して行うことができます。コマース対応プログラムでこのページを表示すると、エンドポイントが現在設定されていない場合は、ボタンが表示されます。
 
 ![CM 環境情報](/help/commerce-cloud/assets/commerce-cmui.png)
 
@@ -59,7 +59,7 @@ Adobe Commerce Enterprise／Cloud の場合のみ、CIF アドオンはオプシ
 
 ![CM コマースエンドポイント](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-エンドポイント（およびオプションでステージング済みカタログのサポートの Authorization ヘッダー）が設定されると、エンドポイントが詳細ページに表示されます。編集アイコンをクリックすると同じダイアログが開き、必要に応じてエンドポイントを変更できます。
+エンドポイントと、オプションでステージング済みカタログサポートの認証ヘッダーを設定すると、エンドポイントが詳細ページに表示されます。 編集アイコンをクリックすると同じダイアログが開き、必要に応じてエンドポイントを変更できます。
 
 ![CM 環境情報](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
@@ -120,17 +120,17 @@ CIF アドオンと [CIF コアコンポーネント](https://github.com/adobe/a
 - GraphQL クライアント - コマースバックエンド通信用に設定済みの GraphQL クライアントを選択します。これは通常、デフォルトのままです。
 - ストア表示 - ストア表示の識別子。空の場合は、デフォルトのストア表示が使用されます。
 - GraphQL プロキシパス - AEM の GraphQL プロキシが、コマースバックエンドの GraphQL エンドポイントへのリクエストをプロキシするために使用する URL パス。
-   >[!NOTE]
-   >
-   > ほとんどの設定で、デフォルト値 `/api/graphql` は変更できません。この設定を変更するのは、指定された GraphQL プロキシを使用しない高度な設定でのみです。
+  >[!NOTE]
+  >
+  > ほとんどの設定で、デフォルト値 `/api/graphql` は変更できません。この設定を変更するのは、指定された GraphQL プロキシを使用しない高度な設定でのみです。
 - カタログ UID のサポートを有効にする - コマースバックエンドの GraphQL 呼び出しで、ID ではなく UID のサポートを有効にします。
-   >[!NOTE]
-   >
-   > UID のサポートは、Adobe Commerce 2.4.2 で導入されました。コマースバックエンドがバージョン 2.4.2 以降の GraphQL スキーマをサポートしている場合にのみ有効にします。
+  >[!NOTE]
+  >
+  > UID のサポートは、Adobe Commerce 2.4.2 で導入されました。コマースバックエンドがバージョン 2.4.2 以降の GraphQL スキーマをサポートしている場合にのみ有効にします。
 - カタログのルートカテゴリ識別子 - ストアカタログルートの識別子（UID または ID）
-   >[!CAUTION]
-   >
-   > CIF コアコンポーネントバージョン 2.0.0 以降では、`id` のサポートが削除されて `uid` に置き換えられました。プロジェクトで CIF コアコンポーネントバージョン 2.0.0 を使用している場合は、カタログ UID のサポートを有効にし、有効なカテゴリ UID を「カタログルートカテゴリ識別子」として使用する必要があります。
+  >[!CAUTION]
+  >
+  > CIF コアコンポーネントバージョン 2.0.0 以降では、`id` のサポートが削除されて `uid` に置き換えられました。プロジェクトで CIF コアコンポーネントバージョン 2.0.0 を使用している場合は、カタログ UID のサポートを有効にし、有効なカテゴリ UID を「カタログルートカテゴリ識別子」として使用する必要があります。
 
 上記の設定は参照用です。プロジェクトは、独自の設定を行う必要があります。
 

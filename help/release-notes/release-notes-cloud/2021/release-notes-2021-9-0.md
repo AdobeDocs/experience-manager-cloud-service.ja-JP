@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 リリースのリリースノート。'
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 99%
+source-wordcount: '1570'
+ht-degree: 97%
 
 ---
 
@@ -42,8 +42,8 @@ ht-degree: 99%
 
 * 検索結果に表示されるアセットを、ユーザーが列表示およびカード表示で並べ替えることができるようになりました。並べ替えは、「名前」、「作成日」、「変更日」、「なし」の各列に対して機能します。
 
-   ![[!DNL Assets] での検索結果の並べ替え（列表示とカード表示）](/help/assets/assets/sort-searched-assets.png)
-   *図：[!DNL Assets] での検索結果の並べ替え（列表示とカード表示）*
+  ![[!DNL Assets] での検索結果の並べ替え（列表示とカード表示）](/help/assets/assets/sort-searched-assets.png)
+  *図：[!DNL Assets] での検索結果の並べ替え（列表示とカード表示）*
 
 * アセットマイクロサービスを使用してプログラムで処理を呼び出すために、新しい API が導入されています。開発者は、フォルダー内の 1 つ以上の特定のアセットに、既存のフォルダーレベルの処理プロファイルを適用できるようになりました。処理プロファイルは、カスタムメタデータプロパティの更新に基づいて適用されます。[[!DNL Experience Manager] API リファレンス](https://www.adobe.io/experience-manager/reference-materials/) の `AssetProcessor` を参照してください。以前と同様に、 [ユーザーインターフェイスからアセットマイクロサービスを使用](/help/assets/asset-microservices-configure-and-use.md) できます。
 
@@ -91,11 +91,11 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * サイトエディターの新しい「関連するコマースコンテンツ」タブでは、現在のコンテキストに関係のある AEM 製品コンテンツにすばやくアクセスできるので、作成者の効率が向上します。
 
-   ![関連するコマースコンテンツ](/help/assets/CIF/associated-commerce-content.png)
+  ![関連するコマースコンテンツ](/help/assets/CIF/associated-commerce-content.png)
 
 * 製品ピッカー UI の改善により、ユーザーエクスペリエンス、効率および複雑な製品カタログのサポートが向上しました。
 
-   ![新しい製品ピッカー](/help/assets/CIF/product-picker.png)
+  ![新しい製品ピッカー](/help/assets/CIF/product-picker.png)
 
 * ナビゲーションコンポーネントの「include_in_menu」プロパティに従います
 
@@ -145,7 +145,7 @@ Cloud Manager API を使用して高度なネットワーク機能をセルフ�
 
 **インデックスの最適化**
 
-検索クエリとインデックス作成のパフォーマンスを向上させるために、このリリース以降、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、フルテキストインデックス lucene-2 は標準では使用されなくなりました。AEM のお客様の要件に従って AEM 環境でこのフルテキストインデックスを削除するために、アドビのエンジニアリングチームは、問題が発生する前にお客様と個別に協力して、Lucene フルテキストインデックスの正常かつ持続可能な削除に対応しています。詳しくは、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [ドキュメント](/help/operations/indexing.md#index-optimizations) を参照してください。また、ご質問がある場合は、アドビサポートにお問い合わせください。
+検索クエリとインデックス作成のパフォーマンスを向上させるために、このリリース以降、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、フルテキストインデックス lucene-2 は標準では使用されなくなりました。AEMのお客様に合わせてAEM環境でこのフルテキストインデックスを削除するため、Adobeエンジニアリングは、Lucene のフルテキストインデックスを柔軟かつ持続可能に削除するために、お客様と個別かつ積極的に連携します。 詳しくは、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [ドキュメント](/help/operations/indexing.md#index-optimizations) を参照してください。また、ご質問がある場合は、アドビサポートにお問い合わせください。
 
 ## Cloud Manager {#cloud-manager}
 

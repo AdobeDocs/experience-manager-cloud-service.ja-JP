@@ -4,10 +4,10 @@ seo-title: Manage [!DNL AEM Forms] metadata
 description: メタデータを使用すると、アセットの分類および編成を容易に行うことができ、特定のアセットを検索しやすくなります。
 seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 76%
+source-wordcount: '1658'
+ht-degree: 75%
 
 ---
 
@@ -178,9 +178,9 @@ ht-degree: 76%
 
    * クイックアクションで、**[!UICONTROL プロパティ]** ![プロパティ](assets/Smock_Info_18_N.svg) アイコンをクリックします。
 
-      >[!NOTE]
-      >
-      >クイックアクションは、マウスのカーソルを合わせたときにサムネール上に表示されるアクション項目です。
+     >[!NOTE]
+     >
+     >クイックアクションは、マウスのカーソルを合わせたときにサムネール上に表示されるアクション項目です。
 
    * フォームを選択し、ツールバーに表示される&#x200B;**[!UICONTROL プロパティ]** ![プロパティ](assets/Smock_Info_18_N.svg) アイコンをクリックします。
    * 選択モードではない場合にフォームのサムネールをクリックして、フォーム詳細ページに移動します。ここで、右上にある ![プロパティ](assets/Smock_Info_18_N.svg) 目のアイコンをクリックして、その下にあるリストで「プロパティ」をクリックします。
@@ -234,7 +234,6 @@ ht-degree: 76%
 >* 新しい画像がアップロードまたは生成されると、サムネールはこの画像に置き換えられ、以前の画像にリセットすることはできません。
 >
 
-
 ## カスタムメタデータの追加 {#add-custom-metadata}
 
 初期設定の状態で提供されているメタデータとは別に、[!DNL AEM Forms] は新規のカスタムメタデータをサポートします。
@@ -284,8 +283,8 @@ ht-degree: 76%
 
 1. ドラッグしたコンポーネントをクリックします。右のパネルに開いた「設定」タブで、次のフィールドに情報を入力します。
 
-   1. スキーマに配置されたフィールドの上に表示される名前として使用するフィールドラベルを指定します ( 例：部門 )
-   1. 「プロパティにマッピング」フィールドの下に、事前入力された値が表示されます **&#39;./jcr:content/metadata/default&#39;**. ‘**default**’ を、必要なプロパティ名に変更します。これは、crx リポジトリーにプロパティを保存するために使用されます（例えば、&#39;./jcr:content/metadata/department&#39;）。
+   1. スキーマに配置されたフィールドの上に表示名として使用するフィールドラベルを指定します ( 例：部門 )
+   1. 「プロパティにマッピング」フィールドの下に、事前入力された値が表示されます **&#39;./jcr:content/metadata/default&#39;**. &#39;**デフォルト**&#39;を目的のプロパティ名に追加します。この名前は、crx リポジトリにプロパティを保存するために使用されます ( 例：&#39;./jcr:content/metadata/department&#39;）。
 
       >[!NOTE]
       >

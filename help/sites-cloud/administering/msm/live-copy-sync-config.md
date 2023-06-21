@@ -4,9 +4,9 @@ description: 使用できる強力なライブコピー同期オプションと�
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2337'
+source-wordcount: '2335'
 ht-degree: 90%
 
 ---
@@ -69,7 +69,7 @@ AEM に標準で用意されている同期アクションの一覧を次の表�
 | `contentDelete` | ソースに存在しないライブコピーのノードを削除します。[**CQ MSM Content Delete Action** サービスを設定](#excluding-properties-and-node-types-from-synchronization)して、除外するノードタイプ、段落項目、ページプロパティを指定してください。 |  |
 | `contentUpdate` | ソースからの変更を使用してライブコピーのコンテンツを更新します。[**CQ MSM Content Update Action** サービスを設定](#excluding-properties-and-node-types-from-synchronization)して、除外するノードタイプ、段落項目、ページプロパティを指定してください。 |  |
 | `editProperties` | ライブコピーのプロパティを編集します。編集するプロパティとその値は `editMap` プロパティで指定します。`editMap` プロパティの値は次の形式にしてください。<br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` と `new_value` は正規表現で、`n` は増分される整数です。<br>例えば、`editMap` の値が <br>`sling:resourceType#/(contentpage`‖`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br> の場合を考えてみましょう。この場合は、ライブコピーノードのプロパティは次のように編集されます。<br>`contentpage` または `homepage` に設定されている `sling:resourceType` プロパティは `mobilecontentpage` に設定されます。<br>`contentpage` に設定されている `cq:template` プロパティは `mobilecontentpage` に設定されます。 | `editMap: (String)` でプロパティ、現在の値、新しい値を指定します。詳しくは、説明を参照してください。 |
-| `notify` | ページがロールアウトされたページイベントを送信します。通知が送信されるようにするには、最初にロールアウトイベントを購読する必要があります。 |  |
+| `notify` | ページがロールアウトされたページイベントを送信します。通知を受け取るには、まずロールアウトイベントをサブスクライブする必要があります。 |  |
 | `orderChildren` | ブループリントの順序に基づいて、子ノードの順序を決定します。 |  |
 | `referencesUpdate` | ライブコピー上の参照を更新します。<br>ライブコピーページ内のパスのうち、ブループリント内のリソースを指すものを検索します。パスが見つかったら、ライブコピー内の関連リソースを指すようにそのパスを更新します。ブループリント外のターゲットを持つ参照は変更されません。<br>[**CQ MSM References Update Action** サービスを設定](#excluding-properties-and-node-types-from-synchronization)して、除外するノードタイプ、段落項目、ページプロパティを指定してください。 |  |
 | `targetVersion` | ライブコピーのバージョンを作成します。<br>このアクションは、ロールアウト設定に含まれる唯一の同期アクションである必要があります。 |  |

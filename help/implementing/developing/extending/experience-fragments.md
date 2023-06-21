@@ -2,10 +2,10 @@
 title: エクスペリエンスフラグメント 概要
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントの拡張
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 5968554ec221b1fe9969b131ccf0b08ffb7f6494
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1651'
-ht-degree: 95%
+source-wordcount: '1648'
+ht-degree: 91%
 
 ---
 
@@ -85,8 +85,7 @@ HTML レンディションは、Sling Rewriter パイプラインを使用して
 
    1. テンプレートの名前は次の文字列で始まる必要があります。
       `experience-fragments`
-これにより、ユーザーは /content/experience-fragments にエクスペリエンスフラグメントを作成できます。 
-このフォルダーの `cq:allowedTemplates` プロパティには、`experience-fragment` で始まる名前の付いたすべてのテンプレートが含まれています。ユーザーは、このプロパティを更新して、独自の命名方式やテンプレート場所を取り入れることができます。
+これにより、ユーザーは /content/experience-fragments にエクスペリエンスフラグメントを作成できます。このフォルダーの `cq:allowedTemplates` プロパティには、`experience-fragment` で始まる名前の付いたすべてのテンプレートが含まれています。ユーザーは、このプロパティを更新して、独自の命名方式やテンプレート場所を取り入れることができます。
 
 1. [使用可能なテンプレート](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder)はエクスペリエンスフラグメントコンソールで設定できます。
 
@@ -160,7 +159,7 @@ HTML ページを生成すると、Sling Rewriter パイプラインは出力に
    >
    >ほとんどの場合、HTML 内の内部リンクは相対リンクですが、カスタムコンポーネントの HTML で完全な URL が指定されている場合もあります。デフォルトでは、AEM はこれらの完全な URL を無視し、変更しません。
 
-   公開済みのインスタンス上にある公開 URL であるかのように URL を再作成するために、これらの属性のリンクを AEM Link Externalizer `publishLink()` に通します。
+   これらの属性のリンクは、AEM Link Externalizer を通じて実行されます `publishLink()` 公開済みのインスタンス上にあるかのように URL を再作成し、公開済みの状態にします。
 
 そのまま使用できる標準実装を使用する場合、エクスペリエンスフラグメントから Target オファーを生成して Adobe Target に書き出すには、上記のプロセスで十分です。しかし、このプロセスでは対応していない使用例もいくつかあります。例えば、次のような場合です。
 
@@ -201,7 +200,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 このインターフェイスを使用するには、まず、Link Rewriter Provider インターフェイスを実装する新しいサービスコンポーネントを含んだバンドルを作成する必要があります。
 
-このサービスは、様々なリンクにアクセスできるように、エクスペリエンスフラグメントの「Adobe Target に書き出し」機能でのリンク書き換えにプラグインするために使用されます。
+このサービスは、様々なリンクにアクセスできるように、エクスペリエンスフラグメントの「Adobe Target に書き出し」機能の書き換えにプラグインするために使用されます。
 
 例えば、`ComponentService` の場合は次のようになります。
 
@@ -266,7 +265,7 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 * `href` 属性のみ
 
 * 特定のエクスペリエンスフラグメントの場合：
-   `/content/experience-fragment/master`
+  `/content/experience-fragment/master`
 
 「Adobe Target に書き出し」システムに通す他のあらゆるエクスペリエンスフラグメントは無視され、本サービスに実装される変更の影響を受けません。
 
@@ -279,7 +278,6 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 このメソッドは入力として次のパラメーターを受け取ります。
 
 * `link`：
- 
 現在処理中のリンクの `String` 表現です。これは通常、オーサーインスタンス上のリソースを指す相対 URL です。
 
 * `tag`：

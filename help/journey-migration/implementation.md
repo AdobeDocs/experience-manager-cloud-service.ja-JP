@@ -2,10 +2,10 @@
 title: 実装段階
 description: クラウドに移行するためのコードとコンテンツの準備が整っていることの確認
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: fedaa9b8a7baf707c71acd0535ad890254b6793a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2353'
-ht-degree: 99%
+source-wordcount: '2337'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 99%
 
 * コードを AEM as a Cloud Service にデプロイするために使用する、AEM の継続的インテグレーションと継続的デリバリーのフレームワークである Cloud Manager を紹介します。
 * コンテンツ転送ツールについて詳しく説明します。
-* AEM as a Cloud Service のコードを最新化するために使用する必要がある、コードリファクタリングツールについて説明します。
+* AEM as a Cloud Serviceのコードを最新化できるように、使用する必要があるコードリファクタリングツールについて説明します。
 
 ## Cloud Manager の使用 {#using-cloud-manager}
 
@@ -49,7 +49,7 @@ Cloud Service への移行の正確な手順は、購入したシステムと準
 
 ![画像](/help/journey-migration/assets/exec-image1.png)
 
-以下の章では、これを実現するために必要なツールの詳細を説明します。
+以下の章でこれを実現できるよう、使用する必要のあるツールの詳細を説明します。
 
 ## コンテンツの移行 {#content-migration}
 
@@ -67,10 +67,10 @@ Cloud Service への移行の正確な手順は、購入したシステムと準
 
 Cloud Services と互換性を持たせるために、既存の機能のリファクタリングを開始します。
 
-これを行うには、コードのリファクタリングを開始するために必要な、基本的なツールの詳細を説明したドキュメントを確認する必要があります。
+まず、基本的なツールの詳細を説明するドキュメントを見て、コードのリファクタリングを開始します。
 
 
-* 計画中は、AEM as a Cloud Service との互換性を保つためにリファクタリングが必要な領域のリストを用意することをお勧めします。Cloud Service のコードをリファクタリングして最適化する方法について詳しくは、 [開発ガイドライン](/help/implementing/developing/introduction/development-guidelines.md) を確認してください。
+* 計画中は、AEM as a Cloud Serviceとの互換性を保つためにリファクタリングが必要な領域のリストを用意することをお勧めします。 Cloud Service のコードをリファクタリングして最適化する方法について詳しくは、 [開発ガイドライン](/help/implementing/developing/introduction/development-guidelines.md) を確認してください。
 * AEM as a Cloud Service で [設定を管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=ja#what-is-a-configuration) する方法を確認してください。
 * [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ja) をダウンロードして、ローカル開発環境を設定する方法を確認してください。
 * 最後に、[AEM as a Cloud Service Java API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) について詳しく確認してください。
@@ -79,11 +79,11 @@ Cloud Services と互換性を持たせるために、既存の機能のリフ�
 
 * このビデオを視聴すると、Dispatcher SDK をローカルにインストールする方法を理解できます。
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30601)
+  >[!VIDEO](https://video.tv.adobe.com/v/30601)
 
 * このビデオを視聴すると、Dispatcher SDK の設定方法を理解できます。
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30602)
+  >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 ### 発想の転換 {#a-change-in-mindset}
 
@@ -163,7 +163,7 @@ Cloud Manager パイプラインは、ステージング環境に対するテス
 
 <!-- Alexandru: hiding this for now
 
-One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, since it will be added to the overall extraction timeline and it may not be required to run it during top-ups.
+One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, because it is added to the overall extraction timeline and it may not be required to run it during top-ups.
 
 -->
 
@@ -177,8 +177,8 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 | 移行の反復 | 開始日 | 推定終了日 | 依存関係 | 推定期間（日数） | 追加の詳細／作業項目 |
 |---|---|---|---|---|---|
-| PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |  |  |  |  |  |
-| PRDCLONE-PUBLISH-TOPUP-CSSTAGE-AUTHOR |  |  |  |  |  |
+| PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |   |   |   |   |   |
+| PRDCLONE-PUBLISH-TOPUP-CSSTAGE-AUTHOR |   |   |   |   |   |
 
 上記の表からわかるように、特定の命名形式に従って移行の反復を識別すると便利です。例：ソース AEM 環境の場合は **PRDCLONE**、AEM as a Cloud Service 環境の場合は **AUTHOR/PUBLISH**、AEM as a Cloud Service インスタンスの場合は **CSSTAGE-AUTHOR** などです。
 
@@ -209,7 +209,7 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 | ソース（環境／インスタンス／URL） | 移行先（環境／インスタンス／URL） | 移行セット名、タイプ（初期または追加） | 移行セットのサイズ（MB） | ユーザーマッピング（はい / いいえ） | 抽出期間（開始、終了、所要時間） | 取り込み時間（開始、終了、所要時間） | 問題 / 解決策 / 詳細 |
 |---|---|---|---|---|---|---|---|
-|  |  |  |  |  |  |  |  |
+|   |   |   |   |   |   |   |   |
 
 ## コンテンツ移行の戦略とタイムライン {#content-strategyand-timeline}
 
@@ -241,7 +241,7 @@ One more important datapoint is the amount of time it takes to complete the [use
    * 同じネットワークゾーンにある
    * ユーザーやグループなどの実稼動コンテンツを提供
    * クローンの作成と公開 - クラスターまたは公開ファームの場合は、それぞれ 1 つのノード
-* 次のことができるように、移行するコンテンツのサブセットを選択します。
+* 移行されるコンテンツのサブセットを選択し、次の操作を実行します。
    * 使用可能なすべてのコンテンツタイプの組み合わせです
    * すべてのユーザーとグループを含む
 * コンテンツの 25% または最大 1 TB のコンテンツのいずれか小さい方を含みます。

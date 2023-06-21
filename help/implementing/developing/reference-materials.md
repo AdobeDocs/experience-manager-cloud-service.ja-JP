@@ -1,17 +1,17 @@
 ---
 title: API リファレンス資料
-description: AEM には、デジタルエクスペリエンスプロジェクトに活用できる広範で強力な API が用意されています。
+description: AEMには、デジタルエクスペリエンスプロジェクトに使用できる、広範で強力な API が用意されています。
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
 # API リファレンス資料 {#api-reference-materials}
 
-Adobe Experience Manager（AEM）では、アプリケーション開発および AEM 拡張用の API を多数提供しています。AEM は、様々なオープンソーステクノロジーを基盤として構築されており、それらのテクノロジーも利用できます。
+Adobe Experience Manager（AEM）では、アプリケーション開発および AEM 拡張用の API を多数提供しています。AEMは、多くのオープンソーステクノロジーをベースに構築されており、これを使用することもできます。
 
 ## AEM コア API {#core-aem-apis}
 

@@ -9,10 +9,10 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: 26f697dab03e0a3387669304b7f7f14dc2182a6d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3483'
-ht-degree: 100%
+source-wordcount: '3481'
+ht-degree: 99%
 
 ---
 
@@ -89,7 +89,7 @@ Image Server ページでは、Image Server から画像を配信するための
 | **[!UICONTROL 返信画像のサイズ制限]** | 必須。<br>新しい Dynamic Media アカウントの場合のみ、デフォルトのサイズ制限は、**[!UICONTROL 画像サービング]**&#x200B;と&#x200B;**[!UICONTROL テスト画像サービング]**&#x200B;の両方で、幅：`3000`と高さ：`3000`に自動的に設定されます。<br>クライアントに返される返信画像の最大の幅と高さを指定します。要求によって返信画像の幅、高さ、またはその両方がこの設定よりも大きくなる場合、サーバーはエラーを返します。<br>『Dynamic Media ビューアリファレンスガイド』の [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=ja) パラメーターも参照してください。 |
 | **[!UICONTROL リクエスト暗号化モード]** | 有効な要求に base64 エンコーディングを適用する場合は、有効にします。<br>『Dynamic Media ビューアリファレンスガイド』の [RequestObfuscation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestobfuscation.html?lang=ja) パラメーターも参照してください。 |
 | **[!UICONTROL リクエストロックモード]** | 要求に単純なハッシュロックを含める場合は、有効にします。<br>『Dynamic Media ビューアリファレンスガイド』の [RequestLock](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestlock.html?lang=ja) パラメーターも参照してください。 |
-| **[!UICONTROL デフォルトのリクエスト属性]** |  |
+| **[!UICONTROL デフォルトのリクエスト属性]** | |
 | **[!UICONTROL デフォルトの画像ファイルサフィックス]** | 必須。<br>パスにファイルのサフィックスが含まれていない場合に、カタログの「パス」フィールドと「MaskPath」フィールドの値に追加するデフォルトのデータファイル拡張子です。<br>『Dynamic Media ビューアリファレンスガイド』の [DefaultExt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultext.html?lang=ja) パラメーターも参照してください。 |
 | **[!UICONTROL デフォルトのフォント書体名]** | テキストレイヤー要求でフォントが提供されない場合に使用するフォントを指定します。指定する場合は、この画像カタログのフォントマップ、またはデフォルトカタログのフォントマップで、有効なフォント名の値である必要があります。<br>『Dynamic Media ビューアリファレンスガイド』の [DefaultFont](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultfont.html?lang=ja) パラメーターも参照してください。 |
 | **[!UICONTROL デフォルト画像]** | 要求された画像が見つからなかった場合に、要求への応答として返すデフォルトの画像を指定します。<br>『Dynamic Media ビューアリファレンスガイド』の [DefaultImage](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage.html?lang=ja) パラメーターも参照してください。<br>**注意**：Dynamic Media Classic アカウントで既に&#x200B;**[!UICONTROL デフォルトの画像]**&#x200B;が選択されている場合（**[!UICONTROL 設定]**／**[!UICONTROL アプリケーション]**／**[!UICONTROL 公開設定]**&#x200B;の&#x200B;**[!UICONTROL デフォルトのリクエスト属性]**&#x200B;グループで設定）、Experience Manager の Dynamic Media アカウントが Dynamic Media Classic からファイルを取得します。その後、ファイルは保存され、**[!UICONTROL Dynamic Media 公開設定]**&#x200B;ページを初めて開いたときにこのフィールドで使用できるようになります。 |
@@ -196,13 +196,13 @@ Adobe Dynamic Media の会社管理者が、自社のセキュアテスト環境
 * Web-to-print
 * UGC（ユーザー生成コンテンツ）サービス
 
-   >[!IMPORTANT]
-   >
-   >2023年5月1日（PT）以降、Dynamic Media の UGC アセットは、アップロード日から最大 60 日間使用できます。60 日後にアセットが削除されます。
+  >[!IMPORTANT]
+  >
+  >2023 年 5 月 1 日以降、Dynamic Mediaの UGC アセットは、アップロード日から最大 60 日間使用できます。 60 日後にアセットが削除されます。
 
-   >[!NOTE]
-   >
-   >Adobe Dynamic Media での新規または既存の UGC ベクター画像アセットのサポートは、2021年9月30日（PT）に終了しました。
+  >[!NOTE]
+  >
+  >Adobe Dynamic Media での新規または既存の UGC ベクター画像アセットのサポートは、2021年9月30日（PT）に終了しました。
 
 ### セキュアテストサービスのテスト {#test-secure-testing-service}
 

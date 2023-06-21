@@ -2,10 +2,10 @@
 title: 汎用 Lucene インデックスの削除
 description: 汎用 Lucene インデックスの計画的な削除と、それによって受ける可能性がある影響について説明します。
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1349'
-ht-degree: 100%
+source-wordcount: '1339'
+ht-degree: 82%
 
 ---
 
@@ -22,7 +22,7 @@ AEM では、フルテキストクエリは次の関数を使用します。
 
 このようなクエリでは、インデックスを使用せずに結果を返すことはできません。パスまたはプロパティの制限のみを含んだクエリとは異なり、インデックスが見つからない（したがってトラバーサルが実行される）フルテキスト制限を含んだクエリは、常にゼロの結果を返します。
 
-汎用の Lucene インデックス（`/oak:index/lucene-*`）は、ほとんどのリポジトリ階層に対するフルテキスト検索機能を提供するために AEM 6.0／Oak 1.0 以降に存在してきましたが、`/jcr:system` や `/var` など、一部のパスは常にこの階層から除外されてきました。ただし、このインデックスは、より具体的なノードタイプのインデックス（例：`dam:Asset` ノードタイプの `damAssetLucene-*`）にほとんど置き換わっており、後継のインデックスでは、フルテキスト検索とプロパティ検索の両方をサポートしています。
+汎用の Lucene インデックス (`/oak:index/lucene-*`) はAEM 6.0/Oak 1.0 以降存在しています。これは、ほとんどのリポジトリ階層で全文検索を提供するためのものですが、次のようなパスもあります。 `/jcr:system` および `/var` は常にこのから除外されています。 ただし、このインデックスは、より具体的なノードタイプのインデックス（例：`dam:Asset` ノードタイプの `damAssetLucene-*`）にほとんど置き換わっており、後継のインデックスでは、フルテキスト検索とプロパティ検索の両方をサポートしています。
 
 AEM 6.5 で汎用 Lucene インデックスは非推奨（廃止予定）としてマークされ、今後のバージョンで削除されることが明示されました。それ以降は、次のログスニペットで示すように、このインデックスが使用された場合に、警告が記録されてきました。
 
@@ -38,30 +38,30 @@ org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-アドビは、大規模な顧客データボリュームをサポートするために、新しい AEM as a Cloud Service 環境においては汎用 Lucene インデックスを作成しなくなります。さらに、アドビでは、既存リポジトリからのこのインデックスの削除を開始します。詳しくは、このドキュメントの末尾で示されている[タイムライン](#timeline)を参照してください。
+大規模な顧客データボリュームをサポートするために、Adobeは、新しいAEMas a Cloud Service環境で汎用の Lucene インデックスを作成しなくなりました。 さらに、Adobeは既存のリポジトリからインデックスを削除します。 詳しくは、このドキュメントの末尾で示されている[タイムライン](#timeline)を参照してください。
 
 アドビでは、`costPerEntry` および `costPerExecution` プロパティを使用してインデックスコストを既に調整しており、`/oak:index/pathreference` などの他のインデックスが可能な限り環境設定で使用されるようにしています。
 
-このインデックスにまだ依存しているクエリを使用する顧客アプリケーションは、他の既存のインデックスを利用するように直ちに更新してください。必要に応じて、インデックスをカスタマイズできます。または、新しいカスタムインデックスを顧客アプリケーションに追加できます。AEM as a Cloud Service でのインデックス管理の詳しい手順については、[インデックス作成に関するドキュメント](/help/operations/indexing.md)を参照してください。
+このインデックスに依存するクエリを使用する顧客アプリケーションは、他の既存のインデックスを使用するように即座に更新する必要があります。必要に応じてカスタマイズできます。 または、新しいカスタムインデックスを顧客アプリケーションに追加できます。AEM as a Cloud Service でのインデックス管理の詳しい手順については、[インデックス作成に関するドキュメント](/help/operations/indexing.md)を参照してください。
 
 ## 影響を受けるユーザー {#are-you-affected}
 
-汎用 Lucene インデックスは、現在、他のフルテキストインデックスでクエリに対応できない場合のフォールバックとして使用されています。この非推奨インデックスを使用すると、次のようなメッセージが WARN レベルで記録されます。
+汎用 Lucene インデックスは、現在、他のフルテキストインデックスでクエリに対応できない場合のフォールバックとして使用されています。この廃止されたインデックスを使用すると、次のようなメッセージが WARN レベルで記録されます。
 
 ```text
 org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Please change the query or the index definitions.
 ```
 
-状況によっては、Oak が別のフルテキストインデックス（`/oak:index/pathreference` など）を使用してフルテキストクエリをサポートしようとする可能性がありますが、クエリ文字列がインデックス定義の正規表現と一致しない場合は、メッセージが WARN レベルで記録され、クエリは結果を返さない可能性があります。
+状況によっては、Oak が別のフルテキストインデックス ( `/oak:index/pathreference`) を使用してフルテキストクエリをサポートしますが、クエリ文字列がインデックス定義の正規表現と一致しない場合、メッセージは WARN レベルで記録され、クエリは結果を返さない可能性が高くなります。
 
 ```text
 org.apache.jackrabbit.oak.query.QueryImpl Potentially improper use of index /oak:index/pathReference with queryFilterRegex (["']|^)/ to search for value "test"
 ```
 
-汎用 Lucene インデックスが削除されると、フルテキストクエリで適切なインデックス定義が見つからない場合、次に示すようなメッセージが WARN レベルで記録されます。
+汎用 Lucene インデックスが削除されると、次に示すメッセージが、フルテキストクエリで適切なインデックス定義を見つけられない場合、WARN レベルで記録されます。
 
 ```text
-org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results will be returned
+org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results are returned
 ```
 
 >[!IMPORTANT]
@@ -117,7 +117,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 >
 >**顧客側で必要な対応**
 >
->`damAssetLucene` インデックスのカスタムバージョンで `jcr:content/metadata/@cq:tags` プロパティを分析済みとしてマークすると、このクエリがこのインデックスで処理されることになり、WARN はログに記録されません。
+>を `jcr:content/metadata/@cq:tags` カスタムバージョンの `damAssetLucene` インデックスを使用すると、このクエリがこのインデックスで処理され、WARN が記録されません。
 
 ### オーサーインスタンス {#author-instance}
 
@@ -157,7 +157,6 @@ AEM には、`granite/ui/components/coral/foundation/form/pathfield` の Sling �
 > * 現在のところ、これらはノードタイプが指定されていないクエリを実行するので、汎用 Lucene インデックスの使用に起因する WARN がログに記録されます。
 > * これらのコンポーネントのインスタンスでは間もなく、自動的に `cq:Page` および `dam:Asset` ノードタイプをデフォルトで使用するようになるので、顧客側でのさらなる対応は必要ありません。
 > * `nodeTypes` プロパティを追加して、これらのデフォルトのノードタイプをオーバーライドできます。
-
 
 ## 汎用 Lucene インデックスの削除のタイムライン {#timeline}
 

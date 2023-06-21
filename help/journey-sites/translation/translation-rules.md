@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 100%
+source-wordcount: '789'
+ht-degree: 98%
 
 ---
 
@@ -67,7 +67,7 @@ AEM は、すべてのコンテンツの翻訳ルールを自動的に作成し�
 
    ![翻訳ルールエディター](assets/translation-rules-editor.png)
 
-1. 翻訳されるページプロパティは、リストの「**一般**」セクションに表示されます。翻訳に明示的に含める既存のプロパティ名を追加または更新できます。
+1. 翻訳されるページプロパティは、 **一般** 」セクションに表示されます。 翻訳に明示的に含める既存のプロパティ名を追加または更新できます。
    1. プロパティ名を「**新しいプロパティ**」フィールドに入力します。
    1. 「**翻訳**」オプションと「**継承**」オプションが自動的にオンになります。
    1. 「**追加**」をタップまたはクリックします。

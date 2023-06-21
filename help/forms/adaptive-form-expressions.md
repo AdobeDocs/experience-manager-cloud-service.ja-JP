@@ -2,7 +2,7 @@
 title: アダプティブフォームの式
 seo-title: Adaptive Form Expressions
 description: アダプティブフォームの式を使用して、自動検証や演算を追加したり、セクションの表示のオン／オフを切り替えたりします。
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2696'
 ht-degree: 100%
@@ -232,7 +232,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
      gb.connect(function (){
 
-        //this function will be called after Adaptive Form is initialized
+        //this function is called after Adaptive Form is initialized
 
      })
 

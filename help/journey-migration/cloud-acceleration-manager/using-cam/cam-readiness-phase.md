@@ -2,10 +2,10 @@
 title: Cloud Acceleration Manager での準備フェーズ
 description: このページでは、Cloud Acceleration Manager における準備フェーズの概要について説明します。
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 100%
+source-wordcount: '1055'
+ht-degree: 96%
 
 ---
 
@@ -42,7 +42,7 @@ Cloud Acceleration Manager でプロジェクトを作成したら、準備フ�
 1. ベストプラクティスアナライザー（BPA）をダウンロードするには、次の手順に従います。
 
    >[!NOTE]
-   >ビジネスクリティカルなインスタンスへの影響を回避するために、カスタマイズ、設定、コンテンツ、ユーザーアプリケーションの領域で、実稼動環境にできる限り近いオーサー環境で BPA を実行することをお勧めします。または、実稼動版のオーサー環境のクローンで実行することもできます。
+   >ビジネスクリティカルなインスタンスへの影響を回避するために、カスタマイズ、設定、コンテンツ、ユーザーアプリケーションの領域で、実稼動環境にできる限り近いオーサー環境に BPA を実行することをお勧めします。 または、実稼動版のオーサー環境のクローンで実行することもできます。
 
    1. [ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) ポータルに移動し、ベストプラクティスアナライザーを zip ファイルとしてダウンロードします。
 
@@ -82,7 +82,6 @@ Cloud Acceleration Manager で印刷プレビューオプションを選択し�
    >[!IMPORTANT]
    >* 上記の機能には、「**PDF として保存**」オプションをお勧めします。このオプションはサポートされています。
    >* ブラウザの印刷ボタンを使用すると、1 ページのみ印刷されます。
-
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
@@ -138,7 +137,6 @@ Cloud Acceleration Manager で印刷プレビューオプションを選択し�
 >* 共有または後日取得するために、すべてのレポートタブ（フィルタリングを含む）をブックマークする
 >* 詳細アイコンを使用して、各レポートの結果の詳細を表示する
 
-
 #### レポートのプロパティ {#report-properties}
 
 **レポートのプロパティ**&#x200B;カードでは、レポートの日付、期間、フィルター、アップロード日、Adobe Experience Manager（AEM）の詳細など、レポートのプロパティに関する情報を提供します。
@@ -182,7 +180,7 @@ Cloud Acceleration Manager で印刷プレビューオプションを選択し�
 * 評価
 * コンテンツの移行に関する考慮事項
 
-   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
+  ![画像](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## 「計画とセットアップ」カードの使用 {#planning-setup}
 

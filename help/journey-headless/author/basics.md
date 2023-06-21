@@ -2,10 +2,10 @@
 title: オーサリングの基本
 description: コンテンツフラグメントを使用したヘッドレス CMS のコンテンツオーサリングの概念と仕組みについて説明します。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 37a2afca3131acceebbd7732844fa5953a7fd4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1711'
-ht-degree: 95%
+source-wordcount: '1708'
+ht-degree: 93%
 
 ---
 
@@ -44,7 +44,7 @@ AEMのインストールは、通常、次の 3 つの環境で構成されま�
 
 ### ログイン {#signing-in}
 
-ほとんどのシステムと同様に、ログインが必要です。作成者には、次の情報が提供されます。
+ほとんどのシステムと同様に、ログオンする必要があります。 作成者は、次の情報を提供します。
 
 * ユーザー（アカウント）名
 * パスワード
@@ -56,7 +56,7 @@ AEMのインストールは、通常、次の 3 つの環境で構成されま�
 
 初めてログインすると、簡単なオンラインチュートリアルでユーザーインターフェイスの主な機能がいくつか紹介されます。
 
-その後、ナビゲーションパネルを使用して、AEMの主要な領域にアクセスできます。コンテンツフラグメントの場合、**コンテンツフラグメント**&#x200B;コンソールを使用します（一部のアクションに対しては、**Assets** コンソールも使用します）。
+その後、ナビゲーションパネルを使用して、AEMの主要な領域にアクセスできます。コンテンツフラグメントの場合は、 **コンテンツフラグメント** コンソール ( 一部のアクションに対しては、 **Assets** コンソール )。
 
 ナビゲーションパネルを開くには、左上の Adobe アイコンを選択し、次に小さいコンパスアイコンを選択します。
 
@@ -188,7 +188,7 @@ Creating a Content Fragment is very similar - you just use the **Content Fragmen
 
 ![Create Content Fragment option](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
 
-This time a wizard opens. The first step is to select the Content Fragment Model that your fragment will be based on:
+This time a wizard opens. The first step is to select the Content Fragment Model that your fragment is based on:
 
 ![Create Content Fragment - select Model](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
@@ -215,11 +215,11 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 * 複数の情報（一部は特定のタイプのもの）のみを必要とするフラグメント。ヘッドレスコンテンツの場合、参照は重要です。これについては、後ほどジャーニーで説明します。
 
-   ![コンテンツフラグメントエディター - マイフラグメント](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
+  ![コンテンツフラグメントエディター - マイフラグメント](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
 * 長いテキストを書き込むことができるフラグメント。ここには、テキストを管理および書式設定するための追加のオプションがあります。個々のテキストフィールドを全画面表示エディターで開くこともできます（右側の小さい画面アイコンを使用）。
 
-   ![コンテンツフラグメントエディター - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+  ![コンテンツフラグメントエディター - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
 >[!NOTE]
 >
@@ -239,26 +239,26 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 * **コンテンツフラグメントモデル**
 
-   エディター上部のフラグメント名のすぐ下に、コンテンツフラグメントモデルの名前が表示されます。これは、モデルエディターに移動するリンクでもあります。
+  エディター上部のフラグメント名のすぐ下に、コンテンツフラグメントモデルの名前が表示されます。これは、モデルエディターに移動するリンクでもあります。
 コンテンツフラグメントモデルは、使用する構造を定義するものなので、実際にはコンテンツフラグメントにとってきわめて重要です。ただし、コンテンツフラグメントモデルの作成と編集を担当するのは、（通常は）別のペルソナであるコンテンツアーキテクトです。
 
-   >[!NOTE]
-   >
-   >詳しくは、「AEM ヘッドレスコンテンツアーキテクトジャーニー」を参照してください。
+  >[!NOTE]
+  >
+  >詳しくは、「AEM ヘッドレスコンテンツアーキテクトジャーニー」を参照してください。
 
 * **関連コンテンツ**
 
-   これはエディターのタブなので明らかです。
+  これはエディターのタブなので明らかです。
 
-   コンテンツフラグメント機能は、AEM ではかなり前のバージョンから利用可のです。元々は、ページのオーサリング時に「従来の」用途に使用できるようになっていました。同様の使い方は使用されています。これには、フラグメントに埋め込まれてはいないものの、ページのオーサリング時に作成者が使用できる必要があるアセット（画像など）の関連付けが含まれる場合があります。
+  コンテンツフラグメント機能は、AEM ではかなり前のバージョンから利用可のです。元々は、ページのオーサリング時に「従来の」用途に使用できるようになっていました。同様の使い方は使用されています。これには、フラグメントに埋め込まれてはいないものの、ページのオーサリング時に作成者が使用できる必要があるアセット（画像など）の関連付けが含まれる場合があります。
 
 * **プレビュー**
 
-   これはエディターの別のタブで、主に開発者向けの技術的な内容を提供します。
+  これはエディターの別のタブで、主に開発者向けの技術的な内容を提供します。
 
 * **ページ参照を更新**
 
-   このアクションは、「**...**」（省略記号）ドロップダウンから使用できます。これはページのオーサリングに関係するものなので、ヘッドレス作成者向けのものではありません。
+  このアクションは、「**...**」（省略記号）ドロップダウンから使用できます。これはページのオーサリングに関係するものなので、ヘッドレス作成者向けのものではありません。
 
 ### 公開 {#publishing}
 
@@ -313,9 +313,11 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
          * [クイック公開](/help/assets/manage-publication.md#quick-publish)
 
          * [公開を管理](/help/assets/manage-publication.md#manage-publication)
+
       * 次の **コンテンツフラグメント** コンソール
 
          * [コンテンツフラグメントの公開とプレビュー](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
+
    * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
       * [コンテンツフラグメントモデル - データタイプ](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
@@ -323,8 +325,6 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
       * [コンテンツフラグメントモデル - プロパティ](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
       * [コンテンツフラグメントモデル - アセットフォルダーでのコンテンツフラグメントモデルの許可](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
-
-
 
 * はじめる前に
    * [アセットフォルダーの作成 - ヘッドレスセットアップ](/help/headless/setup/create-assets-folder.md)

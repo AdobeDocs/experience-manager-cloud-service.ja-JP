@@ -2,10 +2,10 @@
 title: ログへのアクセスと管理
 description: ログにアクセスして管理し、AEM as a Cloud Serviceでの開発プロセスを支援する方法について説明します。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 26%
+source-wordcount: '270'
+ht-degree: 27%
 
 ---
 

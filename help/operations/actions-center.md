@@ -4,10 +4,10 @@ description: アクションセンターを活用して、インシデントや�
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 9302220536e7a541d44d96626c65de94ee5d64c3
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 20%
+source-wordcount: '703'
+ht-degree: 15%
 
 ---
 
@@ -46,7 +46,7 @@ AEM as aCloud Serviceは、即時の対応が必要な重大なインシデン�
 
 クリック **詳細情報** link は、この記事にユーザーを移動し、通知タイプを [サポートされている通知タイプの表](#supported-notification-types) 以下に、実行するアクションに関するガイダンスを示します。
 
-アクションセンターには、他の最近の通知の一覧が表示されます。 組織がタスクを認識していることをアドビに伝えるために、または後で是正措置が実行されたときに通知を解決するために、アクションリストの使用をお勧めします。
+アクションセンターには、他の最近の通知の一覧が表示されます。 「処理」リストを使用して、組織がタスクを認識していることをAdobeに伝える通知を確認し、後で修正処理がおこなわれた場合に通知を解決することをお勧めします。
 
 ![通知リスト](/help/operations/assets/notification-list.png)
 
@@ -68,7 +68,7 @@ AEM as a Cloud Serviceには複数のタイプの通知がありますが、次�
 |---|---|---|---|
 | 運用インシデント | 迅速な対応が必要な重大なインシデント | 「インシデント通知 —Cloud Service」製品プロファイルに割り当てられたユーザー | X |
 | 事前の推奨事項 | 計画する必要がある最適化 | 「Proactive Notification - Product」製品プロファイルに割り当てられたCloud Service | X |
-| Cloud Manager のパイプラインステータス | パイプラインの状態に関する情報 | ビジネスオーナー、プログラムマネージャーまたはデプロイメントマネージャーの役割を持つユーザー（で「その他」チェックボックスを選択） [Experience Cloud設定](https://experience.adobe.com/preferences)、 [ここで説明](/help/implementing/cloud-manager/notifications.md). |  |
+| Cloud Manager のパイプラインステータス | パイプラインの状態に関する情報 | ビジネスオーナー、プログラムマネージャーまたはデプロイメントマネージャーの役割を持つユーザー（で「その他」チェックボックスを選択） [Experience Cloud設定](https://experience.adobe.com/preferences)、 [ここで説明](/help/implementing/cloud-manager/notifications.md). |   |
 
 ## サポートされる通知タイプ {#supported-notification-types}
 

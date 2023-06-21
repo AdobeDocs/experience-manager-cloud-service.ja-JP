@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: d054f960f13b7308dbf42556ef60a971e880197e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2598'
-ht-degree: 100%
+source-wordcount: '2594'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ## 作成する内容
 
-Venia ブランドは最近、持続可能な資材を使用して一部の製品を製造し始めました。同社は、**エコフレンドリー**&#x200B;バッジを製品ティーザーの一部として表示したいと考えています。製品が&#x200B;**エコフレンドリー**&#x200B;な資材を使用しているかどうかを示す新しいカスタム属性が Adobe Commerce で作成されます。次に、このカスタム属性が GraphQL クエリの一部として追加され、特定の製品の製品ティーザーに表示されます。
+Venia ブランドは最近、持続可能な資材を使用して一部の製品を製造し始めました。同社は、**エコフレンドリー**&#x200B;バッジを製品ティーザーの一部として表示したいと考えています。製品が **エコフレンドリー** 材料。 次に、このカスタム属性が GraphQL クエリの一部として追加され、特定の製品の製品ティーザーに表示されます。
 
 ![エコフレンドリーバッジの最終実装](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
@@ -69,7 +69,7 @@ Venia プロジェクト[のクローンを作成して](https://github.com/adob
 
 ## 製品ティーザーの作成 {#author-product-teaser}
 
-製品ティーザーコンポーネントは、このチュートリアル全体で拡張されます。最初の手順として、製品ティーザーの新しいインスタンスをホームページに追加し、ベースライン機能を理解します。
+製品ティーザーコンポーネントは、このチュートリアル全体で拡張されています。 最初の手順として、製品ティーザーの新しいインスタンスをホームページに追加し、ベースライン機能を理解します。
 
 1. サイトの&#x200B;**ホームページ**（[http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)）に移動します。
 
@@ -178,7 +178,7 @@ AEM コードに立ち入る前に、GraphQL IDE を使用して [GraphQL の概
 
    ![GraphQL の応答例](../assets/customize-cif-components/sample-graphql-query.png)
 
-   「**はい**」の値は整数 **1** です。これは、GraphQL クエリを Java で記述する場合に役立ちます。
+   「**はい**」の値は整数 **1** です。これは、GraphQLクエリを Java で記述する場合に役立ちます。
 
    >[!TIP]
    >
@@ -436,7 +436,7 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
 
 この時点で、**エコフレンドリー**&#x200B;バッジを表示するタイミングのロジックは機能していますが、プレーンテキストなのでスタイルを設定できます。次に、`ui.frontend` モジュールにアイコンとスタイルを追加し、実装を完了します。
 
-1. [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) ファイルをダウンロードします。これは、**エコフレンドリー**&#x200B;バッジとして使用されます。
+1. [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) ファイルをダウンロードします。これは、 **エコフレンドリー** バッジ。
 1. IDE に戻り、`ui.frontend` フォルダーに移動します。
 1. `eco_friendly.svg` ファイルを `ui.frontend/src/main/resources/images` フォルダーに格納します。
 

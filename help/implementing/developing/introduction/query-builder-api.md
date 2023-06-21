@@ -2,10 +2,10 @@
 title: Query Builder API
 description: アセット共有 Query Builder の機能は、Java API と REST API を通じて公開されます。
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2040'
-ht-degree: 87%
+source-wordcount: '2033'
+ht-degree: 83%
 
 ---
 
@@ -133,7 +133,7 @@ orderby=path
    * `total=43`、`more=false` - 合計ヒット数が 43 であることを意味します。UI には先頭ページの一部として 10 件の結果が表示され、続く 3 ページのページネーションが提供されます。この実装を使用して、「**43 件の結果が見つかりました**」のような説明テキストを表示することもできます。
    * `total=100`、`more=true` - 合計ヒット数が 100 を超え、正確な数が不明であることを意味します。UI は、最初のページの一部として最大 10 個を表示し、次の 10 ページのページネーションを提供できます。 また、これを使用して、 **&quot;100 件を超える結果が見つかりました&quot;**. ユーザーが次のページに移動すると、Query Builder への呼び出しによって `guessTotal` の制限と、`offset` パラメーターおよび `limit` パラメーターの制限が増やされます。
 
-UI が無限スクロールを使用する必要がある場合は、Query Builder によって正確なヒット数が決定されないように、`guessTotal` も使用する必要があります。
+`guessTotal` また、Query Builder が正確なヒット数を決定しないように、UI で無限スクロールを使用する必要がある場合にも使用します。
 
 ### jar ファイルを検索して新しい順に並べ替える {#find-jar-files-and-order-them-newest-first}
 
@@ -279,7 +279,7 @@ property.3_value=Whistler Mountain Biking
 
 ## 返されるプロパティの絞り込み {#refining-what-is-returned}
 
-デフォルトでは、QueryBuilder JSON サーブレットは検索結果内の各ノードに関するデフォルトのプロパティのセット（path、name、title など）を返します。返されるプロパティを制御するには、次のいずれかの操作を実行します。
+デフォルトでは、QueryBuilder JSON サーブレットは、検索結果内の各ノードのデフォルトのプロパティセット（パス、名前、タイトルなど）を返します。 返されるプロパティを制御するには、次のいずれかの操作を行います。
 
 以下のように
 
@@ -287,7 +287,7 @@ property.3_value=Whistler Mountain Biking
 p.hits=full
 ```
 
-を指定すると、各ノードのすべてのプロパティが含まれるようになります。
+この場合、すべてのプロパティが各ノードに含まれます。
 
 `http://<host>:<port>/bin/querybuilder.json?p.hits=full&property=jcr%3atitle&property.value=Cycling%20Tuscany`
 
@@ -320,7 +320,7 @@ p.hits=selective
 p.properties=sling:resourceType jcr:primaryType
 ```
 
-他に実行可能な方法として、Query Builder の応答に子ノードを含めることができます。これを行うには、
+他に実行可能な方法として、Query Builder の応答に子ノードを含めることができます。これをおこなうには、次を指定する必要があります。
 
 ```xml
 p.nodedepth=n

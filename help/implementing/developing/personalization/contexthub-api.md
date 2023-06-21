@@ -2,10 +2,10 @@
 title: ContextHub JavaScript API リファレンス
 description: ContextHub コンポーネントをページに追加すると、ContextHub JavaScript API がスクリプトで使用できるようになります
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4622'
-ht-degree: 72%
+source-wordcount: '4620'
+ht-degree: 71%
 
 ---
 
@@ -697,7 +697,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 `triggerForPastEvents` 引数が `true` の場合、この関数はイベントが過去に発生したかどうかを示す `boolean` 値を返します。
 
-* `true`：イベントが過去に発生しており、ハンドラーが呼び出されます。
+* `true`:イベントが過去に発生し、ハンドラーが呼び出されました。
 * `false`：イベントが過去に発生していません。
 
 `triggerForPastEvents` が `false` の場合、この関数は値を返しません。
@@ -737,7 +737,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 `triggerForPastEvents` 引数が `true` の場合、この関数はイベントが過去に発生したかどうかを示す `boolean` 値を返します。
 
-* `true`：イベントが過去に発生しており、ハンドラーが呼び出されます。
+* `true`:イベントが過去に発生し、ハンドラーが呼び出されました。
 * `false`：イベントが過去に発生していません。
 
 `triggerForPastEvents` が `false` の場合、この関数は値を返しません。

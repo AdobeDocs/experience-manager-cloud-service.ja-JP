@@ -4,10 +4,10 @@ description: AEM サイトテンプレートを使用して、サイト構造と
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 100%
+source-wordcount: '572'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ AEM サイトテンプレートを使用して、サイト構造と初期コン�
 >
 >AEM サイトテンプレートを [ ページテンプレートと混同しないでください。](/help/sites-cloud/authoring/features/templates.md) サイトテンプレートは、サイト全体の構造を定義します。ページテンプレートは、個々のページの構造と初期コンテンツを定義します。
 >
->AEM サイトテンプレートを [AEM サイトテーマと混同しないでください。](site-themes.md) AEM サイトテーマには、AEM サイトのスタイル設定情報のみが含まれています。AEM サイトテンプレートには、サイト構造と初期コンテンツを定義し、 [クイックサイト作成](create-site.md) を可能にするために AEM サイトテーマが含まれています。
+>AEM サイトテンプレートを [AEM サイトテーマと混同しないでください。](site-themes.md) AEM サイトテーマには、AEM サイトのスタイル設定情報のみが含まれています。AEMのサイトテンプレートは、サイト構造と初期コンテンツを定義し、次の目的で使用できるAEMのサイトテーマを含みます。 [クイックサイトの作成。](create-site.md)
 
 ## サイトテンプレートの AEM への追加 {#adding}
 

@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 42927eec458553121f70b74a54f0f26eb616a13e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2530'
-ht-degree: 99%
+source-wordcount: '2529'
+ht-degree: 98%
 
 ---
 
@@ -61,7 +61,7 @@ Brand Portal のライセンス認証は、Experience Manager Assets as a [!DNL 
 >
 >Brand Portal は、Experience Manager Assets as [!DNL Cloud Service] インスタンスと同じ IMS 組織でアクティブ化する必要があります。
 >
->IMS 組織（org1-existing）の Brand Portal クラウド設定が既にあり（[Adobe Developer Console](#manual-configuration) を使用して手動で設定）、Experience Manager Assets as a [!DNL Cloud Service] インスタンスが別の IMS 組織（org2-new）に設定されている場合、Cloud Manager から Brand Portal をアクティブ化すると Brand Portal の IMS 組織は `org2-new` にリセットされます。`org1-existing` で手動で設定したクラウド設定は、Experience Manager Assets のオーサーインスタンスに表示されますが、Cloud Manager から Brand Portal をアクティブ化した後は使用されなくなります。
+>IMS 組織（org1-existing）の Brand Portal クラウド設定が既にあり（[Adobe Developer Console](#manual-configuration) を使用して手動で設定）、Experience Manager Assets as a [!DNL Cloud Service] インスタンスが別の IMS 組織（org2-new）に設定されている場合、Cloud Manager から Brand Portal をアクティブ化すると Brand Portal の IMS 組織は `org2-new` にリセットされます。手動で設定したクラウド設定は `org1-existing` はExperience Manager Assetsオーサーインスタンスに表示されますが、Cloud Manager からBrand Portalをアクティベートした後は使用されなくなります。
 >
 >既存の Brand Portal クラウド設定と Experience Manager Assets as a [!DNL Cloud Service] インスタンスが同じ IMS 組織（org1）を使用している場合は、Cloud Manager から Brand Portal をアクティブ化するだけで済みます。
 >
@@ -116,6 +116,7 @@ Experience Manager Assets as a [!DNL Cloud Service] インスタンスと Brand 
    * **processing-queue**：Brand Portal へのアセット配布用。
 
    * **error-queue**：配布が失敗したアセット用。
+
    >[!NOTE]
    >
    >エラーを確認し、**error-queue** を定期的に消去することをお勧めします。
@@ -339,7 +340,7 @@ Adobe 開発者コンソールで、プロジェクトと API を Brand Portal �
 
 1. Navigate to **[!UICONTROL JWT]** tab, and copy the **[!UICONTROL JWT payload]**.
 
-   The API Key, Client Secret key, and JWT payload information will be used to create IMS account configuration.
+   The API Key, Client Secret key, and JWT payload information is used to create IMS account configuration.
 
 -->
 
@@ -410,7 +411,7 @@ Brand Portal Cloud Service を設定するには、次の手順を実行しま�
 | **地域** | **エグレス IP** |
 |--- |--- |
 | 該当なし | 130.248.160.68, 20.94.203.130 |
-| EMEA | 51.132.146.75, 130.248.244.202, 130.248.244.203, 130.248.244.204, 130.248.244.210, 130.248.244.211, 130.248.244.212 |
+| EMEA | 51.132.146.75、130.248.244.202、130.248.244.203、130.248.244.204、130.248.244.210、130.248.244.211,、130.248.244.212 |
 | APAC | 63.140.44.54 |
 
 <!--

@@ -2,10 +2,10 @@
 title: ページテンプレート
 description: ページテンプレートは、新しいページのベースとして使用するページを作成する際に使用します
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3300'
-ht-degree: 84%
+source-wordcount: '3293'
+ht-degree: 80%
 
 ---
 
@@ -67,6 +67,7 @@ ht-degree: 84%
    * コンテンツポリシーでは、コンポーネントのデザインプロパティを定義します。
 
       * 例えば、使用できるコンポーネントや最小／最大サイズを定義できます。
+
    * これらは、テンプレート（およびテンプレートを使用して作成されたページ）に適用できます。
 
    テンプレート作成者がポリシーを定義する方法について詳しくは、 [ページテンプレートの作成](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
@@ -432,11 +433,11 @@ GitHub のコード
 作成されるページの構造を定義します。
 
 * 新しいページの作成時に初期コンテンツ（`/initial`）と統合されます。
-* 構造に加えた変更は、そのテンプレートを使用して作成されたすべてのページに反映されます。
-* `structure/jcr:content/root`（`root`）ノードは、作成されたページで使用できるコンポーネントのリストを定義します。
+* 構造に加えた変更は、そのテンプレートで作成されたすべてのページに反映されます。
+* この `root` ( `structure/jcr:content/root`) ノードは、作成されたページで使用できるコンポーネントのリストを定義します。
    * テンプレート構造で定義されたコンポーネントは、作成されたページで移動することも、作成されたページから削除することもできません。
-   * コンポーネントをロック解除すると、`editable` プロパティが `true` に設定されます。
-   * 既にコンテンツを含むコンポーネントをロック解除すると、このコンテンツは `initial` ブランチに移動されます.
+   * コンポーネントをロック解除した後、 `editable` プロパティをに設定します。 `true`.
+   * 既にコンテンツを含むコンポーネントをロック解除すると、そのコンテンツは `initial` 分岐。
 
 * `cq:responsive` ノードは、レスポンシブレイアウトの定義を保持します。
 
@@ -447,7 +448,7 @@ GitHub のコード
 * すべての新しいページにコピーされる `jcr:content` ノードが含まれます。
 * 新しいページの作成時に構造（`/structure`）と統合されます。
 * 作成後に初期コンテンツが変更されても、既存のページはすべて更新されません。
-* `root` ノードは、作成されたページで使用できるコンポーネントを定義する、コンポーネントのリストを保持します。
+* この `root` ノードは、作成されたページで使用可能なコンポーネントを定義する、コンポーネントのリストを保持します。
 * コンテンツが構造モードでコンポーネントに追加され、その後、そのコンポーネントがロック解除された場合（またはコンポーネントのロック解除後にコンテンツが追加された場合）、このコンテンツは初期コンテンツとして使用されます。
 
 ### レイアウト {#layout}
@@ -461,13 +462,13 @@ GitHub のコード
 コンテンツポリシーでは、コンポーネントのデザインプロパティを定義します。例えば、使用できるコンポーネントや最小／最大サイズを定義できます。これらは、テンプレート（およびテンプレートを使用して作成されたページ）に適用できます。 コンテンツポリシーは、テンプレートエディターで作成および選択できます。
 
 * `root` ノード上の `cq:policy` プロパティ
-   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
+  `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 ページの段落システムのコンテンツポリシーに対する相対参照を提供します。
 
 * `root` の下のコンポーネントを明示的に示すノードの `cq:policy` プロパティは、個々のコンポーネントのポリシーへのリンクを提供します。
 
 * 実際のポリシー定義は、次の場所に保存されます。
-   `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
+  `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
 
 >[!NOTE]
 >
@@ -488,7 +489,7 @@ GitHub のコード
    * `jcr:content` ノードの status プロパティを設定する。
 
       * 例：
-         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * プロパティを定義します。
 
@@ -500,9 +501,9 @@ GitHub のコード
 
    * [適切なページまたはサブブランチのルートページの&#x200B;**ページプロパティ**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author)&#x200B;に対して許可されたテンプレートのパスを定義します。
    * プロパティを設定します。
-      `cq:allowedTemplates` 
-を 
-必要なブランチの `jcr:content` ノードに設定します。
+     `cq:allowedTemplates` 
+を必要なブランチの `jcr:content` ノードに設定します。
+
    例えば、次の値を使用します。
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
@@ -532,13 +533,13 @@ GitHub のコード
 
 * **テンプレート**:
 
-   * `cq:template` ノードの `jcr:content` プロパティが、そのページに対応するテンプレートにアクセスするために参照されます。
+   * この `cq:template` 財産 `jcr:content` ノードが参照され、そのページに対応するテンプレートにアクセスできます。
 
 * **コンポーネント**:
 
    * ページコンポーネントは、テンプレートの `structure/jcr:content` ツリーとページの `jcr:content` ツリーを統合します。
       * 作成者は、ページコンポーネントを使用して、「編集可能」のフラグが設定されているテンプレート構造のノード（およびいずれかの子）を編集できるだけです。
-      * ページ上にコンポーネントをレンダリングする際、そのコンポーネントの相対パスが `jcr:content` ノードから取得されます。その後、テンプレートの `policies/jcr:content` ノードの下の同じパスが検索されます。
+      * ページ上にコンポーネントをレンダリングすると、そのコンポーネントの相対パスは `jcr:content` ノード；下の同じ道 `policies/jcr:content` その後、テンプレートのノードが検索されます。
          * このノードの `cq:policy` プロパティは、実際のコンテンツポリシーを指します（すなわち、このプロパティは、そのコンポーネントのデザイン設定を保持しています）。
             * このため、同じコンテンツポリシー設定を再利用する複数のテンプレートを持つことができます。
 

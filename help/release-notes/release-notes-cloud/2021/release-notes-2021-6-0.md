@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 リリースのリリースノート。'
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 36b0af857d5b9b179f01a43b5fd36c51b48c795f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1442'
-ht-degree: 99%
+source-wordcount: '1441'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 
 ### 新機能 {#what-is-new-junecm}
 
-* プレビューサービスは、すべてのプログラムに周期的にデプロイされます。顧客は、プログラムがプレビューサービスに対して有効になると、製品内で通知を受けます。詳しくは、[プレビューサービスへのアクセス](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)を参照してください。
+* プレビューサービスは、すべてのプログラムに周期的にデプロイされます。プログラムのプレビューサービスが有効になると、製品内で通知が送信されます。 詳しくは、[プレビューサービスへのアクセス](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)を参照してください。
 
 * ビルド手順中にダウンロードされた Maven の依存関係は、パイプライン実行から次回の実行までの間にキャッシュされるようになりました。この機能は、今後数週間にわたり、お客様に対して有効になる予定です。
 
@@ -86,7 +86,7 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 
 ### の新機能[!DNL Assets] {#ga-features-assets}
 
-* コンテンツ自動化機能を使用すると、[!DNL Experience Manager Assets] は [!DNL Adobe Creative Cloud] API を活用して、アセットの大規模な生産を自動化できます。同じアセットのバリエーションを作成するのに必要な時間と繰り返しを大幅に減らし、コンテンツの速度を向上させます。機能はコードは必要とせず、DAM 内から機能します。
+* コンテンツ自動化機能により、 [!DNL Experience Manager Assets] を使用します。 [!DNL Adobe Creative Cloud] 大規模なアセット作成を自動化する API。 同じアセットのバリエーションを作成するのに必要な時間と繰り返しを大幅に減らし、コンテンツの速度を向上させます。機能はコードは必要とせず、DAM 内から機能します。
 * [!DNL Adobe Asset Link] v3.0（[!DNL Adobe Photoshop]、[!DNL Adobe Illustrator]、[!DNL Adobe InDesign]、[!DNL Adobe Asset Link] v2.0（[!DNL Adobe XD]）がリリースされました。これには次の機能があります。
 
    * [!DNL Assets Essentials] のサポート。

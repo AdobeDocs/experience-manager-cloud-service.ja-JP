@@ -3,10 +3,10 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 7e6a42f5804ddef918df859811ba48f27ebbf19a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4934'
-ht-degree: 96%
+source-wordcount: '4925'
+ht-degree: 92%
 
 ---
 
@@ -30,22 +30,21 @@ AEM の GraphQL API を使用すると、ヘッドレス CMS 実装の JavaScrip
 >* [AEM Commerce が、GraphQL 経由でコマースプラットフォームのデータを使用する](/help/commerce-cloud/integrating/magento.md)。
 >* AEM コンテンツフラグメントが、AEM GraphQL API（標準の GraphQL に基づくカスタム実装）と連携して、アプリケーションで使用するための構造化コンテンツを配信する。
 
-
 ## GraphQL API {#graphql-api}
 
 GraphQL とは次のことを意味します。
 
 * 「*...API のクエリ言語と、既存のデータを使用してこれらのクエリを満たすランタイムです。GraphQL は、API のデータの完全で理解可能な説明を提供し、必要なものを正確に要求する力をクライアントに与え、API の長期的な発展を促し、強力な開発ツールの実現を可能にします。*」
 
-   [GraphQL.org](https://graphql.org) を参照
+  [GraphQL.org](https://graphql.org) を参照
 
 * 「*...柔軟な API レイヤー用のオープンな仕様。GraphQL を既存のバックエンドに重ね合わせて、以前に比べて迅速に製品を構築…。*」
 
-   「[Explore GraphQL](https://www.graphql.com)」を参照
+  「[Explore GraphQL](https://www.graphql.com)」を参照
 
 * *「...2012 年に Facebook 社内で開発されたデータクエリ言語および仕様です。その後、2015 年には公式にオープンソースとなりました。開発者の生産性を高め、転送データの量を最小限に抑えるために、REST ベースのアーキテクチャに代わる手段を提供します。GraphQL は、あらゆる規模の数百の組織により実稼働環境で使用されています...」*
 
-   [GraphQL Foundation](https://foundation.graphql.org/) を参照してください。
+  [GraphQL Foundation](https://foundation.graphql.org/) を参照してください。
 
 <!--
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
@@ -125,7 +124,6 @@ GraphQL は GET リクエストもサポートしていますが、永続クエ�
 >* `ENABLE_GRAPHQL_ENDPOINT` という [Cloud Manager環境変数](/help/implementing/cloud-manager/environment-variables.md)の作成
 >* （値：`true`）
 
-
 >[!NOTE]
 >
 >直接クエリを実行する機能は、将来、廃止される可能性があります。
@@ -201,7 +199,7 @@ Sites GraphQL サービスは、コンテンツフラグメントモデルに対
 
 1. `Content-Fragment-Model-1` と `Content-Fragment-Model-2` を含んだパッケージをインストールすると、
 
-   1. `Model-1` と `Model-2` の GraphQL 型が生成されます。
+   1. GraphQLタイプ `Model-1` および `Model-2` が生成されます。
 
 1. 次に `Content-Fragment-Model-2` を変更すると、
 
@@ -233,7 +231,7 @@ Sites GraphQL サービスは、コンテンツフラグメントモデルに対
 
 * ユーザーが生成するフィールド
 
-   選択された[フィールドタイプ](#Data-types)を使用して、コンテンツフラグメントモデルの設定方法に基づいてフィールドが作成されます。フィールド名は、「**データタイプ**」タブの「**プロパティ名**」フィールドから取得されます。
+  選択された[フィールドタイプ](#Data-types)を使用して、コンテンツフラグメントモデルの設定方法に基づいてフィールドが作成されます。フィールド名は、「**データタイプ**」タブの「**プロパティ名**」フィールドから取得されます。
 
    * ユーザーが特定のデータタイプを設定できるので、**レンダリング形式**&#x200B;設定も考慮する必要があります。例えば、1 行のテキストフィールドに複数の 1 行のテキストを含めるように設定するには、ドロップダウンから「`multifield`」を選択します。
 
@@ -259,7 +257,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 ### ヘルパーフィールド {#helper-fields}
 
-ユーザー生成フィールドのデータ型に加えて、AEM 用 GraphQL では、コンテンツフラグメントの識別やコンテンツフラグメントに関する追加情報の提供に役立つ多数の&#x200B;*ヘルパー*&#x200B;フィールドも生成されます。
+GraphQL for AEMでは、ユーザー生成フィールドのデータタイプに加えて、 *ヘルパー* コンテンツフラグメントの識別に役立つフィールド、またはコンテンツフラグメントに関する追加情報の提供に役立つフィールドです。
 
 これらの[ヘルパーフィールド](#helper-fields)は、ユーザーが定義したものと自動生成されたものを区別するために、先頭に `_` が付きます。
 
@@ -371,7 +369,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 >[!NOTE]
 >
->指定されたバリエーションがコンテンツフラグメントに対して存在しない場合、元のデータ（マスターバリエーションとも呼ばれます）が（フォールバック）デフォルトとして返されます。
+>コンテンツフラグメントに対して指定されたバリエーションが存在しない場合は、元のデータ（マスターバリエーションとも呼ばれます）が（フォールバック）デフォルトとして返されます。
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -571,7 +569,7 @@ GraphQL クエリでフィルタリングを使用して、特定のデータを
 並び替え条件：
 
 * フィールドパスを表すコンマ区切りの値のリストにする
-   * リストの最初のフィールドではプライマリの並び替え順を定義し、2 番目のフィールドではプライマリの並び替え順の 2 つの値が等しい場合に、3 番目のフィールドでは最初の 2 つの条件が等しい場合などに使用されます。
+   * リストの最初のフィールドでは主な並べ替え順が定義され、2 番目のフィールドでは主な並べ替え条件の 2 つの値が等しい場合に使用され、3 番目のフィールドでは最初の 2 つの条件が等しい場合などに使用されます。
    * ドット表記（field1.subfield.subfield など）
 * （オプション）並べ替えの方向
    * ASC（昇順）または DESC（降順）。デフォルトでは ASC が適用されます
@@ -666,10 +664,9 @@ query {
 
 >[!NOTE]
 >
->* ページングには安定した並べ替え順序が必要です。同じ結果セットの異なるページをリクエストする複数のクエリで正しく動作するようにします。デフォルトでは、結果セットの各アイテムのリポジトリパスを使用して、順序が常に同じであることを確認します。 異なる並べ替え順を使用し、その並べ替えを JCR クエリレベルで実行できない場合、ページを決定する前に結果セット全体をメモリに読み込む必要があるので、パフォーマンスに悪影響が生じます。
+>* ページングには安定した並べ替え順序が必要です。同じ結果セットの異なるページをリクエストする複数のクエリで正しく動作するようにします。デフォルトでは、結果セットの各アイテムのリポジトリパスを使用して、順序が常に同じであることを確認します。 異なる並べ替え順を使用し、その並べ替えを JCR クエリレベルで実行できない場合は、ページを判断する前に結果セット全体をメモリに読み込む必要があるので、パフォーマンスに悪影響があります。
 >
 >* オフセットが大きいほど、JCR クエリの結果セット全体から項目をスキップするのに時間がかかります。 大規模な結果セットに対する代替ソリューションは、`first` および `after` メソッドでページ分割されたクエリを使用することです。
-
 
 ### ページ分割されたクエリ - first と after {#paginated-first-after}
 
@@ -708,7 +705,6 @@ query {
 >
 >* 内部の技術的な制約により、ネストされたフィールドに並べ替えとフィルタリングを適用すると、パフォーマンスが低下します。したがって、ルートレベルで保存されたフィールドのフィルター／並べ替えを使用することをお勧めします。 これは、ページ分割された大きな結果セットをクエリする場合にも推奨される方法です。
 
-
 ## GraphQL クエリでの Web に最適化された画像配信 {#web-optimized-image-delivery-in-graphql-queries}
 
 Web に最適化された画像配信を使用すると、Graphql クエリを使用して次のことができます。
@@ -717,9 +713,9 @@ Web に最適化された画像配信を使用すると、Graphql クエリを�
 
 * 画像の特定のレンディションが自動的に生成されて返されるように、クエリでパラメーターを渡す
 
-   >[!NOTE]
-   >
-   >指定されたレンディションは AEM Assets に保存されません。レンディションは生成され、短期間キャッシュに保持されます。
+  >[!NOTE]
+  >
+  >指定されたレンディションは AEM Assets に保存されません。レンディションは生成され、短期間キャッシュに保持されます。
 
 * JSON 配信の一部として URL を返す
 
@@ -744,7 +740,7 @@ GraphQL のソリューションでは、次のことが可能です。
 構造と構文は次のとおりです。
 
 * `format`：拡張子でサポートされるすべての形式を持つ列挙（GIF、PNG、PNG8、JPG、PJPG、BJPG、WEBP、WEBPLL、WEBPLY）
-* `seoName`：ノード名の代わりにファイル名として使用される文字列
+* `seoName`:ノード名の代わりにファイル名として使用される文字列
 * `crop`：フレームサブ構造。幅または高さが省略された場合、高さまたは幅が同じ値として使用されます
    * `xOrigin`：フレームの x 原点（必須）
    * `yOrigin`：フレームの y 原点（必須）
@@ -756,7 +752,7 @@ GraphQL のソリューションでは、次のことが可能です。
 * `rotation`：サポートされているすべての回転の列挙（R90、R180、R270）
 * `flip`：HORIZONTAL、VERTICAL、HORIZONTAL_AND_VERTICAL の列挙
 * `quality`：画質の割合を示す 1～100 の整数
-* `width`：出力画像の幅を定義する整数ですが、画像ジェネレーターでは無視されます
+* `width`:出力画像の幅を定義する整数ですが、Image Generator では無視されます
 * `preferWebp`：webp が優先されるかどうかを示すブール値（デフォルト値は false）
 
 URL 変換は、パス別、リスト別またはページ分割別のすべてのクエリタイプで使用できます。
@@ -888,17 +884,17 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
 
-      応答は次のようになります。
+     応答は次のようになります。
 
-      ![パラメーターを使用した画像配信](assets/cfm-graphiql-sample-image-delivery.png "パラメーターを使用した画像配信")
+     ![パラメーターを使用した画像配信](assets/cfm-graphiql-sample-image-delivery.png "パラメーターを使用した画像配信")
 
 * [複数のパラメーター](#dynamic-image-delivery-multiple-specified-parameters)、`dynamic` という名前の永続クエリ
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic;seoName=billiboy;format=GIF;`
 
-      >[!CAUTION]
-      >
-      >末尾の `;` は、パラメーターのリストを明確に終了するために必須です。
+     >[!CAUTION]
+     >
+     >末尾の `;` は、パラメーターのリストを明確に終了するために必須です。
 
 ### 画像配信の制限 {#image-delivery-limitations}
 
@@ -922,26 +918,26 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
    * モデル名に `List` を付け加えます（例：`cityList`）
    * [サンプルクエリ - すべての都市に関するすべての情報](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)を参照してください
 
-   これにより、以下のことが可能になります。
+  これにより、以下のことが可能になります。
 
    * [結果の並べ替え](#sorting)
 
       * `ASC` : 昇順
       * `DESC` : 降順
+
    * 次のいずれかを使用して、結果のページを返します。
 
       * [オフセットと制限を指定したリストクエリ](#list-offset-limit)
       * [最初とその後を指定したページ分割クエリ](#paginated-first-after)
+
    * [サンプルクエリ - すべての都市に関するすべての情報](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)を参照してください
-
-
-
 
 * フィルター `includeVariations` が `List` および `Paginated` クエリのタイプ。  クエリ結果でコンテンツフラグメントのバリエーションを取得するには、`includeVariations` フィルターは `true` に設定する必要があります。
 
    * 詳しくは、 [特定のモデルの複数のコンテンツフラグメントとそのバリエーションのサンプルクエリ](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
-   >[!CAUTION]
-   >フィルター `includeVariations` システム生成フィールド `_variation` は、同じクエリ定義で一緒に使用することはできません。
+
+  >[!CAUTION]
+  >フィルター `includeVariations` システム生成フィールド `_variation` は、同じクエリ定義で一緒に使用することはできません。
 
 * 論理和（OR）を使用する場合：
    * ` _logOp: OR` を使用します
@@ -958,25 +954,31 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
       * `_locale`：言語を表示します（言語マネージャーに基づく）
          * [特定ロケールの複数のコンテンツフラグメントのサンプルクエリ](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-given-locale)を参照してください
+
       * `_metadata`：フラグメントのメタデータを表示します
          * [メタデータのサンプルクエリ - 「GB」という賞のメタデータのリスト](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)を参照してください
+
       * `_model`：コンテンツフラグメントモデル（パスとタイトル）のクエリを許可します
          * [モデルからのコンテンツフラグメントモデルのサンプルクエリ](/help/headless/graphql-api/sample-queries.md#sample-wknd-content-fragment-model-from-model)を参照してください
+
       * `_path`：リポジトリ内のコンテンツフラグメントへのパス
          * [サンプルクエリ - 1 つの特定の都市フラグメント](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)を参照してください
+
       * `_reference`：参照（リッチテキストエディターでのインライン参照など）を表示します
          * [プリフェッチされた参照を含んだ複数のコンテンツフラグメントのサンプルクエリ](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)を参照してください
+
       * `_variation`：コンテンツフラグメント内の特定のバリエーションを表示します
 
-         >[!NOTE]
-         >
-         >指定されたバリエーションがコンテンツフラグメントに対して存在しない場合、マスターバリエーションが（フォールバック）デフォルトとして返されます。
+        >[!NOTE]
+        >
+        >指定されたバリエーションがコンテンツフラグメントに対して存在しない場合は、マスターバリエーションが（フォールバック）デフォルトとして返されます。
 
-         >[!CAUTION]
-         >
-         >システム生成フィールド `_variation` は、フィルター `includeVariations` と併用できません。
+        >[!CAUTION]
+        >
+        >システム生成フィールド `_variation` は、フィルター `includeVariations` と併用できません。
 
          * [サンプルクエリ - 名前付きバリエーションを持つすべての都市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)を参照してください
+
    * [画像配信](#image-delivery)の場合：
 
       * `_dynamicUrl`：`ImageRef` 参照で
@@ -988,6 +990,7 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
          * [すべてのパラメーターを使用した画像配信用サンプルクエリ](#image-delivery-full-parameters)
 
          * [単一の指定パラメーターを使用した画像配信用サンプルクエリ](#image-delivery-single-specified-parameter)
+
    * `_tags`：タグを含むコンテンツフラグメントまたはバリエーションの ID を表示する `cq:tags` 識別子の配列です。
 
       * [サンプルクエリ - 市区町村の区切り文字としてタグ付けされた、すべての都市の名前](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)を参照してください。
@@ -995,29 +998,21 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
       * 詳しくは、 [_tags ID でフィルタリングし、バリエーションを除外したクエリ例](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
       * 詳しくは、 [_tags ID でフィルタリングし、バリエーションを含むクエリ例](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
 
-      >[!NOTE]
-      >
-      >また、コンテンツフラグメントのメタデータを一覧表示して、タグをクエリできます。
+     >[!NOTE]
+     >
+     >また、コンテンツフラグメントのメタデータを一覧表示して、タグをクエリできます。
 
    * 操作の場合：
 
       * `_operator`：特定の演算子（`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`、`STARTS_WITH`）を適用します
          * [サンプルクエリ - 「Jobs」という名前を持たないすべての人物](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)を参照してください
          * [サンプルクエリ - `_path` が特定のプレフィックスで始まるすべてのアドベンチャーを参照してください](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)
+
       * `_apply`：特定の条件（例：`AT_LEAST_ONCE`）を適用します
          * [サンプルクエリ - 少なくとも 1 回は現れる項目を含んだ配列をフィルタリング](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)を参照してください
+
       * `_ignoreCase`：クエリの実行時に大文字と小文字を区別しません
          * [サンプルクエリ - 名前に SAN が含まれるすべての都市（大文字と小文字を区別しない場合）](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)を参照してください
-
-
-
-
-
-
-
-
-
-
 
 * GraphQL のユニオン型がサポートされています
 
@@ -1049,4 +1044,4 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
 ## チュートリアル - AEM ヘッドレスと GraphQL をはじめる前に {#tutorial}
 
-実践的なチュートリアルを探している場合は、AEM の GraphQL API を使用し、外部アプリで使用するコンテンツをヘッドレス CMS シナリオで構築して公開する方法を示す「[AEM ヘッドレスと GraphQL をはじめる前に](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja)」のエンドツーエンドのチュートリアルをご覧ください。
+実践的なチュートリアルを探している場合は、チェックアウト [AEMヘッドレスおよびGraphQLの概要](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja) AEM GraphQL API を使用し、外部アプリで使用したコンテンツをヘッドレス CMS シナリオで構築および公開する方法を示すエンドツーエンドのチュートリアルです。

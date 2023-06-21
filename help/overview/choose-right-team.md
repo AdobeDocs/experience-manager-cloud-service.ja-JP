@@ -2,10 +2,10 @@
 title: 適切な人材、適切な役割
 description: 適切な人材、適切な役割
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -77,4 +77,4 @@ Adobe Experience Manager Assets の導入を成功させるために必要な人
 
 >[!TIP]
 >
-> [Experience League](https://experienceleague.adobe.com/?lang=ja#recommended/solutions/experience-manager) で Adobe Experience Cloud の詳細を理解し、その他の各種リソースを活用して、[アドビデジタルラーニング](https://learning.adobe.com/certification.html)で認定を受けることができます。
+> Adobe Experience Cloudの詳細情報と [Experience League](https://experienceleague.adobe.com/?lang=ja#recommended/solutions/experience-manager) を通じて認証を受ける [Adobeデジタルラーニング](https://learning.adobe.com/certification.html).

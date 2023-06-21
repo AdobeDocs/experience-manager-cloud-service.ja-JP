@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 リリースのリリースノート。'
 description: "[!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 のリリースノート."
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -89,7 +89,7 @@ AEM Commerce が Cloud Service で利用できるようになりました。
 
 * Cloud Manager のパイプラインで、顧客が設定した変数とシークレットがサポートされるようになりました。
 
-   詳細は、「パイプライン変数」を参照してください。
+  詳細は、「パイプライン変数」を参照してください。
 
 * 認証バウンドのプライベート Maven リポジトリがサポートされるようになりました。
 
@@ -121,7 +121,7 @@ AEM Commerce が Cloud Service で利用できるようになりました。
 
 ### 新機能 {#what-is-new-foundations}
 
-* [ログは Splunk アカウントに転送でき](/help/implementing/developing/introduction/logging.md#splunk-logs)、組織は Splunk への投資を活用できます。
+* [ログは Splunk アカウントに転送できます](/help/implementing/developing/introduction/logging.md#splunk-logs)：組織が Splunk への投資を使用できるようにします。
 
 * [静的な専用 egress IP アドレス](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address)は、Java コードでプログラムされたアウトバウンドトラフィックに割り当てることができます。これは、一部の統合で役立つ場合があります。
 
@@ -137,7 +137,7 @@ Cloud Readiness Analyzer リリース v1.0.2 の新機能と更新点につい�
 
 * 以前のバージョンの CRA を Adobe Experience Manager（AEM）6.1 で実行できませんでした。管理者グループのユーザーに対する明示的なサポートが追加されました。
 
-   詳しくは、[AEM 6.1 への CRA のインストール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=ja#installing-on-aem61)を参照してください。
+  詳しくは、[AEM 6.1 への CRA のインストール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=ja#installing-on-aem61)を参照してください。
 
 * 概要レポートに表示される有効期限のタイムスタンプが正しくありませんでした。
 

@@ -2,10 +2,10 @@
 title: デモサイトで AEM Screens を有効にする
 description: デモサイトで AEM Screens as a Cloud Service の完全なエクスペリエンスを有効にする手順を説明します。
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 8ee3de944290a917c320ad9aa4205b28ad1620bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2699'
-ht-degree: 98%
+source-wordcount: '2696'
+ht-degree: 97%
 
 ---
 
@@ -90,7 +90,7 @@ We.Cafe の場所のレイアウトは次のとおりです。
 
 ## デモ用 Screens プロジェクトのデプロイ {#deploy-project}
 
-[プログラムの作成](create-program.md)手順で作成したサンドボックスでデモコンテンツを使用するには、テンプレートを基にサイトを作成する必要があります。
+で作成したサンドボックスのデモコンテンツを使用するには [プログラムを作成](create-program.md) 手順：サイトは、テンプレートに基づいて作成する必要があります。
 
 We.Cafe デモサイトをまだ作成していない場合は、[デモサイトの作成](create-site.md)の節の同じ手順に従ってください。テンプレートを選択する場合は、**We.Cafe web サイトテンプレート**&#x200B;を選択します。
 
@@ -207,7 +207,7 @@ API キーを使用して Google Sheets のデータを交換できるように�
    }
    ```
 
-AEM Screens も同じサービスを使用して、気象シミュレーションデータにアクセスできます。これは、次の手順で設定します。
+AEM Screensも同じサービスを使用して、次の手順で設定したシミュレーション済みの天気データにアクセスできます。
 
 ### ContextHub の設定 {#configure-contexthub}
 

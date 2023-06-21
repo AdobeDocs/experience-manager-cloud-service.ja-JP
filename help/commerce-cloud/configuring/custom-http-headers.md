@@ -2,10 +2,10 @@
 title: カスタム HTTP ヘッダー
 description: カスタム HTTP ヘッダーの設定
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 100%
+source-wordcount: '268'
+ht-degree: 95%
 
 ---
 
@@ -18,10 +18,11 @@ ht-degree: 100%
 >[!NOTE]
 >
 >開発者は、GraphQL クライアント設定を使用して、カスタム HTTP ヘッダーをいつでも設定できます。
+>
 
 ## 設定 {#configuration}
 
-カスタム HTTP ヘッダーを設定するには、まずその定義が必要です。カスタム HTTP ヘッダーを定義するには、まず OSGi 設定を使用して `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` サービス設定に追加する必要があります。
+カスタム HTTP ヘッダーを設定するには、まずヘッダーを定義する必要があります。 カスタム HTTP ヘッダーを定義するには、まず OSGi 設定を使用して `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` サービス設定に追加する必要があります。
 
 HTTP ヘッダーの値は、プロジェクトのクラウドサービス設定ページで設定できます。
 

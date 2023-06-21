@@ -2,16 +2,16 @@
 title: コンポーネントリファレンスガイド
 description: コンポーネントとその構造の詳細に関するデベロッパー向けリファレンスガイド
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 36d42ec1a273e4b910340ca0cd15ac6ffc57454e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3659'
-ht-degree: 93%
+source-wordcount: '3649'
+ht-degree: 97%
 
 ---
 
 # コンポーネントリファレンスガイド {#components-reference-guide}
 
-コンポーネントは、AEM でエクスペリエンスを構築する際の中心です。[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)と[ AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)を使うと、堅牢な既製のコンポーネントのツールセットを簡単に使い始めることができます。[WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)では、デベロッパーがこれらのツールの使用方法と、新しい AEM サイトを作成するためのカスタムコンポーネントの作成方法を学びます。
+コンポーネントは、AEM でエクスペリエンスを構築する際の中心です。[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)と[ AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)を使うと、堅牢な既製のコンポーネントのツールセットを簡単に使い始めることができます。この [WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md) では、開発者はこれらのツールの使用方法と、カスタムコンポーネントを作成してAEMサイトを作成する方法を学びます。
 
 >[!TIP]
 >
@@ -29,10 +29,10 @@ WKND チュートリアルでは、ほとんどの使用例をカバーしてい
 
 * そもそも新しいコンポーネントで何をするか
 * コンポーネントを一から作成する必要があるか、基本部分を既存のコンポーネントから継承できるか
-* コンポーネントでコンテンツの選択/操作にロジックが必要になるか
-   * ロジックは、ユーザーインターフェイスレイヤーとは別にする必要があります。 HTL はこれに対応した設計になっています。
-* コンポーネントで CSS 形式を設定する必要がある場合は、
-   * CSS の書式設定は、コンポーネントの定義とは別におく必要があります。 外部 CSS ファイルを使用してHTML要素に変更を加えるための命名規則を定義します。
+* コンポーネントのコンテンツを選択または操作するためのロジックが必要か
+   * ロジックは、ユーザーインターフェイスレイヤーから分離しておく必要があります。HTL はこれに対応した設計になっています。
+* コンポーネントを CSS で書式設定する必要があるか
+   * CSS による書式設定は、コンポーネント定義から分離しておく必要があります。外部 CSS ファイルを使用して HTML 要素を変更できるように、HTML 要素の命名規則を定義します。
 * 新しいコンポーネントがもたらすセキュリティ上の影響はなにか
 
 ### 既存コンポーネントの再利用 {#reusing-components}
@@ -55,7 +55,7 @@ Sling Resource Merger を使用し、`sling:resourceSuperType` プロパティ�
 
 ### コンテンツのロジックとマークアップのレンダリング  {#content-logic-and-rendering-markup}
 
-コンポーネントは [HTML を使用してレンダリングされます。](https://www.w3schools.com/htmL/html_intro.asp)コンポーネントでは、リクエストされたコンテンツを取得して、オーサリング環境とパブリッシュ環境の両方で必要に応じてレンダリングするために必要な HTML を定義しなければなりません。
+コンポーネントはでレンダリングされます。 [HTML](https://www.w3schools.com/htmL/html_intro.asp). コンポーネントでは、必要なコンテンツを取得して、オーサリング環境とパブリッシュ環境の両方で必要に応じてレンダリングするために必要な HTML を定義しなければなりません。
 
 マークアップおよびレンダリングを行うコードと、コンポーネントのコンテンツ選択に関するロジックを制御するコードは、分離しておくことをお勧めします。
 
@@ -63,8 +63,8 @@ Sling Resource Merger を使用し、`sling:resourceSuperType` プロパティ�
 
 この（オプション）ロジックは様々な方法で実装でき、特定のコマンドを使用して HTL から呼び出します。
 
-* Java の使用 - [HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=ja) を使用すると、HTL ファイルからカスタム Java クラスのヘルパーメソッドへのアクセスが可能になります。これにより、Java コードを使用して、コンポーネントコンテンツの選択と設定のロジックを実装できます。
-* JavaScript の使用 — [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=ja) を指定すると、HTL ファイルから JavaScript で記述されたヘルパーコードへのアクセスが可能になります。 そのため、JavaScript コードを使用して、コンポーネントのコンテンツを選択および設定するためのロジックを実装できます。
+* Java の使用 - [HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=ja) を使用すると、HTL ファイルからカスタム Java クラスのヘルパーメソッドへのアクセスが可能になります。そのため、JavaScript コードを使用して、コンポーネントのコンテンツを選択および設定するためのロジックを実装できます。
+* JavaScript の使用 - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=ja) を使用すると、HTL ファイルから JavaScript で書かれたヘルパーコードへのアクセスが可能になります。そのため、JavaScript コードを使用して、コンポーネントのコンテンツを選択および設定するためのロジックを実装できます。
 * クライアントサイドライブラリの使用 - 最近の Web サイトは、複雑な JavaScript や CSS コードを利用したクライアントサイド処理に大きく依存しています。詳しくは、「[AEM as a Cloud Service でのクライアントサイドライブラリの使用](/help/implementing/developing/introduction/clientlibs.md)」ドキュメントを参照してください。
 
 ## コンポーネント構造 {#structure}
@@ -122,11 +122,11 @@ AEM コンポーネントの構造は強力で柔軟性があります。以下�
 1. `abbreviation` - コンポーネントブラウザーでのコンポーネント名の省略形をカスタマイズするための String プロパティ
    * 省略形は最大 2 文字までにする必要があります。
    * 空の文字列が指定されると、`jcr:title` プロパティの最初の 2 文字を使用して省略形が作成されます。
-      * 例えば、「Image」の場合は「Im」
-      * ローカライズされたタイトルが、省略形の作成に使用されます。
+      * 例えば、「Image」の場合は「Im」になります。
+      * ローカライズされたタイトルは、省略形の作成に使用されます。
    * 省略形は、コンポーネントに `abbreviation_commentI18n` プロパティがある場合にのみ翻訳されます。これは、翻訳ヒントとして使用されます。
 1. `cq:icon.png` または `cq:icon.svg` - コンポーネントブラウザーに表示される、このコンポーネントのアイコン
-   * 20 x 20 ピクセルは、標準コンポーネントのアイコンのサイズです。
+   * 20 x 20 ピクセルは、標準的なコンポーネントのアイコンのサイズです。
       * 大きいアイコンは小さくなります（クライアント側）。
    * お勧めの色は、RGB（112、112、112）、つまり #707070 です。
    * 標準的なコンポーネントアイコンの背景は、透明です。
@@ -173,7 +173,7 @@ AEM コンポーネントの構造は強力で柔軟性があります。以下�
 | `cq:editConfig` | `cq:EditConfig` | これは[コンポーネントの編集構成](#edit-behavior)を定義します。 |
 | `cq:htmlTag` | `nt:unstructured` | 対象を囲んでいる HTML タグに追加されたその他のタグ属性を返します。自動生成された div に属性を追加できます。 |
 | `cq:noDecoration` | `Boolean` | true の場合、コンポーネントは、自動生成された div クラスと css クラスでレンダリングされません。 |
-| `cq:template` | `nt:unstructured` | このプロパティがあると。このノードは、コンポーネントがコンポーネントブラウザーから追加された場合にコンテンツテンプレートとして使用されます。 |
+| `cq:template` | `nt:unstructured` | 見つかった場合、このノードは、コンポーネントがコンポーネントブラウザーから追加される際に、コンテンツテンプレートとして使用されます。 |
 | `jcr:created` | `Date` | コンポーネントの作成日です。 |
 | `jcr:description` | `String` | コンポーネントの説明です。 |
 | `jcr:title` | `String` | コンポーネントのタイトルです。 |
@@ -250,7 +250,7 @@ Content not found
 
 コンポーネントダイアログで使用する新しいウィジェットを作成するには、新しい Granite UI フィールドコンポーネントを作成する必要があります。
 
-ダイアログをフォーム要素の単純なコンテナと見なす場合、ダイアログコンテンツの主なコンテンツをフォームフィールドとして表示することもできます。 新しいフォームフィールドを作成するには、リソースタイプを作成する必要があります。これは、新しいコンポーネントの作成と同じです。 この作業を容易にするために、Granite UI は、`sling:resourceSuperType` を使用して以下を継承する汎用フィールドコンポーネントを提供しています。
+ダイアログをフォーム要素の単純なコンテナと見なす場合、ダイアログコンテンツの主なコンテンツをフォームフィールドとして表示することもできます。新しいフォームフィールドを作成するには、リソースタイプを作成する必要があります。これは、新しいコンポーネントの作成と同じです。この作業を容易にするために、Granite UI は、`sling:resourceSuperType` を使用して以下を継承する汎用フィールドコンポーネントを提供しています。
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -272,11 +272,11 @@ Content not found
 
 ## コンポーネントの使用 {#using-components}
 
-コンポーネントを作成したら、使用するために有効にする必要があります。コンポーネントを使用すると、コンポーネントの構造とリポジトリーの結果として得られるコンテンツの構造との関連がかわります。
+コンポーネントを作成したら、そのコンポーネントを使用するために有効にする必要があります。 コンポーネントを使用すると、コンポーネントの構造とリポジトリーの結果として得られるコンテンツの構造との関連がかわります。
 
 ### コンポーネントをテンプレートに追加する {#adding-your-component-to-the-template}
 
-コンポーネントを定義した上で、使用可能にする必要があります。コンポーネントをテンプレートで使用できるようにするには、テンプレートのレイアウトコンテナのポリシーでそのコンポーネントを有効にする必要があります。
+コンポーネントを定義したら、使用可能にする必要があります。 コンポーネントをテンプレートで使用できるようにするには、テンプレートのレイアウトコンテナのポリシーでそのコンポーネントを有効にする必要があります。
 
 テンプレートの作成方法の詳細については、[テンプレートドキュメント](/help/sites-cloud/authoring/features/templates.md)を参照してください。
 
@@ -295,7 +295,7 @@ Content not found
 * コンテンツには `jcr:title` プロパティが含まれており、このプロパティには作成者が入力したタイトルの実際のテキストが含まれています。
 * また、コンポーネント定義への `sling:resourceType` 参照も含まれます。
 
-定義されるプロパティは、個々の定義によって異なります。 上記よりも複雑になる場合がありますが、同じ基本原則に従っています。
+定義されるプロパティは、個々の定義によって異なります。上記よりも複雑になる場合がありますが、同じ基本原則に従っています。
 
 ## コンポーネントの階層と継承 {#component-hierarchy-and-inheritance}
 
@@ -360,7 +360,7 @@ AEM には、既存の設定が多数あります。**CRXDE Lite** のクエリ�
 
 ### インプレース編集 - cq:inplaceEditing {#cq-inplaceediting}
 
-インプレースエディターを使用すると、ダイアログを開くことなく、コンテンツフロー内で直接コンテンツを編集できます。例えば、標準 **テキスト** および **タイトル** コンポーネントには、どちらもインプレースエディタが用意されています。
+インプレースエディターを使用すると、ダイアログを開くことなく、コンテンツフロー内で直接コンテンツを編集できます。例えば、標準の&#x200B;**テキスト**&#x200B;と&#x200B;**タイトル**&#x200B;のコンポーネントには、どちらもインプレースエディターがあります。
 
 インプレースエディターは、すべてのコンポーネントタイプで必要なものではありません。
 
@@ -372,7 +372,7 @@ AEM には、既存の設定が多数あります。**CRXDE Lite** のクエリ�
 | `configPath` | `String` | エディター設定のパス（設定ノードで指定可能） |
 | `editorType` | `String` | 次のタイプを使用できます。非 HTML のコンテンツ用の `plaintext`、編集を開始する前にグラフィカルタイトルをプレーンテキストに変換する `title`、リッチテキストエディターを使用する `text` |
 
-次の設定を使用すると、コンポーネントのインプレース編集が可能になり、定義されます `plaintext` エディターに「 」と入力します。
+次の設定では、コンポーネントのインプレース編集が可能になり、エディタータイプとして `plaintext` が定義されます。
 
 ```text
     <cq:inplaceEditing
@@ -415,7 +415,6 @@ AEM には、既存の設定が多数あります。**CRXDE Lite** のクエリ�
 >
 >* `aftermove`
 >* `aftercopy`
-
 
 イベントハンドラーを実装するときは、カスタム実装を組み込むことができます。次に例を示します（`project.customerAction` は静的メソッドです）。
 
@@ -461,8 +460,8 @@ Granite UI および Granite UI ウィジェットでのフィールド検証は
 * 説明
 * 使用目的
 * コンテンツの構造とプロパティ
-* 公開された API と拡張ポイント
-* その他
+* 公開済みの API と拡張ポイント
+* 等。
 
 このため、コンポーネント内で既存のドキュメントマークダウンを利用できるようにするのは非常に簡単です。
 

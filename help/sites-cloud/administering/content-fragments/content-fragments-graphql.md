@@ -4,10 +4,10 @@ description: ヘッドレスコンテンツ配信にコンテンツフラグメ�
 feature: Content Fragments, GraphQL API
 role: User
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 100%
+source-wordcount: '730'
+ht-degree: 97%
 
 ---
 
@@ -25,14 +25,12 @@ ht-degree: 100%
 >
 >* AEM Sites as a Cloud Service 向けヘッドレス開発の概要については、[ヘッドレスと AEM](/help/headless/introduction.md) を参照してください。
 
-
 >[!NOTE]
 >
 >GraphQL は現在、Adobe Experience Manager（AEM）as a Cloud Service の、2 つの（個別の）シナリオで使用されています。
 >
 >* [AEM Commerce は、GraphQL 経由でコマースプラットフォームのデータを使用します](/help/commerce-cloud/integrating/magento.md)。
 >* [AEM コンテンツフラグメントは、AEM GraphQL API（標準の GraphQL に基づいてカスタマイズされた実装）と連携して、アプリケーションで使用する構造化コンテンツを配信します](/help/headless/graphql-api/content-fragments.md)。
-
 
 ## ヘッドレス CMS {#headless-cms}
 
@@ -42,7 +40,7 @@ AEM のコンテンツフラグメントのオーサリングとは、次のこ�
 
 * コンテンツフラグメントを使用すると、主にフォーマットされたページに直接公開することを目的としていない（1:1）コンテンツを作成できます。
 
-* コンテンツフラグメントのコンテンツは、コンテンツフラグメントモデルに従って、あらかじめ決められた方法で構造化されます。これにより、アプリケーションへのアクセスが簡素化され、コンテンツの処理が促進されます。
+* コンテンツフラグメントのコンテンツは、コンテンツフラグメントモデルに従って、あらかじめ決められた方法で構造化されます。 これにより、アプリケーションへのアクセスが簡素化され、コンテンツの処理が促進されます。
 
 ## GraphQL - 概要 {#graphql-overview}
 
@@ -50,7 +48,7 @@ GraphQL とは次のことを意味します。
 
 * 「*...API のクエリ言語と、既存のデータを使用してこれらのクエリを満たすランタイムです。*」
 
-   [GraphQL.org](https://graphql.org) を参照
+  [GraphQL.org](https://graphql.org) を参照
 
 [AEM GraphQL API](#aem-graphql-api) を使用すると、[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md)で（複雑な）クエリを実行できます。各クエリは、特定のモデルタイプに従っています。返されたコンテンツは、アプリケーションで使用できます。
 

@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の高度なネットワーク機能の設定
 description: AEM as a Cloud Service の高度なネットワーク機能（VPN やフレキシブルエグレス IP アドレスまたは専用エグレス IP アドレスなど）を設定する方法を説明します
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 7d74772bf716e4a818633a18fa17412db5a47199
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3595'
-ht-degree: 84%
+source-wordcount: '3579'
+ht-degree: 82%
 
 ---
 
@@ -52,7 +52,7 @@ AEM as a Cloud Service には、複数のタイプの高度なネットワーク
 
 呼び出しの後、ネットワークインフラストラクチャがプロビジョニングされるまで、通常は 15 分ほどかかります。Cloud Manager の [ネットワークインフラストラクチャ GET エンドポイント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) の呼び出しで「準備完了」のステータスが表示されます。
 
-プログラムスコープのフレキシブルポートエグレス設定の準備ができている場合は、環境ごとに `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントを呼び出して、環境レベルでネットワーク機能を有効にすると共に、ポート転送ルールを必要に応じて宣言する必要があります。柔軟性を持たせるために、パラメーターは環境ごとに設定できます。
+プログラムスコープのフレキシブルポートエグレス設定の準備ができている場合は、環境ごとに `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントを呼び出して、環境レベルでネットワーク機能を有効にすると共に、ポート転送ルールを必要に応じて宣言する必要があります。柔軟性を提供するために、環境ごとにパラメーターを設定できます。
 
 ポート転送ルールは、80／443 以外の宛先ポートに対して宣言する必要がありますが、http または https プロトコルを使用しない場合にのみ、宛先ホストのセット（名前または IP、およびポート）を指定します。 宛先ホストごとに、宛先ポートを 30000～30999 のポートにマッピングする必要があります。
 
@@ -70,7 +70,7 @@ API が数秒以内に応答して「更新中」のステータスを返し、�
 
 ### フレキシブルポート出力を無効にする {#disabling-flexible-port-egress-provision}
 
-特定の環境に対してフレキシブルポート出力を&#x200B;**無効**&#x200B;にするには、`DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()` を呼び出します。
+宛先 **無効** 特定の環境からの柔軟なポート出力、呼び出し `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
 API について詳しくは、[Cloud Manager API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)を参照してください。
 
@@ -195,7 +195,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 専用エグレス IP アドレスの設定は、[フレキシブルポートエグレス](#configuring-flexible-port-egress-provision)の場合と同じです。
 
-フレキシブルポートエグレスとの主な違いは、トラフィックが常に専用 の一意の IP アドレスから出ていくことです。その IP を確認するには、DNS リゾルバーを使用して、`p{PROGRAM_ID}.external.adobeaemcloud.com` に関連付けられている IP アドレスを特定します。この IP アドレスが変わることはありませんが、将来変更する必要がある場合は、事前に通知されます。
+フレキシブルポートエグレスとの主な違いは、トラフィックが常に専用 の一意の IP アドレスから出ていくことです。その IP を確認するには、DNS リゾルバーを使用して、`p{PROGRAM_ID}.external.adobeaemcloud.com` に関連付けられている IP アドレスを特定します。IP アドレスは変更されるとは限りませんが、将来変更する必要がある場合は、詳細な通知が表示されます。
 
 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントのフレキシブルポートエグレスでサポートされているルーティングルールに加えて、専用エグレス IP アドレスでは `nonProxyHosts` パラメーターもサポートしています。これにより、専用 IP ではなく共有 IP アドレス範囲を経由してルーティングされる一連のホストを宣言できます。これは、共有 IP から出ていくトラフィックがさらに最適化される可能性があるので、役に立つことがあります。`nonProxyHost` URL は `example.com` または `*.example.com` のパターンに従う場合があります（このパターンでは、ワイルドカードはドメインの先頭でのみ使用できます）。
 
@@ -203,7 +203,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ### 出力専用 IP アドレスを無効にする {#disabling-dedicated-egress-IP-address}
 
-特定の環境に対して出力専用ポートを&#x200B;**無効**&#x200B;にするには、`DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()` を呼び出します。
+宛先 **無効** 特定の環境からの出力専用 IP アドレス、を呼び出す `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
 API について詳しくは、[Cloud Manager API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)を参照してください。
 
@@ -329,7 +329,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### デバッグの考慮事項 {#debugging-considerations}
 
-想定される専用 IP アドレスでトラフィックが実際に送信されていることを検証するには、送信先のサービスでログを確認します（可能な場合）。それ以外の場合は、呼び出し元の IP アドレスを返す [https://ifconfig.me/IP](https://ifconfig.me/IP) などのデバッグサービスを呼び出すと便利です。
+想定される専用 IP アドレスでトラフィックが実際に送信されていることを検証するには、宛先サービスでログを確認します（使用可能な場合）。 それ以外の場合は、呼び出し元の IP アドレスを返す [https://ifconfig.me/IP](https://ifconfig.me/IP) などのデバッグサービスを呼び出すと便利です。
 
 ## 従来の専用エグレスアドレスを使用する場合 {#legacy-dedicated-egress-address-customers}
 
@@ -354,7 +354,7 @@ POST `/program/<programId>/networkInfrastructures` エンドポイントがプ�
 
 この呼び出しの後、ネットワークインフラストラクチャがプロビジョニングされるまで、通常は 45～60 分かかります。API の GET メソッドを呼び出して、現在のステータスを返すことができます。このステータスは、最終的に `creating` から `ready` に変わります。すべてのステータスについては、 API ドキュメントを参照してください。
 
-プログラムスコープの VPN 設定の準備ができている場合は、環境ごとに `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントを呼び出して、環境レベルでネットワーク機能を有効にすると共に、ポート転送ルールを必要に応じて宣言する必要があります。柔軟性を持たせるために、パラメーターは環境ごとに設定できます。
+プログラムスコープの VPN 設定の準備ができている場合は、環境ごとに `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントを呼び出して、環境レベルでネットワーク機能を有効にすると共に、ポート転送ルールを必要に応じて宣言する必要があります。柔軟性を提供するために、環境ごとにパラメーターを設定できます。
 
 詳しくは、 [API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) を参照してください。
 
@@ -417,7 +417,7 @@ API が数秒以内に応答して「`updating`」のステータスを返し、
     <td>IP が <i>VPN ゲートウェイアドレス空間</i>の範囲に収まり、（標準の Java HTTP クライアントライブラリを使用する HTTP または HTTPS トラフィックにデフォルトで設定済みの）HTTP プロキシ設定を使用する場合</td>
     <td>任意</td>
     <td>VPN を経由</td>
-    <td><code>10.0.0.1:443</code>ホスト名を指定することもできます。</td>
+    <td><code>10.0.0.1:443</code><br>ホスト名を指定することもできます。</td>
   </tr>
   <tr>
     <td></td>
@@ -446,7 +446,7 @@ API が数秒以内に応答して「`updating`」のステータスを返し、
     <td>IP が <i>VPN ゲートウェイアドレス空間</i>の範囲に収まり、<code>portForwards</code> API パラメーターで宣言されている <code>portOrig</code> を使用して <code>AEM_PROXY_HOST</code> 環境変数のプロキシホストにクライアントが接続する場合</td>
     <td>任意</td>
     <td>VPN を経由</td>
-    <td><code>10.0.0.1:3306</code>ホスト名を指定することもできます。</td>
+    <td><code>10.0.0.1:3306</code><br>ホスト名を指定することもできます。</td>
   </tr>
   <tr>
     <td></td>
@@ -520,6 +520,7 @@ Header always set Cache-Control private
 >[!NOTE]
 >
 > 削除では、すべての環境の高度なネットワークが無効になっている場合にのみ、インフラストラクチャが削除されます。
+> 
 
 ## 高度なネットワーク機能タイプ間の移行 {#transitioning-between-advanced-networking-types}
 
@@ -533,12 +534,13 @@ Header always set Cache-Control private
 >[!WARNING]
 >
 > この手順を実行すると、削除と再作成の間に高度なネットワークサービスのダウンタイムが発生します
+> 
 
 ダウンタイムがビジネスに大きな影響を与える場合は、カスタマーサポートにお問い合わせください。既に作成された内容と変更の理由を説明します。
 
 ## 追加のパブリッシュ地域の高度なネットワーク設定 {#advanced-networking-configuration-for-additional-publish-regions}
 
-高度なネットワークが既に設定されている環境に追加の地域が追加されると、高度なネットワークルールに一致する追加のパブリッシュ地域からのトラフィックは、デフォルトでプライマリー地域を経由します。 ただし、プライマリージョンが使用できなくなった場合、その他のリージョンでアドバンスドネットワークが有効になっていないと、アドバンスドネットワークトラフィックは削除されます。 いずれかの地域で停止が発生した場合に、待ち時間を最適化して可用性を高めるには、追加のパブリッシュ地域の高度なネットワークを有効にする必要があります。 次の節では、2 つの異なるシナリオについて説明します。
+高度なネットワークが既に設定されている環境に追加の地域が追加されると、高度なネットワークルールに一致する追加のパブリッシュ地域からのトラフィックは、デフォルトでプライマリー地域を経由します。 ただし、プライマリージョンが使用できなくなった場合、その他のリージョンでアドバンスネットワークが有効になっていないと、アドバンスネットワークトラフィックは破棄されます。 いずれかの地域で停止が発生した場合に、待ち時間を最適化して可用性を高めるには、追加のパブリッシュ地域の高度なネットワークを有効にする必要があります。 次の節では、2 つの異なるシナリオについて説明します。
 
 >[!NOTE]
 >
@@ -550,7 +552,7 @@ Header always set Cache-Control private
 
 プライマリリージョンで既に高度なネットワーク構成が有効になっている場合は、次の手順に従います。
 
-1. 専用のAEM IP アドレスが許可リストに表示されるようにインフラストラクチャをロックダウンした場合は、そのインフラストラクチャ内の拒否ルールを一時的に無効にすることをお勧めします。 この処理が行われない場合、新しい地域の IP アドレスからの要求が、お客様独自のインフラストラクチャによって拒否される短い期間が発生します。 完全修飾ドメイン名 (FQDN) (`p1234.external.adobeaemcloud.com`例えば、すべてのAEM地域は同じ FQDN からの高度なネットワークトラフィックを引き出すので、
+1. 専用のAEM IP アドレスが許可リストに表示されるようにインフラストラクチャをロックダウンした場合は、そのインフラストラクチャ内の拒否ルールを一時的に無効にすることをお勧めします。 この処理が行われない場合、新しい地域の IP アドレスからの要求が、お客様独自のインフラストラクチャによって拒否される短い期間があります。 完全修飾ドメイン名 (FQDN) (`p1234.external.adobeaemcloud.com`例えば、すべてのAEM地域は同じ FQDN からの高度なネットワークトラフィックを引き出すので、
 1. 高度なネットワークドキュメントに記載されているように、 Cloud Manager のネットワークインフラストラクチャの作成 API へのPOST呼び出しを通じて、セカンダリ地域のプログラム範囲のネットワークインフラストラクチャを作成します。 ペイロードの JSON 設定のプライマリ領域に対する唯一の違いは、region プロパティです
 1. AEMトラフィックを許可するために、インフラストラクチャを IP でロックダウンする必要がある場合は、 `p1234.external.adobeaemcloud.com`. 地域ごとに 1 つのが必要です。
 
@@ -558,7 +560,7 @@ Header always set Cache-Control private
 
 この手順は、前述の手順とほとんど同じです。 ただし、実稼動環境がまだ高度なネットワーク機能を有効にしていない場合は、まずステージング環境で有効にして設定をテストすることができます。
 
-1. へのPOSTコールで、すべての地域のネットワークインフラストラクチャを構築 [Cloud Manager ネットワークインフラストラクチャ作成 API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). ペイロードの JSON 設定のプライマリ領域に対する相対的な違いは、region プロパティのみです。
+1. へのPOSTコールで、すべての地域のネットワークインフラストラクチャを構築 [Cloud Manager ネットワークインフラストラクチャ作成 API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). ペイロードの JSON 設定のプライマリ領域に対する唯一の違いは、 region プロパティです。
 1. ステージング環境の場合は、次を実行して、環境範囲を指定した高度なネットワークを有効にし、構成します。 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. 詳しくは、 API ドキュメントを参照してください。 [ここ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
 1. 必要に応じて、外部インフラストラクチャをロックダウンします。FQDN（例： ）でロックダウンします。 `p1234.external.adobeaemcloud.com`) をクリックします。 それ以外の場合は、IP アドレスでおこなうことができます
 1. ステージング環境が期待どおりに動作する場合は、実稼動環境用に環境範囲を定めた高度なネットワーク設定を有効にして設定します。

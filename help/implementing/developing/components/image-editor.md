@@ -1,17 +1,17 @@
 ---
 title: 画像エディター
-description: 画像エディターは AEM の中核となる要素で、コンポーネントを利用することでコンテンツ作成者は画像を操作しやなります。
+description: 画像エディターはAEMの中核となる要素で、コンポーネントで使用すると、コンテンツ作成者が画像を操作しやすくなります。
 exl-id: c8ae4f59-75b1-49b4-8dd4-957d2e33000b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
 # 画像エディター {#image-editor}
 
-画像エディターは AEM の中核となる要素で、コンポーネントを利用することでコンテンツ作成者は画像を操作しやなります。
+画像エディターはAEMの中核となる要素で、コンポーネントで使用すると、コンテンツ作成者が画像を操作しやすくなります。
 
 ## 画像マップの相対単位 {#relative-units-for-image-map}
 

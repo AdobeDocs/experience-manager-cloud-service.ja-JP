@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 リリースのリリースノート。'
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 100%
+source-wordcount: '1438'
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 100%
 
 ### [!DNL Assets] プレリリースチャネルの新機能 {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] 画像のスマート切り抜きとスウォッチが最新の Sensei サービスによって強化され、改善された切り抜きとスウォッチが生成されるようになりました。また、同じ縦横比で解像度が異なる様々な切り抜きコンテンツを生成する機能が強化されました。さらに、画像プロファイルの幅と高さに変更がない場合、手動の編集は再処理時に保持されます。
+* [!DNL Dynamic Media] 画像のスマート切り抜きとスウォッチが最新の Sensei サービスによって強化され、改善された切り抜きとスウォッチが生成されるようになりました。また、同じ縦横比で解像度が異なる様々な切り抜きコンテンツを生成する機能が強化されました。また、イメージプロファイルの幅と高さに変更がない場合、手動の編集は再処理時に保持されます。
 
 * スマートタグは、スマートコンテンツサービスの代わりに、アセットマイクロサービスを使用して、アセットに自動的に適用されます。タグ付けの結果を改善し、バイアスを減らすために、基になるモデルが更新されます。<!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -98,10 +98,10 @@ AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021年
 
 ### 新機能 {#what-is-new-cm-nov}
 
-* ユーザーは、新しいフロントエンドパイプラインを活用して、フロントエンドコードを迅速かつ排他的にデプロイできるようになりました。詳しくは、[Cloud Manager フロントエンドパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)を参照してください。
+* ユーザーは、新しいフロントエンドパイプラインを使用して、フロントエンドコードを迅速に排他的にデプロイできるようになりました。 詳しくは、[Cloud Manager フロントエンドパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)を参照してください。
 
-   >[!IMPORTANT]
-   >新しいフロントエンドパイプラインを活用するには、AEM バージョン `2021.10.5933.20211012T154732Z` を使用している必要があります。
+  >[!IMPORTANT]
+  >AEM版である必要があります `2021.10.5933.20211012T154732Z` を使用して、新しいフロントエンドパイプラインを使用します。
 
 * AEM 画像全体を作成する必要がなく、より効率的にコード分析を実行することで、コード品質パイプラインの期間を大幅に短縮できます。この変更は、リリース後の数週間で徐々に適用される予定です。
 

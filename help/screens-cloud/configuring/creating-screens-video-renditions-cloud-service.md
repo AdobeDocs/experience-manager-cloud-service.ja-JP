@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service でのビデオレンディションの作成
 description: ここでは、Screens as a Cloud Service でビデオレンディションを作成する方法について説明します。
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 100%
+source-wordcount: '341'
+ht-degree: 86%
 
 ---
 
@@ -48,10 +48,10 @@ Screens as a Cloud Service で Screens コンテンツプロバイダーから�
    ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >必ず「screens-」で始まるエンコード名を使用してください。Screens as a Cloud Service では、これらのビデオレンディションのみが再生されます。ビデオに適したビットレートを入力します（720 px ビデオの場合は 2500 kbps、1080 px の場合は 5000 kbps）。
+   >「screens — 」で始まるエンコーディング名を使用するようにしてください。Screens as a Cloud Serviceでは、これらのビデオレンディションのみがビデオエクスペリエンスを再生すると見なされます。 ビデオに適したビットレートを入力します（720 px ビデオの場合は 2500 kbps、1080 px の場合は 5000 kbps）。
 
    >[!NOTE]
-   >ビデオに適した様々な幅／高さ／ビットレートの複数のビデオレンディションを追加できます。Screens デバイスがビデオレンディションのみ再生する場合でも、すべての「screens-」レンディションがデバイスによってダウンロードされることに注意してください。
+   >ビデオに適した様々な幅／高さ／ビットレートの複数のビデオレンディションを追加できます。デバイスがビデオレンディションのみを再生する場合でも、すべての画面、レンディションは Screens デバイスでダウンロードされます。
 
 1. 「**保存**」をクリックします。
 
@@ -66,4 +66,3 @@ Screens as a Cloud Service で Screens コンテンツプロバイダーから�
    >[!NOTE]
    >* 複数の処理プロファイルを作成して、それぞれ対応するフォルダーに適用することで、それらのフォルダー内のビデオが特定のビデオレンディションを取得できるようになります。
    >* 処理プロファイルが適用されるフォルダーにビデオをアップロードすると、ビデオが処理され、設定されたレンディションが作成されます。これらのレンディションは、Screens デバイスでのビデオの再生に使用されます。
-

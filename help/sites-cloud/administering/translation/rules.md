@@ -4,10 +4,10 @@ description: 翻訳が必要なコンテンツを翻訳ルールで特定する�
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 86%
+source-wordcount: '1294'
+ht-degree: 80%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 86%
 
 >[!TIP]
 >
->コンテンツの翻訳を初めて行う場合は、[AEM Sites 翻訳ジャーニー](/help/journey-sites/translation/overview.md)を参照してください。これは、AEM の強力な翻訳ツールを使用して AEM Sites コンテンツを翻訳する手順を示すガイドです。AEM や翻訳の経験がないユーザーに最適です。
+>コンテンツの翻訳を初めておこなう場合は、 [サイト翻訳ジャーニー、](/help/journey-sites/translation/overview.md) AEMの強力な翻訳ツールを使用してAEM Sitesのコンテンツを翻訳する手順を示すガイド付きのツールです。AEMや翻訳の経験がないユーザーに最適です。
 
 ## コンテンツフラグメントと翻訳ルール {#content-fragments}
 
@@ -125,11 +125,11 @@ AEM のコンテンツ翻訳機能の概要については、[多言語サイト
 
 ```xml
 <nodelist>
-     <node path="/content”>
+     <node path="/content">
            <property name="text" />
      </node>
-     <node path=“/content/mysite/en”>
-          <property name=“text” translate=“false" />
+     <node path="/content/mysite/en">
+          <property name="text" translate="false" />
      </node>
 <nodelist>
 ```
@@ -142,7 +142,7 @@ AEM のコンテンツ翻訳機能の概要については、[多言語サイト
 
 ```xml
 <nodelist>
-    <node path="/content”>
+    <node path="/content">
      <filter>
    <node containsProperty="draft" propertyValue="true" />
      </filter>
@@ -163,7 +163,7 @@ AEM のコンテンツ翻訳機能の概要については、[多言語サイト
 
 翻訳ルール UI では、次の操作を行えます。
 
-1. **コンテキストを追加**&#x200B;でパスを追加できます。
+1. **コンテキストを追加**：パスを追加できます。
 
    ![翻訳コンテキストの追加](../assets/add-translation-context.png)
 
@@ -186,7 +186,7 @@ AEM のコンテンツ翻訳機能の概要については、[多言語サイト
 
 **`isDeep`** はノードフィルターに適用可能で、デフォルトでは true です。ノード（またはその上位ノード）に、フィルターで指定されたプロパティ値を持つプロパティが含まれているかどうかを確認します。 false の場合は、現在のノードのみを確認します。
 
-例えば、ドラフトコンテンツであることを示すために親ノードの `draftOnly` プロパティが true に設定されている場合でも、子ノードは翻訳ジョブに追加されます。ここで、`isDeep` が機能し、親ノードの `draftOnly` プロパティが true であるかどうかをチェックして、それらの子ノードを除外します。
+例えば、親ノードにプロパティが指定されている場合でも、子ノードが翻訳ジョブに追加されます。 `draftOnly` true に設定すると、ドラフトコンテンツにフラグが設定されます。 ここで、`isDeep` が機能し、親ノードの `draftOnly` プロパティが true であるかどうかをチェックして、それらの子ノードを除外します。
 
 エディターでは、「**フィルター**」タブで「**サブ項目の有無**」をチェックまたはチェック解除できます。
 
