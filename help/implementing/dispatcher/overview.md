@@ -2,10 +2,10 @@
 title: コンテンツ配信フローの概要
 description: コンテンツ配信フローの概要
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
-source-git-commit: 60fc1b8f93c93ca427507dbe56511342f285e6bc
+source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 100%
+ht-degree: 49%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 * CDN
 * AEM Dispatcher
-* AEM パブリッシュ
+* AEM publisher
 
 データフローは次のとおりです。
 
@@ -24,12 +24,12 @@ ht-degree: 100%
 1. コンテンツが CDN 上で完全にキャッシュされている場合、CDN はコンテンツをブラウザーに提供する
 1. コンテンツが完全にキャッシュされていない場合、CDN は Dispatcher を呼び出す（リバースプロキシ）
 1. コンテンツが Dispatcher 上で完全にキャッシュされている場合、Dispatcher はそのコンテンツを CDN に提供する
-1. コンテンツが完全にキャッシュされていない場合、Dispatcher は AEM パブリッシュを呼び出す（リバースプロキシ）
+1. コンテンツが完全にキャッシュされていない場合、Dispatcher はAEMパブリッシュを呼び出す（リバースプロキシ）
 1. コンテンツはブラウザーによってレンダリングされ、ヘッダーに応じてキャッシュされる場合もあります
 
-デフォルトでは、HTML／テキストのコンテンツタイプは、Dispatcher レイヤーで 300 秒（5 分）後に期限切れになるように設定されます。この期限は、Dispatcher キャッシュと CDN の両方が考慮するしきい値です。パブリッシュサービスを再デプロイメントする際は、新しいパブリッシュノードがトラフィックを受け入れる前に、Dispatcher のキャッシュがクリアされ、その後ウォームアップされます。
+デフォルトでは、コンテンツタイプのHTML/テキストは、Dispatcher レイヤーで 300 秒（5 分）後に期限切れになるように設定されています。この期限は、Dispatcher キャッシュと CDN の両方が考慮するしきい値です。 パブリッシュサービスの再デプロイメント中に、Dispatcher のキャッシュがクリアされ、新しいパブリッシュノードがトラフィックを受け入れる前にウォームアップされます。
 
-以下のセクションでは、コンテンツ配信に関してさらに詳しい情報を提供します。
+以下の節では、コンテンツ配信に関する詳細情報を提供します。
 * [CDN 設定](/help/implementing/dispatcher/cdn.md)
 * [キャッシュ](/help/implementing/dispatcher/caching.md)
 
