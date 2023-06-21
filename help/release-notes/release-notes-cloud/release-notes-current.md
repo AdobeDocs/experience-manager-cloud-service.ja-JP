@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: d4d44f452406e452372e409c6594ef4a256b9682
+source-git-commit: ca4046a94301cebae9e7a46e055977419fedd14e
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 30%
@@ -41,7 +41,7 @@ ht-degree: 30%
 * AEM as a Cloud Service からコンテンツフラグメントを JSON オファーとして Adobe Target に書き出します。
 * 複雑な GraphQL のクエリとフィルターを使用して大きなコンテンツセットを AEM から取得する際、GraphQL のページネーションと並べ替えのサポートに加え、内部キャッシュの強化によって、切り離されたクライアントアプリケーションのパフォーマンスの向上を支援するようになりました。
 
-### の新機能 [!DNL Experience Manager Sites] 予約 {#prerelease-sites}
+### [!DNL Experience Manager Sites] プレリリースの新機能 {#prerelease-sites}
 
 * コンテンツフラグメントとその参照を [AEM Preview Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) の使用 [コンテンツフラグメントコンソール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en)を使用すると、ユーザーは、運用を開始する前に、切り離されたプレビューアプリケーションで最終的なエクスペリエンスをプレビューできます。
 
