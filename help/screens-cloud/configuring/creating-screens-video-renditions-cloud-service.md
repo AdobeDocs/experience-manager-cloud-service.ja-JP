@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service でのビデオレンディションの作成
 description: ここでは、Screens as a Cloud Service でビデオレンディションを作成する方法について説明します。
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 86%
+source-wordcount: '353'
+ht-degree: 84%
 
 ---
 
@@ -29,11 +29,11 @@ Screens as a Cloud Service で Screens コンテンツプロバイダーから�
 
 1. 左側のナビゲーションバーの「ツール」セクションをクリックして、「**アセット**」をクリックし、「**処理プロファイル**」をクリックします。
 
-   ![](/help/screens-cloud/assets/configure/screens-cp-3.png)
+   ![処理プロファイルをクリック](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
 1. 「**作成**」をクリックして、新しい処理プロファイルを作成します。
 
-   ![](/help/screens-cloud/assets/configure/screens-video-2.png)
+   ![「作成」をクリックします。](/help/screens-cloud/assets/configure/screens-video-2.png)
 
 1. 「**名前**」に「**ScreensProcessingProfile**」などと入力します。
 
@@ -57,11 +57,11 @@ Screens as a Cloud Service で Screens コンテンツプロバイダーから�
 
 1. 処理プロファイルを選択し、「**プロファイルをフォルダーに適用**」をクリックします。
 
-   ![](/help/screens-cloud/assets/configure/screens-video-5.png)
+   ![プロファイルをフォルダーに適用](/help/screens-cloud/assets/configure/screens-video-5.png)
 
 1. Screens ビデオを保存するフォルダーを選択し、「**適用**」をクリックします。
 
-   ![](/help/screens-cloud/assets/configure/screens-video-6.png)
+   ![「適用](/help/screens-cloud/assets/configure/screens-video-6.png)」をクリックします。
 
    >[!NOTE]
    >* 複数の処理プロファイルを作成して、それぞれ対応するフォルダーに適用することで、それらのフォルダー内のビデオが特定のビデオレンディションを取得できるようになります。

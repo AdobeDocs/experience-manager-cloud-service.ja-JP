@@ -2,10 +2,10 @@
 title: AEM ワークフローステップで変数を追加する方法
 description: 変数の作成、変数の値の設定、 [!DNL AEM Forms]  ワークフローステップでの変数の使用について説明します。
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '2059'
-ht-degree: 100%
+source-wordcount: '2061'
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ ArrayList データタイプを使用して、変数コレクションを作成�
 
 変数を作成するには：
 
-1. AEM インスタンスで、ツール ![](assets/hammer-icon.svg)／ワークフロー／モデルに移動します。
+1. AEMインスタンスで、「ツール」に移動します。 ![ハンマーアイコン](assets/hammer-icon.svg) /ワークフロー/モデル
 1. 「**[!UICONTROL 作成]**」をタップし、ワークフローモデルのタイトルとオプション名を指定します。モデルを選択し、「**[!UICONTROL 編集]**」をタップします。
 1. ワークフローモデルのサイドキックにある変数アイコンをタップし、「**[!UICONTROL 追加変数]**」をタップします。
 

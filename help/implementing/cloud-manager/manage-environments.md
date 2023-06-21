@@ -2,9 +2,9 @@
 title: 環境の管理
 description: 作成できる環境のタイプと、Cloud Manager プロジェクト用の環境の作成方法について説明します。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2276'
 ht-degree: 37%
 
 ---
@@ -245,7 +245,7 @@ Cloud Manager が、パイプラインで最後にデプロイされたバージ
 
 **環境**&#x200B;カードで環境の省略記号メニューから「**開発者コンソール**」を選択します。ブラウザーに新しいタブが開き、 **開発者コンソール**.
 
-![](assets/environ-devconsole.png)
+![開発者コンソールにログインします。](assets/environ-devconsole.png)
 
 ユーザーのみ **開発者** ロールは、 **開発者コンソール**. ただし、サンドボックスプログラムの場合、サンドボックスプログラムにアクセスできるすべてのユーザーは、 **開発者コンソール**.
 

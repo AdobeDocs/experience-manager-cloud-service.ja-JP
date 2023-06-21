@@ -2,9 +2,9 @@
 title: 適切な人材、適切な役割
 description: 適切な人材、適切な役割
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '829'
 ht-degree: 97%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 97%
 
 <br>
 
-![](assets/team_involvement.png)
+![実装の役割のレビュー](assets/team_involvement.png)
 
 **導入チームと一緒にこのリストを確認し**、条件を満たす人材がそれぞれの役割に割り当てられていることを確認します。Adobe Experience Cloud に詳しくないチームメンバーは、[Experience League](https://experienceleague.adobe.com/?lang=ja#recommended/solutions/experience-manager) の学習リソースを利用して、[アドビデジタルラーニング](https://learning.adobe.com/certification.html)で認定を受けることができます。
 

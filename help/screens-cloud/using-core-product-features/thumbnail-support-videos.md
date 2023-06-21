@@ -3,10 +3,10 @@ title: Screens as a Cloud Service でのビデオのサムネールサポート
 description: このページでは、Screens as a Cloud Service にビデオのサムネールサポートを追加する方法について説明します。
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 91%
+source-wordcount: '503'
+ht-degree: 89%
 
 ---
 
@@ -42,19 +42,19 @@ ht-degree: 91%
 
 1. チャネルを選択し、アクションバーの「**編集**」をクリックして、エディターを開きます。
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
+   ![エディターを開きます。](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
 
 1. 既存のビデオコンポーネントを追加または編集します（下図を参照）。
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
+   ![コンポーネントの編集](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
 1. ビデオを選択し、*レンチ*&#x200B;アイコンをクリックして、ビデオのプロパティを開きます。
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
+   ![レンチをクリックします。](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
 1. **ビデオ**&#x200B;ダイアログボックスが開き、**サムネール**&#x200B;ドロップゾーンが表示されます。
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+   ![サムネールを表示](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
 
 1. アセットピッカーから&#x200B;**サムネール**&#x200B;ドロップゾーンに画像をドラッグ＆ドロップし、「**完了**」をクリックします。
 
