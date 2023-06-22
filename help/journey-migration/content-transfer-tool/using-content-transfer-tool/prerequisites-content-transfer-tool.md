@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの前提条件
 description: コンテンツ転送ツールの前提条件
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 94%
+source-wordcount: '551'
+ht-degree: 50%
 
 ---
 
@@ -14,24 +14,24 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_prereqs"
 >title="コンテンツ転送ツール使用時の重要な考慮事項"
->abstract="Java と AEM のバージョン、サポートされるデータストアのタイプ、ユーザーグループの考慮事項など、コンテンツ転送ツールの使用に関する重要な考慮事項を確認します。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja#pre-reqs" text="コンテンツ転送ツール使用時の重要な考慮事項"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja#best-practices" text="ベストプラクティスとガイドライン"
+>abstract="Java™およびAEMのバージョン、サポートされるデータストアのタイプ、ユーザーグループの考慮事項など、コンテンツ転送ツールの使用に関する重要な考慮事項を確認します。"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=ja" text="コンテンツ転送ツール使用時の重要な考慮事項"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#best-practices" text="ベストプラクティスとガイドライン"
 
 次の表に、コンテンツ転送ツールを使用するための前提条件を示します。
 
-以下に示す考慮事項をすべて確認してください。
+以下に示すすべての考慮事項を確認します。
 
 | 考慮事項 | 現在サポートされている内容 |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AEM のバージョン | コンテンツ転送ツールは、AEM 6.3 以降のバージョンでのみ実行できます。 |
-| セグメントストアのサイズ | 現在、5,500 万個未満の JCR ノードと、*オーサー*&#x200B;上で最大 250 GB（オンライン圧縮サイズ）、パブリッシュ上で最大&#x200B;*パブリッシュ*&#x200B;上で最大 50 GB の既存のリポジトリーがサポートされています。これらの制限を超えるセグメントストアのサイズに関するオプションについては、Adobe カスタマーケアでサポートチケットを作成してご相談ください。 |
-| コンテンツリポジトリーの合計サイズ&#x200B;<br>*（セグメントストア+データストア）* | コンテンツ転送ツールは、ファイルデータストアタイプのデータストアに対して最大 20 TB のコンテンツを転送できるように設計されています。20 TB を超えるものは現在はサポートされていません。20 TB を超えるコンテンツのオプションについては、アドビのカスタマーサポートでサポートチケットを作成してご相談ください。<br>大規模なリポジトリーのコンテンツ転送プロセスを大幅に高速化するには、オプションで [事前コピー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja#setting-up-pre-copy-step) 手順を使用できます。これは、ファイルデータストア、Amazon S3、Azure データストアなどのタイプのデータストアに適用できます。Amazon S3 および Azure データストアでは、20 TB を超えるリポジトリーサイズがサポートされます。 |
-| Lucene インデックスの合計サイズ | 現在、`/oak:index/lucene` と `/oak:index/damAssetLucene` を除外した最大 25GB の Lucene インデックスの合計サイズがサポートされています。この制限を超えるインデックスサイズのオプションについては、Adobe カスタマーケアでサポートチケットを作成してご相談ください。 |
-| ノード名の長さ | ノードの親パスが 350 バイト以上の場合、ノード名の長さは 150 バイト以下にする必要があります。AEM as a Cloud Serviceのドキュメントノードストアでサポートされるように、これらのノード名を &lt;= 150 バイトに短縮する必要があります。 長いノード名が修正されていない場合、取り込みは失敗します。 |
-| 不変パスのコンテンツ | コンテンツ転送ツールを使用して不変パスのコンテンツを移行することはできません。コンテンツを `/etc` から転送するには、特定の `/etc` パスのみを選択できますが、これは [AEM Forms から AEM Forms as Cloud Service をへの移行をサポート](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=ja#paths-of-various-aem-forms-specific-assets)するためのものです。その他の使用例については、[一般的なリポジトリーの再構築](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/all-repository-restructuring-in-aem-6-5.html)を参照して、リポジトリー再構築の詳細を確認してください。 |
-| MongoDB のノードプロパティ値 | MongoDB に保存されるノードプロパティの値は 16 MB を超えることはできません。これは、MongoDB によって強制されるものです。この制限を超えるプロパティ値がある場合、取り込みは失敗します。抽出を実行する前に、[oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar) スクリプトを実行します。大きなプロパティ値をすべて確認し、必要に応じて検証します。16 MB を超える値は、バイナリ値に変換する必要があります。 |
+| セグメントストアのサイズ | 現在、5,500 万個未満の JCR ノードと、*オーサー*&#x200B;上で最大 250 GB（オンライン圧縮サイズ）、パブリッシュ上で最大&#x200B;*パブリッシュ*&#x200B;上で最大 50 GB の既存のリポジトリーがサポートされています。サポートチケットを作成してAdobeカスタマーケアを使用し、これらの制限を超えるセグメントストアのサイズに関するオプションについて話し合うことができます。 |
+| コンテンツリポジトリーの合計サイズ&#x200B;<br>*（セグメントストア+データストア）* | コンテンツ転送ツールは、ファイルデータストアタイプのデータストアに対して最大 20 TB のコンテンツを転送するように設計されています。 20 TB を超える値は、現在サポートされていません。 20 TB を超えるコンテンツのAdobeを話し合えるよう、サポートチケットを作成します。 <br>大規模なリポジトリーのコンテンツ転送プロセスを大幅に高速化するには、オプションで [事前コピー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step) 手順を使用できます。このプロセスは、ファイルデータストア、Amazon S3、Azure データストアのタイプのデータストアに適用されます。 Amazon S3 および Azure Data Store では、20 TB を超えるリポジトリサイズがサポートされます。 |
+| Lucene インデックスの合計サイズ | 最大 25 GB の Lucene インデックスの合計サイズ（を除く） `/oak:index/lucene` および `/oak:index/damAssetLucene` はサポートされています。 サポートチケットを作成し、Adobeカスタマーケアと共に、この制限を超えるインデックスサイズのオプションについて話し合うことができます。 |
+| ノード名の長さ | ノードの親パスが 350 バイト以上の場合、ノード名の長さは 150 バイト以下にする必要があります。AEM as a Cloud Serviceのドキュメントノードストアでサポートされるように、これらのノード名を &lt;= 150 バイトに短縮する必要があります。 これらの長いノード名が修正されていない場合、取り込みは失敗します。 |
+| 不変パスのコンテンツ | コンテンツ転送ツールを使用して不変パスのコンテンツを移行することはできません。コンテンツの転送元 `/etc`を選択すると、 `/etc` パス（ただし、サポートするパスのみ） [AEM FormsからAEM Formsへのas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html#paths-of-various-aem-forms-specific-assets). その他の使用例については、[一般的なリポジトリーの再構築](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/all-repository-restructuring-in-aem-6-5.html)を参照して、リポジトリー再構築の詳細を確認してください。 |
+| MongoDB のノードプロパティ値 | MongoDB に保存されるノードプロパティの値は 16 MB を超えることはできません。このルールは MongoDB によって適用されます。 この制限を超えるプロパティ値がある場合、取り込みは失敗します。 抽出を実行する前に、[oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar) スクリプトを実行します。大きなプロパティ値をすべて確認し、必要に応じて検証します。16 MB を超える値は、バイナリ値に変換する必要があります。 |
 
 ## 次の手順 {#whats-next}
 
-前提条件を確認し、移行プロジェクトでコンテンツ転送ツールを使用できるかどうかを判断したら、[コンテンツ転送ツール使用のガイドラインとベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja)を参照してください。
+前提条件を確認し、移行プロジェクトでコンテンツ転送ツールを使用できるかどうかを判断したら、[コンテンツ転送ツール使用のガイドラインとベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja)を参照してください。
