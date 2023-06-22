@@ -98,7 +98,6 @@ AEM as a Cloud Service 環境を設定およびデプロイする方法につい
 >1. [Experience Manager サポートチームに問い合わせる](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=ja)
 >2. [Experience Manager コミュニティとフォーラム](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=ja)を探索する
 
-
 <br>
 
 ## Adobe Experience Manager as a Cloud Service への移行 {#move-to-cloud}
@@ -190,7 +189,6 @@ Cloud Manager を使用すると、組織がクラウド内の Experience Manage
 >2. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=ja)
 >3. [ログの管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=ja)
 
-
 <br>
 
 ### ツールとリソース
@@ -203,4 +201,3 @@ Cloud Manager を使用すると、組織がクラウド内の Experience Manage
 > その他のヘルプについては、以下を参照してください。
 >1. [Experience Manager サポートチームに問い合わせる](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=ja)
 >2. [Experience Manager コミュニティとフォーラム](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=ja)を探索する
-

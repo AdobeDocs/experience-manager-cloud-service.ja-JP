@@ -77,7 +77,7 @@ AEM as a Cloud Service で使用できる環境には、次の 3 種類があり
 
 * **開発環境**：ステージ環境および実稼動環境と同じランタイム条件で開発者が AEM アプリケーションを実装できます。
 
-   詳しくは、[環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja#using-cloud-manager)を参照してください。
+  詳しくは、[環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja#using-cloud-manager)を参照してください。
 
 * **迅速な開発環境**：新しいコードや既存のコードをデバッグする迅速な開発イテレーションが可能になります。
 
@@ -122,6 +122,7 @@ AEM as a Cloud Service では、次の 2 種類のプログラムが最初から
       * オーサー層へのログインは、Adobe IMS（Identity Management System）で管理されます。
 
       * Assets の統合と処理には、専用のアセットコンピューティングサービスが使用されます。
+
    * プレビュー層は、1 つのプレビューノードで構成されます。これは、パブリッシュ層に公開する前のコンテンツの品質保証に使用されます。
 
    * パブリッシュ層は、1 つのパブリッシュファーム内の 2 つ以上のノードで構成されます。
@@ -135,7 +136,6 @@ AEM as a Cloud Service では、次の 2 種類のプログラムが最初から
       * ただし、デフォルトでは、プライマリリージョンには 1 つのパブリッシュファームが存在します [追加の公開地域](/help/operations/additional-publish-regions.md) はライセンスを受けることができます。
 
       * エンドユーザーつまりサイト訪問者は、AEM パブリッシュサービスを通じて Web サイトにアクセスします。
-
 
 * AEM Assets as a Cloud Service の場合：
 
@@ -151,9 +151,9 @@ AEM as a Cloud Service では、次の 2 種類のプログラムが最初から
 
    * コンテンツがオーサー層で承認されると、コンテンツをアクティベートできることになるので、コンテンツがパブリッシュ層の永続レイヤー（またはオプションとしてプレビュー層）にプッシュされます。これは、ミドルウェアパイプラインであるレプリケーションサービスを通じておこなわれます。このパイプラインが新しいコンテンツを受け取り、パイプラインにプッシュされたコンテンツを個々のパブリッシュサービス（またはプレビューサービス）ノードでサブスクライブします。
 
-      >[!NOTE]
-      >
-      >詳しくは、[レプリケーション](/help/operations/replication.md)を参照してください。
+     >[!NOTE]
+     >
+     >詳しくは、[レプリケーション](/help/operations/replication.md)を参照してください。
 
    * 開発者と管理者は、[Cloud Manager](/help/overview/what-is-new-and-different.md#cloud-manager) を通じて提供される継続的統合／継続的配信（CI/CD）サービスを使用して、AEM as a Cloud Service プリケーションを管理します。これには、Cloud Manager の CI/CD パイプラインを使用したコードおよび設定のデプロイメントが含まれます。監視、メンテナンス、トラブルシューティング（ログファイルなど）に関連するすべての情報が Cloud Manager 内でユーザーに公開されます。
 
