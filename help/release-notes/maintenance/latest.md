@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 26178edc3308801e0273aca67b7cd82180131483
+source-git-commit: 46f0f8ba51b328bef1061d574b0d378a510fcf38
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 36%
+source-wordcount: '382'
+ht-degree: 30%
 
 ---
 
@@ -17,17 +17,11 @@ ht-degree: 36%
 
 2023 年 6 月 13 日に公開されたメンテナンスリリース12255の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース 12142 からのアップデートです。
 
-このメンテナンスリリースにおける機能イネーブルメントでは、包括的な機能セットを提供します。詳しくは、[最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
+このメンテナンスリリースでの機能の有効化により、2023.6.0 の機能のアクティベーションを含む完全な機能セットが提供されます。詳しくは、 [Experience Managerリリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja) を参照してください。
 
 ### 機能強化 {#enhancements-12255}
 
 なし。
-
-### 既知の問題 {#known-issues-12255}
-
-- ASSETS-25729 — ビュースイッチャーメニューが切れている
-- ASSETS-25728 - 「アセットを再処理」オプションは検索表示で使用できません
-- ASSETS-22603 — 一部のダウンロードタイプのアセットレポート列には、UI に「null」値が表示されます。 ダウンロード可能な CSV は影響を受けません。
 
 ### 修正された問題 {#fixed-issues-12255}
 
@@ -49,6 +43,12 @@ ht-degree: 36%
 - ASSETS-23981 — コレクションリンクでタイトルが機能しない並べ替え機能
 - ASSETS-24723 — 公開済みアセットが再処理され、ユーザーの操作が不要になった問題を修正しました。
 - GRANITE-45385 — ツリーのアクティベーションを移行して、ワークフローの代わりに sling ジョブを使用する
+
+### 既知の問題 {#known-issues-12255}
+
+- ASSETS-25729 — ビュースイッチャーメニューが切れている
+- ASSETS-25728 - 「アセットを再処理」オプションは検索表示で使用できません
+- ASSETS-22603 — 一部のダウンロードタイプのアセットレポート列には、UI に「null」値が表示されます。 ダウンロード可能な CSV は影響を受けません。
 
 ### 組み込みテクノロジー {#embedded-tech-12255}
 
