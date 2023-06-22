@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 46f0f8ba51b328bef1061d574b0d378a510fcf38
+source-git-commit: 39696141a50bf8204d37341a85a4f4a8acae69db
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 30%
+source-wordcount: '377'
+ht-degree: 31%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 30%
 
 2023 年 6 月 13 日に公開されたメンテナンスリリース12255の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース 12142 からのアップデートです。
 
-このメンテナンスリリースでの機能の有効化により、2023.6.0 の機能のアクティベーションを含む完全な機能セットが提供されます。詳しくは、 [Experience Managerリリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja) を参照してください。
+2023.6.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。 詳しくは、 [Experience Managerリリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja) を参照してください。
 
 ### 機能強化 {#enhancements-12255}
 
