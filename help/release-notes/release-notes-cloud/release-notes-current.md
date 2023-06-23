@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ca4046a94301cebae9e7a46e055977419fedd14e
+source-git-commit: 060956eee5136924263e4df5bd756670384e8365
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 30%
+source-wordcount: '1172'
+ht-degree: 27%
 
 ---
 
@@ -38,12 +38,14 @@ ht-degree: 30%
 
 ### の新機能[!DNL Experience Manager Sites] {#sites-features}
 
-* AEM as a Cloud Service からコンテンツフラグメントを JSON オファーとして Adobe Target に書き出します。
+* AEMas a Cloud Serviceのコンテンツフラグメントを JSON 形式でAdobe Targetに書き出し、対応する JSON オファーを Target で作成します。
 * 複雑な GraphQL のクエリとフィルターを使用して大きなコンテンツセットを AEM から取得する際、GraphQL のページネーションと並べ替えのサポートに加え、内部キャッシュの強化によって、切り離されたクライアントアプリケーションのパフォーマンスの向上を支援するようになりました。
 
 ### [!DNL Experience Manager Sites] プレリリースの新機能 {#prerelease-sites}
 
 * コンテンツフラグメントとその参照を [AEM Preview Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) の使用 [コンテンツフラグメントコンソール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en)を使用すると、ユーザーは、運用を開始する前に、切り離されたプレビューアプリケーションで最終的なエクスペリエンスをプレビューできます。
+* AEM GraphQLを使用したヘッドレスシナリオで、Web 配信用に画像を動的に最適化できるようになりました。 [クエリ変数](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables) は、GraphQLクエリで定義でき、クライアントアプリケーションがAEMから適切に最適化された画像をリクエストする際に、それに応じて切り離すことができます。
+* タグオン [コンテンツフラグメントのバリエーション](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en) AEM GraphQLコンテンツ配信 API を使用して JSON に出力できるようになりました。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
