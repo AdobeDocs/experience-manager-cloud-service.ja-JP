@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 100%
+source-wordcount: '631'
+ht-degree: 83%
 
 ---
 
@@ -19,15 +19,27 @@ ht-degree: 100%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
-Adobe Experience Manager では、オーサリングプロセスの一環として、3D アセットのアップロード、配信、インタラクティブプレビューをサポートしています。
+Experience Manager Assetsは、3D アセットの取り込み、管理、プレビュー、配信をサポートしています。
 
-Experience Manager のアセットの詳細ページから、インタラクティブ 3D ビューアを使用できます。このビューアには、3D アセットをオービット、ズームおよびパンできるインタラクティブなカメラコントロールのコレクションが含まれます。
+自動的に生成されたサムネールレンディションまたはインタラクティブ 3D ビューアを使用して、3D アセットをプレビューできます。 Experience Manager のアセットの詳細ページから、インタラクティブ 3D ビューアを使用できます。このビューアには、3D シーンの周りを回転、ズーム、パンできる、インタラクティブなカメラコントロールのコレクションが含まれます。
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Experience Manager でサポートされる 3D プレビューの形式 {#supported-3d-previewing-assets}
+## Experience Managerでサムネールプレビューでサポートされる形式{#supported-thumbnail-previewing-assets}
 
-Experience Manager のインタラクティブ 3D プレビューでは、次のファイル形式をサポートしています。
+Experience Managerは、デフォルトで次のファイル形式のサムネールを生成します。
+
+| 3D ファイル拡張子 | ファイル形式 | MIME タイプ | 備考 |
+|---|---|---|---|
+| GLB | バイナリ GL 伝送 | model/gltf-binary |  |
+| FBX | Autodesk FBX | application/octet-stream |  |
+| OBJ | WaveFront 3D オブジェクトファイル | application/x-tgif |  |
+| 3DS | 3D スタジオモデル | application/x-3ds |  |
+| USDz | ユニバーサルシーンの説明 | model/vnd.usdz+zip |  |
+
+## Experience Managerでのインタラクティブ 3D プレビューでサポートされる形式{#supported-3d-previewing-assets}
+
+Experience Managerは、次のファイル形式のインタラクティブ 3D プレビューをネイティブでサポートしています。
 
 | 3D ファイル拡張子 | ファイル形式 | MIME タイプ | 備考 |
 |---|---|---|---|
@@ -35,8 +47,7 @@ Experience Manager のインタラクティブ 3D プレビューでは、次の
 | GLTF | GL 伝送形式 | model/gltf+json | 以下の&#x200B;**メモ**&#x200B;を参照してください。 |
 | OBJ | WaveFront 3D オブジェクトファイル | application/x-tgif |  |
 | STL | ステレオリソグラフィ | application/vnd.ms-pki.stl |  |
-| DN | Adobe Dimension | model/x-adobe-dn | 取り込みのみサポート。プレビューは使用できません。 |
-| USDZ | 汎用シーン記述 Zip アーカイブ | model/vnd.usdz+zip | 取り込みのみサポート。プレビューは使用できません。 |
+
 
 >[!NOTE]
 >
@@ -79,7 +90,7 @@ Experience Manager のインタラクティブ 3D プレビューでは、次の
    | **カメラをパン** | ビューを左、右、上、下にパンします。 | 右クリックしながらドラッグします。 | 2 本指で押しながらドラッグします。 |
    | **カメラをズーム** | 3D シーンの領域の内外に移動します。 | ホイールをスクロールします。 | 2 本指でピンチします。 |
    | **カメラを中心に戻す** | カメラを中心の位置に戻し、3D シーンのオブジェクトに合わせます。 | ダブルクリックします。 | ダブルタップします。 |
-   | **リセット** | ページの右下隅付近にあるリセットアイコンを選択して、視野のターゲットポイントを 3D アセットの中心に戻します。リセットを使用しても、アセット全体を表示したり、適切な表示サイズで表示するために、カメラを近づけたり遠ざけたりできます。 |  |  |
-   | **全画面表示モード** | フルスクリーンモードに入るには、ページの右下隅にあるフルスクリーンアイコンを選択します。 |  |  |
+   | **リセット** | ページの右下隅付近にあるリセットアイコンを選択して、視野のターゲットポイントを 3D アセットの中心に戻します。リセットを使用しても、アセット全体を表示したり、適切な表示サイズで表示するために、カメラを近づけたり遠ざけたりできます。 |   |   |
+   | **全画面表示モード** | フルスクリーンモードに入るには、ページの右下隅にあるフルスクリーンアイコンを選択します。 |   |   |
 
 1. 作業が完了したら、ページの右上隅付近にある「**[!UICONTROL 閉じる]**」を選択します。
