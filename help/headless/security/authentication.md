@@ -1,32 +1,32 @@
 ---
 title: コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証
-description: ヘッドレスコンテンツ配信を保護するために Remote AEM GraphQLクエリに必要な認証を理解します。
+description: ヘッドレスコンテンツ配信を保護するためにリモートAdobe Experience Manager GraphQLクエリに必要な認証を理解します。
 feature: Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 88%
+source-wordcount: '230'
+ht-degree: 26%
 
 ---
 
 # コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証 {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-[コンテンツフラグメント配信用の Adobe Experience Manager as a Cloud Service（AEM）GraphQL API](/help/headless/graphql-api/content-fragments.md) の主な使用例は、サードパーティのアプリケーションやサービスからリモートクエリを受け入れることです。これらのリモートクエリでヘッドレスコンテンツ配信を保護するには、認証済み API アクセスが必要になる場合があります。
+主な用途 [コンテンツフラグメント配信用Adobe Experience Manager as a Cloud Service (AEM)GraphQL API](/help/headless/graphql-api/content-fragments.md) は、サードパーティのアプリケーションまたはサービスからのリモートクエリを受け入れます。 これらのリモートクエリでヘッドレスコンテンツ配信を保護するには、認証済み API アクセスが必要になる場合があります。
 
 >[!NOTE]
 >
->テストおよび開発の場合は、[GraphiQL インターフェイス](/help/headless/graphql-api/graphiql-ide.md)を使用して AEM GraphQL API に直接アクセスすることもできます。
+>テストおよび開発の場合は、 [GraphiQL インターフェイス](/help/headless/graphql-api/graphiql-ide.md).
 
-認証のために、サードパーティのサービスは[アクセストークンを取得](#retrieving-access-token)する必要があります。その後、このトークンは [GraphQL リクエストで使用](#use-access-token-in-graphql-request)できます。
+認証の場合、サードパーティのサービスは [アクセストークンの取得](#retrieving-access-token) そうなれば [GraphQL Request で使用](#use-access-token-in-graphql-request).
 
 ## アクセストークンの取得 {#retrieving-access-token}
 
-詳しくは、[サーバー側 API のアクセストークンの生成](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)を参照してください。
+詳しくは、 [サーバー側 API 用のアクセストークンの生成](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) 詳細はこちら。
 
 ## GraphQL リクエストでのアクセストークンの使用 {#use-access-token-in-graphql-request}
 
-サードパーティのサービスが AEM インスタンスに接続するには、*アクセストークン*&#x200B;が必要です。サービスは次に、このトークンを POST リクエストの `Authorization` ヘッダーに追加する必要があります。
+サードパーティのサービスがAEMインスタンスに接続するには、次の条件が満たされている必要があります。 *アクセストークン*. サービスは次に、このトークンを POST リクエストの `Authorization` ヘッダーに追加する必要があります。
 
 例えば、GraphQL の Authorization ヘッダーは次のようになります。
 
@@ -36,8 +36,8 @@ Authorization: Bearer <access_token>
 
 ## 権限の要件 {#permission-requirements}
 
-アクセストークンを使用して行われるすべてのリクエストは、実際には、*そのトークンを生成したユーザーアカウントによって*&#x200B;行われます。
+アクセストークンを使用しておこなわれたすべてのリクエストがおこなわれます *トークンを生成したユーザーアカウント別*.
 
-つまり、GraphQL クエリの実行に必要な権限がアカウントにあることを確認する必要があります。
+このユーザーアカウントは、GraphQLクエリを実行するために必要な権限がアカウントにあることを確認する必要があることを意味します。
 
-この確認は、ローカルインスタンスで GraphiQL を使用して行えます。権限について詳しくは、[こちら](/help/headless/security/permissions.md)を参照してください。
+これらの権限は、ローカルインスタンスで GraphiQL を使用して確認できます。 権限について詳しくは、[こちら](/help/headless/security/permissions.md)を参照してください。

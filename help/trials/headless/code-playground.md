@@ -4,10 +4,10 @@ description: CodePen サンプルアプリと JavaScript 用 AEM ヘッドレス
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 14%
+source-wordcount: '980'
+ht-degree: 11%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 14%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="サンプル CodePen アプリの起動"
->abstract="このガイドでは、体験版環境から基本的な JavaScript web アプリへの JSON データのクエリについて説明します。以前の学習モジュールでモデル化および作成したコンテンツフラグメントを使用するので、このガイドに進む前に、最初にこれらのガイドを確認してください。"
+>abstract="このガイドでは、体験版環境から基本的な JavaScript web アプリへの JSON データのクエリについて説明します。前の学習モジュールでモデル化して作成したコンテンツフラグメントを使用します。 必要に応じて、このガイドに進む前に、まずガイドを操作します。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
@@ -31,9 +31,9 @@ ht-degree: 14%
 
 ## CodePen {#codepen}
 
-CodePen は、フロントエンド Web 開発用のオンラインコードエディターで、プレイグラウンドです。 ブラウザーでHTML、CSS、JavaScript コードを記述し、作業の結果をほぼ瞬時に確認できます。 作業内容を保存して他のユーザーと共有することもできます。 CodePen でアプリを作成しました。このアプリを使用して、体験環境から JSON データを取得できます。 [JavaScript 用AEMヘッドレスクライアント](https://github.com/adobe/aem-headless-client-js). このアプリをそのまま使用するか、または独自の CodePen アカウントにフォークして、さらにカスタマイズできます。
+CodePen は、フロントエンド Web 開発用のオンラインコードエディターで、プレイグラウンドです。 これにより、HTML、CSS、JavaScript コードをブラウザーに記述して、作業の結果をほぼ瞬時に確認できます。 作業内容を保存して他のユーザーと共有することもできます。 Adobeは、を使用して体験環境から JSON データを取得できる CodePen でアプリを作成しました。 [JavaScript 用AEMヘッドレスクライアント](https://github.com/adobe/aem-headless-client-js). このアプリをそのまま使用するか、または独自の CodePen アカウントにフォークして、さらにカスタマイズできます。
 
-クリック **サンプルの CodePen アプリケーションを起動します。** ボタンをクリックすると、CodePen のアプリが表示されます。 デスクトップアプリケーションは、JavaScript を使用して JSON データを取得する最小限の例として機能します。 サンプルアプリは、基になるコンテンツフラグメントモデルの構造に関係なく、返される JSON コンテンツをレンダリングするように設計されています。 デフォルトでは、アプリケーションは `aem-demo-assets` 試用環境に含まれる永続的なクエリ。 次のような JSON 応答が表示されます。
+クリック **サンプルの CodePen アプリケーションを起動します。** ボタンをクリックすると、CodePen のアプリが表示されます。 デスクトップアプリケーションは、JavaScript を使用して JSON データを取得する最小限の例として機能します。 サンプルアプリは、基になるコンテンツフラグメントモデルの構造に関係なく、返される JSON コンテンツをレンダリングするように設計されています。 デフォルトでは、デスクトップアプリケーションは `aem-demo-assets` 試用環境に含まれる永続的なクエリ。 次のような JSON 応答が表示されます。
 
 ```json
 {
@@ -53,15 +53,15 @@ CodePen について少し理解したので、次に、前のモジュールで
 
 ## JavaScript コードのチュートリアル {#code-walkthrough}
 
-この **JS** CodePen の右側のパネルには、サンプルアプリケーションの JavaScript が含まれています。 2 行目から、JavaScript 用AEMヘッドレスクライアントを Skypack CDN から読み込みます。 Skypack は、ビルド手順を必要とせずに開発を容易にするために使用されますが、独自のプロジェクトでAEM Headless Client と NPM または Yarn を使用することもできます。 使用手順については、 [README](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) を参照してください。
+この **JS** ペインの右側にある CodePen には、サンプルアプリケーションの JavaScript が含まれています。 2 行目から、JavaScript 用AEMヘッドレスクライアントを Skypack CDN から読み込みます。 Skypack は、ビルド手順を必要とせずに開発を容易にするために使用されますが、独自のプロジェクトでAEM Headless Client と NPM または Yarn を使用することもできます。 使用手順については、 [README](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) を参照してください。
 
 ```javascript
 import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headless-client-js@v3.2.0';
 ```
 
-6 行目では、公開ホストの詳細を `publishHost` クエリパラメーター。 これは、AEMヘッドレスクライアントがデータを取得するホストです。 これは通常はアプリにコード化されますが、CodePen アプリが異なる環境で簡単に動作できるように、クエリパラメーターを使用します。
+6 行目で、パブリッシュホストの詳細が `publishHost` クエリパラメーター。 このパラメーターは、AEMヘッドレスクライアントがデータを取得するホストです。 この機能は通常、アプリにコード化されますが、CodePen アプリが異なる環境で簡単に動作できるように、クエリパラメーターを使用します。
 
-12 行目にAEM Headless Client を設定します。
+12 行目でAEM Headless Client を設定します。
 
 ```javascript
 const aemHeadlessClient = new AdobeAemHeadlessClientJs({
@@ -75,15 +75,15 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 
 >[!NOTE]
 >
->この **serviceURL** は、CORS の問題を回避するために、プロキシAdobeIO Runtime 関数を使用するように設定されています。 これは、独自のプロジェクトに必要なわけではありませんが、CodePen アプリが体験環境で動作するために必要になります。 プロキシ関数は、 **publishHost** クエリパラメーターで指定された値。
+>この **serviceURL** は、CORS の問題を回避するために、Adobe I/O Runtimeのプロキシ機能を使用するように設定されています。 このプロキシは、独自のプロジェクトには必要ありませんが、CodePen アプリが体験環境で動作するには必要です。 プロキシ関数は、 **publishHost** クエリパラメーターで指定された値。
 
-最後に、関数 `fetchJsonFromGraphQL()` は、AEMヘッドレスクライアントを使用して取得リクエストを実行するために使用されます。 この呼び出しは、コードが変更されるたびに実行されます。または、 **再取得** リンク。 実際の `aemHeadlessClient.runPersistedQuery(..)` 呼び出しは 34 行目で発生します。 少し後で、この JSON データのレンダリング方法を変更しますが、現時点では、このデータを `#output` div を `resultToPreTag(queryResult)` 関数に置き換えます。
+最後に、関数 `fetchJsonFromGraphQL()` は、AEMヘッドレスクライアントを使用して取得リクエストを実行するために使用されます。 この呼び出しは、コードが変更されるたびに実行されます。または、 **再取得** リンク。 実際の `aemHeadlessClient.runPersistedQuery(..)` 呼び出しは 34 行目で発生します。 少し後で、この JSON データのレンダリング方法を変更しますが、今は、に印刷します。 `#output` div を `resultToPreTag(queryResult)` 関数に置き換えます。
 
 ## 永続クエリからデータを取得 {#use-persisted-query}
 
-行 25 で、アプリがデータを取得する、永続化されたGraphQLのクエリを示します。 永続化されたクエリ名は、エンドポイントの名前 ( `your-project` または `aem-demo-assets`) に続いてスラッシュを付け、次にクエリ名を付けます。 前のモジュールの指示に正確に従った場合、作成した永続化されたクエリは、 `your-project` endpoint.
+行 25 で、アプリがデータを取得する必要がある、永続化されたGraphQLのクエリを指定します。 永続化されたクエリ名は、エンドポイントの名前 ( `your-project` または `aem-demo-assets`) に続いてスラッシュを付け、次にクエリ名を付けます。 前のモジュールの指示に正確に従った場合、作成した永続化されたクエリは、 `your-project` endpoint.
 
-1. を更新します。 `persistedQueryName` 変数を使用して、前のモジュールで作成した永続化されたクエリを使用します。 命名の提案に従った場合は、という名前の永続的なクエリを作成しました。 `adventure-list` 内 `your-project` エンドポイントを選択し、 `persistedQueryName` 変数を `your-project/adventure-list`:
+1. を更新します。 `persistedQueryName` 変数を使用するので、前のモジュールで作成した永続化されたクエリを使用します。 命名の提案に従った場合は、という名前の永続的なクエリを作成しました。 `adventure-list` 内 `your-project` エンドポイントを選択し、 `persistedQueryName` 変数を `your-project/adventure-list`:
 
    ```javascript
    //
@@ -98,7 +98,7 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 
 ## JSON レンダリングの変更 {#change-rendering}
 
-JSON は、そのまま `pre` タグに貼り付けます。これはあまり創造的ではありません。 CodePen を切り替えて、 `resultToDom()` 関数を使用して、より興味深い結果を生成するために JSON 応答を繰り返し処理する方法を説明する代わりに、関数を使用する必要があります。
+JSON は、そのまま `pre` タグに貼り付けます。このタグはクリエイティブすぎません。 CodePen を切り替えて、 `resultToDom()` 関数を使用して、より興味深い結果を生成するために JSON 応答を繰り返し処理する方法を説明する代わりに、関数を使用する必要があります。
 
 1. この変更を行うには、37 行目をコメントアウトし、40 行目からコメントを削除します。
 
@@ -110,14 +110,14 @@ JSON は、そのまま `pre` タグに貼り付けます。これはあまり�
    resultToDom(queryResult);
    ```
 
-1. また、この関数は、JSON 応答に含まれる画像を `img` タグを使用します。 この **冒険** 作成したコンテンツフラグメントには画像が含まれていません。 `aem-demo-assets/adventures-all` 行 25 を変更して永続化されたクエリ
+1. この関数は、JSON 応答に含まれる画像を、 `img` タグを使用します。 この **冒険** 作成したコンテンツフラグメントには画像が含まれていません。 `aem-demo-assets/adventures-all` 行 25 を変更して永続化されたクエリ
 
    ```javascript
    persistedQueryName = 'aem-demo-assets/adventures-all';
    ```
 
-このクエリにより、画像と `resultToDom()` 関数はそれらをインラインでレンダリングします。
+このクエリは、画像を含む JSON 応答を生成し、 `resultToDom()` 関数は、それらをインラインでレンダリングします。
 
 ![adventures-all クエリと resultToDom レンダリング関数の結果](assets/do-not-localize/adventures-all-query-result.png)
 
-モデルとクエリの構築が完了したので、コンテンツチームは簡単に引き継ぐことができます。 次のモジュールでは、コンテンツ作成者のフローを示します。
+モデルとクエリの構築が完了したので、コンテンツチームは簡単に引き継ぐことができます。 次のモジュールでは、コンテンツ作成者のフローを表示します。

@@ -1,6 +1,6 @@
 ---
 title: 高度な URL 設定
-description: 製品ページとカテゴリページの URL をカスタマイズする方法について説明します。このカスタマイズにより、実装で URL を検索エンジン向けに最適化し、検出を促進できます。
+description: 製品ページとカテゴリページの URL をカスタマイズする方法について説明します。のカスタマイズにより、実装で検索エンジンの URL を最適化し、検出を促進できます。
 sub-product: Commerce
 version: Cloud Service
 doc-type: technical-video
@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '2197'
-ht-degree: 95%
+source-wordcount: '2172'
+ht-degree: 48%
 
 ---
 
@@ -21,15 +21,15 @@ ht-degree: 95%
 
 >[!NOTE]
 >
-> 検索エンジン最適化（SEO）は、多くのマーケティング担当者にとって重要な課題となっています。その結果、多くの Adobe Experience Manager（AEM）as a Cloud Service プロジェクトで SEO の懸念に対処する必要があります。詳しくは、[SEO と URL 管理のベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html?lang=ja)を参照してください。
+> 検索エンジン最適化（SEO）は、多くのマーケティング担当者にとって重要な課題となっています。その結果、Adobe Experience Manager(AEM)as a Cloud Serviceの多くのプロジェクトで、SEO の懸念に対処する必要があります。 詳しくは、 [SEO および URL 管理のベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html) を参照してください。
 
-[AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)は、製品ページとカテゴリページの URL をカスタマイズする高度な設定を提供します。多くの実装では、検索エンジン最適化（SEO）用にこれらの URL をカスタマイズします。次のビデオでは、`UrlProvider` サービスと [Sling マッピング](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)の機能を設定して、製品ページとカテゴリページの URL をカスタマイズする方法について詳しく説明します。
+[AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)は、製品ページとカテゴリページの URL をカスタマイズする高度な設定を提供します。多くの実装では、検索エンジン最適化 (SEO) 用にこれらの URL をカスタマイズしています。 次のビデオでは、`UrlProvider` サービスと [Sling マッピング](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)の機能を設定して、製品ページとカテゴリページの URL をカスタマイズする方法について詳しく説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## 設定 {#configuration}
 
-SEO の要件とニーズに応じて `UrlProvider` サービスを設定するには、プロジェクトで&#x200B;_CIF URL プロバイダーの設定_&#x200B;の OSGI 設定を指定する必要があります。
+次の手順で `UrlProvider` SEO の要件とニーズに従って、プロジェクトでは _CIF URL プロバイダーの設定_.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ SEO の要件とニーズに応じて `UrlProvider` サービスを設定する�
 
 ### 製品ページの URL 形式 {#product}
 
-製品ページの URL を設定するもので、次のオプションをサポートしています。
+製品ページの URL を設定します。次のオプションをサポートします。
 
 * `{{page}}.html/{{sku}}.html#{{variant_sku}}`（デフォルト）
 * `{{page}}.html/{{sku}}/{{url_key}}.html#{{variant_sku}}`
@@ -47,32 +47,32 @@ SEO の要件とニーズに応じて `UrlProvider` サービスを設定する�
 * `{{page}}.html/{{category}}/{{url_key}}.html#{{variant_sku}}`
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
 
-[Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)の場合は次のとおりです。
+もし [Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` は、 `/content/venia/us/en/products/product-page`
-* `{{sku}}` が製品の sku に置き換えられている（例： ） `VP09`
+* `{{sku}}` が製品の SKU に置き換えられている（例： ） `VP09`
 * `{{url_key}}` は製品の `url_key` プロパティ。例： `lenora-crochet-shorts`
 * `{{url_path}}` は製品の `url_path`例： `venia-bottoms/venia-pants/lenora-crochet-shorts`
 * `{{variant_sku}}` は、現在選択されているバリアントに置き換えられます（例： ）。 `VP09-KH-S`
 
-`url_path` が非推奨になったため、あらかじめ定義された製品のURLフォーマットは製品の `url_rewrites` を使用し、`url_path` が利用できない場合は最もパスセグメントが多いものを代替手段として選択します。
+以降 `url_path` 廃止されました。事前定義済みの製品 URL 形式では、製品の `url_rewrites` を選択し、最も多くのパスセグメントを持つセグメントを、 `url_path` は使用できません。
 
-上記のサンプルデータでは、デフォルトの URL 形式を使用して設定された製品バリアント URL は `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S` のようになります。
+上記の例のデータでは、デフォルトの URL 形式を使用して書式設定された製品バリアント URL は次のようになります。 `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
 
 ### カテゴリページの URL 形式 {#product-list}
 
-カテゴリページまたは製品リストページの URL を設定するもので、次のオプションをサポートしています。
+カテゴリまたは製品リストのページの URL を設定します。次のオプションをサポートします。
 
 * `{{page}}.html/{{url_path}}.html`（デフォルト）
 * `{{page}}.html/{{url_key}}.html`
 
-[Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)の場合は次のとおりです。
+もし [Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` は、 `/content/venia/us/en/products/category-page`
 * `{{url_key}}` はカテゴリの `url_key` プロパティ
 * `{{url_path}}` はカテゴリの `url_path`
 
-上記のサンプルデータでは、デフォルトの URL 形式を使用して設定されたカテゴリページ URL は `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html` のようになります。
+上記の例のデータでは、デフォルトの URL 形式を使用して書式設定されたカテゴリページの URL は次のようになります。 `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
 
 >[!NOTE]
 > 
@@ -80,40 +80,44 @@ SEO の要件とニーズに応じて `UrlProvider` サービスを設定する�
 
 ### ストア固有の設定 {#store-specific-urlformats}
 
-_CIF URL プロバイダーの設定_ で設定したシステム全体のカテゴリおよび製品ページの URL 形式は、各ストアに対して変更できます。
+システム全体のカテゴリおよび製品ページの URL 形式 ( _CIF URL プロバイダーの設定_ は、各ストアに対して変更できます。
 
-CIF 設定では、エディターが別の製品またはカテゴリページの URL 形式を選択できます。何も選択されていない場合、実装はシステム全体の設定にフォールバックします。
+CIF 設定では、エディターが別の製品またはカテゴリページの URL 形式を選択できます。ここで何も選択されていない場合、実装はシステム全体の設定にフォールバックされます。
 
-ライブ Web サイトの URL 形式を変更すると、サイトのオーガニックトラフィックに悪影響を与える可能性があります。以下の [ベストプラクティス](#best-practices) を参照し、事前に URL 形式の変更を慎重に計画してください。
+ライブ Web サイトの URL 形式を変更すると、サイトのオーガニックトラフィックに悪影響を与える可能性があります。詳しくは、 [ベストプラクティス](#best-practices) を参照し、事前に URL 形式の変更を慎重に計画します。
 
 ![CIF 設定での URL 形式](assets/store-specific-url-formats.png)
 
 >[!NOTE]
 >
-> URL 形式のストア固有の設定には、 [CIF コアコンポーネント 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) と最新バージョンの Adobe Experience Manager コンテンツおよび Commerce アドオンが必要です。
+> URL 形式のストア固有の設定には、次が必要です [CIF コアコンポーネント 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) およびAdobe Experience Manager Content and Commerce アドオンの最新バージョン。
 
 ## カテゴリ対応の製品ページ URL {#context-aware-pdps}
 
 製品 URL にカテゴリ情報をエンコードできるので、複数のカテゴリに属する製品に対しても、複数の製品 URL でアドレス指定できます。
 
-デフォルトの URL 形式では、次のスキームを使用した代替値の 1 つが選択されます。
+デフォルトの URL 形式では、次のスキームを使用して、考えられる代替方法の 1 つを選択します。
 
 * `url_path` が e コマースバックエンドによって定義されている場合は、それを使用します（非推奨）
 * `url_rewrites` から、製品の `url_key` で終わる URL を代替値として使用します
 * これらの代替値から、パスセグメントが最も多いものを使用します
 * 複数ある場合は、e コマースバックエンドで指定された順序で最初の 1 つを使用します
 
-このスキームは、子カテゴリが親カテゴリよりも具体的であるという前提に基づいて上位カテゴリが最も上位にある `url_path` を選択します。そのように選択された `url_path` は _正規_ と見なされ製品ページまたは製品サイトマップの正規リンクに常に使用されます。
+このスキームは、 `url_path` 子カテゴリが親カテゴリよりも具体的であるという前提に基づき、最も上位のカテゴリを持つ。 選択した `url_path` 考慮される _標準_ とは、常に製品ページの正規リンクまたは製品サイトマップで使用されます。
 
-ただし、買い物客がカテゴリページから製品ページに移動する場合、またはある製品ページから同じカテゴリ内の別の関連製品ページに移動する場合は、現在のカテゴリのコンテキストを維持することをお勧めします。この場合、`url_path` の選択は、上記の _正規_ の選択よりも現在のカテゴリのコンテキスト内にある代替値を優先する必要があります。
+ただし、買い物客がカテゴリページから製品ページに移動する場合、またはある製品ページから同じカテゴリ内の別の関連製品ページに移動する場合は、現在のカテゴリのコンテキストを維持することをお勧めします。この場合、 `url_path` 選択では、現在のカテゴリのコンテキスト内にある代替オプションを、 _標準_ 上記の選択。
 
-
-この機能は、 _CIF URL プロバイダーの設定_ に組み込まれている必要があります。有効にすると、次の場合に、選択により代替値のスコアが高くなります。
+この機能は、 _CIF URL プロバイダーの設定_. 有効にした場合、選択範囲のスコアが高くなると、
 
 * 最初から特定のカテゴリの `url_path` の一部に一致する（ファジープレフィックスの一致）
 * または、任意の場所で特定のカテゴリの `url_key` と一致する（完全な部分一致）
 
-例えば、以下の [製品クエリ](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) に対する応答について考えてみます。ユーザーが「New Products / New in Summer 2022」カテゴリページを表示していて、ストアがデフォルトのカテゴリページの URL 形式を使用している場合、代替値の「new-products/new-in-summer-2022/gold-cirque-earrings.html」は、最初の「new-products」と「new-in-summer-2022」からのコンテキストのパスセグメントの 2 つと一致します。ストアがカテゴリ `url_key` のみを含んだカテゴリページ URL 形式を使用している場合でも、コンテキストの `url_key` と一致するため、同じ代替値が選択されます。どちらの場合も、製品ページの URL は「new-products/new-in-summer-2022/gold-cirque-earrings.html」の `url_path` に対して作成されます。
+例えば、以下の [製品クエリ](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) に対する応答について考えてみます。以下の場合、
+
+* ユーザーが「2022 年夏の新製品/新規」カテゴリページに移動している
+* ストアはデフォルトのカテゴリページ URL 形式を使用します
+
+代替の「new-products/new-in-summer-2022/gold-cirque-earrings.html」は、最初からのコンテキストのパスセグメントの 2 つに一致します。 つまり、「new-products」と「new-in-summer-2022」です。 ストアがカテゴリ `url_key` のみを含んだカテゴリページ URL 形式を使用している場合でも、コンテキストの `url_key` と一致するため、同じ代替値が選択されます。どちらの場合も、製品ページの URL は「new-products/new-in-summer-2022/gold-cirque-earrings.html」 `url_path`.
 
 ```
 {
@@ -153,13 +157,13 @@ CIF 設定では、エディターが別の製品またはカテゴリページ�
 
 ## 特定のカテゴリおよび製品ページ {#specific-pages}
 
-カタログのカテゴリまたは製品の特定のサブセットに対してのみ、 [複数のカテゴリおよび製品ページ](../authoring/multi-template-usage.md) を作成することができます。
+次を作成できます。 [マルチカテゴリページと製品ページ](../authoring/multi-template-usage.md) カタログの特定のカテゴリまたは製品のサブセットのみ。
 
 ### 選択条件 {#specific-pages-selection}
 
-特定のカテゴリページの選択はカテゴリの `url_path` または `url_key` に基づいて簡単に行えます。一致するサブカテゴリは、完全なカテゴリ `url_path` を含む URL 形式でのみサポートされます。それ以外の場合は、`url_key` の完全一致のみが可能です。
+特定のカテゴリページの選択はカテゴリの `url_path` または `url_key` に基づいて簡単に行えます。一致するサブカテゴリは、完全なカテゴリを含む URL 形式でのみサポートされます `url_path`. それ以外の場合は、`url_key` の完全一致のみが可能です。
 
-特定の製品ページは、製品の SKU またはカテゴリのいずれかによって選択されます。後者の場合は、一部のカテゴリ情報を製品 URL にエンコードする必要があります。これは、一部のデフォルト URL 形式でのみ使用できます。SKU またはカテゴリによる特定のページ選択をサポートする URL 形式の比較については、以下の表を参照してください。
+特定の製品ページは、製品の SKU またはカテゴリによって選択されます。 後者の場合は、製品 URL でカテゴリ情報をエンコードする必要があります。 この機能は、一部のデフォルト URL 形式でのみ使用できます。 次の表に、SKU またはカテゴリ別の特定のページ選択をサポートする URL 形式の比較を示します。
 
 
 | URL 形式 | SKU 別 | カテゴリ別 |
@@ -180,15 +184,15 @@ CIF 設定では、エディターが別の製品またはカテゴリページ�
 
 ### ディープリンク {#specific-pages-deep-linking}
 
-`UrlProvider` は、特定のカテゴリおよび製品ページへのディープリンクをオーサー層インスタンスで生成するように事前に設定されています。これは、編集者がプレビューモードでサイトを閲覧し、特定の製品ページまたはカテゴリページに移動したあと編集モードに切り替えてページを編集する場合に便利な機能です。
+`UrlProvider` は、特定のカテゴリおよび製品ページへのディープリンクをオーサー層インスタンスで生成するように事前に設定されています。この機能は、編集者がプレビューモードでサイトを参照し、特定の製品またはカテゴリページに移動して、編集モードに戻ってページを編集する場合に役立ちます。
 
-一方、パブリッシュ層インスタンスでは、例えば検索エンジンのランキングを落とさないように、カタログページの URL を安定した状態に保つ必要があります。そのため、パブリッシュ層インスタンスは、デフォルトでは特定のカタログページへのディープリンクをレンダリングしません。この動作を変更するには、常に特定のページの URL を生成するように _CIF URL プロバイダー固有のページ戦略_ を設定します。
+一方、パブリッシュ層インスタンスでは、例えば検索エンジンのランキングを落とさないように、カタログページの URL を安定した状態に保つ必要があります。このパブリッシュ層のため、インスタンスは、デフォルトでは特定のカタログページへのディープリンクをレンダリングしません。 この動作を変更するには、 _CIF URL プロバイダー固有のページ戦略_ は、常に特定のページ URL を生成するように設定できます。
 
 ### 複数のカタログページ {#multiple-product-pages}
 
-編集担当者がサイトのトップレベルのナビゲーションを完全に制御したい場合、単一のカタログページを使用してカタログのトップレベルのカテゴリをレンダリングすることが望ましくない場合があります。その代わりに、編集担当者は、トップレベルナビゲーションに含めるカタログのカテゴリごとに 1 つずつ、複数のカタログページを作成できます。
+編集者がサイトの最上位ナビゲーションを完全に制御したい場合、カタログの最上位カテゴリをレンダリングする単一のカタログページを使用するのは望ましくない場合があります。 代わりに、編集者は複数のカタログページを作成できます。トップレベルのナビゲーションに含めるカタログのカテゴリごとに 1 つずつ作成します。
 
-使用例として、各カタログページには、カタログページ用に設定されたカテゴリに固有の製品ページやカテゴリページへの参照を含めることができます。この `UrlProvider` はこれらを使用して、設定済みカテゴリのページおよびカテゴリへのリンクを作成します。 ただし、パフォーマンス上の理由から、サイトのナビゲーションルート／ランディングページの直接のカタログページの子のみが考慮されます。
+使用例として、各カタログページには、カタログページ用に設定されたカテゴリに固有の製品ページやカテゴリページへの参照を含めることができます。この `UrlProvider` はこれらの接続を使用して、設定済みカテゴリのページおよびカテゴリへのリンクを作成します。 ただし、パフォーマンス上の理由から、サイトのナビゲーションルート／ランディングページの直接のカタログページの子のみが考慮されます。
 
 カタログページの製品ページとカテゴリページをそのカタログページの下位に配置することをお勧めします。そうしないと、ナビゲーションやパンくずなどのコンポーネントが正しく機能しない場合があります。
 
@@ -200,13 +204,13 @@ CIF 設定では、エディターが別の製品またはカテゴリページ�
 
 ### カスタム URL 形式 {#custom-url-format}
 
-カスタム URL 形式を指定するには、プロジェクトで [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) または [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) サービスインターフェイスを実装し、その実装を OSGi サービスとして登録します。これらの実装が用意されている場合は、設定されている事前定義済み形式の代わりに、その実装が使用されます。複数の実装が登録されている場合は、サービスランキングの高い実装が、サービスランキングの低い実装と入れ替わります。
+カスタム URL 形式を指定するために、プロジェクトは、 [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) または [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) サービスインターフェイスを使用し、実装を OSGi サービスとして登録します。 これらの実装が存在する場合は、設定済みの事前定義済み形式を置き換えます。 複数の実装が登録されている場合、サービスランキングが高い実装は、低いサービスランキングの実装に置き換えられます。
 
 カスタム URL 形式の実装では、指定されたパラメーターから URL を作成するメソッドと URL を解析して同じパラメーターを返すメソッドのペアを実装する必要があります。
 
 ### Sling マッピングとの結合 {#sling-mapping}
 
-また、 `UrlProvider`を使用する場合、 [Sling マッピング](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) を使用して、URL を書き換え、処理します。 AEM アーキタイププロジェクトでは、ポート 4503（パブリッシュ）および 80（ディスパッチャー）の Sling マッピングを設定する[設定例](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish)も提供されています。
+また、 `UrlProvider`を使用する場合、 [Sling マッピング](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) を使用して、URL を書き換え、処理します。 AEM Archetype プロジェクトには、 [サンプル設定](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) ポート 4503（パブリッシュ）および 80(Dispatcher) の一部の Sling マッピングを設定する場合。
 
 ### AEM Dispatcher との統合 {#dispatcher}
 
@@ -216,37 +220,37 @@ URL の書き換えは、`mod_rewrite` モジュールを備えた AEM Dispatche
 
 ### 最適な URL 形式を選択 {#choose-url-format}
 
-前述したように、使用可能なデフォルト形式の 1 つを選択するか、カスタム形式を実装するかさえ、ストアのニーズと要件に大きく依存します。次の提案は、知識に基づいた決定を下すのに役立つ場合があります。
+前述したように、使用可能なデフォルト形式の 1 つを選択するか、カスタム形式を実装するかさえ、ストアのニーズと要件に大きく依存します。以下の提案は、教育に基づいた決定を下すのに役立ちます。
 
 _**SKU を含む製品ページの URL 形式を使用します。**_
 
-CIF コアコンポーネントでは、すべてのコンポーネントで SKU をプライマリ識別子として使用します。製品ページの URL 形式に SKU が含まれていない場合、URL を解決するには GraphQL クエリが必要です。これは、最初のバイトを取得するまでの時間に影響を及ぼす可能性があります。また、買い物客が検索エンジンを使用して SKU で製品を見つけることができる方が望ましい場合もあります。
+CIF コアコンポーネントでは、すべてのコンポーネントで SKU をプライマリ識別子として使用します。 製品ページの URL 形式に SKU が含まれていない場合、それを解決するにはGraphQLクエリが必要です。 この解決は、最初のバイトまでの時間に影響を与える場合があります。 また、買い物客が検索エンジンを使用して SKU 別に商品を見つけることが望ましい場合もあります。
 
 _**カテゴリコンテキストを含む製品ページの URL 形式を使用します。**_
 
-CIF URL プロバイダーの一部の機能は、カテゴリ `url_key` やカテゴリ `url_path` など、カテゴリコンテキストをエンコードする製品 URL 形式を使用する場合にのみ使用できます。これらの機能が新しいストアに必要ない可能性がある場合でも、最初にこれらの URL 形式のいずれかを使用すると、将来の移行作業を軽減するのに役立ちます。
+CIF URL プロバイダーの一部の機能は、カテゴリなど、カテゴリコンテキストをエンコードする製品 URL 形式を使用する場合にのみ使用できます `url_key` またはカテゴリ `url_path`. これらの機能が新しいストアに必要ない可能性がある場合でも、最初にこれらの URL 形式のいずれかを使用すると、将来の移行作業を軽減するのに役立ちます。
 
 _**URL の長さとエンコードされた情報のバランス。**_
 
-カタログのサイズ、特にカテゴリツリーのサイズと深さによっては、カテゴリの完全な `url_path` を URL にエンコードすることが合理的でない場合があります。その場合、代わりにカテゴリの `url_key` のみを含めることで、URL の長さを短くすることができます。これにより、カテゴリ `url_path` を使用する際に利用できるほとんどの機能がサポートされるようになります。
+カタログのサイズ、特にカテゴリツリーのサイズと深さによっては、カテゴリの完全な `url_path` を URL にエンコードすることが合理的でない場合があります。その場合、カテゴリの `url_key` 代わりに、 このメソッドは、カテゴリを使用する際に使用できる機能のほとんどをサポートします `url_path`.
 
-また、 [Sling マッピング](#sling-mapping) sku と商品を組み合わせるには `url_key`. ほとんどの e コマースシステムでは、SKU は特定の形式に従っており、受信リクエストのために SKU と `url_key` を分離することは簡単にできます。そのことを念頭に置くと、製品ページの URL を `/p/{{category}}/{{sku}}-{{url_key}}.html` に、カテゴリ URL を `/c/{{url_key}}.html` にそれぞれ書き換えることができます。この `/p` および `/c` 製品ページとカテゴリページを他のコンテンツページと区別するためには、プレフィックスが引き続き必要です。
+また、 [Sling マッピング](#sling-mapping) SKU と製品を組み合わせるには `url_key`. ほとんどの e コマースシステムでは、SKU は特定の形式に従い、SKU を `url_key` というのは、受信するリクエストを簡単に可能にするためです。 そのため、製品ページの URL を `/p/{{category}}/{{sku}}-{{url_key}}.html`、およびカテゴリ URL を `/c/{{url_key}}.html` それぞれ この `/p` および `/c` 製品ページとカテゴリページを他のコンテンツページと区別するためには、プレフィックスが引き続き必要です。
 
 ### 新しい URL 形式への移行 {#migrate-url-formats}
 
-デフォルトの URL 形式の多くは、何らかの形で相互に互換性があります。つまり、ある形式の URL が別の形式の URL で解析される可能性があります。これは、URL 形式間の移行に役立ちます。
+デフォルトの URL 形式の多くは、互いに何らかの互換性があります。つまり、ある形式の URL は別の形式の URL で解析される場合があります。 これは、URL 形式間の移行に役立ちます。
 
-一方、検索エンジンでは、すべてのカタログページを新しい URL 形式で再度クロールするのにしばらく時間が必要になります。このプロセスをサポートし、エンドユーザーエクスペリエンスを向上させるために、古い URL から新しい URL にユーザーを転送するリダイレクトを提供することをお勧めします。
+一方、検索エンジンでは、すべてのカタログページを新しい URL 形式で再クロールする時間が必要です。 このプロセスをサポートし、エンドユーザーエクスペリエンスを向上させるために、古い URL から新しい URL にユーザーを転送するリダイレクトを提供することをお勧めします。
 
-その 1 つのアプローチとして考えられるのは、ステージング環境を実稼動 e コマースバックエンドに接続し、新しい URL 形式を使用するように設定することです。その後、ステージング環境と実稼動環境の両方で [CIF 製品サイトマップジェネレーターで生成された製品サイトマップ](../../overview/seo-and-url-management.md) を取得し、それらを使用して [Apache httpd 書き換えマップ](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) を作成します。この書き換えマップは、新しい URL 形式のロールアウトと共に Dispatcher にデプロイすることはできません。
+その 1 つのアプローチとして考えられるのは、ステージング環境を実稼動 e コマースバックエンドに接続し、新しい URL 形式を使用するように設定することです。その後、ステージング環境と実稼動環境の両方で [CIF 製品サイトマップジェネレーターで生成された製品サイトマップ](../../overview/seo-and-url-management.md) を取得し、それらを使用して [Apache httpd 書き換えマップ](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) を作成します。その後、この書き換えマップを、新しい URL 形式のロールアウトと共に Dispatcher にデプロイできます。
 
 ## 例 {#example}
 
-[Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)プロジェクトには、製品ページとカテゴリページでのカスタム URL を使用方法を示す設定例が含まれています。これにより、各プロジェクトで、SEO のニーズに応じて、製品ページとカテゴリページの個々の URL パターンを設定できます。上記の CIF `UrlProvider` と Sling マッピングの組み合わせが使用されます。
+[Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)プロジェクトには、製品ページとカテゴリページでのカスタム URL を使用方法を示す設定例が含まれています。この設定を使用すると、各プロジェクトで、SEO のニーズに応じて、製品ページとカテゴリページの個々の URL パターンを設定できます。 上記の CIF `UrlProvider` と Sling マッピングの組み合わせが使用されます。
 
 >[!NOTE]
 >
->この設定は、プロジェクトで使用する外部ドメインで調整する必要があります。Sling マッピングは、ホスト名とドメインに基づいて動作します。したがって、この設定はデフォルトで無効になっており、デプロイ前に有効にする必要があります。これを行うには、使用されているドメイン名に従って `ui.content/src/main/content/jcr_root/etc/map.publish/https` の Sling マッピング `hostname.adobeaemcloud.com` フォルダーの名前を変更し、`resource.resolver.map.location="/etc/map.publish"` をプロジェクトの `JcrResourceResolver` 設定に追加してこの設定を有効にします。
+>この設定は、プロジェクトで使用する外部ドメインで調整する必要があります。Sling マッピングは、ホスト名とドメインに基づいて動作します。したがって、この設定はデフォルトで無効になっており、デプロイ前に有効にする必要があります。これをおこなうには、Sling マッピングの名前を変更します。 `hostname.adobeaemcloud.com` フォルダー内 `ui.content/src/main/content/jcr_root/etc/map.publish/https` 使用されているドメイン名に従って、 `resource.resolver.map.location="/etc/map.publish"` から `JcrResourceResolver` プロジェクトの設定。
 
 ## その他のリソース {#additional}
 

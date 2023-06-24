@@ -4,10 +4,10 @@ seo-title: Repository Browser
 description: リポジトリーブラウザーは、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対して、リポジトリーへの読み取り専用ビューを提供します。
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 94%
+source-wordcount: '844'
+ht-degree: 56%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 94%
 
 ## はじめに {#introduction}
 
-リポジトリーブラウザーは、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対してリポジトリーへの読み取り専用ビューを提供する開発者ツールです。コンテンツ構造を見やすくし、コンテンツの表示やデバッグを容易にするように設計されています。
+リポジトリブラウザーは、オーサー層、パブリッシュ層、プレビュー層のすべての環境で、リポジトリに対する読み取り専用ビューを提供する開発者ツールです。 コンテンツ構造を見やすくし、コンテンツの表示やデバッグを容易にするように設計されています。
 
 開発者コンソールからアクセスでき、選択した環境のオーサーインスタンスまたはパブリッシュインスタンスのリポジトリーを参照するために使用できます。
 
@@ -41,7 +41,7 @@ ht-degree: 94%
 * オーサーインスタンスとパブリッシュインスタンスを表示するには、ユーザーは Admin Console で「**Cloud Manager - デベロッパーロール**」に割り当てられている必要があります。
 * さらに、オーサー層の場合、「AEM ユーザー」製品プロファイルを持つユーザーは最小限の読み取りアクセス権でリポジトリーブラウザーを表示できます。ユーザーの権限は、リポジトリーを参照する際に考慮されます。「AEM 管理者」製品プロファイルを持つユーザーは、完全な読み取りアクセス権でリポジトリーブラウザーを表示できます。
 
-ユーザー権限の設定について詳しくは、[Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ja)を参照してください。
+ユーザー権限の設定について詳しくは、[Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html)を参照してください。
 
 ### リポジトリーブラウザーの起動 {#launching-the-repository-browser}
 
@@ -52,29 +52,29 @@ ht-degree: 94%
    ![repobrowser1](/help/implementing/developing/tools/assets/repobrowser1.png)
 
 1. 次に、「**リポジトリーブラウザー**」タブをクリックします。
-1. 「**ポッド**」ドロップダウンリストをクリックして、オーサー層、パブリッシュ層、プレビュー層のいずれかに対応する任意のポッドを選択します。
+1. 作成者、公開、またはプレビューに対応するポッドを選択するには、 **ポッド** ドロップダウンリスト。
 
    ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 
-1. 下方の「**リポジトリーブラウザーを開く**」リンクをクリックして、リポジトリーブラウザーを起動します。これで、選択した階層の代表的なインスタンス（ポッド）に対応するブラウザーが起動します。これで、選択した階層の代表的なインスタンス（ポッド）に対応するブラウザーが起動します。その階層の特定のポッドは起動後は制御できないことに注意してください。
+1. 次をクリックして、リポジトリブラウザーを起動します： **リポジトリブラウザを開く** リンクを下にします。 選択した層の代表インスタンス（ポッド）に対応するブラウザーが起動します。 起動されたその層の特定のポッドは制御できません。
 
 ## 機能 {#features}
 
 ### 階層のナビゲーション {#navigate-the-hierarchy}
 
-左側のナビゲーションパネルを使用して、コンテンツ階層内を移動できます。各フォルダーまたはノードをクリックすると、そのフォルダーまたはノードの子が表示されます。フォルダー構造には、JCR ノードツリーのスーパーセットである Sling リソースツリーが反映されています。
+左側のナビゲーションペインを使用して、コンテンツ階層間を移動できます。 各フォルダーまたはノードをクリックすると、その子が表示されます。 フォルダー構造には、JCR ノードツリーのスーパーセットである Sling リソースツリーが反映されています。
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
 
-または、以下に示すように、「**パス**」フィールドにパスを入力して、パスに直接移動することもできます。これにより、左側のコンテンツ階層表示での場所も拡張されます。
+または、以下に示すように、「**パス**」フィールドにパスを入力して、パスに直接移動することもできます。このパスは、左側のコンテンツ階層ビューでも場所を展開します。
 
 ![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
 
-左側のフォルダーをクリックするたびに、「パス」フィールドにその場所が自動的に入力されます。 これは、後で使用するために値をコピーおよびペーストする場合に便利です。
+左側のフォルダーをクリックすると、「パス」フィールドにその場所が自動的に入力されます。 この機能は、後で使用するために値をコピー&amp;ペーストする場合に役立ちます。
 
-これに加えて、フォルダーをクリックすると、そのパスがクリックしたフォルダーに含まれるように URL が動的に変更されます。 これにより、ブックマーク可能な URL が可能になります。
+また、フォルダーをクリックすると、そのフォルダーのパスが含まれるように URL が動的に変更されます。 この機能を使用すると、ブックマーク可能な URL を作成できます。
 
-パブリッシュ層の場合、デフォルトでは、リポジトリーブラウザーには公開コンテンツのみが表示されます。したがって、`/conf` や `/home` などの特定のフォルダーは表示されません。
+パブリッシュの場合、デフォルトでは、リポジトリブラウザーに公開コンテンツのみが表示されるので、 `/conf` または `/home` は表示されません。
 
 これらの場所を表示するには、次の操作を行います。
 
@@ -86,7 +86,7 @@ ht-degree: 94%
 
    ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 
-1. パブリッシュインスタンス管理者用の新しい製品プロファイルを作成します。以下の例では、**DEV - AEM Administrators Publish** という名前が付いています。
+1. 公開管理者用の製品プロファイルを作成します。 以下の例では、**DEV - AEM Administrators Publish** という名前が付いています。
 
    ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
 
@@ -95,7 +95,7 @@ ht-degree: 94%
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
 1. 数分待ってから、**AEM オーサー**&#x200B;コンソールを開きます。
-1. 新しい製品プロファイルに対応するグループを、administrators グループのメンバーとして追加します。それには、オーサーインスタンスで&#x200B;**ツール／セキュリティ／グループ**&#x200B;を選択したあと、**administrators** グループをクリックします。次に、以下に示すようにグループを追加します。
+1. 新しい製品プロファイルに対応するグループを管理者のグループのメンバーとして追加するには、次のボタンをクリックします。 **ツール/セキュリティ/作成者のグループ**&#x200B;をクリックし、 **管理者** グループ化します。 次に、以下に示すようにグループを追加します。
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
@@ -103,7 +103,7 @@ ht-degree: 94%
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. セキュリティを強化するため、新しい **DEV - AEM Administrators Publish** グループを&#x200B;**オーサー**&#x200B;インスタンス上の administrators グループから削除して、新しいグループがパブリッシュインスタンス専用になるようにします。
+1. セキュリティを強化するため、新しい **DEV - AEM管理者公開** ～に関する管理者のグループからのグループ **作成者** したがって、新しいグループは公開用に分離されます
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 
@@ -111,17 +111,17 @@ ht-degree: 94%
 
 ### JCR プロパティの表示 {#view-jcr-properties}
 
-ノードをクリックすると、ナビゲーションブラウザーの右側のパネルに JCR プロパティが表示されます。以下は、`experience-fragments` ノードの例です。
+ノードをクリックすると、ナビゲーションブラウザーの右側のウィンドウに JCR プロパティが表示されます。 以下は、`experience-fragments` ノードの例です。
 
 ![repobrowser4](/help/implementing/developing/tools/assets/repobrowser41.png)
 
 ### コンテンツを表示 {#view-content}
 
-リポジトリーブラウザーを使用すると、ナビゲーションペインでリソースをクリックしてコンテンツを表示できます。これにより、ブラウザーの右側で、それぞれのリソースの名前が付いたタブにプレビューが開きます。
+リポジトリブラウザーを使用して、コンテンツを表示できます。 ナビゲーションウィンドウでリソースをクリックすると、ブラウザーの右側で、各リソースの名前が付いたタブの下にプレビューが開きます。
 
 ![repobrowser6](/help/implementing/developing/tools/assets/repobrowser61.png)
 
-現時点では、以下のリストに含まれる画像タイプでプレビューを使用できます。
+プレビューは、次の画像タイプで使用できます。
 
 * apng
 * avif

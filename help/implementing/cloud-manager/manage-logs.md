@@ -2,10 +2,10 @@
 title: ログへのアクセスと管理
 description: ログにアクセスして管理し、AEM as a Cloud Serviceでの開発プロセスを支援する方法について説明します。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 27%
+source-wordcount: '266'
+ht-degree: 16%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 27%
 
 ## ログのダウンロード {#download-logs}
 
-ログをダウンロードするには、次の手順に従います。
+ログをダウンロードするには、以下の手順を実行します。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
@@ -48,13 +48,13 @@ UI を使用したログのダウンロードに加えて、API とコマンド�
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-コマンドラインインターフェイスを使用して、テールログを作成することもできます。
+また、コマンドラインインターフェイスを使用してテールログを作成することもできます。
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-環境 ID（この例では 1884）と使用可能なサービスまたはログ名のオプションを取得するには、次のコマンドを使用します。
+環境 ID（この例では 1884）と、使用可能なサービスまたはログ名のオプションを取得するには、次のコマンドを使用します。
 
 ```shell
 $ aio cloudmanager:list-environments
@@ -79,7 +79,7 @@ Environment Id Service    Name
 
 ### その他のリソース {#resources}
 
-Cloud Manager API と Adobe I/O CLI について詳しくは、次の追加のリソースを参照してください。
+Cloud Manager API とAdobe Developer CLI の詳細については、次のその他のリソースを参照してください。
 
-* [Cloud Manager API ドキュメント](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [Cloud Manager API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/)
+* [Adobe Developer CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)

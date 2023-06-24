@@ -8,10 +8,10 @@ activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
-source-git-commit: d054f960f13b7308dbf42556ef60a971e880197e
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 100%
+source-wordcount: '620'
+ht-degree: 67%
 
 ---
 
@@ -21,7 +21,7 @@ AEM Content &amp; Commerce Authoring には、AEM の作成者やマーケター
 
 ## 製品ピッカー {#product-picker}
 
-プロジェクトコンポーネントで製品ピッカーを使用するには、開発者がコンポーネントダイアログに `commerce/gui/components/common/cifproductfield` を追加する必要があります。例えば、cq:dialog: には以下を使用します。
+プロジェクトコンポーネントで製品ピッカーを使用するには、開発者は `commerce/gui/components/common/cifproductfield` をコンポーネントダイアログに追加します。 例えば、cq:dialog: には以下を使用します。
 
 ```xml
 <product jcr:primaryType="nt:unstructured"
@@ -33,23 +33,23 @@ AEM Content &amp; Commerce Authoring には、AEM の作成者やマーケター
     selectionId="sku"/>
 ```
 
-製品フィールドを使用すると、ユーザーが選択したい製品に様々なビューを使用して移動できます。デフォルトでは、製品フィールドは製品の ID を返しますが、`selectionId` 属性を使用して設定できます。
+製品フィールドを使用すると、ユーザーが選択したい製品に、様々な表示を通じて移動できます。 デフォルトでは、製品フィールドは製品の ID を返しますが、`selectionId` 属性を使用して設定できます。
 
 製品ピッカーフィールドでは、次のオプションプロパティをサポートしています。
 
-- selectionId（id、uid、sku、slug、combinedSlug、combinedSku）- ピッカーが返す製品属性を選択できます（デフォルトは id）。sku を使用する場合は、選択した製品の sku が返され、combinedSku を使用する場合は、base#variant のような文字列と、基本製品および選択したバリアントの sku が返されます。基本製品が選択されている場合は、単一の sku が返されます。
-- filter（folderOrProduct、folderOrProductOrVariant）- 製品ツリー内を移動する際にピッカーでレンダリングするコンテンツをフィルタリングします。folderOrProduct - フォルダーと製品をレンダリングします。folderOrProductOrVariant - フォルダー、製品および製品バリアントをレンダリングします。製品または製品バリアントがレンダリングされる場合は、ピッカーでも選択できるようになります（デフォルトは folderOrProduct）。
+- selectionId (id, uid, SKU, slug, combinedSlug, combinedSku) — ピッカーが返す製品属性を選択できます（デフォルト= id）。 SKU を使用すると、選択した製品の SKU が返されます。 combinedSku を使用すると、base#variant のような文字列が返され、基本製品と選択したバリアントの SKU が含まれます。基本製品が選択されている場合は、単一の SKU が返されます。
+- filter（folderOrProduct、folderOrProductOrVariant）- 製品ツリー内を移動する際にピッカーでレンダリングするコンテンツをフィルタリングします。folderOrProduct - フォルダーと製品をレンダリングします。folderOrProductOrVariant — フォルダー、製品および製品のバリアントをレンダリングします。 製品または製品バリアントがレンダリングされると、ピッカーで選択可能になります。 （デフォルトは folderOrProduct）。
 - multiple（true、false）- 1 つまたは複数の製品の選択を有効にします（デフォルトは false）。
 - emptyText - ピッカーフィールドの空のテキスト値を設定します。
 
-また、`name`、`fieldLabel`、`fieldDescription` などの標準のダイアグログフィールドプロパティもサポートされています。
+また、標準のダイアログボックスフィールドプロパティ ( `name`, `fieldLabel`または `fieldDescription`、がサポートされています。
 
 >[!CAUTION]
 >
 >`cifproductfield` コンポーネントには クライアントライブラリが必要です。`cif.shell.picker`ダイアログにクライアントライブラリを追加するには、extraClientlibs プロパティを使用します。
 >[!CAUTION]
 >
->CIF コアコンポーネントのバージョン 2.0.0 以降、`id` のサポートは削除され、`uid` に置き換わりました。製品 ID としては、`sku` または `slug` を使用することを強くお勧めします。アドビでは、CIF コアコンポーネントのバージョン 1.x を使用しているプロジェクトに対してのみ、`id` を引き続きサポートします。
+>CIF コアコンポーネントのバージョン 2.0.0 以降、`id` のサポートは削除され、`uid` に置き換わりました。Adobeは、 `sku` または `slug` を製品 ID として設定します。 Adobeは引き続きサポート `id` CIF コアコンポーネントバージョン 1.x を使用するプロジェクトの場合のみ。
 
 完全に動作する `cifproductfield` の例は、[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml)プロジェクトにあります。AEM コアコンポーネントドキュメントの[ダイアログのカスタマイズ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ja#customizing-dialogs)も参照してください。
 
@@ -69,16 +69,16 @@ AEM Content &amp; Commerce Authoring には、AEM の作成者やマーケター
 
 カテゴリピッカーフィールドでは、次のオプションプロパティをサポートしています。
 
-- selectionId（id、uid、slug、urlPath、idAndUrlPath _（廃止予定）_、uidAndUrlPath _（廃止予定）_）- ピッカーが返すカテゴリ属性を選択できます（デフォルトは id）。
+- selectionId(id, uid, slug, urlPath, idAndUrlPath _（非推奨）_, uidAndUrlPath _（非推奨）_) — ピッカーが返すカテゴリ属性を選択できます（デフォルト= id）。
 - multiple（true、false）- 1 つまたは複数のカテゴリの選択を有効にします（デフォルトは false）。
 
-また、`name`、`fieldLabel`、`fieldDescription` などの標準のダイアグログフィールドプロパティもサポートされています。
+また、標準のダイアログボックスフィールドプロパティ ( `name`, `fieldLabel`または `fieldDescription`、がサポートされています。
 
 >[!CAUTION]
 >
 >`cifproductfield` コンポーネントと同様に、`cifcategoryfield` コンポーネントにも クライアントライブラリが必要です。`cif.shell.picker`ダイアログにクライアントライブラリを追加するには、`extraClientlibs` プロパティを使用します。AEM コアコンポーネントドキュメントの[ダイアログのカスタマイズ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ja#customizing-dialogs)を参照してください。
 >[!CAUTION]
 >
->CIF コアコンポーネントのバージョン 2.0.0 以降、`id` のサポートは削除され、`uid` に置き換わりました。カテゴリ ID としては、`uid` または `urlPath` を使用することを強くお勧めします。アドビでは、CIF コアコンポーネントのバージョン 1.x を使用しているプロジェクトに対してのみ、`id` と `idAndUrlPath` を引き続きサポートします。
+>CIF コアコンポーネントのバージョン 2.0.0 以降、`id` のサポートは削除され、`uid` に置き換わりました。Adobeは、 `uid` または `urlPath` をカテゴリ識別子として使用します。 Adobeは引き続きサポート `id` &amp; `idAndUrlPath` CIF コアコンポーネントバージョン 1.x を使用するプロジェクトの場合のみ。
 
 完全に動作する `cifcategoryfield` の例は、[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml)プロジェクトにあります。
