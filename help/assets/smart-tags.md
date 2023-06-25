@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: f8535b9d1b8334bede817714eab469fbb1fcbb03
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2462'
-ht-degree: 94%
+source-wordcount: '2463'
+ht-degree: 93%
 
 ---
 
@@ -51,8 +51,8 @@ ht-degree: 94%
 | image/x-portable-graymap | SRT |  |
 | image/x-portable-pixmap | TXT |  |
 | image/x-rgb | VTT |  |
-| image/x-xbitmap |  |  |
-| image/x-xpixmap |  |  |
+| image/x-xbitmap | |  |
+| image/x-xpixmap | |  |
 | image/x-icon |  |  |
 | image/photoshop |  |  |
 | image/x-photoshop |  |  |
@@ -82,7 +82,7 @@ AEMは、デフォルトで、スマートタグをテキストベースのア�
 
 ![トレーニングガイドラインの例を示すイラスト](assets/do-not-localize/coherence.png)
 
-**対象範囲**：トレーニングの画像には十分な多様性が必要です。[!DNL Experience Manager] が適切に焦点を当てることを学習できるよう、数は少なくても多様性の高い例を提供します。見た目が大きく異なる画像に同じタグを適用する場合は、それぞれの種類に 5 つ以上の例を含めてください。例えば、*model-down-pose* というタグの場合、タグ付け時、類似する画像をより正確に識別できるよう、以下のハイライト表示された画像に似たトレーニング画像を増やします。
+**対象範囲**：トレーニングの画像には十分な多様性が必要です。[!DNL Experience Manager] が適切に焦点を当てることを学習できるよう、数は少なくても多様性の高い例を提供します。見た目が大きく異なる画像に同じタグを適用する場合は、各種の例を 5 つ以上含めます。 例えば、*model-down-pose* というタグの場合、タグ付け時、類似する画像をより正確に識別できるよう、以下のハイライト表示された画像に似たトレーニング画像を増やします。
 
 ![トレーニングガイドラインの例を示すイラスト](assets/do-not-localize/coverage_1.png)
 
@@ -189,7 +189,7 @@ AEMは、デフォルトで、スマートタグをテキストベースのア�
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## スマートタグを使用したアセットのタグ付け AEM内 {#tag-assets}
+## スマートタグを使用したアセットのタグ付け（AEM） {#tag-assets}
 
 サポートされているすべてのタイプのアセットは、アップロード時に [!DNL Experience Manager Assets] によって自動的にタグ付けされます。タグ付けはデフォルトで有効になっており、機能します。AEMは、ほぼリアルタイムで適切なスマートタグを適用します。 <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
@@ -277,4 +277,3 @@ AEMは、デフォルトで、スマートタグをテキストベースのア�
 >
 >* [スマートタグによるデジタルファイル管理の仕組み](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
 >* [ビデオへのスマートタグの使用](smart-tags-video-assets.md)
-

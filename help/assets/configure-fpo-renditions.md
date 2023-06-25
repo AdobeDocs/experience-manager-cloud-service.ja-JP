@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
 exl-id: 869c1c34-6287-4d62-bb7a-aa4df580ac0e
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 97%
+source-wordcount: '506'
+ht-degree: 94%
 
 ---
 
@@ -58,7 +58,7 @@ FPO レンディションを生成するには、**[!UICONTROL 処理プロフ�
 
 ワークフローが完了したら、生成された FPO レンディションを確認できます。Experience ManagerAssets ユーザーインターフェイスで、アセットをクリックして大きいプレビューを開きます。左パネルを開き、「**[!UICONTROL レンディション]**」を選択します。または、プレビューが開いたときに、キーボードショートカット `Alt + 3` を使用します。
 
-「**[!UICONTROL FPO レンディション]**」をクリックして、プレビューを読み込みます。オプションで、レンディションを右クリックして、ファイルシステムに保存できます。左パネルで、使用可能なレンディションを確認します。
+「**[!UICONTROL FPO レンディション]**」をクリックして、プレビューを読み込みます。オプションで、レンディションを右クリックして、ファイルシステムに保存できます。 左パネルで、使用可能なレンディションを確認します。
 
 ![rendition_list](assets/list-renditions.png)
 

@@ -2,10 +2,10 @@
 title: ページ編集用のキーボードショートカット
 description: AEM ではページ編集用を含む様々なキーボードショートカットを使用できます
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 99%
+source-wordcount: '237'
+ht-degree: 91%
 
 ---
 
@@ -25,8 +25,8 @@ AEM 全体で様々なキーボードショートカットを利用できます�
 | **編集**&#x200B;モード | `Ctrl-z` | [最後におこなった変更操作を取り消す](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [最後におこなった変更操作をやり直す](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | 複数の段落を選択する |
-|  | `Ctrl-c` | 選択した段落をコピーする |
-|  | `Ctrl-x` | 選択した段落をカットする（カットされた段落は、貼り付けられるまで UI に保存されています） |
+|  | `Ctrl-c` | 選択した段落をコピー |
+|  | `Ctrl-x` | 選択した段落を切り取る（切り取った段落は、貼り付けられるまでユーザーインターフェイスに表示されなくなります） |
 |  | `Ctrl-v` | 以前にカットまたはコピーした段落を貼り付ける |
 |  | `Ctrl-Backspace` | 選択した段落を削除する |
 | **編集**&#x200B;モード - リッチテキストエディター | `Ctrl-b` | 太字 |

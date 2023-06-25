@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.8.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.8.0 リリースのリリースノート。'
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 100%
+source-wordcount: '1028'
+ht-degree: 96%
 
 ---
 
@@ -36,24 +36,24 @@ ht-degree: 100%
 
 * デジタルアセットをリンクとして共有する場合、ユーザーは URL をクリップボードにすぐにコピーできます。この機能強化により、アセットをより迅速かつ便利に共有できます。この機能により、迅速で便利なアセット共有が可能になります。
 
-   ![アセットをリンクとして共有する場合の「URL をコピー」オプション](/help/assets/assets/link-share-copy-URL-option.png)
-   *図：アセットをリンクとして共有する場合、URL をコピーして別々に共有できるようになりました。*
+  ![アセットをリンクとして共有する場合の「URL をコピー」オプション](/help/assets/assets/link-share-copy-URL-option.png)
+  *図：アセットをリンクとして共有する場合、URL をコピーして別々に共有できるようになりました。*
 
 * TXT ファイルをアップロードすると、アセットマイクロサービスによって自動的にサムネールが生成されます。PNG サムネールは TXT ファイルのレンディションで、ユーザーがファイルを開かずにコンテンツやファイルをある程度識別できるようにするものです。この機能は設定が不要で、デフォルトで動作します。
 
-   ![TXT ファイルのレンディションが [!DNL Assets] により PNG 形式で自動的に生成される](/help/assets/assets/thumbnail-rendition-txt-file.png)
-   *図：TXT ファイルのレンディションが自動的に生成されるので、ファイルを開かずにある程度識別できるようになります。*
+  ![TXT ファイルのレンディションが [!DNL Assets] により PNG 形式で自動的に生成される](/help/assets/assets/thumbnail-rendition-txt-file.png)
+  *図：TXT ファイルのレンディションが自動的に生成されるので、ファイルを開かずにある程度識別できるようになります。*
 
 ### [!DNL Assets] プレリリースチャネルの新機能 {#assets-prerelease-features}
 
 * 検索結果に表示されるアセットを、ユーザーが列表示およびカード表示で並べ替えることができるようになりました。並べ替えは、「名前」、「作成日」、「変更日」、「なし」の各列に対して機能します。
 
-   ![[!DNL Assets] での検索結果の並べ替え（列表示とカード表示）](/help/assets/assets/sort-searched-assets.png)
-   *図：[!DNL Assets] での検索結果の並べ替え（列表示とカード表示）*
+  ![[!DNL Assets] での検索結果の並べ替え（列表示とカード表示）](/help/assets/assets/sort-searched-assets.png)
+  *図：[!DNL Assets] での検索結果の並べ替え（列表示とカード表示）*
 
 ### [!DNL Assets] で修正されたバグ  {#assets-bugs-fixed}
 
-* 投稿者グループのメンバーが [!DNL Assets] コンソールに移動すると、追加の `POST` リクエストが生成されて、コレクションを作成しようとします。このリクエストは必須ではなく、権限の問題が原因で失敗して、ログに多数のエラーが記録されます。（CQ-4328856）
+* 寄稿者グループのメンバーが [!DNL Assets] コンソール、追加 `POST` リクエストが生成され、コレクションが作成されます。 このリクエストは必須ではありません。権限の問題が原因で失敗し、多くのエラーがログに記録されます。 （CQ-4328856）
 * ユーザーがアセットを表示し、左パネルのポップアップメニューから「[!UICONTROL タイムライン]」を選択すると、エラーが表示されます。ログには、無効なクエリが原因で多数の警告が記録されます。（CQ-4328919）
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -80,7 +80,7 @@ ht-degree: 100%
 
 * 新しいカテゴリピッカー UI により、ユーザーエクスペリエンス、効率および複雑な製品カタログのサポートが向上しました。
 
-   ![新しいカテゴリピッカー](/help/assets/CIF/category-picker.png)
+  ![新しいカテゴリピッカー](/help/assets/CIF/category-picker.png)
 
 * A11Y での CIF コアコンポーネントのサポートが向上しました。
 

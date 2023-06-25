@@ -2,7 +2,7 @@
 title: AEM プロジェクトの構造
 description: Adobe Experience Manager as a Cloud Service へのデプロイメント用にパッケージ構造を定義する方法について説明します。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '2927'
 ht-degree: 98%
@@ -223,7 +223,7 @@ AEM オーサーか AEM パブリッシュまたはその両方をターゲッ�
 
 `/apps/<app-name>-packages/(content|application|container)/install(.author|.publish)?`
 
-このフォルダー構造の詳細は次のとおりです。
+このフォルダー構造の分類：
 
 + 第 1 レベルのフォルダーは `/apps` に&#x200B;**する必要があります**。
 + 第 2 レベルのフォルダーは、フォルダー名の末尾に `-packages` が付いたアプリケーションを表します。多くの場合、すべてのサブパッケージが配下に埋め込まれる第 2 レベルのフォルダーは 1 つだけですが、アプリケーションの論理構造を最も適切に表すために、第 2 レベルのフォルダーをいくつでも作成できます。

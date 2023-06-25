@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 9202cf44595070c98ca3d21887dff257bcd88b87
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2878'
-ht-degree: 100%
+source-wordcount: '2875'
+ht-degree: 99%
 
 ---
 
@@ -90,7 +90,7 @@ _「実は、時計の文字盤を見やすくするために、長針が 4 を�
 ![プライマリファイルのアプローチ](/help/assets/dynamic-media/assets/dm-onefile.png)
 _最良：1 つのファイルに、`Search_Grid` や `Thumbnail` などの画像プリセットを使ってその場で作成された複数のレンディション。_
 
-| **画像プリセットを使用する理由** |  |
+| **画像プリセットを使用する理由** | |
 |---|---|
 | 標準規格 | 画像プリセットでは、要求された画像に対して標準画像処理が適用されます。 |
 | 変更管理 | 画像処理を変更する必要がある場合は、既存の画像プリセットのパラメーターを編集するだけです。更新された定義は、自動的にすべてのリクエストに反映されます。 |
@@ -199,7 +199,7 @@ Flyout ビューアは、既定の標準提供ビューアで、プロパティ�
 
 消費者として、あるいは社会人として暮らしているときに、いろいろな web サイトで、この種のものを目にします。Dynamic Media の力を自分の仕事や会社の web サイトでどのように活用できるか、その仕組みを考えてみてください。
 
-画像セットとビューアについてここで説明したことは、ほんの一部です。他にもいくつかのビューアで、アセットを試してみてください。ビューアをリセットするには、左下隅の「**[!UICONTROL 更新]**」ボタンをクリックします。
+画像セットとビューアについてお読みください。 他にもいくつかのビューアで、アセットを試してみてください。ビューアをリセットするには、左下隅の「**[!UICONTROL 更新]**」ボタンをクリックします。
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 

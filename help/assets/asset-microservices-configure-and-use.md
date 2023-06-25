@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2932'
-ht-degree: 99%
+source-wordcount: '2933'
+ht-degree: 97%
 
 ---
 
@@ -75,7 +75,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 1. 管理者は、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL 処理プロファイル]**&#x200B;にアクセスします。「**[!UICONTROL 作成]**」をクリックします。
 1. フォルダーに適用する際に、プロファイルを一意に識別するのに役立つ名前を指定します。
-1. FPO レンディションを生成するには、「**[!UICONTROL 画像]**」タブで「**[!UICONTROL FPO レンディションを作成]**」を有効にします。1 ～ 100 の&#x200B;**[!UICONTROL 画質]**&#x200B;値を入力します。
+1. FPO レンディションを生成するには、「**[!UICONTROL 画像]**」タブで「**[!UICONTROL FPO レンディションを作成]**」を有効にします。を入力します。 **[!UICONTROL 品質]** の値は 1 ～ 100 です。
 1. 他のレンディションを生成するには、「**[!UICONTROL 新規追加]**」をクリックし、次の情報を入力します。
 
    * 各レンディションのファイル名。
@@ -101,7 +101,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## カスタムプロファイルと使用例 {#custom-config}
 
-[!DNL Asset Compute Service] は、デフォルト処理、Photoshop ファイルなどのアドビ固有の形式の処理、カスタム処理や組織固有の処理など、様々な使用例をサポートしています。以前に必要だった DAM アップデートアセットワークフローのカスタマイズは、自動的に処理されるか、処理プロファイルの設定を介して処理されます。これらの処理オプションでビジネスニーズが満たされない場合、デフォルトの機能を拡張するために [!DNL Asset Compute Service] を開発および使用することを推奨します。概要については、「[拡張機能と使用するタイミングについて](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=ja)」を参照してください。
+[!DNL Asset Compute Service] は、デフォルト処理、Photoshop ファイルなどのアドビ固有の形式の処理、カスタム処理や組織固有の処理など、様々な使用例をサポートしています。以前に必要だった DAM アセットの更新ワークフローのカスタマイズは、自動的に処理されるか、処理プロファイルの設定によって処理されます。 これらの処理オプションでビジネスニーズが満たされない場合、デフォルトの機能を拡張するために [!DNL Asset Compute Service] を開発および使用することを推奨します。概要については、「[拡張機能と使用するタイミングについて](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=ja)」を参照してください。
 
 >[!NOTE]
 >
@@ -262,7 +262,7 @@ OSGi 設定のデプロイ方法については、[ [!DNL Experience Manager]](/
 
 ## ベストプラクティスと制限事項 {#best-practices-limitations-tips}
 
-* ワークフローを設計する際には、あらゆる種類のレンディションに対するニーズを考慮します。レンディションが今後必要になることが予測されない場合は、ワークフローからレンディションの作成ステップを削除します。以後、レンディションは一括削除できません。[!DNL Experience Manager] を長時間使用した後、不要なレンディションで大量のストレージ領域が占有される場合があります。個々のアセットについては、ユーザーインターフェイスからレンディションを手動で削除できます。複数のアセットについては、特定のレンディションを削除するように [!DNL Experience Manager] をカスタマイズすることもできますし、アセットを削除して再びアップロードすることもできます。
+* ワークフローを設計する際には、あらゆる種類のレンディションに対するニーズを考慮します。レンディションが今後必要になることが予測されない場合は、ワークフローからレンディションの作成ステップを削除します。以後、レンディションは一括削除できません。を長時間使用した後、不要なレンディションで大量のストレージ領域が占有される場合があります。 [!DNL Experience Manager]. 個々のアセットについては、ユーザーインターフェイスからレンディションを手動で削除できます。複数のアセットについては、特定のレンディションを削除するように [!DNL Experience Manager] をカスタマイズすることもできますし、アセットを削除して再びアップロードすることもできます。
 * 現在、サポートはレンディションの生成に限られています。新しいアセットの生成はサポートされていません。
 * 現在、メタデータ抽出のファイルサイズの上限は約 15 GB です。非常に大きなアセットをアップロードする場合は、メタデータの抽出操作に失敗することがあります。
 

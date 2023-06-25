@@ -3,10 +3,10 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '4925'
-ht-degree: 92%
+source-wordcount: '4924'
+ht-degree: 91%
 
 ---
 
@@ -751,7 +751,7 @@ GraphQL のソリューションでは、次のことが可能です。
    * `height`：寸法の高さ
 * `rotation`：サポートされているすべての回転の列挙（R90、R180、R270）
 * `flip`：HORIZONTAL、VERTICAL、HORIZONTAL_AND_VERTICAL の列挙
-* `quality`：画質の割合を示す 1～100 の整数
+* `quality`:画質の割合を示す 1 ～ 100 の整数
 * `width`:出力画像の幅を定義する整数ですが、Image Generator では無視されます
 * `preferWebp`：webp が優先されるかどうかを示すブール値（デフォルト値は false）
 

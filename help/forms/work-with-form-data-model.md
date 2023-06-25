@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '4121'
-ht-degree: 72%
+source-wordcount: '4120'
+ht-degree: 71%
 
 ---
 
@@ -195,10 +195,9 @@ AEM Forms のデータ統合機能を初めて使用する場合や、これま�
    >[!NOTE]
    >
    > * 静的テンプレートを使用する場合は、head.jsp を以下の場所にオーバーレイします。
-      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+   >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    > * 編集可能なテンプレートを使用する場合は、aftemplatedpage.jsp を以下の場所でオーバーレイします。
-      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
-
+   >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 1. リクエスト属性に [!DNL paramMap] を設定します。例えば、apps フォルダーの .jsp ファイルに以下のコードを含めます。
 
@@ -292,7 +291,8 @@ AEM Forms のデータ統合機能を初めて使用する場合や、これま�
    * **[!UICONTROL プロパティ]**:プロパティのタイプ、サブタイプ、形式を指定します。 また、選択したプロパティがデータモデルオブジェクトのプライマリキーかどうかを指定することもできます。
    * **[!UICONTROL サービス]**:サービスの入力モデルオブジェクト、出力タイプ、および引数を指定します。 Get サービスの場合は、配列を返すかどうかを指定できます。
 
-      ![edit-properties-service](assets/edit-properties-service.png)
+     ![edit-properties-service](assets/edit-properties-service.png)
+
    get サービスのプロパティを編集ダイアログ
 
 1. タップ **[!UICONTROL 完了]** プロパティを保存してから **[!UICONTROL 保存]** フォームデータモデルを保存します。
@@ -419,7 +419,7 @@ OData サービスでは、ナビゲーションプロパティを使用して�
 
 * **完全**：FDM は、すべての制約に基づいて検証を実行します
 * **オフ**：検証なし
-* **基本**：FDM は、「required」制約および「nullable」制約に基づいて検証を実行します
+* **基本**:FDM は、「必須」と「nullable」の制約に基づいて検証を実行します
 
 `ValidationOptions`フラグに値が設定されていない場合、入力データに対して&#x200B;**基本**&#x200B;検証が実行されます。
 
@@ -518,7 +518,7 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
  </tbody> 
 </table>
 
-この例では、Swagger ファイルで定義されている最大制約、最小制約、必須制約に基づいて入力データが検証されます。注文 ID が存在し、その値が 1 ～ 10 の場合にのみ、入力データは検証条件を満たします。
+この例では、Swagger ファイルで定義されている最大制約、最小制約、必須制約に基づいて入力データが検証されます。入力データは、注文 ID が存在し、その値が 1 ～ 10 の場合にのみ、検証条件を満たします。
 
 ```json
    parameters: [

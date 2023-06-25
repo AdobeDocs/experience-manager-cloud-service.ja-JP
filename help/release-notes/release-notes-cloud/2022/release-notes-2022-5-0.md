@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 リリースのリリースノート。'
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 87%
+source-wordcount: '791'
+ht-degree: 75%
 
 ---
 
@@ -45,11 +45,11 @@ ht-degree: 87%
 
 * [Dynamic Media スマートイメージング](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f)が AVIF ファイル形式をサポートするようになりました。Google Core Web Vital（Largest Contentful Paint）をさらに改善し、AVIF は WebP よりも 20%余分なサイズ削減を実現します。合計すると、AVIF は JPEG に比べて最大 41%の平均サイズ削減を実現します（一部の画像では 76% にもなります）。
 
-* [!UICONTROL Experience Manager Assets の Brand Portal] では、12 時間ごとに自動ジョブを実行して、AEM に公開されているすべての Brand Portal アセットを削除するようになりました。その結果、投稿フォルダー内のアセットを手動で削除して、フォルダーサイズをしきい値の制限以下に保つ必要がなくなりました。 [Experience Manager Assets Brand Portal の新機能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=ja)を参照してください。
+* [!UICONTROL Experience Manager Assets Brand Portal] では、12 時間ごとに自動ジョブを実行し、AEMに公開されているすべてのBrand Portalアセットを削除するようになりました。 その結果、投稿フォルダー内のアセットを手動で削除して、フォルダーサイズをしきい値の制限以下に保つ必要がなくなりました。 [Experience Manager Assets Brand Portal の新機能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=ja)を参照してください。
 
 ### [!DNL Assets] プレリリースチャネルで利用できる新機能 {#prerelease-features-assets}
 
-Experience Manager Assets は、Adobe Sensei AI 機能を使用して、[画像内のカラーを識別し、取り込み時に自動的にタグとして適用](/help/assets/color-tag-images.md)するようになりました。これらのタグを使用すると、画像の色の構成に基づいて、検索エクスペリエンスを強化できます。 画像にタグ付けされるカラーの数を 1～40 の範囲で設定し、後でそれらのカラーに基づいて画像を検索できます。
+Experience Manager Assets は、Adobe Sensei AI 機能を使用して、[画像内のカラーを識別し、取り込み時に自動的にタグとして適用](/help/assets/color-tag-images.md)するようになりました。これらのタグを使用すると、画像の色の構成に基づいて、検索エクスペリエンスを強化できます。 画像にタグ付けされる色の数を 1 ～ 40 の範囲で設定し、後でそれらの色に基づいて画像を検索できるようにします。
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -58,7 +58,7 @@ Experience Manager Assets は、Adobe Sensei AI 機能を使用して、[画像�
 
 * **アダプティブフォームと Microsoft® Power Automate の統合**：送信時に Microsoft® Power Automate の Cloud Flow を実行するようにアダプティブフォームを設定できるようになりました。設定済みのアダプティブフォームは、キャプチャされたデータ、添付ファイルおよびレコードのドキュメントを Power Automate クラウドフローに送信して処理します。 Microsoft® Power Automate の機能を活用して、キャプチャされたデータを中心にビジネスロジックを構築し、顧客のワークフローを自動化しながら、カスタムのデータキャプチャエクスペリエンスを構築するのに役立ちます。
 
-* **アダプティブフォームの作成ウィザード**：ビジネスユーザー向けの使いやすいウィザードで、アダプティブフォームをすばやく作成できます。このウィザードではクイックタブナビゲーションを使用して、アダプティブフォームを作成するための事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択できます。
+* **アダプティブフォームを作成するためのウィザード**:ビジネスユーザーにわかりやすいウィザードを使用して、アダプティブFormsをすばやくオーサリングできます。 このウィザードではクイックタブナビゲーションを使用して、アダプティブフォームを作成するための事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択できます。
 
   ![アダプティブフォームの作成ウィザード](/help/release-notes/assets/wizard.png)
 
@@ -91,7 +91,7 @@ Experience Manager Assets は、Adobe Sensei AI 機能を使用して、[画像�
 
 ### TLS 1.0、1.1 の廃止
 
-2022年6月30日以降、Experience Manager as a Cloud Service は、より安全なネットワーク通信とユーザーシステムとのデータ交換を必要とします。AEM は、TLS（トランスポートレイヤーセキュリティ）1.2 プロトコルのみを使用します。古い TLS バージョン 1.0 および 1.1 は非推奨（廃止予定）となりました。
+2022 年 6 月 30 日以降、Experience Manageras a Cloud Serviceは、より安全なネットワーク通信とユーザーシステムとのデータ交換を必要とします。 AEM は、TLS（トランスポートレイヤーセキュリティ）1.2 プロトコルのみを使用します。古い TLS バージョン 1.0 および 1.1 は非推奨（廃止予定）となりました。
 
 古いバージョンの TLS 1.0 および 1.1 を引き続き使用する場合、Experience Manager as a Cloud Service のへのアクセス権が失われる可能性があります。
 

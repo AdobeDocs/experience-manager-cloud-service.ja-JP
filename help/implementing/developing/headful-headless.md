@@ -2,10 +2,10 @@
 title: AEM におけるヘッドフルとヘッドレス
 description: AEM プロジェクトはヘッドフルモデルでもヘッドレスモデルで実装できますが、二者択一ではありません。AEM は、1 つのプロジェクトで両方のモデルのメリットを活用できる柔軟性を備えています。
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 98%
+source-wordcount: '1008'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +43,7 @@ AEM がヘッドレスで配信するコンテンツの宛先は、多くの場�
 
 >[!NOTE]
 >
->もちろん、Web ショップ SPA を完全機能の AEM SPA として再実装することもできます（[AEM SPA Editor フレームワークを使用](/help/implementing/developing/hybrid/introduction.md)）。既に AEM があり、新しい Web ショップまたは他の SPA を作成する場合は、この方法をお勧めしますが、それはこのドキュメントの対象外です。
+>もちろん、Web ショップSPAを完全に機能するAEM SPAとして再実装することもできます。 [AEM SPA Editor フレームワークの使用](/help/implementing/developing/hybrid/introduction.md)）。既に AEM があり、新しい Web ショップまたは他の SPA を作成する場合は、この方法をお勧めしますが、それはこのドキュメントの対象外です。
 
 ## SPA 統合レベル {#integration-levels}
 

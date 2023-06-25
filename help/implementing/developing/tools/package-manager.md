@@ -4,9 +4,9 @@ description: AE の基本を学ぶ。パッケージマネージャーを使用�
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3782'
+source-wordcount: '3780'
 ht-degree: 87%
 
 ---
@@ -244,7 +244,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
    >[!TIP]
    >
-   >インスタンスに多数のパッケージがある場合は、フォルダー構造が存在する可能性があります。そのような場合は、新しいパッケージを作成する前に必要なターゲットフォルダーに移動する方が簡単です。
+   >インスタンスに多数のパッケージがある場合は、フォルダー構造が存在する可能性があります。 そのような場合は、新しいパッケージを作成する前に必要なターゲットフォルダーに移動する方が簡単です。
 
 1. **新規パッケージ**&#x200B;ダイアログで、次のフィールドを入力します。
 

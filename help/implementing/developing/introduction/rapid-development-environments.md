@@ -2,9 +2,9 @@
 title: 迅速な開発環境
 description: クラウド環境で迅速な開発反復処理を行うための、高速開発環境の使用方法を説明します。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3317'
+source-wordcount: '3318'
 ht-degree: 94%
 
 ---
@@ -104,7 +104,7 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
 
    `aio config:set cloudmanager_environmentid 123456`
 
-1. プラグインの設定が完了したら、以下を実行してログインします。
+1. プラグインの設定が完了したら、
 
    `aio login`
 

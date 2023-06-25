@@ -2,14 +2,14 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0 リリースのリリースノート。'
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 94%
+source-wordcount: '638'
+ht-degree: 87%
 
 ---
 
-# 2022.6.0 リリースノート： [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の 2022.6.0 リリースノート {#release-notes}
 
 以下の節では、の 2022.6.0 バージョンの機能リリースノートの概要を説明します [!DNL Experience Manager] as a Cloud Service。
 
@@ -39,7 +39,7 @@ ht-degree: 94%
 
 * コンテンツ管理者やコンテンツ作成者が効率的に管理（公開、非公開、コピー、移動などのアクションを実行）、検索とフィルター、ヘッドレスユースケース向けのコンテンツフラグメントの作成を行える、新しい[ユーザーインターフェイス](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)を使用できるようになりました。
 
-   ![コンテンツフラグメントコンソール](/help/release-notes/assets/cf-ui.png)
+  ![コンテンツフラグメントコンソール](/help/release-notes/assets/cf-ui.png)
 
 * 新しい[目次コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html?lang=ja)は、コアコンポーネントだけでなく、すべてのコンポーネントで機能し、コンテンツページの目次を自動的にレンダリングします。 また、Dispatcher はサーバー側でレンダリングされ、完全にキャッシュされるので、読み込みも効率的です。
 
@@ -47,7 +47,7 @@ ht-degree: 94%
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-Experience Manager Assets は Adobe Sensei AI 機能を使用して、[画像内の色を区別し、取り込み時に自動的にタグとして適用するようになりました](/help/assets/color-tag-images.md)。 これらのタグを使用すると、画像の色の構成に基づいて、検索エクスペリエンスを強化できます。 画像にタグ付けされるカラーの数を 1～40 の範囲で設定し、後でそれらのカラーに基づいて画像を検索できます。
+Experience Manager Assets は Adobe Sensei AI 機能を使用して、[画像内の色を区別し、取り込み時に自動的にタグとして適用するようになりました](/help/assets/color-tag-images.md)。 これらのタグを使用すると、画像の色の構成に基づいて、検索エクスペリエンスを強化できます。 画像にタグ付けされる色の数を 1 ～ 40 の範囲で設定し、後でそれらの色に基づいて画像を検索できるようにします。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -57,7 +57,7 @@ Experience Manager Assets は Adobe Sensei AI 機能を使用して、[画像内
 
 * **アダプティブフォームの作成ウィザード**：ビジネスユーザー向けの使いやすいウィザードで、アダプティブフォームをすばやく作成できます。このウィザードではクイックタブナビゲーションを使用して、アダプティブフォームを作成するための事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択できます。
 
-   ![アダプティブフォームの作成ウィザード](/help/release-notes/assets/wizard.png)
+  ![アダプティブフォームの作成ウィザード](/help/release-notes/assets/wizard.png)
 
 ## CIF アドオン {#cloud-services-cif}
 
@@ -94,7 +94,7 @@ Experience Manager Assets は Adobe Sensei AI 機能を使用して、[画像内
 
 ### 新機能 {#what-is-new-foundation}
 
-* 5月（2022.5.0）のリリースノートに記載されているように、レプリケーションエージェント管理画面の「**分布**」タブにある「ツリーを追加」オプションが削除されました。代わりに、コンテンツのツリー階層を持つパッケージは、[公開を管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーを公開](/help/operations/replication.md#manage-publication#publish-content-tree-workflow)ワークフローを使用して複製する必要があります。
+* (2022.5.0)5 月のリリースノートで述べたように、レプリケーションエージェント管理画面の「ツリーを追加」オプション **分布** 」タブが削除されました。 代わりに、コンテンツのツリー階層を持つパッケージは、[公開を管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーを公開](/help/operations/replication.md#manage-publication#publish-content-tree-workflow)ワークフローを使用して複製する必要があります。
 
 ## Cloud Manager {#cloud-manager}
 

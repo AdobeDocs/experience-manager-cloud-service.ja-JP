@@ -2,10 +2,10 @@
 title: デモサイトで AEM Screens を有効にする
 description: デモサイトで AEM Screens as a Cloud Service の完全なエクスペリエンスを有効にする手順を説明します。
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2696'
-ht-degree: 97%
+source-wordcount: '2694'
+ht-degree: 96%
 
 ---
 
@@ -63,7 +63,7 @@ We.Cafe コーヒーショップは、米国の 3 か所に 3 店舗を構成し
 >
 >キオスクは、現在のバージョンのデモには含まれていません。今後のバージョンに含まれる予定です。
 
-ニューヨークの店舗は、スペースの少ない小さな店舗であると想定されるため、次のような設定になります。
+New-York の場所は、スペースの少ない小さな店舗にあると想定され、次のようになります。
 
 * 縦パネルが 2 つのみのメニューボード。サンフランシスコとサンノゼでは縦パネルは 3 つ
 * エントランスの表示は、横ではなく縦に配置

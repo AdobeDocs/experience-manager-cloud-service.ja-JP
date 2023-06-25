@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 99%
+source-wordcount: '930'
+ht-degree: 95%
 
 ---
 
@@ -48,7 +48,7 @@ You can limit who can access certain folders in Assets by making the folder part
 
 ## Use tags to organize assets {#use-tags-to-organize-assets}
 
-You can use folders or tags or both to organize assets. Adding tags to assets makes them more easy to retrieve during a search. To add tags to an asset, follow these steps:
+You can use folders or tags or both to organize assets. Adding tags to assets makes them easier to retrieve during a search. To add tags to an asset, follow these steps:
 
 1. In the Digital Asset Manager, double-click the asset to open it.
 1. In the **Tags** area, open the menu to reveal the available tags. Select tags as appropriate. To delete a tag, hover the pointer over the tag and click `X` to delete it.
@@ -79,7 +79,7 @@ Date24/08/2021
 
 ## タグを使用したアセットの整理 {#use-tags-to-organize-assets}
 
-アセットにタグを追加すると、検索時にアセットを取得しやすくしたり、検索結果を使用してコレクションを作成したり、一部のアセットの検索ランキングを上げたり、アセット検出用に Adobe Sensei の AI アルゴリズムを適用したりできます。
+アセットにタグを追加すると、検索中に取得したり、検索結果を使用してコレクションを作成したり、一部のアセットの検索ランキングを上げたり、アセット検出用にAdobe Senseiの AI アルゴリズムを適用したりしやすくなります。
 
 [!DNL Adobe Experience Manager Assets] では、自己学習アルゴリズムを使用して、非常にわかりやすいタグが作成されるので、ユーザーは数回クリックするだけで適切なアセットを見つけることができます。スマートタグでは、Adobe Sensei、人工知能および機械学習フレームワークを使用します。これらは、標準タグとビジネス固有のタグの両方を認識して画像に適用するようにトレーニングできます。スマートタグでは、コンテンツや個々の単語またはフレーズを識別して、わかりやすいタグをアセットに自動的に適用することもできます。
 
@@ -136,5 +136,4 @@ Date24/08/2021
 >* [メタデータプロファイル](metadata-profiles.md)
 >* [ビデオプロファイル](/help/assets/dynamic-media/video-profiles.md)
 >* [Dynamic Media 画像プロファイル](/help/assets/dynamic-media/image-profiles.md)
-
 

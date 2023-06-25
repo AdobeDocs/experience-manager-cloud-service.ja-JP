@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 リリースのリリースノート。'
 description: 「[!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 のリリースノート」
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 95%
+source-wordcount: '1232'
+ht-degree: 92%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 95%
 
 * 製品コンソールプロパティを拡張して、関連するコンテンツにすばやく移動するためのアクションなど、アセットやエクスペリエンスフラグメントのリンクを表示するようになりました。
 
-* 最新の CIF コアコンポーネント v1.8.0 を含んだ CIF Venia 参照サイト 2021.02.24 をリリースしました。詳しくは、[CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24)を参照してください。
+* 最新の CIF コアコンポーネントバージョン v1.8.0 を含む CIF Venia 参照サイト2021.02.24をリリースしました。詳しくは、 [CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) を参照してください。
 
 * CIF コアコンポーネント v1.8.0 をリリースしました。詳しくは、[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0)を参照してください。
 
@@ -90,7 +90,7 @@ AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 �
 ### 新機能 {#what-is-new-cloud-manager}
 
 
-* Assets ユーザーは、Brand Portal インスタンスをデプロイするタイミングと場所を、Cloud Manager UI を使用してセルフサービス方式で選択できるようになりました。Assets ソリューションを使用する通常の（サンドボックス以外の）プログラムの場合は、Brand Portal を実稼働環境にプロビジョニングできるようになりました。プロビジョニングは、実稼働環境で 1 回だけ行えます。
+* Assets ユーザーは、Brand Portal インスタンスをデプロイするタイミングと場所を、Cloud Manager UI を使用してセルフサービス方式で選択できるようになりました。Assets ソリューションを使用する通常の（サンドボックス以外の）プログラムの場合、Brand Portalを実稼動環境でプロビジョニングできるようになりました。 プロビジョニングは、実稼働環境で 1 回だけ行えます。
 
 * プロジェクトとサンドボックスの作成で使用される AEM プロジェクトアーキタイプがバージョン 25 に更新されました。
 

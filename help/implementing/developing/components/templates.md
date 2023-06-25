@@ -2,10 +2,10 @@
 title: ページテンプレート
 description: ページテンプレートは、新しいページのベースとして使用するページを作成する際に使用します
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3293'
-ht-degree: 80%
+source-wordcount: '3294'
+ht-degree: 79%
 
 ---
 
@@ -356,7 +356,7 @@ When creating a new editable template, the value is copied from the template typ
 他のテンプレートの基盤となるテンプレートを作成した場合、このテンプレートをテンプレートタイプとしてコピーできます。
 
 1. [こちらのドキュメント](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author)で説明されているページテンプレートと同じようにテンプレートを作成します。これは、テンプレートタイプの基盤となります。
-1. CRXDE Lite を使用している場合は、新しく作成したテンプレートを `templates` ノードから`template-types`テンプレートフォルダー[の下の ](#template-folders) ノードにコピーします。
+1. CRXDE Liteを使用して、新しく作成したテンプレートを `templates` ノードから `template-types` ノードの [テンプレートフォルダー](#template-folders).
 1. このテンプレートを[テンプレートフォルダー](#template-folders)の下の `templates` ノードから削除します。
 1. `template-types` ノードの下にあるテンプレートのコピーで、すべての `jcr:content` ノードから `cq:template` および `cq:templateType` プロパティをすべて削除します。
 

@@ -3,9 +3,9 @@ title: AEM as a Cloud Serviceの宛先セレクター
 description: AEMの宛先セレクターを使用して、元のアセットのコピーとして使用できるアセットを表示および選択します。
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: d6ea74834f73ad90f5df929a2806cd1ed53af0aa
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1909'
 ht-degree: 3%
 
 ---
@@ -185,22 +185,22 @@ Destination Selector のプロパティを使用して、Destination Selector �
 
 | プロパティ | タイプ | 必須 | デフォルト | 説明 |
 |---|---|---|---|---|
-| *imsOrg* | 文字列 | はい |  | プロビジョニング中に割り当てられるAdobeIdentity Management System(IMS)ID [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 組織の この `imsOrg` キーは、アクセスしようとしている組織がAdobe IMS中かどうかを認証するために必要です。 |
-| *imsToken* | 文字列 | いいえ |  | 認証に使用される IMS ベアラートークン。 `imsToken` は、SUSI フローを使用する場合は必須ではありません。 ただし、非 SUSI フローを使用する場合は必須です。 |
-| *apiKey* | 文字列 | いいえ |  | AEM Discovery サービスへのアクセスに使用する API キー。 `apiKey` は、SUSI フローを使用する場合は必須ではありません。 ただし、SUSI 以外のフローでは必要です。 |
+| *imsOrg* | 文字列 | はい | | プロビジョニング中に割り当てられるAdobeIdentity Management System(IMS)ID [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 組織の この `imsOrg` キーは、アクセスする組織がAdobe IMS中かどうかを認証するために必要です。 |
+| *imsToken* | 文字列 | いいえ | | 認証に使用される IMS ベアラートークン。 `imsToken` は、SUSI フローを使用する場合は必須ではありません。 ただし、非 SUSI フローを使用する場合は必須です。 |
+| *apiKey* | 文字列 | いいえ | | AEM Discovery サービスへのアクセスに使用する API キー。 `apiKey` は、SUSI フローを使用する場合は必須ではありません。 ただし、SUSI 以外のフローでは必要です。 |
 | *rootPath* | 文字列 | いいえ | /content/dam/ | 宛先セレクターにアセットが表示されるフォルダーパス。 `rootPath` また、カプセル化の形で使用することもできます。 例えば、次のパスを指定すると、 `/content/dam/marketing/subfolder/`の場合、宛先セレクターを使用すると、親フォルダーをトラバースできず、子フォルダーのみが表示されます。 |
-| *hasMore* | ブール値 | いいえ |  | アプリケーションに表示するコンテンツが増えたら、このプロパティを使用して、コンテンツを読み込んでアプリケーションに表示するローダーを追加できます。 コンテンツの読み込みが進行中であることを示すインジケーターです。 |
-| *orgName* | ブール値 | いいえ |  | AEMに関連付けられている組織の名前（おそらく orgID）です。 |
-| *initRepoID* | 文字列 | いいえ |  | デフォルトの初期ビューで使用するアセットリポジトリのパスです |
-| *onCreateFolder* | 文字列 | いいえ |  | この `onCreateFolder` プロパティを使用すると、アプリケーションに新しいフォルダーを追加するアイコンを追加できます。 |
-| *onConfirm* | 文字列 | いいえ |  | 「確認」ボタンを押したときのコールバックです。 |
-| *confirmDisabled* | 文字列 | いいえ |  | このプロパティは、確認ボタンの切り替えを制御します。 |
-| *viewType* | 文字列 | いいえ |  | この `viewType` プロパティは、アセットの表示に使用するビューを指定するために使用されます。 |
-| *viewTypeOptions* | 文字列 | いいえ |  | このプロパティは、 `viewType` プロパティ。 アセットを表示する 1 つ以上のビューを指定できます。 使用可能な viewTypeOptions は次のとおりです。リスト表示、グリッド表示、ギャラリー表示、ウォーターフォール表示、ツリー表示。 |
-| *itemNameFormatter* | 文字列 | いいえ |  | このプロパティを使用すると、アイテム名を書式設定できます |
+| *hasMore* | ブール値 | いいえ | | アプリケーションに表示するコンテンツが増えたら、このプロパティを使用して、コンテンツを読み込んでアプリケーションに表示するローダーを追加できます。 コンテンツの読み込みが進行中であることを示すインジケーターです。 |
+| *orgName* | ブール値 | いいえ | | AEMに関連付けられている組織の名前（おそらく orgID）です。 |
+| *initRepoID* | 文字列 | いいえ | | デフォルトの初期ビューで使用するアセットリポジトリのパスです |
+| *onCreateFolder* | 文字列 | いいえ | | この `onCreateFolder` プロパティを使用すると、アプリケーションに新しいフォルダーを追加するアイコンを追加できます。 |
+| *onConfirm* | 文字列 | いいえ | | 「確認」ボタンを押したときのコールバックです。 |
+| *confirmDisabled* | 文字列 | いいえ | | このプロパティは、確認ボタンの切り替えを制御します。 |
+| *viewType* | 文字列 | いいえ | | この `viewType` プロパティは、アセットの表示に使用するビューを指定するために使用されます。 |
+| *viewTypeOptions* | 文字列 | いいえ | | このプロパティは、 `viewType` プロパティ。 アセットを表示する 1 つ以上のビューを指定できます。 使用可能な viewTypeOptions は次のとおりです。リスト表示、グリッド表示、ギャラリー表示、ウォーターフォール表示、ツリー表示。 |
+| *itemNameFormatter* | 文字列 | いいえ | | このプロパティを使用すると、アイテム名を書式設定できます |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | いいえ |  | OOTB 翻訳がアプリケーションのニーズに合わない場合は、独自のカスタムローカライズされた値を `i18nSymbols` prop. このインターフェイスに値を渡すと、提供されたデフォルトの翻訳が上書きされ、代わりに独自の翻訳が使用されます。  上書きを実行するには、有効な [メッセージ記述子](https://formatjs.io/docs/react-intl/api/#message-descriptor) ～の鍵に対して異議を唱える `i18nSymbols` 上書きする値を指定します。 |
-| *inlineAlertSetup* | 文字列 | いいえ |  | アプリケーションに渡すアラートメッセージが追加されます。 例えば、このフォルダーにアクセスする権限がないというアラートメッセージを追加します。 |
-| *intl* | オブジェクト | いいえ |  | 宛先セレクターは、デフォルトの標準翻訳を提供します。 翻訳言語を選択するには、 `intl.locale` prop. 例： `intl={{ locale: "es-es" }}` </br></br> サポートされるロケール文字列は、 [ISO 639 — コード](https://www.iso.org/iso-639-language-codes.html) 言語標準の名前を表すための </br></br> サポートされているロケールの一覧：英語 — 「en-us」（デフォルト）スペイン語 — 「es-es」ドイツ語 — 「de-de」フランス語 — 「fr-fr」イタリア語 — 「it-it」日本語 — 「ja-jp」韓国語 — 「ko-kr」ポルトガル語 — 「pt-br」中国語（繁体字） — 「zh-cn」中国語（台湾） — 「zh-tw」 |
+| *inlineAlertSetup* | 文字列 | いいえ | | アプリケーションに渡すアラートメッセージが追加されます。 例えば、このフォルダーにアクセスする権限がないというアラートメッセージを追加します。 |
+| *intl* | オブジェクト | いいえ | | 宛先セレクターは、デフォルトの標準翻訳を提供します。 翻訳言語を選択するには、 `intl.locale` prop. 例： `intl={{ locale: "es-es" }}` </br></br> サポートされるロケール文字列は、 [ISO 639 — コード](https://www.iso.org/iso-639-language-codes.html) 言語標準の名前を表すための </br></br> サポートされているロケールの一覧：英語 — 「en-us」（デフォルト）スペイン語 — 「es-es」ドイツ語 — 「de-de」フランス語 — 「fr-fr」イタリア語 — 「it-it」日本語 — 「ja-jp」韓国語 — 「ko-kr」ポルトガル語 — 「pt-br」中国語（繁体字） — 「zh-cn」中国語（台湾） — 「zh-tw」 |
 
 ## 宛先セレクターのプロパティの使用例 {#usage-examples}
 

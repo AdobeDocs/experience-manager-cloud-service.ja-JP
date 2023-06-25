@@ -2,10 +2,10 @@
 title: オーサリングの基本
 description: コンテンツフラグメントを使用したヘッドレス CMS のコンテンツオーサリングの概念と仕組みについて説明します。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1708'
-ht-degree: 93%
+source-wordcount: '1709'
+ht-degree: 91%
 
 ---
 
@@ -141,7 +141,7 @@ You can view additional information about items using the Rail Selector. This al
 
 #### フォルダーで使用可能なコンテンツフラグメントモデルをパスとタグで制限する方法 {#tags-paths-for-models-in-folder}
 
-この節の内容は少し上級者向けです。使い始めて間もない場合はあまり必要ありませんが、フラグメントが多数ある場合には&#x200B;*非常に*&#x200B;有効な方法です。まだ使わなくても、知っておいて損はありません。
+この節の内容は少し上級者向けです。何かを始めて試すだけでは、本当に必要ありませんが、それは *非常に* 多数のフラグメントがある場合に便利です。 だから、まだ使っていなくても、知っておくのが良い。
 
 コンテンツアーキテクトは、現在のプロジェクトや他のプロジェクトに必要なすべてのコンテンツフラグメントモデルを作成しています。自分自身や他の作成者が作業を簡単に行えるように、特定のフォルダーで使用できるモデルのリストを制限できます。
 

@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service でのチャネルの作成と管理
 description: ここでは、Screens as a Cloud Service でチャネルを作成および管理する方法について説明します。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '1104'
-ht-degree: 93%
+ht-degree: 91%
 
 ---
 
@@ -85,7 +85,7 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 | 使用可能なテンプレート | 説明 |
 |--- |--- |
 | チャネルフォルダー | チャネルのコレクションを保存するフォルダーを作成できます。 |
-| シーケンスチャネル | コンポーネントを連続して（スライドショーで 1 つずつ）再生するチャネルを作成できます。 |
+| シーケンスチャネル | コンポーネントを順番に（スライドショーで 1 つずつ）再生するチャネルを作成できます。 |
 | 左／右 L バー型分割画面チャネル | コンテンツ作成者が、様々な種類のアセットを適切なサイズのゾーンに表示できます。 |
 
 ## チャネルのデフォルトの割り当ての詳細を使用 {#default-channels}

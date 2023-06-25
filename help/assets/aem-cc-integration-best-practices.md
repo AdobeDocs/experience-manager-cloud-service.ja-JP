@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3495'
-ht-degree: 75%
+source-wordcount: '3496'
+ht-degree: 73%
 
 ---
 
@@ -206,7 +206,7 @@ Adobe Asset Link は、この使用例を適切にサポートしています。
 * また、Creative CloudはCreative Cloudアカウントにあるので、Creative Cloudが持っている他のデバイス（例えば、専用のデバイスモバイルアプリで開いたり編集したり）でも使用でき、共同作業のために他のデバイスユーザーと共有できます。
 * クリエイティブユーザーは、変更が完了したら、Creative Cloudアプリケーションでそのファイルに対してチェックイン操作を実行できます。オプションのコメントを付けることもできます。 Experience Manager 内で対応するアセットの新しいバージョンが作成され、新しいバイナリで更新されます。マーケターや LOB ユーザーなどの Experience Manager ユーザーは、Experience Manager Assets のタイムライン UI を介して、アセットの大幅な変更やマイルストーンにアクセスできます。
 
-Experience Manager デスクトップアプリケーションは、ネイティブアプリで開かれたアセットのネットワーク共有を提供します。デフォルトでは、ローカルで行われたすべての変更は、しばらくすると自動的に Experience Manager にアップロードされます。このような設定では、WIP フェーズでの頻繁な保存はすべて Experience Manager にアップロードされバージョン管理されるので、不要なバージョンが Experience Manager に生成されることは言うまでもなく、大量のネットワークトラフィックが発生し、スケーラビリティの重大な問題も生じる可能性があります。
+Experience Manager デスクトップアプリケーションは、ネイティブアプリで開かれたアセットのネットワーク共有を提供します。デフォルトでは、ローカルで行われたすべての変更は、しばらくすると自動的に Experience Manager にアップロードされます。このような設定を使用すると、作業中のフェーズで頻繁に保存がすべてExperience Managerにアップロードされ、Experience Managerに大量のネットワークトラフィックが発生し、拡張性に関する課題が生じます。不要なバージョンは含まれません。
 
 ここでは、Experience Manager デスクトップアプリケーションのオプションを使用して自動更新をオフにし、アプリのアセットステータス UI で変更のアップロードアクションを利用して、アセットへの変更を手動で Experience Manager にアップロードすることをお勧めします。
 

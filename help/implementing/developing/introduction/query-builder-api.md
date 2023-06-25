@@ -2,10 +2,10 @@
 title: Query Builder API
 description: アセット共有 Query Builder の機能は、Java API と REST API を通じて公開されます。
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '2033'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -254,7 +254,7 @@ type=cq:Page
 
 ### プロパティの複数の値の検索 {#search-for-multiple-property-values}
 
-1 つのプロパティに対して複数の値を検索する場合（`"A" or "B" or "C"`）に、グループが大きくならないようにするには、`property` 述語に複数の値を指定します。
+プロパティ (`"A" or "B" or "C"`) の代わりに、 `property` 述語：
 
 `http://<host>:<port>/bin/querybuilder.json?property=jcr%3atitle&property.1_value=Cycling%20Tuscany&property.2_value=Ski%20Touring&property.3_value=Whistler%20Mountain%20Biking`
 

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.12.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.12.0 リリースのリリースノート。'
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
-source-git-commit: aeee895e4a4b959125d08091619988d0ffa09ace
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 100%
+source-wordcount: '691'
+ht-degree: 97%
 
 ---
 
@@ -47,9 +47,9 @@ AEM as a Cloud Service 2020.12.0 Cloud Manager のリリース日は 2020 年 12
 
 ### [!DNL Cloud Manager] の新機能  {#what-is-new-cm}
 
-* [SSL 証明書](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)と[カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/introduction.md)のセルフサービス管理。
+* のセルフサービス管理 [SSL 証明書](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) および [カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* [IP 許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)のセルフサービス管理。
+* のセルフサービス管理 [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 * **環境**&#x200B;の詳細ページが更新され、環境のカスタムドメイン名と IP 許可リストを管理できるようになりました。
 

@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service の SEO および URL 管理のベストプラクティス
 description: Adobe Experience Manager as a Cloud Service の SEO および URL 管理のベストプラクティス
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '3709'
-ht-degree: 79%
+ht-degree: 77%
 
 ---
 
@@ -286,7 +286,7 @@ AEM で受信要求のマッピングまたはページ上の URL の書き換�
 
 これまでに、URL をページに出力するときに、定義したマッピングを使用するために、マッピングをロジックとともにコンポーネントに実装しました。
 
-最後の手順は、短縮された URL の Dispatcher での処理です。ここでは、`mod_rewrite` を使用します。`mod_rewrite` を使用する最大の利点は、URL が、Dispatcher モジュールに送信される&#x200B;*前*&#x200B;に長い形式に再びマッピングされる点です。つまり、Dispatcher は公開サーバーに長い URL をリクエストし、それに応じて URL をキャッシュします。したがって、公開サーバーからの Dispatcher フラッシュはすべて、そのコンテンツを正常に無効にすることができます。
+最後の手順は、短縮された URL の Dispatcher での処理です。ここでは、`mod_rewrite` を使用します。を使用する最大のメリット `mod_rewrite` は、URL が長い形式に再びマッピングされることを意味します *前* これらは Dispatcher モジュールに送信されます。 つまり、Dispatcher は公開サーバーに長い URL をリクエストし、それに応じて URL をキャッシュします。したがって、公開サーバーからの Dispatcher フラッシュはすべて、そのコンテンツを正常に無効にすることができます。
 
 このようなルールを実装するには、Apache HTTP Server の設定で仮想ホストに `RewriteRule` 要素を追加します。前の例の短縮 URL を展開する場合は、次のようなルールを実装できます。
 
@@ -349,7 +349,7 @@ Disallow: /
 
 また、実稼働環境では、インデックスが作成されないように特定のパスを禁止することもできます。
 
-ただし、`robots.txt` ファイルをサイトルートに配置すると、Dispatcher フラッシュリクエストによって、このファイルが除去されることがあり、URL マッピングによって、サイトルートが Apache HTTP Server 設定で定義された `DOCROOT` とは異なる場所に配置される可能性があります。このため、このファイルをオーサーインスタンスのサイトルートに配置し、パブリッシュインスタンスにレプリケートするのが一般的です。
+を `robots.txt` ファイルをサイトルートに配置する場合、Dispatcher フラッシュ要求によってこのファイルがクリアされ、URL マッピングによってサイトのルートが `DOCROOT` Apache HTTP Server 設定で定義されたとおりです。 このため、このファイルをオーサーインスタンスのサイトルートに配置し、パブリッシュインスタンスにレプリケートするのが一般的です。
 
 ### AEMでの XML サイトマップの作成 {#building-an-xml-sitemap-on-aem}
 

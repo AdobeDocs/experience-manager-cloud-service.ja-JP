@@ -2,9 +2,9 @@
 title: Java 機能テスト
 description: AEM as a Cloud Service用の Java 機能テストの作成方法を説明します
 exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '847'
 ht-degree: 73%
 
 ---
@@ -105,7 +105,7 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 | CPU | 0.5 | テスト実行ごとに予約される CPU 時間の量 |
 | メモリ | 0.5Gi | テストに割り当てられたメモリの量（GB 単位の値） |
 | タイムアウト | 30m | テストが終了するまでの期間。 |
-| 推奨期間 | 15m | この時間を超えないようにテストを書き込むことをお勧めします。 |
+| 推奨期間 | 15m | Adobeは、この時間を超えないようにテストを書き込むことをお勧めします。 |
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Cloud Manager パイプラインで機能テストをアクティブ化する前
 
 | プロパティ | 説明 | 例 |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
-| `sling.it.instances` | クラウドサービスに一致するインスタンスの量は、 `2` | `2` |
+| `sling.it.instances` | クラウドサービスに一致するインスタンスの数は、 `2` | `2` |
 | `sling.it.instance.url.1` | は作成者 URL に設定する必要があります | `http://localhost:4502` |
 | `sling.it.instance.runmode.1` | 最初のインスタンスの実行モードは、に設定する必要があります。 `author` | `author` |
 | `sling.it.instance.adminUser.1` | は author admin user に設定する必要があります。 | `admin` |
