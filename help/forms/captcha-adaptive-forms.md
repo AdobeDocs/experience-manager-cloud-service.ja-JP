@@ -10,10 +10,10 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 0c303439c879605f1ab0927cf79b132dbb448af5
+source-git-commit: 1633e02fc6b79a45582b919863662bc1d1b49b42
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 90%
+source-wordcount: '1433'
+ht-degree: 86%
 
 ---
 
@@ -29,8 +29,7 @@ CAPTCHA（Computers and Humans Apart を伝える完全自動公開チューリ�
 >* アダプティブフォームの CAPTCHA は、[!DNL AEM Forms] アプリのオフラインモードではサポートされていません。
 >
 
-
-## Google が提供する reCAPTCHA サービスの設定 {#google-recaptcha}
+## Googleによる reCAPTCHA サービスの設定 {#google-reCAPTCHA}
 
 フォームの作成者は、Google による reCAPTCHA サービスを使用してアダプティブフォームに CAPTCHA を実装できます。サイトを保護する高度な CAPTCHA 機能を提供します。 reCAPTCHA の仕組みについて詳しくは、 [Google reCAPTCHA](https://developers.google.com/recaptcha/).
 
@@ -49,10 +48,10 @@ CAPTCHA（Computers and Humans Apart を伝える完全自動公開チューリ�
 
       1. 設定プロパティダイアログで、「**[!UICONTROL クラウド設定]**」を有効にします。
       1. 「**[!UICONTROL 保存して閉じる]**」をタップして設定内容を保存し、ダイアログを閉じます。
+
    1. 設定ブラウザーで「**[!UICONTROL 作成]**」をタップします。
    1. 設定を作成ダイアログでフォルダーのタイトルを指定し、「**[!UICONTROL クラウド設定]**」を有効にします。
    1. 「**[!UICONTROL 作成]**」をタップします。これで、クラウドサービス設定が有効になったフォルダーが作成されました。
-
 
 1. reCAPTCHA のクラウドサービスを設定します。
 
@@ -83,16 +82,16 @@ CAPTCHA（Computers and Humans Apart を伝える完全自動公開チューリ�
    >
    >Captcha は時間に依存し、約 1 分で有効期限が切れます。 そのため、アダプティブフォームに「送信」ボタンを配置する直前に Captcha コンポーネントを配置することをお勧めします。
 
-1. 追加した Captcha コンポーネントを選択して、![cmppr](assets/configure-icon.svg) をタップし、プロパティを編集します。
+1. 追加した Captcha コンポーネントを選択し、をタップします。 ![cmppr](assets/configure-icon.svg) プロパティを編集します。
 1. CAPTCHA ウィジェットのタイトルを指定します。デフォルト値は **[!UICONTROL Captcha]** です。タイトルを表示しない場合は、「**[!UICONTROL タイトルを非表示にする]**」を選択します。
-1. **[!UICONTROL Captcha サービス]**&#x200B;ドロップダウンで「**[!UICONTROL reCaptcha]**」を選択して、reCAPTCHA サービスを有効にします（「[Google による reCAPTCHA サービス](#google-recaptcha)」に記載されている手順に従って reCAPTCHA サービスが設定されている場合）。設定ドロップダウンから設定を選択します。
+1. 次の **[!UICONTROL Captcha サービス]** ドロップダウンで、「 **[!UICONTROL reCAPTCHA]** reCAPTCHA サービスを有効にするには、 [Googleによる reCAPTCHA サービス](#google-reCAPTCHA). 設定ドロップダウンから設定を選択します。
 1. reCAPTCHA ウィジェットのタイプを「**[!UICONTROL 標準]**」または「**[!UICONTROL コンパクト]**」から選択します。また、「**[!UICONTROL 非表示]**」オプションを使用して、疑わしいアクティビティの場合にのみ CAPTCHA チャレンジを表示できます。以下に示す reCAPTCHA バッジによって保護されたが、保護されたフォームに表示されます。
 
    ![reCAPTCHA バッジによって保護された Google](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
-   >デフォルトの Experience Manager CAPTCHA サービスは非推奨なので、Captcha サービスドロップダウンで「**[!UICONTROL デフォルト]**」を選択しないでください。
+   >* デフォルトの Experience Manager CAPTCHA サービスは非推奨なので、Captcha サービスドロップダウンで「**[!UICONTROL デフォルト]**」を選択しないでください。
 
 1. 各プロパティを保存します。
 
@@ -107,6 +106,10 @@ CAPTCHA（Computers and Humans Apart を伝える完全自動公開チューリ�
 フォームの「**[!UICONTROL 通貨の値]**」フィールドをタップして、以下のルールを作成します。
 
 ![ルールの表示／非表示](assets/rules-show-hide-captcha.png)
+
+>[!NOTE]
+>
+>* サイズが「 」の reCAPTCHA v2 設定を選択した場合 [!UICONTROL 非表示] 「表示/非表示」オプションは使用できません。
 
 ### CAPTCHA の検証 {#validate-captcha}
 
@@ -206,7 +209,7 @@ public interface GuideCaptchaValidator {
 
 `userResponseToken` は、フォームで CAPTCHA を解決した後に生成される `g_recaptcha_response` を指します。
 
-### reCAPTCHA サービスドメインの編集 {#recaptcha-service-domain}
+### reCAPTCHA サービスドメインの編集 {#reCAPTCHA-service-domain}
 
 reCAPTCHA サービスは、`https://www.recaptcha.net/` をデフォルトドメインとして使用します。設定を変更して `https://www.google.com/` を設定したり、reCAPTCHA サービスの読み込み、レンダリング、検証を行うカスタムドメイン名を設定したりできます。
 
