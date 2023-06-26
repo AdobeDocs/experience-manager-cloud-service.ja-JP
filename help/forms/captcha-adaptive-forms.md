@@ -10,7 +10,7 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 1633e02fc6b79a45582b919863662bc1d1b49b42
+source-git-commit: a16da1b11cfe18910b2e57c0b6b668543dba46e3
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 86%
@@ -70,17 +70,14 @@ CAPTCHA（Computers and Humans Apart を伝える完全自動公開チューリ�
 
    >[!NOTE]
    >
-   >アダプティブフォームの作成時に選択した設定コンテナに、reCAPTCHA クラウドサービスが含まれていることを確認してください。アダプティブフォームのプロパティを編集して、そのアダプティブフォームに関連付けられている設定コンテナを変更することもできます。
+   > アダプティブフォームの作成時に選択した設定コンテナに、reCAPTCHA クラウドサービスが含まれていることを確認してください。アダプティブフォームのプロパティを編集して、そのアダプティブフォームに関連付けられている設定コンテナを変更することもできます。
 
 1. コンポーネントブラウザーから **[!UICONTROL Captcha]** コンポーネントを、アダプティブフォームにドラッグ＆ドロップします。
 
    >[!NOTE]
    >
-   >アダプティブフォームでの複数の Captcha コンポーネントの使用はサポートされていません。また、遅延読み込み用とマークされたパネルやフラグメントでは、CAPTCHA を使用しないことをお勧めします。
-
-   >[!NOTE]
-   >
-   >Captcha は時間に依存し、約 1 分で有効期限が切れます。 そのため、アダプティブフォームに「送信」ボタンを配置する直前に Captcha コンポーネントを配置することをお勧めします。
+   > * アダプティブフォームでの複数の Captcha コンポーネントの使用はサポートされていません。また、遅延読み込み用とマークされたパネルやフラグメントでは、CAPTCHA を使用しないことをお勧めします。
+   > * Captcha は時間に依存し、約 1 分で有効期限が切れます。 そのため、アダプティブフォームに「送信」ボタンを配置する直前に Captcha コンポーネントを配置することをお勧めします。
 
 1. 追加した Captcha コンポーネントを選択し、をタップします。 ![cmppr](assets/configure-icon.svg) プロパティを編集します。
 1. CAPTCHA ウィジェットのタイトルを指定します。デフォルト値は **[!UICONTROL Captcha]** です。タイトルを表示しない場合は、「**[!UICONTROL タイトルを非表示にする]**」を選択します。
@@ -91,7 +88,7 @@ CAPTCHA（Computers and Humans Apart を伝える完全自動公開チューリ�
 
    >[!NOTE]
    >
-   >* デフォルトの Experience Manager CAPTCHA サービスは非推奨なので、Captcha サービスドロップダウンで「**[!UICONTROL デフォルト]**」を選択しないでください。
+   > デフォルトの Experience Manager CAPTCHA サービスは非推奨なので、Captcha サービスドロップダウンで「**[!UICONTROL デフォルト]**」を選択しないでください。
 
 1. 各プロパティを保存します。
 
@@ -109,7 +106,7 @@ CAPTCHA（Computers and Humans Apart を伝える完全自動公開チューリ�
 
 >[!NOTE]
 >
->* サイズが「 」の reCAPTCHA v2 設定を選択した場合 [!UICONTROL 非表示] 「表示/非表示」オプションは使用できません。
+> サイズが「 」の reCAPTCHA v2 設定を選択した場合 [!UICONTROL 非表示] 「表示/非表示」オプションは使用できません。
 
 ### CAPTCHA の検証 {#validate-captcha}
 
