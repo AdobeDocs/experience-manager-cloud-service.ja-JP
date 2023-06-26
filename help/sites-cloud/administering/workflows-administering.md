@@ -3,9 +3,9 @@ title: ワークフローインスタンスの管理
 description: ワークフローインスタンスの管理方法について説明します。
 feature: Administering
 role: Admin
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 31cda6f7eb7ef1c32ba9d0ec7d198a5f2f38b1e6
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1284'
 ht-degree: 61%
 
 ---
@@ -28,12 +28,21 @@ ht-degree: 61%
 1. ナビゲーションを使用して、**ツール**／**ワークフロー**&#x200B;を選択します。
 1. 選択 **インスタンス** ：現在進行中の実行中のワークフローインスタンスのリストを表示します。
 1. 上部のレールの右隅に、ワークフローインスタンスに **実行中のワークフロー**, **ステータス**、および **詳細**.
-1. **実行中のワークフロー** 実行中のワークフローの数とステータスを表示します。 例えば、指定された画像で、次の数が表示されます： **実行中のワークフロー** そして **ステータス** AEMインスタンスの
-   ![状態健康な](/help/sites-cloud/administering/assets/status-healthy.png)
-   ![status-healthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
-1. の場合 **ステータスの詳細** ワークフローインスタンスの **詳細**、 **実行中のワークフローインスタンスの数**, **完了したワークフローインスタンス**, **中止されたワークフローインスタンス**, **失敗したワークフローインスタンス**&#x200B;など。 例えば、以下は以下の画像で、 **ステータスの詳細** と **ステータス：正常** および **ステータス：異常**.
-   ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
-   ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
+1. **実行中のワークフロー** 実行中のワークフローの数とステータスを表示します。 例えば、指定された画像で、次の数が表示されます： **実行中のワークフロー** そして **ステータス** AEMインスタンスの：
+
+   * **ステータス : 正常**
+     ![状態健康な](/help/sites-cloud/administering/assets/status-healthy.png)
+
+   * **ステータス : 正常ではない**
+     ![status-healthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
+
+1. の場合 **ステータスの詳細** ワークフローインスタンスの **詳細**、 **実行中のワークフローインスタンスの数**, **完了したワークフローインスタンス**, **中止されたワークフローインスタンス**, **失敗したワークフローインスタンス**&#x200B;など。 例えば、以下は以下の画像で、 **ステータスの詳細** 次を使用：
+
+   * **ステータスの詳細：正常**
+     ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
+
+   * **ステータスの詳細：異常**
+     ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
