@@ -1,17 +1,17 @@
 ---
-title: Java 機能テスト
-description: AEM as a Cloud Service用の Java 機能テストの作成方法を説明します
+title: Java&trade;機能テスト
+description: Java&trade の書き方を学ぶ；AEMas a Cloud Serviceの機能テスト
 exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 73%
+source-wordcount: '844'
+ht-degree: 59%
 
 ---
 
-# Java 機能テスト
+# Java™機能テスト
 
-AEM as a Cloud Service用の Java 機能テストの作成方法を説明します
+AEM as a Cloud Serviceの Java™機能テストを作成する方法を説明します
 
 ## 機能テストの概要 {#getting-started-functional-tests}
 
@@ -31,13 +31,13 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 
 アドビが製品機能テストの作成に使用するのと同じツールを、カスタム機能テストの作成に使用できます。テストの作成方法の例として、GitHub の[製品機能テスト](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)を参照してください。
 
-カスタム機能テストのコードは、プロジェクトの `it.tests` フォルダーにある Java コードです。すべての機能テストを含んだ 1 つの JAR が生成されます。ビルドで複数のテスト JAR が生成される場合、どの JAR が選択されるかは非決定的です。テスト JAR がゼロになる場合、テスト手順はデフォルトで合格します。テストのサンプルについては、[AEM プロジェクトのアーキタイプ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)を参照してください。
+カスタム機能テストのコードは、 `it.tests` プロジェクトのフォルダー。 すべての機能テストを含んだ 1 つの JAR が生成されます。ビルドで複数のテスト JAR が生成される場合、どの JAR が選択されるかは非決定的です。テスト JAR がゼロになる場合、テスト手順はデフォルトで合格します。テストのサンプルについては、[AEM プロジェクトのアーキタイプ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)を参照してください。
 
-テストは、少なくとも 2 つのオーサーインスタンス、2 つのパブリッシュインスタンス、Dispatcher 設定など、アドビが維持管理するテストインフラストラクチャで実行されます。つまり、カスタム機能テストは AEM スタック全体に対して実行されます。
+テストは、少なくとも 2 つのオーサーインスタンス、2 つのパブリッシュインスタンス、Dispatcher 設定など、Adobeが維持するテストインフラストラクチャで実行されます。 このセットアップは、カスタム機能テストがAEMスタック全体に対して実行されることを意味します。
 
 ### 機能テストの構造 {#functional-tests-structure}
 
-カスタム機能テストは、AEM にデプロイするアーティファクトと同じ Maven ビルドで生成される個別の JAR ファイルとしてパッケージ化する必要があります。一般に、これは別個の Maven モジュールになります。結果として生成される JAR ファイルには、必要な依存関係がすべて含まれている必要があり、通常は `jar-with-dependencies` 記述子を使用する `maven-assembly-plugin` で作成されます。
+カスタム機能テストは、AEM にデプロイするアーティファクトと同じ Maven ビルドで生成される個別の JAR ファイルとしてパッケージ化する必要があります。一般に、このビルドは別の Maven モジュールになります。 結果として生成される JAR ファイルには、必要な依存関係がすべて含まれている必要があり、通常は `jar-with-dependencies` 記述子を使用する `maven-assembly-plugin` で作成されます。
 
 さらに、この JAR では、`Cloud-Manager-TestType` マニフェストヘッダーが `integration-test` に設定されている必要があります。
 
@@ -81,9 +81,9 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 
 さらに、コードスキャンのカバレッジチェックからテストコードを除外するには、テストコードを `it` という名前のパッケージの下に置く必要があります（カバレッジ除外フィルターは `**/it/**/*.java` です）。
 
-テストクラスは、通常の JUnit テストにする必要があります。テストインフラストラクチャは、`aem-testing-clients` テストライブラリで使用される規則との互換性を持つように設計および設定されています。開発者は、このライブラリを使用し、そのライブラリのベストプラクティスに従うことを強くお勧めします。
+テストクラスは、通常の JUnit テストである必要があります。 テストインフラストラクチャは、`aem-testing-clients` テストライブラリで使用される規則との互換性を持つように設計および設定されています。開発者は、このライブラリを使用し、そのライブラリのベストプラクティスに従うことをお勧めします。
 
-詳しくは、[`aem-testing-clients` GitHub リポジトリー](https://github.com/adobe/aem-testing-clients)を参照してください。
+詳しくは、 [`aem-testing-clients` GitHub リポジトリ](https://github.com/adobe/aem-testing-clients) を参照してください。
 
 >[!TIP]
 >
@@ -103,13 +103,13 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 | タイプ | 値 | 説明 |
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0.5 | テスト実行ごとに予約される CPU 時間の量 |
-| メモリ | 0.5Gi | テストに割り当てられたメモリの量（GB 単位の値） |
-| タイムアウト | 30m | テストが終了するまでの期間。 |
-| 推奨期間 | 15m | Adobeは、この時間を超えないようにテストを書き込むことをお勧めします。 |
+| メモリ | 0.5 Gi | テストに割り当てられたメモリの量（GB 単位の値） |
+| タイムアウト | 30 m | テストが終了するまでの期間。 |
+| 推奨期間 | 15 m | Adobeは、この時間を超えないようにテストを書き込むことをお勧めします。 |
 
 >[!NOTE]
 >
-> より多くのリソースが必要な場合は、カスタマーケアケースを作成し、使用例を説明してください。アドビのチームがお客様のリクエストを確認し、適切な支援を提供します。
+> さらにリソースが必要な場合は、カスタマーケアケースを作成し、使用例を説明します。 Adobeのチームがリクエストを確認し、適切な支援を提供します。
 
 
 ### ローカルテストの実行 {#local-test-execution}
@@ -118,7 +118,7 @@ Cloud Manager パイプラインで機能テストをアクティブ化する前
 
 #### IDE での実行 {#running-in-an-ide}
 
-テストクラスは JUnit テストなので、Eclipse、IntelliJ、NetBeans などの主要な Java IDE から実行できます。製品機能テストとカスタム機能テストはどちらも同じテクノロジーに基づいているので、製品テストをカスタムテストにコピーすることで、両者をローカルで実行できます。
+テストクラスは JUnit テストなので、Eclipse、IntelliJ、NetBeans などの主要な Java™ IDE から実行できます。 製品機能テストとカスタム機能テストはどちらも同じテクノロジーに基づいているので、製品テストをカスタムテストにコピーすることで、両者をローカルで実行できます。
 
 ただし、これらのテストを実行する場合は、 `aem-testing-clients` （および基になる Sling Testing Clients）ライブラリ。
 

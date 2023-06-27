@@ -2,10 +2,10 @@
 title: パイプラインの実行
 description: ここでは、Cloud Manager で Screens as Cloud Service プロジェクトのパイプラインを実行する方法について説明します。
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 100%
+source-wordcount: '312'
+ht-degree: 51%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 ここでは、パイプラインを実行し、Cloud Manager でプログラムのコードをデプロイする方法について説明します。
 
 >[!NOTE]
->Cloud Manager でプログラムのパイプラインを実行する方法については、[CD-CD パイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=ja)および[コードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja)を参照してください。
+>参照： [CI/CD パイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) および [コードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=ja) を参照して、Cloud Manager でプログラムのパイプラインを実行する方法を確認してください。
 
 ## 目的 {#objective}
 
@@ -22,38 +22,40 @@ ht-degree: 100%
 
 ## Cloud Manager で Screens プロジェクトのパイプラインを実行する手順 {#steps-branch-creation}
 
-1. 環境の設定が正常に完了したら、Cloud Manager の&#x200B;**概要**&#x200B;ページのコールトゥアクションカードがアップデートされます。
+1. 環境の設定が正常に完了すると、Cloud Manager の **概要** ページ。
 
    ![画像](/help/screens-cloud/assets/onboarding/add-environ3.png)
 
-1. **概要**&#x200B;ページで「**パイプラインを設定**」をクリックします。
+1. クリック **パイプラインを設定** から **概要** ページ。
 
-1. 分岐を選択した後、「**次へ**」をクリックします。
+1. クリック **次へ** 分岐を選択した後で、
 
    ![画像](/help/screens-cloud/assets/onboarding/run-pipeline1.png)
 
 1. **パイプラインを設定**&#x200B;ウィザードのオプションを選択します。「**保存**」をクリックします。
 
    >[!NOTE]
-   >パイプラインを設定ウィザードのオプションについて詳しくは、 [Cloud Manager からのパイプライン設定の指定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=ja)を参照してください。
+   >パイプラインを設定ウィザードのオプションについて詳しくは、 [Cloud Manager からのパイプライン設定の指定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en)を参照してください。
 
    ![画像](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
-1. セットアップパイプラインが完了すると、コールトゥアクションカードがアップデートされます（下図を参照）。「デプロイ」をクリックします。
+1. 設定パイプラインが完了したら、コールトゥアクションカードが更新されます。
 
    >[!NOTE]
-   >Cloud Manager でのデプロイメントの段階について詳しくは、[コードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja)を参照してください。
+   >Cloud Manager でのデプロイメントの段階について詳しくは、[コードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=ja)を参照してください。
 
    ![画像](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 
-1. 「**ビルド**」をクリックしてビルドプロセスを開始します。
+1. クリック **デプロイ**.
+
+1. クリック **ビルド** をクリックして、ビルドプロセスを開始します。
 
    ![画像](/help/screens-cloud/assets/onboarding/run-pipeline4.png)
 
-1. ビルドプロセスが完了すると、Cloud Manager の&#x200B;**概要**&#x200B;ページの&#x200B;**環境**&#x200B;カードにオーサーリンクが表示されます。
+1. ビルドプロセスが完了すると、 **環境** Cloud Manager の **概要** ページ。
 
    ![画像](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 
-## 次のステップ {#whats-next}
+## 次の手順 {#whats-next}
 
-Cloud Manager でプログラムの環境を設定する方法を学習したら、オンボーディングプロセスの次の手順（[Screens サービスプロバイダー](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)への移動）に進む準備が整いました。
+Cloud Manager でプログラムの環境を設定する方法を学習したら、オンボーディングプロセスの次の手順に進む準備が整いました。 [Screens Services Provider への移動](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md).

@@ -2,10 +2,10 @@
 title: SPA と Adobe Experience Platform Launch の統合
 description: Adobe Experience Platform Launch は、SPA 内に Analytics、ターゲットおよび Audience Manager を実装する方法として推奨されます。
 exl-id: 95008563-c1e5-4685-9c6d-5226d4a66c53
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 87%
+source-wordcount: '166'
+ht-degree: 57%
 
 ---
 
@@ -15,10 +15,10 @@ Adobe Experience Platform Launch は、Analytics、Target および Audience Man
 
 ## チュートリアル {#tutorial}
 
-SPA と Adobe Experience Platform Launch の統合方法を理解するには、[このナレッジベースの記事とチュートリアル](https://helpx.adobe.com/jp/experience-manager/kt/integration/using/launch-reference-architecture-SPA-tutorial-implement.html)を参照してください。この記事では、Angular または React で構築した Experience Cloud を実装するだけでなく、Launch の設定手順も説明しています。
+SPAとAdobe Experience Platform Launchの統合方法については、次を参照してください。 [ナレッジベースの記事とチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ja). Launch の設定、およびAngularまたは React で作成されたExperience Cloudの実装について説明します。
 
 >[!NOTE]
 >
 >AEM SPAエディターを使用しないSPAとのAdobe Experience Platform Launch統合を有効にするために、参照用 KB が作成されました。 また、これらの方法を使用すると、Adobe Experience Platform Launch の統合が、SPA エディターを使用するように構築された SPA と共存できます。
 >
->JavaScript SPA ライブラリと共に Redux を使用する方法については、まだ完全には確認されていません。Redux のサポートは、SPA エディターの今後のリリースで提供される予定です。
+>JavaScript SPAライブラリと共に Redux を使用する方法については、まだ完全には確認されていません。 Redux のサポートは、SPA エディターの今後のリリースで提供される予定です。

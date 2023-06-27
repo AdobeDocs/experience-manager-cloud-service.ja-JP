@@ -2,10 +2,10 @@
 title: API リクエストの作成 - ヘッドレス設定
 description: コンテンツフラグメントコンテンツと AEM Assets REST API のヘッドレス配信に GraphQL API を使用して、コンテンツフラグメントを管理する方法を説明します。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 98%
+source-wordcount: '654'
+ht-degree: 63%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 98%
 
 [コンテンツフラグメントはいくつか作成したので、AEM API](create-content-fragment.md) を使用してそれらをヘッドレスで配信できます。
 
-* [GraphQL](/help/headless/graphql-api/content-fragments.md) API を使用すると、コンテンツフラグメントにアクセスして配信するリクエストを作成できます。この API は、コンテンツフラグメントコンテンツのクエリと使用に最も堅牢な機能セットを提供します。
-   * これを使用するには、[AEM でエンドポイントを定義して有効にする必要があり](/help/headless/graphql-api/graphql-endpoint.md)、必要に応じて [GraphiQL インターフェイスをインストールする必要があります](/help/headless/graphql-api/graphiql-ide.md)。
+* [GraphQL API](/help/headless/graphql-api/content-fragments.md) では、コンテンツフラグメントにアクセスして配信するリクエストを作成できます。 この API は、コンテンツフラグメントコンテンツのクエリと使用に最も堅牢な機能セットを提供します。
+   * API を使用するには、 [AEMのエンドポイントの定義と有効化](/help/headless/graphql-api/graphql-endpoint.md)（必要に応じて） [GraphiQL インターフェイスがインストールされています](/help/headless/graphql-api/graphiql-ide.md).
 * [アセット REST API](/help/assets/content-fragments/assets-api-content-fragments.md) を使用すると、コンテンツフラグメント（およびその他のアセット）を作成および変更できます。
 
-このガイドの残りの部分では、GraphQL へのアクセスとコンテンツフラグメントの配信について説明します。
+このガイドでは、GraphQLへのアクセスとコンテンツフラグメントの配信について説明します。
 
 ## GraphQL エンドポイントの有効化 {#enable-graphql-endpoint}
 
@@ -29,11 +29,11 @@ GraphQL API を使用する前に、GraphQL エンドポイントを作成する
 
 1. **ツール**／**一般** に移動し、「**GraphQL**」を選択します。
 1. 「**作成**」を選択します。
-1. **新しい GraphQL エンドポイントを作成**&#x200B;ダイアログが開きます。以下を指定します。
+1. この **新しいGraphQLエンドポイントを作成** ダイアログボックスが開きます。 以下を指定します。
    * **名前**：エンドポイントの名前。任意のテキストを入力できます。
    * **使用する GraphQL スキーマの提供元**：ドロップダウンを使用して、必要な設定を選択します。
 1. 「**作成**」で確定します。
-1. コンソールで、前に作成した設定に基づいて、**パス**&#x200B;が表示されます。これは、GraphQL クエリの実行に使用されるパスです。
+1. コンソールで、 **パス** は、前に作成した設定に基づいて表示されます。 このパスは、GraphQLクエリを実行するために使用されます。
 
    ```
    /content/cq:graphql/<configuration-name>/endpoint
@@ -43,7 +43,7 @@ GraphQL API を使用する前に、GraphQL エンドポイントを作成する
 
 ## GraphQL と GraphiQL を使用したクエリコンテンツ
 
-情報アーキテクトは、コンテンツを配信するために、チャネルエンドポイント用のクエリを設計する必要があります。 一般に、これらのクエリは、モデルやエンドポイントごとに 1 回だけ作成する必要があります。この「はじめる前に」ガイドの目的上、1 つだけ作成します。
+情報アーキテクトは、チャネルエンドポイントがコンテンツを配信するためのクエリを設計します。 これらのクエリは、エンドポイントごと、モデルごとに 1 回だけ考慮します。 この入門ガイドでは、作成する必要があるのは 1 つだけです。
 
 GraphiQL は IDE であり、AEM 環境に含まれています。[エンドポイントを設定](#enable-graphql-endpoint)した後、アクセス可能になり表示されます。
 
@@ -63,7 +63,7 @@ GraphiQL は IDE であり、AEM 環境に含まれています。[エンドポ�
 
    ![GraphiQL エディター](../assets/graphiql.png)
 
-1. 作成したモデルが `person` で `firstName`、`lastName`、`position` の各フィールドを持つ場合は、単純なクエリを構築して、コンテンツフラグメントのコンテンツを取得できます。
+1. 作成したモデルの名前が `person` フィールド `firstName`, `lastName`、および `position`を使用すると、単純なクエリを作成して、コンテンツフラグメントのコンテンツを取得できます。
 
    ```text
    query 
@@ -85,16 +85,16 @@ GraphiQL は IDE であり、AEM 環境に含まれています。[エンドポ�
 1. 「**クエリを実行**」ボタンをクリックするか `Ctrl-Enter` ホットキーを使用すると、結果が JSON として右側のパネルに表示されます。
    ![GraphiQL の結果](../assets/graphiql-results.png)
 
-1. ページの右上にある&#x200B;**ドキュメント**リンクをクリックすると、文脈依存ドキュメントが表示され、独自のモデルに適合するクエリの構築に役立ちます。
+1. ページの右上隅で、 **ドキュメント** コンテキスト内ドキュメントを表示するリンクを追加しました。
    ![GraphiQL ドキュメント](../assets/graphiql-documentation.png)
 
-GraphQL を使用すると、特定のデータセットや個々のデータオブジェクトだけでなく、オブジェクトの特定の要素、ネストされた結果、クエリ変数のオファーサポートなどをターゲットできる構造化クエリが可能です。
+GraphQLを使用すると、特定のデータセットや個々のデータオブジェクトをターゲットにするだけでなく、オブジェクトの特定の要素やネストされた結果を配信したり、クエリ変数をサポートしたりできる構造化クエリが可能になります。
 
-GraphQL では、反復的な API リクエストと過剰な配信を回避でき、代わりに単一の API クエリに対するレンダリングに必要なものを一括配信できます。結果の JSON を使用して、他のサイトやアプリにデータを配信できます。
+GraphQLでは、繰り返しの API リクエストや過度の配信を避けることができ、代わりに、1 つの API クエリへの応答としてレンダリングに必要なものを一括配信できます。 結果の JSON を使用して、他のサイトやアプリにデータを配信できます。
 
 ## 次の手順 {#next-steps}
 
-これで作業は完了です。AEM のヘッドレスコンテンツ管理に関する基本的な内容を説明しました。もちろん、利用可能な機能の包括的な理解を深めるためのリソースは他にもたくさんあります。
+これで作業は完了です。AEM のヘッドレスコンテンツ管理に関する基本的な内容を説明しました。使用可能な機能を包括的に理解するために、さらに多くのリソースを参照できます。
 
 * **[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md)** - コンテンツフラグメントの作成と管理に関する詳細
 * **[AEM Assets HTTP API でサポートされるコンテンツフラグメント](/help/assets/content-fragments/assets-api-content-fragments.md)** - CRUD 操作（作成、読み取り、更新、削除）を介して HTTP API 経由で直接 AEM コンテンツにアクセスする方法の詳細
