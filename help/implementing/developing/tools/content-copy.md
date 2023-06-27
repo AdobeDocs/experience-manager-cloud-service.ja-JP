@@ -2,10 +2,10 @@
 title: コンテンツコピーツール
 description: コンテンツコピーツールを使用すると、可変コンテンツをテスト用に、AEMの実稼動環境から低レベルの環境に、オンデマンドでas a Cloud Service可能なコンテンツをコピーできます。
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: f08048b2378b150210a3fd1168206f4efb0c4f8e
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 41%
+source-wordcount: '1203'
+ht-degree: 40%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 41%
 
 ## はじめに {#introduction}
 
-現在の実際のデータは、テスト、検証、ユーザー受け入れの目的で役立ちます。コンテンツコピーツールを使用すると、実稼動AEM環境からステージング、開発またはにコンテンツをコピーできます [急速開発環境 (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 環境を使用して設定できます。
+現在の実際のデータは、テスト、検証、ユーザー受け入れの目的で役立ちます。コンテンツコピーツールを使用すると、実稼動AEMas a Cloud Service環境からステージング、開発または [急速開発環境 (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 環境を使用して設定できます。
 
 コピーするコンテンツは、コンテンツセットによって定義されます。コンテンツセットは、同じ Cloud Manager プログラム内のソースオーサリングサービス環境からターゲットオーサリングサービス環境にコピーされる可変コンテンツを含む JCR パスのリストで構成されます。 コンテンツセットでは、次のパスを使用できます。
 
