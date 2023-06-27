@@ -2,10 +2,10 @@
 title: AEM Dispatcher コンバーターツール
 description: AEM Dispatcher コンバーターツール
 exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 90%
+source-wordcount: '341'
+ht-degree: 34%
 
 ---
 
@@ -14,24 +14,24 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_dispconverter"
 >title="AEM Dispatcher コンバーター"
->abstract="Adobe Experience Manager Dispatcher コンバーターは、既存の AEM Dispatcher 設定を AEM as a Cloud Service Dispatcher 設定に変換します。"
+>abstract="Adobe Experience Manager Dispatcher コンバーターは、AEM Dispatcher 上の既存の設定を、AEM as a Cloud Service Dispatcher 上の設定に変換します。"
 
-Adobe Experience Manager Dispatcher コンバーターは、既存の AEM Dispatcher 設定を AEM as a Cloud Service Dispatcher 設定に変換します。
+Adobe Experience Manager Dispatcher コンバーターは、AEM Dispatcher 上の既存の設定を、AEM as a Cloud Service Dispatcher 上の設定に変換します。
 
 ## Dispatcher の概要 {#introduction-dispatcher}
 
-Dispatcher は、Adobe Experience Manager のキャッシュやロードバランシングを管理するツールです。AEM Dispatcher を使用すると、AEMサーバーを攻撃から保護するのにも役立ちます。 したがって、エンタープライズクラスの Web サーバーと組み合わせて Dispatcher を使用することで、AEMインスタンスのセキュリティを強化できます。
+Dispatcher は、Adobe Experience Managerのキャッシュ、ロードバランシング、またはその両方を使用するツールです。 AEM Dispatcher を使用すると、AEMサーバーを攻撃から保護するのにも役立ちます。 したがって、エンタープライズクラスの Web サーバーと共に Dispatcher を使用することで、AEMインスタンスのセキュリティを高めることができます。
 
 >[!NOTE]
 >Dispatcher の最も一般的な使用法は、**AEM パブリッシュインスタンス**&#x200B;からの応答をキャッシュして、外部に公開されている Web サイトの応答性とセキュリティを高めることです。
 
-Dispatcher によるキャッシュの実行、ドキュメントの返却、ロードバランシングの実行の方法については、[Dispatcher の概要](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja)を参照してください。
+参照： [Dispatcher の概要](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja) Dispatcher によるキャッシュの実行方法を学ぶには、ドキュメントを返してロードバランシングを実行します。
 
 ### Apache および Dispatcher の設定とテスト {#dispatcher-configurations-cloud}
 
-ここでは、AEM as a Cloud Service の Apache および Dispatcher の設定を構築する方法と、クラウド環境にデプロイする前にローカルで検証および実行する方法について説明します。
+AEMas a Cloud Serviceの Apache および Dispatcher 設定を構築する方法と、クラウド環境にデプロイする前にローカルで検証および実行する方法について説明します。
 
-詳しくは、[クラウド内の Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=ja) を参照してください。
+詳しくは、 [クラウド内の Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=ja) を参照してください。
 
 ## AEM Dispatcher コンバーター {#aem-dispatcher-converter}
 
@@ -39,13 +39,13 @@ AEM Dispatcher コンバーターは、既存のオンプレミスまたは Adob
 
 ## AEM Dispatcher コンバーターの使用 {#using-dispatcher-converter}
 
-* Adobe I/O CLI を使用：`aio-cli-plugin-aem-cloud-service-migration`（Adobe I/O CLI 用の AEM as a Cloud Service コードリファクタリングプラグイン）を使用して AEM Dispatcher Converter を使用することをお勧めします。
+* Adobe Developer CLI を使用する場合：Adobeでは、 `aio-cli-plugin-aem-cloud-service-migration` (Adobe Developer CLI 用のAEMas a Cloud Service的なコードリファクタリングプラグイン )。
 
-  プラグインをインストールして使用する方法について詳しくは、**[Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** を参照してください。
+  詳しくは、 **[Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** そのため、プラグインをインストールして使用する方法を学ぶことができます。
 
-* スタンドアロンユーティリティとして：AEM Dispatcher コンバーターツールは、スタンドアロンユーティリティとして実行することもできます。
+* スタンドアロンユーティリティとして：AEM Dispatcher Converter ツールは、スタンドアロンユーティリティとして実行することもできます。
 
-  このツールの使用方法やトラブルシューティングについては、**[Git リソース：AEM Cloud Service Dispatcher コンバーター](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)**&#x200B;を参照してください。
+  詳しくは、 **[Git リソース：AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)** このツールの使用方法やトラブルシューティングについて学ぶことができます。
 
 >[!IMPORTANT]
->AEM Dispatcher コンバーターは、NodeJS を使用して開発されました。NodeJS 10.0 以降をインストールすることをお勧めします。
+>AEM Dispatcher コンバーターは、NodeJS を使用して開発されました。Adobeでは、NodeJS 10.0 以降がインストールされていることをお勧めします。
