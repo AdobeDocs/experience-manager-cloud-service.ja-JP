@@ -2,10 +2,10 @@
 title: コンポーネント
 description: コンポーネントは、AEM におけるコンテンツページの基本的なオーサリング構成要素です。
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 81%
+source-wordcount: '349'
+ht-degree: 71%
 
 ---
 
@@ -42,6 +42,8 @@ AEM には、すぐに使用できる様々なコンポーネントが付属し�
 [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)は柔軟かつ機能豊富なオーサリング機能を提供します。ページを作成するうえで不可欠なコンテンツタイプが用意されています。
 
 これらは AEM のベストプラクティスに従って構築され、AEM オーサリングエクスペリエンスの基盤となります。コアコンポーネントは、特定のプロジェクトニーズに合わせて開発者が容易に拡張できます。
+
+WCM コアコンポーネントと共に、 [アダプティブFormsコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). これらのコアコンポーネントは、標準の簡単な方法で [AEM Sites Page にフォームを作成または追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 
 ### テンプレートの設定 {#configuring-templates}
 

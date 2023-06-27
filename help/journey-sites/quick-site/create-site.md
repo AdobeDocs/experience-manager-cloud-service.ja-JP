@@ -2,10 +2,10 @@
 title: テンプレートからサイトを作成
 description: サイトテンプレートを使用して新しい AEM サイトをすばやく作成する方法を説明します。
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '1485'
-ht-degree: 99%
+source-wordcount: '1513'
+ht-degree: 97%
 
 ---
 
@@ -184,3 +184,4 @@ AEM クイックサイト作成ジャーニーの前のドキュメントであ�
 * [ページの作成と整理](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - このガイドでは、テンプレートから作成した AEM サイトのページをさらにカスタマイズしたい場合の管理方法について詳しく説明します。
 * [パッケージの操作方法](/help/implementing/developing/tools/package-manager.md) - パッケージを使用すると、リポジトリコンテンツの読み込みと書き出しが可能になります。このドキュメントでは、AEM 6.5 でのパッケージの操作方法を説明します（AEMaaCS にも適用）。
 * [サイト管理ドキュメント](/help/sites-cloud/administering/site-creation/create-site.md) - クイックサイト作成ツールの機能について詳しくは、サイト作成に関する技術ドキュメントを参照してください。
+* [AEM Sitesページへのフォームの作成または追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) - Web サイトにフォームを統合し、デジタルエクスペリエンスを最適化して効果を最大限に高めるための、手順を追ったテクニックとベストプラクティスを学びます。

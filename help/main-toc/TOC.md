@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 663dae5785c13d74524054287869310d1fce5bd6
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '4079'
+source-wordcount: '4081'
 ht-degree: 97%
 
 ---
@@ -80,7 +80,7 @@ ht-degree: 97%
       + [最新のリリースノート](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023年度 {#2023}
          + [リリースノート（2023.5.0）](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
-         + [2023.4.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
+         + [リリースノート（2023.4.0）](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
          + [リリースノート（2023.3.0）](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
          + [リリースノート（2023.2.0）](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [リリースノート（2023.1.0）](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
@@ -530,7 +530,6 @@ ht-degree: 97%
          + [AEM Forms as a Cloud Service と Adobe Analytics の統合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [アダプティブフォームと Microsoft Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)
          + [AEM Sites ページへのアダプティブフォームの埋め込み](/help/forms/embed-adaptive-form-aem-sites.md)
-         + [アダプティブフォームを作成するか、AEM Sitesページに追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + フォームデータモデル {#use-form-data-model}
          + [データソースの Cloud Service への接続](/help/forms/data-integration.md)
          + [データソースの設定](/help/forms/configure-data-sources.md)
@@ -541,6 +540,7 @@ ht-degree: 97%
          + [フォームデータモデルの操作](/help/forms/work-with-form-data-model.md)
          + [フォームデータモデルの使用](/help/forms/using-form-data-model.md)
    + アダプティブフォーム {#adaptive-forms-authoring}
+      + [アダプティブフォームをAEM Sitesページまたはエクスペリエンスフラグメントに追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + アダプティブフォームのオーサリング - コアコンポーネント {#authoring-adaptive-forms-core-components}
          + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
             + [アダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
