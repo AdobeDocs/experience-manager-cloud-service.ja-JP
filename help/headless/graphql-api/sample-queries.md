@@ -1,29 +1,28 @@
 ---
 title: AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ
-description: GraphQL を AEM と共に使用し、サンプルコンテンツとクエリを調べて、コンテンツをヘッドレスに提供する方法を説明します。
+description: GraphQLをAEMと共に使用して、サンプルコンテンツやクエリを参照することで、コンテンツをヘッドレスに提供できるようにする方法を学びます。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 063d8a23c0634de7c5c25b4e617cc536c2dc3a3b
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '1760'
-ht-degree: 95%
+source-wordcount: '1752'
+ht-degree: 76%
 
 ---
 
 # AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ {#learn-graphql-with-aem-sample-content-queries}
 
-GraphQL を AEM と共に使用し、サンプルコンテンツとクエリを調べて、コンテンツをヘッドレスに提供する方法を説明します。
+GraphQLをAEMと共に使用して、サンプルコンテンツやクエリを参照することで、コンテンツをヘッドレスに提供できるようにする方法を学びます。
 
 >[!NOTE]
 >
->このページと併せて、次の記事も参照してください。
+>このページには、以下の情報も含まれています。
 >
 >* [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 >* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 >* [コンテンツフラグメントと共に使用する AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 
-
-GraphQL クエリの基本と、AEM コンテンツフラグメントとの連携方法を学ぶには、いくつかの実践的な例が参考になります。
+GraphQLクエリの概要とAEMコンテンツフラグメントの操作方法を学ぶには、実用的な例をいくつか見るのに役立ちます。
 
 以下を参照してください。
 
@@ -42,13 +41,12 @@ GraphQL クエリの基本と、AEM コンテンツフラグメントとの連�
 
 >[!NOTE]
 >
->インスタンスによっては、[AEM GraphQL API に付属している GraphiQL インターフェイス](/help/headless/graphql-api/graphiql-ide.md)に直接アクセスして、クエリの送信とテストをおこなうことができます。
+>インスタンスに応じて、 [AEM GraphQL API に含まれる GraphiQL インターフェイス](/help/headless/graphql-api/graphiql-ide.md) クエリの送信とテストに使用します。
 >
 >クエリエディターには、次のいずれかの方法でアクセスできます。
 >
 >* **ツール**／**一般**／**GraphQL クエリエディター**
 >* 直接アクセス（例：`http://localhost:4502/aem/graphiql.html`）
-
 
 >[!NOTE]
 >
@@ -56,7 +54,7 @@ GraphQL クエリの基本と、AEM コンテンツフラグメントとの連�
 
 ### サンプルクエリ - 使用可能なすべてのスキーマとデータタイプ {#sample-all-schemes-datatypes}
 
-このクエリでは、使用可能なすべてのスキーマのすべての `types` を返します。
+すべてを返します `types` （使用可能なすべてのスキーマ用）
 
 **サンプルクエリ**
 
@@ -149,7 +147,7 @@ GraphQL クエリの基本と、AEM コンテンツフラグメントとの連�
 
 ### サンプルクエリ - すべての都市に関するすべての情報 {#sample-all-information-all-cities}
 
-すべての都市に関するすべての情報を取得するには、次のような非常に基本的なクエリを使用します。
+すべての都市に関するすべての情報を取得するには、次の基本クエリを使用します。
 **サンプルクエリ**
 
 ```graphql
@@ -160,7 +158,7 @@ GraphQL クエリの基本と、AEM コンテンツフラグメントとの連�
 }
 ```
 
-実行時にクエリが自動的に展開されて、次のように、すべてのフィールドが組み込まれます。
+実行すると、クエリが自動的に展開され、次のすべてのフィールドが含まれます。
 
 ```graphql
 {
@@ -232,7 +230,7 @@ GraphQL クエリの基本と、AEM コンテンツフラグメントとの連�
 
 ### サンプルクエリ - すべての都市の名前 {#sample-names-all-cities}
 
-これは、`city` スキーマ内のすべてのエントリの `name` を返す単純なクエリです。
+を返す簡単なクエリ `name`の `city`スキーマ。
 
 **サンプルクエリ**
 
@@ -282,7 +280,7 @@ query {
 
 ### サンプルクエリ - 1 つの特定の都市フラグメント {#sample-single-specific-city-fragment}
 
-これは、リポジトリー内の特定の場所にある 1 つのフラグメントエントリの詳細を返すクエリです。
+リポジトリ内の特定の場所にある単一のフラグメントエントリの詳細を返すクエリ。
 
 **サンプルクエリ**
 
@@ -323,7 +321,7 @@ query {
 
 ### サンプルクエリ - 名前付きバリエーションを持つすべての都市 {#sample-cities-named-variation}
 
-`city` Berlin の新しいバリエーションを「Berlin Center」（`berlin_centre`）という名前で作成する場合は、クエリを使用してバリエーションの詳細を返すことができます。
+バリエーションを作成する場合、「Berlin Center」(`berlin_centre`)、 `city` ベルリンの場合、クエリを使用してバリエーションの詳細を返すことができます。
 
 **サンプルクエリ**
 
@@ -368,8 +366,8 @@ query {
 
 次の場合：
 
-* `Tourism` : `Business`、`City Break`、`Holiday` という名前の様々なタグを作成し、
-* これらを様々な `City` インスタンスのマスターバリエーションに割り当てます
+* 様々なタグを作成し、名前を付けます。 `Tourism` : `Business`, `City Break`, `Holiday`
+* そして、それらを様々なのマスターバリエーションに割り当てる `City` インスタンス
 
 この場合、クエリを使用して、`city` スキーマで都市滞在型休暇としてタグ付けされたすべてのエントリの `name` および `tags` の詳細を返すことができます。
 
@@ -546,7 +544,7 @@ query {
 
 ### サンプルクエリ - 「Jobs」または「Smith」という名前を持つすべての人物 {#sample-all-persons-jobs-smith}
 
-`Jobs` または `Smith` という名前を持つすべての `persons` が抜き出されます。
+すべてをフィルターするクエリ `persons` 名前の付いたものは `Jobs`または `Smith`.
 
 **サンプルクエリ**
 
@@ -600,7 +598,7 @@ query {
 
 ### サンプルクエリ - 「Jobs」という名前を持たないすべての人物 {#sample-all-persons-not-jobs}
 
-`Jobs` または `Smith` という名前を持つすべての `persons` が抜き出されます。
+すべてをフィルターするクエリ `persons` 名前の付いたものは `Jobs`または `Smith`.
 
 **サンプルクエリ**
 
@@ -710,9 +708,9 @@ query {
 }
 ```
 
-### サンプルクエリ - ドイツまたはスイスにあり、人口が 400000 から 999999 範囲にあるすべての都市 {#sample-all-cities-d-ch-population}
+### サンプルクエリ — ドイツまたはスイスのすべての都市 ( 人口400000 ～ 999999) {#sample-all-cities-d-ch-population}
 
-ここでは、フィールドの組み合わせに基づいてフィルタリングされます。`AND`（暗黙的）を使用して `population` の範囲を選択しつつ、`OR`（明示的）を使用して必要な都市を選択しています。
+ここでは、フィールドの組み合わせがフィルターされます。 `AND`（暗黙的）を使用して `population` の範囲を選択しつつ、`OR`（明示的）を使用して必要な都市を選択しています。
 
 **サンプルクエリ**
 
@@ -1154,19 +1152,18 @@ query {
 
 ## WKND プロジェクトを使用したサンプルクエリ {#sample-queries-using-wknd-project}
 
-これらのサンプルクエリは WKND プロジェクトに基づいています。これには次のものが含まれています。
+これらのサンプルクエリは WKND プロジェクトに基づいています。次のようになります。
 
 * 次の URL で入手できるコンテンツフラグメントモデル：
-   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * 次の URL で入手できるコンテンツフラグメント（およびその他のコンテンツ）：
-   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
-
-   `http://<hostname>:<port>/assets.html/content/dam/wknd-shared/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd-shared/en`
 
 >[!NOTE]
 >
->結果は膨大な量になる可能性があるので、ここでは再現されていません。
+>結果は大きくなる可能性があるので、ここでは再現されません。
 
 ### 特定モデルのコンテンツフラグメントのうち指定のプロパティを持つものをすべて取得するサンプルクエリ {#sample-wknd-all-model-properties}
 
@@ -1259,7 +1256,7 @@ query {
 このサンプルクエリでは次のものを検索します。
 
 * 特定のパスにある `article` タイプの 1 つのコンテンツフラグメントについて
-   * その中の、次のすべてのコンテンツ形式
+   * そのフラグメント内では、次のすべての形式のコンテンツが含まれます。
       * HTML
       * Markdown
       * プレーンテキスト
@@ -1318,7 +1315,7 @@ query {
 このクエリでは次のものを検索します。
 
 * 特定のパスにある `article` タイプの 1 つのコンテンツフラグメントについて
-   * その中の、参照されている（ネストされた）フラグメントのパスと作成者
+   * そのフラグメント内で、参照先（ネストされた）フラグメントのパスと作成者
 
 >[!NOTE]
 >
@@ -1449,7 +1446,7 @@ query {
 
 #### 添付ファイルを含んだ複数のコンテンツフラグメントのサンプルクエリ {#sample-wknd-multiple-fragments-attachments}
 
-次のクエリは、すべての `attachments`（`content-reference` タイプの特定のフィールド（サブグループ））を返します。
+次のクエリは、すべてを返します `attachments`  — 型の特定のフィールド（サブグループ） `content-reference`:
 
 >[!NOTE]
 >
@@ -1541,7 +1538,7 @@ query {
 このクエリでは次のものを検索します。
 
 * 特定のパスにある `author` タイプの 1 つのコンテンツフラグメントについて
-   * その中の、バリエーション `another` に関するデータ
+   * フラグメント内で、バリエーションに関連するデータを以下に示します。 `another`
 
 **サンプルクエリ**
 
@@ -1567,7 +1564,7 @@ query {
 
 >[!NOTE]
 >
->これにより、指定した名前の[バリエーション](/help/headless/graphql-api/content-fragments.md#variations)がないコンテンツフラグメントのフォールバックが示されます。
+>このクエリは、 [バリエーション](/help/headless/graphql-api/content-fragments.md#variations) 指定した名前の。
 
 **サンプルクエリ**
 
@@ -1808,7 +1805,7 @@ query {
 
 ### サンプルコンテンツフラグメントモデル（スキーマ） {#sample-content-fragment-models-schemas}
 
-サンプルクエリでは、次のコンテンツモデルとその相互関係（参照関係「->」）を使用します。
+サンプルクエリでは、次のコンテンツモデルとその相互関係（参照 —>）を使用します。
 
 * [Company](#model-company)
 -> [Person](#model-person)
@@ -1822,7 +1819,7 @@ query {
 
 | フィールド名 | データタイプ | 参照 |
 |--- |--- |--- |
-| 会社名 | 1 行のテキスト |  |
+| 会社名 | 1 行のテキスト | |
 | CEO | フラグメント参照（1 つ） | [Person](#model-person) |
 | 従業員数 | フラグメント参照（複数フィールド） | [Person](#model-person) |
 
@@ -1832,8 +1829,8 @@ query {
 
 | フィールド名 | データタイプ | 参照 |
 |--- |--- |--- |
-| name（氏名） | 1 行のテキスト |  |
-| 名 | 1 行のテキスト |  |
+| name（氏名） | 1 行のテキスト | |
+| 名 | 1 行のテキスト | |
 | 授賞歴 | フラグメント参照（複数フィールド） | [Award](#model-award) |
 
 #### Award（賞） {#model-award}
@@ -1842,8 +1839,8 @@ query {
 
 | フィールド名 | データタイプ | 参照 |
 |--- |--- |--- |
-| ショートカット／ID | 1 行のテキスト |  |
-| title（タイトル） | 1 行のテキスト |  |
+| ショートカット／ID | 1 行のテキスト | |
+| タイトル | 1 行のテキスト | |
 
 #### City（市区町村） {#model-city}
 
@@ -1851,10 +1848,10 @@ query {
 
 | フィールド名 | データタイプ | 参照 |
 |--- |--- |--- |
-| name（氏名） | 1 行のテキスト |  |
-| 国名 | 1 行のテキスト |  |
-| 人口 | 数値 |  |
-| カテゴリ | タグ |  |
+| name（氏名） | 1 行のテキスト | |
+| Country | 1 行のテキスト | |
+| 人口 | 数値 | |
+| カテゴリ | タグ | |
 
 ### サンプルコンテンツフラグメント {#sample-content-fragments}
 
@@ -1872,14 +1869,14 @@ query {
 
 | name | 名 | 授賞歴 |
 |--- |--- |--- |
-| Lincoln | Abe |  |
-| Smith | Adam |  |
+| Lincoln | Abe | |
+| Smith | Adam | |
 | Slade | Cutter | Gameblitz<br>Gamestar |
-| Marsh | Duke |  |
-| Smith | Joe |  |
+| Marsh | Duke | |
+| Smith | Joe | |
 | Croft | Lara | Gamestar |
 | Caulfield | Max | Gameblitz |
-| ジョブ | Steve |  |
+| ジョブ | Steve | |
 
 #### 賞 {#fragment-award}
 

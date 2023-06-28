@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 43%
+source-wordcount: '1118'
+ht-degree: 45%
 
 ---
 
@@ -63,15 +63,15 @@ AEM as a Cloud Service 環境ごとに異なる GraphQL エンドポイント UR
 
 ![CM 環境情報](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
-### Adobe Developer CLI を使用  {#adobe-cli}
+### Adobe I/OCLI  {#adobe-cli}
 
-Adobe Developer CLI を使用してAEMをコマースソリューションに接続するには、次の手順に従います。
+CLI を使用してAEMをコマースソリューションにAdobe I/Oするには、次の手順に従います。
 
-1. Adobe Developer CLI と Cloud Manager プラグインの取得
+1. Cloud Manager プラグインと Adobe I/O CLI を取得します。
 
-   次を確認します。 [AdobeCloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ja) のダウンロード、設定、使用方法 [Adobe Developer CLI](https://github.com/adobe/aio-cli) と [Cloud Manager CLI プラグイン](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   次を確認します。 [AdobeCloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ja) のダウンロード、設定、使用方法 [Adobe I/OCLI](https://github.com/adobe/aio-cli) と [Cloud Manager CLI プラグイン](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
-2. AEM as a Cloud ServiceプログラムでAdobe Developer CLI を認証します。
+2. Adobe I/O CLI を AEM as a Cloud Service で認証します。
 
 3. Cloud Manager で `COMMERCE_ENDPOINT` 変数を設定します。
 

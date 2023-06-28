@@ -2,10 +2,10 @@
 title: メールサービスの OAuth2 サポート
 description: Adobe Experience Manager as a Mail Service の Oauth2 サポート
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 45332f540551e0c8e513946308af88824a58f121
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 84%
+source-wordcount: '680'
+ht-degree: 45%
 
 ---
 
@@ -13,21 +13,21 @@ ht-degree: 84%
 
 AEM as a Cloud Serviceは、組織が安全な電子メール要件に準拠できるように、OAuth2 の統合メールサービスをサポートしています。
 
-Oauth は複数のメールプロバイダーに対して設定できます。Microsoft Office 365 Outlook で Oauth2 による認証を行うように AEM メールサービスを設定する手順を以下に示します。他のベンダーも同様の方法で設定できます。
+Oauth は複数のメールプロバイダーに対して設定できます。Microsoft® Office 365 Outlook で OAuth2 を介して認証するようにAEM Mail Service を設定する手順を以下に示します。 他のベンダーも同様の方法で設定できます。
 
 AEM as a Cloud Service のメールサービスの詳細については、[メールの送信](/help/implementing/developing/introduction/development-guidelines.md#sending-email)を参照してください。
 
-## Microsoft Outlook {#microsoft-outlook}
+## Microsoft® Outlook {#microsoft-outlook}
 
 1. [https://portal.azure.com/](https://portal.azure.com/)に移動し、ログインします。
-1. 検索バーで **Azure Active Directory** を検索し、結果をクリックします。または、[https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) を直接参照することもできます。
-1. **アプリの登録**／**新しい登録**&#x200B;をクリックします。
+1. を検索 **Azure Active Directory** 検索バーで、結果をクリックします。 または、[https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) を直接参照することもできます。
+1. クリック **アプリの登録** > **新規登録**.
 
    ![アプリ登録プロセスを開始](assets/oauth-outlook1.png)
 
-1. 必要に応じて情報を入力し、**登録**&#x200B;をクリックします。
-1. 新しく作成されたアプリに移動し、**API 権限**&#x200B;を選択します。
-1. **権限を追加**／**グラフ権限**／**委任権限**&#x200B;に移動します。
+1. 必要に応じて情報を入力し、「**登録**」をクリックします。
+1. 新しく作成されたアプリに移動し、を選択します。 **API 権限**.
+1. クリック **権限を追加** > **グラフ権限** > **委任された権限**.
 1. アプリに対して以下の権限を選択し、「**権限を追加**」をクリックします。
    * `https://outlook.office.com/SMTP.Send`
    * `https://graph.microsoft.com/Mail.Read`
@@ -37,32 +37,30 @@ AEM as a Cloud Service のメールサービスの詳細については、[メ�
    * `offline_access`
    * `email`
    * `profile`
-1. **認証**／**プラットフォームを追加** ／**Web**&#x200B;に移動し、**リダイレクト URL**&#x200B;セクションで、次の URL を追加します（スラッシュありで 1 つとスラッシュなしで 1 つ）。
+1. に移動します。 **認証** > **プラットフォームの追加** > **Web**、および **リダイレクト URL** 「 」セクションで、次の URL を追加します。1 つはスラッシュ付きで、もう 1 つはスラッシュなしです。
    * `http://localhost/`
    * `http://localhost`
-1. 各 URL を追加した後で「**設定**」を押し、必要に応じて設定を指定します
-1. 次に、「**証明書とシークレット**」に移動し、「**新しいクライアントシークレット**」をクリックし、画面の手順に従ってシークレットを作成します。このシークレットは後で使用するため、必ずメモしてください
-1. 左側のウィンドウで「**概要**」を押し、後で使用するために、「**アプリケーション（クライアント）ID**」および「**ディレクトリ（テナント）ID**」の値をコピーします。
+1. 各 URL を追加した後で「**設定**」を押し、必要に応じて設定を指定します.
+1. 次に、**証明書とシークレット**&#x200B;に移動し、「**新しいクライアントシークレット**」をクリックし、画面上の手順に従ってシークレットを作成します。このシークレットは後で使用するため、必ずメモしてください.
+1. 押す **概要** をクリックし、 **アプリケーション（クライアント） ID** および **ディレクトリ（テナント） ID** 後で使用する場合。
 
-まとめると、次の情報を使用して、AEM 側のメールサービスの Oauth2 を設定する必要があります。
+まとめるには、次の情報を使用して、AEM側で Mail サービスの OAuth2 を設定します。
 
-* 認証 URL。テナント ID を使用して構築されます。 次の形式になります。`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
-* トークン URL。テナント ID を使用して構築されます。 次の形式になります。`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
-* 更新 URL。テナント ID を使用して構築されます。 次の形式になります。`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* 認証 URL。テナント ID を使用して構築されます。 次の形式で記述します。 `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
+* トークン URL。テナント ID を使用して構築されます。 次の形式で記述します。 `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* 更新 URL。テナント ID を使用して構築されます。 次の形式で記述します。 `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
 * クライアント ID
 * クライアント秘密鍵
 
 ### 更新トークンの生成 {#generating-the-refresh-token}
 
-次に、更新トークンを生成する必要があります。これは、後続の手順で OSGi 設定の一部です。
+次に、次の手順で OSGi 設定の一部である更新トークンを生成します。
 
-これは、次の手順で行います。
-
-1. `clientID` と `tenantID` を自分のアカウントに固有の値に置き換えてから、ブラウザーで次の URL を開きます。`https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
-1. 権限を要求されたら許可します
-1. URL は、新しい場所にリダイレクトされます。この場所は次の形式で構成されます。`http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
-1. 上記の例の `<code>` の値をコピーします
-1. 次の cURL コマンドを使用して、 refreshToken を取得します。tenantID、clientID、clientSecret を、アカウントの値と `<code>` の値で置き換える必要があります。
+1. 置き換えた後、ブラウザーで次の URL を開きます `clientID` および `tenantID` アカウントに固有の値を使用： `https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`.
+1. 尋ねられたら、許可を許可します。
+1. URL は新しい場所にリダイレクトします。次の形式で構築されます。 `http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`.
+1. 上記の例の `<code>` の値をコピーします.
+1. 次の cURL コマンドを使用して、 refreshToken を取得します。tenantID、clientID、clientSecret を、アカウントの値と、 `<code>`:
 
    ```
    curl --location --request POST 'https://login.microsoftonline.com/<tenantId>/oauth2/v2.0/token' \
@@ -82,7 +80,7 @@ AEM as a Cloud Service のメールサービスの詳細については、[メ�
 
 AEM 側で Oauth を設定する前に、次の手順で accessToken と refreshToken の両方を検証してください。
 
-1. 前の手順で生成した refreshToken を使用して accessToken を生成します。次の curl でこれを行えます（`<client_id>`、`<client_secret>`、`<refreshToken>` の値を置き換えます）。
+1. 次の curl を使用して、前の手順で作成した refreshToken を使用し、 accessToken を生成します。その際、 `<client_id>`,`<client_secret>`、および `<refreshToken>`:
 
    ```
    curl --location --request POST 'https://login.microsoftonline.com/<tenetId>/oauth2/v2.0/token' \
@@ -96,13 +94,13 @@ AEM 側で Oauth を設定する前に、次の手順で accessToken と refresh
    --data-urlencode 'refresh_token=<refreshToken>'
    ```
 
-1. accessToken を使用してメールを送信し、正しく動作しているかどうかを確認します。
+1. accessToken を使用してメールを送信し、正しく機能しているかどうかを確認できます。
 
 >[!NOTE]
 >
-> [この場所](https://docs.microsoft.com/ja-jp/azure/active-directory/develop/v2-oauth2-auth-code-flow)から Postman API コレクションを取得できます。
+> [この場所](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow)から Postman API コレクションを取得できます。
 >
-> 詳しくは、[ここ](https://learn.microsoft.com/ja-jp/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth)から MSFT OAuth のドキュメントを参照してください。
+> MSFT OAuth のドキュメントを参照してください。 [ここ](https://learn.microsoft.com/ja-jp/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) を参照してください。
 
 ### AEM as a Cloud Service との統合 {#integration-with-aem-as-a-cloud-service}
 
@@ -124,7 +122,7 @@ AEM 側で Oauth を設定する前に、次の手順で accessToken と refresh
    }
    ```
 
-1. 前の節で説明したように、 `authUrl`、 `tokenUrl`、 `refreshURL` を作成して入力します。
+1. 次の項目に入力： `authUrl`, `tokenUrl`、および `refreshURL` 前の節で説明したように、これらを構築します。
 1. 次のスコープを設定に追加します。
    * `https://outlook.office.com/SMTP.Send`
    * `https://graph.microsoft.com/Mail.Read`
@@ -134,7 +132,7 @@ AEM 側で Oauth を設定する前に、次の手順で accessToken と refresh
    * `offline_access`
    * `email`
    * `profile`
-1. 次の構文で、OSGI プロパティファイル`called com.day.cq.mailer.DefaultMailService.cfg.json`を  `/apps/<my-project>/osgiconfig/config` を次の構文で置き換えます。 smtp.host と smtp.port の値は、 [電子メールサービスのチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=en).
+1. 次の構文で、OSGI プロパティファイル`called com.day.cq.mailer.DefaultMailService.cfg.json`を  `/apps/<my-project>/osgiconfig/config` を次の構文で置き換えます。 この `smtp.host` および `smtp.port` の値は、 [電子メールサービスのチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=en).
 
    ```
    {
@@ -156,4 +154,4 @@ AEM 側で Oauth を設定する前に、次の手順で accessToken と refresh
 
 ### トラブルシューティング {#troubleshooting}
 
-メールサービスが正常に動作しない場合は、ほとんどの場合、前述のように `refreshToken` を再生成し、Cloud Manager API を介して新しい値を渡す必要があります。新しい値がデプロイされるまで数分かかります。
+メールサービスが正しく動作していない場合は、 `refreshToken` 前述のように、Cloud Manager API を介して新しい値を渡します。 新しい値がデプロイされるまで数分かかります。
