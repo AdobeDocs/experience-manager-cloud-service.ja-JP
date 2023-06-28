@@ -3,10 +3,10 @@ title: クエリとインデックス作成のベストプラクティス
 description: アドビのベストプラクティスガイドラインに基づいてインデックスとクエリを最適化する方法を説明します。
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 80%
+source-wordcount: '1556'
+ht-degree: 79%
 
 ---
 
@@ -111,7 +111,7 @@ AEM as a Cloud Service には、効率的なクエリの実装をサポートす
 
 効率的な JCR クエリとインデックス定義を作成できるようにするため、開発時に [JCR クエリチートシート](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=ja#jcrquerycheatsheet)をダウンロードして参照用として使用できます。
 
-これには QueryBuilder、XPath、SQL-2 のクエリの例が収録されていて、クエリのパフォーマンスの点で異なる動作をする複数のシナリオに対応できます。また、Oak インデックスの作成またはカスタマイズ方法に関する推奨事項も収録されています。このチートシートの内容は、AEM as a Cloud Service および AEM 6.5 に適用されます。
+これには QueryBuilder、XPath、SQL-2 のクエリの例が収録されていて、クエリのパフォーマンスの点で異なる動作をする複数のシナリオに対応できます。また、Oak インデックスの作成またはカスタマイズ方法に関する推奨事項も収録されています。このチートシートの内容は、AEM as a Cloud ServiceおよびAEM 6.5 に適用されます。
 
 ## 大きな結果セットを持つクエリ {#queries-with-large-result-sets}
 

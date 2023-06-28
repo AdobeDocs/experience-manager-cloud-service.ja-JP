@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 リリースのリリースノート。'
 description: 「[!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 のリリースノート」
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 92%
+source-wordcount: '1228'
+ht-degree: 90%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 92%
 
 * 最新の CIF コアコンポーネントバージョン v1.8.0 を含む CIF Venia 参照サイト2021.02.24をリリースしました。詳しくは、 [CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) を参照してください。
 
-* CIF コアコンポーネント v1.8.0 をリリースしました。詳しくは、[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0)を参照してください。
+* CIF コアコンポーネント v1.8.0 がリリースされました。詳しくは、 [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -157,9 +157,9 @@ AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 �
 ### コードリファクタリングツールの新機能 {#what-is-new-crt}
 
 * AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンでは、Repository Modernizer のいくつかのバグが修正されています。
-このプラグインの詳細については、[Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=ja#benefits) を参照してください。
+詳しくは、 [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=ja#benefits) このプラグインの詳細を確認するには、を参照してください。
 
 ### バグの修正 {#bug-fixes-crt}
 
 * Repository Modernizer で行われたいくつかのバグ修正。
-詳しくは、[GitHub リソース：aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) を参照してください。
+詳しくは、 [GitHub リソース：aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) を参照してください。

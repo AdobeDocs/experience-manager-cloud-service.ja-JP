@@ -2,10 +2,10 @@
 title: コンテンツ転送の検証
 description: コンテンツ転送ツールを使用してコンテンツ転送を検証します
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1062'
-ht-degree: 75%
+source-wordcount: '1055'
+ht-degree: 69%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 75%
 >
 >この機能は、コンテンツ転送ツール（CTT）バージョン 1.8.x リリース以降で使用できるようになります。AEM Cloud Service のターゲット環境は、バージョン 6158 以降を実行している必要があります。また、[事前コピー](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step)を実行するようにソース環境をセットアップする必要があります。検証機能は、ソース上の azcopy.config ファイルを探します。このファイルが見つからない場合、検証は実行されません。azcopy.config ファイルの設定方法について詳しくは、[このページ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file)を参照してください。
 
-コンテンツ転送の検証はオプション機能です。この機能を有効にすると、抽出にかかる時間と取り込みにかかる時間の両方が長くなります。この機能を使用するには、次の手順に従って、ソースAEM環境のシステムコンソールでこの機能を有効にします。
+コンテンツ転送の検証はオプション機能です。この機能を有効にすると、抽出と取り込みの両方の実行時間が長くなります。 この機能を使用するには、次の手順に従って、ソースAEM環境のシステムコンソールでこの機能を有効にします。
 
 1. **ツール／運営／Web コンソール**&#x200B;を選択するか、URL（*https://serveraddress:serverport/system/console/configMgr*）に直接アクセスして、ソースインスタンス上の Adobe Experience Manager Web コンソールに移動します。
 1. **Content Transfer Tool Extraction Service Configuration** を検索します。
@@ -38,7 +38,7 @@ ht-degree: 75%
 
 If **抽出時にステージングコンテナを上書き** が有効な場合、抽出に関係するすべてのノードが抽出パスダイジェストに記録されます。 この設定を使用する場合は、取り込み時に「**取り込み前にクラウドインスタンス上の既存のコンテンツを消去**」設定を有効にすることが重要です。そうしないと、取り込みダイジェストに見つからないノードがあるように見える場合があります。これらは、以前の取り込み時からターゲットに既に存在するノードです。
 
-この例については、以下の図を参照してください。
+この例については、次の例を参照してください。
 
 ### 例 1 {#example-1}
 
@@ -115,7 +115,7 @@ EXTRACTION: Number of nodes extracted: 4635
 INGESTION: Number of nodes ingested: 0
 ----------------------------------------------------------
 Validation failed. However, the following nodes may already be present in the target environment.
-Please refer to our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
+See our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
 There are 4635 entries present in the extraction digest that are missing from the ingestion digest.
 /content/dam/bruce
 /content/dam/bruce-assets
@@ -127,7 +127,7 @@ Migration validation took 0 minutes
 
 上記の失敗例は、取り込みを実行したあと、取り込み時にノードが関係しないように、ワイプを無効にして同じ取り込みを再度実行することで得られたものです。すべてのノードが既にターゲット上に存在していたケースです。
 
-検証レポートは、取り込みログに含まれるだけでなく、Cloud Acceleration Manager の&#x200B;**取り込みジョブ**&#x200B;ユーザーインターフェイスからアクセスすることも可能です。アクセスするには、3 つのドット（**...**）をクリックし、ドロップダウンの「**検証レポート**」をクリックして検証レポートを表示します。
+検証レポートは、取り込みログに含まれるだけでなく、Cloud Acceleration Manager の&#x200B;**取り込みジョブ**&#x200B;ユーザーインターフェイスからアクセスすることも可能です。それには、3 つのドット (**...**) をクリックしてから、 **検証レポート** をクリックして、検証レポートを表示します。
 
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
@@ -138,7 +138,7 @@ Migration validation took 0 minutes
 
 抽出と取り込みが正常に完了したら、主要な移行の概要とレポートを使用できます。 この情報を使用して、どのユーザーおよびグループが正常に移行されたかを検証し、おそらく一部が移行されなかった理由を判断できます。
 
-この情報を表示するには、Cloud Acceleration Manager に移動します。 プロジェクトカードをクリックし、コンテンツ転送カードをクリックします。に移動します。 **取り込みジョブ** 検証する取り込みを見つけます。 3 つのドット (**...**) をクリックし、 **プリンシパルの概要を表示** をクリックします。
+この情報を表示するには、Cloud Acceleration Manager に移動します。 プロジェクトカードをクリックし、コンテンツ転送カードをクリックします。に移動します。 **取り込みジョブ** 検証する取り込みを見つけます。 3 つのドット (**...**) をクリックし、 **プリンシパルの概要を表示** 」と入力します。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
@@ -156,7 +156,7 @@ Migration validation took 0 minutes
 
 まず、取り込みが本当に失敗したか、それとも抽出したコンテンツが既にターゲット環境に存在しているのかを確認することです。後者の状況は、「**取り込み前にクラウドインスタンス上の既存のコンテンツを消去する**」オプションを無効にして取り込みが繰り返される場合に発生する可能性があります。
 
-検証するには、検証レポートからパスを選択し、そのパスがターゲット環境に存在するかどうかを確認します。これがパブリッシュ環境の場合、できることはページやアセットの直接確認に限られる可能性があります。この手順に関してサポートが必要な場合は、カスタマーケアに連絡してチケットをオープンしてください。
+検証するには、検証レポートからパスを選択し、そのパスがターゲット環境に存在するかどうかを確認します。これがパブリッシュ環境の場合、できることはページやアセットの直接確認に限られる可能性があります。この手順に関するサポートが必要な場合は、カスタマーケアに依頼してチケットを開きます。
 
 ### ノード数が予想より少ない。なぜでしょう？ {#node-count-lower-than-expected}
 

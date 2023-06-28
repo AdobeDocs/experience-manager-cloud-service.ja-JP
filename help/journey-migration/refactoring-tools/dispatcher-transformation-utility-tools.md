@@ -2,9 +2,9 @@
 title: AEM Dispatcher コンバーターツール
 description: AEM Dispatcher コンバーターツール
 exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
-source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '338'
 ht-degree: 34%
 
 ---
@@ -25,7 +25,7 @@ Dispatcher は、Adobe Experience Managerのキャッシュ、ロードバラン
 >[!NOTE]
 >Dispatcher の最も一般的な使用法は、**AEM パブリッシュインスタンス**&#x200B;からの応答をキャッシュして、外部に公開されている Web サイトの応答性とセキュリティを高めることです。
 
-参照： [Dispatcher の概要](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja) Dispatcher によるキャッシュの実行方法を学ぶには、ドキュメントを返してロードバランシングを実行します。
+詳しくは、 [Dispatcher の概要](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja) Dispatcher によるキャッシュの実行方法を学ぶには、ドキュメントを返してロードバランシングを実行します。
 
 ### Apache および Dispatcher の設定とテスト {#dispatcher-configurations-cloud}
 

@@ -4,10 +4,10 @@ description: 翻訳が必要なコンテンツを翻訳ルールで特定する�
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 80%
+source-wordcount: '1291'
+ht-degree: 81%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 80%
 
 >[!TIP]
 >
->コンテンツの翻訳を初めておこなう場合は、 [サイト翻訳ジャーニー、](/help/journey-sites/translation/overview.md) AEMの強力な翻訳ツールを使用してAEM Sitesのコンテンツを翻訳する手順を示すガイド付きのツールです。AEMや翻訳の経験がないユーザーに最適です。
+>コンテンツを翻訳することを初めておこなう場合は、 [サイト翻訳ジャーニー、](/help/journey-sites/translation/overview.md) AEMの強力な翻訳ツールを使用してAEM Sitesのコンテンツを翻訳する手順を示すガイド付きのツールです。AEMや翻訳の経験がないユーザーに最適です。
 
 ## コンテンツフラグメントと翻訳ルール {#content-fragments}
 

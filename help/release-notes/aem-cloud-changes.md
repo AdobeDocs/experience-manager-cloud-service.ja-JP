@@ -2,10 +2,10 @@
 title: Adobe Experience Manager（AEM）as a Cloud Service の主な変更点
 description: Adobe Experience Manager（AEM）as a Cloud Service の主な変更点
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 96%
+source-wordcount: '846'
+ht-degree: 95%
 
 ---
 

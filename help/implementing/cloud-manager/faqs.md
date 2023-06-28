@@ -2,10 +2,10 @@
 title: Cloud Manager FAQ
 description: AEM as a Cloud Serviceの Cloud Manager に関するよくある質問への回答を見つけます。
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 64%
+ht-degree: 62%
 
 ---
 
@@ -58,13 +58,13 @@ Cloud Manager ビルドの場合、`maven-enforcer-plugin` がこのエラーで
 
 また、ステージおよび実稼働ビルドまたはデプロイメントのバージョンを `-SNAPSHOT` に設定することもできます。Cloud Manager では、適切なバージョン番号を自動的に設定し、Git にタグを作成します。このタグは、必要に応じて後で参照できます。
 
-バージョン処理の詳細は、[こちらで説明しています](/help/implementing/cloud-manager/managing-code/project-version-handling.md)。
+バージョン処理の詳細は次のとおりです。 [ここに記載されています](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## パッケージとバンドルのバージョン管理は、ステージングと実稼動のデプロイメントでどのように機能しますか？ {#snapshot-version}
 
-ステージング環境および実稼動環境でのデプロイメントでは、[こちらに記載](/help/implementing/cloud-manager/managing-code/project-version-handling.md)されているように、自動バージョンが生成されます。
+ステージおよび実稼動環境でのデプロイメントでは、自動バージョンは [ここに記載されています](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
-ステージング環境および実稼動環境でカスタムバージョンを設定する場合は、`1.0.0` のように、適切な 3 つのパートから成る maven バージョンを設定します。実稼動にデプロイするたびに、バージョンを増やします。
+ステージングと実稼働のデプロイメントでカスタムバージョン管理を行うには、`1.0.0` のように、3 つの部分から成る適切な Maven バージョンを設定します。実稼動にデプロイするたびに、バージョンを増やします。
 
 Cloud Manager では、自らのバージョンをステージビルドと実稼動ビルドに自動的に追加し、Git ブランチを作成します。特別な設定は必要ありません。前述のように Maven バージョンを設定しない場合でも、デプロイメントは成功し、バージョンが自動的に設定されます。
 

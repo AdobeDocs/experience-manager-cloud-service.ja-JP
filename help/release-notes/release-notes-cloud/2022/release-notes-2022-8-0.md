@@ -2,14 +2,14 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.8.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.8.0 リリースのリリースノート。'
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '625'
-ht-degree: 61%
+ht-degree: 62%
 
 ---
 
-# 2022.8.0 リリースノート： [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の 2022.8.0 リリースノート {#release-notes}
 
 以下の節では、の 2022.8.0 バージョンの機能リリースノートの概要を説明します [!DNL Experience Manager] as a Cloud Service。
 
@@ -55,7 +55,7 @@ ht-degree: 61%
 
 * Adobe Experience Manager Assets を [MIME タイプに基づいてユーザーがアップロードできるアセットのタイプを制限します](/help/assets/configure-asset-upload-restrictions.md).
 
-   ![アセットアップロードの制限](/help/assets/assets/asset-upload-restrictions.png)
+  ![アセットアップロードの制限](/help/assets/assets/asset-upload-restrictions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -74,11 +74,11 @@ ht-degree: 61%
 ### 新機能 {#what-is-new-cif}
 
 * AEM ページのプロパティと製品コックピットの概要を介した、製品およびカテゴリに対する AEM ページの関連付け
-   ![製品コックピットページの関連付け](/help/assets/CIF/product_cockpit_page_association.png)
+  ![製品コックピットページの関連付け](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager の月次リリースの完全なリストは、 [こちら](/help/implementing/cloud-manager/release-notes/current.md)で確認できます。
+Cloud Manager の月次リリースの完全なリストは、[こちら](/help/implementing/cloud-manager/release-notes/current.md)で確認できます。
 
 ## 移行ツール {#migration-tools}
 

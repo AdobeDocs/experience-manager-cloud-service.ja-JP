@@ -2,10 +2,10 @@
 title: プロジェクト
 description: プロジェクトを使用すると、リソースを 1 つのエンティティにグループ化できます。1 つのエンティティには、共通の共有環境を使用して、プロジェクトを簡単に管理できます
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 69%
+source-wordcount: '1255'
+ht-degree: 65%
 
 ---
 
@@ -95,7 +95,7 @@ ht-degree: 69%
 
 ![リンク](/help/sites-cloud/authoring/assets/project-links.png)
 
-リンクにわかりやすい名前を付けたり、サムネールを変更したりできます。
+リンクにわかりやすい名前を付け、サムネールを変更できます。
 
 ![リンクの追加](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
@@ -105,7 +105,7 @@ ht-degree: 69%
 
 ![プロジェクト情報](/help/sites-cloud/authoring/assets/project-info.png)
 
-チームタイルと同様に、このタイルからチームメンバーを割り当てたり、削除したり（または役割を変更したり）できます。
+チームメンバーは、このタイルに割り当てたり、このタイルから削除したり（または役割を変更したり）、チームタイルに割り当てたりできます。
 
 ![プロジェクトへのチームメンバーの追加](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -137,11 +137,11 @@ ht-degree: 69%
 
 プロジェクトを割り当てて、特定のワークフローに従うことができます。 選択したプロジェクトに応じて、使用可能なワークフローが異なります。
 
-使用可能なワークフローについては、[プロジェクトワークフローの操作](/help/sites-cloud/authoring/projects/workflows.md)で説明します。
+詳しくは、 [プロジェクトワークフローの操作](/help/sites-cloud/authoring/projects/workflows.md).
 
 ### ローンチ {#launches}
 
-ローンチタイルには、[ローンチをリクエストワークフロー](/help/sites-cloud/authoring/projects/workflows.md)を使用してリクエストされたローンチがすべて表示されます。
+ローンチタイルには、 [ローンチをリクエストワークフロー](/help/sites-cloud/authoring/projects/workflows.md).
 
 ![ローンチ](/help/sites-cloud/authoring/assets/project-launches.png)
 

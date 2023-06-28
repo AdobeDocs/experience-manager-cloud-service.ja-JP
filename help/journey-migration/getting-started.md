@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service への移行ジャーニーの概要
 description: AEM as a Cloud Service への移行の基本事項を把握して、移行ジャーニーを開始します。
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 91%
+source-wordcount: '583'
+ht-degree: 87%
 
 ---
 
@@ -15,7 +15,7 @@ AEM as a Cloud Service 移行ジャーニーのこの部分では、AEM のオ�
 
 ## 目的 {#objective}
 
-このドキュメントは、AEM のクラウドネイティブバージョンを使用する理由と、AEM as a Cloud Service に移行する様々な段階を理解するのに役立ちます。読み終えると、次のことができるようになります。
+このドキュメントでは、AEMのクラウドネイティブバージョンを使用する理由と、AEM as a Cloud Serviceへの移行の様々な段階を理解するうえで役立ちます。 読み終えると、次のことができるようになります。
 
 * AEM as a Cloud Service を移行するメリットを理解する
 * クラウドに移行するために実行する必要がある幅広い手順について理解します。

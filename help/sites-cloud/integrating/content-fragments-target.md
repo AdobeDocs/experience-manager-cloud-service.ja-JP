@@ -2,10 +2,10 @@
 title: Adobe Target へのコンテンツフラグメントの書き出し
 description: Adobe Target へのコンテンツフラグメントの書き出し
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2227'
-ht-degree: 97%
+source-wordcount: '2222'
+ht-degree: 96%
 
 ---
 
@@ -52,7 +52,7 @@ AEM コンテンツフラグメントを Adobe Target に書き出すための�
 
 1. [AEM と Adobe Target を統合する](/help/sites-cloud/integrating/integrating-adobe-target.md)必要があります。
 
-<!-- link rewriter - targets in content-fragments-customizing don't exist yet
+<!-- link rewriter - targets in content-fragments-customizing do not exist yet
 
 1. Content Fragments are exported from the AEM author instance, so you need to [Configure the AEM Link Externalizer](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer) on the author instance to ensure that any references within the Content Fragment are externalized for web delivery.
 
@@ -174,7 +174,7 @@ AEMで Target クラウド設定を作成するには、以下の手順を実行
 
    * **テナント ID**：テナント ID です
 
-   * **IMS 設定**：ドロップダウンリストから必要な設定を選択します
+   * **IMS 設定**:ドロップダウンリストから必要な設定を選択します。
 
    * **API タイプ**：デフォルトは REST です（XML は非推奨／廃止予定です）
 
@@ -323,7 +323,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
    ![Adobe Target に書き出し](assets/cfm-export-target-01.png)
 
-   <!-- this note doesn't seem to be accurate for CFs -->
+   <!-- this note does not seem to be accurate for CFs -->
 
    <!--
    
@@ -363,7 +363,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ## Adobe Target でのコンテンツフラグメントの使用 {#using-your-content-fragments-in-adobe-target}
 
-ここまでのタスクを完了すると、コンテンツフラグメントが Target のオファーページに表示されます。Target 側でできることを詳しく知るには、[Target に特化したドキュメント](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=ja)を参照してください。
+ここまでのタスクを完了すると、コンテンツフラグメントが Target のオファーページに表示されます。詳しくは、 [特定の Target ドキュメント](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=ja) そこで何を達成できるかを学ぶために
 
 >[!NOTE]
 >
@@ -395,7 +395,7 @@ Target に書き出し済みのコンテンツフラグメントを削除する�
 
 ## その他のリソース {#further-resources}
 
-詳しくは、以下も参照してください。
+詳しくは、以下のトピックを参照してください。
 
 <!--
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)

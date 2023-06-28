@@ -2,10 +2,10 @@
 title: ヘッドレスコンテンツ用の翻訳コネクタの設定
 description: AEM を翻訳サービスに接続する方法を説明します。
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1233'
-ht-degree: 95%
+source-wordcount: '1231'
+ht-degree: 94%
 
 ---
 
@@ -78,7 +78,7 @@ AEM の翻訳統合フレームワーク（TIF）は、AEM コンテンツの翻
 
 1. フィールドに次の情報を入力し、「**作成**」をクリックまたはタップします。
    1. ドロップダウンで「**設定タイプ**」を選択します。リストから「**翻訳統合**」を選択します。
-   1. 設定の&#x200B;**タイトル**&#x200B;を入力します。この&#x200B;**タイトル**&#x200B;によって、**Cloud Services** コンソールおよびページプロパティのドロップダウンリストで設定が識別されます。
+   1. 設定の&#x200B;**タイトル**&#x200B;を入力します。この **タイトル** は、 **Cloud Services** コンソールおよびページプロパティのドロップダウンリスト
    1. オプションとして、設定を格納するリポジトリーノードに使用する&#x200B;**名前**&#x200B;を入力します。
 
    ![翻訳設定の作成](assets/create-translation-configuration.png)

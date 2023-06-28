@@ -2,7 +2,7 @@
 title: トランスクリプションサービスの設定
 seo-title: Configure transcription service
 description: Adobe Experience Manager Assets には、 [!DNL Azure Media Services]  が設定されています。このサービスは、サポートされているオーディオまたはビデオファイルに含まれている音声言語のテキストトランスクリプトを WebVTT（.vtt）形式で自動的に生成します。
-seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content as well as increase the ROI of these assets by supporting accessibility and localization.
+seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content and increase the ROI of these assets by supporting accessibility and localization.
 products: SG_EXPERIENCEMANAGER/ASSETS and Experience Manager as a Cloud Service
 sub-product: assets
 content-type: reference
@@ -11,17 +11,17 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 96%
+source-wordcount: '1694'
+ht-degree: 94%
 
 ---
 
 # [!DNL Experience Manager Assets] のトランスクリプションの設定 {#configure-transcription-service}
 
 トランスクリプションとは、音声認識技術を使用して、オーディオまたはビデオファイル内の音声をテキストに変換するプロセス（音声テキスト変換）です。
-[!DNL Adobe Experience Manager Assets] には、[!DNL Azure Media Services] 設定されています。このサービスは、サポートされているオーディオまたはビデオファイルに含まれている音声言語のテキストトランスクリプトを WebVTT（.vtt）形式で自動的に生成します。オーディオまたはビデオアセットが [!DNL Experience Manager Assets] で処理される際に、トランスクリプションサービスによって、オーディオまたはビデオアセットのテキストトランスクリプトレンディションが自動的に生成され、オリジナルのアセットが存在する Assets リポジトリー内の場所に保存されます。[!DNL Experience Manager Assets] トランスクリプションサービスを使用すると、マーケターは、テキストコンテンツの検索効率を高めてオーディオおよびビデオコンテンツを効果的に管理できるほか、アクセシビリティやローカライゼーションに対応することで、これらのアセットの ROI を向上させることができます。
+[!DNL Adobe Experience Manager Assets] には、[!DNL Azure Media Services] 設定されています。このサービスは、サポートされているオーディオまたはビデオファイルに含まれている音声言語のテキストトランスクリプトを WebVTT（.vtt）形式で自動的に生成します。オーディオまたはビデオアセットが [!DNL Experience Manager Assets] で処理される際に、トランスクリプションサービスによって、オーディオまたはビデオアセットのテキストトランスクリプトレンディションが自動的に生成され、オリジナルのアセットが存在する Assets リポジトリー内の場所に保存されます。この [!DNL Experience Manager Assets] 転写サービスを使用すると、マーケターは、アクセシビリティとローカライゼーションをサポートすることで、テキストコンテンツの発見性を高め、オーディオとビデオのコンテンツを効果的に管理し、アセットの ROI を向上できます。
 
 トランスクリプトは、音声コンテンツのテキストバージョンです。OTT プラットフォームで視聴している映画がその一例です。これには、多くの場合、アクセシビリティや他の言語でのコンテンツ利用に役立つキャプションやサブタイトルがあります。または、マーケティング、学習、エンターテイメントの目的で使用されるオーディオやビデオファイルもその例です。これらのエクスペリエンスは、トランスクリプションで始まり、必要に応じて書式設定や翻訳が行われます。オーディオやビデオのトランスクリプションは、手動で行うと非常に時間がかかりエラーが発生しやすいプロセスです。また、オーディオ／ビデオコンテンツのニーズが絶え間なく変化することを考えると、手動プロセスで規模を拡大することは困難でもあります。[!DNL Experience Manager Assets] は Azure の AI ベースの転写を使用し、オーディオおよびビデオアセットの高度な処理を可能にし、タイムスタンプの詳細と共にテキストの転写（.vtt ファイル）を生成します。 トランスクリプション機能は、Assets と共に Dynamic Media でもサポートされています。
 
@@ -88,7 +88,7 @@ ht-degree: 96%
 * **[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL 処理プロファイル]**&#x200B;で処理プロファイルの定義を選択し、「**[!UICONTROL プロファイルをフォルダーに適用]**」アクションを使用します。コンテンツブラウザーを使用すると、特定のフォルダーに移動し、フォルダーを選択して、プロファイルの適用を確定できます。
 * Assets ユーザーインターフェイスでフォルダーを選択し、「**[!UICONTROL プロパティ]**」アクションをクリックして、フォルダーのプロパティを開きます。「**[!UICONTROL アセット処理]**」タブをクリックし、そのフォルダーに適した処理プロファイルを「**[!UICONTROL 処理プロファイル]**」リストから選択します。変更を保存するには、「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
-   ![configure-transcription-service](assets/video-processing-profile3.png)
+  ![configure-transcription-service](assets/video-processing-profile3.png)
 
 * Assets ユーザーインターフェイスでフォルダーまたは特定のアセットを選択して処理プロファイルを適用したあと、上部にあるオプションから「**[!UICONTROL アセットを再処理]**」オプションを選択できます。
 

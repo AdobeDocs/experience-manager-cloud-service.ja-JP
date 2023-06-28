@@ -2,10 +2,10 @@
 title: カスタムドメイン名の追加
 description: Cloud Manager を使用してカスタムドメイン名を追加する方法を説明します。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 93%
+source-wordcount: '560'
+ht-degree: 79%
 
 ---
 
@@ -54,17 +54,17 @@ Cloud Manager では、次の 2 つの場所からカスタムドメイン名を
 
 CDN デプロイメントの場合は、有効な SSL 証明書が必要で、TXT 検証に成功している必要があります。これは、ステータス&#x200B;**検証済みかつデプロイ済み**&#x200B;のステータスで示されます。
 
-様々なステータスと起こりうる問題への対処方法について詳しくは、[カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)ドキュメントを参照してください。
+詳しくは、 [カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 様々なステータスの詳細と、潜在的な問題に対処する方法を確認します。
 
 >[!NOTE]
 >
 >DNS の伝播遅延が原因で、DNS 検証の処理に数時間かかる場合があります。
 >
->Cloud Manager が所有権を検証し、ドメイン設定テーブルに表示されるステータスを更新します。詳しくは、[カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)ドキュメントを参照してください。
+>Cloud Manager が所有権を検証し、ドメイン設定テーブルに表示されるステータスを更新します。詳しくは、 [カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) を参照してください。
 
 >[!TIP]
 >
->TXT レコードについて詳しくは、[TXT レコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)を参照してください。
+>詳しくは、 [TXT レコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) TXT レコードの詳細を表示します。
 
 ## 環境ページからのカスタムドメイン名の追加 {#adding-cdn-environments}
 
@@ -98,14 +98,14 @@ CDN デプロイメントの場合は、有効な SSL 証明書が必要で、TX
 
 CDN デプロイメントの場合は、有効な SSL 証明書が必要で、TXT 検証に成功している必要があります。これは、ステータス&#x200B;**検証済みかつデプロイ済み**&#x200B;のステータスで示されます。
 
-様々なステータスと起こりうる問題への対処方法について詳しくは、[カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)ドキュメントを参照してください。
+詳しくは、 [カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 様々なステータスの詳細と、潜在的な問題に対処する方法を確認します。
 
 >[!NOTE]
 >
 >DNS の伝播遅延が原因で、DNS 検証の処理に数時間かかる場合があります。
 >
->Cloud Manager が所有権を検証し、ドメイン設定テーブルに表示されるステータスを更新します。詳しくは、[カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)ドキュメントを参照してください。
+>Cloud Manager が所有権を検証し、ドメイン設定テーブルに表示されるステータスを更新します。詳しくは、 [カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) を参照してください。
 
 >[!TIP]
 >
->TXT レコードについて詳しくは、[TXT レコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)を参照してください。
+>詳しくは、 [TXT レコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) TXT レコードの詳細を表示します。

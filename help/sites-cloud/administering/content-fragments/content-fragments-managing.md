@@ -4,10 +4,10 @@ description: コンテンツフラグメントコンソールを使用して、�
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 81%
+source-wordcount: '2054'
+ht-degree: 76%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 81%
 1. **新しいコンテンツフラグメント**&#x200B;ダイアログが開き、ここから次の項目を指定できます。
 
    * **場所**  — 現在の場所で自動完了しましたが、必要に応じて別の場所を選択できます
-   * **コンテンツフラグメントモデル** - ドロップダウンリストからフラグメントの基礎として使用するモデルを選択します
+   * **コンテンツフラグメントモデル**  — ドロップダウンリストからフラグメントの基礎として使用するモデルを選択します
    * **タイトル**
    * **名前**  — 次に基づいて自動完了 **タイトル**&#x200B;必要に応じて編集できます。
    * **説明**
@@ -101,7 +101,7 @@ ht-degree: 81%
 
 >[!CAUTION]
 >
->コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
+>コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者に問い合わせてください。
 
 1. **コンテンツフラグメント**&#x200B;コンソールを使用して、コンテンツフラグメントの場所に移動します。
 1. フラグメントを選択して編集するためにフラグメントを開き、ツールバーから「**開く**」を選択します。
@@ -186,7 +186,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
   >[!CAUTION]
   >
-  >コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
+  >コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者に問い合わせてください。
 
   >[!NOTE]
   >
@@ -196,11 +196,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
   >
   >これらの操作では、変更を保存するだけでなく、参照もすべて更新し、Dispatcher が必要に応じてフラッシュされます。これらの変更の処理には時間がかかる場合があります。このため、大きなシステムや複雑なシステム、高負荷のシステムのパフォーマンスに影響することがあります。
   >
-  >「**保存して閉じる**」を使用する際はこの点に留意し、フラグメントエディターをすぐに開いて、さらに変更を加え保存してください。
+  >を使用する際は、このプロセスに時間を割いてください **保存して閉じる**&#x200B;フラグメントエディターを再度開き、変更を加えて保存します。
 
 * **閉じる**
 
-  最新の変更（前回の「**保存**」操作以降に行った変更）を保存せずにエディターを終了します。
+  最新の変更 ( つまり、最後の **保存**) をクリックします。
 
 コンテンツフラグメントを編集するとき、AEM によって自動的にバージョンが作成されます。これにより、（保存せずに「**閉じる**」を使用して）変更内容を取り消した場合でも、以前のコンテンツを復元できるようになります。
 
@@ -231,7 +231,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## コンテンツとフラグメントの関連付け {#associating-content-with-your-fragment}
 
-フラグメントに[コンテンツを関連付ける](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)こともできます。これにより関連性を付加して、フラグメントをコンテンツページに追加するときに、アセット（画像など）を（オプションで）フラグメントと一緒に使用できるようになります。
+フラグメントに[コンテンツを関連付ける](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)こともできます。これにより、アセット（画像）をフラグメントと共に（オプションで）コンテンツページに追加する際に使用できるようにする接続が提供されます。
 
 ## フラグメントのメタデータ（プロパティ）の表示と編集 {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 

@@ -4,10 +4,10 @@ description: システム管理者が必要なクラウドリソースを設定�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 93%
+source-wordcount: '579'
+ht-degree: 90%
 
 ---
 
@@ -71,7 +71,7 @@ AEM のオーサーは、AEM にログインしてコンテンツの作成を開
 * Cloud Manager へのアクセス。
 * AEM as a Cloud Service インスタンスへのログイン。
 
-おめでとうございます。これで、AEM コンテンツを作成し、公開する準備が整いました。AEM でのコンテンツの作成方法と管理方法について詳しくは、[その他のリソース](#additional-resources)のセクションを参照してください。
+おめでとうございます。これで、AEM コンテンツを作成し、公開する準備が整いました。詳しくは、 [その他のリソース](#additional-resources) AEMでのコンテンツの作成方法と管理方法の詳細については、「 」を参照してください。
 
 AEM as a Cloud Service で開発者とデプロイメントマネージャーがカスタムアプリケーションをどのように作成し管理するかについて関心がある場合は、オンボーディングジャーニーの第 2 のオプションのパートである [AEM 開発者タスク](developers.md)に進んでください。
 

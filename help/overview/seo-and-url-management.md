@@ -2,16 +2,16 @@
 title: Adobe Experience Manager as a Cloud Service の SEO および URL 管理のベストプラクティス
 description: Adobe Experience Manager as a Cloud Service の SEO および URL 管理のベストプラクティス
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3709'
+source-wordcount: '3706'
 ht-degree: 77%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service の SEO および URL 管理のベストプラクティス{#seo-and-url-management-best-practices-for-aem}
 
-検索エンジン最適化（SEO）は、多くのマーケティング担当者にとって重要な課題となっています。その結果、多くの Adobe Experience Manager（AEM）as a Cloud Service プロジェクトで SEO の懸念に対処する必要があります。
+検索エンジン最適化（SEO）は、多くのマーケターにとって重要な課題となっています。その結果、多くの Adobe Experience Manager（AEM）as a Cloud Service プロジェクトで SEO の懸念に対処する必要があります。
 
 このドキュメントでは、まず、AEM as a Cloud Service の実装でこうした目的を達成するための [SEO のベストプラクティス](#seo-best-practices)および推奨事項を説明します。その次に、最初の節で提示するより[複雑な実装手順](#aem-configurations)のいくつかについて詳しく説明していきます。
 
@@ -459,7 +459,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-さらに、XML サイトマップ用に実装された機能は、例えば、正規リンクや代替言語をページの先頭に追加する場合など、様々なユースケースでも使用できます。詳しくは、[SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) インターフェイスを参照してください。
+さらに、XML サイトマップ用に実装された機能は、例えば、正規リンクや代替言語をページの先頭に追加する場合など、様々なユースケースでも使用できます。詳しくは、 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) インターフェイスを参照してください。
 
 ### レガシー URL の 301 リダイレクトの作成 {#creating-redirects-for-legacy-urls}
 
@@ -472,7 +472,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 
 ## その他のリソース {#additional-resources}
 
-詳しくは、以下のその他のリソースを参照してください。
+詳しくは、次のその他のリソースを参照してください。
 
 <!--
 * [Resource Mapping](/help/sites-deploying/resource-mapping.md)

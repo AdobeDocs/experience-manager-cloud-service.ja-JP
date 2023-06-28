@@ -2,9 +2,9 @@
 title: タスクの操作
 description: タスクは、コンテンツで行われる作業項目を表し、現在のタスクの完了レベルを決定するためにプロジェクトで使用されます
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '576'
 ht-degree: 30%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 30%
 
 * **タスクリスト：**&#x200B;タスクタイルをクリックすると、タスクのリストが表示されます。このリストには、プロジェクトに関連するすべてのタスクの詳細情報が含まれます。
 
-ワークフロータスクと、 **タスク** タイル。
+ワークフローのタスクと、 **タスク** タイル。
 
 ### タスクタイル {#task-tile}
 

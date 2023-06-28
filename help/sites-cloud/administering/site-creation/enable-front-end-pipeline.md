@@ -4,10 +4,10 @@ description: 既存のサイトのフロントエンドパイプラインを有�
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 87%
+source-wordcount: '562'
+ht-degree: 82%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 87%
 
 >[!TIP]
 >
->フロントエンドパイプラインにも、フロントエンドパイプラインとサイトテンプレートを使用してサイトを迅速にデプロイする方法にも詳しくない場合は、[クイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md)で概要を確認してください。
+>フロントエンドパイプラインと、それを使用したサイトのデプロイ方法、およびサイトテンプレートについて詳しくない場合は、 [クイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md) を参照してください。
 
 サイトテンプレートとサイトテーマに基づいて既にサイトを作成してある場合、AEM では、フロントエンドパイプラインでデプロイされるテーマを既存のクライアントライブラリの上に読み込むようにサイトを設定できます。
 

@@ -2,31 +2,31 @@
 title: Cloud Manager テストの概要
 description: カスタムコードの品質を確保するために Cloud Manager が自動的に実行する 3 種類のテストの概要を説明します。
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
-source-git-commit: 94f818b7622e0f878d15ba30e2f07a169bd114c3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 8%
+ht-degree: 85%
 
 ---
 
 
 # Cloud Manager テストの概要 {#overview}
 
-Cloud Manager では、テストパイプラインに対して 3 つのカテゴリのテストがサポートされています。Cloud Servicesパイプライン
+Cloud Manager の Cloud Services パイプラインでサポートされるテストには、次の 3 つの大きなカテゴリがあります。
 
 1. [コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)
 
    * コード品質テストでは、アプリケーションコードの品質を評価します。
    * コード品質パイプラインは、実稼動環境および実稼動環境以外のすべてのパイプラインのビルド手順の直後に実行されます。
-   * この [カスタムコード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md) Cloud Manager で実行されるは、AEM Engineering のベストプラクティスに基づいて作成されます。
+   * Cloud Manager で実行される[カスタムコード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md)は、AEM エンジニアリングチームのベストプラクティスに基づいて作成されます。
 
 1. [機能テスト](/help/implementing/cloud-manager/functional-testing.md)
 
-   * 機能テストは、 [実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) また、必要に応じてテスト段階の一部 [実稼動以外のパイプライン。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   * 機能テストは、 [実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) また、必要に応じてテスト段階の一部 [非実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 1. [エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   * エクスペリエンス監査テストは、すべての Cloud Manager 実稼動パイプラインで有効になっているので、スキップできません。
+   * エクスペリエンスの監査テストは、すべての Cloud Manager 実稼動パイプラインで有効になっており、スキップできません。
 
 以下のテストがあります。
 
@@ -36,4 +36,4 @@ Cloud Manager では、テストパイプラインに対して 3 つのカテゴ
 
 >[!NOTE]
 >
-> お客様が作成したテストとAdobeが作成したテストの両方は、このようなテストを実行するために設計された、コンテナ化されたインフラストラクチャで実行されます。
+> 顧客が記述したテストも、アドビが記述したテストも、これらのテストを実行するためのコンテナ化されたインフラストラクチャで実行されます。

@@ -2,10 +2,10 @@
 title: SPA エディターの概要
 description: この記事では、SPA エディターの包括的な概要と動作の仕組み（AEM 内での SPA エディターの詳細なインタラクションワークフローなど）を説明します。
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1630'
-ht-degree: 76%
+ht-degree: 72%
 
 ---
 
@@ -63,7 +63,7 @@ SPA と AEM 間のインタラクションのフローは、SPA エディター�
 * ページエディターと SPA 間の通信は、HTML ではなく JSON を使用して行われます。
 * ページエディターは、iframe およびメッセージング API を使用して、SPAにページモデルの最新バージョンを提供します。
 * ページモデルマネージャーがエディターに通知します。ページモデルは編集の準備が整い、JSON 構造として渡されます。
-* エディターは、作成しているページの DOM 構造を変更したり、アクセスしたりすることなく、最新のページモデルを提供します。
+* エディターは、作成中のページの DOM 構造を変更したり、アクセスしたりすることなく、最新のページモデルを提供します。
 
 ![SPA ワークフロー](assets/workflow.png)
 
@@ -146,7 +146,7 @@ SPA エディターの主な要素に留意すると、AEM 内での SPA 編集�
 
 ## 要件と制限事項 {#requirements-limitations}
 
-作成者がページエディターを使用して SPA のコンテンツを編集できるようにするには、AEM SPA Editor SDK とやり取りする SPA アプリケーションを実装する必要があります。正常に動作させるために必要な最低限の知識については、[React を使用した AEM での SPA の利用](getting-started-react.md)を参照してください。
+作成者がページエディターを使用して SPA のコンテンツを編集できるようにするには、AEM SPA Editor SDK とやり取りする SPA アプリケーションを実装する必要があります。詳しくは、 [React を使用したAEMでのSPAの概要](getting-started-react.md) ドキュメントを参照してください。
 
 ### サポートされているフレームワーク {#supported-frameworks}
 
@@ -172,7 +172,7 @@ SPA で作成したテキストコンポーネントのインプレースエデ�
 1. テキスト HTML を含んだコンテナラッパー要素に（任意の）属性を設定します。WKND SPA プロジェクトの場合は、`<div>` 要素がこれに該当し、使用されているセレクターは `data-rte-editelement` です。
 1. 対応する AEM テキストコンポーネントの `cq:InplaceEditingConfig` で、そのセレクター（例：`data-rte-editelement` など）を指す設定 `editElementQuery` を指定します。これにより、HTML テキストを折り返す HTML 要素をエディターが把握できます。
 
-`editElementQuery` プロパティとリッチテキストエディターの設定について詳しくは、[リッチテキストエディターの設定](/help/implementing/developing/extending/rich-text-editor.md)を参照してください。
+詳しくは、 `editElementQuery` プロパティとリッチテキストエディターの設定については、 [リッチテキストエディターの設定](/help/implementing/developing/extending/rich-text-editor.md).
 
 ### 制限事項 {#limitations}
 

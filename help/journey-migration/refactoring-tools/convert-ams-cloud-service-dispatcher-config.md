@@ -1,10 +1,10 @@
 ---
 title: AMS を Adobe Experience Manager as a Cloud Service Dispatcher 設定に変換する方法
 description: AMS を Adobe Experience Manager as a Cloud Service Dispatcher 設定に変換する方法
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 49%
+source-wordcount: '1278'
+ht-degree: 43%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 49%
 
 1. **アーカイブを抽出し、最終的なプレフィックスを削除する**
 
-   アーカイブをフォルダーに抽出し、直下のサブフォルダーが conf、conf.d、conf.dispatcher.d および conf.modules.d で始まっていることを確認します。表示されない場合は、階層の上に移動します。
+   アーカイブをフォルダーに抽出し、直下のサブフォルダーが conf、conf.d、conf.dispatcher.d および conf.modules.d で始まっていることを確認します。表示されない場合は、階層内で上に移動します。
 
 1. **未使用のサブフォルダーとファイルを削除する**
 
@@ -58,7 +58,7 @@ ht-degree: 49%
 
    1. ams_default.vars という名前のファイルをすべて削除します。また、それらを仮想ホストファイル内で参照している Include ステートメントを削除することを忘れないでください。
 
-   1. conf.d/variables に 1 つのファイルのみ含まれる場合は、そのファイルの名前を custom.vars に変更します。また、そのファイルを仮想ホストファイル内で参照している Include ステートメントも必ず適応させます。
+   1. conf.d/variables に 1 つのファイルのみ含まれる場合は、そのファイルの名前を custom.vars に変更します。また、仮想ホストファイル内でそのファイルを参照している Include ステートメントも必ず適応させます。
 
    1. ただし、フォルダーに仮想ホスト固有のファイルが複数含まれている場合は、そのファイルの内容を、仮想ホストファイル内のファイルを参照する Include ステートメントにコピーする必要があります。
 

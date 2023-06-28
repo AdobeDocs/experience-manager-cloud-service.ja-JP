@@ -2,10 +2,10 @@
 title: AEM ワークフローステップで変数を追加する方法
 description: 変数の作成、変数の値の設定、 [!DNL AEM Forms]  ワークフローステップでの変数の使用について説明します。
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2061'
-ht-degree: 99%
+source-wordcount: '2060'
+ht-degree: 98%
 
 ---
 
@@ -278,4 +278,4 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ## 参照 {#references}
 
-[!DNL AEM Forms] ワークフローステップで変数を使用するその他の例については、[AEM ワークフローの変数](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=ja)を参照してください。
+での変数の使用例の詳細 [!DNL AEM Forms] ワークフローの手順については、 [AEMワークフローの変数](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=ja).

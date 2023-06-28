@@ -2,10 +2,10 @@
 title: Cloud Acceleration Manager での準備フェーズ
 description: このページでは、Cloud Acceleration Manager における準備フェーズの概要について説明します。
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 96%
+source-wordcount: '1049'
+ht-degree: 92%
 
 ---
 
@@ -29,7 +29,7 @@ Cloud Acceleration Manager でプロジェクトを作成したら、準備フ�
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
 
    >[!NOTE]
-   >詳しくは、「Cloud Acceleration Manager でのプロジェクトの作成と管理」を参照してください。
+   >詳しくは、 Cloud Acceleration Manager のプロジェクトの作成と管理を参照してください。
 
 ## ベストプラクティス分析カードの使用 {#best-practices-analysis}
 
@@ -62,7 +62,7 @@ Cloud Acceleration Manager でプロジェクトを作成したら、準備フ�
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
-1. CAM のベストプラクティス分析ダッシュボードを確認し、表示内容を検討します。詳しくは、次の [ベストプラクティス分析レポートの確認](#analysis-report) の節を参照してください。
+1. CAM のベストプラクティス分析ダッシュボードを確認し、表示内容を検討します。詳しくは、 [ベストプラクティス分析レポートの確認](#analysis-report) を参照してください。
 
    >[!NOTE]
    >新しいレポートをアップロードすると、すべての評価がリセットされます。
@@ -158,7 +158,7 @@ Cloud Acceleration Manager で印刷プレビューオプションを選択し�
 ![画像](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->結果カテゴリと重要度レベルについては、 [ベストプラクティスアナライザーレポートの説明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=ja) を参照してください。
+>詳しくは、 [ベストプラクティスアナライザーレポートの解釈](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=ja) 結果のカテゴリと重要度レベルについて説明します。
 
 #### ベストプラクティス評価 {#best-practices-assessment}
 

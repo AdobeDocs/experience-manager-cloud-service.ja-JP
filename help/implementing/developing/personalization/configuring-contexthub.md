@@ -2,16 +2,16 @@
 title: ContextHub の設定
 description: Context Hub の設定方法について説明します。
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1683'
-ht-degree: 53%
+source-wordcount: '1680'
+ht-degree: 51%
 
 ---
 
 # ContextHub の設定 {#configuring-contexthub}
 
-ContextHub は、コンテキストデータを保存、操作および表示するためのフレームワークです。ContextHub について詳しくは、[ContextHub デベロッパー向け概要](contexthub.md)を参照してください。
+ContextHub は、コンテキストデータを保存、操作および表示するためのフレームワークです。ContextHub について詳しくは、 [ContextHub 開発者向けの概要](contexthub.md).
 
 ContextHub ツールバーを設定して、プレビューモードで表示するかどうかを制御し、ContextHub ストアを作成したり UI モジュールを追加したりできます。
 
@@ -149,7 +149,7 @@ contexthub.generic-jsonp ストアがサービスコール `https://md5.jsontest
 
 contexthub.generic-jsonp のサンプルのストア候補を使用すると、JSON データを返す JSONP サービスや Web サービスからデータを取得できます。このストア候補では、そのストア設定を使用して、使用する JSONP サービスに関する詳細を指定します。
 
-[ Javascript クラスの ](contexthub-api.md#init-name-config)init`ContextHub.Store.JSONPStore` 関数は、このストア候補を初期化する `config` オブジェクトを定義します。`config` オブジェクトには JSONP サービスに関する情報が含まれる `service` オブジェクトが含まれています。ストアを設定するには、詳細設定プロパティの値として `service` オブジェクトを JSON 形式で指定します。
+この [init](contexthub-api.md#init-name-config) 関数 `ContextHub.Store.JSONPStore` JavaScript クラスは `config` このストア候補を初期化するオブジェクト。 `config` オブジェクトには JSONP サービスに関する情報が含まれる `service` オブジェクトが含まれています。ストアを設定するには、詳細設定プロパティの値として `service` オブジェクトを JSON 形式で指定します。
 
 jsontest.com サイトの MD5 サービスからのデータを保存するには、次のプロパティを使用して [ContextHub ストアの作成](#creating-a-contexthub-store)の手順に従います。
 
@@ -159,21 +159,21 @@ jsontest.com サイトの MD5 サービスからのデータを保存するに�
 * **有効：**&#x200B;オン
 * **詳細設定（JSON）：**
 
-   ```javascript
-   {
-    "service": {
-    "jsonp": false,
-    "timeout": 1000,
-    "ttl": 1800000,
-    "secure": false,
-    "host": "md5.jsontest.com",
-    "port": 80,
-    "params":{
-    "text":"text to md5"
-        }
-      }
-    }
-   ```
+  ```javascript
+  {
+   "service": {
+   "jsonp": false,
+   "timeout": 1000,
+   "ttl": 1800000,
+   "secure": false,
+   "host": "md5.jsontest.com",
+   "port": 80,
+   "params":{
+   "text":"text to md5"
+       }
+     }
+   }
+  ```
 
 ### md5 データの UI モジュールの追加 {#adding-a-ui-module-for-the-md-data}
 
@@ -187,15 +187,15 @@ ContextHub ツールバーに UI モジュールを追加して、サンプル�
 * **モジュールの種類：** contexthub.base
 * **詳細設定（JSON）：**
 
-   ```javascript
-   {
-    "icon": "coral-Icon--data",
-    "title": "MD5 Conversion",
-    "storeMapping": { "md5": "md5" },
-    "template": "<p> {{md5.original}}</p>;
-                 <p>{{md5.md5}}</p>"
-   }
-   ```
+  ```javascript
+  {
+   "icon": "coral-Icon--data",
+   "title": "MD5 Conversion",
+   "storeMapping": { "md5": "md5" },
+   "template": "<p> {{md5.original}}</p>;
+                <p>{{md5.md5}}</p>"
+  }
+  ```
 
 ## ContextHub のデバッグ {#debugging-contexthub}
 
@@ -230,7 +230,7 @@ CRXDE Lite を使用して、`debug` プロパティを **true** に設定しま
 
 サイレントモードでは、すべてのデバッグ情報が無効になります。各 ContextHub 設定に対して個別に設定可能な通常のデバッグオプションとは異なり、サイレントモードは、ContextHub 設定レベルのあらゆるデバッグ設定より優先されるグローバル設定です。
 
-これは、デバッグ情報をまったく必要としないパブリッシュインスタンスに便利なモードです。これはグローバル設定なので、OSGi を介して有効にします。
+これは、デバッグ情報をまったく必要としないパブリッシュインスタンスに役立ちます。 これはグローバル設定なので、OSGi を介して有効にします。
 
 1. `http://<host>:<port>/system/console/configMgr` で **Adobe Experience Manager Web コンソール設定**&#x200B;を開きます。
 1. **Adobe Granite ContextHub** を検索します。

@@ -4,9 +4,9 @@ description: アクションセンターを活用して、インシデントや�
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '701'
 ht-degree: 15%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 15%
 >[!NOTE]
 >この機能はリリースされていません。
 
-AEM as aCloud Serviceは、即時の対応が必要な重大なインシデントが発生した場合に、アクションセンターに電子メール通知を送信し、最適化に関する事前の推奨事項を送信します。 例えば、ブロックされたキューや、期限が切れる一連の資格情報などです。すべてのアクションセンター通知タイプは、 [下の表](#supported-notification-types)：時間の経過と共に展開されます。
+AEM as aCloud Serviceは、即時の対応が必要な重大なインシデントが発生した場合に、アクションセンターに電子メール通知を送信し、最適化に関する事前の推奨事項を伝えます。 例えば、ブロックされたキューや、期限が切れる一連の資格情報などです。すべてのアクションセンター通知タイプは、 [下の表](#supported-notification-types)：時間の経過と共に展開されます。
 
 アクションセンターの電子メール通知を受け取ったら、クリックしてAEMas a Cloud Serviceのアクションセンターを開き、顧客が実行するアクションを説明する追加のコンテキストを表示するポップアップを表示できます。
 
-アクションセンターは、クリックしたばかりの電子メール通知に関する情報を表示するだけでなく、現在の通知と古い通知のセットを表示および管理できるハブとして機能します。 <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers don't find it) -->
+アクションセンターは、クリックしたばかりの電子メール通知に関する情報を表示するだけでなく、現在の通知と古い通知のセットを表示および管理できるハブとして機能します。 <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
 アクションセンターに表示される通知には、大まかに 2 つのカテゴリがあります。
 

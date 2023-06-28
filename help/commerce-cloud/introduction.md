@@ -3,10 +3,10 @@ title: 概要
 description: AEM Content and Commerce の入門と概要。Experience Manager Commerce Integration Framework（CIF）は、Adobe Commerce やその他のサードパーティ製コマースソリューションのコマースサービスを Experience Cloud に統合して拡張するためのアドビ推奨のパターンです。
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 92%
+source-wordcount: '891'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Experience Manager の Content and Commerce を使用すると、ブラン
 
 オンラインコマースエクスペリエンスに対する顧客の期待がますます高まる中、ブランドは差別化されたエクスペリエンスとより多くのコンテンツをより迅速に提供しなければならないというプレッシャーにさらされています。ただし、コンテンツ管理プラットフォームの実装には、多くの場合、カスタムコンポーネントやオーサリングツールなどの基礎的要素の開発に多くの時間と予算投資が必要で、メンテナンスやアップグレードのコストが発生します。Experience Manager Sites は、Adobe Experience Manager as a Cloud Service のアドオンモジュールとして Content and Commerce を提供します。このアドオンは、標準搭載のコマースコアコンポーネント、オーサリングツール、参照ストアフロントを提供して、運用開始を早め、チーム間のシームレスなコラボレーションを可能にし、コンバージョンを促進します。
 
-ブランドでは、Experience Manager を、Adobe Experience Cloud の一部である Adobe Commerce のほか任意のコマースエンジンと統合できます。Experience Manager Content and Commerce の利用で、ブランドは以下を実現できます。
+ブランドは、Experience ManagerをAdobe Commerce、Adobe Experience Cloudの一部、および任意のコマースエンジンと統合できます。 Experience Manager Content and Commerce の利用で、ブランドは以下を実現できます。
 
 * スケーリングとイノベーションの迅速化
 * エクスペリエンスのパーソナライズによるコンバージョンの促進
@@ -79,6 +79,6 @@ CIF は、ベストプラクティスに基づく標準化された統合パタ�
 
 ## ジャーニー {#journey}
 
-コマースジャーニーを続けている場合は、次の手順に進んでください。
+コマースジャーニーを使用している場合は、次の手順に進みます。
 
 * [AEM コンテンツ作成者ジャーニー](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)

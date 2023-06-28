@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の高度なネットワーク機能の設定
 description: AEM as a Cloud Service の高度なネットワーク機能（VPN やフレキシブルエグレス IP アドレスまたは専用エグレス IP アドレスなど）を設定する方法を説明します
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3579'
-ht-degree: 82%
+source-wordcount: '3571'
+ht-degree: 77%
 
 ---
 
@@ -25,7 +25,7 @@ AEM as a Cloud Service には、複数のタイプの高度なネットワーク
 * [専用エグレス IP アドレス](#dedicated-egress-IP-address) - 一意の IP アドレスから発信するように AEM as a Cloud Service からのトラフィックを設定できます
 * [仮想プライベートネットワーク（VPN）](#vpn) - VPN 技術を既に利用している場合は、ユーザーのインフラストラクチャと AEM as a Cloud Service の間で発生するトラフィックのセキュリティを確保できます。
 
-この記事では、これらの各オプションについて、設定方法などを詳しく説明します。一般的な設定戦略としては、`/networkInfrastructures` API エンドポイントをプログラムレベルで呼び出して、目的のタイプの高度なネットワーク機能を宣言したあと、環境ごとに `/advancedNetworking` エンドポイントを呼び出して、インフラストラクチャを有効にし、環境固有のパラメーターを設定します。それぞれの形式的な構文とサンプルリクエストおよび応答については、Cloud Manager API ドキュメントの適切なエンドポイントを参照してください。
+この記事では、これらの各オプションについて、設定方法などを詳しく説明します。一般的な設定戦略としては、`/networkInfrastructures` API エンドポイントをプログラムレベルで呼び出して、目的のタイプの高度なネットワーク機能を宣言したあと、環境ごとに `/advancedNetworking` エンドポイントを呼び出して、インフラストラクチャを有効にし、環境固有のパラメーターを設定します。各形式の構文、リクエストと応答のサンプルについては、Cloud Manager API ドキュメントの適切なエンドポイントを参照してください。
 
 プログラムは、単一の高度なネットワークバリエーションをプロビジョニングできます。フレキシブルポートエグレス IP アドレスと専用エグレス IP アドレスのどちらを選択する場合は、特定の IP アドレスが必要なければ、フレキシブルポートエグレスを選択することをお勧めします。アドビ側でフレキシブルポートエグレストラフィックのパフォーマンスを最適化できるからです。
 
@@ -36,7 +36,7 @@ AEM as a Cloud Service には、複数のタイプの高度なネットワーク
 
 >[!NOTE]
 >
->従来の専用エグレス技術を既にプロビジョニングしている場合は、必要があっても、これらのオプションを設定しないでください。設定すると、サイト接続に影響が出る可能性があります。サポートが必要な場合は、アドビサポートに問い合わせてください。
+>従来の専用エグレス技術を既にプロビジョニングしている場合は、必要があっても、これらのオプションを設定しないでください。設定すると、サイト接続に影響が出る可能性があります。サポートが必要な場合は、Adobeサポートにお問い合わせください。
 
 ## フレキシブルポートエグレス {#flexible-port-egress}
 
@@ -44,11 +44,11 @@ AEM as a Cloud Service には、複数のタイプの高度なネットワーク
 
 ### 考慮事項 {#flexible-port-egress-considerations}
 
-専用エグレスに依存しないトラフィックの方がスループットが高くなるので、VPN の必要がなく、専用エグレス IP アドレスも必要ない場合は、フレキシブルポートエグレスをお勧めします。
+専用の出力に依存しないトラフィックは高いスループットを達成できるので、VPN が不要で、専用の出力 IP アドレスが不要な場合は、柔軟なポート出力を選択することをお勧めします。
 
 ### 設定 {#configuring-flexible-port-egress-provision}
 
-プログラムごとに 1 回、POST `/program/<programId>/networkInfrastructures` エンドポイントが呼び出され、`kind` パラメーターの `flexiblePortEgress` の値とリージョンが渡されます。エンドポイントは、応答として `network_id` の他に、ステータスなどの他の情報も返します。パラメーターの完全なセットと正確な構文、および後で変更できないパラメーターなどの重要な情報は、[API ドキュメントで参照できます。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+プログラムごとに 1 回、POST `/program/<programId>/networkInfrastructures` エンドポイントが呼び出され、`kind` パラメーターの `flexiblePortEgress` の値とリージョンが渡されます。エンドポイントは、 `network_id`、およびステータスを含むその他の情報。 パラメーターの完全なセットと正確な構文、および後で変更できないパラメーターなどの重要な情報。 [は、API ドキュメントで参照できます。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 呼び出しの後、ネットワークインフラストラクチャがプロビジョニングされるまで、通常は 15 分ほどかかります。Cloud Manager の [ネットワークインフラストラクチャ GET エンドポイント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) の呼び出しで「準備完了」のステータスが表示されます。
 
@@ -179,7 +179,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 >[!NOTE]
 >
->2021年9月リリース（2021/10/06）以前に専用エグレス IP がプロビジョニングされている場合は、[従来の専用エグレスアドレスを使用する場合](#legacy-dedicated-egress-address-customers)を参照してください。
+>2021 年 9 月のリリース (10/6/21) 以前に、専用のエグレス IP がプロビジョニングされている場合は、 [レガシーの出口専用アドレスのお客様](#legacy-dedicated-egress-address-customers).
 
 ### メリット {#benefits}
 
@@ -350,7 +350,7 @@ IPSec 技術を搭載したほとんどの VPN デバイスがサポートされ
 
 ### 作成 {#vpn-creation}
 
-POST `/program/<programId>/networkInfrastructures` エンドポイントがプログラムごとに 1 回呼び出され、設定情報のペイロードが渡されます。この設定情報には、`kind` パラメーターの「vpn」の値、リージョン、アドレス空間（CIDR のリスト。これは後で変更できません）、DNS リゾルバー（顧客のネットワーク内で名前を解決するためのもの）、VPN 接続情報（ゲートウェイ設定、共有 VPN キー、IP セキュリティポリシーなど）などが含まれます。エンドポイントは、応答として `network_id` の他に、ステータスなどの他の情報も返します。パラメーターの一覧と厳密な構文については、 [API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) を参照してください。
+POST `/program/<programId>/networkInfrastructures` エンドポイントがプログラムごとに 1 回呼び出され、設定情報のペイロードが渡されます。この設定情報には、`kind` パラメーターの「vpn」の値、リージョン、アドレス空間（CIDR のリスト。これは後で変更できません）、DNS リゾルバー（顧客のネットワーク内で名前を解決するためのもの）、VPN 接続情報（ゲートウェイ設定、共有 VPN キー、IP セキュリティポリシーなど）などが含まれます。エンドポイントは、 `network_id`、およびステータスを含むその他の情報。 パラメーターの一覧と厳密な構文については、 [API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) を参照してください。
 
 この呼び出しの後、ネットワークインフラストラクチャがプロビジョニングされるまで、通常は 45～60 分かかります。API の GET メソッドを呼び出して、現在のステータスを返すことができます。このステータスは、最終的に `creating` から `ready` に変わります。すべてのステータスについては、 API ドキュメントを参照してください。
 
@@ -421,7 +421,7 @@ API が数秒以内に応答して「`updating`」のステータスを返し、
   </tr>
   <tr>
     <td></td>
-    <td>IP が <i>VPN ゲートウェイアドレス空間</i>の範囲に収まらず、（標準の Java HTTP クライアントライブラリを使用する HTTP または HTTPS トラフィックにデフォルトで設定済みの）HTTP プロキシ設定を使用する場合</td>
+    <td>IP が <i>VPN ゲートウェイアドレス空間</i> の範囲、および http プロキシ設定（標準の Java HTTP クライアントライブラリを使用する http/s トラフィックの場合はデフォルトで設定）</td>
     <td>任意</td>
     <td>専用エグレス IP を経由</td>
     <td></td>
@@ -450,7 +450,7 @@ API が数秒以内に応答して「`updating`」のステータスを返し、
   </tr>
   <tr>
     <td></td>
-    <td>IP が <i>VPN ゲートウェイアドレス空間</i>の範囲に収まらず、<code>portForwards</code> API パラメーターで宣言されている <code>portOrig</code> を使用して <code>AEM_PROXY_HOST</code> 環境変数のプロキシホストにクライアントが接続する場合</td>
+    <td>IP が <i>VPN ゲートウェイアドレス空間</i> 範囲とクライアントの接続 <code>AEM_PROXY_HOST</code> を使用した env 変数 <code>portOrig</code> 宣言された <code>portForwards</code> API パラメーター</td>
     <td>任意</td>
     <td>専用エグレス IP を経由</td>
     <td></td>

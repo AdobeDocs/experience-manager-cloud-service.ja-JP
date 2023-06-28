@@ -2,10 +2,10 @@
 title: SPA モデルルーティング
 description: AEM の単一ページアプリケーションの場合、アプリはルーティングを担当します。このドキュメントでは、ルーティングメカニズム、契約、使用可能なオプションについて説明します。
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 95%
+source-wordcount: '440'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,7 @@ AEM の単一ページアプリケーションの場合、アプリはルーテ�
 
 ## アーキテクチャ {#architecture}
 
-詳しくは、SPA ブループリントドキュメントの [PageModelManager](blueprint.md#pagemodelmanager) の節を参照してください。
+詳しくは、 [PageModelManager](blueprint.md#pagemodelmanager) SPA Blueprint ドキュメントのセクション
 
 ## ModelRouter {#modelrouter}
 
@@ -31,7 +31,7 @@ AEM の単一ページアプリケーションの場合、アプリはルーテ�
 
 >[!CAUTION]
 >
->`ModelRouter` の現在のバージョンでは、Sling Model エントリポイントの実際のリソースパスを指す URL のみ使用できます。バニティ URL やエイリアスの使用はサポートしていません。
+>`ModelRouter` の現在のバージョンでは、Sling Model エントリポイントの実際のリソースパスを指す URL のみ使用できます。バニティー URL やエイリアスの使用はサポートしていません。
 
 ## ルーティングのコントラクト {#routing-contract}
 

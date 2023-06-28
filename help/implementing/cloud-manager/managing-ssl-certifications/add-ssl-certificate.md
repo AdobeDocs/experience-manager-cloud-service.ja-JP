@@ -2,10 +2,10 @@
 title: SSL 証明書の追加
 description: Cloud Manager のセルフサービスツールを使用して独自の SSL 証明書を追加する方法を説明します。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 86%
+source-wordcount: '571'
+ht-degree: 82%
 
 ---
 
@@ -63,7 +63,7 @@ Cloud Manager を使用して証明書を追加するには、次の手順に従
 
    * 検出されたエラーが表示されます。
       * 証明書を保存する前に、すべてのエラーを解決する必要があります。
-      * 一般的なエラーの対処方法の詳細については、[証明書エラー](#certificate-errors)の節を参照してください。
+      * 詳しくは、 [証明書エラー](#certificate-errors) の節を参照して、一般的なエラーの対処方法の詳細を確認してください。
 
 1. 「**保存**」をクリックして証明書を保存します。
 
@@ -81,7 +81,7 @@ Cloud Manager を使用して証明書を追加するには、次の手順に従
 
 ### 証明書ポリシー {#certificate-policy}
 
-次のエラーが発生した場合は、証明書のポリシーを確認してください。
+次のエラーが表示される場合は、証明書のポリシーを確認してください。
 
 ```text
 Certificate policy must conform with EV or OV, and not DV policy.

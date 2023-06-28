@@ -2,7 +2,7 @@
 title: コンテンツフラグメント - 設定ブラウザー（アセット - コンテンツフラグメント）
 description: 設定ブラウザーでコンテンツフラグメント機能を有効にする方法について説明します。
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 37%
@@ -60,7 +60,7 @@ ht-degree: 37%
 
    1. 「**タイトル**」を指定します。
    1. この **名前** はリポジトリ内のノード名になります。
-      * タイトルに基づいて自動的に生成され、 [AEM命名規則。](/help/implementing/developing/introduction/naming-conventions.md)
+      * タイトルに基づいて自動的に生成され、 [AEM命名規則](/help/implementing/developing/introduction/naming-conventions.md).
       * 必要に応じて調整できます。
    1. 使用できるようにするには、以下を選択します。
       * **コンテンツフラグメントモデル**

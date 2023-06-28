@@ -2,10 +2,10 @@
 title: ユニバーサルエディターを使用したコンテンツのオーサリング
 description: コンテンツ作成者がユニバーサルエディターを使用してコンテンツを作成する際に、簡単で直感的な方法を説明します。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1147'
-ht-degree: 84%
+source-wordcount: '1142'
+ht-degree: 80%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 84%
 
 >[!TIP]
 >
->ユニバーサルエディターと連携する AEM アプリの設定方法の例は、[AEM でのユニバーサルエディターの概要](getting-started.md)ドキュメントを参照してください。
+>詳しくは、 [AEMのユニバーサルエディターの概要](getting-started.md) ユニバーサルエディターと連携するAEMアプリの設定方法の例を参照してください。
 
 ## ログイン {#sign-in}
 
@@ -84,7 +84,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 #### 通知 {#notifications}
 
-このアイコンには、現在割り当てられている不完全な数のバッジが付きます [通知。](/help/implementing/cloud-manager/notifications.md)
+このアイコンには、現在割り当てられている不完全な数のバッジが付きます [通知](/help/implementing/cloud-manager/notifications.md).
 
 ![通知](assets/notifications.png)
 
@@ -96,7 +96,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ### ユニバーサルエディターのヘッダー {#universal-editor-header}
 
-ユニバーサルエディターのヘッダーは、常に画面の上部、[Experience Cloud ヘッダーのすぐ下に表示されます。](#experience-cloud-header)このツールを使用すると、別のページに素早くアクセスして編集したり、現在のページを公開したりできます。
+ユニバーサルエディターのヘッダーは、常に画面の上部、[Experience Cloud ヘッダーのすぐ下に表示されます。](#experience-cloud-header) 別のページにすばやくアクセスして編集したり、現在のページを公開したりできます。
 
 ![ユニバーサルエディターのヘッダー](assets/universal-editor-header.png)
 

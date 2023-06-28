@@ -2,10 +2,10 @@
 title: 機能テスト
 description: コードの品質と信頼性を確保するために、AEM as a Cloud Service デプロイメントプロセスに組み込まれている 3 種類の機能テストについて説明します。
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 72%
+source-wordcount: '539'
+ht-degree: 56%
 
 ---
 
@@ -35,9 +35,9 @@ AEM as a Cloud Service には 3 種類の機能テストがあります。
 * [カスタム機能テスト](#custom-functional-testing)
 * [カスタム UI テスト](#custom-ui-testing)
 
-すべての機能テストについて、[デプロイメントプロセス](/help/implementing/cloud-manager/deploy-code.md)の一環としてビルド概要画面の「**ビルドログをダウンロード**」ボタンを使用して、テストの詳細な結果を `.zip` ファイル形式でダウンロードできます。
+すべての機能テストで、テストの詳細な結果は、 `.zip` ファイルを **ビルドログをダウンロード** ボタンを [配置プロセス](/help/implementing/cloud-manager/deploy-code.md).
 
-これらのログには、実際の AEM ランタイムプロセスのログは含まれていません。これらのログへのアクセスについて詳しくは、[ログへのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md) を参照してください。
+これらのログには、実際の AEM ランタイムプロセスのログは含まれていません。これらのログにアクセスするには、 [ログへのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md) を参照してください。
 
 製品機能テストとサンプルのカスタム機能テストは、どちらも [AEM テストクライアント](https://github.com/adobe/aem-testing-clients)に基づいています。
 
@@ -48,13 +48,13 @@ AEM as a Cloud Service には 3 種類の機能テストがあります。
 * [製品機能テスト](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)：製品機能テストは、新しいコードを Cloud Manager にデプロイするたびに自動的に実行され、省略することはできません。
 * [実稼動以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)：製品機能テストは、実稼動以外のパイプラインを実行する際に、オプションで実行するように選択できます。
 
-製品機能テストは、オープンソースプロジェクトとして維持されます。詳しくは、GitHub の[製品機能テスト](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)を参照してください。
+製品機能テストは、オープンソースプロジェクトとして維持されます。詳しくは、 [製品機能テスト](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 詳しくは、 GitHub を参照してください。
 
 ### カスタム機能テスト {#custom-functional-testing}
 
 製品機能テストはアドビで定義されますが、独自のアプリケーション用に独自の品質テストを作成することもできます。これは、 [実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) または [非実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) を使用して、アプリケーションの品質を確保します。
 
-カスタム機能テストは、カスタムコードのデプロイメントとプッシュアップグレードの両方で実行されます。そのため、AEM コードの変更によってアプリケーションコードが機能しなくなることを防ぐ適切な機能テストを作成することが特に重要になります。カスタム機能テストステップは常に存在し、スキップできません。
+カスタム機能テストは、カスタムコードのデプロイメントとプッシュアップグレードの両方で実行されるので、AEMコードの変更によってアプリケーションコードが破損するのを防ぐ、適切な機能テストを作成することが特に重要です。 カスタム機能テストステップは常に存在し、スキップできません。
 
 詳しくは、 [Java 機能テスト](/help/implementing/cloud-manager/java-functional-testing.md) を参照してください。
 

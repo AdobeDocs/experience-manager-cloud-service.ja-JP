@@ -2,10 +2,10 @@
 title: ページへの ContextHub の追加とストアへのアクセス
 description: ContextHub 機能を有効にし、ContextHub JavaScript ライブラリにリンクするには、ContextHub をページに追加します。
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 66%
+source-wordcount: '926'
+ht-degree: 58%
 
 ---
 
@@ -17,7 +17,7 @@ ContextHub JavaScript API を使用すると、ContextHub が管理するコン�
 
 ## ページコンポーネントへの ContextHub の追加 {#adding-contexthub-to-a-page-component}
 
-ContextHub 機能を有効にし、ContextHub JavaScript ライブラリにリンクするには、ページの `head` セクションに `contexthub` コンポーネントを含めます。ページコンポーネントの HTL コードは、次の例のようになります。
+ContextHub 機能を有効にし、ContextHub JavaScript ライブラリにリンクするには、 ページの `head` セクションに `contexthub` コンポーネントを含めます。ページコンポーネントの HTL コードは、次の例のようになります。
 
 ```xml
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
@@ -83,17 +83,17 @@ Object {
 
 ### オブジェクトの操作 {#manipulating-objects}
 
-ContextHub には、JavaScript オブジェクトを操作するための [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) クラスが用意されています。JavaScript オブジェクトをストアに追加する前またはストアから取得した後に、このクラスの関数を使用して JavaScript オブジェクトを操作します。
+ContextHub には、 [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) JavaScript オブジェクトを操作するためのクラス。 このクラスの関数を使用して、JavaScript オブジェクトをストアに追加する前またはストアから取得した後に操作します。
 
 さらに、[`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) クラスには、オブジェクトを文字列にシリアライズしたり、文字列をオブジェクトにデシリアライズしたりするための関数があります。`JSON.parse` 関数および `JSON.stringify` 関数をネイティブに含まないブラウザーをサポートするには、このクラスを使用して JSON データを処理します。
 
 ## ContextHub ストアとのやり取り {#interacting-with-contexthub-stores}
 
-ストアを JavaScript オブジェクトとして取得するには、[`ContextHub`](contexthub-api.md#ui-event-constants) JavaScript オブジェクトを使用します。ストアオブジェクトを取得したら、そのストアに格納されているデータを操作できます。ストアを取得するには、[`getAllStores`](contexthub-api.md#getallstores) 関数または [`getStore`](contexthub-api.md#getstore-name) 関数を使用します。
+以下を使用： [`ContextHub`](contexthub-api.md#ui-event-constants) ストアを JavaScript オブジェクトとして取得する JavaScript オブジェクト。 ストアオブジェクトを取得したら、そのストアに格納されているデータを操作できます。ストアを取得するには、[`getAllStores`](contexthub-api.md#getallstores) 関数または [`getStore`](contexthub-api.md#getstore-name) 関数を使用します。
 
 ### ストアデータへのアクセス {#accessing-store-data}
 
-[`ContexHub.Store.Core`](contexthub-api.md#contexthub-store-core) JavaScript クラスは、ストアデータとやり取りするための関数を定義します。次の関数は、オブジェクトに格納されている複数のデータ項目を保存および取得します。
+この [`ContexHub.Store.Core`](contexthub-api.md#contexthub-store-core) JavaScript クラスは、ストアデータとやり取りするための関数を定義します。 次の関数は、オブジェクトに格納されている複数のデータ項目を保存および取得します。
 
 * [addAllItems](contexthub-api.md#addallitems-tree-options)
 * [getTree](contexthub-api.md#gettree-includeinternals)
@@ -107,17 +107,17 @@ ContextHub には、JavaScript オブジェクトを操作するための [`Cont
 
 >[!NOTE]
 >
->ContextHub は、デフォルトでは、パブリッシュサーバーで現在ログインしていることを認識せず、そのようなユーザーは ContextHub では「匿名」と見なされます。
+>ContextHub は、デフォルトでは、パブリッシュサーバーを使用した現在のログインを認識しません。そうしたユーザーは ContextHub では「匿名」と見なされます。
 >
->プロファイルストアを読み込むことで、ContextHub にログインユーザーを認識させることができます。[GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js) でサンプルコードを参照してください。
+>プロファイルストアを読み込むことで、ContextHub にログインユーザーを認識させることができます。詳しくは、 [GitHub でのサンプルコードはこちら](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
 ### ContextHub のイベンティング {#contexthub-eventing}
 
-ContextHub には、ストアイベントに自動的に対処できるようにするイベントフレームワークが含まれています。各ストアオブジェクトには、ストアの [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) プロパティとして使用できる [`eventing`](contexthub-api.md#eventing) オブジェクトが含まれています。JavaScript 関数をストアイベントにバインドするには、[`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) 関数または [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) 関数を使用します。
+ContextHub には、ストアイベントに自動的に対処できるようにするイベントフレームワークが含まれています。各ストアオブジェクトには、ストアの [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) プロパティとして使用できる [`eventing`](contexthub-api.md#eventing) オブジェクトが含まれています。以下を使用： [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) または [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) 関数を使用して、JavaScript 関数をストアイベントにバインドします。
 
 ## ContextHub を使用した cookie の操作 {#using-context-hub-to-manipulate-cookies}
 
-ContextHub JavaScript API には、ブラウザー cookie を処理するためのクロスブラウザーサポートがあります。[`ContextHub.Utils.Cookie`](contexthub-api.md#contexthub-utils-cookie) 名前空間は、Cookie を作成、操作、削除するための関数を定義します。
+Context Hub JavaScript API には、ブラウザー cookie を処理するためのクロスブラウザーサポートが用意されています。 [`ContextHub.Utils.Cookie`](contexthub-api.md#contexthub-utils-cookie) 名前空間は、Cookie を作成、操作、削除するための関数を定義します。
 
 ## 解決された ContextHub セグメントの特定 {#determining-resolved-contexthub-segments}
 
@@ -127,7 +127,7 @@ ContextHub のセグメントエンジンを使用して、現在のコンテキ
 
 ContextHub のセグメントは、`/conf/<site>/settings/wcm/segments` ノードの下にインストールされます。
 
-次のセグメントは、[WKND チュートリアルサイト](/help/implementing/developing/introduction/develop-wknd-tutorial.md)でインストールされます。
+次のセグメントが、 [WKND チュートリアルサイト](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 * summer（夏）
 * winter（冬）

@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: ca58b4df232dc658d7843ede2386710c4da43fcb
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '5094'
+source-wordcount: '5096'
 ht-degree: 89%
 
 ---
@@ -31,11 +31,11 @@ AEMでのアセット検索では、次の使用例をサポートしていま�
 | [検索候補](#searchsuggestions) | [必須メタデータ](#mandatorymetadata) | [ダウンロード](#download) |
 | [検索結果および動作について](#searchbehavior) | [検索ファセットの変更](#searchfacets) | [メタデータの一括更新](#metadata-updates) |
 | [検索ランキングおよびブースト](#searchrank) | [カスタム述語](#custompredicates) | [スマートコレクション](#collections) |
-| [詳細検索：検索のフィルタリングと範囲](#scope) |  | [予期しない結果の理解とトラブルシューティング](#unexpected-results) |
-| [他のソリューションおよびアプリから検索](#search-assets-other-surfaces)：<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager デスクトップアプリ](#desktop-app)</li><li>[Adobe Stock 画像](#adobe-stock)</li><li>[Dynamic Media アセット](#search-dynamic-media-assets)</li></ul> |  |  |
-| [アセットセレクター](#asset-picker) |  |  |
-| [制限事項](#limitations)と[ヒント](#tips) |  |  |
-| [例を使った説明](#samples) |  |  |
+| [詳細検索：検索のフィルタリングと範囲](#scope) | | [予期しない結果の理解とトラブルシューティング](#unexpected-results) |
+| [他のソリューションおよびアプリから検索](#search-assets-other-surfaces)：<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager デスクトップアプリ](#desktop-app)</li><li>[Adobe Stock 画像](#adobe-stock)</li><li>[Dynamic Media アセット](#search-dynamic-media-assets)</li></ul> | | |
+| [アセットセレクター](#asset-picker) | | |
+| [制限事項](#limitations)と[ヒント](#tips) | | |
+| [例を使った説明](#samples) | | |
 
 [!DNL Experience Manager] Web インターフェイスの上部にあるオムニサーチフィールドを使用して、アセットを検索します。[!DNL Experience Manager] で&#x200B;**[!UICONTROL アセット]**／**[!UICONTROL ファイル]**&#x200B;に移動し、上部バーの検索アイコン ![search_icon](assets/do-not-localize/search_icon.png) をクリックし、検索キーワードを入力して、`Return` を選択します。または、キーワードショートカット `/`（スラッシュ）を使用して、オムニサーチフィールドを開きます。`Location:Assets` が事前に選択されており、DAM アセットの検索に制限されています。検索キーワードを入力し始めると、[!DNL Experience Manager] による提案が表示されます。
 
@@ -211,7 +211,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ### [!DNL Brand Portal] でのアセットの検索  {#brand-portal}
 
-マーケティング担当者や事業部門のユーザーは、Brand Portal を使用して、承認済みのデジタルアセットを、広範な社内チーム、パートナーおよび販売店と効率的かつ安全に共有します。詳しくは、[Brand Portal でのアセットの検索](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=ja)を参照してください。
+マーケターや事業部門のユーザーは、Brand Portal を使用して、承認済みのデジタルアセットを、広範な社内チーム、パートナーおよび販売店と効率的かつ安全に共有します。詳しくは、[Brand Portal でのアセットの検索](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=ja)を参照してください。
 
 ### [!DNL Adobe Stock] 画像の検索 {#adobe-stock1}
 
@@ -243,7 +243,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 | `mode` | single、multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | 複数モードでは、アセットセレクターを使用して、いくつかのアセットを同時に選択できます。 |
 | `dialog` | true、false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | アセットセレクターを Granite ダイアログとして開くには、これらのパラメーターを使用します。このオプションは、Granite パスフィールドを使用してアセットセレクターを起動し、pickerSrc URL として設定する場合にのみ適用できます。 |
 | `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | アセットセレクターのルートフォルダーを指定するには、このオプションを使用します。 この場合、アセットセレクターを使用して、ルートフォルダーの下の子アセット（直接/間接）のみを選択できます。 |
-| `viewmode` | 検索を |  | `assettype` パラメーターと `mimetype` パラメーターを指定して、アセットセレクターを検索モードで起動します。 |
+| `viewmode` | 検索を | | `assettype` パラメーターと `mimetype` パラメーターを指定して、アセットセレクターを検索モードで起動します。 |
 | `assettype` | 画像、ドキュメント、マルチメディア、アーカイブ。 | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | 渡された値に基づいてアセットタイプをフィルタリングするには、このオプションを使用します。 |
 | `mimetype` | アセットの MIME タイプ（`/jcr:content/metadata/dc:format`）（ワイルドカードもサポートされています）。 | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | MIME タイプに基づいてアセットをフィルタリングするために使用します。 |
 
@@ -405,7 +405,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 ## アセット検索結果の操作 {#aftersearch}
 
-[!DNL Experience Manager] で検索したアセットを使用して、次の操作を行うことができます。
+検索したアセットに対して、次の操作を実行できます。 [!DNL Experience Manager]:
 
 * メタデータプロパティなどの情報を表示する。
 * 1 つ以上のアセットをダウンロードする。
@@ -483,7 +483,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 | 検索フィルターまたは述語が使用できない | <ul><li>検索フィルターが設定されていません。</li><li>ログインで使用できません。</li><li>（可能性は低い）使用しているデプロイメントで検索オプションがカスタマイズされていません。</li></ul> | <ul><li>管理者に問い合わせて、検索のカスタマイズが使用可能かどうかを確認します。</li><li>管理者に問い合わせて、使用中のアカウントに、カスタマイズを使用する権限があるかどうかを確認します。</li><li>管理者に問い合わせて、使用中の [!DNL Assets] デプロイメントで使用可能なカスタマイズを確認します。</li></ul> |
 | 視覚的に類似した画像を検索する場合、期待された画像が見つからない | <ul><li>[!DNL Experience Manager] では画像を使用できません。</li><li>画像のインデックスが作成されていません（通常、最近アップロードされた場合）。</li><li>画像がスマートタグ付けされていません。</li></ul> | <ul><li>[!DNL Assets] に画像を追加します。</li><li>管理者に問い合わせて、リポジトリーのインデックスを再作成してもらいます。また、適切なインデックスを使用していることを確認します。</li><li>管理者に問い合わせて、関連アセットのスマートタグ付けをしてもらいます。</li></ul> |
 | 視覚的に類似した画像を検索する場合、無関係な画像が表示される | 視覚検索の動作。 | [!DNL Experience Manager] では、関連する可能性のあるアセットをできるだけ多く表示します。関連性の低い画像がある場合は、結果には追加されますが、検索のランキングは低くなります。検索結果を下にスクロールするにつれて、検索されたアセットの一致精度と関連性が低くなります。 |
-| 検索結果を選択して操作する場合、検索されたすべてのアセットが操作されない | 「[!UICONTROL すべてを選択]」オプションでは、カード表示の最初の 100 件の検索結果とリスト表示の最初の 200 件の検索結果のみが選択されます。 |  |
+| 検索結果を選択して操作する場合、検索されたすべてのアセットが操作されない | 「[!UICONTROL すべてを選択]」オプションでは、カード表示の最初の 100 件の検索結果とリスト表示の最初の 200 件の検索結果のみが選択されます。 | |
 
 **関連情報**
 
@@ -504,4 +504,3 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 >* [[!DNL Experience Manager] 検索実装ガイド](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=ja)
 >* [検索結果を高めるための詳細設定](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=ja)
 >* [スマート翻訳検索の設定](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html?lang=ja)
-

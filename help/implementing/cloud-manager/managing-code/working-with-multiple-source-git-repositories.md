@@ -2,10 +2,10 @@
 title: 複数のリポジトリの使用
 description: Cloud Manager を操作する際に複数の Git リポジトリを管理する方法について説明します。
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 98%
+source-wordcount: '752'
+ht-degree: 91%
 
 ---
 
@@ -122,7 +122,7 @@ jobs:
           git -C ${MAIN_BRANCH} push
 ```
 
-GitHub アクションは非常に柔軟に使用することができます。 Git リポジトリのブランチ間のマッピングを実行できるほか、個別の Git プロジェクトをメインプロジェクトのディレクトリレイアウトにマッピングすることもできます。
+GitHub アクションは非常に柔軟に使用することができます。 Git リポジトリーのブランチ間のマッピングと、個別の Git プロジェクトのメインプロジェクトのディレクトリレイアウトへのマッピングを実行できます。
 
 >[!NOTE]
 >
@@ -191,7 +191,7 @@ git commit -F ../commit.txt
 git push
 ```
 
-Jenkins ジョブは非常に柔軟に使用することができます。 Git リポジトリのブランチ間のマッピングを実行できるほか、個別の Git プロジェクトをメインプロジェクトのディレクトリレイアウトにマッピングすることもできます。
+Jenkins ジョブは非常に柔軟に使用することができます。 Git リポジトリーのブランチ間のマッピングと、個別の Git プロジェクトのメインプロジェクトのディレクトリレイアウトへのマッピングを実行できます。
 
 >[!NOTE]
 >

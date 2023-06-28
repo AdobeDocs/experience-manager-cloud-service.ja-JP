@@ -2,10 +2,10 @@
 title: コンポーネントリファレンスガイド
 description: コンポーネントとその構造の詳細に関するデベロッパー向けリファレンスガイド
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3649'
-ht-degree: 97%
+source-wordcount: '3650'
+ht-degree: 94%
 
 ---
 
@@ -122,7 +122,7 @@ AEM コンポーネントの構造は強力で柔軟性があります。以下�
 1. `abbreviation` - コンポーネントブラウザーでのコンポーネント名の省略形をカスタマイズするための String プロパティ
    * 省略形は最大 2 文字までにする必要があります。
    * 空の文字列が指定されると、`jcr:title` プロパティの最初の 2 文字を使用して省略形が作成されます。
-      * 例えば、「Image」の場合は「Im」になります。
+      * 例えば、「画像」の場合は「Im」
       * ローカライズされたタイトルは、省略形の作成に使用されます。
    * 省略形は、コンポーネントに `abbreviation_commentI18n` プロパティがある場合にのみ翻訳されます。これは、翻訳ヒントとして使用されます。
 1. `cq:icon.png` または `cq:icon.svg` - コンポーネントブラウザーに表示される、このコンポーネントのアイコン
@@ -166,7 +166,7 @@ AEM コンポーネントの構造は強力で柔軟性があります。以下�
 | 名前 | 種類 | 説明 |
 |---|---|---|
 | `.` | `cq:Component` | これは現在のコンポーネントを表します。ノードタイプ `cq:Component` のコンポーネント。 |
-| `componentGroup` | `String` | これは、[コンポーネントブラウザーでコンポーネントを選択できるグループを表します。](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) 「`.`」で始まる値は、他のコンポーネントが継承する基本コンポーネントなど、UI から選択できないコンポーネントに使用されます。 |
+| `componentGroup` | `String` | これは、 [コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).  「`.`」で始まる値は、他のコンポーネントが継承する基本コンポーネントなど、UI から選択できないコンポーネントに使用されます。 |
 | `cq:isContainer` | `Boolean` | コンポーネントがコンテナコンポーネントかどうか、したがって段落システムなど他のコンポーネントを格納できるかどうかを示します。 |
 | `cq:dialog` | `nt:unstructured` | これは、コンポーネントの編集ダイアログの定義です。 |
 | `cq:design_dialog` | `nt:unstructured` | これは、コンポーネントのデザインダイアログの定義です。 |
@@ -223,7 +223,7 @@ AEM コンポーネントのダイアログ：
 
 デザインダイアログは、コンテンツの編集と構成に使用されるダイアログに似ていますが、テンプレート作成者がページテンプレート上のそのコンポーネントのデザインの詳細をプロ構成および提供するためのインターフェイスを提供します。次に、コンテンツ作成者がページテンプレートを使用してコンテンツページを作成します。テンプレートの作成方法の詳細については、[テンプレートドキュメント](/help/sites-cloud/authoring/features/templates.md)を参照してください。
 
-[ページテンプレートの編集時にはデザインダイアログが使用されます](/help/sites-cloud/authoring/features/templates.md)。ただし、すべてのコンポーネントで必要とされるわけではありません。例えば、**タイトル**&#x200B;と&#x200B;**画像コンポーネント**&#x200B;の両方にデザインのダイアログがありますが、**ソーシャルメディア共有コンポーネント**&#x200B;はありません。
+[ページテンプレートの編集時にはデザインダイアログが使用されます](/help/sites-cloud/authoring/features/templates.md)。ただし、すべてのコンポーネントで必要とされるわけではありません。例えば、 **タイトル** および **画像コンポーネント** どちらもデザインダイアログを持っているのに対して、 **ソーシャルメディア共有コンポーネント** は実行しません。
 
 ### Coral UI と Granite UI {#coral-and-granite}
 
@@ -321,7 +321,7 @@ AEM には、既存の設定が多数あります。**CRXDE Lite** のクエリ�
 
 コンポーネントは、コンテンツがない場合でも必ず、作成者に表示される一部の HTML をレンダリングする必要があります。そうしないと、エディターのインターフェイスから視覚的に消えてしまい、技術的には存在しても、ページやエディターには表示されなくなります。この場合、作成者は空のコンポーネントを選択して操作することができません。
 
-このため、ページがページエディターでレンダリングされる（WCM モードが `edit` または `preview` の場合）際に、コンポーネントは、表示された出力をレンダリングしない限り、プレースホルダーをレンダリングする必要があります。
+このため、ページがページエディターでレンダリングされる (WCM モードが `edit` または `preview`) をクリックします。
 プレースホルダーの一般的な HTML マークアップは次のとおりです。
 
 ```HTML
@@ -383,7 +383,7 @@ AEM には、既存の設定が多数あります。**CRXDE Lite** のクエリ�
 
 ### フィールドイベントの処理 - cq:listeners {#cq-listeners}
 
-ダイアログフィールドのイベントの処理は、カスタム[クライアントライブラリ](/help/implementing/developing/introduction/clientlibs.md)のリスナーで行われます。
+ダイアログフィールドのイベントを処理する方法は、カスタムのリスナーで実行します [クライアントライブラリ](/help/implementing/developing/introduction/clientlibs.md).
 
 フィールドにロジックを挿入するには、以下を実行する必要があります。
 
@@ -416,7 +416,7 @@ AEM には、既存の設定が多数あります。**CRXDE Lite** のクエリ�
 >* `aftermove`
 >* `aftercopy`
 
-イベントハンドラーを実装するときは、カスタム実装を組み込むことができます。次に例を示します（`project.customerAction` は静的メソッドです）。
+イベントハンドラーを実装するときは、カスタム実装を組み込むことができます。例： ( `project.customerAction` は静的メソッドです )。
 
 `afteredit = "project.customerAction"`
 
@@ -469,7 +469,7 @@ Granite UI および Granite UI ウィジェットでのフィールド検証は
 
 ![README.md （コンポーネント構造内）](assets/components-documentation.png)
 
-その後、このマークダウンは[コンポーネントコンソール](/help/sites-cloud/authoring/features/components-console.md)に表示されるようになります。
+この Markdown は、 [コンポーネントコンソール](/help/sites-cloud/authoring/features/components-console.md).
 
 ![README.md がコンポーネントコンソールに表示される](assets/components-documentation-console.png)
 

@@ -3,7 +3,7 @@ title: AEM as a Cloud Service へのデプロイ
 description: AEM as a Cloud Service へのデプロイ
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3462'
 ht-degree: 40%
@@ -113,7 +113,7 @@ Cloud Manager で可変リポジトリにデプロイされるコンテンツ、
 `/apps` 配下の install.author フォルダーまたは install.publish フォルダーにパッケージを埋め込むことで、可変コンテンツのインストールをオーサーまたはパブリッシュのみに制限することができます。この分離を反映した再構築は AEM 6.5 で行われました。推奨されるプロジェクト再構築の詳細については、 [AEM 6.5 のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja) を参照してください。
 
 >[!NOTE]
->コンテンツパッケージは、すべての環境タイプ（開発、ステージ、実稼動）にデプロイされます。デプロイメントを特定の環境に限定することはできません。この制限があるのは、自動実行のテスト実行オプションが確実に適用されるようにするためです。環境に固有のコンテンツは、 [パッケージマネージャー。](/help/implementing/developing/tools/package-manager.md)
+>コンテンツパッケージは、すべての環境タイプ（開発、ステージ、実稼動）にデプロイされます。デプロイメントを特定の環境に限定することはできません。この制限があるのは、自動実行のテスト実行オプションが確実に適用されるようにするためです。環境に固有のコンテンツは、 [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md).
 
 また、可変コンテンツパッケージの変更を適用後にロールバックするメカニズムはありません。 問題を検出した場合は、次回のコードリリースで修正するか、最後の手段としてシステム全体をデプロイメント前の時点に復元するかを選択できます。
 

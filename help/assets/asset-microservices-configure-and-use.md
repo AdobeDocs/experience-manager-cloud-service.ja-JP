@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2933'
+source-wordcount: '2931'
 ht-degree: 97%
 
 ---
@@ -204,7 +204,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 後処理ワークフローモデルは、通常の [!DNL Experience Manager] ワークフローモデルです。リポジトリーの場所やアセットタイプごとに異なる処理が必要な場合は、異なるモデルを作成します。
 
-必要に応じて処理手順を追加します。サポートされているステップのほか、カスタム実装されたワークフローステップも使用できます。
+必要に応じて処理手順を追加します。サポートされているステップと、カスタム実装されたワークフローステップの両方を使用できます。
 
 各後処理ワークフローの最後の手順が `DAM Update Asset Workflow Completed Process` であることを確認します。最後の手順は、アセットの処理が完了したことを Experience Manager が確実に把握できるようにするのに役立ちます。
 

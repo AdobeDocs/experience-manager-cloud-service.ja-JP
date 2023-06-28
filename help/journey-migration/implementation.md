@@ -2,10 +2,10 @@
 title: 実装段階
 description: クラウドに移行するためのコードとコンテンツの準備が整っていることの確認
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2337'
-ht-degree: 96%
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 96%
 
 ## これまでの説明内容 {#story-so-far}
 
-ジャーニーのこれまでのパートでは、 [AEM as a Cloud Serviceの変更点を理解](/help/journey-migration/getting-started.md) することと、デプロイメントが [準備段階](/help/journey-migration/readiness.md) でクラウドに移行する準備ができているかどうかを判断することを経験しました。
+このジャーニーの前の部分では、 [AEM as a Cloud Serviceの変更点の理解](/help/journey-migration/getting-started.md)をクリックし、デプロイメントを [準備段階](/help/journey-migration/readiness.md).
 
 この記事では、コードとコンテンツをクラウドに移動する準備ができていることを、アドビが提供するツールを使用して確認する方法について引き続き説明します。
 
@@ -256,4 +256,4 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 ## 次の手順 {#what-is-next}
 
-AEM インストールがクラウドに移行する準備ができているかどうかを評価する方法を把握し、その準備に必要なツールの使用方法を確認したら、 [本稼働フェーズ](/help/journey-migration/go-live.md) に進みます。
+AEMのインストールをクラウドに移行する準備ができているかどうかを評価する方法を完全に理解したら、準備に必要なツールの使用方法を学ぶため、次に [運用開始段階](/help/journey-migration/go-live.md).

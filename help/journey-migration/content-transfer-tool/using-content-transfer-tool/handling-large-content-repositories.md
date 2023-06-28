@@ -2,10 +2,10 @@
 title: 大規模なコンテンツリポジトリーの処理
 description: この節では、大規模なコンテンツリポジトリーの処理について説明します
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1816'
-ht-degree: 49%
+source-wordcount: '1813'
+ht-degree: 43%
 
 ---
 
@@ -26,21 +26,21 @@ ht-degree: 49%
 
 開始する前に、次の重要事項を確認してください。
 
-* CTT のバージョン 2.0.16 以降では、バンドルのインストール時にプレコピーの設定が自動的におこなわれます。 また、移行セットのサイズが 200 GB を超える場合、抽出プロセスは自動的にプリコピー機能を使用します。 azcopy.config ファイルは、crx-quickstart/cloud-migration/ ディレクトリに作成されます。CTT バージョン 2.0.16 以降を使用している場合は、プレコピー設定を手動で行う必要はありません。
+* CTT のバージョン 2.0.16 以降では、バンドルのインストール時にプリコピーの設定が自動的に行われます。 また、移行セットのサイズが 200 GB を超える場合、抽出プロセスは自動的にプリコピー機能を使用します。 azcopy.config ファイルは、crx-quickstart/cloud-migration/ ディレクトリに作成されます。CTT バージョン 2.0.16 以降を使用している場合は、プレコピー設定を手動で行う必要はありません。
 
 * ソースAEMのバージョンは 6.3 ～ 6.5 である必要があります。
 
-* ソース AEM のデータストアが Amazon S3 または Azure Blob Storage を使用するように設定されている。詳しくは、[AEM 6 でのノードストアとデータストアの設定を参照してください](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=ja)。
+* ソース AEM のデータストアが Amazon S3 または Azure Blob Storage を使用するように設定されている。詳しくは、 [AEM 6 でのノードストアとデータストアの設定](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=ja).
 
 * 各移行セットはデータストア全体をコピーするので、1 つの移行セットのみを使用する必要があります。
 
 * をインストールするには、にアクセスする必要があります [AzCopy](https://learn.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-v10) （または VM）上のソースAEMインスタンスを実行している場合 )
 
-* データストアのガベージコレクションは、ソース上で過去 7 日以内に実行されました。 詳しくは、[データストアのガベージコレクション](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=ja#data-store-garbage-collection)を参照してください。
+* データストアのガベージコレクションは、ソース上で過去 7 日以内に実行されました。 詳しくは、 [データストアのガベージコレクション](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=ja#data-store-garbage-collection).
 
 ### ソース AEM インスタンスが Amazon S3 または Azure Blob Storage データストアを使用するように設定されている場合の追加の考慮事項 {#additional-considerations-amazons3-azure}
 
-* Amazon S3 および Azure Blob Storage からのデータ転送に関連するコストが発生します。 転送コストは、既存のストレージコンテナ内のデータの総量 (AEMで参照されているかどうかに関わらず ) に対する相対的な値です。 詳しくは、[Amazon S3](https://aws.amazon.com/s3/pricing/) および [Azure Blob Storage](https://azure.microsoft.com/ja-jp/pricing/details/bandwidth/) を参照してください。
+* Amazon S3 および Azure Blob Storage からのデータ転送に関連するコストが発生します。 転送コストは、既存のストレージコンテナ内のデータの総量 (AEMで参照されているかどうかに関わらず ) に対する相対的な値です。 詳しくは、 [Amazon S3](https://aws.amazon.com/s3/pricing/) および [Azure Blob ストレージ](https://azure.microsoft.com/ja-jp/pricing/details/bandwidth/) を参照してください。
 
 * 既存のソースAmazon S3 バケットのアクセスキーと秘密鍵のペア、または既存のソース Azure Blob Storage コンテナの SAS URI が必要です（読み取り専用アクセスは問題ありません）。
 
@@ -117,7 +117,7 @@ Azcopy.config ファイルには、次のプロパティを含める必要があ
 
 >[!NOTE]
 >
-> 既存の BLOB ストレージコンテナへの書き込みアクセスを許可しない場合は、読み取りとリストの権限のみを持つ新しい SAS URI を生成することができます。
+> 既存の BLOB ストレージコンテナに対する書き込みアクセス権を付与しない場合は、読み取りおよびリスト権限のみを持つ新しい SAS URI を生成できます。
 
 ```
 azCopyPath=/usr/bin/azcopy
@@ -162,7 +162,7 @@ If `repository.home` プロパティが azcopy.config から見つからず、�
 >AzCopy が正しく設定されていない場合は、次のメッセージがログに表示されます。
 >`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`。
 
-1. CTT UI から抽出を開始します。詳しくは、[コンテンツ転送ツールの基本を学ぶ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)と[抽出プロセス](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)を参照してください。
+1. CTT UI から抽出を開始します。詳しくは、 [コンテンツ転送ツールの概要](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) そして [抽出プロセス](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) を参照してください。
 
 1. 抽出ログに次の行が印刷されていることを確認します。
 
@@ -170,7 +170,7 @@ If `repository.home` プロパティが azcopy.config から見つからず、�
 c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy phase ***************
 ```
 
-おめでとうございます。このログエントリは、設定が有効と見なされ、AzCopy がソースコンテナから移行コンテナにすべての BLOB をコピーすることを意味します。
+これで完了です。このログエントリは、設定が有効と見なされ、AzCopy がソースコンテナから移行コンテナにすべての BLOB をコピーすることを意味します。
 
 AzCopy のログエントリは抽出ログに表示され、先頭に c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy — が付きます。 [AzCopy プリコピー]
 
@@ -198,7 +198,8 @@ AzCopy がソースファイルデータストアに対して実行されてい�
 
 ### 5. AzCopy で取り込む {#ingesting-azcopy}
 
-Cloud Acceleration Manager（CAM）からターゲットにコンテンツを取り込む方法に関する一般的な情報については、[ターゲットへのコンテンツの取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)を参照してください。これには、「新規取り込み」ダイアログで AzCopy（事前コピー）を使用する方法、または使用しない方法が含まれます。 
+詳しくは、 [Target へのコンテンツの取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+Cloud Acceleration Manager(CAM) からターゲットにコンテンツを取り込む方法に関する一般的な情報 (「新規取り込み」ダイアログで AzCopy（プリコピー）を使用する方法や使用しない方法など )。
 
 取り込み中に AzCopy を利用するには、Adobeで、少なくともバージョン 2021.6.5561 のAEMas a Cloud Serviceバージョンを使用している必要があります。
 
@@ -208,7 +209,7 @@ Cloud Acceleration Manager の「取り込みジョブ」リストと取り込�
 *************** Beginning AzCopy pre-copy phase ***************
 INFO: Scanning...
 INFO: Failed to create one or more destination container(s). Your transfers may still succeed if the container already exists.
-INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+INFO: Any empty folders will not be processed, because source and/or destination does not have full folder support
 INFO: azcopy: A newer version 10.11.0 is available to download
  
 Job 419d98da-fc05-2a45-70cc-797fee632031 has started

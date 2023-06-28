@@ -3,9 +3,9 @@ title: AEM as a Cloud Service でのキャッシュ
 description: AEM as a Cloud Service でのキャッシュ
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2793'
+source-wordcount: '2795'
 ht-degree: 51%
 
 ---
@@ -82,7 +82,7 @@ Define DISABLE_DEFAULT_CACHING
 
 ### クライアントサイドライブラリ（js、css） {#client-side-libraries}
 
-* AEM のクライアントサイドライブラリフレームワークを使用する場合、変更があると一意のパスを持つ新しいファイルとして表現されるので、JavaScript と CSS コードはブラウザーが無期限にキャッシュできるような方法で生成されます。つまり、クライアントライブラリを参照するHTMLは必要に応じて作成されるので、公開時に新しいコンテンツを体験できます。 「immutable」値を考慮しない古いブラウザーでは、cache-control は「immutable」または 30 日に設定されます。
+* AEM のクライアントサイドライブラリフレームワークを使用する場合、変更があると一意のパスを持つ新しいファイルとして表現されるので、JavaScript と CSS コードはブラウザーが無期限にキャッシュできるような方法で生成されます。つまり、クライアントライブラリを参照するHTMLは必要に応じて作成されるので、公開時に新しいコンテンツを体験できます。 「不変」の値を考慮しない古いブラウザーでは、cache-control は「不変」または 30 日に設定されます。
 * 詳しくは、[クライアントサイドライブラリとバージョンの整合性](#content-consistency)を参照してください。
 
 ### BLOB ストレージに格納される大きい画像とコンテンツ {#images}
@@ -448,7 +448,7 @@ The diagram presented below illustrates this.
 
 ![CDN](assets/cdnd.png "CDN")
 
-If there is a concern that the dispatcher cache isn't clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
+If there is a concern that the dispatcher cache is not clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
 
 The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
 

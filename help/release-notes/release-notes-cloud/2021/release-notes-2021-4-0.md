@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 リリースのリリースノート。'
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 91%
+source-wordcount: '1532'
+ht-degree: 90%
 
 ---
 
@@ -127,7 +127,7 @@ ht-degree: 91%
 
 ### 新機能 {#what-is-new-commerce}
 
-* カテゴリ UID のサポート - カテゴリ ID に文字列を使用するシステム用のサードパーティコマース統合を使用できるようになります
+* カテゴリ UID のサポート — カテゴリ ID に文字列を使用するシステム用のサードパーティコマース統合をロック解除します。
 
 * PWA Studio 用 AEM 拡張機能（統合の例を含む）
 

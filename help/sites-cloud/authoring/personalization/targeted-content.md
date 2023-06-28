@@ -2,9 +2,9 @@
 title: ターゲットモードを使用したターゲットコンテンツのオーサリング
 description: ターゲットモードとターゲットコンポーネントには、エクスペリエンス用のコンテンツを作成するためのツールが用意されています
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '5412'
+source-wordcount: '5410'
 ht-degree: 48%
 
 ---
@@ -549,7 +549,7 @@ Adobe Targetを使用する場合に目標と設定を指定するには：
 1. 成功指標のカウント方法をさらに詳細に制御する場合は、「**詳細設定**」をクリックまたはタップして、この設定にアクセスします。
 1. 「**保存**」をクリックします。
 
-設定後、次の操作を実行できます。 [アクティビティのパフォーマンスの表示](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) Adobe Target（エクスペリエンスまたは A/B テストのターゲット設定）を使用している また、A/B テストのターゲティングを使用すると、次のことが可能になります。 [勝者を採用します。](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test)
+設定後、次の操作を実行できます。 [アクティビティのパフォーマンスの表示](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) Adobe Target（エクスペリエンスまたは A/B テストのターゲット設定）を使用している また、A/B テストのターゲティングを使用すると、次のことが可能になります。 [勝者を採用する](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test).
 
 ## エクスペリエンスのシミュレーション {#simulating-an-experience}
 
@@ -634,4 +634,4 @@ Target コンポーネントをカスタマイズするには、次の 2 つの�
 >
 >ターゲット設定に ContextHub を使用する場合は、**ContextHub** をエンジンとして選択します。詳しくは、ContextHub の設定を参照してください。
 <!--You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.-->
-<!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub.](/help/sites-administering/contexthub-config.md)-->
+<!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub](/help/sites-administering/contexthub-config.md).-->

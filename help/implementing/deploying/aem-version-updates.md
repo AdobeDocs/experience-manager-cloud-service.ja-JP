@@ -3,7 +3,7 @@ title: AEM バージョンのアップデート
 description: AEMas a Cloud Serviceで継続的な統合および配信 (CI/CD) を使用して、プロジェクトを最新バージョンに保つ方法を説明します。
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 54%
@@ -19,7 +19,7 @@ AEMas a Cloud Serviceで継続的な統合および配信 (CI/CD) を使用し�
 
 AEM as a Cloud Serviceでは、継続的統合と継続的配信 (CI/CD) を使用して、プロジェクトが確実に最新のAEMバージョンになるようにします。 これは、ユーザーへのサービスが中断されることなく、実稼働インスタンスとステージングインスタンスが AEM の最新バージョンに更新されることを意味します。
 
-バージョンの更新は、実稼動インスタンスとステージングインスタンスにのみ自動的に適用されます。 [AEMの更新は、他のすべてのインスタンスに手動で適用する必要があります。](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)
+バージョンの更新は、実稼動インスタンスとステージングインスタンスにのみ自動的に適用されます。 [AEMの更新は、他のすべてのインスタンスに手動で適用する必要があります](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment).
 
 ## 更新のタイプ {#update-types}
 

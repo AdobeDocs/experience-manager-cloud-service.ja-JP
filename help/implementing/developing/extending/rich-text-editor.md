@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service のコンテンツ�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service のコンテンツを作成するためにリッチテキストエディターを設定します。'
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 81%
+source-wordcount: '1876'
+ht-degree: 80%
 
 ---
 
@@ -223,7 +223,7 @@ RTE プラグインの詳細な設定については、 [RTE プラグインの�
 RTE フローで使用可能なオプションに関するユーザーインターフェイス設定がコンテンツポリシーに影響します。
 
 * ユーザーインターフェイス設定では、コンテンツポリシーで使用可能なオプションを定義します。
-* RTE のユーザーインターフェイス設定が削除されたか、どの項目も有効にしていない場合、コンテンツポリシーではその設定ができません。
+* RTE のユーザーインターフェイス設定が削除されたか、項目が有効になっていない場合、コンテンツポリシーで設定できません。
 * 作成者は、ユーザーインターフェイス設定およびコンテンツポリシーによって使用可能となっている機能にのみアクセスできます。
 
 例については、[テキストコアコンポーネントのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=ja#the-text-component-and-the-rich-text-editor)を参照してください。

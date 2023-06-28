@@ -2,10 +2,10 @@
 title: デモサイトを管理
 description: デモサイトの管理に役立つツールと、デモサイトを削除する方法について説明します。
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 100%
+source-wordcount: '946'
+ht-degree: 98%
 
 ---
 
@@ -105,7 +105,7 @@ Self-Service Demo Utilities には、多くのツールが用意されていま�
 
 * [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=ja) - Cloud Manager の機能について詳しくは、詳細な技術ドキュメントを直接参照してください。
 * [サイトを作成](/help/sites-cloud/administering/site-creation/create-site.md) - AEM を使用して、サイトテンプレートを使用してサイトを作成し、サイトのスタイルと構造を定義する方法を説明します。
-* [AEM のページ命名規則。](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices) - AEM ページを整理する際の規則を理解するには、このページを参照してください。
+* [AEMページ命名規則](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). - AEMページを整理する際の規則については、このページを参照してください。
 * [AEM の基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md) - AEM を初めて使用する場合は、ナビゲーションやコンソールの構成などの基本的な概念を理解するために、このドキュメントを参照してください。
 * [AEM as a Cloud Service 技術ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ja) - AEM を既にしっかり理解している場合は、詳細な技術ドキュメントを直接参照してください。
 * [サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md) - サイトテンプレートの構造とサイト作成への使用方法について詳しくは、このドキュメントを参照してください。

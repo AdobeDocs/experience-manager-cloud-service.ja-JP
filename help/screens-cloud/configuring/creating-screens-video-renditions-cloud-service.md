@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service でのビデオレンディションの作成
 description: ここでは、Screens as a Cloud Service でビデオレンディションを作成する方法について説明します。
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 49%
+source-wordcount: '342'
+ht-degree: 47%
 
 ---
 
@@ -25,7 +25,7 @@ Screens as a Cloud Service で Screens コンテンツプロバイダーから�
 1. Screens コンテンツプロバイダーで目的のチャネルに移動します。
 
    >[!NOTE]
-   >詳しくは、[Screens コンテンツプロバイダーの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider)を参照してください。
+   >詳しくは、 [Screens コンテンツプロバイダーの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) を参照してください。
 
 1. 左側のナビゲーションバーの「ツール」セクションをクリックし、 **Assets** 次に、 **処理プロファイル**.
 

@@ -2,10 +2,10 @@
 title: サンドボックス環境の休止と休止解除
 description: サンドボックスプログラムの環境が自動的に休止モードに入る仕組みと、休止状態が解除される仕組みについて説明します。
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 95%
+source-wordcount: '685'
+ht-degree: 92%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 95%
 
 1. **環境**&#x200B;カードで、省略記号ボタンをクリックし、「**開発者コンソール**」を選択します。
 
-   * 開発者コンソールについて詳しくは、[開発者コンソールへのアクセス](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)のドキュメントを参照してください。
+   * 詳しくは、 [開発者コンソールへのアクセス](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) を参照してください。
 
    ![開発者コンソールのメニューオプション](assets/developer-console-menu-option.png)
 
@@ -69,7 +69,7 @@ ht-degree: 95%
 
 1. **環境**&#x200B;カードで、省略記号ボタンをクリックし、「**開発者コンソール**」を選択します。
 
-   * 開発者コンソールについて詳しくは、[開発者コンソールへのアクセス](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)のドキュメントを参照してください。
+   * 詳しくは、 [開発者コンソールへのアクセス](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) を参照してください。
 
 1. 「**休止解除**」をクリックします。
 

@@ -2,10 +2,10 @@
 title: コード品質テスト
 description: パイプラインのコード品質テストの仕組みと、デプロイメントの品質を向上させる方法について説明します。
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 97%
+source-wordcount: '1161'
+ht-degree: 85%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 97%
 
 コード品質テストは、一連の品質ルールに基づいてアプリケーションコードを評価します。これはコード品質のみのパイプラインの主な目的であり、実稼動および非実稼動のすべてのパイプラインで、ビルド手順の直後に実行されます。
 
-様々なタイプのパイプラインの詳細については、[CI/CD パイプラインのドキュメント設定](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)を参照してください。
+詳しくは、 [CI/CD パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 様々なタイプのパイプラインの詳細を確認するには、を参照してください。
 
 ## コード品質ルール {#understanding-code-quality-rules}
 
@@ -30,7 +30,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->[このリンクを使用して](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)、ルールの完全なリストをダウンロードできます。
+>ルールの完全なリストをダウンロードできます [このリンクを使用](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
 ### 3 層評価 {#three-tiered-gate}
 
@@ -65,11 +65,11 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->詳しくは、[SonarQube の指標の定義](https://docs.sonarqube.org/latest/user-guide/metric-definitions/)を参照してください。
+>詳しくは、 [SonarQube の指標の定義](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) を参照してください。
 
 >[!NOTE]
 >
->[!UICONTROL Cloud Manager] で実行されるカスタムコード品質ルールについて詳しくは、[カスタムコード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md)のドキュメントを参照してください。
+>実行するカスタムコード品質ルールの詳細を確認するには [!UICONTROL Cloud Manager]を参照してください。 [カスタムコード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ## 偽陽性の処理 {#dealing-with-false-positives}
 
@@ -103,10 +103,10 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 >[!NOTE]
 >
->`@SuppressWarnings` 注釈をできるだけ具体的にすることをお勧めします。つまり、問題の原因となっている特定のステートメントまたはブロックにのみ注釈を付けます。ただし、クラスレベルで注釈を付けることもできます。
+>これは、 `@SuppressWarnings` 注釈できるだけ具体的に設定します。つまり、問題の原因となっている特定のステートメントまたはブロックにのみ注釈を付けます。クラスレベルで注釈を付けることもできます。
 
 >[!NOTE]
->明示的なセキュリティテスト手順はありませんが、コード品質手順の間に評価されるセキュリティ関連のコード品質ルールはあります。Cloud Service でのセキュリティの詳細については、[AEM as a Cloud Service のセキュリティの概要](/help/security/cloud-service-security-overview.md)のドキュメントを参照してください。
+>明示的なセキュリティテスト手順はありませんが、コード品質手順の間に評価されるセキュリティ関連のコード品質ルールはあります。詳しくは、 [AEMas a Cloud Serviceのセキュリティの概要](/help/security/cloud-service-security-overview.md) セキュリティの詳細については、Cloud Serviceを参照してください。
 
 ## コンテンツパッケージスキャンの最適化 {#content-package-scanning-optimization}
 
@@ -120,7 +120,7 @@ Cloud Manager は、品質分析プロセスの一環として、Maven ビルド
 
 数十の埋め込みパッケージを生成するプロジェクトの場合、この最適化により、パイプライン実行あたり 10 分以上の時間を節約できることが示されています。
 
-「すべて」のコンテンツパッケージに、スキップされたコンテンツパッケージと OSGi バンドルの組み合わせが含まれている場合は、特殊なケースが発生する場合があります。例えば、`myco-all-1.0.0-SNAPSHOT.zip` に前述の 2 つの埋め込みパッケージと 1 つ以上の OSGi バンドルが含まれている場合、新しい最小限のコンテンツパッケージは OSGi バンドルのみで構築されます。このパッケージは常に `cloudmanager-synthetic-jar-package` という名前で、含まれているバンドルは `/apps/cloudmanager-synthetic-installer/install` に配置されます。
+「すべて」のコンテンツパッケージに、スキップされたコンテンツパッケージと OSGi バンドルの組み合わせが含まれている場合は、特殊なケースが発生する場合があります。例えば、 `myco-all-1.0.0-SNAPSHOT.zip` には、前述の 2 つの埋め込みパッケージと 1 つ以上の OSGi バンドルが含まれていました。その後、OSGi バンドルのみを使用して、新しい最小限のコンテンツパッケージが構築されます。 このパッケージは常に `cloudmanager-synthetic-jar-package` という名前で、含まれているバンドルは `/apps/cloudmanager-synthetic-installer/install` に配置されます。
 
 >[!NOTE]
 >

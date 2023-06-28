@@ -3,9 +3,9 @@ title: アダプティブフォームをAEM Sitesページに追加する方法
 description: アダプティブフォームを容易に作成またはAEM Sitesページに追加する方法を学びます。 フォームを Web サイトに統合し、デジタルエクスペリエンスを最適化して効果を最大限に高めるための、順を追った手法とベストプラクティスについて説明します。
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: Forms AEM Sites, Add Form to a Sites page, Adaptive Forms AEM Sites, Add Adaptive Forms to AEM Page, Create Forms in an AEM Sites page
-source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3244'
+source-wordcount: '3245'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ AEM Page Editor でアダプティブフォームコンテナを使用すると�
 
 * **バージョン管理：** AEM Sites Pages オファー [堅牢なバージョン管理機能](/help/sites-cloud/authoring/features/page-versions.md)を使用して、様々なバージョンのフォームを追跡および管理できます。 これにより、必要に応じて以前のバージョンにロールバックする機能を維持しながら、フォームに変更や機能強化を加えることができます。 バージョン管理により、フォームの開発と進化に対する制御された整理されたアプローチが実現します。
 * **ターゲティング (Adobe Targetとの統合 ):** AEM Sitesのページのターゲティング機能を使用して、 [様々なオーディエンス向けにフォームエクスペリエンスをパーソナライズする](/help/sites-cloud/integrating/integration-adobe-target-ims.md). ユーザーセグメントとターゲット条件を活用することで、特定のユーザーグループに合わせてフォームのコンテンツ、デザインまたは動作を調整できます。 これにより、パーソナライズされた関連性の高いフォームエクスペリエンスを提供し、エンゲージメント率とコンバージョン率を高めることができます。
-* **翻訳：** AEM Sites [翻訳サービスとのシームレスな統合](/help/sites-cloud/administering/translation/overview.md)を使用すると、フォームを複数の言語に簡単に翻訳できます。 この機能により、ローカライゼーションプロセスが簡素化され、グローバルな閲覧者がフォームに確実にアクセスできるようになります。 AEM翻訳プロジェクト内で翻訳を効率的に管理できるので、多言語フォームのサポートに必要な時間と労力を削減できます。 翻訳について詳しくは、「考慮事項」の節を参照してください。
+* **翻訳：** AEM Sites [翻訳サービスとのシームレスな統合](/help/sites-cloud/administering/translation/overview.md)を使用すると、フォームを複数の言語に簡単に翻訳できます。 この機能により、ローカライゼーションプロセスが簡素化され、グローバルな閲覧者がフォームに確実にアクセスできるようになります。 AEM翻訳プロジェクト内で翻訳を効率的に管理できるので、多言語フォームのサポートに必要な時間と労力を削減できます。 翻訳について詳しくは、注意点の節を参照してください。
 * **マルチサイト管理とライブコピー：** AEM Sites [マルチサイト管理およびライブコピー機能](/help/sites-cloud/administering/msm/overview.md)を使用すると、1 つの環境内で複数の web サイトを作成および管理できます。 この機能を使用すると、異なるサイト間でフォームを再利用できるようになり、一貫性を確保し、重複作業を減らすことができます。 一元管理により、複数の Web サイトにわたってフォームの管理と更新を効率的におこなうことができます。
 * **テーマ：** AEM Sitesページには、複数の Web ページをまたいで一貫したビジュアルスタイルをデザインし、維持するためのフレームワークが用意されています。 これらは、Web サイトの全体的なルックアンドフィールに貢献する色、フォント、スタイルシート、その他の視覚要素を定義します。 [アダプティブフォームでAEM Sitesページ用に設計されたテーマを使用すると、時間と労力を節約できます](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes).
 * **タグ付け：** AEM Sitesのページでは、次の操作を実行できます。 [ページ、アセットまたは他のコンテンツへのタグやラベルの割り当て](/help/implementing/developing/introduction/tagging-framework.md). タグは、特定の条件に基づいてコンテンツを分類および整理する方法を提供するキーワードまたはメタデータラベルです。 AEM内のページやアセットなどのコンテンツ項目にタグを 1 つ以上割り当てて、アセットを検索や分類できるようにします。

@@ -2,10 +2,10 @@
 title: パブリッシュインスタンスでのコンテンツ転送ツールの実行
 description: パブリッシュインスタンスでのコンテンツ転送ツールの実行
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 100%
+source-wordcount: '251'
+ht-degree: 95%
 
 ---
 
@@ -29,6 +29,6 @@ ht-degree: 100%
 * パブリッシュへの取り込み時に、パブリッシュ層は（オーサー層とは異なり）スケールダウンされません。
 
   >[!IMPORTANT]
-  >予防措置として、ユーザーが次のような書き込み操作を開始しないようにしてください。
+  >予防措置として、次のようなユーザーが開始した書き込み操作を避けます。
   > * AEM as a Cloud Service 環境のオーサーからパブリッシュへのコンテンツ配布
   > * パブリッシュインスタンス間のユーザー同期

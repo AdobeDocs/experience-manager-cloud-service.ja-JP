@@ -2,10 +2,10 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2481'
-ht-degree: 82%
+source-wordcount: '2427'
+ht-degree: 42%
 
 ---
 
@@ -17,31 +17,31 @@ AEM as a Cloud Service によって、アドビは AEM インスタンス中心�
 
 AEM 6.5 以前のバージョンと比較した主な変更点のリストを以下に示します。
 
-1. 単一の AEM インスタンスのインデックスマネージャーにアクセスできなくなり、インデックスのデバッグ、設定、または維持ができなくなります。ローカルデプロイメントおよびオンプレミスデプロイメントにのみ使用されます。
-1. 単一の AEM インスタンスのインデックスを変更したり、整合性チェックや再インデックスについて心配する必要はありません。
+1. 単一のAEMインスタンスのインデックスマネージャーにアクセスして、インデックスのデバッグ、設定、または維持を行うことはできなくなりました。 ローカルデプロイメントおよびオンプレミスデプロイメントにのみ使用されます。
+1. 単一のAEMインスタンスでインデックスを変更したり、整合性チェックや再インデックスについて心配する必要はありません。
 1. 一般に、インデックスの変更は、実稼動環境に移行する前に開始され、Cloud Manager の CI/CD パイプラインの品質の高いゲートウェイを迂回せず、実稼動環境のビジネス KPI には影響しません。
-1. 実稼動環境での検索パフォーマンスを含むすべての関連指標は、実行時に顧客が検索とインデックス作成のトピックの全体像を提供できます。
+1. 実稼動環境での検索パフォーマンスを含むすべての関連指標は、実行時に顧客が検索とインデックス作成のトピックの全体像を提供できるようになります。
 1. お客様は、ニーズに応じてアラートを設定できます。
-1. SRE はシステムの正常性を 24 時間 365 日監視しており、必要に応じて可能な限り早急に対処します。
+1. SRE はシステムの正常性を監視24/7、可能な限り早く対処します。
 1. インデックスの設定は、デプロイメントを介して変更されます。インデックス定義の変更は、他のコンテンツの変更と同様に設定されます。
-1. AEMas a Cloud Serviceの概要と、 [ローリングデプロイメントモデル](#index-management-using-rolling-deployments) 2 組のインデックスが存在します。1 つは古いバージョン用のセット、もう 1 つは新しいバージョン用のセットです。
-1. Cloud Manager のビルドページで、顧客はインデックス作成ジョブが完了したかどうかを確認できます。新しいバージョンでトラフィックを引き受ける準備ができたら、通知を受け取ります。
+1. AEMas a Cloud Serviceの概要と、 [ローリングデプロイメントモデル](#index-management-using-rolling-deployments)には、2 組のインデックスが存在します。1 つは古いバージョン用、もう 1 つは新しいバージョン用です。
+1. Cloud Manager のビルドページで、インデックス作成ジョブが完了したかどうかを確認できます。新しいバージョンでトラフィックを引き受ける準備ができたら、通知を受け取ります。
 
 制限事項：
 
 * 現在、AEM as a Cloud Service のインデックス管理は、`lucene` 型のインデックスに対してのみサポートされています。
-* 標準のアナライザー（製品に付属しているアナライザー）のみサポートされています。カスタムアナライザーはサポートされていません。
-* 内部的には、他のインデックスがクエリに設定され使用される可能性があります。例えば、`damAssetLucene` インデックスに対して記述されたクエリは、Skyline 上では実際には、このインデックスの Elasticsearch バージョンに対して実行される可能性があります。この違いは、通常、アプリケーションとユーザーには見えませんが、`explain` 機能などの特定のツールでは異なるインデックスが報告されます。Lucene インデックスと Elasticsearch インデックスの違いについては、[Apache Jackrabbit Oak の Elastic 関連ドキュメント](https://jackrabbit.apache.org/oak/docs/query/elastic.html)を参照してください。ユーザーは、Elasticsearch インデックスを直接設定する必要はなく、また設定できません。
+* 標準のアナライザーのみがサポートされます（つまり、製品に付属しているアナライザー）。 カスタムアナライザーはサポートされていません。
+* 内部的には、他のインデックスがクエリに設定され使用される可能性があります。例えば、`damAssetLucene` インデックスに対して記述されたクエリは、Skyline 上では実際には、このインデックスの Elasticsearch バージョンに対して実行される可能性があります。この違いは、通常、アプリケーションとユーザーには表示されませんが、 `explain` 機能は、別のインデックスをレポートします。 Lucene インデックスと Elasticsearch インデックスの違いについては、[Apache Jackrabbit Oak の Elastic 関連ドキュメント](https://jackrabbit.apache.org/oak/docs/query/elastic.html)を参照してください。お客様は、Elasticsearchインデックスを直接設定する必要はなく、または設定できません。
 
 ## 使用方法 {#how-to-use}
 
-インデックスの定義は、以下の 3 つのユースケースで構成されます。
+インデックスの定義は、次の 3 つの使用例で構成できます。
 
-1. 新しい顧客インデックス定義の追加。
-1. 既存のインデックス定義の更新。これは、既存のインデックス定義の新しいバージョンを追加することを意味します。
+1. 顧客インデックス定義の追加。
+1. 既存のインデックス定義の更新。この更新は、既存のインデックス定義の新しいバージョンが追加されることを意味します。
 1. 冗長または古い既存のインデックスの削除。
 
-上記のポイント 1 と 2 の両方について、それぞれの Cloud Manager リリーススケジュールで、カスタムコードベースの一部として新しいインデックス定義を作成する必要があります。詳しくは、 [AEM as a Cloud Service へのデプロイ](/help/implementing/deploying/overview.md) ドキュメントを参照してください。
+上記のポイント 1 と 2 の両方で、それぞれの Cloud Manager リリーススケジュールで、カスタムコードベースの一部としてインデックス定義を作成する必要があります。 詳しくは、 [AEMへのデプロイas a Cloud Serviceドキュメント](/help/implementing/deploying/overview.md).
 
 ## インデックス名 {#index-names}
 
@@ -49,23 +49,23 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 
 1. 標準提供のインデックス。例として、`/oak:index/cqPageLucene-2` があります。
 1. 標準提供のインデックスのカスタマイズ。お客様がカスタマイズを定義できます。例として、`/oak:index/cqPageLucene-2-custom-1` があります。
-1. 完全なカスタムインデックス。例として、`/oak:index/acme.product-1-custom-2` があります。名前の競合を避けるために、完全なカスタムインデックスには `acme.` のようなプレフィックスを付ける必要があります。
+1. 完全なカスタムインデックス。例として、`/oak:index/acme.product-1-custom-2` があります。名前の競合を避けるために、Adobeでは、完全なカスタムインデックスにプレフィックスが付いている必要があります（例： ）。 `acme.`
 
-標準提供のインデックスのカスタマイズと完全なカスタムインデックスの両方に、`-custom-` を含める必要があることに注意してください。完全なカスタムインデックスのみ、プレフィックスで始める必要があります。
+標準提供のインデックスと完全カスタムインデックスの両方をカスタマイズする場合は、にが含まれている必要があります `-custom-`. 完全なカスタムインデックスのみ、プレフィックスで始める必要があります。
 
 ## 新しいインデックス定義の準備 {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->標準提供のインデックスをカスタマイズする場合（例：`damAssetLucene-6`）、CRX DE パッケージマネージャー（`/crx/packmgr/`）を使用して、最新の標準のインデックス定義を *Cloud Service 環境*&#x200B;にコピーしてください。次に、設定の名前を `damAssetLucene-6-custom-1` などに変更し、その上にカスタマイズを追加します。これにより、必要な設定が誤って削除されるのを防ぐことができます。例えば、`/oak:index/damAssetLucene-6/tika` 下のノード `tika` は、Cloud Service のカスタマイズ済みインデックスに必要です。Cloud SDK には存在しません。
+>標準提供のインデックスをカスタマイズする場合（例： ） `damAssetLucene-6`に設定する場合は、そのまま使用できる最新のインデックス定義を *Cloud Service環境* CRX DE パッケージマネージャー (`/crx/packmgr/`) ) をクリックします。 次に、設定の名前を `damAssetLucene-6-custom-1` などに変更し、その上にカスタマイズを追加します。このプロセスにより、必要な設定が誤って削除されるのを防ぎます。 例えば、`/oak:index/damAssetLucene-6/tika` 下のノード `tika` は、Cloud Service のカスタマイズ済みインデックスに必要です。Cloud SDK に存在しません。
 
-次の命名パターンに従って、実際のインデックス定義を含む新しいインデックス定義パッケージを準備する必要があります。
+次の命名パターンに従って、実際のインデックス定義を含むインデックス定義パッケージを準備します。
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-それらは `ui.apps/src/main/content/jcr_root` の下に置く必要があります。カスタマイズされたカスタムインデックス定義は、すべて `/oak:index` 下に保存する必要があります。
+それは、次の下に置く必要があります `ui.apps/src/main/content/jcr_root`. カスタマイズされたカスタムインデックス定義は、すべて以下に保存する必要があります。 `/oak:index`.
 
-パッケージのフィルターは、既存（標準提供のインデックス）が保持されるように設定する必要があります。`ui.apps/src/main/content/META-INF/vault/filter.xml` ファイルで、各カスタム（またはカスタマイズ済み）インデックスを、例えば `<filter root="/oak:index/damAssetLucene-6-custom-1"/>` のようにリストする必要があります。インデックスのバージョンを後で変更する場合は、フィルターを調整する必要があります。
+パッケージのフィルターは、（標準提供のインデックス）既存のインデックスが保持されるように設定する必要があります。 ファイル内 `ui.apps/src/main/content/META-INF/vault/filter.xml`に設定する場合、各カスタム（またはカスタマイズされた）インデックスを次のようにリストする必要があります。 `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. インデックスのバージョンを後で変更する場合は、フィルターを調整する必要があります。
 
 <!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
 
@@ -73,7 +73,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->インデックス定義を含んだコンテンツパッケージには、コンテンツパッケージのプロパティファイル（場所は `/META-INF/vault/properties.xml`）で次のプロパティを設定する必要があります。
+>インデックス定義を含むコンテンツパッケージでは、次のプロパティをコンテンツパッケージのプロパティファイル ( ) で設定する必要があります。 `/META-INF/vault/properties.xml`:
 >
 >`noIntermediateSaves=true`
 
@@ -83,7 +83,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 * インデックス定義自体（例 `/oak:index/ntBaseLucene-custom-1`）
 
-カスタムインデックスまたはカスタマイズ済みインデックスをデプロイするには、インデックス定義（`/oak:index/definitionname`）は、Git と Cloud Manager のデプロイメントプロセスを使用して `ui.apps` を介して配信される必要があります。FileVault フィルター、例えば `ui.apps/src/main/content/META-INF/vault/filter.xml` では、カスタムおよびカスタマイズ済みの各インデックスを、`<filter root="/oak:index/damAssetLucene-7-custom-1"/>` のように個別にリストします。カスタムまたはカスタマイズ済みインデックス定義自体が、次のように `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml` ファイルに保存されます。
+カスタムインデックスまたはカスタマイズされたインデックスを展開するには、インデックス定義 (`/oak:index/definitionname`) は、 `ui.apps` Git および Cloud Manager のデプロイメントプロセスを通じて。 FileVault フィルター、例えば `ui.apps/src/main/content/META-INF/vault/filter.xml` では、カスタムおよびカスタマイズ済みの各インデックスを、`<filter root="/oak:index/damAssetLucene-7-custom-1"/>` のように個別にリストします。その後、カスタムまたはカスタマイズされたインデックス定義自体がファイルに保存されます `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`、次のようにします。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -103,7 +103,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ### プロジェクト設定
 
-Jackrabbit Filevault Maven パッケージプラグインを使用するバージョンに応じて、プロジェクトでさらに設定が必要になります。Jackrabbit Filevault Maven パッケージプラグインバージョン **1.1.6** 以降を使用する場合は、`pom.xml` ファイルに `filevault-package-maven-plugin` のプラグイン設定の `configuration/validatorsSettings` （`jackrabbit-nodetypes` の直前）に、次のセクションを記述する必要があります。
+Jackrabbit Filevault Maven パッケージプラグインを使用するバージョンに応じて、プロジェクトでさらに設定が必要になります。Jackrabbit Filevault Maven パッケージプラグインバージョンの使用時 **1.1.6** またはそれ以降の場合は、ファイル `pom.xml` には、 `filevault-package-maven-plugin`、 `configuration/validatorsSettings` ( `jackrabbit-nodetypes`):
 
 ```xml
 <jackrabbit-packagetype>
@@ -113,7 +113,7 @@ Jackrabbit Filevault Maven パッケージプラグインを使用するバー�
 </jackrabbit-packagetype>
 ```
 
-また、この場合、`vault-validation` バージョンは、新しいバージョンにアップグレードする必要があります。
+また、この場合、 `vault-validation` バージョンを新しいバージョンにアップグレードする必要があります：
 
 ```xml
 <dependency>
@@ -123,7 +123,7 @@ Jackrabbit Filevault Maven パッケージプラグインを使用するバー�
 </dependency>
 ```
 
-そして、`ui.apps.structure/pom.xml` と `ui.apps/pom.xml` の `filevault-package-maven-plugin` の設定で、 `allowIndexDefinitions` と `noIntermediateSaves` を有効にする必要があります。オプション `noIntermediateSaves` は、インデックス設定が自動的に追加されることを保証します。
+次に、 `ui.apps.structure/pom.xml` および `ui.apps/pom.xml`、 `filevault-package-maven-plugin` は、 `allowIndexDefinitions` および `noIntermediateSaves` 有効。 オプション `noIntermediateSaves` は、インデックス設定が自動的に追加されることを保証します。
 
 ```xml
 <groupId>org.apache.jackrabbit</groupId>
@@ -137,19 +137,20 @@ Jackrabbit Filevault Maven パッケージプラグインを使用するバー�
     ...
 ```
 
-`ui.apps.structure/pom.xml` で、このプラグインの `filters` セクションには、次のようにフィルタールートを含める必要があります。
+In `ui.apps.structure/pom.xml`、 `filters` このプラグインのセクションには、次のようにフィルタルートを含める必要があります。
 
 ```xml
 <filter><root>/oak:index</root></filter>
 ```
 
-新しいインデックス定義を追加したら、Cloud Manager を使用して新しいアプリケーションをデプロイする必要があります。デプロイメント時に、オーサー用とパブリッシュ用に、それぞれ MongoDB と Azure Segment Store にインデックス定義を追加（必要に応じて結合）する 2 つのジョブが開始されます。 スイッチが実行される前に、基になるリポジトリのインデックスが新しいインデックス定義で再作成されます。
+新しいインデックス定義を追加した後、新しいアプリケーションは Cloud Manager を使用してデプロイされます。 デプロイメント時には、オーサー用とパブリッシュ用の MongoDB と Azure Segment Store に、それぞれインデックス定義を追加（必要に応じて結合）する 2 つのジョブが開始されます。 スイッチが実行される前に、基になるリポジトリのインデックスが新しいインデックス定義で再作成されます。
 
 ### メモ
 
 失敗の検証で次のエラーが発生した場合 <br>
 `[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"` <br>
 その後、次のいずれかの手順に従って問題を修正できます。 <br>
+
 1. filevault をバージョン 1.0.4 にダウングレードし、次の内容を最上位 pom に追加します。
 
 ```xml
@@ -205,13 +206,13 @@ Jackrabbit Filevault Maven パッケージプラグインを使用するバー�
 
 >[!TIP]
 >
->AEM as a Cloud Service を使用する場合に必要なパッケージ構造の詳細については、 [AEM プロジェクト構造](/help/implementing/developing/introduction/aem-project-content-package-structure.md) ドキュメントを参照してください。
+>AEM as a Cloud Serviceに必要なパッケージ構造の詳細については、このドキュメントを参照してください。 [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ## ローリングデプロイメントを使用したインデックス管理 {#index-management-using-rolling-deployments}
 
 ### インデックス管理とは {#what-is-index-management}
 
-インデックス管理とは、インデックスの追加、削除、変更を行うことです。インデックスの&#x200B;*定義*&#x200B;変更はすぐにできますが、変更を適用する（「インデックスの構築」、または既存インデックスの場合は「インデックスの再構築」と呼ばれる）には時間が必要です。これは即時には実行されません。インデックスを作成するデータをリポジトリーでスキャンする必要があります。
+インデックス管理とは、インデックスの追加、削除、変更を行うことです。インデックスの&#x200B;*定義*&#x200B;変更はすぐにできますが、変更を適用する（「インデックスの構築」、または既存インデックスの場合は「インデックスの再構築」と呼ばれる）には時間が必要です。これは即時には実行されません。インデックスを作成するデータをリポジトリでスキャンする必要があります。
 
 ### ローリングデプロイメントとは {#what-are-rolling-deployments}
 
@@ -235,11 +236,11 @@ Jackrabbit Filevault Maven パッケージプラグインを使用するバー�
 
 ### ローリングデプロイメントを使用しないインデックス管理 {#index-management-without-rolling-deployments}
 
-開発中、またはオンプレミスインストールを使用する場合は、インデックスを実行時に追加、削除または変更できます。インデックスは、利用可能になるとすぐに使用されます。まだ古いバージョンのアプリケーションでインデックスを使用することを想定していない場合は、通常、予定されたダウンタイム中にインデックスが構築されます。インデックスの削除時や、既存のインデックスの変更時にも同じことが起こります。インデックスを削除すると、ただちに使用できなくなります。
+開発時、またはオンプレミスインストールを使用する場合、インデックスは実行時に追加、削除または変更できます。 インデックスが使用可能な場合は、インデックスが使用されます。 古いバージョンのアプリケーションでインデックスがまだ使用されていない場合、インデックスは通常、予定されたダウンタイム中に構築されます。 インデックスの削除時や、既存のインデックスの変更時にも同じことが起こります。インデックスを削除すると、削除されたインデックスは使用できなくなります。
 
 ### ローリングデプロイメントによるインデックス管理 {#index-management-with-rolling-deployments}
 
-ローリングデプロイメントでは、ダウンタイムは発生しません。 更新中に、古いバージョン（例えば、バージョン 1）と新しいバージョン（バージョン 2）の両方が、同じリポジトリに対して同時に実行されます。 バージョン 1 で特定のインデックスを使用可能にする必要がある場合は、バージョン 2 でこのインデックスを削除しないでください。後でインデックスを削除する必要があります（例：バージョン 3）。その時点で、アプリケーションのバージョン 1 が実行されなくなります。 また、バージョン 2 が実行中で、バージョン 2 のインデックスが使用可能でも、バージョン 1 が正常に動作するようにアプリケーションを作成してください。
+ローリングデプロイメントでは、ダウンタイムは発生しません。 更新中のしばらくの間、アプリケーションの古いバージョン（バージョン 1 など）と新しいバージョン（バージョン 2 など）の両方が、同じリポジトリに対して同時に実行されます。 バージョン 1 で特定のインデックスを使用可能にする必要がある場合は、バージョン 2 でこのインデックスを削除しないでください。後でインデックスを削除する必要があります（例：バージョン 3）。その時点で、アプリケーションのバージョン 1 が実行されなくなります。 また、バージョン 2 が実行中で、バージョン 2 のインデックスが使用可能でも、バージョン 1 が正常に動作するようにアプリケーションを作成してください。
 
 新しいバージョンへのアップグレードが完了した後、システムが古いインデックスをガベージコレクションできます。古いインデックスは、ロールバックを高速化するために、しばらくの間保持される場合があります（ロールバックが必要な場合）。
 
@@ -247,7 +248,7 @@ Jackrabbit Filevault Maven パッケージプラグインを使用するバー�
 
 >[!NOTE]
 >
->`<indexName>-custom-<customerVersionNumber>` は、既存のインデックスの代わりとしてマークするために、AEM as a Cloud Service で必要です。
+>この `<indexName>-custom-<customerVersionNumber>` は、既存のインデックスの代わりとしてマークするためにAEM as a Cloud Serviceで必要です。
 
 | 索引 | 標準提供インデックス | バージョン 1 で使用 | バージョン 2 で使用 |
 |---|---|---|---|
@@ -261,7 +262,7 @@ Jackrabbit Filevault Maven パッケージプラグインを使用するバー�
 
 ### 標準提供のインデックスの変更 {#changes-to-out-of-the-box-indexes}
 
-アドビが「damAssetLucene」や「cqPageLucene」のような標準提供のインデックスを変更すると、`damAssetLucene-2` または `cqPageLucene-2` という名前の新しいインデックスが作成されます。また、インデックスが既にカスタマイズされている場合は、次のように、カスタマイズされたインデックス定義が標準提供のインデックス変更と結合されます。変更のマージは自動的に行われます。つまり、標準提供のインデックスが変更された場合、何もする必要はありません。ただし、後でインデックスを再びカスタマイズすることは可能です。
+Adobeが「damAssetLucene」や「cqPageLucene」などの標準のインデックスを変更した後、という名前の新しいインデックスが作成されます。 `damAssetLucene-2` または `cqPageLucene-2` が作成されました。 また、インデックスが既にカスタマイズされている場合は、次に示すように、カスタマイズされたインデックス定義と標準のインデックスの変更が結合されます。 変更のマージは自動的に行われます。つまり、標準提供のインデックスが変更された場合、何もする必要はありません。 ただし、後でインデックスを再びカスタマイズすることは可能です。
 
 | 索引 | 標準提供インデックス | バージョン 2 で使用 | バージョン 3 で使用 |
 |---|---|---|---|
@@ -272,25 +273,25 @@ Jackrabbit Filevault Maven パッケージプラグインを使用するバー�
 
 ### 現在の制限事項 {#current-limitations}
 
-インデックス管理は現在、`compatVersion` が `2` に設定された `lucene` 型のインデックスに対してのみサポートされています。内部的には、例えば Elasticsearch インデックスなどの他のインデックスが設定され、クエリに使用される場合があります。`damAssetLucene` インデックスに対して書き込まれるクエリは、AEM as a Cloud Serviceでは、実際には、このインデックスの Elasticsearch バージョンに対して実行される場合があります。 この違いは、アプリケーションのエンドユーザーには見えませんが、`explain` 機能などの特定のツールでは異なるインデックスがレポートされます。Lucene インデックスと Elasticsearch インデックスの違いについては、[Apache Jackrabbit Oak の Elasticsearch ドキュメント](https://jackrabbit.apache.org/oak/docs/query/elastic.html)を参照してください。顧客が Elasticsearch インデックスを直接設定することはできず、またその必要もありません。
+インデックス管理は、型のインデックスに対してのみサポートされます `lucene`を `compatVersion` に設定 `2`. 内部的には、例えば Elasticsearch インデックスなどの他のインデックスが設定され、クエリに使用される場合があります。`damAssetLucene` インデックスに対して書き込まれるクエリは、AEM as a Cloud Serviceでは、実際には、このインデックスの Elasticsearch バージョンに対して実行される場合があります。 この違いは、アプリケーションのエンドユーザーには見えませんが、 `explain` 機能は、異なるインデックスをレポートします。 Lucene インデックスと Elasticsearch インデックスの違いについては、[Apache Jackrabbit Oak の Elasticsearch ドキュメント](https://jackrabbit.apache.org/oak/docs/query/elastic.html)を参照してください。顧客が Elasticsearch インデックスを直接設定することはできず、またその必要もありません。
 
-ビルトインアナライザー（製品に付属しているアナライザー）のみがサポートされています。カスタムアナライザーはサポートされていません。
+組み込みのアナライザーのみがサポートされます（つまり、製品に付属しているアナライザー）。 カスタムアナライザーはサポートされていません。
 
-最高のオペレーショナルパフォーマンスを得るには、インデックスを過度に大きくしないようにします。 すべてのインデックスの合計サイズを目安にすることができます。開発環境でカスタムインデックスを追加し、標準インデックスを調整した後に、このサイズが 100% を超えて増加する場合は、カスタムインデックスの定義を調整する必要があります。AEM as a Cloud Service を使用すると、システムの安定性とパフォーマンスに悪影響を与える可能性のあるインデックスのデプロイメントを防ぐことができます。
+最高のオペレーショナルパフォーマンスを得るには、インデックスを過度に大きくしないようにします。 すべてのインデックスの合計サイズは、ガイドとして使用できます。 開発環境で標準インデックスを調整した後、このサイズが 100%以上増加し、カスタムインデックス定義を調整する必要があります。 AEM as a Cloud Service を使用すると、システムの安定性とパフォーマンスに悪影響を与える可能性のあるインデックスのデプロイメントを防ぐことができます。
 
 ### インデックスの追加 {#adding-an-index}
 
-新しいバージョン以降のアプリケーションで使用する `/oak:index/acme.product-custom-1` という名前の完全カスタムインデックスを追加するには、インデックスを以下のように設定する必要があります。
+という名前の完全なカスタムインデックスを追加するには `/oak:index/acme.product-custom-1`を新しいバージョンのアプリケーション以降で使用するには、インデックスを次のように設定する必要があります。
 
 `acme.product-1-custom-1`
 
-これは、インデックス名の前にカスタム識別子を付け、その後にドット（**`.`**）を付けることで機能します。識別子の長さは 2～5 文字です。
+この設定は、インデックス名の前にカスタム識別子を付け、その後にドット (**`.`**) をクリックします。 識別子の長さは 2 ～ 5 文字にする必要があります。
 
-これにより、新しいバージョンのアプリケーションでのみインデックスが使用されます。
+上記のように、この設定では、新しいバージョンのアプリケーションでのみインデックスが使用されます。
 
 ### インデックスの変更 {#changing-an-index}
 
-既存のインデックスを変更する場合は、変更したインデックス定義を使用して新しいインデックスを追加する必要があります。例えば、既存のインデックス `/oak:index/acme.product-custom-1` が変更されるとします。古いインデックスは `/oak:index/acme.product-custom-1` 下に、新しいインデックスは `/oak:index/acme.product-custom-2` 下に格納されます。
+既存のインデックスを変更する場合は、変更したインデックス定義を使用して新しいインデックスを追加する必要があります。 例えば、既存のインデックス `/oak:index/acme.product-custom-1` が変更されるとします。古いインデックスは `/oak:index/acme.product-custom-1` 下に、新しいインデックスは `/oak:index/acme.product-custom-2` 下に格納されます。
 
 アプリケーションの古いバージョンでは、次の設定を使用します。
 
@@ -302,17 +303,17 @@ Jackrabbit Filevault Maven パッケージプラグインを使用するバー�
 
 >[!NOTE]
 >
->AEM as a Cloud Service のインデックス定義が、ローカル開発インスタンスのインデックス定義と完全には一致しない場合があります。開発インスタンスには Tika 設定がありませんが、AEM as a Cloud Service インスタンスには Tika 設定があります。Tika 設定でインデックスをカスタマイズする場合は、その Tika 設定を保持してください。
+>AEM as a Cloud Service のインデックス定義が、ローカル開発インスタンスのインデックス定義と完全には一致しない場合があります。開発インスタンスには Tika 設定がありませんが、AEMas a Cloud Serviceインスタンスには Tika 設定があります。 Tika 設定でインデックスをカスタマイズする場合は、Tika 設定を保持します。
 
 ### 変更の取り消し {#undoing-a-change}
 
-インデックス定義の変更を元に戻す必要が生じる場合があります。誤って変更が加えられたり、変更が不要になったなどの理由によります。例えば、インデックス定義 `damAssetLucene-8-custom-3` は誤って作成され、既にデプロイされているとします。そのため、以前のインデックス定義 `damAssetLucene-8-custom-2` に戻す必要があります。それには、前のインデックス `damAssetLucene-8-custom-2` の定義を含んだ `damAssetLucene-8-custom-4` という新しいインデックスを追加する必要があります。
+インデックス定義の変更を元に戻す必要が生じる場合があります。 誤って変更が加えられたり、変更が不要になったなどの理由によります。例えば、インデックス定義 `damAssetLucene-8-custom-3` は誤って作成され、既にデプロイされているとします。そのため、以前のインデックス定義 `damAssetLucene-8-custom-2` に戻す必要があります。これをおこなうには、 `damAssetLucene-8-custom-4` 前のインデックスの定義を含む `damAssetLucene-8-custom-2`.
 
 ### インデックスの削除 {#removing-an-index}
 
 次の操作は、カスタムインデックスにのみ適用されます。製品インデックスは AEM で使用されるので、削除できません。
 
-新しいバージョンのアプリケーションでインデックスを削除する場合は、新しい名前で空のインデックス（使用されることがなく、データを含まない空のインデックス）を定義できます。この例では、`/oak:index/acme.product-custom-3` という名前を付けることができます。これにより、`/oak:index/acme.product-custom-2` インデックスが置き換えられます。システムによって `/oak:index/acme.product-custom-2` が削除された後は、空のインデックス `/oak:index/acme.product-custom-3` も削除できます。このような空のインデックスの例を次に示します。
+新しいバージョンのアプリケーションでインデックスが削除された場合は、新しい名前で空のインデックス（使用されることがなく、データを含まない空のインデックス）を定義できます。 この例では、 `/oak:index/acme.product-custom-3`. この名前は、インデックスを置き換えます `/oak:index/acme.product-custom-2`. 後 `/oak:index/acme.product-custom-2` がシステムによって削除された場合、空のインデックス `/oak:index/acme.product-custom-3` その後、を削除できます。 このような空のインデックスの例を次に示します。
 
 ```xml
 <acme.product-custom-3
@@ -339,6 +340,6 @@ Jackrabbit Filevault Maven パッケージプラグインを使用するバー�
 
 ## インデックスとクエリの最適化 {#index-query-optimizations}
 
-Apache Jackrabbit Oak では、柔軟なインデックス設定により検索クエリを効率的に処理できます。大規模なリポジトリーでは、インデックスは特に重要です。すべてのクエリに適切なインデックスを付与するようにしてください。適切なインデックスのないクエリを実行すると、何千ものノードが読み取られる可能性があり、その場合は警告として記録されます。
+Apache Jackrabbit Oak では、柔軟なインデックス設定により検索クエリを効率的に処理できます。大規模なリポジトリーでは、インデックスは特に重要です。すべてのクエリが適切なインデックスでバックアップされていることを確認します。 適切なインデックスのないクエリは、数千のノードを読み取り、警告として記録される場合があります。
 
-クエリとインデックスを最適化する方法については、[このドキュメント](query-and-indexing-best-practices.md)を参照してください。
+詳しくは、 [このドキュメント](query-and-indexing-best-practices.md) クエリとインデックスを最適化する方法について詳しくは、を参照してください。

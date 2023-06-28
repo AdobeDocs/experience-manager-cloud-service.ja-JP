@@ -2,10 +2,10 @@
 title: ページの差分
 description: ページの差分機能を使用すると、2 つのページを並べて比較し、違いを強調表示するのに便利です。
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 37%
+source-wordcount: '612'
+ht-degree: 38%
 
 ---
 

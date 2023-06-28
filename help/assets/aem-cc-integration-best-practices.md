@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3496'
-ht-degree: 73%
+source-wordcount: '3491'
+ht-degree: 72%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 73%
 
 Adobe Experience Manager Assets は、Adobe Creative Cloud と統合できるデジタルアセット管理（DAM）ソリューションです。DAM ユーザーがクリエイティブチームと協力してコンテンツ作成プロセスでのコラボレーションを効率化できるようにサポートします。
 
-Adobe Creative Cloudは、クリエイティブチームがデジタルアセットを作成するのに役立つソリューションやサービスのエコシステムを提供しています。 デスクトップおよびモバイルアプリケーション、デスクトップ同期や Web エクスペリエンスを備えたストレージなどのクラウドサービス、Adobe Stockなどのマーケットプレイスが含まれます。
+Adobe Creative Cloudは、クリエイティブチームがデジタルアセットを作成するのに役立つソリューションやサービスのエコシステムを提供しています。 デスクトップおよびモバイルアプリケーション、デスクトップ同期機能を備えたストレージや Web エクスペリエンスを備えたクラウドサービス、Adobe Stockなどのマーケットプレイスが含まれます。
 
-使用例に基づいてデスクトップとエンタープライズクラスの DAM の間で選択すべき統合や、つながるワークフローに関連するベストプラクティスについては、このドキュメントで説明します。
+ユースケースに基づいてデスクトップとエンタープライズクラスの DAM の間で選択すべき統合や、つながるワークフローに関連するベストプラクティスについて、このドキュメントでは説明します。
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Adobe Creative Cloudは、クリエイティブチームがデジタルアセッ
 
 | 要件 | 使用例 | 関係するサーフェス |
 |---|---|---|
-| デスクトップ上でクリエイティブプロフェッショナル向けのエクスペリエンスを簡素化する | クリエイティブプロフェッショナル（より広い意味では、ネイティブアセット作成アプリケーションで作業しているデスクトップユーザー）向けに、DAM（[!DNL Assets]）で管理されるアセットへのアクセスを効率化します。変更の検出、使用（開く）、編集、Experience Manager への保存のほか、新しいファイルのアップロードを容易にわかりやすく行える方法が必要です。 | Windows または Mac デスクトップ、Creative Cloud アプリ |
+| デスクトップ上でクリエイティブプロフェッショナル向けのエクスペリエンスを簡素化する | クリエイティブプロフェッショナル（より広い意味では、ネイティブアセット作成アプリケーションで作業しているデスクトップユーザー）向けに、DAM（[!DNL Assets]）で管理されるアセットへのアクセスを効率化します。Experience Managerの検出、使用（開く）、編集、変更内容の保存、新しいファイルのアップロードを簡単かつ簡単におこなう方法が必要です。 | Windows または Mac デスクトップ、Creative Cloud アプリ |
 | すぐに使用できる高品質なアセットを [!DNL Adobe Stock] から提供する | マーケターは、アセットの調達と検出を支援することでコンテンツ作成プロセスの促進に貢献します。クリエイティブプロフェッショナルは、承認されたアセットをクリエイティブツール内から直接使用します。 | [!DNL Assets]、[!DNL Adobe Stock] マーケットプレイス、メタデータフィールド |
 | 組織別のアセットの配布および共有 | 内部の部門やローカルの支店、外部のパートナー、ディストリビューター、代理店は、親組織が共有する承認済みアセットを使用します。 組織では、作成したアセットを安全かつシームレスに共有して幅広く再利用したいと考えています。 | [!DNL Brand Portal]、[!DNL Asset Share Commons] |
 | アップロードされたアセットの事前定義済みバリエーションを自動的に生成する | 事前に定義されたアクションに対してアドビ固有のメディア処理および変換テクノロジーを利用して、アセットを自動的に処理します。カスタムロジックを作成して、API とアセットマイクロサービスを使用して独自のアクションを定義します。 | [!DNL Assets] ユーザーインターフェイス |
@@ -43,7 +43,7 @@ Adobe Creative Cloudは、クリエイティブチームがデジタルアセッ
 
 | 関係するペルソナの価値提案 | Adobe | 関係するサーフェス |
 |---|---|---|
-| クリエイティブユーザーは、[!DNL Creative Cloud] アプリを使用しながら、[!DNL Experience Manager] からアセットを検出し、それらを開いて使用したり、編集して変更を [!DNL Experience Manager] にアップロードしたり、新しいファイルを [!DNL Experience Manager] にアップロードできます。 | [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) | Photoshop、Illustrator、InDesign. |
+| クリエイティブユーザーがからアセットを検出する [!DNL Experience Manager]、開いて使用する、変更を編集し、次の場所にアップロードする、 [!DNL Experience Manager]を開き、新しいファイルを次の場所にアップロードします。 [!DNL Experience Manager]そして、彼らを置き去りにせずに [!DNL Creative Cloud] アプリを使用します。 | [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) | Photoshop、Illustrator、InDesign. |
 | ビジネスユーザーは、アセットのオープンと使用、編集と [!DNL Experience Manager] への変更内容のアップロード、[!DNL Experience Manager] への新しいファイルのアップロードをデスクトップ環境から簡単に行えます。汎用の統合を使用して、アドビ以外のアセットも含め、あらゆるアセットタイプをネイティブデスクトップアプリケーションで開きます。 | [[!DNL Experience Manager] デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja) | Windows および Mac デスクトップ上の Experience Manager デスクトップアプリケーション |
 | マーケターとビジネスユーザーは、Experience Manager 内から Adobe Stock アセットの検出、プレビュー、ライセンス取得と保存、管理を行えます。ライセンスを取得し保存したアセットは、限定された Adobe Stock メタデータを提供してガバナンスの強化に役立ちます。 | [Experience Manager と Adobe Stock の統合](aem-assets-adobe-stock.md) | [!DNL Experience Manager] Web インターフェイス |
 | デジタル製品デザイナーとマーケターとのコラボレーションを改善できます。デザイナーが Adobe XD キャンバス上のデザインとワイヤフレームモデルでデジタルアセットを使用できます。 | [[!DNL Adobe Asset Link] （ [!DNL Adobe XD] 用）](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
@@ -119,7 +119,7 @@ Experience Manager と Creative Cloud の統合に関するベストプラクテ
 * **アセットを DAM に保存する理由とタイミングを理解する：**&#x200B;更新を組織内の広範なチームで利用できるようにする必要があります。
 * **共有するアセットの量に注意を払う：**&#x200B;アセットを配布する場合、ガバナンスとセキュリティが最も重要な要素になる可能性があります。Brand Portal のように、大規模なアセット配布を想定したツールの使用を検討してください。
 * **アセットのライフサイクルを理解する：**&#x200B;組織内のそれぞれのチームでアセットがどのように処理されるかを理解します。
-* **アセットへの頻繁な保存を慎重に処理する：** Adobe Asset Link では、PS、AI、ID を使用して自動的に処理します。他のアプリケーションの場合は、すべての変更が DAM で必要な場合を除き、マップされたフォルダーや共有フォルダーでは WIP 状態のタスクを実行しないでください。
+* **アセットへの頻繁な保存を慎重に処理する：** Adobe Asset Link では、PS、AI、ID を使用して自動的に処理します。他のアプリケーションの場合は、すべての変更が DAM で必要な場合を除き、マッピングされたフォルダーや共有フォルダーでは WIP 状態のタスクを実行しないでください
 
 ### Experience Manager Assets からの Adobe Stock アセットへのアクセス {#access-to-adobe-stock-assets-from-aem-assets}
 

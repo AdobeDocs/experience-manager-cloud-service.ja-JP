@@ -2,10 +2,10 @@
 title: SPA ブループリント
 description: このドキュメントでは、AEM内に編集可能なSPAコンポーネントを実装するためにSPAフレームワークが満たす必要がある、フレームワークに依存しない一般的な契約について説明します。
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2056'
-ht-degree: 92%
+ht-degree: 89%
 
 ---
 
@@ -49,7 +49,7 @@ NPM パッケージ [@adobe/aem-spa-model-manager](https://www.npmjs.com/package
 
 #### コンポーネントマッピングの動的モデル {#dynamic-model-to-component-mapping}
 
-コンポーネントマッピングの動的モデルが AEM 用の Javascript SPA SDK でどのようにおこなわれるかについて詳しくは、SPA の「[コンポーネントマッピングの動的モデル」の記事を参照してください](model-to-component-mapping.md)。
+コンポーネントマッピングの動的モデルがAEM用の JavaScript SPA SDK でどのようにおこなわれるかについて詳しくは、この記事を参照してください [SPAの動的モデルとコンポーネントのマッピング](model-to-component-mapping.md).
 
 ### フレームワーク固有のレイヤー {#framework-specific-layer}
 
@@ -74,7 +74,7 @@ SPA コンポーネントは、ページモデルと同期する必要があり�
 * `:hierarchyType`：リソースの階層タイプ。`PageModelManager` は現在、ページタイプをサポートしています
 
 * `:items`：現在のリソースの子コンテンツリソース（ネストされた構造、コンテナにのみ存在）
-* `:itemsOrder`：子の順番付きリスト。JSON マップオブジェクトでは、フィールドの順番は保証されません。マップと現在の配列の両方を利用することで、API の利用者は両方の構造のメリットが得られます
+* `:itemsOrder`：子の順番付きリスト。JSON マップオブジェクトでは、フィールドの順序は保証されません。 マップと現在の配列の両方を利用することで、API の利用者は両方の構造のメリットが得られます
 * `:path`：項目のコンテンツパス（ページを表す項目に存在）
 
 [AEM コンテンツサービスの利用](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja)も参照してください。
@@ -106,7 +106,7 @@ npm モジュール：[@adobe/aem-angular-editable-components](https://www.npmjs
 
 プロジェクトコンポーネントは、モデルのフラグメントへのアクセスをモデルプロバイダーに委任する必要があります。次に、モデルプロバイダーは、モデルの指定したフラグメントに対する変更をリッスンし、更新されたモデルを委任コンポーネントに返します。
 
-これをおこなうには、モデルプロバイダーを [`PageModelManager`](#pagemodelmanager) に登録する必要があります。次に、変更が発生すると、その変更を受け取り、更新されたデータが委任コンポーネントに渡されます。慣例により、モデルのフラグメントを伝達する委任コンポーネントで使用可能になるプロパティは、`cqModel` という名前が付けられます。このプロパティはコンポーネントに自由に提供できますが、フレームワークアーキテクチャとの統合、検出可能性、使いやすさなどの側面を考慮する必要があります。
+これをおこなうには、モデルプロバイダーを [`PageModelManager`](#pagemodelmanager) に登録する必要があります。次に、変更が発生すると、その変更を受け取り、更新されたデータを委任コンポーネントに渡します。 慣例により、モデルのフラグメントを伝達する委任コンポーネントで使用可能になるプロパティは、`cqModel` という名前が付けられます。このプロパティはコンポーネントに自由に提供できますが、フレームワークアーキテクチャとの統合、検出可能性、使いやすさなどの側面を考慮する必要があります。
 
 ### コンポーネントの HTML デコレーター {#the-component-html-decorator}
 

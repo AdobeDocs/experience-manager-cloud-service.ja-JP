@@ -2,10 +2,10 @@
 title: 登録、ログイン、ユーザープロファイル
 description: AEM as a Cloud Service の登録、ログイン、ユーザーデータおよびグループ同期について説明します
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 90%
+source-wordcount: '1167'
+ht-degree: 88%
 
 ---
 
@@ -100,7 +100,7 @@ AEM as a Cloud Service では cookie ベースのスティッキーセッショ�
 
 エンドユーザーデータは、CRM などのサードパーティベンダーに送信し、ユーザーが AEM にログインする時に API を介して取得できます。また、AEM ユーザーのプロファイルノードで保持（または更新）され、必要に応じて AEM で使用できます。
 
-サードパーティのサービスにリアルタイムでアクセスしてプロファイル属性を取得することはできますが、これが実質的に AEM のリクエスト処理に影響を与えないようにすることが重要です。
+サードパーティのサービスにリアルタイムでアクセスしてプロファイル属性を取得することは可能ですが、AEMでのリクエスト処理に大きな影響を与えないようにすることが重要です。
 
 ## 権限（クローズドユーザーグループ） {#permissions-closed-user-groups}
 

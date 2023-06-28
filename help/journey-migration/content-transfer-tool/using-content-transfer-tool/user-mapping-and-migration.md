@@ -2,10 +2,10 @@
 title: ユーザーマッピングとプリンシパルの移行
 description: ユーザーマッピングとプリンシパル移行の概要
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: caa04391077d594a828a42a1a5a6a03daa107168
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 24%
+source-wordcount: '831'
+ht-degree: 23%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 24%
 
 Adobe Experience Manager(AEM)as a Cloud Serviceへの移行プロセスの一環として、ユーザーとグループを既存のAEMシステムからAEM as a Cloud Serviceに移行する必要があります。 このタスクはコンテンツ転送ツールで実行されます。
 
-AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用したオーサー層へのアクセスが完全に統合されていることです。このプロセスでは、 [Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) ユーザーとユーザーグループを管理するための ユーザープロファイル情報は、すべてのAdobeクラウドアプリケーションに対してシングルサインオンを提供するAdobeIdentity Management System(IMS) で一元化されます。 詳しくは、[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management) を参照してください。この変更により、Cloud Serviceオーサーインスタンスでの重複ユーザーを避けるために、既存のユーザーをそれぞれの IMS ID にマッピングする必要があります。 従来の AEM のグループは IMS のグループとは基本的に異なるので、グループはマッピングされませんが、移行が完了した後で 2 つのグループセットを調整する必要があります。
+AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用したオーサー層へのアクセスが完全に統合されていることです。このプロセスでは、 [Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) ユーザーとユーザーグループを管理するための ユーザープロファイル情報は、すべてのAdobeクラウドアプリケーションに対してシングルサインオンを提供するAdobeIdentity Management System(IMS) で一元化されます。 詳しくは、 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). この変更により、Cloud Serviceオーサーインスタンスでの重複ユーザーを避けるために、既存のユーザーをそれぞれの IMS ID にマッピングする必要があります。 従来の AEM のグループは IMS のグループとは基本的に異なるので、グループはマッピングされませんが、移行が完了した後で 2 つのグループセットを調整する必要があります。
 
 ## ユーザー移行の詳細 {#user-migration-detail}
 

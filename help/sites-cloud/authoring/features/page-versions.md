@@ -2,7 +2,7 @@
 title: ページバージョンの処理
 description: ページのバージョンの作成、比較および復元
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1502'
 ht-degree: 40%
@@ -194,7 +194,7 @@ ht-degree: 40%
 
 >[!TIP]
 >
->[タイムワープは、未来をプレビューするローンチと組み合わせて使用することもできます。](/help/sites-cloud/authoring/launches/preview.md)
+>[タイムワープは、未来をプレビューするローンチと組み合わせて使用することもできます](/help/sites-cloud/authoring/launches/preview.md)。
 
 コンテンツの作成は継続的で協調的なプロセスなので、コンテンツの変更内容を理解できるように、公開された Web サイトを作成者が経時的に追跡できるようにすることがタイムワープの目的です。 この機能では、ページのバージョンを使用してパブリッシュ環境の状態を判断します。
 

@@ -2,10 +2,10 @@
 title: Cloud Manager 環境変数
 description: 標準環境変数は、Cloud Manager を介して設定および管理でき、ランタイム環境に提供され、OSGi 設定で使用できます。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 93%
+source-wordcount: '1018'
+ht-degree: 90%
 
 ---
 
@@ -88,7 +88,7 @@ ht-degree: 93%
 
    ![変数の編集](assets/edit-variable.png)
 
-1. 必要な設定の変更をすべて行ったら、「**保存**」を選択します。
+1. 必要な設定の変更をすべて行ったら、「 」を選択します。 **保存**.
 
 [変数を追加する場合と同様に、](#add-variables) ステータスが **更新中** のインジケーターがテーブルの上部と新しく更新された変数の横に表示され、環境が設定で更新されていることを示します。完了すると、更新された環境変数がテーブルに表示されます。
 
@@ -128,8 +128,8 @@ ht-degree: 93%
 
 ### OSGi 設定 {#osgi}
 
-[OSGi 設定](/help/implementing/deploying/configuring-osgi.md)では、通常の環境変数とシークレットの両方を使用できます。
+通常の環境変数とシークレットは、 [OSGi 設定](/help/implementing/deploying/configuring-osgi.md).
 
 ### パイプライン変数 {#pipeline}
 
-環境変数に加えて、ビルドフェーズで公開されるパイプライン変数もあります。[パイプライン変数について詳しくは、こちらを参照してください。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
+環境変数に加えて、ビルドフェーズで公開されるパイプライン変数もあります。[パイプライン変数の詳細はこちら](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).

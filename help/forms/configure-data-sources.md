@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2195'
+source-wordcount: '2192'
 ht-degree: 91%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 91%
 
    >[!NOTE]
    >
-   > [JDBC DataSourcePool を使用した SQL 接続](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=ja)を参照してください。
+   > 詳しくは、 [JDBC DataSourcePool を使用した SQL 接続](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=ja) を参照してください。
 
 1. 「**[!UICONTROL 保存]**」をタップして、設定内容を保存します。
 
@@ -170,7 +170,7 @@ RESTful サービス Open API 仕様バージョン 3.0 でサポートされて
 * リンク
 * 1 回の操作に対する異なる MIME タイプの異なるリクエスト本文
 
-詳細については、[OpenAPI 3.0 仕様](https://swagger.io/specification/v3/)を参照してください。
+詳しくは、 [OpenAPI 3.0 仕様](https://swagger.io/specification/v3/) を参照してください。
 
 ### パフォーマンスを最適化するためのフォームデータモデル HTTP クライアント設定 {#fdm-http-client-configuration}
 

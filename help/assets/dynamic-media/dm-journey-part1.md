@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3709'
-ht-degree: 98%
+source-wordcount: '3708'
+ht-degree: 94%
 
 ---
 
@@ -79,8 +79,8 @@ Dynamic Media について理解するための主なポイントの 1 つは、
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![同じプライマリ画像を様々なメディアに様々なサイズや形式で配信する Adobe Dynamic Media](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
-_Adobe Dynamic Media では、サイズや帯域幅に関係なく、一貫性のある高品質なエクスペリエンスをあらゆる画面に確実に配信します。_
+![AdobeDynamic Mediaは、異なるサイズと形式で異なるメディアに同じプライマリイメージを配信します](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+_AdobeDynamic Mediaは、サイズや帯域幅に関係なく、一貫性のある高品質なエクスペリエンスをあらゆる画面に提供します。_
 
 以下では、この「無限の可能性を持つ 1 つのプライマリアセットファイル」という概念が重要な理由を詳しく説明します。
 
@@ -182,7 +182,7 @@ Dynamic Media で解決されるもう 1 つのユースケースはビデオで
 
 顧客は、次のような問題を解決したいと考えて Dynamic Media にたどり着きます。
 
-&quot;_ビデオを手に入れ、大量のお金を費やして作り出しました。 しかし、そのビデオをページに配置したり配信したりするのは避けました。テストの結果、ビデオの品質を保証できないとわかったからです。実際に再生できるかさえ、わかりません。そして、最終的に、このことは当社のブランドに影響を及ぼし、当社の役割、さらにはコンバージョンにさえ影響を及ぼす可能性があります。_」
+&quot;_ビデオを作り上げるのに多額のお金を費やしました しかし、私たちはページに貼り付けたり、配信するのを避けました。私たちのテストでは、ビデオの品質を保証することはできず、本当に再生するかどうかも保証できないからです。 そして、最終的に、このことは当社のブランドに影響を及ぼし、当社の役割、さらにはコンバージョンにさえ影響を及ぼす可能性があります。_」
 
 Dynamic Media の解決策は、1 つのプライマリビデオファイルを基に、Dynamic Media のトランスコーディングプロセスを通じてあらゆるサイズのファイルを作成できるようにすることです。次に、それを Dynamic Media のインテリジェントビデオプレーヤーとペアリングします。このワークフローにより、ビデオをメインのランディングページで使用しているか、カテゴリページや製品詳細ページで使用しているかに関わらず、全体でビデオの一貫性が保たれ、高画質で配信されるようになります。
 
@@ -265,7 +265,7 @@ _選択した「ZoomVertical_light」ビューアプリセットに基づくア�
 
 ## オプション - 詳細情報
 
-このジャーニーの第 1 部では、様々な Dynamic Media トピックの基本を説明しました。ここで学んだ内容についてさらに詳しく知るには、以下の資料を参照してください。または、ジャーニーの第 2 部に進んでください。[この Dynamic Media ジャーニーの次のステップ](#whats-next)を参照してください。
+このジャーニーの第 1 部では、様々な Dynamic Media トピックの基本を説明しました。今読んだ内容の詳細を知りたい場合は、以下の資料を使用して、概念をより詳細に調べてください。 または、ジャーニーの第 2 部に進んでください。[この Dynamic Media ジャーニーの次のステップ](#whats-next)を参照してください。
 
 _Dynamic Media ヘルプトピック_
 
@@ -291,7 +291,7 @@ _Dynamic Media ビューア_
 
 ## この Dynamic Media ジャーニーの次のステップ {#whats-next}
 
-このジャーニーの第 2 部では、Dynamic Media URL をもう少し詳しく調べ、アセット配信時の動作について理解を深めます。また、アセットをレンダリングするための画像プリセットの作成に関する基本事項を詳しく説明し、画像セット、スピンセットおよび混在メディアセットとそれらの作成方法についても説明します。
+第 2 部では、このジャーニーでDynamic Mediaの URL を少し詳しく調べ、アセットが配信された際の動作をより深く理解します。 また、アセットをレンダリングするための画像プリセットの作成に関する基本、画像セット、スピンセット、混在メディアセットの作成方法についても説明します。
 
 [Dynamic Media ジャーニー：基本知識（第 2 部）](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d)に移動します。
 

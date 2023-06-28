@@ -2,10 +2,10 @@
 title: AEM 向け SPA の開発
 description: この記事では、フロントエンド開発者がSPA for AEMを開発する際に考慮すべき重要な質問について説明します。 また、開発済みのSPAをAEMにデプロイする際に留意すべき、SPAに関するAEMのアーキテクチャの概要も示します。
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2034'
-ht-degree: 49%
+source-wordcount: '2035'
+ht-degree: 48%
 
 ---
 
@@ -141,7 +141,7 @@ SPA for AEMを開発する際にフロントエンド開発者が従う必要の
 
    次の場合に `ModelRouter` が有効な場合、 `pushState` および `replaceState` 関数トリガーリクエストを `PageModelManager` をクリックして、モデルの欠落しているフラグメントを取得します。
 
-   の現在のバージョン `ModelRouter` は、Sling Model エントリポイントの実際のリソースパスを指す URL のみを使用できます。 バニティ URL やエイリアスの使用はサポートされません。
+   の現在のバージョン `ModelRouter` は、Sling Model エントリポイントの実際のリソースパスを指す URL のみを使用できます。 バニティー URL やエイリアスの使用はサポートされていません。
 
    `ModelRouter` は、無効にしたり、正規表現のリストを無視するように設定したりできます。
 

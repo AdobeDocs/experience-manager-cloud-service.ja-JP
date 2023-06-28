@@ -2,10 +2,10 @@
 title: ContextHub でのセグメント化の設定
 description: ContextHub を使用してセグメントを設定する方法を説明します。
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1695'
-ht-degree: 68%
+source-wordcount: '1691'
+ht-degree: 64%
 
 ---
 
@@ -21,7 +21,7 @@ AEM では、ユーザーエクスペリエンスを簡単にパーソナライ�
 
 ## セグメントへのアクセス {#accessing-segments}
 
-[オーディエンス](audiences.md)コンソールは、ContextHub のセグメントを管理したり、Adobe Target アカウントのオーディエンスを管理したりする目的で使用します。このドキュメントでは、ContextHub のセグメントの管理について取り上げます。
+この [オーディエンス](audiences.md) コンソールは、ContextHub のセグメントとAdobe Targetアカウントのオーディエンスを管理するために使用します。 このドキュメントでは、ContextHub のセグメントの管理について取り上げます。
 
 セグメントにアクセスするには、グローバルナビゲーションで&#x200B;**ナビゲーション／パーソナライズ機能／オーディエンス**&#x200B;を選択します。設定（WKND サイトなど）を選択すると、セグメントが表示されます。
 
@@ -65,7 +65,7 @@ AEM では、ユーザーエクスペリエンスを簡単にパーソナライ�
 
 >[!NOTE]
 >
->値の比較時に比較のデータタイプが設定されていない場合（つまり、自動検出に設定されている場合）、ContextHub のセグメント化エンジンでは、javascript と同じように値が比較されます。期待されたタイプに値がキャストされず、誤った結果が生じる可能性があります。 次に例を示します。
+>値の比較時に比較のデータタイプが設定されていない（つまり、自動検出に設定されている）場合、ContextHub のセグメント化エンジンでは、javascript と同様に値が比較されます。 期待されたタイプに値がキャストされず、誤った結果が生じる可能性があります。 次に例を示します。
 >
 >`null < 30 // will return true`
 >
@@ -92,7 +92,7 @@ AEM では、ユーザーエクスペリエンスを簡単にパーソナライ�
 
    ![セグメントの追加](../assets/contexthub-create-segment.png)
 
-1. 「**新しい ContextHub セグメント**」で、セグメントのタイトルと必要に応じてブースト値を入力し、「**作成**」をタップまたはクリックします。
+1. 内 **新しい ContextHub セグメント**、セグメントのタイトルと必要に応じてブースト値を入力し、をタップまたはクリックします。 **作成**.
 
    ![新しいセグメント](../assets/contexthub-new-segment.png)
 
@@ -175,7 +175,7 @@ AND および OR コンテナコンポーネントを使用すると、AEMで複
 
 1. スクリプトを `ContextHub.SegmentEngine.ScriptManager.register` に登録します。
 
-その他のプロパティに依存するスクリプトでは、`this.dependOn()` を呼び出す必要があります。例えば、スクリプトが `profile/age` に依存する場合は次のようになります。
+その他のプロパティに依存するスクリプトでは、`this.dependOn()` を呼び出す必要があります。例えば、スクリプトが `profile/age`:
 
 ```javascript
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
@@ -200,7 +200,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. フォルダーの「**タイトル**」と「**名前**」を指定します。
    * **タイトル**&#x200B;は内容がわかるように付けます。
    * この **名前** はリポジトリ内のノード名になります。
-      * タイトルに基づいて自動的に生成され、 [AEM命名規則。](/help/implementing/developing/introduction/naming-conventions.md)
+      * タイトルに基づいて自動的に生成され、 [AEM命名規則](/help/implementing/developing/introduction/naming-conventions.md).
       * 必要に応じて調整できます。
 
    ![フォルダーの作成](../assets/contexthub-create-folder.png)

@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service でのクライアントサイドライブラリの使用
 description: AEM では、クライアントサイドライブラリフォルダーが提供されています。これにより、クライアントサイドコード（clientlibs）をリポジトリーに格納し、カテゴリ別に整理して、それぞれのカテゴリのコードをクライアントに提供するタイミングと方法を定義できます。
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2562'
-ht-degree: 91%
+source-wordcount: '2556'
+ht-degree: 86%
 
 ---
 
@@ -21,17 +21,17 @@ AEM で clientlibs を使用する利点は次のとおりです。
 * [Dispatcher](/help/implementing/dispatcher/disp-overview.md) 経由でアクセス可能なパスで clientlibs を公開します。
 * 参照先ファイルまたは画像のパスの書き換えを許可します。
 
-clientlibs は、AEM から CSS と JavaScript を配信するための組み込みソリューションです。
+clientlibs は、AEMから CSS と JavaScript を配信するための組み込みソリューションです。
 
 >[!TIP]
 >
->AEM プロジェクト用に CSS と JavaScript を作成するフロントエンドデベロッパーは、 [AEM プロジェクトアーキタイプと、自動化されたフロントエンドビルドプロセス](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja)にも慣れている必要があります。
+>AEMプロジェクト用に CSS と JavaScript を作成するフロントエンドデベロッパーは、 [AEMプロジェクトアーキタイプと、自動化されたフロントエンドビルドプロセスが含まれます。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja)
 
 ## クライアントサイドライブラリとは {#what-are-clientlibs}
 
-サイトを処理するには、JavaScript と CSS に加えて、アイコンや Web フォントなどの静的リソースがクライアントサイドで必要です。clientlib は、そのようなリソースを（必要に応じてカテゴリ別に）参照し、提供する AEM のメカニズムです。
+サイトを処理するには、クライアント側で JavaScript と CSS およびアイコンや Web フォントなどの静的リソースが必要です。 clientlib は、そのようなリソースを（必要に応じてカテゴリ別に）参照し、提供する AEM のメカニズムです。
 
-AEM は、サイトの CSS と JavaScript を 1 つのファイルに 1 つの中央の場所に収集し、1 つのリソースのコピーのみが HTML 出力に含まれるようにします。これにより、配信の効率が最大化され、プロキシを介してリポジトリー内でリソースを一元的に管理でき、アクセスの安全性を確保できます。
+AEMは、サイトの CSS と JavaScript を 1 つのファイルに 1 つの中央の場所に収集し、1 つのHTML出力に 1 つのリソースのコピーのみが確実に含まれるようにします。 これにより、配信の効率が最大化され、プロキシを介してリポジトリー内でリソースを一元的に管理でき、アクセスの安全性を確保できます。
 
 ## AEM as a Cloud Service 向けフロントエンド開発 {#fed-for-aemaacs}
 
@@ -189,7 +189,7 @@ AEM のクライアントライブラリフォルダーでは、他にも多数�
 
 ### 依存関係へのリンク {#linking-to-dependencies}
 
-クライアントライブラリフォルダーのコードが他のライブラリを参照する場合、他のライブラリを依存関係として識別します。クライアントライブラリフォルダーを参照する `ui:includeClientLib` タグが原因で、HTML コードに生成したライブラリファイルへのリンクおよび依存関係が含まれます。
+クライアントライブラリフォルダーのコードが他のライブラリを参照する場合、他のライブラリを依存関係として識別します。この `ui:includeClientLib` クライアントライブラリフォルダーを参照するタグによって、HTMLコードに生成されたライブラリファイルへのリンクと依存関係が含まれます。
 
 依存関係は別の `cq:ClientLibraryFolder` でなければなりません。依存関係を識別するには、次の属性を持つプロパティを `cq:ClientLibraryFolder` ノードに追加します。
 

@@ -2,10 +2,10 @@
 title: AEM Developer Tools for Eclipse
 description: AEM Developer Tools for Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 95%
+source-wordcount: '1183'
+ht-degree: 94%
 
 ---
 
@@ -116,7 +116,7 @@ _Experience Manager Developer Tools for Eclipse_ には、Eclipse でのプロ�
 
    >[!NOTE]
    >
-   >新規インストールの場合（より具体的には、Maven の依存関係をダウンロードしたことがない場合）は、プロジェクトを作成するとエラーが表示されることがあります。この場合は、[無効なプロジェクト定義の解決](#resolving-invalid-project-definition)に記載されている手順に従ってください。
+   >新規インストールの場合（より具体的には、Maven の依存関係をダウンロードしたことがない場合）は、プロジェクトを作成するとエラーが表示されることがあります。この場合は、 [無効なプロジェクト定義の解決](#resolving-invalid-project-definition).
 
 ## 既存プロジェクトの読み込み方法 {#how-to-import-existing-projects}
 

@@ -2,10 +2,10 @@
 title: 環境の管理
 description: 作成できる環境のタイプと、Cloud Manager プロジェクト用の環境の作成方法について説明します。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2276'
-ht-degree: 37%
+source-wordcount: '2274'
+ht-degree: 36%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 37%
 1. 内 **その他の公開地域** 」ドロップダウンで、追加の地域を選択します。
 1. 選択した地域がドロップダウンの下に追加され、選択内容が示されます。
    * をタップまたはクリックします。 `X` をクリックします。
-1. 別の地域を **その他の公開地域** ドロップダウンして別の地域を追加します。
+1. 別の地域を **その他の公開地域** ドロップダウンを使用して別の地域を追加します。
 1. タップまたはクリック **保存** 環境を作成する準備が整ったら、次の手順に従います。
 
 ![複数の地域の選択](assets/select-multiple-regions.png)
@@ -163,7 +163,7 @@ Cloud Manager は、各AEMas a Cloud Service環境に（追加のパブリッシ
 
    * 詳しくは、 [IP許可リストの適用と適用解除](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) を参照してください。
 
-1. **IP 許可リスト**&#x200B;の更新ワークフローを使用して、デフォルトの IP を削除し、必要に応じて IP を追加します。詳しくは、「[IP 許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)」を参照してください。
+1. **IP 許可リスト**&#x200B;の更新ワークフローを使用して、デフォルトの IP を削除し、必要に応じて IP を追加します。詳しくは、 [IP許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) を参照してください。
 
 プレビューサービスへのアクセスをロック解除すると、プレビューサービス名の前にあるロックアイコンが表示されなくなります。
 

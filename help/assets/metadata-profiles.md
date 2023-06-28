@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 948b671965cf438e2c93dea0371331cb3a02b6ca
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1408'
-ht-degree: 96%
+source-wordcount: '1409'
+ht-degree: 94%
 
 ---
 
@@ -33,13 +33,13 @@ ht-degree: 96%
    * **[!UICONTROL フィールドラベル]** - メタデータプロパティの表示名。ユーザーの参照用のみで使用します。
    * **[!UICONTROL プロパティにマッピング]** – このプロパティの値には、リポジトリー内の保存場所となるアセットノードへの相対パスまたは名前を指定します。この値は、パスがアセットのノード下にあることを示すので、必ず「`./`」から始めます。
 
-      「**[!UICONTROL プロパティにマッピング]**」に指定した値は、アセットの metadata ノードの下のプロパティとして保存されます。例えば、「**[!UICONTROL プロパティにマッピング]**」の名前として .`/jcr:content/metadata/dc:desc` を指定すると、[!DNL Adobe Experience Manager Assets] はアセットの metadata ノードに値 `dc:desc` を格納します。
+     「**[!UICONTROL プロパティにマッピング]**」に指定した値は、アセットの metadata ノードの下のプロパティとして保存されます。例えば、「**[!UICONTROL プロパティにマッピング]**」の名前として .`/jcr:content/metadata/dc:desc` を指定すると、[!DNL Adobe Experience Manager Assets] はアセットの metadata ノードに値 `dc:desc` を格納します。
 
    * **[!UICONTROL デフォルト値]** - メタデータコンポーネントのデフォルト値を追加するには、このプロパティを使用します。例えば、「My description」と指定すると、この値がアセットのメタデータノードの `dc:desc` プロパティに割り当てられます。
 
-      >[!NOTE]
-      >
-      >（`/jcr:content/metadata` ノードに存在していない）新しいメタデータプロパティにデフォルト値を追加しても、そのプロパティとプロパティ値はアセットのプロパティページにデフォルトでは表示されません。[!UICONTROL プロパティ]ページに新しいプロパティを表示するには、対応するスキーマフォームを変更します。
+     >[!NOTE]
+     >
+     >（次の場所に存在しない）新しいメタデータプロパティにデフォルト値を追加する `/jcr:content/metadata` ノード ) には、デフォルトでは、アセットのプロパティページにプロパティとその値が表示されません。 [!UICONTROL プロパティ]ページに新しいプロパティを表示するには、対応するスキーマフォームを変更します。
 
 1. （オプション）「**[!UICONTROL フォームを作成]**」タブから、「フォームを編集」にコンポーネントを追加し、「**[!UICONTROL 設定]**」タブでプロパティを設定します。次のプロパティが「**[!UICONTROL フォームを作成]**」タブで使用できます。
 

@@ -2,10 +2,10 @@
 title: UI テスト
 description: カスタム UI テストは、カスタムアプリケーションの UI テストを作成して自動的に実行できるオプション機能です
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2401'
-ht-degree: 73%
+source-wordcount: '2389'
+ht-degree: 70%
 
 ---
 
@@ -53,7 +53,7 @@ UI テストは、Java で記述された HTTP テストであるカスタム機
 
    * Java および WebDriver の場合は、[AEM テストサンプルのリポジトリ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)からサンプルコードを使用します。
 
-   * その他のプログラミング言語については、このドキュメントの [UI テストの構築](#building-ui-tests)の節を参照して、テストプロジェクトを設定してください。
+   * その他のプログラミング言語については、 [UI テストの構築](#building-ui-tests) このドキュメントでは、テストプロジェクトを設定します。
 
 1. このドキュメントの[顧客オプトイン](#customer-opt-in)の節に従って、UI テストがアクティベートされていることを確認してください。
 
@@ -69,7 +69,7 @@ Maven プロジェクトでは、Docker ビルドコンテキストを生成し�
 
 >[!TIP]
 >
->[AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype)では、プログラミング言語に特別な要件がない場合、次の説明に準拠した UI テストプロジェクトを生成できます。
+>この [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) では、次の説明に準拠した UI テストプロジェクトを生成できます。プログラミング言語に関する特別な要件がない場合は、このプロジェクトが適用されます。
 
 ### Docker ビルドコンテキストの生成 {#generate-docker-build-context}
 
@@ -236,7 +236,7 @@ Docker イメージが他のプログラミング言語またはテストラン�
 
 >[!NOTE]
 >
->UI テスト手順の結果は、テストレポートに基づいてのみ評価されます。 テストの実行に合わせてレポートを生成するようにしてください。
+>UI テスト手順の結果は、テストレポートに基づいてのみ評価されます。 テストの実行に合わせてレポートを生成していることを確認します。
 >
 >エラーを STDERR に記録したり、ゼロ以外の終了コードを返すのではなく、アサーションを使用してください。そうしない場合、デプロイメントパイプラインが正常に実行されます。
 
@@ -259,7 +259,7 @@ Docker イメージが他のプログラミング言語またはテストラン�
 
 >[!NOTE]
 >
-> より多くのリソースが必要な場合は、カスタマーケアケースを作成し、使用例を説明してください。Adobeがリクエストを確認し、適切な支援を提供します。
+> さらにリソースが必要な場合は、カスタマーケアケースを作成し、使用例を説明します。Adobeがリクエストを確認し、適切な支援を提供します。
 
 ## Selenium 固有の詳細
 

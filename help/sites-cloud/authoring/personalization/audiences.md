@@ -2,10 +2,10 @@
 title: オーディエンスの管理
 description: オーディエンスコンソールを使用して、Adobe Target アカウント用のオーディエンスを作成、整理および管理したり、ContextHub 用のセグメントを管理したりできます。
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 57%
+source-wordcount: '963'
+ht-degree: 56%
 
 ---
 
@@ -44,7 +44,7 @@ ContextHub セグメントは、オーディエンスコンソールまたはタ
    >
    >新しく作成したオーディエンスがあるか確認するために降順に並べ替えるには、「**変更済み**」をタップまたはクリックして、変更済みのリストを並べ替えることができます。
 
-ContextHub を使用するセグメント作成の詳細については、「ContextHub によるセグメント化の設定」ドキュメントを参照してください。<!--For further detail about creating segments using ContextHub, please see the [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md) documentation.-->
+ContextHub を使用してセグメントを作成する方法について詳しくは、 ContextHub でのセグメント化の設定ドキュメントを参照してください。 <!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
 
 ## オーディエンスコンソールを使用した Adobe Target オーディエンスの作成 {#creating-an-adobe-target-audience-using-the-audience-console}
 

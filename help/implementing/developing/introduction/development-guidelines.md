@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスでの AEM および AMS での AEM との重要な違いについて説明します。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2591'
-ht-degree: 88%
+source-wordcount: '2586'
+ht-degree: 85%
 
 ---
 
@@ -65,11 +65,11 @@ HTTP 接続を行う場合は、提供されている [Apache HttpComponents Cli
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/)（古くなり、バージョン 4.x に代わっているので、お勧めしません）
 * [OK Http](https://square.github.io/okhttp/)（AEM では提供されません）
 
-タイムアウトの指定の次に、そのようなタイムアウトと予期しない HTTP ステータスコードの適切な処理も実装する必要があります。
+タイムアウトの提供の横に、そのようなタイムアウトおよび予期しない HTTP ステータスコードの適切な処理も実装する必要があります。
 
 ## クラシック UI のカスタマイズがない {#no-classic-ui-customizations}
 
-AEM as a Cloud Service は、サードパーティの顧客コードのタッチ UI のみをサポートします。クラシック UI はカスタマイズには使用できません。
+AEM as a Cloud Serviceは、サードパーティの顧客コードのタッチ UI のみをサポートします。 クラシック UI はカスタマイズには使用できません。
 
 ## ネイティブバイナリまたはネイティブライブラリがありません {#avoid-native-binaries}
 
@@ -152,7 +152,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ### スレッドダンプ {#thread-dumps}
 
-クラウド環境のスレッドダンプは継続的に収集されますが、現時点ではセルフサービス方式でダウンロードすることはできません。しばらくの間は、問題のデバッグ用にスレッドダンプが必要な場合は、AEM サポートに連絡して、正確な時間枠を指定してください。
+クラウド環境のスレッドダンプは継続的に収集されますが、現時点ではセルフサービス方式でダウンロードすることはできません。その間、問題のデバッグにスレッドダンプが必要な場合は、AEMサポートに連絡し、正確な時間枠を指定します。
 
 ## CRXDE Lite とデベロッパーコンソール {#crxde-lite-and-developer-console}
 
@@ -282,8 +282,8 @@ org.apache.jackrabbit.oak.jcr.session.NodeImpl Large multi valued property [/pat
 Caused by: com.mongodb.MongoWriteException: Resulting document after update is larger than 16777216
 ```
 
-詳しくは、[Apache Oak のドキュメント](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property)を参照してください。
+詳しくは、 [Apache Oak ドキュメント](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) を参照してください。
 
 ## [!DNL Assets] 開発のガイドラインとユースケース {#use-cases-assets}
 
-Assets as a Cloud Service の開発のユースケース、推奨事項、参考資料については、[Assets の開発者向けリファレンス](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)を参照してください。
+Assets as a Cloud Serviceの開発ユースケース、推奨事項、リファレンス資料については、 [アセットの開発者向けリファレンス](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).

@@ -2,10 +2,10 @@
 title: Experience Manager as a Cloud Service への移行ガイド（パートナー向け）
 description: Experience Manager as a Cloud Service への移行ガイド（パートナー向け）
 exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2122'
-ht-degree: 100%
+source-wordcount: '2120'
+ht-degree: 97%
 
 ---
 
@@ -126,7 +126,7 @@ Cloud Service への移行プロセスを開始する前に、Experience Manager
 <table>
 <tr>
 <td>プロジェクトの確認と評価</td>
-<td><ul><li>Adobe Experience Manager as a Cloud Service と Experience Manager 6.x の重要な違いを理解するには、<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=ja">Experience Manager as a Cloud Service の注目すべき変更</a>を参照してください。</li><li>非推奨とマークされた機能と特長の詳細については、<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html?lang=ja">非推奨の機能</a>を参照してください。</li><li>[Cloud Service の移行のみ] Cloud Service の準備状況の評価：ソース環境で <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=ja">ベストプラクティスアナライザー（BPA）</a> を実行します。 </li><li>Experience Manager CS の主な変更点と廃止された機能に対する評価を完了します。</li></ul></td>
+<td><ul><li>詳しくは、 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=ja">Experience Manageras a Cloud Serviceの主な変更点</a> Adobe Experience Manager as a Cloud ServiceとExperience Manager6.x の重要な違いを理解するために</li><li>詳しくは、 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html?lang=ja">廃止された機能</a> 非推奨とマークされた機能の詳細をご覧ください。</li><li>[Cloud Service の移行のみ] Cloud Service の準備状況の評価：ソース環境で <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=ja">ベストプラクティスアナライザー（BPA）</a> を実行します。 </li><li>Experience Manager CS の主な変更点と廃止された機能に対する評価を完了します。</li></ul></td>
 </tr>
 <tr>
 <td>レビュー</td>

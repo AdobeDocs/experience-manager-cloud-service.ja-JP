@@ -4,10 +4,10 @@ description: ライブコピーの概要コンソールの基本を学習し、�
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 88%
+ht-degree: 87%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 88%
 
 「**ライブコピーの概要**」は、**Sites** コンソールの&#x200B;**参照**&#x200B;サイドパネルから開くことができます。
 
-1. **Sites** コンソールで、[ブループリントページに移動して選択します。](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. 内 **サイト** コンソール [ブループリントページに移動して選択します。](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. **[参照](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;パネルを開き、「**ライブコピー**」を選択します。
 
    ![参照パネルからのライブコピー](../assets/live-copy-references.png)

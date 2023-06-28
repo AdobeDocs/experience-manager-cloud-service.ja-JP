@@ -4,10 +4,10 @@ description: AEM で機械翻訳と人間による翻訳の両方のプロジェ
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '4085'
-ht-degree: 80%
+source-wordcount: '4078'
+ht-degree: 79%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 80%
 
 >[!TIP]
 >
->コンテンツの翻訳を初めておこなう場合は、 [サイト翻訳ジャーニー、](/help/journey-sites/translation/overview.md) AEMの強力な翻訳ツールを使用してAEM Sitesのコンテンツを翻訳する手順を示すガイド付きのツールです。AEMや翻訳の経験がないユーザーに最適です。
+>コンテンツを翻訳することを初めておこなう場合は、 [サイト翻訳ジャーニー、](/help/journey-sites/translation/overview.md) AEMの強力な翻訳ツールを使用してAEM Sitesのコンテンツを翻訳する手順を示すガイド付きのツールです。AEMや翻訳の経験がないユーザーに最適です。
 
 翻訳プロジェクトにリソースを追加すると、リソースに対して翻訳ジョブが作成されます。 ジョブには、リソースで実行される人間による翻訳と機械翻訳のワークフローの管理に使用するコマンドとステータス情報が含まれています。
 
@@ -196,7 +196,7 @@ AEM は、設定済みの TMS の翻訳メモリ内の既存の文字列の翻�
 
 ページが翻訳済みである、翻訳中である、またはまだ翻訳されていないことを示すプロパティを、サイトコンソールのリスト表示で選択できます。
 
-1. サイトコンソールで、[リスト表示](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)に切り替えます。
+1. サイトコンソールで、 [リスト表示](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. 「表示」ドロップダウンで、「**表示設定**」をタップまたはクリックします。
 1. ダイアログで、「**翻訳済み**」プロパティをオンにし、「**更新**」をタップまたはクリックします。
 
@@ -210,7 +210,7 @@ AEM は、設定済みの TMS の翻訳メモリ内の既存の文字列の翻�
 
 ### プロジェクトコンソールについて
 
-AEM の翻訳プロジェクトでは、標準の [AEM プロジェクトコンソールを使用します。](/help/sites-cloud/authoring/projects/overview.md)AEM プロジェクトに詳しくない場合は、そのドキュメントを参照してください。
+AEMの翻訳プロジェクトでは、標準を使用します [AEM projects console](/help/sites-cloud/authoring/projects/overview.md). AEMプロジェクトに詳しくない場合は、そのドキュメントを確認してください。
 
 他のあらゆるプロジェクトと同様に、翻訳プロジェクトも、プロジェクトタスクの概要を示すタイルで構成されます。
 
@@ -277,7 +277,7 @@ AEM の翻訳プロジェクトでは、標準の [AEM プロジェクトコン�
 
 ### 翻訳ジョブへのタグの追加 {#adding-tags-to-a-translation-job}
 
-翻訳プロジェクトにタグを追加できます。その方法は、[プロジェクトにアセットやページを追加する場合](#adding-pages-assets-to-a-translation-job)と同様です。**追加**&#x200B;メニューの「**タグ**」を選択したあと、同じ手順に従います。
+翻訳プロジェクトには、 [プロジェクトにアセットとページを追加する方法](#adding-pages-assets-to-a-translation-job). と同様です。**追加**&#x200B;メニューの「**タグ**」を選択したあと、同じ手順に従います。
 
 ### 翻訳プロジェクトの詳細の確認 {#seeing-translation-project-details}
 
@@ -303,7 +303,7 @@ AEM の翻訳プロジェクトでは、標準の [AEM プロジェクトコン�
 
 ### 翻訳ジョブのステータスの監視 {#monitoring-the-status-of-a-translation-job}
 
-翻訳プロジェクトの「翻訳ジョブ」タイルには、翻訳ジョブのステータスとジョブ内のページおよびアセットの数が表示されます。
+翻訳プロジェクトの翻訳ジョブタイルには、翻訳ジョブのステータスと、ジョブ内のページとアセットの数が表示されます。
 
 ![翻訳ジョブ](../assets/translation-job.png)
 
@@ -437,7 +437,7 @@ AEM の翻訳プロジェクトでは、標準の [AEM プロジェクトコン�
 言語コピーを言語マスターと比較するには：
 
 1. サイトコンソールで、比較する言語コピーに移動します。
-1. [参照パネル](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)を開きます。
+1. を開きます。 [参照レール](/help/sites-cloud/authoring/getting-started/basic-handling.md#references).
 1. **コピー**&#x200B;見出しの下で、「**言語コピー**」を選択します。
 1. 特定の言語コピーを選択し、「**マスターと比較**」または「**前と比較**」（該当する場合）をクリックできます。
 

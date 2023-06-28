@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.7.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.7.0 リリースのリリースノート。'
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 29%
+source-wordcount: '949'
+ht-degree: 27%
 
 ---
 
@@ -104,7 +104,7 @@ Adobe Experience Manager Assets を [MIME タイプに基づいてユーザー�
 
 * この [リポジトリブラウザ](/help/implementing/developing/tools/repository-browser.md) にパス入力フィールドが追加され、リポジトリ階層内の特定のフォルダーに直接ジャンプできるようになりました。
 * Sling コンテンツ配布 (SCD) で、コンテンツが公開されずにコンテンツを無効にする明示的な「無効化」アクションがサポートされるようになりました。 詳しくは、 [AEMでのキャッシュのas a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) ページを参照してください。
-* mod_macro がAEM as a Cloud Serviceで使用できるようになりました。 参照： [このテーブル](/help/implementing/dispatcher/disp-overview.md) を参照してください。
+* mod_macro がAEM as a Cloud Serviceで使用できるようになりました。 詳しくは、 [このテーブル](/help/implementing/dispatcher/disp-overview.md) を参照してください。
 
 ### AEMas a Cloud ServiceSDK Dispatcher ツールの機能強化 {#dispatcher-tools-enhancements}
 
@@ -113,7 +113,7 @@ Adobe Experience Manager Assets を [MIME タイプに基づいてユーザー�
 
 ### [!DNL Experience Manager] プレリリースチャネルで利用できる新機能 {#prerelease-features-foundation}
 
-* AEM as a Cloud Service が統合シェルと統合され、ユーザーエクスペリエンスが向上し、他のすべての Experience Cloud アプリケーションと統合されました。詳しくは、[統合シェル上の AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) を参照してください。
+* AEM as a Cloud Service が統合シェルと統合され、ユーザーエクスペリエンスが向上し、他のすべての Experience Cloud アプリケーションと統合されました。詳しくは、 [統合シェルでas a Cloud ServiceのAEMを使用](/help/overview/aem-cloud-service-on-unified-shell.md) を参照してください。
 
 ## Adobeラーニングマネージャーコネクタ {#learn-manage}
 
@@ -121,7 +121,7 @@ Adobe Experience Manager Assets を [MIME タイプに基づいてユーザー�
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager の月次リリースの完全なリストは、 [こちら](/help/implementing/cloud-manager/release-notes/current.md)で確認できます。
+Cloud Manager の月次リリースの完全なリストは、[こちら](/help/implementing/cloud-manager/release-notes/current.md)で確認できます。
 
 ## 移行ツール {#migration-tools}
 

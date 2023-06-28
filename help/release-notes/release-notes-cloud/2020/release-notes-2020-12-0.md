@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.12.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.12.0 リリースのリリースノート。'
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 97%
+source-wordcount: '683'
+ht-degree: 89%
 
 ---
 
@@ -35,9 +35,9 @@ ht-degree: 97%
 
 ### 新機能 {#what-is-new-commerce}
 
-* 最新の CIF コアコンポーネント v1.6.0 を含んだ CIF Venia 参照サイト 2020.12.01 をリリースしました。詳しくは、[CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01)を参照してください。
+* 最新の CIF コアコンポーネントバージョン v1.6.0 を含む CIF Venia 参照サイト2020.12.01をリリースしました。詳しくは、 [CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) を参照してください。
 
-* CIF コアコンポーネント v1.6.0 をリリースしました。詳しくは、[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0)を参照してください。
+* CIF コアコンポーネント v1.6.0 がリリースされました。詳しくは、 [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -63,15 +63,15 @@ AEM as a Cloud Service 2020.12.0 Cloud Manager のリリース日は 2020 年 12
 
 ### [!DNL Code Refactoring Tools] の新機能  {#what-is-new-crt}
 
-* AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンには、AEM Dispatcher コンバーターと Repository Modenizer のバグ修正が含まれ、新しいユーティリティインデックスコンバーターもサポートされています。このプラグインの詳細については、[Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=ja#benefits) を参照してください。
+* AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンには、AEM Dispatcher コンバーターと Repository Modenizer のバグ修正が含まれ、新しいユーティリティインデックスコンバーターもサポートされています。詳しくは、 [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=ja#benefits) このプラグインの詳細を確認するには、を参照してください。
 
-* インデックスコンバーターは、顧客のカスタム OAK インデックス定義を AEM as a Cloud Service 互換の OAK インデックス定義に変換するために使用できるユーティリティです。詳しくは、[インデックスコンバーター](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)を参照してください。
+* インデックスコンバーターは、顧客のカスタム OAK インデックス定義を AEM as a Cloud Service 互換の OAK インデックス定義に変換するために使用できるユーティリティです。詳しくは、 [インデックスコンバータ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) を参照してください。
 
 * [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) にすべての OSGi 設定を含む個別のパッケージ `ui.config` を作成する新機能が追加されました。
 
 ### バグの修正 {#crt-bug-fixes}
 
-* AEM Dispatcher コンバーターおよび Repository Modenizer ツールでいくつかのバグ修正が行われました。[AEM Dispatcher コンバーター](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)および [Repository Modenizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) を参照してください。
+* AEM Dispatcher コンバーターおよび Repository Modenizer ツールでいくつかのバグ修正が行われました。詳しくは、 [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) および [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
 ### リリース日 {#release-date-ctt}
 

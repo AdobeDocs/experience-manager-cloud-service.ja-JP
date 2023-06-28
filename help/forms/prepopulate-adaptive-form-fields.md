@@ -6,10 +6,10 @@ seo-description: With Adaptive Forms, you users can prefill basic information in
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 99a86fa88b0b98d732487b9e4b0b6de9fa3773ad
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1948'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -199,7 +199,8 @@ JSON スキーマモデルを使用するフィールドの場合、以下の JS
 
 >[!NOTE]
 >
-> 連結パネル（サイドキックまたは「データソース」タブからコンポーネントをドラッグして作成された、空でない bindRef を含むパネル）で、連結されていないフィールドを使用すると、 **not** 非連結フィールドのデータが失われる可能性があるので、お勧めします。 特に連結されていないフィールドに対しては、フォーム全体に一意のフィールド名を付けることをお勧めします。
+> 連結パネル (Sidekickまたは「データソース」タブからコンポーネントをドラッグして作成された、空でない bindRef を含むパネル ) で、連結されていないフィールドを使用すると、 **not** 非連結フィールドのデータが失われる可能性があるので、お勧めします。 特に連結されていないフィールドに対しては、フォーム全体に一意のフィールド名を付けることをお勧めします。
+>
 
 ### フォームモデルのないアダプティブフォーム {#adaptive-form-with-no-form-model}
 
@@ -247,7 +248,6 @@ JSON スキーマモデルを使用するフィールドの場合、以下の JS
 > - デフォルトでは、事前入力はすべての種類のアダプティブフォーム（XSD、XDP、JSON、FDM、フォームモデルベースなし）で crx ファイルを通じて許可されます。事前入力は JSON ファイルおよび XML ファイルでのみ許可されます。
 > - crx プロトコルは、事前入力済みデータのセキュリティを管理するので、デフォルトで許可されています。汎用正規表現を使用する他のプロトコルを介した事前入力は、脆弱性の原因となる場合があります。 設定で、データを保護するためのセキュア URL 設定を指定します。
 
-
 ## 繰り返し可能なパネルの好奇心が強いケース {#the-curious-case-of-repeatable-panels}
 
 連結された（フォームスキーマ）フィールドや連結されていないフィールドは通常、同じアダプティブフォームに作成されます。ただし、連結が繰り返し可能な場合は、次のような例外があります。
@@ -292,7 +292,7 @@ https://`servername`/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://
 https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
 ```
 
-- SERVICE_NAME とは OSGI 事前入力サービスの名前を指します。[事前入力サービスの作成と実行](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service)を参照してください。
+- SERVICE_NAME とは OSGI 事前入力サービスの名前を指します。詳しくは、 [事前入力サービスの作成と実行](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
 - 識別情報とは、OSGI 事前入力サービスが事前入力データを取得するために必要なメタデータを指します。ログインしたユーザーの識別子は、使用できるメタデータの例です。
 
 >[!NOTE]

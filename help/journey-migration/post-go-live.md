@@ -2,10 +2,10 @@
 title: 運用開始後
 description: 問題を監視し、パフォーマンスを向上させる方法を説明します
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 100%
+source-wordcount: '482'
+ht-degree: 89%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 100%
 
 AEM as a Cloud Service 開発者環境でのデバッグは、開発環境、ステージング環境、実稼動環境の開発者コンソールで実行できます。
 
-開発ツールについて詳しくは、 [AEM as a Cloud Service 向けの実装](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) を参照してください。
+詳しくは、 [AEMas a Cloud Serviceの実装](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) 開発ツールの詳細を確認するには、を参照してください。
 
 ## CRXDE Lite {#crxde-lite}
 
@@ -45,13 +45,13 @@ AEM as a Cloud Service 開発者環境でのデバッグは、開発環境、ス
 >[!IMPORTANT]
 >実行時に `/libs` や `/apps` などの不変リポジトリに書き込むと、エラーが発生します。ユーザーは、ステージング環境と実稼動環境用の開発者ツールにもアクセスできません。
 
-CRXDE Lite を使用して AEM アプリケーションを開発する方法については、 [CRXDE Lite による開発](/help/implementing/developing/tools/crxde.md) を参照してください。
+詳しくは、 [CRXDE Lite](/help/implementing/developing/tools/crxde.md) を参照して、CRXDE Liteを使用してAEMアプリケーションを開発する方法を確認してください。
 
 ## ログの管理 {#managing-logs}
 
 ユーザーは、選択した環境の使用可能なログファイルのリストにアクセスできます。
 
-UI を使用して、または Cloud Manager 経由で API を使用してログにアクセスしログを管理する方法については、[ログへのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md)を参照してください。
+詳しくは、 [ログへのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md) UI を使用して、または Cloud Manager を介して API を使用してログにアクセスし、ログを管理する方法について説明します。
 
 ## サポートへの問い合わせ {#contacting-support}
 

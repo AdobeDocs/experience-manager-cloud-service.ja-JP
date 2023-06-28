@@ -4,10 +4,10 @@ description: 翻訳するコンテンツを準備する方法を説明します�
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 83%
+source-wordcount: '765'
+ht-degree: 76%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 83%
 
 >[!TIP]
 >
->コンテンツの翻訳を初めて行う場合は、[AEM Sites 翻訳ジャーニー](/help/journey-sites/translation/overview.md)を参照してください。これは、AEM の強力な翻訳ツールを使用して AEM Sites コンテンツを翻訳する手順を示すガイドです。AEM や翻訳の経験がないユーザーに最適です。
+>コンテンツを翻訳することを初めておこなう場合は、 [サイト翻訳ジャーニー、](/help/journey-sites/translation/overview.md) AEMの強力な翻訳ツールを使用してAEM Sitesのコンテンツを翻訳する手順を示すガイド付きのツールです。AEMや翻訳の経験がないユーザーに最適です。
 
 [WKND チュートリアルサイト](/help/implementing/developing/introduction/develop-wknd-tutorial.md)には、複数の言語ブランチが含まれています。使用される構造は次のとおりです。
 
@@ -92,7 +92,7 @@ AEM には&#x200B;**参照**&#x200B;パネルがあります。このパネル�
 
 ![言語ルート](../assets/language-roots.png)
 
-次の手順に従い、[パネルセレクター](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)を使用したページの言語コピーを表示します。
+以下の手順を使用して、ページの言語コピーを表示します。 [パネルセレクター](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
 1. Sites コンソールで、サイトのページを選択し、「**参照**」をクリックまたはタップします。
 

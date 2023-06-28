@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] への�
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 2b597707a26726eec26541c04914ac36e8909fc5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3157'
+source-wordcount: '3156'
 ht-degree: 81%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 81%
 
 最もよく使用されるブラウザーのアップロードに加えて、その他のアセットを [!DNL Experience Manager] リポジトリが存在します。 その他の方法には、Asset Link やAdobeなどのデスクトップクライアントがあります。 [!DNL Experience Manager] デスクトップアプリケーション、顧客が作成するアップロードおよび取り込みスクリプト、自動取り込み統合が [!DNL Experience Manager] 拡張機能。
 
-[!DNL Experience Manager] では任意のバイナリファイルをアップロードおよび管理できますが、最もよく使用されるファイル形式については、メタデータ抽出やプレビュー／レンディション生成などの追加サービスもサポートされています。詳しくは、[サポートされているファイル形式](file-format-support.md)を参照してください。
+[!DNL Experience Manager] では任意のバイナリファイルをアップロードおよび管理できますが、最もよく使用されるファイル形式については、メタデータ抽出やプレビュー／レンディション生成などの追加サービスもサポートされています。詳しくは、 [サポートされているファイル形式](file-format-support.md) 」を参照してください。
 
 アップロードしたアセットに対して追加の処理を行うように選択することもできます。アセットのアップロード先のフォルダーに複数のアセット処理プロファイルを設定して、特定のメタデータ、レンディションまたは画像処理サービスを追加できます。 [アップロード時のアセットの処理](#process-when-uploaded)を参照してください。
 

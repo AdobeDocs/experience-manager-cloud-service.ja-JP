@@ -2,10 +2,10 @@
 title: ヘッドレスアプリケーションの運用開始方法
 description: AEM ヘッドレスデベロッパージャーニーのこのパートでは、Git 内のローカルコードを CI／CD パイプライン用に Cloud Manager Git に移行することでヘッドレスアプリケーションをライブ環境にデプロイする方法を説明します。
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 94%
+source-wordcount: '1066'
+ht-degree: 93%
 
 ---
 
@@ -124,7 +124,7 @@ AEM ヘッドレスアプリケーションの使用時に最高のユーザー�
 
 ### 単一ページアプリケーションの調査 {#explore-spa}
 
-ただし、AEM のヘッドレスストアは、ここで終わる必要はありません。[ジャーニーの「はじめに」のパート](getting-started.md#integration-levels)では、AEM でヘッドレス配信と従来のフルスタックモデルをサポートできるだけでなく、両方の利点を組み合わせたハイブリッドモデルもサポートできることを簡単に説明しました。
+ただし、AEMのヘッドレスストアは、ここで停止する必要はありません。 [ジャーニーの「はじめに」のパート](getting-started.md#integration-levels)では、AEM でヘッドレス配信と従来のフルスタックモデルをサポートできるだけでなく、両方の利点を組み合わせたハイブリッドモデルもサポートできることを簡単に説明しました。
 
 このような柔軟性がプロジェクトに必要な場合は、さらにジャーニーのオプションパート [AEM で単一ページアプリケーション（SPA）を作成する方法](create-spa.md)に進んでください。
 

@@ -4,10 +4,10 @@ description: AEM を Microsoft Translator に接続して翻訳ワークフロ�
 feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 96%
+source-wordcount: '512'
+ht-degree: 86%
 
 ---
 
@@ -17,7 +17,7 @@ AEM ページのコンテンツまたはアセットの翻訳に Microsoft Trans
 
 >[!TIP]
 >
->コンテンツの翻訳を初めて行う場合は、[AEM Sites 翻訳ジャーニー](/help/journey-sites/translation/overview.md)を参照してください。これは、AEM の強力な翻訳ツールを使用して AEM Sites コンテンツを翻訳する手順を示すガイドです。AEM や翻訳の経験がないユーザーに最適です。
+>コンテンツを翻訳することを初めておこなう場合は、 [サイト翻訳ジャーニー、](/help/journey-sites/translation/overview.md) AEMの強力な翻訳ツールを使用してAEM Sitesのコンテンツを翻訳する手順を示すガイド付きのツールです。AEMや翻訳の経験がないユーザーに最適です。
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Microsoft Translator 設定を作成するには、次の手順に従います�
 1. 「**作成**」ボタンをタップまたはクリックします。
 1. 設定を定義します。
    1. ドロップダウンで **Microsoft Translator** を選択します。
-   1. 設定のタイトルを入力します。このタイトルによって、クラウドサービスコンソールおよびページプロパティのドロップダウンリストで設定が識別されます。
+   1. 設定のタイトルを入力します。タイトルは、設定コンソールおよびページプロパティのCloud Servicesドロップダウンリストでの設定を識別します。
    1. オプションとして、設定を格納するリポジトリーノードに使用する名前を入力します。
 
    ![翻訳設定の作成](../assets/create-translation-config.png)

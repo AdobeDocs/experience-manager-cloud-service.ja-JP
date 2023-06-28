@@ -2,10 +2,10 @@
 title: ブランチの作成
 description: ここでは、Cloud Manager で Screens as a Cloud Service 用にブランチを作成する方法について説明します。
 exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 100%
+source-wordcount: '225'
+ht-degree: 90%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 この節では、Cloud Manager でプログラムのブランチを作成する方法について説明します。
 
 >[!NOTE]
->ウィザードを使用して Cloud Manager で AEM アプリケーションプロジェクトを作成する方法については、[Cloud Manager でのウィザードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=ja)を参照してください。
+>詳しくは、 [Cloud Manager でのウィザードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=ja) ウィザードを使用してAEM Manager で Cloud Application プロジェクトを作成する方法を説明します。
 
 ## 目的 {#objective}
 

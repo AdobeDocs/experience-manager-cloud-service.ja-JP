@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 リリースのリリースノート。'
 description: "[!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 のリリースノート。"
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1197'
-ht-degree: 99%
+source-wordcount: '1194'
+ht-degree: 95%
 
 ---
 
@@ -62,9 +62,9 @@ ht-degree: 99%
 
 ### 新機能 {#what-is-new-commerce}
 
-* 最新の CIF コアコンポーネント v1.4.0 を含んだ CIF Venia 参照サイト 2020.10.2 をリリースしました。詳しくは、[CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2)を参照してください。
+* 最新の CIF コアコンポーネントバージョン v1.4.0 を含む CIF Venia 参照サイト2020.10.2をリリースしました。詳しくは、 [CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) を参照してください。
 
-* CIF コアコンポーネント v1.4.0 をリリースしました。詳しくは、[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0)を参照してください。
+* CIF コアコンポーネント v1.4.0 がリリースされました。詳しくは、 [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) を参照してください。
 
 ### バグの修正 {#bug-fixes-commerce}
 
@@ -89,7 +89,7 @@ Experience Manager as a Cloud Service 2020.10.0 の Cloud Manager のリリー�
 * 環境ごとの環境変数の数が 200 に増えました。
 
 * 概要ページの環境カードに最大 3 つの環境が表示されるようになりました。「**すべてを表示**」ボタンを選択して環境の概要ページに移動し、環境の完全なリストを含む表を表示できます。
-詳しくは、「[環境の表示](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)」を参照してください。
+詳しくは、 [表示環境](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) を参照してください。
 
 ### バグの修正 {#bug-fixes-cloud-manager}
 

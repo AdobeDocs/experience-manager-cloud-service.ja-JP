@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの基本を学ぶ
 description: コンテンツ転送ツールの基本を学ぶ
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: ea5d86e1a43bb7ae0c7608fc0625983cf2bf273f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 87%
+source-wordcount: '1436'
+ht-degree: 84%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 87%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja" text="リリースノート"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="ソフトウェア配布ポータル"
 
-コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)を使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。最新バージョンの詳細については、「[リリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja)」を参照してください。
+コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)を使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。最新バージョンについて詳しくは、 [リリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja).
 
 バージョン 2.0.0 以降のみがサポートされており、最新バージョンを使用することをお勧めします。
 
@@ -102,7 +102,7 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 
    >[!NOTE]
    >
-   >抽出キーを使用すると、移行元の AEM 環境から移行セットに安全に接続できます。このキーは、パスワードと同じ注意を払って扱ってください。また、メールのような安全でないメディアでは、キーを共有しないでください。
+   >抽出キーを使用すると、移行元の AEM 環境から移行セットに安全に接続できます。このキーは、パスワードと同じ注意を払って扱い、メールのような安全でないメディアでは決して共有しないでください。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam4.png)
 
@@ -126,7 +126,7 @@ Cloud Acceleration Manager で作成した移行セットを入力するには�
 
    >[!NOTE]
    >
-   >抽出キーが有効で、有効期限に近づいていないことを確認します。抽出キーを貼り付けた後、この情報は、**移行セットを作成**&#x200B;ダイアログに表示されます。接続エラーが発生した場合は、[移行元環境の接続性](#source-environment-connectivity)を参照してください。
+   >抽出キーが有効で、有効期限に近づいていないことを確認します。抽出キーを貼り付けた後、この情報は、**移行セットを作成**&#x200B;ダイアログに表示されます。接続エラーが発生した場合は、 [ソース環境の接続](#source-environment-connectivity) を参照してください。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 

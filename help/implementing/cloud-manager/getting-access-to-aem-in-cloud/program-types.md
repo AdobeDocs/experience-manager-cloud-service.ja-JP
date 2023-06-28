@@ -2,10 +2,10 @@
 title: プログラムとプログラムタイプについて
 description: Cloud Manager の階層、その構造に様々な種類のプログラムが収まる仕組み、それらのプログラムの違いなどについて説明します。
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 100%
+source-wordcount: '521'
+ht-degree: 90%
 
 ---
 
@@ -35,7 +35,7 @@ Cloud Manager プログラムには、独自の Git リポジトリが自動的�
 
 Cloud Manager の Git リポジトリにアクセスするには、ユーザーは、コマンドラインツールを持つ Git クライアント、スタンドアロンのビジュアル Git クライアントまたはユーザーが選択した IDE（Eclipse、IntelliJ、NetBeans など）を使用する必要があります。
 
-Git クライアントをセットアップすると、Cloud Manager UI から Git リポジトリを管理できます。Cloud Manager UI を使用して Git を管理する方法については、[Git へのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)のドキュメントを参照してください。
+Git クライアントを設定したら、Cloud Manager のユーザーインターフェイスから Git リポジトリを管理できます。 Cloud Manager ユーザーインターフェイスを使用して Git を管理する方法については、 [Git へのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 AEM Cloud アプリケーションの開発を開始するには、Cloud Manager リポジトリからローカルコンピューター上の場所にチェックアウトして、アプリケーションコードのローカルコピーを作成する必要があります。
 
@@ -56,8 +56,8 @@ $ git clone {URL}
 ユーザーは、**実稼動**&#x200B;プログラムまたは&#x200B;**サンドボックス**&#x200B;プログラムを作成できます。
 
 * **実稼動プログラム**&#x200B;は、サイトのライブトラフィックを有効にするために作成されます。
-   * 詳しくは、[実稼動プログラムの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)のドキュメントを参照してください。
+   * 詳しくは、 [実稼働プログラムの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) を参照してください。
 * **サンドボックスプログラム**&#x200B;は、通常、トレーニング、デモの実行、イネーブルメント、POC またはドキュメントの目的にかなうように作成されます。
    * サンドボックス環境はライブトラフィックを実行するためのものではなく、実稼動プログラムにはない制限事項があります。
    * Sites と Assets が含まれており、サンプルコード、開発環境および実稼動以外のパイプラインを含む Git ブランチが自動入力されて提供されます。
-   * 詳しくは、[サンドボックスプログラムの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)のドキュメントを参照してください。
+   * 詳しくは、 [サンドボックスプログラムの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) を参照してください。

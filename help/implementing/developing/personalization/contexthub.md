@@ -2,16 +2,16 @@
 title: ContextHub
 description: ContextHub は、コンテキストデータを保存、操作および表示するためのフレームワークです。
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 73%
+source-wordcount: '289'
+ht-degree: 60%
 
 ---
 
 # ContextHub {#contexthub}
 
-ContextHub は、コンテキストデータを保存、操作および表示するためのフレームワークです。主な機能は、[様々なペルソナをシミュレートおよび切り替えながら、コンテキストデータを表示する機能を提供する](/help/sites-cloud/authoring/personalization/contexthub.md)ことです。
+ContextHub は、コンテキストデータを保存、操作および表示するためのフレームワークです。主な機能は、 [様々なペルソナをシミュレートおよび切り替えながら、コンテキストデータを表示](/help/sites-cloud/authoring/personalization/contexthub.md).
 
 ContextHub では、次のことができます。
 
@@ -19,11 +19,11 @@ ContextHub では、次のことができます。
 * データレイヤー表現として Web サイト上の[コンテキストデータを保持](#persistence)します。
 * 選択したコンテキストの[セグメントを管理](#segmentation)します。
 
-クライアントサイド JavaScript API を使用してデータにアクセスし、コンテンツをパーソナライズします。
+クライアント側 JavaScript API を使用してデータにアクセスし、コンテンツをパーソナライズできます。
 
 ## プレゼンテーション {#presentation}
 
-マーケティング担当者と作成者は、[ContextHub ツールバー](/help/sites-cloud/authoring/personalization/contexthub.md)を使用してストアデータを表示および操作し、ページのオーサリング時にユーザーエクスペリエンスをシミュレートできます。ツールバーは、[ContextHub ストア](#persistence)へのアクセスを提供する UI モジュールのグループで構成されます。 これは、クライアント上で ContextHub データを保持します。
+マーケターと作成者は、[ContextHub ツールバー](/help/sites-cloud/authoring/personalization/contexthub.md)を使用してストアデータを表示および操作し、ページのオーサリング時にユーザーエクスペリエンスをシミュレートできます。ツールバーは、[ContextHub ストア](#persistence)へのアクセスを提供する UI モジュールのグループで構成されます。 これは、クライアント上で ContextHub データを保持します。
 
 各 ContextHub UI モジュールは、事前定義されたモジュールタイプのインスタンスです。
 
@@ -35,15 +35,15 @@ ContextHub では、次のことができます。
 
 ## 永続性 {#persistence}
 
-ContextHub ストアは、コンテキストデータをクライアント上に保持します。ContextHub JavaScript API を使用してストアにアクセスし、必要に応じてデータを作成、更新および削除できます。したがって、ContextHub はページ上のデータレイヤーに相当します。
+ContextHub ストアは、コンテキストデータをクライアント上に保持します。ContextHub JavaScript API を使用すると、ストアにアクセスして、必要に応じてデータを作成、更新および削除できます。 したがって、ContextHub はページ上のデータレイヤーに相当します。
 
 個々の ContextHub ストアは、事前定義されたストアタイプのインスタンスです。
 
 * ContextHub には、次の機能が用意されています。 [サンプルストアタイプ](sample-stores.md).
 * AEMコンソールを使用して [ストアを作成](configuring-contexthub.md#creating-a-contexthub-store).
 * デベロッパーは、[カスタムストアタイプを作成](extending-contexthub.md#creating-custom-store-candidates)できます。
-* 開発者が実行できる操作 [ストアデータにアクセス](adding-contexthub.md#interacting-with-contexthub-stores) JavaScript を使用。
+* 開発者が実行できる操作 [ストアデータにアクセス](adding-contexthub.md#interacting-with-contexthub-stores) JavaScript を介して渡されます。
 
 ## セグメント化 {#segmentation}
 
-ContextHub には、セグメントを管理し、現在のコンテキストに対して解決されるセグメントを決定するセグメント化エンジンが含まれています。 複数のセグメントが定義されています。 JavaScript API を使用して、[解決されたセグメントを判断](adding-contexthub.md#determining-resolved-contexthub-segments)できます。
+ContextHub には、セグメントの管理や、現在のコンテキストで解決されるセグメントを判断するセグメント化エンジンが含まれています。いくつかのセグメントが定義されています。JavaScript API を使用すると、 [解決されたセグメントを決定](adding-contexthub.md#determining-resolved-contexthub-segments).

@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '931'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -47,7 +47,7 @@ AEM を使用してサイトのビジネスケースを解決する方法をア�
 | 管理者 | AEM の基本セットアップと設定を管理します。 | 翻訳担当者は管理者と協力して、翻訳コネクタのインストールなど、翻訳に必要な設定変更を行います。 |
 | コンテンツアーキテクト | サイトとして配信する必要があるデータの要件を分析し、そのデータの構造を定義します。 | 翻訳担当者はコンテンツアーキテクトと協力して、翻訳しやすいようにコンテンツの構成を定義します。 |
 
-このジャーニーの情報は、もちろんすべてのペルソナにとって役に立ちますが、特定の役割には必要ない情報も一部あります。[その他の役割に対応するジャーニーが今後公開](/help/journey-documentation/documentation-journeys.md#journeys)され次第、随時お知らせします。
+このジャーニーの情報は、もちろんすべてのペルソナにとって役に立ちますが、特定の役割には必要ない情報も一部あります。ぜひお試しください [役割を追加する次のジャーニー](/help/journey-documentation/documentation-journeys.md#journeys).
 
 ## サイト翻訳ジャーニー {#the-journey}
 

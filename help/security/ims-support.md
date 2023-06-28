@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 description: Adobe Experience Manager as a Cloud Serviceの画像管理システムのサポート
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1997'
-ht-degree: 40%
+source-wordcount: '1993'
+ht-degree: 39%
 
 ---
 
@@ -106,7 +106,7 @@ Enterprise Administration と Admin Console の使用方法については、[�
 
 **ユーザー同期に関するドキュメント**
 
-詳しくは、[UST のドキュメント](https://adobe-apiplatform.github.io/user-sync.py/en/)を参照してください。
+詳しくは、 [UST ドキュメント](https://adobe-apiplatform.github.io/user-sync.py/en/) を参照してください。
 
 ユーザー同期ツールは、手順を使用して、Adobe Developerクライアント UMAPI として登録する必要があります [ここ](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 

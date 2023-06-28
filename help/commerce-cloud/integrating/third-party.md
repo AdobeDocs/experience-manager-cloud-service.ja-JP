@@ -3,10 +3,10 @@ title: コマース統合フレームワークを使用したAEMとサードパ�
 description: 大規模法人では、ストアフロントを強化するために、追加のサードパーティ製コマースソリューションが必要になる場合があります。 I/O Runtime を使用してサードパーティのコマースソリューションをAdobe Experience Managerに接続する場合に、Commerce Integration Framework(CIF) をこのような統合シナリオで使用できます。
 thumbnail: cif-third-party-architecture.jpg
 exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 58%
+source-wordcount: '509'
+ht-degree: 57%
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Commerce 以外のソリューションの統合は、CIF の一般的な�
 
 全体的なアーキテクチャは次のとおりです。
 
-![AEM と Magento 以外またはサードパーティとの統合アーキテクチャの概要](../assets//AEM_nonMagento_Architecture.png)
+![AEMの非Magento/サードパーティアーキテクチャの概要](../assets//AEM_nonMagento_Architecture.png)
 
 この統合レイヤーの目的は、サードパーティの API とスキーマを、サポートされている Adobe Commerce GraphQL API と Experience Manager 外のスキーマにマッピングすることです。このカプセル化のおかげで、統合ロジックとシステムは、Experience Manager内のコードを変更することなく更新できます。
 

@@ -2,10 +2,10 @@
 title: DNS レコードのステータスの確認
 description: Cloud Manager を使用して、DNS 設定が正しく解決されているかどうかを判断する方法について説明します。
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: 2278abcf0c34fd34a7730242ee27814d37b7d4d0
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 100%
+source-wordcount: '250'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Cloud Manager は、ドメイン名に対して DNS 検索を実行し、次の�
 
 * **DNS が正しく解決されません** - これは、DNS レコードの設定が解決されていないか、間違っていることを示します。
 
-   * 詳しくは、[DNS 設定の指定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)を参照してください。
+   * 詳しくは、 [DNS 設定の構成](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) を参照してください。
    * 準備が整ったら、ステータスの横にある「**もう一度解決する**」アイコンを選択する必要があります。
 
 * **DNS 解決が進行中です** - 解決が進行中です。

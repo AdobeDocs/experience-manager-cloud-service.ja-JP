@@ -2,10 +2,10 @@
 title: インボックス
 description: インボックスを使用したタスクの管理
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 73%
+source-wordcount: '906'
+ht-degree: 71%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 73%
 
 >[!NOTE]
 >
->アイテムタイプの詳細については、次の項目も参照してください。
+>アイテムタイプの詳細については、次を参照してください。
 >
 >* [プロジェクト](/help/sites-cloud/authoring/projects/overview.md)
 >* [プロジェクト - タスクの操作](/help/sites-cloud/authoring/projects/tasks.md)
@@ -102,7 +102,7 @@ AEM通知インボックスを開くには：
 
   ![インボックスのリスト表示の設定](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-  カレンダーを他のユーザーに委任したり、他のユーザーに委任を依頼したり、委任を管理したりすることもできます。
+  カレンダーを他のユーザーに委任し、他のユーザーに委任を依頼して、委任を管理することもできます。
 
   ![インボックスのリスト表示の委任設定](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
@@ -132,7 +132,7 @@ AEM通知インボックスを開くには：
 
    >[!NOTE]
    >
-   >詳しくは、次のセクションを参照してください。
+   >詳しくは、以下のトピックを参照してください。
    >
    >* ワークフロー項目 — [ワークフローへの参加](/help/sites-cloud/authoring/workflows/participating.md)
 

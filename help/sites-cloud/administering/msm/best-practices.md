@@ -4,10 +4,10 @@ description: Adobe のエンジニアリングおよびコンサルティング�
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1429'
-ht-degree: 83%
+source-wordcount: '1425'
+ht-degree: 80%
 
 ---
 
@@ -39,7 +39,7 @@ MSM は、コンテンツのデプロイメントを自動化するための設�
 
 >[!NOTE]
 >
-> 「権限」タブの CUG をブループリントからライブコピーにロールアウトすることはできません。ライブコピーを設定する際には、この点を考慮してください。
+>「権限」タブの CUG をブループリントからライブコピーにロールアウトすることはできません。ライブコピーを設定する際は、このルールを考慮してください。
 
 ## コンポーネントとコンテナの同期 {#components-and-container-synchronization}
 
@@ -81,13 +81,13 @@ MSM は、次の 2 つの方法で多言語 Web サイトを作成するため�
 
 言語マスターを作成する際は、次の点に注意してください。
 
-* MSM 自体に&#x200B;**コンテンツ翻訳機能は備わっていません**&#x200B;が、翻訳に対応したサードパーティの翻訳コネクタと統合できます。注意：
+* MSM 自体に&#x200B;**コンテンツ翻訳機能は備わっていません**&#x200B;が、翻訳に対応したサードパーティの翻訳コネクタと統合できます。次の点に注意してください。
    * MSM では、ページレベルまたはコンポーネントレベルで継承をキャンセルできます。これにより、次回ロールアウト時にライブコピーの翻訳済みコンテンツがブループリントの未翻訳コンテンツで上書きされるのを防止できます。
       * 一部のサードパーティの翻訳コネクタでは、この MSM の継承の管理が自動化されます。
       * 詳しくは、翻訳サービスプロバイダーにお問い合わせください。
       * 言語マスターを作成して翻訳する代わりに、言語コピーを AEM の標準翻訳統合フレームワークと組み合わせて使用することもできます。
 
-詳しくは、[多言語サイトのコンテンツの翻訳](/help/sites-cloud/administering/translation/overview.md)および[翻訳のベストプラクティス](/help/sites-cloud/administering/translation/best-practices.md)を参照してください。
+詳しくは、 [多言語サイトのコンテンツの翻訳](/help/sites-cloud/administering/translation/overview.md) そして [翻訳のベストプラクティス](/help/sites-cloud/administering/translation/best-practices.md).
 
 ## 構造の変更とロールアウト {#structure-changes-and-rollouts}
 
@@ -144,7 +144,7 @@ MSM では、ロールアウトアクションのカスタマイズに加えて�
 
 ## その他の情報 {#further-information}
 
-MSM とライブコピーについて詳しくは、次の記事を参照してください。
+MSM およびライブコピーについて詳しくは、次の記事を参照してください。
 
 * [ライブコピーの作成と同期](creating-live-copies.md)
 * [ライブコピーの概要コンソール](live-copy-overview.md)

@@ -2,10 +2,10 @@
 title: Adobe Target との統合時に使用する IMS 設定
 description: Adobe Target との統合時に使用する IMS 設定について説明します
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 91%
+source-wordcount: '855'
+ht-degree: 90%
 
 ---
 
@@ -43,7 +43,7 @@ Target Standard API を介して AEM と Adobe Target を統合するには、Ad
 1. AEM で、**ツール**&#x200B;メニューを開きます。
 1. **セキュリティ**&#x200B;セクションで、**Adobe IMS 設定**&#x200B;を選択します。
 1. **作成**&#x200B;を選択して、**Adobe IMS テクニカルアカウント設定**&#x200B;を開きます。
-1. **クラウド設定**&#x200B;の下のドロップダウンを使用して、**Adobe Target**&#x200B;を選択します。
+1. 以下のドロップダウンを使用 **クラウド設定**&#x200B;を選択します。 **Adobe Target**.
 1. **新しい証明書の作成**&#x200B;をアクティブにして、新しいエイリアスを入力します。
 1. 「**証明書の作成**」で確認します。
 
@@ -271,7 +271,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 With [Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md), the Client Code field had been added to the Target configuration window.
 
-When configuring the Tenant ID and Client Code fields, please be aware of that for most customers, the **Tenant ID** and the **Client Code** are the same. This means that both fields contain the same information and are identical. Make sure you enter the Tenant ID in both fields.
+When configuring the Tenant ID and Client Code fields, be aware of that for most customers, the **Tenant ID** and the **Client Code** are the same. This means that both fields contain the same information and are identical. Make sure you enter the Tenant ID in both fields.
 
 >[!NOTE]
 >

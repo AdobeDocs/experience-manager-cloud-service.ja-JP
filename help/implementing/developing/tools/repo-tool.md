@@ -2,10 +2,10 @@
 title: AEM Repo ツール
 description: AEM Repo ツールは、FTP に相当するコマンドラインを使用してローカルファイルシステムと AEM サーバーの間で JCR コンテンツを転送するためのシンプルなソリューションです。
 exl-id: fb887ba3-e40b-4ab1-b142-0748c6d9f18e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 92%
+source-wordcount: '261'
+ht-degree: 87%
 
 ---
 
@@ -23,13 +23,13 @@ AEM Repo ツールは、FTP に相当するコマンドラインを使用して�
 
 >[!CAUTION]
 >
->AEM Repo Tool は常に、指定されたファイルまたはディレクトリ全体を上書きします。
+>AEM Repo Tool は、常に、指定されたファイルまたはディレクトリ全体を上書きします。
 
 ## ダウンロードとドキュメント {#download-and-documentation}
 
 [AEM Repo ツールは、このリンクの GitHub で利用できます](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo)。詳細なインストールおよび使用手順も用意されています。
 
-AEM Repo ツールのソースをダウンロードする場合は、GitHub プロジェクト（次のリンク）を参照してください。
+AEM Repo Tool のソースをダウンロードする場合は、以下にリンクされている GitHub プロジェクトを参照してください。
 
 GitHub のコード
 

@@ -3,10 +3,10 @@ title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 62%
+source-wordcount: '1022'
+ht-degree: 61%
 
 ---
 
@@ -34,7 +34,7 @@ Cloud Manager セルフサービス UI を使用して、AEM の標準搭載 CDN
 
 デフォルトでは、AEMが管理する CDN の設定の場合、すべてのパブリックトラフィックは、実稼動環境と非実稼動環境（開発およびステージング）の両方で、パブリッシュサービスに到達できます。 Cloud Manager ユーザーインターフェイスを使用して、特定の環境のパブリッシュサービスへのトラフィックを制限できます（例えば、IP アドレスの範囲でステージングを制限する）。
 
-詳しくは、「[IP 許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)」を参照してください。
+詳しくは、 [IP許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) を参照してください。
 
 >[!CAUTION]
 >

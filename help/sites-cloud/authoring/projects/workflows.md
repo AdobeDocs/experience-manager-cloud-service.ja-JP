@@ -2,10 +2,10 @@
 title: プロジェクトワークフローの操作
 description: すぐに使用できる様々なプロジェクトワークフローが用意されています。
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 89972691dadb9573160ba16a220c5b7cb3ae9742
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 68%
+ht-degree: 63%
 
 ---
 
@@ -21,18 +21,18 @@ ht-degree: 68%
 
 選択するプロジェクトテンプレートに応じて、次の特定のワークフローを使用できます。
 
-|  | **シンプルなプロジェクト** | **翻訳プロジェクト** |
+|   | **シンプルなプロジェクト** | **翻訳プロジェクト** |
 |---|:-:|:-:|
 | プロジェクト承認ワークフロー | x |  |
 | ローンチをリクエスト | x |  |
 | ランディングページをリクエスト | x |  |
-| メールをリクエスト | x |  |
+| メールをリクエスト | x | |
 | DAM 言語コピーを作成&amp;ast; |  | x |
-| DAM 言語コピー作成／翻訳&amp;ast; |  | x |
+| DAM 言語コピー作成／翻訳&amp;ast; |   | x |
 
 >[!NOTE]
 >
->&amp;ast; これらのワークフローは、プロジェクトの&#x200B;**ワークフロー**&#x200B;タイルからは開始できません。詳しくは、 [アセットの言語コピーの作成](/help/sites-cloud/administering/translation/managing-projects.md)
+>&amp;ast; これらのワークフローは、プロジェクトの&#x200B;**ワークフロー**&#x200B;タイルからは開始できません。詳しくは、 [アセットの言語コピーの作成](/help/sites-cloud/administering/translation/managing-projects.md).
 
 ワークフローを開始および完了する手順は、どのワークフローを選択しても同じです。 ステップのみが変更されます。
 
@@ -70,4 +70,4 @@ AEM でのワークフローの操作について詳しくは、以下を参照�
 
 ## アセットの言語コピー作成（および翻訳）ワークフロー {#create-and-translate-language-copy-workflow-for-assets}
 
-**言語コピーを作成**&#x200B;ワークフローと&#x200B;**言語コピー作成／翻訳**&#x200B;ワークフローについて詳しくは、[アセットの言語コピーの作成](/help/assets/translate-assets.md)を参照してください。
+この **言語コピーを作成** そして **言語コピーの作成と翻訳** ワークフローについて詳しくは、 [アセットの言語コピーの作成](/help/assets/translate-assets.md).

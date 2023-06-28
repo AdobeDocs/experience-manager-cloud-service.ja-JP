@@ -3,10 +3,10 @@ title: 実稼動パイプラインの設定
 description: 実稼動パイプラインを設定し、コードをビルドして実稼働環境にデプロイする方法について説明します。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1513'
-ht-degree: 91%
+source-wordcount: '1509'
+ht-degree: 90%
 
 ---
 
@@ -137,7 +137,7 @@ ht-degree: 91%
 
 1. 「**保存**」をクリックして、パイプラインを保存します。
 
-エクスペリエンス監査用に設定されたパスはサービスに送信され、パイプライン実行時のパフォーマンス、アクセシビリティ、SEO（検索エンジン最適化）、ベストプラクティス、PWA（プログレッシブ Web アプリ）のテストに従って評価されます。 詳しくは、「[エクスペリエンス監査結果について](/help/implementing/cloud-manager/experience-audit-testing.md)」を参照してください。
+エクスペリエンス監査用に設定されたパスはサービスに送信され、パイプライン実行時のパフォーマンス、アクセシビリティ、SEO（検索エンジン最適化）、ベストプラクティス、PWA（プログレッシブ Web アプリ）のテストに従って評価されます。 詳しくは、 [エクスペリエンス監査結果について](/help/implementing/cloud-manager/experience-audit-testing.md) を参照してください。
 
 パイプラインが保存され、**プログラムの概要**&#x200B;ページの&#x200B;**パイプライン**&#x200B;カードで[パイプラインを管理](managing-pipelines.md)できるようになりました。
 
@@ -177,7 +177,7 @@ Web 階層設定パイプラインは HTTPD／Dispatcher 設定をデプロイ�
 
 フロントエンドパイプラインを使用すると、フロントエンド開発者の作業の独立性が高まるほか、開発プロセスを速めることができます。
 
-ドキュメントを参照してください [フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) このプロセスの仕組みと、このプロセスを最大限に活用するために考慮すべきいくつかの検討事項について説明します。
+詳しくは、 [フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) このプロセスの仕組みと、このプロセスを最大限に活用するために考慮すべきいくつかの検討事項について説明します。
 
 ## Dispatcher パッケージのスキップ {#skip-dispatcher-packages}
 

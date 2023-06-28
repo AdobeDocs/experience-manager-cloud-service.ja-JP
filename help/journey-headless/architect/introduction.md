@@ -2,10 +2,10 @@
 title: AEM as a Headless CMS のコンテンツモデリング：概要
 description: Adobe Experience Manager as a Cloud Service as a Headless CMS の機能を使用して、プロジェクトのコンテンツをモデル化する方法を紹介します。
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 96%
+source-wordcount: '722'
+ht-degree: 92%
 
 ---
 
@@ -66,7 +66,7 @@ AEM の場合は、コンテンツアーキテクトがコンテンツモデリ�
 
 これはどちらかと言えば、開発上の詳細になりますが、ストーリーを完結させるうえで興味を引くかもしれません。
 
-コンテンツフラグメントモデルを作成し、作成者がそれらを使用してコンテンツを生成したら、ヘッドレスアプリケーションは、このコンテンツにアクセスする必要があります。
+コンテンツフラグメントモデルを作成し、作成者がそれらを使用してコンテンツを生成したら、ヘッドレスアプリケーションはこのコンテンツにアクセスする必要があります。
 
 Adobe Experience Manager （AEM）as a Cloud Service では、AEM GraphQL API を使用して、コンテンツフラグメントに選択的にアクセスし、必要なコンテンツのみを返すことができます。開発者は、API を使用して、特定のコンテンツを選択するクエリを作成できます。この選択プロセスは、*使用する*&#x200B;コンテンツフラグメントモデルに基づいています。
 

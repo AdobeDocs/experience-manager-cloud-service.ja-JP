@@ -2,10 +2,10 @@
 title: Admin Console へのアクセス
 description: オンボーディングに必要な準備と AEMaaCS 構造の基本事項を理解したら、Admin Console に初めてログインする準備が整います。
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 96%
+source-wordcount: '1107'
+ht-degree: 92%
 
 ---
 
@@ -58,7 +58,7 @@ Admin Console を使用してチーム内のユーザーを管理する前に、
 
    ![Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
-1. 複数の組織にアクセスできる場合は、正しい組織にログインしていることを確認してください。組織を変更するには、右上隅にある組織名をクリックし、アクセスが必要な組織を選択します。
+1. 複数の組織にアクセスできる場合は、正しい組織にログインしていることを確認してください。 組織を変更するには、右上隅の組織名をクリックし、アクセスする必要のある組織を選択します。
 
    ![組織を変更](/help/journey-onboarding/assets/admin-console-orgswitch.png)
 

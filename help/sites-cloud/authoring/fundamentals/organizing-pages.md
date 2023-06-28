@@ -2,10 +2,10 @@
 title: ページの作成と整理
 description: AEM でページを作成および整理する方法
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2542'
-ht-degree: 68%
+source-wordcount: '2539'
+ht-degree: 66%
 
 ---
 
@@ -173,7 +173,7 @@ AEMには、すぐに使用できる複数のテンプレートが用意され�
 
 1. Sites コンソール（例：`https://<host>:<port>/sites.html/content`）を開きます。
 1. 新しいページを作成する場所に移動します。
-1. ツールバーの「**作成**」を使用してドロップダウンセレクターを開き、リストから「**ページ**」を選択します。
+1. 次を使用してドロップダウンセレクターを開きます。 **作成** ツールバーで、 **ページ** リストから：
 
    ![ページの作成](/help/sites-cloud/authoring/assets/organizing-create-page.png)
 
@@ -384,7 +384,7 @@ AEM では、名前変更または移動が行われるページへの内部リ�
 
 >[!NOTE]
 >
->非同期ジョブ処理の詳細およびページ移動や名前変更アクションの制限の設定方法については、運用ユーザーガイドの[非同期ジョブ](/help/operations/asynchronous-jobs.md)を参照してください。
+>非同期ジョブ処理の詳細と、ページ移動や名前変更アクションの制限の設定方法については、 [非同期ジョブ](/help/operations/asynchronous-jobs.md) 」ドキュメントを参照してください。
 
 ### ページの削除 {#deleting-a-page}
 
@@ -402,7 +402,7 @@ AEM では、名前変更または移動が行われるページへの内部リ�
    ![削除ダイアログ](/help/sites-cloud/authoring/assets/delete-page.png)
 
    * **削除する前にページをアーカイブしますか？**  — オンにすると、削除対象として選択したページのバージョンが削除時に作成されます。
-      * [バージョンは、後日復元できます。](/help/sites-cloud/authoring/features/page-versions.md)
+      * [バージョンは後日復元できます](/help/sites-cloud/authoring/features/page-versions.md).
       * 以前のバージョンがない場合は、ページを復元できません。
    * **キャンセル**：アクションを停止します。
    * **削除**：アクションの実行を確定します。

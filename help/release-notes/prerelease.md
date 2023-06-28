@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service プレリリースチャネル
 description: プレリリースチャネルを使用して、AEM as a Cloud Service の今後の機能のプレビューを取得する方法について説明します。
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 91%
+source-wordcount: '1304'
+ht-degree: 83%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 91%
 
 Adobe Experience Manager as a Cloud Service は、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja#aem-as-cloud-service)に従って、毎月のリリースサイクルで新機能を提供します。
 
-次の機能リリースで公開予定の機能について理解するには、プレリリースチャネルを購読します。プレリリースチャネルは、開発環境または任意のサンドボックス環境を設定することでアクセスできます。 AEM UI からアクセス可能な変更をプレビューしたり、新しいプレリリース API に対してコードを作成したりできます。
+次の機能リリースで公開予定の機能について理解するには、プレリリースチャネルを購読します。プレリリースチャネルは、開発環境または任意のサンドボックス環境を設定することでアクセスできます。 AEMユーザーインターフェイスを通じてアクセス可能な変更をプレビューし、新しいプレリリース API に対してコードを作成できます。
 
-特定の機能リリースのプレリリース機能のリストは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)に掲載されています。
+特定の機能リリースのプレリリース機能のリストは、 [リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## AEM as a Cloud Service のリリース {#releases}
 
@@ -33,11 +33,11 @@ AEM as a Cloud Service には 2 種類のリリースがあります。
 
 プレリリースチャネルでは、今後の機能リリースでスケジュールされた機能をプレビューできるので、今後の機能を評価し、独自のプロジェクトで考えられる実装を計画できます。 次の機能リリースの前に計画できます。
 
-例えば、5月にプレリリースチャネルを購読している場合、今後の 6月のリリースで機能を評価できます。
+例えば、5 月でプレリリースチャネルを購読している場合、今後の 6 月のリリースで機能を評価できます。
 
 ![プレリリースサイクルの図](assets/prerelease-cadence.png)
 
-プレリリースでは、今後の AEMaaCS の機能を 1 か月間にわたって紹介します。新機能がプロジェクトやカスタマイズに与える影響を評価し、機能、テスト、ユーザートレーニングの展開を計画するための時間が得られます。
+プレリリースでは、1 ヶ月間の周期的な AEMaaCS の機能を利用でき、新機能がプロジェクトに与える影響を評価し、カスタマイズ機能、テスト、ユーザートレーニングを計画する時間を提供します。
 
 プレリリースチャネルを効果的に活用するには、4 つの手順が必要です。
 
@@ -122,7 +122,7 @@ Maven Central にあるプレリリース `API Jar` を参照するように Mav
 
 #### プレリリースモードで Quickstart SDK を起動 {#prerelease-mode}
 
-1. ソフトウェア配布ポータルから SDK をダウンロードし、[AEM as a Cloud Service SDK へのアクセス](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)の説明に従ってインストールします。
+1. SDK をソフトウェア配布ポータルからダウンロードし、[AEM as a Cloud Service SDK へのアクセス](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)の説明に従ってインストールします。
 1. SDK Quickstart を起動する際に、引数 `-r prerelease` を含めます。
 
 この値は、sticky なので最初の起動時にのみ選択できます。コマンドラインオプションを変更するには、SDK を再インストールします。

@@ -2,10 +2,10 @@
 title: ページテンプレート
 description: ページテンプレートは、新しいページのベースとして使用するページを作成する際に使用します
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3294'
-ht-degree: 79%
+ht-degree: 77%
 
 ---
 
@@ -197,7 +197,7 @@ ht-degree: 79%
 
 ### 設定ブラウザーの使用 {#using-the-configuration-browser}
 
-1. **グローバルナビゲーション**／**ツール**／[**設定ブラウザー**&#x200B;に移動します。](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+1. **グローバルナビゲーション**／**ツール**／[**設定ブラウザー**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)&#x200B;に移動します。
 
    `global` フォルダーなどの既存のフォルダーは左側に一覧表示されます。
 
@@ -304,7 +304,7 @@ ht-degree: 79%
 
 * AEM には、既製のテンプレートタイプがいくつか用意されています（HTML5 ページ、アダプティブフォームページなど）。
 
-   * その他の例は、[WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)の一部として提供されています。
+   * その他の例は、 [WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 * テンプレートタイプは、通常、開発者が定義します。
 
@@ -328,7 +328,7 @@ ht-degree: 79%
 
 >[!CAUTION]
 >
->テンプレートタイプの保存は、正しいフォルダー構造（`/settings/wcm/...`）に従う必要があります。そうしないと、テンプレートタイプが見つからなくなります。
+>テンプレートタイプは、正しいフォルダー構造 ( つまり、 `/settings/wcm/...`) が含まれていない場合、テンプレートタイプが見つかりません。
 
 <!--
 ### Template Type and Mobile Device Groups {#template-type-and-mobile-device-groups-br}
@@ -538,9 +538,9 @@ GitHub のコード
 * **コンポーネント**:
 
    * ページコンポーネントは、テンプレートの `structure/jcr:content` ツリーとページの `jcr:content` ツリーを統合します。
-      * 作成者は、ページコンポーネントを使用して、「編集可能」のフラグが設定されているテンプレート構造のノード（およびいずれかの子）を編集できるだけです。
+      * ページコンポーネントを使用すると、作成者は、「編集可能」のフラグが設定されたテンプレート構造のノード（およびその他の子）の編集のみ可能になります。
       * ページ上にコンポーネントをレンダリングすると、そのコンポーネントの相対パスは `jcr:content` ノード；下の同じ道 `policies/jcr:content` その後、テンプレートのノードが検索されます。
-         * このノードの `cq:policy` プロパティは、実際のコンテンツポリシーを指します（すなわち、このプロパティは、そのコンポーネントのデザイン設定を保持しています）。
+         * この `cq:policy` このノードのプロパティは、実際のコンテンツポリシーを指します（つまり、このプロパティは、そのコンポーネントのデザイン設定を保持しています）。
             * このため、同じコンテンツポリシー設定を再利用する複数のテンプレートを持つことができます。
 
 ### 使用可能なテンプレート {#template-availability}

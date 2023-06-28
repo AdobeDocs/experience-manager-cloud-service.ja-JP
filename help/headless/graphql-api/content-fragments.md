@@ -3,10 +3,10 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '4924'
-ht-degree: 91%
+source-wordcount: '4918'
+ht-degree: 90%
 
 ---
 
@@ -50,7 +50,7 @@ GraphQL とは次のことを意味します。
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
 -->
 
-GraphQL API の詳細については、（多くのリソースの中でも特に）以下を参照してください。
+GraphQL API について詳しくは、次の節（その他の多くのリソース）を参照してください。
 
 * [graphql.org](https://graphql.org)：
 
@@ -377,7 +377,7 @@ GraphQL for AEMでは、ユーザー生成フィールドのデータタイプ�
 
 ## GraphQL 変数 {#graphql-variables}
 
-GraphQL では、クエリに変数を含めることができます。詳しくは、[GraphQL の変数に関するドキュメント](https://graphql.org/learn/queries/#variables)を参照してください。
+GraphQL では、クエリに変数を含めることができます。詳しくは、 [変数に関するGraphQLのドキュメント](https://graphql.org/learn/queries/#variables).
 
 例えば、特定のバリエーション（利用可能な場合）でタイプ `Author` のコンテンツフラグメントをすべて取得するには、GraphiQL で引数 `variation` を指定できます。
 
@@ -407,7 +407,7 @@ query($variation: String!) {
 
 このクエリは、作成者の完全なリストを返します。`another` バリエーションのない作成者は、元のデータに戻ります（この場合、`_variation` は `master` をレポートします）。
 
-指定されたバリエーションを提供する作成者にリストを制限する（元のデータにフォールバックする作成者をスキップする）場合は、[フィルター](#filtering)を適用する必要があります。
+指定したバリエーションを提供する作成者にリストを制限する場合（および元のデータにフォールバックされる作成者をスキップする場合）、 [フィルター](#filtering):
 
 ```graphql
 query($variation: String!) {
@@ -431,7 +431,7 @@ query($variation: String!) {
 
 GraphQL では、GraphQL ディレクティブと呼ばれる変数に基づいてクエリを変更する可能性があります。
 
-例えば、変数 `includePrice` に基づいて、すべての `AdventureModels` のクエリに `adventurePrice` フィールドを含めることができます。
+例えば、 `adventurePrice` すべての `AdventureModels`（変数に基づく） `includePrice`.
 
 ![GraphQL ディレクティブ](assets/cfm-graphqlapi-04.png "GraphQL ディレクティブ")
 
@@ -570,7 +570,7 @@ GraphQL クエリでフィルタリングを使用して、特定のデータを
 
 * フィールドパスを表すコンマ区切りの値のリストにする
    * リストの最初のフィールドでは主な並べ替え順が定義され、2 番目のフィールドでは主な並べ替え条件の 2 つの値が等しい場合に使用され、3 番目のフィールドでは最初の 2 つの条件が等しい場合などに使用されます。
-   * ドット表記（field1.subfield.subfield など）
+   * ドット表記、つまり field1.subfield.subfield など
 * （オプション）並べ替えの方向
    * ASC（昇順）または DESC（降順）。デフォルトでは ASC が適用されます
    * 並べ替えの方向は、フィールドごとに指定できます。つまり、あるフィールドを昇順で、別のフィールドを降順（name、firstName DESC）で並べ替えることができます

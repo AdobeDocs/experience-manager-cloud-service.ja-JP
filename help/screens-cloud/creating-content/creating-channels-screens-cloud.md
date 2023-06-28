@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service でのチャネルの作成と管理
 description: ここでは、Screens as a Cloud Service でチャネルを作成および管理する方法について説明します。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 91%
+source-wordcount: '1087'
+ht-degree: 78%
 
 ---
 
@@ -26,7 +26,7 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 
 >[!NOTE]
 >**前提条件**
->この節を開始する前に、[Screens as a Cloud Service でのプロジェクトの作成と管理](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)を参照してください。
+>このガイドの節を開始する前に、 [Screens でのプロジェクトの作成と管理as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
 以下の手順に従って、Screens as a Cloud Service で新しいシーケンスチャネルを作成します。
 
@@ -42,7 +42,7 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 
    ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
-   > **作成**&#x200B;ウィザードは、チャネルの作成時に様々なタイプのテンプレートを提供します。詳しくは、作成ウィザードの「[使用可能なテンプレート](#available-templates)」の節を参照してください。
+   > **作成**&#x200B;ウィザードは、チャネルの作成時に様々なタイプのテンプレートを提供します。詳しくは、 [使用可能なテンプレート](#available-templates) 詳しくは、作成ウィザードを参照してください。
 
 1. シーケンスチャネルの名前（例：**LoopingChannelOne**）を入力し、「**作成**」をクリックします。
 
@@ -50,7 +50,7 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 
    AEM Screens プロジェクトの「Channels」フォルダーに **LoopingChannelOne** が表示されます。
 
-   チャネルを作成したら、チャネルにコンテンツを追加できます。チャネルにアセット（画像／ビデオ）を追加する方法については、[チャネルへのコンテンツの追加](#add-content)を参照してください。
+   チャネルを作成したら、チャネルにコンテンツを追加できます。詳しくは、 [チャネルへのコンテンツの追加](#add-content) を参照して、チャネルにアセット（画像/ビデオ）を追加する方法を確認してください。
 
 ## チャネルの管理 {#managing-channels}
 
@@ -100,7 +100,7 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
    ![画像](/help/screens-cloud/assets/display/Assignment1.png)
 
 1. 「**デフォルトの詳細を設定**」をクリックします。
-1. 優先度、開始日と終了日、チャネルの繰り返しパターンなど、デフォルトの割り当ての詳細を設定し、「**割り当て**」をクリックします。
+1. 優先度、開始日と終了日、チャネルの繰り返しパターンなど、デフォルトの割り当ての詳細を設定し、 **割り当て**.
 
    ![画像](/help/screens-cloud/assets/display/Assignments2.png)
 
@@ -111,7 +111,7 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 このタイルには、次の情報が表示されます。
 * ディスプレイ内のチャネルのデフォルトの優先度。
 * チャネルの再生がスケジュールされている場合のアクティベーションの開始日と終了日。
-* 繰り返しの合成ビュー（時間ごと／日ごと／週ごと／月ごと／年ごとおよびその繰り返しに付けられた名前）。
+* 繰り返しの合成ビュー（時間別/日別/週別/月別/年別およびその繰り返しに与えられた名前）。
 
 ### ディスプレイに割り当てる際にデフォルトの割り当ての詳細を使用 {#default-display}
 
@@ -143,8 +143,8 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 
 **注意：** デフォルトの割り当ての詳細を使用するチャネル割り当ては、ディスプレイのコンテキストでは編集できません。
 
-* カスタム割り当てに変更する必要がある場合は、まず割り当てを削除し、次に「**カスタム割り当ての詳細を設定**」オプションを使用して再追加する必要があります。
-* デフォルトの割り当ての詳細のプロパティを変更する必要がある場合は、チャネルの詳細ページから直接変更する必要があります。
+* カスタム割り当てに変更する必要がある場合は、まず割り当てを削除し、次に **カスタム割り当ての詳細を設定** オプション。
+* デフォルトの割り当ての詳細のプロパティを変更する必要がある場合は、チャネルの詳細ページから直接変更します。
 
 ### チャネルからデフォルトの割り当ての詳細を削除 {#remove-display}
 
@@ -174,4 +174,4 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 
 ## 次のステップ {#whats-next}
 
-プロジェクトで AEM Screens チャネルを設定したら、チャネルを公開する必要があります。Screens サービスプロバイダーからプレーヤーを管理する前に、[Screens as a Cloud Service でのチャネルの公開](manage-publish.md)を参照してください。
+プロジェクトで AEM Screens チャネルを設定したら、チャネルを公開する必要があります。詳しくは、 [Screens でのチャネルの公開as a Cloud Service](manage-publish.md) Screens Services Provider からプレーヤーを管理する前に、以下を実行します。

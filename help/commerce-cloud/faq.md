@@ -2,10 +2,10 @@
 title: Commerce Integration Framework を使用した AEM と Commerce の統合に関する FAQ
 description: Commerce Integration Framework を使用した AEM と Commerce の統合に関する FAQ
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 100%
+source-wordcount: '967'
+ht-degree: 98%
 
 ---
 
@@ -67,7 +67,7 @@ AEM でマーケティング関連のデータとコンテンツを管理する�
 
 ## 14. プレゼンテーションレイヤー全体に AEM を使用する場合、PCI への準拠をどのように確保できますか。
 
-抽象化された支払い方法を使用することをお勧めします。これにより、ブラウザークライアントは支払いゲートウェイプロバイダーと直接通信し、アドビもコマースソリューションもカード所有者データを保持したり受け渡したりしないようになります。このアプローチには レベル 3 の PCI コンプライアンスのみ必要です。しかし、従業員がシステムやデータとやり取りする方法など、完全に PCI に準拠するには、考慮されるべき点が他にもあります。Adobe Commerce PCI への準拠について詳しくは、[PCI コンプライアンス要件](https://business.adobe.com/jp/products/magento/pci-compliance.html)を参照してください。
+抽象化された支払い方法を使用することをお勧めします。これにより、ブラウザークライアントは支払いゲートウェイプロバイダーと直接通信し、アドビもコマースソリューションもカード所有者データを保持したり受け渡したりしないようになります。このアプローチには レベル 3 の PCI コンプライアンスのみ必要です。しかし、従業員がシステムやデータとやり取りする方法など、完全に PCI に準拠するには、考慮されるべき点が他にもあります。Adobe Commerce PCI への準拠について詳しくは、 [PCI コンプライアンス要件](https://business.adobe.com/jp/products/magento/pci-compliance.html).
 
 ## 15. AEM バージョンと Adobe Commerce クラウドバージョンを使用する場合、この共同ソリューションは PCI に準拠していますか。
 

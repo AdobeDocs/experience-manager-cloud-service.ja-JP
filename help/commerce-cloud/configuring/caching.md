@@ -2,10 +2,10 @@
 title: キャッシュとパフォーマンス
 description: GraphQL とコンテンツキャッシュを有効にしてコマース実装のパフォーマンス最適化に利用できる様々な設定について説明します。
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
-source-git-commit: afbcd1e50a12a9b0642c586d7d81bb90ea91a58d
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 48%
+source-wordcount: '840'
+ht-degree: 44%
 
 ---
 
@@ -48,7 +48,7 @@ venia/components/structure/navigation:true:10:600
 
 これを考えると [Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia) が使用されます。 CIF ナビゲーションコンポーネント名（`core/cif/components/structure/navigation/v1/navigation`）では&#x200B;**なく**、コンポーネントプロキシ名（`venia/components/structure/navigation`）が使用されることに注意してください。
 
-他のコンポーネントのキャッシュは、通常は Dispatcher レベルで設定されたキャッシュと連携して、プロジェクト単位で定義する必要があります。これらのキャッシュはアクティブに無効化されないので、キャッシュ期間は慎重に設定する必要があります。すべての可能なプロジェクトや使用例に適切である「フリーサイズ」の値はありません。プロジェクトの要件に最も適したプロジェクトレベルでキャッシュ方法を定義してください。
+他のコンポーネントのキャッシュは、通常は Dispatcher レベルで設定されたキャッシュと連携して、プロジェクト単位で定義する必要があります。これらのキャッシュはアクティブに無効化されないので、キャッシュ期間は慎重に設定する必要があります。 すべての可能なプロジェクトや使用例に一致する「1 つのサイズ」の値はありません。 プロジェクトの要件に最も適したプロジェクトレベルでキャッシュ方法を定義してください。
 
 ## Dispatcher のキャッシュ {#dispatcher}
 

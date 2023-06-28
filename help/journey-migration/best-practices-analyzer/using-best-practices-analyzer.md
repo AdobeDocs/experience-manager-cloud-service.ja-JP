@@ -2,10 +2,10 @@
 title: ベストプラクティスアナライザーの使用
 description: ベストプラクティスアナライザーの使用
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2479'
-ht-degree: 92%
+source-wordcount: '2474'
+ht-degree: 90%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 92%
 * BPA は、バージョン 6.1 以降の AEM インスタンスでサポートされます。
 
   >[!NOTE]
-  >AEM 6.1 に BPA をインストールするための特別な要件については、[AEM 6.1 へのインストール](#installing-on-aem61)を参照してください。
+  >詳しくは、 [AEM 6.1 へのインストール](#installing-on-aem61) AEM 6.1 に BPA をインストールするための特別な要件については、を参照してください。
 
 * BPA はどの環境でも実行できますが、*ステージング*&#x200B;環境で実行することをお勧めします。
 
@@ -107,7 +107,7 @@ ht-degree: 92%
    ![画像](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   >ACS Commons の結果は無視しないでください。AEM as a Cloud Service との互換性を確認するには、[ドキュメント](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)を参照してください。
+   >ACS Commons の結果は無視しないでください。詳しくは、 [ドキュメント](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) AEM as a Cloud Serviceとの互換性を判断するため。
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
@@ -144,7 +144,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 アクションの大まかな優先度を示すために、各発見に重要度レベルが割り当てられます。
 
 >[!NOTE]
->各結果カテゴリの詳細については、「[パターンディテクターカテゴリ](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=ja)」を参照してください。
+>各検索カテゴリの詳細については、 [パターン検出カテゴリ](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=ja).
 
 次の表に、重要度レベルを示します。
 
@@ -192,7 +192,7 @@ HTTP インターフェイスは、様々な方法で使用できます。
 
 簡単な方法の 1 つは、管理者として AEM に既にサインインしているブラウザーと同じブラウザーで、「ブラウザー」タブを開くことです。「ブラウザー」タブに URL を入力して、結果をブラウザーで表示またはダウンロードすることができます。
 
-また、`curl` や `wget` などのコマンドラインツールや、HTTP クライアントアプリケーションを使用することもできます。認証済みのセッションで「ブラウザー」タブを使用しない場合は、コメントの一部として管理ユーザー名とパスワードを指定する必要があります。
+また、次のようなコマンドラインツールを使用することもできます。 `curl` または `wget` および任意の HTTP クライアントアプリケーション 認証済みのセッションで「ブラウザー」タブを使用しない場合は、コメントの一部として管理ユーザー名とパスワードを指定する必要があります。
 
 これを行う方法の例を次に示します。
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.csv' > report.csv`

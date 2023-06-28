@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service のアーキテクチャの概要
 description: Adobe Experience Manager as a Cloud Service のアーキテクチャの概要。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 1e9ca4f18c3698dbf4bbc0f104559e14f429e28e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1827'
-ht-degree: 94%
+source-wordcount: '1826'
+ht-degree: 93%
 
 ---
 
@@ -65,7 +65,7 @@ AEM as a Cloud Service では、次の特長を備えたオーケストレーシ
 ## 環境 {#environments}
 
 >[!NOTE]
->詳しくは、[デプロイ - 実行モード](/help/implementing/deploying/overview.md#runmodes)を参照してください。
+>詳しくは、 [デプロイ — 実行モード](/help/implementing/deploying/overview.md#runmodes)
 
 AEM as a Cloud Service は個々のインスタンスとして使用でき、各インスタンスは完全な AEM 環境を表します。
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service で使用できる環境には、次の 3 種類があり
 
 * **開発環境**：ステージ環境および実稼動環境と同じランタイム条件で開発者が AEM アプリケーションを実装できます。
 
-  詳しくは、[環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja#using-cloud-manager)を参照してください。
+  詳しくは、 [環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja#using-cloud-manager) を参照してください。
 
 * **迅速な開発環境**：新しいコードや既存のコードをデバッグする迅速な開発イテレーションが可能になります。
 

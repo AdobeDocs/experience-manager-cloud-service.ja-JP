@@ -2,10 +2,10 @@
 title: AEM のユニバーサルエディターの概要
 description: ユニバーサルエディターへのアクセス権を取得する方法と、これを使用するために最初の AEM アプリのインストルメントを開始する方法について説明します。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 94%
+source-wordcount: '805'
+ht-degree: 86%
 
 ---
 
@@ -32,7 +32,7 @@ AEM アプリをオンボーディングし、ユニバーサルエディター�
 
 ## ユニバーサルエディターへのアクセスをリクエスト {#request-access}
 
-最初にユニバーサルエディターへのアクセスをリクエストする必要があります。[https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor) に移動し、ログインしてユニバーサルエディターにアクセスできるかどうかを確認します。
+最初にユニバーサルエディターへのアクセスをリクエストする必要があります。詳しくは、 [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor)、ログインし、ユニバーサルエディターにアクセスできるかどうかを検証します。
 
 アクセス権がない場合は、同じページにリンクされたフォームからリクエストできます。
 
@@ -66,7 +66,7 @@ React アプリを実装していない場合や、サーバーサイドでの�
 
 ユニバーサルエディターを使用して AEM コンテンツをアプリで編集するには、AEM 内で CORS と Cookie の設定を行う必要があります。
 
-次の [OSGi 設定は、AEM オーサリングインスタンスで設定する必要があります。](/help/implementing/deploying/configuring-osgi.md)
+以下 [OSGi 設定はAEMオーサリングインスタンスで設定する必要があります](/help/implementing/deploying/configuring-osgi.md).
 
 * `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` の `SameSite Cookies = None`
 * `org.apache.sling.engine.impl.SlingMainServlet` の X-FRAME-OPTIONS: SAMEORIGIN ヘッダーを削除します
@@ -165,7 +165,7 @@ itemid="urn:<referenceName>:<resource>"
 
 ユニバーサルエディターを使用するようにアプリのインストルメントが行われました。
 
-コンテンツ作成者がユニバーサルエディターを使用して、簡単かつ直感的にコンテンツを作成する方法については、ドキュメント[ユニバーサルエディターを使用したコンテンツのオーサリング](authoring.md)を参照してください。
+詳しくは、 [ユニバーサルエディターを使用したコンテンツのオーサリング](authoring.md) コンテンツ作成者がユニバーサルエディターを使用してコンテンツを作成する際に、簡単で直感的な方法を学習します。
 
 ## その他のリソース {#additional-resources}
 

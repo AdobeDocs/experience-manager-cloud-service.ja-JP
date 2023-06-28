@@ -2,10 +2,10 @@
 title: ヘッドレスコンテンツの翻訳ルールの設定
 description: 翻訳するコンテンツを特定するための翻訳ルールを定義する方法を説明します。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '942'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ AEM ヘッドレス翻訳ジャーニーの以前のドキュメント（[翻訳
 >このドキュメントジャーニーの手順は、コンテンツフラグメントで&#x200B;**翻訳可能**&#x200B;フラグを使用しない場合のみ必要です。
 >
 >* **翻訳可能**&#x200B;フラグは、自動的に翻訳ルールを作成するので、操作は必要ありません。
->* **翻訳可能**&#x200B;フラグは、翻訳統合フレームワークの設定が「**[翻訳用にコンテンツモデルフィールドを有効にする](/help/sites-cloud/administering/translation/integration-framework.md)**」に設定されている場合にのみ使用されます。
+>* この **翻訳可能** フラグは、翻訳統合フレームワーク設定が **[翻訳するコンテンツモデルフィールドの有効化](/help/sites-cloud/administering/translation/integration-framework.md)**.
 >* TIF 設定でこのオプションを有効にすると、手動で作成した翻訳ルールが置き換えられます。|
 
 ## 目的 {#objective}

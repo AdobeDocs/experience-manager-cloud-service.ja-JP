@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 向けアクセシブルコンテンツの作成（WCAG 2.1 準拠）
 description: AEM as a Cloud Service を使用すると、障碍のあるユーザーが Web コンテンツにアクセスして利用できるようになります。
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '13864'
+source-wordcount: '13862'
 ht-degree: 99%
 
 ---
@@ -436,7 +436,7 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 
 >[!NOTE]
 >
-色の代替に関連する要件について詳しくは、[色の使用](#use-of-color)を参照してください。
+色の代替に関する要件については、 [色の使用](#use-of-color).
 
 #### 達成基準 - 感覚的な特徴（1.3.3） {#how-to-meet-sensory-characteristics}
 
@@ -550,7 +550,7 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 
 >[!NOTE]
 >
-フォントは PT／PX／EM サイズ設定が同等でもレンダリング方法が異なる場合があることに注意してください。
+フォントは、同等の PT/PX/EM サイズ設定をレンダリングする方法が異なる場合があることに注意してください。
 >
 Web コンテンツに適したフォントとサイズ設定を選択する際には、読みやすさと使いやすさを慎重に考慮して、的確に判断することをお勧めします。
 

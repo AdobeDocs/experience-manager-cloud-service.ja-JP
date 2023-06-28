@@ -3,7 +3,7 @@ title: Screens as a Cloud Service でのビデオのサムネールサポート
 description: このページでは、Screens as a Cloud Service にビデオのサムネールサポートを追加する方法について説明します。
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: f5af37bf39ecd5a964a8c94a731111c561c2934e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 30%
@@ -43,25 +43,25 @@ ht-degree: 30%
 1. チャネルを選択します。アクションバーで、 **編集** をクリックしてエディターを開きます。
 
 
-   ![アクションバーの「編集」ボタン](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
+   ![アクションバーの編集ボタン](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png).
 
 1. 既存のビデオコンポーネントを追加または編集します（下図を参照）。
 
-   ![ビデオアセットのハイライト表示画像。](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
+   ![ビデオアセットのハイライト表示された画像](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png).
 
 1. 既存のビデオコンポーネントを追加または編集します（下図を参照）。
 
 1. ビデオを選択し、設定 (*レンチ*) アイコンをクリックして、ビデオのプロパティを開きます。
 
-   ![設定アイコンを向く矢印付きの選択済みビデオアセット画像（レンチ形式で表示）。 をクリックします。](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
+   ![設定アイコンを向く矢印付きの選択済みビデオアセット画像（レンチ形式で表示）。 ツールバーの](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
 
 1. この **ビデオ** ダイアログボックスが開き、表示できます **サムネール** ドロップゾーン。
 
-   ![ビデオアセットの画像と「サムネール」ドロップボックスを表示するビデオダイアログボックス](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+   ![ビデオアセットの画像と「サムネール」ドロップボックスを表示するビデオダイアログボックス](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png).
 
 1. アセットピッカーから **サムネール** ドロップゾーンとクリック **完了**.
 
-   ![ビデオダイアログボックスの後ろに表示されるアセットの画像ピッカーで、「サムネール」ドロップボックスに画像アセットが表示されます。](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+   ![ビデオダイアログボックスの後ろに表示されるアセットの画像ピッカーで、「サムネール」ドロップボックスに画像アセットが表示されます](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png).
 
 1. **プレビュー**&#x200B;をクリックします。
 

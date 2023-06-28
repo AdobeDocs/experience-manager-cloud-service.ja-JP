@@ -2,10 +2,10 @@
 title: フロントエンドパイプラインを使用したサイトの開発
 description: フロントエンドパイプラインを使用すると、フロントエンド開発者の自主性が高まり、開発プロセスを大幅に加速できます。このドキュメントでは、フロントエンドビルドプロセスで考慮すべき特定の考慮事項について説明します。
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 93%
+source-wordcount: '1155'
+ht-degree: 91%
 
 ---
 

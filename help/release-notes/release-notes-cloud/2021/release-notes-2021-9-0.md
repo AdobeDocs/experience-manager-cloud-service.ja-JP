@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 リリースのリリースノート。'
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 97%
+source-wordcount: '1569'
+ht-degree: 92%
 
 ---
 
@@ -74,8 +74,8 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### [!DNL Forms] のベータ版機能 {#sep-what-is-new-forms-prerelease}
 
-* **統合ストレージコネクタ：**&#x200B;統合ストレージコネクタを使用すると、顧客側で管理されるリポジトリー内の処理中のデータを外部化することができます。例えば、次のことができます。
-   * Forms ポータルの保存および再開機能を有効にし、顧客側で管理されるデータリポジトリにアダプティブフォームのドラフトを格納する
+* **統合ストレージコネクタ：**&#x200B;統合ストレージコネクタを使用すると、顧客側で管理されるリポジトリー内の処理中のデータを外部化することができます。例えば、
+   * Forms Portal の保存と再開機能を有効にし、顧客が管理するデータリポジトリにアダプティブフォームのドラフトを保存します。
    * 個人の機密情報（SPD）を含んだ処理中の AEM ワークフローデータ（AEM ワークフロー変数データ）を、顧客側で管理されるリポジトリに格納する
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) では、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
@@ -111,7 +111,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### 新機能 {#what-is-new-screens}
 
-* Screens as a Cloud Service で、基本的な再生モニタリングがサポートされるようになりました。プレーヤーでは、各 ping（デフォルトは 30 秒）で様々な再生指標がレポートされるようになります。指標に基づいて、様々なエッジケース（動きのないエクスペリエンス、空白の画面、スケジュールの問題など）を検出できます。この機能を使用すると、プレーヤーがコンテンツを適切に再生しているかどうかをチームがリモートで監視できます。また、空白の画面やフィールド内のエクスペリエンスの不具合に対する反応性が向上し、不具合のあるエクスペリエンスがエンドユーザーに表示されるリスクが低くなります。
+* Screens as a Cloud Service で、基本的な再生モニタリングがサポートされるようになりました。プレーヤーでは、各 ping（デフォルトは 30 秒）で様々な再生指標がレポートされるようになります。指標に基づいて、様々なエッジケース（動きのないエクスペリエンス、空白の画面、スケジュールの問題など）を検出する機能を提供します。 この機能を使用すると、プレーヤーがコンテンツを適切に再生しているかどうかをチームがリモートで監視できます。また、空白の画面やフィールド内のエクスペリエンスの不具合に対する反応性が向上し、不具合のあるエクスペリエンスがエンドユーザーに表示されるリスクが低くなります。
 詳しくは、[基本的な再生モニタリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=ja#playback-monitoring)を参照してください。
 
 * ビデオのサムネールが Screens as a Cloud Service でサポートされるようになりました。コンテンツ作成者は、ビデオのサムネールを定義して、その画像をプレースホルダーとして使用できるようにし、実際のビデオを該当チームが仕上げている間に、コンテンツの再生とターゲティングを適切にテストすることができます。その画像は、ビデオの再生に失敗した場合でも使用できます。
@@ -145,7 +145,7 @@ Cloud Manager API を使用して高度なネットワーク機能をセルフ�
 
 **インデックスの最適化**
 
-検索クエリとインデックス作成のパフォーマンスを向上させるために、このリリース以降、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、フルテキストインデックス lucene-2 は標準では使用されなくなりました。AEMのお客様に合わせてAEM環境でこのフルテキストインデックスを削除するため、Adobeエンジニアリングは、Lucene のフルテキストインデックスを柔軟かつ持続可能に削除するために、お客様と個別かつ積極的に連携します。 詳しくは、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [ドキュメント](/help/operations/indexing.md#index-optimizations) を参照してください。また、ご質問がある場合は、アドビサポートにお問い合わせください。
+検索クエリとインデックス作成のパフォーマンスを向上させるために、このリリース以降、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、フルテキストインデックス lucene-2 は標準では使用されなくなりました。AEMのお客様に合わせてAEM環境でこのフルテキストインデックスを削除するため、Adobeエンジニアリングは、Lucene のフルテキストインデックスを柔軟かつ持続可能に削除するために、お客様と個別かつ積極的に連携します。 次にアクセス： [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [ドキュメント](/help/operations/indexing.md#index-optimizations) 詳細については、お問い合わせください。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -182,7 +182,7 @@ Cloud Acceleration Manager のリリース日は 2021年10月4日です。
 
 ### 新機能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager では、BPA レポートを印刷可能なプレビューで表示できるようになり、印刷や PDF へのエクスポートが簡単になりました。これにより、共有が容易になりました。[ベストプラクティス分析カードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja#best-practices-analysis) の手順 6 および 7 を参照してください。
+* Cloud Acceleration Manager では、BPA レポートを印刷可能なプレビューで表示できるようになり、印刷や PDF へのエクスポートが簡単になりました。これにより、共有が容易になりました。詳しくは、 [ベストプラクティス分析カードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja#best-practices-analysis).
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 
@@ -192,7 +192,7 @@ Cloud Acceleration Manager のリリース日は 2021年10月4日です。
 
 ### 新機能 {#what-is-new-ctt}
 
-* 以下に一覧表示されている機能を含め、ユーザーエクスペリエンスがシンプルになり、ユーザーマッピングが改善されました。詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja#using-user-mapping-tool)を参照してください。
+* 以下に一覧表示されている機能を含め、ユーザーエクスペリエンスがシンプルになり、ユーザーマッピングが改善されました。詳しくは、 [ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja#using-user-mapping-tool).
    * ユーザーマッピングを実行する前に、User Management API への接続をテストできます
    * エラーを適切にスキップし、「ユーザーマッピング」アクティビティを続行できます
    * アクセストークンの有効期限が 24 時間後に切れても、ユーザーマッピングが失敗することはなくなりました。最後に停止した位置からユーザーマッピングを再実行できます。

@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 96%
+source-wordcount: '1164'
+ht-degree: 94%
 
 ---
 
@@ -82,7 +82,7 @@ AEM の翻訳統合フレームワーク（TIF）は、AEM コンテンツの翻
 1. ツールバーの「**作成**」をクリックまたはタップして、新しい設定を作成します。
 1. フィールドに次の情報を入力し、「**作成**」をクリックまたはタップします。
    1. ドロップダウンで「**設定タイプ**」を選択します。リストから「**翻訳統合**」を選択します。
-   1. 設定の&#x200B;**タイトル**&#x200B;を入力します。この&#x200B;**タイトル**&#x200B;によって、**Cloud Services** コンソールおよびページプロパティのドロップダウンリストで設定が識別されます。
+   1. 設定の&#x200B;**タイトル**&#x200B;を入力します。この **タイトル** は、 **Cloud Services** コンソールおよびページプロパティのドロップダウンリスト
    1. オプションとして、設定を格納するリポジトリーノードに使用する&#x200B;**名前**&#x200B;を入力します。
 
    ![翻訳設定の作成](assets/create-translation-configuration.png)

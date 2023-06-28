@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 リリースのリリースノート。'
 description: "[!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 のリリースノート。"
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 95%
+source-wordcount: '1261'
+ht-degree: 91%
 
 ---
 
@@ -73,9 +73,9 @@ ht-degree: 95%
 
 ### 新機能 {#what-is-new-commerce}
 
-* 最新の CIF コアコンポーネント v1.5.0 を含んだ CIF Venia 参照サイト 2020.11.05 をリリースしました。詳しくは、[CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27)を参照してください。
+* 最新の CIF コアコンポーネントバージョン v1.5.0 を含む CIF Venia リファレンスサイト2020.11.05をリリースしました。詳しくは、 [CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) を参照してください。
 
-* CIF コアコンポーネント v1.5.0 をリリースしました。詳しくは、「[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0)」を参照してください。
+* CIF コアコンポーネント v1.5.0 がリリースされました。詳しくは、 [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) を参照してください。
 
 ### バグの修正 {#bug-fixes-commerce}
 
@@ -89,7 +89,7 @@ AEM as a Cloud Service 2020.11.0 の Cloud Manager のリリース日は 2020 �
 
 ### [!DNL Cloud Manager] の新機能  {#what-is-new-cm}
 
-* **環境**&#x200B;カードおよび&#x200B;**環境**&#x200B;概要ページの環境メニューオプションから、新しいメニューオプション「**ローカルログイン**」が利用できるようになりました。詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md#login-locally)を参照してください。
+* **環境**&#x200B;カードおよび&#x200B;**環境**&#x200B;概要ページの環境メニューオプションから、新しいメニューオプション「**ローカルログイン**」が利用できるようになりました。詳しくは、 [環境の管理](/help/implementing/cloud-manager/manage-environments.md#login-locally) を参照してください。
 
 * Cloud Manager の「**学習**」タブが更新され、UI に新しい画像が追加されました。
 

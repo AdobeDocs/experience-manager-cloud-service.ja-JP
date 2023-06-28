@@ -2,10 +2,10 @@
 title: RemotePage コンポーネント
 description: RemotePage コンポーネントは、AEM 内のリモート React SPA を編集するためのカスタムページコンポーネントです。
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
-source-git-commit: d213dd0788e66015237d241caf0f3b5737ce725c
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '392'
-ht-degree: 100%
+ht-degree: 80%
 
 ---
 
@@ -32,14 +32,14 @@ AEM の編集可能な外部 SPA の詳細については、[AEM 内の外部 SP
    * https://github.com/shellscape/webpack-manifest-plugin
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
-      ![entrypoints プロパティの例](assets/asset-manifest-entrypoints.png)
+     ![entrypoints プロパティの例](assets/asset-manifest-entrypoints.png)
 * アプリケーションは、`body` 要素の下の `<div id="root"></div>` で初期化できる必要があります。アプリケーションで異なるマークアップをインスタンス化する必要がある場合は、`sling:resourceSuperType="spa-project-core/components/remotepage` を持つプロキシコンポーネントの HTL スクリプトで適宜調整する必要があります。
 
 ## 制限事項 {#limitations}
 
-* RemotePage コンポーネントでは、実装が[ここにあるような。](https://github.com/shellscape/webpack-manifest-plugin)アセットマニフェストを提供することを想定しています。ただし、RemotePage コンポーネントは、React フレームワーク（および remote-page-next コンポーネントを介した Next.js）での動作のみがテストされているため、他のフレームワーク（Angular など）からのアプリケーションのリモート読み込みはサポートされていません。
-* AEM でリモートレンダリングを行う場合、アプリケーションのルート HTML ファイルに定義された内部 CSS と、ルート DOM ノードのインライン CSS は使用できません。
+* RemotePage コンポーネントでは、実装が[ここにあるような。](https://github.com/shellscape/webpack-manifest-plugin) ただし、RemotePage コンポーネントは、React フレームワーク（および remote-page-next コンポーネントを介して Next.js）との連携のみテストされているので、Angularなど他のフレームワークからのアプリケーションのリモート読み込みはサポートされていません。
+* AEMでリモートレンダリングを行う際、アプリケーションのルートHTMLファイルで定義された内部 CSS と、ルート DOM ノードのインライン CSS は使用できません。
 
 ## 技術的詳細 {#technical-details}
 
-AEM SPA プロジェクトの他の部分と同様、RemotePage コンポーネントもオープンソースです。RemotePage コンポーネントの技術的な詳細については、[GitHub リポジトリーを参照してください。](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)
+AEM SPA プロジェクトの他の部分と同様、RemotePage コンポーネントもオープンソースです。RemotePage コンポーネントの技術的な詳細については、 [GitHub リポジトリを参照してください。](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)

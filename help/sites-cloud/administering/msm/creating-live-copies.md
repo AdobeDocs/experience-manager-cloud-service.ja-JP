@@ -4,10 +4,10 @@ description: ライブコピーを作成および同期して、サイト全体�
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 151ef672e847f793b37d220920081ac9fce94edf
 workflow-type: tm+mt
 source-wordcount: '4308'
-ht-degree: 76%
+ht-degree: 73%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 76%
 
 ブループリント設定は不変データと見なされ、実行時には編集できません。この理由から、設定の変更は CI／CD パイプラインを使用して Git を介してデプロイする必要があります。
 
-詳しくは、[Adobe Experience Manager（AEM）as a Cloud Service の主な変更点](/help/release-notes/aem-cloud-changes.md)を参照してください。
+詳しくは、この記事を参照してください。 [Adobe Experience Manager(AEM)as a Cloud Serviceの主な変更点](/help/release-notes/aem-cloud-changes.md).
 
 以下の手順は、管理者インスタンス上で、ローカル開発および開発目的でのみ使用できます。これらのオプションは、AEMaaCS クラウドインスタンスでは使用できません。
 
@@ -164,7 +164,7 @@ ht-degree: 76%
 
 ブループリント設定からサイトのライブコピーを作成するには：
 
-1. **Sites** コンソールで「**作成**」を選択し、ドロップダウンセレクターから「**ライブコピー**」を選択します。
+1. 内 **サイト** コンソール、選択 **作成**&#x200B;を、 **サイト** をドロップダウンセレクターから選択します。
 1. ライブコピーのソースとして使用するブループリント設定を選択し、「**次へ**」で先に進みます。
 
    ![ブループリントからサイトを作成する](../assets/create-site-from-blueprint.png)
@@ -245,7 +245,7 @@ ht-degree: 76%
 
    ![ロールアウト時間の定義](../assets/rollout-now-later.png)
 
-ロールアウトは非同期ジョブとして処理され、[***非同期ジョブのステータス**&#x200B;ページで確認できます。](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+ロールアウトは非同期ジョブとして処理され、 [***非同期ジョブステータス** ページ](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### 参照レールからのブループリントのロールアウト {#roll-out-a-blueprint-from-the-reference-rail}
 
@@ -270,7 +270,7 @@ ht-degree: 76%
 
 1. これらの詳細を確認したら、「**ロールアウト**」を選択してアクションを実行します。
 
-ロールアウトは非同期ジョブとして処理され、[**非同期ジョブステータス**&#x200B;ページで確認できます。](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+ロールアウトは非同期ジョブとして処理され、 [**非同期ジョブステータス** ページ](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### ライブコピーの概要からのブループリントのロールアウト {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -289,7 +289,7 @@ ht-degree: 76%
 
    ![ロールアウトのスケジュールの定義](../assets/rollout-now-later.png)
 
-ロールアウトは非同期ジョブとして処理され、[**非同期ジョブステータス**&#x200B;ページで確認できます。](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+ロールアウトは非同期ジョブとして処理され、 [**非同期ジョブステータス** ページ](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 ### ライブコピーの同期 {#synchronizing-a-live-copy}
 
@@ -429,7 +429,7 @@ ht-degree: 76%
 
 ### 継承の深度の変更（シャロー／ディープ） {#changing-inheritance-depth-shallow-deep}
 
-既存のライブコピーで、ページの深度、例：子ページが含まれるかどうか）を変更できます。
+既存のライブコピーでは、ページの深さ（子ページを含めるかどうか）を変更できます。
 
 * シャローライブコピーに切り替えた場合：
 
@@ -575,7 +575,7 @@ ht-degree: 76%
 
 加えた変更を追跡するには、**参照**&#x200B;でブループリントページを確認し、ライブコピーページと比較します。
 
-1. **Sites** コンソールで、[ブループリントページまたはライブコピーページに移動し、ページを選択します。](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. 内 **サイト** コンソール [ブループリントまたはライブコピーページに移動して選択](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. 「**[参照](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**」パネルを開き、状況に応じて次のいずれかを選択します。
 
    * **ブループリント**

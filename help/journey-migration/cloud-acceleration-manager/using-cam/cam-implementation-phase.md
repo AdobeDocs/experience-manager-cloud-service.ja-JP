@@ -2,10 +2,10 @@
 title: Cloud Acceleration Manager での実装フェーズ
 description: このページでは、Cloud Acceleration Manager における実装フェーズの概要について説明します。
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 43%
+source-wordcount: '662'
+ht-degree: 35%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 43%
 ![画像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
->詳しくは、[Cloud Acceleration Manager でのプロジェクトの作成と管理](getting-started-cam.md#create-project)を参照してください。
+>詳しくは、 [Cloud Acceleration Manager でのプロジェクトの作成と管理](getting-started-cam.md#create-project) を参照してください。
 
 
 ## ローカル開発カードの使用 {#local-development}
@@ -63,7 +63,7 @@ ht-degree: 43%
 >[!NOTE]
 >これらのタブの内容を確認して、ベストプラクティスアナライザーで扱われないその他の領域を理解します。
 
-「**Dispatcher**」タブでは、AEM as a Cloud Service の Apache および Dispatcher の設定を構築する方法と、クラウド環境にデプロイする前にローカルで検証および実行する方法に関する情報が表示されます。また、クラウド環境でのデバッグについても説明します。
+この **Dispatcher** 「 」タブには、AEMas a Cloud Serviceの Apache および Dispatcher 設定を構築する方法と、クラウド環境にデプロイする前にローカルで検証および実行する方法に関する情報が表示されます。 また、クラウド環境でのデバッグについても説明します。
 
 ![画像](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 

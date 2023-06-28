@@ -2,10 +2,10 @@
 title: AEM でのコンテンツフラグメントモデルの作成について
 description: コンテンツフラグメントモデルを使用したヘッドレス CMS のコンテンツモデリングの概念と仕組みについて説明します。
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 89%
+source-wordcount: '687'
+ht-degree: 84%
 
 ---
 
@@ -63,7 +63,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ![フィールドの定義](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-データタイプを追加したら、そのフィールドの「**プロパティ**」を定義する必要があります。プロパティは、使用するタイプによって異なります。次に例を示します。
+データ型を追加した後、 **プロパティ** そのフィールドの プロパティは、使用するタイプによって異なります。次に例を示します。
 
 ![データプロパティ](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -73,7 +73,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ### コンテンツ作成者 {#your-content-authors}
 
-コンテンツ作成者には、モデルの作成に使用された実際のデータタイプとプロパティは表示されません。つまり、場合によっては、特定のフィールドへの入力方法に関するヘルプと情報をコンテンツ作成者に提供する必要があります。基本的な情報については「フィールドラベル」と「デフォルト値」を使用できますが、より複雑なケースでは、プロジェクト固有のドキュメントを準備する必要があるかもしれません。
+コンテンツ作成者には、モデルの作成に使用した実際のデータタイプとプロパティが表示されません。 つまり、場合によっては、特定のフィールドへの入力方法に関するヘルプと情報をコンテンツ作成者に提供する必要があります。基本的な情報については「フィールドラベル」と「デフォルト値」を使用できますが、より複雑なケースでは、プロジェクト固有のドキュメントを準備する必要があるかもしれません。
 
 >[!NOTE]
 >

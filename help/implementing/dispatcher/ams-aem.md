@@ -3,10 +3,10 @@ title: AMS から AEM as a Cloud Service への Dispatcher 設定の移行
 description: AMS から AEM as a Cloud Service への Dispatcher 設定の移行
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1446'
-ht-degree: 97%
+source-wordcount: '1451'
+ht-degree: 83%
 
 ---
 
@@ -30,11 +30,11 @@ AMS 設定を変換する方法を順を追って説明します。ここでは�
 
 ### アーカイブを抽出し、最終的なプレフィックスを削除する
 
-アーカイブをフォルダーに抽出し、直下のサブフォルダーが、`conf`、`conf.d`、`conf.dispatcher.d` および `conf.modules.d` で始まっていることを確認します。そうでない場合は、それらを階層の上に移動します。
+アーカイブをフォルダーに抽出し、直下のサブフォルダーが、`conf`、`conf.d`、`conf.dispatcher.d` および `conf.modules.d` で始まっていることを確認します。表示されない場合は、階層内で上に移動します。
 
 ### 未使用のサブフォルダーとファイルを削除する
 
-サブフォルダーの `conf` と `conf.modules.d`、および `conf.d/*.conf` と一致するファイルを削除します。
+サブフォルダを削除 `conf` および `conf.modules.d`，および一致するファイル `conf.d/*.conf`.
 
 ### 非公開の仮想ホストをすべて排除する
 
@@ -58,7 +58,7 @@ AMS 設定を変換する方法を順を追って説明します。ここでは�
 
 `base_rewrite.rules` と `xforwarded_forcessl_rewrite.rules` という名前のファイルをすべて削除します。また、それらを参照する仮想ホストファイル内の `Include` ステートメントを削除することを忘れないでください。
 
-`conf.d/rewrites` に 1 つのファイルのみ含まれる場合は、そのファイルの名前を `rewrite.rules` に変更します。また、仮想ホストファイル内にそのファイルを参照する `Include` ステートメントを必ず追加するようにしてください。
+If `conf.d/rewrites` に単一のファイルが含まれている場合は、名前をに変更します。 `rewrite.rules` そして、必ず適応させる `Include` 仮想ホストファイル内のそのファイルを参照するステートメント。
 
 ただし、フォルダーに複数の仮想ホスト固有のファイルが含まれている場合は、そのファイルの内容を、仮想ホストファイル内のファイルを参照する `Include` ステートメントにコピーする必要があります。
 
@@ -68,7 +68,7 @@ AMS 設定を変換する方法を順を追って説明します。ここでは�
 
 `ams_default.vars` という名前のファイルをすべて削除し、それらを参照する仮想ホストファイル内の `Include` ステートメントを忘れずに削除してください。
 
-`conf.d/variables` に 1 つのファイルのみ含まれる場合は、そのファイルの名前を `custom.vars` に変更します。また、仮想ホストファイル内にそのファイルを参照する `Include` ステートメントを必ず追加するようにしてください。
+If `conf.d/variables` に単一のファイルが含まれている場合は、名前をに変更します。 `custom.vars` そして、必ず適応させる `Include` 仮想ホストファイル内のそのファイルを参照するステートメント。
 
 ただし、フォルダーに複数の仮想ホスト固有のファイルが含まれている場合は、そのファイルの内容を、仮想ホストファイル内のファイルを参照する `Include` ステートメントにコピーする必要があります。
 
@@ -111,7 +111,7 @@ $ validator httpd .
 
 `conf.dispatcher.d/cache` が空になった場合は、標準の Dispatcher 設定からこのフォルダーに `conf.dispatcher.d/cache/rules.any` ファイルをコピーします。標準の Dispatcher 設定は、この SDK の `src` フォルダーにあります。ファームファイル内の `ams_*_cache.any` ルールファイルを参照する `$include` ステートメントも、必ず適応させます。
 
-`conf.dispatcher.d/cache` ではなく、サフィックス付きの単一のファイル `_cache.any` が含まれている場合、`rules.any` に名前変更し、ファームファイル内のそのファイルを参照する `$include` ステートメントも必ず適応させます。
+代わりに `conf.dispatcher.d/cache` サフィックス付きの単一のファイルが含まれるようになりました `_cache.any`を呼び出す場合は、名前をに変更します。 `rules.any` そして、必ず適応させる `$include` ファームファイル内のそのファイルを参照するステートメントも参照します。
 
 ただし、フォルダーにそのパターンを持つファーム固有のファイルが複数含まれている場合は、そのファイルの内容を、ファームファイル内のファイルを参照する `$include` ステートメントにコピーする必要があります。
 
@@ -131,7 +131,7 @@ $include "../cache/default_invalidate.any"
 
 `ams_` のプレフィックスが付いたファイルを削除します。
 
-`conf.dispatcher.d/clientheaders` に、サフィックス付きの単一のファイル `_clientheaders.any` が含まれている場合、`clientheaders.any` に名前変更し、ファームファイル内のそのファイルを参照する `$include` ステートメントも必ず適応させます。
+If `conf.dispatcher.d/clientheaders` サフィックス付きの単一のファイルが含まれるようになりました `_clientheaders.any`を呼び出す場合は、名前をに変更します。 `clientheaders.any` そして、必ず適応させる `$include` ファームファイル内のそのファイルを参照するステートメントも参照します。
 
 ただし、フォルダーにそのパターンを持つファーム固有のファイルが複数含まれている場合は、そのファイルの内容を、ファームファイル内のファイルを参照する `$include` ステートメントにコピーする必要があります。
 
@@ -156,7 +156,8 @@ $include "../clientheaders/default_clientheaders.any"
 
 `ams_` のプレフィックスが付いたファイルを削除します。
 
-`conf.dispatcher.d/filters` に 1 つのファイルのみ含まれる場合は、そのファイルの名前を `filters.any` に変更します。また、ファームファイル内にそのファイルを参照する `$include` ステートメントを必ず追加するようにしてください。
+If `conf.dispatcher.d/filters` に単一のファイルが含まれている場合は、名前をに変更する必要があります。
+`filters.any` そして、必ず適応させる `$include` ファームファイル内のそのファイルを参照するステートメントも参照します。
 
 ただし、フォルダーにそのパターンを持つファーム固有のファイルが複数含まれている場合は、そのファイルの内容を、ファームファイル内のファイルを参照する `$include` ステートメントにコピーする必要があります。
 
@@ -194,7 +195,8 @@ $include "../renders/default_renders.any"
 
 `ams_` のプレフィックスが付いたファイルを削除します。
 
-`conf.dispatcher.d/virtualhosts` に 1 つのファイルのみ含まれる場合は、そのファイルの名前を `virtualhosts.any` に変更します。また、ファームファイル内にそのファイルを参照する `$include` ステートメントを必ず追加するようにしてください。
+If `conf.dispatcher.d/virtualhosts` に単一のファイルが含まれている場合は、名前をに変更する必要があります。
+`virtualhosts.any` そして、必ず適応させる `$include` ファームファイル内のそのファイルを参照するステートメントも参照します。
 
 ただし、フォルダーにそのパターンを持つファーム固有のファイルが複数含まれている場合は、そのファイルの内容を、ファームファイル内のファイルを参照する `$include` ステートメントにコピーする必要があります。
 

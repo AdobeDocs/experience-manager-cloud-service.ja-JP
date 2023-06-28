@@ -2,10 +2,10 @@
 title: 非表示条件の使用
 description: 非表示条件を使用して、コンポーネントリソースがレンダリングされるかどうかを判断できます。
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '615'
-ht-degree: 60%
+ht-degree: 58%
 
 ---
 
@@ -49,7 +49,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 ## 例 {#example}
 
-非表示の条件の例は、AEM 全体（特に、[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)）で確認できます。例えば、[WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)で実装されている[リストコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=ja)について考えてみましょう。
+非表示の条件の例は、AEM 全体（特に、[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)）で確認できます。例えば、 [リストコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=ja) の [WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 [テンプレートエディターを使用](/help/sites-cloud/authoring/features/templates.md)した場合、テンプレート作成者は、ページ作成者が利用できるリストコンポーネントのオプションをデザインダイアログで定義できます。リストを静的リスト、子ページのリスト、タグ付きページのリストなどにするかどうかを指定するオプション。 は、有効または無効にすることができます。
 

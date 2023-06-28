@@ -2,10 +2,10 @@
 title: ページの公開
 description: AEM を使用してページを公開および非公開にする方法
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 73%
+source-wordcount: '1802'
+ht-degree: 68%
 
 ---
 
@@ -81,11 +81,11 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 >[!NOTE]
 >
->エディターからの公開は、浅い公開です。つまり、選択したページ（複数可）だけが公開され、子ページは公開されません。
+>エディターからの公開は、浅い公開です。つまり、選択したページ（複数可）のみが公開され、子ページは公開されません。
 
 >[!NOTE]
 >
->エディターから[エイリアス](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)でアクセスしたページは公開できません。エディターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
+>エディターで[エイリアス](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)を使用してアクセスしたページは公開できません。エディターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
 
 ### コンソールからの公開 {#publishing-from-the-console}
 
@@ -114,9 +114,9 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 >
 >クイック公開は、浅い公開です。つまり、選択したページ（複数可）のみが公開され、子ページは公開されません。
 
-#### 公開を管理 {#manage-publication}
+#### 公開の管理 {#manage-publication}
 
-**公開を管理**&#x200B;には、**クイック公開**&#x200B;よりも多くのオプションがあります。子ページを含めたり、参照をカスタマイズしたり、使用可能なワークフローを開始したり、後日公開するためのオプションを提供したりします。
+**公開を管理** 次よりも多くのオプションを提供： **クイック公開**&#x200B;を使用すると、子ページを含めたり、参照をカスタマイズしたり、適用可能なワークフローを開始したり、後日公開するオプションを提供したりできます。
 
 「公開を管理」を使用してページを公開または非公開にするには：
 
@@ -203,7 +203,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
    >[!NOTE]
    >
-   >この **ワークフロー** ユーザーの権限に基づいて、手順が表示されます。 公開するための特権については、このページの前述の注意を参照してください。詳しくは、ワークフローへのアクセスの管理および[ページへのワークフローの適用](/help/sites-cloud/authoring/workflows/applying.md)を参照してください。
+   >この **ワークフロー** ユーザーの権限に基づいて、手順が表示されます。 公開権限およびワークフローへのアクセスの管理および [ページへのワークフローの適用](/help/sites-cloud/authoring/workflows/applying.md) 」を参照してください。
 
    リソースは、トリガーされたワークフローによってグループ化され、次の各オプションが提供されます。
 

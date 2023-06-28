@@ -2,10 +2,10 @@
 title: カスタムエラーページ
 description: AEM には、HTTP エラーを処理するための標準的なエラーハンドラーが付属しており、これはカスタマイズできます。
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 77%
+source-wordcount: '573'
+ht-degree: 75%
 
 ---
 
@@ -62,7 +62,7 @@ HTTP [500 内部サーバーエラー](https://www.w3.org/Protocols/rfc2616/rfc2
    * HTTP 応答コード 500
    * 例外スタックトレース
 
-[エラーハンドラーで表示されるページをカスタマイズする](#how-to-customize-pages-shown-by-the-error-handler)ことで、`500.jsp` スクリプトを作成できます。ただし、このスクリプトが使用されるのは、`HttpServletResponse.sendError(500)` が明示的に（例外キャッチャーから）実行される場合に限ります。
+[エラーハンドラーで表示されるページをカスタマイズする](#how-to-customize-pages-shown-by-the-error-handler)ことで、`500.jsp` スクリプトを作成できます。ただし、次の場合にのみ使用されます。 `HttpServletResponse.sendError(500)` が明示的に実行される。例外キャッチャーから。
 
 それ以外の場合は、応答コードは 500 に設定されますが、`500.jsp` スクリプトは実行されません。
 
@@ -77,6 +77,6 @@ HTTP [500 内部サーバーエラー](https://www.w3.org/Protocols/rfc2616/rfc2
 >
 >オーサーインスタンスで、 [CQ WCM Debug Filter](/help/implementing/deploying/configuring-osgi.md) はデフォルトで有効になっています。 これにより、常に応答コード 200 が生成されます。 デフォルトのエラーハンドラーは、応答に完全なスタックトレースを書き込むことで応答します。
 >
->カスタムエラーハンドラーの場合、コード 500 を含んだ応答が必要です。そのため、[CQ WCM Debug Filter を無効にする必要があります](/help/implementing/deploying/configuring-osgi.md)。それにより、応答コード 500 が返され、その結果、正しい Sling エラーハンドラーがトリガーされるようになります。
+>カスタムエラーハンドラーの場合、コード 500 を含む応答が必要です。そのため、[CQ WCM Debug Filter を無効にする必要があります](/help/implementing/deploying/configuring-osgi.md)。そうすることで、応答コード 500 が返され、それによって正しい Sling エラーハンドラーがトリガーされます。
 >
 >パブリッシュインスタンスでは、CQ WCM Debug Filter は、有効として設定されている場合も含めて&#x200B;**常に**&#x200B;無効になります。

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 リリースのリリースノート。'
 description: 「[!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 のリリースノート」
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 96%
+source-wordcount: '1290'
+ht-degree: 90%
 
 ---
 
@@ -73,9 +73,9 @@ AEM Forms は、長年にわたって、優れたオンボーディングと登�
 
 * 製品の詳細コンポーネントを任意のコンテンツページで使用および設定できるようになりました。
 
-* 最新の CIF コアコンポーネント v1.9.0 を含んだ CIF Venia 参照サイト 2021.03.25 をリリースしました。詳しくは、[CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25)を参照してください。
+* 最新の CIF コアコンポーネントバージョン v1.9.0 を含む CIF Venia 参照サイト2021.03.25をリリースしました。詳しくは、 [CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) を参照してください。
 
-* CIF コアコンポーネント v1.9.0 をリリースしました。詳しくは、[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0)を参照してください。
+* CIF コアコンポーネント v1.9.0 がリリースされました。詳しくは、 [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) を参照してください。
 
 
 ## Cloud Manager {#cloud-manager}
@@ -160,19 +160,19 @@ AEM as a Cloud Service 2021.3.0 の Cloud Manager のリリース日は 2021 年
 
 ### ベストプラクティスアナライザーの新機能 {#what-is-new-bpa}
 
-* UI の BPA レポートと、CSV ファイルとしてエクスポートされたレポートから、ACS Commons の結果を除外する機能。
+* ユーザーインターフェイスの BPA レポートと CSV ファイルとして書き出されたレポートから、ACS Commons の結果を除外する機能。
 
 ## コードリファクタリングツール {#code-refactoring-tools}
 
 ### コードリファクタリングツールの新機能 {#what-is-new-crt}
 
-* Repository Modernizer の新機能と機能強化は次のとおりです。最新バージョンについては、[Repository Modernizer の GitHub リソース](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)を参照してください。
+* Repository Modernizer の新機能と機能強化は次のとおりです。詳しくは、 [GitHub リソース：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) を参照してください。
    * OSGi 設定（repoinit 設定を除く）を、推奨の .cfg.json 形式に正規化します。
    * OSGi 設定フォルダーの名前を指定の形式に変更します。
    * ui.apps.structure プロジェクトを生成します。
    * 分析モジュールを作成します。
 
-* Dispatcher コンバーターの新機能と機能強化は次のとおりです。最新バージョンについては、[Dispatcher コンバーターの GitHub リソース](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)を参照してください。
+* Dispatcher コンバーターの新機能と機能強化は次のとおりです。詳しくは、 [GitHub リソース：Dispatcher コンバーター](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
    * 異なるインクルージョンに対して、コンテンツをインライン化するのではなく別個のファイルを作成します。
    * vhosts のフォルダーパスと vhost ファイルのパスを両方とも処理できます。
    * 600 件以上の大規模な顧客設定を持つファームファイルを生成できます。

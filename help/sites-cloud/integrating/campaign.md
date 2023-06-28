@@ -4,9 +4,9 @@ description: Adobe Campaignとの統合に対するAEMas a Cloud Serviceのサ�
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: 6d391ea86a950a3777311543492b5b89813ae377
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '175'
 ht-degree: 10%
 
 ---
@@ -20,7 +20,7 @@ Adobe Campaignとの統合に対するAEMas a Cloud Serviceのサポートにつ
 >
 >このドキュメントでは、Adobe CampaignとAEM as a Cloud Service( クラウドネイティブAEMソリューション ) の統合について説明します。
 >
->Adobe CampaignとAEM 6.5 の統合に関する詳細は、オンプレミスまたは AMS がホストするAEMソリューションを参照してください。 [この文書をご覧ください。](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html)
+>Adobe CampaignとAEM 6.5 の統合に関する詳細は、オンプレミスまたは AMS がホストするAEMソリューションを参照してください。 [このドキュメントを参照](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html).
 
 ## Adobe Campaign Classic との統合 {#acc}
 

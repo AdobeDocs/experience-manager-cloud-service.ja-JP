@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 73fe6ce5bbdf0ad437ae4b47b892ad05e016ab68
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2079'
 ht-degree: 96%
 
 ---
@@ -382,7 +382,7 @@ React ベースの Peregrine と CIF のコアコンポーネントを初期化�
 
 - 新しいページで、前の手順で作成したスキーマを&#x200B;__検索して選択__&#x200B;し、「__次へ__」ボタンをクリックします。
 
-   ![AEP のデータセット作成での「スキーマを選択」セクション](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
+  ![AEP のデータセット作成での「スキーマを選択」セクション](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
 
 1. __データセットを設定／名前__&#x200B;フィールドを使用してデータセットに名前を付け、「__終了__」ボタンをクリックします。
 

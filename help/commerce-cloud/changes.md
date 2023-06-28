@@ -2,30 +2,30 @@
 title: コマース統合フレームワーク（CIF）アドオンの主な変更点
 description: 古い CIF バージョンと比較した、コマース統合フレームワーク（CIF）の主な変更点です。
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
-source-git-commit: 6c9a44940ea9e52bd27a233c7aa24e320a24076c
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 79%
+source-wordcount: '452'
+ht-degree: 91%
 
 ---
 
 # コマース統合フレームワーク（CIF）アドオンの主な変更点{#notable-changes}
 
-Adobe Experience Manager as a Cloud Serviceは、AEMプロジェクトを管理するための様々な新機能と可能性を提供します。 これらの機能の詳細については、「[Experience Manager as a Cloud Service の変更点](/help/release-notes/aem-cloud-changes.md)」を参照してください。
+Adobe Experience Manager as a Cloud Service は、AEM プロジェクトを管理するための様々な新機能と可能性を提供します。これらの機能の詳細については、 [Experience Manageras a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
-このドキュメントでは、Commerce Integration Framework(CIF) アドオンと、CIF Classic（クイックスタート）と CIF オープンソースと呼ばれる古い CIF バージョンとの重要な違いについて説明します。
+このドキュメントでは、主に CIF Classic（Quickstart）と CIF オープンソースと呼ばれる、コマース統合フレームワーク（CIF）アドオンと古い CIF バージョンの重要な相違点について説明します。
 
 ## インストールとアップデート
 
 AEM CIF アドオンは、Cloud Manager を使用してインストールされます。インストールには、クレジットなしで CIF をインストールできるサンドボックスを除き、CIF クレジットが必要です。クレジットは、AEM 契約の CIF アドオンのプロビジョニングを通じて自動的に受け取ります。
 
-アドオンは、通常のAEMas a Cloud Service更新の一環として、自動的に更新されます。
+アドオンは、通常の AEM as a Cloud Service アップデートの一環として自動的にアップデートされます。
 
 **以前の CIF バージョン**
 
 * CIF Classic：インストールは不要で、CIF は Quickstart の一部でした。CIF のアップデートは、通常の AEM またはサービスパックのアップデートに含まれていました。
 * AEM オンプレミス用の CIF Open-source：GitHub を使用したインストール。アップデートは、手動アップデートやメンテナンス作業の一部でした。
-* AEM Adobe Managed Services 用の CIF オープンソース：アカウントチームによるAdobe。 アップデートは、手動アップデートやメンテナンス作業の一部でした。
+* AEM Adobe Managed Services 用の CIF オープンソース：アドビアカウントチームによるインストール。アップデートは、手動アップデートやメンテナンス作業の一部でした。
 
 ## エンドポイントの設定
 
@@ -38,11 +38,11 @@ AEM CIF アドオンは、Cloud Manager を使用してインストールされ�
 
 ## CIF Venia プロジェクトのデプロイメント
 
-プロジェクトは [Cloud Manager Git リポジトリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html)で使用可能で、[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ja) を介してデプロイされます。
+プロジェクトは [Cloud Manager Git リポジトリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html?lang=ja)で使用可能で、[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ja) を介してデプロイされます。
 
 **以前の CIF バージョン**
 
-* CIF Classic:AEMパッケージのインストールを使用
+* CIF Classic：AEM パッケージによるインストール
 * CIF Open-source：[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ja) を使用
 
 ## 製品カタログデータ
@@ -63,4 +63,4 @@ AEM は、製品やカテゴリに割り当てられた AEM カタログテン�
 
 >[!NOTE]
 >
->AEM Managed Service またはオンプレミスの AEM での CIF の使用方法に関する追加ドキュメントについては、[Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) を参照してください。
+>AEM Managed Service またはAEM On-premise での CIF の使用方法に関する追加ドキュメントについては、 [コマース統合フレームワーク](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)

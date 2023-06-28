@@ -2,10 +2,10 @@
 title: カスタムコード品質ルール
 description: このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。これらは、Adobe Experience Manager Engineering のベストプラクティスに基づいています。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3504'
-ht-degree: 98%
+source-wordcount: '3502'
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->完全な SonarQube ルールは、アドビ独自の情報が原因でダウンロードできません。[このリンクを使用して、ルールの完全なリストをダウンロードできます。](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)ルールの説明と例については、このドキュメントを引き続き参照してください。
+>完全な SonarQube ルールは、アドビ独自の情報が原因でダウンロードできません。ルールの完全なリストをダウンロードできます [このリンクを使用](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). ルールの説明と例については、このドキュメントを引き続き参照してください。
 
 >[!NOTE]
 >
@@ -504,7 +504,7 @@ public void doThis(Resource resource) {
 
 確実な実行を必要とするタスクには、 Sling スケジューラーを使用しないでください。Sling スケジュールジョブは実行を保証し、クラスター化環境と非クラスター化環境の両方に適しています。
 
-Sling ジョブがクラスター環境で処理される方法について詳しくは、[Apache Sling のイベントとジョブの取り扱い](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)を参照してください。
+詳しくは、 [Apache Sling Eventing and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) を参照して、Sling ジョブがクラスター環境で処理される方法について確認してください。
 
 ### Experience Manager の非推奨 API は使用しない {#sonarqube-aem-deprecated}
 
@@ -560,7 +560,7 @@ public class DontDoThis implements Page {
 
 標準提供の複数の Experience Manager Oak インデックスには Tika 設定が含まれており、これらのインデックスをカスタマイズする場合は Tika 設定を含める必要があります。このルールは、 `damAssetLucene`、 `lucene`、`graphqlConfig` インデックスのカスタマイズを確認し、 `tika` ノードがない場合、または `tika` ノードに `config.xml` という名前の子ノードがない場合には問題を報告します。
 
-インデックス定義のカスタマイズについて詳しくは、[インデックス作成に関するドキュメント](/help/operations/indexing.md#preparing-the-new-index-definition)を参照してください。
+詳しくは、 [インデックス作成ドキュメント](/help/operations/indexing.md#preparing-the-new-index-definition) インデックス定義のカスタマイズの詳細については、を参照してください。
 
 #### 非準拠コード {#non-compliant-code-indextikanode}
 
@@ -773,10 +773,10 @@ OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、Experien
 クラシック UI ダイアログを持つ Experience Manager コンポーネントには、対応するタッチ UI ダイアログが常に存在する必要があります。どちらも、最適なオーサリングエクスペリエンスを提供し、クラシック UI がサポートされていない Cloud Service デプロイメントモデルとの互換性を持たせます。このルールは、次のシナリオを検証します。
 
 * クラシック UI ダイアログ（`dialog` 子ノード）を持つコンポーネントには、対応するタッチ UI ダイアログ（`cq:dialog` 子ノード）が必要です。
-* クラシック UI デザインダイアログ（`design_dialog` ノード）を使用しているコンポーネントには、対応するタッチ UI デザインダイアログ（`cq:design_dialog` 子ノード）が必要です。
+* クラシック UI デザインダイアログ ( `design_dialog` ノード ) には、対応するタッチ UI デザインダイアログ ( つまり、 `cq:design_dialog` 子ノード ) です。
 * クラシック UI ダイアログとクラシック UI デザインダイアログの両方を持つコンポーネントには、対応するタッチ UI ダイアログと対応するタッチ UI デザインダイアログの両方が必要です。
 
-Experience Manager 最新化ツールのドキュメントには、コンポーネントをクラシック UI からタッチ UI に変換する方法に関するドキュメントとツールが記載されています。詳しくは、[Experience Manager 最新化ツールのドキュメント](https://opensource.adobe.com/aem-modernize-tools/)を参照してください。
+Experience Manager 最新化ツールのドキュメントには、コンポーネントをクラシック UI からタッチ UI に変換する方法に関するドキュメントとツールが記載されています。詳しくは、 [Experience Manager最新化ツールのドキュメント](https://opensource.adobe.com/aem-modernize-tools/) を参照してください。
 
 ### 可変コンテンツと不変コンテンツがパッケージ内に混在してはならない {#oakpal-packages-immutable}
 
@@ -791,7 +791,7 @@ Cloud Service デプロイメントモデルとの互換性を保つには、個
 >
 >[顧客パッケージでは /libs 下のノードを作成／変更しない](#oakpal-customer-package)のルールが常に適用されます。
 
-詳しくは、[Experience Manager プロジェクト構造](/help/implementing/developing/introduction/aem-project-content-package-structure.md)を参照してください。
+詳しくは、 [Experience Managerプロジェクト構造](/help/implementing/developing/introduction/aem-project-content-package-structure.md) を参照してください。
 
 ### リバースレプリケーションエージェントを使用しない {#oakpal-reverse-replication}
 
@@ -800,7 +800,7 @@ Cloud Service デプロイメントモデルとの互換性を保つには、個
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
-リバースレプリケーションのサポートは、Experience Manager as a Cloud Service の[リリースノート](/help/release-notes/aem-cloud-changes.md#replication-agents)で説明しているように、Cloud Service のデプロイメントでは利用できません。
+リバースレプリケーションのサポートは、Cloud Serviceのas a Cloud Serviceの一部として説明されているように、Experience Managerのデプロイメントでは利用できません。 [リリースノート](/help/release-notes/aem-cloud-changes.md#replication-agents).
 
 リバースレプリケーションを使用するお客様は、アドビに問い合わせて、代替ソリューションをご利用ください。
 
@@ -853,7 +853,7 @@ Experience Manager as a Cloud Service 上でのアセット処理をアセット
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-従来、Experience Manager プロジェクトでは静的テンプレートを使用するのが一般的でしたが、アドビでは、最も柔軟性が高く、静的テンプレートにはない追加機能をサポートしている編集可能なテンプレートをお勧めします。詳しくは、[ページテンプレート](/help/implementing/developing/components/templates.md)のドキュメントを参照してください。
+従来、Experience Manager プロジェクトでは静的テンプレートを使用するのが一般的でしたが、アドビでは、最も柔軟性が高く、静的テンプレートにはない追加機能をサポートしている編集可能なテンプレートをお勧めします。詳しくは、 [ページテンプレート](/help/implementing/developing/components/templates.md).
 
 静的なテンプレートから編集可能なテンプレートへの移行は、[Experience Manager 最新化ツール](https://opensource.adobe.com/aem-modernize-tools/) を使用して、ほとんど自動化することができます。
 
@@ -864,7 +864,7 @@ Experience Manager as a Cloud Service 上でのアセット処理をアセット
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-従来の基盤コンポーネント（`/libs/foundation` 下のコンポーネントなど）は、一部の Experience Manager リリースでは廃止され、コアコンポーネントに置き換わりました。使用する方法がオーバーレイであろうと継承であろうと、基盤コンポーネントに基づいてカスタムコンポーネントを作成することは、お勧めしません。対応するコアコンポーネントに移行してください。
+従来の基盤コンポーネント（つまり、以下のコンポーネント） `/libs/foundation`) は、いくつかのExperience Managerリリースで廃止され、コアコンポーネントに優先します。 使用する方法がオーバーレイであろうと継承であろうと、基盤コンポーネントに基づいてカスタムコンポーネントを作成することは、お勧めしません。対応するコアコンポーネントに移行してください。
 
 この変換は、[Experience Manager 最新化ツール](https://opensource.adobe.com/aem-modernize-tools/)で容易に行うことができます。
 
@@ -884,7 +884,7 @@ Experience Manager as a Cloud Service では、実行モード名に対して厳
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-Experience Manager as a Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）が `/oak:index` の直接の子ノードである必要があります。Experience Manager as a Cloud Service と互換性を持たせるため、他の場所にあるインデックスは移動する必要があります。検索インデックスの詳細については、[コンテンツの検索とインデックス作成](/help/operations/indexing.md)のドキュメントを参照してください。
+Experience Manageras a Cloud Serviceには、カスタム検索インデックスの定義（つまり、タイプのノード）が必要です `oak:QueryIndexDefinition`) の直接の子ノード `/oak:index`. Experience Manager as a Cloud Service と互換性を持たせるため、他の場所にあるインデックスは移動する必要があります。検索インデックスの詳細については、ドキュメントを参照してください。 [コンテンツの検索とインデックス作成](/help/operations/indexing.md).
 
 ### カスタム検索インデックス定義ノードの compatVersion は 2 にする {#oakpal-custom-search-compatVersion}
 
@@ -893,7 +893,7 @@ Experience Manager as a Cloud Service では、カスタム検索インデック
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-Experience Manager as a Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）の `compatVersion` プロパティを `2` に設定する必要があります。その他の値は、Experience Manager as a Cloud Service ではサポートされていません。検索インデックスの詳細については、[コンテンツの検索とインデックス作成](/help/operations/indexing.md)を参照してください。
+Experience Manager as a Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）の `compatVersion` プロパティを `2` に設定する必要があります。その他の値は、Experience Manager as a Cloud Service ではサポートされていません。検索インデックスの詳細については、[コンテンツ検索とインデックス](/help/operations/indexing.md)を参照してください。
 
 ### カスタム検索インデックス定義ノードの子孫ノードのタイプは、nt:unstructured にする {#oakpal-descendent-nodes}
 
@@ -920,7 +920,7 @@ Experience Manager as a Cloud Service では、カスタム検索インデック
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-Experience Manager as a Cloud Service では、[コンテンツの検索とインデックス作成](/help/operations/indexing.md)のドキュメントで説明されている特定のパターンに従ってカスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）に名前を付ける必要があります。
+Experience Manageras a Cloud Serviceには、カスタム検索インデックスの定義（つまり、タイプのノード）が必要です `oak:QueryIndexDefinition`) には、ドキュメントで説明されている特定のパターンに従って名前を付ける必要があります [コンテンツの検索とインデックス作成](/help/operations/indexing.md).
 
 ### カスタム検索インデックス定義ノードでは lucene 型のインデックスを使用する  {#oakpal-index-type-lucene}
 
@@ -929,7 +929,7 @@ Experience Manager as a Cloud Service では、[コンテンツの検索とイ�
 * **重大度**：ブロッカー
 * **最初の対象バージョン**：バージョン2021.2.0（2021.8.0でタイプと重大度が変更されました）
 
-Experience Manager as a Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）に、値が `lucene` に設定された `type` プロパティが必要です。Experience Manager as a Cloud Service に移行する前に、従来のインデックスタイプを使用したインデックス作成を更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](/help/operations/indexing.md#how-to-use)を参照してください。
+Experience Manageras a Cloud Serviceには、カスタム検索インデックスの定義（つまり、タイプのノード）が必要です `oak:QueryIndexDefinition`) が `type` プロパティの値を次に設定 `lucene`. Experience Manager as a Cloud Service に移行する前に、従来のインデックスタイプを使用したインデックス作成を更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](/help/operations/indexing.md#how-to-use)を参照してください。
 
 ### カスタム検索インデックス定義ノードに seed という名前のプロパティを含めない {#oakpal-property-name-seed}
 

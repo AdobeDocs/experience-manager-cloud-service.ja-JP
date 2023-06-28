@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 リリースのリリースノート。'
 description: "[!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 のリリースノート."
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 97%
+source-wordcount: '1033'
+ht-degree: 93%
 
 ---
 
@@ -55,7 +55,7 @@ Experience Manager as a Cloud Service 2020.7.0 の一般的なリリースノー
 
 AEM Commerce が Cloud Service で利用できるようになりました。
 
-詳しくは、「[AEM Commerce as a Cloud Service の使用の手引き](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=ja)」を参照してください。
+詳しくは、 [AEM Commerce を使い始めるas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=ja) を参照してください。
 
 ## コアコンポーネント {#core-components}
 
@@ -67,7 +67,7 @@ AEM Commerce が Cloud Service で利用できるようになりました。
 
 * コアコンポーネントの Accelerated Mobile Pages（AMP）
 サポートが利用できるようになりました。Google のモバイル検索結果からサイトに入るときにページトランジションを瞬時に入れるので、より迅速な顧客体験を作成でき、ユーザーエンゲージメントと SEO が向上します。
-詳しくは、[コアコンポーネントの AMP サポート](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=ja)を参照してください。
+詳しくは、 [コアコンポーネントの AMP サポート](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=ja) を参照してください。
 
 * [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ja) のバージョン 1.0.2 との互換性。
 
@@ -89,11 +89,11 @@ AEM Commerce が Cloud Service で利用できるようになりました。
 
 * Cloud Manager のパイプラインで、顧客が設定した変数とシークレットがサポートされるようになりました。
 
-  詳細は、「パイプライン変数」を参照してください。
+  詳しくは、パイプライン変数を参照してください。
 
 * 認証バウンドのプライベート Maven リポジトリがサポートされるようになりました。
 
-* Cloud Manager ビルドコンテナで、Java 8 と Java 11 の両方がサポートされるようになりました。詳細は、「Java 11 サポートの使用」を参照してください。
+* Cloud Manager ビルドコンテナで、Java 8 と Java 11 の両方がサポートされるようになりました。詳しくは、「 Java 11 サポートの使用」を参照してください。
 
 ### バグの修正 {#bug-fixes-cm}
 
@@ -137,7 +137,7 @@ Cloud Readiness Analyzer リリース v1.0.2 の新機能と更新点につい�
 
 * 以前のバージョンの CRA を Adobe Experience Manager（AEM）6.1 で実行できませんでした。管理者グループのユーザーに対する明示的なサポートが追加されました。
 
-  詳しくは、[AEM 6.1 への CRA のインストール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=ja#installing-on-aem61)を参照してください。
+  詳しくは、 [AEM 6.1 への CRA のインストール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=ja#installing-on-aem61) を参照してください。
 
 * 概要レポートに表示される有効期限のタイムスタンプが正しくありませんでした。
 

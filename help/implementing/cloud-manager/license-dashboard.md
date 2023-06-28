@@ -2,10 +2,10 @@
 title: ライセンスダッシュボード
 description: Cloud Manager には、組織またはテナントが使用できる AEMaaCS 製品の使用権限を簡単に表示できるダッシュボードが用意されています。
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 97%
+source-wordcount: '873'
+ht-degree: 92%
 
 ---
 
@@ -49,7 +49,7 @@ Cloud Manager ライセンスダッシュボードを使用すると、次の情
 
 >[!TIP]
 >
->Admin Console から、アドビ製品の使用権限を組織全体で管理する方法については、[Admin Console の概要](https://helpx.adobe.com/jp/enterprise/using/admin-console.html)を参照してください。
+>詳しくは、 [Admin Consoleの概要](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) を参照して、Admin Consoleから組織全体のAdobe使用権限を管理する方法を確認してください。
 
 ## よくある質問 {#faq}
 
@@ -85,7 +85,7 @@ AEM には、よく知られているボットを除外するルールも用意�
 
 ### コンテンツリクエスト量の詳細を把握したい場合はどうすればよいですか？ {#current-request-volumes}
 
-ライセンスダッシュボードに表示されるコンテンツリクエスト量について詳しい情報が必要な場合は、コンテンツリクエスト量を増やす最大要因を示すレポートを、担当のアドビチームから提供することができます。アドビチームまたはアドビカスタマーケアに問い合わせて、使用量の多い上位要因を示すレポートをご依頼ください。
+ライセンスダッシュボードに表示されるコンテンツリクエスト量について詳しい情報が必要な場合は、コンテンツリクエスト量を増やす最大要因を示すレポートを、担当のアドビチームから提供することができます。上位の使用状況レポートをリクエストするには、AdobeチームまたはAdobeカスタマーケアにお問い合わせください。
 
 ### 独自の CDN を使用している場合はどうなりますか？ {#using-own-cdn}
 

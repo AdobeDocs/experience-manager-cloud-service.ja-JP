@@ -2,10 +2,10 @@
 title: 環境の作成
 description: ここでは、Cloud Manager で Screens as a Cloud Service 用の環境を作成する方法について説明します。
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 100%
+source-wordcount: '205'
+ht-degree: 92%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 この節では、Cloud Manager でプログラムの環境を作成する方法について説明します。
 
 >[!NOTE]
->ユーザーによる環境の作成方法については、[Cloud Manager での環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja)を参照してください。
+>詳しくは、 [Cloud Manager での環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja) を参照して、環境を作成する方法を確認してください。
 
 ## 目的 {#objective}
 

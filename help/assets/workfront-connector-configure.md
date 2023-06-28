@@ -4,10 +4,10 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] の設
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: ff36f2dada09d8f46835dc0fbac8d0fe6707fa19
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1767'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 

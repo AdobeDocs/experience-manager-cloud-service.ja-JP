@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2308'
-ht-degree: 83%
+source-wordcount: '2310'
+ht-degree: 81%
 
 ---
 
@@ -202,7 +202,7 @@ Web ページのテーマは、ブートストラップに基づき、以下の 
   </tr>
   <tr>
    <td><p><code>widgets-bg-color</code></p> </td>
-   <td>ウィジェットの背景色（チェックボックスとラジオボタンには適用されません）</td>
+   <td>ウィジェットの背景色（チェックボックスとラジオボタンに対しては機能しません）</td>
   </tr>
   <tr>
    <td><p><code>widgets-border-color</code></p> </td>
@@ -270,7 +270,7 @@ Web ページのテーマは、ブートストラップに基づき、以下の 
   </tr>
   <tr>
    <td><p><code>widget-height</code></p> </td>
-   <td>ウィジェットの高さ（チェックボックスとラジオボタンには適用されません）</td>
+   <td>ウィジェットの高さ（チェックボックスとラジオボタンに対しては機能しません）</td>
   </tr>
   <tr>
    <td><p><code>checkbutton-height</code></p> </td>
@@ -941,9 +941,9 @@ guideNavIcon クラスは、タブナビゲーター（左と上の両方）と�
  </tbody>
 </table>
 
-パネルノードは、ナビゲーターとコンテンツに分かれています。 コンテンツ用の別のスタイル設定コンポーネントはありません。`` ``説明された変数は、コンテンツだけでなくナビゲーターにも適用されます。
+パネルノードは、ナビゲーターとコンテンツに分かれています。 コンテンツ用の別のスタイル設定コンポーネントはありません。`` ``説明した変数は、ナビゲーターとコンテンツに適用されます。
 
-最上部のパネル（RootPanel）にはこのクラスは割り当てられていません。
+最上位のパネル (RootPanel) にはこのクラスはありません。
 
 ## モバイルのスタイル設定 {#mobile-styling}
 

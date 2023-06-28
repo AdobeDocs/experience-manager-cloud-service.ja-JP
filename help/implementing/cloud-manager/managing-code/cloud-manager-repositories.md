@@ -2,10 +2,10 @@
 title: Cloud Manager リポジトリ
 description: Cloud Manager で Git リポジトリを作成、表示および削除する方法について説明します。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 96%
+source-wordcount: '575'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ Cloud Manager で Git リポジトリを作成、表示および削除する方�
 >
 >特定の企業または IMS 組織のすべてのプログラムで、使用できるリポジトリは 300 個までです。
 
-## リポジトリの追加と管理 {#add-manage-repos}
+## リポジトリーの追加と管理 {#add-manage-repos}
 
 Cloud Manager でリポジトリを表示および管理するには、次の手順に従います。
 
@@ -38,7 +38,7 @@ Cloud Manager でリポジトリを表示および管理するには、次の手
 
 ![リポジトリ関連オプション](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-Cloud Manager で作成されたリポジトリは、パイプラインの追加や編集の際にも選択できます。 詳しくは、[CI／CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)のドキュメントを参照してください。
+Cloud Manager で作成されたリポジトリは、パイプラインの追加や編集の際にも選択できます。 詳しくは、 [CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) を参照してください。
 
 どのパイプラインにも 1 つのプライマリリポジトリまたはブランチがあります。[Git サブモジュールのサポート](#git-submodule-support)を使用すると、ビルド時に多数のセカンダリブランチを含めることができます。
 
@@ -76,7 +76,7 @@ $ git submodule update --init
 
 この手法は、Git サブモジュールの使用に慣れていて、外部マージプロセスの管理を望まない組織にとっては、[複数のソース Git リポジトリの操作](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)に関するドキュメントで説明しているソリューションの代わりになる可能性があります。
 
-例えば、3 つのリポジトリがあり、それぞれに `main` という名前のブランチが 1 つあるとします。プライマリリポジトリ（パイプラインで設定されたもの）の `main` ブランチには、他の 2 つのリポジトリに含まれているプロジェクトを宣言している `pom.xml` ファイルがあります。
+例えば、3 つのリポジトリがあり、それぞれに `main` という名前のブランチが 1 つあるとします。プライマリリポジトリ（パイプラインで設定されたもの）では、 `main` ブランチに `pom.xml` 他の 2 つのリポジトリーに含まれるプロジェクトを宣言するファイル。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

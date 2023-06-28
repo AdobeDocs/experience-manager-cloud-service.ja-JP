@@ -2,10 +2,10 @@
 title: Adobe Content Package Maven Plugin
 description: Content Package Maven Plugin を使用した AEM アプリケーションのデプロイについて説明します
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: a5eef46835e234bb47451693cf5fdcda66c5b26f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1842'
-ht-degree: 91%
+source-wordcount: '1838'
+ht-degree: 87%
 
 ---
 
@@ -35,7 +35,7 @@ AEM as a Cloud Service は、最新の AEM プロジェクトアーキタイプ�
 
 >[!TIP]
 >
->詳しくは、AEM as a Cloud Service のドキュメントの [AEM プロジェクトの構造](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ja) と、 [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) のドキュメントを参照してください。どちらもAEM 6.5 では完全にサポートされています。
+>詳しくは、 [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ja) AEMas a Cloud Serviceドキュメントの記事と [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) ドキュメント。 どちらもAEM 6.5 では完全にサポートされています。
 
 ## Content Package Maven Plugin の入手 {#obtaining-the-content-package-maven-plugin}
 
@@ -135,7 +135,7 @@ build ゴールのすべてのパラメーターについては、[共通パラ�
 
 ### ls {#ls}
 
-[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) にデプロイされているパッケージを一覧表示します。
+デプロイ先のパッケージの一覧を表示します。 [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md).
 
 #### パラメーター {#parameters-2}
 
@@ -143,7 +143,7 @@ ls ゴールのすべてのパラメーターについては、[共通パラメ�
 
 ### rm {#rm}
 
-[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) からパッケージを削除します。
+からパッケージを削除 [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md).
 
 #### パラメーター {#parameters-3}
 
@@ -229,7 +229,7 @@ uninstall ゴールのすべてのパラメーターについては、[共通パ
 
 ## パッケージへのサムネール画像またはプロパティファイルの追加 {#including-a-thumbnail-image-or-properties-file-in-the-package}
 
-デフォルトのパッケージ設定ファイルを置き換えて、パッケージのプロパティをカスタマイズします。 例えば、 [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) でパッケージを区別するためのサムネール画像を含めます。
+デフォルトのパッケージ設定ファイルを置き換えて、パッケージのプロパティをカスタマイズします。 例えば、パッケージを区別するためのサムネール画像をに含めます。 [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md).
 
 ソースファイルはファイルシステム内のどこにあっても構いません。POM ファイルでは、ソースファイルを `target/vault-work/META-INF` にコピーするように、パッケージに追加するビルドリソースを定義します。
 
@@ -238,7 +238,7 @@ uninstall ゴールのすべてのパラメーターについては、[共通パ
 ```xml
 <build>
     <resources>
-        <!-- vault META-INF resources (thumbnail etc.) -->
+        <!-- vault META-INF resources (thumbnail and so on) -->
         <resource>
             <directory>${basedir}/src/main/content/META-INF</directory>
             <targetPath>../vault-work/META-INF</targetPath>
@@ -267,4 +267,4 @@ uninstall ゴールのすべてのパラメーターについては、[共通パ
 
 >[!TIP]
 >
->詳しくは、AEM as a Cloud Service のドキュメントの [AEM プロジェクトの構造](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ja) と、 [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) のドキュメントを参照してください。どちらもAEM 6.5 では完全にサポートされています。
+>詳しくは、 [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ja) AEMas a Cloud Serviceドキュメントの記事と [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) ドキュメント。 どちらもAEM 6.5 では完全にサポートされています。

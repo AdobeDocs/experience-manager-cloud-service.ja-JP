@@ -2,10 +2,10 @@
 title: URL の外部化
 description: Externalizer は、プログラムによってリソースパスを外部 URL および絶対 URL に変換できる OSGi サービスです。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 97%
+source-wordcount: '657'
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ AEM の **Externalizer** は、あらかじめ設定された DNS をプレフ�
 
 AEM as a Cloud Service インスタンスには自分の外部向け URL がわからず、また、場合によってはリンクをリクエストスコープの範囲外で作成する必要があるので、このサービスは、そのような外部 URL を設定して作成するための一元的な場所を提供します。
 
-この記事では、Externalizer サービスの設定方法と使用方法について説明します。このサービスの技術的な詳細については、[Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html) を参照してください。
+この記事では、Externalizer サービスの設定方法と使用方法について説明します。このサービスの技術的な詳細については、 [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Externalizer のデフォルトの動作とオーバーライド方法 {#default-behavior}
 

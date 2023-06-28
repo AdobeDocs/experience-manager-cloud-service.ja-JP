@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Service のメンテナンスタスク
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 89%
@@ -44,7 +44,7 @@ ht-degree: 89%
   <tr>
     <td>バージョンのパージ</td>
     <td>アドビ</td>
-    <td>既存の環境（2023年6月1日（PT）より前に作成された環境）の場合、パージは無効になり、お客様が明示的に有効にしない限り、今後有効にはなりません。その時点で、カスタム値を使用して設定することもできます。<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->新しい環境（2023年6月1日（PT）以降に作成された環境）では、デフォルトで以下の値でパージが有効になり、お客様はカスタム値を使用して設定できます。
+    <td>既存の環境（2023年6月1日（PT）より前に作成された環境）の場合、パージは無効になり、お客様が明示的に有効にしない限り、今後有効にはなりません。その時点で、カスタム値を使用して設定することもできます。<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->新しい環境（2023年6月1日（PT）以降に作成された環境）では、デフォルトで以下の値でパージが有効になり、お客様はカスタム値を使用して設定できます。
      <ol>
        <li>31 日以上前のバージョンは削除されます</li>
        <li>過去 30 日間の最新の 5 つのバージョンが保持されます</li>

@@ -2,10 +2,10 @@
 title: Repository Modernizer
 description: Repository Modernizer
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 64%
+source-wordcount: '302'
+ht-degree: 62%
 
 ---
 
@@ -26,7 +26,7 @@ Repository Modenizer は、次のデプロイメント構造を作成するこ�
 * `all` パッケージは、サブパッケージを含むコンテナパッケージです `ui.apps` および `ui.content`.
 
 >[!NOTE]
->プロジェクト構造は、パッケージおよびその `pom.xml/filter.xml files` に対して、*アーキタイプ 24* に基づいています。詳細は、「[アーキタイプ 24](https://github.com/adobe/aem-project-archetype)」を参照してください。
+>プロジェクト構造は、パッケージおよびその `pom.xml/filter.xml files` に対して、*アーキタイプ 24* に基づいています。詳しくは、 [アーキタイプ 24](https://github.com/adobe/aem-project-archetype) を参照してください。
 
 ## Repository Modernizer の使用 {#using-repo-modernizer}
 

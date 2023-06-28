@@ -4,9 +4,9 @@ description: CodePen サンプルアプリと JavaScript 用 AEM ヘッドレス
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '981'
 ht-degree: 11%
 
 ---
@@ -120,4 +120,4 @@ JSON は、そのまま `pre` タグに貼り付けます。このタグはク�
 
 ![adventures-all クエリと resultToDom レンダリング関数の結果](assets/do-not-localize/adventures-all-query-result.png)
 
-モデルとクエリの構築が完了したので、コンテンツチームは簡単に引き継ぐことができます。 次のモジュールでは、コンテンツ作成者のフローを表示します。
+モデルとクエリの構築作業が完了したので、コンテンツチームは簡単に引き継ぐことができます。 次のモジュールでは、コンテンツ作成者のフローを表示します。

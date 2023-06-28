@@ -3,10 +3,10 @@ title: AEM as a Cloud Service Release 2022.7.0 の移行ツールのリリース
 description: AEM as a Cloud Service Release 2022.7.0 の移行ツールのリリースノート
 feature: Release Information
 exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 95%
+source-wordcount: '428'
+ht-degree: 93%
 
 ---
 
@@ -59,5 +59,5 @@ Cloud Acceleration Manager のリリース日は 2022年7月15日です。
 
 ### 新機能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager で、自動取得に失敗した場合に取り込みを開始できるように、移行トークンを手動で取得できるようになりました。 顧客が CAM をブロックする IP 許可リストを設定している場合や、管理者以外のユーザーが取り込みを開始しようとすると、自動取り込みが失敗する場合があります。 詳しくは、[トラブルシューティング](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting)を参照してください。
+* Cloud Acceleration Manager で、自動取得に失敗した場合に取り込みを開始できるように、移行トークンを手動で取得できるようになりました。 顧客が CAM をブロックする IP 許可リストを設定している場合や、管理者以外のユーザーが取り込みを開始しようとすると、自動取り込みが失敗する場合があります。 詳しくは、 [トラブルシューティング](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) を参照してください。
 * 移行の複雑さページの長い表が、使いやすく折りたたみ可能になりました。

@@ -2,10 +2,10 @@
 title: Cloud Manager での新しいプログラムへの Screens アドオンの追加
 description: ここでは、Cloud Manager で、Screens as a Cloud Service の新しいプログラムに Screens アドオンを追加する方法について説明します。
 exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 100%
+source-wordcount: '309'
+ht-degree: 92%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 ここでは、Cloud Manager で新しいプログラムに Screens をアドオンとして追加する方法について説明します。
 
 >[!NOTE]
->Cloud Manager プログラムの詳細については、[プログラムとプログラムタイプについて](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=ja)を参照してください。
+>詳しくは、 [プログラムとプログラムの種類について](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=ja) Cloud Manager プログラムの詳細については、を参照してください。
 
 ## 目的 {#objective}
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 1. [Cloud Manager](https://my.cloudmanager.adobe.com/) に移動します。
 
    >[!NOTE]
-   >Cloud Manager について詳しくは、[Cloud Manager の概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=ja)を参照してください。
+   >詳しくは、 [Cloud Manager の概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=ja) Cloud Manager について説明します。
 
 1. Cloud Manager ランディングページで「**プログラムを追加**」をクリックします。
 

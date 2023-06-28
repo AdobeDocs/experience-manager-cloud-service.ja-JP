@@ -2,10 +2,10 @@
 title: パイプラインの設定
 description: フロントエンドパイプラインを作成して、サイトのテーマのカスタマイズを管理します。
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 97%
+source-wordcount: '967'
+ht-degree: 89%
 
 ---
 
@@ -39,7 +39,7 @@ AEM クイックサイト作成ジャーニーの前のドキュメントであ�
 * Cloud Manager にアクセスできる必要があります。
 * Cloud Manager で **デプロイメントマネージャー** の役割のメンバーである必要があります。
 * AEM 環境の Git リポジトリは、Cloud Manager で設定する必要があります。
-   * 通常、これは既にアクティブなプロジェクトの場合に当てはまります。ただし、そうでない場合は、 [その他のリソース](#additional-resources) 節にある Cloud Manager リポジトリのドキュメントを参照してください。
+   * 通常、これは既にアクティブなプロジェクトの場合に当てはまります。まだ公開されていない場合は、 [その他のリソース](#additional-resources) 」セクションに入力します。
 
 ## フロントエンドパイプラインとは {#front-end-pipeline}
 
@@ -102,7 +102,7 @@ URL にアクセスまたはコピーしたプログラムの名前をメモし�
 
 >[!TIP]
 >
->AEMaaCS のパイプラインに精通しており、フロントエンドパイプラインの詳細を含む様々なタイプのパイプラインの違いを確認したい場合は、以下の [その他のリソース](#additional-resources) の節にリンクされている「CI／CD パイプラインの設定 - Cloud Services」を参照してください。
+>AEMaaCS のパイプラインに既に精通しており、フロントエンドパイプラインの詳細を含む様々なタイプのパイプラインの違いについて詳しくは、 CI/CD パイプラインの設定 — このパイプラインでリンクされたCloud Servicesを参照してください [その他のリソース](#additional-resources) 」の節を参照してください。
 
 ## 次の手順 {#what-is-next}
 
@@ -118,5 +118,5 @@ URL にアクセスまたはコピーしたプログラムの名前をメモし�
 [サイトテーマのカスタマイズ](customize-theme.md) のドキュメントを確認して、クイックサイト作成ジャーニーの次のステップに進むことをお勧めします。ジャーニーに必須ではありませんが、このドキュメントで取り上げたいくつかの概念について詳しく説明している追加のオプションリソースを以下に挙げます。
 
 * [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=ja) - Cloud Manager の機能について詳しくは、詳細な技術ドキュメントを直接参照してください。
-* [Cloud Manager リポジトリ](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - AEMaaCS プロジェクトの Git リポジトリの設定および管理方法について詳しくは、このドキュメントを参照してください。
-* [CI/CD パイプラインを設定 - Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - このドキュメントでは、フルスタックとフロントエンドの両方のパイプラインの設定に関する詳細を説明します。
+* [Cloud Manager リポジトリ](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - AEMaCS プロジェクトの Git リポジトリーの設定および管理方法について詳しくは、このドキュメントを参照してください。
+* [CI／CD パイプラインの設定 - Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - フルスタックとフロントエンドの両方のパイプラインのセットアップについて詳しくは、このドキュメントを参照してください。

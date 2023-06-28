@@ -2,10 +2,10 @@
 title: 運用開始
 description: コードとコンテンツがクラウドに対応した後に移行を実行する方法について
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1720'
-ht-degree: 93%
+source-wordcount: '1710'
+ht-degree: 85%
 
 ---
 
@@ -28,11 +28,11 @@ ht-degree: 93%
 
 ## 目的 {#objective}
 
-このドキュメントでは、ジャーニーのこれまでのステップをよく理解した後で AEM as a Cloud Service への移行を実行する方法を説明します。実稼働環境の初期移行を実行する方法と、AEM as a Cloud Service への移行時に従うべきベストプラクティスについて説明します。
+このドキュメントでは、AEM as a Cloud Serviceへの移行を、ジャーニーの前の手順に慣れた後に実行する方法を説明します。 最初の実稼動環境の移行の実行方法と、AEM as a Cloud Serviceへの移行時に従うべきベストプラクティスについて学びます。
 
 ## 初期の実稼動環境移行 {#initial-migration}
 
-実稼働環境の移行を実行する前に、 [実装フェーズ](/help/journey-migration/implementation.md) の [コンテンツ移行の戦略とタイムライン](/help/journey-migration/implementation.md##strategy-timeline) の節に従って移行手順の準備と検証を行ってください。
+本番環境の移行を実行する前に、 [コンテンツ移行の戦略とタイムライン](/help/journey-migration/implementation.md##strategy-timeline) セクション [実装フェーズ](/help/journey-migration/implementation.md).
 
 * クローンで実行された AEM as a Cloud Service ステージ移行時に得た経験に基づいて、実稼働環境からの移行を開始します。
    * オーサー - オーサー
@@ -95,7 +95,7 @@ ht-degree: 93%
 
 ## 既知の制限事項 {#known-limitations}
 
-抽出された移行セットの一部として以下の制限が見つかった場合、取り込み全体が失敗することを考慮してください。
+抽出された移行セットの一部として次の制限が見つかった場合、取り込み全体が失敗することを考慮します。
 
 * 名前が 150 文字を超える JCR ノード
 * 16 MB を超える JCR ノード
@@ -113,14 +113,14 @@ ht-degree: 93%
 
 ## 運用開始チェックリスト {#Go-Live-Checklist}
 
-アクティビティのリストを確認して、移行をスムーズかつ正常に実行できるようにします。
+このアクティビティのリストを確認して、スムーズで正常な移行を実行できるようにします。
 
 * 機能テストと UI テストを含んだエンドツーエンドの実稼動パイプラインを実行して、AEM 製品エクスペリエンスを&#x200B;**常に最新**&#x200B;に保ちます。詳しくは、次のリソースを参照してください。
    * [AEM バージョンのアップデート](/help/implementing/deploying/aem-version-updates.md)
    * [カスタム機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [UI テスト](/help/implementing/cloud-manager/ui-testing.md)
 * コンテンツを実稼動環境に移行し、関連するサブセットがステージング環境でテストに使用できることを確認します。
-   * AEM の DevOps ベストプラクティスでは、コードは開発環境から実稼動環境に移行しますが、コンテンツは実稼動環境から下方に移行することに注意してください。
+   * AEMの DevOps ベストプラクティスは、コードが開発環境から実稼動環境に移行し、コンテンツが実稼動環境から移行することを意味します。
 * コードとコンテンツの凍結期間のスケジュールを設定します。
    * [移行に必要なコードおよびコンテンツの凍結タイムライン](#code-content-freeze)の節も参照してください。
 * 最終コンテンツ追加を実行します。

@@ -4,10 +4,10 @@ seo-title: Learn to add support for new locales to your adaptive forms
 description: AEM Forms は、アダプティブフォームのローカライズ用に新しくロケールを追加できます。英語（en）、スペイン語（es）、フランス語（fr）、イタリア語（it）、ドイツ語（de）、日本語（ja）、ブラジルポルトガル語（pt-BR）、中国語（zh-CN）、台湾中国語（zh-TW）、韓国語（ko-KR）のロケールがあります。
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
-workflow-type: ht
-source-wordcount: '1188'
-ht-degree: 100%
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+workflow-type: tm+mt
+source-wordcount: '1190'
+ht-degree: 93%
 
 ---
 
@@ -68,7 +68,7 @@ AEM Forms が標準でサポートしているロケールは、英語（en）�
 
 * `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N` で定義されている `<locale>` の `xfalib.locale.Strings` を定義している **I18N.js**。
 * 以下を含む **js.txt** ファイル。
-   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js
+  */libs/fd/xfaforms/clientlibs/I18N/Namespace.js
 I18N.js
 /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
 
@@ -130,14 +130,13 @@ I18N.js
 
 * 次のパラメーターをリスト順に取得します。
 
-   * リクエストパラメーター`afAcceptLang`
-ユーザーのブラウザーロケールを上書きするには、 
-`afAcceptLang` リクエストパラメーターを渡して、ロケールを強制します。例えば、次の URL はフォームをカナダのフランス語ロケールで強制的にレンダリングします。
-      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`
+   * リクエストパラメーター `afAcceptLang`
+ユーザーのブラウザーロケールを上書きするには、 `afAcceptLang` リクエストパラメーターを使用して、ロケールを強制的に指定します。 例えば、次の URL はフォームをカナダのフランス語ロケールで強制的にレンダリングします。
+     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`
 
    * ユーザー向けに設定されるブラウザーのロケールです。これは、`Accept-Language` ヘッダーを使用したリクエストで指定されます。
 
-リクエストされたロケールでクライアントライブラリが存在しない場合、ロケールに含まれる言語コードがクライアントライブラリに存在しないかチェックします。例えば、リクエストされたロケールが `en_ZA`（南アフリカ英語）で `en_ZA` 用のクライアントライブラリが存在しない場合、アダプティブフォームは、`en`（英語）言語のクライアントライブラリがあればそれを使用します。ただし、どちらも存在しない場合、アダプティブフォームでは `en` ロケールの辞書が使用されます。
+要求されたロケールのクライアントライブラリが存在しない場合は、ロケールに存在する言語コードをクライアントライブラリで確認します。 例えば、要求されたロケールが `en_ZA` （南アフリカ英語）と `en_ZA` が存在しない場合、アダプティブフォームは次の目的でクライアントライブラリを使用します： `en` （英語）言語（存在する場合）。 ただし、どちらも存在しない場合、アダプティブフォームでは `en` ロケールの辞書が使用されます。
 
 
 ロケールが識別されると、アダプティブフォームはフォーム固有の辞書を選択します。要求されたロケールに対応するフォーム固有の辞書が見つからない場合、アダプティブフォームが作成された言語の辞書が使用されます。

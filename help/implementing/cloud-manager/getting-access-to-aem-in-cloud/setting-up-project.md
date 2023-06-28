@@ -2,10 +2,10 @@
 title: プロジェクトのセットアップ
 description: Maven を使用して AEM プロジェクトをビルドする方法と、独自のプロジェクトを作成する際に遵守する必要のある標準規格について説明します。
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1404'
-ht-degree: 85%
+ht-degree: 80%
 
 ---
 
@@ -18,8 +18,8 @@ Maven を使用して AEM プロジェクトをビルドする方法と、独自
 Cloud Manager で正常にビルドおよびデプロイするには、AEMプロジェクトは次のガイドラインに従う必要があります。
 
 * プロジェクトは [Apache Maven](https://maven.apache.org) を使用してビルドする必要があります。
-* Git リポジトリーのルートには `pom.xml` ファイルが必要です。この `pom.xml` ファイルでは、必要な数のサブモジュールを参照できます（それらのサブモジュールでさらに他のサブモジュールなどを参照している場合もあります）。
-* 追加の Maven アーティファクトリポジトリーへの参照を `pom.xml` ファイルに追加できます。
+* Git リポジトリーのルートには `pom.xml` ファイルが必要です。この `pom.xml` ファイルで参照できるサブモジュールの数は、必要な数だけです（それらのサブモジュールでさらに他のサブモジュールなどを参照している場合もあります）。
+* 追加の Maven アーティファクトリポジトリへの参照を `pom.xml` ファイルに追加できます。
    * 設定時には、[パスワードで保護されたアーティファクトリポジトリー](#password-protected-maven-repositories)へのアクセスがサポートされます。ただし、ネットワークで保護されたアーティファクトリポジトリーへのアクセスはサポートされていません。
 * デプロイ可能なコンテンツパッケージは、`target` という名前のディレクトリに含まれているコンテンツパッケージ `.zip` ファイルをスキャンすることで検出されます。
    * 任意の数のサブモジュールでコンテンツパッケージを作成することもできます。
@@ -32,7 +32,7 @@ Cloud Manager で正常にビルドおよびデプロイするには、AEMプロ
 
 ごく一部のケースでは、Cloud Manager 内で実行する場合と、開発用ワークステーションで実行する場合とで、ビルドプロセスを若干変更する必要があるかもしれません。この場合は、[Maven プロファイル](https://maven.apache.org/guides/introduction/introduction-to-profiles.html)を使用して、Cloud Manager を含む環境ごとのビルドの違いを定義できます。
 
-Cloud Manager ビルド環境内での Maven プロファイルのアクティベーションは、`CM_BUILD` [環境変数](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)があるかどうかを調べて行う必要があります。同様に、Cloud Manager ビルド環境以外でのみ使用するためのプロファイルは、この変数がないかどうかを調べることでアクティブ化する必要があります。
+Cloud Manager ビルド環境内での Maven プロファイルのアクティベーションは、 `CM_BUILD` [環境変数](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). があるかどうかを調べて行う必要があります。同様に、Cloud Manager ビルド環境以外でのみ使用するためのプロファイルは、この変数がないかどうかを調べることでアクティブ化する必要があります。
 
 例えば、Cloud Manager 内でビルドが実行されたときにのみ簡単なメッセージを出力する場合は、次のようにします。
 
@@ -110,11 +110,11 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
 
 >[!NOTE]
 >
->パスワードで保護された Maven リポジトリーのアーティファクトは、慎重に使用する必要があります。これは、このメカニズムを通じてデプロイされるコードは現在、Cloud Manager の品質ゲートに実装されているすべての[コード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md)を通じて実行されないからです。したがって、まれなケースで、AEM に結び付けられていないコードに対してのみ使用する必要があります。Java ソース、およびプロジェクトのソースコード全体もバイナリとともにデプロイすることをお勧めします。
+>パスワードで保護された Maven リポジトリーのアーティファクトは、慎重に使用する必要があります。これは、このメカニズムを通じてデプロイされるコードは現在、Cloud Manager の品質ゲートに実装されているすべての[コード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md)を通じて実行されないからです。したがって、まれなケースで、AEM に結び付けられていないコードに対してのみ使用する必要があります。バイナリと共に Java ソースとプロジェクトのソースコード全体もデプロイすることをお勧めします。
 
 Cloud Manager 内でパスワードで保護された Maven リポジトリを使用するには、次の手順を実行します。
 
-1. パスワード（およびオプションでユーザー名）をシークレットの[パイプライン変数](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)として指定します。
+1. パスワード（および任意でユーザー名）を秘密鍵として指定します。 [パイプライン変数](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md).
 1. 次に、Git リポジトリーの `.cloudmanager/maven/settings.xml` という名前のファイル内でそのシークレットを参照します。このファイルは、[Maven Settings File](https://maven.apache.org/settings.html) スキーマに従います。
 
 Cloud Manager のビルドプロセスが開始したとき、以下が行われます。

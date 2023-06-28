@@ -2,10 +2,10 @@
 title: 製品コックピット
 description: 製品コックピットの操作
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 100%
+source-wordcount: '432'
+ht-degree: 73%
 
 ---
 
@@ -23,13 +23,13 @@ ht-degree: 100%
 
 ## 設定 {#configuration}
 
-製品カタログは、AEM で設定する必要があります。詳しくは、 [ストアとカタログの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=ja#catalog) を参照してください。
+商品カタログは、AEMで設定する必要があります。 詳しくは、 [ストアとカタログの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog) を参照してください。
 
-ステージングされたカタログ機能を有効にするには、認証が必要です。詳しくは、 [はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=ja) を参照してください。
+ステージングされたカタログ機能を有効にするには、認証が必要です。詳しくは、 [はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html) を参照してください。
 
 >[!NOTE]
 >
->ステージングされたカタログ機能は、Adobe Commerce と、トークンベースの認証をサポートするサードパーティ製のコネクタでのみ使用できます。
+>ステージング済みカタログ機能は、トークンベースの認証をサポートするAdobe Commerceおよびサードパーティコネクタでのみ使用できます。
 
 ## 製品コックピットを開く {#opening-product-cockpit}
 
@@ -43,17 +43,17 @@ ht-degree: 100%
 
 ![設定済みのカタログ](../assets/catalog-overview.png)
 
-カテゴリをクリックすると、クリックしたカテゴリの子が読み込まれます。
+カテゴリをクリックすると、クリックされたカテゴリの子が読み込まれます。
 
 ![カテゴリの子](../assets/catalog-category-children.png)
 
-製品をクリックすると、製品のバリエーションが読み込まれます（可能な場合）。
+製品をクリックすると、製品のバリエーションが読み込まれます（使用可能な場合）。
 
 ![製品のバリエーション](../assets/catalog-product-variation.png)
 
 >[!NOTE]
 >
->AEM の製品カタログデータは、設定されたコマースエンドポイントを介してリアルタイムに取得されるデータです。製品カタログデータは AEM に保存されていません。
+>AEM の製品カタログデータは、設定されたコマースエンドポイントを介してリアルタイムに取得されるデータです。製品カタログデータはAEMに保存されません。
 
 ## 製品カタログの検索 {#searching-product-catalog}
 
@@ -63,13 +63,13 @@ ht-degree: 100%
 
 ## ステージングされた製品カタログの参照 {#staged-product-catalogs}
 
-デフォルトでは、製品コックピットには、ライブの製品カタログデータが表示されます。左側のフィルタータブの「ステージングされたカタログ」を使用すると、選択した日付の製品カタログが読み込まれます。
+デフォルトでは、製品コックピットには、ライブの製品カタログデータが表示されます。左のフィルタータブの「STAGED CATALOG」を使用すると、選択した日付の商品カタログが読み込まれます。
 
 ![ステージングされたカタログ](../assets/staged-cockpit.png)
 
 ## 製品カタログのプロパティ {#catalog-properties}
 
-製品またはカテゴリのプロパティアイコンをクリックすると、選択したオブジェクトのプロパティビューが開きます。製品バリアントの「プロパティを開く」は、メインの製品プロパティを開く場合と同じです。
+製品またはカテゴリのプロパティアイコンをクリックすると、選択したオブジェクトのプロパティビューが開きます。 製品バリアントの開くプロパティは、メインの製品プロパティを開くことと同じです。
 
 ### 「コマース」タブ {#tabs}
 

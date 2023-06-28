@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2529'
+source-wordcount: '2527'
 ht-degree: 98%
 
 ---
@@ -191,7 +191,7 @@ Experience Manager Assets as a [!DNL Cloud Service] で Brand Portal をアク�
 
 次の節では、Adobe Developer Console を使用して Experience Manager Assets as a [!DNL Cloud Service] と Brand Portal の連携を手動で設定する方法について説明します。
 
-以前は、Experience Manager Assets as a [!DNL Cloud Service] と Brand Portal の連携は Adobe Developer Console を介して手動で設定されており、Brand Portal テナントの認証のために Adobe Identity Management Services（IMS）アカウントトークンを入手していました。それには、Experience Manager Assets と Adobe Developer Console の両方で設定を行う必要があります。
+以前は、Experience Manager Assets as a [!DNL Cloud Service] と Brand Portal の連携は Adobe Developer Console を介して手動で設定されており、Brand Portal テナントの認証のために Adobe Identity Management Services（IMS）アカウントトークンを入手していました。Experience Manager AssetsとAdobe Developer Console の両方の設定が必要です。
 
 1. Experience Manager Assets で、IMS アカウントを作成し、公開鍵（証明書）を生成します。
 1. Adobe 開発者コンソールで、Brand Portal テナント（組織）用のプロジェクトを作成します。

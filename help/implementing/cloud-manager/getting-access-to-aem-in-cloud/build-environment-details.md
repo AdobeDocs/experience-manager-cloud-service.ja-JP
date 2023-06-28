@@ -2,10 +2,10 @@
 title: ビルド環境
 description: Cloud Manager のビルド環境と、そこでコードがどのようにビルドされテストされるかを説明します。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 95%
+source-wordcount: '991'
+ht-degree: 94%
 
 ---
 
@@ -229,4 +229,4 @@ Maven `pom.xml` ファイル内で使用する場合は、通常、次のよう�
 
 >[!TIP]
 >
->フロントエンドビルド環境について詳しくは、[フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)のドキュメントを参照してください。
+>フロントエンドビルド環境について詳しくは、 [フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).

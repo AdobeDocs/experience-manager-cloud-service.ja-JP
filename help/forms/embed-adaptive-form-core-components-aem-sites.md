@@ -6,7 +6,7 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
-source-git-commit: 1d5641dd07cc68dade247fe30bb57663872e5560
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2135'
 ht-degree: 13%
@@ -112,12 +112,12 @@ AEM SitesページでアダプティブFormsコンポーネントを使用する
    * **事前入力サービス**:事前入力サービスを使用すると、既存のデータを使用してアダプティブフォームのフィールドに自動入力することができます。 ユーザーがフォームを開くと、これらのフィールドの値は事前入力されています。事前入力サービスについて詳しくは、 [アダプティブフォームフィールドの事前入力](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html#configuring-prefill-service-using-configuration-manager)
    * **クライアントライブラリカテゴリ**:次を指定： [JavaScript 関数](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#custom-functions) 式で使用され、Adaptive Formsでサポートされる
 * **データモデル**:データモデルを使用すると、異なるデータソースのエンティティやサービスをアダプティブフォームに統合できます。 選択 **[!UICONTROL フォームデータモデル]** 作成するアダプティブフォームに、複数のデータソースのデータの取得および書き込みが含まれる場合。
-   * **フォームデータモデル**:フォームデータモデルを使用すると、アダプティブフォームは異なるデータソースと通信できます。 データソースの設定について詳しくは、 [データソースを設定します。](/help/forms/configure-data-sources.md)
+   * **フォームデータモデル**:フォームデータモデルを使用すると、アダプティブフォームは異なるデータソースと通信できます。 データソースの設定について詳しくは、 [データソースの設定](/help/forms/configure-data-sources.md).
    * **スキーマ**:スキーマは、組織のバックエンドシステムによってデータが生成または使用される構造を表します。 以下が可能です。 [スキーマをアダプティブフォームに関連付ける](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html) その要素を使用して、アダプティブフォームに動的コンテンツを追加します。
 
-      >[!NOTE]
-      >
-      > フォームデータモデルを設定した後は、関連するフォームモデルを変更できません。 ただし、フォームデータモデルに関連付けられたスキーマを変更することはできます。
+     >[!NOTE]
+     >
+     > フォームデータモデルを設定した後は、関連するフォームモデルを変更できません。 ただし、フォームデータモデルに関連付けられたスキーマを変更することはできます。
 
 * **「送信」タブ**
 
@@ -133,7 +133,7 @@ AEM SitesページでアダプティブFormsコンポーネントを使用する
          * OneDrive に送信
          * Azure Blob Storage に送信
 
-   また、 [デフォルトの送信アクションの拡張](custom-submit-action-form.md) 独自のカスタム送信アクションを作成する場合。
+  また、 [デフォルトの送信アクションの拡張](custom-submit-action-form.md) 独自のカスタム送信アクションを作成する場合。
 
 * **メッセージを表示**
    * **メッセージコンテンツ**:フォーム送信時に表示するメッセージをリッチテキストエディターで記述します。 このオプションは、「ありがとうございます」メッセージの表示が有効な場合にのみ選択できます。

@@ -2,10 +2,10 @@
 title: 迅速な開発環境
 description: クラウド環境で迅速な開発反復処理を行うための、高速開発環境の使用方法を説明します。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3318'
-ht-degree: 94%
+source-wordcount: '3313'
+ht-degree: 87%
 
 ---
 
@@ -20,7 +20,7 @@ RDE を使用すると、デベロッパーは、ローカル開発環境での�
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-[設定方法](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html?lang=ja)、[使用方法](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=ja)、RDE を使用した[開発ライフサイクル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html?lang=ja)を示す追加のビデオを参照できます。
+他のデモビデオもご覧いただけます。 [設定方法](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html?lang=ja), [使用方法](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=ja)、および [開発ライフサイクル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html?lang=ja) RDE を使用している。
 
 ## はじめに {#introduction}
 
@@ -42,7 +42,7 @@ Cloud Manager を使用してプログラムの RDE を作成するには、次�
 
 1. RDE を追加するプログラムをクリックして詳細を表示します。
 
-   * RDE は、[サンドボックスプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)と[実稼動プログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)の両方に追加できます。
+   * RDE は両方に追加できます [サンドボックスプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) および [実稼働プログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
 
 1. **プログラムの概要**&#x200B;ページで、**環境**&#x200B;カードの「**環境を追加**」をクリックして環境を追加します。
 
@@ -70,11 +70,11 @@ Cloud Manager を使用してプログラムの RDE を作成するには、次�
 
 作成時に、RDE は使用可能な最新の AEM バージョンに設定されます。RDE リセット（Cloud Manager を使用して実行することも可能）は、RDE を循環させ、最新の AEM バージョンに設定します。
 
-Cloud Manager を使用した環境の作成、環境へのアクセス権のあるユーザーの管理、カスタムドメインの割り当てについて詳しくは、[Cloud Manager ドキュメント](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)を参照してください。
+Cloud Manager を使用した環境の作成、環境へのアクセス権を持つユーザーの管理、カスタムドメインの割り当てについて詳しくは、 [Cloud Manager のドキュメント](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 ## RDE コマンドラインツールのインストール {#installing-the-rde-command-line-tools}
 
-Cloud Manager を使用してプログラムに RDE を追加したら、次の手順に従ってコマンドラインツールを設定して、RDE を操作できます。
+Cloud Manager を使用してプログラムに RDE を追加したら、次の手順に従ってコマンドラインツールを設定し、RDE を操作できます。
 
 >[!IMPORTANT]
 >
@@ -147,7 +147,7 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
 
 * 中間マイルストーンに達し、AEM as a Cloud Service SDK を使用してローカルで正常に検証された場合、コードは、メイン行にまだ含まれていない Git feature ブランチにコミットする必要があります。ただし、Git へのコミットはオプションです。「中間マイルストーン」を構成するものは、チームの習慣に応じて異なります。 例えば、数行の新しいコードや、半日の作業、サブ機能の完了といったものがあります。
 
-* RDE が別の機能で使用されていて、[デフォルトの状態にリセット](#reset-rde)したい場合は、RDE をリセットします。<!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->リセットには数分かかり、既存のコンテンツとコードがすべて削除されます。 RDE ステータスコマンドを使用すると、RDE の準備が完了したことを確認できます。RDE は、最新の AEM リリースバージョンで復活します。
+* RDE が別の機能で使用されていて、[デフォルトの状態にリセット](#reset-rde)したい場合は、RDE をリセットします。<!-- Alexandru: hiding for now, do not delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->リセットには数分かかり、既存のコンテンツとコードがすべて削除されます。 RDE ステータスコマンドを使用すると、RDE の準備が完了したことを確認できます。RDE は、最新の AEM リリースバージョンで復活します。
 
   >[!IMPORTANT]
   >
@@ -276,7 +276,7 @@ AEM プロジェクトの `dispatcher` モジュールから、以下の maven �
 
 >[!TIP]
 >
->上記のコマンドは、[WKND](https://github.com/adobe/aem-guides-wknd) プロジェクトの Dispatcher 設定をデプロイしていることを前提としています。プロジェクトの Dispatcher 設定をデプロイする際には、`X.X.X` を対応する WKND プロジェクトのバージョン番号またはプロジェクト固有のバージョン番号に必ず置き換えてください。
+>上記のコマンドは、[WKND](https://github.com/adobe/aem-guides-wknd) プロジェクトの Dispatcher 設定をデプロイしていることを前提としています。必ず `X.X.X` を、対応する WKND プロジェクトのバージョン番号、またはプロジェクトの dispatcher 設定をデプロイする際にプロジェクト固有のバージョン番号に置き換えます。
 
 >[!NOTE]
 >
@@ -308,7 +308,7 @@ The analyser found the following errors for publish :
 [api-regions-exportsimports] com.adobe.aem.temp:org.apache.felix.gogo.jline:1.1.8: Bundle org.apache.felix.gogo.jline:1.1.8 is importing package(s) [org.jline.builtins, org.jline.utils, org.apache.felix.service.command, org.apache.felix.service.threadio, org.jline.terminal, org.jline.reader, org.apache.felix.gogo.runtime, org.jline.reader.impl] in start level 20 but no bundle is exporting these for that start level.
 ```
 
-上記のコード例は、バンドルが解決されない場合の動作を示しています。この場合、バンドルは「ステージング済み」で、他のコードのインストールによって要件（この場合は、読み込み不足）が満たされた場合にのみインストールされます。
+上記のコード例は、バンドルが解決されない場合の動作を示しています。その場合は「ステージング済み」で、他のコードのインストールを通じて要件（この場合はインポートが不足）が満たされた場合にのみインストールされます。
 
 ### RDE のステータス確認 {#checking-rde-status}
 
@@ -369,7 +369,7 @@ RDE をリセットすると、すべてのカスタムコード、設定およ�
 
 リセットすると、RDE が使用可能な最新の AEM バージョンに設定されます。
 
-<!-- Alexandru: hiding for now, please don't delete
+<!-- Alexandru: hiding for now, do not delete
 
 Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
 
@@ -417,7 +417,7 @@ This usually takes a few minutes. Use the [status command](#checking-rde-status)
 
    ![バナー通知のリセット](/help/implementing/cloud-manager/assets/rde-reset-banner.png)
 
-RDE のリセットプロセスが開始されると、通常、完了して環境がデフォルトの状態に戻るまでに数分かかります。リセットプロセスのステータスは、**環境**&#x200B;カードの&#x200B;**ステータス**&#x200B;列、または&#x200B;**環境**&#x200B;ウィンドウでいつでも確認できます。
+RDE のリセットプロセスが開始されると、通常は完了し、環境をデフォルトの状態に戻すのに数分かかります。 リセットプロセスのステータスは、**環境**&#x200B;カードの&#x200B;**ステータス**&#x200B;列、または&#x200B;**環境**&#x200B;ウィンドウでいつでも確認できます。
 
 ![RDE リセットステータス](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
 
@@ -425,7 +425,7 @@ RDE のリセットプロセスが開始されると、通常、完了して環�
 
 ![環境カードからの RDE のリセット](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
-Cloud Manager を使用した環境の管理方法について詳しくは、[Cloud Manager のドキュメント](/help/implementing/cloud-manager/manage-environments.md)を参照してください。
+Cloud Manager を使用した環境の管理方法について詳しくは、 [Cloud Manager のドキュメント](/help/implementing/cloud-manager/manage-environments.md).
 
 ## 実行モード {#runmodes}
 
@@ -500,4 +500,4 @@ Forms のデベロッパーは、AEM FormsCloud Service の迅速な開発環境
 
 ## RDE に関するチュートリアル
 
-AEM as a Cloud Serviceでの RDE について詳しくは、[設定方法、使用方法、開発ライフサイクルに関するビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html?lang=ja)をご覧ください。
+AEM as a Cloud Serviceでの RDE について詳しくは、 [設定方法、使用方法、開発ライフサイクルを示すビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html?lang=ja)

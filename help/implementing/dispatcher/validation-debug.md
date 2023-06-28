@@ -3,7 +3,7 @@ title: Dispatcher ツールを使用した検証とデバッグ
 description: Dispatcher ツールを使用した検証とデバッグ
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2847'
 ht-degree: 53%
@@ -247,7 +247,7 @@ Phase 3 finished
 
 スクリプトには次の 3 つのフェーズがあります。
 
-1. バリデーターを実行します。設定が有効でない場合、スクリプトは失敗します。
+1. バリデーターを実行します。設定が無効な場合、スクリプトは失敗します。
 2. 実行されるのは `httpd -t` コマンドを使用して、Apache httpd が起動できるように構文が正しいかどうかをテストします。 テストが成功した場合は、設定をデプロイする準備が整っています。
 3. Dispatcher SDK 設定ファイルのサブセットをチェックします。このサブセットは、 [ファイル構造セクション](##flexible-mode-file-structure)に含まれるユーザーは、変更されておらず、現在の SDK のバージョンと一致しています。
 

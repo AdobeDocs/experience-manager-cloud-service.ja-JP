@@ -4,10 +4,10 @@ description: Adobe Analytics との統合
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 93%
+source-wordcount: '558'
+ht-degree: 88%
 
 ---
 
@@ -42,12 +42,12 @@ Adobe Analytics と AEM as a Cloud Service の統合により、Web ページの
 |---|---|
 | タイトル | 設定名 |
 | IMS 設定 | IMS 設定を選択します（以下の章を参照）。 |
-| セグメント | 現在のレポートスイートで定義されている Analytics セグメントを使用するオプション。Analytics レポートは、セグメントに基づいてフィルタリングされます。 詳細は、[このページ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=ja)を参照してください。 |
+| セグメント | 現在のレポートスイートで定義されている Analytics セグメントを使用するオプション。Analytics レポートは、セグメントに基づいてフィルタリングされます。 詳しくは、 [このページ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=ja) を参照してください。 |
 | レポートスイート | データを送信し、レポートを取り込むリポジトリー。レポートスイートでは、選択した Web サイト、Web サイト群、または Web サイトページのサブセットに関する完全な独立したレポートが定義されます。単一のレポートスイートから取得したレポートを表示し、必要に応じて、いつでも設定でこのフィールドを編集できます。 |
 
 ### Adobe Analytics と IMS 認証 {#configuration-parameters-ims}
 
-Adobe AnalyticsをAEM as a Cloud Serviceと適切に統合するには、IMS 設定が必要です。 この設定を作成する必要があります。詳しくは、こちらの[ページ](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)を参照して、Analytics の IMS 設定の作成方法を確認してください。
+Adobe AnalyticsをAEM as a Cloud Serviceと適切に統合するには、IMS 設定が必要です。 この設定を作成する必要があります。詳しくは、 [ページ](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) を参照してください。
 
 ### サイトへの設定の追加 {#add-configuration}
 

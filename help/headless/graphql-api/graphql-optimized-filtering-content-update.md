@@ -2,10 +2,10 @@
 title: 最適化された GraphQL フィルタリング用コンテンツフラグメントの更新
 description: ヘッドレスコンテンツ配信のために、Adobe Experience Manager as a Cloud Service で最適化された GraphQL フィルタリング用にコンテンツフラグメントを更新する方法について説明します。
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 77%
+source-wordcount: '908'
+ht-degree: 72%
 
 ---
 
@@ -99,7 +99,7 @@ GraphQL フィルターのパフォーマンスを最適化するには、コン
       <td>すべて </td>
       <td> </td>
       <td>変数 </td>
-      <td>次の制限までの残りのコンテンツフラグメントの処理間隔（秒）<br>この間隔は、ジョブを開始する前の待機時間と、後続の CF_MIGRATION_LIMIT の各 CF の処理間の遅延とも考えられます。<br>（*）</td>
+      <td>次の制限までの残りのコンテンツフラグメントの処理間隔（秒）<br>この間隔は、ジョブを開始する前の待機時間と、後続の CF_MIGRATION_LIMIT 個の CF の処理間の遅延とも考えられます。<br>(*)</td>
      </tr>
     </tbody>
    </table>

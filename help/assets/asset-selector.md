@@ -4,9 +4,9 @@ description: アセットセレクターを使用して、アプリケーショ�
 contentOwner: Adobe
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2379'
 ht-degree: 4%
 
 ---
@@ -85,7 +85,7 @@ The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI
 *   imsToken
 *   apikey
 
-For more information on these properties, refer to [Asset Selector Properties](#asset-selector-properties).
+For more information on these properties, see [Asset Selector Properties](#asset-selector-properties).
 
 **SUSI flow**
 
@@ -95,7 +95,7 @@ For more information on these properties, refer to [Asset Selector Properties](#
 *   imsOrg
 *   apikey
 
-For more information on these properties, refer to [Example for the SUSI flow](#susi-vanilla) and [Asset Selector Properties](#asset-selector-properties).
+For more information on these properties, see [Example for the SUSI flow](#susi-vanilla) and [Asset Selector Properties](#asset-selector-properties).
 -->
 
 ## インストール {#installation}
@@ -176,7 +176,7 @@ interface SelectedAsset {
 | *repo:createDate* | 文字列 | アセットが作成された日時。 |
 | *repo:modifiedBy* | 文字列 | アセットを最後に変更したユーザーまたはシステム。 |
 | *repo:modifyDate* | 文字列 | アセットが最後に変更された日時。 |
-| *dc:format* | 文字列 | アセットの形式 ( ファイルタイプ (JPEG、PNG など )。 |
+| *dc:format* | 文字列 | アセットの形式 ( ファイルタイプ ( 例：JPEG、PNG など )。 |
 | *tiff:imageWidth* | 数値 | アセットの幅。 |
 | *tiff:imageLength* | 数値 | アセットの高さ。 |
 | *computedMetadata* | `Record<string, any>` | あらゆる種類（リポジトリー、アプリケーションまたは埋め込みメタデータ）のすべてのアセットのメタデータのバケットを表すオブジェクト。 |
@@ -364,7 +364,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 | *imsOrg* | 文字列 | はい | | プロビジョニング中に割り当てられるAdobeIdentity Management System(IMS)ID [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 組織の この `imsOrg` キーは、アクセスする組織がAdobe IMS中かどうかを認証するために必要です。 |
 | *imsToken* | 文字列 | いいえ | | 認証に使用される IMS ベアラートークン。 `imsToken` 非 SUSI フローを使用する場合は必須です。 |
 | *apiKey* | 文字列 | いいえ | | AEM Discovery サービスへのアクセスに使用する API キー。 `apiKey` 非 SUSI フローを使用する場合は必須です。 |
-| *rootPath* | 文字列 | いいえ | /content/dam/ | アセットセレクターにアセットを表示するフォルダーパス。 `rootPath` また、カプセル化の形で使用することもできます。 例えば、次のパスを指定すると、 `/content/dam/marketing/subfolder/`の場合、アセットセレクターを使用すると、親フォルダーをトラバースできず、子フォルダーのみが表示されます。 |
+| *rootPath* | 文字列 | いいえ | /content/dam/ | アセットセレクターにアセットを表示するフォルダーパス。 `rootPath` また、カプセル化の形で使用することもできます。 例えば、次のパスの場合、 `/content/dam/marketing/subfolder/`の場合、アセットセレクターを使用すると、親フォルダーをトラバースできず、子フォルダーのみが表示されます。 |
 | *パス* | 文字列 | いいえ | | アセットセレクターがレンダリングされる際に、アセットの特定のディレクトリに移動するために使用されるパス。 |
 | *filterSchema* | 配列 | いいえ | | フィルタープロパティの設定に使用するモデル。 これは、アセットセレクターで特定のフィルターオプションを制限する場合に便利です。 |
 | *filterFormProps* | オブジェクト | いいえ | | 検索を絞り込むために使用する必要があるフィルタープロパティを指定します。 例えば、MIME タイプのJPG、PNG、GIF。 |
@@ -477,7 +477,7 @@ interface SelectedAsset {
 | tiff:imageLength | number | The height of an image type of Asset |
 | repo:state | string | The `Approved`, `Rejected`, or `Expired`state of an Asset |
 | computedMetadata | string | It is an object that represents a bucket for all the Asset's metadata of all kinds (repository, application or embedded metadata) |
-| _links | string | It represents the collection of links used in the Asset Selector. The links are represented in the form of an array. The parameters of an array include: `href`, `type`, `repo:size`, `width`, `height`, etc.  |
+| _links | string | It represents the collection of links used in the Asset Selector. The links are represented in the form of an array. The parameters of an array include: `href`, `type`, `repo:size`, `width`, `height`, and so on  |
 
 For the detailed example of Object Schema, click 
 -->

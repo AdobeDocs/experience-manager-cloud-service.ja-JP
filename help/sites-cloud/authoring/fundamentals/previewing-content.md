@@ -2,10 +2,10 @@
 title: コンテンツのプレビュー
 description: AEM プレビューサービスを使用して、運用を開始する前にコンテンツをプレビューする方法を説明します。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 7b56bb05e31d7a61d7a8fb13e2bd0ff6e4fb301d
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 95%
+source-wordcount: '274'
+ht-degree: 96%
 
 ---
 
@@ -16,7 +16,7 @@ AEM は、web サイトがパブリッシュ環境になって一般公開され
 
 これにより、ページトランジションやその他のパブリッシュ側のコンテンツなど、オーサー環境からは見えないページエクスペリエンスのプレビューが容易になります。
 
-プレビュー環境について詳しくは、ドキュメントを参照してください。 [環境の管理](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+プレビュー環境について詳しくは、 [環境の管理](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## プレビュー用のコンテンツの公開 {#publishing-content-to-preview}
 

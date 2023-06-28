@@ -2,10 +2,10 @@
 title: テーマの作成および使用
 description: テーマとコアコンポーネントを使用して、アダプティブフォームのスタイルを設定し、視覚的に表現できます。任意の数のアダプティブフォームで、テーマを共有できます。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1664'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->アダプティブフォームのテーマを[アダプティブフォームのテンプレートと混同しないでください。](/help/forms/template-editor.md)アダプティブフォームのテーマには、アダプティブフォームのスタイル設定情報のみが含まれます。アダプティブフォームテンプレートは、フォーム構造と初期コンテンツを定義し、新しい [アダプティブフォーム。](/help/forms/creating-adaptive-form.md)
+>アダプティブフォームのテーマを [アダプティブフォームテンプレート](/help/forms/template-editor.md). アダプティブフォームのテーマには、アダプティブフォームのスタイル設定情報のみが含まれます。アダプティブフォームテンプレートは、フォーム構造と初期コンテンツを定義し、新しい [アダプティブフォーム](/help/forms/creating-adaptive-form.md).
 
 ## コアコンポーネントを使用したアダプティブフォームでのキャンバステーマの使用 {#using-theme-in-adaptive-form}
 

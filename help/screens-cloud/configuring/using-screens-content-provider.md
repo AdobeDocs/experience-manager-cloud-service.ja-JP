@@ -2,10 +2,10 @@
 title: Screens コンテンツプロバイダーの使用
 description: ここでは、Screens コンテンツプロバイダーを使用してコンテンツを作成する方法について説明します。
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 44%
+source-wordcount: '353'
+ht-degree: 36%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 44%
 
 >[!NOTE]
 >**前提条件**
->この節を読む前に、[Screens サービスプロバイダーの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)を参照して、Screens サービスプロバイダーからこのユーザーインターフェイスに移動する方法を確認してください。
+>この節を読む前に、 [Screens サービスプロバイダーの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) Screens Services Provider からこのユーザーインターフェイスに移動する方法を説明します。
 
 次の手順に従って、Screens コンテンツプロバイダーにログオンします。
 

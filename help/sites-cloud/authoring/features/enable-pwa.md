@@ -2,10 +2,10 @@
 title: プログレッシブ web アプリケーション機能の有効化
 description: AEM Sites では、コンテンツ作成者がコーディングの代わりにシンプルな設定で、任意のサイトに対してプログレッシブ web アプリケーション機能を有効にすることができます。
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1998'
-ht-degree: 93%
+source-wordcount: '1997'
+ht-degree: 90%
 
 ---
 
@@ -82,7 +82,7 @@ The developer will also need to add the following link to the `customfooterlibs.
 
 ### Dispatcher の調整 {#adjust-dispatcher}
 
-PWA 機能は、`/content/<sitename>/manifest.webmanifest` ファイルを生成して使用します。デフォルトでは、[Dispatcher](/help/implementing/dispatcher/overview.md) はこのようなファイルを公開しません。これらのファイルを公開するには、デベロッパーはサイトプロジェクトに次の設定を追加する必要があります。
+PWA 機能は、`/content/<sitename>/manifest.webmanifest` ファイルを生成して使用します。デフォルトでは、 [dispatcher](/help/implementing/dispatcher/overview.md) では、このようなファイルを公開しません。 これらのファイルを公開するには、デベロッパーはサイトプロジェクトに次の設定を追加する必要があります。
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -118,7 +118,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
       * `/content/<sitename>`
       * `/content/experiencefragements/<sitename>`
       * `/content/dam/<sitename>`
-      * 任意のサードパーティフォントの参照
+      * サードパーティのフォント参照
       * `/etc/clientlibs/<sitename>`
 
       ![PWA のオフラインパスの定義](../assets/pwa-offline.png)
@@ -160,20 +160,20 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
    * **最小限の UI** - ネイティブアプリケーションと同様に、ブラウザーはほとんど非表示ですが、基本的なナビゲーションコントロールが表示されます。
    * **全画面表示** - ブラウザーはネイティブアプリケーションと同様に完全に非表示になりますが、全画面モードでレンダリングされます。
       * このオプションを使用する場合、アプリケーションのナビゲーションは、ブラウザーのナビゲーションコントロールを使用することなく、サイトのページ上のリンクやコンポーネントを使用してコンテンツ全体でナビゲーション可能でなければなりません。
-* **画面の向き** - PWA は、ローカルアプリケーションとして、[デバイスの向き](https://developer.mozilla.org/ja-JP/docs/Web/Manifest/orientation)を処理する方法がわかっている必要があります。
+* **画面の向き**  — ローカルアプリケーションでは、PWAが [デバイスの向き](https://developer.mozilla.org/ja-JP/docs/Web/Manifest/orientation).
    * **任意** - アプリケーションはユーザーのデバイスの向きに合わせて調整されます。これがデフォルト値です。
    * **縦置き** - ユーザーのデバイスの向きに関係なく、アプリケーションが強制的に縦置きレイアウトで開きます。
    * **横置き** - ユーザーのデバイスの向きに関係なく、アプリケーションが強制的に横置きレイアウトで開きます。
 * **テーマの色** - ローカルユーザーのオペレーティングシステムがネイティブの UI ツールバーとナビゲーションコントロールを表示する方法に影響する[アプリケーションの色](https://developer.mozilla.org/ja-JP/docs/Web/Manifest/theme_color)を定義します。ブラウザーによっては、他のアプリケーションプレゼンテーション要素に影響を与える場合があります。
    * カラーウェルポップアップを使用して、色を選択します。
    * 色は、16 進数または RGB 値で定義することもできます。
-* **背景色** — アプリケーションの読み込み時に表示される、 [アプリケーションの背景色](https://developer.mozilla.org/ja-JP/docs/Web/Manifest/background_color)を定義します。
+* **背景色**  — これは、 [アプリの背景色](https://developer.mozilla.org/ja-JP/docs/Web/Manifest/background_color)：アプリの読み込み時に表示されます。
    * カラーウェルポップアップを使用して、色を選択します。
    * 色は、16 進数または RGB 値で定義することもできます。
    * 特定のブラウザーでは、アプリケーション名、背景色、アイコンから[自動的にスプラッシュスクリーンが作成されます](https://developer.mozilla.org/ja-JP/docs/Web/Manifest#Splash_screens)。
 * **アイコン** - ユーザーのデバイス上に表示される、アプリケーションを表す[アイコン](https://developer.mozilla.org/ja-JP/docs/Web/Manifest/icons)を定義します。
    * アイコンは、サイズが 512x512 ピクセルの png ファイルである必要があります。
-   * アイコンは [DAM に保存](/help/assets/overview.md)されている必要があります。
+   * アイコンは、 [DAM に保存](/help/assets/overview.md).
 
 ### キャッシュ管理（詳細） {#offline-configuration}
 

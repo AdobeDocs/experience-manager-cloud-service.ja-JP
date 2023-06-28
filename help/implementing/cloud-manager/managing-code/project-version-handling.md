@@ -2,9 +2,9 @@
 title: Maven プロジェクトのバージョン処理
 description: AEMas a Cloud Serviceのステージングおよび実稼動デプロイメントの場合、Cloud Manager は一意の増分バージョンを生成します。
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '264'
 ht-degree: 67%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 67%
 
 AEMas a Cloud Serviceのステージングおよび実稼動デプロイメントの場合、Cloud Manager は一意の増分バージョンを生成します
 
-このバージョンは、 [パイプライン実行の詳細ページ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) とアクティビティページを追加しました。 ビルドを実行すると、Maven プロジェクトが更新されてこのバージョンを使用するようになります。また、タグが Git リポジトリーに作成され、そのバージョンを名前として使用します。
+このバージョンは、 [パイプライン実行の詳細ページ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) およびアクティビティページ ビルドを実行すると、Maven プロジェクトが更新されてこのバージョンを使用するようになります。また、タグが Git リポジトリーに作成され、そのバージョンを名前として使用します。
 
 元のプロジェクトバージョンが特定の条件を満たす場合、更新された Maven プロジェクトバージョンは、元のプロジェクトバージョンと Cloud Manager で生成されたバージョンの両方を結合します。ただし、タグは常に生成されたバージョンを使用します。このマージが行われるためには、元のプロジェクトバージョンを 3 つのバージョンセグメントで構成する必要があり（例：`1.0` や `1` ではなく `1.0.0` や `1.2.3`）、元のバージョンの末尾に `-SNAPSHOT` を付けてはいけません。
 
