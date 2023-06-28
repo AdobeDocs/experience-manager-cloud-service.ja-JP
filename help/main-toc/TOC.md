@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 69c6ca6104e5360e2db4c3ba9f34b3cddb2269ab
+source-git-commit: 66c7b30b8b66bc86d7b83e57e02ed61d426553a2
 workflow-type: tm+mt
-source-wordcount: '4085'
+source-wordcount: '4094'
 ht-degree: 97%
 
 ---
@@ -576,6 +576,7 @@ ht-degree: 97%
             + [インライン CSS スタイルのアダプティブフォームの個々のコンポーネントへの適用](/help/forms/inline-style-adaptive-forms.md)
          + アダプティブフォームでのルール追加と式の使用 {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [アダプティブフォームへのルールの追加](/help/forms/rule-editor.md)
+            + [ルールエディターの Invoke サービスを使用してカスタムエラーハンドラーを追加する](/help/forms/add-custom-error-handler-adaptive-forms.md)
          + [!DNL Adobe Sign] の使用 {#use-adobe-sign}
             + [Adobe Sign を使用したアダプティブフォームの電子サイン](/help/forms/working-with-adobe-sign.md)
          + 送信アクションとメタデータ送信の設定 {#configure-submit-actions-and-metadata-submission}
