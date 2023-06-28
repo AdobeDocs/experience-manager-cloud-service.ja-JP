@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: fd0b8ca281f35a92876f3c31baa4e17884f23948
+source-git-commit: f0dc0e0ccd196ab748e2bfcdb4ce404c1c91c213
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 39%
+source-wordcount: '604'
+ht-degree: 19%
 
 ---
 
@@ -22,6 +22,7 @@ ht-degree: 39%
 ### 機能強化 {#enhancements-12441}
 
 - SITES-8769:ResponsiveGrid の StyleImpl 呼び出しを改善する
+- Forms-5054:すべての [像](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) Adobe Signがサポート。
 
 ### 修正された問題 {#fixed-issues-12441}
 
@@ -37,6 +38,21 @@ ht-degree: 39%
 - SITES-13559:MSM:コンポーネントのロールアウト時に「変更不可」例外がスローされました
 - SITES-11757:MSM:親からロールアウト設定を継承は、子ページに戻りません
 - SITES-14073:サイト管理者：書き出すプロパティを選択しない場合、CSV レポートが 500 で失敗する
+- Forms-7648:「最大桁数」フィールドの検証が、数値ボックスコンポーネントで機能しません。
+- Forms-8177:Formsサービスがアクティブな場合、「com.adobe.aem.formsndocuments.publish.AssetReferenceProvider がアセットの依存関係を取得できませんでした」というエラーが発生します。
+- Forms-8300:ユーザーがタスクを開いた後に委任しようとすると、委任応答は、ユーザーのAEMインボックス UI を開く代わりに、タスクを再読み込みします。
+- Forms-8500:IE モードオプションが有効なMicrosoft® Edge ブラウザーで、HTML5 Formsを開けません。
+- Forms-8541:アダプティブFormsのレンダリング時に、ヌルポインター例外が発生します。
+- Forms-8964:Google Chrome または Mozilla Firefox 上の Android™デバイスでフォームを開くと、テキストボックスコンポーネントに入力されたテキストは削除できません。
+- Forms-9026:複雑で有効な JSON スキーマに基づいてアダプティブフォームを作成し、関連する JSON スキーマフィールドをアダプティブFormsエディターにドラッグしてアダプティブFormsフィールドを作成し、Adaptive Forms Editor ウィンドウを更新すると、すべてのフィールドが削除され、Adaptive Formsエディターは空白で表示されます。
+- Forms-9263:チェックボックスオプションの表示テキストに特殊文字が含まれている場合、ユーザーはそのようなチェックボックスを選択できません。
+- Forms-8668:フォームのPDFプレビューをレンダリングする際に、不要な Java™スタックダンプがエラーログに表示されます。 ただし、フォームのレンダリングに問題はありません。
+- Forms-8116:アダプティブFormsコンテナコンポーネントにルールが適用されている場合、適用されたルールは保存されません。
+- Forms-7906:アダプティブフォームがAEM Sitesコンテナコンポーネントに追加されると、ルールエディターが開けません。
+- Forms-8846:Bind 参照プロパティは、アダプティブForms添付ファイルコンポーネントに対しては機能しません。
+- Forms-9072:フォームフラグメントの作成中にスキームを検索した場合、検索結果は選択用のスキーマを返しません。
+- Forms:AEM Formsの機能のアクセシビリティを改善するために、複数のアクセシビリティ関連のバグを修正しました。
+
 
 ### 既知の問題 {#known-issues-12441}
 
