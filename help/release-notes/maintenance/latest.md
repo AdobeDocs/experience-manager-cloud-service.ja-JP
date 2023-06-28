@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 39696141a50bf8204d37341a85a4f4a8acae69db
+source-git-commit: fd0b8ca281f35a92876f3c31baa4e17884f23948
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 31%
+source-wordcount: '297'
+ht-degree: 39%
 
 ---
 
@@ -13,44 +13,36 @@ ht-degree: 31%
 
 次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 12255 {#release-12255}
+## リリース 12441 {#release-12441}
 
-2023 年 6 月 13 日に公開されたメンテナンスリリース12255の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース 12142 からのアップデートです。
+2023 年 6 月 27 日に公開されたメンテナンスリリース12441の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース 12255 からのアップデートです。
 
-2023.6.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。 詳しくは、 [Experience Managerリリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja) を参照してください。
+2023.7.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。 詳しくは、 [Experience Managerリリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja) を参照してください。
 
-### 機能強化 {#enhancements-12255}
+### 機能強化 {#enhancements-12441}
+
+- SITES-8769:ResponsiveGrid の StyleImpl 呼び出しを改善する
+
+### 修正された問題 {#fixed-issues-12441}
+
+- 各種アクセシビリティ関連の更新
+- SITES-12688:ページエディター：アセットファインダー検索で論理演算子 OR が正しく機能しない
+- SITES-4951:ページエディター：ページエディターでのタグ検索でサブタグが見つからない
+- SITES-12465:エクスペリエンスフラグメント：エクスペリエンスフラグメントコンポーネントダイアログで矢印キーが機能しない
+- SITES-12893:エクスペリエンスフラグメント：エクスペリエンスフラグメントに循環参照検証を適用
+- SITES-12715:エクスペリエンスフラグメント：エクスペリエンスフラグメントフォルダーに適用されたクラウドサービス設定は保持されません
+- SITES-13097:エクスペリエンスフラグメント：翻訳プロジェクトにエクスペリエンスフラグメントを追加できません
+- SITES-13165:GraphQL:null 値のフィルタリングのデフォルト動作を復元
+- SITES-12577:リンクチェック：変換サービスがリンクを断続的に書き換えない
+- SITES-13559:MSM:コンポーネントのロールアウト時に「変更不可」例外がスローされました
+- SITES-11757:MSM:親からロールアウト設定を継承は、子ページに戻りません
+- SITES-14073:サイト管理者：書き出すプロパティを選択しない場合、CSV レポートが 500 で失敗する
+
+### 既知の問題 {#known-issues-12441}
 
 なし。
 
-### 修正された問題 {#fixed-issues-12255}
-
-- 各種アクセシビリティ関連の更新
-- ASSETS-15116 - Assets の検索ビューの「Go to location」オプション
-- ASSETS-17453 - (Dynamic Media) ビデオのカスタムサムネールを選択できません
-- ASSETS-19279 — 大きなファイルのアセットダウンロードアーカイブ
-- ASSETS-19544 — アセットの更新のためにユーザーが最終変更したもの
-- ASSETS-20146 - （タッチ UI）検証エラーによるアセットダウンロードレポート失敗レポートは、レポートのリストページの常に上部に表示されます
-- ASSETS-21056：書き込みを最小限に抑えるためのアセット参照パフォーマンスの最適化
-- ASSETS-21909 - vtt のダウンロードに失敗した場合、スマート切り抜きビデオを表示できません
-- ASSETS-22261 - Linkshare がダウンロードするフォルダー構造が Assets UI ダウンロードと一致しない
-- ASSETS-22550 — 検索フィルターパネルがデフォルトで開くようになりました。
-- ASSETS-22920 - Brand Portalからフォルダーを非公開にしても、内のアセットが非公開としてマークされない
-- ASSETS-22922 — 無効になっているビューアプリセットがDynamic Mediaコンポーネントに表示される
-- ASSETS-23461 - Brand Portal Assets 検索ビューからのクイック公開
-- ASSETS-23466 -InDesign Serverアクセスできないリンク処理で、スペースを含む AAL リンクを解決できない
-- ASSETS-23469 — デフォルトのアセットフィルターは、カスタムフィルターと競合します
-- ASSETS-23981 — コレクションリンクでタイトルが機能しない並べ替え機能
-- ASSETS-24723 — 公開済みアセットが再処理され、ユーザーの操作が不要になった問題を修正しました。
-- GRANITE-45385 — ツリーのアクティベーションを移行して、ワークフローの代わりに sling ジョブを使用する
-
-### 既知の問題 {#known-issues-12255}
-
-- ASSETS-25729 — ビュースイッチャーメニューが切れている
-- ASSETS-25728 - 「アセットを再処理」オプションは検索表示で使用できません
-- ASSETS-22603 — 一部のダウンロードタイプのアセットレポート列には、UI に「null」値が表示されます。 ダウンロード可能な CSV は影響を受けません。
-
-### 組み込みテクノロジー {#embedded-tech-12255}
+### 組み込みテクノロジー {#embedded-tech-12441}
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
