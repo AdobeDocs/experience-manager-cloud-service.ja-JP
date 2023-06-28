@@ -6,10 +6,10 @@ role: User, Developer
 level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 94825e3b60d970fec5bf696d932ca66bb83fd2f3
+source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 100%
+source-wordcount: '358'
+ht-degree: 90%
 
 ---
 
@@ -31,8 +31,9 @@ ht-degree: 100%
 
 * AEM Forms as a Cloud Service が XDP および JSON スキーマファイルのサムネールを生成しません。サービスはサムネールの代わりにデフォルトのアイコンを表示します。
 
-   ![Forms サムネールの既知の問題](/help/forms/assets/forms-tumbnail-known-issue.png)
+  ![Forms サムネールの既知の問題](/help/forms/assets/forms-tumbnail-known-issue.png)
 
+* 繰り返し可能な要素を持つスキーマを使用してコアコンポーネントベースのアダプティブフォームを作成する場合、アダプティブFormsエディターのデータモデルツリーから繰り返し可能な要素をドラッグ&amp;ドロップするオプションは機能しません。
 
 ## 制限事項 {#limitations}
 

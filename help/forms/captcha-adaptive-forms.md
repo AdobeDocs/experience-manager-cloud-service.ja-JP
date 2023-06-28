@@ -10,9 +10,9 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: a16da1b11cfe18910b2e57c0b6b668543dba46e3
+source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1436'
 ht-degree: 86%
 
 ---
@@ -106,7 +106,7 @@ CAPTCHA（Computers and Humans Apart を伝える完全自動公開チューリ�
 
 >[!NOTE]
 >
-> サイズが「 」の reCAPTCHA v2 設定を選択した場合 [!UICONTROL 非表示] 「表示/非表示」オプションは使用できません。
+> reCAPTCHA v2 設定を選択し、サイズをに設定すると、 [!UICONTROL 非表示]の場合、「表示/非表示」オプションは無効のままです。
 
 ### CAPTCHA の検証 {#validate-captcha}
 
