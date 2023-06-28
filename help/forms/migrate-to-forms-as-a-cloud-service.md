@@ -1,33 +1,41 @@
 ---
-title: AEM 6.5 Forms と AEM 6.4 Forms から  [!DNL AEM Forms] as a Cloud Service 環境に移行する方法
-description: ' [!DNL AEM Forms] （オンプレミス環境と AMS 環境）から [!DNL AEM Forms]  as a Cloud Servicee 環境への移行'
+title: AEM 6.5 Formsからに移行する方法 [!DNL AEM Forms] as a Cloud Service環境？
+description: ' [!DNL AEM Forms] （オンプレミス環境と AMS 環境）から [!DNL AEM Forms]  as a Cloud Servicee 環境への移行. '
+keywords: 6.5 フォームからクラウドサービスへ、6.5 フォームから cs へ、6.5 フォームから CS へ、6.5 フォームからクラウドサービスへ、6.5 フォームから CS へ、6.5 フォームから CS へ、AEM 6.5 から CS へのアップグレード
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: d9c19d0b567a9a97973c4c4e25e64722da109dbb
+source-git-commit: f6b8ef52ad551be70e665a14ce00c197d1470e84
 workflow-type: tm+mt
-source-wordcount: '1335'
-ht-degree: 100%
+source-wordcount: '1566'
+ht-degree: 74%
 
 ---
 
 # [!DNL AEM Forms]（オンプレミス環境と AMS 環境）から [!DNL AEM Forms] as a Cloud Service への移行  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
 
-アダプティブフォーム、テーマ、テンプレート、クラウドの設定情報は、OSGi 上の <!-- AEM 6.3 Forms--> AEM 6.4 Forms および OSGi の AEM 6.5 Forms から [!DNL AEM] as a Cloud Service に移行できます。これらのアセットを移行する前に、移行ユーティリティを使用して、以前のバージョンで使用されていた形式を [!DNL AEM] as a Cloud Service で使用されていた形式に変換します。移行ユーティリティを実行すると、以下の項目が更新されます。
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/upgrade.html) |
+| AEM as a Cloud Service | この記事 |
+
+アダプティブForms、テーマ、テンプレートおよびクラウド設定は、次の場所から移行またはアップグレードできます。 <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> OSGi 上のAEM 6.5 Formsから [!DNL AEM] as a Cloud Service。 これらのアセットを移行する前に、移行ユーティリティを使用して、以前のバージョンで使用されていた形式を [!DNL AEM] as a Cloud Service で使用されていた形式に変換します。移行ユーティリティを実行すると、以下の項目が更新されます。
 
 * アダプティブフォームのカスタムコンポーネント
 * アダプティブフォームのテンプレートとテーマ
 * クラウドの設定情報
 * コードエディターのスクリプトは再利用可能な関数に変換され、ビジュアルルールに適用されます。
 
-## 考慮事項 {#consideration}
+## Forms as a Cloud Serviceへの移行に関する考慮事項 {#consideration}
+
+AEM 6.5 FormsからAEM Cloud Serviceに移行するには、次の点を考慮に入れることが重要です。
 
 * このサービスは、OSGi 環境上の [!DNL AEM Forms] のみからコンテンツを移行するのに役立ちます。JEE 上の [!DNL AEM Forms] からクラウドサービス環境へのコンテンツの移行はサポートされていません。
 
-* （AEM 6.3 Forms、または AEM 6.4 Forms または AEM 6.5 Forms にアップグレードした旧バージョンの環境のみ）AEM 6.3 Forms または以前のバージョンで使用可能な、初期設定のテンプレートおよびテーマに基づくアダプティブフォームは、[!DNL AEM Forms] as a Cloud Service ではサポートされていません。
+* (AEM 6.5 Forms以前のバージョンのみ ) AEM 6.3 Formsまたは以前のバージョンで使用できる、標準のテンプレートとテーマに基づくアダプティブFormsは、ではサポートされていません。 [!DNL AEM Forms] as a Cloud Service。
 
 * Adobe Experience Manager Forms as a Cloud Service は、Adobe Experience Manager 6.5 Forms（オンプレミスおよびアドビのマネージドサービス）環境と比較して、既存の機能にいくつかの顕著な変更を加えました。サービスへの移行を進める前に、[これらの注目すべき変更点](notable-changes.md)と、[機能レベルの違い](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=ja#viewing-report)について説明し、組織で必要な機能に基づいて移行を決定してください。
 
@@ -48,28 +56,35 @@ ht-degree: 100%
 
 ## 前提条件 {#prerequisites}
 
-* お使いの Forms Cloud Service プログラムで[「Forms - デジタル登録」オプションを有効に](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?lang=ja#editing-program)し、[パイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja)します。
+AEM Forms 6.5 からAEM as a Cloud Service環境へのスムーズな移行を確実におこなうには、次の前提条件を考慮することが重要です。
 
-   ![ドライランの結果](assets/enable-add-on.png)
+* 有効にする [Forms — デジタル登録](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?lang=ja#editing-program) FormsCloud Serviceプログラムのオプション [パイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja).
+
+  ![ドライランの結果](assets/enable-add-on.png)
 
 * クラウドサービス環境では、移行ユーティリティはユーザーマッピングツールおよびコンテンツ転送ツールと連携して機能します。移行ユーティリティは、[!DNL AEM Forms] アセットをクラウドサービスと互換性のあるものにし、コンテンツ転送ツールは、コンテンツを [!DNL AEM Forms] 環境から[!DNL AEM] as a Cloud Service 環境に移行します。移行ユーティリティを使用する前に、[AEM as a Cloud Service に移行する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html?lang=ja)プロセスを学習します。このプロセスには次の 2 つのツールがあります。
    * [ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja#cloud-migration)：ユーザーマッピングツールは、対応するアドビの IMS ユーザーアカウントでユーザーをマッピングするのに役立ちます。
-   * [コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja#cloud-migration)：コンテンツ転送ツールは、コンテンツを準備して、既存の環境からクラウドサービス環境に転送するのに役立ちます。
+   * [コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja#cloud-migration)：コンテンツ転送ツールは、コンテンツを準備して、既存の環境からクラウドサービス環境に転送するのに役立ちます。これにより、ユーザーはAEM Formsからクラウド環境に簡単にアップグレードできます。
 * [!DNL AEM Forms] as a Cloud Service およびローカル [!DNL AEM Forms] 環境の管理者権限を持つアカウント。
-* [ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) からベストプラクティスアナライザー、コンテンツ転送ツール、[!DNL AEM Forms] 移行ユーティリティをダウンロードしてインストールする
+* [!DNL AEM Forms]ソフトウェア配布ポータル[ からベストプラクティスアナライザー、コンテンツ転送ツール、](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 移行ユーティリティをダウンロードしてインストールする.
 
 * [ベストプラクティスアナライザー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=ja#cloud-migration) ツールを実行し、報告された問題を修正します。Adobe Experience Manager Forms から Adobe Experience Manager Forms as a Cloud Service への移行に関して考えられる問題については、[Forms as a Cloud Service の AEM パターン検出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=ja#viewing-report)を参照してください。
 
 
 <!-- * Download the latest [compatibility package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases) for your [!DNL AEM Forms] version. -->
 
-## [!DNL AEM Forms] アセットを移行  {#use-the-migration-utility}
+
+
+
+## 移行 [!DNL AEM 6.5 Forms] AEM Cloud Serviceへのアセット {#use-the-migration-utility}
 
 次の手順を実行して、[!DNL AEM Forms] アセットをクラウドサービスと互換性を持たせ、[!DNL AEM] as a Cloud Service 環境に転送します。
 
 1. 既存の [!DNL AEM Forms] 環境の[クローン](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/correct-method-to-clone-the-aem-environment/td-p/363487?profile.language=ja)を作成します。
 
-   コンテンツ転送ツールと移行ユーティリティを実行するには、必ずクローン環境を使用してください。コンテンツ転送ツールと移行ユーティリティで、コンテンツとアセットに変更をいくつか加えます。したがって、実稼働環境上でコンテンツ転送ツールと移行ユーティリティを実行しないでください。
+   >[!NOTE]
+   >
+   > 6.5 から Cloud Service に移行する場合は、クローン環境を使用してコンテンツ転送ツールと移行ユーティリティを実行することをお勧めします。 コンテンツ転送ツールと移行ユーティリティで、コンテンツとアセットに変更をいくつか加えます。したがって、実稼働環境上でコンテンツ転送ツールと移行ユーティリティを実行しないでください。
 
 1. 管理者権限を使ってクローン環境にログインします。
 
@@ -92,7 +107,7 @@ ht-degree: 100%
 
    1. 「**[!UICONTROL アダプティブフォームカスタムコンポーネントの移行]**」をタップし、カスタムコンポーネントの移行ページで「**[!UICONTROL 移行の開始]**」をタップします。これは、アダプティブフォーム用に開発されたカスタムコンポーネントと、[!DNL AEM Forms] 環境上のコンポーネントオーバーレイを、[!DNL AEM] as a Cloud Service と互換性を持たせます。
 
-   1. 「**[!UICONTROL アダプティブフォームテンプレートの移行]**」をタップし、カスタムコンポーネントの移行ページで、「**[!UICONTROL 移行の開始]**」をタップします。/apps または /conf で AEM テンプレートをエディターを使用して、[!DNL AEM] as a Cloud Service と互換性のあるアダプティブフォームテンプレートを作成します。
+   1. 「**[!UICONTROL アダプティブフォームテンプレートの移行]**」をタップし、カスタムコンポーネントの移行ページで、「**[!UICONTROL 移行の開始]**」をタップします。これにより、アダプティブフォームテンプレートが `/apps` または `/conf` と互換性のあるAEM Template Editor を使用して作成された [!DNL AEM] as a Cloud Service
 
    1. 「**[!UICONTROL AEM Forms クラウド設定の移行]**」をタップし、設定の移行ページで「**[!UICONTROL 移行の開始]**」をタップします。次のクラウドサービスを更新して新しい場所に移動します。
 
@@ -100,6 +115,7 @@ ht-degree: 100%
       * Google reCAPTCHA Cloud Service
       * [!DNL Adobe Sign] Cloud Service
       * Adobe Fonts Cloud Service
+
    1. 「**[!UICONTROL コードエディタースクリプトの移行]**」をタップし、再利用可能な関数を保存する場所を指定して、「**[!UICONTROL 移行の開始]」をタップします。
 
    Cloud Service は、ルールエディタースクリプトをサポートしていません。**[!UICONTROL コードエディタースクリプトの移行]**&#x200B;ツールは、環境上のすべてのルールスクリプトを再利用可能な関数に変換し、再利用可能な関数を適切な場所のビジュアルエディターに適用します。これらの再利用可能な関数は、クライアントライブラリの形式で保存され、既存の機能をそのまま維持するのに役立ちます。ツールは、生成された再利用可能な関数を、対応するアダプティブフォームに自動的に適用します。
@@ -114,8 +130,10 @@ ht-degree: 100%
 
 ## 様々な AEM Forms 固有のアセットのパス
 
-* **アダプティブフォーム**：アダプティブフォームは、`/content/dam/formsanddocuments/` および /content/forms/af にあります。例えば、WKND 登録という名前のアダプティブフォームの場合、`/content/dam/formsanddocuments/wknd-registration`と`/content/forms/af/wknd-registration`のパスを追加します。
-* **フォームデータモデル**：すべてのフォームデータモデルは、`/content/dam/formsanddocuments-fdm`にあります。例：`/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
+AEM Forms 6.5 から Cloud Service に移行する場合、AEM Forms固有のアセットは次の場所にあります。
+
+* **アダプティブForms**:アダプティブフォームは、次の場所で見つけることができます。 `/content/dam/formsanddocuments/`および `/content/forms/af`. 例えば、WKND 登録という名前のアダプティブフォームの場合、`/content/dam/formsanddocuments/wknd-registration`と`/content/forms/af/wknd-registration`のパスを追加します。
+* **フォームデータモデル**:すべてのフォームデータモデルは、 `/content/dam/formsanddocuments-fdm`. 例：`/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
 
 * **クライアントライブラリ**：クライアントライブラリのデフォルトパスは `/etc/clientlibs/fd/theme` です。
 
@@ -127,15 +145,33 @@ ht-degree: 100%
 
 * **ワークフローモデル**：AEM ワークフローモデルは、`/conf/global/settings/workflow/models/`で参照できます。例えば、WKND 登録という名前のワークフローモデルの場合、パス`/conf/global/settings/workflow/models/wknd-registration`を追加します
 
-以下に示すトップレベルのフォルダーパスまたは以下に示す特定のフォルダーパスを追加できます。これにより、特定のアセットとすべてのアセットおよびフォームを一度に移行できます。
+以下に示すトップレベルのフォルダーパスまたは以下に示す特定のフォルダーパスを追加できます。AEM forms 6.5 から Cloud Service にアップグレードする際に、特定のアセットとすべてのアセットとフォームを一度に移行できます。
 
-* /content/dam/formsanddocuments-fdm
-* /content/dam/formsanddocuments/themes
-* /content/forms/af
-* /etc/clientlibs/fd/theme
+* `/content/dam/formsanddocuments-fdm`
+* `/content/dam/formsanddocuments/themes`
+* `/content/forms/af`
+* `/etc/clientlibs/fd/theme`
 
 AEM ワークフローモデルを移行するには、次のパスを指定します。
 
-* /conf/global/settings/workflow/models/
-* /conf/global/settings/workflow/launcher
-* /var/workflow/models
+* `/conf/global/settings/workflow/models/`
+* `/conf/global/settings/workflow/launcher`
+* `/var/workflow/models`
+
+## 次を見る
+
+* [既存の Adobe Experience Manager 6.5 Forms ユーザー向けの主な変更点](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/notable-changes.html)
+* [AEM Formsにオンボーディングas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service.html)
+* [Cloud Service時に最初のアダプティブフォームを作成する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=ja)
+
+## 追加情報
+
+移行ユーティリティを使用すると、基盤コンポーネントに基づいてアダプティブFormsを移行できます。 また、Formsas a Cloud Serviceは、アダプティブFormsコアコンポーネントをサポートしています。 次のことが可能です。
+
+* [コアコンポーネントベースのスタンドアロンのアダプティブFormsを作成](/help/forms/creating-adaptive-form-core-components.md)
+* [コアコンポーネントベースのアダプティブフォームをAEM Sitesページで直接作成する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+AEM Formsas a Cloud Serviceの詳細については、次を参照してください。
+
+* [AEM FormsCloud Serviceの概要](/help/forms/home.md)
+* [AEM FormsCloud Service](/help/forms/latest-innovations.md)
