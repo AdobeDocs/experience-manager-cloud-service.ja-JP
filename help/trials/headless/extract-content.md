@@ -4,10 +4,10 @@ description: コンテンツ フラグメントと GraphQL API をヘッドレ�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: a2064dcbec1c171b0a6de57b4197f4921d234428
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 69%
+source-wordcount: '1116'
+ht-degree: 65%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 69%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"
->title="お疲れさまでした。2 つの基本的なタイプのクエリと、独自のコンテンツをクエリする方法について学びました。これで、AEM GraphQL API を使用して、アプリが想定する形式でコンテンツを配信する効率的なクエリの作成方法を理解できました。"
+>title="お疲れさまでした。ここでは、2 つの基本的なタイプのクエリと、独自のコンテンツに対するクエリ方法について説明します。 これで、AEM GraphQL API を使用して、アプリが想定する形式でコンテンツを配信する効率的なクエリの作成方法を理解できました。"
 >abstract=""
 
 ## サンプルコンテンツのリストのクエリ {#list-query}
@@ -70,7 +70,7 @@ ht-degree: 69%
 
 >[!NOTE]
 >
->選択できない場合、 **AEMデモアセット** エンドポイントをドロップダウンから選択する場合は、Adobeカスタマーケアに問い合わせるか、 [AEM試用Slackチャネル。](https://adobe-dx-support.slack.com/)
+>選択できない場合、 **AEMデモアセット** エンドポイントを使用する場合は、Adobeカスタマーケアに問い合わせるか、 [AEM試用Slackチャネル。](https://adobe-dx-support.slack.com/)
 
 ## サンプルコンテンツの特定の部分に対するクエリ {#bypath-query}
 
