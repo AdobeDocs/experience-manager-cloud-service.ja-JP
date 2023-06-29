@@ -2,9 +2,9 @@
 title: オーサリングの基本
 description: コンテンツフラグメントを使用したヘッドレス CMS のコンテンツオーサリングの概念と仕組みについて説明します。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1715'
 ht-degree: 85%
 
 ---
@@ -213,7 +213,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 例：
 
-* 複数の情報（一部は特定のタイプのもの）のみを必要とするフラグメント。ヘッドレスコンテンツの場合、参照は重要です。これらについては、後でジャーニーで学びます。
+* 複数の情報（一部は特定のタイプのもの）のみを必要とするフラグメント。ヘッドレスコンテンツの場合、参照は重要です（これらについては、後でジャーニーで学びます）。
 
   ![コンテンツフラグメントエディター - マイフラグメント](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -235,7 +235,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 #### （おそらく）心配する必要のないもの {#what-you-probably-do-not-need-to-worry-about}
 
-これは少し奇妙な節に思えるかもしれませんが、コンテンツフラグメントエディターを開いて調査を開始すると、ヘッドレスジャーニーに適用されない（おそらく）様々なオプションをコンテンツ作成者として確認できます。 そこで、ここでは、ヘッドレスコンテキストで無視できるものについて簡単に説明しておきます。
+これは少し奇妙な節に思えるかもしれませんが、コンテンツフラグメントエディターを開いて調査を開始すると、コンテンツ作成者としてヘッドレスジャーニーに適用されない（おそらく）様々なオプションを確認できます。 そこで、ここでは、ヘッドレスコンテキストで無視できるものについて簡単に説明しておきます。
 
 * **コンテンツフラグメントモデル**
 

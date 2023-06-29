@@ -2,9 +2,9 @@
 title: オーサリングに関する概念
 description: AEM でのオーサリングの概念
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '385'
 ht-degree: 37%
 
 ---
@@ -20,7 +20,7 @@ AEM インストールは、通常、少なくとも次の 2 つの環境で構�
 
 オーサー環境は、コンテンツを作成および更新し、実際にコンテンツを公開する前にレビューするためのメカニズムを提供します。
 
-* 作成者がコンテンツを作成しレビューします。コンテンツには、ページ、アセット、パブリケーションなど、様々な種類があります。
+* 作成者がコンテンツを作成しレビューします。コンテンツには、ページ、アセット、パブリケーションなど、様々なタイプがあります。
 * このコンテンツが、ある時点で Web サイトに公開されます。
 
 ![オーサー、パブリッシャー、ディスパッチャーの模式図](/help/sites-cloud/authoring/assets/author-publish.png)

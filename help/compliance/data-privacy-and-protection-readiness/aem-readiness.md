@@ -1,11 +1,11 @@
 ---
 title: データ保護とデータプライバシーに関する規制 - Adobe Experience Manager as a Cloud Service の対応
-description: 様々なデータ保護およびデータプライバシー規制に対するAdobe Experience Manager as a Cloud Serviceのサポートについて説明します。 これらの規制には、EU 一般データ保護規則 (GDPR)、カリフォルニア州消費者プライバシー法、新しいAEMas a Cloud Serviceプロジェクトを実装する際の準拠方法などが含まれます。
+description: 様々なデータ保護およびデータプライバシー規制に対するAdobe Experience Manager as a Cloud Serviceのサポートと、新しいAEMas a Cloud Serviceプロジェクトを実装する際の準拠方法について説明します。 これらの規制には、カリフォルニア州消費者プライバシー法 (GDPR) である EU 一般データ保護規則 (GDPR) が含まれます。
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 44%
+source-wordcount: '734'
+ht-degree: 43%
 
 ---
 
@@ -19,9 +19,12 @@ ht-degree: 44%
 
 >[!NOTE]
 >
->プライバシーに関する問題に対するAdobeの対応と、このプライバシーがAdobeのお客様に与える影響について詳しくは、 [Adobeプライバシーセンター](https://www.adobe.com/jp/privacy.html).
+>プライバシーに関する問題に対するAdobeの対応と、これらの対応がAdobeのお客様にとってどのような意味を持つかについて詳しくは、 [Adobeプライバシーセンター](https://www.adobe.com/jp/privacy.html).
 
-Adobeは、お客様のプライバシー管理者またはAEM管理者に対して、ドキュメントと手順（API が利用可能な場合）を提供しています。 このドキュメントは、管理者がデータ保護およびデータプライバシー要求を処理し、Adobeのお客様がこれらの規制に準拠できるよう支援するのに役立ちます。 手順を説明しているので、お客様は手動で規制リクエストを実行したり、可能な場合は外部のポータルやサービスから API を呼び出したりできます。
+Adobeをご利用のお客様がこれらの規制に準拠できるよう、Adobeは、お客様のプライバシー管理者およびAEM管理者向けに、ドキュメントと手順（利用可能な場合は API を使用）を提供しています。
+
+* このドキュメントは、管理者がデータ保護やデータプライバシー要求を処理するのに役立ちます。
+* この手順に記載されているものを使用すると、お客様は手動で規制リクエストを実行したり、API 呼び出しを（利用可能な場合は）外部のポータルやサービスからおこなったりできます。
 
 >[!CAUTION]
 >
@@ -57,7 +60,7 @@ Adobe Experience Manager as a Cloud Service の場合：
 
 * インスタンスと、それらに対して実行されるアプリケーションは、顧客が所有および運用します。
 
-   * この所有権は、お客様が、事業主体やサービスプロバイダ、データ管理者、データ処理者などの規制上の役割を効果的に管理することを意味します。
+   * 所有権とは、お客様が、事業主体やサービス・プロバイダ、データ管理者、データ処理者などの規制上の役割を効果的に管理することを意味します。
 
    * 次の図に示すように、Adobe Experience Platform Privacy ServiceはAEMのワークフローに含まれていません。
 
@@ -69,9 +72,9 @@ Adobe Experience Manager as a Cloud Service の場合：
 
 * AEMには、プライバシーリクエストワークフローをサポートするための既製のツールは含まれていません。
 
-   * Adobeは、お客様のプライバシー管理者、AEM管理者、またはその両方に関するドキュメントと手順を提供し、プライバシー規制に関連するリクエストを手動で実行できます。
+   * Adobeは、お客様のプライバシー管理者、AEM管理者またはその両方に関するドキュメントと手順を提供し、プライバシー規制に関連するリクエストを手動で実行できるようにします。
 
-Adobeは、Adobe Experience Manager as a Cloud Serviceのアクセス、削除およびオプトアウトに関連するプライバシーリクエストを処理する手順を提供しています。 お客様が開発したポータルやスクリプトから呼び出して、自動化に役立つ API を利用できる場合があります。
+Adobeは、Adobe Experience Manager as a Cloud Serviceのアクセス、削除およびオプトアウトに関連するプライバシーリクエストを処理する手順を提供しています。 お客様が開発したポータルから呼び出すことができる API、または自動化に役立つスクリプトが利用できる場合があります。
 
 次の図に、プライバシーリクエストワークフローを示します（Adobe Experience Manager 6.5 を使用した例）。
 
@@ -91,7 +94,7 @@ AEM as a Cloud Serviceの製品領域については、以下の規制ドキュ�
 
 ## Adobe Experience Manager as a Cloud Service と Adobe Target と Adobe Analytics の統合 {#aem-integration-with-adobe-target-adobe-analytics}
 
-Adobe Experience Manager as a Cloud Service上のこれらの統合は、データ保護およびプライバシー（GDPR など）に対応したサービスと共におこなわれます。 Adobe Target や Adobe Analytics の個人データは、統合に関連して AEM に保存されません。
+Adobe Experience Manager as a Cloud ServiceとAdobe TargetおよびAdobe Analyticsの統合は、データ保護およびプライバシー（GDPR など）に対応したサービスで実装されています。 Adobe Target や Adobe Analytics の個人データは、統合に関連して AEM に保存されません。
 詳しくは、次を参照してください。
 
 * [Adobe Target - プライバシーの概要](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)

@@ -2,9 +2,9 @@
 title: インボックス
 description: インボックスを使用したタスクの管理
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '905'
 ht-degree: 71%
 
 ---
@@ -102,7 +102,7 @@ AEM通知インボックスを開くには：
 
   ![インボックスのリスト表示の設定](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-  カレンダーを他のユーザーに委任し、他のユーザーに委任を依頼して、委任を管理することもできます。
+  カレンダーを他のユーザーに委任したり、他のユーザーに委任を依頼したり、委任を管理したりすることもできます。
 
   ![インボックスのリスト表示の委任設定](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 

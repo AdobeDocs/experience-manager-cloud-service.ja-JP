@@ -2,9 +2,9 @@
 title: アセットフォルダーの作成 - ヘッドレスセットアップ
 description: AEM コンテンツフラグメントモデルを使用すると、ヘッドレスコンテンツの基盤となるコンテンツフラグメントの構造を定義できます。
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '383'
 ht-degree: 86%
 
 ---
@@ -19,7 +19,7 @@ AEM コンテンツフラグメントモデルを使用すると、ヘッドレ�
 
 ただし、まず、アセットを保存するアセットフォルダーを作成する必要があります。
 
-アセットフォルダーは、 [従来のコンテンツアセットを整理する](/help/assets/manage-digital-assets.md) 画像やビデオ、コンテンツフラグメントと同様です。
+アセットフォルダーは、 [従来のコンテンツアセットを整理する](/help/assets/manage-digital-assets.md) 例えば、画像やビデオをコンテンツフラグメントと一緒に使用することができます。
 
 ## アセットフォルダーの作成方法 {#how-to-create-an-assets-folder}
 

@@ -3,7 +3,7 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '4918'
 ht-degree: 90%
@@ -407,7 +407,7 @@ query($variation: String!) {
 
 このクエリは、作成者の完全なリストを返します。`another` バリエーションのない作成者は、元のデータに戻ります（この場合、`_variation` は `master` をレポートします）。
 
-指定したバリエーションを提供する作成者にリストを制限する場合（および元のデータにフォールバックされる作成者をスキップする場合）、 [フィルター](#filtering):
+適用： [フィルター](#filtering)指定したバリエーションを提供する作成者にリストを制限する場合（および元のデータにフォールバックする作成者をスキップする場合）:
 
 ```graphql
 query($variation: String!) {

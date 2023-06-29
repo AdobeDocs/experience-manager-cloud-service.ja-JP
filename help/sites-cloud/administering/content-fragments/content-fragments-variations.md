@@ -4,9 +4,9 @@ description: バリエーションを使用してフラグメントのコンテ�
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '2463'
+source-wordcount: '2461'
 ht-degree: 79%
 
 ---
@@ -197,8 +197,12 @@ ht-degree: 79%
 1. プロパティを指定します（例：**タイトル**）
 1. 「**作成**」を選択します。
 1. 最後に、
-   1. **完了** （元のフラグメントに）を返し、新しいフラグメントを参照します。
-   1. **開く** は、新しいフラグメントを参照し、新しいフラグメントを開いて、編集用に新しいブラウザータブで開きます。
+   1. **完了**:
+      * （元のフラグメントに）を返します
+      * は、新しいフラグメントを参照します
+   1. **開く**:
+      * は、新しいフラグメントを参照します
+      * 新しいフラグメントを編集用に新しいブラウザータブで開く
 
 ### 重要な統計の表示 {#viewing-key-statistics}
 
