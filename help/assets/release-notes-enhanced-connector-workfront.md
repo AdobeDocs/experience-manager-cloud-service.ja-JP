@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 89%
+source-wordcount: '1158'
+ht-degree: 82%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 89%
 
 >[!IMPORTANT]
 >
->アドビでは [ の](../assets/update-workfront-enhanced-connector.md)最新バージョン 1.9.11 へのアップグレード[!DNL Workfront for Experience Manager enhanced connector]をお勧めします。
+>Adobeが推奨 [最新バージョン 1.9.11 にアップグレード](/help/assets/workfront-connector-install.md) の [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 既知の問題 {#known-issues}
 
@@ -139,7 +139,7 @@ ht-degree: 89%
 
 10月7日（PT）にリリースされた [!DNL Workfront for Experience Manager enhanced connector] バージョン 1.9.4 では、次の問題が修正されています。
 
-* 多数のイベントがある場合、拡張コネクタ設定ページに「イベント購読」タブが表示されません。
+* 多数のイベントが原因で、拡張コネクタ設定ページの「イベント購読」タブを表示できません。
 
 * Workfront でプロジェクト内の既存フォルダーのリストを取得できず、その結果、フォルダーが重複して作成されます。
 
@@ -147,7 +147,7 @@ ht-degree: 89%
 
 9月16日（PT）にリリースされた [!DNL Workfront for Experience Manager enhanced connector] バージョン 1.9.3 では、次の問題が修正されています。
 
-* サイズが 8 GB を超えるファイルをアップロードできません。
+* 8 GB を超えるファイルをアップロードできません。
 * Workfront から AEM に送信されるアセットを自動公開する際の問題。
 * デフォルトのメタデータスキーマフォームの編集中は、「ルートパス」フィールドを「タグ」フィールドで使用することができません。
 * AEM ワークフローを使用して Workfront に新しいバージョンを追加する際の問題。
@@ -178,7 +178,7 @@ ht-degree: 89%
 
 [!DNL Workfront for Experience Manager enhanced connector] には、次の更新が含まれています。
 
-* Experience Manager as a Cloud Service へアセットをアップロードする際、リンクされたフォルダーを使用したり、Workfront の `Send To` アクションを使用したりすると、アセットが破損し、Adobe Photoshop で開くことができなくなります。
+* リンクされたフォルダーを使用してアップロードする場合、または `Send To` WorkfrontでアセットをExperience Manageras a Cloud Serviceにアップロードするために使用できるアクション。アセットが破損し、Adobe Photoshopで開くことができない。
 
 ### 2022年3月リリース {#march-2022-release}
 
