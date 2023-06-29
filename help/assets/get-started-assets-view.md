@@ -3,14 +3,14 @@ title: ' [!DNL Assets View] の基本'
 description: ' [!DNL Assets View] のアクセス方法、ログイン操作、サポートされているユースケース、既知の問題について説明します。'
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
-source-git-commit: 5af7f9160b0028d0eff5358c3c1a43729b86883b
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 94%
+source-wordcount: '345'
+ht-degree: 86%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets View] の基本 {#assets-view-get-started}
+# Assets ビューの概要 {#assets-view-get-started}
 
 <!-- TBD: Make links for these steps. -->
 
@@ -25,11 +25,9 @@ ht-degree: 94%
 <!--In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
 -->
 
-## [!DNL Assets View] へのアクセス権の取得 {#get-access}
+## アセットビューへのアクセス {#access-assets-view}
 
-アドビは、ソリューションをプロビジョニングし、組織が指名した人物を管理者として追加します。管理者は、[[!DNL Admin Console]](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) を使用して、組織の様々なユーザーにアクセス権を付与できます。アクセスに関するリクエストについては、組織の管理者に問い合わせてください。
-
-ログイン時、資格情報を入力すると、[!DNL Assets View] からアカウントを選択するように求められます。 この場合、`Company or School Account` をクリックして続行します。
+詳しくは、 [Assets ビューへのアクセス方法](/help/assets/assets-view-introduction.md#how-to-access-assets-view) を参照してください。
 
 ## [!DNL Assets View] の設定 {#configuration}
 

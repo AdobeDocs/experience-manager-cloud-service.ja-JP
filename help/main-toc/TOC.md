@@ -8,7 +8,7 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9424bef8a9a2c7ab4afb06e2a08e15336f858b7b
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
 source-wordcount: '4139'
 ht-degree: 97%
@@ -502,7 +502,7 @@ ht-degree: 97%
       + [Flash ビューアの提供終了](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML ビューアの提供終了](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Assets ビューの操作 {#assets-view}
-      + [概要](/help/assets/assets-view-introduction.md)
+      + [はじめに](/help/assets/assets-view-introduction.md)
       + [はじめに](/help/assets/get-started-assets-view.md)
       + [マイワークスペース](/help/assets/my-workspace-assets-view.md)
       + [サポートされているファイルタイプとユースケース](/help/assets/supported-file-formats-assets-view.md)
