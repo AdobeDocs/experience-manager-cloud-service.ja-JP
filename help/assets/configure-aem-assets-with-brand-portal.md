@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5096cd6141e70f40b5145389ca4db3cc65ea1e66
 workflow-type: tm+mt
-source-wordcount: '2527'
-ht-degree: 98%
+source-wordcount: '2558'
+ht-degree: 97%
 
 ---
 
@@ -101,11 +101,11 @@ Experience Manager Assets as a [!DNL Cloud Service] インスタンスと Brand 
 
 1. **ツール**&#x200B;パネルで、**[!UICONTROL 導入]**／**[!UICONTROL 配布版]**&#x200B;に移動します。
 
-   ![](assets/test-bpconfig1.png)
+   ![AEM Assets as a Cloud Service と Brand Portal の連携の設定](assets/test-bpconfig1.png)
 
    Brand Portal 配布エージェント（**[!UICONTROL bpdistributionagent0]**）は、「**[!UICONTROL Brand Portal に公開]**」の下に作成されます。
 
-   ![](assets/test-bpconfig2.png)
+   ![配布エージェントを作成](assets/test-bpconfig2.png)
 
 
 1. 「**[!UICONTROL Brand Portal に公開]**」をクリックして、配布エージェントを開きます。
@@ -121,11 +121,11 @@ Experience Manager Assets as a [!DNL Cloud Service] インスタンスと Brand 
    >
    >エラーを確認し、**error-queue** を定期的に消去することをお勧めします。
 
-   ![](assets/test-bpconfig3.png)
+   ![アセット配布用の処理キュー](assets/test-bpconfig3.png)
 
 1. Experience Manager Assets as a [!DNL Cloud Service] と Brand Portal との接続を確認するには、「**[!UICONTROL 接続をテスト]**」アイコンをクリックします。
 
-   ![](assets/test-bpconfig4.png)
+   ![AEMとBrand Portal間の接続を検証](assets/test-bpconfig4.png)
 
    *テストパッケージが正常に配信された*&#x200B;ことを示すメッセージが表示されます。
 
@@ -156,7 +156,7 @@ Experience Manager Assets から Brand Portal にアセットを公開して、�
 1. 「**設定のテスト**」節で示した手順（1 ～ 4）に従い、配布エージェントページに移動します。
 1. 「**[!UICONTROL ログ]** 」をクリックして、処理ログとエラーログを表示します。
 
-   ![](assets/test-bpconfig5.png)
+   ![処理ログとエラーログ](assets/test-bpconfig5.png)
 
 配布エージェントは次のログを生成します。
 
