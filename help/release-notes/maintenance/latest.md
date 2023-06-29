@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: f0dc0e0ccd196ab748e2bfcdb4ce404c1c91c213
+source-git-commit: e8ea040ba3f8c73d7ed64c9669ac1d0a22d3a3c8
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '600'
 ht-degree: 19%
 
 ---
@@ -38,8 +38,8 @@ ht-degree: 19%
 - SITES-13559:MSM:コンポーネントのロールアウト時に「変更不可」例外がスローされました
 - SITES-11757:MSM:親からロールアウト設定を継承は、子ページに戻りません
 - SITES-14073:サイト管理者：書き出すプロパティを選択しない場合、CSV レポートが 500 で失敗する
-- Forms-7648:「最大桁数」フィールドの検証が、数値ボックスコンポーネントで機能しません。
-- Forms-8177:Formsサービスがアクティブな場合、「com.adobe.aem.formsndocuments.publish.AssetReferenceProvider がアセットの依存関係を取得できませんでした」というエラーが発生します。
+- Forms-7648:数値ボックスコンポーネントの最大桁数を検証できません。 検証スクリプトが機能していません。
+- Forms-8177:Formsサービスがアクティブな場合、 `com.adobe.aem.formsndocuments.publish.AssetReferenceProvider Failed to retrieve asset dependencies` エラーが発生しました。
 - Forms-8300:ユーザーがタスクを開いた後に委任しようとすると、委任応答は、ユーザーのAEMインボックス UI を開く代わりに、タスクを再読み込みします。
 - Forms-8500:IE モードオプションが有効なMicrosoft® Edge ブラウザーで、HTML5 Formsを開けません。
 - Forms-8541:アダプティブFormsのレンダリング時に、ヌルポインター例外が発生します。
@@ -52,7 +52,6 @@ ht-degree: 19%
 - Forms-8846:Bind 参照プロパティは、アダプティブForms添付ファイルコンポーネントに対しては機能しません。
 - Forms-9072:フォームフラグメントの作成中にスキームを検索した場合、検索結果は選択用のスキーマを返しません。
 - Forms:AEM Formsの機能のアクセシビリティを改善するために、複数のアクセシビリティ関連のバグを修正しました。
-
 
 ### 既知の問題 {#known-issues-12441}
 
