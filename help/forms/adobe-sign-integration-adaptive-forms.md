@@ -4,9 +4,9 @@ description: Adobe Acrobat Signを [!DNL AEM Forms] as a Cloud Service?
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
+source-git-commit: 09ed1ae61e7748da2cc182b005a9dd26853cb3f7
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1918'
 ht-degree: 46%
 
 ---
@@ -110,9 +110,6 @@ ht-degree: 46%
 次に、以下を実行できます。 [「 Adobe Acrobat Signフィールドをアダプティブフォームに追加」を使用します。](working-with-adobe-sign.md). [!DNL Adobe Acrobat Sign] 用に有効化するすべてのアダプティブフォームに、Cloud Service に使用する設定コンテナを追加してください。設定コンテナは、アダプティブフォームのプロパティから指定できます。
 
 ## AEM FormsをAdobe Acrobat Sign Solutionsと連携して政府機関向け {#adobe-acrobat-sign-for-government}
-
-[!BADGE リリース前のドキュメント]{type=Caution tooltip="黄色のステータス"}
-<span class="preview"> この節にはリリース前のドキュメントが含まれており、変更される可能性があります。</span>
 
 AEM FormsとAdobe Acrobat Sign Solutions for Government の接続は、複数の手順で構成されます。 以下が含まれます。
 

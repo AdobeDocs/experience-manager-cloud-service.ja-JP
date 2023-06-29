@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 32fb0942b8007aeee8afa6378a9293eecd7d7700
 workflow-type: tm+mt
-source-wordcount: '1172'
-ht-degree: 27%
+source-wordcount: '1385'
+ht-degree: 16%
 
 ---
 
@@ -26,22 +26,17 @@ ht-degree: 27%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在の機能リリース (2023.4.0) は 2023 年 6 月 8 日です。 次回の機能リリース (2023.6.0) は、2023 年 6 月 30 日に予定されています。
+のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在の機能リリース (2023.6.0) は 2023 年 6 月 30 日です。 次の機能リリース (2023.7.0) は、2023 年 7 月 27 日に予定されています。
 
 ## リリースビデオ {#release-video}
 
-2023.4.0 リリースに追加された機能の概要については、 2023 年 4 月リリースの概要ビデオをご覧ください。
+2023.6.0 リリースで追加された機能の概要については、2023年6月リリースの概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3418681/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3420971/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### の新機能[!DNL Experience Manager Sites] {#sites-features}
-
-* AEMas a Cloud Serviceのコンテンツフラグメントを JSON 形式でAdobe Targetに書き出し、対応する JSON オファーを Target で作成します。
-* 複雑な GraphQL のクエリとフィルターを使用して大きなコンテンツセットを AEM から取得する際、GraphQL のページネーションと並べ替えのサポートに加え、内部キャッシュの強化によって、切り離されたクライアントアプリケーションのパフォーマンスの向上を支援するようになりました。
-
-### [!DNL Experience Manager Sites] プレリリースの新機能 {#prerelease-sites}
 
 * コンテンツフラグメントとその参照を [AEM Preview Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) の使用 [コンテンツフラグメントコンソール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en)を使用すると、ユーザーは、運用を開始する前に、切り離されたプレビューアプリケーションで最終的なエクスペリエンスをプレビューできます。
 * AEM GraphQLを使用したヘッドレスシナリオで、Web 配信用に画像を動的に最適化できるようになりました。 [クエリ変数](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables) は、GraphQLクエリで定義でき、クライアントアプリケーションがAEMから適切に最適化された画像をリクエストする際に、それに応じて切り離すことができます。
@@ -51,36 +46,72 @@ ht-degree: 27%
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-* メタデータの自動抽出、サムネールおよびカスタムレンディションの生成を行う WebP 画像のサポートが追加されました。これらのファイルでスマートタグ機能もサポートされるようになりました。 Dynamic Media機能は、WebP で入力形式としてサポートされていません。
+**新しいアセットビューの可用性**
 
-* [検索エクスペリエンスの強化](/help/assets/search-assets.md#aftersearch)  — 検索結果に表示されるアセットに対して、次の操作をすばやく実行できるようになりました。
+この [新しいアセットビュー](/help/assets/assets-view-introduction.md) は、Experience Manager Assetsで使用できるようになりました。 Assets ビューにはシンプルなユーザーインターフェイスが用意されており、デジタルアセットの管理、検出、配布が容易になります。 このエクスペリエンスの対象は、クリエイティブ、読み取り専用のアセット消費者、より軽量な DAM ユーザーです。
 
-   * ワークフローの作成
-   * バージョンを作成します。
-   * アセットの関連付けまたは関連付け解除
+![タグ管理](/help/assets/assets/my-workspace.png)
 
-     これらの操作を実行する場合、アセットの場所に移動してアセットのプロパティを表示する必要はありません。
+**検索エクスペリエンスの強化**
 
-* カラー検索ファセットのユーザビリティの改善 — カラー値の入力フィールドが編集可能になり、カラーピッカーを終了した場合にのみ検索結果が更新されるようになりました。
+Experience Manager Assetsでは、検索結果のユーザーインターフェイスからさらに多くの作業をおこなうことができるようになりました。次の操作が可能になりました。
 
-* Dynamic Mediaビデオ配信でアダプティブストリーミング用に起動された新しいプロトコルのサポート (DASH - Dynamic Adaptive Streaming over HTTP)（CMAF を有効にした場合）:
-   * アダプティブストリーミング（DASH／HLS）により、エンドユーザーがビデオを視聴する際の操作性が向上します
-   * DASH はアダプティブビデオストリーミング用の国際標準プロトコルで、業界で広く採用されています
-   * すべての地域で利用可能で、サポートチケットを介して有効にできます。
+* デフォルトでは、リポジトリ全体でキーワードを検索する代わりに、現在のリポジトリの場所内で検索を実行します。
 
-* Dynamic Media _スナップショット_  — テスト画像やDynamic Media URL を試して、様々な画像修飾子の出力を確認し、スマートイメージングの最適化でファイルサイズ（WebP および AVIF 配信を使用）、ネットワーク帯域幅、デバイスピクセル比を評価します。 詳しくは、 [Dynamic Media Snapshot](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+* 検索結果に表示されるアセットのフォルダーの場所に移動します。
 
-### の機能 [!DNL Assets] プレリリース {#prerelease-feature-assets}
+**3D アセットのサムネールプレビュー**
 
-* Dynamic Media — イメージプロファイル内の一部のスマート切り抜き関連フィールドのユーザーインターフェイスが更新され、スマート切り抜きを定義する際の現在のガイドラインが反映されるようになりました。 詳しくは、 [切り抜きオプション](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options).
+[!DNL Experience Manager Assets] が生成されました [一般的な 3D ファイル形式のサムネールプレビュー](/help/assets/file-format-support.md) gLB、USDz、FBX、3DS、OBJ、SBSAR を含みます。 これらのファイルがアップロードされると、デフォルトでサムネールが自動的に生成されます。
+
+**リンク共有設定**
+
+の新しい改善されたユーザーエクスペリエンス [リンク共有を作成しています](/help/assets/share-assets.md) 管理者がユーザーに対するこの機能のデフォルトの動作をカスタマイズできる、まったく新しい設定セットが追加されました。
+
+![タグ管理](/help/assets/assets/config-email-service.png)
+
+**Dynamic Media:イメージプロファイルの更新されたスマート切り抜き関連のフィールド**
+
+イメージプロファイル内の一部のスマート切り抜き関連フィールドのユーザーインターフェイスが更新され、スマート切り抜きを定義する際の現在のガイドラインが反映されるようになりました。 詳しくは、 [切り抜きオプション](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options).
+
+### Assets ビューの新機能 {#assets-view-features}
+
+**アセットの階層タグ付けにより、検索操作を高速化**
+
+時間の経過と共に、語彙が制御されるフラットなリストは管理できなくなります。 アセットビューがサポートされるようになりました [階層タグ付け構造](/help/assets/tagging-management-assets-view.md)：関連するメタデータの適用、アセットの分類、検索のサポート、タグの再利用、検出性の向上などを容易におこなえます。
+
+![タグ管理](/help/assets/assets/tags-hierarchy.png)
+
+**ファイル、フォルダー、コレクションをピン留めして、すばやくアクセスできるようにする**
+
+次の操作を実行できます。 [ファイル、フォルダー、コレクションをピン留めしてアクセスを高速化](/help/assets/my-workspace-assets-view.md) 後で必要になったときに、これらの項目に追加します。 固定された項目は、 **クイックアクセス** を参照してください。 リポジトリ内の保存先に移動する代わりに、My Workspace を使用してアクセスできます。
+
+![ワークスペースのタスク](/help/assets/assets/quick-access.png)
+
+**ごみ箱フォルダー内のアセットのフィルタリング**
+
+Assets ビューで次の操作が可能になりました。 [ごみ箱フォルダー内の使用可能なアセットのフィルタリング](/help/assets/navigate-assets-view.md). ごみ箱フォルダー内の適切なアセットを検索するために、標準フィルターまたはカスタムフィルターを適用して、アセットを復元するか完全に削除することができます。
+
+**3D アセットのサムネールプレビュー**
+
+Assets ビューで、gLB、USDz、FBX、3DS、OBJ、SBSAR など、一般的な 3D ファイル形式のサムネールプレビューが生成されるようになりました。 これらのファイルが Assets ビューにアップロードされると、デフォルトでは、システムによってサムネールが自動的に生成されます。
+
+![ワークスペースのタスク](/help/assets/assets/3d-preview.png)
+
+**上位の検索済みキーワードを表示**
+
+アセットビューがサポートされるようになりました [デプロイメント内で検索された上位の用語の表示](/help/assets/my-workspace-assets-view.md) の使用 **インサイト** を参照してください。 詳細なインサイトに移動して、過去 30 日間または 12 ヶ月間の上位の検索結果を表示することもできます。
+
+![ワークスペースのタスク](/help/assets/assets/insights-top-searches.png)
+
+**メタデータフォームの強化**
+
+Assets ビューで次の操作が可能になりました。 [複数値テキストおよびドロップダウンリストプロパティコンポーネントを追加する](/help/assets/metadata-assets-view.md#property-components) をメタデータフォームに追加します。
+
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] で利用できる新機能 {#new-features-available-in-channel}
-
-* **[Microsoft® SharePointとMicrosoft® OneDrive にアダプティブFormsを送信する](/help/forms/configuring-submit-actions.md)**:ビジネスユーザーの俊敏性を向上させ、Microsoft® SharePointサイトや OneDrive フォルダーなど、新しいフォームをすばやく起動し、送信されたデータを使用する毎日のツールに保存できるようにします。
-
-### [!DNL Forms] の機能プレリリース {#prerelease-features-forms}
 
 * [AEM Page Editor 内のアダプティブForms](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md):AEMページエディターを使用して、複数のフォームをすばやく作成し、サイトページに追加できるようになりました。 この機能を使用すると、コンテンツ作成者は、動的な動作、検証、データ統合、レコードのドキュメントの生成、ビジネスプロセスの自動化など、アダプティブフォームコンポーネントの機能を利用して、Sites ページ内にシームレスなデータ取得エクスペリエンスを作成できます。 以下の操作を実行できます。
 
@@ -92,15 +123,23 @@ ht-degree: 27%
 
 * [Adobe Acrobat Sign Solutions for Government](/help/forms/adobe-sign-integration-adaptive-forms.md):AEM FormsはAdobe Acrobat Sign Solutionsと統合され、政府機関向けになりました。 この統合により、政府関連のアカウント（政府機関および機関）に対するアダプティブフォーム送信により、e-Signatures の高度なコンプライアンスとセキュリティを提供します。
 
-  Adobe Acrobat Sign for Government との統合により、Adobeのパートナーや政府のお客様は、Adaptive Formsで最もミッションクリティカルで機密性の高い業務の一部に電子署名を使用できます。 このセキュリティの強化により、すべての電子署名が FedRAMP Moderate コンプライアンスに完全に準拠し、Adobeの政府のお客様に安心して対応できます。
+  Adobe Acrobat Sign Solutions for Government との統合により、Adobeのパートナーや政府のお客様は、Adaptive Formsで最もミッションクリティカルで機密性の高い業務の一部に電子署名を使用できます。 このセキュリティの強化により、すべての電子署名が FedRAMP Moderate コンプライアンスに完全に準拠し、Adobeの政府のお客様に安心して対応できます。
 
-* ルールエディターのカスタムエラーハンドラーによるエラー処理の強化：外部サービスから返されたエラーに応じて（クライアントライブラリを使用して）カスタム関数を呼び出し、エンドユーザーに対してカスタマイズされた応答を提供できるようになりました。 または、サービスから返されたエラーに対して特定のアクションを実行できます。 例えば、特定のエラーコードに対してバックエンドでカスタムワークフローを呼び出したり、サービスが停止していることを顧客に通知したりできます。
+* [ルールエディターでのカスタムエラーハンドラーによるエラー処理の強化](/help/forms/add-custom-error-handler-adaptive-forms.md):外部サービスから返されたエラーに応じて（クライアントライブラリを使用して）カスタム関数を呼び出し、エンドユーザーに対してカスタマイズされた応答を提供できるようになりました。 または、サービスから返されたエラーに対して特定のアクションを実行できます。 例えば、特定のエラーコードに対してバックエンドでカスタムワークフローを呼び出したり、サービスが停止していることを顧客に通知したりできます。
 
   この機能は、OOTB エラーハンドラとの下位互換性のある標準ベースのエラー応答を導入し、柔軟性と制御性を高め、全体的なエラー処理機能を改善するのに役立ちます。
 
+* [フォームデータモデルの強化された認証方法](/help/forms/configure-data-sources.md):互換性のあるデータソースとAEM Formsに接続するためのクライアント資格情報ベースの認証が導入され、セキュリティが強化されました。 この機能強化により、データの保護を強化し、偽装やユーザーログインを必要としなくなりました。
+
+* Adaptive Formsのセクションを繰り返し可能にする：これで、 [アコーディオン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [ウィザード](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [パネル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)、および [水平タブ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) アダプティブフォームのコンポーネントが繰り返し可能です。
+
+  >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
+
+  これらの繰り返し可能なセクションでは、フィールド数を固定せずに、エントリ数を無制限に指定できます。 これは、必要なデータインスタンスがあらかじめ不明な場合に役立ちます。 Formsのユーザーは、セクションを簡単に追加または削除できるので、フォームを様々なデータ入力シナリオに対応でき、同じデータに関する複数のオカレンスを簡単に収集できます。
+
 ### ヘッドレスアダプティブフォーム早期導入者プログラム {#forms-early-adopter}
 
-ヘッドレスアダプティブフォームを使用すると、開発者は、従来のグラフィカルユーザーインターフェイスではなく、API を介してアクセスおよび操作できるインタラクティブなフォームを作成、公開、管理できます。ヘッドレスアダプティブフォームは以下の場合に役立ちます。
+用途 [ヘッドレスアダプティブForms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) 開発者が、従来のグラフィカルユーザーインターフェイスを使用するのではなく、API を使用してアクセスし、操作できるインタラクティブフォームを作成、公開、管理できるようにする。 ヘッドレスアダプティブフォームは以下の場合に役立ちます。
 
 * 高品質のマルチチャネルフォームを好みのプログラミング言語で作成
 * デスクトップおよびモバイルアプリ、web サイト、チャットアプリケーションにフォームをネイティブに統合
@@ -109,11 +148,6 @@ ht-degree: 27%
 
 メールを `aem-forms-headless@adobe.com` アーリーアダプタープログラムに参加するための公式電子メール ID から
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
-
-### 新機能 {#what-is-new-foundation}
-
-* その他の公開地域：Sites のお客様は、主要地域に加えて、最大 3 つのパブリッシュ地域のライセンスを取得できます。 トラフィックは追加の公開ファームにルーティングされるので、特定のリクエストの待ち時間が短縮され、地域の停止に対する回復力が向上します。 ライセンスについて詳しくは、Adobeのアカウントマネージャーにお問い合わせください [その他の公開地域](/help/operations/additional-publish-regions.md) プログラムの
 
 ## メンテナンスリリースノート {#maintenance}
 
