@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 40393340131a72a86503c00a0a2e9e78a28b7e69
+source-git-commit: 9424bef8a9a2c7ab4afb06e2a08e15336f858b7b
 workflow-type: tm+mt
-source-wordcount: '4138'
+source-wordcount: '4139'
 ht-degree: 97%
 
 ---
@@ -501,23 +501,22 @@ ht-degree: 97%
       + [コンテンツの HTTP/2 配信の FAQ](/help/assets/dynamic-media/http2faq.md)
       + [Flash ビューアの提供終了](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML ビューアの提供終了](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-
-+ Assets ビューの操作 {#assets-view}
-   + [はじめに](/help/assets/get-started-assets-view.md)
-   + [マイワークスペース](/help/assets/my-workspace-assets-view.md)
-   + [サポートされているファイルタイプとユースケース](/help/assets/supported-file-formats-assets-view.md)
-   + [アセットの表示](/help/assets/navigate-assets-view.md)
-   + [アセットのアップロードと追加](/help/assets/add-delete-assets-view.md)
-   + [アセットの検索と検出](/help/assets/search-assets-view.md)
-   + [アセット管理タスク](/help/assets/manage-organize-assets-view.md)
-   + [画像の編集](/help/assets/edit-images-assets-view.md)
-   + [アセットメタデータの管理](/help/assets/metadata-assets-view.md)
-   + [アセットの共有](/help/assets/share-links-for-assets-view.md)
-   + [コレクションの管理](/help/assets/manage-collections-assets-view.md)
-   + [アセット、フォルダー、コレクションの監視](/help/assets/manage-notifications-assets-view.md)
-   + [レポートの管理](/help/assets/manage-reports-assets-view.md)
-   + [タグの管理](/help/assets/tagging-management-assets-view.md)
-
+   + Assets ビューの操作 {#assets-view}
+      + [概要](/help/assets/assets-view-introduction.md)
+      + [はじめに](/help/assets/get-started-assets-view.md)
+      + [マイワークスペース](/help/assets/my-workspace-assets-view.md)
+      + [サポートされているファイルタイプとユースケース](/help/assets/supported-file-formats-assets-view.md)
+      + [アセットの表示](/help/assets/navigate-assets-view.md)
+      + [アセットのアップロードと追加](/help/assets/add-delete-assets-view.md)
+      + [アセットの検索と検出](/help/assets/search-assets-view.md)
+      + [アセット管理タスク](/help/assets/manage-organize-assets-view.md)
+      + [画像の編集](/help/assets/edit-images-assets-view.md)
+      + [アセットメタデータの管理](/help/assets/metadata-assets-view.md)
+      + [アセットの共有](/help/assets/share-links-for-assets-view.md)
+      + [コレクションの管理](/help/assets/manage-collections-assets-view.md)
+      + [アセット、フォルダー、コレクションの監視](/help/assets/manage-notifications-assets-view.md)
+      + [レポートの管理](/help/assets/manage-reports-assets-view.md)
+      + [タグの管理](/help/assets/tagging-management-assets-view.md)
    + Adobe Workfront との統合 {#integrations}
       + [ [!DNL Adobe Workfront] との統合](/help/assets/workfront-integrations.md)
       + [アセットメタデータマッピングの設定](/help/assets/configure-asset-metadata-mapping.md)
@@ -525,6 +524,7 @@ ht-degree: 97%
       + [既存のインストールの外部依存関係の削除](/help/assets/remove-external-dependencies.md)
       + [ [!DNL Workfront] 用の  [!DNL enhanced connector]  の設定](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+
 + Forms {#forms}
    + 概要 {#forms-overview}
       + [はじめに](/help/forms/home.md)

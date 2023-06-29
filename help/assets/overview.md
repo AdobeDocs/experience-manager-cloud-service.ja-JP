@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: f075c6032edb23f9cf52ad53ae2a628915e76ec2
+source-git-commit: d0deca8acbf6049d5be6c27275eedf9b52b27658
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 68%
+source-wordcount: '740'
+ht-degree: 67%
 
 ---
 
@@ -37,7 +37,7 @@ AEM Assets as a [!DNL Cloud Service] の主なメリットは次のとおりで�
 * **継続的な監視**：システムの監視は自動化され、組み込みのチェックとトリガーがパフォーマンス、可用性、全体的な堅牢性の維持に役立ちます。
 * **手間のかからないデプロイメント**：Experience Manager as a Cloud Service の操作は完全に自動化されており、手動の介入は不要です。自動デプロイメントを行うために、カスタムコードを含んだデプロイ可能な Docker イメージのビルドを Cloud Manager（CM）コンポーネントで自動化します。
 
-## 利用可能なペルソナベースのエクスペリエンス
+## 利用可能なペルソナベースのエクスペリエンス {#persona-based-experiences}
 
 アドビでは、デジタルアセットを最大限に活用するための堅牢なデジタルアセット管理（DAM）ソリューションを提供しています。Adobe Experience Manager Assets には、同じ Assets リポジトリを使用する 2 つの異なるエクスペリエンスがCloud Servicesされます。
 
@@ -51,7 +51,7 @@ DAM ライブラリアリント、開発者およびスーパーユーザーは�
 
 ![add-tags](assets/newui-overview.svg)
 
-Assets ビューへのアクセス方法、および Admin ビュー経由で提供される一部のアプリケーションについて詳しくは、 Assets ビューを参照してください。
+Assets ビューへのアクセス方法と、Admin ビュー経由で提供される一部のアプリケーションについて詳しくは、 [Assets ビューの概要](/help/assets/assets-view-introduction.md).
 
 ## 新しい Assets の機能 {#whats-new-assets}
 
