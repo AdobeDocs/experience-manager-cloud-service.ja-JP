@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 5096cd6141e70f40b5145389ca4db3cc65ea1e66
+source-git-commit: 6d445943fb8a79eb549c954bb88daf61242a8b10
 workflow-type: tm+mt
-source-wordcount: '2558'
+source-wordcount: '2553'
 ht-degree: 97%
 
 ---
@@ -101,7 +101,7 @@ Experience Manager Assets as a [!DNL Cloud Service] インスタンスと Brand 
 
 1. **ツール**&#x200B;パネルで、**[!UICONTROL 導入]**／**[!UICONTROL 配布版]**&#x200B;に移動します。
 
-   ![AEM Assets as a Cloud Service と Brand Portal の連携の設定](assets/test-bpconfig1.png)
+   ![配分オプションに移動します。](assets/test-bpconfig1.png)
 
    Brand Portal 配布エージェント（**[!UICONTROL bpdistributionagent0]**）は、「**[!UICONTROL Brand Portal に公開]**」の下に作成されます。
 
