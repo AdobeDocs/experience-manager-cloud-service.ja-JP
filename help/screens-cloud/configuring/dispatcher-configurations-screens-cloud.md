@@ -3,7 +3,7 @@ title: Screens as a Cloud Service での Dispatcher 設定
 description: ここでは、Screens as a Cloud Service での Dispatcher 設定について説明します。
 exl-id: cc04b480-9310-4975-a7c2-20682c567fa4
 source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '140'
 ht-degree: 100%
 
