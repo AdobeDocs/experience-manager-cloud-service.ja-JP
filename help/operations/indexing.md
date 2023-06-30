@@ -2,10 +2,10 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: c19783ed4899772835a05856fc3a5601ef6a6df8
 workflow-type: tm+mt
-source-wordcount: '2427'
-ht-degree: 42%
+source-wordcount: '2309'
+ht-degree: 38%
 
 ---
 
@@ -35,37 +35,37 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 
 ## 使用方法 {#how-to-use}
 
-インデックスの定義は、次の 3 つの使用例で構成できます。
+インデックス定義は、次のように、3 つの主な使用例に分類できます。
 
-1. 顧客インデックス定義の追加。
-1. 既存のインデックス定義の更新。この更新は、既存のインデックス定義の新しいバージョンが追加されることを意味します。
-1. 冗長または古い既存のインデックスの削除。
+1. **追加** 新しいカスタムインデックス定義。
+2. **更新** 新しいバージョンを追加することにより、既存のインデックス定義を作成する。
+3. **削除** 不要になったインデックス定義。
 
-上記のポイント 1 と 2 の両方で、それぞれの Cloud Manager リリーススケジュールで、カスタムコードベースの一部としてインデックス定義を作成する必要があります。 詳しくは、 [AEMへのデプロイas a Cloud Serviceドキュメント](/help/implementing/deploying/overview.md).
+上記のポイント 1 と 2 の両方について、それぞれの Cloud Manager リリーススケジュールで、カスタムコードベースの一部として新しいインデックス定義を作成する必要があります。詳しくは、 [AEMへのデプロイ (as a Cloud Service)](/help/implementing/deploying/overview.md) ドキュメント。
 
 ## インデックス名 {#index-names}
 
-インデックスの定義は、以下のいずれかになります。
+インデックス定義は、次のカテゴリのいずれかに分類できます。
 
-1. 標準提供のインデックス。例として、`/oak:index/cqPageLucene-2` があります。
-1. 標準提供のインデックスのカスタマイズ。お客様がカスタマイズを定義できます。例として、`/oak:index/cqPageLucene-2-custom-1` があります。
-1. 完全なカスタムインデックス。例として、`/oak:index/acme.product-1-custom-2` があります。名前の競合を避けるために、Adobeでは、完全なカスタムインデックスにプレフィックスが付いている必要があります（例： ）。 `acme.`
+1. 標準 (OOTB) インデックス。 例： `/oak:index/cqPageLucene-2` または `/oak:index/damAssetLucene-8`.
 
-標準提供のインデックスと完全カスタムインデックスの両方をカスタマイズする場合は、にが含まれている必要があります `-custom-`. 完全なカスタムインデックスのみ、プレフィックスで始める必要があります。
+2. OOTB インデックスのカスタマイズ。 これらは、 `-custom-` 元のインデックス名に続く数値識別子。 （例：`/oak:index/damAssetLucene-8-custom-1`）。
+
+3. 完全なカスタムインデックス：まったく新しいインデックスを最初から作成することもできます。 名前の競合を避けるために、名前にプレフィックスが必要です。 例： `/oak:index/acme.product-1-custom-2`( プレフィックスは `acme.`
 
 ## 新しいインデックス定義の準備 {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->標準提供のインデックスをカスタマイズする場合（例： ） `damAssetLucene-6`に設定する場合は、そのまま使用できる最新のインデックス定義を *Cloud Service環境* CRX DE パッケージマネージャー (`/crx/packmgr/`) ) をクリックします。 次に、設定の名前を `damAssetLucene-6-custom-1` などに変更し、その上にカスタマイズを追加します。このプロセスにより、必要な設定が誤って削除されるのを防ぎます。 例えば、`/oak:index/damAssetLucene-6/tika` 下のノード `tika` は、Cloud Service のカスタマイズ済みインデックスに必要です。Cloud SDK に存在しません。
+>標準提供のインデックスをカスタマイズする場合（例：`damAssetLucene-8`）、CRX DE パッケージマネージャー（`/crx/packmgr/`）を使用して、最新の標準のインデックス定義を *Cloud Service 環境*&#x200B;にコピーしてください。名前をに変更します。 `damAssetLucene-8-custom-1` （またはそれ以上）、XML ファイル内にカスタマイズを追加します。 これにより、必要な設定が誤って削除されるのを防ぐことができます。 例えば、`/oak:index/damAssetLucene-8/tika` 下のノード `tika` は、Cloud Service のカスタマイズ済みインデックスに必要です。Cloud SDK には存在しません。
 
-次の命名パターンに従って、実際のインデックス定義を含むインデックス定義パッケージを準備します。
+OOTB インデックスのカスタマイズの場合は、次の命名パターンに従う実際のインデックス定義を含む新しいパッケージを準備します。
 
-`<indexName>[-<productVersion>]-custom-<customVersion>`
+`<indexName>-<productVersion>-custom-<customVersion>`
 
-それは、次の下に置く必要があります `ui.apps/src/main/content/jcr_root`. カスタマイズされたカスタムインデックス定義は、すべて以下に保存する必要があります。 `/oak:index`.
+完全にカスタマイズされたインデックスに対して、次の命名パターンに従うインデックス定義を含む新しいインデックス定義パッケージを準備します。
 
-パッケージのフィルターは、（標準提供のインデックス）既存のインデックスが保持されるように設定する必要があります。 ファイル内 `ui.apps/src/main/content/META-INF/vault/filter.xml`に設定する場合、各カスタム（またはカスタマイズされた）インデックスを次のようにリストする必要があります。 `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. インデックスのバージョンを後で変更する場合は、フィルターを調整する必要があります。
+`<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
 
 <!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
 
@@ -73,136 +73,160 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->インデックス定義を含むコンテンツパッケージでは、次のプロパティをコンテンツパッケージのプロパティファイル ( ) で設定する必要があります。 `/META-INF/vault/properties.xml`:
+>インデックス定義を含むコンテンツパッケージには、コンテンツパッケージのプロパティファイル ( `<package_name>/META-INF/vault/properties.xml`:
 >
->`noIntermediateSaves=true`
+> * `noIntermediateSaves=true`
+>
+> * `allowIndexDefinitions=true`
 
-## 索引定義のデプロイ {#deploying-index-definitions}
+## カスタム索引定義のデプロイ {#deploying-custom-index-definitions}
 
-インデックス定義は、カスタムおよびバージョン付きとしてマークされます。
+標準提供のインデックスのカスタマイズバージョンをデプロイする方法を説明するには `damAssetLucene-8`を使用する場合、詳細な手順を示すガイドを提供します。 この例では、名前をに変更します。 `damAssetLucene-8-custom-1`. その場合の手順は次のとおりです。
 
-* インデックス定義自体（例 `/oak:index/ntBaseLucene-custom-1`）
+1. 新しいフォルダーを作成し、更新されたインデックス名を `ui.apps` ディレクトリ：
+   * 例：`ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
-カスタムインデックスまたはカスタマイズされたインデックスを展開するには、インデックス定義 (`/oak:index/definitionname`) は、 `ui.apps` Git および Cloud Manager のデプロイメントプロセスを通じて。 FileVault フィルター、例えば `ui.apps/src/main/content/META-INF/vault/filter.xml` では、カスタムおよびカスタマイズ済みの各インデックスを、`<filter root="/oak:index/damAssetLucene-7-custom-1"/>` のように個別にリストします。その後、カスタムまたはカスタマイズされたインデックス定義自体がファイルに保存されます `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`、次のようにします。
+2. 設定ファイルを追加 `.content.xml` 新しく作成されたフォルダー内のカスタム設定を使用します。 以下に、カスタマイズの例を示します。ファイル名： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:oak="https://jackrabbit.apache.org/oak/ns/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
-        jcr:primaryType="oak:QueryIndexDefinition"
-        async="[async,nrt]"
-        compatVersion="{Long}2"
-        ...
-        </indexRules>
-        <tika jcr:primaryType="nt:unstructured">
-            <config.xml jcr:primaryType="nt:file"/>
-        </tika>
-</jcr:root>
-```
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:oak="http://jackrabbit.apache.org/oak/ns/1.0" xmlns:rep="internal"
+       jcr:mixinTypes="[rep:AccessControllable]"
+       jcr:primaryType="oak:QueryIndexDefinition"
+       async="[async,nrt]"
+       compatVersion="{Long}2"
+       evaluatePathRestrictions="{Boolean}true"
+       includedPaths="[/content/dam]"
+       maxFieldLength="{Long}100000"
+       type="lucene">
+       <facets
+           jcr:primaryType="nt:unstructured"
+           secure="statistical"
+           topChildren="100"/>
+       <indexRules jcr:primaryType="nt:unstructured">
+           <dam:Asset jcr:primaryType="nt:unstructured">
+               <properties jcr:primaryType="nt:unstructured">
+                   <cqTags
+                       jcr:primaryType="nt:unstructured"
+                       name="jcr:content/metadata/cq:tags"
+                       nodeScopeIndex="{Boolean}true"
+                       propertyIndex="{Boolean}true"
+                       useInSpellcheck="{Boolean}true"
+                       useInSuggest="{Boolean}true"/>
+               </properties>
+           </dam:Asset>
+       </indexRules>
+       <tika jcr:primaryType="nt:folder">
+           <config.xml jcr:primaryType="nt:file"/>
+       </tika>
+   </jcr:root>
+   ```
 
-上記の例には、Apache Tika の設定が含まれています。Tika 設定ファイルは、`ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml` に保存されます。
+3. の FileVault フィルタにエントリを追加する `ui.apps/src/main/content/META-INF/vault/filter.xml`:
 
-### プロジェクト設定
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <workspaceFilter version="1.0">
+       ...
+       <filter root="/oak:index/damAssetLucene-8-custom-1"/> 
+   </workspaceFilter>
+   ```
 
-Jackrabbit Filevault Maven パッケージプラグインを使用するバージョンに応じて、プロジェクトでさらに設定が必要になります。Jackrabbit Filevault Maven パッケージプラグインバージョンの使用時 **1.1.6** またはそれ以降の場合は、ファイル `pom.xml` には、 `filevault-package-maven-plugin`、 `configuration/validatorsSettings` ( `jackrabbit-nodetypes`):
+4. Apache Tika の設定ファイルを次の場所に追加します。 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/tika/config.xml`:
 
-```xml
-<jackrabbit-packagetype>
-    <options>
-        <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
-    </options>
-</jackrabbit-packagetype>
-```
+   ```xml
+   <properties>
+       <detectors>
+           <detector class="org.apache.tika.detect.TypeDetector"/>
+       </detectors>
+       <parsers>
+           <parser class="org.apache.tika.parser.DefaultParser">
+           <mime>text/plain</mime>
+           </parser>
+       </parsers>
+       <service-loader initializableProblemHandler="ignore" dynamic="true"/>
+   </properties>
+   ```
 
-また、この場合、 `vault-validation` バージョンを新しいバージョンにアップグレードする必要があります：
+5. 設定が、 [プロジェクト設定](#project-configuration) 」セクションに入力します。 必要に応じて適応を行います。
 
-```xml
-<dependency>
-    <groupId>org.apache.jackrabbit.vault</groupId>
-    <artifactId>vault-validation</artifactId>
-    <version>3.5.6</version>
-</dependency>
-```
+## プロジェクト設定
 
-次に、 `ui.apps.structure/pom.xml` および `ui.apps/pom.xml`、 `filevault-package-maven-plugin` は、 `allowIndexDefinitions` および `noIntermediateSaves` 有効。 オプション `noIntermediateSaves` は、インデックス設定が自動的に追加されることを保証します。
+バージョン >=を使用することを強くお勧めします `1.3.2` ジャックラッビの `filevault-package-maven-plugin`. プロジェクトに組み込む手順は次のとおりです。
 
-```xml
-<groupId>org.apache.jackrabbit</groupId>
-    <artifactId>filevault-package-maven-plugin</artifactId>
-    <configuration>
-        <allowIndexDefinitions>true</allowIndexDefinitions>
-        <properties>
-            <cloudManagerTarget>none</cloudManagerTarget>
-            <noIntermediateSaves>true</noIntermediateSaves>
-        </properties>
-    ...
-```
+1. トップレベルのバージョンを更新します `pom.xml`:
 
-In `ui.apps.structure/pom.xml`、 `filters` このプラグインのセクションには、次のようにフィルタルートを含める必要があります。
+   ```xml
+   <plugin>
+       <groupId>org.apache.jackrabbit</groupId>
+           <artifactId>filevault-package-maven-plugin</artifactId>
+           ...
+           <version>1.3.2</version>
+       ...
+   </plugin>
+   ```
 
-```xml
-<filter><root>/oak:index</root></filter>
-```
+2. トップレベルに以下を追加します。 `pom.xml`:
 
-新しいインデックス定義を追加した後、新しいアプリケーションは Cloud Manager を使用してデプロイされます。 デプロイメント時には、オーサー用とパブリッシュ用の MongoDB と Azure Segment Store に、それぞれインデックス定義を追加（必要に応じて結合）する 2 つのジョブが開始されます。 スイッチが実行される前に、基になるリポジトリのインデックスが新しいインデックス定義で再作成されます。
+   ```xml
+   <jackrabbit-packagetype>
+       <options>   
+           <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+       </options>
+   </jackrabbit-packagetype>
+   ```
 
-### メモ
+   プロジェクトの最上位レベルのサンプルを以下に示します `pom.xml` ファイルには、前述の設定が含まれています。
 
-失敗の検証で次のエラーが発生した場合 <br>
-`[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"` <br>
-その後、次のいずれかの手順に従って問題を修正できます。 <br>
+   ファイル名: `pom.xml`
 
-1. filevault をバージョン 1.0.4 にダウングレードし、次の内容を最上位 pom に追加します。
+   ```xml
+   <plugin>
+       <groupId>org.apache.jackrabbit</groupId>
+           <artifactId>filevault-package-maven-plugin</artifactId>
+           ...
+           <version>1.3.2</version>
+           <configuration>
+               ...
+               <validatorsSettings>
+                   <jackrabbit-packagetype>
+                       <options>
+                           <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+                       </options>
+                   </jackrabbit-packagetype>
+                   ...
+               ...
+   </plugin>
+   ```
 
-```xml
-<allowIndexDefinitions>true</allowIndexDefinitions>
-```
+3. In `ui.apps/pom.xml` および `ui.apps.structure/pom.xml` を有効にする必要があります。 `allowIndexDefinitions` および `noIntermediateSaves` オプション `filevault-package-maven-plugin`. 有効化 `allowIndexDefinitions` では、カスタムインデックス定義を使用できます。 `noIntermediateSaves` は、設定が自動的に追加されるようにします。
 
-以下に、上記の設定を POM 内のどこに配置するかの例を示します。
+   ファイル名： `ui.apps/pom.xml` および `ui.apps.structure/pom.xml`
 
-```xml
-<plugin>
-    <groupId>org.apache.jackrabbit</groupId>
-    <artifactId>filevault-package-maven-plugin</artifactId>
-    <configuration>
-        <properties>
-        ...
-        </properties>
-        ...
-        <allowIndexDefinitions>true</allowIndexDefinitions>
-        <repositoryStructurePackages>
-        ...
-        </repositoryStructurePackages>
-        <dependencies>
-        ...
-        </dependencies>
-    </configuration>
-</plugin>
-```
+   ```xml
+   <plugin>
+       <groupId>org.apache.jackrabbit</groupId>
+           <artifactId>filevault-package-maven-plugin</artifactId>
+           <configuration>
+               <allowIndexDefinitions>true</allowIndexDefinitions>
+               <properties>
+                   <cloudManagerTarget>none</cloudManagerTarget>
+                   <noIntermediateSaves>true</noIntermediateSaves>
+               </properties>
+       ...
+   </plugin>
+   ```
 
-1. ノードタイプ検証を無効にします。 filevault プラグインの設定の jackrabbit-nodetypes セクションで、次のプロパティを設定します。
+4. フィルターを追加 `/oak:index` in `ui.apps.structure/pom.xml`:
 
-```xml
-<isDisabled>true</isDisabled>
-```
+   ```xml
+   <filters>
+       ...
+       <filter><root>/oak:index</root></filter>
+   </filters>
+   ```
 
-以下に、上記の設定を POM 内のどこに配置するかの例を示します。
-
-```xml
-<plugin>
-    <groupId>org.apache.jackrabbit</groupId>
-    <artifactId>filevault-package-maven-plugin</artifactId>
-    ...
-    <configuration>
-    ...
-        <validatorsSettings>
-        ...
-            <jackrabbit-nodetypes>
-                <isDisabled>true</isDisabled>
-            </jackrabbit-nodetypes>
-        </validatorsSettings>
-    </configuration>
-</plugin>
-```
+新しいインデックス定義を追加した後、Cloud Manager を使用して新しいアプリケーションをデプロイします。 このデプロイメントは 2 つのジョブを開始し、それぞれ MongoDB と Azure Segment Store に、オーサー用とパブリッシュ用のインデックス定義を追加（必要に応じて結合）します。 切り替えの前に、基になるリポジトリは、更新されたインデックス定義で再インデックスを受けます。
 
 >[!TIP]
 >
@@ -307,7 +331,7 @@ Adobeが「damAssetLucene」や「cqPageLucene」などの標準のインデッ�
 
 ### 変更の取り消し {#undoing-a-change}
 
-インデックス定義の変更を元に戻す必要が生じる場合があります。 誤って変更が加えられたり、変更が不要になったなどの理由によります。例えば、インデックス定義 `damAssetLucene-8-custom-3` は誤って作成され、既にデプロイされているとします。そのため、以前のインデックス定義 `damAssetLucene-8-custom-2` に戻す必要があります。これをおこなうには、 `damAssetLucene-8-custom-4` 前のインデックスの定義を含む `damAssetLucene-8-custom-2`.
+インデックス定義の変更を取り消す必要が生じる場合があります。 これは、不注意なエラーが原因で発生するか、変更が不要になったためです。 例えば、インデックス定義を取得します。 `damAssetLucene-8-custom-3,` は誤って作成され、既にデプロイされています。 その結果、以前のインデックス定義に戻す必要が生じます。 `damAssetLucene-8-custom-2.` これをおこなうには、という名前の新しいインデックスを導入する必要があります。 `damAssetLucene-8-custom-4` 以前のインデックスから定義を組み込む `damAssetLucene-8-custom-2.`
 
 ### インデックスの削除 {#removing-an-index}
 
