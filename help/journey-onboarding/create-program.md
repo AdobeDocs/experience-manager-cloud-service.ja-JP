@@ -4,9 +4,9 @@ description: Cloud Manager で最初のプログラムを作成する方法を�
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '686'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -53,11 +53,11 @@ Cloud Manager のプログラムは、Cloud Manager の一連の環境を表し�
 
    ![Cloud Manager ランディングページ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. プログラムの作成ウィザードで、「 」を選択します。 **サンドボックスの設定** プログラム名を入力し、タップまたはクリックします。 **続行**.
+1. プログラム作成ウィザードで、「**サンドボックスの設定**」を選択し、プログラム名を入力して、「**続行**」をクリックします。
 
    ![指定タイプのプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 
-1. 内 **サンドボックスの設定** ダイアログが表示されたら、サンドボックスプログラムで有効にするソリューションを選択できます。 この **サイト** および **Assets** ソリューションは、常にサンドボックスプログラムに含まれ、自動的に選択されます。 オンボーディングの例ではこれで十分です。 「**作成**」をクリックします。
+1. **サンドボックスの設定**&#x200B;ダイアログで、サンドボックスプログラムで有効にするソリューションを選択できます。**Sites** および **Assets** ソリューションは、常にサンドボックスプログラムに含まれ、自動的に選択されます。オンボーディングの例ではこれで十分です。「**作成**」をクリックします。
 
    ![ソリューションの選択](assets/set-up-sandbox-onboarding.png)
 
@@ -73,7 +73,7 @@ Cloud Manager のプログラムは、Cloud Manager の一連の環境を表し�
 
 ## その他のリソース {#additional-resources}
 
-オンボーディングジャーニーのコンテンツの範囲を超えたい場合の追加のオプションリソースを次に示します。
+オンボーディングジャーニーのコンテンツの範囲を超えてさらに詳しく知りたい場合に役立つ、追加のオプションリソースを次に示します。
 
 * [プログラムとプラグラムの種類](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) - Cloud Manager の階層、その構造に様々な種類のプログラムが収まる仕組み、それらのプログラムの違いなどについて説明します。
 * [サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) - Cloud Manager を使用して、トレーニング、デモ、POC などの実稼動以外の用途に使用する独自のサンドボックスプログラムを作成する方法を説明します。
