@@ -4,9 +4,9 @@ description: AEM ヘッドレス配信機能の重要な部分である、Assets
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1783'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 75%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=en) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API でのコンテンツフラグメントのサポートについて説明します。
 
 >[!NOTE]
 >
->この [Assets HTTP API](/help/assets/mac-api-assets.md) 以下を含みます。
+>[Assets HTTP API](/help/assets/mac-api-assets.md) には次の API が含まれます。
 >
 >* Assets REST API
->* コンテンツフラグメントのサポートを含めます。
+>* コンテンツフラグメントをサポートしています
 >
 >現在の Assets HTTP API の実装は、[REST](https://en.wikipedia.org/wiki/Representational_state_transfer) アーキテクチャスタイルに基づいています。
 
@@ -87,7 +87,7 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
 >
 >リクエスト本文または URL パラメーターは、これらの操作の一部を設定するために使用できます。例えば、フォルダーまたはアセットを **POST** リクエストで作成するように定義できます。
 
-サポートされているリクエストの正確な形式は、 [API リファレンス](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) ドキュメント。
+サポートされているリクエストの正確な形式は、[API リファレンス](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)ドキュメントで定義されています。
 
 ### トランザクション動作 {#transactional-behavior}
 
@@ -100,20 +100,20 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
 <table>
  <thead>
   <tr>
-   <td>縦横比</td>
+   <td>項目</td>
    <td>Assets REST API<br/> </td>
-   <td>AEM Component<br/> （Sling モデルを使用するコンポーネント）</td>
+   <td>AEM コンポーネント<br/>（Sling モデルを使用するコンポーネント）</td>
   </tr>
  </thead>
  <tbody>
   <tr>
-   <td>サポートされる使用例</td>
-   <td>一般的な目的。</td>
-   <td><p>単一ページアプリケーション (SPA) またはその他（コンテンツ消費）のコンテキストでの使用に最適化。</p> <p>レイアウト情報を含めることもできます。</p> </td>
+   <td>サポートされているユースケース</td>
+   <td>一般的用途。</td>
+   <td><p>単一ページアプリケーション（SPA）またはその他の任意の（コンテンツ利用）コンテキストにおける使用に最適化されています。</p> <p>レイアウト情報を含めることもできます。</p> </td>
   </tr>
   <tr>
-   <td>サポートされる操作</td>
-   <td><p>作成、読み取り、更新、削除。</p> <p>エンティティタイプに応じた追加の操作があります。</p> </td>
+   <td>サポートされている操作</td>
+   <td><p>作成、読み取り、更新、削除。</p> <p>エンティティタイプに応じて、その他の操作も可能です。</p> </td>
    <td>読み取り専用。</td>
   </tr>
   <tr>
@@ -126,18 +126,18 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
   </tr>
   <tr>
    <td>セキュリティ</td>
-   <td><p>複数のオプションを使用できます。</p> <p>OAuth が提案されている。は、標準設定とは別に設定できます。</p> </td>
-   <td>AEM標準設定を使用します。</td>
+   <td><p>複数のオプションを使用できます。</p> <p>OAuth が推奨されます。標準セットアップとは別に設定できます。</p> </td>
+   <td>AEM の標準セットアップを使用します。</td>
   </tr>
   <tr>
-   <td>建築に関する備考</td>
-   <td><p>書き込みアクセスは、通常、オーサーインスタンスを対象とします。</p> <p>読み取りは、パブリッシュインスタンスに向けられる場合もあります。</p> </td>
+   <td>アーキテクチャに関する補足</td>
+   <td><p>書き込みアクセスは通常、オーサーインスタンスを対象にします。</p> <p>読み取りはパブリッシュインスタンスを対象にする場合もあります。</p> </td>
    <td>この方法は読み取り専用なので、通常、パブリッシュインスタンスに使用されます。</td>
   </tr>
   <tr>
    <td>出力</td>
-   <td>JSON ベースの SIREN 出力：詳細ですが、強力です。 コンテンツ内での移動を許可します。</td>
-   <td>JSON ベースの独自出力Sling モデルで設定できます。 コンテンツ構造内での移動は実装が困難です（ただし、必ずしも不可能とは限りません）。</td>
+   <td>JSON ベースの SIREN 出力：詳細ながら強力です。 コンテンツ内のナビゲーションが可能です。</td>
+   <td>JSON ベースの独自出力。Sling モデルを通じて設定可能です。コンテンツ構造内での移動は実装が困難です（ただし、必ずしも不可能ではありません）。</td>
   </tr>
  </tbody>
 </table>
@@ -150,8 +150,8 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
 >
 >詳しくは、次のセクションを参照してください。
 >
->* [CORS/AEMの説明](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
->* [ビデオ — AEMを使用した CORS 向けの開発](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+>* [CORS／AEM の説明](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
+>* [ビデオ - AEM を使用した CORS 向けの開発](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 >
 
 
@@ -159,9 +159,9 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
 
 ## 使用可能な機能 {#available-features}
 
-コンテンツフラグメントは特定のタイプのアセットです。詳しくは、 [コンテンツフラグメントの操作](/help/assets/content-fragments/content-fragments.md).
+コンテンツフラグメントは特定のアセットタイプです。[コンテンツフラグメントの操作](/help/assets/content-fragments/content-fragments.md)を参照してください。
 
-API を通じて利用できる機能について詳しくは、以下を参照してください。
+API を通じて使用できる機能について詳しくは、以下を参照してください。
 
 * [Assets REST API](/help/assets/mac-api-assets.md)
 * [エンティティタイプ](/help/assets/content-fragments/assets-api-content-fragments.md#entity-types)。（コンテンツフラグメントに関連した）サポートされる各タイプに固有の機能について説明します。
@@ -203,7 +203,7 @@ Assets REST API では、URL パラメーターを介して（GET リクエス�
 
 フォルダーは、アセットや他のフォルダーのコンテナとして機能します。 AEM コンテンツリポジトリーの構造を反映しています。
 
-Assets REST API は、フォルダーのプロパティへのアクセスを公開します。例えば、名前、タイトルなどです。 アセットは、フォルダーの子エンティティ、およびサブフォルダーとして公開されます。
+Assets REST API は、フォルダーのプロパティ（名前、タイトルなど）へのアクセスを公開します。アセットは、フォルダーの子エンティティ、およびサブフォルダーとして公開されます。
 
 >[!NOTE]
 >
@@ -230,11 +230,11 @@ Assets REST API は、フォルダーのプロパティへのアクセスを公�
 * バイナリデータを公開しません。
 * JSON 出力（`properties` プロパティ内）に完全に含まれます。
 
-* また、アトミックと見なされます。つまり、要素とバリエーションは、リンクや子エンティティとしてではなく、フラグメントのプロパティの一部として公開されます。 これにより、フラグメントのペイロードに効率的にアクセスできます。
+* また、アトミックと見なされます。つまり、エレメントとバリエーションは、リンクまたは子エンティティとしてではなく、フラグメントのプロパティの一部として公開されます。これにより、フラグメントのペイロードに効率的にアクセスできます。
 
 #### コンテンツモデルとコンテンツフラグメント {#content-models-and-content-fragments}
 
-現在、コンテンツフラグメントの構造を定義するモデルは、HTTP API を通じて公開されません。 そのため、*コンシューマー*&#x200B;は（最低でも）フラグメントのモデルについて理解する必要があります。ただし、ほとんどの情報はペイロードから推測することができます。データタイプなどは定義の一部です。
+現在、コンテンツフラグメントの構造を定義するモデルは、HTTP API では公開されません。そのため、*コンシューマー*&#x200B;は（最低でも）フラグメントのモデルについて理解する必要があります。ただし、ほとんどの情報はペイロードから推測することができます。データタイプなどは定義の一部だからです。
 
 新しいコンテンツフラグメントを作成するには、（内部リポジトリー）モデルのパスを指定する必要があります。
 
@@ -247,11 +247,11 @@ Assets REST API は、フォルダーのプロパティへのアクセスを公�
 使用方法は、特定の使用例以外にも、AEM オーサー環境を使用するかパブリッシュ環境を使用するかで異なることがあります。
 
 * 作成をオーサーインスタンスに結び付けることを強くお勧めします（[現在は、この API を使用して公開するフラグメントをレプリケートする手段はありません](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)）。
-* AEMは要求されたコンテンツを JSON 形式でのみ提供するので、この両方から配信できます。
+* AEM は要求されたコンテンツを JSON 形式でのみ提供するので、どちらからも配信できます。
 
-   * ファイアウォールの背後にあるメディアライブラリアプリケーションでは、AEMオーサーインスタンスからのストレージと配信で十分です。
+   * ファイアウォールの背後で動作するメディアライブラリアプリケーションには、AEM オーサーインスタンスからのストレージと配信で十分です。
 
-   * ライブ Web 配信の場合は、AEMパブリッシュインスタンスを使用することをお勧めします。
+   * ライブ web 配信の場合は、AEM パブリッシュインスタンスをお勧めします。
 
 >[!CAUTION]
 >
@@ -259,14 +259,14 @@ Assets REST API は、フォルダーのプロパティへのアクセスを公�
 
 >[!NOTE]
 >
->詳しくは、 [API リファレンス](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). 特に、[Adobe Experience Manager Assets API - コンテンツフラグメント](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
+>詳細については、[API リファレンス](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)を参照してください。特に、[Adobe Experience Manager Assets API - コンテンツフラグメント](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
 
 ## 制限事項 {#limitations}
 
 次のように、いくつかの制限があります。
 
-* **コンテンツフラグメントモデルは現在サポートされていません**:読み取りや作成はできません。 新しいコンテンツフラグメントを作成したり、既存のコンテンツフラグメントを更新したりするには、開発者がコンテンツフラグメントモデルの正しいパスを知っている必要があります。 現在、これらの概要を把握するには、管理 UI を使用するしかありません。
-* **参照は無視されます**. 現在、既存のコンテンツフラグメントが参照されているかどうかを確認することはできません。 したがって、例えば、コンテンツフラグメントを削除すると、削除されたコンテンツフラグメントへの参照を含んでいるページで問題が発生する可能性があります。
+* **コンテンツフラグメントモデルは現在サポートされていません**：読み取りも作成もできません。新しいコンテンツフラグメントの作成または既存のコンテンツフラグメントの更新を行えるようにするには、開発者はコンテンツフラグメントモデルへの正しいパスを知っている必要があります。現在のところ、これらの概要を取得するには、管理 UI を使用するしかありません。
+* **参照は無視されます**。現在、既存のコンテンツフラグメントが参照されているかどうかの確認は行われません。したがって、例えば、コンテンツフラグメントを削除すると、削除されたコンテンツフラグメントへの参照を含んでいるページで問題が発生する可能性があります。
 * **JSON データ型** *JSON データ型*&#x200B;の REST API 出力は、現在、*文字列ベースの出力*&#x200B;です。
 
 ## ステータスコードとエラーメッセージ {#status-codes-and-error-messages}
@@ -302,7 +302,7 @@ Assets REST API は、フォルダーのプロパティへのアクセスを公�
    >* 指定されたペイロードが無効な場合
 
 
-   次に、このエラーステータスが返された場合の一般的なシナリオと、生成されるエラーメッセージ（等幅）を示します。
+   以下に、このエラーステータスが返される場合の一般的なシナリオと、生成されるエラーメッセージ（等幅）を示します。
 
    * 親フォルダーが存在しない（`POST` でコンテンツフラグメントを作成する場合）
    * コンテンツフラグメントモデルが指定されていない（cq:model が見つからない）、読み取れない（パスが無効か権限の問題が原因）、または有効なフラグメントモデルがありません。
