@@ -8,7 +8,7 @@ exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
 source-git-commit: 8466595f988d3a10806d4654885c14a622d14057
 workflow-type: tm+mt
 source-wordcount: '1630'
-ht-degree: 84%
+ht-degree: 85%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 84%
 
 * `Include folder contents` および `Include only immediate folder contents`
 
-   両方のオプションを選択した場合は、選択したフォルダーのすべてのアセット、サブフォルダー（空）および参照が公開されます。サブフォルダーのアセットは公開されません。
+  両方のオプションを選択した場合は、選択したフォルダーのすべてのアセット、サブフォルダー（空）および参照が公開されます。サブフォルダーのアセットは公開されません。
 
 <!--
 * [!UICONTROL Include only immediate folder contents]: Only the subfolders content and references are published. 
@@ -194,10 +194,11 @@ Only the selected folder content and references are published.
 >[!NOTE]
 >
 >If [!DNL Dynamic Media] が宛先として選択されている場合、ワークフローステップは無効になっています。 **ワークフローユーザー** および **admin** ユーザー。
+>
 
 ## 制限事項とヒント {#limitations-and-tips}
 
 * `Manage publication` は、ワークフローに対する読み取り権限を持つユーザーが使用できます。
 * 空のフォルダーは公開されません。
-* 処理中のアセットを公開すると、元のコンテンツのみが公開されます。 処理中のレンディションは失われます。処理が完了するまで待ってから公開するか、処理の完了後にアセットを公開し直してください。
+* 処理中のアセットを公開した場合は、オリジナルのコンテンツのみが公開されます。処理中のレンディションは失われます。処理が完了するまで待ってから公開するか、処理の完了後にアセットを公開し直してください。
 * 複雑なアセットを非公開にする場合は、アセットだけを非公開にします。参照は他の公開済みアセットから参照されている可能性があるので、非公開にしないでください。

@@ -5,7 +5,7 @@ exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '734'
-ht-degree: 43%
+ht-degree: 44%
 
 ---
 
@@ -97,6 +97,6 @@ AEM as a Cloud Serviceの製品領域については、以下の規制ドキュ�
 Adobe Experience Manager as a Cloud ServiceとAdobe TargetおよびAdobe Analyticsの統合は、データ保護およびプライバシー（GDPR など）に対応したサービスで実装されています。 Adobe Target や Adobe Analytics の個人データは、統合に関連して AEM に保存されません。
 詳しくは、次を参照してください。
 
-* [Adobe Target - プライバシーの概要](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)
+* [Adobe Target - プライバシーの概要](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=ja)
 
 * [Adobe Analytics データプライバシーのワークフロー](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)

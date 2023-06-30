@@ -5,7 +5,7 @@ exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 46%
+ht-degree: 49%
 
 ---
 
@@ -35,7 +35,7 @@ AEMのすべての環境が使用可能かどうかを監視します。 ただ�
 
 >[!NOTE]
 >
-> この機能は、 [高度なクラウドサポート。](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) ご質問がある場合は、担当のAdobeアカウントチームにお問い合わせください。
+> この機能は、[高度なクラウドサポートを利用している顧客にのみ提供されます。](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html?lang=ja#support-add-ons) ご質問がある場合は、担当のAdobeアカウントチームにお問い合わせください。
 
 ## 内部モジュールの監視 {#module-monitoring}
 

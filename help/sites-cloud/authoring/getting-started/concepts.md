@@ -5,7 +5,7 @@ exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 37%
+ht-degree: 39%
 
 ---
 
@@ -56,7 +56,7 @@ AEM インストールは、通常、少なくとも次の 2 つの環境で構�
 
 また、AEMは、Web サイトのパブリッシュ環境に到達する前に Web サイト作成者が Web サイトの最終エクスペリエンスをプレビューし、公開できる Sites プレビューサービスも提供しています。
 
-詳しくは、 [コンテンツのプレビュー](/help/sites-cloud/authoring/fundamentals/previewing-content.md) 詳しくは、を参照してください。
+詳しくは、[コンテンツのプレビュー](/help/sites-cloud/authoring/fundamentals/previewing-content.md)を参照してください。
 
 ## パブリッシュ環境 {#publish-environment}
 

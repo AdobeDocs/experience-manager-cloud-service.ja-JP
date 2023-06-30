@@ -7,7 +7,7 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '1417'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -144,7 +144,7 @@ Cloud Manager でセルフサービスの Git アカウント管理を使用す�
 
 ## その他のリソース {#additional-resources}
 
-オンボーディングジャーニーのコンテンツの範囲を超えたい場合の追加のオプションリソースを次に示します。
+オンボーディングジャーニーのコンテンツの範囲を超えてさらに詳しく知りたい場合に役立つ、追加のオプションリソースを次に示します。
 
 * [リポジトリへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md) - Cloud Manager でセルフサービスの Git アカウント管理を使用して、Git リポジトリにアクセスして管理する方法について説明します。
 * [Cloud Manager での Git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - Cloud Manager の Git リポジトリを使用する方法と、オンプレミスで顧客管理された独自の Git リポジトリを Cloud Manager と統合する方法について説明します。

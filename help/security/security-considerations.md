@@ -1,36 +1,36 @@
 ---
-title: AEMのas a Cloud Service的セキュリティに関する考慮事項
-description: AEM as a Cloud Serviceを使用する際のセキュリティに関する重要な考慮事項について説明します
+title: AEM as a Cloud Service のセキュリティに関する考慮事項
+description: AEM as a Cloud Service を使用する際のセキュリティに関する重要な考慮事項について説明します
 hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 0%
+ht-degree: 93%
 
 ---
 
-# AEMのas a Cloud Service的セキュリティに関する考慮事項 {#security-considerations}
+# AEM as a Cloud Service のセキュリティに関する考慮事項 {#security-considerations}
 
-## AEM Trust Store {#aem-trust-store}
+## AEM トラストストア {#aem-trust-store}
 
-非対称の暗号化操作をサポートするために、AEMは証明書をコンテンツリポジトリ内のグローバルトラストストアに保存します。 コンテンツは公開され、デフォルトでは、パブリッシャーインスタンス上の全員が匿名でアクセスできます。
+非対称の暗号化操作をサポートするために、AEMは証明書をコンテンツリポジトリ内のグローバルトラストストアに保存します。 そのコンテンツは公開され、デフォルトでは、パブリッシャーインスタンス上の全員が匿名でアクセスできます。
 
 ### トラストストアの特性 {#truststore-characteristics}
 
-* トラストストアは、以下にあります。 `/etc/truststore` は、Java キーストアファイル、キーストアのパスワード、リポジトリのメタデータで構成されます。 含まれる証明書はデフォルトで API を通じてすべてのユーザーがアクセスできる場合でも、パスワードとキーストア自体は技術的な理由により暗号化されます
+* トラストストアは、`/etc/truststore` の下にあり、Java キーストアファイル、キーストアパスワード、リポジトリメタデータで構成されます。含まれる証明書にはデフォルトで API を通じてすべてのユーザーがアクセスできる場合でも、技術的な理由によりパスワードとキーストア自体は暗号化されることに注意してください
 * 標準では、証明書は HTTPS および SAML のサポートにのみ使用され、最初にストアを手動で作成する必要があります
-* お客様は、 [keystore API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-)
-* トラストストアは、UI( **ツール** - **セキュリティ** - **トラストストア** または、 *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`*、以下に示すように。
+* お客様は、[キーストア API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-) を通じて独自のコードでこれを使用できます。
+* トラストストアは、UI（**ツール** - **セキュリティ** - **トラストストア**）を通じて管理するか、以下に示すように *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`* にアクセスして管理できます。
 
-  ![Trust Store の管理](/help/security/assets/global-trust-store-modified.png)
+  ![トラストストアの管理](/help/security/assets/global-trust-store-modified.png)
 
-* trust-store へのアクセスは、使用事例に応じて、リポジトリのアクセス制御によってさらに制限されます。
+* トラストストアへのアクセスは、使用事例に応じて、リポジトリのアクセス制御によってさらに制限されます。
 
 >[!NOTE]
 >
->Adobeでは、Trust Store にデフォルトのアクセス制御を使用することをお勧めします。つまり、公開されたままアクセスできます。 最も安全な設定の場合は、全員に対して deny jcr:all のポリシーを使用できます。
+>アドビでは、トラストストア に対してデフォルトのアクセス制御を使用することをお勧めします。つまり、トラストストア に引き続きパブリックにアクセスできます。最も安全な設定を実現するには、全員に対して deny jcr:all のポリシーを使用できます。
 
 <!--
 Commenting out section for now as requested by Lars

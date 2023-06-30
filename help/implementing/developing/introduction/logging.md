@@ -5,7 +5,7 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2375'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -497,7 +497,7 @@ Define DISP_LOG_LEVEL debug
 
 >[!NOTE]
 >
->AEMas a Cloud Service環境の場合、debug は最大の詳細レベルです。 トレースログレベルはサポートされていないので、クラウド環境で動作する場合は設定しないでください。
+>AEM as a Cloud Service 環境の場合、デバッグの冗長レベルは最大になります。トレースログレベルはサポートされていないので、クラウド環境で作業する場合は設定しないでください。
 
 ## ログのアクセス方法 {#how-to-access-logs}
 

@@ -8,7 +8,7 @@ exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1103'
-ht-degree: 84%
+ht-degree: 89%
 
 ---
 
@@ -71,14 +71,14 @@ ht-degree: 84%
 
 ## アクション {#actions}
 
-コンソール内では、直接または特定のフラグメントを選択した後に使用できる様々なアクションがあります。
+コンソール内には、直接または特定のフラグメントを選択した後に使用できる様々なアクションがあります。
 
-* 様々なアクションが直接おこなわれます [コンソールから利用可能](#available-actions)
-* 以下が可能です。 [コンテンツフラグメントを 1 つ以上選択して適切なアクションを表示します。](#actions-selected-content-fragment)
+* 様々なアクションを[コンソールから直接実行できます](#available-actions)
+* [1 つ以上のコンテンツフラグメントを選択して、適切なアクションを表示](#actions-selected-content-fragment)することができます。
 
 ### アクション（未選択） {#actions-unselected}
 
-特定のコンテンツフラグメントを選択しなくても、コンソールから使用できるアクションがいくつかあります。
+特定のコンテンツフラグメントを選択しなくても、特定のアクションはコンソールから実行できます。
 
 * 新しいコンテンツフラグメントを&#x200B;**[作成](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)**&#x200B;します
 * 述語の選択に従ってコンテンツフラグメントを[フィルタリング](#filtering-fragments)し、今後の使用のためにフィルターを保存します

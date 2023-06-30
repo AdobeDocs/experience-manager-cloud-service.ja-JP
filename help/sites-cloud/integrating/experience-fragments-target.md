@@ -2,10 +2,10 @@
 title: Adobe Target へのエクスペリエンスフラグメントの書き出し
 description: Adobe Target へのエクスペリエンスフラグメントの書き出し
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2250'
-ht-degree: 87%
+source-wordcount: '2245'
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ AEM エクスペリエンスフラグメントを Adobe Target に書き出す�
 
 >[!NOTE]
 >
->詳しくは、以下も参照してください。
+>詳しくは、以下のトピックを参照してください。
 >
 >* [Adobe Target Developers](https://developers.adobetarget.com/)
 >* [コアコンポーネントの概要](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
@@ -65,7 +65,7 @@ AEM エクスペリエンスフラグメントを Adobe Target に書き出す�
 
    >[!NOTE]
    >
-   >デフォルトではリンクの書き換えが行われない場合、 [Experience Fragment Link Rewriter Provider](/help/implementing/developing/extending/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html) が使用可能です。 これにより、インスタンス用にカスタマイズされたルールを開発できます。
+   >デフォルトでカバーされていないリンクの書き換えについては、[Experience Fragment Link リライタープロバイダー](/help/implementing/developing/extending/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html)が利用可能です。これにより、インスタンスに合わせてカスタマイズされたルールを開発できます。
 
 ## クラウド設定の追加 {#add-the-cloud-configuration}
 
@@ -83,9 +83,9 @@ AEM エクスペリエンスフラグメントを Adobe Target に書き出す�
 
    >[!NOTE]
    >
-   >クラウド設定をエクスペリエンスフラグメントの親フォルダーに追加した場合、設定はすべての子に継承されます。
+   >クラウド設定をエクスペリエンスフラグメントの親フォルダーに追加すると、設定はすべての子に継承されます。
    >
-   >クラウド設定をエクスペリエンスフラグメント自体に追加した場合、設定はすべてのバリエーションに継承されます。
+   >クラウド設定をエクスペリエンスフラグメント自体に追加すると、その設定はすべてのバリエーションに継承されます。
 
 1. 「**クラウドサービス**」タブを選択します。
 
@@ -176,7 +176,7 @@ AEMで Target クラウド設定を作成するには、以下の手順を実行
 
    * **テナント ID**：テナント ID です
 
-   * **IMS 設定**：ドロップダウンリストから必要な設定を選択します
+   * **IMS 設定**:ドロップダウンリストから必要な設定を選択します。
 
    * **API タイプ**：デフォルトは REST です（XML は非推奨／廃止予定です）
 
@@ -194,7 +194,7 @@ AEMで Target クラウド設定を作成するには、以下の手順を実行
 
      >[!NOTE]
      >
-     >Target ライブラリファイル [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html) は、Adobe Target 用の新しい実装ライブラリであり、通常の web 実装と単一ページアプリケーションの両方に使用できるように設計されています。
+     >Target ライブラリファイル [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=ja) は、Adobe Target 用の新しい実装ライブラリであり、通常の web 実装と単一ページアプリケーションの両方に使用できるように設計されています。
      >
      >mbox.js は非推奨（廃止予定）となり、後日で削除される予定です。
      >
@@ -314,18 +314,18 @@ When you associate a page with the framework, the child pages inherit the associ
 >
 >画像などのメディアアセットの場合、参照のみが Target に書き出されます。アセット自体は AEM Assets に保存されたままで、AEM パブリッシュインスタンスから配信されます。
 >
->このため、Target に書き出す前に、エクスペリエンスフラグメントと関連するすべてのアセットを公開する必要があります。
+>このため、Target に書き出す前に、エクスペリエンスフラグメントとすべての関連アセットを公開する必要があります。
 
-（クラウド設定を指定した後に）エクスペリエンスフラグメントをAEMから Target に書き出すには、次の手順を実行します。
+（クラウド設定を指定した後に）エクスペリエンスフラグメントを AEM から Target  に書き出すには、次の手順を実行します。
 
 1. エクスペリエンスフラグメントコンソールに移動します。
 1. ターゲットに書き出すエクスペリエンスフラグメントを選択します。
 
    >[!NOTE]
    >
-   >エクスペリエンスフラグメント Web バリエーションにする必要があります。
+   >エクスペリエンスフラグメント web のバリエーションである必要があります。
 
-1. タップまたはクリック **Adobe Targetに書き出し**.
+1. **Adobe Target に書き出し**&#x200B;をタップ／クリックします。
 
    >[!NOTE]
    >
@@ -347,7 +347,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >Adobe Targetでエクスペリエンスフラグメントを表示すると、 *最終変更日* 表示される日付は、フラグメントがAdobe Targetに最後に書き出された日付ではなく、AEMでフラグメントが最後に変更された日付です。
+   >Adobe Target でエクスペリエンスフラグメントを表示すると、表示される&#x200B;*最終変更日*&#x200B;は、フラグメントが最後に Adobe Target に書き出された日付ではなく、AEM でフラグメントが最後に変更された日付です。
 
 >[!NOTE]
 >
@@ -355,11 +355,11 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ## Adobe Target でのエクスペリエンスフラグメントの使用 {#using-your-experience-fragments-in-adobe-target}
 
-ここまでのタスクを完了すると、エクスペリエンスフラグメントが Target のオファーページに表示されます。Target 側でできることを詳しく知るには、[Target に特化したドキュメント](https://experiencecloud.adobe.com/resources/help/ja_JP/target/target/aem-experience-fragments.html)を参照してください。
+ここまでのタスクを完了すると、エクスペリエンスフラグメントが Target のオファーページに表示されます。詳しくは、 [特定の Target ドキュメント](https://experiencecloud.adobe.com/resources/help/ja_JP/target/target/aem-experience-fragments.html) そこで何を達成できるかを学ぶために
 
 >[!NOTE]
 >
->Adobe Targetでエクスペリエンスフラグメントを表示すると、 *最終変更日* 表示される日付は、フラグメントがAdobe Targetに最後に書き出された日付ではなく、AEMでフラグメントが最後に変更された日付です。
+>Adobe Target でエクスペリエンスフラグメントを表示すると、表示される&#x200B;*最終変更日*&#x200B;は、フラグメントが最後に Adobe Target に書き出された日付ではなく、AEM でフラグメントが最後に変更された日付です。
 
 ## Adobe Target に書き出し済みのエクスペリエンスフラグメントの削除 {#deleting-an-experience-fragment-already-exported-to-adobe-target}
 
@@ -367,10 +367,10 @@ Target に書き出し済みのエクスペリエンスフラグメントを削�
 
 このような状況を回避するには、次の手順に従います。
 
-* エクスペリエンスフラグメントが現在アクティビティで使用されていない場合、AEMを使用すると、警告メッセージを表示せずにフラグメントを削除できます。
+* エクスペリエンスフラグメントが現在アクティビティで使用されていない場合、AEM ではユーザーが警告メッセージを表示せずにフラグメントを削除できます。
 * エクスペリエンスフラグメントが現在 Target のアクティビティで使用されている場合、フラグメントを削除するとアクティビティに影響が及ぶ可能性があると、AEM ユーザーに警告メッセージが表示されます。
 
-  AEMのエラーメッセージは、ユーザーによるエクスペリエンスフラグメントの削除（強制）を禁止していません。 エクスペリエンスフラグメントが削除された場合は、次のような結果になります。
+  AEM のエラーメッセージは、ユーザーによるエクスペリエンスフラグメントの（強制）削除を禁止するものではありません。エクスペリエンスフラグメントが削除された場合は、次のような結果になります。
 
    * AEM エクスペリエンスフラグメントを使用した Target オファーで望ましくない動作が見られる場合があります。
 

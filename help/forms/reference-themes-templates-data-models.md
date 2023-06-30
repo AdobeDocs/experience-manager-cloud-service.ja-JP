@@ -22,11 +22,11 @@ AEM Forms as a Cloud Service には、アダプティブフォームの作成を
 ---------|----------|---------
 | Canvas 3.0 | 基本 | Microsoft Dynamics 365 |
 | Tranquil | 空白 | Salesforce |
-| Urbane |  |  |
+| Urbane |   |  |
 | Ultramarine |  |  |
 | Beryl |  |  |
-| ヘルスケア |  |  |
-| FSI |  |  |
+| ヘルスケア |  |   |
+| FSI |   |   |
 
 ## リファレンステーマ {#reference-themes}
 

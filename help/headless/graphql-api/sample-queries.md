@@ -6,7 +6,7 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
 source-wordcount: '1752'
-ht-degree: 76%
+ht-degree: 78%
 
 ---
 
@@ -1340,16 +1340,16 @@ query {
 
 ### ネストされたコンテンツフラグメントのサンプルクエリ - 複数モデルタイプ {#sample-wknd-nested-fragment-multiple-model}
 
-#### 単一参照モデルタイプ
+#### 単一の参照モデルタイプ
 
 このクエリでは次のものを検索します。
 
 * `bookmark` タイプの複数のコンテンツフラグメントについて
-   * と特定のモデルタイプの他のフラグメントへのフラグメント参照 `Article`
+   * 特定のモデルタイプ `Article` の他のフラグメントへのフラグメント参照を含むもの
 
 >[!NOTE]
 >
->フィールド `fragments` はデータタイプです `fragment-reference`（モデルを使用） `Article` 選択済み クエリ配信 `fragments` 配列として `[Article]`.
+>フィールド `fragments` のデータタイプは `fragment-reference` で、モデル `Article` が選択されています。クエリは `fragments` を `[Article]` の配列として配信します。
 
 ```graphql
 {
@@ -1373,7 +1373,7 @@ query {
 
 >[!NOTE]
 >
->フィールド `fragments` のデータタイプは `fragment-reference` で、モデル `Article` および `Adventure` が選択されています。クエリ配信 `fragments` 配列として `[AllFragmentModels]`：和集合タイプで非参照になります。
+>フィールド `fragments` のデータタイプは `fragment-reference` で、モデル `Article` および `Adventure` が選択されています。クエリは `fragments` を `[AllFragmentModels]` の配列として配信します。これはユニオン型でデリファレンスされます。
 
 ```graphql
 {

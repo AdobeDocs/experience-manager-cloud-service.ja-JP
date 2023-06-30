@@ -8,7 +8,7 @@ exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 source-git-commit: 124b363fe341199fdc9b25d25bbf2a9bc8f87d87
 workflow-type: tm+mt
 source-wordcount: '5868'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -27,27 +27,26 @@ ht-degree: 99%
 >* Dynamic Media 設定の [Dynamic Media Cloud Services の設定](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)、および [Dynamic Media のトラブルシューティング](/help/assets/dynamic-media/troubleshoot-dm.md)を参照してください。
 >
 
-
 1. 次の手順を実行して、**Dynamic Media ビデオをアップロード**&#x200B;します。
 
    * 独自のビデオエンコーディングプロファイルを作成します。または、Dynamic Media に付属している事前定義済みの&#x200B;_アダプティブビデオエンコーディング_（AVE）プロファイルを使用してもかまいません。
 
       * [ビデオエンコーディングプロファイルを作成します](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)。
       * 詳しくは、[ビデオエンコーディングのベストプラクティス](#best-practices-for-encoding-videos)を参照してください。
+
    * ビデオ処理プロファイルを、プライマリソースビデオのアップロード先となる 1 つ以上のフォルダーに関連付けます。
 
       * [ビデオプロファイルをフォルダーに適用します](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders)。
       * 詳しくは、[デジタルアセットの整理](/help/assets/organize-assets.md)を参照してください。
+
    * フォルダーにプライマリソースビデオをアップロードします。フォルダーにビデオを追加すると、そのフォルダーに割り当てたビデオ処理プロファイルに従ってビデオがエンコードされます。
 
       * Dynamic Media では、最大長 30 分、最小解像度が 25 x 25 を超える短い形式のビデオが主にサポートされています。
       * 15 GB までのビデオファイルをアップロードできます。
       * [ビデオをアップロードします](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
       * 詳しくは、[サポートされる入力ファイル形式](/help/assets/file-format-support.md)を参照してください。
+
    * アセットまたはワークフロー表示から、[ビデオエンコードの進行状況](#monitoring-video-encoding-and-youtube-publishing-progress)を監視します。
-
-
-
 
 1. 次のいずれかの操作を行って、**Dynamic Media ビデオを管理します**。
 
@@ -55,21 +54,24 @@ ht-degree: 99%
 
       * [デジタルアセットの整理](/help/assets/organize-assets.md)
       * [ビデオアセットを検索](/help/assets/search-assets.md#custompredicates)するか[アセットを検索](/help/assets/manage-digital-assets.md#search-assets)します。
+
    * ビデオアセットをプレビューして公開します。
 
       * ソースビデオとビデオのエンコードされたレンディションを、関連するサムネールと共に表示します。
-         [ビデオをプレビュー](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)するか[アセットをプレビュー](/help/assets/dynamic-media/previewing-assets.md)します。
-         [ビデオレンディションを管理します](/help/assets/manage-digital-assets.md#managing-renditions)。
+        [ビデオをプレビュー](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)するか[アセットをプレビュー](/help/assets/dynamic-media/previewing-assets.md)します。
+        [ビデオレンディションを管理します](/help/assets/manage-digital-assets.md#managing-renditions)。
 
       * [ビューアプリセットの管理](/help/assets/dynamic-media/managing-viewer-presets.md)
       * [アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+
    * ビデオのメタデータを操作します。
 
       * タイトル、説明、タグ、カスタムメタデータフィールドなど、ビデオのプロパティを編集：
-         [ビデオのプロパティの編集](/help/assets/manage-digital-assets.md#editing-properties)
+        [ビデオのプロパティの編集](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [デジタルアセット用のメタデータの管理](/help/assets/manage-metadata.md)
       * [メタデータスキーマ](/help/assets/metadata-schemas.md)
+
    * ビデオをレビューおよび承認し、注釈を付け、完全なバージョン管理を維持します。
 
       * [ビデオへの注釈](/help/assets/manage-video-assets.md#annotate-video-assets)または[アセットへの注釈](/help/assets/manage-digital-assets.md#annotating)
@@ -80,26 +82,23 @@ ht-degree: 99%
       * [フォルダーのアセットのレビュー](/help/assets/bulk-approval.md)
       * [プロジェクト](/help/sites-cloud/authoring/projects/overview.md)
 
-
-
-
 1. 次のいずれかの操作を行って、**Dynamic Media ビデオを公開します**。
 
    * Adobe Experience Manager を WCM（web コンテンツ管理）システムとして使用する場合、web ページにビデオを直接追加できます。
 
       * [Web ページにビデオを追加します](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
+
    * サードパーティの web コンテンツ管理システムを使用している場合、web ページにビデオをリンクするか、ビデオを埋め込むことができます。
 
       * URL を使用したビデオの統合：
-         [Web アプリケーションに URL をリンクします](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。
+        [Web アプリケーションに URL をリンクします](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。
 
       * Web ページの埋め込みコードを使用したビデオの統合：
-         [Web ページにビデオビューアを埋め込みます](/help/assets/dynamic-media/embed-code.md)。
+        [Web ページにビデオビューアを埋め込みます](/help/assets/dynamic-media/embed-code.md)。
+
    * [ビデオレポートを生成します](#viewing-video-reports)。
 
    * [ビデオにキャプションを追加します](#adding-captions-to-video)。
-
-
 
 ## Dynamic Media でのビデオの操作 {#working-with-video-in-dynamic-media}
 
@@ -158,7 +157,7 @@ Dynamic Media の HTML5 ビデオビューアプリセットは堅牢なビデ�
 
 >[!NOTE]
 >
->ビデオに DASH を使用するには、まず Adobe テクニカルサポートがアカウントで DASH を有効にする必要があります。詳しくは、「[アカウントでの DASH の有効化](#enable-dash)」を参照してください。
+>ビデオに DASH を使用するには、まず Adobe テクニカルサポートがアカウントで DASH を有効にする必要があります。詳しくは、[アカウントでの DASH の有効化](#enable-dash)を参照してください。
 
 HTML5 と CSS を使用して再生コンポーネントを設計できる機能を 1 つのプレーヤーに統合できます。埋め込み再生が可能で、ブラウザーの機能に応じてアダプティブストリーミングやプログレッシブストリーミングを使用できます。これらの結果、リッチメディアコンテンツの配信範囲をデスクトップユーザーとモバイルユーザーの両方に拡大し、ビデオエクスペリエンスを確実に効率化することができます。
 
@@ -428,7 +427,7 @@ DASH を使用するリクエストを開始します。お使いのアカウン
 **アカウントで DASH を有効にするには：**
 
 1. [Admin Console を使用して、新しいサポートケースの作成を開始します](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)。
-1. サポートケースを作成するには、次の情報を必ず指定しながら、指示に従ってください。
+1. サポートケースを作成するには、手順に従いながら次の情報を入力します。
 
    * 主要連絡先の氏名、メールアドレス、電話番号。
    * Dynamic Media アカウントの名前。
@@ -595,15 +594,15 @@ URL での JSON 機能の使用について詳しくは、[静的な（画像以
 
    * ポップアップビデオビューアエクスペリエンスの場合は、「**[!UICONTROL URL]**」を選択します。URL ダイアログボックスで、URL を選択してクリップボードにコピーし、その URL を単純なテキストエディターに貼り付けます。コピーしたビデオの URL を次の構文で追加します。
 
-      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
+     `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
-      キャプションパスの末尾にある `,1` に注意します。パスの VTT ファイル名拡張子の直後で、ビデオプレーヤーバーのクローズドキャプションボタンの有効（オン）と無効（オフ）を任意に切り替えることができます。それぞれ、`,1` または `,0` を設定します。
+     キャプションパスの末尾にある `,1` に注意します。パスの VTT ファイル名拡張子の直後で、ビデオプレーヤーバーのクローズドキャプションボタンの有効（オン）と無効（オフ）を任意に切り替えることができます。それぞれ、`,1` または `,0` を設定します。
 
    * 埋め込みビデオビューアエクスペリエンスの場合は、「**[!UICONTROL 埋め込みコード]**」を選択します。埋め込みコードダイアログボックスで、埋め込みコードを選択してクリップボードにコピーし、そのコードを単純なテキストエディターに貼り付けます。コピーした埋め込みコードを次の構文で追加します。
 
-      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
+     `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-      キャプションパスの末尾にある `,1` に注意します。パスの VTT ファイル名拡張子の直後で、ビデオプレーヤーバーのクローズドキャプションボタンの有効（オン）と無効（オフ）を任意に切り替えることができます。それぞれ、`,1` または `,0` を設定します。
+     キャプションパスの末尾にある `,1` に注意します。パスの VTT ファイル名拡張子の直後で、ビデオプレーヤーバーのクローズドキャプションボタンの有効（オン）と無効（オフ）を任意に切り替えることができます。それぞれ、`,1` または `,0` を設定します。
 
 ## ビデオへのチャプターマーカーの追加 {#adding-chapter-markers-to-video}
 

@@ -1,6 +1,6 @@
 ---
 title: メタデータプロファイル
-description: アセットのメタデータプロファイルについて説明します。 メタデータプロファイルを作成し、フォルダーアセットに適用する方法を説明します。
+description: アセットのメタデータプロファイルについて説明します。また、メタデータプロファイルを作成し、フォルダーのアセットに適用する方法も説明します。
 contentOwner: AG
 feature: Metadata
 role: User,Admin
@@ -8,7 +8,7 @@ exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 94%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=en) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 メタデータプロファイルを使用すると、フォルダー内のアセットにデフォルトのメタデータを適用できます。メタデータプロファイルを作成し、フォルダーに適用します。後からフォルダーにアップロードしたすべてのアセットは、メタデータプロファイルで設定したデフォルトのメタデータを継承します。
@@ -59,7 +59,7 @@ ht-degree: 94%
 1. **[!UICONTROL メタデータプロファイル]**&#x200B;ページで、コピーを作成するメタデータプロファイルを選択します。
 1. ツールバーの「**[!UICONTROL コピー]**」をクリックします。
 1. **[!UICONTROL メタデータプロファイルをコピー]**&#x200B;ダイアログで、メタデータプロファイルの新しいコピーのタイトルを入力します。
-1. クリック **[!UICONTROL コピー]**. メタデータプロファイルのコピーが、**[!UICONTROL メタデータプロファイル]**&#x200B;ページのプロファイルのリストに表示されます。
+1. 「**[!UICONTROL コピー]**」をクリックします。メタデータプロファイルのコピーが、**[!UICONTROL メタデータプロファイル]**&#x200B;ページのプロファイルのリストに表示されます。
 
 ## メタデータプロファイルの削除 {#deleting-a-metadata-profile}
 
@@ -134,12 +134,12 @@ ht-degree: 94%
 * [アセットを翻訳](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットの検索](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットを検索](search-assets.md)
+* [接続されたアセット](use-assets-across-connected-assets-instances.md)
 * [アセットレポート](asset-reports.md)
 * [メタデータスキーマ](metadata-schemas.md)
-* [アセットのダウンロード](download-assets-from-aem.md)
-* [メタデータの管理](manage-metadata.md)
+* [アセットをダウンロード](download-assets-from-aem.md)
+* [メタデータを管理](manage-metadata.md)
 * [検索ファセット](search-facets.md)
-* [コレクションの管理](manage-collections.md)
-* [一括メタデータ読み込み](metadata-import-export.md)
+* [コレクションを管理](manage-collections.md)
+* [メタデータの一括読み込み](metadata-import-export.md)

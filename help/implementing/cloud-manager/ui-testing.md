@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2389'
-ht-degree: 70%
+ht-degree: 74%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 70%
 
 AEM には、[Cloud Manager 品質ゲート](/help/implementing/cloud-manager/custom-code-quality-rules.md)の統合スイートが用意されており、カスタムアプリケーションをスムーズに更新できるようになっています。特に、IT テストゲートでは、AEM API を使用したカスタムテストの作成と自動化に既に対応しています。
 
-UI テストは、言語およびフレームワーク（Cypress、Selenium、Java および Maven、JavaScript など）の幅広い選択を可能にするために、Docker イメージでパッケージ化されています。 また、[AEM プロジェクトアーキタイプを使用すると、UI テストプロジェクトを容易に生成できます。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)
+UI テストは、言語およびフレームワーク（Cypress、Selenium、Java および Maven、JavaScript など）の幅広い選択を可能にするために、Docker イメージでパッケージ化されています。 また、[AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)を使用すると、UI テストプロジェクトを容易に生成できます。
 
 Adobeは、リアルタイムの再読み込みと自動待ちを提供するので、Cypress を使用することを推奨します。これにより、時間を節約し、テスト中の生産性を向上させることができます。 Cypress は、簡単で直感的な構文を提供し、テストを初めて行うユーザーでも簡単に学習し、使用できます。
 
@@ -252,7 +252,7 @@ Docker イメージが他のプログラミング言語またはテストラン�
 
 | タイプ | 値 | 説明 |
 |----------------------|-------|-----------------------------------------------------------------------|
-| CPU | 2.0 | テスト実行ごとに予約される CPU 時間の量 |
+| CPU | 2.0 | テスト実行ごとに確保される CPU 時間の量です。 |
 | メモリ | 1Gi | テストに割り当てられたメモリ量（GB 単位） |
 | タイムアウト | 30m | テストが終了するまでの期間。 |
 | 推奨期間 | 15m | Adobeは、この時間を超えないようにテストを書き込むことをお勧めします。 |
@@ -265,7 +265,7 @@ Docker イメージが他のプログラミング言語またはテストラン�
 
 >[!NOTE]
 >
->このセクションは、Selenium が選択されたテストインフラストラクチャの場合にのみ適用されます。
+>この節は、選択されたテストインフラストラクチャが Selenium の場合にのみ適用されます。
 
 ### Selenium の準備完了までの待機 {#waiting-for-selenium}
 
@@ -309,7 +309,9 @@ UI テストの実行中にテスト結果アーカイブが作成された場�
 
 ## UI テストのローカルでの実行 {#run-ui-tests-locally}
 
-Cloud Manager パイプラインで UI テストをアクティブ化する前に、UI テストを [AEMas a Cloud ServiceSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 実際のAEM as a Cloud Serviceインスタンスに対して
+Cloud Manager パイプラインで UI テストをアクティブ化する前に、UI テストを
+[AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) に対してローカルで実行するか、
+実際の AEM as a Cloud Service インスタンスに対してローカルで実行することをお勧めします。
 
 ### ヒノキ試験サンプル {#cypress-sample}
 
