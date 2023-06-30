@@ -5,7 +5,7 @@ exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1813'
-ht-degree: 43%
+ht-degree: 45%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 43%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_precopy"
 >title="大規模なコンテンツリポジトリーの処理"
->abstract="コンテンツ転送アクティビティの抽出と取り込み段階を大幅に高速化してコンテンツをAEMas a Cloud Serviceに移動するために、コンテンツ転送ツール (CTT) は AzCopy をオプションのプリコピー手順として使用できます。 この前段階が設定されたら、AzCopy は、抽出段階で Amazon S3 または Azure Blob Storage から移行セット BLOB ストアに BLOB をコピーします。取り込み段階では、AzCopy は、移行セットの BLOB ストアから宛先の AEM as a Cloud Service BLOB ストアに BLOB をコピーします。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step" text="AzCopy をコピー前手順として使用する"
+>abstract="コンテンツを AEM as a Cloud Service に移行するコンテンツ転送アクティビティの抽出および取り込みフェーズを大幅に高速化するために、コンテンツ転送ツール（CTT）ではオプションの事前コピーステップとして AzCopy を使用できます。この前段階が設定されたら、AzCopy は、抽出段階で Amazon S3 または Azure Blob Storage から移行セット BLOB ストアに BLOB をコピーします。取り込み段階では、AzCopy は、移行セットの BLOB ストアから宛先の AEM as a Cloud Service BLOB ストアに BLOB をコピーします。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja#setting-up-pre-copy-step" text="AzCopy をコピー前手順として使用する"
 
 コンテンツ転送ツール (CTT) で多数の BLOB をコピーするには、複数日かかる場合があります。
 コンテンツ転送アクティビティの抽出段階と取り込み段階を早めてコンテンツをAEMas a Cloud Serviceの環境に移動するには、CTT で次を使用します。 [AzCopy](https://learn.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-v10) を追加します。 この事前コピー手順を使用できるのは、ソース AEM インスタンスが Amazon S3、Azure Blob Storage データストアまたはファイルデータストアを使用するように設定されている場合です。  事前コピー手順は、最初の完全な抽出および取り込みに最も効果的です。 ただし、後続のトップアップに対して事前コピーを使用することは、プロセス全体に時間がかかる可能性があるので推奨されません（トップアップのサイズが 200GB 未満の場合）。この事前手順が設定されたら、AzCopy は、抽出段階で Amazon S3、Azure Blob Storage またはファイルデータストアから移行セット BLOB ストアに BLOB をコピーします。取り込み段階では、AzCopy は、移行セットの BLOB ストアから宛先の AEM as a Cloud Service BLOB ストアに BLOB をコピーします。

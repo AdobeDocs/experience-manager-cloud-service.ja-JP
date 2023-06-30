@@ -5,7 +5,7 @@ exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 43%
+ht-degree: 50%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 43%
 >[!CONTEXTUALHELP]
 >id="aemcloud_alignkpis"
 >title="KPI の調整"
->abstract="デジタル世界では、あらゆるものを測定することができます。Adobe Experience Managerの実装に適した KPI を選択すると、チームが最も重要な項目に焦点を当てるのに役立ちます。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=en" text="KPI の評価"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=en" text="適切なチームの選択"
+>abstract="デジタル世界では、あらゆるものを測定することができます。Adobe Experience Manager の実装に適切な主要業績評価指標（KPI）を選択すると、最重要事項に集中することができます。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=ja" text="KPI の評価"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=ja" text="適切なチームの選択"
 
 デジタル世界では、あらゆるものを測定することができます。Adobe Experience Managerの実装に 3 つの KPI を選択すると、チームが最も重要な点に集中するのに役立ちます。
 

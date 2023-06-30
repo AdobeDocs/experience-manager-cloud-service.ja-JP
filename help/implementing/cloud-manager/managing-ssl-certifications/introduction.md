@@ -2,10 +2,10 @@
 title: SSL 証明書の管理の概要
 description: Cloud Manager が、SSL 証明書をインストールするセルフサービスツールを提供する方法について説明します。
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 79%
+source-wordcount: '630'
+ht-degree: 81%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 79%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="SSL 証明書の管理"
->abstract="Cloud Manager が、SSL 証明書をインストールおよび管理して、ユーザーのためにサイトを保護するセルフサービスツールを提供する方法について説明します。 Cloud Manager は、プラットフォーム TLS サービスを使用して、SSL 証明書と、サードパーティの証明機関から取得され、顧客が所有する秘密鍵を管理します。"
+>abstract="Cloud Manager で、サイトを保護するために、SSL 証明書をセルフサービスでインストールおよび管理する方法について説明します。Cloud Manager は、プラットフォーム TLS サービスを使用して、SSL 証明書と、サードパーティの証明機関から取得され、顧客が所有する秘密鍵を管理します。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=ja" text="SSL 証明書の表示、更新、置換"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=ja" text="SSL 証明書のステータスの確認"
 
@@ -69,7 +69,7 @@ Cloud Manager では、いつでも最大 50 個の SSL 証明書をインスト
 
 ## 詳細情報 {#learn-more}
 
-必要な権限を持つユーザーは、Cloud Manager を使用してプログラムの SSL 証明書を管理できます。これらの機能の使用方法の詳細については、次のドキュメントを参照してください。
+必要な権限を持つユーザーは、Cloud Manager を使用してプログラムの SSL 証明書を管理できます。これらの機能の使用について詳しくは、次のドキュメントを参照してください。
 
 * [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
 * [SSL 証明書の表示、更新、置換](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)

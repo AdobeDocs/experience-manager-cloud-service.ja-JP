@@ -7,7 +7,7 @@ exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 88%
+ht-degree: 94%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 88%
 
 >[!CONTEXTUALHELP]
 >id="assets_user_entitlements"
->title="AEM製品プロファイルの割り当て"
->abstract="Experience Manager Assetsを使用する資格がありません。 管理者に問い合わせてください。"
+>title="AEM 製品プロファイルの割り当て"
+>abstract="Experience Manager Assets を使用する資格が付与されていません。管理者に問い合わせてください。"
 
 [オンボーディングジャーニー](overview.md)のこのパートでは、AEM 製品プロファイルを使用して、AEM へのアクセス権をチームに付与する方法を説明します。
 
@@ -111,9 +111,9 @@ AEM を使用するには、チームメンバーが 1 つまたは複数の AEM
 
 ## その他のリソース {#additional-resources}
 
-オンボーディングジャーニーのコンテンツの範囲を超えたい場合の追加のオプションリソースを次に示します。
+オンボーディングジャーニーのコンテンツの範囲を超えてさらに詳しく知りたい場合に役立つ、追加のオプションリソースを次に示します。
 
 * [AEM as a Cloud Service のチームおよび製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md) - ライセンス取得済みのアドビソリューションに対するアクセスを AEM as a Cloud Service のチームおよび製品プロファイルで許可および制限する方法について説明します。
-* [製品とユーザーアクセスのAdmin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console)  — ユーザーアクセスを管理するAdmin Consoleの使用方法を説明します。
+* [Admin Console での製品とユーザーアクセスの管理](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - Admin Console を使用してユーザーアクセスを管理する方法について説明します。
 * [AEM へのアクセスの設定のウォークスルー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html) - Admin Console で Adobe IMS ユーザー、ユーザーグループ、製品プロファイルを設定する方法については、こちらの簡潔なウォークスルーを参照してください。
 
