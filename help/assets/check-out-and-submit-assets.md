@@ -6,9 +6,9 @@ feature: Asset Management
 role: User
 exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
 source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '481'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 90%
 
 アセットをチェックイン／チェックアウトするには、アセットへの書き込み権限が必要です。
 
-この機能は、複数のユーザーがチーム間でワークフローの編集で共同作業する場合に、作成者が加えた変更が他のユーザーによって上書きされるのを防ぐのに役立ちます。
+この機能は、複数のチームにわたる編集ワークフローで複数のユーザーが共同作業をする場合に、ある作成者が変更した内容を他のユーザーが上書きしてしまう事態を防ぐのに役立ちます。
 
 ## アセットのチェックアウト {#checking-out-assets}
 
@@ -34,7 +34,7 @@ ht-degree: 90%
 
    ![カード表示のチェックアウトアイコン](assets/checkout-icon-card-view.png)
 
-   アセットを選択します。アセットを編集、注釈、公開、削除するためのオプションはツールバーに表示されません。
+   アセットを選択します。ツールバーには、アセットの編集、注釈付け、公開、削除を行うためのオプションが表示されないことを確認してください。
 
    ![chlimage_1-472](assets/checkout-asset-toolbar-options.png)
 
@@ -66,15 +66,15 @@ ht-degree: 90%
 * [アセットを翻訳](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットの検索](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットを検索](search-assets.md)
+* [接続されたアセット](use-assets-across-connected-assets-instances.md)
 * [アセットレポート](asset-reports.md)
 * [メタデータスキーマ](metadata-schemas.md)
-* [アセットのダウンロード](download-assets-from-aem.md)
-* [メタデータの管理](manage-metadata.md)
+* [アセットをダウンロード](download-assets-from-aem.md)
+* [メタデータを管理](manage-metadata.md)
 * [検索ファセット](search-facets.md)
-* [コレクションの管理](manage-collections.md)
-* [一括メタデータ読み込み](metadata-import-export.md)
+* [コレクションを管理](manage-collections.md)
+* [メタデータの一括読み込み](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
