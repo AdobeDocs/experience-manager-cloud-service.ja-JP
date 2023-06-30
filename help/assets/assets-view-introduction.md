@@ -2,10 +2,10 @@
 title: Assets の表示にはどのようなメリットがありますか？
 description: Assets ビューの主なメリットについて詳しくは、こちらを参照してください
 mini-toc-levels: 3
-source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
+source-git-commit: 97b6f66f2d19b85ec0a71eda756aaa334ea5da57
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 11%
+source-wordcount: '1064'
+ht-degree: 12%
 
 ---
 
@@ -121,14 +121,15 @@ Assets ビューでは、リポジトリー内で使用可能なアセット、�
 
 * リポジトリ内で使用可能なアセットおよびフォルダーの名前を変更します。
 
+新しいAdobe Experience Manager Assets ビューは、ワークフローの合理化、共同作業の促進、アセットの配信の高速化を目的にカスタマイズされています。 コンテンツベロシティを受け入れることで、マーケターはデジタルアセットの可能性を最大限に引き出し、今までにないような創造性を引き出すことができます。
+
+
 Assets ビューをすばやく使用するには、次のリンクを使用します。
 
 * [マイワークスペース](/help/assets/my-workspace-assets-view.md)
 * [Assets ビューの使用を開始する](/help/assets/get-started-assets-view.md)
 
-## まとめ {#conclusion}
 
-デジタルファーストの時代が到来し、今こそ、進化するビジネス環境をサポートするためにマーケティングツールを変革する時です。 新しいAdobe Experience Manager Assets ビューは、ワークフローの合理化、共同作業の促進、アセットの配信の高速化を目的にカスタマイズされています。 コンテンツベロシティを受け入れることで、マーケターはデジタルアセットの可能性を最大限に引き出し、今までにないような創造性を引き出すことができます。 Adobeの新しい Assets ビューエクスペリエンスの機能を活用し、マーケティングキャンペーンで優れた結果を引き出す準備をします。 今こそ DAM の未来を受け入れ、ビジネスを前進させる時です。
 
 
 
