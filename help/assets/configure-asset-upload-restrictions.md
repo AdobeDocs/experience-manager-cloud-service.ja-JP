@@ -3,9 +3,9 @@ title: アセットのアップロード制限を設定する
 description: Adobe Experience Manager Assets を設定して、ユーザーがアップロードできるアセットのタイプを MIME タイプに基づいて制限します。 これにより、望ましくない形式や悪意のあるファイルが誤ってアップロードされるのを防ぐことができます。
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
 source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '363'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -62,12 +62,12 @@ Adobe Experience Manager Assets を設定して、ユーザーがアップロー
 * [アセットを翻訳](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットの検索](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットを検索](search-assets.md)
+* [接続されたアセット](use-assets-across-connected-assets-instances.md)
 * [アセットレポート](asset-reports.md)
 * [メタデータスキーマ](metadata-schemas.md)
-* [アセットのダウンロード](download-assets-from-aem.md)
-* [メタデータの管理](manage-metadata.md)
+* [アセットをダウンロード](download-assets-from-aem.md)
+* [メタデータを管理](manage-metadata.md)
 * [検索ファセット](search-facets.md)
-* [コレクションの管理](manage-collections.md)
-* [一括メタデータ読み込み](metadata-import-export.md)
+* [コレクションを管理](manage-collections.md)
+* [メタデータの一括読み込み](metadata-import-export.md)
