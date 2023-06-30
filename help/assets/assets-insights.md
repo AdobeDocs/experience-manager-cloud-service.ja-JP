@@ -6,9 +6,9 @@ feature: Asset Insights,Asset Reports
 role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
 source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '905'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 87%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=en) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 アセットインサイトの機能を使用すると、サードパーティの Web サイト、マーケティングキャンペーン、アドビのクリエイティブソリューションで使用される画像のユーザー評価と使用状況統計を追跡できます。これにより、画像のパフォーマンスと人気に関するインサイトが提供されます。
 
 アセットインサイトでは、画像の評価回数、クリック数、インプレッション数（画像が Web サイトに読み込まれた回数）など、ユーザーのアクティビティの詳細を取得します。これらの統計情報に基づいて画像にスコアを割り当てます。スコアとパフォーマンス統計を使用して、人気が高い画像を選び、カタログやマーケティングキャンペーンなどに含めることができます。このような統計に基づいて、アーカイブやライセンス更新のポリシーを策定することもできます。
 
-アセットインサイトが Web サイトから画像の使用状況の統計を取り込むには、画像の埋め込みコードを Web サイトコードに含める必要があります。
+アセットインサイトが画像の使用状況統計を web サイトから取得するためには、画像の埋め込みコードを web サイトのコードに組み込む必要があります。
 
 アセットインサイトでアセットの使用状況統計を表示できるようにするには、最初に [!DNL Adobe Analytics] からのレポートデータをフェッチするようにこの機能を設定します。詳しくは、[アセットインサイトの設定](#configure-asset-insights)を参照してください。この機能を使用するには、[!DNL Adobe Analytics] ライセンスを別途購入してください。
 
@@ -39,11 +39,11 @@ ht-degree: 87%
 1. プロパティページで、「**[!UICONTROL インサイト]**」をクリックします。
 1. 「**[!UICONTROL インサイト]**」タブで、アセットの使用状況の詳細を確認します。「**[!UICONTROL スコア]**」セクションには、アセットの全体的な使用状況とパフォーマンスのスコアが表示されます。
 
-   使用状況スコアは、様々なソリューションでアセットが使用された回数を表します。
+   使用状況のスコアは、アセットが様々なソリューションで使用された回数です。
 
-   この **[!UICONTROL Impressions]** score は、アセットが Web サイトに読み込まれた回数です。 下に表示される番号 **[!UICONTROL クリック数]** は、アセットがクリックされた回数です。
+   「**[!UICONTROL インプレッション数]**」のスコアは、アセットが web サイトに読み込まれた回数です。「**[!UICONTROL クリック数]**」の下に表示される数値は、アセットがクリックされた回数です。
 
-1. 「**[!UICONTROL 使用状況の統計]**」セクションを見て、アセットが含まれているエンティティや最近使用されたクリエイティブソリューションを確認します。使用量が多いほど、アセットがユーザーに人気を持つ可能性が高くなります。 使用状況データは、次の見出しの下に表示されます。
+1. 「**[!UICONTROL 使用状況の統計]**」セクションを見て、アセットが含まれているエンティティや最近使用されたクリエイティブソリューションを確認します。使用率が高いほど、ユーザーの間で人気のあるアセットであることを意味します。使用状況データは、次の見出しの下に表示されます。
 
    * **[!UICONTROL アセット]**：アセットが、コレクションまたは複合アセットに含まれた回数
    * **[!UICONTROL Web およびモバイル]**：アセットが Web サイトまたはアプリに含まれた回数
@@ -74,7 +74,7 @@ ht-degree: 87%
 
 1. Assets ユーザーインターフェイスで、インサイトを表示するアセットを含むフォルダーに移動します。
 1. ツールバーの「**[!UICONTROL レイアウト]**」オプションをクリックして、「**[!UICONTROL インサイト表示]**」を選択します。
-1. ページには、アセットの使用状況スコアが表示されます。 様々なアセットの評価を比較し、インサイトを引き出します。
+1. このページには、アセットの使用状況スコアが表示されます。様々なアセットの評価を比較し、インサイトを引き出します。
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
@@ -186,12 +186,12 @@ Using the demo package, you can enable Adobe Assets Insights to capture data fro
 * [アセットを翻訳](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットの検索](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットを検索](search-assets.md)
+* [接続されたアセット](use-assets-across-connected-assets-instances.md)
 * [アセットレポート](asset-reports.md)
 * [メタデータスキーマ](metadata-schemas.md)
-* [アセットのダウンロード](download-assets-from-aem.md)
-* [メタデータの管理](manage-metadata.md)
+* [アセットをダウンロード](download-assets-from-aem.md)
+* [メタデータを管理](manage-metadata.md)
 * [検索ファセット](search-facets.md)
-* [コレクションの管理](manage-collections.md)
-* [一括メタデータ読み込み](metadata-import-export.md)
+* [コレクションを管理](manage-collections.md)
+* [メタデータの一括読み込み](metadata-import-export.md)
