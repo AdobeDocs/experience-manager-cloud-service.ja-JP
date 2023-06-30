@@ -6,9 +6,9 @@ feature: Collections,Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
 source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '845'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 88%
 
 Adobe Experience Manager Assets では、フォルダー内またはコレクション内のアセットに対してアドホックレビューワークフローを設定できます。それをレビュー担当者やクリエイティブパートナーと共有して、フィードバックを得ることができます。レビューワークフローをプロジェクトと関連付けることも、独立したレビュータスクを作成することもできます。
 
-ユーザーがアセットを共有した後で、レビュー担当者がアセットを承認または拒否できます。ワークフローの様々な段階で通知が送信され、様々なタスクの完了に関して意図した受信者に通知が送信されます。 例えば、あるフォルダーまたはコレクションを共有した場合、レビュー担当者に、あるフォルダーまたはコレクションがレビュー用に共有されたことを知らせる通知が届きます。
+ユーザーがアセットを共有した後で、レビュー担当者がアセットを承認または拒否できます。ワークフローの様々なステージで、様々なタスクの完了に関する通知が対象の受信者に送信されます。例えば、ユーザーがフォルダーまたはコレクションを共有すると、レビュー担当者は、フォルダーまたはコレクションがレビューのために共有されたという通知を受け取ります。
 
 レビュー担当者がレビューを終了（アセットを承認または拒否）すると、ユーザーはレビューが完了したという通知を受け取ります。
 
-## フォルダーのレビュータスクの作成 {#creating-a-review-task-for-folders}
+## フォルダー用レビュータスクの作成 {#creating-a-review-task-for-folders}
 
 1. Assets ユーザーインターフェイスで、レビュータスクを作成するフォルダーを選択します。
 1. ツールバーで「**[!UICONTROL レビュータスクを作成]**」アイコンをタップまたはクリックして、**[!UICONTROL レビュータスク]**&#x200B;ページを開きます。ツールバーにこのアイコンが表示されていない場合は、「**[!UICONTROL その他]**」をタップまたはクリックしてアイコンを選択します。
@@ -63,7 +63,7 @@ Adobe Experience Manager Assets では、フォルダー内またはコレクシ
    ![review_task](assets/review_task.png)
 
 1. ツールバーの「**[!UICONTROL 完了]**」アイコンをタップまたはクリックします。ダイアログでコメントを入力し、「**[!UICONTROL 完了]**」をタップまたはクリックして確認します。
-1. Assets UI に移動し、フォルダーを開きます。 アセットの承認ステータスアイコンは、カード表示とリスト表示の両方に表示されます。
+1. Assets UI に移動し、フォルダーを開きます。アセットの承認ステータスアイコンは、カード表示とリスト表示の両方に表示されます。
 
    **カード表示**
 
@@ -104,7 +104,7 @@ Adobe Experience Manager Assets では、フォルダー内またはコレクシ
    ![review_task_collection](assets/review_task_collection.png)
 
 1. ツールバーの「**[!UICONTROL 完了]**」アイコンをタップまたはクリックします。ダイアログでコメントを入力し、「**[!UICONTROL 完了]**」をタップまたはクリックして確認します。
-1. コレクションコンソールに移動して、コレクションを開きます。 アセットの承認ステータスアイコンは、カード表示とリスト表示の両方に表示されます。
+1. コレクションコンソールに移動して、コレクションを開きます。アセットの承認ステータスアイコンは、カード表示とリスト表示の両方に表示されます。
 
    **カード表示**
 
@@ -119,12 +119,12 @@ Adobe Experience Manager Assets では、フォルダー内またはコレクシ
 * [アセットを翻訳](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットの検索](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットを検索](search-assets.md)
+* [接続されたアセット](use-assets-across-connected-assets-instances.md)
 * [アセットレポート](asset-reports.md)
 * [メタデータスキーマ](metadata-schemas.md)
-* [アセットのダウンロード](download-assets-from-aem.md)
-* [メタデータの管理](manage-metadata.md)
+* [アセットをダウンロード](download-assets-from-aem.md)
+* [メタデータを管理](manage-metadata.md)
 * [検索ファセット](search-facets.md)
-* [コレクションの管理](manage-collections.md)
-* [一括メタデータ読み込み](metadata-import-export.md)
+* [コレクションを管理](manage-collections.md)
+* [メタデータの一括読み込み](metadata-import-export.md)
