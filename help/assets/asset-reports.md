@@ -6,9 +6,9 @@ feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
 source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '940'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 91%
 
 レポートの情報を使用して重要な成功指標を導き出し、企業やお客様における [!DNL Assets] の採用状況を測定することができます。
 
-[!DNL Assets] のレポートフレームワークでは、[!DNL Sling] ジョブを利用して、レポートの要求が順序立てて非同期的に処理されます。このフレームワークは大規模なリポジトリーに合わせて拡張することができます。非同期レポート処理により、レポートの生成速度と効率が向上します。
+[!DNL Assets] のレポートフレームワークでは、[!DNL Sling] ジョブを利用して、レポートの要求が順序立てて非同期的に処理されます。このフレームワークは大規模なリポジトリーに合わせて拡張することができます。レポートの非同期処理により、レポートの生成速度と効率が向上します。
 
-レポート管理インターフェイスは直感的で、アーカイブされたレポートにアクセスし、レポートの実行ステータス（成功、失敗、待機済み）を表示する詳細なオプションとコントロールが含まれます。
+レポート管理インターフェイスは直感的で、アーカイブされたレポートにアクセスし、レポートの実行ステータス（成功、失敗、待機中）を表示する、詳細なオプションとコントロールが含まれます。
 
 レポートが生成されると、インボックス通知<!-- through an email (optional) and -->で通知されます。それまでに生成されたすべてのレポートが示されるレポートリストページで、レポートの表示、ダウンロードまたは削除を行うことができます。
 
@@ -117,7 +117,7 @@ ht-degree: 91%
 
 ## レポートへのカスタム列の追加 {#add-custom-columns}
 
-次のレポートにカスタム列を追加して、カスタム要件に応じてさらに多くのデータを表示できます。
+また、次のレポートにカスタム列を追加して、独自の要件に応じてさらに多くのデータを表示できます。
 
 <!-- Remove download report.
 * Upload
@@ -171,7 +171,7 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 
 ## トラブルシューティング情報 {#tips-troubleshoot}
 
-* この [!UICONTROL ディスク使用量レポート] を生成せず、 [!DNL Dynamic Media]を使用する場合は、すべてのアセットが正しく処理されていることを確認します。 問題を解決するには、アセットを再処理し、レポートを再度生成します。
+* [!DNL Dynamic Media] を使用していて、[!UICONTROL ディスク使用量レポート]が生成されない場合は、すべてのアセットが正しく処理されていることを確認します。問題を解決するには、アセットを再処理し、レポートを再度生成します。
 
 <!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
 
@@ -196,11 +196,11 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
 * [アセットを翻訳](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットの検索](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットを検索](search-assets.md)
+* [接続されたアセット](use-assets-across-connected-assets-instances.md)
 * [メタデータスキーマ](metadata-schemas.md)
-* [アセットのダウンロード](download-assets-from-aem.md)
-* [メタデータの管理](manage-metadata.md)
+* [アセットをダウンロード](download-assets-from-aem.md)
+* [メタデータを管理](manage-metadata.md)
 * [検索ファセット](search-facets.md)
-* [コレクションの管理](manage-collections.md)
-* [一括メタデータ読み込み](metadata-import-export.md)
+* [コレクションを管理](manage-collections.md)
+* [メタデータの一括読み込み](metadata-import-export.md)
