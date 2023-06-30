@@ -7,9 +7,9 @@ feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
 source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2003'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 94%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 [!DNL Adobe Experience Manager Assets] では、あらゆるアセットのメタデータを保持します。したがって、アセットの分類と編成が容易にでき、特定のアセットを検索しやすくなります。メタデータ管理は、[!DNL Experience Manager Assets] にアップロードされるファイルからメタデータを抽出する機能と共に、クリエイティブワークフローに統合されます。アセットの任意のメタデータを保持して管理する機能によって、メタデータに基づいてアセットを自動的に編成および処理できます。
@@ -69,7 +69,7 @@ ht-degree: 94%
 * オーディオまたはビデオファイルのビットレート。
 * 画像の解像度（詳細レベル）。
 
-記述メタデータは、アセットの元となるビジネスなど、アプリケーションドメインに関係するメタデータです。 記述メタデータは、自動的には決定できません。 手動または半自動で作成されます。例えば、GPS 対応のカメラでは、緯度と経度を自動的に追跡し、画像に地理タグを追加できます。
+記述メタデータは、アセットの元となるビジネスなど、アプリケーションドメインに関係するメタデータです。記述メタデータは自動的に決定できません。手動または半自動で作成されます。例えば、GPS 対応のカメラでは、緯度と経度を自動的に追跡し、画像に地理タグを追加できます。
 
 記述メタデータ情報を手動で作成する場合のコストは高くなります。そのため、ソフトウェアシステムや組織間でのメタデータの交換を容易にするための基準が確立されています。[!DNL Experience Manager Assets] は、メタデータの管理に関連するすべての規格をサポートします。
 
@@ -105,13 +105,13 @@ ht-degree: 94%
 
 これらの ID3 タグに格納されたデータは、コンピューターまたはポータブル MP3 プレーヤーでデジタルオーディオファイルを再生すると表示されます。
 
-ID3 タグは、MP3 ファイル形式用に設計されています。 形式に関する追加情報：
+ID3 タグは、MP3 ファイル形式用に設計されています。形式に関する追加情報：
 
 * ID3 タグは、MP3 ファイルおよび mp3PRO ファイルで使用できます。
 * WAV ではタグが使用されません。
 * WMA には、オープンソースの実装を許可しない独自のタグがあります。
-* Ogg Vorbis は、Ogg コンテナに埋め込まれた Xiph コメントを使用します。
-* AAC では独自のタグ付け形式が使用されます。
+* Ogg Vorbis では、Ogg コンテナに埋め込まれた Xiph コメントを使用します。
+* AAC では独自のタグ形式を使用します。
 
 ### Exif {#exif}
 
@@ -146,7 +146,7 @@ Adobe Experience Manager Assets を使用すると、複数のアセットのメ
 
    >[!NOTE]
    >
-   >* [!UICONTROL プロパティ]ページで、選択をキャンセルすることでアセットリストからアセットを削除できます。アセットリストでは、デフォルトで選択されているすべてのアセットが表示されます。 リストから削除したアセットのメタデータは更新されません。
+   >* [!UICONTROL プロパティ]ページで、選択をキャンセルすることでアセットリストからアセットを削除できます。アセットリストは、デフォルトではすべてのアセットが選択されています。リストから削除するアセットのメタデータは更新されていません。
    >* アセットリストの上部で、「**[!UICONTROL タイトル]**」の横にあるチェックボックスをオンにして、アセットの選択とリストの消去を切り替えます。
 
 
@@ -253,14 +253,14 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * [アセットを翻訳](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットの検索](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットを検索](search-assets.md)
+* [接続されたアセット](use-assets-across-connected-assets-instances.md)
 * [アセットレポート](asset-reports.md)
 * [メタデータスキーマ](metadata-schemas.md)
-* [アセットのダウンロード](download-assets-from-aem.md)
+* [アセットをダウンロード](download-assets-from-aem.md)
 * [検索ファセット](search-facets.md)
-* [コレクションの管理](manage-collections.md)
-* [一括メタデータ読み込み](metadata-import-export.md)
+* [コレクションを管理](manage-collections.md)
+* [メタデータの一括読み込み](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
