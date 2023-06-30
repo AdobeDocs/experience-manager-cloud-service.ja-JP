@@ -6,9 +6,9 @@ feature: Asset Management,DRM
 role: User,Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
 source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1367'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ ht-degree: 93%
 
 1. メニューの「**[!UICONTROL 公開]**」を選択して、確認ダイアログを閉じます。
 
-1. 選択モードを終了します。 アセットの公開ステータスが、カード表示のアセットのサムネールの下部に表示されます。 リスト表示の「公開済み」列には、アセットが公開された時刻が表示されます。
+1. 選択モードを終了します。アセットの公開ステータスは、カード表示のアセットのサムネールの下部に表示されます。リスト表示では、「公開」列にアセットが公開された時間が表示されます。
 
 1. アセットの詳細ページを表示するには、[!DNL Assets] インターフェイスでアセットを選択し、「**[!UICONTROL プロパティ]**」をクリックします。
 
@@ -112,7 +112,7 @@ ht-degree: 93%
 
 1. レビュータスクでアセットを承認または拒否して、「**[!UICONTROL 完了]**」をクリックします。
 
-1. レビュータスクを作成したフォルダーに移動します。 承認または拒否したアセットのステータスがカード表示の下部に表示されます。リスト表示では、承認および有効期限のステータスが該当する列に表示されます。
+1. レビュータスクを作成するフォルダーに移動します。承認または拒否したアセットのステータスがカード表示の下部に表示されます。リスト表示では、承認および有効期限のステータスが該当する列に表示されます。
 
 1. アセットをステータスに基づいて検索するには、「**[!UICONTROL 検索]**」をクリックして検索バーを表示します。
 
@@ -132,9 +132,9 @@ DRM 機能は、[!DNL Assets] からライセンスの必要なアセットを�
 
 保護されたアセットを選択して「**[!UICONTROL ダウンロード]**」をクリックすると、ライセンスページが表示されるので、このページで使用許諾契約書に同意します。使用許諾契約に同意しない場合、「**[!UICONTROL ダウンロード]**」オプションは使用できません。
 
-保護されたアセットが複数含まれている場合は、一度に 1 つのアセットを選択し、使用許諾契約に同意して、アセットのダウンロードに進みます。
+選択した項目に保護されたアセットが複数含まれている場合、一度に 1 つずつアセットを選択し、使用許諾契約書に同意し、アセットのダウンロードに進みます。
 
-次のいずれかの条件が満たされた場合、アセットは保護されていると見なされます。
+アセットは、次のいずれかの条件が満たされた場合に保護されていると見なされます。
 
 * アセットのメタデータプロパティ `xmpRights:WebStatement` が、そのアセットの使用許諾契約書を含むページのパスを指している。
 * アセットのメタデータプロパティ `adobe_dam:restrictions` の値が、使用許諾契約書を指定する生の HTML である。
@@ -160,12 +160,12 @@ DRM 機能は、[!DNL Assets] からライセンスの必要なアセットを�
 * [アセットを翻訳](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットの検索](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットを検索](search-assets.md)
+* [接続されたアセット](use-assets-across-connected-assets-instances.md)
 * [アセットレポート](asset-reports.md)
 * [メタデータスキーマ](metadata-schemas.md)
-* [アセットのダウンロード](download-assets-from-aem.md)
-* [メタデータの管理](manage-metadata.md)
+* [アセットをダウンロード](download-assets-from-aem.md)
+* [メタデータを管理](manage-metadata.md)
 * [検索ファセット](search-facets.md)
-* [コレクションの管理](manage-collections.md)
-* [一括メタデータ読み込み](metadata-import-export.md)
+* [コレクションを管理](manage-collections.md)
+* [メタデータの一括読み込み](metadata-import-export.md)
