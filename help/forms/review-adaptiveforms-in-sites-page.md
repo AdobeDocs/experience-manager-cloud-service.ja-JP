@@ -1,69 +1,69 @@
 ---
-title: サイトページに埋め込まれた、または作成されたアダプティブFormsのレビューの作成と管理
+title: Sites ページに埋め込まれた、または作成されたアダプティブフォームのレビューの作成と管理
 seo-title: Review is a mechanism that allows reviewer to perform different tasks for adaptive forms using Assign Task step
-description: レビューとは、レビュー担当者がタスクの割り当て手順を使用してアダプティブフォームに対して様々なタスクを実行できるメカニズムです
+description: レビューとは、レビュー担当者がタスクの割り当て手順を使用して、アダプティブフォームに対して様々なタスクを実行できるメカニズムです
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 source-git-commit: daeb407e27b9f1d390fe40151ca16ec0196712e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '355'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
 
-# Site のページでFormsの手順を確認する {#review-step-forms-aem-sites-page}
+# サイトのページでの Forms に対する手順のレビュー {#review-step-forms-aem-sites-page}
 
-の使用 [ステップを割り当て](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html#assign-task-step) レビュー担当者は、AEMワークフローの送信済みフォームをレビューし、それに対してアクションを実行します。 タスクの割り当て手順を使用して送信済みフォームをレビューするには、次の手順に従います。
+AEM ワークフローの[割り当て手順](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ja#assign-task-step)を使用して、レビュー担当者は送信されたフォームをレビューし、それに対してアクションを実行します。タスクを割り当て手順を使用して送信されたフォームをレビューするには、次の手順に従います。
 
-1. [AEMワークフローの作成](#create-an-aem-workflow)
-1. [アダプティブフォームコンテナの送信アクションを設定する](#configure-submit-action)
-1. [レビュー後にアダプティブフォームを送信する](#submit-af-after-review)
+1. [AEM ワークフローを作成](#create-an-aem-workflow)
+1. [アダプティブフォームコンテナの送信アクションを設定](#configure-submit-action)
+1. [レビュー後のアダプティブフォームを送信](#submit-af-after-review)
 
-## AEMワークフローの作成 {#create-an-aem-workflow}
+## AEM ワークフローを作成 {#create-an-aem-workflow}
 
 1. オーサーインスタンスを編集モードで開きます。
-1. に移動します。 **[!UICONTROL ツール]** >  **[!UICONTROL ワークフロー]** >  **[!UICONTROL モデル]** > **[!UICONTROL 作成]** > **[!UICONTROL モデルを作成]**
-1. ワークフローのタイトルを指定し、 **[タスクを割り当て]** 手順
-1. タップ ![settings_icon](assets/settings_icon.png) をクリックします。 この **[!UICONTROL タスクを割り当て]** ダイアログが開きます。
-1. 開く [!UICONTROL フォームとドキュメント] タブと開く [!UICONTROL 事前入力済み] ドロップダウンして次を指定します。
+1. **[!UICONTROL ツール]**／**[!UICONTROL ワークフロー]**／**[!UICONTROL モデル]**／**[!UICONTROL 作成]**／**[!UICONTROL モデルを作成]**&#x200B;に移動します。
+1. ワークフローのタイトルを指定し、**[タスクを割り当て]**&#x200B;手順を追加します。
+1. アクションバーで ![settings_icon](assets/settings_icon.png) をタップします。**[!UICONTROL タスクを割り当て]**&#x200B;ダイアログが開きます。
+1. 「[!UICONTROL フォームとドキュメント]」タブを開き、[!UICONTROL 事前入力]ドロップダウンを開いて、次を指定します。
 
    * 次を使用して入力データファイルを選択
    * 次を使用して入力添付ファイルを選択
 
-   ![レビューステップ](/help/forms/assets/assigntask-review1.gif)
+   ![レビュー手順](/help/forms/assets/assigntask-review1.gif)
 
-1. 開く **[!UICONTROL 担当者]** タブと開く [!UICONTROL 事前入力済み] ドロップダウンで **[!UICONTROL 割り当てオプション]**:
+1. 「**[!UICONTROL 担当者]**」タブを開き、[!UICONTROL 事前入力]ドロップダウンを開いて、**[!UICONTROL 割り当てオプション]**&#x200B;を指定します。
 
-   ![レビューステップ](/help/forms/assets/review-assignstep.png)
+   ![レビュー手順](/help/forms/assets/review-assignstep.png)
 
 1. 「**[!UICONTROL 完了]**」をクリックして、変更を保存します。
 
-## 送信アクションの設定 {#configure-submit-action}
+## 送信アクションを設定 {#configure-submit-action}
 
 次に、サイトのページでアダプティブフォームコンテナコンポーネントの送信アクションを設定します。
 
 1. サイトのページに移動します。
-1. タップ ![settings_icon](assets/settings_icon.png) を作成します。 この **[!UICONTROL アダプティブフォームコンテナ]** ダイアログが開きます。
-1. を開きます。 **[!UICONTROL 送信]** タブと指定 **[!UICONTROL 送信アクション]** から [AEMワークフローを起動](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow)
+1. アダプティブフォームコンテナの ![settings_icon](assets/settings_icon.png) をタップします。**[!UICONTROL アダプティブフォームコンテナ]**&#x200B;ダイアログが開きます。
+1. 「**[!UICONTROL 送信]**」タブを開き、**[!UICONTROL 送信アクション]**&#x200B;から「[AEM ワークフローの呼び出し](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=ja#invoke-an-aem-workflow)」を指定します
 
 1. 「[完了]」をクリックして、設定を保存します。
 
 ![submissiontab-reviewstep](/help/forms/assets/submissiontab-reviewstep.gif)
 
-## レビュー後にアダプティブフォームを送信する {#submit-af-after-review}
+## レビュー後のアダプティブフォームの送信 {#submit-af-after-review}
 
-送信されたアダプティブフォームを確認するには、次の手順を実行します。
+送信されたアダプティブフォームをレビューし確認するには、次の手順を実行します。
 
-1. に移動します。 [!UICONTROL ツール] >  [!UICONTROL ワークフロー] >  [!UICONTROL インスタンス]
-1. インボックスに、インスタンスが作成中であることがわかります。
-1. インスタンスを選択し、 [!UICONTROL 開く].
+1. [!UICONTROL ツール]／[!UICONTROL ワークフロー]／[!UICONTROL インスタンス]に移動します
+1. インボックスを見ると、インスタンスが作成されていることがわかります。
+1. インスタンスを選択し、「[!UICONTROL 開く]」をクリックします。
 1. これで、送信されたフォームを確認できます。
 
 レビュー担当者は、次のように様々なアクションを実行します。
 
-* **送信**:レビュー担当者は、フォームに入力し、後で処理するために送信します。
-* **保存**:レビュー担当者は、フォームを送信せずに現在の状態で保存します。
-* **リセット**:レビュー担当者は、フォームに加えた変更をすべてクリアし、元の状態に戻します。
-* **委任**:レビュー担当者は、フォームの所有権を他のユーザーに転送して、さらなるアクションやレビューを実行します。
+* **送信**：レビュー担当者は、フォームに入力し、さらなる処理のために送信します。
+* **保存**：レビュー担当者は、フォームを送信せずに現在の状態で保存します。
+* **リセット**：レビュー担当者は、フォームに加えられた変更をすべてクリアし、元の状態に戻します。
+* **デリゲート**：レビュー担当者は、フォームの所有権を他のユーザーに転送して、さらなるアクションやレビューを実行します。
