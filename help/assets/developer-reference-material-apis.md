@@ -6,9 +6,9 @@ feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1899'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -214,7 +214,7 @@ aem-upload ライブラリとコマンドラインツールの両方で、[node-
 
 Adobe [!DNL Experience Manager] の以前のバージョンからアップグレードした場合は、アセットマイクロサービスを使用してアセットを処理できます。クラウドネイティブのアセットマイクロサービスは、設定と使用が簡単です。以前のバージョンの [!UICONTROL DAM アセットの更新]ワークフローで使用されるワークフロー手順の一部はサポートされていません。サポートされているクラスについて詳しくは、[Java API リファレンスか Javadoc](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) を参照してください。
 
-次の技術的ワークフローモデルは、アセットマイクロサービスに置き換わっているか、サポートされていません。
+次のテクニカルワークフローモデルは、アセットマイクロサービスに置き換わっているか、サポートされていません。
 
 * `com.day.cq.dam.cameraraw.process.CameraRawHandlingProcess`
 * `com.day.cq.dam.core.process.CommandLineProcess`
@@ -295,15 +295,15 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 * [アセットを翻訳](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットの検索](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットを検索](search-assets.md)
+* [接続されたアセット](use-assets-across-connected-assets-instances.md)
 * [アセットレポート](asset-reports.md)
 * [メタデータスキーマ](metadata-schemas.md)
-* [アセットのダウンロード](download-assets-from-aem.md)
-* [メタデータの管理](manage-metadata.md)
+* [アセットをダウンロード](download-assets-from-aem.md)
+* [メタデータを管理](manage-metadata.md)
 * [検索ファセット](search-facets.md)
-* [コレクションの管理](manage-collections.md)
-* [一括メタデータ読み込み](metadata-import-export.md)
+* [コレクションを管理](manage-collections.md)
+* [メタデータの一括読み込み](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 * [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)。
