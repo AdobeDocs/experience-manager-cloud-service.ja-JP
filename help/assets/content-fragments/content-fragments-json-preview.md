@@ -3,7 +3,7 @@ title: プレビュー - JSON 表現（アセット - コンテンツフラグ�
 description: AEM ヘッドレスソリューションの実装時にコンテンツフラグメントの JSON 表現を簡単にプレビューする方法について説明します。
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
 source-git-commit: 344d04eb18c100835b78fe59c909d92c1e42111b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '117'
 ht-degree: 100%
 
