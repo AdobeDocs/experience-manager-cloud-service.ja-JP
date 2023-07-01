@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 25689621ab24b6e14e7e865451ae53947a67d8d1
+source-git-commit: 5a37f237d04d19f3c4113c2ea3e37ab447bf3b0c
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 15%
+source-wordcount: '1372'
+ht-degree: 16%
 
 ---
 
@@ -113,15 +113,11 @@ Assets ビューで次の操作が可能になりました。 [複数値テキ�
 
 ### [!DNL Forms] で利用できる新機能 {#new-features-available-in-channel}
 
-* [AEM Page Editor 内のアダプティブForms](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md):AEMページエディターを使用して、複数のフォームをすばやく作成し、サイトページに追加できるようになりました。 この機能を使用すると、コンテンツ作成者は、動的な動作、検証、データ統合、レコードのドキュメントの生成、ビジネスプロセスの自動化など、アダプティブフォームコンポーネントの機能を利用して、Sites ページ内にシームレスなデータ取得エクスペリエンスを作成できます。 以下の操作を実行できます。
+* [AEM Page Editor およびエクスペリエンスフラグメント内のアダプティブForms](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md):AEMのページエディターとエクスペリエンスフラグメントを使用して、複数のフォームをすばやく作成し、AEM Sitesページに追加できるようになりました。 この機能を使用すると、コンテンツ作成者は、動的な動作、検証、データ統合、レコードのドキュメント生成、ビジネスプロセスの自動化など、アダプティブFormsコンポーネントの機能を利用して、Sites ページ内にシームレスなデータ取得エクスペリエンスを作成できます。
 
-   * フォームコンポーネントをAEM SitesエディターまたはエクスペリエンスフラグメントのアダプティブFormsコンテナコンポーネントにドラッグ&amp;ドロップして、アダプティブフォームを作成します。
-   * AEM Sitesエディター内でアダプティブFormsウィザードを使用すると、任意の Sites ページとは独立したフォームを作成して、自由に複数のページでそのようなフォームを再利用できます。
-   * 複数のフォームを Sites ページに追加し、ユーザーエクスペリエンスを合理化し、より柔軟に提供します。
-
-     >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
-
-* [Adobe Acrobat Sign Solutions for Government](/help/forms/adobe-sign-integration-adaptive-forms.md):AEM FormsはAdobe Acrobat Sign Solutionsと統合され、政府機関向けになりました。 この統合により、政府関連のアカウント（政府機関および機関）に対するアダプティブフォーム送信により、e-Signatures の高度なコンプライアンスとセキュリティを提供します。
+      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&amp;learn=on)
+  
+* [Adobe Acrobat Sign SolutionsをAEM Formsで使用（HIPPA 苦情）](/help/forms/adobe-sign-integration-adaptive-forms.md):AEM FormsはAdobe Acrobat Sign Solutionsと統合され、政府機関向けになりました。 この統合により、政府関連のアカウント（政府機関および機関）に対するアダプティブフォーム送信により、e-Signatures の高度なコンプライアンスとセキュリティを提供します。
 
   Adobe Acrobat Sign Solutions for Government との統合により、Adobeのパートナーや政府のお客様は、Adaptive Formsで最もミッションクリティカルで機密性の高い業務の一部に電子署名を使用できます。 このセキュリティの強化により、すべての電子署名が FedRAMP Moderate コンプライアンスに完全に準拠し、Adobeの政府のお客様に安心して対応できます。
 
@@ -129,19 +125,19 @@ Assets ビューで次の操作が可能になりました。 [複数値テキ�
 
   この機能は、OOTB エラーハンドラとの下位互換性のある標準ベースのエラー応答を導入し、柔軟性と制御性を高め、全体的なエラー処理機能を改善するのに役立ちます。
 
-* [フォームデータモデルの強化された認証方法](/help/forms/configure-data-sources.md):互換性のあるデータソースとAEM Formsに接続するためのクライアント資格情報ベースの認証が導入され、セキュリティが強化されました。 この機能強化により、データの保護を強化し、偽装やユーザーログインを必要としなくなりました。
+* [フォームデータモデルの強化された認証方法](/help/forms/configure-data-sources.md):AEM Forms（フォームデータモデル）を互換性のあるデータソースに接続するためのクライアント資格情報ベースの認証が導入され、セキュリティが強化されました。 この機能強化により、データの保護を強化し、偽装やユーザーログインを必要としなくなりました。
 
-* [繰り返し可能なセクションを持つアダプティブForms](/help/forms/create-forms-repeatable-sections.md):これで、 [アコーディオン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [ウィザード](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [パネル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)、および [水平タブ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) コアコンポーネントベースのアダプティブフォームのコンポーネントを使用して、繰り返し可能なセクションを作成します。
+* [繰り返し可能なセクションでのアダプティブFormsの作成](/help/forms/create-forms-repeatable-sections.md):これで、 [アコーディオン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [ウィザード](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [パネル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)、および [水平タブ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) コアコンポーネントベースのアダプティブフォームのコンポーネントを使用して、繰り返し可能なセクションを作成します。
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
   これらの繰り返し可能なセクションでは、フィールド数を固定せずに、エントリ数を無制限に指定できます。 これは、必要なデータインスタンスがあらかじめ不明な場合に役立ちます。 Formsのユーザーは、セクションを簡単に追加または削除できるので、フォームを様々なデータ入力シナリオに対応でき、同じデータに関する複数のオカレンスを簡単に収集できます。
 
-* **[Microsoft® SharePointとMicrosoft® OneDrive にアダプティブFormsを送信する](/help/forms/configuring-submit-actions.md)**:ビジネスユーザーの俊敏性を向上させ、Microsoft® SharePointサイトや OneDrive フォルダーなど、新しいフォームをすばやく起動し、送信されたデータを使用する毎日のツールに保存できるようにします。
+* **[Microsoft® SharePointとMicrosoft® OneDrive にアダプティブFormsを送信する](/help/forms/configuring-submit-actions.md)**:Microsoft® SharePoint Site やMicrosoft® OneDrive などの毎日のツールにアダプティブFormsデータを送信できるようになりました。
 
 ### ヘッドレスアダプティブフォーム早期導入者プログラム {#forms-early-adopter}
 
-用途 [ヘッドレスアダプティブForms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) 開発者が、従来のグラフィカルユーザーインターフェイスを使用するのではなく、API を使用してアクセスし、操作できるインタラクティブフォームを作成、公開、管理できるようにする。 ヘッドレスアダプティブフォームは以下の場合に役立ちます。
+用途 [ヘッドレスアダプティブForms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=jp) 開発者が、従来のグラフィカルユーザーインターフェイスを使用するのではなく、API を使用してアクセスし、操作できるインタラクティブフォームを作成、公開、管理できるようにする。 ヘッドレスアダプティブフォームは以下の場合に役立ちます。
 
 * 高品質のマルチチャネルフォームを好みのプログラミング言語で作成
 * デスクトップおよびモバイルアプリ、web サイト、チャットアプリケーションにフォームをネイティブに統合
