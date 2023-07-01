@@ -2,10 +2,10 @@
 title: エクスペリエンスフラグメント
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントを使用すると、エクスペリエンスの再利用性と柔軟性を高めることができます。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2052'
-ht-degree: 80%
+source-wordcount: '2046'
+ht-degree: 75%
 
 ---
 
@@ -37,7 +37,7 @@ Adobe Experience Manager as a Cloud Service 内では、エクスペリエンス
 エクスペリエンスフラグメントを使用しなければ、作成者はそのフラグメントをコピーして貼り付ける必要があります。これらのエクスペリエンスのコピー／貼り付けの作成と管理には時間がかかり、ユーザーエラーが発生しがちです。
 エクスペリエンスフラグメントは、コピー／貼り付けを不要にします。
 * ヘッドレス CMS の使用例をサポートする場合。
-作成者は AEM をオーサリングにのみ使用し、顧客への配信には使用しないようにします。サードパーティシステム／タッチポイントは、そのエクスペリエンスを使用してエンドユーザーに配信します。
+作成者は AEM をオーサリングにのみ使用し、顧客への配信には使用しないようにします。サードパーティのシステム/タッチポイントは、そのエクスペリエンスを消費し、エンドユーザーに配信します。
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Adobe Experience Manager as a Cloud Service 内では、エクスペリエンス
 >
 >エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
 >
->さらなる情報については、[AEM のコンテンツフラグメントとエクスペリエンスフラグメントについて](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ja#content-fragments)も参照してください。
+>詳しくは、 [AEMのコンテンツフラグメントとエクスペリエンスフラグメントについて](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ja#content-fragments).
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Adobe Experience Manager as a Cloud Service 内では、エクスペリエンス
 >
 >* `experience-fragments-editors`
 >
->問題が発生している場合は、システム管理者にお問い合わせください。
+>問題が発生している場合は、システム管理者に問い合わせてください。
 
 ## エクスペリエンスフラグメントを使用するタイミング {#when-should-you-use-experience-fragments}
 
@@ -145,7 +145,7 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 >
 >指定したテンプレートがアップグレード時に上書きされる可能性があるので、「**許可されたテンプレート**」をこの方法で変更することはお勧めしません。
 >
->このダイアログは、情報を提供する目的でのみ使用してください。
+>このダイアログボックスは、情報を提供する目的でのみ使用します。
 
 1. 必要な&#x200B;**エクスペリエンスフラグメント**&#x200B;コンソールに移動します。
 
@@ -422,7 +422,7 @@ URL の `.plain.` セレクターを使用すると、ブラウザーからプ�
 
 >[!NOTE]
 >
-ブラウザーから直接利用することもできますが、[主な目的は、他のアプリケーション（例えば、サードパーティ Web アプリ、カスタムモバイル実装など）が、URL のみを使用して、エクスペリエンスフラグメントのコンテンツに直接アクセスできるようにすることです。](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)
+これはブラウザーから直接入手できますが、 [主な目的は、他のアプリケーション（サードパーティの web アプリ、カスタムモバイル実装など）が URL のみを使用して、エクスペリエンスフラグメントのコンテンツに直接アクセスできるようにすることです](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## エクスペリエンスフラグメントの公開 {#publishing-experience-fragments}
 
@@ -432,7 +432,7 @@ URL の `.plain.` セレクターを使用すると、ブラウザーからプ�
 
 ## エクスペリエンスフラグメントの書き出し {#exporting-experience-fragments}
 
-デフォルトでは、エクスペリエンスフラグメントはHTML形式で配信されます。 AEM とサードパーティチャネルのどちらでも同じように使用できます。
+デフォルトでは、エクスペリエンスフラグメントはHTML形式で配信されます。 これは、AEMとサードパーティチャネルの両方で同様に使用できます。
 
 Adobe Targetに書き出す場合は、JSON も使用できます。 以下を参照してください。
 

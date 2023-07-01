@@ -2,9 +2,9 @@
 title: ローンチの編集
 description: ページ（またはページのセット）のローンチを作成した後、ページのローンチコピーのコンテンツを編集できます。
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '553'
 ht-degree: 73%
 
 ---
@@ -72,7 +72,7 @@ ht-degree: 73%
 
 >[!NOTE]
 >
->ローンチにページを追加するには、共通言語ルートの下に配置する必要があります。例：単一のサイト内。
+>ローンチにページを追加するには、共通言語ルートの下に配置する必要があります。つまり、単一のサイト内に存在します。
 
 ## Launch 設定の編集 {#editing-a-launch-configuration}
 

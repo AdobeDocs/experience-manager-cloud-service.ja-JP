@@ -2,10 +2,10 @@
 title: データ保護およびデータプライバシーに関する規制 - Adobe Experience Manager as a Cloud Service Sites の対応
 description: EU 一般データ保護規則（GDPR）やカリフォルニア州消費者プライバシー法など、データ保護およびデータプライバシーに関する様々な規制に対する Adobe Experience Manager as a Cloud Service Sites のサポートと、新しい AEM as a Cloud Service プロジェクトを実装する際にこれらの規制に準拠する方法について説明します。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 68%
+source-wordcount: '1025'
+ht-degree: 86%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 68%
 >
 >このドキュメントの内容は法的な助言にはならず、その代用になるものでもありません。
 >
->データ保護およびデータプライバシー規制に関するアドバイスについては、自社の法務部門にお問い合わせください。
+>データ保護およびデータプライバシー規制に関するアドバイスについては、お客様の企業の法務部門にお問い合わせください。
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ ht-degree: 68%
 
 Adobe Experience Manager as a Cloud Service Sites は、データのプライバシーと保護に関するコンプライアンス義務の遂行でお客様を支援する用意が整っています。このページでは、AEM Sites でこのような要求を処理する手順について説明します。プライベートデータの格納場所や、それらのデータを手動で、またはコードを使用して削除する方法について説明します。
 
-詳しくは、[アドビプライバシーセンター](https://www.adobe.com/jp/privacy.html)を参照してください。
+詳しくは、 [Adobeプライバシーセンター](https://www.adobe.com/jp/privacy.html).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Adobe Experience Manager as a Cloud Service Sites は、データのプライバ
 
 サイト上で訪問者の認証に使用されるユーザーアカウント、およびパブリッシュサーバー上の UGC コンテンツについては、[AEM の基盤に関するドキュメント](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)を参照してください。
 
-AEM Sites コンポーネントはデフォルトでは、訪問者から入力されたフォームデータをパブリッシュサーバーに保存しません。サードパーティのシステムまたは Adobe Campaign にデータを転送してさらに処理を行うことをお勧めします。
+AEM Sites コンポーネントはデフォルトでは、訪問者から入力されたフォームデータをパブリッシュサーバーに保存しません。データをさらに処理するために、サードパーティのシステムまたはAdobe Campaignにデータを転送することをお勧めします。
 
 ## オプトイン／オプトアウト {#opt-in-opt-out}
 
@@ -76,13 +76,13 @@ Adobe Experience Manager には、ユーザーのオプトイン／オプトア�
 
 AEM Sites には、Adobe Analytics On-demand Services 内の機能を使用した Analytics Foundation との統合（オプション）が含まれています。
 
-Adobe Analytics に関連するデータ主体からの要求の管理について詳しくは、[Adobe Analytics とデータ保護](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=ja)を参照してください。
+Adobe Analyticsに関するデータ主体リクエストの管理について詳しくは、 [Adobe Analyticsとデータプライバシー](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=ja).
 
 ## Personalization Foundation by Target {#personalization-foundation-by-target}
 
 AEM Sites には、Adobe Target On-demand Services 内の機能を使用した Personalization Foundation by Target との統合（オプション）が含まれています。
 
-Adobe Target に関連する データサブジェクトリクエストの管理についての詳細は、[Adobe Target - プライバシーと一般データ保護規則](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)を参照してください。
+Adobe Targetに関するデータ主体リクエストの管理について詳しくは、 [Adobe Target — プライバシーと一般データ保護規則](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=ja).
 
 ## ContextHub {#contexthub}
 
@@ -90,30 +90,30 @@ Adobe Target に関連する データサブジェクトリクエストの管理
 AEM provides an optional data layer with [ContextHub](/help/sites-developing/contexthub.md).
 -->
 
-AEM には、ContextHub を使用するオプションのデータレイヤーが用意されています。これにより、ブラウザーに訪問者固有のデータを保持し、ルールベースのパーソナライゼーションに使用できます。
+AEM には、ContextHub を使用するオプションのデータレイヤーが用意されています。これにより、ブラウザーに訪問者固有のデータが保持され、そのデータに基づいてルールベースのパーソナライズ機能が実行されます。
 
 この訪問者データはデフォルトでは AEM に格納されません。ブラウザー内でパーソナライゼーションに関する決定を行うためのルールが、AEM からデータレイヤーに送信されます。
 
 ### オプトイン／オプトアウトの実装 {#implementing-opt-in-opt-out}
 
-サイトの所有者は、次のガイドラインに従ってオプトアウトコンポーネントを実装する必要があります。
+サイト所有者は、次のガイドラインに従ってオプトアウトコンポーネントを実装する必要があります。
 
-以下のガイドラインでは、オプトインがデフォルトとして実装されています。 そのため、Web サイトの訪問者は、個人データがブラウザーの（クライアントサイド）永続ストレージに格納される前に、明確に同意する必要があります。
+以下のガイドラインでは、デフォルトでオプトインが実装されています。そのため、Web サイトの訪問者は、個人データがブラウザーの（クライアントサイド）永続ストレージに格納される前に、明確に同意する必要があります。
 
 * オプトアウトコンポーネントは、ContextHub コンポーネントを組み込むたびに必ず組み込んでください。
 * Web サイトのデータ保護およびプライバシーに関連する利用条件を Web サイトの訪問者に表示して、訪問者が以下を行えるようにする必要があります。
 
    * 同意
    * reject
-   * 以前の選択を変更する
+   * 以前の選択の変更
 
-* サイトの訪問者がサイトの利用条件に同意した場合は、ContextHub のオプトアウト Cookie を削除する必要があります。
+* サイト訪問者がサイトの利用条件に同意した場合は、ContextHub のオプトアウト cookie を削除する必要があります。
 
   ```
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
   ```
 
-* サイトの訪問者がサイトの利用条件に同意しない場合は、ContextHub オプトアウト Cookie を次のように設定する必要があります。
+* サイト訪問者がサイトの利用条件に同意しない場合は、ContextHub オプトアウト cookie を次のように設定する必要があります。
 
   ```
   ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
@@ -128,34 +128,34 @@ AEM には、ContextHub を使用するオプションのデータレイヤー�
 
 ### ContextHub の永続性のプレビュー {#previewing-persistence-of-contexthub}
 
-ContextHub で使用される永続性をプレビューするには、次の操作をおこないます。
+ContextHub を使用した永続性をプレビューするには、次の操作を行うことができます。
 
-* ブラウザーのコンソールを使用します。例：
+* ブラウザーのコンソールを使用する。例：
 
    * Chrome:
 
-      * 開発者ツール/アプリケーション/ストレージを開きます。
+      * 開発者ツール／アプリケーション／ストレージを選択
 
          * ローカルストレージ／（Web サイト）／ContextHubPersistence
-         * セッションストレージ/（Web サイト）/ContextHubPersistence
+         * セッションストレージ／（web サイト）／ContextHubPersistence
          * Cookie／（Web サイト）／SessionPersistence
 
    * Firefox:
 
-      * 開発者ツール/ストレージを開きます。
+      * 開発者ツール／ストレージを選択
 
          * ローカルストレージ／（Web サイト）／ContextHubPersistence
-         * セッションストレージ/（Web サイト）/ContextHubPersistence
+         * セッションストレージ／（web サイト）／ContextHubPersistence
          * Cookie／（Web サイト）／SessionPersistence
 
    * Safari:
 
-      * メニューバーで、環境設定/詳細設定/開発メニューを表示を開きます。
-      * 開発/ JavaScript コンソールを表示を開きます。
+      * メニューバーで、環境設定／詳細／開発者メニューを表示を選択
+      * 開発／JavaScript コンソールを表示を選択
 
-         * コンソール/ストレージ/ローカルストレージ/（Web サイト）/ContextHubPersistence
-         * コンソール/ストレージ/セッションストレージ/ （Web サイト）/ ContextHubPersistence
-         * コンソール/ストレージ/ Cookies / （Web サイト）/ ContextHubPersistence
+         * コンソール／ストレージ／ローカルストレージ／（web サイト）／ContextHubPersistence
+         * コンソール／ストレージ／セッションストレージ／（web サイト）／ContextHubPersistence
+         * コンソール／ストレージ／Cookie／（web サイト）／ContextHubPersistence
 
    * Internet Explorer:
 
@@ -165,7 +165,7 @@ ContextHub で使用される永続性をプレビューするには、次の操
          * `sessionStorage.getItem('ContextHubPersistence')`
          * `document.cookie`
 
-* ブラウザーのコンソールで ContextHub API を使用します。
+* ブラウザーのコンソールで ContextHub API を使用する。
 
    * ContextHub には、次のデータ永続性レイヤーが用意されています。
 
@@ -176,25 +176,25 @@ ContextHub で使用される永続性をプレビューするには、次の操
 
      ContextHub ストアは、使用する永続性レイヤーを定義します。これにより、永続性の現在の状態を表示するために、すべてのレイヤーを確認する必要があります。
 
-例えば、localStorage に格納されたデータを表示するには、次のようにします。
+例えば、localStorage に格納されているデータを表示するには、次のようにします。
 
-ContextHub で使用される永続性をプレビューするには、次の操作をおこないます。
+ContextHub を使用した永続性をプレビューするには、次の操作を行うことができます。
 
-* ブラウザーのコンソールを使用します。
+* ブラウザーのコンソールを使用する。
 
-   * Chrome — デベロッパーツール/アプリケーション/ストレージを開きます。
-
-      * ローカルストレージ／（Web サイト）／ContextHubPersistence
-      * セッションストレージ/（Web サイト）/ContextHubPersistence
-      * Cookie／（Web サイト）／SessionPersistence
-
-   * Firefox — デベロッパーツール/ストレージを開きます。
+   * Chrome - 開発者ツール／アプリケーション／ストレージを選択
 
       * ローカルストレージ／（Web サイト）／ContextHubPersistence
-      * セッションストレージ/（Web サイト）/ContextHubPersistence
+      * セッションストレージ／（web サイト）／ContextHubPersistence
       * Cookie／（Web サイト）／SessionPersistence
 
-* ブラウザーのコンソールで ContextHub API を使用します。
+   * Firefox - 開発者ツール／ストレージを選択
+
+      * ローカルストレージ／（Web サイト）／ContextHubPersistence
+      * セッションストレージ／（web サイト）／ContextHubPersistence
+      * Cookie／（Web サイト）／SessionPersistence
+
+* ブラウザーのコンソールで ContextHub API を使用する。
 
    * ContextHub には、次のデータ永続性レイヤーが用意されています。
 
@@ -205,18 +205,18 @@ ContextHub で使用される永続性をプレビューするには、次の操
 
      ContextHub ストアは、使用する永続性レイヤーを定義します。これにより、永続性の現在の状態を表示するために、すべてのレイヤーを確認する必要があります。
 
-例えば、localStorage に格納されたデータを表示するには、次のようにします。
+例えば、localStorage に格納されているデータを表示するには、次のようにします。
 
 ```
 var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.LOCAL });
 console.log(storage.getTree());
 ```
 
-### ContextHub の永続性のクリア {#clearing-persistence-of-contexthub}
+### ContextHub の永続性の削除 {#clearing-persistence-of-contexthub}
 
-ContextHub の永続性をクリアするには：
+ContextHub の永続性を削除するには、以下を実行します。
 
-* 現在読み込まれているストアの永続性をクリアするには：
+* 現在読み込まれているストアの永続性を削除するには、以下を実行します。
 
   ```
   // to be able to fully access persistence layer, Opt-Out must be turned off
@@ -229,7 +229,7 @@ ContextHub の永続性をクリアするには：
   ContextHub.resetAllStores();
   ```
 
-* 特定の永続性レイヤーをクリアするには：例えば、sessionStorage は次のようになります。
+* 特定の永続性レイヤーを削除するには、例えば、sessionStorage は次のようになります。
 
   ```
   var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
@@ -240,7 +240,7 @@ ContextHub の永続性をクリアするには：
   console.log(storage.getTree());
   ```
 
-* すべての ContextHub 永続性レイヤーをクリアするには、すべてのレイヤーに対して適切なコードを呼び出す必要があります。
+* すべての ContextHub 永続性レイヤーを削除するには、すべてのレイヤーに対して適切なコードを呼び出す必要があります。
 
    * `ContextHub.Utils.Persistence.Modes.LOCAL`（デフォルト）
    * `ContextHub.Utils.Persistence.Modes.SESSION`

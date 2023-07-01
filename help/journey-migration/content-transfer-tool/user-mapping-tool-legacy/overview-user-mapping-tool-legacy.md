@@ -4,7 +4,7 @@ description: ユーザーマッピングツールの概要（レガシー）
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 hide: true
 hidefromtoc: true
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 28%
@@ -19,7 +19,7 @@ ht-degree: 28%
 
 <!-- Alexandru: drafting this for now
 
-NOTE: "LEGACY" for user mapping includes everything before (i.e. not including) 2.0.16 of CTT.
+NOTE: "LEGACY" for user mapping includes everything before (that is, not including) 2.0.16 of CTT.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"

@@ -2,10 +2,10 @@
 title: サンドボックスプログラムの概要
 description: サンドボックスプログラムの概要と実稼動プログラムとの違いについて説明します。
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 82%
+source-wordcount: '475'
+ht-degree: 71%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 82%
 
 サンドボックスプログラムは、通常、トレーニング、デモの実行、イネーブルメントまたは概念実証（POC）の目的にかなうように作成されるので、ライブトラフィックを実行するためのものではありません。
 
-サンドボックスプログラムは、AEM Cloud Service で使用できる 2 種類のプログラムの 1 つで、もう 1 つは[実稼動プログラム](introduction-production-programs.md)です。プログラムタイプについて詳しくは、[プログラムとプログラムタイプについて](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)のドキュメントを参照してください。
+サンドボックスプログラムは、AEM Cloud Service で使用できる 2 種類のプログラムの 1 つで、もう 1 つは[実稼動プログラム](introduction-production-programs.md) 詳しくは、 [プログラムとプログラムの種類について](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) を参照してください。
 
 ## 自動作成 {#auto-creation}
 
@@ -49,7 +49,7 @@ ht-degree: 82%
 
 ### 高度なネットワークなし {#advanced-networking}
 
-[高度なネットワーク機能](/help/security/configuring-advanced-networking.md)（例えば、VPN のセルフサービスプロビジョニング、非標準ポート、専用のエグレス IP アドレスなど）は、サンドボックスプログラムでは使用できません。
+[高度なネットワーク機能](/help/security/configuring-advanced-networking.md) （例えば、VPN のセルフサービスプロビジョニング、非標準ポート、専用の出力 IP アドレスなど）は、サンドボックスプログラムでは使用できません。
 
 ### AEM の手動更新 {#updates}
 
@@ -58,9 +58,9 @@ AEM のアップデートは、サンドボックスプログラムに自動的�
 * 手動更新は、対象環境に適切に設定されたパイプラインがある場合にのみ実行できます。
 * 実稼働環境またはステージング環境のどちらか一方を手動で更新すると、もう一方が自動的に更新されます。実稼働とステージングの環境セットは、同じ AEM リリースに存在する必要があります。
 
-詳しくは、[AEM バージョンのアップデート](/help/implementing/deploying/aem-version-updates.md)のドキュメントを参照してください。
+詳しくは、 [AEMバージョンの更新](/help/implementing/deploying/aem-version-updates.md) を参照してください。
 
-環境を更新する方法については、[環境の更新](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)のドキュメントを参照してください。
+詳しくは、 [環境の更新](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) 環境を更新する方法を学ぶには、以下を参照してください。
 
 ### 休止と削除 {#hibernation}
 

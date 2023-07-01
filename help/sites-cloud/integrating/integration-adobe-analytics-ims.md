@@ -2,10 +2,10 @@
 title: Adobe Analytics との統合時に使用する IMS 設定
 description: Adobe Analytics との統合時に使用する IMS 設定について説明します
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 92%
+source-wordcount: '886'
+ht-degree: 91%
 
 ---
 
@@ -45,7 +45,7 @@ Analytics Standard API を使用して Adobe Experience Manager as a Cloud Servi
 1. AEM で、**ツール**&#x200B;メニューを開きます。
 1. **セキュリティ**&#x200B;セクションで、**Adobe IMS 設定**&#x200B;を選択します。
 1. **作成**&#x200B;を選択して、**Adobe IMS テクニカルアカウント設定**&#x200B;を開きます。
-1. **クラウド設定**&#x200B;の下のドロップダウンを使用して、**Adobe Analytics** を選択します。
+1. 以下のドロップダウンを使用 **クラウド設定**&#x200B;を選択します。 **Adobe Analytics**.
 1. **新しい証明書の作成**&#x200B;をアクティブにして、新しいエイリアスを入力します。
 1. 「**証明書の作成**」で確認します。
 

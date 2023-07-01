@@ -2,10 +2,10 @@
 title: パーソナライゼーションとコンテンツのターゲティング
 description: パーソナライズされたターゲットコンテンツを AEM で作成する方法について説明します。
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 566cd449c536de4179e32c94df90b46d61e0103a
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 98%
+source-wordcount: '1055'
+ht-degree: 97%
 
 ---
 
@@ -88,7 +88,7 @@ AEM のターゲティングモードを使用して、[ターゲットコンテ
 
 エクスペリエンスを構成するコンポーネントのグループセット。
 
-[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment)は、エクスペリエンスを作成するためのコンテンツと情報（スタイル設定など）で構成され、ページのオーサリング時に直接使用できます。これらは、AEM ページのサブセットと考えることができます。コンテンツ作成者は、Sites ページやサードパーティ製システムなどの複数のチャネルからコンテンツを再利用できます。
+[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment)は、エクスペリエンスを作成するためのコンテンツと情報（スタイル設定など）で構成され、ページのオーサリング時に直接使用できます。これらは、AEM ページのサブセットと考えることができます。コンテンツ作成者は、Sites ページやサードパーティ製システムを含む複数のチャネルをまたいでコンテンツを再利用できます。
 
 パーソナライゼーションの例では、タイトル、画像、説明およびコールトゥアクションボタンを組み合わせて、ティーザーエクスペリエンスを形成することができます。 エクスペリエンスフラグメントの使用は、Adobe Target パーソナライズ機能を利用する際の重要な部分を占めます。
 

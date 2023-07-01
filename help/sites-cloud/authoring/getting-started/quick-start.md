@@ -2,10 +2,10 @@
 title: ページのオーサリングのクイックスタートガイド
 description: ページコンテンツのオーサリングに初めて取り組む際に役立つ概要レベルのクイックガイドです。
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 62%
+source-wordcount: '1569'
+ht-degree: 60%
 
 ---
 
@@ -57,7 +57,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
 ページの検索には様々な特徴があります。移動や検索をおこなうには、次のようにします。
 
-1. （**グローバルナビゲーション**&#x200B;の「**サイト**」オプションを使用して）[サイト](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)コンソールを開きます。これは、Adobe Experience Manager リンク（左上）を選択するとトリガー（ドロップダウン）されます。
+1. を開きます。 **サイト** コンソール ( **サイト** オプション [グローバルナビゲーション](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) - Adobe Experience Managerリンク（左上）を選択するとトリガー（ドロップダウン）されます。
 
 1. 適切なページをタップまたはクリックしてツリーの下方向に移動します。ページリソースがどのように表されるかは、使用している表示（[カード、リスト、列](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)）によって異なります。
 
@@ -181,7 +181,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
       * 選択 **プレビュー** をクリックします。
 
-   * を使用して編集モードに戻る（または別のモードを選択する） **編集** ドロップダウンセレクター
+   * を使用して編集モードに戻る（または別のモードを選択する） **編集** ドロップダウンセレクターを使用します。
 
    >[!NOTE]
    >
@@ -270,7 +270,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 [ページのロック](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)によって、自分の作業中に他の作成者が作業するのを防ぐことができます。ロック（およびロック解除）アイコン／ボタンは次の場所にあります。
 
 * ツールバー（[ページが選択されている](#selecting-your-page-for-further-action)場合）
-* （ページの編集時）[ページ情報ドロップダウンメニュー](#editing-the-page-properties)
+* この [ページ情報ドロップダウンメニュー](#editing-the-page-properties) （ページの編集時）
 * （ページの編集時）ページツールバー（ページがロックされている場合）
 
 例えば、「ロック」アイコンは次のように表示されます。

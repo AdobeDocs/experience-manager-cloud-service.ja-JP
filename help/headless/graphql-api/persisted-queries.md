@@ -1,12 +1,12 @@
 ---
 title: 永続的な GraphQL クエリ
-description: Adobe Experience Manager as a Cloud Service で GraphQL クエリを永続化してパフォーマンスを最適化する方法を説明します。クライアントアプリケーションで HTTP GET メソッドを使用して永続的クエリをリクエストでき、応答を Dispatcher および CDN レイヤーにキャッシュできるので、最終的にクライアントアプリケーションのパフォーマンスが向上します。
+description: Adobe Experience Manager as a Cloud ServiceでGraphQLクエリを保持してパフォーマンスを最適化する方法を説明します。 クライアントアプリケーションで HTTP GET メソッドを使用して永続的クエリをリクエストでき、応答を Dispatcher および CDN レイヤーにキャッシュできるので、最終的にクライアントアプリケーションのパフォーマンスが向上します。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1681'
-ht-degree: 88%
+ht-degree: 83%
 
 ---
 
@@ -195,7 +195,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 `PERSISTENT_PATH` は、永続クエリが保存される場所への短縮パスです。
 
-1. 例えば、`wknd` は設定名で、`plain-article-query` は永続クエリの名前です。クエリを実行するには：
+1. 例： `wknd` は設定名で、 `plain-article-query` は、永続化されたクエリの名前です。 クエリを実行するには：
 
    ```shell
    $ curl -X GET \
@@ -227,7 +227,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 <AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
 ```
 
-例えば、次のクエリには、アクティビティ値に基づいてリストをフィルタリングするための変数 `activity` が含まれています。
+例えば、次のクエリには変数が含まれています `activity` アクティビティの値に基づいてリストをフィルターするには：
 
 ```graphql
 query getAdventuresByActivity($activity: String!) {
@@ -397,7 +397,7 @@ curl -u admin:admin -X POST \
 
 ## アプリで使用するクエリ URL のエンコード {#encoding-query-url}
 
-アプリケーションで使用するには、クエリ変数の構築時に使用される特殊文字（セミコロン（`;`）、等号（`=`）、スラッシュ（`/`））を、対応する UTF-8 エンコーディングで変換する必要があります。
+アプリケーションで使用する場合、クエリ変数を構築する際に使用される特殊文字 ( セミコロン (`;`)，等号 (`=`)、スラッシュ `/`) は、対応する UTF-8 エンコーディングを使用するように変換する必要があります。
 
 次に例を示します。
 

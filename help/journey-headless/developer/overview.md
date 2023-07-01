@@ -3,10 +3,10 @@ title: AEM ヘッドレス CMS デベロッパージャーニー
 description: Adobe Experience Manager（AEM）をヘッドレス CMS として使用したヘッドレス開発について説明します。コンテンツモデル、コンテンツフラグメント、GraphQL API などの機能を使用してヘッドレスなコンテンツ配信を強化する方法について説明します。
 landing-page-description: ヘッドレスコンテンツの配信と実装について理解します。企業内での戦略の策定について詳しく説明します。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 98%
+source-wordcount: '1082'
+ht-degree: 94%
 
 ---
 
@@ -89,7 +89,7 @@ AEM のヘッドレス実装では、コンテンツフラグメントモデル�
 
 AEM の強力な機能の連携の仕組みについて詳しくは、次に示すその他のジャーニーを参照してください。
 
-* [AEM ヘッドレスチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja) - 実践を通して学びたい場合や、AEM の既存の知識がある場合は、API とフレームワーク別に整理された実践チュートリアルを利用してください。このチュートリアルでは、AEM ヘッドレスに基づくアプリケーションの作成と使用の詳細を紹介しています。
+* [AEMヘッドレスチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja) - AEMに関する既存の知識を持ち、やって学びたい場合は、AEM Headless で構築されたアプリケーションの作成と使用を検討する、API とフレームワーク別に整理された実践チュートリアルを利用してください。
 * [AEM ヘッドレス翻訳ジャーニー](/help/journey-headless/translation/overview.md) - このドキュメントジャーニーでは、ヘッドレステクノロジー、AEM によるヘッドレスコンテンツの提供方法、ヘッドレスコンテンツの翻訳方法について幅広く理解できます。
 * [ヘッドレスオーサリングジャーニー](/help/journey-headless/author/overview.md) - AEM の強力で柔軟なヘッドレス機能とその能力および初めてのヘッドレスプロジェクトでコンテンツをモデル化する方法を説明するガイド付きジャーニーは、ここから始めてください。
 * [ヘッドレスアーキテクトジャーニー](/help/journey-headless/architect/overview.md) - Adobe Experience Manager as a Cloud Service の強力で柔軟なヘッドレス機能と、プロジェクトのコンテンツをモデル化する方法の入門的解説が必要であれば、ここから始めてください。

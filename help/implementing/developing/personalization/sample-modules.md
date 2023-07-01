@@ -2,7 +2,7 @@
 title: ContextHub UI モジュールタイプのサンプル
 description: ContextHub には、ソリューションで使用できるいくつかのサンプル UI モジュールが用意されています
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 58%

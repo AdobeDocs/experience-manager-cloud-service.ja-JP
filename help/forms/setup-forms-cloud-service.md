@@ -2,10 +2,10 @@
 title: ' [!DNL AEM Forms]  as a Cloud Service 環境の設定方法 '
 description: ' [!DNL AEM Forms]  as a Cloud Service 環境のセットアップと設定方法の説明'
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 4d91808aa46cf34772a88a2864c1e3acf27102f7
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 95%
+source-wordcount: '613'
+ht-degree: 91%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 95%
 
 * **Forms 開発者**：Forms 開発者は、カスタムフォームソリューションを開発します。Forms 開発者は、通常、カスタムコンポーネント、AEM ワークフロー、事前入力サービスなどのバックエンド開発を担当します。
 
-* **AEM 管理者**：AEM 管理者は、ユーザーの設定、環境の堅牢化、データソースの設定、メールの設定、サードパーティ製ソフトウェアなど、全体的な設定を支援します。AEM 管理者は、Adobe Analytics、Adobe Target、Adobe Sign との統合なども支援します。
+* **AEM administrator**:AEM管理者は、ユーザーの設定、環境の強化、データソースの設定、E メールの設定、サードパーティのソフトウェアの設定など、全体的な設定に役立ちます。 AEM 管理者は、Adobe Analytics、Adobe Target、Adobe Sign との統合なども支援します。
 
 * **エンドユーザー**：エンドユーザーは、公開されたフォームとやり取りして送信し、送信されたフォームに署名し、送信された申請を Web ポータル経由でトラックし、パーソナライズされたコミュニケーションを受信します。
 

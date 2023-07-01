@@ -2,10 +2,10 @@
 title: コードのデプロイ
 description: AEM as a Cloud Service の Cloud Manager パイプラインを使用してコードをデプロイする方法を説明します。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 94%
+source-wordcount: '1189'
+ht-degree: 91%
 
 ---
 
@@ -57,9 +57,9 @@ _コードスキャン、機能テスト、UI テスト、エクスペリエン�
 
 * **検証** - このステップでは、現在使用可能なリソースを使用するようにパイプラインが設定されていることを確認します。例えば、設定済みのブランチが存在し、環境が使用可能であることをテストします。
 * **ビルドテストとユニットテスト - このステップでは、コンテナ化されたビルドプロセスを実行します。**
-   * ビルド環境について詳しくは、[ビルド環境の詳細](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)を参照してください。
+   * ビルド環境について詳しくは、「[ビルド環境の詳細](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)」を参照してください。
 * **コードスキャン** - このステップでは、アプリケーションコードの品質を評価します。
-   * テストプロセスについて詳しくは、[コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)を参照してください。
+   * テストプロセスの詳細については、「[コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)」を参照してください。
 * **ビルドイメージ** - このプロセスでは、ビルドステップで生成されたコンテンツおよび Dispatcher パッケージを Docker イメージと Kubernetes 設定に変換します。
 * **ステージにデプロイ** - [ステージテストフェーズ](#stage-testing)に備えて、イメージがステージング環境にデプロイされます。
 
@@ -70,20 +70,20 @@ _コードスキャン、機能テスト、UI テスト、エクスペリエン�
 **ステージテスト**&#x200B;フェーズには、以下のステップが含まれます。
 
 * **製品機能テスト** - ステージング環境に照らして実行されるテストを Cloud Manager パイプラインで実行します。
-   * 詳しくは、[製品機能テスト](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)を参照してください。
+   * 詳しくは、 [製品機能テスト](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) を参照してください。
 
 * **カスタム機能テスト** - パイプラインのこのステップは常に実行され、スキップできません。ビルドでテスト JAR が生成されない場合、テストはデフォルトで合格します。
-   * 詳しくは、[カスタム機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)を参照してください。
+   * 詳しくは、 [カスタム機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) を参照してください。
 
 * **カスタム UI テスト** - このステップは、カスタムアプリケーション用に作成された UI テストを自動的に実行するオプション機能です。
    * UI テストは、言語とフレームワークの幅広い選択肢（Java と Maven、Node と WebDriver.io、Selenium に基づいて構築されたその他のフレームワークとテクノロジーなど）を可能にするために Docker イメージにパッケージ化された Selenium ベースのテストです。
-   * 詳しくは、[カスタム UI テスト](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)を参照してください。
+   * 詳しくは、 [カスタム UI テスト](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) を参照してください。
 
 * **エクスペリエンス監査** - パイプラインのこのステップは常に実行され、スキップできません。実稼動パイプラインの実行時に、チェックを実行するカスタム機能テストの後に、エクスペリエンス監査ステップが組み込まれます。
    * 設定されたページがサービスに送信され、評価されます。
    * 結果は情報提供であり、スコアおよび現在のスコアと以前のスコア間の変化を示します。
    * このインサイトは、現在のデプロイメントで回帰が導入されたかどうかを判断するのに役立ちます。
-   * 詳しくは、[エクスペリエンス監査結果について](/help/implementing/cloud-manager/experience-audit-testing.md)を参照してください。
+   * 詳しくは、 [エクスペリエンス監査結果について](/help/implementing/cloud-manager/experience-audit-testing.md) を参照してください。
 
 ![ステージテスト](assets/stage-testing.png)
 
@@ -121,7 +121,7 @@ _コードスキャン、機能テスト、UI テスト、エクスペリエン�
 
 ## デプロイメントプロセス {#deployment-process}
 
-Cloud Service のすべてのデプロイメントでは、ダウンタイムをなくすために、ローリングプロセスに従います。詳しくは、[ローリングデプロイメントの仕組み](/help/implementing/deploying/overview.md#how-rolling-deployments-work)を参照してください。
+Cloud Service のすべてのデプロイメントでは、ダウンタイムをなくすために、ローリングプロセスに従います。詳しくは、 [ローリングデプロイメントの仕組み](/help/implementing/deploying/overview.md#how-rolling-deployments-work) を参照してください。
 
 >[!NOTE]
 >
@@ -156,7 +156,7 @@ Cloud Service のすべてのデプロイメントでは、ダウンタイムを
 
 再実行をトリガーするには、実稼動デプロイメントステップの状態に表示されている HAL リンク &lt;（<https://ns.adobe.com/adobecloud/rel/pipeline/reExecute>）> に対して PUT リクエストを行う必要があります。このリンクが存在する場合は、そのステップから実行を再開できます。存在しない場合は、そのステップから実行を再開することはできません。最初のリリースでは、このリンクは実稼動デプロイメントステップにのみ存在しますが、今後のリリースでは、他のステップからのパイプラインの開始がサポートされる可能性があります。例：
 
-```Javascript
+```JavaScript
  {
   "_links": {
     "https://ns.adobe.com/adobecloud/rel/pipeline/logs": {

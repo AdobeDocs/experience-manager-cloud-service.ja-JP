@@ -2,10 +2,10 @@
 title: コンテンツフラグメントの管理（アセット - コンテンツフラグメント）
 description: ヘッドレスコンテンツの基礎となる AEM コンテンツフラグメントを Assets コンソールを使用して管理する方法について説明します。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 94%
+source-wordcount: '1755'
+ht-degree: 88%
 
 ---
 
@@ -129,7 +129,7 @@ ht-degree: 94%
 
 >[!CAUTION]
 >
->コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
+>コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者に問い合わせてください。
 
 1. **Assets** コンソールを使用して、コンテンツフラグメントの場所に移動します。
 1. 次のいずれかの方法で、フラグメントを編集用に開きます。
@@ -217,7 +217,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
   >[!CAUTION]
   >
-  >コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
+  >コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者に問い合わせてください。
 
   >[!NOTE]
   >
@@ -225,13 +225,13 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
   >[!CAUTION]
   >
-  >これらの操作では、変更を保存するだけでなく、参照もすべて更新し、Dispatcher が必要に応じてフラッシュされます。これらの変更の処理には時間がかかる場合があります。このため、大きなシステムや複雑なシステム、高負荷のシステムのパフォーマンスに影響することがあります。
+  >これらの操作では、変更を保存するだけでなく、参照もすべて更新し、Dispatcher が必要に応じてフラッシュされます。これらの変更の処理には時間がかかる場合があります。この時間により、大規模/複雑/負荷の高いシステムにパフォーマンスが影響を与える可能性があります。
   >
-  >「**保存して閉じる**」を使用する際はこの点に留意し、フラグメントエディターをすぐに開いて、さらに変更を加え保存してください。
+  >を使用する際は、次のプロセスに留意してください。 **保存して閉じる** その後、フラグメントエディターにすばやく戻って、さらに変更を加えて保存します。
 
 * **閉じる**
 
-  最新の変更（前回の「**保存**」操作以降に行った変更）を保存せずにエディターを終了します。
+  最新の変更 ( つまり、最後の **保存**) をクリックします。
 
 コンテンツフラグメントを編集するとき、AEM によって自動的にバージョンが作成されます。これにより、（保存せずに「**閉じる**」を使用して）変更内容を取り消した場合でも、以前のコンテンツを復元できるようになります。
 
@@ -262,7 +262,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## コンテンツとフラグメントの関連付け {#associating-content-with-your-fragment}
 
-フラグメントに[コンテンツを関連付ける](/help/assets/content-fragments/content-fragments-assoc-content.md)こともできます。これにより関連性を付加して、フラグメントをコンテンツページに追加するときに、アセット（画像など）を（オプションで）フラグメントと一緒に使用できるようになります。
+フラグメントに[コンテンツを関連付ける](/help/assets/content-fragments/content-fragments-assoc-content.md)こともできます。これにより、アセット（画像）をフラグメントと共に（オプションで）コンテンツページに追加する際に使用できるようにする接続が提供されます。
 
 ## フラグメントのメタデータ（プロパティ）の表示と編集 {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 

@@ -2,10 +2,10 @@
 title: ContextHub の診断
 description: ContextHub には、ContextHub フレームワークの概要を確認できる診断ページがあります
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 58%
+source-wordcount: '438'
+ht-degree: 50%
 
 ---
 
@@ -52,8 +52,8 @@ Clientlibs セクションには、ContextHub によって読み込まれたす�
 URL セクションには、次の ContextHub 機能へのリンクが含まれます。
 
 * **設定エディター**：ストア、UI モードおよび UI モジュールを設定できる [ContextHub 設定ページ](configuring-contexthub.md)を開きます。
-* **ContextHub モジュールの設定**：`/etc/cloudsettings/default/contexthub.config.kernel.js` ファイルを開きます。このファイルには、ContextHub ストア設定の JavaScript オブジェクト表現が格納されています。
-* **ContextHub UI の設定**：`/etc/cloudsettings/default/contexthub.config.ui.js` ファイルを開きます。このファイルには、ContextHub UI モード設定の JavaScript オブジェクト表現が格納されています。
+* **ContextHub モジュールの設定：** を開きます。 `/etc/cloudsettings/default/contexthub.config.kernel.js` ファイル。ContextHub ストア設定の JavaScript オブジェクト表現を格納します。
+* **ContextHub UI の設定：** を開きます。 `/etc/cloudsettings/default/contexthub.config.ui.js` ファイル。ContextHub UI モード設定の JavaScript オブジェクト表現を含みます。
 * **kernel.js**：`/etc/cloudsettings/default/contexthub.kernel.js` ファイルを開きます。このファイルには、ContextHub フレームワークおよびセグメントエンジン、ストアタイプを実装するクライアントライブラリのソースコードが格納されています。
 * **ui.js**：`/etc/cloudsettings/default/contexthub.ui.js` ファイルを開きます。このファイルには、ContextHub UI および UI モジュールタイプを実装するクライアントライブラリのソースコードが格納されています。
 * **style.css**：`/etc/cloudsettings/default/contexthub.styles.css` ファイルを開きます。このファイルには、ContextHub UI および UI モジュールの CSS スタイルが格納されています。

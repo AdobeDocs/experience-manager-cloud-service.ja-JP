@@ -2,10 +2,10 @@
 title: CSV ファイルへの書き出し
 description: ページに関する情報をローカルシステムの CSV ファイルに書き出す
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 90%
+source-wordcount: '198'
+ht-degree: 85%
 
 ---
 
@@ -48,9 +48,9 @@ CSV の書き出しファイルを作成するには、次の手順を実行し�
 
 1. **サイト**&#x200B;コンソールを開き、必要に応じて必要な場所まで移動します。
    * （リスト表示で）**サイト**&#x200B;コンソールを参照すると、「**CSV レポート**」オプションを使用できます。
-   * これは、「**作成**」ドロップダウンメニューのオプションです。
+   * これは、 **作成** ドロップダウンメニュー：
 
-      ![CSV 作成オプション](/help/sites-cloud/authoring/assets/csv-create.png)
+     ![CSV 作成オプション](/help/sites-cloud/authoring/assets/csv-create.png)
 
 1. ツールバーの「**作成**」をクリックし、「**CSV レポート**」を選択してウィザードを開きます。
 

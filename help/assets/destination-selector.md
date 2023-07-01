@@ -3,10 +3,10 @@ title: AEM as a Cloud Serviceの宛先セレクター
 description: AEMの宛先セレクターを使用して、元のアセットのコピーとして使用できるアセットを表示および選択します。
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1909'
-ht-degree: 3%
+source-wordcount: '1911'
+ht-degree: 35%
 
 ---
 
@@ -21,8 +21,8 @@ Micro-Frontend ユーザーインターフェイスは、宛先セレクター�
 
 宛先セレクターには、次のような多くの利点があります。
 
-* Vanilla JavaScript ライブラリを使用した、任意のAdobeまたは非Adobeアプリケーションとの簡単な統合。
-* 宛先セレクターパッケージの更新が、アプリケーションで使用可能な宛先セレクターに自動的にデプロイされるので、管理が容易です。 最新の変更を読み込むためにアプリケーション内で必要な更新はありません。
+* Vanilla JavaScript ライブラリを使用して、あらゆるアドビアプリケーションまたはアドビ以外のアプリケーションと簡単に統合できます。
+* 宛先セレクターパッケージの更新が、アプリケーションで使用可能な宛先セレクターに自動的にデプロイされるので、管理が容易です。 最新の修正内容を読み込むために、アプリケーション内でアップデートを行う必要がありません。
 * アプリケーション内での宛先セレクターの表示を制御するプロパティが使用できるので、カスタマイズが容易です。
 * フルテキスト検索を使用して、フォルダーにすばやく移動し、アプリケーションからアセットをアップロードします。
 * フォルダーを作成し、昇順または降順でフォルダーを並べ替え、リスト、グリッド、ギャラリー、ウォーターフォールの各表示でフォルダーを表示する機能。
@@ -37,21 +37,21 @@ Micro-Frontend ユーザーインターフェイスは、宛先セレクター�
 
 ## Vanilla JS を使用した宛先セレクターの統合 {#integration-with-vanilla-js}
 
-任意の [!DNL Adobe] または、 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] リポジトリーを作成し、アプリケーション内からアセットを選択します。
+あらゆる [!DNL Adobe] アプリケーションまたはアドビ以外のアプリケーションを [!DNL Experience Manager Assets] as a [!DNL Cloud Service] リポジトリと統合し、アプリケーション内からアセットを選択できます。
 
 統合は、宛先セレクターパッケージを読み込み、Vanilla JavaScript ライブラリを使用して Assets as a Cloud Serviceに接続することでおこなわれます。 次を編集する必要があります： `index.html` またはアプリケーション内の適切なファイルを次の場所に置き換えます。
-* 認証の詳細を定義
-* Assets as a Cloud Serviceリポジトリへのアクセス
+* 認証の詳細を定義する
+* Assets as a Cloud Service リポジトリにアクセスする
 * 宛先セレクターの表示プロパティの設定
 
-次の場合、一部の IMS プロパティを定義せずに認証を実行できます。
+次の場合は、一部の IMS プロパティを定義せずに認証を実行できます。
 
-* 統合中の [!DNL Adobe] 適用対象 [統合シェル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
-* 認証用に既に IMS トークンが生成されています。
+* [統合シェル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=ja)の [!DNL Adobe] アプリケーションを統合している場合。
+* 認証用に既に IMS トークンが生成されている場合。
 
 ## 前提条件 {#prerequisites}
 
-前提条件を `index.html` ファイル、またはアプリケーション実装内の類似のファイル。 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] リポジトリ。 前提条件は次のとおりです。
+アプリケーション実装内の `index.html` ファイルまたは同様のファイルで前提条件を定義して、[!DNL Experience Manager Assets] as a [!DNL Cloud Service] リポジトリにアクセスするための認証の詳細を定義します。前提条件は次のとおりです。
 * imsOrg
 * imsToken
 * apikey
@@ -60,7 +60,7 @@ Micro-Frontend ユーザーインターフェイスは、宛先セレクター�
 
 宛先セレクターは、両方の ESM CDN から使用できます ( 例： [esm.sh](https://esm.sh/)/[スキーパック](https://www.skypack.dev/)) および [UMD](https://github.com/umdjs/umd) バージョン。
 
-を使用しているブラウザーでは、 **UMD バージョン** （推奨）:
+**UMD バージョン**&#x200B;を使用しているブラウザー（推奨）：
 
 ```
 <script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
@@ -70,7 +70,7 @@ Micro-Frontend ユーザーインターフェイスは、宛先セレクター�
 </script>
 ```
 
-ブラウザーで `import maps` を使用したサポート **ESM CDN バージョン**:
+**ESM CDN バージョン**&#x200B;を使用している `import maps` 対応ブラウザー：
 
 ```
 <script type="module">
@@ -78,7 +78,7 @@ Micro-Frontend ユーザーインターフェイスは、宛先セレクター�
 </script>
 ```
 
-次を使用して Deno/Webpack Module Federation に **ESM CDN バージョン**:
+**ESM CDN バージョン**&#x200B;を使用している Deno/Webpack Module Federation：
 
 ```
 import { DestinationSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
@@ -123,13 +123,13 @@ interface SelectedDestination {
 
 | プロパティ | タイプ | 説明 |
 |---|---|---|
-| *repo:repositoryId* | 文字列 | アセットが保存されるリポジトリの一意の識別子。 |
+| *repo:repositoryId* | 文字列 | アセットが保存されるリポジトリの一意の ID。 |
 | *repo:id* | 文字列 | アセットの一意の ID。 |
 | *repo:assetClass* | 文字列 | アセットの分類（例：画像、ビデオ、ドキュメント）。 |
-| *repo:name* | 文字列 | アセットの名前（ファイル拡張子を含む）。 |
+| *repo:name* | 文字列 | ファイル拡張子を含むアセットの名前。 |
 | *repo:size* | 数値 | アセットのサイズ（バイト単位）。 |
 | *repo:path* | 文字列 | リポジトリ内のアセットの場所。 |
-| *repo:incestors* | `Array<string>` | リポジトリ内のアセットの上位項目の配列。 |
+| *repo:ancestors* | `Array<string>` | リポジトリ内のアセットの上位項目の配列。 |
 | *repo:state* | 文字列 | リポジトリ内のアセットの現在の状態（アクティブ、削除など）。 |
 | *repo:createdBy* | 文字列 | アセットを作成したユーザーまたはシステム。 |
 | *repo:createDate* | 文字列 | アセットが作成された日時。 |
@@ -144,7 +144,7 @@ interface SelectedDestination {
 
 この例では、 [!DNL Adobe] 統合シェルの下のアプリケーション、または既に `imsToken` 認証用に生成されました。
 
-を使用して、宛先セレクターパッケージをコードに含めます。 `script` タグ、 _6～15 行目_ 以下の例の スクリプトが読み込まれると、 `PureJSSelectors` グローバル変数は使用できます。 宛先セレクターの定義 [プロパティ](#destination-selector-properties) に示すように _16～23 行_. この `imsOrg` および `imsToken` プロパティは、どちらも非 SUSI フローでの認証に必要です。 この `handleSelection` プロパティは、選択したアセットを処理するために使用されます。 宛先セレクターをレンダリングするには、 `renderDestinationSelector` ～で述べられているように機能する _17 行目_. 宛先セレクターが `<div>` コンテナ要素 ( _行 21 および 22_.
+を使用して、宛先セレクターパッケージをコードに含めます。 `script` タグ、 _6～15 行目_ 以下の例の スクリプトが読み込まれると、 `PureJSSelectors` グローバル変数は使用できます。 宛先セレクターの定義 [プロパティ](#destination-selector-properties) に示すように _16～23 行_. `imsOrg` プロパティと `imsToken` プロパティは、いずれも非 SUSI フローでの認証に必要です。`handleSelection` プロパティは、選択したアセットを処理するために使用されます。宛先セレクターをレンダリングするには、 `renderDestinationSelector` ～で述べられているように機能する _17 行目_. 宛先セレクターが `<div>` コンテナ要素 ( _行 21 および 22_.
 
 以下の手順に従うことで、宛先セレクターを SUSI 以外のフローで [!DNL Adobe] アプリケーション。
 
@@ -185,12 +185,12 @@ Destination Selector のプロパティを使用して、Destination Selector �
 
 | プロパティ | タイプ | 必須 | デフォルト | 説明 |
 |---|---|---|---|---|
-| *imsOrg* | 文字列 | はい | | プロビジョニング中に割り当てられるAdobeIdentity Management System(IMS)ID [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 組織の この `imsOrg` キーは、アクセスする組織がAdobe IMS中かどうかを認証するために必要です。 |
-| *imsToken* | 文字列 | いいえ | | 認証に使用される IMS ベアラートークン。 `imsToken` は、SUSI フローを使用する場合は必須ではありません。 ただし、非 SUSI フローを使用する場合は必須です。 |
-| *apiKey* | 文字列 | いいえ | | AEM Discovery サービスへのアクセスに使用する API キー。 `apiKey` は、SUSI フローを使用する場合は必須ではありません。 ただし、SUSI 以外のフローでは必要です。 |
-| *rootPath* | 文字列 | いいえ | /content/dam/ | 宛先セレクターにアセットが表示されるフォルダーパス。 `rootPath` また、カプセル化の形で使用することもできます。 例えば、次のパスを指定すると、 `/content/dam/marketing/subfolder/`の場合、宛先セレクターを使用すると、親フォルダーをトラバースできず、子フォルダーのみが表示されます。 |
-| *hasMore* | ブール値 | いいえ | | アプリケーションに表示するコンテンツが増えたら、このプロパティを使用して、コンテンツを読み込んでアプリケーションに表示するローダーを追加できます。 コンテンツの読み込みが進行中であることを示すインジケーターです。 |
-| *orgName* | ブール値 | いいえ | | AEMに関連付けられている組織の名前（おそらく orgID）です。 |
+| *imsOrg* | 文字列 | はい | | [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] を組織にプロビジョニングする場合に割り当てられる Adobe Identity Management System（IMS）の ID です。この `imsOrg` キーは、アクセスする組織がAdobe IMS中かどうかを認証するために必要です。 |
+| *imsToken* | 文字列 | いいえ | | 認証に使用される IMS ベアラートークンです。`imsToken` は、SUSI フローを使用する場合は必須ではありません。 ただし、非 SUSI フローを使用する場合は必須です。 |
+| *apiKey* | 文字列 | いいえ | | AEM Discovery サービスへのアクセスに使用する API キーです。`apiKey` は、SUSI フローを使用する場合は必須ではありません。 ただし、SUSI 以外のフローでは必要です。 |
+| *rootPath* | 文字列 | いいえ | /content/dam/ | 宛先セレクターにアセットが表示されるフォルダーパス。 `rootPath` はカプセル化の形式でも使用できます。例えば、次のパスの場合、 `/content/dam/marketing/subfolder/`の場合、宛先セレクターを使用すると、親フォルダーをトラバースできず、子フォルダーのみが表示されます。 |
+| *hasMore* | ブーリアン | いいえ | | アプリケーションに表示するコンテンツが増えたら、このプロパティを使用して、コンテンツを読み込んでアプリケーションに表示するローダーを追加できます。 コンテンツの読み込みが進行中であることを示すインジケーターです。 |
+| *orgName* | ブーリアン | いいえ | | AEMに関連付けられている組織の名前（おそらく orgID）です。 |
 | *initRepoID* | 文字列 | いいえ | | デフォルトの初期ビューで使用するアセットリポジトリのパスです |
 | *onCreateFolder* | 文字列 | いいえ | | この `onCreateFolder` プロパティを使用すると、アプリケーションに新しいフォルダーを追加するアイコンを追加できます。 |
 | *onConfirm* | 文字列 | いいえ | | 「確認」ボタンを押したときのコールバックです。 |
@@ -198,9 +198,9 @@ Destination Selector のプロパティを使用して、Destination Selector �
 | *viewType* | 文字列 | いいえ | | この `viewType` プロパティは、アセットの表示に使用するビューを指定するために使用されます。 |
 | *viewTypeOptions* | 文字列 | いいえ | | このプロパティは、 `viewType` プロパティ。 アセットを表示する 1 つ以上のビューを指定できます。 使用可能な viewTypeOptions は次のとおりです。リスト表示、グリッド表示、ギャラリー表示、ウォーターフォール表示、ツリー表示。 |
 | *itemNameFormatter* | 文字列 | いいえ | | このプロパティを使用すると、アイテム名を書式設定できます |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | いいえ |  | OOTB 翻訳がアプリケーションのニーズに合わない場合は、独自のカスタムローカライズされた値を `i18nSymbols` prop. このインターフェイスに値を渡すと、提供されたデフォルトの翻訳が上書きされ、代わりに独自の翻訳が使用されます。  上書きを実行するには、有効な [メッセージ記述子](https://formatjs.io/docs/react-intl/api/#message-descriptor) ～の鍵に対して異議を唱える `i18nSymbols` 上書きする値を指定します。 |
+| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | いいえ |  | OOTB 翻訳がアプリケーションのニーズを満たさない場合は、独自のローカライズされたカスタム値を `i18nSymbols` プロップ経由で渡すことができるインターフェイスを表示できます。このインターフェイスを介して値を渡すと、提供されたデフォルトの翻訳が上書きされ、代わりに独自の翻訳が使用されます。上書きを実行するには、上書きしたい `i18nSymbols` のキーに有効な[メッセージ記述子](https://formatjs.io/docs/react-intl/api/#message-descriptor)オブジェクトを渡す必要があります。 |
 | *inlineAlertSetup* | 文字列 | いいえ | | アプリケーションに渡すアラートメッセージが追加されます。 例えば、このフォルダーにアクセスする権限がないというアラートメッセージを追加します。 |
-| *intl* | オブジェクト | いいえ | | 宛先セレクターは、デフォルトの標準翻訳を提供します。 翻訳言語を選択するには、 `intl.locale` prop. 例： `intl={{ locale: "es-es" }}` </br></br> サポートされるロケール文字列は、 [ISO 639 — コード](https://www.iso.org/iso-639-language-codes.html) 言語標準の名前を表すための </br></br> サポートされているロケールの一覧：英語 — 「en-us」（デフォルト）スペイン語 — 「es-es」ドイツ語 — 「de-de」フランス語 — 「fr-fr」イタリア語 — 「it-it」日本語 — 「ja-jp」韓国語 — 「ko-kr」ポルトガル語 — 「pt-br」中国語（繁体字） — 「zh-cn」中国語（台湾） — 「zh-tw」 |
+| *intl* | オブジェクト | いいえ | | 宛先セレクターは、デフォルトの標準翻訳を提供します。 `intl.locale` プロップを介して有効なロケール文字列を指定することで、翻訳言語を選択できます。（例：`intl={{ locale: "es-es" }}` </br></br>）サポートされているロケール文字列は、言語名の標準規格を表す [ISO 639 - コード](https://www.iso.org/iso-639-language-codes.html)に従います。</br></br> サポートされているロケールの一覧：英語 - &#39;en-us&#39;（デフォルト）スペイン語 - &#39;es-es&#39; ドイツ語 - &#39;de-de&#39; フランス語 - &#39;fr-fr&#39; イタリア語 - &#39;it-it&#39; 日本語 - &#39;ja-jp&#39; 韓国語 - &#39;ko-kr&#39; ポルトガル語 - &#39;pt-br&#39; 中国語（簡体字） - &#39;zh-cn&#39; 中国語（繁体字） - &#39;zh-tw&#39; |
 
 ## 宛先セレクターのプロパティの使用例 {#usage-examples}
 
@@ -232,7 +232,7 @@ Destination Selector のプロパティを使用して、Destination Selector �
 
 * **A**: [検索バー](#search-bar)
 * **B**: [並べ替え](#sorting)
-* **C**: [Assets](#assets-repo)
+* **C**：[アセット](#assets-repo)
 * **D**: [サフィックスまたはプレフィックスを追加](#add-suffix-or-prefix)
 * **E**: [新しいフォルダーを作成](#create-new-folder)
 * **金**: [表示](#types-of-view)
@@ -241,7 +241,7 @@ Destination Selector のプロパティを使用して、Destination Selector �
 
 ### 検索バー {#search-bar}
 
-宛先セレクターを使用すると、選択したリポジトリ内のアセットに対して全文検索を実行できます。 例えば、次のようなキーワードを入力した場合、 `wave` 検索バーで、 `wave` キーワードが表示されます。
+宛先セレクターを使用すると、選択したリポジトリ内のアセットに対して全文検索を実行できます。 例えば、検索バーにキーワード「`wave`」を入力すると、メタデータプロパティのいずれかでキーワード「`wave`」が記述されているアセットがすべて表示されます。
 
 ### 並べ替え {#sorting}
 
@@ -259,14 +259,14 @@ Destination Selector のプロパティを使用して、Destination Selector �
 
 これにより、 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
-### ビューのタイプ {#types-of-view}
+### 表示の種類 {#types-of-view}
 
 宛先セレクターを使用すると、次の 4 つの異なるビューでアセットを表示できます。
 
-* **![リスト表示](assets/do-not-localize/list-view.png) [!UICONTROL リスト表示]**:リスト表示では、スクロール可能なファイルとフォルダが 1 列に表示されます。
-* **![グリッド表示](assets/do-not-localize/grid-view.png) [!UICONTROL グリッド表示]**:グリッド表示では、スクロール可能なファイルとフォルダが行と列のグリッドに表示されます。
-* **![ギャラリー表示](assets/do-not-localize/gallery-view.png) [!UICONTROL ギャラリー表示]**:ギャラリー表示では、中央にロックされた水平リストにファイルやフォルダが表示されます。
-* **![滝ビュー](assets/do-not-localize/waterfall-view.png) [!UICONTROL ウォーターフォール表示]**:ウォーターフォールビューには、ファイルやフォルダが Bridge の形式で表示されます。
+* **![リスト表示](assets/do-not-localize/list-view.png) [!UICONTROL リスト表示]**：リスト表示では、スクロール可能なファイルとフォルダーが 1 列に表示されます。
+* **![グリッド表示](assets/do-not-localize/grid-view.png) [!UICONTROL グリッド表示]**：グリッド表示では、スクロール可能なファイルとフォルダーが行と列のグリッドに表示されます。
+* **![ギャラリー表示](assets/do-not-localize/gallery-view.png) [!UICONTROL ギャラリー表示]**：ギャラリー表示では、ファイルやフォルダーが中央に固定された水平リストに表示されます。
+* **![ウォーターフォール表示](assets/do-not-localize/waterfall-view.png) [!UICONTROL ウォーターフォール表示]**：ウォーターフォール表示では、ファイルやフォルダーが Bridge の形式で表示されます。
 
 ### 情報 {#info}
 

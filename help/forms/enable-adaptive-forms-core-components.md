@@ -6,17 +6,17 @@ seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 6%
+source-wordcount: '1016'
+ht-degree: 11%
 
 ---
 
 
 # AEM Formsas a Cloud Serviceおよびローカル開発環境でのアダプティブFormsコアコンポーネントの有効化 {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
-AEM Formsas a Cloud ServiceのアダプティブFormsコアコンポーネントを有効にすると、AEM FormsCloud Serviceインスタンスを使用して、コアコンポーネントベースのアダプティブFormsおよびヘッドレスFormsの作成、公開、配信を開始できます。 ヘッドレスアダプティブFormsを使用するには、アダプティブFormsコアコンポーネントが有効な環境が必要です。
+AEM Forms as a Cloud Service のアダプティブフォームのコアコンポーネントを有効にすると、AEM Forms Cloud Service インスタンスを使用して、複数のチャネルへのコアコンポーネントベースのアダプティブフォームとヘッドレスフォームの作成、公開、配信を開始できます。 ヘッドレスアダプティブFormsを使用するには、アダプティブFormsコアコンポーネントが有効な環境が必要です。
 
 ## 検討事項
 
@@ -24,7 +24,7 @@ AEM Formsas a Cloud ServiceのアダプティブFormsコアコンポーネント
 
 * 古いFormsas a Cloud Serviceプログラム（コアコンポーネントを使用）がある場合 [無効](#enable-components)、 [アダプティブFormsコアコンポーネントの依存関係を追加する](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) をAEMas a Cloud Serviceリポジトリに追加し、リポジトリをCloud Service環境にデプロイして、ヘッドレスアダプティブFormsを有効にします。
 
-* 既存のCloud Service環境で [コアコンポーネントベースのアダプティブFormsの作成](creating-adaptive-form-core-components.md)アダプティブFormsコアコンポーネントとヘッドレスアダプティブFormsは、お客様の環境で既に有効になっており、コアコンポーネントベースのアダプティブFormsを、Adaptive Formsのヘッドレス表現を必要とするモバイル、Web、ネイティブアプリ、サービスなどのチャネルにヘッドレスフォームとして提供できます。
+* 既存のCloud Service環境で [コアコンポーネントベースのアダプティブFormsの作成](creating-adaptive-form-core-components.md)、アダプティブFormsコアコンポーネントとヘッドレスアダプティブFormsは、お使いの環境で既に有効になっており、コアコンポーネントベースのアダプティブFormsを、Adaptive Formsのヘッドレス表現を必要とするモバイル、Web、ネイティブアプリ、サービスなどのチャネルにヘッドレスフォームとして提供できます。
 
 
 ## アダプティブFormsコアコンポーネントとヘッドレスアダプティブFormsの有効化 {#enable-headless-forms}
@@ -193,8 +193,7 @@ AEM Formsas a Cloud Service環境でアダプティブFormsコアコンポーネ
    >
    >  次を検索： `${appId}`、 `[AEM Repository Folder]/all/pom.xml` ファイルを検索する `-packages/application/install` 用語 この `-packages/application/install` 用語があなたの `${appId}`. 例えば、次のコードは `myheadlessform` が `${appId}`.
    >
-   >   
-   ```
+   >   ```
    >             <embedded>
    >                     <groupId>com.myheadlessform</groupId>
    >                     <artifactId>myheadlessform.ui.apps<artifactId>
@@ -331,7 +330,7 @@ AEM Formsas a Cloud Service環境でアダプティブFormsコアコンポーネ
 * [コアコンポーネントベースのアダプティブFormsを作成する](/help/forms/creating-adaptive-form-core-components.md).
 * [コアコンポーネントベースのアダプティブフォームテンプレートを作成する](/help/forms/template-editor.md).
 * [コアコンポーネントベースのアダプティブフォームテンプレート用のカスタムテーマを作成する](/help/forms/using-themes-in-core-components.md).
-* [コアコンポーネントベースのアダプティブフォームの JSON 表現を、フォームのヘッドレス表現を必要とするモバイル、Web、ネイティブアプリ、サービスなどのチャネルに提供する](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html).
+* [コアコンポーネントベースのアダプティブフォームの JSON 表現を、フォームのヘッドレス表現を必要とするモバイル、Web、ネイティブアプリ、サービスなどのチャネルに提供する](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=jp).
 
 ### アダプティブFormsコアコンポーネントは、自分の環境で有効になっていますか？ {#enable-components}
 

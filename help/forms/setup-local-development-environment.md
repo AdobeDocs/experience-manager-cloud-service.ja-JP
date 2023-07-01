@@ -2,10 +2,10 @@
 title: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境の設定
 description: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境の設定
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2818'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -191,15 +191,15 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
    * （Apple macOS の場合）[Docker Desktop for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac) をインストールします。これには、Docker Engine、Docker CLI クライアント、Docker Compose、Docker Content Trust、Kubernetes、Credential Helper が含まれています。
 
    * （Linux® の場合）[Docker Engine](https://docs.docker.com/engine/install/#server) と [Docker Compose](https://docs.docker.com/compose/install/) をお使いのマシンにインストールします。
+
    >[!NOTE]
    >
    > * Apple macOS の場合は、ローカルの AEM オーサーインスタンスを格納したフォルダーを許可リストに加えます。
    >
    > * Windows 用 Docker Desktop は、Hyper-V
-      > （レガシー）と WSL2（最新）という 2 つのバックエンドをサポートします。ファイル共有は、WSL2（最新）を使用する場合、
-      > 自動的に Docker によって管理されます。Hyper-V（レガシー）を
-      > 使用している間に、ファイル共有を明示的に構成します。
-
+   > （レガシー）と WSL2（最新）という 2 つのバックエンドをサポートします。ファイル共有は、WSL2（最新）を使用する場合、
+   > 自動的に Docker によって管理されます。Hyper-V（レガシー）を
+   > 使用している間に、ファイル共有を明示的に構成します。
 
 1. オーサーインスタンスとパブリッシュインスタンスに並行して、aem-sdk などのフォルダーを作成します。例：C:\aem-sdk
 
@@ -234,7 +234,7 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
 ---------|----------|---------
 | Canvas 3.0 | 基本 | Microsoft® Dynamics 365 |
 | Tranquil | 空白 | Salesforce |
-| Urbane |  |  |
+| Urbane |   |  |
 | Ultramarine |  |  |
 | Beryl |  |  |
 
@@ -331,7 +331,7 @@ Dispatcher を設定する詳細な手順については、「[ローカル Disp
 
 ## AEM Formsas a Cloud Serviceおよびローカル開発環境でのアダプティブFormsコアコンポーネントの有効化
 
-AEM Formsas a Cloud ServiceのアダプティブFormsコアコンポーネントを有効にすると、AEM FormsCloud Serviceインスタンスを使用して、コアコンポーネントベースのアダプティブFormsおよびヘッドレスFormsの作成、公開、配信を開始できます。 ヘッドレスアダプティブFormsを使用するには、アダプティブFormsコアコンポーネントが有効な環境が必要です。
+AEM Forms as a Cloud Service のアダプティブフォームのコアコンポーネントを有効にすると、AEM Forms Cloud Service インスタンスを使用して、複数のチャネルへのコアコンポーネントベースのアダプティブフォームとヘッドレスフォームの作成、公開、配信を開始できます。 ヘッドレスアダプティブFormsを使用するには、アダプティブFormsコアコンポーネントが有効な環境が必要です。
 
 手順については、 [AEM Formsas a Cloud Serviceおよびローカル開発環境でのアダプティブFormsコアコンポーネントの有効化](/help/forms/enable-adaptive-forms-core-components.md)
 

@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '6666'
+source-wordcount: '6665'
 ht-degree: 98%
 
 ---
@@ -22,7 +22,7 @@ name used to be Experience Platform Launch. Changed to Experience Platform Data 
 
 Experience Platform タグおよび Dynamic Media Viewers 5.13 用の *Dynamic Media ビューア*&#x200B;拡張機能によって、Adobe Analytics および Experience Platform タグのユーザーは、Experience Platform タグの設定で Dynamic Media ビューアーに固有のイベントやデータを使用することができます。
 
-この統合により、Adobe Analytics を使用して、Web サイト上での Dynamic Media ビューアの使用状況を追跡できます。それと同時に、ビューアで公開されたイベントやデータを、アドビまたはサードパーティの他の Experience Platform タグ拡張機能で使用することもできます。
+この統合により、Adobe Analytics を使用して、Web サイト上での Dynamic Media ビューアの使用状況を追跡できます。同時に、Adobeまたはサードパーティ製の他のExperience Platformタグ拡張機能を持つビューアによって公開されたイベントおよびデータを使用できます。
 
 アドビまたはサードパーティの拡張機能について詳しくは、Experience Platform タグユーザーガイドの[アドビの拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html?lang=ja)を参照してください。
 

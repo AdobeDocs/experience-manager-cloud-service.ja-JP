@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service での Sling Resource Merger の使用
 description: Sling Resource Merger は、リソースのアクセスとマージのためのサービスを提供します
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 88%
+source-wordcount: '1160'
+ht-degree: 83%
 
 ---
 
@@ -21,7 +21,7 @@ Sling Resource Merger は、リソースのアクセスとマージのための�
 
 Sling Resource Merger を使用すると、リソースやプロパティのオーバーレイ／オーバーライドが元のリソース／プロパティにマージされます。
 
-* カスタマイズされた定義のコンテンツの方が、元の定義のコンテンツよりも優先されます&#x200B;*（*&#x200B;つまり、前者が後者をオーバーレイまたはオーバーライドします&#x200B;*）*。
+* カスタマイズされた定義のコンテンツの方が、元の定義のコンテンツよりも優先されます ( つまり、 *overlays* または *上書き* )。
 
 * 必要な場合には、カスタマイズされた定義に含まれる[プロパティ](#properties)が、元の定義からマージされたコンテンツをどう使用するかを指定します。
 
@@ -118,7 +118,7 @@ AEM で Sling Resource Merger を使用する目的は、次のとおりです�
 
 >[!NOTE]
 >
->Sling Resource Merger を使用するとき（つまり標準のタッチ操作対応 UI を扱うとき）は、`/libs` の構造全体をコピーすることは推奨されません。そうすると、`/apps` 内で維持される情報が多くなりすぎるからです。その場合、システムが何らかの理由でアップグレードされたときに問題が発生する可能性があります。
+>Sling Resource Merger を使用する場合（つまり、標準のタッチ操作対応 UI を扱う場合）は、 `/libs` その結果、多くの情報が～に保持されることになる `/apps`. その場合、システムが何らかの理由でアップグレードされたときに問題が発生する可能性があります。
 
 ### ユースケース {#use-cases}
 

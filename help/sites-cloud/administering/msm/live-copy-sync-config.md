@@ -4,10 +4,10 @@ description: 使用できる強力なライブコピー同期オプションと�
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2335'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -196,7 +196,7 @@ MSM を使用すると、通常使用するロールアウト設定のセット�
 1. **サイト**&#x200B;コンソールを使用してブループリントのルートページを選択します。
 1. ツールバーの「**プロパティ**」を選択します。
 1. 「**ブループリント**」タブを開きます。
-1. ドロップダウンセレクターを使用して&#x200B;**ロールアウト設定**&#x200B;を 1 つ以上選択します。
+1. 1 つ以上の **ロールアウト設定** ドロップダウンセレクターを使用する。
 1. 「**保存**」を選択して更新内容を保持します。
 
 ### システムのデフォルトのロールアウト設定の指定 {#setting-the-system-default-rollout-configuration}

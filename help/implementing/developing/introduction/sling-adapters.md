@@ -2,10 +2,10 @@
 title: Sling アダプターの使用
 description: Sling には、Adaptable インターフェイスを実装するオブジェクトを簡単に翻訳するためのアダプターパターンが用意されています
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2214'
-ht-degree: 20%
+ht-degree: 19%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 20%
 
 [Sling](https://sling.apache.org) オファー [アダプタパターン](https://sling.apache.org/documentation/the-sling-engine/adapters.html) 実装するオブジェクトを簡単に移動するには [適応可能](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) インターフェイス。 このインターフェイスは、汎用の [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) オブジェクトを引数として渡されるクラス型に変換するメソッド。
 
-例えば、次のように実行するだけで、Resource オブジェクトを対応する Node オブジェクトに変換できます。
+例えば、Resource オブジェクトを対応する Node オブジェクトに変換するには、次の操作を行うだけで済みます。
 
 ```java
 Node node = resource.adaptTo(Node.class);
@@ -156,7 +156,7 @@ null ケースを適切に処理することが重要です。 JSP レンダリ�
    <td>これが <code>cq:Template</code> ノードリソース</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/dam/api/Asset.html">Asset</a></td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/dam/api/Asset.html">アセット</a></td>
    <td>dam:Asset ノードリソースの場合</td>
   </tr>
   <tr>

@@ -2,7 +2,7 @@
 title: AEM タグ付けフレームワーク
 description: コンテンツにタグを付け、AEM Tagging インフラストラクチャを使用して分類し、整理します。
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 66%

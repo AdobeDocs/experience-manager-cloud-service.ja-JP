@@ -4,10 +4,10 @@ description: Admin Console でユーザープロファイルを作成して重�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: f7b3dec6380266a35f1bf7d90e0195277dd37335
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 100%
+source-wordcount: '933'
+ht-degree: 98%
 
 ---
 
@@ -72,7 +72,7 @@ Admin Console でユーザープロファイルを作成して重要なメール
 
 >[!NOTE]
 >
->Cloud Manager **製品プロファイル名**&#x200B;が指定されたものとまったく同じであることが重要です。 エラーを避けるために、指定された製品プロファイル名をコピー＆ペーストしてください。 逸脱や入力ミスがあれば、通知が意図したとおりに送信されません。
+>Cloud Manager **製品プロファイル名**&#x200B;が指定されたものとまったく同じであることが重要です。 提供された製品プロファイル名をコピーして貼り付け、エラーを回避します。 逸脱や入力ミスがあれば、通知が意図したとおりに送信されません。
 >
 >エラーが発生した場合やプロファイルが定義されていない場合、アドビはデフォルトで **Cloud Manager 開発者**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;プロファイルに割り当てられた既存のユーザーに通知します。
 

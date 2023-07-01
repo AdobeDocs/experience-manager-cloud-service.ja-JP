@@ -2,20 +2,20 @@
 title: ContextHub JavaScript API リファレンス
 description: ContextHub コンポーネントをページに追加すると、ContextHub JavaScript API がスクリプトで使用できるようになります
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '4620'
-ht-degree: 71%
+ht-degree: 69%
 
 ---
 
 # ContextHub JavaScript API リファレンス {#contexthub-javascript-api-reference}
 
-[ContextHub コンポーネントをページに追加](adding-contexthub.md)すると、ContextHub JavaScript API がスクリプトで使用できるようになります。
+ContextHub JavaScript API は、 [ContextHub コンポーネントがページに追加されました](adding-contexthub.md).
 
 ## ContextHub 定数 {#contexthub-constants}
 
-ContextHub JavaScript API によって定義される定数値です。
+ContextHub JavaScript API で定義される定数値です。
 
 ### イベント定数 {#event-constants}
 
@@ -795,7 +795,7 @@ Object {
 
 #### stringify(data) {#stringify-data}
 
-JavaScript の値およびオブジェクトを JSON 形式の文字列値にシリアライズします。
+JavaScript の値とオブジェクトを JSON 形式の文字列値にシリアル化します。
 
 ##### パラメーター {#parameters-stringify}
 
@@ -869,7 +869,7 @@ ContextHub.Utils.JSON.stringify({
 
 ##### 例 {#example-getitem-2}
 
-次の JavaScript オブジェクトについて考えてみます。
+次の JavaScript オブジェクトについて考えてみましょう。
 
 ```javascript
 myObject {
@@ -1045,7 +1045,7 @@ ContextHub.Utils.JSON.tree.sanitizeKey(key)
 
 ##### 例 {#example-setitem-2}
 
-次の JavaScript コードについて考えてみます。
+次の JavaScript コードについて考えてみましょう。
 
 ```javascript
 var myObject = {

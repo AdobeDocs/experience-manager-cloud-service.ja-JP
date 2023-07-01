@@ -2,9 +2,9 @@
 title: 考慮事項の既知の問題とベストプラクティス
 description: 通信のベストプラクティス、既知の問題および制限
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1709'
 ht-degree: 100%
 
 ---
@@ -161,7 +161,7 @@ XCI オプションを次の表に示します。
 
 * 特定のレンダリングタイプ（PDF、印刷）は、印刷オプションリストで 1 回だけ使用できます。例えば、PCL のレンダリングタイプを指定する印刷オプションを 2 つ設定することはできません。
 
-* バッチ設定の場合、OutputType（PDF、PRINT）と RenderType（PostScript、PCL、IPL、ZPL など）の値の組み合わせのインスタンスは 1 つだけ許可されています。
+* バッチ設定の場合、OutputType（PDF、PRINT）と RenderType（PostScript、PCL、IPL、ZPL など）の値の組み合わせのインスタンスは、1 つだけ許可されています。
 
 * 非同期 API（バッチ処理）の場合、デフォルトのレコードレベルは 2 に設定されます。カスタム XCI を使用して、レコードレベルを 1 に変更できます。
 

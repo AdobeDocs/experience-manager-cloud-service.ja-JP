@@ -2,10 +2,10 @@
 title: アクティビティの管理
 description: アクティビティコンソールでは、ブランドのマーケティングアクティビティを作成、整理、管理できます
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 56a7f214a4a1a3a58c56f1e06e3a98532054ffee
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2019'
-ht-degree: 100%
+source-wordcount: '2020'
+ht-degree: 99%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 * XT - Adobe Target エクスペリエンスのターゲット設定
 * A/B - Adobe Target の A/B テスト
-* AEM - Adobe Experience Manager のターゲット設定（ContextHub に基づく）
+* AEM - Adobe Experience Managerのターゲット設定（ContextHub に基づく）
 
 ![アクティビティのタイプ](/help/sites-cloud/authoring/assets/activities-types.png)
 

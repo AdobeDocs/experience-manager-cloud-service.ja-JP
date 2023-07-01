@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service の OSGi の設定
 description: シークレット値と環境固有の値を使用する OSGi 設定
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '3318'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -293,7 +293,7 @@ export ENV_VAR_NAME=my_value
 
 シークレットの値はファイルから読み取られます。したがって、シークレットを使用するプレースホルダーごとに、シークレット値を含むテキストファイルを作成する必要があります。
 
-例えば、`$[secret:server_password]` を使用する場合は、**server_password** という名前のテキストファイルを作成する必要があります。これらのシークレットファイルはすべて同じディレクトリに保存する必要があり、フレームワークプロパティ `org.apache.felix.configadmin.plugin.interpolation.secretsdir` は、そのローカルディレクトリを使用して設定する必要があります。
+例えば、 `$[secret:server_password]` が使用され、 **server_password** を作成する必要があります。 これらのシークレットファイルはすべて同じディレクトリに保存する必要があり、フレームワークプロパティ `org.apache.felix.configadmin.plugin.interpolation.secretsdir` は、そのローカルディレクトリを使用して設定する必要があります。
 
 >[!CAUTION]
 >

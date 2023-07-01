@@ -2,10 +2,10 @@
 title: SSL 証明書の管理
 description: Cloud Manager を使用して SSL 証明書のステータスを確認する方法と、SSL 証明書を編集、置換、更新および削除する方法について説明します。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 81%
+source-wordcount: '626'
+ht-degree: 79%
 
 ---
 
@@ -47,7 +47,7 @@ SSL 証明書は、[SSL 証明書の更新](#update-ssl-certificate)の節で説
 
 Cloud Manager からの証明書の削除は、元に戻すことができない恒久的な操作です。ベストプラクティスとして、SSL ファイルをローカルに保存してから Cloud Manager で削除することをお勧めします。
 
-Cloud Manager では、1 つ以上のドメインが関連付けられている SSL 証明書を削除できません。SSL 証明書を削除する前に、関連付けられているドメインをすべて削除する必要があります。詳しくは、[カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)ドキュメントを参照してください。
+Cloud Manager では、1 つ以上のドメインが関連付けられている SSL 証明書を削除できません。SSL 証明書を削除する前に、関連付けられているドメインをすべて削除する必要があります。詳しくは、 [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) を参照してください。
 
 SSL 証明書を削除するには、次の手順に従います。
 
@@ -67,6 +67,6 @@ SSL 証明書用の既存の CDN 設定がある場合、 **SSL 証明書** UI �
 
 UI を使用して既存の環境設定をすべて移行すると、このメッセージは表示されなくなります。メッセージが表示されなくなるまでに 1～2 営業日かかる場合があります。
 
-詳しくは、[SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)のドキュメントを参照してください。
+詳しくは、 [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。
 
 IP 許可リストまたはカスタムドメイン名に対応する既存の CDN 設定がある環境の **IP 許可リスト**&#x200B;ページと&#x200B;**環境**&#x200B;ページにも、同様のメッセージが表示されます。
