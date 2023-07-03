@@ -192,7 +192,7 @@ AEMで Target クラウド設定を作成するには、以下の手順を実行
 
      >[!NOTE]
      >
-     >Target ライブラリファイル [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html) は、Adobe Target 用の新しい実装ライブラリであり、通常の web 実装と単一ページアプリケーションの両方に使用できるように設計されています。
+     >Target ライブラリファイル [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=ja) は、Adobe Target 用の新しい実装ライブラリであり、通常の web 実装と単一ページアプリケーションの両方に使用できるように設計されています。
      >
      >mbox.js は非推奨（廃止予定）となり、後日で削除される予定です。
      >

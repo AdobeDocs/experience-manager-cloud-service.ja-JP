@@ -5,7 +5,7 @@ exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '909'
-ht-degree: 72%
+ht-degree: 91%
 
 ---
 
@@ -26,7 +26,7 @@ GraphQL フィルターのパフォーマンスを最適化するには、コン
 
 1. タスクを実行するユーザーに次の必要な権限があることを確認します。
 
-   * 少なくとも `Deployment Manager` の役割が必要です。
+   * 少なくとも Cloud Manager で `Deployment Manager` の役割が必要です。
 
 ## コンテンツフラグメントの更新 {#updating-content-fragments}
 
@@ -146,7 +146,7 @@ GraphQL フィルターのパフォーマンスを最適化するには、コン
         23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
         ```
 
-   Splunk を使用して環境ログへのアクセスを有効にしたお客様は、以下の例のクエリを使用して、アップグレードプロセスを監視できます。 Splunk ログの有効化について詳しくは、 [実稼動環境とステージ環境のデバッグ](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) ページ。
+   Splunk を使用して環境ログへのアクセスを有効にしたお客様は、以下のサンプルクエリを使用してアップグレードプロセスを監視できます。Splunk ログの有効化について詳しくは、 [実稼動環境とステージ環境のデバッグ](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) ページ。
 
    ```splunk
    index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 
@@ -155,8 +155,8 @@ GraphQL フィルターのパフォーマンスを最適化するには、コン
 
    ここで、
 
-   * `environmentId`  — 顧客環境識別子例： `e1234`
-   * `indexName`  — 顧客インデックス名、収集 `aemerror` イベント
+   * `environmentId` - 顧客環境識別子（例：`e1234`）
+   * `indexName` - 顧客インデックス名、収集 `aemerror` イベント
 
    出力例：
 
@@ -174,13 +174,13 @@ GraphQL フィルターのパフォーマンスを最適化するには、コン
          <td>2023-04-21 06:00:35.723</td>
          <td>author</td>
          <td>cm-p1234-e1234-aem-author-76d6dc4b79-8lsb5</td>
-         <td>[sling-threadpool-bb5da4dd-6b05-4230-93ea-1d5cd242e24f-(apache-sling-job-thread-pool)-1 — コンテンツフラグメントアップグレードジョブキュー設定 (cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob 391m、slingJobId でコンテンツフラグメントのアップグレードが完了しました：2023/4/20/23/16/db7963df-e267-489b-b69a-5930b0dadb37_0、ステータス：MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='バージョン「1」へのアップグレードが成功しました。', errors=[], successCount=36756, failedCount=0, skippedCount==0}</td>
+         <td>[sling-threadpool-bb5da4dd-6b05-4230-93ea-1d5cd242e24f-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 391m, slingJobId: 2023/4/20/23/16/db7963df-e267-489b-b69a-5930b0dadb37_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=36756, failedCount=0, skippedCount=0}</td>
        </tr>
        <tr>
          <td>2023-04-21 06:05:48.207</td>
          <td>golden-publish</td>
          <td>cm-p1234-e1234-aem-golden-publish-644487c9c5-lvkv2</td>
-         <td>[sling-threadpool-284b9a-8454-461e-9bdb-44866c6ddfb1-(apache-sling-job-thread-pool)-1 — コンテンツフラグメントアップグレードジョブキュー設定 (cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeContentJobFinished フラグメントは 211m でアップグレードします。slingJobId:2023/4/20/23/15/66c1690a-cdb7-4e66-bc52-90f33394ddfc_0、ステータス：MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='バージョン「1」へのアップグレードが成功しました。', errors=[], successCount=19557, failedCount=0, skippedCount==0}</td>
+         <td>[sling-threadpool-284b9a9a-8454-461e-9bdb-44866c6ddfb1-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 211m, slingJobId: 2023/4/20/23/15/66c1690a-cdb7-4e66-bc52-90f33394ddfc_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=19557, failedCount=0, skippedCount=0}</td>
        </tr>
      </tbody>
    <table>

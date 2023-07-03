@@ -5,7 +5,7 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1071'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -47,10 +47,10 @@ Assets REST API は、最新の Adobe Experience Manager as a Cloud Service バ�
 
 ## Assets HTTP API {#assets-http-api}
 
-Assets HTTP API には、以下が含まれます。
+Assets HTTP API には次の API が含まれます。
 
 * Assets REST API
-* コンテンツフラグメントのサポートを含めます。
+* コンテンツフラグメントをサポートしています
 
 現在の Assets HTTP API の実装は、**REST** アーキテクチャスタイルに基づいており、**CRUD** 操作（作成、読み取り、アップデート、削除）を使用して（AEM に保存された）コンテンツにアクセスできます。
 
@@ -242,11 +242,11 @@ Assets REST API は `/api/assets` エンドポイントを使用しており、�
 使用方法は、特定の使用例以外にも、AEM オーサーを使用するかパブリッシュ環境を使用するかで異なることがあります。
 
 * 作成時にはオーサーインスタンスに結び付けることを強くお勧めします（現在は、この API を使用して公開するフラグメントをレプリケートする手段はありません）。
-* AEMは要求されたコンテンツを JSON 形式でのみ提供するので、この両方から配信できます。
+* AEM は要求されたコンテンツを JSON 形式でのみ提供するので、どちらからも配信できます。
 
-   * ファイアウォールの背後にあるメディアライブラリアプリケーションでは、AEMオーサーインスタンスからのストレージと配信で十分です。
+   * ファイアウォールの背後で動作するメディアライブラリアプリケーションには、AEM オーサーインスタンスからのストレージと配信で十分です。
 
-   * ライブ Web 配信の場合は、AEMパブリッシュインスタンスを使用することをお勧めします。
+   * ライブ web 配信の場合は、AEM パブリッシュインスタンスをお勧めします。
 
 >[!CAUTION]
 >
@@ -327,5 +327,5 @@ AEM ヘッドレスジャーニーを続けるには、[すべてをまとめる
 * [Adobe Experience Manager Assets API - コンテンツフラグメント](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 * [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 * [AEM コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
-* [CORS/AEMの説明](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
-* [ビデオ — AEMを使用した CORS 向けの開発](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+* [CORS／AEM の説明](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
+* [ビデオ - AEM を使用した CORS 向けの開発](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)

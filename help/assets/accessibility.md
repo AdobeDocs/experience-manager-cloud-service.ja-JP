@@ -6,7 +6,7 @@ feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1943'
 ht-degree: 100%
 

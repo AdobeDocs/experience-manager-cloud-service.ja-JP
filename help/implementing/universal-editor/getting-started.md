@@ -5,7 +5,7 @@ exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 86%
+ht-degree: 88%
 
 ---
 
@@ -116,7 +116,7 @@ X-Frame-Options: SAMEORIGIN は、iframe 内で AEM ページのレンダリン�
 * `<protocol>` - 使用するユニバーサルエディター永続化サービスの永続化プラグインを示します。例：`aem`
 * `<url>` - 変更が保持されるシステムの URL です。例：`http://localhost:4502`
 
-識別子 `adobe:aem:editor` は、ユニバーサルエディターのAdobeを表します。
+識別子 `adobe:aem:editor` は、Adobe Universal Editor の接続を表します。
 
 `itemid` は `urn` プレフィックスを使用して識別子を短縮します。
 

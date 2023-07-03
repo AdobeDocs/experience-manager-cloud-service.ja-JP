@@ -5,7 +5,7 @@ exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3313'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -118,7 +118,7 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
    3. Workspace: <no workspace selected>
    ```
 
-   この手順を実行するには、Cloud Manager のメンバーである必要があります **開発者 —Cloud Service** 製品プロファイル。 詳しくは、[このページ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)を参照してください。
+   この手順では、Cloud Manager **デベロッパー - Cloud Service** 製品プロファイルのメンバーである必要があります。詳しくは、[このページ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)を参照してください。
 
    また、このデベロッパーの役割を持っていることを、以下のコマンドを実行して Developer Console にログインすることでも確認できます。
 
@@ -451,7 +451,7 @@ RDE がリセットされると、すべてのコンテンツが削除される�
 
 1. /apps の下の install.rde フォルダー内の Git にサンプルコンテンツを配置してコミットし、コマンドラインツールを使用して包括的なコンテンツパッケージを RDE に同期します。
 
-1. 以下を使用： [コンテンツコピーツール](/help/implementing/developing/tools/content-copy.md) を使用して、実稼動、ステージング、開発環境、または別の RDE から定義済みのコンテンツセットをコピーできます。
+1. [コンテンツコピーツール](/help/implementing/developing/tools/content-copy.md)を使用して、実稼動環境、ステージング環境、開発環境、または別の RDE から定義済みのコンテンツセットをコピーします。
 
 1. パッケージマネージャーの使用
 
