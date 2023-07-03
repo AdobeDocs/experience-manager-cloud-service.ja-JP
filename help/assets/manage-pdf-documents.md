@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] で PDF
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: ht
-source-wordcount: '824'
-ht-degree: 100%
+source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
+workflow-type: tm+mt
+source-wordcount: '853'
+ht-degree: 96%
 
 ---
 
@@ -22,6 +22,7 @@ Document Cloud PDF ビューアは、AEM Assets に次のようなメリット�
 
 > ヒント
 > 以前にアップロードした PDF ドキュメントの複数ページのプレビューを取得できない場合は、PDF を選択し、**![再処理](/help/assets/assets/Reprocess.svg)アセットを再処理**&#x200B;をクリックします。
+>
 
 ## PDF Document Cloud ビューアコンポーネントのサポート {#pdf-doc-cloud}
 
@@ -55,6 +56,7 @@ Adobe Experience Manager Assets では、複数のページで構成される PD
 
 > メモ
 > プレビューできるアセットの最大サイズは 100 MB です。
+>
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409355)
 
@@ -110,6 +112,10 @@ PDF ドキュメントに注釈を付けるには、次の手順を実行しま�
         </tr>
     </table>
 
+>[!NOTE]
+>
+>注釈ドキュメントに追加した注釈は、PDFモードで使用できます。 ただし、注釈ドキュメントをダウンロードまたは印刷する際には、PDFは表示されません。
+
 ## 他の形式のドキュメントに対する複数ページプレビューのサポート {#multi-format}
 
 PDF ドキュメントに加えて、他の形式のドキュメントを複数ページにわたってプレビューすることもできます。サポート対象となっているドキュメント形式のタイプは、TXT、RTF、DOC、DOCX、PPT、PPTX、XLS、XLSX です。Experience Manager Assets では、これらのドキュメント形式が PDF 形式に自動的に変換され、プレビューできるようになります。
@@ -126,7 +132,6 @@ PDF ドキュメントに加えて、他の形式のドキュメントを複数�
 > * プレビューできるアセットの最大サイズは 100 MB です。
 > * プレビューできる XLS または XLSX ファイルの最大サイズは 20 MB です。
 >
-
 
 **関連情報**
 

@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: da5634dfa812268b81b2db783da772b6ecc1d7ce
+source-git-commit: 45004db44af48301f0a9cbd9f574ac34c360275e
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 16%
@@ -56,9 +56,9 @@ ht-degree: 16%
 
 Experience Manager Assetsでは、検索結果のユーザーインターフェイスからさらに多くの作業をおこなうことができるようになりました。次の操作が可能になりました。
 
-* デフォルトでは、リポジトリ全体でキーワードを検索する代わりに、現在のリポジトリの場所内で検索を実行します。
+* [現在のリポジトリの場所内で検索を実行します](/help/assets/search-assets.md) デフォルトでは、リポジトリ全体でキーワードを検索する代わりに使用されます。
 
-* 検索結果に表示されるアセットのフォルダーの場所に移動します。
+* [フォルダーの場所に移動します。](/help/assets/search-assets.md#aftersearch) 検索結果に表示されるアセットの場合。
 
 **3D アセットのサムネールプレビュー**
 

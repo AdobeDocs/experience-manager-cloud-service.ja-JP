@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
 workflow-type: tm+mt
-source-wordcount: '5096'
-ht-degree: 97%
+source-wordcount: '5162'
+ht-degree: 95%
 
 ---
 
@@ -37,7 +37,7 @@ AEM は次のユースケースをサポートしています。この記事で�
 | [制限事項](#limitations)と[ヒント](#tips) | | |
 | [例を使った説明](#samples) | | |
 
-[!DNL Experience Manager] Web インターフェイスの上部にあるオムニサーチフィールドを使用して、アセットを検索します。[!DNL Experience Manager] で&#x200B;**[!UICONTROL アセット]**／**[!UICONTROL ファイル]**&#x200B;に移動し、上部バーの検索アイコン ![search_icon](assets/do-not-localize/search_icon.png) をクリックし、検索キーワードを入力して、`Return` を選択します。または、キーワードショートカット `/`（スラッシュ）を使用して、オムニサーチフィールドを開きます。`Location:Assets` が事前に選択されており、DAM アセットの検索に制限されています。検索キーワードを入力し始めると、[!DNL Experience Manager] による提案が表示されます。
+[!DNL Experience Manager] Web インターフェイスの上部にあるオムニサーチフィールドを使用して、アセットを検索します。[!DNL Experience Manager] で&#x200B;**[!UICONTROL アセット]**／**[!UICONTROL ファイル]**&#x200B;に移動し、上部バーの検索アイコン ![search_icon](assets/do-not-localize/search_icon.png) をクリックし、検索キーワードを入力して、`Return` を選択します。または、キーワードショートカット `/`（スラッシュ）を使用して、オムニサーチフィールドを開きます。`Location:Assets` が事前に選択されており、DAM アセットの検索に制限されています。`Path:/content/dam` また、 **[!UICONTROL ファイル]** フォルダー。 他のフォルダーに移動する場合は、 `Path:/content/dam/<folder name>` をオムニサーチフィールドに表示して、検索範囲を現在のフォルダーに限定します。 [!DNL Experience Manager] 検索キーワードの入力中に候補が表示されます。
 
 アセット、フォルダー、タグおよびメタデータを検索するには、**[!UICONTROL フィルター]**&#x200B;パネルを使用します。ファイルタイプ、ファイルサイズ、最終変更日、アセットのステータス、インサイトデータ、Adobe Stock ライセンスなどの、様々なオプション（述部）に基づいて検索結果をフィルタリングできます。フィルターパネルをカスタマイズし、[検索ファセット](/help/assets/search-facets.md)を使用して検索述語を追加したり、削除したりすることができます。[!UICONTROL フィルター]パネルの[!UICONTROL ファイルタイプ]フィルターには、状態が混在したチェックボックスがあります。したがって、すべてのネストされた述語（またはフォーマット）を選択しない限り、第 1 レベルのチェックボックスは部分的にチェックされています。
 
@@ -415,6 +415,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 * ワークフローを開始
 * アセットの関連付けまたは関連付け解除
 * 検索を実行した後に自動的に表示されるフィルターパネルを使用してフィルターを適用し、検索結果を絞り込みます。
+* アセットの場所に移動します。
 
 ### 検索結果の並べ替え {#sort}
 
@@ -466,6 +467,10 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 ### アセットの関連付けと関連付け解除 {#relate-unrelate-assets}
 
 検索結果に表示されるアセットの関連付けと関連付け解除 アセットを選択し、 **[!UICONTROL 関連付け]** または **[!UICONTROL 関連付けを解除]**.
+
+### アセットフォルダーの場所に移動します {#navigate-asset-folder-location}
+
+検索結果に表示されるアセットのフォルダーの場所に移動します。 アセットを選択し、 **[!UICONTROL ファイルの場所を表示]**.
 
 ## 予期しない検索結果と問題 {#unexpected-results}
 
