@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: e60a734d7e0887a23978efac8d896ac3745dbb5d
+source-git-commit: 823d9875f1cd293df834cc6e2fc16fc8f7e0d37b
 workflow-type: tm+mt
-source-wordcount: '4150'
+source-wordcount: '4160'
 ht-degree: 97%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 97%
    + AEMaaCS 機能のリリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2023年度 {#2023}
-         + [2023.4.0 のリリースノート](/help/release-notes/release-notes-cloud/2023/release-notes-2023-4-0.md)
+         + [リリースノート（2023.4.0）](/help/release-notes/release-notes-cloud/2023/release-notes-2023-4-0.md)
          + [リリースノート（2023.2.0）](/help/release-notes/release-notes-cloud/2023/release-notes-2023-2-0.md)
          + [リリースノート（2023.1.0）](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
       + 2022年度 {#2022}
@@ -156,7 +156,7 @@ ht-degree: 97%
    + [AEM as a Cloud Service の IMS サポート](/help/security/ims-support.md)
    + [AEM as a Cloud Service のサイト Cookie サポートポリシー](/help/security/same-site-cookie-support.md)
    + [メールサービスの OAuth2 サポート](/help/security/oauth2-support-for-mail-service.md)
-   + [AEMのas a Cloud Service的セキュリティに関する考慮事項](/help/security/security-considerations.md)
+   + [AEM as a Cloud Service のセキュリティに関する考慮事項](/help/security/security-considerations.md)
 + オンボーディング {#onboarding}
    + [ここから開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ja)
    + オンボーディングジャーニー {#journey}
@@ -390,7 +390,7 @@ ht-degree: 97%
       + [アクティビティと DAM タスクの監視](/help/assets/assets-activity-history.md)
       + [アセットマイクロサービスの基本](/help/assets/asset-microservices-configure-and-use.md)
       + [アセットの追加とアップロード](/help/assets/add-assets.md)
-      + [アセットの検索](/help/assets/search-assets.md)
+      + [アセットを検索](/help/assets/search-assets.md)
       + [一般的なアセット管理タスク](/help/assets/manage-digital-assets.md)
       + [公開を管理](/help/assets/manage-publication.md)
       + [3D アセットのプレビュー](/help/assets/dynamic-media/previewing-3d-assets.md)
@@ -398,7 +398,7 @@ ht-degree: 97%
       + [ビデオアセットのスマートタグ](/help/assets/smart-tags-video-assets.md)
       + [アセットの整理方法](/help/assets/organize-assets.md)
       + [ [!DNL Adobe Stock] アセットを使用する](/help/assets/aem-assets-adobe-stock.md)
-      + [コレクションの管理](/help/assets/manage-collections.md)
+      + [コレクションを管理](/help/assets/manage-collections.md)
       + [メタデータの概要](/help/assets/manage-metadata.md)
       + [ [!DNL Adobe Creative Cloud] との統合](/help/assets/aem-cc-integration-best-practices.md)
       + [メタデータの追加と編集](/help/assets/meta-edit.md)
@@ -408,7 +408,7 @@ ht-degree: 97%
       + [メタデータスキーマ](/help/assets/metadata-schemas.md)
       + [ビデオアセットの管理](/help/assets/manage-video-assets.md)
       + [MSM を使用したアセットの再利用](/help/assets/reuse-assets-using-msm.md)
-      + [アセットのダウンロード](/help/assets/download-assets-from-aem.md)
+      + [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
       + [編集するアセットのチェックアウトとチェックイン](/help/assets/check-out-and-submit-assets.md)
       + [プライベートフォルダーの作成と共有](/help/assets/private-folder.md)
       + [アセットのデジタル著作権管理](/help/assets/drm.md)
@@ -421,7 +421,7 @@ ht-degree: 97%
       + [フォルダーメタデータスキーマ](/help/assets/folder-metadata-schema.md)
       + [イメージプロファイルとビデオプロファイルの操作](/help/assets/dynamic-media/about-image-video-profiles.md)
       + [オーディオおよびビデオアセットのトランスクリプションの設定](/help/assets/configure-transcription.md)
-      + [アセットの翻訳](/help/assets/translate-assets.md)
+      + [アセットを翻訳](/help/assets/translate-assets.md)
       + [検索ファセット](/help/assets/search-facets.md)
       + [Assets HTTP API](/help/assets/mac-api-assets.md)
       + [Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)
@@ -526,7 +526,6 @@ ht-degree: 97%
       + [既存のインストールの外部依存関係の削除](/help/assets/remove-external-dependencies.md)
       + [ [!DNL Workfront] 用の  [!DNL enhanced connector]  の設定](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
-
 + Forms {#forms}
    + 概要 {#forms-overview}
       + [はじめに](/help/forms/home.md)
@@ -566,7 +565,7 @@ ht-degree: 97%
             + [アダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
             + [アダプティブフォームのテーマの作成 - コアコンポーネント](/help/forms/using-themes-in-core-components.md)
             + [アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-core-components.md)
-            + [AEM SitesページでのアダプティブForms — コアコンポーネントの作成](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+            + [アダプティブフォームの作成 - AEM Sites ページのコアコンポーネント](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [機械翻訳または人間翻訳を使用したアダプティブフォームの翻訳](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [リダイレクトページまたは「ありがとうございます」メッセージの設定](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [繰り返し可能なセクションでフォームを作成](/help/forms/create-forms-repeatable-sections.md)
@@ -627,9 +626,10 @@ ht-degree: 97%
       + [PDF ドキュメントでのカスタムフォントの使用](/help/forms/use-custom-fonts.md)
       + [既知の問題、ベストプラクティス、よくある質問](/help/forms/communications-known-issues-limitations.md)
    + 開発者 API リファレンス {#aem-forms-developer-api-reference}
+      + [アダプティブForms API リファレンス](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms Cloud Service 通信 API リファレンス](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [AEM Forms Cloud Service JavaScript API リファレンス](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
-      + [AEM Forms Cloud Service Java API リファレンス](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
+      + [AEM Forms Cloud Service Java API リファレンス](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
    + トラブルシューティング {#troubleshooting-aem-forms-cloud-service}
       + [インストールと設定](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher と CDN のキャッシュ](/help/forms/troubleshooting-caching-performance.md)
