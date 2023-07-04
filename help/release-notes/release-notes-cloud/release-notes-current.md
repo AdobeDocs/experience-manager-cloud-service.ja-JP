@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 45004db44af48301f0a9cbd9f574ac34c360275e
+source-git-commit: b738d351a8ec607bef6c82880616061a88968e7f
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 16%
