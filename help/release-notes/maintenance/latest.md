@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: e8ea040ba3f8c73d7ed64c9669ac1d0a22d3a3c8
+source-git-commit: c7143ce939ca8c06fc678fc30f90c71981e4f8d7
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '607'
 ht-degree: 20%
 
 ---
@@ -13,18 +13,18 @@ ht-degree: 20%
 
 次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 12441 {#release-12441}
+## リリース 12549 {#release-12549}
 
-2023 年 6 月 27 日に公開されたメンテナンスリリース12441の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース 12255 からのアップデートです。
+2023 年 7 月 4 日に公開されたメンテナンスリリース12549の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース 12255 からのアップデートです。メンテナンスリリース12549は、12441に代わり、2 つの問題を修正します。
 
 2023.7.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。 詳しくは、 [Experience Managerリリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja) を参照してください。
 
-### 機能強化 {#enhancements-12441}
+### 機能強化 {#enhancements-12549}
 
 - SITES-8769:ResponsiveGrid の StyleImpl 呼び出しを改善する
 - Forms-5054:すべての [像](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) Adobe Signがサポート。
 
-### 修正された問題 {#fixed-issues-12441}
+### 修正された問題 {#fixed-issues-12549}
 
 - 各種アクセシビリティ関連の更新
 - SITES-12688:ページエディター：アセットファインダー検索で論理演算子 OR が正しく機能しない
@@ -53,11 +53,11 @@ ht-degree: 20%
 - Forms-9072:フォームフラグメントの作成中にスキームを検索した場合、検索結果は選択用のスキーマを返しません。
 - Forms:AEM Formsの機能のアクセシビリティを改善するために、複数のアクセシビリティ関連のバグを修正しました。
 
-### 既知の問題 {#known-issues-12441}
+### 既知の問題 {#known-issues-12549}
 
 なし。
 
-### 組み込みテクノロジー {#embedded-tech-12441}
+### 組み込みテクノロジー {#embedded-tech-12549}
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
