@@ -7,9 +7,9 @@ keywords: カスタムエラーハンドラーの追加、デフォルトエラ�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 09ed1ae61e7748da2cc182b005a9dd26853cb3f7
+source-git-commit: 11ab8d41b911afc73fe5339d43ca3a0fc80a5f8d
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '1926'
 ht-degree: 8%
 
 ---
@@ -59,7 +59,7 @@ AEM Formsには、すぐに使用できる、フォーム送信の成功ハン�
     ]
     originCode : <target error Code>
     originMessage : <unstructured error message returned by service>
-}
+    }
 ```
 
 
@@ -125,20 +125,20 @@ AEM Formsバージョンの機能の改善とその後の更新に伴い、既�
 * **`Header:`** `content-type:application/problem+json`
 * **`Response:`**
 
-      ``javascript
-      {
-      &quot;type&quot;:&quot;VALIDATION_ERROR&quot;,
-      &quot;validationErrors&quot;:[
-      {
-      &quot;fieldName&quot;:&quot;guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]&quot;,
-      &quot;dataRef&quot;:「」
-      &quot;details&quot;:[
-      「無効な ID が提供されました。 指定された値が正しくありません。」
-      ]
-      }
-      ]}
-      &quot;&#39;
-  
+  ```javascript
+          {
+              "type": "VALIDATION_ERROR",
+              "validationErrors": [
+              {
+              "fieldName": "guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]",
+              "dataRef": "",
+              "details": [
+              "Invalid ID supplied. Provided value is not correct!"
+          ]
+          }
+          ]}
+  ```
+
   アダプティブフォーム内の任意のフィールドの SOM 式を表示するには、フィールドをタップし、 **[!UICONTROL SOM 式を表示]**.
 
   ![カスタムエラーハンドラーでエラー応答を表示するためのアダプティブフォームフィールドの SOM 式](/help/forms/assets/custom-error-handler-somexpression.png)
@@ -152,17 +152,17 @@ AEM Formsバージョンの機能の改善とその後の更新に伴い、既�
 * **`Response:`**
 
   ```javascript
-  {
-      "type": "VALIDATION_ERROR",
-      "validationErrors": [
       {
-          "fieldName": "",
-          "dataRef": "/Pet/id",
-          "details": [
-          "Invalid ID supplied. Provided value is not correct!"
-          ]
-          }
-  ]}
+          "type": "VALIDATION_ERROR",
+          "validationErrors": [
+          {
+              "fieldName": "",
+              "dataRef": "/Pet/id",
+              "details": [
+              "Invalid ID supplied. Provided value is not correct!"
+              ]
+              }
+      ]}
   ```
 
   ![カスタムエラーハンドラーでエラー応答を表示するためのアダプティブフォームフィールドのデータ参照](/help/forms/assets/custom-errorhandler-dataref.png)
@@ -235,21 +235,21 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
 1. JavaScript ファイルの追加（例： ） `function.js`. ファイルには、カスタムエラーハンドラーのコードが含まれています。
 次のコードを JavaScript ファイルに追加して、REST サービスエンドポイントから受け取った応答とヘッダーをブラウザーコンソールに表示します。
 
-       ``javascript
+   ```javascript
        /**
-       *カスタムエラーハンドラー
-       * @name customErrorHandler カスタムエラーハンドラー関数
+       * Custom Error handler
+       * @name customErrorHandler Custom Error Handler Function
        * @errorHandler
        */
        function customErrorHandler(response, headers)
        {
-       console.log(&quot;Custom Error Handler processing start...&quot;);
-       console.log(&quot;response:&quot;+JSON.stringify(response));
-       console.log(&quot;headers:&quot;+JSON.stringify(headers));
-       console.log(&quot;Custom Error Handler processing end...&quot;);
+           console.log("Custom Error Handler processing start...");
+           console.log("response:"+JSON.stringify(response));
+           console.log("headers:"+JSON.stringify(headers));
+           console.log("Custom Error Handler processing end...");
        }
-       &quot;&#39;
-   
+   ```
+
    <!--  To call the default error handler after the custom error handler, the following line of the sample code is used:
         `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `-->
 1. `function.js` ファイルを保存します。
