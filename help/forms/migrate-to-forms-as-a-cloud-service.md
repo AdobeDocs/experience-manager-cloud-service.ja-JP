@@ -1,17 +1,17 @@
 ---
 title: AEM 6.5 Formsからに移行する方法 [!DNL AEM Forms] as a Cloud Service環境？
 description: ' [!DNL AEM Forms] （オンプレミス環境と AMS 環境）から [!DNL AEM Forms]  as a Cloud Servicee 環境への移行. '
-keywords: 6.5 フォームからクラウドサービスへ、6.5 フォームから cs へ、6.5 フォームから CS へ、6.5 フォームからクラウドサービスへ、6.5 フォームから CS へ、6.5 フォームから CS へ、AEM 6.5 から CS へのアップグレード
+keywords: 6.5 Forms から Cloud Service へ、6.5 Forms から CS へ、6.5 Forms から Cloud Service へ、6.5 Forms から CS へ、6.5 Forms から CS へ、AEM 6.5 から CS へ、AEM Forms 6.5 からCloud Serviceへ、AEM Forms から Cloud Service へ
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: f6b8ef52ad551be70e665a14ce00c197d1470e84
+source-git-commit: 850b1cccb03ca05ea53b646c55fcb0d0c100494c
 workflow-type: tm+mt
-source-wordcount: '1566'
-ht-degree: 74%
+source-wordcount: '1590'
+ht-degree: 71%
 
 ---
 
@@ -120,7 +120,7 @@ AEM Forms 6.5 からAEM as a Cloud Service環境へのスムーズな移行を�
 
    Cloud Service は、ルールエディタースクリプトをサポートしていません。**[!UICONTROL コードエディタースクリプトの移行]**&#x200B;ツールは、環境上のすべてのルールスクリプトを再利用可能な関数に変換し、再利用可能な関数を適切な場所のビジュアルエディターに適用します。これらの再利用可能な関数は、クライアントライブラリの形式で保存され、既存の機能をそのまま維持するのに役立ちます。ツールは、生成された再利用可能な関数を、対応するアダプティブフォームに自動的に適用します。
 
-   [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ja#contentmanagement)を使用して、再利用可能な関数（クライアントライブラリ）をパッケージに書き出します。
+   AEMフォームのCloud Serviceへの移行では、 [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ja#contentmanagement) 再利用可能な関数（クライアントライブラリ）をパッケージにエクスポートする場合。
 
 1. 再利用可能な関数（クライアントライブラリ）パッケージ、[カスタムコード、コンポーネント、設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=ja#cloud-manager)、カスタムロケール固有のライブラリを、[!DNL AEM] as a Cloud Service 環境に[デプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#deploying-content-packages-via-cloud-manager-and-package-manager)します。
 
@@ -152,7 +152,7 @@ AEM Forms 6.5 から Cloud Service に移行する場合、AEM Forms固有のア
 * `/content/forms/af`
 * `/etc/clientlibs/fd/theme`
 
-AEM ワークフローモデルを移行するには、次のパスを指定します。
+AEM Workflow モデルをAEM Forms 6.5 からCloud Serviceに移行する場合は、次のパスを指定します。
 
 * `/conf/global/settings/workflow/models/`
 * `/conf/global/settings/workflow/launcher`
