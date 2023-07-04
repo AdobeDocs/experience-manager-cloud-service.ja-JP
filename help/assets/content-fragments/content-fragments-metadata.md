@@ -2,10 +2,10 @@
 title: メタデータ - フラグメントのプロパティ（アセット - コンテンツフラグメント）
 description: コンテンツフラグメントのメタデータプロパティの表示と編集の方法について説明します。
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 344d04eb18c100835b78fe59c909d92c1e42111b
+source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 86%
+source-wordcount: '223'
+ht-degree: 83%
 
 ---
 
@@ -22,7 +22,8 @@ ht-degree: 86%
 
    * [**「プロパティを表示**」を選択してダイアログを開きます](/help/assets/manage-digital-assets.md#editing-properties)。開いて表示されたら、編集することもできます。
    * 編集するコンテンツフラグメントを開き、サイドパネルから「**メタデータ**」を選択します。
-   ![メタデータ](assets/cfm-metadata-01.png)
+
+   ![サイドパネルのメタデータ](assets/cfm-metadata-01.png)
 
 3. この **基本** 「 」タブには、表示または編集できるオプションが表示されます。
 
@@ -34,9 +35,11 @@ ht-degree: 86%
       * [タグ](/help/sites-cloud/authoring/features/tags.md)は、コンテンツの分類に使用できるので、フラグメントを整理する際に特に効果を発揮します。タグは、コンテンツを（タグ別に）検索したり、一括操作を適用する目的で使用できます。
 例えば、関係のあるフラグメントを「クリスマスローンチ」としてタグ付けして、これらのフラグメントだけをサブセットとして閲覧できるようにしたり、今後の別のローンチで使用するために新しいフォルダーにコピーしたりできます。
 
-         >[!NOTE]
-         >
-         >**タグ**&#x200B;は、[バリエーションコンテンツのオーサリング](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)時、および[バリエーションの作成](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation)時にも追加できます。
+        >[!NOTE]
+        >
+        >**タグ**&#x200B;は、[バリエーションコンテンツのオーサリング](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)時、および[バリエーションの作成](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation)時にも追加できます。
+
    * **作成日時**（表示のみ）
+
    次に例を示します。
-   ![メタデータ](assets/cfm-metadata-02.png)
+   ![メタデータの例](assets/cfm-metadata-02.png)

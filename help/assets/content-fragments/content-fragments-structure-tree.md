@@ -2,10 +2,10 @@
 title: コンテンツフラグメントの構造ツリー（アセット - コンテンツフラグメント）
 description: AEM のコンテンツフラグメントエディターの構造ツリー機能を使用すると、ヘッドレスコンテンツをより深く理解できます。
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 100%
+source-wordcount: '119'
+ht-degree: 89%
 
 ---
 
@@ -15,7 +15,7 @@ AEM のコンテンツフラグメントエディターの構造ツリー機能�
 
 コンテンツフラグメントエディターで「構造ツリー」アイコンを選択できます。
 
-![コンテンツフラグメント構造ツリー](assets/cfm-structuretree-01.png)
+![サイドパネルのコンテンツフラグメント構造ツリー](assets/cfm-structuretree-01.png)
 
 これにより、左側のパネルにフラグメントの構造が表示されます。これを使用して、参照されているフラグメント間を移動したり、参照先に移動したりできます。参照を選択すると、そのフラグメントが編集用に開きます。
 
@@ -23,4 +23,4 @@ AEM のコンテンツフラグメントエディターの構造ツリー機能�
 >
 >メインパネルのパンくずリストを使用して、開始点に戻ることができます。
 
-![コンテンツフラグメント構造ツリー](assets/cfm-structuretree-02.png)
+![コンテンツフラグメント構造ツリーの例](assets/cfm-structuretree-02.png)

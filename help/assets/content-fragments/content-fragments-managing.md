@@ -2,10 +2,10 @@
 title: コンテンツフラグメントの管理（アセット - コンテンツフラグメント）
 description: ヘッドレスコンテンツの基礎となる AEM コンテンツフラグメントを Assets コンソールを使用して管理する方法について説明します。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
-source-wordcount: '1755'
-ht-degree: 88%
+source-wordcount: '1770'
+ht-degree: 87%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 88%
 
    選択した後、「**次へ**」を使用して続けます。
 
-   ![フラグメントの基盤](assets/cfm-managing-01.png)
+   ![コンテンツフラグメントモデルを選択](assets/cfm-managing-01.png)
 
 1. 「**プロパティ**」の手順で次を指定します。
 
@@ -92,7 +92,7 @@ ht-degree: 88%
 * ツールバーから。フラグメントを選択すると、該当するすべてのアクションを使用できるようになります。
 * [クイックアクション](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)として。個別のフラグメントカードに使用可能なアクションのサブセット。
 
-![アクション](assets/cfm-managing-02.png)
+![ツールバーのアクション](assets/cfm-managing-02.png)
 
 フラグメントを選択して、次の適用可能なアクションを含むツールバーを表示します。
 
@@ -167,13 +167,13 @@ ht-degree: 88%
 * [構造ツリー](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [プレビュー](/help/assets/content-fragments/content-fragments-json-preview.md)
 
-![モード](assets/cfm-managing-04.png)
+![コンテンツフラグメントエディターのモード](assets/cfm-managing-04.png)
 
 ### コンテンツフラグメントエディターのツールバーアクション {#toolbar-actions-in-the-content-fragment-editor}
 
 上部のツールバーには、複数のモードから使用できる機能があります。
 
-![モード](assets/cfm-managing-top-toolbar.png)
+![様々なモードで使用可能なツールバーアクション](assets/cfm-managing-top-toolbar.png)
 
 * フラグメントがコンテンツページで既に参照されている場合は、メッセージが表示されます。 このメッセージは&#x200B;**閉じる**&#x200B;ことができます。
 
@@ -331,7 +331,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 >
 フラグメントの比較中にフラグメントコンテンツを編集することはできません。
 
-![比較](assets/cfm-managing-06.png)
+![バリエーションの比較](assets/cfm-managing-06.png)
 
 ## 特定のバージョンへの復帰   {#reverting-to-a-version}
 
