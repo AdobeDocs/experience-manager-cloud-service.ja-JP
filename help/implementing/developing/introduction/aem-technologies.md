@@ -5,7 +5,7 @@ exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2144'
-ht-degree: 54%
+ht-degree: 59%
 
 ---
 
@@ -32,9 +32,9 @@ AEM は、拡張性が高く柔軟なテクノロジーに基づいて構築さ�
 * Sling
 * OSGi
 
-## Java™コンテンツリポジトリ {#java-content-repository}
+## Java™ コンテンツリポジトリ {#java-content-repository}
 
-Java™コンテンツリポジトリ (JCR) 標準 [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)は、コンテンツリポジトリ内の詳細なレベルでコンテンツに双方向にアクセスする、ベンダーに依存しない、実装に依存しない方法を指定します。 仕様を主導しているのは、Adobe Research（スイス）AG です。
+Java™ コンテンツリポジトリ（JCR）の規格である [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html) では、コンテンツリポジトリ内で、任意の精度レベルでコンテンツに双方向アクセスするための、ベンダーにも実装にも依存しない方法が指定されています。仕様を主導しているのは、Adobe Research（スイス）AG です。
 
 [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) パッケージである `javax.jcr.*` が、リポジトリーコンテンツの直接アクセスと操作に使用されます。
 
@@ -94,7 +94,7 @@ https://myhost/tools/spy.printable.a4.html/a/b?x=12
 
 次の複合部品に分割できます。
 
-| プロトコル | ホスト |  | コンテンツのパス | セレクター | 拡張 |  | サフィックス |  | params |
+| プロトコル | ホスト |  | コンテンツのパス | セレクター | 拡張子 |  | 接尾辞 |  | params |
 |---|---|---|---|---|---|---|---|---|---|
 | `https://` | `myhost` | `/` | `tools/spy` | `.printable.a4.` | `html` | `/` | `a/b` | `?` | `x=12` |
 
@@ -155,9 +155,9 @@ AEM の特定のインスタンスでサポートされているスクリプト�
 
 * `.html`で終わる GET/HEAD リクエストと URL（デフォルトのリクエストタイプ、デフォルトの形式）
    * スクリプトは `/apps/hr/jobs/jobs.esp`;の最後のセクション `sling:resourceType` はファイル名を形成します。
-* POST 要求（GET/HEAD を除くすべての要求タイプ。メソッド名は大文字にする必要があります）
-   * POSTはスクリプト名に使用されます。
-   * スクリプトは `/apps/hr/jobs/jobs.POST.esp`.
+* POST リクエスト（GET／HEAD を除くすべてのリクエストタイプ。メソッド名は大文字にする必要があります）
+   * スクリプト名には POST が使用されます。
+   * スクリプトは `/apps/hr/jobs/jobs.POST.esp` です。
 * `.html`で終わらない、他の形式の URL
    * 例：`../content/corporate/jobs/developer.pdf`
    * スクリプトは `/apps/hr/jobs/jobs.pdf.esp`;サフィックスがスクリプト名に追加されます。
@@ -233,7 +233,7 @@ AEM の特定のインスタンスでサポートされているスクリプト�
 
 Sling 内では、REST サーバーの厳密な概念を破るので、スクリプトを直接呼び出すことはできません。リソースと表示域を混在させることができます。
 
-表現（スクリプト）を直接呼び出す場合、スクリプト内のリソースを非表示にするので、フレームワーク (Sling) はそれを認識しません。 そのため、次の特定の機能が失われます。
+表現（スクリプト）を直接呼び出す場合、リソースがスクリプト内に隠蔽されるので、フレームワーク（Sling）では認識できなくなります。これにより、次のような機能が失われます。
 
 * GET 以外の HTTP メソッドの自動処理。これには以下が含まれます。
    * POST、PUT、DELETE。Sling のデフォルト実装で処理されます。
@@ -259,7 +259,7 @@ OSGi(Open Services Gateway Initiative) は、モジュラーアプリケーシ�
 * コンテナ内に実装されているサービス
 * コンテナとアプリケーションの間の契約
 
-これらのサービスと契約は、個々の要素が相互に動的に検出して共同作業を行うためのアーキテクチャを提供します。
+これらのサービスおよび契約によって提供されるアーキテクチャでは、コラボレーションのために個々の要素が相互に動的に検出し合うことができます。
 
 その後、OSGi フレームワークは、再起動を必要とせずに、これらのバンドルの動的な読み込み/アンロード、設定、制御を提供します。
 
@@ -283,9 +283,9 @@ OSGi(Open Services Gateway Initiative) は、モジュラーアプリケーシ�
 
 詳しくは、「[AEM as a Cloud Service の OSGI の設定](/help/implementing/deploying/configuring-osgi.md)」を参照してください。
 
-## リポジトリー内の構造 {#structure-within-the-repository}
+## リポジトリ内の構造 {#structure-within-the-repository}
 
-次のリストは、リポジトリ内に表示される構造の概要を示しています。
+以下のリストは、リポジトリ内で見られる構造の概要を示しています。
 
 * `/apps` - アプリケーション関連。Web サイトに固有のコンポーネント定義が含まれます。開発するコンポーネントは、`/libs/core/wcm/components` で提供されている標準搭載のコンポーネントに基づくことができます。
 * `/content` - 
@@ -300,4 +300,4 @@ Web サイト用に作成されたコンテンツ。
 >
 >この構造、またはその中のファイルの変更は、注意して行う必要があります。変更が及ぼす影響を十分に理解しておく必要があります。
 >
->内の設定を変更しない `/libs` パス。 設定やその他の変更を行う場合は、次の場所から項目をコピーします。 `/libs` から `/apps` 内で変更を加えます。 `/apps`.
+>`/libs` パス内は一切変更しないでください。設定やその他の変更を行う場合は、次の場所から項目をコピーします。 `/libs` から `/apps` 内で変更を加えます。 `/apps`.

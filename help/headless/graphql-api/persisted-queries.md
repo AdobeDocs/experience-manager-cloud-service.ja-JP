@@ -18,7 +18,7 @@ ht-degree: 83%
 >
 >永続クエリをお勧めします。詳しくは、[GraphQL クエリのベストプラクティス（Dispatcher）](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices)と、関連する Dispatcher の設定を参照してください。
 
-AEM では [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) を使用して、[実稼動環境に移行](#transfer-persisted-query-production)する前に GraphQL クエリを開発、テスト、保持できます。カスタマイズが必要な場合（例えば、[キャッシュをカスタマイズする場合](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)）、API を使用できます。[GraphQL クエリを永続化する方法](#how-to-persist-query)で示される cURL の例を参照してください。
+AEM では [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) を使用して、[実稼動環境に移行](#transfer-persisted-query-production)する前に GraphQL クエリを開発、テストおよび永続化できます。カスタマイズが必要な場合（例えば、[キャッシュをカスタマイズする](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)場合）、API を使用できます。[GraphQL クエリを永続化する方法](#how-to-persist-query)で示される cURL の例を参照してください。
 
 ## 永続的なクエリとエンドポイント {#persisted-queries-and-endpoints}
 
@@ -58,7 +58,7 @@ AEM では [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) を使用�
 * cURL - 次の例を参照してください。
 * その他のツール（[Postman](https://www.postman.com/) など）
 
-GraphiQL IDE は、クエリを保持するための&#x200B;**推奨**&#x200B;される方法です。**cURL** コマンドラインツールを使用して特定のクエリを保持する手順は次のとおりです。
+GraphiQL IDE は、クエリを保持するための&#x200B;**推奨**&#x200B;される方法です。**cURL** コマンドラインツールを使用して特定のクエリを永続化するには、次の手順に従います。
 
 1. 新しいエンドポイント URL `/graphql/persist.json/<config>/<persisted-label>` に PUT してクエリを準備します。
 
@@ -260,9 +260,9 @@ query getAdventuresByActivity($activity: String!) {
 
 ## 永続クエリのキャッシュ {#caching-persisted-queries}
 
-永続クエリが推奨されます。永続クエリは、[Dispatcher](/help/headless/deployment/dispatcher.md) とコンテンツ配信ネットワーク（CDN）レイヤーでキャッシュされ、最終的に要求元のクライアントアプリケーションのパフォーマンスを向上させることができるためです。
+永続クエリが推奨されるのは、[Dispatcher](/help/headless/deployment/dispatcher.md) と CDN（コンテンツ配信ネットワーク）レイヤーでキャッシュされ、最終的に要求元のクライアントアプリケーションのパフォーマンスを向上させることができるからです。
 
-デフォルトでは、AEM は有効期間（TTL）の定義に基づいてキャッシュを無効にします。これらの TTL は、次のパラメーターで定義できます。これらのパラメーターには様々な手段でアクセスでき、使用するメカニズムに応じて異なる名前で呼ばれます。
+デフォルトでは、AEM は有効期間（TTL）の定義に基づいてキャッシュを無効にします。これらの TTL は、次のパラメーターで定義できます。これらのパラメーターには様々な方法でアクセスでき、使用するメカニズムに応じて名前が異なります。
 
 | キャッシュタイプ | [HTTP ヘッダー](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Cache-Control) | cURL | OSGi 設定  | Cloud Manager |
 |--- |--- |--- |--- |--- |

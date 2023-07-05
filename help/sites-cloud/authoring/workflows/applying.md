@@ -5,7 +5,7 @@ exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '660'
-ht-degree: 61%
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 61%
 * 適用されるワークフロー。
 
    * （AEM 管理者によって割り当てられた、アクセス権限がある）任意のワークフローを適用できます。
-* オプションで、ユーザーのインボックス内のワークフローインスタンスを識別するのに役立つタイトルです。
+* オプションで、ユーザーのインボックス内のワークフローインスタンスの特定に役立つタイトル。
 * ワークフローのペイロード。1 つ以上のページを指定できます。
 
 ワークフローは、次の場所から開始できます。
@@ -55,7 +55,7 @@ ht-degree: 61%
 
 どちらの場合も、次の操作が必要です。
 
-* [ワークフローを作成ウィザードでワークフローの詳細を指定します](#specifying-workflow-details-in-the-create-workflow-wizard).
+* [ワークフローを作成ウィザードでワークフローの詳細を指定します](#specifying-workflow-details-in-the-create-workflow-wizard)。
 
 ### Sites ツールバーからのワークフローの開始 {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -67,7 +67,7 @@ ht-degree: 61%
 
    ![ツールバーからのワークフローの作成](/help/sites-cloud/authoring/assets/workflows-create-from-toolbar.png)
 
-1. この **ワークフローを作成** ウィザードが役立ちます [ワークフローの詳細を指定](#specifying-workflow-details-in-the-create-workflow-wizard).
+1. **ワークフローを作成**&#x200B;ウィザードは、[ワークフローの詳細を指定](#specifying-workflow-details-in-the-create-workflow-wizard)するのに役立ちます。
 
 ### タイムラインからのワークフローの開始 {#starting-a-workflow-from-the-timeline}
 
@@ -78,27 +78,27 @@ ht-degree: 61%
 
    ![タイムラインからのワークフローの作成](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
 
-1. この **ワークフローを作成** ウィザードが役立ちます [ワークフローの詳細を指定](#specifying-workflow-details-in-the-create-workflow-wizard).
+1. **ワークフローを作成**&#x200B;ウィザードは、[ワークフローの詳細を指定](#specifying-workflow-details-in-the-create-workflow-wizard)するのに役立ちます。
 
-### ワークフローの作成ウィザードでのワークフローの詳細の指定 {#specifying-workflow-details-in-the-create-workflow-wizard}
+### ワークフローを作成ウィザードでのワークフローの詳細の指定 {#specifying-workflow-details-in-the-create-workflow-wizard}
 
-この **ワークフローを作成** ウィザードは、ワークフローを選択し、必要な詳細を指定するのに役立ちます。
+**ワークフローを作成**&#x200B;ウィザードは、ワークフローを選択し、必要な詳細を指定するのに役立ちます。
 
-を開いた後 **ワークフローを作成** ウィザードを次のいずれかから選択します。
+**ワークフローを作成**&#x200B;ウィザードを次のいずれかから開きます。
 
 * [サイトツールバーの「作成」オプション](#starting-a-workflow-from-the-sites-toolbar)。
 * [サイトコンソールのタイムラインレール](#starting-a-workflow-from-the-timeline)。
 
 次の詳細を指定できます。
 
-1. 内 **プロパティ** 手順では、ワークフローの基本オプションを定義します。
+1. **プロパティ**&#x200B;の手順では、ワークフローの基本オプションを定義します。
 
    * **ワークフローモデル**
    * **ワークフロータイトル**
 
-      * このインスタンスのタイトルを指定して、後の段階で識別しやすくすることができます。
+      * このインスタンスのタイトルを指定して、後の段階で識別しやすくできます。
 
-   ワークフローモデルに応じて、次のオプションも使用できます。 これにより、ペイロードとして作成されたパッケージを、ワークフローの完了後も保持できます。
+   ワークフローモデルに応じて、次のオプションも使用できます。これにより、ペイロードとして作成されたパッケージを、ワークフローの完了後も保持できます。
 
    * **ワークフローパッケージを維持**
    * **パッケージタイトル**
@@ -132,7 +132,7 @@ ht-degree: 61%
 
         指定した子は、ワークフローが適用されるリソースのリストに追加されます。
 
-      * **選択項目を削除** をクリックして、そのリソースをワークフローから削除します。
+      * 「**選択項目を削除**」で、そのリソースをワークフローから削除します。
 
    ![ワークフローの範囲の定義](/help/sites-cloud/authoring/assets/workflows-scope.png)
 
@@ -144,6 +144,6 @@ ht-degree: 61%
 
 ## ページエディターからのワークフローの開始 {#starting-a-workflow-from-the-page-editor}
 
-ページの編集時に、 **ページ情報** をクリックします。 ドロップダウンメニューにはオプションがあります **ワークフローで開始**. これによりダイアログが開き、必要なワークフローと必要な場合はタイトルを指定できます。
+ページの編集時に、ツールバーから「**ページ情報**」を選択できます。ドロップダウンメニューにはオプションがあります **ワークフローで開始**. これによりダイアログが開き、必要なワークフローと必要な場合はタイトルを指定できます。
 
 ![ページエディターからのワークフローの開始](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)

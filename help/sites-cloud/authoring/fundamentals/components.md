@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '347'
-ht-degree: 67%
+ht-degree: 83%
 
 ---
 
@@ -17,15 +17,15 @@ AEM には、すぐに使用できる様々なコンポーネントが付属し�
 
 >[!NOTE]
 >
->このセクションでは、標準のAEMインストールで標準で使用できるコンポーネントについてのみ説明します。
+>ここでは、標準の AEM インストールでそのまま使用できるコンポーネントについてのみ説明します。
 >
 >インスタンスによっては、要件に合わせて明示的に開発されたカスタマイズコンポーネントが存在する場合があります。これらは、ここで説明するいくつかのコンポーネントと同じ名前の場合があります。
 
 ## 一般的な使用方法 {#general-usage}
 
-コンポーネントは、 **コンポーネント** タブをクリックします。 [ページの編集](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+コンポーネントは、[ページの編集](/help/sites-cloud/authoring/fundamentals/editing-content.md)時にページエディターのサイドパネルの「**コンポーネント**」タブで使用できます。
 
-コンポーネントを選択し、ページ上の必要な場所にドラッグできます。 その後、次を使用して編集できます。
+コンポーネントを選択し、ページ上の必要な場所にドラッグできます。その後、次の機能を使用して編集できます。
 
 * [プロパティの設定](/help/sites-cloud/authoring/fundamentals/page-properties.md)
 * [コンテンツの編集](/help/sites-cloud/authoring/fundamentals/editing-content.md)

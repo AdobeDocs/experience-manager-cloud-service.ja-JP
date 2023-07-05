@@ -118,7 +118,7 @@ AEM as a Cloud Service用に CIF プロジェクトをBootstrapにする方法�
 
 AEM プロジェクトの生成方法については、AEM プロジェクトのアーキタイプの「[使用手順](https://github.com/adobe/aem-project-archetype#usage)」を参照してください。プロジェクトに CIF を含めるには、 `includeCommerce` オプション。
 
-次に例を示します。
+例：
 
 ```bash
 mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
