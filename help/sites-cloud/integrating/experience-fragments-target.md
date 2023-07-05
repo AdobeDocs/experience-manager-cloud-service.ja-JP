@@ -2,7 +2,7 @@
 title: Adobe Target へのエクスペリエンスフラグメントの書き出し
 description: Adobe Target へのエクスペリエンスフラグメントの書き出し
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 7905f21e70f373150775fe90d5faf02db4a59c32
 workflow-type: tm+mt
 source-wordcount: '2245'
 ht-degree: 97%
@@ -241,7 +241,7 @@ Target クラウド設定を設定したら、Target フレームワークを追
 
    フレームワークページが表示されます。マッピングできる [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) の情報を表すコンポーネントがサイドキックに表示されます。
 
-   <!-- ![chlimage_1-162](assets/chlimage_1-162.png) -->
+   <!-- ![Framework](assets/chlimage_1-162.png) -->
 
 1. マッピングに使用するデータを表す ClientContext コンポーネントをドロップターゲットにドラッグします。または、**ContextHub ストア**&#x200B;コンポーネントをフレームワークにドラッグします。
 
@@ -251,11 +251,11 @@ Target クラウド設定を設定したら、Target フレームワークを追
 
    例えば、サイト訪問者に関する&#x200B;**プロファイルデータ**&#x200B;を使用して Target キャンペーンを管理するには、「**プロファイルデータ**」コンポーネントをページにドラッグします。Target パラメーターへのマッピングに使用できるプロファイルデータ変数が表示されます。
 
-   <!-- ![chlimage_1-163](assets/chlimage_1-163.png) -->
+   <!-- ![Profile Data](assets/chlimage_1-163.png) -->
 
 1. 該当する列の「**共有**」チェックボックスをオンにして、Target システムで表示する変数を選択します。
 
-   <!-- ![chlimage_1-164](assets/chlimage_1-164.png) -->
+   <!-- ![Share](assets/chlimage_1-164.png) -->
 
    >[!NOTE]
    >
@@ -292,7 +292,7 @@ When you associate a page with the framework, the child pages inherit the associ
 1. Tap/click **Edit**.
 1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
-  ![chlimage_1-165](assets/chlimage_1-165.png)
+  ![Cloud Service Configuration](assets/chlimage_1-165.png)
 
 1. Select the framework you want under **Configuration Reference**.
 
