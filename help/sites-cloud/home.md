@@ -1,12 +1,12 @@
 ---
 title: Experience Manager as a Cloud Service サイトのサポートリソース
-description: すべてのAdobeAEM Cloud Services サポートリソースの完全なリストを取得します。 AEM Sites as Cloud Service の質問に対する回答を検索します。
+description: すべての Adobe AEM Cloud サービスサポートリソースの完全なリストを確認します。AEM Sites as Cloud Service の質問に対する回答を検索します。
 landing-page-description: AEM Sites as a Cloud Service を使用したオーサリング方法と AEM Sites as a Cloud Service の管理方法を説明します。
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 73%
+ht-degree: 78%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 73%
 
 ## Adobe Experience Manager のその他のリソース {#other-resources}
 
-* [最近のドキュメントの更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=en)
+* [最近のドキュメントの更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ja)
 * [Dispatcher のドキュメント](/help/implementing/dispatcher/overview.md)
 * [HTL のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ja)
 * [コアコンポーネントのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)

@@ -5,7 +5,7 @@ exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
 workflow-type: tm+mt
 source-wordcount: '2066'
-ht-degree: 57%
+ht-degree: 58%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 57%
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_planning"
 >title="移行の計画"
->abstract="Cloud Serviceへの移行プロセスを開始する前に、AEM as a Cloud Serviceについて理解しておいてください。 主な変更点と、置き換えられた機能または非推奨となった機能を確認します。"
+>abstract="Cloud Service への移行ジャーニーを開始する前に、AEM as a Cloud Service について理解しておいてください。重要な変更点と、置き換えられた機能または非推奨（廃止予定）となった機能を確認します。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=ja" text="ベストプラクティスアナライザー"
 
 AEMas a Cloud Service移行ジャーニーのこの段階では、AEMのas a Cloud Serviceについて理解しておく必要があります。 導入された主な変更点を確認し、クラウドへの移行を成功させるために計画する必要がある事項を理解できます。

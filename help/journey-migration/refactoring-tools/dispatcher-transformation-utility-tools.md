@@ -5,7 +5,7 @@ exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '338'
-ht-degree: 34%
+ht-degree: 46%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 34%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_dispconverter"
 >title="AEM Dispatcher コンバーター"
->abstract="Adobe Experience Manager Dispatcher コンバーターは、AEM Dispatcher 上の既存の設定を、AEM as a Cloud Service Dispatcher 上の設定に変換します。"
+>abstract="Adobe Experience Manager Dispatcher コンバーターは、AEM Dispatcher の既存の設定を AEM as a Cloud Service Dispatcher の設定に変換します。"
 
-Adobe Experience Manager Dispatcher コンバーターは、AEM Dispatcher 上の既存の設定を、AEM as a Cloud Service Dispatcher 上の設定に変換します。
+Adobe Experience Manager Dispatcher コンバーターは、AEM Dispatcher の既存の設定を AEM as a Cloud Service Dispatcher の設定に変換します。
 
 ## Dispatcher の概要 {#introduction-dispatcher}
 

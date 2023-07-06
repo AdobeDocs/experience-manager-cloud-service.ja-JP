@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3462'
-ht-degree: 40%
+ht-degree: 42%
 
 ---
 
@@ -174,8 +174,8 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="パッケージマネージャー - 可変コンテンツパッケージの移行"
->abstract="コンテンツパッケージを「1 回限り」としてインストールする必要がある使用例について、パッケージマネージャーの使用方法を調べます。 インストールには、実稼動環境からステージング環境への特定のコンテンツの読み込み、実稼動環境への小規模なコンテンツパッケージのデバッグ、オンプレミス環境からAEM Cloud 環境への転送などが含まれます。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en" text="コンテンツ転送ツール"
+>abstract="コンテンツパッケージを「1 回限り」としてインストールするユースケースへのパッケージマネージャーの使用方法を説明します。インストールには、実稼動環境での問題をデバッグするために実稼動環境からステージング環境に特定のコンテンツを読み込む場合や、オンプレミス環境から AEM Cloud 環境に小規模なコンテンツパッケージを転送する場合などが含まれます。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja" text="コンテンツ転送ツール"
 
 コンテンツパッケージを「1 回限りのもの」としてインストールする必要がある場合が考えられます。例えば、実稼動環境での問題をデバッグするために、実稼動環境からステージング環境に特定のコンテンツを読み込む場合などです。 次のシナリオでは、 [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) は、AEM as a Cloud Service上の環境で使用できます。
 
