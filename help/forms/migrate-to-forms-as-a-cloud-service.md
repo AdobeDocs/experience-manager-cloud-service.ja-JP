@@ -1,17 +1,18 @@
 ---
 title: AEM 6.5 Formsからに移行する方法 [!DNL AEM Forms] as a Cloud Service環境？
-description: ' [!DNL AEM Forms] （オンプレミス環境と AMS 環境）から [!DNL AEM Forms]  as a Cloud Servicee 環境への移行. '
-keywords: 6.5 Forms から Cloud Service へ、6.5 Forms から CS へ、6.5 Forms から Cloud Service へ、6.5 Forms から CS へ、6.5 Forms から CS へ、AEM 6.5 から CS へ、AEM Forms 6.5 からCloud Serviceへ、AEM Forms から Cloud Service へ
+description: AEM as a Cloud Serviceへの移行ジャーニーの概要 | Adobe Experience Manager.  [!DNL AEM Forms] （オンプレミス環境と AMS 環境）から [!DNL AEM Forms]  as a Cloud Servicee 環境への移行.
+keywords: 6.5 Forms から Cloud Service へ、6.5 Forms から CS へ、6.5 Forms から Cloud Service へ、6.5 Forms から CS へ、6.5 Forms から CS へ、AEM 6.5 から CS へ、AEM Forms 6.5 からCloud Serviceへ、AEM Form から Cloud Service への移行ジャーニー | Adobe Experience Manager
 contentOwner: khsingh
 feature: Adaptive Forms
+feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 850b1cccb03ca05ea53b646c55fcb0d0c100494c
+source-git-commit: 8dc89bf4b20d12bdb380797b6e56db1a2ce6ce0a
 workflow-type: tm+mt
-source-wordcount: '1590'
-ht-degree: 71%
+source-wordcount: '1632'
+ht-degree: 70%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 71%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/upgrade.html) |
 | AEM as a Cloud Service | この記事 |
 
-アダプティブForms、テーマ、テンプレートおよびクラウド設定は、次の場所から移行またはアップグレードできます。 <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> OSGi 上のAEM 6.5 Formsから [!DNL AEM] as a Cloud Service。 これらのアセットを移行する前に、移行ユーティリティを使用して、以前のバージョンで使用されていた形式を [!DNL AEM] as a Cloud Service で使用されていた形式に変換します。移行ユーティリティを実行すると、以下の項目が更新されます。
+アダプティブForms、テーマ、テンプレートおよびクラウド設定は、次の場所から移行またはアップグレードできます。 <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> OSGi 上のAEM 6.5 Formsから [!DNL AEM] as a Cloud Service。 これらのアセットを移行する前に、移行ユーティリティを使用して、以前のバージョンで使用されていた形式を [!DNL AEM] as a Cloud Service で使用されていた形式に変換します。AEM as a Cloud Serviceへの移行ジャーニーを開始します | Adobe Experience Manager. 移行ユーティリティを実行すると、以下の項目が更新されます。
 
 * アダプティブフォームのカスタムコンポーネント
 * アダプティブフォームのテンプレートとテーマ
