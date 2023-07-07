@@ -2,12 +2,13 @@
 title: ユニバーサルビジュアルエディターを使用したコンテンツの公開
 description: ユニバーサルビジュアルエディターでのコンテンツの公開方法と、アプリでの公開済みコンテンツの処理方法を説明します。
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 78%
+source-wordcount: '367'
+ht-degree: 88%
 
 ---
+
 
 # ユニバーサルビジュアルエディターを使用したコンテンツの公開 {#publishing}
 

@@ -2,10 +2,10 @@
 title: AEM のユニバーサルエディターの概要
 description: ユニバーサルエディターへのアクセス権を取得する方法と、これを使用するために最初の AEM アプリのインストルメントを開始する方法について説明します。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 88%
+source-wordcount: '804'
+ht-degree: 90%
 
 ---
 
@@ -66,7 +66,7 @@ React アプリを実装していない場合や、サーバーサイドでの�
 
 ユニバーサルエディターを使用して AEM コンテンツをアプリで編集するには、AEM 内で CORS と Cookie の設定を行う必要があります。
 
-以下 [OSGi 設定はAEMオーサリングインスタンスで設定する必要があります](/help/implementing/deploying/configuring-osgi.md).
+次の [OSGi 設定は、AEM オーサリングインスタンスで設定する必要があります。](/help/implementing/deploying/configuring-osgi.md)
 
 * `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` の `SameSite Cookies = None`
 * `org.apache.sling.engine.impl.SlingMainServlet` の X-FRAME-OPTIONS: SAMEORIGIN ヘッダーを削除します

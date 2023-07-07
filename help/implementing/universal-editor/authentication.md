@@ -2,12 +2,13 @@
 title: ユニバーサルエディターの認証
 description: ユニバーサルエディターの認証方法を説明します。
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 89%
 
 ---
+
 
 # ユニバーサルエディターの認証 {#authentication}
 
