@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service でのビデオレンディションの作成
 description: ここでは、Screens as a Cloud Service でビデオレンディションを作成する方法について説明します。
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 47%
+source-wordcount: '367'
+ht-degree: 44%
 
 ---
 
@@ -33,19 +33,19 @@ Screens as a Cloud Service で Screens コンテンツプロバイダーから�
 
 1. クリック **作成** をクリックして処理プロファイルを作成します。
 
-   ![「作成」をクリックします。](/help/screens-cloud/assets/configure/screens-video-2.png)
+   ![「作成](/help/screens-cloud/assets/configure/screens-video-2.png)」をクリックします。
 
 1. 「**名前**」に「**ScreensProcessingProfile**」などと入力します。
 
-   ![](/help/screens-cloud/assets/configure/screens-video-3.png)
+   ![「名前」フィールドがハイライト表示された処理プロファイルダイアログボックス](/help/screens-cloud/assets/configure/screens-video-3.png)
 
 1. に移動します。 **ビデオ** タブでビデオエンコーディングを追加し、 **新規追加**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-4a.png)
+   ![「新規追加」ボタンがハイライト表示された処理プロファイルダイアログボックス](/help/screens-cloud/assets/configure/screens-video-4a.png)
 
 1. 「**エンコード名**」に「**screens-fullhd**」などと入力し、「**ビットレート**」に「**2500**」と入力します。
 
-   ![](/help/screens-cloud/assets/configure/screens-video-4.png)
+   ![「保存」ボタンがハイライト表示された処理プロファイルダイアログボックス](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
    >「screens — 」で始まるエンコーディング名を使用します。 これらのビデオレンディションのみが、Screens as a Cloud Serviceでのビデオエクスペリエンスの再生と見なされます。 ビデオに使用するビットレートを入力します（720 px ビデオの場合は 2500 kbps、1080 px の場合は 5000 kbps）。

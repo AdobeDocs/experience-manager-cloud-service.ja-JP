@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service でのプロジェクトの作成
 description: Screens as a Cloud Serviceでプロジェクトを作成する方法を説明します。
 exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 25%
+source-wordcount: '335'
+ht-degree: 26%
 
 ---
 
@@ -28,18 +28,18 @@ Screens に新しいプロジェクトを実装する際の最初の手順は、
 
 1. アクションバーの右上隅にある **Screens プロジェクトを作成**.
 
-   ![](/help/screens-cloud/assets/create-content/create-screens-project1.png)
+   ![create-screens-project1](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 
 1. 次を入力します。 **タイトル** の **Screens プロジェクトを作成** ダイアログボックス例： *FirstDigitalExperience*.
 
-   ![](/help/screens-cloud/assets/create-content/create-screens-project2.png)
+   ![create-screens-project2](/help/screens-cloud/assets/create-content/create-screens-project2.png)
 
    >[!NOTE]
    >**スクリーンプロジェクトを作成**&#x200B;ダイアログボックスの「**名前**」フィールドは、選択したタイトルに基づいて自動的に入力されます。
 
 1. 「**保存**」をクリックします。「 」というタイトルの Screens プロジェクトが表示されます。 *FirstDigitalExperience* Screens コンテンツプロバイダーの また、プロジェクトは Screens コンテンツプロバイダーに表示され、2 つのフォルダー ( ) があります。 **場所** および **チャネル**.
 
-   ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
+   ![create-screens-project3](/help/screens-cloud/assets/create-content/create-screens-project3.png)
 
    これでAEM Screensプロジェクトが設定され、プロジェクトにチャネルと場所を追加できます。
 
@@ -51,7 +51,7 @@ Screens の既存のプロジェクトas a Cloud Serviceは削除できます。
 1. 削除するプロジェクトを選択します。
 1. アクションバーで、 **削除**.
 
-   ![](/help/screens-cloud/assets/create-content/create-project5.png)
+   ![create-project5](/help/screens-cloud/assets/create-content/create-project5.png)
 
 1. クリック **削除** をクリックして、プロジェクトの削除を確定します。
 

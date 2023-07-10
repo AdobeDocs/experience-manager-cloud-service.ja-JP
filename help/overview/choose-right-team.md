@@ -2,10 +2,10 @@
 title: 適切な人材、適切な役割
 description: 適切な人材、適切な役割
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 80%
+source-wordcount: '847'
+ht-degree: 78%
 
 ---
 
@@ -73,7 +73,7 @@ Adobe Experience Manager Assets の導入を成功させるために必要な人
 
 <br>
 
-![](/help/overview/assets/team_involvement2.png)
+![AEM Assetsチームでの大きな役割と関与レベルを示す横棒グラフ。](/help/overview/assets/team_involvement2.png)
 
 >[!TIP]
 >

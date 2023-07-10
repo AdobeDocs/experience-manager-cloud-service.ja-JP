@@ -2,7 +2,7 @@
 title: Adobe Target との統合時に使用する IMS 設定
 description: Adobe Target との統合時に使用する IMS 設定について説明します
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 90%
@@ -113,7 +113,7 @@ Adobe 開発者コンソールを開いて、AEM で使用する Adobe Target �
 <!--
 1. The creation is confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
 
-   ![](assets/integrate-target-ims-07.png)
+   ![integrate-target-ims-07](assets/integrate-target-ims-07.png)
 -->
 
 <!-- could not verify - only saw Adobe Target Classic -->

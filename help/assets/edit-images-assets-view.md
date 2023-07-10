@@ -3,10 +3,10 @@ title: 画像の編集
 description: ' [!DNL Adobe Photoshop Express]  を利用したオプションを使用して画像を編集し、更新した画像をバージョンとして保存します。'
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: e2efffe0192f7914fd97178884b7938b84fd9a27
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 97%
+source-wordcount: '549'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +45,7 @@ For more information about how Spot Healing works in Photoshop, see [retouching 
 
 ## 画像のサイズ変更 {#resize-image}
 
-画像を特定のサイズに変更するのが一般的なユースケースです。[!DNL Assets view] では、特定の写真サイズに対応する新しい解像度を事前に計算しておくことで、一般的な写真サイズに合わせて画像のサイズをすばやく変更できます。一般的な写真サイズをセンチまたはインチ単位で表示して、サイズを確認できます。デフォルトでは、サイズ変更時に縦横比が保持されます。縦横比を手動で上書きするには、![](assets/do-not-localize/lock-closed-icon.png) をクリックします。
+画像を特定のサイズに変更するのが一般的なユースケースです。[!DNL Assets view] では、特定の写真サイズに対応する新しい解像度を事前に計算しておくことで、一般的な写真サイズに合わせて画像のサイズをすばやく変更できます。一般的な写真サイズをセンチまたはインチ単位で表示して、サイズを確認できます。デフォルトでは、サイズ変更時に縦横比が保持されます。縦横比を手動で上書きするには、 ![画像のサイズを変更するためのオプション。](assets/do-not-localize/lock-closed-icon.png).
 
 サイズを入力し、「**[!UICONTROL イメージをサイズ変更]**」をクリックして画像のサイズを変更します。変更内容をバージョンとして保存する前に、「[!UICONTROL 取り消し]」をクリックして保存前に行ったすべての変更を取り消すか、「[!UICONTROL 元に戻す]」をクリックして編集プロセスの特定のステップを変更することができます。
 
