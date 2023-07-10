@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 124b363fe341199fdc9b25d25bbf2a9bc8f87d87
+source-git-commit: e0bee5134bea71010cacf4bf16eac0baa3dee725
 workflow-type: tm+mt
-source-wordcount: '5868'
-ht-degree: 100%
+source-wordcount: '6251'
+ht-degree: 96%
 
 ---
 
@@ -682,51 +682,49 @@ HTML5 ビデオビューアを使用するので、作成するチャプター�
      </tbody>
    </table>
 
-<!--
 
-## About video thumbnails {#about-video-thumbnails}
 
-A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail should serve to encourage a customer to select the video.
+## ビデオサムネールについて {#about-video-thumbnails}
 
-All videos in Experience Manager must have an associated thumbnail; you cannot delete a thumbnail without replacing it. By default, when you upload a video to Experience Manager, the first frame is used as the thumbnail. However, you can customize the thumbnail for branding purposes or visual search, for example. When you customize a video thumbnail, you can either play the video and pause on the frame you want to use, or you can select an image asset that you have already uploaded and *published* in your digital asset manager.
+ビデオサムネールは、ビデオフレームまたは画像アセットの縮小バージョンで、顧客向けのビデオを表すものです。サムネールは、顧客がビデオを選択するよう促すのに役立ちます。
 
-Note that a custom video thumbnail image that you select from a video is not extracted and saved in the DAM as a separate and distinct asset. However, a custom video thumbnail that you select from an existing image asset is saved to the JCR. The path of the selected asset gets stored under the video asset's node as in the following example path:
+Experience Manager 内のすべてのビデオには、サムネールを関連付ける必要があります。サムネールを置き換えずに削除することはできません。デフォルトでは、Experience Manager にビデオをアップロードすると、最初のフレームがサムネールとして使用されます。例えば、ブランド設定やビジュアル検索用にサムネールをカスタマイズできます。ビデオのサムネールをカスタマイズする際には、使用するフレームでビデオを再生して一時停止するか、既にアップロード済みで *公開済み* (digital asset manager) を使用します。
 
-`/content/dam/*<folder_name*>/<*video_name*>/jcr:content/manualThumbnail`
+ビデオのサムネールを変更すると、ビデオの再処理時にAsset computeサービスを使用したサムネールの生成はスキップされます。
 
-The ability to customize a video thumbnail is only available after you have applied a video profile to the folder where the video is located.
+ビデオのサムネiルをカスタマイズする機能は、ビデオがあるフォルダーにビデオプロファイルを適用した後でのみ使用できます。
 
-### Adding a custom video thumbnail {#adding-a-custom-video-thumbnail}
+### カスタムビデオサムネールの追加 {#adding-a-custom-video-thumbnail}
 
-1. Be sure you have already done the following:
+1. 次の作業が完了していることを確認してください。
 
-    * Created a folder for your video assets.
-    * [Applied a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
+   * ビデオアセット用のフォルダーの作成。
+   * [フォルダーにビデオプロファイルを適用しました](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
 
-    * [Uploaded your videos to the folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
+   * [フォルダーへのビデオのアップロード](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
 
-1. Navigate to an uploaded video asset whose thumbnail image you want to change.
-1. In asset selection mode either from **[!UICONTROL List View]** or **[!UICONTROL Card View]**, select the video asset.
-1. On the toolbar, select the **[!UICONTROL Properties** icon (a circle with an "i" in it).
-1. On the video's Properties page, select **[!UICONTROL Change Thumbnail]**.
-1. On the Change Thumbnail page, do one of the following:
+1. サムネイル画像を変更するアップロード済みビデオアセットに移動します。
+1. 次のいずれかのアセット選択モードで、 **[!UICONTROL リスト表示]** または **[!UICONTROL カード表示]**、ビデオアセットを選択します。
+1. ツールバーで、 **[!UICONTROL プロパティ]** アイコン（「i」が付いた円）
+1. ビデオのプロパティページで、「 **[!UICONTROL サムネールを変更]**.
+1. 「サムネイルを変更」ページで以下のいずれかを行います。
 
-    * To use a frame from the video as the new thumbnail:
+   * ビデオのフレームを新しいサムネイルとして使用するには：
 
-        * On the toolbar, select **[!UICONTROL Select Frame from video]**.
-        * Select the Play button, then select the Pause button on the frame you want to capture as the video's new thumbnail.
+      * ツールバーで、「 **[!UICONTROL ビデオからフレームを選択]**.
+      * 再生ボタンを選択し、取り込むフレームの一時停止ボタンをビデオの新しいサムネールとして選択します。
 
-    * To use an image asset as the new thumbnail:
+   * 画像アセットを新しいサムネールとして使用するには：
 
-        * On the toolbar, select **[!UICONTROL Select Thumbnail from Assets]**.
-        * Select **[!UICONTROL Select Thumbnail]**.
-        * Navigate to a previously uploaded and published image asset you want to use. Note that the asset will automatically be resized to serve as a thumbnail image for the video.
-        * Select the image asset, then select **[!UICONTROL Select]**.
+      * ツールバーで、「 **[!UICONTROL アセットからサムネールを選択]**.
+      * 選択 **[!UICONTROL サムネールを選択]**.
+      * 使用する、以前にアップロードおよび公開された画像アセットの場所に移動します。 アセットはビデオのサムネール画像として使用できるように自動的にサイズ変更されます。
+      * 画像アセットを選択し、「 」を選択します。 **[!UICONTROL 選択]**.
 
-1. On the Change Thumbnail page, select **[!UICONTROL Save Change]**.
-1. On the video's Properties page, in the upper-right corner, select **[!UICONTROL Save & Close]**.
+1. サムネールを変更ページで、「 」を選択します。 **[!UICONTROL 変更を保存]**.
+1. ビデオのプロパティページの右上隅で、 **[!UICONTROL 保存して閉じる]**.
 
--->
+
 
 <!--
 
