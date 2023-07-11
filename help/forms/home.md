@@ -3,12 +3,13 @@ title: ' [!DNL AEM Forms] as a Cloud Service の概要'
 description: AEM Forms の概要と、ビジネスに適したフォームやドキュメントの作成方法を説明します。サービスとしてのプラットフォーム（PaaS）、エンタープライズクラスのデジタルフォームとビジネスプロセスを管理する方法および Adobe Sign と現在のデータソースに Forms を接続する方法について説明します。
 landing-page-description: AEM as a Cloud Service でのフォームの使用方法を理解します。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
+source-git-commit: 6f07493714c68cb7c6e96a252c4ef1ff9d6ba9ac
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 91%
+source-wordcount: '1137'
+ht-degree: 90%
 
 ---
+
 
 # AEM Forms as a Cloud Service の概要 {#introduction}
 
@@ -58,5 +59,12 @@ AEM Forms を使用するビジネスユーザーは、ドキュメントテン�
 | 電子サイン | Adobe SignおよびAdobe Sign Solutions for Government と統合して、Formsとドキュメントを簡単に電子署名用にユーザーに送信できます。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=ja">Adobe Sign によるアダプティブフォームの電子サイン</a></li><li></a> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=en#sign-document-step">Adobe SignとAEM Workflows を使用したドキュメントの E 署名</a></li></ul> |
 | Forms Analytics | Adobe Analyticsを使用して、ユーザーの行動と環境設定に関する有益なインサイトを得ます。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html?lang=ja">アダプティブフォームと Adobe Analytics の接続</a></li></ul> |
 | データソース | フォームとドキュメントを外部のデータソースと簡単に接続して、データを取得して送信します。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=ja">RDBMS や REST エンドポイントへの接続</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=ja">Microsoft® Dynamics 365 または Salesforce クラウドサービスに接続</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=ja">Microsoft® Azure Blob ストレージに接続</a></li></ul> |
+
+
+## 関連記事
+
+* [Cloud Service環境へのオンボーディング](/help/forms/setup-forms-cloud-service.md)
+* [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
+* [AEM 6.5 FormsからCloud Serviceへの移行](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 
 
