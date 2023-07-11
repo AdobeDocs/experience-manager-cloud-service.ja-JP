@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 1251f36ece4449d8be6a40f34421351161bf3b23
+source-git-commit: e1183791f543d17f98cb6c9ca0c513c8936ef477
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 18%
+source-wordcount: '251'
+ht-degree: 47%
 
 ---
 
@@ -13,54 +13,36 @@ ht-degree: 18%
 
 次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 12549 {#release-12549}
+## リリース 12585 {#release-12585}
 
-2023 年 7 月 4 日に公開されたメンテナンスリリース12549の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース 12255 からのアップデートです。メンテナンスリリース12549は、12441に代わり、2 つの問題を修正します。
+2023 年 7 月 11 日に公開されたメンテナンスリリース12585の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース 12549 からのアップデートです。
 
 2023.7.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。 詳しくは、 [Experience Managerリリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja) を参照してください。
 
-### 機能強化 {#enhancements-12549}
+### 機能強化 {#enhancements-12585}
 
-- Forms-5054:すべての [像](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) Adobe Signがサポート。
+- 一般的な RDE の安定性の向上 (SKYOPS-61133、SKYOPS-55281、SKYOPS-61216および SKYOPS-61401)
+- DXML-12327:AEMガイド：ネイティブ言語公開での言語変数のサポートPDF
+- DXML-11518:AEMガイド：ネイティブメタデータ公開でのメタPDFのサポートの強化
+- DXML-10093:AEMガイド：外部データソースへの接続と DITA トピックへのデータの挿入のサポート
+- DXML-10699:AEMガイド：翻訳での XLIFF 形式のサポート
+- DXML-10141:AEMガイド：PDF（ネイティブおよび DITA-OT）、HTMLおよびカスタムプリセットタイプにマイクロサービスベースの公開を使用するオプション
 
-### 修正された問題 {#fixed-issues-12549}
+### 修正された問題 {#fixed-issues-12585}
 
-- 各種アクセシビリティ関連の更新
-- SITES-12688:ページエディター：アセットファインダー検索で論理演算子 OR が正しく機能しない
-- SITES-4951:ページエディター：ページエディターでのタグ検索でサブタグが見つからない
-- SITES-12465:エクスペリエンスフラグメント：エクスペリエンスフラグメントコンポーネントダイアログで矢印キーが機能しない
-- SITES-12893:エクスペリエンスフラグメント：エクスペリエンスフラグメントに循環参照検証を適用
-- SITES-12715:エクスペリエンスフラグメント：エクスペリエンスフラグメントフォルダーに適用されたクラウドサービス設定は保持されません
-- SITES-13097:エクスペリエンスフラグメント：翻訳プロジェクトにエクスペリエンスフラグメントを追加できません
-- SITES-13165:GraphQL:null 値のフィルタリングのデフォルト動作を復元
-- SITES-12577:リンクチェック：変換サービスがリンクを断続的に書き換えない
-- SITES-13559:MSM:コンポーネントのロールアウト時に「変更不可」例外がスローされました
-- SITES-11757:MSM:親からロールアウト設定を継承は、子ページに戻りません
-- SITES-14073:サイト管理者：書き出すプロパティを選択しない場合、CSV レポートが 500 で失敗する
-- Forms-7648:数値ボックスコンポーネントの最大桁数を検証できません。 検証スクリプトが機能していません。
-- Forms-8177:Formsサービスがアクティブな場合、 `com.adobe.aem.formsndocuments.publish.AssetReferenceProvider Failed to retrieve asset dependencies` エラーが発生しました。
-- Forms-8300:ユーザーがタスクを開いた後に委任しようとすると、委任応答は、ユーザーのAEMインボックス UI を開く代わりに、タスクを再読み込みします。
-- Forms-8500:IE モードオプションが有効なMicrosoft® Edge ブラウザーで、HTML5 Formsを開けません。
-- Forms-8541:アダプティブFormsのレンダリング時に、ヌルポインター例外が発生します。
-- Forms-8964:Google Chrome または Mozilla Firefox 上の Android™デバイスでフォームを開くと、テキストボックスコンポーネントに入力されたテキストは削除できません。
-- Forms-9026:複雑で有効な JSON スキーマに基づいてアダプティブフォームを作成し、関連する JSON スキーマフィールドをアダプティブFormsエディターにドラッグしてアダプティブFormsフィールドを作成し、Adaptive Forms Editor ウィンドウを更新すると、すべてのフィールドが削除され、Adaptive Formsエディターは空白で表示されます。
-- Forms-9263:チェックボックスオプションの表示テキストに特殊文字が含まれている場合、ユーザーはそのようなチェックボックスを選択できません。
-- Forms-8668:フォームのPDFプレビューをレンダリングする際に、不要な Java™スタックダンプがエラーログに表示されます。 ただし、フォームのレンダリングに問題はありません。
-- Forms-8116:アダプティブFormsコンテナコンポーネントにルールが適用されている場合、適用されたルールは保存されません。
-- Forms-7906:アダプティブフォームがAEM Sitesコンテナコンポーネントに追加されると、ルールエディターが開けません。
-- Forms-8846:Bind 参照プロパティは、アダプティブForms添付ファイルコンポーネントに対しては機能しません。
-- Forms-9072:フォームフラグメントの作成中にスキームを検索した場合、検索結果は選択用のスキーマを返しません。
-- Forms:AEM Formsの機能のアクセシビリティを改善するために、複数のアクセシビリティ関連のバグを修正しました。
+- AEMガイド：ネイティブPDFの様々な機能強化と安定性の修正
+- SKYOPS-53130:RDE での AC ツールのサポートの改善
+- SKYOPS-57146:AEM起動時の Sling デッドロックの修正
 
-### 既知の問題 {#known-issues-12549}
+### 既知の問題 {#known-issues-12585}
 
-- SKYOPS-61385:最新の Dispatcher の更新に伴い、以前はによって警告なく無視されていた、無効な正規表現が一部更新されました。 `libpcre1` は、更新された `libpcre2` デプロイ時に実行されます。 Dispatcher の設定チェックは、これらをさらに前もって識別するために、近日中に更新されます。
+なし。
 
-### 組み込みテクノロジー {#embedded-tech-12549}
+### 組み込みテクノロジー {#embedded-tech-12585}
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
-| AEM OAK | 1.50-T20230405052634-f9df4aa | [Oak API 1.50.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.50.0/index.html) |
-| AEM SLING API | バージョン 2.27.0 | [Apache Sling API 2.27.0 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| AEM OAK | 1.52-T20230629133256-25c01b8 | [Oak API 1.52.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.52.0/index.html) |
+| AEM SLING API | バージョン 2.27.2 | [Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | Version 1.4.20-1.4.0 | [HTML テンプレート言語仕様](https://github.com/adobe/htl-spec) |
 | AEM コアコンポーネント | バージョン 2.23.0 | [AEM WCM コアコンポーネント](https://github.com/adobe/aem-core-wcm-components) |
