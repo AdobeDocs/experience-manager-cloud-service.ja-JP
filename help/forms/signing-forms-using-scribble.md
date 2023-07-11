@@ -10,10 +10,10 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: 76f13cb4236b8c7eb515d647a1cede6fa2cf4799
+source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 84%
+source-wordcount: '641'
+ht-degree: 82%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 84%
 
 手書き署名ウィンドウで、完了 ![aem_forms_save](assets/aem_forms_save.png) アイコンをタップすると、署名を編集できなくなります。署名を編集する場合は、現在の署名を無視して、上記の「ペイントブラシ」や「キーボード」オプションを使用して再署名する必要があります。
 
-**設定** ![](assets/configure.png) アイコンをタップして、手書き署名キャンバスのアスペクト比を設定します。
+次をタップします。 **設定** ![設定アイコン](assets/configure.png) アイコンをクリックして、手書き署名キャンバスの縦横比を設定します。
 * 手書き署名キャンバスのアスペクト比が 1 未満の場合、位置情報は手書き署名キャンバスの下部に追加されます。
 
 
@@ -46,6 +46,7 @@ ht-degree: 84%
 >[!NOTE]
 >
 >署名は常に PNG 形式で保存されます。
+>
 
 ## 手書き署名を使用するためのアダプティブフォームの設定 {#configure-an-adaptive-form-to-use-scribble-signature}
 

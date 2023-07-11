@@ -3,10 +3,10 @@ title: AEM 6.5 Forms と AEM Cloud Services の違い
 description: Experience Manager Forms のユーザーで、Adobe Experience Manager Forms as aCloud Service にアップグレードする予定ですか？AEM 6.5 Forms と AEM Cloud Services を比較し、アップグレードまたは Cloud Service への移行前に、最も重要な変更点を確認します。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 1d16797f741fc9032356564061f2b6743d4c7936
+source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
 workflow-type: tm+mt
-source-wordcount: '1405'
-ht-degree: 98%
+source-wordcount: '1417'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Manager Forms as a Cloud Service では、Adobe Experience Mana
 
 * 開発者は、Cloud Service のコードとローカル開発環境を共通の [Git リポジトリ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html?lang=ja)で管理します。AEM アーキタイプに基づく Git リポジトリは、AEM as a Cloud Service プログラムの作成時に自動的に作成されます。
 
-  ![](/help/forms/assets/git-repo-local-and-forms-cs.png)
+  ![AEM as a cloud service プログラムでの git リポジトリの自動作成](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
 * Forms as a Cloud Service の開発フローは、AEM Cloud Service の AEM アーキタイプに従っています。ただし、AEM Cloud Service との互換性を保つためには、Adobe Experience Manager Maven プロジェクトにいくつかの変更が必要です。上位レベルでは、AEM は可変コンテンツと不変コンテンツの分割を考慮してコンテンツとコードを個別のサブパッケージに分離する必要があります。[Repository Modernizer ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=ja)を使用して、Adobe Experience Manager as a Cloud Service 向けに定義されているプロジェクト構造と互換性を持たせるために、コンテンツとコードを個別のパッケージに分離して、既存のプロジェクトパッケージを再構築します。
 
