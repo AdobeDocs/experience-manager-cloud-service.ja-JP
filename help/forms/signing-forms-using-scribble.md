@@ -10,10 +10,10 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
+source-git-commit: 50f5b34fa9453fd6d8e85290f69194622afeb42c
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 82%
+source-wordcount: '643'
+ht-degree: 80%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 82%
    >
    >署名ステップコンポーネントは、フォームで使用できる全幅を取ります。 署名ステップコンポーネントを含むセクションには、他のコンポーネントを含めないことをお勧めします。
 
-1. コンテンツブラウザーで「**フォームコンテナ**」をタップし、**設定**（![](assets/configure.png)）アイコンをタップします。この操作により、アダプティブフォームのコンテナプロパティを表示するプロパティブラウザーが開きます。に移動します。 **アダプティブフォームコンテナ** > **電子署名** を選択し、選択を解除します。 **Adobe Signを有効にする** オプション。 完了 ![aem_forms_save](assets/aem_forms_save.png) アイコンをタップして、変更を保存します。
+1. コンテンツブラウザーで、 **フォームコンテナ**&#x200B;をクリックし、 **設定** ![設定アイコン](assets/configure.png) アイコン この操作により、アダプティブフォームのコンテナプロパティを表示するプロパティブラウザーが開きます。に移動します。 **アダプティブフォームコンテナ** > **電子署名** を選択し、選択を解除します。 **Adobe Signを有効にする** オプション。 完了 ![aem_forms_save](assets/aem_forms_save.png) アイコンをタップして、変更を保存します。
 
    >[!NOTE]
    >
