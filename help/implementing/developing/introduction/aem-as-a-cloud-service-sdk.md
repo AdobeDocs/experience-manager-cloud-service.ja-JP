@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の SDK
 description: AEM as a Cloud Service ソフトウェア開発キットの概要
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 33ba3e88a4116674c70c44a29273a04544b6b39b
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 38%
+source-wordcount: '1239'
+ht-degree: 36%
 
 ---
 
@@ -34,10 +34,14 @@ AEM as a Cloud Service SDK は、カスタムコードのビルドとデプロ�
 
 クラウド環境へのデプロイ時と同じ手順が Cloud Manager により実行されます。ローカルでビルドを実行すると、ローカル開発とテストが可能になります。 開発者は、ソース管理にコミットして Cloud Manager のデプロイメントをトリガーする前に、コードや構造的な問題を効率的に見つけることができます。これには時間がかかる場合があります。
 
+>[!NOTE]
+>
+>AEMas a Cloud ServiceSDK は、 [Cloud Manager のビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). AEMのas a Cloud Serviceのお客様は、次の URL からOracleJDK をダウンロードできます。 [ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html) また、Adobe Experience Managerプロジェクトで使用する際のAdobeの JavaOracleのライセンスおよびサポート条件が原因で、2026 年 9 月まで Java 11 拡張サポートを受けています。
+
 ## AEM as a Cloud Service の SDK へのアクセス {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * AEM Admin Console の「**Adobe Experience Manager について**」アイコンで、実稼動環境で実行している AEM のバージョンを確認できます。
-* クイックスタート JAR と Dispatcher ツールは、[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)から zip ファイルとしてダウンロードできます。SDK リストへのアクセスは、AEM Managed ServicesまたはAEM as a Cloud Serviceの環境を持つユーザーに限られます。
+* クイックスタート JAR と Dispatcher ツールは、[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)から zip ファイルとしてダウンロードできます。SDK リストへのアクセスは、AEM Managed ServicesまたはAEM as a Cloud Serviceの環境を持つユーザーに限られます。
 * Java™ API JAR と Javadoc JAR は、Maven ツール（コマンドラインまたは推奨 IDE）を使用してダウンロードできます。
 * Maven プロジェクトの POM では、以下の API JAR パッケージを参照する必要があります。サブパッケージの POM への依存も参照する必要があります。
 
