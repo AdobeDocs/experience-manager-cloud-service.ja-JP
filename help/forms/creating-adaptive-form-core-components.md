@@ -5,16 +5,16 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
-workflow-type: ht
-source-wordcount: '1495'
-ht-degree: 100%
+source-git-commit: 53997540cc469f4cc2ad747ca4e52b531a7b193e
+workflow-type: tm+mt
+source-wordcount: '2246'
+ht-degree: 63%
 
 ---
 
 # アダプティブフォーム（コアコンポーネント）の作成 {#creating-an-adaptive-form-core-components}
 
-アダプティブフォームを使用すると、魅力的でレスポンシブ、かつ動的でアダプティブなフォームを作成できます。AEM Forms は、アダプティブフォームを素早く作成するための、ビジネスユーザーにとってわかりやすいウィザードを提供します。このウィザードはクイックタブナビゲーションを備えており、アダプティブフォームを作成するための事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択することができます。
+アダプティブフォームを使用すると、魅力的でレスポンシブ、かつ動的でアダプティブなフォームを作成できます。AEM Formsは、アダプティブFormsをすばやく作成するための、ビジネスに適したウィザードを提供します。 このウィザードはクイックタブナビゲーションを備えており、アダプティブフォームを作成するための事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択することができます。
 
 開始する前に、使用可能な Forms コンポーネントのタイプについて学習します。
 
@@ -41,12 +41,12 @@ ht-degree: 100%
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
     * You can also [create a new Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
 
-* **権限**：[!DNL forms-users] グループにユーザーを追加します。[!DNL forms-users] グループのメンバーには、アダプティブフォームを作成する権限があります。フォーム専用のユーザーグループの詳細なリストについては、[グループと権限](forms-groups-privileges-tasks.md)を参照してください。
+* **権限**：[!DNL forms-users] グループにユーザーを追加します。[!DNL forms-users] グループのメンバーには、アダプティブフォームを作成する権限があります。フォーム固有のユーザーグループの詳細なリストについては、 [グループと権限](forms-groups-privileges-tasks.md).
 
 
 ## アダプティブフォーム（コアコンポーネント）の作成 {#create-an-adaptive-form-core-components}
 
-1. [!DNL Experience Manager Forms] オーサーインスタンスにログインします。Cloud インスタンスまたはローカル開発インスタンスの場合があります。
+1. にログインします。 [!DNL Experience Manager Forms] オーサーインスタンス。 Cloud インスタンスまたはローカル開発インスタンスの場合があります。
 
 1. Experience Manager のログインページに資格情報を入力します。ログイン後、左上隅の **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;をタップします。
 
@@ -91,11 +91,82 @@ ht-degree: 100%
 
 1. 「**[!UICONTROL 作成]**」をタップします。アダプティブフォームが作成され、アダプティブフォームエディターで開かれます。 エディターに、テンプレートで使用可能なコンテンツが表示されます。 アダプティブフォームのタイプに応じて、関連する <!--XFA form template, XML schema or --> JSON スキーマまたはフォームデータモデルに存在するフォーム要素が、サイドバーの&#x200B;**[!UICONTROL コンテンツブラウザ]**&#x200B;の「**[!UICONTROL データモデルオブジェクト]**」タブに表示されます。これらの要素もアドラッグ＆ドロップしてダプティブフォームを作成できます。
 
-これで、アダプティブフォームのコアコンポーネントをアダプティブフォームのコンテナにドラッグ＆ドロップし、フォームをデザインおよび作成できます。
+これで、 [アダプティブFormsコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) をアダプティブFormsコンテナに追加して、フォームをデザインし作成します。 また、[https://aemcomponents.dev/](https://aemcomponents.dev/) では、使用可能なコアコンポーネントの動作を確認できます。
 
-## 使用可能なアダプティブフォームコアコンポーネント
+## アダプティブフォームの送信アクションの設定 {#configure-submit-action-for-form}
 
-アダプティブフォームコアコンポーネントは、標準化されたデータキャプチャコンポーネントです。これらのコンポーネントはカスタマイズ可能で、開発時間の短縮とデジタル登録エクスペリエンスのメンテナンスコストの削減に役立ちます。[アダプティブフォームコアコンポーネントに関するドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)には、使用可能なコンポーネントの詳細なリストと、各コンポーネントの機能に関する詳細情報が記載されています。また、[https://aemcomponents.dev/](https://aemcomponents.dev/) では、使用可能なコアコンポーネントの動作を確認できます。
+送信アクションを使用すると、アダプティブフォームから取り込んだデータの送信先を選択できます。 これは、ユーザーがアダプティブフォーム上の「送信」ボタンをクリックするとトリガーされます。 アダプティブフォームには、すぐに使用できる送信アクションがいくつか含まれています。 デフォルトの送信アクションを拡張して、独自のカスタム送信アクションを作成することもできます。 フォームの送信アクションを設定するには、次の手順を実行します。
+
+1. コンテンツブラウザーを開き、「 **[!UICONTROL ガイドコンテナ]** アダプティブフォームのコンポーネント
+1. ガイドコンテナのプロパティをクリックします。 ![ガイドのプロパティ](/help/forms/assets/configure-icon.svg) アイコン アダプティブフォームコンテナダイアログボックスが開きます。
+
+1. 次をクリック：  **[!UICONTROL 送信]** タブをクリックします。
+
+   ![レンチアイコンをクリックしてアダプティブフォームコンテナダイアログボックスを開き、送信アクションを設定します](/help/forms/assets/adaptive-forms-submit-message.png)
+
+1. の選択と設定 **[!UICONTROL 送信アクション]**、要件に応じて。 送信アクションについて詳しくは、 [アダプティブフォーム送信アクション](/help/forms/configuring-submit-actions.md)
+
+<!--
+    
+    ![Click the Wrench icon to open Adaptive Form Container dialog box to configure Data Models for the Adaptive Form Container component](/help/forms/assets/adaptive-forms-container.png)
+
+-->
+
+## ユーザーをページにリダイレクトしたり、フォーム送信時に「ありがとうございます」メッセージを表示したりします
+
+フォームの送信時に、別の Web ページまたはメッセージにユーザーをリダイレクトできます。 ユーザーをリダイレクトするか、「ありがとうございます」メッセージを設定するには、次の手順を実行します。
+
+1. コンテンツブラウザーを開き、「 **[!UICONTROL ガイドコンテナ]** アダプティブフォームのコンポーネント
+1. ガイドコンテナのプロパティをクリックします。 ![ガイドのプロパティ](/help/forms/assets/configure-icon.svg) アイコン アダプティブフォームコンテナダイアログボックスが開きます。
+1. を開きます。 **[!UICONTROL 送信]** タブをクリックします。
+
+   ![レンチアイコンをクリックしてアダプティブフォームコンテナダイアログボックスを開き、リダイレクトページまたは「ありがとうございます」メッセージを設定します](/help/forms/assets/adaptive-forms-redirect-message.png)
+
+   * リダイレクト URL を設定するには、「送信時」オプションで、 **[!UICONTROL URL にリダイレクト]** 」オプションを選択し、AEM Sitesページを参照して選択するか、外部ページの URL を指定します。
+
+   * カスタムメッセージまたは「ありがとうございます」メッセージを設定するには、「送信」オプションで **[!UICONTROL メッセージを表示]** オプションを選択し、 **[!UICONTROL メッセージコンテンツ]** ボックス これはリッチテキストボックスで、全画面表示オプションを使用して、使用可能なすべてのリッチテキスト項目を表示できます。
+
+## スキーマまたはフォームデータモデルの設定 {#configure-schema-or-data-model-for-form}
+
+フォームデータモデルを使用して、フォームをデータソースに接続し、ユーザーの操作に基づいてデータを送受信することができます。 また、フォームを JSON スキーマに接続して、送信済みデータを事前定義済みの形式で受け取ることもできます。 必要に応じて、フォームを JSON スキーマまたはフォームデータモデルに接続します。
+
+* [JSON スキーマを作成し、環境にアップロードする](/help/forms/adaptive-form-json-schema-form-model.md)
+* [フォームデータモデルの作成](/help/forms/create-form-data-models.md)
+
+### フォームの JSON スキーマまたはフォームデータモデルを設定する
+
+フォームの JSON スキーマまたはフォームデータモデルを設定するには、次の手順を実行します。
+
+1. コンテンツブラウザーを開き、「 **[!UICONTROL ガイドコンテナ]** アダプティブフォームのコンポーネント
+1. ガイドコンテナのプロパティをクリックします。 ![ガイドのプロパティ](/help/forms/assets/configure-icon.svg) アイコン アダプティブフォームコンテナダイアログボックスが開きます。
+1. を開きます。 **[!UICONTROL データモデル]** タブをクリックします。
+
+   ![レンチアイコンをクリックしてアダプティブフォームコンテナダイアログボックスを開き、JSON スキーマまたはフォームデータモデルを設定します](/help/forms/assets/adaptive-forms-select-form-data-model-or-json-schema.png)
+
+1. 必要に応じて、JSON スキーマまたはフォームデータモデルを選択し、設定します。
+
+   * を選択し、 **[!UICONTROL フォームモデル]** オプションを選択する場合は、 **[!UICONTROL フォームデータモデルを選択]** 」オプションを使用して事前設定済みのフォームデータモデルを選択します。
+   * を選択し、 **[!UICONTROL スキーマ]** オプションを選択する場合は、 **[!UICONTROL スキーマ]** オプションを使用して、フォームの JSON スキーマを選択します。
+
+1. 「**[!UICONTROL 完了]**」をクリックします。
+
+## 事前入力サービスの設定  {#configure-prefill-service-for-form}
+
+事前入力サービスを使用すると、既存のデータを使用してアダプティブフォームのフィールドに自動入力することができます。 ユーザーがフォームを開くと、これらのフィールドの値は事前入力されています。以下の操作を実行できます。
+
+* [カスタム事前入力サービスの作成](/help/forms/prepopulate-adaptive-form-fields.md)
+* [フォームデータモデルの事前入力サービスを使用する](#fdm-prefill-service)
+
+### フォームデータモデルの事前入力サービスを使用して、アダプティブフォームのフィールドに事前入力する {#fdm-prefill-service}
+
+フォームデータモデルの事前入力サービスを使用すると、フォームデータモデルまたはカスタム事前入力サービスを使用して、アダプティブフォームのフィールドに事前入力することができます。 フォームデータモデルの事前入力サービスでは、 [設定済みのフォームデータモデルのサービスを取得する](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) データを取得します。 アダプティブフォームでフォームデータモデルの事前入力サービスを使用するには、次の手順を実行します。
+
+1. コンテンツブラウザーを開き、「 **[!UICONTROL ガイドコンテナ]** アダプティブフォームのコンポーネント
+1. ガイドコンテナのプロパティをクリックします。 ![ガイドのプロパティ](/help/forms/assets/configure-icon.svg) アイコン アダプティブフォームコンテナダイアログボックスが開きます。
+1. アダプティブフォームコンテナのプロパティをクリックします。 ![アダプティブフォームコンテナのプロパティ](/help/forms/assets/configure-icon.svg) アイコン データモデルを設定するためのアダプティブフォームコンテナダイアログボックスが開きます。
+   ![レンチアイコンをクリックしてアダプティブフォームコンテナダイアログボックスを開き、リダイレクトページまたは「ありがとうございます」メッセージを設定します](/help/forms/assets/adaptive-forms-container-prefill-service.png)
+1. フォームデータモデルを選択. を開きます。 **[!UICONTROL 基本]** タブをクリックします。 事前入力サービスで、「 」を選択します。 **[!UICONTROL フォームデータモデルの事前入力サービス]**.
+1. 「**[!UICONTROL 完了]**」をクリックします。これで、アダプティブフォームがフォームデータモデルの事前入力を使用するように設定されました。 これで、 [ルールエディター](rule-editor.md) ：フォームのフィールドに事前入力するルールを作成します。
 
 ## アダプティブフォームのフォームモデルプロパティの編集 {#edit-form-model}
 
@@ -104,3 +175,15 @@ ht-degree: 100%
 1. 「**[!UICONTROL フォームモデル]**」タブをクリックし、フォームモデルを選択します。アダプティブフォームにフォームモデルがない場合は、JSON スキーマまたはフォームデータモデルを自由に選択できます。一方、アダプティブフォームが既にフォームモデルに基づいている場合は、同じタイプの別のフォームモデルに切り替えることもできます。例えば、フォームが JSON スキーマを使用している場合、別の JSON スキーマに容易に切り替えることができます。同様に、フォームがフォームデータモデルを使用している場合は、別のフォームデータモデルに切り替えることができます。
 
 1. 「**[!UICONTROL 保存]**」をタップして、プロパティを保存します。
+
+
+## 次を見る
+
+* [フォームのスタイルまたはテーマを作成する](using-themes-in-core-components.md)
+* [ルールエディターを使用してフォームに動的な動作を追加する](rule-editor.md)
+* [画面サイズやデバイスタイプに応じてフォームのレイアウトを設定する](/help/sites-cloud/authoring/features/responsive-layout.md)
+
+
+## 関連記事 {#related-article}
+
+* [スタンドアロンのコアコンポーネントベースのアダプティブフォームを作成する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=ja)
