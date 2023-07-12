@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 53997540cc469f4cc2ad747ca4e52b531a7b193e
+source-git-commit: 8d40f259e70ef73285aafcb736e1f9d720380f7d
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2250'
 ht-degree: 63%
 
 ---
@@ -126,7 +126,7 @@ ht-degree: 63%
 
    * カスタムメッセージまたは「ありがとうございます」メッセージを設定するには、「送信」オプションで **[!UICONTROL メッセージを表示]** オプションを選択し、 **[!UICONTROL メッセージコンテンツ]** ボックス これはリッチテキストボックスで、全画面表示オプションを使用して、使用可能なすべてのリッチテキスト項目を表示できます。
 
-## スキーマまたはフォームデータモデルの設定 {#configure-schema-or-data-model-for-form}
+## アダプティブフォームのスキーマまたはフォームデータモデルの設定{#configure-schema-or-data-model-for-form}
 
 フォームデータモデルを使用して、フォームをデータソースに接続し、ユーザーの操作に基づいてデータを送受信することができます。 また、フォームを JSON スキーマに接続して、送信済みデータを事前定義済みの形式で受け取ることもできます。 必要に応じて、フォームを JSON スキーマまたはフォームデータモデルに接続します。
 
