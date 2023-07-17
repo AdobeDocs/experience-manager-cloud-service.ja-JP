@@ -2,10 +2,10 @@
 title: Target へのコンテンツの取り込み
 description: Target へのコンテンツの取り込み
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 3f526b8096125fbcf13b73fe82b2da0f611fa6ca
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 48%
+source-wordcount: '1925'
+ht-degree: 44%
 
 ---
 
@@ -155,7 +155,7 @@ ht-degree: 48%
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
-### 追加取り込みエラー
+### 追加取り込みエラー 一意性制約違反による
 
 [追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)エラーの一般的な原因は、ノード ID の競合です。このエラーを識別するには、Cloud Acceleration Manager UI を使用して取り込みログをダウンロードし、次のようなエントリを探します。
 
@@ -166,6 +166,18 @@ AEM の各ノードには、一意の UUID が必要です。このエラーは�
 また、ターゲット上のノードが取り込みと後続の追加取り込みの間に移動した場合にも発生する可能性があります。
 
 この競合は手動で解決する必要があります。コンテンツを参照する他のコンテンツに留意し、2 つのノードのうち、削除する必要があるノードをコンテンツに精通したユーザーが決定する必要があります。解決策として、問題のあるノードがなくても、追加抽出を再度行う必要が生じる場合があります。
+
+### 参照されているノードを削除できないことが原因で追加取り込みに失敗しました
+
+の別の一般的な原因 [追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure は、ターゲットインスタンス上の特定のノードに対するバージョンの競合です。 このエラーを識別するには、Cloud Acceleration Manager UI を使用して取り込みログをダウンロードし、次のようなエントリを探します。
+>java.lang.RuntimeException:org.apache.jackrabbit.oak.api.CommitFailedException:OakIntegrity0001:参照されたノードを削除できません：8a2289f4-b904-4bd0-8410-15e41e0976a8
+
+この問題は、新しいバージョンが作成されるように、取り込みとそれ以降の追加取り込みの間にターゲット上のノードが変更された場合に発生する可能性があります。 取り込みで「バージョンを含める」が有効になっている場合、ターゲットに、バージョン履歴や他のコンテンツで参照される最新のバージョンが含まれているので、競合が発生する可能性があります。 取り込みプロセスは、参照されているので、問題のあるバージョンノードを削除できません。
+
+解決策として、問題のあるノードがなくても、追加抽出を再度行う必要が生じる場合があります。または、問題のあるノードの小さな移行セットを作成し、「インクルードバージョン」を無効にします。
+
+ベストプラクティスは、取得を wipe=false で実行し、「include versions」=true で実行する必要がある場合、移行ジャーニーが完了するまで、ターゲット上のコンテンツをできるだけ少なく変更することが重要であることを示しています。 そうしないと、これらの競合が発生する可能性があります。
+
 
 ## 次の手順 {#whats-next}
 
