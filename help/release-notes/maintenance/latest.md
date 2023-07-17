@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 241dcc75e9f2c840be85c34800d8145457baa58d
+source-git-commit: eca0903050bb178f13d37073f8d65354f4bf36d3
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 43%
+source-wordcount: '283'
+ht-degree: 41%
 
 ---
 
@@ -34,6 +34,7 @@ ht-degree: 43%
 - AEMガイド：ネイティブPDFの様々な機能強化と安定性の修正
 - SKYOPS-53130:RDE での AC ツールのサポートの改善
 - SKYOPS-57146:AEM起動時の Sling デッドロックの修正
+- SKYOPS-61646:リリース12585にアップグレードした後、最終レプリケーション日は更新されません
 
 ### 既知の問題 {#known-issues-12697}
 
