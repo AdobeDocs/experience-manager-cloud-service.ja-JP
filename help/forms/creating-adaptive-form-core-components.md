@@ -5,14 +5,14 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 8d40f259e70ef73285aafcb736e1f9d720380f7d
+source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
 workflow-type: tm+mt
-source-wordcount: '2250'
+source-wordcount: '2246'
 ht-degree: 63%
 
 ---
 
-# アダプティブフォーム（コアコンポーネント）の作成 {#creating-an-adaptive-form-core-components}
+# アダプティブフォームの作成 {#creating-an-adaptive-form-core-components}
 
 アダプティブフォームを使用すると、魅力的でレスポンシブ、かつ動的でアダプティブなフォームを作成できます。AEM Formsは、アダプティブFormsをすばやく作成するための、ビジネスに適したウィザードを提供します。 このウィザードはクイックタブナビゲーションを備えており、アダプティブフォームを作成するための事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択することができます。
 
@@ -44,7 +44,7 @@ ht-degree: 63%
 * **権限**：[!DNL forms-users] グループにユーザーを追加します。[!DNL forms-users] グループのメンバーには、アダプティブフォームを作成する権限があります。フォーム固有のユーザーグループの詳細なリストについては、 [グループと権限](forms-groups-privileges-tasks.md).
 
 
-## アダプティブフォーム（コアコンポーネント）の作成 {#create-an-adaptive-form-core-components}
+## アダプティブフォームの作成  {#create-an-adaptive-form-core-components}
 
 1. にログインします。 [!DNL Experience Manager Forms] オーサーインスタンス。 Cloud インスタンスまたはローカル開発インスタンスの場合があります。
 

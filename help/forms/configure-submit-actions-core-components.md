@@ -1,40 +1,85 @@
 ---
 title: アダプティブフォームの送信アクションの設定方法
 description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自のアクションを作成できます。
-exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
+hide: true
+hidefromtoc: true
 source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
 workflow-type: tm+mt
-source-wordcount: '3178'
-ht-degree: 98%
+source-wordcount: '3366'
+ht-degree: 80%
 
 ---
 
 # アダプティブフォーム送信アクション {#configuring-the-submit-action}
+
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | この記事 |
 
-**適用先**:✔️アダプティブフォームの基盤コンポーネント ❌ [アダプティブフォームのコアコンポーネント](/help/forms/configure-submit-actions-core-components.md). Adobeでは、コアコンポーネントを次のように使用することをお勧めします。 [AEM SitesページへのアダプティブFormsの追加](create-or-add-an-adaptive-form-to-aem-sites-page.md) または [スタンドアロンのアダプティブFormsを作成](creating-adaptive-form-core-components.md).
+**適用先**:✔️アダプティブフォームのコアコンポーネント❌ [アダプティブフォームの基盤コンポーネント](/help/forms/configuring-submit-actions.md). Adobeでは、コアコンポーネントを次のように使用することをお勧めします。 [AEM SitesページへのアダプティブFormsの追加](create-or-add-an-adaptive-form-to-aem-sites-page.md) または [スタンドアロンのアダプティブFormsを作成](creating-adaptive-form-core-components.md).
 
-送信アクションは、ユーザーがアダプティブフォームの「**[!UICONTROL 送信]**」ボタンをクリックしたするときにトリガーされます。Forms as a Cloud Serviceでは、次の送信アクションが初期設定で提供されています。
+送信アクションを使用すると、アダプティブフォームから取り込んだデータの送信先を選択できます。 ユーザーが **[!UICONTROL 送信]** ボタンを使用して、アダプティブフォームを編集できます。
 
+Forms as a Cloud Serviceは、コアコンポーネントを基に構築されたアダプティブForms向けに、事前に構築された送信アクションの配列を提供します。 標準のこれらの送信アクションを使用すると、次のことができます。
 
-* [REST エンドポイントへの送信](#submit-to-rest-endpoint)
-* [メールを送信](#send-email)
-* [フォームデータモデルを使用して送信](#submit-using-form-data-model)
-* [AEM ワークフローを起動](#invoke-an-aem-workflow)
-* [SharePoint に送信](#submit-to-sharedrive)
-* [OneDrive に送信](#submit-to-onedrive)
-* [Azure Blob Storage に送信](#azure-blob-storage)
+* フォームデータを E メールで簡単に送信できます。
+* データの送信中に、Microsoft Power Automate のフローまたはAEMのワークフローを開始します。
+* フォームデータをMicrosoft SharePoint Server、Microsoft Azure Blob Storage、またはMicrosoft OneDrive に直接送信します。
+* フォームデータモデルを使用して、設定済みのデータソースにデータをシームレスに送信します。
+* データを REST エンドポイントに送信すると便利です。
 
-[デフォルトの送信アクションを拡張](custom-submit-action-form.md)して、独自の送信アクションを作成することもできます。
+また、 [デフォルトの送信アクションの拡張](custom-submit-action-form.md) ：独自の送信アクションを作成します。
 
-サイドバーにあるアダプティブフォームコンテナプロパティの「**[!UICONTROL 送信]**」セクションで、送信アクションを設定できます。
+## アダプティブフォームの送信アクションの選択と設定 {#select-and-configure-submit-action}
 
-![送信アクションの設定](assets/submission.png)
+フォームの送信アクションを選択して設定するには、次の手順を実行します。
 
+1. コンテンツブラウザーを開き、「 **[!UICONTROL ガイドコンテナ]** アダプティブフォームのコンポーネント
+1. ガイドコンテナのプロパティをクリックします。 ![ガイドのプロパティ](/help/forms/assets/configure-icon.svg) アイコン アダプティブフォームコンテナダイアログボックスが開きます。
+
+1. 次をクリック：  **[!UICONTROL 送信]** タブをクリックします。
+
+   ![レンチアイコンをクリックしてアダプティブフォームコンテナダイアログボックスを開き、送信アクションを設定します](/help/forms/assets/adaptive-forms-submit-message.png)
+
+1. の選択と設定 **[!UICONTROL 送信アクション]**、要件に応じて。 選択した送信アクションの詳細については、次を参照してください。
+
+   * [メールを送信](#send-email)
+   * [SharePoint に送信](#submit-to-sharedrive)
+   * [フォームデータモデルを使用して送信](#submit-using-form-data-model)
+   * [Azure Blob Storage に送信](#azure-blob-storage)
+   * [REST エンドポイントへの送信](#submit-to-rest-endpoint)
+   * [OneDrive に送信](#submit-to-onedrive)
+   * [AEM ワークフローを起動](#invoke-an-aem-workflow)
+
+## メールを送信 {#send-email}
+
+フォームの送信に成功した場合に 1 人または複数の受信者に電子メールを送信するには、 **[!UICONTROL メールの送信]** 送信アクション。 このアクションを使用すると、事前に定義された形式のフォームデータを含む電子メールを作成できます。 例えば、次のテンプレートで、送信されたフォームデータから顧客名、配送先住所、都道府県名、郵便番号が取得されるとします。
+
+    ```
+    
+    こんにちは ${customer_Name} さん、
+    
+    以下がデフォルトの配送先住所として設定されています。
+    ${customer_Name}、
+    ${customer_Shipping_Address}、
+    ${customer_State}、
+    ${customer_ZIPCode}
+    
+    よろしくお願いいたします。
+    WKND
+    
+    ```
+
+>[!NOTE]
+>
+> * アダプティブフォーム内の別のパネルに配置されている場合でも、すべてのフォームフィールドに一意の要素名を付けることが非常に重要です。
+> * AEM as a Cloud Serviceを使用する場合、送信電子メールでは暗号化が必要です。 デフォルトでは、送信電子メール機能は無効になっています。 有効化するには、サポートチケットをに送信します。 [アクセスを申請](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ja#sending-email).
+
+さらに、 **[!UICONTROL メールの送信]** 送信アクションには、電子メールに添付ファイルとレコードのドキュメント (DoR) を含めるオプションが用意されています。
+
+を有効にするには、以下を実行します。 [!UICONTROL レコードのドキュメントを添付] オプションについては、 [アダプティブフォームを設定してレコードのドキュメント (DoR) を生成する](generate-document-of-record-core-components.md). このオプションは、アダプティブフォームのプロパティから有効にすることができます。
 
 <!-- [!NOTE]
 >
@@ -57,6 +102,64 @@ ht-degree: 98%
 
 
 -->
+
+## SharePoint に送信 {#submit-to-sharedrive}
+
+「**[!UICONTROL SharePoint に送信]**」送信アクションは、アダプティブフォームと Microsoft® SharePoint ストレージを接続します。フォームデータファイル、添付ファイル、またはレコードのドキュメントを、接続された Microsoft Sharepoint ストレージに送信できます。アダプティブフォームで「**[!UICONTROL SharePoint に送信]**」送信アクションを使用するには、次の手順に従います。
+
+1. [SharePoint 設定の作成](#create-a-sharepoint-configuration-create-sharepoint-configuration)：AEM Forms を Microsoft Sharepoint ストレージに接続します。
+2. [アダプティブフォームでの「SharePoint に送信」送信アクションの使用](#use-sharepoint-configuartion-in-af)：アダプティブフォームを設定済みの Microsoft® SharePoint に接続します。
+
+### Microsoft SharePoint 設定の作成 {#create-sharepoint-configuration}
+
+AEM Forms を Microsoft® Sharepoint ストレージに接続するには、次の手順に従います。
+
+1. 次に移動： **AEM Forms** インスタンス > **[!UICONTROL ツール]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. **設定コンテナ**&#x200B;を選択します。「設定コンテナ」のチェックボックスをオンにしないでください。 設定コンテナの名前をクリックして選択します。 設定は、選択した設定コンテナに保存されます。
+1. 「**[!UICONTROL 作成]**」をクリックします。SharePoint 設定ウィザードが表示されます。
+   ![SharePoint の設定](/help/forms/assets/sharepoint_configuration.png)
+1. 「**[!UICONTROL タイトル]**」、「**[!UICONTROL クライアント ID]**」、「**[!UICONTROL クライアント秘密鍵]**」および「**[!UICONTROL OAuth URL]**」を指定します。OAuth URL のクライアント ID、クライアントの秘密鍵、テナント ID を取得する方法について詳しくは、[Microsoft® のドキュメント](https://learn.microsoft.com/ja-jp/graph/auth-register-app-v2)を参照してください。
+   * アプリの `Client ID` と `Client Secret` は Microsoft® Azure Portal から取得できます。
+   * Microsoft® Azure Portal で、リダイレクト URI を `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html` として追加します。置換 `[author-instance]` をAEM Formsオーサーインスタンスの URL に置き換えます。
+   * API 権限 `offline_access` および `Sites.Manage.All` を追加して、読み取り／書き込み権限を付与します。
+   * OAuth URL `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize` を使用します。`<tenant-id>` を Microsoft® Azure Portal のアプリの `tenant-id` に置き換えます。
+
+   >[!NOTE]
+   >
+   > この **クライアント秘密鍵** フィールドは、Azure Active Directory アプリケーションの構成に応じて、必須またはオプションです。 アプリケーションでクライアント秘密鍵を使用するように設定されている場合は、クライアントの秘密鍵を指定する必要があります。
+
+1. 「**[!UICONTROL 接続]**」をクリックします。接続に成功した場合、`Connection Successful` のメッセージが表示されます。
+
+1. データを保存するフォルダーを選択するには、「 」を選択します。 **SharePoint Site** > **ドキュメントライブラリ** > **SharePoint Folder**、 、 。
+
+   >[!NOTE]
+   >
+   >* デフォルトでは、 `forms-ootb-storage-adaptive-forms-submission` 選択したSharePoint Site でフォルダーを使用できます。 フォルダーが使用できない場合は、 **フォルダーを作成** オプションを使用して作成できます。
+
+これで、このSharePoint Sites 設定を **SharePointに送信** アダプティブフォームでの送信アクション
+
+### アダプティブフォームで「SharePointに送信」送信アクションを使用する {#use-sharepoint-configuartion-in-af}
+
+前の節で作成したSharePoint設定を使用して、データやレコードのドキュメントをSharePointフォルダーに保存できます。 アダプティブフォームで「 SharePointに送信」送信アクションを使用するには、以下の手順を実行します。
+
+1. 「[アダプティブフォーム](/help/forms/creating-adaptive-form.md)」を作成します。アダプティブフォームの作成時に、 [!UICONTROL 設定コンテナ] 使用対象 [SharePoint設定の作成](#create-sharepoint-configuration).
+
+   >[!NOTE]
+   >
+   > いいえの場合 [!UICONTROL 設定コンテナ] が選択されている場合、グローバル [!UICONTROL ストレージ設定] 送信アクションのプロパティウィンドウにフォルダが表示されます。
+
+1. 「**送信アクション**」を「**[!UICONTROL SharePoint に送信]**」として選択します。
+1. 設定済みの **[!UICONTROL ストレージ設定]**. フォームデータとレコードのドキュメントを保存するためのSharePointのフォルダーを指定します。
+1. 「**[!UICONTROL 保存]**」をクリックして、送信設定を保存します。
+
+フォームを送信すると、データは指定されたMicrosoft® Sharepoint の保存場所（フォルダー）に保存されます。
+保存されたデータのフォルダー構造は `/folder_name/form_name/year/month/date/submission_id/data`.
+
+## フォームデータモデルを使用して送信 {#submit-using-form-data-model}
+
+「**[!UICONTROL フォームデータモデルを使用して送信]**」送信アクションでは、フォームデータモデルの特定のデータモデルオブジェクトで送信したアダプティブフォームデータをデータソースに書き込みます。送信アクションの設定時に、データソースに書き戻す送信済みデータを持つデータモデルオブジェクトを選択できます。
+
+さらに、フォームデータモデルとレコードのドキュメント（DoR）を使用して、フォームの添付ファイルをデータソースに送信できます。フォームデータモデルについて詳しくは、[[!DNL AEM Forms]  のデータ統合機能](data-integration.md)を参照してください。
 
 ## REST エンドポイントへの送信 {#submit-to-rest-endpoint}
 
@@ -95,34 +198,6 @@ ht-degree: 98%
 >
 >フィールドを REST URL 内のパラメーターとして渡すためには、すべてのフィールドが異なる要素名を持っている必要があります。これは、異なるパネルに置かれているフィールドにも適用されます。
 
-## メールを送信 {#send-email}
-
-「**[!UICONTROL メールを送信]**」送信アクションでは、フォームの送信が完了すると同時に、1 人または複数の受信者にメールが送信されます。生成されるメールには、事前に定義された形式のフォームデータを含めることができます。例えば、以下のテンプレートでは、顧客名、配送先住所、州名、郵便番号が、送信されたフォームデータから取得されます。
-
-    ```
-    
-    こんにちは ${customer_Name} さん、
-    
-    以下がデフォルトの配送先住所として設定されています。
-    ${customer_Name}、
-    ${customer_Shipping_Address}、
-    ${customer_State}、
-    ${customer_ZIPCode}
-    
-    よろしくお願いいたします。
-    WKND
-    
-    ```
-
->[!NOTE]
->
-> * フィールドがアダプティブフォームの異なるパネルに配置されている場合でも、すべてのフォームフィールドは異なる要素名を持っている必要があります。
-> * AEM as a Cloud Service では、送信メールを暗号化する必要があります。デフォルトでは、送信メールは無効になっています。有効にするには、[アクセスのリクエスト](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ja#sending-email)にサポートチケットを送信します。
-
-メールには、添付ファイルとレコードのドキュメント（DoR）を含めることもできます。「**[!UICONTROL レコードのドキュメントを添付]**」オプションを有効にするには、レコードのドキュメント（DoR）を生成するようにアダプティブフォームを設定します。このオプションを有効にして、アダプティブフォームのプロパティからレコードのドキュメントを生成できます。
-
-
-
 <!-- ## Send PDF via Email {#send-pdf-via-email}
 
 The **Send PDF via Email** Submit Action sends an email with a PDF containing form data, to one or more recipients on successful submission of the form.
@@ -137,11 +212,7 @@ The **Submit to Forms workflow** submit option sends a data xml and file attachm
 
 For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). -->
 
-## フォームデータモデルを使用して送信 {#submit-using-form-data-model}
 
-「**[!UICONTROL フォームデータモデルを使用して送信]**」送信アクションでは、フォームデータモデルの特定のデータモデルオブジェクトで送信したアダプティブフォームデータをデータソースに書き込みます。送信アクションの設定時に、データソースに書き戻す送信済みデータを持つデータモデルオブジェクトを選択できます。
-
-さらに、フォームデータモデルとレコードのドキュメント（DoR）を使用して、フォームの添付ファイルをデータソースに送信できます。フォームデータモデルについて詳しくは、[[!DNL AEM Forms]  のデータ統合機能](data-integration.md)を参照してください。
 
 <!--
 ## Forms Portal Submit Action {#forms-portal-submit-action}
@@ -170,60 +241,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 * **[!UICONTROL 処理サーバーのパスワード]**：ワークフローユーザーのパスワード
 
-## SharePoint に送信 {#submit-to-sharedrive}
 
-「**[!UICONTROL SharePoint に送信]**」送信アクションは、アダプティブフォームと Microsoft® SharePoint ストレージを接続します。フォームデータファイル、添付ファイル、またはレコードのドキュメントを、接続された Microsoft Sharepoint ストレージに送信できます。アダプティブフォームで「**[!UICONTROL SharePoint に送信]**」送信アクションを使用するには、次の手順に従います。
-
-1. [SharePoint 設定の作成](#create-a-sharepoint-configuration-create-sharepoint-configuration)：AEM Forms を Microsoft Sharepoint ストレージに接続します。
-2. [アダプティブフォームでの「SharePoint に送信」送信アクションの使用](#use-sharepoint-configuartion-in-af)：アダプティブフォームを設定済みの Microsoft® SharePoint に接続します。
-
-### Microsoft SharePoint 設定の作成 {#create-sharepoint-configuration}
-
-AEM Forms を Microsoft® Sharepoint ストレージに接続するには、次の手順に従います。
-
-1. **AEM Forms オーサー**&#x200B;インスタンス／**[!UICONTROL ツール]**／**[!UICONTROL Cloud Services]**／**[!UICONTROL Microsoft® SharePoint]** に移動します。
-1. **[!UICONTROL Microsoft® SharePoint]** を選択すると、**[!UICONTROL SharePoint ブラウザー]**&#x200B;にリダイレクトされます。
-1. **設定コンテナ**&#x200B;を選択します。設定は、選択した設定コンテナに保存されます。
-1. 「**[!UICONTROL 作成]**」をクリックします。SharePoint 設定ウィザードが表示されます。
-   ![SharePoint の設定](/help/forms/assets/sharepoint_configuration.png)
-1. 「**[!UICONTROL タイトル]**」、「**[!UICONTROL クライアント ID]**」、「**[!UICONTROL クライアント秘密鍵]**」および「**[!UICONTROL OAuth URL]**」を指定します。OAuth URL のクライアント ID、クライアントの秘密鍵、テナント ID を取得する方法について詳しくは、[Microsoft® のドキュメント](https://learn.microsoft.com/ja-jp/graph/auth-register-app-v2)を参照してください。
-   * アプリの `Client ID` と `Client Secret` は Microsoft® Azure Portal から取得できます。
-   * Microsoft® Azure Portal で、リダイレクト URI を `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html` として追加します。`[author-instance]` をオーサーインスタンスの URL に置き換えます。
-   * API 権限 `offline_access` および `Sites.Manage.All` を追加して、読み取り／書き込み権限を付与します。
-   * OAuth URL `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize` を使用します。`<tenant-id>` を Microsoft® Azure Portal のアプリの `tenant-id` に置き換えます。
-
-   >[!NOTE]
-   >
-   > **クライアント秘密鍵**&#x200B;フィールドは、Azure Active Directory アプリケーションの設定に応じて、必須またはオプションになります。アプリケーションでクライアント秘密鍵を使用するように設定されている場合は、クライアントの秘密鍵を指定する必要があります。
-
-1. 「**[!UICONTROL 接続]**」をクリックします。接続に成功した場合、`Connection Successful` のメッセージが表示されます。
-
-1. **SharePoint サイト**／**ドキュメントライブラリ**／**SharePoint フォルダー**&#x200B;を選択して、データを保存します。
-
-   >[!NOTE]
-   >
-   >* デフォルトでは、`forms-ootb-storage-adaptive-forms-submission` は選択した SharePoint サイトに存在します。
-   >* 選択した SharePoint サイトの `Documents` ライブラリにまだ存在しない場合は、「**フォルダーを作成**」をクリックして、フォルダーを `forms-ootb-storage-adaptive-forms-submission` として作成します。
-
-アダプティブフォームの送信アクションに、この SharePoint サイト設定を使用できるようになりました。
-
-### アダプティブフォームでの SharePoint 設定の使用 {#use-sharepoint-configuartion-in-af}
-
-作成した SharePoin 設定をアダプティブフォーム内で使用すると、データや生成済みレコードのドキュメントを SharePoint フォルダーに保存できます。 アダプティブフォームで SharePoint ストレージ設定を使用するには、次の手順を実行します。
-1. [アダプティブフォーム](/help/forms/creating-adaptive-form.md)を作成します。
-
-   >[!NOTE]
-   >
-   > * SharePoint ストレージを作成したアダプティブ フォームと同じ[!UICONTROL 設定コンテナ]を選択します。
-   > * [!UICONTROL 設定コンテナ]が選択されていない場合、グローバルな[!UICONTROL ストレージ設定]フォルダーが送信アクションのプロパティウィンドウに表示されます。
-
-1. 「**送信アクション**」を「**[!UICONTROL SharePoint に送信]**」として選択します。
-   ![SharePoint GIF](/help/forms/assets/sharedrive-video.gif)
-1. データを保存する場所に「**[!UICONTROL ストレージ設定]**」を選択します。
-1. 「**[!UICONTROL 保存]**」をクリックして、送信設定を保存します。
-
-フォームを送信すると、データは指定した Microsoft® Sharepoint ストレージに保存されます。
-データを保存するフォルダー構造は `/folder_name/form_name/year/month/date/submission_id/data` です。
 
 ## OneDrive に送信 {#submit-to-onedrive}
 
