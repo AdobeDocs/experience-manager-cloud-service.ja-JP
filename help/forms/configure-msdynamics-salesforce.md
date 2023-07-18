@@ -2,14 +2,19 @@
 title: Microsoft Dynamics 365 および Salesforce の標準のフォームデータモデルをアダプティブフォーム用に設定する方法
 description: Microsoft Dynamics 365 と Salesforce をアダプティブフォームに統合する方法を説明します。
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 99%
+source-wordcount: '957'
+ht-degree: 98%
 
 ---
 
 # [!DNL Microsoft Dynamics 365] および [!DNL Salesforce] クラウドサービスの設定 {#configure-azure-storage}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
+| AEM as a Cloud Service | この記事 |
 
 [[!DNL Experience Manager Forms] データ統合](data-integration.md)では、アダプティブフォームを [!DNL Microsoft Dynamics 365] および [!DNL Salesforce] の標準のフォームデータモデルに統合するためのクラウドサービスを提供しています。その結果、アダプティブフォームは、[!DNL Microsoft Dynamics 365] および [!DNL Salesforce] サーバーとやり取りして、ビジネスワークフローを有効にすることができます。次に例を示します。
 
@@ -30,11 +35,11 @@ ht-degree: 99%
 
 * [OAuth 対応の接続された [!DNL Salesforce]  アプリケーションを作成](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&amp;type=5)します。接続された [!DNL Salesforce] アプリケーションを作成する際に、次の形式でコールバック URL を指定します。
 
-   ```
-   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
-   ```
+  ```
+  https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
+  ```
 
-   ここで、[server] と [port] は [!DNL AEM Forms] サーバーのホスト名とポート番号を示します。
+  ここで、[server] と [port] は [!DNL AEM Forms] サーバーのホスト名とポート番号を示します。
 
 * [!DNL Salesforce] 接続アプリケーションを作成する際に、OAuth 範囲の値として `full` と `offline_access` を指定します。
 
@@ -66,11 +71,11 @@ ht-degree: 99%
 
 * [ [!DNL Microsoft Dynamics 365] のアプリケーションを Azure Active Directory に登録](https://docs.microsoft.com/ja-jp/powerapps/developer/data-platform/walkthrough-register-app-azure-active-directory)します。[!DNL Microsoft Dynamics 365] 接続アプリケーションを作成する際に、次の形式で応答 URL を指定します。
 
-   ```
-   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
-   ```
+  ```
+  https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
+  ```
 
-   ここで、[server] と [port] は [!DNL AEM Forms] サーバーのホスト名とポート番号を示します。
+  ここで、[server] と [port] は [!DNL AEM Forms] サーバーのホスト名とポート番号を示します。
 
 * 接続アプリケーションのクライアント ID（「アプリケーション ID」とも呼ばれます）とクライアントの秘密鍵の値を書き留めます。
 

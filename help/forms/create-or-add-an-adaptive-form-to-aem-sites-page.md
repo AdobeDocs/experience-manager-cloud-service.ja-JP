@@ -1,11 +1,11 @@
 ---
 title: アダプティブフォームをAEM Sitesページに追加する方法
-description: アダプティブフォームを容易に作成またはAEM Sitesページに追加する方法を学びます。 フォームを Web サイトに統合し、デジタルエクスペリエンスを最適化して効果を最大限に高めるための、順を追った手法とベストプラクティスについて説明します。
+description: アダプティブフォームを作成するか、AEM Sitesページに追加する方法を確認します。 また、利点や、フォームを Web サイトに統合する様々な方法についても説明します。
 feature: Adaptive Forms, Page Editor, Authoring
-Keywords: adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 53997540cc469f4cc2ad747ca4e52b531a7b193e
+Keywords: af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
+source-git-commit: 05401630484fa881da1304b6d0301670248b9889
 workflow-type: tm+mt
-source-wordcount: '3232'
+source-wordcount: '3224'
 ht-degree: 3%
 
 ---
@@ -181,7 +181,7 @@ Sites ページでアダプティブフォームを作成するには：
 
 1. アダプティブフォームを含むAEM Sitesページを ( アダプティブFormsコンテナコンポーネントで ) 編集モードで開きます。
 1. コンテンツツリーを開き、 **[!UICONTROL アダプティブFormsコンテナ]** アダプティブフォームをホストする 1 つのAEM Sitesページで複数のアダプティブFormsをホストできます。 したがって、適切なアダプティブFormsコンテナを慎重に選択してください。
-1. メニューバーで、 ![エクスペリエンスフラグメントバリエーションに変換アイコン](/help/forms/assets/Smock_FilingCabinet_18_N.svg) エクスペリエンスフラグメントバリエーションに変換アイコン
+1. メニューバーで、 ![エクスペリエンスフラグメントに変換アイコン](/help/forms/assets/Smock_FilingCabinet_18_N.svg) エクスペリエンスフラグメントバリエーションに変換アイコン
    ![ファイルキャビネットのロゴをクリックして、AEM Sitesページのアダプティブフォームをエクスペリエンスフラグメントに変換する](/help/forms/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
    アダプティブフォームコンテナを新しいエクスペリエンスフラグメントに変換するか、既存のエクスペリエンスフラグメントに追加するためのダイアログボックスが表示されます
@@ -200,7 +200,7 @@ Sites ページでアダプティブフォームを作成するには：
 1. アダプティブフォームを含むAEMページエディターまたはエクスペリエンスフラグメントを開きます。
 1. コンテンツツリーを開き、 **[!UICONTROL アダプティブFormsコンテナ]** アダプティブフォームをホストする 1 つのAEM Sitesページで複数のアダプティブFormsをホストできます。 したがって、適切なアダプティブFormsコンテナを慎重に選択してください。
 1. アダプティブフォームコンテナのプロパティをクリックします。 ![アダプティブフォームコンテナのプロパティ](/help/forms/assets/configure-icon.svg) アイコン 送信アクションを設定するアダプティブフォームコンテナダイアログボックスが開きます。
-   ![レンチアイコンをクリックしてアダプティブフォームコンテナダイアログボックスを開き、送信アクションを設定します](/help/forms/assets/adaptive-forms-container.png)
+   ![レンチアイコンをクリックしてアダプティブフォームコンテナダイアログボックスを開き、アダプティブフォームの送信アクションを設定します](/help/forms/assets/adaptive-forms-container.png)
 1. 必要に応じて、送信アクションを選択して設定します。 送信アクションについて詳しくは、 [アダプティブフォーム送信アクション](/help/forms/configuring-submit-actions.md)
 
 
@@ -216,7 +216,7 @@ Sites ページでアダプティブフォームを作成するには：
 1. アダプティブフォームを含むAEMページエディターまたはエクスペリエンスフラグメントを開きます。
 1. コンテンツツリーを開き、 **[!UICONTROL アダプティブFormsコンテナ]** アダプティブフォームをホストする 1 つのAEM Sitesページで複数のアダプティブFormsをホストできます。 したがって、適切なアダプティブFormsコンテナを慎重に選択してください。
 1. アダプティブフォームコンテナのプロパティをクリックします。 ![アダプティブフォームコンテナのプロパティ](/help/forms/assets/configure-icon.svg) アイコン データモデルを設定するためのアダプティブフォームコンテナダイアログボックスが開きます。
-   ![レンチアイコンをクリックしてアダプティブフォームコンテナダイアログボックスを開き、アダプティブフォームのデータモデルを設定します](/help/forms/assets/form-data-model-adaptive-forms-container.png)
+   ![レンチアイコンをクリックして、アダプティブフォームのデータモデルを設定します](/help/forms/assets/form-data-model-adaptive-forms-container.png)
 1. 必要に応じて、JSON スキーマまたはフォームデータモデルを選択し、設定します。 送信アクションについて詳しくは、 [アダプティブフォーム送信アクション](/help/forms/configuring-submit-actions.md).
 
    * を選択し、 **[!UICONTROL フォームモデル]** オプションを選択する場合は、 **[!UICONTROL フォームデータモデルを選択]** 」オプションを使用して事前設定済みのフォームデータモデルを選択します。
@@ -238,7 +238,7 @@ Sites ページでアダプティブフォームを作成するには：
 1. アダプティブフォームを含むAEMページエディターまたはエクスペリエンスフラグメントを開きます。
 1. コンテンツツリーを開き、 **[!UICONTROL アダプティブFormsコンテナ]** アダプティブフォームをホストする 1 つのAEM Sitesページで複数のアダプティブFormsをホストできます。 したがって、適切なアダプティブFormsコンテナを慎重に選択してください。
 1. アダプティブフォームコンテナのプロパティをクリックします。 ![アダプティブフォームコンテナのプロパティ](/help/forms/assets/configure-icon.svg) アイコン データモデルを設定するためのアダプティブフォームコンテナダイアログボックスが開きます。
-   ![レンチアイコンをクリックしてアダプティブフォームコンテナダイアログボックスを開き、事前入力サービスを設定します](/help/forms/assets/adaptive-forms-container.png)
+   ![レンチアイコンをクリックしてアダプティブフォームコンテナダイアログボックスを開き、アダプティブフォームの事前入力サービスを設定します](/help/forms/assets/adaptive-forms-container.png)
 1. フォームデータモデルを選択. を開きます。 **[!UICONTROL 基本]** タブをクリックします。 事前入力サービスで、「 」を選択します。 **[!UICONTROL フォームデータモデルの事前入力サービス]**.
 1. 「**[!UICONTROL 完了]**」をクリックします。これで、アダプティブフォームがフォームデータモデルの事前入力を使用するように設定されました。 これで、 [ルールエディター](rule-editor.md) ：フォームのフィールドに事前入力するルールを作成します。
 

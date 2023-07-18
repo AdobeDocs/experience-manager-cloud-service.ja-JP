@@ -2,14 +2,19 @@
 title: テーマを作成および使用してアダプティブフォームのスタイルを設定する
 description: テーマを使用して、アダプティブフォームのスタイルを設定し、視覚的に表現できます。任意の数のアダプティブフォームで、テーマを共有できます。
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '5499'
+source-wordcount: '5519'
 ht-degree: 99%
 
 ---
 
 # テーマの作成および使用 {#creating-and-using-themes}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
+| AEM as a Cloud Service | この記事 |
 
 アダプティブフォーム<!-- or an interactive communication-->のスタイル設定にテーマを作成して適用できます。テーマには、コンポーネントとパネルのスタイルを設定するための詳細情報が含まれています。スタイルには、背景カラー、ステートカラー、透明度、配置、サイズなどのプロパティが含まれます。テーマを適用すると、指定したスタイルが対応するコンポーネントに反映されます。テーマは、アダプティブフォーム<!-- or interactive communication -->を参照せずに、独立して管理されます。
 

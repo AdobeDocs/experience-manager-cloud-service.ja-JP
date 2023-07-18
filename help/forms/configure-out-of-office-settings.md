@@ -4,14 +4,19 @@ seo-title: Configure Out of Office settings
 description: 不在時の設定
 seo-description: Configure Out of Office settings
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 100%
+source-wordcount: '819'
+ht-degree: 99%
 
 ---
 
 # 不在設定の指定 {#configure-out-of-office-settings}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html) |
+| AEM as a Cloud Service | この記事 |
 
 不在にする予定がある場合は、その期間に割り当てられる項目に対して実行する操作を指定できます。
 
@@ -28,7 +33,6 @@ ht-degree: 100%
 >* 不在設定をオフにしても、委任された項目は、自動的には割り当て直されません。クレーム機能を使用して、項目を自分に割り当てることができます。
 >* ユーザー A が項目をユーザー B に委任し、ユーザー B がさらにユーザー C に委任すると、項目はユーザー C にのみ割り当てられ、ユーザー B には割り当てられません。
 >* 割り当てにループがある場合、タスクは元のユーザーに残ります。例えば、ユーザー A が項目をユーザー B に委任し、ユーザー B がユーザー C に委任し、ユーザー C がユーザー D に委任し、ユーザー D がユーザー B に委任すると、ループが作成されます。この場合、項目は元のユーザーに残ります。上記の例では、ユーザー A が元のユーザーです。
-
 
 ## アカウントの不在設定を有効にする {#enable-out-of-office}
 

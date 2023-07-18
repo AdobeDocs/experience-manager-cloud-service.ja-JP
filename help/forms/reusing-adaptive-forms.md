@@ -4,14 +4,19 @@ seo-title: Reuse metadata properties of an Adaptive Form
 description: 既存のアダプティブフォームを再利用して、新しいアダプティブフォームを作成することができます。
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 98%
+source-wordcount: '554'
+ht-degree: 97%
 
 ---
 
 # アダプティブフォームのメタデータプロパティの再利用 {#reusing-adaptive-forms}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/reusing-adaptive-forms.html) |
+| AEM as a Cloud Service | この記事 |
 
 既存のアダプティブフォームの一部のプロパティを使用して新しいアダプティブフォームを生成する場合は、単純にコピーと貼り付けの機能を使用できます。さらに、新しいアダプティブフォームを希望のフォルダーパスに貼り付けることもできます。すべてのメタデータプロパティが複製され、XFA ベースのアダプティブフォームの XFA と XSD ベースのアダプティブフォームの XSD もコピーされます。
 

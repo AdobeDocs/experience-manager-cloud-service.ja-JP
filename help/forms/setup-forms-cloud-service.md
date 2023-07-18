@@ -2,14 +2,20 @@
 title: ' [!DNL AEM Forms]  as a Cloud Service 環境の設定方法 '
 description: ' [!DNL AEM Forms]  as a Cloud Service 環境のセットアップと設定方法の説明'
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 91%
+source-wordcount: '634'
+ht-degree: 92%
 
 ---
 
 # [!DNL AEM Forms] as a Cloud Service へのオンボード {#overview}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html?lang=ja) |
+| AEM as a Cloud Service | この記事 |
+
 
 ## ペルソナの決定 {#personas-aem-forms-project}
 

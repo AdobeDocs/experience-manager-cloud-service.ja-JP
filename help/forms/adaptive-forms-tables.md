@@ -6,14 +6,21 @@ seo-description: The Table component in AEM Forms lets you create tables in adap
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '2415'
+source-wordcount: '2435'
 ht-degree: 96%
 
 ---
 
 # アダプティブフォームのテーブル {#tables-in-adaptive-forms}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-forms-tables.html) |
+| AEM as a Cloud Service | この記事 |
+
+
 
 複雑なデータであっても、テーブルを使用することで、効果的かつシンプルにまとめて提示できます。情報をわかりやすく配置し、行と列に分けて規則正しく配列することで、ユーザーも入力しやすくなります。金融サービスや政府機関が提供するフォームの大部分は、数字を入力して計算を実行できる大規模なデータテーブルを必要とします。
 

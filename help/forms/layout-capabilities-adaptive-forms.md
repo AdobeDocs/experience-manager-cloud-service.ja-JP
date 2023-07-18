@@ -3,14 +3,19 @@ title: アダプティブフォームのレイアウト機能
 seo-title: Layout capabilities of Adaptive Forms
 description: 各種デバイスごとのアダプティブフォームのレイアウトと外観はレイアウト設定で管理できます。各種レイアウトとレイアウトの適用方法について説明します。
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '799'
 ht-degree: 86%
 
 ---
 
 # アダプティブフォームのレイアウト機能 {#layout-capabilities-of-adaptive-forms}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
+| AEM as a Cloud Service | この記事 |
 
 [!DNL Adobe Experience Manager]では、簡単に使用できるアダプティブフォームを作成でき、エンドユーザーに動的なエクスペリエンスを提供します。フォームのレイアウトは、アダプティブフォームでの各項目やコンポーネントの表示方法をコントロールします。
 

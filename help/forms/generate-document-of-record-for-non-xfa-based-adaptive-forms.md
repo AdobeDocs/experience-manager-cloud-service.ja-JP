@@ -2,14 +2,19 @@
 title: アダプティブフォームにおけるレコードのドキュメントの生成
 description: ここでは、アダプティブフォーム向けのレコードのドキュメント（DoR）テンプレートを生成する方法について説明します。
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
-workflow-type: ht
-source-wordcount: '4066'
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+workflow-type: tm+mt
+source-wordcount: '4086'
 ht-degree: 100%
 
 ---
 
 # アダプティブフォームにおけるレコードのドキュメントの生成
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ja) |
+| AEM as a Cloud Service | この記事 |
 
 ## 概要 {#overview}
 
@@ -358,6 +363,7 @@ When you select a form model, configure Document of Record using options availab
       * **免責事項テキスト**：免責事項のテキスト。
 
       ![マスターページのプロパティ](/help/forms/assets/masterpagepropertiesdor.png)
+
    >[!NOTE]
    >
    >バージョン 6.3 より前の Forms Designer で作成されたアダプティブフォームテンプレートを使用している場合、アクセントカラーおよびフォントファミリーのプロパティを適用するには、ルートサブフォームの下にあるアダプティブフォームテンプレートに以下が存在することを確認してください。

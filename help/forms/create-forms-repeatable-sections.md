@@ -2,7 +2,7 @@
 title: アダプティブフォームでの繰り返し可能性（コアコンポーネント）
 description: パネルコンポーネントの再現性機能を使用して、アダプティブフォーム内で同様のセクションを繰り返します。
 role: Architect, Developer, Admin, User
-source-git-commit: bf45e7b935c3e57c2ecf77d9391abda80ee4a761
+source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
 workflow-type: tm+mt
 source-wordcount: '1410'
 ht-degree: 45%
@@ -97,6 +97,7 @@ ht-degree: 45%
    * 「パネルを削除」ボタンを作成するには、`this.panel.instanceManager.removeInstance(this.panel.instanceIndex)` を指定します。
 
    「**完了**」をクリックします。
+>[!VIDEO](https://video.tv.adobe.com/v/3421620/adaptive-forms-repeatable-sections)
 
 >[!NOTE]
 >

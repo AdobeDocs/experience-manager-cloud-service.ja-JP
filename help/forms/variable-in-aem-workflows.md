@@ -2,14 +2,19 @@
 title: AEM ワークフローステップで変数を追加する方法
 description: 変数の作成、変数の値の設定、 [!DNL AEM Forms]  ワークフローステップでの変数の使用について説明します。
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '2060'
+source-wordcount: '2080'
 ht-degree: 98%
 
 ---
 
 # Forms 中心の AEM ワークフローの変数 {#variables-in-aem-forms-workflows}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html) |
+| AEM as a Cloud Service | この記事 |
 
 ワークフローモデルの変数は、そのデータタイプに基づいて値を格納する方法です。ワークフローステップで変数の名前を使用して、変数に格納されている値を取得できます。変数名を使用して、ルーティング上の決定を行う式を定義することもできます。
 

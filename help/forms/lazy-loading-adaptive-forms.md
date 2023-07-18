@@ -5,14 +5,20 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '997'
-ht-degree: 100%
+source-wordcount: '1017'
+ht-degree: 99%
 
 ---
 
 # 遅延読み込みによる大きなフォームのパフォーマンスの向上 {#improve-performance-of-large-forms-with-lazy-loading}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/lazy-loading-adaptive-forms.html) |
+| AEM as a Cloud Service | この記事 |
+
 
 ## 遅延読み込みの概要 {#introduction-to-lazy-loading}
 
@@ -27,17 +33,17 @@ ht-degree: 100%
 * **フラグメントの特定と作成**
 遅延読み込みを設定できるのは、アダプティブフォームのフラグメントのみです。フラグメントとは、アダプティブフォームの外側にある独立したセグメントで、フォーム間で再利用できます。したがって、遅延読み込みを実装するための最初の手順は、フォーム内の論理的なセクションを特定し、それらをフラグメントに変換することです。フラグメントは、最初から作成することも、または既存のフォームパネルをフラグメントとして保存することもできます。
 
-   <!--For more information about creating fragments, see [Adaptive Form Fragments](adaptive-form-fragments.md).-->
+  <!--For more information about creating fragments, see [Adaptive Form Fragments](adaptive-form-fragments.md).-->
 
 * **グローバルな値の特定とマーク付け**
 フォームベースのトランザクションには、ユーザーからの適切なデータを取得し、それを処理してフォーム入力エクスペリエンスを簡素化するための動的な要素が含まれます。例えば、フォームのフラグメント X 内にフィールド A があり、その値が別のフラグメント内のフィールド B の有効性を決定するとします。この場合、フラグメント X が遅延読み込みに対してマーク付けされた場合、フィールド A の値は、フラグメント X が読み込まれていないときでも、フィールド B を検証するために利用できる必要があります。これを実現するには、フィールド A をグローバルとしてマーク付けします。これにより、その値が、フラグメント X が読み込まれていないときでもフィールド B の検証のために使用できるようになります。
 
-   フィールド値をグローバルにする方法については、[遅延読み込みの設定](lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p)を参照してください。
+  フィールド値をグローバルにする方法については、[遅延読み込みの設定](lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p)を参照してください。
 
 * **フィールドの表示をコントロールするルールの記述**
 フォームには、必ずしもすべてのユーザーや条件に適用されないフィールドやセクションがいくつか含まれます。フォームの作成者や開発者は、ユーザーの入力に基づいてその表示をコントロールするために表示／非表示ルールを使用します。例えば、会社住所フィールドは、フォームの職業ステータスで無職を選択したユーザーには表示されません。ルールの作成について詳しくは、[ルールエディターの使用](rule-editor.md)を参照してください。
 
-   遅延読み込みされたフラグメント内で表示ルールを使用して、必要な場合にのみ条件付きフィールドを表示させることができます。また、条件付きフィールドをグローバルとしてマーク付けして、遅延読み込みフラグメントの表示式内でそれを参照することもできます。
+  遅延読み込みされたフラグメント内で表示ルールを使用して、必要な場合にのみ条件付きフィールドを表示させることができます。また、条件付きフィールドをグローバルとしてマーク付けして、遅延読み込みフラグメントの表示式内でそれを参照することもできます。
 
 ## 遅延読み込みの設定 {#configuring-lazy-loading}
 
@@ -81,4 +87,4 @@ ht-degree: 100%
 * フィールドのグローバルに使用できるプロパティを使用して、遅延読み込みパネル内にあるフィールドの値をフォームのその他のすべてのパネルで使用できるようにしてください。
 * フィールドがフラグメント間でグローバルとしてマークされているかどうかにかかわらず、遅延パネル内部のフィールドの参照値を転送しないでください。
 * パネルリセット機能を使用して、パネル上で表示されているすべてのものを、以下のクリック式を使用してリセットしてください。\
-   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()
+  guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()

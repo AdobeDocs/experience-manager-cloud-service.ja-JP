@@ -3,15 +3,21 @@ title: ' [!DNL AEM Forms] as a Cloud Service の概要'
 description: AEM Forms の概要と、ビジネスに適したフォームやドキュメントの作成方法を説明します。サービスとしてのプラットフォーム（PaaS）、エンタープライズクラスのデジタルフォームとビジネスプロセスを管理する方法および Adobe Sign と現在のデータソースに Forms を接続する方法について説明します。
 landing-page-description: AEM as a Cloud Service でのフォームの使用方法を理解します。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 6f07493714c68cb7c6e96a252c4ef1ff9d6ba9ac
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 90%
+source-wordcount: '1157'
+ht-degree: 89%
 
 ---
 
 
 # AEM Forms as a Cloud Service の概要 {#introduction}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html) |
+| AEM as a Cloud Service | この記事 |
+
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] は、複雑なデジタルフォームを作成、管理、公開、更新しながら、送信データをバックエンドプロセス、ビジネスルール、外部データストアに保存する、クラウドネイティブのサービスとしてのプラットフォーム（PaaS）ソリューションを提供します。
 

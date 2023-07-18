@@ -5,14 +5,19 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1002'
 ht-degree: 96%
 
 ---
 
 # [!DNL Microsoft Dynamics] OData 設定 {#microsoft-dynamics-odata-configuration}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html?lang=ja) |
+| AEM as a Cloud Service | この記事 |
 
 ![データ統合](assets/data-integeration.png)
 
@@ -95,7 +100,7 @@ OAuth クライアントを Active Directory Federation Services（AD FS）マ�
 
    * `Client-ID` は、任意の GUID ジェネレーターを使用して生成できるクライアント ID です。
    * `redirect-uri` は、[!DNL Experience Manager Forms] 上の [!DNL Microsoft Dynamics] OData クラウドサービスに対する URL です。[!DNL Experience Manager Forms] と共にインストールされるデフォルトのクラウドサービスは、次の URL にデプロイされます。
-      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
+     `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. 以下のコマンドを実行して、AD FS マシン上でアクセス権を設定します。
 

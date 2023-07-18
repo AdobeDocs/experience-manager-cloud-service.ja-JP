@@ -5,14 +5,20 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 1f3104d4a986018675f751afa04fe0ed3b7f5c26
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1551'
 ht-degree: 91%
 
 ---
 
 # フォームデータモデルの作成 {#create-form-data-model}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=ja) |
+| AEM as a Cloud Service | この記事 |
+
 
 ![データ統合](do-not-localize/data-integeration.png)
 
@@ -77,7 +83,7 @@ ht-degree: 91%
    * 既存のデータソースを、同じタイプの別のデータソースで置き換える場合は、置き換え前のデータソースの「**[!UICONTROL 編集]**」アイコンをタップし、有効なデータソースのリストで、置き換え後のデータソースを選択します。
    * 既存のデータソースを削除する場合は、目的のデータソースの「**[!UICONTROL 削除]**」アイコンをタップします。データソース内のデータモデルオブジェクトがフォームデータモデルに追加されている場合、「削除」アイコンは無効になります。
 
-      ![fdm-properties](assets/fdm-properties.png)
+     ![fdm-properties](assets/fdm-properties.png)
 
 1. 「**[!UICONTROL 保存して閉じる]**」をタップして、変更内容を保存します。
 
@@ -108,8 +114,7 @@ ht-degree: 91%
 
 1. Apache Sling のコンテキスト対応設定を作成します。OSGI 設定の作成手順は次のとおりです。
    1. アーキタイププロジェクトの **OSGi 設定ファイルをセットアップ[!DNL Experience Manager]します。**
-OSGi Factory Configuration ファイルを、PID  
-`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider` を使用して作成します。実行モードごとに値を変更する必要がある各実行モードフォルダーの下に、同じ名前のファイルを作成します。詳しくは、[ [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations) の OSGi の設定を参照してください。
+OSGi Factory Configuration ファイルを、PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`。実行モードごとに値を変更する必要がある各実行モードフォルダーの下に、同じ名前のファイルを作成します。詳しくは、[ [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations) の OSGi の設定を参照してください。
 
    1. **OSGI 設定 json を設定します。** Apache Sling Context-Aware Configuration Override Provider の使用手順は次のとおりです。
       1. ローカル開発インスタンス `/system/console/configMgr` で、**[!UICONTROL Apache Sling Context-Aware Configuration Override Provider: SGi configuration]** という名前のファクトリー OSGi 設定を選択します。
@@ -122,7 +127,6 @@ OSGi Factory Configuration ファイルを、PID
       1. 環境（または実行モード）に基づいて `newURL` の値を変更します。
       1. 実行モードに応じてシークレット値を変更するには、[Cloud Manager API](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) を使用してシークレット変数を作成し、後で [OSGi 設定](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values)から参照することができます。
 このアーキタイププロジェクトが CM パイプラインを通じてデプロイされる場合、オーバーライドは異なる環境（または実行モード）で異なる値を提供します。
-
       >[!NOTE]
       >
       >[サービスパック 6.5.13.0 でコンテキスト対応設定が利用可能](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config?lang=ja)になった後、[!DNL Adobe Managed Service] ユーザーは暗号化サポートを使用してシークレットの値を暗号化し（詳細は、[設定プロパティの暗号化サポート](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support?lang=ja)を参照）、値に暗号化テキストを配置できるようになりました。

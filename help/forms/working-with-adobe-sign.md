@@ -5,15 +5,21 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '3097'
-ht-degree: 97%
+source-wordcount: '3117'
+ht-degree: 96%
 
 ---
 
 
 # アダプティブフォームでの [!DNL Adobe Sign] の使用 {#using-adobe-sign-in-an-adaptive-form}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) |
+| AEM as a Cloud Service | この記事 |
+
 
 [!DNL Adobe Sign] により、アダプティブフォームの電子サインワークフローを有効にできます。電子サインにより、法務、販売、給与、人事管理などに関するドキュメントを処理するためのワークフローが改善されます。
 
@@ -73,6 +79,7 @@ ht-degree: 97%
    1. アダプティブフォームの&#x200B;**[!UICONTROL 名前]**&#x200B;と&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定します。
 
    1. [ [!DNL Adobe Sign]  を  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) と統合するときに作成した [設定コンテナ](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) を選択します。
+
    設定コンテナには、お使いの環境用に設定された [!DNL Adobe Sign] クラウドサービスが含まれています。これらのサービスは、アダプティブフォームエディターで選択できます。
 
 1. 「**[!UICONTROL フォームモデル]**」タブで、次のいずれかのオプションを選択します。
@@ -114,7 +121,6 @@ ht-degree: 97%
    >
    >  * アダプティブフォームで [!DNL Adobe Sign] を使用する場合、[!DNL Adobe Sign] ブロックの使用は必須ではありません。[!DNL Adobe Sign] ブロックを使用せずに受信者用のフィールドを追加すると、署名ドキュメントの下部にデフォルトの署名フィールドが表示されます。
    >  * レコードのドキュメントが自動的に生成されるアダプティブフォームの場合のみ、[!DNL Adobe Sign] ブロックを使用してください。カスタムの XDP を使用して、レコードのドキュメントやフォームテンプレートベースのアダプティブフォームを生成する場合は、[!DNL Adobe Sign] ブロックはサポートされていません。
-
 
 
 1. **[!UICONTROL Adobe Sign ブロック]**&#x200B;コンポーネントを選択し、**[!UICONTROL 編集]**&#x200B;アイコン（![編集](assets/Smock_Edit_18_N.svg)）をタップします。フィールドを追加するためのオプションと、フィールドの外観を設定するためのオプションが表示されます。
@@ -190,15 +196,16 @@ Cloud Service と署名する順序を選択するには：
 
    * **[!UICONTROL 受信者のメールアドレス]：**&#x200B;受信者のメールアドレスを指定します。受信者は、指定したメールアドレスで Adobe Sign 契約書を受け取ります。フォームフィールドで指定したメールアドレスを使用することも、ログインユーザーの Experience Manager ユーザープロファイルで指定したメールアドレスを使用することも、メールアドレスを手動で入力することもできます。このステップは、必ず実行する必要があります。
 
-      >[!NOTE]
-      >
-      >最初の受信者または唯一の受信者（受信者が 1 人の場合）のメールアドレスが、AEM Cloud Services の設定に使用された [!DNL Adobe Sign] アカウントと一致していないことを確認します。
+     >[!NOTE]
+     >
+     >最初の受信者または唯一の受信者（受信者が 1 人の場合）のメールアドレスが、AEM Cloud Services の設定に使用された [!DNL Adobe Sign] アカウントと一致していないことを確認します。
 
    * **[!UICONTROL 受信者の認証方法]：** Adobe Sign 契約書を開く前に受信者を認証する方法を指定します。電話、ナレッジベース、ソーシャル ID ベースの認証、 [政府 ID](https://helpx.adobe.com/jp/sign/using/adobesign-authentication-government-id.html) 対象 [!DNL Adobe Acrobat Sign]. の場合 [!DNL Adobe Acrobat Sign for Government] 電話認証とナレッジベース認証のどちらを選択できます。
+
    >[!NOTE]
    >
    >    * ソーシャル ID に基づく認証の場合、Facebook、Google、LinkedIn を使用した認証オプションがデフォルトで用意されています。これ以外のソーシャル認証プロバイダーを使用する場合は、[!DNL Adobe Sign] サポートまでお問い合わせください。
-
+   >
 
    * **[!DNL Adobe Sign]のフィールドに入力または署名：**&#x200B;受信者用の [!DNL Adobe Sign] フィールドを選択します。1 つのアダプティブフォームで複数の [!DNL Adobe Sign] フィールドを使用できます。受信者用に特定のフィールドを有効にできます。これらのフィールドには、使用可能なすべての [!DNL Adobe Sign] ブロックが表示されます。いずれかのブロックを選択すると、そのブロックのすべてのフィールドが選択されます。フィールドの選択を解除するには、「X」アイコンを使用します。
 
@@ -310,16 +317,16 @@ Adobe Sign 契約 ID（agreementId）は、アダプティブフォームの送�
    * クラウド署名：トラストサービスプロバイダーがホストする[デジタル ID](https://helpx.adobe.com/jp/sign/kb/digital-certificate-providers.html) を使用して署名します。
    * Adobe Acrobat または Reader：ドキュメントをダウンロードして Adobe Acrobat または Reader で開き、スマートカード、USB トークン、ファイルベースのデジタル ID を使用して署名します。
 
-      >[!NOTE]
-      >
-      > デジタル署名は、 [!DNL Adobe Acrobat Sign for Government] ただし、Cloud Signatures を使用して適用することはできません。
+     >[!NOTE]
+     >
+     > デジタル署名は、 [!DNL Adobe Acrobat Sign for Government] ただし、Cloud Signatures を使用して適用することはできません。
+
    クラウド署名フィールドをアダプティブフォームに追加した後、次の手順を実行して設定プロセスを完了します。
 
    * [アダプティブフォームに対して Adobe Sign を有効にする](#enableadobsignforanadaptiveform)
    * [アダプティブフォームの Adobe Sign Cloud Service を選択する](#selectadobesigncloudserviceforanadaptiveform)
    * [アダプティブフォームに受信者を追加する](#addsignerstoanadaptiveform)
    * [アダプティブフォームの送信アクションを選択する](#selectsubmitactionforanadaptiveform)
-
 
 ### 「ありがとうございます」ページまたは概要ステップコンポーネントの設定  {#configure-the-thank-you-page-or-summary-step-component}
 

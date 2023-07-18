@@ -3,14 +3,20 @@ title: ' [!DNL AEM Forms] as a Cloud Service へのデータベースの接続�
 seo-title: AEM Forms Data Integration
 description: ' [!DNL AEM Forms] as a Cloud Service からデータを取得し、RESTful web サービス、SOAP ベースの web サービスおよび OData サービスに保存できます。このサービスは、データを取得、テスト、検証および様々なタイプのデータソースへの送信を行う専用のツールを提供します。'
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '577'
 ht-degree: 70%
 
 ---
 
 # データソースの Cloud Service への接続 {#aem-forms-data-integration}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html) |
+| AEM as a Cloud Service | この記事 |
+
 
 ![データ統合](do-not-localize/data-integeration.png)
 

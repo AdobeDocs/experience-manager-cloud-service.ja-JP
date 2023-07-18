@@ -5,14 +5,19 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 92%
+source-wordcount: '1767'
+ht-degree: 97%
 
 ---
 
 # アダプティブフォーム用のカスタム送信アクションの作成 {#writing-custom-submit-action-for-adaptive-forms}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html) |
+| AEM as a Cloud Service | この記事 |
 
 アダプティブフォームでは、あらかじめ用意された複数の送信アクション（OOTB）を使用できます。送信アクションは、アダプティブフォームで収集されたデータに対して実行されるアクションの詳細を指定します。例えば、メールでのデータの送信などです。
 
@@ -90,8 +95,8 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 送信アクションは、次のファイルを含む sling:Folder です。
 
-* **addfields.jsp**：このスクリプトは、レンディション中に HTML ファイルに追加されるアクションフィールドを指定します。このスクリプトを使用して、post.jsp スクリプトでの送信時に必要な非表示の入力POSTを追加します。
-* **dialog.xml**:このスクリプトは、CQ コンポーネントダイアログに似ています。 作成者がカスタマイズする設定情報を提供します。フィールドは、送信アクションを選択するときに、アダプティブフォーム編集ダイアログの送信アクションタブに表示されます。
+* **addfields.jsp**：このスクリプトは、レンディション中に HTML ファイルに追加されるアクションフィールドを指定します。post.POST.jsp スクリプトでの送信中に必要な非表示の入力パラメーターの追加には、このスクリプトを使用します。
+* **dialog.xml**：このスクリプトは、CQ コンポーネントダイアログに似ています。作成者がカスタマイズする設定情報を提供します。フィールドは、送信アクションを選択するときに、アダプティブフォーム編集ダイアログの送信アクションタブに表示されます。
 * **post.POST.jsp**：送信サーブレットは、送信されたデータおよび前のセクションからの追加データで、このスクリプトを呼び出します。このページで言及されるアクションの実行は、post.POST.jsp スクリプトの実行を意味します。送信アクションをアダプティブフォームに登録し、アダプティブフォーム編集ダイアログに表示するには、次のプロパティを sling:Folder: に追加します。
 
    * 文字列型の **guideComponentType** および値 **fd/af/components/guidesubmittype**
@@ -117,7 +122,7 @@ CRX リポジトリーにデータを保存した後にメール送信を行う�
 
 1. **作成者にメール設定を促す設定フィールドを指定します。**
 
-   アダプティブフォームには、ユーザーにメールを送信するメール送信アクションもあります。要件に応じて、このアクションをカスタマイズします。 /libs/fd/af/components/guidesubmittype/email/dialog に移動します。 cq:dialog ノード内のノードを、送信アクションの cq:dialog ノード（/apps/custom_submit_action/store_and_email/dialog）にコピーします。
+   アダプティブフォームには、ユーザーにメールを送信するメール送信アクションもあります。要件に応じて、このアクションをカスタマイズします。/libs/fd/af/components/guidesubmittype/email/dialog に移動します。cq:dialog ノード内のノードを、送信アクションの cq:dialog ノード（/apps/custom_submit_action/store_and_email/dialog）にコピーします。
 
    ![メール送信アクションのカスタマイズ](assets/step3.png)
 
@@ -137,7 +142,7 @@ CRX リポジトリーにデータを保存した後にメール送信を行う�
 
    ![送信アクション設定ダイアログ](assets/store_and_email_submit_action_dialog.jpg)
 
-1. **タスクを完了するには、「 」アクションを使用します。**
+1. **アクションを使用してタスクを完了します。**
 
    post.POST.jsp スクリプトをアクションに追加します（/apps/custom_submit_action/store_and_mail/）。
 
@@ -145,7 +150,7 @@ CRX リポジトリーにデータを保存した後にメール送信を行う�
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
-   メールを送信するために、コードが受信者のメールアドレスを設定から読み取ります。アクションのスクリプトで設定値を取得するには、次のコードを使用して、現在のリソースのプロパティを読み取ります。 同様に、他の設定ファイルも読み取ることができます。
+   メールを送信するために、コードが受信者のメールアドレスを設定から読み取ります。アクションのスクリプトに設定値を取り込むには、次のコードを使用して現在のリソースのプロパティを読み込みます。同様に、他の設定ファイルも読み取ることができます。
 
    `ValueMap properties = ResourceUtil.getValueMap(resource);`
 
