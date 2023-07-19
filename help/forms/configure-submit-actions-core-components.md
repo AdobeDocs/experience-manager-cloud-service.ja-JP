@@ -3,7 +3,7 @@ title: アダプティブフォームの送信アクションの設定方法
 description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自のアクションを作成できます。
 hide: true
 hidefromtoc: true
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+source-git-commit: ac9689a911be119ae53d5e1134595c567370b7c4
 workflow-type: tm+mt
 source-wordcount: '3366'
 ht-degree: 80%
@@ -12,17 +12,17 @@ ht-degree: 80%
 
 # アダプティブフォーム送信アクション {#configuring-the-submit-action}
 
+<span class="preview"> Adobeでは、コアコンポーネントを次のように使用することをお勧めします。 [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) または [スタンドアロンのアダプティブFormsを作成](/help/forms/creating-adaptive-form-core-components.md). </span>
+
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | この記事 |
+| 適用先 | ✅アダプティブフォームのコアコンポーネント❎、 [アダプティブフォームの基盤コンポーネント](/help/forms/configuring-submit-actions.md) |
 
-**適用先**:✔️アダプティブフォームのコアコンポーネント❌ [アダプティブフォームの基盤コンポーネント](/help/forms/configuring-submit-actions.md). Adobeでは、コアコンポーネントを次のように使用することをお勧めします。 [AEM SitesページへのアダプティブFormsの追加](create-or-add-an-adaptive-form-to-aem-sites-page.md) または [スタンドアロンのアダプティブFormsを作成](creating-adaptive-form-core-components.md).
 
-送信アクションを使用すると、アダプティブフォームから取り込んだデータの送信先を選択できます。 ユーザーが **[!UICONTROL 送信]** ボタンを使用して、アダプティブフォームを編集できます。
-
-Forms as a Cloud Serviceは、コアコンポーネントを基に構築されたアダプティブForms向けに、事前に構築された送信アクションの配列を提供します。 標準のこれらの送信アクションを使用すると、次のことができます。
+送信アクションを使用すると、アダプティブフォームから取り込んだデータの送信先を選択できます。 ユーザーが **[!UICONTROL 送信]** ボタンを使用して、アダプティブフォームを編集できます。 Formsas a Cloud Serviceのは、コアコンポーネントに基づくアダプティブFormsの場合、事前に作成された送信アクションの配列を提供します。 標準のこれらの送信アクションを使用すると、次のことができます。
 
 * フォームデータを E メールで簡単に送信できます。
 * データの送信中に、Microsoft Power Automate のフローまたはAEMのワークフローを開始します。
