@@ -4,10 +4,10 @@ description: コンテンツ フラグメントと GraphQL API をヘッドレ�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b9b9cf79173a0ae486bd5d8fcbc1fec48c0b2bc8
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 94%
+source-wordcount: '1086'
+ht-degree: 96%
 
 ---
 
@@ -67,10 +67,6 @@ ht-degree: 94%
    ![リストクエリ](assets/do-not-localize/list-query-1-3-4-5.png)
 
 すべてのコンテンツフラグメントの完全なリストのリストクエリを検証しました。 このプロセスは、アプリが期待する応答を確保するのに役立ち、AEM で作成されたコンテンツをアプリや web サイトがどのように取得するのかを示す結果が得られます。
-
->[!NOTE]
->
->選択できない場合、 **AEMデモアセット** エンドポイントを使用する場合は、Adobeカスタマーケアに問い合わせるか、 [AEM試用Slackチャネル。](https://adobe-dx-support.slack.com/)
 
 ## サンプルコンテンツの特定の部分に対するクエリ {#bypath-query}
 
