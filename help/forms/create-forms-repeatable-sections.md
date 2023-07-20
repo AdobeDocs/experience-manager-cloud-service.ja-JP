@@ -2,9 +2,9 @@
 title: アダプティブフォームでの繰り返し可能性（コアコンポーネント）
 description: パネルコンポーネントの再現性機能を使用して、アダプティブフォーム内で同様のセクションを繰り返します。
 role: Architect, Developer, Admin, User
-source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
+source-git-commit: fcdb96a6bbe8ff8761293eedc0d38efaecb56037
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1391'
 ht-degree: 45%
 
 ---
@@ -131,7 +131,11 @@ ht-degree: 45%
 >`Panel1.instanceManager.instances[1].textbox.value`
 >
 >
->詳しくは、[AEM Forms Java API リファレンス](https://adobe.com/go/learn_aemforms_documentation_63_jp)の「Class: InstanceManager#instances」を参照してください。
+>
+
+<!-- 
+>For more information, see: Class: InstanceManager#instances in [AEM Forms Java API reference](https://adobe.com/go/learn_aemforms_documentation_63).      
+-->
 
 >[!NOTE]
 >
