@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: eca0903050bb178f13d37073f8d65354f4bf36d3
+source-git-commit: 39b2afda66e3bcb7db8ae63a2d0dcd27014ce377
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 41%
+source-wordcount: '180'
+ht-degree: 66%
 
 ---
 
@@ -13,34 +13,25 @@ ht-degree: 41%
 
 次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 12697 {#release-12697}
+## リリース 12790 {#release-12790}
 
-2023 年 7 月 14 日に公開されたメンテナンスリリース12697の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース 12549 からのアップデートです。メンテナンスリリース12697は、1 つの問題を修正する12585に代わるものです。
+2023 年 7 月 21 日に公開されたメンテナンスリリース12790の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース 12697 からのアップデートです。
 
 2023.7.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。 詳しくは、 [Experience Managerリリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja) を参照してください。
 
-### 機能強化 {#enhancements-12697}
-
-- 一般的な RDE の安定性の向上 (SKYOPS-61133、SKYOPS-55281、SKYOPS-61216および SKYOPS-61401)
-- DXML-12327:AEMガイド：ネイティブ言語公開での言語変数のサポートPDF
-- DXML-11518:AEMガイド：ネイティブメタデータ公開でのメタPDFのサポートの強化
-- DXML-10093:AEMガイド：外部データソースへの接続と DITA トピックへのデータの挿入のサポート
-- DXML-10699:AEMガイド：翻訳での XLIFF 形式のサポート
-- DXML-10141:AEMガイド：PDF（ネイティブおよび DITA-OT）、HTMLおよびカスタムプリセットタイプにマイクロサービスベースの公開を使用するオプション
-- SKYOPS-61385 - Apache HTTPD で正規表現を評価する際に libpcre2 を使用するように Dispatcher を更新します。
-
-### 修正された問題 {#fixed-issues-12697}
-
-- AEMガイド：ネイティブPDFの様々な機能強化と安定性の修正
-- SKYOPS-53130:RDE での AC ツールのサポートの改善
-- SKYOPS-57146:AEM起動時の Sling デッドロックの修正
-- SKYOPS-61646:リリース12585にアップグレードした後、最終レプリケーション日は更新されません
-
-### 既知の問題 {#known-issues-12697}
+### 機能強化 {#enhancements-12790}
 
 なし。
 
-### 組み込みテクノロジー {#embedded-tech-12697}
+### 修正された問題 {#fixed-issues-112790}
+
+- SLING-11974 — 非認証要求の SlingHttpServletRequest#getUserPrincipal の回帰を修正しました。 この修正により、未認証のリクエストに対してもプリンシパルが返されるようになりました。
+
+### 既知の問題 {#known-issues-12790}
+
+なし。
+
+### 組み込みテクノロジー {#embedded-tech-12790}
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
