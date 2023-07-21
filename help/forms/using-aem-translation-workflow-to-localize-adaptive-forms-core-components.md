@@ -2,9 +2,9 @@
 title: コアコンポーネントベースのアダプティブフォームを翻訳する
 description: 機械翻訳または人間翻訳を使用した、コアコンポーネントベースのアダプティブフォームの翻訳
 feature: Adaptive Forms
-source-git-commit: a33b380570210a32f4a4a1f26c9a2fe37c885bb1
+source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '882'
 ht-degree: 17%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 17%
 1. の下部に **概要** タイルで、 **省略記号**. 翻訳プロジェクトのプロパティ画面が開きます。
 1. を開きます。 **[!UICONTROL 詳細]** タブを **翻訳プロジェクトのプロパティ** 画面 の **[!UICONTROL 翻訳フィールド]**&#x200B;を選択します。 **[!UICONTROL 人間翻訳]**. クリック **保存して閉じる** をクリックします。
 1. の **翻訳ジョブ** タイルで、 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) アイコンをクリックし、 **書き出し**. [ 書き出し ] ダイアログで、[ 書き出したファイルをダウンロード ] オプションをクリックします。 .zip ファイルをダウンロードします。
-   ![](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
+   ![翻訳ファイルを書き出し](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
 1. ダウンロードした.zip ファイルを展開します。 抽出されたフォルダーには次の 2 つのファイルが含まれます。
    * translation_export_summary.xml
    * [form-fields-file].xml.
@@ -79,6 +79,6 @@ ht-degree: 17%
 1. ファイルを translation_export_summary.xml に zip 化し、 [form-fields-file].xml.
 1. の **翻訳ジョブ** タイルで、 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) アイコンをクリックし、 **インポート**. 次を含むアーカイブを選択 [form-fields-file].xml. フォームフィールドのローカライズされた文字列とメッセージを含む
 
-   ![](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
+   ![翻訳ファイルをインポート](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
 1. ローカライズされたフォームをプレビューするには、AEM Forms UI で、ローカライズされたフォームを選択します。 クリック **[!UICONTROL プレビュー]** >**[!UICONTROL プレビューをHTML]**. を追加した後でフォームを再度開く `afAcceptLang=<locale code>` をフォームの URL に追加します。 例えば、 `afAcceptLang=de`をクリックして、ドイツ語版のフォームを開きます。

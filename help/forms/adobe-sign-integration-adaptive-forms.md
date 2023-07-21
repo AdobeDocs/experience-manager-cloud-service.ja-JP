@@ -4,9 +4,9 @@ description: Adobe Acrobat Signを [!DNL AEM Forms] as a Cloud Service?
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
 workflow-type: tm+mt
-source-wordcount: '1939'
+source-wordcount: '1943'
 ht-degree: 46%
 
 ---
@@ -123,7 +123,7 @@ AEM FormsとAdobe Acrobat Sign Solutions for Government の接続は、複数の
 * Adobe Signチームからの資格情報の受信
 * 受け取った資格情報を使用してAEM FormsをAdobe Acrobat Sign Solutions for Government に接続します
 
-![](/help/forms/assets/adobe-acrobat-sign-govt-workflow.png)
+![Adobe Sign Government Workflow](/help/forms/assets/adobe-acrobat-sign-govt-workflow.png)
 
 
 AEM Formsas a Cloud Serviceは、開発環境、ステージ環境、実稼動環境を提供します。 の開発環境とAdobe Acrobat Sign Solutions for Government を接続する方法を後で開始し、ステージ環境と実稼動環境を接続する方法について説明します。

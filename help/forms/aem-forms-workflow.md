@@ -8,9 +8,9 @@ topic-tags: publish, document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2362'
 ht-degree: 80%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 80%
 
 # OSGi 上の Forms 中心のワークフロー{#forms-centric-workflow-on-osgi}
 
-![](do-not-localize/header.png)
+![ヒーロー画像](do-not-localize/header.png)
 
 企業は、数百も数千ものフォーム、様々なバックエンドシステム、オンラインまたはオフラインのデータソースからデータを収集します。 また、データに関する意思決定を行うための動的なユーザーセットもあります。これには、反復的なレビューと承認のプロセスが含まれます。
 
