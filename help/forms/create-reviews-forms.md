@@ -5,14 +5,17 @@ description: レビューとは、1 人または複数のレビュー担当者�
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on a form.
 topic-tags: forms-manager
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 52%
+source-wordcount: '729'
+ht-degree: 49%
 
 ---
 
 # フォームのレビューの作成と管理{#creating-and-managing-reviews-to-forms}
+
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象 [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |

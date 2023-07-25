@@ -2,14 +2,16 @@
 title: 脚注のサポート
 description: 脚注の RTE サポート。
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
-workflow-type: ht
-source-wordcount: '369'
-ht-degree: 100%
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+workflow-type: tm+mt
+source-wordcount: '426'
+ht-degree: 88%
 
 ---
 
 # 脚注コンポーネント {#footnotecomponent}
+
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象 [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 
 **[!UICONTROL 脚注]**&#x200B;は、ページの最後に表示される追加の情報またはメモです。[!UICONTROL 脚注]は、テキスト内で数字を上付き文字として示すメモで構成されます。
 
@@ -44,13 +46,11 @@ ht-degree: 100%
    >* 脚注には自動的に番号が付けられ、アダプティブフォーム上で作成された方法で表示されます。
    >* 脚注が重複している場合は、重複しているすべての脚注に対して同じ数字が使用されます。
 
-
 1. コンポーネントブラウザーから、**[!UICONTROL 脚注のプレースホルダー]**&#x200B;コンポーネントをアダプティブフォームにドラッグ＆ドロップします。
    >[!NOTE]
    >
    >* 公開インスタンスでは、**[!UICONTROL 脚注のプレースホルダー]**&#x200B;コンポーネントがアダプティブフォーム上に配置されている位置に脚注が表示されます。
    >* パネル間を移動すると、表示されている脚注のみが、移動したパネル内に存在する&#x200B;**[!UICONTROL 脚注のプレースホルダー]**&#x200B;に表示されます。
-
 
 1. 各プロパティを保存します。
 

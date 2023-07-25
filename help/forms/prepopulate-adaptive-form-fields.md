@@ -6,14 +6,16 @@ seo-description: With Adaptive Forms, you users can prefill basic information in
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '1968'
-ht-degree: 82%
+source-wordcount: '2025'
+ht-degree: 80%
 
 ---
 
 # アダプティブフォームフィールドに事前入力{#prefill-adaptive-form-fields}
+
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象 [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |

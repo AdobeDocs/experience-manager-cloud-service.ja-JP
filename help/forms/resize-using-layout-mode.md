@@ -5,14 +5,16 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 99%
+source-wordcount: '1157'
+ht-degree: 95%
 
 ---
 
 # レイアウトモードを使用したコンポーネントのサイズ変更 {#use-layout-mode-to-resize-components}
+
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象 [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |

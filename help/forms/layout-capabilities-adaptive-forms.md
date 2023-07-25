@@ -3,14 +3,17 @@ title: アダプティブフォームのレイアウト機能
 seo-title: Layout capabilities of Adaptive Forms
 description: 各種デバイスごとのアダプティブフォームのレイアウトと外観はレイアウト設定で管理できます。各種レイアウトとレイアウトの適用方法について説明します。
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 86%
+source-wordcount: '856'
+ht-degree: 81%
 
 ---
 
 # アダプティブフォームのレイアウト機能 {#layout-capabilities-of-adaptive-forms}
+
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象 [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
