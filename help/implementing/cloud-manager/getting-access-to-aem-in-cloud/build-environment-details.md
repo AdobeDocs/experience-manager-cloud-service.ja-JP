@@ -2,10 +2,10 @@
 title: ビルド環境
 description: Cloud Manager のビルド環境と、そこでコードがどのようにビルドされテストされるかを説明します。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: d3bc5dbb5a88aff7765beffc8282d99063dde99f
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 94%
+source-wordcount: '1005'
+ht-degree: 92%
 
 ---
 
@@ -54,27 +54,41 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 [Maven ツールチェーンプラグイン](https://maven.apache.org/plugins/maven-toolchains-plugin/)では、ツールチェーン対応の Maven プラグインのコンテキストで使用する特定の JDK（またはツールチェーン）をプロジェクトで選択できます。それには、プロジェクトの `pom.xml` ファイルでベンダーとバージョン値を指定します。
 
+次に示すように、このツールチェーンプラグインはプロファイルの一部として追加できます。
+
 ```xml
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-toolchains-plugin</artifactId>
-    <version>1.1</version>
-    <executions>
-        <execution>
-            <goals>
-                <goal>toolchain</goal>
-            </goals>
-        </execution>
-    </executions>
-    <configuration>
-        <toolchains>
-            <jdk>
-                <version>11</version>
-                <vendor>oracle</vendor>
-            </jdk>
-        </toolchains>
-    </configuration>
-</plugin>
+<profile>
+    <id>cm-java-11</id>
+    <activation>
+        <property>
+            <name>env.CM_BUILD</name>
+        </property>
+    </activation>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-toolchains-plugin</artifactId>
+                <version>1.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>toolchain</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <toolchains>
+                        <jdk>
+                            <version>11</version>
+                            <vendor>oracle</vendor>
+                        </jdk>
+                    </toolchains>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</profile>
 ```
 
 これにより、すべてのツールチェーン対応 Maven プラグインで Oracle JDK バージョン 11 が使用されるようになります。
