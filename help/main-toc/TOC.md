@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 579f2842a72c7da1c9d24772bdae354a943de40c
+source-git-commit: 651fd49950c9b168a097e4b7d2812b22bd8de03f
 workflow-type: tm+mt
-source-wordcount: '4192'
+source-wordcount: '4194'
 ht-degree: 97%
 
 ---
@@ -340,7 +340,6 @@ ht-degree: 97%
             + [Git リポジトリーのアクセス情報の取得](/help/journey-sites/quick-site/retrieve-access.md)
             + [サイトテーマのカスタマイズ](/help/journey-sites/quick-site/customize-theme.md)
             + [カスタマイズしたテーマのデプロイ](/help/journey-sites/quick-site/deploy-theme.md)
-      + [ワークフローの管理](/help/sites-cloud/administering/workflows-administering.md)
       + コンテンツの再利用 {#reusing-content}
          + [MSM と翻訳](/help/sites-cloud/administering/msm-and-translation.md)
          + マルチサイトマネージャー {#msm}
@@ -369,6 +368,8 @@ ht-degree: 97%
             + [翻訳統合フレームワークの設定](/help/sites-cloud/administering/translation/integration-framework.md)
             + [Microsoft Translator への接続](/help/sites-cloud/administering/translation/connect-ms-translator.md)
             + [翻訳のベストプラクティス](/help/sites-cloud/administering/translation/best-practices.md)
+      + [タグの管理](/help/sites-cloud/administering/tags.md)
+      + [ワークフローの管理](/help/sites-cloud/administering/workflows-administering.md)
    + AEM as a Cloud Service との統合 {#integrations}
       + [Adobe Analytics との統合](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Adobe Analytics との統合自動セットアップ](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
@@ -573,7 +574,7 @@ ht-degree: 97%
             + [アダプティブフォームの作成 - AEM Sites ページのコアコンポーネント](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [機械翻訳または人間翻訳を使用したアダプティブフォームの翻訳](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [リダイレクトページまたは「ありがとうございます」メッセージの設定](/help/forms/configure-redirect-page-or-thank-you-message.md)
-            + [繰り返し可能なセクションでフォームを作成](/help/forms/create-forms-repeatable-sections.md)
+            + [繰り返し可能なセクションでフォームを作成する](/help/forms/create-forms-repeatable-sections.md)
             + [アダプティブフォームの送信アクションの設定](/help/forms/configure-submit-actions-core-components.md)
       + アダプティブフォームのオーサリング - 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
          + PDF フォームのアダプティブフォームへの変換 {#afcs}
