@@ -2,9 +2,9 @@
 title: レプリケーション
 description: レプリケーションの配布とトラブルシューティング。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: e545ff2bc3dc0c56cd6d3e1160b453551816f07f
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1334'
 ht-degree: 45%
 
 ---
@@ -22,10 +22,10 @@ Adobe Experience Manager as a Cloud Serviceは [Sling コンテンツ配布](htt
 >[!NOTE]
 >
 >コンテンツの一括公開に関心がある場合は、 [コンテンツツリーの公開ワークフロー](#publish-content-tree-workflow).
->このワークフローステップは、特にCloud Service向けに構築されており、大きなペイロードを効率的に処理できます。
->独自の一括公開カスタムコードを作成することはお勧めしません。
+>このワークフローステップは、特に Cloud Service 向けに構築されており、大きなペイロードを効率的に処理できます。
+>独自の一括公開カスタムコードを作成することはお勧めできません。
 >何らかの理由でをカスタマイズする必要がある場合は、既存の Workflow API を使用して、このワークフロー/ワークフローステップにトリガーを設定できます。
->常に、公開する必要のあるコンテンツのみを公開することをお勧めします。 また、必要がない場合は、大量のコンテンツを公開しないことをお勧めします。 ただし、コンテンツツリーの公開ワークフローで送信できるコンテンツの量に制限はありません。
+>常に、公開する必要のあるコンテンツのみを公開することをお勧めします。 また、必要がない場合は、大量のコンテンツを公開しないようにすることをお勧めします。 ただし、コンテンツツリーの公開ワークフローで送信できるコンテンツの量に制限はありません。
 
 ### クイック公開／非公開 - 計画的公開／非公開 {#publish-unpublish}
 
@@ -37,7 +37,7 @@ Adobe Experience Manager as a Cloud Serviceは [Sling コンテンツ配布](htt
 
 **オンタイム**&#x200B;と&#x200B;**オフタイム**&#x200B;の追加設定を[ページのプロパティの「基本」タブ](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)で行えます。
 
-この機能の自動レプリケーションを実現するには、を有効にします。 **自動レプリケーション** 内 [OSGi 設定](/help/implementing/deploying/configuring-osgi.md) **オンオフトリガー設定**:
+この機能の自動レプリケーションを実現するには、を有効にします。 **自動レプリケーション** （内） [OSGi 設定](/help/implementing/deploying/configuring-osgi.md) **オンオフトリガー設定**:
 
 ![OSGi の On Off Trigger Configuration ダイアログ](/help/operations/assets/replication-on-off-trigger.png)
 
@@ -55,7 +55,7 @@ Adobe Experience Manager as a Cloud Serviceは [Sling コンテンツ配布](htt
 
 ![「コンテンツツリーを公開」ワークフローカード](/help/operations/assets/publishcontenttreeworkflow.png)
 
-元のモデルを修正したり呼び出さないでください。必ずモデルをコピーして、そのコピーを修正または呼び出してください。
+元のモデルを呼び出さないでください。 代わりに、必ず最初にモデルをコピーしてから、そのコピーを呼び出してください。
 
 すべてのワークフローと同様に、API を使用して呼び出すこともできます。詳しくは、 [プログラムによるワークフローの操作](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=ja#extending-aem).
 
