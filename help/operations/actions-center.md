@@ -1,20 +1,15 @@
 ---
 title: アクションセンター
 description: アクションセンターを活用して、インシデントやその他の重要な情報に対する便利な対応を実行
-hidefromtoc: true
-hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 083aa4b893b58102b3a0bf68c4dd3b4c003b48f6
+source-git-commit: 4adae6ffe45dcd2b80d7d199fc29a806ce5e78c4
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 27%
+source-wordcount: '727'
+ht-degree: 25%
 
 ---
 
 # アクションセンター {#actions-center}
-
->[!NOTE]
->この機能はリリースされていません。
 
 AEM as aCloud Serviceは、即時の対応が必要な重大なインシデントが発生した場合に、アクションセンターに電子メール通知を送信し、最適化に関する事前の推奨事項を伝えます。 例えば、ブロックされたキューや、期限が切れる資格情報のセットなどです。アクションセンターの通知タイプの完全なセットは、 [下の表](#supported-notification-types)は、時間の経過と共に展開されます。
 
@@ -40,7 +35,7 @@ AEM as aCloud Serviceは、即時の対応が必要な重大なインシデン�
 
 ## 詳細なユーザーフロー {#detailed-user-flow}
 
-電子メールをクリックすると、アクションセンターに移動し、クリックした通知のコンテキストを示すポップアップと、修正処理の実行方法を説明する追加情報へのリンクが表示されます。
+電子メールをクリックすると、アクションセンターに移動し、クリックした通知のコンテキストを示すポップアップと、修正処理の実行方法を説明する追加情報へのリンクが表示されます。 また、次の場所からアクションセンターに直接アクセスすることもできます： [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/)：関連するプログラムおよび環境を選択できます。
 
 ![インシデントの詳細](/help/operations/assets/incident-details.png)
 
