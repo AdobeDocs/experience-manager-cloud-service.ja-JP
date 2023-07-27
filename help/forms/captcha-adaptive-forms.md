@@ -1,11 +1,11 @@
 ---
 title: アダプティブFormsでの reCAPTCHA の使用
-description: アダプティブフォームで AEM CAPTCHA または Google reCAPTCHA サービスを設定する方法を説明します。
+description: アダプティブFormsでGoogle reCAPTCHA サービスを設定する方法を説明します。
 topic-tags: adaptive_forms, author
-source-git-commit: bc1c9736c36014b9a2e0df561e6808f28b1dd7b5
+source-git-commit: 4b6c22667bb79bb6cac22675fa22f741b0262210
 workflow-type: tm+mt
-source-wordcount: '1913'
-ht-degree: 51%
+source-wordcount: '1911'
+ht-degree: 50%
 
 ---
 
@@ -106,104 +106,108 @@ reCAPTCHA Enterprise サービスを有効にすると、アダプティブフ�
    >[!NOTE]
    >
    >* アダプティブフォーム内での複数の Captcha コンポーネントの使用はサポートされていません。 また、遅延読み込み用とマークされたパネルやフラグメントでは、CAPTCHA を使用しないことをお勧めします。
-   >* Captcha は時間に依存し、約 1 分で有効期限が切れます。 したがって、Captcha コンポーネントは、アダプティブフォーム内の「送信」ボタンの直前に配置することをお勧めします。
+   >* reCaptcha は時間に依存し、約 1 分で期限が切れます。 したがって、Captcha コンポーネントは、アダプティブフォーム内の「送信」ボタンの直前に配置することをお勧めします。
 
 1. 追加した Captcha コンポーネントを選択し、をタップします。 ![cmppr](assets/cmppr.png) をクリックして、そのプロパティを編集します。
 1. CAPTCHA ウィジェットのタイトルを指定します。デフォルト値は **Captcha** です。タイトルを表示しない場合は、「**タイトルを非表示にする**」を選択します。
 1. 次から： **Captcha サービス** ドロップダウンで、「 **reCAPTCHA** reCAPTCHA サービスを有効にするには、 [Googleによる reCAPTCHA サービス](#google-reCAPTCHA).
 1. 設定ドロップダウンから、 **reCAPTCHA Enterprise** または **reCAPTCHA v2**
-1. 選択した設定のバージョンが reCAPTCHA Enterprise の場合、キーのタイプは次のようになります。 **チェックボックス** または **スコアベース** reCAPTCHA エンタープライズを設定する際の選択内容に応じて、次の操作を行います。
-   1. クラウド設定で、キーのタイプはになります。 **チェックボックス**&#x200B;を指定した場合、captcha の検証が失敗すると、カスタマイズされたエラーメッセージがインラインメッセージとして表示されます。 サイズは、次のように選択できます。 **[!UICONTROL 標準]** および **[!UICONTROL コンパクト]**.
-   1. クラウド設定で、 **キーの種類** as **スコアベース**&#x200B;を指定した場合、カスタマイズされたエラーメッセージは、captcha の検証が失敗した場合にポップアップメッセージとして表示されます。
-   1. 次の項目を選択できます。 **[!UICONTROL バインド参照]** in [!DNL AEM Forms]、内 **[!UICONTROL バインド参照]** 送信されたデータは連結データです。連結されていない場合は、連結されていないデータです。 フォームが送信されたときの、バインドされていないデータとバインドされているデータ（バインド参照が SSN）の XML の例を以下に示します。
+   1. 次を選択した場合、 **reCAPTCHA Enterprise** バージョンの場合、キーのタイプは **チェックボックス** または **スコアベース**&#x200B;の場合、設定時の選択内容に基づきます [web サイトのサイトキー](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key):
 
-      ```xml
-          <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-          <afData>
-          <afUnboundData>
-              <data>
-                  <captcha16820607953761>
-                      <captchaType>reCaptchaEnterprise</captchaType>
-                      <captchaScore>0.9</captchaScore>
-                  </captcha16820607953761>
-              </data>
-          </afUnboundData>
-          <afBoundData>
-              <Root
-                  xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
-                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <PersonalDetails>
-                      <SSN>371237912</SSN>
-                      <FirstName>Sarah </FirstName>
-                      <LastName>Smith</LastName>
-                  </PersonalDetails>
-                  <OtherInfo>
-                      <City>California</City>
-                      <Address>54 Residency</Address>
-                      <State>USA</State>
-                      <Zip>123112</Zip>
-                  </OtherInfo>
-              </Root>
-          </afBoundData>
-          <afSubmissionInfo>
-              <stateOverrides/>
-              <signers/>
-              <afPath>/content/dam/formsanddocuments/captcha-form</afPath>
-              <afSubmissionTime>20230608034928</afSubmissionTime>
-          </afSubmissionInfo>
-          </afData>
-      ```
+   >[!NOTE]
+   >
+   >* クラウド設定で、 **キーの種類** as **チェックボックス**&#x200B;を指定した場合、captcha の検証が失敗すると、カスタマイズされたエラーメッセージがインラインメッセージとして表示されます。
+   >* クラウド設定で、 **キーの種類** as **スコアベース**&#x200B;を指定した場合、カスタマイズされたエラーメッセージは、captcha の検証が失敗した場合にポップアップメッセージとして表示されます。
 
+   1. サイズは、次のように選択できます。 **[!UICONTROL 標準]** および **[!UICONTROL コンパクト]**.
+   1. 次の項目を選択できます。 **[!UICONTROL バインド参照]**、内 **[!UICONTROL バインド参照]** 送信されたデータは連結データです。連結されていない場合は、連結されていないデータです。 フォームが送信されたときの、バインドされていないデータとバインドされているデータ（バインド参照が SSN）の XML の例を以下に示します。
 
-      ```xml
-          <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-          <afData>
-          <afUnboundData>
-              <data/>
-          </afUnboundData>
-          <afBoundData>
-              <Root
-                  xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
-                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                  <PersonalDetails>
-                      <SSN>
-                          <captchaType>reCaptchaEnterprise</captchaType>
-                          <captchaScore>0.9</captchaScore>
-                      </SSN>
-                      <FirstName>Sarah</FirstName>
-                      <LastName>Smith</LastName>
-                  </PersonalDetails>
-                  <OtherInfo>
-                      <City>California</City>
-                      <Address>54 Residency</Address>
-                      <State>USA</State>
-                      <Zip>123112</Zip>
-                  </OtherInfo>
-              </Root>
-          </afBoundData>
-          <afSubmissionInfo>
-              <stateOverrides/>
-              <signers/>
-              <afPath>/content/dam/formsanddocuments/captcha-form</afPath>
-              <afSubmissionTime>20230608035111</afSubmissionTime>
-          </afSubmissionInfo>
-          </afData>
-      ```
+   ```xml
+           <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+           <afData>
+           <afUnboundData>
+               <data>
+                   <captcha16820607953761>
+                       <captchaType>reCaptchaEnterprise</captchaType>
+                       <captchaScore>0.9</captchaScore>
+                   </captcha16820607953761>
+               </data>
+           </afUnboundData>
+           <afBoundData>
+               <Root
+                   xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                   <PersonalDetails>
+                       <SSN>371237912</SSN>
+                       <FirstName>Sarah </FirstName>
+                       <LastName>Smith</LastName>
+                   </PersonalDetails>
+                   <OtherInfo>
+                       <City>California</City>
+                       <Address>54 Residency</Address>
+                       <State>USA</State>
+                       <Zip>123112</Zip>
+                   </OtherInfo>
+               </Root>
+           </afBoundData>
+           <afSubmissionInfo>
+               <stateOverrides/>
+               <signers/>
+               <afPath>/content/dam/formsanddocuments/captcha-form</afPath>
+               <afSubmissionTime>20230608034928</afSubmissionTime>
+           </afSubmissionInfo>
+           </afData>
+   ```
 
+   ```xml
+           <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+           <afData>
+           <afUnboundData>
+               <data/>
+           </afUnboundData>
+           <afBoundData>
+               <Root
+                   xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                   <PersonalDetails>
+                       <SSN>
+                           <captchaType>reCaptchaEnterprise</captchaType>
+                           <captchaScore>0.9</captchaScore>
+                       </SSN>
+                       <FirstName>Sarah</FirstName>
+                       <LastName>Smith</LastName>
+                   </PersonalDetails>
+                   <OtherInfo>
+                       <City>California</City>
+                       <Address>54 Residency</Address>
+                       <State>USA</State>
+                       <Zip>123112</Zip>
+                   </OtherInfo>
+               </Root>
+           </afBoundData>
+           <afSubmissionInfo>
+               <stateOverrides/>
+               <signers/>
+               <afPath>/content/dam/formsanddocuments/captcha-form</afPath>
+               <afSubmissionTime>20230608035111</afSubmissionTime>
+           </afSubmissionInfo>
+           </afData>
+   ```
 
-   **選択した設定のバージョンが reCAPTCHA v2 の場合**:
-   1. サイズは、 **[!UICONTROL 標準]** または **[!UICONTROL コンパクト]** reCAPTCHA を設定する際に reCAPTCHA ウィジェットの場合は、 **[!UICONTROL 非表示]** オプションを使用して、疑わしいアクティビティの場合にのみ CAPTCHA チャレンジを表示できます。 The **reCAPTCHA で保護** 以下に示すバッジは、保護されたフォームに表示されます。
+   次を選択した場合、 **reCAPTCHA v2** バージョン：
+   1. サイズは、 **[!UICONTROL 標準]** または **[!UICONTROL コンパクト]** reCAPTCHA ウィジェット用。
+   1. 次の項目を選択できます。 **[!UICONTROL 非表示]** オプションを使用して、疑わしいアクティビティの場合にのみ CAPTCHA チャレンジを表示できます。
 
-      ![reCAPTCHA バッジによって保護された Google](/help/forms/assets/google-recaptcha-v2.png)
-
-
-   アダプティブフォームで reCAPTCHA サービスが有効になっている。 フォームをプレビューして、CAPTCHA が機能していることを確認できます。
+   アダプティブフォームで reCAPTCHA サービスが有効になっている。 フォームをプレビューして、CAPTCHA が機能していることを確認できます。The **reCAPTCHA で保護** 以下に示すバッジは、保護されたフォームに表示されます。
+   ![reCAPTCHA バッジによって保護された Google](/help/forms/assets/google-recaptcha-v2.png)
 
 1. 各プロパティを保存します。
 
 >[!NOTE]
 > 
 > デフォルトの AEM CAPTCHA サービスは非推奨なので、Captcha サービスドロップダウンで「**[!UICONTROL デフォルト]**」を選択しないでください。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
 
 ### ルールに基づいた CAPTCHA コンポーネントの表示／非表示 {#show-hide-captcha}
 
