@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8efe5d66929d1e2ccd7af71a2de8ae02f2bbc290
+source-git-commit: 758960006bd1e58530fdf7b20cdd761853170366
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 24%
+source-wordcount: '981'
+ht-degree: 25%
 
 ---
 
@@ -77,10 +77,9 @@ Assets Essentialsは、デフォルトで、「関連性」に基づいて検索
 
 * [**標準のテーマ**](/help/forms/using-themes-in-core-components.md) **およびテンプレート**：経験豊富な専門家や新しいフォーム作成者の皆様に役立つようにカスタマイズされた、すぐに使える OOTB のテーマとテンプレートを使用して、フォーム作成プロセスを開始します。 アダプティブFormsのコアコンポーネントを使用してシームレスに構築され、細心の注意を払って厳選されたテーマとテンプレートを使用すれば、一般的な使用例に合わせてすばやくフォームの作成を開始できます。
 
+! ![標準テンプレート](/help/forms/assets/form-templates-ootb.png)
 
 * **ヘッドレスForms用 React コンポーネント**：すぐに使用できる React コンポーネントを使用して、ヘッドレスアダプティブフォームのレンディションをプレビューし、カスタマイズできるようになりました。 これらのコンポーネントは、アダプティブFormsコアコンポーネントの BEM クラスをスタイル設定に活用するので、特定の要件に従って外観を簡単にカスタマイズできます。
-
-  Adobe Acrobat Sign Solutions for Government との統合により、Adobeのパートナーや政府のお客様は、Adaptive Formsで最もミッションクリティカルで機密性の高い業務の一部に電子署名を使用できます。 このセキュリティの強化により、すべての電子署名が FedRAMP Moderate コンプライアンスに完全に準拠し、Adobeの政府のお客様に安心して対応できるようになります。
 
 * [**繰り返し可能なセクションでのアダプティブFormsの作成**](/help/forms/create-forms-repeatable-sections.md): [アコーディオン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [ウィザード](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [パネル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)、および [水平タブ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 複数のデータレコードをキャプチャする場合に繰り返し可能な、コンポーネントベースのアダプティブフォーム。  これらの繰り返し可能なセクションを使用すると、複数のデータエントリを簡単に指定できます。 これは、必要なデータインスタンスが事前に不明な場合に役立ちます。 フォームの入力者はセクションを簡単に追加または削除でき、フォームを様々なデータ入力シナリオに対応でき、同じデータレコードの複数回のオカレンスの収集を簡単にします。
 
