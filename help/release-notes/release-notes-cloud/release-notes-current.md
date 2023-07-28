@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 71af59cae28332793471568069204e9c88acd6a5
+source-git-commit: 3ac4fcd1f3ef1ef78dcee3c10bfbc99f9d7ba3ad
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 25%
+source-wordcount: '935'
+ht-degree: 27%
 
 ---
 
@@ -50,11 +50,15 @@ ht-degree: 25%
 
 ### Assets ビューの新機能 {#assets-view-features}
 
-**フォルダーへのメタデータフォームの割り当て**
+<!--
 
-これで、メタデータフォームをAssets Essentialsデプロイメント内の特定のフォルダーに割り当てることができるようになりました。 フォルダー内のすべてのアセット（サブフォルダー内のアセットを含む）には、割り当てられたメタデータフォームで定義されたプロパティが表示されます。
+**Assign metadata form to a folder**
 
-![フォルダーにメタデータフォームを割り当て](/help/release-notes/assets/assign-to-folder.png)
+You can now assign metadata form to a specific folder within your Assets Essentials deployment. All assets in the folder, including assets in the sub-folders, then display properties defined in the assigned metadata form.
+
+![assign metadata form to a folder](/help/release-notes/assets/assign-to-folder.png)
+
+-->
 
 **画像スマートタグ用の人工知能フレームワークの改善**
 
