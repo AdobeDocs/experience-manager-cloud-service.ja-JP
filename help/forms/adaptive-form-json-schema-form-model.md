@@ -5,16 +5,16 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 558662fb646abcf298a46fd0c1b1c709d53bce45
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 95%
+source-wordcount: '1368'
+ht-degree: 92%
 
 ---
 
 # アダプティブフォームの JSON スキーマのデザイン {#creating-adaptive-forms-using-json-schema}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象 [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -730,6 +730,20 @@ JSON スキーマの要素に以下の制限を追加して、アダプティブ
   </tr>
  </tbody>
 </table>
+
+
+## スキーマ準拠データを有効にする {#enablig-schema-compliant-data}
+
+アダプティブフォームがフォーム送信時にスキーマに準拠したデータを生成するには、次の手順を実行します。
+
+1. Experience ManagerWeb コンソール ( ) に移動します。 `https://server:host/system/console/configMgr`.
+1. 場所 **[!UICONTROL アダプティブフォームとインタラクティブ通信の Web チャネル設定]**.
+1. その設定をタップして編集モードで開きます。
+1. を選択します。 **[!UICONTROL スキーマ準拠データを生成]** チェックボックス。
+1. 設定を保存します。
+
+![アダプティブフォームとインタラクティブ通信の Web チャネル設定](/help/forms/assets/af-ic-web-channel-configuration.png)
+
 
 ## サポート対象外の構成  {#non-supported-constructs}
 
