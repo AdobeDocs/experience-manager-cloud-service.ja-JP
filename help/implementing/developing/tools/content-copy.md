@@ -2,7 +2,7 @@
 title: コンテンツコピーツール
 description: コンテンツコピーツールを使用すると、可変コンテンツをテスト用に、AEMの実稼動環境から低レベルの環境に、オンデマンドでas a Cloud Service可能なコンテンツをコピーできます。
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f579539d582e2059fca20f9f7e5e82f4ae24c833
+source-git-commit: 639c49c69c87e7c408929f0d35a673a96a5cc5db
 workflow-type: tm+mt
 source-wordcount: '1308'
 ht-degree: 50%
@@ -16,7 +16,7 @@ ht-degree: 50%
 
 ## はじめに {#introduction}
 
-現在の実際のデータは、テスト、検証、ユーザー受け入れの目的で役立ちます。コンテンツコピーツールを使用すると、実稼動AEMas a Cloud Service環境からステージング、開発または [急速開発環境 (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 環境を使用して設定できます。
+現在の実際のデータは、テスト、検証、ユーザー受け入れの目的で役立ちます。コンテンツコピーツールを使用すると、実稼動AEMas a Cloud Service環境からステージング、開発または [迅速な開発環境 (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 環境を使用して、このようなテストを実行できます。
 
 コピーするコンテンツは、コンテンツセットによって定義されます。コンテンツセットは、同じ Cloud Manager プログラム内のソースオーサーサービス環境からターゲットオーサーサービス環境にコピーされる可変コンテンツを含む、JCR パスのリストで構成されます。コンテンツセットでは、次のパスを使用できます。
 
@@ -39,10 +39,10 @@ ht-degree: 50%
 
 | コンテンツのコピー機能 | AEM 管理者グループ | デプロイメントマネージャーの役割 |
 |---|---|---|
-| [コンテンツセット](#create-content-set)の作成および変更 | 必須 | 不要 |
+| [コンテンツセット](#create-content-set)の作成および変更 | 不要 | 必須 |
 | [コンテンツのコピープロセス](#copy-content)の開始またはキャンセル | 必須 | 必須 |
 
-権限と設定方法の詳細については、ドキュメントを参照してください [AEMas a Cloud Serviceのチームおよび製品プロファイル。](/help/onboarding/aem-cs-team-product-profiles.md)
+権限と設定方法の詳細については、ドキュメントを参照してください。 [AEMas a Cloud Serviceのチームおよび製品プロファイル。](/help/onboarding/aem-cs-team-product-profiles.md)
 
 ## コンテンツセットの作成 {#create-content-set}
 
@@ -95,7 +95,7 @@ ht-degree: 50%
 
 ## コンテンツセットの編集 {#edit-content-set}
 
-コンテンツの手順を作成する場合と同様の手順に従います。クリックする代わりに **コンテンツセットを追加**、コンソールから既存のセットを選択し、「 」を選択します。 **編集** を選択します。
+コンテンツの手順を作成する場合と同様の手順に従います。をクリックする代わりに、 **コンテンツセットを追加**、コンソールから既存のセットを選択し、「 」を選択します。 **編集** 省略記号メニューから。
 
 ![コンテンツセットの編集](assets/edit-content-set.png)
 
@@ -106,7 +106,7 @@ ht-degree: 50%
 コンテンツセットを作成した後、それを使用してコンテンツをコピーできます。 次の手順に従って、コンテンツをコピーできます。
 
 >[!NOTE]
-> コンテンツのコピーを [コンテンツ転送](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) 操作がその環境で実行されています。
+> 環境でコンテンツコピーを使用しないでください。 [コンテンツ転送](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) 操作がその環境で実行されています。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
@@ -182,7 +182,7 @@ ht-degree: 50%
 
 完了したコンテンツコピープロセスについては、ソース環境と宛先環境の両方でログを確認できます。
 
-これをおこなうには、 **コンテンツアクティビティをコピー** ページで、 **ログ** ログを確認し、どの環境を使用するかを選択するコピープロセスの省略記号メニューのアクション。
+これをおこなうには、 **コンテンツアクティビティをコピー** ページで、 **ログ** ログを確認し、どの環境を使用するかを選択するコピープロセスの省略記号メニューから「 」アクションを選択します。
 
 ![コピーコンテンツプロセスのログへのアクセス](assets/copy-content-logs.png)
 
