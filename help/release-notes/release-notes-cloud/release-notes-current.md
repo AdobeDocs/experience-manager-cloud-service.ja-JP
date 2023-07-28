@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3ac4fcd1f3ef1ef78dcee3c10bfbc99f9d7ba3ad
+source-git-commit: 5995c416328e6f340285004ec2e723cc9279dabd
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 27%
@@ -30,7 +30,7 @@ ht-degree: 27%
 
 ## リリースビデオ {#release-video}
 
-2023.6.0 リリースに追加された機能の概要については、 2023 年 7 月リリースの概要ビデオをご覧ください。
+2023.7.0 リリースに追加された機能の概要については、 2023 年 7 月リリースの概要ビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422016/?quality=12)
 
