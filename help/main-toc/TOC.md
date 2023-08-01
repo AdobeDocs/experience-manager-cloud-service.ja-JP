@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9c9e773d3ba69f5582bf75a30f50bd9c8aaa3272
+source-git-commit: 31d0bc8592bdd7c7cb71e0d7ee5eaa9898c276f2
 workflow-type: tm+mt
-source-wordcount: '4205'
+source-wordcount: '4215'
 ht-degree: 96%
 
 ---
@@ -524,7 +524,7 @@ ht-degree: 96%
       + [コレクションの管理](/help/assets/manage-collections-assets-view.md)
       + [アセット、フォルダー、コレクションの監視](/help/assets/manage-notifications-assets-view.md)
       + [レポートの管理](/help/assets/manage-reports-assets-view.md)
-      + [タグの管理](/help/assets/tagging-management-assets-view.md)
+      + [タグを管理](/help/assets/tagging-management-assets-view.md)
    + Adobe Workfront との統合 {#integrations}
       + [ [!DNL Adobe Workfront] との統合](/help/assets/workfront-integrations.md)
       + [アセットメタデータマッピングの設定](/help/assets/configure-asset-metadata-mapping.md)
@@ -572,6 +572,7 @@ ht-degree: 96%
          + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
             + [アダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
             + [アダプティブフォームのテーマの作成 - コアコンポーネント](/help/forms/using-themes-in-core-components.md)
+            + [コアコンポーネントのサンプルのテーマ、テンプレート、フォームデータモデル](/help/forms/sample-themes-templates-form-data-models-core-components)
             + [アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-core-components.md)
             + [アダプティブフォームの作成 - AEM Sites ページのコアコンポーネント](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [機械翻訳または人間翻訳を使用したアダプティブフォームの翻訳](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
