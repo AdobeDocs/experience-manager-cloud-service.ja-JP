@@ -2,7 +2,7 @@
 title: コアコンポーネントベースのアダプティブフォームを翻訳する
 description: 機械翻訳または人間翻訳を使用した、コアコンポーネントベースのアダプティブフォームの翻訳
 feature: Adaptive Forms
-source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
+source-git-commit: 4f2a51502202fba3792cde370180d127f8e17418
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 17%
@@ -20,15 +20,15 @@ ht-degree: 17%
 1. AEM Forms UI 上でフォームを選択し、「**[!UICONTROL 辞書の追加]**」オプションをタップします。
 1. 辞書を翻訳プロジェクトに追加画面で、 **[!UICONTROL プロジェクト]** オプション
 
-   * 翻訳プロジェクトを作成するには、 **[!UICONTROL 新しい翻訳プロジェクトを作成]** オプションと **プロジェクトタイトル** 「 」フィールドで、タイトルを指定します。 例：`Government Reference Site - German locale.`
+   * 翻訳プロジェクトを作成するには、「 **[!UICONTROL 新しい翻訳プロジェクトを作成]** オプションと **プロジェクトタイトル** 「 」フィールドで、タイトルを指定します。 例：`Government Reference Site - German locale.`
    * 既存の翻訳プロジェクトに新しい辞書を追加するには、 **[!UICONTROL 既存の翻訳プロジェクトに追加]** オプションを選択し、 **[!UICONTROL 既存の翻訳プロジェクト]**.
-1. 内 **ターゲット言語** フィールドにロケールを指定します ( 例： `German(de)`) をクリックします。 複数のロケールを指定できます。 フォームは、 **ターゲット言語** フィールドに入力します。 「**完了**」をクリックします。
+1. Adobe Analytics の **ターゲット言語** フィールドにロケールを指定します ( 例： `German(de)`) をクリックします。 複数のロケールを指定できます。 フォームは、 **ターゲット言語** フィールドに入力します。 「**完了**」をクリックします。
 1. 辞書が追加されましたダイアログボックスで、 **プロジェクトを開く**.
 1. プロジェクト画面で、新しく作成されたプロジェクトをクリックします。 例えば、 **政府リファレンスサイト — ドイツ語ロケール** タイル。
 1. **翻訳ジョブ**&#x200B;タイルで ![aem62forms_downarrow](assets/aem62forms_downarrow.png) アイコンをクリックし、「**開始**」をクリックします。タイルのステータスがドラフトに変わります。 翻訳が完了すると、ステータスは「 **承認済み**. 数分後にページを更新し、ステータスを確認します。
 
    ![翻訳を開始](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
-1. ステータスが **承認済み** の **翻訳ジョブ** タイルで、 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) アイコンをクリックし、 **完了**.
+1. ステータスが「 **承認済み** の **翻訳ジョブ** タイルで、 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) アイコンをクリックし、 **完了**.
 
 1. ローカライズされたフォームをプレビューするには、AEM Forms UI で、ローカライズされたフォームを選択します。 クリック **[!UICONTROL プレビュー]** >**[!UICONTROL プレビューをHTML]**. を追加した後でフォームを再度開く `afAcceptLang=<locale code>` をフォームの URL に追加します。 例えば、 `afAcceptLang=de`をクリックして、ドイツ語版のフォームを開きます。
 
@@ -63,21 +63,21 @@ ht-degree: 17%
 1. AEM Forms UI 上でフォームを選択し、「**[!UICONTROL 辞書の追加]**」オプションをタップします。
 1. 辞書を翻訳プロジェクトに追加画面で、 **[!UICONTROL プロジェクト]** オプション
 
-   * 翻訳プロジェクトを作成するには、 **[!UICONTROL 新しい翻訳プロジェクトを作成]** オプションと **プロジェクトタイトル** 「 」フィールドで、タイトルを指定します。 例：`Government Reference Site - German locale.`
+   * 翻訳プロジェクトを作成するには、「 **[!UICONTROL 新しい翻訳プロジェクトを作成]** オプションと **プロジェクトタイトル** 「 」フィールドで、タイトルを指定します。 例：`Government Reference Site - German locale.`
    * 既存の翻訳プロジェクトに新しい辞書を追加するには、 **[!UICONTROL 既存の翻訳プロジェクトに追加]** オプションを選択し、 **[!UICONTROL 既存の翻訳プロジェクト]**.
-1. 内 **ターゲット言語** フィールドにロケールを指定します ( 例： `German(de)`) をクリックします。 複数のロケールを指定できます。 フォームは、 **ターゲット言語** フィールドに入力します。 「**完了**」をクリックします。
+1. Adobe Analytics の **ターゲット言語** フィールドにロケールを指定します ( 例： `German(de)`) をクリックします。 複数のロケールを指定できます。 フォームは、 **ターゲット言語** フィールドに入力します。 「**完了**」をクリックします。
 1. 辞書が追加されましたダイアログボックスで、 **プロジェクトを開く**.
 1. プロジェクト画面で、新しく作成されたプロジェクトをクリックします。 例えば、 **政府リファレンスサイト — ドイツ語ロケール** タイル。
 1. の下部に **概要** タイルで、 **省略記号**. 翻訳プロジェクトのプロパティ画面が開きます。
-1. を開きます。 **[!UICONTROL 詳細]** タブを **翻訳プロジェクトのプロパティ** 画面 の **[!UICONTROL 翻訳フィールド]**&#x200B;を選択します。 **[!UICONTROL 人間翻訳]**. クリック **保存して閉じる** をクリックします。
-1. の **翻訳ジョブ** タイルで、 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) アイコンをクリックし、 **書き出し**. [ 書き出し ] ダイアログで、[ 書き出したファイルをダウンロード ] オプションをクリックします。 .zip ファイルをダウンロードします。
+1. を開きます。 **[!UICONTROL 詳細]** タブをクリックします。 **翻訳プロジェクトのプロパティ** 画面。 の **[!UICONTROL 翻訳フィールド]**&#x200B;を選択します。 **[!UICONTROL 人間翻訳]**. クリック **保存して閉じる** をクリックします。
+1. 次の日： **翻訳ジョブ** タイルで、 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) アイコンをクリックし、 **書き出し**. [ 書き出し ] ダイアログで、[ 書き出したファイルをダウンロード ] オプションをクリックします。 .zip ファイルをダウンロードします。
    ![翻訳ファイルを書き出し](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
 1. ダウンロードした.zip ファイルを展開します。 抽出されたフォルダーには次の 2 つのファイルが含まれます。
    * translation_export_summary.xml
    * [form-fields-file].xml.
-1. を開きます。 [form-fields-file].xml （編集用） フォームフィールドのローカライズされた文字列とメッセージを追加します。 ファイルを保存して閉じます。
+1. を開きます。 [form-fields-file].xml （編集用） フォームフィールドに、ローカライズされた文字列とメッセージを追加します。 ファイルを保存して閉じます。
 1. ファイルを translation_export_summary.xml に zip 化し、 [form-fields-file].xml.
-1. の **翻訳ジョブ** タイルで、 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) アイコンをクリックし、 **インポート**. 次を含むアーカイブを選択 [form-fields-file].xml. フォームフィールドのローカライズされた文字列とメッセージを含む
+1. 次の日： **翻訳ジョブ** タイルで、 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) アイコンをクリックし、 **インポート**. 次を含むアーカイブを選択 [form-fields-file].xml. フォームフィールドのローカライズされた文字列とメッセージを含む
 
    ![翻訳ファイルをインポート](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
