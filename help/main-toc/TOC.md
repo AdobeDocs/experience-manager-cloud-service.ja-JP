@@ -8,7 +8,7 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 31d0bc8592bdd7c7cb71e0d7ee5eaa9898c276f2
+source-git-commit: 8a0057e52e971ebc4f396e7c43b43bad8337e6fe
 workflow-type: tm+mt
 source-wordcount: '4215'
 ht-degree: 96%
@@ -572,7 +572,7 @@ ht-degree: 96%
          + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
             + [アダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
             + [アダプティブフォームのテーマの作成 - コアコンポーネント](/help/forms/using-themes-in-core-components.md)
-            + [コアコンポーネントのサンプルのテーマ、テンプレート、フォームデータモデル](/help/forms/sample-themes-templates-form-data-models-core-components)
+            + [コアコンポーネントのサンプルのテーマ、テンプレート、フォームデータモデル](/help/forms/sample-themes-templates-form-data-models-core-components.md)
             + [アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-core-components.md)
             + [アダプティブフォームの作成 - AEM Sites ページのコアコンポーネント](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [機械翻訳または人間翻訳を使用したアダプティブフォームの翻訳](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
