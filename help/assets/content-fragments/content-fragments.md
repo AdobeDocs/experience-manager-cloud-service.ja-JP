@@ -1,17 +1,17 @@
 ---
 title: コンテンツフラグメントの使用方法（アセット - コンテンツフラグメント）
-description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントで、ページオーサリングやヘッドレス配信に最適な、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。
+description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントで、ページオーサリングやヘッドレス配信に最適な、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。また、MSM と共に使用する方法も示します。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 0706c4a466db1d360b27868e3ab5c320a3ba24f8
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 94%
+source-wordcount: '2159'
+ht-degree: 91%
 
 ---
 
 # コンテンツフラグメントの操作 {#working-with-content-fragments}
 
-Adobe Experience Manager（AEM）as a Cloud Service でコンテンツフラグメントを使用すると、[ページに依存しないコンテンツ](/help/sites-cloud/authoring/fundamentals/content-fragments.md)をデザイン、作成、キュレーションおよび公開できます。（ヘッドレス配信に最適な）複数の場所や複数のチャネルでの使用に対応したコンテンツを準備できます。
+Adobe Experience Manager(AEM) をas a Cloud Serviceしたコンテンツフラグメントを使用すると、デザイン、作成、キュレーションおよび [ページに依存しないコンテンツを公開](/help/sites-cloud/authoring/fundamentals/content-fragments.md).複数の場所や複数のチャネルで使用できるコンテンツを準備でき、ヘッドレス配信に最適です。 また、と一緒に使用することもできます。 [マルチサイト管理を使用してコンテンツを再利用](#reusing-content-fragments-with-msm-assets).
 
 コンテンツフラグメントには、構造化されたコンテンツが含まれます。
 
@@ -289,7 +289,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
    * フラグメントを HTML 形式や JSON 形式で配信するのに役立ちます。
    * [ページ上でフラグメントを参照](/help/sites-cloud/authoring/fundamentals/content-fragments.md)するために必要です。
-   * フラグメントのレイアウトと配信を担当します。つまり、チャネルです。
+   * フラグメントのレイアウトと配信（チャネル）を担当します。
    * フラグメントは、レイアウトを定義し、一部またはすべての要素／バリエーションと関連するコンテンツを配信するために、1 つ以上の専用コンポーネントを必要とします。
    * 作成時にフラグメントをページにドラッグすると、必須コンポーネントが自動的に関連付けられます。
 
