@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 6abd681fbf0258029dd594d214a2480d73b21f57
+source-git-commit: 6cc7153c9754b6786a08c5fd378d72a8ab7c478d
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1200'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # コアコンポーネントのサンプルのテーマ、テンプレート、フォームデータモデル {#sample-themes-templates-and-data-models}
 
-AEM Forms as a Cloud Serviceには、コアコンポーネントを使用したアダプティブFormsの作成をすばやく開始できるように、サンプルのリファレンステーマ、テンプレート、フォームデータモデルが用意されています。 以下が可能です。 [アダプティブFormsコアコンポーネントの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=ja) AEM Formsのas a Cloud Serviceおよびローカル開発環境で、参照用 OOTB テンプレートと [テーマの使用とカスタマイズ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
+AEM Forms as a Cloud Serviceには、コアコンポーネントを使用したアダプティブFormsの作成をすばやく開始できるように、サンプルのリファレンステーマ、テンプレート、フォームデータモデルが用意されています。 以下が可能です。 [アダプティブFormsコアコンポーネントの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=ja) AEM Formsのas a Cloud Serviceおよびローカル開発環境で、サンプルの OOTB テンプレートを取得し、 [サンプルテーマの使用とカスタマイズ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
 
 参照コンテンツパッケージに含まれるサンプルのテーマ、テンプレート、フォームデータモデルは次のとおりです。
 
@@ -26,14 +26,13 @@ AEM Forms as a Cloud Serviceには、コアコンポーネントを使用した�
 | 基本 | Canvas | Microsoft® Dynamics 365 |
 | 空白 | WKND | Salesforce |
 | お問い合わせ | イーゼル |  |
+| 連絡先詳細の更新 |   |   |
 | 同意フォーム | |  |
-| 苦情を提起する | | |
 | ログサービスリクエスト |  |  |
 | フィードバックを与える |  |  |
 | 福利厚生登録 |  |   |
 | 従業員福利厚生の要約 |   |   |
 | 取引明細書のリクエスト |   |   |
-| 連絡先詳細の更新 |   |   |
 | 安全検査用紙 |   |   |
 | 品質管理検査 |   |   |
 | 購入リクエスト |  |  |
@@ -77,15 +76,15 @@ WKND テーマは、活発で想像力に富んだデザインを体現し、ス
 
 >[!TAB デスクトップ]
 
-    ![ 基本テンプレートデスクトップ ](assets/Basic-template-desktop-view.png)
+![基本テンプレートデスクトップ](assets/Basic-template-desktop-view.png)
 
 >[!TAB 電話]
 
-    ![ 基本テンプレート電話 ](assets/Basic-template-phone-view.png)
+![基本テンプレートの電話番号](assets/Basic-temp-phone-view.png)
 
 >[!TAB タブレットなど）のアクティブマーカーを確認する。]
 
-    ![ 基本テンプレートタブレット ](assets/Basic-template-tablet-view.png)
+![基本テンプレートタブレット](assets/Basic-temp-tablet-view.png)
 
 >[!ENDTABS]
 
@@ -96,11 +95,9 @@ WKND テーマは、活発で想像力に富んだデザインを体現し、ス
 
 ![空のテンプレート](assets/Blank-template.png)
 
-### 口座明細書の請求 {#Request-for-Account-Statement}
+### お問い合わせ {#Contact-Us}
 
-取引明細書のリクエストテンプレートを使用すると、正確で最新の顧客明細書を取得するプロセスを開始するフォームを作成できます。 この明細書は、このフォームを使用する顧客に関する金融取引、活動、その他の関連情報の詳細な記録を提供します。
-
-![Request-for-account-statment](assets/Request-for-account-statment.png)
+Web サイトの訪問者と管理者の間のコミュニケーションを容易にするフォームを作成するには、「Contact Us」フォームテンプレートを使用します。 ユーザーは、フォームを通じて、クエリ、フィードバック、またはサポートリクエストを送信できます。
 
 ### 連絡先詳細の更新 {#Contact-Details-Update}
 
@@ -108,38 +105,9 @@ WKND テーマは、活発で想像力に富んだデザインを体現し、ス
 
 ![連絡先 — 詳細 — 更新](assets/Contact-details-update.png)
 
-### 安全検査 {#Safety-Inspection}
-
-安全性検査フォームテンプレートを使用すると、安全な作業環境の詳細を入力するフォームを作成できます。 この形態を用いて定期検査を行うことで、潜在的な危険性を特定することができる。 このフォームは、緊急出口、火災安全、電気安全、危険物、個人保護機器、ワークステーションの人間工学など、従業員、訪問者、顧客の安全と福祉に関する様々な側面をカバーしています。
-
-### 購入リクエスト {#Purchase-Request}
-
-購入リクエストフォームテンプレートを使用すると、調達プロセスを開始するフォームを作成し、従業員が自分の作業に必要な商品やサービスの正式な購入リクエストを行うことができます。 フォームは、品目の説明、数量、希望仕入先（該当する場合）、予算配分、購入のジャスティフィケーション、配信情報、必要な承認など、重要な詳細をキャプチャします。
-
-![purchase-request](assets/purchase-request.gif)
-
-### 従業員福利厚生要約 {#Employee-Benefits-Summary}
-
-従業員福利厚生サマリフォームテンプレートは、個人の福利厚生に関する重要な詳細を収集するフォームを作成するために使用します。 これにより、対象範囲を迅速かつ正確に評価し、包括的な概要を提供して、効率的な支援とサポートを実現します。
-
-### 福利厚生登録 {#Benefits-Enrollment}
-
-福利厚生登録フォームテンプレートは、従業員が希望する福利厚生や補償範囲のオプションに関する重要な情報を収集するためのフォームを作成するために使用します。 通常は、年間の福利厚生登録期間に付随します。
-
-
-### 品質管理検査 {#Quality-Control-Inspection}
-
-品質管理検査フォームテンプレートを使用して、製品や品目の外観、寸法、機能、ドキュメント、テスト結果、全体的な品質を評価および文書化するフォームを作成します。 品質基準の遵守に必要な欠陥、不適合、および是正措置を特定するのに役立ちます。
-
-
 ### 同意フォーム {#Consent-Form}
 
 同意フォームテンプレートを使用して、特定の活動、研究、医療処置、または個人情報や権利が関与する状況に参加する参加者から法的文書を取得するためのフォームを作成します。 このフォームは、透明性を確保し、参加者の権利を保護し、個人が何に同意するかを明確に理解するためのものです。
-
-
-### お問い合わせ {#Contact-Us}
-
-Web サイトの訪問者と管理者の間のコミュニケーションを容易にするフォームを作成するには、「Contact Us」フォームテンプレートを使用します。 ユーザーは、フォームを通じて、クエリ、フィードバック、またはサポートリクエストを送信できます。
 
 ### ログサービスリクエスト {#Log-Service-Request}
 
@@ -148,6 +116,34 @@ Web サイトの訪問者と管理者の間のコミュニケーションを容�
 ### フィードバックを与える {#Give-Feedback}
 
 フィードバックフォームテンプレートを提供すると、別の人やチームに建設的なフィードバックを提供するためのフォームを作成できます。 このフォームは、フィードバックが明確で具体的で実用的なものであることを確認し、オープンなコミュニケーションと改善を促進するのに役立ちます。
+
+### 福利厚生登録 {#Benefits-Enrollment}
+
+福利厚生登録フォームテンプレートは、従業員が希望する福利厚生や補償範囲のオプションに関する重要な情報を収集するためのフォームを作成するために使用します。 通常は、年間の福利厚生登録期間に付随します。
+
+### 従業員福利厚生要約 {#Employee-Benefits-Summary}
+
+従業員福利厚生サマリフォームテンプレートは、個人の福利厚生に関する重要な詳細を収集するフォームを作成するために使用します。 これにより、対象範囲を迅速かつ正確に評価し、包括的な概要を提供して、効率的な支援とサポートを実現します。
+
+### 口座明細書の請求 {#Request-for-Account-Statement}
+
+取引明細書のリクエストテンプレートを使用すると、正確で最新の顧客明細書を取得するプロセスを開始するフォームを作成できます。 この明細書は、このフォームを使用する顧客に関する金融取引、活動、その他の関連情報の詳細な記録を提供します。
+
+![Request-for-account-statment](assets/Request-for-account-statment.png)
+
+### 安全検査 {#Safety-Inspection}
+
+安全性検査フォームテンプレートを使用すると、安全な作業環境の詳細を入力するフォームを作成できます。 この形態を用いて定期検査を行うことで、潜在的な危険性を特定することができる。 このフォームは、緊急出口、火災安全、電気安全、危険物、個人保護機器、ワークステーションの人間工学など、従業員、訪問者、顧客の安全と福祉に関する様々な側面をカバーしています。
+
+### 品質管理検査 {#Quality-Control-Inspection}
+
+品質管理検査フォームテンプレートを使用して、製品や品目の外観、寸法、機能、ドキュメント、テスト結果、全体的な品質を評価および文書化するフォームを作成します。 品質基準の遵守に必要な欠陥、不適合、および是正措置を特定するのに役立ちます。
+
+### 購入リクエスト {#Purchase-Request}
+
+購入リクエストフォームテンプレートを使用すると、調達プロセスを開始するフォームを作成し、従業員が自分の作業に必要な商品やサービスの正式な購入リクエストを行うことができます。 フォームは、品目の説明、数量、希望仕入先（該当する場合）、予算配分、購入のジャスティフィケーション、配信情報、必要な承認など、重要な詳細をキャプチャします。
+
+![purchase-request](assets/purchase-request.gif)
 
 ## 参照フォームデータモデル {#reference-models}
 
