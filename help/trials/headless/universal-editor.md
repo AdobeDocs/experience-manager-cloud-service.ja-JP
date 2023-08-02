@@ -6,7 +6,7 @@ index: false
 source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
 workflow-type: tm+mt
 source-wordcount: '961'
-ht-degree: 4%
+ht-degree: 9%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 4%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="コンテキストでの編集"
->abstract="ヘッドレスアプリでユニバーサルエディターを活用して低摩擦を引き起こす方法を、コンテキスト編集で作成者の指先に表示します。"
+>title="コンテキスト内編集"
+>abstract="ヘッドレスアプリでユニバーサルエディターを活用して、作成者にスムーズなコンテキスト内編集機能を提供する方法を説明します。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
@@ -25,7 +25,7 @@ ht-degree: 4%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
->title="このモジュールでは、ユニバーサルエディターを使用して、コンテキスト内およびインプレースでコンテンツをカスタマイズする方法を学びました。"
+>title="このモジュールでは、ユニバーサルエディターを使用してコンテンツをコンテキスト内およびインプレースでカスタマイズする方法を学びました。"
 >abstract=""
 
 ## コンテキスト内のテキストを編集 {#edit-text}
@@ -44,13 +44,13 @@ ht-degree: 4%
 
    ![ユニバーサルエディター](assets/do-not-localize/ue-text-mode.png)
 
-1. コンポーネントは、テキストコンポーネントであることを示すタブ付きの青い境界線で示されるように選択されます。 カーソルは、テキスト入力待ちの境界にあります。 テキストをに変更します。 `Aloha Spirit in Lofoten`.
+1. コンポーネントは、テキストコンポーネントであることを示すタブ付きの青い境界線で示されるように選択されます。 カーソルは、テキスト入力待ちの境界内にあります。 テキストをに変更します。 `Aloha Spirit in Lofoten`.
 
    ![ユニバーサルエディターでのテキストの編集](assets/do-not-localize/ue-edit-text-2.png)
 
 1. Enter キーまたは Enter キーを押すか、テキストコンポーネントの外側をタップまたはクリックすると、変更内容が自動的に保存されます。
 
-ユニバーサルエディターは、オーサリング環境内に変更を自動的に保存します。 読者に表示するには、引き続き公開する必要があります。これは後の手順で行います。
+ユニバーサルエディターは、オーサリング環境内に変更内容を自動的に保存します。 読者に表示するには、引き続き公開する必要があります。これは後の手順で行います。
 
 ## コンテキスト内のメディアを編集 {#edit-media}
 
@@ -64,9 +64,9 @@ ht-degree: 4%
 
    ![編集する画像の選択](assets/do-not-localize/ue-edit-media.png)
 
-1. 内 **アセットを選択** ウィンドウを開き、下にスクロールして、をタップまたはクリックします。 `surfer-wave-02.JPG` 画像を使用して選択します。
+1. Adobe Analytics の **アセットを選択** ウィンドウを開き、下にスクロールして、をタップまたはクリックします。 `surfer-wave-02.JPG` 画像を使用して選択します。
 
-1. タップまたはクリック **選択** 内 **アセットを選択** ウィンドウ
+1. タップまたはクリック **選択** （内） **アセットを選択** ウィンドウ
 
    ![Select Asset ウィンドウを使用した画像の選択](assets/do-not-localize/ue-select-asset.png)
 
@@ -96,7 +96,7 @@ ht-degree: 4%
 
 1. エディターの左側にあるモードレールで、をタップまたはクリックします。 **プレビュー**.
 
-1. 次に、 **詳細を表示** メイン記事のリンク。
+1. 次に、 **続きを読む** メイン記事のリンク。
 
    ![プレビューモード](assets/do-not-localize/ue-preview-publish-1.png)
 
