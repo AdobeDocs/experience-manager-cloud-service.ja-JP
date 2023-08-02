@@ -2,9 +2,9 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: c19783ed4899772835a05856fc3a5601ef6a6df8
+source-git-commit: a16e627fc758c6aa8516b01aedd622da5b77318b
 workflow-type: tm+mt
-source-wordcount: '2309'
+source-wordcount: '2317'
 ht-degree: 38%
 
 ---
@@ -24,7 +24,7 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 1. お客様は、ニーズに応じてアラートを設定できます。
 1. SRE はシステムの正常性を監視24/7、可能な限り早く対処します。
 1. インデックスの設定は、デプロイメントを介して変更されます。インデックス定義の変更は、他のコンテンツの変更と同様に設定されます。
-1. AEMas a Cloud Serviceの概要と、 [ローリングデプロイメントモデル](#index-management-using-rolling-deployments)には、2 組のインデックスが存在します。1 つは古いバージョン用、もう 1 つは新しいバージョン用です。
+1. AEMas a Cloud Serviceの概要と、 [ローリングデプロイメントモデル](#index-management-using-rolling-deployments)には、古いバージョン用と新しいバージョン用の 2 組のインデックスが存在します。
 1. Cloud Manager のビルドページで、インデックス作成ジョブが完了したかどうかを確認できます。新しいバージョンでトラフィックを引き受ける準備ができたら、通知を受け取ります。
 
 制限事項：
@@ -32,6 +32,7 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 * 現在、AEM as a Cloud Service のインデックス管理は、`lucene` 型のインデックスに対してのみサポートされています。
 * 標準のアナライザーのみがサポートされます（つまり、製品に付属しているアナライザー）。 カスタムアナライザーはサポートされていません。
 * 内部的には、他のインデックスがクエリに設定され使用される可能性があります。例えば、`damAssetLucene` インデックスに対して記述されたクエリは、Skyline 上では実際には、このインデックスの Elasticsearch バージョンに対して実行される可能性があります。この違いは、通常、アプリケーションとユーザーには表示されませんが、 `explain` 機能は、別のインデックスをレポートします。 Lucene インデックスと Elasticsearch インデックスの違いについては、[Apache Jackrabbit Oak の Elastic 関連ドキュメント](https://jackrabbit.apache.org/oak/docs/query/elastic.html)を参照してください。お客様は、Elasticsearchインデックスを直接設定する必要はなく、または設定できません。
+* 類似のフィーチャベクトル (`useInSimilarity = true`) はサポートされていません。
 
 ## 使用方法 {#how-to-use}
 
@@ -49,9 +50,9 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 
 1. 標準 (OOTB) インデックス。 例： `/oak:index/cqPageLucene-2` または `/oak:index/damAssetLucene-8`.
 
-2. OOTB インデックスのカスタマイズ。 これらは、 `-custom-` 元のインデックス名に続く数値識別子。 （例：`/oak:index/damAssetLucene-8-custom-1`）。
+2. OOTB インデックスのカスタマイズ。 これらは以下を付加して示します。 `-custom-` 元のインデックス名に続く数値識別子。 （例：`/oak:index/damAssetLucene-8-custom-1`）。
 
-3. 完全なカスタムインデックス：まったく新しいインデックスを最初から作成することもできます。 名前の競合を避けるために、名前にプレフィックスが必要です。 例： `/oak:index/acme.product-1-custom-2`( プレフィックスは `acme.`
+3. 完全なカスタムインデックス：まったく新しいインデックスを最初から作成できます。 名前の競合を避けるために、名前にプレフィックスが必要です。 例： `/oak:index/acme.product-1-custom-2`( プレフィックスは `acme.`
 
 ## 新しいインデックス定義の準備 {#preparing-the-new-index-definition}
 
@@ -79,14 +80,14 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 >
 > * `allowIndexDefinitions=true`
 
-## カスタム索引定義のデプロイ {#deploying-custom-index-definitions}
+## カスタム・インデックス定義のデプロイ {#deploying-custom-index-definitions}
 
 標準提供のインデックスのカスタマイズバージョンをデプロイする方法を説明するには `damAssetLucene-8`を使用する場合、詳細な手順を示すガイドを提供します。 この例では、名前をに変更します。 `damAssetLucene-8-custom-1`. その場合の手順は次のとおりです。
 
 1. 新しいフォルダーを作成し、更新されたインデックス名を `ui.apps` ディレクトリ：
    * 例：`ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
-2. 設定ファイルを追加 `.content.xml` 新しく作成されたフォルダー内のカスタム設定を使用します。 以下に、カスタマイズの例を示します。ファイル名： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
+2. 設定ファイルを追加 `.content.xml` 新しく作成されたフォルダー内のカスタム設定を使用します。 カスタマイズの例を次に示します。ファイル名： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -152,7 +153,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ## プロジェクト設定
 
-バージョン >=を使用することを強くお勧めします `1.3.2` ジャックラッビの `filevault-package-maven-plugin`. プロジェクトに組み込む手順は次のとおりです。
+バージョン >=を使用することを強くお勧めします。 `1.3.2` ジャックラッビの `filevault-package-maven-plugin`. プロジェクトに組み込む手順は次のとおりです。
 
 1. トップレベルのバージョンを更新します `pom.xml`:
 
@@ -264,7 +265,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ### ローリングデプロイメントによるインデックス管理 {#index-management-with-rolling-deployments}
 
-ローリングデプロイメントでは、ダウンタイムは発生しません。 更新中のしばらくの間、アプリケーションの古いバージョン（バージョン 1 など）と新しいバージョン（バージョン 2 など）の両方が、同じリポジトリに対して同時に実行されます。 バージョン 1 で特定のインデックスを使用可能にする必要がある場合は、バージョン 2 でこのインデックスを削除しないでください。後でインデックスを削除する必要があります（例：バージョン 3）。その時点で、アプリケーションのバージョン 1 が実行されなくなります。 また、バージョン 2 が実行中で、バージョン 2 のインデックスが使用可能でも、バージョン 1 が正常に動作するようにアプリケーションを作成してください。
+ローリングデプロイメントでは、ダウンタイムは発生しません。 更新中のしばらくの間、アプリケーションの古いバージョン（バージョン 1 など）と新しいバージョン（バージョン 2 など）の両方が、同じリポジトリに対して同時に実行されます。 バージョン 1 で特定のインデックスを使用可能にする必要がある場合は、バージョン 2 でこのインデックスを削除しないでください。インデックスは、後で削除する必要があります（例：バージョン 3）。その時点で、アプリケーションのバージョン 1 が実行されなくなることが保証されます。 また、バージョン 2 が実行中で、バージョン 2 のインデックスが使用可能でも、バージョン 1 が正常に動作するようにアプリケーションを作成してください。
 
 新しいバージョンへのアップグレードが完了した後、システムが古いインデックスをガベージコレクションできます。古いインデックスは、ロールバックを高速化するために、しばらくの間保持される場合があります（ロールバックが必要な場合）。
 
@@ -272,7 +273,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->この `<indexName>-custom-<customerVersionNumber>` は、既存のインデックスの代わりとしてマークするためにAEM as a Cloud Serviceで必要です。
+>The `<indexName>-custom-<customerVersionNumber>` は、既存のインデックスの代わりとしてマークするためにAEM as a Cloud Serviceで必要です。
 
 | 索引 | 標準提供インデックス | バージョン 1 で使用 | バージョン 2 で使用 |
 |---|---|---|---|
@@ -297,7 +298,7 @@ Adobeが「damAssetLucene」や「cqPageLucene」などの標準のインデッ�
 
 ### 現在の制限事項 {#current-limitations}
 
-インデックス管理は、型のインデックスに対してのみサポートされます `lucene`を `compatVersion` に設定 `2`. 内部的には、例えば Elasticsearch インデックスなどの他のインデックスが設定され、クエリに使用される場合があります。`damAssetLucene` インデックスに対して書き込まれるクエリは、AEM as a Cloud Serviceでは、実際には、このインデックスの Elasticsearch バージョンに対して実行される場合があります。 この違いは、アプリケーションのエンドユーザーには見えませんが、 `explain` 機能は、異なるインデックスをレポートします。 Lucene インデックスと Elasticsearch インデックスの違いについては、[Apache Jackrabbit Oak の Elasticsearch ドキュメント](https://jackrabbit.apache.org/oak/docs/query/elastic.html)を参照してください。顧客が Elasticsearch インデックスを直接設定することはできず、またその必要もありません。
+インデックス管理は、型のインデックスに対してのみサポートされます `lucene`、を `compatVersion` に設定 `2`. 内部的には、例えば Elasticsearch インデックスなどの他のインデックスが設定され、クエリに使用される場合があります。`damAssetLucene` インデックスに対して書き込まれるクエリは、AEM as a Cloud Serviceでは、実際には、このインデックスの Elasticsearch バージョンに対して実行される場合があります。 この違いは、アプリケーションのエンドユーザーには見えませんが、 `explain` 機能は、異なるインデックスをレポートします。 Lucene インデックスと Elasticsearch インデックスの違いについては、[Apache Jackrabbit Oak の Elasticsearch ドキュメント](https://jackrabbit.apache.org/oak/docs/query/elastic.html)を参照してください。顧客が Elasticsearch インデックスを直接設定することはできず、またその必要もありません。
 
 組み込みのアナライザーのみがサポートされます（つまり、製品に付属しているアナライザー）。 カスタムアナライザーはサポートされていません。
 
@@ -337,7 +338,7 @@ Adobeが「damAssetLucene」や「cqPageLucene」などの標準のインデッ�
 
 次の操作は、カスタムインデックスにのみ適用されます。製品インデックスは AEM で使用されるので、削除できません。
 
-新しいバージョンのアプリケーションでインデックスが削除された場合は、新しい名前で空のインデックス（使用されることがなく、データを含まない空のインデックス）を定義できます。 この例では、 `/oak:index/acme.product-custom-3`. この名前は、インデックスを置き換えます `/oak:index/acme.product-custom-2`. 後 `/oak:index/acme.product-custom-2` がシステムによって削除された場合、空のインデックス `/oak:index/acme.product-custom-3` その後、を削除できます。 このような空のインデックスの例を次に示します。
+新しいバージョンのアプリケーションでインデックスが削除された場合は、新しい名前で空のインデックス（使用されることがなく、データを含まない空のインデックス）を定義できます。 この例では、 `/oak:index/acme.product-custom-3`. この名前は、インデックスを置き換えます。 `/oak:index/acme.product-custom-2`. 後 `/oak:index/acme.product-custom-2` がシステムによって削除された場合、空のインデックス `/oak:index/acme.product-custom-3` その後、を削除できます。 このような空のインデックスの例を次に示します。
 
 ```xml
 <acme.product-custom-3
