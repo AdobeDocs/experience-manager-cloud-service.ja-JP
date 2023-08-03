@@ -1,10 +1,10 @@
 ---
 title: Adobe Analytics との統合
-description: タッチ Ui とAdobeLaunch を使用して、Adobe AnalyticsをAEM as a Cloud Serviceと統合する方法を説明します。
+description: タッチ UI と Launch を使用して、Adobe AnalyticsをAEM as a Cloud Serviceと統合する方法をAdobeします。
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
+source-git-commit: 957758a8d3c16328e7638356e7ee6df3e561386d
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 85%
