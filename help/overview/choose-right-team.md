@@ -1,11 +1,11 @@
 ---
 title: 適切な人材、適切な役割
-description: 適切な人材、適切な役割
+description: プロジェクトに適した担当者を選択し、適切な役割に割り当てる方法を説明します。
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 78%
+source-wordcount: '860'
+ht-degree: 76%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 78%
 
 組織では、複数の部門がデジタルエクスペリエンスの異なる側面を担っている可能性が高いでしょう。ガバナンスが機能しなければ、いつ果てしない論争、内輪もめ、混乱に陥ってもおかしくありません。
 
-デジタルガバナンスは、誰が何を担当し、誰がどのようなデジタルに焦点を当てた仕事をしているかを見つけることから始まります。 必要なスキルを追加するために、戦略的な雇用が必要になることもあります。さらに大きな課題は、文化の変化を促すことです。新しい技術への幅広い支援を構築し、人々が新しい方法で物事を行うのに慣れるのを助けます。 その取り組みの重要な部分となるのが、デジタルコミュニティの立ち上げです。メンバーが互いに学び合い、支援し合うことができるコミュニティです。
+デジタルガバナンスは、誰が何を担当し、誰がどのようなデジタルに焦点を当てた仕事をしているかを見つけ出すことから始まります。 必要なスキルを追加するために、戦略的な雇用が必要になることもあります。さらに大きな課題は、文化の変化を促すことです。新しい技術への幅広い支援を構築し、人々が新しい方法で物事を行うのに慣れるのを助けます。 その取り組みの重要な部分となるのが、デジタルコミュニティの立ち上げです。メンバーが互いに学び合い、支援し合うことができるコミュニティです。
 
 現時点では、Adobe Experience Managerのデプロイメントを促進するために、適切な担当者を適切なジョブに配置することに焦点を当てています。 Experience Manager SitesとExperience Manager Assetsの各コアAdobeには、ユーザーが様々な役割で効果的に使用できるようにするスキル、専門知識、属性と共に、必要な役割のリストが用意されています。
 
@@ -54,7 +54,7 @@ ht-degree: 78%
 
 アーキテクトからスクラムマスターまで、さらには DAM イブラリアンも含めて、このチームに関係する役割はすべて不可欠です。
 
-Adobe Experience Manager Assets の導入を成功させるために必要な人材のほとんどが既に揃っている可能性があります。このリストはAdobe Experience Manager Sitesの場合と似ていますが、重要な追加事項が 1 つあります。デジタルアセットを見つけやすくする方法でデジタルアセットを整理し、ラベル付けするには、ライブラリアンが必要です。
+Adobe Experience Manager Assets の導入を成功させるために必要な人材のほとんどが既に揃っている可能性があります。このリストはAdobe Experience Manager Sitesの場合と似ていますが、重要な追加事項が 1 つあります。デジタルアセットを見つけやすいように整理し、ラベル付けするには、ライブラリアンが必要です。
 
 | 役割 | スキル | 能力レベル | 資質 |
 |--- |--- |--- |--- |
@@ -77,4 +77,4 @@ Adobe Experience Manager Assets の導入を成功させるために必要な人
 
 >[!TIP]
 >
-> Adobe Experience Cloudの詳細情報と [Experience League](https://experienceleague.adobe.com/?lang=ja#recommended/solutions/experience-manager) を通じて認証を受ける [Adobeデジタルラーニング](https://learning.adobe.com/certification.html).
+> Adobe Experience Cloudの詳細を説明し、 [Experience League](https://experienceleague.adobe.com/?lang=ja#recommended/solutions/experience-manager) を通じて認証を受ける [Adobeデジタルラーニング](https://learning.adobe.com/certification.html).

@@ -1,11 +1,11 @@
 ---
 title: インボックス
-description: インボックスを使用したタスクの管理
+description: インボックスに届いた通知を使用してタスクを管理する方法を説明します。
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 89%
+source-wordcount: '914'
+ht-degree: 88%
 
 ---
 
@@ -140,7 +140,7 @@ AEM 通知インボックスを開くには、次の手順に従います。
 
    * アクションに適したダイアログボックスが開きます
    * アクションウィザードが起動します
-   * ドキュメントページが開きます
+   * ドキュメントページが開きます。
 
    例えば、「**委任**」を選択するとダイアログが開きます。
 

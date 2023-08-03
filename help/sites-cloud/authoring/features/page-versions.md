@@ -1,17 +1,17 @@
 ---
 title: ページバージョンの処理
-description: ページのバージョンの作成、比較および復元
+description: AEMでページのバージョンを作成、比較および復元する方法について説明します。
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 40%
+source-wordcount: '1507'
+ht-degree: 50%
 
 ---
 
-# ページバージョンの使用 {#working-with-page-versions}
+# ページバージョンの処理  {#working-with-page-versions}
 
-バージョン管理では、特定の時点でのページの「スナップショット」が作成されます。バージョン管理を使用して、次の操作を実行できます。
+バージョン管理では、特定の時点でのページの「スナップショット」を作成します。バージョン管理を使用すると、次の操作を実行できます。
 
 * ページのバージョンを作成します。
 * 1 つ以上のページの以前のバージョンを次の場所に回復する。
@@ -39,7 +39,7 @@ ht-degree: 40%
 
    ![タイムラインパネルに表示されるバージョン](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
-1. 選択 **バージョンとして保存**.
+1. 「**バージョンとして保存**」を選択します。
 1. を入力します。 **ラベル** および **コメント**（必要に応じて）
 
    ![バージョンのラベルの追加](/help/sites-cloud/authoring/assets/versions-add-label.png)
@@ -52,7 +52,7 @@ ht-degree: 40%
 
 1. バージョンを作成するページに移動して、そのページを表示します。
 1. [選択モード](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)でページを選択します。
-1. を選択します。 **作成** 」オプションを使用します。
+1. ツールバーで「**作成**」オプションを選択します。
 1. 同じダイアログボックスが開きます。 次の項目を入力できます。 **ラベル** および **コメント**（必要に応じて）
 1. 「**作成**」で新しいバージョンを確定します。
 
@@ -84,7 +84,7 @@ ht-degree: 40%
 >
 >1. 任意のページのバージョンを作成します。
 >1. 最初のラベルとバージョンノードの名前は、1.0、1.1、1.2 などです。
->1. 最初のバージョンを回復する。つまり、1.0 です。
+>1. 最初のバージョン (1.0) を回復します。
 >1. バージョンを再度作成します。
 >1. 生成されるラベルおよびノード名は、1.0.0、1.0.1、1.0.2 などになりました。
 
@@ -99,7 +99,7 @@ ht-degree: 40%
 
    ![このバージョンに戻る](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. 選択 **このバージョンに戻る**. 選択したバージョンが復元され、タイムラインの情報が更新されます。
+1. 「**このバージョンに戻る**」を選択します。選択したバージョンが復元され、タイムラインの情報が更新されます。
 
 ### バージョンの復元 {#restore-version}
 
@@ -122,7 +122,7 @@ ht-degree: 40%
 
    ![バージョンを復元 - フォルダー内のすべてのページのリスト](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
 
-1. 特定のページの場合、 **バージョンに復元** をクリックして、そのページに必要なバージョンを選択します。
+1. 特定のページに対して、 **バージョンに復元** をクリックして、そのページに必要なバージョンを選択します。
 
    ![バージョンを復元 - バージョンの選択](/help/sites-cloud/authoring/assets/versions-restore-version-02.png)
 
@@ -158,7 +158,7 @@ ht-degree: 40%
 
 ## バージョンのプレビュー {#previewing-a-version}
 
-特定のバージョンをプレビューできます。
+次の手順で特定のバージョンをプレビューできます。
 
 1. 比較するページに移動して、そのページを表示します。
 1. [選択モード](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)でページを選択します。
@@ -171,13 +171,13 @@ ht-degree: 40%
 
    >[!CAUTION]
    >
-   >ページが移動されている場合は、移動前に行われたバージョンのプレビューを実行できなくなりました。
+   >ページを移動すると、移動前に作成したバージョンのプレビューを実行できなくなります。
    >
-   >プレビューで問題が発生した場合は、 [タイムライン](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) ページが移動されたかどうかを確認するために使用します。
+   >プレビューで問題が発生した場合は、ページの[タイムライン](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)を調べて、ページを移動したかどうかを確認します。
 
 ## 特定のバージョンと現在のページとの比較 {#comparing-a-version-with-current-page}
 
-以前のバージョンと現在のページを比較するには：
+以前のバージョンを現在のページと比較するには、次の手順を実行します。
 
 1. 比較するページに移動して、そのページを表示します。
 1. [選択モード](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)でページを選択します。
@@ -186,7 +186,7 @@ ht-degree: 40%
 
    ![バージョンの比較](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. 選択 **現在と比較**. この [ページの差分](/help/sites-cloud/authoring/features/page-diff.md) の違いが開き、表示されます。
+1. 「**現在のバージョンと比較**」を選択します。The [ページの差分](/help/sites-cloud/authoring/features/page-diff.md) の違いが開き、表示されます。
 
 ## タイムワープ {#timewarp}
 
@@ -200,16 +200,16 @@ ht-degree: 40%
 
 この機能を使用するには：
 
-* 選択した時刻にアクティブだったページのバージョンを検索します。
+* 選択した時間にアクティブであったページバージョンが検索されます。
 * これは、表示されたバージョンが作成/アクティベートされたことを意味します *前* タイムワープで選択した時点。
 * 削除されたページに移動すると、そのページの古いバージョンがリポジトリ内で引き続き使用できる限り、ページもレンダリングされます。
 * 公開されたバージョンが見つからない場合、オーサー環境で現在のページの状態に戻ります ( これは、閲覧を妨げるエラー (404) ページが表示されないようにするためです )。
 
 ### タイムワープの使用 {#using-timewarp}
 
-タイムワープは [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 」をクリックします。 他のモードと同じように切り替えて開始します。
+タイムワープは、ページエディターの[モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)です。開始するには、他のモードに切り替えるときと同様にタイムワープモードに切り替えます。
 
-1. タイムワープを開始するページのエディターを起動し、「 **タイムワープ** を選択します。
+1. タイムワープを開始するページのエディターを起動し、モード選択で&#x200B;**タイムワープ**&#x200B;を選択します。
 
    ![タイムワープモード](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 
@@ -217,7 +217,7 @@ ht-degree: 40%
 
    ![タイムワープの目的の日時](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
 
-1. 日付セットに基づいてページが表示されます。 タイムワープモードは、ウィンドウ上部の青いステータスバーで示されます。 新しいターゲット日付を選択したり、タイムワープモードを終了したりできるよう、ステータスバーのリンクを使用します。
+1. ページは、日付設定に基づいて表示されます。タイムワープモードは、ウィンドウ上部の青いステータスバーで示されます。 新しいターゲット日付を選択したり、タイムワープモードを終了したりできるよう、ステータスバーのリンクを使用します。
 
    ![タイムワープモードの状態](/help/sites-cloud/authoring/assets/versions-timewarp.png)
 

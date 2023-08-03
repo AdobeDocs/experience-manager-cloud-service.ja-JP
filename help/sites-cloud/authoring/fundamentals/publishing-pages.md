@@ -1,17 +1,17 @@
 ---
 title: ページの公開
-description: AEM を使用してページを公開および非公開にする方法
+description: AEMの様々なメカニズムを使用して、ページを公開および非公開にする方法を説明します。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '1802'
-ht-degree: 85%
+source-wordcount: '1807'
+ht-degree: 84%
 
 ---
 
-# ページの公開 {#publishing-pages}
+# ページの公開  {#publishing-pages}
 
-オーサー環境でコンテンツを作成およびレビューしたら、目標は次のとおりです。 [公開 Web サイトで利用できるようにする](/help/sites-cloud/authoring/getting-started/concepts.md) （パブリッシュ環境）。
+オーサー環境でコンテンツを作成およびレビューしたら、目標は次のとおりです。 [公開 Web サイトで利用できるようにする](/help/sites-cloud/authoring/getting-started/concepts.md) （お使いのパブリッシュ環境）。
 
 この操作は、ページの公開と呼ばれます。パブリッシュ環境からページを削除する場合は、ページの非公開と呼ばれます。ページの公開や非公開を行う場合でも、ページを削除するまでは、オーサー環境でページに引き続き変更を加えることができます。
 
@@ -203,7 +203,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
    >[!NOTE]
    >
-   >この **ワークフロー** ユーザーの権限に基づいて、手順が表示されます。 公開権限およびワークフローへのアクセスの管理および [ページへのワークフローの適用](/help/sites-cloud/authoring/workflows/applying.md) 」を参照してください。
+   >The **ワークフロー** ユーザーの権限に基づいて、手順が表示されます。 公開権限およびワークフローへのアクセスの管理および [ページへのワークフローの適用](/help/sites-cloud/authoring/workflows/applying.md) 」を参照してください。
 
    リソースは、トリガーされたワークフローでグループ化され、それぞれに次のオプションが提供されます。
 

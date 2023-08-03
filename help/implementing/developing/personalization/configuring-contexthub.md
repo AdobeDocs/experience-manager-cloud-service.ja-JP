@@ -1,11 +1,11 @@
 ---
 title: ContextHub の設定
-description: Context Hub の設定方法について説明します。
+description: コンテキストデータを保存、操作、表示するためのフレームワークである Context Hub の設定方法について説明します。
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '1680'
-ht-degree: 95%
+source-wordcount: '1689'
+ht-degree: 94%
 
 ---
 
@@ -149,7 +149,7 @@ contexthub.generic-jsonp ストアがサービスコール `https://md5.jsontest
 
 contexthub.generic-jsonp のサンプルのストア候補を使用すると、JSON データを返す JSONP サービスや Web サービスからデータを取得できます。このストア候補では、そのストア設定を使用して、使用する JSONP サービスに関する詳細を指定します。
 
-この [init](contexthub-api.md#init-name-config) 関数 `ContextHub.Store.JSONPStore` JavaScript クラスは `config` このストア候補を初期化するオブジェクト。 `config` オブジェクトには JSONP サービスに関する情報が含まれる `service` オブジェクトが含まれています。ストアを設定するには、詳細設定プロパティの値として `service` オブジェクトを JSON 形式で指定します。
+The [init](contexthub-api.md#init-name-config) 関数 `ContextHub.Store.JSONPStore` JavaScript クラスは `config` このストア候補を初期化するオブジェクト。 `config` オブジェクトには JSONP サービスに関する情報が含まれる `service` オブジェクトが含まれています。ストアを設定するには、詳細設定プロパティの値として `service` オブジェクトを JSON 形式で指定します。
 
 jsontest.com サイトの MD5 サービスからのデータを保存するには、次のプロパティを使用して [ContextHub ストアの作成](#creating-a-contexthub-store)の手順に従います。
 
