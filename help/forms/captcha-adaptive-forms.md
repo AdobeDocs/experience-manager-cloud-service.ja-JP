@@ -2,9 +2,9 @@
 title: アダプティブFormsでの reCAPTCHA の使用
 description: アダプティブFormsでGoogle reCAPTCHA サービスを設定する方法を説明します。
 topic-tags: adaptive_forms, author
-source-git-commit: 4b6c22667bb79bb6cac22675fa22f741b0262210
+source-git-commit: a1689c61715f01cb4eb62882dbcd6e202b74ffc9
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1913'
 ht-degree: 50%
 
 ---
@@ -106,7 +106,7 @@ reCAPTCHA Enterprise サービスを有効にすると、アダプティブフ�
    >[!NOTE]
    >
    >* アダプティブフォーム内での複数の Captcha コンポーネントの使用はサポートされていません。 また、遅延読み込み用とマークされたパネルやフラグメントでは、CAPTCHA を使用しないことをお勧めします。
-   >* reCaptcha は時間に依存し、約 1 分で期限が切れます。 したがって、Captcha コンポーネントは、アダプティブフォーム内の「送信」ボタンの直前に配置することをお勧めします。
+   >* reCaptcha は時間に依存し、約数分で有効期限が切れます。 したがって、Captcha コンポーネントは、アダプティブフォーム内の「送信」ボタンの直前に配置することをお勧めします。
 
 1. 追加した Captcha コンポーネントを選択し、をタップします。 ![cmppr](assets/cmppr.png) をクリックして、そのプロパティを編集します。
 1. CAPTCHA ウィジェットのタイトルを指定します。デフォルト値は **Captcha** です。タイトルを表示しない場合は、「**タイトルを非表示にする**」を選択します。

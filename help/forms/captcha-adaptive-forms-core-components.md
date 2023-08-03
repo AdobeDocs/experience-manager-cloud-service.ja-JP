@@ -5,9 +5,9 @@ topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: b56c90edacbe891afe3fe0add670f75ba46b0064
+source-git-commit: a1689c61715f01cb4eb62882dbcd6e202b74ffc9
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '878'
 ht-degree: 9%
 
 ---
@@ -47,7 +47,9 @@ GoogleによるAEM Forms環境を reCAPTCHA サービスに接続するには
    1. 前の節で作成または更新した設定コンテナを選択します。 「**[!UICONTROL 作成]**」をタップします。
    1. 指定 **[!UICONTROL タイトル]**, **[!UICONTROL 名前]**, **[!UICONTROL サイトキー]**、および **[!UICONTROL 秘密鍵]** reCAPTCHA サービス用（手順 1 で取得）。 「**[!UICONTROL 作成]**」をタップします。
 
-   ![AEM Forms環境をGoogleの reCAPTCHA サービスに接続するためのCloud Serviceの設定](/help/forms/assets/captcha-configuration.gif){width="50%"}
+
+   ![AEM Forms環境をGoogleの reCAPTCHA サービスに接続するためのCloud Serviceの設定](/help/forms/assets/captcha-configuration.gif)
+
 
 
    reCAPTCHA サービスを設定すると、アダプティブフォームで使用できるようになります。 詳しくは、 [アダプティブフォームでのGoogle reCAPTCHA の使用](#using-reCAPTCHA).
@@ -62,12 +64,13 @@ GoogleによるAEM Forms環境を reCAPTCHA サービスに接続するには
 1. アダプティブFormsを選択し、 **[!UICONTROL プロパティ]**. の **[!UICONTROL 設定コンテナ]** 」オプションを選択し、AEM FormsをGoogleの reCAPTCHA サービスに接続するクラウド設定を含む設定コンテナを選択してをタップします。 **[!UICONTROL 保存して閉じる]**.
 
    このような設定コンテナがない場合は、「 [Googleによる reCAPTCHA サービスを使用したAEM Forms環境の接続](#connect-your-forms-environment-with-recaptcha-service-by-google) を参照して、このような設定コンテナを作成する方法を確認してください。
-   ![設定コンテナを選択](/help/forms/assets/captcha-properties.png){width="50%"}
+
+   ![設定コンテナを選択](/help/forms/assets/captcha-properties.png)
 
 1. アダプティブFormsを選択し、 **[!UICONTROL 編集]**. アダプティブフォームがアダプティブFormsエディターで開きます。
 1. コンポーネントブラウザーから、 **[!UICONTROL アダプティブフォーム reCAPTCHA]** コンポーネントをアダプティブフォーム上に配置します。
 
-   Google reCAPTCHA 検証は、時間に依存し、約 1 分で期限が切れます。 したがって、Adobeでは、 **[!UICONTROL アダプティブフォーム reCAPTCHA]** 直前のコンポーネント **[!UICONTROL 送信]** 」ボタンをクリックします。
+   Google reCAPTCHA 検証は、時間に依存し、約数分で有効期限が切れます。 したがって、Adobeでは、 **[!UICONTROL アダプティブフォーム reCAPTCHA]** 直前のコンポーネント **[!UICONTROL 送信]** 」ボタンをクリックします。
 
 1. を選択します。 **[!UICONTROL アダプティブフォーム reCAPTCHA]** コンポーネントをタップし、プロパティをタップします。 ![プロパティアイコン](assets/configure-icon.svg) アイコン。 プロパティダイアログが開きます。 次の必須プロパティを指定します。
    * **[!UICONTROL 名前]:** フォームコンポーネントは、フォーム内とルールエディター内の両方で一意の名前で簡単に識別できますが、名前にスペースや特殊文字を含めることはできません。
