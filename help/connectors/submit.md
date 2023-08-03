@@ -1,11 +1,11 @@
 ---
 title: AEM コネクタの登録
-description: Cloud Manager を使用してコネクタをデプロイする方法を説明します。
+description: AEM as a Cloud Serviceでコネクタを正しく参照およびデプロイする方法を説明します。
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 97%
+source-wordcount: '307'
+ht-degree: 95%
 
 ---
 
