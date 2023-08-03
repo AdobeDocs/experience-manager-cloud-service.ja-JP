@@ -2,10 +2,10 @@
 title: プログラムとプログラムタイプについて
 description: Cloud Manager の階層、その構造に様々な種類のプログラムが収まる仕組み、それらのプログラムの違いなどについて説明します。
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: fc14675e47e7a61bf36acb9a16756a593189b702
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 90%
+source-wordcount: '520'
+ht-degree: 88%
 
 ---
 
@@ -53,7 +53,7 @@ $ git clone {URL}
 
 ## プログラムの種類 {#program-types}
 
-ユーザーは、**実稼動**&#x200B;プログラムまたは&#x200B;**サンドボックス**&#x200B;プログラムを作成できます。
+ユーザーは、 **実稼動** プログラムまたは **sandbox** プログラム。
 
 * **実稼動プログラム**&#x200B;は、サイトのライブトラフィックを有効にするために作成されます。
    * 詳しくは、 [実稼働プログラムの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) を参照してください。
