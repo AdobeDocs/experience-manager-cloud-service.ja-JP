@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 6cc7153c9754b6786a08c5fd378d72a8ab7c478d
+source-git-commit: b527e7499bfd995362b792ca1c57a2c92901739c
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1210'
 ht-degree: 10%
 
 ---
@@ -80,7 +80,7 @@ WKND テーマは、活発で想像力に富んだデザインを体現し、ス
 
 >[!TAB 電話]
 
-![基本テンプレートの電話番号](assets/Basic-temp-phone-view.png)
+![基本テンプレートの電話番号](assets/Basic-temp-phone-view.png){width:&quot;25%&quot;}
 
 >[!TAB タブレットなど）のアクティブマーカーを確認する。]
 
@@ -93,7 +93,21 @@ WKND テーマは、活発で想像力に富んだデザインを体現し、ス
 
 空のキャンバステンプレートを使用して、アダプティブフォームの構造、コンテンツ、ルールを一から作成します。 空のテンプレートには、フォームコンポーネントがあらかじめ組み込まれていません。
 
-![空のテンプレート](assets/Blank-template.png)
+>[!BEGINTABS]
+
+>[!TAB デスクトップ]
+
+![空のテンプレートデスクトップ](assets/Blank-temp-desktop-view.png)
+
+>[!TAB 電話]
+
+![基本テンプレートの電話番号](assets/Blank-temp-phone-view.png){width:&quot;25%&quot;}
+
+>[!TAB タブレットなど）のアクティブマーカーを確認する。]
+
+![基本テンプレートタブレット](assets/Blank-temp-tablet-view.png)
+
+>[!ENDTABS]
 
 ### お問い合わせ {#Contact-Us}
 
@@ -147,7 +161,7 @@ Web サイトの訪問者と管理者の間のコミュニケーションを容�
 
 ## 参照フォームデータモデル {#reference-models}
 
-次の項目を作成した後、 [アダプティブフォーム](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) 基準： [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components)を使用すると、フォームのバックエンドをデータベースMicrosoft® Dynamics 365 および Salesforce サーバーに接続して、ビジネスワークフローを有効にすることができます。 例：
+次の項目を作成した後、 [アダプティブフォーム](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) 基準： [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components)を使用すると、フォームをデータベースMicrosoft® Dynamics 365 および Salesforce サーバーに接続して、ビジネスワークフローを有効にすることができます。 例：
 
 * アダプティブフォーム送信時にMicrosoft® Dynamics 365 と Salesforce にデータを書き込みます。
 * フォームデータモデルで定義されたカスタムエンティティを使用してMicrosoft® Dynamics 365 および Salesforce にデータを書き込みます。また、その逆も同様です。
