@@ -5,7 +5,7 @@ topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: a1689c61715f01cb4eb62882dbcd6e202b74ffc9
+source-git-commit: b81acc99b1d90b05b7c341253e7cbb46c6ea12ae
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 9%
@@ -27,7 +27,7 @@ GoogleによるAEM Forms環境を reCAPTCHA サービスに接続するには
 
 1. 取得 [reCAPTCHA API キーペア](https://www.google.com/recaptcha/admin) Googleから これには、 **サイトキー** および **秘密鍵**.
 
-   ![Googleの Web サイトでGoogle reCAPTCHA 設定を作成して、reCAPTCHA キーを取得する](/help/forms/assets/google-captcha.gif){width="50%"}
+   ![Googleの Web サイトでGoogle reCAPTCHA 設定を作成して、reCAPTCHA キーを取得する](/help/forms/assets/google-captcha.gif)
 1. 設定コンテナをAEM Formsas a Cloud Service環境に作成します。 設定コンテナには、AEMを外部サービスに接続するために使用されるクラウド設定が格納されます。 GoogleでAEM Forms環境を reCAPTCHA サービスに接続するための設定コンテナを作成および設定するには、次の手順を実行します。
    1. AEM Formsas a Cloud Serviceインスタンスを開きます。
    1. **[!UICONTROL ツール／一般／設定ブラウザー]**&#x200B;に移動します。設定ブラウザーでは、次の操作を実行できます。
