@@ -1,12 +1,12 @@
 ---
 title: AEM as a Cloud Service での CDN
-description: AEM as a Cloud Service での CDN
+description: AEMが管理する CDN の使用方法と、AEMが管理する CDN に対して独自の CDN を指す方法について説明します。
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
 workflow-type: tm+mt
-source-wordcount: '1022'
-ht-degree: 99%
+source-wordcount: '1033'
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ Cloud Manager セルフサービス UI を使用して、AEM の標準搭載 CDN
 >
 >許可されている IP からのリクエストのみが、AEM の管理による CDN で処理されます。独自の CDN に AEM の管理による CDN を参照させる場合は、CDN の IP が許可リストに含まれていることを確認してください。
 
-## 顧客 CDN の AEM の管理による CDN への参照 {#point-to-point-CDN}
+## 顧客 CDN がAEM管理による CDN を指す {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
