@@ -1,10 +1,10 @@
 ---
 title: Target へのコンテンツの取り込み
-description: Target へのコンテンツの取り込み
+description: コンテンツ転送ツールを使用して、移行セットからCloud Serviceインスタンスにコンテンツを取り込む方法を説明します。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 3f526b8096125fbcf13b73fe82b2da0f611fa6ca
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1941'
 ht-degree: 44%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 44%
 >[!NOTE]
 >この取り込みのサポートチケットを忘れずにログに記録しましたか？[コンテンツ転送ツールを使用する前の重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja#important-considerations)を参照して、取り込みを成功させるためのその他の考慮事項を確認してください。
 
-1. Cloud Acceleration Manager に移動します。プロジェクトカードをクリックし、「コンテンツ転送」カードをクリックします。 に移動します。 **取り込みジョブ** をクリックし、 **新しい取り込み**
+1. Cloud Acceleration Manager に移動します。プロジェクトカードをクリックし、「コンテンツ転送」カードをクリックします。 に移動します。 **取り込みジョブ** をクリックします。 **新しい取り込み**
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
@@ -59,7 +59,7 @@ ht-degree: 44%
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. 次をクリック： **一** ボタンをクリックして、取り込みジョブの詳細を確認してください。 取り込みの各手順の実行中または完了中に、「 **...**&#x200B;をクリックし、 **期間を表示**. また、抽出した情報は、取り込まれている内容を実現するためにも示されます。
+1. 次をクリック： **一** ボタンをクリックして、取り込みジョブの詳細を確認してください。 取り込みの各手順の実行中または完了時の期間は、「 **...**&#x200B;をクリックし、 **期間を表示**. また、抽出した情報は、取り込まれている内容を実現するためにも示されます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
@@ -128,7 +128,7 @@ ht-degree: 44%
 
 ### 移行サービスに接続できません {#unable-to-reach-migration-service}
 
-取り込みが要求されると、次のようなメッセージがユーザーに表示される場合があります。「宛先環境の移行サービスに到達できません。 その場合は、後でやり直すか、Adobeサポートにお問い合わせください。
+取り込みがリクエストされると、「宛先環境の移行サービスに到達できません。 その場合は、後でやり直すか、Adobeサポートにお問い合わせください。」
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
 
@@ -140,7 +140,7 @@ ht-degree: 44%
 
 * AEM as a Cloud Serviceは環境の状態を維持し、通常の様々な理由で移行サービスを再起動する必要が生じる場合があります。 そのサービスが再起動中の場合は、そのサービスには到達できませんが、最終的に使用可能になります。
 * 別のプロセスがインスタンス上で実行されている可能性があります。 例えば、Release Orchestrator が更新を適用している場合、システムがビジー状態で、移行サービスが定期的に使用できない可能性があります。 これと、ステージインスタンスまたは実稼動インスタンスが破損する可能性が、取り込み中に更新を一時停止することを強くお勧めする理由です。
-* 次の場合、 [IP許可リストが適用されました](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Cloud Manager を通じて、 Cloud Acceleration Manager が移行サービスに到達するのをブロックします。 アドレスが動的なので、取り込み用に IP アドレスを追加できません。 現在、唯一の解決策は、取り込みの実行中に IP 許可リストを無効にすることです。
+* 次の場合、 [IP許可リストに加えるが適用されました](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Cloud Manager を通じて、 Cloud Acceleration Manager が移行サービスに到達するのをブロックします。 アドレスが動的なので、取り込み用に IP アドレスを追加できません。 現在、唯一の解決策は、取り込みの実行中に IP 許可リストを無効にすることです。
 * 調査を要する他の理由がある場合があります。 それでも取り込みに失敗する場合は、Adobeカスタマーケアにお問い合わせください。
 
 ### リリースオーケストレーターによる自動更新は引き続き有効です
@@ -162,7 +162,7 @@ ht-degree: 44%
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
 AEM の各ノードには、一意の UUID が必要です。このエラーは、取り込まれるノードが、ターゲットインスタンス上の別のパスに存在する uuid と同じ uuid を持つことを示します。
-この状況は、抽出とそれ以降の抽出の間にソース上でノードが移動した場合に発生する可能性があります [追加抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
+この状況は、抽出とそれ以降の間にソース上でノードが移動した場合に発生する可能性があります [追加抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
 また、ターゲット上のノードが取り込みと後続の追加取り込みの間に移動した場合にも発生する可能性があります。
 
 この競合は手動で解決する必要があります。コンテンツを参照する他のコンテンツに留意し、2 つのノードのうち、削除する必要があるノードをコンテンツに精通したユーザーが決定する必要があります。解決策として、問題のあるノードがなくても、追加抽出を再度行う必要が生じる場合があります。
@@ -170,7 +170,7 @@ AEM の各ノードには、一意の UUID が必要です。このエラーは�
 ### 参照されているノードを削除できないことが原因で追加取り込みに失敗しました
 
 の別の一般的な原因 [追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure は、ターゲットインスタンス上の特定のノードに対するバージョンの競合です。 このエラーを識別するには、Cloud Acceleration Manager UI を使用して取り込みログをダウンロードし、次のようなエントリを探します。
->java.lang.RuntimeException:org.apache.jackrabbit.oak.api.CommitFailedException:OakIntegrity0001:参照されたノードを削除できません：8a2289f4-b904-4bd0-8410-15e41e0976a8
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001：参照されているノードを削除できません： 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
 この問題は、新しいバージョンが作成されるように、取り込みとそれ以降の追加取り込みの間にターゲット上のノードが変更された場合に発生する可能性があります。 取り込みで「バージョンを含める」が有効になっている場合、ターゲットに、バージョン履歴や他のコンテンツで参照される最新のバージョンが含まれているので、競合が発生する可能性があります。 取り込みプロセスは、参照されているので、問題のあるバージョンノードを削除できません。
 

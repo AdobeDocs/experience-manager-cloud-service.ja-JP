@@ -1,12 +1,12 @@
 ---
 title: Adobe Target との統合
-description: Adobe Target との統合
+description: Adobe TargetをAEM as a Cloud Serviceと統合する方法を説明します。
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1026'
 ht-degree: 67%
 
 ---
@@ -74,7 +74,7 @@ Target 設定を編集するには、次の手順に従います。
 
 ### サイトへの設定の追加 {#add-configuration}
 
-タッチ UI 設定をサイトに適用するには、次の場所に移動します。 **サイト** > **任意のサイトページを選択** > **プロパティ** > **詳細** > **設定** /設定テナントを選択します。
+タッチ UI 設定をサイトに適用するには、次の場所に移動します。 **Sites** > **任意のサイトページを選択** > **プロパティ** > **詳細** > **設定** /設定テナントを選択します。
 
 ## Adobe Launch を使用して、AEM サイトに Adobe Target を統合する {#integrate-target-launch}
 

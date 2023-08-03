@@ -1,11 +1,11 @@
 ---
 title: AEM Dispatcher コンバーターツール
-description: AEM Dispatcher コンバーターツール
+description: AEM Dispatcher 上の既存の設定を、AEMas a Cloud Serviceの Dispatcher 上の設定に変換する方法について説明します。
 exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 46%
+source-wordcount: '352'
+ht-degree: 43%
 
 ---
 
@@ -43,7 +43,7 @@ AEM Dispatcher コンバーターは、既存のオンプレミスまたは Adob
 
   詳しくは、 **[Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** そのため、プラグインをインストールして使用する方法を学ぶことができます。
 
-* スタンドアロンユーティリティとして：AEM Dispatcher Converter ツールは、スタンドアロンユーティリティとして実行することもできます。
+* スタンドアロンユーティリティとして：AEM Dispatcher コンバーターツールは、スタンドアロンユーティリティとして実行することもできます。
 
   詳しくは、 **[Git リソース：AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)** このツールの使用方法やトラブルシューティングについて学ぶことができます。
 

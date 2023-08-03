@@ -1,13 +1,13 @@
 ---
 title: Adobe Analytics との統合
-description: Adobe Analytics との統合
+description: Adobe AnalyticsをAEM as a Cloud Serviceと統合する方法を説明します。
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 88%
+source-wordcount: '566'
+ht-degree: 86%
 
 ---
 
