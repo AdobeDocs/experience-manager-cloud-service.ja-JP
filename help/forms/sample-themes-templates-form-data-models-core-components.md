@@ -7,17 +7,17 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 2739b89da945cb96b35bfd33e683b5b5e98490d0
+source-git-commit: 2b290be134be05bc15891082e8b54efef62076d0
 workflow-type: tm+mt
-source-wordcount: '1210'
-ht-degree: 10%
+source-wordcount: '1277'
+ht-degree: 9%
 
 ---
 
 
 # コアコンポーネントのサンプルのテーマ、テンプレート、フォームデータモデル {#sample-themes-templates-and-data-models}
 
-AEM Formsのコアコンポーネントには、コアコンポーネントを使用したアダプティブFormsの作成をすばやく開始できるように、サンプルのリファレンステーマ、テンプレート、フォームデータモデルが用意されています。 以下が可能です。 [アダプティブFormsコアコンポーネントの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=ja) AEM Formsのas a Cloud Serviceおよびローカル開発環境で、サンプルの OOTB テンプレートを取得し、 [サンプルテーマの使用とカスタマイズ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
+[!DNL AEM Forms] コアコンポーネントは、すぐに使用できるサンプルテーマ、テンプレート、フォームデータモデルを提供し、汎用性の高いアダプティブフォームをすばやく作成します。 これらは、フォーム作成者が、 [AEM Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) データベースとの接続をシームレスに行いつつ、簡単なフォームを短時間で、複雑なフォームを簡単に作成する。
 
 参照コンテンツパッケージに含まれるサンプルのテーマ、テンプレート、フォームデータモデルは次のとおりです。
 
@@ -39,7 +39,13 @@ AEM Formsのコアコンポーネントには、コアコンポーネントを�
 
 ## サンプルテーマ {#Sample-Themes}
 
-リファレンスサンプルテーマは、作成者がフォームのスタイル設定を定義し、カスタマイズするのに役立ちます。CSS の基本知識を持つ作成者は、必要に応じてテーマをカスタマイズできます。 フォーム作成者 [アダプティブFormsコアコンポーネントの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=ja) AEM Formsのas a Cloud Serviceおよびローカル開発環境で、以下の説明に従ってこれらのテーマを取得します。
+リファレンスサンプルテーマは、作成者がフォームのスタイル設定を定義し、カスタマイズするのに役立ちます。CSS の基本知識を持つ作成者は、必要に応じてテーマをカスタマイズできます。
+
+**これらのテーマの取得方法は？**
+* これらのテーマを取得するには **Formsas a Cloud Service** 環境 [アダプティブFormsコアコンポーネントの有効化](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) また、 [フロントエンドパイプライン](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) をクリックして、これらのテーマをデプロイします。
+* これらのテーマを **AEM 6.5 Forms** 環境 [アダプティブFormsコアコンポーネントの有効化](https://experienceleague.corp.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) また、 [パッケージマネージャー](https://experienceleague.corp.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components) をクリックして、これらのテーマをデプロイします。
+
+The **すぐに** [アダプティブフォームのコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) テーマは次のとおりです。
 
 ![OOTB テーマ](assets/OOTB-themes.png)
 
@@ -51,7 +57,7 @@ AEM Formsのコアコンポーネントには、コアコンポーネントを�
 
 ### WKND {#WKND}
 
-WKND テーマは、活発で想像力に富んだデザインを体現し、スタイリッシュな外観をフォームに表現します。 テーマは、の外観とスタイル設定に基づいています。 [WKND サイト](https://wknd.site/us/en.html) これは、旅行と冒険のウェブサイトです。 [Adobe Experience Manager Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
+WKND テーマは、活発で想像力に富んだデザインを体現し、スタイリッシュな外観をフォームに表現します。 テーマは、の外観とスタイル設定に基づいています。 [WKND サイト](https://wknd.site/us/en.html) これは、旅行と冒険のウェブサイトです。 [Adobe Experience Manager Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja).
 
 ![WKND テーマ](assets/Safety-Inspection-Form-Theme.png)
 
@@ -64,7 +70,12 @@ WKND テーマは、活発で想像力に富んだデザインを体現し、ス
 
 ## サンプルテンプレート {#Sample-templates}
 
-テンプレートは、フォーム内で複製する初期フォーム構造、コンテンツ、およびアクションを定義します。また、同様のテンプレート構造をフォームに使用する場合は、同意フォーム、特典登録フォームなどを使用します。 次のテンプレートを [アダプティブFormsコアコンポーネントの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=ja) AEM Formsのas a Cloud Serviceまたはローカル開発環境。 アダプティブFormsコアコンポーネントのサンプルテンプレートは次のとおりです。
+テンプレートは、フォーム内で複製する初期フォーム構造、コンテンツ、およびアクションを定義します。また、同様のテンプレート構造をフォームに使用する場合は、同意フォーム、特典登録フォームなどを使用します。
+
+**これらのテンプレートの取得方法は？**
+テンプレートは、 [AEM Archetype 43 以降ベースのプロジェクト](https://github.com/adobe/aem-project-archetype) を **AEM Formsas a Cloud Service** または **AEM 6.5** Forms環境。
+
+The **すぐに** [アダプティブフォームのコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) テンプレートについては、次のように説明します。
 
 ![参照テンプレート](assets/reference-templates-core-components.png)
 
@@ -82,7 +93,7 @@ WKND テーマは、活発で想像力に富んだデザインを体現し、ス
 
 ### お問い合わせ {#Contact-Us}
 
-Web サイトの訪問者と管理者の間のコミュニケーションを容易にするフォームを作成するには、「Contact Us」フォームテンプレートを使用します。 ユーザーは、フォームを通じて、クエリ、フィードバック、またはサポートリクエストを送信できます。
+Web サイトの訪問者とフォーム管理者の間のコミュニケーションを容易にするフォームを作成するには、「Contact Us」フォームテンプレートを使用します。 ユーザーは、フォームを通じて、クエリ、フィードバック、またはサポートリクエストを送信できます。
 
 ![お問い合わせテンプレート](assets/Contact-us-desktop-view.png)
 
@@ -100,7 +111,7 @@ Web サイトの訪問者と管理者の間のコミュニケーションを容�
 
 ### ログサービスリクエスト {#Log-Service-Request}
 
-ログサービス要求テンプレートを使用すると、サービスプロバイダーから特定のログサービスを要求するフォームを作成できます。 このフォームは、チケットを作成するための正式なリクエストとして機能し、特定のイベント、アクティビティまたはデータが記録され、ステータスの監視や追跡が可能になります。
+ログサービス要求テンプレートは、サービスプロバイダーからログ固有のログサービスを要求するフォームを作成する場合に役立ちます。 このフォームは、ステータスの監視や追跡のためにログに記録されたイベント、アクティビティ、またはデータのチケットを作成する正式なリクエストとして機能します。
 
 ![ログサービスリクエストテンプレート](assets/Log-service-request-desktop-view.png)
 
@@ -152,7 +163,7 @@ Web サイトの訪問者と管理者の間のコミュニケーションを容�
 
 ## 参照フォームデータモデル {#reference-models}
 
-次の項目を作成した後、 [アダプティブフォーム](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) 基準： [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components)を使用すると、フォームをデータベースMicrosoft® Dynamics 365 および Salesforce サーバーに接続して、ビジネスワークフローを有効にすることができます。 例：
+次の項目を作成した後、 [アダプティブフォーム](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#adaptive-forms-core-components) 基準： [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction#adaptive-forms-core-components)を使用すると、フォームをデータベースMicrosoft® Dynamics 365 および Salesforce サーバーに接続して、ビジネスワークフローを有効にすることができます。 例：
 
 * アダプティブフォーム送信時にMicrosoft® Dynamics 365 と Salesforce にデータを書き込みます。
 * フォームデータモデルで定義されたカスタムエンティティを使用してMicrosoft® Dynamics 365 および Salesforce にデータを書き込みます。また、その逆も同様です。
@@ -164,4 +175,4 @@ Web サイトの訪問者と管理者の間のコミュニケーションを容�
 * Microsoft® Dynamics 365
 * Salesforce
 
-これらのモデルの使用方法については、 [Microsoft® Dynamics 365 および Salesforce クラウドサービスの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=ja#configure-dynamics-cloud-service)
+これらのモデルの使用方法については、 [Microsoft® Dynamics 365 および Salesforce クラウドサービスの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html#configure-dynamics-cloud-service)
