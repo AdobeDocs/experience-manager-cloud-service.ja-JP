@@ -4,12 +4,13 @@ description: 使用できる強力なライブコピー同期オプションと�
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 1d5460c87aef10ae1adee7401cd462242e106f8c
 workflow-type: tm+mt
-source-wordcount: '2335'
-ht-degree: 89%
+source-wordcount: '2426'
+ht-degree: 86%
 
 ---
+
 
 # ライブコピーの同期の設定 {#configuring-live-copy-synchronization}
 
@@ -44,9 +45,7 @@ Adobe Experience Manager には、そのまま使用できる多数の同期設�
 
 AEM に標準で用意されているロールアウト設定の一覧を次の表に示します。表には各ロールアウト設定のトリガーと同期アクションが含まれます。
 
-<!--
-If the installed rollout configuration actions do not meet your requirements, you can [create a new rollout configuration](#creating-a-rollout-configuration).
--->
+インストールされたロールアウト設定のアクションが要件を満たさない場合は、次の操作を実行できます。 [新しいロールアウト設定を作成します。](#creating-a-rollout-configuration)
 
 | 名前 | 説明 | トリガー | [同期アクション](#synchronization-actions) |
 |---|---|---|---|
@@ -61,7 +60,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 
 AEM に標準で用意されている同期アクションの一覧を次の表に示します。
 
-<!--If the installed actions do not meet your requirements, you can [Create a New Synchronization Action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).-->
+インストールされたアクションが要件を満たさない場合は、次の操作を実行できます。 [新しい同期アクションを作成します。](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
 
 | アクション名 | 説明 | プロパティ |
 |---|---|---|
@@ -83,16 +82,14 @@ AEM に標準で用意されている同期アクションの一覧を次の表�
 | `PageMoveAction` | `PageMoveAction` は、ページがブループリント内に移動されたときに適用されます。<br>（関連する）ライブコピーページは、移動前の場所から移動後の場所に、（移動ではなく）コピーされます。<br>`PageMoveAction` によって、移動前の場所にあるライブコピーページが変更されることはありません。このため、結果のロールアウト設定では、ステータスはブループリントなしのライブ関係になります。<br>[**CQ MSM Page Move Action** サービスを設定](#excluding-properties-and-node-types-from-synchronization)して、除外するノードタイプ、段落項目およびページプロパティを指定してください。<br>このアクションは、ロールアウト設定に含まれる唯一の同期アクションである必要があります。 | 参照を更新するには、`prop_referenceUpdate: (Boolean)` を true（デフォルト）に設定します。 |
 | `markLiveRelationship` | ローンチで作成されたコンテンツのライブ関係が存在することを示します。 |  |
 
-<!--
-### Creating a Rollout Configuration {#creating-a-rollout-configuration}
+### ロールアウト設定の作成 {#creating-a-rollout-configuration}
 
-You can [create a rollout configuration](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration) when the installed rollout configurations do not meet your application requirements by performing the following steps.
+以下が可能です。 [ロールアウト設定の作成](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) インストールされたロールアウト設定が、次の手順を実行してアプリケーションの要件を満たさない場合。
 
-1. [Create the rollout configuration](/help/sites-developing/extending-msm.md#create-the-rollout-configuration).
-1. [Add synchronization actions to the rollout configuration](/help/sites-developing/extending-msm.md#add-synchronization-actions-to-the-rollout-configuration).
+1. [ロールアウト設定を作成します。](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
+1. [ロールアウト設定に同期アクションを追加します。](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
 
-The new rollout configuration is then available to you when configuring rollout configurations on a blueprint or Live Copy page.
--->
+新しいロールアウト設定は、ブループリントページまたはライブコピーページでロールアウト設定を行う際に使用できます。
 
 ### プロパティとノードタイプの同期からの除外 {#excluding-properties-and-node-types-from-synchronization}
 
@@ -121,7 +118,7 @@ AEM と連携する場合は、いくつかの方法でこのようなサービ�
 
 #### CQ MSM Content Update Action - 除外 {#cq-msm-content-update-action-exclusions}
 
-いくつかのプロパティとノードタイプは、デフォルトで除外されます。これらは、の OSGi 設定で定義されます。 **CQ MSM Content Update Action**&#x200B;の下 **除外されたページのプロパティ**.
+いくつかのプロパティとノードタイプは、デフォルトで除外されます。これらは、の OSGi 設定で定義されます。 **CQ MSM Content Update Action**、の下 **除外されたページのプロパティ**.
 
 デフォルトでは、次の正規表現に一致するプロパティは、ロールアウト時に除外されます（つまり、更新されません）。
 
@@ -179,7 +176,7 @@ MSM を使用すると、通常使用するロールアウト設定のセット�
 
 1. 必要に応じて、「**ライブコピーの継承**」フラグを変更します。オンにした場合、ライブコピー設定がすべての子で有効になります。
 
-1. をクリア **ロールアウト設定を親から継承** プロパティを選択し、リストから 1 つ以上のロールアウト設定を選択します。
+1. 次をクリア： **ロールアウト設定を親から継承** プロパティを選択し、リストから 1 つ以上のロールアウト設定を選択します。
 
    選択したロールアウト設定がドロップダウンリストの下に表示されます。
 

@@ -2,10 +2,10 @@
 title: ページプロパティの編集
 description: AEMでページを管理するために必要なプロパティを定義する方法について説明します。
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 0183e14ad1653e98c06b19ea36c7e97dedccdb84
 workflow-type: tm+mt
-source-wordcount: '2347'
-ht-degree: 80%
+source-wordcount: '2281'
+ht-degree: 79%
 
 ---
 
@@ -295,19 +295,7 @@ ht-degree: 80%
 
 **Sites** コンソールから、複数のページを選択し、「**プロパティを表示**」を使用してページのプロパティを表示および編集することができます。これは、ページプロパティの一括編集と呼ばれます。
 
->[!NOTE]
->
->プロパティの一括編集はアセットに対しても使用できます。操作はよく似ていますが、次の点が異なります。詳しくは、複数のアセットのプロパティの編集を参照してください。
->
->また、バルクエディターも用意されています。このエディターでは、GQL（Google Query Language）を使用して、複数のページからコンテンツを検索できます。コンテンツをバルクエディターで直接編集してから、変更を元のページに保存できます。
-
-<!--
->Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
->
->There is also the [Bulk Editor](/help/sites-administering/bulk-editor.md), which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
--->
-
-次の方法を含む様々な方法で、一括編集用に複数のページを選択できます。
+次の方法を含む様々な方法で、複数のページを一括編集用に選択することができます。
 
 * **Sites** コンソールの参照時
 * **検索**&#x200B;によって複数のページを特定した後

@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4f2a51502202fba3792cde370180d127f8e17418
+source-git-commit: 0183e14ad1653e98c06b19ea36c7e97dedccdb84
 workflow-type: tm+mt
-source-wordcount: '4222'
+source-wordcount: '4236'
 ht-degree: 96%
 
 ---
@@ -963,6 +963,11 @@ ht-degree: 96%
       + [リッチテキストエディターの設定](/help/implementing/developing/extending/rich-text-editor.md)
       + [RTE プラグインの設定](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
       + [アクセシブルなサイトの作成に向けた RTE の設定](/help/implementing/developing/extending/rte-accessible-content.md)
+      + [ページオーサリングの拡張](/help/implementing/developing/extending/page-authoring.md)
+      + [コンソールの拡張](/help/implementing/developing/extending/consoles.md)
+      + [ページプロパティの拡張](/help/implementing/developing/extending/page-properties.md)
+      + [Bulk Editor の拡張](/help/implementing/developing/extending/bulk-editor.md)
+      + [MSM の拡張](/help/implementing/developing/extending/msm.md)
    + AEM as a Cloud Service へのデプロイ {#deploying}
       + [AEM as a Cloud Service へのデプロイ](/help/implementing/deploying/overview.md)
       + [AEM バージョンのアップデート](/help/implementing/deploying/aem-version-updates.md)

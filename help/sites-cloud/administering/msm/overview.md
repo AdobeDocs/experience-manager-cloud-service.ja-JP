@@ -4,9 +4,9 @@ description: AEM の強力なライブコピーとマルチサイトマネージ
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 4049d226ecedb917c2a72cb76bc2fcaa946163f2
 workflow-type: tm+mt
-source-wordcount: '2706'
+source-wordcount: '2719'
 ht-degree: 88%
 
 ---
@@ -170,11 +170,9 @@ MSM で使用される主な用語の概要を次の表に示します。 これ
 | シャロー | 単一のページのライブコピー |  |
 | ディープ | ページのライブコピーとその子ページ |  |
 
-<!--
 >[!TIP]
 >
->See [Overview of the Java API](/help/sites-developing/extending-msm.md#overview-of-the-java-api) for the object names.
--->
+>ドキュメントを参照してください [マルチサイトマネージャの拡張](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) オブジェクト名を表します。
 
 ## ライブコピー {#live-copies}
 
@@ -322,7 +320,7 @@ MSM を使用してコンテンツを再利用し、ライブコピーに対す�
 1. 使用するロールアウト設定を決定します。
 
    1. MSM では、複数の使用事例に対応する[複数のロールアウト設定をインストール](live-copy-sync-config.md#installed-rollout-configurations)します。
-   1. 必要に応じて、 [ロールアウト設定の作成](live-copy-sync-config.md#creating-a-rollout-configuration) （必要に応じて）
+   1. 必要に応じて、次の操作が可能です。 [ロールアウト設定の作成](live-copy-sync-config.md#creating-a-rollout-configuration) （必要に応じて）
 
 1. [使用するロールアウト設定を指定する](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)場所を決定し、必要に応じて設定を行います。
 1. 必要に応じて、ライブコピーのソースコンテンツを識別する[ブループリント設定を作成](creating-live-copies.md#creating-a-blueprint-configuration)できます。
