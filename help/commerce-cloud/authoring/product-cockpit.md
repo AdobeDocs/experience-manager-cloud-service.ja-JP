@@ -1,11 +1,11 @@
 ---
 title: 製品コックピット
-description: 製品コックピットの操作
+description: 製品コックピットの操作方法を学びます。製品コクピットでは、リンクされた製品カタログと関連コンテンツの概要を統一して提供します。
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 73%
+source-wordcount: '448'
+ht-degree: 70%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 73%
 
 ## 製品カタログのプロパティ {#catalog-properties}
 
-製品またはカテゴリのプロパティアイコンをクリックすると、選択したオブジェクトのプロパティビューが開きます。 製品バリアントの開くプロパティは、メインの製品プロパティを開くことと同じです。
+製品またはカテゴリのプロパティアイコンをクリックすると、選択したオブジェクトのプロパティビューが開きます。 製品バリアントの「開く」プロパティは、メインの製品プロパティを開く場合と同じです。
 
 ### 「コマース」タブ {#tabs}
 

@@ -1,6 +1,6 @@
 ---
 title: AEM Commerce as a Cloud Service - はじめに
-description: 実行中の AEM as a Cloud Service 環境にコマース対応の AEM プロジェクトをデプロイする方法を説明します。Venia 参照用ストアフロントを構築して、実行中の環境にAdobeするために、Venia Cloud Manager の機能と CI/CD パイプラインを使用します。
+description: Cloud Manager、CI/CD パイプラインおよび Venia 参照用ストアフロントを使用してAEMコマースプロジェクトをデプロイする方法について説明します。
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
 version: Cloud Service
@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 45%
+source-wordcount: '1098'
+ht-degree: 44%
 
 ---
 
@@ -47,7 +47,7 @@ AEM as a Cloud Service 環境ごとに異なる GraphQL エンドポイント UR
 
 エンドポイントを設定する方法は 2 つあります。
 
-### Cloud Manager ユーザーインターフェイスを使用（デフォルト） {#cm-ui}
+### Cloud Manager ユーザーインターフェイスを介する（デフォルト） {#cm-ui}
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
@@ -126,7 +126,7 @@ CIF アドオンと [CIF コアコンポーネント](https://github.com/adobe/a
 - カタログ UID のサポートを有効にする - コマースバックエンドの GraphQL 呼び出しで、ID ではなく UID のサポートを有効にします。
   >[!NOTE]
   >
-  > UID のサポートは、Adobe Commerce 2.4.2 で導入されました。コマースバックエンドがGraphQLスキーマのバージョン 2.4.2 以降をサポートしている場合にのみ、UID を有効にしてください。
+  > UID のサポートは、Adobe Commerce 2.4.2 で導入されました。コマースバックエンドがバージョン 2.4.2 以降のGraphQLスキーマをサポートしている場合にのみ、UID を有効にします。
 - カタログのルートカテゴリ識別子 - ストアカタログルートの識別子（UID または ID）
   >[!CAUTION]
   >

@@ -1,15 +1,15 @@
 ---
 title: AEM Developer Tools for Eclipse
-description: AEM Developer Tools for Eclipse
+description: Apache Sling 用の Eclipse プラグインに基づく Eclipse プラグインであるAEM Developer Tools for Eclipse の使用方法について説明します。
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1199'
 ht-degree: 94%
 
 ---
 
-# AEM Developer Tools for Eclipse {#aem-developer-tools-for-eclipse}
+# Eclipse 用 AEM 開発者ツール{#aem-developer-tools-for-eclipse}
 
 ![Experience Manager Developer Tools for Eclipse ロゴ](assets/eclipse-logo.png)
 
@@ -34,7 +34,7 @@ AEM Developer Tools を使用する前に、次の作業が必要です。
 
 >[!NOTE]
 >
->macOSで、 **Eclipse.app**&#x200B;を選択し、 **パッケージコンテンツを表示** を見つける `eclipse.ini`**.**
+>macOSで、を右クリックする必要があります。 **Eclipse.app**&#x200B;を選択し、 **パッケージコンテンツを表示** を見つける `eclipse.ini`**.**
 
 ## Eclipse 用 AEM 開発者ツールのインストール方法 {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -116,7 +116,7 @@ _Experience Manager Developer Tools for Eclipse_ には、Eclipse でのプロ�
 
    >[!NOTE]
    >
-   >新規インストールの場合（より具体的には、Maven の依存関係をダウンロードしたことがない場合）は、プロジェクトを作成するとエラーが表示されることがあります。この場合は、 [無効なプロジェクト定義の解決](#resolving-invalid-project-definition).
+   >新規インストールの場合（より具体的には、Maven の依存関係をダウンロードしたことがない場合）は、プロジェクトを作成するとエラーが表示されることがあります。その場合は、[無効なプロジェクト定義の解決](#resolving-invalid-project-definition)で説明されている手順に従ってください。
 
 ## 既存プロジェクトの読み込み方法 {#how-to-import-existing-projects}
 
@@ -216,7 +216,7 @@ _Experience Manager Developer Tools for Eclipse_ には、Eclipse でのプロ�
 
 Apache Sling IDE tooling for Eclipse の公式 web サイトでは、次の有益な情報を参照できます。
 
-* [**Apache Sling IDE tooling for Eclipse** ユーザーガイド](https://sling.apache.org/documentation/development/ide-tooling.html)。このドキュメントでは、全体のコンセプト、AEM 開発ツールがサポートするサーバー統合およびデプロイメント機能について説明します。
+* [**Apache Sling IDE tooling for Eclipse** ユーザーガイド](https://sling.apache.org/documentation/development/ide-tooling.html)。このドキュメントでは、全体のコンセプト、AEM Development Tools がサポートするサーバー統合およびデプロイメント機能について説明します。
 * [トラブルシューティング情報](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)
 * [既知の問題リスト](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues)
 
