@@ -3,9 +3,9 @@ title: アダプティブフォームをAEM Sitesページに追加する方法
 description: アダプティブフォームを作成するか、AEM Sitesページに追加する方法を確認します。 また、利点や、フォームを Web サイトに統合する様々な方法についても説明します。
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: c5a3b5a22283e0e14b8d0a8464b9bba460a80c71
+source-git-commit: 6a462b7a437f74e659a43f7f5d4a95663b92c2cf
 workflow-type: tm+mt
-source-wordcount: '3214'
+source-wordcount: '3308'
 ht-degree: 2%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 2%
 | -------- | ---------------------------- |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 | AEM as a Cloud Service | この記事 |
+
+## 概要 {#overview}
 
 AEM Formsを使用すれば、AEM Sitesページにシームレスにフォームを追加できます。 これにより、訪問者は、ページを離れることなく、フォームに簡単に入力して送信できます。 これにより、Web サイト上の他の要素とのやり取りを容易に行いながら、フォームを積極的に操作することができます。
 
@@ -51,11 +53,12 @@ AEM FormsCloud Serviceは、アダプティブフォームコンテナとアダ�
 
 * **[アダプティブフォームをエクスペリエンスフラグメントに変換する](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment):** AEM Sitesページに追加されたアダプティブフォームをエクスペリエンスフラグメントに変換して、複数のAEM Sitesページでフォームを再利用することができます。
 
-* **複数のフォームをAEM Sitesページまたはエクスペリエンスフラグメントに追加する：**  複数のアダプティブFormsを作成またはAEM Sitesページに追加して、ユーザーの環境設定や要件に基づいて複数の選択肢をユーザーに提供できます。 新規フォームと既存フォームを組み合わせることができます。
+* **[承認済みのテンプレートに基づいてフォームを作成し、AEM Sitesページに追加します。](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** 事前に承認されたテンプレートを活用して、組織のブランディングガイドラインやデザイン標準に合ったアダプティブFormsをすばやく作成できます。 このオプションは、アダプティブFormsエディターまたはアダプティブForms — 埋め込みコンポーネントで作成されたアダプティブFormsでのみ使用できます。
 
-* **承認済みのテンプレートに基づいてフォームを作成し、AEM Sitesページに追加します。** 事前に承認されたテンプレートを活用して、組織のブランディングガイドラインやデザイン標準に合ったアダプティブFormsをすばやく作成できます。 このオプションは、アダプティブFormsエディターまたはアダプティブForms — 埋め込みコンポーネントで作成されたアダプティブFormsでのみ使用できます。
+* **[既存のフォームをAEM Sitesページに追加する：](/help/forms/embed-adaptive-form-aem-sites.md#embed-an-adaptive-form-in-sites-editor)** 作成済みのフォームを Web サイトに簡単に統合できるので、訪問者は直接フォームを操作できます。 このオプションは、アダプティブFormsエディターまたはアダプティブForms — 埋め込みコンポーネントで作成されたアダプティブFormsでのみ使用できます。
 
-* **既存のフォームをAEM Sitesページに追加する：** 作成済みのフォームを Web サイトに簡単に統合できるので、訪問者は直接フォームを操作できます。 このオプションは、アダプティブFormsエディターまたはアダプティブForms — 埋め込みコンポーネントで作成されたアダプティブFormsでのみ使用できます。
+
+* **複数のフォームをAEM Sitesページまたはエクスペリエンスフラグメントに追加する：**  複数のアダプティブFormsを作成またはAEM Sitesページに追加して、ユーザーの環境設定や要件に基づいて複数の選択肢をユーザーに提供できます。 新規フォームと既存フォームを組み合わせることができます。 以下を使用すると、 **[!UICONTROL アダプティブフォームコンテナ]** コンポーネントを複数回追加して、AEM SitesページにアダプティブFormsを追加します。 以下を使用すると、 **[!UICONTROL アダプティブForms — 埋め込み]** AEM Sitesページでコンポーネントを複数回作成する ( **[!UICONTROL フォームはフレームの幅全体をカバーします]** 」オプションが選択されている。 例えば、 **[!UICONTROL フォームはフレームの幅全体をカバーします]** 「 」オプションがオフの場合、AEM Sitesページでは、iframe なしで存在するアダプティブフォームが 1 つだけサポートされます。 を使用してアダプティブFormsをさらに追加するには **[!UICONTROL アダプティブForms — 埋め込み]** コンポーネント、選択 **[!UICONTROL フォームはフレームの幅全体をカバーします]** オプション。
 
 ## AEM SitesページまたはAEM Experience Fragment でアダプティブフォームを作成する際の考慮事項 {#consideration}
 

@@ -1,13 +1,14 @@
 ---
 title: AEM Sites ページへのアダプティブフォームの埋め込み
-seo-title: Hwo to add an Adaptive Form to an AEM Sites page?
-description: アダプティブフォーム - 埋め込みコンテナコンポーネントを使用すると、AEM Sites ページにアダプティブフォームを追加または埋め込んで、AEM Sites ページを離れずにフォームに入力してフォームを送信することができます。
+seo-title: How to add an Adaptive Form to an AEM Sites page?
+description: アダプティブForms — 埋め込みコンポーネントを使用して、AEM SitesページにアダプティブFormsを埋め込むことができます。これにより、AEM Sitesページを離れることなく、フォームに入力して送信できます。
 feature: Adaptive Forms
+Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: df772533b5b8b55a80780d848e21b2432bea253c
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 99%
+source-wordcount: '3232'
+ht-degree: 24%
 
 ---
 
@@ -21,73 +22,324 @@ ht-degree: 99%
 
 ## 概要 {#overview}
 
-AEM Forms を使用すると、フォーム開発者は AEM サイトページまたは AEM の外側にホストされた web ページにアダプティブフォームをシームレスに埋め込むことができます。埋め込まれたアダプティブフォームではすべての機能を使用できるため、ユーザーは、ページから移動することなくフォームに記入およびフォームを送信できます。これにより、ユーザーは web ページのその他の要素との整合性を保つことができ、同時にフォームとの相互作用も保つことができます。
+AEM Forms を使用すると、フォーム開発者は AEM サイトページまたは AEM の外側にホストされた web ページにアダプティブフォームをシームレスに埋め込むことができます。埋め込まれたアダプティブフォームではすべての機能を使用できるため、ユーザーは、ページから移動することなくフォームに記入およびフォームを送信できます。これにより、ユーザーは web ページのその他の要素との整合性を保つことができ、同時にフォームとの相互作用も保つことができます。これにより、ユーザーは、ページを離れることなく、フォームに簡単に入力して送信できます。 この統合により、作成済みのアダプティブFormsを再利用する便利な方法が提供されます。
+
+AEMページエディターを使用して、複数のフォームをAEM Sitesページにすばやく埋め込むことができます。 AEM Page Editor を使用すると、動的な動作、検証、データ統合、レコードのドキュメントの生成、ビジネスプロセスの自動化など、アダプティブFormsコンポーネントの機能を利用して、Sites ページ内にシームレスなデータキャプチャエクスペリエンスを作成できます。 また、バージョン管理、ターゲティング、翻訳、マルチサイトマネージャーなど、AEM Sitesページの様々な機能を使用できます。
+
+AEM Forms提供 **[!UICONTROL アダプティブフォームコンテナ]** および **[!UICONTROL アダプティブForms — 埋め込み (v2)]** コンポーネント。 以下を使用できます。 **[!UICONTROL アダプティブForms — 埋め込み (v2)]** 既存のアダプティブフォームを追加するコンポーネント、またはアダプティブFormsエディターを使用してフォームを作成するコンポーネント **[!UICONTROL アダプティブフォームコンテナ]** をクリックして、エクスペリエンスフラグメントページまたはAEM Sitesページ内に新しいフォームを作成します。
+
+![AEM Sitesページでのアダプティブフォームの例](/help/forms/assets/adaptive-form-in-sites-page.png)
+
+<!-- For information about embedding an Adaptive Form in an external web page, see [Embed Adaptive Form in external web page](/help/forms/using/embed-adaptive-form-external-web-page.md). 
+
+## Why embed an Adaptive Form in AEM Sites page or AEM Experience Fragment? 
+
+Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor allows you to create seamless data capture experiences within a Sites page using the power of Adaptive Forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. It also allows you to use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager, enhancing the overall form creation and management experience. Let's explore some of these features:
+
+* **Versioning:** AEM Sites pages offer [robust versioning capabilities](/help/sites-cloud/authoring/features/page-versions.md), allowing you to track and manage different versions of your forms. This enables you to make changes and enhancements to forms while maintaining the ability to roll back to previous versions if needed. Versioning ensures a controlled and organized approach to form development and evolution.
+* **Targeting (Integration with Adobe Target):** With AEM Sites pages targeting capabilities, you can also [personalize the form experience for different audiences](/help/sites-cloud/integrating/integration-adobe-target-ims.md). By leveraging user segments and targeting criteria, you can tailor the form's content, design, or behavior to specific groups of users. This enables you to provide a personalized and relevant form experience, increasing engagement and conversion rates.
+* **Translation:** AEM Sites [seamless integration with translation services](/help/sites-cloud/administering/translation/overview.md), allowing you to translate forms into multiple languages easily. This feature simplifies the localization process, ensuring that your forms are accessible to a global audience. You can manage translations efficiently within AEM translation projects, reducing time and effort required for multilingual form support. See considerations section for more information on translation.  
+* **Multi-site Management and Live Copy:** AEM Sites provide robust [Multi-site Management and Live Copy capabilities](/help/sites-cloud/administering/msm/overview.md), enabling you to create and manage multiple websites within a single environment. This feature now allows you to reuse forms across different sites, ensuring consistency and reducing duplication efforts. With centralized control and management, you can efficiently maintain and update forms across multiple websites.
+* **Themes:** AEM Sites pages provide a framework for designing and maintaining consistent visual styles across multiple web pages. These define colors, fonts, style sheets, and other visual elements that contribute to the overall look and feel of the website. [You can use the themes designed for an AEM Sites page for an Adaptive Form, saving time and effort](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes). 
+* **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
+* **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/fundamentals/editing-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
+
+In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
+
+-->
+
+## アダプティブフォームを作成または埋め込む方法をAEM SitesページまたはAEM Experience Fragment 内にありますか？ {#various-options-to-create-or-embed-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
+
+次のオプションを使用すると、この機能を最大限に活用できます。
+
+* **[承認済みのテンプレートを使用してアダプティブフォームを作成し、AEM Sitesページに埋め込む](#embed-form-using-adaptive-form-wizzard-aem-sites):** 事前に承認されたテンプレートを活用して、組織のブランディングガイドラインやデザイン標準に合ったアダプティブFormsをすばやく作成し、埋め込むことができます。
+
+* **[既存のフォームをAEM Sitesページに埋め込む](#embed-an-adaptive-form-in-sites-editor):** 作成済みのフォームを Web サイトに簡単に統合できるので、訪問者は直接フォームを操作できます。
+
+* **[埋め込まれたアダプティブフォームをエクスペリエンスフラグメントに変換する](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment):** AEM Sitesページに追加された埋め込みアダプティブフォームをエクスペリエンスフラグメントに変換して、複数のAEM Sitesページにわたってフォームを再利用する。
+
+* **[カスタムアダプティブフォームを作成してAEM Sitesページに追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor-or-experience-fragment):** 以下を使用すると、 **[!UICONTROL アダプティブフォームコンテナ]** コンポーネントを使用して、要件やデザイン環境設定に合わせて独自の新しいフォームを一から作成できます。
+
+* **[エクスペリエンスフラグメントにカスタムアダプティブフォームを作成して追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor):** フォームをAEMエクスペリエンスフラグメントに追加することで、フォームのリーチを拡大して、複数のページやサイトでシームレスに再利用できます。
+
+* **複数のフォームをAEM Sitesページまたはエクスペリエンスフラグメントに追加する：**  複数のアダプティブFormsを作成またはAEM Sitesページに追加して、ユーザーの環境設定や要件に基づいて複数の選択肢をユーザーに提供できます。 AEMページエディターを使用して、複数のフォームをAEM Sitesページにすばやく埋め込むことができます。 以下を使用すると、 **[!UICONTROL アダプティブフォームコンテナ]** コンポーネントを複数回追加して、AEM SitesページにアダプティブFormsを追加します。 以下を使用すると、 **[!UICONTROL アダプティブForms — 埋め込み]** AEM Sitesページでコンポーネントを複数回作成する ( **[!UICONTROL フォームはフレームの幅全体をカバーします]** 」オプションが選択されている。 例えば、 **[!UICONTROL フォームはフレームの幅全体をカバーします]** 「 」オプションがオフの場合、AEM Sitesページでは、iframe なしで存在するアダプティブフォームが 1 つだけサポートされます。 を使用してアダプティブFormsをさらに追加するには **[!UICONTROL アダプティブForms — 埋め込み]** コンポーネント、選択 **[!UICONTROL フォームはフレームの幅全体をカバーします]** オプション。
+
+## アダプティブフォームをAEM SitesページまたはAEM Experience Fragment に埋め込む際の考慮事項 {#consideration}
+
+* を使用してフォームを作成または追加する場合、 **[!UICONTROL アダプティブForms — 埋め込み (v2)]** コンポーネントの場合、フォームは、AEM Forms翻訳フローを使用して翻訳およびローカライゼーションされます。 この場合、1 つのフォームが維持され、Sites ページのすべての言語コピーで参照されます。 **[!UICONTROL アダプティブForms — 埋め込み (v2)]** コンポーネントでは、AEM Sitesページの様々な機能（バージョン管理、ターゲティング、翻訳、マルチサイトマネージャーなど）にアクセスできません。
+
+* を使用する場合、 **[!UICONTROL アダプティブフォームコンテナ]** フォームを作成するには、AEM Sitesの翻訳フローを使用してフォームを翻訳およびローカライゼーションします。 言語ごとに、サイトページと対応するフォームの個別のコピー（言語コピー）が生成され、コンテンツ作成者が親ページのフォームのルールを変更する場合は、フォームのすべての言語コピーで同じ変更を行う必要があります。 **[!UICONTROL アダプティブフォームコンテナ]** また、バージョン管理、ターゲティング、翻訳、マルチサイトマネージャーなど、AEM Sitesページの様々な機能を使用できます。
 
 
+## アダプティブフォームをAEM SitesページまたはAEM Experience Fragment に埋め込むための要件 {#before-you-start-embedding-an-adaptive-form}
 
-<!-- For information about embedding an Adaptive Form in an external web page, see [Embed Adaptive Form in external web page](/help/forms/using/embed-adaptive-form-external-web-page.md). -->
+新しいアダプティブフォームまたは既存のアダプティブフォームを埋め込む前に、 **[!UICONTROL アダプティブForms — 埋め込み (v2)]**，有効 **アダプティブFormsコアコンポーネント** とを追加します。 **アダプティブFormsクライアントライブラリ** をAEM Sitesページに追加します。
 
-AEM Sites ページでは、以下を使用してアダプティブフォームを追加できます。
++++  AEM Cloud Service環境でのアダプティブFormsコアコンポーネントの有効化
 
-* **アダプティブフォーム - 埋め込みコンポーネント**
-アダプティブフォーム - 埋め込みコンポーネントを使用すると、AEM Sites 作成者は AEM Sites ページ内にある既存のアダプティブフォームを含めることができ、アダプティブフォームの再利用性が向上します。既存のアダプティブフォームは、スタンドアロンで使用することも、サイトページに埋め込むこともできます。この統合により、顧客が作成済みのアダプティブフォームを再利用する便利な方法が提供されます。
+次の点を確認します。 [アダプティブFormsコアコンポーネントがAEM Formsas a Cloud Service環境で有効になっている](enable-adaptive-forms-core-components.md).
 
-* **アセットブラウザー**
-すべてのフォームは「アセット」の下に表示されます。フォームは、アセットとしてページ上にドラッグ＆ドロップすることができます。
++++
 
-## 前提条件 {#prerequisites}
++++  アダプティブFormsクライアントライブラリをAEM Sitesページまたはエクスペリエンスフラグメントに追加する
 
-編集可能なテンプレートを使用した AEM Sites ページにアダプティブフォームを埋め込むには、AEM Form コンポーネントが、関連するテンプレートで許可されたコンポーネントとして設定されていることを確認します。
+次の場合に **[!UICONTROL フォームがページの幅全体に対応している場合]** オプションが選択されている場合、 **[!UICONTROL フォームコンテナ]** コアコンポーネントを使用して設定ダイアログボックスと Adaptive Formsを使用する場合は、対応するサイトのページにクライアントライブラリを含める必要があります。
 
-**アダプティブフォーム - 埋め込みコンポーネント**&#x200B;が AEM Sites ページの&#x200B;**コンポーネントブラウザーパネル**&#x200B;に表示されない場合は、次の手順（ビデオを参照）を実行します。
+![フォームがページオプションの幅全体を覆っている場合、コアコンポーネントを含むアダプティブフォームが使用されます](/help/forms/assets/overlaycorecomponent.gif)
 
->[!VIDEO](https://video.tv.adobe.com/v/3410544)
 
-Sites ページで静的テンプレートを使用している場合は、それをサイトページの段落システムで設定する必要があります。
+次を追加： **Customheaderlibs** および **Customfooterlibs** クライアントライブラリをAEM Sitesページに追加します。 クライアントライブラリを追加するには：
 
-## アダプティブフォームの埋め込み {#af-component}
+1. にアクセスしてクローンを作成 [AEM Cloud Service Git リポジトリ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html).
+1. プランテキストエディターでAEM Cloud Service Git リポジトリフォルダーを開きます。 例： Microsoft® Visual Code。
+1. を開きます。 `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` ファイルを開き、次のコードをファイルに追加します。
 
-**[!UICONTROL アダプティブフォーム - 埋め込み]**&#x200B;コンポーネントを使用してアダプティブフォームを埋め込むには：
+       &quot;&#39;
+       //Customheaderlibs.html
+       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
+       &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;}&quot; />
+       &lt;/sly>
+       
+       &quot;&#39;
+   
+1. を開きます。 `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` ファイルを開き、次のコードをファイルに追加します。
 
-1. アダプティブフォームの埋め込み先の AEM Sites ページを、編集モードで開きます。
-1. コンポーネントブラウザーパネルから、[!UICONTROL アダプティブフォーム - 埋め込み]コンポーネントをドラッグしてページ上にドロップします。または、アセットブラウザーでアダプティブフォームを検索して、AEM Sites ページにドラッグ＆ドロップします。新しいアダプティブフォームを追加することも、既存のアダプティブフォームを埋め込むこともできます。
+       &quot;&#39;
+       
+       //customfooterlibs.html
+       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
+       &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;, async=true}&quot; />
+       &lt;/sly>
+       &quot;&#39;
+   
+1. を開きます。 `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` ファイルを開き、次のコードをファイルに追加します。
 
-   >[!NOTE]
-   >
-   >1 つのページ上に複数のアダプティブフォーム - 埋め込みコンポーネントを配置することはサポートされていません。
+       &quot;&#39;
+       //Customheaderlibs.html
+       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
+       &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;}&quot; />
+       &lt;/sly>
+       
+       &quot;&#39;
+   
+1. を開きます。 `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` ファイルを開き、次のコードをファイルに追加します。
 
-1. 新しいフォームを作成して埋め込むには、コンポーネントツールバーで&#x200B;**フォームを作成**&#x200B;アイコンをタップします。フォームを作成するためのウィンドウが開きます。
+       &quot;&#39;
+       
+       //customfooterlibs.html
+       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
+       &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;, async=true}&quot; />
+       &lt;/sly>
+       &quot;&#39;
+   
+1. [デプロイメントパイプラインの実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=ja) クライアントライブラリをAEM as a Cloud Service環境にデプロイする場合。
 
-1. Sites ページに埋め込まれたアダプティブフォーム - 埋め込みコンポーネントをタップし、アクションバーの ![settings_icon](assets/settings_icon.png) をタップします。**[!UICONTROL アダプティブフォーム - 埋め込みを編集]**&#x200B;ダイアログが開きます。
-1. アダプティブフォーム - 埋め込みを編集ダイアログで、次の設定を行います。
++++
 
-   **アセットのタイプ：**&#x200B;埋め込むアセットのタイプを選択します。
-   * **アセットパス**： 埋め込むアダプティブフォームを参照して選択します。また、アセットブラウザーからドロップすると、自動的に入力されます。
-   * **送信後処理**：フォーム送信時にトリガーするアクションを選択します。お礼のメッセージを表示するため、「ありがとうございます」ページを設けることができます。
-      * 表示
++++ 有効にする **[!UICONTROL アダプティブForms — 埋め込み (v2)]** (AEM Sitesページまたはエクスペリエンスフラグメント用 )
 
-      * **「ありがとうございます」メッセージ**：フォーム送信時に表示するメッセージをリッチテキストエディターで書き込みます。このオプションは、「ありがとうございます」メッセージの表示が有効な場合にのみ選択できます。
-      * **「ありがとうございます」ページ**： フォームの送信時に表示するページを参照して選択します。このオプションは、ありがとうページの表示が有効な場合にのみ選択できます。
-         * **ありがとうページにリダイレクト**：このオプションを有効にすると、アダプティブフォームが埋め込まれたページはありがとうページに置き換わります。 このオプションを有効にしない場合は、ありがとうページは、[!UICONTROL アダプティブフォーム - 埋め込み]コンポーネントのアダプティブフォームを置き換え、ベースとなる Sites ページは更新されません。このオプションは、ありがとうページの表示が有効な場合にのみ選択できます。
-   * **ページ言語を使用**：アダプティブフォームのロケールではなく、AEM Sites ページのロケールを使用します。
-   * **フォームにフォーカスを設定**：アダプティブ フォームの最初のフィールドにフォーカスを設定する場合に選択します。
-   * **テーマ**： アダプティブフォームのコンポーネントのスタイルを定義するテーマを選択します。スタイル設定には、フォントスタイル、背景色、サイズ、配置など、外観のプロパティが含まれます。
-   * **フォームがフレームの幅全体をカバー**：オンにすると、iframe はフォームのレンダリングには使用されません。
-   * **高さ**：コンテナの高さを指定します。コンテナのサイズを自動的に変更するには、空白のままにします。
-   * **CSS クライアントライブラリ**：CSS クライアントライブラリへのパスを指定します。
+有効にするには **[!UICONTROL アダプティブForms — 埋め込み (v2)]** テンプレートのポリシーのコンポーネントで、次の手順を実行します。
 
-1. 設定を保存します。これで、アダプティブフォームがページに埋め込まれました。
+1. AEM Sitesページまたはエクスペリエンスフラグメントを編集用に開きます。 ページを編集用に開くには、ページを選択して、 **[!UICONTROL 編集]**.
+1. Sites ページまたはエクスペリエンスフラグメントページのテンプレートを開きます。 テンプレートを開くには、 **[!UICONTROL ページ情報]** ![ページ情報](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL テンプレートを編集]**. 対応するテンプレートがテンプレートエディターで開きます。
+1. 構造ビューで、 **[!UICONTROL ポリシー]** ![ポリシー](/help/forms/assets/Smock_FeedManagement_18_N.svg) アイコンをクリックします。 Adobe Analytics の **[!UICONTROL 許可されたコンポーネント]** リストを表示し、 **[!UICONTROL アダプティブForms — 埋め込み (v2)]**  の下のチェックボックス **[AEM Archetype プロジェクト名]  — アダプティブフォーム**.
+1. 「**[!UICONTROL 完了]**」をクリックします。
 
-AEM サイトでは、アダプティブフォーム - 埋め込みコンポーネントを使用して、その場でアダプティブフォームを作成することもできます。AEM Sites ページで **アダプティブフォーム - 埋め込みコンポーネント**&#x200B;を使用してアダプティブフォームを作成するには、次の手順に従います。
-1. アダプティブフォームの埋め込み先の AEM Sites ページを、編集モードで開きます。
-1. コンポーネントブラウザーパネルからアダプティブフォーム - 埋め込みコンポーネントをドラッグして、そのページ上にドロップします。
-1. **プラス**&#x200B;アイコンをクリックすると、フォーム作成ウィザードにリダイレクトされます。
+>[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
+
++++
+
+## アダプティブフォームの埋め込み — Forms — 埋め込み (v2) コンポーネントを使用する {#embed-an-adaptive-form-in-sites-editor-or-experience-fragment}
+
+以下を使用します。 **[!UICONTROL アダプティブForms — 埋め込み (v2)]** フォーム作成ウィザードを使用して、AEM Sitesエディター内で直接アダプティブフォームを作成するためのコンポーネントです。 結果のフォームは外部エンティティとして保存され、他の Sites ページやスタンドアロンフォームで再利用できます。 新しいフォームを最初から埋め込み、要件やデザインの環境設定に合わせて、AEM Sitesページまたはエクスペリエンスフラグメントに直接埋め込むことができます。 単一使用フォームの場合は、AEM Sitesページへの直接オーサリングをお勧めします。一方、エクスペリエンスフラグメントは、Web サイトの複数のページで再利用する必要があるフォームに最適です。
+
+新しいフォームを簡単に埋め込むには、 **[!UICONTROL アダプティブForms — 埋め込み (v2)]**.  例えば、新しい連絡先フォームをAEM SitesページやAEM Experience Fragment に組み込むとします。 AEM Sitesページまたはエクスペリエンスフラグメント内の連絡先フォームに対する更新や変更は、デプロイ先のすべてのページに自動的に適用されます。 これにより、Web サイトのフォームの管理が簡素化され、プロセス全体を合理化しながら、シームレスなユーザーエクスペリエンスを実現します。
+
+使用 **[!UICONTROL アダプティブForms — 埋め込み (v2)]**&#x200B;を使用すると、次のことができます。
+
+* [AEM SitesページのアダプティブFormsウィザードを使用して新しいフォームを埋め込む](#embed-form-using-adaptive-form-wizzard-aem-sites)
+* [アダプティブフォームウィザードを使用して、エクスペリエンスフラグメントに新しいフォームをFormsに埋め込む](#embed-form-using-adaptive-form-wizzard-experience-fragment)
+* [既存のアダプティブフォームをAEM Sitesページに埋め込む](#embed-an-adaptive-form-in-sites-editor)
+* [エクスペリエンスフラグメントに既存のフォームを埋め込む](#embed-an-adaptive-form-in-experience-fragment)
+* [AEM Sitesページ内のアダプティブフォームをエクスペリエンスフラグメントに変換する](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)
+
+### AEM SitesページのアダプティブFormsウィザードを使用して新しいフォームを埋め込む {#embed-form-using-adaptive-form-wizzard-aem-sites}
+
+新しいフォームをAEM Sitesページに埋め込む手順は次のとおりです。
+
+1. AEM Sites ページを編集モードで開きます。
+1. コンポーネントブラウザーパネルから、**[!UICONTROL アダプティブフォーム - 埋め込み（v2）]**&#x200B;コンポーネントをページ上にドラッグ＆ドロップします。
+1. 「**プラス**」アイコンをクリックすると、フォーム作成ウィザードにリダイレクトされます。
 
    ![アダプティブフォーム - 埋め込みコンポーネント](/help/forms/assets/aemformcontainer.png)
 
-1. これで、[!UICONTROL AEM Forms コンテナコンポーネント]を使用して AEM Sites ページにアダプティブフォームを埋め込むことができました。
+1. **[!UICONTROL フォーム作成]**&#x200B;ウィザードから新しいアダプティブフォームを作成します。**[!UICONTROL アセットパス]**&#x200B;には、作成されたアダプティブフォームのパスが既に含まれています
+1. 設定を保存します。これで、アダプティブフォームがページに埋め込まれました。
 
-## 埋め込まれたアダプティブフォームの公開 {#publishing-embedded-adaptive-form}
+>[!VIDEO](https://video.tv.adobe.com/v/3419366/adaptive-form-aem-forms?quality=12&learn=on)
+
+次に、次の操作を行います。 [送信アクションの設定](/help/forms/configuring-submit-actions.md) 埋め込まれたアダプティブフォームの詳細プロパティを作成するには、フォーム作成ウィザードを使用します。
+
+
+### アダプティブフォームウィザードを使用して、エクスペリエンスフラグメントに新しいフォームをFormsに埋め込む {#embed-form-using-adaptive-form-wizzard-experience-fragment}
+
+エクスペリエンスフラグメントに新しいフォームを埋め込む手順は、次のとおりです。
+
+1. エクスペリエンスフラグメントを編集モードで開きます。
+1. コンポーネントブラウザーパネルから、**[!UICONTROL アダプティブフォーム - 埋め込み（v2）]**&#x200B;コンポーネントをページ上にドラッグ＆ドロップします。
+1. 「**プラス**」アイコンをクリックすると、フォーム作成ウィザードにリダイレクトされます。
+
+   ![アダプティブフォーム - 埋め込みコンポーネント](/help/forms/assets/aemformcontainer.png)
+
+1. **[!UICONTROL フォーム作成]**&#x200B;ウィザードから新しいアダプティブフォームを作成します。**[!UICONTROL アセットパス]**&#x200B;には、作成されたアダプティブフォームのパスが既に含まれています
+1. 設定を保存します。これで、アダプティブフォームがエクスペリエンスフラグメントに埋め込まれます。
+
+次に、次の操作を行います。 [送信アクションの設定](/help/forms/configuring-submit-actions.md) 埋め込まれたアダプティブフォームの詳細プロパティを作成するには、フォーム作成ウィザードを使用します。
+
+### 既存のアダプティブフォームをAEM Sitesページに埋め込む {#embed-an-adaptive-form-in-sites-editor}
+
+を使用 **[!UICONTROL アダプティブForms — 埋め込み (v2)]** コンポーネントを使用すると、既存のアダプティブフォームをAEM Sites内のページに容易に統合できます。 この機能は、アダプティブFormsの適応性と再利用性を大幅に向上させ、作成済みのフォームを再利用する便利な方法を提供します。 例えば、AEM Sitesページに連絡先フォームを組み込むと、フォームを複数回再作成しなくても済むとします。
+
+既存のアダプティブフォームをサイトページに埋め込むには：
+
+1. AEM Sites ページを編集モードで開きます。
+1. 次をドラッグ&amp;ドロップ： **[!UICONTROL アダプティブForms — 埋め込み (v2)]** コンポーネントをコンポーネントブラウザーからサイトページに移動します。
+1. 次をタップします。 **[!UICONTROL アダプティブForms — 埋め込み]** サイトページのコンポーネントをタップし、 ![アダプティブフォームコンテナのプロパティ](/help/forms/assets/configure-icon.svg) をクリックします。 The **[!UICONTROL アダプティブFormsの編集 — 埋め込み (v2)]** ダイアログが開きます。
+1. **[!UICONTROL アセットパス]**&#x200B;に埋め込むアダプティブ フォームを参照して選択します。
+1. 設定を保存します。これで、アダプティブフォームがページに埋め込まれました。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419368?quality=12&learn=on)
+
+次に、次の操作を行います。 [送信アクションの設定](/help/forms/configuring-submit-actions.md) 埋め込まれたアダプティブフォームの詳細プロパティを作成するには、フォーム作成ウィザードを使用します。
+
+### エクスペリエンスフラグメント内に既存のアダプティブフォームを埋め込む {#embed-an-adaptive-form-in-experience-fragment}
+
+また、フォームをAEM Experience Fragment に埋め込むことで、フォームのアクセシビリティを拡張することもできます。 エクスペリエンスフラグメントにアダプティブフォームを埋め込むには：
+
+1. エクスペリエンスフラグメントを編集モードで開きます。
+1. 次をドラッグ&amp;ドロップ： **[!UICONTROL アダプティブForms — 埋め込み (v2)]** コンポーネントをコンポーネントブラウザーからエクスペリエンスフラグメントにドラッグします。
+1. 次をタップします。 **[!UICONTROL アダプティブForms — 埋め込み]** エクスペリエンスフラグメントのコンポーネントをタップし、 ![アダプティブフォームコンテナのプロパティ](/help/forms/assets/configure-icon.svg) をクリックします。 The **[!UICONTROL アダプティブFormsの編集 — 埋め込み (v2)]** ダイアログが開きます。
+1. **[!UICONTROL アセットパス]**&#x200B;に埋め込むアダプティブ フォームを参照して選択します。
+1. 設定を保存します。アダプティブフォームがエクスペリエンスフラグメントに埋め込まれました。
+
+次に、次の操作を行います。 [送信アクションの設定](/help/forms/configuring-submit-actions.md) 埋め込まれたアダプティブフォームの詳細プロパティを作成するには、フォーム作成ウィザードを使用します。
+
+### AEM Sitesページのフォームをエクスペリエンスフラグメントに変換する {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
+
+複数のページまたはサイトでフォームを再利用するには、 Sites ページエディター内の既存のアダプティブフォームをエクスペリエンスフラグメントに変換します。
+
+アダプティブフォームをAEM Sitesページからエクスペリエンスフラグメントに変換するには：
+
+1. アダプティブフォームを含むAEM Sitesページを ( アダプティブFormsコンテナコンポーネントで ) 編集モードで開きます。
+1. コンテンツツリーを開き、 **[!UICONTROL アダプティブFormsコンテナ]** アダプティブフォームをホストする 1 つのAEM Sitesページで複数のアダプティブFormsをホストできます。 したがって、適切なアダプティブFormsコンテナを慎重に選択してください。
+1. メニューバーで、 ![エクスペリエンスフラグメントバリエーションに変換アイコン](/help/forms/assets/Smock_FilingCabinet_18_N.svg) エクスペリエンスフラグメントバリエーションに変換アイコン。
+   ![ファイルキャビネットのロゴをクリックして、AEM Sitesページのアダプティブフォームをエクスペリエンスフラグメントに変換する](/help/forms/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
+
+   アダプティブフォームコンテナを新しいエクスペリエンスフラグメントに変換するか、既存のエクスペリエンスフラグメントに追加するためのダイアログボックスが表示されます。
+1. 次の日： **[!UICONTROL エクスペリエンスフラグメントに変換]** [ バリエーション ] ダイアログボックスで、次のオプションの値を設定します。
+
+   * **アクション：** エクスペリエンスフラグメントを作成する場合は「 」を選択し、既存のエクスペリエンスフラグメントに追加する場合は「 」を選択します。
+   * **親パス：** エクスペリエンスフラグメントをホストするフォルダーのパスを指定します。 このオプションは、新しいエクスペリエンスフラグメントを作成する場合にのみ使用できます。
+   * **テンプレート：** エクスペリエンスフラグメントテンプレートのパスを指定します。 エクスペリエンスフラグメントテンプレートがない場合は、 [作成する](/help/implementing/developing/extending/experience-fragments.md). このオプションは、既存のエクスペリエンスフラグメントにアダプティブフォームを追加する場合にのみ使用できます。
+   * **フラグメントのタイトル：** エクスペリエンスフラグメントのタイトルを指定します。 タイトルは、エクスペリエンスフラグメントを一意に識別します。
+   * **フラグメントタグ：** エクスペリエンスフラグメントのタグを指定します。 このタグは、エクスペリエンスフラグメントのカテゴリを一意に識別します。
+
+## アダプティブフォーム埋め込み (v2) プロパティの設定
+
+**[!UICONTROL アダプティブフォーム - 埋め込み（v2）]**&#x200B;コンポーネントの詳細設定をカスタマイズできます。 Adobe Analytics の **[!UICONTROL アダプティブFormsを編集 — 埋め込み]** ダイアログでは、次の項目を指定できます。
+
+* **アセットパス**：埋め込むアダプティブフォームを参照して選択します。 また、アセットブラウザーからドロップすると、自動的に入力されます。
+* **送信後処理**：フォーム送信時にトリガーするアクションを選択します。お礼のメッセージを表示するため、「ありがとうございます」ページを設けることができます。
+   * **ありがとうメッセージの表示**：フォーム送信時に表示するメッセージをリッチテキストエディターで書き込みます。このオプションは、ありがとうメッセージの表示が有効な場合にのみ選択できます。
+   * **ありがとうページの表示**： フォームの送信時に表示するページを参照して選択します。このオプションは、ありがとうページの表示が有効な場合にのみ選択できます。
+   * **ありがとうページにリダイレクト**：このオプションを有効にすると、アダプティブフォームが埋め込まれたページはありがとうページに置き換わります。 それ以外の場合は、「ありがとうございます」ページが、 **[!UICONTROL アダプティブForms — 埋め込み (v2)]** コンポーネントを更新せずに、基になるサイトを更新します。 このオプションは、ありがとうページの表示が有効な場合にのみ選択できます。
+   * **感謝状メッセージ**：フォームが正常に送信された後に画面に表示される簡単な確認または確認。
+   * **感謝のページ**：フォームが正常に送信された後に表示するページを参照および選択します。
+
+* **ページ言語を使用**：アダプティブフォームのロケールではなく、AEM Sites ページのロケールを使用します。このオプションは、アダプティブフォーム (Foundation) にのみ適用されます。
+* **フォームにフォーカスを設定**：アダプティブ フォームの最初のフィールドにフォーカスを設定する場合に選択します。このオプションは、アダプティブフォーム (Foundation) にのみ適用されます。
+* **テーマ**： アダプティブフォームのコンポーネントのスタイルを定義するテーマを選択します。スタイル設定には、フォントスタイル、背景色、サイズ、配置など、外観のプロパティが含まれます。このオプションは、アダプティブフォーム (Foundation) にのみ適用されます。
+* **フォームはフレームの幅全体をカバーします**：インラインフレーム (iframe) は、アダプティブフォームをAEM Sitesページに読み込むHTML要素です。
+
+   * 次の場合、 **[!UICONTROL フォームはフレームの幅全体をカバーします]** チェックボックスがオンの場合、アダプティブフォームは配置されるコンテナの全幅を占有します。 この場合、iframe はフォームのレンダリングには使用されません。 アダプティブフォームのレイアウトとデザインは、コンテナの幅全体に適応し、レスポンシブで、様々な画面サイズに調整できます。 このオプションを使用すると、複数のアダプティブFormsをAEM Sitesページ内に埋め込むことができます。
+
+     >[!NOTE]
+     >
+     > 複数のフォームをAEM Sitesページに埋め込むには、 **[!UICONTROL フォームはフレームの幅全体をカバーします]** チェックボックス。
+
+   * 次の場合、 **[!UICONTROL フォームはフレームの幅全体をカバーします]** チェックボックスがオフの場合、アダプティブフォームはコンテナの幅全体をカバーしません。 代わりに、iframe を使用してフォームをレンダリングします。このフォームは、特定の幅を超えて拡張することはできません。 この方法は、アダプティブフォームに明確な境界があり、コンテナ内でアダプティブフォームの隣にある他のAEMコンポーネントと共存する必要がある場合に役立ちます。 このオプションを選択しない場合、AEM Sitesページで iframe を使用せずに埋め込むアダプティブFormsは 1 つだけになります。
+
+     >[!NOTE]
+     >
+     > AEM Sitesページでは、iframe なしで存在するアダプティブフォームは 1 つだけサポートされています。 を使用してアダプティブFormsをさらに追加するには **[!UICONTROL アダプティブForms — 埋め込み]** コンポーネント、選択 **[!UICONTROL フォームはフレームの幅全体をカバーします]** オプション。
+
+* **高さ**：コンテナの高さを指定します。コンテナのサイズを自動的に変更するには、空白のままにします。
+* **CSS クライアントライブラリ**：CSS クライアントライブラリへのパスを指定します。
+
+<!--
+In AEM Sites page, you can add an Adaptive Form using:
+
+* **Adaptive Forms - Embed component**
+   Adaptive Forms - Embed component enables AEM Sites authors to include an existing Adaptive Form within an AEM Sites page, thereby enhancing the reusability of adaptive forms. Existing Adaptive Forms can be used standalone or embedded in the site page. This integration provides a convenient way for customers to reuse Adaptive Forms they have already created.
+
+* **Asset browser**
+  All the forms are available under Assets. You can drag-drop the form as an asset on your page.
+
+## Prerequisites {#prerequisites}
+
+ To embed an Adaptive Form in an AEM Sites page that uses an editable template, ensure that the AEM Form component is configured as an allowed component in the associated template. 
+
+In case **Adaptive Forms - Embed component** is not visible in the **Component browser panel** of AEM sites page, perform the following steps as illustrated in the video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3410544)
+
+In case Sites page is using a static template, you need to configure it in the paragraph system of the site page. 
+
+## Embedding an Adaptive Form {#af-component}
+
+To embed an Adaptive Form using the **[!UICONTROL Adaptive Forms - Embed]** component:
+
+1. Open the AEM sites page, in edit mode, in which you want to embed an Adaptive Form.
+1. From the Component browser panel, drag-drop the [!UICONTROL Adaptive Forms - Embed] component on the page. Alternatively, you can search for an Adaptive Form in the Assets browser and drag-drop it onto the Sites page. You can add a new Adaptive Form or embed an existing Adaptive Form. 
+
+   >[!NOTE]
+   >
+   >Multiple Adaptive Forms - Embed components on a page are not supported.
+
+1. To create and embed a new form, on the component toolbar, tap the **Create Form** icon. A window to create the form opens. 
+
+1. Tap the embedded Adaptive Forms - Embed component in the sites page, and then tap ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed]** dialog opens.
+1. In the Edit Adaptive Forms - Embed dialog, specify the following.
+
+    **Asset Type:** Select the type of asset to embed. 
+    * **Asset Path**: Browse and select the Adaptive Form to embed. It is auto-populated if you dropped it from the Assets browser.
+    * **Post Submission** : Select the action to trigger on form submission. You can choose to show a thank you message or a thank you page.
+        * Show
+
+        * **Thank You Message**: Write a message using the rich text editor to show on form submission. This option is available only when you choose to show a thank you message.
+        * **Thank You Page**: Browse and select the page to display on form submission. This option is available only when you choose to show a thank you page.
+           * **Redirect to thank you page**: Enable the option to replace the page containing the embedded Adaptive Form with thank you page. Otherwise, the thank you page replaces the Adaptive Form in the [!UICONTROL Adaptive Forms - Embed] component, without refreshing underlying sites the page. This option is available only when you choose to show a thank you page.
+    * **Use Page Language**: Use local of the AEM Sites page instead locale of Adaptive Form.
+    * **Set Focus on Form**: Select to set the focus on the first field of the Adaptive Form.
+    * **Theme**: Select a theme that defines styling for components of your Adaptive Form. Styling includes appearance properties such as font style, background color, dimensions, and alignment.
+    * **Form covers entire width of the frame**: If checked, iframe is not used to render the form. 
+    * **Height**: Specify the height of the container. Leave it blank to automatically resize the container.
+    * **CSS Client library**: Specify path to a CSS client library.
+
+1. Save the settings. The Adaptive Form  is now embedded in the page.
+
+
+AEM site also allows you to create an Adaptive Form on the fly using the Adaptive Forms - Embed component. Follow the steps to create an Adaptive Form using the **Adaptive Forms - Embed component** on AEM sites page:
+1. Open the AEM sites page, in edit mode, in which you want to embed an Adaptive Form.
+1. From the Component browser panel, drag-drop the Adaptive Forms - Embed component on the page.
+1. Click the **Plus** icon and you are redirected to the form creation wizard.
+
+    ![Adaptive Forms - Embed Component](/help/forms/assets/aemformcontainer.png)
+
+1. You can now embed an Adaptive Form on AEM site pages using the [!UICONTROL AEM Forms Container Component].
+-->
+
+## 埋め込まれたアダプティブフォームを発行する {#publishing-embedded-adaptive-form}
 
 ここでは、AEM Sites ページに埋め込まれたアダプティブフォームを公開するための、次のようなシナリオを考えてみます。
 
@@ -97,8 +349,6 @@ AEM サイトでは、アダプティブフォーム - 埋め込みコンポー�
 
 ## 埋め込まれたアダプティブフォームを変更する  {#modifying-embedded-adaptive-form}
 
-AEM Sites ページには、アダプティブフォーム - 埋め込み内のアダプティブフォームへの参照が保持されます。したがって、元のアダプティブフォームで指定された設定やプロパティ（テーマ、スタイル、送信アクションなど）は、埋め込まれたアダプティブフォームで保持されます。
-
 埋め込まれたアダプティブフォームの設定やプロパティを変更するには、次のいずれかの操作を行います。
 
 * それぞれのエディターのアダプティブフォームで元のフォームを開いて、変更します。
@@ -106,9 +356,9 @@ AEM Sites ページには、アダプティブフォーム - 埋め込み内の�
 
 >[!NOTE]
 >
->元のフォームに加えた変更は、埋め込まれたフォームに自動的に反映されます。ただし、公開済みページに変更内容を反映するために、アダプティブフォームまたはサイトページを再公開する必要があります。
+>元のフォームに加えた変更は、埋め込まれたフォームに自動的に反映されます。ただし、アダプティブフォームまたはサイトのページを再公開して、公開されたページに変更を反映します。
 
-## 注意点とベストプラクティス {#considerations-and-best-practices}
+## ベストプラクティス {#best-practices}
 
 AEM Sites ページにアダプティブフォームを埋め込む際は、以下の点に留意してください。
 
@@ -116,3 +366,8 @@ AEM Sites ページにアダプティブフォームを埋め込む際は、以�
 * ユーザードラフトと埋め込みフォームの送信はサポートされており、フォームポータル上の「下書き」タブや「送信済みフォーム」タブに表示されます。
 * 元のフォームに設定された送信アクションは、埋め込まれたフォームでも保持されます。
 * 元のフォームに Adobe Analytics が設定されている場合、埋め込まれたフォームの分析データは Adobe Analytics でキャプチャされます。ただし、フォームの分析レポートでは使用できません。
+
+## 関連トピック {#see-also}
+
+* [コアコンポーネントベースのスタンドアロンのアダプティブFormsを作成する](/help/forms/creating-adaptive-form-core-components.md)
+* [コアコンポーネントベースのアダプティブフォームをAEM Sitesページで直接作成する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
