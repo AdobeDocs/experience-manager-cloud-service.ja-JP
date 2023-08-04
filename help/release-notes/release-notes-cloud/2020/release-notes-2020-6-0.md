@@ -1,10 +1,10 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 のリリースノート
-description: Experience Manager 2020.6.0 のリリースノート
+description: 「[!DNL Adobe Experience Manager] as a Cloud Service 2020.6.0 のリリースノート」
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1933'
 ht-degree: 91%
 
 ---
@@ -62,7 +62,7 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
   詳しくは、 [サンドボックスプログラムの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=ja) を参照してください。
 
-* Cloud Manager の&#x200B;*ビジネス所有者*&#x200B;または&#x200B;*デプロイメントマネージャー*&#x200B;のロールにあるサンドボックスプログラムユーザーが、Cloud Manager UI を使用して、実稼動環境とステージ環境のセットを削除できるようになりました。削除オプションが、 **プログラムの概要** ページと **環境** ページ。 実稼動環境またはステージ環境で削除オプションを選択すると、セットの他の内容も削除されます。
+* Cloud Manager の&#x200B;*ビジネス所有者*&#x200B;または&#x200B;*デプロイメントマネージャー*&#x200B;のロールにあるサンドボックスプログラムユーザーが、Cloud Manager UI を使用して、実稼動環境とステージ環境のセットを削除できるようになりました。削除オプションが、 **プログラムの概要** ページと **環境** ページに貼り付けます。 実稼動環境またはステージ環境で削除オプションを選択すると、セットの他の内容も削除されます。
 
   詳しくは、 [サンドボックスプログラムの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=ja) を参照してください。
 
@@ -72,7 +72,7 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 * Cloud Manager で&#x200B;**学習**&#x200B;ページが利用できるようになり、トップナビゲーションからアクセスできます。このページには、Cloud Manager で割り当てられたロールに関連して、最も頻繁に使用されるワークフローについてユーザーが知るのに役立つリソースが含まれています。
 
-* サンドボックスプログラムは、 **サンドボックス** ランディングページのプログラムカードに表示され、 **プログラムの概要** ページ。
+* サンドボックスプログラムは、 **サンドボックス** ランディングページのプログラムカードに表示され、 **プログラムの概要** ページに貼り付けます。
 
 * 「システム管理者」のロールを持つユーザーは、Admin Console 内の場所に 1 回のクリックでアクセスできるようになりました。この場所から、ユーザーのロールや Cloud Manager への権限を管理できます。「**アクセスを管理**」ボタンが、ランディングページの「**プログラムを追加**」ボタンの横に表示されて使用できるようになりました。
 

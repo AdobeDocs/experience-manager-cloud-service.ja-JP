@@ -1,10 +1,10 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.4.0 のリリースノート
-description: Experience Manager 2020.4.0 のリリースノート
+description: 「[!DNL Adobe Experience Manager] as a Cloud Service 2020.4.0 のリリースノート」
 exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '648'
 ht-degree: 100%
 
 ---
@@ -32,11 +32,11 @@ ht-degree: 100%
 * ユーザーは、特定のフォルダー階層に対するフォルダーの「[!UICONTROL プロパティ]」ユーザーインターフェイスで、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を自動開始するように設定できます。
    * フォルダーの「[!UICONTROL プロパティ]」ユーザーインターフェイスがシンプルになり、新しい「[!UICONTROL アセット処理]」タブに、メタデータプロファイル、処理プロファイル、新しく自動開始ワークフロー設定が追加されました。
 
-      ![処理プロファイルは、フォルダーに簡単に適用でき、フォルダーにアップロードされたすべてのアセットは、これらのプロファイルを使用して処理されます。](/help/assets/assets/asset-processing-folder-properties.png)
+     ![処理プロファイルは、フォルダーに簡単に適用でき、フォルダーにアップロードされたすべてのアセットは、これらのプロファイルを使用して処理されます。](/help/assets/assets/asset-processing-folder-properties.png)
 
    * アセットの再処理オプションを使用すると、特定の処理プロファイルを選択して、サブフォルダー内のユーザーが選択したアセットを再処理できます。
 
-      ![特定の処理プロファイルを使用して、選択したアセットを再処理する](/help/assets/assets/fpo-existing-asset-reprocess.gif)
+     ![特定の処理プロファイルを使用して、選択したアセットを再処理する](/help/assets/assets/fpo-existing-asset-reprocess.gif)
 
    * [!DNL Dynamic Media]：アセットをセキュリティで保護されたプレビューのみで自動公開するように、選択的公開の設定を追加。また、パブリックドメインの配信用に DMS7 に公開することなく、アセットを Experience Manager に明示的に公開できます。
 
@@ -51,7 +51,6 @@ ht-degree: 100%
 >* [Brand Portal の設定](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html?lang=ja)
 >* [Asset Link を使用するための Experience Manager の設定](https://helpx.adobe.com/jp/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [アセットマイクロサービスを使用した、Experience Manager でのワークフロー作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=ja#post-processing-workflows)
-
 
 ## Cloud Manager の新機能 {#whats-new-cloud-manager}
 
