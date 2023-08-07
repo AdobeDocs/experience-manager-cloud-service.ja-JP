@@ -2,14 +2,19 @@
 title: 組み込みの  [!DNL AEM Forms] as a Cloud Service グループ
 description: すぐに使用できるユーザーグループと各グループに割り当てられた権限のリスト
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 78%
+source-wordcount: '175'
+ht-degree: 83%
 
 ---
 
 # グループと権限 {#aem-forms-on-osgi-groups-and-privileges}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=ja) |
+| AEM as a Cloud Service | この記事 |
 
 [グループを作成し](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ja#accessing)、そのグループにポリシーと[ユーザー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ja#accessing)を割り当てることができます。これらのポリシーは、グループに含まれるユーザーの権限を制御します。
 
@@ -106,7 +111,7 @@ ht-degree: 78%
 * [Cloud Service環境へのオンボーディング](/help/forms/setup-forms-cloud-service.md)
 * [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
 * [AEM 6.5 FormsからCloud Serviceへの移行](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-* [スタンドアロンのアダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
+* [スタンドアロンのアダプティブフォームを作成](/help/forms/creating-adaptive-form-core-components.md)
 * [アダプティブフォームをAEM Sitesページに追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 

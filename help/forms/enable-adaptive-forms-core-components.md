@@ -6,15 +6,20 @@ seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
+source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 11%
+source-wordcount: '1043'
+ht-degree: 12%
 
 ---
 
 
 # AEM Formsas a Cloud Serviceおよびローカル開発環境でのアダプティブFormsコアコンポーネントの有効化 {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) |
+| AEM as a Cloud Service | この記事 |
 
 AEM Forms as a Cloud Service のアダプティブフォームのコアコンポーネントを有効にすると、AEM Forms Cloud Service インスタンスを使用して、複数のチャネルへのコアコンポーネントベースのアダプティブフォームとヘッドレスフォームの作成、公開、配信を開始できます。 ヘッドレスアダプティブFormsを使用するには、アダプティブFormsコアコンポーネントが有効な環境が必要です。
 
@@ -22,7 +27,7 @@ AEM Forms as a Cloud Service のアダプティブフォームのコアコンポ
 
 * 新しいAEM Formsas a Cloud Serviceプログラムを作成する場合、 [アダプティブFormsコアコンポーネントとヘッドレスアダプティブFormsは、お使いの環境で既に有効になっています](#are-adaptive-forms-core-components-enabled-for-my-environment).
 
-* 古いFormsas a Cloud Serviceプログラム（コアコンポーネントを使用）がある場合 [無効](#enable-components)、 [アダプティブFormsコアコンポーネントの依存関係を追加する](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) をAEMas a Cloud Serviceリポジトリに追加し、リポジトリをCloud Service環境にデプロイして、ヘッドレスアダプティブFormsを有効にします。
+* 古いFormsas a Cloud Serviceプログラム（コアコンポーネントを使用）がある場合 [無効](#enable-components)を使用する場合、 [アダプティブFormsコアコンポーネントの依存関係を追加する](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) をAEMas a Cloud Serviceリポジトリに追加し、リポジトリをCloud Service環境にデプロイして、ヘッドレスアダプティブFormsを有効にします。
 
 * 既存のCloud Service環境で [コアコンポーネントベースのアダプティブFormsの作成](creating-adaptive-form-core-components.md)、アダプティブFormsコアコンポーネントとヘッドレスアダプティブFormsは、お使いの環境で既に有効になっており、コアコンポーネントベースのアダプティブFormsを、Adaptive Formsのヘッドレス表現を必要とするモバイル、Web、ネイティブアプリ、サービスなどのチャネルにヘッドレスフォームとして提供できます。
 
@@ -39,7 +44,7 @@ AEM Formsas a Cloud Service環境でアダプティブFormsコアコンポーネ
 
 1. にログインします。 [Cloud Manager](https://my.cloudmanager.adobe.com/) 組織とプログラムを選択します。
 
-1. 次に移動： **パイプライン** カードから **プログラムの概要** ページで、 **リポジトリ情報にアクセス** ボタンをクリックして、Git リポジトリにアクセスして管理します。 このページには、次の情報が含まれています。
+1. 次に移動： **パイプライン** お客様の **プログラムの概要** ページで、 **リポジトリ情報にアクセス** ボタンをクリックして、Git リポジトリにアクセスして管理します。 このページには、次の情報が含まれています。
 
    * Cloud Manager Git リポジトリの URL。
    * Git リポジトリ（ユーザー名とパスワード）Git ユーザー名の資格情報。
@@ -191,7 +196,7 @@ AEM Formsas a Cloud Service環境でアダプティブFormsコアコンポーネ
    >
    >  置換 `${appId}` を appId に置き換えます。
    >
-   >  次を検索： `${appId}`、 `[AEM Repository Folder]/all/pom.xml` ファイルを検索する `-packages/application/install` 用語 この `-packages/application/install` 用語があなたの `${appId}`. 例えば、次のコードは `myheadlessform` が `${appId}`.
+   >  次を検索： `${appId}`、 `[AEM Repository Folder]/all/pom.xml` ファイルを検索する `-packages/application/install` 用語 次の行の前のテキスト： `-packages/application/install` 用語があなたの `${appId}`. 例えば、次のコードは `myheadlessform` 次に該当 `${appId}`.
    >
    >   ```
    >             <embedded>
@@ -202,7 +207,7 @@ AEM Formsas a Cloud Service環境でアダプティブFormsコアコンポーネ
    >             </embedded>
    >   ```
 
-1. 内 `<dependencies>` セクション `[AEM Repository Folder]/all/pom.xml` ファイルを作成し、次の依存関係を追加して、ファイルを保存します。
+1. Adobe Analytics の `<dependencies>` のセクション `[AEM Repository Folder]/all/pom.xml` ファイルを作成し、次の依存関係を追加して、ファイルを保存します。
 
    ```XML
            <!-- Other existing dependencies -->
@@ -240,7 +245,7 @@ AEM Formsas a Cloud Service環境でアダプティブFormsコアコンポーネ
            </dependency>
    ```
 
-1. `[AEM Repository Folder]/ui.apps/pom.xml` を開いて編集します。を `af-core bundle` 依存関係を設定し、ファイルを保存します。
+1. `[AEM Repository Folder]/ui.apps/pom.xml` を開いて編集します。次を追加： `af-core bundle` 依存関係を設定し、ファイルを保存します。
 
    ```XML
        <dependency>
@@ -276,7 +281,7 @@ AEM Formsas a Cloud Service環境でアダプティブFormsコアコンポーネ
 
 更新したコードをローカル開発環境とCloud Service環境にデプロイして、両方の環境でコアコンポーネントを有効にします。
 
-* [更新されたコードをビルドしてローカル開発環境にデプロイする (AEMas a Cloud ServiceSDK)](#core-components-on-aem-forms-local-sdk)
+* [更新されたコードをビルドし、ローカル開発環境にデプロイする (AEMas a Cloud ServiceSDK)](#core-components-on-aem-forms-local-sdk)
 
 * [更新されたコードをビルドし、AEM Forms as a Cloud Service環境にデプロイする](#core-components-on-aem-forms-cs)
 
@@ -294,9 +299,9 @@ AEM Formsas a Cloud Service環境でアダプティブFormsコアコンポーネ
 
 
 
-   パッケージが正常にビルドされたら、次の場所で見つけることができます。 [Git リポジトリフォルダー]\all\target\[appid].all-[version].zip
+   パッケージが正常にビルドされたら、次の場所で確認できます。 [Git リポジトリフォルダー]\all\target\[appid].all-[version].zip
 
-1. 以下を使用： [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ja) をデプロイするには [AEM Archetype プロジェクトフォルダー]\all\target\[appid].all-[version]ローカル開発環境の.zip パッケージ。
+1. 以下を使用します。 [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ja) をデプロイするには [AEM Archetype プロジェクトフォルダー]\all\target\[appid].all-[version]ローカル開発環境の.zip パッケージ。
 
 
 ### 更新されたコードをビルドし、AEM Forms as a Cloud Service環境にデプロイする {#core-components-on-aem-forms-cs}
@@ -321,7 +326,7 @@ AEM Formsas a Cloud Service環境でアダプティブFormsコアコンポーネ
 
 ### コアコンポーネントとは {#core-components}
 
-この [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja) は、AEMの開発時間を短縮し、Web サイトのメンテナンスコストを削減するための、標準化された Web コンテンツ管理 (WCM) コンポーネントのセットです。
+The [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja) は、AEMの開発時間を短縮し、Web サイトのメンテナンスコストを削減するための、標準化された Web コンテンツ管理 (WCM) コンポーネントのセットです。
 
 ### コアコンポーネントの有効化に関しては、どのような機能が追加されますか？ {#core-components-capabilities}
 
@@ -334,9 +339,9 @@ AEM Formsas a Cloud Service環境でアダプティブFormsコアコンポーネ
 
 ### アダプティブFormsコアコンポーネントは、自分の環境で有効になっていますか？ {#enable-components}
 
-お使いの環境でアダプティブFormsコアコンポーネントが有効になっていることを確認するには：
+お使いの環境でアダプティブFormsコアコンポーネントが有効になっていることを確認するには、次の手順を実行します。
 
-1. [AEM Formsas a Cloud Serviceリポジトリのクローン](#1-clone-your-aem-forms-as-a-cloud-service-git-repository).
+1. [AEM Forms as a Cloud Serviceリポジトリのクローン](#1-clone-your-aem-forms-as-a-cloud-service-git-repository).
 
 1. を開きます。 `[AEM Repository Folder]/all/pom.xml` ファイルを作成します。AEM FormsCloud ServiceGit リポジトリの。
 
