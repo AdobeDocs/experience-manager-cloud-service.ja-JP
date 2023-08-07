@@ -1,10 +1,10 @@
 ---
 title: レプリケーション
-description: レプリケーションの配布とトラブルシューティング。
+description: AEM as a Cloud Serviceでの配布とレプリケーションのトラブルシューティングについて説明します。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: e545ff2bc3dc0c56cd6d3e1160b453551816f07f
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1342'
 ht-degree: 45%
 
 ---

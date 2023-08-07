@@ -1,12 +1,12 @@
 ---
 title: AEM as a Cloud Service でのキャッシュ
-description: AEM as a Cloud Service でのキャッシュ
+description: AEM as a Cloud Serviceでのキャッシュの基本について説明します。
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '2795'
-ht-degree: 51%
+source-wordcount: '2800'
+ht-degree: 50%
 
 ---
 
@@ -28,7 +28,7 @@ Dispatcher 設定にルールを適用して、デフォルトのキャッシュ
 Define DISABLE_DEFAULT_CACHING
 ```
 
-このメソッドは、例えば、デフォルトで年齢ヘッダーが 0 に設定されているので、ビジネスロジックで年齢ヘッダー（暦日に基づく値）を微調整する必要がある場合に便利です。 それは言った **デフォルトのキャッシュをオフにする場合は注意が必要です。**
+このメソッドは、例えば、デフォルトで年齢ヘッダーが 0 に設定されているので、ビジネスロジックで年齢ヘッダー（暦日に基づく値）を微調整する必要がある場合に便利です。 それは言った。 **デフォルトのキャッシュをオフにする場合は注意が必要です。**
 
 * AEM as a Cloud Service の SDK Dispatcher ツールを使用して、`global.vars` の `EXPIRATION_TIME` 変数を定義することにより、すべての HTML/Text コンテンツに対して上書きできます。
 * 次の Apache `mod_headers` ディレクティブを使用して、CDN とブラウザーキャッシュを個別に制御するなど、より細かいレベルでオーバーライドすることができます。
@@ -98,7 +98,7 @@ Define DISABLE_DEFAULT_CACHING
    </LocationMatch>
 ```
 
-Dispatcher レイヤーでキャッシュヘッダーを変更する場合は、広くキャッシュしすぎないように注意してください。 「HTML/テキスト」の節のディスカッションを参照してください [上](#html-text). また、（キャッシュせずに）非公開にするアセットが、`LocationMatch` ディレクティブフィルターの一部ではないことも確認してください。
+Dispatcher レイヤーでキャッシュヘッダーを変更する場合は、広くキャッシュしすぎないように注意してください。 「HTML/テキスト」の節のディスカッションを参照してください。 [上](#html-text). また、（キャッシュせずに）非公開にするアセットが、`LocationMatch` ディレクティブフィルターの一部ではないことも確認してください。
 
 #### 新しいデフォルトのキャッシュ動作 {#new-caching-behavior}
 
@@ -137,7 +137,7 @@ AEMレイヤーは、デフォルトでは BLOB コンテンツをキャッシ�
    * 次の行を削除またはコメントアウトします。 `Header append Vary User-Agent env=!dont-vary` すべての vhost ファイルから（読み取り専用の default.vhost を除く）
 * ブラウザーのキャッシュとは別に、CDN キャッシュを制御するために `Surrogate-Control` ヘッダーを使用します。
 * [`stale-while-revalidate`](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate) および [`stale-if-error`](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Cache-Control#stale-if-error) ディレクティブを適用することで、バックグラウンドでの更新を可能にし、キャッシュミスを回避して、ユーザーにとって高速で最新のコンテンツを維持することを検討してください。
-   * これらのディレクティブを適用する方法は多数ありますが、30 分を追加すると `stale-while-revalidate` すべてのキャッシュ制御ヘッダーへの接続は、出発点として適切です。
+   * これらのディレクティブを適用する方法は多数ありますが、30 分を追加すると、 `stale-while-revalidate` すべてのキャッシュ制御ヘッダーへの接続は、出発点として適切です。
 * 様々なコンテンツタイプの例が次に示されています。これらは、独自のキャッシュルールを設定する際にガイドとして使用できます。具体的な設定と要件を慎重に検討し、テストします。
 
    * 12 時間、および 12 時間後にバックグラウンド更新で可変クライアントライブラリリソースをキャッシュします。
@@ -223,7 +223,7 @@ Web サイトの URL には、キャンペーンの成功をトラックする�
 以前のバージョンの AEM と同様に、ページを公開または非公開にすると、Dispatcher のキャッシュからコンテンツがクリアされます。キャッシュに問題があると疑われる場合は、該当するページを再度公開し、`ServerAlias` localhost に一致する仮想ホスト（Dispatcher キャッシュの無効化に必要）が使用可能であることを確認する必要があります。
 
 >[!NOTE]
->Dispatcher を適切に無効化するには、「127.0.0.1」、「localhost」、「.local」、「.adobeaemcloud.com」および「.adobeaemcloud.net」からの要求がすべて vhost 設定で一致し、処理されて、要求を処理できるようにする必要があります。 このタスクは、参照内のパターンに従った包括的な vhost 設定で「*」をグローバルに一致させることで実行できます [AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). または、前述のリストがいずれかの vhost にキャッチされるようにすることもできます。
+>Dispatcher を適切に無効化するには、「127.0.0.1」、「localhost」、「.local」、「.adobeaemcloud.com」および「.adobeaemcloud.net」からの要求がすべて vhost 設定で一致し、処理されて、要求を処理できるようにする必要があります。 このタスクは、参照内のパターンに従った包括的な vhost 設定で「*」をグローバルに一致させることで実行できます。 [AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). または、前述のリストがいずれかの vhost にキャッチされるようにすることもできます。
 
 パブリッシュインスタンスは、オーサーから新しいバージョンのページまたはアセットを受け取ると、フラッシュエージェントを使用して Dispatcher 上の該当するパスを無効にします。更新されたパスは、親と共に、Dispatcher キャッシュから削除されます ( このレベルは、 [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#invalidating-files-by-folder-level)) をクリックします。
 
@@ -456,7 +456,7 @@ The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushe
 
 ページは、HTML、JavaScript、CSS、画像で構成されます。 お客様は、 [クライアント側ライブラリ (clientlibs) フレームワーク](/help/implementing/developing/introduction/clientlibs.md) を使用して、JavaScript および CSS リソースをHTMLページに読み込み、JS ライブラリ間の依存関係を考慮します。
 
-clientlibs フレームワークは、自動的にバージョン管理を行います。 つまり、開発者はソース管理で JS ライブラリに対する変更をチェックインでき、顧客がリリースをプッシュすると最新バージョンが利用可能になります。 このワークフローがない場合、開発者は新しいバージョンのライブラリを参照してHTMLを手動で変更する必要があります。同じライブラリが多数のHTMLテンプレートを共有する場合は特に負担がかかります。
+clientlibs フレームワークは、自動的にバージョン管理をおこないます。 つまり、開発者はソース管理で JS ライブラリに対する変更をチェックインでき、顧客がリリースをプッシュすると最新バージョンが利用可能になります。 このワークフローがない場合、開発者は新しいバージョンのライブラリを参照してHTMLを手動で変更する必要があります。同じライブラリが多数のHTMLテンプレートを共有する場合は特に負担がかかります。
 
 新しいバージョンのライブラリが実稼動環境にリリースされると、参照する HTML ページは、更新されたライブラリバージョンへの新しいリンクで更新されます。ブラウザーのキャッシュが特定のHTMLページに対して期限切れになった後は、古いライブラリがブラウザーのキャッシュから読み込まれる心配はありません。 これは、(AEMから ) 更新されたページが、必ず新しいバージョンのライブラリを参照するようになったからです。 更新されたHTMLページには、最新のライブラリバージョンがすべて含まれています。
 
@@ -482,7 +482,7 @@ HTML ページにインクルードされるデフォルトの clientlib は、�
 
 1. OSGi Configuration manager `<host>/system/console/configMgr` へ移動する。
 1. Adobe Granite HTML Library Manager の OSGi Config を探します。
-   * 「厳密なバージョン管理」を有効にするには、チェックボックスをオンにします
-   * ラベルの付いたフィールド内 **長期のクライアント側キャッシュキー**、の値を/と入力します。*;hash」を入力します。
+   * 「厳密なバージョン管理」を有効にするには、チェックボックスをオンにします。
+   * ラベルの付いたフィールド内 **長期間のクライアント側キャッシュキー**、の値を/と入力します。*;hash」を入力します。
 1. 変更内容を保存します。AEM as a Cloud Serviceは、開発、ステージ、実稼動環境でこの設定を自動的に有効にするので、この設定をソース管理に保存する必要はありません。
 1. クライアントライブラリのコンテンツが変更されるたびに、新しいハッシュキーが生成され、HTML参照が更新されます。

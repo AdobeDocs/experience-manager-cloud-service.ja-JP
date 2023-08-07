@@ -1,11 +1,11 @@
 ---
 title: インデックスコンバーター
-description: インデックスコンバーター
+description: AEM as a Cloud Serviceへの移行に備えて、インデックス定義を移行する方法を説明します。
 exl-id: ac02ca41-eb35-4f24-bf17-d00ce318423d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 61%
+source-wordcount: '290'
+ht-degree: 57%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 61%
 * `under /apps`（任意のカスタムコンテンツパッケージを使用）
 * `/oak:index` パスの直下
 
-If [Oak インデックスの確認](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) を使用していた場合は、定義がAEM as a Cloud Serviceでサポートされていないことを確認します。 そのため、まず Oak インデックス定義に変換し、次に、次のガイドラインに従って、AEMas a Cloud Serviceと互換性のある Custom Oak Index Definitions に移行する必要があります。
+次の場合 [Oak インデックスの確認](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) を使用していた場合は、定義がAEM as a Cloud Serviceでサポートされていないことを確認します。 そのため、まず Oak インデックス定義に変換し、次に、次のガイドラインに従って、AEMas a Cloud Serviceと互換性のある Custom Oak Index Definitions に移行する必要があります。
 
 * ignore プロパティが `true` に設定されている場合は、Ensure 定義を無視するかスキップします。
 * `jcr:primaryType` を `oak:QueryIndexDefinition` に更新します。
@@ -34,7 +34,7 @@ If [Oak インデックスの確認](https://adobe-consulting-services.github.io
 
 ## インデックスコンバーターの使用 {#using-index-converter}
 
-* Adobe I/OCLI:インデックスコンバーターは、 `aio-cli-plugin-aem-cloud-service-migration` (Adobe I/OCLI 用のAEMas a Cloud Serviceコードリファクタリングプラグイン )。
+* Adobe I/O別 CLI : `aio-cli-plugin-aem-cloud-service-migration` (Adobe I/OCLI 用のAEMas a Cloud Serviceコードリファクタリングプラグイン )。
 
   詳しくは、 **[Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** プラグインをインストールして使用する方法を説明します。
 

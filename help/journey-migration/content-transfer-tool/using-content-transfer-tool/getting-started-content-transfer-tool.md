@@ -1,11 +1,11 @@
 ---
 title: コンテンツ転送ツールの基本を学ぶ
-description: コンテンツ転送ツールの基本を学ぶ
+description: コンテンツ転送ツールの使用を開始する方法を説明します。
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '1436'
-ht-degree: 84%
+source-wordcount: '1439'
+ht-degree: 83%
 
 ---
 
@@ -96,7 +96,7 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 
    >[!NOTE]
    >
-   >名前は、AEMノードと同じ規則に従う必要があるので、次の文字を含めることはできません。. / : [ ] | *
+   >名前は、AEMノードと同じ規則に従う必要があるので、次の文字を含めることはできません。 . / : [ ] | *
 
 1. これで、リスト表示に移行リストが表示されます。3 つのドット記号（**...**）をクリックしてドロップダウンを開き、「**抽出キーをコピー**」をクリックします。このキーは、抽出段階で必要になります。この抽出キーをコピーします。
 
@@ -190,7 +190,7 @@ Cloud Acceleration Manager で作成した移行セットを入力するには�
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
-1. この **サイズを確認** 結果は、ディスク容量が不足しているか、移行セットが製品の制限を超えているか、または両方を超えているか、 **警告** ステータスが表示されます。
+1. 次の場合、 **サイズを確認** 結果は、ディスク容量が不足しているか、移行セットが製品の制限を超えているか、または両方を超えているか、 **警告** ステータスが表示されます。
 
 <!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    

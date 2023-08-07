@@ -1,6 +1,6 @@
 ---
 title: App Builder のセキュリティ
-description: App Builder アプリケーションのセキュリティについて説明します。
+description: AEM as a Cloud Serviceの App Builder アプリケーションセキュリティについて説明します。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -9,10 +9,10 @@ level: Beginner
 kt: 9460
 thumbnail: 339249.jpg
 exl-id: f0f3f254-0efa-4fab-b2fd-96571bbb719f
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '24'
-ht-degree: 100%
+source-wordcount: '30'
+ht-degree: 60%
 
 ---
 

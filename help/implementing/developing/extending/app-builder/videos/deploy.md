@@ -1,6 +1,6 @@
 ---
 title: App Builder アプリケーションのデプロイ
-description: App Builder アプリケーションをデプロイする方法を学習します。
+description: AEM as a Cloud Service用の App Builder アプリケーションをデプロイする方法を説明します。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -9,10 +9,10 @@ level: Beginner
 kt: 9461
 thumbnail: 339250.jpg
 exl-id: 54ad1cbc-a8b5-44b2-b12c-24c530a5a929
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '36'
-ht-degree: 100%
+source-wordcount: '42'
+ht-degree: 69%
 
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: Content Transformer の使用
-description: Content Transformer の使用
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+description: AEM as a Cloud Serviceへの移行に備えて、コンテンツ構造を変換する方法を説明します。
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '645'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 * 実稼動環境で Content Transformer を実行できますが、実稼動環境のクローンで Content Transformer を実行することをお勧めします。 さらに重要なのは、BPA と CT が同じ環境で実行されていることを確認する必要があることです。
 * コンテンツ変換サービスを実行する環境の管理者である必要があります。
 * ソースコンテンツを変更できる操作（移動/削除/名前変更）は、デフォルトで、以下にソースパスのバックアップパッケージを作成します。 `/etc/packages/content-transformation` 変換前に 各操作ダイアログには、バックアップパッケージの作成を無効または有効にするオプションがありますが、常に有効パッケージの作成を選択するようにすることを強くお勧めします。
-* CT の各ページは、最大 50 個の結果をリストするように構成されているので、一度に最大 50 個の結果を変換できます。 これは、UI にタイムリーな応答を提供するためにおこなわれます。
+* コンテンツ変換サービスの各ページは、最大 50 個の結果をリストするように設定されているので、一度に最大 50 個の結果を変換できます。 これは、UI にタイムリーな応答を提供するためにおこなわれます。
 
 ## 入手方法 {#availability-ct}
 
@@ -29,13 +29,13 @@ Content Transformer は、 [コンテンツ転送ツール](/help/journey-migrat
 
 ## Content Transformer を開く {#opening-ct}
 
-1. ソースAEMインスタンスに管理者としてログインし、開始ページに移動します。https://host:port/aem/start.html.
+1. ソースAEMインスタンスに管理者としてログインし、開始ページ ( https://host:port/aem/start.html ) に移動します。
 1. ツール/操作/コンテンツ移行に移動します。
 
    ![画像](/help/journey-migration/content-transformer/assets/ct-1.png)
 
    >[!NOTE]
-   > BPA レポートを以前に実行したことを確認し、URL http://host:port/apps/best-practices-analyzer/content/BestPracticesReport.htmlで検証してください
+   > BPA レポートを以前に実行したことを確認し、URL http://host:port/apps/best-practices-analyzer/content/BestPracticesReport.htmlで検証してください。
 
 1. タイトル付きのカードをクリックします。 **BPA レポートのコンテンツ変換サービス**
 
@@ -60,9 +60,9 @@ Content Transformer は、 [コンテンツ転送ツール](/help/journey-migrat
    ![画像](/help/journey-migration/content-transformer/assets/ct-6.png)
 
    >[!NOTE]
-   > ソースコンテンツ (`move`/`remove`/`rename`) は、デフォルトで、以下のソースパスのバックアップパッケージを作成します。 `/etc/packages/content-transformation` 変換前に 各操作ダイアログには、バックアップパッケージの作成を無効または有効にするオプションがありますが、常に有効パッケージの作成を選択するようにすることを強くお勧めします。
+   > ソースコンテンツを変更できる任意の操作 (`move`/`remove`/`rename`) は、デフォルトで、以下のソースパスのバックアップパッケージを作成します。 `/etc/packages/content-transformation` 変換前に 各操作ダイアログには、バックアップパッケージの作成を無効または有効にするオプションがありますが、常に有効パッケージの作成を選択するようにすることを強くお勧めします。
 
-1. パスの移動操作用に作成されたバックアップパッケージの例を以下に示します。「インストール」をクリックして、ソースパスを戻します。 インストールによって元の場所に戻されるのはソースパスのみであり、変換中に移動されたパスは削除されないことに注意してください。 移動した場所のパスを削除するには、 **パスを追加** 場所を追加するボタン ( 例： `/etc/packages/content-transformation/paths`)、場所を選択して、 **削除**.
+1. パスの移動操作用に作成されたバックアップパッケージの例を以下に示します。「インストール」をクリックして、ソースパスを戻します。 インストールによって元の場所に戻されるのはソースパスのみであり、変換中に移動されたパスは削除されないことに注意してください。 移動した場所のパスを削除するには、 **パスを追加** 場所を追加するボタン（例： ） `/etc/packages/content-transformation/paths`)、場所を選択して、 **削除**.
 
    >[!CAUTION]
    > 削除しない `/etc/packages/content-transformation` これは、バックアップパッケージが存在する場所です。 これらのパッケージが不要になった場合にのみ、この場所を削除してリポジトリのサイズを小さくできます。

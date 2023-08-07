@@ -1,9 +1,9 @@
 ---
 title: Content Transformer の概要
-description: Content Transformer の概要
-source-git-commit: 55eedd342f048e19bad5c6fbfdd16a468ff1f4f9
+description: コンテンツトランスフォーマーを使用して BPA で報告されるコンテンツ関連の問題を検出および修正する方法について説明します。
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '393'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ Content Transformer は、次に該当する問題の解決に役立ちます [B
 | パターンコード | 疑いのタイプ/サブタイプ | コンテンツをAEM as a Cloud Serviceに移行する前の潜在的な修正 |
 |--------------|--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | ACV | missing.jcrcontent <br> missing.original.rendition <br> metadata.descendants.violation | これらのアセットを別の場所に移動するか、削除して、AEM as a Cloud Serviceに移行されないようにします。 |
-| CAV | content.area.violation | パスを一時的に移動 `/etc/packages/content-transformation/paths` AEM as a Cloud Serviceに移行されないようにするために使用します。 |
+| CAV | content.area.violation | 一時的に次の場所にパスを移動 `/etc/packages/content-transformation/paths` AEM as a Cloud Serviceに移行されないようにするために使用します。 |
 | DOPI | deprecated.ordered.index | 非推奨のインデックスを削除します。 |
 | OAUI | non.migrated.oauth.users | これらのユーザーを削除して、AEM as a Cloud Serviceに移行されないようにします。 |
 | PCX | page.complexity.medium <br> page.complexity.high | ページ/子を削除するか、別の場所に移動して、AEM as a Cloud Serviceに移行されないようにします。 |
@@ -31,6 +31,6 @@ Content Transformer は、次に該当する問題の解決に役立ちます [B
 
 Content Transformer には次のような利点があります。
 
-* フェイルセーフ：パッケージは、問題を修正するためにリポジトリを変更するたびに、Content Transformer によって作成されます。 必要に応じて、パッケージをインストールして前の状態に戻すことができます。
-* 使いやすさ：Content Transformer は、コンテンツ転送ツールに統合され、直感的なシンプルなユーザーインターフェイスを備えています。
-* 時間を節約：1 つのパターンカテゴリに該当するコンテンツの問題が多数ある場合、Content Transformer を使用して、数回クリックするだけですべての問題を解決できます。
+* フェイルセーフ：問題を修正するためにリポジトリを変更するたびに、Content Transformer によってパッケージが作成されます。 必要に応じて、パッケージをインストールして前の状態に戻すことができます。
+* 使いやすさ： Content Transformer は、コンテンツ転送ツールに統合され、直感的なシンプルなユーザーインターフェイスを備えています。
+* 時間を節約：1 つのパターンカテゴリに該当するコンテンツの問題が多数ある場合、Content Transformer を使用して数回クリックするだけですべての問題を解決できます。

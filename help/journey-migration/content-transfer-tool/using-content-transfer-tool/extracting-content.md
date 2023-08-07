@@ -1,11 +1,11 @@
 ---
 title: ソースからのコンテンツの抽出
-description: ソースからのコンテンツの抽出
+description: 後でソースAEMインスタンスに転送するために、コンテンツをソースAEMインスタンスから抽出する方法を説明します。
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 86%
+source-wordcount: '718'
+ht-degree: 83%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 86%
 コンテンツ転送ツールで移行セットを抽出するには、次の手順に従います。
 
 >[!NOTE]
->Amazon S3、Azure データストア、ファイルデータストアのいずれかをデータストアのタイプとして使用する場合は、オプションの事前コピーステップを実行して、抽出段階を大幅に迅速化できます。事前コピーステップは、1回目の完全抽出と取り込みに最も効果的です。詳しくは、 [大きなコンテンツリポジトリの処理](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) を参照してください。
+>Amazon S3、Azure データストア、ファイルデータストアのいずれかをデータストアのタイプとして使用する場合は、オプションの事前コピーステップを実行して、抽出段階を大幅に迅速化できます。事前コピーステップは、1回目の完全抽出と取り込みに最も効果的です。詳しくは、 [大きなコンテンツリポジトリーの処理](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) を参照してください。
 
 1. **コンテンツ転送**&#x200B;ウィザードで移行セットを選択し、「**抽出**」をクリックして抽出を開始します。
 
