@@ -3,10 +3,10 @@ title: AEM バージョンのアップデート
 description: AEM as a Cloud Serviceで継続的な統合および配信 (CI/CD) を使用して、プロジェクトを最新バージョンに保つ方法を説明します。
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: dd567c484d71e25de1808f784c455cfb9b124fbf
+source-git-commit: 635b4adeab8d93b7c7335453b04d8b78ef3a0496
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 35%
+source-wordcount: '800'
+ht-degree: 29%
 
 ---
 
@@ -56,6 +56,37 @@ AEM のアップデートは、複数のステップを含む集中的かつ完�
 >[!NOTE]
 >
 >カスタムコードが実稼動環境ではなくステージングにプッシュされた場合、次回の AEM アップデートでは、それらの変更が削除され、実稼動環境に対して正常に行われた最後の顧客リリースの git タグが反映されます。したがって、ステージングでのみ使用可能なカスタムコードを再度デプロイする必要があります。
+
+## ベストプラクティス {#best-practices}
+
+* 
+   * **ステージ環境の使用状況**
+   * 長い QA/UAT サイクルに対しては、異なる環境（ステージではなく）を使用します。
+   * ステージでサニティテストが完了したら、実稼動環境での検証に移行します。
+
+* 
+   * **実稼動パイプライン**
+   * 実稼動環境にデプロイする前に一時停止.
+   * ステージのデプロイ後にパイプラインをキャンセルすると、コードが「スローウェイ」で、実稼動用の有効な候補ではないことが示されます。を参照してください。 [実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+
+* 
+   * **実稼動以外のパイプライン**
+* 設定 [実稼動以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+* 
+   * 実稼動パイプラインの障害に対する配信速度/頻度を高速化します。  製品機能テスト、カスタム機能テスト、カスタム UI テストを有効にして、実稼動以外のパイプラインの問題を特定します。
+
+* 
+   * **コンテンツのコピー**
+   * 用途 [コンテンツのコピー](/help/implementing/developing/tools/content-copy.md) 類似のコンテンツセットを実稼動以外の環境に移動する場合。
+
+* 
+   * **自動機能テスト**
+* 重要な機能をテストするために、パイプラインに自動テストを含めます。
+* [顧客機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) および [カスタム UI テスト](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) がブロックされている場合に、AEMのリリースに失敗してもロールアウトされません。
+
+## 回帰 {#regression}
+
+回帰に関する問題が発生した場合は、Admin Console からサポートケースを発生させてください。  問題が致命的で実稼動に影響を与えている場合は、P1 を発生させる必要があります。  回帰の問題を再現するために必要なすべての詳細を指定します。
 
 ## 複合ノードストア {#composite-node-store}
 
