@@ -4,10 +4,10 @@ description: テーマとコアコンポーネントを使用して、アダプ�
 seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
 keywords: 新しいテーマの作成、テーマのカスタマイズ、新しいテーマのアップロード、フォームでのテーマの使用、フロントエンドパイプラインでのテーマのカスタマイズ
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 1cec6e01e72cb286949f64749e2386a2b652920e
+source-git-commit: fc0ff8cff8c616bc5576d834883aa0fe38ef593e
 workflow-type: tm+mt
-source-wordcount: '2697'
-ht-degree: 17%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -417,6 +417,7 @@ The `variable.scss` ファイルには、テーマのグローバル変数が含
 * [画面サイズやデバイスタイプに応じてフォームのレイアウトを設定する](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [アダプティブForms（コアコンポーネント）用のレコードのドキュメントを生成する](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [繰り返し可能なセクションを使用したアダプティブFormsの作成](/help/forms/create-forms-repeatable-sections.md)
+* [サンプルのテーマテンプレートとフォームデータモデル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
 ## 関連記事 {#related-article}
