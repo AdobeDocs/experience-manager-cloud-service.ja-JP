@@ -1,13 +1,13 @@
 ---
 title: Dynamic Media のトラブルシューティング
-description: Dynamic Media 使用時のトラブルシューティングのヒント
+description: Dynamic Mediaで画像、セット、ビューアを操作する際に試すことができるトラブルシューティングのヒントについて説明します。
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '1135'
-ht-degree: 76%
+source-wordcount: '1146'
+ht-degree: 74%
 
 ---
 
@@ -117,7 +117,7 @@ CRXDE Lite で次のアセットプロパティを見直すと、Adobe Experienc
    <td>
     <ul>
      <li>フォルダーにビデオプロファイルが割り当てられていることを確認します（サポートされていないファイル形式の場合）。 サポートされていない場合は、画像のみが表示されます。</li>
-     <li>AVS セットを生成するには、ビデオプロファイルに複数のエンコーディングプリセットを含める必要があります ( 単一のエンコーディングは MP4 ファイルのビデオコンテンツとして扱われます。サポートされていないファイルの場合、は未処理と同じように扱われます )。</li>
+     <li>AVS セットを生成するには、ビデオプロファイルに複数のエンコーディングプリセットを含める必要があります（単一のエンコーディングは MP4 ファイルのビデオコンテンツとして扱われ、サポートされていないファイルの場合は未処理として扱われます）。</li>
      <li>メタデータで <code>dam:scene7File</code> の <code>dam:scene7FileAvs</code> を確認して、ビデオの処理が終了したことを確かめます。</li>
     </ul> </td>
    <td>
@@ -204,8 +204,7 @@ CRXDE Lite で以下を行います。
    * `"is/content"`
    * `dam:scene7Folder`
    * `<asset-name>`
-例： 
-`https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+例： `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
 
 **解決策**
 
