@@ -2,10 +2,10 @@
 title: 属性とタイプ
 description: ユニバーサルエディターに必要なデータ属性とデータ型について説明します。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
+source-git-commit: 9df57ce958bb8f7f9406b9fe342c9d2a4ccb0ae0
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 82%
+source-wordcount: '681'
+ht-degree: 77%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 82%
 | `itemprop` | リソースの属性。[AEM のユニバーサルエディターを使用した概要ドキュメントページのインストルメント](getting-started.md#instrument-thepage)の節を参照してください。 |
 | `itemtype` | 編集可能な項目のタイプ（テキスト、画像、参照など） |
 | `data-editor-itemfilter` | どの参照が使用できるかをを定義します |
-| `data-editor-itemlabel` | エディターに表示される選択可能な項目のカスタムラベルを定義します <br>場合 `itemmodel` が設定されている場合、ラベルはモデルの |
+| `data-editor-itemlabel` | エディターに表示される選択可能な項目のカスタムラベルを定義します <br>ケース `itemmodel` が設定されている場合、ラベルはモデルの |
 | `data-editor-itemmodel` | プロパティパネルでフォームベースの編集に使用するモデルを定義します |
 | `data-editor-behavior` | インストルメンテーションの動作を定義します。例えば、スタンドアロンのテキストや画像などは、コンポーネントを模倣して、移動や削除を可能にすることもできます。 |
 
@@ -53,7 +53,8 @@ ht-degree: 82%
 
 | `data-editor-behavior` | 説明 |
 |---|---|
-| `component` | スタンドアロンのテキスト、リッチテキスト、メディアにコンポーネントを模倣させて、ページ上で移動や削除できるようにするために使用できます。 |
+| `component` | スタンドアロンのテキスト、リッチテキスト、メディア模倣コンポーネントを許可して、ページ上でも移動および削除できるようにするために使用します。 |
+| `container` | コンテナを独自のコンポーネントとして扱い、ページ上で移動および削除できるようにするために使用します。 |
 
 ## その他のリソース {#additional-resources}
 
