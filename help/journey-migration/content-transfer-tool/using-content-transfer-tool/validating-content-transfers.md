@@ -2,10 +2,10 @@
 title: コンテンツ転送の検証
 description: コンテンツ転送ツールを使用してコンテンツ転送を検証します
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 69%
+source-wordcount: '1077'
+ht-degree: 68%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 69%
 
 ソース AEM 環境で移行の検証を有効にしたうえで、抽出を開始します。
 
-If **抽出時にステージングコンテナを上書き** が有効な場合、抽出に関係するすべてのノードが抽出パスダイジェストに記録されます。 この設定を使用する場合は、取り込み時に「**取り込み前にクラウドインスタンス上の既存のコンテンツを消去**」設定を有効にすることが重要です。そうしないと、取り込みダイジェストに見つからないノードがあるように見える場合があります。これらは、以前の取り込み時からターゲットに既に存在するノードです。
+次の場合 **抽出時にステージングコンテナを上書き** が有効な場合、抽出に関係するすべてのノードが抽出パスダイジェストに記録されます。 この設定を使用する場合は、取り込み時に「**取り込み前にクラウドインスタンス上の既存のコンテンツを消去**」設定を有効にすることが重要です。そうしないと、取り込みダイジェストに見つからないノードがあるように見える場合があります。これらは、以前の取り込み時からターゲットに既に存在するノードです。
 
 この例については、次の例を参照してください。
 
@@ -134,11 +134,11 @@ Migration validation took 0 minutes
 
 ## プリンシパルの移行を検証する方法 {#how-to-validate-principal-migration}
 
-詳しくは、 [ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) プリンシパルマイグレーションの詳細と必要な理由を読み取る
+詳しくは、 [ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) プリンシパルマイグレーションの詳細と必要な理由を読み取る。
 
 抽出と取り込みが正常に完了したら、主要な移行の概要とレポートを使用できます。 この情報を使用して、どのユーザーおよびグループが正常に移行されたかを検証し、おそらく一部が移行されなかった理由を判断できます。
 
-この情報を表示するには、Cloud Acceleration Manager に移動します。 プロジェクトカードをクリックし、コンテンツ転送カードをクリックします。に移動します。 **取り込みジョブ** 検証する取り込みを見つけます。 3 つのドット (**...**) をクリックし、 **プリンシパルの概要を表示** 」と入力します。
+この情報を表示するには、Cloud Acceleration Manager に移動します。 プロジェクトカードをクリックし、コンテンツ転送カードをクリックします。に移動します。 **取り込みジョブ** をクリックして、検証する取り込みを見つけます。 3 つのドット (**...**) をクリックし、 **プリンシパルの概要を表示** 」と入力します。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
@@ -163,3 +163,7 @@ Migration validation took 0 minutes
 ファイルを扱いやすいサイズにして、取り込みの完了後 2 時間以内に移行の検証結果を計算できるように、一部のパスは抽出ダイジェストと取り込みダイジェストから意図的に除外されています。
 
 現在ダイジェストから除外されているパスには、`cqdam.text.txt` レンディション、`/home` 内のノード、`/jcr:system` 内のノードなどがあります。
+
+### 閉じられたユーザーグループが機能していません {#validating-cugs}
+
+詳しくは、 [閉じられたユーザーグループの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) を参照してください。

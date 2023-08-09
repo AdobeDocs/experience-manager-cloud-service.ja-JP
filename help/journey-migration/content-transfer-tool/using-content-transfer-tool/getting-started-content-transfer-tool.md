@@ -2,7 +2,7 @@
 title: コンテンツ転送ツールの基本を学ぶ
 description: コンテンツ転送ツールの使用を開始する方法を説明します。
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 7de874f607c98501052ddb715c4af98f6c5d5324
 workflow-type: tm+mt
 source-wordcount: '1439'
 ht-degree: 83%
