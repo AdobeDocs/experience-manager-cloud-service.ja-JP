@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 910c0dd53fa1890ac61b2f14fc4380a0dfbca76c
+source-git-commit: 6d9ebc5410f6ffce0f0c7c7f4e9302b30e82b70b
 workflow-type: tm+mt
 source-wordcount: '2342'
 ht-degree: 74%
@@ -42,9 +42,9 @@ ht-degree: 74%
    * `blank` テンプレートは、すべての新しい AEM Forms as a Cloud Service プログラムに含まれています。
    * パッケージマネージャーを使用して参照パッケージをインストールし、AEM Forms as a Cloud Service プログラムに `blank` テンプレートを追加できます。
    * 最初から[新しいアダプティブフォームテンプレート（コアコンポーネント）を作成する](template-editor.md)こともできます。
-   * また、サンプルをデプロイすることもできます [テンプレート](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) を環境に追加します。 これらは、フォームの作成を迅速に開始するのに役立ちます。
+   * また、 [サンプルテンプレート](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) を環境に追加します。 これらは、フォームの作成を迅速に開始するのに役立ちます。
 
-* **アダプティブフォームのテーマ**：テーマには、コンポーネントとパネル向けのスタイル設定の詳細が含まれます。 スタイルには、背景カラー、ステートカラー、透明度、配置、サイズなどのプロパティが含まれます。テーマを適用すると、指定したスタイルが対応するコンポーネントに反映されます。`Canvas` テンプレートは、すべての新しい AEM Forms as a Cloud Service プログラムに含まれています。また、サンプルをデプロイすることもできます [テーマ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) を環境に追加します。 これらは、フォームのスタイル設定を開始し、ビジネス要件に応じてテーマを作成またはカスタマイズするための基本構造を提供します。
+* **アダプティブフォームのテーマ**：テーマには、コンポーネントとパネル向けのスタイル設定の詳細が含まれます。 スタイルには、背景カラー、ステートカラー、透明度、配置、サイズなどのプロパティが含まれます。テーマを適用すると、指定したスタイルが対応するコンポーネントに反映されます。`Canvas` テンプレートは、すべての新しい AEM Forms as a Cloud Service プログラムに含まれています。また、 [サンプルテーマ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) を環境に追加します。 これらは、フォームのスタイル設定を開始し、ビジネス要件に応じてテーマを作成またはカスタマイズするための基本構造を提供します。
 
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
     * You can also [create a new Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
