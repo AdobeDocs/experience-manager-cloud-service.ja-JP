@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ca3c4bae2e652d75190d68c76b1dd4e09239f16c
+source-git-commit: ec4445a63eee834c45ff95b7978497a615a1ed46
 workflow-type: tm+mt
-source-wordcount: '4230'
+source-wordcount: '4235'
 ht-degree: 96%
 
 ---
@@ -83,6 +83,7 @@ ht-degree: 96%
    + Cloud Manager のリリースノート {#cloud-manager}
       + [最新のリリースノート](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023年度 {#2023}
+         + [リリースノート（2023.7.0）](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
          + [リリースノート（2023.6.0）](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [リリースノート（2023.5.0）](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
          + [リリースノート（2023.4.0）](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
@@ -1001,6 +1002,7 @@ ht-degree: 96%
    + [AEM as a Cloud Service のインフラストラクチャとサービスモニタリング](/help/operations/monitoring.md)
    + [メンテナンスタスク](/help/operations/maintenance.md)
    + [バックアップと復元](/help/operations/backup.md)
+   + [セルフサービスの復元](/help/operations/restore.md)
    + [非同期ジョブ](/help/operations/asynchronous-jobs.md)
    + [汎用 Lucene インデックスの削除](/help/operations/removal-generic-lucene-index.md)
    + [クエリとインデックス作成のベストプラクティス](/help/operations/query-and-indexing-best-practices.md)
