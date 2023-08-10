@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
+source-git-commit: 4b63c00847fa21967560a59c3bcd931433a3a73f
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 82%
+source-wordcount: '1190'
+ht-degree: 83%
 
 ---
 
@@ -15,13 +15,16 @@ ht-degree: 82%
 
 ## リリース日 {#release-date}
 
-の最新バージョン 1.9.11 のリリース日 [!DNL Workfront for Experience Manager enhanced connector] は 2023 年 6 月 20 日です。
+の最新バージョン 1.9.12 のリリース日 [!DNL Workfront for Experience Manager enhanced connector] は 2023 年 8 月 10 日です。
 
 ## リリースのハイライト {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] の最新バージョンには、次のアップデートが含まれています。
 
-* 高度なネットワークを設定している場合、Adobe WorkfrontからAEM as a Cloud Serviceにコンテンツを送信する際に問題が発生します。
+* リンクされたフォルダに関連付けられたExperience Managerアカウントがないので、フォルダ内にリンクされたフォルダを作成できません。
+
+* アセット内のアセットのメタデータ更新中の競合状態。
+
 
 >[!NOTE]
 >
@@ -30,23 +33,28 @@ ht-degree: 82%
 
 >[!IMPORTANT]
 >
->Adobeが推奨 [最新バージョン 1.9.11 にアップグレード](/help/assets/workfront-connector-install.md) の [!DNL Workfront for Experience Manager enhanced connector].
+>Adobeが推奨 [最新バージョン 1.9.12 にアップグレード](/help/assets/workfront-connector-install.md) の [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 既知の問題 {#known-issues}
 
 * AEM 6.4 でプロジェクトにリンクしたフォルダーを設定する際に、Experience Manager は「**[!UICONTROL sub-folders]**」フィールドと「**[!UICONTROL Create linked folder in projects with portfolio]**」フィールドの値を保存しません。設定を保存すると、「**[!UICONTROL sub-folders]**」フィールドの値が **[!UICONTROL undefined]** に、「**[!UICONTROL Create linked folder in projects with portfolio]**」フィールドの値が **[!UICONTROL Default Portfolio]** に、それぞれ自動的に更新されます。
 
-* 従来の Workfront エクスペリエンスを使用している場合、「**[!UICONTROL 詳細]**」ドロップダウンリストで選択できる「**[!UICONTROL 送信先]**」オプションでは、Experience Manager 内のターゲット宛先を選択できません。この **[!UICONTROL 送信先]** オプションは **[!UICONTROL ドキュメントアクション]** 」ドロップダウンリストから選択できます。 この **[!UICONTROL 送信先]** オプションは、 **[!UICONTROL 詳細]** ドロップダウンリストと **[!UICONTROL ドキュメントアクション]** 新しいWorkfrontエクスペリエンスで使用可能なドロップダウンリスト。
+* 従来の Workfront エクスペリエンスを使用している場合、「**[!UICONTROL 詳細]**」ドロップダウンリストで選択できる「**[!UICONTROL 送信先]**」オプションでは、Experience Manager 内のターゲット宛先を選択できません。The **[!UICONTROL 送信先]** オプションは、 **[!UICONTROL ドキュメントアクション]** 」ドロップダウンリストから選択できます。 The **[!UICONTROL 送信先]** オプションは、 **[!UICONTROL その他]** ドロップダウンリストと **[!UICONTROL ドキュメントアクション]** 新しいWorkfrontエクスペリエンスで使用可能なドロップダウンリスト。
 
 ## 以前のリリース {#previous-releases}
 
+### 2023年6月リリース {#june-2023-release}
+
+* 高度なネットワークを設定している場合、Adobe WorkfrontからAEM as a Cloud Serviceにコンテンツを送信する際に問題が発生します。
+
+
 ### 2023年5月リリース {#may-2023-release}
 
-* Workfrontは、Experience ManagerからWorkfrontへの REST 呼び出しに基づいて、重複イベント購読に対して 409 HTTP 応答を返します。これにより、null ポインター例外が発生します。
+* Workfront は、Experience Manager から Workfront への REST 呼び出しに基づいて、重複するイベント購読に対して 409 HTTP 応答を返します。これにより、null ポインター例外が発生します。
 
-### 2023 年 4 月リリース {#april-2023-release}
+### 2023年4月リリース {#april-2023-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] 2023 年 4 月 11 日にリリースされたバージョン 1.9.9 には、次の更新が含まれています。
+2023年4月10日（PT）にリリースされた [!DNL Workfront for Experience Manager enhanced connector] バージョン 1.9.9 には、次のアップデートが含まれています。
 
 * リンクされたフォルダーの作成中に Workfront から最終変更日を受け取ると、Experience Manager で `DateTimeParseException` 例外が表示されます。
 
