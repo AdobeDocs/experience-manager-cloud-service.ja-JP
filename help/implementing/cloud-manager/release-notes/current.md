@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.8.0 �
 description: AEM as a Cloud Service の Cloud Manager 2023.8.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: d1640c14c796d7b7b6a7b236b38077e360559966
+source-git-commit: 99772a1a3faa454a9b07dd92c9e7622ddb37ce2d
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 27%
+source-wordcount: '540'
+ht-degree: 21%
 
 ---
 
@@ -28,7 +28,11 @@ AEM as a Cloud Service の Cloud Manager 2023.8.0 のリリース日は 2023年8
 * コンテンツセットを [コンテンツをコピー](/help/implementing/developing/tools/content-copy.md) [コンテキスト対応の設定](/help/implementing/developing/introduction/configurations.md) が UI のコンテンツセットで許可されるようになりました。
 * Cloud Manager UI でのエラーメッセージの理解しやすく表示を改善するための機能強化がおこなわれました。
 
-## セルフ・サービス・コンテンツ・リストアの早期導入プログラム {#early-adoption}
+## 早期採用プログラム {#early-adoption}
+
+初期の採用プログラムに参加し、今後の機能をテストする機会を得ることができます。
+
+### セルフ・サービス・コンテンツのリストア {#content-restore}
 
 [新しいセルフ・サービス・コンテンツ・リストア機能](/help/operations/restore.md) は、最大 7 日間のバックアップ復元を提供し、次の機能を備えた評価用に早期導入者が利用できるようになりました。
 
@@ -38,8 +42,16 @@ AEM as a Cloud Service の Cloud Manager 2023.8.0 のリリース日は 2023年8
 この新機能のテストとフィードバックの共有に関心がある場合は、に電子メールを送信してください。 `aemcs-restorefrombackup-adopter@adobe.com` Adobe IDに関連付けられた電子メールから。 注：
 
 * アーリーアダプタープログラムは開発環境のみに限定されます。
-* アーリーアダプタープログラムの提供は限られています。
+* この機能のアーリーアダプタープログラムの提供は制限されています。
 * この機能は、誤って削除されたコンテンツをリカバリするためのもので、災害復旧を目的としたものではありません。
+
+### エクスペリエンス監査ダッシュボード {#experience-audit-dashboard}
+
+[Cloud Manager Experience Audit ダッシュボード](/help/implementing/cloud-manager/experience-audit-dashboard.md) には、ページのパフォーマンススコアのトレンド表示と、改善に役立つインサイトおよびレコメンデーションが含まれています。 エクスペリエンス監査は、Cloud Manager 実稼動パイプラインのステップとして含まれます。
+
+このダッシュボードでは、Web アプリの品質を向上させるためのオープンソースの自動ツールであるGoogle Lighthouse を利用します。 これは、任意の Web ページに対して実行できます。公開または認証が必要です。 パフォーマンス、アクセシビリティ、プログレッシブ Web アプリ、SEO などに関する監査を実施しています。
+
+新しいダッシュボードのテストと運用に興味がある場合は、 次の宛先にメールを送信してください： `aem-lighthouse-pilot@adobe.com` Adobe IDに関連付けられたメールから、すぐに使い始めることができます。
 
 ## バグの修正 {#bug-fixes}
 
