@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 4c38285f9e75618ad181a85034212c7c24030e99
+source-git-commit: b2c67687e2f3577b44929777a31b6ce85a5f1877
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 18%
@@ -15,7 +15,7 @@ ht-degree: 18%
 
 ## リリース 13099 {#release-13099}
 
-2023 年 8 月 16 日に公開されたメンテナンスリリース13099の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース 12874 からのアップデートです。
+2023 年 8 月 15 日に公開されたメンテナンスリリース13099の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース 12874 からのアップデートです。
 
 2023.8.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。 詳しくは、 [Experience Managerリリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja) を参照してください。
 
