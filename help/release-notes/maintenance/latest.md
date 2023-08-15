@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b2c67687e2f3577b44929777a31b6ce85a5f1877
+source-git-commit: cb963a233b5afd4497704233db7f51c37563d0f9
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '620'
 ht-degree: 18%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 18%
 ### 機能強化 {#enhancements-13099}
 
 - SITES-13906: GraphQL - graphql-java 20.1 にアップグレードします。
-- SITES-8972: GraphQL — オプションを追加```label``` （「列挙」データタイプの JSON）。
+- SITES-8972: GraphQL - JSON で列挙データタイプのオプションラベルを追加します。
 - SITES-9689: GraphQL — コンテンツ参照データタイプ用のタイトルと説明を JSON で追加します。
 - SITES-13052：コンテンツフラグメント — コンテンツフラグメントをAdobe Targetに書き出す
 
