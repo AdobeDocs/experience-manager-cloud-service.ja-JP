@@ -4,10 +4,10 @@ description: Admin Console でユーザープロファイルを作成して重�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 6764fe48068325dfb7ed84cf7834c7eb5f25fb48
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 98%
+source-wordcount: '970'
+ht-degree: 97%
 
 ---
 
@@ -139,3 +139,9 @@ Federated ID が既に存在するユーザーを追加するには、次の手�
 1. 「**保存**」をクリックすると、追加したユーザーにお知らせメールが送信されます。
 
 招待されたユーザーに通知が届くようになります。 通知を受信するチームのユーザーに対して、これらの手順を繰り返します。
+
+## その他のリソース {#additional-resources}
+
+オンボーディングジャーニーのコンテンツの範囲を超えてさらに詳しく知りたい場合に役立つ、追加のオプションリソースを次に示します。
+
+* [アクションセンター](/help/operations/actions-center.md)  — アクションセンターを活用して、インシデントやその他の重要な情報に対して便利に対処します。
