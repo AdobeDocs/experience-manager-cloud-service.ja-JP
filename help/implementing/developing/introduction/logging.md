@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 向けのログ
 description: AEM as a Cloud Serviceのログを使用して、中央のログサービスのグローバルパラメーター、個々のサービス固有の設定、データログの要求方法を設定する方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 2fcc33cfb8b0be89b4b9f91d687dc21ba456000c
 workflow-type: tm+mt
-source-wordcount: '2375'
-ht-degree: 91%
+source-wordcount: '2683'
+ht-degree: 81%
 
 ---
 
@@ -17,6 +17,7 @@ AEM as a Cloud Service のログ設定とログレベルは、AEM プロジェ�
 
 * AEM ログ。AEM アプリケーションレベルでログを実行します。
 * Apache HTTPD Web サーバー／Dispatcher ログ。パブリッシュ層で Web サーバーと Dispatcher のログを実行します。
+* CDN ログは、その名前が示すように、CDN でログを実行します。 この機能は現在、アーリーアダプターが利用できます。アーリーアダプタープログラムに参加するには、メールをお送りください。 **aemcs-cdnlogs-adopter@adobe.com**（組織の名前や機能への関心に関するコンテキストを含む）
 
 ## AEM ログ {#aem-logging}
 
@@ -498,6 +499,57 @@ Define DISP_LOG_LEVEL debug
 >[!NOTE]
 >
 >AEM as a Cloud Service 環境の場合、デバッグの冗長レベルは最大になります。トレースログレベルはサポートされていないので、クラウド環境で作業する場合は設定しないでください。
+
+## CDN ログ {#cdn-log}
+
+>[!NOTE]
+>
+>この機能は、まだ一般には利用できません。 継続中のアーリーアダプタープログラムに参加するには、E メールを送信します。 **aemcs-cdnlogs-adopter@adobe.com**（組織の名前や機能への関心に関するコンテキストを含む）
+>
+
+AEM as a Cloud Serviceは CDN ログにアクセスできます。これは、キャッシュヒット率の最適化などの使用例に役立ちます。 CDN ログ形式はカスタマイズできず、情報、警告、エラーなどの様々なモードに設定する概念もありません。
+
+**例**
+
+```
+{
+"timestamp": "2023-05-26T09:20:01+0000",
+"ttfb": 19,
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"rid": "974e67f6",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"host": "example.com",
+"url": "/content/hello.png",
+"method": "GET",
+"res_ctype": "image/png",
+"cache": "PASS",
+"status": 200,
+"res_age": 0,
+"pop": "PAR"
+}
+```
+
+**ログ形式**
+
+CDN ログは、json 形式に準拠しているという点で、他のログとは異なります。
+
+| **フィールド名** | **説明** |
+|---|---|
+| *timestamp* | TLS 終了後にリクエストが開始した時刻 |
+| *tfb* | の略称 *最初のバイトまでの時間*. リクエストが開始してから、応答本文がストリーミングを開始するまでの時間間隔です。 |
+| *cli_ip* | クライアントの IP アドレス。 |
+| *cli_country* | 2 文字 [ISO 3166-1](https://ja.wikipedia.org/wiki/ISO_3166-1) 顧客の国コードの alpha-2。 |
+| *rid* | リクエストを一意に識別するために使用されるリクエストヘッダーの値。 |
+| *req_ua* | 特定の HTTP リクエストを実行するユーザーエージェントです。 |
+| *host* | リクエストが意図されている権限。 |
+| *URL* | クエリパラメーターを含む完全パス。 |
+| *メソッド* | 「GET」や「POST」など、クライアントによって送信される HTTP メソッド。 |
+| *res_ctype* | リソースの元のメディアタイプを示すために使用される Content-Type です。 |
+| *cache* | キャッシュの状態。 指定できる値は、HIT、MISS、PASS です。 |
+| *status* | HTTP ステータスコード（整数値）。 |
+| *res_age* | 応答が（すべてのノードで）キャッシュされた時間（秒）。 |
+| *ポップ* | CDN キャッシュサーバーのデータセンター。 |
 
 ## ログのアクセス方法 {#how-to-access-logs}
 
