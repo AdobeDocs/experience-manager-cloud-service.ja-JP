@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service で Dynamic Media を�
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3795'
-ht-degree: 98%
+source-wordcount: '3794'
+ht-degree: 97%
 
 ---
 
@@ -39,7 +39,6 @@ ht-degree: 98%
 >* [コンテンツの HTTP/2 配信](/help/assets/dynamic-media/http2faq.md)
 >* CDN レベルでの URL リダイレクト
 >* Akamai ChinaCDN（中国での最適な配信用）
-
 
 <!-- OBSOLETE CONTENT
 
@@ -85,7 +84,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    新しいパスワードは、**[!UICONTROL Dynamic Media 設定を作成]**&#x200B;ページの右上隅にある「**[!UICONTROL 保存]**」を選択したときに保存されます。
 
-   **[!UICONTROL パスワードを変更]**&#x200B;ダイアログボックスで「**[!UICONTROL キャンセル]**」を選択した場合でも、新規作成の Dynamic Media 設定を保存する際に、新しいパスワードを入力する必要があります。
+   次を選択した場合： **[!UICONTROL キャンセル]** （内） **[!UICONTROL パスワードを変更]** ダイアログボックスで、新しく作成したDynamic Media設定を保存する際には、新しいパスワードを入力する必要があります。
 
    [Dynamic Media のパスワードの変更](#change-dm-password)も参照してください。
 
@@ -178,7 +177,7 @@ Dynamic Media でのパスワードの有効期限は、現在のシステム日
 
    * 「**[!UICONTROL 新しいパスワード]**」フィールドに、新しいパスワードを入力します。
 
-      「**[!UICONTROL 現在のパスワード]**」フィールドは意図的に事前入力されており、操作時には非表示になっています。
+     「**[!UICONTROL 現在のパスワード]**」フィールドは意図的に事前入力されており、操作時には非表示になっています。
 
    * 「**[!UICONTROL パスワードを繰り返す]**」フィールドに新しいパスワードを再入力し、「**[!UICONTROL 完了]**」を選択します。
 
@@ -238,7 +237,6 @@ Dynamic Media Classic のユーザーインターフェイスを使用し、Dyna
 * [カラーマネジメントの設定](#configuring-color-management)
 * [サポートされている形式の MIME タイプの編集](#editing-mime-types-for-supported-formats)
 * [サポートされていない形式の MIME タイプの追加](#adding-mime-types-for-unsupported-formats)
-
 <!-- OBSOLETE BUT LEAVE FOR POSSIBLE FUTURE* [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
 
 #### Image Server 用の Dynamic Media 公開設定の指定 {#publishing-setup-for-image-server}
@@ -289,7 +287,7 @@ Dynamic Media カラーマネジメントを使用すると、アセットをカ
 
 Dynamic Media によって処理されるアセットタイプを定義して、高度なアセット処理パラメーターをカスタマイズできます。例えば、アセット処理パラメーターを指定して次のことができます。
 
-* Adobe PDFを eCatalog アセットに変換する
+* Adobe PDFを eCatalog アセットに変換する。
 * パーソナライズのためにAdobe Photoshopドキュメント (.PSD) をバナーテンプレートアセットに変換します。
 * Adobe Illustrator ファイル（.AI）または Adobe Photoshop Encapsulated PostScript® ファイル（.EPS）をラスタライズする。
 * [ビデオプロファイル](/help/assets/dynamic-media/video-profiles.md)および[イメージングプロファイル](/help/assets/dynamic-media/image-profiles.md)は、それぞれ、ビデオおよび画像の処理を定義するのに使用できます。

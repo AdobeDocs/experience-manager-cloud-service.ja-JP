@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2563'
-ht-degree: 96%
+source-wordcount: '2562'
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 96%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
-Adobe Experience Manager Assets Brand Portal を設定すると、承認済みのブランドアセットを Adobe Experience Manager Assets as a [!DNL Cloud Service] インスタンスから Brand Portal に公開し、Brand Portal ユーザーに配信できます。
+Adobe Experience Manager Assets Brand Portalを設定すると、承認済みのブランドアセットをAdobe Experience Manager Assets as a から公開できます [!DNL Cloud Service] インスタンスをBrand Portalに送信し、Brand Portalユーザーに配布します。
 
 ## Cloud Manager を使用して Brand Portal をライセンス認証する {#activate-brand-portal}
 

@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2931'
+source-wordcount: '2930'
 ht-degree: 97%
 
 ---
@@ -246,7 +246,7 @@ OSGi 設定のデプロイ方法については、[ [!DNL Experience Manager]](/
    * タイトル：自動開始ワークフローを無効にする
    * 名前：disable-auto-start-workflow
 1. 「__完了__」を選択して、ワークフローモデルを作成します。
-1. 新しく作成されたワークフローモデルを&#x200B;__選択__&#x200B;して&#x200B;__編集__&#x200B;します。
+1. __選択__ および __編集__ 新しく作成されたワークフローモデル
 1. ワークフローモデルエディターで、モデル定義から「__ステップ 1__」を選択して削除します。
 1. __サイドパネル__&#x200B;を開き、「__ステップ__」を選択します。
 1. 「__DAM アセットの更新ワークフローの完了__」ステップをモデル定義にドラッグします。
@@ -271,15 +271,15 @@ OSGi 設定のデプロイ方法については、[ [!DNL Experience Manager]](/
 * [アセットを翻訳](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットの検索](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットを検索](search-assets.md)
+* [接続されたアセット](use-assets-across-connected-assets-instances.md)
 * [アセットレポート](asset-reports.md)
 * [メタデータスキーマ](metadata-schemas.md)
-* [アセットのダウンロード](download-assets-from-aem.md)
-* [メタデータの管理](manage-metadata.md)
+* [アセットをダウンロード](download-assets-from-aem.md)
+* [メタデータを管理](manage-metadata.md)
 * [検索ファセット](search-facets.md)
-* [コレクションの管理](manage-collections.md)
-* [一括メタデータ読み込み](metadata-import-export.md)
+* [コレクションを管理](manage-collections.md)
+* [メタデータの一括読み込み](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service でのクライアントサイドライブラリの使用
 description: AEM では、クライアントサイドライブラリフォルダーが提供されています。これにより、クライアントサイドコード（clientlibs）をリポジトリーに格納し、カテゴリ別に整理して、それぞれのカテゴリのコードをクライアントに提供するタイミングと方法を定義できます。
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2556'
-ht-degree: 86%
+source-wordcount: '2552'
+ht-degree: 84%
 
 ---
 
@@ -88,7 +88,7 @@ AEMは、サイトの CSS と JavaScript を 1 つのファイルに 1 つの中
    * タイプ：Boolean
    * 値：`true`
 1. 静的リソースを管理する必要がある場合は、クライアントライブラリフォルダーの `resources` の下にサブフォルダーを作成します。
-   * フォルダー `resources` 以外の場所に静的リソースを格納した場合、静的リソースはパブリッシュインスタンスで参照できません。
+   * フォルダーの下以外の場所に静的リソースを格納する場合 `resources`に値を指定しない場合、パブリッシュインスタンスで参照することはできません。
 1. 追加ソースファイルをライブラリフォルダーに格納します。
    * これは、通常、 [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja)のフロントエンドビルドプロセスで行われます。
    * 必要に応じて、サブフォルダーを使用してソースファイルを整理できます。
@@ -112,7 +112,7 @@ AEMは、サイトの CSS と JavaScript を 1 つのファイルに 1 つの中
 * clientlib は `/apps/myproject/clientlibs/foo` にあります。
 * 静的画像は `/apps/myprojects/clientlibs/foo/resources/icon.png` にあります。
 
-`allowProxy` プロパティを使用して、次をリクエストできます。
+The `allowProxy` プロパティを使用して、次をリクエストできます。
 
 * `/etc.clientlibs/myprojects/clientlibs/foo.js` 経由の clientlib
 * 静的な画像（`/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png` を介す）
@@ -189,7 +189,7 @@ AEM のクライアントライブラリフォルダーでは、他にも多数�
 
 ### 依存関係へのリンク {#linking-to-dependencies}
 
-クライアントライブラリフォルダーのコードが他のライブラリを参照する場合、他のライブラリを依存関係として識別します。この `ui:includeClientLib` クライアントライブラリフォルダーを参照するタグによって、HTMLコードに生成されたライブラリファイルへのリンクと依存関係が含まれます。
+クライアントライブラリフォルダーのコードが他のライブラリを参照する場合、他のライブラリを依存関係として識別します。The `ui:includeClientLib` クライアントライブラリフォルダーを参照するタグによって、HTMLコードに生成されたライブラリファイルへのリンクと依存関係が含まれます。
 
 依存関係は別の `cq:ClientLibraryFolder` でなければなりません。依存関係を識別するには、次の属性を持つプロパティを `cq:ClientLibraryFolder` ノードに追加します。
 
@@ -280,7 +280,7 @@ AEM では、プラグ可能なプリプロセッサーを使用でき、AEM の
 プラグ可能なプリプロセッサーを使用すると、次のような柔軟な使用が可能になります。
 
 * スクリプトソースを処理できる ScriptProcessor の定義
-* プロセッサはオプションで設定可能
+* プロセッサはオプションを使用して設定可能
 * プロセッサーは縮小に使用できますが、縮小されていない場合にも使用できます
 * clientlib は、使用するプロセッサーを定義できます
 

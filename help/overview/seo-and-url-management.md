@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service の SEO および URL 管理のベストプラクティス
 description: Adobe Experience Manager as a Cloud Service の SEO および URL 管理のベストプラクティス
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3706'
+source-wordcount: '3705'
 ht-degree: 94%
 
 ---
@@ -192,7 +192,7 @@ AEM では、すべての Web ページが `/content/my-brand/my-content` に保
 
 ページ名をローカライズする際の課題は、AEM プラットフォームで利用できるローカライズツールの多くが、コンテンツの同期を保つためにロケール間でページ名を一致させる必要があることです。
 
-`sling:alias` プロパティを使用すると、両方を同時に実現できます。`sling:alias` を任意のリソースにプロパティとして追加すると、リソースのエイリアス名を使用することができます。前述の例では、次のようになります。
+The `sling:alias` プロパティを使用すると、両方を同時に実行できます。 `sling:alias` を任意のリソースにプロパティとして追加すると、リソースのエイリアス名を使用することができます。前述の例では、次のようになります。
 
 * JCR の次の場所にページがあるとします。
   `…/es/home`
@@ -349,7 +349,7 @@ Disallow: /
 
 また、実稼働環境では、インデックスが作成されないように特定のパスを禁止することもできます。
 
-を `robots.txt` ファイルをサイトルートに配置する場合、Dispatcher フラッシュ要求によってこのファイルがクリアされ、URL マッピングによってサイトのルートが `DOCROOT` Apache HTTP Server 設定で定義されたとおりです。 こうした理由から、このファイルをオーサーインスタンスのサイトのルートに配置し、パブリッシュインスタンスにレプリケートするのが一般的です。
+を配置する際の注意事項 `robots.txt` ファイルをサイトルートに配置する場合、Dispatcher フラッシュ要求によってこのファイルがクリアされ、URL マッピングによってサイトのルートが `DOCROOT` Apache HTTP Server 設定で定義されたとおりです。 こうした理由から、このファイルをオーサーインスタンスのサイトのルートに配置し、パブリッシュインスタンスにレプリケートするのが一般的です。
 
 ### AEM での XML サイトマップの作成 {#building-an-xml-sitemap-on-aem}
 

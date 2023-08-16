@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスでの AEM および AMS での AEM との重要な違いについて説明します。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f69b348b7de6c6537a9945793e3397bf4fe30f98
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2655'
-ht-degree: 84%
+source-wordcount: '2653'
+ht-degree: 83%
 
 ---
 
@@ -47,7 +47,7 @@ AEM as a Cloud Serviceの更新中に、古いコードと新しいコードが�
 
 トラブルを最小限に抑えるために、長時間実行ジョブは可能な限り避け、少なくとも再開可能な状態になっている必要があります。このようなジョブを実行するには、少なくとも 1 回は実行されることが保証されている Sling ジョブを使用します。したがって、ジョブが中断された場合、ジョブはできるだけ早く再実行されます。ただし、最初からやり直すべきではないでしょう。このようなジョブをスケジュールする場合は、 [Sling ジョブ](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) スケジューラーを使用することをお勧めします。やはり、少なくとも 1 回は実行されることが保証されているからです。
 
-Sling Commons Scheduler は実行を保証できないので、スケジュール設定には使用しないでください（スケジュールされている可能性の方が高くなります。
+Sling Commons Scheduler は実行を保証できないので、スケジュール設定には使用しないでください（スケジュールされている可能性の方が高いです。
 
 同様に、監視イベント（例：JCR イベントや Sling リソースイベント）に対する動作など、非同期的に発生するあらゆる動作は、必ずしも実行が保証されないので、慎重に使用する必要があります。これは、現在の AEM デプロイメントに既に当てはまります。
 
@@ -139,9 +139,9 @@ AEM as a Cloud Serviceは、サードパーティの顧客コードのタッチ 
 
 | 環境 | 実行モード別の OSGi 設定の場所 | `org.apache.sling.commons.log.level` プロパティ値 |
 | - | - | - |
-| 開発 | /apps/example/config/org.apache | DEBUG |
-| ステージ | /apps/example/config.stage/org.apache | WARN |
-| 実稼動 | /apps/example/config.prod/org.apache | ERROR |
+| 開発 | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config～example.cfg.json | DEBUG |
+| ステージ | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config～example.cfg.json | WARN |
+| 実稼動 | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config～example.cfg.json | ERROR |
 
 デバッグファイルの行は、通常は DEBUG で始まり、ログレベル、インストーラーのアクション、ログメッセージを示します。 次に例を示します。
 
@@ -205,7 +205,7 @@ AEM as a Cloud Service 開発者環境をデバッグするための一連のツ
 
 ### パフォーマンスの監視 {#performance-monitoring}
 
-アドビはアプリケーションのパフォーマンスを監視し、劣化が観察された場合に対処します。現時点では、アプリケーションの指標を確認できません。
+アドビはアプリケーションのパフォーマンスを監視し、劣化が観察された場合に対処します。現時点では、適用指標が確認されていません。
 
 ## メールの送信 {#sending-email}
 

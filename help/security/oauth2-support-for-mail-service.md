@@ -2,9 +2,9 @@
 title: メールサービスの OAuth2 サポート
 description: Adobe Experience Manager as a Mail Service の Oauth2 サポート
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '679'
 ht-degree: 45%
 
 ---
@@ -26,7 +26,7 @@ AEM as a Cloud Service のメールサービスの詳細については、[メ�
    ![アプリ登録プロセスを開始](assets/oauth-outlook1.png)
 
 1. 必要に応じて情報を入力し、「**登録**」をクリックします。
-1. 新しく作成されたアプリに移動し、を選択します。 **API 権限**.
+1. 新しく作成されたアプリに移動し、「 」を選択します。 **API 権限**.
 1. クリック **権限を追加** > **グラフ権限** > **委任された権限**.
 1. アプリに対して以下の権限を選択し、「**権限を追加**」をクリックします。
    * `https://outlook.office.com/SMTP.Send`
@@ -42,7 +42,7 @@ AEM as a Cloud Service のメールサービスの詳細については、[メ�
    * `http://localhost`
 1. 各 URL を追加した後で「**設定**」を押し、必要に応じて設定を指定します.
 1. 次に、**証明書とシークレット**&#x200B;に移動し、「**新しいクライアントシークレット**」をクリックし、画面上の手順に従ってシークレットを作成します。このシークレットは後で使用するため、必ずメモしてください.
-1. 押す **概要** をクリックし、 **アプリケーション（クライアント） ID** および **ディレクトリ（テナント） ID** 後で使用する場合。
+1. 押す **概要** 左側のウィンドウで、 **アプリケーション（クライアント） ID** および **ディレクトリ（テナント） ID** 後で使用する場合。
 
 まとめるには、次の情報を使用して、AEM側で Mail サービスの OAuth2 を設定します。
 
@@ -132,7 +132,7 @@ AEM 側で Oauth を設定する前に、次の手順で accessToken と refresh
    * `offline_access`
    * `email`
    * `profile`
-1. 次の構文で、OSGI プロパティファイル`called com.day.cq.mailer.DefaultMailService.cfg.json`を  `/apps/<my-project>/osgiconfig/config` を次の構文で置き換えます。 この `smtp.host` および `smtp.port` の値は、 [電子メールサービスのチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=en).
+1. 次の構文で、OSGI プロパティファイル`called com.day.cq.mailer.DefaultMailService.cfg.json`を  `/apps/<my-project>/osgiconfig/config` を次の構文で置き換えます。 The `smtp.host` および `smtp.port` の値は、詳細なネットワーク設定を反映します。詳しくは、 [電子メールサービスのチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=en).
 
    ```
    {

@@ -2,10 +2,10 @@
 title: Cloud Acceleration Manager の基本を学ぶ
 description: ここでは、Cloud Acceleration Manager の使用方法と基本事項の概要を説明します。
 exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 54%
+source-wordcount: '535'
+ht-degree: 51%
 
 ---
 
@@ -32,7 +32,7 @@ Cloud Acceleration Manager（CAM）に移動するには、次の手順に従い
 
 1. クリック **Experience Manager** カード。
 
-1. クリック **起動** から **Cloud Acceleration Manager** カードを使用して、ランディングページを開くことができます。
+1. クリック **Launch** から **Cloud Acceleration Manager** カードを使用して、ランディングページを開くことができます。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/cam-1.png)
 
@@ -44,7 +44,7 @@ Cloud Acceleration Manager（CAM）に移動するには、次の手順に従い
 >abstract="プロジェクトを作成し、AEM as a Cloud Service へのジャーニーを開始します。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=ja" text="Cloud Acceleration Manager を使用するメリット"
 
-Cloud Acceleration Manager（CAM）のランディングページを使用すると、複数のプロジェクトを作成および編集できます。
+Cloud Acceleration Manager(CAM) のランディングページを使用すると、複数のプロジェクトを作成および編集できます。
 
 以下の手順に従って、プロジェクトを作成します。
 
@@ -83,7 +83,7 @@ Cloud Acceleration Manager（CAM）のランディングページを使用する
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/cam-edit.png)
 
-1. クリック **更新** 変更をコミットする場合。
+1. クリック **更新** 変更をコミットするには、次の手順に従います。
 
 ### プロジェクトの削除 {#delete-project}
 

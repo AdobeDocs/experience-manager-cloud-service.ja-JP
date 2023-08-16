@@ -4,16 +4,16 @@ seo-title: Developer Mode
 description: 開発者モードで開かれるサイドパネルのタブには、現在のページに関する開発者向けの情報が表示されます
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 78%
+source-wordcount: '527'
+ht-degree: 87%
 
 ---
 
 # 開発者モード {#developer-mode}
 
-AEMでページを編集する場合、複数の [モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) は、開発者モードを含めて使用できます。 開発者モードで開くサイドパネルのタブには、現在のページに関する開発者向けの技術情報が表示されます。
+AEM でページを編集する場合、複数の[モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)は、開発者モードを含めて使用できます。開発者モードで開くサイドパネルのタブには、現在のページに関する開発者向けの技術情報が表示されます。
 
 次の 2 つのタブがあります。
 
@@ -35,7 +35,7 @@ AEMでページを編集する場合、複数の [モード](/help/sites-cloud/a
 
 ## 開発者モードを開く {#opening-developer-mode}
 
-開発者モードは、ページエディターのサイドパネルとして実装されます。 パネルを開くには、ページエディターのツールバーにあるモードセレクターから「**開発者**」を選択します。
+開発者モードは、ページエディターのサイドパネルとして実装されます。パネルを開くには、ページエディターのツールバーにあるモードセレクターから「**開発者**」を選択します。
 
 ![開発者モードを開く](assets/developer-mode.png)
 
@@ -51,10 +51,10 @@ AEMでページを編集する場合、複数の [モード](/help/sites-cloud/a
 コンポーネントツリーが表示されます。次の機能があります。
 
 * ページ上にレンダリングされるコンポーネントとテンプレートのチェーンの概要を示します。このツリーを展開して、階層内のコンテキストを表示できます。
-* コンポーネントのレンダリングに必要なサーバー側の計算時間を示します。
-* ツリーを展開し、ツリー内の特定のコンポーネントを選択できます。 「選択」を選択すると、コンポーネントの詳細にアクセスできます。例：
+* コンポーネントのレンダリングに必要なサーバーサイドの計算時間を示します。
+* ツリーを展開し、ツリー内の特定のコンポーネントを選択できます。 コンポーネントを選択すると、次のようなコンポーネント詳細にアクセスできます。
    * リポジトリーパス
-   * スクリプトへのリンク (CRXDE Lite)
+   * スクリプトへのリンク（CRXDE Lite でアクセス）
    * コンポーネントの詳細（[コンポーネントコンソール](/help/sites-cloud/authoring/features/components-console.md)に表示）
 * ツリーで選択されたコンポーネントは、エディターでは青い境界線で示されます。
 

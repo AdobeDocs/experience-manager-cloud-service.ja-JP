@@ -3,10 +3,10 @@ title: CI／CD パイプライン
 description: Cloud Manager の CI／CD パイプラインと、CI／CD パイプラインを使用してコードを効率的にデプロイする方法について説明します。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 76%
+source-wordcount: '1337'
+ht-degree: 75%
 
 ---
 
@@ -115,7 +115,7 @@ Cloud Manager で使用できるすべてのパイプラインとその用途を
 
 >[!IMPORTANT]
 >
->AEM版である必要があります `2021.10.5933.20211012T154732Z ` またはAEM Sitesがフロントエンドパイプラインの使用を有効にしている場合は、
+>AEM版である必要があります `2021.10.5933.20211012T154732Z ` またはAEM Sitesがフロントエンドパイプラインの使用を有効にしている場合は、以降で使用できます。
 
 >[!NOTE]
 >
@@ -161,10 +161,10 @@ Web 階層設定パイプラインを使用すると、HTTPD／Dispatcher 設定
 次の制限が適用されます。
 
 * AEM版である必要があります `2021.12.6151.20211217T120950Z` Web 層設定パイプラインを使用する場合と、それ以降の場合があります。
-* 必ず [dispatcher ツールの柔軟なモードのオプトイン](/help/implementing/dispatcher/disp-overview.md#validation-debug) web 層設定パイプラインを使用する場合。
+* 次の条件を満たす必要があります。 [dispatcher ツールの柔軟なモードのオプトイン](/help/implementing/dispatcher/disp-overview.md#validation-debug) web 層設定パイプラインを使用する場合。
 * ユーザーは、 **デプロイメントマネージャー** パイプラインを設定または実行するためのロール。
 * Web 階層設定パイプラインは、常に 1 つの環境に 1 つしか存在できません。
-* 対応するフルスタックパイプラインの実行中は、web 階層設定パイプラインを設定できません。
+* 対応するフルスタックパイプラインが実行中の場合、ユーザーは Web 層設定パイプラインを設定できません。
 * Web 層構造は、ドキュメントで定義されている柔軟モード構造に従う必要があります [クラウド内の Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug).
 
 さらに、 [フルスタックパイプライン](#full-stack-pipeline) は、Web 層パイプラインを導入する際に動作します。

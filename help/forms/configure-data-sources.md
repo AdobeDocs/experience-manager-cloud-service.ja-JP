@@ -1,14 +1,14 @@
 ---
 title: データソースの設定方法
-description: Experience Manager Forms のデータ統合機能により、複数の異なるデータソースを設定して接続できます。RESTful Web サービス、SOAP ベースの Web サービスおよび OData サービスをデータソースとして設定し、それらを使用してフォームデータモデルを作成する方法について説明します。
+description: Experience Manager Forms Data Integration を使用すると、異なるデータソースを設定して接続できます。 RESTful Web サービス、SOAP ベースの Web サービスおよび OData サービスをデータソースとして設定し、それらを使用してフォームデータモデルを作成する方法について説明します。
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2212'
-ht-degree: 98%
+source-wordcount: '2210'
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 98%
 
 ![データ統合](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] のデータ統合機能により、複数の異なるデータソースを設定して接続することができます。以下のタイプがサポートされています。これらのタイプは、すぐに使用することができます。
+[!DNL Experience Manager Forms] データ統合を使用すると、異なるデータソースを設定して接続できます。 以下のタイプがサポートされています。これらのタイプは、すぐに使用することができます。
 
 * リレーショナルデータベース - MySQL、[!DNL Microsoft SQL Server]、[!DNL IBM DB2]、および [!DNL Oracle RDBMS]
 * RESTful Web サービス

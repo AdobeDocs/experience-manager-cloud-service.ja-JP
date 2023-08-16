@@ -2,10 +2,10 @@
 title: パイプラインの設定
 description: フロントエンドパイプラインを作成して、サイトのテーマのカスタマイズを管理します。
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 89%
+source-wordcount: '966'
+ht-degree: 87%
 
 ---
 
@@ -102,7 +102,7 @@ URL にアクセスまたはコピーしたプログラムの名前をメモし�
 
 >[!TIP]
 >
->AEMaaCS のパイプラインに既に精通しており、フロントエンドパイプラインの詳細を含む様々なタイプのパイプラインの違いについて詳しくは、 CI/CD パイプラインの設定 — このパイプラインでリンクされたCloud Servicesを参照してください [その他のリソース](#additional-resources) 」の節を参照してください。
+>AEMaaCS のパイプラインに既に精通しており、フロントエンドパイプラインの詳細を含む様々なタイプのパイプラインの違いについて詳しくは、 CI/CD パイプラインの設定 — このパイプラインでリンクされたCloud Serviceを参照してください。 [その他のリソース](#additional-resources) 」の節を参照してください。
 
 ## 次の手順 {#what-is-next}
 

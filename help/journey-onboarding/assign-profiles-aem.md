@@ -4,10 +4,10 @@ description: クラウドリソースを設定したら、AEM 製品プロファ
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 94%
+ht-degree: 91%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="assets_user_entitlements"
 >title="AEM 製品プロファイルの割り当て"
->abstract="Experience Manager Assets を使用する資格が付与されていません。管理者に問い合わせてください。"
+>abstract="Experience Manager Assets を使用する資格が付与されていません。システム管理者にお問い合わせください。"
 
 [オンボーディングジャーニー](overview.md)のこのパートでは、AEM 製品プロファイルを使用して、AEM へのアクセス権をチームに付与する方法を説明します。
 
@@ -41,7 +41,7 @@ AEM を使用するには、チームメンバーが 1 つまたは複数の AEM
 >
 >AEM as a Cloud Service の製品プロファイルに割り当てられたすべてのユーザーは、**Cloud Manager ユーザー**&#x200B;の役割を介して Cloud Manager に読み取り専用でアクセスできます。
 >
->を持つ **Cloud Manager** ユーザーの役割のみが Cloud Manager にログインし、プログラムメニューオプションを使用して、AEMオーサー環境（存在する場合）に移動できます。 **Cloud Manager ユーザー**の役割では、プログラムの詳細にアクセスするのに十分ではありません。 そのようなアクセスが必要な場合は、システム管理者から追加の役割を付与してもらう必要があります。
+>を持つユーザー **Cloud Manager** ユーザーの役割のみが Cloud Manager にログインし、プログラムメニューオプションを使用して、AEMオーサー環境（存在する場合）に移動できます。 **Cloud Manager ユーザー**の役割では、プログラムの詳細にアクセスするのに十分ではありません。 そのようなアクセスが必要な場合は、システム管理者から追加の役割を付与してもらう必要があります。
 >詳しくは、 [以下の「その他のリソース」節](#additional-resources) Cloud Manager のユーザーの役割について詳しくは、を参照してください。
 
 >[!CAUTION]
@@ -58,7 +58,7 @@ AEM を使用するには、チームメンバーが 1 つまたは複数の AEM
 
 >[!TIP]
 >
->オンボーディングのために、管理者、開発者、コンテンツ作成者など、当面のタスクに参加するユーザーを最初に追加することをお勧めします。すべてのユーザーを追加しなくても、残りのオンボーディングを続行できます。オンボーディングが完了したら、後でユーザーの数を増やすことができます。
+>オンボーディングの目的で、Adobeは、管理者、開発者、コンテンツ作成者など、即時タスクに参加するユーザーを最初に追加することをお勧めします。 すべてのユーザーを追加しなくても、残りのオンボーディングを続行できます。オンボーディングが完了したら、後でユーザーの数を増やすことができます。
 
 ## AEM 製品プロファイルの表示 {#view-profiles}
 

@@ -6,10 +6,10 @@ seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 12%
+source-wordcount: '1042'
+ht-degree: 8%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 12%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service | この記事 |
 
-AEM Forms as a Cloud Service のアダプティブフォームのコアコンポーネントを有効にすると、AEM Forms Cloud Service インスタンスを使用して、複数のチャネルへのコアコンポーネントベースのアダプティブフォームとヘッドレスフォームの作成、公開、配信を開始できます。 ヘッドレスアダプティブFormsを使用するには、アダプティブFormsコアコンポーネントが有効な環境が必要です。
+AEM Formsas a Cloud ServiceのアダプティブFormsコアコンポーネントを有効にすると、AEM FormsCloud Serviceインスタンスを使用して、複数のチャネルに対して、アダプティブFormsおよびヘッドレスFormsベースのコアコンポーネントの作成、公開、配信を開始できます。 ヘッドレスアダプティブFormsを使用するには、アダプティブFormsコアコンポーネントが有効な環境が必要です。
 
 ## 検討事項
 
@@ -299,7 +299,7 @@ AEM Formsas a Cloud Service環境でアダプティブFormsコアコンポーネ
 
 
 
-   パッケージが正常にビルドされたら、次の場所で確認できます。 [Git リポジトリフォルダー]\all\target\[appid].all-[version].zip
+   パッケージが正常にビルドされたら、次の場所で見つけることができます。 [Git リポジトリフォルダー]\all\target\[appid].all-[version].zip
 
 1. 以下を使用します。 [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ja) をデプロイするには [AEM Archetype プロジェクトフォルダー]\all\target\[appid].all-[version]ローカル開発環境の.zip パッケージ。
 

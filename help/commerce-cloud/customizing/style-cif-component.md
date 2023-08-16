@@ -11,9 +11,9 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2536'
+source-wordcount: '2535'
 ht-degree: 61%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 61%
 
 ## Venia プロジェクトのクローン {#clone-venia-project}
 
-次を複製します： [Venia プロジェクト](https://github.com/adobe/aem-cif-guides-venia)をクリックして、デフォルトのスタイルを上書きします。
+次の項目を複製します： [Venia プロジェクト](https://github.com/adobe/aem-cif-guides-venia)をクリックして、デフォルトのスタイルを上書きします。
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ ht-degree: 61%
    $ mvn clean install -PautoInstallPackage,cloud
    ```
 
-1. 必要な OSGi 設定を追加して、AEMインスタンスをAdobe Commerceインスタンスに接続したり、新しく作成されたプロジェクトに設定を追加したりできます。
+1. 必要な OSGi 設定を追加して、AEMインスタンスをAdobe Commerceインスタンスに接続したり、新しく作成したプロジェクトに設定を追加したりできます。
 
 1. この時点で、Adobe Commerce インスタンスに接続されたストアフロントの作業用のバージョンが必要です。`US`／`Home` ページ（[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)）にアクセスします。
 
@@ -71,9 +71,9 @@ ht-degree: 61%
 
 ブランド固有のスタイルは、これらのクライアントライブラリで管理される CSS を追加および上書きすることで、AEM CIF コアコンポーネントに適用できます。 クライアントライブラリが構造化されてページに含まれる方法を理解することが重要です。
 
-この [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja) は専用です [webpack](https://webpack.js.org/) プロジェクト：プロジェクトのすべてのフロントエンドアセットを管理します。 この Webpack を使用すると、フロントエンド開発者は、次のような様々な言語やテクノロジーを使用できます。 [TypeScript](https://www.typescriptlang.org/), [サス](https://sass-lang.com/)など。
+The [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja) は専用です [webpack](https://webpack.js.org/) プロジェクト：プロジェクトのすべてのフロントエンドアセットを管理します。 この Webpack を使用すると、フロントエンド開発者は、次のような様々な言語やテクノロジーを使用できます。 [TypeScript](https://www.typescriptlang.org/), [サス](https://sass-lang.com/)など。
 
-この `ui.frontend` モジュールは、Maven モジュールでもあり、NPM モジュールを使用して、より大きなプロジェクトに統合されます。 [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). ビルド時に、`aem-clientlib-generator` はコンパイル済みの CSS ファイルと JavaScript ファイルをクライアントライブラリの `ui.apps` モジュールにコピーします。
+The `ui.frontend` モジュールは、Maven モジュールでもあり、NPM モジュールを使用して、より大きなプロジェクトに統合されます。 [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). ビルド時に、`aem-clientlib-generator` はコンパイル済みの CSS ファイルと JavaScript ファイルをクライアントライブラリの `ui.apps` モジュールにコピーします。
 
 ![ui.frontend to ui.apps architecture](../assets/style-cif-component/ui-frontend-architecture.png)
 
@@ -129,7 +129,7 @@ ht-degree: 61%
    [INFO] ------------------------------------------------------------------------
    ```
 
-   端末出力を検査します。Maven コマンドは、次のような複数の NPM スクリプトを実行しました。 `npm run build`. この `npm run build` コマンドが `package.json` ファイルを作成し、webpack プロジェクトをコンパイルして、クライアントライブラリの生成トリガーを設定します。
+   端末出力を検査します。Maven コマンドは、次のような複数の NPM スクリプトを実行しました。 `npm run build`. The `npm run build` コマンドが `package.json` ファイルを作成し、webpack プロジェクトをコンパイルして、クライアントライブラリの生成トリガーを設定します。
 
 1. `ui.frontend/dist/clientlib-site/site.css` ファイルを検査します。
 
@@ -160,9 +160,9 @@ ht-degree: 61%
    ...
    ```
 
-   この設定ファイルの対象は [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) とは、コンパイル済みの CSS と JavaScript をAEMクライアントライブラリに変換する場所と方法を決定します。
+   この設定ファイルは次の用です。 [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) とは、コンパイル済みの CSS と JavaScript をAEMクライアントライブラリに変換する場所と方法を決定します。
 
-1. 内 `ui.apps` モジュールで、ファイルを検査します。 `ui.apps/src/main/content/jcr_root/apps/venia/clientlibs/clientlib-site/css/site.css`:
+1. Adobe Analytics の `ui.apps` モジュールで、ファイルを検査します。 `ui.apps/src/main/content/jcr_root/apps/venia/clientlibs/clientlib-site/css/site.css`:
 
    ![ui.apps 内のコンパイル済みサイト CSS](../assets/style-cif-component/comiled-css-ui-apps.png)
 
@@ -263,7 +263,7 @@ ht-degree: 61%
 
    ![テンプレートの編集](../assets/style-cif-component/edit-template.png)
 
-   この **ランディングページ** テンプレートを開くと、 **ホーム** ページがに基づいている。
+   The **ランディングページ** テンプレートを開くと、 **ホーム** ページがに基づいている。
 
    >[!NOTE]
    >
@@ -302,7 +302,7 @@ webpack-dev-server は、AEM のローカルインスタンスから画像と一
 
 1. `index.html` の内容を上書きして、 前の手順でコピーした HTML を&#x200B;**貼り付けます**。
 
-1. 次の「含む」を見つけます。 `clientlib-site.min.css`, `clientlib-site.min.js`、および **削除** 彼ら。
+1. 次の「含む」を見つけます。 `clientlib-site.min.css`, `clientlib-site.min.js`、および **削除** 彼らを。
 
    ```html
    <head>
@@ -344,7 +344,7 @@ webpack-dev-server は、AEM のローカルインスタンスから画像と一
 
 IDE と生成されたプロジェクトに戻ります。
 
-1. 内 **ui.frontend** モジュール、ファイルを再度開く `_productteaser.scss` 時刻 `ui.frontend/src/main/styles/commerce/_productteaser.scss`.
+1. Adobe Analytics の **ui.frontend** モジュール、ファイルを再度開く `_productteaser.scss` 時刻 `ui.frontend/src/main/styles/commerce/_productteaser.scss`.
 
 1. 製品ティーザーの枠線に次の変更を加えます。
 
@@ -473,7 +473,7 @@ IDE と生成されたプロジェクトに戻ります。
 
 ## ボーナスチャレンジ {#bonus-challenge}
 
-以下を使用： [AEM Style System](/help/sites-cloud/authoring/features/style-system.md) ：コンテンツ作成者がオン/オフを切り替えることのできる 2 つのスタイルを作成する場合。 [スタイルシステムを使用した開発](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=ja) には、このタスクを実行する方法に関する詳細な手順と情報が含まれています。
+以下を使用します。 [AEM Style System](/help/sites-cloud/authoring/features/style-system.md) ：コンテンツ作成者がオン/オフを切り替えることのできる 2 つのスタイルを作成する場合。 [スタイルシステムを使用した開発](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=ja) には、このタスクを実行する方法に関する詳細な手順と情報が含まれています。
 
 ![ボーナスチャレンジ - スタイルシステム](../assets/style-cif-component/bonus-challenge.png)
 

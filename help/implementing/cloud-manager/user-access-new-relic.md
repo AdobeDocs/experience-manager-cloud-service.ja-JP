@@ -2,10 +2,10 @@
 title: New Relic One
 description: AEM as a Cloud Service の New Relic One アプリケーションパフォーマンスモニタリング（APM）サービスと、そのサービスへのアクセス方法について説明します。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1589'
-ht-degree: 82%
+source-wordcount: '1586'
+ht-degree: 79%
 
 ---
 
@@ -120,7 +120,7 @@ New Relic One へのログイン中にご利用のメールを確認するよう
 
 ## New Relic One アクセスのトラブルシューティング {#troubleshooting}
 
-[New Relic One ユーザーの管理](#manage-users)のセクションで説明しているように New Relic One ユーザーとして追加され、元のアカウント確認メールが見つからない場合は、次の手順に従ってください。
+の節の説明に従ってNew Relic Oneユーザーとして追加された場合 [New Relic Oneユーザーの管理](#manage-users) 元のアカウント確認メールが見つからず、次の手順に従ってください。
 
 1. [`login.newrelic.com/login`](https://login.newrelic.com/login) にある New Relic のログインページに移動します。
 
@@ -147,7 +147,7 @@ New Relicから電子メールを受け取っていない場合：
 New Relic One にユーザーを追加する場合は、次の制限が適用されます。
 
 * 最大 30 人のユーザーを追加できます。ユーザーの最大数に達した場合、新しいユーザーを追加できるように、ユーザーを削除します。
-* New Relicに追加されるユーザーは、タイプが **制限**&#x200B;を参照してください。 [詳しくは、 New Relicのドキュメントを参照してください。](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
+* New Relicに追加されるユーザーは、タイプがです **制限**&#x200B;を参照してください。 [詳しくは、 New Relicのドキュメントを参照してください。](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
 * AEM as a Cloud Service は New Relic One APM ソリューションのみを提供し、アラート、ログ、API 統合のサポートは提供していません。
 
 AEM as a Cloud Serviceプログラム向けのNew Relic One製品に関するその他のヘルプまたはガイダンスについては、 [AEM Support Portal](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html).
@@ -164,7 +164,7 @@ New Relic One アカウントは、アドビが管理するプライマリアカ
 * 環境ごとにパブリッシュサービス用の 1 つのアプリケーション（ゴールデンパブリッシュを含む）
 * 環境ごとにプレビューサービス用の 1 つのアプリケーション
 
-注意：
+メモ：
 
 * 各アプリケーションは、1 つのライセンスキーを使用します。
 * AEM as a Cloud Service 環境は、1 つの New Relic One アカウントにのみレポートします。

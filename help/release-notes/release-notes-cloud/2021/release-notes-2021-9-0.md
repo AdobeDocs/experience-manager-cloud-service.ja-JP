@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 リリースのリリースノート。'
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1568'
 ht-degree: 92%
 
 ---
@@ -78,7 +78,7 @@ CQ-4328183 was not reported on CS so not documented here.
    * Forms Portal の保存と再開機能を有効にし、顧客が管理するデータリポジトリにアダプティブフォームのドラフトを保存します。
    * 個人の機密情報（SPD）を含んだ処理中の AEM ワークフローデータ（AEM ワークフロー変数データ）を、顧客側で管理されるリポジトリに格納する
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) では、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) では、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。 API により、以下のような機能を備えたアプリケーションを作成することができます。
    * テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成します。
    * 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
    * XFA フォーム PDF および Adobe Acrobat フォームから印刷用 PDF ファイルを生成します。
@@ -145,7 +145,7 @@ Cloud Manager API を使用して高度なネットワーク機能をセルフ�
 
 **インデックスの最適化**
 
-検索クエリとインデックス作成のパフォーマンスを向上させるために、このリリース以降、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、フルテキストインデックス lucene-2 は標準では使用されなくなりました。AEMのお客様に合わせてAEM環境でこのフルテキストインデックスを削除するため、Adobeエンジニアリングは、Lucene のフルテキストインデックスを柔軟かつ持続可能に削除するために、お客様と個別かつ積極的に連携します。 次にアクセス： [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [ドキュメント](/help/operations/indexing.md#index-optimizations) 詳細については、お問い合わせください。
+検索クエリとインデックス作成のパフォーマンスを向上させるために、このリリース以降、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、フルテキストインデックス lucene-2 は標準では使用されなくなりました。AEMのお客様に合わせてAEM環境でこのフルテキストインデックスを削除するため、Adobeエンジニアリングは、Lucene のフルテキストインデックスを柔軟かつ持続可能に削除するために、お客様と個別かつ積極的に連携します。 次にアクセス： [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [ドキュメント](/help/operations/indexing.md#index-optimizations) 詳細については、お問い合わせください。ご質問がある場合は、直接サポートにお問い合わせください。
 
 ## Cloud Manager {#cloud-manager}
 

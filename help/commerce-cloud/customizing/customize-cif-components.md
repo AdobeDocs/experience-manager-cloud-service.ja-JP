@@ -11,9 +11,9 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2560'
+source-wordcount: '2559'
 ht-degree: 59%
 
 ---
@@ -34,7 +34,7 @@ Venia ブランドは最近、持続可能な資材を使用して一部の製�
 
 ## 前提条件 {#prerequisites}
 
-このチュートリアルを完了するには、ローカルの開発環境が必要です。この環境には、Adobe Commerceインスタンスに設定および接続されたAEMの実行インスタンスが含まれます。 [AEM as a Cloud Service SDK を使用してローカル開発をセットアップする](../develop.md)ための要件と手順を確認します。このチュートリアルを完全に実行するには、 [製品の属性](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) Adobe Commerce
+このチュートリアルを完了するには、ローカルの開発環境が必要です。この環境には、Adobe Commerceインスタンスに設定および接続されたAEMの実行インスタンスが含まれます。 [AEM as a Cloud Service SDK を使用してローカル開発をセットアップする](../develop.md)ための要件と手順を確認します。このチュートリアルを完全に実行するには、 [製品の属性](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) Adobe Commerceで
 
 また、GraphQL IDE( [GraphiQL](https://github.com/graphql/graphiql) またはブラウザー拡張機能を使用して、コードサンプルとチュートリアルを実行することもできます。 ブラウザー拡張機能をインストールする場合は、リクエストヘッダーを設定できることを確認してください。 Google Chrome の [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) は、ジョブを実行できる拡張機能の 1 つです。
 
@@ -59,7 +59,7 @@ Venia ブランドは最近、持続可能な資材を使用して一部の製�
    $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
-1. 必要な OSGi 設定を追加して、AEMインスタンスをAdobe Commerceインスタンスに接続するか、新しく作成されたプロジェクトに設定を追加します。
+1. 必要な OSGi 設定を追加して、AEMインスタンスをAdobe Commerceインスタンスに接続するか、新しく作成したプロジェクトに設定を追加します。
 
 1. この時点で、Adobe Commerce インスタンスに接続されたストアフロントの作業用のバージョンが必要です。`US`／`Home` ページ（[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)）にアクセスします。
 
@@ -91,7 +91,7 @@ Venia ブランドは最近、持続可能な資材を使用して一部の製�
 
 ## Adobe Commerce でのカスタム属性の追加 {#add-custom-attribute}
 
-AEM に表示された製品と製品データは Adobe Commerce に格納されます。次に、 **エコフレンドリー** をAdobe Commerce UI を使用して設定される製品属性の一部として使用する。
+AEM に表示された製品と製品データは Adobe Commerce に格納されます。次に、の属性を追加します。 **エコフレンドリー** をAdobe Commerce UI を使用して設定される製品属性の一部として使用する。
 
 >[!TIP]
 >
@@ -196,7 +196,7 @@ Sling モデルは Java™として実装され、 **コア** 生成されたプ
 
    ![コアのロケーション IDE](../assets/customize-cif-components/core-location-ide.png)
 
-   `MyProductTeaser.java` は、 [ProductTeaser](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java) インターフェイス。
+   `MyProductTeaser.java` は、CIF を拡張する Java™インターフェイスです [ProductTeaser](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java) インターフェイス。
 
    製品が「新規」と見なされた場合にバッジを表示するための新しい `isShowBadge()` メソッドが既に追加されています。
 
@@ -225,7 +225,7 @@ Sling モデルは Java™として実装され、 **コア** 生成されたプ
    private ProductTeaser productTeaser;
    ```
 
-   上書きや変更をしないメソッドの場合は、 `ProductTeaser` を返します。 次に例を示します。
+   上書きや変更をしないメソッドの場合は、 `ProductTeaser` はを返します。 例：
 
    ```java
    @Override
@@ -259,7 +259,7 @@ Sling モデルは Java™として実装され、 **コア** 生成されたプ
    ...
    ```
 
-   この `@PostConstruct` 注釈により、Sling モデルが初期化されたときにこのメソッドが呼び出されます。
+   The `@PostConstruct` 注釈により、Sling モデルが初期化されたときにこのメソッドが呼び出されます。
 
    製品の GraphQL クエリは、追加の `created_at` 属性を取得するように、`extendProductQueryWith` メソッドを使用して既に拡張されています。この属性は、後で `isShowBadge()` メソッドの一部として使用されます。
 
@@ -289,7 +289,7 @@ Sling モデルは Java™として実装され、 **コア** 生成されたプ
 
    >[!NOTE]
    >
-   > この `createdAt()` メソッドが [製品インターフェイス](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java). 一般的なスキーマ属性のほとんどは実装されているので、真のカスタム属性に対してのみ `addCustomSimpleField` を使用します。
+   > The `createdAt()` メソッドは、 [製品インターフェイス](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java). 一般的なスキーマ属性のほとんどは実装されているので、真のカスタム属性に対してのみ `addCustomSimpleField` を使用します。
 
 1. ロガーを追加して、Java™コードをデバッグできるようにします。
 
@@ -324,7 +324,7 @@ Sling モデルは Java™として実装され、 **コア** 生成されたプ
    }
    ```
 
-   上記のメソッドでは、`productRetriever` が製品の取得に使用され、`getAsInteger()` メソッドが `eco_friendly` 属性の値の取得に使用されています。前に実行したGraphQLクエリに基づいて、が `eco_friendly` 属性が&quot;**はい**」は実際には **1**.
+   上記のメソッドでは、`productRetriever` が製品の取得に使用され、`getAsInteger()` メソッドが `eco_friendly` 属性の値の取得に使用されています。前に実行したGraphQLクエリに基づいて、が `eco_friendly` 属性が&quot;**はい**」は、実際には **1**.
 
    Sling モデルが更新されたので、次のインジケーターを実際に表示するには、コンポーネントマークアップを更新する必要があります。 **エコフレンドリー** Sling Model に基づいています。
 
@@ -332,11 +332,11 @@ Sling モデルは Java™として実装され、 **コア** 生成されたプ
 
 AEM コンポーネントの一般的な拡張機能は、コンポーネントによって生成されたマークアップを変更することです。この編集は、 [HTL スクリプト](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ja) を使用してマークアップをレンダリングします。 HTMLテンプレート言語 (HTL) は、AEMコンポーネントがオーサリングされたコンテンツに基づいて動的にマークアップをレンダリングし、コンポーネントを再利用する際に使用する、軽量なテンプレート言語です。 例えば、製品ティーザーを何度も繰り返し再利用して、異なる製品を表示できます。
 
-この場合、ティーザーの上にバナーをレンダリングして、カスタム属性に基づいて製品が「エコフレンドリー」であることを示します。 のデザインパターン [マークアップのカスタマイズ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ja#customizing-the-markup) のコンポーネントは、AEM CIF コアコンポーネントだけでなく、すべてのAEMコンポーネントに標準です。
+この場合、ティーザーの上にバナーをレンダリングして、カスタム属性に基づいて製品が「エコフレンドリー」であることを示します。 次のデザインパターン： [マークアップのカスタマイズ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ja#customizing-the-markup) のコンポーネントは、AEM CIF コアコンポーネントだけでなく、すべてのAEMコンポーネントに対して標準です。
 
 >[!NOTE]
 >
-> CIF 製品およびカテゴリピッカー（この製品ティーザーや CIF ページコンポーネントなど）を使用してコンポーネントをカスタマイズする場合は、必要な `cif.shell.picker` コンポーネントダイアログの clientlib。 詳しくは、[CIF 製品とカテゴリピッカーの使用](use-cif-pickers.md)を参照してください。
+> CIF 製品およびカテゴリピッカー（この製品ティーザーや CIF ページコンポーネントなど）を使用してコンポーネントをカスタマイズする場合は、必ず必要な `cif.shell.picker` コンポーネントダイアログの clientlib。 詳しくは、[CIF 製品とカテゴリピッカーの使用](use-cif-pickers.md)を参照してください。
 
 1. IDE で、`ui.apps` モジュールに移動して展開し、フォルダー階層を `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` まで展開し、`.content.xml` ファイルを検査します。
 
@@ -417,7 +417,7 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
 
    製品の `eco_friendly` 属性が「**はい**」に設定されている場合、ページに「エコフレンドリー」というテキストが表示されます。異なる製品に切り替えて、動作の変更を確認してください。
 
-1. 次にAEMを開く `error.log` 追加されたログ文を確認する。 この `error.log` 次の値 `<AEM SDK Install Location>/crx-quickstart/logs/error.log`.
+1. 次にAEMを開く `error.log` をクリックして、追加されたログ文を確認します。 The `error.log` 次の値 `<AEM SDK Install Location>/crx-quickstart/logs/error.log`.
 
    AEMログを検索して、Sling モデルに追加されたログ文を確認します。
 

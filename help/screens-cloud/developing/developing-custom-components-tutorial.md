@@ -2,9 +2,9 @@
 title: Screens as a Cloud Service 用カスタムコンポーネントの開発
 description: 以下のチュートリアルでは、AEM Screens 用のカスタムコンポーネントを作成する手順について説明します。AEM Screens では、他の AEM 製品の様々な既存のデザインパターンやテクノロジーを再利用しています。このチュートリアルでは、AEM Screens 用に開発する際の相違点と特別な考慮事項について重点的に説明します。
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2108'
+source-wordcount: '2107'
 ht-degree: 72%
 
 ---
@@ -69,7 +69,7 @@ Screens プロジェクトのソースコードは、通常、マルチモジュ
 
    CRXDE Lite での ui.apps コードの表現
 
-   この **`helloworld`** コンポーネントはプレースホルダーに過ぎません。 チュートリアルの過程で、機能が追加され、作成者はコンポーネントに表示されるメッセージを更新できます。
+   The **`helloworld`** コンポーネントはプレースホルダーに過ぎません。 チュートリアルの過程で、機能が追加され、作成者はコンポーネントに表示されるメッセージを更新できます。
 
 1. **screens-weretail-run.ui.content** パッケージでは、以下のパスにコードがインストールされます。
 
@@ -197,7 +197,7 @@ AEM Screens には、従来の WCM Sites コンポーネントには必ずしも
 
 1. **メッセージのタブが含まれるように Hello World ダイアログを更新します。**
 
-   次の条件に一致するようにダイアログボックスを更新します。 最終的なダイアログボックスの JCR ノード構造は、XML で次に示します。
+   次の条件に一致するようにダイアログボックスを更新します。 最終的なダイアログボックスの JCR ノード構造は、XML で以下に示します。
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -255,7 +255,7 @@ AEM Screens には、従来の WCM Sites コンポーネントには必ずしも
    </jcr:root>
    ```
 
-   この `textfield` メッセージが `message` そして `numberfield` 期間が、という名前のプロパティに保存される場合、 `duration`. `/apps/weretail-run/components/content/helloworld/production.html` では、これら 2 つのプロパティは `${properties.message}` および `${properties.duration}` として HTL で参照されます。
+   The `textfield` という名前のプロパティに保存された場合、 `message` そして `numberfield` 期間が、という名前のプロパティに保存される場合、 `duration`. `/apps/weretail-run/components/content/helloworld/production.html` では、これら 2 つのプロパティは `${properties.message}` および `${properties.duration}` として HTL で参照されます。
 
    ![Hello World — 完成したダイアログボックス](/help/screens-cloud/developing/assets/2018-04-29_at_5_21pm.png)
 
@@ -273,7 +273,7 @@ AEM Screensのコンポーネントは、編集モードとプレビュー/実�
 
    ![2018-04-30_at_1046am](/help/screens-cloud/developing/assets/2018-04-30_at_1046am.png)
 
-1. の `clientlibs` フォルダー、名前を付けたノードを作成します。 `shared` タイプ `cq:ClientLibraryFolder.`
+1. の下 `clientlibs` フォルダー、名前を付けたノードを作成します。 `shared` のタイプ `cq:ClientLibraryFolder.`
 
    ![2018-04-30_at_1115am](/help/screens-cloud/developing/assets/2018-04-30_at_1115am.png)
 
@@ -327,7 +327,7 @@ AEM Screensのコンポーネントは、編集モードとプレビュー/実�
    }
    ```
 
-1. をコピーして貼り付けます。 `shared` クライアントライブラリフォルダーを作成して、という名前のクライアントライブラリを作成します。 `production`.
+1. をコピーして貼り付けます。 `shared` クライアントライブラリフォルダーを使用して、という名前のクライアントライブラリを作成します。 `production`.
 
    ![共有クライアントライブラリをコピーして実稼動用の新しいクライアントライブラリを作成する](/help/screens-cloud/developing/assets/copy-clientlib.gif)
 
@@ -398,7 +398,7 @@ We.Retail Run プロジェクトに固有のすべての設定を保存する We
 
 Hello World コンポーネントは、シーケンスチャネルでの使用を目的としています。 このコンポーネントをテストするために、新しいシーケンスチャネルを作成します。
 
-1. 「AEM Start」メニューから、に移動します。 **スクリーン** > **We.Retail Ru** n > を選択し、 **チャネル**.
+1. 「AEM Start」メニューから、に移動します。 **Screens** > **We.Retail Ru** n > を選択し、 **チャネル**.
 
 1. 「**作成**」ボタンをクリックします。
 

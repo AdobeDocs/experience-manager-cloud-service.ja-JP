@@ -2,9 +2,9 @@
 title: AEM 内での外部 SPA の編集
 description: このドキュメントでは、スタンドアロン SPA を AEM インスタンスにアップロードし、編集可能なコンテンツのセクションを追加し、オーサリングを有効にするための推奨手順について説明します。
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2421'
+source-wordcount: '2418'
 ht-degree: 43%
 
 ---
@@ -49,7 +49,7 @@ AEM SPA 機能の利用は、次の 3 つのパッケージに依存していま
 * [`@adobe/aem-spa-component-mapping`](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [`@adobe/aem-spa-page-model-manager`](https://www.npmjs.com/login?next=/package/@adobe/aem-spa-model-manager)
 
-この `@adobe/aem-spa-page-model-manager` パッケージには、Model Manager を初期化し、AEMインスタンスからモデルを取得するための API が用意されています。 その後、このモデルを使用して、`@adobe/aem-react-editable-components` と `@adobe/aem-spa-component-mapping` の API を使用して AEM コンポーネントをレンダリングできます。
+The `@adobe/aem-spa-page-model-manager` パッケージには、Model Manager を初期化し、AEMインスタンスからモデルを取得するための API が用意されています。 その後、このモデルを使用して、`@adobe/aem-react-editable-components` と `@adobe/aem-spa-component-mapping` の API を使用して AEM コンポーネントをレンダリングできます。
 
 #### インストール {#installation}
 
@@ -73,7 +73,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 この例では、`ModelManager` が初期化され、空の `ModelStore` が作成されます。
 
-この `initializationAsync` 必要に応じて、を受け入れることができます。 `options` オブジェクトを次のパラメーターとして指定します。
+The `initializationAsync` 必要に応じて、を受け入れることができます。 `options` オブジェクトを次のパラメーターとして指定します。
 
 * `path` - 初期化時に、定義されたパスのモデルが取得され、`ModelStore` に保存されます。このパスは、 `rootModel` 必要に応じて、初期化時に。
 * `modelClient` - モデルの取得を担当するカスタムクライアントを提供できます。
@@ -103,7 +103,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
    >[!NOTE]
    >
-   >この例では、コンポーネントに別のバージョンがあります。AEMは React コンポーネントをラップおよびアンラップしました。 コンポーネントを明示的に使用する場合は、ラップされたバージョンを使用する必要があります。 コンポーネントがページの一部になっている場合は、SPA エディターで現在行われているように、デフォルトのコンポーネントを引き続き使用することができます。
+   >この例では、AEMのラップされた React コンポーネントとアンラップされた React コンポーネントの 2 つのバージョンが、コンポーネントに別々に存在します。 コンポーネントを明示的に使用する場合は、ラップされたバージョンを使用する必要があります。 コンポーネントがページの一部になっている場合は、SPA エディターで現在行われているように、デフォルトのコンポーネントを引き続き使用することができます。
 
 1. コンポーネント内のコンテンツをレンダリングします。
 
@@ -111,7 +111,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
    ![テキストコンポーネントのプロパティ](assets/external-spa-text-properties.png)
 
-   これらの値は、新しく作成されたにプロパティとして渡されます `AEMText` React コンポーネントを使用し、コンテンツのレンダリングに使用できます。
+   これらの値は、新しく作成された `AEMText` React コンポーネントにプロパティとして渡され、コンテンツのレンダリングに使用できます。
 
    ```javascript
    import React from 'react';
@@ -157,8 +157,8 @@ WKND SPAプロジェクトからテキストを追加する必要がある場合
 
 1. 表示するノードのパスを指定します。
 
-   * `pagePath`:ノードを含むページ（この例では） `/content/wknd-spa-react/us/en/home`
-   * `itemPath`:ページ内のノードのパス（この例では） `root/responsivegrid/text`
+   * `pagePath`：ノードを含むページ（この例では） `/content/wknd-spa-react/us/en/home`
+   * `itemPath`：ページ内のノードのパス（この例では） `root/responsivegrid/text`
       * ページ上の含まれる項目の名前で構成されます。
 
    ![ノードのパス](assets/external-spa-path.png)
@@ -205,7 +205,7 @@ mvn clean install -PautoInstallSinglePackage
    >
    >この例では、ラップされた React テキストの代わりに、ラップされていない React テキストコンポーネントが使用されます `AEMText` 作成済み。 これは、コンポーネントがページ/コンテナの一部で、単独ではない場合、コンテナはコンポーネントの再帰的なマッピングを処理するからです。 また、オーサリング機能を有効にしたり、追加のラッパーを子ごとに使用する必要はありません。
 
-1. SPAにオーサリング可能なページを追加するには、「 」セクションの同じ手順に従います [オーサリング可能なコンポーネントをページに追加](#add-authorable-component-to-page). ここでは、 `itemPath` プロパティ。
+1. SPAにオーサリング可能なページを追加するには、「 」セクションの同じ手順に従います。 [オーサリング可能なコンポーネントをページに追加する](#add-authorable-component-to-page). ここでは、 `itemPath` プロパティ。
 
 #### AEM でのページコンテンツの確認 {#verify-page-content}
 
@@ -217,7 +217,7 @@ mvn clean install -PautoInstallSinglePackage
 
 ### 仮想リーフコンポーネント {#virtual-leaf-components}
 
-前の例では、既存のAEMコンテンツを含むSPAにコンポーネントを追加しました。 ただし、AEMでコンテンツをまだ作成していないのに、後でコンテンツ作成者が追加する必要がある場合もあります。 このシナリオに対応するために、フロントエンド開発者はSPA内の適切な場所にコンポーネントを追加できます。 これらのコンポーネントは、AEMのエディターで開くとプレースホルダーを表示します。 コンテンツ作成者がこれらのプレースホルダー内にコンテンツを追加すると、ノードが JCR 構造内に作成され、コンテンツが保持されます。 作成したコンポーネントは、スタンドアロンのリーフコンポーネントと同じ操作セットを許可します。
+前の例では、既存のAEMコンテンツを含むSPAにコンポーネントを追加しました。 ただし、AEMでコンテンツをまだ作成していないのに、後でコンテンツ作成者が追加する必要がある場合もあります。 このシナリオに対応するために、フロントエンド開発者はSPA内の適切な場所にコンポーネントを追加できます。 これらのコンポーネントは、AEMのエディターで開くとプレースホルダーを表示します。 コンテンツ作成者がこれらのプレースホルダー内にコンテンツを追加すると、ノードが JCR 構造内に作成され、コンテンツが保持されます。 作成したコンポーネントは、スタンドアロンのリーフコンポーネントと同じ操作のセットを許可します。
 
 この例では、 `AEMText` 以前に作成されたコンポーネント。 WKND ホームページ上の既存のテキストコンポーネントの下に新しいテキストを追加する場合。 コンポーネントの追加は、通常のリーフコンポーネントの場合と同じです。ただし、 `itemPath` は、新しいコンポーネントを追加する必要があるパスに更新できます。
 
@@ -235,7 +235,7 @@ mvn clean install -PautoInstallSinglePackage
 
 >[!NOTE]
 >
->次を確認します。 `AEMText` コンポーネントは、 `resourceType` を設定して、この機能を有効にできます。
+>次を確認します。 `AEMText` コンポーネントには、 `resourceType` を設定して、この機能を有効にできます。
 
 これで、「 」セクションの手順に従って、AEMに変更をデプロイできます。 [AEMでのテキストコンテンツの編集の検証](#verify-text-edit). 現在存在しないプレースホルダーが表示されます `text_20` ノード。
 
@@ -253,7 +253,7 @@ mvn clean install -PautoInstallSinglePackage
 * `pagePath` のパスに指定されたページノードは、AEM プロジェクト内に存在する必要があります。
 * 作成するノードの名前は、`itemPath` で指定する必要があります。
 * コンポーネントは任意のレベルで作成できます。
-   * 以下を指定する場合、 `itemPath='text_20'` 前の例では、新しいノードはページの直下、つまり `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
+   * 次の項目を指定した場合、 `itemPath='text_20'` 前の例では、新しいノードはページの直下 ( つまり、 `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
 * 新しいノードが作成されるノードへのパスは、`itemPath` 経由で提供された場合に有効である必要があります。
    * この例では、新しいノード `text_20` を作成できるように、`root/responsivegrid` が存在する必要があります。
 * リーフコンポーネントの作成のみがサポートされます。仮想コンテナと仮想ページは、今後のバージョンでサポートされる予定です。
@@ -268,7 +268,7 @@ mvn clean install -PautoInstallSinglePackage
 
 ![コンテナの場所](assets/container-location.png)
 
-この `newContainer` は、まだAEMに存在しません。
+The `newContainer` は、まだAEMに存在しません。
 
 このコンポーネントを含んだページを AEM で編集すると、コンテナの空のプレースホルダーが表示され、作成者はこのプレースホルダーにコンテンツを追加できます。
 
@@ -290,7 +290,7 @@ mvn clean install -PautoInstallSinglePackage
 
 * 追加できるコンポーネントを決定するポリシーは、親コンテナから継承されます。
 * 作成するコンテナの直近の親がAEMに存在する必要があります。
-   * コンテナ `root/responsivegrid` がAEMコンテナに存在する場合は、パス `root/responsivegrid/newContainer`.
+   * コンテナの場合 `root/responsivegrid` がAEMコンテナに存在する場合は、パス `root/responsivegrid/newContainer`.
    * ただし、 `root/responsivegrid/newContainer/secondNewContainer` は使用できません。
 * 一度に 1 つの新しいレベルのコンポーネントのみを作成できます。
 
@@ -343,11 +343,11 @@ mvn clean install -PautoInstallSinglePackage
 
 1. SPA ルーティング内のヘルパーを追加します。
 
-   * 新しく作成されたページは、AEMで期待されたコンテンツをまだレンダリングできません。 これは、ルータが `/test` 一方、AEMのアクティブパスは `/wknd-spa-react/us/en/test`. URL のAEM固有の部分に対応するには、SPA側にヘルパーを追加する必要があります。
+   * 新しく作成されたページは、AEMで期待されたコンテンツをまだレンダリングできません。 この理由は、ルータが次のパスを想定しているためです。 `/test` 一方、AEMのアクティブパスは `/wknd-spa-react/us/en/test`. URL のAEM固有の部分に対応するには、SPA側にヘルパーを追加する必要があります。
 
    ![ルーティングヘルパー](assets/external-spa-router-helper.png)
 
-   * この `toAEMPath` ～が提供するヘルパー `@adobe/cq-spa-page-model-manager` を使用できます。 アプリケーションが AEM インスタンスで開かれる場合に、ルーティング用に指定されたパスを AEM 固有の部分を含めるように変換します。次のパラメーターを受け取ります。
+   * The `toAEMPath` ～が提供するヘルパー `@adobe/cq-spa-page-model-manager` を使用できます。 アプリケーションが AEM インスタンスで開かれる場合に、ルーティング用に指定されたパスを AEM 固有の部分を含めるように変換します。次のパラメーターを受け取ります。
       * ルーティングに必要なパス
       * SPA が編集される AEM インスタンスのオリジン URL
       * 最初の手順で決定した AEM のプロジェクトルート
@@ -356,11 +356,11 @@ mvn clean install -PautoInstallSinglePackage
 
 1. AEM でのページの編集を確認します。
 
-   * プロジェクトを AEM にデプロイし、新しく作成した `test` ページに移動します。これで、ページコンテンツがレンダリングされ、AEM コンポーネントが編集可能になります。
+   * プロジェクトをAEMにデプロイし、新しく作成した `test` ページに貼り付けます。 これで、ページコンテンツがレンダリングされ、AEM コンポーネントが編集可能になります。
 
 ## フレームワークの制限 {#framework-limitations}
 
-RemotePage コンポーネントは、実装が、 [ここにある](https://github.com/shellscape/webpack-manifest-plugin). ただし、RemotePage コンポーネントは、（remote-page-next コンポーネントを介して）React フレームワークと連携することをテストされただけなので、Angularなど他のフレームワークからのアプリケーションのリモート読み込みはサポートされていません。
+RemotePage コンポーネントは、実装がアセットマニフェストのようなアセットマニフェストを提供することを想定しています [ここにある](https://github.com/shellscape/webpack-manifest-plugin). ただし、RemotePage コンポーネントは、（remote-page-next コンポーネントを介して）React フレームワークと連携することをテストされただけなので、Angularなど他のフレームワークからのアプリケーションのリモート読み込みはサポートされていません。
 
 ## その他のリソース {#additional-resources}
 

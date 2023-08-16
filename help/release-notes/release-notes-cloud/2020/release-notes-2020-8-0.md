@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の 2020.8.0 リリースのリリースノート。'
 description: "[!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 のリリースノート。"
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 89%
+source-wordcount: '1038'
+ht-degree: 87%
 
 ---
 
@@ -84,7 +84,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
   詳しくは、 [エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md) を参照してください。
 
-* Assets プログラムで新しく作成した環境が、スマートコンテンツサービスで自動的に設定されるようになりました。
+* アセットプログラムで新しく作成した環境は、スマートコンテンツサービスを使用して自動的に設定されるようになりました。
 
 * 休止状態の環境を Cloud Manager の&#x200B;**概要**&#x200B;ページで休止解除できます。
 

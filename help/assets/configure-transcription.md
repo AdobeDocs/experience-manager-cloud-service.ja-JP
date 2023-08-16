@@ -11,21 +11,21 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1694'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
 # [!DNL Experience Manager Assets] のトランスクリプションの設定 {#configure-transcription-service}
 
 トランスクリプションとは、音声認識技術を使用して、オーディオまたはビデオファイル内の音声をテキストに変換するプロセス（音声テキスト変換）です。
-[!DNL Adobe Experience Manager Assets] には、[!DNL Azure Media Services] 設定されています。このサービスは、サポートされているオーディオまたはビデオファイルに含まれている音声言語のテキストトランスクリプトを WebVTT（.vtt）形式で自動的に生成します。オーディオまたはビデオアセットが [!DNL Experience Manager Assets] で処理される際に、トランスクリプションサービスによって、オーディオまたはビデオアセットのテキストトランスクリプトレンディションが自動的に生成され、オリジナルのアセットが存在する Assets リポジトリー内の場所に保存されます。この [!DNL Experience Manager Assets] 転写サービスを使用すると、マーケターは、アクセシビリティとローカライゼーションをサポートすることで、テキストコンテンツの発見性を高め、オーディオとビデオのコンテンツを効果的に管理し、アセットの ROI を向上できます。
+[!DNL Adobe Experience Manager Assets] には、[!DNL Azure Media Services] 設定されています。このサービスは、サポートされているオーディオまたはビデオファイルに含まれている音声言語のテキストトランスクリプトを WebVTT（.vtt）形式で自動的に生成します。オーディオまたはビデオアセットが [!DNL Experience Manager Assets] で処理される際に、トランスクリプションサービスによって、オーディオまたはビデオアセットのテキストトランスクリプトレンディションが自動的に生成され、オリジナルのアセットが存在する Assets リポジトリー内の場所に保存されます。The [!DNL Experience Manager Assets] 転写サービスを使用すると、マーケターは、アクセシビリティとローカライゼーションをサポートすることで、テキストコンテンツの発見性を高め、オーディオとビデオのコンテンツを効果的に管理し、アセットの ROI を向上できます。
 
-トランスクリプトは、音声コンテンツのテキストバージョンです。OTT プラットフォームで視聴している映画がその一例です。これには、多くの場合、アクセシビリティや他の言語でのコンテンツ利用に役立つキャプションやサブタイトルがあります。または、マーケティング、学習、エンターテイメントの目的で使用されるオーディオやビデオファイルもその例です。これらのエクスペリエンスは、トランスクリプションで始まり、必要に応じて書式設定や翻訳が行われます。オーディオやビデオのトランスクリプションは、手動で行うと非常に時間がかかりエラーが発生しやすいプロセスです。また、オーディオ／ビデオコンテンツのニーズが絶え間なく変化することを考えると、手動プロセスで規模を拡大することは困難でもあります。[!DNL Experience Manager Assets] は Azure の AI ベースの転写を使用し、オーディオおよびビデオアセットの高度な処理を可能にし、タイムスタンプの詳細と共にテキストの転写（.vtt ファイル）を生成します。 トランスクリプション機能は、Assets と共に Dynamic Media でもサポートされています。
+トランスクリプトは、音声コンテンツのテキストバージョンです。OTT プラットフォームで視聴している映画がその一例です。これには、多くの場合、アクセシビリティや他の言語でのコンテンツ利用に役立つキャプションやサブタイトルがあります。または、マーケティング、学習、エンターテイメントの目的で使用されるオーディオやビデオファイルもその例です。これらのエクスペリエンスは、トランスクリプションで始まり、必要に応じて書式設定や翻訳が行われます。オーディオやビデオのトランスクリプションは、手動で行うと非常に時間がかかりエラーが発生しやすいプロセスです。また、オーディオ／ビデオコンテンツのニーズが絶え間なく変化することを考えると、手動プロセスで規模を拡大することは困難でもあります。[!DNL Experience Manager Assets] では、Azure の AI ベースのトランスクリプションを使用して、オーディオアセットおよびビデオアセットを大規模に処理し、テキストトランスクリプト（.vtt ファイル）をタイムスタンプの詳細と共に生成します。トランスクリプション機能は、Assets と共に Dynamic Media でもサポートされています。
 
-トランスクリプション機能は、[!DNL Experience Manager Assets] でコストをかけずに利用できます。ただし、管理者には、でトランスクリプションサービスを設定するためにユーザーの Azure 資格情報が必要です [!DNL Experience Manager Assets]. また、Microsoft®から[体験版資格情報を取得して](https://azure.microsoft.com/ja-jp/pricing/details/media-services/)、Assets のオーディオまたはビデオトランスクリプション機能を試すこともできます。
+トランスクリプション機能は、[!DNL Experience Manager Assets] でコストをかけずに利用できます。ただし、管理者が [!DNL Experience Manager Assets] でトランスクリプションサービスを設定するには、ユーザーの Azure 資格情報が必要です。また、Microsoft®から[体験版資格情報を取得して](https://azure.microsoft.com/ja-jp/pricing/details/media-services/)、Assets のオーディオまたはビデオトランスクリプション機能を試すこともできます。
 
 ## トランスクリプションの前提条件 {#prerequisites}
 
@@ -101,7 +101,7 @@ ht-degree: 94%
 >
 >フォルダーに適用された処理プロファイルはツリー全体で機能しますが、サブフォルダーに適用された別のプロファイルでオーバーライドすることができます。
 >
->アセットがフォルダーにアップロードされると、Experience Managerは、そのフォルダーのプロパティと通信して、処理プロファイルを識別します。 何も適用されない場合は、適用する処理プロファイルが階層内の親フォルダーで確認されます。
+>アセットがフォルダーにアップロードされると、Experience Manager はそのフォルダーのプロパティと通信して、処理プロファイルを特定します。何も適用されない場合は、適用する処理プロファイルが階層内の親フォルダーで確認されます。
 
 
 ## オーディオまたはビデオアセットのトランスクリプションの生成 {#generate-transcription}
@@ -172,12 +172,12 @@ ht-degree: 94%
 * [アセットを翻訳](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットの検索](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットを検索](search-assets.md)
+* [接続されたアセット](use-assets-across-connected-assets-instances.md)
 * [アセットレポート](asset-reports.md)
 * [メタデータスキーマ](metadata-schemas.md)
-* [アセットのダウンロード](download-assets-from-aem.md)
-* [メタデータの管理](manage-metadata.md)
+* [アセットをダウンロード](download-assets-from-aem.md)
+* [メタデータを管理](manage-metadata.md)
 * [検索ファセット](search-facets.md)
-* [コレクションの管理](manage-collections.md)
-* [一括メタデータ読み込み](metadata-import-export.md)
+* [コレクションを管理](manage-collections.md)
+* [メタデータの一括読み込み](metadata-import-export.md)

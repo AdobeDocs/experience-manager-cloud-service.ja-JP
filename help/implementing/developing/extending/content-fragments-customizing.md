@@ -2,10 +2,10 @@
 title: コンテンツフラグメントのカスタマイズと拡張
 description: コンテンツフラグメントは、標準アセットを拡張します。 カスタマイズ方法を学びます。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 964599b919a7299da33a5f0ac72ad5ea644097d8
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1817'
-ht-degree: 76%
+source-wordcount: '1812'
+ht-degree: 75%
 
 ---
 
@@ -96,7 +96,7 @@ Assets コアと統合するには：
 >
 >[コンテンツフラグメントコンポーネントは、コアコンポーネントの一部です](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ja)。詳しくは、 [コアコンポーネントの開発](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ja) を参照してください。
 
-コンテンツフラグメントは、他のアセットタイプと同様に、AEMページから参照できます。 AEM では、**[コンテンツフラグメントコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ja)**&#x200B;を利用できます。これは、[コンテンツフラグメントをページ上に含めることができるコンポーネント](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page)です。この&#x200B;**[コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ja)**&#x200B;コアコンポーネントを拡張することもできます。
+コンテンツフラグメントは、他のアセットタイプと同様に、AEMページから参照できます。 AEMが **[コンテンツフラグメントコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ja)** - a [ページにコンテンツフラグメントを組み込むためのコンポーネント](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). この&#x200B;**[コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ja)**&#x200B;コアコンポーネントを拡張することもできます。
 
 * このコンポーネントは、`fragmentPath` プロパティを使用して、実際のコンテンツフラグメントを参照します。`fragmentPath` プロパティは、その他のアセットタイプの類似プロパティと同じ方法で処理されます。例えば、コンテンツフラグメントが別の場所に移動された場合などです。
 
@@ -176,7 +176,7 @@ Assets コアと統合するには：
 
 * **コンテンツフラグメント**（[ContentFragment](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)）
 
-  このインターフェイスでは、コンテンツフラグメントを抽象化して使用できます。
+  このインターフェイスを使用すると、コンテンツフラグメントを抽象的に操作できます。
 
   このインターフェイスでは、次のことを実行できます。
 

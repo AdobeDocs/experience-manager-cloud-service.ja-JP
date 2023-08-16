@@ -2,9 +2,9 @@
 title: コンテンツの検索とインデックス作成
 description: AEM as a Cloud Serviceでのコンテンツの検索とインデックス作成について説明します。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2325'
+source-wordcount: '2324'
 ht-degree: 38%
 
 ---

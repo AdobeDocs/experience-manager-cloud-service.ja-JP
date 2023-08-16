@@ -4,9 +4,9 @@ description: ' [!DNL Assets view] 内のアセットを移動、削除、コピ�
 role: User,Leader
 contentOwner: AG
 exl-id: b01e98b9-0cc2-47c5-9f5b-79b8e6bef39f
-source-git-commit: d198b3f0c7d8469a376ba7a3e95e57c84f835dbb
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1034'
 ht-degree: 92%
 
 ---
@@ -143,7 +143,7 @@ Assets ビューを使用すると、リポジトリで使用可能なアセッ�
 
 * [アセット表示でのアセット管理に関するビデオの視聴](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html?lang=ja)
 
-* 次を使用して製品に関するフィードバックを提供： [!UICONTROL フィードバック] Assets ビューユーザーインターフェイスで使用できるオプション
+* 次を使用して製品に関するフィードバックを提供： [!UICONTROL フィードバック] Assets ビューユーザーインターフェイスで使用可能なオプション
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 

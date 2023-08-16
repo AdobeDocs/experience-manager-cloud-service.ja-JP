@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 リリースのリリースノート。'
 description: "[!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 のリリースノート。"
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1193'
 ht-degree: 95%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 95%
 
 ### [!DNL Forms] のベータ版機能 {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) を使用すると、テンプレートと XML データを組み合わせて、様々な形式のドキュメントを生成できます。このサービスでは、同期モードとバッチモードでドキュメントを生成できます。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) を使用すると、テンプレートと XML データを組み合わせて、様々な形式のドキュメントを生成できます。このサービスを使用すると、同期モードとバッチモードでドキュメントを生成できます。
 
 ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てにメールを送信します。
 
@@ -89,7 +89,7 @@ Experience Manager as a Cloud Service 2020.10.0 の Cloud Manager のリリー�
 * 環境ごとの環境変数の数が 200 に増えました。
 
 * 概要ページの環境カードに最大 3 つの環境が表示されるようになりました。「**すべてを表示**」ボタンを選択して環境の概要ページに移動し、環境の完全なリストを含む表を表示できます。
-詳しくは、 [表示環境](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) を参照してください。
+詳しくは、 [環境の表示](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) を参照してください。
 
 ### バグの修正 {#bug-fixes-cloud-manager}
 

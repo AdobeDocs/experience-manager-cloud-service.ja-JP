@@ -1,11 +1,11 @@
 ---
 title: CSV ファイルへの書き出し
-description: ページに関する情報をローカルシステムの CSV ファイルに書き出す
+description: ページに関する情報をローカルシステム上の CSV ファイルに書き出す
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 85%
+source-wordcount: '197'
+ht-degree: 81%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 85%
 >
 >ブラウザーのダウンロード機能（およびデフォルトのダウンロード先）が使用されます。
 
-**CSV の書き出しファイルを作成**&#x200B;ウィザードでは、次の要素を選択できます。
+The **CSV の書き出しファイルを作成** ウィザードで次の項目を選択できます。
 
 * 書き出すプロパティ
    * メタデータ

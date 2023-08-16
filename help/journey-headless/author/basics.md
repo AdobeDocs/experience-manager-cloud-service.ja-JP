@@ -2,10 +2,10 @@
 title: オーサリングの基本
 description: コンテンツフラグメントを使用したヘッドレス CMS のコンテンツオーサリングの概念と仕組みについて説明します。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 85%
+source-wordcount: '1714'
+ht-degree: 83%
 
 ---
 
@@ -40,7 +40,7 @@ AEMのインストールは、通常、次の 3 つの環境で構成されま�
 
 詳しくは、「オーサリングに関する概念」を参照してください。
 
-次の **コンテンツフラグメント** コンソールで、 **プレビューサービス**（公開前のテストおよびプレビュー用） 詳しくは、フラグメントの公開とプレビューを参照してください。
+次から： **コンテンツフラグメント** コンソールで、 **プレビューサービス**（公開前のテストおよびプレビュー用）。 詳しくは、フラグメントの公開とプレビューを参照してください。
 
 ### ログイン {#signing-in}
 
@@ -50,7 +50,7 @@ AEMのインストールは、通常、次の 3 つの環境で構成されま�
 * パスワード
 * ログイン画面にアクセスするためのリンク
 
-アカウントには、必要な権限が前もって設定されています。問題がある場合は、社内のプロジェクトサポートチームに問い合わせることをお勧めします。
+アカウントには、必要な権限が前もって設定されています。問題がある場合は、社内プロジェクトサポートチームに問い合わせることをお勧めします。
 
 ### ナビゲーション {#navigation}
 
@@ -141,7 +141,7 @@ You can view additional information about items using the Rail Selector. This al
 
 #### フォルダーで使用可能なコンテンツフラグメントモデルをパスとタグで制限する方法 {#tags-paths-for-models-in-folder}
 
-この節の内容は少し上級者向けです。何かを始めて試すだけでは、本当に必要ありませんが、それは *非常に* 多数のフラグメントがある場合に便利です。 だから、まだ使っていなくても、知っておくのが良い。
+この節の内容は少し上級者向けです。何かを始めて試すだけでは、本当に必要ありませんが、それは *非常に* 多数のフラグメントがある場合に便利です。 だから、まだ使っていなくても、知っておくのは良いことです。
 
 コンテンツアーキテクトは、現在のプロジェクトや他のプロジェクトに必要なすべてのコンテンツフラグメントモデルを作成しています。自分自身や他の作成者が作業を簡単に行えるように、特定のフォルダーで使用できるモデルのリストを制限できます。
 
@@ -217,7 +217,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
   ![コンテンツフラグメントエディター - マイフラグメント](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
-* 長いテキストを書き込むことができるフラグメント。ここには、テキストを管理および書式設定するための追加のオプションがあります。個々のテキストフィールドを全画面表示エディターで開くこともできます（右側の小さい画面アイコンを使用）。
+* テキストの長いセクションを記述できるフラグメント。 ここには、テキストを管理および書式設定するための追加のオプションがあります。個々のテキストフィールドを全画面表示エディターで開くこともできます（右側の小さい画面アイコンを使用）。
 
   ![コンテンツフラグメントエディター - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
@@ -233,7 +233,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 >
 >詳しくは、「バリエーション - フラグメントコンテンツのオーサリング」を参照してください。
 
-#### （おそらく）心配する必要のないもの {#what-you-probably-do-not-need-to-worry-about}
+#### （おそらく）心配する必要がないもの {#what-you-probably-do-not-need-to-worry-about}
 
 これは少し奇妙な節に思えるかもしれませんが、コンテンツフラグメントエディターを開いて調査を開始すると、コンテンツ作成者としてヘッドレスジャーニーに適用されない（おそらく）様々なオプションを確認できます。 そこで、ここでは、ヘッドレスコンテキストで無視できるものについて簡単に説明しておきます。
 
@@ -258,7 +258,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 * **ページ参照を更新**
 
-  このアクションは、 **...** （省略記号）ドロップダウン これはページのオーサリングに関係するものなので、ヘッドレス作成者向けのものではありません。
+  このアクションは、 **...** （省略記号）ドロップダウン。 これはページのオーサリングに関係するものなので、ヘッドレス作成者向けのものではありません。
 
 ### 公開 {#publishing}
 
@@ -314,7 +314,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
          * [公開を管理](/help/assets/manage-publication.md#manage-publication)
 
-      * 次の **コンテンツフラグメント** コンソール
+      * 次から： **コンテンツフラグメント** コンソール
 
          * [コンテンツフラグメントの公開とプレビュー](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
 

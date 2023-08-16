@@ -2,10 +2,10 @@
 title: ContextHub でのセグメント化の設定
 description: ContextHub を使用してセグメントを設定する方法を説明します。
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 64%
+source-wordcount: '1687'
+ht-degree: 63%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 64%
 
 このようなセグメントを使用して、訪問者に特定のターゲットコンテンツを提供します。ここで定義された[アクティビティ](activities.md)は、任意のページに追加できます。また、専用のコンテンツを適用できる訪問者セグメントを定義できます。
 
-AEM では、ユーザーエクスペリエンスを簡単にパーソナライズできます。また、セグメント定義の結果を検証することもできます。
+AEMを使用すると、ユーザーのエクスペリエンスを簡単にパーソナライズできます。 また、セグメント定義の結果を検証することもできます。
 
 ## セグメントへのアクセス {#accessing-segments}
 
-この [オーディエンス](audiences.md) コンソールは、ContextHub のセグメントとAdobe Targetアカウントのオーディエンスを管理するために使用します。 このドキュメントでは、ContextHub のセグメントの管理について取り上げます。
+The [オーディエンス](audiences.md) コンソールは、ContextHub のセグメントとAdobe Targetアカウントのオーディエンスを管理するために使用します。 このドキュメントでは、ContextHub のセグメントの管理について取り上げます。
 
 セグメントにアクセスするには、グローバルナビゲーションで&#x200B;**ナビゲーション／パーソナライズ機能／オーディエンス**&#x200B;を選択します。設定（WKND サイトなど）を選択すると、セグメントが表示されます。
 
@@ -29,8 +29,8 @@ AEM では、ユーザーエクスペリエンスを簡単にパーソナライ�
 
 ## セグメントエディター {#segment-editor}
 
-<!--The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
-**セグメントエディター**&#x200B;を使用すると、セグメントを簡単に変更できます。セグメントを編集するには、セグメントリストからセグメントを選択し、「**編集**」ボタンをクリックします。
+<!--The **Segment Editor** lets you easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
+The **セグメントエディター** を使用すると、セグメントを簡単に変更できます。 セグメントを編集するには、セグメントリストからセグメントを選択し、「**編集**」ボタンをクリックします。
 
 ![セグメントエディター](../assets/contexthub-segment-editor.png)
 
@@ -71,7 +71,7 @@ AEM では、ユーザーエクスペリエンスを簡単にパーソナライ�
 >
 >したがって、[セグメントの作成](#creating-a-new-segment)時に比較対象の値のタイプがわかる場合は、常に&#x200B;**データタイプ**&#x200B;を選択してください。次に例を示します。
 >
->プロパティを比較する場合 `profile/age`を比較する場合、比較対象のタイプが **数値**&#x200B;例えば、 `profile/age` が設定されていない場合、比較 `profile/age` 返される値が 30 未満 **false**&#x200B;想定どおりに
+>プロパティを比較する場合 `profile/age`を比較する場合、比較対象のタイプが **数値**&#x200B;例えば、 `profile/age` が設定されていない場合、比較 `profile/age` 返される値が 30 未満 **false**&#x200B;想定どおりに。
 
 ### 参照 {#references}
 
@@ -92,7 +92,7 @@ AEM では、ユーザーエクスペリエンスを簡単にパーソナライ�
 
    ![セグメントの追加](../assets/contexthub-create-segment.png)
 
-1. 内 **新しい ContextHub セグメント**、セグメントのタイトルと必要に応じてブースト値を入力し、をタップまたはクリックします。 **作成**.
+1. Adobe Analytics の **新しい ContextHub セグメント**、セグメントのタイトルと必要に応じてブースト値を入力し、をタップまたはクリックします。 **作成**.
 
    ![新しいセグメント](../assets/contexthub-new-segment.png)
 
@@ -101,7 +101,7 @@ AEM では、ユーザーエクスペリエンスを簡単にパーソナライ�
    * 最小値：`0`
    * 最大値：`1000000`
 
-1. セグメントコンソールで、新しく作成したセグメントを編集し、セグメントエディターで開きます。
+1. セグメントコンソールから、新しく作成したセグメントを編集し、セグメントエディターで開きます。
 1. 比較または参照をセグメントエディターにドラッグすると、デフォルトの AND コンテナに表示されます。
 1. 新しい参照またはセグメントの「設定」オプションをダブルクリックまたはタップして、特定のパラメーターを編集します。 この例では、バーゼルのユーザーをテストしています。
 
@@ -185,7 +185,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 1. ContextHub セグメントを作成します。
 1. 追加 **スクリプト参照** コンポーネントをセグメントの目的の場所に配置します。
-1. の編集ダイアログを開きます。 **スクリプト参照** コンポーネント。 If [適切に設定](#defining-a-script-to-reference)を使用する場合、スクリプトは **スクリプト名** 」ドロップダウンリストから選択できます。
+1. の編集ダイアログを開きます。 **スクリプト参照** コンポーネント。 次の場合 [適切に設定](#defining-a-script-to-reference)を使用する場合、スクリプトは **スクリプト名** 」ドロップダウンリストから選択できます。
 
 ## セグメントの整理 {#organizing-segments}
 
@@ -199,7 +199,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 1. フォルダーの「**タイトル**」と「**名前**」を指定します。
    * **タイトル**&#x200B;は内容がわかるように付けます。
-   * この **名前** はリポジトリ内のノード名になります。
+   * The **名前** はリポジトリ内のノード名になります。
       * タイトルに基づいて自動的に生成され、 [AEM命名規則](/help/implementing/developing/introduction/naming-conventions.md).
       * 必要に応じて調整できます。
 
@@ -277,7 +277,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 >
 >すべての特性は即座に解決されますが、ほとんどの場合はページの再読み込み時にのみ変更されます。
 
-このようなテストは、コンテンツページで、ターゲットコンテンツおよび関連する **アクティビティ** および **エクスペリエンス**.
+このようなテストは、コンテンツページ上で、ターゲットコンテンツおよび関連する **アクティビティ** および **エクスペリエンス**.
 
 アクティビティとエクスペリエンスを設定した場合は、アクティビティを使用してセグメントを簡単にテストできます。アクティビティの設定について詳しくは、 [ターゲットコンテンツのオーサリングに関するドキュメント](targeted-content.md).
 

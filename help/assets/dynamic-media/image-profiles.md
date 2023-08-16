@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: c15486fb3de73773fa7e255809ffaa36715cea05
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3529'
-ht-degree: 97%
+source-wordcount: '3528'
+ht-degree: 99%
 
 ---
 
@@ -72,15 +72,15 @@ ht-degree: 97%
 **画像プロファイルでのスマート切り抜きの定義に関するガイドライン**
 スマート切り抜きの使用状況を制御し、切り抜きの処理時間や保存を最適化するには、アドビでは次のガイドラインとヒントを推奨します。
 
-* スマート切り抜きを適用する画像アセットには、50 x 50 ピクセル以上のスマート切り抜きが適用される必要があります。
+* スマート切り抜きを適用する画像アセットは、少なくとも 50 x 50 ピクセル以上である必要があります。
 * 画像あたり 10～15 個のスマート切り抜きを行い、画面の比率と処理時間に合わせて最適化するのが理想的です。
 * 最終的な用途ではなく、切り抜きのサイズに基づいてスマート切り抜きに名前を付けます。これにより、単一のディメンションが複数のページで使用される重複を最適化するのに役立ちます。
 * すべてのフォルダーやアセットに適用される共通のスマート切り抜きプロファイルではなく、個別のフォルダーやサブフォルダーを対象とするページやアセットタイプごとの画像プロファイルを作成します。
 * フォルダーに適用された画像プロファイルは、サブフォルダーに適用する画像プロファイルで上書きされます。
 * 重複したスマート切り抜きのサイズを含むイメージプロファイルは許可されていません。
-* スマート切り抜きオプションが設定された重複した名前付きイメージプロファイルは、許可されていません。
+* スマート切り抜きオプションが設定されている名前付きイメージプロファイルの重複は、許可されていません。
 
-次の 2 つの画像切り抜きオプションから選択できます。ピクセル切り抜きとスマート切り抜き。 また、カラーおよび画像スウォッチの作成を自動化するか、ターゲットの解像度をまたいで切り抜きコンテンツを保持するかを選択することもできます。
+2 つの画像切り抜きオプション（ピクセル切り抜きとスマート切り抜き）から選択できます。また、カラーおよび画像スウォッチの作成を自動化するか、ターゲットの解像度をまたいで切り抜きコンテンツを保持するかを選択することもできます。
 
 >[!IMPORTANT]
 >
@@ -104,15 +104,15 @@ ht-degree: 97%
 | 画像の形式 | 大文字と小文字を区別しないファイル拡張子 | MIME タイプ | サポートされる入力カラースペース | サポートされる入力ファイルの最大サイズ | サポートされる画像の形式？ |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | はい |
-| CMYK |  |  |  |  | はい |
-| EPS |  |  |  |  | いいえ |
+| CMYK | | | | | はい |
+| EPS | | | | | いいえ |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | 対応。レンディションには、アニメーション GIF の最初のフレームが使用されます。最初のフレームは設定または変更できません。 |
 | JPEG | `.jpg` および `.jpeg` | image/jpeg | sRGB | 15 GB | はい |
 | PNG | `.png` | image/png | sRGB | 15 GB | はい |
 | PSD | `.psd` | image/vnd.adobe.photoshop | sRGB<br>CMYK | 2 GB | はい |
-| SVG |  |  |  |  | いいえ |
+| SVG | | | | | いいえ |
 | TIFF | `.tif` および `.tiff` | image/tiff | sRGB<br>CMYK | 4 GB | はい |
-| WebP／アニメーション WebP |  |  |  |  | いいえ |
+| WebP／アニメーション WebP | | | | | いいえ |
 
 ## Dynamic Media イメージプロファイルの作成 {#creating-image-profiles}
 
@@ -178,7 +178,7 @@ ht-degree: 97%
 
 #### プロパティを使用したフォルダーへの Dynamic Media イメージプロファイルの適用 {#applying-image-profiles-to-folders-from-properties}
 
-1. Experience Managerのロゴをタップし、に移動します。 **[!UICONTROL Assets]**.
+1. Experience Manager のロゴをタップし、**[!UICONTROL Assets]** に移動します。
 1. イメージプロファイルを適用する&#x200B;*フォルダー*（アセットではない）に移動します。
 1. 現在の表示に応じて、次のいずれかの操作を行います。
    * カード表示では、フォルダーの上にポインターを置き、チェックマークを選択してフォルダーを選択します。
@@ -202,13 +202,13 @@ ht-degree: 97%
 
    * `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` に移動して適切なプロファイル適用し、「**[!UICONTROL 保存]**」を選択します。
 
-      ![chlimage_1-257](assets/chlimage_1-257.png)
+     ![chlimage_1-257](assets/chlimage_1-257.png)
 
    * CRXDE Lite で、`/content/dam/jcr:content` ノードに移動します。
 
-      プロパティ `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` を追加し、「**[!UICONTROL すべて保存]**」を選択します。
+     プロパティ `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` を追加し、「**[!UICONTROL すべて保存]**」を選択します。
 
-      ![configure_image_profiles](assets/configure_image_profiles.png)
+     ![configure_image_profiles](assets/configure_image_profiles.png)
 
 ## 単一の画像のスマート切り抜きまたはスマートスウォッチの編集 {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
@@ -272,37 +272,35 @@ ht-degree: 97%
 
    * 画像の表示サイズを調整します。
 
-       ブレークポイント名のドロップダウンリストの右側にあるスライダーバーを左右にドラッグして表示可能な画像表示のサイズを変更します。
+      ブレークポイント名のドロップダウンリストの右側にあるスライダーバーを左右にドラッグして表示可能な画像表示のサイズを変更します。
 
-      ![edit_smart_crops-sliderbar](assets/edit_smart_crops-sliderbar.png)
+     ![edit_smart_crops-sliderbar](assets/edit_smart_crops-sliderbar.png)
 
    * ブレークポイント名に基づいて、表示可能な画像のリストをフィルタリングします。以下の例では、「中」というブレークポイント名で画像を絞り込んでいます。
 
-       ページの右上隅にあるドロップダウンリストから、ブレークポイント名を選択して、表示する画像を絞り込みます（上記の画像を参照してください）。
+      ページの右上隅にあるドロップダウンリストから、ブレークポイント名を選択して、表示する画像を絞り込みます（上記の画像を参照してください）。
 
-      ![edit_smart_crops-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
+     ![edit_smart_crops-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
 
    * スマート切り抜きボックスのサイズを変更します。次のいずれかの操作を行います。
 
       * 画像にスマート切り抜きまたはスマートスウォッチのみが適用されている場合は、画像の切り抜きボックスのコーナーハンドルをドラッグして、切り抜きの表示可能領域のサイズを調整します。
       * 画像にスマート切り抜きとスマートスウォッチの両方が適用されている場合は、画像の切り抜きボックスのコーナーハンドルをドラッグして、切り抜きの表示可能領域のサイズを調整します。または、画像の下のスマートスウォッチを選択し（カラースウォッチは静的です）、切り抜きボックスの隅のハンドルをドラッグします。スウォッチの表示可能領域のサイズを調整します。
 
-      ![画像のスマート切り抜きのサイズ変更](assets/edit_smart_crops-resize.png)
+     ![画像のスマート切り抜きのサイズ変更](assets/edit_smart_crops-resize.png)
 
    * スマート切り抜きボックスを移動します。次のいずれかの操作を行います。
 
       * 画像にスマート切り抜きまたはスマートスウォッチのみが適用されている場合は、画像の切り抜きボックスを新しい場所にドラッグします。
       * 画像にスマート切り抜きとスマートスウォッチの両方が含まれている場合は、画像上でスマート切り抜きボックスを新しい場所にドラッグします。または、画像の下部にあるスマートスウォッチを選択してから（カラースウォッチは静的です）、スマートスウォッチの切り抜きボックスを新しい場所にドラッグします。
 
-      ![edit_smart_crops-move](assets/edit_smart_crops-move.png)
+     ![edit_smart_crops-move](assets/edit_smart_crops-move.png)
 
    * すべての編集作業を取り消し、元のスマート切り抜きまたはスマートスウォッチを復元します（現在の編集セッションにのみ適用されます）。
 
-      画像の上にある「**[!UICONTROL 元に戻す]**」を選択します。
+     画像の上にある「**[!UICONTROL 元に戻す]**」を選択します。
 
-      ![edit_smart_crops-revert](assets/edit_smart_crops-revert.png)
-
-
+     ![edit_smart_crops-revert](assets/edit_smart_crops-revert.png)
 
 1. ページの右上付近にある「**[!UICONTROL 保存]**」を選択し、「**[!UICONTROL 閉じる]**」を選択して、アセットのフォルダーに戻ります。
 

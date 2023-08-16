@@ -2,16 +2,16 @@
 title: Sling アダプターの使用
 description: Sling には、Adaptable インターフェイスを実装するオブジェクトを簡単に翻訳するためのアダプターパターンが用意されています
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2214'
+source-wordcount: '2213'
 ht-degree: 19%
 
 ---
 
 # Sling アダプターの使用 {#using-sling-adapters}
 
-[Sling](https://sling.apache.org) オファー [アダプタパターン](https://sling.apache.org/documentation/the-sling-engine/adapters.html) 実装するオブジェクトを簡単に移動するには [適応可能](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) インターフェイス。 このインターフェイスは、汎用の [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) オブジェクトを引数として渡されるクラス型に変換するメソッド。
+[Sling](https://sling.apache.org) をオファー [アダプターパターン](https://sling.apache.org/documentation/the-sling-engine/adapters.html) 実装するオブジェクトを簡単に移動するには [適応可能](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) インターフェイス。 このインターフェイスは、汎用の [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) オブジェクトを引数として渡されるクラス型に変換するメソッド。
 
 例えば、Resource オブジェクトを対応する Node オブジェクトに変換するには、次の操作を行うだけで済みます。
 
@@ -29,7 +29,7 @@ Node node = resource.adaptTo(Node.class);
 
 * 内部的なコンテキストオブジェクトを渡す必要があるオブジェクトのショートカット作成。
 
-  例えば、JCR ベースの [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) リクエストの [`JCR Session`](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html)は、そのリクエストセッションに基づいて動作する多くのオブジェクト ( [`PageManager`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) または [`UserManager`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/security/UserManager.html).
+  例えば、JCR ベースの [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) は、リクエストの [`JCR Session`](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html)は、そのリクエストセッションに基づいて動作する多くのオブジェクト ( 例えば、 [`PageManager`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) または [`UserManager`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/security/UserManager.html).
 
 * サービスへのショートカット。
 
@@ -69,7 +69,7 @@ null ケースを適切に処理することが重要です。 JSP レンダリ�
 
 * これら 2 つの組み合わせ。
 
-最初の例では、Java™のドキュメントに次の内容が示されます `adaptTo-targets` 可能です。 ただし、JCR ベースのリソースなどの特定のサブクラスでは、多くの場合、この文は使用できません。 後者の場合、 `AdapterFactory` は通常、バンドルのプライベートクラスの一部なので、クライアント API で公開されず、Java™ドキュメントにも記載されません。 理論的には、 `AdapterFactory` の実装 [OSGi](/help/implementing/deploying/configuring-osgi.md) service runtime を参照し、「アダプタブル」（ソースとターゲット）の設定を確認しますが、相互にマッピングすることはできません。 最終的には、内部ロジックに依存し、ドキュメントに記載する必要があります。 従って、参照はこちらです。
+最初の例では、Java™のドキュメントに次の内容が示されます。 `adaptTo-targets` 可能です。 ただし、JCR ベースのリソースなどの特定のサブクラスでは、多くの場合、この文は使用できません。 後者の場合、 `AdapterFactory` は通常、バンドルのプライベートクラスの一部なので、クライアント API で公開されず、Java™ドキュメントにも記載されません。 理論的には、 `AdapterFactory` の実装 [OSGi](/help/implementing/deploying/configuring-osgi.md) service runtime を参照し、「アダプタブル」（ソースとターゲット）の設定を確認しますが、相互にマッピングすることはできません。 最終的には、内部ロジックに依存し、ドキュメントに記載する必要があります。 従って、参照はこちらです。
 
 ## 参照 {#reference}
 
@@ -101,19 +101,19 @@ null ケースを適切に処理することが重要です。 JSP レンダリ�
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">InheritanceValueMap</a></td>
-   <td>の拡張 <a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a> これにより、プロパティを探す際にリソースの階層が考慮される</td>
+   <td>の拡張 <a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a> これにより、プロパティを探す際にリソースの階層が考慮されます。</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">ModifiableValueMap</a></td>
-   <td>の拡張 <a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>：そのノードのプロパティを変更できます。</td>
+   <td>の拡張 <a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>（そのノードのプロパティを変更できます）</td>
   </tr>
   <tr>
    <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td>
-   <td>ファイルリソースのバイナリコンテンツを返します ( ファイルリソースが JCR ノードベースのリソースで、ノードタイプが <code>nt:file</code> または <code>nt:resource</code>;バンドルリソースの場合はファイルの内容（ファイルシステムリソースの場合）。 または、バイナリ JCR プロパティリソースのデータを返します。</td>
+   <td>ファイルリソースのバイナリコンテンツを返します ( ファイルリソースが JCR ノードベースのリソースで、ノードタイプが <code>nt:file</code> または <code>nt:resource</code>バンドルリソースの場合は、ファイルコンテンツ（ファイルシステムリソースの場合は）。 または、バイナリ JCR プロパティリソースのデータを返します。</td>
   </tr>
   <tr>
    <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/net/URL.html">URL</a></td>
-   <td>リソースへの URL を返します ( リソースが JCR ノードベースのリソースの場合、このノードのリポジトリ URL。jar bundle URL（バンドルリソースの場合）ファイルシステムリソースの場合はファイル URL</td>
+   <td>リソースへの URL を返します（このノードが JCR ノードベースのリソースの場合はリポジトリ URL、バンドルリソースの場合は jar バンドル URL、ファイルシステムリソースの場合はファイル URL）</td>
   </tr>
   <tr>
    <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/io/File.html">ファイル</a></td>
@@ -141,7 +141,7 @@ null ケースを適切に処理することが重要です。 JSP レンダリ�
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/components/Component.html">コンポーネント</a></td>
-   <td>これが <code>cq:Component</code> ノードリソース</td>
+   <td>次の場合、 <code>cq:Component</code> ノードリソース</td>
   </tr>  
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/designer/Design.html">デザイン</a></td>
@@ -149,11 +149,11 @@ null ケースを適切に処理することが重要です。 JSP レンダリ�
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Template.html">テンプレート</a></td>
-   <td>これが <code>cq:Template</code> ノードリソース</td>
+   <td>次の場合、 <code>cq:Template</code> ノードリソース</td>
   </tr>  
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/msm/api/Blueprint.html">ブループリント</a></td>
-   <td>これが <code>cq:Template</code> ノードリソース</td>
+   <td>次の場合、 <code>cq:Template</code> ノードリソース</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/dam/api/Asset.html">アセット</a></td>
@@ -161,11 +161,11 @@ null ケースを適切に処理することが重要です。 JSP レンダリ�
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/dam/api/Rendition.html">Rendition</a></td>
-   <td>dam:Asset レンディション（dam:Assert の rendition フォルダーの下にある nt:file）の場合</td>
+   <td>dam:Asset レンディション（dam:Assert の rendition フォルダーの下にある nt:file）の場合。</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/Tag.html">タグ</a></td>
-   <td>これが <code>cq:Tag</code> ノードリソース</td>
+   <td>次の場合、 <code>cq:Tag</code> ノードリソース</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
@@ -173,7 +173,7 @@ null ケースを適切に処理することが重要です。 JSP レンダリ�
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">Authorizable</a></td>
-   <td>Authorizable は、User および Group の共通の基本インターフェイスです</td>
+   <td>Authorizable は、User および Group の共通の基本インターフェイスです。</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/jackrabbit/api/security/user/User.html">User</a></td>
@@ -181,7 +181,7 @@ null ケースを適切に処理することが重要です。 JSP レンダリ�
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/SimpleSearch.html">SimpleSearch</a></td>
-   <td>リソースが JCR ベースのリソースである場合は、そのリソース以下で検索します ( または setSearchIn() を使用します )</td>
+   <td>リソースが JCR ベースのリソースである場合は、そのリソース以下で検索します ( または setSearchIn() を使用します )。</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/workflow/status/WorkflowStatus.html">WorkflowStatus</a></td>
@@ -193,11 +193,11 @@ null ケースを適切に処理することが重要です。 JSP レンダリ�
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/connector/ConnectorResource.html">ConnectorResource</a></td>
-   <td>JCR ノードベースのリソースの場合、特定のタイプに対する適応後のコネクタリソースを返します</td>
+   <td>JCR ノードベースのリソースの場合、特定のタイプに対する適応後のコネクタリソースを返します。</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/contentsync/config/package-summary.html">Config</a></td>
-   <td>これが <code>cq:ContentSyncConfig</code> ノードリソース</td>
+   <td>次の場合、 <code>cq:ContentSyncConfig</code> ノードリソース</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/contentsync/config/package-summary.html">ConfigEntry</a></td>
@@ -332,7 +332,7 @@ null ケースを適切に処理することが重要です。 JSP レンダリ�
 
 #### セキュリティ {#security}
 
-**Authorizable**, **ユーザー**、および **グループ** に適応します。
+**Authorizable**, **ユーザー**、および **グループ化** 次の項目に適応します。
 
 | [Node](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | ユーザーまたはグループのホームノードを返します。 |
 |---|---|

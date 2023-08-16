@@ -6,10 +6,10 @@ seo-description: Learn how to use shared queues for Forms-centric workflows on [
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 100%
+source-wordcount: '838'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 ## インボックスの 1 つまたはすべての項目を他のユーザーと共有
 
-AEM インボックスは、インボックス内の 1 つまたはすべての項目を他のユーザーと共有できます。
+AEM Inbox では、インボックス内の 1 つの項目またはすべての項目を別のユーザーと共有できます。
 
 ### すべてのインボックス項目を共有
 

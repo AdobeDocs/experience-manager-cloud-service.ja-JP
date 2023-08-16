@@ -2,10 +2,10 @@
 title: ドメイン名ステータスの確認
 description: Cloud Manager でカスタムドメイン名が正常に検証されたかどうかを判断する方法について説明します。
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 84%
+source-wordcount: '649'
+ht-degree: 82%
 
 ---
 
@@ -60,7 +60,7 @@ Cloud Manager では、**カスタムドメイン追加**&#x200B;ウィザード
 
 #### エラーの原因 {#cause}
 
-Fastly は、ドメインを最初に登録したアカウントにロックし、他のアカウントは権限を要求することなくサブドメインを登録することができません。さらに、Fastly では、apex ドメインと関連するサブドメインを 1 つの Fastly サービスおよびアカウントに割り当てることができます。AEM Cloud Service ドメインで使用されるのと同じ apex およびサブドメインをリンクする既存の Fastly アカウントがある場合、このエラーが表示されます。
+Fastly は、ドメインを最初に登録したアカウントにロックし、他のアカウントは権限を要求することなくサブドメインを登録することができません。さらに、Fastly では、apex ドメインと関連するサブドメインを 1 つの Fastly サービスおよびアカウントに割り当てることができます。 AEM Cloud Service ドメインで使用されるのと同じ apex およびサブドメインをリンクする既存の Fastly アカウントがある場合、このエラーが表示されます。
 
 #### エラーの解決 {#resolution}
 

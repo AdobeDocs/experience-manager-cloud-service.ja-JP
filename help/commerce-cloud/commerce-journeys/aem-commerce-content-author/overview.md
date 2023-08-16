@@ -2,10 +2,10 @@
 title: AEM Commerce コンテンツ作成者ジャーニー
 description: AEM Commerce オーサリングを使用したガイド付きジャーニーについては、ここから開始してください
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 

@@ -1,18 +1,14 @@
 ---
 title: メールによるフォーム送信確認の送信
-seo-title: Sending a form submission acknowledgement via email
-description: AEM Forms では、フォームの送信時にユーザーに確認を送信するメール送信アクションを設定できます。
-seo-description: AEM Forms allows you to configure the email Submit Action that sends an acknowledgement to a user on submitting the form.
-uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
+description: AEM Formsでは、フォームの送信時に確認応答をユーザーに送信する電子メール送信アクションを設定できます。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 100%
+source-wordcount: '366'
+ht-degree: 94%
 
 ---
 

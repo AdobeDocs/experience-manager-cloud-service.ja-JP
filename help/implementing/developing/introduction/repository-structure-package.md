@@ -2,7 +2,7 @@
 title: AEM プロジェクトリポジトリーの構造パッケージ
 description: Adobe Experience Manager as a Cloud Service上の Maven プロジェクトには、リポジトリ構造サブパッケージ定義が必要です。この定義の目的は、プロジェクトの Code サブパッケージがデプロイされる JCR リポジトリルートを定義することです。
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 40%
@@ -13,7 +13,7 @@ ht-degree: 40%
 
 Adobe Experience Manager as a Cloud Service用の Maven プロジェクトには、リポジトリ構造サブパッケージ定義が必要です。この定義の目的は、プロジェクトのコードサブパッケージがデプロイされる JCR リポジトリルートを定義することです。 この方法では、JCR リソースの依存関係に基づいて、as a Cloud ServiceExperience Manager内のパッケージのインストールが自動的に順序付けられます。 依存関係が見つからないと、サブ構造が親構造より先にインストールされ、予期せず削除され、デプロイメントが壊れる場合があります。
 
-コードパッケージが場所にデプロイされる場合 **覆われていない** コードパッケージでは、上位のリソース（JCR ルートに近い JCR リソース）をリポジトリ構造パッケージに列挙する必要があります。 このプロセスは、これらの依存関係を確立するために必要です。
+コードパッケージがの場所にデプロイされる場合 **覆われていない** コードパッケージでは、上位のリソース（JCR ルートに近い JCR リソース）をリポジトリ構造パッケージに列挙する必要があります。 このプロセスは、これらの依存関係を確立するために必要です。
 
 ![リポジトリ構造パッケージ](./assets/repository-structure-packages.png)
 
@@ -33,7 +33,7 @@ Maven プロジェクトのリポジトリ構造パッケージを作成する�
 
 `<filters>` を更新して、コードパッケージのデプロイ先となるすべての JCR リポジトリパスルートを含めます。
 
-この新しい Maven サブプロジェクトを必ず親プロジェクトに追加してください `<modules>` リスト。
+この新しい Maven サブプロジェクトを必ず親プロジェクトに追加してください。 `<modules>` リスト。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -86,7 +86,7 @@ Maven プロジェクトのリポジトリ構造パッケージを作成する�
                         Examples of complex roots
 
 
-                        Overlays of /libs typically require defining the overlayed structure, at each level here.
+                        Overlays of /libs typically require defining the overlay structure, at each level here.
 
                         For example, adding a new section to the main AEM Tools navigation, necessitates the following rules:
 
@@ -178,7 +178,7 @@ JCR リポジトリの同じ領域にインストールされる複数のコー�
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-このエラーは、エラーが発生したコードパッケージに `<repositoryStructurePackage>` リスト `/apps/some/path` を選択します。
+このエラーは、エラーが発生したコードパッケージに `<repositoryStructurePackage>` リストに含まれる `/apps/some/path` を選択します。
 
 ## その他のリソース
 

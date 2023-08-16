@@ -1,11 +1,11 @@
 ---
 title: Query Builder API
-description: アセット共有 Query Builder の機能は、Java&Trade を通じて公開されます。API と REST API
+description: アセット共有 Query Builder の機能は、Java&trade、API、REST API を通じて公開されます。
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2008'
-ht-degree: 47%
+source-wordcount: '2006'
+ht-degree: 46%
 
 ---
 
@@ -80,7 +80,7 @@ orderby=path
 
 `p.guessTotal` パラメーターの目的は、実用最小限の `p.offset` 値と `p.limit` 値を組み合わせることによって、表示できる適切な結果数を返すことです。このパラメーターを使用するメリットは、結果セットが大きい場合にパフォーマンスが向上することです。また、このパラメーターは、( `result.getSize()`) を読み取り、結果セット全体を読み取り、Oak エンジンとインデックスまで完全に最適化しました。 このプロセスは、実行時間とメモリ使用量の両方で、数十万件の結果がある場合に、大きな違いを生じる可能性があります。
 
-このパラメーターのデメリットは、ユーザーには正確な合計が表示されないことです。しかし、次のような最小値を設定できます。 `p.guessTotal=1000` 常に 1000 まで読み取れます この方法では、小さい結果セットの正確な合計が得られますが、それ以上の場合は、「その他」のみを表示できます。
+このパラメーターのデメリットは、ユーザーには正確な合計が表示されないことです。しかし、次のような最小値を設定できます。 `p.guessTotal=1000` 常に 1000 まで読み取れます。 この方法では、小さい結果セットの正確な合計が得られますが、それ以上の場合は、「その他」のみを表示できます。
 
 以下のクエリに `p.guessTotal=true` を追加して、どのように機能するかを見てみましょう。
 
@@ -95,7 +95,7 @@ p.guessTotal=true
 orderby=path
 ```
 
-クエリは、 `p.limit` デフォルト `10` 結果 `0` オフセット：
+クエリは、 `p.limit` のデフォルト `10` 結果と `0` オフセット：
 
 ```xml
 "success": true,
@@ -189,7 +189,7 @@ tagid.property=jcr:content/cq:tags
 
 タグタイトルのパス（スペースなし）には、`tag` 述語を使用します。
 
-前の例では、ページ (`cq:Page` ノード )、そのノードからの相対パスを `tagid.property` 述語： `jcr:content/cq:tags`. デフォルトでは、 `tagid.property` は `cq:tags`.
+前の例では、ページ (`cq:Page` ノード )、そのノードからの相対パスを `tagid.property` 述語： `jcr:content/cq:tags`. デフォルトでは、 `tagid.property` は、 `cq:tags`.
 
 ### 複数パスの検索（グループを使用） {#search-under-multiple-paths-using-groups}
 
@@ -210,7 +210,7 @@ group.2_path=/content/wknd/us/en/adventures
 
 `p.or` 内の `p` は特殊な区切り文字で、後に続くもの（このケースでは `or`）がグループの&#x200B;*パラメーター*&#x200B;であることを示します。これは、グループのサブ述語（`1_path` など）とは対照的です。
 
-指定しない場合 `p.or` が渡された場合、すべての述語は AND で結合されます。つまり、各結果はすべての述語を満たす必要があります。
+いいえの場合 `p.or` が渡された場合、すべての述語は AND で結合されます。つまり、各結果はすべての述語を満たす必要があります。
 
 >[!NOTE]
 >
@@ -228,7 +228,7 @@ property=cq:template
 property.value=/conf/wknd/settings/wcm/templates/adventure-page-template
 ```
 
-欠点は `jcr:content` ページ自体ではなく、ページのノードが返されます。 この問題を解決するには、相対パスで検索します。
+欠点は、 `jcr:content` ページ自体ではなく、ページのノードが返されます。 この問題を解決するには、相対パスで検索します。
 
 `http://<host>:<port>/bin/querybuilder.json?property=jcr%3acontent%2fcq%3atemplate&property.value=%2fconf%2fwknd%2fsettings%2fwcm%2ftemplates%2fadventure-page-template&type=cq%3aPage`
 
@@ -254,7 +254,7 @@ type=cq:Page
 
 ### プロパティの複数の値の検索 {#search-for-multiple-property-values}
 
-プロパティ (`"A" or "B" or "C"`) の代わりに、 `property` 述語：
+プロパティの複数の値を検索する場合 (`"A" or "B" or "C"`) を使用する場合、 `property` 述語：
 
 `http://<host>:<port>/bin/querybuilder.json?property=jcr%3atitle&property.1_value=Cycling%20Tuscany&property.2_value=Ski%20Touring&property.3_value=Whistler%20Mountain%20Biking`
 
@@ -351,7 +351,7 @@ p.nodedepth=5
 
 クラス名のプレフィックス（[`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html) の `similar` など）は、クラスの&#x200B;*プリンシパルプロパティ*&#x200B;です。このプロパティは、クエリ内で使用する述語の名前（小文字で使用）でもあります。
 
-このようなプリンシパルプロパティの場合は、クエリを短縮して、完全修飾バリアント `similar=/content/en` の代わりに `similar.similar=/content/en` を使用できます。完全修飾フォームは、クラスのプリンシパル以外のすべてのプロパティに使用する必要があります。
+このようなプリンシパルプロパティの場合は、クエリを短縮し、 `similar=/content/en` 完全修飾バリアントの代わりに `similar.similar=/content/en`. 完全修飾フォームは、クラスのプリンシパル以外のすべてのプロパティに使用する必要があります。
 
 ## Query Builder API の使用例 {#example-query-builder-api-usage}
 
@@ -449,7 +449,7 @@ Query Builder のクエリを試してみたり、デバッグしたりする場
 
 `http://<host>:<port>/bin/querybuilder.json?path=/tmp`
 
-この `path=/tmp` は単なる例です。
+The `path=/tmp` は単なる例です。
 
 ### デバッグに関する一般的な推奨事項 {#general-debugging-recommendations}
 
@@ -473,7 +473,7 @@ AEM Query Builder Debugger を使用して、説明可能な XPath クエリを�
 1. Query Builder Debugger で Query Builder クエリを指定します。
 1. 検索を実行
 1. 生成された XPath を取得する
-1. XPath クエリを XPath として Explain Query に貼り付け、クエリプランを取得できるようにします
+1. XPath クエリを XPath として Explain Query に貼り付け、クエリプランを取得できるようにします。
 
 >[!NOTE]
 >
@@ -522,7 +522,7 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 | **Javadoc** | **説明** |
 |---|---|
 | [com.day.cq.search](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/package-summary.html) | 基本 Query Builder とクエリ API |
-| [com.day.cq.search.result](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/package-summary.html) | 結果 API |
+| [com.day.cq.search.result](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/package-summary.html) | 結果の API |
 | [com.day.cq.search.facets](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/package-summary.html) | ファセット |
 | [com.day.cq.search.facets.buckets](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | バケット（ファセット内に含まれる） |
 | [com.day.cq.search.eval](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/package-summary.html) | 述語エバリュエーター |

@@ -2,16 +2,16 @@
 title: アダプティブフォームにおけるレコードのドキュメントの生成
 description: ここでは、アダプティブフォーム向けのレコードのドキュメント（DoR）テンプレートを生成する方法について説明します。
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4143'
-ht-degree: 98%
+source-wordcount: '4139'
+ht-degree: 97%
 
 ---
 
 # アダプティブフォームにおけるレコードのドキュメントの生成
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象 [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 
 
 | バージョン | 記事リンク |
@@ -25,7 +25,7 @@ ht-degree: 98%
 
 ![レコードのドキュメント](assets/document-of-record.png)
 
-レコードのドキュメントを作成するには、XFA または AcroForm ベースのテンプレートを、アダプティブフォームを使用して収集したデータと結合します。レコードのドキュメントは、自動またはオンデマンドで生成できます。オンデマンドオプションを使用すると、XFA または AcroForm ベースのカスタムテンプレートを指定して、レコードのドキュメントの外観をカスタマイズすることができます。
+レコードのドキュメントを作成するには、XFA または AcroForm ベースのテンプレートを、アダプティブフォームを使用して収集したデータと結合します。レコードのドキュメントは、自動またはオンデマンドで生成できます。オンデマンドオプションを使用すると、カスタムの XFA または Acroform ベースのテンプレートを指定して、レコードのドキュメントにカスタムの外観を設定できます。
 
 以下の操作を実行できます。
 
@@ -74,7 +74,7 @@ Adobe Acrobat PDF（AcroForm）を AEM Forms インスタンスにアップロ�
 * フォーム開発者は、データバインディングを手動で管理する必要はありません。自動生成されたレコードのドキュメントは、データバインディング関連の更新を処理します。
 * フォーム開発者は、レコードのドキュメントから除外するようにマークされたフィールドを手動で非表示にする必要はありません。自動生成されたレコードのドキュメントは、これらのフィールドを除外するように事前設定されています。
 * 自動生成されたレコードのドキュメントオプションを使用すれば、レコードのドキュメント用のフォームテンプレートの作成に要する時間を節約できます。
-* 自動生成されたレコードのドキュメントオプションでは、様々な基本テンプレートを使用して、異なるスタイルと外観を使用できます。組織のレコードのドキュメントに最適なスタイルと外観を選択するのに役立ちます。スタイル設定を指定しない場合、システムスタイルがデフォルトとして設定されます。
+* 自動生成されたレコードのドキュメントオプションを使用すると、異なるベーステンプレートを使用して、異なるスタイルと外観を使用できます。 組織のレコードのドキュメントに最適なスタイルと外観を選択するのに役立ちます。スタイル設定を指定しない場合、システムスタイルがデフォルトとして設定されます。
 * 自動生成されたレコードのドキュメントを使用すると、フォーム内の変更がレコードのドキュメントに即座に反映されます。
 
 レコードのドキュメントを自動生成するようアダプティブフォームを設定するには、次の手順を実行します。
@@ -102,7 +102,7 @@ Adobe Acrobat PDF（AcroForm）を AEM Forms インスタンスにアップロ�
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
 <!-- 
-In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
+In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
 メール送信、Experience Manager ワークフローの送信アクションを、[レコードのドキュメントのステップ、その他の送信アクション](configuring-submit-actions.md)と組み合わせて使用し、レコードのドキュメントを受け取ることができます。
@@ -283,7 +283,7 @@ When you select a form model, configure Document of Record using options availab
 
 ## レコードのドキュメントの基本テンプレート {#base-template-of-a-document-of-record}
 
-基本テンプレートは、レコードのドキュメントにスタイリングと外観の情報を提供します。これにより、自動生成されたレコードのドキュメントに対して、デフォルトの外観をカスタマイズすることができます。例えば、基本テンプレートを使用して、レコードのドキュメントのヘッダーに会社のロゴを、フッターに著作権情報を追加できます。
+基本テンプレートは、レコードのドキュメントにスタイリングと外観の情報を提供します。自動生成されたレコードのドキュメントのデフォルトの外観をカスタマイズできます。 例えば、基本テンプレートを使用して、レコードのドキュメントのヘッダーに会社のロゴを、フッターに著作権情報を追加できます。
 
 基本テンプレートから作成されたマスターページは、レコードのドキュメントのテンプレートのマスターページとして使用されます。マスターページには、レコードのドキュメントに適用可能なページヘッダー、ページフッター、ページ番号などの情報を含めることができます。レコードのドキュメント自動生成用の基本テンプレートを使用することで、それらの情報をレコードのドキュメントに適用することができます。基本テンプレートを使用すると、フィールドのデフォルトプロパティを変更することができます。
 

@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 リリースのリリースノート。'
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1437'
+source-wordcount: '1436'
 ht-degree: 94%
 
 ---
@@ -126,7 +126,7 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 
 ### [!DNL Forms] のベータ版機能 {#what-is-new-forms-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：通信 API を使用すると、XDP テンプレートと XML データを組み合わせて様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：通信 API を使用すると、XDP テンプレートと XML データを組み合わせて様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。 API により、以下のような機能を備えたアプリケーションを作成することができます。
    * テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成する。
    * 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
    * XFA フォーム PDF および Adobe Acrobat フォーム（AcroForms）から印刷用 PDF を生成する。

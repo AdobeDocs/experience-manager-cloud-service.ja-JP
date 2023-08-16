@@ -2,10 +2,10 @@
 title: エクスペリエンスフラグメント 概要
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントの拡張
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 50%
+source-wordcount: '1640'
+ht-degree: 49%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 50%
 
 * `sling:resourceType`：`/libs/cq/experience-fragments/components/xfpage`
 
-なぜなら、 `/libs/cq/experience-fragments/components/xfpage/xfpage.html`を呼び出すと、
+なぜなら、 `/libs/cq/experience-fragments/components/xfpage/xfpage.html`を呼び出すと、次の場所に戻ります。
 
 * `sling:resourceSuperType`：`wcm/foundation/components/page`
 
@@ -41,11 +41,11 @@ URL で `.plain.` セレクターを使用すると、プレーン HTML レン�
 
 >[!NOTE]
 >
->リンクは常にパブリッシュインスタンスを参照します。 これらはサードパーティによる使用を目的としているので、リンクは常にオーサーインスタンスからではなく、パブリッシュインスタンスから呼び出されます。
+>リンクは、常にパブリッシュインスタンスを参照します。これらはサードパーティによる使用を目的としているので、リンクは常にオーサーインスタンスからではなく、パブリッシュインスタンスから呼び出されます。
 
 ![プレーン HTML レンディション](assets/xf-14.png)
 
-プレーンレンディションセレクターでは、追加のスクリプトとは異なり、トランスフォーマーを使用します。この [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) は変換サービスとして使用されます。 この変換サービスは、次の場所で設定します。
+プレーンレンディションセレクターでは、追加のスクリプトとは異なり、トランスフォーマーを使用します。The [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) は変換サービスとして使用されます。 この変換サービスは、次の場所で設定します。
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
@@ -55,7 +55,7 @@ HTML レンディションは、Sling Rewriter パイプラインを使用して
 
 * `allowedCssClasses`
    * 最終レンディションに残す CSS クラスに一致する正規表現。
-   * このオプションは、お客様が特定の CSS クラスを廃止する場合に役立ちます
+   * このオプションは、お客様が特定の CSS クラスを取り除く場合に役立ちます
 * `allowedTags`
    * 最終レンディションで許可されるHTMLタグのリスト。
    * デフォルトでは、次のタグが許可されています（設定は不要）：html、head、title、body、img、p、span、ul、li、a、b、i、em、strong、h1、h2、h3、h4、h5、h6、br、noscript、div、link、script
@@ -76,7 +76,7 @@ Adobeでは、オーバーレイを使用してリライターを設定するこ
 <!-- When developing a new template for Experience Fragments you can follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
 -->
 
-で検出されるエクスペリエンスフラグメントテンプレートを作成するには **エクスペリエンスフラグメントを作成** ウィザードでは、次のいずれかのルールセットに従う必要があります。
+で検出されるエクスペリエンスフラグメントテンプレートを作成するには、以下を実行します。 **エクスペリエンスフラグメントを作成** ウィザードでは、次のいずれかのルールセットに従う必要があります。
 
 1. 次の両方：
 
@@ -85,7 +85,7 @@ Adobeでは、オーバーレイを使用してリライターを設定するこ
 
    1. テンプレートの名前は次の文字列で始まる必要があります。
       `experience-fragments`
-このパターンを使用すると、ユーザーは/content/experience-fragments 内にエクスペリエンスフラグメントを `cq:allowedTemplates` このフォルダーのプロパティには、名前が `experience-fragment`. ユーザーは、このプロパティを更新して、独自の命名方式やテンプレート場所を取り入れることができます。
+このパターンを使用すると、ユーザーは/content/experience-fragments 内にエクスペリエンスフラグメントを `cq:allowedTemplates` このフォルダーのプロパティには、名前がで始まるすべてのテンプレートが含まれます `experience-fragment`. ユーザーは、このプロパティを更新して、独自の命名方式やテンプレート場所を取り入れることができます。
 
 1. [使用可能なテンプレート](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder)はエクスペリエンスフラグメントコンソールで設定できます。
 
@@ -142,7 +142,7 @@ Link Externalizer は、Target オファーのHTMLバージョンを作成する
 
 HTMLページを生成した後、Sling Rewriter パイプラインは出力に変更されます。
 
-1. `html`、`head`、`body` の各要素が `div` 要素に置き換わります。この `meta`, `noscript`、および `title` 要素が削除されます（元の要素の子要素です） `head` 要素であり、 `div` 要素 ) を参照してください。
+1. `html`、`head`、`body` の各要素が `div` 要素に置き換わります。The `meta`, `noscript`、および `title` 要素が削除されます（元の要素の子要素です）。 `head` 要素であり、 `div` 要素 ) を参照してください。
 
    このプロセスは、HTMLTarget オファーを Target アクティビティに確実に含めることができるようにするためにおこなわれます。
 
@@ -170,13 +170,13 @@ HTMLページを生成した後、Sling Rewriter パイプラインは出力に�
 
 ### Link Rewriter Provider インターフェイス {#link-rewriter-provider-interface}
 
-（[デフォルトのリンク書き換え](#default-link-rewriting)では対応していない）より複雑な場合のために、AEM では Link Rewriter Provider インターフェイスを提供しています。このインターフェイスは、 `ConsumerType` バンドルにサービスとして実装できるインターフェイス。 このインターフェイスは、エクスペリエンスフラグメントからレンダリングされる HTML オファーの内部リンクに対して AEM で実行される変更をバイパスします。このインターフェイスを使用すると、内部 HTML リンクの書き換えプロセスをビジネスニーズに合わせてカスタマイズできます。
+（[デフォルトのリンク書き換え](#default-link-rewriting)では対応していない）より複雑な場合のために、AEM では Link Rewriter Provider インターフェイスを提供しています。このインターフェイスは、 `ConsumerType` バンドルにサービスとして実装できるインターフェイス。 このインターフェイスは、エクスペリエンスフラグメントからレンダリングされる HTML オファーの内部リンクに対して AEM で実行される変更をバイパスします。このインターフェイスを使用すると、内部HTMLのリンクを書き換えるプロセスを、ビジネスニーズに合わせてカスタマイズできます。
 
 このインターフェイスをサービスとして実装する使用例としては、例えば次のものがあります。
 
 * Sling マッピングがパブリッシュインスタンスでは有効になっているが、オーサーインスタンスでは有効になっていない
 * Dispatcher または類似のテクノロジーを使用して URL を内部的にリダイレクトする
-* この `sling:alias mechanisms` リソース用に配置されている
+* The `sling:alias mechanisms` リソース用に配置されている
 
 >[!NOTE]
 >
@@ -247,7 +247,7 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 
 `shouldRewrite(ExperienceFragmentVariation experienceFragment);`
 
-次に例を示します。
+例：
 
 ```java
 @Override
@@ -278,7 +278,7 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 このメソッドは入力として次のパラメーターを受け取ります。
 
 * `link`
-この `String` 処理中のリンクの表現。 この表現は通常、オーサーインスタンス上のリソースを指す相対 URL です。
+The `String` 処理中のリンクの表現。 この表現は通常、オーサーインスタンス上のリソースを指す相対 URL です。
 
 * `tag`
 処理中のHTML要素の名前。

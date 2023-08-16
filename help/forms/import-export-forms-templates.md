@@ -5,10 +5,10 @@ description: アダプティブフォームとアセットを AEM インスタ�
 seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1211'
-ht-degree: 100%
+source-wordcount: '1210'
+ht-degree: 98%
 
 ---
 
@@ -56,7 +56,6 @@ ht-degree: 100%
    >
    > * 異なるリソースタイプと名前が競合する場合、パッケージをアップロードしても既存のフォルダー階層は置き換えられません。例えば、あるサーバーの /content/dam/formsanddocuments という場所に「Training」という名前のアダプティブフォームがあるとします。ユーザーがそのアダプティブフォームをダウンロードし、他のサーバー上にアップロードします。このアップロード先のサーバーにも、同じ /content/dam/formsanddocuments に「Training」という名前のフォルダーがありました。アップロードは失敗します。
    > * `form-power-user` グループのメンバーのみが XDP ファイルをアップロードできます。
-
 
 
 ## テーマのダウンロード {#downloading-a-theme}
@@ -187,7 +186,7 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
    指定した名前を持つフォルダーが既に存在する場合は、送信はエラーになり失敗します。名前フィールドの横に表示されるエラー ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) アイコンの上にマウスポインターを置くと、エラーメッセージを見ることができます。
 
-   新しく作成されたフォルダーをタップしてフォルダー内に移動し、フォルダー内でアセットまたはフォルダーを作成できます。さらに、フォルダーを選択し、ダウンロード、削除、名前の編集用にそのフォルダーをキューに入れることができます。
+   新しく作成したフォルダーをタップしてフォルダー内に移動し、そのフォルダー内にアセットやフォルダーを作成できます。 さらに、フォルダーを選択し、ダウンロード、削除、名前の編集用にそのフォルダーをキューに入れることができます。
 
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
@@ -207,7 +206,7 @@ Complete the following steps to create copies of assets and letters:
 
 ## Search {#search-forms}
 
-You ca use the top bar **[A]** to search your content. When you search for assets, a side panel is displayed. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also allows you to save your searches.
+You ca use the top bar **[A]** to search your content. When you search for assets, a side panel is displayed. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
 
 ![search_topbar](assets/search_topbar.png)
 
@@ -223,6 +222,6 @@ On the side panel, you can use the following to narrow down your search results:
 * Tags
 * Search Criteria; for example, Modified Dates, Publish Status, LiveCopy Status.
 
-The side panel also allows you to save your search settings with names of your choice.
+The side panel also lets you save your search settings with names of your choice.
 
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html). -->

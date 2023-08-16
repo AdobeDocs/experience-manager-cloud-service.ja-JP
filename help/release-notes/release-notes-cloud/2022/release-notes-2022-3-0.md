@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 リリースのリリースノート。'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1148'
 ht-degree: 87%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 87%
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms}
 
-* **[!DNL Communications - Document Generation APIs]**：[ドキュメント生成 API](/help/forms/aem-forms-cloud-service-communications.md) は、PDF ドキュメントの結合、並べ替えおよび検証に役立ちます。このサービスを使用すると、同期モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
+* **[!DNL Communications - Document Generation APIs]**：[ドキュメント生成 API](/help/forms/aem-forms-cloud-service-communications.md) は、PDF ドキュメントの結合、並べ替えおよび検証に役立ちます。このサービスを使用すると、同期モードでドキュメントを生成できます。 API により、以下のような機能を備えたアプリケーションを作成することができます。
 
    * PDF ドキュメントのアセンブリ.
    * PDF ドキュメントのディスアセンブリ.
@@ -90,7 +90,7 @@ ht-degree: 87%
 
 ### 新機能 {#what-is-new-foundation}
 
-* クラウド環境のカスタム機能のトラブルシューティングをより効率的かつ効果的におこなうために、新しい開発者ツールがリリースされました。 [リポジトリブラウザ](/help/implementing/developing/tools/repository-browser.md). 開発者コンソールから起動できる、軽量で読み取り専用のHTMLブラウザーです。 パブリッシュ、オーサー、プレビューの各層および実稼動、ステージ、開発を含むすべての環境で、コンテンツリポジトリーを表示できます。コンテンツ構造を参照し、プロパティを表示し、バイナリをプレビューおよびダウンロードします。
+* クラウド環境のカスタム機能のトラブルシューティングをより効率的かつ効果的におこなうために、新しい開発者ツールがリリースされました。 [リポジトリブラウザ](/help/implementing/developing/tools/repository-browser.md). これは、開発者コンソールから起動できる、軽量で読み取り専用のHTMLブラウザーです。 パブリッシュ、オーサー、プレビューの各層および実稼動、ステージ、開発を含むすべての環境で、コンテンツリポジトリーを表示できます。コンテンツ構造を参照し、プロパティを表示し、バイナリをプレビューおよびダウンロードします。
 
   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 

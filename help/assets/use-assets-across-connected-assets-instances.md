@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 62649d9aaa7c4307351cc83eefbab14806f91378
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3871'
+source-wordcount: '3870'
 ht-degree: 96%
 
 ---
@@ -71,7 +71,7 @@ Connected Assets 機能では、[!DNL Experience Manager Sites] と [!DNL Experi
 
 ### Connected Assets のアーキテクチャ {#connected-assets-architecture}
 
-Experience Manager を使用すると、リモート DAM デプロイメントをソースとして複数の Experience Manager [!DNL Sites] デプロイメントに接続できます。ただし、1 つの [!DNL Sites] デプロイメントに接続できるリモート DAM デプロイメントは 1 つだけです。
+Experience Managerを使用すると、リモート DAM デプロイメントをソースとして複数のExperience Managerに接続できます [!DNL Sites] デプロイメント。 ただし、1 つの [!DNL Sites] デプロイメントに接続できるリモート DAM デプロイメントは 1 つだけです。
 
 リモート DAM デプロイメントに接続するための Sites インスタンスの最適な数を評価します。接続された各 Sites インスタンスがリモート DAM のデータトラフィックに寄与するため、デプロイメントに Sites インスタンスを段階的に接続し、リモート DAM のパフォーマンスに影響がないことをテストすることをお勧めします。
 

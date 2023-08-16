@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: ht
-source-wordcount: '2493'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '2492'
+ht-degree: 99%
 
 ---
 
@@ -271,7 +271,7 @@ IMS アカウントを設定するには：
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／ **[!UICONTROL Adobe Stock]** に移動します。[!DNL Adobe Stock] クラウド設定を選択し、「**[!UICONTROL プロパティ]**」をクリックします。
 
-1. 新しく作成したユーザーグループを [!DNL Adobe Stock] 設定に追加します。「**[!UICONTROL 保存して閉じる]**」をクリックします。
+1. 新しく作成したユーザーグループを [!DNL Adobe Stock] 設定。 「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
    ![assign-user](assets/aem-stock-adduser.png)
 
@@ -477,4 +477,3 @@ Users can see the properties for both, licensed and unlicensed assets.
 >* [Experience Manager Assets での Adobe Stock アセットの使用について説明するビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=ja)
 >* [Adobe Stock エンタープライズプランのヘルプ](https://helpx.adobe.com/jp/enterprise/using/adobe-stock-enterprise.html)
 >* [Adobe Stock の FAQ](https://helpx.adobe.com/jp/stock/faq.html)
-

@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service でのチャネルの公開
 description: ここでは、Screens as a Cloud Service でチャネルを公開する方法について説明します。
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 72%
+source-wordcount: '307'
+ht-degree: 67%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 72%
 
 ## はじめに {#introduction}
 
-AEM Screens からコンテンツを公開できます。公開管理機能を使用すると、コンテンツの更新をオーサーからパブリッシュ経由でプレーヤーに配信できます。AEM Screens プロジェクト全体のコンテンツを公開／非公開にすることも、チャネル、ロケーション、プレーヤー、アプリケーションのいずれか 1 つのコンテンツを公開／非公開にすることもできます。
+AEM Screens からコンテンツを公開できます。「公開を管理」機能を使用すると、コンテンツの更新をオーサーからパブリッシュ経由でプレーヤーに配信できます。 AEM Screens プロジェクト全体のコンテンツを公開／非公開にすることも、チャネル、ロケーション、プレーヤー、アプリケーションのいずれか 1 つのコンテンツを公開／非公開にすることもできます。
 
 >[!IMPORTANT]
 >プロジェクトでチャネル（複数可）を作成したら、チャネルを公開して、AEM Screens Services Provider の在庫リスト表示でチャネルを表示する必要があります。

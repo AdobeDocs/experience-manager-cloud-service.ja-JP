@@ -2,10 +2,10 @@
 title: コンテンツフラグメントの管理（アセット - コンテンツフラグメント）
 description: ヘッドレスコンテンツの基礎となる AEM コンテンツフラグメントを Assets コンソールを使用して管理する方法について説明します。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1770'
-ht-degree: 87%
+source-wordcount: '1768'
+ht-degree: 85%
 
 ---
 
@@ -76,9 +76,9 @@ ht-degree: 87%
 
       * **名前**
 
-        名前を使用して URL が作成されます。
+        URL の作成に使用される名前。
 
-        必須はタイトルから自動的に派生しますが、更新できます。
+        必須。タイトルから自動的に派生しますが、更新できます。
 
 1. 「**作成**」を選択して操作を完了してから、編集するためにフラグメントを&#x200B;**開く**&#x200B;か、「**完了**」でコンソールに戻ります。
 
@@ -105,11 +105,11 @@ ht-degree: 87%
 * **チェックアウト**
 * **プロパティ**
 
-   * フラグメントのメタデータを表示または編集できます。
+   * フラグメントのメタデータを表示、編集、またはその両方できます。
 
 * **編集**
 
-   * フラグメントの要素、バリエーション、および関連付けられているコンテンツやメタデータと共に[コンテンツを編集するためにフラグメントを開く](/help/assets/content-fragments/content-fragments-variations.md)ことができます。
+   * 以下が可能です。 [コンテンツ編集用にフラグメントを開く](/help/assets/content-fragments/content-fragments-variations.md) 要素、バリエーション、関連するコンテンツおよびメタデータと共に表示されます。
 
 * **クイック公開**
 * **公開を管理**
@@ -323,7 +323,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * 挿入されたテキスト - 緑
    * 置き換えられたテキスト - 青
 
-* 全画面表示アイコンを使用すれば、どちらかのバージョンで開いた後で、並列表示に切り替えることができます
+* 全画面表示アイコンを使用すると、どちらかのバージョンで開いた後、並列表示に切り替えることができます
 * 特定のバージョンに&#x200B;**戻す**&#x200B;ことができます
 * 「**完了**」を選択すると、コンソールに戻ります
 
@@ -361,7 +361,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * 作成後、[Assets コンソールで使用可能なアクション](#actions-for-a-content-fragment-assets-console)を使用して。
 * [コンテンツフラグメントエディター](#toolbar-actions-in-the-content-fragment-editor)から。
 
-また、 [フラグメントを使用するページを公開する](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing);フラグメントはページ参照に一覧表示されます。
+また、 [フラグメントを使用するページを公開する](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)を使用します。フラグメントはページ参照にリスト表示されます。
 
 >[!CAUTION]
 >

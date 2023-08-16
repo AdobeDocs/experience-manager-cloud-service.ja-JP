@@ -2,10 +2,10 @@
 title: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境の設定
 description: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境の設定
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2818'
-ht-degree: 97%
+source-wordcount: '2816'
+ht-degree: 96%
 
 ---
 
@@ -294,7 +294,7 @@ Dispatcher を設定する詳細な手順については、「[ローカル Disp
 
 1. AEM プロジェクトを開き、`\src\conf.dispatcher.d\available_farms` に移動します
 1. `default.farm` ファイルのコピーを作成します（例：`forms.farm`）。
-1. 新しく作成した `forms.farm` ファイルを開いて編集し、以下のコードを置き換えます。
+1. 新しく作成した `forms.farm` ファイルを編集し、次のコードを置き換えます。
 
    ```json
    #/ignoreUrlParams {
@@ -331,7 +331,7 @@ Dispatcher を設定する詳細な手順については、「[ローカル Disp
 
 ## AEM Formsas a Cloud Serviceおよびローカル開発環境でのアダプティブFormsコアコンポーネントの有効化
 
-AEM Forms as a Cloud Service のアダプティブフォームのコアコンポーネントを有効にすると、AEM Forms Cloud Service インスタンスを使用して、複数のチャネルへのコアコンポーネントベースのアダプティブフォームとヘッドレスフォームの作成、公開、配信を開始できます。 ヘッドレスアダプティブFormsを使用するには、アダプティブFormsコアコンポーネントが有効な環境が必要です。
+AEM Formsas a Cloud ServiceのアダプティブFormsコアコンポーネントを有効にすると、AEM FormsCloud Serviceインスタンスを使用して、複数のチャネルに対して、アダプティブFormsおよびヘッドレスFormsベースのコアコンポーネントの作成、公開、配信を開始できます。 ヘッドレスアダプティブFormsを使用するには、アダプティブFormsコアコンポーネントが有効な環境が必要です。
 
 手順については、 [AEM Formsas a Cloud Serviceおよびローカル開発環境でのアダプティブFormsコアコンポーネントの有効化](/help/forms/enable-adaptive-forms-core-components.md)
 

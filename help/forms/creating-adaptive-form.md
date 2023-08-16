@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 59e27998820e3c877c5594b9284b43ce108394fa
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1575'
-ht-degree: 95%
+source-wordcount: '1572'
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 95%
 | AEM as a Cloud Service | この記事 |
 
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象 [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 
 アダプティブフォームを使用すると、魅力的でレスポンシブ、かつ動的でアダプティブなフォームを作成できます。AEM Forms は、アダプティブ Forms を素早くオーサリングするための、ビジネスユーザーにとってわかりやすいウィザードを提供します。 このウィザードはクイックタブナビゲーションを備えており、アダプティブフォームを作成するための事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択することができます。
 
@@ -100,7 +100,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
    * **フォームデータモデル**：[フォームデータモデル](data-integration.md)を使用すると、異なるデータソースのエンティティやサービスをアダプティブフォームに統合することができます。 作成するアダプティブフォームで、複数のデータソースに対するデータの取得と書き込みが必要になる場合は、フォームデータモデルを選択します。
 
-   * **JSON スキーマ**：[JSON スキーマ](adaptive-form-json-schema-form-model.md)は、組織内のバックエンドシステムによってデータが作成または使用される構造を表します。アダプティブフォームにスキーマを関連付けて、そのスキーマの要素を使用することにより、アダプティブフォームに動的コンテンツを追加できます。スキーマの要素は、アダプティブ フォームを作成するときにコンテンツブラウザーの「データモデルオブジェクト」タブで使用することができ、すべてのフィールドも新しく作成されたアダプティブフォームに追加されます。
+   * **JSON スキーマ**：[JSON スキーマ](adaptive-form-json-schema-form-model.md)は、組織内のバックエンドシステムによってデータが作成または使用される構造を表します。アダプティブフォームにスキーマを関連付けて、そのスキーマの要素を使用することにより、アダプティブフォームに動的コンテンツを追加できます。スキーマの要素は、アダプティブFormsのオーサリング時に、コンテンツブラウザーの「データモデルオブジェクト」タブで使用でき、すべてのフィールドも新しく作成されたアダプティブフォームに追加されます。
 
    デフォルトでは、データモデルのすべてのフィールドが選択されます。 アダプティブフォームを作成すると、選択したすべてのデータモデルフィールドが、対応するアダプティブフォームのコンポーネントに変換されます。 ウィザードには、アダプティブフォームに含める必要のあるフィールドのみを選択するチェックボックスが表示されます。
 
@@ -124,7 +124,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    * **[!UICONTROL 名前：]**&#x200B;フォームの名前を指定します。指定された名前のノードがリポジトリーに作成されます。タイトルを入力し始めると、名前フィールドの値が自動的に生成されます。候補として入力された値は変更可能です。「ドキュメント名」フィールドには、英数字、ハイフン、アンダースコアのみを使用できます。無効な入力は、すべてハイフンに置き換えられます。
    * **[!UICONTROL パス]**：アダプティブフォームを保存する場所を指定します。 アダプティブフォームは、`/content/dam/formsanddocuments` に直接保存することができます。または、`/content/dam/formsanddocuments/adaptiveforms` などのフォルダーを作成して、アダプティブフォームを保存することができます。フォルダーをパスで使用する前に、必ずフォルダーを作成してください。 「**[!UICONTROL パス]**」フィールドでは、フォルダーは自動的には作成されません。
 
-1. 「**[!UICONTROL 作成]**」をタップします。アダプティブフォームが作成され、アダプティブフォームエディターで開かれます。 エディターに、テンプレートで使用可能なコンテンツが表示されます。 新しく作成されたフォームを必要に応じてカスタマイズするためのサイドバーも表示されます。
+1. 「**[!UICONTROL 作成]**」をタップします。アダプティブフォームが作成され、アダプティブフォームエディターで開かれます。 エディターに、テンプレートで使用可能なコンテンツが表示されます。 また、サイドバーが表示され、必要に応じて新しく作成されたフォームをカスタマイズできます。
 
    アダプティブフォームのタイプに応じて、関連する <!--XFA form template, XML schema or --> JSON スキーマまたはフォームデータモデルに存在するフォーム要素が、サイドバーの&#x200B;**[!UICONTROL コンテンツブラウザ]**&#x200B;の「**[!UICONTROL データモデルオブジェクト]**」タブに表示されます。これらの要素もアドラッグ＆ドロップしてダプティブフォームを作成できます。
 
@@ -196,7 +196,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 1. 「**[!UICONTROL データモデル]**」タブを選択し、以下のいずれかを実行します。
 
    * アダプティブフォームにフォームモデルがない場合、フォームモデルを 1 つ選択し、それに応じて <!-- a form template, -->XML／JSON スキーマまたはフォームデータモデルを選択することができます。
-   * アダプティブフォームがフォームモデルに基づいている場合、そのフォームモデルを変更することはできません。 別の<!-- form template, --> XML スキーマまたは JSON スキーマを選択するか、同じフォームモデルのフォームデータモデルを適宜選択することができます。
+   * アダプティブフォームがフォームモデルに基づいている場合、フォームモデルを変更することはできません。 別の<!-- form template, --> XML スキーマまたは JSON スキーマを選択するか、同じフォームモデルのフォームデータモデルを適宜選択することができます。
 1. 「![保存](/help/forms/assets/check-button.png)」をタップして、プロパティを保存します。
 
 ![FDM スキーマのサポート](/help/forms/assets/fdmsupport.png)

@@ -2,10 +2,10 @@
 title: AEM Delivery API を使用してコンテンツにアクセスする方法
 description: AEM ヘッドレスデベロッパージャーニーのこのパートでは、GraphQL クエリを使用してコンテンツフラグメントのコンテンツにアクセスする方法を説明します。
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 97%
+source-wordcount: '1358'
+ht-degree: 96%
 
 ---
 
@@ -32,7 +32,7 @@ AEM ヘッドレスジャーニーの前のドキュメント、[コンテンツ
 
 ## コンテンツにアクセスしますか？ {#so-youd-like-to-access-your-content}
 
-だから…このコンテンツはすべて、（コンテンツフラグメントで）整然と構造化され、新しいアプリのフィードを待っています。 問題は、どうやってコンテンツにアクセスするかです。
+これで、（コンテンツフラグメント内で）整然と構成されたすべてのコンテンツが取得され、新しいアプリのフィードを待っています。 問題は、どうやってコンテンツにアクセスするかです。
 
 必要なのは、特定のコンテンツをターゲットにし、必要なものを選択してさらに処理するためにアプリに返す方法です。
 
@@ -49,7 +49,7 @@ GraphQL は、次の機能を提供するオープンソース仕様です。
 * 構造化オブジェクトから特定のコンテンツを選択できるクエリ言語
 * 構造化コンテンツに対してこれらのクエリを実行するためのランタイム
 
-GraphQL は、*厳密に*&#x200B;型指定された API です。つまり、*すべての*&#x200B;コンテンツが型別に明確に構造化および編成されている必要があります。その結果、アクセスする対象と方法を GraphQL が&#x200B;*認識*&#x200B;できるようになります。データフィールドは、コンテンツオブジェクトの構造を定義する GraphQL スキーマ内で定義されます。
+GraphQLは、厳密に型指定された API です。 つまり、*すべての*&#x200B;コンテンツが型別に明確に構造化および編成されている必要があります。その結果、アクセスする対象と方法を GraphQL が&#x200B;*認識*&#x200B;できるようになります。データフィールドは、コンテンツオブジェクトの構造を定義する GraphQL スキーマ内で定義されます。
 
 次に、GraphQL クエリに応答するパスを GraphQL エンドポイントが提供します。
 
@@ -133,7 +133,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
 * コンテンツフラグメントモデルの定義時に使用できる特定のデータタイプです。
 * 特定のコンテンツフラグメントモデルに依存する別のフラグメントを参照します。
-* 構造化データを作成したあと取得できます。
+* 構造化データを作成して、その後で取得できます。
 
    * **マルチフィード**&#x200B;として定義した場合、複数のサブフラグメントをプライムフラグメントで参照（取得）できます。
 
@@ -146,7 +146,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 <!--
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
 
-GraphQL is a strongly typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client needs to fetch the Schema, which contains all the types necessary for a query. 
+GraphQL is a strongly-typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client needs to fetch the Schema, which contains all the types necessary for a query. 
 
 For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** Content Fragment Models and their data types.
 

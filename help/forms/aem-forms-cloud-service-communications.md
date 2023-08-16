@@ -2,17 +2,17 @@
 title: AEM Forms as a Cloud Service - 通信
 description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 100%
+source-wordcount: '683'
+ht-degree: 94%
 
 ---
 
 
 # 同期処理を使用 {#sync-processing-introduction}
 
-Forms as a Cloud Service - コミュニケーション API では、ビジネスコミュニケーション、ドキュメント、声明書、請求処理レター、給付通知、請求処理レター、月次請求書、ウェルカムキットなど、ブランド志向でパーソナライズされたコミュニケーションを作成、組み立て、配信できます。コミュニケーション API を使用して、テンプレート（XFA または PDF）と顧客データを組み合わせ、PDF、PS、PCL、DPL、IPL、ZPL 形式のドキュメントを生成できます。
+Formsas a Cloud Service — コミュニケーション API を使用すると、ビジネス通信、ドキュメント、声明、請求処理レター、給付通知、請求処理レター、月次請求、ウェルカムキットなど、ブランド指向でパーソナライズされたコミュニケーションを作成、組み立て、提供できます。 コミュニケーション API を使用して、テンプレート（XFA または PDF）と顧客データを組み合わせ、PDF、PS、PCL、DPL、IPL、ZPL 形式のドキュメントを生成できます。
 
 例えば、1 つ以上のテンプレートが存在しており、各テンプレートには XML データの複数のレコードがあるシナリオを考えてみましょう。通信 API を使用して、各レコードの印刷用ドキュメントを生成できます。<!-- You can also combine the records into a single document. -->結果は非インタラクティブ PDF ドキュメントになります。非インタラクティブ PDF ドキュメントのフィールドには、ユーザーがデータを入力することはできません。
 
@@ -51,9 +51,9 @@ Formsas a Cloud Service - コミュニケーションは、スケジュールさ
    1. アクセストークンを Bearer 認証トークンとして使用して Experience Manager API を実行します。
    1. [Experience Manager 環境のテクニカルアカウントユーザーに適切な権限を設定します](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ja#aemでのアクセスの設定)。
 
-   >[!NOTE]
-   >
-   >アドビでは、実稼動環境でトークンベースの認証を使用することをお勧めします。
+  >[!NOTE]
+  >
+  >アドビでは、実稼動環境でトークンベースの認証を使用することをお勧めします。
 
 <!-- 
 

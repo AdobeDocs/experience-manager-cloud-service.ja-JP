@@ -2,10 +2,10 @@
 title: ページプロパティの編集
 description: AEMでページを管理するために必要なプロパティを定義する方法について説明します。
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 0183e14ad1653e98c06b19ea36c7e97dedccdb84
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2281'
-ht-degree: 79%
+source-wordcount: '2279'
+ht-degree: 78%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 79%
 
 * **バニティ URL**
 
-   * このページのバニティ URL を入力できます。バニティ URL を使用すると、短くより表現力のある URL にできます。
+   * このページのバニティー URL を入力できます。バニティー URL を入力すると、短い URL やより表現的な URL を指定できます。
    * 例えば、Web サイト `http://example.com` のパス `/v1.0/startpage` で特定されるページに対して、バニティ URL が `welcome` に設定されている場合、`http://example.com/content/v1.0/startpage` のバニティ URL は `http://example.com/welcome` となります。
 
   >[!CAUTION]
@@ -104,7 +104,7 @@ ht-degree: 79%
    * **エイリアス** - このページで使用されるエイリアスを指定します
       * 例えば、`/content/wknd/us/en/magazine/members-only` ページに `private` というエイリアスを定義した場合、このページは `/content/wknd/us/en/magazine/private` からもアクセスできます。
       * エイリアスを作成すると、ページノードに `sling:alias` プロパティが設定されます。これは、リポジトリパスではなく、リソースにのみ影響を与えます。
-      * エディターでエイリアスによってアクセスされたページは公開できません。エディターの[「公開」オプション](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)は、実際のパスを介してアクセスしたページでのみ使用できます。
+      * エディターでエイリアスによってアクセスされたページは公開できません。 エディターの[「公開」オプション](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)は、実際のパスを介してアクセスしたページでのみ使用できます。
       * 詳しくは、[「SEO と URL 管理のベストプラクティス」の「ページ名のローカライズ」](/help/overview/seo-and-url-management.md#localized-page-names)を参照してください。
 
 * **設定**

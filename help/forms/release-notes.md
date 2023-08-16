@@ -2,10 +2,10 @@
 title: "[!DNL AEM Forms] as a Cloud Service リリースノート"
 description: "[!DNL AEM Forms] as a Cloud Service リリースノート"
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 99%
+source-wordcount: '2015'
+ht-degree: 94%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 99%
 Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改善を受け取ります。最新の開発状況を確認するには、このページに定期的にアクセスしてください。このページでは、次の情報が確認できます。
 
 - 新機能
-- 改善点
+- 機能改善
 - プレリリース機能
 - ベータ版機能
 - バグの修正
@@ -39,7 +39,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
 
 ### [!DNL Forms] のベータ版機能 {#sep-what-is-new-forms-oct-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) では、テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期および一括モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
+- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) では、テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードとバッチモードでドキュメントを生成できます。 API により、以下のような機能を備えたアプリケーションを作成することができます。
 
    - テンプレートファイル（PDF および XDP）に XML データを格納することで、最終形式のドキュメントを生成します。
    - 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
@@ -61,9 +61,9 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
 ### [!DNL Forms] のベータ版機能 {#sep-what-is-new-forms-prerelease}
 
 - **統合ストレージコネクタ：**統合ストレージコネクタを使用すると、顧客側で管理されるリポジトリ内の処理中のデータを外部化することができます。例えば、個人の機密情報（SPD）を含んだ処理中の AEM ワークフローデータ（AEM ワークフロー変数データ）を顧客側で管理されるリポジトリに格納できます。
-   <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
+  <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) では、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
+- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) では、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。 API により、以下のような機能を備えたアプリケーションを作成することができます。
    - テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成します。
    - 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
    - XFA フォーム PDF および Adobe Acrobat フォームから印刷用 PDF ファイルを生成します。
@@ -104,7 +104,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
 
 - **AcroForm ベースのレコードのドキュメント**：AEM Forms as a Cloud Service では、XFA ベースのフォームテンプレート以外に、[Adobe Acrobat フォーム PDF（AcroForm PDF）](generate-document-of-record-for-non-xfa-based-adaptive-forms.md)をレコードのドキュメントのテンプレートとして使用できます。
 
-- **Microsoft Azure データストアコネクタ**：[フォームデータモデルを Microsoft Azure Storage に接続できるようになりました](configure-azure-storage.md)。アダプティブフォームデータを取得し、BLOB として Microsoft Azure Storage に保存することができます。
+- **Microsoft Azure データストアコネクタ**：[フォームデータモデルを Microsoft Azure Storage に接続できるようになりました](configure-azure-storage.md)。これにより、アダプティブフォームのデータを取得し、BLOB としてMicrosoft Azure Storage に保存することができます。
 
 ### [!DNL Forms] のベータ版機能 {#aug-what-is-new-forms-prerelease}
 
@@ -113,7 +113,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
    - Forms ポータルの保存および再開機能を有効にし、顧客側で管理されるデータリポジトリにアダプティブフォームのドラフトを格納する
    - 個人の機密情報（SPD）を含んだ処理中の AEM ワークフローデータ（AEM ワークフロー変数データ）を、顧客側で管理されるリポジトリに格納する
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) では、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
+- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) では、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。 API により、以下のような機能を備えたアプリケーションを作成することができます。
    - テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成します。
    - 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
    - XFA フォーム PDF および Adobe Acrobat フォームから印刷用 PDF ファイルを生成します。
@@ -139,13 +139,13 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
 
 - **Acroform べースのレコードのドキュメント**：XFA ベースのフォームテンプレート以外にも、[Adobe Acrobat Form PDF（Acroform PDF）](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ja) を、レコードドキュメントのテンプレートとして使用することもできます。
 
-- **Microsoft Azure データストアコネクタ**：[フォームデータモデルを Microsoft Azure Storage に接続できるようになりました](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=ja)。アダプティブフォームデータを取得し、BLOB として Microsoft Azure Storage に保存することができます。
+- **Microsoft Azure データストアコネクタ**：[フォームデータモデルを Microsoft Azure Storage に接続できるようになりました](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=ja)。これにより、アダプティブフォームのデータを取得し、BLOB としてMicrosoft Azure Storage に保存することができます。
 
 - **Variable Data Externalizer**：AEM ワークフロー変数のデータを、組織で管理される外部ストレージシステムに保存できます。
 
 ### [!DNL Forms] のベータ版機能 {#july-what-is-new-forms-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) では、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
+- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) では、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。 API により、以下のような機能を備えたアプリケーションを作成することができます。
    - テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成します。
    - 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
    - XFA フォーム PDF および Adobe Acrobat フォームから印刷用 PDF ファイルを生成します。
@@ -161,7 +161,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
 
 ### [!DNL Forms] のベータ版機能 {#june-what-is-new-forms-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**：通信 API を使用すると、XDP テンプレートと XML データを組み合わせて様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
+- **[!DNL AEM Forms as a Cloud Service - Communications]**：通信 API を使用すると、XDP テンプレートと XML データを組み合わせて様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。 API により、以下のような機能を備えたアプリケーションを作成することができます。
 
    - テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成する。
    - 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
@@ -187,7 +187,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
 
 ### [!DNL Forms] の今後のベータ版機能 {#may-what-is-new-forms-prerelease}
 
-Output as a Cloud service：出力サービスを使用すると、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期および非同期の一括モードでドキュメントを生成できます。出力サービスを使用すると、次のことを可能にするアプリケーションを作成できます。
+Output as a Cloud service：出力サービスを使用すると、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期バッチモードと非同期バッチモードでドキュメントを生成できます。 出力サービスを使用すると、次のことを可能にするアプリケーションを作成できます。
 
 - テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成する。
 - 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
@@ -207,25 +207,25 @@ Output as a Cloud service：出力サービスを使用すると、XDP テンプ
 
 - **Adobe Sign 対応アダプティブフォームでの Government ID 認証方法の使用**
 
-   高度な機械学習アルゴリズムを活用した Adobe Sign の Government ID プロセスにより、世界中の企業がその受信者の ID を高品質に認証できるように支援します。Adobe Sign 対応のアダプティブフォームで、Government ID 認証方法を使用できるようになりました。
+  高度な機械学習アルゴリズムを活用した Adobe Sign の Government ID プロセスにより、世界中の企業がその受信者の ID を高品質に認証できるように支援します。Adobe Sign 対応のアダプティブフォームで、Government ID 認証方法を使用できるようになりました。
 
-   Government ID は、政府発行の ID 文書[（運転免許証、国民 ID、パスポート）の画像をアップロード](https://helpx.adobe.com/jp/sign/using/adobesign-authentication-government-id.html)するように受信者に指示し、その文書を評価して信頼性を確認するプレミアム ID 認証方法です。
+  Government ID は、政府発行の ID 文書[（運転免許証、国民 ID、パスポート）の画像をアップロード](https://helpx.adobe.com/jp/sign/using/adobesign-authentication-government-id.html)するように受信者に指示し、その文書を評価して信頼性を確認するプレミアム ID 認証方法です。
 
 - **非同期のアダプティブフォーム送信に対するフォーム内署名機能の使用をサポート**
 
-   非同期のアダプティブフォーム送信に対して、フォーム内署名機能を使用できるようになりました。アダプティブフォームを [!DNL Experience Manager Sites] ページに埋め込み、アダプティブフォーム送信時にフォーム内署名機能を使用することもできます。
+  非同期のアダプティブフォーム送信に対して、フォーム内署名機能を使用できるようになりました。アダプティブフォームを [!DNL Experience Manager Sites] ページに埋め込み、アダプティブフォーム送信時にフォーム内署名機能を使用することもできます。
 
 - **変数を使用して添付ファイルを指定し、アダプティブフォームにタスクの割り当て手順を事前入力する際のサポート**
 
-   アダプティブフォームをタスクの割り当て手順用に事前入力する際に、ドキュメントタイプ変数を使用してアダプティブフォームの入力添付ファイルを選択できるようになりました。
+  アダプティブフォームをタスクの割り当て手順用に事前入力する際に、ドキュメントタイプ変数を使用してアダプティブフォームの入力添付ファイルを選択できるようになりました。
 
 - **リテラルオプションを使用して JSON タイプの変数の値を設定する機能をサポート**
 
-   リテラルオプションを使用して、AEM ワークフローの変数設定手順で JSON タイプの変数の値を設定できます。リテラルオプションを使用すると、文字列の形式で JSON を指定できます。
+  リテラルオプションを使用して、AEM ワークフローの変数設定手順で JSON タイプの変数の値を設定できます。リテラルオプションを使用すると、文字列の形式で JSON を指定できます。
 
 - **ローカル開発環境を使用したレコードのドキュメント（DoR）の作成**
 
-   Cloud Service インスタンスおよび AEM Forms as a Cloud Service SDK（ローカル開発環境）のレコードのドキュメントテンプレートとして XDP を使用できます。以前は、Cloud Service インスタンスのみサポートされていました。
+  Cloud Service インスタンスおよび AEM Forms as a Cloud Service SDK（ローカル開発環境）のレコードのドキュメントテンプレートとして XDP を使用できます。以前は、Cloud Service インスタンスのみサポートされていました。
 
 ### [!DNL Forms] のバグ修正  {#april-bug-fixes-forms}
 

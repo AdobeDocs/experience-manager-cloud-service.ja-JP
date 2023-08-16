@@ -2,10 +2,10 @@
 title: エクスペリエンスフラグメント
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントを使用すると、エクスペリエンスの再利用性と柔軟性を高めることができます。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2046'
-ht-degree: 87%
+source-wordcount: '2044'
+ht-degree: 86%
 
 ---
 
@@ -79,7 +79,7 @@ Adobe Experience Manager as a Cloud Service 内では、エクスペリエンス
 
 * [これらのフォルダーで使用可能なテンプレートを設定する](#configure-allowed-templates-folder)。
 
-フォルダーを作成すると、次の操作を行うことができます。
+フォルダーを作成すると、次の操作が可能になります。
 
 * エクスペリエンスフラグメントにとって意味のある構造（例：分類に従った構造）を作成する。
 
@@ -184,7 +184,7 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 
 1. **エクスペリエンスフラグメント**&#x200B;の&#x200B;**プロパティ**&#x200B;を入力します。
 
-   **タイトル**&#x200B;は必須です。この **名前** が空白の場合は、 **タイトル**.
+   **タイトル**&#x200B;は必須です。次の場合、 **名前** が空白の場合は、次の値から派生します。 **タイトル**.
 
    ![エクスペリエンスフラグメントのプロパティ](/help/sites-cloud/authoring/assets/xf-04.png)
 
@@ -232,7 +232,7 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 
    ![エクスペリエンスフラグメントのバリエーションの作成](/help/sites-cloud/authoring/assets/xf-06.png)
 
-1. 「**作成**」をクリックすると、以下を作成できます。
+1. **作成** 以下を作成できます。
 
    * **バリエーション**
    * **バリエーションをライブコピーとして**。
@@ -293,7 +293,7 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 
    ![構築ブロック名の設定](/help/sites-cloud/authoring/assets/xf-11.png)
 
-1. この **構築ブロック** が左側のタブに表示される (**ローカル**)、およびを選択して、さらにアクションを実行できます。
+1. The **構築ブロック** が左側のタブに表示される (**ローカル**)、およびを選択して、さらにアクションを実行できます。
 
    ![パネル内の構築ブロック](/help/sites-cloud/authoring/assets/xf-12.png)
 

@@ -2,10 +2,10 @@
 title: エディターの制限事項
 description: タッチ操作対応 UI のエディターは、オーバーレイを使用して iframe に含まれるコンテンツを操作します。 この操作には、エディターの使用と開発者に対していくつかの制限事項があります。
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 54%
+source-wordcount: '313'
+ht-degree: 53%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 54%
 
 ### 構造ページ {#structure-pages}
 
-ページに `structure` と名前が付けられない 。`structure` と名前が付けられたページは、ページエディターで編集できません。
+ページ名を指定できません `structure`. `structure` と名前が付けられたページは、ページエディターで編集できません。
 
 ## CSS の制限 {#css-limitations}
 

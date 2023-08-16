@@ -2,16 +2,16 @@
 title: Experience Manager Sites ページでフォームポータルを作成する方法
 description: フォームポータルを作成し、標準搭載のコアコンポーネントを AEM Sites ページで使用する方法を説明します。
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1839'
-ht-degree: 87%
+source-wordcount: '1837'
+ht-degree: 85%
 
 ---
 
 # ポータル上のアダプティブフォームを一覧表示 {#publish-forms-on-portal}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象 [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -20,7 +20,7 @@ ht-degree: 87%
 
 一般的なフォーム中心のポータルデプロイメントシナリオでは、フォーム開発とポータル開発が 2 つの異なるアクティビティになります。 フォームデザイナーがフォームを設計してリポジトリに保存する一方、Web 開発者はフォームを一覧表示し、フォームの送信を処理する Web アプリケーションを作成します。 Formsは、フォームリポジトリと Web アプリケーションの間で通信がおこなわれないので、Web 層にコピーされます。
 
-このようなシナリオは、多くの場合、管理上の問題と生産の遅延を引き起こします。 例えば、リポジトリに新しいバージョンのフォームがある場合、Web 層でフォームを置き換え、Web アプリケーションを変更し、パブリックサイトでフォームを再デプロイする必要があります。 Web アプリケーションを再デプロイすると、サーバーのダウンタイムが発生する場合があります。 通常、サーバーのダウンタイムは計画的なアクティビティなので、変更を瞬時に公開サイトにプッシュすることはできません。
+このようなシナリオは、多くの場合、管理上の問題と生産上の遅延を引き起こします。 例えば、リポジトリに新しいバージョンのフォームがある場合、Web 層でフォームを置き換え、Web アプリケーションを変更し、パブリックサイトでフォームを再デプロイする必要があります。 Web アプリケーションを再デプロイすると、サーバーのダウンタイムが発生する場合があります。 通常、サーバーのダウンタイムは計画的なアクティビティなので、変更を瞬時に公開サイトにプッシュすることはできません。
 
 AEM Forms は管理のオーバーヘッドと実稼働の遅延を低減するポータルコンポーネントを提供します。コンポーネントにより、web 開発者は Adobe Experience Manager（AEM）を使用して作成された web サイト上にフォームポータルを作成してカスタマイズできます。
 
@@ -39,7 +39,7 @@ AEM Forms は管理のオーバーヘッドと実稼働の遅延を低減する�
 
 AEM Forms は、次のポータルコンポーネントを標準搭載しています。
 
-* 検索とリスター：このコンポーネントを使用すると、フォームリポジトリからポータルページにフォームを一覧表示でき、指定した基準に基づいてフォームを一覧表示するための設定オプションが提供されます。
+* Search &amp; Lister：このコンポーネントを使用すると、フォームリポジトリーのフォームをポータルページにリストし、指定した条件に基づいてフォームをリストするための設定オプションを提供します。
 
 * ドラフトと送信：「検索とリスター」コンポーネントはフォーム作成者が発行しれたフォームを表示するのに対し、「ドラフトと送信」コンポーネントはドラフトとして保存され、後で完了して送信されるフォームを表示します。このコンポーネントは、ログインしたユーザーに対してパーソナライズされたエクスペリエンスを提供します。
 

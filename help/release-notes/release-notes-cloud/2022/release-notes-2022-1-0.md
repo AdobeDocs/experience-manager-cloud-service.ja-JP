@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 リリースのリリースノート。'
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 96%
+source-wordcount: '1079'
+ht-degree: 95%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 96%
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=ja) では、テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期および一括モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=ja) では、テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードとバッチモードでドキュメントを生成できます。 API により、以下のような機能を備えたアプリケーションを作成することができます。
 
    * テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成します。
    * 非インタラクティブ PDF 印刷ストリームを含む様々な形式のフォームを生成する

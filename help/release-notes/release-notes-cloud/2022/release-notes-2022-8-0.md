@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.8.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.8.0 リリースのリリースノート。'
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 62%
+source-wordcount: '624'
+ht-degree: 59%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 62%
 ### の新機能[!DNL Sites] {#sites-features}
 
 * 電子メールコンポーネントを使用すると、AEMでコンテンツを作成し、Campaign Classic経由で電子メールとして配信できます。 コア電子メールコンポーネント：
-   * は [コア WCM コンポーネント](https://github.com/adobe/aem-core-wcm-components) は、編集可能テンプレートとスタイルシステムをサポートしています。
+   * は、 [コア WCM コンポーネント](https://github.com/adobe/aem-core-wcm-components) は、編集可能テンプレートとスタイルシステムをサポートしています。
    * では、電子メールで最適化された 10 個の実稼動用コンポーネント（ページ、コンテナ、タイトル、テキスト、画像、ボタン、ティーザー、エクスペリエンスフラグメント、コンテンツフラグメント、セグメント化）を提供しています。
    * は、 [キャンペーン変数の挿入](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) ほとんどのダイアログフィールドで、また柔軟な [セグメント化コンポーネント](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
    * は、 [CSS スタイルインライナー](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)、 [HTML属性インライナー](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)、および [HTML消毒剤](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
@@ -45,7 +45,7 @@ ht-degree: 62%
 
 ### [!DNL Sites] プレリリースチャネルで利用できる新機能 {#prerelease-features-sites}
 
-* この [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) には、コンテンツフラグメントに関連付けられている言語コピーの合計数を表示するオプションが用意されています。 すべての言語コピーを表示するための 1 回のクリックアクセスが提供されています。 また、ユーザーは、関心があるロケールに基づいてテーブル表示をフィルタリングすることもできます。
+* The [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) には、コンテンツフラグメントに関連付けられている言語コピーの合計数を表示するオプションが用意されています。 すべての言語コピーを表示するための 1 回のクリックアクセスが提供されています。 また、ユーザーは、関心があるロケールに基づいてテーブル表示をフィルタリングすることもできます。
 
 ![コンテンツフラグメントの言語](/help/release-notes/assets/cfconsole-languages.png)
 
@@ -63,7 +63,7 @@ ht-degree: 62%
 
 * [アダプティブフォームウィザード](/help/forms/creating-adaptive-form.md)：AEM Forms は、ビジネスユーザー向けの使いやすいウィザードで、アダプティブフォームをすばやく作成することができます。このウィザードはクイックタブナビゲーション機能を備えており、アダプティブフォームを作成するための事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択することができます。このリリースでは、ウィザードが次のように改善されました：
 
-   * フィールドを選択または選択解除：このウィザードを使用すると、JSON およびフォームデータモデルスキーマに基づくアダプティブフォームを作成することができます。 スキーマ内のフィールドのサブセットを選択して、アダプティブフォームに含めることができるようになりました。 選択したフィールドは、対応するアダプティブフォームのデータキャプチャコンポーネントに変換され、目的のアダプティブフォームをすばやく作成することができます。
+   * フィールドの選択または選択解除：ウィザードを使用して、JSON およびフォームデータモデルスキーマに基づくアダプティブフォームを作成できます。 スキーマ内のフィールドのサブセットを選択して、アダプティブフォームに含めることができるようになりました。 選択したフィールドは、対応するアダプティブフォームのデータキャプチャコンポーネントに変換され、目的のアダプティブフォームをすばやく作成することができます。
 
    * 静的テンプレートを使用：従来の静的テンプレートにすでに投資している顧客は、ウィザードで静的テンプレートを使用してアダプティブ フォームを作成することにより、クラウド導入のジャーナリストを続けることができます。これにより、顧客にとっての、古い静的テンプレートを最新の編集可能なテンプレートに移行する時間が増加します。
 

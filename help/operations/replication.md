@@ -2,10 +2,10 @@
 title: レプリケーション
 description: AEM as a Cloud Serviceでの配布とレプリケーションのトラブルシューティングについて説明します。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 45%
+source-wordcount: '1341'
+ht-degree: 44%
 
 ---
 
@@ -64,7 +64,7 @@ Adobe Experience Manager as a Cloud Serviceは [Sling コンテンツ配布](htt
 1. AEMas a Cloud Serviceのホームページで、に移動します。 **ツール/ワークフロー/モデル**.
 1. ワークフローモデルページで、 **作成** をクリックします。
 1. モデルにタイトルと名前を追加します。詳しくは、「[ワークフローモデルの作成](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ja#extending-aem)」を参照してください。。
-1. 新しく作成したモデルをリストから選択し、「**編集**」を押します。
+1. リストから新しく作成したモデルを選択し、を押します。 **編集**
 1. 次のウィンドウで、「プロセスステップ」を現在のモデルフローにドラッグ＆ドロップします。
 
    ![プロセスステップ](/help/operations/assets/processstep.png)

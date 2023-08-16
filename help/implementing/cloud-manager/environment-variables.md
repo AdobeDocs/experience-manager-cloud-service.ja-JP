@@ -2,10 +2,10 @@
 title: Cloud Manager 環境変数
 description: 標準環境変数は、Cloud Manager を介して設定および管理でき、ランタイム環境に提供され、OSGi 設定で使用できます。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 90%
+source-wordcount: '1014'
+ht-degree: 89%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 90%
 1. Cloud Manager に、使用可能な様々なプログラムのリストが表示されます。管理するものを選択します。
 1. 選択したプログラムの「**環境**」タブを選択し、左側のナビゲーションパネルで環境変数を作成する環境を選択します。
 1. 環境の詳細で「**設定**」タブを選択し、「**追加**」を選択して **環境設定** ダイアログを開きます。
-   * 初めて環境変数を追加する場合、 **設定を追加** ボタンをクリックします。 このボタンまたは「**追加**」を使用して、**環境設定**&#x200B;ダイアログを開くことができます。
+   * 初めて環境変数を追加する場合は、 **設定を追加** 」ボタンをクリックします。 このボタンまたは「**追加**」を使用して、**環境設定**&#x200B;ダイアログを開くことができます。
 
    ![「設定」タブ](assets/configuration-tab.png)
 
@@ -118,9 +118,9 @@ ht-degree: 90%
 
 ### Dispatcher {#dispatcher}
 
-通常の環境変数のみが、[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja) で使用できます。シークレットは使用できません。
+通常の環境変数のみが、[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja) 秘密鍵は使用できません。
 
-ただし、環境変数は `IfDefine` ディレクティブでは使用できません。
+ただし、環境変数は `IfDefine` ディレクティブ。
 
 >[!TIP]
 >

@@ -2,10 +2,10 @@
 title: Cloud Acceleration Manager での実装フェーズ
 description: このページでは、Cloud Acceleration Manager における実装フェーズの概要について説明します。
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 35%
+source-wordcount: '661'
+ht-degree: 32%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 35%
 
 「ローカル開発」カードには、移行ジャーニーの実装段階を開始する際に、ローカルAEM開発環境の設定に役立つ、すべての関連コンテンツが表示されます。
 
-このセクションに従って、ローカル開発アクティビティカードを参照します。
+このセクションでは、ローカル開発アクティビティカードを参照できます。
 
 1. クリック **表示** から **ローカル開発** カード。
 
@@ -44,7 +44,7 @@ ht-degree: 35%
 
 ## コードリファクタリングカードの使用 {#code-refactoring}
 
-「コードリファクタリング」アクティビティカードは、すべての関連情報を提供し、AEM as a Cloud Serviceへの移行時に確認および解決するコードリファクタリング領域を強調表示します。
+「コードリファクタリング」アクティビティカードは、すべての関連情報を提供し、AEM as a Cloud Serviceに移行する際に確認および解決するコードリファクタリング領域を強調表示します。
 
 この節では、コードリファクタリングアクティビティカードを確認できます。
 
@@ -63,7 +63,7 @@ ht-degree: 35%
 >[!NOTE]
 >これらのタブの内容を確認して、ベストプラクティスアナライザーで扱われないその他の領域を理解します。
 
-この **Dispatcher** 「 」タブには、AEMas a Cloud Serviceの Apache および Dispatcher 設定を構築する方法と、クラウド環境にデプロイする前にローカルで検証および実行する方法に関する情報が表示されます。 また、クラウド環境でのデバッグについても説明します。
+The **Dispatcher** 「 」タブには、AEMas a Cloud Serviceの Apache および Dispatcher 設定を構築する方法と、クラウド環境にデプロイする前にローカルで検証および実行する方法に関する情報が表示されます。 また、クラウド環境でのデバッグについても説明します。
 
 ![画像](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
@@ -89,7 +89,7 @@ AEMas a Cloud Service的デプロイメントカードは、コードをAEM as a
 
 ## コンテンツ転送カードの使用 {#content-transfer}
 
-コンテンツ転送カードを使用すると、現在の AEM インスタンスから AEM as a Cloud Service へのコンテンツ転送を開始および管理できます。
+「コンテンツ転送」カードを使用すると、現在のAEMインスタンスからAEM as a Cloud Serviceへのコンテンツ転送を開始および管理できます。
 
 このセクションに従って、コンテンツ転送アクティビティカードを参照します。
 
@@ -109,7 +109,7 @@ AEMas a Cloud Service的デプロイメントカードは、コードをAEM as a
 
 1. コンテンツ転送ツールをダウンロードしてインストールし、移行セットに入力して、コンテンツ転送の抽出段階を完了します。 [コンテンツ転送ツールの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja)を参照して、コンテンツ転送ツールの使用方法を確認してください。
 
-1. 移行セットからAEM as a Cloud Service上の環境にコンテンツを取り込むには、取り込みを開始する必要があります。 に移動します。 **取り込みジョブ** をクリックし、 **新しい取り込み**. レビュー [Target へのコンテンツの取り込み](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=ja) そのため、コンテンツ転送のインジェスト段階を完了する方法を学ぶことができます。
+1. 移行セットからAEM as a Cloud Service上の環境にコンテンツを取り込むには、取り込みを開始する必要があります。 に移動します。 **取り込みジョブ** をクリックします。 **新しい取り込み**. レビュー [Target へのコンテンツの取り込み](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=ja) そのため、コンテンツ転送のインジェスト段階を完了する方法を学ぶことができます。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
@@ -128,4 +128,4 @@ You can also estimate the size of specific repository paths by using the `path` 
 
 ## 次の手順 {#whats-next}
 
-Cloud Acceleration Manager へのログオン方法と実装段階の使用方法を学習したら、次の手順 ( [運用開始段階](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html).
+Cloud Acceleration Manager へのログオン方法と実装段階の使用方法を学習したら、次の手順 ( [Go Live フェーズ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html).

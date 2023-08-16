@@ -2,7 +2,7 @@
 title: Adobe Target へのエクスペリエンスフラグメントの書き出し
 description: エクスペリエンスフラグメントをAdobe Targetに書き出し、エクスペリエンスをテストしてパーソナライズする方法について説明します。
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2254'
 ht-degree: 97%
@@ -305,7 +305,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >If the framework you attached to the page was not activated yet, a wizard opens which allows you to publish it as well.
+   >If the framework you attached to the page was not activated yet, a wizard opens which lets you publish it as well.
 -->
 
 ## Adobe Target へのエクスペリエンスフラグメントの書き出し {#exporting-an-experience-fragment-to-adobe-target}

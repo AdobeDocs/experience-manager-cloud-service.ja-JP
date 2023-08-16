@@ -3,10 +3,10 @@ title: GraphQL のコンテンツフラグメントを使用したヘッドレ�
 description: ヘッドレスコンテンツ配信にコンテンツフラグメントと GraphQL を使用して AEM ヘッドレス CMS を実現するための基本的な概念について説明します。
 feature: Content Fragments, GraphQL API
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 97%
+source-wordcount: '730'
+ht-degree: 89%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 97%
 
 コンテンツフラグメントと GraphQL API を使用すると、Adobe Experience Manager（AEM）as a Cloud Service をヘッドレスコンテンツ管理システム（CMS）として使用できます。
 
-これを実現するには、AEM GraphQL API（標準 GraphQL に基づいてカスタマイズされた実装）と共にコンテンツフラグメントを使用して、アプリケーションで使用する構造化されたコンテンツをヘッドレスで配信します。単一の API クエリをカスタマイズできる機能により、レンダリングする特定のコンテンツを（単一の API クエリに対する応答として）取得して配信できます。
+これを実現するには、AEM GraphQL API（標準 GraphQL に基づいてカスタマイズされた実装）と共にコンテンツフラグメントを使用して、アプリケーションで使用する構造化されたコンテンツをヘッドレスで配信します。単一の API クエリをカスタマイズする機能を使用すると、レンダリングする必要のある特定のコンテンツを（単一の API クエリへの応答として）取得して配信できます。
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ GraphQL とは次のことを意味します。
 
   [GraphQL.org](https://graphql.org) を参照
 
-[AEM GraphQL API](#aem-graphql-api) を使用すると、[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)で（複雑な）クエリを実行できます。各クエリは、特定のモデルタイプに従っています。返されたコンテンツは、アプリケーションで使用できます。
+The [AEM GraphQL API](#aem-graphql-api) を使用すると、 [コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)；の場合、各クエリは特定のモデルタイプに従っています。 返されたコンテンツは、アプリケーションで使用できます。
 
 ## AEM GraphQL API {#aem-graphql-api}
 
@@ -109,4 +109,4 @@ AEM GraphQL API の使い方の紹介は、「[AEM での GraphQL の使用方�
 
 ## チュートリアル - AEM ヘッドレスと GraphQL をはじめる前に
 
-実践的なチュートリアルを探している場合は、AEM の GraphQL API を使用し、外部アプリで使用するコンテンツをヘッドレス CMS シナリオで構築して公開する方法を示す「[AEM ヘッドレスと GraphQL をはじめる前に](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja)」のエンドツーエンドのチュートリアルをご覧ください。
+実践的なチュートリアルを探している場合は、[AEM ヘッドレスおよび GraphQL 入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja)をご覧ください。これは、AEM の GraphQL API を使用してコンテンツを構築および公開し、ヘッドレス CMS シナリオで外部アプリによって使用する方法を説明する包括的なチュートリアルです。

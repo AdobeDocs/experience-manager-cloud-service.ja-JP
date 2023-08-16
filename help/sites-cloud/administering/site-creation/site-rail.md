@@ -4,10 +4,10 @@ description: サイトテーマを簡単にカスタマイズおよび管理で�
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: 3e4c6fce54fe336c145d533c05e68e3a1f64c144
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 100%
+source-wordcount: '596'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## 概要 {#overview}
 
-サイトパネルを使用すると、サイトのテーマおよびテンプレートリソースを管理できます。コンテンツツリーパネル、参照パネル、タイムラインパネルなどの[他のパネルと同様に](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)、サイトパネルは、Sites コンソールの左端のパネルとして表示され、選択した項目に関する情報が表示されます。他のパネルとは異なり、サイトパネルはサイトルートにのみ適用されます。
+サイトレールを使用すると、サイトのテーマおよびテンプレートリソースを管理できます。 コンテンツツリーパネル、参照パネル、タイムラインパネルなどの[他のパネルと同様に](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)、サイトパネルは、Sites コンソールの左端のパネルとして表示され、選択した項目に関する情報が表示されます。他のパネルとは異なり、サイトパネルはサイトルートにのみ適用されます。
 
 サイトパネルは、次のように、サイトのテーマおよびテンプレートに関連する情報の管理に使用します。
 

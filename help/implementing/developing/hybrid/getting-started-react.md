@@ -1,11 +1,11 @@
 ---
 title: React を使用した AEM での SPA の概要
-description: この記事では、サンプルの SPA アプリケーションを紹介し、その設定方法を説明するほか、React を使用して独自の SPA の運用を速やかに開始する方法についても説明します。
+description: この記事では、サンプルのSPAアプリケーションを紹介し、その設定方法を説明し、React フレームワークを使用して独自のSPAをすぐに使い始めるための方法について説明します。
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 85%
+source-wordcount: '1141'
+ht-degree: 82%
 
 ---
 
@@ -60,7 +60,7 @@ AEM での SPA の動作について詳しくは、次のドキュメントを�
  react-dom
 ```
 
-この `aem-clientlib-generator` は、クライアントライブラリの作成をビルドプロセスの一部として自動化するために使用されます。
+The `aem-clientlib-generator` は、クライアントライブラリの作成をビルドプロセスの一部として自動化するために使用されます。
 
 `"aem-clientlib-generator": "^1.4.1",`
 

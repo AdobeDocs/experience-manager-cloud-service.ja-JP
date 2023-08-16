@@ -1,9 +1,9 @@
 ---
 title: ページプロパティの一括編集の設定
 description: 複数のページのプロパティを一度に編集できるように一括編集を設定する方法を説明します。
-source-git-commit: 9563c24c2794f8209494891da1a4a5a3360781db
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '248'
 ht-degree: 13%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 13%
 
 # ページプロパティの一括編集の設定 {#configuring-bulk-editing-of-page-properties}
 
-[ページプロパティの一括編集](/help/sites-cloud/authoring/fundamentals/page-properties.md#from-the-sites-console-multiple-pages) では、複数のページのプロパティを一度に編集できます。
+[ページプロパティの一括編集](/help/sites-cloud/authoring/fundamentals/page-properties.md#from-the-sites-console-multiple-pages) を使用すると、複数のページのプロパティを一度に編集できます。
 
 ## 検討事項 {#considerations}
 

@@ -2,10 +2,10 @@
 title: AEM ワークフローステップで変数を追加する方法
 description: 変数の作成、変数の値の設定、 [!DNL AEM Forms]  ワークフローステップでの変数の使用について説明します。
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2080'
-ht-degree: 98%
+source-wordcount: '2079'
+ht-degree: 97%
 
 ---
 
@@ -167,7 +167,7 @@ OR 分割は、ワークフロー内に分割を作成し、以降は 1 つの�
 
 #### 移動ステップ {#go-to-step}
 
-**移動ステップ**&#x200B;を使用すると、ルーティング式の結果に応じて、ワークフローモデル内で実行する次のステップを指定できます。
+The **ステップに移動** ルーティング式の結果に応じて、実行するワークフローモデル内の次のステップを指定できます。
 
 OR 分割ステップと同様に、ルール定義、ECMA スクリプト、または外部スクリプトを使用して、移動ステップのルーティング式を定義できます。
 
@@ -283,4 +283,4 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ## 参照 {#references}
 
-での変数の使用例の詳細 [!DNL AEM Forms] ワークフローの手順については、 [AEMワークフローの変数](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=ja).
+での変数の使用例の詳細 [!DNL AEM Forms] ワークフローの手順については、 [AEMワークフロー内の変数](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=ja).

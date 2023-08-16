@@ -4,10 +4,10 @@ description: AEMでの言語コピーウィザードの使用について説明�
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 69%
+source-wordcount: '280'
+ht-degree: 58%
 
 ---
 
@@ -29,11 +29,11 @@ ht-degree: 69%
 
    ![ウィザードから言語コピーを作成する](../assets/language-copy-wizard.png)
 
-1. ウィザードが開き、「**ソースを選択**」の手順が表示されます。この手順を使用して、ページを追加および削除できます。サブページを含めるか除外するオプションもあります。含めるページを選択し、「**次へ**」をタップまたはクリックします。
+1. ウィザードが開き、 **ソースを選択** ページを追加または削除する手順です。 サブページを含めるか除外するオプションもあります。含めるページを選択し、「**次へ**」をタップまたはクリックします。
 
    ![ウィザードを使用したページの追加](../assets/language-copy-wizard-add-pages.png)
 
-1. ウィザードの&#x200B;**設定**&#x200B;手順を実行すると、言語の追加と削除、翻訳方法の選択を行うことができます。「**次へ**」をタップまたはクリックします。
+1. The **設定** ウィザードの手順で、言語を追加または削除し、翻訳方法を選択できます。 「**次へ**」をタップまたはクリックします。
 
    ![ウィザードの設定手順](../assets/language-copy-wizard-configure.png)
 

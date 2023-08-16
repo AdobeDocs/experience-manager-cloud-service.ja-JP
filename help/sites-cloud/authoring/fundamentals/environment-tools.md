@@ -2,10 +2,10 @@
 title: オーサリング環境とツール
 description: AEM のオーサリング環境は、コンテンツを編成および編集するための様々なメカニズムを提供しています
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2153'
-ht-degree: 95%
+source-wordcount: '2150'
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 
 ## サイトの管理 {#managing-your-site}
 
-**Sites** コンソールでは、ヘッダーバー、ツールバー、アクションアイコン（選択されたリソースに対して適用）、パンくず、選択時のセカンダリレール（例：タイムラインや参照）を使用して Web サイト内を移動および管理できます。
+The **Sites** コンソールを使用すると、ヘッダーバー、ツールバー、アクションアイコン（選択したリソースに適用）、パンくずリストおよび選択時にセカンダリレール（タイムラインや参照など）を使用して、Web サイトの移動と管理をおこなえます。
 
 例えば、列表示では次のようになります。
 
@@ -152,7 +152,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 
 >[!NOTE]
 >
->モバイルデバイスは、幅が 1,024 px 未満の場合に検出されます。つまり、小さなデスクトップウィンドウにも表示されます。
+>モバイルデバイスは、幅が 1,024 px 未満の場合、つまり、小さなデスクトップウィンドウでも検出されます。
 
 アセットをすばやく変更する必要がある場合は、アセット名の横にある編集アイコンをクリックして、アセットブラウザーから直接[アセットエディター](/help/assets/manage-digital-assets.md)を開始できます。
 
@@ -265,12 +265,12 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 ページの編集時には様々なモードがあり、異なるアクションを行うことができます。
 
 * [編集](/help/sites-cloud/authoring/fundamentals/editing-content.md) - ページコンテンツの編集時に使用するモード。
-* [レイアウト](/help/sites-cloud/authoring/features/responsive-layout.md) - デバイスに応じたレスポンシブレイアウトを作成および編集できます（ページがレイアウトコンテナに基づいている場合）
+* [レイアウト](/help/sites-cloud/authoring/features/responsive-layout.md)  — デバイスに応じたレスポンシブレイアウトを作成および編集できます（ページがレイアウトコンテナに基づいている場合）
 * [ターゲット設定](/help/sites-cloud/authoring/personalization/targeted-content.md) - すべてのチャネルにわたるターゲティングと測定で、コンテンツの関連性を高めます。
-* [タイムワープ](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - 特定の時点のページの状態を表示できます。
+* [タイムワープ](/help/sites-cloud/authoring/features/page-versions.md#timewarp) ：特定の時点のページの状態を表示できます。
 * [ライブコピーステータス](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) - ライブコピーのステータスと継承される（または継承されない）コンポーネントの概要をすばやく確認できます。
 * [開発者モード](/help/implementing/developing/tools/developer-mode.md)
-* [プレビュー](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages)  — パブリッシュ環境で表示されるページを表示するために使用します。またはコンテンツ内のリンクを使用して移動する場合に使用します。
+* [プレビュー](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages)  — パブリッシュ環境と同様にページを表示する、またはコンテンツ内のリンクを使用して移動するために使用します。
 * [注釈](/help/sites-cloud/authoring/fundamentals/annotations.md) - ページで注釈の追加または表示を行う場合に使用するモード。
 
 これらのモードには右上のアイコンを使用してアクセスできます。実際のアイコンは、現在利用中のモードに合わせて変化します。

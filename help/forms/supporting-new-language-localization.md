@@ -1,19 +1,17 @@
 ---
 title: アダプティブフォームへの新しいロケールのサポートの追加
-seo-title: Learn to add support for new locales to your adaptive forms
 description: AEM Forms は、アダプティブフォームのローカライズ用に新しくロケールを追加できます。英語（en）、スペイン語（es）、フランス語（fr）、イタリア語（it）、ドイツ語（de）、日本語（ja）、ブラジルポルトガル語（pt-BR）、中国語（zh-CN）、台湾中国語（zh-TW）、韓国語（ko-KR）のロケールがあります。
-seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 90%
+source-wordcount: '1266'
+ht-degree: 89%
 
 ---
 
 # アダプティブフォームのローカライゼーション用に新しいロケールをサポート {#supporting-new-locales-for-adaptive-forms-localization}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象 [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 
 
 | バージョン | 記事リンク |
@@ -105,7 +103,7 @@ I18N.js
 1. 既に存在しない場合は、`<locale-name>`デフォルトのロケール値`de`、`es`、`fr`、`it`、`pt-br`、`zh-cn`、`zh-tw`、`ja`、`ko-kr` を追加します。
 
 1. `<locale>` を `/etc/languages` の `languages` プロパティの値に追加します。
-1. etc/META-INF/[ フォルダー階層]の `filter.xml` に、新しく作成したフォルダーを次のように追加します。
+1. 新しく作成したフォルダーを `filter.xml` etc/META-INF/の下[フォルダー階層] 形式：
 
    ```
    <filter root="/etc/clientlibs/[locale-name]"/>
@@ -144,7 +142,7 @@ I18N.js
 
    * ユーザー向けに設定されるブラウザーのロケールです。これは、`Accept-Language` ヘッダーを使用したリクエストで指定されます。
 
-要求されたロケールのクライアントライブラリが存在しない場合は、ロケールに存在する言語コードをクライアントライブラリで確認します。 例えば、要求されたロケールが `en_ZA` （南アフリカ英語）と `en_ZA` が存在しない場合、アダプティブフォームは次の目的でクライアントライブラリを使用します： `en` （英語）言語（存在する場合）。 ただし、どちらも存在しない場合、アダプティブフォームでは `en` ロケールの辞書が使用されます。
+要求されたロケールのクライアントライブラリが存在しない場合は、ロケールに存在する言語コードがクライアントライブラリにないかを確認します。 例えば、要求されたロケールが `en_ZA` （南アフリカ英語）と `en_ZA` が存在しない場合、アダプティブフォームは次の目的でクライアントライブラリを使用します： `en` （英語）言語（存在する場合）。 ただし、どちらも存在しない場合、アダプティブフォームでは `en` ロケールの辞書が使用されます。
 
 
 ロケールが識別されると、アダプティブフォームはフォーム固有の辞書を選択します。要求されたロケールに対応するフォーム固有の辞書が見つからない場合、アダプティブフォームが作成された言語の辞書が使用されます。

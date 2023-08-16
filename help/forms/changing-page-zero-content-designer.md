@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 66%
+source-wordcount: '232'
+ht-degree: 60%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 66%
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
-[!DNL AEM Forms] バージョンの Designer を使用すると、Page Zero に表示されるメッセージを変更できます。Page Zero メッセージを変更するには、以下の手順を実行します。
+[!DNL AEM Forms] Designer のバージョンでは、Page Zero に表示されるメッセージを変更できます。 Page Zero メッセージを変更するには、以下の手順を実行します。
 
 1. [!DNL AEM Forms] バージョンの Designer がインストールされていることを確認します。Designer のバージョン情報画面で、バージョンを確認できます。
 

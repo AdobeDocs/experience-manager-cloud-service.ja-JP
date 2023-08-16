@@ -3,16 +3,16 @@ title: アダプティブフォームの送信アクションの設定方法
 description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自のアクションを作成できます。
 hide: true
 hidefromtoc: true
-source-git-commit: ac9689a911be119ae53d5e1134595c567370b7c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3365'
 ht-degree: 80%
 
 ---
 
 # アダプティブフォーム送信アクション {#configuring-the-submit-action}
 
-<span class="preview"> Adobeでは、コアコンポーネントを次のように使用することをお勧めします。 [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) または [スタンドアロンのアダプティブFormsを作成](/help/forms/creating-adaptive-form-core-components.md). </span>
+<span class="preview"> Adobeでは、コアコンポーネントを次のように使用することをお勧めします。 [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) または [スタンドアロンのアダプティブFormsを作成する](/help/forms/creating-adaptive-form-core-components.md). </span>
 
 
 | バージョン | 記事リンク |
@@ -25,25 +25,25 @@ ht-degree: 80%
 送信アクションを使用すると、アダプティブフォームから取り込んだデータの送信先を選択できます。 ユーザーが **[!UICONTROL 送信]** ボタンを使用して、アダプティブフォームを編集できます。 Formsas a Cloud Serviceのは、コアコンポーネントに基づくアダプティブFormsの場合、事前に作成された送信アクションの配列を提供します。 標準のこれらの送信アクションを使用すると、次のことができます。
 
 * フォームデータを E メールで簡単に送信できます。
-* データの送信中に、Microsoft Power Automate のフローまたはAEMのワークフローを開始します。
+* データの送信中に、Microsoft Power Automate のフローまたはAEM Workflows を開始します。
 * フォームデータをMicrosoft SharePoint Server、Microsoft Azure Blob Storage、またはMicrosoft OneDrive に直接送信します。
 * フォームデータモデルを使用して、設定済みのデータソースにデータをシームレスに送信します。
 * データを REST エンドポイントに送信すると便利です。
 
-また、 [デフォルトの送信アクションの拡張](custom-submit-action-form.md) ：独自の送信アクションを作成します。
+また、 [デフォルトの送信アクションの拡張](custom-submit-action-form.md) をクリックして、独自の送信アクションを作成します。
 
 ## アダプティブフォームの送信アクションの選択と設定 {#select-and-configure-submit-action}
 
 フォームの送信アクションを選択して設定するには、次の手順を実行します。
 
 1. コンテンツブラウザーを開き、「 **[!UICONTROL ガイドコンテナ]** アダプティブフォームのコンポーネント
-1. ガイドコンテナのプロパティをクリックします。 ![ガイドのプロパティ](/help/forms/assets/configure-icon.svg) アイコン アダプティブフォームコンテナダイアログボックスが開きます。
+1. ガイドコンテナのプロパティをクリックします。 ![ガイドのプロパティ](/help/forms/assets/configure-icon.svg) アイコン。 アダプティブフォームコンテナダイアログボックスが開きます。
 
 1. 次をクリック：  **[!UICONTROL 送信]** タブをクリックします。
 
    ![レンチアイコンをクリックしてアダプティブフォームコンテナダイアログボックスを開き、送信アクションを設定します](/help/forms/assets/adaptive-forms-submit-message.png)
 
-1. の選択と設定 **[!UICONTROL 送信アクション]**、要件に応じて。 選択した送信アクションの詳細については、次を参照してください。
+1. を選択して設定します。 **[!UICONTROL 送信アクション]**、要件に応じて。 選択した送信アクションの詳細については、次を参照してください。
 
    * [メールを送信](#send-email)
    * [SharePoint に送信](#submit-to-sharedrive)
@@ -114,7 +114,7 @@ ht-degree: 80%
 
 AEM Forms を Microsoft® Sharepoint ストレージに接続するには、次の手順に従います。
 
-1. 次に移動： **AEM Forms** インスタンス > **[!UICONTROL ツール]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. 次の場所に移動します。 **AEM Forms** インスタンス > **[!UICONTROL ツール]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
 1. **設定コンテナ**&#x200B;を選択します。「設定コンテナ」のチェックボックスをオンにしないでください。 設定コンテナの名前をクリックして選択します。 設定は、選択した設定コンテナに保存されます。
 1. 「**[!UICONTROL 作成]**」をクリックします。SharePoint 設定ウィザードが表示されます。
    ![SharePoint の設定](/help/forms/assets/sharepoint_configuration.png)
@@ -126,7 +126,7 @@ AEM Forms を Microsoft® Sharepoint ストレージに接続するには、次�
 
    >[!NOTE]
    >
-   > この **クライアント秘密鍵** フィールドは、Azure Active Directory アプリケーションの構成に応じて、必須またはオプションです。 アプリケーションでクライアント秘密鍵を使用するように設定されている場合は、クライアントの秘密鍵を指定する必要があります。
+   > The **クライアント秘密鍵** フィールドは、Azure Active Directory アプリケーションの構成に応じて、必須またはオプションです。 アプリケーションでクライアント秘密鍵を使用するように設定されている場合は、クライアントの秘密鍵を指定する必要があります。
 
 1. 「**[!UICONTROL 接続]**」をクリックします。接続に成功した場合、`Connection Successful` のメッセージが表示されます。
 
@@ -136,9 +136,9 @@ AEM Forms を Microsoft® Sharepoint ストレージに接続するには、次�
    >
    >* デフォルトでは、 `forms-ootb-storage-adaptive-forms-submission` 選択したSharePoint Site でフォルダーを使用できます。 フォルダーが使用できない場合は、 **フォルダーを作成** オプションを使用して作成できます。
 
-これで、このSharePoint Sites 設定を **SharePointに送信** アダプティブフォームでの送信アクション
+これで、このSharePoint Sites 設定を **SharePointに送信** アダプティブフォームでの送信アクション。
 
-### アダプティブフォームで「SharePointに送信」送信アクションを使用する {#use-sharepoint-configuartion-in-af}
+### アダプティブフォームで「 SharePointに送信」送信アクションを使用する {#use-sharepoint-configuartion-in-af}
 
 前の節で作成したSharePoint設定を使用して、データやレコードのドキュメントをSharePointフォルダーに保存できます。 アダプティブフォームで「 SharePointに送信」送信アクションを使用するには、以下の手順を実行します。
 

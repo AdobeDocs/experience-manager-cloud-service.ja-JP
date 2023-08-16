@@ -4,10 +4,10 @@ description: テーマとコアコンポーネントを使用して、アダプ�
 seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
 keywords: 新しいテーマの作成、テーマのカスタマイズ、新しいテーマのアップロード、フォームでのテーマの使用、フロントエンドパイプラインでのテーマのカスタマイズ
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: fc0ff8cff8c616bc5576d834883aa0fe38ef593e
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2709'
+ht-degree: 17%
 
 ---
 
@@ -56,7 +56,7 @@ Forms as Cloud Serviceが提供する、コアコンポーネントベースの�
 
 ## テーマのカスタマイズ {#customize-a-theme-core-components}
 
-テーマのカスタマイズとは、テーマの外観を変更し、パーソナライズするプロセスを指します。 テーマをカスタマイズすると、デザイン要素、レイアウト、色、タイポグラフィ、および基になるコードが変更される場合があります。 テーマで提供される基本的な構造と機能を維持しながら、Web サイトやアプリケーションの独自のカスタマイズされた外観を作成できます。
+テーマのカスタマイズとは、テーマの外観を変更し、パーソナライズするプロセスを指します。 テーマをカスタマイズすると、デザイン要素、レイアウト、色、タイポグラフィ、および基になるコードが変更される場合があります。 テーマで提供される基本的な構造と機能を維持しながら、Web サイトやアプリケーションを独自のカスタマイズされた外観で作成できます。
 
 ### 前提条件 {#prerequisites-to-customize}
 

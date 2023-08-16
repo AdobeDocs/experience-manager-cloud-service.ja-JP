@@ -2,9 +2,9 @@
 title: SSL 証明書の追加
 description: Cloud Manager のセルフサービスツールを使用して独自の SSL 証明書を追加する方法を説明します。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '570'
 ht-degree: 82%
 
 ---
@@ -153,7 +153,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->これらの 2 つのコマンドの出力は、完全に同じである必要があります。の `main/server` 証明書の場合は、新しい CSR を生成して証明書のキーを再設定するか、SSL ベンダーから更新済み証明書を要求する必要があります。
+>これらの 2 つのコマンドの出力は、完全に同じである必要があります。が `main/server` 証明書の場合は、新しい CSR を生成して証明書のキーを再設定するか、SSL ベンダーから更新済み証明書を要求する必要があります。
 
 ### 証明書の有効期限 {#certificate-validity-dates}
 

@@ -4,9 +4,9 @@ description: Adobe Experience Manager では、 [!DNL Adobe Sensei] を使用し
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1212'
 ht-degree: 98%
 
 ---
@@ -67,7 +67,7 @@ DAM 内の既存のビデオアセットに対しては、スマートタグが�
 
 ## ビデオスマートタグのモデレート {#moderate-video-smart-tags}
 
-[!DNL Adobe Experience Manager] では、スマートタグをキュレーションして次の操作を行うことができます。
+[!DNL Adobe Experience Manager] スマートタグをキュレーションして次の操作を実行できます。
 
 * ブランドビデオに割り当てられている不正確なタグを削除します。
 
@@ -139,15 +139,15 @@ DAM 内の既存のビデオアセットに対しては、スマートタグが�
 * [アセットを翻訳](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットの検索](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットを検索](search-assets.md)
+* [接続されたアセット](use-assets-across-connected-assets-instances.md)
 * [アセットレポート](asset-reports.md)
 * [メタデータスキーマ](metadata-schemas.md)
-* [アセットのダウンロード](download-assets-from-aem.md)
-* [メタデータの管理](manage-metadata.md)
+* [アセットをダウンロード](download-assets-from-aem.md)
+* [メタデータを管理](manage-metadata.md)
 * [検索ファセット](search-facets.md)
-* [コレクションの管理](manage-collections.md)
-* [一括メタデータ読み込み](metadata-import-export.md)
+* [コレクションを管理](manage-collections.md)
+* [メタデータの一括読み込み](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

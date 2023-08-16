@@ -3,10 +3,10 @@ title: AEM での GraphiQL IDE の使用
 description: Adobe Experience Manager で GraphiQL IDE を使用する方法について説明します。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 83%
+source-wordcount: '1141'
+ht-degree: 79%
 
 ---
 
@@ -23,14 +23,14 @@ ht-degree: 83%
 >[!NOTE]
 >GraphiQL IDE を使用する前に、[設定ブラウザー](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)で[エンドポイントを設定](/help/headless/graphql-api/graphql-endpoint.md)しておく必要があります。
 
-**GraphiQL** ツールを使用すると、次のことが可能になるので、GraphQL クエリをテストおよびデバッグできます。
+The **GraphiQL** ツールを使用すると、次のことが可能になり、GraphQLクエリをテストおよびデバッグできます。
 * クエリに使用する Sites 設定に適した&#x200B;**エンドポイント**&#x200B;を選択する
 * 新しいクエリを直接入力する
 * **[永続クエリ](/help/headless/graphql-api/persisted-queries.md)**&#x200B;を作成してアクセスする
 * クエリを実行して結果をすぐに確認する
 * **クエリ変数**&#x200B;を管理する
 * **永続クエリ**&#x200B;を保存して管理する
-* 公開または非公開 **永続クエリ**&#x200B;を **公開** または **プレビュー** サービス例：to/from `dev-publish`
+* 公開または非公開 **永続クエリ**&#x200B;を **公開** または **プレビュー** サービス（宛先/元など） `dev-publish`
 * 以前のクエリの&#x200B;**履歴**&#x200B;を確認する
 * **ドキュメントエクスプローラー**&#x200B;を使用してドキュメントにアクセスし、使用可能な方法を学び理解するのに役立てる
 
@@ -87,7 +87,7 @@ ht-degree: 83%
 
 ## クエリ変数 {#query-variables}
 
-また、GraphiQL IDE では、[クエリ変数](/help/headless/graphql-api/content-fragments.md#graphql-variables)を管理することもできます。
+また、GraphiQL IDE を使用して、 [クエリ変数](/help/headless/graphql-api/content-fragments.md#graphql-variables).
 
 例：
 
@@ -134,7 +134,7 @@ max-age と同じですが、特にプロキシキャッシュに適用されま
 
 リスト（左パネル）から永続化されたクエリを選択したら、 **公開** アクション。
 
-これにより、選択した環境に対するクエリがアクティブ化されます。 次のいずれかを選択できます： **公開** 環境 ( 例： `dev-publish`) または **プレビュー** 環境を使用して、テスト時にアプリケーションから簡単にアクセスできます。
+これにより、選択した環境に対するクエリがアクティブ化されます。 次のいずれかを選択できます： **公開** 環境 ( 例： `dev-publish`)、または **プレビュー** 環境を使用して、テスト時にアプリケーションから簡単にアクセスできます。
 
 ![GraphiQL — 公開済みの永続クエリ](assets/cfm-graphiql-publish.png "GraphiQL — 公開永続クエリ")
 
@@ -146,7 +146,7 @@ max-age と同じですが、特にプロキシキャッシュに適用されま
 
 公開時と同様に、リスト（左パネル）から持続的なクエリを選択すると、 **非公開** アクション。
 
-これにより、選択した環境からクエリが非アクティブ化されます。どちらか **公開** 環境、または **プレビュー** 環境。
+これにより、選択した環境からクエリが非アクティブ化されます。 **公開** 環境、または **プレビュー** 環境。
 
 >[!NOTE]
 >
@@ -154,7 +154,7 @@ max-age と同じですが、特にプロキシキャッシュに適用されま
 
 ## URL をコピーしてクエリに直接アクセスする {#copy-url}
 
-「**URL をコピー**」オプションを使用すると、永続クエリに直接アクセスする URL をコピーしてクエリをシミュレートし、結果を確認することができます。これは、ブラウザーでアクセスするなどしてテストに使用できます。
+The **URL をコピー** 「 」オプションを使用すると、永続化されたクエリに直接アクセスして結果を確認するために使用する URL をコピーして、クエリをシミュレートできます。 これは、ブラウザーでアクセスするなどしてテストに使用できます。
 
 <!--
   >[!NOTE]

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.8.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.8.0 リリースのリリースノート。'
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 96%
+source-wordcount: '1027'
+ht-degree: 94%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 96%
 
 * **AcroForm ベースのレコードのドキュメント**：AEM Forms as a Cloud Service では、XFA ベースのフォームテンプレート以外に、[Adobe Acrobat フォーム PDF（AcroForm PDF）](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ja)をレコードのドキュメントのテンプレートとして使用できます。
 
-* **Microsoft Azure データストアコネクタ**：[フォームデータモデルを Microsoft Azure Storage に接続できるようになりました](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=ja)。アダプティブフォームデータを取得し、BLOB として Microsoft Azure Storage に保存することができます。
+* **Microsoft Azure データストアコネクタ**：[フォームデータモデルを Microsoft Azure Storage に接続できるようになりました](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=ja)。これにより、アダプティブフォームのデータを取得し、BLOB としてMicrosoft Azure Storage に保存することができます。
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms}
 

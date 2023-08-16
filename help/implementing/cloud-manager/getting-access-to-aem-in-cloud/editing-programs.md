@@ -2,16 +2,16 @@
 title: プログラムの編集
 description: 実稼動およびサンドボックスプログラムを編集し、作成後にオプションを調整する方法について説明します。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 86%
+source-wordcount: '516'
+ht-degree: 85%
 
 ---
 
 # プログラムの編集 {#editing-programs}
 
-必要な権限を持つユーザーは、 [組織で作成された実稼動プログラム](creating-production-programs.md) および [組織で作成されたサンドボックスプログラム](creating-sandbox-programs.md)プログラムを編集すると、次のことが可能です。
+必要な権限を持つユーザーが編集できる [組織で作成された実稼動プログラム](creating-production-programs.md) および [組織で作成されたサンドボックスプログラム。](creating-sandbox-programs.md)プログラムを編集すると、次のことが可能です。
 
 * Assets を使用している既存のプログラムに Sites ソリューションを追加する（その逆も同様）。
 * Sites と Assets の両方を使用している既存のプログラムから Sites または Assets を削除する。
@@ -59,11 +59,11 @@ ht-degree: 86%
 
 ソリューションやアドオンの追加や削除など、プログラムが編集されるたびに、その変更内容は次回のデプロイメント後に有効になります。
 
-実稼動プログラムでセキュリティが強化されている場合は、 **セキュリティの強化** タブは **プログラムを編集** ウィンドウが開き、プログラムに対して機能がアクティブであることが確認されます。
+実稼動プログラムでセキュリティが強化されている場合は、 **セキュリティの強化** タブは、 **プログラムを編集** ウィンドウが開き、プログラムに対して機能がアクティブであることが確認されます。
 
 ![プログラムのセキュリティ強化がアクティブである](assets/edit-program-enhanced.png)
 
-この設定は、プログラムの作成後は変更できません。拡張セキュリティオプションの詳細については、 [実稼働プログラムの作成](creating-production-programs.md) 文書。
+この設定は、プログラムの作成後は変更できません。 拡張セキュリティオプションの詳細については、 [実稼働プログラムの作成](creating-production-programs.md) 文書。
 
 ## サンドボックスプログラムの削除 {#delete-sandbox-program}
 

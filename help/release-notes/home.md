@@ -2,10 +2,10 @@
 title: Adobe Experience Manager（AEM）as a Cloud Service のリリースノート。
 description: Adobe Experience Manager（AEM）as a Cloud Service のリリースノート。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 3f62a7db9038dabdcca3dd59612e8e26c48b8482
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 100%
+source-wordcount: '642'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 * [機能リリースは、予測可能な月次の頻度で行われ、新機能と製品の革新に重点を置いています。](/help/release-notes/release-notes-cloud/release-notes-current.md)
 * [メンテナンスリリースは頻繁に行われ、セキュリティアップデート、バグ修正、パフォーマンスの強化に重点を置いています。](/help/release-notes/maintenance/latest.md)これにより、[!DNL Adobe Experience Manager] as a Cloud Service は常に最新で、重要な修正が加えられます。
 
-イノベーションのスピードに加えて、[!DNL Adobe Experience Manager] as a Cloud Service は、実稼動にリリースされる 1 か月前に今後の機能を予めプレビューできる柔軟性を備えています。独自のカスタム環境で機能をテストし、事前に内部ユーザーのトレーニング／準備を行うことで、今後のリリースが組織に与える影響を評価できます。Fomrs などの AEM アドオンがある場合、[プログラム設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)でソリューションを選択することで、更新することができます。
+イノベーションのスピードに加えて、[!DNL Adobe Experience Manager] as a Cloud Service は、実稼動にリリースされる 1 か月前に今後の機能を予めプレビューできる柔軟性を備えています。これにより、今後のリリースが組織に与える影響を評価できます。そのためには、独自のカスタム環境で機能をテストし、内部ユーザーを事前にトレーニング/準備します。 Fomrs などの AEM アドオンがある場合、[プログラム設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)でソリューションを選択することで、更新することができます。
 
 >[!NOTE]
 >

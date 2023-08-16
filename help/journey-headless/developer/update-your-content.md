@@ -2,10 +2,10 @@
 title: AEM Assets API を使用してコンテンツをアップデートする方法
 description: AEM ヘッドレスデベロッパージャーニーのこの部分では、REST API を使用してコンテンツフラグメントのコンテンツにアクセスし、アップデートする方法について説明します。
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 100%
+source-wordcount: '1069'
+ht-degree: 94%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 
 では、他の API が必要なのでしょうか？
 
-Assets HTTP API を使用すると、コンテンツを&#x200B;**読み取る**&#x200B;ことができます。また、コンテンツを&#x200B;**作成**、**アップデート**、**削除**&#x200B;することができます。これらは、GraphQL API では実行できないアクションです。
+Assets HTTP API を使用すると、次のことが可能になります。 **読み取り** コンテンツを選択しますが、 **作成**, **更新** および **削除** コンテンツ — GraphQL API では実行できないアクション。
 
 Assets REST API は、最新の Adobe Experience Manager as a Cloud Service バージョンの標準インストールで利用できます。
 
@@ -54,7 +54,7 @@ Assets HTTP API には次の API が含まれます。
 
 現在の Assets HTTP API の実装は、**REST** アーキテクチャスタイルに基づいており、**CRUD** 操作（作成、読み取り、アップデート、削除）を使用して（AEM に保存された）コンテンツにアクセスできます。
 
-これらの操作を使用して、API では、コンテンツサービスを JavaScript フロントエンドアプリケーションに提供することで、Adobe Experience Manager as a Cloud Service をヘッドレス CMS（コンテンツ管理システム）として動作させることができます。または、HTTP リクエストを実行して JSON 応答を処理できる他のどのようなアプリケーションにもすることができます。例えば、単一ページアプリケーション（SPA）では、フレームワークベースかカスタムかを問わず、API 経由で提供されるコンテンツ（多くの場合 JSON 形式）が必要です。
+これらの操作を使用すると、API は、JavaScript フロントエンドアプリケーションにコンテンツサービスを提供することで、Adobe Experience Manager as a Cloud Serviceをヘッドレス CMS(Content Management System) として操作できます。 または、HTTP リクエストを実行して JSON 応答を処理できる他のどのようなアプリケーションにもすることができます。例えば、単一ページアプリケーション（SPA）では、フレームワークベースかカスタムかを問わず、API 経由で提供されるコンテンツ（多くの場合 JSON 形式）が必要です。
 
 <!--
 >[!NOTE]

@@ -5,16 +5,16 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1074'
-ht-degree: 94%
+source-wordcount: '1073'
+ht-degree: 91%
 
 ---
 
 # 遅延読み込みによる大きなフォームのパフォーマンスの向上 {#improve-performance-of-large-forms-with-lazy-loading}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象 [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -24,7 +24,7 @@ ht-degree: 94%
 
 ## 遅延読み込みの概要 {#introduction-to-lazy-loading}
 
-フォームが数百以上のフィールドを持ち、大きく複雑になると、エンドユーザーはフォームがレンダリングされる際に長時間待たされることになります。この応答時間を最小にするために、アダプティブフォームでは、フォームを複数の論理的なフラグメントに分解し、これらのフラグメントを表示する必要が生じるまで、それらの初期化や読み込みを遅延するように設定できます。これを遅延読み込みと呼びます。さらに、遅延読み込みが設定されたフラグメントは、ユーザーがフォーム内の他のセクションに移動するとアンロードされ、フラグメントは表示されなくなります。
+フォームが数百以上のフィールドを持ち、大きく複雑になると、エンドユーザーはフォームがレンダリングされる際に長時間待たされることになります。応答時間を最小限に抑えるために、アダプティブFormsでは、フォームを論理フラグメントに分割し、フラグメントを表示する必要が生じるまでフラグメントの初期化または読み込みを遅らせるように設定できます。 これを遅延読み込みと呼びます。さらに、遅延読み込みが設定されたフラグメントは、ユーザーがフォーム内の他のセクションに移動するとアンロードされ、フラグメントは表示されなくなります。
 
 まず最初に、遅延読み込みを設定する前に、要件と準備手順を説明します。
 

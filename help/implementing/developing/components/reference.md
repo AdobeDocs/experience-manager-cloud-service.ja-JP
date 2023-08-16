@@ -2,16 +2,16 @@
 title: コンポーネントリファレンスガイド
 description: コンポーネントとその構造の詳細に関するデベロッパー向けリファレンスガイド
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3650'
+source-wordcount: '3648'
 ht-degree: 94%
 
 ---
 
 # コンポーネントリファレンスガイド {#components-reference-guide}
 
-コンポーネントは、AEM でエクスペリエンスを構築する際の中心です。[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)と[ AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)を使うと、堅牢な既製のコンポーネントのツールセットを簡単に使い始めることができます。この [WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md) では、開発者はこれらのツールの使用方法と、カスタムコンポーネントを作成してAEMサイトを作成する方法を学びます。
+コンポーネントは、AEM でエクスペリエンスを構築する際の中心です。[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)と[ AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)を使うと、堅牢な既製のコンポーネントのツールセットを簡単に使い始めることができます。The [WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md) では、開発者はこれらのツールの使用方法と、カスタムコンポーネントを作成してAEMサイトを作成する方法を学習します。
 
 >[!TIP]
 >
@@ -55,7 +55,7 @@ Sling Resource Merger を使用し、`sling:resourceSuperType` プロパティ�
 
 ### コンテンツのロジックとマークアップのレンダリング  {#content-logic-and-rendering-markup}
 
-コンポーネントはでレンダリングされます。 [HTML](https://www.w3schools.com/htmL/html_intro.asp). コンポーネントでは、必要なコンテンツを取得して、オーサリング環境とパブリッシュ環境の両方で必要に応じてレンダリングするために必要な HTML を定義しなければなりません。
+コンポーネントはを使用してレンダリングされます。 [HTML](https://www.w3schools.com/htmL/html_intro.asp). コンポーネントでは、必要なコンテンツを取得して、オーサリング環境とパブリッシュ環境の両方で必要に応じてレンダリングするために必要な HTML を定義しなければなりません。
 
 マークアップおよびレンダリングを行うコードと、コンポーネントのコンテンツ選択に関するロジックを制御するコードは、分離しておくことをお勧めします。
 
@@ -63,8 +63,8 @@ Sling Resource Merger を使用し、`sling:resourceSuperType` プロパティ�
 
 この（オプション）ロジックは様々な方法で実装でき、特定のコマンドを使用して HTL から呼び出します。
 
-* Java の使用 - [HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=ja) を使用すると、HTL ファイルからカスタム Java クラスのヘルパーメソッドへのアクセスが可能になります。そのため、JavaScript コードを使用して、コンポーネントのコンテンツを選択および設定するためのロジックを実装できます。
-* JavaScript の使用 - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=ja) を使用すると、HTL ファイルから JavaScript で書かれたヘルパーコードへのアクセスが可能になります。そのため、JavaScript コードを使用して、コンポーネントのコンテンツを選択および設定するためのロジックを実装できます。
+* Java の使用 - [HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=ja) を使用すると、HTL ファイルからカスタム Java クラスのヘルパーメソッドへのアクセスが可能になります。そのため、Java コードを使用して、コンポーネントのコンテンツを選択および設定するためのロジックを実装できます。
+* JavaScript の使用- [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=ja) を使用すると、HTL ファイルから JavaScript で書かれたヘルパーコードへのアクセスが可能になります。これにより、JavaScript コードを使用して、コンポーネントコンテンツの選択と設定のロジックを実装できます。
 * クライアントサイドライブラリの使用 - 最近の Web サイトは、複雑な JavaScript や CSS コードを利用したクライアントサイド処理に大きく依存しています。詳しくは、「[AEM as a Cloud Service でのクライアントサイドライブラリの使用](/help/implementing/developing/introduction/clientlibs.md)」ドキュメントを参照してください。
 
 ## コンポーネント構造 {#structure}
@@ -383,7 +383,7 @@ AEM には、既存の設定が多数あります。**CRXDE Lite** のクエリ�
 
 ### フィールドイベントの処理 - cq:listeners {#cq-listeners}
 
-ダイアログフィールドのイベントを処理する方法は、カスタムのリスナーで実行します [クライアントライブラリ](/help/implementing/developing/introduction/clientlibs.md).
+ダイアログフィールドのイベントを処理する方法は、カスタムのリスナーで実行します。 [クライアントライブラリ](/help/implementing/developing/introduction/clientlibs.md).
 
 フィールドにロジックを挿入するには、以下を実行する必要があります。
 

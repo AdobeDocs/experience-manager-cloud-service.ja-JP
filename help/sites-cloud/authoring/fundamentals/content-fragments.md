@@ -2,9 +2,9 @@
 title: コンテンツフラグメント
 description: Adobe Experience Manager as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、使用が可能になります。
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1222'
 ht-degree: 86%
 
 ---
@@ -148,7 +148,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 ### 関連コンテンツの使用 {#using-associated-content}
 
-次の場合： [関連コンテンツ](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) と [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md) これらのアセットは、（フラグメントをコンテンツページに配置した後に）サイドパネルから使用できます。 関連付けられたコンテンツは、事実上、[中間コンテンツ](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)用のコンテンツの特別なソースになります。
+次の条件を満たしている場合： [関連コンテンツ](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) と [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md) これらのアセットは、（フラグメントをコンテンツページに配置した後に）サイドパネルから使用できます。 関連付けられたコンテンツは、事実上、[中間コンテンツ](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)用のコンテンツの特別なソースになります。
 
 >[!NOTE]
 >

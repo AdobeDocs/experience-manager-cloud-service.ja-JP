@@ -4,10 +4,10 @@ description: コンテンツフラグメントコンソールを使用して、�
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2052'
-ht-degree: 76%
+source-wordcount: '2051'
+ht-degree: 75%
 
 ---
 
@@ -196,7 +196,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
   >
   >これらの操作では、変更を保存するだけでなく、参照もすべて更新し、Dispatcher が必要に応じてフラッシュされます。これらの変更の処理には時間がかかる場合があります。このため、大きなシステムや複雑なシステム、高負荷のシステムのパフォーマンスに影響することがあります。
   >
-  >を使用する際は、このプロセスに時間を割いてください **保存して閉じる**&#x200B;フラグメントエディターを再度開き、変更を加えて保存します。
+  >を使用する際は、このプロセスに時間を割いてください。 **保存して閉じる**&#x200B;フラグメントエディターを再度開き、変更を加えて保存します。
 
 * **閉じる**
 
@@ -241,13 +241,13 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 コンテンツフラグメントは次の場所に公開できます。
 
-* の **[パブリッシュサービス](/help/overview/architecture.md#runtime-architecture)**  — フルアクセス用
+* の **[パブリッシュサービス](/help/overview/architecture.md#runtime-architecture)**  — フルアクセス用、パブリックアクセス用
 
 * の **[プレビューサービス](/help/overview/architecture.md#runtime-architecture)**  — フルリリース前にコンテンツをプレビュー
 
   >[!CAUTION]
   >
-  へのコンテンツフラグメントの公開 **プレビューサービス** は、 [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md);の使用 **公開** アクション。
+  へのコンテンツフラグメントの公開 **プレビューサービス** は、次の場所でのみ使用できます： [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)；を使用 **公開** アクション。
 
   >[!NOTE]
   >
@@ -257,7 +257,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
   * [プレビュー層の OSGi 設定の指定](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
   * [開発者コンソールを使用したプレビューのデバッグ](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
 
-を使用してコンテンツフラグメントを公開するには **公開** 」オプション ( [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):
+を使用してコンテンツフラグメントを公開するには **公開** 」オプションを選択します。 [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):
 
 >[!CAUTION]
 >
@@ -267,9 +267,9 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 1. リストから 1 つ以上のフラグメントを選択します。
 
-1. ツールバーで、「 」を選択します。 **公開** 次に、次のいずれかを実行して、適切なダイアログを開きます。
+1. ツールバーで、「 」を選択します。 **公開** 次に、次のいずれかの操作を行って、適切なダイアログを開きます。
 
-   * **今すぐ**  — 次のいずれかを選択します。 **パブリッシュサービス**、または **プレビューサービス**;確認後、フラグメントは直ちに公開されます
+   * **今すぐ**  — 次のいずれかを選択します。 **パブリッシュサービス**、または **プレビューサービス**；確認後、フラグメントは直ちに公開されます
    * **スケジュール**  — 必要なサービスに加えて、フラグメントが公開される日時を選択することもできます
 
    必要に応じて、パブリッシュする参照を指定する必要があります。 デフォルトでは、参照はプレビューサービスにも公開され、コンテンツに壊れが生じないようになります。
@@ -284,7 +284,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
-後 [フラグメントを使用するページを公開する](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)を指定した場合、フラグメントはページ参照にリスト表示されます。
+後で [フラグメントを使用するページを公開する](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)を指定した場合、フラグメントはページ参照にリスト表示されます。
 
 >[!CAUTION]
 >
@@ -292,14 +292,14 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## フラグメントの非公開 {#unpublishing-a-fragment}
 
-コンテンツフラグメントを非公開にするには、1 つ以上のフラグメントを選択してから、 **非公開** ( [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment). 次を選択できます。 **今すぐ** または **予定**.
+コンテンツフラグメントを非公開にするには、1 つ以上のフラグメントを選択してから、 **非公開** ( [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment). 次の項目を選択できます。 **今すぐ** または **Scheduled**.
 
 関連するダイアログが開いたら、適切なサービスを選択できます。
 ![非公開ダイアログ](assets/cfm-unpublish-01.png)
 
 >[!NOTE]
 >
-この **非公開** アクションは、公開されたフラグメントを使用できる場合にのみ表示されます。
+The **非公開** アクションは、公開されたフラグメントを使用できる場合にのみ表示されます。
 
 >[!CAUTION]
 >
@@ -394,7 +394,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * 挿入されたテキスト - 緑
    * 置き換えられたテキスト - 青
 
-* 全画面表示アイコンを使用すれば、どちらかのバージョンで開いた後で、並列表示に切り替えることができます
+* 全画面表示アイコンを使用すると、どちらかのバージョンで開いた後、並列表示に切り替えることができます
 * 特定のバージョンに&#x200B;**戻す**&#x200B;ことができます
 * 「**完了**」を選択すると、コンソールに戻ります
 

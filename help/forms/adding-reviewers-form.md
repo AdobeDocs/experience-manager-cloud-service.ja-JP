@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 97%
+source-wordcount: '491'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 97%
 
 フォーム作成時に、フォームポータル経由で送信されたフォームのレビューおよびフィードバックを行うユーザーを指定できます。組織はフィードバックを収集し、送信済みフォームに対して再作業を行うことができます。
 
-[!DNL AEM Forms] では、レビュー担当者グループをフォームに関連付けることができます。フォームのレビューグループに追加されたユーザーは、フォームの送信を確認し、フィードバックを提供します。
+[!DNL AEM Forms] レビュー担当者グループをフォームに関連付けることができます。 フォームのレビューグループに追加されたユーザーは、フォームの送信を確認し、フィードバックを提供します。
 
 フォームに割り当てられたレビュー担当者グループは指定されたフォームのみをレビューできます。
 

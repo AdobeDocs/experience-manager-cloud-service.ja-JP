@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: ht
-source-wordcount: '456'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '455'
+ht-degree: 94%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 100%
    >
    >テキストフィールドが空の場合、現在設定されているメタデータはありません。フィールドに値を入力して保存すると、そのメタデータプロパティを追加できます。
 
-アセットのメタデータへの変更内容は、XMP データの一部として元のバイナリに書き戻されます。この操作は、Experience Manager のメタデータ書き戻しワークフローで実行されます。既存のプロパティ（`dc:title` など）への変更は上書きされ、新しく作成されたプロパティ（`cq:tags` などのカスタムプロパティを含む）はスキーマとともに追加されます。
+アセットのメタデータへの変更内容は、XMP データの一部として元のバイナリに書き戻されます。この操作は、Experience Manager のメタデータ書き戻しワークフローで実行されます。既存のプロパティに対して行われた変更 ( 例： `dc:title`) が上書きされ、新しく作成されたプロパティ ( `cq:tags`) は、スキーマと共に追加されます。
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 

@@ -3,10 +3,10 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4918'
-ht-degree: 91%
+source-wordcount: '4913'
+ht-degree: 92%
 
 ---
 
@@ -139,8 +139,8 @@ GraphQL は GET リクエストもサポートしていますが、永続クエ�
 * パブリッシュ環境の使用目的：
    * JS アプリケーションのデータのクエリ（標準の使用例）
 
-* プレビュー環境使用先：
-   * パブリッシュ環境にデプロイする前にクエリをプレビューします
+* プレビュー環境。次の目的で使用します。
+   * パブリッシュ環境にデプロイする前にクエリをプレビューします。
       * JS アプリケーションのデータのクエリ（標準の使用例）
 
 * オーサー環境の使用目的：
@@ -158,7 +158,7 @@ GraphQL クエリは、基になるリクエストの AEM ユーザーの権限�
 
 ## スキーマ生成 {#schema-generation}
 
-GraphQL は、厳密に型指定された API です。つまり、データは型別に明確に構造化され編成される必要があります。
+GraphQLは、厳密に型指定された API で、データは型別に明確に構造化および整理される必要があります。
 
 GraphQL の仕様には、特定のインスタンス上のデータをクエリするための堅牢な API を作成する方法に関する一連のガイドラインが用意されています。そのタスクを行うには、クライアントは[スキーマ](#schema-generation)を取得する必要があります。この中には、クエリに必要なすべての型が定義されています。
 
@@ -199,7 +199,7 @@ Sites GraphQL サービスは、コンテンツフラグメントモデルに対
 
 1. `Content-Fragment-Model-1` と `Content-Fragment-Model-2` を含んだパッケージをインストールすると、
 
-   1. GraphQLタイプ `Model-1` および `Model-2` が生成されます。
+   1. `Model-1` および `Model-2` の GraphQL タイプが生成されます。
 
 1. 次に `Content-Fragment-Model-2` を変更すると、
 
@@ -369,7 +369,7 @@ GraphQL for AEMでは、ユーザー生成フィールドのデータタイプ�
 
 >[!NOTE]
 >
->コンテンツフラグメントに対して指定されたバリエーションが存在しない場合は、元のデータ（マスターバリエーションとも呼ばれます）が（フォールバック）デフォルトとして返されます。
+>コンテンツフラグメントに指定されたバリエーションが存在しない場合は、元のデータ（プライマリバリエーション）が（フォールバック）デフォルトとして返されます。
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -377,7 +377,7 @@ GraphQL for AEMでは、ユーザー生成フィールドのデータタイプ�
 
 ## GraphQL 変数 {#graphql-variables}
 
-GraphQL では、クエリに変数を含めることができます。詳しくは、 [変数に関するGraphQLのドキュメント](https://graphql.org/learn/queries/#variables).
+GraphQL では、クエリに変数を含めることができます。詳細情報は、[変数に関する GraphQL のドキュメント](https://graphql.org/learn/queries/#variables)を参照してください。
 
 例えば、特定のバリエーション（利用可能な場合）でタイプ `Author` のコンテンツフラグメントをすべて取得するには、GraphiQL で引数 `variation` を指定できます。
 
@@ -569,7 +569,7 @@ GraphQL クエリでフィルタリングを使用して、特定のデータを
 並び替え条件：
 
 * フィールドパスを表すコンマ区切りの値のリストにする
-   * リストの最初のフィールドでは主な並べ替え順が定義され、2 番目のフィールドでは主な並べ替え条件の 2 つの値が等しい場合に使用され、3 番目のフィールドでは最初の 2 つの条件が等しい場合などに使用されます。
+   * リストの最初のフィールドでは主な並べ替え順が定義され、2 番目のフィールドは主な並べ替え条件の 2 つの値が等しい場合に使用され、3 番目のフィールドは最初の 2 つの条件が等しい場合に使用されます。
    * ドット表記、つまり field1.subfield.subfield など
 * （オプション）並べ替えの方向
    * ASC（昇順）または DESC（降順）。デフォルトでは ASC が適用されます
@@ -707,7 +707,7 @@ query {
 
 ## GraphQL クエリでの Web に最適化された画像配信 {#web-optimized-image-delivery-in-graphql-queries}
 
-Web に最適化された画像配信を使用すると、Graphql クエリを使用して次のことができます。
+Web に最適化された画像配信では、Graphql クエリを使用して次のことをおこなえます。
 
 * AEM Asset 画像に URL をリクエストする
 
@@ -740,7 +740,7 @@ GraphQL のソリューションでは、次のことが可能です。
 構造と構文は次のとおりです。
 
 * `format`：拡張子でサポートされるすべての形式を持つ列挙（GIF、PNG、PNG8、JPG、PJPG、BJPG、WEBP、WEBPLL、WEBPLY）
-* `seoName`:ノード名の代わりにファイル名として使用される文字列
+* `seoName`：ノード名の代わりにファイル名として使用される文字列
 * `crop`：フレームサブ構造。幅または高さが省略された場合、高さまたは幅が同じ値として使用されます
    * `xOrigin`：フレームの x 原点（必須）
    * `yOrigin`：フレームの y 原点（必須）
@@ -751,8 +751,8 @@ GraphQL のソリューションでは、次のことが可能です。
    * `height`：寸法の高さ
 * `rotation`：サポートされているすべての回転の列挙（R90、R180、R270）
 * `flip`：HORIZONTAL、VERTICAL、HORIZONTAL_AND_VERTICAL の列挙
-* `quality`:画質の割合を示す 1 ～ 100 の整数
-* `width`:出力画像の幅を定義する整数ですが、Image Generator では無視されます
+* `quality`：画質の割合を示す 1 ～ 100 の整数
+* `width`：出力画像の幅を定義する整数。ただし、Image Generator では無視されます。
 * `preferWebp`：webp が優先されるかどうかを示すブール値（デフォルト値は false）
 
 URL 変換は、パス別、リスト別またはページ分割別のすべてのクエリタイプで使用できます。
@@ -932,12 +932,12 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
    * [サンプルクエリ - すべての都市に関するすべての情報](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)を参照してください
 
-* フィルター `includeVariations` が `List` および `Paginated` クエリのタイプ。  クエリ結果でコンテンツフラグメントのバリエーションを取得するには、`includeVariations` フィルターは `true` に設定する必要があります。
+* フィルター `includeVariations` 次に含まれる `List` および `Paginated` クエリのタイプ。  クエリ結果でコンテンツフラグメントのバリエーションを取得するには、`includeVariations` フィルターは `true` に設定する必要があります。
 
-   * 詳しくは、 [特定のモデルの複数のコンテンツフラグメントとそのバリエーションのサンプルクエリ](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
+   * 詳しくは、 [特定のモデルの複数のコンテンツフラグメントとそのバリエーションに対するサンプルクエリ](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
 
   >[!CAUTION]
-  >フィルター `includeVariations` システム生成フィールド `_variation` は、同じクエリ定義で一緒に使用することはできません。
+  >フィルター `includeVariations` システムが生成したフィールド `_variation` は、同じクエリ定義で一緒に使用することはできません。
 
 * 論理和（OR）を使用する場合：
    * ` _logOp: OR` を使用します
@@ -971,7 +971,7 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
         >[!NOTE]
         >
-        >指定されたバリエーションがコンテンツフラグメントに対して存在しない場合は、マスターバリエーションが（フォールバック）デフォルトとして返されます。
+        >コンテンツフラグメントに指定されたバリエーションが存在しない場合は、プライマリバリエーションが（フォールバック）デフォルトとして返されます。
 
         >[!CAUTION]
         >
@@ -1044,4 +1044,4 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
 ## チュートリアル - AEM ヘッドレスと GraphQL をはじめる前に {#tutorial}
 
-実践的なチュートリアルを探している場合は、チェックアウト [AEMヘッドレスおよびGraphQLの概要](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja) AEM GraphQL API を使用し、外部アプリで使用したコンテンツをヘッドレス CMS シナリオで構築および公開する方法を示すエンドツーエンドのチュートリアルです。
+実践的なチュートリアルを探している場合は、[AEM ヘッドレスおよび GraphQL 入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja)をご覧ください。これは、AEM の GraphQL API を使用してコンテンツを構築および公開し、ヘッドレス CMS シナリオで外部アプリによって使用する方法を説明する包括的なチュートリアルです。

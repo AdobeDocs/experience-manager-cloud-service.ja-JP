@@ -1,9 +1,9 @@
 ---
 title: Content Transformer の概要
 description: コンテンツトランスフォーマーを使用して BPA で報告されるコンテンツ関連の問題を検出および修正する方法について説明します。
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '392'
 ht-degree: 4%
 
 ---

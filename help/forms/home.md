@@ -3,10 +3,10 @@ title: ' [!DNL AEM Forms] as a Cloud Service の概要'
 description: AEM Forms の概要と、ビジネスに適したフォームやドキュメントの作成方法を説明します。サービスとしてのプラットフォーム（PaaS）、エンタープライズクラスのデジタルフォームとビジネスプロセスを管理する方法および Adobe Sign と現在のデータソースに Forms を接続する方法について説明します。
 landing-page-description: AEM as a Cloud Service でのフォームの使用方法を理解します。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 90%
+source-wordcount: '1155'
+ht-degree: 89%
 
 ---
 
@@ -51,7 +51,7 @@ AEM Forms を使用するビジネスユーザーは、ドキュメントテン�
 
 ## フォームのパフォーマンスの最適化
 
-このサービスは、Adobe Analytics と統合されているため、公開済みのフォームのパフォーマンス指標を取得および追跡できます。これらの指標分析の意図は、フォームやドキュメントをさらに有効利用するために必要な変更に関して十分な情報に基づいた決定を行えるよう支援することです。Adobe Analytics を使用して、アダプティブフォームの使用時に発生するインタラクションのパターンや問題を検出することができます。
+このサービスは、Adobe Analyticsと統合されており、発行されたフォームのパフォーマンス指標を取得して追跡できます。 これらの指標分析の意図は、フォームやドキュメントをさらに有効利用するために必要な変更に関して十分な情報に基づいた決定を行えるよう支援することです。Adobe Analytics を使用して、アダプティブフォームの使用時に発生するインタラクションのパターンや問題を検出することができます。
 
 
 ## 今すぐ始める {#key-features}

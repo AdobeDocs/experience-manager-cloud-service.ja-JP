@@ -1,11 +1,11 @@
 ---
 title: AEMの新しいAEM Assets UI または Assets ビューは、どのようなメリットがありますか。
-description: 新しいAEM Assets UI またはAEMの新しい Assets ビューの主なメリットについて詳しくは、こちらを参照してください
+description: 新しいAEM Assets UI またはAEMの新しい Assets ビューの主なメリットについて詳しくは、こちらを参照してください。
 mini-toc-levels: 3
-source-git-commit: 9980064be3ba7e8a15b95ac8ef6e23ba0f258cb0
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 11%
+source-wordcount: '1116'
+ht-degree: 66%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 11%
 
 ![Assets Essentials のデプロイ](assets/banner-image.jpg)
 
-リアルタイムのコンテンツの作成と配信が不可欠な今日のデジタルファーストの急速な変化において、ダウンストリームマーケティング速度向けに設計されたデジタルアセット管理 (DAM) エクスペリエンスが最も重要です。 Adobeは、マーケティングやクリエイティブプロフェッショナルを強化する専門知識を活用して、ゲームを変える新しいユーザーエクスペリエンスを導入します。 このワークフローファーストのアプローチは、ビジネスが動的なデジタルアセットを処理する方法に革新をもたらし、マーケターがアセットの検索、共同作業、パーソナライズ、配信の効率を最大限に高めます。 合理化されたワークフローにより、コンテンツの速度が向上し、マーケティング活動が新たな高みに向かいます。
+リアルタイムのコンテンツの作成と配信が不可欠な今日のデジタルファーストの急速な変化において、ダウンストリームマーケティング速度向けに設計されたデジタルアセット管理（DAM）エクスペリエンスが最も重要です。アドビは、マーケティングやクリエイティブのプロフェッショナルを支援する専門知識を活用して、革新的な新しいユーザーエクスペリエンスを導入します。このワークフローファーストのアプローチは、企業が動的なデジタルアセットを処理する方法に革命をもたらし、マーケターがアセットの検索、共同作業、パーソナライズ、配信の効率を最大限に高めます。これらの合理化されたワークフローにより、コンテンツの速度を向上し、マーケティング活動を新たな高みへと押し上げます。
 
 Assets as a Cloud Serviceで利用可能なペルソナベースのエクスペリエンスについて詳しくは、 [Assets の概要as a Cloud Service](/help/assets/overview.md#persona-based-experiences).
 
@@ -49,79 +49,79 @@ Assets as a Cloud Serviceで利用可能なペルソナベースのエクスペ�
 
 新しいAEM Assets UI には、管理ビューでは利用できない次の主なメリットがあります。
 
-* [効率化されたエクスペリエンスを提供する Workspace ダッシュボード](#my-workspace-for-streamlined-experience)
-* [効率を高めるための検索優先のアプローチ](#search-first)
-* [データ主導型の意思決定を行うためのインサイト](#insights-data)
-* [連携を促進するAdobe Photoshop Express統合](#accelerate-collaboration)
-* [組織の階層構造を設定するためのフォルダーアップロード](#folder-uploads)
-* [効率的なアセット管理のためにリポジトリコンテンツを購読](#subscribe-content)
-* [管理者がより細かく制御できるように、アセットをソフトデリート](#soft-delete-assets)
+* [合理化されたエクスペリエンスを提供するマイワークスペースダッシュボード](#my-workspace-for-streamlined-experience)
+* [効率を高めるための検索ファーストのアプローチ](#search-first)
+* [データ駆動型の決定を行うためのインサイト](#insights-data)
+* [共同作業を加速する Adobe Photoshop Express の統合](#accelerate-collaboration)
+* [組織の階層構造を設定するためのフォルダーのアップロード](#folder-uploads)
+* [効率的なアセット管理用のリポジトリコンテンツの購読](#subscribe-content)
+* [管理者がより細かく制御するための、アセットのソフト削除](#soft-delete-assets)
 
-### 効率化されたエクスペリエンスを提供する Workspace ダッシュボード {#my-workspace-for-streamlined-experience}
+### 合理化されたエクスペリエンスを提供するマイワークスペースダッシュボード {#my-workspace-for-streamlined-experience}
 
-様々な組織的役割の多様なニーズを理解したデジタルアセット管理ソリューションにこんにちは。 スマートな新しいAEM Assets UI ビューは、使いやすさと速度を優先し、視覚的な魅力と混乱のないワークスペースに対するマーケターの好みに応えます。 カスタマイズ可能なユーザー専用の My Workspace ダッシュボードを使用すると、マーケターは、驚くほど効率的にアセットをすばやく見つけ、プレビュー、編集、管理および配信できます。 特定のアセットを検索して過ごした無限の時間に別れを告げ、必要なものをすぐに使える合理化されたエクスペリエンスを歓迎します。
+様々な組織的役割の多様なニーズを理解するデジタルアセット管理ソリューションについて説明します。スマートな新しいAEM Assets UI ビューは、使いやすさと速度を優先し、視覚的な魅力と混乱のないワークスペースに対するマーケターの好みに応えます。 カスタマイズ可能なユーザー固有のマイワークスペースダッシュボードを使用すると、マーケターは驚くべき効率でアセットを迅速に検索、プレビュー、編集、管理、配信できます。特定のアセットを検索するのに何時間も費やす必要がなくなり、必要なものすべてがすぐに見つかる、合理化されたエクスペリエンスを実現します。
 
 ![マイワークスペースの概要](assets/my-workspace-demo.gif)
 
-[![ガイドを参照してください](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](my-workspace-assets-view.md)
+[![ガイドを参照](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](my-workspace-assets-view.md)
 
-### データ主導型の意思決定を行うためのインサイト {#insights-data}
+### データ駆動型の決定を行うためのインサイト {#insights-data}
 
-コンテンツの速度に合わせるためには、実用的なインサイトが不可欠です。 新しいAEM Assets UI エクスペリエンスは、My Workspace 内の高度なインサイトを提供し、アセットのパフォーマンス、オーディエンスの使用状況、エンゲージメントに関する貴重なデータを提供します。 マーケターは、データ主導型の意思決定をおこない、コンテンツ戦略を最適化し、最適な結果を得るためにダウンストリーム配信を絞り込むことができます。 意味のあるインサイトを利用することで、企業は競争に先んじ、優れた成果をもたらすことができます。
+コンテンツの速度に遅れを取らないようにするには、実用的なインサイトが不可欠です。新しいAEM Assets UI エクスペリエンスは、My Workspace 内の高度なインサイトを提供し、アセットのパフォーマンス、オーディエンスの使用状況、エンゲージメントに関する貴重なデータを提供します。 マーケターは、データ駆動型の決定を行い、コンテンツ戦略を最適化し、ダウンストリームの配信を調整して最適な結果を達成できます。有意義なインサイトにアクセスすることで、企業は競合他社に先んじて優れた成果を推進することができます。
 
 ![インサイトの概要](assets/insights-overview.gif)
 
-[![ガイドを参照してください](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
+[![ガイドを参照](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
 
-### 連携を促進するAdobe Photoshop Express統合 {#accelerate-collaboration}
+### 共同作業を加速する Adobe Photoshop Express の統合 {#accelerate-collaboration}
 
-この新しいエクスペリエンスは、組み込みのAdobe Photoshop機能、バージョン管理、注釈ツールを使用したリアルタイム編集など、堅牢なコラボレーション機能のセットを提供します。 これにより、設計、クリエイティブ、ブランディング、マーケティングチーム間のシームレスなコラボレーションが可能になり、ボトルネックを克服し、マーケティング運用プロセスを迅速に進めることができます。 マーケターは、プロジェクトの配信を高速化し、全体的な生産性を高めるための強力なツールを自由に使用できるようになりました。
+新しいエクスペリエンスは、組み込みの Adobe Photoshop 機能によるリアルタイム編集、バージョン管理、注釈ツールなど、堅牢な共同作業機能セットを提供します。これにより、デザイン、クリエイティブ、ブランディング、マーケティングの各チーム間でのシームレスな共同作業が可能になり、ボトルネックを克服してマーケティング運用プロセスを迅速化できるようになります。マーケターは、プロジェクトの配信を高速化し、全体的な生産性を向上させるための強力なツールを自由に使用できるようになりました。
 
 Adobe Photoshop Expressとの新しいAEM Assets UI 統合の機能については、次のビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420922)
 
-[![ガイドを参照してください](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](edit-images-assets-view.md)
+[![ガイドを参照](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](edit-images-assets-view.md)
 
 Assets as a Cloud Serviceの今後のリリースには、次のものが含まれます。 [Adobe Fireflyを使用したAdobe Express](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838).
 
-### 組織の階層構造を設定するためのフォルダーアップロード {#folder-uploads}
+### 組織の階層構造を設定するためのフォルダーのアップロード {#folder-uploads}
 
-ローカルファイルシステムに存在するフォルダーをアップロードして、新しいAEM Assets UI を使用して、組織のフォルダー構造をすばやく設定します。 論理的な階層構造を維持するために、ルートフォルダーの下にフォルダーを作成してから、それらのフォルダーにアセットを手動でアップロードする必要はありません。 ルートフォルダーの下にあるすべてのフォルダーとアセットが、Experience Manager Assetsに自動的にアップロードされます。
+ローカルファイルシステムに存在するフォルダーをアップロードして、新しいAEM Assets UI を使用して、組織のフォルダー構造をすばやく設定します。 論理的な階層構造を維持するために、ルートフォルダーの下にフォルダーを作成してから、それらのフォルダーにアセットを手動でアップロードする必要はありません。 ルートフォルダーの下にあるすべてのフォルダーとアセットは、Experience Manager Assets に自動的にアップロードされます。
 
-![フォルダーのアップロード](assets/folder-uploads.gif)
+![フォルダーをアップロード](assets/folder-uploads.gif)
 
-[![ガイドを参照してください](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](add-delete-assets-view.md)
+[![ガイドを参照](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](add-delete-assets-view.md)
 
-### 効率を高めるための検索優先のアプローチ {#search-first}
+### 効率を高めるための検索ファーストのアプローチ {#search-first}
 
-最先端の機能を使用した検索機能で、組織のデジタルアセットライブラリの可能性を引き出します。 数え切れないほどのファイルやフォルダを手動で切り抜く手間に別れを告げることができます。 任意のユーザーが、魅力的なマーケティングキャンペーン、魅力的なプレゼンテーション、魅力的なコンテンツを作成するために必要な、完璧な画像、ビデオ、ドキュメントを即座に見つけることができます。 アドビの最初の検索エンジンでは、正確なキーワードを知らずに、アセットタイプ、メタデータ、スマートタグ、コンテンツ自体を簡単にナビゲートできます。 Search-First を活用して DAM の未来を受け入れ、デジタルアセットライブラリの可能性を最大限に引き出します。
+最先端の機能を備えた検索機能を活用して、組織のデジタルアセットライブラリの可能性を引き出します。無数のファイルやフォルダーを手動で選別する煩わしさから解放されます。どのユーザーも、魅力的なマーケティングキャンペーン、魅力的なプレゼンテーション、魅力的なコンテンツを作成するために必要な完璧な画像、ビデオ、ドキュメントを即座に見つけることができます。アドビの最初の検索エンジンでは、正確なキーワードを知らずに、アセットタイプ、メタデータ、スマートタグ、コンテンツ自体を簡単にナビゲートできます。 検索ファーストで DAM の未来を受け入れ、デジタルアセットライブラリの可能性を最大限に引き出します。
 
-![最初に検索](assets/search-first.gif)
+![検索ファースト](assets/search-first.gif)
 
-### 効率的なアセット管理のためにリポジトリコンテンツを購読 {#subscribe-content}
+### 効率的なアセット管理用のリポジトリコンテンツの購読 {#subscribe-content}
 
-新しいAEM Assets UI では、リポジトリー内で使用可能なアセット、フォルダーまたはコレクションに対して実行された操作を監視できます。 通知を送信するコンテンツを選択し、購読する必要があります。購読済みコンテンツの削除、購読済みコンテンツの変更など、イベントタイプを設定することもできます。 その後、通知は、これらのイベントタイプに対してのみ送信されます。
+新しいAEM Assets UI では、リポジトリー内で使用可能なアセット、フォルダーまたはコレクションに対して実行された操作を監視できます。 通知を送信するコンテンツを選択し、購読する必要があります。また、購読済みコンテンツの削除、購読済みコンテンツの変更などのイベントタイプを設定することもできます。その後、これらのイベントタイプについてのみ通知が送信されます。
 
-![通知を受信](assets/notifications.gif)
+![通知の受信](assets/notifications.gif)
 
-[![ガイドを参照してください](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-notifications-assets-view.md)
+[![ガイドを参照](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-notifications-assets-view.md)
 
-### 管理者がより細かく制御できるように、アセットをソフトデリート {#soft-delete-assets}
+### 管理者がより細かく制御するための、アセットのソフト削除 {#soft-delete-assets}
 
-新しいAEM Assets UI で使用可能なごみ箱フォルダーには、ルートの Assets フォルダーから削除されたアセットが一覧表示されます。 ごみ箱フォルダーからアセットを選択して、元の場所に復元するか、完全に削除することができます。 また、キーワードを指定したり、標準フィルターやカスタムフィルターを適用してごみ箱フォルダ内の適切なアセットを検索することもできます。
+新しいAEM Assets UI で使用可能なごみ箱フォルダーには、ルートの Assets フォルダーから削除されたアセットが一覧表示されます。 ごみ箱フォルダーからアセットを選択して、元の場所に復元するか、完全に削除することができます。また、キーワードを指定したり、標準フィルターやカスタムフィルターを適用して、ごみ箱フォルダー内の適切なアセットを検索することもできます。
 
 ![ソフト削除](assets/soft-delete.gif)
 
-[![ガイドを参照してください](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](navigate-assets-view.md)
+[![ガイドを参照](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](navigate-assets-view.md)
 
 新しいAEM Assets UI では、これらの機能に加えて、管理表示では使用できない次の機能も実行できます。
 
-* 別の名前を持つ新しいバージョンのアセットを、ローカルファイルシステムからアセットリポジトリにアップロードします。 アップロードされたアセットは、元のアセットと同じ名前の新しいバージョンとして使用できます。
+* 新しいバージョンのアセットを、別の名前でローカルファイルシステムからアセットリポジトリにアップロードします。アップロードしたアセットは、元のアセットと同じ名前の新しいバージョンとして使用できます。
 
 * リポジトリ内で使用可能なアセットおよびフォルダーの名前を変更します。
 
-新しいAEM Assets UI は、ワークフローの合理化、共同作業の促進、アセットの配信の高速化を目的としてカスタマイズされています。 コンテンツベロシティを受け入れることで、マーケターはデジタルアセットの可能性を最大限に引き出し、今までにないような創造性を引き出すことができます。
+新しいAEM Assets UI は、ワークフローの合理化、共同作業の促進、アセットの配信の高速化を目的としてカスタマイズされています。 コンテンツの速度を重視することで、マーケターはデジタルアセットの可能性を最大限に引き出し、これまでにない創造性を解き放つことができます。
 
 
 新しいAEM Assets UI の使用をすばやく開始するには、次のリンクを使用します。

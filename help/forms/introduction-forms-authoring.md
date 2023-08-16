@@ -10,16 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 86da8e784e3e5ff034efdb9186cf134d4b1c6e9c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2486'
-ht-degree: 94%
+source-wordcount: '2482'
+ht-degree: 93%
 
 ---
 
 # アダプティブフォームエディター {#introduction-to-authoring-adaptive-forms}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象 [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -39,7 +39,7 @@ XFA ベースまたは XDP フォームに投資している場合、これは�
 * **XML スキーマ定義（XSD）または JSON スキーマの使用**
 XML スキーマおよび JSON スキーマは、組織内のバックエンドシステムによってデータが作成または使用される構造を表します。アダプティブフォームにスキーマを関連付けて、そのスキーマの要素を使用することにより、アダプティブフォームに動的なコンテンツを追加できます。スキーマの要素は、アダプティブFormsのオーサリング時に、コンテンツブラウザーの「データモデルオブジェクト」タブで使用できます。
 
-* **フォームモデルを使用しない、または使用しない**
+* **なしを使用するか、フォームモデルなしを使用するか**
 このオプションで作成されたアダプティブFormsは、フォームモデルを使用しません。 このようなフォームで生成されるデータ XML は、フィールドと対応する値を持つフラットな構造です。
 
   >[!NOTE]
@@ -69,7 +69,7 @@ XML スキーマおよび JSON スキーマは、組織内のバックエンド�
 
 ### サイドバー {#sidebar}
 
-サイドバーでは、以下の操作が可能です。
+サイドバーを使用すると、
 
 * AEM Digital Asset Management（DAM）リポジトリーのアセットを検索、表示、使用する。
 * パネル、コンポーネント、フィールド、レイアウトなどのフォームのコンテンツを表示する。
@@ -93,7 +93,7 @@ XML スキーマおよび JSON スキーマは、組織内のバックエンド�
 フォームのオブジェクト階層を表示します。作成者は、フォームオブジェクトツリーで要素をタップすることで、特定のフォームコンポーネントに移動できます。作成者は、このツリーでオブジェクトを探したり並べ替えたりできます。
 
    * **データモデルオブジェクト**
-フォームモデル階層を確認できます。アダプティブフォームにフォームモデル要素をドラッグ＆ドロップできます。追加された要素は、元のプロパティを保持したまま、自動的にフォームコンポーネントに変換されます。XML スキーマ、JSON スキーマまたは XDP テンプレートをフォームで使用している場合は、データモデルオブジェクトを表示できます。
+フォームモデル階層を確認できます。これにより、フォームモデルの要素をアダプティブフォームにドラッグ&amp;ドロップできます。 追加された要素は、元のプロパティを保持したまま、自動的にフォームコンポーネントに変換されます。XML スキーマ、JSON スキーマまたは XDP テンプレートをフォームで使用している場合は、データモデルオブジェクトを表示できます。
 
 * **プロパティブラウザー**
 
@@ -177,7 +177,7 @@ XML スキーマおよび JSON スキーマは、組織内のバックエンド�
   </tr>
   <tr>
    <td>画像</td>
-   <td>画像を挿入できるようにします.</td>
+   <td>画像を挿入できます。</td>
   </tr>
   <tr>
    <td>画像選択</td>
@@ -197,7 +197,7 @@ XML スキーマおよび JSON スキーマは、組織内のバックエンド�
   </tr>
   <tr>
    <td>パネル</td>
-   <td><p>パネルまたはサブパネルを追加します。</p> <p>また、親パネルのツールバーから、 <span class="uicontrol">子パネルを追加</code> button. 同様に、 <span class="uicontrol">パネルツールバーを追加</code> button. パネルを編集ダイアログを使用して、パネルツールバーの位置を設定できます。</p> </td>
+   <td><p>パネルまたはサブパネルを追加します。</p> <p>また、親パネルのツールバーからパネルコンポーネントを追加する場合は、 <span class="uicontrol">子パネルを追加</code> button. 同様に、 <span class="uicontrol">パネルツールバーを追加</code> button. パネルを編集ダイアログを使用して、パネルツールバーの位置を設定できます。</p> </td>
   </tr>
   <tr>
    <td>パスワードボックス</td>
@@ -233,7 +233,7 @@ XML スキーマおよび JSON スキーマは、組織内のバックエンド�
   </tr>
   <tr>
    <td>テキスト</td>
-   <td>静的なテキストを指定できます。</td>
+   <td>静的テキストを指定できます。</td>
   </tr>
   <tr>
    <td>送信ボタン</td>

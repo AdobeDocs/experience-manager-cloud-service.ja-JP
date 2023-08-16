@@ -2,9 +2,9 @@
 title: コンテンツコピーツール
 description: コンテンツコピーツールを使用すると、可変コンテンツをテスト用に、AEMの実稼動環境から低レベルの環境に、オンデマンドでas a Cloud Service可能なコンテンツをコピーできます。
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: 639c49c69c87e7c408929f0d35a673a96a5cc5db
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1306'
 ht-degree: 50%
 
 ---

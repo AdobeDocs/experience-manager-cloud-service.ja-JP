@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 リリースのリリースノート。'
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 84%
+source-wordcount: '836'
+ht-degree: 79%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 84%
 
 ### の新機能[!DNL Sites] {#sites-features}
 
-* この [エクスペリエンスフラグメントの「パーソナライゼーション」タブ](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) では、エクスペリエンスフラグメントエディターに対してセグメント化の仕様機能を使用でき、ネストされたエクスペリエンスフラグメントを柔軟に作成できるので、複数のセグメントに対してヘッダーとフッターのバリエーションを作成できます。 この機能を開始する前は、AEM が提供するパーソナライゼーションはサイトのページでのみ使用できますが、エクスペリエンスフラグメントでは使用できません
+* The [エクスペリエンスフラグメントの「パーソナライゼーション」タブ](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) では、エクスペリエンスフラグメントエディターに対してセグメント化の仕様機能を使用でき、ネストされたエクスペリエンスフラグメントを柔軟に作成できるので、複数のセグメントに対してヘッダーとフッターのバリエーションを作成できます。 この機能を開始する前は、AEM が提供するパーソナライゼーションはサイトのページでのみ使用できますが、エクスペリエンスフラグメントでは使用できません
 
 * この[コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)では、ユーザーが翻訳されたコンテンツフラグメントを効率的に管理できるようになりました。 すべての言語コピーを表示するための 1 回のクリックアクセスが提供されています。 また、ユーザーは、関心があるロケールに基づいてテーブル表示をフィルタリングすることもできます。
 
@@ -48,7 +48,7 @@ ht-degree: 84%
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-* Experience Manager Assets で、他のサポートされている形式のドキュメントをアップロードし、[付属の Document Cloud ビューアを使用してプレビューができるようになりました](/help/assets/manage-pdf-documents.md)。サポートされる形式の種類には、TXT、RTF、DOC、DOCX、PPT、PPTX、XLS、XLSX が含まれます。
+* Experience Manager Assetsで、他のサポートされている形式タイプのドキュメントをアップロードし、[付属のDocument Cloudビューアを使用してプレビュー](/help/assets/manage-pdf-documents.md). サポートされる形式の種類には、TXT、RTF、DOC、DOCX、PPT、PPTX、XLS、XLSX が含まれます。
 
   ![他の形式向けの PDF レンディション](/help/release-notes/assets/multi-page-other-formats.png)
 
@@ -65,7 +65,7 @@ ht-degree: 84%
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms}
 
-* **アダプティブフォームテンプレートエディター**：テンプレートエディターを使用すると、組織のアダプティブフォームの基本構造と外観を事前に定義することができます。このリリースでは、テンプレートエディターが次のように改善されました：
+* **アダプティブFormsテンプレートエディター**：テンプレートエディターを使用すると、組織のアダプティブFormsの基本的な構造と外観を事前に定義できます。 このリリースでは、テンプレートエディターが次のように改善されました：
    * **[テンプレートエディターのフォームデータモデル](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**：テンプレートエディター内で、フォームデータモデルスキーマをアダプティブフォームテンプレートに関連付けることができます。 これにより、アダプティブフォームの作成に要する時間を短縮します。 このオプションはアダプティブ フォームエディターにも追加され、ユーザーは既存のフォームのフォームデータモデルを選択または変更することができます。
    * **[テンプレートエディターでのレコードのドキュメント](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**：テンプレートを使用して作成されたすべてのフォームのレコードのドキュメント生成を標準化できるようになりました。これにより、組織の要件に対するコンプライアンスと標準化が強化されます。
 
@@ -85,7 +85,7 @@ ht-degree: 84%
 
 ### 新機能 {#what-is-new-foundation}
 
-* AEM as a Cloud Service（オーサーサービス）が統合シェルと統合され、ユーザーエクスペリエンスが向上し、他のすべての Experience Cloud アプリケーションと統合されました。AEM as a [統合シェルのCloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) を参照してください。
+* AEM as a Cloud Service（オーサーサービス）が統合シェルと統合され、ユーザーエクスペリエンスが向上し、他のすべての Experience Cloud アプリケーションと統合されました。AEM as a を参照 [統合シェルのCloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) を参照してください。
 
 * リリースノートで前述したように、10 MB を超えるコンテンツパッケージ（バイナリを含まないプロパティを持つノード）を配布するためのレプリケーションエージェント管理画面またはレプリケーション API を使用する方法は、非推奨（廃止予定）となりました。 詳しくは、 [公開を管理](/help/operations/replication.md#manage-publication) または [コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow) を参照してください。
 

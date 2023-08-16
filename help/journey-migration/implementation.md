@@ -2,10 +2,10 @@
 title: 実装段階
 description: クラウドに移行するためのコードとコンテンツの準備が整っていることの確認
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2337'
-ht-degree: 92%
+source-wordcount: '2339'
+ht-degree: 89%
 
 ---
 
@@ -59,7 +59,7 @@ Cloud Service への移行の正確な手順は、購入したシステムと準
 
 コンテンツ移行は、異なるチーム間での計画、追跡、共同作業を必要とする複数の手順で構成されるプロセスです。
 
-ツールの仕組みと推奨する使用方法について詳しくは、 [コンテンツ転送ツールのドキュメント](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) を参照してください。
+ツールの仕組みと、Adobeでの使用を推奨する方法について詳しくは、 [コンテンツ転送ツールドキュメント](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
 
 ## コードリファクタリング {#code-refactor}
 
@@ -112,7 +112,7 @@ AEM Maven プロジェクトをクラウドに対応させるためには、あ�
 
 ### コードの凍結のスケジュール設定 {#schedule-a-code-freeze}
 
-移行ジャーニーの一環として、アクティブな AEM 上で進行中のコード開発と、コードリファクタリングタスクを管理するには、AEM as a Cloud Service と互換性のある Maven プロジェクトの再構築が完了するまで、コードの凍結期間をスケジュール設定しておくことをお勧めします。
+移行プロセスの一環として、コードリファクタリングタスクと共にアクティブなAEMで進行中のコード開発を管理する場合は、AEM as a Cloud Serviceと互換性を持たせるために、Maven プロジェクトの再構築が完了するまで、コードのフリーズ期間をスケジュールすることをお勧めします。
 
 プロジェクトの再構築が完了したら、この新しい構造に基づいて新しいコード開発を再開できます。これにより、コードのデプロイメントおよびテスト中に発生する Cloud Manager パイプラインのエラーを減らすことができます。
 

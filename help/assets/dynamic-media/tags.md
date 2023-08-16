@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '6665'
-ht-degree: 98%
+source-wordcount: '6663'
+ht-degree: 97%
 
 ---
 
@@ -257,7 +257,7 @@ Dynamic Media ビューア拡張機能を使用すると、Dynamic Media ビュ�
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-ただし、別の方法を使用して、データ要素の作成をスキップすることは可能です。引数は、Dynamic Media ビューアイベントから直接参照できます。Analytics 変数の割り当ての「**[!UICONTROL 値]**」入力フィールドに、イベント引数の完全修飾名を入力します。パーセント記号（%）で囲んでください。例：
+ただし、別の方法を使用して、データ要素の作成をスキップすることは可能です。引数は、Dynamic Media ビューアイベントから直接参照できます。イベント引数の完全修飾名を **[!UICONTROL 値]** Analytics 変数割り当ての入力フィールド。 パーセント記号（%）で囲んでください。例：
 
 `%event.detail.dm.LOAD.asset%`
 
@@ -519,7 +519,7 @@ Experience Platform タグのプロパティは、すべての設定をまとめ
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-   新しく作成されたプロパティを選択し、*拡張機能のインストールとセットアップ*&#x200B;に進みます。
+   新しく作成されたプロパティを選択し、に進みます。 *拡張機能のインストールとセットアップ*.
 
 ### 拡張機能のインストールとセットアップ {#installing-and-setup-of-extensions}
 

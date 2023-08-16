@@ -3,10 +3,10 @@ title: 他のユーザーにワークフローを割り当て、メールを送�
 description: Forms 中心のワークフローを使用すると、アダプティブフォームベースのワークフローを迅速に構築できます。Adobe Sign を使用して、ドキュメントへの電子サイン、フォームをベースとしたビジネスプロセスの作成、複数データソースへのデータの取得と送信、メール通知の送信を行うことができます
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '7209'
-ht-degree: 99%
+source-wordcount: '7204'
+ht-degree: 98%
 
 ---
 
@@ -120,11 +120,11 @@ Forms 中心のワークフローステップは、AEM ワークフローで AEM
 * **[!UICONTROL 割り当て先]**／**[!UICONTROL 割り当てオプション]**：タスクをユーザーに割り当てる方法を指定します。参加者選択スクリプトを使用してタスクを動的にユーザーまたはグループに割り当てることも、タスクを特定の AEM ユーザーまたはグループに割り当てることもできます。
 * **[!UICONTROL 参加者選択]**：このオプションは、「割り当てオプション」フィールドで「**[!UICONTROL ユーザーまたはグループに動的に割り当て]**」オプションを選択した場合に使用できます。ユーザーまたはグループを動的に選択するには、ECMAScript またはサービスを使用できます。詳しくは、[ユーザーへのワークフローの動的な割り当て](https://helpx.adobe.com/jp/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html)および[カスタムの Adobe Experience Manager 動的参加者ステップの作成](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja&amp;CID=RedirectAEMCommunityKautuk)を参照してください。
 
-* **[!UICONTROL 参加者]**：このオプションは、「**[!UICONTROL 参加者選択]**」フィールドで「**[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]**」オプションが選択されている場合に使用できます。このフィールドでは、「RandomParticipantChooser」オプションのユーザーまたはグループを選択できます。
+* **[!UICONTROL 参加者]**：このオプションは、「**[!UICONTROL 参加者選択]**」フィールドで「**[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]**」オプションが選択されている場合に使用できます。このフィールドでは、RandomParticipantChooser オプションのユーザーまたはグループを選択できます。
 
-* **[!UICONTROL 担当者]**：このオプションは、「**[!UICONTROL 参加者選択]**」フィールドで「**[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]**」オプションが選択されている場合に使用できます。このフィールドでは、String データ型の変数を選択して、担当者を定義できます。
+* **[!UICONTROL 担当者]**：このオプションは、「**[!UICONTROL 参加者選択]**」フィールドで「**[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]**」オプションが選択されている場合に使用できます。「 」フィールドで、String データ型の変数を選択して、担当者を定義できます。
 
-* **[!UICONTROL 引数]**：このフィールドは、参加者選択フィールドで RandomParticipantChoose スクリプト以外のスクリプトが選択されている場合に使用できます。このフィールドでは、参加者選択フィールドで選択したスクリプトに渡すコンマ区切りの引数のリストを指定できます。
+* **[!UICONTROL 引数]**：このフィールドは、参加者選択フィールドで RandomParticipantChoose スクリプト以外のスクリプトが選択されている場合に使用できます。「 」フィールドでは、参加者選択フィールドで選択したスクリプトのコンマ区切りの引数のリストを指定できます。
 
 * **[!UICONTROL ユーザーまたはグループ]**：選択したユーザーまたはグループにタスクが割り当てられます。このオプションは、「**[!UICONTROL 割り当てオプション]**」フィールドで「**[!UICONTROL 特定のユーザーまたはグループに割り当て]**」オプションを選択した場合に使用できます。このフィールドには、[!DNL workflow-users] グループのすべてのユーザーとグループが一覧表示されます。\
   「**[!UICONTROL ユーザーまたはグループ]**」ドロップダウンメニューには、ログインユーザーおよびグループがアクセスできるリストが表示されます。ユーザー名の表示は、その特定のユーザーの crx-repository の **[!UICONTROL users]** ノードに対するアクセス権限があるかどうかによって異なります。
@@ -272,7 +272,7 @@ DDX を呼び出しステップには次のプロパティがあります。
 
 ## フォームデータモデルサービスを呼び出しステップ {#invoke-form-data-model-service-step}
 
-[[!DNL AEM Forms]  のデータ統合](data-integration.md)機能により、複数の異なるデータソースを設定して接続することができます。これらのデータソースには、web サービス、REST サービス、OData サービス、CRM ソリューションがあります。[!DNL AEM Forms] のデータ統合を使用すると、様々なサービスを実行するフォームデータモデルを作成できます。例えば、構成されたデータベースに対して、データの取得、追加、更新を実行できます。**[!UICONTROL データモデルサービスの呼び出しステップ]**&#x200B;を使用して、フォームデータモデル（FDM）を選択し、FDM のサービスを使用できます。例えば、各種データソースの取得、更新、追加を行うことができます。
+[[!DNL AEM Forms]  のデータ統合](data-integration.md)機能により、複数の異なるデータソースを設定して接続することができます。これらのデータソースには、web サービス、REST サービス、OData サービス、CRM ソリューションがあります。[!DNL AEM Forms] データ統合を使用すると、様々なサービスを含むフォームデータモデルを作成して、設定されたデータベースに対してデータの取得、追加、更新操作を実行できます。 **[!UICONTROL データモデルサービスの呼び出しステップ]**&#x200B;を使用して、フォームデータモデル（FDM）を選択し、FDM のサービスを使用できます。例えば、各種データソースの取得、更新、追加を行うことができます。
 
 手順のフィールドの入力を説明するために、次のデータベーステーブルと JSON ファイルを例として使用します。
 
@@ -334,7 +334,7 @@ DDX を呼び出しステップには次のプロパティがあります。
 
 * **[!UICONTROL フォームデータモデルのパス]**： サーバー上のフォームデータモデルを参照して選択します。
 
-* **[!UICONTROL エラーと検証]**：このオプションを使用すると、エラーメッセージを取得し、データソースに取得して送信するデータの検証オプションを指定できます。これらの変更により、フォームデータモデルサービスを呼び出しステップに渡されたデータが、データソースで定義されているデータ制約に従っていることを確認できます。詳しくは、[入力データの自動検証](work-with-form-data-model.md#automated-validation-of-input-data)を参照してください
+* **[!UICONTROL エラーと検証]**:「 」オプションを使用すると、エラーメッセージをキャプチャし、取得してデータソースに送信するデータの検証オプションを指定できます。 これらの変更により、フォームデータモデルサービスを呼び出しステップに渡されたデータが、データソースで定義されているデータ制約に従っていることを確認できます。詳しくは、[入力データの自動検証](work-with-form-data-model.md#automated-validation-of-input-data)を参照してください
 
 * **[!UICONTROL 検証レベル]**：検証には、基本、完全、オフの 3 つのカテゴリがあります。
 

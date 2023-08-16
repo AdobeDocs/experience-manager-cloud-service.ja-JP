@@ -4,10 +4,10 @@ description: アダプティブフォームで作業を行うユーザーのタ�
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 100%
+source-wordcount: '321'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 アダプティブフォームで作業を行うユーザーのタイプやスキルはそれぞれ異なります。正しい知識を使用してスクリプトや複雑なルールを操作できる上級ユーザーもいれば、アダプティブフォームのレイアウトや基本的なプロパティ以外の操作はできない初心者のユーザーもいます。
 
-[!DNL Experience Manager Forms] では、各ユーザーの役割や職務に応じて、ルールエディターへのアクセスを制限することができます。アダプティブフォームの設定サービスを使用して、ルールエディターを表示してアクセスできる[ユーザーグループ](forms-groups-privileges-tasks.md)を指定することができます。
+[!DNL Experience Manager Forms] では、ユーザーの役割や機能に基づいて、ルールエディターへのアクセスを制限できます。 アダプティブフォームの設定サービスを使用して、ルールエディターを表示してアクセスできる[ユーザーグループ](forms-groups-privileges-tasks.md)を指定することができます。
 
 ## ルールエディターにアクセスできるユーザーグループの指定 {#specify-user-groups-that-can-access-rule-editor}
 

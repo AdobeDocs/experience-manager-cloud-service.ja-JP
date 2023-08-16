@@ -8,10 +8,10 @@ topic-tags: publish, document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
-source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2362'
-ht-degree: 80%
+source-wordcount: '2361'
+ht-degree: 79%
 
 ---
 
@@ -70,7 +70,7 @@ AEM には、提供されているワークフロー手順を使用してワー�
 1. ワークフローモデルコンソールを開きます。デフォルトの URL は、`https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. 「**作成**」を選択してから、「**モデルを作成**」を選択します。「ワークフローモデルを追加」のダイアログが表示されます。
 1. 「**タイトル**」と「**名前**」（オプション）を入力します。例えば、住宅ローン申し込みと入力します。「**完了**」をタップします。
-1. 新しく作成されたワークフローモデルを選択して「**編集**」をタップします。これで、ワークフローステップを追加してビジネスロジックを構築できるようになりました。新しいワークフローモデルを初めて作成する場合、次のものが含まれます。
+1. 新しく作成したワークフローモデルを選択し、をタップします。 **編集**. これで、ワークフローステップを追加してビジネスロジックを構築できるようになりました。新しいワークフローモデルを初めて作成する場合、次のものが含まれます。
 
    * 手順：フローの開始と終了。これらの手順は、ワークフローの始まりと終わりを表します。これらの手順は必須で、編集または削除できません。
    * 「手順 1」という名称の参加者手順の例。この手順は、作業項目を管理者ユーザーに割り当てるように設定されています。この手順を削除します。
@@ -205,7 +205,7 @@ Forms中心のワークフローは、次の方法で起動またはトリガー
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 
-The [!DNL AEM Forms] app syncs with an [!DNL AEM Forms] server and allows you to make changes to the form data, tasks, workflow applications, and saved information (drafts/templates) in your account. For more information, see [[!DNL AEM Forms] app]((aem-forms-app.md) and related articles.-->
+The [!DNL AEM Forms] app syncs with an [!DNL AEM Forms] server and lets you make changes to the form data, tasks, workflow applications, and saved information (drafts/templates) in your account. For more information, see [[!DNL AEM Forms] app]((aem-forms-app.md) and related articles.-->
 
 ### アダプティブフォームの送信 {#af}
 

@@ -3,10 +3,10 @@ title: パイプラインの管理
 description: 既存のパイプラインの管理方法（編集、実行、削除を含む）を説明します。
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 100%
+source-wordcount: '516'
+ht-degree: 97%
 
 ---
 

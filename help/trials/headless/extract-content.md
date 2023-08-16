@@ -4,10 +4,10 @@ description: コンテンツ フラグメントと GraphQL API をヘッドレ�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: b9b9cf79173a0ae486bd5d8fcbc1fec48c0b2bc8
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 96%
+source-wordcount: '1085'
+ht-degree: 95%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 96%
 
 ## サンプルコンテンツの特定の部分に対するクエリ {#bypath-query}
 
-byPath クエリを実行すると、特定のコンテンツフラグメントのコンテンツを取得できます。製品詳細ページと特定のコンテンツセットに焦点を当てたページには、通常、このタイプのクエリが必要です。
+byPath クエリを実行すると、特定のコンテンツフラグメントのコンテンツを取得できます。 製品詳細ページと特定のコンテンツセットに焦点を当てたページには、通常、このタイプのクエリが必要です。
 
 1. プリロードされた **AEM デモアセット**&#x200B;エンドポイントの byPath クエリの次のコードスニペットをコピーします。
 

@@ -2,10 +2,10 @@
 title: ページの公開
 description: AEMの様々なメカニズムを使用して、ページを公開および非公開にする方法を説明します。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 84%
+source-wordcount: '1804'
+ht-degree: 83%
 
 ---
 
@@ -85,7 +85,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 >[!NOTE]
 >
->エディターで[エイリアス](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)を使用してアクセスしたページは公開できません。エディターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
+>アクセスしたページ [エイリアス](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) エディターで公開できない。 エディターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
 
 ### コンソールからの公開 {#publishing-from-the-console}
 
@@ -124,7 +124,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
    ![公開するページの選択](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. **公開を管理**&#x200B;ウィザードが起動します。最初のステップでは、**オプション**&#x200B;を使用すると、次のことが可能です。
+1. **公開を管理**&#x200B;ウィザードが起動します。最初のステップは **オプション**&#x200B;を使用すると、次のことができます。
 
    * **アクション**
 
@@ -228,7 +228,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 >[!NOTE]
 >
->エディターで[エイリアス](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)を使用してアクセスしたページは、非公開にすることができません。エディターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
+>アクセスしたページ [エイリアス](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) エディターで非公開にすることはできません。 エディターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
 
 ### コンソールから非公開にする {#unpublishing-from-the-console}
 

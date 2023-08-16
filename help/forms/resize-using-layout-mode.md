@@ -5,16 +5,16 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 95%
+source-wordcount: '1156'
+ht-degree: 93%
 
 ---
 
 # レイアウトモードを使用したコンポーネントのサイズ変更 {#use-layout-mode-to-resize-components}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象 [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -109,7 +109,7 @@ ht-degree: 95%
 
 ### 新しいレスポンシブレイアウトを使用した、古いフラグメントのアダプティブフォームへの埋め込み {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
-アダプティブフォームの新しいレスポンシブレイアウトを使用すると、古いレスポンシブレイアウトを含むアダプティブフォームのフラグメントをフォームに追加できます。ただし、新しいレイアウトでは、フラグメントで使用するコンポーネントに対して既に定義されているレイアウトプロパティが破棄されます。レイアウトモードに切り替えて、フラグメントで使用するコンポーネントのレイアウトプロパティを定義できます。
+アダプティブフォーム用の新しいレスポンシブレイアウトを使用すると、古いレスポンシブレイアウトを持つアダプティブフォームフラグメントをフォームに追加できます。 ただし、新しいレイアウトでは、フラグメントで使用するコンポーネントに対して既に定義されているレイアウトプロパティが破棄されます。レイアウトモードに切り替えて、フラグメントで使用するコンポーネントのレイアウトプロパティを定義できます。
 
 ### 新しいレスポンシブレイアウトを使用した、フラグメントの古いアダプティブフォームへの埋め込み {#embed-a-fragment-with-new-responsive-layout-in-an-old-adaptive-form}
 

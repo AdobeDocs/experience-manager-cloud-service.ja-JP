@@ -3,9 +3,9 @@ title: 永続的な GraphQL クエリ
 description: Adobe Experience Manager as a Cloud ServiceでGraphQLクエリを保持してパフォーマンスを最適化する方法を説明します。 クライアントアプリケーションで HTTP GET メソッドを使用して永続的クエリをリクエストでき、応答を Dispatcher および CDN レイヤーにキャッシュできるので、最終的にクライアントアプリケーションのパフォーマンスが向上します。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1681'
+source-wordcount: '1680'
 ht-degree: 83%
 
 ---
@@ -358,7 +358,7 @@ curl -u admin:admin -X POST \
 
 >[!NOTE]
 >
->この **永続的なクエリサービス設定** は、 [クエリ応答コードの設定](#configuring-query-response-code).
+>The **永続化されたクエリサービス設定** は、 [クエリ応答コードの設定](#configuring-query-response-code).
 
 パブリッシュインスタンスのデフォルトの OSGi 設定は次のとおりです。
 
@@ -377,19 +377,19 @@ curl -u admin:admin -X POST \
 
 ## クエリ応答コードの設定 {#configuring-query-response-code}
 
-デフォルトでは、 `PersistedQueryServlet` を送信 `200` 応答を返します（実際の結果に関係なく）。
+デフォルトでは、 `PersistedQueryServlet` を送信する `200` 応答を返します（実際の結果に関係なく）。
 
-以下が可能です。 [OSGi 設定の指定](/help/implementing/deploying/configuring-osgi.md) の **永続的なクエリサービス設定** が返すステータスコードを制御する `/execute.json/persisted-query` エンドポイントに設定されます。
+以下が可能です。 [OSGi 設定の指定](/help/implementing/deploying/configuring-osgi.md) （の） **永続化されたクエリサービス設定** が返すステータスコードを制御するには `/execute.json/persisted-query` エンドポイントに設定されます。
 
 >[!NOTE]
 >
->この **永続的なクエリサービス設定** は、 [キャッシュの管理](#cache-osgi-configration).
+>The **永続化されたクエリサービス設定** は、 [キャッシュの管理](#cache-osgi-configration).
 
 フィールド `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) は、必要に応じて定義できます。
 
-* `false` （デフォルト値）:永続化されたクエリが成功したかどうかは関係ありません。 この `/execute.json/persisted-query` ステータスコードを返します。 `200` そして `Content-Type` 返されるヘッダー `application/json`.
+* `false` （デフォルト値）：永続化されたクエリが成功したかどうかは関係ありません。 The `/execute.json/persisted-query` ステータスコードを返します。 `200` そして `Content-Type` 返されるヘッダー： `application/json`.
 
-* `true`:エンドポイントが返されます `400` または `500` 必要に応じて、永続化されたクエリの実行時に何らかのエラーが発生する場合。 また、 `Content-Type` が `application/graphql-response+json`.
+* `true`：エンドポイントが返します `400` または `500` 必要に応じて、永続化されたクエリの実行時に何らかのエラーが発生する場合。 また、 `Content-Type` 次に該当 `application/graphql-response+json`.
 
   >[!NOTE]
   >
@@ -441,7 +441,7 @@ URL は次の部分に分解できます。
 1. 「1.0」のようなバージョン番号を入力します。
 1. 「**フィルター**」で、新しい&#x200B;**フィルター**&#x200B;を追加します。パスファインダーを使用して、設定の下にある `persistentQueries` フォルダーを選択します。例えば、 `wknd` 設定の場合、フルパスは `/conf/wknd/settings/graphql/persistentQueries`.
 1. 「**保存**」をタップして新しいパッケージ定義を保存し、ダイアログを閉じます。
-1. 新しく作成されたパッケージ定義で「**ビルド**」ボタンをタップします。
+1. 次をタップします。 **ビルド** 」ボタンをクリックします。
 
 パッケージが構築されたら、次の操作を実行できます。
 

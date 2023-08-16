@@ -5,17 +5,17 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3174'
-ht-degree: 95%
+source-wordcount: '3173'
+ht-degree: 97%
 
 ---
 
 
 # アダプティブフォームでの [!DNL Adobe Sign] の使用 {#using-adobe-sign-in-an-adaptive-form}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象 [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 
 
 | バージョン | 記事リンク |
@@ -28,9 +28,9 @@ ht-degree: 95%
 
 [!DNL Adobe Sign] とアダプティブフォームの一般的なシナリオでは、ユーザーがアダプティブフォームに入力し、1 人以上の関係者の署名を必要とするサービスに申し込みます。例えば、住宅ローンやクレジットカードに申請する際には、すべての借り手と共同申請者から、法的に有効な署名を取得する必要があります。同様のシナリオで電子サインワークフローを有効にするには、[!DNL Adobe Sign] をアダプティブフォームに統合します。例えば、[!DNL Adobe Sign] を使用して、以下のような処理を実行できます。
 
-* 完全に自動化された提案、見積り、契約プロセスを持つ任意のデバイスから契約を締結します。
-* 人事プロセスを迅速に完了し、従業員にデジタル体験を提供します。
-* 契約サイクル時間を短縮し、ベンダーのオンボーディングを迅速に実行できます。
+* 完全に自動化された提案プロセス、見積りプロセス、契約プロセスを使用して、任意のデバイスで契約を締結する。
+* 人事プロセスを短時間で完了し、従業員に対してデジタルエクスペリエンスを提供する。
+* 契約のサイクルタイムを短縮し、ベンダーとの取引を早期に開始する。
 * 共通するプロセスを自動化するためのデジタルワークフローを作成する。
 
 [!DNL Adobe Sign] と [!DNL AEM Forms] を統合することにより、次の機能がサポートされます。
@@ -203,7 +203,7 @@ Cloud Service と署名する順序を選択するには：
      >
      >最初の受信者または唯一の受信者（受信者が 1 人の場合）のメールアドレスが、AEM Cloud Services の設定に使用された [!DNL Adobe Sign] アカウントと一致していないことを確認します。
 
-   * **[!UICONTROL 受信者の認証方法]：** Adobe Sign 契約書を開く前に受信者を認証する方法を指定します。電話、ナレッジベース、ソーシャル ID ベースの認証、 [政府 ID](https://helpx.adobe.com/jp/sign/using/adobesign-authentication-government-id.html) 対象 [!DNL Adobe Acrobat Sign]. の場合 [!DNL Adobe Acrobat Sign for Government] 電話認証とナレッジベース認証のどちらを選択できます。
+   * **[!UICONTROL 受信者の認証方法]：** Adobe Sign 契約書を開く前に受信者を認証する方法を指定します。電話、ナレッジベース、ソーシャル ID ベースの認証、 [政府 ID](https://helpx.adobe.com/jp/sign/using/adobesign-authentication-government-id.html) 対象： [!DNL Adobe Acrobat Sign]. の場合 [!DNL Adobe Acrobat Sign for Government] 電話認証とナレッジベース認証のどちらを選択できます。
 
    >[!NOTE]
    >
@@ -289,7 +289,7 @@ Adobe Sign 契約 ID（agreementId）は、アダプティブフォームの送�
 >Data of the Adaptive Form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
-フォームの署名操作の準備が整いました。 フォームをプレビューして、署名操作を確認できます。 受信者がメールで署名用のフォームを受信すると、公開済みフォーム上に [!DNL Adobe Sign] ブロックのフィールドが表示されます。「**[!UICONTROL 受信者とフォーム記入者は同一ですか？]**」オプションが「はい」とマークされ、条件が満たされると、ユーザーは送信後に Adobe Sign 契約書にリダイレクトされ、契約書がメールに表示されるのを待たずに、即座にドキュメントに署名できます。
+これで、フォームに署名する準備が整いました。フォームのプレビューを表示して、署名エクスペリエンスを確認することができます。受信者がメールで署名用のフォームを受信すると、公開済みフォーム上に [!DNL Adobe Sign] ブロックのフィールドが表示されます。「**[!UICONTROL 受信者とフォーム記入者は同一ですか？]**」オプションが「はい」とマークされ、条件が満たされると、ユーザーは送信後に Adobe Sign 契約書にリダイレクトされ、契約書がメールに表示されるのを待たずに、即座にドキュメントに署名できます。
 
 ## アダプティブフォームのクラウド署名の設定 {#configure-cloud-signatures-for-an-adaptive-form}
 

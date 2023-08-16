@@ -11,10 +11,10 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2079'
-ht-degree: 96%
+source-wordcount: '2076'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ AEM Commerce as a Cloud Service 環境を稼働させるには、[ローカル�
 ![AEM Commerce プロジェクト](../assets/aep-integration/aem-project-with-commerce.png)
 
 
-プロジェクトのルートディレクトリから次のコマンドを実行して、新しく作成した AEM Commerce プロジェクトをビルドし、ローカルの AEM SDK にデプロイします。
+新しく作成したAEM Commerce プロジェクトをビルドし、プロジェクトのルートディレクトリから次のコマンドを実行して、ローカルのAEM SDK にデプロイします。
 
 ```bash
 $ mvn clean install -PautoInstallSinglePackage
@@ -403,11 +403,11 @@ Experience Platform でデータストリームを作成するには、次の手
 
    ![AEP でのデータストリーム作成](../assets/aep-integration/AEP-Datastream-Create.png)
 
-1. 「__名前__」必須フィールドを使用して、データストリームに名前を付けます。 「__イベントスキーマ__」フィールドの下で、新しく作成したスキーマを選択し、「__保存__」をクリックします。
+1. 「__名前__」必須フィールドを使用して、データストリームに名前を付けます。 の下 __イベントスキーマ__ フィールドで、新しく作成したスキーマを選択し、 __保存__.
 
    ![AEP でのデータストリーム定義](../assets/aep-integration/AEP-Datastream-Define.png)
 
-1. 新しく作成したデータストリームを開き、「__サービスを追加__」をクリックします。
+1. 新しく作成したデータストリームを開き、「 __サービスを追加__.
 
    ![AEP でのデータストリーム作成の「サービスを追加」ボタン](../assets/aep-integration/AEP-Datastream-Add-Service.png)
 

@@ -2,10 +2,10 @@
 title: コンテンツフラグメントのメタデータとタグの定義について
 description: コンテンツフラグメントのメタデータとタグの定義について
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 1486a330e7931ab679f37464c3e22a27ea0d5876
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 100%
+source-wordcount: '261'
+ht-degree: 85%
 
 ---
 
@@ -30,15 +30,15 @@ ht-degree: 100%
 
 * 最初にフラグメントを作成する場合（**Assets** コンソールから）：
 
-   ![コンテンツフラグメント作成 - 名前の指定](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+  ![コンテンツフラグメント作成 - 名前の指定](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* コンテンツフラグメントエディターの「**バリエーション**」タブでは、プロジェクトから事前定義済みの&#x200B;**タグ**&#x200B;を追加できます。
+* The **バリエーション** コンテンツフラグメントエディターの「 」タブで、事前定義済みの **タグ** を次のように設定します。
 
-   ![コンテンツフラグメントエディター - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+  ![コンテンツフラグメントエディター - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
-* コンテンツフラグメントエディターの「**メタデータ**」タブでは、メタデータの各種フィールドと定義済みの&#x200B;**タグ**&#x200B;をプロジェクトから追加できます。
+* The **メタデータ** コンテンツフラグメントエディターの「 」タブで、メタデータの各種フィールドと定義済みのフィールドを追加できます。 **タグ** を次のように設定します。
 
-   ![コンテンツフラグメントエディター - メタデータ](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
+  ![コンテンツフラグメントエディター - メタデータ](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
    * また、これは、Assets コンソールのツールバーにある「**プロパティ**」オプションを使用して、直接アクセスすることもできます。
 

@@ -2,10 +2,10 @@
 title: RemotePage コンポーネント
 description: RemotePage コンポーネントは、AEM 内のリモート React SPA を編集するためのカスタムページコンポーネントです。
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 80%
+source-wordcount: '391'
+ht-degree: 75%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 80%
 
 RemotePage コンポーネントは、アプリケーションで生成された `asset-manifest.json` から必要なアセットをすべて取得し、これを使用して AEM 内の SPA +をレンダリングします。
 
-* RemotePage を使用すると、AEM ページコンポーネントの本文に SPA のスクリプトやスタイルシートを挿入できます。
+* RemotePage を使用すると、AEM Page コンポーネントの本文にSPAのスクリプトやスタイルシートを挿入できます。
 * 仮想フロントエンドコンポーネントを使用すると、AEM SPA エディターでセクションを編集可能としてマークできます。
 * これとともに、異なるドメインでホストされている SPA を AEM で編集可能にすることができます。
 

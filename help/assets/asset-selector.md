@@ -4,10 +4,10 @@ description: アセットセレクターを使用して、アプリケーショ�
 contentOwner: Adobe
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2379'
-ht-degree: 94%
+source-wordcount: '2373'
+ht-degree: 91%
 
 ---
 
@@ -223,7 +223,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 この例では、統合シェルの下で [!DNL Adobe] アプリケーションを実行している場合、または認証用に生成された `imsToken` が既にある場合に、アセットセレクターを非 SUSI フローと連携して使用する方法を示します。
 
-を使用して、コードにアセットセレクターパッケージを含めます。 `script` タグ、 _6～15 行目_ 以下の例の スクリプトが読み込まれると、`PureJSSelectors` グローバル変数を使用できるようになります。アセットセレクターの定義 [プロパティ](#asset-selector-properties) に示すように _16～23 行_. `imsOrg` プロパティと `imsToken` プロパティは、いずれも非 SUSI フローでの認証に必要です。`handleSelection` プロパティは、選択したアセットを処理するために使用されます。_17 行目_&#x200B;で示されているように、アセットセレクターをレンダリングするには `renderAssetSelector` 関数を呼び出します。_21～22 行目_&#x200B;に示されているように、アセットセレクターが `<div>` コンテナ要素に表示されます。
+を使用して、コードにアセットセレクターパッケージを含めます。 `script` タグ、 _6～15 行目_ 以下の例のを参照してください。 スクリプトが読み込まれると、`PureJSSelectors` グローバル変数を使用できるようになります。アセットセレクターの定義 [プロパティ](#asset-selector-properties) に示すように、 _16～23 行_. `imsOrg` プロパティと `imsToken` プロパティは、いずれも非 SUSI フローでの認証に必要です。`handleSelection` プロパティは、選択したアセットを処理するために使用されます。_17 行目_&#x200B;で示されているように、アセットセレクターをレンダリングするには `renderAssetSelector` 関数を呼び出します。_21～22 行目_&#x200B;に示されているように、アセットセレクターが `<div>` コンテナ要素に表示されます。
 
 これらの手順に従うと、[!DNL Adobe] アプリケーションでアセットセレクターを非 SUSI フローと連携して使用できます。
 
@@ -361,7 +361,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 | プロパティ | タイプ | 必須 | デフォルト | 説明 |
 |---|---|---|---|---|
 | *rail* | ブーリアン | いいえ | false | マークされている場合 `true`の場合、アセットセレクターが左側のパネル表示でレンダリングされます。 マークが付いている場合 `false`の場合、アセットセレクターがモーダルビューでレンダリングされます。 |
-| *imsOrg* | 文字列 | はい | | [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] を組織にプロビジョニングする場合に割り当てられる Adobe Identity Management System（IMS）の ID です。この `imsOrg` キーは、アクセスする組織がAdobe IMS中かどうかを認証するために必要です。 |
+| *imsOrg* | 文字列 | はい | | [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] を組織にプロビジョニングする場合に割り当てられる Adobe Identity Management System（IMS）の ID です。The `imsOrg` キーは、アクセスする組織がAdobe IMS中かどうかを認証するために必要です。 |
 | *imsToken* | 文字列 | いいえ | | 認証に使用される IMS ベアラートークンです。非 SUSI フローを使用している場合、`imsToken` は必須です。 |
 | *apiKey* | 文字列 | いいえ | | AEM Discovery サービスへのアクセスに使用する API キーです。非 SUSI フローを使用している場合、`apiKey` は必須です。 |
 | *rootPath* | 文字列 | いいえ | /content/dam/ | アセットセレクターがアセットを表示する元のフォルダーパスです。`rootPath` はカプセル化の形式でも使用できます。例えば、次のパスの場合、 `/content/dam/marketing/subfolder/`の場合、アセットセレクターを使用すると、親フォルダーをトラバースできず、子フォルダーのみが表示されます。 |
@@ -373,7 +373,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | いいえ |                 | OOTB 翻訳がアプリケーションのニーズを満たさない場合は、独自のローカライズされたカスタム値を `i18nSymbols` プロップ経由で渡すことができるインターフェイスを表示できます。このインターフェイスを介して値を渡すと、提供されたデフォルトの翻訳が上書きされ、代わりに独自の翻訳が使用されます。上書きを実行するには、上書きしたい `i18nSymbols` のキーに有効な[メッセージ記述子](https://formatjs.io/docs/react-intl/api/#message-descriptor)オブジェクトを渡す必要があります。 |
 | *intl* | オブジェクト | いいえ | | アセットセレクターはデフォルトの OOTB 翻訳を提供します。`intl.locale` プロップを介して有効なロケール文字列を指定することで、翻訳言語を選択できます。（例：`intl={{ locale: "es-es" }}` </br></br>）サポートされているロケール文字列は、言語名の標準規格を表す [ISO 639 - コード](https://www.iso.org/iso-639-language-codes.html)に従います。</br></br> サポートされているロケールの一覧：英語 - &#39;en-us&#39;（デフォルト）スペイン語 - &#39;es-es&#39; ドイツ語 - &#39;de-de&#39; フランス語 - &#39;fr-fr&#39; イタリア語 - &#39;it-it&#39; 日本語 - &#39;ja-jp&#39; 韓国語 - &#39;ko-kr&#39; ポルトガル語 - &#39;pt-br&#39; 中国語（簡体字） - &#39;zh-cn&#39; 中国語（繁体字） - &#39;zh-tw&#39; |
 | *repositoryId* | 文字列 | いいえ | &#39;&#39; | アセットセレクターがコンテンツを読み込む元のリポジトリです。 |
-| *additionalAemSolutions* | `Array<string>` | いいえ | [ ] | 追加の AEM リポジトリのリストを追加できます。このプロパティで情報が指定されない場合、メディアライブラリまたは AEM Assets リポジトリのみが考慮されます。 |
+| *additionalAemSolutions* | `Array<string>` | いいえ | [ ] | 追加のAEMリポジトリのリストを追加できます。 このプロパティで情報が指定されない場合、メディアライブラリまたは AEM Assets リポジトリのみが考慮されます。 |
 | *hideTreeNav* | ブーリアン | いいえ |  | アセットツリーのナビゲーションサイドバーを表示するか非表示にするかを指定します。このプロパティはモーダルビューでのみ使用されるので、パネルビューではこのプロパティの影響はありません。 |
 | *onDrop* | 関数 | いいえ | | このプロパティで、アセットのドロップ機能を許可することができます。 |
 | *dropOptions* | `{allowList?: Object}` | いいえ | | 「allowList」を使用してドロップオプションを設定します。 |
@@ -411,7 +411,7 @@ Use the `path` property to define the folder name that displays automatically wh
 
 ### 例 3：パネルビューのカスタムフィルタープロパティ
 
-アセットセレクターを使用すると、ファセット検索に加えて、様々な属性をカスタマイズして [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] アプリケーションの検索を絞り込むことができます。カスタマイズした検索フィルターをアプリケーションに追加するには、次のコードを追加する必要があります。次の例では、画像、ドキュメント、ビデオの中からアセットタイプをフィルタリングする `Type Filter` 検索、または検索用に追加したフィルタータイプを使用します。
+アセットセレクターを使用すると、ファセット検索に加えて、様々な属性をカスタマイズして、検索を絞り込むことができます。 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] アプリケーション。 カスタマイズした検索フィルターをアプリケーションに追加するには、次のコードを追加する必要があります。次の例では、画像、ドキュメント、ビデオの中からアセットタイプをフィルタリングする `Type Filter` 検索、または検索用に追加したフィルタータイプを使用します。
 
 ![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
 
@@ -509,7 +509,7 @@ For the detailed example of Object Schema, click
 
 ### リポジトリスイッチャー {#repository-switcher}
 
-アセットセレクターを使用すると、アセットを選択するためにリポジトリを切り替えることもできます。左側のパネルにあるドロップダウンから、目的のリポジトリを選択できます。ドロップダウンリストで使用できるリポジトリオプションは、`index.html` ファイルで定義されている `repositoryId` プロパティに基づいています。これは、ログインしているユーザーがアクセスする、選択された IMS 組織の環境に基づいています。消費者は優先する `repositoryID` を渡すことができ、その場合、アセットセレクターはリポジトリスイッチャーのレンダリングを停止し、指定されたリポジトリからのみアセットをレンダリングします。
+また、アセットセレクターを使用して、アセット選択用のリポジトリーを切り替えることもできます。 左側のパネルにあるドロップダウンから、目的のリポジトリを選択できます。ドロップダウンリストで使用できるリポジトリオプションは、`index.html` ファイルで定義されている `repositoryId` プロパティに基づいています。これは、ログインしているユーザーがアクセスする、選択された IMS 組織の環境に基づいています。消費者は優先する `repositoryID` を渡すことができ、その場合、アセットセレクターはリポジトリスイッチャーのレンダリングを停止し、指定されたリポジトリからのみアセットをレンダリングします。
 <!--
 It is based on the `imsOrg` that is provided in the application. If you want to see the list of repositories, then `repositoryId` is required to view those specific repositories in your application.
 -->
@@ -530,7 +530,7 @@ It is based on the `imsOrg` that is provided in the application. If you want to 
 
 ### カスタム検索
 
-アセットセレクターでは、フルテキスト検索の他に、カスタマイズされた検索を使用してファイル内のアセットを検索できます。カスタム検索フィルターは、モーダル表示モードとパネル表示モードの両方で使用できます。
+アセットセレクターでは、全文検索に加えて、カスタマイズされた検索を使用してファイル内のアセットを検索することができます。 カスタム検索フィルターは、モーダル表示モードとパネル表示モードの両方で使用できます。
 
 ![custom-search](assets/custom-search.png)
 
@@ -538,7 +538,7 @@ It is based on the `imsOrg` that is provided in the application. If you want to 
 
 ### 検索バー {#search-bar}
 
-アセットセレクターを使用すると、選択したリポジトリ内のアセットに対してフルテキスト検索を実行できます。例えば、検索バーにキーワード「`wave`」を入力すると、メタデータプロパティのいずれかでキーワード「`wave`」が記述されているアセットがすべて表示されます。
+アセットセレクターを使用すると、選択したリポジトリ内のアセットに対して、全文検索を実行できます。 例えば、検索バーにキーワード「`wave`」を入力すると、メタデータプロパティのいずれかでキーワード「`wave`」が記述されているアセットがすべて表示されます。
 
 ### 並べ替え {#sorting}
 
@@ -571,7 +571,7 @@ Asset Selector supports two types of out of the box views:
 ### Application Integration
 
 Asset Selector is flexible and can be integrated within your existing [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application. It is accessible and localized to add, search, and select assets in your application. With Asset Selector you can:
-*   **Configure** You can configure the files/folders that you want to show at the upfront. The assets that are chosen to view can be of any supported formats, for example, JPEG. It allows you to control the display of various text or symbols as per your choice.
+*   **Configure** You can configure the files/folders that you want to show at the upfront. The assets that are chosen to view can be of any supported formats, for example, JPEG. It lets you control the display of various text or symbols as per your choice.
 *   **Perfect fit** Asset selector easily fits in your existing [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application and choose the way you want to view. The mode of view can be inline, rail, or modal view.
 *   **Accessible** With Asset Selector, you can reach the desired asset in an easy manner.
 *   **Localize** Assets can be availed for the various locales available as per Adobe's localization standards.
@@ -596,15 +596,15 @@ You can make default multi-selection of assets by specifying the assets to the c
 ### Action buttons
 
 When you customize your application with Asset Selector based on ReactJS, you are provided with the following action buttons to perform various actions:
-*   **Open in media library** Allows you to open the asset in media library.
-*   **Upload** Allows you to upload an asset directly.
+*   **Open in media library** Lets you open the asset in media library.
+*   **Upload** Lets you upload an asset directly.
 *   **Download** Downloads the asset in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 -->
 <!--
 
 ### Status of an asset
 
-Asset Selector allows you to know the status of your uploaded assets. The status can be `Approved`, `Rejected`, or `Expired` of the asset. 
+Asset Selector lets you know the status of your uploaded assets. The status can be `Approved`, `Rejected`, or `Expired` of the asset. 
 -->
 <!--
 

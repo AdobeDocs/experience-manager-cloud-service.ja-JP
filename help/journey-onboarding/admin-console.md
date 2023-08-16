@@ -2,10 +2,10 @@
 title: Admin Console へのアクセス
 description: オンボーディングに必要な準備と AEMaaCS 構造の基本事項を理解したら、Admin Console に初めてログインする準備が整います。
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 92%
+source-wordcount: '1104'
+ht-degree: 89%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 92%
 
 ## Admin Console {#admin-console}
 
-Adobe Admin Console では、アドビ製品のライセンスとユーザーを一元管理します。Admin Console を使用すると、別々なソリューション内ではなく、1 か所でユーザーを作成および管理できます。
+Adobe Admin Console では、アドビ製品のライセンスとユーザーを一元管理します。Admin Consoleを使用すると、様々なソリューション内ではなく、1 か所でユーザーを作成および管理できます。
 
 ## Adobe ID {#adobe-id}
 
@@ -50,7 +50,7 @@ Admin Console を使用してチーム内のユーザーを管理する前に、
 
 1. システム管理者は、オンボーディングプロセスの一環としてアドビから複数のメールを受信します。アクセス権が付与された組織名に関する情報を記載したお知らせメールを探します。
 
-1. お知らせメールの&#x200B;**使用開始**&#x200B;リンクをクリックして、Admin Console に移動します。メールが見つからない場合は、ブラウザーを開いて [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) の Admin Console に直接アクセスします。
+1. お知らせメールの&#x200B;**使用開始**&#x200B;リンクをクリックして、Admin Console に移動します。電子メールが見つからない場合は、ブラウザーを直接開いて、次の場所にAdmin Consoleを作成します。 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
    ![お知らせメール](/help/journey-onboarding/assets/get-started-email.png)
 
@@ -90,7 +90,7 @@ AEM as a Cloud Service は IMS を使用することで、AEM と Adobe Experien
 
 ![「サポート」タブ](/help/journey-onboarding/assets/support-menu.png)
 
-このタブを使用すると、ケースの作成や管理、アドビカスタマーサポートの担当者との直接のチャット、エキスパートとのセッションの予約などを行えます。サポートケースとエキスパートセッションのオプションにアクセスするには、 システム管理者とサポート管理者としてログインする必要があります。
+「 」タブでは、ケースの作成と管理、Adobeカスタマーサポート担当者との直接のチャット、エキスパートとのセッションのスケジュール設定をおこなうことができます。 サポートケースとエキスパートセッションのオプションにアクセスするには、 システム管理者とサポート管理者としてログインする必要があります。
 
 ## 次の手順 {#whats-next}
 
@@ -105,7 +105,7 @@ AEM as a Cloud Service は IMS を使用することで、AEM と Adobe Experien
 
 ## その他のリソース {#additional-resources}
 
-オンボーディングジャーニーのコンテンツの範囲を超えたい場合の追加のオプションリソースを次に示します。
+オンボーディングジャーニーのコンテンツの範囲を超えてさらに詳しく知りたい場合に役立つ、追加のオプションリソースを次に示します。
 
 * [Admin Console の概要](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) - Admin Console の包括的な概要
 * [Adobe ID の作成または更新](https://helpx.adobe.com/jp/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Adobe ID の作成および変更と、複数の Adobe ID の管理方法を説明します。

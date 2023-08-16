@@ -4,10 +4,10 @@ description: システム管理者が必要なクラウドリソースを設定�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1417'
-ht-degree: 98%
+source-wordcount: '1415'
+ht-degree: 93%
 
 ---
 
@@ -150,6 +150,6 @@ Cloud Manager でセルフサービスの Git アカウント管理を使用す�
 * [Cloud Manager での Git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - Cloud Manager の Git リポジトリを使用する方法と、オンプレミスで顧客管理された独自の Git リポジトリを Cloud Manager と統合する方法について説明します。
 * [ローカル開発環境の設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ja) - このチュートリアルでは、AEM as a Cloud Service SDK を使用して Adobe Experience Manager（AEM）用のローカル開発環境を設定する手順について説明します。
 * [AEM Sites の概要 - WKND チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja) - 複数パートから成るこのチュートリアルは、Adobe Experience Manager（AEM）を初めて使用する開発者向けに設計されています。このチュートリアルでは、架空のライフスタイルブランド WKND の AEM Sites の実装について説明します。このチュートリアルでは、Adobe Experience Manager Sites を使用したプロジェクトの設定、コアコンポーネント、編集可能なテンプレート、クライアントサイドライブラリ、コンポーネント開発などの基本的なトピックについて説明します。
-* [React を使用した AEM での SPA の概要](/help/implementing/developing/hybrid/getting-started-react.md) - この記事では、サンプルの SPA アプリケーションを紹介し、それがどのように組み立てられているか説明するほか、React フレームワークを使用して独自の SPA の運用を速やかに立ち上げる方法についても説明します。
-* [Angular を使用した AEM での SPA の概要](/help/implementing/developing/hybrid/getting-started-angular.md) - この記事では、サンプルの SPA アプリケーションを紹介し、それがどのように組み立てられているか説明するほか、Angular フレームワークを使用して独自の SPA の運用を速やかに開始する方法についても説明します。
+* [React を使用したAEMでのSPAの概要](/help/implementing/developing/hybrid/getting-started-react.md)  — この記事では、サンプルのSPAアプリケーションを紹介し、その設定方法を説明し、React フレームワークを使用して独自のSPAをすぐに使い始めるための方法について説明します。
+* [AEMのSPA使用の手引きAngular](/help/implementing/developing/hybrid/getting-started-angular.md)  — この記事では、サンプルのSPAアプリケーションを紹介し、その設定方法を説明し、Angularフレームワークを使用して独自のSPAをすぐに使い始める方法を説明します。
 * [ヘッドレス開発者ジャーニー](/help/journey-headless/developer/overview.md) - AEMでヘッドレスアプリケーションを開発する際のガイド付きコースについては、ここから始めてください。

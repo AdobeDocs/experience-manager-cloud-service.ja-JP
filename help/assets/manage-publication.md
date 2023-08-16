@@ -5,10 +5,10 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 8466595f988d3a10806d4654885c14a622d14057
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1630'
-ht-degree: 85%
+source-wordcount: '1627'
+ht-degree: 81%
 
 ---
 
@@ -28,13 +28,13 @@ ht-degree: 85%
 
 ## 「クイック公開」を使用したアセットの公開 {#quick-publish}
 
-「クイック公開」を使用すると、選択した宛先にコンテンツを直ちに公開できます。[!DNL Experience Manager Assets] コンソールで、親フォルダーに移動し、公開するアセットまたはフォルダーをすべて選択します。ツールバーの「**[!UICONTROL クイック公開]**」オプションをクリックし、アセットの公開先をドロップダウンリストから選択します。
+クイック公開を使用すると、選択した宛先に直ちにコンテンツを公開できます。 [!DNL Experience Manager Assets] コンソールで、親フォルダーに移動し、公開するアセットまたはフォルダーをすべて選択します。ツールバーの「**[!UICONTROL クイック公開]**」オプションをクリックし、アセットの公開先をドロップダウンリストから選択します。
 
 ![クイック公開](assets/quick-publish-to-aem.png)
 
 ## 「公開を管理」を使用したアセットの公開 {#manage-publication}
 
-「公開を管理」を使用すると、選択した宛先にコンテンツを公開または選択した宛先からコンテンツを非公開にしたり、DAM リポジトリー全体から公開リストに[コンテンツを追加](#add-content)したり、[フォルダー設定を含めて](#include-folder-settings)選択したフォルダーのコンテンツを公開しフィルターを適用したり、後の日時に[公開をスケジュール](#publish-assets-later)したりできます。
+公開を管理では、選択した宛先に対して、または選択した宛先からコンテンツを公開または非公開にできます。 [コンテンツを追加](#add-content) を DAM リポジトリー全体の発行リストに追加する [フォルダ設定を含める](#include-folder-settings) 選択したフォルダーのコンテンツを公開し、フィルターを適用するには、次の手順に従います。 [公開をスケジュール](#publish-assets-later) を後の日時に変更する必要があります。
 
 [!DNL Experience Manager Assets] コンソールで、親フォルダーに移動し、公開するアセットまたはフォルダーをすべて選択します。ツールバーの「**[!UICONTROL 公開を管理]**」オプションをクリックします。[!DNL Experience Manager Assets] インスタンスに [!DNL Dynamic Media] や [!DNL Brand Portal] が設定されていない場合は、アセットやフォルダーを [!DNL Experience Manager Assets] にのみ公開できます。
 
@@ -61,7 +61,7 @@ ht-degree: 85%
 
 ### コンテンツの追加 {#add-content}
 
-[!DNL Experience Manager Assets] に公開する場合は、公開リストにさらにコンテンツ（アセットやフォルダー）を追加できます。DAM リポジトリー全体からリストにアセットやフォルダーをさらに追加できます。クリック **[!UICONTROL コンテンツを追加]** ボタンをクリックして、コンテンツを追加します。
+への公開 [!DNL Experience Manager Assets] 発行リストにさらにコンテンツ（アセットやフォルダー）を追加できます。 DAM リポジトリー全体からリストにアセットやフォルダーをさらに追加できます。クリック **[!UICONTROL コンテンツを追加]** ボタンをクリックして、コンテンツを追加します。
 
 フォルダーから複数のアセットを一度に追加したり、複数のフォルダーを一度に追加したりできます。しかし、複数のフォルダーからアセットを一度に追加することはできません。
 
@@ -179,7 +179,7 @@ Only the selected folder content and references are published.
 
 ## 公開をリクエスト {#request-publication}
 
-この `Request Publication` オプションは、アセットを公開する前に、そのアセットのワークフローを認証する際に役立ちます。 [!DNL AEM] Assets 環境 [!DNL AEM] は、様々なユーザーに異なるレベルの権限を提供します。 次の場合、 *投稿者* この訪問者はアセットをアップロードしていますが、アップロードを検証するまでアセットを公開できません。 また、は *管理者* アセットの読み取りワークフローと書き込みワークフローを管理できます。
+The `Request Publication` オプションは、アセットを公開する前に、そのアセットのワークフローを認証する際に役立ちます。 [!DNL AEM] Assets 環境。 [!DNL AEM] は、様々なユーザーに異なるレベルの権限を提供します。 次の条件を満たす場合、 *投稿者* この訪問者はアセットをアップロードしていますが、アップロードを検証するまでアセットを公開できません。 また、は *管理者* アセットの読み取りワークフローと書き込みワークフローを管理できます。
 
 「公開をリクエスト」オプションは、次のユーザーが使用できます。
 * **寄稿者：** 以下に貢献できるユーザーの場合： [!DNL AEM] Assets の場合、 [!DNL AEM] Assets ワークフロー `Manage publication` 」ボタンが非表示になっています。 投稿者は、アセットを追加することによってのみ投稿できますが、投稿したり、ワークフローに対する読み取りアクセス権を持つことはできません。
@@ -193,7 +193,7 @@ Only the selected folder content and references are published.
 
 >[!NOTE]
 >
->If [!DNL Dynamic Media] が宛先として選択されている場合、ワークフローステップは無効になっています。 **ワークフローユーザー** および **admin** ユーザー。
+>次の場合 [!DNL Dynamic Media] が宛先として選択されている場合、ワークフローステップは無効になっています。 **ワークフローユーザー** および **admin** ユーザー。
 >
 
 ## 制限事項とヒント {#limitations-and-tips}

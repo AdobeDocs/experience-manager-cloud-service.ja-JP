@@ -2,10 +2,10 @@
 title: Screens サービスプロバイダーへの移動
 description: ここでは、Screens サービスプロバイダーへの移動方法について説明します。
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 46%
+source-wordcount: '262'
+ht-degree: 41%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 46%
    >[!CAUTION]
    >複数の組織にアクセスできる場合は、正しい組織にログインしていることを確認してください。 組織を変更するには、画面の右上隅にある「組織名」をクリックし、アクセスする必要のある組織を選択します。
 
-2. 「プロジェクト」（左上隅）の横の歯車アイコンをクリックします
+2. 「プロジェクト」（左上隅）の横の歯車アイコンをクリックします。
 
    ![画像](/help/screens-cloud/assets/configure/configure-screens0.png)
 
@@ -47,10 +47,10 @@ ht-degree: 46%
 
    ![画像](/help/screens-cloud/assets/configure/configure-screens1.png)
 
-6. Screens コンテンツプロバイダーが別のタブで開き、コンテンツを作成できるようになります。
+6. Screens コンテンツプロバイダーが別のタブで開き、コンテンツを作成できます。
 
    ![画像](/help/screens-cloud/assets/configure/configure-screens2.png)
 
 ## 次の手順 {#whats-next}
 
-Screens Services Provider の設定方法を学習したら、次に移動します。 [Screens コンテンツプロバイダーの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end#screens-content-provider) を参照してください。
+Screens Services Provider の設定方法を学習したら、次の URL に移動します。 [Screens コンテンツプロバイダーの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end#screens-content-provider) を参照してください。

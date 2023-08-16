@@ -3,10 +3,10 @@ title: アセットの読み込みと書き出し
 seo-title: Import and export assets to [!DNL AEM Forms]
 description: アダプティブフォームおよび関連アセットを AEM インスタンスに読み込んだり書き出したりできます。これは、フォームを移行したり、複数のシステム間で移動したりするのに役立ちます。
 seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1325'
-ht-degree: 100%
+source-wordcount: '1323'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## フォームとドキュメントアセットのダウンロードまたはアップロード {#download-or-upload-forms-amp-documents-assets}
 
-[!DNL AEM Forms] ユーザーインターフェイスを使用すると、アセットを AEM CRX パッケージまたはバイナリファイルとしてダウンロードして、AEM インスタンスからアセットを書き出すことができます。その後、ダウンロードした AEM CRX パッケージまたはバイナリファイルを別の AEM インスタンスに読み込むことができます。
+[!DNL AEM Forms] ユーザーインターフェイスを使用すると、AEMインスタンスからアセットをAEM CRX パッケージまたはバイナリファイルとしてダウンロードして書き出すことができます。 その後、ダウンロードした AEM CRX パッケージまたはバイナリファイルを別の AEM インスタンスに読み込むことができます。
 
 [!DNL AEM Forms] ユーザーインターフェイスを介した書き出しと読み込みは、アダプティブフォームテンプレートおよびアダプティブフォームコンテンツポリシーを除くすべてのアセットでサポートされます。したがって、[!DNL AEM Forms] UI からのアダプティブフォームの書き出し時に、関連するアダプティブフォームテンプレートとコンテンツポリシーは、他の関連するアセットのように自動的には書き出されません。
 
@@ -202,7 +202,7 @@ AEM パッケージマネージャーを使用して、ワークフローアプ�
 
    指定した名前を持つフォルダーが既に存在する場合は、送信はエラーになり失敗します。名前フィールドの横に表示されるエラー ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) アイコンの上にマウスポインターを置くと、エラーメッセージを見ることができます。
 
-   新しく作成されたフォルダーをタップしてフォルダー内に移動し、フォルダー内でアセットまたはフォルダーを作成できます。さらに、フォルダーを選択し、ダウンロード、削除、名前の編集用にそのフォルダーをキューに入れることができます。
+   新しく作成したフォルダーをタップしてフォルダー内に移動し、そのフォルダー内にアセットやフォルダーを作成できます。 さらに、フォルダーを選択し、ダウンロード、削除、名前の編集用にそのフォルダーをキューに入れることができます。
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
 
@@ -221,9 +221,9 @@ Complete the following steps to create copies of assets and letters:
 
 ## Search {#search-forms}
 
-[!DNL AEM Forms] UI allows you to search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
+[!DNL AEM Forms] UI lets you search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
 
-When you search for assets, [!DNL AEM Forms] displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also allows you to save your searches.
+When you search for assets, [!DNL AEM Forms] displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
 
 ![search_topbar](assets/search_topbar.png)
 
@@ -239,7 +239,7 @@ On the side panel, you can use the following to narrow down your search results:
 * Tags
 * Search Criteria; for example, Modified Dates, Publish Status, LiveCopy Status.
 
-The side panel also allows you to save your search settings with names of your choice.
+The side panel also lets you save your search settings with names of your choice.
 
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](/help/sites-authoring/search.md).
 

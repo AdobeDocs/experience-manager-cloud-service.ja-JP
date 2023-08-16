@@ -1,20 +1,20 @@
 ---
 title: アダプティブフォームのルールエディターの使い方
-description: アダプティブフォームルールエディターを使用すると、コーディングやスクリプトの作成を行わずに、動的な動作を追加し、複雑なロジックをフォームに組み込むことができます。ルールとルール構文の選択ガイドラインの理解について説明します。ルールエディターで利用可能な演算子のタイプとイベントについて詳しく説明します。
+description: アダプティブFormsのルールエディターを使用すると、コーディングやスクリプティングをおこなわずに、動的な動作を追加し、複雑なロジックをフォームに作成できます。 ルールとルール構文の選択ガイドラインの理解について説明します。ルールエディターで利用可能な演算子のタイプとイベントについて詳しく説明します。
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '6401'
-ht-degree: 78%
+source-wordcount: '6389'
+ht-degree: 76%
 
 ---
 
 # アダプティブフォームへのルールの追加 {#adaptive-forms-rule-editor}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象 [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -124,11 +124,11 @@ _
 
 ラジオボタンやリストなどの複数値コンポーネントに対してルールを作成する場合、オプションが自動的に取得され、それらのオプションを使用してルールを作成できるようになりました。オプション値を再度入力する必要はありません。
 
-例えば、リストには次の 4 つのオプションがあります。赤、青、緑、黄。 ルールの作成時に、オプション（ラジオボタン）が自動的に取得され、次のようにルールクリエイターが使用できるようになります。
+例えば、リストには赤、青、緑、黄の 4 つのオプションがあります。 ルールの作成時に、オプション（ラジオボタン）が自動的に取得され、次のようにルールクリエイターが使用できるようになります。
 
 ![複数値表示オプション](assets/multivaluefcdisplaysoptions.png)
 
-「When」ルールを記述するときに、「Clear Value Of」アクションをトリガーできます。「Clear Value Of」アクションは、指定したオブジェクトの値をクリアします。「When」ステートメントに「Clear Value Of」をオプションとして含めると、複数フィールドで複雑な条件を作成できます。
+「When」ルールを記述するときに、「Clear Value Of」アクションをトリガーできます。「Clear Value Of」アクションは、指定したオブジェクトの値をクリアします。When ステートメントで「 Clear Value 」をオプションとして指定すると、複数のフィールドを含む複雑な条件を作成できます。
 
 ![値をクリア](assets/clearvalueof.png)
 
@@ -150,7 +150,7 @@ _
 
 フォームデータモデルでのサービス設定について詳しくは、「[[!DNL Experience Manager Forms] データ統合](data-integration.md)」を参照してください。
 
-**[!UICONTROL プロパティを設定]**&#x200B;のルールタイプを使用すると、条件アクションに基づいて、指定したオブジェクトのプロパティの値を設定できます。
+The **[!UICONTROL プロパティを設定]** ルールタイプを使用すると、条件アクションに基づいて、指定したオブジェクトのプロパティの値を設定できます。
 
 これにより、ルールを定義して、アダプティブフォームにチェックボックスを動的に追加することができます。カスタム関数、フォームオブジェクト、またはオブジェクトプロパティを使用して、ルールを定義できます。
 
@@ -186,7 +186,7 @@ _
 
 ### [!UICONTROL Set Value of] {#set-value-of}
 
-「**[!UICONTROL Set Value of]**」のルールタイプを使用すると、指定した条件に応じてフォームオブジェクトの値を設定することができます。この値には、他のオブジェクトの値や、リテラル文字列、数式や関数から算出された値、または他のオブジェクトのプロパティ値、フォームデータモデルサービスの出力値を指定することができます。同様に、関数や数式から算出された構成要素、文字列、プロパティ、または値を確認することもできます。
+The **[!UICONTROL 次の値を設定]** ルールタイプを使用すると、指定した条件が満たされているかどうかに応じて、フォームオブジェクトの値を設定できます。 この値には、他のオブジェクトの値や、リテラル文字列、数式や関数から算出された値、または他のオブジェクトのプロパティ値、フォームデータモデルサービスの出力値を指定することができます。同様に、関数や数式から算出された構成要素、文字列、プロパティ、または値を確認することもできます。
 
 「**Set Value Of**」のルールタイプは、パネルやツールバーボタンなどのすべてのフォームオブジェクトで使用できるわけではありません。標準的な「Set Value Of」ルールは、次の構文を有します。
 
@@ -262,7 +262,7 @@ When （オプション）：
 
 ### [!UICONTROL Disable（無効）] {#disable}
 
-「**[!UICONTROL Disable]**」のルールタイプでは、「Enable」のルールタイプと同様に、条件を満たしているか否かに基づいて、フォームオブジェクトを有効または無効にすることができます。「Disable」のルールタイプでは、条件が満たされていないか、あるいは `False` が返された場合に、「Disable」アクションをトリガーします。
+「Enable」ルールタイプと同様に、 **[!UICONTROL 無効にする]** ルールタイプを使用すると、条件が満たされているかどうかに基づいてフォームオブジェクトを有効または無効にすることができます。 「Disable」のルールタイプでは、条件が満たされていないか、あるいは `False` が返された場合に、「Disable」アクションをトリガーします。
 
 代表的な「Disable」のルール構文は、次のようになります。
 
@@ -278,7 +278,7 @@ When （オプション）：
 
 ### [!UICONTROL Validate（検証）] {#validate}
 
-この **[!UICONTROL 検証]** ルールタイプは、式を使用してフィールドの値を検証します。 例えば、名前を指定するテキストボックスに特殊文字や数字が含まれていないことを確認する式を記述できます。
+The **[!UICONTROL 検証]** ルールタイプは、式を使用してフィールドの値を検証します。 例えば、名前を指定するテキストボックスに特殊文字や数字が含まれていないことを確認する式を記述できます。
 
 一般的な「Validate」ルールの構造は次のようになります。
 
@@ -381,7 +381,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ルールを保存するには、「**[!UICONTROL 完了]**」ボタンを押します。不完全なルールを保存できます。 ただし、不完全な要素は無効で、実行されません。 フォームオブジェクトに保存されたルールは、同じフォームオブジェクトから次回ルールエディターを起動したときに表示されます。 このビューでは、既存のルールを管理できます。 詳しくは、 [ルールの管理](rule-editor.md#p-manage-rules-p).
 
-この **[!UICONTROL キャンセル]** ボタンを押すと、ルールに加えた変更が破棄され、ルールエディターが閉じます。
+The **[!UICONTROL キャンセル]** ボタンを押すと、ルールに加えた変更が破棄され、ルールエディターが閉じます。
 
 ## ルールを記述 {#write-rules}
 
@@ -426,7 +426,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    条件を`When Marital Status is equal to Married`と定義しました。次に、この条件が True の場合に実行するアクションを定義します。
 
-1. Then 文で、 **[!UICONTROL 表示]** から **[!UICONTROL アクションを選択]** 」ドロップダウンリストから選択できます。
+1. Then 文で、「 **[!UICONTROL 表示]** から **[!UICONTROL アクションを選択]** 」ドロップダウンリストから選択できます。
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
@@ -476,7 +476,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13.png)
 
-   「拡張式」フィールドで、「 **[!UICONTROL ～で割られる]** から **[!UICONTROL 演算子を選択]** フィールドと **[!UICONTROL 数値]** から **[!UICONTROL オプションを選択]** フィールドに入力します。 次に、 **[!UICONTROL 2]** を設定します。
+   拡張式フィールドで、「 」を選択します。 **[!UICONTROL ～で割られる]** から **[!UICONTROL 演算子を選択]** フィールドと **[!UICONTROL 数値]** から **[!UICONTROL オプションを選択]** フィールドに入力します。 次に、 **[!UICONTROL 2]** を設定します。
 
    ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14.png)
 
@@ -561,9 +561,9 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 * **メンバー**
 構文： `@memberof namespace`
-関数に名前空間をアタッチします。
+名前空間を関数にアタッチします。
 
-* **パラメータ**
+* **パラメーター**
 構文： `@param {type} name <Parameter Description>`
 または、次を使用できます。 `@argument` `{type} name <Parameter Description>` **または** `@arg` `{type}` `name <Parameter Description>`.
 関数で使用されるパラメーターを表示します。関数には、複数のパラメータタグを設けることができます。各パラメーターは、実行順序に応じて 1 個のタグを設けることができます。
@@ -688,7 +688,7 @@ var x1,
     x2 =5, x3 =true;
 ```
 
-制限事項：カスタム関数は、変数リストから最初の関数宣言のみを取得します（共に使用する場合）。 関数式は、すべての関数宣言に使用することができます。
+制限：カスタム関数では、変数リストから最初の関数宣言のみが取得されます（共に使用する場合）。 関数式は、すべての関数宣言に使用することができます。
 
 **オブジェクトとしての関数宣言**
 
@@ -709,7 +709,7 @@ var c = {
 
 ## ルール管理 {#manage-rules}
 
-オブジェクトをタップして ![edit-rules1](assets/edit-rules-icon.svg) をタップすると、フォームオブジェクトの既存のルールが一覧表示されます。タイトルを表示し、ルール概要をプレビューできます。 さらに、UI を使用して、ルールの概要を展開および表示したり、ルールの順序を変更したり、ルールを編集したり、ルールを削除したりできます。
+オブジェクトをタップして ![edit-rules1](assets/edit-rules-icon.svg) をタップすると、フォームオブジェクトの既存のルールが一覧表示されます。タイトルを表示し、ルール概要をプレビューできます。 さらに、UI を使用して、完全なルール概要の展開と表示、ルールの順序の変更、ルールの編集、ルールの削除を行うことができます。
 
 ![リストルール](assets/list-rules.png)
 
@@ -717,7 +717,7 @@ var c = {
 
 * **展開／折りたたみ**：ルールリスト内の「コンテンツ」の列には、ルールの内容が表示されます。デフォルトビューにルール内容の全体が表示されていない場合は、![expand-rule-content](assets/Smock_ChevronDown.svg) をタップしてビューを展開します。
 
-* **並べ替え**:新しく作成したルールは、すべてルールリストの下部に積み重ねられます。 ルールは上から下に順に実行されます。 最上部のルールが最初に実行され、その後に同じタイプの他のルールが実行されます。 例えば、「When」、「Show」、「Enable」、および「When」の各ルールが、リストの 1～4 番目にある場合、一番上にある「When」ルールが最初に実行され、次に 4 番目の「When」ルールが実行されます。そして、「Show」ルールおよび「Enable」ルールが実行されます。ルールの順序を変更するには、![sort-rules](assets/sort-rules.svg) をタップするか、リスト内の目的の位置にドラッグアンドドロップします。
+* **並べ替え**：新しく作成したルールは、ルールリストの下部に積み重ねられます。 ルールは上から下に順に実行されます。 最上部のルールが最初に実行され、その後に同じタイプの他のルールが実行されます。 例えば、「When」、「Show」、「Enable」、および「When」の各ルールが、リストの 1～4 番目にある場合、一番上にある「When」ルールが最初に実行され、次に 4 番目の「When」ルールが実行されます。そして、「Show」ルールおよび「Enable」ルールが実行されます。ルールの順序を変更するには、![sort-rules](assets/sort-rules.svg) をタップするか、リスト内の目的の位置にドラッグアンドドロップします。
 
 * **編集**：ルールを編集するには、ルールタイトルの横にあるチェックボックスを選択します。ルールを編集・削除するためのオプションが表示されます。「**[!UICONTROL 編集]**」をタップして、選択したルールをルールエディター<!-- in visual  or code editor mode depending on the mode used to create the rule -->で開きます。
 
@@ -779,7 +779,7 @@ var c = {
 
 ## 数値比較条件 {#number-comparison-conditions}
 
-ルールエディターでは、2 つの数値を比較する条件を作成できます。
+ルールエディターを使用すると、2 つの数を比較する条件を作成できます。
 
 次に示す条件の例では、申込者が現在の住所に住んでいる月数が 36 に満たない場合、静的テキストオブジェクトを表示します。
 

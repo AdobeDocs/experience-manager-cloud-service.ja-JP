@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の高度なネットワーク機能の設定
 description: AEM as a Cloud Service の高度なネットワーク機能（VPN やフレキシブルエグレス IP アドレスまたは専用エグレス IP アドレスなど）を設定する方法を説明します
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '3571'
-ht-degree: 77%
+ht-degree: 75%
 
 ---
 
@@ -40,9 +40,9 @@ AEM as a Cloud Service には、複数のタイプの高度なネットワーク
 
 ## フレキシブルポートエグレス {#flexible-port-egress}
 
-高度なネットワーク機能を使用すると、デフォルトで開いている HTTP（ポート 80）と HTTPS（ポート 443）以外のポートからトラフィックを送信するように、AEM as a Cloud Service を設定することができます。
+この高度なネットワーク機能を使用すると、AEM as a Cloud Serviceを設定して、HTTP（ポート 80）および HTTPS（ポート 443）以外のポート（デフォルトで開いている）を介してトラフィックを出力することができます。
 
-### 考慮事項 {#flexible-port-egress-considerations}
+### 検討事項 {#flexible-port-egress-considerations}
 
 専用の出力に依存しないトラフィックは高いスループットを達成できるので、VPN が不要で、専用の出力 IP アドレスが不要な場合は、柔軟なポート出力を選択することをお勧めします。
 
@@ -197,7 +197,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 フレキシブルポートエグレスとの主な違いは、トラフィックが常に専用 の一意の IP アドレスから出ていくことです。その IP を確認するには、DNS リゾルバーを使用して、`p{PROGRAM_ID}.external.adobeaemcloud.com` に関連付けられている IP アドレスを特定します。IP アドレスは変更されるとは限りませんが、将来変更する必要がある場合は、詳細な通知が表示されます。
 
-`PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントのフレキシブルポートエグレスでサポートされているルーティングルールに加えて、専用エグレス IP アドレスでは `nonProxyHosts` パラメーターもサポートしています。これにより、専用 IP ではなく共有 IP アドレス範囲を経由してルーティングされる一連のホストを宣言できます。これは、共有 IP から出ていくトラフィックがさらに最適化される可能性があるので、役に立つことがあります。`nonProxyHost` URL は `example.com` または `*.example.com` のパターンに従う場合があります（このパターンでは、ワイルドカードはドメインの先頭でのみ使用できます）。
+`PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントのフレキシブルポートエグレスでサポートされているルーティングルールに加えて、専用エグレス IP アドレスでは `nonProxyHosts` パラメーターもサポートしています。これにより、専用 IP ではなく、共有 IP アドレス範囲を経由してルーティングするホストのセットを宣言できます。これは、共有 IP を介したトラフィックの出力をさらに最適化する場合に役立ちます。 `nonProxyHost` URL は `example.com` または `*.example.com` のパターンに従う場合があります（このパターンでは、ワイルドカードはドメインの先頭でのみ使用できます）。
 
 フレキシブルポートエグレス IP アドレスと専用エグレス IP アドレスのどちらかを選択する場合は、特定の IP アドレスが必要なければ、フレキシブルポートエグレスを選択してください。アドビ側でフレキシブルポートエグレストラフィックのパフォーマンスを最適化できるからです。
 
@@ -450,7 +450,7 @@ API が数秒以内に応答して「`updating`」のステータスを返し、
   </tr>
   <tr>
     <td></td>
-    <td>IP が <i>VPN ゲートウェイアドレス空間</i> 範囲とクライアントの接続 <code>AEM_PROXY_HOST</code> を使用した env 変数 <code>portOrig</code> 宣言された <code>portForwards</code> API パラメーター</td>
+    <td>IP が <i>VPN ゲートウェイアドレス空間</i> 範囲とクライアントの接続先 <code>AEM_PROXY_HOST</code> を使用した env 変数 <code>portOrig</code> 宣言された <code>portForwards</code> API パラメーター</td>
     <td>任意</td>
     <td>専用エグレス IP を経由</td>
     <td></td>
@@ -562,7 +562,7 @@ Header always set Cache-Control private
 
 1. へのPOSTコールで、すべての地域のネットワークインフラストラクチャを構築 [Cloud Manager ネットワークインフラストラクチャ作成 API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). ペイロードの JSON 設定のプライマリ領域に対する唯一の違いは、 region プロパティです。
 1. ステージング環境の場合は、次を実行して、環境範囲を指定した高度なネットワークを有効にし、構成します。 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. 詳しくは、 API ドキュメントを参照してください。 [ここ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
-1. 必要に応じて、外部インフラストラクチャをロックダウンします。FQDN（例： ）でロックダウンします。 `p1234.external.adobeaemcloud.com`) をクリックします。 それ以外の場合は、IP アドレスでおこなうことができます
+1. 必要に応じて、外部インフラストラクチャをロックダウンします。FQDN（例： ）でロックダウンします。 `p1234.external.adobeaemcloud.com`) をクリックします。 それ以外の場合は、IP アドレスでおこなうことができます。
 1. ステージング環境が期待どおりに動作する場合は、実稼動環境用に環境範囲を定めた高度なネットワーク設定を有効にして設定します。
 
 #### VPN {#vpn-regions}

@@ -2,10 +2,10 @@
 title: API リクエストの作成 - ヘッドレス設定
 description: コンテンツフラグメントコンテンツと AEM Assets REST API のヘッドレス配信に GraphQL API を使用して、コンテンツフラグメントを管理する方法を説明します。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 63%
+source-wordcount: '651'
+ht-degree: 58%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 63%
 
 * [GraphQL API](/help/headless/graphql-api/content-fragments.md) では、コンテンツフラグメントにアクセスして配信するリクエストを作成できます。 この API は、コンテンツフラグメントコンテンツのクエリと使用に最も堅牢な機能セットを提供します。
    * API を使用するには、 [AEMのエンドポイントの定義と有効化](/help/headless/graphql-api/graphql-endpoint.md)（必要に応じて） [GraphiQL インターフェイスがインストールされています](/help/headless/graphql-api/graphiql-ide.md).
-* [アセット REST API](/help/assets/content-fragments/assets-api-content-fragments.md) を使用すると、コンテンツフラグメント（およびその他のアセット）を作成および変更できます。
+* [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) では、コンテンツフラグメント（およびその他のアセット）を作成および変更できます。
 
 このガイドでは、GraphQLへのアクセスとコンテンツフラグメントの配信について説明します。
 
@@ -29,7 +29,7 @@ GraphQL API を使用する前に、GraphQL エンドポイントを作成する
 
 1. **ツール**／**一般** に移動し、「**GraphQL**」を選択します。
 1. 「**作成**」を選択します。
-1. この **新しいGraphQLエンドポイントを作成** ダイアログボックスが開きます。 以下を指定します。
+1. The **新しいGraphQLエンドポイントを作成** ダイアログボックスが開きます。 以下を指定します。
    * **名前**：エンドポイントの名前。任意のテキストを入力できます。
    * **使用する GraphQL スキーマの提供元**：ドロップダウンを使用して、必要な設定を選択します。
 1. 「**作成**」で確定します。
@@ -55,9 +55,9 @@ GraphiQL は IDE であり、AEM 環境に含まれています。[エンドポ�
    * 直接アクセス（例：`http://localhost:4502/aem/graphiql.html`）
 
 1. GraphiQL は、GraphQL のブラウザー内のクエリエディターです。クエリを作成して、コンテンツフラグメントを取得し、それらを JSON としてヘッドレスに配信できます。
-   * 右上のドロップダウンを使用すると、エンドポイントを選択できます。
+   * 右上のドロップダウンで、エンドポイントを選択できます。
    * 左端のパネルには、永続クエリが表示されます（使用可能な場合）。
-   * 左中央のパネルでは、クエリを作成できます。
+   * 中央の左側のパネルを使用して、クエリを作成できます。
    * 右中央のパネルには、結果が表示されます。
    * クエリエディターは、コード補完機能とホットキーを備えており、クエリを簡単に実行できます。
 
@@ -94,7 +94,7 @@ GraphQLでは、繰り返しの API リクエストや過度の配信を避け�
 
 ## 次の手順 {#next-steps}
 
-これで作業は完了です。AEM のヘッドレスコンテンツ管理に関する基本的な内容を説明しました。使用可能な機能を包括的に理解するために、さらに多くのリソースを参照できます。
+これで作業は完了です。AEM のヘッドレスコンテンツ管理に関する基本的な内容を説明しました。使用可能な機能を包括的に理解するために、さらに多くのリソースを使用して、さらに深く掘り下げることができます。
 
 * **[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md)** - コンテンツフラグメントの作成と管理に関する詳細
 * **[AEM Assets HTTP API でサポートされるコンテンツフラグメント](/help/assets/content-fragments/assets-api-content-fragments.md)** - CRUD 操作（作成、読み取り、更新、削除）を介して HTTP API 経由で直接 AEM コンテンツにアクセスする方法の詳細

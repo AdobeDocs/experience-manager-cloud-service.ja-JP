@@ -1,19 +1,19 @@
 ---
 title: Adobe Analytics との統合
-description: タッチ UI と Launch を使用して、Adobe AnalyticsをAEM as a Cloud Serviceと統合する方法をAdobeします。
+description: タッチ UI と Launch を使用して、Adobe AnalyticsをAEM as a Cloud Serviceと統合する方法についてAdobeします。
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 957758a8d3c16328e7638356e7ee6df3e561386d
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 85%
+source-wordcount: '573'
+ht-degree: 82%
 
 ---
 
 # Adobe Analytics との統合{#integrating-with-adobe-analytics}
 
-Adobe Analytics と AEM as a Cloud Service の統合により、Web ページのアクティビティを追跡できます。統合には次の要件が必要です。
+Adobe AnalyticsとAEMの統合as a Cloud Service機能を使用すると、Web ページのアクティビティを追跡できます。 統合には次の要件があります。
 
 * AEM as a Cloud Service で Analytics 設定を作成するためのタッチ UI を使用できることAdobe AnalyticsをAEM as a Cloud Serviceと統合するには、IMS 認証が必要です。
 * [Adobe Launch](#analytics-launch) の拡張機能として Adobe Analytics を追加し、設定できることAdobe Launch について詳しくは、[このページ](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=ja)を参照してください。
