@@ -7,23 +7,23 @@ keywords: カスタムエラーハンドラーの追加、デフォルトエラ�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
 workflow-type: tm+mt
 source-wordcount: '1983'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
 # アダプティブFormsのエラーハンドラー {#error-handlers-in-adaptive-form}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象 [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html) |
 | AEM as a Cloud Service | この記事 |
 
-AEM Formsには、すぐに使用できる、フォーム送信の成功ハンドラーとエラーハンドラーが用意されています。 また、エラーハンドラ関数をカスタマイズする機能も提供します。 例えば、特定のエラーコードに対してバックエンドでカスタムワークフローを呼び出したり、サービスが停止していることを顧客に通知したりできます。 ハンドラーは、サーバー応答に基づいて実行されるクライアントサイド関数です。API を使用して外部サービスが呼び出されると、データが検証用にサーバーに送信され、クライアントに応答を返して送信の成功またはエラーイベントに関する情報を返します。 この情報は、関連するハンドラーにパラメーターとして渡され、関数が実行されます。エラーハンドラーは、発生したエラーや検証の問題を管理および表示するのに役立ちます。
+AEM Forms には、すぐに使用できる、フォーム送信の成功および失敗ハンドラーが用意されています。また、エラーハンドラ関数をカスタマイズする機能も提供します。 例えば、特定のエラーコードに対してバックエンドでカスタムワークフローを呼び出したり、サービスが停止していることを顧客に通知したりできます。 ハンドラーは、サーバー応答に基づいて実行されるクライアントサイド関数です。API を使用して外部サービスが呼び出されると、データが検証用にサーバーに送信され、クライアントに応答を返して送信の成功またはエラーイベントに関する情報を返します。 この情報は、関連するハンドラーにパラメーターとして渡され、関数が実行されます。エラーハンドラーは、発生したエラーや検証の問題を管理および表示するのに役立ちます。
 
 ![フォームにカスタムエラーハンドラーを追加する方法を理解するためのエラーハンドラーワークフロー](/help/forms/assets/error-handler-workflow.png)
 
@@ -35,17 +35,17 @@ AEM Formsには、すぐに使用できる、フォーム送信の成功ハン�
 ## エラーハンドラーの使用 {#uses-of-error-handler}
 
 エラーハンドラーは、様々な目的で使用されます。 エラーハンドラー関数の使用の一部を以下に示します。
-* **検証の実行**:エラー処理は、事前定義されたルールまたは条件に対してユーザー入力を検証することから始まります。 ユーザーがアダプティブフォームに入力すると、エラーハンドラーは入力を検証し、必要な形式、長さ、またはその他の制約を満たすようにします。
+* **検証の実行**：エラー処理は、事前定義されたルールまたは条件に対してユーザー入力を検証することから開始します。 ユーザーがアダプティブフォームに入力すると、エラーハンドラーは入力を検証し、必要な形式、長さ、またはその他の制約を満たすようにします。
 
-* **リアルタイムでのフィードバックの提供**:エラーが検出されると、エラーハンドラーは、対応するフォームフィールドの下のインラインエラーメッセージなど、ユーザーに対する即座のフィードバックを表示します。 このフィードバックは、ユーザーがフォームを送信して応答を待たなくても、エラーを識別して修正するのに役立ちます。
-
-
-* **エラーメッセージの表示**:アダプティブフォームの送信で検証エラーが発生すると、エラーハンドラーは適切なエラーメッセージを表示します。 エラーメッセージは、明確で簡潔で、注意が必要な特定のフィールドをハイライト表示する必要があります。
-
-* **エラーのあるフィールドをハイライトします**:誤ったフィールドにユーザーの注意を引くために、エラーハンドラーは、対応するフィールドを強調表示するか視覚的に区別します。 この処理は、背景色を変更したり、アイコンや境界線を追加したり、ユーザーがエラーをすばやく見つけて対処するのに役立つその他の視覚的なキューを追加したりすることで実行されます。
+* **リアルタイムでのフィードバックの提供**：エラーが検出されると、エラーハンドラーは、対応するフォームフィールドの下にインラインエラーメッセージなど、ユーザーに対する即時のフィードバックを表示します。 このフィードバックは、ユーザーがフォームを送信して応答を待たなくても、エラーを識別して修正するのに役立ちます。
 
 
-## 失敗/エラー応答形式 {#failure-response-format}
+* **エラーメッセージの表示**：アダプティブフォームの送信で検証エラーが発生すると、エラーハンドラーは適切なエラーメッセージを表示します。 エラーメッセージは、明確で簡潔で、注意が必要な特定のフィールドをハイライト表示する必要があります。
+
+* **エラーのあるフィールドをハイライトします**：ユーザーが注意を払って、間違った特定のフィールドに入れるために、エラーハンドラーは、対応するフィールドを強調表示するか、視覚的に区別します。 この処理は、背景色を変更したり、アイコンや境界線を追加したり、ユーザーがエラーをすばやく見つけて対処するのに役立つその他の視覚的なキューを追加したりすることで実行されます。
+
+
+## 失敗/エラー応答の形式 {#failure-response-format}
 
 サーバーの検証エラーメッセージが次の標準形式の場合、アダプティブフォームは、フィールドレベルでエラーを表示します。
 次のコードは、既存の失敗応答構造を示しています。
@@ -97,7 +97,7 @@ AEM Formsバージョンの機能の改善とその後の更新に伴い、既�
 >[!NOTE]
 >
 > * エラー応答構造に次のいずれかが含まれていることを確認します。 **fieldName** または **dataRef**.
-> * 次を確認します。 **ContentType** ヘッダーは次のとおりです。 **application/problem+json**.
+> * 次の点を確認します。 **ContentType** ヘッダーは次のとおりです。 **application/problem+json**.
 
 ここで、
 * `type (required)` 失敗のタイプを指定します。 次のいずれかの値を指定できます。
@@ -112,12 +112,12 @@ AEM Formsバージョンの機能の改善とその後の更新に伴い、既�
 * `instance (optional)` は、失敗に関連付けられたインスタンスまたは識別子を表し、失敗の特定の発生を追跡したり識別したりするのに役立ちます。
 * `validationErrors (required)` には、検証エラーに関する情報が含まれています。 次のフィールドが含まれます。
    * `fieldname` では、検証条件に合わなかったフィールドの SOM 式について言及しています。
-   * `dataRef` 検証に失敗したフィールドの JSON パスまたは XPath を表します。
+   * `dataRef` は、検証に失敗したフィールドの JSON パスまたは XPath を表します。
    * `details` には、エラーフィールドを含む検証エラーメッセージが含まれています。
 * `originCode (optional)` 外部サービスによって返された http ステータスコードを含む、AEMによって追加されたフィールド
 * `originMessage (optional)` 外部サービスから返される生のエラーデータを含む、AEMによって追加されたフィールド。
 
-### サンプルエラー応答形式 {#sample-error-response-format}
+### エラー応答形式のサンプル {#sample-error-response-format}
 
 エラー応答を表示するオプションの一部を次に示します。
 
@@ -221,10 +221,10 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
 上記のアクションに加えて、カスタムエラーハンドラーを使用して、特定のユーザー要件を満たすカスタマイズされた関数を実行できます。
 
 カスタムエラーハンドラーは、外部サービスから返されたエラーに応答し、カスタマイズされた応答をエンドユーザーに配信するように設計された関数（クライアントライブラリ）です。 注釈付きの任意のクライアントライブラリ `@errorHandler` は、カスタムエラーハンドラー関数と見なされます。 この注釈は、 `.js` ファイル。
-を使用してカスタムエラーハンドラーを作成し、使用する方法を理解するには [ルールエディターの Invoke サービス](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 「 」アクションでは、2 つのフィールドを持つアダプティブフォームの例を見てみましょう。 **ペット ID** および **ペット名** を使用し、 **ペット ID** 外部サービスを呼び出すように設定された REST エンドポイントが返す様々なエラーを確認するフィールド。例えば、 `200 - OK`,`404 - Not Found`, `400 - Bad Request`.
+を使用してカスタムエラーハンドラーを作成し、使用する方法を理解するには、次の手順を実行します。 [ルールエディターの Invoke サービス [ るーるえでぃたーの Invoke さーびす ]](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 「 」アクションでは、2 つのフィールドを持つアダプティブフォームの例を見てみましょう。 **ペット ID** および **ペット名** を使用し、 **ペット ID** 外部サービスを呼び出すように設定された REST エンドポイントが返す様々なエラーを確認するフィールド。例えば、 `200 - OK`,`404 - Not Found`, `400 - Bad Request`.
 
 アダプティブフォームにカスタムエラーハンドラーを追加して使用するには、次の手順を実行します。
-1. [カスタムエラーハンドラーの作成](#create-custom-error-message)
+1. [カスタムエラーハンドラーを作成する](#create-custom-error-message)
 1. [ルールエディターを使用してカスタムエラーハンドラーを設定する](#use-custom-error-handler)
 
 #### 1.カスタムエラーハンドラーを作成する {#create-custom-error-message}
@@ -267,7 +267,7 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
 
    >[!NOTE]
    >
-   > カスタム関数の作成方法の詳細については、 [ルールエディターのカスタム関数](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#write-rules).
+   > カスタム関数の作成方法について詳しくは、 [ルールエディターのカスタム関数](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#write-rules).
 
 1. 次のコマンドを使用して、リポジトリに変更を追加、コミット、プッシュします。
 
@@ -287,10 +287,10 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
 
 1. アダプティブフォームをオーサリングモードで開き、フォームコンポーネントを選択して、 **[!UICONTROL ルールエディター]** をクリックして、ルールエディターを開きます。
 1. 「**[!UICONTROL 作成]**」をタップします。
-1. ルールの&#x200B;**条件**&#x200B;セクションで条件を作成します。例： **[ペット ID フィールドの名前]** が変更された場合は、「 **変更済み** から **状態を選択** 」ドロップダウンリストから選択できます。
+1. ルールの&#x200B;**条件**&#x200B;セクションで条件を作成します。例えば、 **[ペット ID フィールドの名前]** が変更された場合は、「 **変更済み** から **状態を選択** 」ドロップダウンリストから選択できます。
 1. 「**Then**」セクションの&#x200B;**[!UICONTROL アクションの選択]**&#x200B;ドロップダウンリストで「**サービスの呼び出し**」を選択します。
-1. を選択します。 **ポストサービス** と、対応するデータバインディングが **入力** 」セクションに入力します。 例えば、検証する場合は、次のようにします。 **ペット ID**&#x200B;を選択し、 **ポストサービス** as **GET/pet/{petId}** を選択し、 **ペット ID** 内 **入力** 」セクションに入力します。
-1. からデータ連結を選択します。 **出力** 」セクションに入力します。 例えば、「 **ペット名** 内 **出力** 」セクションに入力します。
+1. を選択します。 **ポストサービス** と、対応するデータバインディングが **入力** 」セクションに入力します。 例えば、検証する場合は、次のようにします。 **ペット ID**&#x200B;を選択し、 **ポストサービス** as **GET/pet/{petId}** を選択し、 **ペット ID** （内） **入力** 」セクションに入力します。
+1. からデータ連結を選択します。 **出力** 」セクションに入力します。 例えば、「 **ペット名** （内） **出力** 」セクションに入力します。
 1. 選択 **[!UICONTROL カスタムエラーハンドラー]** から **[!UICONTROL エラーハンドラー]** 」セクションに入力します。
 1. 「**[!UICONTROL 完了]**」をクリックします。
 

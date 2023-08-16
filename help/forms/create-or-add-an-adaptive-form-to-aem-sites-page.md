@@ -3,10 +3,10 @@ title: アダプティブフォームをAEM Sitesページに追加する方法
 description: アダプティブフォームを作成するか、AEM Sitesページに追加する方法を確認します。 また、利点や、フォームを Web サイトに統合する様々な方法についても説明します。
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
 workflow-type: tm+mt
-source-wordcount: '3301'
-ht-degree: 62%
+source-wordcount: '3229'
+ht-degree: 61%
 
 ---
 
@@ -85,45 +85,41 @@ AEM FormsCloud Serviceは、アダプティブフォームコンテナとアダ�
 1. プランテキストエディターでAEM Cloud Service Git リポジトリフォルダーを開きます。 ( 例：Microsoft Visual Code)。
 1. `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` ファイルを開き、次のコードをファイルに追加します。
 
-       &quot;&#39;
+   ```
        //Customheaderlibs.html
-       
-       &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-       &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;}&quot; />
-       &lt;/sly>
-       
-       &quot;&#39;
    
+       <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+       <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
+       </sly> 
+   ```
+
 1. `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` ファイルを開き、次のコードをファイルに追加します。
 
-       ```
-     
-     //customfooterlibs.html
-     &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-     &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&#39;core.forms.components.runtime.all&#39;, async=true}&quot;/>
-     &lt;/sly>
-     ```
-   
+   ```
+       //customfooterlibs.html
+       <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+       <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
+       </sly> 
+   ```
+
 1. `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` ファイルを開き、次のコードをファイルに追加します。
 
-       ```
-     //Customheaderlibs.html
-     &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-     &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
-     &lt;/sly>
-     
-     ```
-   
+   ```
+       //Customheaderlibs.html
+       <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+       <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
+       </sly> 
+   ```
+
 1. `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` ファイルを開き、次のコードをファイルに追加します。
 
-       ```
-     
-     //customfooterlibs.html
-     &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-     &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&#39;core.forms.components.runtime.all&#39;, async=true}&quot;/>
-     &lt;/sly>
-     ```
-   
+   ```
+       //customfooterlibs.html
+       <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+       <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
+       </sly> 
+   ```
+
 1. [デプロイメントパイプラインの実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=ja) クライアントライブラリをAEM as a Cloud Service環境にデプロイする場合。
 
 +++
@@ -257,7 +253,6 @@ AEM Sites ページ内のアダプティブフォームをエクスペリエン�
 1. 「**[!UICONTROL 送信]**」タブを開きます。
 
    * リダイレクト URL を設定するには、「送信時」オプションで、 **[!UICONTROL URL にリダイレクト]** 」オプションを選択し、AEM Sitesページを参照して選択するか、外部ページの URL を指定します。
-
    * カスタムメッセージまたは「ありがとうございます」メッセージを設定するには、「送信」オプションで、 **[!UICONTROL メッセージを表示]** オプションを選択し、 **[!UICONTROL メッセージの内容]** ボックス。 これはリッチテキストボックスで、全画面表示オプションを使用して、使用可能なすべてのリッチテキスト項目を表示できます。
 
 ## 次を見る
