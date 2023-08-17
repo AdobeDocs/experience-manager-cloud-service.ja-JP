@@ -1,11 +1,11 @@
 ---
 title: AEM Cloud Service の AEM Sites の主な変更点
-description: AEM Cloud Service の AEM Sites の主な変更点
+description: AEM Cloud ServiceのAEM Sitesの主な変更点の詳細
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: 8e06dff01e06ced62686a4784619278f29345082
+source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 100%
+source-wordcount: '537'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,6 @@ AEM Sites as a Cloud Service は、クラウドネイティブな AEM as a Cloud
 >* [AEM Assets as a Cloud Service の主な変更点](/help/assets/assets-cloud-changes.md)
 >* [AEM Assets as a Cloud Service の概要](/help/assets/overview.md)
 >* [Adobe Experience Manager as a Cloud Service のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
-
 
 AEM Sites as a Cloud Service の変更点と追加機能は次のとおりです。
 
