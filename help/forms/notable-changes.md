@@ -3,10 +3,10 @@ title: AEM 6.5 Forms と AEM Cloud Services の違い
 description: Experience Manager Forms のユーザーで、Adobe Experience Manager Forms as aCloud Service にアップグレードする予定ですか？AEM 6.5 Forms と AEM Cloud Services を比較し、アップグレードまたは Cloud Service への移行前に、最も重要な変更点を確認します。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: fa71eb6317314dc8c3540cd0ebb8afaa75d55a59
 workflow-type: tm+mt
-source-wordcount: '1417'
-ht-degree: 97%
+source-wordcount: '1343'
+ht-degree: 92%
 
 ---
 
@@ -60,11 +60,11 @@ Adobe Experience Manager Forms as a Cloud Service では、Adobe Experience Mana
 
 * **XSD ベースのアダプティブフォーム：** XDP テンプレートを使用して、レコードのドキュメント用のテンプレートをデザインできます。このサービスは、XFA ベースのアダプティブフォームをサポートしていません
 
-* **コンポーネント**：[アダプティブフォームコアコンポーネント](/help/forms/creating-adaptive-form-core-components.md)を使用してフォームをデザインできます。これらのコンポーネントは、WCM コアコンポーネントに基づき、BEM 標準に従っており、容易にカスタマイズできます。このサービスはフォーム内の署名エクスペリエンスをサポートしておらず、アダプティブフォームの概要コンポーネントと検証コンポーネントは含まれていません。
+* **コンポーネント**：変換サービスはフォーム内署名機能をサポートしておらず、アダプティブフォームの概要コンポーネントと検証コンポーネントは含まれていません。
+
+* **ウィザードインターフェイス：** 以下を使用すると、 [ウィザードインターフェイス](/help/forms/creating-adaptive-form-core-components.md) 共通のオプションをすばやく設定し、アダプティブフォームを簡単に作成する。
 
 ## Forms ポータル
-
-* フォームポータルの検索とリスター、ドラフトと送信、リンクコンポーネントを使用して、ログインしているユーザーのフォームを一覧表示できます。フォームポータルの匿名での使用は、標準（OOTB）ではサポートされていません。フォームポータルをカスタマイズして、ログインしていないユーザー向けのフォームの表示を有効にすることができます。
 
 * このサービスは、ドラフトと送信されたアダプティブフォームのメタデータを保持しません。
 
@@ -85,7 +85,7 @@ Forms as a Cloud Service には、ドキュメント生成とドキュメント�
 
 ## データ統合（フォームデータモデル）
 
-* また、JDBC コネクタ、Microsoft Dynamics、SalesForce、SOAP ベースの web サービス、OData をサポートするサービスもサポートしています。
+* また、このサービスは、Microsoft Dynamics、SalesForce、SOAP ベースの Web サービス、OData をサポートするサービスもサポートしています。
 
 * AEM ユーザープロファイルに接続して、ユーザー情報を取得および更新することもできます。
 
@@ -96,8 +96,6 @@ Forms as a Cloud Service には、ドキュメント生成とドキュメント�
 
 ## 電子サイン
 
-* このサービスは、Adobe Sign との OOTB 統合を提供し、電子サイン用の DocuSign をサポートします。
-
 * また、このサービスは Adobe Sign の役割もサポートします。ビジネスユーザーが署名ワークフローを簡単に設定できるように、アダプティブフォームエディターで役割を設定できます。
 
 
@@ -105,7 +103,7 @@ Forms as a Cloud Service には、ドキュメント生成とドキュメント�
 
 * AEM 6.5 Forms 環境を使用して、次のことができます。
 
-   * XDP ベースのフォームを HTML5 Forms としてレンダリングします。このサービスでは、HTML5 Forms（モバイルフォーム）をサポートしていません。
+   * XDP ベースのフォームを HTML5 Forms としてレンダリングします。このサービスはHTML5 Formsをサポートしていません。
 
    * [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html?lang=ja) アプリを使用して、オフラインでデータをキャプチャし、次回オンラインに戻る際に同期します。
 
