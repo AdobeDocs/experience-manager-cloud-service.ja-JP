@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: cb963a233b5afd4497704233db7f51c37563d0f9
+source-git-commit: 25af1b0d99f7c5971245f99a95c74d04ca943936
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 18%
+source-wordcount: '661'
+ht-degree: 17%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 18%
 - SITES-13906: GraphQL - graphql-java 20.1 にアップグレードします。
 - SITES-8972: GraphQL - JSON で列挙データタイプのオプションラベルを追加します。
 - SITES-9689: GraphQL — コンテンツ参照データタイプ用のタイトルと説明を JSON で追加します。
-- SITES-13052：コンテンツフラグメント — コンテンツフラグメントをAdobe Targetに書き出す
+- SITES-13052：コンテンツフラグメント — コンテンツフラグメントをAdobe Targetに書き出す。
 
 ### 修正された問題 {#fixed-issues-13099}
 
@@ -54,7 +54,9 @@ ht-degree: 18%
 
 ### 既知の問題 {#known-issues-13099}
 
-- SITES-15359：バリエーション名のパターンが、 ```'_'``` を含める必要があります。
+- SITES-15359：コンテンツフラグメント — バリエーション名のパターンが、 ```'_'``` を含める必要があります。
+- SITES-15463：サイトテンプレート — テンプレートを公開できません（回避策：配布コンソールを使用）。
+- CQ-4354191：ワークフロー — カスタムランチャーは、nt:unstructured ノードに存在するレプリケーションメタデータが原因で、何度もトリガーする場合があります（回避策：重複を避けるためにレプリケーションメタデータプロパティを除外するランチャーを更新）。
 
 ### 組み込みテクノロジー {#embedded-tech-13099}
 
