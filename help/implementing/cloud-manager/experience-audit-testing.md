@@ -2,10 +2,10 @@
 title: エクスペリエンス監査テスト
 description: エクスペリエンス監査でデプロイメントプロセスを検証し、デプロイされた変更がパフォーマンス、アクセシビリティ、ベストプラクティス、SEO のベースライン標準を満たしていることを確認する方法について説明します。
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: e9f205a506fb2d2b7f5e634b353b112bf077058a
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 85%
+source-wordcount: '588'
+ht-degree: 79%
 
 ---
 
@@ -33,13 +33,17 @@ Cloud Manager のエクスペリエンス監査を使用すると、サイト上
 
 エクスペリエンス監査は、Google のオープンソースツールである Google Lighthouse を活用し、すべての Cloud Manager 実稼動パイプラインで有効になります。
 
+>[!INFO]
+>
+>2023 年 8 月 28 日より、エクスペリエンス監査は、モバイルプラットフォームに固有の結果を示すように移行します。 通常、モバイルパフォーマンス指標はデスクトップよりも低く登録されるので、この変更後にレポートされるパフォーマンスが変化する可能性があることを予想してください。
+
 >[!TIP]
 >
 >エクスペリエンス監査に含めるページは、次の場合に設定します [パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
 
 ## エクスペリエンス監査結果について {#understanding-experience-audit-results}
 
-エクスペリエンス監査は、 [実稼動パイプライン実行ページ](/help/implementing/cloud-manager/deploy-code.md).
+エクスペリエンス監査は、 [実稼動パイプラインの実行ページ](/help/implementing/cloud-manager/deploy-code.md).
 
 * 集計指標は、監査したページ全体のパフォーマンス、アクセシビリティ、ベストプラクティス、SEO（検索エンジン最適化）の平均スコアを測定します。
 * 個々のページレベルのスコアも、ドリルダウンで確認できます。
