@@ -3,14 +3,18 @@ title: AEM ヘッドレスを使用したクロスオリジンリソース共有
 description: Adobe Experience Manager のクロスオリジンリソース共有（CORS）を使用すると、ヘッドレス web アプリケーションで AEM へのクライアント側の呼び出しを行うことができます。GraphQL エンドポイントへのアクセスを有効にするには、CORS 設定が必要です。
 feature: GraphQL API
 exl-id: 426be9f9-f44a-4744-ac08-e64bb97308a0
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 100%
+source-wordcount: '230'
+ht-degree: 90%
 
 ---
 
 # クロスオリジンリソース共有（CORS）設定
+
+>[!CAUTION]
+>
+>次の場合 [Dispatcher のキャッシュが有効になっている](/help/headless/deployment/dispatcher-caching.md) その場合、CORS フィルターは不要なので、このセクションは無視できます。
 
 >[!NOTE]
 >
