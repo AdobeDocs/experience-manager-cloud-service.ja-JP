@@ -2,10 +2,10 @@
 title: GraphQLの永続クエリ — Dispatcher でのキャッシュの有効化
 description: Dispatcher は、Adobe Experience Manager パブリッシュ環境の前にあるキャッシュとセキュリティのレイヤーです。AEMヘッドレスの永続クエリのキャッシュを有効にできます。
 feature: Dispatcher, GraphQL API
-source-git-commit: 6f07089812e587834784aeda7e62d3e4614f45a1
+source-git-commit: 0066bfba3a403791c6a35b1280ae04b576315566
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 5%
+source-wordcount: '317'
+ht-degree: 6%
 
 ---
 
@@ -23,6 +23,10 @@ ht-degree: 5%
 >Dispatcher は `Vary` ヘッダー。
 >
 >他の CORS 関連ヘッダーのキャッシュは、Dispatcher で有効にすることができますが、CORS オリジンが複数ある場合は不十分な可能性があります。
+
+>[!NOTE]
+>
+>Dispatcher に関する詳細なドキュメントについては、 [Dispatcher ガイド](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja).
 
 ## 永続クエリのキャッシュの有効化 {#enable-caching-persisted-queries}
 
