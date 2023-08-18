@@ -1,12 +1,12 @@
 ---
-title: ' [!DNL Assets view] でのアセットの検索と検出'
-description: ' [!DNL Assets view] でのアセットの検索と検出について説明します。'
+title: でのアセットの検索と検出の方法について説明します。 [!DNL Assets view]?
+description: AEM Assetsビューでアセットを検索および検出する方法について説明します。 この強力な検索機能を使用すると、適切なアセットをすばやく発見できるので、コンテンツベロシティ（コンテンツ創出の速度）の向上に役立ちます。
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: ed7ce8be17ad1445132b9aa38a0efa84ffa70fdf
+source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 94%
+source-wordcount: '924'
+ht-degree: 92%
 
 ---
 
@@ -146,7 +146,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 * [Assets ビューでアセットを検索するには、ビデオを見る](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=ja)
 
-* 次を使用して製品に関するフィードバックを提供： [!UICONTROL フィードバック] Assets ビューユーザーインターフェイスで使用できるオプション
+* 次を使用して製品に関するフィードバックを提供： [!UICONTROL フィードバック] Assets ビューユーザーインターフェイスで使用可能なオプション
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 

@@ -1,14 +1,14 @@
 ---
-title: アセットの透かしの設定
-description: デジタルアセットへの透かしの追加。
+title: AEMでのアセットの透かしの設定方法
+description: AEMでアセットに電子透かしを追加する方法を説明します。 透かしは、アセットの信頼性と著作権の所有権を確認するのに役立ちます。
 contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 85%
+source-wordcount: '318'
+ht-degree: 80%
 
 ---
 

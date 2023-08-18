@@ -1,10 +1,10 @@
 ---
 title: AEMの新しいAEM Assets UI または Assets ビューは、どのようなメリットがありますか。
-description: 新しいAEM Assets UI またはAEMの新しい Assets ビューの主なメリットについて詳しくは、こちらを参照してください。
+description: 新しいAEM Assets UI またはAEMの新しい Assets ビューの主なメリットについて詳しくは、こちらを参照してください。 アドビは、マーケティングやクリエイティブのプロフェッショナルを支援する専門知識を活用して、革新的な新しいユーザーエクスペリエンスを導入します。
 mini-toc-levels: 3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 2c8bac8627ed660d2780f93f4018c8fa980e569a
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1132'
 ht-degree: 66%
 
 ---
