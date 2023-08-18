@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 25af1b0d99f7c5971245f99a95c74d04ca943936
+source-git-commit: 6e491a68dedc55609349db75ac13691aeda2f0dc
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '673'
 ht-degree: 17%
 
 ---
@@ -56,6 +56,7 @@ ht-degree: 17%
 
 - SITES-15359：コンテンツフラグメント — バリエーション名のパターンが、 ```'_'``` を含める必要があります。
 - SITES-15463：サイトテンプレート — テンプレートを公開できません（回避策：配布コンソールを使用）。
+- FORMS-10444：アダプティブFormsテンプレート — テンプレートを公開できません（回避策：配布コンソールを使用）。
 - CQ-4354191：ワークフロー — カスタムランチャーは、nt:unstructured ノードに存在するレプリケーションメタデータが原因で、何度もトリガーする場合があります（回避策：重複を避けるためにレプリケーションメタデータプロパティを除外するランチャーを更新）。
 
 ### 組み込みテクノロジー {#embedded-tech-13099}
