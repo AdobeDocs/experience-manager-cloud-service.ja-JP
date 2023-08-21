@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 64d88b9af48f1c5736ef668ae00fb29e9bfad9f7
+source-git-commit: e78410a1ce229db0dd3529bf544f694e97bfff46
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 15%
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 ## リリース 13206 {#release-13206}
 
-2023 年 8 月 22 日に公開されたメンテナンスリリース13206の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、Inbox 機能に影響を与える問題を修正するために、リリース13173および13099に代わるものです。
+2023 年 8 月 21 日に公開されたメンテナンスリリース13206の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、Inbox 機能に影響を与える問題を修正するために、リリース13173および13099に代わるものです。
 
 2023.8.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。 詳しくは、 [Experience Managerリリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja) を参照してください。
 
