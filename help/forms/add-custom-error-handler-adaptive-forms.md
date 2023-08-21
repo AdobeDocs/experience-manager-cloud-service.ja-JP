@@ -1,20 +1,19 @@
 ---
-title: アダプティブForms for AEM Adaptive Formsにカスタムエラーハンドラーを追加する
-seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms
+title: AEM Adaptive Formsにカスタムエラーハンドラーを追加する
 description: AEM Formsは、外部サービスを呼び出すように設定された REST エンドポイントを使用して、フォームに対して標準で提供される成功およびエラーハンドラーを提供します。 AEMアダプティブフォームには、デフォルトのエラーハンドラーや、カスタムのエラーハンドラーを追加できます。
 seo-description: Error handler function and Rule Editor in Adaptive Forms helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 keywords: カスタムエラーハンドラーの追加、デフォルトエラーハンドラーの追加、フォームのエラーハンドラーの追加、ルールエディターの呼び出しサービスを使用したカスタムエラーハンドラーの追加、ルールエディターの設定、ルールエディターを使用したカスタムエラーハンドラーの追加
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1983'
+source-wordcount: '1982'
 ht-degree: 9%
 
 ---
 
-# アダプティブFormsのエラーハンドラー {#error-handlers-in-adaptive-form}
+# AEM Adaptive Formsにカスタムエラーハンドラーを追加する {#error-handlers-in-adaptive-form}
 
 <span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 

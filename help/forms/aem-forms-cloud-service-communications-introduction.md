@@ -1,15 +1,15 @@
 ---
-title: Forms as a Cloud Service の通信の概要
+title: Formsas a Cloud Service通信の概要
 description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
 source-wordcount: '1156'
-ht-degree: 93%
+ht-degree: 91%
 
 ---
 
-# AEM Forms as a Cloud Service の通信の使用 {#frequently-asked-questions}
+# AEM Formsas a Cloud Service通信の概要 {#frequently-asked-questions}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |

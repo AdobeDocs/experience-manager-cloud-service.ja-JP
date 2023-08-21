@@ -1,18 +1,18 @@
 ---
-title: レイアウトモードを使用したアダプティブフォームのコンポーネントのサイズ変更方法
+title: レイアウトモードを使用したアダプティブFormsのコンポーネントのサイズ変更
 description: レイアウトモードで使用できるレスポンシブグリッドを使用して、コンポーネントの位置を定義します。レイアウトモードにアクセスする方法、コンポーネントのサイズ変更方法、パネルのサイズ変更方法、パネルの複数列レイアウトの定義方法、古いレスポンシブレイアウト用の新しいレスポンシブグリッドを有効にする方法、古いレスポンシブレイアウトを含むフォームのレイアウトモードを無効にする方法を説明します。
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 93%
+source-wordcount: '1157'
+ht-degree: 91%
 
 ---
 
-# レイアウトモードを使用したコンポーネントのサイズ変更 {#use-layout-mode-to-resize-components}
+# レイアウトモードを使用して、アダプティブFormsのコンポーネントのサイズを変更する {#use-layout-mode-to-resize-components}
 
 <span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 

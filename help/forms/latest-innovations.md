@@ -1,10 +1,10 @@
 ---
-title: Adobe Experience Manager Forms as a Cloud Service の最新のイノベーションについて説明します。
+title: トップ Adobe Experience Manager Forms イノベーション
 description: エンタープライズクラスのフォームとビジネスプロセスを作成、管理、公開するための、 [!DNL AEM Forms]  as a Cloud Service の最新機能について説明します。
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1155'
 ht-degree: 79%
 
 ---

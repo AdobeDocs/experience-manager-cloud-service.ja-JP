@@ -1,17 +1,17 @@
 ---
-title: AEM Forms 中心のワークフローステップのためのユーザーまたはグループの動的な選択
+title: AEM Workflow での動的なユーザーまたはグループの選択
 description: 実行時に [!DNL AEM Forms] ワークフローのユーザーまたはグループを選択する方法について説明します。
 content-type: troubleshooting
 topic-tags: publish
-source-git-commit: 3c2a66ac13ccee9eef87ed3c97288a7475ac64d0
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 55%
+source-wordcount: '895'
+ht-degree: 53%
 
 ---
 
 
-# AEM Forms 中心のワークフローステップのためのユーザーまたはグループの動的な選択 {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+# AEM Workflow での動的なユーザーまたはグループの選択 {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
 実行時に [!DNL AEM Forms] ワークフローのユーザーまたはグループを選択する方法について説明します。
 

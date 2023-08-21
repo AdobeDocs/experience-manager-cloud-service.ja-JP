@@ -1,15 +1,14 @@
 ---
-title: Experience Manager Sites ページでフォームポータルを作成する方法
+title: AEM SitesページへのForms Portal の追加
 description: フォームポータルを作成し、標準搭載のコアコンポーネントを AEM Sites ページで使用する方法を説明します。
-exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1837'
-ht-degree: 85%
+source-wordcount: '1835'
+ht-degree: 84%
 
 ---
 
-# ポータル上のアダプティブフォームを一覧表示 {#publish-forms-on-portal}
+# AEM SitesページへのForms Portal の追加 {#publish-forms-on-portal}
 
 <span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 

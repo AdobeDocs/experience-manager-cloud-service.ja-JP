@@ -1,25 +1,18 @@
 ---
 title: 手書き署名を使用したフォームへの電子署名の適用
-seo-title: Apply electronic signatures to a form using scribble signatures
 description: 手書きを使用したフォームへの署名
 seo-description: Signing forms using scribble
-uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
-docset: aem65
-google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
 workflow-type: tm+mt
 source-wordcount: '720'
-ht-degree: 74%
+ht-degree: 79%
 
 ---
 
 # 手書き署名を使用したフォームへの電子署名の適用{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象 [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -65,15 +58,15 @@ ht-degree: 74%
 
    >[!NOTE]
    >
-   >署名ステップコンポーネントは、フォームで使用できる全幅を取ります。 署名ステップコンポーネントを含むセクションには、他のコンポーネントを含めないことをお勧めします。
+   >署名ステップコンポーネントは、フォームの幅いっぱいに表示されます。そのため、署名ステップコンポーネントが含まれているセクションに他のコンポーネントを配置しないようにすることをお勧めします。
 
-1. コンテンツブラウザーで、 **フォームコンテナ**&#x200B;をクリックし、 **設定** ![設定アイコン](assets/configure.png) アイコン この操作により、アダプティブフォームのコンテナプロパティを表示するプロパティブラウザーが開きます。に移動します。 **アダプティブフォームコンテナ** > **電子署名** を選択し、選択を解除します。 **Adobe Signを有効にする** オプション。 完了 ![aem_forms_save](assets/aem_forms_save.png) アイコンをタップして、変更を保存します。
+1. コンテンツブラウザーで、 **フォームコンテナ**&#x200B;をクリックし、 **設定** ![設定アイコン](assets/configure.png) アイコン。 この操作により、アダプティブフォームのコンテナプロパティを表示するプロパティブラウザーが開きます。に移動します。 **アダプティブフォームコンテナ** > **電子署名** を選択し、選択を解除します。 **Adobe Signを有効にする** オプション。 完了 ![aem_forms_save](assets/aem_forms_save.png) アイコンをタップして、変更を保存します。
 
    >[!NOTE]
    >
    >署名ステップコンポーネントをアダプティブフォームに追加すると、「Adobe Sign を有効にする」オプションが自動的に選択されます。
 
-1. **設定**（![設定](assets/configure.png)）アイコンをタップします。これにより、プロパティブラウザーが開き、署名ステップのプロパティが表示されます。 以下のプロパティを設定します。
+1. **設定**（![設定](assets/configure.png)）アイコンをタップします。この操作により、署名ステップのプロパティを表示するプロパティブラウザーが開きます。以下のプロパティを設定します。
 
    * **要素名**：コンポーネントの名前を指定します。
 

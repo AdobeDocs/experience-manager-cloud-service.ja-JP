@@ -1,13 +1,13 @@
 ---
-title: ' [!DNL AEM Forms]  as a Cloud Service 環境の強化'
+title: AEM Formsas a Cloud Service環境の強化
 seo-title: Secure your [!DNL AEM Forms] as a Cloud Service environment
 description: ' [!DNL AEM Forms]  as a Cloud Service 環境の保護'
 seo-description: Secure your [!DNL AEM Forms] as a Cloud Service environment
 contentOwner: khsingh
-source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
+source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 32%
+source-wordcount: '115'
+ht-degree: 26%
 
 ---
 

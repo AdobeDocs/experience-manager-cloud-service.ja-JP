@@ -1,15 +1,14 @@
 ---
-title: レコードのドキュメントテンプレートを作成するために Forms Designer をダウンロードしてインストールする方法
+title: Forms Designer のダウンロードとインストール
 description: Forms Designer を使用して、レコードのドキュメントテンプレートとして機能する XDP および PDF フォームテンプレートを作成できます。Designer は、 [!DNL AEM Forms]  ライセンスで利用できます。
-exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: e71dd8a4eb92acbed53fb9384bc40efc3e743761
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '256'
+ht-degree: 96%
 
 ---
 
-# Forms Designer のインストール {#installing-and-configuring-designer}
+# Forms Designer のダウンロードとインストール {#installing-and-configuring-designer}
 
 Designer は、XDP および PDF フォームテンプレートの作成を簡単にするポイント＆クリックによるグラフィカルフォームデザインツールです。フォームテンプレートをデザインし、そのロジックを定義して、厳密な法的要件を満たすことができます。XDP および PDF フォームは、アダプティブフォーム内のレコードのドキュメントテンプレートとして機能します。これらのフォームテンプレートは、[アダプティブフォームテンプレート](template-editor.md)とは異なります。
 
@@ -26,7 +25,7 @@ Designer のインストールと設定には、以下のソフトウェアと�
 * ビデオハードウェアアクセラレーション（オプション）
 * Acrobat Pro DC、Acrobat Standard DC または Adobe Acrobat Reader DC。
 * Designer をインストールするための管理者権限。
-* Microsoft Visual C++ 2019 （VC 14.28 以降） 32 ビットランタイム
+* Microsoft Visual C++ 2019（VC 14.28 以降）32 ビットランタイム
 
 ## Designer のインストール {#install-designer}
 

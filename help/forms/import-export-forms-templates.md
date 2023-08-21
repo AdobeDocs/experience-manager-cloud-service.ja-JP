@@ -1,18 +1,16 @@
 ---
-title: アダプティブフォーム、PDF forms、およびその他のアセットの読み込み、書き出し、整理
-seo-title: Learn to import, export, and organize Adaptive Forms, PDF forms, and other assets on an[!DNL AEM Forms] instance
+title: アダプティブFormsおよびAEM Formsアセットの読み込みと書き出し
 description: アダプティブフォームとアセットを AEM インスタンス間で移行したいと考えていますか？ここでは、 [!DNL AEM Forms]  インスタンスからアダプティブフォーム、PDF フォーム、テーマおよびその他のサポートするアセットを読み込んだり書き出したりする方法を説明します。
 seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
 topic-tags: forms-manager
-exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1210'
-ht-degree: 98%
+source-wordcount: '1206'
+ht-degree: 96%
 
 ---
 
-# アダプティブフォーム、PDF フォームおよびその他のアセットの読み込み、書き出し、整理{#importing-and-exporting-assets-to-aem-forms}
+# アダプティブFormsおよびAEM Formsアセットの読み込みと書き出し {#importing-and-exporting-assets-to-aem-forms}
 
 アダプティブフォームと関連アセット（アダプティブフォームテーマ、フォームデータモデル、アダプティブフォームテンプレート、ドキュメントフラグメント、PDF フォームなど）を、[!DNL AEM Forms] インスタンス間で移動できます。CRX パッケージまたはバイナリファイル形式のアセットの読み込みと書き出しを行うことができます。
 

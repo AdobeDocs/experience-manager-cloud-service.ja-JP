@@ -1,18 +1,18 @@
 ---
-title: ユーザーデータをフォーム送信メタデータに追加する方法
+title: ユーザーデータからフォーム送信メタデータに情報を追加する
 description: ユーザーが提供したデータを使用して、送信済みフォームのメタデータに情報を追加する方法を学習します。CRX リポジトリーで更新されたフォーム送信メタデータを表示する方法を詳しく説明します。
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 64%
+source-wordcount: '689'
+ht-degree: 61%
 
 ---
 
 
-# ユーザーデータからフォーム送信メタデータへの情報の追加 {#adding-information-from-user-data-to-form-submission-metadata}
+# ユーザーデータからフォーム送信メタデータに情報を追加する {#adding-information-from-user-data-to-form-submission-metadata}
 
 フォームの要素に入力された値を使用して、ドラフトまたはフォーム送信のメタデータフィールドを計算できます。 メタデータを使用すると、ユーザーデータに基づいてコンテンツをフィルタリングできます。 例えば、ユーザーがフォームの名前フィールドに John Doe と入力したとします。 この情報を使用してメタデータを計算することにより、この送信をイニシャル JD の下に分類できます。
 

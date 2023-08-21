@@ -1,6 +1,6 @@
 ---
-title: AEM 6.5 Formsからに移行する方法 [!DNL AEM Forms] as a Cloud Service環境？
-description: AEM as a Cloud Serviceへの移行ジャーニーの概要 | Adobe Experience Manager.  [!DNL AEM Forms] （オンプレミス環境と AMS 環境）から [!DNL AEM Forms]  as a Cloud Servicee 環境への移行.
+title: AEM 6.5 FormsからAEM Forms as a Cloud Serviceへの移行
+description: AEM as a Cloud Serviceへの移行ジャーニーの概要 | Adobe Experience Manager  [!DNL AEM Forms] （オンプレミス環境と AMS 環境）から [!DNL AEM Forms]  as a Cloud Servicee 環境への移行.
 Keywords: 6.5 forms to cloud service, 6.5 forms to cs, migrate 6.5 forms to CS, migrate 6.5 forms to cloud service, upgrade 6.5 forms to CS, move 6.5 forms to CS, upgrade AEM 6.5 to CS, AEM Forms 6.5 to Cloud Service, AEM form migration to cloud service, Migration Journey to AEM as a Cloud Service | Adobe Experience Manager.
 contentOwner: khsingh
 feature: Adaptive Forms
@@ -9,9 +9,9 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: d43e2d555a09f481900ec70e5e38bab42f4cc1d7
+source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1580'
 ht-degree: 72%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 72%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/upgrade.html) |
 | AEM as a Cloud Service | この記事 |
 
-アダプティブForms、テーマ、テンプレートおよびクラウド設定は、次の場所から移行またはアップグレードできます。 <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> OSGi 上のAEM 6.5 Formsから [!DNL AEM] as a Cloud Service。 これらのアセットを移行する前に、移行ユーティリティを使用して、以前のバージョンで使用されていた形式を [!DNL AEM] as a Cloud Service で使用されていた形式に変換します。AEM as a Cloud Serviceへの移行ジャーニーを開始します | Adobe Experience Manager. 移行ユーティリティを実行すると、以下の項目が更新されます。
+アダプティブForms、テーマ、テンプレートおよびクラウド設定は、次の場所から移行またはアップグレードできます。 <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> OSGi 上のAEM 6.5 Formsから [!DNL AEM] as a Cloud Service。 これらのアセットを移行する前に、移行ユーティリティを使用して、以前のバージョンで使用されていた形式を [!DNL AEM] as a Cloud Service で使用されていた形式に変換します。AEM as a Cloud Serviceへの移行ジャーニーを開始します | Adobe Experience Manager 移行ユーティリティを実行すると、以下の項目が更新されます。
 
 * アダプティブフォームのカスタムコンポーネント
 * アダプティブフォームのテンプレートとテーマ
@@ -59,7 +59,7 @@ AEM 6.5 FormsからAEM Cloud Serviceに移行するには、次の点を考慮�
 
 AEM Forms 6.5 からAEM as a Cloud Service環境へのスムーズな移行を確実におこなうには、次の前提条件を考慮することが重要です。
 
-* 有効にする [Forms — デジタル登録](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?lang=ja#editing-program) FormsCloud Serviceプログラムのオプション [パイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja).
+* 有効にする [Forms — デジタル登録](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?lang=ja#editing-program) FormsCloud Serviceプログラムのオプション [パイプラインを実行する](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja).
 
   ![ドライランの結果](assets/enable-add-on.png)
 
@@ -108,7 +108,7 @@ AEM Forms 6.5 からAEM as a Cloud Service環境へのスムーズな移行を�
 
    1. 「**[!UICONTROL アダプティブフォームカスタムコンポーネントの移行]**」をタップし、カスタムコンポーネントの移行ページで「**[!UICONTROL 移行の開始]**」をタップします。これは、アダプティブフォーム用に開発されたカスタムコンポーネントと、[!DNL AEM Forms] 環境上のコンポーネントオーバーレイを、[!DNL AEM] as a Cloud Service と互換性を持たせます。
 
-   1. 「**[!UICONTROL アダプティブフォームテンプレートの移行]**」をタップし、カスタムコンポーネントの移行ページで、「**[!UICONTROL 移行の開始]**」をタップします。これにより、アダプティブフォームテンプレートが `/apps` または `/conf` と互換性のあるAEM Template Editor を使用して作成された [!DNL AEM] as a Cloud Service
+   1. 「**[!UICONTROL アダプティブフォームテンプレートの移行]**」をタップし、カスタムコンポーネントの移行ページで、「**[!UICONTROL 移行の開始]**」をタップします。これにより、アダプティブフォームテンプレートが `/apps` または `/conf` と互換性のあるAEM Template Editor を使用して作成された [!DNL AEM] AS A CLOUD SERVICE.
 
    1. 「**[!UICONTROL AEM Forms クラウド設定の移行]**」をタップし、設定の移行ページで「**[!UICONTROL 移行の開始]**」をタップします。次のクラウドサービスを更新して新しい場所に移動します。
 
@@ -133,8 +133,8 @@ AEM Forms 6.5 からAEM as a Cloud Service環境へのスムーズな移行を�
 
 AEM Forms 6.5 から Cloud Service に移行する場合、AEM Forms固有のアセットは次の場所にあります。
 
-* **アダプティブForms**:アダプティブフォームは、次の場所で見つけることができます。 `/content/dam/formsanddocuments/`および `/content/forms/af`. 例えば、WKND 登録という名前のアダプティブフォームの場合、`/content/dam/formsanddocuments/wknd-registration`と`/content/forms/af/wknd-registration`のパスを追加します。
-* **フォームデータモデル**:すべてのフォームデータモデルは、 `/content/dam/formsanddocuments-fdm`. 例：`/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
+* **アダプティブForms**：アダプティブフォームは、次の場所で検索できます： `/content/dam/formsanddocuments/`および `/content/forms/af`. 例えば、WKND 登録という名前のアダプティブフォームの場合、`/content/dam/formsanddocuments/wknd-registration`と`/content/forms/af/wknd-registration`のパスを追加します。
+* **フォームデータモデル**：すべてのフォームデータモデルは、 `/content/dam/formsanddocuments-fdm`. 例：`/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
 
 * **クライアントライブラリ**：クライアントライブラリのデフォルトパスは `/etc/clientlibs/fd/theme` です。
 
@@ -162,17 +162,17 @@ AEM Workflow モデルをAEM Forms 6.5 からCloud Serviceに移行する場合�
 ## 次を見る
 
 * [既存の Adobe Experience Manager 6.5 Forms ユーザー向けの主な変更点](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/notable-changes.html)
-* [AEM Formsにオンボーディングas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service.html)
+* [AEM Forms as a Cloud Serviceにオンボーディング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service.html)
 * [Cloud Service時に最初のアダプティブフォームを作成する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=ja)
 
 ## 追加情報
 
 移行ユーティリティを使用すると、基盤コンポーネントに基づいてアダプティブFormsを移行できます。 また、Formsas a Cloud Serviceは、アダプティブFormsコアコンポーネントをサポートしています。 次のことが可能です。
 
-* [コアコンポーネントベースのスタンドアロンのアダプティブFormsを作成](/help/forms/creating-adaptive-form-core-components.md)
+* [コアコンポーネントベースのスタンドアロンのアダプティブFormsを作成する](/help/forms/creating-adaptive-form-core-components.md)
 * [コアコンポーネントベースのアダプティブフォームをAEM Sitesページで直接作成する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 AEM Formsas a Cloud Serviceの詳細については、次を参照してください。
 
 * [AEM FormsCloud Serviceの概要](/help/forms/home.md)
-* [AEM FormsCloud Service](/help/forms/latest-innovations.md)
+* [AEM FormsCloud Serviceのイノベーション](/help/forms/latest-innovations.md)

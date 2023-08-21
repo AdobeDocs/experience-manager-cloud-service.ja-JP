@@ -1,20 +1,20 @@
 ---
-title: コアコンポーネントに基づくアダプティブフォームでのGoogle reCAPTCHA の使用
+title: AEMアダプティブフォームでのGoogle reCAPTCHA の使用
 description: Google reCAPTCHA サービスでフォームのセキュリティを容易に強化できます。 ステップバイステップガイドをご用意しております。
 topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: b81acc99b1d90b05b7c341253e7cbb46c6ea12ae
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 9%
+source-wordcount: '874'
+ht-degree: 17%
 
 ---
 
-# コアコンポーネントに基づくアダプティブFormsでの reCAPTCHA の使用 {#using-reCAPTCHA-in-adaptive-forms}
+# AEMアダプティブフォームでのGoogle reCAPTCHA の使用 {#using-reCAPTCHA-in-adaptive-forms}
 
-CAPTCHA（Computers and Humans Apart を伝える完全自動公開チューリングテスト）は、人と自動化されたプログラムまたはボットを区別するためにオンライントランザクションで一般的に使用されるプログラムです。 テストを行ってユーザーの反応を評価し、サイトを使用しているのが人間かボットかを判断します。テストが失敗した場合の続行を防ぎ、ボットがスパムや悪意のある目的を掲示するのを防ぎ、オンライントランザクションのセキュリティを確保します。
+CAPTCHA（コンピュータと人間を区別する完全に自動化された公開チューリングテスト）は、人と自動化されたプログラムまたはボットを区別するためにオンライントランザクションで一般的に使用されるプログラムです。テストを行ってユーザーの反応を評価し、サイトを使用しているのが人間かボットかを判断します。テストが失敗した場合の続行を防ぎ、ボットがスパムや悪意のある目的の投稿を防ぐことで、オンライントランザクションの安全性を高めます。
 
 [!DNL AEM Forms] as a [!DNL Cloud Service] は、アダプティブFormsでGoogle reCAPTCHA v2 をサポートしています。 これを使用して、フォームの送信時に CAPTCHA の課題を提示できます。 アダプティブフォームで reCAPTCHA を使用するには：
 
@@ -25,7 +25,7 @@ CAPTCHA（Computers and Humans Apart を伝える完全自動公開チューリ�
 
 GoogleによるAEM Forms環境を reCAPTCHA サービスに接続するには
 
-1. 取得 [reCAPTCHA API キーペア](https://www.google.com/recaptcha/admin) Googleから これには、 **サイトキー** および **秘密鍵**.
+1. Google から [reCAPTCHA API キーペア](https://www.google.com/recaptcha/admin)を取得します。これには、**サイトキー**&#x200B;と&#x200B;**秘密鍵**&#x200B;が含まれます。
 
    ![Googleの Web サイトでGoogle reCAPTCHA 設定を作成して、reCAPTCHA キーを取得する](/help/forms/assets/google-captcha.gif)
 1. 設定コンテナをAEM Formsas a Cloud Service環境に作成します。 設定コンテナには、AEMを外部サービスに接続するために使用されるクラウド設定が格納されます。 GoogleでAEM Forms環境を reCAPTCHA サービスに接続するための設定コンテナを作成および設定するには、次の手順を実行します。
@@ -43,7 +43,7 @@ GoogleによるAEM Forms環境を reCAPTCHA サービスに接続するには
          1. 「**[!UICONTROL 保存して閉じる]**」をタップして設定内容を保存し、ダイアログを閉じます。
 
 1. Cloud Service を設定する:
-   1. AEMオーサーインスタンスで、に移動します。 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** とタップします。 **[!UICONTROL reCAPTCHA]**.
+   1. AEMオーサーインスタンスで、に移動します。 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** とタップします。 **[!UICONTROL reCAPTCHA]**.
    1. 前の節で作成または更新した設定コンテナを選択します。 「**[!UICONTROL 作成]**」をタップします。
    1. 指定 **[!UICONTROL タイトル]**, **[!UICONTROL 名前]**, **[!UICONTROL サイトキー]**、および **[!UICONTROL 秘密鍵]** reCAPTCHA サービス用（手順 1 で取得）。 「**[!UICONTROL 作成]**」をタップします。
 

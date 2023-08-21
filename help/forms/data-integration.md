@@ -1,16 +1,14 @@
 ---
-title: ' [!DNL AEM Forms] as a Cloud Service へのデータベースの接続方法 '
-seo-title: AEM Forms Data Integration
+title: AEM Formsをデータベースに接続
 description: ' [!DNL AEM Forms] as a Cloud Service からデータを取得し、RESTful web サービス、SOAP ベースの web サービスおよび OData サービスに保存できます。このサービスは、データを取得、テスト、検証および様々なタイプのデータソースへの送信を行う専用のツールを提供します。'
-exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 64%
+source-wordcount: '570'
+ht-degree: 61%
 
 ---
 
-# データソースの Cloud Service への接続 {#aem-forms-data-integration}
+# AEM Formsをデータベースに接続 {#aem-forms-data-integration}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |

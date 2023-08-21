@@ -1,14 +1,13 @@
 ---
-title: AEM Formsas a Cloud Serviceおよびローカル開発環境でのアダプティブFormsコアコンポーネントの有効化
-seo-title: Step-by-Step Guide for enabling Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment
+title: アダプティブFormsコアコンポーネントの有効化
 description: アドビの詳細な手順ガイドを使用して、AEM Formsas a Cloud ServiceのアダプティブFormsコアコンポーネントを有効にする方法を説明します。 このチュートリアルでは、この強力な機能をAEM Forms環境で簡単に有効にできるように、プロセスについて説明します。
 seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms as a Cloud Service with our step-by-step guide. Our tutorial walks you through the process, making it easy to enable this powerful feature for your AEM Forms environment.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1031'
 ht-degree: 8%
 
 ---

@@ -1,15 +1,14 @@
 ---
-title: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境の設定
+title: AEM Formsのローカル開発環境の設定
 description: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境の設定
-exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '2816'
-ht-degree: 96%
+source-wordcount: '2807'
+ht-degree: 95%
 
 ---
 
-# ローカル開発環境と初期開発プロジェクトの設定 {#overview}
+# AEM Formsのローカル開発環境の設定 {#overview}
 
 [!DNL  Adobe Experience Manager Forms] as a [!DNL  Cloud Service] 環境を設定する場合は、開発環境、ステージング環境および実稼動環境をクラウドに設定します。また、ローカル開発環境を設定および構成することもできます。
 

@@ -1,15 +1,14 @@
 ---
-title: Microsoft Dynamics 365 および Salesforce の標準のフォームデータモデルをアダプティブフォーム用に設定する方法
+title: AEM Forms用Microsoft Dynamics 365 または Salesforce の設定
 description: Microsoft Dynamics 365 と Salesforce をアダプティブフォームに統合する方法を説明します。
-exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 98%
+source-wordcount: '952'
+ht-degree: 96%
 
 ---
 
-# [!DNL Microsoft Dynamics 365] および [!DNL Salesforce] クラウドサービスの設定 {#configure-azure-storage}
+# AEM Forms用Microsoft Dynamics 365 または Salesforce の設定 {#configure-azure-storage}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |

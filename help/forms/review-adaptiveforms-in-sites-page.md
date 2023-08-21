@@ -1,19 +1,18 @@
 ---
-title: Sites ページに埋め込まれた、または作成されたアダプティブフォームのレビューの作成と管理
-seo-title: Review is a mechanism that allows reviewer to perform different tasks for adaptive forms using Assign Task step
+title: アダプティブフォームのレビューの作成と管理
 description: レビューとは、レビュー担当者がタスクの割り当て手順を使用して、アダプティブフォームに対して様々なタスクを実行できるメカニズムです
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: daeb407e27b9f1d390fe40151ca16ec0196712e6
-workflow-type: ht
-source-wordcount: '355'
-ht-degree: 100%
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 95%
 
 ---
 
 
-# サイトのページでの Forms に対する手順のレビュー {#review-step-forms-aem-sites-page}
+# アダプティブフォームのレビューの作成と管理 {#review-step-forms-aem-sites-page}
 
 AEM ワークフローの[割り当て手順](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=ja#assign-task-step)を使用して、レビュー担当者は送信されたフォームをレビューし、それに対してアクションを実行します。タスクを割り当て手順を使用して送信されたフォームをレビューするには、次の手順に従います。
 
