@@ -1,15 +1,15 @@
 ---
-title: Forms Designer を使用して DOR テンプレートとフォームフラグメントを作成する
+title: AEM Forms Designer の使用
 description: ' [!DNL AEM Forms]  Designer を使用して、レコードのドキュメントのテンプレートを作成します。'
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 86%
+source-wordcount: '150'
+ht-degree: 94%
 
 ---
 
-# Forms Designer を使用したレコードのドキュメント (DoR) テンプレートとフォームフラグメントの作成 {#install-designer}
+# AEM Forms Designer の使用 {#install-designer}
 
 Designer は、XDP フォームテンプレートを簡単に作成できるポイント＆クリック式のグラフィカルフォームデザインツールです。フォームテンプレートをデザインし、そのロジックを定義して、厳密な法的要件を満たすことができます。これらのテンプレートは、アダプティブフォームのレコードのドキュメントのテンプレートとして機能します。これらのフォームテンプレートは、[アダプティブフォームテンプレート](template-editor.md)とは異なります。
 
