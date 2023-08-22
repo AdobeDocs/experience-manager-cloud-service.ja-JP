@@ -2,14 +2,17 @@
 title: アダプティブFormsでの reCAPTCHA の使用
 description: アダプティブFormsでGoogle reCAPTCHA サービスを設定する方法を説明します。
 topic-tags: adaptive_forms, author
-source-git-commit: b4665d0291ee1223e46c8ecf13ca13ea336107d3
+source-git-commit: ad63083016f0f8c51ea336e37461562e61c02a8f
 workflow-type: tm+mt
-source-wordcount: '1913'
-ht-degree: 74%
+source-wordcount: '1932'
+ht-degree: 73%
 
 ---
 
 # アダプティブFormsでの reCAPTCHA の使用{#using-reCAPTCHA-in-adaptive-forms}
+
+<span class="preview"> これはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
