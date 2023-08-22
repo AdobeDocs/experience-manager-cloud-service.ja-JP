@@ -1,11 +1,11 @@
 ---
 title: カスタムドメイン名の概要
-description: Cloud Manager の UI を使用すると、カスタムドメインを追加して、自社サイトをセルフサービス方式で一意のブランド名で識別できます。
+description: Cloud Manager の UI では、セルフサービス方式でカスタムドメインを追加して、サイトを独自のブランド名で識別することができます。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 74%
+ht-degree: 83%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 74%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_domains"
 >title="カスタムドメイン名の管理"
->abstract="Cloud Manager の UI を使用すると、カスタムドメインを追加して、自社サイトをセルフサービス方式で一意のブランド名で識別できます。"
+>abstract="Cloud Manager の UI では、セルフサービス方式でカスタムドメインを追加して、サイトを独自のブランド名で識別することができます。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html?lang=ja" text="カスタムドメイン名の追加"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html?lang=ja" text="カスタムドメイン名の表示と更新"
 
-Cloud Manager の UI を使用すると、カスタムドメインを追加して、自社サイトをセルフサービス方式で一意のブランド名で識別できます。 Adobe Experience Manager as a Cloud Service には、`*.adobeaemcloud.com` で終わるデフォルトのドメイン名がプロビジョニングされます。このデフォルトのドメイン名は、web サイトにカスタムドメイン名を関連付けた後でも、そのまま残ります。
+Cloud Manager の UI では、セルフサービス方式でカスタムドメインを追加して、サイトを独自のブランド名で識別することができます。Adobe Experience Manager as a Cloud Service には、`*.adobeaemcloud.com` で終わるデフォルトのドメイン名がプロビジョニングされます。このデフォルトのドメイン名は、web サイトにカスタムドメイン名を関連付けた後でも、そのまま残ります。
 
 ## カスタムドメイン名とは {#what-are-custom-domain-names}
 

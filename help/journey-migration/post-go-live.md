@@ -5,7 +5,7 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 3784569086a786c6c25c0e3d6d0bb0ddbdd37e4b
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 68%
+ht-degree: 74%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 68%
 >id="aemcloud_golive_troubleshooting"
 >title="AEM のトラブルシューティング"
 >abstract="AEM に関する問題のトラブルシューティングに役立つ、開発者コンソールや CRXDE Lite などのツールと共に、継続的な開発とログの管理に関するベストプラクティスについて説明します。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="ログへのアクセスと管理"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service の開発ツール"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=ja" text="ログへのアクセスと管理"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=ja#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service の開発ツール"
 
 このジャーニーは最後の部分なので、問題を監視し、移行が完了したらパフォーマンスを向上させる方法を学びます。 一時ファイルを確実にクリーンアップし、継続的な開発のベストプラクティスを確認し、ログを管理する必要があります。
 
@@ -58,7 +58,7 @@ AEM as a Cloud Service 開発者環境でのデバッグは、開発環境、ス
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
 >title="ヘルプ＆サポート"
->abstract="AdobeのAEMサポートチームに連絡して、明確な情報を入手したり、懸念事項に対処したりします。"
+>abstract="明確な情報を入手したり、懸念事項に対処したりするには、アドビの AEM サポートチームにお問い合わせください。"
 >additional-url="https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud のサポート"
 
 Cloud Service へのアクセスに関するご質問については、アドビ担当者または [Experience Cloud のサポート](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)にお問い合わせください。
