@@ -2,10 +2,10 @@
 title: Adobe Analytics との統合時に使用する IMS 設定
 description: Adobe Analytics との統合時に使用する IMS 設定について説明します
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: d59559d38eef182723a8791c6614d03930f64a85
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 91%
+source-wordcount: '914'
+ht-degree: 88%
 
 ---
 
@@ -55,7 +55,7 @@ Analytics Standard API を使用して Adobe Experience Manager as a Cloud Servi
 
    >[!CAUTION]
    >
-   >この設定は開いたままにしておきます。 [AEMでの IMS 設定の完了](#completing-the-ims-configuration-in-aem).
+   >この設定は開いたままにしておき、次の場合に再度必要になります。 [AEMでの IMS 設定の完了](#completing-the-ims-configuration-in-aem).
 
    ![証明書をダウンロード](assets/integrate-analytics-ims-02.png)
 
@@ -67,13 +67,19 @@ Adobe Developer Console を使用する場合は、Adobe Analytics でプロジ�
 
 Adobe Developer Console を開いて、AEM が使用する Adobe Analytics でプロジェクトを作成します。
 
+>[!CAUTION]
+>
+>現在、Adobe Developer Console の **サービスアカウント (JWT)** 資格情報のタイプ。
+>
+>次を使用しない **OAuth サーバー間通信** 秘密鍵証明書のタイプ。今後サポートされる予定です。
+
 1. Adobe Developer Console を開いて、プロジェクトを表示します。
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
 1. 既に表示されているプロジェクトがすべて表示されます。 **新規プロジェクトの作成**&#x200B;を選択 - 場所と使用方法は、以下に依存します。
 
-   * まだプロジェクトがない場合は、 **新規プロジェクトを作成** 中央、下
+   * まだプロジェクトがない場合は、 **新規プロジェクトを作成** は中央、下です。
      ![新規プロジェクトの作成 - 最初のプロジェクト](assets/integration-analytics-ims-02.png)
    * 既存のプロジェクトがある場合は、それらのプロジェクトがリストされ、 **新規プロジェクトを作成** が右上に表示されます。
      ![新規プロジェクトの作成 - 複数のプロジェクト](assets/integration-analytics-ims-03.png)

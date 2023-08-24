@@ -2,10 +2,10 @@
 title: Adobe Target との統合時に使用する IMS 設定
 description: Adobe Target との統合時に使用する IMS 設定について説明します
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 155b24c4b46e8baebd6215c0717d9f2adde95017
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 90%
+source-wordcount: '883'
+ht-degree: 87%
 
 ---
 
@@ -53,7 +53,7 @@ Target Standard API を介して AEM と Adobe Target を統合するには、Ad
 
    >[!CAUTION]
    >
-   >この設定は開いたままにしておきます。 [AEMでの IMS 設定の完了](#completing-the-ims-configuration-in-aem).
+   >この設定は開いたままにしておき、次の場合に再度必要になります。 [AEMでの IMS 設定の完了](#completing-the-ims-configuration-in-aem).
 
    ![証明書をダウンロード](assets/integrate-target-ims-02.png)
 
@@ -65,13 +65,19 @@ AEM で使用する Adobe Target を組み込んだ Adobe 開発者コンソー�
 
 Adobe 開発者コンソールを開いて、AEM で使用する Adobe Target を組み込んだプロジェクトを作成します。
 
+>[!CAUTION]
+>
+>現在、Adobe Developer Console の **サービスアカウント (JWT)** 資格情報のタイプ。
+>
+>次を使用しない **OAuth サーバー間通信** 秘密鍵証明書のタイプ。今後サポートされる予定です。
+
 1. Adobe Developer Console を開いて、プロジェクトを表示します。
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
 1. 既に表示されているプロジェクトがすべて表示されます。 **新規プロジェクトの作成**&#x200B;を選択 - 場所と使用方法は、以下に依存します。
 
-   * まだプロジェクトがない場合は、 **新規プロジェクトを作成** 中央、下
+   * まだプロジェクトがない場合は、 **新規プロジェクトを作成** は中央、下です。
      ![新規プロジェクトの作成 - 最初のプロジェクト](assets/integration-target-ims-02.png)
    * 既存のプロジェクトがある場合は、それらのプロジェクトがリストされ、 **新規プロジェクトを作成** が右上に表示されます。
      ![新規プロジェクトの作成 - 複数のプロジェクト](assets/integration-target-ims-03.png)
