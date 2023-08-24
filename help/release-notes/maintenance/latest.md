@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: c6186e549a9ef2aebddb4925cf84289aa7f7e662
+source-git-commit: 6b4fa2802b860c938f5085f047cc880f29698f3e
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '708'
 ht-degree: 15%
 
 ---
@@ -60,6 +60,7 @@ ht-degree: 15%
 - FORMS-10444：アダプティブFormsテンプレート — テンプレートを公開できません（回避策：配布コンソールを使用）。
 - CQ-4354191：ワークフロー — カスタムランチャーは、nt:unstructured ノードに存在するレプリケーションメタデータが原因で、何度もトリガーする場合があります（回避策：重複を避けるためにレプリケーションメタデータプロパティを除外するランチャーを更新）。
 - SITES-15622:GraphQL — 数値およびブール値パラメーターを持つ永続的なクエリに関する問題。
+- SITES-15654:GraphQL — 同じ名前の和集合とプロパティに関する問題。
 
 ### 組み込みテクノロジー {#embedded-tech-13206}
 
