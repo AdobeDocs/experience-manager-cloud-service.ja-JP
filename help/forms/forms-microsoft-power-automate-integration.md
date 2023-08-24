@@ -3,10 +3,10 @@ title: アダプティブフォームのデータを接続してMicrosoft&reg; P
 description: アダプティブフォームのデータをMicrosoft&reg; Power Automate に接続して送信するための詳しい手順ガイドです。
 keywords: アダプティブForms Microsoft Power Power 自動化、アダプティブFormsデータをMicrosoft Power Automate に送信
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
+source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 75%
+source-wordcount: '1198'
+ht-degree: 73%
 
 ---
 
@@ -119,7 +119,7 @@ Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接
 1. オーサーインスタンスにログインし、アダプティブフォームを選択して、「**[!UICONTROL プロパティ]**」をクリックします。
 1. 設定コンテナで、「[Microsoft® Power Automate Dataverse クラウド設定を作成](#microsoft-power-automate-dataverse-cloud-configuration)」セクションで作成したコンテナを参照して選択し、「**[!UICONTROL 保存して閉じる]**」をタップします。
 1. 編集用にアダプティブフォームを開き、アダプティブフォームのコンテナプロパティの「**[!UICONTROL 送信]**」セクションに移動します。 
-1. プロパティコンテナで、「**[!UICONTROL 送信アクション]**」 に対して「**[!UICONTROL Power Automate フローの呼び出し]**」オプションを選択します。 使用可能な Power Automate フローのリストが「**[!UICONTROL Power Automate フロー]**」オプションで利用可能になります。 必要なフローを選択すると、送信時にアダプティブフォームデータが送信されます。
+1. プロパティコンテナで、 **[!UICONTROL 送信アクション]** 「 」を選択します。 **[!UICONTROL Power Automate フローを起動]** オプションを選択し、 **[!UICONTROL 電力自動化フロー]**. 必要なフローを選択すると、送信時にアダプティブフォームデータが送信されます。
 
    ![送信アクションの設定](assets/submission.png)
 
