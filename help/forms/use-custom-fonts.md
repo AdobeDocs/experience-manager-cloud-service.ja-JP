@@ -1,11 +1,10 @@
 ---
 title: カスタムフォントを使用
-description: カスタムフォントを使用
-exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
-source-git-commit: 6bca307dcf41b138b5b724a8eb198ac35e2d906e
+description: Formsas a Cloud Service環境にカスタムフォントを追加する方法を説明します。
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 100%
+source-wordcount: '466'
+ht-degree: 97%
 
 ---
 

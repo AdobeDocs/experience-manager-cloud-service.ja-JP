@@ -1,12 +1,11 @@
 ---
 title: 手書き署名を使用したフォームの E 署名
-description: 手書きを使用したフォームへの署名
-seo-description: Signing forms using scribble
+description: 手書き署名と署名ステップを使用してアダプティブFormsに容易に E 署名を行います。 デジタル署名を合理化し、効率を高めます。
 topic-tags: author
-source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 77%
+source-wordcount: '725'
+ht-degree: 75%
 
 ---
 
@@ -76,7 +75,7 @@ ht-degree: 77%
 
    * **CSS クラス**：クライアントライブラリの CSS クラスを指定します（存在する場合）。CSS クラスの代わりに[テーマ](themes.md)や[インラインスタイル](inline-style-adaptive-forms.md)を使用することをお勧めします。
 
-   完了 ![aem_forms_save](assets/aem_forms_save.png) アイコンをタップして、変更を保存します。署名が正常に設定されます。
+   完了 ![aem_forms_save](assets/aem_forms_save.png) アイコンをタップして、変更を保存します。署名が正常に設定されました。
 
    これで、フォームを記入する際に、PDF バージョンのアダプティブフォームが表示され、PDF ドキュメントの署名オプションが提供されます。詳しくは、「[手書き署名を使用したアダプティブフォームの署名](signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature)」を参照してください。
 
