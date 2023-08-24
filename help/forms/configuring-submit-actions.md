@@ -2,10 +2,10 @@
 title: アダプティブフォームの送信アクションの設定方法
 description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自のアクションを作成できます。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
 workflow-type: tm+mt
-source-wordcount: '3178'
-ht-degree: 98%
+source-wordcount: '3388'
+ht-degree: 97%
 
 ---
 
@@ -16,10 +16,9 @@ ht-degree: 98%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | この記事 |
 
-**適用先**:✔️アダプティブフォームの基盤コンポーネント ❌ [アダプティブフォームのコアコンポーネント](/help/forms/configure-submit-actions-core-components.md). Adobeでは、コアコンポーネントを次のように使用することをお勧めします。 [AEM SitesページへのアダプティブFormsの追加](create-or-add-an-adaptive-form-to-aem-sites-page.md) または [スタンドアロンのアダプティブFormsを作成](creating-adaptive-form-core-components.md).
+**適用先**: ✔️アダプティブフォームの基盤コンポーネント。 ❌ [アダプティブフォームのコアコンポーネント](/help/forms/configure-submit-actions-core-components.md). Adobeでは、コアコンポーネントを次のように使用することをお勧めします。 [AEM SitesページへのアダプティブFormsの追加](create-or-add-an-adaptive-form-to-aem-sites-page.md) または [スタンドアロンのアダプティブFormsを作成する](creating-adaptive-form-core-components.md).
 
 送信アクションは、ユーザーがアダプティブフォームの「**[!UICONTROL 送信]**」ボタンをクリックしたするときにトリガーされます。Forms as a Cloud Serviceでは、次の送信アクションが初期設定で提供されています。
-
 
 * [REST エンドポイントへの送信](#submit-to-rest-endpoint)
 * [メールを送信](#send-email)
@@ -28,6 +27,7 @@ ht-degree: 98%
 * [SharePoint に送信](#submit-to-sharedrive)
 * [OneDrive に送信](#submit-to-onedrive)
 * [Azure Blob Storage に送信](#azure-blob-storage)
+* [Power Automate に送信](#microsoft-power-automate)
 
 [デフォルトの送信アクションを拡張](custom-submit-action-form.md)して、独自の送信アクションを作成することもできます。
 
@@ -328,6 +328,19 @@ AEM Forms を Azure ストレージコンテナに接続するには、次の手
 データを保存するフォルダー構造は `/configuration_container/form_name/year/month/date/submission_id/data` です。
 
 設定の値をセットするには、[AEM SDK を使用して OSGi 設定を生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#generating-osgi-configurations-using-the-aem-sdk-quickstart)し、Cloud Service インスタンスに[設定をデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja#deployment-process)します。
+
+## Power Automate に送信 {#submit-to-power-automate}
+
+送信時にMicrosoft® Power Automate Cloud Flow を実行するようにアダプティブフォームを設定できます。 設定済みのアダプティブフォームは、キャプチャされたデータ、添付ファイルおよびレコードのドキュメントを Power Automate クラウドフローに送信して処理します。 Microsoft® Power Automate の機能を活用して、キャプチャされたデータを中心にビジネスロジックを構築し、顧客のワークフローを自動化しながら、カスタムのデータキャプチャエクスペリエンスを構築するのに役立ちます。アダプティブフォームを Microsoft® Power Automated と統合した後に実行できる操作の例を以下に示します。
+
+* Power Automate のビジネスプロセスでアダプティブフォームデータを使用する
+* Power Automate を使用して、500 を超えるデータソースまたは一般公開されている API にキャプチャしたデータを送信する
+* キャプチャしたデータに対する複雑な計算を実行する
+* 事前に定義されたスケジュールでアダプティブフォームのデータをストレージシステムに保存する
+
+アダプティブフォームエディターには「**Microsoft Power Automate フローの呼び出し**」送信アクションが用意されており、アダプティブフォームのデータ、添付ファイル、レコードのドキュメントを Power Automate クラウドフローに送信することができます。送信アクションを使用して、キャプチャしたデータを Microsoft® Power Automate に送信するには、[Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接続](forms-microsoft-power-automate-integration.md)します
+
+設定が正常に完了したら、 [Microsoft® Power Automate フローを起動します。](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) 送信アクションを使用して、Power Automate Flow にデータを送信します。
 
 ## 同期または非同期送信の使用 {#use-synchronous-or-asynchronous-submission}
 
