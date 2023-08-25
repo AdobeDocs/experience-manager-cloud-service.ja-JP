@@ -2,9 +2,9 @@
 title: ユニバーサルエディターを使用したコンテンツのオーサリング
 description: コンテンツ作成者がユニバーサルエディターを使用してコンテンツを作成する際に、簡単で直感的な方法を説明します。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f28b8a85de76a1658ef45c509cbf5600baa1bb3a
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '2267'
 ht-degree: 29%
 
 ---
@@ -224,7 +224,7 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 ### コンポーネントレール {#component-rail}
 
-コンポーネントレールは、エディターの左側に常に表示されます。 モードに応じて、コンテンツ内で選択されたコンポーネントの詳細またはページコンテンツの階層を表示できます。
+コンポーネントレールは、エディターの右側に常に表示されます。 モードに応じて、コンテンツ内で選択されたコンポーネントの詳細またはページコンテンツの階層を表示できます。
 
 ![コンポーネントレール](assets/component-rail.png)
 
