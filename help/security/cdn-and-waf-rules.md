@@ -1,9 +1,9 @@
 ---
 title: トラフィックをフィルタリングするための CDN および WAF ルールの設定
 description: CDN および Web アプリケーションファイアウォールルールを使用した悪意のあるトラフィックのフィルタリング
-source-git-commit: a9b8b4d6029d0975428b9cff04dbbec993d56172
+source-git-commit: 0f1ee0ec5fc2d084a6dfdc65d15a8497c23f11a2
 workflow-type: tm+mt
-source-wordcount: '2371'
+source-wordcount: '2391'
 ht-degree: 2%
 
 ---
@@ -310,17 +310,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
 "rid": "974e67f6",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "host": "example.com",
 "url": "/block-me",
-"req_mthd": "GET",
-"res_type": "",
+"method": "GET",
+"res_ctype": "",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=path-rule;waf=;action=blocked"
 }
 ```
@@ -329,17 +330,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "rid": "974e67f6",
 "host": "example.com",
 "url": "/?sqli=%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20fAPK",
-"req_mthd": "GET",
-"res_type": "image/png",
+"method": "GET",
+"res_ctype": "image/png",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=;waf=SQLI;action=blocked"
 }
 ```
@@ -352,15 +354,16 @@ data:
 |---|---|
 | *timestamp* | TLS 終了後にリクエストが開始した時刻 |
 | *tfb* | の略称 *最初のバイトまでの時間*. リクエストが開始してから、応答本文がストリーミングを開始するまでの時間間隔です。 |
-| *cip* | クライアントの IP アドレス。 |
+| *cli_ip* | クライアントの IP アドレス。 |
+| *cli_country* | 2 文字 [ISO 3166-1](https://ja.wikipedia.org/wiki/ISO_3166-1) 顧客の国コードの alpha-2。 |
 | *rid* | リクエストを一意に識別するために使用されるリクエストヘッダーの値。 |
-| *ua* | 特定の HTTP リクエストを実行するユーザーエージェントです。 |
+| *req_ua* | 特定の HTTP リクエストを実行するユーザーエージェントです。 |
 | *host* | リクエストが意図されている権限。 |
 | *URL* | クエリパラメーターを含む完全パス。 |
-| *req_mthd* | 「GET」や「POST」など、クライアントによって送信される HTTP メソッド。 |
-| *res_type* | リソースの元のメディアタイプを示すために使用される Content-Type |
+| *メソッド* | 「GET」や「POST」など、クライアントによって送信される HTTP メソッド。 |
+| *res_ctype* | リソースの元のメディアタイプを示すために使用される Content-Type です。 |
 | *cache* | キャッシュの状態。 指定できる値は、HIT、MISS、PASS です。 |
-| *res_status* | HTTP ステータスコード（整数値）。 |
-| *res_bsize* | 応答でクライアントに送信された本文のバイト。 |
-| *server* | CDN キャッシュサーバーのデータセンター。 |
+| *status* | HTTP ステータスコード（整数値）。 |
+| *res_age* | 応答が（すべてのノードで）キャッシュされた時間（秒）。 |
+| *ポップ* | CDN キャッシュサーバーのデータセンター。 |
 | *rules* | CDN ルールと waf ルールの両方に対する、一致するルールの名前。<br><br>CDN のヒット、パス、ミスのどれであるかに関係なく、CDN へのすべてのリクエストに対して、一致する CDN ルールがログエントリに表示されます。<br><br>また、一致がブロックになったかどうかも示します。 <br><br>例：`cdn=;waf=SQLI;action=blocked`&quot;<br><br>一致するルールがない場合は空です。 |
