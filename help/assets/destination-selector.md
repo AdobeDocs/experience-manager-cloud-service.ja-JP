@@ -3,10 +3,10 @@ title: AEM as a Cloud Serviceの宛先セレクター
 description: AEMの宛先セレクターを使用して、元のアセットのコピーとして使用できるアセットを表示および選択します。
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: cf783a91d33bc7a42e177ace3ca49844f14a6a79
 workflow-type: tm+mt
-source-wordcount: '1902'
-ht-degree: 35%
+source-wordcount: '1908'
+ht-degree: 36%
 
 ---
 
@@ -40,6 +40,7 @@ Micro-Frontend ユーザーインターフェイスは、宛先セレクター�
 あらゆる [!DNL Adobe] アプリケーションまたはアドビ以外のアプリケーションを [!DNL Experience Manager Assets] as a [!DNL Cloud Service] リポジトリと統合し、アプリケーション内からアセットを選択できます。
 
 統合は、宛先セレクターパッケージを読み込み、Vanilla JavaScript ライブラリを使用して Assets as a Cloud Serviceに接続することでおこなわれます。 次を編集する必要があります： `index.html` またはアプリケーション内の適切なファイルを次の場所に置き換えます。
+
 * 認証の詳細を定義する
 * Assets as a Cloud Service リポジトリにアクセスする
 * 宛先セレクターの表示プロパティの設定
@@ -52,6 +53,7 @@ Micro-Frontend ユーザーインターフェイスは、宛先セレクター�
 ## 前提条件 {#prerequisites}
 
 アプリケーション実装内の `index.html` ファイルまたは同様のファイルで前提条件を定義して、[!DNL Experience Manager Assets] as a [!DNL Cloud Service] リポジトリにアクセスするための認証の詳細を定義します。前提条件は次のとおりです。
+
 * imsOrg
 * imsToken
 * apikey
@@ -62,11 +64,13 @@ Micro-Frontend ユーザーインターフェイスは、宛先セレクター�
 
 **UMD バージョン**&#x200B;を使用しているブラウザー（推奨）：
 
+**UMD バージョン**&#x200B;を使用しているブラウザー（推奨）：
+
 ```
-<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
+<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
 
 <script>
-  const { renderDestinationSelector } = PureJSSelectors;
+  const { renderAssetSelector } = PureJSSelectors;
 </script>
 ```
 
@@ -74,14 +78,14 @@ Micro-Frontend ユーザーインターフェイスは、宛先セレクター�
 
 ```
 <script type="module">
-  import { DestinationSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 </script>
 ```
 
 **ESM CDN バージョン**&#x200B;を使用している Deno/Webpack Module Federation：
 
 ```
-import { DestinationSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 ```
 
 ### 選択した宛先 {#selected-destination}
