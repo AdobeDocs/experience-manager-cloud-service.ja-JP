@@ -2,7 +2,7 @@
 title: エクスペリエンスフラグメント
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントを使用すると、エクスペリエンスの再利用性と柔軟性を高めることができます。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bad2225e7c5f2554ebd51c0e7e737296c3aa552b
 workflow-type: tm+mt
 source-wordcount: '2044'
 ht-degree: 86%
@@ -356,14 +356,18 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
    >**パーソナライゼーション**&#x200B;タブで選択されたこの **ContextHub パス** は、次のいずれかである必要があります。
    >
    >* フラグメントがレンダリングされるページ用に設定されたパスと同じパス
-   >または：
+   >
+   >  または：
+   >
    >* ページ用に設定された ContextHub で定義されたストアのサブセットを含むパス
    >
+   >The **セグメントのパス** 選択された **パーソナライズ** タブは次のいずれかにする必要があります。
    >
-「**パーソナライゼーション**」タブで選択された&#x200B;**セグメントパス**&#x200B;は、次のいずれかである必要があります。
+   >* フラグメントがレンダリングされるページ用に設定されたパスと同じパス
    >
-   * フラグメントがレンダリングされるページ用に設定されたパスと同じです。または
-   * ページ用に設定されたセグメントのサブセットを含むパス
+   >  または
+   >
+   >* ページ用に設定されたセグメントのサブセットを含むパス
 
 ### エクスペリエンスフラグメントのターゲティングの定義 {#defining-targeting-experience-fragment}
 
@@ -390,9 +394,9 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 
    >[!CAUTION]
    >
-   これらのタブは、エクスペリエンスフラグメントコンソールから「**プロパティ**」を開くと表示されます。
+   >これらのタブは、エクスペリエンスフラグメントコンソールから「**プロパティ**」を開くと表示されます。
    >
-   エクスペリエンスフラグメントの編集時に&#x200B;**プロパティを開く**&#x200B;と、適切な[ページのプロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md)が表示されます。
+   >エクスペリエンスフラグメントの編集時に&#x200B;**プロパティを開く**&#x200B;と、適切な[ページのプロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md)が表示されます。
 
    ![エクスペリエンスフラグメントのプロパティ](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -422,7 +426,7 @@ URL の `.plain.` セレクターを使用すると、ブラウザーからプ�
 
 >[!NOTE]
 >
-これはブラウザーから直接入手できますが、 [主な目的は、他のアプリケーション（サードパーティの web アプリ、カスタムモバイル実装など）が URL のみを使用して、エクスペリエンスフラグメントのコンテンツに直接アクセスできるようにすることです](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+>これはブラウザーから直接入手できますが、 [主な目的は、他のアプリケーション（サードパーティの web アプリ、カスタムモバイル実装など）が URL のみを使用して、エクスペリエンスフラグメントのコンテンツに直接アクセスできるようにすることです](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## エクスペリエンスフラグメントの公開 {#publishing-experience-fragments}
 
