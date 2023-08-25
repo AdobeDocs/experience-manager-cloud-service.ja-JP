@@ -1,9 +1,9 @@
 ---
 title: Forms Designer のダウンロードとインストール
 description: Forms Designer を使用して、レコードのドキュメントテンプレートとして機能する XDP および PDF フォームテンプレートを作成できます。Designer は、 [!DNL AEM Forms]  ライセンスで利用できます。
-source-git-commit: 115612a11f43000894c76758b1d2bcb3506f3bcb
+source-git-commit: 3b05d413756a98c034388eb31e752b2448758496
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '304'
 ht-degree: 75%
 
 ---
@@ -16,9 +16,12 @@ Designer は、XDP および PDF フォームテンプレートの作成を簡�
 
 最新バージョンのAEM Forms Designer 64 ビットまたは 32 ビットをインストールするには、次のソフトウェアと最小ハードウェアで Designer をインストールして設定する必要があります。
 
+<!--
 >[!BEGINTABS]
 
->[!TAB 64 ビット OS （推奨）]
+>[!TAB 64-bit OS (Recommended)] -->
+
++++ 64 ビット OS （推奨）
 
 * [!DNL Microsoft® Windows® 2016 Server] または [!DNL Microsoft® Windows® 2019 Server]、および [!DNL Microsoft® Windows® 10]
 * 2 GB 以上の RAM
@@ -31,7 +34,9 @@ Designer は、XDP および PDF フォームテンプレートの作成を簡�
 * Designer をインストールするための管理者権限。
 * [!DNL Microsoft® Visual C++ 2019] （VC 14.28 以降）
 
->[!TAB 32 ビット OS]
++++
+
++++ 32 ビット OS
 
 * [!DNL Microsoft® Windows® 2016 Server] または [!DNL Microsoft® Windows® 2019 Server]、および [!DNL Microsoft® Windows® 10]
 * 最小 1 GB の RAM
@@ -42,10 +47,9 @@ Designer は、XDP および PDF フォームテンプレートの作成を簡�
 * ビデオハードウェアアクセラレーション（オプション）
 * Acrobat Pro DC、Acrobat Standard DC または Adobe Acrobat Reader DC
 * Designer をインストールするための管理者権限。
-* Microsoft® Visual C++ 2019 （VC 14.28 以降）
+* [!DNL Microsoft® Visual C++ 2019] （VC 14.28 以降）
 
->[!ENDTABS]
-
++++
 
 ## Designer のインストール {#install-designer}
 
