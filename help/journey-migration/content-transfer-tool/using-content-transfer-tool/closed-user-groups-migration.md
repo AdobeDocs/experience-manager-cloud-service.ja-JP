@@ -6,7 +6,7 @@ hidefromtoc: true
 source-git-commit: 9da813d39d154e81da5b9814aa86b8318dc0bb3a
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 3%
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="aemcloud_cug_migration"
 >title="クローズドユーザーグループの移行"
->abstract="閉じられたユーザーグループ (CUG) の移行では、現在、移行後に操作を行うために、いくつかのチェックと手順が必要です。"
+>abstract="クローズドユーザーグループ（CUG）の移行では、現在、移行後に運用を確認および実行するいくつかの手順が必要です。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html?lang=ja" text="AEM の閉じられたユーザーグループ"
 
 現在、閉じられたユーザーグループ (CUG) は、移行の宛先環境で機能する追加の手順が必要です。  このドキュメントでは、シナリオと、ノードを意図した方法で保護するために必要な手順について説明します。
