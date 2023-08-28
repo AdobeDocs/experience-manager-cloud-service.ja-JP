@@ -2,10 +2,10 @@
 title: Cloud Manager の概要
 description: プログラム、環境、パイプラインを通じて、Cloud Manager がどのように AEM プロジェクトをサポートするかについて説明します。
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: fe2b0eab36a3ecd6c731fe8c9ac23fd4a3175341
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 82%
+source-wordcount: '861'
+ht-degree: 80%
 
 ---
 
@@ -51,10 +51,12 @@ Cloud Manager は、AEM as a Cloud Service に不可欠なコンポーネント�
 | 個人用アクセストークンの生成 | Git へのアクセス |  | x |  | x |
 | RDE を作成 | 迅速な開発環境の作成 | x |  |  | x |
 | RDE をリセット | 迅速な開発環境のリセット | x |  |  | x |
+| コンテンツセットの作成/変更 | コンテンツコピー用のコンテンツセットを作成または変更する |  | × |  |  |
+| コンテンツのコピーを開始/キャンセル | コンテンツコピープロセスを開始またはキャンセルする |  | × |  |  |
 
 >[!NOTE]
 >
->1 人のユーザーを複数の役割に割り当てることができます。例： **ビジネスオーナー** および **デプロイメントマネージャー** ユーザーに対する役割は、ユーザーにこれらの権限の合計を提供します。
+>1 人のユーザーを複数の役割に割り当てることができます。例えば、 **ビジネスオーナー** および **デプロイメントマネージャー** ユーザーに対する役割は、ユーザーにこれらの権限の合計を提供します。
 
 ## Cloud Manager プログラム {#cloud-manager-programs}
 
@@ -83,7 +85,7 @@ Cloud Manager プログラムの使用方法について詳しくは、こちら
 
 >[!TIP]
 >
-> ビデオを見る [AdobeCloud Manager 環境の使用](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=ja) 使用可能な環境の概要。
+> ビデオを見る [AdobeCloud Manager 環境の使用](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=ja) 使用可能な環境の概要です。
 >
 >詳しくは、 [環境の管理](/help/implementing/cloud-manager/manage-environments.md) ユーザーが作成できる環境のタイプと、環境の作成方法について詳しく説明します。
 
