@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
+source-git-commit: 49d1e002f22427d8ffc6c5bdecd054c10eac47b9
 workflow-type: tm+mt
-source-wordcount: '4249'
+source-wordcount: '4252'
 ht-degree: 96%
 
 ---
@@ -519,6 +519,7 @@ ht-degree: 96%
       + [サポートされているファイルタイプとユースケース](/help/assets/supported-file-formats-assets-view.md)
       + [アセットの表示](/help/assets/navigate-assets-view.md)
       + [アセットのアップロードと追加](/help/assets/add-delete-assets-view.md)
+      + [アセットの一括読み込み](/help/assets/bulk-import-assets-view.md)
       + [アセットの検索と検出](/help/assets/search-assets-view.md)
       + [アセット管理タスク](/help/assets/manage-organize-assets-view.md)
       + [画像の編集](/help/assets/edit-images-assets-view.md)

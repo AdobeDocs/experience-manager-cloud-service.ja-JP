@@ -2,10 +2,10 @@
 title: New Relic One
 description: AEM as a Cloud Service の New Relic One アプリケーションパフォーマンスモニタリング（APM）サービスと、そのサービスへのアクセス方法について説明します。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: f695bc891b60d2494b936a43f5c0a729c64628d7
+source-git-commit: 1608a44b8c9b5ae6bd75307ecb29dcd8f0ff367f
 workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 77%
+source-wordcount: '1586'
+ht-degree: 79%
 
 ---
 
@@ -120,7 +120,7 @@ New Relic One へのログイン中にご利用のメールを確認するよう
 
 ## New Relic One アクセスのトラブルシューティング {#troubleshooting}
 
-[New Relic One ユーザーの管理](#manage-users)のセクションで説明しているように New Relic One ユーザーとして追加され、元のアカウント確認メールが見つからない場合は、次の手順に従ってください。
+の節の説明に従ってNew Relic Oneユーザーとして追加された場合 [New Relic Oneユーザーの管理](#manage-users) 元のアカウント確認メールが見つからず、次の手順に従ってください。
 
 1. [`login.newrelic.com/login`](https://login.newrelic.com/login) にある New Relic のログインページに移動します。
 
@@ -149,12 +149,6 @@ New Relic One にユーザーを追加する場合は、次の制限が適用さ
 * 最大 30 人のユーザーを追加できます。ユーザーの最大数に達した場合、新しいユーザーを追加できるように、ユーザーを削除します。
 * New Relicに追加されるユーザーは、タイプがです **制限**&#x200B;を参照してください。 [詳しくは、 New Relicのドキュメントを参照してください。](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
 * AEM as a Cloud Service は New Relic One APM ソリューションのみを提供し、アラート、ログ、API 統合のサポートは提供していません。
-
->[!NOTE]
->
->New Relic Oneアカウントで 90 日以上アクティビティが検出されなかった場合、APM エージェントは停止します。
->
->サポートチケットを開いて、 [AEM Support Portal](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) AEMaaCS 環境用に APM エージェントを再度有効にする場合。
 
 AEM as a Cloud Serviceプログラム向けのNew Relic One製品に関するその他のヘルプまたはガイダンスについては、 [AEM Support Portal](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html).
 
@@ -195,7 +189,3 @@ Adobeサポートは、New Relic Oneや他の社内ツールをサービスの�
 >[!NOTE]
 >
 >New Relic One 内で両方のデータセットを表示するには、ユーザーが適切な権限を持ち、両方のアカウント（Adobe New Relic One と顧客管理の New Relic アカウント）に同じログイン方法を使用する必要があります。
-
-### New Relic Oneアカウントの APM エージェントが停止しました。 何が起こったの？ {#deactivated}
-
-[APM エージェントが停止しています](#limitations) 90 日以上アクティビティが検出されなかった場合。 サポートチケットを開いて、 [AEM Support Portal](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) AEMaaCS 環境用に APM エージェントを再度有効にする場合。
