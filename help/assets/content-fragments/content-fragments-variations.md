@@ -2,10 +2,10 @@
 title: バリエーション - フラグメントコンテンツのオーサリング（アセット - コンテンツフラグメント）
 description: フラグメントのコンテンツを作成し、目的に応じてそのコンテンツのバリエーションを作成できるようにすることで、バリエーションによって AEM でのヘッドレスコンテンツの柔軟性をさらに高める方法を説明します。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 9a7087979831ac08aed5f93df024f1c835a9fc08
 workflow-type: tm+mt
-source-wordcount: '2435'
-ht-degree: 78%
+source-wordcount: '2516'
+ht-degree: 77%
 
 ---
 
@@ -391,8 +391,33 @@ ht-degree: 78%
    >[!CAUTION]
    >
    別のフラグメントへの参照を追加した後に、形式を変更すると次のようになります。
+   >
    * **プレーンテキスト**：参照がフラグメントから完全に失われます。
    * **Markdown**：参照は残ります。
+
+## 継承 {#inheritance}
+
+継承とは、コンテンツをフラグメント間で自動的にプッシュできるメカニズムです。 継承されたフィールドとバリエーションは、 [マルチサイト管理](/help/assets/content-fragments/content-fragments.md#reusing-content-fragments-with-msm-assets).
+
+継承はキャンセル（その後再度有効化）できます。フラグメントがライブコピーの一部である場合は、コンテキストに応じて、これをバリエーションに対して使用できます。個々のフィールドに対して使用することもできます。
+
+![継承関係を示すコンテンツフラグメント](/help/assets/content-fragments/assets/cfm-variations-inheritance.png)
+
+次に例を示します。
+
+* 継承をキャンセル
+
+  ![継承のキャンセルボタン](/help/assets/content-fragments/assets/editing-cancel-inheritance.png)
+
+* 継承を再度有効にする（既に継承がキャンセルされている場合）
+
+  ![継承再有効化ボタン](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
+
+<!--
+* Rollout action is also available in Live Copy source
+
+  ![Rollout button](/help/assets/content-fragments/assets/editing-rollout.png)
+-->
 
 ## バリエーションの管理 {#managing-variations}
 
