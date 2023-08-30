@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
+source-git-commit: 069103e7a82123bff28b4aa6e9d718c12e8496e3
 workflow-type: tm+mt
-source-wordcount: '5162'
-ht-degree: 95%
+source-wordcount: '5372'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,7 @@ AEM は次のユースケースをサポートしています。この記事で�
 | [制限事項](#limitations)と[ヒント](#tips) | | |
 | [例を使った説明](#samples) | | |
 
-[!DNL Experience Manager] Web インターフェイスの上部にあるオムニサーチフィールドを使用して、アセットを検索します。[!DNL Experience Manager] で&#x200B;**[!UICONTROL アセット]**／**[!UICONTROL ファイル]**&#x200B;に移動し、上部バーの検索アイコン ![search_icon](assets/do-not-localize/search_icon.png) をクリックし、検索キーワードを入力して、`Return` を選択します。または、キーワードショートカット `/`（スラッシュ）を使用して、オムニサーチフィールドを開きます。`Location:Assets` が事前に選択されており、DAM アセットの検索に制限されています。`Path:/content/dam` また、 **[!UICONTROL ファイル]** フォルダー。 他のフォルダーに移動する場合は、 `Path:/content/dam/<folder name>` をオムニサーチフィールドに表示して、検索範囲を現在のフォルダーに限定します。 [!DNL Experience Manager] 検索キーワードの入力中に候補が表示されます。
+[!DNL Experience Manager] Web インターフェイスの上部にあるオムニサーチフィールドを使用して、アセットを検索します。[!DNL Experience Manager] で&#x200B;**[!UICONTROL アセット]**／**[!UICONTROL ファイル]**&#x200B;に移動し、上部バーの検索アイコン ![search_icon](assets/do-not-localize/search_icon.png) をクリックし、検索キーワードを入力して、`Return` を選択します。または、キーワードショートカット `/`（スラッシュ）を使用して、オムニサーチフィールドを開きます。`Location:Assets` が事前に選択されており、DAM アセットの検索に制限されています。`Path:/content/dam` また、は、 **[!UICONTROL ファイル]** フォルダー。 他のフォルダーに移動する場合は、 `Path:/content/dam/<folder name>` をオムニサーチフィールドに表示して、検索範囲を現在のフォルダーに限定します。 [!DNL Experience Manager] 検索キーワードの入力中に候補が表示されます。
 
 アセット、フォルダー、タグおよびメタデータを検索するには、**[!UICONTROL フィルター]**&#x200B;パネルを使用します。ファイルタイプ、ファイルサイズ、最終変更日、アセットのステータス、インサイトデータ、Adobe Stock ライセンスなどの、様々なオプション（述部）に基づいて検索結果をフィルタリングできます。フィルターパネルをカスタマイズし、[検索ファセット](/help/assets/search-facets.md)を使用して検索述語を追加したり、削除したりすることができます。[!UICONTROL フィルター]パネルの[!UICONTROL ファイルタイプ]フィルターには、状態が混在したチェックボックスがあります。したがって、すべてのネストされた述語（またはフォーマット）を選択しない限り、第 1 レベルのチェックボックスは部分的にチェックされています。
 
@@ -61,7 +61,21 @@ AEM は次のユースケースをサポートしています。この記事で�
 
 *図：検索ファセットで検索結果をフィルタリングしない場合のアセット概数の表示*
 
-## 入力に応じて提示される検索候補 {#searchsuggestions}
+Experience Manager Assetsには、デフォルトで、2 つのプロパティのファセット数が表示されます。
+
+* アセットタイプ (jcr:content/metadata/dc:format)
+
+* 承認ステータス (jcr:content/metadata/dam:status)
+
+2023 年 8 月の時点で、Experience Manager Assetsにはの新しいバージョン 9 が含まれます。 `damAssetLucene` インデックス。 以前のバージョンの `damAssetLucene-8` 以下で、 `statistical` 各検索ファセット数の項目のサンプルに対するアクセス制御を確認するモード。
+
+`damAssetLucene-9` は、Oak クエリファセットのカウントの動作を変更し、基になる検索インデックスによって返されるファセット数のアクセス制御を評価しなくなり、検索応答時間が短縮されます。 その結果、ユーザーにファセット数の値が表示され、アクセス権のないアセットが含まれる場合があります。 これらのユーザーは、アセットの詳細（パスを含む）へのアクセス、ダウンロード、読み取り、またはアセットに関する詳細情報の取得をおこなうことができません。
+
+前の動作に切り替える必要がある場合 (`statistical` モード )、詳しくは、 [コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=ja) のカスタムバージョンを作成するには、以下を実行します。 `damAssetLucene-9` インデックス。 Adobeでは、 `secure` モードを変更する必要があります。
+
+Oak のファセット機能の詳細（これらのモードの詳細な説明など）については、 [この記事](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
+
+## 入力に応じた検索候補 {#searchsuggestions}
 
 キーワードの入力を開始すると、可能な検索キーワードまたは語句が候補として提示されます。候補は Experience Manager 内のアセットに基づいています。Experience Manager では、検索に役立つすべてのメタデータフィールドのインデックスを作成します。検索候補を提示するために、以下のいくつかのメタデータフィールドの値が使用されます。検索候補の提示を行う場合は、次のフィールドに適切なキーワードを入力することを検討してください。
 
@@ -458,15 +472,15 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 ### バージョンを作成します。 {#create-version}
 
-検索結果に表示されるアセットのバージョンを作成します。 アセットを選択し、 **[!UICONTROL 作成]** > **[!UICONTROL バージョン]**. オプションのラベルまたはコメントを追加し、「 **[!UICONTROL 作成]**. また、複数のアセットを選択して、それらのアセットのバージョンを同時に作成することもできます。
+検索結果に表示されるアセットのバージョンを作成します。アセットを選択し、**[!UICONTROL 作成]**／**[!UICONTROL バージョン]**&#x200B;をクリックします。オプションのラベルまたはコメントを追加し、「**[!UICONTROL 作成]**」をクリックします。また、複数のアセットを選択して、それらのアセットのバージョンを同時に作成することもできます。
 
-### ワークフローの作成 {#create-workflow}
+### ワークフローを作成 {#create-workflow}
 
-「バージョンを作成」機能と同様に、検索結果に表示されるアセットのワークフローを作成することもできます。 アセットを選択し、 **[!UICONTROL 作成]** > **[!UICONTROL ワークフロー]**. ワークフローモデルを選択し、ワークフローのタイトルを指定して、「 **[!UICONTROL 開始]**.
+バージョンの作成機能と同様に、検索結果に表示されるアセットのワークフローを作成することもできます。アセット（複数も可）を選択し、**[!UICONTROL 作成]**／**[!UICONTROL ワークフロー]**&#x200B;をクリックします。ワークフローモデルを選択し、ワークフローのタイトルを指定して、「**[!UICONTROL 開始]**」をクリックします。
 
-### アセットの関連付けと関連付け解除 {#relate-unrelate-assets}
+### 関連付けと関連付け解除 {#relate-unrelate-assets}
 
-検索結果に表示されるアセットの関連付けと関連付け解除 アセットを選択し、 **[!UICONTROL 関連付け]** または **[!UICONTROL 関連付けを解除]**.
+検索結果に表示されるアセットの関連付けと関連付け解除を実行します。アセット（複数も可）を選択し、「**[!UICONTROL 関連付け]**」または「**[!UICONTROL 関連付け解除]**」をクリックします。
 
 ### アセットフォルダーの場所に移動します {#navigate-asset-folder-location}
 
