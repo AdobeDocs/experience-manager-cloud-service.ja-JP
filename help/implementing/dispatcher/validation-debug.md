@@ -3,10 +3,10 @@ title: Dispatcher ツールを使用した検証とデバッグ
 description: ローカル検証、デバッグ、柔軟なモードのファイル構造、およびレガシーモードから柔軟なモードに移行する方法について説明します。
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: fccce4fed057b9cf20825bce043b3ec95c3a5ab8
 workflow-type: tm+mt
-source-wordcount: '2860'
-ht-degree: 55%
+source-wordcount: '2988'
+ht-degree: 53%
 
 ---
 
@@ -107,6 +107,28 @@ ServerAlias に一致する 1 つ以上の仮想ホストが常に使用可能�
 </VirtualHost>
 ```
 
+* `conf.d/enabled_vhosts/<CUSTOMER_CHOICE>.vhost`
+
+このフォルダーには、conf.dispatcher.d/available_vhosts の下にあるファイルへの相対シンボリックリンクが含まれています。
+
+これらのシンボリックリンクの作成に必要なコマンドの例：
+
+Apple® macOS、Linux、WSL
+
+```
+ln -s ../available_vhosts/wknd.vhost wknd.vhost
+```
+
+Microsoft® Windows
+
+```
+mklink wknd.vhost ..\available_vhosts\wknd.vhost
+```
+
+>[!NOTE]
+>
+> Windows の下でシンボリックリンクを使用する場合は、管理者権限のコマンドプロンプト、Windows Subsystem for Linux でを実行するか、 [シンボリックリンクを作成する](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) 権限が割り当てられました。
+
 * `conf.d/rewrites/rewrite.rules`
 
 ファイルは、 `.vhost` ファイル。 `mod_rewrite` には一連の書き換えルールがあります。
@@ -122,6 +144,28 @@ ServerAlias に一致する 1 つ以上の仮想ホストが常に使用可能�
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
 これらのファイルは 1 つ以上持つことができます。ファイルにはホスト名と一致するファームが含まれ、Dispatcher モジュールに異なるルールで各ファームを処理することを可能にします。ファイルは `available_farms` ディレクトリ内に作成され、`enabled_farms` ディレクトリ内のシンボリックリンクで有効になります。次から： `.farm` ファイル、フィルター、キャッシュルールなどのその他のファイルが含まれます。
+
+* `conf.dispatcher.d/enabled_farms/<CUSTOMER_CHOICE>.farm`
+
+このフォルダーには、conf.dispatcher.d/available_farms の下にあるファイルへの相対シンボリックリンクが含まれています。
+
+これらのシンボリックリンクの作成に必要なコマンドの例：
+
+Apple® macOS、Linux、WSL
+
+```
+ln -s ../available_farms/wknd.farm wknd.farm
+```
+
+Microsoft® Windows
+
+```
+mklink wknd.farm ..\available_farms\wknd.farm
+```
+
+>[!NOTE]
+>
+> Windows の下でシンボリックリンクを使用する場合は、管理者権限のコマンドプロンプト、Windows Subsystem for Linux でを実行するか、 [シンボリックリンクを作成する](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) 権限が割り当てられました。
 
 * `conf.dispatcher.d/cache/rules.any`
 
