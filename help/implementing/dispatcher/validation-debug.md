@@ -3,9 +3,9 @@ title: Dispatcher ツールを使用した検証とデバッグ
 description: ローカル検証、デバッグ、柔軟なモードのファイル構造、およびレガシーモードから柔軟なモードに移行する方法について説明します。
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: fccce4fed057b9cf20825bce043b3ec95c3a5ab8
+source-git-commit: 4a79284d879af1920c839a68be14619d1e35f7e9
 workflow-type: tm+mt
-source-wordcount: '2988'
+source-wordcount: '2990'
 ht-degree: 53%
 
 ---
@@ -113,13 +113,13 @@ ServerAlias に一致する 1 つ以上の仮想ホストが常に使用可能�
 
 これらのシンボリックリンクの作成に必要なコマンドの例：
 
-Apple® macOS、Linux、WSL
+Apple macOS、Linux および WSL
 
 ```
 ln -s ../available_vhosts/wknd.vhost wknd.vhost
 ```
 
-Microsoft® Windows
+Microsoft Windows
 
 ```
 mklink wknd.vhost ..\available_vhosts\wknd.vhost
@@ -151,13 +151,13 @@ mklink wknd.vhost ..\available_vhosts\wknd.vhost
 
 これらのシンボリックリンクの作成に必要なコマンドの例：
 
-Apple® macOS、Linux、WSL
+Apple macOS、Linux および WSL
 
 ```
 ln -s ../available_farms/wknd.farm wknd.farm
 ```
 
-Microsoft® Windows
+Microsoft Windows
 
 ```
 mklink wknd.farm ..\available_farms\wknd.farm
