@@ -7,7 +7,7 @@ content-type: reference
 feature: Accessibility
 role: Admin,User
 exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
-source-git-commit: 0d3262a3182063e69f764339e7937e2f83ad7bbb
+source-git-commit: 483a72f67f361023ebeefa3d74ec9f35a5f4f765
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 100%
@@ -36,7 +36,7 @@ Dynamic Media の個々のユーザーインターフェイス要素でサポー
 
 <!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (Experience Manager 6.5) or Coral Spectrum (in Skyline)) as entire Experience Manager Assets.  -->
 
-<!-- In the Hotspot editor, Dynamic Media lets you use arrow keys to control the position of a hot spot. See [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md##adding-hotspots-or-image-maps-to-an-image-banner) or [Interactive Images](/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner)  -->
+<!-- In the Hotspot editor, Dynamic Media lets you use arrow keys to control the position of a hot spot. See [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner) or [Interactive Images](/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner)  -->
 
 <!-- I think we should definitely mention this in the DM-specific area of documentation for keyboard support. -->
 
@@ -67,4 +67,3 @@ Dynamic Media では、クローズドキャプションを使用したビデオ
 >
 >* [アドビソリューションのアクセシビリティ](https://www.adobe.com/accessibility.html)
 >* [Adobe Experience Manager Assets でのアクセシビリティ](/help/assets/dynamic-media/accessibility-dm.md)
-
