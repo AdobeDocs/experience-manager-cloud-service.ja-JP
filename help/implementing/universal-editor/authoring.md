@@ -2,7 +2,7 @@
 title: ユニバーサルエディターを使用したコンテンツのオーサリング
 description: コンテンツ作成者がユニバーサルエディターを使用してコンテンツを作成する際に、簡単で直感的な方法を説明します。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: f28b8a85de76a1658ef45c509cbf5600baa1bb3a
+source-git-commit: 4cf7d3692b53e5cb5baecd7d0ee93824d9186380
 workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 29%
@@ -346,7 +346,7 @@ When in [コンポーネントモード](#component-mode) を選択し、 [コ�
 
 ### コンテンツフラグメントの編集 {#edit-content-fragment}
 
-次の場所にいる場合： [コンポーネントモード](#component-mode) をクリックし、 [コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md) 詳細は、コンポーネントパネルで編集できます。
+次の場所にいる場合： [コンポーネントモード](#component-mode) をクリックし、 [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md) 詳細は、コンポーネントパネルで編集できます。
 
 ![コンテンツフラグメントの編集](assets/ue-edit-cf.png)
 
@@ -354,7 +354,7 @@ When in [コンポーネントモード](#component-mode) を選択し、 [コ�
 
 変更はコンテンツに自動的に保存されます。
 
-コンテンツフラグメントを [コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) 代わりに、 [編集ボタン](#edit) 」をクリックします。
+コンテンツフラグメントを [コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md) 代わりに、 [編集ボタン](#edit) 」をクリックします。
 
 ### コンテナへのコンポーネントの追加 {#adding-components}
 
