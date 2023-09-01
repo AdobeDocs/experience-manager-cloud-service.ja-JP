@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: c63f621f2526f05c8555acdac77a4c05a473c95d
+source-git-commit: 2f3845495b545f88a1bc5a5feef1a6312f679a26
 workflow-type: tm+mt
-source-wordcount: '4481'
-ht-degree: 96%
+source-wordcount: '4501'
+ht-degree: 95%
 
 ---
 
@@ -91,6 +91,11 @@ ZIP ファイルを抽出するには、次の手順を実行します。
 1. クリック **[!UICONTROL 抽出]**. Zip 抽出プロセスが開始します。 処理が完了したら、抽出したアセットを保存先フォルダーに表示できます。
 
    ![zip 抽出](assets/zip-extraction.png)
+
+>[!NOTE]
+>
+>* サポートされる ZIP ファイルの最大サイズは 15 GB です。
+>* 一度に抽出できる ZIP ファイルは最大 3 つです。
 
 ## アセットのプレビュー {#previewing-assets}
 
