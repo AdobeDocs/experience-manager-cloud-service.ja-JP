@@ -2,10 +2,10 @@
 title: AEM as a Headless CMS のコンテンツモデリング：概要
 description: Adobe Experience Manager as a Cloud Service as a Headless CMS の機能を使用して、プロジェクトのコンテンツをモデル化する方法を紹介します。
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: d280bcfa7e4fe297952309a94bc0229d08fd5f9c
+source-git-commit: 03cf688168106f71f2df2511782be7c1f3cc0dae
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 92%
+source-wordcount: '749'
+ht-degree: 91%
 
 ---
 
@@ -82,8 +82,8 @@ Adobe Experience Manager （AEM）as a Cloud Service では、AEM GraphQL API �
    * [CMS ヘッドレス開発について](/help/journey-headless/developer/learn-about.md)
    * [コンテンツをモデル化する方法](/help/journey-headless/developer/model-your-content.md)
 
-<!--
-* [Introduction to AEM as a Headless CMS](/help/headless/introduction.md)
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [Tutorials for Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
--->
+* [AEM as a Headless CMS の概要](/help/headless/introduction.md)
+
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
+
+* [AEM のヘッドレスに関するチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja)
