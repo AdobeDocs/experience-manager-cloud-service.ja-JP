@@ -2,7 +2,7 @@
 title: AEM でのコンテンツフラグメントモデルの作成について
 description: コンテンツフラグメントモデルを使用したヘッドレス CMS のコンテンツモデリングの概念と仕組みについて説明します。
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 84%
@@ -63,7 +63,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ![フィールドの定義](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-データ型を追加した後、 **プロパティ** そのフィールドの プロパティは、使用するタイプによって異なります。次に例を示します。
+データ型を追加した後、 **プロパティ** そのフィールドに対して プロパティは、使用するタイプによって異なります。次に例を示します。
 
 ![データプロパティ](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -112,23 +112,23 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 * [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md) - このページは主に **Sites** コンソールに基づいていますが、ほとんどの機能は&#x200B;**一般**&#x200B;コンソールでの&#x200B;**コンテンツフラグメントモデル**&#x200B;への移動やアクションの実行にも関連しています。
 
-* [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [コンテンツフラグメントモデルの定義](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
+      * [コンテンツフラグメントモデルの定義](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#defining-your-content-fragment-model)
 
-      * [コンテンツフラグメントモデルの有効化または無効化](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+      * [コンテンツフラグメントモデルの有効化または無効化](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [アセットフォルダーでのコンテンツフラグメントモデルの許可](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [アセットフォルダーでのコンテンツフラグメントモデルの許可](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
-      * [コンテンツフラグメントモデルの削除](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
+      * [コンテンツフラグメントモデルの削除](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#deleting-a-content-fragment-model)
 
-      * [コンテンツフラグメントモデルの公開](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
+      * [コンテンツフラグメントモデルの公開](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#publishing-a-content-fragment-model)
 
-      * [コンテンツフラグメントモデルを非公開にする](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+      * [コンテンツフラグメントモデルを非公開にする](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#unpublishing-a-content-fragment-model)
 
-      * [ロック済み（公開済み）コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
+      * [ロック済み（公開済み）コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#locked-published-content-fragment-models)
 
 * はじめる前に
 

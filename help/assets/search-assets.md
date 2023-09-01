@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 069103e7a82123bff28b4aa6e9d718c12e8496e3
+source-git-commit: fb70abb2aa698303c462e38ad3bec10d028f804e
 workflow-type: tm+mt
-source-wordcount: '5372'
-ht-degree: 94%
+source-wordcount: '5532'
+ht-degree: 91%
 
 ---
 
@@ -137,6 +137,20 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *ビデオ：検索結果のランク付けの方法とランクへの影響について*
+
+## 検索結果を表示するためのアセットのバッチサイズの設定 {#configure-asset-batch-size}
+
+管理者は、検索の実行時に表示されるアセットのバッチサイズを設定できるようになりました。 アセット検索結果をさらに下にスクロールして結果を読み込むと、設定したバッチサイズの数倍の値でアセット検索結果が表示されます。 200、500、1,000 個のアセットの使用可能なバッチサイズから選択できます。 バッチサイズを小さく設定すると、検索応答時間が短縮されます。
+
+例えば、結果数の上限を 200 アセットのバッチサイズに設定した場合、Experience Manager Assetsで検索を開始すると、検索結果に 200 アセットのバッチサイズが表示されます。 下にスクロールして検索結果間を移動すると、200 個のアセットの次のバッチが表示されます。 検索クエリに一致するすべてのアセットが表示されるまで、処理は続行されます。
+
+アセットのバッチサイズを設定するには：
+
+1. に移動します。 **[!UICONTROL ツール]** > **[!UICONTROL Assets]** > **[!UICONTROL アセット設定]** > **[!UICONTROL アセットのオムニサーチ設定]**.
+
+1. 結果数の制限を選択し、 **[!UICONTROL 保存]**.
+
+   ![Assets のバッチサイズ設定](/help/release-notes/assets/assets-batch-size-configuration.png)
 
 ## 詳細検索 {#scope}
 

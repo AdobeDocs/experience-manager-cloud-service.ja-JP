@@ -1,17 +1,17 @@
 ---
-title: アダプティブフォームのデータを接続してMicrosoft&reg; Power Automate に送信する方法
-description: アダプティブフォームのデータをMicrosoft&reg; Power Automate に接続して送信するための詳しい手順ガイドです。
-keywords: アダプティブForms Microsoft Power Power 自動化、アダプティブFormsデータをMicrosoft Power Automate に送信
+title: アダプティブフォームをMicrosoft&reg; Power Automate と統合する
+description: アダプティブフォームをMicrosoft&reg; Power Automate と統合します。
+hide: true
+hidefromtoc: true
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '1198'
-ht-degree: 73%
+source-wordcount: '1173'
+ht-degree: 79%
 
 ---
 
-
-# アダプティブフォームデータをMicrosoft® Power Automate に接続して送信する {#connect-adaptive-form-with-power-automate}
+# アダプティブフォームと Microsoft® Power Automate の接続 {#connect-adaptive-form-with-power-automate}
 
 送信時に Microsoft® Power Automate のクラウドフローを実行するように、アダプティブフォームを設定できます。設定済みのアダプティブフォームは、キャプチャされたデータ、添付ファイルおよびレコードのドキュメントを Power Automate クラウドフローに送信して処理します。 Microsoft® Power Automate の機能を活用して、キャプチャされたデータを中心にビジネスロジックを構築し、顧客のワークフローを自動化しながら、カスタムのデータキャプチャエクスペリエンスを構築するのに役立ちます。アダプティブフォームを Microsoft® Power Automated と統合した後に実行できる操作の例を以下に示します。
 
@@ -26,8 +26,8 @@ ht-degree: 73%
 
 アダプティブフォームを Microsoft® Power Automate に接続するには、以下が必要です。
 
-* Microsoft® Power Automate Premium ライセンス
-* Microsoft® [電力自動化フロー](https://docs.microsoft.com/ja-jp/power-automate/create-flow-solution) と `When an HTTP request is received` アダプティブフォームの送信データを受け入れるトリガー
+* Microsoft® Power Automate Premium ライセンス。
+* アダプティブフォームの送信データを受け入れるための `When an HTTP request is received` トリガーを使用した Microsoft® [Power Automate フロー](https://docs.microsoft.com/ja-jp/power-automate/create-flow-solution)。
 * 次を持つExperience Managerユーザー [Forms Author](/help/forms/forms-groups-privileges-tasks.md) および [Forms Admin](/help/forms/forms-groups-privileges-tasks.md) 権限
 * Microsoft® Power Automate に接続するために使用されるアカウントは、アダプティブフォームからデータを受け取るように設定された Power Automate フローの所有者です
 
@@ -80,7 +80,8 @@ Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接
 1. AEM Forms のオーサーインスタンスで、**[!UICONTROL ツール]** ![ハンマー](assets/hammer.png)／**[!UICONTROL 一般]**／**[!UICONTROL 設定ブラウザー]**&#x200B;に移動します。
 1. **[!UICONTROL 設定ブラウザー]**&#x200B;ページで「**[!UICONTROL 作成]**」をタップします。
 1. **[!UICONTROL 設定を作成]**&#x200B;ダイアログで、設定の&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定し、「**[!UICONTROL クラウド設定]**」を有効にして「**[!UICONTROL 作成]**」をタップします。これにより、Cloud Services 用の設定コンテナが作成されます。フォルダー名にスペースが含まれていないことを確認します。
-1. に移動します。 **[!UICONTROL ツール]** ![ハンマー](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft®® Power Automate Dataverse]** をクリックし、前の手順で作成した設定コンテナを開きます。
+1. **[!UICONTROL ツール]**![ハンマー](assets/hammer.png) ／**[!UICONTROL Cloud Services]**／**[!UICONTROL Microsoft® Power Automate Dataverse]** に移動し、前の手順で作成した設定コンテナを開きます。
+
 
    >[!NOTE]
    >
@@ -97,9 +98,11 @@ Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接
 
 1. に移動します。 **[!UICONTROL ツール]** ![ハンマー](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft®® Power Automate Flow Service]** をクリックし、前の節で作成した設定コンテナを開きます。
 
+
    >[!NOTE]
    >
    アダプティブフォームを作成する際に、**[!UICONTROL 設定コンテナ]**&#x200B;フィールドにコンテナ名を指定します。
+
 1. 設定ページで「**[!UICONTROL 作成]**」をタップして、AEM Forms 内に [!DNL Microsoft®® Power Automate Flow Service] の設定を作成します。
 1. 次の日： **[!UICONTROL Microsoft®® Power Automate の Dataverse の設定]** ページで、 **[!UICONTROL クライアント ID]** （アプリケーション ID とも呼ばれます）。 **[!UICONTROL クライアントの秘密鍵]**, **[!UICONTROL OAuth URL]** および **[!UICONTROL 動的環境 URL]**. クライアント ID、クライアントシークレット、OAuth URL、Dynamics 環境 ID を使用します。 Microsoft® Azure Active Directory アプリケーション UI の「エンドポイント」オプションを使用して、OAuth URL を検索します。 [マイフロー](https://us.flow.microsoft.com)リンクを開いて「マイフロー」をタップし、URL にリストされている ID を Dynamics 環境 ID として使用します。
 1. 「**[!UICONTROL 接続]**」をタップします。 必要に応じて、Microsoft® Azure アカウントにログインします。 「**[!UICONTROL 保存]**」をタップします。

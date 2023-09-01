@@ -3,10 +3,10 @@ title: AEM での GraphQL の使用方法 - サンプルコンテンツとサン
 description: GraphQLをAEMと共に使用して、サンプルコンテンツやクエリを参照することで、コンテンツをヘッドレスに提供できるようにする方法を学びます。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1752'
-ht-degree: 78%
+ht-degree: 83%
 
 ---
 
@@ -18,8 +18,8 @@ GraphQLをAEMと共に使用して、サンプルコンテンツやクエリを�
 >
 >このページには、以下の情報も含まれています。
 >
->* [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md)
->* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+>* [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)
+>* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 >* [コンテンツフラグメントと共に使用する AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 
 GraphQLクエリの概要とAEMコンテンツフラグメントの操作方法を学ぶには、実用的な例をいくつか見るのに役立ちます。
@@ -41,7 +41,7 @@ GraphQLクエリの概要とAEMコンテンツフラグメントの操作方法�
 
 >[!NOTE]
 >
->インスタンスに応じて、 [AEM GraphQL API に含まれる GraphiQL インターフェイス](/help/headless/graphql-api/graphiql-ide.md) クエリの送信とテストに使用します。
+>インスタンスによっては、[AEM GraphQL API に付属している GraphiQL インターフェイス](/help/headless/graphql-api/graphiql-ide.md)に直接アクセスして、クエリの送信とテストを実行できます。
 >
 >クエリエディターには、次のいずれかの方法でアクセスできます。
 >
@@ -158,7 +158,7 @@ GraphQLクエリの概要とAEMコンテンツフラグメントの操作方法�
 }
 ```
 
-実行すると、クエリが自動的に展開され、次のすべてのフィールドが含まれます。
+実行時にシステムは自動的にすべてのフィールドを含むようにクエリを展開します。
 
 ```graphql
 {
@@ -366,7 +366,7 @@ query {
 
 次の場合：
 
-* 様々なタグを作成し、名前を付けます。 `Tourism` : `Business`, `City Break`, `Holiday`
+* `Tourism`、`Business`、`City Break`、`Holiday` という様々な名前のタグを作成する
 * そして、それらを様々なのマスターバリエーションに割り当てる `City` インスタンス
 
 この場合、クエリを使用して、`city` スキーマで都市滞在型休暇としてタグ付けされたすべてのエントリの `name` および `tags` の詳細を返すことができます。
@@ -710,7 +710,7 @@ query {
 
 ### サンプルクエリ — ドイツまたはスイスのすべての都市 ( 人口400000 ～ 999999) {#sample-all-cities-d-ch-population}
 
-ここでは、フィールドの組み合わせがフィルターされます。 `AND`（暗黙的）を使用して `population` の範囲を選択しつつ、`OR`（明示的）を使用して必要な都市を選択しています。
+ここでは、複数のフィールドの組み合わせがフィルタリングされます。`AND`（暗黙的）を使用して `population` の範囲を選択しつつ、`OR`（明示的）を使用して必要な都市を選択しています。
 
 **サンプルクエリ**
 
@@ -1152,7 +1152,7 @@ query {
 
 ## WKND プロジェクトを使用したサンプルクエリ {#sample-queries-using-wknd-project}
 
-これらのサンプルクエリは WKND プロジェクトに基づいています。次のようになります。
+これらのサンプルクエリは WKND プロジェクトに基づいています。以下が含まれています。
 
 * 次の URL で入手できるコンテンツフラグメントモデル：
   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
@@ -1310,12 +1310,12 @@ query {
 }
 ```
 
-### ネストされたコンテンツフラグメントのサンプルクエリ - 単一モデルタイプ {#sample-wknd-nested-fragment-single-model}
+### ネストされたコンテンツフラグメントのサンプルクエリ - 単一モデルタイプ{#sample-wknd-nested-fragment-single-model}
 
 このクエリでは次のものを検索します。
 
 * 特定のパスにある `article` タイプの 1 つのコンテンツフラグメントについて
-   * そのフラグメント内で、参照先（ネストされた）フラグメントのパスと作成者
+   * そのフラグメント内で、参照先（ネストされた）フラグメントのパスと作成者を指定します。
 
 >[!NOTE]
 >
@@ -1338,7 +1338,7 @@ query {
 }
 ```
 
-### ネストされたコンテンツフラグメントのサンプルクエリ - 複数モデルタイプ {#sample-wknd-nested-fragment-multiple-model}
+### ネストされたコンテンツフラグメントのサンプルクエリ - 複数モデルタイプ{#sample-wknd-nested-fragment-multiple-model}
 
 #### 単一の参照モデルタイプ
 
@@ -1394,7 +1394,7 @@ query {
 }
 ```
 
-### 特定モデルのコンテンツフラグメントのうちコンテンツ参照を含んだものを取得するサンプルクエリ {#sample-wknd-fragment-specific-model-content-reference}
+### 特定モデルのコンテンツフラグメントのうちコンテンツ参照を含んだものを取得するサンプルクエリ{#sample-wknd-fragment-specific-model-content-reference}
 
 このクエリには次の 2 種類があります。
 
@@ -1446,11 +1446,11 @@ query {
 
 #### 添付ファイルを含んだ複数のコンテンツフラグメントのサンプルクエリ {#sample-wknd-multiple-fragments-attachments}
 
-次のクエリは、すべてを返します `attachments`  — 型の特定のフィールド（サブグループ） `content-reference`:
+次のクエリは、すべての `attachments`、つまり `content-reference` タイプの特定のフィールド（サブグループ）を返します。
 
 >[!NOTE]
 >
->フィールド `attachments` のデータタイプは `content-reference` で、様々なフ形式が選択されています。
+>フィールド `attachments` のデータタイプは `content-reference` で、様々な形式が選択されています。
 
 <!-- need replacement query -->
 
@@ -1809,7 +1809,7 @@ query {
 
 * [Company](#model-company)
 -> [Person](#model-person)
-    -> [Award](#model-award)
+    -> [Award](#model-award)
 
 * [City（市区町村）](#model-city)
 
@@ -1830,7 +1830,7 @@ query {
 | フィールド名 | データタイプ | 参照 |
 |--- |--- |--- |
 | name（氏名） | 1 行のテキスト | |
-| 名 | 1 行のテキスト | |
+| 名前（名） | 1 行のテキスト | |
 | 授賞歴 | フラグメント参照（複数フィールド） | [Award](#model-award) |
 
 #### Award（賞） {#model-award}
@@ -1849,7 +1849,7 @@ query {
 | フィールド名 | データタイプ | 参照 |
 |--- |--- |--- |
 | name（氏名） | 1 行のテキスト | |
-| Country | 1 行のテキスト | |
+| 国 | 1 行のテキスト | |
 | 人口 | 数値 | |
 | カテゴリ | タグ | |
 

@@ -2,7 +2,7 @@
 title: コンテンツフラグメントモデルの作成 - ヘッドレスセットアップ
 description: コンテンツフラグメントモデルを使用して、AEM のヘッドレス機能を利用して作成および提供するコンテンツの構造を定義します。
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 95%
@@ -69,4 +69,4 @@ ht-degree: 95%
 
 >[!TIP]
 >
->コンテンツフラグメントモデルについて詳しくは、 [コンテンツフラグメントモデルのドキュメント](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) を参照してください。
+>コンテンツフラグメントモデルについて詳しくは、 [コンテンツフラグメントモデルのドキュメント](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) を参照してください。

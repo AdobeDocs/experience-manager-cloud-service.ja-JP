@@ -2,16 +2,22 @@
 title: コンテンツフラグメントの構造ツリー（アセット - コンテンツフラグメント）
 description: AEM のコンテンツフラグメントエディターの構造ツリー機能を使用すると、ヘッドレスコンテンツをより深く理解できます。
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 89%
+source-wordcount: '170'
+ht-degree: 63%
 
 ---
 
 # コンテンツフラグメント構造ツリー {#content-fragment-structure-tree}
 
 AEM のコンテンツフラグメントエディターの構造ツリー機能を使用すると、ヘッドレスコンテンツをより深く理解できます。
+
+>[!NOTE]
+>
+>コンテンツフラグメント は Sites 機能ですが、 **Assets**.
+>
+>コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。 この節では、主に **Assets** コンソール。 Sites のドキュメントを参照してください。 [コンテンツフラグメント — オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)：新しいエディターの詳細 ( 主に **コンテンツフラグメント** コンソール )。
 
 コンテンツフラグメントエディターで「構造ツリー」アイコンを選択できます。
 

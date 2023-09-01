@@ -2,10 +2,10 @@
 title: コンテンツフラグメントの管理（アセット - コンテンツフラグメント）
 description: ヘッドレスコンテンツの基礎となる AEM コンテンツフラグメントを Assets コンソールを使用して管理する方法について説明します。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
-source-wordcount: '1768'
-ht-degree: 85%
+source-wordcount: '1813'
+ht-degree: 82%
 
 ---
 
@@ -34,7 +34,11 @@ ht-degree: 85%
 
 >[!NOTE]
 >
->コンテンツフラグメントは、**Assets** として保存されます。引き続き **Assets** コンソールから管理できますが、現在は主に&#x200B;**[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)**&#x200B;コンソールで管理します。このセクションでは、**Assets** コンソールでの管理を説明しています。
+>コンテンツフラグメントは Sites 機能ですが、 **Assets**.
+>
+>引き続き **Assets** コンソールから管理できますが、現在は主に&#x200B;**[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**&#x200B;コンソールで管理します。このセクションでは、**Assets** コンソールでの管理を説明しています。
+>
+>コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。 この節では、主に **Assets** コンソール。 Sites のドキュメントを参照してください。 [コンテンツフラグメント — オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)：新しいエディターの詳細 ( 主に **コンテンツフラグメント** コンソール )。
 
 ## コンテンツフラグメントの作成 {#creating-content-fragments}
 

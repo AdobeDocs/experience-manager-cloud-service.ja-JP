@@ -2,10 +2,10 @@
 title: コンテンツフラグメントモデル（Assets - コンテンツフラグメント）
 description: コンテンツフラグメントモデルが AEM におけるヘッドレスコンテンツの基盤となっている仕組みと、構造化コンテンツを含んだコンテンツフラグメントを作成する方法について説明します。
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f499edbc05b71495c072564bb065a07c34a9e236
 workflow-type: tm+mt
-source-wordcount: '2898'
-ht-degree: 85%
+source-wordcount: '2937'
+ht-degree: 84%
 
 ---
 
@@ -30,7 +30,11 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
    >
    >[コンテンツフラグメントモデルの使用が有効になっていない](/help/assets/content-fragments/content-fragments-configuration-browser.md)場合、「**作成**」オプションは使用できません。
 
-1. 「**モデルタイトル**」を指定します。また、「**タグ**」、「**説明**」を追加し、必要に応じて「**モデルを有効化**」を選択して[モデルを有効に](#enabling-disabling-a-content-fragment-model)します。
+1. 「**モデルタイトル**」を指定します。また、様々なプロパティ ( 例えば、 **タグ**, a **説明**&#x200B;をクリックし、次を選択します。 **モデルを有効にする** から [モデルを有効にする](#enabling-disabling-a-content-fragment-model) （必要に応じて）
+
+   >[!NOTE]
+   >
+   >詳しくは、 **デフォルトのプレビュー URL パターン** 参照 [コンテンツフラグメントモデル — プロパティ](#content-fragment-model-properties).
 
    ![タイトルと説明](assets/cfm-models-02.png)
 
@@ -312,6 +316,12 @@ type CompanyModel {
    * **タグ**
    * **説明**
    * **画像をアップロード**
+   * **デフォルトのプレビュー URL パターン**
+
+     >[!NOTE]
+     >
+     >これは、 *新規* コンテンツフラグメントエディター。 詳しくは、 [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) を参照してください。
+
 
 ## コンテンツフラグメントモデルの有効化または無効化 {#enabling-disabling-a-content-fragment-model}
 

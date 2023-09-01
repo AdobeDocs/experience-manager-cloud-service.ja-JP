@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 向けのログ
 description: AEM as a Cloud Serviceのログを使用して、中央のログサービスのグローバルパラメーター、個々のサービス固有の設定、データログの要求方法を設定する方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 2fcc33cfb8b0be89b4b9f91d687dc21ba456000c
+source-git-commit: 7d4e1acee54ebcb1398bcc6ab83491e3fa6a8801
 workflow-type: tm+mt
-source-wordcount: '2683'
-ht-degree: 81%
+source-wordcount: '2669'
+ht-degree: 82%
 
 ---
 
@@ -17,7 +17,7 @@ AEM as a Cloud Service のログ設定とログレベルは、AEM プロジェ�
 
 * AEM ログ。AEM アプリケーションレベルでログを実行します。
 * Apache HTTPD Web サーバー／Dispatcher ログ。パブリッシュ層で Web サーバーと Dispatcher のログを実行します。
-* CDN ログは、その名前が示すように、CDN でログを実行します。 この機能は現在、アーリーアダプターが利用できます。アーリーアダプタープログラムに参加するには、メールをお送りください。 **aemcs-cdnlogs-adopter@adobe.com**（組織の名前や機能への関心に関するコンテキストを含む）
+* CDN ログは、その名前が示すように、CDN でログを実行します。 この機能は、9 月上旬に徐々にお客様に提供されるようになっています。
 
 ## AEM ログ {#aem-logging}
 
@@ -504,10 +504,12 @@ Define DISP_LOG_LEVEL debug
 
 >[!NOTE]
 >
->この機能は、まだ一般には利用できません。 継続中のアーリーアダプタープログラムに参加するには、E メールを送信します。 **aemcs-cdnlogs-adopter@adobe.com**（組織の名前や機能への関心に関するコンテキストを含む）
+>この機能は、9 月上旬に徐々にお客様に提供されるようになっています。
 >
 
 AEM as a Cloud Serviceは CDN ログにアクセスできます。これは、キャッシュヒット率の最適化などの使用例に役立ちます。 CDN ログ形式はカスタマイズできず、情報、警告、エラーなどの様々なモードに設定する概念もありません。
+
+Splunk 転送機能は、CDN ログをまだサポートしていません。
 
 **例**
 
@@ -600,6 +602,8 @@ Debug によって書き込まれるログステートメントのトラフィ�
 Splunk アカウントを持っている顧客は、カスタマーサポートチケットを介して、AEM Cloud Service のログを適切なインデックスに転送するように依頼できます。ログデータは、Cloud Manager のログのダウンロードで利用できるものと同じですが、Splunk 製品で利用できるクエリ機能を使用すると便利です。
 
 Splunk に送信されるログに関連付けられるネットワーク帯域幅は、お客様のネットワーク I/O 使用の一部と見なされます。
+
+Splunk 転送は、CDN ログをまだサポートしていません。
 
 ### Splunk 転送の有効化 {#enabling-splunk-forwarding}
 

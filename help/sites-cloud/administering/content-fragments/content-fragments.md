@@ -3,8 +3,11 @@ title: コンテンツフラグメントの使用方法
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントで、ページオーサリングやヘッドレス配信に最適な、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2122'
 ht-degree: 94%
@@ -12,6 +15,12 @@ ht-degree: 94%
 ---
 
 # コンテンツフラグメントの操作 {#working-with-content-fragments}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Adobe Experience Manager（AEM）as a Cloud Service でコンテンツフラグメントを使用すると、[ページに依存しないコンテンツ](/help/sites-cloud/authoring/fundamentals/content-fragments.md)をデザイン、作成、キュレーションおよび公開できます。ページオーサリングやヘッドレス配信に最適な、複数の場所や複数のチャネルでの使用に対応したコンテンツを準備できます。
 
@@ -117,11 +126,11 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 すべてのコンテンツと同様に、最終的には、コンテンツフラグメントをに公開します。 **[パブリッシュサービス](/help/overview/architecture.md#runtime-architecture)**.
 
-それ以前に、コンテンツフラグメントを使用して配信されたエクスペリエンスをプレビューすることもできます。それには、 [コンテンツフラグメントの公開](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md##publishing-and-previewing-a-fragment) AEM **[プレビューサービス](/help/overview/architecture.md#runtime-architecture)**.
+それ以前に、コンテンツフラグメントを使用して配信されたエクスペリエンスをプレビューすることもできます。それには、 [コンテンツフラグメントの公開](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md##publishing-and-previewing-a-fragment) をAEM **[プレビューサービス](/help/overview/architecture.md#runtime-architecture)**.
 
 >[!CAUTION]
 >
->への公開 **プレビューサービス** は、 **コンテンツフラグメント** コンソール。
+>への公開 **プレビューサービス** は、次の場所でのみ使用できます： **コンテンツフラグメント** コンソール。
 
 ## コンテンツタイプ {#content-type}
 
@@ -294,7 +303,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
    * フラグメントを HTML 形式や JSON 形式で配信するのに役立ちます。
    * [ページ上でフラグメントを参照](/help/sites-cloud/authoring/fundamentals/content-fragments.md)するために必要です。
-   * フラグメントのレイアウトと配信を担当します。つまり、チャネルです。
+   * フラグメントのレイアウトと配信（チャネル）を担当します。
    * フラグメントは、レイアウトを定義し、一部またはすべての要素／バリエーションと関連するコンテンツを配信するために、1 つ以上の専用コンポーネントを必要とします。
    * 作成時にフラグメントをページにドラッグすると、必須コンポーネントが自動的に関連付けられます。
 

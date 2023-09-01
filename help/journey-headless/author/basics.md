@@ -2,10 +2,10 @@
 title: オーサリングの基本
 description: コンテンツフラグメントを使用したヘッドレス CMS のコンテンツオーサリングの概念と仕組みについて説明します。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 83%
+source-wordcount: '1729'
+ht-degree: 70%
 
 ---
 
@@ -71,7 +71,7 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 
 コンソール内では、左側のパネルでフォルダーを選択して、コンテンツフラグメントに移動できます。また、フィルターや検索も可能です。
 
-![コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/assets/cfc-console-filter.png)
+![コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
 
 ### アクション、選択、表示 {#actions-selecting-viewing}
 
@@ -183,43 +183,44 @@ You can view additional information about items using the Rail Selector. This al
 
 次に、「**作成**」または「**作成して開く**」で確定します。
 
-<!--
-Creating a Content Fragment is very similar - you just use the **Content Fragment** option instead:
-
-![Create Content Fragment option](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
-
-This time a wizard opens. The first step is to select the Content Fragment Model that your fragment is based on:
-
-![Create Content Fragment - select Model](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
-
-After continuing with **Next** you can supply the details (**Basic** and **Advanced**) for your fragment:
-
-![Create Content Fragment - provide Name](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
-
-Confirm with **Create** and you can then **Open** your fragment in the editor.
--->
-
 ### フラグメントの編集 {#editing-fragment}
 
 フラグメントは、作成後すぐに開くことも、コンテンツフラグメントコンソール（または Assets コンソール）から選択して開くこともできます。
 
+>[!NOTE]
+>
+>コンテンツフラグメントは Sites 機能ですが、 **Assets**.
+>
+>コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。
+>
+>* 新しいエディター。主に **コンテンツフラグメント** コンソール。
+>* 元のエディター。主に次の場所からアクセス **Assets** コンソール。
+
 エディターが最初に開くと、次のように表示されます。
 
-* 左側のアイコンリスト - 様々な機能領域にアクセスできます。「**バリエーション**」タブにエディターが開きます。編集作業のほとんどは、ここで行います。「**注釈**」タブと「**メタデータ**」タブも必要になるかもしれません。
+* 上部のツールバー：主要な情報とアクション
+   * コンテンツフラグメントコンソールへのリンク（ホームアイコン）
+   * モデルとフォルダーに関する情報
+   * プレビューへのリンク。モデルにデフォルトのプレビュー URL パターンが設定されている場合。
+   * アクションの公開と非公開
+   * すべてを表示するオプション **親参照** （リンクアイコン）
+   * フラグメント **ステータス**、最後に保存した情報
+   * 元の（アセットベースの）エディターに切り替える切り替え
+* 左側のパネル：表示 **バリエーション** コンテンツフラグメントとその **フィールド**:
+   * これらのリンクを使用して、コンテンツフラグメント構造をナビゲートできます。
+* 右側のパネル：プロパティ（メタデータ）とタグ、バージョン履歴に関する情報、任意の言語コピーに関連する情報を示すタブが表示されます
+   * （内） **プロパティ** タブを更新するには、 **タイトル** および **説明** フラグメントの場合は、 **バリエーション**
+* 中央パネル：選択したバリエーションの実際のフィールドとコンテンツを表示します
+   * コンテンツの編集が可能
+   * if **タブプレースホルダー** フィールドは、ここに表示されるモデル内で定義され、ナビゲーションに使用できます
 
-* フラグメントに関する情報が表示され、様々なアクションにもアクセスできるヘッダー。
+例えば、フラグメントでは次のことが可能です。
 
-* メインの編集領域 - フラグメントの作成に使用したモデルによって異なります。
+* 複数の情報が必要です。一部の情報は特定のタイプを持ちます。 ヘッドレスコンテンツの場合、参照は重要です（これらについては、後でジャーニーで学びます）。
 
-例：
+* テキストの長いセクションを記述できます。 ここには、テキストを管理および書式設定するための追加のオプションがあります。個々のテキストフィールドを全画面表示エディターで開くこともできます（右側の小さい画面アイコンを使用）。
 
-* 複数の情報（一部は特定のタイプのもの）のみを必要とするフラグメント。ヘッドレスコンテンツの場合、参照は重要です（これらについては、後でジャーニーで学びます）。
-
-  ![コンテンツフラグメントエディター - マイフラグメント](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
-
-* テキストの長いセクションを記述できるフラグメント。 ここには、テキストを管理および書式設定するための追加のオプションがあります。個々のテキストフィールドを全画面表示エディターで開くこともできます（右側の小さい画面アイコンを使用）。
-
-  ![コンテンツフラグメントエディター - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+![コンテンツフラグメントエディター - Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 >[!NOTE]
 >
@@ -239,26 +240,12 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 * **コンテンツフラグメントモデル**
 
-  エディター上部のフラグメント名のすぐ下に、コンテンツフラグメントモデルの名前が表示されます。これは、モデルエディターに移動するリンクでもあります。
+  エディターの右側のパネルにコンテンツフラグメントモデルの名前が表示されます。 これは、モデルエディターに移動するリンクでもあります。
 コンテンツフラグメントモデルは、使用する構造を定義するものなので、実際にはコンテンツフラグメントにとってきわめて重要です。ただし、コンテンツフラグメントモデルの作成と編集を担当するのは、（通常は）別のペルソナであるコンテンツアーキテクトです。
 
   >[!NOTE]
   >
   >詳しくは、「AEM ヘッドレスコンテンツアーキテクトジャーニー」を参照してください。
-
-* **関連コンテンツ**
-
-  これはエディターのタブなので明らかです。
-
-  コンテンツフラグメント機能は、AEM ではかなり前のバージョンから利用可のです。元々は、ページのオーサリング時に「従来の」用途に使用できるようになっていました。同様の使い方は使用されています。これには、フラグメントに埋め込まれてはいないものの、ページのオーサリング時に作成者が使用できる必要があるアセット（画像など）の関連付けが含まれる場合があります。
-
-* **プレビュー**
-
-  これはエディターの別のタブで、主に開発者向けの技術的な内容を提供します。
-
-* **ページ参照を更新**
-
-  このアクションは、 **...** （省略記号）ドロップダウン。 これはページのオーサリングに関係するものなので、ヘッドレス作成者向けのものではありません。
 
 ### 公開 {#publishing}
 
@@ -296,15 +283,15 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
    * [パネルセレクター](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
-* [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [コンテンツフラグメントの管理](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+   * [コンテンツフラグメントの管理](/help/sites-cloud/administering/content-fragments/managing.md)
 
-   * [アセットフォルダーへの設定の適用](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+   * [アセットフォルダーへの設定の適用](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder)
 
-   * [コンテンツフラグメントの作成](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [コンテンツフラグメントの作成](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
 
-   * [バリエーション - コンテンツフラグメントのオーサリング](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+   * [コンテンツフラグメントのオーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)
 
    * 公開
 
@@ -316,15 +303,17 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
       * 次から： **コンテンツフラグメント** コンソール
 
-         * [コンテンツフラグメントの公開とプレビュー](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
+         * [コンテンツフラグメントの公開とプレビュー](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)
 
-   * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [コンテンツフラグメントモデル - データタイプ](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+      * [コンテンツフラグメントモデル - データタイプ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-      * [コンテンツフラグメントモデル - プロパティ](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
+      * [コンテンツフラグメントモデル - プロパティ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
-      * [コンテンツフラグメントモデル - アセットフォルダーでのコンテンツフラグメントモデルの許可](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [コンテンツフラグメントモデル - アセットフォルダーでのコンテンツフラグメントモデルの許可](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
+
+* [コンテンツフラグメント — アセットコンソールからの元のエディター](/help/assets/content-fragments/content-fragments-variations.md)
 
 * はじめる前に
    * [アセットフォルダーの作成 - ヘッドレスセットアップ](/help/headless/setup/create-assets-folder.md)

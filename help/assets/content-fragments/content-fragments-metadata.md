@@ -2,16 +2,22 @@
 title: メタデータ - フラグメントのプロパティ（アセット - コンテンツフラグメント）
 description: コンテンツフラグメントのメタデータプロパティの表示と編集の方法について説明します。
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 83%
+source-wordcount: '274'
+ht-degree: 68%
 
 ---
 
 # メタデータ - フラグメントのプロパティ {#metadata-fragment-properties}
 
 ヘッドレスコンテンツを調整するために AEM のコンテンツフラグメントのメタデータプロパティを表示および編集する方法を説明します。
+
+>[!NOTE]
+>
+>コンテンツフラグメント は Sites 機能ですが、 **Assets**.
+>
+>コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。 この節では、主に **Assets** コンソール。 Sites のドキュメントを参照してください。 [コンテンツフラグメント — オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)：新しいエディターの詳細 ( 主に **コンテンツフラグメント** コンソール )。
 
 ## プロパティ／メタデータの編集 {#editing-properties-meta-data}
 
@@ -23,9 +29,9 @@ ht-degree: 83%
    * [**「プロパティを表示**」を選択してダイアログを開きます](/help/assets/manage-digital-assets.md#editing-properties)。開いて表示されたら、編集することもできます。
    * 編集するコンテンツフラグメントを開き、サイドパネルから「**メタデータ**」を選択します。
 
-   ![サイドパネルのメタデータ](assets/cfm-metadata-01.png)
+   ![サイドパネル内のメタデータ](assets/cfm-metadata-01.png)
 
-3. この **基本** 「 」タブには、表示または編集できるオプションが表示されます。
+3. The **基本** 「 」タブには、表示または編集できるオプションが表示されます。
 
    * サムネール（使用可能） **画像をアップロード**
    * **コンテンツフラグメントモデル**&#x200B;は、現在のフラグメントの作成に使用されるモデルを示します

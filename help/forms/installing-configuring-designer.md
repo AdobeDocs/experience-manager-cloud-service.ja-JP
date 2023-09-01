@@ -1,12 +1,13 @@
 ---
 title: Forms Designer のダウンロードとインストール
 description: Forms Designer を使用して、レコードのドキュメントテンプレートとして機能する XDP および PDF フォームテンプレートを作成できます。Designer は、 [!DNL AEM Forms]  ライセンスで利用できます。
-source-git-commit: 3b05d413756a98c034388eb31e752b2448758496
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 75%
+source-wordcount: '352'
+ht-degree: 65%
 
 ---
+
 
 # Forms Designer のダウンロードとインストール {#installing-and-configuring-designer}
 
@@ -16,12 +17,16 @@ Designer は、XDP および PDF フォームテンプレートの作成を簡�
 
 最新バージョンのAEM Forms Designer 64 ビットまたは 32 ビットをインストールするには、次のソフトウェアと最小ハードウェアで Designer をインストールして設定する必要があります。
 
+>[!NOTE]
+>
+> 32 ビット Designer を使用している場合、64 ビット Designer をインストールする前に、64 ビット Designer のインストール時の問題を回避するために、32 ビット Designer をアンインストールする必要があります。
+
 <!--
 >[!BEGINTABS]
 
 >[!TAB 64-bit OS (Recommended)] -->
 
-+++ 64 ビット OS （推奨）
++++ 64 ビット Designer（推奨）
 
 * [!DNL Microsoft® Windows® 2016 Server] または [!DNL Microsoft® Windows® 2019 Server]、および [!DNL Microsoft® Windows® 10]
 * 2 GB 以上の RAM
@@ -30,24 +35,24 @@ Designer は、XDP および PDF フォームテンプレートの作成を簡�
 * 2.35 GB のハードディスク空き容量
 * 1024 x 768 ピクセル以上のモニター解像度
 * ビデオハードウェアアクセラレーション（オプション）
-* Acrobat Pro DC、Acrobat Standard DC または Adobe Acrobat Reader DC
+* Acrobat Pro DC、Acrobat Standard DC または Adobe Acrobat Reader DC。
 * Designer をインストールするための管理者権限。
-* [!DNL Microsoft® Visual C++ 2019] （VC 14.28 以降）
+* [!DNL Microsoft® Visual C++ 2019] （VC 14.28 以降）64 ビットランタイム
 
 +++
 
-+++ 32 ビット OS
++++ 32 ビット Designer
 
-* [!DNL Microsoft® Windows® 2016 Server] または [!DNL Microsoft® Windows® 2019 Server]、および [!DNL Microsoft® Windows® 10]
-* 最小 1 GB の RAM
-* 16 GB のディスク容量
+* [!DNL Microsoft® Windows® 2016 Server]、[!DNL Microsoft® Windows® 2019 Server] または [!DNL Microsoft® Windows® 10]
+* 1 GB の RAM（32 ビット OS の場合）または 2 GB の RAM（64 ビット OS の場合）
+* 16 GB のディスク容量（32 ビット OS の場合）または 20 GB のディスク容量（64 ビット OS の場合）
 * グラフィックメモリ - 128 MB の GPU（256 MB 推奨）
 * 2.35 GB のハードディスク空き容量
 * 1024 x 768 ピクセル以上のモニター解像度
 * ビデオハードウェアアクセラレーション（オプション）
-* Acrobat Pro DC、Acrobat Standard DC または Adobe Acrobat Reader DC
+* Acrobat Pro DC、Acrobat Standard DC または Adobe Acrobat Reader DC。
 * Designer をインストールするための管理者権限。
-* [!DNL Microsoft® Visual C++ 2019] （VC 14.28 以降）
+* Microsoft® Visual C++ 2019 （VC 14.28 以降） 32 ビットランタイム
 
 +++
 

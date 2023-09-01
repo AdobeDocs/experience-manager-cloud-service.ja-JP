@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.7.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.7.0 リリースのリリースノート。'
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 27%
@@ -38,7 +38,7 @@ ht-degree: 27%
 
 ### の新機能[!DNL Sites] {#sites-features}
 
-* この [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) がサポートされるようになりました [キーボードショートカット](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+* The [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) がサポートされるようになりました [キーボードショートカット](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
 * AEM as aCloud Service [web に最適化された画像配信](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=ja) を使用すると、WebP などの形式を配信することで、ページの速度を大幅に向上できます。 この新しいサービスでは、より柔軟に画像のサイズを変更したり、変換したりすることもできます。 のすべてのバージョン [コア画像コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ja) を使用すると、このサービスを使用し、画像コンポーネントのポリシーのオプションをクリックして、画像を WebP として配信できます。
 
@@ -63,11 +63,11 @@ Adobe Experience Manager Assets を [MIME タイプに基づいてユーザー�
 
 ### の新機能[!DNL Forms] {#forms-features}
 
-* **[手書き署名のキーボード入力のサポート](/help/forms/signing-forms-using-scribble.md)**:アダプティブFormsは、タッチデバイスでの使用が増えています。一般的な要件の 1 つは、署名をサポートすることです。 タッチデバイスでのドキュメントの署名は、フォームの署名方法として受け入れられるようになりました。 アダプティブFormsでは、このような使用例に対して、Scribble Signatures およびAdobe Signをネイティブでサポートしています。 これで、既にサポートされている他のオプションと共に、キーボードを使用してアダプティブフォーム内の手書き署名を行うこともできます。 また、アクセシビリティのコンプライアンスの向上にも役立ちます。
+* **[手書き署名のキーボード入力のサポート](/help/forms/signing-forms-using-scribble.md)**：アダプティブFormsは、タッチデバイスでの使用が増えています。一般的な要件の 1 つは、署名をサポートすることです。 タッチデバイスでのドキュメントの署名は、フォームの署名方法として受け入れられるようになりました。 アダプティブFormsでは、このような使用例に対して、Scribble Signatures およびAdobe Signをネイティブでサポートしています。 これで、既にサポートされている他のオプションと共に、キーボードを使用してアダプティブフォーム内の手書き署名を行うこともできます。 また、アクセシビリティのコンプライアンスの向上にも役立ちます。
 
 ![iPhone での手書き署名のキーボード入力のサポート](/help/release-notes/assets/scribble-keyboard-mobile.png)
 
-* **ローカル言語でのアダプティブFormsウィザードの使用**:ウィザードは、選択した言語で使用できます。 Adobe Experience Managerでサポートされているすべての言語をサポートするようになりました。
+* **ローカル言語でのアダプティブFormsウィザードの使用**：ウィザードは、選択した言語で使用できます。 Adobe Experience Managerでサポートされているすべての言語をサポートするようになりました。
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms}
 
@@ -79,9 +79,9 @@ Adobe Experience Manager Assets を [MIME タイプに基づいてユーザー�
 
 -->
 
-* **[Invoke DDX - An AEM Workflow step](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**:Document Description XML (DDX) は、宣言的なマークアップ言語です。この言語の要素は、ドキュメントの構築ブロックを表します。 この構築ブロックには、PDF ドキュメント、XDP ドキュメントおよびその他の要素（コメント、しおり、スタイルを設定したテキストなど）が含まれます。DDX ドキュメントはドキュメントのテンプレートで、結果のドキュメントに表示するソースドキュメントの必要な特性を記述します。 1 つの DDX を様々なソースドキュメントに使用できます。AEMワークフローを起動ステップを使用して、ドキュメントの分解、Acrobatと XFA Formsの作成と変更、および [DDX リファレンス](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) ドキュメント。
+* **[Invoke DDX - An AEM Workflow step](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: Document Description XML(DDX) は、宣言的なマークアップ言語です。この言語の要素は、ドキュメントの構築ブロックを表します。 この構築ブロックには、PDF ドキュメント、XDP ドキュメントおよびその他の要素（コメント、しおり、スタイルを設定したテキストなど）が含まれます。DDX ドキュメントはドキュメントのテンプレートで、結果のドキュメントに表示するソースドキュメントの必要な特性を記述します。 1 つの DDX を様々なソースドキュメントに使用できます。AEMワークフローを起動ステップを使用して、ドキュメントの分解、Acrobatと XFA Formsの作成と変更、および [DDX リファレンス](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) ドキュメント。
 
-* **[PDF/A に変換 — AEMワークフローステップ](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**:PDF/A は、ドキュメントのコンテンツを長期保存するためのアーカイブ形式で、すべてのフォントが埋め込まれ、ファイルが非圧縮になります。 これで、PDF/A に変換ステップを使用して、任意の形式のドキュメントまたはファイルをPDF/A 形式に変換できます。
+* **[PDF/A に変換 — AEMワークフローステップ](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**:PDF/A は、ドキュメントのコンテンツを長期間保存するためのアーカイブ形式で、すべてのフォントが埋め込まれ、ファイルが非圧縮になります。 これで、PDF/A に変換ステップを使用して、任意の形式のドキュメントまたはファイルをPDF/A 形式に変換できます。
 
 
 ## CIF アドオン {#cloud-services-cif}
@@ -102,7 +102,7 @@ Adobe Experience Manager Assets を [MIME タイプに基づいてユーザー�
 
 ### 新機能 {#what-is-new-foundation}
 
-* この [リポジトリブラウザ](/help/implementing/developing/tools/repository-browser.md) にパス入力フィールドが追加され、リポジトリ階層内の特定のフォルダーに直接ジャンプできるようになりました。
+* The [リポジトリブラウザ](/help/implementing/developing/tools/repository-browser.md) にパス入力フィールドが追加され、リポジトリ階層内の特定のフォルダーに直接ジャンプできるようになりました。
 * Sling コンテンツ配布 (SCD) で、コンテンツが公開されずにコンテンツを無効にする明示的な「無効化」アクションがサポートされるようになりました。 詳しくは、 [AEMでのキャッシュのas a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) ページを参照してください。
 * mod_macro がAEM as a Cloud Serviceで使用できるようになりました。 詳しくは、 [このテーブル](/help/implementing/dispatcher/disp-overview.md) を参照してください。
 

@@ -3,15 +3,25 @@ title: 関連コンテンツ
 description: コンテンツフラグメントの関連コンテンツ機能が、フラグメントで（オプションで）使用されるアセットの接続を提供し、ページのオーサリングとヘッドレスコンテンツ配信の両方にさらなる柔軟性を追加する方法を理解します。
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 81%
 
 ---
 
+
 # 関連コンテンツ{#associated-content}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 AEM の関連コンテンツ機能には接続が用意されており、フラグメントをコンテンツページに追加する際に、アセットをオプションでフラグメントと共に使用できます。これは、[ページでコンテンツフラグメントを使用する際にアクセスできる様々なアセットを提供](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)することで行われ、適切なアセットを検索するために必要な時間を短縮させることもできます。これにより、ヘッドレスコンテンツ配信の柔軟性も向上させます。
 
@@ -46,7 +56,7 @@ AEM の関連コンテンツ機能には接続が用意されており、フラ�
 
 コレクションを関連付けると、次の操作を実行できます。
 
-* **削除** 協会。
-* **アセットを追加** コレクションに追加します。
+* **削除** 関連団体。
+* **アセットを追加** をコレクションに追加します。
 * 追加のアクションを実行するアセットを選択します。
 * アセットを編集します。

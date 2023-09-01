@@ -3,8 +3,11 @@ title: マークダウン
 description: コンテンツフラグメントエディターがページオーサリングとヘッドレス配信の両方にマークダウン構文を使用して、コンテンツを簡単に作成する仕組みを説明します。
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 4e9b076e-7429-466b-bb53-2164da379650
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 68%
@@ -12,6 +15,12 @@ ht-degree: 68%
 ---
 
 # マークダウン {#markdown}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 コンテンツフラグメントの編集者は、[オーサリング](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#authoring-your-content)の際、ページオーサリングとヘッドレス配信の両方で、*マークダウン*&#x200B;構文を使用してコンテンツを簡単に記述できます。
 

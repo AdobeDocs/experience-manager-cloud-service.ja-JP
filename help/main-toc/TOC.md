@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 49d1e002f22427d8ffc6c5bdecd054c10eac47b9
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '4252'
-ht-degree: 96%
+source-wordcount: '4258'
+ht-degree: 93%
 
 ---
 
@@ -35,6 +35,7 @@ ht-degree: 96%
    + AEMaaCS 機能のリリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2023年度 {#2023}
+         + [リリースノート（2023.7.0）](/help/release-notes/release-notes-cloud/2023/release-notes-2023-7-0.md)
          + [リリースノート（2023.6.0）](/help/release-notes/release-notes-cloud/2023/release-notes-2023-6-0.md)
          + [リリースノート（2023.4.0）](/help/release-notes/release-notes-cloud/2023/release-notes-2023-4-0.md)
          + [リリースノート（2023.2.0）](/help/release-notes/release-notes-cloud/2023/release-notes-2023-2-0.md)
@@ -315,6 +316,16 @@ ht-degree: 96%
          + [登録、ログイン、ユーザープロファイル](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
    + 管理 {#administering}
       + コンテンツフラグメント {#content-fragments}
+         + [概要と概念](/help/sites-cloud/administering/content-fragments/overview.md)
+         + [GraphQLとのヘッドレス配信](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
+         + [コンテンツフラグメントの設定](/help/sites-cloud/administering/content-fragments/setup.md)
+         + [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+         + [コンテンツフラグメントの管理](/help/sites-cloud/administering/content-fragments/managing.md)
+         + [フラグメントコンテンツのオーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)
+         + [マークダウン](/help/sites-cloud/administering/content-fragments/markdown.md)
+         + [削除に関する考慮事項](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
+         + [解析構造](/help/sites-cloud/administering/content-fragments/analysis.md)
+         + [キーボードショートカット](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
          + [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/content-fragments.md)
          + [コンテンツフラグメントと GraphQL のヘッドレス配信](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
          + [インスタンスに対するコンテンツフラグメント機能の有効化](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
@@ -575,6 +586,7 @@ ht-degree: 96%
       + アダプティブフォームのオーサリング - コアコンポーネント {#authoring-adaptive-forms-core-components}
          + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
             + [アダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
+            + [アダプティブフォームフラグメントを作成する](/help/forms/adaptive-form-fragments-core-components.md)
             + [アダプティブフォームのテーマの作成 - コアコンポーネント](/help/forms/using-themes-in-core-components.md)
             + [アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-core-components.md)
             + [アダプティブフォームの作成 - AEM Sites ページのコアコンポーネント](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
@@ -583,6 +595,7 @@ ht-degree: 96%
             + [繰り返し可能なセクションでフォームを作成する](/help/forms/create-forms-repeatable-sections.md)
             + [アダプティブフォームの送信アクションの設定](/help/forms/configure-submit-actions-core-components.md)
             + [アダプティブフォームでのGoogle reCAPTCHA の使用](/help/forms/captcha-adaptive-forms-core-components.md)
+            + [アダプティブフォームにカスタムエラーハンドラーを追加する](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
       + アダプティブフォームのオーサリング - 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
          + PDF フォームのアダプティブフォームへの変換 {#afcs}
             + [自動フォーム変換サービスの概要](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ja)
@@ -731,18 +744,14 @@ ht-degree: 96%
       + [コンテンツフラグメント](/help/headless/setup/create-content-fragment.md)
       + [GraphQL エンドポイント](/help/headless/setup/create-api-request.md)
    + コンテンツフラグメント {#content-fragments}
-      + [概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html?lang=ja)
-      + [コンテンツフラグメントコンソール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ja)
-      + [コンテンツフラグメントモデル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html?lang=ja)
-      + [プロジェクト管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html?lang=ja)
+      + [概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
+      + [コンテンツフラグメントモデル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
+      + [コンテンツフラグメントの管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
       + オーサリング {#authoring}
-         + [オーサリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html?lang=ja)
-         + [テキストエディター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html?lang=ja)
-         + [関連コンテンツ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html?lang=ja)
-         + [バリエーション](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html?lang=ja#managing-variations)
-      + [メタデータ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html?lang=ja)
-      + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html?lang=ja)
-      + [JSON プレビュー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html?lang=ja)
+         + [オーサリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
+         + [Markdown エディター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+      + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
+      + [JSON プレビュー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=ja)
    + GraphQL API {#graphql-api}
       + [コンテンツフラグメント用 GraphQL API](/help/headless/graphql-api/content-fragments.md)
       + [GraphQL エンドポイントを管理](/help/headless/graphql-api/graphql-endpoint.md)
@@ -962,6 +971,7 @@ ht-degree: 96%
       + [コンテンツフラグメントのカスタマイズと拡張](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [レンダリングコンポーネントのコンテンツフラグメントの設定](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
       + [コンテンツフラグメントコンソールのカスタマイズ](/help/implementing/developing/extending/content-fragment-console-customizing.md)
+      + [コンテンツフラグメントコンソールおよびエディターのカスタマイズ](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
       + 検索フォームの管理 {#manage-search-forms}
          + [検索フォームの設定](/help/implementing/developing/extending/search-forms.md)
          + [インボックス用の検索フィルターの設定](/help/implementing/developing/extending/configure-inbox-search-rail.md)

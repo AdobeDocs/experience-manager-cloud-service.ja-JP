@@ -4,8 +4,11 @@ description: コンテンツフラグメントコンソールでコンテンツ�
 landing-page-description: コンテンツフラグメントコンソールでコンテンツフラグメントを管理する方法を説明します。このコンソールは、コンテンツフラグメントを大量に使用するヘッドレスの用途に重点を置いていますが、ページオーサリングでも使用されます。
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: afe676b0972462ef2c9b52150d96560c71f7a0f6
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 80%
@@ -13,6 +16,12 @@ ht-degree: 80%
 ---
 
 # コンテンツフラグメントコンソール  {#content-fragments-console}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 コンテンツフラグメントコンソールを使用してコンテンツフラグメントへのアクセスを最適化する方法を説明します。公開、非公開、コピーなどの管理アクションを実行して、コンテンツフラグメントの作成、検索、管理を支援します。
 

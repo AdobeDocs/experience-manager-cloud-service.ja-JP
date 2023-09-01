@@ -2,10 +2,10 @@
 title: AEM ヘッドレス機能を使用した初めてのエクスペリエンスへの道筋
 description: AEM ヘッドレスデベロッパージャーニーのこの部分では、計画に関する考慮事項なども含め、AEM で初めてのヘッドレスエクスペリエンスを実装するための手順を示し、できるだけスムーズに作業を進めるためのベストプラクティスについても説明します。
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
-source-wordcount: '2012'
-ht-degree: 96%
+source-wordcount: '1991'
+ht-degree: 95%
 
 ---
 
@@ -110,8 +110,8 @@ AEM でのヘッドレス開発に取りかかる前に、必要な機能がす�
 
 ### コンテンツのオーサリング {#authoring}
 
-* コンテンツのチャネル固有バージョンの場合は、コンテンツフラグメントのバリエーションの使用を検討します。バリエーションをコンテンツプライマリと同期させて、コンテンツの変更管理を効率化します。
-* 他のコンテンツ作成者を招いて、コンテンツをレビューしてもらい、注釈やコメントを含んだフィードバックを返してもらうことができます。これらのフィードバックはコンテンツフラグメントエディター内でも使用できますし、Admin Console のコンテンツフラグメント管理でフラグメントをまたいでグローバルに使用することもできます。
+* コンテンツのチャネル固有バージョンの場合は、コンテンツフラグメントのバリエーションの使用を検討します。バリエーションは、メインコンテンツに対して同期され、コンテンツ変更管理を合理化します。
+* 他のコンテンツ作成者を招待して、コンテンツを確認し、フィードバックを提供します。
 * できるだけ少数の必須要素で動作を維持できるようにします。必須要素は、ワークフローの妨げになることがあります。
 
 ### グローバルコンテンツのオーサリング {#localization}
@@ -149,6 +149,6 @@ AEM でのヘッドレス開発に取りかかる前に、必要な機能がす�
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)（英語のみ）- この GitHub プロジェクトには、AEM の GraphQL API を紹介するためのサンプルアプリケーションが含まれています。
 * [Adobe Experience Manager as a Cloud Service のアーキテクチャの概要](/help/overview/architecture.md) - AEM のアーキテクチャの概要説明
 * [ヘッドレスセットアップ](/help/headless/introduction.md#getting-started) - AEM の知識が既にあるユーザーを対象とした、AEM のヘッドレス機能の簡単な紹介。
-* [コンテンツフラグメントモデルの作成](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - コンテンツフラグメントモデルに関する技術ドキュメント
-* [コンテンツフラグメントの作成](/help/sites-cloud/administering/content-fragments/content-fragments.md) - コンテンツフラグメントに関する技術ドキュメント
+* [コンテンツフラグメントモデルの作成](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - コンテンツフラグメントモデルに関する技術ドキュメント
+* [コンテンツフラグメントの作成](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) - コンテンツフラグメントに関する技術ドキュメント
 * [GraphQL を使用したコンテンツのクエリ実行](/help/headless/graphql-api/content-fragments.md) - GraphQL API に関する技術ドキュメント

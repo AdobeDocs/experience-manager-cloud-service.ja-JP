@@ -2,7 +2,7 @@
 title: AEM Assets API を使用してコンテンツをアップデートする方法
 description: AEM ヘッドレスデベロッパージャーニーのこの部分では、REST API を使用してコンテンツフラグメントのコンテンツにアクセスし、アップデートする方法について説明します。
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 94%
@@ -325,7 +325,7 @@ AEM ヘッドレスジャーニーを続けるには、[すべてをまとめる
 * [コンテンツフラグメント REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API リファレンス](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
 * [Adobe Experience Manager Assets API - コンテンツフラグメント](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
-* [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/overview.md)
 * [AEM コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
 * [CORS／AEM の説明](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [ビデオ - AEM を使用した CORS 向けの開発](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)

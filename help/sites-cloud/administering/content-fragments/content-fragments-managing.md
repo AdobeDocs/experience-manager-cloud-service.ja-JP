@@ -3,8 +3,11 @@ title: コンテンツフラグメントの管理
 description: コンテンツフラグメントコンソールを使用して、（ページオーサリング用、またはヘッドレスコンテンツの基礎として）AEM コンテンツフラグメントを管理する方法を説明します。
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2051'
 ht-degree: 75%
@@ -12,6 +15,12 @@ ht-degree: 75%
 ---
 
 # コンテンツフラグメントの管理 {#managing-content-fragments}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 **コンテンツフラグメント**&#x200B;コンソールを使用して AEM コンテンツフラグメントを管理する方法を説明します。これらは、ページオーサリングやヘッドレスコンテンツの基礎として使用できます。
 

@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.8.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.8.0 リリースのリリースノート。'
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 59%
@@ -45,7 +45,7 @@ ht-degree: 59%
 
 ### [!DNL Sites] プレリリースチャネルで利用できる新機能 {#prerelease-features-sites}
 
-* The [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) には、コンテンツフラグメントに関連付けられている言語コピーの合計数を表示するオプションが用意されています。 すべての言語コピーを表示するための 1 回のクリックアクセスが提供されています。 また、ユーザーは、関心があるロケールに基づいてテーブル表示をフィルタリングすることもできます。
+* The [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) には、コンテンツフラグメントに関連付けられている言語コピーの合計数を表示するオプションが用意されています。 すべての言語コピーを表示するための 1 回のクリックアクセスが提供されています。 また、ユーザーは、関心があるロケールに基づいてテーブル表示をフィルタリングすることもできます。
 
 ![コンテンツフラグメントの言語](/help/release-notes/assets/cfconsole-languages.png)
 

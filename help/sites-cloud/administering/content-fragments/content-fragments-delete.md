@@ -3,8 +3,11 @@ title: コンテンツフラグメント - 削除に関する考慮事項
 description: AEM でコンテンツフラグメント削除ポリシーを定義する前に、以下の重要な考慮事項を確認してください。コンテンツフラグメントはヘッドレスコンテンツを配信する強力なツールです。削除する際は、影響を慎重に考慮する必要があります。
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: f6698dd8-3e2a-44ac-b00f-df578aa85ffe
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 80%
@@ -12,6 +15,12 @@ ht-degree: 80%
 ---
 
 # コンテンツフラグメント - 削除に関する考慮事項 {#content-fragments-delete-considerations}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 AEM でコンテンツフラグメント削除ポリシーを定義する前に、以下の重要な考慮事項を確認してください。コンテンツフラグメントはヘッドレスコンテンツを配信する強力なツールです。削除する際は、影響を慎重に考慮する必要があります。
 
@@ -26,7 +35,7 @@ AEM でコンテンツフラグメント削除ポリシーを定義する前に�
    * **使用例**：コンテンツフラグメントの編集または更新を必要とするユーザーが&#x200B;**フラグメント全体を削除できる**&#x200B;場合。
    * **権限**：削除権限はユーザー管理やグループ管理で割り当てることができます。<!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
-2. **コンテンツフラグメントを構成する複数のサブエンティティ例えば、バリエーション、サブノードなどです。**
+2. **コンテンツフラグメントを構成する複数のサブエンティティ（バリエーション、サブノードなど）。**
 
    コンテンツフラグメントエディターの基本的な操作では、このような一時的なサブ要素を削除できる必要があります。 例えば、バリエーションの操作、メタデータの編集、関連コンテンツの管理などをおこなう場合です。
 

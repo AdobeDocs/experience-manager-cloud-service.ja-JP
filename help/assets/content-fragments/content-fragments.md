@@ -2,10 +2,10 @@
 title: コンテンツフラグメントの使用方法（アセット - コンテンツフラグメント）
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントで、ページオーサリングやヘッドレス配信に最適な、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。また、MSM と共に使用する方法も示します。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 9a7087979831ac08aed5f93df024f1c835a9fc08
+source-git-commit: fa133319077388a3598ca13b2574b8b62bf9b2b4
 workflow-type: tm+mt
-source-wordcount: '2171'
-ht-degree: 91%
+source-wordcount: '2216'
+ht-degree: 88%
 
 ---
 
@@ -30,11 +30,15 @@ Adobe Experience Manager(AEM) をas a Cloud Serviceしたコンテンツフラ�
 コンテンツフラグメントは、AEM コアコンポーネントの Sling Model（JSON）書き出し機能を使用して、JSON 形式で配信することもできます。この形式の配信では次のことが可能です。
 
 * コンポーネントを使用して、配信するフラグメントの要素を管理できます。
-* API 配信に使用されるページに複数のコンテンツフラグメントコアコンポーネントを追加して、一括配信できます
+* API 配信に使用されるページで複数のコンテンツフラグメントコアコンポーネントを追加して、一括配信できます。
 
 >[!NOTE]
 >
->コンテンツフラグメントは **Assets** として保存されます。引き続き **Assets** コンソールから管理できますが、現在は主に&#x200B;**[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)**&#x200B;コンソールで管理します。このセクションでは、**Assets** コンソールからの管理について説明します。
+>コンテンツフラグメントは Sites 機能ですが、 **Assets**.
+>
+>引き続き **Assets** コンソールから管理できますが、現在は主に&#x200B;**[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**&#x200B;コンソールで管理します。このセクションでは、**Assets** コンソールでの管理を説明しています。
+>
+>コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。 この節では、主に **Assets** コンソール。 Sites のドキュメントを参照してください。 [コンテンツフラグメント — オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)：新しいエディターの詳細 ( 主に **コンテンツフラグメント** コンソール )。
 
 このページと後続のページでは、コンテンツフラグメントを作成、設定、維持管理および使用するためのタスクについて説明しています。
 

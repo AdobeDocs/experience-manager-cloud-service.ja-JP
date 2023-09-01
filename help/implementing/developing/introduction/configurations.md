@@ -2,7 +2,7 @@
 title: 設定と設定ブラウザー
 description: AEM 設定と、AEM でのワークスペース設定の管理方法について理解します。
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 91%
@@ -34,7 +34,7 @@ AEMの管理者と作成者は、設定をワークスペースと見なすこ�
 設定は、AEM 内の多くの異なる機能に対して作成できます。
 
 * [ContextHub セグメント](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [編集可能なテンプレート](/help/sites-cloud/authoring/features/templates.md)
 * 各種クラウド設定
 
@@ -75,12 +75,12 @@ WKND-General を WKND サイトのすべてのコンテンツに関連付ける�
    ![設定の作成](assets/configuration-create.png)
 
    * **タイトル**&#x200B;は内容がわかるように付けます。
-   * この **名前** はリポジトリ内のノード名になります。
+   * The **名前** はリポジトリ内のノード名になります。
       * タイトルに基づいて自動的に生成され、 [AEM命名規則。](naming-conventions.md)
       * 必要に応じて調整できます。
 1. 許可する設定のタイプを確認します。
    * [ContextHub セグメント](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
    * [編集可能なテンプレート](/help/sites-cloud/authoring/features/templates.md)
    * 各種クラウド設定
 1. 「**作成**」をタップまたはクリックします。

@@ -2,7 +2,7 @@
 title: コンポーネントの JSON 書き出しの有効化
 description: モデラーフレームワークに基づいてコンテンツの JSON 書き出しを生成するように、コンポーネントを適応させることができます。
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 77%
@@ -78,7 +78,7 @@ JSON エクスポーターフレームワークで認識されるようにする
 
 詳しくは、以下を参照してください。
 
-* [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)
+* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [コンテンツフラグメントを使用したオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
 * [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)および[コンテンツフラグメントコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ja)

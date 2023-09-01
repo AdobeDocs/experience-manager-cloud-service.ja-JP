@@ -2,14 +2,16 @@
 title: Formsas a Cloud Service通信の概要
 description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 91%
+source-wordcount: '1475'
+ht-degree: 76%
 
 ---
 
 # AEM Formsas a Cloud Service通信の概要 {#frequently-asked-questions}
+
+<span class="preview"> [DocAssurance サービス](#doc-assurance) はリリース前の機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). この機能のドキュメントは変更される場合があります。</span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -157,7 +159,35 @@ You can [query a PDF document](https://developer.adobe.com/experience-manager-fo
 
 The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
 
-## 通信 API のタイプ
+
+<span class="preview"> ドキュメントアシュランスサービスはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). この機能のドキュメントは変更される場合があります。</span>
+
+## ドキュメント保証 {#doc-assurance}
+
+DocAssurance サービスには、以下の Signature API と Encyption API が含まれています。
+
+### 署名 API
+
+署名 API を使用すると、組織が配信および受信するAdobe PDFドキュメントのセキュリティとプライバシーを保護できます。 このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。セキュリティ機能がドキュメント自体に適用されるので、ドキュメントは安全で、ライフサイクル全体にわたって制御されます。ドキュメントは、ファイアウォール外でも、オフラインでダウンロードされた場合でも、組織に送り返される場合であったとしても、保護された状態を維持します。署名 API を使用して、次のタスクを実行できます。
+
+* 署名ドキュメントに署名フィールドをPDFします。
+* 署名ドキュメント内の指定した署名フィールドにPDFします。
+* PDF文書の認証
+
+### 暗号化 API
+
+暗号化 API を使用して、ドキュメントを暗号化および復号化できます。 ドキュメントが暗号化されると、その内容が読み取れなくなります。 許可されたユーザーは、ドキュメントを復号化して、コンテンツにアクセスできます。 PDFドキュメントがパスワードで暗号化されている場合、ユーザーは開くパスワードを指定してから、Adobe ReaderまたはAdobe Acrobatでドキュメントを表示する必要があります。 同様に、PDFドキュメントが証明書で暗号化されている場合、PDFドキュメントを、PDFドキュメントの暗号化に使用された証明書（秘密鍵）に対応する公開鍵で復号化する必要があります。
+
+Encryption API を使用して、次のタスクを実行できます。
+
+* パスワードで PDF ドキュメントを暗号化します。
+* PDF ドキュメントからパスワードベースの暗号化を削除します。
+* セキュリティドキュメントに適用されるセキュリティのPDFを取得します。
+
+署名 API と暗号化 API の両方が [同期 API](#types-of-communications-apis-types).
+
+
+## 通信 API のタイプ {#types}
 
 通信は、オンデマンドおよびバッチでのドキュメント生成用に HTTP API を提供します。
 

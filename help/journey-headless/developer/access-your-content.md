@@ -2,7 +2,7 @@
 title: AEM Delivery API を使用してコンテンツにアクセスする方法
 description: AEM ヘッドレスデベロッパージャーニーのこのパートでは、GraphQL クエリを使用してコンテンツフラグメントのコンテンツにアクセスする方法を説明します。
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 072f76672198a68a9b6ede51d4a93d3ab27f3c84
+source-git-commit: f58581f6f81e60edafd79dd1d305bd479b65eed5
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 96%
@@ -369,10 +369,10 @@ AEM GraphQL API の使用と必要な要素の設定について詳しくは、�
    * [サンプルクエリ - 1 つの特定の都市フラグメント](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
    * [メタデータのサンプルクエリ - 「GB」という賞のメタデータのリスト](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
    * [サンプルクエリ - 名前付きバリエーションを持つすべての都市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
-* [設定ブラウザーでコンテンツフラグメント機能を有効にする](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
-* [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-   * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
-   * [JSON 出力](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
+* [設定ブラウザーでコンテンツフラグメント機能を有効にする](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)
+* [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/overview.md)
+   * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [JSON 出力](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [クロスオリジンリソース共有（CORS）について](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ja#understand-cross-origin-resource-sharing-(cors))
 * [GraphQLの永続クエリ — Dispatcher でのキャッシュの有効化](/help/headless/deployment/dispatcher-caching.md)
 * [サーバー側 API のアクセストークンの生成](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)

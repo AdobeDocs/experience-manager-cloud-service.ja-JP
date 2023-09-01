@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0 リリースのリリースノート。'
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 79%
+ht-degree: 81%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 79%
 
 ### の新機能[!DNL Sites] {#sites-features}
 
-* 新しい [ユーザーインターフェイス](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) は、コンテンツ管理者やコンテンツ作成者が効率的に管理（公開、非公開、コピー、移動などのアクションを実行）、検索/フィルタリング、ヘッドレスユースケース用のコンテンツフラグメントの作成をおこなえるようになりました。
+* 新しい [ユーザーインターフェイス](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) は、コンテンツ管理者やコンテンツ作成者が効率的に管理（公開、非公開、コピー、移動などのアクションを実行）、検索/フィルタリング、ヘッドレスユースケース用のコンテンツフラグメントの作成をおこなえるようになりました。
 
   ![コンテンツフラグメントコンソール](/help/release-notes/assets/cf-ui.png)
 
@@ -67,7 +67,7 @@ Experience Manager Assets は Adobe Sensei AI 機能を使用して、[画像内
 
 ![製品コックピットのプロパティの概要](/help/assets/CIF/product_cockpit_properties_overview.png)
 
-* I/O Runtime 上のサードパーティコネクタの互換性と堅牢性の向上
+* I/O Runtime 上のサードパーティのコネクタの互換性と堅牢性の向上
 
 * GQL クライアント設定の上書きのサポートを改善しました（例えば、カスタムキャッシュ動作を設定する）。
 

@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 リリースのリリースノート。'
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 75%
@@ -37,7 +37,7 @@ ht-degree: 75%
 ### [!DNL Sites] プレリリースチャネルで利用できる新機能 {#prerelease-features-sites}
 
 * GraphQL の様々な機能
-* コンテンツフラグメントのヘッドレス使用に最適化された[新しいコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
+* コンテンツフラグメントのヘッドレス使用に最適化された[新しいコンソール](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -58,7 +58,7 @@ Experience Manager Assets は、Adobe Sensei AI 機能を使用して、[画像�
 
 * **アダプティブフォームと Microsoft® Power Automate の統合**：送信時に Microsoft® Power Automate の Cloud Flow を実行するようにアダプティブフォームを設定できるようになりました。設定済みのアダプティブフォームは、キャプチャされたデータ、添付ファイルおよびレコードのドキュメントを Power Automate クラウドフローに送信して処理します。 Microsoft® Power Automate の機能を活用して、キャプチャされたデータを中心にビジネスロジックを構築し、顧客のワークフローを自動化しながら、カスタムのデータキャプチャエクスペリエンスを構築するのに役立ちます。
 
-* **アダプティブフォームを作成するためのウィザード**:ビジネスユーザーにわかりやすいウィザードを使用して、アダプティブFormsをすばやくオーサリングできます。 このウィザードではクイックタブナビゲーションを使用して、アダプティブフォームを作成するための事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択できます。
+* **アダプティブフォームを作成するためのウィザード**：ビジネスユーザーにとって使いやすいウィザードを使用して、アダプティブFormsをすばやくオーサリングできます。 このウィザードではクイックタブナビゲーションを使用して、アダプティブフォームを作成するための事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択できます。
 
   ![アダプティブフォームの作成ウィザード](/help/release-notes/assets/wizard.png)
 

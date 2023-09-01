@@ -2,20 +2,31 @@
 title: コンテンツフラグメント
 description: Adobe Experience Manager as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、使用が可能になります。
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 86%
+source-wordcount: '1286'
+ht-degree: 83%
 
 ---
 
 # コンテンツフラグメント {#content-fragments}
 
-Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントは、[ページに依存しないアセットとして作成および管理されます](/help/sites-cloud/administering/content-fragments/content-fragments.md)。
+Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントは、[ページに依存しないアセットとして作成および管理されます](/help/sites-cloud/administering/content-fragments/overview.md)。
 
 これにより、チャネルに依存しないコンテンツを様々なバリエーション（チャネル固有）で作成できます。その後、コンテンツページをオーサリングする際に、これらのフラグメントとそれらのバリエーションを使用できます。
 
 更新された JSON エクスポーターと共に構造化コンテンツフラグメントを使用して、AEM コンテンツをコンテンツサービス経由で AEM ページ以外のチャネルに配信することもできます。
+
+>[!NOTE]
+>
+>コンテンツフラグメントは、 **Sites** 機能を含むが、 **Assets**.
+>
+>引き続き **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** コンソールから管理できますが、現在は主に&#x200B;**[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**&#x200B;コンソールで管理します。
+>
+>コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。
+>
+>* の新しいエディター [コンテンツフラグメント — オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)( 主に、 **コンテンツフラグメント** コンソール。
+>* The [オリジナルエディター](/help/assets/content-fragments/content-fragments-variations.md) は主に次の場所からアクセスします： **Assets** コンソール。
 
 >[!NOTE]
 >
@@ -29,7 +40,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 >[!CAUTION]
 >
->このページは、基本的な用語および概念をフラグメントの作成および管理と共に紹介している[コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/content-fragments.md)（および関連ページ）と併せて読む必要があります。
+>このページは、基本的な用語および概念をフラグメントの作成および管理と共に紹介している[コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/overview.md)（および関連ページ）と併せて読む必要があります。
 
 コンテンツフラグメントは、次のことを可能にします。
 
@@ -105,7 +116,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 ### フラグメントエディターへのクイック接続 {#quick-connection-to-fragment-editor}
 
-コンポーネントツールバーの&#x200B;**編集**&#x200B;アイコンを使用して、フラグメントのソースを開いて（アセットを）編集できます。この機能により、[コンテンツフラグメントを編集および管理できます](/help/sites-cloud/administering/content-fragments/content-fragments.md)。
+コンポーネントツールバーの&#x200B;**編集**&#x200B;アイコンを使用して、フラグメントのソースを開いて（アセットを）編集できます。この機能により、[コンテンツフラグメントを編集および管理できます](/help/sites-cloud/administering/content-fragments/overview.md)。
 
 >[!CAUTION]
 >
@@ -115,7 +126,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 特定のコンテンツフラグメントがページに追加されると、フラグメントの各 HTML 段落の間（および上と下）に「**コンポーネントをここにドラッグ**」プレースホルダーが存在します。
 
-これにより、コンテンツをさらに追加できます [中間（中間コンテンツ）](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) （使用可能な任意のポイントで）フラグメントコンテンツを更新する場合、ルートフラグメントを変更する必要はありません。
+これにより、コンテンツをさらに追加できます [中間（中間コンテンツ）](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) （使用可能な任意のポイントで）フラグメントコンテンツを更新する場合、ルートフラグメントを変更する必要はありません。
 
 中間コンテンツの場合は、次のことができます。
 
@@ -131,9 +142,9 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 >[!NOTE]
 >
->フラグメント自体に[ビジュアルアセット（画像）を挿入](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)することもできます。
+>フラグメント自体に[ビジュアルアセット（画像）を挿入](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)することもできます。
 >
->フラグメント自体に挿入されたビジュアルアセットは、フラグメントの前の段落に配置されます。つまり、ビジュアルアセットと前の段落の間に中間コンテンツを配置することはできません。このレベルの接続が必要な場合は、画像をフラグメントに（[混在メディアフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)として）追加できます。
+>フラグメント自体に挿入されたビジュアルアセットは、フラグメントの前の段落に配置されます。つまり、ビジュアルアセットと前の段落の間に中間コンテンツを配置することはできません。このレベルの接続が必要な場合は、画像をフラグメントに（[混在メディアフラグメント](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)として）追加できます。
 
 >[!CAUTION]
 >
@@ -148,11 +159,11 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 ### 関連コンテンツの使用 {#using-associated-content}
 
-次の条件を満たしている場合： [関連コンテンツ](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) と [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md) これらのアセットは、（フラグメントをコンテンツページに配置した後に）サイドパネルから使用できます。 関連付けられたコンテンツは、事実上、[中間コンテンツ](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)用のコンテンツの特別なソースになります。
+次の条件を満たしている場合： [関連コンテンツ](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) と [コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md) これらのアセットは、（フラグメントをコンテンツページに配置した後に）サイドパネルから使用できます。 関連付けられたコンテンツは、事実上、[中間コンテンツ](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)用のコンテンツの特別なソースになります。
 
 >[!NOTE]
 >
->[ビジュアルアセット（画像など）](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)をフラグメントやページに追加するには、様々な方法があります。
+>[ビジュアルアセット（画像など）](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)をフラグメントやページに追加するには、様々な方法があります。
 
 >[!NOTE]
 >
@@ -166,7 +177,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 ### フラグメントに挿入されたアセット {#assets-inserted-into-the-fragment}
 
-アセット（画像など）がフラグメント自体に（[混在メディアフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)として）挿入されている場合、ページエディターでこれらのアセットを編集するためのオプションは制限されます。
+アセット（画像など）がフラグメント自体に（[混在メディアフラグメント](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)として）挿入されている場合、ページエディターでこれらのアセットを編集するためのオプションは制限されます。
 
 例えば、画像の場合、次のことができます。
 
@@ -181,7 +192,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 フラグメントを公開済みの web ページで使用できるようにするには、フラグメントを公開する必要があります。
 
-* フラグメントは、[フラグメントをコンテンツフラグメントコンソールで作成](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)した後に公開できます。
+* フラグメントは、[フラグメントをコンテンツフラグメントコンソールで作成](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)した後に公開できます。
 * 公開されるページに&#x200B;*非公開のフラグメント*&#x200B;があると、そのタイミングでフラグメントも公開できます。
 
 ## コンテンツフラグメントの書き出し {#exporting-content-fragments}

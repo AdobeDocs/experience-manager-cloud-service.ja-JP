@@ -1,10 +1,10 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.6.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.6.0 リリースのリリースノート。'
-source-git-commit: 2d10d03e478bff5a162c620c41ceac38a6d7911a
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 16%
+ht-degree: 38%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 16%
 
 ### の新機能[!DNL Experience Manager Sites] {#sites-features}
 
-* コンテンツフラグメントとその参照を [AEM Preview Service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) の使用 [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)を使用すると、ユーザーは、運用を開始する前に、切り離されたプレビューアプリケーションで最終的なエクスペリエンスをプレビューできます。
+* コンテンツフラグメントとその参照を [AEM Preview Service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) の使用 [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)を使用すると、ユーザーは、運用を開始する前に、切り離されたプレビューアプリケーションで最終的なエクスペリエンスをプレビューできます。
 
 ![コンテンツフラグメントコンソールでプレビュー](/help/assets/content-fragments-console-preview.png)
 
@@ -52,7 +52,7 @@ ht-degree: 16%
 
 The [新しいアセットビュー](/help/assets/assets-view-introduction.md) は、Experience Manager Assetsで使用できるようになりました。 Assets ビューにはシンプルなユーザーインターフェイスが用意されており、デジタルアセットの管理、検出、配布が容易になります。 このエクスペリエンスの対象は、クリエイティブ、読み取り専用のアセット消費者、より軽量な DAM ユーザーです。
 
-![タグ管理](/help/assets/assets/my-workspace.png)
+![タグ付けの管理](/help/assets/assets/my-workspace.png)
 
 **検索エクスペリエンスの強化**
 
@@ -64,13 +64,13 @@ Experience Manager Assetsを使用すると、検索結果のユーザーイン�
 
 **3D アセットのサムネールプレビュー**
 
-[!DNL Experience Manager Assets] が生成されました [一般的な 3D ファイル形式のサムネールプレビュー](/help/assets/file-format-support.md) gLB、USDz、FBX、3DS、OBJ、SBSAR を含みます。 これらのファイルがアップロードされると、デフォルトでサムネールが自動的に生成されます。
+[!DNL Experience Manager Assets] では、gLB、USDz、FBX、3DS、OBJ、SBSAR など、一般的な 3D ファイル形式のサムネールプレビューを生成するようになりました。[](/help/assets/file-format-support.md)これらのファイルがアップロードされると、デフォルトでサムネールが自動的に生成されます。
 
 **リンク共有設定**
 
 の新しい改善されたユーザーエクスペリエンス [リンク共有を作成しています](/help/assets/share-assets.md) 管理者がユーザーに対するこの機能のデフォルトの動作をカスタマイズできる、まったく新しい設定セットが追加されました。
 
-![タグ管理](/help/assets/assets/config-email-service.png)
+![タグ付けの管理](/help/assets/assets/config-email-service.png)
 
 **Dynamic Media：イメージプロファイルのスマート切り抜き関連のフィールドが更新されました**
 
@@ -78,21 +78,21 @@ Experience Manager Assetsを使用すると、検索結果のユーザーイン�
 
 ### Assets ビューの新機能 {#assets-view-features}
 
-**アセットの階層タグ付けにより、検索操作を高速化**
+**アセットの階層タグ付けにより、検索エクスペリエンスを高速化**
 
-時間の経過と共に、語彙が制御されるフラットなリストは管理できなくなります。 アセットビューがサポートされるようになりました。 [階層構造のタグ付け構造](/help/assets/tagging-management-assets-view.md)：関連するメタデータの適用、アセットの分類、検索のサポート、タグの再利用、検出性の向上などを容易におこなえます。
+語彙を制御するフラットなリストは、時間の経過と共に管理できなくなります。アセットビューがサポートされるようになりました。 [階層構造のタグ付け構造](/help/assets/tagging-management-assets-view.md)：関連するメタデータの適用、アセットの分類、検索のサポート、タグの再利用、検出性の向上などを容易におこなえます。
 
-![タグ管理](/help/assets/assets/tags-hierarchy.png)
+![タグ付けの管理](/help/assets/assets/tags-hierarchy.png)
 
 **ファイル、フォルダー、コレクションをピン留めして、すばやくアクセスできるようにする**
 
-次の操作を実行できます。 [ファイル、フォルダー、コレクションをピン留めしてアクセスを高速化](/help/assets/my-workspace-assets-view.md) 後で必要になった場合に、これらの項目に追加します。 固定された項目は、 **クイックアクセス** を参照してください。 リポジトリ内の保存先に移動する代わりに、My Workspace を使用してアクセスできます。
+次の操作を実行できます。 [ファイル、フォルダー、コレクションをピン留めしてアクセスを高速化](/help/assets/my-workspace-assets-view.md) 後で必要になった場合に、これらの項目に追加します。 ピン留めした項目は、マイワークスペースの「**クイックアクセス**」セクションに表示されます。リポジトリ内の保存場所に移動する代わりに、マイワークスペースを使用してこれらにアクセスできます。
 
 ![ワークスペースのタスク](/help/assets/assets/quick-access.png)
 
 **ごみ箱フォルダー内のアセットのフィルタリング**
 
-Assets ビューで次の操作が可能になりました。 [ごみ箱フォルダー内の使用可能なアセットのフィルタリング](/help/assets/navigate-assets-view.md). ごみ箱フォルダー内の適切なアセットを検索するために、標準フィルターまたはカスタムフィルターを適用して、アセットを復元または完全に削除できます。
+Assets ビューで次の操作が可能になりました。 [ごみ箱フォルダー内の使用可能なアセットのフィルタリング](/help/assets/navigate-assets-view.md). ごみ箱フォルダー内の適切なアセットを検索するために、標準フィルターまたはカスタムフィルターを適用して、アセットを復元するか完全に削除することができます。
 
 **3D アセットのサムネールプレビュー**
 
@@ -100,13 +100,13 @@ Assets ビューで、gLB、USDz、FBX、3DS、OBJ、SBSAR など、一般的な
 
 ![ワークスペースのタスク](/help/assets/assets/3d-preview.png)
 
-**上位の検索済みキーワードを表示**
+**上位の検索した用語の表示**
 
-アセットビューがサポートされるようになりました。 [デプロイメント内で検索された上位の用語の表示](/help/assets/my-workspace-assets-view.md) の使用 **インサイト** を参照してください。 詳細なインサイトに移動して、過去 30 日間または 12 ヶ月間の上位の検索結果を表示することもできます。
+アセットビューがサポートされるようになりました。 [デプロイメント内で検索された上位の用語の表示](/help/assets/my-workspace-assets-view.md) の使用 **インサイト** を参照してください。 また、詳細なインサイトに移動して、過去 30 日間または 12 か月間で上位の検索結果を表示することもできます。
 
 ![ワークスペースのタスク](/help/assets/assets/insights-top-searches.png)
 
-**メタデータフォームの強化**
+**メタデータフォームの機能強化**
 
 Assets ビューで次の操作が可能になりました。 [複数値テキストおよびドロップダウンリストプロパティコンポーネントを追加する](/help/assets/metadata-assets-view.md#property-components) をメタデータフォームに追加します。
 
@@ -114,17 +114,17 @@ Assets ビューで次の操作が可能になりました。 [複数値テキ�
 
 ### [!DNL Forms] で利用できる新機能 {#new-features-available-in-channel}
 
-* [AEM Page Editor 内のアダプティブForms](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): AEMページエディターを使用して、複数のフォームをすばやく作成し、サイトのページに追加できるようになりました。 この機能を使用すると、コンテンツ作成者は、動的な動作、検証、データ統合、レコードのドキュメントの生成、ビジネスプロセスの自動化など、アダプティブフォームコンポーネントの機能を利用して、Sites ページ内にシームレスなデータ取得エクスペリエンスを作成できます。 以下の操作を実行できます。
+* [AEM ページエディター内のアダプティブフォーム](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)：AEM ページエディターを使用して、複数のフォームを素早く作成し、Sites ページに追加できるようになりました。この機能を使用すると、コンテンツ作成者は、動的な動作、検証、データ統合、レコードのドキュメントの生成、ビジネスプロセスの自動化など、アダプティブフォームコンポーネントの機能を利用して、Sites ページ内にシームレスなデータキャプチャエクスペリエンスを作成できます。以下の操作を実行できます。
 
-   * フォームコンポーネントをAEM SitesエディターまたはエクスペリエンスフラグメントのアダプティブFormsコンテナコンポーネントにドラッグ&amp;ドロップして、アダプティブフォームを作成します。
-   * AEM Sitesエディター内でアダプティブFormsウィザードを使用すると、任意の Sites ページとは独立したフォームを作成して、自由に複数のページでそのようなフォームを再利用できます。
-   * 複数のフォームを Sites ページに追加し、ユーザーエクスペリエンスを合理化し、より柔軟に提供します。
+   * フォームコンポーネントを AEM サイトエディターまたはエクスペリエンスフラグメントのアダプティブフォームコンテナコンポーネントにドラッグ＆ドロップして、アダプティブフォームを作成します。
+   * AEM サイトエディター内でアダプティブフォームウィザードを使用すると、任意の Sites ページとは独立したフォームを作成して、自由に複数のページでそのフォームを再利用できます。
+   * 複数のフォームを Sites ページに追加し、ユーザーエクスペリエンスを合理化し、柔軟性を高めます。
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
-* [Adobe Acrobat Sign Solutions for Government](/help/forms/adobe-sign-integration-adaptive-forms.md):AEM Formsは、Adobe Acrobat Sign Solutionsと統合され、政府機関向けになりました。 この統合により、政府関連のアカウント（政府機関および機関）に対するアダプティブフォーム送信により、e-Signatures の高度なコンプライアンスとセキュリティを提供します。
+* [Adobe Acrobat Sign Solutions for Government](/help/forms/adobe-sign-integration-adaptive-forms.md):AEM Formsは、Adobe Acrobat Sign Solutionsと統合され、政府機関向けになりました。 この統合により、政府関連のアカウント（政府機関および機関）に対するアダプティブフォーム送信による電子サインに、高度なコンプライアンスとセキュリティを提供します。
 
-  Adobe Acrobat Sign Solutions for Government との統合により、Adobeのパートナーや政府のお客様は、Adaptive Formsで最もミッションクリティカルで機密性の高い業務の一部に電子署名を使用できます。 このセキュリティの強化により、すべての電子署名が FedRAMP Moderate コンプライアンスに完全に準拠し、Adobeの政府のお客様に安心して対応できるようになります。
+  Adobe Acrobat Sign Solutions for Government との統合により、Adobeのパートナーや政府のお客様は、Adaptive Formsで最もミッションクリティカルで機密性の高い業務の一部に電子署名を使用できます。 このセキュリティの強化により、すべての電子サインが FedRAMP Moderate コンプライアンスに完全に準拠し、アドビの政府機関のお客様に安心感を提供します。
 
 * [ルールエディターでのカスタムエラーハンドラーによるエラー処理の強化](/help/forms/add-custom-error-handler-adaptive-forms.md)：外部サービスから返されたエラーに応じて（クライアントライブラリを使用して）カスタム関数を呼び出し、エンドユーザーに対してカスタマイズされた応答を提供できるようになりました。 または、サービスから返されたエラーに対して特定のアクションを実行できます。 例えば、特定のエラーコードに対してバックエンドでカスタムワークフローを呼び出したり、サービスが停止していることを顧客に通知したりできます。
 

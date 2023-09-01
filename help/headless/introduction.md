@@ -3,7 +3,7 @@ title: AEM のヘッドレスの概要
 description: 詳細なドキュメントとヘッドレスジャーニーを組み合わせた Adobe Experience Manager（AEM）のヘッドレスについて説明します。 コンテンツフラグメントモデル、コンテンツフラグメント、GraphQL API などの機能を使用してヘッドレスエクスペリエンスを強化する方法について説明します。
 landing-page-description: Adobe Experience Manager as a Cloud Service でヘッドレスを使用および管理する方法を説明します。
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 98%
@@ -42,7 +42,7 @@ AEM as a Cloud Service は、次の 3 つの強力な機能を提供すること
 1. **コンテンツフラグメント**
    * コンテンツフラグメントは、コンテンツフラグメントモデルに基づいて作成されます。
    * コンテンツフラグメントは、コンテンツ作成者によって AEM コンテンツフラグメントエディターで作成されます。
-   * コンテンツフラグメントは AEM Assets として保存されますが、Assets コンソールまたは [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)を使用して管理できます。
+   * コンテンツフラグメントは AEM Assets として保存されますが、Assets コンソールまたは [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)を使用して管理できます。
 1. **配信用のコンテンツ API**
    * AEM GraphQL API では、コンテンツフラグメント配信をサポートしています。
    * AEM Assets REST API では、コンテンツフラグメントの CRUD 操作をサポートしています。

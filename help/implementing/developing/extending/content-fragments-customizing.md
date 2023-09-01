@@ -2,7 +2,7 @@
 title: コンテンツフラグメントのカスタマイズと拡張
 description: コンテンツフラグメントは、標準アセットを拡張します。 カスタマイズ方法を学びます。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '1812'
 ht-degree: 75%
@@ -13,13 +13,13 @@ ht-degree: 75%
 
 Adobe Experience Manager as a Cloud Service 内で、コンテンツフラグメントは標準アセットを拡張します。
 
-* コンテンツフラグメントについて詳しくは、[コンテンツフラグメントの作成と管理](/help/sites-cloud/administering/content-fragments/content-fragments.md)および[コンテンツフラグメントを使用したページオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)を参照してください。
+* コンテンツフラグメントについて詳しくは、[コンテンツフラグメントの作成と管理](/help/sites-cloud/administering/content-fragments/overview.md)および[コンテンツフラグメントを使用したページオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)を参照してください。
 
 * 「[アセットの管理](/help/assets/manage-digital-assets.md)」を参照してください。
 
 ## アーキテクチャ {#architecture}
 
-コンテンツフラグメントの基本的な[構成要素](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)は次の通りです。
+コンテンツフラグメントの基本的な[構成要素](/help/sites-cloud/administering/content-fragments/overview.md#constituent-parts-of-a-content-fragment)は次の通りです。
 
 * *コンテンツフラグメント*
 * *コンテンツフラグメント*&#x200B;を構成する 1 つ以上のコンテンツ要素
@@ -78,7 +78,7 @@ Adobe Experience Manager as a Cloud Service 内で、コンテンツフラグメ
 
 #### アセットの権限 {#asset-permissions}
 
-詳しくは、[コンテンツフラグメント - 削除に関する考慮事項](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)を参照してください。
+詳しくは、[コンテンツフラグメント - 削除に関する考慮事項](/help/sites-cloud/administering/content-fragments/delete-considerations.md)を参照してください。
 
 #### 機能の統合 {#feature-integration}
 
@@ -323,7 +323,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### 例：自動保存間隔の指定 {#example-specifying-the-auto-save-interval}
 
-[自動保存間隔](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#save-close-and-versions)（秒単位）は、設定マネージャー（ConfMgr）を使用して定義できます。
+[自動保存間隔](/help/sites-cloud/administering/content-fragments/managing.md#save-close-and-versions)（秒単位）は、設定マネージャー（ConfMgr）を使用して定義できます。
 
 * ノード：`<conf-root>/settings/dam/cfm/jcr:content`
 * プロパティ名：`autoSaveInterval`

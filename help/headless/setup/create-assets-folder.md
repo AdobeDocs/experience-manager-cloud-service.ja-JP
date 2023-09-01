@@ -2,7 +2,7 @@
 title: アセットフォルダーの作成 - ヘッドレスセットアップ
 description: AEM コンテンツフラグメントモデルを使用すると、ヘッドレスコンテンツの基盤となるコンテンツフラグメントの構造を定義できます。
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 86%
@@ -29,12 +29,12 @@ AEM コンテンツフラグメントモデルを使用すると、ヘッドレ�
 1. **作成／フォルダー**&#x200B;をタップまたはクリックします。
 1. フォルダーの&#x200B;**タイトル**&#x200B;と&#x200B;**名前**&#x200B;を指定します。
    * **タイトル**&#x200B;は内容がわかるように付けます。
-   * この **名前** はリポジトリ内のノード名になります。
+   * The **名前** はリポジトリ内のノード名になります。
       * タイトルに基づいて自動的に生成され、 [AEM命名規則](/help/implementing/developing/introduction/naming-conventions.md).
       * 必要に応じて調整できます。
 
    ![フォルダーを作成](../assets/assets-folder-create.png)
-1. チェックマークの上にポインターを置きタップすることで、作成したばかりのフォルダーを選択します。次に、 **プロパティ** ツールバーから ( または `p` [キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)) をクリックします。
+1. チェックマークの上にポインターを置きタップすることで、作成したばかりのフォルダーを選択します。次に、 **プロパティ** をツールバーから ( または `p` [キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)) をクリックします。
 1. **プロパティ**&#x200B;ウィンドウで、「**Cloud Services**」タブを選択します。
 1. **クラウド設定**&#x200B;で、[以前に作成した設定](create-configuration.md)を選択します。
    ![アセットフォルダーの設定](../assets/assets-folder-configure.png)
@@ -53,4 +53,4 @@ AEM コンテンツフラグメントモデルを使用すると、ヘッドレ�
 
 >[!TIP]
 >
->コンテンツフラグメントの管理について詳しくは、[コンテンツフラグメントのドキュメント](/help/sites-cloud/administering/content-fragments/content-fragments.md)を参照してください。
+>コンテンツフラグメントの管理について詳しくは、[コンテンツフラグメントのドキュメント](/help/sites-cloud/administering/content-fragments/overview.md)を参照してください。

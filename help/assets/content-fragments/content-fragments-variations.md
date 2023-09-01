@@ -2,16 +2,22 @@
 title: バリエーション - フラグメントコンテンツのオーサリング（アセット - コンテンツフラグメント）
 description: フラグメントのコンテンツを作成し、目的に応じてそのコンテンツのバリエーションを作成できるようにすることで、バリエーションによって AEM でのヘッドレスコンテンツの柔軟性をさらに高める方法を説明します。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 9a7087979831ac08aed5f93df024f1c835a9fc08
+source-git-commit: fa133319077388a3598ca13b2574b8b62bf9b2b4
 workflow-type: tm+mt
-source-wordcount: '2516'
-ht-degree: 77%
+source-wordcount: '2567'
+ht-degree: 75%
 
 ---
 
 # バリエーション - フラグメントコンテンツのオーサリング{#variations-authoring-fragment-content}
 
 [バリエーション](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)は、特定のチャネルやシナリオで使用するためにプライマリコンテンツのコピーを作成して編集するための AEM のコンテンツフラグメントの重要な機能で、ヘッドレスコンテンツの配信をさらに柔軟にします。
+
+>[!NOTE]
+>
+>コンテンツフラグメントは Sites 機能ですが、 **Assets**.
+>
+>コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。 この節では、主に **Assets** コンソール。 Sites のドキュメントを参照してください。 [コンテンツフラグメント — オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)：新しいエディターの詳細 ( 主に **コンテンツフラグメント** コンソール )。
 
 「**バリエーション**」タブから、次の操作を実行できます。
 

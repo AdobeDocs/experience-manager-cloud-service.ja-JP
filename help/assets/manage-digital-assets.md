@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5b61b60a94b944a747232b238c3ce48195a5a212
 workflow-type: tm+mt
-source-wordcount: '4376'
-ht-degree: 99%
+source-wordcount: '4508'
+ht-degree: 96%
 
 ---
 
@@ -76,6 +76,21 @@ DAM ユーザーがリポジトリーに既に存在する 1 つ以上のアセ�
 >[!NOTE]
 >
 >アセットをリポジトリーにアップロードすると、Experience Manager は重複を検出し、最初の 100 個の重複アセットについて通知します。
+
+## ZIP アーカイブの抽出 {#extract-zip-archives}
+
+Experience Managerで管理されている ZIP アーカイブを選択し、ファイルをダウンロードせずにExperience Managerに直接展開します。
+
+ZIP ファイルを抽出するには、次の手順を実行します。
+
+1. ZIP ファイルタイプを選択します。
+1. 次をクリック： **[!UICONTROL アーカイブを抽出]** オプションは、アクションバーで使用できます。
+1. 圧縮フォルダー内で使用可能な、抽出したアセットを保存するフォルダーを選択します。
+1. 「**[!UICONTROL 次へ]**」をクリックします。
+1. 抽出時にファイル名の競合を処理するには、適切な動作を選択します。 既存のアセットの新しいバージョンの作成、アセットの置き換え、両方のアセットの保存先フォルダーへの保持、または新しいアセットの抽出のスキップを選択できます。
+1. クリック **[!UICONTROL 抽出]**. Zip 抽出プロセスが開始します。 処理が完了したら、抽出したアセットを保存先フォルダーに表示できます。
+
+   ![zip 抽出](assets/zip-extraction.png)
 
 ## アセットのプレビュー {#previewing-assets}
 

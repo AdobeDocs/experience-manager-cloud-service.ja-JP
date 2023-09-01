@@ -3,15 +3,24 @@ title: コンテンツフラグメントコンソールのキーボードショ�
 description: AEM 全体を通して、コンテンツフラグメント管理用のものを始めとして、様々なキーボードショートカットを使用できます
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: fe6ea615-43aa-41cd-a21c-50d855084154
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # コンテンツフラグメントコンソールのキーボードショートカット {#keyboard-shortcuts-content-fragments-console}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 様々なキーボードショートカットを、コンテンツフラグメントコンソールで使用することができます。
 

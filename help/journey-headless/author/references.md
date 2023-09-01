@@ -2,9 +2,9 @@
 title: コンテンツフラグメントでの参照の使用について
 description: コンテンツ、他のフラグメントおよび他のアセット（メディア）への参照をコンテンツフラグメントで使用する方法について説明します。ヘッドレス CMS オーサリング用のネストされたフラグメントの必要性と仕組みを紹介します。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '712'
 ht-degree: 87%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 87%
 
 参照には、専用のデータタイプを持つもの（コンテンツ参照やフラグメント参照など）もあれば、テキストブロック内の参照として追加されるもの（アセット参照やアドホック参照など）もあります。
 
-![コンテンツフラグメント - 参照](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
+![コンテンツフラグメント - 参照](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## コンテンツ参照 {#content-references}
 
@@ -92,11 +92,7 @@ ht-degree: 87%
 
 コンテンツフラグメントエディターの「**構造ツリー**」タブを使用すると、フラグメントで参照されているフラグメント間を移動し、さらに、それらのフラグメントに含まれている参照間を移動できます。参照を選択すると、そのフラグメントが編集用に開きます。
 
->[!NOTE]
->
->メインパネルのパンくずリストを使用して、開始点に戻ることができます。
-
-![コンテンツフラグメント構造ツリー](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
+![コンテンツフラグメント構造ツリー](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
 
 ## アドホック参照 {#adhoc-references}
 
@@ -110,21 +106,21 @@ ht-degree: 87%
 
 ## その他のリソース {#additional-resources}
 
-* [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [コンテンツフラグメントの管理](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+   * [コンテンツフラグメントの管理](/help/sites-cloud/administering/content-fragments/managing.md)
 
-      * [アセットフォルダーへの設定の適用](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [アセットフォルダーへの設定の適用](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder)
 
-      * [コンテンツフラグメントの作成](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+      * [コンテンツフラグメントの作成](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
 
-   * [バリエーション - コンテンツフラグメントのオーサリング](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+   * [コンテンツフラグメントのオーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)
 
-   * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [コンテンツフラグメントモデル - データタイプ](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+      * [コンテンツフラグメントモデル - データタイプ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-      * [コンテンツフラグメントモデル - プロパティ](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
+      * [コンテンツフラグメントモデル - プロパティ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
 * はじめる前に
    * [アセットフォルダーの作成 - ヘッドレスセットアップ](/help/headless/setup/create-assets-folder.md)

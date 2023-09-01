@@ -4,16 +4,22 @@ description: コンテンツフラグメントエディターでマークダウ�
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 67%
+source-wordcount: '576'
+ht-degree: 61%
 
 ---
 
 # Markdown {#markdown}
 
 [オーサリング](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)中に、コンテンツフラグメントエディターは *Markdown* 構文を使用してユーザーがヘッドレスコンテンツを簡単に記述できるようにします。
+
+>[!NOTE]
+>
+>コンテンツフラグメントは Sites 機能ですが、 **Assets**.
+>
+>コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。 この節では、主に **Assets** コンソール。 Sites のドキュメントを参照してください。 [コンテンツフラグメント — オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)：新しいエディターの詳細 ( 主に **コンテンツフラグメント** コンソール )。
 
 ![Markdown エディター](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

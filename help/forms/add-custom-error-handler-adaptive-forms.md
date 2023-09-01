@@ -6,10 +6,10 @@ keywords: カスタムエラーハンドラーの追加、デフォルトエラ�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 9%
+source-wordcount: '2428'
+ht-degree: 8%
 
 ---
 
@@ -28,7 +28,7 @@ AEM Forms には、すぐに使用できる、フォーム送信の成功およ�
 
 アダプティブフォームは、事前設定された検証条件に基づいて、フィールドに指定した入力を検証し、外部サービスを呼び出すように設定された REST エンドポイントから返される様々なエラーを確認します。 アダプティブフォームで使用するデータソースに基づいて、検証条件を設定できます。 例えば、RESTful web サービスをデータソースとして使用する場合、Swagger 定義ファイルで検証条件を定義できます。
 
-入力値が検証条件を満たす場合、その値がデータソースの他のデータソースに送信され、アダプティブフォームはエラーハンドラーを使用してエラーメッセージを表示します。 この方法と同様に、Adaptive Formsはカスタムエラーハンドラーと統合され、データの検証を実行します。 入力値が検証条件を満たさない場合、エラーメッセージはアダプティブフォームのフィールドレベルに表示されます。 これは、サーバーから返される検証エラーメッセージが標準メッセージ形式の場合に発生します。
+入力値が検証条件を満たす場合、その値がデータソースの他のデータソースに送信され、アダプティブフォームはエラーハンドラーを使用してエラーメッセージを表示します。 この方法と同様に、アダプティブFormsはカスタムエラーハンドラーと統合して、データ検証を実行します。 入力値が検証条件を満たさない場合、エラーメッセージはアダプティブフォームのフィールドレベルに表示されます。 これは、サーバーから返される検証エラーメッセージが標準メッセージ形式の場合に発生します。
 
 
 ## エラーハンドラーの使用 {#uses-of-error-handler}
@@ -175,44 +175,42 @@ dataRef の値は、 **[!UICONTROL プロパティ]** フォームコンポー�
 
 ## ルールエディターを使用してエラーハンドラーを追加 {#add-error-handler-using-rule-editor}
 
-の使用 [ルールエディターの Invoke Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 「 」アクションでは、アダプティブフォームで使用するデータソースに基づいて検証条件を定義します。 RESTful Web サービスをデータソースとして使用する場合、Swagger 定義ファイルで検証条件を定義できます。 アダプティブFormsのエラーハンドラー関数とルールエディターを利用すると、エラー処理を効果的に管理およびカスタマイズできます。 ルールエディターを使用して条件を定義し、ルールがトリガーされたときに実行するアクションを設定します。 アダプティブフォームは、事前設定された検証条件に基づいて、フィールドに入力した入力を検証します。 入力値が検証条件を満たさない場合、エラーメッセージはアダプティブフォームのフィールドレベルに表示されます。
+の使用 [ルールエディターの Invoke Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 「 」アクションでは、アダプティブフォームで使用するデータソースに基づいて検証条件を定義します。 RESTful Web サービスをデータソースとして使用する場合、Swagger 定義ファイルで検証条件を定義できます。 アダプティブFormsのエラーハンドラー関数とルールエディターを使用すると、エラー処理を効果的に管理およびカスタマイズできます。 ルールエディターを使用して条件を定義し、ルールがトリガーされたときに実行するアクションを設定します。 アダプティブフォームは、事前設定された検証条件に基づいて、フィールドに入力した入力を検証します。 入力値が検証条件を満たさない場合、エラーメッセージはアダプティブフォームのフィールドレベルに表示されます。
 
 >[!NOTE]
 >
 > * ルールエディターの Invoke サービスアクションでエラーハンドラーを使用するには、フォームデータモデルを使用して Adaptive Formsを設定します。
-> * デフォルトのエラーハンドラーは、エラー応答が標準スキーマにある場合にフィールドにエラーメッセージを表示するためにデフォルトで提供されます。 デフォルトのエラーハンドラーは、エラー応答が標準のスキーマに準拠していない場合に、カスタムエラーハンドラーを呼び出すこともできます。
+> * エラー応答が標準のスキーマにある場合に、フィールドにエラーメッセージを表示するデフォルトのエラーハンドラーが提供されます。 デフォルトのエラーハンドラーは、カスタムエラーハンドラー関数から呼び出すこともできます。
 
-<!-- 
-Using Rule Editor, you can:
-* [Add default error handler function](#add-default-errror-handler)
-* [Add custom error handler function](#add-custom-errror-handler)
+ルールエディターを使用して、次の操作を実行できます。
+* [デフォルトのエラーハンドラー関数を追加](#add-default-errror-handler)
+* [カスタムエラーハンドラー関数を追加](#add-custom-errror-handler)
 
 
-### Add default error handler function {#add-default-errror-handler}
+### デフォルトのエラーハンドラー関数を追加 {#add-default-errror-handler}
 
-A default error handler is supported by default to display error messages on fields if the error response is in standard schema or in server-side validation failure. 
-To understand how to use a default error handler using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) action, take an example of a simple Adaptive Form with two fields, **Pet ID** and **Pet Name** and use a default error handler at the **Pet ID** field to check for various errors returned by the REST endpoint configured to invoke an external service, for example, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. To add a default error handler using the Rule Editor's Invoke Service action, execute the following steps:
+デフォルトのエラーハンドラーは、エラー応答が標準のスキーマの場合、またはサーバー側の検証エラーの場合に、フィールドにエラーメッセージを表示する機能がサポートされています。
+デフォルトのエラーハンドラーを使用する方法を理解するには、 [ルールエディターの Invoke Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 「 」アクションでは、2 つのフィールドを持つ簡単なアダプティブフォームの例を見てみましょう。 **ペット ID** および **ペット名** デフォルトのエラーハンドラを **ペット ID** 外部サービスを呼び出すように設定された REST エンドポイントが返す様々なエラーを確認するフィールド。例えば、 `200 - OK`,`404 - Not Found`, `400 - Bad Request`. ルールエディターの「サービスを起動」アクションを使用してデフォルトのエラーハンドラーを追加するには、次の手順を実行します。
 
-1. Open an Adaptive Form in authoring mode, select a form component and tap **[!UICONTROL Rule Editor]** to open the rule editor.
-1. Tap **[!UICONTROL Create]**.
-1. Create a condition in the **When** section of the rule. For example, **When[Name of Pet ID field]** is changed. Select is changed from the **Select State** drop-down list.
-1. In the **Then** section, select **[!UICONTROL Invoke Service]** from the **Select Action** drop-down list.
-1. Select a **Post service** and its corresponding data bindings from the **Input** section. For example, to validate **Pet ID**, select a **Post service** as **GET /pet/{petId}** and select **Pet ID** in the **Input** section.
-1. Select the data bindings from the **Output** section. Select **Pet Name** in the **Output** section.
-1. Select **[!UICONTROL Default Error Handler]** from the **Error Handler** section. 
-1. Click **[!UICONTROL Done]**.
+1. アダプティブフォームをオーサリングモードで開き、フォームコンポーネントを選択して、 **[!UICONTROL ルールエディター]** をクリックして、ルールエディターを開きます。
+1. 「**[!UICONTROL 作成]**」をタップします。
+1. ルールの&#x200B;**条件**&#x200B;セクションで条件を作成します。例： **条件[ペット ID フィールドの名前]** が変更されました。 「 」を **状態を選択** 」ドロップダウンリストから選択できます。
+1. 「**Then**」セクションの&#x200B;**[!UICONTROL アクションの選択]**&#x200B;ドロップダウンリストで「**サービスの呼び出し**」を選択します。
+1. を選択します。 **ポストサービス** と、対応するデータバインディングが **入力** 」セクションに入力します。 例えば、検証する場合は、次のようにします。 **ペット ID**&#x200B;を選択し、 **ポストサービス** as **GET/pet/{petId}** を選択し、 **ペット ID** （内） **入力** 」セクションに入力します。
+1. からデータ連結を選択します。 **出力** 」セクションに入力します。 選択 **ペット名** （内） **出力** 」セクションに入力します。
+1. 選択 **[!UICONTROL デフォルトのエラーハンドラー]** から **エラーハンドラー** 」セクションに入力します。
+1. 「**[!UICONTROL 完了]**」をクリックします。
 
- ![add a default error handler for a field validation checks in a form](/help/forms/assets/default-error-handler.png)
+![フォーム内のフィールド検証チェックにデフォルトのエラーハンドラーを追加する](/help/forms/assets/default-error-handler.png)
 
-As a result of this rule, the values you enter for **Pet ID** checks validation for **Pet Name** using external service invoked by REST endpoint. If the validation criteria based on the data source fail, the error messages are displayed at the field level.
+このルールの結果、 **ペット ID** 検証を確認 **ペット名** REST エンドポイントによって呼び出された外部サービスを使用する。 データソースに基づく検証条件が失敗した場合は、エラーメッセージがフィールドレベルで表示されます。
 
- ![display the default error message when you add a default error handler in a form to handle error responses](/help/forms/assets/default-error-message.png)
-
--->
+![デフォルトのエラーメッセージを表示するには、エラー応答を処理するためのフォームにデフォルトのエラーハンドラーを追加します](/help/forms/assets/default-error-message.png)
 
 ### カスタムエラーハンドラー関数を追加 {#add-custom-errror-handler}
 
 カスタムエラーハンドラー関数を追加して、次のようなアクションを実行できます。
+
 * 非標準または標準のエラー応答を使用するエラー応答を処理します。 これらの非標準的なエラー応答は、 [エラー応答の標準スキーマ](#failure-response-format).
 * analytics イベントを任意の analytics プラットフォームに送信します。 例：Adobe Analytics.
 * エラーメッセージが表示されるモーダルダイアログを表示します。
@@ -229,8 +227,10 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
 #### 1.カスタムエラーハンドラーを作成する {#create-custom-error-message}
 
 カスタムエラー関数を作成するには、次の手順を実行します。
-1. [AEM Formsas a Cloud Serviceリポジトリのクローンを作成します。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=jp#accessing-git).
-1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/` に移動します。
+
+1. [AEM Forms as a Cloud Service Repository の複製](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=jp#accessing-git).
+1. の下にフォルダーを作成します。 `[AEM Forms as a Cloud Service repository folder]/apps/` フォルダー。 例えば、という名前のフォルダーを作成します。 `experience-league`
+1. に移動します。 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` をクリックし、 `ClientLibraryFolder` as `clientlibs`.
 1. `js` という名前のフォルダーを作成します。
 1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` フォルダーに移動します。
 1. JavaScript ファイルの追加（例： ） `function.js`. ファイルには、カスタムエラーハンドラーのコードが含まれています。
@@ -247,12 +247,22 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
            console.log("Custom Error Handler processing start...");
            console.log("response:"+JSON.stringify(response));
            console.log("headers:"+JSON.stringify(headers));
+           guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers);
            console.log("Custom Error Handler processing end...");
        }
    ```
 
-   <!--  To call the default error handler after the custom error handler, the following line of the sample code is used:
-        `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `-->
+   カスタムエラーハンドラーからデフォルトのエラーハンドラーを呼び出すには、サンプルコードの次の行が使用されます。
+   `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+
+   >[!NOTE]
+   >
+   > Adobe Analytics の `.content.xml` ファイルを開き、 `allowProxy` および `categories` プロパティ。
+   >
+   > * `allowProxy = [Boolean]true`
+   > * `categories= customfunctionsdemo`
+   >例えば、この場合、 [custom-errorhandler-name] は次のように指定されます。 `customfunctionsdemo`.
+
 1. `function.js` ファイルを保存します。
 1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` フォルダーに移動します。
 1. テキストファイルを `js.txt`. ファイルには次が含まれます。
@@ -262,7 +272,10 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
        functions.js
    ```
 
-1. `js.txt` ファイルを保存します。
+1. `js.txt` ファイルを保存します。\
+   作成したフォルダー構造は次のようになります。
+
+   ![作成されたクライアントライブラリフォルダー構造](/help/forms/assets/customclientlibrary_folderstructure.png)
 
    >[!NOTE]
    >
@@ -276,11 +289,17 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
        git push
    ```
 
-1. [パイプラインを実行.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)
+1. [パイプラインを実行.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)
 
 パイプラインが正常に実行されると、カスタムエラーハンドラーがアダプティブフォームのルールエディターで使用できるようになります。 次に、AEM Formsのルールエディターの Invoke サービスを使用して、カスタムエラーハンドラーを設定して使用する方法を説明します。
 
 #### 2.ルールエディターを使用して、カスタムエラーハンドラーを設定します {#use-custom-error-handler}
+
+アダプティブフォームにカスタムエラーハンドラーを実装する前に、クライアントライブラリ名が **[!UICONTROL クライアントライブラリカテゴリ]** は、 `.content.xml` ファイル。
+
+![アダプティブフォームコンテナ設定にクライアントライブラリの名前を追加する](/help/forms/assets/client-library-category-name.png)
+
+この場合、クライアントライブラリ名は `customfunctionsdemo` （内） `.content.xml` ファイル。
 
 カスタムエラーハンドラーを使用するには、 **[!UICONTROL ルールエディターの Invoke Service]** アクション：
 
@@ -295,9 +314,7 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
 
 ![エラー応答を処理するためのカスタムエラーハンドラーをフォームに追加します](/help/forms/assets/custom-error-handler.png)
 
-
 このルールの結果、 **ペット ID** 検証を確認 **ペット名** REST エンドポイントによって呼び出された外部サービスを使用する。 データソースに基づく検証条件が失敗した場合は、エラーメッセージがフィールドレベルで表示されます。
-
 
 ![エラー応答を処理するためのカスタムエラーハンドラーをフォームに追加します](/help/forms/assets/custom-error-handler-message.png)
 

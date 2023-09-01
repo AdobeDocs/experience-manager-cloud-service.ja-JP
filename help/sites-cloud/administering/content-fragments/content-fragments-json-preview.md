@@ -3,8 +3,11 @@ title: プレビュー - JSON 表現
 description: AEM ヘッドレスソリューションの実装時にコンテンツフラグメントの JSON 表現を簡単にプレビューする方法について説明します。
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: bffc13e5-586b-4598-98fb-b1688d9716c5
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 100%
@@ -12,6 +15,12 @@ ht-degree: 100%
 ---
 
 # プレビュー - JSON 表現 {#preview-json-representation}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 AEM ヘッドレス実装の一環としてコンテンツフラグメントのモデルを開発する際に、コンテンツフラグメントのサンプル JSON 出力を、モデルに基づいて表示するとよい場合があります。例えば、最終的な出力がどのように見えるかを知るためにです。これは、モデルの JSON 構造を検証する場合に便利です。データタイプごとのデフォルトのサンプルコンテンツを使用する場合もあります。
 

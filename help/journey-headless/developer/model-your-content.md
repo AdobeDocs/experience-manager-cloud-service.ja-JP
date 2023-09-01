@@ -2,7 +2,7 @@
 title: コンテンツをモデル化する方法
 description: AEM ヘッドレスデベロッパージャーニーのこの部分では、コンテンツフラグメントモデルとコンテンツフラグメントとともにコンテンツモデリングを使用して、AEM ヘッドレス配信用のコンテンツをモデル化する方法について説明します。
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 95%
@@ -266,10 +266,10 @@ tbc...
 
 ## その他のリソース {#additional-resources}
 
-* [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/content-fragments.md) - コンテンツフラグメントのリードインページ
-   * [設定ブラウザーのコンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) - 設定ブラウザーでコンテンツフラグメント機能を有効にします。
-   * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - コンテンツフラグメントモデルの作成と編集
-   * [コンテンツフラグメントの管理](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md) - コンテンツフラグメントの作成とオーサリング - このページでは、その他の詳細な節を示します
+* [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/overview.md) - コンテンツフラグメントのリードインページ
+   * [設定ブラウザーのコンテンツフラグメント](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) - 設定ブラウザーでコンテンツフラグメント機能を有効にします。
+   * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - コンテンツフラグメントモデルの作成と編集
+   * [コンテンツフラグメントの管理](/help/sites-cloud/administering/content-fragments/managing.md) - コンテンツフラグメントの作成とオーサリング - このページでは、その他の詳細な節を示します
 * [AEM GraphQL スキーマ](access-your-content.md) - GraphQL によるモデルの実現方法
 * [サンプルコンテンツフラグメント構造](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
 * [AEM ヘッドレスの概要](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja) - コンテンツモデリングや GraphQL など、AEM ヘッドレス機能の使用の概要を説明する短いビデオチュートリアルシリーズです。

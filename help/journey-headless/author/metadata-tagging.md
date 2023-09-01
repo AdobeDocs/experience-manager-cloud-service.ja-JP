@@ -2,10 +2,10 @@
 title: コンテンツフラグメントのメタデータとタグの定義について
 description: コンテンツフラグメントのメタデータとタグの定義について
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 85%
+source-wordcount: '191'
+ht-degree: 92%
 
 ---
 
@@ -26,21 +26,9 @@ ht-degree: 85%
 
 ## メタデータとタグの追加 {#adding-metadata-and-tags}
 
-メタデータとタグを追加する方法は 3 とおりあります。
+コンテンツフラグメントエディターの右側のパネルから、メタデータおよびタグを追加できます。
 
-* 最初にフラグメントを作成する場合（**Assets** コンソールから）：
-
-  ![コンテンツフラグメント作成 - 名前の指定](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
-
-* The **バリエーション** コンテンツフラグメントエディターの「 」タブで、事前定義済みの **タグ** を次のように設定します。
-
-  ![コンテンツフラグメントエディター - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
-
-* The **メタデータ** コンテンツフラグメントエディターの「 」タブで、メタデータの各種フィールドと定義済みのフィールドを追加できます。 **タグ** を次のように設定します。
-
-  ![コンテンツフラグメントエディター - メタデータ](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
-
-   * また、これは、Assets コンソールのツールバーにある「**プロパティ**」オプションを使用して、直接アクセスすることもできます。
+![コンテンツフラグメントエディター - Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## 次の手順 {#whats-next}
 
@@ -48,8 +36,8 @@ ht-degree: 85%
 
 ## その他のリソース {#additional-resources}
 
-* [メタデータ - フラグメントのプロパティ](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+* [メタデータ - フラグメントのプロパティ](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags)
 
 * [タグの使用](/help/sites-cloud/authoring/features/tags.md)
 
-* [コンテンツフラグメントモデル - アセットフォルダーでのコンテンツフラグメントモデルの許可](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [コンテンツフラグメントモデル - アセットフォルダーでのコンテンツフラグメントモデルの許可](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)

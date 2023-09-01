@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '6389'
-ht-degree: 76%
+source-wordcount: '6436'
+ht-degree: 75%
 
 ---
 
@@ -150,9 +150,21 @@ _
 
 フォームデータモデルでのサービス設定について詳しくは、「[[!DNL Experience Manager Forms] データ統合](data-integration.md)」を参照してください。
 
-The **[!UICONTROL プロパティを設定]** ルールタイプを使用すると、条件アクションに基づいて、指定したオブジェクトのプロパティの値を設定できます。
+The **[!UICONTROL プロパティを設定]** ルールタイプを使用すると、条件アクションに基づいて、指定したオブジェクトのプロパティの値を設定できます。 次のいずれかで、プロパティをに設定できます。
+* visible (Boolean)
+* dorExclusion (Boolean)
+* chartType（文字列）
+* title (String)
+* enabled(Boolean)
+* mandatory (Boolean)
+* validationsDisabled (Boolean)
+* validateExpMessage (String)
+* 値（数値、文字列、日付）
+* 項目（リスト）
+* valid (Boolean)
+* errorMessage (String)
 
-これにより、ルールを定義して、アダプティブフォームにチェックボックスを動的に追加することができます。カスタム関数、フォームオブジェクト、またはオブジェクトプロパティを使用して、ルールを定義できます。
+例えば、アダプティブフォームにチェックボックスを動的に追加するルールを定義できます。 カスタム関数、フォームオブジェクト、またはオブジェクトプロパティを使用して、ルールを定義できます。
 
 ![プロパティを設定](assets/set_property_rule_new.png)
 
@@ -805,7 +817,9 @@ Web サービス `GetInterestRates` で、ローン総額、加入年数、申�
 
 ![Example-invoke-services](assets/example-invoke-services.png)
 
-アダプティブフォームルールを使用したフォームデータモデルサービスの起動呼び出し
+>[!NOTE]
+>
+>入力が配列タイプの場合、配列をサポートするフィールドが「出力」ドロップダウンセクションに表示されます。
 
 ### 「When」ルールを使用して複数のアクションをトリガーする  {#triggering-multiple-actions-using-the-when-rule}
 

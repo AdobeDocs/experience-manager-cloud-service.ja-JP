@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 リリースのリリースノート。'
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 79%
@@ -38,7 +38,7 @@ ht-degree: 79%
 
 * The [エクスペリエンスフラグメントの「パーソナライゼーション」タブ](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) では、エクスペリエンスフラグメントエディターに対してセグメント化の仕様機能を使用でき、ネストされたエクスペリエンスフラグメントを柔軟に作成できるので、複数のセグメントに対してヘッダーとフッターのバリエーションを作成できます。 この機能を開始する前は、AEM が提供するパーソナライゼーションはサイトのページでのみ使用できますが、エクスペリエンスフラグメントでは使用できません
 
-* この[コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)では、ユーザーが翻訳されたコンテンツフラグメントを効率的に管理できるようになりました。 すべての言語コピーを表示するための 1 回のクリックアクセスが提供されています。 また、ユーザーは、関心があるロケールに基づいてテーブル表示をフィルタリングすることもできます。
+* この[コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)では、ユーザーが翻訳されたコンテンツフラグメントを効率的に管理できるようになりました。 すべての言語コピーを表示するための 1 回のクリックアクセスが提供されています。 また、ユーザーは、関心があるロケールに基づいてテーブル表示をフィルタリングすることもできます。
 
 ![コンテンツフラグメントの言語](/help/release-notes/assets/cfconsole-languages.png)
 
