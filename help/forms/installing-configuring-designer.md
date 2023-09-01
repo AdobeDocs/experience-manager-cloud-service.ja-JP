@@ -1,10 +1,10 @@
 ---
 title: Forms Designer のダウンロードとインストール
 description: Forms Designer を使用して、レコードのドキュメントテンプレートとして機能する XDP および PDF フォームテンプレートを作成できます。Designer は、 [!DNL AEM Forms]  ライセンスで利用できます。
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 34d966f6550cb9e507c751b580b16a3043137255
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 65%
+source-wordcount: '343'
+ht-degree: 67%
 
 ---
 
@@ -17,17 +17,9 @@ Designer は、XDP および PDF フォームテンプレートの作成を簡�
 
 最新バージョンのAEM Forms Designer 64 ビットまたは 32 ビットをインストールするには、次のソフトウェアと最小ハードウェアで Designer をインストールして設定する必要があります。
 
->[!NOTE]
->
-> 32 ビット Designer を使用している場合、64 ビット Designer をインストールする前に、64 ビット Designer のインストール時の問題を回避するために、32 ビット Designer をアンインストールする必要があります。
-
-<!--
->[!BEGINTABS]
-
->[!TAB 64-bit OS (Recommended)] -->
-
 +++ 64 ビット Designer（推奨）
 
+* 64 ビット版のForms Designer をインストールする前に、32 ビット版の Designer をアンインストールします。
 * [!DNL Microsoft® Windows® 2016 Server] または [!DNL Microsoft® Windows® 2019 Server]、および [!DNL Microsoft® Windows® 10]
 * 2 GB 以上の RAM
 * 20 GB のディスク容量
