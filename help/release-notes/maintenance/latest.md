@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: a1686d7796bb1e310b776195bd19df98f6f10650
+source-git-commit: 370d5742065d659f32ec1ff4d4b0fc0a153f71c2
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 35%
+source-wordcount: '315'
+ht-degree: 33%
 
 ---
 
@@ -22,24 +22,25 @@ ht-degree: 35%
 ### 機能強化 {#enhancements-13323}
 
 - GRANITE-46784:BearerAuthenticationHandler を無効にするオプションを追加します。
-- GRANITE-36205：内部 oak リリースバージョンを最新に更新
-- ASSETS-26713：新しい Experience UI ダッシュボードへのタッチ UI 外部リンク — unified-shell-integration および ui-touch-optimized アップグレード
-- SKYOPS-63302: com.adobe.granite:com.adobe.granite.auth.saml を v1.0.54 にアップグレード
-- GRANITE-46634: eventing client 1.4.0 へのアップグレード
-- GRANITE-46788: Apache Commons IO 2.13.0、Commons Lang 3.13.0、Commons Code 1.16.0および Commons Compress へのライブラリの更新1.23.0
-- GRANITE-46705: Apache Felix Http Jetty 4.1.14 への更新
-- GRANITE-46631:Jackrabbit のバージョンを2.20.11に更新
-- SKYOPS-61895: Jackrabbit Filevault 3.7.0 への更新
+- GRANITE-36205：内部 oak リリースバージョンを最新に更新します。
+- ASSETS-26713：新しい Experience UI ダッシュボードへのタッチ UI 外部リンク — unified-shell-integration および ui-touch-optimized アップグレード。
+- SKYOPS-63302: com.adobe.granite:com.adobe.granite.auth.saml を v1.0.54 にアップグレードします。
+- GRANITE-46634：イベンティングクライアント 1.4.0 にアップグレードします。
+- GRANITE-46788：ライブラリを Apache Commons IO 2.13.0、Commons Lang 3.13.0、Commons Code 1.16.0および Commons Compress 1.23.0に更新します。
+- GRANITE-46705: Apache Felix Http Jetty 4.1.14 に更新します。
+- GRANITE-46631:Jackrabbit のバージョンを2.20.11に更新します。
+- SKYOPS-61895: Jackrabbit Filevault 3.7.0 に更新しました。
 
 ### 修正された問題 {#fixed-issues-13323}
 
+- ASSETS-28461:13239から修正された、PDFに対して Doc Cloud ビューアが機能しない。
 - SKYOPS-63290：バケットの誤った展開を修正しました。
-- SKYOPS-54607: Ratelimiter のサーバロード計算が失敗したリクエストに対して正しく行われない
-- ASSETS-27648:ContentModelIT が他のバンドルから除外ファイルを読み取れません
-- GRANITE-43744：認証要件とバニティパスの設定に誤りがある場合、Sling Authenticator が正しく機能しない
-- GRANITE-46419:Auth0 Idp とのAEM統合の問題
-- GRANITE-46292: AEM Cloud の更新後に Okta SAML 設定が機能しない
-- GRANITE-47059: Granite Jetty SSL バンドルを削除
+- SKYOPS-54607: Ratelimiter のサーバロード計算が失敗した要求に対して正しく行われません。
+- ASSETS-27648:ContentModelIT は、他のバンドルから除外ファイルを読み取れません。
+- GRANITE-43744：認証要件とバニティパスの設定に誤りがある場合、Sling Authenticator は正しく機能しません。
+- GRANITE-46419:Auth0 Idp とのAEM統合の問題。
+- AEM-46292:  Cloud の更新後に Okta SAML 設定が機能しない。
+- GRANITE-47059: Granite Jetty SSL バンドルを削除します。
 
 ### 既知の問題 {#known-issues-13323}
 
