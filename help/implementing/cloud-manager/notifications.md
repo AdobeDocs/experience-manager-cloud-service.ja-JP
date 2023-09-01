@@ -2,10 +2,10 @@
 title: 通知
 description: Adobe Experience Cloud 通知システムを使用して、パイプラインデプロイメントに関する情報を受け取る方法を説明します。
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: d95b432f74a7b52efc9fd1cf0e380c3f5237503c
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 96%
+source-wordcount: '589'
+ht-degree: 86%
 
 ---
 
@@ -54,7 +54,7 @@ Cloud Manager による重要なイベントの通知方法を説明します。
 
 ![通知の購読](assets/notifications-subscriptions.png)
 
-デフォルトでは、すべての製品に関するすべての通知を受信します。 製品の横にある「**カスタマイズ**」をクリックすると、その製品に対して受信する通知のタイプを定義できます。
+デフォルトでは、すべての製品に関するすべての通知が、アプリケーションと電子メールの両方で受信されます。 製品名の横にある山形記号をクリックすると、詳細なオプションが表示され、その製品に対して受け取る通知のタイプを定義できます。 または、製品レベルのオプションをオンまたはオフにして、製品のすべてのオプションを選択または選択解除します。
 
 ![通知購読のカスタマイズ](assets/notifications-subscriptions-customize.png)
 
