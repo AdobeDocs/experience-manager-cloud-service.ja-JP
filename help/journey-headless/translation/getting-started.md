@@ -2,9 +2,9 @@
 title: AEM ヘッドレス翻訳の基本を学ぶ
 description: ヘッドレスコンテンツを整理する方法と AEM の翻訳ツールの仕組みについて説明します。
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1425'
 ht-degree: 94%
 
 ---
@@ -64,7 +64,7 @@ AEM のコンテンツは、ヘッドレスであろうと従来の web ペー�
 
 ## AEM でのヘッドレスコンテンツの保存方法 {#headless-content-in-aem}
 
-翻訳担当者にとっては、AEM でのヘッドレスコンテンツの管理方法を深く理解することは重要ではありません。ただし、後でAEM翻訳ツールを使用する際には、基本概念と用語に精通していることが役立ちます。 最も重要なのは、効果的に翻訳できるように、独自のコンテンツとその構造を理解する必要があることです。
+翻訳担当者にとっては、AEM でのヘッドレスコンテンツの管理方法を深く理解することは重要ではありません。ただし、後でAEM翻訳ツールを使用する際には、基本概念と用語に精通していると役に立ちます。 最も重要なのは、効果的に翻訳できるように、独自のコンテンツとその構造を理解する必要があることです。
 
 ### コンテンツモデル {#content-models}
 
@@ -188,3 +188,5 @@ AEM のコンテンツは、ヘッドレスであろうと従来の web ペー�
 * [翻訳対象コンテンツの特定](/help/sites-cloud/administering/translation/rules.md) - 翻訳が必要なコンテンツを翻訳ルールで特定する方法について説明します。
 * [翻訳統合フレームワークの設定](/help/sites-cloud/administering/translation/integration-framework.md) - サードパーティの翻訳サービスと統合できるように翻訳統合フレームワークを設定する方法について説明します。
 * [翻訳プロジェクトの管理](/help/sites-cloud/administering/translation/managing-projects.md) - AEM で機械翻訳と人間による翻訳の両方のプロジェクトを作成および管理する方法について説明します。
+* [AEM as a Headless CMS の概要](/help/headless/introduction.md)
+* [AEM のヘッドレスに関するチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja)

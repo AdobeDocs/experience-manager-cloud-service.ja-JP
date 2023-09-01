@@ -2,10 +2,10 @@
 title: CMS ヘッドレス開発について
 description: AEM ヘッドレスデベロッパージャーニーのこの部分では、ヘッドレステクノロジーと、それを使用する理由について説明します。
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '1620'
-ht-degree: 92%
+source-wordcount: '1638'
+ht-degree: 91%
 
 ---
 
@@ -127,4 +127,6 @@ AEM ヘッドレスジャーニーを開始していただきありがとうご�
 「[AEM Headless as a Cloud Service - はじめに](getting-started.md)」ドキュメントを確認して、ヘッドレス開発のジャーニーの次の部分に進むことをお勧めします。以下は、このドキュメントで取り上げるいくつかの概念について詳しく説明する、追加のオプションリソースです。
 
 * [Adobe Experience Manager as a Cloud Service のアーキテクチャの概要](/help/overview/architecture.md) - AEM as a Cloud Service の構造について
+* An [AEM as a Headless CMS の概要](/help/headless/introduction.md)
+* The [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
 * [AEM ヘッドレスチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja) - これらの実践チュートリアルでは、AEM を使用してヘッドレスエンドポイントにコンテンツを配信するための様々なオプションの使用方法と、適切なオプションを選択する方法を調べます。

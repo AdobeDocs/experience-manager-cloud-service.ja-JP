@@ -2,10 +2,10 @@
 title: AEM as a Headless CMS 用のオーサリング - はじめに
 description: Adobe Experience Manager as a Cloud Service の機能をヘッドレス CMS として使用し、プロジェクトのコンテンツをオーサリングする方法を紹介します。
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 96%
+source-wordcount: '691'
+ht-degree: 95%
 
 ---
 
@@ -77,10 +77,16 @@ AEM の場合は、コンテンツアーキテクトの役割（多くの場合�
 
 ## その他のリソース {#additional-resources}
 
+* [AEM as a Headless CMS の概要](/help/headless/introduction.md)
+
+* [AEM のヘッドレスに関するチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja)
+
 * AEM ヘッドレスデベロッパージャーニー
    * [CMS ヘッドレス開発について](/help/journey-headless/developer/learn-about.md)
    * [コンテンツをモデル化する方法](/help/journey-headless/developer/model-your-content.md)
 
-* AEM ヘッドレスコンテンツアーキテクトジャーニー
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
 
-* AEM ヘッドレス翻訳ジャーニー
+* [AEM ヘッドレスコンテンツアーキテクトジャーニー](/help/journey-headless/architect/overview.md)
+
+* [AEM ヘッドレス翻訳ジャーニー](/help/journey-headless/translation/overview.md)

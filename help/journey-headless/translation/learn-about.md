@@ -2,10 +2,10 @@
 title: ヘッドレスコンテンツの概要と AEM での翻訳について
 description: ヘッドレスの概念、AEM へのマッピング方法、AEM 翻訳の基本概念について説明します。
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 96%
+source-wordcount: '743'
+ht-degree: 95%
 
 ---
 
@@ -78,3 +78,5 @@ AEM ヘッドレス翻訳ジャーニーを開始していただきありがと�
 [AEM ヘッドレス翻訳の基本を学ぶ](getting-started.md)のドキュメントを確認して、ヘッドレス翻訳ジャーニーの次のステップに進むことをお勧めします。ヘッドレスジャーニーの続行に必須ではありませんが、この記事で取り上げたいくつかの概念について詳しく説明している追加のオプションリソースを以下に挙げておきます。
 
 * [MSM と翻訳](/help/sites-cloud/administering/msm-and-translation.md) - AEM のマルチサイトマネージャーの詳細と翻訳ツールとの連携方法について説明します。
+* [AEM as a Headless CMS の概要](/help/headless/introduction.md)
+* [AEM のヘッドレスに関するチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja)

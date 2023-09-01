@@ -2,10 +2,10 @@
 title: すべてをまとめる方法 - AEM ヘッドレスのアプリとコンテンツ
 description: AEM ヘッドレスデベロッパージャーニーのこの部分では、コンテンツフラグメント、GraphQL 呼び出し、REST API 呼び出し、アプリケーションを含む AEM プロジェクトを実行し、運用開始に備える方法を説明します。
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 91%
+source-wordcount: '1092'
+ht-degree: 92%
 
 ---
 
@@ -74,7 +74,7 @@ Node.js は、AEM プロジェクトの `ui.frontend` サブプロジェクト�
 
 ## ローカル開発ワークフロー {#the-local-development-workflow}
 
-ローカル開発プロジェクトは Apache Maven をベースに構築され、ソース管理に Git を使用します。プロジェクトを更新するために、開発者は、Eclipse、Visual Studio Code、IntelliJ など、望ましい統合開発環境を使用できます。
+ローカル開発プロジェクトは Apache Maven をベースに構築され、ソース管理に Git を使用します。プロジェクトを更新するために、開発者は、Eclipse、Visual Studio Code、IntelliJ など、好みの統合開発環境を使用できます。
 
 ヘッドレスアプリケーションによって取り込まれるコードまたはコンテンツのアップデートをテストするには、そのアップデートをローカルの AEM ランタイム（AEM オーサーサービスおよびパブリッシュサービスのローカルインスタンスを含む）にデプロイする必要があります。
 
@@ -114,4 +114,6 @@ AEMヘッドレスプロジェクトを起動用に準備するには、プロ�
 * [クライアントサイドブラウザー用 AEM ヘッドレス SDK（JavaScript）](https://github.com/adobe/aem-headless-client-js)
 * [サーバーサイド／Node.js（JavaScript）用 AEM ヘッドレス SDK](https://github.com/adobe/aem-headless-client-nodejs)
 * [Java™ 用 AEM ヘッドレス SDK](https://github.com/adobe/aem-headless-client-java)
-
+* [AEM as a Headless CMS の概要](/help/headless/introduction.md)
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
+* [AEM のヘッドレスに関するチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja)

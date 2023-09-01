@@ -2,10 +2,10 @@
 title: AEM Assets API を使用してコンテンツをアップデートする方法
 description: AEM ヘッドレスデベロッパージャーニーのこの部分では、REST API を使用してコンテンツフラグメントのコンテンツにアクセスし、アップデートする方法について説明します。
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 94%
+source-wordcount: '1096'
+ht-degree: 93%
 
 ---
 
@@ -329,3 +329,6 @@ AEM ヘッドレスジャーニーを続けるには、[すべてをまとめる
 * [AEM コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
 * [CORS／AEM の説明](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [ビデオ - AEM を使用した CORS 向けの開発](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+* [AEM as a Headless CMS の概要](/help/headless/introduction.md)
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
+* [AEM のヘッドレスに関するチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja)
