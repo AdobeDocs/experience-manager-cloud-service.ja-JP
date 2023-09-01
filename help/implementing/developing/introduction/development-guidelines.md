@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスでの AEM および AMS での AEM との重要な違いについて説明します。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5a60c491db4a182529a2c4b6490b18b356c14fa7
+source-git-commit: 5aa4a049bc6a69f161ad04d2a64ab0871e672432
 workflow-type: tm+mt
 source-wordcount: '2746'
 ht-degree: 81%
@@ -98,8 +98,6 @@ AEM as a Cloud Serviceは、サードパーティの顧客コードのタッチ 
 
 コンテンツは、pub-sub メカニズムを使用してオーサーからパブリッシュにレプリケートされます。カスタムレプリケーションエージェントはサポートされていません。
 
-## 監視とデバッグ {#monitoring-and-debugging}
-
 ## 開発環境をオーバーロードしない {#overloading-dev-envs}
 
 実稼動環境のサイズはより大きくなり、安定した動作を保証します。ステージ環境は実稼働環境のようなサイズになり、実稼働環境下での現実的なテストを保証します。
@@ -107,6 +105,8 @@ AEM as a Cloud Serviceは、サードパーティの顧客コードのタッチ 
 開発環境と迅速な開発環境は、開発、エラー分析、および機能テストに限定する必要があり、高いワークロードや大量のコンテンツを処理するように設計されていません。
 
 例えば、開発環境で大きなコンテンツリポジトリのインデックス定義を変更すると、インデックスの再作成によって処理が多くなりすぎる場合があります。 実質的なコンテンツを必要とするテストは、ステージング環境で実行する必要があります。
+
+## 監視とデバッグ {#monitoring-and-debugging}
 
 ### ログ {#logs}
 
