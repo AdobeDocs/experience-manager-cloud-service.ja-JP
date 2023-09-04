@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 3203e79d1dd083d13d9357b21040dfa88194c4db
+source-git-commit: 1df4f371fe4a98b910634b4742d9ff1a9448674f
 workflow-type: tm+mt
-source-wordcount: '9445'
+source-wordcount: '9442'
 ht-degree: 64%
 
 ---
@@ -571,7 +571,6 @@ Dynamic Mediaのマルチサブタイトルおよびマルチオーディオト�
 | **字幕** | 複数言語のサポート |
 |  | アクセシビリティの説明テキスト |
 | **オーディオトラック** | 複数言語のサポート |
-|  | ステレオとマルチチャンネル（サラウンドサウンド） |
 |  | 解説曲 |
 |  | 記述オーディオ |
 
@@ -664,7 +663,7 @@ Dynamic Mediaのマルチサブタイトルおよびマルチオーディオト�
 
 >[!CAUTION]
 >
->既に公開されているビデオにサブタイトルファイルまたはオーディオファイルをアップロードすると、これらのファイルは削除されます。 [*再処理*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) ビデオ。 ビデオの元のオーディオのみがそのまま残ります。 このような場合は、サブタイトルファイルとオーディオトラックファイルをビデオに再度アップロードする必要があります。
+>公開または非公開のビデオにサブタイトルファイルまたはオーディオファイルをアップロードすると、ファイルは削除されます [*再処理*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) ビデオ。 ビデオの元のオーディオのみがそのまま残ります。 このような場合は、サブタイトルファイルとオーディオトラックファイルをビデオに再度アップロードする必要があります。
 
 #### キャプション修飾子を持つ既存の URL を持つビデオに複数のキャプションを追加する
 
