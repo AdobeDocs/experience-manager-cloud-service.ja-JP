@@ -1,16 +1,20 @@
 ---
 title: Assets ビューを使用したアセットの一括読み込み
 description: 新しい Assets UI（Assets ビュー）を使用してアセットを一括読み込む方法を説明します。 管理者は、大量のアセットをデータソースからAEM Assetsに読み込むことができます。
-source-git-commit: 49d1e002f22427d8ffc6c5bdecd054c10eac47b9
+source-git-commit: 5cc522db4bd86514c1093a0d6fee481f6604fc26
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 13%
+source-wordcount: '1177'
+ht-degree: 22%
 
 ---
 
 # Assets ビューを使用したアセットの一括読み込み  {#bulk-import-assets-view}
 
 AEM Assets表示での一括読み込みを使用すると、管理者は、データソースからAEM Assetsに大量のアセットを読み込むことができます。 管理者は、個々のアセットやフォルダーをAEM Assetsにアップロードする必要はありません。
+
+>[!NOTE]
+>
+>Assets 表示の一括インポーターは、管理者表示の一括インポーターと同じバックエンドを使用します。 ただし、から読み込むデータソースが増え、ユーザーエクスペリエンスがより効率的になります。
 
 次のデータソースからアセットを読み込むことができます。
 
@@ -58,6 +62,14 @@ AEM Assets表示での一括読み込みを使用すると、管理者は、デ�
    ![一括インポートの実行](assets/bulk-import-run.png)
 
 1. クリック **[!UICONTROL 保存]** をクリックして、選択したオプションを実行します。
+
+### 一括読み込み時のファイル名の処理 {#filename-handling-bulkimport-assets-view}
+
+アセットやフォルダーを一括で読み込む場合、[!DNL Experience Manager Assets] は、インポートソースに存在する情報の構造全体を読み込みます。[!DNL Experience Manager] は、アセット名とフォルダー名に含まれる特殊文字に対する組み込みルールに従うので、これらのファイル名のサニタイズが必要になります。フォルダー名とアセット名の両方について、ユーザーが定義したタイトルは変更されず、`jcr:title` に保存されます。
+
+一括読み込み時に、[!DNL Experience Manager] は、既存のフォルダーを探してアセットやフォルダーの再読み込みを避けると共に、読み込みが行われる親フォルダーに適用されるサニタイズルールを検証します。親フォルダーにサニタイズルールが適用される場合、インポートソースにも同じルールが適用されます。新規読み込みの場合、アセットやフォルダーのファイル名を管理するために、次のサニタイズルールが適用されます。
+
+一括読み込み時の禁止名、アセット名の処理、フォルダー名の処理について詳しくは、 [管理ビューでの一括インポート中のファイル名の処理](add-assets.md##filename-handling-bulkimport).
 
 ## 既存の一括インポート設定を表示 {#view-import-configuration}
 
