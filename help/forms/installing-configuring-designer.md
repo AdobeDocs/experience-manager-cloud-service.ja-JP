@@ -1,7 +1,7 @@
 ---
 title: Forms Designer のダウンロードとインストール
 description: Forms Designer を使用して、レコードのドキュメントテンプレートとして機能する XDP および PDF フォームテンプレートを作成できます。Designer は、 [!DNL AEM Forms]  ライセンスで利用できます。
-source-git-commit: a22c21ba05e72c1bf18c56df72b7e3c7c62edc0c
+source-git-commit: 325769d4a3b93502b0c6857e20911b05df34a24a
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 67%
@@ -53,7 +53,6 @@ Designer は、XDP および PDF フォームテンプレートの作成を簡�
 Designer をインストールするには、以下の手順を実行します。
 
 1. [ソフトウェア配布](https://experience.adobe.com/downloads)から Designer をダウンロードします。
-
 1. setup.exe をダブルクリックし、インストーラーを実行します。
 1. 先に進み、パーソナライゼーション画面で詳細を入力します。
 1. 使用許諾契約に同意する場合は、「**[!UICONTROL 次へ]**」をクリックして先に進みます。
