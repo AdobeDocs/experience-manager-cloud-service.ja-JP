@@ -5,18 +5,25 @@ topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 17%
+source-wordcount: '947'
+ht-degree: 19%
 
 ---
 
-# AEMアダプティブフォームでのGoogle reCAPTCHA の使用 {#using-reCAPTCHA-in-adaptive-forms}
+# コアコンポーネントに基づくAEMアダプティブフォームでのGoogle reCAPTCHA の使用 {#using-reCAPTCHA-in-adaptive-forms}
+
+<span class="preview"> これはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+| 適用先 | 記事リンク |
+| -------- | ---------------------------- |
+| コアコンポーネントに基づくアダプティブフォーム | この記事 |
+| 基盤コンポーネントに基づくアダプティブフォーム | [ここをクリックしてください](/help/forms/captcha-adaptive-forms.md) |
 
 CAPTCHA（コンピュータと人間を区別する完全に自動化された公開チューリングテスト）は、人と自動化されたプログラムまたはボットを区別するためにオンライントランザクションで一般的に使用されるプログラムです。テストを行ってユーザーの反応を評価し、サイトを使用しているのが人間かボットかを判断します。テストが失敗した場合の続行を防ぎ、ボットがスパムや悪意のある目的の投稿を防ぐことで、オンライントランザクションの安全性を高めます。
 
-[!DNL AEM Forms] as a [!DNL Cloud Service] は、アダプティブFormsでGoogle reCAPTCHA v2 をサポートしています。 これを使用して、フォームの送信時に CAPTCHA の課題を提示できます。 アダプティブフォームで reCAPTCHA を使用するには：
+[!DNL AEM Forms] as a [!DNL Cloud Service] は、アダプティブFormsでGoogle reCAPTCHA v2 をサポートしています。 これを使用して、フォームの送信時に CAPTCHA の課題を提示できます. アダプティブフォームで reCAPTCHA を使用するには：
 
 1. [Googleによる reCAPTCHA サービスを使用したAEM Forms環境の接続](#connect-your-forms-environment-with-recaptcha-service-by-google)
 1. [アダプティブフォームを設定して、フォーム送信時に CAPTCHA の課題を表示する](#using-reCAPTCHA)
@@ -106,3 +113,9 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 **Q：アダプティブフォーム内で複数の Captcha コンポーネントを使用できますか。**
 **回答：** アダプティブフォーム内での複数の Captcha コンポーネントの使用はサポートされていません。 また、遅延読み込みのマークが付けられたフラグメントやパネルで Captcha コンポーネントを使用することはお勧めしません。
 
+## 関連トピック
+
+* [アダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
+* [アダプティブフォームフラグメントを作成する](/help/forms/adaptive-form-fragments-core-components.md)
+* [アダプティブフォームをAEM Sitesページまたはエクスペリエンスフラグメントに追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [アダプティブフォームでのGoogle reCAPTCHA の使用](/help/forms/captcha-adaptive-forms-core-components.md)
