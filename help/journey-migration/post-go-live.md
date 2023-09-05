@@ -2,10 +2,10 @@
 title: 運用開始後
 description: 問題を監視し、パフォーマンスを向上させる方法を説明します
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 3784569086a786c6c25c0e3d6d0bb0ddbdd37e4b
+source-git-commit: 1b9d49ce1ef8ad4b0a11400b41d8c9b880cbf884
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 74%
+source-wordcount: '483'
+ht-degree: 73%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 74%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=ja" text="ログへのアクセスと管理"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=ja#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service の開発ツール"
 
-このジャーニーは最後の部分なので、問題を監視し、移行が完了したらパフォーマンスを向上させる方法を学びます。 一時ファイルを確実にクリーンアップし、継続的な開発のベストプラクティスを確認し、ログを管理する必要があります。
+このジャーニーは最後の部分なので、移行が完了した後に、問題を監視し、パフォーマンスを向上させる方法を学びます。 一時ファイルを確実にクリーンアップし、継続的な開発のベストプラクティスを確認し、ログを管理する必要があります。
 
 ## これまでの説明内容 {#story-so-far}
 
@@ -51,7 +51,7 @@ AEM as a Cloud Service 開発者環境でのデバッグは、開発環境、ス
 
 ユーザーは、選択した環境の使用可能なログファイルのリストにアクセスできます。
 
-詳しくは、 [ログへのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md) UI を使用して、または Cloud Manager を介して API を使用してログにアクセスし、ログを管理する方法について説明します。
+詳しくは、 [ログへのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md) ユーザーインターフェイスを通じて、または Cloud Manager を使用して API からログにアクセスしログを管理する方法について説明します。
 
 ## サポートへの問い合わせ {#contacting-support}
 

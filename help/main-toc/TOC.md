@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: bb15e840071279dbdf8bd2bfe89d59c067898aca
+source-git-commit: 71e9325997dcb32e27758d23177670cc70381537
 workflow-type: tm+mt
-source-wordcount: '4258'
+source-wordcount: '4260'
 ht-degree: 93%
 
 ---
@@ -516,6 +516,7 @@ ht-degree: 93%
       + [ページに Dynamic Media アセットを追加する](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
       + [Dynamic ビデオビューアまたは画像ビューアを web ページに埋め込む](/help/assets/dynamic-media/embed-code.md)
       + [Web アプリケーションに URL をリンクする](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
+      + [失敗した配信 URL のリクエストエラーレポート](/help/assets/dynamic-media/reporting-dm.md)
       + [ルールセットを使用して URL を変換する](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
       + [Dynamic Media アセットを公開する](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
       + [Dynamic Media で選択的公開を使用する](/help/assets/dynamic-media/selective-publishing.md)
@@ -570,6 +571,7 @@ ht-degree: 93%
          + [AEM Forms as a Cloud Service と Adobe Analytics の統合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [アダプティブフォームと Microsoft Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)
          + [AEM Sites ページへのアダプティブフォームの埋め込み](/help/forms/embed-adaptive-form-aem-sites.md)
+         + [コアコンポーネントに基づいたアダプティブフォームを外部 Web ページに埋め込む](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
       + フォームデータモデル {#use-form-data-model}
          + [データソースの Cloud Service への接続](/help/forms/data-integration.md)
          + [データソースの設定](/help/forms/configure-data-sources.md)
@@ -583,20 +585,19 @@ ht-degree: 93%
    + アダプティブフォーム {#adaptive-forms-authoring}
       + [アダプティブフォームの作成](/help/forms/create-an-adaptive-form.md)
       + [アダプティブフォームをAEM Sitesページまたはエクスペリエンスフラグメントに追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-      + アダプティブフォームのオーサリング - コアコンポーネント {#authoring-adaptive-forms-core-components}
+      + コアコンポーネント {#authoring-adaptive-forms-core-components}
          + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
             + [アダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
             + [アダプティブフォームフラグメントを作成する](/help/forms/adaptive-form-fragments-core-components.md)
             + [アダプティブフォームのテーマの作成 - コアコンポーネント](/help/forms/using-themes-in-core-components.md)
             + [アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-core-components.md)
-            + [アダプティブフォームの作成 - AEM Sites ページのコアコンポーネント](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [機械翻訳または人間翻訳を使用したアダプティブフォームの翻訳](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [リダイレクトページまたは「ありがとうございます」メッセージの設定](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [繰り返し可能なセクションでフォームを作成する](/help/forms/create-forms-repeatable-sections.md)
             + [アダプティブフォームの送信アクションの設定](/help/forms/configure-submit-actions-core-components.md)
             + [アダプティブフォームでのGoogle reCAPTCHA の使用](/help/forms/captcha-adaptive-forms-core-components.md)
             + [アダプティブフォームにカスタムエラーハンドラーを追加する](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-      + アダプティブフォームのオーサリング - 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
+      + 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
          + PDF フォームのアダプティブフォームへの変換 {#afcs}
             + [自動フォーム変換サービスの概要](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ja)
             + [既存の PDF フォームからアダプティブフォームへの変換](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ja)
