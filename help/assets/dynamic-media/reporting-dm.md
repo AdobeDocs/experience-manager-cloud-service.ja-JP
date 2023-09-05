@@ -4,9 +4,9 @@ description: 失敗したDynamic Media配信 URL のエラーレポートをリ�
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
-source-git-commit: 1b9d49ce1ef8ad4b0a11400b41d8c9b880cbf884
+source-git-commit: 7ce15cc755c9db589001d543c16312096d88bcf0
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '273'
 ht-degree: 4%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # 失敗したDynamic Media配信 URL のエラーレポートをリクエストします
 
-配信時に失敗したDynamic Media URL を識別するエラーレポートをリクエストできるようになりました。 レポートは、5 日間のデータの集計で、CSV 形式で使用できます。 エラーレポートには、次の情報が含まれます。
+配信時に失敗したDynamic Media URL を識別するエラーレポートを要求できます。 レポートは、最大 5 日間のデータを集計したもので、CSV 形式で利用できます。 エラーレポートには、次の情報が含まれます。
 
 * 失敗したDynamic Media配信 URL — 失敗した URL とは、配信時にコンテンツを生成できない、Dynamic Media生成の URL です。
 * リファラー URL — 失敗した配信 URL の呼び出し元のリファラー URL。
@@ -26,15 +26,11 @@ ht-degree: 4%
 
 **失敗したDynamic Media配信 URL のエラーレポートをリクエストするには：**
 
-1. [reports-dynamic-media@adobe.comに電子メールを送信](mailto:reports-dynamic-media@adobe.com) を会社名に置き換えます。
+1. [reports-dynamic-media@adobe.comに電子メールを送信](mailto:reports-dynamic-media@adobe.com) を、Dynamic Mediaアカウントに関連付けられている会社名に変更します。
 
-   AdobeのDynamic Mediaアカウントに関連付けられている会社名については、 [Dynamic Media Configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=ja#configuring-dynamic-media-cloud-services) ADOBE EXPERIENCE MANAGER(AEM) **[!UICONTROL ツール]** > **[!UICONTROL Cloud Service]**.
+   会社名が不明な場合は、 [Dynamic Media Configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=ja#configuring-dynamic-media-cloud-services) ページ内 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL ツール]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Dynamic Media Configuration]**. Dynamic Media Configuration Browser ページで、 **[!UICONTROL global]**&#x200B;を選択し、 *[Dynamic_Media_folder_icon]* 「 」チェックボックスをオンにして、「 」を選択します。 **[!UICONTROL 編集]**. Dynamic Media設定ページにアクセスするには、AEMの管理者権限が必要です。
 
-
-   >[!NOTE]
-   >
-   >にアクセスするには、AEMの管理者権限が必要です **[!UICONTROL Dynamic Media Configuration]** AEM内の情報 **[!UICONTROL ツール]** > **[!UICONTROL Cloud Service]**.
-
+   ![Dynamic Media設定ページへのアクセス](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)
 
 
 
