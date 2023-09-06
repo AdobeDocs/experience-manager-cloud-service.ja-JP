@@ -2,10 +2,10 @@
 title: SPA およびサーバーサイドレンダリング
 description: SPAでサーバーサイドレンダリング (SSR) を使用すると、ページの初期読み込みが高速化し、その後、クライアントにさらにレンダリングを渡すことができます。
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 66c9e95f96c8ce181722488a34a175c80f6f917c
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 55%
+source-wordcount: '1518'
+ht-degree: 54%
 
 ---
 
@@ -48,6 +48,10 @@ Adobe I/O Runtimeについて詳しくは、以下を参照してください。
 >Adobeでは、環境（ステージング、実稼動、テストなど）ごとに個別のAdobe I/O Runtimeワークスペースを使用することをお勧めします。 これにより、異なる環境にデプロイされた単一アプリケーションの異なるバージョンを使用する、一般的なシステム開発ライフサイクル (SDLC) パターンを使用できます。 詳しくは、 [App Builder アプリケーション用 CI/CD](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) を参照してください。
 >
 >インスタンスタイプごとのランタイム実装に違いがない限り、インスタンス（オーサー、パブリッシュ）ごとに個別のワークスペースは必要ありません。
+
+>[!NOTE]
+>
+>Cloud Manager は、Adobe I/O Runtimeへのデプロイメントをサポートしていません。 その結果、SSR コードをAdobe I/O Runtimeにデプロイするには、独自のインフラストラクチャを設定する必要があります。
 
 ## リモートレンダラーの設定 {#remote-content-renderer-configuration}
 
@@ -160,7 +164,7 @@ AEM で SSR を SPA と使用するために必要な[リモートコンテン�
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
-この `RemoteContentRendererRequestHandlerServlet` を使用して、要求の設定をプログラムで設定します。 `DefaultRemoteContentRendererRequestHandlerImpl`では、デフォルトのリクエストハンドラーの実装が提供されており、複数の OSGi 設定を作成して、コンテンツ構造内の場所をリモートエンドポイントにマッピングできます。
+The `RemoteContentRendererRequestHandlerServlet` を使用して、要求の設定をプログラムで設定します。 `DefaultRemoteContentRendererRequestHandlerImpl`では、デフォルトのリクエストハンドラーの実装が提供されており、複数の OSGi 設定を作成して、コンテンツ構造内の場所をリモートエンドポイントにマッピングできます。
 
 カスタム要求ハンドラーを追加するには、`RemoteContentRendererRequestHandler` インターフェイスを実装します。`Constants.SERVICE_RANKING` コンポーネントプロパティは、100（`DefaultRemoteContentRendererRequestHandlerImpl` のランク）より大きい整数に設定してください。
 
