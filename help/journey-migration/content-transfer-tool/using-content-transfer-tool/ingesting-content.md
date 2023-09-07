@@ -1,25 +1,25 @@
 ---
-title: Target へのコンテンツの取り込み
-description: コンテンツ転送ツールを使用して、移行セットからCloud Serviceインスタンスにコンテンツを取り込む方法を説明します。
+title: コンテンツの取り込みCloud Service
+description: Cloud Acceleration Manager を使用して、移行セットから宛先Cloud Serviceインスタンスにコンテンツを取り込む方法を説明します。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+source-git-commit: 382d1ed93e9545127ebb54641657db365886503d
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 44%
+source-wordcount: '1954'
+ht-degree: 40%
 
 ---
 
-# Target へのコンテンツの取り込み {#ingesting-content}
+# コンテンツの取り込みCloud Service {#ingesting-content}
 
 ## コンテンツ転送ツールの取り込みプロセス {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="コンテンツの取得"
->abstract="取得とは、移行セットからターゲット Cloud Service インスタンスにコンテンツを取り込むことです。コンテンツ転送ツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja" text="追加インジェスト"
+>abstract="取り込みとは、移行セットから宛先Cloud Serviceインスタンスにコンテンツを取り込むことです。 コンテンツ転送ツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja" text="追加取り込み"
 
-コンテンツ転送ツールで移行セットを取り込むには、次の手順に従います。
+Cloud Acceleration Manager を使用して移行セットを取り込むには、次の手順に従います。
 
 >[!NOTE]
 >この取り込みのサポートチケットを忘れずにログに記録しましたか？[コンテンツ転送ツールを使用する前の重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja#important-considerations)を参照して、取り込みを成功させるためのその他の考慮事項を確認してください。
@@ -80,7 +80,7 @@ ht-degree: 44%
    Additionally, click on **Customer Care** to log a ticket, as shown in the figure below. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
-   
+
    Also, see [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) to learn more.
 
 1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
@@ -181,4 +181,7 @@ AEM の各ノードには、一意の UUID が必要です。このエラーは�
 
 ## 次の手順 {#whats-next}
 
-Target へのコンテンツの取り込みが完了したら、各ステップ（抽出と取り込み）のログを表示し、エラーを探すことができます。詳しくは、[移行セットのログの表示](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ja)を参照してください。
+取り込みが成功すると、AEMのインデックス作成が自動的に開始されます。 詳しくは、 [コンテンツ移行後のインデックス作成](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) を参照してください。
+
+コンテンツのCloud Serviceへの取り込みが完了したら、各ステップのログ（抽出および取り込み）を表示し、エラーを探すことができます。 詳しくは、[移行セットのログの表示](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)を参照してください。
+
