@@ -1,18 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.9.0 のリリースノート
-description: AEM as a Cloud Service の Cloud Manager 2023.9.0 のリリースノートです。
+title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.8.0 のリリースノート
+description: AEM as a Cloud Service の Cloud Manager 2023.8.0 のリリースノートです。
 feature: Release Information
-source-git-commit: dd52aef2f88cf64e8d9a32b1c8cafe4fcfbcb812
+exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
+source-git-commit: 3eee8a88b9945bb16be992d7157f9f7f3e816246
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 21%
+source-wordcount: '540'
+ht-degree: 34%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.9.0 のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.8.0 のリリースノート {#release-notes}
 
-このページは、AEM as a Cloud Service の Cloud Manager リリース 2023.9.0 のリリースノートです。
+このページは、AEM as a Cloud Service の Cloud Manager リリース 2023.8.0 のリリースノートです。
 
 >[!NOTE]
 >
@@ -20,11 +21,12 @@ ht-degree: 21%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service の Cloud Manager 2023.9.0 のリリース日は 2023年9月7日（PT）です。次回のリリースは 2023年10月5日（PT）に予定されています。
+AEM as a Cloud Service の Cloud Manager 2023.8.0 のリリース日は 2023年8月10日（PT）です。次回のリリースは 2023年9月14日（PT）に予定されています。
 
 ## 新着情報 {#what-is-new}
 
-このリリースではバグ修正に重点を置いています。
+* コンテンツセットを [コンテンツをコピー](/help/implementing/developing/tools/content-copy.md) [コンテキスト対応の設定](/help/implementing/developing/introduction/configurations.md) が UI のコンテンツセットで許可されるようになりました。
+* Cloud Manager UI のエラーメッセージのわかりやすさと表示を改善するための機能強化が行われました。
 
 ## 早期採用プログラム {#early-adoption}
 
@@ -53,6 +55,12 @@ AEM as a Cloud Service の Cloud Manager 2023.9.0 のリリース日は 2023年9
 
 ## バグ修正 {#bug-fixes}
 
-* プログラムを削除すると、関連する実行中のパイプラインも削除され、パイプラインが失敗ステータスと誤って指定されないようにします。
-* パイプラインの実行のすべてのステップが「完了」した場合、パイプラインのステータスが「実行中」と見なされ、停止状態になっているように見えることがあります。 「完了」と表示されます。
-* コードジェネレーターアーキタイプを使用して生成されたリポジトリブランチの場合、CI/CD パイプラインは失敗します。
+* **[コンテンツをコピー](/help/implementing/developing/tools/content-copy.md)**&#x200B;モーダルをトリガーした後、**環境**&#x200B;メニューが閉じるようになりました。
+* 前回の実行でビルドフェーズの状態に `commitId` が設定されていない場合、[パイプラインの再実行](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment)は許可されなくなりました。
+* ユーザーが&#x200B;**アクティビティ**&#x200B;画面または&#x200B;**パイプライン**&#x200B;画面でパイプラインをクリックすると、まれなエラーに対して、よりわかりやすいメッセージが表示されるようになりました。
+* The `contentSetName` の値がログになくなり、の開始時に入力で提供されるようになりました。 [コンテンツコピー](/help/implementing/developing/tools/content-copy.md) 操作。
+* まれな状況で、同じパイプラインから 2 回の実行を開始して「停止」状態になると、実行できなくなりました。
+* 証明書の有効期限が切れると、証明書に関連付けられているドメイン名と IP 許可リストは CDN から削除されなくなります。
+   * このような場合でも、サイトには引き続きアクセスできます。
+   * [](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)Cloud Manager UI には、SSL 証明書の有効期限が近づいていることを示す事前警告がよりわかりやすく表示されます。
+* Sites が Assets 専用プログラムのソリューションとして追加された場合に、AEMが公開エンドポイントへのアクセスを失う問題が修正されました。
