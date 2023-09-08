@@ -1,37 +1,30 @@
 ---
-title: AEM as a Cloud Service リリース 2023.07.0 の移行ツールのリリースノート
-description: AEM as a Cloud Service リリース 2022.07.0 の移行ツールのリリースノート
+title: AEM as a Cloud Service リリース 2023.09.0 の移行ツールのリリースノート
+description: AEM as a Cloud Service リリース 2022.09.0 の移行ツールのリリースノート
 feature: Release Information
-exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: 88227693b7dfc3cbd30751718dc85e55ee67bb96
+source-git-commit: 9abce12c396ee74d36019218dd8b4fa72f762256
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 46%
+source-wordcount: '150'
+ht-degree: 38%
 
 ---
 
-# AEM as a Cloud Service リリース 2023.07.0 の移行ツールのリリースノート {#release-notes}
+# AEM as a Cloud Service リリース 2023.09.0 の移行ツールのリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Service 2022.07.0 の移行ツールのリリースノートの概要を説明しています。
+このページでは、AEM as a Cloud Service 2022.09.0 の移行ツールのリリースノートの概要を説明しています。
 
-## ベストプラクティスアナライザー {#bpa-release}
+## コンテンツ転送ツール {#ctt-release}
 
-### リリース日 {#release-date-bpa}
+### リリース日 {#release-date-ctt}
 
-ベストプラクティスアナライザー v2.1.42 のリリース日は 2023年7月06日です。
+コンテンツ転送ツール v3.0.0 のリリース日は 2023 年 9 月 7 日です。
 
-### 新機能 {#what-is-new-bpa}
+### 新着情報 {#what-is-new-ctt}
 
-* このリリースのベストプラクティスアナライザーには、複数のベストプラクティスパターンが追加されました。 次のものが含まれます。
-   * 最小メンテナンスタスク設定の識別
-   * 長時間実行されるクエリや処理の多いクエリの検出
-   * 実行中または古い状態のオーサーワークフローの検出
-   * OSGI Apache Sling ジョブ設定の検出
-   * カスタム Guava キャッシュの検出
+コンテンツ転送ツールが大幅に改善され、次の利点があります。
+* AzCopy を利用して、すべての blob ID をコピーする代わりに、必要な blob ID のみをコピーすることで、コンテンツリポジトリのサブセットを移行する際の転送時間を短縮しました。
+* Oak-upgrade を使用した差分コンテンツ追加の高速化
+* インデックス作成プロセスをコンテンツ取り込みプロセスから分離することで、堅牢性を向上しました。 インデックス作成に失敗した場合、コンテンツを再度取り込む必要はありません。 インデックス作成のみが自動的に再起動し、時間と労力を大幅に節約
 
-### バグの修正 {#bug-fixes-bpa}
-
-* BPA が改善され、結果数が多いレポートでメモリ不足のレポート生成エラーが発生するのを防ぎました。
-* BPA が改善され、AEM as a Cloud Serviceへの移行コンテンツの取り込み失敗を防ぐため、パス内のエスケープ文字を検出できるようになりました。
 
 

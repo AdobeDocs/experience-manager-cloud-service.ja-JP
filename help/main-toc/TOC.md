@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 6c43921b90daa64dd4695c569e6dcd6f23e464cb
+source-git-commit: 9abce12c396ee74d36019218dd8b4fa72f762256
 workflow-type: tm+mt
-source-wordcount: '4265'
+source-wordcount: '4271'
 ht-degree: 93%
 
 ---
@@ -133,6 +133,8 @@ ht-degree: 93%
    + 移行ツールのリリースノート {#migration-tools}
       + [最新のリリースノート](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2023年度 {#2023}
+         + [2023.8.0 のリリースノート](/help/journey-migration/release-notes/release-notes-migration-tools-2023-08-0.md)
+         + [リリースノート（2023.7.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2023-07-0.md)
          + [リリースノート（2023.6.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2023-06-0.md)
          + [リリースノート（2023.3.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2023-03-0.md)
       + 2022年度 {#2022}
