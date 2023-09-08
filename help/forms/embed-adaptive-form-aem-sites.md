@@ -5,10 +5,10 @@ description: アダプティブForms — 埋め込みコンポーネントを使
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
+source-git-commit: d9dee0b5a070da6a19004c749f69c724fff9d967
 workflow-type: tm+mt
-source-wordcount: '3158'
-ht-degree: 35%
+source-wordcount: '3177'
+ht-degree: 34%
 
 ---
 
@@ -257,6 +257,11 @@ AEM Sites ページ内のアダプティブフォームをエクスペリエン�
 * **ページ言語を使用**：アダプティブフォームのロケールではなく、AEM Sites ページのロケールを使用します。このオプションは、アダプティブフォーム (Foundation) にのみ適用されます。
 * **フォームにフォーカスを設定**：アダプティブ フォームの最初のフィールドにフォーカスを設定する場合に選択します。このオプションは、アダプティブフォーム (Foundation) にのみ適用されます。
 * **テーマ**： アダプティブフォームのコンポーネントのスタイルを定義するテーマを選択します。スタイル設定には、フォントスタイル、背景色、サイズ、配置など、外観のプロパティが含まれます。このオプションは、アダプティブフォーム (Foundation) にのみ適用されます。
+
+  >[!NOTE]
+  >
+  > 以下を使用すると、 **ページ言語を使用**, **フォームにフォーカスを設定** および **テーマ** のオプションは、アダプティブフォーム (Foundation) に対してのみ使用できます。
+
 * **フォームはフレームの幅全体をカバーします**：インラインフレーム (iframe) は、アダプティブフォームをAEM Sitesページに読み込むHTML要素です。
 
    * 次の場合、 **[!UICONTROL フォームはフレームの幅全体をカバーします]** チェックボックスがオンの場合、アダプティブフォームは配置されるコンテナの全幅を占有します。 この場合、iframe はフォームのレンダリングには使用されません。 アダプティブフォームのレイアウトとデザインは、コンテナの幅全体に適応し、レスポンシブで、様々な画面サイズに調整できます。 このオプションを使用すると、複数のアダプティブFormsをAEM Sitesページ内に埋め込むことができます。

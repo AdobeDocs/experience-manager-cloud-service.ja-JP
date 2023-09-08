@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a6e76d2b3650d57adafe543b2b694360e4bb4169
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 77%
+source-wordcount: '1244'
+ht-degree: 64%
 
 ---
 
@@ -146,3 +146,26 @@ Edit Properties dialog for an interactive communication-->
 ![invoke-service](assets/invoke-service.png)
 
 また、`guidelib.dataIntegrationUtils.executeOperation` API を使用して、ルールエディターのコードエディターで JavaScript を記述することもできます。<!-- For API details, see [API to invoke Form Data Model service](invoke-form-data-model-services.md).-->
+
+### カスタム関数を使用したフォームデータモデルの呼び出し {#invoke-form-data-model-using-custom-functions}
+
+以下が可能です。 [カスタム関数を使用してルールエディターからフォームデータモデルを呼び出す](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). フォームデータモデルを呼び出すには、フォームデータモデルをに追加し許可リストに加えるます。 フォームデータモデルを許可リストに追加するには、以下の手順を実行します。
+
+1. Experience ManagerWeb コンソール ( ) に移動します。 `https://server:host/system/console/configMgr`.
+1. 場所 **[!UICONTROL サービス呼び出し用のフォームデータモデルのアダプティブフォームレベルのホワイトリスト登録 — 設定ファクトリ]**.
+1. クリック ![プラスアイコン](/help/forms/assets/Smock_Add_18_N.svg) アイコンをクリックして設定を追加します。
+1. 追加 **[!UICONTROL コンテンツパスパターン]** をクリックして、アダプティブFormsの場所を指定します。  デフォルトでは、値は `/content/forms/af/(.*)` これには、すべてのアダプティブFormsが含まれます。 また、特定のアダプティブフォームのパスを指定することもできます。
+1. 追加 **[!UICONTROL フォームデータモデルのパスパターン]** フォームデータモデルの場所を指定します。 デフォルトでは、値は `/content/dams/formsanddocuments-fdm/(.*)` これにはすべてのフォームデータモデルが含まれます。 また、特定のフォームデータモデルのパスを指定することもできます。
+1. 設定を保存します。
+
+追加した設定は、 **[!UICONTROL サービス呼び出し用のフォームデータモデルのアダプティブフォームレベルのホワイトリスト登録 — 設定ファクトリ]** オプション。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3423977/adaptive-forms-custom-function-rule-editor)
+
+>[!NOTE]
+>
+> AEMアーキタイププロジェクトを介してカスタム関数を使用してルールエディターからフォームデータモデルを呼び出すには、次の手順を実行します。
+>
+>1. [設定ファイルの作成](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json).
+>1. getContentPathPattern および getFormDataModelPathPattern のプロパティを設定します。
+>1. プロジェクトをデプロイします。

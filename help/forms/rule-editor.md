@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 21db924a8d925f9964cc7af6743764c119208159
 workflow-type: tm+mt
-source-wordcount: '6436'
+source-wordcount: '6446'
 ht-degree: 75%
 
 ---
@@ -150,7 +150,7 @@ _
 
 フォームデータモデルでのサービス設定について詳しくは、「[[!DNL Experience Manager Forms] データ統合](data-integration.md)」を参照してください。
 
-The **[!UICONTROL プロパティを設定]** ルールタイプを使用すると、条件アクションに基づいて、指定したオブジェクトのプロパティの値を設定できます。 次のいずれかで、プロパティをに設定できます。
+The **[!UICONTROL プロパティを設定]** ルールタイプを使用すると、条件アクションに基づいて、指定したオブジェクトのプロパティの値を設定できます。 プロパティは、次のいずれかに設定できます。
 * visible (Boolean)
 * dorExclusion (Boolean)
 * chartType（文字列）
@@ -633,7 +633,7 @@ Syntax（これ構文）： `@this currentComponent`
 
 クライアントライブラリを作成して CRX リポジトリーに追加するには、次のステップを実行します。
 
-1. クライアントライブラリを作成して、次の手順を実行します。詳しくは、「[クライアント側ライブラリの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=ja#developing)」を参照してください。
+1. クライアントライブラリを作成します。詳しくは、「[クライアント側ライブラリの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=ja#developing)」を参照してください。
 1. CRXDE 上で、`categories`文字列タイプの値を持つプロパティを`customfunction`として`clientlib`フォルダーに追加します。
 
    >[!NOTE]
@@ -654,7 +654,11 @@ CRX リポジトリーにクライアントライブラリを追加した後は�
 
    [![カスタム関数を利用したルールの作成](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
 
-1. 「**[!UICONTROL 完了]**」をタップします。これでカスタム関数が追加されました。
+1. 「**[!UICONTROL 完了]**」をタップします。これでカスタム機能が追加されました。
+
+   >[!NOTE]
+   >
+   > カスタム関数を使用してルールエディターからフォームデータモデルを呼び出すには、次の手順を実行します。 [こちらを参照](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
 
 #### 関数の宣言でサポートされるタイプ {#function-declaration-supported-types}
 
