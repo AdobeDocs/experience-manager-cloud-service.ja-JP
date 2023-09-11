@@ -1,31 +1,30 @@
 ---
-title: トラフィックをフィルタリングするための CDN および WAF ルールの設定
-description: CDN および Web アプリケーションファイアウォールルールを使用した悪意のあるトラフィックのフィルタリング
-source-git-commit: 27165ce7d6259f5b5fc9915349d87f551076389e
+title: トラフィックフィルタルールの設定（WAF ルールを使用）
+description: トラフィックフィルタルール（WAF ルールと共に）を使用してトラフィックをフィルタリングする
+source-git-commit: dc0c7e77bb4bc5423040364202ecac3c59adced0
 workflow-type: tm+mt
-source-wordcount: '2391'
+source-wordcount: '2690'
 ht-degree: 2%
 
 ---
 
 
-# トラフィックをフィルタリングするための CDN および WAF ルールの設定 {#configuring-cdn-and-waf-rules-to-filter-traffic}
+# トラフィックをフィルタリングするためのトラフィックフィルタルールの設定（WAF ルールを使用） {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
 >[!NOTE]
 >
 >この機能は、まだ一般には利用できません。 継続中のアーリーアダプタープログラムに参加するには、E メールを送信します。 **aemcs-waf-adopter@adobe.com**（組織の名前や機能への関心に関するコンテキストを含む）
 
-Adobeは、お客様の Web サイトに対する攻撃を軽減しようとしますが、悪意のあるトラフィックがアプリケーションに到達しないように、特定のパターンに一致する要求をプロアクティブにフィルタリングすると便利です。 考えられるアプローチは次のとおりです。
+Adobeは、お客様の Web サイトに対する攻撃を軽減しようとしますが、悪意のあるトラフィックがアプリケーションに到達しないように、特定のパターンに一致するトラフィックを積極的にフィルタリングすると便利です。 考えられるアプローチは次のとおりです。
 
 * などの Apache レイヤーモジュール `mod_security`
-* Cloud Manager の設定パイプラインを使用して CDN にデプロイされるルールの設定。
+* Cloud Manager の設定パイプラインを通じて CDN にデプロイされるトラフィックフィルタールールの設定
 
-ここでは、後者のアプローチについて説明します。後者のアプローチでは、次の 2 つのカテゴリのルールを提供します。
+この記事では、トラフィックフィルタールールのアプローチについて説明します。 これらのルールのほとんどは、IP、パス、ユーザーエージェントなど、リクエストのプロパティとリクエストヘッダーに基づいてリクエストをブロックまたは許可します。 これらのルールは、すべてのAEMas a Cloud ServiceサイトおよびFormsのお客様が設定できます。
 
-1. **CDN ルール**:IP、パス、ユーザーエージェントなどのリクエストのプロパティとリクエストヘッダーに基づいて、リクエストをブロックまたは許可します。 これらのルールは、すべてのAEMas a Cloud Service顧客が設定できます
-1. **WAF** （Web アプリケーションファイアウォール）ルール：悪意のあるトラフィックに関連付けられている既知の様々なパターンに一致する要求をブロックします。 これらのルールは、WAF アドオンのライセンスを持つお客様が設定できます。詳しくは、Adobeのアカウントチームにお問い合わせください。 アーリーアダプタープログラム中に追加のライセンスは必要ありません。
+WAF(Web Application Firewall) アドオンにライセンスを持つお客様は、「WAF traffic filter rules」と呼ばれる追加のカテゴリのルールを設定することもできます（つまり、WAF のルールを設定する必要があります）。 これらの WAF ルールは、悪意のあるトラフィックに関連付けられていると知られている様々なパターンに一致するリクエストをブロックします。 この機能のライセンスの詳細については、Adobeのアカウントチームにお問い合わせください。 アーリーアダプタープログラム中に追加のライセンスは必要ありません。
 
-これらのルールは、実稼動（サンドボックス以外）プログラム用の開発、ステージング、実稼動のクラウド環境タイプにデプロイできます。 RDE 環境のサポートは、今後利用可能になる予定です。
+トラフィックフィルタールールは、実稼動（サンドボックス以外）プログラムのすべてのクラウド環境タイプ（RDE、開発、ステージング、実稼動）にデプロイできます。
 
 ## セットアップ {#setup}
 
@@ -35,20 +34,26 @@ Adobeは、お客様の Web サイトに対する攻撃を軽減しようとし�
    config/
         cdn/
            cdn.yaml
-           _config.yaml
    ```
 
-1. `_config.yaml` では、設定に関する一部のメタデータについて説明します。 「kind」パラメーターは「CDN」に、バージョンはスキーマのバージョン（現在は「1」）に設定する必要があります。 以下のスニペットを参照してください。
+1. `cdn.yaml` には、メタデータと、トラフィックフィルタールールおよび WAF ルールのリストが含まれている必要があります。
 
    ```
    kind: "CDN"
    version: "1"
+   envType: "dev"
+   data:
+     trafficFilters:
+       rules:
+         ...
    ```
 
-   <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
+「kind」パラメーターは「CDN」に、バージョンはスキーマのバージョン（現在は「1」）に設定する必要があります。 後述の例を参照してください。
 
-1. `cdn.yaml` には、以下の節で説明するように、CDN ルールと WAF ルールのリストを含める必要があります。
-1. WAF ルールに一致させるには、新しいプログラムシナリオと既存のプログラムシナリオの両方で、以下の説明に従って、Cloud Manager で WAF を有効にする必要があります。 WAF 用に別のライセンスを購入する必要があります。
+
+<!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
+
+1. WAF ルールを設定するには、新しいプログラムシナリオと既存のプログラムシナリオの両方で、以下の説明に従って、Cloud Manager で WAF を有効にする必要があります。 WAF 用に別のライセンスを購入する必要があります。
 
    1. 新しいプログラムで WAF を設定するには、 **WAF-DDOS 保護** のチェックボックス **セキュリティ** 」タブを使用します。 引き続き、 [実稼動プログラムの追加](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) プログラムを作成するには
 
@@ -72,22 +77,47 @@ Adobeは、お客様の Web サイトに対する攻撃を軽減しようとし�
 
       >[!NOTE]
       >
-      >設定および実行できる Config パイプラインは、環境ごとに 1 つだけです。
+      > これらのパイプラインを設定または実行するには、ユーザーがデプロイメントマネージャーとしてログインする必要があります。
+      > また、環境ごとに 1 つの設定パイプラインのみを設定および実行できます。
 
    1. 「**保存**」を選択します。新しいパイプラインがパイプラインカードに表示され、準備が整ったら実行できます。
    1. RDE の場合は、コマンドラインが使用されますが、現時点では RDE はサポートされていません。
 
-## ルールの構文 {#rules-syntax}
+## トラフィックフィルタールールの構文 {#rules-syntax}
 
-ルールの形式を以下に示し、その後の節で示す例を続けます。
+次の項目を設定できます。 `traffic filter rules` を使用して、IP、ユーザーエージェント、リクエストヘッダー、ホスト名、地域、url などのパターンを照合します。
 
-| **プロパティ** | **CDN ルール** | **WAF ルール** | **タイプ** | **デフォルト値** | **説明** |
+WAF 製品のライセンスを持つお客様は、トラフィックフィルタールールの特別なカテゴリを設定することもできます。 `WAF traffic filter rules` （または WAF ルールの略）1 つ以上の WAF フラグを参照するもの。このフラグは、以下のセクションにリストされています。
+
+次に、WAF ルールも含む一連のトラフィックフィルタールールの例を示します。
+
+```
+kind: "CDN"
+version: "1"
+envType: "dev"
+data:
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action: 
+          type: block
+      - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
+        when: { reqProperty: path, like: "*" }
+        action:
+          type: block
+          wafFlags: [ SQLI, XSS]
+```
+
+cdn.yaml ファイルのトラフィックフィルタールールの形式を以下に示します。 後の節の例を参照してください。
+
+
+| **プロパティ** | **ほとんどのトラフィックフィルタールール** | **WAF トラフィックフィルタルール** | **タイプ** | **デフォルト値** | **説明** |
 |---|---|---|---|---|---|
 | name | X | X | `string` | - | ルール名（64 文字）（英数字と — のみを含めることができます） |
 | when | X | X | `Condition` | - | 基本的な構造は次のとおりです。<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>以下の「条件構造の構文」を参照してください。ここでは、ゲッター、述語および複数の条件を組み合わせる方法について説明しています。 |
-| アクション | X | X | `Enum` | ログ（CDN ルール） | CDN ルールの場合：allow、block、log。 初期設定は log です。<br><br>WAF ルールの場合： `enableWafRules`, `disableWafRules`、ログ。 デフォルトはありません。 |
+| アクション | X | X | `Action` | ログ | log、allow、block、log、または action オブジェクト。デフォルトは log です。 |
 | rateLimit | X |   | `RateLimit` | 定義なし | レート制限の設定。 レート制限は、定義されていない場合、無効になります。<br><br>以下に、rateLimit 構文と例を説明する別の節を示します。 |
-| wafRules |   | X | `array[Enum]` | - | 有効または無効にする必要がある WAF ルールのリスト。<br><br>SQLI や XSS などがあります。 完全なリストについては、以下の「waf ルール」リストを参照してください。 |
 
 ### 条件の構造 {#condition-structure}
 
@@ -113,7 +143,7 @@ Adobeは、お客様の Web サイトに対する攻撃を軽減しようとし�
     - { <getter>: <value>, <predicate>: <value> }
 ```
 
-| **プロパティ** | **タイプ** | **説明** |
+| **プロパティ** | **タイプ** | **意味** |
 |---|---|---|
 | **allOf** | `array[Condition]` | **および** 操作。 true を指定すると、リストに表示されているすべての条件が true を返します。 |
 | **anyOf** | `array[Condition]` | **または** 操作。 リストに表示された条件のいずれかが true を返す場合は true |
@@ -129,7 +159,7 @@ Adobeは、お客様の Web サイトに対する攻撃を軽減しようとし�
 
 **述語**
 
-| **プロパティ** | **タイプ** | **説明** |
+| **プロパティ** | **タイプ** | **意味** |
 |---|---|---|
 | **が次の値と等しい** | `string` | ゲッターの結果が指定された値と等しい場合は true |
 | **doesNotEqual** | `string` | ゲッターの結果が指定された値と等しくない場合は true |
@@ -140,11 +170,25 @@ Adobeは、お客様の Web サイトに対する攻撃を軽減しようとし�
 | **の** | `array[string]` | 指定されたリストにゲッター結果が含まれている場合は true |
 | **notIn** | `array[string]` | 指定されたリストにゲッター結果が含まれていない場合は true |
 
-**wafRules リスト**
+### アクション構造 {#action-structure}
 
-The `wafRules` プロパティには次のルールを含めることができます。
+指定者 `action` アクションタイプ (allow、block、log) を指定する文字列か、他のすべてのオプションのデフォルト値、またはルールタイプがで定義されるオブジェクトを指定できるフィールド `type` 必須フィールドと、そのタイプに適用できる他のオプション。
 
-| **ルール ID** | **ルール名** | **説明** |
+**アクションタイプ**
+
+アクションは、次の表に示すタイプに従って優先順位付けされ、実行される順序アクションを反映するように順序付けされます。
+
+| **名前** | **許可されたプロパティ** | **意味** |
+|---|---|---|
+| **許可** | `wafFlags`（オプション） | wafFlags が存在しない場合、はそれ以上のルール処理を停止し、応答を提供します。 wafFlags が存在する場合、指定された WAF 保護が無効になり、追加のルール処理に進みます。 |
+| **ブロック** | `status, wafFlags` （オプションで、相互に排他的） | wafFlags が存在しない場合、他のすべてのプロパティをバイパスして HTTP エラーを返します。エラーコードは status プロパティによって定義されます。またはデフォルトは 406 です。 wafFlags が存在する場合は、指定された WAF 保護を有効にし、さらにルール処理を続行します。 |
+| **ログ** | `wafFlags`（オプション） | は、ルールがトリガーされたという事実をログに記録します。そうしないと、処理に影響を与えません。 wafFlags は無効です |
+
+### WAF フラグリスト {#waf-flags-list}
+
+The `wafFlag` プロパティには、次のものを含めることができます。
+
+| **フラグ ID** | **フラグ名** | **説明** |
 |---|---|---|
 | SQLI | SQL 挿入 | SQL インジェクションとは、任意のデータベースクエリを実行して、アプリケーションへのアクセス権を取得したり、特権情報を取得したりする試みです。 |
 | バックドア | 裏口 | バックドア信号は、共通のバックドアファイルがシステム上に存在するかどうかを判断する要求です。 |
@@ -181,7 +225,9 @@ The `wafRules` プロパティには次のルールを含めることができ�
 
 * ルールが一致し、ブロックされた場合、CDN は次の応答を返します。 `406` リターンコード。
 
-## 例 {#examples}
+* 設定ファイルに秘密鍵を含めないでください。秘密鍵は、Git リポジトリにアクセスできるユーザーが読み取れるからです
+
+## ルールの例 {#examples}
 
 以下にいくつかのルールの例を示します。 詳しくは、 [レート制限セクション](#rules-with-rate-limits) さらに下に、レート制限の例を示します。
 
@@ -190,11 +236,16 @@ The `wafRules` プロパティには次のルールを含めることができ�
 このルールは、IP 192.168.1.1 からの要求をブロックします。
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "block-request-from-ip"
-      when: { reqProperty: clientIp, equals: "192.168.1.1" }
-      action: block
+  trafficFilters:
+     rules:
+       - name: "block-request-from-ip"
+         when: { reqProperty: clientIp, equals: "192.168.1.1" }
+         action: 
+           type: block
 ```
 
 **例 2**
@@ -202,15 +253,20 @@ data:
 このルールは、パスに対する要求をブロックします `/helloworld` Chrome を含むユーザーエージェントを使用して公開時：
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "block-request-from-chrome-on-path-helloworld-for-publish-tier"
-      when:
-        allOf:
-          - { reqProperty: path, equals: /helloworld }
-          - { reqProperty: tier, equals: publish }
-          - { reqHeader: user-agent, matches: '.*Chrome.*'  }
-      action: block
+  trafficFilters:
+     rules:
+       - name: "block-request-from-chrome-on-path-helloworld-for-publish-tier"
+         when: { reqProperty: clientIp, equals: "192.168.1.1" }
+           allOf:
+            - { reqProperty: path, equals: /helloworld }
+            - { reqProperty: tier, equals: publish }
+            - { reqHeader: user-agent, matches: '.*Chrome.*'  }
+           action: 
+             type: block
 ```
 
 **例 3**
@@ -218,14 +274,20 @@ data:
 このルールは、クエリパラメーターを含むリクエストをブロックします `foo`ですが、IP 192.168.1.1 からのすべてのリクエストを許可します。
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "block-request-that-contains-query-parameter-foo"
-      when: { queryParam: url-param, equals: foo }
-      action: block
-    - name: "allow-all-requests-from-ip"
-      when: { reqProperty: clientIp, equals: 192.168.1.1 }
-      action: allow
+  trafficFilters:
+    rules:
+      - name: "block-request-that-contains-query-parameter-foo"
+        when: { queryParam: url-param, equals: foo }
+        action: 
+          type: block
+      - name: "allow-all-requests-from-ip"
+        when: { reqProperty: clientIp, equals: 192.168.1.1 }
+        action: 
+          type: allow
 ```
 
 **例 4**
@@ -233,18 +295,53 @@ data:
 このルールは、パス/block-me への要求をブロックし、SQLI または XSS パターンに一致するすべての要求をブロックします。
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "path-rule"
-      when: { reqProperty: path, equals: /block-me }
-      action: block
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action: 
+          type: block
+      - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
+        when: { reqProperty: path, like: "*" }
+        action:
+          type: block
+          wafFlags: [ SQLI, XSS]
+```
 
-    - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
-      when: { reqProperty: path, like: "*" }
-      action: enableWafRules
-      wafRules:
-        - SQLI
-        - XSS
+**例 4**
+
+このルールは、OFAC 国へのアクセスをブロックします。
+
+```
+kind: "CDN"
+version: "1"
+envType: "dev"
+data:
+  trafficFilters:
+    rules:
+      - name: block-ofac-countries
+        when:
+          allOf:
+            - { reqProperty: tier, equals: publish }
+            - reqProperty: clientCountry
+              in:
+                - SY
+                - BY
+                - MM
+                - KP
+                - IQ
+                - CD
+                - SD
+                - IR
+                - LR
+                - ZW
+                - CU
+                - CI
+        action: block
 ```
 
 ## レート制限付きルール {#rules-with-rate-limits}
@@ -253,7 +350,7 @@ data:
 
 ### rateLimit の構造 {#ratelimit-structure}
 
-| **プロパティ** | **タイプ** | **デフォルト値** | **説明** |
+| **プロパティ** | **タイプ** | **デフォルト** | **意味** |
 |---|---|---|---|
 | 制限 | 10 ～ 10000の整数 | 必須 | ルールがトリガーされる 1 秒あたりのリクエスト率 |
 | window | integer enum: 1、10 または 60 | 10 | リクエスト率が計算されるサンプリングウィンドウ（秒） |
@@ -261,49 +358,90 @@ data:
 
 ### 例 {#ratelimiting-examples}
 
-例 1：過去 60 秒間で要求の速度が 1 秒あたり 100 件を超えた場合は、をブロックします。 `/critical/resource` 60 秒間
+**例 1**
+
+このルールは、過去 60 秒で 100 req/sec を超えた場合、5m のクライアントをブロックします
 
 ```
-- name: rate-limit-example
-  when: { reqProperty: path, equals: /critical/resource }
-  action: block
-  rateLimit: { limit: 100, window: 60, penalty: 60 }
+kind: "CDN"
+version: "1"
+envType: "dev"
+data:
+  trafficFilters:
+    - name: limit-requests-client-ip
+      when:
+        reqProperty: path
+        like: '*'
+      rateLimit:
+        limit: 60
+        window: 10
+        penalty: 300
+        groupBy:
+          - reqProperty: clientIp
+      action: block
 ```
 
-例 2：要求の速度が 10 秒で 1 秒あたり 10 件を超えた場合、300 秒間リソースをブロックします。
+**例 2**
+
+過去 60 秒で 100 req/sec を超えた場合に、パス/critical/resource で 60 秒に対する要求をブロックする
 
 ```
-- name: rate-limit-using-defaults
-  when: { reqProperty: path, equals: /critical/resource }
-  action: block
-  rateLimit:
-    limit: 10
+kind: "CDN"
+version: "1"
+envType: "dev"
+data:
+  trafficFilters:
+    rules:
+      - name: rate-limit-example
+        when: { reqProperty: path, equals: /critical/resource }
+        action: 
+          type: block
+        rateLimit: { limit: 100, window: 60, penalty: 60 }
 ```
 
 ## CDN ログ {#cdn-logs}
 
 AEM as a Cloud Serviceは CDN ログへのアクセスを提供します。CDN ログは、キャッシュヒット率の最適化や、CDN および WAF ルールの設定などの使用例に役立ちます。 CDN ログは Cloud Manager に表示されます **ログをダウンロード** ダイアログが表示されます。
 
-リクエストがルールと一致する場合は、アクションが「許可」であり、したがってトラフィックがブロックされていない場合でも、ルールの名前がルールプロパティに表示されます。
+「rules」プロパティは、一致するトラフィックフィルタールールを示し、次のパターンを持ちます。
 
-CDN のヒット、パス、ミスのどれであるかに関係なく、CDN へのすべてのリクエストに対して、一致する CDN ルールがログエントリに表示されます。 ただし、WAF ルールは、CDN のミスまたは合格と見なされる CDN へのリクエストに対してのみログエントリに表示されますが、CDN のヒットには表示されません。
+```
+"rules": "match=<matching-customer-named-rules-that-are-matched>,waf=<matching-WAF-rules>,action=<action_type>"
+```
 
-以下の例は、サンプルを示しています `cdn.yaml` と 2 つの CDN ログエントリ。それぞれ、CDN ルールと WAF ルールに一致するブロックされたリクエストによる、 rules プロパティに空でない値が含まれます。
+例：
+
+```
+"rules": "match=Block-Traffic-under-private-folder,Enable-SQL-injection-everywhere,waf="SQLI,SANS",action=block"
+```
+
+ルールは、次のように動作します。
+
+* 一致するルールの顧客宣言ルール名は、matches 属性に表示されます。
+* action 属性は、ルールがブロック、許可またはログ記録の影響を与えたかどうかを詳しく説明します。
+* WAF がライセンスされ、有効になっている場合、waf 属性には、設定に waf ルールがリストされているかどうかに関係なく、検出された waf ルール（SQLI など。これは顧客宣言名とは独立していることに注意してください）がリストされます。
+* 一致する顧客宣言ルールがなく、一致する waf ルールがない場合、rules 属性プロパティは空白になります。
+
+一般に、一致するルールは、CDN ヒット、パス、ミスのどれであるかに関係なく、CDN へのすべてのリクエストのログエントリに表示されます。 ただし、WAF ルールは、CDN のミスまたは合格と見なされる CDN へのリクエストに対してのみログエントリに表示されますが、CDN のヒットには表示されません。
+
+次の例に、cdn.yaml と 2 つの CDN ログエントリの例を示します。
 
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "path-rule"
-      when: { reqProperty: path, equals: /block-me }
-      action: block
-
-    - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
-      when: { reqProperty: path, like: "*" }
-      action: enableWafRules
-      wafRules:
-        - SQLI
-        - XSS
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action: block
+      - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
+        when: { reqProperty: path, like: "*" }
+        action:
+          type: block
+          wafFlags: [ SQLI, XSS ]
 ```
 
 ```
@@ -322,7 +460,7 @@ data:
 "status": 406,
 "res_age": 0,
 "pop": "PAR",
-"rules": "cdn=path-rule;waf=;action=blocked"
+"rules": "match=path-rule,action=blocked"
 }
 ```
 
@@ -342,7 +480,7 @@ data:
 "status": 406,
 "res_age": 0,
 "pop": "PAR",
-"rules": "cdn=;waf=SQLI;action=blocked"
+"rules": "match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked"
 }
 ```
 
@@ -366,4 +504,4 @@ data:
 | *status* | HTTP ステータスコード（整数値）。 |
 | *res_age* | 応答が（すべてのノードで）キャッシュされた時間（秒）。 |
 | *ポップ* | CDN キャッシュサーバーのデータセンター。 |
-| *rules* | CDN ルールと waf ルールの両方に対する、一致するルールの名前。<br><br>CDN のヒット、パス、ミスのどれであるかに関係なく、CDN へのすべてのリクエストに対して、一致する CDN ルールがログエントリに表示されます。<br><br>また、一致がブロックになったかどうかも示します。 <br><br>例：`cdn=;waf=SQLI;action=blocked`&quot;<br><br>一致するルールがない場合は空です。 |
+| *rules* | 一致するルールの名前。<br><br>また、一致がブロックになったかどうかも示します。 <br><br>例：`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`&quot;<br><br>一致するルールがない場合は空です。 |
