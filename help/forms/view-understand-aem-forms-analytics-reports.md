@@ -5,15 +5,17 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 96b3986f73ab71bad02b00ddc699aeecd498aebd
+source-git-commit: b44b54a88b87dc391dfeb51fb8b83095c274bd38
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
 
 
 # アダプティブForms分析レポートの表示と理解 {#viewing-and-understanding-aem-forms-analytics-reports}
+
+<span class="preview"> これはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 急速に進化するデジタル分析の状況では、十分な情報に基づく意思決定を行い、デジタルエクスペリエンスを最適化するために、グローバルなトレンドに常に従うことが不可欠です。 これに対応するため、アダプティブFormsはAdobe Analyticsとシームレスに統合して、公開済みのフォームやドキュメントのパフォーマンス指標を取得し、追跡します。 これらの指標の分析の目的は、指標と分析を使用して、フォームの使いやすさと効果を高め、データ主導型の意思決定を行うことです。
 

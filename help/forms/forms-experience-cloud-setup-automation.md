@@ -1,15 +1,17 @@
 ---
 title: アダプティブフォームのAdobe Analyticsを有効にする (Experience Cloud設定の自動化を使用 )
 description: Experience Cloudの自動設定は、Adobe Analyticsをアダプティブフォームに接続する際に役立ちます。 これは、アダプティブフォームでのユーザーインタラクションの追跡と分析に役立ち、訪問者のインタラクションとエンゲージメントに関するインサイトを提供します。
-source-git-commit: 3ff64646b7d7c03374bc6deadbdeb7bc27dbbacf
+source-git-commit: b44b54a88b87dc391dfeb51fb8b83095c274bd38
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1030'
 ht-degree: 2%
 
 ---
 
 
 # アダプティブフォームのAdobe Analyticsを有効にする (Experience Cloud設定の自動化を使用 ) {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
+
+<span class="preview"> これはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 Experience Cloudの自動設定を使用すると、Adobe AnalyticsをアダプティブFormsに連携でき、フォームとのユーザーインタラクションを追跡し、分析し、訪問者のインタラクションとエンゲージメントに関するインサイトを提供できます。 Experience Cloudのセットアップ自動化は、完了時間やドロップオフポイントなどの指標の評価を含む、フォームのパフォーマンスの監視にも役立ちます。 この分析により、フォームを最適化してユーザーエクスペリエンスを向上させると同時に、ログインステータスに基づいてユーザーの行動を区別し、一般的な傾向やパターンを特定することができます。
 
