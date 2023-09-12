@@ -2,21 +2,24 @@
 title: AEM Forms と Adobe Analytics を統合する方法
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+hidefromtoc: true
+source-git-commit: d97b17981e82323317e34185e47ee3f4224795b3
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 99%
+source-wordcount: '1743'
+ht-degree: 83%
 
 ---
 
-# [!DNL Adobe Analytics] との統合 {#integrate-aem-forms-with-adobe-analytics}
+# AEM Forms と [!DNL Adobe Analytics] の統合 {#integrate-aem-forms-with-adobe-analytics}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 | AEM as a Cloud Service | この記事 |
 
-AEM Forms は、[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=ja) と統合されているので、公開済みフォームのパフォーマンス指標を取得および追跡できます。これらの指標を分析する目的は、ビジネスユーザーがエンドユーザーの行動に関するインサイトを得て、データキャプチャエクスペリエンスを最適化できるようにすることです。Adobe Analytics for Adaptive Forms を介して、ログインしているユーザーとログインしていない（匿名）ユーザーの両方の動作を取得および追跡できます。
+<span class="preview"> アダプティブフォームをAdobe Analyticsとシームレスかつ迅速に統合するには、次を参照してください： [アダプティブフォームのAdobe Analyticsを有効にする (Experience Cloud設定の自動化を使用 )](/help/forms/forms-experience-cloud-setup-automation.md). </span>
+
+AEM Forms は、[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=ja) と統合されているので、公開済みフォームのパフォーマンス指標を取得および追跡できます。これらの指標を分析する目的は、ビジネスユーザーがエンドユーザーの行動に関するインサイトを得て、データ取得のエクスペリエンスを最適化できるようにすることです。 Adobe Analytics for Adaptive Formsを介して、ログインしているユーザーとログインしていない（匿名）ユーザーの両方の動作を取得および追跡できます。
 
 この記事で取り上げる操作を実行すると、[!DNL Adobe Analytics] でレポートを設定したり表示したりできます（次のビデオを参照）。
 
@@ -38,7 +41,7 @@ AEM Forms は、[Adobe Analytics](https://experienceleague.adobe.com/docs/analyt
 
 * **保存**：ユーザーがフォームポータルにフォームを保存した回数。
 
-これらの標準イベントに加え、ルールエディターを使用してアダプティブフォームにカスタムイベントを定義し、それらのイベントを [!DNL Adobe Analytics] のイベントにマッピングすることができます。
+既製のイベントに加え、ルールエディターを使用してアダプティブフォームでカスタムイベントを定義し、それらのイベントを [!DNL Adobe Analytics]
 
 次の図は、[!DNL Adobe Analytics] でレポートを表示する前に実行する必要があるアクションを示しています。
 
@@ -75,7 +78,7 @@ AEM Forms と [Adobe Analytics](https://experienceleague.adobe.com/docs/experien
 
 ### データ要素の設定 {#configure-data-elements}
 
-イベント用に作成されたルールで、設定済みのデータ要素を選択できます。アダプティブフォームでイベントが発生すると、AEM Forms はこれらのデータ要素を [!DNL Adobe Analytics] に送信します。
+イベント用に作成されたルールで、設定済みのデータ要素を選択できます。アダプティブフォームでイベントが発生すると、AEM Formsは、これらのデータ要素をに送信します。 [!DNL Adobe Analytics].
 
 **[!UICONTROL Adobe Experience Manager Forms]** 拡張機能をインストールしたら、次のデータ要素を作成できます。
 
@@ -92,7 +95,7 @@ AEM Forms と [Adobe Analytics](https://experienceleague.adobe.com/docs/experien
    <td>PageName</td>
   </tr>
   <tr>
-   <td>PageURL<br /> で使用される様々なキャッシュに分散されます。 </td>
+   <td>PageURL<br />。 </td>
    <td>PanelTitle<br /> </td>
    <td>TimeSpent</td>
   </tr>
@@ -167,7 +170,7 @@ AEM Forms と [Adobe Analytics](https://experienceleague.adobe.com/docs/experien
 1. 「アクションタイプ」として「**[!UICONTROL 変数をクリア]**」を選択します。「**[!UICONTROL 変更を保持]**」をタップします。これらの手順を実行すると、「**[!UICONTROL アクション]**」セクションの表示は次のようになります。
    ![アクションの設定](assets/actions-config.png)
 
-   必要に応じて、「**[!UICONTROL アクション]**」セクションをカスタマイズします。例えば、アクションフローで「**ビーコンを送信**」ステップを 2 つ定義して、一方のステップではデータを [!DNL Adobe Analytics] に送信してページビューとして扱い、もう一方のステップではデータを [!DNL Adobe Analytics] に送信するものの、ページビューとしては扱わない、というようなことが可能です。
+   必要に応じて、「**[!UICONTROL アクション]**」セクションをカスタマイズします。例えば、 **ビーコンを送信** にデータを送信するアクションフローの手順 [!DNL Adobe Analytics] を使用して、1 つの手順でページビューとして扱い、にデータを送信します。 [!DNL Adobe Analytics] 2 番目の手順ではページビューとして扱わないでください。
 
    ![アクションの設定](assets/actions-config-2.png)
 
@@ -192,13 +195,13 @@ AEM Forms と [Adobe Analytics](https://experienceleague.adobe.com/docs/experien
 
 1. 「**[!UICONTROL 開発]**」セクションで、「![その他のオプション](assets/more-options-icon.svg)」をタップしたあと、「**[!UICONTROL 承認して実稼動環境に公開]**」をタップします。
 
-1. 変更を確認すると、公開フローがすぐに「**[!UICONTROL 公開済み]**」セクションに表示されます。
+1. 変更と公開フローがすぐに **[!UICONTROL 公開済み]** 」セクションに入力します。
 
 ![公開フロー](assets/publish-flow.png)
 
 ## 2. AEM Forms の設定 {#configure-aem-forms}
 
-Adobe Launch 設定を作成する前に、[Adobe Launch をクラウドソリューションとして使用して Adobe IMS 設定を作成](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=ja)します。
+AdobeLaunch 設定を作成する前に、 [Adobe IMSソリューションとしてAdobeLaunch を使用したクラウド設定](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=ja).
 
 ### Adobe Launch 設定の作成 {#create-adobe-launch-configuration}
 
@@ -222,7 +225,7 @@ Adobe Launch 設定を作成するには、次の手順を実行します。
 
 ### アダプティブフォームでの [!DNL Adobe Analytics] の有効化 {#enable-analytics-adaptive-form}
 
-既存のアダプティブフォームで [!DNL Adobe Launch] 設定を使用するには：
+次の手順で [!DNL Adobe Launch] 既存のアダプティブフォームの設定：
 
 1. AEM Forms オーサーインスタンスで、**[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;に移動します。
 1. アダプティブフォームを選択し、**[!UICONTROL プロパティ]**&#x200B;アイコンをタップします。
@@ -234,11 +237,11 @@ Adobe Launch 設定を作成するには、次の手順を実行します。
 
 ### カスタムイベントをキャプチャするルールの作成（オプション） {#capture-custom-events}
 
-Analytics データをアダプティブフォームから [!DNL Adobe Analytics] に送信するため、ルールエディターを使用してアダプティブフォームの特定のフィールドに関するルールを作成します。
+ルールエディターを使用してアダプティブフォームの特定のフィールドにルールを作成し、アダプティブフォームからに Analytics データを送信する [!DNL Adobe Analytics].
 
-2 段階のプロセスで、アダプティブフォームのフィールドにルールを定義します。このルールがイベントをディスパッチします。イベントの名前は、Adobe Launch のカスタムキャプチャイベントにマッピングされます。
+2 段階のプロセスで、アダプティブフォームのフィールドにルールを定義します。このルールがイベントをディスパッチします。イベントの名前は、Event Launch のカスタムキャプチャイベントにマッピングされていますAdobe。
 
-アダプティブフォームでルールエディターを使用してルールを作成するには：
+アダプティブフォーム内でルールエディターを使用してルールを作成するには、次の手順を実行します。
 
 1. フィールドをタップし、「![ルールエディター](assets/rule-editor-icon.svg)」を選択してルールエディターページを開きます。
 1. ルールの「[!UICONTROL 条件]」セクションで条件を定義します。
@@ -259,7 +262,7 @@ Analytics データをアダプティブフォームから [!DNL Adobe Analytics
 
 1. 「**[!UICONTROL イベントタイプ]**」ドロップダウンリストから「**[!UICONTROL カスタムイベントをキャプチャ]**」を選択します。
 
-1. ルールエディターを使用してルールを作成する際に手順 4 で指定したイベントの名前を指定します。
+1. ルールエディターを使用してルールを作成する際に、手順 4 で指定したイベントの名前を指定します。
 
 1. 「**変更を保持**」をタップし、[ルールの設定](#configure-rules)で指定した残りのアクションを実行します。
 
@@ -281,7 +284,7 @@ Analytics データをアダプティブフォームから [!DNL Adobe Analytics
 
 1. 「![ビジュアライゼーション](assets/visualization-icon.svg)」をタップし、グラフのタイプを「フリーフォーム」セクションにドロップします。同様に、複数のグラフタイプを「フリーフォーム」セクションに追加できます。
 
-1. Ctrl + S キーを押し、名前を指定してプロジェクトを保存します。
+1. Ctrl + S キーをタップし、プロジェクトを保存する名前を指定します。
 
 <!--
 
