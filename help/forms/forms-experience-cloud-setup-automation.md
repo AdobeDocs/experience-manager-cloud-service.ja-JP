@@ -1,9 +1,9 @@
 ---
-title: アダプティブフォームのAdobe Analyticsを有効にする (Experience Cloud設定の自動化を使用 )
-description: Experience Cloudの自動設定は、Adobe Analyticsをアダプティブフォームに接続する際に役立ちます。 これは、アダプティブフォームでのユーザーインタラクションの追跡と分析に役立ち、訪問者のインタラクションとエンゲージメントに関するインサイトを提供します。
-source-git-commit: b44b54a88b87dc391dfeb51fb8b83095c274bd38
+title: アダプティブフォーム用にAdobe Analyticsを有効にする
+description: Experience Cloudの自動設定を使用すると、Adobe Analyticsをアダプティブフォームに接続して、訪問者のインタラクションとエンゲージメントに関するインサイトを追跡できます。
+source-git-commit: 39ea959cb0a0568fd94ca455be935228479c0415
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1013'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ Adobe Analyticsは、アダプティブFormsのパフォーマンス指標の包
 
 * **訪問者の支援が必要な領域** ヘルプビュー、検証エラーインスタンス、フィールド訪問の頻度などの指標。フォーム入力に関するサポートが必要な場所を強調表示します。
 
-![分析レポート](assets/analytics-report.png)
+![分析レポート](assets/analytics-report.png){width="100%"}
 
 
 各指標について詳しくは、 [AEM Forms Analytics レポートの表示と理解](/help/forms/view-understand-aem-forms-analytics-reports.md)
@@ -58,7 +58,7 @@ Experience Cloud設定の自動化、Adobe Analytics、Experience Platform Launc
 
 上記がFormsのas a Cloud Serviceの環境で使用できることを確認するには、 [開発者コンソール](https://developer.adobe.com/console/projects)を開き、プロジェクトに移動し、例えば、URL を持つ環境のプログラム id でプロジェクトを検索します。 `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`、プログラム ID は `p45913-e175111`. Experience Cloud設定の自動化、Adobe AnalyticsおよびExperience Platform LaunchAPI が表示されていることを確認します。 これらが一覧に表示されている場合は、アダプティブFormsに対してAdobe Analyticsを有効にすることができます。
 
-![Forms Analytics の統合の前提条件](assets/analytics-aem.png)
+![Forms Analytics の統合の前提条件](assets/analytics-aem.png){width="100%"}
 
 <!-- 
 >[!NOTE]
@@ -94,7 +94,7 @@ Experience Cloud設定の自動化、Adobe Analytics、Experience Platform Launc
 1. AEMインスタンスで、に移動します。 **[!UICONTROL Forms]** >> **[Formsとドキュメント]** を選択し、 **[!UICONTROL フォーム]**&#x200B;を使用すると、次の画像に示すように、Adobe Analyticsがフォームに統合されています。
 1. これで、 [アダプティブフォームAdobe Analyticsレポート](#view-adobe-analytics-report).
 
-![統合AEM Analytics](assets/analytics-aem-integrated.png)
+![統合AEM Analytics](assets/analytics-aem-integrated.png){width="100%"}
 
 ### コアコンポーネント用のアダプティブFormsでのAdobe Analyticsの有効化 {#integrate-adobe-analytics-with-aem-forms-for-core-components}
 
@@ -115,7 +115,7 @@ Experience Cloud設定の自動化、Adobe Analytics、Experience Platform Launc
 1. AEMインスタンスで、に移動します。 **[!UICONTROL Forms]** >> **[!UICONTROL Formsとドキュメント]**.
 1. フォームを選択すると、左側に示すように、Adobe AnalyticsがAdobe Analytics用にアクティブ化されたFormsに統合されています。
 
-   ![レポートを表示](assets/activ-aa.png)
+   ![レポートを表示](assets/activ-aa.png){width="100%"}
 
 1. クリック **Adobe Analytics** レポートを表示し、パフォーマンスデータを分析します。
 
