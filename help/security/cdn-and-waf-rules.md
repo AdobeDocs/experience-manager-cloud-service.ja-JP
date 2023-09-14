@@ -1,9 +1,9 @@
 ---
 title: トラフィックフィルタルールの設定（WAF ルールを使用）
 description: トラフィックフィルタルール（WAF ルールと共に）を使用してトラフィックをフィルタリングする
-source-git-commit: dc0c7e77bb4bc5423040364202ecac3c59adced0
+source-git-commit: b1b184b63ab6cdeb8a4e0019c31a34db59438a3d
 workflow-type: tm+mt
-source-wordcount: '2690'
+source-wordcount: '2709'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,8 @@ WAF(Web Application Firewall) アドオンにライセンスを持つお客様�
    ```
    kind: "CDN"
    version: "1"
-   envType: "dev"
+   metadata:
+     envTypes: ["dev"]
    data:
      trafficFilters:
        rules:
@@ -94,13 +95,14 @@ WAF 製品のライセンスを持つお客様は、トラフィックフィル�
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: "path-rule"
         when: { reqProperty: path, equals: /block-me }
-        action: 
+        action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
         when: { reqProperty: path, like: "*" }
@@ -225,7 +227,7 @@ The `wafFlag` プロパティには、次のものを含めることができま
 
 * ルールが一致し、ブロックされた場合、CDN は次の応答を返します。 `406` リターンコード。
 
-* 設定ファイルに秘密鍵を含めないでください。秘密鍵は、Git リポジトリにアクセスできるユーザーが読み取れるからです
+* 設定ファイルには、Git リポジトリにアクセスできるすべてのユーザーが読み取れるので、シークレットを含めないでください。
 
 ## ルールの例 {#examples}
 
@@ -238,13 +240,14 @@ The `wafFlag` プロパティには、次のものを含めることができま
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
        - name: "block-request-from-ip"
          when: { reqProperty: clientIp, equals: "192.168.1.1" }
-         action: 
+         action:
            type: block
 ```
 
@@ -255,7 +258,8 @@ data:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
@@ -265,7 +269,7 @@ data:
             - { reqProperty: path, equals: /helloworld }
             - { reqProperty: tier, equals: publish }
             - { reqHeader: user-agent, matches: '.*Chrome.*'  }
-           action: 
+           action:
              type: block
 ```
 
@@ -276,17 +280,18 @@ data:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: "block-request-that-contains-query-parameter-foo"
         when: { queryParam: url-param, equals: foo }
-        action: 
+        action:
           type: block
       - name: "allow-all-requests-from-ip"
         when: { reqProperty: clientIp, equals: 192.168.1.1 }
-        action: 
+        action:
           type: allow
 ```
 
@@ -297,13 +302,14 @@ data:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: "path-rule"
         when: { reqProperty: path, equals: /block-me }
-        action: 
+        action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
         when: { reqProperty: path, like: "*" }
@@ -319,7 +325,8 @@ data:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -352,20 +359,22 @@ data:
 
 | **プロパティ** | **タイプ** | **デフォルト** | **意味** |
 |---|---|---|---|
-| 制限 | 10 ～ 10000の整数 | 必須 | ルールがトリガーされる 1 秒あたりのリクエスト率 |
-| window | integer enum: 1、10 または 60 | 10 | リクエスト率が計算されるサンプリングウィンドウ（秒） |
-| 違約金 | 60 ～ 3600 の整数 | 300（5 分） | 一致するリクエストがブロックされる期間（秒単位）（最も近い分に丸められます） |
+| 制限 | 10 ～ 10000の整数 | 必須 | ルールがトリガーされる 1 秒あたりのリクエスト数です。 |
+| window | integer enum: 1、10 または 60 | 10 | リクエスト率が計算されるサンプリングウィンドウ（秒）。 |
+| 違約金 | 60 ～ 3600 の整数 | 300（5 分） | 一致するリクエストがブロックされる期間（秒単位）（最も近い分に丸められます）。 |
+| groupBy | 配列[ゲッター] | なし | レートリミッターカウンターは、一連の要求プロパティ（clientIp など）によって集計されます。 |
 
 ### 例 {#ratelimiting-examples}
 
 **例 1**
 
-このルールは、過去 60 秒で 100 req/sec を超えた場合、5m のクライアントをブロックします
+このルールは、過去 60 秒で 100 req/sec を超えた場合、5m のクライアントをブロックします。
 
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     - name: limit-requests-client-ip
@@ -383,18 +392,19 @@ data:
 
 **例 2**
 
-過去 60 秒で 100 req/sec を超えた場合に、パス/critical/resource で 60 秒に対する要求をブロックする
+過去 60 秒で 100 req/sec を超えた場合に、パス/critical/resource で 60 秒に対する要求をブロックします。
 
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: rate-limit-example
         when: { reqProperty: path, equals: /critical/resource }
-        action: 
+        action:
           type: block
         rateLimit: { limit: 100, window: 60, penalty: 60 }
 ```
@@ -418,7 +428,7 @@ AEM as a Cloud Serviceは CDN ログへのアクセスを提供します。CDN �
 ルールは、次のように動作します。
 
 * 一致するルールの顧客宣言ルール名は、matches 属性に表示されます。
-* action 属性は、ルールがブロック、許可またはログ記録の影響を与えたかどうかを詳しく説明します。
+* action 属性は、ルールがブロック、許可またはログの影響を与えたかどうかを詳しく説明します。
 * WAF がライセンスされ、有効になっている場合、waf 属性には、設定に waf ルールがリストされているかどうかに関係なく、検出された waf ルール（SQLI など。これは顧客宣言名とは独立していることに注意してください）がリストされます。
 * 一致する顧客宣言ルールがなく、一致する waf ルールがない場合、rules 属性プロパティは空白になります。
 
@@ -430,7 +440,8 @@ AEM as a Cloud Serviceは CDN ログへのアクセスを提供します。CDN �
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -490,7 +501,7 @@ data:
 
 | **フィールド名** | **説明** |
 |---|---|
-| *timestamp* | TLS 終了後にリクエストが開始した時刻 |
+| *timestamp* | TLS の終了後にリクエストが開始した時刻。 |
 | *tfb* | の略称 *最初のバイトまでの時間*. リクエストが開始してから、応答本文がストリーミングを開始するまでの時間間隔です。 |
 | *cli_ip* | クライアントの IP アドレス。 |
 | *cli_country* | 2 文字 [ISO 3166-1](https://ja.wikipedia.org/wiki/ISO_3166-1) 顧客の国コードの alpha-2。 |
