@@ -2,22 +2,22 @@
 title: コンテンツの取り込みCloud Service
 description: Cloud Acceleration Manager を使用して、移行セットから宛先Cloud Serviceインスタンスにコンテンツを取り込む方法を説明します。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 382d1ed93e9545127ebb54641657db365886503d
+source-git-commit: 5c482e5f883633c04d70252788b01f878156bac8
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 41%
+source-wordcount: '2142'
+ht-degree: 31%
 
 ---
 
 # コンテンツの取り込みCloud Service {#ingesting-content}
 
-## コンテンツ転送ツールの取り込みプロセス {#ingestion-process}
+## Cloud Acceleration Manager での取り込みプロセス {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="コンテンツの取得"
 >abstract="取得とは、移行セットから宛先の Cloud Service インスタンスにコンテンツを取得することを指します。コンテンツ転送ツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja" text="追加取り込み"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process" text="追加抽出"
 
 Cloud Acceleration Manager を使用して移行セットを取り込むには、次の手順に従います。
 
@@ -42,50 +42,31 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
    >コンテンツの取り込みには、次の注意事項が適用されます。
    > ソースがオーサーの場合は、ターゲットのオーサー層に取り込むことをお勧めします。同様に、ソースがパブリッシュの場合は、ターゲットもパブリッシュにする必要があります。
    > ターゲット層が `Author`に設定されていない場合、オーサーインスタンスは取り込み中にシャットダウンされ、ユーザー（作成者やメンテナンスを実行しているすべてのユーザーなど）は使用できなくなります。 これは、システムを保護し、失われたり取り込みの競合が発生したりする可能性のある変更を防ぐためです。 チームがこの事実を認識していることを確認します。 また、オーサーの取り込み中に環境が休止状態であるように見えます。
-   > オプションの事前コピー手順を実行して、取り込み段階を大幅に高速化できます。詳しくは、 [AzCopy での取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) を参照してください。
+   > オプションのプリコピー手順を実行すると、取り込みを大幅に高速化できます。 詳しくは、 [AzCopy での取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) を参照してください。
    > 事前コピーを使用した取得を（S3 または Azure データストアに対して）使用する場合は、最初にオーサーの取得を単独で実行することをお勧めします。これにより、後で実行された場合に、パブリッシュの取り込みが高速化されます。
    > 取り込みは、Rapid Development Environment(RDE) の宛先をサポートしておらず、ユーザーがアクセスできる場合でも、目的の宛先として表示されません。
 
    >[!IMPORTANT]
-   > コンテンツの取り込みには、次の重要な注意事項が適用されます。
    > 宛先環境への取り込みは、ローカルの **AEM管理者** グループを作成します。 取り込みを開始できない場合は、 [取り込みを開始できません](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) を参照してください。
-   > 設定が **ワイプ** は取り込み前に有効になり、既存のリポジトリ全体が削除され、コンテンツを取り込むためのリポジトリが作成されます。 このワークフローは、ターゲットの Cloud Service インスタンスに対する権限を含むすべての設定をリセットします。このリセットは、管理者ユーザーが **管理者** グループ化します。 取り込みを開始するには、管理者グループに読み上げる必要があります。
+
+   * を選択します。 `Wipe` 値
+      * The **ワイプ** 「 」オプションは、インジェストの開始点を設定します。 次の場合 **ワイプ** を有効にすると、そのすべてのコンテンツを含む宛先が、Cloud Manager で指定されたAEMのバージョンにリセットされます。 有効にしない場合、宛先は現在のコンテンツを出発点として維持します。
+      * このオプションは **NOT** は、コンテンツの取り込みの実行方法に影響します。 取り込みでは常にコンテンツ置換戦略を使用し、 _not_ コンテンツ結合戦略で、両方で **ワイプ** および **ワイプしない** 場合、移行セットを取り込むと、宛先上の同じパスにあるコンテンツが上書きされます。 例えば、移行セットに `/content/page1` と宛先には既に次が含まれています： `/content/page1/product1`を含めない場合、取り込みにより、 `page1` パスとそのサブページ ( `product1`をクリックし、移行セット内のコンテンツに置き換えます。 つまり、 **ワイプしない** 管理する必要のあるコンテンツを含む宛先への取り込み。
+
+   >[!IMPORTANT]
+   > 設定が **ワイプ** を有効にすると、ターゲットリポジトリインスタンスに対するユーザー権限を含む、既存のCloud Service全体がリセットされます。 このリセットは、管理者ユーザーが **管理者** 取り込みを開始するには、グループに追加し、そのユーザーを administrators グループに再度追加する必要があります。
 
 1. クリック **取り込み**.
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. その後、取り込みジョブリスト表示で取り込み段階を監視できます。 また、取り込みのアクションメニューを使用し、取り込みの進行に伴ってログを表示できます。
+1. その後、取り込みジョブリストビューから取り込みを監視し、取り込みのアクションメニューを使用して、取り込みの進行に応じて期間とログを表示できます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
 1. 次をクリック： **一** ボタンをクリックして、取り込みジョブの詳細を確認してください。 取り込みの各手順の実行中または完了時の期間は、「 **...**&#x200B;をクリックし、 **期間を表示**. また、抽出した情報は、取り込まれている内容を実現するためにも示されます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
-
-<!-- Alexandru: hiding temporarily, until it's reviewed 
-
-1. The **Migration Set ingestion** dialog box displays. Content can be ingested to either Author instance or Publish instance at a time. Select the instance to ingest content to. Click on **Ingest** to start the ingestion phase. 
-
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-02.png)
-
-   >[!IMPORTANT]
-   >If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run Author ingestion first alone. This will speed up the Publish ingestion when it is run later. 
-
-   >[!IMPORTANT]
-   >When the **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group.
-
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-03.png)
-
-   Additionally, click on **Customer Care** to log a ticket, as shown in the figure below. 
-
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
-
-   Also, see [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) to learn more.
-
-1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
-
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-05.png) -->
 
 ## 追加取り込み {#top-up-ingestion-process}
 
@@ -95,14 +76,14 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 >abstract="前回のコンテンツ転送アクティビティ以降に変更されたコンテンツを移動するには、追加取り込み機能を使用します。取り込みが完了したら、ログを調べて、エラーや警告がないか確認します。エラーが発生した場合は、報告された問題を解決するかアドビカスタマーケアに連絡して、すぐに対処してください。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ja" text="ログの表示"
 
-コンテンツ転送ツールには、*差分コンテンツ追加*&#x200B;をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。
+コンテンツ転送ツールには、 *トップアップ* 移行セットの これにより、移行セットを変更して、前の抽出以降に変更されたコンテンツのみを含めることができ、再度すべてのコンテンツを抽出する必要がなくなります。
 
 >[!NOTE]
->最初のコンテンツ転送の後は、差分コンテンツ追加を頻繁に行って、Cloud Service での運用を開始する前に行う最後の差分コンテンツ転送に必要なコンテンツ凍結期間を短縮することをお勧めします。最初のフル取り込みにコピー前の手順を使用した場合、後続の追加取り込みに対してコピー前の手順をスキップできます（追加の移行セットのサイズが 200 GB 未満の場合）。 これは、プロセス全体に時間がかかる可能性があるからです。
+>最初のコンテンツ転送の後は、差分コンテンツ追加を頻繁に行って、Cloud Service での運用を開始する前に行う最後の差分コンテンツ転送に必要なコンテンツ凍結期間を短縮することをお勧めします。最初の取り込みにコピー前の手順を使用した場合、後続の追加取り込みに対してコピー前の手順をスキップできます（追加の移行セットのサイズが 200 GB 未満の場合）。 これは、プロセス全体に時間がかかる可能性があるからです。
 
-取り込みプロセスが完了したら、差分コンテンツを取り込むには、 [追加抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)をクリックし、追加インジェスト方法を使用します。
+一部の取り込みが完了した後に差分コンテンツを取り込むには、 [追加抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)次に、 **ワイプ** オプション **無効**. 必ず **ワイプ** 上記の説明を参照して、宛先に既に存在するコンテンツが失われないようにします。
 
-取り込みジョブを作成して、次の点を確認します。 **ワイプ** は、次に示すように、取得段階では無効になっています。
+取り込みジョブを作成して、次の点を確認します。 **ワイプ** は、次に示すように、取り込み中は無効になります。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
@@ -161,22 +142,22 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
-AEM の各ノードには、一意の UUID が必要です。このエラーは、取り込まれるノードが、ターゲットインスタンス上の別のパスに存在する uuid と同じ uuid を持つことを示します。
+AEM の各ノードには、一意の UUID が必要です。このエラーは、取り込まれるノードが、宛先インスタンス上の別のパスに存在する uuid と同じ uuid を持つことを示します。
 この状況は、抽出とそれ以降の間にソース上でノードが移動した場合に発生する可能性があります [追加抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
-また、ターゲット上のノードが取り込みと後続の追加取り込みの間に移動した場合にも発生する可能性があります。
+また、宛先のノードが取り込みとそれ以降の追加取り込みの間に移動した場合にも発生する可能性があります。
 
 この競合は手動で解決する必要があります。コンテンツを参照する他のコンテンツに留意し、2 つのノードのうち、削除する必要があるノードをコンテンツに精通したユーザーが決定する必要があります。解決策として、問題のあるノードがなくても、追加抽出を再度行う必要が生じる場合があります。
 
 ### 参照されているノードを削除できないことが原因で追加取り込みに失敗しました
 
-の別の一般的な原因 [追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure は、ターゲットインスタンス上の特定のノードに対するバージョンの競合です。 このエラーを識別するには、Cloud Acceleration Manager UI を使用して取り込みログをダウンロードし、次のようなエントリを探します。
+の別の一般的な原因 [追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure は、宛先インスタンス上の特定のノードに対するバージョンの競合です。 このエラーを識別するには、Cloud Acceleration Manager UI を使用して取り込みログをダウンロードし、次のようなエントリを探します。
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001：参照されているノードを削除できません： 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
-この問題は、新しいバージョンが作成されるように、取り込みとそれ以降の追加取り込みの間にターゲット上のノードが変更された場合に発生する可能性があります。 取り込みで「バージョンを含める」が有効になっている場合、ターゲットに、バージョン履歴や他のコンテンツで参照される最新のバージョンが含まれているので、競合が発生する可能性があります。 取り込みプロセスは、参照されているので、問題のあるバージョンノードを削除できません。
+この問題は、取り込みとそれ以降の間に宛先のノードが変更された場合に発生する可能性があります **ワイプしない** 取り込み（新しいバージョンが作成される） 「バージョンを含める」を有効にして移行セットを抽出した場合、宛先にバージョン履歴や他のコンテンツで参照される最新のバージョンが含まれているので、競合が発生する可能性があります。 取り込みプロセスは、参照されているので、問題のあるバージョンノードを削除できません。
 
 解決策として、問題のあるノードがなくても、追加抽出を再度行う必要が生じる場合があります。または、問題のあるノードの小さな移行セットを作成し、「インクルードバージョン」を無効にします。
 
-ベストプラクティスは、取得を wipe=false で実行し、「include versions」=true で実行する必要がある場合、移行ジャーニーが完了するまで、ターゲット上のコンテンツをできるだけ少なく変更することが重要であることを示しています。 そうしないと、これらの競合が発生する可能性があります。
+ベストプラクティスは、 **ワイプしない** 取り込みは、バージョンを含む移行セット（「include versions」=true で抽出）を使用して実行する必要があります。移行ジャーニーが完了するまで、宛先のコンテンツをできる限り小さく変更する必要があります。 そうしないと、これらの競合が発生する可能性があります。
 
 
 ## 次の手順 {#whats-next}
@@ -184,4 +165,3 @@ AEM の各ノードには、一意の UUID が必要です。このエラーは�
 取り込みが成功すると、AEMのインデックス作成が自動的に開始されます。 詳しくは、 [コンテンツ移行後のインデックス作成](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) を参照してください。
 
 コンテンツのCloud Serviceへの取り込みが完了したら、各ステップのログ（抽出および取り込み）を表示し、エラーを探すことができます。 詳しくは、[移行セットのログの表示](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)を参照してください。
-
