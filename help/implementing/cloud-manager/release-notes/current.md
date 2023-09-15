@@ -1,9 +1,9 @@
 ---
-title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.8.0 のリリースノート
+title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.9.0 のリリースノート
 description: AEM as a Cloud Service の Cloud Manager 2023.9.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 2b23abec404689d1cc4deb55a2d5ed2a4f236644
+source-git-commit: 8bf2ffe8b1d3780f4ad3f6972fea4f8281945abb
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 19%
@@ -21,7 +21,7 @@ ht-degree: 19%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service の Cloud Manager 2023.8.0 のリリース日は 2023年9月14日（PT）です。次回のリリースは 2023年10月5日（PT）に予定されています。
+AEM as a Cloud Service の Cloud Manager 2023.9.0 のリリース日は 2023年9月14日（PT）です。次回のリリースは 2023年10月5日（PT）に予定されています。
 
 ## 新着情報 {#what-is-new}
 
