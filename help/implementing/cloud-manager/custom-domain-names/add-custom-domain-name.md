@@ -2,10 +2,10 @@
 title: カスタムドメイン名の追加
 description: Cloud Manager を使用してカスタムドメイン名を追加する方法を説明します。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 600288a87e024fbe58ff605a8bcdc61535cc0759
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 79%
+source-wordcount: '601'
+ht-degree: 74%
 
 ---
 
@@ -18,11 +18,11 @@ Cloud Manager では、次の 2 つの場所からカスタムドメイン名を
 
 >[!NOTE]
 >
->ユーザーが **ビジネスオーナー** または **デプロイメントマネージャー** Cloud Manager でカスタムドメイン名を追加するためのロール
+>ユーザーが **ビジネスオーナー** または **デプロイメントマネージャー** ロールを使用して Cloud Manager にカスタムドメイン名を追加する必要があります。また、Fastly CDN を使用する必要があります。
 
 ## ドメイン設定ページからのカスタムドメイン名の追加 {#adding-cdn-settings}
 
-**ドメイン設定**&#x200B;ページからカスタムドメイン名を追加するには、次の手順に従います。
+**ドメイン設定**&#x200B;ページからカスタムドメイン名を追加するには、次の手順に従います。提供された Fastly とは異なる CDN を使用している場合、これらの手順は機能しません。また、お使いのドメインを設定済みの CDN で設定する必要があります。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
@@ -86,7 +86,7 @@ CDN デプロイメントの場合は、有効な SSL 証明書が必要で、TX
 
 1. **ドメイン名を追加**&#x200B;ダイアログボックスで選択した値を確認し、「**続行**」をクリックします。
 
-   ![ドメイン名ウィンドウ](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
+   ![[ ドメイン名 ] ウィンドウ](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
 
    >[!NOTE]
    >
