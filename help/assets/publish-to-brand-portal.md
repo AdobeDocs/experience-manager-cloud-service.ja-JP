@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: ht
-source-wordcount: '1205'
-ht-degree: 100%
+source-git-commit: 56a4b03e78e835108aa57fdb241803e75b867260
+workflow-type: tm+mt
+source-wordcount: '1263'
+ht-degree: 95%
 
 ---
 
@@ -87,6 +87,16 @@ Brand Portal インターフェイスにログインして、公開されたア�
 
 ![bp_landingpage](assets/bp_landingpage.png)
 
+>[!NOTE]
+>
+> * DAM-Users グループの既存のユーザーは、パス「/conf/global/settings/cloudconfigs/mediaportal」に対する読み取りアクセス権を持ちます。
+>* 新しいユーザー（または管理者以外のユーザー）は、brand portal に公開するために、次の権限が必要です。
+> パス:
+> &quot;/conf/global/settings/cloudconfigs/mediaportal&quot; : jcr:read
+>/libs : jcr:read
+>/conf : jcr:read
+>/content : jcr:read 、 crx:replicate
+>/content/dam/ : jcr:read ,Modify , crx:replicate
 
 ## Brand Portal へのフォルダーの公開 {#publish-folders-to-brand-portal}
 
@@ -104,7 +114,7 @@ Brand Portal インターフェイスにログインして、公開されたア�
 
    * ツールバーで「**[!UICONTROL クイック公開]**」を選択します。
 
-      メニューから「**[!UICONTROL Brand Portal に公開]**」を選択します。
+     メニューから「**[!UICONTROL Brand Portal に公開]**」を選択します。
 
    * ツールバーで「**[!UICONTROL 公開を管理]**」を選択します。
 
