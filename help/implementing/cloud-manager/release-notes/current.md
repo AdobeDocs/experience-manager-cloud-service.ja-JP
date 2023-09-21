@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.9.0 �
 description: AEM as a Cloud Service の Cloud Manager 2023.9.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 8bf2ffe8b1d3780f4ad3f6972fea4f8281945abb
+source-git-commit: a5e8c11340ab5eacdefb22da302f9e35d9429bc7
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '443'
 ht-degree: 19%
 
 ---
@@ -55,6 +55,6 @@ AEM as a Cloud Service の Cloud Manager 2023.9.0 のリリース日は 2023年9
 
 ## バグ修正 {#bug-fixes}
 
-* プログラムを削除すると、関連する実行中のパイプラインも削除され、パイプラインが失敗ステータスと誤って指定されないようにします。
-* 「Go-live 完了」ボタンは無効になり、パイプラインが進行中である理由をユーザーに通知します。
-* パイプラインの実行のすべてのステップが「完了」した場合、パイプラインのステータスが「実行中」と見なされ、停止状態になっているように見えることがあります。 「完了」と表示されます。
+* プログラムを削除すると、関連する実行中のパイプラインも削除されるようになりました。
+* パイプラインが進行中の場合、 **送信** ボタン **運用開始完了** ダイアログが無効になり、パイプラインが実行中のため実行開始日を設定できないことをユーザーに通知するようになりました。
+* 時々発生するエラーが修正され、パイプライン実行のすべてのステップが完了とマークされましたが、パイプラインのステータスがまだ実行中で、停止状態のように見える問題が修正されました。
