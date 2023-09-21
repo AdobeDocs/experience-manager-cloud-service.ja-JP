@@ -1,7 +1,7 @@
 ---
-title: トラフィックフィルタルールの設定（WAF ルールを使用）
-description: トラフィックフィルタルール（WAF ルールと共に）を使用してトラフィックをフィルタリングする
-source-git-commit: b1b184b63ab6cdeb8a4e0019c31a34db59438a3d
+title: WAF ルールを使用したトラフィックフィルタールールの設定
+description: WAF ルールでトラフィックフィルタルールを使用してトラフィックをフィルタリングする
+source-git-commit: ce7b6922f92208c06f85afe85818574bf2bc8f6d
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 2%
@@ -9,7 +9,7 @@ ht-degree: 2%
 ---
 
 
-# トラフィックをフィルタリングするためのトラフィックフィルタルールの設定（WAF ルールを使用） {#configuring-cdn-and-waf-rules-to-filter-traffic}
+# トラフィックをフィルタリングする WAF ルールを使用したトラフィックフィルタルールの設定 {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
 >[!NOTE]
 >
