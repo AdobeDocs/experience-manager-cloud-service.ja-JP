@@ -2,10 +2,10 @@
 title: アダプティブフォームへの新しいロケールのサポートの追加
 description: AEM Forms は、アダプティブフォームのローカライズ用に新しくロケールを追加できます。英語（en）、スペイン語（es）、フランス語（fr）、イタリア語（it）、ドイツ語（de）、日本語（ja）、ブラジルポルトガル語（pt-BR）、中国語（zh-CN）、台湾中国語（zh-TW）、韓国語（ko-KR）のロケールがあります。
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 9a1bb716256b5e820723911f4e78a6a4c69d940c
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 89%
+source-wordcount: '1251'
+ht-degree: 85%
 
 ---
 
@@ -17,7 +17,6 @@ ht-degree: 89%
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=ja) |
-| AEM as a Cloud Service | この記事 |
 
 AEM Forms が標準でサポートしているロケールは、英語（en）、スペイン語（es）、フランス語（fr）、イタリア語（it）、ドイツ語（de）、日本語（ja）、ブラジルポルトガル語（pt-br）、中国語（zh-tn）、台湾中国語（zh-tw）、韓国語（ko-kr）です。その他のロケール（ヒンディー語（hi_IN）など）のサポートを追加することもできます。
 
@@ -31,7 +30,7 @@ AEM Forms が標準でサポートしているロケールは、英語（en）�
 
 ## 新しいロケールへのサポートの追加 {#add-support-for-new-locales}
 
-新しいロケールへのサポートを追加する手順は、次のとおりです。
+ロケールのサポートを追加する手順を次に示します。
 
 1. [サポートされていないロケールにローカリゼーションのサポートを追加する](#add-localization-support-for-non-supported-locales)
 1. [アダプティブフォームで追加されたロケールの使用](#use-added-locale-in-af)
@@ -40,7 +39,7 @@ AEM Forms が標準でサポートしているロケールは、英語（en）�
 
 現在、AEM Forms がサポートしているアダプティブフォームコンテンツのロケールは、英語（en）、スペイン語（es）、フランス語（fr）、イタリア語（it）、ドイツ語（de）、日本語（ja）、ブラジルポルトガル語（pt-BR）、中国語（zh-CN）、台湾中国語（zh-TW）、韓国語（ko-KR）です。
 
-アダプティブフォーム実行時に新しいロケールのサポートを追加するには、次を参照してください。
+ロケールのサポートを追加するには：
 
 1. [リポジトリのクローン](#clone-the-repository)
 1. [GuideLocalizationService へのロケールの追加](#add-a-locale-to-the-guide-localization-service)
@@ -114,12 +113,12 @@ I18N.js
 
 #### 5. リポジトリ内の変更をコミットし、パイプラインをデプロイする {#commit-changes-in-repo-deploy-pipeline}
 
-新しいロケールサポートを追加した後、変更を Git リポジトリにコミットします。 フルスタックパイプラインを使用してコードをデプロイします。 [パイプラインの設定方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)を学び、新しいロケールのサポートを追加します。
+ロケールサポートを追加した後、変更を GIT リポジトリにコミットします。 フルスタックパイプラインを使用してコードをデプロイします。 [パイプラインの設定方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)を学び、新しいロケールのサポートを追加します。
 パイプラインが完了すると、新しく追加されたロケールが AEM 環境に表示されます。
 
 ### アダプティブフォームで追加されたロケールの使用 {#use-added-locale-in-af}
 
-新しく追加されたロケールを使用してアダプティブフォームを使用しレンダリングするには、次の手順を実行します。
+新しく追加されたロケールを使用してアダプティブフォームを使用およびレンダリングするには、次の手順を実行します。
 
 1. AEM オーサーインスタンスにログインします。
 1. **Forms**／**フォームとドキュメント**&#x200B;に移動します。
