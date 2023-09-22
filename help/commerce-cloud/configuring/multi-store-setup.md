@@ -1,6 +1,6 @@
 ---
 title: コマースマルチストアの設定
-description: 複数のストア表示を Adobe Commerce から AEM にマッピングする方法を説明します。これにより、マルチテナントおよび多言語のユースケースをプロジェクトでサポートできます。
+description: 複数のストアビューをAdobe CommerceからAdobe Experience Managerにマッピングする方法について説明します。 これにより、マルチテナントおよび多言語のユースケースをプロジェクトでサポートできます。
 sub-product: Commerce
 version: Cloud Service
 doc-type: technical-video
@@ -10,30 +10,30 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 96%
+source-wordcount: '378'
+ht-degree: 47%
 
 ---
 
 # コマースマルチストアの設定 {#multi-store}
 
-AEM CIF コアコンポーネントは複数の AEM サイト構造で使用でき、基盤となる GraphQL クライアントの実装は異なる Adobe Commerce ストア／ストア表示に接続できます。これにより、複雑なマルチストア／マルチサイトの設定をプロジェクトに実装できます。
+Adobe Experience Manager(AEM)CIFコアコンポーネントは、複数のAEMサイト構造で使用でき、基盤となるGraphQLクライアントの実装は、異なるAdobe Commerceストア/ストア表示に接続できます。 これにより、複雑なマルチストア／マルチサイトの設定をプロジェクトに実装できます。
 
 複数の Adobe Commerce ストア表示を Adobe Experience Manager Sites と統合するためのオプションについて詳しく説明するビデオチュートリアルです。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-地域とロケールをまたいでサイトをグローバルに管理するために、AEM マルチサイト管理のライブコピー機能および言語コピー機能を Commerce Integration Framework と組み合わせて使用できます。
+地域とロケールをまたいでサイトをグローバルに管理するには、AEM Multi-Site Management 機能のライブコピーと言語コピーを Commerce Integration Framework と共に使用します。
 
-推奨される設定は、AEM サイトと Adobe Commerce ストア表示の間に 1 対 1 の関係を使用することです。
+推奨される設定は、AEMサイトとAdobe Commerceストア表示の間に 1 対 1 の関係を使用することです。
 
-AEM サイトと AEM CIF コアコンポーネントを専用のストア表示に接続するには、次の手順に従います。
+AEMサイトとAEM CIFコアコンポーネントを専用のストア表示に接続するには、以下の手順を実行します。
 
 ## 設定 {#configuration}
 
-1. [Adobe Commerce の web サイト、ストア、表示](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)に記載されているパターンに従って、複数のストアや表示を設定します。
+1. [Adobe Commerce の web サイト、ストア、表示](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)に記載されているパターンに従って、複数のストアや表示を設定します。
 
 2. AEM と Adobe Commerce 間の接続が動作していることを確認します。
 
@@ -41,7 +41,7 @@ AEM サイトと AEM CIF コアコンポーネントを専用のストア表示�
 
    * AEM で、ツール／一般／[設定ブラウザー](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)に移動します。
    * 作成したベース設定を選択します。
-   * 上記のポイント 2 で説明した手順を使用して、新しい設定を作成します。
+   * 上記のポイント 2 で説明した手順を使用して設定を作成します。
 
    この新しい設定は、基本設定の子設定として作成されます。 ツール／一般／設定ブラウザーに移動して、設定を作成できるようになっています。
 
@@ -51,15 +51,15 @@ AEM サイトと AEM CIF コアコンポーネントを専用のストア表示�
 
 4. AEM Sites に子設定を割り当てます。
 
-   * AEM Sites コンソールに移動します。
-   * サイト構造の地域または言語ルート（例えば、Venia サンプルページの場合は /content/venia/us _または_ /content/venia/us/en）に移動します。
+   * AEM Sitesコンソールに移動します。
+   * サイト構造の地域または言語ルートに移動します。 例： `/content/venia/us _or_ /content/venia/us/en` Venia サンプルページの場合
    * ページを選択し、ページのプロパティを開きます。
    * 「詳細」タブを選択します。
-   * `Configuration` セクションで、手順で作成した設定を選択します。 3
+   * Adobe Analytics の `Configuration` セクションで、手順 3 で作成した設定を選択します。
 
 ## その他のリソース
 
-* [Adobe Commerce の web サイト、ストア、表示](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
-* [AEM CIF コアコンポーネント - マルチストア／サイト設定](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
+* [Adobe Commerce の web サイト、ストア、表示](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+* [AEM CIF コアコンポーネント - マルチストア／サイト設定](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
 * [マルチサイトマネージャの使用](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=ja)
 * [コンテンツの再利用：マルチサイトマネージャとライブコピー](/help/sites-cloud/administering/msm/overview.md)
