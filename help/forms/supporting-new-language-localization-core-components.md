@@ -1,10 +1,10 @@
 ---
 title: コアコンポーネントに基づいてアダプティブフォームに新しいロケールのサポートを追加するには、どうすればよいですか？
 description: AEM Forms は、アダプティブフォームのローカライズ用に新しくロケールを追加できます。
-source-git-commit: b643cdc9ebf57e164088e0dc3598e4e0d3ded267
+source-git-commit: 0a1310290c25a94ffe6f95ea6403105475ef5dda
 workflow-type: tm+mt
-source-wordcount: '1336'
-ht-degree: 48%
+source-wordcount: '1079'
+ht-degree: 33%
 
 ---
 
@@ -16,15 +16,20 @@ ht-degree: 48%
 | 基盤コンポーネント | [ここをクリックしてください](supporting-new-language-localization.md) |
 | コアコンポーネント | この記事 |
 
-AEM Forms が標準でサポートしているロケールは、英語（en）、スペイン語（es）、フランス語（fr）、イタリア語（it）、ドイツ語（de）、日本語（ja）、ブラジルポルトガル語（pt-br）、中国語（zh-tn）、台湾中国語（zh-tw）、韓国語（ko-kr）です。その他のロケール（ヒンディー語（hi_IN）など）のサポートを追加することもできます。
+AEM Forms が標準でサポートしているロケールは、英語（en）、スペイン語（es）、フランス語（fr）、イタリア語（it）、ドイツ語（de）、日本語（ja）、ブラジルポルトガル語（pt-br）、中国語（zh-tn）、台湾中国語（zh-tw）、韓国語（ko-kr）です。
 
-## ロケールの辞書について {#about-locale-dictionaries}
+その他のロケール（ヒンディー語（hi_IN）など）のサポートを追加することもできます。
 
-アダプティブフォームのローカリゼーションは、次の 2 種類のロケールの辞書に基づいています。
+<!-- 
+## Understanding locale dictionaries {#about-locale-dictionaries}
 
-* **フォーム固有の辞書**&#x200B;は、アダプティブフォーム使用する文字列を含みます。例：ラベル、フィールド名、エラーメッセージ、ヘルプの説明など。各ロケールごとに、XLIFF ファイルのセットの形で管理されています。`[author-instance]/libs/cq/i18n/gui/translator.html` からアクセスできます。
+The localization of adaptive forms relies on two types of locale dictionaries:
 
-* **グローバル辞書** 2 つのグローバル辞書があり、AEM クライアントライブラリで JSON オブジェクトの形で管理されています。これらの辞書にはデフォルトのエラーメッセージ、12 か月の名前、通貨シンボル、日付と時間のパターンなどが含まれます。これらの辞書は `[author-instance]/libs/fd/xfaforms/clientlibs/I18N` にあります。これらの場所では、各ロケールごとに別々のフォルダーが用意されています。グローバルの辞書は頻繁に更新されることはありません。各ロケールごとに個別の JavaScript ファイルを保持することで、ブラウザーはそれらをキャッシュし、同一サーバー上で異なるアダプティブフォームにアクセスする際に、ネットワーク帯域幅の使用量を減らすことができます。
+*   **Form-specific dictionary** Contains strings used in adaptive forms. For example, labels, field names, error messages, help descriptions. It is managed as a set of XLIFF files for each locale and you can access it at `[AEM Forms as a Cloud Service Author instance]/libs/cq/i18n/gui/translator.html`.
+
+*   **Global dictionaries** There are two global dictionaries, managed as JSON objects, in AEM client library. These dictionaries contain default error messages, month names, currency symbols, date and time patterns, and so on.  These locations contain separate folders for each locale. Because global dictionaries are not updated frequently, keeping separate JavaScript files for each locale enables browsers to cache them and reduce network bandwidth usage when accessing different adaptive forms on same server.
+
+-->
 
 ## 前提条件 {#prerequistes}
 
@@ -44,7 +49,7 @@ AEM Forms が標準でサポートしているロケールは、英語（en）�
 
 ## ロケールを追加 {#add-localization-support-for-non-supported-locales}
 
-現在、AEM Forms がサポートしているアダプティブフォームコンテンツのロケールは、英語（en）、スペイン語（es）、フランス語（fr）、イタリア語（it）、ドイツ語（de）、日本語（ja）、ブラジルポルトガル語（pt-BR）、中国語（zh-CN）、台湾中国語（zh-TW）、韓国語（ko-KR）です。Adaptive Formsランタイムで新しいロケールのサポートを追加するには、次の手順に従います。
+新しいロケールのサポートを追加するには、次の手順に従います。
 
 ![ロケールをリポジトリに追加する](add-a-locale-adaptive-form-core-components.png)
 
@@ -136,13 +141,14 @@ AEM Formsには、新しいロケールを簡単に追加できるサンプル�
 ### 変更をコミットし、パイプラインをデプロイします。 {#commit-changes-in-repo-deploy-pipeline}
 
 新しいロケールサポートを追加した後、変更を Git リポジトリにコミットします。 フルスタックパイプラインを使用してコードをデプロイします。 [パイプラインの設定方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)を学び、新しいロケールのサポートを追加します。
-パイプラインが完了すると、新しく追加されたロケールが AEM 環境に表示されます。
 
-## アダプティブフォームで追加されたロケールの使用 {#use-added-locale-in-af}
+パイプラインの実行が成功すると、新しく追加されたロケールを使用する準備が整います。
 
-新しく追加されたロケールを使用してアダプティブフォームを使用しレンダリングするには、次の手順を実行します。
+## 新しく追加されたロケールでアダプティブフォームをプレビューする {#use-added-locale-in-af}
 
-1. AEM オーサーインスタンスにログインします。
+新しく追加されたロケールでアダプティブフォームをプレビューするには、次の手順を実行します。
+
+1. AEM Forms as a Cloud Serviceインスタンスにログインします。
 1. **Forms**／**フォームとドキュメント**&#x200B;に移動します。
 1. アダプティブフォームを選択し、「**辞書を追加**」をクリックすると、**辞書を翻訳プロジェクトに追加**&#x200B;ウィザードが表示されます。
 1. **プロジェクトタイトル**&#x200B;を指定し、**辞書を翻訳プロジェクトに追加**&#x200B;ウィザードのドロップダウンメニューから「**ターゲット言語**」を選択します。
@@ -153,7 +159,7 @@ AEM Formsには、新しいロケールを簡単に追加できるサンプル�
 
 アダプティブフォームのロケールを識別する方法は 2 つあります。アダプティブフォームがレンダリングされると、リクエストされたロケールが次のように識別されます。
 
-* アダプティブフォームの URL の `[local]` セレクターを取得します。URL の形式は、`http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled` です。`[local]` セレクターを使用すると、アダプティブフォームをキャッシュできます。
+* アダプティブフォームの URL の `[local]` セレクターを取得します。URL の形式は、`http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled` です。`[local]` セレクターを使用すると、アダプティブフォームをキャッシュできます。
 
 * 次のパラメーターをリスト順に取得します。
 
@@ -165,17 +171,18 @@ AEM Formsには、新しいロケールを簡単に追加できるサンプル�
 
 要求されたロケールのクライアントライブラリが存在しない場合は、ロケールに存在する言語コードがクライアントライブラリにないかを確認します。 例えば、要求されたロケールが `en_ZA` （南アフリカ英語）と `en_ZA` が存在しない場合、アダプティブフォームは次の目的でクライアントライブラリを使用します： `en` （英語）言語（存在する場合）。 ただし、どちらも存在しない場合、アダプティブフォームでは `en` ロケールの辞書が使用されます。
 
-
 ロケールが識別されると、アダプティブフォームはフォーム固有の辞書を選択します。リクエストされたロケールのフォーム固有の辞書が見つからない場合は、アダプティブフォームが作成された言語の辞書が使用されます。
 
-使用可能なロケール情報がない場合、アダプティブフォームは、開発時に使用された言語である元の言語で表示されます。
+使用可能なロケール情報がない場合、アダプティブフォームは、フォーム開発時に使用された言語で元の言語で表示されます。
 
-[サンプルクライアントライブラリ](/help/forms/assets/locale-support-sample.zip)を入手して、新しいロケールのサポートを追加してください。必要なロケールでフォルダーのコンテンツを変更する必要があります。
+<!--
+Get [sample client library](/help/forms/assets/locale-support-sample.zip) to add support for new locale. You need to change the content of the folder in the required locale.
 
-## 新しいローカライゼーションをサポートする上でのベストプラクティス {#best-practices}
+## Best Practices to support for new localization {#best-practices}
 
-* Adobeは、アダプティブフォームを作成した後に翻訳プロジェクトを作成することをお勧めします。
+*   Adobe recommends creating a translation project after creating an Adaptive Form.
 
-* 新しいフィールドが既存のアダプティブ フォームに追加された場合：
-   * **機械翻訳の場合**：辞書を再作成し、翻訳プロジェクトを実行します。 翻訳プロジェクトの作成後にアダプティブフォームに追加されたフィールドは、未翻訳になります。
-   * **人間による翻訳の場合**：`[server:port]/libs/cq/i18n/gui/translator.html` から辞書を書き出します。 新しく追加されたフィールド用の辞書を更新し、アップロードします。
+*   When new fields are added in an existing Adaptive Form:
+    * **For machine translation**: Re-create the dictionary and run the translation project. Fields added to an Adaptive Form after creating a translation project remain untranslated. 
+    * **For human translation**: Export the dictionary through `[server:port]/libs/cq/i18n/gui/translator.html`. Update the dictionary for the newly added fields and upload it.
+-->
