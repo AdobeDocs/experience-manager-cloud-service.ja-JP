@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 5c482e5f883633c04d70252788b01f878156bac8
 workflow-type: tm+mt
 source-wordcount: '2142'
-ht-degree: 31%
+ht-degree: 32%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 31%
 >id="aemcloud_ctt_ingestion"
 >title="コンテンツの取得"
 >abstract="取得とは、移行セットから宛先の Cloud Service インスタンスにコンテンツを取得することを指します。コンテンツ転送ツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process" text="追加抽出"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=ja#top-up-extraction-process" text="追加抽出"
 
 Cloud Acceleration Manager を使用して移行セットを取り込むには、次の手順に従います。
 
