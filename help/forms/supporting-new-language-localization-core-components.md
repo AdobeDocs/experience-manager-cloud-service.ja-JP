@@ -1,10 +1,10 @@
 ---
 title: コアコンポーネントに基づいてアダプティブフォームに新しいロケールのサポートを追加する方法を教えてください。
 description: アダプティブフォームに新しいロケールを追加する方法を説明します。
-source-git-commit: 056aecd0ea1fd9ec1e4c05299d2c50bca161615f
+source-git-commit: 2a738d17b1e2f46c06828512ee07c1c20f35596c
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 28%
+source-wordcount: '1449'
+ht-degree: 26%
 
 ---
 
@@ -20,15 +20,16 @@ AEM Forms が標準でサポートしているロケールは、英語（en）�
 
 ## アダプティブフォームのロケールはどのように選択されますか？
 
+
 アダプティブフォームのレンダリング時にロケールを識別して選択する方法は 2 つあります。
 
 * **の使用 [ロケール] URL のセレクター**：アダプティブフォームをレンダリングする際に、システムは、 [ロケール] セレクターを使用して、アダプティブフォームの URL に表示することができます。 URL は次の形式に従います。 http:/[AEM Forms Server URL]/content/forms/af/[afName].[ロケール].html?wcmmode=disabled. の使用 [ロケール] セレクターを使用すると、アダプティブフォームをキャッシュすることができます。
 
 * 次に示す順序でパラメーターを取得します。
 
-   * リクエストパラメーター `afAcceptLang`：ユーザーのブラウザーロケールを上書きするには、 afAcceptLang リクエストパラメーターを渡します。 例えば、次の URL では、カナダのフランス語ロケールでのフォームのレンダリングが強制されます。 `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
+   * **リクエストパラメーター`afAcceptLang`**：ユーザーのブラウザーロケールを上書きするには、 afAcceptLang リクエストパラメーターを渡します。 例えば、次の URL では、カナダのフランス語ロケールでのフォームのレンダリングが強制されます。 `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
 
-   * ブラウザーロケール (Accept-Language Header)：システムは、ユーザーのブラウザーロケールも考慮します。このロケールは、 `Accept-Language` ヘッダー。
+   * **ブラウザーのロケール（Accept-Language ヘッダー）**：システムは、ユーザーのブラウザーロケールも考慮します。これは、 `Accept-Language` ヘッダー。
 
   要求されたロケールのクライアントライブラリが使用できない場合は、ロケール内の言語コードに対するクライアントライブラリが存在するかどうかを確認します。 例えば、要求されたロケールが `en_ZA` （南アフリカ英語）と、 `en_ZA`アダプティブフォームは、en （英語）用のクライアントライブラリを使用します（使用可能な場合）。 いずれも見つからない場合、アダプティブフォームは辞書に保存し、 `en` ロケール。
 
@@ -42,7 +43,8 @@ AEM Forms が標準でサポートしているロケールは、英語（en）�
 新しいロケールのサポートを追加する前に、
 
 * 編集を容易にするために、プレーンテキストエディター (IDE) をインストールします。 このドキュメントの例は、Microsoft® Visual Studio Code に基づいています。
-* アダプティブFormsコアコンポーネントリポジトリーのクローンを作成します。 リポジトリのクローンを作成するには：
+* のバージョンのインストール [Git](https://git-scm.com)（使用できない場合）
+* のクローン [アダプティブFormsコアコンポーネント](https://github.com/adobe/aem-core-forms-components) リポジトリ。 リポジトリのクローンを作成するには：
    1. コマンドラインまたはターミナルウィンドウを開き、リポジトリを保存する場所に移動します。 例：`/adaptive-forms-core-components`
    1. 次のコマンドを実行して、リポジトリのクローンを作成します。
 
@@ -50,7 +52,7 @@ AEM Forms が標準でサポートしているロケールは、英語（en）�
           git clone https://github.com/adobe/aem-core-forms-components.git
       ```
 
-  リポジトリには、ロケールの追加に必要なクライアントライブラリが含まれます。
+  リポジトリには、ロケールの追加に必要なクライアントライブラリが含まれます。 記事の残りの部分では、フォルダーは次のようにレファリングされます。 [アダプティブFormsコアコンポーネントリポジトリ].
 
 
 ## ロケールを追加 {#add-localization-support-for-non-supported-locales}
@@ -59,9 +61,9 @@ AEM Forms が標準でサポートしているロケールは、英語（en）�
 
 ![ロケールをリポジトリに追加する](add-a-locale-adaptive-form-core-components.png)
 
-### AEMas a Cloud ServiceGit リポジトリのクローン {#clone-the-repository}
+### 1. AEMas a Cloud ServiceGit リポジトリのクローンを作成します。 {#clone-the-repository}
 
-1. コマンドラインを開き、リポジトリを保存するディレクトリ（例： ）を選択します。 `/cloud-service-repository/`.
+1. コマンドラインを開き、AEM Formsas a Cloud Serviceリポジトリを保存するディレクトリ（例： ）を選択します。 `/cloud-service-repository/`.
 
 1. 次のコマンドを実行して、リポジトリのクローンを作成します。
 
@@ -74,7 +76,7 @@ AEM Forms が標準でサポートしているロケールは、英語（en）�
    コマンドが正常に完了した後、フォルダ `<my-program>` が作成されました。 Git リポジトリから複製されたコンテンツが含まれます。 記事の残りの部分では、フォルダーは次のようにレファリングされます。 `[AEM Forms as a Cloud Service Git repository]`.
 
 
-### 新しいロケールを Guide Localization Service に追加する {#add-a-locale-to-the-guide-localization-service}
+### 2.新しいロケールを Guide Localization Service に追加する {#add-a-locale-to-the-guide-localization-service}
 
 1. 前の節で複製したリポジトリフォルダーを、プレーンテキストエディターで開きます。
 1. `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` フォルダーに移動します。次の項目が見つかります。 `<appid>` （内） `archetype.properties` プロジェクトのファイル。
@@ -85,17 +87,17 @@ AEM Forms が標準でサポートしているロケールは、英語（en）�
 1. 次を追加： [言語のロケールコード](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) 例えば、ヒンディー語に「hi」を追加しようとしていることを示します。
 1. ファイルを保存して閉じます。
 
-### クライアントライブラリを作成してロケールを追加する
+### 3.クライアントライブラリを作成してロケールを追加する
 
-AEM Formsには、新しいロケールを簡単に追加できるサンプルのクライアントライブラリが用意されています。 をダウンロードして、 `clientlib-it-custom-locale` GitHub のアダプティブFormsコアコンポーネントリポジトリーからForms as a Cloud Serviceリポジトリーへのクライアントライブラリ。 クライアントライブラリを追加するには、次の手順に従います。
+AEM Formsには、新しいロケールを簡単に追加できるサンプルのクライアントライブラリが用意されています。 をダウンロードして、 `clientlib-it-custom-locale` クライアントライブラリを [アダプティブFormsコアコンポーネントリポジトリ] を GitHub でFormsas a Cloud Serviceリポジトリに追加します。 クライアントライブラリを追加するには、次の手順に従います。
 
-1. プレーンテキストエディターでアダプティブFormsコアコンポーネントリポジトリを開きます。 リポジトリを複製しない場合は、 [前提条件](#prerequistes) を参照してください。
+1. を開きます。 [アダプティブFormsコアコンポーネントリポジトリ] を使用します。 リポジトリを複製しない場合は、 [前提条件](#prerequistes) を参照してください。
 1. `/aem-core-forms-components/it/apps/src/main/content/jcr_root/apps/forms-core-components-it/clientlibs` ディレクトリに移動します。
 1. をコピーします。 `clientlib-it-custom-locale` ディレクトリ。
 1. に移動します。 `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` をクリックし、 `clientlib-it-custom-locale` ディレクトリ。
 
 
-### ロケール固有のファイルの作成 {#locale-specific-file}
+### 4.ロケール固有のファイルを作成する {#locale-specific-file}
 
 1. `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/` に移動します。
 1. 次を見つけます。 [GitHub の英語ロケール.json ファイル](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json)：製品に含まれるデフォルトの文字列の最新セットが含まれます。
@@ -105,7 +107,7 @@ AEM Formsには、新しいロケールを簡単に追加できるサンプル�
 1. ファイルを保存して閉じます。
 
 
-### 辞書にロケールサポートを追加する {#add-locale-support-for-the-dictionary}
+### 5.辞書にロケールサポートを追加する {#add-locale-support-for-the-dictionary}
 
 追加する `<locale>` が、`en`、`de`、`es`、`fr`、`it`、`pt-br`、`zh-cn`、`zh-tw`、`ja`、`ko-kr` 以外の場合にのみ、この手順を実行してください。
 
@@ -144,9 +146,9 @@ AEM Formsには、新しいロケールを簡単に追加できるサンプル�
 
    ![新しく作成したフォルダーを `filter.xml` under `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
-### 変更をコミットし、パイプラインをデプロイします。 {#commit-changes-in-repo-deploy-pipeline}
+### 6.変更をコミットし、パイプラインをデプロイします。 {#commit-changes-in-repo-deploy-pipeline}
 
-新しいロケールサポートを追加した後、変更を Git リポジトリにコミットします。 フルスタックパイプラインを使用してコードをデプロイします。 [パイプラインの設定方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)を学び、新しいロケールのサポートを追加します。
+新しいロケールを追加した後、変更を GIT リポジトリにコミットします。 フルスタックパイプラインを使用してコードをデプロイします。 [パイプラインの設定方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)を学び、新しいロケールのサポートを追加します。
 
 パイプラインの実行が成功すると、新しく追加されたロケールが使用できる状態になります。
 
