@@ -1,15 +1,15 @@
 ---
-title: コアコンポーネントに基づいてアダプティブフォームに新しいロケールのサポートを追加するには、どうすればよいですか？
-description: AEM Forms は、アダプティブフォームのローカライズ用に新しくロケールを追加できます。
-source-git-commit: 0a1310290c25a94ffe6f95ea6403105475ef5dda
+title: コアコンポーネントに基づいてアダプティブフォームに新しいロケールのサポートを追加する方法を教えてください。
+description: アダプティブフォームに新しいロケールを追加する方法を説明します。
+source-git-commit: 056aecd0ea1fd9ec1e4c05299d2c50bca161615f
 workflow-type: tm+mt
-source-wordcount: '1079'
-ht-degree: 33%
+source-wordcount: '1413'
+ht-degree: 28%
 
 ---
 
-# コアコンポーネントに基づくアダプティブFormsのロケールの追加 {#supporting-new-locales-for-adaptive-forms-localization}
 
+# コアコンポーネントに基づくアダプティブFormsのロケールの追加 {#supporting-new-locales-for-adaptive-forms-localization}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -18,24 +18,30 @@ ht-degree: 33%
 
 AEM Forms が標準でサポートしているロケールは、英語（en）、スペイン語（es）、フランス語（fr）、イタリア語（it）、ドイツ語（de）、日本語（ja）、ブラジルポルトガル語（pt-br）、中国語（zh-tn）、台湾中国語（zh-tw）、韓国語（ko-kr）です。
 
-その他のロケール（ヒンディー語（hi_IN）など）のサポートを追加することもできます。
+## アダプティブフォームのロケールはどのように選択されますか？
 
-<!-- 
-## Understanding locale dictionaries {#about-locale-dictionaries}
+アダプティブフォームのレンダリング時にロケールを識別して選択する方法は 2 つあります。
 
-The localization of adaptive forms relies on two types of locale dictionaries:
+* **の使用 [ロケール] URL のセレクター**：アダプティブフォームをレンダリングする際に、システムは、 [ロケール] セレクターを使用して、アダプティブフォームの URL に表示することができます。 URL は次の形式に従います。 http:/[AEM Forms Server URL]/content/forms/af/[afName].[ロケール].html?wcmmode=disabled. の使用 [ロケール] セレクターを使用すると、アダプティブフォームをキャッシュすることができます。
 
-*   **Form-specific dictionary** Contains strings used in adaptive forms. For example, labels, field names, error messages, help descriptions. It is managed as a set of XLIFF files for each locale and you can access it at `[AEM Forms as a Cloud Service Author instance]/libs/cq/i18n/gui/translator.html`.
+* 次に示す順序でパラメーターを取得します。
 
-*   **Global dictionaries** There are two global dictionaries, managed as JSON objects, in AEM client library. These dictionaries contain default error messages, month names, currency symbols, date and time patterns, and so on.  These locations contain separate folders for each locale. Because global dictionaries are not updated frequently, keeping separate JavaScript files for each locale enables browsers to cache them and reduce network bandwidth usage when accessing different adaptive forms on same server.
+   * リクエストパラメーター `afAcceptLang`：ユーザーのブラウザーロケールを上書きするには、 afAcceptLang リクエストパラメーターを渡します。 例えば、次の URL では、カナダのフランス語ロケールでのフォームのレンダリングが強制されます。 `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
 
--->
+   * ブラウザーロケール (Accept-Language Header)：システムは、ユーザーのブラウザーロケールも考慮します。このロケールは、 `Accept-Language` ヘッダー。
+
+  要求されたロケールのクライアントライブラリが使用できない場合は、ロケール内の言語コードに対するクライアントライブラリが存在するかどうかを確認します。 例えば、要求されたロケールが `en_ZA` （南アフリカ英語）と、 `en_ZA`アダプティブフォームは、en （英語）用のクライアントライブラリを使用します（使用可能な場合）。 いずれも見つからない場合、アダプティブフォームは辞書に保存し、 `en` ロケール。
+
+  ロケールが識別されると、アダプティブフォームは対応するフォーム固有の辞書を選択します。 リクエストされたロケールの辞書が見つからない場合、デフォルトでは、アダプティブフォームが作成された言語の辞書が使用されます。
+
+  ロケール情報がない場合、アダプティブフォームは元の言語（フォームの開発時に使用される言語）で表示されます
+
 
 ## 前提条件 {#prerequistes}
 
 新しいロケールのサポートを追加する前に、
 
-* 編集を容易にするために、プレーンテキストエディター (IDE) をインストールします。 このドキュメントの例は、Microsoft VS Code に基づいています。
+* 編集を容易にするために、プレーンテキストエディター (IDE) をインストールします。 このドキュメントの例は、Microsoft® Visual Studio Code に基づいています。
 * アダプティブFormsコアコンポーネントリポジトリーのクローンを作成します。 リポジトリのクローンを作成するには：
    1. コマンドラインまたはターミナルウィンドウを開き、リポジトリを保存する場所に移動します。 例：`/adaptive-forms-core-components`
    1. 次のコマンドを実行して、リポジトリのクローンを作成します。
@@ -65,18 +71,18 @@ The localization of adaptive forms relies on two types of locale dictionaries:
 
    置換 `<my-org>` および `<my-program>` 上記の URL に、組織名とプログラム名を入力します。 組織名、プログラム名、または Git リポジトリの完全パスと、リポジトリのクローンに必要な資格情報を取得する詳しい手順については、 [Git へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) 記事。
 
-   コマンドが正常に完了した後、フォルダ `<my-program>` が作成されました。 Git リポジトリから複製されたコンテンツが含まれます。 記事の残りの部分では、フォルダーは次のようにレファリングされます。 `[AEM Forms as a Cloud Service Git repostory]`.
+   コマンドが正常に完了した後、フォルダ `<my-program>` が作成されました。 Git リポジトリから複製されたコンテンツが含まれます。 記事の残りの部分では、フォルダーは次のようにレファリングされます。 `[AEM Forms as a Cloud Service Git repository]`.
 
 
 ### 新しいロケールを Guide Localization Service に追加する {#add-a-locale-to-the-guide-localization-service}
 
 1. 前の節で複製したリポジトリフォルダーを、プレーンテキストエディターで開きます。
-1. `[AEM Forms as a Cloud Service Git repostory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` フォルダーに移動します。次の項目が見つかります。 `<appid>` （内） `archetype.properties` プロジェクトのファイル。
-1. `[AEM Forms as a Cloud Service Git repostory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config/Guide Localization Service.cfg.json` ファイルを編集用として開きます。ファイルが存在しない場合は作成します。 サポートされているロケールを含むサンプルファイルは、次のようになります。
+1. `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` フォルダーに移動します。次の項目が見つかります。 `<appid>` （内） `archetype.properties` プロジェクトのファイル。
+1. `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config/Guide Localization Service.cfg.json` ファイルを編集用として開きます。ファイルが存在しない場合は作成します。 サポートされているロケールを含むサンプルファイルは、次のようになります。
 
    ![Guide Localization Service.cfg.json のサンプル](locales.png)
 
-1. 次を追加： [言語のロケールコード](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) 例えば、ヒンディー語に「hi」を追加しようとしています。
+1. 次を追加： [言語のロケールコード](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) 例えば、ヒンディー語に「hi」を追加しようとしていることを示します。
 1. ファイルを保存して閉じます。
 
 ### クライアントライブラリを作成してロケールを追加する
@@ -86,14 +92,14 @@ AEM Formsには、新しいロケールを簡単に追加できるサンプル�
 1. プレーンテキストエディターでアダプティブFormsコアコンポーネントリポジトリを開きます。 リポジトリを複製しない場合は、 [前提条件](#prerequistes) を参照してください。
 1. `/aem-core-forms-components/it/apps/src/main/content/jcr_root/apps/forms-core-components-it/clientlibs` ディレクトリに移動します。
 1. をコピーします。 `clientlib-it-custom-locale` ディレクトリ。
-1. に移動します。 `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` をクリックし、 `clientlib-it-custom-locale` ディレクトリ。
+1. に移動します。 `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` をクリックし、 `clientlib-it-custom-locale` ディレクトリ。
 
 
 ### ロケール固有のファイルの作成 {#locale-specific-file}
 
-1. `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/` に移動します。
+1. `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/` に移動します。
 1. 次を見つけます。 [GitHub の英語ロケール.json ファイル](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json)：製品に含まれるデフォルトの文字列の最新セットが含まれます。
-1. 特定のロケール用の新しい.json ファイルを作成します。
+1. 特定のロケール用の.json ファイルを作成します。
 1. 新しく作成した.json ファイルで、英語のロケールファイルの構造を反映します。
 1. .json ファイル内の英語の文字列を、対応するローカライズされた言語の文字列に置き換えます。
 1. ファイルを保存して閉じます。
@@ -103,7 +109,7 @@ AEM Formsには、新しいロケールを簡単に追加できるサンプル�
 
 追加する `<locale>` が、`en`、`de`、`es`、`fr`、`it`、`pt-br`、`zh-cn`、`zh-tw`、`ja`、`ko-kr` 以外の場合にのみ、この手順を実行してください。
 
-1. `[AEM Forms as a Cloud Service Git repostory]/ui.content/src/main/content/jcr_root/etc/` フォルダーに移動します。
+1. `[AEM Forms as a Cloud Service Git repository]/ui.content/src/main/content/jcr_root/etc/` フォルダーに移動します。
 
 1. の作成 `etc` フォルダーの下に `jcr_root` フォルダー（存在しない場合）。
 
@@ -142,7 +148,7 @@ AEM Formsには、新しいロケールを簡単に追加できるサンプル�
 
 新しいロケールサポートを追加した後、変更を Git リポジトリにコミットします。 フルスタックパイプラインを使用してコードをデプロイします。 [パイプラインの設定方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)を学び、新しいロケールのサポートを追加します。
 
-パイプラインの実行が成功すると、新しく追加されたロケールを使用する準備が整います。
+パイプラインの実行が成功すると、新しく追加されたロケールが使用できる状態になります。
 
 ## 新しく追加されたロケールでアダプティブフォームをプレビューする {#use-added-locale-in-af}
 
@@ -175,14 +181,13 @@ AEM Formsには、新しいロケールを簡単に追加できるサンプル�
 
 使用可能なロケール情報がない場合、アダプティブフォームは、フォーム開発時に使用された言語で元の言語で表示されます。
 
-<!--
-Get [sample client library](/help/forms/assets/locale-support-sample.zip) to add support for new locale. You need to change the content of the folder in the required locale.
 
-## Best Practices to support for new localization {#best-practices}
+## 新しいローカライゼーションをサポートする上でのベストプラクティス {#best-practices}
 
-*   Adobe recommends creating a translation project after creating an Adaptive Form.
+* Adobeは、アダプティブフォームを作成した後に翻訳プロジェクトを作成することをお勧めします。
 
-*   When new fields are added in an existing Adaptive Form:
-    * **For machine translation**: Re-create the dictionary and run the translation project. Fields added to an Adaptive Form after creating a translation project remain untranslated. 
-    * **For human translation**: Export the dictionary through `[server:port]/libs/cq/i18n/gui/translator.html`. Update the dictionary for the newly added fields and upload it.
--->
+* 新しいフィールドが既存のアダプティブ フォームに追加された場合：
+   * **機械翻訳の場合**：辞書を再作成し、翻訳プロジェクトを実行します。 翻訳プロジェクトの作成後にアダプティブフォームに追加されたフィールドは、未翻訳になります。
+   * **人間による翻訳の場合**：`[server:port]/libs/cq/i18n/gui/translator.html` から辞書を書き出します。 新しく追加されたフィールド用の辞書を更新し、アップロードします。
+
+
