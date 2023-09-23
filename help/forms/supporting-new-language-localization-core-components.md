@@ -1,10 +1,10 @@
 ---
 title: コアコンポーネントに基づいてアダプティブフォームに新しいロケールのサポートを追加する方法を教えてください。
 description: アダプティブフォームに新しいロケールを追加する方法を説明します。
-source-git-commit: 911b377edd4eb0c8793d500c26ca44a44c69e167
+source-git-commit: 0d2e353208e4e59296d551ca5270be06e574f7df
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 23%
+source-wordcount: '1339'
+ht-degree: 21%
 
 ---
 
@@ -20,17 +20,17 @@ AEM Forms が標準でサポートしているロケールは、英語（en）�
 
 ## アダプティブフォームのロケールはどのように選択されますか？
 
-アダプティブフォームに新しいロケールを追加する前に、アダプティブフォームに対してロケールが選択される方法を理解しておく必要があります。 アダプティブフォームのレンダリング時にロケールを識別して選択する方法は 2 つあります。
+アダプティブフォームのロケールを追加する前に、アダプティブフォームのロケールの選択方法に関する理解を深めておく必要があります。 アダプティブフォームのレンダリング時にロケールを識別して選択する方法は 2 つあります。
 
-* **の使用 [ロケール] URL のセレクター**：アダプティブフォームをレンダリングする際に、システムは、 [ロケール] セレクターを使用して、アダプティブフォームの URL に表示することができます。 URL は次の形式に従います。 http:/[AEM Forms Server URL]/content/forms/af/[afName].[ロケール].html?wcmmode=disabled. の使用 [ロケール] セレクターを使用すると、アダプティブフォームをキャッシュすることができます。
+* **の使用 `locale` URL のセレクター**：アダプティブフォームをレンダリングする際に、システムは、 [ロケール] セレクターを使用して、アダプティブフォームの URL に表示することができます。 URL は次の形式に従います。 http:/[AEM Forms Server URL]/content/forms/af/[afName].[ロケール].html?wcmmode=disabled. の使用 [ロケール] セレクターを使用すると、アダプティブフォームをキャッシュすることができます。 例：URL `www.example.com/content/forms/af/contact-us.hi.html?wcmmmode=disabled` は、ヒンディー語でフォームをレンダリングします。
 
 * 次に示す順序でパラメーターを取得します。
 
-   * **リクエストパラメーター`afAcceptLang`**：ユーザーのブラウザーロケールを上書きするには、 afAcceptLang リクエストパラメーターを渡します。 例えば、次の URL では、カナダのフランス語ロケールでのフォームのレンダリングが強制されます。 `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
+   * **の使用 `afAcceptLang`リクエストパラメーター**：ユーザーのブラウザーロケールを上書きするには、 afAcceptLang リクエストパラメーターを渡します。 例えば、 `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr` URL は、AEM Forms Server を強制して、カナダのフランス語ロケールでフォームをレンダリングします。
 
-   * **ブラウザーのロケール（Accept-Language ヘッダー）**：システムは、ユーザーのブラウザーロケールも考慮します。これは、 `Accept-Language` ヘッダー。
+   * **ブラウザーのロケールの使用（Accept-Language ヘッダー）**：システムは、ユーザーのブラウザーロケールも考慮します。これは、 `Accept-Language` ヘッダー。
 
-  要求されたロケールのクライアントライブラリが使用できない場合は、ロケール内の言語コードに対するクライアントライブラリが存在するかどうかを確認します。 例えば、要求されたロケールが `en_ZA` （南アフリカ英語）と、 `en_ZA`アダプティブフォームは、en （英語）用のクライアントライブラリを使用します（使用可能な場合）。 いずれも見つからない場合、アダプティブフォームは辞書に保存し、 `en` ロケール。
+  要求されたロケールでクライアントライブラリ（ライブラリを作成して使用するプロセスは、この記事で後述）が使用できない場合、ロケール内の言語コードに対してクライアントライブラリが存在するかどうかを確認します。 例えば、要求されたロケールが `en_ZA` （南アフリカ英語）と、 `en_ZA`アダプティブフォームは、en （英語）用のクライアントライブラリを使用します（使用可能な場合）。 いずれも見つからない場合、アダプティブフォームは辞書に保存し、 `en` ロケール。
 
   ロケールが識別されると、アダプティブフォームは対応するフォーム固有の辞書を選択します。 リクエストされたロケールの辞書が見つからない場合、デフォルトでは、アダプティブフォームが作成された言語の辞書が使用されます。
 
@@ -39,9 +39,9 @@ AEM Forms が標準でサポートしているロケールは、英語（en）�
 
 ## 前提条件 {#prerequistes}
 
-新しいロケールのサポートを追加する前に、
+ロケールの追加を開始する前に、次の手順を実行します。
 
-* 編集を容易にするために、プレーンテキストエディター (IDE) をインストールします。 このドキュメントの例は、Microsoft® Visual Studio Code に基づいています。
+* 編集を容易にするために、プレーンテキストエディター (IDE) をインストールします。 このドキュメントの例は、 [Microsoft® Visual Studio Code](https://code.visualstudio.com/download).
 * のバージョンのインストール [Git](https://git-scm.com)（使用できない場合）
 * のクローン [アダプティブFormsコアコンポーネント](https://github.com/adobe/aem-core-forms-components) リポジトリ。 リポジトリのクローンを作成するには：
    1. コマンドラインまたはターミナルウィンドウを開き、リポジトリを保存する場所に移動します。 例：`/adaptive-forms-core-components`
@@ -51,7 +51,9 @@ AEM Forms が標準でサポートしているロケールは、英語（en）�
           git clone https://github.com/adobe/aem-core-forms-components.git
       ```
 
-  リポジトリには、ロケールの追加に必要なクライアントライブラリが含まれます。 記事の残りの部分では、フォルダーは次のようにレファリングされます。 [アダプティブFormsコアコンポーネントリポジトリ].
+  リポジトリには、ロケールの追加に必要なクライアントライブラリが含まれます。
+
+  コマンドが正常に実行されると、リポジトリが `aem-core-forms-components` フォルダーに保存します。 記事の残りの部分では、フォルダーは次のようにレファリングされます。 [アダプティブFormsコアコンポーネントリポジトリ].
 
 
 ## ロケールを追加 {#add-localization-support-for-non-supported-locales}
@@ -169,7 +171,13 @@ AEM Formsには、新しいロケールを簡単に追加できるサンプル�
 * Adobeは、アダプティブフォームを作成した後に翻訳プロジェクトを作成することをお勧めします。
 
 * 新しいフィールドが既存のアダプティブ フォームに追加された場合：
-   * **機械翻訳の場合**：辞書を再作成し、翻訳プロジェクトを実行します。 翻訳プロジェクトの作成後にアダプティブフォームに追加されたフィールドは、未翻訳になります。
-   * **人間による翻訳の場合**：`[server:port]/libs/cq/i18n/gui/translator.html` から辞書を書き出します。 新しく追加されたフィールド用の辞書を更新し、アップロードします。
+   * **機械翻訳の場合**：辞書を再作成し、 [翻訳プロジェクトを実行](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md). 翻訳プロジェクトの作成後にアダプティブフォームに追加されたフィールドは、未翻訳になります。
+   * **人間による翻訳の場合**:UI( ) を使用して辞書を書き出します。 `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. 新しく追加されたフィールド用の辞書を更新し、アップロードします。
+
+## 詳細を表示
+
+* [機械翻訳または人間翻訳を使用した、コアコンポーネントベースのアダプティブフォームの翻訳](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [アダプティブフォーム向けのレコードのドキュメントの生成](/help/forms/generate-document-of-record-core-components.md)
+* [アダプティブフォームをAEM Sitesページまたはエクスペリエンスフラグメントに追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 
