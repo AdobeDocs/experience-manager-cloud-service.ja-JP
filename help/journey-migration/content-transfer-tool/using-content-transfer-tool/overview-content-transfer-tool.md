@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの概要
 description: オンプレミスのAEMインスタンスからAEM as a Cloud Serviceにコンテンツを転送するためのコンテンツ転送ツールの使用方法を説明します。
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 79%
+ht-degree: 76%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 79%
 
 移行セットには次の特性があります。
 
-* 新しいバージョンでは、Cloud Acceleration Manager で作成したプロジェクト内に最大 5 つの移行セットを作成できます。
+* 新しいバージョンでは、Cloud Acceleration Manager で作成したプロジェクト内に最大 20 個の移行セットを作成できます。
 * 各移行セットには、一意の名前を付ける必要があります。
 
 コンテンツ転送ツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。

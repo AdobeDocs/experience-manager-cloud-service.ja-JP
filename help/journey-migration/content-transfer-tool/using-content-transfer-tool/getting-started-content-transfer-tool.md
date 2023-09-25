@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの基本を学ぶ
 description: コンテンツ転送ツールの使用を開始する方法を説明します。
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 7de874f607c98501052ddb715c4af98f6c5d5324
+source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '1439'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -86,7 +86,7 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 
    >[!NOTE]
    >
-   >Cloud Acceleration Manager で、プロジェクトごとに最大 5 つ（期限切れセットを含む）の移行セットを作成できます。
+   >Cloud Acceleration Manager では、プロジェクトごとに最大 20 個の移行セット（有効期限切れのセットを含む）を作成できます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
