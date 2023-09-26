@@ -1,6 +1,6 @@
 ---
 title: AEM Commerce as a Cloud Service - はじめに
-description: Cloud Manager、CI/CD パイプラインおよび Venia 参照用ストアフロントを使用してAEMコマースプロジェクトをデプロイする方法について説明します。
+description: Cloud Manager、CI/CD パイプラインおよび Venia 参照用ストアフロントを使用して、Adobe Experience Manager(AEM) コマースプロジェクトをデプロイする方法について説明します。
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
 version: Cloud Service
@@ -8,16 +8,16 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 44%
+source-wordcount: '1104'
+ht-degree: 42%
 
 ---
 
 # AEM Commerce as a Cloud Service - はじめに {#start}
 
-AEM Commerce as a Cloud Serviceを開始するには、Experience Manager Cloud Serviceが Commerce Integration Framework(CIF) アドオンでプロビジョニングされている必要があります。 CIF アドオンは、の上に追加のモジュールがあります。 [AEM Sitesas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
+Adobe Experience Manager(AEM)Commerceas a Cloud Serviceの使用を開始するには、Experience Manager Cloud ServiceにCommerce integration framework(CIF) アドオンがプロビジョニングされている必要があります。 CIFアドオンは、 [AEM Sitesas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
 
 ## オンボーディング {#onboarding}
 
@@ -28,22 +28,22 @@ AEM Commerce as a Cloud Service のオンボーディングは、次の 2 つの
 
 最初のオンボーディング手順はアドビが行います。価格とプロビジョニングの詳細については、セールス担当者にお問い合わせください。
 
-CIF アドオンのプロビジョニングが完了すると、既存の Cloud Manager プログラムに適用されます。 Cloud Manager プログラムがない場合は、作成する必要があります。 詳しくは、 [プログラムの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=ja).
+CIFアドオンのプロビジョニングが完了すると、既存の Cloud Manager プログラムに適用されます。 Cloud Manager プログラムがない場合は、作成する必要があります。 詳しくは、 [プログラムの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=ja).
 
-2 つ目の手順は、各 AEM as a Cloud Service 環境のセルフサービスです。CIF アドオンの初期プロビジョニングの後でおこなう必要がある追加の設定があります。
+2 つ目の手順は、各 AEM as a Cloud Service 環境のセルフサービスです。CIFアドオンの初期プロビジョニング後に、いくつかの追加の設定をおこなう必要があります。
 
 ## AEM とコマースソリューションの接続 {#solution}
 
-CIF アドオンと [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components) コマースソリューションでは、Cloud Manager 環境変数を使用してGraphQLエンドポイントの URL を指定する必要があります。 変数名は `COMMERCE_ENDPOINT` です。HTTPS を介した安全な接続を設定する必要があります。
+CIFアドオンと [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components) コマースソリューションでは、Cloud Manager 環境変数を使用してGraphQLエンドポイントの URL を指定する必要があります。 変数名は `COMMERCE_ENDPOINT` です。HTTPS を介した安全な接続を設定する必要があります。
 
 この環境変数は、次の 2 つの場所で使用されます。
 
-- AEM CIF コアコンポーネントおよび顧客プロジェクトコンポーネントで使用される、共有可能な一般的な GraphQl クライアントを介して、AEMからコマースバックエンドへのGraphQL呼び出し。
-- 変数が使用可能な各AEM環境でGraphQLプロキシ URL を設定します。 `/api/graphql`. この URL は、AEMコマースオーサリングツール（CIF アドオン）および CIF クライアント側コンポーネントで使用されます。
+- AEM CIFコアコンポーネントおよび顧客プロジェクトコンポーネントで使用される、共有可能な GraphQl クライアントを介して、AEMからコマースバックエンドに対するGraphQL呼び出し。
+- 変数が使用可能な各AEM環境でGraphQLプロキシ URL を設定します。 `/api/graphql`. この URL は、AEMコマースオーサリングツール (CIFアドオン ) およびCIFクライアント側コンポーネントで使用されます。
 
-AEM as a Cloud Service 環境ごとに異なる GraphQL エンドポイント URL を使用できます。この方法で、プロジェクトは AEM ステージング環境をコマースステージングシステムに、また、AEM 実稼働環境をコマース実稼働システムに接続できます。GraphQL エンドポイントは、公開されている必要があります。プライベート VPN またはローカル接続はサポートされていません。オプションで、認証を必要とする追加の CIF 機能を使用するために認証ヘッダーを指定できます。
+AEM as a Cloud Service 環境ごとに異なる GraphQL エンドポイント URL を使用できます。この方法で、プロジェクトは AEM ステージング環境をコマースステージングシステムに、また、AEM 実稼働環境をコマース実稼働システムに接続できます。GraphQL エンドポイントは、公開されている必要があります。プライベート VPN またはローカル接続はサポートされていません。オプションで、認証を必要とする追加のCIF機能を使用するために認証ヘッダーを提供できます。
 
-オプションで、Adobe Commerce Enterprise/Cloud の場合のみ、CIF アドオンはAEM作成者向けのステージング済みカタログデータの使用をサポートします。 このデータを使用するには、認証ヘッダーを設定する必要があります。 このヘッダーは、セキュリティ上の理由から、AEM オーサーインスタンスでのみ使用できます。AEM パブリッシュインスタンスでは、ステージング済みデータを表示できません。
+オプションで、Adobe Commerce Enterprise/Cloud の場合のみ、CIFアドオンはAEM作成者向けのステージング済みカタログデータの使用をサポートします。 このデータを使用するには、認証ヘッダーを設定する必要があります。 このヘッダーは、セキュリティ上の理由から、AEMオーサーインスタンスでのみ使用および使用できます。 AEMパブリッシュインスタンスは、ステージ済みデータを表示できません。
 
 エンドポイントを設定する方法は 2 つあります。
 
@@ -103,11 +103,11 @@ CLI を使用してAEMをコマースソリューションにAdobe I/Oするに�
 
 ## ストアとカタログの設定 {#catalog}
 
-CIF アドオンと [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components) は、異なるコマースストア（またはストア表示回数など）に接続された複数のAEMサイト構造で使用できます。 デフォルトでは、CIF アドオンは、Adobe Commerceのデフォルトのストアおよびカタログに接続するデフォルトの設定でデプロイされます。
+CIFのアドオンと [CIFコアコンポーネント](https://github.com/adobe/aem-core-cif-components) は、異なるコマースストア（またはストア表示回数など）に接続された複数のAEMサイト構造で使用できます。 デフォルトでは、CIFアドオンは、Adobe Commerceのデフォルトのストアおよびカタログに接続するデフォルトの設定でデプロイされます。
 
-この設定は、次の手順に従って、CIFCloud Service設定を使用してプロジェクトに合わせて調整できます。
+この設定は、次の手順に従って、CIFCloud Service設定を使用して、プロジェクトに合わせて調整できます。
 
-1. AEMで、ツール/Cloud Services/CIF Configuration に移動します。
+1. AEMで、ツール/Cloud Service/CIF Configuration に移動します。
 
 2. 変更するコマース設定を選択します。
 

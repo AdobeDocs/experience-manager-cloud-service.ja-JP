@@ -2,10 +2,10 @@
 title: コンテンツフラグメントのカスタマイズと拡張
 description: コンテンツフラグメントは、標準アセットを拡張します。 カスタマイズ方法を学びます。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '1812'
-ht-degree: 75%
+source-wordcount: '1782'
+ht-degree: 43%
 
 ---
 
@@ -19,18 +19,18 @@ Adobe Experience Manager as a Cloud Service 内で、コンテンツフラグメ
 
 ## アーキテクチャ {#architecture}
 
-コンテンツフラグメントの基本的な[構成要素](/help/sites-cloud/administering/content-fragments/overview.md#constituent-parts-of-a-content-fragment)は次の通りです。
+基本 [構成部品](/help/sites-cloud/administering/content-fragments/overview.md#constituent-parts-of-a-content-fragment) コンテンツフラグメントの次の要素が含まれます。
 
-* *コンテンツフラグメント*
-* *コンテンツフラグメント*&#x200B;を構成する 1 つ以上のコンテンツ要素
-* （場合によっては）1 つ以上の&#x200B;*コンテンツバリエーション*
+* A *コンテンツフラグメント* 自然
+* これは、1 つ以上の *コンテンツ要素*
+* 1 つ以上の *コンテンツのバリエーション*
 
 個々のコンテンツフラグメントは、コンテンツフラグメントモデルに基づいています。
 
 * コンテンツフラグメントモデルでは、コンテンツフラグメントの作成時にその構造を定義します。
-* フラグメントはモデルを参照するので、モデルに対する変更は、そのモデルに関連付けられているフラグメントにも影響します。
+* フラグメントはモデルを参照するので、モデルに対する変更は、そのモデルに影響を与える場合も、依存するフラグメントに影響を与える場合もあります。
 * モデルはデータタイプで構成されています。
-* 新しいバリエーションを追加するときなどは、それに合わせてフラグメントを更新する必要があります。
+* 新しいバリエーションを追加する関数などは、それに応じてフラグメントを更新する必要があります。
 
   >[!NOTE]
   >
@@ -42,13 +42,13 @@ Adobe Experience Manager as a Cloud Service 内で、コンテンツフラグメ
 
 ### Sites と Assets の統合 {#integration-of-sites-with-assets}
 
-コンテンツフラグメント管理 (CFM) は、次のようにAEM Assetsに含まれています。
+コンテンツフラグメント管理 (CFM) は、Adobe Experience Manager(AEM)Assets の一部で、次の機能を持ちます。
 
 * コンテンツフラグメントはアセットです。
 * 既存の Assets 機能を使用します。
 * AEM Assets と完全に統合されています（管理コンソールなど）。
 
-コンテンツフラグメントは、次のように Sites の機能と見なされます。
+コンテンツフラグメントは、AEM Sitesの機能と見なされます。
 
 * ページのオーサリング時に使用されます。
 
@@ -60,15 +60,15 @@ Adobe Experience Manager as a Cloud Service 内で、コンテンツフラグメ
 
 * すべてのコンテンツはアセットの `jcr:content/data` ノードに格納されます。
 
-   * 要素データは次のプライマリサブノードに格納されます。
+   * 要素のデータは次のマスターサブノードに格納されます。
      `jcr:content/data/master`
 
-   * バリエーションは、そのバリエーション名のサブノードに格納されます。例：`jcr:content/data/myvariation`
+   * バリエーションは、そのバリエーションの名前を持つサブノードに格納されます（例： ）。 `jcr:content/data/myvariation`
 
-   * 各要素のデータは、その要素名のプロパティとしてそれぞれのサブノードに格納されます。例えば、`text` 要素のコンテンツは、`text` プロパティとして `jcr:content/data/master` に格納されます。
+   * 各要素のデータは、要素名（要素のコンテンツなど）を持つプロパティとしてそれぞれのサブノードに保存されます。 `text` はプロパティとして保存されます `text` オン `jcr:content/data/master`
 
 * メタデータと関連コンテンツは、`jcr:content/metadata` に格納されます。
-ただし、タイトルと説明は従来のメタデータと見なされないので、次の場所に格納されます。 `jcr:content`
+ただし、タイトルと説明は従来のメタデータと見なされないので、`jcr:content` に格納されます。
 
 #### アセットの場所 {#asset-location}
 
@@ -78,7 +78,7 @@ Adobe Experience Manager as a Cloud Service 内で、コンテンツフラグメ
 
 #### アセットの権限 {#asset-permissions}
 
-詳しくは、[コンテンツフラグメント - 削除に関する考慮事項](/help/sites-cloud/administering/content-fragments/delete-considerations.md)を参照してください。
+詳しくは、 [コンテンツフラグメント — 削除に関する考慮事項](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
 #### 機能の統合 {#feature-integration}
 
@@ -94,25 +94,25 @@ Assets コアと統合するには：
 
 >[!CAUTION]
 >
->[コンテンツフラグメントコンポーネントは、コアコンポーネントの一部です](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ja)。詳しくは、 [コアコンポーネントの開発](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ja) を参照してください。
+>[コンテンツフラグメントコンポーネントは、コアコンポーネントの一部です](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ja)。詳しくは、 [コアコンポーネントの開発](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ja) を参照してください。
 
-コンテンツフラグメントは、他のアセットタイプと同様に、AEMページから参照できます。 AEMが **[コンテンツフラグメントコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ja)** - a [ページにコンテンツフラグメントを組み込むためのコンポーネント](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). この&#x200B;**[コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ja)**&#x200B;コアコンポーネントを拡張することもできます。
+コンテンツフラグメントは、他のアセットタイプと同様に、AEMページから参照できます。 AEMが **[コンテンツフラグメントコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ja)** - a [ページにコンテンツフラグメントを組み込むためのコンポーネント](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). この&#x200B;**[コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ja)**&#x200B;コアコンポーネントを拡張することもできます。
 
 * このコンポーネントは、`fragmentPath` プロパティを使用して、実際のコンテンツフラグメントを参照します。`fragmentPath` プロパティは、その他のアセットタイプの類似プロパティと同じ方法で処理されます。例えば、コンテンツフラグメントが別の場所に移動された場合などです。
 
 * コンポーネントを使用すると、表示するバリエーションを選択できます。
 
-* さらに、段落の範囲を選択して出力を制限できます。例えば、複数列の出力に使用できます。
+* また、段落の範囲を選択して出力を制限することもできます。例えば、複数列の出力に使用できます。
 
 * このコンポーネントは、中間コンテンツを許可します。
 
    * ここで、コンポーネントを使用して、参照されるフラグメントの段落の間に他のアセット（画像など）を配置できます。
 
-   * 中間コンテンツの場合は、次の操作が必要です。
+   * 中間コンテンツの場合：
 
-      * 参照が不安定になる可能性に注意します。中間コンテンツ（ページのオーサリング時に追加）とその横にある段落の関係は、固定されていません。（コンテンツフラグメントエディター内で）中間コンテンツの位置の前に新しい段落を挿入すると、相対的な位置が失われることがあります。
+      * 不安定な参照の可能性に注意してください。 中間コンテンツ（ページのオーサリング時に追加）には、横に配置された段落との固定関係はありません。 中間コンテンツの位置の前に（コンテンツフラグメントエディターで）新しい段落を挿入すると、相対位置が失われる場合があります。
 
-      * ページ上にレンダリングされる内容を設定するために、追加のフィルター（バリエーションや段落パラメータなど）を考慮します。
+      * ページ上にレンダリングされる内容を設定する際には、追加のパラメーター（バリエーションや段落フィルターなど）を考慮します。
 
 >[!NOTE]
 >
@@ -130,9 +130,9 @@ Assets コアと統合するには：
 
   コンテンツフラグメントは、[AEM の翻訳ワークフロー](/help/sites-cloud/administering/translation/overview.md)と完全に統合されています。つまり、アーキテクチャレベルでは以下を意味します。
 
-   * コンテンツフラグメントの個々の翻訳は、実際には別々のフラグメントです。次に例を示します。
+   * コンテンツフラグメントの個々の翻訳は、別々のフラグメントです。次に例を示します。
 
-      * それぞれ異なる言語のルートの下に位置していますが、関連する言語ルートの下の同じ相対パスを共有します。
+      * 異なる言語のルートの下に配置されますが、関連する言語ルートの下の相対パスを共有します。
 
         `/content/dam/<path>/en/<to>/<fragment>`
 
@@ -140,7 +140,7 @@ Assets コアと統合するには：
 
         `/content/dam/<path>/de/<to>/<fragment>`
 
-   * ルールベースのパスを除き、コンテンツフラグメントの様々な言語バージョンの間にそれ以上のつながりはありません。UI には言語バリアント間を移動する手段が用意されていますが、それらは 2 つの別々のフラグメントとして扱われます。
+   * ルールベースのパスに加えて、コンテンツフラグメントの異なる言語バージョン間には他の接続はありません。 2 つの異なるフラグメントとして処理されますが、UI では言語のバリアント間を移動する手段を提供します。
 
   >[!NOTE]
   >
@@ -150,13 +150,13 @@ Assets コアと統合するには：
 
 * **メタデータスキーマ**
 
-   * コンテンツフラグメント（再） [メタデータスキーマ](/help/assets/metadata-schemas.md)に含まれている必要があります。
+   * コンテンツフラグメントは、 [メタデータスキーマ](/help/assets/metadata-schemas.md) 標準アセットで定義できます。
 
    * CFM には、次のような独自の固有のスキーマがあります。
 
      `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-     必要に応じて拡張できます。
+     必要に応じて、拡張できます。
 
    * 各スキーマフォームは、フラグメントエディターと統合されます。
 
@@ -164,17 +164,17 @@ Assets コアと統合するには：
 
 サーバー側 API を使用して、コンテンツフラグメントにアクセスできます。以下を参照してください。
 
-[com.adobe.cq.dam.cfm](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
+[com.adobe.cq.dam.cfm](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
->コンテンツ構造に直接アクセスする代わりに、サーバー側 API を使用することを強くお勧めします。
+>Adobeでは、コンテンツ構造に直接アクセスする代わりに、サーバー側 API を使用することをお勧めします。
 
 ### 主要インターフェイス {#key-interfaces}
 
 次の 3 つのインターフェイスが、入口の役割を果たします。
 
-* **コンテンツフラグメント**（[ContentFragment](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)）
+* **コンテンツフラグメント**（[ContentFragment](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)）
 
   このインターフェイスを使用すると、コンテンツフラグメントを抽象的に操作できます。
 
@@ -186,12 +186,12 @@ Assets コアと統合するには：
 
       * リスト要素
       * 名前で要素を取得
-      * 新しい要素を作成する（[注意事項](#caveats)を参照）
+      * 要素を作成します ( [注意事項](#caveats))
 
       * 要素データにアクセスする（`ContentElement` を参照）
 
    * フラグメントに定義されたバリエーションのリスト
-   * 新しいバリエーションをグローバルに作成
+   * バリエーションをグローバルに作成
    * 関連コンテンツを管理：
 
       * コレクションのリスト
@@ -202,7 +202,7 @@ Assets コアと統合するには：
 
   フラグメントの主要要素を表すインターフェイスは、次のとおりです。
 
-   * **コンテンツ要素** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **コンテンツ要素** ([ContentElement](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * 基本データ（名前、タイトル、説明）を取得
       * コンテンツを取得/設定
@@ -210,13 +210,13 @@ Assets コアと統合するには：
 
          * バリエーションのリスト
          * 名前でバリエーションを取得
-         * 新しいバリエーションを作成します ( [注意事項](#caveats))
+         * バリエーションを作成します ( [注意事項](#caveats))
          * バリエーションを削除する（[注意事項](#caveats)を参照）
          * バリエーションデータにアクセスする（`ContentVariation` を参照）
 
       * バリエーションを解決するためのショートカット（要素に指定されたバリエーションを使用できない場合は実装固有の追加のフォールバックロジックを適用）
 
-   * **コンテンツのバリエーション** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **コンテンツのバリエーション** ([ContentVariation](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * 基本データ（名前、タイトル、説明）を取得
       * コンテンツを取得/設定
@@ -224,7 +224,7 @@ Assets コアと統合するには：
 
   3 つのインターフェイス（`ContentVariation`、`ContentFragment`、`ContentElement`、）すべてによって `Versionable` インターフェイスを拡張し、コンテンツフラグメントに必要な次のバージョン管理機能を追加します。
 
-   * 要素の新しいバージョンを作成する
+   * 要素のバージョンを作成する
    * 要素のバージョンのリスト
    * バージョン管理された要素の特定のバージョンのコンテンツを取得する
 
@@ -240,9 +240,9 @@ Assets コアと統合するには：
 
 * `ContentElement` は、次のものに適応させることができます。
 
-   * [`ElementTemplate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - 要素の構造に関する情報にアクセスするためのものです。
+   * [`ElementTemplate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - 要素の構造に関する情報にアクセスするためのものです。
 
-* [`FragmentTemplate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
+* [`FragmentTemplate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` は、次のものに適応させることができます。
 
@@ -252,13 +252,13 @@ Assets コアと統合するには：
 
 次のことに注意してください。
 
-* API 全体は、 **not** は、（API JavaDoc で特に記載がない限り）変更を自動的に保持します。 したがって、各リクエスト（または実際に使用しているリゾルバー）のリソースリゾルバーを常にコミットする必要があります。
+* API 全体は、 **not** は、（API JavaDoc で特に記載がない限り）変更を自動的に保持します。 したがって、各リクエスト（または実際に使用しているリゾルバー）のリソースリゾルバーを常にコミットします。
 
 * 追加の作業が必要になる可能性のあるタスク：
 
-   * `ContentFragment` から新しいバリエーションを作成することを強くお勧めします。これにより、すべての要素がこのバリエーションを共有し、新しく作成したバリエーションをコンテンツ構造に反映するために、必要に応じて適切なグローバルデータ構造が更新されます。
+   * Adobeでは、次の場所からバリエーションを作成することをお勧めします。 `ContentFragment`. これにより、すべての要素がこのバリエーションを共有し、必要に応じて適切なグローバルデータ構造が更新され、コンテンツ構造に新しいバリエーションが反映されます。
 
-   * `ContentElement.removeVariation()` を使用して、要素を介して既存のバリエーションを削除しても、バリエーションに割り当てられたグローバルデータ構造は更新されません。これらのデータ構造を確実に同期させるには、代わりに `ContentFragment.removeVariation()` を使用すると、バリエーションがグローバルに削除されます。
+   * 要素を使用して既存のバリエーションを削除する `ContentElement.removeVariation()`では、バリエーションに割り当てられたグローバルデータ構造は更新されません。 これらのデータ構造を確実に同期させるには、代わりに `ContentFragment.removeVariation()` を使用すると、バリエーションがグローバルに削除されます。
 
 ## コンテンツフラグメント管理 API - クライアント側 {#the-content-fragment-management-api-client-side}
 
@@ -278,26 +278,26 @@ Assets コアと統合するには：
 
 >[!CAUTION]
 >
->この背景情報を考慮してください。 ここでは（リポジトリー内の&#x200B;*私的な領域*&#x200B;としてマークされているため）何も変更しないでください。ですが、場合によっては、内部の動作を理解するのに役立ちます。
+>この背景情報を考慮してください。 ここでは ( *私有地* リポジトリ内で ) でも、内部での動作を理解するのに役立つ場合があります。
 
 複数のビュー（= HTML ページ）にまたがる可能性があるコンテンツフラグメントの編集はアトミックです。このようなアトミックなマルチ表示編集機能は、一般的な AEM の概念ではないので、コンテンツフラグメントは、*編集セッション*&#x200B;と呼ばれるものを使用します。
 
 編集セッションは、ユーザーがエディターでコンテンツフラグメントを開くと開始されます。ユーザーが「**保存**」または「**キャンセル**」を選択してエディターから移動すると、編集セッションは終了します。
 
-技術的には、すべての編集は、他のすべての AEM の編集と同様、*ライブ*&#x200B;コンテンツで行われます。編集セッションが開始されると、現在の未編集ステータスのバージョンが作成されます。ユーザーが編集をキャンセルすると、そのバージョンが復元されます。ユーザーが「**保存**」をクリックした場合、特定の操作は行われません。すべての編集が&#x200B;*ライブ*&#x200B;コンテンツで実行されたので、すべての変更が既に保持されているからです。また、「**保存**」をクリックすると、一部のバックグラウンド処理（全文検索情報の作成や混在メディアアセットの処理など）がトリガーされます。
+技術的には、すべての編集は *live* 他のすべてのAEM編集と同様に、コンテンツを編集できます。 編集セッションが開始されると、現在の未編集ステータスのバージョンが作成されます。ユーザーが編集をキャンセルすると、そのバージョンが復元されます。ユーザーが **保存**&#x200B;の場合、特定の操作はおこなわれません。これは、編集が *live* コンテンツを使用するので、すべての変更が既に保持されています。 また、 **保存** トリガーフルテキスト検索情報の作成、混在メディアアセットの処理、その両方など、一部のバックグラウンド処理。
 
-エッジケースには、いくつかの安全対策があります（例：ユーザーが編集セッションを保存またはキャンセルせずにエディターを終了しようとした場合など）。また、データの損失を防ぐために、定期的な自動保存を使用できます。
-2 人のユーザーが同じコンテンツフラグメントを同時に編集できるので、他のユーザーが変更した内容が上書きされる場合があります。これを防ぐには、フラグメントに DAM 管理の*チェックアウト*&#x200B;アクションを適用して、コンテンツフラグメントをロックする必要があります。
+エッジケースには、いくつかの安全対策があります。例えば、ユーザーが編集セッションを保存またはキャンセルせずにエディターを終了しようとした場合です。 また、データの損失を防ぐために、定期的な自動保存を使用できます。
+2 人のユーザーが同じコンテンツフラグメントを同時に編集できるので、互いの変更内容が上書きされます。 これを防ぐには、DAM 管理の *チェックアウト* アクションをフラグメントに追加します。
 
 ## 例 {#examples}
 
 ### 例：既存のコンテンツフラグメントへのアクセス {#example-accessing-an-existing-content-fragment}
 
-既存のコンテンツフラグメントにアクセスするには、API を表すリソースを以下に適応させます。
+これを実現するには、API を表すリソースを次のように適応させます。
 
 `com.adobe.cq.dam.cfm.ContentFragment`
 
-次に例を示します。
+例：
 
 ```java
 // first, get the resource
@@ -309,9 +309,9 @@ if (fragmentResource != null) {
 }
 ```
 
-### 例：新しいコンテンツフラグメントの作成 {#example-creating-a-new-content-fragment}
+### 例：コンテンツフラグメントの作成 {#example-creating-a-new-content-fragment}
 
-新しいコンテンツフラグメントをプログラムで作成するには、モデルリソースから適合した `FragmentTemplate` を使用する必要があります。
+コンテンツフラグメントをプログラムで作成するには、 `FragmentTemplate` モデルリソースから適応させたもの。
 
 次に例を示します。
 
@@ -323,7 +323,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### 例：自動保存間隔の指定 {#example-specifying-the-auto-save-interval}
 
-[自動保存間隔](/help/sites-cloud/administering/content-fragments/managing.md#save-close-and-versions)（秒単位）は、設定マネージャー（ConfMgr）を使用して定義できます。
+The [自動保存間隔](/help/sites-cloud/administering/content-fragments/managing.md#save-close-and-versions) （秒単位で測定）設定マネージャー (ConfMgr) を使用して定義できます。
 
 * ノード：`<conf-root>/settings/dam/cfm/jcr:content`
 * プロパティ名：`autoSaveInterval`
@@ -331,7 +331,9 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 * デフォルト：`600`（10 分）。`/libs/settings/dam/cfm/jcr:content` で定義されています
 
-自動保存間隔を 5 分に設定する場合は、次のようにノードにプロパティを定義する必要があります。
+自動保存間隔を 5 分に設定する場合は、ノードでプロパティを定義します。
+
+例：
 
 * ノード：`/conf/global/settings/dam/cfm/jcr:content`
 * プロパティ名：`autoSaveInterval`
@@ -344,4 +346,4 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 詳しくは、
 
-* [コアコンポーネント — コンテンツフラグメントコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ja) （推奨）
+* [コアコンポーネント — コンテンツフラグメントコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ja) （推奨）

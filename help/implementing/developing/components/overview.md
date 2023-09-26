@@ -2,10 +2,10 @@
 title: コンポーネントの概要
 description: コンポーネントは、特定の機能を実現し、Web サイトにコンテンツを提供するためのモジュールユニットです。
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 81%
+source-wordcount: '386'
+ht-degree: 57%
 
 ---
 
@@ -15,18 +15,16 @@ ht-degree: 81%
 
 ## コンポーネントとは {#what-are-components}
 
-AEM のコンポーネント：
-
 * 特定の機能を実現し、Web サイトにコンテンツを提供するためのモジュールユニットです。
-* 再利用可能です。
+* 再利用可能。
 * リポジトリーの 1 つのフォルダー内の自己完結型ユニットとして開発されます。
 * 非表示の設定ファイルはありません。
 * 他のコンポーネントを含めることができます。
-* AEM システム内ならどこでも実行でき、また、特定のコンポーネントで実行できるように制限することもできます。
+* AEMシステム内の任意の場所で実行でき、特定のコンポーネントでの実行に制限することもできます。
 * 標準化されたユーザーインターフェイスがあります。
 * 設定可能な編集動作があります。
 * Granite UI コンポーネントに基づくサブ要素を使用して構築されたダイアログボックスを使用します。
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ja) を使用して開発されています。
+* これらはを使用して開発されています。 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ja).
 * デフォルトの機能を拡張するカスタマイズされたコンポーネントを作成するために開発できます。
 
 コンポーネントはモジュラーなので、次のことが可能です。
@@ -44,7 +42,7 @@ AEM のコンポーネント：
 
 ## AEM コアコンポーネント {#aem-core-components}
 
-[AEM コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)は、AEM で Web サイトの開発時間を短縮しメンテナンスコストを削減するための、標準化された Web コンテンツ管理（WCM）コンポーネントのセットです。
+[AEMコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja) は、AEMの開発時間を短縮し、Web サイトのメンテナンスコストを削減するための、標準化された Web コンテンツ管理 (WCM) コンポーネントのセットです。
 
 コアコンポーネントは、Cloud Service として AEM と共に提供され、[WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)では、コンポーネントの実装方法と使用方法を説明します。コンポーネントは、すべてのソースコードと共に提供されており、そのまま使用することも、コンポーネントを変更または拡張する出発点として使用することもできます。
 
@@ -58,7 +56,7 @@ AEMインスタンスで使用可能なすべてのコンポーネントの概�
 
 1. 「**[!UICONTROL クエリ]**」タブで、「**[!UICONTROL タイプ]**」として「`XPath`」を選択します。
 
-1. 「**[!UICONTROL クエリ]**」入力フィールドに次の文字列を入力します。
+1. Adobe Analytics の **[!UICONTROL クエリ]** 入力フィールドに、次の文字列を入力します。
 
    `//element(*, cq:Component)`
 
