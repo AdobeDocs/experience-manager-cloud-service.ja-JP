@@ -3,9 +3,9 @@ title: コンテンツフラグメントのオーサリング
 description: コンテンツフラグメントのコンテンツを作成する方法を理解し、目的に応じてそのコンテンツのバリエーションを作成します。 これにより、ヘッドレス配信とページオーサリングの両方の柔軟性が向上します。
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+source-git-commit: 2fa22bf2feb6b8697877b345bc29821e30b1c6a1
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2227'
 ht-degree: 4%
 
 ---
@@ -484,7 +484,7 @@ The **フィールド** パネルには、コンテンツフラグメント内�
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>タブプレースホルダー</b></p><p>実際のアイコンでは表されませんが、 <b>タブプレースホルダー</b> は、左側のパネルと中央のパネルに表示されます。</p> </td>
+   <td><p><b>タブプレースホルダー</b></p><p>実際のアイコンでは表されませんが、 <b>タブプレースホルダー</b> は左側のパネルに表示されます。 <br>中央のパネルでも、図のように水平方向に表示されるか、ドロップダウンリストで表示されます（水平方向に表示するには数が多すぎる場合）。</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>
