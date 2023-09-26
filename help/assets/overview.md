@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
+source-git-commit: a4601d95076d37ed5df79b7c9dabb8beab8353d0
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 66%
+source-wordcount: '825'
+ht-degree: 60%
 
 ---
 
@@ -52,6 +52,12 @@ DAM ライブラリアリント、開発者およびスーパーユーザーは�
 ![add-tags](assets/newui-overview.svg)
 
 Assets ビューへのアクセス方法と、Admin ビューで提供される簡略化について詳しくは、 [Assets ビューの概要](/help/assets/assets-view-introduction.md).
+
+## Edge Delivery Services向けのドキュメントベースオーサリングとの統合 {#integrate-doc-authoring-edge-and-assets}
+
+Edge 配信を使用すると、作成者がコンテンツをすばやく更新および公開でき、新しいサイトを迅速に起動できる、魅力的な迅速な Web サイトを作成できます。
+
+AEM Assetsをドキュメントベースのオーサリングと統合して、Edge Delivery Services向けに Web サイト作成者がMicrosoft Word またはGoogleドキュメントでドキュメントを作成する際に、AEM Assetsリポジトリで使用可能な画像を使用できるようにします。 詳しくは、 [AEM Assetsとドキュメントベースのオーサリングの統合](/help/edge/using.md#integrate-assets-edge).
 
 ## 新しい Assets の機能 {#whats-new-assets}
 
