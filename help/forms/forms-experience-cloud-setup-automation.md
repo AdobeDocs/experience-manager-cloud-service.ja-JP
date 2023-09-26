@@ -1,10 +1,10 @@
 ---
 title: アダプティブフォーム用にAdobe Analyticsを有効にする
 description: Experience Cloudの自動設定を使用すると、Adobe Analyticsをアダプティブフォームに接続して、訪問者のインタラクションとエンゲージメントに関するインサイトを追跡できます。
-source-git-commit: 39ea959cb0a0568fd94ca455be935228479c0415
+source-git-commit: ea2fdc8e5866f7365c4fa6613b36d6b8bc77a837
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 2%
+source-wordcount: '1534'
+ht-degree: 6%
 
 ---
 
@@ -52,11 +52,11 @@ Adobe Analyticsは、アダプティブFormsのパフォーマンス指標の包
 Analytics, Data Collection (Formerly Adobe Launch), and Experience Manager (experience.adobe.com)
 -->
 
-Adobe Experience Manager FormsでのExperience Cloud設定の自動化には、 **Adobe Analyticsライセンス**, **データ収集 ( 以前のAdobeLaunch)** トラッキングスクリプトを管理し、 **Experience Platform Launch(API)** データの集計とインサイトの生成を合理化しました。
+Experience Cloudの自動設定には、 **Adobe Analyticsライセンス**, **データ収集 ( 以前のAdobeLaunch)** トラッキングスクリプトを管理するには、および **Experience Manager Formsライセンス** データの集計とインサイトの生成を合理化しました。
 
-Experience Cloud設定の自動化、Adobe Analytics、Experience Platform LaunchAPI のアクティブなライセンスがある場合、開発者コンソール内で使用可能かどうかを確認する必要があります。
+のアクティブなライセンスをお持ちの場合 **Adobe Analytics** および **Experience Manager Forms**&#x200B;と統合されている **データ収集 ( 以前のAdobeLaunch)**&#x200B;を使用する場合は、開発者コンソール内で使用可能かを確認する必要があります。
 
-上記がFormsのas a Cloud Serviceの環境で使用できることを確認するには、 [開発者コンソール](https://developer.adobe.com/console/projects)を開き、プロジェクトに移動し、例えば、URL を持つ環境のプログラム id でプロジェクトを検索します。 `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`、プログラム ID は `p45913-e175111`. Experience Cloud設定の自動化、Adobe AnalyticsおよびExperience Platform LaunchAPI が表示されていることを確認します。 これらが一覧に表示されている場合は、アダプティブFormsに対してAdobe Analyticsを有効にすることができます。
+上記がFormsのas a Cloud Serviceの環境で使用できることを確認するには、 [開発者コンソール](https://developer.adobe.com/console/projects)をクリックし、プロジェクトに移動し、プログラム id — 環境 id（例えば、URL を持つ環境）でプロジェクトを検索します。 `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`、プログラム id — 環境 id はです。 `p45913-e175111`. Experience Cloud設定の自動化、Adobe AnalyticsおよびExperience Platform LaunchAPI が表示されていることを確認します。 これらが一覧に表示されている場合は、アダプティブFormsに対してAdobe Analyticsを有効にすることができます。
 
 ![Forms Analytics の統合の前提条件](assets/analytics-aem.png){width="100%"}
 
@@ -96,6 +96,8 @@ Experience Cloud設定の自動化、Adobe Analytics、Experience Platform Launc
 
 ![統合AEM Analytics](assets/analytics-aem-integrated.png){width="100%"}
 
+>[!VIDEO](https://video.tv.adobe.com/v/3424577/recaptcha-google-adaptive-forms/?quality=12&learn=on)
+
 ### コアコンポーネント用のアダプティブFormsでのAdobe Analyticsの有効化 {#integrate-adobe-analytics-with-aem-forms-for-core-components}
 
 1. AEMインスタンスで、に移動します。 **[!UICONTROL Forms]** >> **[!UICONTROL Formsとドキュメント]** を選択し、 **[!UICONTROL フォーム]**.
@@ -120,3 +122,85 @@ Experience Cloud設定の自動化、Adobe Analytics、Experience Platform Launc
 1. クリック **Adobe Analytics** レポートを表示し、パフォーマンスデータを分析します。
 
 手動による方法でアダプティブフォームをAdobe Analyticsに接続するには、次にアクセスします： [AEM FormsとAdobe Analyticsの統合](/help/forms/integrate-aem-forms-with-adobe-analytics.md).
+
+## Sites で Analytics からアダプティブFormsへの有効化 {#Connect-Analytics-to-Adaptive-Forms-in-Sites}
+
+AEM Sitesでアダプティブフォームの分析を設定すると、Sites ページのフォームに対するユーザーのインタラクションとフォームの送信を追跡するのに役立ちます。 分析を Sites Formsにシームレスに統合することで、ユーザーの行動、コンバージョン率、フォームの改善点に関する貴重なインサイトを得ることができます。
+
+### 前提条件 {#Prerequisites-to-connect-forms-analytics-to-sites}
+
+Adaptive Forms for AEM Sitesで Analytics を接続して有効にするには、AEM SitesにアクティブなAdobe Analyticsがあることを確認する必要があります。
+
+### Sites の Adaptive Formsに接続して Analytics を有効にする {#Connect-analytics-to-adaptive-forms}
+
+AEM Sitesページでアダプティブフォームに接続して Analytics を有効にするには、 `customfooterlibs` AEMアーキタイプ/Git リポジトリーとデプロイメントパイプラインを使用して、AEM Sitesページに対するクライアントライブラリ。
+
+1. [AEM Forms アーキタイプまたは複製された Git リポジトリ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)プロジェクトをテキストエディターで開きます。例えば Visual Studio Code などです。
+
+1. アダプティブフォームが存在する Sites のページに移動します ( 例：このデモプロジェクトでは、 `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`.
+
+1. `sling:resourceSuperType` の値をコピーします。例えば、値は `core/wcm/components/page/v3/page` です。
+
+   ![Sling リソース](/help/forms/assets/slingresource.png)
+
+1. `core/wcm/components/page/v3/page` と同じ場所 `ui.apps/src/main/content/jcr_root/apps` に類似した構造を作成します。
+
+   ![オーバーレイ構造](/help/forms/assets/overlaystructure.png)
+
+1. を追加します。 `customfooterlibs.html` ファイル。
+
+       &quot;&#39;
+       // customheaderlibs.html
+       &lt;sly data-sly-use.page=&quot;com.adobe.cq.wcm.core.components.models.Page&quot;>
+       &lt;sly data-sly-test=&quot;${page.data &amp;&amp; page.dataLayerClientlibIncluded}&quot; data-sly-call=&quot;${clientlib.js @ categories=&amp;#39;core.forms.components.commons.v1.datalayer&amp;#39;, async=true}&quot;>&lt;/sly>
+       &lt;/sly>
+       
+       &quot;&#39;
+   
+   The `customfooterlibs.html` は JavaScript で使用されます。
+
+1. [パイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=ja)して変更をデプロイします。
+
+### Sites でフォーム分析ルールをFormsに有効化 {#bind-forms-analytics-rules-to-forms-in-sites}
+
+1. 次にアクセス： **Adobe Experience Platform Data Collection**.
+1. クリック **タグ** は左側にあります。
+1. 以下の画像に示すように、URL を持つ環境のプログラム ID でプロジェクトを検索します。 `https://author-p45921-e175111-cmstg.adobeaemcloud.com/index.html`、プログラム ID は `45921`.
+
+   ![Search-your-form-in-data-collection](/help/forms/assets/aep-data-collection.png)
+
+1. の設定を追加 **フォームルール** および **データ要素** 以下に示すように。
+
+#### フォームルールを追加 {#form-rules}
+
+1. フォームを選択して、 **新しいプロパティ** は右上にあるか、フォームをクリックします。
+1. プロパティページで、「 **ルール** フォームのイベントを選択します。以下の例では、次のようになります。 **フォームイベント**.
+
+   ![Search-your-form-in-data-collection](/help/forms/assets/aep-form-event-properties.png)
+
+1. フォームのすべてのイベントを選択し、 **コピー** 右上のパネルにある
+1. コピーした後、 **ルールをコピー** ポップアップが表示され、サイトページを project-id で検索してフォームルールを貼り付けることができます。
+
+   ![Copy-form-rules](/help/forms/assets/copy-form-rules.png)
+
+1. クリック **コピー** をクリックして、フォームルールをサイトページに貼り付けます。
+
+#### データ要素を追加 {#data-elements}
+
+1. フォームを選択して、 **新しいプロパティ** は右上にあるか、フォームをクリックします。
+1. プロパティページで、「 **データ要素** フォームのイベントを選択します。
+1. フォームのすべてのイベントを選択し、 **コピー** は右上のレールに配置されています。
+1. コピーした後、 **ルールをコピー** ポップアップが表示され、サイトページを project-id で検索してフォームルールを貼り付けることができます。
+1. クリック **コピー** をクリックして、フォームルールをサイトページに貼り付けます。
+
+   ![Form-data-elements](/help/forms/assets/form-data-elements.png)
+
+上記の手順でフォームとサイトのルールをバインドしたら、次の手順を実行して、 Analytics を Sites ページのアダプティブフォームに対して有効にします。
+
+1. クリック **公開フロー** 左側に
+1. クリック **ライブラリを追加** をクリックし、任意の名前を入力します。
+1. Adobe Analytics の **環境** 右側のドロップダウンで、「 」を選択します。 **開発**.
+1. 「**Add All Changed Resources**」をクリックします。
+1. クリック **開発用に保存およびビルド**.
+
+![publish-to-development](/help/forms/assets/publish-to-dev.png)
