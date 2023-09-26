@@ -1,7 +1,7 @@
 ---
 title: はじめに —Edge Delivery Services
-description: はじめに —Edge Delivery Services
-source-git-commit: 22a3795340add4ae29ec690b41baef96e8fb4adc
+description: はじめに —Edge Delivery Services。
+source-git-commit: 6334efceb9abae560ae77c133df1a70ffb438e6a
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Edge 配信を活用すると、次のことができます。
 
 エッジ配信は、Web サイト上でのコンテンツのオーサリング方法を柔軟に高めることができる、合成可能なサービスのセットです。 前述のように、 [AEM authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) および [ドキュメントベースのオーサリング](https://www.hlx.live/docs/authoring).
 
-例えば、Microsoft Word ドキュメントや Google ドキュメントから直接コンテンツを使用できます。 つまり、これらのソースからのドキュメントは、Web サイト上のページになることがあります。 さらに、見出し、リスト、画像、フォント要素はすべて、初期ソースから Web サイトに転送できます。 新しいコンテンツは、再構築プロセスなしで即座に追加されます。
+例えば、Microsoft Word またはGoogle Docs から直接コンテンツを使用できます。 つまり、これらのソースからのドキュメントは、Web サイト上のページになることがあります。 さらに、見出し、リスト、画像、フォント要素はすべて、初期ソースから Web サイトに転送できます。 新しいコンテンツは、再構築プロセスなしで即座に追加されます。
 
 Edge 配信では GitHub を活用するので、顧客は GitHub リポジトリから直接コードを管理およびデプロイできます。 例えば、 GoogleドキュメントまたはMicrosoft Word にコンテンツを書き込み、 GitHub で CSS と JavaScript を使用してサイトの機能を開発できます。 準備が整ったら、Sidekickブラウザー拡張機能を使用して、コンテンツの更新をプレビューおよび公開できます。
 
