@@ -2,12 +2,13 @@
 title: オーサリングに関する概念
 description: オーサー環境、プレビュー環境およびパブリッシュ環境を使用したAEMでのオーサリングに関する概念について説明します。
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 37%
 
 ---
+
 
 # オーサリングに関する概念 {#authoring-concepts}
 
@@ -26,6 +27,8 @@ AEM インストールは、通常、少なくとも次の 2 つの環境で構�
 ![オーサー、パブリッシャー、ディスパッチャーの模式図](/help/sites-cloud/authoring/assets/author-publish.png)
 
 オーサー環境では、AEMの機能はAEMオーサリングユーザーインターフェイスを通じて使用できます。 パブリッシュ環境では、ユーザーが使用できるインターフェイスの全体的なルックアンドフィールをデザインします。
+
+{{edge-delivery-authoring}}
 
 ## オーサー環境 {#author-environment}
 

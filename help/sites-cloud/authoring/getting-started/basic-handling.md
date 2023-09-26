@@ -2,12 +2,13 @@
 title: 基本操作
 description: AEM の操作とその基本的な使用方法の習得
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2975'
 ht-degree: 88%
 
 ---
+
 
 # 基本操作 {#basic-handling}
 
@@ -17,6 +18,8 @@ ht-degree: 88%
 >
 >* 一部の機能はすべてのコンソールで使用できるわけではなく、一部のコンソールでしか使用できない追加機能もあります。個々のコンソールとそれに関連する機能に関する具体的な情報については、他のページで詳しく説明します。
 >* AEM 全体で（特に、[コンソールを使用する](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)場合と[ページを編集する](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)場合に）、キーボードショートカットを利用できます。
+
+{{edge-delivery-authoring}}
 
 ## タッチ対応 UI {#a-touch-enabled-ui}
 

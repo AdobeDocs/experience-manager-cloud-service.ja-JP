@@ -2,12 +2,13 @@
 title: ページのコンテンツの編集
 description: ページを作成したら、コンテンツを編集して、必要な更新を行うことができます
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2983'
 ht-degree: 84%
 
 ---
+
 
 # ページのコンテンツの編集 {#editing-page-content}
 
@@ -31,6 +32,8 @@ ht-degree: 84%
 >[!TIP]
 >
 >**編集**&#x200B;モードでは、コンテンツのリンクは表示されますが、**アクセスできません**。コンテンツのリンクを使用して移動する場合は、[プレビューモード](#previewing-pages)を使用します。
+
+{{edge-delivery-authoring}}
 
 ## ページツールバー {#page-toolbar}
 

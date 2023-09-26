@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 44492597085c52eb715a8ecd19a2c4aa884ae12f
+source-git-commit: af7a4a3e23a07e4768192ae7d6308e3c6036ceb6
 workflow-type: tm+mt
-source-wordcount: '4310'
+source-wordcount: '4321'
 ht-degree: 92%
 
 ---
@@ -741,6 +741,9 @@ ht-degree: 92%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [移行](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
++ エッジ配信サービス {#edge-delivery}
+   + [Edge 配信の概要](/help/edge/overview.md)
+   + [エッジ配信の使用](/help/edge/using.md)
 + ヘッドレス {#headless}
    + [ヘッドレス CMS とは](/help/headless/what-is-headless.md)
    + [AEM ヘッドレスの概要](/help/headless/introduction.md)

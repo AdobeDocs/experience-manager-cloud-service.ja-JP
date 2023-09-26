@@ -2,12 +2,13 @@
 title: ページのオーサリングのクイックスタートガイド
 description: ページコンテンツのオーサリングに初めて取り組む際に役立つ概要レベルのクイックガイドです。
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '1568'
 ht-degree: 86%
 
 ---
+
 
 # ページのオーサリングのクイックスタートガイド {#quick-guide-to-authoring-pages}
 
@@ -20,6 +21,8 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
 * [オーサリングの概念](/help/sites-cloud/authoring/getting-started/concepts.md)
 * [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)
+
+{{edge-delivery-authoring}}
 
 ## クイックヒント {#a-few-quick-hints}
 

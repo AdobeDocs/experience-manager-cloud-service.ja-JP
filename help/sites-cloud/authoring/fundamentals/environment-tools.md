@@ -2,16 +2,19 @@
 title: オーサリング環境とツール
 description: AEM のオーサリング環境は、コンテンツを編成および編集するための様々なメカニズムを提供しています
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2150'
 ht-degree: 92%
 
 ---
 
+
 # オーサリング環境とツール {#authoring-the-environment-and-tools}
 
 AEM のオーサリング環境は、コンテンツを編成および編集するための様々なメカニズムを提供しています. 提供されるツールには、様々なコンソールおよびページエディターからアクセスします。
+
+{{edge-delivery-authoring}}
 
 ## サイトの管理 {#managing-your-site}
 

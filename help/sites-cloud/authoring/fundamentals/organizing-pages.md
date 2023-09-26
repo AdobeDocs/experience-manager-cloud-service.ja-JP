@@ -2,12 +2,13 @@
 title: ページの作成と整理
 description: AEMでページを作成および管理して、Web サイトを整理する方法について説明します。
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2543'
 ht-degree: 86%
 
 ---
+
 
 # ページの作成と整理 {#creating-and-organizing-pages}
 
@@ -26,6 +27,8 @@ ht-degree: 86%
 >[!TIP]
 >
 >Web サイトコンソールから使用できる[キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)が多数あり、ページをより効率的に整理できます。
+
+{{edge-delivery-authoring}}
 
 ## Web サイトの整理 {#organizing-your-website}
 
