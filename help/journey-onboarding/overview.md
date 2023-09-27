@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service オンボーディングジャーニーの概要
 description: AEM as a Cloud Service のオンボーディングプロセスのガイド付きジャーニーの概要については、ここから始めてください。
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: d76a0782c72045698e8a595574f9e4c64c3ebaff
+source-git-commit: 7553d3c9f82c8b675af5f704a48bc316ba0d4885
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 96%
+source-wordcount: '1221'
+ht-degree: 95%
 
 ---
 
@@ -86,7 +86,7 @@ AEM as a Cloud Service を使い始めると、学ぶべきことがたくさん
 
 >[!NOTE]
 >
->Edge Delivery Servicesは、作成者がすばやく更新および公開でき、新しいサイトが迅速に起動する、迅速な開発環境を可能にする、合成可能な新しいサービスセットです。 Edge 配信サービスについて詳しくは、 [はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
+>Edge Delivery Servicesは、柔軟で迅速な開発環境を可能にする、合成可能な新しいサービスのセットです。作成者は迅速に更新および公開でき、新しいサイトは迅速に起動します。 Edge 配信サービスについて詳しくは、 [はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
 
 ## 次のステップ {#what-is-next}
 
