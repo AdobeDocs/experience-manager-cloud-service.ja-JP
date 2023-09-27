@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: af7a4a3e23a07e4768192ae7d6308e3c6036ceb6
+source-git-commit: 18d63a9ed1fd52ebcd696a4ec5f635350cacb1c0
 workflow-type: tm+mt
-source-wordcount: '4321'
+source-wordcount: '4268'
 ht-degree: 92%
 
 ---
@@ -331,20 +331,6 @@ ht-degree: 92%
          + [削除に関する考慮事項](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [解析構造](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [キーボードショートカット](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
-         + [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-         + [コンテンツフラグメントと GraphQL のヘッドレス配信](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
-         + [インスタンスに対するコンテンツフラグメント機能の有効化](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
-         + [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
-         + [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
-         + [コンテンツフラグメントの管理](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
-         + [バリエーション - フラグメントコンテンツのオーサリング](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
-         + [コンテンツフラグメントを関連付けられたコンテンツ](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)
-         + [メタデータ - フラグメントのプロパティ](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
-         + [コンテンツフラグメント - 削除に関する考慮事項](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
-         + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
-         + [構造ツリー](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
-         + [プレビュー - JSON 表現](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
-         + [コンテンツフラグメントコンソール - キーボードショートカット](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
       + サイト作成 {#site-creation}
          + [新しいサイトの作成](/help/sites-cloud/administering/site-creation/create-site.md)
          + [フロントエンドパイプラインの有効化](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
