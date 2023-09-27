@@ -3,7 +3,7 @@ title: AMS から AEM as a Cloud Service への Dispatcher 設定の移行
 description: AMS から AEM as a Cloud Service への Dispatcher 設定の移行
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 24c6e5e78e3e1b30e4becfad2f4f6e57e75ad4e9
 workflow-type: tm+mt
 source-wordcount: '1451'
 ht-degree: 83%
@@ -58,7 +58,7 @@ AMS 設定を変換する方法を順を追って説明します。ここでは�
 
 `base_rewrite.rules` と `xforwarded_forcessl_rewrite.rules` という名前のファイルをすべて削除します。また、それらを参照する仮想ホストファイル内の `Include` ステートメントを削除することを忘れないでください。
 
-If `conf.d/rewrites` に単一のファイルが含まれている場合は、名前をに変更します。 `rewrite.rules` そして、必ず適応させる `Include` 仮想ホストファイル内のそのファイルを参照するステートメント。
+次の場合 `conf.d/rewrites` に単一のファイルが含まれている場合は、名前をに変更します。 `rewrite.rules` そして、必ず適応させる `Include` 仮想ホストファイル内のそのファイルを参照するステートメント。
 
 ただし、フォルダーに複数の仮想ホスト固有のファイルが含まれている場合は、そのファイルの内容を、仮想ホストファイル内のファイルを参照する `Include` ステートメントにコピーする必要があります。
 
@@ -68,7 +68,7 @@ If `conf.d/rewrites` に単一のファイルが含まれている場合は、�
 
 `ams_default.vars` という名前のファイルをすべて削除し、それらを参照する仮想ホストファイル内の `Include` ステートメントを忘れずに削除してください。
 
-If `conf.d/variables` に単一のファイルが含まれている場合は、名前をに変更します。 `custom.vars` そして、必ず適応させる `Include` 仮想ホストファイル内のそのファイルを参照するステートメント。
+次の場合 `conf.d/variables` に単一のファイルが含まれている場合は、名前をに変更します。 `custom.vars` そして、必ず適応させる `Include` 仮想ホストファイル内のそのファイルを参照するステートメント。
 
 ただし、フォルダーに複数の仮想ホスト固有のファイルが含まれている場合は、そのファイルの内容を、仮想ホストファイル内のファイルを参照する `Include` ステートメントにコピーする必要があります。
 
@@ -100,7 +100,7 @@ $ validator httpd .
 
 ### ファームファイルの名前を変更する
 
-`conf.d/enabled_farms` 内のすべてのファームは、`*.farm` のパターンに合わせて変更する必要があります。例えば、
+`conf.dispatcher.d/enabled_farms` 内のすべてのファームは、`*.farm` のパターンに合わせて変更する必要があります。例えば、
 `customerX_farm.any` という名前のファームファイルは、`customerX.farm` に変更する必要があります。
 
 ### キャッシュを確認する
@@ -131,7 +131,7 @@ $include "../cache/default_invalidate.any"
 
 `ams_` のプレフィックスが付いたファイルを削除します。
 
-If `conf.dispatcher.d/clientheaders` サフィックス付きの単一のファイルが含まれるようになりました `_clientheaders.any`を呼び出す場合は、名前をに変更します。 `clientheaders.any` そして、必ず適応させる `$include` ファームファイル内のそのファイルを参照するステートメントも参照します。
+次の場合 `conf.dispatcher.d/clientheaders` サフィックス付きの単一のファイルが含まれるようになりました `_clientheaders.any`を呼び出す場合は、名前をに変更します。 `clientheaders.any` そして、必ず適応させる `$include` ファームファイル内のそのファイルを参照するステートメントも参照します。
 
 ただし、フォルダーにそのパターンを持つファーム固有のファイルが複数含まれている場合は、そのファイルの内容を、ファームファイル内のファイルを参照する `$include` ステートメントにコピーする必要があります。
 
@@ -156,7 +156,7 @@ $include "../clientheaders/default_clientheaders.any"
 
 `ams_` のプレフィックスが付いたファイルを削除します。
 
-If `conf.dispatcher.d/filters` に単一のファイルが含まれている場合は、名前をに変更する必要があります。
+次の場合 `conf.dispatcher.d/filters` に単一のファイルが含まれている場合は、名前をに変更する必要があります。
 `filters.any` そして、必ず適応させる `$include` ファームファイル内のそのファイルを参照するステートメントも参照します。
 
 ただし、フォルダーにそのパターンを持つファーム固有のファイルが複数含まれている場合は、そのファイルの内容を、ファームファイル内のファイルを参照する `$include` ステートメントにコピーする必要があります。
@@ -195,7 +195,7 @@ $include "../renders/default_renders.any"
 
 `ams_` のプレフィックスが付いたファイルを削除します。
 
-If `conf.dispatcher.d/virtualhosts` に単一のファイルが含まれている場合は、名前をに変更する必要があります。
+次の場合 `conf.dispatcher.d/virtualhosts` に単一のファイルが含まれている場合は、名前をに変更する必要があります。
 `virtualhosts.any` そして、必ず適応させる `$include` ファームファイル内のそのファイルを参照するステートメントも参照します。
 
 ただし、フォルダーにそのパターンを持つファーム固有のファイルが複数含まれている場合は、そのファイルの内容を、ファームファイル内のファイルを参照する `$include` ステートメントにコピーする必要があります。
