@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service オンボーディングジャーニーの概要
 description: AEM as a Cloud Service のオンボーディングプロセスのガイド付きジャーニーの概要については、ここから始めてください。
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
-workflow-type: ht
-source-wordcount: '1172'
-ht-degree: 100%
+source-git-commit: d76a0782c72045698e8a595574f9e4c64c3ebaff
+workflow-type: tm+mt
+source-wordcount: '1220'
+ht-degree: 96%
 
 ---
 
@@ -83,6 +83,10 @@ AEM as a Cloud Service を使い始めると、学ぶべきことがたくさん
 | 8 | [AEM 製品プロファイルの割り当て](assign-profiles-aem.md) | システム管理者が AEM as a Cloud Service の製品プロファイルにチームメンバーを割り当てる方法について説明します。 | システム管理者 |
 | 9 | [開発者およびデプロイメントマネージャーのタスク](developers.md) | オプション - デベロッパーとして Cloud Manager Git にアクセスして管理する方法と、デプロイメントマネージャーとして Cloud Manager でパイプラインを設定してコードをデプロイする方法について説明します。 | 開発者およびデプロイメントマネージャー |
 | 10 | [AEM ユーザーのタスク](aem-users.md) | オプション - AEM オーサーとして AEM as a Cloud Service インスタンスにアクセスする方法と、AEM as a Cloud Service 用コンテンツのオーサリング方法について説明します。 | AEM ユーザー |
+
+>[!NOTE]
+>
+>Edge Delivery Servicesは、作成者がすばやく更新および公開でき、新しいサイトが迅速に起動する、迅速な開発環境を可能にする、合成可能な新しいサービスセットです。 Edge 配信サービスについて詳しくは、 [はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
 
 ## 次のステップ {#what-is-next}
 
