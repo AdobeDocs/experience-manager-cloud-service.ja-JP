@@ -5,7 +5,7 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 39ea959cb0a0568fd94ca455be935228479c0415
+source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Adobe AnalyticsをアダプティブFormsに設定する {#setup-adobe-analytics-to-aem-forms}
 
-AEM Forms Analytics レポートの場合、まず、Experience Cloud設定の自動化を通じてAdobe AnalyticsをAEM Formsに統合します。 Adaptive FormsでのExperience Cloud設定の自動化では、データ集計とインサイト生成を効率化するために、Adobe Analyticsライセンス、データ収集 ( 旧Adobe版 Launch)、Experience Platform LaunchAPI との統合が必要です。 訪問 [アダプティブフォームのAdobe Analyticsを有効にする (Experience Cloud設定の自動化を使用 )](/help/forms/forms-experience-cloud-setup-automation.md) を参照してください。
+AEM Forms Analytics レポートの場合、まず、Experience Cloud設定の自動化を通じてAdobe AnalyticsをAEM Formsに統合します。 Adaptive FormsでのExperience Cloud設定の自動化では、データ集計とインサイト生成を効率化するために、Adobe Analyticsライセンス、データ収集 ( 旧Adobe版 Launch)、Experience Platform LaunchAPI との統合が必要です。 訪問 [アダプティブフォームのAdobe Analyticsを有効にする (Experience Cloud設定の自動化を使用 )](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md) を参照してください。
 
 ## アダプティブForms Adobe Analyticsレポートの表示 {#view-adobe-analytics-report}
 

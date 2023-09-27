@@ -3,7 +3,7 @@ title: AEM Forms と Adobe Analytics を統合する方法
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: true
-source-git-commit: 3ff64646b7d7c03374bc6deadbdeb7bc27dbbacf
+source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
 workflow-type: tm+mt
 source-wordcount: '1750'
 ht-degree: 83%
@@ -17,7 +17,7 @@ ht-degree: 83%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 | AEM as a Cloud Service | この記事 |
 
-<span class="preview"> このドキュメントでは、アダプティブフォームでAdobe Analyticsを有効にする手動手順について説明します。 ただし、Adobeでは、 [アダプティブフォームのAdobe Analyticsを有効にする (Experience Cloud設定の自動化を使用 )](/help/forms/forms-experience-cloud-setup-automation.md). </span>
+<span class="preview"> このドキュメントでは、アダプティブフォームでAdobe Analyticsを有効にする手動手順について説明します。 ただし、Adobeでは、 [アダプティブフォームのAdobe Analyticsを有効にする (Experience Cloud設定の自動化を使用 )](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md). </span>
 
 AEM Forms は、[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=ja) と統合されているので、公開済みフォームのパフォーマンス指標を取得および追跡できます。これらの指標を分析する目的は、ビジネスユーザーがエンドユーザーの行動に関するインサイトを得て、データ取得のエクスペリエンスを最適化できるようにすることです。 Adobe Analytics for Adaptive Formsを介して、ログインしているユーザーとログインしていない（匿名）ユーザーの両方の動作を取得および追跡できます。
 

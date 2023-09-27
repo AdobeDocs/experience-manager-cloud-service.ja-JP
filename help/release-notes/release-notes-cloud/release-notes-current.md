@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 407afc27911c507d3662fa4897b29e8187bbec7a
+source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
 workflow-type: tm+mt
 source-wordcount: '1934'
 ht-degree: 13%
@@ -116,7 +116,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * [**Google reCAPTCHA エンタープライズサポート**](/help/forms/captcha-adaptive-forms-core-components.md)：アダプティブフォームでGoogle reCAPTCHA Enterprise を使用して、不正なアクティビティやスパムに対する保護を強化し、より安全なユーザーエクスペリエンスを提供します。 高度なリスク分析とシームレスな統合により、本物のユーザーは、ボットを効果的にブロックしながらフォームを簡単に送信できます。
 
-* [**Forms向けのExperience Cloud設定自動化機能を備えたAdobe Analytics**](/help/forms/forms-experience-cloud-setup-automation.md)：いくつかのボタンをフリップして、Experience Cloud設定の自動化でAdobe Analyticsを有効にできるようになりました。 これにより、AEM Formsas a Cloud ServiceをExperience PlatformタグとAdobe Analyticsに接続して、発行されたフォームのパフォーマンス指標を取得し、追跡できます。
+* [**Forms向けのExperience Cloud設定自動化機能を備えたAdobe Analytics**](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)：いくつかのボタンをフリップして、Experience Cloud設定の自動化でAdobe Analyticsを有効にできるようになりました。 これにより、AEM Formsas a Cloud ServiceをExperience PlatformタグとAdobe Analyticsに接続して、発行されたフォームのパフォーマンス指標を取得し、追跡できます。
 
 * [**Adobe AnalyticsアダプティブFormsのレポートテンプレート**](/help/forms/view-understand-aem-forms-analytics-reports.md):Forms as a Cloud ServiceがAdobe Analyticsレポート OOTB を提供するようになりました。 これにより、フォームのパフォーマンスを簡単に理解できます。フォームレベルの指標を使用すると、レンディション、訪問者、送信、平均記入時間など、複数の主要業績評価指標（KPI）に対するフォームのパフォーマンスに関するインサイトを得ることができます。ユーザーの行動やフィードバックを追跡することで、フォームの混乱の原因となっている領域を特定し、フォームのデザインと機能に関するガイドを改善できます。
 
