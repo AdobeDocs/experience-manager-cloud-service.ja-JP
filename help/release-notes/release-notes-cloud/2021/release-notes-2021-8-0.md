@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.8.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.8.0 リリースのリリースノート。'
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f956b8379b5b93bc00e25f0eec641430c5565e34
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 94%
+source-wordcount: '1024'
+ht-degree: 55%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->ここから、以前のバージョン（例えば、2020 年、2021 年のバージョンなど）のリリースノートに移動できます。
+>ここから、以前のバージョンのリリースノートに移動できます。 例えば、2020 および 2021 の場合は、
 
 >[!NOTE]
 >
@@ -34,12 +34,12 @@ ht-degree: 94%
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-* デジタルアセットをリンクとして共有する場合、ユーザーは URL をクリップボードにすぐにコピーできます。この機能強化により、アセットをより迅速かつ便利に共有できます。この機能により、迅速で便利なアセット共有が可能になります。
+* デジタルアセットをリンクとして共有する場合、ユーザーは URL をすぐにクリップボードにコピーできます。 この機能強化により、アセットをより迅速かつ便利に共有できます。この機能により、迅速で便利なアセット共有が可能になります。
 
   ![アセットをリンクとして共有する場合の「URL をコピー」オプション](/help/assets/assets/link-share-copy-URL-option.png)
   *図：アセットをリンクとして共有する場合、URL をコピーして別々に共有できるようになりました。*
 
-* TXT ファイルをアップロードすると、アセットマイクロサービスによって自動的にサムネールが生成されます。PNG サムネールは TXT ファイルのレンディションで、ユーザーがファイルを開かずにコンテンツやファイルをある程度識別できるようにするものです。この機能は設定が不要で、デフォルトで動作します。
+* TXT ファイルをアップロードすると、アセットマイクロサービスによって自動的にサムネールが生成されます。 PNG サムネールは、ユーザーがファイルを開かずに、コンテンツやファイルをある程度識別するのに役立つ TXT ファイルのレンディションです。 この機能は設定が不要で、デフォルトで動作します。
 
   ![TXT ファイルのレンディションが [!DNL Assets] により PNG 形式で自動的に生成される](/help/assets/assets/thumbnail-rendition-txt-file.png)
   *図：TXT ファイルのレンディションが自動的に生成されるので、ファイルを開かずにある程度識別できるようになります。*
@@ -62,23 +62,23 @@ ht-degree: 94%
 
 * 自動フォーム変換サービスで、[イタリア語とポルトガル語の PDF フォームをアダプティブフォームに変換](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=ja#language-specific-meta-model)できます。
 
-* **AcroForm ベースのレコードのドキュメント**：AEM Forms as a Cloud Service では、XFA ベースのフォームテンプレート以外に、[Adobe Acrobat フォーム PDF（AcroForm PDF）](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ja)をレコードのドキュメントのテンプレートとして使用できます。
+* **AcroForm ベースのレコードのドキュメント**：AEM Forms as a Cloud Service では、XFA ベースのフォームテンプレート以外に、[Adobe Acrobat フォーム PDF（AcroForm PDF）](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ja)をレコードのドキュメントのテンプレートとして使用できます。
 
-* **Microsoft Azure データストアコネクタ**：[フォームデータモデルを Microsoft Azure Storage に接続できるようになりました](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=ja)。これにより、アダプティブフォームのデータを取得し、BLOB としてMicrosoft Azure Storage に保存することができます。
+* **Microsoft® Azure データストアコネクタ**：次が可能です。 [フォームデータモデルをMicrosoft® Azure ストレージに接続する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). これにより、アダプティブフォームのデータを取得し、BLOB としてMicrosoft® Azure Storage に保存することができます。
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms}
 
-* **アダプティブフォームでの Adobe Sign の役割の使用**：ビジネスおよびエンタープライズサービスレベルの Adobe Sign では、ワークフロー要件に適切に合致するように、契約書受信者の役割を署名者以外にも拡大できます。契約書の受信者ごとに、アダプティブフォームでの自分の役割を設定できるようになりました。デフォルトの役割は署名者です。
+* **アダプティブフォームでのAdobe Signの役割の使用** - Adobe Sign for business and enterprise service levels では、契約受信者の役割を、署名者だけでなく拡張して、ワークフロー要件に合わせることができます。 これで、契約の各受信者がアダプティブフォームでの役割を設定できるようになり、署名者がデフォルトの役割になります。
 
-* **Analytics for Adaptive Forms**：Adobe Analytics for Adaptive Forms でエンドユーザーの行動を捉え追跡して、エンドユーザーに関するインサイトを収集できるようになりました。十分な情報に基づいて決定を行い、エンドユーザーのエクスペリエンスを向上させることができます。
+* **Analytics for Adaptive Forms** - Adobe Analyticsを介してエンドユーザーの行動をキャプチャおよび追跡し、アダプティブFormsでエンドユーザーのインサイトを収集できるようになりました。 データに基づく情報に基づく意思決定をおこない、エンドユーザーエクスペリエンスを向上させるのに役立ちます。
 
-* **AEM Forms と Microsoft Dynamics および Salesforce.com との簡単な接続**：Microsoft Dynamics と Salesforce.com のデータソース設定およびデータモデルが標準で提供されるので、開発者が Microsoft Dynamics と Salesforce.com をアダプティブフォームのデータソースとしてより迅速かつ簡単に設定できるようになりました。
+* **AEM FormsをMicrosoft® Dynamics およびSalesforce.comと簡単に接続**  — このサービスは、Microsoft® Dynamics およびSalesforce.com用の標準のデータソース設定およびデータモデルを提供します。 これにより、開発者は、Microsoft® Dynamics とSalesforce.comをアダプティブフォームのデータソースとしてより迅速かつ簡単に設定できます。
 
 ## CIF アドオン {#cloud-services-cif}
 
 ### 新機能 {#what-is-new-cif}
 
-* 新しいカテゴリピッカー UI により、ユーザーエクスペリエンス、効率および複雑な製品カタログのサポートが向上しました。
+* ユーザーエクスペリエンスの向上、効率の向上、複雑な製品カタログのサポートの向上を実現する新しいカテゴリピッカー UI
 
   ![新しいカテゴリピッカー](/help/assets/CIF/category-picker.png)
 
@@ -95,16 +95,16 @@ AEM as a Cloud Service 2021.8.0 の Cloud Manager のリリース日は 2021年8
 
 ### 新機能 {#what-is-new-aug}
 
-* Cloud Service ユーザーは、Cloud Manager でサービスレベル契約（SLA）レポートを表示できるようになりました。これは、今後数か月で段階的に利用可能になる予定です。
-詳しくは、[SLA レポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html?lang=ja)を参照してください。
+* Cloud Service ユーザーは、Cloud Manager でサービスレベル契約（SLA）レポートを表示できるようになりました。これは今後数か月で段階的に利用可能になる予定です。
+詳しくは、 [SLA レポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/sla-reporting.html).
 
-* IndexType および `IndexDamAssetLucene` 品質ルールのタイプと重大度が変更されました。これらはどちらも、*重大度*&#x200B;が「ブロッカー」のバグになりました。
+* IndexType および `IndexDamAssetLucene` 品質ルールのタイプと重大度が変更されました。これらは現在、両方ともブロッカーのバグです *重大度*.
 
-* 新しい Oak インデックス品質ルールが導入されて、非同期設定と Tika 設定に対応するようになりました。
+* 非同期および Tika 設定をカバーする新しい Oak インデックス品質ルールが導入されました。
 
 * プログラムごとの SSL 証明書の最大数が 50 に増えました。
 
-* セルフサービス機能により、ユーザーが Cloud Manager UI を使用して複数のリポジトリーを作成および管理できるようになりました。
+* ユーザーが Cloud Manager UI を使用して複数のリポジトリを作成および管理できるセルフサービス機能。
 
 * SonarQube が Git 履歴データを不必要に読み取っていました。大規模なコードベースでは、これにより、ビルドパフォーマンスが不必要に低下することがありました。
 
@@ -114,11 +114,11 @@ AEM as a Cloud Service 2021.8.0 の Cloud Manager のリリース日は 2021年8
 
 ### バグ修正 {#bug-fixes-aug}
 
-* 最新のリリースが現在のリリースより前の場合は、更新可能ステータスは表示されるべきではありません。
+* 最新リリースが現在のリリースよりも小さい場合は、「更新可能」ステータスが表示されません。
 
-* 名前が非常に長い新規組織で、初回のオンボーディングが失敗していました。
+* 名前が長い新規組織で、初回のオンボーディングが失敗していた問題を修正しました。
 
-* 何らかの理由でパイプラインが 2 回トリガーされた場合、「*パイプライン実行ステータスを更新できませんでした*」エラーで、いずれかの実行が失敗します。
+* 何らかの理由でパイプラインが 2 回トリガーされた場合、実行の 1 つが *`cannot update pipeline execution status`* エラー。
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 
@@ -128,7 +128,7 @@ AEM as a Cloud Service 2021.8.0 の Cloud Manager のリリース日は 2021年8
 
 ### バグ修正 {#bug-fixes-ctt}
 
-* 一部のユーザーがターゲットインスタンスに移行されない場合がありました。この修正を適用するには、ターゲット AEM as a Cloud Service インスタンスに CTT v1.5.6 と aem-ethos-tools 1.2.354 以降のバージョンが必要です。
+* 一部のユーザーがターゲットインスタンスに移行されない場合がありました。 この修正を得るには、ターゲットAEMas a Cloud Serviceインスタンス上の aem-ethos-tools 1.2.354 以降のバージョンと共に、CTT v1.5.6 が必要です。
 
 * パブリッシュインスタンスへの取り込み時に、「**取り込みを停止**」ボタンが無効になっていました。パブリッシュへの取り込み時には Mongo の復元ステップがないので、これは必要ありません。
 
