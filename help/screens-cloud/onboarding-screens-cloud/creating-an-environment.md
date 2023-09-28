@@ -2,10 +2,10 @@
 title: 環境の作成
 description: ここでは、Cloud Manager で Screens as a Cloud Service 用の環境を作成する方法について説明します。
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 92%
+source-wordcount: '203'
+ht-degree: 39%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 92%
 この節では、Cloud Manager でプログラムの環境を作成する方法について説明します。
 
 >[!NOTE]
->詳しくは、 [Cloud Manager での環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja) を参照して、環境を作成する方法を確認してください。
+>詳しくは、 [Cloud Manager での環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=ja) を参照して、環境を作成する方法を確認してください。
 
 ## 目的 {#objective}
 
@@ -22,22 +22,22 @@ ht-degree: 92%
 
 ## Cloud Manager で Screens プロジェクトの環境を作成する手順 {#steps-branch-creation}
 
-プロジェクトの作成が正常に完了したら、Cloud Manager の概要ページでコールトゥアクションカードが更新されます。
+プロジェクトの作成が正常に完了したら、 Cloud Manager の概要ページで、コールトゥアクションカードの更新を確認できます。
 
-1. Cloud Manager に移動し、アイコンを選択して Cloud Manager の&#x200B;**概要**&#x200B;ページに移動します。
+1. Cloud Manager に移動し、 Cloud Manager の **概要** ページに貼り付けます。
 
-1. Cloud Manager の&#x200B;**概要**&#x200B;ページで「**環境を追加**」をクリックします。
+1. クリック **環境を追加** Cloud Manager の **概要** ページに貼り付けます。
 
    ![画像](/help/screens-cloud/assets/onboarding/add-environ1.png)
 
-1. **環境を追加**&#x200B;ダイアログボックスで環境の詳細を選択し、「**保存**」をクリックします。
+1. 環境の詳細を **環境を追加** ダイアログボックスを開き、 **保存**.
 
    ![画像](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
-1. 環境の追加が完了したら、コールトゥアクションカードが更新されます（下図を参照）。
+1. 環境の追加が完了すると、コールトゥアクションカードが更新されます（下図を参照）。
 
    ![画像](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
 ## 次の手順 {#whats-next}
 
-Cloud Manager でプログラムの環境をセットアップする方法を理解したら、オンボーディングプロセスの次のステップである[パイプラインの実行](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md)に進みます。
+Cloud Manager でプログラムの環境を設定する方法を学習したら、次に進む準備が整いました。 オンボーディングプロセスの次の手順は次のとおりです。 [パイプラインの実行](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).

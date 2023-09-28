@@ -2,10 +2,10 @@
 title: プログレッシブ web アプリケーション機能の有効化
 description: AEM Sites では、コンテンツ作成者がコーディングの代わりにシンプルな設定で、任意のサイトに対してプログレッシブ web アプリケーション機能を有効にすることができます。
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
 workflow-type: tm+mt
-source-wordcount: '1997'
-ht-degree: 90%
+source-wordcount: '2004'
+ht-degree: 61%
 
 ---
 
@@ -22,31 +22,31 @@ ht-degree: 90%
 >* キャッシュ方法の理解
 >* 開発チームによるサポート
 >
->この機能を使用する前に、開発チームと話し合って、プロジェクトに最適な使用方法を定義することをお勧めします。
+>この機能を使用する前に、Adobeは開発チームと話し合い、プロジェクトに最適な使用方法を定義することをお勧めします。
 
 ## はじめに {#introduction}
 
-[プログレッシブ web アプリケーション（PWA）](https://developer.mozilla.org/ja-JP/docs/Web/Progressive_web_apps)を使用すると、AEM Sites のアプリケーションのような臨場感のあるエクスペリエンスを、ユーザーのコンピューターにローカルに保存し、オフラインでアクセスできるようになります。インターネット接続が切れた場合でも、外出中にサイトを閲覧できます。PWA を使用すると、ネットワークが失われたり不安定な状態になった場合でも、シームレスなエクスペリエンスを維持できます。
+[プログレッシブ web アプリケーション（PWA）](https://developer.mozilla.org/ja-JP/docs/Web/Progressive_web_apps)を使用すると、AEM Sites のアプリケーションのような臨場感のあるエクスペリエンスを、ユーザーのコンピューターにローカルに保存し、オフラインでアクセスできるようになります。インターネット接続が切れた場合でも、外出中にサイトを閲覧できます。PWAを使用すると、ネットワークが失われたり不安定な場合でもシームレスなエクスペリエンスを実現できます。
 
-コンテンツ作成者は、サイトの再コーディングは必要なく、サイトの[ページプロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md)の追加タブとして PWA プロパティを設定できます。
+サイトの記録を必要とする代わりに、コンテンツ作成者はPWAのプロパティを [ページのプロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md) サイトの
 
-* この設定を保存または公開すると、サイト上の PWA 機能を有効にする[マニフェストファイル](https://developer.mozilla.org/ja-JP/docs/Web/Manifest)と[サービスワーカー](https://developer.mozilla.org/ja-JP/docs/Web/API/Service_Worker_API)を書き出すイベントハンドラーがトリガーされます。
+* この設定は、保存または公開時に、トリガーに [マニフェストファイル](https://developer.mozilla.org/ja-JP/docs/Web/Manifest) および [サービスワーカー](https://developer.mozilla.org/ja-JP/docs/Web/API/Service_Worker_API) サイト上でPWA機能を有効にする
 * Sling マッピングは、サービスワーカーがアプリケーションのルートから提供されるように維持され、アプリケーション内でオフライン機能を可能にするコンテンツのプロキシ化を有効にします。
 
 PWA では、ユーザーはサイトのローカルコピーを保持するので、インターネットに接続していなくてもアプリケーションのような操作をおこなうことができます。
 
 >[!NOTE]
 >
->プログレッシブ web アプリケーションは発展中のテクノロジーであり、ローカルアプリケーションのインストールやその他の機能のサポート状況は[どのブラウザーを使用するかによって異なります。](https://developer.mozilla.org/ja-JP/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
+>プログレッシブ web アプリケーションは発展中のテクノロジーであり、ローカルアプリケーションのインストールやその他の機能のサポート状況は[どのブラウザーを使用するかによって異なります。](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary)
 
 ## 前提条件 {#prerequisites}
 
 サイトで PWA 機能を使用するには、プロジェクト環境に必要な要件が 2 つあります。
 
 1. [コアコンポーネント](#adjust-components)を使用してこの機能を利用する
-1. [Dispatcher ルールを調整](#adjust-dispatcher)して、必要なファイルを公開する
+1. [Dispatcher を調整する](#adjust-dispatcher) 必要なファイルを公開するルール
 
-これらは、作成者が開発チームと連携する必要がある技術的な手順です。これらの手順は、サイトごとに 1 回だけ必要です。
+これらは、作成者が開発チームと連携する必要がある技術的な手順です。 これらの手順は、サイトごとに 1 回だけ必要です。
 
 ### コアコンポーネントの使用 {#adjust-components}
 
@@ -58,13 +58,13 @@ PWA では、ユーザーはサイトのローカルコピーを保持するの�
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker,](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) which supports the PWA features.
 
- To do this, the developer will need to add the following link to the `customheaderlibs.html` file of your page component.
+ To do this, the developer adds the following link to the `customheaderlibs.html` file of your page component.
 
 ```xml
 <link rel="manifest" href="/content/<projectName>/manifest.webmanifest" crossorigin="use-credentials"/>
 ```
 
-The developer will also need to add the following link to the `customfooterlibs.html` file of your page component.
+The developer also adds the following link to the `customfooterlibs.html` file of your page component.
 
 ```xml
 <script>
@@ -82,7 +82,7 @@ The developer will also need to add the following link to the `customfooterlibs.
 
 ### Dispatcher の調整 {#adjust-dispatcher}
 
-PWA 機能は、`/content/<sitename>/manifest.webmanifest` ファイルを生成して使用します。デフォルトでは、 [dispatcher](/help/implementing/dispatcher/overview.md) では、このようなファイルを公開しません。 これらのファイルを公開するには、デベロッパーはサイトプロジェクトに次の設定を追加する必要があります。
+PWA 機能は、`/content/<sitename>/manifest.webmanifest` ファイルを生成して使用します。デフォルトでは、 [Dispatcher](/help/implementing/dispatcher/overview.md) では、このようなファイルを公開しません。 これらのファイルを公開するには、デベロッパーはサイトプロジェクトに次の設定を追加する必要があります。
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -91,7 +91,7 @@ File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filt
 /0102 { /type "allow" /extension "webmanifest" /path "/content/*/manifest" }
 ```
 
-プロジェクトに応じて、書き換えルールに様々なタイプの拡張を含めることができます。`webmanifest` 拡張は、リクエストを非表示にして `/content/<projectName>` にリダイレクトするルールを導入した場合に、書き換え条件を含めるのに便利です。
+プロジェクトに応じて、書き換えルールに様々なタイプの拡張機能を含めることができます。 `webmanifest` 拡張は、リクエストを非表示にして `/content/<projectName>` にリダイレクトするルールを導入した場合に、書き換え条件を含めるのに便利です。
 
 ```text
 RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
@@ -99,12 +99,12 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ## サイトの PWA の有効化 {#enabling-pwa-for-your-site}
 
-[前提条件](#prerequisites)が満たされれば、コンテンツ作成者は簡単にサイトの PWA 機能を有効にできます。次に、その方法の概要を示します。個々のオプションの詳細は「[詳細なオプション](#detailed-options)」節で説明されています。
+を使用 [前提条件](#prerequisites) を満たした場合、コンテンツ作成者はサイトへのPWA機能を簡単に有効にできます。 次に、その方法の概要を示します。個々のオプションについて詳しくは、の節を参照してください。 [詳細オプション。](#detailed-options)
 
 1. AEM にログインします。
 1. メインメニューで、**ナビゲーション**／**Sites** をタップまたはクリックします。
 1. サイトプロジェクトを選択し、「[**プロパティ**](/help/sites-cloud/authoring/fundamentals/page-properties.md)」をタップまたはクリックするか、ホットキー `p` を使用します。
-1. 「**プログレッシブ Web アプリケーション**」タブを選択し、該当するプロパティを設定します。少なくとも、次のことをおこないます。
+1. 「**プログレッシブ Web アプリケーション**」タブを選択し、該当するプロパティを設定します。少なくとも、次の操作が必要です。
    1. 「**PWA を有効にする**」オプションを選択します。
    1. **スタートアップ URL** を定義します。
 
@@ -114,7 +114,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
       ![PWA アイコンの定義](../assets/pwa-icon.png)
 
-   1. サービスワーカーがオフラインにするパスを構成します。一般的なパスは次のとおりです。
+   1. サービスワーカーがオフラインにするパスを構成します。 一般的なパスは次のとおりです。
       * `/content/<sitename>`
       * `/content/experiencefragements/<sitename>`
       * `/content/dam/<sitename>`
@@ -131,8 +131,8 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 これで、[PWA をサポートするようにサイトを設定できたので、](#enabling-pwa-for-your-site)体験してみてください。
 
-1. [サポートされているブラウザー](https://developer.mozilla.org/ja-JP/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)でサイトにアクセスします。
-1. ブラウザーのアドレスバーに新しいアイコンが表示され、サイトがローカルアプリケーションとしてインストールできることが示されます。
+1. のサイトにアクセスする [サポートされているブラウザ](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary).
+1. ブラウザーのアドレスバーに、サイトがローカルアプリとしてインストールできることを示す新しいアイコンが表示されます。
    * ブラウザーによってアイコンは異なり、ローカルアプリケーションとしてインストールできることを示す通知（バナーやダイアログボックスなど）が表示される場合もあります。
 1. AEM Desktop App をインストールします。
 1. アプリがデバイスのホーム画面にインストールされます。
@@ -144,23 +144,23 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ### インストール可能なエクスペリエンスの設定 {#configure-installable-experience}
 
-これらの設定を使用すると、訪問者のホーム画面にサイトをインストールしてオフラインで使用できるようにすることで、サイトをネイティブアプリケーションのように動作させることができます。
+これらの設定を使用すると、訪問者のホーム画面にインストールでき、オフラインで使用できるようにすることで、サイトをネイティブアプリのように動作させることができます。
 
-* **PWA を有効にする** - これは、サイトの PWA を有効にするためのメイントグルです。
-* **起動 URL** - これは、ユーザーがローカルにインストールしたアプリケーションを読み込むときに開く、 [優先的な起動 URL](https://developer.mozilla.org/ja-JP/docs/Web/Manifest/start_url) です。
+* **「Enable」PWA**  — これは、サイトのPWAを有効にする主な切り替えです。
+* **スタートアップ URL**  — これは [優先開始 URL](https://developer.mozilla.org/ja-JP/docs/Web/Manifest/start_url) ユーザーがローカルにインストールされたアプリを読み込むと、デスクトップアプリケーションが開きます。
    * これは、コンテンツ構造内の任意のパスにすることができます。
    * ルートにする必要はなく、多くの場合アプリケーションの開始ページにします。
    * この URL が相対 URL の場合、マニフェスト URL がベース URL として使用され、解決されます。
-   * 空白のままにすると、アプリケーションのインストール元の web ページのアドレスが使用されます。
+   * 空のままにすると、アプリがインストールされた Web ページのアドレスが使用されます。
    * 値を設定することをお勧めします。
 * **表示モード** - PWA 対応のアプリケーションは、引き続きブラウザーを介して配信される AEM サイトです。[これらの表示オプション](https://developer.mozilla.org/ja-JP/docs/Web/Manifest/display)は、ブラウザーを非表示にする方法や、ローカルデバイス上のユーザーに表示する方法を定義します。
-   * **スタンドアロン** - ブラウザーはユーザーに完全に非表示になり、ネイティブアプリケーションのように表示されます。これがデフォルト値です。
+   * **スタンドアロン**  — ブラウザーはユーザーに対して非表示になり、ネイティブアプリのように表示されます。 これがデフォルト値です。
       * このオプションを使用する場合、アプリケーションのナビゲーションは、ブラウザーのナビゲーションコントロールを使用することなく、サイトのページ上のリンクやコンポーネントを使用してコンテンツ全体でナビゲーション可能でなければなりません。
    * **ブラウザー** - ブラウザーは、サイトの訪問時に通常通り表示されます。
    * **最小限の UI** - ネイティブアプリケーションと同様に、ブラウザーはほとんど非表示ですが、基本的なナビゲーションコントロールが表示されます。
-   * **全画面表示** - ブラウザーはネイティブアプリケーションと同様に完全に非表示になりますが、全画面モードでレンダリングされます。
+   * **全画面表示**  — ブラウザーは、ネイティブアプリと同様に非表示になりますが、フルスクリーンモードでレンダリングされます。
       * このオプションを使用する場合、アプリケーションのナビゲーションは、ブラウザーのナビゲーションコントロールを使用することなく、サイトのページ上のリンクやコンポーネントを使用してコンテンツ全体でナビゲーション可能でなければなりません。
-* **画面の向き**  — ローカルアプリケーションでは、PWAが [デバイスの向き](https://developer.mozilla.org/ja-JP/docs/Web/Manifest/orientation).
+* **画面の向き**  — ローカルアプリケーションは、PWAが [デバイスの向き](https://developer.mozilla.org/ja-JP/docs/Web/Manifest/orientation).
    * **任意** - アプリケーションはユーザーのデバイスの向きに合わせて調整されます。これがデフォルト値です。
    * **縦置き** - ユーザーのデバイスの向きに関係なく、アプリケーションが強制的に縦置きレイアウトで開きます。
    * **横置き** - ユーザーのデバイスの向きに関係なく、アプリケーションが強制的に横置きレイアウトで開きます。
@@ -173,7 +173,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
    * 特定のブラウザーでは、アプリケーション名、背景色、アイコンから[自動的にスプラッシュスクリーンが作成されます](https://developer.mozilla.org/ja-JP/docs/Web/Manifest#Splash_screens)。
 * **アイコン** - ユーザーのデバイス上に表示される、アプリケーションを表す[アイコン](https://developer.mozilla.org/ja-JP/docs/Web/Manifest/icons)を定義します。
    * アイコンは、サイズが 512x512 ピクセルの png ファイルである必要があります。
-   * アイコンは、 [DAM に保存](/help/assets/overview.md).
+   * アイコンは、 [DAM に保存済み](/help/assets/overview.md).
 
 ### キャッシュ管理（詳細） {#offline-configuration}
 
@@ -182,13 +182,13 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 * **コンテンツ更新のキャッシュ方法と頻度** - この設定は、PWA のキャッシュモデルを定義します。
    * **中程度** - [この設定](https://web.dev/stale-while-revalidate/)は、大半のサイトで使用されます。これがデフォルト値です。
       * この設定を使用すると、ユーザーが最初に閲覧したコンテンツがキャッシュから読み込まれ、ユーザーがそのコンテンツを使用している間に、キャッシュ内の残りのコンテンツが再検証されます。
-   * **頻繁** - これは、オークション会社など、非常に速く更新する必要があるサイトで使用します。
-      * この設定を使用すると、アプリケーションは最初にネットワーク経由で最新のコンテンツを探し、使用できない場合はローカルキャッシュにフォールバックします。
+   * **頻繁**  — オークション会社など、迅速にアップデートを実施する必要があるサイトの場合は、このケースが該当します。
+      * この設定を使用すると、アプリは最初にネットワークを介して最新のコンテンツを探し、使用できない場合はローカルキャッシュにフォールバックします。
    * **まれ** - これは、リファレンスページなど、ほとんど静的なサイトの場合に使用します。
-      * この設定を使用すると、アプリケーションは最初にキャッシュ内のコンテンツを探し、利用できない場合はネットワークにフォールバックして取得します。
-* **ファイルのプリキャッシュ** - AEMでホストされているこれらのファイルは、サービスワーカーのインストール時および使用前に、ローカルブラウザーキャッシュに保存されます。 これにより、オフライン時に web アプリケーションが完全に機能することが保証されます。
+      * この設定では、アプリは最初にキャッシュ内のコンテンツを探し、コンテンツが使用できない場合はネットワークにフォールバックして取得します。
+* **ファイルのプリキャッシュ** - AEMでホストされているこれらのファイルは、サービスワーカーのインストール時および使用前に、ローカルブラウザーキャッシュに保存されます。 これにより、オフライン時に Web アプリが完全に機能するようになります。
 * **パスの包含** - 定義されたパスに対するネットワーク要求が捕捉され、設定された&#x200B;**キャッシュ方法とコンテンツ更新の頻度**&#x200B;に従ってキャッシュされたコンテンツが返されます。
-* **キャッシュの除外** - これらのファイルは、「 **ファイルの事前キャッシュ**」および「**パスの挿入**」の設定に関係なくキャッシュされません。
+* **キャッシュの除外**  — これらのファイルは、以下の設定に関係なくキャッシュされません。 **ファイルのプリキャッシュ** および **パスを含む**.
 
 >[!TIP]
 >
@@ -200,25 +200,25 @@ AEM Sites では PWA 機能の一部が利用できます。これらには、�
 
 * ユーザーがアプリケーションを使用していない場合、ページは自動的に同期または更新されません。
 
-また、アドビは、PWA を実装する際に次のような推奨をしています。
+Adobeを実装する場合は、次のこともお勧めします。PWA
 
 ### 事前キャッシュするリソースの数を最小限に抑える。 {#minimize-precache}
 
 アドビでは、事前キャッシュするページ数を制限するよう勧めています。
 
-* ライブラリを埋め込むと、事前キャッシュ時に管理するエントリの数を減らすことができます。
+* ライブラリを埋め込むことで、プリキャッシュ時に管理するエントリ数を減らすことができます。
 * 事前キャッシュする画像のバリエーション数を制限します。
 
-### プロジェクトスクリプトやスタイルシートが安定した後で PWA を有効にする。 {#pwa-stabilized}
+### プロジェクトスクリプトとスタイルシートを安定化した後にPWAを有効にします。 {#pwa-stabilized}
 
-クライアントライブラリにはキャッシュセレクタが追加され、`lc-<checksumHash>-lc` のようなパターンで配信されます。ライブラリを構成するファイル（および依存関係）が変更されるたびに、このセレクターは変更されます。サービスワーカーが事前にキャッシュするクライアントライブラリを一覧表示し、新しいバージョンを参照する場合は、手動でエントリを取得して更新します。その結果、プロジェクトスクリプトやスタイルシートが安定した後は、サイトを PWA に設定することをお勧めします。
+クライアントライブラリにはキャッシュセレクタが追加され、`lc-<checksumHash>-lc` のようなパターンで配信されます。ライブラリを構成するファイル（および依存関係）の 1 つが変更されるたびに、このセレクターが変更されます。 サービスワーカーが事前にキャッシュするクライアントライブラリを一覧表示し、新しいバージョンを参照する場合は、手動でエントリを取得して更新します。そのため、Adobeでは、プロジェクトスクリプトとスタイルシートが安定した状態になった後で、サイトをPWAに設定することをお勧めします。
 
 ### 画像バリエーションの数を最小限に抑える。 {#minimize-variations}
 
 AEM コアコンポーネントの画像コンポーネントは、取得に最適な、フロントエンドのレンディションを 1 つ決定します。このメカニズムには、そのリソースの最終変更時刻に対応するタイムスタンプも含まれます。このメカニズムにより、PWA の事前キャッシュの設定が複雑になります。
 
-事前キャッシュの設定では、取得可能なすべてのパスのバリエーションをリストする必要があります。これらのバリエーションは、画質や幅などのパラメーターで構成されます。これらのバリエーションの数を、最大 3 つ（小、中、大）に減らすことをお勧めします。 それには、[画像コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ja)のコンテンツポリシーダイアログを使用します。
+プリキャッシュを設定する場合、ユーザーは取得可能なすべてのパスのバリエーションをリストする必要があります。 これらのバリエーションは、画質や幅などのパラメーターで構成されます。これらのバリエーションの数を、最大 3 つ（小、中、大）に減らすことをお勧めします。 これは、 [画像コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=ja).
 
-慎重に設定しないと、メモリとネットワークの消費が PWA のパフォーマンスに大きな影響を与える可能性があります。例えば、50 枚の画像を事前キャッシュし、画像ごとに 3 つの幅がある場合、サイトを管理するユーザーは、ページプロパティの PWA 事前キャッシュセクションに、最大 150 個のエントリのリストを保持する必要があります。
+慎重に設定しないと、メモリとネットワークの消費が PWA のパフォーマンスに大きな影響を与える可能性があります。また、50 個の画像をプリキャッシュし、1 画像あたり 3 つの幅を持つ場合、サイトを維持するユーザーは、ページプロパティの「PWAプリキャッシュ」セクションで最大 150 個のエントリのリストを維持する必要があります。
 
 また、アドビでは、プロジェクトでの画像の使用が安定してから、サイトを PWA に設定することを勧めています。
