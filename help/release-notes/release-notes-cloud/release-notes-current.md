@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 39284210e6639c4ed2a80cf86dbf0ea32d889986
+source-git-commit: ed67bb95a82f083ed3b6eea4fe5f5d150359c539
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1419'
 ht-degree: 29%
 
 ---
@@ -50,7 +50,7 @@ Have a look at the September 2023 Release Overview video for a summary of the fe
 
 **フォルダーへのメタデータフォームの割り当て**
 
-メタデータフォームを Folders デプロイメント内の特定のフォルダーに割り当てることができるAssets Essentialsになりました。 フォルダー内のすべてのアセット（サブフォルダー内のアセットを含む）には、割り当てられたメタデータフォームで定義されたプロパティが表示されます。
+これで、デプロイメント内の特定のフォルダーにメタデータフォームを割り当てることができるようになりました。 フォルダー内のすべてのアセット（サブフォルダー内のアセットを含む）には、割り当てられたメタデータフォームで定義されたプロパティが表示されます。
 
 ![フォルダーにメタデータフォームを割り当て](/help/release-notes/assets/assign-to-folder.png)
 
