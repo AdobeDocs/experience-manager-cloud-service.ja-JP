@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: fb70abb2aa698303c462e38ad3bec10d028f804e
+source-git-commit: c1e115e0fcf7e168c26f810f0803950df50b2c6f
 workflow-type: tm+mt
-source-wordcount: '5532'
-ht-degree: 91%
+source-wordcount: '5561'
+ht-degree: 90%
 
 ---
 
@@ -46,12 +46,23 @@ AEM は次のユースケースをサポートしています。この記事で�
 ## アセット検索インターフェイスについて {#searchui}
 
 アセット検索インターフェイスと使用可能なアクションについて確認します。
+<!--
+![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
+-->
+![Experience Manager Assets検索結果インターフェイスについて](assets/aem-search-interface.png)
+*図：理解 [!DNL Experience Manager Assets] 検索結果インターフェイス。*
 
-![Experience Manager Assets の検索結果インターフェイスを理解する](assets/aem_search_results.png)
-
-*図：[!DNL Experience Manager Assets] 検索結果インターフェイスの理解*
-
-**A：**&#x200B;検索をスマートコレクションとして保存。**B：**&#x200B;検索結果を絞り込むフィルターまたは述語。**C：**&#x200B;ファイル、フォルダー、またはその両方を表示。**D：**「フィルター」をクリックすると、左側のパネルが開くまたは閉じます。**E：** DAM が検索場所になります。**F：**&#x200B;ユーザが検索キーワードを入力するオムニサーチフィールド。**G：**&#x200B;ロードされた検索結果を選択。**H：**&#x200B;検索結果の合計数の中で表示される検索結果数。**I：**&#x200B;検索を閉じる。**J：**&#x200B;カード表示とリスト表示の切り替え。
+**A：**&#x200B;検索をスマートコレクションとして保存。**B：**&#x200B;検索結果を絞り込むフィルターまたは述語。**C：**&#x200B;ファイル、フォルダー、またはその両方を表示。**D.** 検索場所は DAM です。
+**E.** 保存済みの検索結果にアクセスします。
+**金。** 「フィルター」をクリックして、左側のパネルを開くか閉じます。
+**G.** アセットをデフォルトの検索として表示します。
+**H.** 検索場所は DAM です。
+**I.** ユーザーが指定した検索キーワードを含むオムニサーチフィールド。
+**J.** 読み込まれた検索結果を選択します。
+**K.** 作成日、変更日、名前、なしで並べ替え。
+**リ。** 昇順または降順で並べ替え。
+**月曜** 検索結果の合計のうちに表示された検索結果の数。 **いいえ。** 検索を閉じます。
+**O.** カード表示とリスト表示を切り替えます。
 
 ### 動的検索ファセット {#dynamicfacets}
 
@@ -160,7 +171,10 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 **フォルダー内のアセットの検索**：検索対象を特定のフォルダーに限定できます。**[!UICONTROL フィルター]**&#x200B;パネルで、フォルダーのパスを追加します。一度に 1 つのフォルダーのみ選択できます。
 
-![フィルターパネルにフォルダーパスを追加して検索結果を特定のフォルダーに限定](assets/search_folder_select.gif)
+![フィルターパネルにフォルダーパスを追加して検索結果を特定のフォルダーに限定](assets/limiting-search.gif)
+<!--
+![Limit search results to a folder by adding a folder path in Filters panel](assets/search_folder_select.gif)
+-->
 
 *図：フィルターパネルにフォルダーパスを追加して検索結果を特定のフォルダーに限定する*
 
@@ -277,7 +291,9 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 アセットセレクターインターフェイスにアクセスするには、`https://[aem_server]:[port]/aem/assetpicker` に移動します。目的のフォルダーに移動して、1 つまたは複数のアセットを選択します。または、オムニサーチボックスから目的のアセットを検索し、必要に応じてフィルターを適用して選択します。
 
-![アセットピッカーでのアセットの参照と選択](assets/assetpicker.png)
+![アセットピッカーでのアセットの参照と選択](assets/select-asset.png)
+
+<!--![Browse and select asset in the asset selector](assets/assetpicker.png)-->
 
 *図：アセットピッカーでのアセットの参照と選択*
 
