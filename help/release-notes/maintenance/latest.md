@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b147c80581bcb554ae0b4ac971c5f98e7160d1df
+source-git-commit: c62ae58240298604e6cd7737678603eb734434b3
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 7%
@@ -94,15 +94,9 @@ ht-degree: 7%
 * FORMS-10248：コアコンポーネントに基づくアダプティブFormsで、データ値タイプがブール値の場合に、ラジオボタンまたはチェックボックスの値を期待どおりに設定します。
 * FORMS-8114：日付選択とパターンが NVDA スクリーンリーダーで正しく読み取られない。 特に、NVDA スクリーンリーダーを使用する場合、パターンのない日付ピッカーが正しく読み取られます。 ただし、パターンが日付選択に適用されると、正しく解釈されるのではなく、テーブルとして読み取られます。
 
-
-
-
-
-
-
 ### 既知の問題 {#known-issues-13665}
 
-なし
+なし。
 
 ### 組み込みテクノロジー {#embedded-tech-13665}
 
