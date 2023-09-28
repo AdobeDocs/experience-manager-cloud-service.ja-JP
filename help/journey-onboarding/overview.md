@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service オンボーディングジャーニーの概要
 description: AEM as a Cloud Service のオンボーディングプロセスのガイド付きジャーニーの概要については、ここから始めてください。
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: 7553d3c9f82c8b675af5f704a48bc316ba0d4885
+source-git-commit: bba8310b9ba560ab9b6c2f9bea3e5c3cbec9228b
 workflow-type: tm+mt
-source-wordcount: '1221'
-ht-degree: 95%
+source-wordcount: '1256'
+ht-degree: 93%
 
 ---
 
@@ -15,6 +15,8 @@ ht-degree: 95%
 AEM as a Cloud Service を選択していただき、ありがとうございます。このドキュメントは、オンボーディングプロセスのガイド付きジャーニーの出発点です。新しいアプリケーションをデプロイする場合でも、既存のアプリケーションを移行する場合でも、このオンボーディングジャーニーでチームの準備が確実に整い、AEM as a Cloud Service にアクセスできるようになります。
 
 ## はじめに {#introduction}
+
+Adobe Experience Managerは、あらゆるチャネルにわたって、効果が高く、パーソナライズされたエクスペリエンスを迅速に提供し、すべてのチャネルからコンテンツを解放する、合成可能なコンテンツサービスの強力なスイートです。 **エッジ配信サービス** は、極端なコンテンツ速度を実現し、優れたエクスペリエンスを提供するAdobe Experience Managerの最新の革新です。 次のページで、Edge Delivery Servicesの使用を開始する方法を説明します。 [このページ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). Edge Delivery Servicesの使用方法については、 [開発者向けチュートリアル](https://www.hlx.live/developer/tutorial) ページに貼り付けます。
 
 オンボーディングとは、指定されたシステム管理者が AEM as a Cloud Service を組織用に設定するプロセスです。このプロセスには、クラウドリソースの初期プロビジョニングや、ユーザーを職務に基づいて役割に割り当てる作業が含まれます。これにより、各メンバーが AEM as a Cloud Service にログオンしてリソースにアクセスできるようになります。
 
@@ -83,10 +85,6 @@ AEM as a Cloud Service を使い始めると、学ぶべきことがたくさん
 | 8 | [AEM 製品プロファイルの割り当て](assign-profiles-aem.md) | システム管理者が AEM as a Cloud Service の製品プロファイルにチームメンバーを割り当てる方法について説明します。 | システム管理者 |
 | 9 | [開発者およびデプロイメントマネージャーのタスク](developers.md) | オプション - デベロッパーとして Cloud Manager Git にアクセスして管理する方法と、デプロイメントマネージャーとして Cloud Manager でパイプラインを設定してコードをデプロイする方法について説明します。 | 開発者およびデプロイメントマネージャー |
 | 10 | [AEM ユーザーのタスク](aem-users.md) | オプション - AEM オーサーとして AEM as a Cloud Service インスタンスにアクセスする方法と、AEM as a Cloud Service 用コンテンツのオーサリング方法について説明します。 | AEM ユーザー |
-
->[!NOTE]
->
->Edge Delivery Servicesは、柔軟で迅速な開発環境を可能にする、合成可能な新しいサービスのセットです。作成者は迅速に更新および公開でき、新しいサイトは迅速に起動します。 Edge 配信サービスについて詳しくは、 [はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
 
 ## 次のステップ {#what-is-next}
 
