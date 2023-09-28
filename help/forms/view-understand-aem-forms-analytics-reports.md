@@ -1,21 +1,25 @@
 ---
 title: アダプティブForms分析レポートの表示と理解
 description: アダプティブFormsはAdobe Analyticsとシームレスに統合され、公開済みのフォームやドキュメントのパフォーマンス指標を取得して追跡します。
+keywords: アダプティブForms分析レポート、Adobe分析レポート、Forms Analytics レポートの表示と理解
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 0%
+source-wordcount: '988'
+ht-degree: 1%
 
 ---
 
 
 # アダプティブForms分析レポートの表示と理解 {#viewing-and-understanding-aem-forms-analytics-reports}
 
-<span class="preview"> これはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | この記事 |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html) |
 
 急速に進化するデジタル分析の状況では、十分な情報に基づく意思決定を行い、デジタルエクスペリエンスを最適化するために、グローバルなトレンドに常に従うことが不可欠です。 これに対応するため、アダプティブFormsはAdobe Analyticsとシームレスに統合して、公開済みのフォームやドキュメントのパフォーマンス指標を取得し、追跡します。 これらの指標の分析の目的は、指標と分析を使用して、フォームの使いやすさと効果を高め、データ主導型の意思決定を行うことです。
 
@@ -102,3 +106,9 @@ Formsのアクセス元が表示されます。 フォームユーザーに関�
 これは、ユーザーがフォームを破棄する前に時間を費やしたフォームフィールドを分析するのに役立ちます。 例えば、以下の画像では、5 つの廃止されたフォームの中から 2 つがフィールドに残っています。 **姓名**、フィールドに左に 2 **電話番号**、1 つがフィールドに残り **テキスト入力**.
 
 ![フィールド訪問者](assets/field-visitors.png){width="100%"}
+
+## 関連トピック {#see-also}
+
+* [アダプティブフォームのAdobe Analyticsを有効にする (Experience Cloud設定の自動化を使用 )](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [アダプティブフォームをAEM Sitesページまたはエクスペリエンスフラグメントに追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [AEM FormsとAdobe Analyticsの統合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)

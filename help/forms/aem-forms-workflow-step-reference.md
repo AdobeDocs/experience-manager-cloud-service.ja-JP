@@ -3,21 +3,21 @@ title: Form 中心のAEMワークフローを使用して、ビジネスプロ�
 description: Forms 中心のワークフローを使用すると、アダプティブフォームベースのワークフローを迅速に構築できます。Adobe Sign を使用して、ドキュメントへの電子サイン、フォームをベースとしたビジネスプロセスの作成、複数データソースへのデータの取得と送信、メール通知の送信を行うことができます
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+keywords: タスクの割り当て手順の使用、PDF/A ステップへの変換、レコードステップのドキュメントの生成、ワークフローの使用、ドキュメントに署名ステップ、印刷出力ステップの生成、非インタラクティブPDF出力の生成
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '7452'
-ht-degree: 78%
+source-wordcount: '7433'
+ht-degree: 79%
 
 ---
 
-# Forms中心のAEM Workflows — ステップリファレンスを使用して、ビジネスプロセスを自動化します。{#forms-centric-workflow-on-osgi-step-reference}
+
+# Forms中心のAEM Workflows — ステップリファレンスを使用して、ビジネスプロセスを自動化します。 {#forms-centric-workflow-on-osgi-step-reference}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
-
-<span class="preview"> Singer の役割、監査記録、および Government-ID ベースの認証オプション ( [ドキュメントに署名ステップ](#sign-document-step) はリリース前の機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 ワークフローモデルを使用します。 モデルは、一連の手順を定義して実行するのに役立ちます。ワークフローを一時的なものにするか、複数のリソースを使用するかなど、モデルのプロパティを定義することもできます。[ビジネスロジックを達成するために、様々な AEM ワークフローステップをモデルに含めることができます](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ja#extending-aem)。
 
@@ -40,7 +40,6 @@ Forms 中心のワークフローステップは、AEM ワークフローで AEM
 >[!NOTE]
 >
 >ワークフローモデルが外部ストレージ用にマークされている場合、すべてのForms Workflow手順で、変数オプションのみを選択して、データファイルと添付ファイルを保存または取得できます。
-
 
 ## タスクを割り当てステップ {#assign-task-step}
 
@@ -379,8 +378,6 @@ DDX を呼び出しステップには次のプロパティがあります。
 
 ## ドキュメントに署名ステップ {#sign-document-step}
 
-<span class="preview"> Adobe Sign手順の Singer の役割、監査証跡、政府機関 ID ベースの認証オプションは、リリース前の機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
-
 ドキュメントに署名ステップでは、[!DNL Adobe Sign] を使用してドキュメントに署名できます。を使用する場合、 [!DNL Adobe Sign] アダプティブフォームに署名するためのワークフロー手順では、フォームを受信者間で 1 つずつ渡すことも、ワークフロー手順の設定に応じて、すべての受信者に同時に送信することもできます。 [!DNL Adobe Sign] 有効になっている Adaptive Formsは、すべての受信者が署名プロセスを完了した後でのみExperience Manager Forms Server に送信されます。
 
 デフォルトでは、 [!DNL Adobe Sign] スケジューラーサービスは、24 時間ごとに受信者の応答をチェック（ポーリング）します。 [現在の環境に合わせて、このデフォルト値を変更](adobe-sign-integration-adaptive-forms.md#for-aem-workflows-only-configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status-configure-adobe-sign-scheduler-to-sync-the-signing-status)することができます。
@@ -591,3 +588,9 @@ Send a document directly to a printer. It supports the following printing access
 * **** Linearized PDF：Web表示のために生成されたPDFフォームを最適化するかどうかを指定します。
 * **タグ付き PDF**：生成された PDF をアクセシビリティ対応にするかどうかを指定します。
 * **XCI ドキュメント**：XCI ファイルへのパスを指定します。
+
+## 関連トピック {#see-also}
+
+* [Forms 中心の AEM ワークフローの変数](/help/forms/variable-in-aem-workflows.md)
+* [不在設定の指定](/help/forms/configure-out-of-office-settings.md)
+

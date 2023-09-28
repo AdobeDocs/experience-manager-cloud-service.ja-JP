@@ -2,19 +2,16 @@
 title: AEMアダプティブフォームでのGoogle reCAPTCHA の使用
 description: Google reCAPTCHA サービスでフォームのセキュリティを容易に強化できます。 ステップバイステップガイドをご用意しております。
 topic-tags: Adaptive Forms, author
-hide: true
-hidefromtoc: true
-Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
+keywords: Google reCAPTCHA サービス，アダプティブForms, CAPTCHA の課題，ボットの回避，コアコンポーネント，フォーム送信セキュリティ，フォームスパムの防止
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '945'
 ht-degree: 19%
 
 ---
 
-# コアコンポーネントに基づくAEMアダプティブフォームでのGoogle reCAPTCHA の使用 {#using-reCAPTCHA-in-adaptive-forms}
 
-<span class="preview"> これはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+# コアコンポーネントに基づくAEMアダプティブフォームでのGoogle reCAPTCHA の使用 {#using-reCAPTCHA-in-adaptive-forms}
 
 | 適用先 | 記事リンク |
 | -------- | ---------------------------- |
@@ -54,13 +51,9 @@ GoogleによるAEM Forms環境を reCAPTCHA サービスに接続するには
    1. 前の節で作成または更新した設定コンテナを選択します。 「**[!UICONTROL 作成]**」をタップします。
    1. 指定 **[!UICONTROL タイトル]**, **[!UICONTROL 名前]**, **[!UICONTROL サイトキー]**、および **[!UICONTROL 秘密鍵]** reCAPTCHA サービス用（手順 1 で取得）。 「**[!UICONTROL 作成]**」をタップします。
 
-
    ![AEM Forms環境をGoogleの reCAPTCHA サービスに接続するためのCloud Serviceの設定](/help/forms/assets/captcha-configuration.gif)
 
-
-
    reCAPTCHA サービスを設定すると、アダプティブフォームで使用できるようになります。 詳しくは、 [アダプティブフォームでのGoogle reCAPTCHA の使用](#using-reCAPTCHA).
-
 
 ## アダプティブフォームでのGoogle reCAPTCHA の使用 {#using-reCAPTCHA}
 

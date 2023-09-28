@@ -1,15 +1,21 @@
 ---
 title: Forms Designer のダウンロードとインストール
 description: Forms Designer を使用して、レコードのドキュメントテンプレートとして機能する XDP および PDF フォームテンプレートを作成できます。Designer は、 [!DNL AEM Forms]  ライセンスで利用できます。
-source-git-commit: 325769d4a3b93502b0c6857e20911b05df34a24a
+keywords: Designer のインストール、Forms Designer のインストール、Forms Designer のインストール要件
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 67%
+source-wordcount: '397'
+ht-degree: 65%
 
 ---
 
 
 # Forms Designer のダウンロードとインストール {#installing-and-configuring-designer}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | この記事 |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html) |
 
 Designer は、XDP および PDF フォームテンプレートの作成を簡単にするポイント＆クリックによるグラフィカルフォームデザインツールです。フォームテンプレートをデザインし、そのロジックを定義して、厳密な法的要件を満たすことができます。XDP および PDF フォームは、アダプティブフォーム内のレコードのドキュメントテンプレートとして機能します。これらのフォームテンプレートは、[アダプティブフォームテンプレート](template-editor.md)とは異なります。
 
@@ -19,7 +25,6 @@ Designer は、XDP および PDF フォームテンプレートの作成を簡�
 
 +++ 64 ビット Designer（推奨）
 
-* 64 ビット版のForms Designer をインストールする前に、32 ビット版の Designer をアンインストールします。
 * [!DNL Microsoft® Windows® 2016 Server] または [!DNL Microsoft® Windows® 2019 Server]、および [!DNL Microsoft® Windows® 10]
 * 2 GB 以上の RAM
 * 20 GB のディスク容量
@@ -50,6 +55,10 @@ Designer は、XDP および PDF フォームテンプレートの作成を簡�
 
 ## Designer のインストール {#install-designer}
 
+>[!NOTE]
+>
+> 64 ビット版のForms Designer をインストールする前に、32 ビット版の Designer をアンインストールします。
+
 Designer をインストールするには、以下の手順を実行します。
 
 1. [ソフトウェア配布](https://experience.adobe.com/downloads)から Designer をダウンロードします。
@@ -59,3 +68,9 @@ Designer をインストールするには、以下の手順を実行します�
 1. （オプション）デフォルトのインストールパスを変更して、選択した場所に Designer をインストールします。「**[!UICONTROL 次へ]**」をクリックします。
 1. 設定を変更するには、「**[!UICONTROL 戻る]**」をクリックします。Designer をインストールするには、「**[!UICONTROL インストール]**」をクリックします。
 1. インストールが完了したら、「**[!UICONTROL 完了]**」をクリックします。
+
+## 関連トピック {#see-also}
+
+* [カスタムフォントを使用](/help/forms/use-custom-fonts.md)
+* [スタンドアロンのコアコンポーネントベースのアダプティブフォームを作成する](/help/forms/creating-adaptive-form-core-components.md)
+* [AEM Sites ページへのアダプティブフォームの作成または追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

@@ -3,10 +3,10 @@ title: AEM as a Cloud Service でのキャッシュ
 description: AEM as a Cloud Serviceでのキャッシュの基本について説明します。
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a6714e79396f006f2948c34514e5454fef84b5d8
 workflow-type: tm+mt
-source-wordcount: '2800'
-ht-degree: 50%
+source-wordcount: '2803'
+ht-degree: 49%
 
 ---
 
@@ -203,16 +203,18 @@ AEMレイヤーは、デフォルトでは BLOB コンテンツをキャッシ�
 
 ### マーケティングキャンペーンパラメーター {#marketing-parameters}
 
-Web サイトの URL には、キャンペーンの成功をトラックするために使用されるマーケティングキャンペーンパラメーターが含まれることがよくあります。 Dispatcher キャッシュを効果的に使用するには、Dispatcher 設定の `ignoreUrlParams` プロパティとして [ここに記載されています](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#ignoring-url-parameters).
+Web サイトの URL には、キャンペーンの成功をトラックするために使用されるマーケティングキャンペーンパラメーターが含まれることがよくあります。 
 
-この `ignoreUrlParams` セクションに対してはコメントを解除し、`conf.dispatcher.d/cache/marketing_query_parameters.any` のファイルを参照する必要があります。このファイルは、マーケティング チャネルに関連するパラメーターに対応する行のコメントを解除することで変更することができます。他のパラメーターも追加することができます。
+2023 年 10 月以降に作成された環境の場合、リクエストのキャッシュを改善するために、CDN は、一般的なマーケティング関連のクエリパラメーター（特に、次の正規表現パターンに一致するパラメーター）を削除します。
 
 ```
-/ignoreUrlParams {
-{{ /0001 { /glob "*" /type "deny" }}}
-{{ $include "../cache/marketing_query_parameters.any"}}
-}
+^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
 ```
+
+この動作を無効にしたい場合は、サポートチケットを送信してください。
+
+2023 年 10 月より前に作成された環境の場合は、Dispatcher 設定の `ignoreUrlParams` プロパティとして [ここに記載されています](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#ignoring-url-parameters).
+
 
 ## Dispatcher キャッシュの無効化 {#disp}
 

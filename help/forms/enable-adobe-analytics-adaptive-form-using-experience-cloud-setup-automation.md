@@ -1,20 +1,23 @@
 ---
 title: アダプティブフォーム用にAdobe Analyticsを有効にする
 description: Experience Cloudの自動設定を使用すると、Adobe Analyticsをアダプティブフォームに接続して、訪問者のインタラクションとエンゲージメントに関するインサイトを追跡できます。
-source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
+keywords: Experience Cloud設定の自動化、FormsでのAdobe Analyticsの有効化、アダプティブFormsでのAdobe Analyticsの有効化、Forms分析の統合、FormsとAdobe Analyticsを使用したアダプティブフォームのAdobe Analyticsの有効化
+source-git-commit: 4daba42c9d8a7eff5d3ef6f9581c52c787666ed1
 workflow-type: tm+mt
-source-wordcount: '1534'
-ht-degree: 6%
+source-wordcount: '1591'
+ht-degree: 7%
 
 ---
 
 
 # アダプティブフォームのAdobe Analyticsを有効にする (Experience Cloud設定の自動化を使用 ) {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
 
-<span class="preview"> これはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | この記事 |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 
 Experience Cloudの自動設定を使用すると、Adobe AnalyticsをアダプティブFormsに連携でき、フォームとのユーザーインタラクションを追跡し、分析し、訪問者のインタラクションとエンゲージメントに関するインサイトを提供できます。 Experience Cloudのセットアップ自動化は、完了時間やドロップオフポイントなどの指標の評価を含む、フォームのパフォーマンスの監視にも役立ちます。 この分析により、フォームを最適化してユーザーエクスペリエンスを向上させると同時に、ログインステータスに基づいてユーザーの行動を区別し、一般的な傾向やパターンを特定することができます。
-
 
 ## Adobe AnalyticsとアダプティブFormsの統合のメリット {#advantages-of-integrating-adobe-analytics-with-aem-forms}
 
@@ -76,7 +79,7 @@ Experience Cloudの自動設定には、 **Adobe Analyticsライセンス**, **�
 * [基盤コンポーネントに基づくアダプティブForms向けAdobe Analyticsの有効化](#integrate-adobe-analytics-with-aem-forms-for-foundation-component)
 * [コアコンポーネントに基づいて、Adobe Analytics for Adaptive Formsを有効にする](#integrate-adobe-analytics-with-aem-forms-for-core-components)
 
->[!VIDEO](https://video.tv.adobe.com/v/3424577/recaptcha-google-adaptive-forms/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424577/enable-adobe-analytics/?quality=12&learn=on)
 
 
 <!--
@@ -219,14 +222,20 @@ AEM Sitesページでアダプティブフォームに接続して Analytics を
 
 ## Best Practices
 
-1.	Verify that Adobe Analytics is enabled on all the forms activated for Adobe Analytics.
+1.    Verify that Adobe Analytics is enabled on all the forms activated for Adobe Analytics.
 
-1.	Check the Adobe Analytics report periodically to gain insights into user behavior and form performance. For instance, you may set the cadence to 15 days or the period you prefer to choose for report analysis. This enables you to improve the forms enrollment experience.
+1.    Check the Adobe Analytics report periodically to gain insights into user behavior and form performance. For instance, you may set the cadence to 15 days or the period you prefer to choose for report analysis. This enables you to improve the forms enrollment experience.
 
-1.	Enable Analytics for all or most of your forms for tracking and analyzing user interaction with your forms and to gain insights into visitor interactions and engagement.
+1.    Enable Analytics for all or most of your forms for tracking and analyzing user interaction with your forms and to gain insights into visitor interactions and engagement.
 
 1. Check your forms performance after you update your form fields or components.
 
-1.	Share Analytics report with your peer groups for review, you can schedule your report for a later time.
+1.    Share Analytics report with your peer groups for review, you can schedule your report for a later time.
 
 -->
+
+## 関連トピック {#see-also}
+
+* [アダプティブForms分析レポートの表示と理解](/help/forms/view-understand-aem-forms-analytics-reports.md)
+* [アダプティブフォームをAEM Sitesページまたはエクスペリエンスフラグメントに追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [AEM FormsとAdobe Analyticsの統合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
