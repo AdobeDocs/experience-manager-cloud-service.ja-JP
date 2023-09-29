@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ed67bb95a82f083ed3b6eea4fe5f5d150359c539
+source-git-commit: 8c878833118b2d8dc51e8cfa2c15ce70efbd3deb
 workflow-type: tm+mt
 source-wordcount: '1419'
 ht-degree: 29%
@@ -27,6 +27,10 @@ ht-degree: 29%
 ## リリース日 {#release-date}
 
 のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在の機能リリース (2023.9.0) は 2023 年 9 月 28 日です。 次回の機能リリース (2023.10.0) は、2023 年 10 月 26 日に予定されています。
+
+## メンテナンスリリースノート {#maintenance}
+
+最新のメンテナンスリリースノートについては、[こちら](/help/release-notes/maintenance/latest.md)をご覧ください。
 
 <!-- 
 
@@ -127,10 +131,6 @@ CDN でのトラフィックのフィルタリング基準：
 この機能を試して、フィードバックを共有したい場合は、 電子メールの送信先 **aemcs-waf-adopter@adobe.com** アーリーアダプタープログラムの詳細については、公式電子メール ID を参照してください。 スペースは制限されています。
 
 この機能の詳細については、この記事を参照してください。 [ここ](/help/security/cdn-and-waf-rules.md).
-
-## メンテナンスリリースノート {#maintenance}
-
-最新のメンテナンスリリースノートについては、[こちら](/help/release-notes/maintenance/latest.md)をご覧ください。
 
 ## Cloud Manager {#cloud-manager}
 
