@@ -7,15 +7,15 @@ keywords: カスタムエラーハンドラーの追加、デフォルトエラ�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: a589005551dd7d8cdf8ac004725341905f0e99d1
 workflow-type: tm+mt
-source-wordcount: '2406'
+source-wordcount: '2408'
 ht-degree: 10%
 
 ---
 
 
-# アダプティブForms（コアコンポーネント）のエラーハンドラー {#error-handlers-in-adaptive-form}
+# コアコンポーネントに基づくアダプティブフォームのエラーハンドラー {#error-handlers-in-adaptive-form}
 
 
 | バージョン | 記事リンク |
