@@ -2,10 +2,10 @@
 title: コンテンツフラグメントの使用方法（アセット - コンテンツフラグメント）
 description: Adobe Experience Manager(AEM) のコンテンツフラグメントをas a Cloud Service的に使用して、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。これは、ページオーサリングおよびヘッドレス配信に最適です。 また、MSM と共に使用する方法も示します。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
 workflow-type: tm+mt
-source-wordcount: '2211'
-ht-degree: 61%
+source-wordcount: '2229'
+ht-degree: 60%
 
 ---
 
@@ -38,7 +38,7 @@ Adobe Experience Manager(AEM) をas a Cloud Serviceしたコンテンツフラ�
 >
 >引き続き **Assets** コンソールから管理できますが、現在は主に&#x200B;**[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**&#x200B;コンソールで管理します。このセクションでは、**Assets** コンソールでの管理を説明しています。
 >
->コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。 この節では、主に **Assets** コンソール。 Sites のドキュメントを参照してください。 [コンテンツフラグメント — オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)：新しいエディターの詳細 ( 主に **コンテンツフラグメント** コンソール )。
+>コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。 この節では、主に **Assets** コンソール。 Sites のドキュメントを参照してください。 [コンテンツフラグメント — オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)：新しいエディターの詳細 ( 主に **コンテンツフラグメント** コンソール )。 どちらのエディターも、上部のツールバーに切り替えスイッチを使用して、他のエディターにすばやくアクセスできます。
 
 以下のページでは、コンテンツフラグメントを作成、設定、管理および使用するためのタスクについて説明します。
 
