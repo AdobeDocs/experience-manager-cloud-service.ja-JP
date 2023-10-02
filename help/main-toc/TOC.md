@@ -8,7 +8,7 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a741105afdb2fb4dc3bfb70dc6dcb1bf317a3aea
+source-git-commit: 9146bf7222ad3cb74e6558868c41b822364ef3f0
 workflow-type: tm+mt
 source-wordcount: '4296'
 ht-degree: 91%
@@ -542,8 +542,8 @@ ht-degree: 91%
       + [ [!DNL Workfront] 用の  [!DNL enhanced connector]  の設定](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
-+ Adobe Expressとの統合 {#integration-adobe-express}
-   + [Adobe Express用AEM Assetsアドオン](/help/assets/addon-adobe-express.md)
+   + Adobe Expressとの統合 {#integration-adobe-express}
+      + [Adobe Express用AEM Assetsアドオン](/help/assets/addon-adobe-express.md)
 + Forms {#forms}
    + 概要 {#forms-overview}
       + [はじめに](/help/forms/home.md)
