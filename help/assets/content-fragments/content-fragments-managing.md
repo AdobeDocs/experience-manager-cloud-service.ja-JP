@@ -2,10 +2,10 @@
 title: コンテンツフラグメントの管理（アセット - コンテンツフラグメント）
 description: ヘッドレスコンテンツの基礎となる AEM コンテンツフラグメントを Assets コンソールを使用して管理する方法について説明します。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
+source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 80%
+source-wordcount: '1877'
+ht-degree: 79%
 
 ---
 
@@ -196,6 +196,10 @@ ht-degree: 80%
    * **アクティベートを解除済み**：赤
 
 * ボタンを使用すると、次のことができます。 **新しいエディタを試す**&#x200B;を直接開く *新規* [コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md) は、 [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+
+  >[!WARNING]
+  >
+  >新しいエディターが同じタブで開きます。 両方のエディターを同時に開くことはお勧めしません。
 
 * 「**保存**」から、「**保存して閉じる**」オプションにアクセスできます。
 

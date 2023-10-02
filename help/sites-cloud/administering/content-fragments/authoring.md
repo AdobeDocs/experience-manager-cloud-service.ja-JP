@@ -3,9 +3,9 @@ title: コンテンツフラグメントのオーサリング
 description: コンテンツフラグメントのコンテンツを作成する方法を理解し、目的に応じてそのコンテンツのバリエーションを作成します。 これにより、ヘッドレス配信とページオーサリングの両方の柔軟性が向上します。
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 2fa22bf2feb6b8697877b345bc29821e30b1c6a1
+source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
 workflow-type: tm+mt
-source-wordcount: '2227'
+source-wordcount: '2249'
 ht-degree: 4%
 
 ---
@@ -62,6 +62,11 @@ ht-degree: 4%
    * すべてを表示するオプション **親参照** （リンクアイコン）
    * フラグメント **[ステータス](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**、最後に保存した情報
    * 元の（アセットベースの）エディターに切り替える切り替え
+
+     >[!WARNING]
+     >
+     >元のエディターが同じタブで開きます。 両方のエディターを同時に開くことはお勧めしません。
+
 * 左側のパネル：表示 **[バリエーション](#variations)** コンテンツフラグメントとその **フィールド**:
    * これらのリンクは、 [コンテンツフラグメント構造に移動する](#navigate-structure)
 * 右パネル：タブを表示します。 [プロパティ（メタデータ）とタグの表示](#view-properties-tags)、 [バージョン履歴](#view-version-history)、および [言語コピー](#view-language-copies)
