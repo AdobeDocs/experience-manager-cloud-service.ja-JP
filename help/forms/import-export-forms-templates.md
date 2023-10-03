@@ -1,11 +1,11 @@
 ---
-title: アダプティブFormsおよびAEM Formsアセットの読み込みと書き出し
-description: アダプティブフォームとアセットを AEM インスタンス間で移行したいと考えていますか？ここでは、 [!DNL AEM Forms]  インスタンスからアダプティブフォーム、PDF フォーム、テーマおよびその他のサポートするアセットを読み込んだり書き出したりする方法を説明します。
-seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
+title: '[!DNL AEM Forms] インスタンス上のアダプティブフォーム、PDF forms、およびその他のアセットの読み込み、書き出し、整理について学習します。'
+description: アダプティブForms、PDF forms、テーマおよびその他のサポートアセットを、AEMインスタンスとの間で移行する方法について説明します。
 topic-tags: forms-manager
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1199'
 ht-degree: 96%
 
 ---

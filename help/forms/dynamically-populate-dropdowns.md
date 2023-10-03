@@ -1,18 +1,14 @@
 ---
-title: ドロップダウンリストの動的な自動入力
-seo-title: Dynamically populating drop-down lists
-description: あるロジックに基づいてドロップダウンリストを動的に埋め込む手順
-seo-description: Procedure to dynamically populate drop-down lists based on some logic
+title: ドロップダウンリストにデータを動的に埋め込む方法は？
+description: カスケーディングリストボックスを作成する方法、またはドロップダウンリストを動的に設定する方法について説明します。
 uuid: b3408aee-ac24-43af-a380-a5892abf0248
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 60%
+source-wordcount: '346'
+ht-degree: 58%
 
 ---
 
@@ -153,7 +149,7 @@ ht-degree: 60%
 1. コンテンツノードをパッケージ化し、その .jar ファイルを特定の場所（例えば /apps/myfolder/demo/install/）に埋め込みます。同じファイルをサーバーにデプロイします。
 1. アダプティブフォームを作成し、2 つのドロップダウンリスト（国と州）をそれに追加します。国リストには、国の名前を含めることができます。 州リストは、最初のリストで選択した国の州名を動的に入力できます。
 
-   国リストに表示する国名を追加します。 州リストに、国リスト内の国の名前に基づいて入力するスクリプトを追加します。
+   国リストに表示する国の名前を追加します。 州リストに、国リスト内の国の名前に基づいて入力するスクリプトを追加します。
 
    ![国名の追加](assets/country-dropdown.png)![州名を入力するスクリプトの追加](assets/state-dropdown.png)![「国」と「州」ドロップダウンリストを一緒に](assets/2dropdowns.png)
 

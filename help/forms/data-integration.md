@@ -1,10 +1,11 @@
 ---
-title: AEM Formsをデータベースに接続
-description: ' [!DNL AEM Forms] as a Cloud Service からデータを取得し、RESTful web サービス、SOAP ベースの web サービスおよび OData サービスに保存できます。このサービスは、データを取得、テスト、検証および様々なタイプのデータソースへの送信を行う専用のツールを提供します。'
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+title: ' [!DNL AEM Forms] as a Cloud Service へのデータベースの接続方法 '
+description: アダプティブフォームまたはAEMワークフローから、データを取得して RESTful Web サービス、SOAP ベースの Web サービス、OData サービスに保存します。
+exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 61%
+source-wordcount: '555'
+ht-degree: 58%
 
 ---
 

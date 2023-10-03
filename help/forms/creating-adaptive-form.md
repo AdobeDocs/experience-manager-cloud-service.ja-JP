@@ -1,14 +1,14 @@
 ---
-title: アダプティブフォームの作成方法
-description: ' [!DNL Experience Manager Forms] を使用したアダプティブフォームの作成方法を説明します。アダプティブフォームは、情報の収集および処理を合理化するレスポンシブ HTML5 フォームです。フォームデータモデルと XML または JSON スキーマに基づいてアダプティブフォームを作成する方法について詳しく調べます。 '
+title: アダプティブフォームの作成方法?
+description: 情報の収集と処理を合理化するアダプティブフォームの作成方法を説明します。 また、フォームデータモデルに基づいてアダプティブフォームを作成する方法についても説明します。
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 91%
+source-wordcount: '1556'
+ht-degree: 89%
 
 ---
 

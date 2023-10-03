@@ -1,14 +1,14 @@
 ---
-title: レイアウトモードを使用したアダプティブFormsのコンポーネントのサイズ変更
-description: レイアウトモードで使用できるレスポンシブグリッドを使用して、コンポーネントの位置を定義します。レイアウトモードにアクセスする方法、コンポーネントのサイズ変更方法、パネルのサイズ変更方法、パネルの複数列レイアウトの定義方法、古いレスポンシブレイアウト用の新しいレスポンシブグリッドを有効にする方法、古いレスポンシブレイアウトを含むフォームのレイアウトモードを無効にする方法を説明します。
+title: レイアウトモードを使用したアダプティブフォームのコンポーネントのサイズ変更方法
+description: AEM Formsコンポーネントの位置の定義、レイアウトモードへのアクセス、コンポーネントのサイズ変更、パネルのサイズ変更およびパネルの複数列レイアウトの定義について説明します。
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 91%
+source-wordcount: '1134'
+ht-degree: 90%
 
 ---
 

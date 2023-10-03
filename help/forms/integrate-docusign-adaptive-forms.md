@@ -1,11 +1,11 @@
 ---
-title: DocuSign とアダプティブフォームの統合
+title: DocuSign をアダプティブフォームに統合する方法
 description: アダプティブフォームで DocuSign を使用して電子サインを収集する方法を説明します。
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 97%
+source-wordcount: '1559'
+ht-degree: 99%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 97%
 
 DocuSign は優れた電子サインソリューションです。契約の電子サインに使用できます。DocuSign をアダプティブフォームと統合することができます。電子サイン用のアダプティブフォームを複数の受信者に送信する場合に役立ちます。電子サインを使用すると、次のことができます。
 
-- 完全に自動化された提案、見積り、契約プロセスを持つ任意のデバイスから契約を締結します。
-- 人事プロセスを迅速に完了し、従業員にデジタル体験を提供します。
-- 契約サイクル時間を短縮し、ベンダーのオンボーディングを迅速に実行できます。
+- 完全に自動化された提案プロセス、見積りプロセス、契約プロセスを使用して、任意のデバイスで契約を締結する。
+- 人事プロセスを短時間で完了し、従業員に対してデジタルエクスペリエンスを提供する。
+- 契約のサイクルタイムを短縮し、ベンダーとの取引を早期に開始する。
 
 AEM Forms as a Cloud Service には [DocuSign 用のカスタム送信アクション](#deploy-custom-submit-action)が用意されています。この送信アクションは、DocuSign API を使用して電子サイン用のアダプティブフォームを送信する場合に役立ちます。
 
@@ -174,6 +174,7 @@ AEM Forms as a Cloud Service には DocuSign 用のカスタム送信アクシ�
    1. アダプティブフォームの&#x200B;**[!UICONTROL 名前]**&#x200B;と&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定します。
 
    1. [ [!DNL DocuSign]  を  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) と統合するときに作成した [設定コンテナ](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) を選択します。
+
    設定コンテナには、お使いの環境用に設定された [!DNL DocuSign] クラウドサービスが含まれています。これらのサービスは、アダプティブフォームエディターで選択できます。
 
 1. 「**[!UICONTROL フォームモデル]**」タブで、次のいずれかのオプションを選択します。

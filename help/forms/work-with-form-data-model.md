@@ -1,14 +1,14 @@
 ---
 title: フォームデータモデルの操作方法
-description: データモデルオブジェクトとサービスの追加、データモデルオブジェクトと子プロパティの作成、サービスの設定、関連付けの追加、OData サービスのナビゲーションプロパティの使用方法について説明します。サンプルデータの生成と編集、データモデルオブジェクトとサービスのテスト、入力データの検証の自動化の方法について詳しく調べます。
+description: データモデルオブジェクト、サービス、データモデルオブジェクトおよび子プロパティの追加、サービスの設定、OData サービスのナビゲーションプロパティの操作を行います。
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '4137'
-ht-degree: 73%
+source-wordcount: '4108'
+ht-degree: 72%
 
 ---
 

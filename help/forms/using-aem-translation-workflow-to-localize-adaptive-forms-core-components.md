@@ -1,10 +1,11 @@
 ---
-title: コアコンポーネントベースのアダプティブフォームを翻訳する
-description: 機械翻訳または人間翻訳を使用した、コアコンポーネントベースのアダプティブフォームの翻訳
+title: コアコンポーネントベースのアダプティブフォームを翻訳するにはどうすればよいですか？
+description: AEM Formsでフォームデータモデルを作成し、サンプルデータとサービスを使用してモデルをテストし、モデルの様々なオプションを設定する方法を説明します。
 feature: Adaptive Forms
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '893'
 ht-degree: 17%
 
 ---

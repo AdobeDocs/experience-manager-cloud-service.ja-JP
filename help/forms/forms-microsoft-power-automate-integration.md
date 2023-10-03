@@ -1,12 +1,12 @@
 ---
-title: アダプティブフォームをMicrosoft&reg; Power Automate と統合する
-description: アダプティブフォームをMicrosoft&reg; Power Automate と統合します。
+title: アダプティブフォームをMicrosoft® Power Automate と統合する方法
+description: アダプティブフォームを Microsoft® Power Automate と統合します。
 hide: true
 hidefromtoc: true
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1171'
 ht-degree: 79%
 
 ---
@@ -190,7 +190,7 @@ Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接
         }
 ```
 
-## 関連情報,
+## 関連トピック
 
 * [アダプティブフォームの作成](creating-adaptive-form-core-components.md)
 * [送信アクションの設定](configure-submit-actions-core-components.md)

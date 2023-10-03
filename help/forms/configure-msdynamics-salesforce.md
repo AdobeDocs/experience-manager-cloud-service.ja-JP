@@ -1,10 +1,11 @@
 ---
-title: Microsoft&reg; Dynamics 365 またはAEM Forms用 Salesforce の設定
-description: Microsoft&reg; Dynamics 365 と Salesforce をアダプティブフォームに統合する方法を説明します。
-source-git-commit: 483a72f67f361023ebeefa3d74ec9f35a5f4f765
+title: Adaptive Forms用の標準搭載のMicrosoft Dynamics 365 および Salesforce データモデルを設定する方法を教えてください。
+description: Microsoft Dynamics 365 と Salesforce をアダプティブFormsと統合する方法を説明します。
+exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 73%
+source-wordcount: '960'
+ht-degree: 72%
 
 ---
 

@@ -1,20 +1,18 @@
 ---
-title: Forms でのレビューの作成と管理
-seo-title: Creating and managing reviews in forms
-description: レビューとは、1 人または複数のレビュー担当者がフォームにコメントすることを許可するメカニズムです。
-seo-description: A Review is a mechanism that allows one or more reviewers to comment on a form.
+title: フォームでレビューを作成および管理する方法は？
+description: レビューメカニズムを使用して、レビュー担当者を追加し、レビュー担当者がフォームにコメントすることを許可します。
 topic-tags: forms-manager
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 49%
+source-wordcount: '731'
+ht-degree: 77%
 
 ---
 
-# フォームのレビューの作成と管理{#creating-and-managing-reviews-to-forms}
+# フォームへのレビューの作成と管理{#creating-and-managing-reviews-to-forms}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象 [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 
 
 | バージョン | 記事リンク |
@@ -24,24 +22,24 @@ ht-degree: 49%
 
 ## レビュー {#review}
 
-レビューとは、1 人または複数のレビュー担当者がフォームにコメントすることを許可するメカニズムです。
+レビューとは、1 人以上のレビュー担当者に対してフォームへのコメントを許可するメカニズムです。
 
 ## レビューの設定 {#setting-up-a-review}
 
 1. フォームブラウザーに移動し、レビューするフォームを選択します。
-1. フォームに進行中のレビューがない場合、 **レビューを開始** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) アイコンがアクションバーに表示されます。 次をクリック： **レビューを開始** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) アイコン
+1. フォームに進行中のレビューがない場合には、「**レビューを開始**」![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) アイコンがアクションバーに表示されます。**レビューを開始** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) アイコンをクリックします。
 1. 以下の情報を入力します。
 
-   * **タイトル**:必須。には、英数字、ハイフン、アンダースコアを含めることができます。
-   * **説明**:（オプション）レビューの目的/コンテンツの説明。
-   * **期限**:（オプション）レビューが終了する日付です。 期限を過ぎている場合、タスクが「期限切れ」と表示されます。
-   * **レビュー担当者名**:少なくとも 1 つは必須です。 コンボボックスを使用して、レビュー担当者を追加し、一致するすべての名前の名前リストを入力します。名前を選択し、「 **追加**. の次のセクション **レビュー担当者** 「 」タブには、すべてのレビュー担当者の名前が表示されます。
+   * **タイトル**：必須。英数字、ハイフン、アンダースコアを含めることができます。
+   * **説明**：任意。レビューの目的／内容の説明。
+   * **期限**：任意。レビューが終了する日付です。期限を過ぎている場合、タスクが「期限切れ」と表示されます。
+   * **レビュー担当者名**：少なくとも 1 つは必須です。コンボボックスを使用して、レビュー担当者を追加し、一致するすべての名前の名前リストを入力します。名前を選択して、 **追加**. の次のセクション **レビュー担当者** 「 」タブには、すべてのレビュー担当者の名前が表示されます。
 
-1. 次をクリック： **開始** をクリックして、レビューを開始します。
+1. 「**開始**」をクリックして、レビューを開始します。
 
    >[!NOTE]
    >
-   >* 管理者は、フォームユーザーに関連付けられた任意のグループにアクセスできます。
+   >* 管理者は、フォームユーザーに関連付けられている任意のグループにアクセスできます。
    >* サービスユーザーグループは、レビュー用に選択できません。
 
 ### レビューが設定されると発生するアクション {#actions-that-occur-when-a-review-is-set-up}
@@ -55,7 +53,7 @@ ht-degree: 49%
 
    レビュー担当者通知アラート
 
-1. このコメントボックスは、フォームのレビュー担当者が使用できます。 他のユーザーはコメントを読むことはできますが、自分で追加することはできません。
+1. フォームのレビュー担当者はコメントボックスを使用することができます。他のユーザーはコメントを読むことはできますが、自分で追加することはできません。
 
 ## レビューの管理 {#managing-a-review}
 
@@ -68,11 +66,11 @@ ht-degree: 49%
 
 1. フォームに進行中のレビューがあり、自分がレビューの開始者である場合、 **レビューを管理** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) アイコンがアクションバーに表示されます。 レビューを管理（更新/終了）できるのは、レビュー開始者のみです。
 
-   次をクリック： **レビューを管理** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)アイコン
+   **レビューを管理** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) アイコンをクリックします。
 
-   開始者以外のユーザーに対しては、レビューを管理アイコンは表示されません。
+   開始者以外のユーザーに対しては、「レビューを管理」アイコンは無効になります。
 
-1. 次に、情報を表示する画面が表示されます。
+1. 次の情報を含む画面が表示されます。
 
    * **レビュー名**：編集できません。
 
@@ -80,16 +78,16 @@ ht-degree: 49%
 
    * **レビューの期限**：編集可能です。期限は、現在の日付と時刻よりも後の日付に変更することができます。
 
-   * **レビュー担当者**:編集可能です。 レビュー担当者を追加または削除できます。タスクが期限切れの場合は、期限を現在の日付以降に延長した場合にのみ、レビュー担当者を追加できます。
+   * **期限**：編集可能です。レビュー担当者を追加または削除できます。タスクが期限切れの場合は、期限を現在の日付以降に延長した場合にのみ、レビュー担当者を追加できます。
 
-1. レビューを終了するには、 **終了**.
+1. レビューを終了するには、「**終了**」をクリックします。
 
 ### レビューが修正されると発生するアクション {#actions-that-occur-when-a-review-is-modified}
 
-この節では、 **レビューの更新/終了**:
+本セクションでは、**レビューの更新／終了**&#x200B;時に発生する動作について説明します。
 
-1. レビューの説明が変更されると、レビュー担当者と開始者の対応するタスクが更新されます。
-1. レビュー期限が変更されると、レビュー担当者の対応するタスクが新しい日付で更新されます。
+1. レビューの説明が修正された場合、レビュー担当者およびイニシエーターの対応するタスクが更新されます。
+1. レビューの期限が修正された場合、レビュー担当者の対応するタスクは新しい期限に更新されます。
 
 1. レビュー担当者が削除された場合：
 

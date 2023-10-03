@@ -1,14 +1,14 @@
 ---
 title: アダプティブフォームの JSON スキーマのデザイン
-description: JSON スキーマをフォームモデルとして使用してアダプティブフォームを作成する方法を説明します。アダプティブフォームの作成には、既存の JSON スキーマを使用できます。JSON スキーマのサンプルをさらに詳しく調べ、JSON スキーマ定義のフィールドを事前設定し、アダプティブフォームコンポーネントの許容値を制限し、サポートされていない構成を学習します。
+description: アダプティブフォームの JSON スキーマを作成し、そのスキーマに基づいてアダプティブフォームを作成して、スキーマ苦情データを生成する方法を説明します。
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: c00080859cc10da2da887cf1a711e1aef9dc5fb8
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1368'
-ht-degree: 92%
+source-wordcount: '1343'
+ht-degree: 90%
 
 ---
 

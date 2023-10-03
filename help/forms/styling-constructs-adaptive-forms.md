@@ -1,17 +1,15 @@
 ---
-title: アダプティブフォームのスタイル構成
-seo-title: Styling constructs for Adaptive Forms
-description: LESS フレームワークを使用して、アダプティブフォームの外観をカスタマイズします。
-seo-description: Use LESS framework to customize appearance of Adaptive Forms.
+title: アダプティブFormsの構成のスタイルを設定するにはどうすればよいですか？
+description: アダプティブFormsの LESS フレームワークを使用して、アダプティブFormsの外観をカスタマイズします。
 uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '2310'
-ht-degree: 81%
+source-wordcount: '2315'
+ht-degree: 80%
 
 ---
 
@@ -24,7 +22,7 @@ CSS と LESS フレームワークに関する知識
 
 ## カスタマイズの対象 {#what-can-be-customized}
 
-この記事では、公開されているアダプティブフォームの CSS クラスについて説明します。これらのクラスを使用して、アダプティブフォームの様々なコンポーネントのスタイルを設定できます。 警告を表示するダイアログやステータスバーなどのオーサリングコンポーネントのスタイル設定は、この記事の範囲外です。 これらのスタイル構成を使用して、を使用してコンポーネントのスタイルを設定できない場合にのみ、スタイル（CSS または LESS を使用）を作成します [テーマエディター](https://helpx.adobe.com/jp/experience-manager/6-3/forms/using/themes.html).
+この記事では、公開されているアダプティブフォームの CSS クラスについて説明します。これらのクラスを使用して、アダプティブフォームの様々なコンポーネントのスタイルを設定できます。 警告を表示するダイアログやステータスバーなどのオーサリングコンポーネントのスタイル設定は、この記事の範囲外です。 これらのスタイル構成を使用して、を使用してコンポーネントのスタイルを設定できない場合にのみ、スタイル（CSS または LESS を使用）を作成します。 [テーマエディター](https://helpx.adobe.com/jp/experience-manager/6-3/forms/using/themes.html).
 
 ## アダプティブフォームのスタイルのカスタマイズ {#customizing-styles-in-adaptive-forms}
 
@@ -33,7 +31,7 @@ LESS フレームワークにより、アダプティブフォームでのスタ
 アダプティブフォームのスタイルは、以下の方法でカスタマイズできます。
 
 * テーマの変更
-* コンポーネントのスタイルを変更
+* コンポーネントのスタイルを変更する
 
 ## テーマの変更 {#changing-theme}
 
@@ -183,7 +181,7 @@ Web ページのテーマは、ブートストラップに基づき、以下の 
 
 ## ウィジェットのスタイル設定 {#widgets-styling}
 
-タイプによっては、ウィジェットにもクラスが含まれています。一般的に、ウィジェットには `guideFieldWidget` クラスが含まれています。HTMLに付属するウィジェットは通常、標準のHTML要素の入力と選択を使用します。 スタイル設定は、それに応じて行われます。変数を変更することによって、カスタムウィジェットのスタイル設定を行うことはできません。
+タイプによっては、ウィジェットにもクラスが含まれています。一般的に、ウィジェットには `guideFieldWidget` クラスが含まれています。HTMLに付属するウィジェットは、通常、標準のHTML要素の入力と選択を使用します。 スタイル設定は、それに応じて行われます。変数を変更することによって、カスタムウィジェットのスタイル設定を行うことはできません。
 
 <table>
  <tbody>
@@ -1068,7 +1066,7 @@ guideNavIcon クラスは、タブナビゲーター（左と上の両方）と�
   </tr>
   <tr>
    <td><p><code>mobilefixedtoolbarbgcolor</code></p> </td>
-   <td><p>モバイルデバイス上のツールバーの背景色</p> </td>
+   <td><p>モバイルデバイス上でのツールバーの背景色</p> </td>
   </tr>
  </tbody>
 </table>

@@ -1,10 +1,13 @@
 ---
-title: 手書き署名を使用したフォームの E 署名
-description: 手書き署名と署名ステップを使用してアダプティブFormsに容易に E 署名を行います。 デジタル署名を合理化し、効率を高めます。
+title: 手書き署名を使用してフォームに電子署名を適用する方法は？
+description: 手書き署名を使用してフォームに電子署名を適用する方法を説明します。
+uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
+products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
-source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
+exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '726'
 ht-degree: 75%
 
 ---

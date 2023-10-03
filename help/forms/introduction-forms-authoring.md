@@ -1,8 +1,6 @@
 ---
 title: アダプティブフォームのオーサリングの概要
-seo-title: Introduction to authoring Adaptive Forms
 description: AEM Forms には、アダプティブフォームをオーサリングするための、使いやすくて強力なインターフェイスが用意されています。これには、フォームを構築するために使用できる多くのコンポーネントとツールが含まれています。
-seo-description: AEM Forms provide easy-to-use yet powerful interface for authoring Adaptive Forms. It provides a host of components and tools that you can use to build forms.
 uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
 topic-tags: author, introduction
@@ -10,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '2482'
 ht-degree: 93%

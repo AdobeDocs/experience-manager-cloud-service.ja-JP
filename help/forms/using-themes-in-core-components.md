@@ -1,12 +1,10 @@
 ---
-title: テーマの作成および使用
-description: テーマとコアコンポーネントを使用して、アダプティブフォームのスタイルを設定し、視覚的に表現できます。任意の数のアダプティブフォームで、テーマを共有できます。
-seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
-keywords: 新しいテーマの作成、テーマのカスタマイズ、新しいテーマのアップロード、フォームでのテーマの使用、フロントエンドパイプラインでのテーマのカスタマイズ
+title: アダプティブFormsでテーマを作成して使用する方法は？
+description: テーマを使用して、コアコンポーネントを使用してアダプティブフォームのスタイルを設定し、視覚的な ID を付けることができます。 任意の数のアダプティブフォームで、テーマを共有できます。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2697'
 ht-degree: 17%
 
 ---
@@ -62,8 +60,8 @@ Forms as Cloud Serviceが提供する、コアコンポーネントベースの�
 
 * に慣れてください。 [Cloud Manager でのパイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) また、パイプラインの設定方法に関する基本的な知識を持つことで、テーマのカスタマイズを効率的に管理およびデプロイできます。
 * 方法を学ぶ [貢献者の役割を持つユーザーを構成する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). 貢献者の役割を持つユーザーを構成する方法を理解すると、テーマのカスタマイズに必要な権限を付与できます。
-* 最新リリースのをインストールする [Apache Maven。](https://maven.apache.org/download.cgi) Apache Maven は、Java™プロジェクトで一般的に使用されるビルド自動化ツールです。 最新のリリースをインストールすると、テーマのカスタマイズに必要な依存関係が確保されます。
-* プレーンテキストエディターをインストールします。 例： Microsoft® Visual Studio Code。 Microsoft® Visual Studio Code などのプレーンテキストエディターを使用すると、テーマファイルの編集と変更を行う際に使いやすい環境を提供します。
+* [Apache Maven の最新リリースをインストールします。](https://maven.apache.org/download.cgi) Apache Maven は、Java™プロジェクトで一般的に使用されるビルド自動化ツールです。 最新のリリースをインストールすると、テーマのカスタマイズに必要な依存関係が確保されます。
+* プレーンテキストエディターをインストールします。例： Microsoft® Visual Studio Code。 Microsoft® Visual Studio Code などのプレーンテキストエディターを使用すると、テーマファイルの編集と変更を行う際に使いやすい環境を提供します。
 
 ### 環境の設定
 
@@ -349,7 +347,7 @@ The `variable.scss` ファイルには、テーマのグローバル変数が含
 
 ##### 5.3 フロントエンドパイプラインの実行 {#run-a-frontend-pipeline}
 
-テーマは、 [フロントエンドパイプライン。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html) で使用される様々なキャッシュに分散されます。テーマをデプロイするには、次の手順を実行します。
+テーマは、 [フロントエンドパイプライン。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html)。テーマをデプロイするには、次の手順を実行します。
 
 1. AEM Cloud Manager リポジトリにログインします。
 1. クリック **[!UICONTROL 追加]** ボタンを **[!UICONTROL パイプライン]** 」セクションに入力します。

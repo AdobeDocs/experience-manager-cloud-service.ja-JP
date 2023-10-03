@@ -1,14 +1,12 @@
 ---
 title: XDP ベースのアダプティブフォームにおける XFA のサポート
-seo-title: XFA support in XDP-based Adaptive Forms
 description: アダプティブフォームでサポートされる XFA イベント、プロパティ、スクリプト、検証をリストします。
-seo-description: Lists supported XFA events, properties, scripts, and validation in Adaptive Forms.
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 100%

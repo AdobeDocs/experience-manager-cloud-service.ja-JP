@@ -1,12 +1,11 @@
 ---
-title: Formsas a Cloud Service通信の概要
-description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
-exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+title: Forms as a Cloud Service の通信の概要
+description: PDFAPI を使用して、ドキュメントの署名、認証、保護、通信生成プロセスの自動化、PDFドキュメントの別の形式への変換を行います。
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1426'
-ht-degree: 79%
+source-wordcount: '1433'
+ht-degree: 78%
 
 ---
 

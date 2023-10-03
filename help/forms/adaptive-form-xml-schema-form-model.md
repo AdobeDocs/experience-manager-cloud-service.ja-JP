@@ -1,14 +1,14 @@
 ---
 title: アダプティブフォームの XML スキーマのデザイン
-description: XML スキーマをアダプティブフォームのフォームモデルとして使用する方法を説明します。XML スキーマのサンプルをさらに詳しく調べて、XML スキーマを使用してフィールドに特別なプロパティを追加し、アダプティブフォームコンポーネントの許容値を制限します。
+description: アダプティブフォームの XML スキーマを作成し、そのスキーマに基づいてアダプティブフォームを作成して、スキーマ苦情データを生成する方法を説明します。
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 80%
+source-wordcount: '950'
+ht-degree: 77%
 
 ---
 

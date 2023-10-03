@@ -1,13 +1,13 @@
 ---
-title: アダプティブフォームのレビューの作成と管理
-description: レビューとは、レビュー担当者がタスクの割り当て手順を使用して、アダプティブフォームに対して様々なタスクを実行できるメカニズムです
+title: サイトページに埋め込まれた、または作成されたアダプティブFormsのレビューを作成および管理する方法を教えてください。
+description: レビューとは、レビュー担当者がタスクの割り当て手順を使用して、アダプティブフォームに対して様々なタスクを実行できるメカニズムです.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 95%
+source-wordcount: '358'
+ht-degree: 93%
 
 ---
 

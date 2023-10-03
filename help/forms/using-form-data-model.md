@@ -1,14 +1,14 @@
 ---
 title: フォームデータモデルの使用方法
-description: フォームデータモデルに基づいたアダプティブフォームおよびアダプティブフォームフラグメントの作成方法を説明します。フォームデータモデル内のデータモデルオブジェクトのサンプルデータを生成および編集することで、さらに深く掘り下げます。このデータを使用して、アダプティブフォームをプレビューおよびテストできます。
+description: フォームデータモデル (FDM) に基づいてアダプティブFormsとフラグメントを作成する方法を説明します。 FDM でデータモデルオブジェクトのサンプルデータを生成し、編集します。
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: a6e76d2b3650d57adafe543b2b694360e4bb4169
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1244'
-ht-degree: 64%
+source-wordcount: '1226'
+ht-degree: 61%
 
 ---
 

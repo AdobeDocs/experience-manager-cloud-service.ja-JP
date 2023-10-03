@@ -1,24 +1,22 @@
 ---
-title: 参照用のアダプティブフォームフラグメント
-seo-title: Reference Adaptive Form Fragments
-description: AEM Forms には、フォームを素早く作成するためにアセットとして使用できるアダプティブフォームフラグメントが用意されています。
-seo-description: AEM Forms provides Adaptive Form Fragments that you can use as assets to create a form quickly.
+title: 参照アダプティブフォームフラグメントとは
+description: AEM Formsにはアダプティブフォームフラグメントが用意されており、これをアセットとして使用すると、すばやくフォームを作成することができます。
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 79%
+source-wordcount: '423'
+ht-degree: 65%
 
 ---
 
 
 # 参照用のアダプティブフォームフラグメント {#reference-adaptive-form-fragments}
 
-アダプティブフォームフラグメントは、フォームの作成時に使用できるフィールドのグループまたはフィールドのグループを含むパネルです。これを使用してフォームを簡単にすばやく作成できます。サイドバーのアセットブラウザーを使用してアダプティブフォームフラグメントをフォームにドラッグアンドドロップし、それをフォームエディターで編集できます。
+アダプティブフォームフラグメントは、フォームの作成時に使用できるフィールドのグループまたはフィールドのグループを含むパネルです。これを使用してフォームを簡単にすばやく作成できます。サイドバーのアセットブラウザーを使用してアダプティブフォームフラグメントをフォームにドラッグ&amp;ドロップし、フォームエディターで編集することができます。
 
 アダプティブフォームの作成者に向けて、[!DNL AEM Forms] パッケージ [[!DNL AEM FORMS] REFERENCE FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS) で参照用のフラグメントが提供されています。これには、次のフラグメントが含まれます。
 
@@ -49,7 +47,7 @@ ht-degree: 79%
 
 ## 連絡先情報 {#contact-information}
 
-電話番号とメールアドレスを取得するためのフィールドが含まれています。
+電話番号と電子メールアドレスを取り込むためのフィールドが含まれます。
 
 ![連絡先情報フラグメント](assets/contact-info.png)
 
@@ -59,7 +57,7 @@ ht-degree: 79%
 
 ## クレジットカード情報 {#credit-card-information}
 
-支払い処理に使用できるクレジットカード情報を取得するためのフィールドが含まれています。[ ![クレジットカード情報フラグメント](assets/cc-info.png)](assets/cc-info-1.png)
+支払い処理に使用できるクレジットカード情報を取得するためのフィールドが含まれています。[![クレジットカード情報フラグメント](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## 現在の職業 {#current-employment}
 

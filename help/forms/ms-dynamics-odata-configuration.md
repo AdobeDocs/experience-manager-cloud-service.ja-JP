@@ -1,14 +1,14 @@
 ---
 title: ' [!DNL Microsoft Dynamics] OData の設定方法'
-description: ' [!DNL Microsoft Dynamics]  サービスで定義したエンティティ、属性、サービスに基づいて、フォームデータモデルを作成する方法について説明します。フォームデータモデルを使用して、 [!DNL Microsoft Dynamics]  サーバーと連動するアダプティブフォームを作成することにより、ビジネスワークフローを使用できるようになります。'
+description: で定義されたエンティティ、属性、サービスに基づいてフォームデータモデルを作成する方法を説明します。 [!DNL Microsoft Dynamics] サービス。
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 96%
+source-wordcount: '982'
+ht-degree: 94%
 
 ---
 

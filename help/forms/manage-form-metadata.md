@@ -1,19 +1,17 @@
 ---
-title: メタデータの管理
-seo-title: Manage [!DNL AEM Forms] metadata
+title: AEM Formsのメタデータの管理
 description: メタデータを使用すると、アセットの分類および編成を容易に行うことができ、特定のアセットを検索しやすくなります。
-seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1738'
 ht-degree: 73%
 
 ---
 
 # アダプティブフォームのメタデータの追加、削除、編集 {#manage-form-metadata}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象 [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 
 
 | バージョン | 記事リンク |
@@ -120,7 +118,7 @@ ht-degree: 73%
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>送信 URL</td> 
+   <td>URL を送信</td> 
    <td><p>フォームテンプレート</p> <p>PDF型</p> </td> 
    <td><p>フォームデータをサーブレットに送信するためのユーザー指定の URL を設定するには</p> <p>送信 URL は、次の方法（優先順）のいずれかを使用して設定できます。</p> 
     <ul> 
@@ -154,7 +152,7 @@ ht-degree: 73%
    <td><p>アダプティブフォーム</p> <p>フォームテンプレート</p> <p>リソース</p> </td> 
    <td><p>このフォームが関連するアセット（他のフォームまたはリソース）のリスト。 これらのアセットは、次の 2 つのカテゴリに分類できます。</p> 
     <ul> 
-     <li>参照：現在のフォームが参照しているアセット。</li> 
+     <li>参照先：現在のフォームが参照しているアセット。</li> 
      <li>参照元：現在のアセットを参照しているアセット。</li> 
     </ul> <p>これらのアセットはリンクとして表示され、リンクをクリックすると、そのメタデータに直接アクセスできます。<br /> </p> </td> 
   </tr> 
@@ -291,8 +289,8 @@ ht-degree: 73%
 
 1. ドラッグしたコンポーネントをクリックします。右のパネルに開いた「設定」タブで、次のフィールドに情報を入力します。
 
-   1. スキーマに配置されたフィールドの上に表示名として使用するフィールドラベルを指定します ( 例：部門 )
-   1. 「プロパティにマッピング」フィールドの下に、事前入力された値が表示されます **&#39;./jcr:content/metadata/default&#39;**. &#39;**デフォルト**&#39;を目的のプロパティ名に追加します。この名前は、crx リポジトリにプロパティを保存するために使用されます ( 例：&#39;./jcr:content/metadata/department&#39;）。
+   1. スキーマに配置されたフィールドの上に表示名として使用するフィールドラベルを指定します（例：部門）。
+   1. 「プロパティにマッピング」フィールドの下に、事前入力された値が表示されます **&#39;./jcr:content/metadata/default&#39;**. &#39;**デフォルト**&#39;を目的のプロパティ名に追加します。これは、crx リポジトリにプロパティを保存するために使用されます ( 例： &#39;./jcr:content/metadata/department&#39;）。
 
       >[!NOTE]
       >

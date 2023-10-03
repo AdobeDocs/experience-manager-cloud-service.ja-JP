@@ -1,14 +1,14 @@
 ---
-title: 既知の問題と制限事項
-description: ' [!DNL AEM Forms] as a Cloud Service 環境の既知の問題と制限事項'
+title: ' [!DNL AEM Forms] as a Cloud Service 環境の既知の問題と制限事項'
+description: ' [!DNL AEM Forms] as a Cloud Service 環境の既知の問題と制限事項.'
 contentOwner: khsingh
 role: User, Developer
 level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '364'
 ht-degree: 90%
 
 ---

@@ -1,17 +1,17 @@
 ---
 title: アダプティブフォームで  [!DNL Adobe Sign]  を使用する方法
-description: アダプティブフォームで電子サイン（[!DNL Adobe Sign]）ワークフローを有効にすると、署名ワークフローが自動化され、単一署名プロセスと複数署名プロセスが簡素化されるほか、モバイルデバイスでフォームを電子的に署名できるようになります。
+description: アダプティブフォーム内でAdobe Signを使用すると、フォームの受信者は、デバイスや場所を選択して、E 署名を行うことができます。
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '3173'
-ht-degree: 97%
+source-wordcount: '3169'
+ht-degree: 96%
 
 ---
-
 
 # アダプティブフォームでの [!DNL Adobe Sign] の使用 {#using-adobe-sign-in-an-adaptive-form}
 

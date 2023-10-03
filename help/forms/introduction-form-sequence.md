@@ -1,20 +1,20 @@
 ---
-title: 複数ステップのフォームシーケンスの作成方法
-description: ' [!DNL Experience Manager Forms] を使用すると、アダプティブフォームのナビゲーションや記入を行う一連のフォームパネルを定義できます。複数ステップのフォームシーケンスを作成する例として、使用例のアプローチを使用し、詳しく調べます。 '
+title: 複数手順のフォームシーケンスの作成方法
+description: ' [!DNL Experience Manager Forms] を使用すると、アダプティブフォームのナビゲーションや記入を行う一連のフォームパネルを定義できます。'
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 77%
+source-wordcount: '547'
+ht-degree: 76%
 
 ---
 
 # 複数ステップのフォームシーケンスの概要 {#introduction-to-multi-step-form-sequence}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象 [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -35,7 +35,7 @@ ht-degree: 77%
 
    この例では、次のパネルを追加できます。
 
-   * **[!UICONTROL 塗り]**:データを取得するためのフォームフィールドが含まれます。 ここではネストされたサブパネルを追加して、様々な種類の情報（個人、家族、財務など）のセクションを作成できます。
+   * **[!UICONTROL 塗り]**：データを取得するためのフォームフィールドが含まれます。 ここではネストされたサブパネルを追加して、様々な種類の情報（個人、家族、財務など）のセクションを作成できます。
 
    <!--* **[!UICONTROL Verify]**: It contains the **[!UICONTROL Verify]** component that can be used in an XFA-based Adaptive Form. It displays the information captured in the Fill panel in read-only mode for verification.-->
 

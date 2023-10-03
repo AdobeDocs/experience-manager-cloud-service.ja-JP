@@ -1,12 +1,10 @@
 ---
-title: アセットの読み込みと書き出し
-seo-title: Import and export assets to [!DNL AEM Forms]
-description: アダプティブフォームおよび関連アセットを AEM インスタンスに読み込んだり書き出したりできます。これは、フォームを移行したり、複数のシステム間で移動したりするのに役立ちます。
-seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+title: アセットの読み込みと書き出しの方法 [!DNL AEM Forms]?
+description: アダプティブフォームで DocuSign を使用して電子署名を収集する方法を説明します。
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 97%
+source-wordcount: '1314'
+ht-degree: 95%
 
 ---
 

@@ -1,11 +1,11 @@
 ---
-title: 考慮事項の既知の問題とベストプラクティス
-description: 通信のベストプラクティス、既知の問題および制限
+title: AEM Formsの既知の問題とベストプラクティスに関する考慮事項
+description: AEM Forms Communication API に関する既知の問題とベストプラクティスを考慮します。
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '1709'
-ht-degree: 100%
+source-wordcount: '1716'
+ht-degree: 98%
 
 ---
 

@@ -1,10 +1,11 @@
 ---
-title: Adaptive Formsへの脚注のサポート
-description: 情報のリッチテキスト脚注を使用して、アダプティブFormsを強化します。 ユーザーエクスペリエンスとエンゲージメントを向上させます。
-source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
+title: 脚注のサポート アダプティブForms内
+description: アダプティブフォーム内の脚注にリッチテキストエディター (RTE) を使用します。
+exl-id: f04dae84-daab-42f8-876f-02fe426f62be
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 78%
+source-wordcount: '438'
+ht-degree: 79%
 
 ---
 

@@ -1,15 +1,15 @@
 ---
-title: アダプティブフォーム向けのレコードのドキュメントの生成
-description: ここでは、アダプティブフォーム向けのレコードのドキュメント（DoR）テンプレートを生成する方法について説明します。
+title: アダプティブFormsのレコードのドキュメントを生成する方法は？
+description: アダプティブFormsコアコンポーネント用のレコードのドキュメント (DoR) のテンプレートを生成する方法を説明します。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '3105'
-ht-degree: 97%
+source-wordcount: '3107'
+ht-degree: 96%
 
 ---
 
-# アダプティブフォームにおけるレコードのドキュメントの生成 (コアコンポーネント)
+# アダプティブForms（コアコンポーネント）用のレコードのドキュメントを生成する
 
 ## 概要 {#overview}
 

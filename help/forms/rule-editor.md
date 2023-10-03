@@ -1,13 +1,13 @@
 ---
-title: アダプティブフォームのルールエディターの使い方
-description: アダプティブFormsのルールエディターを使用すると、コーディングやスクリプティングをおこなわずに、動的な動作を追加し、複雑なロジックをフォームに作成できます。 ルールとルール構文の選択ガイドラインの理解について説明します。ルールエディターで利用可能な演算子のタイプとイベントについて詳しく説明します。
+title: アダプティブFormsのルールエディターとは
+description: アダプティブフォームルールエディターを使用すると、コーディングやスクリプトの作成を行わずに、動的な動作を追加し、複雑なロジックをフォームに組み込むことができます。
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 21db924a8d925f9964cc7af6743764c119208159
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '6446'
+source-wordcount: '6422'
 ht-degree: 75%
 
 ---

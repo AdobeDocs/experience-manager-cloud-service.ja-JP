@@ -1,13 +1,12 @@
 ---
-title: AEM Sites ページへのアダプティブフォームの埋め込み
-seo-title: How to add an Adaptive Form to an AEM Sites page?
-description: アダプティブForms — 埋め込みコンポーネントを使用して、AEM SitesページにアダプティブFormsを埋め込むことができます。これにより、AEM Sitesページを離れることなく、フォームに入力して送信できます。
+title: アダプティブフォームをAEM Sitesページに追加する方法は？
+description: アダプティブFormsを、AEMの外部でホストされているAEM Sitesページや Web ページにシームレスに埋め込みます。
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: d9dee0b5a070da6a19004c749f69c724fff9d967
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '3177'
+source-wordcount: '3165'
 ht-degree: 34%
 
 ---

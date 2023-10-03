@@ -1,18 +1,16 @@
 ---
-title: アクセシブルなアダプティブフォームの作成
-seo-title: Creating accessible Adaptive Forms
-description: AEM Forms には、アクセシビリティ標準に準拠できるように、アクセシブルなアダプティブフォームを作成するためのツールが用意されています。
-seo-description: AEM Forms provides you tools and to create accessible Adaptive Forms and helps comply with accessibility standards.
+title: アクセシブルなアダプティブFormsの作成方法
+description: AEM Formsには、アクセシブルなアダプティブFormsを作成し、アクセシビリティ標準に準拠するためのツールが用意されています。
 uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 77%
+source-wordcount: '2025'
+ht-degree: 76%
 
 ---
 
@@ -128,7 +126,7 @@ Ultramarine-Accessible テーマを既存のアダプティブフォームに適
 
 ### 3. 画像の代替テキストの提供 {#provide-text-equivalents-for-images}
 
-画像は、一部のユーザーに対して理解度を高めるのに役立ちます。 ただし、スクリーンリーダーを使用するユーザーの場合、画像を使用するとフォームのアクセシビリティが低下します。 画像を使用する場合は、すべての画像に対してテキストの説明を入力します。
+画像は、一部のユーザーに対して理解度の向上に役立ちます。 ただし、スクリーンリーダーを使用するユーザーの場合、画像を使用するとフォームのアクセシビリティが低下します。 画像を使用する場合は、すべての画像に対してテキストの説明を入力します。
 
 このテキストは、フォーム内のオブジェクトとその目的を説明するものです。 スクリーンリーダーは、画像を検出した場合に、この代替テキストを読み上げます。 画像には常に代替テキストを指定する必要があります。
 
@@ -156,7 +154,7 @@ Ultramarine-Accessible テーマを既存のアダプティブフォームに適
 |---|---|
 | フォーム内でカーソルを前に移動する | タブ |
 | フォーム内でカーソルを後ろに移動する | Shift + Tab |
-| 次のパネルに移動 | Alt +右矢印 |
+| 次のパネルに移動 | Alt +右矢印キー |
 | 前のパネルに移動 | Alt +左向き矢印 |
 | フォーム内の入力済みデータをリセット | Alt + R |
 | フォームを送信 | Alt + S |

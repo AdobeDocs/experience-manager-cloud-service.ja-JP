@@ -1,14 +1,12 @@
 ---
-title: リファレンステーマ
-seo-title: Reference Themes
-description: AEM Forms には、ソフトウェア配布から取得してフォームのスタイル設定に使用できるアダプティブフォームテーマが用意されています。
-seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
+title: AEM Forms Reference Assets
+description: すぐに使い始めるために用意されている参照用アダプティブフォームのテーマ、テンプレート、フォームデータモデルを使用します。
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
-source-git-commit: 50d4be07b9563fb5047e9b313ae604cd7633a0e2
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 78%
+source-wordcount: '513'
+ht-degree: 96%
 
 ---
 
@@ -28,7 +26,7 @@ ht-degree: 78%
 * Urbane
 * Canva
 
-各テーマには、ユーザー向けの快適なアダプティブフォームを作成するために使用できる、独自のエレガントなスタイルが含まれています。 パネル、テキストボックス、数値ボックス、ラジオボタン、テーブル、スイッチなど、セレクターに固有のスタイルが設定されています。 これらのテーマのスタイルは、要件に基づいています。 例えば、特定のシナリオでは、クリーンなフォントを備えたミニマリストテーマが必要です。 Urbane テーマなら、その外観を実現できます。
+各テーマには、独自のエレガントなスタイルが含まれていて、ユーザー向けの使いやすいアダプティブフォームの作成に使用できます。パネル、テキストボックス、数値ボックス、ラジオボタン、表、スイッチなど、セレクター用の独自のスタイル設定が含まれています。これらのテーマ内のスタイルは、要件に基づいたものです。例えば、あるシナリオで、クリーンなフォントを含む最小限のテーマが必要だとします。Urbane テーマなら、その外観を実現できます。
 
 ![リファレンステーマ](/help/forms/assets/ref-themes.png)
 
@@ -75,7 +73,7 @@ Liberty theme uses a minimalist approach to highlight the important. For example
 
 ### Tranquil {#tranquil}
 
-Tranquil テーマは、Tranquil カラースキームの明るい色合いと暗い色合いを提供し、フォームの様々なコンポーネントをハイライトします。 例えば、ラジオボタン、パネル、タブでは、異なるグリーンのシェードが表示されます。
+Tranquil テーマは、Tranquil カラースキームの明るいシェーディングと暗いシェーディングを提供して、フォームの様々なコンポーネントを強調します。例えば、ラジオボタン、パネル、タブが、様々なシェーディングの緑色になります。
 
 ![Tranquil テーマ](/help/forms/assets/tranquil.png)
 
@@ -83,7 +81,7 @@ Tranquil テーマは、Tranquil カラースキームの明るい色合いと�
 
 ### Ultramarine {#ultramarine}
 
-Ultramarine テーマでは、濃い青色のシェードを使用して、タブ、パネル、テキストボックス、ボタンなどのコンポーネントをハイライトします。
+Ultramarine テーマは、濃い青色のシェーディングを使用して、タブ、パネル、テキストボックス、ボタンなどのコンポーネントを強調します。
 
 ![Ultramarine テーマ](/help/forms/assets/ultramarine.png)
 <!--[Click to enlarge](assets/ultramarine-1.png)-->

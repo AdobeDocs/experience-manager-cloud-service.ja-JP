@@ -1,13 +1,18 @@
 ---
-title: アダプティブFormsでの reCAPTCHA の使用
-description: アダプティブFormsでGoogle reCAPTCHA サービスを設定する方法を説明します。
+title: アダプティブFormsでの CAPTCHA の使用方法は？
+description: アダプティブフォームにAEM CAPTCHA またはGoogle reCAPTCHA サービスを設定する方法を説明します。
+uuid: 0e11e98a-12ac-484c-b77f-88ebdf0f40e5
+contentOwner: vishgupt
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
-source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
+exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 74%
+source-wordcount: '1935'
+ht-degree: 73%
 
 ---
+
 
 # アダプティブFormsでの reCAPTCHA の使用 {#using-reCAPTCHA-in-adaptive-forms}
 

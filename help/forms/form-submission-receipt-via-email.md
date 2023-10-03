@@ -1,14 +1,15 @@
 ---
-title: メールによるフォーム送信確認の送信
-description: AEM Formsでは、フォームの送信時に確認応答をユーザーに送信する電子メール送信アクションを設定できます。
+title: AEM Formsで電子メールを使用してフォーム送信確認を送信する方法は？
+description: AEM Formsでは、フォーム送信時に確認応答をユーザーに送信する電子メール送信アクションを設定できます。
+uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 94%
+source-wordcount: '371'
+ht-degree: 91%
 
 ---
 

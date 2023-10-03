@@ -1,19 +1,14 @@
 ---
-title: フォームとドキュメントの公開と非公開
-seo-title: Publishing and unpublishing forms and documents
-description: フォームの公開と非公開をスケジュールできます。公開されたフォームはパブリッシュインスタンスに複製されます。
-seo-description: You can schedule publishing and unpublishing of forms. Published forms are replicated on the publish instance.
-uuid: 0bad5608-b7a8-4599-81cc-2cd0a3dc7dd5
+title: フォームとドキュメントを発行および非公開にする方法
+description: アダプティブFormsの公開と非公開をスケジュールします。 公開されたフォームはパブリッシュインスタンスに複製されます。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-content-strategy: max-2018
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+docset: aem65s
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 85%
+source-wordcount: '1335'
+ht-degree: 84%
 
 ---
 
@@ -71,14 +66,13 @@ ht-degree: 85%
    1. 次のいずれかを実行し、「公開」をタップします。
 
       * カード表示になっている場合は、「**[!UICONTROL 選択を入力]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)」をタップし、アセットをタップします。アセットが選択されます。
-      * リスト表示の場合は、アセットのチェックボックスを選択します。 アセットが選択されます。
+      * リスト表示の場合は、アセットのチェックボックスをオンにします。 アセットが選択されます。
       * 詳細を表示するアセットを表示します。
       * 「プロパティを表示 ![viewproperties](assets/viewproperties.png)」をタップしてアセットのプロパティを表示します。
 
       >[!NOTE]
       >
       >複数のアセットを選択しないでください。複数のアセットを一度に公開することはサポートされていません。
-
 
 1. 公開プロセスが始まるときに、確認ダイアログが表示され、関連するすべてのアセットとリソースが表示されます。関連アセットを含むダイアログボックスで、「**[!UICONTROL 公開]**」をタップします。アセットが公開され、「アセット公開成功」ダイアログが表示されます。
 
@@ -193,7 +187,7 @@ ht-degree: 85%
 
 選択したユーザーがアクセスできるフォームの認証を有効にすることができます。 フォームの認証を有効にすると、ユーザーはアクセス前にログイン画面を表示します。 フォームにアクセスできるのは、認証済みの資格情報を持つユーザーだけです。
 
-フォームの認証を有効にするには：
+フォームの認証を有効にするには、次の手順を実行します。
 
 1. ブラウザーで、パブリッシュインスタンスの configMgr を開きます。\
    URL：`https://<hostname>:<PublishPort>/system/console/configMgr`
