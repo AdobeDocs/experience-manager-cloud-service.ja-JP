@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 description: Adobe Experience Manager as a Cloud Serviceの画像管理システムのサポート
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '1978'
 ht-degree: 39%
 
 ---
@@ -21,9 +21,7 @@ ht-degree: 39%
 >
 >詳しくは、 [管理者向けAEMへのアクセスの設定](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) を参照してください。 また、Adobe IMSユーザー、ユーザーグループ、製品プロファイルを使用して、AEMとその機能へのアクセスを制御する方法についても説明します。 Adobe ID が必要です。
 
->[!NOTE]
->
->AEM では、現在、プロファイルへのグループの割り当てをサポートしていません。代わりに、ユーザーを個別に追加する必要があります。
+{{ims-group-profiles}}
 
 ## 主なハイライト {#key-highlights}
 
@@ -48,7 +46,7 @@ IMS 認証は、AEM と Adobe IMS エンドポイントの間で OAuth プロト
 
 Adobe Admin Console にお客様をオンボーディングすることは、AEM 認証に Adobe IMS を使用するための前提条件です。
 
-最初の手順として、組織がAdobe IMSでプロビジョニングされている必要があります。 Adobeの企業のお客様は、 [Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html). この領域は、Adobeのお客様が自社製品に対するユーザーおよびグループの使用権限を管理するために使用するポータルです。
+最初の手順として、組織がAdobe IMSでプロビジョニングされている必要があります。 Adobeの大規模法人のお客様は、 [Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html). この領域は、Adobeのお客様が自社製品に対するユーザーおよびグループの使用権限を管理するために使用するポータルです。
 
 AEMのお客様は、既に組織をプロビジョニングしておく必要があります。また、IMS プロビジョニングの一環として、ユーザーの使用権限とアクセスを管理するために、Admin Console内で顧客インスタンスを使用できるようになります。
 
@@ -142,7 +140,7 @@ Adobe IMS を OAuth プロバイダーとして設定することが全体的な
 
 各製品コンテキストインスタンスの下に、実稼動、ステージ、または開発環境全体でオーサーサービスまたはパブリッシュサービスにまたがるインスタンスがあります。 各インスタンスは、製品プロファイルまたは Cloud Manager の役割に関連付けられています。 これらの製品プロファイルは、必要な特権を持つユーザーおよびグループにアクセス権を割り当てるために使用されます。
 
-この **AEM Administrators_xxx** プロファイルは、関連するAEMインスタンスで管理者権限を付与するために使用されます。 **AEM Users_xxx** プロファイルは、通常のユーザーを追加するために使用されます。
+The **AEM Administrators_xxx** プロファイルは、関連するAEMインスタンスで管理者権限を付与するために使用されます。 **AEM Users_xxx** プロファイルは、通常のユーザーを追加するために使用されます。
 
 この製品プロファイルの下に追加されたユーザーとグループは、次の例に示すように、そのインスタンスにログオンできます。
 
@@ -205,7 +203,7 @@ AEM では、IMS から同期されたユーザーグループを既存のロー
 
 ![ACL3](/help/security/assets/ims17.png)
 
-以下に示すように、グループは **AEM-GRP_008** はの権限と権限を継承します。 **DAM ユーザー**. この継承は、同期されたグループの権限を効果的に管理する方法であり、LDAP ベースの認証方法で一般的に使用されます。
+以下に示すように、グループは **AEM-GRP_008** は、の権限と権限を継承します。 **DAM ユーザー**. この継承は、同期されたグループの権限を効果的に管理する方法であり、LDAP ベースの認証方法で一般的に使用されます。
 
 ![ACL3](/help/security/assets/ims18.png)
 
@@ -243,7 +241,7 @@ Cloud Manager の特定の機能の可用性を管理するユーザーの役割
 
 内のAEMインスタンスにアクセスするには **Admin Console**&#x200B;の製品リストに、 Cloud Manager プログラムとプログラム内の環境が表示されます。 **Admin Console**.
 
-例えば、以下のスクリーンショットには、次の 2 つの使用可能な環境が表示されます。 *開発者* および *公開*.
+例えば、以下のスクリーンショットには、次の 2 つの使用可能な環境が表示されます。 *dev author* および *公開*.
 
 ![ACL3](/help/security/assets/ims19.png)
 

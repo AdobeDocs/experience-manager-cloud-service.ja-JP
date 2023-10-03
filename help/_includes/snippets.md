@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8304ab7999ad467ef5966a6aec143416c8158f78
+source-git-commit: cada650e940aa941538a43ffb1f9a16d1f0b8a61
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 55%
+source-wordcount: '83'
+ht-degree: 59%
 
 ---
 # スニペット {#snippets}
@@ -14,3 +14,9 @@ ht-degree: 55%
 ## Edge Delivery Servicesオーサリング {#edge-delivery-authoring}
 
 [!BADGE Edge Delivery Services向けのAEMコンテンツをオーサリングする場合は、ここをクリックしてください。]{type=Positive url="/help/edge/overview.md" tooltip="Edge Delivery Services向けのAEMコンテンツのオーサリング"}
+
+## プロファイルへのグループ割り当てに対する IMS のサポート {#ims-group-profiles}
+
+>[!NOTE]
+>
+>AEM では、現在、プロファイルへのグループの割り当てをサポートしていません。代わりに、ユーザーを個別に追加する必要があります。
