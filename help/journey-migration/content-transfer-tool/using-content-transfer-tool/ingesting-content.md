@@ -2,10 +2,10 @@
 title: コンテンツの取り込みCloud Service
 description: Cloud Acceleration Manager を使用して、移行セットから宛先Cloud Serviceインスタンスにコンテンツを取り込む方法を説明します。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 5c482e5f883633c04d70252788b01f878156bac8
+source-git-commit: a6d19de48f114982942b0b8a6f6cbdc38b0d4dfa
 workflow-type: tm+mt
-source-wordcount: '2142'
-ht-degree: 32%
+source-wordcount: '2191'
+ht-degree: 28%
 
 ---
 
@@ -20,9 +20,6 @@ ht-degree: 32%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=ja#top-up-extraction-process" text="追加抽出"
 
 Cloud Acceleration Manager を使用して移行セットを取り込むには、次の手順に従います。
-
->[!NOTE]
->この取り込みのサポートチケットを忘れずにログに記録しましたか？[コンテンツ転送ツールを使用する前の重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja#important-considerations)を参照して、取り込みを成功させるためのその他の考慮事項を確認してください。
 
 1. Cloud Acceleration Manager に移動します。プロジェクトカードをクリックし、「コンテンツ転送」カードをクリックします。 に移動します。 **取り込みジョブ** をクリックします。 **新しい取り込み**
 
@@ -120,21 +117,27 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 > 「移行トークン」フィールドが表示されるのは、そのトークンの取得が実際には許可されていない場合があるためです。手動で指定できるようにすることで、ユーザーは追加のヘルプなしで、すばやく取り込みを開始できます。 トークンが指定され、メッセージが表示される場合は、トークンの取得に問題はありませんでした。
 
 * AEM as a Cloud Serviceは環境の状態を維持し、通常の様々な理由で移行サービスを再起動する必要が生じる場合があります。 そのサービスが再起動中の場合は、そのサービスには到達できませんが、最終的に使用可能になります。
-* 別のプロセスがインスタンス上で実行されている可能性があります。 例えば、Release Orchestrator が更新を適用している場合、システムがビジー状態で、移行サービスが定期的に使用できない可能性があります。 これと、ステージインスタンスまたは実稼動インスタンスが破損する可能性が、取り込み中に更新を一時停止することを強くお勧めする理由です。
+* 別のプロセスがインスタンス上で実行されている可能性があります。 例えば、 [AEMバージョンの更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=ja) 更新を適用中です。システムがビジー状態で、移行サービスが定期的に使用できない可能性があります。 その後、取り込みの開始を再試行できます。
 * 次の場合、 [IP許可リストに加えるが適用されました](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Cloud Manager を通じて、 Cloud Acceleration Manager が移行サービスに到達するのをブロックします。 アドレスが動的なので、取り込み用に IP アドレスを追加できません。 現在、唯一の解決策は、取り込みの実行中に IP 許可リストを無効にすることです。
 * 調査を要する他の理由がある場合があります。 それでも取り込みに失敗する場合は、Adobeカスタマーケアにお問い合わせください。
 
-### リリースオーケストレーターによる自動更新は引き続き有効です
+### AEMバージョンの更新と取り込み
 
-リリースオーケストレーターは、更新を自動的に適用することで、環境を自動的に最新の状態に保ちます。取り込みの実行時に更新がトリガーされると、環境の破損を含む予期しない結果が生じる可能性があります。 取り込みを開始する前にカスタマーサポートチケットをログに記録する適切な理由（上記の「注意」を参照）。これにより、Release Orchestrator を一時的に無効にするようにスケジュールできます。
+[AEMバージョンの更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=ja) は、最新のAEM as a Cloud Serviceバージョンを使用して最新の状態に保つために、環境に自動的に適用されます。 取り込みの実行時に更新がトリガーされると、環境の破損を含む予期しない結果が生じる可能性があります。
 
-取り込みの開始時に Release Orchestrator が実行中である場合は、ユーザーインターフェイスにこのメッセージが表示されます。 フィールドをチェックしてもう一度ボタンを押すことにより、リスクを受け入れて続行することを選択できます。
+「AEM Version Updates」が宛先プログラムでオンボーディングされている場合、取り込みプロセスは、キューを開始する前に無効にしようとします。 取り込みが完了すると、バージョンアップデータの状態が、取り込みが開始される前の状態に戻ります。
 
 >[!NOTE]
 >
-> Release Orchestrator は現在開発環境にデプロイされているので、これらの環境での一時停止更新もおこなう必要があります。
+> 「AEMバージョンの更新」を無効にするために、サポートチケットをログに記録する必要はなくなりました。
 
-![画像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
+「AEM Version Updates」がアクティブな場合（更新が実行中、または実行待ちのキューに入れられている場合）、取り込みは開始されず、ユーザーインターフェイスに次のメッセージが表示されます。 更新が完了したら、取り込みを開始できます。 Cloud Manager を使用して、プログラムのパイプラインの現在の状態を確認できます。
+
+>[!NOTE]
+>
+> 「AEM Version Updates」は、環境のパイプラインで実行され、パイプラインがクリアされるまで待ちます。 更新が予想より長い時間キューに入れられている場合は、カスタムワークフローでパイプラインが意図せずロックされていないことを確認します。
+
+![画像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
 ### 追加取り込みエラー 一意性制約違反による
 
