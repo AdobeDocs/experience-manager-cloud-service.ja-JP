@@ -1,21 +1,21 @@
 ---
-title: コンテキストでの編集
-description: ユニバーサルエディターを使用して、任意の実装で、その場で、コンテンツの任意の側面をコンテキスト内で編集する方法を説明します。
+title: ユニバーサルエディターを使用したコンテキストでの編集
+description: ユニバーサルエディターを使用して、任意の実装でコンテンツのあらゆる側面を適切に、コンテキスト内で編集する方法を学びます。
 hidefromtoc: true
 index: false
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
+source-git-commit: 226df8999d1344ffe8acb2a9ce75b58634300a11
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '971'
 ht-degree: 9%
 
 ---
 
-
-# コンテキストでの編集 {#editing-in-context}
+# ユニバーサルエディターを使用したコンテキストでの編集 {#editing-in-context}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="コンテキスト内編集"
+>title="ユニバーサルエディターを使用したコンテキストでの編集"
 >abstract="ヘッドレスアプリでユニバーサルエディターを活用して、作成者にスムーズなコンテキスト内編集機能を提供する方法を説明します。"
 
 >[!CONTEXTUALHELP]
