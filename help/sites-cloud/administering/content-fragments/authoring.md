@@ -3,13 +3,13 @@ title: コンテンツフラグメントのオーサリング
 description: コンテンツフラグメントのコンテンツを作成する方法を理解し、目的に応じてそのコンテンツのバリエーションを作成します。 これにより、ヘッドレス配信とページオーサリングの両方の柔軟性が向上します。
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
+exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
+source-git-commit: e92e0d76ed5aa904c3e16bcfda13650fb6a8b5b6
 workflow-type: tm+mt
-source-wordcount: '2249'
+source-wordcount: '2253'
 ht-degree: 4%
 
 ---
-
 
 # コンテンツフラグメントのオーサリング {#authoring-content-fragments}
 
@@ -32,23 +32,9 @@ ht-degree: 4%
 * 次の機能を持つ [親参照を表示して開く](#view-parent-references).
 * コンテンツフラグメントの階層表示とその参照 ( [構造ツリー](#structure-tree).
 
->[!CAUTION]
+>[!WARNING]
 >
 >この節で説明するエディターは、です。 *のみ* 次の場所で使用可能： *オンライン* Adobe Experience Manager(AEM)as a Cloud Service。
-
->[!CAUTION]
->
->コンテンツフラグメントを編集するには、 [適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). 問題が発生している場合は、システム管理者に問い合わせてください。
-> 
->例えば、 `edit` 権限エディターは読み取り専用になります。
-
->[!NOTE]
->
->詳しくは、 Assets のドキュメントを参照してください [元のコンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-variations.md)  — 両方から利用できます **Assets** コンソールと **コンテンツフラグメント** コンソール。
-
->[!NOTE]
->
->必要に応じて、プロジェクトチームがエディターをカスタマイズできます。 詳しくは、 [コンテンツフラグメントコンソールおよびエディターのカスタマイズ](/help/implementing/developing/extending/content-fragments-console-and-editor.md) 詳しくは、を参照してください。
 
 ## コンテンツフラグメントエディター {#content-fragment-editor}
 
@@ -76,12 +62,6 @@ ht-degree: 4%
    * if **タブプレースホルダー** フィールドは、ここに表示されるモデル内で定義され、ナビゲーションに使用できます。フィールドは水平方向に表示されるか、ドロップダウンリストとして表示されます
 
 ![コンテンツフラグメントエディター — 概要](assets/cf-authoring-overview.png)
-
->[!CAUTION]
->
->コンテンツフラグメントモデルでは、多くの場合、 **タイトル** および **説明**. これらのフィールドが存在する場合、それらはユーザー定義のフィールドであり、 *中央パネル* フラグメントの編集中に
->
->コンテンツフラグメントとそのバリエーションには、とも呼ばれるメタデータフィールド（バリエーションのプロパティ）もあります。 **タイトル** および **説明**. これらのフィールドは、コンテンツフラグメントの不可欠な部分で、フラグメントの作成時に最初に定義されます。 これらは、 *右パネル* フラグメントの編集中に
 
 ## コンテンツフラグメント構造に移動する {#navigate-structure}
 
@@ -494,3 +474,19 @@ The **フィールド** パネルには、コンテンツフラグメント内�
   </tr>
  </tbody>
 </table>
+
+## 役に立つ知識 {#good-to-know}
+
+さらに、
+
+* コンテンツフラグメントを編集するには、 [適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). 問題が発生している場合は、システム管理者に問い合わせてください。
+
+  例えば、 `edit` 権限エディターは読み取り専用になります。
+
+* コンテンツフラグメントモデルでは、多くの場合、 **タイトル** および **説明**. これらのフィールドが存在する場合、それらはユーザー定義のフィールドであり、 *中央パネル* フラグメントの編集中に
+
+  コンテンツフラグメントとそのバリエーションには、とも呼ばれるメタデータフィールド（バリエーションのプロパティ）もあります。 **タイトル** および **説明**. これらのフィールドは、コンテンツフラグメントの不可欠な部分で、フラグメントの作成時に最初に定義されます。 これらは、 *右パネル* フラグメントの編集中に
+
+* 詳しくは、 Assets のドキュメントを参照してください [元のコンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-variations.md)  — 両方から利用できます **Assets** コンソールと **コンテンツフラグメント** コンソール。
+
+* 必要に応じて、プロジェクトチームがエディターをカスタマイズできます。 詳しくは、 [コンテンツフラグメントコンソールおよびエディターのカスタマイズ](/help/implementing/developing/extending/content-fragments-console-and-editor.md) 詳しくは、を参照してください。
