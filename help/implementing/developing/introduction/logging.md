@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 向けのログ
 description: AEM as a Cloud Serviceのログを使用して、中央のログサービスのグローバルパラメーター、個々のサービス固有の設定、データログの要求方法を設定する方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 7d4e1acee54ebcb1398bcc6ab83491e3fa6a8801
+source-git-commit: 8f20876be6b01e1994fb8f91d4a1b4a113588a3e
 workflow-type: tm+mt
-source-wordcount: '2669'
+source-wordcount: '2657'
 ht-degree: 82%
 
 ---
@@ -501,11 +501,6 @@ Define DISP_LOG_LEVEL debug
 >AEM as a Cloud Service 環境の場合、デバッグの冗長レベルは最大になります。トレースログレベルはサポートされていないので、クラウド環境で作業する場合は設定しないでください。
 
 ## CDN ログ {#cdn-log}
-
->[!NOTE]
->
->この機能は、9 月上旬に徐々にお客様に提供されるようになっています。
->
 
 AEM as a Cloud Serviceは CDN ログにアクセスできます。これは、キャッシュヒット率の最適化などの使用例に役立ちます。 CDN ログ形式はカスタマイズできず、情報、警告、エラーなどの様々なモードに設定する概念もありません。
 
