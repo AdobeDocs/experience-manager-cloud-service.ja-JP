@@ -1,16 +1,16 @@
 ---
-title: 外部 Web ページへのアダプティブフォームの埋め込み
-description: 外部 Web ページにアダプティブフォームを埋め込む方法について学びましょう
+title: コアコンポーネントに基づくアダプティブフォームを外部 Web ページに埋め込むにはどうすればよいですか？
+description: Web サイトにアダプティブFormsを埋め込む方法を説明します。
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
-source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
+exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 64%
+source-wordcount: '984'
+ht-degree: 62%
 
 ---
-
 
 # コアコンポーネントに基づいたアダプティブフォームを外部 Web ページに埋め込む {#embed-adaptive-form-in-external-web-page}
 
@@ -162,6 +162,3 @@ Web ページにアダプティブフォームを埋め込む際は、次のベ�
 1. AEM パブリッシュインスタンスで、AEM Web Console Configuration Manager（`https://'[server]:[port]'/system/console/configMgr`）に移動します。
 1. **Apache Sling Referrer Filter** 構成を探して開きます。
 1. 「許可済みホスト」フィールドで、web ページが存在するドメインを指定します。これにより、ホストは AEM サーバーに POST リクエストをできるようになります。また、正規表現を使用して、一連の外部アプリケーションドメインを指定することもできます。
-
-
-

@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9146bf7222ad3cb74e6558868c41b822364ef3f0
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '4296'
+source-wordcount: '4308'
 ht-degree: 91%
 
 ---
@@ -569,7 +569,8 @@ ht-degree: 91%
          + [アダプティブForms Analytics レポートの表示と理解](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [アダプティブフォームと Microsoft Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)
          + [AEM Sites ページへのアダプティブフォームの埋め込み](/help/forms/embed-adaptive-form-aem-sites.md)
-         + [コアコンポーネントに基づいたアダプティブフォームを外部 Web ページに埋め込む](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [コアコンポーネントに基づくアダプティブフォームを外部 Web ページに埋め込む](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [基盤コンポーネントに基づくアダプティブフォームを外部 Web ページに埋め込む](/help/forms/embed-adaptive-form-external-web-page.md)
       + フォームデータモデル {#use-form-data-model}
          + [データソースの Cloud Service への接続](/help/forms/data-integration.md)
          + [データソースの設定](/help/forms/configure-data-sources.md)
