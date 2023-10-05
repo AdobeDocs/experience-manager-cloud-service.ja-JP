@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
+source-git-commit: 1d0001f967cad074ffc8d91f77241502ffaa1d94
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4313'
 ht-degree: 91%
 
 ---
@@ -87,6 +87,7 @@ ht-degree: 91%
    + Cloud Manager のリリースノート {#cloud-manager}
       + [最新のリリースノート](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023年度 {#2023}
+         + [リリースノート（2023.9.0）](/help/implementing/cloud-manager/release-notes/2023/2023-9-0.md)
          + [2023.8.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2023/2023-8-0.md)
          + [リリースノート（2023.7.0）](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
          + [リリースノート（2023.6.0）](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
@@ -847,6 +848,7 @@ ht-degree: 91%
          + [エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md)
          + [エクスペリエンス監査ダッシュボード](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [ログへのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md)
+      + [カスタム権限](/help/implementing/cloud-manager/custom-permissions.md)
       + [SLA レポート](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)

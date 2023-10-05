@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.9.0 のリリースノート
-description: AEM as a Cloud Service の Cloud Manager 2023.9.0 のリリースノートです。
+title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.10.0 のリリースノート
+description: AEM as a Cloud Service の Cloud Manager 2023.10.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a5e8c11340ab5eacdefb22da302f9e35d9429bc7
+source-git-commit: 661eac787439e6e696574a6973afa7e39eeb443e
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 19%
+source-wordcount: '529'
+ht-degree: 15%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.9.0 のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.10.0 のリリースノート {#release-notes}
 
-このページは、AEM as a Cloud Service の Cloud Manager リリース 2023.9.0 のリリースノートです。
+このページは、AEM as a Cloud Service の Cloud Manager リリース 2023.10.0 のリリースノートです。
 
 >[!NOTE]
 >
@@ -21,16 +21,31 @@ ht-degree: 19%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service の Cloud Manager 2023.9.0 のリリース日は 2023年9月14日（PT）です。次回のリリースは 2023年10月5日（PT）に予定されています。
+AEM as a Cloud Service の Cloud Manager リリース 2023.10.0 のリリース日は 2023年10月5日（PT）です。次回のリリースは 2023年11月2日（PT）に予定されています。
 
 ## 新着情報 {#what-is-new}
 
-* CDN ログが使用可能な場合は、Cloud Manager UI を使用してダウンロードできます。
-* Google LightHouse を利用したエクスペリエンス監査テストを、非実稼動のフルスタックパイプラインに含めるようにオプトインできるようになりました。
+* [パイプラインを安全にキャンセルできるようになりました。](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#cancel) （イメージの検証およびビルド手順）。
+* の改善点 [インデックス作成](/help/operations/indexing.md) は、新しいインデックスをデプロイする際のパイプライン期間を短縮しました。
+   * 改善点は、コンテンツプロファイルによって異なります。
+* 自動 [開発環境向けの更新](/help/implementing/cloud-manager/manage-environments.md#updating-environments) は、新しいプログラムに対してデフォルトで有効になっているので、更新を手動で実行する時間を節約できます。
+   * この更新は段階的に展開されます。
+* 2023 年 10 月リリースの Cloud Manager では、Java および Maven のバージョンが段階的にロールアウトされて更新されています。
+   * Apache Maven はバージョン 3.8.8 に更新されています。
+   * Java のバージョンは、OracleJDK 8u371 およびOracleJDK 11.0.20 に更新されています。
+   * デフォルトでは、 `JAVA_HOME` 環境変数を `/usr/lib/jvm/jdk1.8.0_371` oracleJDK 8u371 を含む
+   * ドキュメントを見る [ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) を参照してください。
+   * [OpenJDK のアドバイザリを参照](https://openjdk.org/groups/vulnerability/advisories/) セキュリティおよびバグ修正の詳細については、これらの JDK の更新を参照してください。
 
 ## 早期採用プログラム {#early-adoption}
 
 初期の採用プログラムに参加し、今後の機能をテストする機会を得ることができます。
+
+### カスタム権限 {#custom-permissions}
+
+[Cloud Manager のカスタム権限](/help/implementing/cloud-manager/custom-permissions.md) では、設定可能な権限を持つ新しいカスタム権限プロファイルを作成して、Cloud Manager ユーザーのプログラム、パイプライン、環境へのアクセスを制限できます。
+
+この新機能のテストとフィードバックの共有に関心がある場合は、電子メールでお送りください `Grp-CloudManager-custom-permissions@adobe.com` Adobe IDに関連付けられた電子メールアドレスから。
 
 ### セルフ・サービス・コンテンツのリストア {#content-restore}
 
@@ -52,9 +67,3 @@ AEM as a Cloud Service の Cloud Manager 2023.9.0 のリリース日は 2023年9
 このダッシュボードでは、Web アプリの品質を向上させるためのオープンソースの自動ツールであるGoogle Lighthouse を利用します。 これは、任意の Web ページに対して実行できます。公開または認証が必要です。 パフォーマンス、アクセシビリティ、プログレッシブ Web アプリ、SEO などに関する監査を実施しています。
 
 新しいダッシュボードのテストと運用に興味がある場合は、 次の宛先にメールを送信してください： `aem-lighthouse-pilot@adobe.com` Adobe IDに関連付けられたメールから、すぐに使い始めることができます。
-
-## バグ修正 {#bug-fixes}
-
-* プログラムを削除すると、関連する実行中のパイプラインも削除されるようになりました。
-* パイプラインが進行中の場合、 **送信** ボタン **運用開始完了** ダイアログが無効になり、パイプラインが実行中のため実行開始日を設定できないことをユーザーに通知するようになりました。
-* 時々発生するエラーが修正され、パイプライン実行のすべてのステップが完了とマークされましたが、パイプラインのステータスがまだ実行中で、停止状態のように見える問題が修正されました。

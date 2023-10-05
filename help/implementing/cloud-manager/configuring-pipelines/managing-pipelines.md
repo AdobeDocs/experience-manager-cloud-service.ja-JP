@@ -3,12 +3,13 @@ title: パイプラインの管理
 description: 既存のパイプラインの管理方法（編集、実行、削除を含む）を説明します。
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8d692e354851a31b4f66b24135c863b5ca723b4
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 97%
+source-wordcount: '667'
+ht-degree: 80%
 
 ---
+
 
 # パイプラインの管理 {#managing-pipelines}
 
@@ -74,7 +75,9 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 >
 >実行中のパイプラインは削除できません。
 
-## 詳細を表示 {#view-details}
+## パイプラインの詳細を表示 {#view-details}
+
+パイプラインの詳細を表示して、最後の実行のステータスとログを確認できます。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
@@ -84,8 +87,32 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 ![パイプラインの詳細](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-running-details.png)
 
-ここから、診断の目的で、パイプラインの様々なステップのステータスを確認し、ビルドログを取得できます。詳しくは、[コードのデプロイ](/help/implementing/cloud-manager/deploy-code.md)のドキュメントを参照してください。
+ここから、診断の目的で、パイプラインの様々なステップのステータスを確認し、ビルドログを取得できます。ドキュメントを見る [コードのデプロイ](/help/implementing/cloud-manager/deploy-code.md) を参照してください。
 
 >[!NOTE]
 >
 >実行中または少なくとも 1 回実行されたパイプラインの詳細のみ表示できます。
+
+## パイプラインのキャンセル {#cancel}
+
+パイプラインが検証またはイメージのビルドフェーズにある場合は、パイプライン実行を安全にキャンセルできます。
+
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
+
+1. プログラムの概要ページで、キャンセルするパイプラインの省略記号ボタンをクリックします。 **パイプライン** カード。
+
+   ![パイプラインのキャンセル](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
+
+1. タップまたはクリック **キャンセル**.
+
+または、パイプラインの詳細ページからパイプラインをキャンセルすることもできます。
+
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
+
+1. 次に移動： **パイプライン** タブを **プログラムの概要** ページを開き、キャンセルするパイプラインをタップまたはクリックします。
+
+1. 実行中のパイプラインの詳細ページに移動します。
+
+   ![パイプラインの詳細をキャンセル](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
+
+1. タップまたはクリック **キャンセル**.

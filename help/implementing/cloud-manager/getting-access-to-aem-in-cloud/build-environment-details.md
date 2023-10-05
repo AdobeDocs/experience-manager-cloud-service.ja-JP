@@ -2,10 +2,10 @@
 title: ビルド環境
 description: Cloud Manager のビルド環境と、そこでコードがどのようにビルドされテストされるかを説明します。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: d3bc5dbb5a88aff7765beffc8282d99063dde99f
+source-git-commit: 08cb1b4fc74e03a931551042814afb2d722005a5
 workflow-type: tm+mt
-source-wordcount: '1005'
-ht-degree: 92%
+source-wordcount: '1039'
+ht-degree: 86%
 
 ---
 
@@ -19,9 +19,10 @@ Cloud Manager のビルド環境と、そこでコードがどのようにビル
 Cloud Manager では、専用のビルド環境を使用して、コードのビルドおよびテストを行います。
 
 * ビルド環境は Linux ベースで、Ubuntu 18.04 から派生しています。
-* Apache Maven 3.6.0 がインストールされています。
-* インストールされる Java バージョンは Oracle JDK 8u202 と Oracle JDK 11.0.2 です。
-* デフォルトでは、`JAVA_HOME` 環境変数は `/usr/lib/jvm/jdk1.8.0_202` に設定されています。これには、Oracle JDK 8u202 が含まれています。詳しくは、[Maven 実行の代替 JDK バージョン](#alternate-maven-jdk-version)の節を参照してください。
+* を使用 [Cloud Manager の 2023 年 10 月リリース、](/help/implementing/cloud-manager/release-notes/current.md) Java および Maven のバージョンは継続的に更新されています。
+   * Apache Maven 3.6.0 または 3.8.8 がインストールされています。
+   * インストールされる Java のバージョンは、OracleJDK 8u202 およびOracleJDK 11.0.2 です。またはOracleJDK 8u371 およびOracleJDK 11.0.20 です。
+   * デフォルトでは、 `JAVA_HOME` 環境変数はに設定されます。 `/usr/lib/jvm/jdk1.8.0_202` (OracleJDK 8u202 またはに含まれる ) `/usr/lib/jvm/jdk1.8.0_371` oracleJDK 8u371 を含む 詳しくは、 [代替 Maven 実行 JDK バージョン](#alternate-maven-jdk-version) の節を参照してください。
 * 必要に応じてインストールされる追加のシステムパッケージが、次のようにいくつかあります。
 
    * `bzip2`
