@@ -1,13 +1,14 @@
 ---
 title: 使用Edge Delivery Services
 description: 使用Edge Delivery Services
-source-git-commit: df0dc2e5a220c9dcd47ef2f734e8e6e93c0fd241
+feature: Edge Delivery Services
+exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
+source-git-commit: 6a4a257b3ca3d2db76d43707792d97db87974593
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 1%
 
 ---
-
 
 # 使用Edge Delivery Services {#usingedge}
 
