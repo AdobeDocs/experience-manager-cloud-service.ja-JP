@@ -2,8 +2,7 @@
 title: AEM as a Cloud Service リリース 2023.09.0 の移行ツールのリリースノート
 description: AEM as a Cloud Service リリース 2022.09.0 の移行ツールのリリースノート
 feature: Release Information
-exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
-source-git-commit: c89ca7320d8f31d2545cadf98f39e577337b8918
+source-git-commit: 08e9f21022a3dcf0edfbc0ebbf76c9253b730fac
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 38%
