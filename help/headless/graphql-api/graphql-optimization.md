@@ -2,7 +2,7 @@
 title: GraphQL クエリの最適化
 description: ヘッドレスコンテンツ配信用の Adobe Experience Manager as a Cloud Service でコンテンツフラグメントをフィルタリング、ページング、並べ替える際に、GraphQL クエリを最適化する方法について説明します。
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: ba864cb28d2de0559d36f113e8e154ed5c115cae
+source-git-commit: 2ac93fbe0075cc2c88def444daba613e8b40c018
 workflow-type: tm+mt
 source-wordcount: '1877'
 ht-degree: 62%
@@ -104,7 +104,7 @@ Adobeに連絡して、AEM Cloud Serviceのプログラムおよび環境でこ�
 AEM には、GraphQL クエリを最適化する 2 つの方法があります。
 
 * [ハイブリッドフィルタリング](#use-aem-graphql-hybrid-filtering)
-* [ページング](#use-graphql-pagination)（またはページネーション）
+* [ページング](#use-aem-graphql-pagination)（またはページネーション）
 
    * [並べ替え](#use-graphql-sorting)は、最適化に直接関連していませんが、ページングに関連しています
 
