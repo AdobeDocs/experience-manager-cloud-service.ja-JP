@@ -1,13 +1,13 @@
 ---
 title: WAF ルールを使用したトラフィックフィルタールールの設定
 description: WAF ルールでトラフィックフィルタルールを使用してトラフィックをフィルタリングする
-source-git-commit: ce7b6922f92208c06f85afe85818574bf2bc8f6d
+exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
+source-git-commit: 445134438c1a43276235b069ab44f99f7255aed1
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2740'
 ht-degree: 2%
 
 ---
-
 
 # トラフィックをフィルタリングする WAF ルールを使用したトラフィックフィルタルールの設定 {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
@@ -32,8 +32,7 @@ WAF(Web Application Firewall) アドオンにライセンスを持つお客様�
 
    ```
    config/
-        cdn/
-           cdn.yaml
+        cdn.yaml
    ```
 
 1. `cdn.yaml` には、メタデータと、トラフィックフィルタールールおよび WAF ルールのリストが含まれている必要があります。
@@ -46,7 +45,15 @@ WAF(Web Application Firewall) アドオンにライセンスを持つお客様�
    data:
      trafficFilters:
        rules:
-         ...
+       # Block simple path
+       - name: block-path
+         when:
+           allOf:
+             - reqProperty: tier
+               matches: "author|publish"
+             - reqProperty: path
+               equals: '/block/me'
+         action: block
    ```
 
 「kind」パラメーターは「CDN」に、バージョンはスキーマのバージョン（現在は「1」）に設定する必要があります。 後述の例を参照してください。
@@ -81,6 +88,7 @@ WAF(Web Application Firewall) アドオンにライセンスを持つお客様�
       > これらのパイプラインを設定または実行するには、ユーザーがデプロイメントマネージャーとしてログインする必要があります。
       > また、環境ごとに 1 つの設定パイプラインのみを設定および実行できます。
 
+   1. 「コードの場所」をルート設定の保存先に設定します（例： /config）。
    1. 「**保存**」を選択します。新しいパイプラインがパイプラインカードに表示され、準備が整ったら実行できます。
    1. RDE の場合は、コマンドラインが使用されますが、現時点では RDE はサポートされていません。
 
@@ -171,6 +179,7 @@ cdn.yaml ファイルのトラフィックフィルタールールの形式を�
 | **doesNotMatch** | `string` | getter の結果が指定された正規表現と一致しない場合は true |
 | **の** | `array[string]` | 指定されたリストにゲッター結果が含まれている場合は true |
 | **notIn** | `array[string]` | 指定されたリストにゲッター結果が含まれていない場合は true |
+| **は存在しています** | `boolean` | true に設定し、プロパティが存在する場合、または false に設定し、プロパティが存在しない場合。 |
 
 ### アクション構造 {#action-structure}
 
@@ -188,7 +197,7 @@ cdn.yaml ファイルのトラフィックフィルタールールの形式を�
 
 ### WAF フラグリスト {#waf-flags-list}
 
-The `wafFlag` プロパティには、次のものを含めることができます。
+The `wafFlags` プロパティには、次のものを含めることができます。
 
 | **フラグ ID** | **フラグ名** | **説明** |
 |---|---|---|
@@ -318,7 +327,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-**例 4**
+**例 5**
 
 このルールは、OFAC 国へのアクセスをブロックします。
 
@@ -333,7 +342,8 @@ data:
       - name: block-ofac-countries
         when:
           allOf:
-            - { reqProperty: tier, equals: publish }
+            - reqProperty: tier
+              matches: "author|publish"
             - reqProperty: clientCountry
               in:
                 - SY
@@ -379,8 +389,8 @@ data:
   trafficFilters:
     - name: limit-requests-client-ip
       when:
-        reqProperty: path
-        like: '*'
+        - reqProperty: tier
+        - matches: "author|publish"
       rateLimit:
         limit: 60
         window: 10
