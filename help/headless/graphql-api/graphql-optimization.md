@@ -2,10 +2,10 @@
 title: GraphQL クエリの最適化
 description: ヘッドレスコンテンツ配信用の Adobe Experience Manager as a Cloud Service でコンテンツフラグメントをフィルタリング、ページング、並べ替える際に、GraphQL クエリを最適化する方法について説明します。
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: ba864cb28d2de0559d36f113e8e154ed5c115cae
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 96%
+source-wordcount: '1877'
+ht-degree: 62%
 
 ---
 
@@ -14,6 +14,84 @@ ht-degree: 96%
 >[!NOTE]
 >
 >これらの最適化の推奨事項を適用する前に、最高のパフォーマンスを実現するには、[GraphQL フィルタリングでのページングと並べ替えの際にコンテンツフラグメントを更新](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)することを検討してください。
+
+これらのガイドラインは、GraphQLクエリでのパフォーマンスの問題を防ぐために提供されています。
+
+## GraphQLチェックリスト {#graphql-checklist}
+
+次のチェックリストは、Adobe Experience Manager(AEM)as a Cloud ServiceのGraphQLの設定と使用を最適化するためのものです。
+
+### 第 1 原則 {#first-principles}
+
+#### 永続的なGraphQLクエリを使用 {#use-persisted-graphql-queries}
+
+**推奨**
+
+永続化されたGraphQLクエリの使用を強くお勧めします。
+
+永続的なGraphQLクエリは、コンテンツ配信ネットワーク (CDN) を利用して、クエリの実行パフォーマンスを低減するのに役立ちます。 クライアントアプリケーションは、高速なエッジ対応の実行を実現するために、GETリクエストを使用して永続化されたクエリをリクエストします。
+
+**その他の参照**
+
+以下を参照してください。
+
+* [永続的な GraphQL クエリ](/help/headless/graphql-api/persisted-queries.md).
+* [AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ](/help/headless/graphql-api/sample-queries.md)
+
+### キャッシュ方法 {#cache-strategy}
+
+キャッシュの様々な方法を最適化に使用することもできます。
+
+#### AEM Dispatcher のキャッシュの有効化 {#enable-aem-dispatcher-caching}
+
+**推奨**
+
+[AEM Dispatcher](/help/implementing/dispatcher/overview.md) は、AEMサービス内の、CDN キャッシュの前の第 1 レベルのキャッシュです。
+
+**その他の参照**
+
+以下を参照してください。
+
+* [GraphQLの永続クエリ — Dispatcher でのキャッシュの有効化](/help/headless/deployment/dispatcher-caching.md)
+
+#### コンテンツ配信ネットワーク (CDN) の使用 {#use-cdn}
+
+**推奨**
+
+GraphQLクエリとその JSON 応答は、をターゲット設定した場合はキャッシュできます `GET` リクエストを送信する必要があります。 これに対し、キャッシュされていないリクエストは、（リソース）非常に高コストで処理に時間がかかる場合があり、元のリソースにさらに悪影響を及ぼす可能性があります。
+
+**その他の参照**
+
+以下を参照してください。
+
+* [AEM as a Cloud Service での CDN](/help/implementing/dispatcher/cdn.md)
+
+#### HTTP キャッシュ制御ヘッダーの設定 {#set-http-cache-control-headers}
+
+**推奨**
+
+永続化されたGraphQLクエリを CDN で使用する場合は、適切な HTTP キャッシュ制御ヘッダーを設定することをお勧めします。
+
+永続化された各クエリには、独自のキャッシュ制御ヘッダーのセットを設定できます。 ヘッダーは、 [GraphQL API](/help/headless/graphql-api/content-fragments.md) または [AEM GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md).
+
+**その他の参照**
+
+以下を参照してください。
+
+* [永続クエリのキャッシュ](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
+* [永続クエリのキャッシュの管理](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
+
+#### AEM GraphQLのプリキャッシュの使用 {#use-aem-graphql-pre-caching}
+
+**推奨**
+
+この機能を使用すると、AEMは、GraphQLクエリの範囲内でコンテンツをさらにキャッシュでき、1 行に 1 行ずつではなく、JSON 出力でブロックとしてアセンブルできます。
+
+**その他の参照**
+
+Adobeに連絡して、AEM Cloud Serviceのプログラムおよび環境でこの機能を有効にしてください。
+
+### GraphQL Query optimization {#graphql-query-optimization}
 
 同じモデルを共有するコンテンツフラグメントが多数ある AEM インスタンスでは、GraphQL のリストクエリに（リソースの点で）コストがかかる場合があります。
 
@@ -25,14 +103,16 @@ ht-degree: 96%
 
 AEM には、GraphQL クエリを最適化する 2 つの方法があります。
 
-* [ハイブリッドフィルタリング](#hybrid-filtering)
-* [ページング](#paging)（またはページネーション）
+* [ハイブリッドフィルタリング](#use-aem-graphql-hybrid-filtering)
+* [ページング](#use-graphql-pagination)（またはページネーション）
 
-   * [並べ替え](#sorting)は、最適化に直接関連していませんが、ページングに関連しています
+   * [並べ替え](#use-graphql-sorting)は、最適化に直接関連していませんが、ページングに関連しています
 
-各アプローチには、独自のユースケースと制限があります。 このドキュメントでは、ハイブリッドフィルタリングとページングに関する情報と、GraphQL クエリを最適化する[ベストプラクティス](#best-practices)について説明します。
+各アプローチには、独自のユースケースと制限があります。 この節では、ハイブリッドフィルターとページングに関する情報と、 [ベストプラクティス](#best-practices) GraphQLクエリの最適化に使用する
 
-## ハイブリッドフィルタリング {#hybrid-filtering}
+#### AEM GraphQLハイブリッドフィルタリングの使用 {#use-aem-graphql-hybrid-filtering}
+
+**推奨**
 
 ハイブリッドフィルタリングは、JCR フィルタリングと AEM フィルタリングを組み合わせます。
 
@@ -44,7 +124,22 @@ AEM には、GraphQL クエリを最適化する 2 つの方法があります�
 
 この方法では、GraphQL フィルターが提供する柔軟性を維持しながら、可能な限り多くのフィルタリングを JCR に委任できます。
 
-## ページング {#paging}
+>[!NOTE]
+>
+>AEM Hybrid Filtering を使用するには、既存のコンテンツフラグメントを更新する必要があります
+
+**その他の参照**
+
+以下を参照してください。
+
+* [GraphQLフィルタリングでのページングと並べ替えのためのコンテンツフラグメントの更新](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
+* [_tags ID でフィルタリングし、バリエーションを除外したクエリ例](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+
+#### GraphQLのページネーションを使用 {#use-aem-graphql-pagination}
+
+**推奨**
+
+大きな結果セットを持つ複雑なクエリの応答時間は、GraphQL標準のページネーションを使用して応答をチャンクにセグメント化することで、改善できます。
 
 AEM の GraphQL では、次の 2 種類のページネーションに対応しています。
 
@@ -64,7 +159,17 @@ AEM の GraphQL では、次の 2 種類のページネーションに対応し�
   >
   >後方ページング（`before`/`last` パラメーターを使用）はサポートされていません。
 
-## 並べ替え {#sorting}
+**その他の参照**
+
+以下を参照してください。
+
+* [first と after を使用したサンプルページネーションクエリ](/help/headless/graphql-api/sample-queries.md#sample-pagination-first-after)
+
+#### GraphQLの並べ替えを使用 {#use-graphql-sorting}
+
+**推奨**
+
+また、GraphQL標準の並べ替え機能を使用すると、クライアントは JSON コンテンツを並べ替えられた順序で受け取ることができます。 これにより、クライアント上でさらに処理する必要が減少します。
 
 並べ替えは、すべての並べ替え条件が最上位のフラグメントに関連している場合にのみ効率的です。
 
@@ -74,9 +179,15 @@ AEM の GraphQL では、次の 2 種類のページネーションに対応し�
 >
 >最上位フィールドでの並べ替えも、（小さくても）パフォーマンスに影響を与えます。
 
+**その他の参照**
+
+以下を参照してください。
+
+* [_tags ID でフィルタリングし、バリエーションを除外し、名前で並べ替えるクエリ例](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+
 ## ベストプラクティス {#best-practices}
 
-すべての最適化での主な目的は、初期結果セットを減らすことです。 ここに示すベストプラクティスで、その方法を説明します。 組み合わせることができます（推奨）。
+すべての最適化レコメンデーションの主な目的は、初期結果セットを減らすことです。 ここに示すベストプラクティスで、その方法を説明します。 組み合わせることができます（推奨）。
 
 ### 最上位のプロパティのみをフィルター {#filter-top-level-properties-only}
 
@@ -129,7 +240,7 @@ AEM では、通常、リポジトリ構造を使用して、処理するコン�
 
 ### フィルター式の論理演算 {#logical-operations-in-filter-expressions}
 
-ネストされたフラグメントをフィルタリングする場合、 `AND` 演算子
+ネストされたフラグメントをフィルタリングする場合、JCR フィルタリングを適用できます。その際、 `AND` 演算子を使用します。
 
 一般的なユースケースは、最上位フラグメントの `_path` フィールドでフィルターを使用してクエリの範囲を制限し、最上位またはネストされたフラグメント上の追加フィールドでフィルタリングすることです。
 
@@ -166,3 +277,27 @@ JCR レベルでフィルター式を評価できない場合が他にもいく�
 * `CONTAINS_NOT` 演算子を使用して式をフィルタリングします。 
 
 * `NOT_AT` 演算子を使用する `Calendar`、`Date` または `Time` 値の式をフィルタリングします。
+
+### コンテンツフラグメントのネストを最小化 {#minimize-content-fragment-nesting}
+
+コンテンツフラグメントのネストは、カスタムコンテンツ構造をモデル化する優れた方法です。 ネストされたフラグメントを持つフラグメント（ネストされたフラグメントを持つ、など）を持つこともできます。
+
+ただし、レベルが多すぎる構造を作成すると、GraphQLはネストされたすべてのコンテンツフラグメントの階層全体をトラバースする必要があるので、GraphQLクエリの処理時間が長くなる可能性があります。
+
+深いネストは、コンテンツガバナンスに悪影響を与える可能性もあります。 一般に、コンテンツフラグメントのネストは、5 レベルまたは 6 レベル未満に制限することをお勧めします。
+
+### すべてのフォーマットを出力しない（複数行テキスト要素） {#do-not-output-all-formats}
+
+AEM GraphQLは、 **[複数行テキスト](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** 複数の形式のデータタイプ：リッチテキスト、シンプルテキスト、Markdown。
+
+3 つの形式をすべて出力すると、JSON で出力されるテキストのサイズが約 3 倍になります。 これを、非常に広範なクエリからの一般的に大きな結果セットと組み合わせると、非常に大きな JSON 応答が生成されるので、計算に長い時間がかかる場合があります。 コンテンツのレンダリングに必要なテキスト形式のみに出力を制限することをお勧めします。
+
+### コンテンツフラグメントの変更 {#modifying-content-fragments}
+
+AEM UI または API を使用して、コンテンツフラグメントとそのリソースのみを変更します。 JCR で直接変更を行わないでください。
+
+### クエリのテスト {#test-your-queries}
+
+GraphQLクエリの処理は検索クエリの処理と似ており、単純なGETオールコンテンツ API リクエストよりも大幅に複雑です。
+
+管理対象の非実稼動環境でクエリを慎重に計画、テスト、最適化することが、後で実稼動環境で使用する際に成功するための鍵となります。
