@@ -2,10 +2,10 @@
 title: カスタムコード品質ルール
 description: このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。これらは、Adobe Experience Manager Engineering のベストプラクティスに基づいています。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 57a7cd3fd2bfc34ebcee82832e020cf45887afa9
 workflow-type: tm+mt
-source-wordcount: '3502'
-ht-degree: 91%
+source-wordcount: '3868'
+ht-degree: 85%
 
 ---
 
@@ -570,7 +570,6 @@ public class DontDoThis implements Page {
       - async: [async]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
 ```
@@ -583,7 +582,6 @@ public class DontDoThis implements Page {
       - async: [async]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
@@ -606,11 +604,8 @@ public class DontDoThis implements Page {
     + damAssetLucene-1-custom
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - type: lucene
-      - reindex: false
       - tags: [visualSimilaritySearch]
-      - type: lucene
       + tika
         + config.xml
 ```
@@ -623,7 +618,6 @@ public class DontDoThis implements Page {
       - async: [async]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
@@ -647,7 +641,6 @@ Experience Manager Assets でアセット検索が正しく機能するように
       - async: [async, nrt]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - type: lucene
       + tika
         + config.xml
@@ -661,7 +654,6 @@ Experience Manager Assets でアセット検索が正しく機能するように
       - async: [async, nrt]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
@@ -811,7 +803,7 @@ Cloud Service デプロイメントモデルとの互換性を保つには、個
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-Experience Manager クライアントライブラリには、画像やフォントなどの静的リソースが含まれている場合があります。このドキュメントの説明に従って [プリプロセッサの使用](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) プロキシ化されたクライアントライブラリを使用する場合、これらの静的リソースは、 `resources` パブリッシュインスタンスで効果的に参照されます。
+Experience Manager クライアントライブラリには、画像やフォントなどの静的リソースが含まれている場合があります。このドキュメントの説明に従って、 [プリプロセッサーの使用](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) プロキシ化されたクライアントライブラリを使用する場合、これらの静的リソースは、 `resources` パブリッシュインスタンスで効果的に参照されます。
 
 #### 非準拠コード {#non-compliant-proxy-enabled}
 
@@ -853,7 +845,7 @@ Experience Manager as a Cloud Service 上でのアセット処理をアセット
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-従来、Experience Manager プロジェクトでは静的テンプレートを使用するのが一般的でしたが、アドビでは、最も柔軟性が高く、静的テンプレートにはない追加機能をサポートしている編集可能なテンプレートをお勧めします。詳しくは、 [ページテンプレート](/help/implementing/developing/components/templates.md).
+従来、Experience Manager プロジェクトでは静的テンプレートを使用するのが一般的でしたが、アドビでは、最も柔軟性が高く、静的テンプレートにはない追加機能をサポートしている編集可能なテンプレートをお勧めします。詳しくは、ドキュメントを参照してください [ページテンプレート](/help/implementing/developing/components/templates.md).
 
 静的なテンプレートから編集可能なテンプレートへの移行は、[Experience Manager 最新化ツール](https://opensource.adobe.com/aem-modernize-tools/) を使用して、ほとんど自動化することができます。
 
@@ -884,7 +876,7 @@ Experience Manager as a Cloud Service では、実行モード名に対して厳
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-Experience Manageras a Cloud Serviceには、カスタム検索インデックスの定義（つまり、タイプのノード）が必要です `oak:QueryIndexDefinition`) の直接の子ノード `/oak:index`. Experience Manager as a Cloud Service と互換性を持たせるため、他の場所にあるインデックスは移動する必要があります。検索インデックスの詳細については、ドキュメントを参照してください。 [コンテンツの検索とインデックス作成](/help/operations/indexing.md).
+Experience Manageras a Cloud Serviceには、カスタム検索インデックスの定義（つまり、タイプのノード）が必要です。 `oak:QueryIndexDefinition`) の直接の子ノード `/oak:index`. Experience Manager as a Cloud Service と互換性を持たせるため、他の場所にあるインデックスは移動する必要があります。検索インデックスの詳細については、ドキュメントを参照してください。 [コンテンツの検索とインデックス作成](/help/operations/indexing.md).
 
 ### カスタム検索インデックス定義ノードの compatVersion は 2 にする {#oakpal-custom-search-compatVersion}
 
@@ -920,7 +912,7 @@ Experience Manager as a Cloud Service では、カスタム検索インデック
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-Experience Manageras a Cloud Serviceには、カスタム検索インデックスの定義（つまり、タイプのノード）が必要です `oak:QueryIndexDefinition`) には、ドキュメントで説明されている特定のパターンに従って名前を付ける必要があります [コンテンツの検索とインデックス作成](/help/operations/indexing.md).
+Experience Manageras a Cloud Serviceには、カスタム検索インデックスの定義（つまり、タイプのノード）が必要です。 `oak:QueryIndexDefinition`) には、ドキュメントで説明されている特定のパターンに従って名前を付ける必要があります [コンテンツの検索とインデックス作成](/help/operations/indexing.md).
 
 ### カスタム検索インデックス定義ノードでは lucene 型のインデックスを使用する  {#oakpal-index-type-lucene}
 
@@ -929,7 +921,7 @@ Experience Manageras a Cloud Serviceには、カスタム検索インデック�
 * **重大度**：ブロッカー
 * **最初の対象バージョン**：バージョン2021.2.0（2021.8.0でタイプと重大度が変更されました）
 
-Experience Manageras a Cloud Serviceには、カスタム検索インデックスの定義（つまり、タイプのノード）が必要です `oak:QueryIndexDefinition`) が `type` プロパティの値を次に設定 `lucene`. Experience Manager as a Cloud Service に移行する前に、従来のインデックスタイプを使用したインデックス作成を更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](/help/operations/indexing.md#how-to-use)を参照してください。
+Experience Manageras a Cloud Serviceには、カスタム検索インデックスの定義（つまり、タイプのノード）が必要です。 `oak:QueryIndexDefinition`) が `type` プロパティの値を次に設定： `lucene`. Experience Manager as a Cloud Service に移行する前に、従来のインデックスタイプを使用したインデックス作成を更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](/help/operations/indexing.md#how-to-use)を参照してください。
 
 ### カスタム検索インデックス定義ノードに seed という名前のプロパティを含めない {#oakpal-property-name-seed}
 
@@ -948,3 +940,208 @@ Experience Manager as a Cloud Service では、カスタム検索インデック
 * **最初の対象バージョン**：バージョン 2021.2.0
 
 Experience Manager as a Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に `reindex` という名前のプロパティを含めることが禁止されています。Experience Manager as a Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](/help/operations/indexing.md#how-to-use)のドキュメントを参照してください。
+
+### カスタム DAM Asset Lucene ノードで「queryPaths」を指定することはできません {#oakpal-damAssetLucene-queryPaths}
+
+* **キー**：IndexDamAssetLucene
+* **タイプ**：バグ
+* **重大度**：ブロッカー
+* **最初の対象バージョン**：バージョン 2022.1.0
+
+#### 非準拠コード {#non-compliant-code-damAssetLucene-queryPaths}
+
+```text
++ oak:index
+    + damAssetLucene-1-custom-1
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: [/content/dam]
+      - queryPaths: [/content/dam]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+#### 準拠コード {#compliant-code-damAssetLucene-queryPaths}
+
+```text
++ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: [/content/dam]
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+### カスタム検索のインデックス定義に compatVersion が含まれる場合は、2 に設定する必要があります。 {#oakpal-compatVersion}
+
+* **キー**：IndexCompatVersion
+* **タイプ**：コードスメル
+* **深刻度**：重大
+* **最初の対象バージョン**：バージョン 2022.1.0
+
+
+### 「includedPaths」を指定するインデックスノードでは、同じ値を持つ「queryPaths」も指定する必要があります {#oakpal-included-paths-without-query-paths}
+
+* **キー**: IndexIncludedPathsWithoutQueryPaths
+* **タイプ**：コードスメル
+* **深刻度**：軽度
+* **最初の対象バージョン**：バージョン 2023.1.0
+
+カスタムインデックスの場合、 `includedPaths` および `queryPaths` は同じ値で設定する必要があります。 いずれかを指定した場合は、もう 1 つが一致する必要があります。 ただし、インデックスには特別なケースがあります。 `damAssetLucene`（カスタムバージョンを含む） これらの場合、 `includedPaths`.
+
+### 汎用ノードタイプの nodeScopeIndex を指定するインデックスノードでも includedPaths と queryPaths を指定する必要があります。 {#oakpal-full-text-on-generic-node-type}
+
+* **キー**: IndexFulltextOnGenericType
+* **タイプ**：コードスメル
+* **深刻度**：軽度
+* **最初の対象バージョン**：バージョン 2023.1.0
+
+設定時に、 `nodeScopeIndex` プロパティを、次のような「汎用」ノードタイプに設定します。 `nt:unstructured` または `nt:base`を指定しない場合は、 `includedPaths` および `queryPaths` プロパティ。
+`nt:base` は「汎用」と見なすことができます。これは、すべてのノードタイプがそのタイプを継承するからです。 したがって、 `nodeScopeIndex` オン `nt:base` は、リポジトリ内のすべてのノードのインデックスを作成します。 同様に、 `nt:unstructured` また、このタイプのリポジトリには多数のノードがあるので、は「汎用」と見なされます。
+
+#### 非準拠コード {#non-compliant-code-full-text-on-generic-node-type}
+
+```text
++ oak:index/acme.someIndex-custom-1
+  - async: [async, nrt]
+  - evaluatePathRestrictions: true
+  - tags: [visualSimilaritySearch]
+  - type: lucene
+    + indexRules
+      - jcr:primaryType: nt:unstructured
+      + nt:base
+        - jcr:primaryType: nt:unstructured
+        + properties
+          + acme.someIndex-custom-1
+            - nodeScopeIndex: true
+```
+
+#### 準拠コード {#compliant-code-full-text-on-generic-node-type}
+
+```text
++ oak:index/acme.someIndex-custom-1
+  - async: [async, nrt]
+  - evaluatePathRestrictions: true
+  - tags: [visualSimilaritySearch]
+  - type: lucene
+  - includedPaths: ["/content/dam/"] 
+  - queryPaths: ["/content/dam/"]
+    + indexRules
+      - jcr:primaryType: nt:unstructured
+      + nt:base
+        - jcr:primaryType: nt:unstructured
+        + properties
+          + acme.someIndex-custom-1
+            - nodeScopeIndex: true
+```
+
+### クエリエンジンの queryLimitReads プロパティは上書きしないでください {#oakpal-query-limit-reads}
+
+* **キー**: OverrideOfQueryLimitReads
+* **タイプ**：コードスメル
+* **深刻度**：軽度
+* **最初の対象バージョン**：バージョン 2023.1.0
+
+デフォルト値を上書きすると、特にコンテンツが追加された場合に、ページの読み取りが非常に遅くなる可能性があります。
+
+### 同じインデックスの複数のアクティブバージョン {#oakpal-multiple-active-versions}
+
+* **キー**: IndexDetectMultipleActiveVersionsOfSameIndex
+* **タイプ**：コードスメル
+* **深刻度**：軽度
+* **最初の対象バージョン**：バージョン 2023.1.0
+
+#### 非準拠コード {#non-compliant-code-multiple-active-versions}
+
+```text
++ oak:index
+  + damAssetLucene-1-custom-1
+    ...
+  + damAssetLucene-1-custom-2
+    ...
+  + damAssetLucene-1-custom-3
+    ...
+```
+
+#### 準拠コード {#compliant-code-multiple-active-versions}
+
+```text
++ damAssetLucene-1-custom-3
+    ...
+```
+
+
+### 完全なカスタムインデックス定義の名前は、公式のガイドラインに従う必要があります {#oakpal-fully-custom-index-name}
+
+* **キー**: IndexValidFullyCustomName
+* **タイプ**：コードスメル
+* **深刻度**：軽度
+* **最初の対象バージョン**：バージョン 2023.1.0
+
+完全なカスタムインデックス名に必要なパターンは次のとおりです。 `[prefix].[indexName]-custom-[version]`. 詳しくは、ドキュメントを参照してください [コンテンツの検索とインデックス作成](/help/operations/indexing.md).
+
+
+### 同じインデックス定義内の異なる解析値を持つ同じプロパティ {#oakpal-same-property-different-analyzed-values}
+
+#### 非準拠コード {#non-compliant-code-same-property-different-analyzed-values}
+
+```text
++ indexRules
+  + dam:Asset
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+  + dam:cfVariationNode
+    + properties
+      + status
+        - name: status
+```
+
+#### 準拠コード {#compliant-code-same-property-different-analyzed-values}
+
+例：
+
+```text
++ indexRules
+  + dam:Asset
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+  + dam:cfVariationNode
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+```
+
+例：
+
+```text
++ indexRules
+  + dam:Asset
+    + properties
+      + status
+        - name: status
+  + dam:cfVariationNode
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+```
+
+分析対象のプロパティが明示的に設定されていない場合、そのデフォルト値は false になります。
+
+### タグプロパティ
+
+* **キー**: IndexHasValidTagsProperty
+* **タイプ**：コードスメル
+* **深刻度**：軽度
+* **最初の対象バージョン**：バージョン 2023.1.0
+
+特定のインデックスの場合、tags プロパティとその現在の値を必ず保持します。 tags プロパティに新しい値を追加することもできますが、既存の値を削除（またはプロパティを完全に削除）すると、予期しない結果が生じる場合があります。
