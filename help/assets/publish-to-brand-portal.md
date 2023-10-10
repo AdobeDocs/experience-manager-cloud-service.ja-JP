@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 780d04852d3760f92c6f0c5edf77630d4bb5a343
+source-git-commit: 7f806c457f7bef1c5309bbc6f69d3989af1b06d3
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 95%
+source-wordcount: '1301'
+ht-degree: 92%
 
 ---
 
@@ -32,6 +32,8 @@ Adobe Experience Manager（AEM）Assets 管理者の場合、アセット、フ�
 >[!NOTE]
 >
 >AEM オーサーが過剰なリソースを占有しないように、できればピーク時を避け、時間をずらして公開することをお勧めします。
+>アセットは、バッチで公開する必要があります。 バッチサイズの推奨は 15K です。
+> の場合 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]の場合、ラボ条件で観察される転送率は、1 時間あたり 1,000 アセットです。 この率は、平均サイズが 10 MB のアセットで測定されます。
 
 ## Brand Portal へのアセットの公開 {#publish-assets-to-bp}
 
