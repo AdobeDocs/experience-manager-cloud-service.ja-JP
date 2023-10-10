@@ -5,12 +5,13 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: ac7e1a1ada156734c3a487269e674e8eade7c9c3
 workflow-type: tm+mt
-source-wordcount: '2193'
-ht-degree: 97%
+source-wordcount: '2452'
+ht-degree: 86%
 
 ---
+
 
 # データソースの設定 {#configure-data-sources}
 
@@ -23,7 +24,7 @@ ht-degree: 97%
 
 [!DNL Experience Manager Forms] データ統合を使用すると、異なるデータソースを設定して接続できます。 以下のタイプがサポートされています。これらのタイプは、すぐに使用することができます。
 
-* リレーショナルデータベース - MySQL、[!DNL Microsoft SQL Server]、[!DNL IBM DB2]、および [!DNL Oracle RDBMS]
+* リレーショナルデータベース - MySQL、[!DNL Microsoft® SQL Server]、[!DNL IBM® DB2®]、および [!DNL Oracle RDBMS]
 * RESTful Web サービス
 * SOAP ベースの web サービス
 * OData サービス（バージョン 4.0）
@@ -38,11 +39,11 @@ ht-degree: 97%
 ### 前提条件
 
 [!DNL Experience Manager] web コンソール設定を使用してリレーショナルデータベースを設定する前に、次の操作が必須です。
-* ポートはデフォルトで無効になっているので、[Cloud Manager API から高度なネットワークを有効にします。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
+* [Cloud Manager API を使用した高度なネットワークの有効化](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)（ポートはデフォルトで無効になっているので）。
 * [Maven に JDBC ドライバーの依存関係を追加](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=ja).
 
 
-### リレーショナルデータベースを設定する手順
+### リレーショナルデータベースを構成する手順
 
 [!DNL Experience Manager] web コンソールの設定を使用して、リレーショナルデータベースを設定することができます。次の手順を実行します。
 
@@ -57,11 +58,11 @@ ht-degree: 97%
    * JDBC 接続 URI
    * JDBC ドライバーとの接続を確立するためのユーザー名とパスワード
    * 「**[!UICONTROL 検証クエリ]**」フィールドの SQL SELECT クエリを指定して、プールからの接続を検証します。クエリは、少なくとも 1 つのレコードを返す必要があります。データベースに応じて、次のいずれかを指定します。
-      * SELECT 1（MySQL または MS SQL の場合）
+      * SELECT 1 (MySQL と MS® SQL)
       * SELECT 1 from dual（Oracle の場合）
    * データソースの名前
 
-   リレーショナルデータベースを構成するための文字列の例：
+   リレーショナル・データベースを構成するための文字列の例：
 
    ```text
       "datasource.name": "sqldatasourcename-mysql",
@@ -122,7 +123,7 @@ RESTful サービス、SOAP サービス、OData サービスのクラウドサ�
 
 ## RESTful Web サービスの設定 {#configure-restful-web-services}
 
-RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式または YAML 形式で [Swagger 定義ファイル](https://swagger.io/specification/v2/)内に記述できます。[!DNL Experience Manager] as a Cloud Service で RESTful web サービスを設定するには、ファイルシステムまたはファイルがホストされている URL に [!DNL Swagger] ファイル（[Swagger Version 2.0](https://swagger.io/specification/v2/)）[!DNL Swagger] ファイル（[Swagger Version 3.0](https://swagger.io/specification/v3/)）が存在しているか、Swagger ファイルがホストされる URL を指定する必要があります。
+RESTful Web サービスは、 [Swagger の仕様](https://swagger.io/specification/v2/) JSON 形式または YAML 形式の [!DNL Swagger] 定義ファイル。 [!DNL Experience Manager] as a Cloud Service で RESTful web サービスを設定するには、ファイルシステムまたはファイルがホストされている URL に [!DNL Swagger] ファイル（[Swagger Version 2.0](https://swagger.io/specification/v2/)）[!DNL Swagger] ファイル（[Swagger Version 3.0](https://swagger.io/specification/v3/)）が存在しているか、Swagger ファイルがホストされる URL を指定する必要があります。
 
 ### Open API 仕様バージョン 2.0 {#configure-restful-services-open-api-2.0} 用の RESTful サービスの設定
 
@@ -133,7 +134,7 @@ RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式ま
 1. 「**[!UICONTROL 作成]**」をタップして、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL RESTful サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」をタップします。
 1. RESTful サービスの次の詳細を指定します。
 
-   * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL  Swagger] 定義ファイルに対する [!DNL Swagger URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
+   * 次の場所から URL またはファイルを選択します。 [!UICONTROL Swagger ソース] ドロップダウンで、それに応じて [!DNL Swagger URL] から[!DNL  Swagger] 定義ファイルまたはアップロード [!DNL Swagger] ファイルをローカルファイルシステムから取得します。
    * [!DNL  Swagger] ソース入力に基づいて、次のフィールドに値が事前入力されます。
 
       * スキーム：REST API で使用される転送プロトコル。ドロップダウンリストに表示されるスキームの種類の数は、[!DNL Swagger] ソースで定義されているスキームによって異なります。
@@ -158,7 +159,7 @@ RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式ま
 1. 「**[!UICONTROL 作成]**」をタップして、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL RESTful サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」をタップします。
 1. RESTful サービスの次の詳細を指定します。
 
-   * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL  Swagger] 定義ファイルに対する [!DNL Swagger 3.0 URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
+   * 次の場所から URL またはファイルを選択します。 [!UICONTROL Swagger ソース] ドロップダウンで、それに応じて [!DNL Swagger 3.0 URL] から[!DNL  Swagger] 定義ファイルまたはアップロード [!DNL Swagger] ファイルをローカルファイルシステムから取得します。
    * [!DNL  Swagger] ソース入力に基づいて、ターゲットサーバとの接続情報が表示されます。
    * RESTful サービスにアクセスするための認証タイプ（なし、OAuth2.0（[認証コード](https://oauth.net/2/grant-types/authorization-code/)、[クライアント資格情報](https://oauth.net/2/grant-types/client-credentials/)）、基本認証、API キー認証、カスタム認証）を選択し、その選択内容に応じて認証の詳細を指定します。
 
@@ -179,8 +180,7 @@ RESTful サービス Open API 仕様バージョン 3.0 でサポートされて
 
 ### パフォーマンスを最適化するためのフォームデータモデル HTTP クライアント設定 {#fdm-http-client-configuration}
 
-データソースとして RESTful web サービスと統合する場合の [!DNL Experience Manager Forms] フォームデータモデルには、パフォーマンス最適化のための HTTP クライアント設定が含まれています。
-
+[!DNL Experience Manager Forms] データソースにはパフォーマンス最適化のための HTTP クライアント設定が含まれているので、RESTful Web サービスとの統合時にデータモデルを作成します。
 
 **[!UICONTROL REST データソース設定のフォームデータモデル HTTP クライアント設定]**&#x200B;の次のプロパティを設定し、正規表現を指定します。
 
@@ -224,7 +224,7 @@ RESTful サービス Open API 仕様バージョン 3.0 でサポートされて
 
 ## SOAP Web サービスの設定 {#configure-soap-web-services}
 
-SOAP ベースの web サービスは、[Web Services Description Language（WSDL）の仕様](https://www.w3.org/TR/wsdl)に従って記述します。[!DNL Experience Manager Forms] は RPC スタイルの WSDL モデルをサポートしません。
+SOAP ベースの web サービスは、[Web Services Description Language（WSDL）の仕様](https://www.w3.org/TR/wsdl)に従って記述します。[!DNL Experience Manager Forms] RPC-style WSDL モデルをサポートしていません。
 
 [!DNL Experience Manager] as a Cloud Service で SOAP ベースの web サービスを設定するには、その web サービスの WSDL URL を確認して、以下の手順を実行します。
 
@@ -269,7 +269,7 @@ OData サービスは、そのサービスのルート URL によって識別さ
 >[!NOTE]
 >
 > フォームデータモデルは [OData バージョン 4](https://www.odata.org/documentation/) をサポートします。
->オンライン環境またはオンプレミス環境で [!DNL Microsoft® Dynamics 365] を設定する詳しい手順については、[[!DNL Microsoft® Dynamics] OData 設定](ms-dynamics-odata-configuration.md)を参照してください。
+>を設定するための詳しい手順ガイド [!DNL Microsoft®® Dynamics 365]、オンラインまたはオンプレミスの場合は、 [[!DNL Microsoft® Dynamics] OData 設定](ms-dynamics-odata-configuration.md).
 
 1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーをタップして選択します。
 
@@ -285,9 +285,32 @@ OData サービスは、そのサービスのルート URL によって識別さ
 
    >[!NOTE]
    >
-   OData エンドポイントをサービスルートとして使用して [!DNL Microsoft® Dynamics] サービスに接続する場合は、OAuth 2.0 認証を選択する必要があります。
+   接続する OAuth 2.0 認証タイプを選択する必要があります [!DNL Microsoft®® Dynamics] OData エンドポイントをサービスルートとして使用するサービス。
 
 1. 「**[!UICONTROL 作成]**」をタップして、OData サービス用のクラウド設定を作成します。
+
+## Microsoft® SharePointリストを設定 {#config-sharepoint-list}
+
+<span class="preview"> これはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+表形式でデータを保存するには、「Microsoft® SharePointリスト」を使用します。 でMicrosoft SharePointリストを設定するには、以下を実行します。 [!DNL Experience Manager] as a Cloud Serviceで、次の操作を実行します。
+
+1. に移動します。 **[!UICONTROL ツール]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft®® SharePoint]**.
+1. **設定コンテナ**&#x200B;を選択します。設定は、選択した設定コンテナに保存されます。
+1. クリック **[!UICONTROL 作成]** > **[!UICONTROL SharePoint List]** 」をドロップダウンリストから選択します。 SharePoint 設定ウィザードが表示されます。
+1. 「**[!UICONTROL タイトル]**」、「**[!UICONTROL クライアント ID]**」、「**[!UICONTROL クライアント秘密鍵]**」および「**[!UICONTROL OAuth URL]**」を指定します。OAuth URL のクライアント ID、クライアントの秘密鍵、テナント ID を取得する方法について詳しくは、[Microsoft® のドキュメント](https://learn.microsoft.com/ja-jp/graph/auth-register-app-v2)を参照してください。
+   * アプリの `Client ID` と `Client Secret` は Microsoft® Azure Portal から取得できます。
+   * Microsoft® Azure Portal で、リダイレクト URI を `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html` として追加します。`[author-instance]` をオーサーインスタンスの URL に置き換えます。
+   * API 権限の追加 `offline_access` および `Sites.Manage.All` （内） **Microsoft® Graph** タブを使用して、読み取り/書き込み権限を設定します。 追加 `AllSites.Manage` の権限 **SharePoint** タブをクリックして、SharePointデータをリモートで操作します。
+   * OAuth URL `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize` を使用します。`<tenant-id>` を Microsoft® Azure Portal のアプリの `tenant-id` に置き換えます。
+
+     >[!NOTE]
+     >
+     **クライアント秘密鍵**&#x200B;フィールドは、Azure Active Directory アプリケーションの設定に応じて、必須またはオプションになります。アプリケーションでクライアント秘密鍵を使用するように設定されている場合は、クライアントの秘密鍵を指定する必要があります。
+
+1. 「**[!UICONTROL 接続]**」をクリックします。接続に成功した場合、`Connection Successful` のメッセージが表示されます。
+1. 選択 **[!UICONTROL SharePoint Site]** および **[!UICONTROL SharePoint List]** 」をドロップダウンリストから選択します。
+1. タップ **[!UICONTROL 作成]** Microsoft® SharePointList のクラウド設定を作成する場合。
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
