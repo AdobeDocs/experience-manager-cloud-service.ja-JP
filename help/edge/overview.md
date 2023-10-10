@@ -3,9 +3,9 @@ title: はじめに —Edge Delivery Services
 description: Edge 配信サービスの概要。
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 6a4a257b3ca3d2db76d43707792d97db87974593
+source-git-commit: beaadc7b59223d527b61ed43d44fcd97a0079e0d
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '832'
 ht-degree: 2%
 
 ---
@@ -60,7 +60,7 @@ Adobeには、Edge Delivery Servicesに役立つ 3 つのチャネルが用意�
 
 ### コミュニティリソースにアクセス {#community-resource}
 
-Adobeには、Edge 配信に役立つ 2 つのコミュニティリソースがあります。 [Experience Leagueコミュニティ](https://adobe.ly/3Q6kTKl) および [Discord チャネル](https://discord.gg/YFTKQK8M).
+Adobeには、Edge 配信に役立つ 2 つのコミュニティリソースがあります。 [Experience Leagueコミュニティ](https://adobe.ly/3Q6kTKl) および [Discord チャネル](https://discord.gg/aem-live).
 
 ### 製品コラボレーションチャネルへのアクセス方法 {#collab-channel}
 
