@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service のアーキテクチャの概要
 description: Adobe Experience Manager as a Cloud Service のアーキテクチャの概要。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 13c67c35238c5138120f6d0d4845c759221d65ad
 workflow-type: tm+mt
-source-wordcount: '1826'
-ht-degree: 97%
+source-wordcount: '2015'
+ht-degree: 88%
 
 ---
 
@@ -198,3 +198,26 @@ AEM as a Cloud Service の新しいアーキテクチャでは、以前の世代
 * パブリッシュノードのライフサイクルを自動化するために、ゴールデンマスターの概念が導入されました。ゴールデンマスターは特別なパブリッシュノードで、エンドユーザーからはアクセスされません。パブリッシュサービスのすべてのノードがゴールデンマスターから作成されます。圧縮などのメンテナンス操作は、ゴールデンマスターに関連付けられているコンテンツリポジトリーに対して実行されます。パブリッシュノードは毎日リサイクルされ、定期メンテナンスは必要ありません。以前は、特にオーサーインスタンスの場合、このようなメンテナンスには多少のダウンタイムが必要でした。
 
 * アーキテクチャでは、アプリケーションのコンテンツをアプリケーションのコードと設定から完全に切り離しています。すべてのコードと設定は実質的に不変で、オーサーサービスとパブリッシュサービスの様々なノードの作成に使用されるベースラインイメージに組み込まれています。その結果、各ノードが同一であることが完全に保証され、コードと設定の変更は Cloud Manager パイプラインの実行によってのみグローバルにおこなえます。
+
+## AEMとEdge Delivery Services {#aem-with-edge-delivery-services}
+
+AEMにはEdge Delivery Servicesが加わり、エンゲージメントとコンバージョンを推進する優れたエクスペリエンスが提供されます。 AEMは、作成と開発をすばやくおこなう、インパクトの大きいエクスペリエンスを提供することで、これを実現します。 Edge Delivery Servicesは、作成者がすばやく更新および公開でき、新しいサイトが迅速に起動する、迅速な開発環境を可能にする、合成可能な一連のサービスです。 したがって、Edge Delivery Servicesを使用すると、コンバージョンを改善し、コストを削減し、コンテンツの速度を大幅に向上できます。
+
+更新されたアーキテクチャは、次の要素で構成されます。
+
+* コンテンツ管理（様々なエディターを含む）
+   * ユニバーサルビジュアルエディター
+   * コンテンツフラグメントエディター
+   * ページエディター
+   * ドキュメントベースのオーサリング (SharePointまたはGoogle Drive から )
+* エクスペリエンス配信（次を含む）
+   * エッジ配信サービス
+* コンテンツとコードを迅速かつ効率的に配信するための付帯サービス
+
+![AEMas a Cloud Serviceの概要 —Edge Delivery Services](assets/AEMaaCS-Edge-Architecture.png "AEMas a Cloud Serviceの概要 —Edge Delivery Services")
+
+関連トピック：
+
+* [AEMas a Cloud Serviceの概要 —Edge Delivery Services](/help/edge/overview.md)
+* [使用Edge Delivery Services](/help/edge/using.md)
+* [Edge Delivery Servicesを使用して、基盤となるアーキテクチャと重要なAEMの部分をas a Cloud Serviceする](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
