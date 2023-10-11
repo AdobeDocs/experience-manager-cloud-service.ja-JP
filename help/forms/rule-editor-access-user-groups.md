@@ -1,13 +1,13 @@
 ---
-title: 選択したユーザーグループにルールエディターへのアクセスを許可する方法
+title: ユーザーグループを選択するために、AEM アダプティブフォームのルールエディターにアクセスする方法を教えてください。
 description: アダプティブフォームで作業を行うユーザーのタイプやスキルはそれぞれ異なります。各ユーザーの役割や職務に応じて、ルールエディターへのアクセスを制限する方法を説明します。
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 95%
+source-wordcount: '325'
+ht-degree: 91%
 
 ---
 

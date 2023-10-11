@@ -1,12 +1,12 @@
 ---
-title: アダプティブフォームにおける表
+title: アダプティブフォームに表を追加する方法は？
 description: アダプティブフォームに表を追加するには、表コンポーネントを使用します。 レスポンシブレイアウトの操作に加えて、テーブルコンポーネントを使用して XDP テーブル要素を追加できます。
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '2492'
+source-wordcount: '2496'
 ht-degree: 92%
 
 ---

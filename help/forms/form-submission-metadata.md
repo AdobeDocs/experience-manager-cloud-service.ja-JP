@@ -1,12 +1,12 @@
 ---
-title: ユーザーデータからフォーム送信メタデータに情報を追加する
+title: 送信されたフォームのメタデータを更新する方法は？
 description: ユーザーが提供したデータを使用して、送信済みフォームのメタデータに情報を追加する方法を学習します。CRX リポジトリーで更新されたフォーム送信メタデータを表示する方法を詳しく説明します。
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '688'
 ht-degree: 61%
 
 ---

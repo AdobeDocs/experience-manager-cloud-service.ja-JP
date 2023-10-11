@@ -1,14 +1,14 @@
 ---
-title: アダプティブフォームの XML スキーマのデザイン
+title: アダプティブフォームの XML スキーマをデザインするにはどうすればよいですか？
 description: アダプティブフォームの XML スキーマを作成し、そのスキーマに基づいてアダプティブフォームを作成して、スキーマ苦情データを生成する方法を説明します。
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 77%
+source-wordcount: '952'
+ht-degree: 76%
 
 ---
 

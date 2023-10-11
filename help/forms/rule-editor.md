@@ -1,13 +1,13 @@
 ---
-title: アダプティブFormsのルールエディターとは
+title: ルールエディターを使用してルールをフォームフィールドに追加し、動的な動作を追加し、アダプティブフォームに複雑なロジックを構築する方法を教えてください。
 description: アダプティブフォームルールエディターを使用すると、コーディングやスクリプトの作成を行わずに、動的な動作を追加し、複雑なロジックをフォームに組み込むことができます。
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '6422'
+source-wordcount: '6440'
 ht-degree: 75%
 
 ---
@@ -851,8 +851,8 @@ Rule in the code editor -->
 
 発注フォームでは、次の表が表示されます。この中には、発注者が注文を入力します。この表では、
 
-* 最初の行は繰り返し可能なので、ユーザーは複数の製品を注文し、異なる数量を指定できます。 このエレメントの名前は、「`Row1`」です。
-* 反復可能な行と「Product Quantity（製品数量）」の列が重なるセルでは、タイトルが「Quantity（数量）」になっています。このセルのエレメント名は「`productquantity`」です。
+* 最初の行は繰り返し可能なので、ユーザーは複数の製品を注文し、異なる数量を指定できます。 この要素の名前は、「`Row1`」です。
+* 反復可能な行と「Product Quantity（製品数量）」の列が重なるセルでは、タイトルが「Quantity（数量）」になっています。このセルの要素名は「`productquantity`」です。
 * 表の 2 行目は反復しません。また、この行と「Product Quantity（製品数量）」の列が重なるセルでは、タイトルが「Total Quantity（合計数量）」になっています。
 
 ![Example-function-table](assets/example-function-table.png)

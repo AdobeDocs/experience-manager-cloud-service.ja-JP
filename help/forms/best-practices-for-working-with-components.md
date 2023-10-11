@@ -1,12 +1,10 @@
 ---
-title: コンポーネントを使用する場合のベストプラクティス
-seo-title: Best practices for working with components
-description: アダプティブフォームの各種コンポーネントを使用する場合のベストプラクティスと重要事項
-seo-description: Some best practices and key points to remember when working with Adaptive Form components
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+title: AEMアダプティブフォームを使用する際のベストプラクティスと重要なポイント
+description: アダプティブフォームの各種コンポーネントを使用する場合のベストプラクティスと重要事項.
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 84%
+source-wordcount: '641'
+ht-degree: 82%
 
 ---
 

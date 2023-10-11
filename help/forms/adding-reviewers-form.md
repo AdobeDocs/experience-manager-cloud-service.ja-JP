@@ -1,16 +1,15 @@
 ---
-title: 送信レビュー担当者とフォームの関連付け
-seo-title: Associating submission reviewers with a form
+title: アダプティブフォームをレビュー用に送信する方法は？
 description: 1 人以上のレビュー担当者とレビュー用にアダプティブフォームを共有します。
 uuid: 58c8c8fb-9262-4c37-b9b2-e46fe21b77d9
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 93%
+source-wordcount: '485'
+ht-degree: 91%
 
 ---
 

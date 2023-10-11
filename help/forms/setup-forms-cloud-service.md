@@ -1,11 +1,11 @@
 ---
-title: ' [!DNL AEM Forms]  as a Cloud Service 環境の設定方法 '
-description: ' [!DNL AEM Forms]  as a Cloud Service 環境のセットアップと設定方法の説明。'
+title: 設定方法 [!DNL AEM Forms] as a cloud service 環境の場合
+description: 設定と設定について説明します。 [!DNL AEM Forms] as a Cloud Service環境。
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 63%
+source-wordcount: '650'
+ht-degree: 59%
 
 ---
 

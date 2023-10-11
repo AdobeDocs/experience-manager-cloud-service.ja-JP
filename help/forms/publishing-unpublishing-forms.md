@@ -1,13 +1,13 @@
 ---
-title: フォームとドキュメントを発行および非公開にする方法
+title: AEM forms でフォームとドキュメントを発行および非公開にする方法は？
 description: アダプティブFormsの公開と非公開をスケジュールします。 公開されたフォームはパブリッシュインスタンスに複製されます。
 content-type: reference
 topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65s
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1338'
 ht-degree: 84%
 
 ---

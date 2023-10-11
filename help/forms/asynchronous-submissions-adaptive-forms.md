@@ -1,13 +1,14 @@
 ---
-title: AEM Adaptive Formsの非同期送信の設定
+title: AEM Adaptive Forms用の非同期送信を設定する方法を教えてください。
 description: アダプティブフォームの非同期送信を設定する方法について説明します。アダプティブフォームで非同期送信がどのように機能するかを詳しく調べます。
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 97%
+source-wordcount: '751'
+ht-degree: 96%
 
 ---
 

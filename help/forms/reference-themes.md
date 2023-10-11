@@ -1,12 +1,12 @@
 ---
-title: AEM Forms Reference Assets
+title: 基盤コンポーネントに基づいたアダプティブフォームのリファレンステーマを取得する方法
 description: すぐに使い始めるために用意されている参照用アダプティブフォームのテーマ、テンプレート、フォームデータモデルを使用します。
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 96%
+source-wordcount: '521'
+ht-degree: 94%
 
 ---
 

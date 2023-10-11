@@ -1,12 +1,12 @@
 ---
-title: '[!DNL AEM Forms] インスタンス上のアダプティブフォーム、PDF forms、およびその他のアセットの読み込み、書き出し、整理について学習します。'
+title: AEM FormsインスタンスでアダプティブFormsまたはPDF formsを読み込み、書き出し、整理する方法は？
 description: アダプティブForms、PDF forms、テーマおよびその他のサポートアセットを、AEMインスタンスとの間で移行する方法について説明します。
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
 source-wordcount: '1199'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 

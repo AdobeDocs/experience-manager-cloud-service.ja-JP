@@ -1,16 +1,16 @@
 ---
-title: アダプティブフォームフラグメント
+title: アダプティブフォームフラグメントとは
 description: アダプティブフォームでは、任意のアダプティブフォームで使用できるパネルやフィールドのグループなどのフォームセグメントを作成できます。また、既存のパネルをフラグメントとして保存することもできます。
 topic-tags: author
 keywords: アダプティブフォームフラグメント、アダプティブフォームフラグメントの追加、フォームフラグメントの作成、アダプティブフォームへのフラグメントの追加、フラグメントの管理
 feature: Adaptive Forms
-source-git-commit: 290cdecdb355b5c9a872d0f12ac701d271a258d4
+exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1747'
 ht-degree: 24%
 
 ---
-
 
 # コアコンポーネントに基づくアダプティブフォームでのアダプティブFormsフラグメントの作成と使用 {#adaptive-form-fragments}
 

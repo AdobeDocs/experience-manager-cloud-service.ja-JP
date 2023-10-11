@@ -1,12 +1,12 @@
 ---
-title: インストールと設定のトラブルシューティング
-description: インストールと設定のトラブルシューティング AEM Formsas a Cloud Service環境の
+title: AEM Forms as a Cloud Service環境のインストールと設定に関する問題のトラブルシューティング方法を教えてください。
+description: AEM Forms as a Cloud Service環境のインストールと設定のトラブルシューティング。
 contentOwner: khsingh
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 95%
+source-wordcount: '183'
+ht-degree: 85%
 
 ---
 

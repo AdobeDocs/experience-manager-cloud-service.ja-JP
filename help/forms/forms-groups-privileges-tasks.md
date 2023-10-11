@@ -1,11 +1,11 @@
 ---
-title: 組み込みの  [!DNL AEM Forms] as a Cloud Service グループ
+title: AEM Forms as a Cloud Serviceでは、どのユーザーグループを標準で使用できますか？
 description: すぐに使用できるユーザーグループと各グループに割り当てられた権限のリスト
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 83%
+source-wordcount: '185'
+ht-degree: 75%
 
 ---
 

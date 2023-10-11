@@ -1,13 +1,13 @@
 ---
-title: アダプティブフォームからフォームデータモデルサービスを呼び出すための API
+title: API を使用してアダプティブFormsからフォームデータモデルサービスを呼び出すにはどうすればよいですか？
 description: アダプティブフォームフィールド内から WSDL で記述された、Web サービスを呼び出す API について説明します。
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 96%
+source-wordcount: '482'
+ht-degree: 93%
 
 ---
 

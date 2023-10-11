@@ -1,11 +1,11 @@
 ---
-title: 不在時の設定
+title: AEM Formsで不在設定を構成する方法は？
 description: 休暇中または不在中にタスクを委任して、シームレスなワークフロー実行を実現します。
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 81%
+source-wordcount: '878'
+ht-degree: 80%
 
 ---
 

@@ -1,11 +1,12 @@
 ---
-title: キャッシュパフォーマンスのトラブルシューティング
-description: AEM Forms as a Cloud Serviceのキャッシュに関する問題のトラブルシューティング方法を教えてください。
+title: AEM Formsas a Cloud Serviceのキャッシュ関連の問題をトラブルシューティングするには、どうすればよいですか？
+description: AEM Forms as a Cloud Serviceのキャッシュに関する問題のトラブルシューティング。
 contentOwner: khsingh
-source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
+exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 96%
+source-wordcount: '378'
+ht-degree: 93%
 
 ---
 

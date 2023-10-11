@@ -1,10 +1,10 @@
 ---
-title: AEM Formsのメタデータの管理
+title: AEM Formsのメタデータはどのように管理できますか？
 description: メタデータを使用すると、アセットの分類および編成を容易に行うことができ、特定のアセットを検索しやすくなります。
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1741'
 ht-degree: 73%
 
 ---

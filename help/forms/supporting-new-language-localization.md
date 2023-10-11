@@ -1,10 +1,10 @@
 ---
-title: アダプティブフォームに新しいロケールのサポートを追加するにはどうすればよいですか？
+title: 基盤コンポーネントに基づいてアダプティブフォームに新しいロケールのサポートを追加する方法を教えてください。
 description: アダプティブFormsの場合は、追加設定なしで提供されるロケールとは別に、追加言語用のロケールを追加できます。
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1264'
 ht-degree: 74%
 
 ---

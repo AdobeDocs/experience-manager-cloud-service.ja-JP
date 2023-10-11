@@ -3,7 +3,7 @@ title: アダプティブフォームのコアコンポーネントで繰り返�
 description: アダプティブフォームで繰り返し可能なセクションまたはフィールドを作成する方法を説明します。
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 45%
@@ -180,7 +180,7 @@ A panel has various layouts options. The Layout for accordian design option has 
 
 ## XML スキーマ（XSD）の繰り返し設定の使用  {#using-repeat-settings-of-an-xml-schema-xsd-br}
 
-XML スキーマ、または任意の複合タイプエレメントの minOccurs および maxOccurs プロパティから、繰り返し可能なパネルを作成できます。XML スキーマについて詳しくは、 [XML スキーマをフォームモデルとして使用してアダプティブフォームを作成する](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html).
+XML スキーマ、または任意の複合タイプ要素の minOccurs および maxOccurs プロパティから、繰り返し可能なパネルを作成できます。XML スキーマについて詳しくは、 [XML スキーマをフォームモデルとして使用してアダプティブフォームを作成する](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html).
 
 以下のコードでは、`SampleType` パネルで minOccurs および maxOccurs プロパティが使用されています。
 

@@ -1,14 +1,14 @@
 ---
-title: Forms as a Cloud Service の通信の概要
+title: Formsas a Cloud Service通信 API とは
 description: PDFAPI を使用して、ドキュメントの署名、認証、保護、通信生成プロセスの自動化、PDFドキュメントの別の形式への変換を行います。
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 78%
 
 ---
-
 
 # AEM Formsas a Cloud Service通信の概要 {#frequently-asked-questions}
 

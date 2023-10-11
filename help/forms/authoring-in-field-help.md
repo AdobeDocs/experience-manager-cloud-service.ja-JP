@@ -1,13 +1,13 @@
 ---
-title: フォームのフィールドのための文脈依存ヘルプの作成
+title: AEMアダプティブFormsフィールドのヘルプテキストを追加するにはどうすればよいですか？
 description: AEM Formsを使用すると、アダプティブフォームのフィールドやパネルに文脈依存ヘルプを、テキストまたはビデオなどのリッチメディアとして追加できます。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 73%
+source-wordcount: '369'
+ht-degree: 71%
 
 ---
 

@@ -1,14 +1,14 @@
 ---
-title: アダプティブフォームで  [!DNL Adobe Sign]  を使用する方法
+title: アダプティブフォームでAdobe Signを使用するにはどうすればよいですか？
 description: アダプティブフォーム内でAdobe Signを使用すると、フォームの受信者は、デバイスや場所を選択して、E 署名を行うことができます。
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '3169'
+source-wordcount: '3172'
 ht-degree: 96%
 
 ---

@@ -1,12 +1,12 @@
 ---
-title: サイトページに埋め込まれた、または作成されたアダプティブFormsのレビューを作成および管理する方法を教えてください。
+title: アダプティブフォームをレビュー用に送信する方法は？ AEM アダプティブフォームのレビューを管理する方法は？
 description: レビューとは、レビュー担当者がタスクの割り当て手順を使用して、アダプティブフォームに対して様々なタスクを実行できるメカニズムです.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '360'
 ht-degree: 93%
 
 ---

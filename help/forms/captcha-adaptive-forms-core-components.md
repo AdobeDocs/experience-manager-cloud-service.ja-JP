@@ -1,15 +1,15 @@
 ---
-title: AEMアダプティブフォームでのGoogle reCAPTCHA の使用
+title: AEMアダプティブフォームでGoogle reCAPTCHA を使用する方法は？
 description: Google reCAPTCHA サービスでフォームのセキュリティを容易に強化できます。 ステップバイステップガイドをご用意しております。
 topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA サービス，アダプティブForms, CAPTCHA の課題，ボットの回避，コアコンポーネント，フォーム送信セキュリティ，フォームスパムの防止
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '947'
 ht-degree: 19%
 
 ---
-
 
 # コアコンポーネントに基づくAEMアダプティブフォームでのGoogle reCAPTCHA の使用 {#using-reCAPTCHA-in-adaptive-forms}
 

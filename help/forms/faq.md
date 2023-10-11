@@ -1,13 +1,13 @@
 ---
-title: Forms as a Cloud Service のよくある質問
+title: AEM Formsas a Cloud Serviceに関するよくある質問
 description: Forms as a Cloud Service のよくある質問
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 index: false
-source-git-commit: 93e7c4b31ea3037c98b64790ffdee11f94cc6134
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 100%
+source-wordcount: '995'
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ Java™ API リファレンスドキュメントは、[!DNL Maven Central Reposi
 * **既存のテーマとテンプレートを引き続き使用できますか？**
 はい。[移行ユーティリティ](migrate-to-forms-as-a-cloud-service.md)を使用して [!DNL AEM Forms] as a Cloud Service に移動した後、AEM 6.4 Forms および AEM 6.5 Forms で作成されたテーマを引き続き使用できます。
 
-   また、[!DNL AEM Forms] as a Cloud Service [アーキタイプ](setup-local-development-environment.md#forms-cloud-service-local-development-environment)に基づいてプロジェクトを作成し、含まれるサンプルテーマとテンプレートを使用することもできます。
+  また、[!DNL AEM Forms] as a Cloud Service [アーキタイプ](setup-local-development-environment.md#forms-cloud-service-local-development-environment)に基づいてプロジェクトを作成し、含まれるサンプルテーマとテンプレートを使用することもできます。
 
 * **スキーマに準拠したデータを作成できますか？**
 はい。アダプティブフォームを作成して、スキーマに準拠したデータを作成できます。
@@ -60,7 +60,7 @@ Custom parameters are planned for an upcoming release. -->
 
 * **ローカライズされたアダプティブフォームがありますが、これはローカライズ版をレンダリングしていないのですか？原因と解決方法は何でしょうか？**
 
-   ローカライズされたアダプティブフォームの URL 規則で、URL でのロケールの指定がサポートされるようになりました。新しい URL 規則により、ローカライズされたフォームを Dispatcher または CDN にキャッシュできます。Cloud Service 環境では、`http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>` の代わりに `http://host:port/content/forms/af/<afName>.<locale>.html` の URL 形式を使用して、アダプティブフォームのローカライズ版をリクエストします。アドビでは、Dispatcher または CDN キャッシュを使用することをお勧めします。これにより、事前入力されたフォームのレンダリング速度を向上できます。
+  ローカライズされたアダプティブフォームの URL 規則で、URL でのロケールの指定がサポートされるようになりました。新しい URL 規則により、ローカライズされたフォームを Dispatcher または CDN にキャッシュできます。Cloud Service 環境では、`http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>` の代わりに `http://host:port/content/forms/af/<afName>.<locale>.html` の URL 形式を使用して、アダプティブフォームのローカライズ版をリクエストします。アドビでは、Dispatcher または CDN キャッシュを使用することをお勧めします。これにより、事前入力されたフォームのレンダリング速度を向上できます。
 
 * **アダプティブフォームを更新しましたが、顧客は更新されたバージョンを使用できませんか？**
 デフォルトでは、CDN は 5 分ごとにキャッシュを更新し、5 分待ってから、更新バージョンを確認します。
@@ -82,11 +82,11 @@ Custom parameters are planned for an upcoming release. -->
 
 * **フォームポータル送信アクションアダプティブフォームを使用できますか？**
 
-   既存のアダプティブフォームを変更して、「[REST エンドポイントへの送信](configuring-submit-actions.md#submit-to-rest-endpoint)」、「[メールを送信](configuring-submit-actions.md#send-email)」、「[フォームデータモデルを使用して送信](configuring-submit-actions.md#submit-using-form-data-model)」および「[AEM ワークフローを起動](configuring-submit-actions.md#invoke-an-aem-workflow)」送信アクションを使用できます。フォームポータルおよびフォームポータル送信アクションは、まだ使用できません。機能の可用性については、毎月のリリースノートに注目してください。
+  既存のアダプティブフォームを変更して、「[REST エンドポイントへの送信](configuring-submit-actions.md#submit-to-rest-endpoint)」、「[メールを送信](configuring-submit-actions.md#send-email)」、「[フォームデータモデルを使用して送信](configuring-submit-actions.md#submit-using-form-data-model)」および「[AEM ワークフローを起動](configuring-submit-actions.md#invoke-an-aem-workflow)」送信アクションを使用できます。フォームポータルおよびフォームポータル送信アクションは、まだ使用できません。機能の可用性については、毎月のリリースノートに注目してください。
 
 * **[!DNL AEM Forms] アプリを [!DNL AEM Forms] as a Cloud Service** で使用できますか？
 
-   アダプティブフォームではレスポンシブデザインが可能です。これらのフォームは、基になるデバイスに基づいてアピアランス、デザインおよび双方向性を変更します。機能の可用性について毎月のリリースノートをフォローアップしながら、モバイルデバイスでアダプティブフォームを引き続き使用できます。
+  アダプティブフォームではレスポンシブデザインが可能です。これらのフォームは、基になるデバイスに基づいてアピアランス、デザインおよび双方向性を変更します。機能の可用性について毎月のリリースノートをフォローアップしながら、モバイルデバイスでアダプティブフォームを引き続き使用できます。
 
 * **最初の GA リリースに含まれない機能はどれですか？**
 フォームポータル、[!DNL AEM Forms] アプリ、Adobe Analytics との統合、Adobe Target との統合は、最初の GA リリースには含まれません。新機能については、毎月のリリースノートを参照してください。

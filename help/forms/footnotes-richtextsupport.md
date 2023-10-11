@@ -1,11 +1,11 @@
 ---
-title: 脚注のサポート アダプティブForms内
+title: 脚注をアダプティブフォームに追加するにはどうすればよいですか？
 description: アダプティブフォーム内の脚注にリッチテキストエディター (RTE) を使用します。
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 79%
+source-wordcount: '441'
+ht-degree: 78%
 
 ---
 

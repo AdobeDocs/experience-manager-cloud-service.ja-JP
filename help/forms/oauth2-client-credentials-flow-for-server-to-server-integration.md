@@ -1,16 +1,14 @@
 ---
-title: OAuth 2.0 クライアント資格情報フローによる Salesforce の統合
-seo-title: Salesforce integration with AEM Forms using OAuth 2.0 client credential flow
-description: OAuth 2.0 クライアント資格情報フローを使用して Salesforce とAEM Formsを統合する手順
-seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credential flow
+title: OAuth 2.0 クライアントの資格情報フローを使用してAEM Formsと Salesforce を統合する方法を教えてください。
+description: OAuth 2.0 クライアント資格情報フローを使用して、Salesforce とAEM Formsを統合する方法を説明します。
 Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '423'
 ht-degree: 37%
 
 ---
-
 
 # OAuth 2.0 クライアント資格情報フローによる Salesforce の統合 {#configure-salesforce-with-ouath-2.0-client-credential}
 
