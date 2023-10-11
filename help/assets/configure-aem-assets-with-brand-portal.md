@@ -5,7 +5,7 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 2c8bac8627ed660d2780f93f4018c8fa980e569a
+source-git-commit: ac393e4b275693fae7413fb79496052d106b219c
 workflow-type: tm+mt
 source-wordcount: '2589'
 ht-degree: 94%
@@ -106,7 +106,6 @@ Experience Manager Assets as a [!DNL Cloud Service] インスタンスと Brand 
    Brand Portal 配布エージェント（**[!UICONTROL bpdistributionagent0]**）は、「**[!UICONTROL Brand Portal に公開]**」の下に作成されます。
 
    ![配布エージェントを作成](assets/test-bpconfig2.png)
-
 
 1. 「**[!UICONTROL Brand Portal に公開]**」をクリックして、配布エージェントを開きます。
 
