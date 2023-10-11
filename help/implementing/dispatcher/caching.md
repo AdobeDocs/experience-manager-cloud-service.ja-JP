@@ -3,10 +3,10 @@ title: AEM as a Cloud Service でのキャッシュ
 description: AEM as a Cloud Serviceでのキャッシュの基本について説明します。
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a6714e79396f006f2948c34514e5454fef84b5d8
+source-git-commit: 469c5f0e115cc57cf7624aecf5b9f45645f2e99a
 workflow-type: tm+mt
-source-wordcount: '2803'
-ht-degree: 49%
+source-wordcount: '2878'
+ht-degree: 48%
 
 ---
 
@@ -99,6 +99,33 @@ Define DISABLE_DEFAULT_CACHING
 ```
 
 Dispatcher レイヤーでキャッシュヘッダーを変更する場合は、広くキャッシュしすぎないように注意してください。 「HTML/テキスト」の節のディスカッションを参照してください。 [上](#html-text). また、（キャッシュせずに）非公開にするアセットが、`LocationMatch` ディレクティブフィルターの一部ではないことも確認してください。
+
+BLOB ストアに格納される JCR リソース（16 KB を超える）は、通常、AEMによる 302 リダイレクトとして提供されます。 これらのリダイレクトはインターセプトされ、その後に CDN が続き、コンテンツが BLOB ストアから直接配信されます。 これらの応答でカスタマイズできるヘッダーのセットは、限られています。 例えば、 `Content-Disposition` dispatcher ディレクティブは次のように使用する必要があります。
+
+```
+<LocationMatch "\.(?i:pdf)$">
+  ForceType application/pdf
+  Header set Content-Disposition inline
+  </LocationMatch>
+```
+
+BLOB 応答でカスタマイズ可能なヘッダーのリストは次のとおりです。
+
+```
+content-security-policy
+x-frame-options
+x-xss-protection
+x-content-type-options
+x-robots-tag
+access-control-allow-origin
+content-disposition
+permissions-policy
+referrer-policy
+x-vhost
+content-disposition
+cache-control
+vary
+```
 
 #### 新しいデフォルトのキャッシュ動作 {#new-caching-behavior}
 
