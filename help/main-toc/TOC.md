@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 73e2e84006cb6435d5bf34eef642269eeb8f5c4e
+source-git-commit: 2218aa58c6105d5fbfc08975e9e39d6476f4b173
 workflow-type: tm+mt
-source-wordcount: '4328'
+source-wordcount: '4333'
 ht-degree: 91%
 
 ---
@@ -744,6 +744,7 @@ ht-degree: 91%
    + [ヘッドレス CMS とは](/help/headless/what-is-headless.md)
    + [AEM ヘッドレスの概要](/help/headless/introduction.md)
    + [開発者ポータル（追加のリソース）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
+   + [ベストプラクティス — セットアップと使用](/help/headless/best-practices-setup-use.md)
    + セットアップ {#setup}
       + [はじめに](/help/headless/setup/introduction.md)
       + [設定](/help/headless/setup/create-configuration.md)
