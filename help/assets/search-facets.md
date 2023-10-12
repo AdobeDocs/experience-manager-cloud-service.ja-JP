@@ -4,10 +4,10 @@ description: この記事では、Adobe Experience Manager で検索ファセッ
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 220350e6669c38ea602c2796ec1d5559992338ec
 workflow-type: tm+mt
-source-wordcount: '2444'
-ht-degree: 99%
+source-wordcount: '2503'
+ht-degree: 97%
 
 ---
 
@@ -303,6 +303,18 @@ The `Tags` 述語では、タグに基づいたアセットの検索を実行で
   </tr>
  </tbody>
 </table>
+
+## デフォルトの検索ファセットを削除 {#removing-default-search-facets}
+
+Adobeでは、パフォーマンスの問題を回避するため、デフォルトの検索ファセットを削除する際は注意する必要があります。 デフォルトの検索ファセットを削除すると、デフォルトの機能の動作に影響する場合があります。
+
+オムニサーチとスマートコレクションでクエリパフォーマンスの問題が発生する原因として、次の非表示フィールドを削除しないでください。
+
+* group.2_group.type=dam:Asset
+
+* group.1_group.type=nt:folder
+
+* group.p.or=true
 
 ## デフォルトの検索ファセットを復元 {#restoring-default-search-facets}
 
