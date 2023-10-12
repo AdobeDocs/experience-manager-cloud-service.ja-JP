@@ -3,22 +3,23 @@ title: Experience Manager as a Cloud Service サイトのサポートリソー�
 description: すべての Adobe AEM Cloud サービスサポートリソースの完全なリストを確認します。AEM Sites as Cloud Service の質問に対する回答を検索します。
 landing-page-description: AEM Sites as a Cloud Service を使用したオーサリング方法と AEM Sites as a Cloud Service の管理方法を説明します。
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ce841a83d46dc1c4fa2edc858e4a0be0af3ac170
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 78%
+source-wordcount: '417'
+ht-degree: 77%
 
 ---
 
 # AEM Sites as a Cloud Service {#aem-sites-guide}
 
-このページには、AEM Cloud Services がサポートするすべてのAdobeリソースの完全なリストが記載されています。 次に関する質問への回答を得る [!DNL AEM Sites as a Cloud Service].
+このページでは、サポートされるすべてのAdobeAEMCloud Serviceの完全なリストを示します。 次に関する質問への回答を得る [!DNL AEM Sites as a Cloud Service].
 
 ## Sites に関する主要な記事 {#key-articles}
 
 * [AEM Sites as a Cloud Service の主な変更点](sites-cloud-changes.md)
 * [オーサリングのクイックスタートガイド](authoring/getting-started/quick-start.md)
 * [ページの公開](authoring/fundamentals/publishing-pages.md)
+* [オーサリング (Edge Delivery Services)](/help/edge/overview.md)
 * [レスポンシブレイアウトのオーサリング](authoring/features/responsive-layout.md)
 * [オーサリングテンプレート](authoring/features/templates.md)
 * [エクスペリエンスフラグメントの使用](authoring/fundamentals/experience-fragments.md)
