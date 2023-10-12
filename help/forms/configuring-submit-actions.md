@@ -2,7 +2,7 @@
 title: アダプティブフォームの送信アクションの設定方法?
 description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自のアクションを作成できます。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: fb3d3732f698015151d9703bfddfe94b531d31b6
+source-git-commit: 89e61c009890e2052c5db74b38c93fd54e697cd3
 workflow-type: tm+mt
 source-wordcount: '3395'
 ht-degree: 97%
@@ -236,6 +236,8 @@ AEM Forms を Microsoft® Sharepoint ストレージに接続するには、次�
 設定済みの Microsoft® OneDrive に接続します。
 
 ### Microsoft OneDrive 設定の作成 {#create-onedrice-configuration}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 
 AEM Forms を Microsoft® OneDrive ストレージに接続するには、以下の手順に従います。
 
