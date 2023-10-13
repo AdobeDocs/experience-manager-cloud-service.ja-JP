@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2218aa58c6105d5fbfc08975e9e39d6476f4b173
+source-git-commit: 66a6897a28bb7fa57992c6782c001629f0f1d0c5
 workflow-type: tm+mt
-source-wordcount: '4333'
+source-wordcount: '4325'
 ht-degree: 91%
 
 ---
@@ -581,7 +581,6 @@ ht-degree: 91%
          + [OAuth 2.0 クライアント資格情報フローを使用した Salesforce アプリケーションの統合](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [ [!DNL Azure]  ストレージの設定](/help/forms/configure-azure-storage.md)
          + [ [!DNL Microsoft Dynamics 365] および [!DNL Salesforce] クラウドサービスの設定](/help/forms/configure-msdynamics-salesforce.md)
-         + [アダプティブフォームのMicrosoft SharePointリストへの接続](/help/forms/connect-aem-adaptive-form-to-sharepointlist.md)
          + [フォームデータモデルの作成](/help/forms/create-form-data-models.md)
          + [フォームデータモデルの操作](/help/forms/work-with-form-data-model.md)
          + [フォームデータモデルの使用](/help/forms/using-form-data-model.md)
