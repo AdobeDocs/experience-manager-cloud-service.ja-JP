@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 9981fb1ac5ddf5d918cf76476fa185c524749c70
+source-git-commit: f5f2c460815d273fe445c6f415dee7776cc18fce
 workflow-type: tm+mt
-source-wordcount: '1252'
-ht-degree: 79%
+source-wordcount: '1355'
+ht-degree: 73%
 
 ---
 
@@ -15,17 +15,20 @@ ht-degree: 79%
 
 ## リリース日 {#release-date}
 
-の最新バージョン 1.9.13 のリリース日 [!DNL Workfront for Experience Manager enhanced connector] は 2023 年 9 月 11 日です。
+の最新バージョン 1.9.14 のリリース日 [!DNL Workfront for Experience Manager enhanced connector] は 2023 年 10 月 13 日です。
 
 ## リリースのハイライト {#release-highlights}
 
-[!DNL Workfront for Experience Manager enhanced connector] の最新バージョンには、次のアップデートが含まれています。
+の最新バージョン [!DNL Workfront for Experience Manager enhanced connector] には、次のバグ修正が含まれています。
 
-* Experience Manager拡張コネクタは、プロジェクトのイベント購読を削除する際にWorkfrontからすべてのイベント購読を取得します。これにより、アプリケーションのパフォーマンスに影響を与えます。
+* 「詳細設定」でイベントの購読が無効になっている場合、次のオプションを選択できます。 **ドキュメント更新イベントに購読してAEMのアセットメタデータを更新**, **プロジェクトの完了時に、すべてのプロジェクトアセットをBrand Portalに公開する**、および **コメント同期を有効にする**.
 
-* アセットがWorkfrontからExperience Managerに送信された場合、そのアセットの MIME タイプはに設定されません。 `dc:format` 属性をExperience Manager内に追加します。
+* Workfrontでプレビューすると、Experience Managerーに保存されたアセットの一部が適切にレンダリングされない。
 
-* Experience Manager強化コネクタに保存されたWorkfrontプロジェクト ID には、重複が含まれます。
+* WorkfrontとのExperience Manager接続を再設定する際に、コメント同期の更新、削除、ドキュメントの更新などのイベント購読は正常に作成されません。
+
+* リンクされたフォルダーの作成、更新、リンクされたフォルダーの有効化、コメントの同期の有効化と無効化、コネクタでの設定の保存に関する API の大幅なパフォーマンス向上。
+
 
 >[!NOTE]
 >
@@ -34,7 +37,7 @@ ht-degree: 79%
 
 >[!IMPORTANT]
 >
->Adobeが推奨 [最新バージョン 1.9.13 にアップグレード](/help/assets/workfront-connector-install.md) の [!DNL Workfront for Experience Manager enhanced connector].
+>Adobeが推奨 [最新バージョン 1.9.14 にアップグレード](/help/assets/workfront-connector-install.md) の [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 既知の問題 {#known-issues}
 
@@ -43,6 +46,14 @@ ht-degree: 79%
 * 従来の Workfront エクスペリエンスを使用している場合、「**[!UICONTROL 詳細]**」ドロップダウンリストで選択できる「**[!UICONTROL 送信先]**」オプションでは、Experience Manager 内のターゲット宛先を選択できません。The **[!UICONTROL 送信先]** オプションは、 **[!UICONTROL ドキュメントアクション]** 」ドロップダウンリストから選択できます。 The **[!UICONTROL 送信先]** オプションは、 **[!UICONTROL その他]** ドロップダウンリストと **[!UICONTROL ドキュメントアクション]** 新しいWorkfrontエクスペリエンスで使用可能なドロップダウンリスト。
 
 ## 以前のリリース {#previous-releases}
+
+### 2023年9月リリース {#september-2023-release}
+
+* Experience Manager拡張コネクタは、プロジェクトのイベント購読を削除する際にWorkfrontからすべてのイベント購読を取得します。これにより、アプリケーションのパフォーマンスに影響を与えます。
+
+* アセットがWorkfrontからExperience Managerに送信された場合、そのアセットの MIME タイプはに設定されません。 `dc:format` 属性をExperience Manager内に追加します。
+
+* Experience Manager強化コネクタに保存されたWorkfrontプロジェクト ID には、重複が含まれます。
 
 ### 2023年8月リリース {#august-2023-release}
 
