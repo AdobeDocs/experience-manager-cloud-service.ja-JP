@@ -1,12 +1,12 @@
 ---
 title: ' [!DNL AEM Forms] as a Cloud Service の概要'
-description: AEM Formsを検出して、ビジネスに対応するフォームを作成し、ビジネスプロセスのワークフローを作成し、ドキュメントサービスを使用してドキュメントを作成および保護します。
+description: AEM Forms を検出して、ビジネスに対応するフォームを作成し、ビジネスプロセスのワークフローを作成し、ドキュメントサービスを使用してドキュメントを作成および保護します。
 landing-page-description: AEM as a Cloud Service でのフォームの使用方法を理解します。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '1149'
-ht-degree: 85%
+ht-degree: 86%
 
 ---
 
