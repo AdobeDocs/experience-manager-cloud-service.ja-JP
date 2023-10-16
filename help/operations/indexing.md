@@ -2,10 +2,10 @@
 title: コンテンツの検索とインデックス作成
 description: AEM as a Cloud Serviceでのコンテンツの検索とインデックス作成について説明します。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d567115445c0a068380e991452d9b976535e3a1d
 workflow-type: tm+mt
-source-wordcount: '2324'
-ht-degree: 38%
+source-wordcount: '2433'
+ht-degree: 35%
 
 ---
 
@@ -34,6 +34,11 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 * 内部的には、他のインデックスがクエリに設定され使用される可能性があります。例えば、`damAssetLucene` インデックスに対して記述されたクエリは、Skyline 上では実際には、このインデックスの Elasticsearch バージョンに対して実行される可能性があります。この違いは、通常、アプリケーションとユーザーには表示されませんが、 `explain` 機能は、別のインデックスをレポートします。 Lucene インデックスと Elasticsearch インデックスの違いについては、[Apache Jackrabbit Oak の Elastic 関連ドキュメント](https://jackrabbit.apache.org/oak/docs/query/elastic.html)を参照してください。お客様は、Elasticsearchインデックスを直接設定する必要はなく、または設定できません。
 * 類似のフィーチャベクトル (`useInSimilarity = true`) はサポートされていません。
 
+>[!TIP]
+>
+>高度な検索およびインデックス作成機能の詳細な説明など、Oak のインデックス作成とクエリの詳細については、 [Apache Oak ドキュメント](https://jackrabbit.apache.org/oak/docs/query/query.html).
+
+
 ## 使用方法 {#how-to-use}
 
 インデックス定義は、次のように、3 つの主な使用例に分類できます。
@@ -54,11 +59,15 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 
 3. 完全なカスタムインデックス：まったく新しいインデックスを最初から作成できます。 名前の競合を避けるために、名前にプレフィックスが必要です。 例： `/oak:index/acme.product-1-custom-2`( プレフィックスは `acme.`
 
+>[!NOTE]
+>
+>での新しいインデックスの概要 `dam:Asset` nodetype（特に fulltext インデックス）は、OOTB 製品の機能と競合し、パフォーマンスの問題を引き起こす可能性があるので、強くお勧めしません。 一般に、現在の `damAssetLucene-*` インデックスのバージョンは、 `dam:Asset` nodetype （これらの変更は、以降にリリースされた場合、新しい製品バージョンのインデックスに自動的に結合されます）。 不明な点がある場合は、Adobeサポートにお問い合わせください。
+
 ## 新しいインデックス定義の準備 {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->標準提供のインデックスをカスタマイズする場合（例：`damAssetLucene-8`）、CRX DE パッケージマネージャー（`/crx/packmgr/`）を使用して、最新の標準のインデックス定義を *Cloud Service 環境*&#x200B;にコピーしてください。名前をに変更します。 `damAssetLucene-8-custom-1` （またはそれ以上）、XML ファイル内にカスタマイズを追加します。 これにより、必要な設定が誤って削除されるのを防ぐことができます。 例えば、`/oak:index/damAssetLucene-8/tika` 下のノード `tika` は、Cloud Service のカスタマイズ済みインデックスに必要です。Cloud SDK には存在しません。
+>標準提供のインデックスをカスタマイズする場合（例：`damAssetLucene-8`）、CRX DE パッケージマネージャー（`/crx/packmgr/`）を使用して、最新の標準のインデックス定義を *Cloud Service 環境*&#x200B;にコピーしてください。名前をに変更します。 `damAssetLucene-8-custom-1` （またはそれ以上）、XML ファイル内にカスタマイズを追加します。 これにより、必要な設定が誤って削除されるのを防ぐことができます。 例えば、 `tika` の下のノード `/oak:index/damAssetLucene-8/tika` は、AEM Cloud Service環境にデプロイされたカスタマイズされたインデックスで必要ですが、ローカルのAEM SDK に存在しません。
 
 OOTB インデックスのカスタマイズの場合は、次の命名パターンに従う実際のインデックス定義を含む新しいパッケージを準備します。
 

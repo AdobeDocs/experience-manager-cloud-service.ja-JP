@@ -2,10 +2,10 @@
 title: Query Builder の述語リファレンス
 description: AEM as a Cloud Serviceの Query Builder API の述語リファレンス。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: e10c39c1d7fa05b738dd8f25662617a3a9568f83
 workflow-type: tm+mt
-source-wordcount: '2252'
-ht-degree: 57%
+source-wordcount: '2295'
+ht-degree: 56%
 
 ---
 
@@ -25,6 +25,8 @@ ht-degree: 57%
 * **`p.limit`** - ページのサイズを表す数値.
 * **`p.guessTotal`**  — 推奨：結果の全体を計算するのを避けます。これはコストのかかる場合があります。最大数を示す数値（例：1000）で、大まかなサイズと小さい結果を得るための正確な数値に関する十分なフィードバックをユーザーに提供する数値 )。または、 `true` 必要最小限の数まで数える `p.offset` + `p.limit`.
 * **`p.excerpt`**  — 設定されている場合は `true`、結果に完全なテキストの抜粋を含めます。
+* **`p.indexTag`**  — 設定すると、クエリにインデックスタグオプションが含まれます ( [クエリオプションインデックスタグ](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)) をクリックします。
+* **`p.facetStrategy`**  — 設定されている場合は `oak`、Query Builder はファセット抽出を Oak に委任します ( [ファセット](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)) をクリックします。
 * **`p.hits`** - （JSON サーブレットのみ）ヒットが JSON として記述される方法を、これらの標準の方法で選択します（ResultHitWriter サービスを介して拡張可能）。
    * **`simple`**  — のような最小の項目 `path`, `title`, `lastmodified`, `excerpt` （設定されている場合）。
    * **`full`**  — ノードの sling JSON レンダリング（を使用） `jcr:path` ヒットのパスを示します。デフォルトでは、ノードの直接プロパティのリストのみが表示され、 `p.nodedepth=N`（0 はサブツリー全体を表し、無限サブツリーを表します）追加 `p.acls=true` 指定した結果項目に対する現在のセッションの JCR 権限を含めるには ( マッピング： `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`) をクリックします。
