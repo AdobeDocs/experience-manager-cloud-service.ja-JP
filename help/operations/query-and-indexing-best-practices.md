@@ -3,9 +3,9 @@ title: クエリとインデックス作成のベストプラクティス
 description: アドビのベストプラクティスガイドラインに基づいてインデックスとクエリを最適化する方法を説明します。
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 1cdda5f793d853493f1f61eefebbf2af8cdeb6cb
+source-git-commit: ddd67a69bea2e2109ce93a91f42e8f365424f80f
 workflow-type: tm+mt
-source-wordcount: '3141'
+source-wordcount: '3144'
 ht-degree: 46%
 
 ---
@@ -254,7 +254,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 
 効率的な JCR クエリとインデックス定義を作成できるようにするため、開発時に [JCR クエリチートシート](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=ja#jcrquerycheatsheet)をダウンロードして参照用として使用できます。
 
-これには QueryBuilder、XPath、SQL-2 のクエリの例が収録されていて、クエリのパフォーマンスの点で異なる動作をする複数のシナリオに対応できます。また、Oak インデックスの作成またはカスタマイズ方法に関する推奨事項も収録されています。このチートシートの内容は、AEM as a Cloud ServiceおよびAEM 6.5 に適用されます。
+これには QueryBuilder、XPath、SQL-2 のクエリの例が収録されていて、クエリのパフォーマンスの点で異なる動作をする複数のシナリオに対応できます。また、Oak インデックスの作成またはカスタマイズ方法に関するレコメンデーションも収録されています。このチートシートの内容は、AEM as a Cloud ServiceおよびAEM 6.5 に適用されます。
 
 ## インデックス定義のベストプラクティス {#index-definition-best-practices}
 
@@ -315,4 +315,15 @@ Automated Cloud Manager パイプラインチェックでは、上記のベス�
    * この場合、インデックスから返されるすべての結果は、クエリエンジンで読み取られ、メモリ内で並べ替えられる必要があります。
    * これは、基になるインデックスクエリで並べ替えを適用する場合に比べて、多くの場合遅くなります。
 1. クエリの実行者が、大きな結果セットの反復を試みています。
-   * この状況は、多くの理由で起こる可能性があります。 |原因 |緩和策 | |—|—| |省略 `p.guessTotal` （または非常に大きな guessTotal を使用）を使用すると、QueryBuilder は多数の結果カウント結果を反復します。 |提供 `p.guessTotal` 適切な値を持つ | | Query Builder での大きな制限または無制限の制限の使用 ( `p.limit=-1`) |適切な値を使用： `p.limit` （1000 以下が理想） | |基になる JCR クエリから大量の結果をフィルタリングする Query Builder でのフィルタリング述語の使用 |フィルタリング述語を、基になる JCR クエリで適用できる制限に置き換える | | QueryBuilder での比較器ベースの並べ替えの使用 |基になる JCR クエリでプロパティベースの順序に置き換えます（順序付きでインデックス付きのプロパティを使用） | |アクセス制御による多数の結果のフィルタリング |追加のインデックス付きプロパティまたはパス制限をクエリに適用して、アクセス制御を反映します | |大きなオフセットを持つ「オフセットページネーション」の使用 |使用を検討 [キーセットのページネーション](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| |多数の結果を繰り返す、または無限の数の結果 |使用を検討 [キーセットのページネーション](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| |正しくないインデックスが選択されました |クエリとインデックス定義でタグを使用して、期待されるインデックスが使用されていることを確認します|
+   * この状況は、次に示すように、様々な理由で発生する可能性があります。
+
+| 原因 | 緩和策 |
+|----------|--------------|
+| 省略は `p.guessTotal` （または非常に大きな guessTotal を使用）を使用すると、QueryBuilder は多数の結果カウント結果を反復します。 | 提供 `p.guessTotal` 適切な値を持つ |
+| Query Builder での大きな制限または無限の制限の使用 ( `p.limit=-1`) | 適切な値を `p.limit` （1000 以下が理想） |
+| 基になる JCR クエリから大量の結果をフィルタリングする Query Builder でのフィルタリング用述語の使用 | フィルタリング述語を、基になる JCR クエリで適用できる制限に置き換える |
+| QueryBuilder での比較器ベースの並べ替えの使用 | 基になる JCR クエリで、プロパティベースの順序に置き換えます（順序付きとしてインデックス付けされたプロパティを使用）。 |
+| アクセス制御による多数の結果のフィルタリング | 追加のインデックス付きプロパティまたはパス制限をクエリに適用して、アクセス制御を反映します。 |
+| 大きなオフセットを持つ「オフセットページネーション」の使用 | 使用を検討する [キーセットのページネーション](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| 多数の結果を繰り返す、または無限の数の結果 | 使用を検討する [キーセットのページネーション](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| 正しくないインデックスを選択しました | クエリとインデックス定義でタグを使用して、期待されるインデックスが確実に使用されるようにします。 |
