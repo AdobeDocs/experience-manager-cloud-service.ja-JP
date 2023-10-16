@@ -2,7 +2,7 @@
 title: ソースからのコンテンツの抽出
 description: ソースAdobe Experience Manager(AEM) インスタンスからコンテンツを抽出し、後でCloud ServiceAEMインスタンスに転送する方法を説明します。
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 44a3f3c4ca08cffa06056ea85adc58e3cf1f2f1c
+source-git-commit: 031ddfa2da0fc5ecc92267eae1f9dcaac394573d
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 39%
@@ -36,7 +36,7 @@ ht-degree: 39%
 
 1. 抽出ダイアログが表示されます。 クリック **抽出** をクリックして、抽出段階を開始します。
 
-   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14.png)
+   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
 
    >[!NOTE]
    >オプションで、抽出段階でステージングコンテナを上書きできます。 次の場合 **ステージングコンテナを上書き** が無効になっている場合、コンテンツパスやインクルードバージョンの設定が変更されていない後続の移行で、抽出を高速化できます。 ただし、コンテンツパスやインクルードバージョンの設定が変更されている場合は、「**ステージングコンテナを上書き**」を有効にしてください。
