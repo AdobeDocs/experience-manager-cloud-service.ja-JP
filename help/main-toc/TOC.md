@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service の仕組みと機
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 66a6897a28bb7fa57992c6782c001629f0f1d0c5
+source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
-source-wordcount: '4325'
+source-wordcount: '4330'
 ht-degree: 91%
 
 ---
@@ -537,6 +537,8 @@ ht-degree: 91%
       + [アセット、フォルダー、コレクションの監視](/help/assets/manage-notifications-assets-view.md)
       + [レポートの管理](/help/assets/manage-reports-assets-view.md)
       + [タグを管理](/help/assets/tagging-management-assets-view.md)
+   + ベストプラクティス{#best-practices}
+      + [検索のベストプラクティス](/help/assets/search-best-practices.md)
    + Adobe Workfront との統合 {#integrations}
       + [ [!DNL Adobe Workfront] との統合](/help/assets/workfront-integrations.md)
       + [アセットメタデータマッピングの設定](/help/assets/configure-asset-metadata-mapping.md)
@@ -736,7 +738,7 @@ ht-degree: 91%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [移行](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
-+ エッジ配信サービス {#edge-delivery}
++ Edge 配信サービス {#edge-delivery}
    + [Edge 配信の概要](/help/edge/overview.md)
    + [エッジ配信の使用](/help/edge/using.md)
 + ヘッドレス {#headless}
