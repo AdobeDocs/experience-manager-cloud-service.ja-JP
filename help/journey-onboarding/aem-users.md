@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '579'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ AEM のオーサーは、AEM にログインしてコンテンツの作成を開
 * Cloud Manager へのアクセス。
 * AEM as a Cloud Service インスタンスへのログイン。
 
-おめでとうございます。これで、AEM コンテンツを作成し、公開する準備が整いました。詳しくは、 [その他のリソース](#additional-resources) AEMでのコンテンツの作成方法と管理方法の詳細については、「 」を参照してください。
+おめでとうございます。これで、AEM コンテンツを作成し、公開する準備が整いました。AEM でのコンテンツの作成方法と管理方法について詳しくは、[その他のリソース](#additional-resources)のセクションを参照してください。
 
 AEM as a Cloud Service で開発者とデプロイメントマネージャーがカスタムアプリケーションをどのように作成し管理するかについて関心がある場合は、オンボーディングジャーニーの第 2 のオプションのパートである [AEM 開発者タスク](developers.md)に進んでください。
 
@@ -81,7 +81,7 @@ AEM as a Cloud Service で開発者とデプロイメントマネージャーが
 
 ## その他のリソース {#additional-resources}
 
-オンボーディングジャーニーのコンテンツの範囲を超えたい場合の追加のオプションリソースを次に示します。
+オンボーディングジャーニーのコンテンツの範囲を超えてさらに詳しく知りたい場合に役立つ、追加のオプションリソースを次に示します。
 
-[ページのオーサリングのクイックスタートガイド](/help/sites-cloud/authoring/getting-started/quick-start.md) - AEMのオーサリングの基本事項の概要については、ここから始めてください。
+[ページのオーサリングのクイックスタートガイド](/help/sites-cloud/authoring/getting-started/quick-start.md) - AEM におけるオーサリングの基本事項の概要を参照するには、ここから始めてください。
 [ヘッドレスオーサリングジャーニー](/help/journey-headless/author/overview.md) - ヘッドレスコンテンツを作成する場合は、このガイド付きの説明に従ってください。
