@@ -6,9 +6,9 @@ feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 source-git-commit: 5540b7aa03a384fe613abe9b32cfbf6da2268b64
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1631'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -29,31 +29,31 @@ ht-degree: 72%
 
 ## 前提条件 {#prerequisites}
 
-次の操作を行うには管理者権限が必要です。 [アセットをリンクとして共有するための設定](#config-link-share-settings).
+[アセットをリンクとして共有するための設定](#config-link-share-settings)を行うには、管理者権限が必要です。
 
-## リンク共有の設定 {#config-link-share-settings}
+## リンク共有設定の指定 {#config-link-share-settings}
 
-[!DNL Experience Manager Assets] では、デフォルトのリンク共有設定を構成できます。
+[!DNL Experience Manager Assets] では、デフォルトのリンク共有設定を指定できます。
 
-1. 次をクリック： [!DNL Experience Manager] ロゴをクリックし、に移動します。 **[!UICONTROL ツール]** > **[!UICONTROL Assets]** > **[!UICONTROL Assets 設定]** > **[!UICONTROL リンク共有]**.
+1. [!DNL Experience Manager] ロゴをクリックし、**[!UICONTROL ツール]**／**[!UICONTROL Assets]**／**[!UICONTROL Assets 設定]**／**[!UICONTROL リンク共有]**&#x200B;に移動します。
 1. 初期設定：
 
-   * **オリジナルを含める:**
+   * **オリジナルを含める：**
 
-      * 選択 `Select Include Originals` を選択します。 `Include Originals` オプションがデフォルトでリンク共有ダイアログに表示されます。
-      * 適切なオプションを選択して動作を指定し、 `Include Originals` オプション editable、read-only または hidden
-   * **レンディションを含める:**
-      * 選択 `Select Include Renditions` オプションを選択して、 `Include Renditions` オプションがデフォルトでリンク共有ダイアログに表示されます。
-      * 適切なオプションを選択して動作を選択し、 `Include Renditions` オプション editable、read-only または hidden
+      * `Select Include Originals` を選択し、デフォルトでリンク共有ダイアログに表示される `Include Originals` オプションを選択します。
+      * 適切なオプションを選択して動作を指定し、`Include Originals` オプションを編集可能、読み取り専用または非表示にします。
+   * **レンディションを含める：**
+      * `Select Include Renditions` オプションを選択して、デフォルトでリンク共有ダイアログに表示される `Include Renditions` オプションを選択します。
+      * 適切なオプションを選択して動作を選択し、`Include Renditions` オプションを編集可能、読み取り専用または非表示にします。
 
-1. リンクのデフォルトの有効期間を `Validity Period` フィールド `Expiration date` 」セクションに入力します。
+1. 「`Expiration date`」セクションの `Validity Period` フィールドに、リンクのデフォルトの有効期間を指定します。
 
-1. **[!UICONTROL リンク共有]** ボタンをクリックします。
-   * 次の条件を満たすすべてのユーザー `jcr:modifyAccessControl` 権限では、 [!UICONTROL リンク共有] オプション。 デフォルトでは、すべての管理者に表示されます。 The [!UICONTROL リンク共有] ボタンは、デフォルトでは全員に表示されます。 このオプションを定義済みのグループに対してのみ表示するようにを設定することも、特定のグループからこのオプションを拒否することもできます。 選択 `Allow only for groups` 特定のグループに対し、 `Share Link` オプション。 選択 `Deny from groups` 否定する `Share Link` オプションを選択できます。 これらのオプションを選択したら、 `Select Groups` フィールドを使用して、許可または拒否する必要があるグループ名を追加します。
+1. アクションバーの&#x200B;**[!UICONTROL リンク共有]**&#x200B;ボタン：
+   * `jcr:modifyAccessControl` 権限を持つすべてのユーザーは、[!UICONTROL リンク共有]オプションを表示できます。デフォルトでは、すべての管理者に表示されます。[!UICONTROL リンク共有]ボタンは、デフォルトでは全員に表示されます。このオプションを定義済みのグループに対してのみ表示するようにを設定することも、特定のグループからこのオプションを拒否することもできます。特定のグループに対して `Share Link` オプションを表示する場合は、`Allow only for groups` を選択します。`Deny from groups` を選択して、特定のグループから `Share Link` オプションを拒否します。これらのオプションのいずれかを選択したら、`Select Groups` フィールドを使用してグループ名を指定し、許可または拒否するグループ名を追加します。
 
-電子メール設定関連の設定については、 [電子メールサービスドキュメント](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
+メール設定に関する設定について詳しくは、[メールサービスドキュメント](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=ja)を参照してください
 
-![電子メールサービスを設定](config-email-service.png)
+![メールサービスを設定](config-email-service.png)
 
 ## アセットをリンクとして共有 {#sharelink}
 
@@ -70,8 +70,8 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 リンク共有機能を使用してアセットを共有するには、次の 2 つの方法があります。
 
-1. 共有リンクを生成し、 [コピーして、他のユーザーとアセットリンク](#copy-and-share-assets-link) を共有します。
-1. 共有リンクを生成し、 [メールでアセットリンクを共有します](#share-assets-link-through-email)。有効期限の日時などのデフォルト値を変更し、元のアセットとそのレンディションをダウンロードできます。 メールアドレスを追加することで、複数のユーザーにメールを送信できます。
+1. 共有リンクを生成し、[コピーして、他のユーザーとアセットリンク](#copy-and-share-assets-link) を共有します。
+1. 共有リンクを生成し、[メールでアセットリンクを共有します](#share-assets-link-through-email)。有効期限の日時などのデフォルト値を変更し、元のアセットとそのレンディションをダウンロードできます。メールアドレスを追加することで、複数のユーザーにメールを送信できます。
 
    ![リンク共有ダイアログ](assets/share-link.png)
 
@@ -85,8 +85,8 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 1. アセットまたはアセットを含むフォルダーを選択します。ツールバーで「**[!UICONTROL リンクを共有]**」をクリックします。
 1. **[!UICONTROL リンク共有]** ダイアログが表示され、 **[!UICONTROL 共有リンク]** フィールドに自動生成されたアセットリンクが含まれます。
 1. 必要に応じて、共有リンクの有効期限を設定します。
-1. の下 **[!UICONTROL リンク設定]**、チェックまたはチェック解除 `Include Originals` または `Include Renditions` をクリックして、2 つのいずれかを含めるか除外します。 少なくともオプションの選択は必須です。
-1. 選択したアセットの名前が [!DNL Share Link] ダイアログボックス。
+1. **[!UICONTROL リンク設定]**&#x200B;で、`Include Originals` または `Include Renditions` をチェックまたはチェック解除して、2 つのいずれかを含めるか除外します。少なくともオプションの選択は必須です。
+1. 選択したアセットの名前は [!DNL Share Link] ダイアログボックスの右行に表示されます。
 1. アセットリンクをコピーしてユーザーと共有します。
 
 ### メール通知によるアセットリンクの共有 {#share-assets-link-through-email}
@@ -96,7 +96,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 1. アセットまたはアセットを含むフォルダーを選択します。ツールバーで「**[!UICONTROL リンクを共有]**」をクリックします。
 1. **[!UICONTROL リンク共有]** ダイアログが表示され、 **[!UICONTROL 共有リンク]** フィールドに自動生成されたアセットリンクが含まれます。
 
-   * [ 電子メールアドレス ] ボックスに、リンクを共有するユーザーの電子メールアドレスを入力します。 リンクを複数のユーザーと共有できます。ユーザーが組織のメンバーである場合は、ドロップダウンリストに表示される候補から電子メールアドレスを選択します。 「電子メールアドレス」テキストフィールドに、リンクを共有するユーザーの電子メールアドレスを入力し、 [!UICONTROL 入力]. リンクを複数のユーザーと共有できます。
+   * 「メールアドレス」ボックスに、リンクを共有するユーザーのメールアドレスを入力します。リンクは複数のユーザーと共有できます。ユーザーが組織のメンバーの場合は、ドロップダウンリストに表示される候補の中からメールアドレスを選択します。メールアドレスのテキストフィールドに、リンクを共有するユーザーのメールアドレスを入力し、[!UICONTROL Enter] をクリックします。リンクは複数のユーザーと共有できます。
 
    * **[!UICONTROL 件名]** ボックスに、共有するアセットの目的を指定する件名を入力します。
    * 「**[!UICONTROL メッセージ]**」ボックスに、必要に応じてメッセージを入力します。
@@ -111,7 +111,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 共有アセットリンクへのアクセス権を持つユーザーは誰でも、zip フォルダーにバンドルされたアセットをダウンロードできます。 コピーしたアセットリンクにアクセスしても、メールで共有されたアセットリンクを使用しても、ダウンロードプロセスは同じです。
 
-* アセットリンクをクリックするか、ブラウザーに URL を貼り付けます。 [!UICONTROL リンク共有] インターフェイスが開き、 [!UICONTROL カード表示] または [!UICONTROL リスト表示] に切り替えることができます。
+* アセットリンクをクリックするか、ブラウザーに URL を貼り付けます。[!UICONTROL リンク共有] インターフェイスが開き、 [!UICONTROL カード表示] または [!UICONTROL リスト表示] に切り替えることができます。
 
 * [!UICONTROL カード表示] では、共有アセットまたは共有アセットフォルダーにマウスを置くと、アセットを選択したり、ダウンロードのためにキューに入れたりできます。
 
@@ -121,11 +121,11 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
   ![キューのダウンロード](assets/queue-download.png)
 
-* ダウンロードファイルの準備が完了したら、 **[!UICONTROL ダウンロードインボックス]** オプションを使用して、ダウンロードのステータスを表示できます。 大量のダウンロードの場合は、 **[!UICONTROL 更新]** ボタンをクリックしてステータスを更新します。
+* ダウンロードファイルの準備が整ったら、「**[!UICONTROL インボックスのダウンロード]**」オプションをクリックして、ダウンロードのステータスを表示します。大容量のダウンロードの場合は、「**[!UICONTROL 更新]**」ボタンをクリックしてステータスを更新します。
 
-  ![インボックスのダウンロード](assets/link-sharing-download-inbox.png)
+  ![インボックスをダウンロード](assets/link-sharing-download-inbox.png)
 
-* 処理が完了したら、 **[!UICONTROL ダウンロード]** ボタンをクリックして zip ファイルをダウンロードします。
+* 処理が完了したら、「**[!UICONTROL ダウンロード]**」ボタンをクリックして zip ファイルをダウンロードします。
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
