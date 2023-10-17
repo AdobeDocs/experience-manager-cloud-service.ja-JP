@@ -6,9 +6,9 @@ feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1030'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 89%
 * アドビのアプリケーションおよびサービス（または PDF など）で生成される主要な [Adobe ファイル形式](#adobe-formats)（[!DNL Adobe Photoshop]、[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]、[!DNL Adobe XD]、[!DNL Adobe Dimension]、および [!DNL Adobe Acrobat] または PDF。
 * 主要な[イメージングファイル形式](#image-formats)。
 * （Adobe Camera Raw を活用した）各種カメラ（キャノン、ニコン、富士フイルム、オリンパスなどのメーカー）に対応する [Camera Raw ファイル形式。](#camera-raw-formats)
-* 共通 [ドキュメント形式](#document-formats)( Microsoft® Office 形式や OpenDocument 形式など )
+* Microsoft® Office 形式や OpenDocument 形式などの、一般的な[ドキュメント形式](#document-formats)。
 * 各種の[ビデオ](#video-formats)および[オーディオ](#audio-formats)形式。
 
 次の凡例は、各形式に対するサポートのレベルを表しています。
@@ -51,7 +51,7 @@ ht-degree: 89%
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\*の場合 [!DNL Adobe InDesign] ファイル (INDD) の場合、レンディションのサイズは INDD ファイルに埋め込まれたプレビューで決まります。 での環境設定 [!DNL InDesign] (**[!UICONTROL 環境設定/ファイル処理/ドキュメントと共にプレビュー画像を常に保存、プレビューサイズ]**) を使用して、大きなレンディションを埋め込むことができます。
+\* [!DNL Adobe InDesign] ファイル（INDD）の場合、レンディションのサイズは INDD ファイルに埋め込まれたプレビューで決まります。より大きなレンディションを埋め込むには、[!DNL InDesign] で環境の設定を行います（**[!UICONTROL 環境設定／ファイル処理／ドキュメントのプレビュー画像を常に保存／プレビューサイズ]**）。
 
 ## 画像形式 {#image-formats}
 
@@ -185,14 +185,14 @@ ht-degree: 89%
 * Windows メディアビデオ（WMV）／ASF（.wmv、 .asf）
 * AVI（非圧縮 8 ビット/10 ビット）（.avi）
 * MP4（.mp4、.m4a、.m4v）
-* Microsoft®デジタルビデオ録画 (DVR-MS) (.dvr-ms)
+* Microsoft® デジタルビデオ録画（DVR-MS）（.dvr-ms）
 * Matroska／WebM（.mkv）
 * WAVE／WAV（.wav）
 * QuickTime（.mov）
 
 ## ヒントと制限事項 {#limitations-and-tips}
 
-* 現在、メタデータ抽出のファイルサイズの上限は約 15 GB です。大きなアセットをアップロードする際に、メタデータの抽出操作に失敗することがあります。
+* 現在、メタデータ抽出のファイルサイズの上限は約 15 GB です。大きなアセットをアップロードする場合、メタデータの抽出操作に失敗することがあります。
 
 ## Dynamic Media - トランスコードでサポートされる入力ビデオ形式 {#video-dynamic-media-transcoding}
 
@@ -241,7 +241,7 @@ ht-degree: 89%
 
 ## Dynamic Media - サポートされていないラスター画像形式 {#unsupported-raster-image-formats-dm}
 
-次に示すラスターイメージファイル形式のサブタイプは、 *not* でサポート [!DNL Dynamic Media]:
+次のラスター画像ファイル形式のサブタイプは、[!DNL Dynamic Media] でサポートされて&#x200B;*いません*。
 
 * 100 MB を超える IDAT チャンクサイズを持つ PNG ファイル。
 * PSB ファイル。
@@ -259,7 +259,7 @@ ht-degree: 89%
 | GLB | バイナリ GL 伝送 | model/gltf-binary | マテリアルとテクスチャを単一のアセットとして含めます。 |
 | OBJ | WaveFront 3D オブジェクトファイル | application/x-tgif | |
 | STL | ステレオリソグラフィ | application/vnd.ms-pki.stl | |
-| USDZ | 汎用シーン記述 Zip アーカイブ | model/vnd.usdz+zip | *取り込みとサムネールの生成のサポート3D プレビューはまだサポートされていません。* USDZ は、Safari またはiOSでネイティブに表示できる 3D 形式です。 |
+| USDZ | 汎用シーン記述 Zip アーカイブ | model/vnd.usdz+zip | *取り込みとサムネールの生成のサポート。3D プレビューはまだサポートされていません。* USDZ は 3D 形式で、Safari や iOS でネイティブに表示できます。 |
 
 **関連情報**
 
