@@ -1,21 +1,21 @@
 ---
 title: AEM Sites の開発の手引き - WKND チュートリアル
-description: AEMを初めて開発する場合 ベストプラクティスに関する情報が必要な場合は、 まず、このチュートリアルを試してください。この複数のパートで構成されているチュートリアルでは、AEM を初めて利用する開発者に対して、最新の標準と技術を使用して AEM で Web サイトを実装する方法を教えることを目的としています。
+description: AEM の開発が初めての方や、最新のベストプラクティスの情報が必要な方は、まず、このチュートリアルを試してください。この複数のパートで構成されているチュートリアルでは、AEM を初めて利用する開発者に対して、最新の標準と技術を使用して AEM で Web サイトを実装する方法を教えることを目的としています。
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '241'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
-# AEM Sites の開発の手引き - WKND チュートリアル {#getting-started-developing-aem-sites-wknd-tutorial}
+# AEM Sites の開発の手引き - WKND チュートリアル{#getting-started-developing-aem-sites-wknd-tutorial}
 
 ## 概要 {#overview}
 
 Adobe Experience Manager as a Cloud Service を使用した開発が初めての場合や、最新のベストプラクティスに関する情報が必要な場合は、まず、このチュートリアルを試してください。
 
-この複数のパートで構成されているチュートリアルでは、AEM を初めて利用する開発者に対して、最新の標準と技術を使用して AEM で Web サイトを実装する方法を教えることを目的としています。このチュートリアルの最後に、AEMプラットフォームの基本的な基盤と、一般的なデザインパターンの知識を理解できることを期待します。
+この複数のパートで構成されているチュートリアルでは、AEM を初めて利用する開発者に対して、最新の標準と技術を使用して AEM で Web サイトを実装する方法を教えることを目的としています。このチュートリアルの終了時には、AEM プラットフォームの基礎と一般的なデザインパターンの知識を理解することが期待されます。
 
 ## WKND 開発者向けチュートリアル {#wknd-developer-tutorial}
 
@@ -25,7 +25,7 @@ WKND 開発者向けチュートリアルは[こちら](https://experienceleague
 
 ## 中心概念 {#core-concepts}
 
-チュートリアルの実装では、AEMの多くの強力な機能を使用しています。 サイトの実装には、以下を使用します。
+このチュートリアルの実装では、AEM の数多くの強力な機能を利用しています。サイトの実装には、以下を使用します。
 
 * [Maven AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)
 * [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
