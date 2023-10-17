@@ -1,13 +1,13 @@
 ---
 title: ライブコピーの概要コンソール
-description: ライブコピーの概要コンソールの基本を学習し、コンテンツを同期するためのライブコピーのステータスをすばやく把握します。
+description: ライブコピーの概要コンソールの基本事項について説明し、コンテンツを同期するためにライブコピーの状態をすばやく把握できるようにします。
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 84%
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 84%
 
 「**ライブコピーの概要**」は、**Sites** コンソールの&#x200B;**参照**&#x200B;サイドパネルから開くことができます。
 
-1. Adobe Analytics の **Sites** コンソール [ブループリントページに移動して選択します。](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. **Sites** コンソールで、[ブループリントページに移動して選択します](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。
 1. **[参照](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;パネルを開き、「**ライブコピー**」を選択します。
 
    ![参照パネルからのライブコピー](../assets/live-copy-references.png)
@@ -46,10 +46,10 @@ ht-degree: 84%
 
 ### ブループリントページのプロパティ {#properties-of-a-blueprint-page}
 
-The **ライブコピーの概要** は、ブループリントページのプロパティの表示時に開くことができます。
+**ライブコピーの概要**&#x200B;は、ブループリントページのプロパティを表示しているときに開くことができます。
 
-1. 開く **プロパティ** 適切なブループリントページ用の
-1. を開きます。 **ブループリント** タブ — **ライブコピーの概要** オプションが上部のツールバーに表示されます。
+1. 該当するブループリントページの&#x200B;**プロパティ**&#x200B;を開きます。
+1. 「**ブループリント**」タブを開きます。「**ライブコピーの概要**」オプションが上部のツールバーに表示されます。
 
    ![「ブループリントプロパティ」タブ](../assets/live-copy-blueprint-tab.png)
 
@@ -72,7 +72,7 @@ The **ライブコピーの概要** は、ブループリントページのプ�
 **ライブコピーの概要**&#x200B;を使用して、ライブコピーに対するアクションを実行することもできます。
 
 1. **ライブコピーの概要**&#x200B;を開きます。
-1. 必要なブループリントまたはライブコピーページを選択すると、ツールバーが更新され、使用可能なアクションが表示されます。 使用できる[アクション](overview.md#terms-used)は、[ブループリント](#actions-for-a-blueprint-page)ページと[ライブコピー](#actions-for-a-live-copy-page)ページのどちらを選択したかによって異なります。
+1. 必要なブループリントページまたはライブコピーページを選択します。ツールバーが更新され、使用できるアクションが表示されます。使用できる[アクション](overview.md#terms-used)は、[ブループリント](#actions-for-a-blueprint-page)ページと[ライブコピー](#actions-for-a-live-copy-page)ページのどちらを選択したかによって異なります。
 
 ### ブループリントページのアクション {#actions-for-a-blueprint-page}
 

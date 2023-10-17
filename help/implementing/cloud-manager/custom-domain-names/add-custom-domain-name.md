@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 600288a87e024fbe58ff605a8bcdc61535cc0759
 workflow-type: tm+mt
 source-wordcount: '601'
-ht-degree: 74%
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ Cloud Manager では、次の 2 つの場所からカスタムドメイン名を
 
 >[!NOTE]
 >
->ユーザーが **ビジネスオーナー** または **デプロイメントマネージャー** ロールを使用して Cloud Manager にカスタムドメイン名を追加する必要があります。また、Fastly CDN を使用する必要があります。
+>Cloud Manager でカスタムドメイン名を追加するには、ユーザーが&#x200B;**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持っている必要がありますFastly CDN を使用している。
 
 ## ドメイン設定ページからのカスタムドメイン名の追加 {#adding-cdn-settings}
 
@@ -42,7 +42,7 @@ Cloud Manager では、次の 2 つの場所からカスタムドメイン名を
    >
    >ドメイン名を入力する際は、`http://`、`https://`、スペースを含めないでください。
 
-1. を選択します。 **環境** ドメイン名に関連付けられたサービスを持つユーザー。
+1. そのドメイン名と関連付けられるサービスを持つ&#x200B;**環境**&#x200B;を選択します。
 
 1. **公開**&#x200B;サービスまたは&#x200B;**プレビュー**&#x200B;サービスのいずれかを選択します。
 
@@ -54,17 +54,17 @@ Cloud Manager では、次の 2 つの場所からカスタムドメイン名を
 
 CDN デプロイメントの場合は、有効な SSL 証明書が必要で、TXT 検証に成功している必要があります。これは、ステータス&#x200B;**検証済みかつデプロイ済み**&#x200B;のステータスで示されます。
 
-詳しくは、 [カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 様々なステータスの詳細と、潜在的な問題に対処する方法を確認します。
+様々なステータスと起こりうる問題への対処方法について詳しくは、[カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)ドキュメントを参照してください。
 
 >[!NOTE]
 >
 >DNS の伝播遅延が原因で、DNS 検証の処理に数時間かかる場合があります。
 >
->Cloud Manager が所有権を検証し、ドメイン設定テーブルに表示されるステータスを更新します。詳しくは、 [カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) を参照してください。
+>Cloud Manager が所有権を検証し、ドメイン設定テーブルに表示されるステータスを更新します。詳しくは、[カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)を参照してください。
 
 >[!TIP]
 >
->詳しくは、 [TXT レコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) TXT レコードの詳細を表示します。
+>TXT レコードについて詳しくは、[TXT レコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)を参照してください。
 
 ## 環境ページからのカスタムドメイン名の追加 {#adding-cdn-environments}
 
@@ -82,11 +82,11 @@ CDN デプロイメントの場合は、有効な SSL 証明書が必要で、TX
    1. この名前に関連付けられている SSL 証明書をドロップダウンリストから選択します。
    1. 「**+ 追加**」をクリックします。
 
-   ![カスタムドメイン名を追加](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
+   ![カスタムドメイン名の追加](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
 1. **ドメイン名を追加**&#x200B;ダイアログボックスで選択した値を確認し、「**続行**」をクリックします。
 
-   ![[ ドメイン名 ] ウィンドウ](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
+   ![ドメイン名ウィンドウ](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
 
    >[!NOTE]
    >
@@ -98,14 +98,14 @@ CDN デプロイメントの場合は、有効な SSL 証明書が必要で、TX
 
 CDN デプロイメントの場合は、有効な SSL 証明書が必要で、TXT 検証に成功している必要があります。これは、ステータス&#x200B;**検証済みかつデプロイ済み**&#x200B;のステータスで示されます。
 
-詳しくは、 [カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 様々なステータスの詳細と、潜在的な問題に対処する方法を確認します。
+様々なステータスと起こりうる問題への対処方法について詳しくは、[カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)ドキュメントを参照してください。
 
 >[!NOTE]
 >
 >DNS の伝播遅延が原因で、DNS 検証の処理に数時間かかる場合があります。
 >
->Cloud Manager が所有権を検証し、ドメイン設定テーブルに表示されるステータスを更新します。詳しくは、 [カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) を参照してください。
+>Cloud Manager が所有権を検証し、ドメイン設定テーブルに表示されるステータスを更新します。詳しくは、[カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)を参照してください。
 
 >[!TIP]
 >
->詳しくは、 [TXT レコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) TXT レコードの詳細を表示します。
+>TXT レコードについて詳しくは、[TXT レコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)を参照してください。

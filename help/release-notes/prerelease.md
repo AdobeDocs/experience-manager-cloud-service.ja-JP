@@ -5,7 +5,7 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1304'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 83%
 
 Adobe Experience Manager as a Cloud Service は、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja#aem-as-cloud-service)に従って、毎月のリリースサイクルで新機能を提供します。
 
-次の機能リリースで公開予定の機能について理解するには、プレリリースチャネルを購読します。プレリリースチャネルは、開発環境または任意のサンドボックス環境を設定することでアクセスできます。 AEMユーザーインターフェイスを通じてアクセス可能な変更をプレビューし、新しいプレリリース API に対してコードを作成できます。
+次の機能リリースで公開予定の機能を把握できるように、プレリリースチャネルを購読できます。プレリリースチャネルにアクセスするには、開発環境または任意のサンドボックス環境を設定します。AEM ユーザーインターフェイスからアクセス可能な変更をプレビューしたり、新しいプレリリース API に対してコードを作成したりできます。
 
-特定の機能リリースのプレリリース機能のリストは、 [リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md).
+特定の機能リリースのプレリリース機能のリストは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)に掲載されています。
 
 ## AEM as a Cloud Service のリリース {#releases}
 
@@ -31,13 +31,13 @@ AEM as a Cloud Service には 2 種類のリリースがあります。
 
 このパターンにより、サービスが中断されることなく継続的にリリースされます。
 
-プレリリースチャネルでは、今後の機能リリースでスケジュールされた機能をプレビューできるので、今後の機能を評価し、独自のプロジェクトで考えられる実装を計画できます。 次の機能リリースの前に計画できます。
+プレリリースチャネルでは、今後の機能を評価し、独自のプロジェクトで可能な実装を計画するために、今後の機能リリースでスケジュールされている機能をプレビューできます。これにより、次の機能リリースに向けて事前に計画できます。
 
-例えば、5 月でプレリリースチャネルを購読している場合、今後の 6 月のリリースで機能を評価できます。
+例えば、5月にプレリリースチャネルを購読している場合、今後の 6月のリリースで機能を評価できます。
 
 ![プレリリースサイクルの図](assets/prerelease-cadence.png)
 
-プレリリースでは、1 ヶ月間の周期的な AEMaaCS の機能を利用でき、新機能がプロジェクトに与える影響を評価し、カスタマイズ機能、テスト、ユーザートレーニングを計画する時間を提供します。
+プレリリースでは、今後の AEMaaCS の機能を 1 か月間にわたって利用できるので、この期間に、新機能がプロジェクトやカスタマイズに与える影響を評価し、これらの機能、テスト、ユーザートレーニングの展開を計画できます。
 
 プレリリースチャネルを効果的に活用するには、4 つの手順が必要です。
 
@@ -157,7 +157,7 @@ Javadoc は Maven Central に公開されます。
      </dependency>
    ```
 
-   プレリリース SDK に変更するには、依存関係を `com.adobe.aem:aem-sdk-api` から `com.adobe.aem:aem-prerelease-sdk-api` 以下に示すように。
+   プレリリース SDK に変更するには、次に示すように、依存関係を `com.adobe.aem:aem-sdk-api` から `com.adobe.aem:aem-prerelease-sdk-api` に変更するだけです。
 
    ```
    <dependencyManagement>
@@ -189,7 +189,7 @@ Javadoc は Maven Central に公開されます。
 
 ## ユーザーのトレーニング {#train-users}
 
-プレリリースチャネルの新機能をテストし、プロジェクトで使用することにしたら、ユーザーのトレーニングをおこなう必要があります。
+プレリリースチャネルの新機能をテストし、プロジェクトで活用することにしたら、ユーザーのトレーニングを行う必要があります。
 
 Adobe Experience League では、AEMaaCS を学ぶための多くのリソースを提供しています。
 

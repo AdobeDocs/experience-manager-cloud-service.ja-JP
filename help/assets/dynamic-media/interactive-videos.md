@@ -8,7 +8,7 @@ exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '5966'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 インタラクティブビデオの手順：
 
-1. **（オプション）クイックビュー変数の特定** - まず、既存のクイックビュー実装で使用される動的変数を特定します。これらの変数を使用して、インタラクティブビデオを作成するときに、製品のサムネールを対応する製品のクイックビューにマッピングします。詳しくは、 [（オプション）クイックビュー変数の識別](#optional-identifying-quickview-variables).
+1. **（オプション）クイックビュー変数の特定** - まず、既存のクイックビュー実装で使用される動的変数を特定します。これらの変数を使用して、インタラクティブビデオを作成するときに、製品のサムネールを対応する製品のクイックビューにマッピングします。[（オプション）クイックビュー変数の特定](#optional-identifying-quickview-variables)を参照してください。
    **この手順が必要になるのは次のすべてに該当する場合のみです。**
    * クイックビューをトリガーして、ビデオにインタラクティブ機能を追加する。
    * e コマースソリューション（IBM® WebSphere® Commerce、Elastic Path、SAP Hybris、Intershop など）から Adobe Experience Manager に製品データを取り出すために、Adobe Experience Manager の実装が e コマース統合フレームワークを使用して&#x200B;*いない*。

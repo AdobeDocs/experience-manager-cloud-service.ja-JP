@@ -5,7 +5,7 @@ exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 1804eacb5399dc38c97ff953031666711b9a0e4f
 workflow-type: tm+mt
 source-wordcount: '316'
-ht-degree: 83%
+ht-degree: 86%
 
 ---
 
@@ -20,7 +20,7 @@ AEM は、web サイトがパブリッシュ環境になって一般公開され
 >
 >コンテンツが *公開済み* プレビュー環境にアクセスするには、URL を使用します (AEMにアクセスする必要はありません )。
 
-プレビュー環境について詳しくは、 [環境の管理](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+プレビュー環境について詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)のドキュメントを参照してください。
 
 ## プレビュー用のコンテンツの公開 {#publishing-content-to-preview}
 

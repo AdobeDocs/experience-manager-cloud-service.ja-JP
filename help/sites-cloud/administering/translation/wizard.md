@@ -1,13 +1,13 @@
 ---
 title: 言語コピーウィザード
-description: AEMでの言語コピーウィザードの使用について説明します。
+description: AEM での言語コピーウィザードの使用について説明します。
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 58%
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 58%
 
 >[!TIP]
 >
->コンテンツを翻訳することを初めておこなう場合は、 [サイト翻訳ジャーニー、](/help/journey-sites/translation/overview.md) AEMの強力な翻訳ツールを使用してAEM Sitesのコンテンツを翻訳する手順を示すガイド付きのツールです。AEMや翻訳の経験がないユーザーに最適です。
+>コンテンツの翻訳を初めて行う場合は、[AEM Sites 翻訳ジャーニー](/help/journey-sites/translation/overview.md)を参照してください。これは、AEM の強力な翻訳ツールを使用して AEM Sites コンテンツを翻訳する手順を示すガイドです。AEM や翻訳の経験がないユーザーに最適です。
 
 >[!NOTE]
 >
@@ -39,13 +39,13 @@ ht-degree: 58%
 
    >[!NOTE]
    >
-   >デフォルトでは、翻訳設定は 1 つだけです。 他の設定を選択できるようにするには、まずクラウド設定を指定する必要があります。 詳しくは、 [翻訳統合フレームワークの設定](integration-framework.md).
+   >デフォルトでは、翻訳設定は 1 つのみです。他の設定を選択するには、最初にクラウド設定を行う必要があります。[翻訳統合フレームワークの設定](integration-framework.md)を参照してください。
 
 1. ウィザードの&#x200B;**翻訳**&#x200B;手順では、構造のみを作成、新しい翻訳プロジェクトを作成、既存の翻訳プロジェクトを追加のいずれかを選択できます。
 
    >[!NOTE]
    >
-   >前の手順で複数の言語を選択した場合は、複数の翻訳プロジェクトが作成されます。
+   >前の手順で複数言語を選択した場合は、複数の翻訳プロジェクトが作成されます。
 
    ![ウィザードの翻訳手順](../assets/language-copy-wizard-translate.png)
 

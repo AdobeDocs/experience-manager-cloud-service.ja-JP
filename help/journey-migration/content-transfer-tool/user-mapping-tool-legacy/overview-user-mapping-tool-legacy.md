@@ -7,7 +7,7 @@ hidefromtoc: true
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '305'
-ht-degree: 28%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 28%
 
 >[!INFO]
 >
->このドキュメントでは、ツールの廃止バージョンを参照しています。 最新バージョンについて詳しくは、 [ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>このドキュメントでは、ツールの非推奨（廃止予定）バージョンについて説明します。最新バージョンについて詳しくは、[ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)を参照してください。
 
 <!-- Alexandru: drafting this for now
 
@@ -32,13 +32,13 @@ NOTE: "LEGACY" for user mapping includes everything before (that is, not includi
 
 ## はじめに {#introduction}
 
-Adobe Experience Manager(AEM)as a Cloud Serviceへの移行プロセスの一環として、ユーザーとグループを既存のAEMシステムからAEM as a Cloud Serviceに移行する必要があります。 この移行は、コンテンツ転送ツールでおこないます。
+Adobe Experience Manager（AEM）as a Cloud Service への移行の一環として、ユーザーとグループを既存の AEM システムから AEM as a Cloud Service に移行する必要があります。この移行には、コンテンツ転送ツールを使用します。
 
-AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用したオーサー層へのアクセスが完全に統合されていることです。この統合では、 [Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) ユーザーとユーザーグループを管理するための ユーザープロファイル情報は、すべてのAdobeクラウドアプリケーションに対してシングルサインオンを提供するAdobeIdentity Management System(IMS) で一元化されます。 詳しくは、 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=en#identity-management). この変更により、Cloud Serviceオーサーインスタンスでのユーザーおよびグループの重複を避けるために、既存のユーザーおよびグループを IMS ID にマッピングする必要があります。
+AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用したオーサー層へのアクセスが完全に統合されていることです。この統合では、ユーザーとユーザーグループを管理するために [Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) を使用する必要があります。ユーザープロファイル情報が Adobe Identity Management System（IMS）に一元化され、すべての Adobe クラウドアプリケーションでシングルサインオンが利用可能です。詳しくは、[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=ja#identity-management) を参照してください。この変更により、Cloud Service オーサーインスタンスでのユーザーおよびグループの重複を避けるために、既存のユーザーおよびグループをそれぞれの IMS ID にマッピングする必要があります。
 
 ## ユーザーマッピングツール {#mapping-tool}
 
-コンテンツ転送ツール（ユーザーマッピングなし）は、移行されるコンテンツに関連付けられているすべてのユーザーとグループを移行します。 ユーザーマッピングツールは、コンテンツ転送ツールの一部です。 AEM as a Cloud Serviceで使用されるシングルサインオン機能である IMS でユーザーが正しく認識されるように編集するのが目的です。 これらの変更が完了すると、コンテンツ転送ツールは指定されたコンテンツのユーザーとグループを通常どおり移行します。
+コンテンツ転送ツール（ユーザーマッピングなし）では、移行されるコンテンツに関連付けられているすべてのユーザーとグループを移行します。ユーザーマッピングツールは、コンテンツ転送ツールの一部です。AEM as a Cloud Service で使用されるシングルサインオン機能である IMS で正しく認識されるように、ユーザーを編集することのみを目的としています。これらの修正が完了すると、コンテンツ転送ツールが、指定されたコンテンツのユーザーとグループを通常どおり移行します。
 
 ### 次の手順 {#whats-next}
 

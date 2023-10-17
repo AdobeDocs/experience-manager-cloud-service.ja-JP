@@ -7,7 +7,7 @@ exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
 workflow-type: tm+mt
 source-wordcount: '767'
-ht-degree: 49%
+ht-degree: 52%
 
 ---
 
@@ -67,7 +67,7 @@ MSM とライブコピーに関するよくある質問を以下に示します�
 
 MSM 同期アクションは詳細に設定できます。ロールアウト時に変更されるプロパティやコンポーネントは、これらの設定のプロパティに直接依存します。
 
-詳しくは、 [この記事](best-practices.md) を参照してください。
+このトピックの詳細については、[こちらの記事](best-practices.md)を参照してください。
 
 ### 作成者グループのロールアウト権限を削除する方法を教えてください。  {#remove-rollout-permissions}
 

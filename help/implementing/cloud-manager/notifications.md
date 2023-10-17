@@ -5,7 +5,7 @@ exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 source-git-commit: d95b432f74a7b52efc9fd1cf0e380c3f5237503c
 workflow-type: tm+mt
 source-wordcount: '589'
-ht-degree: 86%
+ht-degree: 89%
 
 ---
 
@@ -60,7 +60,7 @@ Cloud Manager による重要なイベントの通知方法を説明します。
 
 ### 優先度 {#priority}
 
-優先度アラートは、 **高** タグに追加し、アラートとしてのみ受け取るように設定できます。 「**優先度**」セクションでは、優先度と見なされるカテゴリの通知を定義できます。
+優先度アラートは&#x200B;**高**&#x200B;タグでマークされ、アラートとしてのみ受信されるように設定できます。「**優先度**」セクションでは、優先度と見なされるカテゴリの通知を定義できます。
 
 ![通知の優先度](assets/notifications-priority.png)
 

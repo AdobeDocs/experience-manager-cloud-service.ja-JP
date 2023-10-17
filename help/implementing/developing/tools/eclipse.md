@@ -5,11 +5,11 @@ exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
 workflow-type: tm+mt
 source-wordcount: '1199'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
-# Eclipse 用 AEM 開発者ツール{#aem-developer-tools-for-eclipse}
+# AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
 
 ![Experience Manager Developer Tools for Eclipse ロゴ](assets/eclipse-logo.png)
 
@@ -34,7 +34,7 @@ AEM Developer Tools を使用する前に、次の作業が必要です。
 
 >[!NOTE]
 >
->macOSで、を右クリックする必要があります。 **Eclipse.app**&#x200B;を選択し、 **パッケージコンテンツを表示** を見つける `eclipse.ini`**.**
+>macOS では、**Eclipse.app** を右クリックし、「**パッケージの内容を表示**」を選択して、`eclipse.ini`**を探します。**
 
 ## Eclipse 用 AEM 開発者ツールのインストール方法 {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -56,7 +56,7 @@ AEM Developer Tools を使用する前に、次の作業が必要です。
 1. 「**Next**」をクリックします。
 1. **Install Details** ウィンドウで、「**Next**」を再度クリックします。
 1. 使用許諾契約書に同意し、「**Finish**」をクリックします。
-1. クリック **RestartNow** をクリックして、Eclipse を再起動します。
+1. 「**RestartNow**」をクリックして、Eclipse を再起動します。
 
 ## AEM パースペクティブ {#the-aem-perspective}
 
@@ -104,7 +104,7 @@ _Experience Manager Developer Tools for Eclipse_ には、Eclipse でのプロ�
 
 1. 次に、Eclipse の接続先となる AEM サーバーを設定します。
 
-   デバッガー機能を使用するには、デバッグモードでAEMを起動する必要があります。これを実現するには、次のコマンドをコマンドラインに追加します。
+   デバッガー機能を使用するには、AEM をデバッグモードで起動する必要があります。コマンドラインに以下を追加するなどして、デバッグモードで起動できます。
 
    ```text
        -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123

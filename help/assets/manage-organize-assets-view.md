@@ -7,7 +7,7 @@ exl-id: b01e98b9-0cc2-47c5-9f5b-79b8e6bef39f
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -121,13 +121,13 @@ Assets ビューを使用すると、リポジトリで使用可能なアセッ�
 
 `Expired` アセットカードインジケーターが、アセットに設定された `Approved` または `Rejected` インジケーターを上書きします。
 
-また、アセットのステータスに基づいてアセットをフィルタリングすることもできます。詳しくは、 [Assets ビューでのアセットの検索](search-assets-view.md).
+アセットのステータスに基づいてアセットをフィルタリングすることもできます。詳しくは、[アセットビューでのアセットの検索](search-assets-view.md)を参照してください。
 
 ## アセットステータスフィールドを含めるためのメタデータフォームのカスタマイズ {#customize-asset-status-metadata-form}
 
 **必要な権限：**&#x200B;管理者
 
-アセットビューには、デフォルトで多数の標準メタデータフィールドが用意されています。 組織には、追加のメタデータニーズがあり、ビジネス固有のメタデータを追加するために、さらに多くのメタデータフィールドが必要です。メタデータフォームを使用すると、ビジネスごとにアセットの[!UICONTROL 詳細]ページにカスタムメタデータフィールドを追加できます。ビジネス固有のメタデータにより、アセットのガバナンスと検出が向上します。
+アセットビューには、多数の標準メタデータフィールドがデフォルトで用意されています。組織には、追加のメタデータニーズがあり、ビジネス固有のメタデータを追加するために、さらに多くのメタデータフィールドが必要です。メタデータフォームを使用すると、ビジネスごとにアセットの[!UICONTROL 詳細]ページにカスタムメタデータフィールドを追加できます。ビジネス固有のメタデータにより、アセットのガバナンスと検出が向上します。
 
 メタデータフォームにメタデータフィールドを追加する方法について詳しくは、[メタデータフォーム](metadata-assets-view.md#metadata-forms)を参照してください。
 
@@ -141,9 +141,9 @@ Assets ビューを使用すると、リポジトリで使用可能なアセッ�
 
 ## 次の手順 {#next-steps}
 
-* [アセット表示でのアセット管理に関するビデオの視聴](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html?lang=ja)
+* [ビデオを視聴してアセットビューでのアセットの管理を学ぶ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html?lang=ja)
 
-* 次を使用して製品に関するフィードバックを提供： [!UICONTROL フィードバック] Assets ビューユーザーインターフェイスで使用可能なオプション
+* アセットビューのユーザーインターフェイスの「[!UICONTROL フィードバック]」オプションを使用して製品に関するフィードバックを提供する
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 

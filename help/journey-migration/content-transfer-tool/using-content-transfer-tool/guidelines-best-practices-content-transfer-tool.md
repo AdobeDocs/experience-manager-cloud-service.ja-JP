@@ -5,7 +5,7 @@ exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
 workflow-type: tm+mt
 source-wordcount: '1432'
-ht-degree: 60%
+ht-degree: 64%
 
 ---
 
@@ -78,17 +78,17 @@ ht-degree: 60%
 
 * 抽出段階では、コンテンツ転送ツールはアクティブな AEM ソースインスタンスで実行されます。
 
-* オーサーの&#x200B;*取得段階*&#x200B;では、オーサーのデプロイメント全体がスケールダウンされます。つまり、オーサーのAEMは、取り込みプロセス全体で使用できません。 また、の実行中に Cloud Manager のパイプラインが実行されないようにしてください。 *取得* フェーズ。
+* オーサーの&#x200B;*取得段階*&#x200B;では、オーサーのデプロイメント全体がスケールダウンされます。つまり、オーサー AEM インスタンスが取り込みプロセス全体で使用できなくなります。また、*取り込み*&#x200B;段階の実行中に Cloud Manager パイプラインが実行されないようにする必要があります。
 
 * ソース AEM システム上のデータストアとして `Amazon S3` または `Azure` を使用する場合は、保存された BLOB を削除（ガベージコレクション）できないように、データストアを設定する必要があります。これにより、インデックスデータの整合性が確保されます。このように設定しないと、このインデックスデータの整合性が欠落しているために抽出が失敗する可能性があります。
 
-* カスタムインデックスを使用する場合は、コンテンツ転送ツールを実行する前に、`tika` ノードでカスタムインデックスを設定する必要があります。詳しくは、 [新しいインデックス定義の準備](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#preparing-the-new-index-definition) を参照してください。
+* カスタムインデックスを使用する場合は、コンテンツ転送ツールを実行する前に、`tika` ノードでカスタムインデックスを設定する必要があります。詳しくは、[新しいインデックス定義の準備](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#preparing-the-new-index-definition)を参照してください。
 
 * 追加を行う場合は、最初の抽出を実行した時点からに既存のコンテンツのコンテンツ構造を変更しないでください。 最初の抽出以降に構造が変更されたコンテンツに対しては、追加を実行できません。移行作業中には必ず制限するようにしてください。
 
 * バージョンを移行セットの一部に含める予定で、`wipe=false` を指定して追加を行う場合、コンテンツ転送ツールの現在の制限事項により、バージョンのパージを無効にする必要があります。バージョンのパージを有効にしたまま、移行セットへの追加を行う場合は、`wipe=true` を指定して取り込みを実行する必要があります。
 
-* 移行セットは、無操作状態が長時間続くと有効期限が切れ、その後はデータが使用できなくなります。 レビュー [移行セットの有効期限](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja#migration-set-expiry) を参照してください。
+* 移行セットは、無操作状態が長時間続くと有効期限が切れ、その後はデータが使用できなくなります。 詳しくは、[移行セットの有効期限](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja#migration-set-expiry)を参照してください。
 
 ## 次の手順 {#whats-next}
 

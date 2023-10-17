@@ -5,7 +5,7 @@ exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '162'
-ht-degree: 76%
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,7 @@ Cloud Manager の Cloud Services パイプラインでサポートされるテ�
 
 1. [機能テスト](/help/implementing/cloud-manager/functional-testing.md)
 
-   * 機能テストは、 [実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) また、必要に応じてテスト段階の一部 [非実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+   * 機能テストは、[実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)のテスト段階の一部ですが、オプションとして、[実稼動以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)のテスト段階に含めることもできます。
 
 1. [エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md)
 

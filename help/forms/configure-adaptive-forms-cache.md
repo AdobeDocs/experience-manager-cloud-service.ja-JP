@@ -9,7 +9,7 @@ discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
 source-wordcount: '974'
-ht-degree: 55%
+ht-degree: 68%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 55%
 
 1. `https://[server]:[port]/system/console/configMgr` の AEM Web コンソール設定マネージャーに移動します。
 1. 「**[!UICONTROL アダプティブフォームおよびインタラクティブ通信 Web チャネルの設定]**」をクリックして、設定値を編集します。
-1. Adobe Analytics の [!UICONTROL 設定値の編集] ダイアログを開き、AEMのインスタンスのフォームまたはドキュメントの最大数を指定します [!DNL Forms Server] キャッシュを **[!UICONTROL アダプティブFormsの数]** フィールドに入力します。 デフォルト値は 100 です。
+1. [!UICONTROL 設定値を編集]ダイアログで、AEM [!DNL Forms Server] のインスタンスでキャッシュできるフォームまたはドキュメントの最大数を「**[!UICONTROL アダプティブフォームの数]**」フィールドに指定します。デフォルト値は 100 です。
 
    >[!NOTE]
    >
@@ -44,11 +44,11 @@ ht-degree: 55%
 * を有効にします。 [クライアントでのデータの結合または事前入力](prepopulate-adaptive-form-fields.md#prefill-at-client) オプション。 これは、事前入力されたフォームの各インスタンスの一意のデータを結合するのに役立ちます。
 * [すべてのパブリッシュインスタンスに対してフラッシュエージェントを有効にする](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=ja#invalidating-dispatcher-cache-from-a-publishing-instance). これにより、アダプティブフォームのキャッシュパフォーマンスが向上します。フラッシュエージェントのデフォルト URL は `http://[server]:[port]]/etc/replication/agents.publish/flush.html` です。
 
-### Dispatcher 上でアダプティブFormsをキャッシュする際の考慮事項 {#considerations}
+### Dispatcher 上でアダプティブフォームをキャッシュする際の考慮事項 {#considerations}
 
 * アダプティブフォームのキャッシュを使用する場合、AEM [!DNL Dispatcher] を使用してアダプティブフォームのクライアントライブラリ（CSS および JavaScript）をキャッシュします。
 * カスタムコンポーネントの開発時には、開発に使用されるサーバー上でアダプティブフォームのキャッシュを無効にしておく必要があります。
-* 拡張子のない URL はキャッシュされません。例えば、次のパターンを含む URL `/content/forms/[folder-structure]/[form-name].html` はキャッシュされ、パターンを持つ URL はキャッシュによって無視されます `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. そのため、キャッシュのメリットを活用するには、拡張機能と共に URL を使用してください。
+* 拡張子のない URL はキャッシュされません。例えば、パターン `/content/forms/[folder-structure]/[form-name].html` の URL はキャッシュされ、パターン `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content` の URL は無視されます。そのため、キャッシュのメリットを活用するには、拡張機能と共に URL を使用してください。
 * ローカライズされたアダプティブフォームの考慮事項：
    * `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>` の代わりに `http://host:port/content/forms/af/<afName>.<locale>.html` の URL 形式を使用して、アダプティブフォームのローカライズ版をリクエストします。
    * `http://host:port/content/forms/af/<adaptivefName>.html` 形式の URL に対するブラウザーロケール<!-- [Disable using browser locale](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) -->の使用を無効にします。
@@ -57,9 +57,9 @@ ht-degree: 55%
 
 ### Dispatcher でのキャッシュの有効化
 
-Dispatcher 上のアダプティブFormsのキャッシュを有効にして設定するには、以下の手順を実行します。
+Dispatcher 上のアダプティブフォームのキャッシュを有効にして設定するには、以下の手順を実行します。
 
-1. 環境のすべてのパブリッシュインスタンスに対して次の URL を開き、レプリケーションエージェントを設定します。
+1. 環境の各パブリッシュインスタンスに対して以下の URL を開き、レプリケーションエージェントを設定します。
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
 1. [dispatcher.any ファイルに以下を追加します](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#automatically-invalidating-cached-files)。
@@ -125,7 +125,7 @@ Dispatcher 上のアダプティブFormsのキャッシュを有効にして設�
       }
    ```
 
-AEM 環境は、アダプティブフォームをキャッシュするように設定されています。すべてのタイプのアダプティブフォームをキャッシュします。キャッシュされたページを配信する前にページのユーザーアクセス権限を確認する必要がある場合は、 [セキュリティで保護されたコンテンツのキャッシュ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ja).
+AEM 環境は、アダプティブフォームをキャッシュするように設定されています。すべてのタイプのアダプティブフォームをキャッシュします。キャッシュされたページを配信する前に、ページのユーザーアクセス権限を確認する必要がある場合は、[セキュリティで保護されたコンテンツのキャッシュ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ja)を参照してください。
 
 ## トラブルシューティング {#troubleshooting}
 
@@ -139,13 +139,13 @@ AEM 環境は、アダプティブフォームをキャッシュするように�
 
 画像とビデオを公開した後、これらのアセットを参照するアダプティブフォームを明示的に非公開にしてから公開します。
 
-### コンテンツフラグメントまたはエクスペリエンスフラグメントを含む一部のアダプティブFormsは、Dispatcher キャッシュから自動的に無効化されません {#content-or-experience-fragment-not-auto-invalidated}
+### コンテンツフラグメントやエクスペリエンスフラグメントを含む一部のアダプティブフォームが Dispatcher キャッシュから自動的に無効にされません {#content-or-experience-fragment-not-auto-invalidated}
 
 #### 問題 {#issue2}
 
 コンテンツフラグメントまたはエクスペリエンスフラグメントをアダプティブフォームに追加し、これらのアセットを個別に編集して公開すると、Dispatcher のキャッシュから自動的に無効化されないアセットを含む Adaptive Formsが自動的に無効化されます。
 
-#### 解決策 {#Solution2}
+#### ソリューション {#Solution2}
 
 更新されたコンテンツフラグメントまたはエクスペリエンスフラグメントを公開した後、これらのアセットを使用するアダプティブFormsを明示的に非公開にして公開します。
 
@@ -155,7 +155,7 @@ AEM 環境は、アダプティブフォームをキャッシュするように�
 
 アダプティブフォームの URL にローカリゼーション情報がない場合、および **[!UICONTROL ブラウザーのロケールを使用]** configuration manager が有効になっている。 アダプティブフォームのローカライズ版が提供され、アダプティブフォームの最初のインスタンスのみがキャッシュされ、後続のすべてのユーザーに配信されます。
 
-#### 解決策 {#Solution3}
+#### ソリューション {#Solution3}
 
 1. conf.d/httpd-dispatcher.conf または実行時に読み込むように設定されたその他の設定ファイルを開きます。
 

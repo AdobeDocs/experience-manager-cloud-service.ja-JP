@@ -2,23 +2,23 @@
 title: AEMでの Assets の表示は、どのようなメリットがありますか。
 description: AEMの Assets ビューの主なメリットについて詳しくは、こちらを参照してください。 アドビは、マーケティングやクリエイティブのプロフェッショナルを支援する専門知識を活用して、革新的な新しいユーザーエクスペリエンスを導入します。
 mini-toc-levels: 3
-source-git-commit: 20e0527ebecb6720f39c0a4b2957dc899117d96f
+exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
+source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 79%
+ht-degree: 86%
 
 ---
-
 
 # Assets ビューの概要 {#assets-view}
 
 ![Assets Essentials のデプロイ](assets/banner-image.jpg)
 
-リアルタイムのコンテンツの作成と配信が不可欠な今日のデジタルファーストの急速な変化において、ダウンストリームマーケティング速度向けに設計されたデジタルアセット管理（DAM）エクスペリエンスが最も重要です。アドビは、マーケティングやクリエイティブのプロフェッショナルを支援する専門知識を活用して、革新的な新しいユーザーエクスペリエンスを導入します。このワークフローファーストのアプローチは、企業が動的なデジタルアセットを処理する方法に革命をもたらし、マーケターがアセットの検索、共同作業、パーソナライズ、配信の効率を最大限に高めます。これらの合理化されたワークフローにより、コンテンツの速度を向上し、マーケティング活動を新たな高みへと押し上げます。
+リアルタイムのコンテンツの作成と配信が不可欠な今日のデジタルファーストの急速な変化において、下流のマーケティングベロシティ向けに設計されたデジタルアセット管理（DAM）エクスペリエンスが最も重要です。アドビは、マーケティングやクリエイティブのプロフェッショナルを支援する専門知識を活用して、革新的な新しいユーザーエクスペリエンスを導入します。このワークフローファーストのアプローチは、企業が動的なデジタルアセットを処理する方法に革命をもたらし、マーケターがアセットの検索、共同作業、パーソナライズ、配信の効率を最大限に高めるのに役立ちます。これらの合理化されたワークフローにより、コンテンツの速度を向上し、マーケティング活動を新たな高みへと押し上げます。
 
-Assets as a Cloud Serviceで利用可能なペルソナベースのエクスペリエンスについて詳しくは、 [Assets の概要as a Cloud Service](/help/assets/overview.md#persona-based-experiences).
+Assets as a Cloud Service で利用可能なペルソナベースのエクスペリエンスについて詳しくは、[Assets as a Cloud Service の概要](/help/assets/overview.md#persona-based-experiences)を参照してください。
 
-## アセットビューへのアクセス方法 {#access-assets-view}
+## アセットビューへのアクセス方法？ {#access-assets-view}
 
 アセットビューには、次の方法でアクセスできます。
 ![マイワークスペースの概要](assets/assets-view.png)
@@ -55,7 +55,7 @@ Assets ビューには次の主なメリットがありますが、これらの�
 * [共同作業を加速する Adobe Photoshop Express の統合](#accelerate-collaboration)
 * [組織の階層構造を設定するためのフォルダーのアップロード](#folder-uploads)
 * [効率的なアセット管理用のリポジトリコンテンツの購読](#subscribe-content)
-* [管理者がより細かく制御するための、アセットのソフト削除](#soft-delete-assets)
+* [管理者がより細かく制御するためのアセットのソフト削除](#soft-delete-assets)
 
 ### 合理化されたエクスペリエンスを提供するマイワークスペースダッシュボード {#my-workspace-for-streamlined-experience}
 
@@ -63,15 +63,15 @@ Assets ビューには次の主なメリットがありますが、これらの�
 
 ![マイワークスペースの概要](assets/my-workspace-demo.gif)
 
-[![ガイドを参照](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](my-workspace-assets-view.md)
+[![ガイドを参照してください](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](my-workspace-assets-view.md)
 
 ### データ駆動型の決定を行うためのインサイト {#insights-data}
 
-コンテンツの速度に遅れを取らないようにするには、実用的なインサイトが不可欠です。Assets ビューでは、My Workspace 内の高度なインサイトが提供され、アセットのパフォーマンス、オーディエンスの使用状況、エンゲージメントに関する貴重なデータを提供します。 マーケターは、データ駆動型の決定を行い、コンテンツ戦略を最適化し、ダウンストリームの配信を調整して最適な結果を達成できます。有意義なインサイトにアクセスすることで、企業は競合他社に先んじて優れた成果を推進することができます。
+コンテンツの速度に遅れを取らないようにするには、実用的なインサイトが不可欠です。Assets ビューでは、My Workspace 内の高度なインサイトが提供され、アセットのパフォーマンス、オーディエンスの使用状況、エンゲージメントに関する貴重なデータを提供します。 マーケターは、データ駆動型の決定を行い、コンテンツ戦略を最適化し、ダウンストリームの配信を調整して最適な結果を達成できます。有意義なインサイトにアクセスすることで、企業は競合他社に先んじて優れた成果を推進できます。
 
 ![インサイトの概要](assets/insights-overview.gif)
 
-[![ガイドを参照](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
+[![ガイドを参照してください](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
 
 ### 共同作業を加速する Adobe Photoshop Express の統合 {#accelerate-collaboration}
 
@@ -81,21 +81,21 @@ Assets ビューには次の主なメリットがありますが、これらの�
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420922)
 
-[![ガイドを参照](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](edit-images-assets-view.md)
+[![ガイドを参照してください](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](edit-images-assets-view.md)
 
-Assets as a Cloud Serviceの今後のリリースには、次のものが含まれます。 [Adobe Fireflyを使用したAdobe Express](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838).
+Assets as a Cloud Service の今後のリリースには、[Adobe Express を介した Adobe Firefly の統合](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838)も含まれる予定です。
 
 ### 組織の階層構造を設定するためのフォルダーのアップロード {#folder-uploads}
 
-アセットビューを使用し、ローカルファイルシステム上に存在するフォルダーをアップロードして、組織のフォルダー構造をすばやく設定します。論理的な階層構造を維持するために、ルートフォルダーの下にフォルダーを作成してから、それらのフォルダーにアセットを手動でアップロードする必要はありません。 ルートフォルダーの下にあるすべてのフォルダーとアセットは、Experience Manager Assets に自動的にアップロードされます。
+アセットビューを使用し、ローカルファイルシステム上に存在するフォルダーをアップロードして、組織のフォルダー構造を素早く設定します。論理階層構造を維持するために、ルートフォルダーの下にフォルダーを作成し、これらのフォルダーにアセットを手動でアップロードする必要はありません。ルートフォルダーの下にあるすべてのフォルダーとアセットは、Experience Manager Assets に自動的にアップロードされます。
 
 ![フォルダーをアップロード](assets/folder-uploads.gif)
 
-[![ガイドを参照](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](add-delete-assets-view.md)
+[![ガイドを参照してください](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](add-delete-assets-view.md)
 
 ### 効率を高めるための検索ファーストのアプローチ {#search-first}
 
-最先端の機能を備えた検索機能を活用して、組織のデジタルアセットライブラリの可能性を引き出します。無数のファイルやフォルダーを手動で選別する煩わしさから解放されます。どのユーザーも、魅力的なマーケティングキャンペーン、魅力的なプレゼンテーション、魅力的なコンテンツを作成するために必要な完璧な画像、ビデオ、ドキュメントを即座に見つけることができます。アドビの最初の検索エンジンでは、正確なキーワードを知らずに、アセットタイプ、メタデータ、スマートタグ、コンテンツ自体を簡単にナビゲートできます。 検索ファーストで DAM の未来を受け入れ、デジタルアセットライブラリの可能性を最大限に引き出します。
+最先端の機能を備えた検索機能を活用して、組織のデジタルアセットライブラリの可能性を引き出します。無数のファイルやフォルダーを手動で選別する煩わしさから解放されます。どのユーザーも、魅力的なマーケティングキャンペーン、魅力的なプレゼンテーション、魅力的なコンテンツを作成するために必要な、完璧な画像、ビデオ、ドキュメントを即座に見つけることができます。アドビの最初の検索エンジンでは、正確なキーワードを知らずに、アセットタイプ、メタデータ、スマートタグ、コンテンツ自体を簡単にナビゲートできます。 検索ファーストで DAM の未来を受け入れ、デジタルアセットライブラリの可能性を最大限に引き出します。
 
 ![検索ファースト](assets/search-first.gif)
 
@@ -105,32 +105,26 @@ Assets ビューでは、リポジトリ内で使用可能なアセット、フ�
 
 ![通知の受信](assets/notifications.gif)
 
-[![ガイドを参照](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-notifications-assets-view.md)
+[![ガイドを参照してください](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-notifications-assets-view.md)
 
-### 管理者がより細かく制御するための、アセットのソフト削除 {#soft-delete-assets}
+### 管理者がより細かく制御するためのアセットのソフト削除 {#soft-delete-assets}
 
 アセットビューで使用できるごみ箱フォルダーには、ルートのアセットフォルダーから削除されたアセットのリストが表示されます。ごみ箱フォルダーからアセットを選択して、元の場所に復元するか、完全に削除することができます。また、キーワードを指定したり、標準フィルターやカスタムフィルターを適用して、ごみ箱フォルダー内の適切なアセットを検索することもできます。
 
 ![ソフト削除](assets/soft-delete.gif)
 
-[![ガイドを参照](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](navigate-assets-view.md)
+[![ガイドを参照してください](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](navigate-assets-view.md)
 
 これらの機能に加えて、アセットビューでは、管理ビューでは使用できない次の機能も実行できます。
 
 * 新しいバージョンのアセットを、別の名前でローカルファイルシステムからアセットリポジトリにアップロードします。アップロードしたアセットは、元のアセットと同じ名前の新しいバージョンとして使用できます。
 
-* リポジトリ内で使用可能なアセットおよびフォルダーの名前を変更します。
+* リポジトリ内で使用可能なアセットとフォルダーの名前を変更します。
 
-Assets ビューは、ワークフローを合理化し、共同作業を促進し、アセット配信を高速化するようにカスタマイズされています。 コンテンツの速度を重視することで、マーケターはデジタルアセットの可能性を最大限に引き出し、これまでにない創造性を解き放つことができます。
+Assets ビューは、ワークフローを合理化し、共同作業を促進し、アセット配信を高速化するようにカスタマイズされています。 コンテンツベロシティを重視することで、マーケターはデジタルアセットの可能性を最大限に引き出し、これまでにない創造性を解き放つことができます。
 
 
 Assets ビューをすばやく使い始めるには、次のリンクを使用します。
 
 * [マイワークスペース](/help/assets/my-workspace-assets-view.md)
-* [Assets ビューの使用を開始する](/help/assets/get-started-assets-view.md)
-
-
-
-
-
-
+* [アセットビューの基本](/help/assets/get-started-assets-view.md)

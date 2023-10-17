@@ -5,7 +5,7 @@ exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -69,9 +69,9 @@ CIF 製品カタログページは、その場でレンダリングされる仮�
 
 ![RTE](../assets/authoring/RTE.png)
 
-    >[！注意 ]
+    >[!メモ]
     >
-    > カテゴリと製品の両方が選択された場合、製品が選択されます。
+    > カテゴリと製品の両方を選択した場合は、製品の方が使用されます。
 
 これにより、ページのレンダリング時に実際のリンクに置き換えられるプレースホルダーリンクが作成されます。
 

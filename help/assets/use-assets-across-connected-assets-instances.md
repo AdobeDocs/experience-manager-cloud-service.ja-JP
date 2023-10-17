@@ -9,7 +9,7 @@ exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '3870'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Connected Assets 機能では、[!DNL Experience Manager Sites] と [!DNL Experi
 
 ## Connected Assets の概要 {#overview-of-connected-assets}
 
-[!UICONTROL ページエディター]でページをターゲット先として編集する場合、作成者は、アセットのソースとして機能する別の [!DNL Assets] デプロイメントのアセットをシームレスに検索、参照および埋め込むことができます。管理者は、 [!DNL Sites] の機能を備える [!DNL Experience Manager] のデプロイメントと [!DNL Assets] の機能を備える [!DNL Experience Manager] 別のデプロイメントとの 1 回限りの統合を作成します。また、Connected Assets を通じてサイトの Web ページでDynamic Media画像を使用し、スマート切り抜きや画像プリセットなどのDynamic Media機能を使用することもできます。
+[!UICONTROL ページエディター]でページをターゲット先として編集する場合、作成者は、アセットのソースとして機能する別の [!DNL Assets] デプロイメントのアセットをシームレスに検索、参照および埋め込むことができます。管理者は、 [!DNL Sites] の機能を備える [!DNL Experience Manager] のデプロイメントと [!DNL Assets] の機能を備える [!DNL Experience Manager] 別のデプロイメントとの 1 回限りの統合を作成します。また、Connected Assets を通じてサイトの web ページで Dynamic Media 画像を使用し、スマート切り抜きや画像プリセットなどの Dynamic Media 機能を利用することもできます。
 
 [!DNL Sites] 作成者の場合、リモートアセットは読み取り専用のローカルアセットとして利用できます。この機能は、サイトエディター上のリモートアセットへのシームレスな検索とアクセスをサポートします。Sites で完全なアセットコーパスを使用する必要があるその他のユースケースについては、Connected Assets を活用する代わりにアセットの一括移行を検討してください。
 
@@ -144,7 +144,7 @@ Connected Assets とローカル [!DNL Sites] の接続を構成するには、�
 ## Dynamic Media アセットの使用 {#dynamic-media-assets}
 
 
-Connected Assets では、 [!DNL Dynamic Media] Sites ページのリモート DAM デプロイメントから削除し、スマート切り抜きや画像プリセットなどのDynamic Media機能を使用します。
+Connected Assets では、[!DNL Dynamic Media] で処理された画像アセットをリモート DAM デプロイメントから Sites ページで使用したり、スマート切り抜きや画像プリセットなどの Dynamic Media 機能を活用できます。
 
 Connected Assets で [!DNL Dynamic Media] を使用するには、以下の手順に従います。
 
@@ -316,7 +316,7 @@ Connected Assets の設定後、[!DNL Dynamic Media] アセットは、[!DNL Sit
 ## 制限事項とベストプラクティス {#tip-and-limitations}
 
 * アセットの使用状況に関するインサイトを取得するには、[!DNL Sites] インスタンスで[アセットインサイト](/help/assets/assets-insights.md)機能を設定します。
-* オーサリングコンポーネントでのパスブラウザーの使用は、接続されたアセットではサポートされていません。
+* オーサリングコンポーネントでのパスブラウザーの使用は、Connected Assets ではサポートされていません。
 
 * リモートアセットを [画像コンポーネント設定ダイアログ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog). ただし、リモートアセットを、 **[!UICONTROL 設定]**.
 
@@ -354,7 +354,7 @@ Connected Assets の設定後、[!DNL Dynamic Media] アセットは、[!DNL Sit
 
 * [!UICONTROL コンテンツファインダー]からリモートアセットを検索できない場合は、必要な役割と権限が設定されていることを確認してください。
 
-* リモート DAM から取得したアセットは、1 つ以上の理由で web ページに発行できない場合があります。リモートサーバー上に存在しない、取得する適切な権限がない、ネットワーク障害が原因の可能性があります。 アセットがリモート DAM から削除されていないことを確認してください。適切な権限が設定され、前提条件が満たされていることを確認します。アセットをページに追加し直して、再公開してください。アセット取得時のエラーについては、[非同期ジョブのリスト](/help/operations/asynchronous-jobs.md)を確認してください。
+* リモート DAM から取得したアセットは、1 つ以上の理由で web ページに発行できない場合があります。リモートサーバーに存在しないこと、取得する適切な権限がないことまたはネットワーク障害などが原因の可能性があります。アセットがリモート DAM から削除されていないことを確認してください。適切な権限が設定され、前提条件が満たされていることを確認します。アセットをページに追加し直して、再公開してください。アセット取得時のエラーについては、[非同期ジョブのリスト](/help/operations/asynchronous-jobs.md)を確認してください。
 
 * ローカルの [!DNL Sites] デプロイメントからリモート DAM デプロイメントにアクセスできない場合は、クロスサイト cookie が許可され、[同じサイト cookie サポート](/help/security/same-site-cookie-support.md)が設定されていることを確認します。クロスサイト cookie がブロックされると、[!DNL Experience Manager] のデプロイメントが認証されない場合があります。例えば、匿名モードの [!DNL Google Chrome] は、サードパーティ cookie をブロックする可能性があります。[!DNL Chrome] ブラウザーで cookie を許可するには、アドレスバーの目アイコンをクリックし、**サイトが動作していません**／**ブロック**&#x200B;に移動し、リモート DAM URL を選択して、ログイントークン cookie を許可します。または、「[サードパーティ cookie を有効にする方法](https://support.google.com/chrome/answer/95647)」を参照してください。
 

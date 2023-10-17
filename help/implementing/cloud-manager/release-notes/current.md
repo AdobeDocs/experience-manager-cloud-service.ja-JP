@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: b760b3a65d89b0b4f924379fc460015a58e2ed3e
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 16%
+ht-degree: 19%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 16%
 
 >[!NOTE]
 >
->詳しくは、 [このページ](/help/release-notes/release-notes-cloud/release-notes-current.md) (Adobe Experience Manager as a Cloud Serviceの最新のリリースノート )
+>Adobe Experience Manager as a Cloud Service の最新のリリースノートについては、[こちらのページ](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
 ## リリース日 {#release-date}
 
 AEM as a Cloud Service の Cloud Manager リリース 2023.10.0 のリリース日は 2023年10月5日（PT）です。次回のリリースは 2023年11月2日（PT）に予定されています。
 
-## 新着情報 {#what-is-new}
+## 新機能 {#what-is-new}
 
 * の改善点 [インデックス作成](/help/operations/indexing.md) は、新しいインデックスをデプロイする際のパイプライン期間を短縮しました。
    * 改善点は、コンテンツプロファイルによって異なります。

@@ -5,7 +5,7 @@ exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
 source-wordcount: '860'
-ht-degree: 76%
+ht-degree: 96%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 76%
 
 組織では、複数の部門がデジタルエクスペリエンスの異なる側面を担っている可能性が高いでしょう。ガバナンスが機能しなければ、いつ果てしない論争、内輪もめ、混乱に陥ってもおかしくありません。
 
-デジタルガバナンスは、誰が何を担当し、誰がどのようなデジタルに焦点を当てた仕事をしているかを見つけ出すことから始まります。 必要なスキルを追加するために、戦略的な雇用が必要になることもあります。さらに大きな課題は、文化の変化を促すことです。新しい技術への幅広い支援を構築し、人々が新しい方法で物事を行うのに慣れるのを助けます。 その取り組みの重要な部分となるのが、デジタルコミュニティの立ち上げです。メンバーが互いに学び合い、支援し合うことができるコミュニティです。
+デジタルガバナンスの出発点は、誰が何を担当し、誰がどのようなデジタル関連の業務を行っているかを把握することです。必要なスキルを追加するために、戦略的な雇用が必要になることもあります。それよりも大きな課題は文化の転換を推進すること、つまり、新しいテクノロジーを幅広くサポートし、担当者が新しい働き方に慣れるのを手助けすることです。その取り組みの重要な部分となるのが、デジタルコミュニティの立ち上げです。メンバーが互いに学び合い、支援し合うことができるコミュニティです。
 
-現時点では、Adobe Experience Managerのデプロイメントを促進するために、適切な担当者を適切なジョブに配置することに焦点を当てています。 Experience Manager SitesとExperience Manager Assetsの各コアAdobeには、ユーザーが様々な役割で効果的に使用できるようにするスキル、専門知識、属性と共に、必要な役割のリストが用意されています。
+当面は、適切な人材を適切な職に配備し、Adobe Experience Manager デプロイメントの促進を支援することに重点を置きます。コア製品（Adobe Experience Manager Sites と Adobe Experience Manager Assets）ごとに、担当者を決める必要がある役割の一覧と、それぞれの役割に必要なスキル、専門知識レベルおよび資質の一覧を示しました。
 
 今週の課題は、導入チームと一緒に両方のリストを確認し、条件を満たす人材がそれぞれの役割に割り当てられていることを確認することです。
 
@@ -46,7 +46,7 @@ ht-degree: 76%
 
 <br>
 
-![実装の役割のレビュー](assets/team_involvement.png)
+![実装の役割をレビュー](assets/team_involvement.png)
 
 **導入チームと一緒にこのリストを確認し**、条件を満たす人材がそれぞれの役割に割り当てられていることを確認します。Adobe Experience Cloud に詳しくないチームメンバーは、[Experience League](https://experienceleague.adobe.com/?lang=ja#recommended/solutions/experience-manager) の学習リソースを利用して、[アドビデジタルラーニング](https://learning.adobe.com/certification.html)で認定を受けることができます。
 
@@ -54,7 +54,7 @@ ht-degree: 76%
 
 アーキテクトからスクラムマスターまで、さらには DAM イブラリアンも含めて、このチームに関係する役割はすべて不可欠です。
 
-Adobe Experience Manager Assets の導入を成功させるために必要な人材のほとんどが既に揃っている可能性があります。このリストはAdobe Experience Manager Sitesの場合と似ていますが、重要な追加事項が 1 つあります。デジタルアセットを見つけやすいように整理し、ラベル付けするには、ライブラリアンが必要です。
+Adobe Experience Manager Assets の導入を成功させるために必要な人材のほとんどが既に揃っている可能性があります。この一覧は Adobe Experience Manager Sites の場合と似ていますが、重要な追加が 1 点あります。つまり、デジタルアセットを見つけやすいように整理しラベル付けするライブラリアンが必要です。
 
 | 役割 | スキル | 能力レベル | 資質 |
 |--- |--- |--- |--- |
@@ -77,4 +77,4 @@ Adobe Experience Manager Assets の導入を成功させるために必要な人
 
 >[!TIP]
 >
-> Adobe Experience Cloudの詳細を説明し、 [Experience League](https://experienceleague.adobe.com/?lang=ja#recommended/solutions/experience-manager) を通じて認証を受ける [Adobeデジタルラーニング](https://learning.adobe.com/certification.html).
+> [Experience League](https://experienceleague.adobe.com/?lang=ja#recommended/solutions/experience-manager) の各種リソースを活用して Adobe Experience Cloud の詳細を理解したり、[アドビデジタルラーニング](https://learning.adobe.com/certification.html)で認定を取得したりできます。

@@ -1,18 +1,18 @@
 ---
 title: AEM ヘッドレスを使用したリファラーフィルターの設定
-description: Adobe Experience Managerのリファラーフィルターを使用すると、サードパーティホストからアクセスできます。 ヘッドレスアプリケーションの GraphQL エンドポイントへのアクセスを有効にするには、リファラーフィルターの OSGi 設定が必要です。
+description: Adobe Experience Manager のリファラーフィルターを使用すると、サードパーティのホストからアクセスできます。ヘッドレスアプリケーションの GraphQL エンドポイントへのアクセスを有効にするには、リファラーフィルターの OSGi 設定が必要です。
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # リファラーフィルター {#referrer-filter}
 
-Adobe Experience Managerのリファラーフィルターを使用すると、サードパーティホストからアクセスできます。
+Adobe Experience Manager のリファラーフィルターを使用すると、サードパーティのホストからアクセスできます。
 
 HTTP POST 経由でヘッドレスアプリケーションの GraphQL エンドポイントにアクセスできるようにするには、リファラーフィルターの OSGi 設定が必要です。HTTP GET 経由で AEM にアクセスする AEM ヘッドレス永続クエリを使用する場合、リファラーフィルターの設定は必要ありません。
 

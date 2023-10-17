@@ -6,7 +6,7 @@ exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
 source-wordcount: '1793'
-ht-degree: 58%
+ht-degree: 60%
 
 ---
 
@@ -159,7 +159,7 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
 
 コンテンツフラグメントは特定のアセットタイプです。[コンテンツフラグメントの操作](/help/assets/content-fragments/content-fragments.md)を参照してください。
 
-API を通じて利用できる機能について詳しくは、以下を参照してください。
+API を通じて使用できる機能について詳しくは、以下を参照してください。
 
 * [Assets REST API](/help/assets/mac-api-assets.md)
 * [エンティティタイプ](/help/assets/content-fragments/assets-api-content-fragments.md#entity-types)。（コンテンツフラグメントに関連した）サポートされる各タイプに固有の機能について説明します。
@@ -175,7 +175,7 @@ Assets REST API は、URL パラメーターを介して (GETリクエストに�
 
 >[!NOTE]
 >
->ページングは通常、コンテナエンティティ（つまり、レンディションを持つフォルダーまたはアセット）に適用されます。要求されたエンティティの子に関連するからです。
+>ページングは通常、コンテナエンティティ（つまり、レンディションのあるフォルダーやアセット）に適用されます。要求されたエンティティの子に関係するからです。
 
 #### 例：ページング {#example-paging}
 

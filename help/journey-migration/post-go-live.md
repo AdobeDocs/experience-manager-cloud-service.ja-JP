@@ -5,7 +5,7 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 1b9d49ce1ef8ad4b0a11400b41d8c9b880cbf884
 workflow-type: tm+mt
 source-wordcount: '483'
-ht-degree: 73%
+ht-degree: 76%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 73%
 
 AEM as a Cloud Service 開発者環境でのデバッグは、開発環境、ステージング環境、実稼動環境の開発者コンソールで実行できます。
 
-詳しくは、 [AEM as a Cloud Service向けの実装](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) 開発ツールの詳細を確認するには、を参照してください。
+開発ツールについて詳しくは、[AEM as a Cloud Service 向けの実装](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)を参照してください。
 
 ## CRXDE Lite {#crxde-lite}
 

@@ -5,7 +5,7 @@ exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1025'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 86%
 >
 >このドキュメントの内容は法的な助言にはならず、その代用になるものでもありません。
 >
->データ保護およびデータプライバシー規制に関するアドバイスについては、お客様の企業の法務部門にお問い合わせください。
+>データ保護およびデータプライバシー規制に関するアドバイスについては、自社の法務部門にお問い合わせください。
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ ht-degree: 86%
 
 Adobe Experience Manager as a Cloud Service Sites は、データのプライバシーと保護に関するコンプライアンス義務の遂行でお客様を支援する用意が整っています。このページでは、AEM Sites でこのような要求を処理する手順について説明します。プライベートデータの格納場所や、それらのデータを手動で、またはコードを使用して削除する方法について説明します。
 
-詳しくは、 [Adobeプライバシーセンター](https://www.adobe.com/jp/privacy.html).
+詳しくは、[アドビプライバシーセンター](https://www.adobe.com/jp/privacy.html)を参照してください。
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Adobe Experience Manager as a Cloud Service Sites は、データのプライバ
 
 サイト上で訪問者の認証に使用されるユーザーアカウント、およびパブリッシュサーバー上の UGC コンテンツについては、[AEM の基盤に関するドキュメント](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)を参照してください。
 
-AEM Sites コンポーネントはデフォルトでは、訪問者から入力されたフォームデータをパブリッシュサーバーに保存しません。データをさらに処理するために、サードパーティのシステムまたはAdobe Campaignにデータを転送することをお勧めします。
+AEM Sites コンポーネントはデフォルトでは、訪問者から入力されたフォームデータをパブリッシュサーバーに保存しません。サードパーティのシステムまたは Adobe Campaign にデータを転送してさらに処理を行うことをお勧めします。
 
 ## オプトイン／オプトアウト {#opt-in-opt-out}
 
@@ -56,7 +56,7 @@ Adobe Experience Manager には、ユーザーのオプトイン／オプトア�
 
 1. 参照先のリンクをクリックします。現在は、**こちらから**&#x200B;というリンクになっています。
 
-1. 以下の詳細と、オプトアウトまたはオプトインのオプションが表示されます。
+1. 次の詳細と、オプトアウトまたはオプトインのオプションが表示されます。
 
    * このサイトへのユーザーの訪問に関するデータ集計および解析をオプトアウトするには、ブラウザーに cookie をインストールする必要があります。この cookie はユーザーがオプトアウトしたことを識別します。
 
@@ -76,13 +76,13 @@ Adobe Experience Manager には、ユーザーのオプトイン／オプトア�
 
 AEM Sites には、Adobe Analytics On-demand Services 内の機能を使用した Analytics Foundation との統合（オプション）が含まれています。
 
-Adobe Analyticsに関するデータ主体リクエストの管理について詳しくは、 [Adobe Analyticsとデータプライバシー](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=ja).
+Adobe Analytics に関連するデータサブジェクトリクエストの管理について詳しくは、[Adobe Analytics とデータ保護](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=ja)を参照してください。
 
 ## Personalization Foundation by Target {#personalization-foundation-by-target}
 
 AEM Sites には、Adobe Target On-demand Services 内の機能を使用した Personalization Foundation by Target との統合（オプション）が含まれています。
 
-Adobe Targetに関するデータ主体リクエストの管理について詳しくは、 [Adobe Target — プライバシーと一般データ保護規則](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=ja).
+Adobe Target に関連するデータサブジェクトリクエストの管理について詳しくは、[Adobe Target - プライバシーと一般データ保護規則](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=ja)を参照してください。
 
 ## ContextHub {#contexthub}
 
@@ -174,7 +174,7 @@ ContextHub を使用した永続性をプレビューするには、次の操作
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-     ContextHub ストアは、使用する永続性レイヤーを定義します。これにより、永続性の現在の状態を表示するために、すべてのレイヤーを確認する必要があります。
+     ContextHub ストアは、使用する永続性レイヤーを定義します。永続性の現在の状態を表示するには、すべてのレイヤーを確認する必要があります。
 
 例えば、localStorage に格納されているデータを表示するには、次のようにします。
 
@@ -203,7 +203,7 @@ ContextHub を使用した永続性をプレビューするには、次の操作
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-     ContextHub ストアは、使用する永続性レイヤーを定義します。これにより、永続性の現在の状態を表示するために、すべてのレイヤーを確認する必要があります。
+     ContextHub ストアは、使用する永続性レイヤーを定義します。永続性の現在の状態を表示するには、すべてのレイヤーを確認する必要があります。
 
 例えば、localStorage に格納されているデータを表示するには、次のようにします。
 

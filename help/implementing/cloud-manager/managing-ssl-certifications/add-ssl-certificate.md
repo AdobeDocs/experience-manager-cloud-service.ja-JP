@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '570'
-ht-degree: 82%
+ht-degree: 94%
 
 ---
 
@@ -63,7 +63,7 @@ Cloud Manager を使用して証明書を追加するには、次の手順に従
 
    * 検出されたエラーが表示されます。
       * 証明書を保存する前に、すべてのエラーを解決する必要があります。
-      * 詳しくは、 [証明書エラー](#certificate-errors) の節を参照して、一般的なエラーの対処方法の詳細を確認してください。
+      * 一般的なエラーの対処方法について詳しくは、[証明書エラー](#certificate-errors)の節を参照してください。
 
 1. 「**保存**」をクリックして証明書を保存します。
 
@@ -73,7 +73,7 @@ Cloud Manager を使用して証明書を追加するには、次の手順に従
 
 >[!NOTE]
 >
->ユーザーは、 **ビジネスオーナー** または **デプロイメントマネージャー** Cloud Manager に SSL 証明書をインストールするための役割。
+>Cloud Manager で SSL 証明書をインストールするには、ユーザーが&#x200B;**ビジネスオーナー**&#x200B;のメンバーまたは&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持っている必要があります。
 
 ## 証明書エラー {#certificate-errors}
 
@@ -81,7 +81,7 @@ Cloud Manager を使用して証明書を追加するには、次の手順に従
 
 ### 証明書ポリシー {#certificate-policy}
 
-次のエラーが表示される場合は、証明書のポリシーを確認してください。
+次のエラーが発生した場合は、証明書のポリシーを確認してください。
 
 ```text
 Certificate policy must conform with EV or OV, and not DV policy.

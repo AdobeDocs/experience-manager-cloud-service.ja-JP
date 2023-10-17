@@ -6,7 +6,7 @@ exl-id: be9597a3-056c-436c-a09e-15a03567c85a
 source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
 source-wordcount: '924'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 92%
 
 * 有効期限：アセットの `Expired` ステータスに基づいて検索結果をフィルタリングできます。また、アセットの有効期限の日付範囲を指定して、検索結果をさらにフィルタリングすることもできます。
 
-* カスタムフィルター： [カスタムフィルターの追加](#custom-filters) Assets ビューユーザーインターフェイスに移動します。 標準フィルターに加えて、カスタムフィルターを適用し、検索結果を絞り込むことができます。
+* カスタムフィルター：アセットビューのユーザーインターフェイスに[カスタムフィルターを追加](#custom-filters)できます。標準フィルターに加えて、カスタムフィルターを適用し、検索結果を絞り込むことができます。
 
 検索したアセットを、`Name`、`Relevancy`、`Size`、`Modified` および `Created` の昇順または降順に並べ替えることができます。
 
@@ -56,9 +56,9 @@ ht-degree: 92%
 
 **必要な権限：** `Can Edit`、`Owner` または管理者。
 
-アセットビューでは、カスタムフィルターをユーザーインターフェイスに追加することもできます。 [標準フィルター](#refine-search-results)に加えて、カスタムフィルターを適用し、検索結果を絞り込むことができます。
+また、アセットビューで、ユーザーインターフェイスにカスタムフィルターを追加できます。[標準フィルター](#refine-search-results)に加えて、カスタムフィルターを適用し、検索結果を絞り込むことができます。
 
-アセットビューには、次のカスタムフィルターが用意されています。
+アセットビューが提供するカスタムフィルターは次のとおりです。
 
 <table>
     <tbody>
@@ -144,9 +144,9 @@ When userA is searching and userB add an asset that matches search results, will
 
 ## 次の手順 {#next-steps}
 
-* [Assets ビューでアセットを検索するには、ビデオを見る](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=ja)
+* [ビデオを試聴してアセットビューでのアセットの検索を学ぶ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=ja)
 
-* 次を使用して製品に関するフィードバックを提供： [!UICONTROL フィードバック] Assets ビューユーザーインターフェイスで使用可能なオプション
+* アセットビューのユーザーインターフェイスの「[!UICONTROL フィードバック]」オプションを使用して製品に関するフィードバックを提供する
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 

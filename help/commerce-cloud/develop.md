@@ -11,13 +11,13 @@ exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1006'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
 # AEM Commerce for AEM as a Cloud Service の開発 {#develop}
 
-AEM as a Cloud Serviceの Commerce Integration Framework(CIF) に基づくAEM Commerce プロジェクトの開発は、AEM as a Cloud Serviceの他のAEMプロジェクトと同じルールとベストプラクティスに従います。 最初に以下を確認します。
+AEM as a Cloud Service 用の Commerce Integration Framework（CIF）に基づく AEM Commerce プロジェクトの開発は、AEM as a Cloud Service 上の他の AEM プロジェクトと同じルールとベストプラクティスに従います。最初に次の点を確認します。
 
 - [AEM プロジェクトの構造](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=ja)
 - [AEM as a Cloud Service の SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ja)
@@ -57,7 +57,7 @@ CIF アドオンは、[ソフトウェア配布ポータル](https://experience.
 AEM as a Cloud Service SDK を使用するローカル CIF アドオン開発の場合は、次の手順に従います。
 
 1. 最新の AEM as a Cloud Service SDK を取得します。
-1. AEM .jar を解凍し、 `crx-quickstart` フォルダー、実行：
+1. AEM .jar を解凍して `crx-quickstart` フォルダーを作成し、次を実行します。
 
    ```bash
    java -jar <jar name> -unpack
@@ -70,7 +70,7 @@ AEM as a Cloud Service SDK を使用するローカル CIF アドオン開発の
 
 1. Adobe Commerce GraphQL エンドポイントを保持する `COMMERCE_ENDPOINT` という名前のローカル OS 環境変数を作成します。
 
-   例：macOS X:
+   例：macOS X
 
    ```bash
    export COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
@@ -82,11 +82,11 @@ AEM as a Cloud Service SDK を使用するローカル CIF アドオン開発の
    set COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
-   この変数は、AEM でコマースシステムへの接続に使用されます。また、CIF アドオンには、Commerce GraphQLエンドポイントをローカルで使用できるようにするローカルリバースプロキシが含まれています。 このプロキシは、CIF オーサリングツール（製品コンソールおよびピッカー）と、直接GraphQL呼び出しをおこなう CIF クライアント側コンポーネントで使用されます。
+   この変数は、AEM でコマースシステムへの接続に使用されます。また、CIF アドオンには、Commerce GraphQL エンドポイントをローカルで使用できるようにするローカルリバースプロキシが含まれています。このプロキシは、CIF オーサリングツール（製品コンソールおよびピッカー）で使用され、GraphQL の直接呼び出しを行う CIF クライアントサイドコンポーネントにも使用されます。
 
-   この変数は、AEM as a Cloud Service 環境に対しても設定する必要があります。変数について詳しくは、[AEM as a Cloud Service の OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#local-development)を参照してください。
+   この変数は、AEM as a Cloud Service 環境に対しても設定する必要があります。変数について詳しくは、[AEM as a Cloud Service の OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ja#local-development)を参照してください。
 
-1. （オプション）ステージング済みカタログ機能を有効にするには、Adobe Commerce インスタンスの統合トークンを作成する必要があります。次の手順に従います： [はじめに](./getting-started.md#staging) をクリックしてトークンを作成します。
+1. （オプション）ステージング済みカタログ機能を有効にするには、Adobe Commerce インスタンスの統合トークンを作成する必要があります。[概要](./getting-started.md#staging)の手順に従って、トークンを作成します。
 
    `COMMERCE_AUTH_HEADER` という名前の OSGi シークレットを次の値に設定します。
 
@@ -94,31 +94,31 @@ AEM as a Cloud Service SDK を使用するローカル CIF アドオン開発の
    Authorization: Bearer <Access Token>
    ```
 
-   シークレットについて詳しくは、[AEM as a Cloud Service の OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#local-development)を参照してください。
+   シークレットについて詳しくは、[AEM as a Cloud Service の OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ja#local-development)を参照してください。
 
 1. AEM as a Cloud Service SDK を開始します。
 
 >[!NOTE]
 >
->手順 5 で設定した環境変数と同じターミナルウィンドウで、AEM as a Cloud Service SDK を起動します。別のターミナルウィンドウで起動する場合、または.jar ファイルをダブルクリックして起動する場合は、環境変数が表示されていることを確認します。
+>手順 5 で設定した環境変数と同じターミナルウィンドウで、AEM as a Cloud Service SDK を起動します。別のターミナルウィンドウで起動するか .jar ファイルをダブルクリックして起動する場合、環境変数が表示されていることを確認します。
 
 OSGI コンソールを使用して設定を確認します：`http://localhost:4502/system/console/osgi-installer`。このリストには、機能モデルファイルで定義されている CIF アドオン関連バンドル、コンテンツパッケージ、OSGI 設定が含まれている必要があります。
 
 ## プロジェクトのセットアップ {#project}
 
-AEM as a Cloud Service用に CIF プロジェクトをBootstrapにする方法は 2 つあります。
+AEM as a Cloud Service 用の CIF プロジェクトを Bootstrap するには、2 つの方法があります。
 
 ### AEM プロジェクトアーキタイプの使用
 
-この [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) は、CIF を使い始めるための事前設定済みプロジェクトをBootstrapするための主なツールです。 CIF コアコンポーネントと必要なすべての設定を、1 つの追加オプションで生成されたプロジェクトに含めることができます。
+CIF を使い始めるために事前に設定されたプロジェクトを Bootstrap するには、[AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype)が主なツールです。CIF コアコンポーネントと必要なすべての設定を、1 つの追加オプションで生成されたプロジェクトに含めることができます。
 
 >[!TIP]
 >
->常に最新バージョンの [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/releases) プロジェクトを生成できます。
+>常に最新バージョンの [AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype/releases)を使用して、プロジェクトを生成します。
 
-AEM プロジェクトの生成方法については、AEM プロジェクトのアーキタイプの「[使用手順](https://github.com/adobe/aem-project-archetype#usage)」を参照してください。プロジェクトに CIF を含めるには、 `includeCommerce` オプション。
+AEM プロジェクトの生成方法については、AEM プロジェクトアーキタイプの「[使用手順](https://github.com/adobe/aem-project-archetype#usage)」を参照してください。プロジェクトに CIF を含めるには、`includeCommerce` オプションを使用します。
 
-例：
+次に例を示します。
 
 ```bash
 mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
@@ -167,11 +167,11 @@ CIF コアコンポーネントは、提供されている `all` パッケージ
 
 CIF プロジェクトを開始する 2 つ目の方法は、[AEM Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)をコピーして使用する方法です。AEM Venia 参照用ストアは、AEM 用の CIF コアコンポーネントの使用方法を示すサンプルのストアフロントアプリケーションです。これは、ベストプラクティス例として意図されていて、独自機能を開発するための有望な出発点としての役割も果たします。
 
-Venia 参照用ストアの使用を開始するには、Git リポジトリーを複製し、必要に応じてプロジェクトをカスタマイズします。
+Venia 参照用ストアを使い始めるには、Git リポジトリをクローンし、必要に応じてプロジェクトをカスタマイズし始めます。
 
 >[!NOTE]
 >
->Venia 参照用ストアプロジェクトには、AEM as a Cloud Service用とAEM 6.5 用の 2 つのビルドプロファイルが含まれています。 [project readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) そうすれば、その使い方を見ることができます。
+>Venia 参照用ストアプロジェクトには、AEM as a Cloud Service 用および AEM 6.5 用の 2 つのビルドプロファイルが含まれています。[project readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) を参照して、使用方法を確認してください。
 
 ## その他のリソース
 

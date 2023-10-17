@@ -5,7 +5,7 @@ exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
 source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
 workflow-type: tm+mt
 source-wordcount: '264'
-ht-degree: 44%
+ht-degree: 53%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 44%
 この節では、Cloud Manager で既存のプログラムに Screens をアドオンとして追加する方法について説明します。
 
 >[!NOTE]
->詳しくは、 [プログラムとプログラムの種類について](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=en) Cloud Manager プログラムの詳細については、を参照してください。
+>Cloud Manager プログラムの詳細については、[プログラムとプログラムタイプについて](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=en)を参照してください。
 
 ## 目的 {#objective}
 
@@ -27,7 +27,7 @@ ht-degree: 44%
 1. [Cloud Manager](https://my.cloudmanager.adobe.com/) に移動します。
 
    >[!NOTE]
-   >詳しくは、 [Cloud Manager の概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=ja) Cloud Manager について説明します。
+   >Cloud Manager について詳しくは、[Cloud Manager の概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=ja)を参照してください。
 
 1. プロジェクトに移動し、 **プログラムを編集** Cloud Manager の **概要** ページに貼り付けます。
 

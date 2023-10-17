@@ -5,7 +5,7 @@ exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1055'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -88,7 +88,7 @@ AEM のターゲティングモードを使用して、[ターゲットコンテ
 
 エクスペリエンスを構成するコンポーネントのグループセット。
 
-[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment)は、エクスペリエンスを作成するためのコンテンツと情報（スタイル設定など）で構成され、ページのオーサリング時に直接使用できます。これらは、AEM ページのサブセットと考えることができます。コンテンツ作成者は、Sites ページやサードパーティ製システムを含む複数のチャネルをまたいでコンテンツを再利用できます。
+[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment)は、エクスペリエンスを作成するためのコンテンツと情報（スタイル設定など）で構成され、ページのオーサリング時に直接使用できます。これらは、AEM ページのサブセットと考えることができます。コンテンツ作成者は、Sites ページやサードパーティ製システムなどの複数のチャネルからコンテンツを再利用できます。
 
 パーソナライゼーションの例では、タイトル、画像、説明およびコールトゥアクションボタンを組み合わせて、ティーザーエクスペリエンスを形成することができます。 エクスペリエンスフラグメントの使用は、Adobe Target パーソナライズ機能を利用する際の重要な部分を占めます。
 
@@ -118,7 +118,7 @@ AEM には、ページリクエストの処理や表示するコンテンツの�
 [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) ターゲティングエンジンを使用すると、ページへの訪問から収集された情報が Adobe Target で追跡されます。
 
 * このターゲティングエンジンを使用する場合、エクスペリエンスのオーディエンス定義には、Adobe Target から読み込んだセグメントを使用します。
-* Adobe Targetエンジンを使用するアクティビティは、 [Target に同期済み](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
+* Adobe Target エンジンを使用するアクティビティは、[Target と同期](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target)します。
 
 このエンジンを使用できるのは、[Adobe Target と統合](/help/sites-cloud/integrating/integrating-adobe-target.md)している場合のみです。
 

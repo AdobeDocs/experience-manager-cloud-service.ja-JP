@@ -5,7 +5,7 @@ exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2339'
-ht-degree: 89%
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 89%
 
 ## これまでの説明内容 {#story-so-far}
 
-このジャーニーの前の部分では、 [AEM as a Cloud Serviceの変更点の理解](/help/journey-migration/getting-started.md)をクリックし、デプロイメントを [準備段階](/help/journey-migration/readiness.md).
+ジャーニーのこれまでの部分では、[AEM as a Cloud Service の変更点を理解](/help/journey-migration/getting-started.md)し、デプロイメントが[準備段階](/help/journey-migration/readiness.md)でクラウドに移行する準備ができているかどうかを判断しました。
 
 この記事では、コードとコンテンツをクラウドに移動する準備ができていることを、アドビが提供するツールを使用して確認する方法について引き続き説明します。
 
@@ -25,7 +25,7 @@ ht-degree: 89%
 
 * コードを AEM as a Cloud Service にデプロイするために使用する、AEM の継続的インテグレーションと継続的デリバリーのフレームワークである Cloud Manager を紹介します。
 * コンテンツ転送ツールについて詳しく説明します。
-* AEM as a Cloud Serviceのコードを最新化できるように、使用する必要があるコードリファクタリングツールについて説明します。
+* AEM as a Cloud Service のコードを最新化するために使用する必要がある、コードリファクタリングツールについて説明します。
 
 ## Cloud Manager の使用 {#using-cloud-manager}
 
@@ -49,7 +49,7 @@ Cloud Service への移行の正確な手順は、購入したシステムと準
 
 ![画像](/help/journey-migration/assets/exec-image1.png)
 
-以下の章でこれを実現できるよう、使用する必要のあるツールの詳細を説明します。
+以下の章では、これを実現するために必要なツールの詳細を説明します。
 
 ## コンテンツの移行 {#content-migration}
 
@@ -67,10 +67,10 @@ Cloud Service への移行の正確な手順は、購入したシステムと準
 
 Cloud Services と互換性を持たせるために、既存の機能のリファクタリングを開始します。
 
-まず、基本的なツールの詳細を説明するドキュメントを見て、コードのリファクタリングを開始します。
+まず、基本的なツールの詳細を説明したドキュメントを参照し、コードのリファクタリングを開始します。
 
 
-* 計画中は、AEM as a Cloud Serviceとの互換性を保つためにリファクタリングが必要な領域のリストを用意することをお勧めします。 Cloud Service のコードをリファクタリングして最適化する方法について詳しくは、 [開発ガイドライン](/help/implementing/developing/introduction/development-guidelines.md) を確認してください。
+* 計画中は、AEM as a Cloud Service との互換性を保つためにリファクタリングが必要な領域のリストを用意しておくことをお勧めします。Cloud Service のコードをリファクタリングして最適化する方法について詳しくは、 [開発ガイドライン](/help/implementing/developing/introduction/development-guidelines.md) を確認してください。
 * AEM as a Cloud Service で [設定を管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=ja#what-is-a-configuration) する方法を確認してください。
 * [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ja) をダウンロードして、ローカル開発環境を設定する方法を確認してください。
 * 最後に、[AEM as a Cloud Service Java API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) について詳しく確認してください。
@@ -232,7 +232,7 @@ One more important datapoint is the amount of time it takes to complete the [use
    * Word ドキュメントおよび PDF ドキュメント内のテキストを含む検索
 * ベストプラクティスアナライザー [レポート](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) の収集
 * [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) へのインポート
-   * AEM as a Cloud Service がストレージ要件を処理できることを確認するために、自己分析による推奨事項を確認します。
+   * AEM as a Cloud Service がストレージ要件を処理できることを確認するために、自己分析によるレコメンデーションを確認します。
 * 移行計画を続行する前に、不明点があればアドビサポートチケットを作成してください。
 
 ### 移行の証明 {#proof-of-migration}
@@ -241,7 +241,7 @@ One more important datapoint is the amount of time it takes to complete the [use
    * 同じネットワークゾーンにある
    * ユーザーやグループなどの実稼動コンテンツを提供
    * クローンの作成と公開 - クラスターまたは公開ファームの場合は、それぞれ 1 つのノード
-* 移行されるコンテンツのサブセットを選択し、次の操作を実行します。
+* 次のことができるように、移行するコンテンツのサブセットを選択します。
    * 使用可能なすべてのコンテンツタイプの組み合わせです
    * すべてのユーザーとグループを含む
 * コンテンツの 25% または最大 1 TB のコンテンツのいずれか小さい方を含みます。
@@ -256,4 +256,4 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 ## 次の手順 {#what-is-next}
 
-AEMのインストールをクラウドに移行する準備ができているかどうかを評価する方法を完全に理解したら、準備に必要なツールの使用方法を学ぶため、次に [運用開始段階](/help/journey-migration/go-live.md).
+AEM インストールをクラウドに移行する準備ができているかどうかを評価する方法を把握し、その準備に必要なツールの使用方法を確認したら、[実稼動段階](/help/journey-migration/go-live.md)に進みます。

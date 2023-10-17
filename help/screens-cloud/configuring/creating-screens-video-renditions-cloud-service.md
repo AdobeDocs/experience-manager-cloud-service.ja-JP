@@ -5,7 +5,7 @@ exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
 source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
 source-wordcount: '367'
-ht-degree: 44%
+ht-degree: 93%
 
 ---
 
@@ -25,21 +25,21 @@ Screens as a Cloud Service で Screens コンテンツプロバイダーから�
 1. Screens コンテンツプロバイダーで目的のチャネルに移動します。
 
    >[!NOTE]
-   >詳しくは、 [Screens コンテンツプロバイダーの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) を参照してください。
+   >詳しくは、[Screens コンテンツプロバイダーの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=ja#screens-content-provider)を参照してください。
 
-1. 左側のナビゲーションバーの「ツール」セクションをクリックし、 **Assets** 次に、 **処理プロファイル**.
+1. 左側のナビゲーションバーの「ツール」セクションをクリックして、「**アセット**」をクリックし、「**処理プロファイル**」をクリックします。
 
-   ![処理プロファイルをクリック](/help/screens-cloud/assets/configure/screens-cp-3.png)
+   ![処理プロファイルをクリックする](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
-1. クリック **作成** をクリックして処理プロファイルを作成します。
+1. 「**作成**」をクリックして、処理プロファイルを作成します。
 
-   ![「作成](/help/screens-cloud/assets/configure/screens-video-2.png)」をクリックします。
+   ![「作成」をクリック](/help/screens-cloud/assets/configure/screens-video-2.png)
 
 1. 「**名前**」に「**ScreensProcessingProfile**」などと入力します。
 
    ![「名前」フィールドがハイライト表示された処理プロファイルダイアログボックス](/help/screens-cloud/assets/configure/screens-video-3.png)
 
-1. に移動します。 **ビデオ** タブでビデオエンコーディングを追加し、 **新規追加**.
+1. 「**ビデオ**」タブでに移動してビデオエンコーディングを追加し、「**新規追加**」をクリックします。
 
    ![「新規追加」ボタンがハイライト表示された処理プロファイルダイアログボックス](/help/screens-cloud/assets/configure/screens-video-4a.png)
 
@@ -48,22 +48,22 @@ Screens as a Cloud Service で Screens コンテンツプロバイダーから�
    ![「保存」ボタンがハイライト表示された処理プロファイルダイアログボックス](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >「screens — 」で始まるエンコーディング名を使用します。 これらのビデオレンディションのみが、Screens as a Cloud Serviceでのビデオエクスペリエンスの再生と見なされます。 ビデオに使用するビットレートを入力します（720 px ビデオの場合は 2500 kbps、1080 px の場合は 5000 kbps）。
+   >「screens-」で始まるエンコーディング名を使用します。これらのビデオレンディションのみが、Screens as a Cloud Serviceでのビデオエクスペリエンス再生が考慮されます。ビデオに適したビットレートを入力します（720 ピクセルのビデオの場合は 2500 kbps、1080 ピクセルの場合は 5000 kbps）。
 
    >[!NOTE]
-   >ビデオに適した様々な幅／高さ／ビットレートの複数のビデオレンディションを追加できます。デバイスがビデオレンディションのみを再生する場合でも、すべての画面、レンディションは Screens デバイスでダウンロードされます。
+   >ビデオに適した様々な幅／高さ／ビットレートの複数のビデオレンディションを追加できます。すべてのスクリーン、レンディションは Screens デバイスによってダウンロードされますが、Screens デバイスはビデオレンディションのみ再生します。
 
 1. 「**保存**」をクリックします。
 
-1. 処理プロファイルを選択し、「 **プロファイルをフォルダーに適用**.
+1. 処理プロファイルを選択し、「**プロファイルをフォルダーに適用**」をクリックします。
 
    ![プロファイルをフォルダーに適用](/help/screens-cloud/assets/configure/screens-video-5.png)
 
-1. Screens ビデオが保持されるフォルダーを選択し、 **適用**.
+1. Screens ビデオを保存するフォルダーを選択し、「**適用**」をクリックします。
 
    ![「適用](/help/screens-cloud/assets/configure/screens-video-6.png)」をクリックします。
 
    >[!NOTE]
    >
    >* 複数の処理プロファイルを作成して、それぞれ対応するフォルダーに適用することで、それらのフォルダー内のビデオが特定のビデオレンディションを取得できるようになります。
-   >* 処理プロファイルが適用されるフォルダーにビデオをアップロードすると、ビデオが処理されます。 設定済みのレンディションが作成されます。これは、Screens デバイスでビデオを再生するために使用されます。
+   >* 処理プロファイルが適用されるフォルダーにビデオをアップロードすると、ビデオが処理されます。設定済みのレンディションが作成されます。これは、Screens デバイスでビデオを再生するために使用されます。

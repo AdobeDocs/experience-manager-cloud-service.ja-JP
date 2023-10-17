@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: 08cb1b4fc74e03a931551042814afb2d722005a5
 workflow-type: tm+mt
 source-wordcount: '1039'
-ht-degree: 86%
+ht-degree: 91%
 
 ---
 
@@ -109,7 +109,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 >[!NOTE]
 >
->2022 年 4 月以降、OracleJDK がAEMアプリケーションの開発と操作のデフォルト JDK になります。 Cloud Manager のビルドプロセスは、Maven ツールチェーンで代替オプションが明示的に選択されている場合でも、OracleJDK の使用に自動的に切り替わります。 2022 年 4 月のリリースノートを参照してください。
+>2022年4月以降、Oracle JDK は、AEM アプリケーションの開発と運用のためのデフォルト JDK になります。Cloud Manager のビルドプロセスは、Maven ツールチェーンで代替オプションを明示的に選択した場合でも、Oracle JDK の使用に自動的に切り替わります。詳しくは、2022年4月のリリースノートを参照してください。
 
 #### Maven 実行の代替 JDK バージョン {#alternate-maven-jdk-version}
 
@@ -244,4 +244,4 @@ Maven `pom.xml` ファイル内で使用する場合は、通常、次のよう�
 
 >[!TIP]
 >
->フロントエンドビルド環境について詳しくは、 [フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
+>フロントエンドビルド環境について詳しくは、[フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)のドキュメントを参照してください。

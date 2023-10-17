@@ -12,7 +12,7 @@ exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
 source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
 source-wordcount: '3493'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -198,7 +198,7 @@ Adobe Dynamic Media の会社管理者が、自社のセキュアテスト環境
 
   >[!IMPORTANT]
   >
-  >2023 年 5 月 1 日以降、Dynamic Mediaの UGC アセットは、アップロード日から最大 60 日間使用できます。 60 日後にアセットが削除されます。
+  >2023年5月1日（PT）以降、Dynamic Media の UGC アセットは、アップロード日から最大 60 日間使用できます。60 日後にアセットは削除されます。
 
   >[!NOTE]
   >

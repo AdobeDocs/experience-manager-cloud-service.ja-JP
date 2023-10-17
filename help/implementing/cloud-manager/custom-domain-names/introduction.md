@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 83%
+ht-degree: 89%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Serviceは、組み込みのコンテンツ配信ネットワー�
 * AEM が管理する CDN にインストールされるカスタムドメイン名（および証明書）は、Cloud Manager で管理されます。
 * 独自の CDN にインストールされているカスタムドメイン名（および証明書）は、その特定の CDN で管理されます。
 
-独自の CDN で管理されるドメインは、Cloud Manager を通じてインストールする必要はありません。 X-Forwarded-Host を介してAEMで使用可能になり、Dispatcher で定義された vhosts と一致します。 詳しくは、 [CDN ドキュメント](/help/implementing/dispatcher/cdn.md).
+独自の CDN で管理するドメインは、Cloud Manager を通じてインストールする必要はありません。X-Forwarded-Host を介してAEMで使用可能になり、Dispatcher で定義された vhosts と一致します。詳しくは、[CDN ドキュメント](/help/implementing/dispatcher/cdn.md)を参照してください。
 
 1 つの環境で、AEM が管理する CDN にインストールされたドメインと、独自の CDN にインストールされたドメインの両方を持つことができます。
 
@@ -74,4 +74,4 @@ AEMaaCS でカスタムドメイン名を使用する場合は、多くの制限
 * 同じドメイン名を複数の環境で使用することはできません。
 * 一度に追加できるドメイン名は 1 つだけです。
 * AEM as a Cloud Service では、`*.example.com` のようなワイルドカードドメインをサポートしていません。
-* カスタムドメイン名を追加する前に、カスタムドメイン名を含んだ有効な SSL 証明書（ワイルドカード証明書が有効）をプログラムにインストールする必要があります。詳しくは、 [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。
+* カスタムドメイン名を追加する前に、カスタムドメイン名を含んだ有効な SSL 証明書（ワイルドカード証明書が有効）をプログラムにインストールする必要があります。詳しくは、[SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)を参照してください。

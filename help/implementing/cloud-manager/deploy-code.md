@@ -5,7 +5,7 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 source-git-commit: 2d1d3ac98f8fe40ba5f9ab1ccec946c8448ddc43
 workflow-type: tm+mt
 source-wordcount: '1193'
-ht-degree: 68%
+ht-degree: 92%
 
 ---
 
@@ -57,9 +57,9 @@ _コードスキャン、機能テスト、UI テスト、エクスペリエン�
 
 * **検証** - このステップでは、現在使用可能なリソースを使用するようにパイプラインが設定されていることを確認します。例えば、設定済みのブランチが存在し、環境が使用可能であることをテストします。
 * **ビルドテストとユニットテスト - このステップでは、コンテナ化されたビルドプロセスを実行します。**
-   * ビルド環境について詳しくは、「[ビルド環境の詳細](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)」を参照してください。
+   * ビルド環境について詳しくは、[ビルド環境の詳細](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)を参照してください。
 * **コードスキャン** - このステップでは、アプリケーションコードの品質を評価します。
-   * テストプロセスの詳細については、「[コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)」を参照してください。
+   * テストプロセスの詳細については、[コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)を参照してください。
 * **ビルドイメージ** - このプロセスでは、ビルドステップで生成されたコンテンツおよび Dispatcher パッケージを Docker イメージと Kubernetes 設定に変換します。
 * **ステージにデプロイ** - [ステージテストフェーズ](#stage-testing)に備えて、イメージがステージング環境にデプロイされます。
 
@@ -70,26 +70,26 @@ _コードスキャン、機能テスト、UI テスト、エクスペリエン�
 **ステージテスト**&#x200B;フェーズには、以下のステップが含まれます。
 
 * **製品機能テスト** - ステージング環境に照らして実行されるテストを Cloud Manager パイプラインで実行します。
-   * 詳しくは、 [製品機能テスト](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) を参照してください。
+   * 詳しくは、[製品機能テスト](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)を参照してください。
 
 * **カスタム機能テスト** - パイプラインのこのステップは常に実行され、スキップできません。ビルドでテスト JAR が生成されない場合、テストはデフォルトで合格します。
-   * 詳しくは、 [カスタム機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) を参照してください。
+   * 詳しくは、[カスタム機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)を参照してください。
 
 * **カスタム UI テスト** - このステップは、カスタムアプリケーション用に作成された UI テストを自動的に実行するオプション機能です。
    * UI テストは、言語とフレームワークの幅広い選択肢（Java と Maven、Node と WebDriver.io、Selenium に基づいて構築されたその他のフレームワークとテクノロジーなど）を可能にするために Docker イメージにパッケージ化された Selenium ベースのテストです。
-   * 詳しくは、 [カスタム UI テスト](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) を参照してください。
+   * 詳しくは、[カスタム UI テスト](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)を参照してください。
 
 * **エクスペリエンス監査** - パイプラインのこのステップは常に実行され、スキップできません。実稼動パイプラインの実行時に、チェックを実行するカスタム機能テストの後に、エクスペリエンス監査ステップが組み込まれます。
    * 設定されたページがサービスに送信され、評価されます。
    * 結果は情報提供であり、スコアおよび現在のスコアと以前のスコア間の変化を示します。
-   * このインサイトは、現在のデプロイメントで回帰が導入されたかどうかを判断するのに役立ちます。
-   * 詳しくは、 [エクスペリエンス監査結果について](/help/implementing/cloud-manager/experience-audit-testing.md) を参照してください。
+   * このインサイトは、現在のデプロイメントでリグレッションが導入されいないか判断するのに役立ちます。
+   * 詳しくは、[エクスペリエンス監査結果について](/help/implementing/cloud-manager/experience-audit-testing.md)を参照してください。
 
 ![ステージテスト](assets/stage-testing.png)
 
 ## 実稼動デプロイメントフェーズ {#deployment-production}
 
-訪問者がAEMサイトに与える影響を最小限に抑えるために、実稼動トポロジにデプロイするプロセスは少し異なります。
+AEM サイト訪問者への影響を最小限に抑えるために、実稼動トポロジへのデプロイプロセスはわずかに異なります。
 
 実稼動デプロイメントは、通常、前述と同じステップに従いますが、周期的な方法で実行されます。
 
@@ -121,7 +121,7 @@ _コードスキャン、機能テスト、UI テスト、エクスペリエン�
 
 ## デプロイメントプロセス {#deployment-process}
 
-Cloud Service のすべてのデプロイメントでは、ダウンタイムをなくすために、ローリングプロセスに従います。詳しくは、 [ローリングデプロイメントの仕組み](/help/implementing/deploying/overview.md#how-rolling-deployments-work) を参照してください。
+Cloud Service のすべてのデプロイメントでは、ダウンタイムをなくすために、ローリングプロセスに従います。詳しくは、[ローリングデプロイメントの仕組み](/help/implementing/deploying/overview.md#how-rolling-deployments-work)を参照してください。
 
 >[!NOTE]
 >
@@ -129,19 +129,19 @@ Cloud Service のすべてのデプロイメントでは、ダウンタイムを
 
 ## 実稼動デプロイメントの再実行 {#reexecute-deployment}
 
-まれに、一時的な理由で実稼動のデプロイメント手順が失敗することがあります。 この場合、実稼動のデプロイメント手順の再実行は、完了のタイプ（キャンセルまたは失敗など）に関係なく、実稼動のデプロイメント手順が完了している限りサポートされます。 再実行は、3 つのステップで構成される同じパイプラインを使用して新しい実行を作成します。
+まれに、一時的な理由で実稼動デプロイメントステップが失敗すること場合があります。この場合、実稼動のデプロイメント手順の再実行は、完了のタイプ（キャンセルまたは失敗など）に関係なく、実稼動のデプロイメント手順が完了している限りサポートされます。 再実行の場合は、3 つのステップで構成される同じパイプラインを使用して新しい実行が作成されます。
 
-1. 検証ステップ — これは、基本的に、通常のパイプライン実行中に発生する検証と同じです。
-1. ビルドステップ — 再実行のコンテキストでは、ビルドステップはアーティファクトをコピーし、実際には新しいビルドプロセスを実行しません。
-1. 実稼動のデプロイメント手順 — 通常のパイプライン実行での実稼動のデプロイメント手順と同じ設定およびオプションを使用します。
+1. 検証ステップ - 通常のパイプライン実行時に行われる検証と基本的に同じです。
+1. ビルドステップ - 再実行のコンテキストでは、ビルドステップは、新しいビルドプロセスを実際に実行するのではなく、アーティファクトをコピーします。
+1. 実稼動デプロイメントステップ - 通常のパイプライン実行における実稼動デプロイメントステップと同じ設定およびオプションを使用します。
 
-再実行が可能な状況では、実稼動パイプラインのステータスページに **再実行** 通常の **ビルドログをダウンロード** オプション。
+再実行が可能な状況では、実稼動パイプラインステータスページには、通常の「**ビルドログをダウンロード**」オプションの横に「**再実行**」オプションが表示されます。
 
 ![パイプラインの概要ウィンドウの「再実行」オプション](assets/re-execute.png)
 
 >[!NOTE]
 >
->再実行では、UI でビルドステップのラベルが付けられ、再構築ではなくアーティファクトをコピーしていることが示されます。
+>再実行の場合、ビルドステップには UI でラベルが付けられて、アーティファクトを再ビルドではなくコピーしていることが示されます。
 
 ### 制限事項 {#limitations}
 
@@ -152,13 +152,13 @@ Cloud Service のすべてのデプロイメントでは、ダウンタイムを
 
 ### 再実行 API {#reexecute-API}
 
-UI で使用できる以外に、 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) を使用して、トリガーの再実行と、再実行としてトリガーされた実行を識別します。
+UI で使用できるだけでなく、[Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) を使用して再実行をトリガーしたり、再実行としてトリガーされた実行を識別したりすることもできます。
 
 #### 再実行のトリガー {#reexecute-deployment-api}
 
 再実行をトリガーするには、HAL リンクにPUTリクエストを実行します `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` 実稼動デプロイステップの状態。
 
-* このリンクが存在する場合は、そのステップから実行を再開できます。 
+* このリンクが存在する場合は、そのステップから実行を再開できます。
 * 存在しない場合は、そのステップから実行を再開することはできません。
 
 このリンクは、実稼動のデプロイ手順でのみ使用できます。
@@ -200,8 +200,8 @@ UI で使用できる以外に、 [Cloud Manager API](https://developer.adobe.co
 
 HAL リンクの href 値の構文は一例に過ぎません。 実際の値は、常に HAL リンクから読み取られるべきものであり、生成されるものではありません。
 
-このエンドポイントにPUTリクエストを送信すると、成功した場合は 201 応答が返され、応答本文は新しい実行を表します。 これは、API を使用して通常の実行を開始する場合と似ています。
+このエンドポイントに PUT リクエストを送信すると、成功の場合は 201 応答が返され、新しい実行の表現が応答の本文になります。これは、API を使用して通常の実行を開始する場合と似ています。
 
 #### 再実行済みの実行の識別 {#identify-reexecution}
 
-再実行される実行は、値で識別できます `RE_EXECUTE` （内） `trigger` フィールドに入力します。
+再実行された実行は、`trigger` フィールドの値 `RE_EXECUTE` によって識別できます。

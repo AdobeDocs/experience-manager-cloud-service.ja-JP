@@ -5,7 +5,7 @@ exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2552'
-ht-degree: 84%
+ht-degree: 98%
 
 ---
 
@@ -21,17 +21,17 @@ AEM で clientlibs を使用する利点は次のとおりです。
 * [Dispatcher](/help/implementing/dispatcher/disp-overview.md) 経由でアクセス可能なパスで clientlibs を公開します。
 * 参照先ファイルまたは画像のパスの書き換えを許可します。
 
-clientlibs は、AEMから CSS と JavaScript を配信するための組み込みソリューションです。
+Clientlibs は、AEM から CSS と JavaScript を配信するための組み込みソリューションです。
 
 >[!TIP]
 >
->AEMプロジェクト用に CSS と JavaScript を作成するフロントエンドデベロッパーは、 [AEMプロジェクトアーキタイプと、自動化されたフロントエンドビルドプロセスが含まれます。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja)
+>AEM プロジェクト用に CSS と JavaScript を作成するフロントエンド開発者は、[AEM プロジェクトアーキタイプと、自動化されたフロントエンドビルドプロセス](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja)にも慣れ親しんでおく必要があります。
 
 ## クライアントサイドライブラリとは {#what-are-clientlibs}
 
-サイトを処理するには、クライアント側で JavaScript と CSS およびアイコンや Web フォントなどの静的リソースが必要です。 clientlib は、そのようなリソースを（必要に応じてカテゴリ別に）参照し、提供する AEM のメカニズムです。
+Sites では、JavaScript と CSS、およびクライアントサイドで処理されるアイコンや web フォントなどの静的リソースが必要です。clientlib は、そのようなリソースを（必要に応じてカテゴリ別に）参照し、提供する AEM のメカニズムです。
 
-AEMは、サイトの CSS と JavaScript を 1 つのファイルに 1 つの中央の場所に収集し、1 つのHTML出力に 1 つのリソースのコピーのみが確実に含まれるようにします。 これにより、配信の効率が最大化され、プロキシを介してリポジトリー内でリソースを一元的に管理でき、アクセスの安全性を確保できます。
+AEM は、サイトの CSS と JavaScript を 1 つのファイルにまとめて一元的な場所に配置し、HTML 出力にはリソースのコピーが 1 つだけ含まれるようにします。これにより、配信の効率が最大化され、プロキシを介してリポジトリ内でリソースを一元的に管理し、アクセスの安全性を確保できます。
 
 ## AEM as a Cloud Service 向けフロントエンド開発 {#fed-for-aemaacs}
 
@@ -71,7 +71,7 @@ AEMは、サイトの CSS と JavaScript を 1 つのファイルに 1 つの中
 
 ## クライアントサイドライブラリフォルダーの作成 {#creating-clientlib-folders}
 
-クライアントライブラリは、`/apps` に配置する必要があります。このルールは、コードをコンテンツと設定からより詳細に分離するために必要です。
+クライアントライブラリは、`/apps` に配置する必要があります。このルールは、コードをコンテンツや設定からより適切に分離するために必要です。
 
 `/apps` にあるクライアントライブラリにアクセスできるようにするために、プロキシサーブレットが使用されます。ACL は依然としてクライアントライブラリフォルダーで適用されますが、サーブレットを使用すると、`/etc.clientlibs/` プロパティが `allowProxy` に設定されている場合、`true` を介してコンテンツを読み取ることができます。
 
@@ -135,7 +135,7 @@ This is possible. Still need detail.
 
 ## オーサーのクライアントライブラリ対パブリッシュのクライアントライブラリ {#clientlibs-author-publish}
 
-ほとんどの clientlibs は、AEMパブリッシュインスタンスで必要です。 つまり、clientlibs の大半の目的は、コンテンツのエンドユーザーエクスペリエンスを生み出すことです。パブリッシュインスタンスの clientlibs の場合、[フロントエンドビルドツール](#fed-for-aemaacs)は、[前述のように、クライアントライブラリフォルダーを介して使用およびデプロイできます。](#creating-clientlib-folders)
+ほとんどの clientlibs は、AEM パブリッシュインスタンスで必要です。つまり、clientlibs の大半の目的は、コンテンツのエンドユーザーエクスペリエンスを生み出すことです。パブリッシュインスタンスの clientlibs の場合、[フロントエンドビルドツール](#fed-for-aemaacs)は、[前述のように、クライアントライブラリフォルダーを介して使用およびデプロイできます。](#creating-clientlib-folders)
 
 ただし、オーサリングエクスペリエンスのカスタマイズにクライアントライブラリが必要な場合があります。例えば、ダイアログのカスタマイズには、AEM オーサリングインスタンスに小さな CSS または JS のデプロイが必要になる場合があります。
 
@@ -170,11 +170,11 @@ AEM には、クライアントライブラリフォルダーをデバッグお�
 
 ## その他のクライアントライブラリフォルダー機能 {#additional-features}
 
-AEM のクライアントライブラリフォルダーでは、他にも多数の機能がサポートされています。ただし、AEM as a Cloud Service ではこれらは必須ではないので、使用しないでください。完全性を考慮して、以下に示します。
+AEM のクライアントライブラリフォルダーでは、他にも多数の機能がサポートされています。ただし、AEM as a Cloud Service ではこれらは必須ではないので、使用しないでください。完全を期すために、以下に示します。
 
 >[!WARNING]
 >
->クライアントライブラリフォルダーのこれらの追加機能は、AEM as a Cloud Service では必要ないので、使用しないでください。完全性を考慮して、以下に示します。
+>クライアントライブラリフォルダーのこれらの追加機能は、AEM as a Cloud Service では必要ないので、使用しないでください。完全を期すために、以下に示します。
 
 ### Adobe Granite HTML Library Manager {#html-library-manager}
 
@@ -184,12 +184,12 @@ AEM のクライアントライブラリフォルダーでは、他にも多数�
 
 フォルダーのプロパティには、依存関係や埋め込みの制御が許可されているものもありますが、通常は不要になっており、使用はお勧めしません。
 
-* `dependencies`：これは、このライブラリカテゴリが依存する他のクライアントライブラリフォルダーのリストです。例えば、次の 2 つが `cq:ClientLibraryFolder` ノード `F` および `G`( ファイルが `F` には別のファイルが必要です `G` 正しく機能するには、少なくとも 1 つの `categories` / `G` 次の中に含まれる必要があります `dependencies` / `F`.
-* `embed`：他のライブラリからコードを埋め込むために使用します。If ノード `F` ノードを埋め込む `G` および `H`結果のHTMLは、ノードからのコンテンツの連結です。 `G` および `H`.
+* `dependencies`：これは、このライブラリカテゴリが依存する他のクライアントライブラリフォルダーのリストです。例えば、`F` と `G` の 2 つの `cq:ClientLibraryFolder` ノードを指定し、`F` のファイルが正しく機能するために、別の `G` にあるファイルが必要な場合、`G` のうち 1 つ以上の `categories` は、`F` の `dependencies` に含まれている必要があります。
+* `embed`：他のライブラリからコードを埋め込むために使用します。ノード `F` がノード `G` と `H` を埋め込むと、結果として得られる HTML は、ノード `G` と `H` からのコンテンツの合成になります。
 
 ### 依存関係へのリンク {#linking-to-dependencies}
 
-クライアントライブラリフォルダーのコードが他のライブラリを参照する場合、他のライブラリを依存関係として識別します。The `ui:includeClientLib` クライアントライブラリフォルダーを参照するタグによって、HTMLコードに生成されたライブラリファイルへのリンクと依存関係が含まれます。
+クライアントライブラリフォルダーのコードが他のライブラリを参照する場合、他のライブラリを依存関係として識別します。クライアントライブラリフォルダーを参照する `ui:includeClientLib` タグにより、生成されたライブラリファイルと依存関係へのリンクが HTML コードに組み込まれます。
 
 依存関係は別の `cq:ClientLibraryFolder` でなければなりません。依存関係を識別するには、次の属性を持つプロパティを `cq:ClientLibraryFolder` ノードに追加します。
 
@@ -270,27 +270,27 @@ body {
 
 1. Web ブラウザーのアドレスボックスで、HTML の URL に次のテキストを付加します。
    * `?debugClientLibs=true`
-1. ページが読み込まれたら、ページのソースを表示します。
-1. リンク要素の href として指定されているリンクをクリックして、ファイルを開き、ソースコードを表示します。
+1. ページが読み込まれたら、ページソースを表示します。
+1. リンク要素の href として指定されているリンクをクリックしてファイルを開き、ソースコードを表示します。
 
 ### プリプロセッサーの使用 {#using-preprocessors}
 
 AEM では、プラグ可能なプリプロセッサーを使用でき、AEM のデフォルトプリプロセッサーとして、CSS および JavaScript 用の [YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) と YUI が定された JavaScript 用の [Google Closure Compiler（GCC）](https://developers.google.com/closure/compiler/)をサポートします。
 
-プラグ可能なプリプロセッサーを使用すると、次のような柔軟な使用が可能になります。
+プラガブルプリプロセッサーは、次のように柔軟に使用できます。
 
-* スクリプトソースを処理できる ScriptProcessor の定義
-* プロセッサはオプションを使用して設定可能
-* プロセッサーは縮小に使用できますが、縮小されていない場合にも使用できます
-* clientlib は、使用するプロセッサーを定義できます
+* スクリプトソースを処理できる ScriptProcessors を定義する
+* プロセッサーはオプションを使用して設定できる
+* プロセッサーは縮小用に使用できるが、縮小以外の場合にも使用できる
+* clientlib はどのプロセッサーを使用するかを定義できる
 
 >[!NOTE]
 >
->デフォルトでは、AEMは YUI Compressor を使用します。 詳しくは、 [YUI Compressor GitHub ドキュメント](https://github.com/yui/yuicompressor/issues) 」を参照してください。 特定の clientlibs 用の GCC コンプレッサーに切り替えると、YUI を使用しているときに発生していたいくつかの問題が解決することがあります。
+>デフォルトでは、AEM は YUI Compressor を使用します。既知の問題のリストについては、[YUI Compressor GitHub ドキュメント](https://github.com/yui/yuicompressor/issues)を参照してください。特定の clientlibs 用の GCC コンプレッサーに切り替えると、YUI を使用しているときに発生していたいくつかの問題が解決することがあります。
 
 >[!CAUTION]
 >
->縮小されたライブラリをクライアントライブラリに配置しないでください。 代わりに生のライブラリを提供し、縮小が必要な場合は、プリプロセッサーのオプションを使用します。
+>縮小化したライブラリをクライアントライブラリに配置しないでください。代わりに、生のライブラリを提供し、縮小が必要な場合は、プリプロセッサーのオプションを使用します。
 
 #### 使用方法 {#usage}
 
@@ -339,11 +339,11 @@ languageOut (defaults to "ECMASCRIPT5")
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
-GCC オプションの詳細については、 [GCC ドキュメント](https://developers.google.com/closure/compiler/docs/compilation_levels).
+GCC オプションについて詳しくは、[GCC ドキュメント](https://developers.google.com/closure/compiler/docs/compilation_levels)を参照してください。
 
-#### システムの既定のミニファイヤを設定 {#set-system-default-minifier}
+#### システムのデフォルト縮小ツールの設定 {#set-system-default-minifier}
 
-YUI はAEMのデフォルトの縮小機能として設定されています。 これを GCC に変更するには、次の手順に従います。
+YUI は、AEM のデフォルト縮小ツールとして設定されています。これを GCC に変更するには、次の手順に従います。
 
 1. Apache Felix Config Manager（`http://<host>:<portY/system/console/configMgr`）に移動します。
 1. **Adobe Granite HTML ライブラリマネージャー**&#x200B;を検索して編集します。

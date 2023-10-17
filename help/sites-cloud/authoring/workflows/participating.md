@@ -5,7 +5,7 @@ exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1536'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 91%
 
 作業項目（**コンテンツを承認**&#x200B;など）が割り当てられると、様々なアラートや通知が表示されます。
 
-* お使いの [通知](/help/sites-cloud/authoring/getting-started/inbox.md) インジケータ（ツールバー）の値は次のように増分されます。
+* [通知](/help/sites-cloud/authoring/getting-started/inbox.md)インジケーター（ツールバー）が増分されます。
 
   ![通知ツールバー](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* 通知に項目がリスト表示されます [インボックス](/help/sites-cloud/authoring/getting-started/inbox.md):
+* 通知[インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)に項目がリストされます。
 
   ![インボックス内の通知](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
@@ -37,7 +37,7 @@ ht-degree: 91%
    * 完了、委任、詳細表示など、ワークフローの現在のステップで現在のユーザーが使用できる何らかのアクション。
    * ページに関与するワークフローの数。以下の操作を実行できます。
       * 左／右の矢印を使用して、様々なワークフローのステータス情報を参照します。
-      * 実際の数をクリックまたはタップして、該当するすべてのワークフローのドロップダウンリストを開き、ステータスバーに表示するワークフローを選択します。
+      * 実際の数字をクリックまたはタップして、該当するすべてのワークフローのドロップダウンリストを開き、ステータスバーに表示するワークフローを選択します。
 
   ![複数のワークフローを含むページ](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
@@ -46,19 +46,19 @@ ht-degree: 91%
   >ステータスバーは、例えば `workflow-users` グループのメンバーなど、ワークフロー特権のあるユーザーだけに表示されます。
   >
   >
-  >現在のユーザーがワークフローの現在のステップに直接関与している場合、アクションが表示されます。
+  >現在のユーザーがワークフローの現在の手順に直接関与している場合、アクションが表示されます。
 
-* 条件 **タイムライン** がリソースに対して開いている場合は、ワークフローの手順が表示されます。 アラートバナーをクリックまたはタップすると、使用可能なアクションも表示されます。
+* リソースの&#x200B;**タイムライン**&#x200B;が開いている場合、ワークフローステップが表示されます。アラートバナーをクリックまたはタップすると、使用可能なアクションも表示されます。
 
   ![タイムライン内のワークフロー](/help/sites-cloud/authoring/assets/workflows-timeline.png)
 
 ### 参加者ステップの完了 {#completing-a-participant-step}
 
-項目を完了して、ワークフローを次のステップに進めることができます。
+項目を完了して、ワークフローを次の手順に進めることができます。
 
 このアクションでは、以下を指定できます。
 
-* **次のステップ**：次に取るべきステップ。表示されるリストから選択できます。
+* **次の手順**：次に取るべき手順。表示されるリストから選択できます。
 * **コメント**：必要に応じて
 
 次のいずれかで参加者ステップを完了できます。
@@ -66,25 +66,25 @@ ht-degree: 91%
 * [インボックス](#completing-a-participant-step-inbox)
 * [ページエディター](#completing-a-participant-step-page-editor)
 * [タイムライン](#completing-a-participant-step-timeline)
-* [ワークフロー項目を開いて詳細を表示する](#opening-a-workflow-item-to-view-details-and-take-actions)とき
+* [ワークフロー項目を開いて詳細を表示する](#opening-a-workflow-item-to-view-details-and-take-actions).とき
 
 #### 参加者ステップの完了 - インボックス {#completing-a-participant-step-inbox}
 
 作業項目を完了するには、次の手順を実行します。
 
-1. **[AEM インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)**&#x200B;を開きます。
+1. **[AEM インボックスx](/help/sites-cloud/authoring/getting-started/inbox.md)**&#x200B;を開きます。
 1. アクションを実行するワークフロー項目を選択します（サムネールをタップまたはクリック）。
 1. ツールバーの「**完了**」を選択します。
-1. 「**作業項目を完了**」ダイアログボックスが開きます。を選択します。 **次のステップ** ドロップダウンセレクターから、 **コメント** （必要に応じて）
-1. 「**OK**」を使用してステップを完了します（または「**キャンセル**」を使用してアクションを中止します）。
+1. 「**作業項目を完了**」ダイアログボックスが開きます。ドロップダウンセレクターで「**次の手順**」を選択し、必要に応じて&#x200B;**コメント**&#x200B;を追加します。
+1. 「**OK**」を使用して手順を完了します（または「**キャンセル**」を使用してアクションを中止します）。
 
 #### 参加者ステップの完了 - ページエディター {#completing-a-participant-step-page-editor}
 
 作業項目を完了するには、次の手順を実行します。
 
-1. [編集するページ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)を開きます。
+1. [編集するページ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).を開きます。
 1. 上部のステータスバーの「**完了**」を選択します。
-1. 「**作業項目を完了**」ダイアログボックスが開きます。を選択します。 **次のステップ** ドロップダウンセレクターから、 **コメント** （必要に応じて）
+1. 「**作業項目を完了**」ダイアログボックスが開きます。ドロップダウンセレクターで「**次の手順**」を選択し、必要に応じて&#x200B;**コメント**&#x200B;を追加します。
 1. 「**OK**」を使用してステップを完了します（または「**キャンセル**」を使用してアクションを中止します）。
 
 #### 参加者ステップの完了 - タイムライン {#completing-a-participant-step-timeline}
@@ -107,7 +107,7 @@ ht-degree: 91%
 
 ### 参加者ステップの委任 {#delegating-a-participant-step}
 
-ステップが割り当てられているが、何らかの理由によってアクションを実行できない場合、そのステップを別のユーザーまたはグループに委任できます。
+手順が割り当てられているが、何らかの理由によってアクションを実行できない場合、その手順を別のユーザーまたはグループに委任できます。
 
 委任できるユーザーは、作業項目の割り当て先によって異なります。
 
@@ -125,7 +125,7 @@ ht-degree: 91%
 * [インボックス](#delegating-a-participant-step-inbox)
 * [ページエディター](#delegating-a-participant-step-page-editor)
 * [タイムライン](#delegating-a-participant-step-timeline)
-* [ワークフロー項目を開いて詳細を表示する](#opening-a-workflow-item-to-view-details-and-take-actions)とき
+* [ワークフロー項目を開いて詳細を表示する](#opening-a-workflow-item-to-view-details-and-take-actions)とき。
 
 #### 参加者ステップの委任 - インボックス {#delegating-a-participant-step-inbox}
 
@@ -134,8 +134,8 @@ ht-degree: 91%
 1. **[AEM インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)**&#x200B;を開きます。
 1. アクションを実行するワークフロー項目を選択します（サムネールをタップまたはクリック）。
 1. ツールバーの「**委任**」を選択します。
-1. ダイアログが開きます。次を指定します。 **ユーザー** ドロップダウンセレクター（グループも可）で、 **コメント** （必要に応じて）
-1. 「**OK**」を使用してステップを完了します（または「**キャンセル**」を使用してアクションを中止します）。
+1. ダイアログが開きます。ドロップダウンセレクターから「**ユーザー**」（グループも可）を指定し、必要に応じて&#x200B;**コメント**&#x200B;を追加します。
+1. 「**OK**」を使用して手順を完了します（または「**キャンセル**」を使用してアクションを中止します）。
 
 #### 参加者ステップの委任 - ページエディター {#delegating-a-participant-step-page-editor}
 
@@ -143,8 +143,8 @@ ht-degree: 91%
 
 1. [編集するページ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)を開きます。
 1. 上部のステータスバーの「**委任**」を選択します。
-1. ダイアログが開きます。次を指定します。 **ユーザー** ドロップダウンセレクター（グループも可）で、 **コメント** （必要に応じて）
-1. 「**OK**」を使用してステップを完了します（または「**キャンセル**」を使用してアクションを中止します）。
+1. ダイアログが開きます。ドロップダウンセレクターから「**ユーザー**」（グループも可）を指定し、必要に応じて&#x200B;**コメント**&#x200B;を追加します。
+1. 「**OK**」を使用して手順を完了します（または「**キャンセル**」を使用してアクションを中止します）。
 
 #### 参加者ステップの委任 - タイムライン {#delegating-a-participant-step-timeline}
 
@@ -163,7 +163,7 @@ ht-degree: 91%
 
 ### 参加者ステップでの前のステップの実行 {#performing-step-back-on-a-participant-step}
 
-あるステップまたは一連のステップを繰り返す必要がある場合は、前のステップに戻すことができます。これにより、ワークフロー内で前に発生した再処理のステップを選択できます。 指定したステップにワークフローが戻り、そこから続行されます。
+ある手順または一連の手順を繰り返す必要がある場合は、前の手順に戻ることができます。これにより、ワークフロー内で前に発生した再処理のステップを選択できます。 指定した手順にワークフローが戻り、そこから続行します。
 
 このアクションでは、以下を指定できます。
 
@@ -175,7 +175,7 @@ ht-degree: 91%
 * [インボックス](#performing-step-back-on-a-participant-step-inbox)
 * [ページエディター](#performing-step-back-on-a-participant-step-page-editor)
 * [タイムライン](#performing-step-back-on-a-participant-step-timeline)
-* [ワークフロー項目を開いて詳細を表示する](#opening-a-workflow-item-to-view-details-and-take-actions)とき
+* [ワークフロー項目を開いて詳細を表示する](#opening-a-workflow-item-to-view-details-and-take-actions)とき。
 
 #### 参加者ステップでの前のステップの実行 - インボックス {#performing-step-back-on-a-participant-step-inbox}
 

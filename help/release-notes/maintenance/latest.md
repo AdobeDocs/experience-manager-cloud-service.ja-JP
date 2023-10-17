@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: e771913562b3770e5a504432d40c770804aadc4b
 workflow-type: tm+mt
 source-wordcount: '435'
-ht-degree: 30%
+ht-degree: 35%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 30%
 
 2023 年 10 月 10 日に公開されたメンテナンスリリース13804の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース 13665 からのアップデートです。
 
-2023.10.0機能のアクティベーションでは、このメンテナンスリリースの機能が完全に提供されます。 詳しくは、 [Experience Managerリリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja) を参照してください。
+2023.10.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja)を参照してください。
 
 ### 機能強化 {#enhancements-13804}
 

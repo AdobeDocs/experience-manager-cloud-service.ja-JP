@@ -5,7 +5,7 @@ exl-id: ac02ca41-eb35-4f24-bf17-d00ce318423d
 source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
 source-wordcount: '290'
-ht-degree: 57%
+ht-degree: 93%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 57%
 * `under /apps`（任意のカスタムコンテンツパッケージを使用）
 * `/oak:index` パスの直下
 
-次の場合 [Oak インデックスの確認](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) を使用していた場合は、定義がAEM as a Cloud Serviceでサポートされていないことを確認します。 そのため、まず Oak インデックス定義に変換し、次に、次のガイドラインに従って、AEMas a Cloud Serviceと互換性のある Custom Oak Index Definitions に移行する必要があります。
+[Oak インデックスを確認](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html)を使用した場合、AEM as a Cloud Service では定義を確認がサポートされません。そのため、まず Oak インデックス定義に変換し、次のガイドラインに従って、AEM as a Cloud Service と互換性のあるカスタム Oak インデックス定義に移行する必要があります。
 
 * ignore プロパティが `true` に設定されている場合は、Ensure 定義を無視するかスキップします。
 * `jcr:primaryType` を `oak:QueryIndexDefinition` に更新します。
@@ -34,10 +34,10 @@ ht-degree: 57%
 
 ## インデックスコンバーターの使用 {#using-index-converter}
 
-* Adobe I/O別 CLI : `aio-cli-plugin-aem-cloud-service-migration` (Adobe I/OCLI 用のAEMas a Cloud Serviceコードリファクタリングプラグイン )。
+* Adobe I/O CLI を経由：`aio-cli-plugin-aem-cloud-service-migration`（AEM as a Cloud Service の Adobe I/O CLI 用コードリファクタリングプラグイン）を介してインデックスコンバーターを使用することをお勧めします。
 
-  詳しくは、 **[Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** プラグインをインストールして使用する方法を説明します。
+  プラグインをインストールして使用する方法について詳しくは、**[Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** を参照してください。
 
 * スタンドアロンユーティリティとして：インデックスコンバーターは、スタンドアロンユーティリティとして実行することもできます。
 
-  詳しくは、 **[Git リソース：aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** を参照して、このツールの使用方法を確認してください。
+  このツールの使用方法については、**[Git リソース：aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** を参照してください。

@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: ab0fc832eb66bcf9a0fcd4f08b481845f3664e14
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 29%
+ht-degree: 32%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 29%
 
 >[!NOTE]
 >
->ここから、2021 年や 2022 年など、以前のバージョンのリリースノートに移動できます。
+>ここから、以前のバージョン（例えば、2021年、2022年）のリリースノートに移動できます。
 >
 >[!DNL Experience Manager] as a Cloud Service の今後の機能のアクティベーションについての詳細は、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja)をご覧ください。
 
@@ -38,7 +38,7 @@ ht-degree: 29%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
 
-## エッジ配信サービス {#edge-delivery}
+## Edge 配信サービス {#edge-delivery}
 
 エッジ配信は、コンテンツの影響を最大限に高め、顧客とのインタラクションの時点でのビジネス成果を測定できるようにする、合成可能な一連の新しいサービスです。
 
@@ -46,7 +46,7 @@ ht-degree: 29%
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Assets ビューの新機能 {#assets-view-features}
+### アセットビューの新機能 {#assets-view-features}
 
 **フォルダーへのメタデータフォームの割り当て**
 
@@ -93,7 +93,7 @@ ht-degree: 29%
 
 * **通信 API でのページ数のサポート**：これで、通信 API を使用してドキュメントを取得すると共に、ドキュメント内に含まれるページ数に関する貴重な情報を受け取ることができます。
 
-* **[ルールエディターでのカスタムエラーハンドラーによるエラー処理](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**：外部サービスから返されたエラーに応じてカスタム関数を呼び出し、エンドユーザーに対してカスタマイズされた応答を提供できるようになりました。 例えば、特定のエラーコードに対してバックエンドでカスタムワークフローを呼び出したり、サービスが停止していることを顧客に通知したりできます.
+* **[ルールエディターでのカスタムエラーハンドラーによるエラー処理](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**：外部サービスから返されたエラーに応じてカスタム関数を呼び出し、エンドユーザーに対してカスタマイズされた応答を提供できるようになりました。 例えば、特定のエラーコードに対してバックエンドでカスタムワークフローを呼び出したり、サービスが停止していることを顧客に通知したりできます。
 
 * **[64 ビット版のAEM Forms Designer](/help/forms/installing-configuring-designer.md)**: 64 ビット版のAEM Forms Designer では、パフォーマンス、拡張性、メモリ管理の機能が強化され、フォーム作成エクスペリエンスが強化されます。 64 ビットアーキテクチャを使用すると、より大規模で複雑なプロジェクトに簡単に取り組むことができ、シームレスな設計ワークフローと最適化された効率を確保できます。 フォームデザインの機能を向上させ、この最先端リリースでAEM Forms Designer の将来を受け入れます。
 
@@ -108,9 +108,9 @@ ht-degree: 29%
    * 高品質のマルチチャネルフォームを好みのプログラミング言語で作成
    * デスクトップおよびモバイルアプリ、web サイト、チャットアプリケーションにフォームをネイティブに統合
    * フォームアプリケーションで独自の UI コンポーネントを再利用
-   * Adobe Experience Manager Formsの力を使う
+   * Adobe Experience Manager Forms の機能を活用
 
-  電子メールを `aem-forms-headless@adobe.com` アーリーアダプタープログラムに参加するための公式電子メール ID から
+  ご自身の公式メール ID から `aem-forms-headless@adobe.com` にメールを送信して、早期導入者プログラムにご参加ください。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 

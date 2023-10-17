@@ -6,7 +6,7 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1337'
-ht-degree: 75%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ Cloud Manager の CI／CD パイプラインと、CI／CD パイプラインを�
 
 ## はじめに {#introduction}
 
-Cloud Manager の CI／CD パイプラインは、ソースリポジトリーからコードを作成して環境にデプロイするためのメカニズムです。パイプラインは、ソースコードリポジトリからのプル要求（コード変更）や、リリースケイデンスに合わせた定期的なスケジュールで、イベントによってトリガーできます。
+Cloud Manager の CI／CD パイプラインは、ソースリポジトリーからコードを作成して環境にデプロイするためのメカニズムです。パイプラインは、ソースコードリポジトリからのプルリクエスト（つまりコード変更）などのイベントや、リリース頻度に合わせた定期的なスケジュールに基づいてトリガーされます。
 
 パイプラインを設定するには、以下を行う必要があります。
 
@@ -44,7 +44,7 @@ Cloud Manager には、次の 2 種類のパイプラインが用意されてい
 
 >[!TIP]
 >
->詳しくは、 [実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) を参照してください。
+>詳しくは、[実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)を参照してください。
 
 ## 実稼動以外のパイプライン {#non-prod-pipeline}
 
@@ -52,7 +52,7 @@ Cloud Manager には、次の 2 種類のパイプラインが用意されてい
 
 >[!TIP]
 >
->詳しくは、 [実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) を参照してください。
+>詳しくは、[実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)を参照してください。
 
 ## コードのソース {#code-sources}
 
@@ -85,22 +85,22 @@ Cloud Manager で使用できるすべてのパイプラインとその用途を
 
 フルスタックパイプラインでは、バックエンドコード、フロントエンドコードおよび web 階層設定を、すべて同時に AEM ランタイムにデプロイします。
 
-* バックエンドコード — Java コード、OSGi 設定、repoinit、可変コンテンツなどの不変コンテンツ
+* バックエンドコード - Java コード、OSGi 設定、repoinit などの不変コンテンツと可変コンテンツ
 * フロントエンドコード - JavaScript、CSS、フォントなどのアプリケーション UI リソース
 * Web 階層設定 - HTTPD／Dispatcher 設定
 
 フルスタックパイプラインとは、すべてのことを一度に行う「スーパー」パイプラインのことですが、その一方で、フロントエンドパイプラインと web 階層設定パイプラインをそれぞれ使用して、フロントエンドコードまたは Dispatcher 設定に限定してデプロイすることもできます。
 
-フルスタックパイプラインパッケージフロントエンドコード (JavaScript/CSS) を [AEMクライアントライブラリ](/help/implementing/developing/introduction/clientlibs.md).
+フルスタックパイプラインでは、フロントエンドコード（JavaScript／CSS）を [AEM クライアントライブラリ](/help/implementing/developing/introduction/clientlibs.md)としてパッケージ化します。
 
 フルスタックパイプラインは、[web 階層設定パイプライン](#web-tier-config-pipelines)が設定されていない場合、web 階層設定をデプロイする場合があります。
 
 次の制限が適用されます。
 
-* ユーザーは、 **デプロイメントマネージャー** パイプラインを設定または実行するためのロール。
+* パイプラインを設定または実行するには、ユーザーが&#x200B;**デプロイメントマネージャー**&#x200B;の役割でログインしている必要があります。
 * フルスタックパイプラインは、常に 1 つの環境に 1 つしか存在できません。
 
-また、 [web 層設定パイプライン。](#web-tier-config-pipelines)
+さらに、[web 階層設定パイプライン](#web-tier-config-pipelines)の導入を選択した場合は、フルスタックパイプラインがどのように動作するかを認識しておいてください。
 
 * 環境のフルスタックパイプラインは、対応する web 階層設定パイプラインが存在する場合、Dispatcher 設定を無視します。
 * 環境に対応する web 階層設定パイプラインが存在しない場合、ユーザーは、Dispatcher 設定を含めるまたは無視するようにフルスタックパイプラインを設定できます。
@@ -115,7 +115,7 @@ Cloud Manager で使用できるすべてのパイプラインとその用途を
 
 >[!IMPORTANT]
 >
->AEM版である必要があります `2021.10.5933.20211012T154732Z ` またはAEM Sitesがフロントエンドパイプラインの使用を有効にしている場合は、以降で使用できます。
+>フロントエンドパイプラインを使用するには、AEM Sites が有効になっている AEM バージョン `2021.10.5933.20211012T154732Z ` 以降を使用している必要があります。
 
 >[!NOTE]
 >
@@ -127,7 +127,7 @@ Cloud Manager で使用できるすべてのパイプラインとその用途を
 
 ### フロントエンドパイプラインを設定する前に {#before-start}
 
-フロントエンドパイプラインを設定する前に、 [AEMクイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md) を参照してください。 このジャーニーはフロントエンド開発の効率化に役立つほか、AEM のバックエンドに関する知識がなくても、このジャーニーを参考にサイトをすばやくカスタマイズできます。
+フロントエンドパイプラインを設定する前に、[AEM クイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md)を参照して、使いやすい AEM クイックサイト作成ツールの包括的ガイドを確認してください。このジャーニーはフロントエンド開発の効率化に役立つほか、AEM のバックエンドに関する知識がなくても、このジャーニーを参考にサイトをすばやくカスタマイズできます。
 
 ### フロントエンドパイプラインの設定 {#configure-front-end}
 
@@ -140,7 +140,7 @@ Cloud Manager で使用できるすべてのパイプラインとその用途を
 
 フロントエンドパイプラインを使用すると、フロントエンド開発者の作業の独立性が高まるほか、開発プロセスを速めることができます。
 
-詳しくは、 [フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) このプロセスの仕組みと、このプロセスを最大限に活用するために考慮すべきいくつかの検討事項について説明します。
+このプロセスの仕組みや、このプロセスの可能性を最大限に引き出すために知っておきたいいくつかの考慮事項については、[フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)を参照してください。
 
 ### フルスタックパイプラインの設定 {#configure-full-stack}
 
@@ -160,24 +160,24 @@ Web 階層設定パイプラインを使用すると、HTTPD／Dispatcher 設定
 
 次の制限が適用されます。
 
-* AEM版である必要があります `2021.12.6151.20211217T120950Z` Web 層設定パイプラインを使用する場合と、それ以降の場合があります。
-* 次の条件を満たす必要があります。 [dispatcher ツールの柔軟なモードのオプトイン](/help/implementing/dispatcher/disp-overview.md#validation-debug) web 層設定パイプラインを使用する場合。
-* ユーザーは、 **デプロイメントマネージャー** パイプラインを設定または実行するためのロール。
+* Web 階層設定パイプラインを使用するには、AEM バージョン `2021.12.6151.20211217T120950Z` 以降を使用している必要があります。
+* Web 階層設定パイプラインを使用するには、[Dispatcher ツールのフレキシブルモードをオプトインする](/help/implementing/dispatcher/disp-overview.md#validation-debug)必要があります。
+* パイプラインを設定または実行するには、ユーザーが&#x200B;**デプロイメントマネージャー**&#x200B;の役割でログインしている必要があります。
 * Web 階層設定パイプラインは、常に 1 つの環境に 1 つしか存在できません。
 * 対応するフルスタックパイプラインが実行中の場合、ユーザーは Web 層設定パイプラインを設定できません。
-* Web 層構造は、ドキュメントで定義されている柔軟モード構造に従う必要があります [クラウド内の Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug).
+* Web 階層構造は、[クラウド内の Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) のドキュメントで定義されているフレキシブルモード構造に準拠している必要があります。
 
-さらに、 [フルスタックパイプライン](#full-stack-pipeline) は、Web 層パイプラインを導入する際に動作します。
+さらに、web 階層設定パイプラインを導入した場合に[フルスタックパイプライン](#full-stack-pipeline)がどのように動作するかを認識しておいてください。
 
 * Web 階層設定パイプラインが環境に設定されていない場合、ユーザーは、対応するフルスタックパイプラインを設定する際に、実行時およびデプロイメント時に Dispatcher 設定を含めるか無視するかを選択することができます。
 * Web 階層設定パイプラインが環境に既に設定されている場合、それに対応するフルスタックパイプライン（存在する場合）では、実行時およびデプロイメント時に Dispatcher 設定が無視されます。
-* Web 層設定パイプラインを削除すると、対応するフルスタックパイプラインがリセットされ、実行中に Dispatcher 設定がデプロイされます。
+* Web 階層設定パイプラインが削除されたら、それに対応するフルスタックパイプラインは、実行時に Dispatcher 設定をデプロイするようにリセットされます。
 
 Web 階層設定パイプラインは、コード品質タイプでもデプロイメントタイプでもかまいません。
 
 ### Web 階層設定パイプラインの設定 {#configure-web-tier-config-pipelines}
 
-Web 層設定パイプラインの設定方法については、次のドキュメントを参照してください。
+Web 階層設定パイプラインの設定方法については、次のドキュメントを参照してください。
 
 * [実稼動パイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [実稼動以外のパイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)

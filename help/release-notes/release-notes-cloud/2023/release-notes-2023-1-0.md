@@ -5,7 +5,7 @@ exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '976'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 97%
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-* 管理者はアセットレポートで Experience Manager Assetsas a Cloud Service デプロイメントから[アセットダウンロードレポートを生成](/help/assets/asset-reports.md)できるようになりました。このデータにより、管理者はさらに、主要な成功指標から洞察を得て、企業やお客様での Assets の採用状況を測定できます。
+* 管理者はアセットレポートで Experience Manager Assetsas a Cloud Service デプロイメントから[アセットダウンロードレポートを生成](/help/assets/asset-reports.md)できるようになりました。このデータにより、企業や顧客でのアセットの採用状況を測定するために、管理者は主要な成功指標からさらにインサイトを得ることができます。
 
   ![他の形式向けの PDF レンディション](/help/release-notes/assets/choose_report.png)
 

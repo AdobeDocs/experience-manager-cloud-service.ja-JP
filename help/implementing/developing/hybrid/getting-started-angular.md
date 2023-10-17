@@ -5,15 +5,15 @@ exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '990'
-ht-degree: 82%
+ht-degree: 97%
 
 ---
 
 # Angular を使用した AEM での SPA の概要 {#getting-started-with-spas-in-aem-using-angular}
 
-単一ページアプリケーション（SPA）により、Web サイトのユーザーに魅力的なエクスペリエンスを提供することができます。開発者はSPAフレームワークを使用してサイトを構築できるようにしたいと考え、作成者はSPAフレームワークを使用して構築されたサイトのコンテンツをAEM内でシームレスに編集したいと考えています。
+単一ページアプリケーション（SPA）により、Web サイトのユーザーに魅力的なエクスペリエンスを提供することができます。開発者は SPA フレームワークを使用してサイトを構築することを望み、作成者は SPA フレームワークを使用して構築されたサイトのコンテンツを AEM 内でシームレスに編集することを望みます。
 
-SPAオーサリング機能は、AEM内でSPAをサポートするための包括的なソリューションを提供します。 この記事では、Angular フレームワーク上のシンプルな SPA アプリケーションを紹介し、その組み合わせ方法を説明します。これにより、独自の SPA をすぐに使い始めることができます。
+SPA オーサリング機能には、AEM 内で SPA をサポートするための包括的なソリューションが用意されています。この記事では、Angular フレームワーク上のシンプルな SPA アプリケーションを紹介し、その組み合わせ方法を説明します。これにより、独自の SPA をすぐに使い始めることができます。
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ AEM での SPA の動作について詳しくは、次のドキュメントを�
 
 >[!NOTE]
 >
->SPA内でコンテンツを作成するには、コンテンツをAEMに格納し、コンテンツモデルによって公開する必要があります。
+>SPA 内のコンテンツを作成するには、コンテンツを AEM に格納し、コンテンツモデルによって公開する必要があります。
 >
 >AEM 外で開発された SPA については、コンテンツモデルの契約に準拠していない場合、オーサリングを行うことはできません。
 
@@ -39,7 +39,7 @@ AEM での SPA の動作について詳しくは、次のドキュメントを�
 
 ## 依存関係、設定、ビルド {#dependencies-configuration-and-building}
 
-サンプルのSPAでは、必要なAngularの依存関係に加えて、追加のライブラリを使用してSPAの作成をより効率的におこなうことができます。
+サンプルの SPA では、必要な Angular の依存関係以外に、追加のライブラリも使用して SPA の作成を効率化できます。
 
 ### 依存関係 {#dependencies}
 
@@ -53,7 +53,7 @@ AEM での SPA の動作について詳しくは、次のドキュメントを�
 }
 ```
 
-The `aem-clientlib-generator` は、クライアントライブラリの作成をビルドプロセスの一部として自動化するために使用されます。
+`aem-clientlib-generator` は、クライアントライブラリの作成をビルドプロセスの一部として自動化しています。
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -90,7 +90,7 @@ module.exports = {
 
 ### ビルド {#building}
 
-アプリで実際にを使用してビルドする [Webpack](https://webpack.js.org/) aem-clientlib-generator に加え、クライアントライブラリの自動作成に使用するトランスパイルのため。 したがって、build コマンドは次のようになります。
+アプリの実際のビルドでは、クライアントライブラリの自動作成用の aem-clientlib-generator 以外に、トランスパイル用に [Webpack](https://webpack.js.org/) も使用します。したがって、build コマンドは次のようになります。
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
@@ -98,7 +98,7 @@ module.exports = {
 
 ### AEM プロジェクトアーキタイプ {#aem-project-archetype}
 
-任意のAEMプロジェクトでは、 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja):React またはAngularを使用したSPAプロジェクトをサポートし、SPA SDK を使用します。
+AEM プロジェクトでは、 [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)を使用します。このアーキタイプは、React または Angular を使用する SPA プロジェクトをサポートし、SPA SDK を使用します。
 
 ## アプリケーション構造 {#application-structure}
 

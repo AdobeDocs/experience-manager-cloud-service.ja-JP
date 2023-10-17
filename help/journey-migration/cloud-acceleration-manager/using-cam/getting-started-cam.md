@@ -5,7 +5,7 @@ exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '535'
-ht-degree: 51%
+ht-degree: 97%
 
 ---
 
@@ -15,24 +15,24 @@ Cloud Acceleration Manager は、Cloud Service の計画から運用開始まで
 
 ## 目的 {#objective}
 
-このドキュメントでは、Cloud Acceleration Manager（CAM）の基本事項を説明します。読み終えた後、次の操作が可能になります。
+このドキュメントでは、Cloud Acceleration Manager（CAM）の基本事項を説明します。読み終えた後は、次のことができるようになります。
 
 * CAM へのログイン方法を理解できる
 * CAM の UI からプロジェクトを作成できる
 
 ## Cloud Acceleration Manager の使用 {#using-cam}
 
-Cloud Acceleration Manager(CAM) は、移行に 1 回限りの操作を提供します。 ガイド付きのジャーニーの形式で提供されます。最初の評価を行い、適切なツール、ドキュメント、ベストプラクティスを示し、AEMas a Cloud Service上の運用開始を成功に導きます。
+Cloud Acceleration Manager（CAM）には、移行に必要なすべての機能がそろっています。また、それらの機能はガイド付きジャーニーの形で提供されます。AEM as a Cloud Service での運用開始を確実に成功させるために、初期評価を行い、適切なツール、ドキュメント、ベストプラクティスを案内します。
 
 ### Cloud Acceleration Manager への移動 {#navigating}
 
 Cloud Acceleration Manager（CAM）に移動するには、次の手順に従います。
 
-1. にログオンします。 [Adobe Experience Cloud](https://experience.adobe.com).
+1. [Adobe Experience Cloud](https://experience.adobe.com) にログオンします。
 
-1. クリック **Experience Manager** カード。
+1. **Experience Manager** カードをクリックします。
 
-1. クリック **Launch** から **Cloud Acceleration Manager** カードを使用して、ランディングページを開くことができます。
+1. **Cloud Acceleration Manager** カードで「**開く**」をクリックして、ランディングページを開きます。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/cam-1.png)
 
@@ -46,16 +46,16 @@ Cloud Acceleration Manager（CAM）に移動するには、次の手順に従い
 
 Cloud Acceleration Manager(CAM) のランディングページを使用すると、複数のプロジェクトを作成および編集できます。
 
-以下の手順に従って、プロジェクトを作成します。
+プロジェクトを作成するには、次の手順に従います。
 
-1. クリック **プロジェクトを作成** を選択します。
+1. ランディングページで「**プロジェクトを作成**」をクリックします。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/cam-2.png)
 
    >[!NOTE]
-   >CAM を初めて使用するユーザーは、プロジェクトを作成するためのダイアログボックスを表示します。 過去に CAM を使用したユーザーには、デフォルトのプロジェクトまたは以前に作成したプロジェクトが表示されます。
+   >CAM を初めて使用する場合は、プロジェクトを作成するためのダイアログボックスが表示されます。CAM を使用したことがある場合は、デフォルトのプロジェクトまたは以前に作成したプロジェクトが表示されます。
 
-1. 次を入力します。 **名前** および **説明** をクリックします。 **作成**.
+1. プロジェクトの「**名前**」と「**説明**」を入力し、「**作成**」をクリックします。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/cam-3.png)
 
@@ -63,7 +63,7 @@ Cloud Acceleration Manager(CAM) のランディングページを使用すると
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing.png)
 
-1. プロジェクトカードをクリックして、プロジェクトに入ることができます。 プロジェクトのランディングページに移動します。
+1. プロジェクトカードをクリックすると、プロジェクトに入ることができます。プロジェクトのランディングページに移動します。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/cam-5.png)
 
@@ -75,7 +75,7 @@ Cloud Acceleration Manager(CAM) のランディングページを使用すると
 
 プロジェクトを編集するには、次の手順に従います。
 
-1. プロジェクトを選択し、プロジェクトの上にマウスポインターを置いて、鉛筆アイコンをクリックし、次の図に示すように、プロジェクトを編集できます。
+1. プロジェクトを選択してプロジェクトの上にポインタを合わせ、鉛筆アイコンをクリックして、プロジェクトを開いて編集します（下図を参照）。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
@@ -83,18 +83,18 @@ Cloud Acceleration Manager(CAM) のランディングページを使用すると
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/cam-edit.png)
 
-1. クリック **更新** 変更をコミットするには、次の手順に従います。
+1. 「**更新**」をクリックして、変更内容をコミットします。
 
 ### プロジェクトの削除 {#delete-project}
 
 プロジェクトを削除するには、次の手順に従います。
 
-1. プロジェクトを選択し、プロジェクトの上にマウスポインターを置いて、バケットアイコンをクリックすると、次の図に示すように、プロジェクトを削除できます。
+1. プロジェクトを選択してプロジェクトの上にポインタを合わせ、バケツアイコンをクリックしてプロジェクトを削除します（下図を参照）。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
-1. クリック **削除** をクリックして手順を確定します。
+1. 「**削除**」をクリックして、手順を確定します。
 
 ## 次の手順 {#whats-next}
 
-Cloud Acceleration Manager へのログイン方法とプロジェクトの作成方法を学習したら、次の手順 ( [準備フェーズ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja).
+Cloud Acceleration Manager へのログイン方法とプロジェクトの作成方法を理解したら、次の手順の[準備フェーズ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja)に進みます。

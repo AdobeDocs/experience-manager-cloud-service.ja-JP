@@ -5,7 +5,7 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 76%
+ht-degree: 93%
 
 ---
 
@@ -17,16 +17,16 @@ ht-degree: 76%
 >abstract="コンテンツ転送ツールは、アドビが開発したツールで、ソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM Cloud Service インスタンスへの既存のコンテンツの移行を開始するために使用できます。プリンシパル（ユーザーやグループ）も自動的に転送されます。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja" text="ガイドラインとベストプラクティス"
 
-コンテンツ転送ツールは、Adobeが開発したツールで、既存のコンテンツをソースAEMインスタンス（オンプレミスまたは AMS）からターゲットAEM Cloud Serviceインスタンスに移行する際に使用できます。
+コンテンツ転送ツールは、アドビが開発したツールで、ソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM Cloud Service インスタンスへの既存のコンテンツの移行を開始するために使用できます。
 
-プリンシパル（ユーザーやグループ）も自動的に転送されます。詳しくは、 [ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) を参照してください。
+プリンシパル（ユーザーやグループ）も自動的に転送されます。詳しくは、[ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)を参照してください。
 
-コンテンツ転送ツールは、コンテンツ転送プロセスを Cloud Acceleration Manager と統合します。 これにより、ユーザーは以下のようなすべての利点を利用できます。
+コンテンツ転送ツールは、コンテンツ転送プロセスを Cloud Acceleration Manager と統合します。これにより、ユーザーは次の利点をすべて活用できます。
 
 * セルフサービス方式で、移行セットを 1 回抽出し、同時に複数の環境に取り込めます。
-* 読み込み状態、ガードレール、エラー処理が改善され、ユーザーエクスペリエンスが向上しました。
+* 読み込み状態、ガードレール、エラー処理の改善により、ユーザーエクスペリエンスが向上しました。
 * 取り込みログは永続化され、常にトラブルシューティングに使用することができます。
-* 検証およびプリンシパル移行レポートを使用して検証できます
+* 検証およびプリンシパル移行レポートを検証に使用することができます。
 
 ## コンテンツ転送ツールの諸段階 {#phases-content-transfer-tool}
 
@@ -34,7 +34,7 @@ ht-degree: 76%
 
 1. **抽出**：抽出とは、ソース AEM インスタンスから、*移行セット*&#x200B;と呼ばれる一時領域にコンテンツを抽出することです。*移行セット*&#x200B;は、アドビが提供するクラウドストレージ領域で、ソース AEM インスタンスと AEM as a Cloud Service インスタンスの間で転送されるコンテンツを一時的に保存するためのものです。
 
-   詳しくは、 [コンテンツ転送の抽出プロセス](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) を参照してください。
+   詳しくは、[コンテンツ転送の抽出プロセス](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)を参照してください。
 
    >[!NOTE]
    >ユーザーマッピングは、オーサー環境の抽出段階の一環として自動的に実行されるようになりました（ただし、オプションとしてオーサー環境で無効にしたり、パブリッシュ環境で有効にしたりできます）。詳しくは、[ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)を参照してください。
@@ -55,9 +55,9 @@ ht-degree: 76%
 >[!NOTE]
 >最初のコンテンツ転送の後は、差分コンテンツ追加を頻繁に行って、Cloud Service での運用を開始する前に行う最後の差分コンテンツ転送に必要なコンテンツ凍結期間を短縮することをお勧めします。
 
-抽出段階で既存の移行セットに&#x200B;***追加***&#x200B;するには、*上書き*&#x200B;オプションを無効にする必要があります。詳しくは、 [追加抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) を参照してください。
+抽出段階で既存の移行セットに&#x200B;***追加***&#x200B;するには、*上書き*&#x200B;オプションを無効にする必要があります。詳しくは、[追加抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)を参照してください。
 
-インジェストフェーズで現在のコンテンツの上に差分コンテンツを適用するには、*ワイプ*&#x200B;オプションを無効にする必要があります。詳しくは、 [追加インジェスト](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) を参照してください。
+インジェストフェーズで現在のコンテンツの上に差分コンテンツを適用するには、*ワイプ*&#x200B;オプションを無効にする必要があります。詳しくは、[追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)を参照してください。
 
 ## 移行セットの有効期限 {#migration-set-expiry}
 

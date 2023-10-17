@@ -6,7 +6,7 @@ exl-id: 534a8084-88f7-410e-b872-719e47e62b10
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -44,11 +44,11 @@ ht-degree: 88%
 * [タスク](/help/assets/my-workspace-assets-view.md)：自分に割り当てられたタスクは、「**マイタスク**」タブで確認できます。一方、自分が作成したタスクは、「**割り当てられたタスク**」タブで表示できます。また、完了したタスクは、「**完了済みタスク**」タブにあります。
 * [アセット](/help/assets/manage-organize-assets-view.md)：アクセス可能なすべてのフォルダーのリストがツリー表示されます。
 * **最近表示された項目**：最近プレビューしたアセットのリスト。[!DNL Assets view] は、プレビューしたアセットのみを表示します。リポジトリーファイルまたはフォルダーを参照する際にスクロールして通過したアセットは表示されません。
-* [コレクション](/help/assets/manage-collections-assets-view.md)：コレクションとは、Adobe Experience Manager Assets ビュー内のアセット、フォルダーまたはその他のコレクションのセットです。 コレクションを使用して、ユーザー間でアセットを共有します。フォルダーとは異なり、1 つのコレクションに異なる複数の場所のアセットを含めることができます。1 人のユーザーと複数のコレクションを共有できます。各コレクションには、アセットへの参照が含まれます。アセットの参照整合性はコレクション間で維持されます。
+* [コレクション](/help/assets/manage-collections-assets-view.md)：コレクションとは、Adobe Experience Manager アセットビュー内のアセット、フォルダーまたはその他のコレクションのセットです。コレクションを使用して、ユーザー間でアセットを共有します。フォルダーとは異なり、1 つのコレクションに異なる複数の場所のアセットを含めることができます。1 人のユーザーと複数のコレクションを共有できます。各コレクションには、アセットへの参照が含まれます。アセットの参照整合性はコレクション間で維持されます。
 
-* [インサイト](/help/assets/manage-reports-assets-view.md#view-live-statistics)：[!DNL Assets view] では、ダッシュボードでリアルタイムのインサイトを表示できます。アセット表示では、Insights ダッシュボードを使用して、Assets 表示環境のリアルタイムデータを表示できます。 過去 30 日間または過去 12 か月間のリアルタイムイベント指標を表示できます。
-* **ごみ箱**：ルートの **[!UICONTROL Assets]** フォルダーから削除されたアセットをリストします。ごみ箱フォルダー内のアセットを選択して、元の場所に復元したり、完全に削除したりできます。また、キーワードを指定したり、標準フィルターやカスタムフィルターを適用してごみ箱フォルダー内の適切なアセットを検索することもできます。標準フィルターとカスタムフィルターの使用について詳しくは、 [Assets ビューでのアセットの検索](/help/assets/search-assets-view.md).
-* **設定**:Assets ビューの様々なオプションを設定するには、 **設定**（メタデータフォーム、レポート、分類管理など）。
+* [インサイト](/help/assets/manage-reports-assets-view.md#view-live-statistics)：[!DNL Assets view] では、ダッシュボードでリアルタイムのインサイトを表示できます。アセットビューを使用すると、アセットビュー環境のリアルタイムデータをインサイトダッシュボードで表示できます。過去 30 日間または過去 12 か月間のリアルタイムイベント指標を表示できます。
+* **ごみ箱**：ルートの **[!UICONTROL Assets]** フォルダーから削除されたアセットをリストします。ごみ箱フォルダー内のアセットを選択して、元の場所に復元したり、完全に削除したりできます。また、キーワードを指定したり、標準フィルターやカスタムフィルターを適用して、ごみ箱フォルダー内の適切なアセットを検索することもできます。標準フィルターとカスタムフィルターの使用について詳しくは、[アセットビューでのアセットの検索](/help/assets/search-assets-view.md)を参照してください。
+* **設定**：メタデータフォーム、レポート、分類管理など、**設定**&#x200B;を使用してアセットビューの様々なオプションを設定できます。
 
 <!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
 * **Libraries**: Access to [!DNL Adobe Creative Cloud Team] (CCT) Libraries view. This view is visible only if the user is entitled to CCT Libraries.
@@ -114,7 +114,7 @@ Other use cases after previewing.
 
 ## 次の手順 {#next-steps}
 
-* 次を使用して製品に関するフィードバックを提供： [!UICONTROL フィードバック] Assets ビューユーザーインターフェイスで使用可能なオプション
+* アセットビューユーザーインターフェイスの「[!UICONTROL フィードバック]」オプションを使用して、製品に関するフィードバックを提供する
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 

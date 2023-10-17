@@ -5,7 +5,7 @@ exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '650'
-ht-degree: 59%
+ht-degree: 64%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 59%
 
 * **Forms 開発者**：Forms 開発者は、カスタムフォームソリューションを開発します。Forms開発者は、通常、カスタムコンポーネントの開発、AEMワークフロー、事前入力サービスなどのバックエンド開発をおこないます。
 
-* **AEM administrator**:AEM管理者は、ユーザーの設定、環境の強化、データソースの設定、E メールの設定、サードパーティのソフトウェアの設定など、全体的な設定に役立ちます。 AEM 管理者は、Adobe Analytics、Adobe Target、Adobe Sign との統合なども支援します。
+* **AEM 管理者**：AEM 管理者は、ユーザーの設定、環境の堅牢化、データソースの設定、メールの設定、サードパーティ製ソフトウェアなど、全体的な設定を支援します。AEM 管理者は、Adobe Analytics、Adobe Target、Adobe Sign との統合なども支援します。
 
 * **エンドユーザー**：エンドユーザーは、公開済みのフォームを操作して送信し、送信済みのフォームに署名し、送信済みのアプリケーションを Web ポータル経由で追跡し、パーソナライズされたコミュニケーションを受け取ります。
 

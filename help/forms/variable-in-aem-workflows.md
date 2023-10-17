@@ -5,7 +5,7 @@ exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '2080'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -45,7 +45,7 @@ ArrayList データタイプを使用して、変数コレクションを作成�
 
 変数を作成するには：
 
-1. AEMインスタンスで、「ツール」に移動します。 ![ハンマーアイコン](assets/hammer-icon.svg) /ワークフロー/モデル
+1. AEM インスタンスで、ツール![ハンマーアイコン](assets/hammer-icon.svg)／ワークフロー／モデルに移動します。
 1. 「**[!UICONTROL 作成]**」をタップし、ワークフローモデルのタイトルとオプション名を指定します。モデルを選択し、「**[!UICONTROL 編集]**」をタップします。
 1. ワークフローモデルのサイドキックにある変数アイコンをタップし、「**[!UICONTROL 追加変数]**」をタップします。
 
@@ -283,4 +283,4 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ## 参照 {#references}
 
-での変数の使用例の詳細 [!DNL AEM Forms] ワークフローの手順については、 [AEMワークフロー内の変数](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=ja).
+[!DNL AEM Forms] ワークフローステップで変数を使用するその他の例については、[AEM ワークフローの変数](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=ja)を参照してください。

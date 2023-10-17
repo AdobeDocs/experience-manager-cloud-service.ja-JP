@@ -5,7 +5,7 @@ exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2107'
-ht-degree: 72%
+ht-degree: 99%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 72%
 
 ## 概要 {#overview}
 
-このチュートリアルは、AEM Screens を初めて使用する開発者を対象としています。このチュートリアルでは、AEM Screensのシーケンスチャネル用に、シンプルな「Hello World」コンポーネントを構築します。 作成者は、表示されるテキストをダイアログで更新できます。
+このチュートリアルは、AEM Screens を初めて使用する開発者を対象としています。このチュートリアルでは、AEM Screens のシーケンスチャネル用に、シンプルな「Hello World」コンポーネントを構築します。作成者は、表示されるテキストをダイアログで更新できます。
 
 
 ## 前提条件 {#prerequisites}
@@ -28,14 +28,14 @@ ht-degree: 72%
 
 1. ローカル開発環境
 
-チュートリアルの手順とスクリーンショットは、 **CRXDE Lite**. IDE を使用してチュートリアルを完了することもできます。AEM での開発に IDE を使用する方法について詳しくは、[こちら](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=ja)を参照してください。
+**CRXDE Lite** を使用して、チュートリアルの手順とスクリーンショットを実行します。IDE を使用してチュートリアルを完了することもできます。AEM での開発に IDE を使用する方法について詳しくは、[こちら](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=ja)を参照してください。
 
 
 ## プロジェクトのセットアップ {#project-setup}
 
-Screens プロジェクトのソースコードは、通常、マルチモジュールの Maven プロジェクトとして管理されます。このチュートリアルを効率よく進めるために、[AEM プロジェクトアーキタイプ 13](https://github.com/adobe/aem-project-archetype) を使用してプロジェクトを事前に生成してあります。Maven AEM プロジェクトアーキタイプを使用したプロジェクトの作成について詳しくは、[こちら](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=ja?lang=ja)を参照してください。
+Screens プロジェクトのソースコードは、通常、マルチモジュールの Maven プロジェクトとして管理されます。このチュートリアルを効率よく進めるために、[AEM プロジェクトアーキタイプ 13](https://github.com/adobe/aem-project-archetype) を使用してプロジェクトを事前に生成してあります。Maven AEM プロジェクトアーキタイプを使用したプロジェクトの作成について詳しくは、[こちら](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=ja)を参照してください。
 
-1. を使用して、次のパッケージをダウンロードしてインストールします。 [CRX パッケージマネージャー](http://localhost:4502/crx/packmgr/index.jsp):
+1. [CRX パッケージマネージャー](http://localhost:4502/crx/packmgr/index.jsp)を使用して、次のパッケージをダウンロードしてインストールします。
 
 [ファイルを入手](/help/screens-cloud/developing/assets/base-screens-weretail-runuiapps-001-snapshot.zip)
 
@@ -48,7 +48,7 @@ Screens プロジェクトのソースコードは、通常、マルチモジュ
 
 [ファイルを入手](/help/screens-cloud/developing/assets/src-screens-weretail-run.zip)
 
-1. In [CRX パッケージマネージャー](http://localhost:4502/crx/packmgr/index.jsp)、次の 2 つのパッケージがインストールされていることを確認します。
+1. [CRX パッケージマネージャー](http://localhost:4502/crx/packmgr/index.jsp)で、次の 2 つのパッケージがインストールされていることを確認します。
 
    1. **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip**
    1. **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip**
@@ -59,17 +59,17 @@ Screens プロジェクトのソースコードは、通常、マルチモジュ
 
 1. **screens-weretail-run.ui.apps** パッケージでは、`/apps/weretail-run` の下にコードがインストールされます。
 
-   このパッケージには、プロジェクトのカスタムコンポーネントをレンダリングするコードが含まれています。このパッケージには、コンポーネントコードのほか、必要な JavaScript または CSS が含まれています。このパッケージは埋め込まれます **screens-weretail-run.core-0.0.1-SNAPSHOT.jar** プロジェクトで必要な Java™コードを含む
+   このパッケージには、プロジェクトのカスタムコンポーネントをレンダリングするコードが含まれています。このパッケージには、コンポーネントコードのほか、必要な JavaScript または CSS が含まれています。このパッケージには、**screens-weretail-run.core-0.0.1-SNAPSHOT.jar** も埋め込まれており、この中に、プロジェクトで必要な Java™ コードが含まれています。
 
    >[!NOTE]
    >
-   >このチュートリアルでは、Java™コードは記述されません。 より複雑なビジネスロジックが必要な場合は、Core Java™バンドルを使用してバックエンド Java™を作成し、デプロイできます。
+   >このチュートリアルでは、Java™ コードは記述されません。より複雑なビジネスロジックが必要な場合は、コア Java バンドルを使用してバックエンド Java™ コードを作成しデプロイできます。
 
    ![CRXDE Lite での ui.apps コードの表現](/help/screens-cloud/developing/assets/uipps-contents.png)
 
    CRXDE Lite での ui.apps コードの表現
 
-   The **`helloworld`** コンポーネントはプレースホルダーに過ぎません。 チュートリアルの過程で、機能が追加され、作成者はコンポーネントに表示されるメッセージを更新できます。
+   **`helloworld`** コンポーネントは、プレースホルダーにすぎません。チュートリアルの過程で機能が追加されて、コンポーネントに表示されるメッセージを作成者が更新できるようになります。
 
 1. **screens-weretail-run.ui.content** パッケージでは、以下のパスにコードがインストールされます。
 
@@ -91,11 +91,11 @@ Hello World コンポーネントは、スクリーンに表示されるメッ�
 
 AEM Screens には、従来の WCM Sites コンポーネントには必ずしも当てはまらない興味深い制約がいくつかあります。
 
-* ほとんどの Screens コンポーネントは、ターゲットのデジタルサイネージデバイス上でフルスクリーンで実行する必要があります
-* スライドショーを生成するには、ほとんどの Screens コンポーネントをシーケンスチャネルに埋め込む必要があります
+* ほとんどの Screens コンポーネントは、ターゲットのデジタルサイネージデバイス上でフルスクリーンで動作する必要があります
+* ほとんどの Screens コンポーネントは、シーケンスチャネルに埋め込んでスライドショーを生成する必要があります。
 * オーサリングでは、シーケンスチャンネル内の個々のコンポーネントを編集できるようにする必要があるため、フルスクリーンでレンダリングすることは問題外です
 
-1. In **CRXDE-Lite** `http://localhost:4502/crx/de/index.jsp` （または任意の IDE）、 `/apps/weretail-run/components/content/helloworld.`
+1. **CRXDE-Lite** `http://localhost:4502/crx/de/index.jsp`（または任意の IDE）で、`/apps/weretail-run/components/content/helloworld.` に移動します
 
    `helloworld` コンポーネントに次のプロパティを追加します。
 
@@ -129,12 +129,12 @@ AEM Screens には、従来の WCM Sites コンポーネントには必ずしも
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
-   Screens コンポーネントでは、使用する[オーサリングモード](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=en#page-modes)に応じて、2 種類のレンダリングが必要になります。
+   Screens コンポーネントでは、使用する[オーサリングモード](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=ja#page-modes)に応じて、2 種類のレンダリングが必要になります。
 
    1. **実稼動**：プレビューまたはパブリッシュモード（wcmmode=disabled）
    1. **編集**：編集、デザイン、基礎、開発者など、他のすべてのオーサリングモードに使用されます。
 
-   `helloworld.html`はスイッチとして機能し、アクティブなオーサリングモードを確認し、別の HTL スクリプトにリダイレクトします。 編集モード用に `edit.html` スクリプトを用意し、実稼動モード用に `production.html` スクリプトを用意するというのが、Screens コンポーネントで一般に使用される規則です。
+   `helloworld.html` はスイッチとして機能し、アクティブなオーサリングモードを確認し、別の HTL スクリプトにリダイレクトします。編集モード用に `edit.html` スクリプトを用意し、実稼動モード用に `production.html` スクリプトを用意するというのが、Screens コンポーネントで一般に使用される規則です。
 
 1. `/apps/weretail-run/components/content/helloworld` の下に `production.html.` という名前のファイルを作成します。
 
@@ -151,9 +151,9 @@ AEM Screens には、従来の WCM Sites コンポーネントには必ずしも
    </div>
    ```
 
-   上記の実稼動用マークアップは、Hello World コンポーネント用です。 このコンポーネントはシーケンスチャネルで使用されるので、`data-duration` 属性が含まれています。`data-duration` 属性は、シーケンスチャネルでシーケンス項目の表示時間を把握するために使用されます。
+   上記の実稼動用マークアップは、Hello World コンポーネント用です。このコンポーネントはシーケンスチャネルで使用されるので、`data-duration` 属性が含まれています。`data-duration` 属性は、シーケンスチャネルでシーケンス項目の表示時間を把握するために使用されます。
 
-   このコンポーネントでは、`div` タグと `h1` タグ（テキストを含む）をレンダリングします。`${properties.message}` は HTL スクリプトの一部で、という名前の JCR プロパティのコンテンツを出力します。 `message`. `message` プロパティテキストの値をユーザーが入力できるダイアログを後で作成します。
+   このコンポーネントでは、`div` タグと `h1` タグ（テキストを含む）をレンダリングします。`${properties.message}` は HTL スクリプトの一部で、`message` という名前の JCR プロパティのコンテンツを出力します。`message` プロパティテキストの値をユーザーが入力できるダイアログを後で作成します。
 
    また、コンポーネントでは BEM（ブロック要素修飾子）表記が使用されることにも注意してください。BEM は、再利用可能なコンポーネントを容易に作成できる CSS コーディング規則です。BEM は、[AEM のコアコンポーネント](https://github.com/adobe/aem-core-wcm-components/wiki/CSS-coding-conventions)で使用される表記です。<!-- WEBSITE WAS NOT ACCESSIBLE AS OF SEPTEMBER 1, 2022 More info can be found at: [https://getbem.com/](https://getbem.com/) -->
 
@@ -182,9 +182,9 @@ AEM Screens には、従来の WCM Sites コンポーネントには必ずしも
    </div>
    ```
 
-   上記の編集用マークアップは、Hello World コンポーネント用です。 ダイアログメッセージが既に入力されている場合、最初のブロックにはコンポーネントの編集バージョンが表示されます。
+   上記の編集用マークアップは、Hello World コンポーネント用です。ダイアログメッセージが既に入力されている場合、最初のブロックにはコンポーネントの編集バージョンが表示されます。
 
-   ダイアログメッセージがまだ入力されていない場合は、2 番目のブロックがレンダリングされます。その場合、`cq-placeholder` と `data-emptytext` は、「***Hello World***」というラベルをプレースホルダーとしてレンダリングします。ラベルの文字列は、複数のロケールでのオーサリングをサポートするために、i18n を使用して国際化できます。
+   ダイアログメッセージがまだ入力されていない場合は、2 番目のブロックがレンダリングされます。その場合、`cq-placeholder` と `data-emptytext` は、「***Hello World***」というラベルをプレースホルダーとしてレンダリングします。複数のロケールでのオーサリングをサポートするために、ラベルの文字列を i18n を使用して国際化することができます。
 
 1. **Hello World コンポーネントに使用する Screens 画像ダイアログをコピーします。**
 
@@ -197,7 +197,7 @@ AEM Screens には、従来の WCM Sites コンポーネントには必ずしも
 
 1. **メッセージのタブが含まれるように Hello World ダイアログを更新します。**
 
-   次の条件に一致するようにダイアログボックスを更新します。 最終的なダイアログボックスの JCR ノード構造は、XML で以下に示します。
+   次の条件に合致するようにダイアログボックスを更新します。最終的なダイアログボックスの JCR ノード構造は、次のような XML コードになります。
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -255,25 +255,25 @@ AEM Screens には、従来の WCM Sites コンポーネントには必ずしも
    </jcr:root>
    ```
 
-   The `textfield` という名前のプロパティに保存された場合、 `message` そして `numberfield` 期間が、という名前のプロパティに保存される場合、 `duration`. `/apps/weretail-run/components/content/helloworld/production.html` では、これら 2 つのプロパティは `${properties.message}` および `${properties.duration}` として HTL で参照されます。
+   メッセージの `textfield` は `message` というプロパティに保存され、期間の `numberfield` は `duration` というプロパティに保存されます。`/apps/weretail-run/components/content/helloworld/production.html` では、これら 2 つのプロパティは `${properties.message}` および `${properties.duration}` として HTL で参照されます。
 
-   ![Hello World — 完成したダイアログボックス](/help/screens-cloud/developing/assets/2018-04-29_at_5_21pm.png)
+   ![Hello World - 完成したダイアログボックス](/help/screens-cloud/developing/assets/2018-04-29_at_5_21pm.png)
 
-   Hello World — 完成したダイアログボックス
+   Hello World - 完成したダイアログボックス
 
 ## クライアント側ライブラリの作成 {#clientlibs}
 
-クライアント側ライブラリは、AEM の実装で必要な CSS および JavaScript ファイルの編成および管理のための仕組みを提供します。
+クライアントサイドライブラリは、AEM の実装で必要な CSS および JavaScript ファイルの編成および管理のための仕組みを提供します。
 
-AEM Screensのコンポーネントは、編集モードとプレビュー/実稼働モードではレンダリングが異なります。 2 つのクライアントライブラリが作成されます。1 つは編集モード用、もう 1 つはプレビュー/実稼動用です。
+AEM Screens コンポーネントは、編集モードとプレビュー／実稼動モードではレンダリングが異なります。2 つのクライアントライブラリが作成されます。1 つは編集モード用、もう 1 つはプレビュー／実稼動用です。
 
-1. Hello World コンポーネントのクライアント側ライブラリ用のフォルダーを作成します。
+1. Hello World コンポーネントのクライアントサイドライブラリ用のフォルダーを作成します。
 
-   の下 `/apps/weretail-run/components/content/helloworld`、という名前のフォルダーを作成します。 `clientlibs`.
+   `/apps/weretail-run/components/content/helloworld` の下に、`clientlibs` という名前のフォルダーを作成します。
 
    ![2018-04-30_at_1046am](/help/screens-cloud/developing/assets/2018-04-30_at_1046am.png)
 
-1. の下 `clientlibs` フォルダー、名前を付けたノードを作成します。 `shared` のタイプ `cq:ClientLibraryFolder.`
+1. `clientlibs` フォルダーの下に、タイプ `cq:ClientLibraryFolder.` の `shared` という名前のノードを作成します。
 
    ![2018-04-30_at_1115am](/help/screens-cloud/developing/assets/2018-04-30_at_1115am.png)
 
@@ -327,7 +327,7 @@ AEM Screensのコンポーネントは、編集モードとプレビュー/実�
    }
    ```
 
-1. をコピーして貼り付けます。 `shared` クライアントライブラリフォルダーを使用して、という名前のクライアントライブラリを作成します。 `production`.
+1. クライアントライブラリフォルダー `shared` をコピーして貼り付けて、`production` という名前のクライアントライブラリを作成します。
 
    ![共有クライアントライブラリをコピーして実稼動用の新しいクライアントライブラリを作成する](/help/screens-cloud/developing/assets/copy-clientlib.gif)
 
@@ -335,7 +335,7 @@ AEM Screensのコンポーネントは、編集モードとプレビュー/実�
 
 1. 実稼動用クライアントライブラリの `categories` プロパティを `cq.screens.components.production.` に更新します。
 
-   これにより、プレビュー/実稼働モードの場合にのみ、スタイルが読み込まれるようになります。
+   これにより、プレビュー／実稼動モードの場合のみ、スタイルが読み込まれるようになります。
 
    ![/apps/weretail-run/components/content/helloworld/clientlibs/production のプロパティ](/help/screens-cloud/developing/assets/2018-04-30_at_5_04pm.png)
 
@@ -364,7 +364,7 @@ AEM Screensのコンポーネントは、編集モードとプレビュー/実�
    }
    ```
 
-   上記のスタイルでは、実稼働モードの場合のみ、画面の中央にメッセージが表示されます。
+   上記のスタイルでは、実稼動モードの場合のみ、スクリーンの中央にメッセージが表示されます。
 
 3 番目のクライアントライブラリカテゴリ `cq.screens.components.edit` は、コンポーネントに編集専用のスタイルを追加する場合に使用できます。
 
@@ -376,12 +376,12 @@ AEM Screensのコンポーネントは、編集モードとプレビュー/実�
 
 ## デザインページの作成 {#design-page}
 
-AEM Screens では、[静的ページテンプレート](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html?lang=ja)と[デザイン設定](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html?lang=en)を使用して、グローバルな変更に対応します。デザイン設定は、チャネル上で使用できる ParSys コンポーネントを設定する場合によく使用されます。これらの設定をアプリに固有の方法で保存することをお勧めします。
+AEM Screens では、[静的ページテンプレート](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html?lang=ja)と[デザイン設定](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html?lang=ja)を使用して、グローバルな変更に対応します。デザイン設定は、チャネル上で使用できる ParSys コンポーネントを設定する場合によく使用されます。これらの設定をアプリに固有の方法で保存することをお勧めします。
 
-We.Retail Run プロジェクトに固有のすべての設定を保存する We.Retail Run Design ページが下に作成されます。
+以下に、We.Retail Run プロジェクトに固有のすべての設定を保存する We.Retail Run デザインページを作成します。
 
-1. In **CRXDE Lite** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs`に移動します。 `/apps/settings/wcm/designs`
-1. designs フォルダーの下に、という名前のノードを作成します。 `we-retail-run` ～の一種を持つ `cq:Page`.
+1. **CRXDE Lite** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs` で、`/apps/settings/wcm/designs` に移動します
+1. designs フォルダーの下に `cq:Page` 型の `we-retail-run` という名前のノードを作成します。
 1. `we-retail-run` ページの下に、`nt:unstructured` 型の `jcr:content` という名前の別のノードを追加します。この `jcr:content` ノードに次のプロパティを追加します。
 
    | 名前 | タイプ | 値 |
@@ -396,9 +396,9 @@ We.Retail Run プロジェクトに固有のすべての設定を保存する We
 
 ## シーケンスチャネルの作成 {#create-sequence-channel}
 
-Hello World コンポーネントは、シーケンスチャネルでの使用を目的としています。 このコンポーネントをテストするために、新しいシーケンスチャネルを作成します。
+Hello World コンポーネントは、シーケンスチャネルでの使用を目的としています。このコンポーネントをテストするために、新しいシーケンスチャネルを作成します。
 
-1. 「AEM Start」メニューから、に移動します。 **Screens** > **We.Retail Ru** n > を選択し、 **チャネル**.
+1. AEM の開始メニューで、**Screens**／**We.Retail Run** に移動し、「**チャネル**」を選択します。
 
 1. 「**作成**」ボタンをクリックします。
 
@@ -417,7 +417,7 @@ Hello World コンポーネントは、シーケンスチャネルでの使用�
 
    ![idle-channel](/help/screens-cloud/developing/assets/idle-channel.gif)
 
-1. Idle Channel のページプロパティを開きます。「デザイン」フィールドが次を指すように更新します。 `/apps/settings/wcm/designs/we-retail-run,`前の節で作成したデザインページ。
+1. Idle Channel のページプロパティを開きます。前の節で作成したデザインページ `/apps/settings/wcm/designs/we-retail-run,` を指すように、「デザイン」フィールドを更新します。
 
    ![デザイン設定 /apps/settings/wcm/designs/we-retail-run](/help/screens-cloud/developing/assets/2018-05-07_at_1240pm.png)
 
@@ -425,9 +425,9 @@ Hello World コンポーネントは、シーケンスチャネルでの使用�
 
 1. 新しく作成した Idle Channel を編集して、開けるようにします。
 
-1. ページモードをに切り替えます。 **デザイン** モード。
+1. ページモードを&#x200B;**デザイン**&#x200B;モードに切り替えます。
 
-   1. 次をクリック： **レンチ** Parsys 内のアイコン（使用可能なコンポーネントを設定できる）
+   1. Parsys の&#x200B;**レンチ**&#x200B;アイコンをクリックすると、使用可能なコンポーネントを設定できます。
 
    1. 「**Screens**」グループと「**We.Retail Run - Content**」グループを選択します。
 
@@ -437,7 +437,7 @@ Hello World コンポーネントは、シーケンスチャネルでの使用�
 
    ![2018-04-30_at_5_53pm](assets/2018-04-30_at_5_53pm.png)
 
-1. In **CRXDE Lite** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs/we-retail-run/jcr%3Acontent/sequencechannel/par`に移動します。 `/apps/settings/wcm/designs/we-retail-run/jcr:content/sequencechannel/par`. `components` プロパティに `group:Screens`、`group:We.Retail Run - Content` が含まれていることがわかります。
+1. **CRXDE Lite** `http://localhost:4502/crx/de/index.jsp#/apps/settings/wcm/designs/we-retail-run/jcr%3Acontent/sequencechannel/par` で、`/apps/settings/wcm/designs/we-retail-run/jcr:content/sequencechannel/par` に移動します。`components` プロパティに `group:Screens`、`group:We.Retail Run - Content` が含まれていることがわかります。
 
    ![/apps/settings/wcm/designs/we-retail-run の下のデザイン設定](/help/screens-cloud/developing/assets/2018-05-07_at_1_14pm.png)
 
@@ -445,9 +445,9 @@ Hello World コンポーネントは、シーケンスチャネルでの使用�
 
 ## カスタムハンドラーのテンプレート {#custom-handlers}
 
-カスタムコンポーネントでアセット（画像、ビデオ、フォント、アイコン）、特定のアセットレンディション、クライアント側ライブラリ（css と js）などの外部リソースを使用している場合、これらのリソースはオフライン設定に自動的に追加されません。 これは、AdobeがデフォルトでHTMLマークアップのみをバンドルするからです。
+カスタムコンポーネントでアセット（画像、ビデオ、フォント、アイコン）、特定のアセットレンディション、クライアントサイドのライブラリ（css と js）などの外部リソースを使用している場合、これらのリソースはオフライン設定に自動的に追加されません。これは、アドビがデフォルトで HTML マークアップのみをバンドルするからです。
 
-Adobeでは、プレーヤーにダウンロードされる正確なアセットをカスタマイズし最適化するために、カスタムコンポーネントの拡張メカニズムを提供し、Screens のオフラインキャッシュロジックに依存関係を公開しています。
+プレーヤーにダウンロードされる正確なアセットをカスタマイズして最適化するには、カスタムコンポーネントの拡張メカニズムを使用して、Screens のオフラインキャッシュロジックに依存関係を公開します。
 
 次の節では、カスタムオフラインリソースハンドラーのテンプレートと、そのプロジェクトに対する `pom.xml` の最小要件について説明します。
 

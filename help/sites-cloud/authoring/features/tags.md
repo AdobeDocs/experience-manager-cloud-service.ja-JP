@@ -1,20 +1,20 @@
 ---
 title: タグの使用
-description: タグを使用すると、Web サイト内のコンテンツをすばやく簡単に分類できます
+description: タグを使用すると、web サイト内のコンテンツを素早く簡単に分類できます。
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
 source-git-commit: a7774ff75fb6bac55d5e931b13597d90bf8d721b
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 87%
+ht-degree: 93%
 
 ---
 
 # タグの使用  {#using-tags}
 
-タグを使用すると、web サイト内のコンテンツをすばやく簡単に分類できます。タグはキーワードやラベルとしてページ、アセット、その他のコンテンツに添付し、コンテンツや関連コンテンツを検索できます。
+タグを使用すると、web サイト内のコンテンツを素早く簡単に分類できます。タグをキーワードやラベルとしてページ、アセット、その他のコンテンツに添付して、コンテンツや関連コンテンツを検索できます。
 
 * 詳しくは、 [タグの管理](/help/sites-cloud/administering/tags.md) タグの作成と管理、およびタグが適用されるコンテンツについて説明します。
-* 詳しくは、 [開発者向けタグ付け](/help/implementing/developing/introduction/tagging-framework.md) タグ付けフレームワーク、およびカスタムアプリケーションにタグを含めたりタグを拡張したりする方法について説明します。
+* タグ付けのフレームワークと、カスタムアプリケーションにタグの追加と拡張を行う方法について詳しくは、[開発者向けタグ付け](/help/implementing/developing/introduction/tagging-framework.md)を参照してください。
 
 ## タグを使用する 10 の理由 {#ten-reasons-to-use-tagging}
 

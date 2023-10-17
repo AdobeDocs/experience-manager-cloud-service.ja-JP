@@ -1,11 +1,11 @@
 ---
 title: カスタム HTTP ヘッダー
-description: コマースエンジンに送信されるカスタム HTTP ヘッダーと、CIF から既に送信されるヘッダーを設定する方法について説明します。
+description: コマースエンジンに送信されるカスタム HTTP ヘッダーと、CIFから既に送信されたヘッダーを設定する方法について説明します。
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
 source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 88%
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 88%
 
 ## 設定 {#configuration}
 
-カスタム HTTP ヘッダーを設定するには、まずヘッダーを定義する必要があります。 カスタム HTTP ヘッダーを定義するには、まず OSGi 設定を使用して `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` サービス設定に追加する必要があります。
+カスタム HTTP ヘッダーを設定するには、まず定義する必要があります。カスタム HTTP ヘッダーを定義するには、まず OSGi 設定を使用して `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` サービス設定に追加する必要があります。
 
 HTTP ヘッダーの値は、プロジェクトのクラウドサービス設定ページで設定できます。
 

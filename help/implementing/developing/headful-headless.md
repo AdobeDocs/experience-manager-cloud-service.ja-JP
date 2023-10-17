@@ -5,7 +5,7 @@ exl-id: 709850ca-7757-47ab-9625-f411121cde2c
 source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '1013'
-ht-degree: 88%
+ht-degree: 96%
 
 ---
 
@@ -31,7 +31,7 @@ AEM がヘッドレスで配信するコンテンツの宛先は、多くの場�
 
 ## Web ショップの例 {#web-shop-example}
 
-会社の既存の Web ショップが SPA として存在するとします。その中に製品の詳細や画像がすべて含まれています。次に、プロモーションサイト、ブログ、キャンペーンコンテンツなどのマーケティング活動を強化するAEMを導入します。 これら 2 つをどのように統合すればよいでしょうか。AEM を使用すると、次のような幅広い選択肢があります。
+会社の既存の Web ショップが SPA として存在するとします。その中に製品の詳細や画像がすべて含まれています。この状況で、プロモーションサイト、ブログ、キャンペーンコンテンツなどのマーケティング活動を強化するために AEM を導入します。これら 2 つをどのように統合すればよいでしょうか。AEM を使用すると、次のような幅広い選択肢があります。
 
 * **両システムを独立して運用する。**
 * **GraphQL を使用して AEM の限られたコンテンツを Web ショップに提供する。**&#x200B;コンテンツは作成者が AEM で作成できますが、表示は Web ショップ SPA でのみ可能です。
@@ -43,7 +43,7 @@ AEM がヘッドレスで配信するコンテンツの宛先は、多くの場�
 
 >[!NOTE]
 >
->もちろん、Web ショップSPAを完全に機能するAEM SPAとして再実装することもできます。 [AEM SPA Editor フレームワークの使用](/help/implementing/developing/hybrid/introduction.md). ）。既に AEM があり、新しい Web ショップまたは他の SPA を作成する場合は、この方法をお勧めしますが、それはこのドキュメントの対象外です。
+>もちろん、web ショップ SPA を完全機能の AEM SPA として再実装することもできます（[AEM SPA Editor フレームワークを使用](/help/implementing/developing/hybrid/introduction.md)）。既に AEM があり、新しい web ショップまたは他の SPA を作成する場合は、この方法をお勧めしますが、それはこのドキュメントの対象外です。
 
 ## SPA 統合レベル {#integration-levels}
 
@@ -54,18 +54,18 @@ SPA 統合は AEM の 4 つのレベルに分かれます。
    * コンテンツは、2 つの別個のシステムで独立に作成、管理、配信されます。
 * **レベル 1：コンテンツフラグメント統合**
    * AEM で[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)を使用して、SPA 用の限られたコンテンツを作成および管理します。
-   * SPAは、AEMを使用してこのコンテンツを取得します [GraphQL API](/help/headless/graphql-api/content-fragments.md).
+   * SPA は、AEM の [GraphQL API](/help/headless/graphql-api/content-fragments.md) を通じてこのコンテンツを取得します。
    * 一部のコンテンツは AEM で管理され、一部は外部システムで管理されます。
    * コンテンツは SPA でのみ表示できます。
 * **レベル 2：SPA を AEM に組み込む**
    * AEM で[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)を使用して、SPA 用のコンテンツを作成および管理します。
-   * SPAは、AEMを使用してこのコンテンツを取得します [GraphQL API](/help/headless/graphql-api/content-fragments.md).
+   * SPA は、AEM の [GraphQL API](/help/headless/graphql-api/content-fragments.md) を通じてこのコンテンツを取得します。
    * 一部のコンテンツは AEM で管理され、一部は外部システムで管理されます。
    * コンテンツは AEM 内でインコンテクストで表示できます。
    * 限られたコンテンツを AEM 内で編集できます。
 * **レベル 3：SPA を AEM に組み込んで完全に有効にする**
    * AEM で[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)を使用して、SPA 用のコンテンツを作成および管理します。
-   * SPAは、AEMを使用してこのコンテンツを取得します [GraphQL API](/help/headless/graphql-api/content-fragments.md).
+   * SPA は、AEM の [GraphQL API](/help/headless/graphql-api/content-fragments.md) を通じてこのコンテンツを取得します。
    * コンテンツは AEM 内でインコンテクストで表示できます。
    * ほとんどのコンテンツを AEM 内で編集できます。
 
@@ -80,6 +80,6 @@ SPA 統合は AEM の 4 つのレベルに分かれます。
 * **レベル 1：**&#x200B;コンテンツフラグメントと [AEM ヘッドレスフレームワーク](/help/headless/introduction.md)を使用して、AEM コンテンツを SPA に配信できます。
 * **レベル 2：**&#x200B;レベル 1 に加えて、
    * [RemotePage コンポーネント](/help/implementing/developing/hybrid/remote-page.md)を使用して、外部 SPA を AEM に組み込み、AEM コンテンツをインコンテクストで表示できます。
-   * SPAの特定のポイントを [AEMでの制限付き編集を許可](/help/implementing/developing/hybrid/editing-external-spa.md).
+   * SPA の特定のポイントで [AEM での限られた編集を可能にする](/help/implementing/developing/hybrid/editing-external-spa.md)こともできます。
 * **レベル 3：** レベル 2 に加えて、
    * SPA のゾーン全体で、AEM での包括的な編集を可能にすることができます。

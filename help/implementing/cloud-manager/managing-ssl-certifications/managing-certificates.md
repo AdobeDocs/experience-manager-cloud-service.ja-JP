@@ -5,7 +5,7 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '644'
-ht-degree: 74%
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ SSL 証明書のステータスは、SSL 証明書ページから一目で確認
 * **緑** - このステータスは、証明書が現在の日付から 60 日以上有効であることを示します。
 
 * **オレンジ** - このステータスは、証明書の有効期限が 60 日未満であることを示します。
-   * 次に、Cloud Manager ユーザーインターフェイスを介して証明書を更新し、置き換えて、サイトへのアクセスや停止の可能性を回避する計画を立てます。
+   * サイトへの不正アクセスやサイトの停止を回避するために、Cloud Manager のユーザーインターフェイスで証明書を更新して置き換える計画を必ず立ててください。
    * 証明書の有効期限が間もなく切れることを警告する通知が Cloud Manager の UI に定期的に表示されます。
 
 * **赤** - このステータスは、SSL 証明書の有効期限が切れたことを示します。
@@ -39,7 +39,7 @@ SSL 証明書のステータスは、SSL 証明書ページから一目で確認
 
 >[!NOTE]
 >
->ユーザーは、 **ビジネスオーナー** または **デプロイメントマネージャー** Cloud Manager で SSL 証明書を更新するためのロール。
+>Cloud Manager で SSL 証明書を更新するには、ユーザーが&#x200B;**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持つメンバーである必要があります。
 
 ## SSL 証明書の置換 {#replace-ssl-certificate}
 
@@ -49,7 +49,7 @@ SSL 証明書は、[SSL 証明書の更新](#update-ssl-certificate)の節で説
 
 Cloud Manager からの証明書の削除は、取り消すことができない永続的な操作です。 ベストプラクティスとして、SSL ファイルをローカルに保存してから Cloud Manager で削除することをお勧めします。
 
-Cloud Manager では、1 つ以上のドメインが関連付けられている SSL 証明書を削除できません。SSL 証明書を削除する前に、関連付けられているドメインをすべて削除する必要があります。詳しくは、 [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) を参照してください。
+Cloud Manager では、1 つ以上のドメインが関連付けられている SSL 証明書を削除できません。SSL 証明書を削除する前に、関連付けられているドメインをすべて削除する必要があります。詳しくは、[カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)を参照してください。
 
 SSL 証明書を削除するには、次の手順に従います。
 
@@ -62,14 +62,14 @@ SSL 証明書を削除するには、次の手順に従います。
 
 >[!NOTE]
 >
->ユーザーは、 **ビジネスオーナー** または **デプロイメントマネージャー** Cloud Manager で SSL 証明書を削除する役割です。
+>Cloud Manager で SSL 証明書を削除するには、ユーザーが&#x200B;**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持つメンバーである必要があります。
 
 ## 既存の CDN 設定 {#pre-existing-cdn}
 
-SSL 証明書用の既存の CDN 設定がある場合、 **SSL 証明書** UI を使用してこれらの設定を追加し、Cloud Manager で表示して設定できるようにすることを促すページ。
+SSL 証明書用の既存の CDN 設定がある場合は、UI を通じてこれらの設定を追加して Cloud Manager で表示および設定できるようにすることを促す情報メッセージが **SSL 証明書**&#x200B;ページに表示されます。
 
 UI を使用して既存の環境設定をすべて移行すると、このメッセージは表示されなくなります。メッセージが表示されなくなるまでに 1～2 営業日かかる場合があります。
 
-詳しくは、 [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。
+詳しくは、[SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)を参照してください。
 
 IP 許可リストまたはカスタムドメイン名に対応する既存の CDN 設定がある環境の **IP 許可リスト**&#x200B;ページと&#x200B;**環境**&#x200B;ページにも、同様のメッセージが表示されます。

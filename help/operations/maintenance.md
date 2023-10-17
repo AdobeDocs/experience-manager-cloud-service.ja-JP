@@ -5,7 +5,7 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: 1d20c42dd140e1bdadbf4e7e0abf899c824d3b34
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 79%
+ht-degree: 88%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 79%
 
 >[!CAUTION]
 >
->Adobeは、パフォーマンスの低下などの問題を軽減するために、顧客のメンテナンスタスク構成設定を上書きする権利を留保します。
+>アドビは、パフォーマンスの低下などの問題を軽減するために、顧客のメンテナンスタスク設定を上書きする権利を保留します。
 
 次の表に、AEM as a Cloud Service のリリース時に使用できるメンテナンスタスクを示します。
 
@@ -126,7 +126,7 @@ ht-degree: 79%
     <p><strong>windowStartTime=HH:MM</strong>（24 時間形式）週次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。</p>
     <p><strong>windowEndTime=HH:MM</strong>（24 時間形式）週次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。</p>
     <p>この期間中は、メンテナンスタスクを複数回実行することはできません。</p>
-    <p><strong>windowScheduleWeekdays= 1 ～ 7 の 2 つの値の配列（例：[5,5]）</strong> 配列の最初の値はジョブがスケジュールされる開始日で、2 番目の値はジョブが停止される終了日です。 開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。</p>
+    <p><strong>windowScheduleWeekdays= 1 から 7 までの 2 つの値の配列（例：[5,5]）</strong> 配列の最初の値はジョブがスケジュールされる開始日で、2 番目の値はジョブが停止される終了日です。開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。</p>
     </td>
   </tr>
   <tr>
@@ -138,7 +138,7 @@ ht-degree: 79%
     <p><strong>windowStartTime=HH:MM</strong>（24 時間形式）月次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行をいつ開始するかを定義します。</p>
     <p><strong>windowEndTime=HH:MM</strong>（24 時間形式）月次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。</p>
     <p>この期間中は、メンテナンスタスクを複数回実行することはできません。</p>
-    <p><strong>windowScheduleWeekdays=1 ～ 7 の 2 つの値の配列（例：[5,5]）</strong> 配列の最初の値はジョブがスケジュールされる開始日で、2 番目の値はジョブが停止される終了日です。 開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。</p>
+    <p><strong>windowScheduleWeekdays= 1 から 7 までの 2 つの値の配列（例：[5,5]）</strong> 配列の最初の値はジョブがスケジュールされる開始日で、2 番目の値はジョブが停止される終了日です。開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。</p>
     <p><strong>windowFirstLastStartDay = 0 または 1</strong> 0（月の最初の週にスケジュールを設定）、1（月の最後の週にスケジュールを設定）。値を指定しない場合は、毎月 windowScheduleWeekdays の規定に従って、効果的にジョブを毎日スケジュールします。</p>
     </td>
     </tr>

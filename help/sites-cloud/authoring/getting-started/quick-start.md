@@ -5,7 +5,7 @@ exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '1568'
-ht-degree: 86%
+ht-degree: 98%
 
 ---
 
@@ -36,13 +36,13 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
 * ページの順序変更
 
-   * これは、で実行できます。 [リスト表示](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view). 変更が適用され、他のビューに表示されます。
+   * これは[リスト表示](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view)で実行できます。変更が適用され、他のビューに表示されます。
 
 ### ページオーサリング {#page-authoring}
 
 * リンクのナビゲーション
 
-   * **編集**&#x200B;モードでは&#x200B;**リンクを使用して移動できません**。リンクを使用して移動するには、次のいずれかを使用して[ページをプレビュー](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages)する必要があります。
+   * **編集**&#x200B;モードでは&#x200B;**リンクを使用して移動することはできません**。リンクを使用して移動するには、次のいずれかを使用して[ページをプレビュー](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages)する必要があります。
 
       * [プレビューモード](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [公開済みとして表示](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
@@ -60,7 +60,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
 ページの検索には様々な特徴があります。移動や検索をおこなうには、次のようにします。
 
-1. を開きます。 **Sites** コンソール ( **Sites** オプションを [グローバルナビゲーション](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) - Adobe Experience Managerリンク（左上）を選択するとトリガー（ドロップダウン）されます。
+1. （[グローバルナビゲーション](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)の「**サイト**」オプションを使用して）**サイト**&#x200B;コンソールを開きます。これは、Adobe Experience Manager リンク（左上）を選択するとトリガー（ドロップダウン）されます。
 
 1. 適切なページをタップまたはクリックしてツリーの下方向に移動します。ページリソースがどのように表されるかは、使用している表示（[カード、リスト、列](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)）によって異なります。
 
@@ -89,7 +89,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
 アクションを実行するページを選択できます。ページを選択するとツールバーが自動的に更新され、そのリソースに関連するアクションが表示されます。
 
-ページを選択する方法は、コンソールで使用している表示によって異なります。
+ページの選択方法は、コンソールで使用している表示によって異なります。
 
 1. 列表示：
 
@@ -106,7 +106,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
       * モバイルデバイス：カードをタップ＆ホールドする
       * デスクトップデバイス：チェックマークアイコンで表される[クイックアクション](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)を使用する
 
-   * ページが選択されていることを示すために、カードにチェックマークが付きます。
+   * ページが選択されていることを示すために、カードにチェックマークが付けられます。
 
    ![カードの例](/help/sites-cloud/authoring/assets/card.png)
 
@@ -115,7 +115,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 次のようにして、[クイックアクション](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)を使用できます。
 
 1. アクションを実行する[ページに移動](#finding-your-page)します。
-1. 必要なリソースを表すカードの上にマウスポインターを置きます。 クイックアクションが表示されます。
+1. 必要なリソースを表すカードの上にマウスポインターを置きます。クイックアクションが表示されます。
 
    ![カードのアクション](/help/sites-cloud/authoring/assets/card-actions.png)
 
@@ -148,21 +148,21 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
    * 次の操作を実行して、ページ上の[既存のコンポーネントのコンテンツを編集します](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)。
 
       * タップまたはクリックしてコンポーネントツールバーを開きます。「**編集**」（鉛筆）アイコンを使用してダイアログを開きます。
-      * タップ＆ホールドするか、ゆっくりダブルクリックして、コンポーネント用のインプレースエディターを開きます。使用可能なアクションが表示されます（一部のコンポーネントでは、選択は制限されています）。
+      * タップしたまま長押しするか、ゆっくりダブルクリックして、コンポーネント用のインプレースエディターを開きます。使用可能なアクションが表示されます（一部のコンポーネントでは、アクションが制限されます）。
       * 実行できるすべてのアクションを表示するには、次のアイコンを使用して全画面表示モードに切り替えます。
 
         ![全画面表示ボタン](/help/sites-cloud/authoring/assets/full-screen.png)
 
    * [既存のコンポーネントのプロパティを設定します。](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
-      * タップまたはクリックしてコンポーネントツールバーを開きます。「**設定**」（スパナ）アイコンを使用してダイアログを開きます。
+      * タップまたはクリックしてコンポーネントツールバーを開きます。**設定**（スパナ）アイコンを使用してダイアログを開きます。
 
    * 次のいずれかの方法で[コンポーネントを移動します](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component)。
 
       * 必要なコンポーネントを新しい場所にドラッグします。
       * タップまたはクリックしてコンポーネントツールバーを開きます。必要に応じて、**切り取り**&#x200B;アイコン、続いて&#x200B;**貼り付け**&#x200B;アイコンを使用します。
 
-   * 次の操作を実行して、コンポーネントを[コピー（および貼り付け）](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)します。
+   * 次の操作を実行して、コンポーネントを[コピー（およびペースト）](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)します。
 
       * タップまたはクリックしてコンポーネントツールバーを開きます。必要に応じて、**コピー**&#x200B;アイコン、続いて&#x200B;**貼り付け**&#x200B;アイコンを使用します。
 
@@ -184,7 +184,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
       * ツールバーの「**プレビュー**」を選択します。
 
-   * を使用して編集モードに戻る（または別のモードを選択する） **編集** ドロップダウンセレクターを使用します。
+   * **編集**&#x200B;ドロップダウンセレクターを使用して、編集モードに戻ります（または別のモードを選択します）。
 
    >[!NOTE]
    >
@@ -204,7 +204,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
       ![「プロパティ」ボタン](/help/sites-cloud/authoring/assets/properties.png)
 
-   1. ページのプロパティが表示されます。 必要に応じて変更を加え、「保存」を使用してそれらを保持します。
+   1. ページのプロパティが表示されます。必要に応じて変更を加え、「保存」を使用してそれらを保持します。
 
 * [ページの編集](#editing-your-page-content)中に次の操作を実行します。
 
@@ -236,15 +236,15 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
   ![「公開を管理」ボタン](/help/sites-cloud/authoring/assets/manage-publication.png)
 
-  「**ページを非公開にする**」オプションは、エディターの&#x200B;**ページ情報**&#x200B;メニューから引き続き使用できます。
+  「**ページを非公開**」オプションは、エディターの&#x200B;**ページ情報**&#x200B;メニューから引き続き使用できます。
 
-  詳しくは、[ページを公開](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)を参照してください。
+  詳しくは、[ページの公開](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)を参照してください。
 
-### ページを移動、コピー、貼り付けまたは削除 {#move-copy-and-paste-or-delete-your-page}
+### ページの移動、コピー、ペースト、削除 {#move-copy-and-paste-or-delete-your-page}
 
 これらのアクションはすべて、次の操作で実行できます。
 
-1. 移動、コピー、貼り付けまたは削除を行う[ページに移動します](#finding-your-page)。
+1. 移動、コピー、ペースト、または削除を行う[ページに移動します](#finding-your-page)。
 1. 必要に応じて、次のいずれかを使用して、コピー（続いて貼り付け）、移動または削除のアイコンを選択します。
 
    * 必要なリソースの[クイックアクション（カード表示／デスクトップのみ）](#quick-actions-card-view-desktop-only)。
@@ -262,7 +262,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
    * [削除](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page)：
 
-      * アクションの確認を求められます。
+      * このアクションの確認が求められます。
 
    >[!NOTE]
    >
@@ -273,7 +273,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 [ページのロック](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)によって、自分の作業中に他の作成者が作業するのを防ぐことができます。ロック（およびロック解除）アイコン／ボタンは次の場所にあります。
 
 * ツールバー（[ページが選択されている](#selecting-your-page-for-further-action)場合）
-* The [ページ情報ドロップダウンメニュー](#editing-the-page-properties) （ページの編集時）
+* （ページ編集時の）[ページ情報ドロップダウンメニュー](#editing-the-page-properties)。
 * （ページの編集時）ページツールバー（ページがロックされている場合）
 
 例えば、「ロック」アイコンは次のように表示されます。
@@ -316,7 +316,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
    ![「タイムライン」表示オプション](/help/sites-cloud/authoring/assets/timeline.png)
 
-   ページのバージョンが既に保存されている場合は、そのバージョンがタイムラインに表示されます。
+   ページのバージョンが既に保存されている場合、そのバージョンがタイムラインに表示されます。
 
 1. 復元するバージョンをタップまたはクリックします。これにより、追加のアクションボタンが表示されます。
 
@@ -326,4 +326,4 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
    * **違いを表示**
 
-      * ページが開き、（2 つのバージョン間の）違いがハイライト表示されます。
+      * （2 つのバージョン間の）違いが強調表示されたページが開きます。

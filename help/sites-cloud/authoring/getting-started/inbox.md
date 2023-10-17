@@ -5,7 +5,7 @@ exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
 source-wordcount: '914'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->アイテムタイプの詳細については、次を参照してください。
+>項目タイプについて詳しくは、次を参照してください。
 >
 >* [プロジェクト](/help/sites-cloud/authoring/projects/overview.md)
 >* [プロジェクト - タスクの操作](/help/sites-cloud/authoring/projects/tasks.md)
@@ -97,14 +97,14 @@ AEM 通知インボックスを開くには、次の手順に従います。
 
   **リスト表示**&#x200B;の場合、並べ替えメカニズムを設定できます。
 
-   * **並べ替え基準**
+   * **並べ替えの基準**
    * **並べ替え順序**
 
   ![インボックスのリスト表示の設定](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-  カレンダーを他のユーザーに委任したり、他のユーザーに委任を依頼したり、委任を管理したりすることもできます。
+  カレンダーを他のユーザーにデリゲートしたり、他のユーザーからデリゲーションを依頼されたり、デリゲーションを管理したりすることもできます。
 
-  ![インボックスのリスト表示の委任設定](/help/sites-cloud/authoring/assets/inbox-delegation.png)
+  ![インボックスのリスト表示のデリゲーション設定](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
 ## 項目に対するアクションの実行 {#taking-action-on-an-item}
 
@@ -136,11 +136,11 @@ AEM 通知インボックスを開くには、次の手順に従います。
    >
    >* ワークフロー項目 - [ワークフローへの参加](/help/sites-cloud/authoring/workflows/participating.md)
 
-2. 選択した項目に応じて、アクションが開始されます。例：
+2. 選択した項目に応じて、アクションが開始されます。例えば、次の操作が行われます。
 
-   * アクションに適したダイアログボックスが開きます
-   * アクションウィザードが起動します
-   * ドキュメントページが開きます。
+   * そのアクションに適したダイアログボックスが開きます。
+   * アクションウィザードが開始されます。
+   * ドキュメントページが開きます
 
    例えば、「**委任**」を選択するとダイアログが開きます。
 
@@ -174,7 +174,7 @@ AEM 通知インボックスを開くには、次の手順に従います。
 
    * **アドバンス**
 
-      * **名前**:URL を作成するために使用され、空白の場合は、 **タイトル**.
+      * **名前**：URL の形成に使用されます。空の場合は、**タイトル**&#x200B;に基づきます。
 
    ![インボックスのタスク追加の詳細オプション](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 

@@ -203,7 +203,7 @@ Cloud Service と署名する順序を選択するには：
      >
      >最初の受信者または唯一の受信者（受信者が 1 人の場合）のメールアドレスが、AEM Cloud Services の設定に使用された [!DNL Adobe Sign] アカウントと一致していないことを確認します。
 
-   * **[!UICONTROL 受信者の認証方法]：** Adobe Sign 契約書を開く前に受信者を認証する方法を指定します。電話、ナレッジベース、ソーシャル ID ベースの認証、 [政府 ID](https://helpx.adobe.com/jp/sign/using/adobesign-authentication-government-id.html) 対象： [!DNL Adobe Acrobat Sign]. の場合 [!DNL Adobe Acrobat Sign for Government] 電話認証とナレッジベース認証のどちらを選択できます。
+   * **[!UICONTROL 受信者の認証方法]：** Adobe Sign 契約書を開く前に受信者を認証する方法を指定します。電話認証、ナレッジベース認証、ソーシャル ID に基づく認証、[!DNL Adobe Acrobat Sign] の [Government ID](https://helpx.adobe.com/jp/sign/using/adobesign-authentication-government-id.html) のいずれかを選択できます。[!DNL Adobe Acrobat Sign for Government] の場合、電話認証とナレッジベース認証のいずれかを選択できます。
 
    >[!NOTE]
    >
@@ -289,7 +289,7 @@ Adobe Sign 契約 ID（agreementId）は、アダプティブフォームの送�
 >Data of the Adaptive Form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
-これで、フォームに署名する準備が整いました。フォームのプレビューを表示して、署名エクスペリエンスを確認することができます。受信者がメールで署名用のフォームを受信すると、公開済みフォーム上に [!DNL Adobe Sign] ブロックのフィールドが表示されます。「**[!UICONTROL 受信者とフォーム記入者は同一ですか？]**」オプションが「はい」とマークされ、条件が満たされると、ユーザーは送信後に Adobe Sign 契約書にリダイレクトされ、契約書がメールに表示されるのを待たずに、即座にドキュメントに署名できます。
+これで、フォームに署名する準備が整いました。フォームのプレビューを表示して、署名エクスペリエンスを確認できます。受信者がメールで署名用のフォームを受信すると、公開済みフォーム上に [!DNL Adobe Sign] ブロックのフィールドが表示されます。「**[!UICONTROL 受信者とフォーム記入者は同一ですか？]**」オプションが「はい」とマークされ、条件が満たされると、ユーザーは送信後に Adobe Sign 契約書にリダイレクトされ、契約書がメールに表示されるのを待たずに、即座にドキュメントに署名できます。
 
 ## アダプティブフォームのクラウド署名の設定 {#configure-cloud-signatures-for-an-adaptive-form}
 

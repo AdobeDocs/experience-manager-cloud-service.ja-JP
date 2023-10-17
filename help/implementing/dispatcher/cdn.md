@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
 workflow-type: tm+mt
 source-wordcount: '1033'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -34,7 +34,7 @@ Cloud Manager セルフサービス UI を使用して、AEM の標準搭載 CDN
 
 デフォルトでは、AEM の管理による CDN 設定の場合、実稼動環境と実稼動以外（開発およびステージング）の環境の両方で、すべてのパブリックトラフィックがパブリッシュサービスに到達できます。Cloud Manager ユーザーインターフェイスを使用して、特定の環境のパブリッシュサービスへのトラフィックを制限できます（IP アドレスの範囲でステージングを制限するなど）。
 
-詳しくは、 [IP許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) を参照してください。
+詳しくは、[IP 許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)を参照してください。
 
 >[!CAUTION]
 >

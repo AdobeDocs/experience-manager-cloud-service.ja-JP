@@ -14,7 +14,7 @@ exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2076'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -473,13 +473,13 @@ PWA Studio プロジェクトを使用すると、Adobe Commerce または Magen
 
 __エクスペリエンス XDM イベント：__
 
-1. 買い物かごに追加 (AEM)
-1. ページを表示 (AEM)
-1. 製品を表示 (AEM)
-1. 送信された検索リクエスト (AEM)
-1. 受信した検索応答 (AEM)
+1. 買い物かごに追加（AEM）
+1. ページを表示（AEM）
+1. 製品を表示（AEM）
+1. 送信された検索リクエスト（AEM）
+1. 受信した検索応答（AEM）
 
-条件 [Peregrine コンポーネント](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) は、AEM Commerce プロジェクトで再利用されます。
+[Peregrine コンポーネント](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/)が AEM Commerce プロジェクトで再利用されている場合：
 
 __エクスペリエンス XDM イベント：__
 
@@ -488,7 +488,7 @@ __エクスペリエンス XDM イベント：__
 1. 買い物かごを表示
 1. 即時購入
 1. チェックアウトを開始
-1. チェックアウトの完了
+1. チェックアウトを完了
 
 __プロファイル XDM イベント：__
 
@@ -503,5 +503,5 @@ __プロファイル XDM イベント：__
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
 - [Experience Platform コネクタの概要](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html?lang=ja)
-- [Experience Platformコネクタイベント](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html)
+- [Experience Platform コネクタイベント](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html?lang=ja)
 - [Adobe Experience Platform の概要](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=ja)

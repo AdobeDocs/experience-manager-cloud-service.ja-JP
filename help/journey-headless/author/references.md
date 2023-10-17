@@ -5,7 +5,7 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '712'
-ht-degree: 87%
+ht-degree: 92%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 87%
 
 こうした相互関係は、作成者とヘッドレスアプリケーションの双方が理解できるように、フラグメント参照を使用して表すことができます。
 
-作成者は、これらの関係（コンテンツフラグメントモデルの作成時にコンテンツアーキテクトがおこなう）を定義する必要はありませんが、参照を認識し編集する方法を理解しておく必要があります。
+作成者は、これらの関係を定義するわけではありません（コンテンツフラグメントモデルの作成時にコンテンツアーキテクトが行います）が、参照を把握して編集する方法を理解しておく必要があります。
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")

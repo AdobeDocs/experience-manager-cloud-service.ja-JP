@@ -5,7 +5,7 @@ exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
 source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 91%
+ht-degree: 94%
 
 ---
 
@@ -37,4 +37,4 @@ ht-degree: 91%
 >[!NOTE]
 >ベストプラクティスアナライザーレポートを使用すれば、情報を手動で収集および評価する必要がなくなるので、AEM as a Cloud Service の移行にかかる時間とコストをすばやく見積もれるようになります。
 
-ベストプラクティスアナライザーレポートは、AEM インスタンスからダウンロードすることもできます。詳しくは、 [ベストプラクティスアナライザーレポートの表示](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) を参照してください。
+ベストプラクティスアナライザーレポートは、AEM インスタンスからダウンロードすることもできます。詳しくは、[ベストプラクティスアナライザーレポートの表示](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report)を参照してください。

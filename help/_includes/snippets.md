@@ -2,12 +2,12 @@
 source-git-commit: cada650e940aa941538a43ffb1f9a16d1f0b8a61
 workflow-type: tm+mt
 source-wordcount: '83'
-ht-degree: 59%
+ht-degree: 62%
 
 ---
 # スニペット {#snippets}
 
-## ヘッドレス試行の促進 {#headless-trials-promotion}
+## ヘッドレス体験版のプロモーション {#headless-trials-promotion}
 
 [![30 日間の体験版を使用してヘッドレス CMS を理解しましょう](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=ja)
 

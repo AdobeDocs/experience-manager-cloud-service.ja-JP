@@ -7,7 +7,7 @@ exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -41,8 +41,8 @@ AEM を使用するには、チームメンバーが 1 つまたは複数の AEM
 >
 >AEM as a Cloud Service の製品プロファイルに割り当てられたすべてのユーザーは、**Cloud Manager ユーザー**&#x200B;の役割を介して Cloud Manager に読み取り専用でアクセスできます。
 >
->を持つユーザー **Cloud Manager** ユーザーの役割のみが Cloud Manager にログインし、プログラムメニューオプションを使用して、AEMオーサー環境（存在する場合）に移動できます。 **Cloud Manager ユーザー**の役割では、プログラムの詳細にアクセスするのに十分ではありません。 そのようなアクセスが必要な場合は、システム管理者から追加の役割を付与してもらう必要があります。
->詳しくは、 [以下の「その他のリソース」節](#additional-resources) Cloud Manager のユーザーの役割について詳しくは、を参照してください。
+>**Cloud Manager** ユーザーの役割のみを持つユーザーは、Cloud Manager にログインし、プログラムメニューオプションを使用して AEM オーサー環境（存在する場合）に移動できます。**Cloud Manager ユーザー**の役割では、プログラムの詳細にアクセスするのに十分ではありません。 そのようなアクセスが必要な場合は、システム管理者から追加の役割を付与してもらう必要があります。
+>Cloud Manager ユーザーの役割について詳しくは、[下記のその他のリソース](#additional-resources)のセクションを参照してください。
 
 >[!CAUTION]
 >
@@ -115,5 +115,5 @@ AEM を使用するには、チームメンバーが 1 つまたは複数の AEM
 
 * [AEM as a Cloud Service のチームおよび製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md) - ライセンス取得済みのアドビソリューションに対するアクセスを AEM as a Cloud Service のチームおよび製品プロファイルで許可および制限する方法について説明します。
 * [Admin Console での製品とユーザーアクセスの管理](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - Admin Console を使用してユーザーアクセスを管理する方法について説明します。
-* [AEM へのアクセスの設定のウォークスルー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html) - Admin Console で Adobe IMS ユーザー、ユーザーグループ、製品プロファイルを設定する方法については、こちらの簡潔なウォークスルーを参照してください。
+* [AEM へのアクセスの設定のウォークスルー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=ja) - Admin Console で Adobe IMS ユーザー、ユーザーグループ、製品プロファイルを設定する方法については、こちらの簡潔なウォークスルーを参照してください。
 

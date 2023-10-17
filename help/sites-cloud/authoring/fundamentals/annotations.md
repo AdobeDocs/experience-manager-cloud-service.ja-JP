@@ -5,7 +5,7 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '694'
-ht-degree: 87%
+ht-degree: 91%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 87%
 
 1. 注釈の追加を開始するには、注釈を追加アイコン（ツールバーの左側にあるプラス記号）をクリックまたはタップします。
 
-1. 注釈を追加する必要のあるコンポーネント（注釈を付けることのできるコンポーネントは青い境界線でハイライト表示されます）をクリックまたはタップして、ダイアログを開きます。
+1. 注釈を追加するために必要なコンポーネント（注釈を追加できるコンポーネントは青いボーダーで強調表示されます）をクリックまたはタップして、ダイアログを開きます。
 
    ![注釈の追加](/help/sites-cloud/authoring/assets/annotation-adding.png)
 

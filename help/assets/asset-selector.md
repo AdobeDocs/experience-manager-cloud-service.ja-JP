@@ -3,11 +3,11 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセッ�
 description: アセットセレクターを使用して、アプリケーション内のアセットのメタデータとレンディションを検索および取得します。
 contentOwner: Adobe
 role: Admin,User
-exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: dd923ae9d63f1ca1379d8e177ff7b00648da052a
+exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
+source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
 workflow-type: tm+mt
 source-wordcount: '2373'
-ht-degree: 91%
+ht-degree: 96%
 
 ---
 
@@ -173,12 +173,12 @@ interface SelectedAsset {
 | *repo:size* | 数値 | アセットのサイズ（バイト単位）。 |
 | *repo:path* | 文字列 | リポジトリ内のアセットの場所。 |
 | *repo:ancestors* | `Array<string>` | リポジトリ内のアセットの上位項目の配列。 |
-| *repo:state* | 文字列 | リポジトリ内のアセットの現在の状態（アクティブ、削除など）。 |
+| *repo:state* | 文字列 | リポジトリ内のアセットの現在のステータス（例：アクティブ、削除済みなど）。 |
 | *repo:createdBy* | 文字列 | アセットを作成したユーザーまたはシステム。 |
 | *repo:createDate* | 文字列 | アセットが作成された日時。 |
 | *repo:modifiedBy* | 文字列 | アセットを最後に変更したユーザーまたはシステム。 |
 | *repo:modifyDate* | 文字列 | アセットが最後に変更された日時。 |
-| *dc:format* | 文字列 | アセットの形式 ( ファイルタイプ ( 例：JPEG、PNG など )。 |
+| *dc:format* | 文字列 | ファイルタイプなどのアセットの形式（例：JPEG、PNG）。 |
 | *tiff:imageWidth* | 数値 | アセットの幅。 |
 | *tiff:imageLength* | 数値 | アセットの高さ。 |
 | *computedMetadata* | `Record<string, any>` | あらゆる種類（リポジトリ、アプリケーション、埋め込みメタデータ）のすべてのアセットのメタデータのバケットを表すオブジェクト。 |
@@ -225,7 +225,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 この例では、統合シェルの下で [!DNL Adobe] アプリケーションを実行している場合、または認証用に生成された `imsToken` が既にある場合に、アセットセレクターを非 SUSI フローと連携して使用する方法を示します。
 
-を使用して、コードにアセットセレクターパッケージを含めます。 `script` タグ、 _6～15 行目_ 以下の例のを参照してください。 スクリプトが読み込まれると、`PureJSSelectors` グローバル変数を使用できるようになります。アセットセレクターの定義 [プロパティ](#asset-selector-properties) に示すように、 _16～23 行_. `imsOrg` プロパティと `imsToken` プロパティは、いずれも非 SUSI フローでの認証に必要です。`handleSelection` プロパティは、選択したアセットを処理するために使用されます。_17 行目_&#x200B;で示されているように、アセットセレクターをレンダリングするには `renderAssetSelector` 関数を呼び出します。_21～22 行目_&#x200B;に示されているように、アセットセレクターが `<div>` コンテナ要素に表示されます。
+以下の例の _6～15 行目_&#x200B;に示されているように、`script` タグを使用してアセットセレクターパッケージをコードに含めます。スクリプトが読み込まれると、`PureJSSelectors` グローバル変数を使用できるようになります。_16～23 行目_&#x200B;に示されているように、アセットセレクターの[プロパティ](#asset-selector-properties)を定義します。`imsOrg` プロパティと `imsToken` プロパティは、いずれも非 SUSI フローでの認証に必要です。`handleSelection` プロパティは、選択したアセットを処理するために使用されます。_17 行目_&#x200B;で示されているように、アセットセレクターをレンダリングするには `renderAssetSelector` 関数を呼び出します。_21～22 行目_&#x200B;に示されているように、アセットセレクターが `<div>` コンテナ要素に表示されます。
 
 これらの手順に従うと、[!DNL Adobe] アプリケーションでアセットセレクターを非 SUSI フローと連携して使用できます。
 
@@ -362,11 +362,11 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 
 | プロパティ | タイプ | 必須 | デフォルト | 説明 |
 |---|---|---|---|---|
-| *rail* | ブーリアン | いいえ | false | マークされている場合 `true`の場合、アセットセレクターが左側のパネル表示でレンダリングされます。 マークが付いている場合 `false`の場合、アセットセレクターがモーダルビューでレンダリングされます。 |
-| *imsOrg* | 文字列 | はい | | [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] を組織にプロビジョニングする場合に割り当てられる Adobe Identity Management System（IMS）の ID です。The `imsOrg` キーは、アクセスする組織がAdobe IMS中かどうかを認証するために必要です。 |
+| *rail* | ブーリアン | いいえ | false | `true` とマークされている場合、アセットセレクターは左側のパネルビューにレンダリングされます。`false` とマークされている場合、アセットセレクターはモーダルビューにレンダリングされます。 |
+| *imsOrg* | 文字列 | はい | | [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] を組織にプロビジョニングする場合に割り当てられる Adobe Identity Management System（IMS）の ID です。`imsOrg` キーは、アクセスしようとしている組織が Adobe IMS 内にあるかどうかを認証するために必要です。 |
 | *imsToken* | 文字列 | いいえ | | 認証に使用される IMS ベアラートークンです。非 SUSI フローを使用している場合、`imsToken` は必須です。 |
 | *apiKey* | 文字列 | いいえ | | AEM Discovery サービスへのアクセスに使用する API キーです。非 SUSI フローを使用している場合、`apiKey` は必須です。 |
-| *rootPath* | 文字列 | いいえ | /content/dam/ | アセットセレクターがアセットを表示する元のフォルダーパスです。`rootPath` はカプセル化の形式でも使用できます。例えば、次のパスの場合、 `/content/dam/marketing/subfolder/`の場合、アセットセレクターを使用すると、親フォルダーをトラバースできず、子フォルダーのみが表示されます。 |
+| *rootPath* | 文字列 | いいえ | /content/dam/ | アセットセレクターがアセットを表示する元のフォルダーパスです。`rootPath` はカプセル化の形式でも使用できます。例えば、次のパス `/content/dam/marketing/subfolder/` を指定すると、アセットセレクターでは親フォルダーをトラバースできず、子フォルダーのみが表示されます。 |
 | *path* | 文字列 | いいえ | | アセットセレクターがレンダリングされる際に、アセットの特定のディレクトリに移動するために使用されるパスです。 |
 | *filterSchema* | 配列 | いいえ | | フィルタープロパティの設定に使用するモデルです。これは、アセットセレクターで特定のフィルターオプションを制限する場合に便利です。 |
 | *filterFormProps* | オブジェクト | いいえ | | 検索を絞り込むために使用する必要があるフィルタープロパティを指定します。（例：MIME タイプの JPG、PNG、GIF） |

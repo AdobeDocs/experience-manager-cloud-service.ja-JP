@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 13c67c35238c5138120f6d0d4845c759221d65ad
 workflow-type: tm+mt
 source-wordcount: '2015'
-ht-degree: 88%
+ht-degree: 91%
 
 ---
 
@@ -65,7 +65,7 @@ AEM as a Cloud Service では、次の特長を備えたオーケストレーシ
 ## 環境 {#environments}
 
 >[!NOTE]
->詳しくは、 [デプロイ — 実行モード](/help/implementing/deploying/overview.md#runmodes)
+>詳しくは、[デプロイ - 実行モード](/help/implementing/deploying/overview.md#runmodes)を参照してください
 
 AEM as a Cloud Service は個々のインスタンスとして使用でき、各インスタンスは完全な AEM 環境を表します。
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service で使用できる環境には、次の 3 種類があり
 
 * **開発環境**：ステージ環境および実稼動環境と同じランタイム条件で開発者が AEM アプリケーションを実装できます。
 
-  詳しくは、 [環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja#using-cloud-manager) を参照してください。
+  詳しくは、[環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja#using-cloud-manager)を参照してください。
 
 * **迅速な開発環境**：新しいコードや既存のコードをデバッグする迅速な開発イテレーションが可能になります。
 
@@ -127,13 +127,13 @@ AEM as a Cloud Service では、次の 2 種類のプログラムが最初から
 
    * パブリッシュ層は、1 つのパブリッシュファーム内の 2 つ以上のノードで構成されます。
 
-      * 各ノードは、互いに独立して動作することができます。
+      * 各ノードは、互いに独立して動作できます。
 
-      * 各ノードは、AEM パブリッシャーと、AEM Dispatcher モジュールを備えた Web サーバーで構成されます。
+      * 各ノードは、AEM パブリッシャーと、AEM Dispatcher モジュールを備えた web サーバーで構成されます。
 
       * サイトトラフィックのニーズに合わせて、規模が自動的に拡大／縮小されます。
 
-      * ただし、デフォルトでは、プライマリリージョンには 1 つのパブリッシュファームが存在します [追加の公開地域](/help/operations/additional-publish-regions.md) はライセンスを受けることができます。
+      * ただし、デフォルトでは、プライマリリージョンに 1 つのパブリッシュファームが存在しますが、[追加のパブリッシュリージョン](/help/operations/additional-publish-regions.md)はライセンスを取得できます。
 
       * エンドユーザーつまりサイト訪問者は、AEM パブリッシュサービスを通じて Web サイトにアクセスします。
 
@@ -211,7 +211,7 @@ AEMにはEdge Delivery Servicesが加わり、エンゲージメントとコン�
    * ページエディター
    * ドキュメントベースのオーサリング (SharePointまたはGoogle Drive から )
 * エクスペリエンス配信（次を含む）
-   * エッジ配信サービス
+   * Edge 配信サービス
 * コンテンツとコードを迅速かつ効率的に配信するための付帯サービス
 
 ![AEMas a Cloud Serviceの概要 —Edge Delivery Services](assets/AEMaaCS-Edge-Architecture.png "AEMas a Cloud Serviceの概要 —Edge Delivery Services")

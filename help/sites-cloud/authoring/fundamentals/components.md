@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '347'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ AEM には、すぐに使用できる様々なコンポーネントが付属し�
 
 ## 一般的な使用方法 {#general-usage}
 
-コンポーネントは、[ページの編集](/help/sites-cloud/authoring/fundamentals/editing-content.md)時にページエディターのサイドパネルの「**コンポーネント**」タブで使用できます。
+コンポーネントは、[ページの編集](/help/sites-cloud/authoring/fundamentals/editing-content.md)時に、ページエディターのサイドパネルにある「**コンポーネント**」タブで使用できます。
 
 コンポーネントを選択し、ページ上の必要な場所にドラッグできます。その後、次の機能を使用して編集できます。
 
@@ -31,7 +31,7 @@ AEM には、すぐに使用できる様々なコンポーネントが付属し�
 * [コンテンツの編集](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 * [コンテンツの編集 - 全画面表示モード](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-content-full-screen-mode)
 
-ページへのコンポーネントの追加について詳しくは、 [ページのコンテンツの編集](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+ページへのコンポーネントの追加について詳しくは、[ページコンテンツの編集](/help/sites-cloud/authoring/fundamentals/editing-content.md)を参照してください。
 
 ## 全コンポーネントの概要 {#overview-of-all-components}
 
@@ -43,7 +43,7 @@ AEM には、すぐに使用できる様々なコンポーネントが付属し�
 
 これらは AEM のベストプラクティスに従って構築され、AEM オーサリングエクスペリエンスの基盤となります。コアコンポーネントは、特定のプロジェクトニーズに合わせて開発者が容易に拡張できます。
 
-WCM コアコンポーネントと共に、 [アダプティブFormsコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). これらのコアコンポーネントは、標準の簡単な方法で [AEM Sites Page にフォームを作成または追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
+WCM コアコンポーネントと共に、[アダプティブフォームコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja#features)も使用できます。これらのコアコンポーネントは標準的で簡単な方法で、[AEM Sites ページにフォームを作成または追加します](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。
 
 ### テンプレートの設定 {#configuring-templates}
 

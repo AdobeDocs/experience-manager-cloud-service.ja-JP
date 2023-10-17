@@ -1,17 +1,17 @@
 ---
 title: 迅速な開発環境
-description: クラウド環境で迅速な開発反復処理を行うための、高速開発環境の使用方法を説明します。
+description: クラウド環境で迅速な開発反復処理を行うために、迅速な開発環境を活用する方法について説明します。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
 workflow-type: tm+mt
 source-wordcount: '3304'
-ht-degree: 58%
+ht-degree: 67%
 
 ---
 
 # 迅速な開発環境 {#rapid-development-environments}
 
-変更をデプロイするには、現在のクラウド開発環境で、CI/CD パイプラインと呼ばれる広範なコードセキュリティと品質ルールを採用したプロセスを使用する必要があります。 迅速かつ反復的な変更が必要な状況に対応するために、アドビは迅速な開発環境（RDE）を導入しました。
+変更をデプロイするために、現在のクラウド開発環境では、CI／CD パイプラインと呼ばれる広範なコードセキュリティと品質ルールを採用したプロセスを使用する必要があります。迅速かつ反復的な変更が必要な状況に対応するために、アドビは迅速な開発環境（RDE）を導入しました。
 
 RDE を使用すると、デベロッパーは、ローカル開発環境での動作が証明済みの機能に要するテスト時間を最小限に抑え、変更を迅速にデプロイおよび確認できます。
 
@@ -20,7 +20,7 @@ RDE を使用すると、デベロッパーは、ローカル開発環境での�
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-他のデモビデオもご覧いただけます。 [設定方法](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html?lang=ja), [使用方法](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=ja)、および [開発ライフサイクル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html?lang=ja) RDE を使用している。
+[設定方法](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html?lang=ja)、[使用方法](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=ja)、RDE を使用した[開発ライフサイクル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html?lang=ja)を示す追加のビデオを参照できます。
 
 ## はじめに {#introduction}
 
@@ -42,9 +42,9 @@ Cloud Manager を使用してプログラムの RDE を作成できるように�
 
 1. RDE を追加するプログラムをクリックして、詳細を表示します。
 
-   * RDE は両方に追加できます [サンドボックスプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) および [実稼働プログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
+   * RDE は、[サンドボックスプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)および[実稼動プログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)の両方に追加できます。
 
-1. 次から： **プログラムの概要** ページ、クリック **環境を追加** の **環境** カードを使用して環境を追加します。
+1. **プログラムの概要**&#x200B;ページで、**環境**&#x200B;カードの「**環境を追加**」をクリックして環境を追加します。
 
    ![環境カード](/help/implementing/cloud-manager/assets/no-environments.png)
 
@@ -70,11 +70,11 @@ Cloud Manager を使用してプログラムの RDE を作成できるように�
 
 作成時に、RDE は使用可能な最新の AEM バージョンに設定されます。RDE リセット（Cloud Manager を使用して実行することもできます）は、RDE を繰り返し、利用可能な最新のAEMバージョンに設定します。
 
-Cloud Manager を使用した環境の作成、環境へのアクセス権を持つユーザーの管理、カスタムドメインの割り当てについて詳しくは、 [Cloud Manager のドキュメント](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+Cloud Manager を使用した環境の作成、環境へのアクセス権のあるユーザーの管理、カスタムドメインの割り当てについて詳しくは、[Cloud Manager ドキュメント](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)を参照してください。
 
 ## RDE コマンドラインツールのインストール {#installing-the-rde-command-line-tools}
 
-Cloud Manager を使用してプログラムに RDE を追加したら、次の手順に従ってコマンドラインツールを設定し、RDE を操作できます。
+Cloud Manager を使用してプログラムに RDE を追加したら、次の手順に従ってコマンドラインツールを設定して、RDE を操作できます。
 
 >[!IMPORTANT]
 >
@@ -104,7 +104,7 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
 
    `aio config:set cloudmanager_environmentid 123456`
 
-1. プラグインの設定が完了したら、次を実行してログインします。
+1. プラグインの設定が完了したら、次の操作を実行してログインします。
 
    `aio login`
 
@@ -365,7 +365,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 ## リセット {#reset-rde}
 
-RDE をリセットすると、すべてのカスタムコード、設定およびコンテンツが、オーサーインスタンスとパブリッシュインスタンスの両方から削除されます。このリセットは、例えば、RDE を使用して特定の機能をテストし、別の機能をテストできるようにデフォルトの状態にリセットする場合に便利です。
+RDE をリセットすると、すべてのカスタムコード、設定およびコンテンツが、オーサーインスタンスとパブリッシュインスタンスの両方から削除されます。このリセットは、例えば、RDE を使用して特定の機能をテストしていて、別の機能をテストするためにデフォルトの状態にリセットする場合に便利です。
 
 リセットを実行すると、RDE が利用可能な最新のAEMバージョンに設定されます。
 
@@ -393,11 +393,11 @@ This usually takes a few minutes. Use the [status command](#checking-rde-status)
 
 1. RDE をリセットするプログラムをクリックします。
 
-1. 次から： **概要** ページで、 **環境** 」タブをクリックします。
+1. **概要**&#x200B;ページで、画面上部の「**環境**」タブをクリックします。
 
    ![「環境」タブ](/help/implementing/cloud-manager/assets/environments-tab2.png)
 
-   * または、 **すべて表示** ボタン **環境** 直接～に飛び乗るカード **環境** タブをクリックします。
+   * または、**環境**&#x200B;カードの「**すべて表示**」ボタンをクリックして、「**環境**」タブに直接ジャンプします。
 
      ![「すべて表示」オプション](/help/implementing/cloud-manager/assets/environment-showall.png)
 
@@ -417,7 +417,7 @@ This usually takes a few minutes. Use the [status command](#checking-rde-status)
 
    ![バナー通知のリセット](/help/implementing/cloud-manager/assets/rde-reset-banner.png)
 
-RDE のリセットプロセスが開始されると、通常は完了し、環境をデフォルトの状態に戻すのに数分かかります。 リセットプロセスのステータスは、**環境**&#x200B;カードの&#x200B;**ステータス**&#x200B;列、または&#x200B;**環境**&#x200B;ウィンドウでいつでも確認できます。
+RDE のリセットプロセスが開始されると、通常、プロセスが完了して環境がデフォルトの状態に戻るまでに数分かかります。リセットプロセスのステータスは、**環境**&#x200B;カードの&#x200B;**ステータス**&#x200B;列、または&#x200B;**環境**&#x200B;ウィンドウでいつでも確認できます。
 
 ![RDE リセットステータス](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
 
@@ -425,7 +425,7 @@ RDE のリセットプロセスが開始されると、通常は完了し、環�
 
 ![環境カードからの RDE のリセット](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
-Cloud Manager を使用した環境の管理方法について詳しくは、 [Cloud Manager のドキュメント](/help/implementing/cloud-manager/manage-environments.md).
+Cloud Manager を使用した環境の管理方法について詳しくは、[Cloud Manager のドキュメント](/help/implementing/cloud-manager/manage-environments.md)を参照してください。
 
 ## 実行モード {#runmodes}
 
@@ -463,7 +463,7 @@ OSGi 設定を変更すると、ログレベルを設定できます。 詳し�
 
 ## RDE とクラウド開発環境の違いは何ですか？ {#how-are-rds-different-from-cloud-development-environments}
 
-RDE はクラウド開発環境に似た多くの方法で用意されていますが、コードをすばやく同期できるように、アーキテクチャには若干の小さな違いがあります。 コードを RDE に取得するメカニズムは異なります。RDE の場合はローカル開発環境からコードを同期し、Cloud Development Environments の場合は Cloud Manager を使用してコードをデプロイします。
+RDE は多くの点でクラウド開発環境に似ていますが、コードを素早く同期できるように、アーキテクチャ上の小さな違いが若干あります。コードを RDE に取得するメカニズムは異なります。RDE の場合はローカル開発環境からコードを同期し、Cloud Development Environments の場合は Cloud Manager を使用してコードをデプロイします。
 
 このような理由から、RDE 環境でコードを検証した後、実稼動以外のパイプラインを使用してコードをクラウド開発環境にデプロイすることをお勧めします。最後に、実稼動パイプラインでデプロイする前に、コードをテストします。
 

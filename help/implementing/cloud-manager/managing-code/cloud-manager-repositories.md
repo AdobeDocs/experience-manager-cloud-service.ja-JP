@@ -5,7 +5,7 @@ exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Cloud Manager で Git リポジトリを作成、表示および削除する方�
 >
 >特定の企業または IMS 組織のすべてのプログラムで、使用できるリポジトリは 300 個までです。
 
-## リポジトリーの追加と管理 {#add-manage-repos}
+## リポジトリの追加と管理 {#add-manage-repos}
 
 Cloud Manager でリポジトリを表示および管理するには、次の手順に従います。
 
@@ -38,7 +38,7 @@ Cloud Manager でリポジトリを表示および管理するには、次の手
 
 ![リポジトリ関連オプション](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-Cloud Manager で作成されたリポジトリは、パイプラインの追加や編集の際にも選択できます。 詳しくは、 [CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) を参照してください。
+Cloud Manager で作成されたリポジトリは、パイプラインの追加や編集の際にも選択できます。 詳しくは、[CI／CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)を参照してください。
 
 どのパイプラインにも 1 つのプライマリリポジトリまたはブランチがあります。[Git サブモジュールのサポート](#git-submodule-support)を使用すると、ビルド時に多数のセカンダリブランチを含めることができます。
 
@@ -51,7 +51,7 @@ Cloud Manager で作成されたリポジトリは、パイプラインの追加
 リポジトリを削除すると、次のようになります。
 
 * 削除したリポジトリ名は、今後作成される可能性のある新しいリポジトリに使用できなくなります。
-   * エラーメッセージ `Repository name should be unique within organization.` がそのような場合に表示されます。
+   * このような場合、「`Repository name should be unique within organization.`」というエラーメッセージが表示されます。
 * 削除したリポジトリを Cloud Manager で使用不可にし、パイプラインにリンクできないようにします。
 
 Cloud Manager でリポジトリを削除するには、次の手順に従います。
@@ -76,7 +76,7 @@ $ git submodule update --init
 
 この手法は、Git サブモジュールの使用に慣れていて、外部マージプロセスの管理を望まない組織にとっては、[複数のソース Git リポジトリの操作](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)に関するドキュメントで説明しているソリューションの代わりになる可能性があります。
 
-例えば、3 つのリポジトリがあり、それぞれに `main` という名前のブランチが 1 つあるとします。プライマリリポジトリ（パイプラインで設定されたもの）では、 `main` ブランチに `pom.xml` 他の 2 つのリポジトリーに含まれるプロジェクトを宣言するファイル。
+例えば、3 つのリポジトリがあり、それぞれに `main` という名前のブランチが 1 つあるとします。プライマリリポジトリ（パイプラインで設定されたもの）の `main` ブランチには、他の 2 つのリポジトリに含まれるプロジェクトを宣言している `pom.xml` ファイルがあります。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -119,7 +119,7 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 Git サブモジュールについて詳しくは、[Git リファレンスマニュアル](https://git-scm.com/book/ja/v2/Git-Tools-Submodules)を参照してください。
 
-### 制限事項と推奨事項 {#limitations-recommendations}
+### 制限事項とレコメンデーション {#limitations-recommendations}
 
 Git サブモジュールを使用する場合は、次の制限事項に注意してください。
 

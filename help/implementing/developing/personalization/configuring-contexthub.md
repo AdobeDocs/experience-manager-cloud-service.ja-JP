@@ -5,13 +5,13 @@ exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
 source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
 source-wordcount: '1689'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
 # ContextHub の設定 {#configuring-contexthub}
 
-ContextHub は、コンテキストデータを保存、操作および表示するためのフレームワークです。ContextHub について詳しくは、 [ContextHub 開発者向けの概要](contexthub.md).
+ContextHub は、コンテキストデータを保存、操作および表示するためのフレームワークです。ContextHub について詳しくは、[ContextHub デベロッパー向け概要](contexthub.md)を参照してください。
 
 ContextHub ツールバーを設定して、プレビューモードで表示するかどうかを制御し、ContextHub ストアを作成したり UI モジュールを追加したりできます。
 
@@ -21,7 +21,7 @@ Adobe Granite ContextHub OSGi サービスを設定して、ページで [Contex
 
 このサービスは、[Web コンソール](/help/implementing/deploying/configuring-osgi.md)またはリポジトリー内の JCR ノードを使用して設定できます。
 
-* **Web コンソール：** UI を表示するには、「Show UI」プロパティを選択します。UI を非表示にするには、「Show UI」プロパティをオフにします。
+* **Web コンソール：** UI を表示するには、「表示 UI」プロパティを選択します。UI を非表示にするには、「非表示 UI」プロパティをクリアします。
 * **JCR ノード：** UI を表示するには、`com.adobe.granite.contexthub.show_ui` ブール値プロパティを `true` に設定します。UI を非表示にするには、プロパティを `false` に設定します。
 
 ContextHub UI を表示する場合は、AEM オーサーインスタンスのページにのみ表示されます。この UI は、パブリッシュインスタンスのページには表示されません。
@@ -66,12 +66,12 @@ AEM には、基本 UI モジュールタイプと、UI モジュールのベー
 
 UI モジュールのプロパティには、モジュール固有のプロパティの値を指定できる詳細設定が含まれています。詳細設定は JSON 形式で指定します。表の「モジュールタイプ」列は、各 UI モジュールタイプに必要な JSON コードに関する情報へのリンクを示します。
 
-| モジュールタイプ | 説明 | ストア |
+| モジュールの種類 | 説明 | ストア |
 |---|---|---|
 | [contexthub.base](sample-modules.md#contexthub-base-ui-module-type) | 汎用の UI モジュールタイプ | UI モジュールのプロパティで設定されます |
 | [contexthub.browserinfo](sample-modules.md#contexthub-browserinfo-ui-module-type) | ブラウザーに関する情報が表示されます | `surferinfo` |
 | [contexthub.datetime](sample-modules.md#contexthub-datetime-ui-module-type) | 日付と時間の情報が表示されます | `datetime` |
-| [contexthub.location](sample-modules.md#contexthub-location-ui-module-type) | クライアントの緯度と経度、およびマップ上の位置を表示します。 位置は変更できます。 | `geolocation` |
+| [contexthub.location](sample-modules.md#contexthub-location-ui-module-type) | クライアントの緯度と経度、およびマップ上の位置が表示されます。位置は変更できます。 | `geolocation` |
 | [contexthub.screen-orientation](sample-modules.md#contexthub-screen-orientation-ui-module-type) | デバイスの画面の向きが表示されます（横置きまたは縦置き） | `emulators` |
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | ページのタグに関する統計が表示されます | `tagcloud` |
 | [granite.profile](sample-modules.md#granite-profile-ui-module-type) | `authorizableID`、`displayName`、`familyName` など、現在のユーザーのプロファイル情報が表示されます。`displayName` と `familyName` の値は変更できます。 | `profile` |
@@ -95,7 +95,7 @@ UI モジュールのプロパティには、モジュール固有のプロパ�
 
 ## ContextHub ストアの作成 {#creating-a-contexthub-store}
 
-ContextHub ストアを作成してユーザーデータを保持し、必要に応じてそのデータにアクセスします。ContextHub ストアは、登録済みのストア候補に基づきます。ストアを作成する際には、ストア候補が登録された storeType の値が必要です（[カスタムストア候補の作成](extending-contexthub.md#creating-custom-store-candidates)を参照してください）。
+ContextHub ストアを作成してユーザーデータを保持し、必要に応じてそのデータにアクセスします。ContextHub ストアは、登録済みのストア候補に基づきます。ストアを作成する際には、ストア候補が登録された storeType の値が必要です（[カスタムストア候補の作成を参照してください](extending-contexthub.md#creating-custom-store-candidates)）。
 
 ### ストアの詳細設定 {#detailed-store-configuration}
 
@@ -107,7 +107,7 @@ ContextHub ストアを作成してユーザーデータを保持し、必要に
 
 AEM には、ストアのベースにできる次のサンプルのストア候補が用意されています。
 
-| ストアタイプ | 説明 |
+| ストアの種類 | 説明 |
 |---|---|
 | [aem.segmentation](sample-stores.md#aem-segmentation-sample-store-candidate) | 解決済みおよび未解決の ContextHub セグメント用のストア。ContextHub SegmentManager からセグメントを自動的に取得します |
 | [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) | ブラウザーの場所の緯度と経度を格納します。 |
@@ -124,7 +124,7 @@ AEM には、ストアのベースにできる次のサンプルのストア候�
 
 1. 次の基本設定のプロパティの値を指定して「次へ」をクリックまたはタップします。
 
-   * **設定のタイトル：**&#x200B;ストアを識別するタイトル。
+   * **設定タイトル：**&#x200B;ストアを識別するタイトル。
    * **ストアタイプ：**&#x200B;ストアのベースとなるストア候補の storeType プロパティの値。
    * **必須：**&#x200B;オン。
    * **有効：**&#x200B;オンにするとストアが有効になります。
@@ -149,7 +149,7 @@ contexthub.generic-jsonp ストアがサービスコール `https://md5.jsontest
 
 contexthub.generic-jsonp のサンプルのストア候補を使用すると、JSON データを返す JSONP サービスや Web サービスからデータを取得できます。このストア候補では、そのストア設定を使用して、使用する JSONP サービスに関する詳細を指定します。
 
-The [init](contexthub-api.md#init-name-config) 関数 `ContextHub.Store.JSONPStore` JavaScript クラスは `config` このストア候補を初期化するオブジェクト。 `config` オブジェクトには JSONP サービスに関する情報が含まれる `service` オブジェクトが含まれています。ストアを設定するには、詳細設定プロパティの値として `service` オブジェクトを JSON 形式で指定します。
+`ContextHub.Store.JSONPStore` Javascript クラスの [init](contexthub-api.md#init-name-config) 関数は、このストア候補を初期化する `config` オブジェクトを定義します。`config` オブジェクトには JSONP サービスに関する情報が含まれる `service` オブジェクトが含まれています。ストアを設定するには、詳細設定プロパティの値として `service` オブジェクトを JSON 形式で指定します。
 
 jsontest.com サイトの MD5 サービスからのデータを保存するには、次のプロパティを使用して [ContextHub ストアの作成](#creating-a-contexthub-store)の手順に従います。
 
@@ -207,7 +207,7 @@ ContextHub の設定を編集し、「**デバッグ**」オプションをオ�
 
 1. レールで、**ツール／サイト／ContextHub** をクリックまたはタップします。
 1. デフォルトの「**設定コンテナ**」をクリックまたはタップします。
-1. 「**ContextHub 設定**」を選択し、「**選択した要素を編集**」をクリックまたはタップします。
+1. 「**ContextHub 設定** 」を選択し、「**選択した要素を編集**」をクリックまたはタップします。
 1. 「**デバッグ**」をクリックまたはタップし、「**保存**」をクリックまたはタップします。
 
 ### CRXDE による有効化 {#via-crxde}
@@ -230,7 +230,7 @@ CRXDE Lite を使用して、`debug` プロパティを **true** に設定しま
 
 サイレントモードでは、すべてのデバッグ情報が無効になります。各 ContextHub 設定に対して個別に設定可能な通常のデバッグオプションとは異なり、サイレントモードは、ContextHub 設定レベルのあらゆるデバッグ設定より優先されるグローバル設定です。
 
-これは、デバッグ情報をまったく必要としないパブリッシュインスタンスに役立ちます。 これはグローバル設定なので、OSGi を介して有効にします。
+これは、デバッグ情報をまったく必要としないパブリッシュインスタンスに便利なモードです。これはグローバル設定なので、OSGi を介して有効にします。
 
 1. `http://<host>:<port>/system/console/configMgr` で **Adobe Experience Manager Web コンソール設定**&#x200B;を開きます。
 1. **Adobe Granite ContextHub** を検索します。
@@ -239,14 +239,14 @@ CRXDE Lite を使用して、`debug` プロパティを **true** に設定しま
 
 ## ContextHub の無効化 {#disabling-contexthub}
 
-ContextHub を無効にすると、js／css の読み込みと初期化を回避できます。ContextHub を無効にするには、次の 2 つの方法があります。
+ContextHub を無効にすると、js／css の読み込みと初期化を回避できます。ContextHub を無効にする方法は 2 つあります。
 
 * ContextHub の設定を編集し、「**ContextHub を無効にする**」チェックボックスをオンにします。
 
    1. レールで、**ツール／サイト／ContextHub** をクリックまたはタップします。
    1. デフォルトの「**設定コンテナ**」をクリックまたはタップします。
    1. 「**ContextHub 設定**」を選択し、「**選択した要素を編集**」をクリックまたはタップします。
-   1. クリックまたはタップ **ContextHub を無効にする** をクリックまたはタップします。 **保存**
+   1. 「**ContextHub を無効にする**」をクリックまたはタップし、「**保存**」をクリックまたはタップします。
 
 または
 

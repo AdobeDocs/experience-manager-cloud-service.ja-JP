@@ -9,7 +9,7 @@ exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 source-git-commit: 2f3845495b545f88a1bc5a5feef1a6312f679a26
 workflow-type: tm+mt
 source-wordcount: '4501'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -66,7 +66,7 @@ DAM ユーザーがリポジトリーに既に存在する 1 つ以上のアセ�
 
 >[!NOTE]
 >
->を使用して複製検出を設定した場合 `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` 設定ファイル（OSGi 設定）を使用する場合は引き続き使用できますが、Adobeでは新しい方法を使用することをお勧めします。
+>`/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` 設定ファイル（OSGi 設定）を使用して Duplication Detector を設定してある場合は、それを引き続き使用できますが、アドビでは新しい手段を使用することをお勧めします。
 
 
 有効にすると、Experience Manager は重複アセットの通知を Experience Manager インボックスに送信します。これは、複数の重複の集計結果です。ユーザーは、結果に基づいてアセットを削除することを選択できます。
@@ -205,7 +205,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    >[!NOTE]
    >
-   >* 新しい場所に同じ名前のアセットがない場合は、アセットに同じ名前を指定できます。ただし、アセットの移動先に同じ名前のアセットが既に存在する場合は、別の名前を使用する必要があります。同じ名前を使用すると、システムによってその名前のバリエーションが自動的に生成されます。例えば、アセットの名前が「Square」の場合、コピーの名前は「Square1」になります。
+   >* 新しい場所に同じ名前のアセットがない場合は、アセットに同じ名前を指定できます。ただし、アセットの移動先に同じ名前のアセットが既に存在する場合は、別の名前を使用する必要があります。同じ名前を使用すると、システムによってその名前のバリエーションが自動的に生成されます。例えば、アセットの名前が「Square」である場合、そのコピーの名前は自動的に「Square1」になります。
    >* 名前を変更する場合、ファイル名に空白は使用できません。
 
 1. **[!UICONTROL 宛先を選択]**&#x200B;ダイアログで、次のいずれかの操作を行います。

@@ -6,7 +6,7 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
 source-wordcount: '1099'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 92%
 
 Adobe Experience Manager ヘッドレス CMS を初めて使用する開発者向けドキュメントへようこそ。
 
-強力で柔軟なヘッドレス機能、その機能、初めてのヘッドレス開発プロジェクトでの使用方法について説明します。 このジャーニーでは、最初のヘッドレスアプリケーションの開発に必要なあらゆる情報を提供します。
+強力かつ柔軟なヘッドレス機能とその特長および最初のヘッドレス開発プロジェクトでの活用方法を説明します。このジャーニーでは、最初のヘッドレスアプリケーションの開発に必要なあらゆる情報を提供します。
 
 {{headless-trials-promotion}}
 
@@ -90,7 +90,7 @@ AEM のヘッドレス実装では、コンテンツフラグメントモデル�
 AEM の強力な機能の連携の仕組みについて詳しくは、次に示すその他のジャーニーを参照してください。
 
 * The [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
-* [AEMヘッドレスチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja) - AEMに関する既存の知識を持ち、やって学びたい場合は、AEM Headless で構築されたアプリケーションの作成と使用を検討する、API とフレームワーク別に整理された実践チュートリアルを利用してください。
+* [AEM ヘッドレスチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja) - 実践を通して学びたい場合や、AEM の既存の知識がある場合は、API とフレームワーク別に整理された実践チュートリアルを利用してください。このチュートリアルでは、AEM ヘッドレスに基づくアプリケーションの作成と使用の詳細を紹介しています。
 * [AEM ヘッドレス翻訳ジャーニー](/help/journey-headless/translation/overview.md) - このドキュメントジャーニーでは、ヘッドレステクノロジー、AEM によるヘッドレスコンテンツの提供方法、ヘッドレスコンテンツの翻訳方法について幅広く理解できます。
 * [ヘッドレスオーサリングジャーニー](/help/journey-headless/author/overview.md) - AEM の強力で柔軟なヘッドレス機能とその能力および初めてのヘッドレスプロジェクトでコンテンツをモデル化する方法を説明するガイド付きジャーニーは、ここから始めてください。
 * [ヘッドレスアーキテクトジャーニー](/help/journey-headless/architect/overview.md) - Adobe Experience Manager as a Cloud Service の強力で柔軟なヘッドレス機能と、プロジェクトのコンテンツをモデル化する方法の入門的解説が必要であれば、ここから始めてください。

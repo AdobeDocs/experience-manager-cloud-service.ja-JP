@@ -5,7 +5,7 @@ exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1896'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -113,11 +113,11 @@ Cloud Manager の役割は次のとおりです。
 
 Cloud Manager は、AEM as a Cloud Service の主要コンポーネントを作成および設定できるセルフサービスポータルとして進化しました。
 
-* 新規プログラムの作成と管理。詳しくは、 [プログラムとプログラムの種類について](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) を参照してください。
+* 新規プログラムの作成と管理。詳しくは、[プログラムとプログラムの種類について](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)を参照してください。
 
-* これらのプログラム内での AEM 環境の作成と管理。詳しくは、 [環境の管理](/help/implementing/cloud-manager/manage-environments.md) を参照してください。
+* これらのプログラム内での AEM 環境の作成と管理。詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md)を参照してください。
 
-* 顧客コードと関連設定を特定の環境にデプロイするためのパイプラインの作成と管理。詳しくは、 [CI/CD パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) を参照してください。
+* 顧客コードと関連設定を特定の環境にデプロイするためのパイプラインの作成と管理。詳しくは、[CI／CD パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)を参照してください。
 
 * これらのコンポーネントの重要なライフサイクルイベント（製品アップデートなど）の通知の受信。
 
@@ -150,7 +150,7 @@ AEM as a Cloud Service を使用すると、次のように作業の多くの側
 
 >[!TIP]
 >
->オンボーディングプロセスの完全な概要については、 [オンボーディングジャーニー](/help/journey-onboarding/overview.md).
+>オンボーディングプロセスの完全な概要については、[オンボーディングジャーニー](/help/journey-onboarding/overview.md)を参照してください。
 
 ## 開発 {#developing}
 
@@ -192,7 +192,7 @@ OSGi バンドルとその関連設定を管理する web コンソール（以�
 
 ### ローカル開発 {#aem-as-a-cloud-service-developing-local-development}
 
-迅速な反復と開発をサポートするために、AEMのas a Cloud Serviceのコンテキスト以外でAEMアプリケーションを開発することもできます。 このために、次のアーティファクトが開発者に公開されています。
+迅速な反復と開発をサポートするために、AEM as a Cloud Service のコンテキスト以外で AEM アプリケーションを開発することもできます。このために、次のアーティファクトが開発者に公開されています。
 
 * AEM as a Cloud Service QuickStart：最新 AEM コードベースの `.jar` ベーススタンドアロンインストーラーで、同じ機能と API サーフェスを備えています。
 
@@ -242,7 +242,7 @@ AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用した
 >
 >詳しくは、まず[基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)を参照してください。
 
-Sites と Assets の両方に対するオーサリングユーザーインターフェイス (UI) の基本原則は、以前にAEMを使用したことのあるユーザーにとってはなじみのあるものです。
+AEM Sites についても AEM Assets についても、オーサリングユーザーインターフェイス（UI）の基本原則は、これまでに AEM を使用したことがある人にとってはなじみ深いものです。
 
 主な違いは、UI が完全にタッチ対応であることです。クラシック UI は使用できなくなりました。それ以外の点では、基本はそのまま変わらず、見た目のわずかな変更があるだけです。
 
@@ -274,6 +274,6 @@ Assets が提供する機能には、クラウドでの次世代アセット処�
 
 >[!TIP]
 >
->AEM as a Cloud Serviceの概要を把握したら、 [オンボーディングジャーニー](/help/journey-onboarding/overview.md).
+>AEM as a Cloud Service の概要を把握したら、[オンボーディングジャーニー](/help/journey-onboarding/overview.md)を確認することで、すばやくオンボーディングできます。
 >
 >すでにオンボード済み、または AEM の機能のテストに取り掛かる準備できている場合[AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) をインストールし、豊富な例を使用して AEM の強力な機能を調べてみましょう。

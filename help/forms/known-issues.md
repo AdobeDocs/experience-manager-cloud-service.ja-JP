@@ -9,7 +9,7 @@ exl-id: 871f294d-f251-4966-a021-39df65b613f0
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 86%
+ht-degree: 95%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 86%
 
   ![Forms サムネールの既知の問題](/help/forms/assets/forms-tumbnail-known-issue.png)
 
-* 繰り返し可能な要素を持つスキーマを使用してコアコンポーネントベースのアダプティブフォームを作成する場合、アダプティブFormsエディターのデータモデルツリーから繰り返し可能な要素をドラッグ&amp;ドロップするオプションは機能しません。
+* 繰り返し可能な要素を持つスキーマを使用してコアコンポーネントベースのアダプティブフォームを作成する場合、アダプティブフォームエディターのデータモデルツリーから繰り返し可能な要素をドラッグ＆ドロップするオプションが機能しません。
 
 ## 制限事項 {#limitations}
 

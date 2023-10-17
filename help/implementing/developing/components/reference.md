@@ -5,13 +5,13 @@ exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '3648'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
 # コンポーネントリファレンスガイド {#components-reference-guide}
 
-コンポーネントは、AEM でエクスペリエンスを構築する際の中心です。[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)と[ AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)を使うと、堅牢な既製のコンポーネントのツールセットを簡単に使い始めることができます。The [WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md) では、開発者はこれらのツールの使用方法と、カスタムコンポーネントを作成してAEMサイトを作成する方法を学習します。
+コンポーネントは、AEM でエクスペリエンスを構築する際の中心です。[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)と[ AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)を使うと、堅牢な既製のコンポーネントのツールセットを簡単に使い始めることができます。[WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)では、デベロッパーがこれらのツールの使用方法と、AEM サイトを作成するためのカスタムコンポーネントの作成方法を学びます。
 
 >[!TIP]
 >
@@ -55,7 +55,7 @@ Sling Resource Merger を使用し、`sling:resourceSuperType` プロパティ�
 
 ### コンテンツのロジックとマークアップのレンダリング  {#content-logic-and-rendering-markup}
 
-コンポーネントはを使用してレンダリングされます。 [HTML](https://www.w3schools.com/htmL/html_intro.asp). コンポーネントでは、必要なコンテンツを取得して、オーサリング環境とパブリッシュ環境の両方で必要に応じてレンダリングするために必要な HTML を定義しなければなりません。
+コンポーネントは [HTML](https://www.w3schools.com/htmL/html_intro.asp) を使用してレンダリングされます。コンポーネントでは、必要なコンテンツを取得して、オーサリング環境とパブリッシュ環境の両方で必要に応じてレンダリングするために必要な HTML を定義しなければなりません。
 
 マークアップおよびレンダリングを行うコードと、コンポーネントのコンテンツ選択に関するロジックを制御するコードは、分離しておくことをお勧めします。
 
@@ -122,12 +122,12 @@ AEM コンポーネントの構造は強力で柔軟性があります。以下�
 1. `abbreviation` - コンポーネントブラウザーでのコンポーネント名の省略形をカスタマイズするための String プロパティ
    * 省略形は最大 2 文字までにする必要があります。
    * 空の文字列が指定されると、`jcr:title` プロパティの最初の 2 文字を使用して省略形が作成されます。
-      * 例えば、「画像」の場合は「Im」
-      * ローカライズされたタイトルは、省略形の作成に使用されます。
+      * 例えば、「Image」の場合は「Im」になります。
+      * ローカライズされたタイトルが省略形の作成に使用されます。
    * 省略形は、コンポーネントに `abbreviation_commentI18n` プロパティがある場合にのみ翻訳されます。これは、翻訳ヒントとして使用されます。
 1. `cq:icon.png` または `cq:icon.svg` - コンポーネントブラウザーに表示される、このコンポーネントのアイコン
    * 20 x 20 ピクセルは、標準的なコンポーネントのアイコンのサイズです。
-      * 大きいアイコンは小さくなります（クライアント側）。
+      * 大きいアイコンはクライアントサイドで縮小されます。
    * お勧めの色は、RGB（112、112、112）、つまり #707070 です。
    * 標準的なコンポーネントアイコンの背景は、透明です。
    * `.png` および `.svg` ファイルのみがサポートされます。
@@ -166,14 +166,14 @@ AEM コンポーネントの構造は強力で柔軟性があります。以下�
 | 名前 | 種類 | 説明 |
 |---|---|---|
 | `.` | `cq:Component` | これは現在のコンポーネントを表します。ノードタイプ `cq:Component` のコンポーネント。 |
-| `componentGroup` | `String` | これは、 [コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).  「`.`」で始まる値は、他のコンポーネントが継承する基本コンポーネントなど、UI から選択できないコンポーネントに使用されます。 |
+| `componentGroup` | `String` | これは、[コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)でコンポーネントを選択できるグループを表します。「`.`」で始まる値は、他のコンポーネントが継承する基本コンポーネントなど、UI から選択できないコンポーネントに使用されます。 |
 | `cq:isContainer` | `Boolean` | コンポーネントがコンテナコンポーネントかどうか、したがって段落システムなど他のコンポーネントを格納できるかどうかを示します。 |
 | `cq:dialog` | `nt:unstructured` | これは、コンポーネントの編集ダイアログの定義です。 |
 | `cq:design_dialog` | `nt:unstructured` | これは、コンポーネントのデザインダイアログの定義です。 |
 | `cq:editConfig` | `cq:EditConfig` | これは[コンポーネントの編集構成](#edit-behavior)を定義します。 |
 | `cq:htmlTag` | `nt:unstructured` | 対象を囲んでいる HTML タグに追加されたその他のタグ属性を返します。自動生成された div に属性を追加できます。 |
 | `cq:noDecoration` | `Boolean` | true の場合、コンポーネントは、自動生成された div クラスと css クラスでレンダリングされません。 |
-| `cq:template` | `nt:unstructured` | 見つかった場合、このノードは、コンポーネントがコンポーネントブラウザーから追加される際に、コンテンツテンプレートとして使用されます。 |
+| `cq:template` | `nt:unstructured` | このプロパティがある場合、コンポーネントがコンポーネントブラウザーから追加された際に、コンテンツテンプレートとしてこのノードを使用します。 |
 | `jcr:created` | `Date` | コンポーネントの作成日です。 |
 | `jcr:description` | `String` | コンポーネントの説明です。 |
 | `jcr:title` | `String` | コンポーネントのタイトルです。 |
@@ -223,7 +223,7 @@ AEM コンポーネントのダイアログ：
 
 デザインダイアログは、コンテンツの編集と構成に使用されるダイアログに似ていますが、テンプレート作成者がページテンプレート上のそのコンポーネントのデザインの詳細をプロ構成および提供するためのインターフェイスを提供します。次に、コンテンツ作成者がページテンプレートを使用してコンテンツページを作成します。テンプレートの作成方法の詳細については、[テンプレートドキュメント](/help/sites-cloud/authoring/features/templates.md)を参照してください。
 
-[ページテンプレートの編集時にはデザインダイアログが使用されます](/help/sites-cloud/authoring/features/templates.md)。ただし、すべてのコンポーネントで必要とされるわけではありません。例えば、 **タイトル** および **画像コンポーネント** どちらもデザインダイアログを持っているのに対して、 **ソーシャルメディア共有コンポーネント** は実行しません。
+[ページテンプレートの編集時にはデザインダイアログが使用されます](/help/sites-cloud/authoring/features/templates.md)。ただし、すべてのコンポーネントで必要とされるわけではありません。例えば、**タイトル**&#x200B;と&#x200B;**画像コンポーネント**&#x200B;の両方にデザインのダイアログがありますが、**ソーシャルメディア共有コンポーネント**&#x200B;はありません。
 
 ### Coral UI と Granite UI {#coral-and-granite}
 
@@ -272,11 +272,11 @@ Content not found
 
 ## コンポーネントの使用 {#using-components}
 
-コンポーネントを作成したら、そのコンポーネントを使用するために有効にする必要があります。 コンポーネントを使用すると、コンポーネントの構造とリポジトリーの結果として得られるコンテンツの構造との関連がかわります。
+コンポーネントを作成したら、それを使用できるようにする必要があります。コンポーネントを使用すると、コンポーネントの構造とリポジトリの結果として得られるコンテンツの構造との関連がかわります。
 
 ### コンポーネントをテンプレートに追加する {#adding-your-component-to-the-template}
 
-コンポーネントを定義したら、使用可能にする必要があります。 コンポーネントをテンプレートで使用できるようにするには、テンプレートのレイアウトコンテナのポリシーでそのコンポーネントを有効にする必要があります。
+コンポーネントを定義した上で、使用可能にする必要があります。コンポーネントをテンプレートで使用できるようにするには、テンプレートのレイアウトコンテナのポリシーでそのコンポーネントを有効にする必要があります。
 
 テンプレートの作成方法の詳細については、[テンプレートドキュメント](/help/sites-cloud/authoring/features/templates.md)を参照してください。
 
@@ -321,7 +321,7 @@ AEM には、既存の設定が多数あります。**CRXDE Lite** のクエリ�
 
 コンポーネントは、コンテンツがない場合でも必ず、作成者に表示される一部の HTML をレンダリングする必要があります。そうしないと、エディターのインターフェイスから視覚的に消えてしまい、技術的には存在しても、ページやエディターには表示されなくなります。この場合、作成者は空のコンポーネントを選択して操作することができません。
 
-このため、ページがページエディターでレンダリングされる (WCM モードが `edit` または `preview`) をクリックします。
+このため、ページがページエディターでレンダリングされる（WCM モードが `edit` または `preview` の場合）際に、コンポーネントは、表示された出力をレンダリングしない限り、プレースホルダーをレンダリングする必要があります。
 プレースホルダーの一般的な HTML マークアップは次のとおりです。
 
 ```HTML
@@ -383,7 +383,7 @@ AEM には、既存の設定が多数あります。**CRXDE Lite** のクエリ�
 
 ### フィールドイベントの処理 - cq:listeners {#cq-listeners}
 
-ダイアログフィールドのイベントを処理する方法は、カスタムのリスナーで実行します。 [クライアントライブラリ](/help/implementing/developing/introduction/clientlibs.md).
+ダイアログフィールドのイベントの処理は、カスタム[クライアントライブラリ](/help/implementing/developing/introduction/clientlibs.md)のリスナーで行われます。
 
 フィールドにロジックを挿入するには、以下を実行する必要があります。
 
@@ -416,7 +416,7 @@ AEM には、既存の設定が多数あります。**CRXDE Lite** のクエリ�
 >* `aftermove`
 >* `aftercopy`
 
-イベントハンドラーを実装するときは、カスタム実装を組み込むことができます。例： ( `project.customerAction` は静的メソッドです )。
+イベントハンドラーを実装するときは、カスタム実装を組み込むことができます。次に例を示します（`project.customerAction` は静的メソッドです）。
 
 `afteredit = "project.customerAction"`
 
@@ -469,8 +469,8 @@ Granite UI および Granite UI ウィジェットでのフィールド検証は
 
 ![README.md （コンポーネント構造内）](assets/components-documentation.png)
 
-この Markdown は、 [コンポーネントコンソール](/help/sites-cloud/authoring/features/components-console.md).
+その後、このマークダウンは[コンポーネントコンソール](/help/sites-cloud/authoring/features/components-console.md)に表示されるようになります。
 
-![README.md がコンポーネントコンソールに表示される](assets/components-documentation-console.png)
+![コンポーネントコンソールに表示される README.md](assets/components-documentation-console.png)
 
 サポートされているマークダウンは、[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)の場合と同じです。

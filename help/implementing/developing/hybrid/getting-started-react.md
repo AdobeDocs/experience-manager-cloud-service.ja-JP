@@ -5,15 +5,15 @@ exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 82%
+ht-degree: 97%
 
 ---
 
 # React を使用した AEM での SPA の概要 {#getting-started-with-spas-in-aem-using-react}
 
-単一ページアプリケーション（SPA）により、Web サイトのユーザーに魅力的なエクスペリエンスを提供することができます。開発者はSPAフレームワークを使用してサイトを構築できるようにしたいと考え、作成者はSPAフレームワークを使用して構築されたサイトのコンテンツをAEM内でシームレスに編集したいと考えています。
+単一ページアプリケーション（SPA）により、Web サイトのユーザーに魅力的なエクスペリエンスを提供することができます。開発者は SPA フレームワークを使用してサイトを構築することを望み、作成者は SPA フレームワークを使用して構築されたサイトのコンテンツを AEM 内でシームレスに編集することを望みます。
 
-SPAオーサリング機能は、AEM内でSPAをサポートするための包括的なソリューションを提供します。 この記事では、React フレームワーク上のシンプルな SPA アプリケーションを紹介し、その設定方法を説明するほか、独自の SPA の運用をすぐに開始する方法についても説明します。
+SPA オーサリング機能には、AEM 内で SPA をサポートするための包括的なソリューションが用意されています。この記事では、React フレームワーク上のシンプルな SPA アプリケーションを紹介し、その設定方法を説明するほか、独自の SPA の運用をすぐに開始する方法についても説明します。
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ AEM での SPA の動作について詳しくは、次のドキュメントを�
 
 >[!NOTE]
 >
->SPA内でコンテンツを作成するには、コンテンツをAEMに格納し、コンテンツモデルによって公開する必要があります。
+>SPA 内のコンテンツを作成するには、コンテンツを AEM に格納し、コンテンツモデルによって公開する必要があります。
 >
 >AEM 外で開発された SPA については、コンテンツモデルの契約に準拠していない場合、オーサリングをおこなうことはできません。
 
@@ -39,7 +39,7 @@ AEM での SPA の動作について詳しくは、次のドキュメントを�
 
 ## 依存関係、設定、ビルド {#dependencies-configuration-and-building}
 
-サンプルのSPAでは、必要な React 依存関係に加えて、追加のライブラリを使用してSPAの作成をより効率的におこなうことができます。
+サンプルの SPA では、予想される React の依存関係に加えて、追加のライブラリも利用して SPA の作成を効率化できます。
 
 ### 依存関係 {#dependencies}
 
@@ -60,7 +60,7 @@ AEM での SPA の動作について詳しくは、次のドキュメントを�
  react-dom
 ```
 
-The `aem-clientlib-generator` は、クライアントライブラリの作成をビルドプロセスの一部として自動化するために使用されます。
+クライアントライブラリの作成をビルドプロセスの一部として自動化するために、`aem-clientlib-generator` が活用されています。
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -97,7 +97,7 @@ module.exports = {
 
 ### ビルド {#building}
 
-アプリで実際にを使用してビルドする [Webpack](https://webpack.js.org/) aem-clientlib-generator に加え、クライアントライブラリの自動作成に使用するトランスパイルのため。 したがって、build コマンドは次のようになります。
+アプリの実際のビルドでは、クライアントライブラリの自動作成用の aem-clientlib-generator 以外に、トランスパイル用に [Webpack](https://webpack.js.org/) も使用します。したがって、build コマンドは次のようになります。
 
 `"build": "webpack && clientlib --verbose"`
 
@@ -105,7 +105,7 @@ module.exports = {
 
 ### AEM プロジェクトアーキタイプ {#aem-project-archetype}
 
-任意のAEMプロジェクトでは、 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja):React またはAngularを使用したSPAプロジェクトをサポートし、SPA SDK を使用します。
+AEM プロジェクトでは、 [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)を使用します。このアーキタイプは、React または Angular を使用する SPA プロジェクトをサポートし、SPA SDK を使用します。
 
 ## アプリケーション構造 {#application-structure}
 
@@ -134,7 +134,7 @@ ReactDOM.render(
 });
 ```
 
-の主な機能 `index.js` は `ReactDOM.render` 関数を使用して、DOM 内でアプリケーションをインジェクトする場所を決定します。
+`index.js` の主要機能は、`ReactDOM.render` 関数を活用して、DOM 内でアプリケーションをインジェクトする場所を決めることです。
 
 これはこの関数の標準的な使用方法です。このアプリ例に独自の使用方法ではありません。
 

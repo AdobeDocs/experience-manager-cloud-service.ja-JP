@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: a6d19de48f114982942b0b8a6f6cbdc38b0d4dfa
 workflow-type: tm+mt
 source-wordcount: '2191'
-ht-degree: 28%
+ht-degree: 56%
 
 ---
 
@@ -21,30 +21,30 @@ ht-degree: 28%
 
 Cloud Acceleration Manager を使用して移行セットを取り込むには、次の手順に従います。
 
-1. Cloud Acceleration Manager に移動します。プロジェクトカードをクリックし、「コンテンツ転送」カードをクリックします。 に移動します。 **取り込みジョブ** をクリックします。 **新しい取り込み**
+1. Cloud Acceleration Manager に移動します。プロジェクトカードをクリックし、コンテンツ転送カードをクリックします。**取り込みジョブ**&#x200B;に移動し、「**新しい取り込み**」をクリックします。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
-1. 取り込みチェックリストを確認し、すべての手順が完了していることを確認します。 これらの手順は、取り込みを正常におこなうために必要です。 次に進みます。 **次へ** 手順は、チェックリストが完了した場合にのみ実行します。
+1. 取り込みチェックリストをレビューし、すべての手順が完了していることを確認します。 これらの手順は、取り込みを正常に行うために必要です。チェックリストが完了した場合のみ、**次**&#x200B;の手順に進みます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
-1. 取り込みを作成するために必要な情報を指定します。
+1. 取り込みを作成するために必要な情報を入力します。
 
    * 抽出したデータをソースとして含む移行セットを選択します。
       * 移行セットは、無操作状態が長時間続くと有効期限が切れるので、抽出が実行された後は、比較的早く取り込みが行われることが期待されます。詳しくは、[移行セットの有効期限](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry)を確認してください。
-   * 移行先の環境を選択します。この環境では、移行セットのコンテンツが取り込まれます。 階層を選択します（オーサー／パブリッシュ）。迅速な開発環境はサポートされていません。
+   * 移行先の環境を選択します。この環境では、移行セットのコンテンツが取り込まれます。階層を選択します（オーサー／パブリッシュ）。迅速な開発環境はサポートされていません。
 
    >[!NOTE]
-   >コンテンツの取り込みには、次の注意事項が適用されます。
+   >コンテンツの取り込みには、次のメモが適用されます。
    > ソースがオーサーの場合は、ターゲットのオーサー層に取り込むことをお勧めします。同様に、ソースがパブリッシュの場合は、ターゲットもパブリッシュにする必要があります。
-   > ターゲット層が `Author`に設定されていない場合、オーサーインスタンスは取り込み中にシャットダウンされ、ユーザー（作成者やメンテナンスを実行しているすべてのユーザーなど）は使用できなくなります。 これは、システムを保護し、失われたり取り込みの競合が発生したりする可能性のある変更を防ぐためです。 チームがこの事実を認識していることを確認します。 また、オーサーの取り込み中に環境が休止状態であるように見えます。
-   > オプションのプリコピー手順を実行すると、取り込みを大幅に高速化できます。 詳しくは、 [AzCopy での取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) を参照してください。
-   > 事前コピーを使用した取得を（S3 または Azure データストアに対して）使用する場合は、最初にオーサーの取得を単独で実行することをお勧めします。これにより、後で実行された場合に、パブリッシュの取り込みが高速化されます。
-   > 取り込みは、Rapid Development Environment(RDE) の宛先をサポートしておらず、ユーザーがアクセスできる場合でも、目的の宛先として表示されません。
+   > ターゲット層が `Author` の場合、オーサーインスタンスは取り込み期間中にシャットダウンされ、ユーザー（作成者やメンテナンスを実行中のユーザーなど）が使用できなくなります。この理由は、システムを保護し、失われたり取り込みの競合を引き起こす可能性のある変更を防ぐためです。チームがこの事実を認識していることを確認してください。また、オーサーの取り込み中は環境が休止状態と表示されることに注意してください。
+   > オプションのプリコピー手順を実行すると、取り込みを大幅に高速化できます。 詳しくは、[AzCopy で取り込む](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy)を参照してください。
+   > 事前コピーを使用した取得を（S3 または Azure データストアに対して）使用する場合は、最初にオーサーの取得を単独で実行することをお勧めします。これにより、後で実行する際に、パブリッシュの取り込みが高速化されます。
+   > 取り込みは、迅速な開発環境（RDE）の宛先をサポートしておらず、ユーザーがアクセスできる場合でも、目的の宛先として表示されません。
 
    >[!IMPORTANT]
-   > 宛先環境への取り込みは、ローカルの **AEM管理者** グループを作成します。 取り込みを開始できない場合は、 [取り込みを開始できません](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) を参照してください。
+   > 宛先環境への取り込みを開始するには、宛先 Cloud Service オーサーサービスで、自身もローカルの **AEM 管理者**&#x200B;グループに属している必要があります。取り込みを開始できない場合、詳しくは、[取り込みを開始できない](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion)を参照してください。
 
    * を選択します。 `Wipe` 値
       * The **ワイプ** 「 」オプションは、インジェストの開始点を設定します。 次の場合 **ワイプ** を有効にすると、そのすべてのコンテンツを含む宛先が、Cloud Manager で指定されたAEMのバージョンにリセットされます。 有効にしない場合、宛先は現在のコンテンツを出発点として維持します。
@@ -53,7 +53,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
    >[!IMPORTANT]
    > 設定が **ワイプ** を有効にすると、ターゲットリポジトリインスタンスに対するユーザー権限を含む、既存のCloud Service全体がリセットされます。 このリセットは、管理者ユーザーが **管理者** 取り込みを開始するには、グループに追加し、そのユーザーを administrators グループに再度追加する必要があります。
 
-1. クリック **取り込み**.
+1. 「**取り込み**」をクリックします。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
@@ -61,7 +61,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. 次をクリック： **一** ボタンをクリックして、取り込みジョブの詳細を確認してください。 取り込みの各手順の実行中または完了時の期間は、「 **...**&#x200B;をクリックし、 **期間を表示**. また、抽出した情報は、取り込まれている内容を実現するためにも示されます。
+1. 取り込みジョブについて詳しくは、行の「**(i)**」ボタンをクリックします。 「**…**」、「**期間を表示**」の順にクリックすると、取り込みの各手順の実行中または完了時の期間を確認できます。また、抽出した情報は、取り込まれている内容を理解するためにも表示されます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
@@ -92,38 +92,38 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
-ダイアログボックスの「トークンを取得」リンクをクリックして、移行トークンを手動で取得します。 別のタブが開き、トークンが表示されます。 その後、トークンをコピーし、**移行トークン入力**&#x200B;フィールドにペーストします。 これで、取り込みを開始できるようになります。
+ダイアログボックスの「トークンを取得」リンクをクリックして、移行トークンを手動で取得します。別のタブが開き、トークンが表示されます。その後、トークンをコピーし、**移行トークン入力**&#x200B;フィールドにペーストします。 これで、取り込みを開始できるようになります。
 
 >[!NOTE]
 >
->トークンは、ローカルのに属するユーザーが使用できます **AEM管理者** グループを作成します。
+>トークンは、宛先 Cloud Service オーサーサービスのローカル **AEM 管理者**&#x200B;グループに属するユーザーが使用することができます。
 
 ### 取り込みを開始できない {#unable-to-start-ingestion}
 
-宛先環境への取り込みは、ローカルの **AEM管理者** グループを作成します。 AEM administrators グループに属していない場合は、取り込みを開始しようとすると、次のようなエラーが表示されます。 管理者に問い合わせてローカルの **AEM 管理者**&#x200B;に追加するよう依頼するか、トークン自体を依頼してから&#x200B;**移行トークン入力**&#x200B;フィールドにペーストすることができます。
+宛先環境への取り込みを開始するには、宛先 Cloud Service オーサーサービスで、自身もローカルの **AEM 管理者**&#x200B;グループに属している必要があります。AEM 管理者グループに属していない場合は、取り込みを開始しようとすると、次に示すようなエラーが表示されます。管理者に問い合わせてローカルの **AEM 管理者**&#x200B;に追加するよう依頼するか、トークン自体を依頼してから&#x200B;**移行トークン入力**&#x200B;フィールドにペーストすることができます。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
 ### 移行サービスに接続できません {#unable-to-reach-migration-service}
 
-取り込みがリクエストされると、「宛先環境の移行サービスに到達できません。 その場合は、後でやり直すか、Adobeサポートにお問い合わせください。」
+取り込みがリクエストされると、次のようなメッセージがユーザーに表示される場合があります。「宛先環境の移行サービスにアクセスできません。その場合は、後でもう一度試すか、アドビサポートにお問い合わせください。」
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
 
-このメッセージは、Cloud Acceleration Manager が、ターゲット環境の移行サービスに到達して取り込みを開始できなかったことを示します。 この状況は、様々な理由で発生する可能性があります。
+このメッセージは、Cloud Acceleration Manager がターゲット環境の移行サービスにアクセスして取り込みを開始できなかったことを示します。この状況は、様々な理由で発生する可能性があります。
 
 >[!NOTE]
 > 
-> 「移行トークン」フィールドが表示されるのは、そのトークンの取得が実際には許可されていない場合があるためです。手動で指定できるようにすることで、ユーザーは追加のヘルプなしで、すばやく取り込みを開始できます。 トークンが指定され、メッセージが表示される場合は、トークンの取得に問題はありませんでした。
+> 「移行トークン」フィールドが表示されるのは、そのトークンの取得が実際には許可されていない場合があるためです。手動で指定できるようにすることで、ユーザーは追加のヘルプなしで、すばやく取り込みを開始できます。 トークンが指定されているにもかかわらず、メッセージが表示される場合、問題はトークンの取得ではありません。
 
-* AEM as a Cloud Serviceは環境の状態を維持し、通常の様々な理由で移行サービスを再起動する必要が生じる場合があります。 そのサービスが再起動中の場合は、そのサービスには到達できませんが、最終的に使用可能になります。
-* 別のプロセスがインスタンス上で実行されている可能性があります。 例えば、 [AEMバージョンの更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=ja) 更新を適用中です。システムがビジー状態で、移行サービスが定期的に使用できない可能性があります。 その後、取り込みの開始を再試行できます。
-* 次の場合、 [IP許可リストに加えるが適用されました](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Cloud Manager を通じて、 Cloud Acceleration Manager が移行サービスに到達するのをブロックします。 アドレスが動的なので、取り込み用に IP アドレスを追加できません。 現在、唯一の解決策は、取り込みの実行中に IP 許可リストを無効にすることです。
-* 調査を要する他の理由がある場合があります。 それでも取り込みに失敗する場合は、Adobeカスタマーケアにお問い合わせください。
+* AEM as a Cloud Service は環境の状態を維持し、様々な通常の理由で移行サービスの再起動が必要になる場合があります。そのサービスが再起動中の場合はサービスにアクセスできませんが、最終的には利用できるようになります。
+* インスタンス上で別のプロセスが実行されている可能性があります。例えば、 [AEMバージョンの更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=ja) 更新を適用中です。システムがビジー状態で、移行サービスが定期的に使用できない可能性があります。 その後、取り込みの開始を再試行できます。
+* Cloud Manager を使用して [IP 許可リストが適用されている](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)場合、Cloud Acceleration Manager が移行サービスに到達するのをブロックします。アドレスが動的なので、取り込み用に IP アドレスを追加することはできません。現在、唯一の解決策は、取り込みの実行中に IP 許可リストを無効にすることです。
+* 調査を要する他の理由がある場合があります。 それでも取り込みに失敗する場合は、アドビカスタマーケアにお問い合わせください。
 
 ### AEMバージョンの更新と取り込み
 
-[AEMバージョンの更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=ja) は、最新のAEM as a Cloud Serviceバージョンを使用して最新の状態に保つために、環境に自動的に適用されます。 取り込みの実行時に更新がトリガーされると、環境の破損を含む予期しない結果が生じる可能性があります。
+[AEMバージョンの更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=ja) は、最新のAEM as a Cloud Serviceバージョンを使用して最新の状態に保つために、環境に自動的に適用されます。 取り込みの実行中に更新がトリガーされると、環境が壊れるなど、予期しない結果が生じる可能性があります。
 
 「AEM Version Updates」が宛先プログラムでオンボーディングされている場合、取り込みプロセスは、キューを開始する前に無効にしようとします。 取り込みが完了すると、バージョンアップデータの状態が、取り込みが開始される前の状態に戻ります。
 
@@ -146,7 +146,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
 AEM の各ノードには、一意の UUID が必要です。このエラーは、取り込まれるノードが、宛先インスタンス上の別のパスに存在する uuid と同じ uuid を持つことを示します。
-この状況は、抽出とそれ以降の間にソース上でノードが移動した場合に発生する可能性があります [追加抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
+この状況は、抽出と後続の[追加抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)の間でノードがソース上で移動された場合に発生する可能性があります。
 また、宛先のノードが取り込みとそれ以降の追加取り込みの間に移動した場合にも発生する可能性があります。
 
 この競合は手動で解決する必要があります。コンテンツを参照する他のコンテンツに留意し、2 つのノードのうち、削除する必要があるノードをコンテンツに精通したユーザーが決定する必要があります。解決策として、問題のあるノードがなくても、追加抽出を再度行う必要が生じる場合があります。

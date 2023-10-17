@@ -7,7 +7,7 @@ exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1212'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 ## アップロードのビデオのスマートタグ {#smart-tag-assets-on-ingestion}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] に[ビデオアセットをアップロード](add-assets.md#upload-assets)すると、ビデオが処理されます。処理が完了したら、アセット[!UICONTROL プロパティ]ページの「[!UICONTROL 基本]」タブを参照してください。スマートタグは、ビデオの[!UICONTROL スマートタグ]に自動的に追加されます。アセットマイクロサービスは [!DNL Adobe Sensei] をクリックして、これらのスマートタグを作成します。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] に[ビデオアセットをアップロード](add-assets.md#upload-assets)すると、ビデオが処理されます。処理が完了したら、アセット[!UICONTROL プロパティ]ページの「[!UICONTROL 基本]」タブを参照してください。スマートタグは、ビデオの[!UICONTROL スマートタグ]に自動的に追加されます。アセットマイクロサービスは、[!DNL Adobe Sensei] を使用してこれらのスマートタグを作成します。
 
 ![スマートタグはビデオに追加され、アセットプロパティの「基本」タブに表示されます](assets/smart-tags-added-to-videos.png)
 

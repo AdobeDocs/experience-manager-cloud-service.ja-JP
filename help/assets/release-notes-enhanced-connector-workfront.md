@@ -5,7 +5,7 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: f5f2c460815d273fe445c6f415dee7776cc18fce
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 73%
+ht-degree: 83%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 73%
 
 >[!NOTE]
 >
->AEM 6.4 は、拡張サポートの終了に達しました。 詳細は、 [技術サポート期間](https://helpx.adobe.com/jp/support/programs/eol-matrix.html). サポートされているバージョンを見つける [ここ](https://experienceleague.adobe.com/docs/?lang=en).
+>AEM 6.4 は、拡張サポートの終了に達しました。詳細は、[技術サポート期間](https://helpx.adobe.com/jp/support/programs/eol-matrix.html)を参照してください。サポートされているバージョンについては、[ここ](https://experienceleague.adobe.com/docs/?lang=ja)をご覧ください。
 
 
 >[!IMPORTANT]
@@ -43,7 +43,7 @@ ht-degree: 73%
 
 * AEM 6.4 でプロジェクトにリンクしたフォルダーを設定する際に、Experience Manager は「**[!UICONTROL sub-folders]**」フィールドと「**[!UICONTROL Create linked folder in projects with portfolio]**」フィールドの値を保存しません。設定を保存すると、「**[!UICONTROL sub-folders]**」フィールドの値が **[!UICONTROL undefined]** に、「**[!UICONTROL Create linked folder in projects with portfolio]**」フィールドの値が **[!UICONTROL Default Portfolio]** に、それぞれ自動的に更新されます。
 
-* 従来の Workfront エクスペリエンスを使用している場合、「**[!UICONTROL 詳細]**」ドロップダウンリストで選択できる「**[!UICONTROL 送信先]**」オプションでは、Experience Manager 内のターゲット宛先を選択できません。The **[!UICONTROL 送信先]** オプションは、 **[!UICONTROL ドキュメントアクション]** 」ドロップダウンリストから選択できます。 The **[!UICONTROL 送信先]** オプションは、 **[!UICONTROL その他]** ドロップダウンリストと **[!UICONTROL ドキュメントアクション]** 新しいWorkfrontエクスペリエンスで使用可能なドロップダウンリスト。
+* 従来の Workfront エクスペリエンスを使用している場合、「**[!UICONTROL 詳細]**」ドロップダウンリストで選択できる「**[!UICONTROL 送信先]**」オプションでは、Experience Manager 内のターゲット宛先を選択できません。「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストを使用する場合、「**[!UICONTROL 送信先]**」オプションは正常に機能します。新しい Workfront エクスペリエンスの「**[!UICONTROL 詳細]**」ドロップダウンリストと「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストでは、「**[!UICONTROL 送信先]**」オプションは正常に機能します。
 
 ## 以前のリリース {#previous-releases}
 
@@ -63,7 +63,7 @@ ht-degree: 73%
 
 ### 2023年6月リリース {#june-2023-release}
 
-* 高度なネットワークを設定している場合、Adobe WorkfrontからAEM as a Cloud Serviceにコンテンツを送信する際に問題が発生します。
+* 高度なネットワークを設定している場合、Adobe Workfront から AEM as a Cloud Service にコンテンツを送信する際に問題が発生します。
 
 
 ### 2023年5月リリース {#may-2023-release}
@@ -165,7 +165,7 @@ ht-degree: 73%
 
 10月7日（PT）にリリースされた [!DNL Workfront for Experience Manager enhanced connector] バージョン 1.9.4 では、次の問題が修正されています。
 
-* 多数のイベントが原因で、拡張コネクタ設定ページの「イベント購読」タブを表示できません。
+* 多数のイベントがある場合、拡張コネクタ設定ページに「イベント購読」タブが表示されません。
 
 * Workfront でプロジェクト内の既存フォルダーのリストを取得できず、その結果、フォルダーが重複して作成されます。
 
@@ -204,7 +204,7 @@ ht-degree: 73%
 
 [!DNL Workfront for Experience Manager enhanced connector] には、次の更新が含まれています。
 
-* リンクされたフォルダーを使用してアップロードする場合、または `Send To` WorkfrontでアセットをExperience Manageras a Cloud Serviceにアップロードするために使用できるアクション。アセットが破損し、Adobe Photoshopで開くことができない。
+* Experience Manager as a Cloud Service にアセットをアップロードする際、リンクされたフォルダーを使用したり、Workfront の `Send To` アクションを使用したりすると、アセットが破損し、Adobe Photoshop で開くことができなくなります。
 
 ### 2022年3月リリース {#march-2022-release}
 

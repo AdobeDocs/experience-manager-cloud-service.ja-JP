@@ -5,7 +5,7 @@ exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '2698'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
@@ -332,7 +332,7 @@ The `variable.scss` ファイルには、テーマのグローバル変数が含
    git push [name-for-createdrepository]
    ```
 
-   例：
+   次に例を示します。
 
    ```
    git remote add canvascloudthemerepo https://git.cloudmanager.adobe.com/stage-aemformsdev/customcanvastheme/
@@ -412,7 +412,7 @@ The `variable.scss` ファイルには、テーマのグローバル変数が含
 
 ## 次を見る
 
-* [画面サイズやデバイスタイプに応じてフォームのレイアウトを設定する](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [画面サイズやデバイスタイプに応じてフォームのレイアウトを設定](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [アダプティブForms（コアコンポーネント）用のレコードのドキュメントを生成する](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [繰り返し可能なセクションを使用したアダプティブFormsの作成](/help/forms/create-forms-repeatable-sections.md)
 * [サンプルのテーマテンプレートとフォームデータモデル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
@@ -420,5 +420,5 @@ The `variable.scss` ファイルには、テーマのグローバル変数が含
 
 ## 関連記事 {#related-article}
 
-* [AEM Formsas a Cloud Serviceおよびローカル開発環境でのアダプティブFormsコアコンポーネントの有効化](/help/forms/enable-adaptive-forms-core-components.md)
+* [AEM Forms as a Cloud Service およびローカル開発環境で、アダプティブフォームのコアコンポーネントを有効にする](/help/forms/enable-adaptive-forms-core-components.md)
 * [スタンドアロンのコアコンポーネントベースのアダプティブフォームを作成する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=ja)

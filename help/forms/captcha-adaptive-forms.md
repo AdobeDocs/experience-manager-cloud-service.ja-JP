@@ -9,7 +9,7 @@ exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
 source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
 source-wordcount: '1935'
-ht-degree: 73%
+ht-degree: 75%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 73%
 | 適用先 | 基盤コンポーネントに基づくアダプティブフォーム。 <br> コアコンポーネントに基づくアダプティブフォームの場合、 [ここをクリック](/help/forms/captcha-adaptive-forms-core-components.md). |
 
 
-CAPTCHA（コンピュータと人間を区別する完全に自動化された公開チューリングテスト）は、人と自動化されたプログラムまたはボットを区別するためにオンライントランザクションで一般的に使用されるプログラムです。テストを行ってユーザーの反応を評価し、サイトを使用しているのが人間かボットかを判断します。テストが失敗した場合の続行を防ぎ、ボットがスパムや悪意のある目的の投稿を防ぐことで、オンライントランザクションの安全性を高めます。
+CAPTCHA（コンピュータと人間を区別する完全に自動化された公開チューリングテスト）は、人間と自動化されたプログラム／ボットを区別するために、オンライントランザクションで一般的に使用されるプログラムです。テストを行ってユーザーの反応を評価し、サイトを使用しているのが人間かボットかを判断します。テストが失敗した場合の続行を防ぎ、ボットによるスパムの投稿や悪意のある目的を防止することで、オンライントランザクションの安全性を高めます。
 
 [!DNL AEM Forms] アダプティブFormsで reCAPTCHA をサポートします。 Google が提供する reCAPTCHA サービスを使用して、CAPTCHA を実装できます。
 
@@ -36,7 +36,7 @@ CAPTCHA（コンピュータと人間を区別する完全に自動化された�
 >* アダプティブFormsの reCAPTCHA は、 [!DNL AEM Forms] アプリを使用します。
 >
 
-## Googleによる reCAPTCHA サービスの設定 {#google-reCAPTCHA}
+## Google が提供する reCAPTCHA サービスの設定 {#google-reCAPTCHA}
 
 フォーム作成者は、Googleの reCAPTCHA サービスを使用して、アダプティブFormsに reCAPTCHA を実装できます。 サイトを保護するための高度な CAPTCHA 機能を提供します。 reCAPTCHA の仕組みについて詳しくは、[Google reCAPTCHA](https://developers.google.com/recaptcha/) を参照してください。reCAPTCHA サービスには以下が含まれます。 [!DNL reCAPTCHA v2] および [!DNL reCAPTCHA Enterprise] これらは、 [!DNL AEM Forms]. 要件に基づいて、reCAPTCHA サービスを設定して、次を有効にすることができます。
 
@@ -229,7 +229,7 @@ reCAPTCHA Enterprise サービスを有効にすると、アダプティブフ�
 
 >[!NOTE]
 >
-> reCAPTCHA v2 設定を選択し、サイズをに設定すると、 [!UICONTROL 非表示]の場合、「表示/非表示」オプションは無効のままです。
+> reCAPTCHA v2 設定を選択し、サイズが「[!UICONTROL 非表示]」に設定されている場合、「表示／非表示」オプションは無効のままです。
 
 ### CAPTCHA の検証 {#validate-captcha}
 

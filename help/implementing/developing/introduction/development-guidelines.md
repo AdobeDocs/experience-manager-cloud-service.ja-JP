@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 5aa4a049bc6a69f161ad04d2a64ab0871e672432
 workflow-type: tm+mt
 source-wordcount: '2746'
-ht-degree: 81%
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 81%
 
 AEM as a Cloud Service で実行するコードは、常にクラスター内で実行されていることを認識している必要があります。つまり、常に複数のインスタンスが実行されています。インスタンスはいつ停止するかわからないので、コードには特に回復力が必要です。
 
-AEM as a Cloud Serviceの更新中に、古いコードと新しいコードが並行して実行されているインスタンスがあります。 したがって、新しいコードで作成されたコンテンツが古いコードによって中断されず、新しいコードが古いコンテンツを処理できる必要があります。
+AEM as a Cloud Service を更新する間、古いコードと新しいコードが並行して実行されるインスタンスが存在します。したがって、新しいコードで作成されたコンテンツが古いコードによって中断されず、新しいコードが古いコンテンツを処理できる必要があります。
 
 クラスター内のプライマリを識別する必要がある場合は、Apache Sling Discovery API を使用して検出できます。
 
@@ -33,13 +33,13 @@ AEM as a Cloud Serviceの更新中に、古いコードと新しいコードが�
 
 ## ファイルシステムの状態 {#state-on-the-filesystem}
 
-インスタンスのファイルシステムは、AEM as a Cloud Service で使用しないでください。ディスクは揮発性で、インスタンスがリサイクルされると破棄されます。 単一の要求の処理に関する一時的なストレージのために、ファイルシステムの使用を制限することは可能ですが、大量のファイルに対して濫用しないでください。リソースの使用割り当てに悪影響を与え、ディスクの制限が生じる可能性があるためです。
+インスタンスのファイルシステムは、AEM as a Cloud Service で使用しないでください。ディスクはエフェメラルで、インスタンスが再利用されると破棄されます。単一の要求の処理に関する一時的なストレージのために、ファイルシステムの使用を制限することは可能ですが、大量のファイルに対して濫用しないでください。リソースの使用割り当てに悪影響を与え、ディスクの制限が生じる可能性があるためです。
 
 ファイルシステムの使用がサポートされていない例として、パブリッシュ層では、永続化する必要のあるデータが、長期ストレージのために外部サービスに送り出されることを確認する必要があります。
 
 ## 監視 {#observation}
 
-同様に、観察イベントに作用するように非同期的に起こっているものすべてに対して、ローカルで実行することを保証できないことから、注意深く使用する必要があります。これは、JCR リソースと Sling イベントの両方に当てはまります。変更が発生した時点で、インスタンスが停止し、別のインスタンスに置き換えられる場合があります。その時点でアクティブなトポロジ内の他のインスタンスは、そのイベントに反応できます。 しかし、この場合、ローカルのイベントではなく、イベントの発行時にアクティブなリーダーがいない可能性もあります。
+同様に、観察イベントに作用するように非同期的に起こっているものすべてに対して、ローカルで実行することを保証できないことから、注意深く使用する必要があります。これは、JCR リソースと Sling イベントの両方に当てはまります。変更が発生した時点で、インスタンスが停止し、別のインスタンスに置き換えられる場合があります。その時点でアクティブなトポロジ内の他のインスタンスは、このイベントに反応できます。しかし、この場合、ローカルのイベントではなく、イベントの発行時にアクティブなリーダーがいない可能性もあります。
 
 ## バックグラウンドタスクと長時間実行ジョブ {#background-tasks-and-long-running-jobs}
 
@@ -47,7 +47,7 @@ AEM as a Cloud Serviceの更新中に、古いコードと新しいコードが�
 
 トラブルを最小限に抑えるために、長時間実行ジョブは可能な限り避け、少なくとも再開可能な状態になっている必要があります。このようなジョブを実行するには、少なくとも 1 回は実行されることが保証されている Sling ジョブを使用します。したがって、ジョブが中断された場合、ジョブはできるだけ早く再実行されます。ただし、最初からやり直すべきではないでしょう。このようなジョブをスケジュールする場合は、 [Sling ジョブ](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) スケジューラーを使用することをお勧めします。やはり、少なくとも 1 回は実行されることが保証されているからです。
 
-Sling Commons Scheduler は実行を保証できないので、スケジュール設定には使用しないでください（スケジュールされている可能性の方が高いです。
+Sling Commons Scheduler は実行を保証できないので、スケジュール設定には使用しないでください。スケジュール設定されている可能性が高いです。
 
 同様に、監視イベント（例：JCR イベントや Sling リソースイベント）に対する動作など、非同期的に発生するあらゆる動作は、必ずしも実行が保証されないので、慎重に使用する必要があります。これは、現在の AEM デプロイメントに既に当てはまります。
 
@@ -65,7 +65,7 @@ HTTP 接続を行う場合は、提供されている [Apache HttpComponents Cli
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/)（古くなり、バージョン 4.x に代わっているので、お勧めしません）
 * [OK Http](https://square.github.io/okhttp/)（AEM では提供されません）
 
-タイムアウトの提供の横に、そのようなタイムアウトおよび予期しない HTTP ステータスコードの適切な処理も実装する必要があります。
+タイムアウトの指定の次に、そのようなタイムアウトと予期しない HTTP ステータスコードの適切な処理も実装する必要があります。
 
 ## リクエストレート制限の処理 {#rate-limit-handling}
 
@@ -76,13 +76,13 @@ AEMへの受信要求の割合が正常なレベルを超えると、AEMは HTTP
 
 ## クラシック UI のカスタマイズがない {#no-classic-ui-customizations}
 
-AEM as a Cloud Serviceは、サードパーティの顧客コードのタッチ UI のみをサポートします。 クラシック UI はカスタマイズには使用できません。
+AEM as a Cloud Service は、サードパーティの顧客コードのタッチ UI のみをサポートします。クラシック UI はカスタマイズには使用できません。
 
 ## ネイティブバイナリまたはネイティブライブラリがありません {#avoid-native-binaries}
 
-ネイティブバイナリおよびライブラリは、クラウド環境にデプロイしたり、インストールしたりしないでください。
+ネイティブバイナリおよびライブラリを、クラウド環境にデプロイしたり、インストールしたりしないでください。
 
-また、コードは、実行時にネイティブバイナリやネイティブ Java 拡張（JNI など）をダウンロードしようとしないでください。
+また、コード実行時にネイティブバイナリやネイティブ Java 拡張機能（JNI など）をダウンロードしようとしないでください。
 
 ## AEM as a Cloud Service を使用したストリーミングバイナリがない {#no-streaming-binaries}
 
@@ -116,11 +116,11 @@ AEM as a Cloud Serviceは、サードパーティの顧客コードのタッチ 
 
 **ログレベルの設定**
 
-クラウド環境のログレベルを変更するには、Sling Logging OSGi 設定を変更した後、完全に再デプロイする必要があります。これは即座にはおこなわれないので、大量のトラフィックを受け取る実稼動環境で詳細なログを有効にする場合は注意が必要です。 今後、ログレベルをより迅速に変更するメカニズムが存在する可能性があります。
+クラウド環境のログレベルを変更するには、Sling Logging OSGi 設定を変更した後、完全に再デプロイする必要があります。これは即座には行われないので、大量のトラフィックを受け取る実稼動環境で詳細なログを有効にする場合は注意が必要です。今後、ログレベルをより迅速に変更するメカニズムが提供される可能性があります。
 
 >[!NOTE]
 >
->以下に示す設定の変更を実行するには、ローカル開発環境で設定の変更を作成し、AEM as a Cloud Serviceインスタンスにプッシュします。 この方法について詳しくは、[AEM as a Cloud Service へのデプロイ](/help/implementing/deploying/overview.md)を参照してください。
+>以下に示す設定の変更を実行するには、ローカル開発環境で設定変更を作成し、それらを AEM as a Cloud Service インスタンスにプッシュします。この方法について詳しくは、[AEM as a Cloud Service へのデプロイ](/help/implementing/deploying/overview.md)を参照してください。
 
 **デバッグログレベルのアクティベート**
 
@@ -147,11 +147,11 @@ AEM as a Cloud Serviceは、サードパーティの顧客コードのタッチ 
 
 | 環境 | 実行モード別の OSGi 設定の場所 | `org.apache.sling.commons.log.level` プロパティ値 |
 | - | - | - |
-| 開発 | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config～example.cfg.json | DEBUG |
-| ステージ | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config～example.cfg.json | WARN |
-| 実稼動 | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config～example.cfg.json | ERROR |
+| 開発 | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG |
+| ステージ | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN |
+| 実稼動 | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERROR |
 
-デバッグファイルの行は、通常は DEBUG で始まり、ログレベル、インストーラーのアクション、ログメッセージを示します。 次に例を示します。
+デバッグファイルの行は、通常は DEBUG で始まり、その後にログレベル、インストーラーのアクション、ログメッセージが示されます。次に例を示します。
 
 ```text
 DEBUG 3 WebApp Panel: WebApp successfully deployed
@@ -161,13 +161,13 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 | 0 | 重大なエラー | アクションが失敗し、インストーラーの処理を続行できません。 |
 |---|---|---|
-| 1 | エラー | アクションが失敗しました。インストールは続行しますが、CRX の一部が正しくインストールされず、動作しません。 |
-| 2 | 警告 | アクションは成功しましたが、問題が発生しました。CRX が正しく動作する場合と動作しない場合があります。 |
+| 1 | エラー | アクションが失敗しました。インストールは続行しますが、CRX の一部が正常にインストールされなかったので、機能しません。 |
+| 2 | 警告 | アクションは成功しましたが、問題が発生しました。CRX は正常に機能する場合と機能しない場合があります。 |
 | 3 | 情報 | アクションが成功しました。 |
 
 ### スレッドダンプ {#thread-dumps}
 
-クラウド環境のスレッドダンプは継続的に収集されますが、現時点ではセルフサービス方式でダウンロードすることはできません。その間、問題のデバッグにスレッドダンプが必要な場合は、AEMサポートに連絡し、正確な時間枠を指定します。
+クラウド環境のスレッドダンプは継続的に収集されますが、現時点ではセルフサービス方式でダウンロードすることはできません。その間、問題のデバッグ用にスレッドダンプが必要な場合は、AEM サポートに問い合わせ、正確な時間枠を指定してください。
 
 ## CRXDE Lite とデベロッパーコンソール {#crxde-lite-and-developer-console}
 
@@ -209,7 +209,7 @@ AEM as a Cloud Service 開発者環境をデバッグするための一連のツ
 
 ![開発者コンソール 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-実稼動プログラムの場合、開発者コンソールへのアクセスは Admin Console の「Cloud Manager - デベロッパーロール」で定義されます。一方、サンドボックスプログラムの場合、開発者コンソールは、AEM as a Cloud Service へのアクセスを可能にする製品プロファイルを持つすべてのユーザーが使用できます。すべてのプログラムで、ステータスダンプに「Cloud Manager - Developer Role」が必要で、リポジトリブラウザーとユーザーは、オーサーサービスとパブリッシュサービスのAEM Users またはAEM Administrators Product Profile でも定義して、両方のサービスのデータを表示する必要があります。 ユーザー権限の設定について詳しくは、 [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ja) を参照してください。
+実稼動プログラムの場合、開発者コンソールへのアクセスは Admin Console の「Cloud Manager - デベロッパーロール」で定義されます。一方、サンドボックスプログラムの場合、開発者コンソールは、AEM as a Cloud Service へのアクセスを可能にする製品プロファイルを持つすべてのユーザーが使用できます。すべてのプログラムで、ステータスダンプとリポジトリブラウザーには「Cloud Manager - デベロッパーの役割」が必要です。また、オーサーサービスとパブリッシュサービスの両方のサービスからデータを表示するには、両方のサービスで AEM ユーザーまたはAEM 管理者製品プロファイルでもユーザーが定義されている必要があります。ユーザー権限の設定について詳しくは、 [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ja) を参照してください。
 
 ### パフォーマンスの監視 {#performance-monitoring}
 
@@ -297,8 +297,8 @@ org.apache.jackrabbit.oak.jcr.session.NodeImpl Large multi valued property [/pat
 Caused by: com.mongodb.MongoWriteException: Resulting document after update is larger than 16777216
 ```
 
-詳しくは、 [Apache Oak ドキュメント](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) を参照してください。
+詳しくは、[Apache Oak のドキュメント](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property)を参照してください。
 
 ## [!DNL Assets] 開発のガイドラインとユースケース {#use-cases-assets}
 
-Assets as a Cloud Serviceの開発ユースケース、推奨事項、リファレンス資料については、 [アセットの開発者向けリファレンス](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
+Assets as a Cloud Service の開発ユースケース、推奨事項、参考資料については、[Assets の開発者向けリファレンス](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)を参照してください。

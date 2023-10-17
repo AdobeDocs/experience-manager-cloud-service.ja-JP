@@ -8,13 +8,13 @@ exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1627'
-ht-degree: 81%
+ht-degree: 95%
 
 ---
 
 # Experience Manager Assets での公開の管理 {#manage-publication-in-aem}
 
-[!DNL Adobe Experience Manager Assets] 管理者は、アセットやアセットを含んだフォルダーをオーサーインスタンスから [!DNL Experience Manager Assets]、[!DNL Dynamic Media] および [!DNL Brand Portal]. に公開できます。また、アセットやフォルダーを後で公開するようにスケジュールを設定することもできます。 公開すると、ユーザーはアセットにアクセスでき、さらに他のユーザーにアセットを配布できます。デフォルトでは、アセットやフォルダーを [!DNL Experience Manager Assets] に公開できます。ただし、[!DNL Experience Manager Assets] を設定して [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=ja) と [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=ja) への公開を有効にすることができます。
+[!DNL Adobe Experience Manager Assets] 管理者は、アセットやアセットを含んだフォルダーをオーサーインスタンスから [!DNL Experience Manager Assets]、[!DNL Dynamic Media] および [!DNL Brand Portal]. に公開できます。また、アセットやフォルダーを後の日時に公開するようにスケジューリングすることもできます。公開すると、ユーザーはアセットにアクセスでき、さらに他のユーザーにアセットを配布できます。デフォルトでは、アセットやフォルダーを [!DNL Experience Manager Assets] に公開できます。ただし、[!DNL Experience Manager Assets] を設定して [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=ja) と [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=ja) への公開を有効にすることができます。
 
 [!DNL Experience Manager Assets] インターフェイスで使用できる「**[!UICONTROL クイック公開]**」または「**[!UICONTROL 公開を管理]**」オプションを使用して、アセットレベルまたはフォルダーレベルでアセットを公開または非公開にすることができます。その後、[!DNL Experience Manager Assets] で元のアセットやフォルダーに変更を加えても、その変更は、[!DNL Experience Manager Assets] から再公開するまでパブリッシュインスタンスには反映されません。これにより、処理中の変更はパブリッシュインスタンスでは使用できなくなります。管理者が公開した承認済みの変更のみがパブリッシュインスタンスで提供されます。
 
@@ -61,7 +61,7 @@ ht-degree: 81%
 
 ### コンテンツの追加 {#add-content}
 
-への公開 [!DNL Experience Manager Assets] 発行リストにさらにコンテンツ（アセットやフォルダー）を追加できます。 DAM リポジトリー全体からリストにアセットやフォルダーをさらに追加できます。クリック **[!UICONTROL コンテンツを追加]** ボタンをクリックして、コンテンツを追加します。
+への公開 [!DNL Experience Manager Assets] 発行リストにさらにコンテンツ（アセットやフォルダー）を追加できます。 DAM リポジトリー全体からリストにアセットやフォルダーをさらに追加できます。コンテンツをさらに追加するには、「**[!UICONTROL コンテンツを追加]**」ボタンをクリックします。
 
 フォルダーから複数のアセットを一度に追加したり、複数のフォルダーを一度に追加したりできます。しかし、複数のフォルダーからアセットを一度に追加することはできません。
 
@@ -179,26 +179,26 @@ Only the selected folder content and references are published.
 
 ## 公開をリクエスト {#request-publication}
 
-The `Request Publication` オプションは、アセットを公開する前に、そのアセットのワークフローを認証する際に役立ちます。 [!DNL AEM] Assets 環境。 [!DNL AEM] は、様々なユーザーに異なるレベルの権限を提供します。 次の条件を満たす場合、 *投稿者* この訪問者はアセットをアップロードしていますが、アップロードを検証するまでアセットを公開できません。 また、は *管理者* アセットの読み取りワークフローと書き込みワークフローを管理できます。
+`Request Publication` オプションは、[!DNL AEM] Assets 環境で公開する前に、アセットのワークフローを認証する際に役立ちます。[!DNL AEM] は、様々なユーザーに異なるレベルの権限を提供します。アセットをアップロードする&#x200B;*投稿者*&#x200B;になることもできますが、アップロードが確認されるまでアセットを公開できません。また、*管理者*&#x200B;であれば、アセットの読み取りワークフローと書き込みワークフローを管理できます。
 
 「公開をリクエスト」オプションは、次のユーザーが使用できます。
-* **寄稿者：** 以下に貢献できるユーザーの場合： [!DNL AEM] Assets の場合、 [!DNL AEM] Assets ワークフロー `Manage publication` 」ボタンが非表示になっています。 投稿者は、アセットを追加することによってのみ投稿できますが、投稿したり、ワークフローに対する読み取りアクセス権を持つことはできません。
+* **投稿者：**[!DNL AEM] Assets に投稿できるユーザーの場合、[!DNL AEM] Assets ワークフローへのアクセスが制限されています。「`Manage publication`」ボタンが非表示になっています。投稿者は、アセットを追加することによって投稿のみできますが、アセットを公開したり、ワークフローへの読み取りアクセス権を持つことはできません。
 
-* **ワークフローユーザ：** このユーザーはアセットを公開できませんが、ワークフローに対する読み取りアクセス権があります。 ワークフローユーザーは、次の操作を実行できます。
+* **ワークフローユーザー：**&#x200B;このユーザーはアセットを公開できませんが、ワークフローに対する読み取りアクセス権があります。ワークフローユーザーは、次の操作を実行できます。
    * 公開をリクエスト
-   * 表示 `Manage publication` ボタン
-   * ワークフローのスケジュールを設定し、オプションを確認する `schedule now` および `schedule later`
+   * 「`Manage publication`」ボタンを表示
+   * ワークフローのスケジュールを設定し、オプション `schedule now` と `schedule later` を確認
 
-* **管理者：** 管理者タイプのユーザーは、アセットの全体的なワークフローステップを管理できます。 `Manage publication` ボタンが表示されます。 宛先の場合 `publish` 「 」が選択されている場合、後でアセットをワークフローステップ用にスケジュールできます。
+* **管理者：**&#x200B;管理者タイプのユーザーは、アセットの全体的なワークフローステップを管理できます。「`Manage publication`」ボタンが表示されます。宛先 `publish` が選択されている場合、後でアセットをワークフローステップ用にスケジュールできます。
 
 >[!NOTE]
 >
->次の場合 [!DNL Dynamic Media] が宛先として選択されている場合、ワークフローステップは無効になっています。 **ワークフローユーザー** および **admin** ユーザー。
+>[!DNL Dynamic Media] が宛先として選択されている場合、**ワークフローユーザー**&#x200B;および&#x200B;**管理者**&#x200B;ユーザーではワークフローステップは無効になります。
 >
 
 ## 制限事項とヒント {#limitations-and-tips}
 
-* `Manage publication` は、ワークフローに対する読み取り権限を持つユーザーが使用できます。
+* `Manage publication` は、ワークフローに対して少なくとも読み取り権限を持つユーザーが使用できます。
 * 空のフォルダーは公開されません。
 * 処理中のアセットを公開した場合は、オリジナルのコンテンツのみが公開されます。処理中のレンディションは失われます。処理が完了するまで待ってから公開するか、処理の完了後にアセットを公開し直してください。
 * 複雑なアセットを非公開にする場合は、アセットだけを非公開にします。参照は他の公開済みアセットから参照されている可能性があるので、非公開にしないでください。

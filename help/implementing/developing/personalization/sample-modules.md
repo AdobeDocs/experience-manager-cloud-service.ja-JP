@@ -5,37 +5,37 @@ exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1126'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
 # ContextHub UI モジュールタイプのサンプル {#sample-contexthub-ui-module-types}
 
-ContextHub には、ソリューションで使用できるいくつかのサンプル UI モジュールが用意されています。 次の情報が提供されます。
+ContextHub には、ソリューションで使用できるいくつかのサンプル UI モジュールが用意されています。次の情報が提供されます。
 
-* UI モジュールの主な機能です。
+* UI モジュールの主な機能。
 * 学習目的で開くことのできるソースコードの場所。
 * UI モジュールの設定方法。
 
-ContextHub への UI モジュールの追加について詳しくは、 [UI モジュールの追加](configuring-contexthub.md#adding-a-ui-module). UI モジュールの開発について詳しくは、 [ContextHub UI モジュールタイプの作成](extending-contexthub.md#creating-contexthub-ui-module-types).
+ContextHub への UI モジュールの追加について詳しくは、[UI モジュールの追加](configuring-contexthub.md#adding-a-ui-module)を参照してください。UI モジュールの開発について詳しくは、[ContextHub UI モジュールタイプの作成](extending-contexthub.md#creating-contexthub-ui-module-types)を参照してください。
 
 ## contexthub.base UI モジュールタイプ {#contexthub-base-ui-module-type}
 
-contexthub.base UI モジュールタイプは、他のすべての UI モジュールタイプのベースタイプです。 したがって、ストアデータをレンダリングするための汎用機能を提供します。
+contexthub.base UI モジュールタイプは、他のすべての UI モジュールタイプのベースタイプです。したがって、ストアデータをレンダリングするための汎用機能を提供します。
 
 次の機能を使用できます。
 
-* **タイトルとアイコン：** UI モジュールのタイトルとアイコンを指定します。 このアイコンは、URL または Coral UI アイコンライブラリから参照できます。
-* **ストアデータ：** データの取得元となる 1 つ以上のストアを特定します。
-* **コンテンツ：** UI モジュールに表示されるコンテンツを、ContextHub ツールバーに表示されるとおりに指定します。
-* **ポップオーバーの内容：** UI モジュールをクリックまたはタップしたときにポップオーバーに表示されるコンテンツを指定します。
-* **全画面表示モード：** 全画面モードを許可するかどうかを制御します。
+* **タイトルとアイコン：** UI モジュールのタイトルとアイコンを指定します。アイコンは、URL または Coral UI アイコンライブラリから参照できます。
+* **ストアデータ：**&#x200B;データの取得元となる 1 つ以上のストアを特定します。
+* **コンテンツ：** UI モジュールに表示されるコンテンツを、ContextHub ツールバーに表示される通りに指定します。
+* **ポップオーバーのコンテンツ：** UI モジュールをクリックまたはタップした際にポップオーバーに表示されるコンテンツを指定します。
+* **全画面表示モード：**&#x200B;全画面モードを許可するかどうかを制御します。
 
 ソースコードは `/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js` にあります。
 
 ### 設定 {#configuration}
 
-JSON 形式の JavaScript オブジェクトを使用して、contexthub.base UI モジュールを設定します。 UI モジュールの機能を設定するには、次のいずれかのプロパティを含めます。
+JSON 形式の JavaScript オブジェクトを使用して、contexthub.base UI モジュールを設定します。UI モジュールの機能を設定するには、次のいずれかのプロパティを含めます。
 
 * **image：**&#x200B;アイコンとして表示する画像への URL。
 * **icon：** [Coral UI アイコン](https://helpx.adobe.com/jp/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html)クラスの名前。icon プロパティと image プロパティの両方に値を指定した場合は、image が使用されます。
@@ -43,15 +43,15 @@ JSON 形式の JavaScript オブジェクトを使用して、contexthub.base UI
 * **fullscreen：** UI モジュールが全画面モードをサポートするかどうかを示すブール値。全画面をサポートする場合は `true`、全画面モードを許可しない場合は `false` を使用します。
 * **template：** ContextHub のツールバーにレンダリングするコンテンツを指定する [Handlebars](https://handlebarsjs.com/) テンプレート。最大 2 つの `<p>` タグを使用します。
 * **storeMapping：**&#x200B;キーとストアのマッピング。Handlebar テンプレートでキーを使用して、関連付けられている ContextHub ストアデータにアクセスします。
-* **list：** UI モジュールをクリックしたときに、ポップオーバーにリストとして表示する項目の配列。この項目を含める場合は、popoverTemplate を含めないでください。 値は、次のキーを持つオブジェクトの配列です。
+* **list：** UI モジュールをクリックしたときに、ポップオーバーにリストとして表示する項目の配列。この項目を含める場合は、popoverTemplate を含めないでください。値は、次のキーを持つオブジェクトの配列です。
    * タイトル：この項目に対して表示するテキスト
    * 画像：（オプション）左側に表示する画像への URL
-   * アイコン：（オプション）左側に表示する CUI アイコンクラス。画像が指定されている場合は無視されます
-   * 選択済み：（オプション）この項目を選択された状態で表示するかどうかを指定する boolean 値 (true=selected)。 デフォルトでは、選択した項目は太字フォントで表示されます。 その他の外観を設定するには、`listType` プロパティを使用します（以下を参照）。
+   * アイコン：（オプション）左側に表示する CUI アイコンクラスで、画像が指定されている場合は無視されます
+   * 選択済み：（オプション）この項目を選択された状態で表示するかどうかを指定する Boolean 値（true=selected）。デフォルトでは、選択した項目は太字フォントで表示されます。その他の外観を設定するには、`listType` プロパティを使用します（以下を参照）。
 * **listType：**&#x200B;ポップオーバーリスト項目に使用するスタイル。次のいずれかの値を使用します。
    * チェックマーク
    * チェックボックス
-   * 無線
+   * ラジオ
 * **popoverTemplate：** UI モジュールをクリックしたときにポップオーバーにレンダリングするコンテンツを指定する Handlebars テンプレート。この項目を含める場合は、`list` 項目を含めないでください。
 
 ### 例 {#example}
@@ -81,7 +81,7 @@ JSON 形式の JavaScript オブジェクトを使用して、contexthub.base UI
 
 ### 設定 {#configuration-1}
 
-contexthub.browserinfo UI モジュールのインスタンスには、詳細設定用の値は必要ありません。 次の JSON テキストは、モジュールのデフォルトの設定を表しています。
+contexthub.browserinfo UI モジュールのインスタンスには、詳細設定用の値は必要ありません。次の JSON テキストは、モジュールのデフォルトの設定を表しています。
 
 ```javascript
 {
@@ -104,7 +104,7 @@ contexthub.browserinfo UI モジュールのインスタンスには、詳細設
 
 ### 設定 {#configuration-2}
 
-contexthub.datetime UI モジュールのインスタンスには、詳細設定用の値は必要ありません。 次の JSON テキストは、モジュールのデフォルトの設定を表しています。
+contexthub.datetime UI モジュールのインスタンスには、詳細設定用の値は必要ありません。次の JSON テキストは、モジュールのデフォルトの設定を表しています。
 
 ```javascript
 {
@@ -119,7 +119,7 @@ contexthub.datetime UI モジュールのインスタンスには、詳細設定
 
 ## contexthub.location UI モジュールタイプ {#contexthub-location-ui-module-type}
 
-`contexthub.location` UI モジュールは、クライアントの緯度と経度を表示します。このモジュールは、クリックして現在の位置を変更できるGoogleマップを表示するポップオーバーを提供します。 このモジュールは、 [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) ストア候補。
+`contexthub.location` UI モジュールは、クライアントの緯度と経度を表示します。このモジュールは、クリックして現在の位置を変更できる Google マップを表示するポップオーバーを提供します。このモジュールは、[contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) ストア候補をベースとする、geolocation という名前の ContextHub ストアから情報を取得します。
 
 ![contexthub.location モジュール](assets/location-module.png)
 
@@ -127,7 +127,7 @@ UI モジュールのソースは `/etc/cloudsettings/default/contexthub/geoloca
 
 ### 設定 {#configuration-4}
 
-contexthub.location UI モジュールのインスタンスには、詳細設定用の値は必要ありません。 次の JSON テキストは、モジュールのデフォルトの設定を表しています。
+contexthub.location UI モジュールのインスタンスには、詳細設定用の値は必要ありません。次の JSON テキストは、モジュールのデフォルトの設定を表しています。
 
 ```javascript
 {
@@ -186,7 +186,7 @@ UI モジュールのソースは `/libs/granite/contexthub/components/modules/s
 
 ## contexthub.tagcloud UI モジュールタイプ {#contexthub-tagcloud-ui-module-type}
 
-`contexthub.tagcloud` UI モジュールは、タグに関する情報を表示します。ツールバーの UI モジュールにはタグの数が表示されます。 ポップアップに、新しいタグを追加するためのタグクラウドとテキストボックスが表示されます。 この UI モジュールは、`contexthub.tagcloud` ストア候補をベースとする、tagcloud という名前の ContextHub ストアから情報を取得します。
+`contexthub.tagcloud` UI モジュールは、タグに関する情報を表示します。UI モジュールのツールバーにはタグの数が表示されます。ポップアップには、タグクラウドと新しいタグを追加するためのテキストボックスが表示されます。この UI モジュールは、`contexthub.tagcloud` ストア候補をベースとする、tagcloud という名前の ContextHub ストアから情報を取得します。
 
 ![contexthub.tagcloud モジュール](assets/tagcloud-module.png)
 
@@ -210,7 +210,7 @@ UI モジュールのソースは `/libs/granite/contexthub/components/modules/t
 
 ## granite.profile UI モジュールタイプ {#granite-profile-ui-module-type}
 
-`granite.profile` ContextHub UI モジュールは、現在のユーザーの表示名を表示します。ポップアップにはユーザーのログイン名が表示され、表示名の値を変更できます。 この UI モジュールは、 [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) ストア候補。
+`granite.profile` ContextHub UI モジュールは、現在のユーザーの表示名を表示します。ポップアップにはユーザーのログイン名が表示され、表示名の値を変更できます。この UI モジュールは、[granite.profile](sample-stores.md#granite-profile-sample-store-candidate) ストア候補をベースとする、profile という名前の ContextHub ストアから情報を取得します。
 
 ![granite.profile モジュール](assets/profile-module.png)
 

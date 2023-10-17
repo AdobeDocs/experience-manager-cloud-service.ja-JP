@@ -7,7 +7,7 @@ exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 82%
+ht-degree: 93%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 82%
 
 Adobe AnalyticsとAEMの統合as a Cloud Service機能を使用すると、Web ページのアクティビティを追跡できます。 統合には次の要件があります。
 
-* AEM as a Cloud Service で Analytics 設定を作成するためのタッチ UI を使用できることAdobe AnalyticsをAEM as a Cloud Serviceと統合するには、IMS 認証が必要です。
+* AEM as a Cloud Service で Analytics 設定を作成するためのタッチ UI を使用できることAdobe Analytics を AEM as a Cloud Service と統合するには、IMS 認証が必要です。
 * [Adobe Launch](#analytics-launch) の拡張機能として Adobe Analytics を追加し、設定できることAdobe Launch について詳しくは、[このページ](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=ja)を参照してください。
 
 旧バージョンの AEM と比較して、フレームワークのサポートは、AEM as a Cloud Service の Analytics 設定では提供されません。代わりに、AEM サイトに Analytics 機能（JS ライブラリ）を実装するデファクトツールである Adobe Launch によって実行されます。Adobe Launch では、Adobe Analytics の拡張を設定できるプロパティが作成され、Adobe Analytics にデータを送信するルールが作成されます。Adobe Launch は、SiteCatalyst が提供する解析のタスクに代わるものです。
@@ -42,12 +42,12 @@ Adobe AnalyticsとAEMの統合as a Cloud Service機能を使用すると、Web �
 |---|---|
 | タイトル | 設定名 |
 | IMS 設定 | IMS 設定を選択します（以下の章を参照）。 |
-| セグメント | 現在のレポートスイートで定義されている Analytics セグメントを使用するオプション。Analytics レポートは、セグメントに基づいてフィルタリングされます。 詳しくは、 [このページ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=ja) を参照してください。 |
+| セグメント | 現在のレポートスイートで定義されている Analytics セグメントを使用するオプション。Analytics レポートは、セグメントに基づいてフィルタリングされます。詳しくは、[こちらのページ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=ja)を参照してください。 |
 | レポートスイート | データを送信し、レポートを取り込むリポジトリー。レポートスイートでは、選択した Web サイト、Web サイト群、または Web サイトページのサブセットに関する完全な独立したレポートが定義されます。単一のレポートスイートから取得したレポートを表示し、必要に応じて、いつでも設定でこのフィールドを編集できます。 |
 
 ### Adobe Analytics と IMS 認証 {#configuration-parameters-ims}
 
-Adobe AnalyticsをAEM as a Cloud Serviceと適切に統合するには、IMS 設定が必要です。 この設定を作成する必要があります。詳しくは、 [ページ](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) を参照してください。
+Adobe Analytics を AEM as a Cloud Service と適切に統合するには、IMS 設定が必要です。この設定を作成する必要があります。詳しくは、[こちらのページ](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)を参照して、Analytics の IMS 設定の作成方法を確認してください。
 
 ### サイトへの設定の追加 {#add-configuration}
 

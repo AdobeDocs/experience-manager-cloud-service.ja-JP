@@ -5,7 +5,7 @@ exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '653'
-ht-degree: 82%
+ht-degree: 86%
 
 ---
 
@@ -15,7 +15,7 @@ AEMで、 **Externalizer** は、リソースパス ( 例えば、 `/path/to/my/
 
 AEM as a Cloud Service インスタンスには自分の外部向け URL がわからず、また、場合によってはリンクをリクエストスコープの範囲外で作成する必要があるので、このサービスは、そのような外部 URL を設定して作成するための一元的な場所を提供します。
 
-この記事では、Externalizer サービスの設定方法と使用方法について説明します。このサービスの技術的な詳細については、 [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
+この記事では、Externalizer サービスの設定方法と使用方法について説明します。サービスの技術的詳細について詳しくは、[Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html)を参照してください。
 
 ## Externalizer のデフォルトの動作とオーバーライド方法 {#default-behavior}
 
@@ -73,7 +73,7 @@ Externalizer サービスのドメインマッピングを定義するには：
    * **`scheme`** は通常、http または https ですが、別のプロトコルを指定することもできます。
 
       * https リンクを強制するには、https を使用することをお勧めします。
-      * URL の外部化を要求する際に、クライアントコードがスキームを上書きしない場合に使用されます。
+      * URL の外部化を要求する際にクライアントコードがスキームを上書きしない場合に使用されます。
 
    * **`server`** はホスト名（ドメイン名または IP アドレス）です。
    * **`port`**（オプション）はポート番号です。

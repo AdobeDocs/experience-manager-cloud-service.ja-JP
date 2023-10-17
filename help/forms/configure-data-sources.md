@@ -8,7 +8,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: ac7e1a1ada156734c3a487269e674e8eade7c9c3
 workflow-type: tm+mt
 source-wordcount: '2452'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 86%
 
    >[!NOTE]
    >
-   > 詳しくは、 [JDBC DataSourcePool を使用した SQL 接続](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=ja) を参照してください。
+   > 詳しくは、[JDBC DataSourcePool を使用した SQL 接続](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=ja)を参照してください。
 
 1. 「**[!UICONTROL 保存]**」をタップして、設定内容を保存します。
 
@@ -176,7 +176,7 @@ RESTful サービス Open API 仕様バージョン 3.0 でサポートされて
 * リンク
 * 1 回の操作に対する異なる MIME タイプの異なるリクエスト本文
 
-詳しくは、 [OpenAPI 3.0 仕様](https://swagger.io/specification/v3/) を参照してください。
+詳しくは、[OpenAPI 3.0 仕様](https://swagger.io/specification/v3/)を参照してください。
 
 ### パフォーマンスを最適化するためのフォームデータモデル HTTP クライアント設定 {#fdm-http-client-configuration}
 

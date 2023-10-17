@@ -5,7 +5,7 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 82%
+ht-degree: 97%
 
 ---
 
@@ -35,18 +35,18 @@ Cloud Manager は、TXT 値を使用してドメインの所有権を検証し�
 
 * **検証済み、デプロイメントに失敗しました** - TXT 検証は成功しましたが、CDN のデプロイメントに失敗しました。
 
-   * その場合は、Adobe担当者にお問い合わせください。
+   * この場合は、アドビ担当者にお問い合わせください。
 
 * **ドメインが検証済みでデプロイ済み** - このステータスは、カスタムドメイン名が使用できる状態であることを示します。
 
    * この時点で、カスタムドメイン名はテストの準備ができており、Cloud Manager のドメイン名を指すようになっています。
-   * 詳しくは、 [DNS 設定の構成](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) を参照してください。
+   * 詳細については、[DNS 設定の指定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)を参照してください。
 
 * **削除中** - カスタムドメイン名を削除中です。
 
 * **削除に失敗しました** - カスタムドメイン名の削除に失敗しました。再試行する必要があります。
 
-   * 詳しくは、 [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) を参照してください。
+   * 詳しくは、[カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)を参照してください。
 
 Cloud Manager では、**カスタムドメイン追加**&#x200B;ウィザードの検証手順で「**保存**」を選択すると、TXT 検証が自動的にトリガーされます。それ以降の検証では、ステータスの横にある再検証アイコンをアクティブに選択する必要があります。
 
@@ -56,7 +56,7 @@ Cloud Manager では、**カスタムドメイン追加**&#x200B;ウィザード
 
 ### エラー：ドメインがインストールされていません {#domain-not-installed}
 
-このエラーは、レコードが適切に更新されたことを確認した後でも、TXT レコードのドメイン検証中に発生する可能性があります。
+このエラーは、レコードが適切にアップデートされたことを確認した後でも、TXT レコードのドメイン検証中に発生する可能性があります。
 
 #### エラーの原因 {#cause}
 
@@ -82,8 +82,8 @@ Fastly は、ドメインを最初に登録したアカウントにロックし�
 
 ## カスタムドメイン名の既存の CDN 設定 {#pre-existing-cdn}
 
-カスタムドメイン名用の既存の CDN 設定がある場合、 **カスタムドメイン名** および **環境** ページに表示され、Cloud Manager で設定できるように、UI を使用してこれらの設定を追加するよう促す。
+カスタムドメイン名の既存の CDN 設定がある場合は、UI を通じてこれらの設定を追加して Cloud Manager で表示および設定できるようにすることを促す情報メッセージが&#x200B;**カスタムドメイン名**&#x200B;ページと&#x200B;**環境**&#x200B;ページに表示されます。
 
 UI を使用して既存の環境設定をすべて移行すると、このメッセージは表示されなくなります。メッセージが表示されなくなるまでに 1～2 営業日かかる場合があります。
 
-詳しくは、 [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。
+詳しくは、[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。

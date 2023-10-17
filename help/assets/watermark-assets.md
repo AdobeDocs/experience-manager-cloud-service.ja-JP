@@ -8,7 +8,7 @@ exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
 source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
 source-wordcount: '318'
-ht-degree: 80%
+ht-degree: 94%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 80%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 [!DNL Adobe Experience Manager Assets] では、画像に電子透かしを追加できます。[!DNL Assets] は、他の画像ファイルへの透かしとしての画像の適用をサポートしています。透かしは、アセットの信頼性と著作権の所有権を確認するのに役立ちます。また、透かしを使用して、機密、ドラフト、有効性などのドキュメントの状態も示せます。
@@ -39,10 +39,10 @@ ht-degree: 80%
 
    >[!NOTE]
    >
-   >を使用してシステム透かしプロファイルを設定した場合 `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` 設定ファイル（OSGi 設定）を使用する場合は引き続き使用できますが、Adobeでは新しい方法を使用することをお勧めします。
+   >`com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json`設定ファイル（OSGi 設定）を使用してシステム透かしプロファイルを設定した場合は、それを引き続き使用できますが、アドビでは新しいメソッドを使用することをお勧めします。
 
 
-1. [処理プロファイルの作成](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) 透かしを適用する際にアセットマイクロサービスを使用する場合。
+1. 透かしを適用する際にアセットマイクロサービスを利用する[処理プロファイルを作成します](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile)。
 
    ![透かしを作成するアセット処理プロファイル](assets/watermark-processing-profile.png)
 

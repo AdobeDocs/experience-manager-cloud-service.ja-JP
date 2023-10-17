@@ -6,70 +6,70 @@ exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '1390'
-ht-degree: 45%
+ht-degree: 96%
 
 ---
 
-# 繰り返し可能なセクション（コアコンポーネント）を含むフォームの作成 {#repeat-panel}
+# 繰り返し可能なセクション（コアコンポーネント）を使ったフォームの作成 {#repeat-panel}
 
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-forms-repeatable-sections.html?lang=en) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-forms-repeatable-sections.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 繰り返し可能なセクションとは、同じデータの複数のインスタンスに関する情報を収集するために、複製または繰り返し実行できるフォームの一部を指します。
 
-例えば、ある人物の職場体験に関する情報を収集するために使用するフォームについて考えてみましょう。 前の各ジョブの詳細をキャプチャするための繰り返し可能なセクションを用意することができます。 繰り返し可能なセクションには、通常、会社名、役職、雇用日、職責などのフィールドが含まれます。 繰り返し可能なセクションの複数のインスタンスを追加して、保持している各ジョブに関する情報を入力できます。
+例えば、ある人物の職歴に関する情報を収集するために使用するフォームについて考えてみましょう。前の各職務の詳細を取得するための繰り返し可能なセクションがある場合があります。繰り返し可能なセクションには、通常、会社名、役職、雇用日、職務責任などのフィールドが含まれます。繰り返し可能なセクションの複数のインスタンスを追加して、保持している各ジョブに関する情報を入力できます。
 
-![再現性](/help/forms/assets/repeatable-adaptive-form-example.gif)
+![繰り返し可能性](/help/forms/assets/repeatable-adaptive-form-example.gif)
 
-この記事を最後まで読むと、次の内容を習得できます。
+この記事を最後まで読むと、以下の操作を実行できるようになります。
 
 * アダプティブフォーム内に繰り返し可能なセクションを作成する
 * アダプティブフォームコンポーネントの繰り返し回数の最小数または最大数を設定する
-* 繰り返し可能なセクションに対して追加または削除のアクションを設定するには、ルールエディターを使用します
+* 繰り返し可能なセクションに対して追加または削除のアクションを設定するために、ルールエディターを使用する
 
-以下を使用すると、 [パネル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [アコーディオン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [水平タブ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)または [ウィザード](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) アダプティブフォームのセクションを繰り返し可能にするコンポーネント パネル、アコーディオン、水平タブ、またはウィザードコンポーネントに子コンポーネントを追加して、フォーム内に繰り返し可能なセクションを作成できます。
+以下を使用すると、 [パネル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=ja), [アコーディオン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=ja), [水平タブ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=ja)または [ウィザード](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=ja) アダプティブフォームのセクションを繰り返し可能にするコンポーネント パネル、アコーディオン、水平タブ、またはウィザードコンポーネントに子コンポーネントを追加して、フォーム内に繰り返し可能なセクションを作成できます。
 
 
-このドキュメントの例は、 [パネル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html) コンポーネント。 同じ手順を実行して、 [アコーディオン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [水平方向のタブ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)、および [ウィザード](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) コンポーネントは繰り返し可能です。
+このドキュメントの例は、[パネル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=ja)コンポーネントに基づいています。同じ手順を実行して、[アコーディオン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=ja)、[水平タブ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=ja)、および[ウィザード](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=ja)コンポーネントを繰り返すことができます。
 
 ## フォーム内の繰り返し可能なセクションの追加または削除 {#add-or-delete-repeatable-section-in-panel-container}
 
-フォーム内でパネルを繰り返したり、繰り返し可能なパネルを削除したりする場合、フォーム作成者はボタンコンポーネントを使用してパネルのインスタンスを追加または削除します。 フォームに繰り返し可能なセクション（パネル）を追加または削除するには、次の手順を実行します。
+フォーム内でパネルを繰り返したり、繰り返し可能なパネルを削除したりする場合、フォーム作成者はボタンコンポーネントを使用してパネルのインスタンスを追加または削除します。フォームに繰り返し可能なセクション（パネル）を追加または削除するには、次の手順を実行します。
 
 * [パネルコンテナを繰り返し可能にする](#make-panel-container-repeatable)
-* [繰り返し可能なセクションを追加](#add-repeatable-section-using-instance-manager-via-scripts)
-* [繰り返し可能なセクションの削除](#delete-repeatable-section-using-instance-manager-via-scripts)
+* [繰り返し可能なセクションを追加する](#add-repeatable-section-using-instance-manager-via-scripts)
+* [繰り返し可能なセクションを削除する](#delete-repeatable-section-using-instance-manager-via-scripts)
 
 ### パネルコンテナを繰り返し可能にする {#make-panel-container-repeatable}
 
 ![「アクセシビリティ」タブ](/help/forms/assets/repeat-panel.png)
 
-パネルを繰り返し可能にするには、次の手順に従います。
-1. パネルコンテナを選択し、 ![cmppr](/help/forms/assets/cmppr.png).
-1. 次をクリック： **繰り返しパネル** 切り替えボタンをオンにして、 **パネルを繰り返し可能にする**.
-1. 設定 **最小繰り返し** 繰り返し可能な最小セクションに必要に応じて、 **最小繰り返し** を 0 に設定すると、繰り返し使用されるパネルが削除され、パネルが非レプリケーションの場合は削除されます。 デフォルトでは、最小繰り返しの値は 0 です。
-1. 設定 **最大繰り返し** 必要な回数だけパネルを繰り返す場合は、デフォルトでは値は無限です。
+パネルを繰り返し可能にするには、次の手順を実行します。
+1. パネルコンテナを選択して、![cmppr](/help/forms/assets/cmppr.png) をタップします。
+1. **繰り返しパネル**&#x200B;をクリックし、**パネルを繰り返し可能にする**&#x200B;のスイッチをオンにします。
+1. 最小繰り返し可能セクションの必要に応じて&#x200B;**最小繰り返し回数**&#x200B;を設定します。パネルを繰り返しない場合、または繰り返しパネルを削除するには、**最小繰り返し回数**&#x200B;を 0 に設定できます。デフォルトでは、最小繰り返し回数の値は 0 です。
+1. **最大繰り返し回数**&#x200B;を設定して、必要な回数パネルを繰り返します。デフォルトの値は無限です。
 
    >[!NOTE]
    >
    > 
-   > * 最小繰り返し回数を —ve 値にすることはできません。
-   > * 繰り返し不可能なパネルを作成するには、最大フィールドと最小フィールドの値を 1 に設定します。
+   > * 最小繰り返し回数を -ve 値にすることはできません。
+   > * 繰り返しを許可しないパネルを作成するには、最大値フィールドと最小値フィールドの値を 1 に設定します。
 
 ### インスタンスマネージャーを使用した繰り返し可能なセクションの追加（スクリプトを使用） {#add-repeatable-section-using-instance-manager-via-scripts}
 
-繰り返しを許可するパネルの親には、パネルの繰り返しインスタンスを管理する追加ボタンが含まれている必要があります。 親要素にボタンを挿入し、ボタン上のスクリプトを有効にするには、以下の手順を実行します。
+パネルの親要素に繰り返しを許可する場合は、パネルの繰り返しインスタンスを管理するために追加ボタンが含まれている必要があります。親要素にボタンを挿入し、ボタン上のスクリプトを有効にするには、以下の手順を実行します。
 
-1. を追加します。 **ボタンコンポーネント** をパネルの親に追加します。 次のビデオの例では、ラベル名がのボタンコンポーネントが 1 つあります **追加** およびフィールド名 **AddPanel**、が使用されます。 コンポーネントを選択して、「![編集ルール](/help/forms/assets/edit-rules.png)」をタップします。ボタンコンポーネントのルールがルールエディターで開きます。
+1. **ボタンコンポーネント**&#x200B;をパネルの親要素に追加します。以下のビデオの例では、ラベル名 **Add** とフィールド名 **AddPanel** のボタンコンポーネントが使用されています。コンポーネントを選択して、「![編集ルール](/help/forms/assets/edit-rules.png)」をタップします。ルールエディターでボタンコンポーネントのルールが開きます。
 1. ルールエディターウィンドウで、「**作成**」をクリックします。
 
    フォームオブジェクトと関数の行で、「**ビジュアルエディター**」を選択します。
 
    1. ルール領域の WHEN で、 **クリックされた** ステートを選択します。
-   1. 「THEN」で、「 **インスタンスを追加**&#x200B;をクリックし、 ![toggle-side-panel](/help/forms/assets/toggle-side-panel.png) を使用するか、 **オブジェクトをドロップするか、ここから選択します。**
+   1. THEN で、「**インスタンスを追加**」を選択し、![toggle-side-panel](/help/forms/assets/toggle-side-panel.png) を使用してパネルをドラッグ＆ドロップするか、「**オブジェクトをドロップまたは次から選択**」を使用して選択します。
 
    フォームオブジェクトと関数の行で、「**コードエディター**」を選択します。「**ルールを編集**」をクリックして、コード領域で以下の操作を行います。
 
@@ -82,15 +82,15 @@ ht-degree: 45%
 
 ### インスタンスマネージャー（スクリプト経由）を使用した繰り返し可能なセクションの削除 {#delete-repeatable-section-using-instance-manager-via-scripts}
 
-繰り返し可能なパネルのインスタンスを削除するには、パネルの親に削除ボタンを含める必要があります。 親にボタンを挿入し、ボタン上のスクリプトを有効にして繰り返し可能なパネルを削除するには、次の手順を実行します。
+パネルの親要素には、繰り返し可能なパネルのインスタンスを削除するために削除ボタンが含まれている必要があります。親要素にボタンを挿入し、ボタン上のスクリプトを有効にして反復可能なパネルを削除するには、以下の手順を実行します。
 
-1. を追加します。 **ボタンコンポーネント** をパネルの親に追加します。下のビデオでは、ラベル名が付いたボタンコンポーネントを **削除** およびフィールド名 **DeletePanel** が使用されます。 コンポーネントを選択して、「![編集ルール](/help/forms/assets/edit-rules.png)」をタップします。ボタンコンポーネントのルールがルールエディターで開きます。
+1. **ボタンコンポーネント**&#x200B;をパネルの親要素に追加します。下のビデオでは、ラベル名 **DELETE** が付いたボタンコンポーネントおよびフィールド名 **DeletePanel** が使用されます。コンポーネントを選択して、「![編集ルール](/help/forms/assets/edit-rules.png)」をタップします。ルールエディターでボタンコンポーネントのルールが開きます。
 1. ルールエディターウィンドウで、「**作成**」をクリックします。
 
    フォームオブジェクトと関数の行で、「**ビジュアルエディター**」を選択します。
 
-   1. ルール領域で、WHEN **DeletePanel**、状態を選択 **クリック済み**.
-   1. 「THEN」で、「 **インスタンスを削除**&#x200B;をクリックし、 ![toggle-side-panel](/help/forms/assets/toggle-side-panel.png) を使用するか、 **オブジェクトをドロップするか、ここから選択します。**
+   1. ルール領域の WHEN **DeletePanel** で、**クリックされた**&#x200B;ステートを選択します。
+   1. THEN で、「**インスタンスを削除**」を選択し、![toggle-side-panel](/help/forms/assets/toggle-side-panel.png) を使用してパネルをドラッグ＆ドロップするか、「**オブジェクトをドロップまたは次から選択**」を使用して選択します。
 
    フォームオブジェクトと関数の行で、「**コードエディター**」を選択します。「**ルールを編集**」をクリックして、コード領域で以下の操作を行います。
 
@@ -107,7 +107,7 @@ ht-degree: 45%
 >`<panelName>.instanceManager.instances[<instanceNumber>].<fieldname>`
 >
 >
->例えば、繰り返し可能なパネルにテキストボックスが付いたアダプティブフォームを作成したとします。 このフォームに 3 つの繰り返し可能テキストボックスを事前入力するには、以下の xml が必要です。
+>例えば、テキストボックスを持つ繰り返し可能なパネルを含むアダプティブフォームを作成するとします。このフォームに 3 つの繰り返し可能テキストボックスを事前入力するには、以下の xml が必要です。
 >
 >
 >`<panel1><textbox1>AA1</panel1></textbox1>`
@@ -171,7 +171,7 @@ A panel has various layouts options. The Layout for accordian design option has 
 1. サブフォームの繰り返し回数の最大値を指定する場合は、「最大値」を選択して、関連するボックスに数値を入力します。「最大値」に値を入力しなければ、サブフォームの繰り返し回数は無制限になります。
 1. サブフォームの繰り返し回数をデータ量に関係なく指定する場合は、「初期値」オプションを選択して、関連するボックスに数値を入力します。このオプションを選択した場合は、データが使用できないときやデータ項目が指定された「初期値」の値より少ないときにも、フォーム上に空のサブフォームインスタンスが配置されます。
 1. 親サブフォームにボタンを 2 つ追加します。ひとつはインスタンスの追加に、もうひとつは繰り返し可能なサブフォームのインスタンスの削除に使用します。詳しい手順については、「[アクションの作成](https://help.adobe.com/ja_JP/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2)」を参照してください。
-1. 次に、フォームテンプレートをアダプティブフォームにリンクします。 詳細な手順については、 [テンプレートに基づくアダプティブフォームの作成](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=en#create-an-adaptive-form-based-on-an-xfa-form-template).
+1. ここで、アダプティブフォームにフォームテンプレートをリンクします。詳しい手順については、[テンプレートに基づくアダプティブフォームの作成](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=ja#create-an-adaptive-form-based-on-an-xfa-form-template)を参照してください。
 1. 手順 9 で作成したボタンを使用して、サブフォームを追加および削除します。
 
 添付の .zip ファイルには、繰り返し可能なサブフォーラムのサンプルが含まれています。
@@ -180,7 +180,7 @@ A panel has various layouts options. The Layout for accordian design option has 
 
 ## XML スキーマ（XSD）の繰り返し設定の使用  {#using-repeat-settings-of-an-xml-schema-xsd-br}
 
-XML スキーマ、または任意の複合タイプ要素の minOccurs および maxOccurs プロパティから、繰り返し可能なパネルを作成できます。XML スキーマについて詳しくは、 [XML スキーマをフォームモデルとして使用してアダプティブフォームを作成する](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html).
+XML スキーマ、または任意の複合タイプ要素の minOccurs および maxOccurs プロパティから、繰り返し可能なパネルを作成できます。XML スキーマについて詳しくは、[XML スキーマをフォームモデルとして使用するアダプティブフォームを作成](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html?lang=ja)を参照してください。
 
 以下のコードでは、`SampleType` パネルで minOccurs および maxOccurs プロパティが使用されています。
 
@@ -227,7 +227,7 @@ XML スキーマ、または任意の複合タイプ要素の minOccurs およ�
 
 ## 関連記事
 
-* [アダプティブフォームの作成](creating-adaptive-form-core-components.md)
-* [フォームのスタイルまたはテーマを作成する](using-themes-in-core-components.md)
-* [ルールエディターを使用してフォームに動的な動作を追加する](rule-editor.md)
-* [画面サイズやデバイスタイプに応じてフォームのレイアウトを設定する](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [アダプティブフォームを作成](creating-adaptive-form-core-components.md)
+* [フォームのスタイルまたはテーマを作成](using-themes-in-core-components.md)
+* [ルールエディターを使用してフォームに動的な動作を追加](rule-editor.md)
+* [画面サイズやデバイスタイプに応じてフォームのレイアウトを設定](/help/sites-cloud/authoring/features/responsive-layout.md)

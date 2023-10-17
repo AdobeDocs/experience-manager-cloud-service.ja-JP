@@ -5,7 +5,7 @@ exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
 source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 34%
+ht-degree: 44%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 34%
 この節では、Cloud Manager でプログラムのブランチを作成する方法について説明します。
 
 >[!NOTE]
->詳しくは、 [Cloud Manager でのウィザードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html?lang=en) ウィザードを使用してAEM Manager で Cloud Application プロジェクトを作成する方法を説明します。
+>ウィザードを使用して Cloud Manager で AEM アプリケーションプロジェクトを作成する方法について詳しくは、[Cloud Manager でのウィザードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html?lang=en)を参照してください。
 
 ## 目的 {#objective}
 

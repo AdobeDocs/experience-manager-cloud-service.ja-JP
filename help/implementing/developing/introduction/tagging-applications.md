@@ -5,7 +5,7 @@ exl-id: a106dce1-5d51-406a-a563-4dea83987343
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '762'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 87%
 タグ付けに関する関連情報については、次を参照してください。
 
 * コンテンツ作成者としてのタグ付けについて詳しくは、「[タグの使用](/help/sites-cloud/authoring/features/tags.md)」を参照してください。
-* タグの作成と管理、およびタグが適用されたコンテンツについては、管理者の観点から「タグの管理」を参照してください。
+* タグの作成と管理や、タグが適用されているコンテンツについての管理者の観点については、タグの管理を参照してください。
 
 ## タグ付け API の概要 {#overview-of-the-tagging-api}
 
@@ -121,7 +121,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## タグのガベージコレクター {#the-tag-garbage-collector}
 
-タグのガベージコレクターは、非表示および未使用のタグをクリーンアップするバックグラウンドサービスです。非表示および未使用のタグは、`/content/cq:tags` の下のタグで、`cq:movedTo` プロパティを持ち、コンテンツノードでは使用されません。これらのタグのカウントはゼロです。この遅延削除プロセスを使用すると、コンテンツノード ( `cq:tags` プロパティ ) は、移動または結合操作の一環として更新する必要はありません。 `cq:tags` プロパティの参照は、`cq:tags` プロパティがアップデートされると自動的にアップデートされます（例：ページプロパティダイアログを介して）。
+タグのガベージコレクターは、非表示および未使用のタグをクリーンアップするバックグラウンドサービスです。非表示および未使用のタグは、`/content/cq:tags` の下のタグで、`cq:movedTo` プロパティを持ち、コンテンツノードでは使用されません。これらのタグのカウントはゼロです。この遅延削除プロセスを使用すると、移動や結合操作の一環としてコンテンツノード（`cq:tags` プロパティ）をアップデートする必要がありません。`cq:tags` プロパティの参照は、`cq:tags` プロパティがアップデートされると自動的にアップデートされます（例：ページプロパティダイアログを介して）。
 
 タグのガベージコレクターは、デフォルトで 1 日に 1 回実行されます。これは、次の場所で設定できます。
 
@@ -138,7 +138,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 タグ `title` は異なる言語で定義できます。言語に依存するプロパティがタグノードに追加されます。このプロパティは `jcr:title.<locale>` の形式を持ちます（例：フランス語訳は `jcr:title.fr`）`<locale>` は、小文字の ISO ロケール文字列で、ハイフン／ダッシュ（`-`）ではなくアンダースコア（`_`）を使用します（例：`de_ch`）。
 
-例えば、 **動物** タグが **製品** ページ、値 `stockphotography:animals` がプロパティに追加される `cq:tags` ノードの `/content/wknd/en/products/jcr:content`. 翻訳は、タグノードから参照されます。
+例：**Animals** タグが **Products** ページに追加されると、値 `stockphotography:animals` は `/content/wknd/en/products/jcr:content` ノードの `cq:tags` プロパティに追加されます。翻訳は、タグノードから参照されます。
 
 サーバーサイド API には、ローカライズされた `title` 関連のメソッドがあります。
 
@@ -168,4 +168,4 @@ AEM では、言語はページ言語またはユーザー言語のどちらか�
 
 >[!NOTE]
 >
->新しい言語は、AEMで認識される言語の 1 つである必要があります。つまり、以下のノードとして使用できる必要があります。 `/libs/wcm/core/resources/languages`.
+>新しい言語は、AEM で認識される言語である必要があります。つまり、`/libs/wcm/core/resources/languages` の下でノードとして使用できる必要があります。

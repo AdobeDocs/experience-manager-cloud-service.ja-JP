@@ -1,19 +1,19 @@
 ---
 title: Adobe Target との統合
-description: タッチ UI と Launch を使用して、Adobe TargetをAEM as a Cloud Serviceと統合する方法をAdobeします。
+description: タッチ UI と Launch を使用して、Adobe TargetをAEM as a Cloud Serviceと統合する方法についてAdobeします。
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 source-git-commit: 957758a8d3c16328e7638356e7ee6df3e561386d
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 67%
+ht-degree: 98%
 
 ---
 
 # Adobe Target との統合{#integrating-with-adobe-target}
 
-Adobe Experience Cloudに含まれているAdobe Targetを使用すると、あらゆるチャネルにわたってターゲティングと測定をおこない、コンテンツの関連性を高めることができます。 Adobe Target と AEM as a Cloud Service の統合には、次のものが必要です。
+Adobe Experience Cloud に含まれている Adobe Target を使用すると、あらゆるチャネルでターゲティングと測定を行い、コンテンツの適切さを向上できます。Adobe Target と AEM as a Cloud Service の統合には、次のものが必要です。
 
 * タッチ操作対応 UI を使用して、AEM as a Cloud Service で Target 設定を作成します（IMS 設定が必要）。
 * [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=ja) の拡張機能として Adobe Target を追加し、設定する方法について説明します。
@@ -24,7 +24,7 @@ Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／
 
 >[!NOTE]
 >
->既存の Target アカウントを持たないお客様は、Experience Cloud用の Target Foundation パックへのアクセスをリクエストできます。 この Foundation パックでは、Target の使用量が制限されます。
+>既存の Target アカウントを持たないユーザーは、Experience Cloud 用の Target Foundation パックの利用申請ができます。この Foundation パックでは、Target の使用量が制限されます。
 
 ## Adobe Target 設定の作成 {#create-configuration}
 
@@ -38,20 +38,20 @@ Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／
 
 ### IMS 設定 {#ims-configuration}
 
-Target を AEM および Launch と適切に統合するには、Launch と Target の両方の IMS 設定が必要です。Launch の IMS 設定は AEM as a Cloud Service で事前に設定されていますが、Target の IMS 設定は、Target のプロビジョニング後に作成する必要があります。詳しくは、 [Adobe Targetとの統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-target-ims.md) とビデオ [Experience Platform LaunchとAEMの統合](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=ja) Target IMS 設定の作成方法を説明します。
+Target を AEM および Launch と適切に統合するには、Launch と Target の両方の IMS 設定が必要です。Launch の IMS 設定は AEM as a Cloud Service で事前に設定されていますが、Target の IMS 設定は、Target のプロビジョニング後に作成する必要があります。[Adobe Target との統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-target-ims.md)とビデオ（[Experience Platform Launch と AEM の統合](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=ja)）を参照して、Target IMS 設定の作成方法を学びます。
 
 ### Adobe Target テナント ID と Adobe Target クライアントコード {#tenant-client}
 
-「 Adobe Targetテナント ID 」フィールドと「 Adobe Targetクライアントコード」フィールドを設定する際は、次の点に注意してください。
+Adobe Target テナント ID と Adobe Target クライアントコードのフィールドを設定する場合は、次の点に注意してください。
 
-1. ほとんどのお客様の場合、テナント ID とクライアントコードは同じです。つまり、両方のフィールドに同じ情報が含まれ、同一です。 両方のフィールドにテナント ID を必ず入力してください。
+1. ほとんどのお客様の場合、テナント ID とクライアントコードは同じです。つまり、両方のフィールドに同じ情報が含まれ、同一になります。両方のフィールドにテナント ID を必ず入力してください。
 2. 従来の目的では、テナント ID とクライアントコードのフィールドに異なる値を入力することもできます。
 
 どちらの場合も、次のようになります。
 
 * デフォルトでは、（最初に追加された場合は）「クライアントコード」も「テナント ID」フィールドに自動的にコピーされます。
 * 必要に応じて、デフォルトのテナント ID セットを変更できます。
-* Target へのバックエンド呼び出しはテナント ID に基づき、Target へのクライアント側呼び出しはクライアントコードに基づきます。
+* バックエンドから Target への呼び出しはテナント ID に基づいて行われ、クライアントサイドから Target への呼び出しはクライアントコードに基づいて行われます。
 
 前述したように、AEM as a Cloud Service では最初のケースが最も一般的です。どちらの場合も、**両方の**&#x200B;フィールドに、要件に応じた正しい情報が含まれていることを確認してください。
 
@@ -74,7 +74,7 @@ Target 設定を編集するには、次の手順に従います。
 
 ### サイトへの設定の追加 {#add-configuration}
 
-タッチ UI 設定をサイトに適用するには、次の場所に移動します。 **Sites** > **任意のサイトページを選択** > **プロパティ** > **詳細** > **設定** /設定テナントを選択します。
+タッチ操作対応 UI 設定をサイトに適用するには、**Sites**／**任意のサイトページを選択**／**プロパティ**／**詳細**／**設定**／設定テナントに移動します。
 
 ## Adobe Launch を使用して、AEM サイトに Adobe Target を統合する {#integrate-target-launch}
 
@@ -82,7 +82,7 @@ AEM は、Experience Platform Launch との標準の統合を提供します。A
 
 >[!NOTE]
 >
->既存の（レガシー）フレームワークは引き続き機能しますが、タッチ操作対応 UI では設定できません。Adobeでは、Launch で変数マッピング設定を再構築することをお勧めします。
+>既存の（レガシー）フレームワークは引き続き機能しますが、タッチ操作対応 UI では設定できません。アドビは、Launch で変数マッピング設定を再構築することをお勧めします。
 
 一般的な概要として、統合手順は次のとおりです。
 
@@ -104,7 +104,7 @@ AEM は、Experience Platform Launch との標準の統合を提供します。A
 
 ### 必要な拡張機能の追加 {#add-extension}
 
-**拡張機能** は、コアライブラリ設定を管理するコンテナです。 Adobe Target 拡張機能は at.js（最新の web 用 Target JavaScript SDK）によるクライアントサイド実装をサポートしています。次の **Adobe Target** および **AdobeContextHub** 拡張機能。
+**拡張機能**&#x200B;は、コアライブラリ設定を管理するコンテナです。Adobe Target 拡張機能は at.js（最新の web 用 Target JavaScript SDK）によるクライアントサイド実装をサポートしています。**Adobe Target** と **Adobe ContextHub** の両方の拡張機能を追加する必要があります。
 
 1. 「拡張機能カタログ」オプションを選択し、フィルターで Target を検索します。
 2. 「**Adobe Target** at.js」を選択し、「インストール」オプションをクリックします。
@@ -112,7 +112,7 @@ AEM は、Experience Platform Launch との標準の統合を提供します。A
 3. 「**設定**」ボタンを選択します。設定ウィンドウに、読み込まれた Target アカウントの資格情報と、この拡張機能の at.js バージョンが表示されます。
 4. 「**保存**」を選択して、Target 拡張機能を Launch プロパティに追加します。「**インストール済みの拡張機能**」リストの下に Target 拡張機能が表示されます。
    ![拡張機能の保存](assets/configure_extension1.png "拡張機能の保存")
-5. 上記の手順を繰り返して、 **AdobeContextHub** 拡張機能をインストールします（この拡張機能は、どのターゲティングがおこなわれているかに基づいて、contexthub パラメーターとの統合に必要です）。
+5. 上記の手順を繰り返して、**Adobe ContextHub** 拡張機能を検索してインストールします（これは、どのターゲットが設定されるかに基づいて contexthub パラメーターとの統合に必要です）。
 
 ### データ要素の作成 {#data-element}
 
@@ -126,16 +126,16 @@ AEM は、Experience Platform Launch との標準の統合を提供します。A
 
 ### ページルールの作成 {#page-rule}
 
-In **ルール**&#x200B;を定義し、ターゲティングを達成するために、一連のアクション（サイトで実行される）を並べ替えます。
+**ルール**&#x200B;では、ターゲティングを達成するために、一連のアクション（サイトで実行される）を定義し、順序を決めます。
 
 1. スクリーンショットに示されたように、一連のアクションを追加します。
    ![アクション](assets/rules1.png "アクション")
-2. 「すべての mbox にパラメーターを追加」で、前に設定したデータ要素（上記のデータ要素を参照）を、mbox 呼び出しで送信されるパラメーターに追加します。
+2. 「すべての mbox にパラメーターを追加」で、前に設定したデータ要素（前述のデータ要素を参照）を、mbox 呼び出しで送信されるパラメーターに追加します。
    ![Mbox](assets/map_data1.png " アクション")
 
 ### ビルドと公開 {#build-publish}
 
-ビルドと公開の方法については、 [ページ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html?lang=ja).
+ビルドと公開の方法について詳しくは、こちらの[ページ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html?lang=ja)を参照してください。
 
 ## Classic とタッチ操作対応 UI の設定の間のコンテンツ構造の変更 {#changes-content-structure}
 
@@ -156,4 +156,4 @@ In **ルール**&#x200B;を定義し、ターゲティングを達成するた�
 
 >[!NOTE]
 >
->従来の設定は、既存のお客様でも引き続きサポートされます（編集または作成のオプションはありません）。 レガシー設定は、VSTS を使用して顧客がアップロードしたコンテンツパッケージの一部です。
+>既存顧客のレガシー設定は引き続きサポートされます（編集オプションおよび新規作成オプションはありません）。レガシー設定は、VSTS を使用する顧客によってアップロードしされたコンテンツパッケージの一部です。

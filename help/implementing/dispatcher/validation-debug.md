@@ -6,7 +6,7 @@ exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: 4a79284d879af1920c839a68be14619d1e35f7e9
 workflow-type: tm+mt
 source-wordcount: '2990'
-ht-degree: 53%
+ht-degree: 94%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 53%
 ## はじめに {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->クラウドの Dispatcher と Dispatcher ツールのダウンロード方法について詳しくは、[クラウドの Dispatcher](/help/implementing/dispatcher/disp-overview.md) ページを参照してください。Dispatcher 設定がレガシーモードの場合は、 [レガシーモードのドキュメント](/help/implementing/dispatcher/validation-debug-legacy.md).
+>クラウドの Dispatcher と Dispatcher ツールのダウンロード方法について詳しくは、[クラウドの Dispatcher](/help/implementing/dispatcher/disp-overview.md) ページを参照してください。Dispatcher 設定がレガシーモードの場合は、[レガシーモードのドキュメント](/help/implementing/dispatcher/validation-debug-legacy.md)を参照してください。
 
 以降の節では、フレキシブルモードのファイル構造、ローカル検証、デバッグ、レガシーモードからフレキシブルモードへの移行について説明します。
 
-この記事では、プロジェクトの Dispatcher 設定にファイルが含まれていることを前提としています `opt-in/USE_SOURCES_DIRECTLY`. このファイルにより、SDK とランタイムは、従来のモードと比べて改善された方法で設定を検証およびデプロイし、ファイルの数とサイズに関する制限を削除します。
+この記事では、プロジェクトの Dispatcher 設定にファイル `opt-in/USE_SOURCES_DIRECTLY` が含まれていることを前提としています。このファイルは、ファイルの数とサイズに関する制限がなくなり、SDK とランタイムによる設定の検証とデプロイが、レガシーモードと比べて改善されます。
 
-Dispatcher 設定に前述のファイルが含まれていない場合、Adobeでは、 [レガシーモードからフレキシブルモードへの移行](#migrating) 」セクションに入力します。
+Dispatcher 設定に前述のファイルが含まれていない場合は、[レガシーモードからフレキシブルモードへの移行](#migrating)の節で説明されるように、アドビではレガシーモードからフレキシブルモードへ移行することを強くお勧めします。
 
 ## ファイル構造 {#flexible-mode-file-structure}
 
@@ -76,19 +76,19 @@ Dispatcher 設定に前述のファイルが含まれていない場合、Adobe�
 
 **カスタマイズ可能なファイル**
 
-以下のファイルはカスタマイズ可能で、デプロイ時にクラウドインスタンスに転送されます。
+次のファイルはカスタマイズ可能で、デプロイ時にクラウドインスタンスに転送されます。
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-これらのファイルは 1 つ以上持つことができます。ファイルには、ホスト名に一致する `<VirtualHost>` エントリが含まれ、Apache が異なるルールで各ドメイントラフィックを扱うことができます。ファイルは `available_vhosts` ディレクトリ内に作成され、`enabled_vhosts` ディレクトリ内のシンボリックリンクで有効になります。次から： `.vhost` 書き換えや変数など、ファイルやその他のファイルが含まれます。
+これらのファイルは 1 つ以上持つことができます。ファイルには、ホスト名に一致する `<VirtualHost>` エントリが含まれ、Apache が異なるルールで各ドメイントラフィックを扱うことができます。ファイルは `available_vhosts` ディレクトリ内に作成され、`enabled_vhosts` ディレクトリ内のシンボリックリンクで有効になります。`.vhost` ファイルから、書き換えや変数などその他のファイルが含まれます。
 
 >[!NOTE]
 >
 >フレキシブルモードでは、絶対パスの代わりに相対パスを使用する必要があります。
 
-ServerAlias に一致する 1 つ以上の仮想ホストが常に使用可能であることを確認します。 `\*.local`, `localhost`、および `127.0.0.1` Dispatcher の無効化に必要な情報です。 サーバーのエイリアス `*.adobeaemcloud.net` および `*.adobeaemcloud.com` は、少なくとも 1 つの vhost 設定でも必要であり、アドビの内部プロセスで必要です。
+Dispatcher の無効化に必要な ServerAlias `\*.local`、`localhost` および `127.0.0.1` に一致する仮想ホストの少なくとも 1 つが常に使用可能であることを確認してください。サーバーのエイリアス `*.adobeaemcloud.net` および `*.adobeaemcloud.com` は、少なくとも 1 つの vhost 設定でも必要であり、アドビの内部プロセスで必要です。
 
-複数の vhost ファイルがあるので、正確なホストを一致させる場合は、次の例に従います。
+複数の vhost ファイルがあり、正確なホストを一致させたい場合は、次の例に従います。
 
 ```
 <VirtualHost *:80>
@@ -131,19 +131,19 @@ mklink wknd.vhost ..\available_vhosts\wknd.vhost
 
 * `conf.d/rewrites/rewrite.rules`
 
-ファイルは、 `.vhost` ファイル。 `mod_rewrite` には一連の書き換えルールがあります。
+ファイルは、`.vhost` ファイル内からインクルードされます。`mod_rewrite` には一連の書き換えルールがあります。
 
 * `conf.d/variables/custom.vars`
 
-ファイルは、 `.vhost` ファイル。 Apache 変数用の定義をこの場所に追加できます。
+ファイルは、`.vhost` ファイル内からインクルードされます。Apache 変数用の定義をこの場所に追加できます。
 
 * `conf.d/variables/global.vars`
 
-ファイルは、 `dispatcher_vhost.conf` ファイル。 このファイルで Dispatcher の変更とログレベルの書き換えができます。
+ファイルは、`dispatcher_vhost.conf` ファイル内からインクルードされます。このファイルで Dispatcher の変更とログレベルの書き換えができます。
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-これらのファイルは 1 つ以上持つことができます。ファイルにはホスト名と一致するファームが含まれ、Dispatcher モジュールに異なるルールで各ファームを処理することを可能にします。ファイルは `available_farms` ディレクトリ内に作成され、`enabled_farms` ディレクトリ内のシンボリックリンクで有効になります。次から： `.farm` ファイル、フィルター、キャッシュルールなどのその他のファイルが含まれます。
+これらのファイルは 1 つ以上持つことができます。ファイルにはホスト名と一致するファームが含まれ、Dispatcher モジュールに異なるルールで各ファームを処理することを可能にします。ファイルは `available_farms` ディレクトリ内に作成され、`enabled_farms` ディレクトリ内のシンボリックリンクで有効になります。`.farm` ファイルから、フィルター、キャッシュルールなどその他のファイルがインクルードされます。
 
 * `conf.dispatcher.d/enabled_farms/<CUSTOMER_CHOICE>.farm`
 
@@ -169,29 +169,29 @@ mklink wknd.farm ..\available_farms\wknd.farm
 
 * `conf.dispatcher.d/cache/rules.any`
 
-ファイルは、 `.farm` ファイル。 キャッシュの環境設定を指定します。
+ファイルは、`.farm` ファイル内からインクルードされます。キャッシュの環境設定を指定します。
 
 * `conf.dispatcher.d/clientheaders/clientheaders.any`
 
-ファイルは、 `.farm` ファイル。 バックエンドに転送する必要があるリクエストヘッダーを指定します。
+ファイルは、`.farm` ファイル内からインクルードされます。バックエンドに転送する必要があるリクエストヘッダーを指定します。
 
 * `conf.dispatcher.d/filters/filters.any`
 
-ファイルは、 `.farm` ファイル。 このルールには、トラフィックを除去してバックエンドに送らないように変更する一連のルールが含まれています。
+ファイルは、`.farm` ファイル内からインクルードされます。このルールには、トラフィックを除去してバックエンドに送らないように変更する一連のルールが含まれています。
 
 * `conf.dispatcher.d/virtualhosts/virtualhosts.any`
 
-ファイルは、 `.farm` ファイル。 グロブマッチングで一致するホスト名または URI パスのリストが含まれます。この照合によって、リクエストの処理に使用するバックエンドが決まります。
+ファイルは、`.farm` ファイル内からインクルードされます。グロブマッチングで一致するホスト名または URI パスのリストが含まれます。このマッチングにより、リクエストの処理に使用するバックエンドが決まります。
 
 * `opt-in/USE_SOURCES_DIRECTLY`
 
-このファイルにより、より柔軟な Dispatcher 設定が可能になり、ファイルの数やサイズに関する以前の制限はなくなりました。 また、SDK とランタイムによる設定の検証とデプロイも改善されます。
+このファイルにより、より柔軟な Dispatcher 設定が可能になり、ファイルの数とサイズに関する以前の制限がなくなります。また、SDK とランタイムによる設定の検証とデプロイも改善されます。
 
-上記のファイルは、以下に示す不変設定ファイルを参照します。不変ファイルに対する変更は、クラウド環境の Dispatchers では処理されません。
+上記のファイルは、以下に示す不変設定ファイルを参照します。クラウド環境では、不変ファイルに対する変更は Dispatcher によって処理されません。
 
 **不変設定ファイル**
 
-これらのファイルは基本フレームワークの一部であり、標準とベストプラクティスを補強します。ファイルをローカルで変更または削除しても、クラウドインスタンスに転送されないので、デプロイメントに影響を与えないので、これらのファイルは不変と見なされます。
+これらのファイルは基本フレームワークの一部であり、標準とベストプラクティスを補強します。ファイルをローカルで変更または削除しても、クラウドインスタンスに転送されず、デプロイメントに影響を与えないので、これらのファイルは不変と見なされます。
 
 上記のファイルは、以下に示す不変ファイルを参照し、その後に追加のステートメントまたはオーバーライドを参照することをお勧めします。Dispatcher 設定をクラウド環境にデプロイすると、ローカル開発で使用されたバージョンに関係なく、不変ファイルの最新バージョンが使用されます。
 
@@ -199,7 +199,7 @@ mklink wknd.farm ..\available_farms\wknd.farm
 
 仮想ホストのサンプルが含まれています。お使いの仮想ホストに対して、このファイルのコピーを作成し、カスタマイズしてから `conf.d/enabled_vhosts` に移動し、カスタマイズしたコピーのシンボリックリンクを作成します。`conf.d/enabled_vhosts` に default.vhost ファイルを直接コピーしないでください。
 
-ServerAlias に一致する仮想ホストが常に使用可能であることを確認する `\*.local`, `localhost`、および `127.0.0.1` Dispatcher の無効化に必要な情報です。 サーバーのエイリアス `*.adobeaemcloud.net` および `*.adobeaemcloud.com` はアドビの内部プロセスで必要です。
+Dispatcher の無効化に必要な ServerAlias `\*.local`、`localhost` および `127.0.0.1` に一致する仮想ホストの 1 つが常に使用可能であることを確認してください。サーバーのエイリアス `*.adobeaemcloud.net` および `*.adobeaemcloud.com` はアドビの内部プロセスで必要です。
 
 * `conf.d/dispatcher_vhost.conf`
 
@@ -207,7 +207,7 @@ ServerAlias に一致する仮想ホストが常に使用可能であること�
 
 * `conf.d/rewrites/default_rewrite.rules`
 
-デフォルトの書き換えルールは、標準プロジェクトに適しています。 カスタマイズが必要な場合は、`rewrite.rules` を変更します。必要に応じて、カスタマイズの最初にデフォルトのルールをインクルードすることができます。
+デフォルトの書き換えルールは、標準プロジェクトに適しています。カスタマイズが必要な場合は、`rewrite.rules` を変更します。必要に応じて、カスタマイズの最初にデフォルトのルールを含めることができます。
 
 * `conf.dispatcher.d/available_farms/default.farm`
 
@@ -249,7 +249,7 @@ ServerAlias に一致する仮想ホストが常に使用可能であること�
 
 >[!NOTE]
 >
->以下の節では、SDK のMacまたは Linux®バージョンを使用するコマンドについて説明しますが、Windows SDK も同様の方法で使用できます。
+>以下の節では、Mac バージョンまたは Linux® バージョンの SDK を使用した場合のコマンドについて説明しますが、Windows バージョンの SDK の場合でも同様の方法で使用できます。
 
 `validate.sh` スクリプトを次のように使用します。
 
@@ -291,11 +291,11 @@ Phase 3 finished
 
 スクリプトには次の 3 つのフェーズがあります。
 
-1. バリデーターを実行します。設定が無効な場合、スクリプトは失敗します。
-2. 実行されるのは `httpd -t` コマンドを使用して、Apache httpd が起動できるように構文が正しいかどうかをテストします。 テストが成功した場合は、設定をデプロイする準備が整っています。
+1. バリデーターを実行します。設定が有効でない場合、スクリプトは失敗します。
+2. Apache httpd を起動できるように、`httpd -t` コマンドを実行して、構文が正しいかどうかをテストします。テストが成功した場合は、設定をデプロイする準備が整っています。
 3. Dispatcher SDK 設定ファイルのサブセットが変更されておらず（[ファイル構造](##flexible-mode-file-structure)セクションで説明されているように不変であることが前提）、SDK の現在のバージョンと一致していることを確認します。
 
-Cloud Manager のデプロイメント中に、 `httpd -t` 構文チェックも実行され、エラーが Cloud Manager に含まれます。 `Build Images step failure` ログ。
+Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも実行され、エラーは Cloud Manager の `Build Images step failure` ログに記録されます。
 
 >[!NOTE]
 >
@@ -305,22 +305,22 @@ Cloud Manager のデプロイメント中に、 `httpd -t` 構文チェックも
 
 ディレクティブが許可リストに登録されていない場合、ツールはエラーをログに記録し、ゼロ以外の終了コードを返します。また、`conf.dispatcher.d/enabled_farms/*.farm` のパターンに合うすべてのファイルをさらにスキャンし、次の内容を確認します。
 
-* 経由を許可するを使用するフィルタールールは存在しません `/glob` ( [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957)) を参照してください。
+* `/glob` 経由の許可を使用するフィルタールールが存在しないこと（詳しくは、[CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) を参照）。
 * 管理機能が公開されないこと。例えば、`/crx/de or /system/console` などのパスへのアクセス。
 
-検証ツールは、使用禁止されている Apache ディレクティブ (許可リストに加えるされていない ) のみを報告します。 Apache 設定の構文やセマンティックの問題は報告されません。この情報は、実行中の環境の Apache モジュールでのみ利用できます。
+検証ツールは、許可リストに登録されていない Apache ディレクティブの使用禁止を報告するのみということに注意してください。Apache 設定の構文や意味の問題は報告されません。この情報は、実行中の環境の Apache モジュールでのみ利用できます。
 
 ツールによって出力される一般的な検証エラーをデバッグする場合のトラブルシューティング手法を次に示します。
 
-**次の項目が見つかりません： `conf.dispatcher.d` アーカイブ内のサブフォルダー**
+**アーカイブに `conf.dispatcher.d` サブフォルダーがありません**
 
 アーカイブには、`conf.d` フォルダーと `conf.dispatcher.d` フォルダーが含まれている必要があります。アーカイブにはプレフィックス `etc/httpd` を&#x200B;**使用しないでください**。
 
-**にファームが見つかりません`conf.dispatcher.d/enabled_farms`**
+**`conf.dispatcher.d/enabled_farms`** にファームがありません
 
 有効なファームは、前述のサブフォルダーに置く必要があります。
 
-**ファイルインクルード (...) の名前は次の必要があります： ...**
+**インクルードファイル (...) には次の名前を付ける必要があります : ...**
 
 ファーム設定には 2 つのセクションがあり、`/cache` セクションに特定のファイル `/renders` と `/allowedClients` をインクルードする&#x200B;**必要があります**。それらのセクションは、次のようになります。
 
@@ -330,7 +330,7 @@ Cloud Manager のデプロイメント中に、 `httpd -t` 構文チェックも
 }
 ```
 
-および:
+および :
 
 ```
 /allowedClients {
@@ -338,9 +338,9 @@ Cloud Manager のデプロイメント中に、 `httpd -t` 構文チェックも
 }
 ```
 
-**不明な場所に含まれるファイル： ...**
+**インクルードファイルが次の不明な場所にあります: ...**
 
-ファーム設定には、独自のファイルをインクルードできる 4 つのセクションがあります。 `/clientheaders`, `filters`, `/rules` in `/cache` セクションと `/virtualhosts`. インクルードするファイルの名前は、次のように指定する必要があります。
+ファーム設定には、独自のファイルを含めることができる 4 つのセクション、`/cache` セクションに `/clientheaders`、`filters`、`/rules`、および `/virtualhosts` があります。インクルードされるファイルは、次のように名前を付ける必要があります。
 
 | セクション | インクルードファイル名 |
 |------------------|--------------------------------------|
@@ -351,7 +351,7 @@ Cloud Manager のデプロイメント中に、 `httpd -t` 構文チェックも
 
 別の方法として、これらのファイルの&#x200B;**デフォルト**&#x200B;バージョンを含めることもできます。その名前の先頭には `default_`（例：`../filters/default_filters.any`）という単語が追加されます。
 
-**(...) にあるステートメントを、既知の場所以外の場所に含めます。**
+**ステートメントが、既知の場所ではない (...) に含まれています: ...**
 
 上記のパラグラフで述べた 6 つのセクションを除いて、
 `$include` ステートメントを使用することは許可されていません。このエラーは、次のような場合に生成されます。
@@ -362,11 +362,12 @@ Cloud Manager のデプロイメント中に、 `httpd -t` 構文チェックも
 }
 ```
 
-**許可されているクライアント/レンダーは次の場所からは含まれません： ...**
+**許可されているクライアント / レンダリングが次の場所からインクルードされていません : ...**
 
-このエラーは、 `/renders` および `/allowedClients` （内） `/cache` 」セクションに入力します。 **file included (...) must be named: ...** の節を参照してください。
+このエラーは、`/renders` および `/allowedClients` のインクルードを `/cache` セクションで指定しない場合に発生します。
+**>インクルードファイル (...) の名前は次のようにする必要があります: ...** の節を参照してください。
 
-**フィルターでは、要求を許可する glob パターンを使用できません**
+**フィルターでは glob パターンを使用してリクエストを許可する必要があります**
 
 `/glob` スタイルのルールはは完全なリクエスト行と照合されるので、このルールを使用してリクエストを許可することは安全ではありません。次に例を示します。
 
@@ -378,7 +379,7 @@ Cloud Manager のデプロイメント中に、 `httpd -t` 構文チェックも
 
 このステートメントは、`css` ファイルのリクエストを許可するものですが、クエリ文字列 `?a=.css` の前に付くン&#x200B;**あらゆる**&#x200B;リソースに対するリクエストも許可してしまいます。したがって、このようなフィルターの使用は禁止されています（CVE-2016-0957 も参照してください）。
 
-**含まれるファイル (...) は、既知のファイルと一致しません**
+**インクルードファイル (...) が既知のファイルと一致しません**
 
 デフォルトでは、Apache 仮想ホスト設定内の 2 種類のファイル（リライトと変数）をインクルードとして指定することができます。
 
@@ -387,7 +388,7 @@ Cloud Manager のデプロイメント中に、 `httpd -t` 構文チェックも
 | 書き換え | `conf.d/rewrites/rewrite.rules` |
 | 変数 | `conf.d/variables/custom.vars` |
 
-フレキシブルモードでは、（あらゆるレベルの）のサブディレクトリにある限り、他のファイルを含めることもできます。 `conf.d` ディレクトリの先頭には次のようにプレフィックスが付きます。
+フレキシブルモードでは、次のようにプレフィックスが付けられた `conf.d` ディレクトリのサブディレクトリ（任意のレベル）に配置されている限り、他のファイルを含めることもできます。
 
 | ファイルの上位ディレクトリのプレフィックスを含める |
 |-------------------------------------|
@@ -406,11 +407,12 @@ Include conf.d/includes/mynewdirectory/myincludefile.conf
 
 **非推奨の設定レイアウトを検出したので互換モードを有効にします**
 
-このメッセージは、非推奨（廃止予定）のバージョン 1 レイアウトが設定に含まれ、完全な Apache 設定と `ams_` プレフィックス付きのファイルが含まれていることを示します。この設定は後方互換性のために引き続きサポートされますが、新しいレイアウトに切り替える必要があります。
+このメッセージは、非推奨（廃止予定）のバージョン 1 レイアウトが設定に含まれ、完全な Apache 設定と `ams_` プレフィックス付きのファイルが含まれていることを示します。この設定は後方互換性のために引き続きサポートされますが、
+新しいレイアウトに切り替える必要があります。
 
-第 1 段階は、 **別々に実行する**&#x200B;を返します。 `validate.sh` スクリプト。
+フェーズ 1 は、ラッパースクリプト `validate.sh` からではなく、**個別に実行**&#x200B;することもできます。
 
-Maven アーティファクトまたは `dispatcher/src` サブディレクトリ：検証エラーを報告します。
+Maven アーティファクトまたは `dispatcher/src` サブディレクトリに対して実行すると、検証エラーが報告されます。
 
 ```
 $ validator full -relaxed dispatcher/src
@@ -421,7 +423,7 @@ Cloud manager validator 1.0.4
   conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
-Windows の場合、Dispatcher バリデーターは大文字と小文字を区別します。 そのため、次のように、設定が存在するパスの大文字と小文字を区別しない場合は、設定の検証に失敗する可能性があります。
+Windows の場合、Dispatcher バリデーターでは大文字と小文字が区別されます。そのため、次のように、設定が存在するパスの大文字と小文字を区別しない場合は、設定の検証に失敗する可能性があります。
 
 ```
 bin\validator.exe -relaxed full src
@@ -434,20 +436,20 @@ Cloud manager validator 2.0.xx
 
 ### フェーズ 2 {#second-phase}
 
-このフェーズでは、Docker コンテナで Apache HTTPD を開始することで、Apache の構文をチェックします。 Docker はローカルにインストールする必要がありますが、AEMを実行する必要はありません。
+この段階では、Docker コンテナで Apache HTTPD を起動して、Apache の構文をチェックします。Docker をローカルにインストールする必要がありますが、AEM を実行する必要はありません。
 
 >[!NOTE]
 >
-Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。 この要件は、ローカルコンピューター上で Dispatcher を実行およびデバッグする場合に必要な前提条件です。
-Windows とmacOSの両方で、Adobeは Docker Desktop の使用をお勧めします。
+Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。
+アドビでは、Windows と macOS の両方で、Docker Desktop を使用することをお勧めします。
 
 このフェーズは、`bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080` を使用して独立に実行することもできます。
 
-Cloud Manager のデプロイメント中に、 `httpd -t` 構文チェックも実行され、 Cloud Manager のイメージのビルド手順の失敗ログにエラーが含まれます。
+Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも実行され、エラーは Cloud Manager の画像を作成の手順のエラーログに記録されます。
 
 ### フェーズ 3 {#third-phase}
 
-このフェーズでエラーが発生した場合は、Adobeが 1 つ以上の不変ファイルを変更したことを示しています。 その場合は、対応する不変ファイルを、 `src` SDK のディレクトリ。 以下のログサンプルは、この問題を示しています。
+この段階でエラーが発生した場合は、アドビが 1 つ以上の不変ファイルを変更したことを示します。その場合は、対応する不変ファイルを SDK の `src` ディレクトリにある新しいバージョンと置き換える必要があります。以下のログサンプルは、この問題を示しています。
 
 ```
 Phase 3: Immutability check
@@ -468,13 +470,13 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 
 このフェーズは、`bin/docker_immutability_check.sh src/dispatcher` を使用して独立に実行することもできます。
 
-ローカルの不変ファイルを更新するには、 `bin/update_maven.sh src/dispatcher` スクリプトを Dispatcher フォルダーに配置します。 `src/dispatcher` は Dispatcher 設定ディレクトリです。 このスクリプトは、 `pom.xml` ファイルを親ディレクトリに格納して、maven の不変性チェックも更新されるようにします。
+ローカルの不変ファイルは、Dispatcher フォルダーで `bin/update_maven.sh src/dispatcher` スクリプトを実行することで更新できます。この場合、`src/dispatcher` は Dispatcher 設定ディレクトリです。このスクリプトは、`pom.xml` ファイルを親ディレクトリに更新し、Maven の不変性チェックも更新します。
 
 ## Apache および Dispatcher 設定のデバッグ {#debugging-apache-and-dispatcher-configuration}
 
-Apache Dispatcher をローカルで実行するには、 `./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080`.
+`./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080` を使用して、Apache Dispatcher をローカルで実行できます。
 
-前述のとおり、Docker をローカルにインストールする必要がありますが、AEM を実行する必要はありません。Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。 この要件は、ローカルコンピューター上で Dispatcher を実行およびデバッグする場合に必要な前提条件です。
+前述のとおり、Docker をローカルにインストールする必要がありますが、AEM を実行する必要はありません。Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。
 
 次の方法を使用して、Dispatcher モジュールのログ出力を増やし、`RewriteRule` 評価の結果をローカル環境とクラウド環境の両方で確認できます。
 
@@ -508,19 +510,19 @@ Dispatcher をローカルで実行すると、ログが端末に直接出力さ
 
 >[!NOTE]
 >
-AEM as a Cloud Service上の環境の場合、debug は最大の詳細レベルです。 トレースログレベルはサポートされていないので、クラウド環境で作業する場合は設定しないでください。
+AEM as a Cloud Service 上の環境の場合、デバッグの冗長レベルは最大になります。トレースログレベルはサポートされていないので、クラウド環境で作業する場合は設定しないでください。
 
 ### 自動再読み込みと検証 {#automatic-reloading}
 
 >[!NOTE]
 >
-Windows オペレーティングシステムの制限により、この機能はmacOSおよび Linux®のユーザーに対してのみ使用できます。
+Windows オペレーティングシステムの制限により、この機能は macOS および Linux® ユーザーのみ利用できます。
 
-設定が変更されるたびにローカル検証（`validate.sh`）を実行してドッカーコンテナ（`docker_run.sh`）を開始する代わりに、`docker_run_hot_reload.sh` スクリプトを実行することもできます。  スクリプトは、設定に対する変更を監視し、自動的に再読み込みして検証を再実行します。 このオプションを使用すると、デバッグ時にかなりの時間を節約できます。
+設定が変更されるたびにローカル検証（`validate.sh`）を実行してドッカーコンテナ（`docker_run.sh`）を開始する代わりに、`docker_run_hot_reload.sh` スクリプトを実行することもできます。  スクリプトは、設定に対する変更を監視し、自動的に再読み込みして検証を再実行します。このオプションを使用すると、デバッグ時にかなりの時間を節約できます。
 
-次のコマンドを使用して、スクリプトを実行できます。`./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
+次のコマンドを使用して、スクリプトを実行できます：`./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
 
-出力の最初の行は、で実行されるのと似ています。 `docker_run.sh`. 例：
+出力の最初の行は、`docker_run.sh` に対して実行されるものと似ています。次に例を示します。
 
 ```
 ~ bin/docker_run_hot_reload.sh src host.docker.internal:8081 8082
@@ -548,7 +550,7 @@ INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apach
 
 ## 環境ごとに異なる Dispatcher 設定 {#different-dispatcher-configurations-per-environment}
 
-現在、同じ Dispatcher 設定がAEM as a Cloud Service上のすべての環境に適用されます。 ランタイムには環境変数が含まれています `ENVIRONMENT_TYPE` 現在の実行モード（開発、ステージまたは実稼動）と「定義」を含む 「定義」は、 `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE`または `ENVIRONMENT_PROD`. Apache 設定では、変数を式に直接使用できます。または、「定義」を使用してロジックを作成できます。
+現時点では、すべての AEM as a Cloud Service 上の環境に同じ Dispatcher 設定が適用されます。ランタイムには環境変数 `ENVIRONMENT_TYPE` が含まれています。この変数には、現在の実行モード（開発、ステージング、または実稼動）と「定義」が含まれています。「定義」は、`ENVIRONMENT_DEV`、`ENVIRONMENT_STAGE`、または `ENVIRONMENT_PROD` のいずれかです。Apache 設定では、変数を式に直接使用できます。または、「定義」を使用してロジックをビルドできます。
 
 ```
 # Simple usage of the environment variable
@@ -586,7 +588,7 @@ DISP_RUN_MODE の値を渡さない場合のデフォルトの実行モードは
 
 ## Docker コンテナで使用中の Dispatcher 設定の表示 {#viewing-dispatcher-configuration-in-use-by-docker-container}
 
-環境固有の設定では、実際の Dispatcher 設定がどのようになるかを判断するのが困難な場合があります。 を使用して Docker コンテナを起動した後。 `docker_run.sh`を指定する場合は、次のようにダンプできます。
+環境固有の設定では、実際の Dispatcher 設定がどのようになるのかを判断するのが困難な場合があります。`docker_run.sh` を使用して Docker コンテナを起動したら、次のようにダンプできます。
 
 * 使用中の Docker コンテナ ID を特定します。
 
@@ -609,13 +611,13 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## レガシーモードからフレキシブルモードへの移行 {#migrating}
 
-Cloud Manager 2021.7.0 リリースでは、新しい Cloud Manager プログラムは、[AEM アーキタイプ 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) 以降を使用した Maven プロジェクト構造を生成します。これには **opt-in/USE_SOURCES_DIRECTLY** ファイルが含まれています。これにより、 [レガシーモード](/help/implementing/dispatcher/validation-debug-legacy.md) ファイルの数とサイズに関する情報を含み、SDK とランタイムが設定を検証しデプロイする際にも使用されます。 Dispatcher 設定にこのファイルがない場合は、移行することを強くお勧めします。 安全な移行を確実に行うには、次の手順に従います。
+Cloud Manager 2021.7.0 リリースでは、新しい Cloud Manager プログラムは、[AEM アーキタイプ 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) 以降を使用した Maven プロジェクト構造を生成します。これには **opt-in/USE_SOURCES_DIRECTLY** ファイルが含まれています。これにより、ファイルの数とサイズに関する[レガシーモード](/help/implementing/dispatcher/validation-debug-legacy.md)の以前の制限事項がなくなるので、SDK とランタイムによる設定の検証とデプロイも改善されます。Dispatcher 設定にこのファイルがない場合は、移行することを強くお勧めします。安全な移行を確実に行うには、次の手順に従います。
 
-1. **ローカルテスト：** 最新の Dispatcher ツール SDK を使用して、フォルダーとファイルを追加します。 `opt-in/USE_SOURCES_DIRECTLY`. Dispatcher がローカルで動作することをテストできるよう、この記事の「ローカル検証」の手順に従います。
+1. **ローカルテスト：**&#x200B;最新の Dispatcher ツール SDKを使用して、フォルダーおよびファイル `opt-in/USE_SOURCES_DIRECTLY` を追加します。この記事の「ローカル検証」の手順に従って、Dispatcher がローカルで動作するかどうかをテストします。
 1. **クラウド開発テスト：**
    * 実稼動以外のパイプラインでクラウドの開発環境にデプロイされたファイル `opt-in/USE_SOURCES_DIRECTLY` を Git ブランチにコミットします。
    * Cloud Manager を使用して、クラウド開発環境にデプロイします。
-   * 十分にテストします。上位の環境に変更をデプロイする前に、Apache および Dispatcher の設定が期待どおりに動作することを検証することが重要です。 カスタム設定に関連するすべての動作を確認します。 デプロイされた Dispatcher の設定にカスタム設定が反映されていないと思われる場合は、カスタマーサポートチケットを作成します。
+   * 十分にテストします。変更内容を上位の環境にデプロイする前に、Apache および Dispatcher 設定が想定どおりに動作することを検証することが不可欠です。カスタム設定に関係するすべての動作を確認します。デプロイした Dispatcher 設定がカスタム設定を反映していないと思われる場合は、カスタマーサポートチケットを提出します。
 
    >[!NOTE]
    >
@@ -623,5 +625,5 @@ Cloud Manager 2021.7.0 リリースでは、新しい Cloud Manager プログラ
 1. **実稼動へのデプロイ：**
    * 実稼動パイプラインでクラウドのステージング環境および実稼動環境にデプロイされたファイル `opt-in/USE_SOURCES_DIRECTLY` を Git ブランチにコミットします。
    * Cloud Manager を使用してステージング環境にデプロイします。
-   * 十分にテストします。上位の環境に変更をデプロイする前に、Apache および Dispatcher の設定が期待どおりに動作することを検証することが重要です。 カスタム設定に関連するすべての動作を確認します。 デプロイされた Dispatcher の設定にカスタム設定が反映されていないと思われる場合は、カスタマーサポートチケットを作成します。
+   * 十分にテストします。変更内容を上位の環境にデプロイする前に、Apache および Dispatcher 設定が想定どおりに動作することを検証することが不可欠です。カスタム設定に関係するすべての動作を確認します。デプロイした Dispatcher 設定がカスタム設定を反映していないと思われる場合は、カスタマーサポートチケットを提出します。
    * Cloud Manager を使用して、実稼動環境へのデプロイメントを続行します。

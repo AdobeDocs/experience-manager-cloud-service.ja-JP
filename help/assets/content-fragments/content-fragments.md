@@ -5,7 +5,7 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
 workflow-type: tm+mt
 source-wordcount: '2229'
-ht-degree: 60%
+ht-degree: 63%
 
 ---
 
@@ -88,7 +88,7 @@ Adobe Experience Manager(AEM) をas a Cloud Serviceしたコンテンツフラ�
 >
 >エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
 >
->詳しくは、 [AEMのコンテンツフラグメントとエクスペリエンスフラグメントについて](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ja#content-fragments).
+>詳細については、[AEM のコンテンツフラグメントおよびエクスペリエンスフラグメントについて](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ja#content-fragments)も参照してください。
 
 ## コンテンツフラグメントとコンテンツサービス {#content-fragments-and-content-services}
 
@@ -122,7 +122,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 >[!CAUTION]
 >
->MSM（コンテンツフラグメントのコピーを作成する）を使用する場合は、 **ユニーク** 制約は、それぞれの [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md).
+>（コンテンツフラグメントのコピーを作成する）MSM を使用する場合は、それぞれの[コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)で使用されているすべてのデータタイプから&#x200B;**一意**&#x200B;の制約を削除する必要があります。
 
 ## コンテンツタイプ {#content-type}
 
@@ -294,7 +294,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
    * フラグメントをHTML形式、JSON 形式、またはその両方で配信するのに便利です。
    * [ページ上でフラグメントを参照](/help/sites-cloud/authoring/fundamentals/content-fragments.md)するために必要です。
-   * フラグメントのレイアウトと配信（チャネル）を担当します。
+   * フラグメントのレイアウトと配信（チャネル）を行います。
    * フラグメントは、レイアウトを定義し、一部またはすべての要素/バリエーションと関連コンテンツを配信するために、1 つ以上の専用コンポーネントを必要とします。
    * 作成時にフラグメントをページにドラッグすると、必要なコンポーネントが自動的に関連付けられます。
 

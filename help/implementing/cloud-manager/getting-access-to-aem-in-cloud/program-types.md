@@ -5,7 +5,7 @@ exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 source-git-commit: fc14675e47e7a61bf36acb9a16756a593189b702
 workflow-type: tm+mt
 source-wordcount: '520'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ Cloud Manager プログラムには、独自の Git リポジトリが自動的�
 
 Cloud Manager の Git リポジトリにアクセスするには、ユーザーは、コマンドラインツールを持つ Git クライアント、スタンドアロンのビジュアル Git クライアントまたはユーザーが選択した IDE（Eclipse、IntelliJ、NetBeans など）を使用する必要があります。
 
-Git クライアントを設定したら、Cloud Manager のユーザーインターフェイスから Git リポジトリを管理できます。 Cloud Manager ユーザーインターフェイスを使用して Git を管理する方法については、 [Git へのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
+Git クライアントをセットアップすると、Cloud Manager ユーザーインターフェイスから Git リポジトリを管理できます。Cloud Manager ユーザーインターフェイスを使用して Git を管理する方法については、[Git へのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)を参照してください。
 
 AEM Cloud アプリケーションの開発を開始するには、Cloud Manager リポジトリからローカルコンピューター上の場所にチェックアウトして、アプリケーションコードのローカルコピーを作成する必要があります。
 
@@ -56,8 +56,8 @@ $ git clone {URL}
 ユーザーは、 **実稼動** プログラムまたは **sandbox** プログラム。
 
 * **実稼動プログラム**&#x200B;は、サイトのライブトラフィックを有効にするために作成されます。
-   * 詳しくは、 [実稼働プログラムの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) を参照してください。
+   * 詳しくは、[実稼動プログラムの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)を参照してください。
 * **サンドボックスプログラム**&#x200B;は、通常、トレーニング、デモの実行、イネーブルメント、POC またはドキュメントの目的にかなうように作成されます。
    * サンドボックス環境はライブトラフィックを実行するためのものではなく、実稼動プログラムにはない制限事項があります。
    * Sites と Assets が含まれており、サンプルコード、開発環境および実稼動以外のパイプラインを含む Git ブランチが自動入力されて提供されます。
-   * 詳しくは、 [サンドボックスプログラムの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) を参照してください。
+   * 詳しくは、[サンドボックスプログラムの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)を参照してください。

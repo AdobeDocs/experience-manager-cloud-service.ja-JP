@@ -8,7 +8,7 @@ exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '6663'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ name used to be Experience Platform Launch. Changed to Experience Platform Data 
 
 Experience Platform タグおよび Dynamic Media Viewers 5.13 用の *Dynamic Media ビューア*&#x200B;拡張機能によって、Adobe Analytics および Experience Platform タグのユーザーは、Experience Platform タグの設定で Dynamic Media ビューアーに固有のイベントやデータを使用することができます。
 
-この統合により、Adobe Analytics を使用して、Web サイト上での Dynamic Media ビューアの使用状況を追跡できます。同時に、Adobeまたはサードパーティ製の他のExperience Platformタグ拡張機能を持つビューアによって公開されたイベントおよびデータを使用できます。
+この統合により、Adobe Analytics を使用して、Web サイト上での Dynamic Media ビューアの使用状況を追跡できます。それと同時に、ビューアで公開されたイベントやデータを、アドビまたはサードパーティの他の Experience Platform タグ拡張機能で使用することもできます。
 
 アドビまたはサードパーティの拡張機能について詳しくは、Experience Platform タグユーザーガイドの[アドビの拡張機能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html?lang=ja)を参照してください。
 
@@ -420,7 +420,7 @@ Dynamic Media ビューア拡張機能を使用すると、Dynamic Media ビュ�
 
 ## 統合のための Adobe Analytics の設定 {#configuring-adobe-analytics-for-the-integration}
 
-Adobe Analyticsを設定した後、統合に対して次の設定がおこなわれます。
+Adobe Analytics を設定した後、統合のために次の設定が行われます。
 
 * レポートスイートが配置され、選択される。
 * Analytics 変数がトラッキングデータを受け取るために使用可能になる。
@@ -460,7 +460,7 @@ Adobe Analyticsを設定した後、統合に対して次の設定がおこな�
 
    [prop と eVar の概要](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=ja#vars)を参照してください。
 
-   このドキュメントの目的では、カスタムトラフィック (prop) 変数のみが使用されます。これは、Web ページでアクションが発生してから数分以内に Analytics レポートで使用できるようになるからです。
+   このドキュメントでは、カスタムトラフィック（prop）変数のみを使用します。これは、web ページでアクションが発生した場合、数分以内に Analytics レポートで使用できるようになるためです。
 
    新しいカスタムトラフィック変数を有効にするには、Adobe Analytics のツールバーで、**[!UICONTROL 管理者]**／**[!UICONTROL レポートスイート]**&#x200B;に移動します。
 
@@ -487,7 +487,7 @@ Adobe Analyticsを設定した後、統合に対して次の設定がおこな�
 
 ## 統合用の Experience Platform タグの設定 {#configuring-adobe-launch-for-the-integration}
 
-統合タグを設定した後、Experience Platformに対して次の設定がおこなわれます。
+Experience Platform タグを設定した後、統合のために次の設定が行われます。
 
 * すべての設定をまとめるための新しいプロパティの作成。
 * 拡張機能のインストールとセットアップ。プロパティにインストールされたすべての拡張機能のクライアント側コードは、1 つのライブラリにまとめられる。このライブラリは後で web ページで使用されます。
@@ -571,7 +571,7 @@ Experience Platform タグで使用可能なすべての拡張機能は、**[!UI
 
 [Experience Platform タグでのプロパティの作成](#creating-a-property-in-adobe-launch)を参照してください。
 
-拡張機能のインストールと設定が完了すると、少なくとも次の 5 つの拡張機能（ビデオをトラッキングしていない場合は 4 つ）が拡張機能/インストール領域に表示されます。
+拡張機能のインストールと設定が完了すると、少なくとも次の 5 つの拡張機能（ビデオをトラッキングしていない場合は 4 つ）が拡張機能／インストール領域に表示されます。
 
 ![image2019-7-22_12-7-36](assets/image2019-7-22_12-7-36.png)
 

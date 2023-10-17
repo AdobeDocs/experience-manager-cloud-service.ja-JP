@@ -5,7 +5,7 @@ exl-id: 06287618-0328-40b1-bba8-84002283f23f
 source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
 workflow-type: tm+mt
 source-wordcount: '710'
-ht-degree: 34%
+ht-degree: 42%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 34%
 
 * Cloud Manager の基本を理解しました。
 * パイプラインで AEM にコンテンツと設定を配信する方法を理解しました。
-* 数回のクリックでデモコンテンツが事前に埋め込まれたサイトを、テンプレートで作成する方法をご覧ください。
+* 数回クリックするだけで、デモコンテンツがあらかじめ登録された新しいサイトをテンプレートで作成できることがわかりました。
 
 この記事では、これらの基本事項にもとづいて、テスト用のプログラムを作成する最初の設定手順を実行し、パイプラインを使用してアドオンコンテンツをデプロイします。
 
@@ -38,7 +38,7 @@ Cloud Manager にログインした後、テストやデモ用のサンドボッ
 
 >[!NOTE]
 >
->ユーザーは、 **ビジネスオーナー** 組織内の Cloud Manager で、プログラムを作成するための役割。
+>プログラムを作成するには、組織の Cloud Manager で&#x200B;**ビジネスオーナー**&#x200B;の役割のメンバーである必要があります。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Adobe Cloud Manager にログインします。
 
@@ -81,7 +81,7 @@ Cloud Manager にログインした後、テストやデモ用のサンドボッ
 
 ## 次の手順 {#what-is-next}
 
-これで、AEM Reference Demo アドオンのジャーニーのこの部分が完了し、以下をおこなう必要があります。
+これで、AEM Reference Demo Add-On ジャーニーのこの手順が完了しました。この手順で学んだことは次のとおりです。
 
 * Cloud Manager を使用してプログラムを作成する方法を説明します。
 * プログラムの参照デモアドオンを有効にする方法を説明します。
@@ -91,4 +91,4 @@ Cloud Manager にログインした後、テストやデモ用のサンドボッ
 
 ## その他のリソース {#additional-resources}
 
-* [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Cloud Manager の機能について詳しくは、詳細な技術ドキュメントを直接参照してください。
+* [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=ja) - Cloud Manager の機能について詳しくは、詳細な技術ドキュメントを直接参照してください。

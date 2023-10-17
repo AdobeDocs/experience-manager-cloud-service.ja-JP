@@ -5,13 +5,13 @@ exl-id: c1cc2bd8-8ff1-406c-a0ce-0af001d66b53
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '138'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # SPA 参照資料 {#spa-reference-materials}
 
-## NMP モジュールのSPA JavaScript API リファレンス {#api-references}
+## NMP モジュールの SPA Javascript API リファレンス {#api-references}
 
 AEM SPA エディター SDK フレームワーク用の NPM モジュールについて、利用可能な JavaScript API リファレンスを次に示します。
 

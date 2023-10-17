@@ -1,11 +1,11 @@
 ---
 title: コレクションを管理
-description: コレクションとは、Experience Manager Assetsビュー内の一連のアセットです。 コレクションを使用して、ユーザー間でアセットを共有します。
+description: コレクションとは、Experience Manager Assets ビュー内の一連のアセットのことです。コレクションを使用して、ユーザー間でアセットを共有します。
 exl-id: 33c889f5-c989-4772-9591-db62f50e5c80
 source-git-commit: d198b3f0c7d8469a376ba7a3e95e57c84f835dbb
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="assets_collections"
 >title="コレクションを管理"
->abstract="コレクションとは、Assets ビュー内のアセット、フォルダーまたはその他のコレクションのセットです。コレクションを使用して、ユーザー間でアセットを共有します。フォルダーとは異なり、1 つのコレクションに異なる複数の場所のアセットを含めることができます。1 人のユーザーと複数のコレクションを共有できます。各コレクションには、アセットへの参照が含まれます。アセットの参照整合性はコレクション間で維持されます。"
+>abstract="コレクションとは、Assets ビュー内の一連のアセット、フォルダーまたはその他のコレクションのことです。コレクションを使用して、ユーザー間でアセットを共有します。フォルダーとは異なり、1 つのコレクションに異なる複数の場所のアセットを含めることができます。1 人のユーザーと複数のコレクションを共有できます。各コレクションには、アセットへの参照が含まれます。アセットの参照整合性はコレクション間で維持されます。"
 
-コレクションとは、Adobe Experience Manager Assets ビュー内のアセット、フォルダーまたはその他のコレクションのセットです。 コレクションを使用して、ユーザー間でアセットを共有します。
+コレクションとは、Adobe Experience Manager Assets ビュー内の一連のアセット、フォルダーまたはその他のコレクションのことです。コレクションを使用して、ユーザー間でアセットを共有します。
 
 フォルダーとは異なり、1 つのコレクションに異なる複数の場所のアセットを含めることができます。
 
@@ -92,7 +92,7 @@ You can share collections with various users that are assigned different levels 
 
 ## スマートコレクションの管理 {#manage-smart-collection}
 
-検索結果をスマートコレクションとして保存して、コレクションのコンテンツを動的に更新します。アセット表示リポジトリに追加されているアセットが、スマートコレクションの作成時に定義した検索条件に適合する場合、スマートコレクションを開くと、スマートコレクションの内容が自動的に更新されます。
+検索結果をスマートコレクションとして保存して、コレクションのコンテンツを動的に更新します。スマートコレクションの作成時に定義した検索条件に適合するアセットがアセットビューリポジトリに追加されている場合、スマートコレクションを開くと、スマートコレクションのコンテンツが自動的に更新されます。
 
 ### スマートコレクションを作成 {#create-smart-collection}
 
@@ -162,7 +162,7 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 ![アセットのリンクの共有](assets/share-link-collections.png)
 
-外部の関係者とコレクションのリンクを共有する方法について詳しくは、 [アセットへのリンクを共有](/help/assets/share-links-for-assets-view.md).
+外部の関係者とコレクションのリンクを共有する方法について詳しくは、[アセットのリンクを共有](/help/assets/share-links-for-assets-view.md)を参照してください。
 
 ## コレクションのダウンロード {#download-collection}
 
@@ -188,7 +188,7 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 ## 次の手順 {#next-steps}
 
-* 次を使用して製品に関するフィードバックを提供： [!UICONTROL フィードバック] Assets ビューユーザーインターフェイスで使用できるオプション
+* アセットビューユーザーインターフェイスの「[!UICONTROL フィードバック]」オプションを使用して、製品に関するフィードバックを提供する
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 

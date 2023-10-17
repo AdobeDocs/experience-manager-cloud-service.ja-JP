@@ -5,7 +5,7 @@ exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '962'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 92%
 * オーディエンスの追加 - Adobe Target オーディエンスまたは ContextHub セグメント。
 * オーディエンスの管理 
 
-オーディエンス（ContextHub では「*セグメント*」と呼ぶ）とは、特定の条件によって定義される訪問者のクラスで、ターゲットアクティビティが表示される対象を決定します。アクティビティをターゲット設定する場合は、ターゲット設定プロセスで直接オーディエンスを選択するか、オーディエンスコンソールで新しいオーディエンスを作成できます。
+オーディエンス（ContextHub では「*セグメント*」と呼ぶ）とは、特定の条件によって定義される訪問者のクラスで、ターゲットアクティビティが表示される対象を決定します。アクティビティにターゲットを設定すると、ターゲット設定プロセスで直接オーディエンスを選択したり、オーディエンスコンソールで新しいオーディエンスを作成したりできます。
 
 オーディエンスコンソールでは、オーディエンスはブランド別に整理されます。
 
@@ -44,7 +44,7 @@ ContextHub セグメントは、オーディエンスコンソールまたはタ
    >
    >「 」をタップまたはクリックして、変更済みのリストを並べ替えることができます **変更済み** 新しく作成したオーディエンスがあるか確認するために降順で並べ替える場合は、「 」をクリックします。
 
-ContextHub を使用してセグメントを作成する方法について詳しくは、 ContextHub でのセグメント化の設定ドキュメントを参照してください。 <!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
+ContextHub を使用したセグメント作成の詳細については、ContextHub によるセグメント化の設定に関するドキュメントを参照してください。<!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
 
 ## オーディエンスコンソールを使用した Adobe Target オーディエンスの作成 {#creating-an-adobe-target-audience-using-the-audience-console}
 
@@ -83,7 +83,7 @@ Adobe Target オーディエンスを作成するには：
 |---|---|---|
 | **モバイル** | モバイルデバイス、デバイスの種類、デバイスのベンダー、画面の寸法（ピクセル単位）などのパラメーターに基づいてモバイルデバイスをターゲットに設定します。 | 詳しくは、Adobe Target で[モバイルドキュメント](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html?lang=ja)を参照してください。 |
 | **カスタム** | カスタムパラメーターは、mbox パラメーターです。mbox に対して mbox パラメーターを渡した場合、または targetPageParams 関数を使用した場合、それらのパラメーターはここに表示され、オーディエンスで使用できます。 | 詳しくは、Adobe Target で[カスタムパラメータードキュメント](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html?lang=ja)を参照してください。 |
-| **OS** | 特定のオペレーティングシステムを使用する訪問者をターゲットに設定できます。 | Linux、Macintosh または Windows を使用しているユーザーをターゲットにします。 |
+| **OS** | 特定のオペレーティングシステムを使用する訪問者をターゲットに設定できます。 | Linux、Macintosh または Windows を使用している Target ユーザーです。 |
 | **サイトページ** | 特定のページを閲覧している、または特定の mbox パラメーターを持つ訪問者をターゲットに設定します。 | Adobe Target で[サイトページに関するドキュメント](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html?lang=ja)を参照してください。 |
 | **ブラウザー** | ページの訪問時に特定のブラウザーまたは特定のブラウザーオプションを使用するユーザーをターゲットに設定できます。 | Adobe Target で[ブラウザーオプションに関するドキュメント](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=ja)を参照してください。 |
 | **訪問者プロファイル** | 特定のプロファイルパラメーターを満たす訪問者をターゲットに設定します。 | Adobe Target で[訪問者プロファイルに関するドキュメント](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html?lang=ja)を参照してください。 |

@@ -5,7 +5,7 @@ exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
 source-git-commit: d59559d38eef182723a8791c6614d03930f64a85
 workflow-type: tm+mt
 source-wordcount: '914'
-ht-degree: 88%
+ht-degree: 96%
 
 ---
 
@@ -45,7 +45,7 @@ Analytics Standard API を使用して Adobe Experience Manager as a Cloud Servi
 1. AEM で、**ツール**&#x200B;メニューを開きます。
 1. **セキュリティ**&#x200B;セクションで、**Adobe IMS 設定**&#x200B;を選択します。
 1. **作成**&#x200B;を選択して、**Adobe IMS テクニカルアカウント設定**&#x200B;を開きます。
-1. 以下のドロップダウンを使用 **クラウド設定**&#x200B;を選択します。 **Adobe Analytics**.
+1. **クラウド設定**&#x200B;の下のドロップダウンを使用して、**Adobe Analytics** を選択します。
 1. **新しい証明書の作成**&#x200B;をアクティブにして、新しいエイリアスを入力します。
 1. 「**証明書の作成**」で確認します。
 
@@ -55,7 +55,7 @@ Analytics Standard API を使用して Adobe Experience Manager as a Cloud Servi
 
    >[!CAUTION]
    >
-   >この設定は開いたままにしておき、次の場合に再度必要になります。 [AEMでの IMS 設定の完了](#completing-the-ims-configuration-in-aem).
+   >この設定は、[AEM で IMS 設定を完了する](#completing-the-ims-configuration-in-aem)ときに再び必要になるため、開いたままにしてください。
 
    ![証明書をダウンロード](assets/integrate-analytics-ims-02.png)
 
@@ -77,11 +77,11 @@ Adobe Developer Console を開いて、AEM が使用する Adobe Analytics で�
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. 既に表示されているプロジェクトがすべて表示されます。 **新規プロジェクトの作成**&#x200B;を選択 - 場所と使用方法は、以下に依存します。
+1. 自分が持つプロジェクトが表示されます。**新規プロジェクトの作成**&#x200B;を選択 - 場所と使用方法は、以下に依存します。
 
-   * まだプロジェクトがない場合は、 **新規プロジェクトを作成** は中央、下です。
+   * まだプロジェクトがない場合は、「**新規プロジェクトを作成**」が中央の下に表示されます。
      ![新規プロジェクトの作成 - 最初のプロジェクト](assets/integration-analytics-ims-02.png)
-   * 既存のプロジェクトがある場合は、それらのプロジェクトがリストされ、 **新規プロジェクトを作成** が右上に表示されます。
+   * 既存のプロジェクトがある場合は、それらがリストされ、「**新規プロジェクトを作成**」が右上に表示されます。
      ![新規プロジェクトの作成 - 複数のプロジェクト](assets/integration-analytics-ims-03.png)
 
 
@@ -113,7 +113,7 @@ Adobe Developer Console を開いて、AEM が使用する Adobe Analytics で�
 
    ![必要な製品プロファイルを選択](assets/integration-analytics-ims-16.png)
 
-1. 設定が確認されました。
+1. 設定が完了しました。
 
 ### 統合への権限の割り当て {#assigning-privileges-to-the-integration}
 
@@ -166,7 +166,7 @@ AEM に戻り、Analytics の IMS 統合から必要な値を追加して、IMS 
 
 1. 「**作成**」で確定します。
 
-1. Adobe Analyticsの設定がAEMコンソールに表示されます。
+1. Adobe Analytics の設定が AEM コンソールに表示されます。
 
    ![IMS 設定](assets/integrate-analytics-ims-11.png)
 

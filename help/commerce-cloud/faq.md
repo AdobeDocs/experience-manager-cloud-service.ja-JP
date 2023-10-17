@@ -5,7 +5,7 @@ exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '967'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -49,7 +49,7 @@ Dispatcher には、価格や在庫などの動的データはキャッシュさ
 
 Dispatcher にキャッシュされたページに対しては、TTL ベースのキャッシュ無効化を設定することをお勧めします。価格や在庫などの動的な情報については、Adobeはデータをクライアントサイドでレンダリングすることをお勧めします。 TTL ベースのキャッシュの無効化について詳しくは、[Dispatcher キャッシュの最適化](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=ja)および [AEM パフォーマンスの最適化](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html?lang=ja)を参照してください。
 
-## 10. コマースでの、AEM コンテンツをまたぐ統合検索に関して推奨事項はありますか。
+## 10. コマースでの、AEM コンテンツをまたぐ統合検索に関してレコメンデーションはありますか。
 
 製品検索の参照の実装が提供されていますが、コンテンツに関する統合検索はありません。この機能は顧客に固有のもので、プロジェクト固有のレベルでより適切に解決されます。
 
@@ -67,7 +67,7 @@ Adobeは、AEMでマーケティング関連のデータとコンテンツを管
 
 ## 14. プレゼンテーションレイヤー全体に AEM を使用する場合、PCI への準拠をどのように確保できますか。
 
-アドビでは、抽象化された支払い方法を使用することをお勧めします。これにより、ブラウザークライアントは支払いゲートウェイプロバイダーと直接通信し、アドビもコマースソリューションもカード所有者データを保持したり受け渡したりしないようになります。このアプローチには レベル 3 の PCI コンプライアンスのみ必要です。しかし、従業員がシステムやデータとやり取りする方法など、完全に PCI に準拠するには、考慮されるべき点が他にもあります。Adobe Commerce PCI への準拠について詳しくは、 [PCI コンプライアンス要件](https://business.adobe.com/jp/products/magento/pci-compliance.html).
+アドビでは、抽象化された支払い方法を使用することをお勧めします。これにより、ブラウザークライアントは支払いゲートウェイプロバイダーと直接通信し、アドビもコマースソリューションもカード所有者データを保持したり受け渡したりしないようになります。このアプローチには レベル 3 の PCI コンプライアンスのみ必要です。しかし、従業員がシステムやデータとやり取りする方法など、完全に PCI に準拠するには、考慮されるべき点が他にもあります。Adobe Commerce の PCI 準拠について詳しくは、[PCI コンプライアンス要件](https://business.adobe.com/jp/products/magento/pci-compliance.html)を参照してください。
 
 ## 15. AEM バージョンと Adobe Commerce クラウドバージョンを使用する場合、この共同ソリューションは PCI に準拠していますか。
 

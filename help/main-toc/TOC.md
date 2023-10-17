@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
 source-wordcount: '4330'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
@@ -156,7 +156,7 @@ ht-degree: 91%
          + [リリースノート（2021.12.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [リリースノート（2021.11.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [リリースノート（2021.10.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
-   + Workfront for Experience Manager 拡張コネクタのリリースノート {#workfront}
+   + Workfront for Experience Manager 拡張コネクタのリリースノート{#workfront}
       + [Workfront for Experience Manager 拡張コネクタの最新リリースノート](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [新機能](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service の主要な変更点](/help/release-notes/aem-cloud-changes.md)
@@ -225,9 +225,9 @@ ht-degree: 91%
       + ベストプラクティスアナライザー {#best-practices-analyzer}
          + [概要](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [ベストプラクティスアナライザーの使用](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
-      + Content Transformer {#content-transformer}
+      + コンテンツ変換サービス {#content-transformer}
          + [概要](/help/journey-migration/content-transformer/overview.md)
-         + [Content Transformer の使用](/help/journey-migration/content-transformer/using.md)
+         + [コンテンツ変換サービスの使用](/help/journey-migration/content-transformer/using.md)
       + コンテンツ転送ツール {#content-transfer-tool}
          + [概要](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [コンテンツ転送ツールの前提条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
@@ -455,7 +455,7 @@ ht-degree: 91%
    + コンテンツフラグメント {#content-fragments}
       + [コンテンツフラグメントの使用方法](/help/assets/content-fragments/content-fragments.md)
       + [コンテンツフラグメントと GraphQL のヘッドレス配信](/help/assets/content-fragments/content-fragments-graphql.md)
-      + [インスタンスに対するコンテンツフラグメント機能の有効化](/help/assets/content-fragments/content-fragments-configuration-browser.md)
+      + [お使いのインスタンスでコンテンツフラグメント機能を有効にする](/help/assets/content-fragments/content-fragments-configuration-browser.md)
       + [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
       + [コンテンツフラグメントの管理](/help/assets/content-fragments/content-fragments-managing.md)
       + [バリエーション - フラグメントコンテンツのオーサリング](/help/assets/content-fragments/content-fragments-variations.md)
@@ -520,9 +520,9 @@ ht-degree: 91%
       + [コンテンツの HTTP/2 配信の FAQ](/help/assets/dynamic-media/http2faq.md)
       + [Flash ビューアの提供終了](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML ビューアの提供終了](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-   + Assets ビューの操作 {#assets-view}
+   + アセットビューの操作 {#assets-view}
       + [はじめに](/help/assets/assets-view-introduction.md)
-      + [はじめに](/help/assets/get-started-assets-view.md)
+      + [概要](/help/assets/get-started-assets-view.md)
       + [マイワークスペース](/help/assets/my-workspace-assets-view.md)
       + [サポートされているファイルタイプとユースケース](/help/assets/supported-file-formats-assets-view.md)
       + [アセットの表示](/help/assets/navigate-assets-view.md)
@@ -560,7 +560,7 @@ ht-degree: 91%
    + 設定と移行 {#setup-configure-migrate}
       + [Cloud Service 環境へのオンボード](/help/forms/setup-forms-cloud-service.md)
       + [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
-      + [AEM Formsas a Cloud Serviceおよびローカル開発環境でのアダプティブFormsコアコンポーネントの有効化](/help/forms/enable-adaptive-forms-core-components.md)
+      + [AEM Forms as a Cloud Service およびローカル開発環境で、アダプティブフォームのコアコンポーネントを有効にする](/help/forms/enable-adaptive-forms-core-components.md)
       + [統合ストレージコネクタの設定](/help/forms/configure-unified-storage-connector.md)
       + [as a Cloud Service の移行元 [!DNL AEM 6.5 Forms] または以前のバージョン [!DNL AEM Forms] ](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [グループと権限](/help/forms/forms-groups-privileges-tasks.md)
@@ -587,17 +587,17 @@ ht-degree: 91%
          + [フォームデータモデルの操作](/help/forms/work-with-form-data-model.md)
          + [フォームデータモデルの使用](/help/forms/using-form-data-model.md)
    + アダプティブフォーム {#adaptive-forms-authoring}
-      + [アダプティブフォームの作成](/help/forms/create-an-adaptive-form.md)
-      + [アダプティブフォームをAEM Sitesページまたはエクスペリエンスフラグメントに追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+      + [アダプティブフォームを作成](/help/forms/create-an-adaptive-form.md)
+      + [AEM Sites ページまたはエクスペリエンスフラグメントにアダプティブフォームを追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + コアコンポーネント {#authoring-adaptive-forms-core-components}
          + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
             + [アダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
             + [アダプティブフォームフラグメントを作成する](/help/forms/adaptive-form-fragments-core-components.md)
             + [アダプティブフォームのテーマの作成 - コアコンポーネント](/help/forms/using-themes-in-core-components.md)
             + [アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-core-components.md)
-            + [機械翻訳または人間翻訳を使用したアダプティブフォームの翻訳](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
-            + [リダイレクトページまたは「ありがとうございます」メッセージの設定](/help/forms/configure-redirect-page-or-thank-you-message.md)
-            + [繰り返し可能なセクションでフォームを作成する](/help/forms/create-forms-repeatable-sections.md)
+            + [機械翻訳または人間による翻訳を使用したアダプティブフォームの翻訳](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+            + [リダイレクトページまたはお礼メッセージの設定](/help/forms/configure-redirect-page-or-thank-you-message.md)
+            + [繰り返し可能なセクションを使用したフォームの作成](/help/forms/create-forms-repeatable-sections.md)
             + [アダプティブフォームの送信アクションの設定](/help/forms/configure-submit-actions-core-components.md)
             + [アダプティブフォームでのGoogle reCAPTCHA の使用](/help/forms/captcha-adaptive-forms-core-components.md)
             + [アダプティブフォームにカスタムエラーハンドラーを追加する](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
@@ -621,14 +621,14 @@ ht-degree: 91%
             + [手書き署名の適用](/help/forms/signing-forms-using-scribble.md)
             + [アダプティブフォームへのテーブルの追加](/help/forms/adaptive-forms-tables.md)
             + [アダプティブフォームへの脚注サポートの追加](/help/forms/footnotes-richtextsupport.md)
-         + アダプティブフォームのレイアウト設定とスタイルの適用 {#configure-layout-of-an-adaptive-form}
+         + アダプティブフォームのレイアウト設定とスタイルの適用{#configure-layout-of-an-adaptive-form}
             + [アダプティブフォームのレイアウト設定](/help/forms/layout-capabilities-adaptive-forms.md)
             + [レイアウトモードを使用したコンポーネントのサイズ変更](/help/forms/resize-using-layout-mode.md)
             + [複数手順のデータキャプチャエクスペリエンスの作成](/help/forms/introduction-form-sequence.md)
             + [インライン CSS スタイルのアダプティブフォームの個々のコンポーネントへの適用](/help/forms/inline-style-adaptive-forms.md)
          + アダプティブフォームでのルール追加と式の使用 {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [アダプティブフォームへのルールの追加](/help/forms/rule-editor.md)
-            + [ルールエディターの Invoke サービスを使用してカスタムエラーハンドラーを追加する](/help/forms/add-custom-error-handler-adaptive-forms.md)
+            + [ルールエディターの呼び出しサービスを使用したカスタムエラーハンドラーの追加](/help/forms/add-custom-error-handler-adaptive-forms.md)
          + [!DNL Adobe Sign] の使用 {#use-adobe-sign}
             + [Adobe Sign を使用したアダプティブフォームの電子サイン](/help/forms/working-with-adobe-sign.md)
          + 送信アクションとメタデータ送信の設定 {#configure-submit-actions-and-metadata-submission}
@@ -714,11 +714,11 @@ ht-degree: 91%
          + [製品エクスペリエンスの構築](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
    + 統合 {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
-      + [サードパーティコマースソリューション](/help/commerce-cloud/integrating/third-party.md)
+      + [サードパーティのコマースソリューション](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM ストアフロント {#storefront}
       + [はじめに](/help/commerce-cloud/getting-started.md)
-      + オーサリング {#authoring}
+      + オーサリング{#authoring}
          + [コマースエクスペリエンス](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
          + [製品コックピット](/help/commerce-cloud/authoring/product-cockpit.md)
          + [マルチテンプレートの使用](/help/commerce-cloud/authoring/multi-template-usage.md)
@@ -757,7 +757,7 @@ ht-degree: 91%
       + [概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
       + [コンテンツフラグメントモデル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
       + [コンテンツフラグメントの管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
-      + オーサリング {#authoring}
+      + オーサリング{#authoring}
          + [オーサリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
          + [Markdown エディター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
       + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)

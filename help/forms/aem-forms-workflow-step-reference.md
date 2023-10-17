@@ -546,7 +546,7 @@ Send a document directly to a printer. It supports the following printing access
 
 * **[!UICONTROL 次を使用してコンテンツルートの場所を選択]**：コンテンツルートは、フォームデザインで使用される相対アセットを取得するための、リポジトリ内の URI、絶対参照、または場所を指定する文字列値です。 例えば、フォームデザインが `../myImage.gif` のように画像を相対的に参照する場合、`myImage.gif` は `repository://` に配置する必要があります。デフォルト値は `repository://` で、リポジトリのルートレベルを指します。
 
-  アプリケーションからアセットを選択するとき、コンテンツルート URI パスは正確な構造になっている必要があります。例えば、フォームを SampleApp というアプリケーションから選択し、`SampleApp/1.0/forms/Test.xdp` に配置する場合、コンテンツルート URI は `repository://administrator@password/Applications/SampleApp/1.0/forms/` または `repository:/Applications/SampleApp/1.0/forms/`（認証機関情報が NULL の場合）と指定する必要があります。この方法でコンテンツルート URI を指定すると、フォーム内で参照されているすべてのアセットのパスが、この URI に対して解決されます。
+  アプリケーションからアセットを選択するとき、コンテンツルート URI パスは正確な構造になっている必要があります。例えば、フォームを SampleApp というアプリケーションから選択し、`SampleApp/1.0/forms/Test.xdp` に配置する場合、コンテンツルート URI は `repository://administrator@password/Applications/SampleApp/1.0/forms/` または `repository:/Applications/SampleApp/1.0/forms/`（認証機関情報が NULL の場合）と指定する必要があります。コンテンツルート URI をこの方式で指定すると、フォーム内で参照されているすべてのアセットのパスがこの URI を基準に解決されます。
 
 * **[!UICONTROL を使用して XCI ファイルを選択]**：XCI ファイルは、フォームデザイン要素に使用されるフォントやその他のプロパティを記述するために使用されます。 XCI ファイルは、ペイロードに対する相対パス、絶対パス、またはドキュメントデータタイプの変数を使用して保持できます。
 

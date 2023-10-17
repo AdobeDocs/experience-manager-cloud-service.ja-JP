@@ -5,7 +5,7 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 81%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=ja" text="SSL 証明書の表示、更新、置換"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=ja" text="SSL 証明書のステータスの確認"
 
-Cloud Manager には、SSL 証明書をインストールおよび管理するセルフサービスツールが用意されており、これにより、サイトをユーザーに対して保護できます。 Cloud Manager は、プラットフォーム TLS サービスを使用して、顧客が所有し、Let&#39;s Encrypt などのサードパーティの証明機関から取得した SSL 証明書および秘密鍵を管理します。
+Cloud Manager は、SSL 証明書をインストールおよび管理するセルフサービスツールを用意しているので、ユーザーのためにサイトを保護できます。Cloud Manager は、プラットフォーム TLS サービスを使用して、顧客が所有し、Let&#39;s Encrypt などのサードパーティ証明機関から取得した SSL 証明書と秘密鍵を管理します。
 
 ## 証明書の概要 {#certificates}
 
-企業は SSL 証明書を使用して自社の web サイトを保護し、顧客の信頼を確保します。SSL プロトコルを使用するには、Web サーバーで SSL 証明書を使用する必要があります。
+企業は SSL 証明書を使用して自社の web サイトを保護し、顧客の信頼を確保します。SSL プロトコルを使用するには、web サーバーで SSL 証明書を使用する必要があります。
 
-事業体が CA に証明書を要求すると、CA は検証プロセスを完了します。これは、ドメイン名制御の検証から、会社登録書や加入者契約書の収集まで多岐にわたります。事業体の情報が検証されると、CA は CA の秘密鍵を使用して公開鍵に署名します。主要な認証局はすべて Web ブラウザーでルート証明書を持つので、エンティティの証明書は *信頼の連鎖* Web ブラウザーは、この証明書を信頼済みの証明書と認識します。
+事業体が CA に証明書を要求すると、CA は検証プロセスを完了します。これは、ドメイン名制御の検証から、会社登録書や加入者契約書の収集まで多岐にわたります。事業体の情報が検証されると、CA は CA の秘密鍵を使用して公開鍵に署名します。主要な認証機関はすべて web ブラウザーのルート証明書を持っているので、エンティティ証明書は&#x200B;*信頼のチェーン*&#x200B;を介してリンクされ、web ブラウザーはそれを信頼済み証明書と認識します。
 
 >[!IMPORTANT]
 >
@@ -42,12 +42,12 @@ Cloud Manager では、次の顧客向け SSL 証明書の使用オプション�
 * プラットフォーム TLS サービスは、終了に使用された SSL 証明書と、そのドメインをホストする CDN サービスに基づいて、リクエストを顧客の CDN サービスにルーティングします。
 * AEM as a Cloud Service は、ドメインのワイルドカード SSL 証明書を受け入れます。
 
-## 推奨事項 {#recommendations}
+## レコメンデーション {#recommendations}
 
 AEM as a Cloud Service は、セキュリティで保護された `https` サイトのみをサポートしています。
 
 * 複数のカスタムドメインを持つ顧客の場合、ドメインを追加するたびに証明書をアップロードしたくはありません。
-* このようなお客様には、複数のドメインで 1 つの証明書を取得するというメリットがあります。
+* 複数のドメインを持つ 1 つの証明書を取得することで、そのような顧客はメリットが得られます。
 
 ## 要件 {#requirements}
 
@@ -69,7 +69,7 @@ Cloud Manager では、いつでも最大 50 個の SSL 証明書をインスト
 
 ## 詳細情報 {#learn-more}
 
-必要な権限を持つユーザーは、Cloud Manager を使用してプログラムの SSL 証明書を管理できます。これらの機能の使用について詳しくは、次のドキュメントを参照してください。
+必要な権限を持つユーザーは、Cloud Manager を使用してプログラムの SSL 証明書を管理できます。これらの機能の使用方法について詳しくは、次のドキュメントを参照してください。
 
 * [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
 * [SSL 証明書の表示、更新、置換](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)

@@ -5,7 +5,7 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 source-git-commit: 15a53778e0934a1940efa5cc88467c20b4b67fe4
 workflow-type: tm+mt
 source-wordcount: '1016'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -34,13 +34,13 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->次のメンバーである必要があります： [**デプロイメントマネージャー** 役割](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) をクリックして、環境変数を追加または変更します。
+>環境変数を追加または変更するには、[**デプロイメントマネージャー**&#x200B;の役割を持つ](/help/onboarding/cloud-manager-introduction.md#role-based-premissions)メンバーである必要があります。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Adobe Cloud Manager にログインします。
 1. Cloud Manager に、使用可能な様々なプログラムのリストが表示されます。管理するものを選択します。
 1. 選択したプログラムの「**環境**」タブを選択し、左側のナビゲーションパネルで環境変数を作成する環境を選択します。
 1. 環境の詳細で「**設定**」タブを選択し、「**追加**」を選択して **環境設定** ダイアログを開きます。
-   * 初めて環境変数を追加する場合は、 **設定を追加** 」ボタンをクリックします。 このボタンまたは「**追加**」を使用して、**環境設定**&#x200B;ダイアログを開くことができます。
+   * 初めて環境変数を追加する場合、ページの中央に「**設定を追加**」ボタンが表示されます。このボタンまたは「**追加**」を使用して、**環境設定**&#x200B;ダイアログを開くことができます。
 
    ![「設定」タブ](assets/configuration-tab.png)
 
@@ -88,7 +88,7 @@ ht-degree: 89%
 
    ![変数の編集](assets/edit-variable.png)
 
-1. 必要な設定の変更をすべて行ったら、「 」を選択します。 **保存**.
+1. 必要な設定の変更をすべて行ったら、「**保存**」を選択します。
 
 [変数を追加する場合と同様に、](#add-variables) ステータスが **更新中** のインジケーターがテーブルの上部と新しく更新された変数の横に表示され、環境が設定で更新されていることを示します。完了すると、更新された環境変数がテーブルに表示されます。
 
@@ -128,8 +128,8 @@ ht-degree: 89%
 
 ### OSGi 設定 {#osgi}
 
-通常の環境変数とシークレットは、 [OSGi 設定](/help/implementing/deploying/configuring-osgi.md).
+[OSGi 設定](/help/implementing/deploying/configuring-osgi.md)では、通常の環境変数とシークレットの両方を使用できます。
 
 ### パイプライン変数 {#pipeline}
 
-環境変数に加えて、ビルドフェーズで公開されるパイプライン変数もあります。[パイプライン変数の詳細はこちら](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).
+環境変数に加えて、ビルドフェーズで公開されるパイプライン変数もあります。[パイプライン変数について詳しくは、こちらを参照してください](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)。

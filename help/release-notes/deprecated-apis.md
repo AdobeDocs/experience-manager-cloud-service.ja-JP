@@ -5,7 +5,7 @@ exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1116'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -111,7 +111,7 @@ ht-degree: 96%
   </tr>
   <tr>
     <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info<br>org.apache.felix.scr.component</td>
-    <td>Apache Felix メタタイプと SCR API は非推奨（廃止予定）です。代わりに、 OSGi メタタイプと Declarative Service API を使用してください。</td>
+    <td>Apache Felix メタタイプと SCR API は非推奨（廃止予定）です。OSGi メタタイプおよび Declarative Service API を代わりに使用してください。</td>
     <td>2021/5/27</td>
     <td>削除</td>
   </tr>
@@ -158,13 +158,13 @@ ht-degree: 96%
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>Apache Felix Http ホワイトボードはサポートされなくなりました。コードを OSGi Http Whiteboard に移行します。</td>
+    <td>Apache Felix Http ホワイトボードはサポートされなくなりました。コードを OSGi Http ホワイトボードに移行します。</td>
     <td>2022/1/27</td>
     <td>2022/3/24</td>
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
-    <td>この API は廃止されました。JDK で提供されている XML API にコードを移行してください。</td>
+    <td>この API は非推奨（廃止予定）です。JDK が提供する XML API にコードを移行してください。</td>
     <td>2022/1/27</td>
     <td>2022/3/24</td>
   </tr>
@@ -206,7 +206,7 @@ ht-degree: 96%
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
-    <td>この API は非推奨です。代わりに、Apache Sling の Builder を使用します。</td>
+    <td>この API は非推奨です。代わりに、Apache Sling のビルダーを使用します。</td>
     <td>2022/10/31</td>
     <td>2023/1/1</td>
   </tr>

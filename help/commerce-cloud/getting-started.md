@@ -1,5 +1,5 @@
 ---
-title: AEM Commerce as a Cloud Service - はじめに
+title: AEM Commerce as a Cloud Service の基本を学ぶ
 description: Cloud Manager、CI/CD パイプラインおよび Venia 参照用ストアフロントを使用して、Adobe Experience Manager(AEM) コマースプロジェクトをデプロイする方法について説明します。
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
@@ -11,13 +11,13 @@ exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
 source-wordcount: '1104'
-ht-degree: 42%
+ht-degree: 92%
 
 ---
 
-# AEM Commerce as a Cloud Service - はじめに {#start}
+# AEM Commerce as a Cloud Service の基本を学ぶ {#start}
 
-Adobe Experience Manager(AEM)Commerceas a Cloud Serviceの使用を開始するには、Experience Manager Cloud ServiceにCommerce integration framework(CIF) アドオンがプロビジョニングされている必要があります。 CIFアドオンは、 [AEM Sitesas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
+Adobe Experience Manager(AEM)Commerceas a Cloud Serviceの使用を開始するには、Experience Manager Cloud ServiceにCommerce integration framework(CIF) アドオンがプロビジョニングされている必要があります。 CIF アドオンは、[AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html?lang=ja) の追加モジュールです。
 
 ## オンボーディング {#onboarding}
 
@@ -28,30 +28,30 @@ AEM Commerce as a Cloud Service のオンボーディングは、次の 2 つの
 
 最初のオンボーディング手順はアドビが行います。価格とプロビジョニングの詳細については、セールス担当者にお問い合わせください。
 
-CIFアドオンのプロビジョニングが完了すると、既存の Cloud Manager プログラムに適用されます。 Cloud Manager プログラムがない場合は、作成する必要があります。 詳しくは、 [プログラムの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=ja).
+CIF アドオンのプロビジョニングが完了すると、既存の Cloud Manager プログラムに適用されます。Cloud Manager プログラムがない場合は、作成する必要があります。 詳しくは、[プログラムの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=ja)を参照してください。
 
-2 つ目の手順は、各 AEM as a Cloud Service 環境のセルフサービスです。CIFアドオンの初期プロビジョニング後に、いくつかの追加の設定をおこなう必要があります。
+2 つ目の手順は、各 AEM as a Cloud Service 環境のセルフサービスです。CIF アドオンの初期プロビジョニングの後で、いくつかの追加の設定を行う必要があります。
 
 ## AEM とコマースソリューションの接続 {#solution}
 
-CIFアドオンと [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components) コマースソリューションでは、Cloud Manager 環境変数を使用してGraphQLエンドポイントの URL を指定する必要があります。 変数名は `COMMERCE_ENDPOINT` です。HTTPS を介した安全な接続を設定する必要があります。
+CIF アドオンと [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)をコマースソリューションに接続するには、Cloud Manager の環境変数で GraphQL エンドポイント URL を指定する必要があります。変数名は `COMMERCE_ENDPOINT` です。HTTPS を介した安全な接続を設定する必要があります。
 
 この環境変数は、次の 2 つの場所で使用されます。
 
-- AEM CIFコアコンポーネントおよび顧客プロジェクトコンポーネントで使用される、共有可能な GraphQl クライアントを介して、AEMからコマースバックエンドに対するGraphQL呼び出し。
-- 変数が使用可能な各AEM環境でGraphQLプロキシ URL を設定します。 `/api/graphql`. この URL は、AEMコマースオーサリングツール (CIFアドオン ) およびCIFクライアント側コンポーネントで使用されます。
+- AEM CIF コアコンポーネントと顧客プロジェクトコンポーネントで使用される、共有可能な共通の GraphQl クライアントを介した、AEM からコマースバックエンドへの GraphQL 呼び出し。
+- `/api/graphql` で変数が使用可能に設定された各 AEM 環境への GraphQL プロキシ URL の設定。この URL は、AEM Commerce オーサリングツール（CIF アドオン）および CIF クライアントサイドコンポーネントで使用されます。
 
-AEM as a Cloud Service 環境ごとに異なる GraphQL エンドポイント URL を使用できます。この方法で、プロジェクトは AEM ステージング環境をコマースステージングシステムに、また、AEM 実稼働環境をコマース実稼働システムに接続できます。GraphQL エンドポイントは、公開されている必要があります。プライベート VPN またはローカル接続はサポートされていません。オプションで、認証を必要とする追加のCIF機能を使用するために認証ヘッダーを提供できます。
+AEM as a Cloud Service 環境ごとに異なる GraphQL エンドポイント URL を使用できます。この方法で、プロジェクトは AEM ステージング環境をコマースステージングシステムに、また、AEM 実稼働環境をコマース実稼働システムに接続できます。GraphQL エンドポイントは、公開されている必要があります。プライベート VPN またはローカル接続はサポートされていません。オプションで、認証が必要な追加の CIF 機能を使用するために認証ヘッダーを指定できます。
 
-オプションで、Adobe Commerce Enterprise/Cloud の場合のみ、CIFアドオンはAEM作成者向けのステージング済みカタログデータの使用をサポートします。 このデータを使用するには、認証ヘッダーを設定する必要があります。 このヘッダーは、セキュリティ上の理由から、AEMオーサーインスタンスでのみ使用および使用できます。 AEMパブリッシュインスタンスは、ステージ済みデータを表示できません。
+Adobe Commerce Enterprise／Cloud の場合のみ、CIF アドオンはオプションで AEM 作成者向けのステージング済みカタログデータの使用をサポートします。このデータを使用するには、認証ヘッダーを設定する必要があります。このヘッダーは、セキュリティ上の理由から、AEMオーサーインスタンスでのみ使用および使用できます。 AEMパブリッシュインスタンスは、ステージ済みデータを表示できません。
 
 エンドポイントを設定する方法は 2 つあります。
 
-### Cloud Manager ユーザーインターフェイスを介する（デフォルト） {#cm-ui}
+### Cloud Manager ユーザーインターフェイスを使用（デフォルト） {#cm-ui}
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
-この設定は、環境の詳細ページのダイアログボックスを使用しておこなうことができます。 コマース対応プログラムでこのページを表示すると、エンドポイントが現在設定されていない場合は、ボタンが表示されます。
+この設定は、環境の詳細ページのダイアログボックスを使用して行うことができます。コマース対応プログラムでこのページを表示すると、エンドポイントが設定されていない場合は、ボタンが表示されます。
 
 ![CM 環境情報](/help/commerce-cloud/assets/commerce-cmui.png)
 
@@ -59,17 +59,17 @@ AEM as a Cloud Service 環境ごとに異なる GraphQL エンドポイント UR
 
 ![CM コマースエンドポイント](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-エンドポイントと、オプションでステージング済みカタログサポートの認証ヘッダーを設定すると、エンドポイントが詳細ページに表示されます。 必要に応じて、編集アイコンをクリックして、エンドポイントを編集できるのと同じダイアログボックスを開きます。
+エンドポイント（オプションで、ステージング済みカタログのサポートの認証ヘッダー）が設定されると、エンドポイントが詳細ページに表示されます。編集アイコンをクリックすると同じダイアログボックスが開き、必要に応じてエンドポイントを編集できます。
 
 ![CM 環境情報](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
-### Adobe I/OCLI  {#adobe-cli}
+### Adobe I/O CLI を使用  {#adobe-cli}
 
-CLI を使用してAEMをコマースソリューションにAdobe I/Oするには、次の手順に従います。
+Adobe I/O CLI を使用して AEM をコマースソリューションに接続するには、次の手順に従います。
 
 1. Cloud Manager プラグインと Adobe I/O CLI を取得します。
 
-   次を確認します。 [AdobeCloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ja) のダウンロード、設定、使用方法 [Adobe I/OCLI](https://github.com/adobe/aio-cli) と [Cloud Manager CLI プラグイン](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   [Cloud Manager CLI プラグイン](https://github.com/adobe/aio-cli-plugin-cloudmanager)で [Adobe I/O CLI](https://github.com/adobe/aio-cli) をダウンロード、設定、使用する方法については、[Adobe Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=ja)を参照してください。
 
 2. Adobe I/O CLI を AEM as a Cloud Service で認証します。
 
@@ -99,34 +99,34 @@ CLI を使用してAEMをコマースソリューションにAdobe I/Oするに�
 >
 >次のコマンドを使用して、すべての Cloud Manager 変数を一覧表示して再確認できます。 `aio cloudmanager:list-environment-variables ENVIRONMENT_ID`
 
-これで、AEM Commerce をas a Cloud Service的に使用する準備が整い、Cloud Manager を介してプロジェクトをデプロイできます。
+これで、AEM Commerce as a Cloud Service を使用する準備が整い、Cloud Manager を介してプロジェクトをデプロイできます。
 
 ## ストアとカタログの設定 {#catalog}
 
-CIFのアドオンと [CIFコアコンポーネント](https://github.com/adobe/aem-core-cif-components) は、異なるコマースストア（またはストア表示回数など）に接続された複数のAEMサイト構造で使用できます。 デフォルトでは、CIFアドオンは、Adobe Commerceのデフォルトのストアおよびカタログに接続するデフォルトの設定でデプロイされます。
+CIF アドオンと [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)は、異なるコマースストア（またはストア表示など）に接続された複数の AEM サイト構造で使用できます。デフォルトでは、CIF アドオンは、Adobe Commerce のデフォルトストアとカタログに接続するデフォルト設定でデプロイされます。
 
-この設定は、次の手順に従って、CIFCloud Service設定を使用して、プロジェクトに合わせて調整できます。
+この設定は、次の手順に従って、CIF Cloud Service 設定を使用してプロジェクトに合わせて調整できます。
 
-1. AEMで、ツール/Cloud Service/CIF Configuration に移動します。
+1. AEM で、ツール／Cloud Services／CIF 設定に移動します。
 
 2. 変更するコマース設定を選択します。
 
-3. アクションバーのを使用して、設定プロパティを開きます。
+3. アクションバーから設定プロパティを開きます。
 
 ![CIF Cloud Services の設定](/help/commerce-cloud/assets/cif-cloud-service-config.png)
 
 次のプロパティを設定できます。
 
-- GraphQL クライアント - コマースバックエンド通信用に設定済みの GraphQL クライアントを選択します。このクライアントは通常、デフォルトの状態に保たれます。
+- GraphQL クライアント - コマースバックエンド通信用に設定済みの GraphQL クライアントを選択します。このクライアントは通常、デフォルトのままです。
 - ストア表示 - ストア表示の識別子。空の場合は、デフォルトのストア表示が使用されます。
 - GraphQL プロキシパス - AEM の GraphQL プロキシが、コマースバックエンドの GraphQL エンドポイントへのリクエストをプロキシするために使用する URL パス。
   >[!NOTE]
   >
-  > ほとんどの設定では、デフォルト値 `/api/graphql` は変更できません。 この設定を変更するのは、指定された GraphQL プロキシを使用しない高度な設定でのみです。
+  > ほとんどの設定で、デフォルト値 `/api/graphql` は変更できません。この設定を変更するのは、指定された GraphQL プロキシを使用しない高度な設定でのみです。
 - カタログ UID のサポートを有効にする - コマースバックエンドの GraphQL 呼び出しで、ID ではなく UID のサポートを有効にします。
   >[!NOTE]
   >
-  > UID のサポートは、Adobe Commerce 2.4.2 で導入されました。コマースバックエンドがバージョン 2.4.2 以降のGraphQLスキーマをサポートしている場合にのみ、UID を有効にします。
+  > UID のサポートは、Adobe Commerce 2.4.2 で導入されました。コマースバックエンドがバージョン 2.4.2 以降の GraphQL スキーマをサポートしている場合にのみ有効にします。
 - カタログのルートカテゴリ識別子 - ストアカタログルートの識別子（UID または ID）
   >[!CAUTION]
   >
@@ -134,7 +134,7 @@ CIFのアドオンと [CIFコアコンポーネント](https://github.com/adobe/
 
 上記の設定は参照用です。プロジェクトは、独自の設定を行う必要があります。
 
-より複雑な設定では、複数のAEMサイト構造を異なるコマースカタログと組み合わせて使用します。詳しくは、 [コマースマルチストアの設定](configuring/multi-store-setup.md) チュートリアル
+複数の AEM サイト構造を異なるコマースカタログと組み合わせて使用する、より複雑な設定については、チュートリアル「[コマースマルチストアの設定](configuring/multi-store-setup.md)」を参照してください。
 
 ## その他のリソース {#additional-resources}
 

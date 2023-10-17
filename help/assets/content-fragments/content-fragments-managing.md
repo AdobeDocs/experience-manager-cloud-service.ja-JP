@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
 workflow-type: tm+mt
 source-wordcount: '1877'
-ht-degree: 79%
+ht-degree: 90%
 
 ---
 
@@ -80,9 +80,9 @@ ht-degree: 79%
 
       * **名前**
 
-        URL の作成に使用される名前。
+        URL の作成に使用される名前です。
 
-        必須。タイトルから自動的に派生しますが、更新できます。
+        必須。タイトルから自動的に派生しますが、変更が可能です。
 
 1. 「**作成**」を選択して操作を完了してから、編集するためにフラグメントを&#x200B;**開く**&#x200B;か、「**完了**」でコンソールに戻ります。
 
@@ -133,7 +133,7 @@ ht-degree: 79%
 
 >[!CAUTION]
 >
->コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者に問い合わせてください。
+>コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
 
 1. **Assets** コンソールを使用して、コンテンツフラグメントの場所に移動します。
 1. 次のいずれかの方法で、フラグメントを編集用に開きます。
@@ -179,7 +179,7 @@ ht-degree: 79%
 
 ![様々なモードで使用可能なツールバーアクション](assets/cfm-managing-top-toolbar.png)
 
-* フラグメントがコンテンツページで既に参照されている場合は、メッセージが表示されます。 このメッセージは&#x200B;**閉じる**&#x200B;ことができます。
+* フラグメントがコンテンツページで既に参照されている場合は、メッセージが表示されます。このメッセージは&#x200B;**閉じる**&#x200B;ことができます。
 
 * **サイドパネルを切り替え**&#x200B;アイコンを使用してサイドパネルを非表示／表示できます。
 
@@ -227,7 +227,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
   >[!CAUTION]
   >
-  >コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者に問い合わせてください。
+  >コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
 
   >[!NOTE]
   >
@@ -235,13 +235,13 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
   >[!CAUTION]
   >
-  >これらの操作では、変更を保存するだけでなく、参照もすべて更新し、Dispatcher が必要に応じてフラッシュされます。これらの変更の処理には時間がかかる場合があります。この時間により、大規模/複雑/負荷の高いシステムにパフォーマンスが影響を与える可能性があります。
+  >これらの操作では、変更を保存するだけでなく、参照もすべて更新し、Dispatcher が必要に応じてフラッシュされます。これらの変更の処理には時間がかかる場合があります。このため、大きなシステムや複雑なシステム、高負荷のシステムのパフォーマンスに影響することがあります。
   >
-  >を使用する際は、次のプロセスに留意してください。 **保存して閉じる** その後、フラグメントエディターにすばやく戻って、さらに変更を加えて保存します。
+  >「**保存して閉じる**」を使用する際はこのプロセスを考慮し、フラグメントエディターをすぐに開いて、さらに変更を加え保存してください。
 
 * **閉じる**
 
-  最新の変更 ( つまり、最後の **保存**) をクリックします。
+  最新の変更（前回の「**保存**」操作以降に行った変更）を保存せずにエディターを終了します。
 
 コンテンツフラグメントを編集するとき、AEM によって自動的にバージョンが作成されます。これにより、（保存せずに「**閉じる**」を使用して）変更内容を取り消した場合でも、以前のコンテンツを復元できるようになります。
 
@@ -272,7 +272,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## コンテンツとフラグメントの関連付け {#associating-content-with-your-fragment}
 
-フラグメントに[コンテンツを関連付ける](/help/assets/content-fragments/content-fragments-assoc-content.md)こともできます。これにより、アセット（画像）をフラグメントと共に（オプションで）コンテンツページに追加する際に使用できるようにする接続が提供されます。
+フラグメントに[コンテンツを関連付ける](/help/assets/content-fragments/content-fragments-assoc-content.md)こともできます。これにより関連性を付加して、フラグメントをコンテンツページに追加するときに、アセット（画像など）を（オプションで）フラグメントと一緒に使用できるようになります。
 
 ## フラグメントのメタデータ（プロパティ）の表示と編集 {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -325,7 +325,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 * 選択されたバージョン **v&lt;*x.y*>**（右）
 
-これらは並べて表示され、次の場所にあります。
+これらは左右に並んで表示されます。この画面について以下で説明します。
 
 * すべての相違点がハイライト表示されます
 
@@ -359,7 +359,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 >
 フラグメントがモデルに基づいている場合、その[モデルが公開されている](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)ことを確認してください。
 >
-モデルがまだ公開されていないコンテンツフラグメントを公開する場合は、選択リストにその旨が表示され、モデルがフラグメントと共に公開されます。
+まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
 
 コンテンツフラグメントをパブリッシュ環境で使用するには、公開する必要があります。これは、Assets の標準機能を使用して行います。
 
@@ -371,7 +371,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * 作成後、[Assets コンソールで使用可能なアクション](#actions-for-a-content-fragment-assets-console)を使用して。
 * [コンテンツフラグメントエディター](#toolbar-actions-in-the-content-fragment-editor)から。
 
-また、 [フラグメントを使用するページを公開する](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)を使用します。フラグメントはページ参照にリスト表示されます。
+さらに、[フラグメントを使用するページを公開](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)するとき。フラグメントはページ参照にリスト表示されます。
 
 >[!CAUTION]
 >
@@ -393,4 +393,4 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
    >[!CAUTION]
    >
-   フラグメントが既にページで参照されている場合は、警告メッセージが表示されます。「**削除を強制**」を選択して続行を確認する必要があります。フラグメントはコンテンツフラグメントコンポーネントと共に、すべてのコンテンツページから削除されます。
+   フラグメントが既にページで参照されている場合は、警告メッセージが表示されます。「**削除を強制**」を選択して続行を確認する必要があります。フラグメントは、そのコンテンツフラグメントコンポーネントと一緒に、すべてのコンテンツページから削除されます。
