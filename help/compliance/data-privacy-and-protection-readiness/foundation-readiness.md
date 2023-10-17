@@ -1,11 +1,11 @@
 ---
 title: データ保護とデータプライバシーに関する規制 - Adobe Experience Manager as a Data Foundation の対応
-description: 様々なデータ保護およびデータプライバシー規制に対するAdobe Experience Manager as a Cloud Service Foundation のサポートについて説明します。 この記事には、EU 一般データ保護規則 (GDPR)、カリフォルニア州消費者プライバシー法、新しいAEMas a Cloud Serviceプロジェクトを実装する際の準拠方法が含まれています。
+description: 様々なデータ保護およびデータプライバシー規制に対する Adobe Experience Manager as a Cloud Service Foundation のサポートについて説明します。この記事には、EU 一般データ保護規則（GDPR）、カリフォルニア州消費者プライバシー法および新規 AEM as a Cloud Service プロジェクトを実装する際に準拠する方法が含まれています。
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
 source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '503'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 50%
 >
 >このドキュメントの内容は法的な助言にはならず、その代用になるものでもありません。
 >
->データ保護およびデータプライバシー規制に関するアドバイスについては、お客様の企業の法務部門にお問い合わせください。
+>データ保護およびデータプライバシー規制に関するアドバイスについては、自社の法務部門にお問い合わせください。
 
 >[!NOTE]
 >
->プライバシーに関する問題に対するAdobeの対応と、プライバシーをご利用のお客様にとっての意味について詳しくは、 [Adobeプライバシーセンター](https://www.adobe.com/jp/privacy.html).
+>アドビのプライバシーに関する問題への対応と、アドビのお客様への影響について詳しくは、[アドビのプライバシーセンター](https://www.adobe.com/jp/privacy.html)をご覧ください。
 
 ## AEM Foundation のデータプライバシーと保護のサポート {#aem-foundation-data-privacy-and-protection-support}
 
-AEM Foundation レベルでは、保存される個人データはユーザープロファイルに保持されます。したがって、この記事の情報は主に、ユーザープロファイルへのアクセスと削除の方法について説明しているので、アクセス要求と削除要求それぞれに対処できます。
+AEM Foundation レベルでは、保存される個人データはユーザープロファイルに保持されます。そのため、この記事では主に、アクセスリクエストと削除リクエストに対処できるように、ユーザープロファイルのアクセス方法と削除方法について説明します。
 
 ## ユーザープロファイルへのアクセス {#accessing-a-user-profile}
 
@@ -45,7 +45,7 @@ AEM Foundation レベルでは、保存される個人データはユーザー�
 
 ### HTTP API {#http-api}
 
-既に述べたように、Adobeは、自動化を容易にするユーザーデータにアクセスするための API を提供します。 利用可能な API には、以下のようにいくつかのタイプがあります。
+前述したように、自動化を促進するために、アドビではユーザーデータにアクセスするための API を用意しています。利用可能な API には、以下のようにいくつかのタイプがあります。
 
 **UserProperties API**
 
@@ -78,16 +78,16 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### ユーザーの無効化 {#disable-user}
 
-1. 前述のように、ユーザー管理コンソールを開き、該当するユーザーを検索します。
-2. ユーザーの上にマウスポインターを置いて、選択アイコンをクリックします。 プロファイルがグレーに変わり、選択されたことを示します。
+1. 前述のように、ユーザー管理コンソールを開き、目的のユーザーを検索します。
+2. ユーザーの上にポインタを合わせ、選択アイコンをクリックします。プロファイルがグレーに変わり、選択されたことが示されます。
 
-3. 上部のメニューで、 **無効にする** ユーザーを無効（オフ）にするには：
+3. 上部のメニューで、「**無効にする**」をクリックしてユーザーを無効（オフ）にします。
 
    ![アカウントの無効化](assets/dpp-foundation-03.png)
 
 4. 最後に、アクションを確認します。
 
-   ユーザーインターフェイスは、プロファイルカードに対するロックを追加してグレーアウトすることで、ユーザーアカウントが無効になったことを示します。
+   次のように、プロファイルがグレー表示されてロックが追加されるので、ユーザーアカウントのアクティベーションが解除されたことがわかります。
 
    ![無効なアカウント](assets/dpp-foundation-04.png)
 
@@ -95,11 +95,11 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
->AEMas a Cloud Serviceの場合、CRXDE にアクセスできないので、UI からユーザープロファイルを削除するための手動の手順はありません。
+>AEM as a Cloud Service の場合、CRXDE にアクセスできないので、UI からユーザープロファイルを削除するための手動の手順はありません。
 
 ### HTTP API {#http-api-1}
 
-以下の手順では、 `curl` コマンドラインツールを使用して、 **[!UICONTROL cavery]** `userId` デフォルトの場所にあるユーザーのプロファイルを削除します。
+以下の手順では、`curl` コマンドラインツールを使用して **[!UICONTROL cavery]** `userId` を持つユーザーを無効にし、デフォルトの場所にあるそのユーザーのプロファイルを削除する方法を示します。
 
 **ユーザーホームの検索：**
 
@@ -118,7 +118,7 @@ curl -X POST -u user:password -FdisableUser="describe the reasons for disabling 
 
 **ユーザープロファイルの削除**
 
-アカウント検索コマンドから返された JSON ペイロードの home プロパティに含まれているノードパス、および既知のデフォルトのプロファイルノード位置を使用：
+アカウント検索コマンドから返された JSON ペイロードの home プロパティに含まれているノードパス、および既知のデフォルトのプロファイルノード位置を使用：
 
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
