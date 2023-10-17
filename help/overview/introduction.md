@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service の概要
 description: Adobe Experience Manager（AEM）as a Cloud Service の概要。
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '632'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ AEM as a Cloud Service を使用すると、クラウドネイティブな方法
 
 * 最適化されたパフォーマンストポロジーによって、耐障害性と効率性を最大限に高めます。
 
-* AEMas a Cloud ServiceのAdobe Experience Cloudとの深い統合を活用して、オンラインマーケティングおよび Web 分析製品でより優れた顧客体験を提供します。
+* AEM as a Cloud Service と Adobe Experience Cloud の深い統合を活用して、オンラインマーケティングおよび web 分析製品のカスタマーエクスペリエンスを向上させます。
 
 * コードリファクタリングやコンテンツ転送など、移行タスクを促進するツールを利用します。
 
@@ -78,6 +78,6 @@ AEM は、最新のクラウドサービスの主な特徴を取り入れるこ�
 
 >[!TIP]
 >
->AEM as a Cloud Serviceの概要を把握したら、 [オンボーディングジャーニー](/help/journey-onboarding/overview.md).
+>AEM as a Cloud Service の概要を把握したら、[オンボーディングジャーニー](/help/journey-onboarding/overview.md)を確認することで、すばやくオンボーディングできます。
 >
 >すでにオンボード済み、または AEM の機能のテストに取り掛かる準備できている場合[AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) をインストールし、豊富な例を使用して AEM の強力な機能を調べてみましょう。
