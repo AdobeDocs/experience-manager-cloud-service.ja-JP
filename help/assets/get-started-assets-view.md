@@ -4,13 +4,13 @@ description: ' [!DNL Assets View] のアクセス方法、ログイン操作、�
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
 source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '345'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
-# Assets ビューの概要 {#assets-view-get-started}
+# アセットビューの概要 {#assets-view-get-started}
 
 <!-- TBD: Make links for these steps. -->
 
@@ -27,7 +27,7 @@ ht-degree: 86%
 
 ## アセットビューへのアクセス {#access-assets-view}
 
-詳しくは、 [Assets ビューへのアクセス方法](/help/assets/assets-view-introduction.md#how-to-access-assets-view) を参照してください。
+アセットビューへのアクセス方法について詳しくは、[アセットビューへのアクセス方法](/help/assets/assets-view-introduction.md#how-to-access-assets-view)を参照してください。
 
 ## [!DNL Assets View] の設定 {#configuration}
 
@@ -55,9 +55,9 @@ ht-degree: 86%
 
 ## 次の手順 {#next-steps}
 
-* [アセット表示の概要については、ビデオをご覧ください](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=ja)
+* [ビデオを視聴してアセットビューの基本を学ぶ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=ja)
 
-* 次を使用して製品に関するフィードバックを提供： [!UICONTROL フィードバック] 「アセット表示」ユーザーインターフェイスで使用できるオプション
+* アセットビューのユーザーインターフェイスの「[!UICONTROL フィードバック]」オプションを使用して製品に関するフィードバックを提供する
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
