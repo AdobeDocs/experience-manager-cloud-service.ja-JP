@@ -8,7 +8,7 @@ feature: Accessibility
 role: Admin,User
 exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
 source-git-commit: 483a72f67f361023ebeefa3d74ec9f35a5f4f765
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '665'
 ht-degree: 100%
 
