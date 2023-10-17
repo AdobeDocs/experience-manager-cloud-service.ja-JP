@@ -3,13 +3,13 @@ title: SPA モデルルーティング
 description: AEM の単一ページアプリケーションの場合、アプリはルーティングを担当します。このドキュメントでは、ルーティングメカニズム、契約、使用可能なオプションについて説明します。
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '440'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# SPA モデルルーティング {#spa-model-routing}
+# SPA モデルルーティング{#spa-model-routing}
 
 AEM の単一ページアプリケーションの場合、アプリはルーティングを担当します。このドキュメントでは、ルーティングメカニズム、契約、使用可能なオプションについて説明します。
 
@@ -19,7 +19,7 @@ AEM の単一ページアプリケーションの場合、アプリはルーテ�
 
 ## アーキテクチャ {#architecture}
 
-詳しくは、 [PageModelManager](blueprint.md#pagemodelmanager) SPA Blueprint ドキュメントのセクション
+詳しくは、SPA ブループリントドキュメントの [PageModelManager](blueprint.md#pagemodelmanager) の節を参照してください。
 
 ## ModelRouter {#modelrouter}
 
@@ -31,7 +31,7 @@ AEM の単一ページアプリケーションの場合、アプリはルーテ�
 
 >[!CAUTION]
 >
->`ModelRouter` の現在のバージョンでは、Sling Model エントリポイントの実際のリソースパスを指す URL のみ使用できます。バニティー URL やエイリアスの使用はサポートしていません。
+>`ModelRouter` の現在のバージョンでは、Sling Model エントリポイントの実際のリソースパスを指す URL のみ使用できます。バニティ URL またはエイリアスの使用はサポートされません。
 
 ## ルーティングのコントラクト {#routing-contract}
 
@@ -41,7 +41,7 @@ AEM の単一ページアプリケーションの場合、アプリはルーテ�
 
 `ModelRouter` では、`pushState` 呼び出しと `replaceState` 呼び出しをリッスンしてモデルフラグメントをプリフェッチするので、モデルルーティングの概念をサポートしています。内部では、`PageModelManager` をトリガーして指定の URL に対応するモデルを読み込み、他のモジュールがリッスンできる `cq-pagemodel-route-changed` イベントを発生させます。
 
-デフォルトでは、この動作は自動的に有効になっています。 無効にするには、SPAで次のメタプロパティをレンダリングする必要があります。
+デフォルトでは、この動作は自動的に有効になっています。無効にするには、SPA で次のメタプロパティをレンダリングする必要があります。
 
 ```
 <meta property="cq:pagemodel_router" content="disabled"\>
