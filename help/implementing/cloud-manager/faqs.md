@@ -1,38 +1,38 @@
 ---
 title: Cloud Manager FAQ
-description: AEM as a Cloud Serviceの Cloud Manager に関するよくある質問への回答を見つけます。
+description: AEM as a Cloud Service の Cloud Manager に関するよくある質問への回答を確認できます。
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '987'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 
 # Cloud Manager FAQ {#cloud-manager-faqs}
 
-このドキュメントでは、AEM as a Cloud Serviceの Cloud Manager に関する最もよくある質問に対する回答を示します。
+このドキュメントでは、AEM as a Cloud Service の Cloud Manager に関するよくある質問とその回答を示します。
 
-## Cloud Manager ビルドで Java™ 11 を使用することは可能ですか？ {#java-11-cloud-manager}
+## Cloud Manager ビルドで Java™ 11 を使用できますか？ {#java-11-cloud-manager}
 
-はい。を `maven-toolchains-plugin` Java™ 11 用の適切な設定を使用して
+はい。Java™ 11 向けに適切に設定された `maven-toolchains-plugin` を追加します。
 
 プロセスは、[こちら](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started)のドキュメントに記載されています。
 
 例えば、[wknd プロジェクトサンプルプロジェクトコード](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)を参照してください。
 
-## Java™ 8 から Java™ 11 に切り替えた後、maven-scr-plugin に関するエラーでビルドが失敗します。 どうすればいいですか？ {#build-fails-maven-scr-plugin}
+## Java™ 8 から Java™ 11 に切り替えた後、maven-scr-plugin に関するエラーでビルドが失敗します。どうすればいいですか？ {#build-fails-maven-scr-plugin}
 
-Java™ 8 から 11 へのビルドの切り替えを試みたときに、AEM Cloud Manager のビルドが失敗する場合があります。 次のエラーが発生した場合は、 `maven-scr-plugin` すべての OSGi 注釈を OSGi R6 注釈に変換します。
+ビルドを Java™ 8 から 11 に切り替えようとすると、AEM Cloud Manager のビルドに失敗する場合があります。次のエラーが発生した場合は、`maven-scr-plugin` を削除し、すべての OSGi 注釈を OSGi R6 注釈に変換する必要があります。
 
 ```text
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
 ```
 
-このプラグインの削除方法については、 [ここ](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/).
+このプラグインの削除方法については、[こちら](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/)を参照してください。
 
-## Java™ 8 から Java™ 11 に切り替えた後、RequireJavaVersion に関するエラーでビルドが失敗しました。 どうしたらいいでしょうか。 {#build-fails-requirejavaversion}
+## Java™ 8 から Java™ 11 に切り替えた後、RequireJavaVersion に関するエラーでビルドが失敗します。どうしたらいいでしょうか。 {#build-fails-requirejavaversion}
 
 Cloud Manager ビルドの場合、`maven-enforcer-plugin` がこのエラーで失敗する場合があります。
 
@@ -40,9 +40,9 @@ Cloud Manager ビルドの場合、`maven-enforcer-plugin` がこのエラーで
 "[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
 ```
 
-このエラーは、Cloud Manager が別のバージョンの Java™を使用して maven コマンドを実行していることとコードをコンパイルしていることが原因で発生する既知の問題です。 この問題を解決するには、`maven-enforcer-plugin` の設定から `requireJavaVersion` を省略するだけです。
+このエラーは既知の問題です。Cloud Manager で別のバージョンの Java™ を使用してコードのコンパイル用の maven コマンドを実行していることが原因です。この問題を解決するには、`maven-enforcer-plugin` の設定から `requireJavaVersion` を省略するだけです。
 
-## コード品質チェックに失敗し、デプロイメントが停止しています。 このチェックを回避する方法はありますか？ {#deployment-stuck}
+## コード品質チェックに失敗し、デプロイメントが停止しています。このチェックを回避する方法はありますか？ {#deployment-stuck}
 
 はい。セキュリティ評価以外のコード品質チェックのエラーはすべて、重要な指標ではありません。そのため、結果の UI で項目を展開することで、デプロイメントパイプラインの一部としてこれらのチェックを回避できます。
 
@@ -54,15 +54,15 @@ Cloud Manager ビルドの場合、`maven-enforcer-plugin` がこのエラーで
 
 はい。開発者向けデプロイメントの場合、Git ブランチの `pom.xml` ファイルには、`<version>` 値の最後に `-SNAPSHOT` が含まれている必要があります。
 
-この値を使用すると、バージョンが変更されなかった場合でも、以降のデプロイメントをインストールできます。 デベロッパーデプロイメントでは、maven ビルドの自動バージョンは追加または生成されません。
+この値により、バージョンが変更されなかった場合でも、以降のデプロイメントを引き続きインストールできます。デベロッパーデプロイメントでは、maven ビルドの自動バージョンは追加または生成されません。
 
 また、ステージおよび実稼働ビルドまたはデプロイメントのバージョンを `-SNAPSHOT` に設定することもできます。Cloud Manager では、適切なバージョン番号を自動的に設定し、Git にタグを作成します。このタグは、必要に応じて後で参照できます。
 
-バージョン処理の詳細は次のとおりです。 [ここに記載されています](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+バージョン処理の詳細は、[こちらで説明しています](/help/implementing/cloud-manager/managing-code/project-version-handling.md)。
 
 ## パッケージとバンドルのバージョン管理は、ステージングと実稼動のデプロイメントでどのように機能しますか？ {#snapshot-version}
 
-ステージおよび実稼動環境でのデプロイメントでは、自動バージョンは [ここに記載されています](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+ステージング環境および実稼動環境でのデプロイメントでは自動バージョンが生成されます（[こちらを参照](/help/implementing/cloud-manager/managing-code/project-version-handling.md)）。
 
 ステージングと実稼働のデプロイメントでカスタムバージョン管理を行うには、`1.0.0` のように、3 つの部分から成る適切な Maven バージョンを設定します。実稼動にデプロイするたびに、バージョンを増やします。
 
@@ -85,11 +85,11 @@ Caused by: org.apache.sling.api.resource.PersistenceException: Unable to commit 
 Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventAdminAsyncThread #7] org.apache.sling.distribution.journal.impl.publisher.DistributionPublisher [null] Error processing distribution package` `dstrpck-1583514457813-c81e7751-2da6-4d00-9814-434187f08d32. Retry attempts 344/infinite. Message: Error trying to extract package at path /etc/packages/com.myapp/myapp-base.ui.content-5.1.0-SNAPSHOT.
 ```
 
-`sling-distribution-importer` ユーザーは、`ui.content package` で定義されたコンテンツパスに対して追加の権限が必要です。このルールは通常、 `/conf` および `/var`.
+`sling-distribution-importer` ユーザーは、`ui.content package` で定義されたコンテンツパスに対して追加の権限が必要です。このルールは、通常、`/conf` と `/var` の両方に対する権限を追加する必要があるということです。
 
 解決策は、[RepositoryInitializer OSGi 設定](/help/implementing/deploying/overview.md#repoint)スクリプトをアプリケーションデプロイメントパッケージに追加して、`sling-distribution-importer` ユーザーの ACL を追加することです。
 
-上記のエラー例では、パッケージ `myapp-base.ui.content-*.zip` の `/conf` と `/var/workflow` の下にコンテンツが含まれています。デプロイメントが成功するには、 `sling-distribution-importer` その下に必要なパスがあります。
+上記のエラー例では、パッケージ `myapp-base.ui.content-*.zip` の `/conf` と `/var/workflow` の下にコンテンツが含まれています。デプロイメントを成功させるには、これらのパスの下に `sling-distribution-importer` の権限が必要です。
 
 `sling-distribution-importer` ユーザーの権限を追加する OSGi 設定の例として、[`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) を紹介します。この設定により、`/var` 下に権限が追加されます。このような設定は、`/apps/myapp/config`（myapp はアプリケーションコードが保存されるフォルダー）下のアプリケーションパッケージに追加する必要があります。
 
@@ -98,11 +98,11 @@ Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventA
 [RepositoryInitializer OSGi 設定の追加](#cloud-manager-deployment-cloud-service)でエラーが解決しない場合は、次のような問題の 1 つが原因である可能性があります。
 
 * 標準のサービスを中断する無効な OSGi 設定が原因で、デプロイメントが失敗する可能性があります。
-   * デプロイメント中にログを確認し、明らかなエラーがあるかどうかを確認します。
+   * デプロイ時のログを調べて、明らかなエラーがないかどうかを確認します。
 
-* Dispatcher または Apache の設定が正しくないため、デプロイメントが失敗する可能性があります。
-   * 必ず、SDK に含まれる Docker イメージを使用して、Apache および Dispatcher の設定をローカルでテストしてください。
-   * 詳しくは、 [クラウド内の Dispatcher](/help/implementing/dispatcher/disp-overview.md#content-delivery) ローカルテストを簡単におこなうための Dispatcher Docker コンテナの設定方法について説明します。
+* Dispatcher や Apache の不正な設定が原因でデプロイに失敗する場合があります。
+   * SDK に含まれている Docker イメージを使用して、Apache 設定と Dispatcher 設定をローカルでテストしてください。
+   * ローカルテストを簡単に行うための Dispatcher Docker コンテナの設定方法については、[クラウド内の Dispatcher](/help/implementing/dispatcher/disp-overview.md#content-delivery) を参照してください。
 
 * オーサーインスタンスからパブリッシュインスタンスへのコンテンツパッケージのレプリケーション（Sling 配布）時に他の何らかのエラーが発生したために、デプロイが失敗する場合があります。
    * ローカル設定で問題をシミュレートするには、次の手順に従います。
@@ -113,7 +113,7 @@ Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventA
 
 ## aio コマンドを使用して変数を設定できません。どうすればいいですか？ {#set-variable}
 
-以下を受け取ることができます： `403` を使用してパイプライン変数をリストまたは設定しようとした場合に、次のようなエラーが発生しました。 `aio` コマンド
+`aio` コマンドでパイプライン変数をリストアップまたは設定しようとすると、次のような `403` エラーが発生する場合があります。
 
 ```shell
 $ aio cloudmanager:list-pipeline-variables 222
@@ -131,6 +131,6 @@ setting variables... !
 Cannot set variables: https://cloudmanager.adobe.io/api/program/111/environment/222/variables (403 Forbidden)
 ```
 
-この場合、次のコマンドを実行するユーザーを **デプロイメントマネージャー** Admin Consoleの
+この場合、これらのコマンドを実行するユーザーに、Admin Console で&#x200B;**デプロイメントマネージャー**&#x200B;の役割を追加する必要があります。
 
 詳しくは、[API の権限](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)を参照してください。
