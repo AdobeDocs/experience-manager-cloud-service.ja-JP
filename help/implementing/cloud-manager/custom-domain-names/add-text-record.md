@@ -3,15 +3,15 @@ title: TXT レコードの追加
 description: TXT レコードを追加して、Cloud Manager でカスタムドメイン名を追加する方法を説明します。
 exl-id: d441de29-af41-4d3e-9155-531af9702841
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '329'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # TXT レコードの追加 {#adding-txt}
 
-DNS TXT レコードは、ドメインを CDN サービスでホストすることを許可します。Cloud Manager でカスタムドメインを使用した CDN サービスのデプロイとバックエンドサービスとの関連付けを許可する DNS TXT レコードをゾーンに作成する必要があります。この関連付けは、お客様の管理下にあり、Cloud Manager でサービスからドメインにコンテンツを提供することを認可するものです。この認証は、付与し、取り下げることができます。 この TXT レコードは、ドメインと Cloud Manager 環境に固有のものです。
+DNS TXT レコードは、ドメインを CDN サービスでホストすることを許可します。Cloud Manager でカスタムドメインを使用した CDN サービスのデプロイとバックエンドサービスとの関連付けを許可する DNS TXT レコードをゾーンに作成する必要があります。この関連付けは、お客様の管理下にあり、Cloud Manager でサービスからドメインにコンテンツを提供することを認可するものです。この認証は、付与することも、取り下げることもできます。この TXT レコードは、ドメインと Cloud Manager 環境に固有のものです。
 
 TXT レコードを追加する前に、お客様は次の要件を満たす必要があります。
 
