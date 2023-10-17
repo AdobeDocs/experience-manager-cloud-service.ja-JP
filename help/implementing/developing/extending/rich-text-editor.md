@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service のコンテ�
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1876'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -163,7 +163,7 @@ RTE プラグインの設定について詳しくは、[RTE プラグインを�
 
 ## RTE ツールバーの設定 {#dialogfullscreen}
 
-[!DNL Experience Manager] では、リッチテキストエディターのインターフェイスを編集モードごとに異なる設定にできます。 デフォルト設定を以下に示します。これらの設定を必要に応じて上書きできます。作成者に提供するツールバー機能のみをカスタマイズします。すべてのツールバー設定を指定する必要はありません。
+[!DNL Experience Manager] では、リッチテキストエディターのインターフェイスを編集モードごとに異なる設定にできます。デフォルト設定を以下に示します。これらの設定を必要に応じて上書きできます。作成者に提供するツールバー機能のみをカスタマイズします。すべてのツールバー設定を指定する必要はありません。
 
 `dialogFullScreen` 用のツールバーを設定するには、次のサンプル設定を使用します。
 
@@ -223,7 +223,7 @@ RTE プラグインの設定について詳しくは、[RTE プラグインを�
 RTE フローで使用可能なオプションに関するユーザーインターフェイス設定がコンテンツポリシーに影響します。
 
 * ユーザーインターフェイス設定では、コンテンツポリシーで使用可能なオプションを定義します。
-* RTE のユーザーインターフェイス設定が削除されたか、項目が有効になっていない場合、コンテンツポリシーで設定できません。
+* RTE のユーザーインターフェイス設定が削除されたか、どの項目も有効にしていない場合、コンテンツポリシーではその設定ができません。
 * 作成者は、ユーザーインターフェイス設定およびコンテンツポリシーによって使用可能となっている機能にのみアクセスできます。
 
 例については、[テキストコアコンポーネントのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=ja#the-text-component-and-the-rich-text-editor)を参照してください。
