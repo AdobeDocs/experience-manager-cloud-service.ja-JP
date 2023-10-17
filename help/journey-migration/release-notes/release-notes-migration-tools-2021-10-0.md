@@ -4,9 +4,9 @@ description: AEM as a Cloud Service リリース 2021.11.0 における移行ツ
 feature: Release Information
 exl-id: 6b1caa63-dcb0-4c48-ab2c-fd72617abf13
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '408'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Cloud Acceleration Manager のリリース日は 2021年10月25日（PT）です
 
 ### 新機能 {#what-is-new-cam}
 
-Cloud Acceleration Manager のトレンドラインレポートで、履歴 BPA レポートを表示できるようになりました。このレポートを使用すると、進行状況をグラフで簡単に参照できます。詳しくは、 [近似曲線の表示の使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja#trendline-view-cam) を参照してください。
+Cloud Acceleration Manager のトレンドラインレポートで、履歴 BPA レポートを表示できるようになりました。このレポートを使用すると、進行状況をグラフで簡単に参照できます。詳しくは、[トレンドラインの表示の使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja#trendline-view-cam)を参照してください。
 
 ### リリース日 {#release-date-october-cam}
 
@@ -33,7 +33,7 @@ Cloud Acceleration Manager のリリース日は 2021年10月4日です。
 
 ### 新機能 {#what-is-new-cam-oct}
 
-Cloud Acceleration Manager では、BPA レポートを印刷可能なプレビューで表示できるようになり、印刷や PDF へのエクスポートが簡単になりました。これにより、共有が容易になりました。詳しくは、 [ベストプラクティス分析カードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja#best-practices-analysis).
+Cloud Acceleration Manager では、BPA レポートを印刷可能なプレビューで表示できるようになり、印刷や PDF へのエクスポートが簡単になりました。これにより、共有が容易になりました。[ベストプラクティス分析カードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja#best-practices-analysis)の手順 6 および 7 を参照してください。
 
 
 ## コンテンツ転送ツール {#ctt-release}
@@ -44,7 +44,7 @@ Cloud Acceleration Manager では、BPA レポートを印刷可能なプレビ�
 
 ### 新機能 {#what-is-new-ctt-oct}
 
-* ユーザーマッピングツールが改善され、以下の機能が提供されるなど、ユーザーエクスペリエンスがシンプルになりました。詳しくは、 [ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=ja).
+* ユーザーマッピングツールが改善され、以下の機能が提供されるなど、ユーザーエクスペリエンスがシンプルになりました。詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=ja)を参照してください。
    * ユーザーマッピングを実行する前に、User Management API への接続をテストできます
    * エラーを適切にスキップし、「ユーザーマッピング」アクティビティを続行できます
    * **アクセストークン**&#x200B;が 24 時間後に期限切れになっても、ユーザーマッピングが失敗しなくなりました。最後に停止した位置からユーザーマッピングを再実行できます。
