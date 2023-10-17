@@ -3,9 +3,9 @@ title: AEM Sites ジャーニー
 description: AEM の強力なサイト機能を理解するために利用できるガイド付きジャーニーの概要について説明します。
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '418'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ AEM の強力なサイト機能を理解するために利用できるガイド�
 
 ## はじめに {#introduction}
 
-[AEM Sites](https://business.adobe.com/jp/products/experience-manager/sites/aem-sites.html) は、あらゆるチャネルにわたってデジタルエクスペリエンスを容易に作成、管理および公開できる強力なツールの統合スイートです。初期コンテンツ構造の設定から、再利用可能なコンテンツの簡単な作成、複数の市場や言語へのデプロイ、パーソナライズされたエクスペリエンスを提供するカスタムアプリケーションの作成に至るまで、AEM Sitesは包括的で一元的なソリューションです。
+[AEM Sites](https://business.adobe.com/jp/products/experience-manager/sites/aem-sites.html) は、あらゆるチャネルにわたってデジタルエクスペリエンスを容易に作成、管理および公開できる強力なツールの統合スイートです。AEM Sites は、オーディエンスの場所によらず素晴らしいエクスペリエンスを作成するための包括的で一元的なソリューションです。初期コンテンツ構造のセットアップから、再利用可能なコンテンツの簡単な作成、複数のマーケットや言語へのデプロイ、パーソナライズされたエクスペリエンスを提供するカスタムアプリケーションの作成に至るまで対応できます。
 
 ## AEM ドキュメントジャーニー {#documentation-journeys}
 
@@ -43,4 +43,4 @@ AEM Sites のトピックに関するドキュメントジャーニーは次の�
 | [Reference Demos Add-On ジャーニー](/help/journey-sites/demos-add-on/overview.md) | 最小限の AEM 設定でサンドボックス環境に AEM Reference Demos Add-On を簡単に追加し、ベストプラクティスに基づいた豊富な例を使用して AEM の強力な機能をテストできるようにするための、ガイド付きのジャーニーを参照するには、ここから始めてください。 | システム管理者 |
 | [サイト翻訳ジャーニー](/help/journey-sites/translation/overview.md) | AEM Sites テクノロジー、それらをプロジェクトで使用する方法および AEM で初めから終わりまで翻訳プロジェクトを作成および更新する方法について説明します。 | 翻訳担当者 |
 
-ぜひお試しください [役割を追加する次のジャーニー](/help/journey-documentation/documentation-journeys.md#journeys).
+[その他の役割に対応するジャーニーが今後公開](/help/journey-documentation/documentation-journeys.md#journeys)され次第、随時お知らせします。
