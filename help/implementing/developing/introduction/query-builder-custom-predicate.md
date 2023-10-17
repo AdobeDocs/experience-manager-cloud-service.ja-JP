@@ -3,9 +3,9 @@ title: Query Builder 用のカスタム述語エバリュエーターの実装
 description: AEM の Query Builder を使用すると、コンテンツリポジトリーへのクエリをカスタマイズして簡単に実行できます
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '668'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 92%
 
 [Query Builder](query-builder-api.md) を使用すると、コンテンツリポジトリーへのクエリを簡単に実行できます。AEM には、データのクエリに役立つ一連の[述語エバリュエーター](#query-builder-predicates.md)が付属しています。
 
-ただし、複雑さを軽減し、より良いセマンティックを確保するカスタム述語エバリュエーターを実装することで、クエリを簡略化することもできます。
+ただし、複雑さを軽減し、より良いセマンティックを確保するカスタム述語エバリュエーターを実装することで、クエリを簡略化できます。
 
-また、カスタム述語は、XPath で直接実行できない他の操作も実行できます。例えば、次の操作を行います。
+また、カスタム述語は、XPath で直接実行できない次のような他の操作も実行できます。
 
 * 別のサービスからのデータのクエリ
 * 計算に基づくカスタムフィルタリング
@@ -105,7 +105,7 @@ replic.action=Activate
 
 >[!NOTE]
 >
->の範囲 `cq-search` 依存関係は次のように設定されます。 `provided` 理由 `cq-search` が `OSGi` コンテナ。
+>`cq-search` は `OSGi` コンテナで提供されるので、`cq-search` の依存関係の範囲は `provided` に設定されます。
 
 次のスニペットは、`pom.xml` ファイルの差分を[ユニファイド diff 形式](https://ja.wikipedia.org/wiki/Diff#.E3.83.A6.E3.83.8B.E3.83.95.E3.82.A1.E3.82.A4.E3.83.89.E5.BD.A2.E5.BC.8F_.28Unified_format.29)で示しています。
 
