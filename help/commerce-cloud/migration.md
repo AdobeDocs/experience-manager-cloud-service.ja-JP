@@ -3,9 +3,9 @@ title: AEM Commerce Integration Framework（CIF）アドオンへの移行
 description: 旧バージョンから AEM Commerce Integration Framework（CIF）アドオンに移行する方法
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '490'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 95%
 
 ## CIF アドオン
 
-Experience Manageras a Cloud Serviceの場合、Adobe Commerceおよびサードパーティのコマースソリューションでサポートされるコマース統合ソリューションは、CIF アドオンのみです。 CIF アドオンは、Experience Manager as a Cloud Service を使用するお客様の場合は自動的にデプロイされるので、手動でデプロイする必要はありません。[AEM Commerce as a Cloud Service - はじめに](getting-started.md)を参照してください。
+Experience Manager as a Cloud Service の場合、Adobe Commerce およびサードパーティ製コマースソリューション向けにサポートされるコマース統合ソリューションは CIF アドオンだけです。CIF アドオンは、Experience Manager as a Cloud Service を使用するお客様の場合は自動的にデプロイされるので、手動でデプロイする必要はありません。[AEM Commerce as a Cloud Service - はじめに](getting-started.md)を参照してください。
 
 CIF をデプロイするプロジェクトをサポートするために、アドビでは [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)を提供しています。
 
