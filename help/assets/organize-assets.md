@@ -6,9 +6,9 @@ feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
 source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '930'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Date24/08/2021
 
 ## タグを使用したアセットの整理 {#use-tags-to-organize-assets}
 
-アセットにタグを追加すると、検索中に取得したり、検索結果を使用してコレクションを作成したり、一部のアセットの検索ランキングを上げたり、アセット検出用にAdobe Senseiの AI アルゴリズムを適用したりしやすくなります。
+アセットにタグを追加すると、検索時にアセットを取得しやすくしたり、検索結果を使用してコレクションを作成したり、一部のアセットの検索ランキングを上げたり、アセット検出用に Adobe Sensei の AI アルゴリズムを適用したりできます。
 
 [!DNL Adobe Experience Manager Assets] では、自己学習アルゴリズムを使用して、非常にわかりやすいタグが作成されるので、ユーザーは数回クリックするだけで適切なアセットを見つけることができます。スマートタグでは、Adobe Sensei、人工知能および機械学習フレームワークを使用します。これらは、標準タグとビジネス固有のタグの両方を認識して画像に適用するようにトレーニングできます。スマートタグでは、コンテンツや個々の単語またはフレーズを識別して、わかりやすいタグをアセットに自動的に適用することもできます。
 
