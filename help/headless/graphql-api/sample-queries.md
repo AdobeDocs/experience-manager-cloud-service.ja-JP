@@ -4,7 +4,7 @@ description: GraphQL を AEM と共に使用し、サンプルコンテンツと
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1752'
 ht-degree: 100%
 

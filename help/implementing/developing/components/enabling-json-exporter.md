@@ -3,7 +3,7 @@ title: コンポーネントの JSON 書き出しの有効化
 description: モデラーフレームワークに基づいてコンテンツの JSON 書き出しを生成するように、コンポーネントを適応させることができます。
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 100%
 
