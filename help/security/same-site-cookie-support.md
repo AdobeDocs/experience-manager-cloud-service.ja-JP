@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service に対する Same Site Cookie
 description: Adobe Experience Manager as a Cloud Service に対する Same Site Cookie の のサポート
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '283'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 85%
 
 この設定のデフォルト値（`SameSite=Lax`）により、AEM インスタンスまたはサービス間の認証が機能しないことがあります。これは、これらのサービスのドメインや URL 構造が、この cookie ポリシーの制約に該当しない可能性があるためです。
 
-この問題を回避するには、SameSite cookie 属性を `None` ログイントークン用。
+これを回避するには、ログイントークンの SameSite cookie 属性を `None` に設定する必要があります。
 
 >[!CAUTION]
 >
@@ -36,4 +36,4 @@ ht-degree: 85%
 1. ](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)AEM SDK クイックスタートを使用した OSGi 設定の生成[で説明されている手順に従って、この特定の設定の JSON 形式の設定を生成します。
 1. [プロパティ設定用の Cloud Manager API 形式](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) OSGiドキュメントの手順に従って設定を適用します。
 
-この設定が更新され、ユーザーがログオフし、再度ログオンした後、 `login-token` cookie に `None` 属性セットに含まれ、クロスサイトリクエストに含まれます。
+この設定が更新され、ユーザーがログオフしてから再度ログオンすると、`login-token` cookie に `None` 属性が設定され、クロスサイトリクエストに含められるようになります。
