@@ -3,9 +3,9 @@ title: 実稼動プログラムの作成
 description: Cloud Manager を使用して、ライブトラフィックをホストする独自の実稼動プログラムを作成する方法について説明します。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '581'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 78%
 
    ![Cloud Manager ランディングページ](assets/log-in.png)
 
-1. 選択 **実稼動用に設定** 「プログラムの作成」ウィザードで、実稼働プログラムを作成し、プログラム名を指定します。
+1. プログラムを作成ウィザードで「**実稼動用に設定**」を選択して、実稼動プログラムを作成し、プログラム名を指定します。
 
    ![プログラム作成ウィザード](assets/create-production-program.png)
 
-1. オプションで、画像ファイルを **プログラムイメージを追加** ターゲットにするかクリックして、ファイルブラウザーから画像を選択します。 「**続行**」をタップまたはクリックします。
+1. オプションとして、画像ファイルを&#x200B;**プログラム画像を追加**&#x200B;ターゲットにドラッグ＆ドロップするか、ファイルブラウザーからクリックして画像を選択することで、プログラムに画像を追加できます。「**続行**」をタップまたはクリックします。
 
 1. セキュリティの権限を強化した場合、「**セキュリティの強化**」タブには実稼動プログラムに対して「 **セキュリティの強化を有効にする**」というオプションが表示されます。必要に応じて、「セキュリティの強化を有効にする」というオプションをオンにし、「**続行**」をタップまたはクリックします。
 
@@ -41,8 +41,8 @@ ht-degree: 78%
 
 1. 「**ソリューションとアドオン**」タブで、プログラムに含めるソリューションを選択します。
 
-   * 利用可能な様々なソリューションに 1 つ以上のプログラムが必要かどうかが不明な場合は、最も興味のあるプログラムを選択します。 追加のソリューションは、 [プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) 後で。 詳しくは、 [実稼働プログラムドキュメントの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) その他のプログラム設定の推奨事項については、を参照してください。
-   * 選択した **拡張セキュリティの有効化** 以前は、HIPAA の使用権限を持つソリューションを選択できる数に制限されていました。
+   * 利用可能な様々なソリューションに対して 1 つ以上のプログラムが必要かどうかが不明な場合は、最も興味のあるプログラムを選択します。後で[プログラムを編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)することで、追加のソリューションをアクティブ化することができます。プログラム設定の推奨事項について詳しくは、[実稼動プログラムの概要ドキュメント](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)を参照してください。
+   * 以前に「**セキュリティの強化を有効にする**」を選択した場合は、HIPAA 資格が使用可能なソリューションのみを選択できます。
 
    ![ソリューションを選択](assets/setup-prod-select.png)
 
