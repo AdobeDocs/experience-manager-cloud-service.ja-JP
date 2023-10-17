@@ -3,9 +3,9 @@ title: アセットへのリンクの共有方法
 description: リンクを生成し、 [!DNL Assets view]  アプリケーションへのアクセス権を持たない他のユーザーとアセットを共有します。
 exl-id: 6e05b06c-7436-40e3-acee-c8b1ed218f9e
 source-git-commit: e2efffe0192f7914fd97178884b7938b84fd9a27
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -43,9 +43,9 @@ ht-degree: 93%
 
 ## 次の手順 {#next-steps}
 
-* [Assets ビューでアセットのリンクを共有するビデオを見る](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html?lang=ja)
+* [ビデオを視聴してアセットビュー内のアセットのリンクを共有する方法を学ぶ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html?lang=ja)
 
-* 次を使用して製品に関するフィードバックを提供： [!UICONTROL フィードバック] Assets ビューユーザーインターフェイスで使用できるオプション
+* アセットビューユーザーインターフェイスの「[!UICONTROL フィードバック]」オプションを使用して製品に関するフィードバックを提供する
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
