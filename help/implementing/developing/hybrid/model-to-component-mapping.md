@@ -1,36 +1,36 @@
 ---
 title: SPA の動的モデルとコンポーネントのマッピング
-description: この記事では、AEM用 JavaScript SPA SDK で動的モデルとコンポーネントのマッピングがどのようにおこなわれるかを説明します。
+description: この記事では、AEM 用 JavaScript SPA SDK で動的モデルとコンポーネントとのマッピングがどのように行われるかを説明します。
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
 source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '319'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
 # SPA の動的モデルとコンポーネントのマッピング {#dynamic-model-to-component-mapping-for-spas}
 
-このドキュメントでは、AEM版 JavaScript SPA SDK で動的モデルとコンポーネントのマッピングがどのようにおこなわれるかを説明します。
+このドキュメントでは、AEM 用 JavaScript SPA SDK で動的モデルとコンポーネントのマッピングがどのように行われるかを説明します。
 
 ## ComponentMapping モジュール {#componentmapping-module}
 
-`ComponentMapping` モジュールは、プロントエンドプロジェクトに NPM パッケージとして提供されます。フロントエンドコンポーネントを格納し、単一ページアプリケーションがフロントエンドコンポーネントを AEM リソースタイプにマップする方法を提供します。このモジュールは、アプリケーションの JSON モデルを解析する際に、コンポーネントの動的な解決を有効にします。
+`ComponentMapping` モジュールは、プロントエンドプロジェクトに NPM パッケージとして提供されます。フロントエンドコンポーネントを格納し、単一ページアプリケーションがフロントエンドコンポーネントを AEM リソースタイプにマップする方法を提供します。このモジュールにより、アプリケーションの JSON モデルを構文解析する際に、コンポーネントを動的に解決できるようになります。
 
-モデル内の各項目には、 `:type` AEMリソースタイプを表示するフィールド。 フロントエンドコンポーネントは、マウントされると、基になるライブラリから受け取ったモデルのフラグメントを使用して自分自身をレンダリングできます。
+モデル内の各項目には、AEM リソースタイプを表示する `:type` フィールドが含まれます。フロントエンドコンポーネントは、マウントされると、基になるライブラリから受け取ったモデルのフラグメントを使用してコンポーネント自体をレンダリングできます。
 
-詳しくは、 [SPA Blueprint](blueprint.md) モデル解析と、モデルへのフロントエンドコンポーネントアクセスに関する詳細がドキュメントに記載されています。
+モデル解析とモデルへのフロントエンドコンポーネントアクセスの詳細については、[SPA ブループリント](blueprint.md)ドキュメントを参照してください。
 
 Npm パッケージ[@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping) も参照してください。
 
 ## モデル駆動型単一ページアプリケーション {#model-driven-single-page-application}
 
-AEM用 JavaScript SPA SDK を使用する単一ページアプリケーションは、モデル主導です。
+AEM 用 JavaScript SPA SDK を使用する単一ページアプリケーションは、モデル主導です。
 
 1. フロントエンドコンポーネントは、自らを[コンポーネントマッピングストア](#componentmapping-module)に登録します。
 1. 次に、[コンテナ](blueprint.md#container)は、 [モデルプロバイダー](blueprint.md#the-model-provider)がモデルを提供した後、そのモデルコンテンツ（`:items`）を反復します。
 
-1. ページがある場合、その子 (`:children`) 最初に、 [コンポーネントマッピング](blueprint.md#componentmapping) 次に、インスタンス化します。
+1. ページがある場合、そのページの子（`:children`）は、最初に[コンポーネントマッピング](blueprint.md#componentmapping)からコンポーネントクラスを取得してから、取得したクラスをインスタンス化します。
 
 ## アプリの初期化 {#app-initialization}
 
