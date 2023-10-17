@@ -3,9 +3,9 @@ title: コンテンツフラグメントコンソールのカスタマイズと�
 description: コンテンツフラグメントコンソールのカスタマイズ方法を学ぶ
 exl-id: a5f2c7f2-2fe5-4f0c-9960-6e8fa7336f10
 source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '75'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 73%
 
 コンテンツフラグメントコンソールは拡張可能で、Adobe App Builder を使用して必要に応じてカスタマイズすることができます。
 
-詳しくは、以下を参照してください。
+詳しくは、次を参照してください。
 
 * [AEM Content Fragments Console 拡張機能の開発手順](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#about-application)
 * [アクセス方法](https://developer.adobe.com/uix/docs/guides/get-access/)
