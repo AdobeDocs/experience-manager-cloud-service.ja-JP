@@ -6,26 +6,26 @@ feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
 source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '631'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager での 3D アセットのプレビュー {#previewing-3d-assets}
+# Adobe Experience Manager での 3D アセットのプレビュー{#previewing-3d-assets}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
-Experience Manager Assetsは、3D アセットの取り込み、管理、プレビュー、配信をサポートしています。
+Experience Manager Assets は、3D アセットの取り込み、管理、プレビュー、配信をサポートしています。
 
-自動的に生成されたサムネールレンディションまたはインタラクティブ 3D ビューアを使用して、3D アセットをプレビューできます。 Experience Manager のアセットの詳細ページから、インタラクティブ 3D ビューアを使用できます。このビューアには、3D シーンの周りを回転、ズーム、パンできる、インタラクティブなカメラコントロールのコレクションが含まれます。
+自動的に生成されたサムネールレンディションまたはインタラクティブ 3D ビューアーを使用して、3D アセットをプレビューできます。Experience Manager のアセットの詳細ページから、インタラクティブ 3D ビューアを使用できます。このビューアーには、3D アセットを回転、ズーム、パンできるインタラクティブなカメラコントロールのコレクションなどが含まれます。
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Experience Managerでサムネールプレビューでサポートされる形式{#supported-thumbnail-previewing-assets}
+## Experience Manager のサムネールプレビューでサポートされる形式{#supported-thumbnail-previewing-assets}
 
 Experience Managerは、デフォルトで次のファイル形式のサムネールを生成します。
 
@@ -37,7 +37,7 @@ Experience Managerは、デフォルトで次のファイル形式のサムネ�
 | 3DS | 3D スタジオモデル | application/x-3ds |  |
 | USDz | ユニバーサルシーンの説明 | model/vnd.usdz+zip |  |
 
-## Experience Managerでのインタラクティブ 3D プレビューでサポートされる形式{#supported-3d-previewing-assets}
+## Experience Manager のインタラクティブ 3D プレビューでサポートされる形式{#supported-3d-previewing-assets}
 
 Experience Managerは、次のファイル形式のインタラクティブ 3D プレビューをネイティブでサポートしています。
 
@@ -60,7 +60,7 @@ Experience Managerは、次のファイル形式のインタラクティブ 3D �
     material_0_baseColor.jpeg
     material_0_normal.jpeg
 
-## Experience Manager で 3D アセットをプレビューする際のパフォーマンスに関する考慮事項 {#performance-3d-previewing-assets}
+## Experience Manager で 3D アセットをプレビューする際のパフォーマンスに関する考慮事項{#performance-3d-previewing-assets}
 
 アセットの詳細表示ページで 3D アセットを開くときにかかる時間は、帯域幅、画像の複雑さ、サーバーの待ち時間など、いくつかの要因によって異なります。
 
