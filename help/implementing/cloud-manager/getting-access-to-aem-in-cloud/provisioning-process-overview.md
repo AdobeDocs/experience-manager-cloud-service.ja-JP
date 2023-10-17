@@ -2,9 +2,9 @@
 title: プロビジョニングプロセス - 概要
 description: プロビジョニングプロセス - 概要
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '330'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 95%
 ![processoverview.jpg](assets/processOverview.jpg)
 
 
-詳しくは、 [Experience LeagueのExperience Manageras a Cloud Serviceのオンボーディング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=ja).
+詳しくは、[Experience Leagueue の Experience Manager as a Cloud Service へのオンボーディング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=ja)を参照してください。
 
 ### リソースとリンク
 
