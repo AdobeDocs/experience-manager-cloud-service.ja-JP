@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
 source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '127'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -22,4 +22,4 @@ ht-degree: 80%
 
 コンテンツ作成者が新しいコンテンツを含んだページを作成するには、まずサイトを作成する必要があります。 サイトが成功するかどうかは、サイトの構造、スタイル設定および初期コンテンツに対する最初の検討と計画立案に大きくかかっています。このため、サイトの初期作成は AEM の管理者が行うのが一般的です。
 
-サイトテンプレートを使用することで、サイト作成プロセスが迅速かつ柔軟におこなわれる方法について詳しくは、 [新しいサイト管理者向けドキュメントの作成](/help/sites-cloud/administering/site-creation/create-site.md).
+サイトテンプレートを利用してサイトを迅速かつ柔軟に作成する方法について詳しくは、[新しいサイトの作成に関する管理者向けドキュメント](/help/sites-cloud/administering/site-creation/create-site.md)を参照してください。
