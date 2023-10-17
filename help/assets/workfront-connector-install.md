@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
 source-git-commit: 393ec79e820632e879a377e697ecd09f4571c0b7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '854'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 71%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 拡張コネクタのインストールは、[!DNL Cloud Service] として [!DNL Adobe Experience Manager] への管理者アクセス権を持つユーザーが行います。インストールする前に、プラットフォームのサポートとコネクタのその他の [前提条件](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience) を確認してください。
 
 >[!IMPORTANT]
 >
->2022 年 6 月より、Adobeは、WorkfrontとAdobe Experience Manager Assets as a Cloud Serviceを接続するための新しいネイティブ統合をリリースしました。 この統合は、これら 2 つのソリューションを接続するために必要な方法となりました。 Workfront as a Cloud ServiceとAEM Assetsを接続するための拡張コネクタ（1.9.8 以降）の今後の新しい実装は、ブロックされます。 この統合の設定方法について詳しくは、 [Experience Manager Assets統合の設定](workfront-connector-configure.md).
+>2022年6月に、アドビは Workfront と Adobe Experience Manager Assets as a Cloud Service を接続するための新しいネイティブ統合をリリースしました。この統合は、これら 2 つのソリューションを接続するために必須の方法となりました。Workfront と AEM Assets as a Cloud Service を接続する拡張コネクタ（1.9.8 以降）の今後の新しい実装は、ブロックされます。この統合の設定方法について詳しくは、[Experience Manager Assets as a Cloud Service 統合の設定](workfront-connector-configure.md)を参照してください。
 
 >[!IMPORTANT]
 >
@@ -36,15 +36,15 @@ ht-degree: 71%
 
 コネクタをインストールする前に、次のプリインストール手順に従います。
 
-1. AEMas a Cloud Serviceプログラムで Advanced Networking が設定され、IP 許可リストへの登録が有効になっている場合は、Workfront IP をこの許可リストに追加して、イベント購読と様々な API 呼び出しがAEMに渡されるようにする必要があります。
+1. AEM as a Cloud Service プログラムで高度なネットワークを設定し、IP 許可リストへの登録を有効にしている場合は、Workfront IP をこの許可リストに追加して、イベント購読と様々な API 呼び出しが AEM に渡されるようにする必要があります。
 
-   * [Workfront Cluster IPs](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=en#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). [!DNL Workfront] の IP クラスターを調べるには、**[!UICONTROL 設定]**／**[!UICONTROL システム]**／**[!UICONTROL 顧客情報]**&#x200B;に移動します。
+   * [Workfront クラスター IP](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=ja#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9)。[!DNL Workfront] の IP クラスターを調べるには、**[!UICONTROL 設定]**／**[!UICONTROL システム]**／**[!UICONTROL 顧客情報]**&#x200B;に移動します。
 
-   * [Workfrontイベント購読 API の IP](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html)
+   * [Workfront イベント購読 API の IP](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html?lang=ja)
 
    >[!IMPORTANT]
    >
-   >* お使いのプログラム用に詳細設定があり、IP 許可リストへの登録を使用している場合は、拡張Workfrontコネクタアーキテクチャの制限により、Cloud Manager の許可リストにプログラムエグレス IP を追加する必要もあります。
+   >* お使いのプログラム用に詳細設定がされており、IP 許可リストへの登録を使用している場合は、拡張 Workfront コネクタアーキテクチャの制限により、プログラムのエグレス IP を Cloud Manager の許可リストに追加する必要もあります。
    >
    >* p{PROGRAM_ID}.external.adobeaemcloud.com
    >
@@ -55,7 +55,7 @@ ht-degree: 71%
    >
    >    ```
 
-1. 次のオーバーレイがに存在しないことを確認します。 [!DNL Experience Manager] リポジトリ。 これらのパスに既にオーバーレイが存在する場合は、オーバーレイを削除するか、2 つの間の変更の差分を結合する必要があります。
+1. 次のオーバーレイが [!DNL Experience Manager] リポジトリに存在しないことを確認してください。これらのパスに既にオーバーレイが存在する場合は、オーバーレイを削除するか、2 つのパス間の変更の差分を結合する必要があります。
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`
    * `/apps/dam/gui/coral/components/admin/folderschemaforms/formbuilder`
