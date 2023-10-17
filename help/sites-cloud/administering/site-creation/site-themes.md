@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '353'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ AEM サイトテンプレートを使用して作成されたサイトでは、�
 
 >[!NOTE]
 >
->AEMサイトのテーマを [AEM site templates](site-templates.md).  AEM サイトテーマには、AEM サイトのスタイル設定情報のみが含まれています。AEMのサイトテンプレートは、サイト構造と初期コンテンツを定義し、次の目的で使用できるAEMのサイトテーマを含みます。 [クイックサイト作成](create-site.md).
+>AEM サイトテーマを [AEM サイトテンプレート](site-templates.md)と混同しないでください。 AEM サイトテーマには、AEM サイトのスタイル設定情報のみが含まれています。AEM サイトテンプレートには、サイト構造と初期コンテンツを定義し、[クイックサイト作成](create-site.md)を可能にする AEM サイトテーマが含まれています。
 
 ## サイトテーマの使用 {#using-themes}
 
@@ -34,7 +34,7 @@ AEM サイトテンプレートを使用して作成されたサイトでは、�
 
 >[!TIP]
 >
->テンプレートからサイトを作成し、そのテーマをカスタマイズするプロセスに関するエンドツーエンドの説明については、 [クイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md).
+>テンプレートからサイトを作成し、そのテーマをカスタマイズするプロセスのエンドツーエンドについては、[クイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md)を参照してください。
 
 ## サイトテーマの構造 {#structure}
 
@@ -53,4 +53,4 @@ AEM サイトテンプレートを使用して作成されたサイトでは、�
 
 アドビは、新しいサイトテーマを作成するための一連のスクリプトとして AEM Site Theme Builder を提供します。
 
-[AEM Site Theme Builder は、GitHub の使用方法に関するドキュメントと共に利用できます](https://github.com/adobe/aem-site-theme-builder).  テーマをカスタマイズするには、フロントエンド開発エクスペリエンスが必要です。
+[AEM Site Theme Builder は、GitHub の使用方法ドキュメントと共に利用できます](https://github.com/adobe/aem-site-theme-builder)。 テーマをカスタマイズするには、フロントエンド開発エクスペリエンスが必要です。
