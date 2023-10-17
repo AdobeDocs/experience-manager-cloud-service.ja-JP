@@ -3,9 +3,9 @@ title: ページ編集用のキーボードショートカット
 description: AEM ではページ編集用を含む様々なキーボードショートカットを使用できます
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '237'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ AEM 全体で様々なキーボードショートカットを利用できます�
 |  | `Ctrl-y` | [最後におこなった変更操作をやり直す](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | 複数の段落を選択する |
 |  | `Ctrl-c` | 選択した段落をコピー |
-|  | `Ctrl-x` | 選択した段落を切り取る（切り取った段落は、貼り付けられるまでユーザーインターフェイスに表示されなくなります）。 |
+|  | `Ctrl-x` | 選択した段落を切り取る（切り取った段落は、貼り付けられるまでユーザーインターフェイスから消えません） |
 |  | `Ctrl-v` | 以前にカットまたはコピーした段落を貼り付ける |
 |  | `Ctrl-Backspace` | 選択した段落を削除する |
 | **編集**&#x200B;モード - リッチテキストエディター | `Ctrl-b` | 太字 |
