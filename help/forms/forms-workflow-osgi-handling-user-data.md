@@ -6,7 +6,7 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1024'
 ht-degree: 100%
 
