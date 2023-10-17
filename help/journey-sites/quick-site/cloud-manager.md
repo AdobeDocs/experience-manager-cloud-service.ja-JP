@@ -3,9 +3,9 @@ title: Cloud Manager とクイックサイト作成ワークフローについ�
 description: Cloud Manager と、新しいクイックサイト作成プロセスとの結び付けを説明します。
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1128'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Cloud Manager と、新しいクイックサイト作成プロセスとの結び
 
 >[!TIP]
 >
->Cloud Manager の役割と役割の管理に詳しくない場合は、 [その他のリソース](#additional-resources) 」セクションに入力します。
+>Cloud Manager の役割と役割の管理に詳しくない場合は、[その他のリソース](#additional-resources)の節の役割に基づく権限のドキュメントを参照してください。
 
 ## Cloud Manager {#cloud-manager}
 
