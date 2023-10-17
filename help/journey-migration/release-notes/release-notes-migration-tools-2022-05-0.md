@@ -4,9 +4,9 @@ description: AEM as a Cloud Service Release 2022.5.0 の移行ツールのリリ
 feature: Release Information
 exl-id: 1aa49e85-1914-44d9-bcf7-0a1b03926df0
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '398'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -53,4 +53,4 @@ Cloud Acceleration Manager のリリース日は 2022年6月2日（PT）です�
 
 ### 新機能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager では、ユーザーがコンテンツ転送を開始および管理して、移行プロジェクトの一環として顧客の AEM インスタンス（オンプレミスまたは Adobe Managed Services）から AEM as a Cloud Service にコンテンツを移行できるようになりました。詳しくは、 [コンテンツ転送カードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=ja#content-transfer) を参照してください。
+* Cloud Acceleration Manager では、ユーザーがコンテンツ転送を開始および管理して、移行プロジェクトの一環として顧客の AEM インスタンス（オンプレミスまたは Adobe Managed Services）から AEM as a Cloud Service にコンテンツを移行できるようになりました。詳しくは、[コンテンツ転送カードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=ja#content-transfer)を参照してください。
