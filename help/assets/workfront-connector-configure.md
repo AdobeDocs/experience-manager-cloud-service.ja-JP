@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1767'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 86%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] で管理者アクセス権を持つユーザーが、インストール後に拡張コネクタを設定します。インストール手順については、 [コネクタのインストール](/help/assets/workfront-integrations.md) を参照してください。
 
 >[!IMPORTANT]
 >
-> 2022 年 6 月より、Adobeは、WorkfrontとAdobe Experience Manager Assets as a Cloud Serviceを接続するための新しいネイティブ統合をリリースしました。 この統合は、これら 2 つのソリューションを接続するために必要な方法となりました。 Workfront as a Cloud ServiceとAEM Assetsを接続するための拡張コネクタ（1.9.8 以降）の今後の新しい実装は、ブロックされます。
+> 2022年6月に、アドビは Workfront と Adobe Experience Manager Assets as a Cloud Service を接続するための新しいネイティブ統合をリリースしました。この統合は、これら 2 つのソリューションを接続するために必須の方法となりました。Workfront と AEM Assets as a Cloud Service を接続する拡張コネクタ（1.9.8 以降）の今後の新しい実装は、ブロックされます。
 
 >[!IMPORTANT]
 >
@@ -36,7 +36,7 @@ ht-degree: 86%
 
 ## イベント購読の設定 {#event-subscriptions}
 
-イベント購読は、[!DNL Adobe Workfront] で発生するイベントを AEM に通知するために使用されます。三つある [!DNL Workfront for Experience Manager enhanced connector] イベントサブスクリプションが機能する必要がある機能は、次のとおりです。
+イベント購読は、[!DNL Adobe Workfront] で発生するイベントを AEM に通知するために使用されます。動作するためにイベント購読を必要とする [!DNL Workfront for Experience Manager enhanced connector] 機能は次の 3 つです。
 
 * プロジェクトにリンクされたフォルダーの自動作成。
 * Workfront ドキュメントのカスタムフォーム値の変更を AEM アセットメタデータに同期します。
@@ -65,9 +65,9 @@ ht-degree: 86%
 1. リンクされたフォルダー構造：コンマ区切り値を入力します。各値は `DE:<some-project-custom-form-field>`、Portfolio、プログラム、年、名前または「リテラル文字列値」（最後の 1 つには引用符がいります）のいずれかです。現在は、Portfolio、プログラム、年、DE:プロジェクトの種類、名前に設定されています。
 1. Workfront のフォルダーのタイトルに構造内のすべてのフォルダーを含める必要がある場合は、「フォルダー構造名を使用して Workfront でリンクされたフォルダーのタイトルを作成」チェックボックスをオンにする必要があります。それ以外の場合は、最後のフォルダーのタイトルになります。
 1. サブフォルダーのマルチフィールドでは、リンクされたフォルダーの子フォルダーとして作成するフォルダーのリストを指定できます。
-1. プロジェクトのステータス：リンクされたフォルダーを作成するためにプロジェクトを設定する必要があるステータスを選択します。
-1. ポートフォリオを含むプロジェクトで、リンクされたフォルダーを作成します。リンクされたPortfolioーを作成できるように、プロジェクトが属する必要があるフォルダーのリスト。 この一覧を空のままにして、すべてのプロジェクトポートフォリオのリンクフォルダーを作成します。
-1. カスタムフォームフィールドを含む、プロジェクト内にリンクされたフォルダーを作成します。リンクされたフォルダーを作成できるように、カスタムフォームフィールドと、プロジェクトに必要な対応する値。 この設定は、空のままにした場合は無視されます。 フィールドに `CUSTOM FORMS: Create DAM Linked Folder` を選択して、値に `Yes` を入力します。
+1. プロジェクトのステータス：プロジェクトを設定する必要があるステータスを選択して、リンクされたフォルダーを作成します。
+1. ポートフォリオを使用してプロジェクトにリンクされたフォルダーを作成する：プロジェクトが属する必要のあるポートフォリオのリストで、リンクされたフォルダーを作成できます。この一覧を空のままにして、すべてのプロジェクトポートフォリオのリンクフォルダーを作成します。
+1. カスタムフォームフィールドを使用してプロジェクトにリンクされたフォルダーを作成する：プロジェクトに必要なカスタムフォームフィールドおよびそれに対応する値で、リンクされたフォルダーを作成できます。この設定は、空である場合は無視されます。フィールドに `CUSTOM FORMS: Create DAM Linked Folder` を選択して、値に `Yes` を入力します。
 1. 「リンクされたフォルダーの自動作成を有効にする」をクリックします。「イベントの購読」タブに戻ると、作成イベントが 1 つ表示されます。
 
 ![リンクされたフォルダー設定](/help/assets/assets/wf-linked-folder-config.png)
@@ -107,7 +107,7 @@ Adobe Workfront ドキュメントとアセット間のメタデータマッピ�
    * タスクのカスタムフォームフィールド
    * プロジェクトの概要フィールド（ID、名前、説明、参照番号）
 
-1. 例えば、 [!DNL Workfront] 選択されたフィールド [!UICONTROL Workfrontカスタムフォームフィールド] はWorkfront User type-ahead フィールドです。マッピングするWorkfrontユーザーフィールドを指定する必要があります。 これを行うには、「Workfront の参照オブジェクトから値を取得」フィールドをオンにしてから、マッピングする値を取得する [!UICONTROL Workfront ユーザーカスタムフォームフィールド]の名前を指定します。
+1. [!UICONTROL Workfront カスタムフォームフィールド]で選択した [!DNL Workfront] フィールドが Workfront ユーザー先行入力フィールドの場合、マッピングする Workfront ユーザーフィールドを指定する必要があります。これを行うには、「Workfront の参照オブジェクトから値を取得」フィールドをオンにしてから、マッピングする値を取得する [!UICONTROL Workfront ユーザーカスタムフォームフィールド]の名前を指定します。
 
    ![メタデータマッピング設定](/help/assets/assets/wf-metadata-mapping-config1.png)
 
@@ -173,7 +173,7 @@ AEM でアセットのバージョン履歴を管理するには、AEM でアセ
 
 1. Experience Manager で、**[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／ **[!UICONTROL Workfront ツール設定]**&#x200B;をクリックし、「**[!UICONTROL 詳細]**」タブを開きます。
 
-1. 「**[!UICONTROL 既存のアセットのバージョンと同じ名前のアセットを保存]**」オプションを選択します。オプションをオンにすると、既存のアセットのバージョンとして同じ名前で同じ場所にアップロードされたアセットを保存できます。オフのままにすると、別の名前 ( 例： `asset-name.pdf` および `asset-name-1.pdf`) をクリックします。
+1. 「**[!UICONTROL 既存のアセットのバージョンと同じ名前のアセットを保存]**」オプションを選択します。オプションをオンにすると、既存のアセットのバージョンとして同じ名前で同じ場所にアップロードされたアセットを保存できます。オフのままにすると、別の名前（例：`asset-name.pdf` や `asset-name-1.pdf`）で新しいアセットが作成されます。
 
 1. 「**[!UICONTROL 新しいバージョンの作成時にアセットメタデータを更新]**」オプションを選択します。オプションをオンにすると、アセットの新しいバージョンが作成されるたびに、アセットのメタデータが更新されます。オプションをオフにすると、アセットは新しいバージョンの作成前のメタデータを保持します。
 
@@ -195,7 +195,7 @@ Experience Manager のワークフローエディターで、[!UICONTROL Workfro
 
 1. Experience Manager で、**[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／ **[!UICONTROL Workfront ツール設定]** をクリックし、「**[!UICONTROL 詳細]**」タブを開きます。
 
-1. 「**[!UICONTROL Workfront から送信されたときにアセットを自動的に公開する]**」を選択します。このオプションを使用すると、Workfront から AEM にアセットが送信される際に、アセットの自動公開を有効にできます。この機能は、Workfront カスタムフォームフィールドと、そのフィールドを設定する値を指定することで、条件付きで有効にできます。ドキュメントがAEMに送信されるたびに、その条件が満たされた場合は、アセットが自動的に公開されます。
+1. 「**[!UICONTROL Workfront から送信されたときにアセットを自動的に公開する]**」を選択します。このオプションを使用すると、Workfront から AEM にアセットが送信される際に、アセットの自動公開を有効にできます。この機能は、Workfront カスタムフォームフィールドと、そのフィールドを設定する値を指定することで、条件付きで有効にできます。ドキュメントが AEM に送信されるたびに、条件を満たした場合、アセットは自動的に公開されます。
 
 1. 「**[!UICONTROL プロジェクトの完了時に、すべてのプロジェクトアセットを Brand Portal に公開する]**」を選択します。このオプションを使用すると、属する Workfront プロジェクトのステータスが `Complete` に変更された場合、[!DNL Brand Portal] にアセットを自動的に公開できます。
 
