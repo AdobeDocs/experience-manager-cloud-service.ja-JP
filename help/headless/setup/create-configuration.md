@@ -3,9 +3,9 @@ title: 設定の作成 - ヘッドレスセットアップ
 description: AEM as a Cloud Service でヘッドレスを使い始めるための最初の手順として設定を作成します。
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '327'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -28,8 +28,8 @@ AEM のヘッドレスなコンテンツ管理に関しては、AEM 内でコン
 1. AEM as a Cloud Service にログインし、メインメニューで&#x200B;**ツール／一般／設定ブラウザー**&#x200B;を選択します。
 1. 設定に&#x200B;**タイトル**&#x200B;と&#x200B;**名前**&#x200B;を指定します。
    * **タイトル**&#x200B;は内容がわかるように付けます。
-   * この **名前** はリポジトリ内のノード名になります。
-      * タイトルに基づいて自動的に生成され、 [AEM命名規則](/help/implementing/developing/introduction/naming-conventions.md).
+   * **名前**&#x200B;はリポジトリのノード名になります。
+      * タイトルに基づいて自動的に生成され、[AEM の命名規則](/help/implementing/developing/introduction/naming-conventions.md)に従って調整されます。
       * 必要に応じて調整できます。
 1. 次のオプションを確認します。
    * **コンテンツフラグメントモデル**
@@ -51,4 +51,4 @@ AEM のヘッドレスなコンテンツ管理に関しては、AEM 内でコン
 
 >[!TIP]
 >
->設定ブラウザの詳細は、次のとおりです。 [設定ブラウザーのドキュメントを参照してください。](/help/implementing/developing/introduction/configurations.md).
+>設定ブラウザーの詳細については、[設定ブラウザーのドキュメント](/help/implementing/developing/introduction/configurations.md)を参照してください。
