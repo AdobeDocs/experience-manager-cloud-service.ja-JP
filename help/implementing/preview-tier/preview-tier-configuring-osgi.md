@@ -1,27 +1,27 @@
 ---
 title: プレビュー層の OSGi 設定の指定
-description: 運用を開始する前にコンテンツをプレビューするようにAEMプレビューサービスを設定する方法について説明します。
+description: AEM プレビューサービスを設定して、運用開始前にコンテンツをプレビューする方法を説明します。
 exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
 # プレビュー層の OSGi 設定の指定 {#configure-osgi-preview-tier}
 
-AEMは、Web サイトのパブリッシュ環境に到達する前に開発者とコンテンツ作成者が Web サイトの最終エクスペリエンスをプレビューし、公開できる Sites プレビューサービスを提供します。
+AEM は、web サイトがパブリッシュ環境になって一般公開される前に、開発者とコンテンツ作成者が web サイトの最終的なエクスペリエンスをプレビューできる Sites プレビューサービスを提供しています。
 
-オーサー環境からは表示されない様々なエクスペリエンスを容易にプレビューできます。 例えば、ページ切り替え、エクスペリエンスフラグメント、その他の公開側のみのコンテンツなどです。
+オーサー環境からは表示されない様々なエクスペリエンスを容易にプレビューできます。 例えば、ページ効果、エクスペリエンスフラグメント、その他の公開側のみのコンテンツなどです。
 
 プレビュー層の OSGi プロパティ値は、パブリッシュ層から継承されます。ただし、`service` パラメーターを `preview` 値に設定することで、プレビュー層の値をパブリッシュ層と区別することができます。
 
 >[!NOTE]
 >
->プレビュー環境について詳しくは、 [環境の管理](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+>プレビュー環境について詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)を参照してください。
 
-## プレビュー層の OSGi 設定の指定 {#configuring-osgi-settings-for-the-preview-tier}
+## プレビュー層の OSGi 設定の設定 {#configuring-osgi-settings-for-the-preview-tier}
 
 次の OSGi プロパティの例では、統合エンドポイントの URL を決定しています。
 
@@ -40,7 +40,7 @@ AEMは、Web サイトのパブリッシュ環境に到達する前に開発者�
 
 ## 開発者コンソールを使用したプレビューのデバッグ {#debugging-preview-using-the-developer-console}
 
-開発者コンソールを使用してプレビュー層をデバッグできるようにするには、次の手順に従います。
+Developer Console を使用してプレビュー層をデバッグするには、次の手順に従います。
 
 * [開発者コンソール](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)で、「**-- すべてのプレビュー --**」または名前に **prev** を含む実稼動環境を選択します。
 * プレビューインスタンスの関連情報を生成します。
