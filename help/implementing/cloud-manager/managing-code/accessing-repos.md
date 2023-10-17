@@ -1,21 +1,21 @@
 ---
 title: リポジトリへのアクセス
-description: Cloud Manager のセルフサービス Git アカウント管理を使用して、Git リポジトリにアクセスし、管理する方法について説明します。
+description: Cloud Manager でセルフサービスの Git アカウント管理を使用して、Git リポジトリにアクセスして管理する方法について説明します。
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '232'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
 # リポジトリへのアクセス {#accessing-repos}
 
-Cloud Manager のセルフサービス Git アカウント管理を使用して、Git リポジトリにアクセスし、管理する方法について説明します。
+Cloud Manager でセルフサービスの Git アカウント管理を使用して、Git リポジトリにアクセスして管理する方法について説明します。
 
-## セルフ・サービス・リポジトリ・アカウント管理の使用 {#self-service-repos}
+## セルフサービスのリポジトリアカウント管理の使用 {#self-service-repos}
 
-Cloud Manager では、 **リポジトリ情報にアクセス** ボタンがパイプラインカード上で目立つ場所に表示されます。
+Cloud Manager では、パイプラインカードの目立つ位置にある「**リポジトリ情報にアクセス**」ボタンを使用して、リポジトリ情報を簡単に取得できます。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
@@ -29,14 +29,14 @@ Cloud Manager では、 **リポジトリ情報にアクセス** ボタンがパ
    * Git ユーザー名。
    * Git パスワード。この値は、「**パスワードを生成**」ボタンをクリックすると表示されます。
 
-   ![リポジトリ情報表示](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
+   ![リポジトリ情報を表示](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
 これらの資格情報を使用して、リポジトリのローカルコピーを複製し、そのローカルリポジトリで変更を加えることができます。変更できたら、Cloud Manager のリモートコードリポジトリにコードの変更をコミットして戻すことができます。
 
-この **リポジトリ情報にアクセス** オプションは **非実稼動** の「パイプライン」タブ **パイプライン** カード。
+「**リポジトリ情報にアクセス**」オプションは、**パイプライン**&#x200B;カードの「**非実稼動**」パイプラインタブでも利用できます。
 
-![非実稼動タブの「リポジトリ情報」ボタンにアクセス](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
+![「非実稼動」タブの「リポジトリ情報にアクセス」ボタン](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
 
 >[!NOTE]
 >
->この **リポジトリ情報にアクセス** オプションは、 **開発者** または **デプロイメントマネージャー** 役割。
+>「**リポジトリ情報にアクセス**」オプションは、**開発者**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持つユーザーに表示されます。
