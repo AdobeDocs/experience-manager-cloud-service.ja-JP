@@ -12,9 +12,9 @@ hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2872'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ Dynamic Media には、web ページ上の画像アセットの微調整に使�
 
 次に、時計の画像に回転パラメーターを追加してみます。URL パスの末尾、`wid=1000` の直後に、`&rotate=90` と入力して **[!UICONTROL Enter]** キーを押します。[試してみる](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target="_blank"}。
 
-時計はまだ少し左に歪んでいます。回転の値を `90` から `92` に変更し、**[!UICONTROL Enter]** キーを押します。[試してみる](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9)。{target="_blank"}。
+時計はまだ少し左に歪んでいます。回転の値を `90` から `92` に変更し、**[!UICONTROL Enter]** キーを押します。[試してみる](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9)。{target="_blank"}
 
 先ほどと同様に、**[!UICONTROL Enter]** キーが押された瞬間に、新しいレンディションの腕時計がほぼ瞬時に生成されます。Dynamic Media が 80 万件を超える画像リクエストを、混雑する週末や主要な休日でも&#x200B;_秒_&#x200B;単位で配信できる理由は、このようなパフォーマンスにあります。
 
@@ -141,7 +141,7 @@ URL をコピーし、それをブラウザーに貼り付けて、画像の外�
 ![静的および動的画像プリセット](/help/assets/dynamic-media/assets/dm-image-presets.png)
 _静的および動的画像プリセット。時計の画像は、`PDP-page` 画像プリセットを使用してレンダリングされました。_
 
-しかし、web サイト上の画像を変更する必要がある場合はどうしますか？例えば、テストを完了し、120 x 120 ( `Cart` 画像プリセット ) を受け取っていません。 幅を 175 ピクセルに、高さを 175 ピクセルに増やして、画像を大きくする必要があります。従来は、Adobe Photoshop を開き、買い物かごの画像をすべて再作成する必要がありました。しかし、Dynamic Media では、画像プリセットを編集するだけです。次の例に示すように、幅と高さの値を 175 に更新して、プリセットを保存します。
+しかし、web サイト上の画像を変更する必要がある場合はどうしますか？例えば、テストを完了し、120 x 120 の画像（`Cart` 画像プリセット）が予想どおりに受信されていないことがわかったとします。幅を 175 ピクセルに、高さを 175 ピクセルに増やして、画像を大きくする必要があります。従来は、Adobe Photoshop を開き、買い物かごの画像をすべて再作成する必要がありました。しかし、Dynamic Media では、画像プリセットを編集するだけです。次の例に示すように、幅と高さの値を 175 に更新して、プリセットを保存します。
 
 ![画像プリセットの編集](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
 _`Cart` 画像プリセットの幅と高さの編集。_
@@ -193,13 +193,13 @@ _Flyout ビューアを適用した `Running` 画像セット_
 
 Flyout ビューアは、既定の標準提供ビューアで、プロパティを編集できます。または、画像プリセットの作成と同様に、独自のカスタムビューアを作成できます。
 
-これで、セールスおよびマーケティングチームがフライアウトビューアを好まないと考えました。 ズーム機能は気に入っているのですが、顧客には直接シューズの上でズーム効果を見てほしいと考えています。その場合は、InlineZoom ビューアを画像セットに適用し、その URL をブラウザーにコピー＆ペーストして、動作を確認します。[試してみる](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target="_blank"}。
+ここで、セールスチームおよびマーケティングチームがフライアウトビューアが気に入らないとします。ズーム機能は気に入っているのですが、顧客には直接シューズの上でズーム効果を見てほしいと考えています。その場合は、InlineZoom ビューアを画像セットに適用し、その URL をブラウザーにコピー＆ペーストして、動作を確認します。[試してみる](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target="_blank"}。
 
 マウスポインターをシューズの上に置くと、画像が拡大表示され、ポインターを動かして詳細を確認できます。これが可能な理由は、Dynamic Media に最初にアップロードされた画像のサイズです。
 
 消費者として、あるいは社会人として暮らしているときに、いろいろな web サイトで、この種のものを目にします。Dynamic Media の力を自分の仕事や会社の web サイトでどのように活用できるか、その仕組みを考えてみてください。
 
-画像セットとビューアについてお読みください。 他にもいくつかのビューアで、アセットを試してみてください。ビューアをリセットするには、左下隅の「**[!UICONTROL 更新]**」ボタンをクリックします。
+画像セットとビューアについて読みました。他にもいくつかのビューアで、アセットを試してみてください。ビューアをリセットするには、左下隅の「**[!UICONTROL 更新]**」ボタンをクリックします。
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 
@@ -208,7 +208,7 @@ Flyout ビューアは、既定の標準提供ビューアで、プロパティ�
 
 ## オプション - 詳細情報
 
-今読んだ内容の詳細を知るには、以下の資料を使用して、概念をより詳細に調べます。 以上で、Dynamic Media ジャーニーは完了です。
+読んだ内容について詳しくは、以下の資料を使って概念をさらに詳しく調べてください。以上で、Dynamic Media ジャーニーは完了です。
 
 _Dynamic Media ヘルプトピック_
 
