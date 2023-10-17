@@ -4,9 +4,9 @@ description: Adobe Experience Manager を使用したヘッドレス実装の権
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
 source-git-commit: 526520a8d9d217d0861a7283b10f7b89dffaf9d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '841'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ AEM でグループの権限を管理するには、**ツール**／**セキュ�
 
 標準で用意されているグループの権限を直接変更しないことをお勧めします。代わりに、**DAM ユーザー**&#x200B;グループ権限に倣って独自のグループを作成し、さらにアクセスの範囲を AEM Assets 内の異なる&#x200B;**フォルダー**&#x200B;に制限することもできます。
 
-より詳細な権限については、 **権限** AEMのコンソールを開き、 `/content/dam` より具体的なパス、つまり `/content/dam/mycontentfragments`.
+権限をよりきめ細かく制御するには、AEM の&#x200B;**権限**&#x200B;コンソールを使用して、パスを `/content/dam` からより具体的なパス（例：`/content/dam/mycontentfragments`）に更新します。
 
 このユーザーグループには、コンテンツフラグメントを作成および編集する権限を付与し、削除する権限は付与しない方が望ましい場合があります。削除の権限を除いて編集の権限を確認し割り当てる場合は、[コンテンツフラグメント - 削除に関する考慮事項](/help/sites-cloud/administering/content-fragments/delete-considerations.md)を参照してください。
 
