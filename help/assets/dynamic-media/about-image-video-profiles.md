@@ -6,9 +6,9 @@ feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1377'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -75,13 +75,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. ページの左上隅付近にあるドロップダウンリストで「**[!UICONTROL タイムライン]**」を選択します。
 1. ページ左下隅付近の「[!UICONTROL コメント]」フィールドの右側にあるカラットアイコン（**^**）を選択します。
 
-   ![Experience Manager内のアセットのスクリーンショットが、選択したアセットのフォルダーを示し、タイムラインドロップダウンリストがハイライト表示され、「ワークフローを開始」ボタンがハイライト表示され、「コメント」フィールドの右側にあるカラットアイコンもハイライト表示されます](/help/assets/dynamic-media/assets/reprocess-assets1.png).
+   ![選択したアセットのフォルダーを示す、Experience Manager 内のアセットのスクリーンショット（タイムラインドロップダウンリスト、ハイライト表示された「ワークフローを開始」ボタン、「コメント」フィールドの右側にある、ハイライト表示されたカラットアイコン）](/help/assets/dynamic-media/assets/reprocess-assets1.png)。
 
 1. 「**[!UICONTROL ワークフローを開始]**」を選択します。
 1. 「**[!UICONTROL ワークフローを開始]**」ドロップダウンリストから「**[!UICONTROL Scene7：アセットを再処理]**」を選択します。
 1. （オプション）「**ワークフローのタイトルを入力**」テキストフィールドに、ワークフローの名前を入力します。必要に応じて、ワークフローインスタンスを参照する名前を使用できます。
 
-   ![「Scene7」を使用したタイムラインユーザーインターフェイスのスクリーンショット：「ワークフローを開始」ドロップダウンリストから選択した「アセットを再処理」、「開始」ボタンがハイライト表示されている](/help/assets/dynamic-media/assets/reprocess-assets2.png).
+   ![「ワークフローを開始」ドロップダウンリストから選択した「Scene7：アセットを再処理」付きの「開始」ボタンがハイライト表示されたタイムラインユーザーインターフェイスのスクリーンショット](/help/assets/dynamic-media/assets/reprocess-assets2.png)。
 
 1. 「**[!UICONTROL 開始]**」を選択したあと、「**[!UICONTROL 確認]**」を選択します。
 
@@ -96,13 +96,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. [!DNL Experience Manager] で、「**[!UICONTROL Adobe Experience Manager]**」を選択してグローバルナビゲーションコンソールにアクセスし、**[!UICONTROL ツール]**（ハンマーアイコン）／**[!UICONTROL ワークフロー／モデル]**&#x200B;を選択します。
 1. ワークフローモデルページのカード表示またはリスト表示で、「**[!UICONTROL Scene7：アセットを再処理]**」を選択します。
 
-   ![ワークフローモデルページの「Scene7」のスクリーンショットExperience Managerのカード表示で選択された「アセットを再処理」ワークフロー](/help/assets/dynamic-media/assets/reprocess-assets7.png).
+   ![Experience Manager のカードビューで選択された「Scene7：アセットを再処理」ワークフロー付きのワークフローモデルページのスクリーンショット](/help/assets/dynamic-media/assets/reprocess-assets7.png)。
 
 1. ツールバーの「**[!UICONTROL 編集]**」を選択します。新しいブラウザータブに、「Scene7：アセットを再処理」ワークフローモデルページが開きます。
 1. 「Scene7：アセットを再処理」ワークフローページで、右上隅付近の「**[!UICONTROL 編集]**」を選択して、ワークフローを「ロック解除」します。
 1. ワークフローで、Scene7 バッチアップロードコンポーネントを選択してツールバーを開き、ツールバーの「**[!UICONTROL 設定]**」を選択します。
 
-   ![「Scene7 Batch Upload」コンポーネントの「Scene7」のスクリーンショット：アセットを再処理」ページを開き、「設定」アイコンの上にマウスポインターを置きます。](/help/assets/dynamic-media/assets/reprocess-assets8.png).
+   ![「Scene7：アセットを再処理」ページで「設定」アイコンの上にマウスポインターを置くと表示される「Scene7 バッチアップロード」コンポーネントのスクリーンショット](/help/assets/dynamic-media/assets/reprocess-assets8.png)。
 
 1. **[!UICONTROL Scene7 へのバッチアップロード - ステップのプロパティ]**&#x200B;ダイアログボックスで、以下の設定を行います。
    * 「**[!UICONTROL タイトル]**」および「**[!UICONTROL 説明]**」テキストフィールドに、必要に応じて、ジョブの新しいタイトルと説明を入力します。
@@ -112,13 +112,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * 「**[!UICONTROL バッチ]**」フィールドに、Dynamic Media サーバーのアップロードジョブのバッチ処理で処理するアセットの最大数（50～1,000）を入力します。
    * タイムアウトに達したときに先に進む場合は、「**[!UICONTROL タイムアウトで先に進む]**」を選択します。タイムアウトに達したときにインボックスまで進む場合は、選択を解除します。
 
-   ![「Scene7へのバッチアップロード — ステップのプロパティ」ページのスクリーンショット](/help/assets/dynamic-media/assets/reprocess-assets3.png).
+   ![「Scene7 へのバッチアップロード - ステップのプロパティ」ページのスクリーンショット](/help/assets/dynamic-media/assets/reprocess-assets3.png)。
 
 1. **[!UICONTROL Scene7 へのバッチアップロード - ステップのプロパティ]** ダイアログボックスの右上隅にある「**[!UICONTROL 完了]**」を選択します。
 
 1. 「Scene7：アセットを再処理」ワークフローモデルページの右上隅にある「**[!UICONTROL 同期]**」を選択します。「**[!UICONTROL 同期済み]**」と表示された場合、ワークフローランタイムモデルは正常に同期されており、フォルダー内のアセットを再処理する準備が整います。
 
-   ![Experience Manager内のアセットのスクリーンショットが、選択したアセットのフォルダーを示し、タイムラインドロップダウンリストがハイライト表示され、「ワークフローを開始」ボタンがハイライト表示され、「コメント」フィールドの右側にあるカラットアイコンもハイライト表示されます](/help/assets/dynamic-media/assets/reprocess-assets1.png).
+   ![選択したアセットのフォルダーを示す Experience Manager のアセットのスクリーンショット（タイムラインドロップダウンリスト、「ワークフローを開始」ボタン、「コメント」フィールドの右側にあるカラットアイコンがハイライト表示されています）](/help/assets/dynamic-media/assets/reprocess-assets1.png)。
 
 1. 「Scene7：アセットを再処理」ワークフローモデルを表示しているブラウザータブを閉じます。
 
