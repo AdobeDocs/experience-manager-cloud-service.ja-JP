@@ -3,9 +3,9 @@ title: デモサイトを作成
 description: 事前設定済みのテンプレートのライブラリに基づいて、AEM にデモサイトを作成します。
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '841'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ AEM Reference Demo Add-On ジャーニーの前のドキュメントである[�
 
    ![サイト作成ウィザード](assets/site-creation-wizard.png)
 
-1. 次の画面で、サイトのタイトルまたは Screens プロジェクトのタイトルを指定します。省略した場合、サイト名はタイトルから指定または生成できます。 「**作成**」をタップまたはクリックします。
+1. 次の画面で、サイトのタイトルまたは Screens プロジェクトのタイトルを指定します。サイト名を指定できます。省略した場合はタイトルからサイト名が生成されます。「**作成**」をタップまたはクリックします。
 
    * サイトのタイトルは、ブラウザーのタイトルバーに表示されます。
    * サイト名が URL の一部になります。
@@ -110,5 +110,5 @@ AEM Reference Demo Add-On ジャーニーの前のドキュメントである[�
 
 * [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=ja) - Cloud Manager の機能について詳しくは、詳細な技術ドキュメントを直接参照してください。
 * [サイトを作成](/help/sites-cloud/administering/site-creation/create-site.md) - AEM を使用して、サイトテンプレートを使用してサイトを作成し、サイトのスタイルと構造を定義する方法を説明します。
-* [AEMページ命名規則](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). - AEMページを整理する際の規則については、このページを参照してください。
+* [AEM のページ命名規則](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)。AEM ページを整理する際の規則を理解するには、このページを参照してください。
 * [AEM の基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md) - AEM を初めて使用する場合は、ナビゲーションやコンソールの構成などの基本的な概念を理解するために、このドキュメントを参照してください。
