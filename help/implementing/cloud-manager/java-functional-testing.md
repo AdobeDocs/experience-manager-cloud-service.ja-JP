@@ -1,17 +1,17 @@
 ---
-title: Java&trade;機能テスト
-description: Java&trade の書き方を学ぶ；AEMas a Cloud Serviceの機能テスト
+title: Java™ 機能テスト
+description: AEM as a Cloud Service 用の Java™ 機能テストの作成方法を説明します
 exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
 source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '844'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
-# Java™機能テスト
+# Java™ 機能テスト
 
-AEM as a Cloud Serviceの Java™機能テストを作成する方法を説明します
+AEM as a Cloud Service 用の Java™ 機能テストの作成方法を説明します
 
 ## 機能テストの概要 {#getting-started-functional-tests}
 
@@ -31,13 +31,13 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 
 アドビが製品機能テストの作成に使用するのと同じツールを、カスタム機能テストの作成に使用できます。テストの作成方法の例として、GitHub の[製品機能テスト](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)を参照してください。
 
-カスタム機能テストのコードは、 `it.tests` プロジェクトのフォルダー。 すべての機能テストを含んだ 1 つの JAR が生成されます。ビルドで複数のテスト JAR が生成される場合、どの JAR が選択されるかは非決定的です。テスト JAR がゼロになる場合、テスト手順はデフォルトで合格します。テストのサンプルについては、[AEM プロジェクトのアーキタイプ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)を参照してください。
+カスタム機能テストのコードは、プロジェクトの `it.tests` フォルダーにある Java™ コードです。すべての機能テストを含んだ 1 つの JAR が生成されます。ビルドで複数のテスト JAR が生成される場合、どの JAR が選択されるかは非決定的です。テスト JAR がゼロになる場合、テスト手順はデフォルトで合格します。テストのサンプルについては、[AEM プロジェクトのアーキタイプ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)を参照してください。
 
-テストは、少なくとも 2 つのオーサーインスタンス、2 つのパブリッシュインスタンス、Dispatcher 設定など、Adobeが維持するテストインフラストラクチャで実行されます。 このセットアップは、カスタム機能テストがAEMスタック全体に対して実行されることを意味します。
+テストは、少なくとも 2 つのオーサーインスタンス、2 つのパブリッシュインスタンス、Dispatcher 設定など、アドビが維持管理するテストインフラストラクチャで実行されます。つまり、この設定では、カスタム機能テストは AEM スタック全体に対して実行されます。
 
 ### 機能テストの構造 {#functional-tests-structure}
 
-カスタム機能テストは、AEM にデプロイするアーティファクトと同じ Maven ビルドで生成される個別の JAR ファイルとしてパッケージ化する必要があります。一般に、このビルドは別の Maven モジュールになります。 結果として生成される JAR ファイルには、必要な依存関係がすべて含まれている必要があり、通常は `jar-with-dependencies` 記述子を使用する `maven-assembly-plugin` で作成されます。
+カスタム機能テストは、AEM にデプロイするアーティファクトと同じ Maven ビルドで生成される個別の JAR ファイルとしてパッケージ化する必要があります。一般に、このビルドは別個の Maven モジュールになります。結果として生成される JAR ファイルには、必要な依存関係がすべて含まれている必要があり、通常は `jar-with-dependencies` 記述子を使用する `maven-assembly-plugin` で作成されます。
 
 さらに、この JAR では、`Cloud-Manager-TestType` マニフェストヘッダーが `integration-test` に設定されている必要があります。
 
@@ -81,9 +81,9 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 
 さらに、コードスキャンのカバレッジチェックからテストコードを除外するには、テストコードを `it` という名前のパッケージの下に置く必要があります（カバレッジ除外フィルターは `**/it/**/*.java` です）。
 
-テストクラスは、通常の JUnit テストである必要があります。 テストインフラストラクチャは、`aem-testing-clients` テストライブラリで使用される規則との互換性を持つように設計および設定されています。開発者は、このライブラリを使用し、そのライブラリのベストプラクティスに従うことをお勧めします。
+テストクラスは、通常の JUnit テストである必要があります。テストインフラストラクチャは、`aem-testing-clients` テストライブラリで使用される規則との互換性を持つように設計および設定されています。開発者は、このライブラリを使用し、そのライブラリのベストプラクティスに従うことをお勧めします。
 
-詳しくは、 [`aem-testing-clients` GitHub リポジトリ](https://github.com/adobe/aem-testing-clients) を参照してください。
+詳しくは、[`aem-testing-clients`GitHub リポジトリ](https://github.com/adobe/aem-testing-clients)を参照してください。
 
 >[!TIP]
 >
@@ -91,7 +91,7 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 
 ### 前提条件 {#prerequisites}
 
-1. Cloud Manager のテストは、技術管理者ユーザーを使用して実行されます。
+1. Cloud Manager でのテストは、技術管理者ユーザーを使用して実行されます。
 
 >[!NOTE]
 >
@@ -102,14 +102,14 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 
 | タイプ | 値 | 説明 |
 |----------------------|-------|--------------------------------------------------------------------|
-| CPU | 0.5 | テスト実行ごとに予約される CPU 時間の量 |
-| メモリ | 0.5 Gi | テストに割り当てられたメモリの量（GB 単位の値） |
+| CPU | 0.5 | テスト実行ごとに確保される CPU 時間の量です。 |
+| メモリ | 0.5 Gi | テストに割り当てられたメモリの量（値は GiB 単位） |
 | タイムアウト | 30 m | テストが終了するまでの期間。 |
-| 推奨期間 | 15 m | Adobeは、この時間を超えないようにテストを書き込むことをお勧めします。 |
+| 推奨期間 | 15 m | アドビは、この時間を超えないようにテストを書き込むことをお勧めします。 |
 
 >[!NOTE]
 >
-> さらにリソースが必要な場合は、カスタマーケアケースを作成し、使用例を説明します。 Adobeのチームがリクエストを確認し、適切な支援を提供します。
+> さらにリソースが必要な場合は、カスタマーケアケースを作成し、ユースケースを説明してください。アドビのチームがお客様のリクエストを確認し、適切なサポートを提供します。
 
 
 ### ローカルテストの実行 {#local-test-execution}
@@ -118,23 +118,23 @@ Cloud Manager パイプラインで機能テストをアクティブ化する前
 
 #### IDE での実行 {#running-in-an-ide}
 
-テストクラスは JUnit テストなので、Eclipse、IntelliJ、NetBeans などの主要な Java™ IDE から実行できます。 製品機能テストとカスタム機能テストはどちらも同じテクノロジーに基づいているので、製品テストをカスタムテストにコピーすることで、両者をローカルで実行できます。
+テストクラスは JUnit テストなので、Eclipse、IntelliJ、NetBeans などの主要な Java™ IDE から実行できます。製品機能テストとカスタム機能テストはどちらも同じテクノロジーに基づいているので、製品テストをカスタムテストにコピーすることで、両者をローカルで実行できます。
 
-ただし、これらのテストを実行する場合は、 `aem-testing-clients` （および基になる Sling Testing Clients）ライブラリ。
+ただし、これらのテストを実行する際は、`aem-testing-clients`（および基礎となる Sling Testing Client）ライブラリで想定される様々なシステムプロパティを設定する必要があります。
 
 これらのシステムプロパティは次のとおりです。
 
 | プロパティ | 説明 | 例 |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
-| `sling.it.instances` | クラウドサービスに一致するインスタンスの数は、 `2` | `2` |
-| `sling.it.instance.url.1` | は作成者 URL に設定する必要があります | `http://localhost:4502` |
-| `sling.it.instance.runmode.1` | 最初のインスタンスの実行モードは、に設定する必要があります。 `author` | `author` |
-| `sling.it.instance.adminUser.1` | は author admin user に設定する必要があります。 | `admin` |
-| `sling.it.instance.adminPassword.1` | は author 管理者パスワードに設定する必要があります。 |                         |
-| `sling.it.instance.url.2` | はパブリッシュ URL に設定する必要があります。 | `http://localhost:4503` |
-| `sling.it.instance.runmode.2` | 2 番目のインスタンスの実行モードは、に設定する必要があります。 `publish` | `publish` |
-| `sling.it.instance.adminUser.2` | を publish admin user に設定する必要があります。 | `admin` |
-| `sling.it.instance.adminPassword.2` | は publish 管理者パスワードに設定する必要があります。 |                         |
+| `sling.it.instances` | インスタンスの数は、クラウドサービスに合わせて `2` に設定する必要があります | `2` |
+| `sling.it.instance.url.1` | オーサー URL に設定する必要があります。 | `http://localhost:4502` |
+| `sling.it.instance.runmode.1` | 最初のインスタンスの実行モードは、`author` に設定する必要があります | `author` |
+| `sling.it.instance.adminUser.1` | 作成者の管理者ユーザーに設定する必要があります。 | `admin` |
+| `sling.it.instance.adminPassword.1` | 作成者の管理者パスワードに設定する必要があります。 |                         |
+| `sling.it.instance.url.2` | パブリッシュ URL に設定する必要があります。 | `http://localhost:4503` |
+| `sling.it.instance.runmode.2` | 2 番目のインスタンスの実行モードは、`publish` に設定する必要があります | `publish` |
+| `sling.it.instance.adminUser.2` | パブリッシュの管理者ユーザーに設定する必要があります。 | `admin` |
+| `sling.it.instance.adminPassword.2` | パブリッシュの管理者パスワードに設定する必要があります。 |                         |
 
 
 
@@ -142,7 +142,7 @@ Cloud Manager パイプラインで機能テストをアクティブ化する前
 
 1. シェルを開き、リポジトリの `it.tests` フォルダーに移動します。
 
-1. Maven を使用してテストを開始するために必要なパラメーターを指定して、次のコマンドを実行します。
+1. Maven を使用してテストを開始する上で必要なパラメーターを指定して、次のコマンドを実行します。
 
 ```shell
 mvn verify -Plocal \
