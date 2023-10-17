@@ -1,36 +1,36 @@
 ---
-title: AEMでアセットにスマートタグを追加する方法は？
-description: コンテキストに沿った説明的なビジネスタグを適用する人工知能サービスを使用して、AEM内のアセットにスマートタグを追加します。
+title: AEM でアセットにスマートタグを追加する方法？
+description: コンテキストに沿った説明的なビジネスタグを適用する人工知能サービスを使用して、AEM 内のアセットにスマートタグを追加します。
 contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2464'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
-# AEMでのアセットへのスマートタグの追加 {#smart-tags-assets-aem}
+# AEM でアセットへスマートタグを追加 {#smart-tags-assets-aem}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/enhanced-smart-tags.html?lang=en) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/enhanced-smart-tags.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 デジタルアセットを扱う組織では、アセットメタデータで分類に基づく統制語彙を使用することがますます多くなっています。これには、基本的に、従業員、パートナーおよび顧客がデジタルアセットを参照したり、検索したりする場合によく使用するキーワードのリストが含まれます。分類に基づく統制語彙を使用してアセットをタグ付けすると、検索でアセットを特定し、取得することが容易になります。
 
 自然言語語彙と比較して、ビジネス上の分類に基づいたタグ付けでは、デジタルアセットを会社のビジネスと容易に連携させることができ、関連性の最も高いアセットが検索で表示されるようになります。例えば、自動車メーカーでは、プロモーションキャンペーンを計画するために様々なモデルの画像を検索する際、関連性の高い画像のみが表示されるように、モデル名を使用して車の画像をタグ付けすることができます。
 
-そのバックグラウンドで、機能は [Adobe Sensei](https://business.adobe.com/jp/why-adobe/experience-cloud-artificial-intelligence.html) の人工知能フレームワークを使用して、タグ構造とビジネス上の分類に基づいて画像認識アルゴリズムのトレーニングを行います。その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。AEMは、デフォルトで、アップロードされたアセットにスマートタグを自動的に適用します。
+そのバックグラウンドで、機能は [Adobe Sensei](https://business.adobe.com/jp/why-adobe/experience-cloud-artificial-intelligence.html) の人工知能フレームワークを使用して、タグ構造とビジネス上の分類に基づいて画像認識アルゴリズムのトレーニングを行います。その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。デフォルトでは、AEM は、アップロードされたアセットにスマートタグを自動的に適用します。
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-## AEMでスマートタグでサポートされるアセットタイプ {#smart-tags-supported-file-formats}
+## AEM でスマートタグでサポートされるアセットタイプ {#smart-tags-supported-file-formats}
 
 次のタイプのアセットにタグを付けることができます。
 
@@ -59,7 +59,7 @@ ht-degree: 93%
 | image/psd |  |  |
 | image/vnd.adobe.photoshop |  |  |
 
-AEMは、デフォルトで、スマートタグをテキストベースのアセットとビデオに自動的に追加します。 画像にスマートタグを自動追加するには、次のタスクを実行します。
+AEM ではデフォルトで、スマートタグがテキストベースのアセットとビデオに自動的に追加されます。画像にスマートタグを自動追加するには、次のタスクを実行します。
 
 * [タグモデルとガイドラインの理解](#understand-tag-models-guidelines)。
 * [モデルのトレーニング](#train-model)。
@@ -82,7 +82,7 @@ AEMは、デフォルトで、スマートタグをテキストベースのア�
 
 ![トレーニングガイドラインの例を示すイラスト](assets/do-not-localize/coherence.png)
 
-**対象範囲**：トレーニングの画像には十分な多様性が必要です。[!DNL Experience Manager] が適切に焦点を当てることを学習できるよう、数は少なくても多様性の高い例を提供します。見た目が大きく異なる画像に同じタグを適用する場合は、各種の例を 5 つ以上含めます。 例えば、*model-down-pose* というタグの場合、タグ付け時、類似する画像をより正確に識別できるよう、以下のハイライト表示された画像に似たトレーニング画像を増やします。
+**対象範囲**：トレーニングの画像には十分な多様性が必要です。[!DNL Experience Manager] が適切に焦点を当てることを学習できるよう、数は少なくても多様性の高い例を提供します。見た目が似ていない画像に同じタグを適用する場合は、各種類の例を 5 個以上含めてください。例えば、*model-down-pose* というタグの場合、タグ付け時、類似する画像をより正確に識別できるよう、以下のハイライト表示された画像に似たトレーニング画像を増やします。
 
 ![トレーニングガイドラインの例を示すイラスト](assets/do-not-localize/coverage_1.png)
 
@@ -131,7 +131,7 @@ AEMは、デフォルトで、スマートタグをテキストベースのア�
    >タグの構造は、**[!UICONTROL 名前]**（アルファベット順）、**[!UICONTROL 作成]**&#x200B;日、**[!UICONTROL 変更]**&#x200B;日を基準に、昇順または降順に並べ替えることができます。
 
 
-1. **[!UICONTROL アセットを選択]**&#x200B;ダイアログで、各タグに対して「**[!UICONTROL アセットを追加]**」をクリックします。DAM リポジトリー内を検索するか、リポジトリーを参照して、画像を 10 個以上、最大で 50 個選択します。フォルダーではなくアセットを選択します。画像を選択した後、 **[!UICONTROL 選択]**.
+1. **[!UICONTROL アセットを選択]**&#x200B;ダイアログで、各タグに対して「**[!UICONTROL アセットを追加]**」をクリックします。DAM リポジトリー内を検索するか、リポジトリーを参照して、画像を 10 個以上、最大で 50 個選択します。フォルダーではなくアセットを選択します。画像を選択したら、「**[!UICONTROL 選択]**」をクリックします。
 
    ![トレーニング状況を表示](assets/smart-tags-training-status.png)
 
@@ -191,7 +191,7 @@ AEMは、デフォルトで、スマートタグをテキストベースのア�
 
 ## スマートタグを使用したアセットのタグ付け（AEM） {#tag-assets}
 
-サポートされているすべてのタイプのアセットは、アップロード時に [!DNL Experience Manager Assets] によって自動的にタグ付けされます。タグ付けはデフォルトで有効になっており、機能します。AEMは、ほぼリアルタイムで適切なスマートタグを適用します。 <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+サポートされているすべてのタイプのアセットは、アップロード時に [!DNL Experience Manager Assets] によって自動的にタグ付けされます。タグ付けはデフォルトで有効になっており、機能します。AEM は、ほぼリアルタイムで適切なスマートタグを適用します。<!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
 * 画像およびビデオの場合、スマートタグは視覚的な観点に基づいて生成されます。
 
@@ -229,7 +229,7 @@ AEMは、デフォルトで、スマートタグをテキストベースのア�
 
 * 上記のどちらかのキーワードがメタデータ内にあるアセット
 
-メタデータフィールド内のすべての検索語句に一致する検索結果が最初に表示され、その後にスマートタグ内のいずれかの検索語句に一致する検索結果が表示されます。 上記の例では、検索結果の表示順序は次のようになります。
+メタデータフィールド内のすべての検索語句に一致する検索結果がまず表示され、次にスマートタグ内のいずれかの検索語句に一致する検索結果が表示されます。上記の例では、検索結果の表示順序は次のようになります。
 
 1. 各種メタデータフィールド内の「`woman running`」に一致するもの。
 1. スマートタグ内の「`woman running`」に一致するもの。
@@ -263,15 +263,15 @@ AEMは、デフォルトで、スマートタグをテキストベースのア�
 * [アセットを翻訳](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットの検索](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
+* [アセットを検索](search-assets.md)
+* [接続されたアセット](use-assets-across-connected-assets-instances.md)
 * [アセットレポート](asset-reports.md)
 * [メタデータスキーマ](metadata-schemas.md)
-* [アセットのダウンロード](download-assets-from-aem.md)
-* [メタデータの管理](manage-metadata.md)
+* [アセットをダウンロード](download-assets-from-aem.md)
+* [メタデータを管理](manage-metadata.md)
 * [検索ファセット](search-facets.md)
-* [コレクションの管理](manage-collections.md)
-* [一括メタデータ読み込み](metadata-import-export.md)
+* [コレクションを管理](manage-collections.md)
+* [メタデータの一括読み込み](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
