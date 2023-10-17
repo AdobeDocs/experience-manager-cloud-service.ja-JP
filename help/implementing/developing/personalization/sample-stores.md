@@ -1,21 +1,21 @@
 ---
 title: ContextHub ストア候補のサンプル
-description: ContextHub には、ソリューションで使用できるサンプルストア候補がいくつか用意されています
+description: ContextHub には、ソリューションで利用できるサンプルストア候補がいくつか用意されています
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
 source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '464'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # ContextHub ストア候補のサンプル {#sample-contexthub-store-candidates}
 
-ContextHub には、ソリューションで使用できるサンプルストア候補がいくつか用意されています。 各サンプルについて、次の情報が提供されます。
+ContextHub には、ソリューションで利用できるサンプルストア候補がいくつか用意されています。各サンプルでは次の情報が提供されます。
 
 * 学習目的で開くことのできるソースコードの場所。
 * ストア候補から作成するストアの設定方法。
-* ストアデータの構造は、アクセスできるようにする方法です。
+* アクセスするためのストアデータの構造。
 
 >[!WARNING]
 >
@@ -23,7 +23,7 @@ ContextHub には、ソリューションで使用できるサンプルストア
 
 ## aem.segmentation サンプルストア候補 {#aem-segmentation-sample-store-candidate}
 
-解決された ContextHub セグメントと未解決の ContextHub セグメントを保存します。 ContextHub SegmentManager からセグメントを自動的に取得します.
+解決済みおよび未解決の ContextHub セグメント用のストア。ContextHub SegmentManager からセグメントを自動的に取得します.
 
 ### ソースの場所 {#source-location-segmentation}
 
@@ -103,7 +103,7 @@ aem.segmentation ストア候補は、[`ContextHub.Store.PersistedJSONPStore`](c
 
 >[!NOTE]
 >
->Chrome 50.x で導入されたセキュリティポリシーでは、すべてのジオロケーション関連呼び出しは、安全な接続を使用して行う必要があります。そのため、AEM では、AEM が https 経由で実行されていても、ジオロケーション API 呼び出しに https の使用を強制します。それ以外の場合は、同じオリジンポリシーに準拠するために http が使用されます。
+>Chrome 50.x で導入されたセキュリティポリシーでは、すべてのジオロケーション関連呼び出しは、安全な接続を使用して行う必要があります。そのため、AEM では、AEM が https 経由で実行されていても、ジオロケーション API 呼び出しに https の使用を強制します。その他の場合は、同一オリジンポリシーに準拠するために、http が使用されます。
 >
 >Chrome での変更について詳しくは、[Google のこのブログ投稿](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only)を参照してください。
 
@@ -235,7 +235,7 @@ aem.segmentation ストア候補は、[`ContextHub.Store.PersistedJSONPStore`](c
 
 ### データ項目 {#data-items-emulators}
 
-ストアのデータツリーは、次の例のようになります。
+このストアのデータツリーは、次の例のようになります。
 
 ```javascript
 {
@@ -321,7 +321,7 @@ aem.segmentation ストア候補は、[`ContextHub.Store.PersistedJSONPStore`](c
 
 ### 設定 {#configuration-profile}
 
-次のデフォルト設定が使用されます。 この設定は変更しないでください。
+次のデフォルトの設定を使用します。この設定は変更しないでください。
 
 ```javascript
 {
