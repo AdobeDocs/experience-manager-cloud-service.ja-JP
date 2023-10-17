@@ -4,9 +4,9 @@ description: ' [!DNL Assets view] へのアセットのアップロード、ア�
 role: User
 exl-id: a85a4455-4456-48af-aee9-f05300677605
 source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '835'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 91%
 
 >[!TIP]
 >
->フォルダー構造を Assets ビューにアップロードする場合、フォルダー構造を含む.ZIP ファイルを作成する必要はありませんが、フォルダー構造を直接アップロードできます。 Assets ビューにアップロードされた.ZIP ファイルは 1 つの ZIP アセットとして保存され、アップロード後に自動的には抽出されません。
+>フォルダー構造をアセットビューにアップロードする場合、フォルダー構造を含んだ .ZIP ファイルを作成する必要はなく、フォルダー構造を直接アップロードできます。アセットビューにアップロードされた .ZIP ファイルは 1 つの ZIP アセットとして保存され、アップロード後に自動的には抽出されません。
 
 ## アップロードの進行状況とステータスの表示 {#upload-progress}
 
@@ -101,9 +101,9 @@ See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/asset
 
 ## 次の手順 {#next-steps}
 
-* [アセットビューでのアセットのアップロードに関するビデオの視聴](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=ja)
+* [ビデオを視聴してアセットビューへのアセットのアップロードを学ぶ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=ja)
 
-* 次を使用して製品に関するフィードバックを提供： [!UICONTROL フィードバック] Assets ビューユーザーインターフェイスで使用できるオプション
+* アセットビューユーザーインターフェイスの[!UICONTROL フィードバック]オプションを使用して製品フィードバックを提供する
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
