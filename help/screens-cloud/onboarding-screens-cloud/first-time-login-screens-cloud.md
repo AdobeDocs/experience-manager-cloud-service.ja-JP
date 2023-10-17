@@ -3,9 +3,9 @@ title: Screens as a Cloud Service への初回ログイン
 description: ここでは、Screens as a Cloud Service を使用するための最初の手順について説明します。
 exl-id: d3a6aa5d-226b-484d-97ea-0b8312c7a0fd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '203'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 92%
 
 ## Adobe Admin Console へのユーザーの追加 {#admin-console}
 
-Adobe Identity Management System（IMS）組織 ID のプロビジョニングが完了すると、[Adobe Admin Console](https://adminconsole.adobe.com/) にアクセスできるようになります。詳しくは、 [Adobe Admin Consoleユーザー](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/users.ug.html) を参照して、ユーザーをAdmin Consoleに追加します。
+Adobe Identity Management System（IMS）組織 ID のプロビジョニングが完了すると、[Adobe Admin Console](https://adminconsole.adobe.com/) にアクセスできるようになります。Admin Console へのユーザーの追加について詳しくは、[Adobe Admin Console ユーザー](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/users.ug.html)を参照してください。
 
 >[!NOTE]
 >ユーザーは AEM Cloud Service 製品プロファイルにアクセスできるので、Adobe ID または Federated ID を使用して AEM にログインできます。
