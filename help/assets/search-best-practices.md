@@ -2,9 +2,9 @@
 title: 検索のベストプラクティス： [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: アプリケーション内でアセットのメタデータを検索、検索および取得するためのベストプラクティス。
 contentOwner: KK
-source-git-commit: 31526510cc32c9587e76da522d9377afd837d991
+source-git-commit: 2c9316431d588241b470c8146c9444dbfc0af5fd
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2544'
 ht-degree: 11%
 
 ---
@@ -299,13 +299,11 @@ The newly added assets are not indexed.
 
 <table>
     <tr>
-        <th> S.No.</th>
         <th> パラメーター </th>
         <th> 管理ビュー </th>
         <th> アセットビュー </th>
     </tr>
     <tr>
-        <td> 1. </td>
         <td> カスタムファセット </td>
         <td> 次の項目を追加できます。 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=ja">必要に応じて、カスタム検索ファセットを設定します。</td>
         <td> カスタムファセットは Assets ビューで部分的にサポートされています。 サポートされるファセットは次のとおりです。
@@ -319,37 +317,31 @@ The newly added assets are not indexed.
         </td>
     </tr>
     <tr>
-        <td> 2. </td>
         <td> 演算子 </td>
         <td> AND、OR、NOT をサポート </td>
         <td> サポート対象外 </td>
     </tr>
     <tr>
-        <td> 3. </td>
         <td> ワイルドカード </td>
         <td> 疑問符 (?) をサポート アスタリスク (*)</td>
         <td> サポート対象外 </td>
     </tr>
     <tr>
-        <td> 4. </td>
         <td> 検索結果の向上 </td>
         <td> サポート対象 </td>
         <td> サポート対象外 </td>
     </tr>
      <tr>
-        <td> 5. </td>
         <td> すべてのフィルターを一度にクリア </td>
         <td> サポート対象外 </td>
         <td> サポート対象</td>
     </tr>
      <tr>
-        <td> 6. </td>
         <td> ファイル/フォルダー/ファイルとフォルダー </td>
         <td> サポート対象 </td>
         <td> フォルダを選択するオプションは、「ファイルの種類」の下に表示されます。 </td>
     </tr>
      <tr>
-        <td> 7. </td>
         <td> アセットのステータス </td>
         <td> 
             次のオプションがサポートされています。
@@ -374,7 +366,6 @@ The newly added assets are not indexed.
         </td>
     </tr>
      <tr>
-        <td> 8. </td>
         <td> ファイルタイプ </td>
         <td>
         次のオプションがサポートされています。
@@ -398,7 +389,6 @@ The newly added assets are not indexed.
         </td>
     </tr>
      <tr>
-        <td> 9. </td>
         <td> ファイルサイズ </td>
         <td>
         次のオプションがサポートされています。
@@ -410,7 +400,6 @@ The newly added assets are not indexed.
         <td> サポート対象外 </td>
     </tr>
      <tr>
-        <td> 10. </td>
         <td> その他のフィルター </td>
         <td>
             <ul>
@@ -427,7 +416,6 @@ The newly added assets are not indexed.
         <td> サポート対象外 </td>
     </tr>
      <tr>
-        <td> 11. </td>
         <td> 類似を検索 </td>
         <td> サポート対象 </td>
         <td> サポート対象外 </td>
