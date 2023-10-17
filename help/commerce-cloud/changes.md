@@ -3,15 +3,15 @@ title: コマース統合フレームワーク（CIF）アドオンの主な変�
 description: 古い CIF バージョンと比較した、コマース統合フレームワーク（CIF）の主な変更点です。
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # コマース統合フレームワーク（CIF）アドオンの主な変更点{#notable-changes}
 
-Adobe Experience Manager as a Cloud Service は、AEM プロジェクトを管理するための様々な新機能と可能性を提供します。これらの機能の詳細については、 [Experience Manageras a Cloud Service](/help/release-notes/aem-cloud-changes.md).
+Adobe Experience Manager as a Cloud Service は、AEM プロジェクトを管理するための様々な新機能と可能性を提供します。これらの機能の詳細については、[Experience Manager as a Cloud Service の変更点](/help/release-notes/aem-cloud-changes.md)を参照してください。
 
 このドキュメントでは、主に CIF Classic（Quickstart）と CIF オープンソースと呼ばれる、コマース統合フレームワーク（CIF）アドオンと古い CIF バージョンの重要な相違点について説明します。
 
@@ -63,4 +63,4 @@ AEM は、製品やカテゴリに割り当てられた AEM カタログテン�
 
 >[!NOTE]
 >
->AEM Managed Service またはAEM On-premise での CIF の使用方法に関する追加ドキュメントについては、 [コマース統合フレームワーク](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>AEM Managed Service またはオンプレミスの AEM での CIF の使用方法に関する追加ドキュメントについては、[コマース統合フレームワーク](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)を参照してください。
