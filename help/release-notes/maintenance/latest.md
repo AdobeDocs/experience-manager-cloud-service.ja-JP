@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 3fbdb150a9a1c133b4910603682e37f1c5d885d2
+source-git-commit: e771913562b3770e5a504432d40c770804aadc4b
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 32%
+source-wordcount: '435'
+ht-degree: 30%
 
 ---
 
@@ -44,7 +44,8 @@ ht-degree: 32%
 
 ### 既知の問題 {#known-issues-13804}
 
-なし。
+* CQ-4354836：プロジェクトコンソールからワークフローを開始またはタスクを作成できません。
+* CQ-4354834 ：ユーザーがインボックスタスクにコメントを追加できません。
 
 ### 組み込みテクノロジー {#embedded-tech-13804}
 
