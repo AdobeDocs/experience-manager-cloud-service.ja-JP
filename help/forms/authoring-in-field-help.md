@@ -4,10 +4,10 @@ description: AEM Formsを使用すると、アダプティブフォームのフ�
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 71%
+source-wordcount: '384'
+ht-degree: 68%
 
 ---
 
@@ -65,3 +65,7 @@ ht-degree: 71%
 
 ![フォームパネルレベルでの文脈依存ヘルプの例](assets/photoshop-1.png)
 
+>[!MORELIKETHIS]
+>
+>* [フォームフィールドにプレースホルダーテキストを追加する](/help/forms/placeholder-text-in-aem-forms.md)
+>* [リッチテキスト用のアダプティブフォームに脚注を追加する](/help/forms/footnotes-richtextsupport.md)

@@ -2,9 +2,9 @@
 title: AEM forms で参照用のテーマとテンプレートを取得する方法を教えてください。
 description: AEM Formsには、フォームをすばやく作成できるように、サンプルのアダプティブフォームテーマ、テンプレート、フォームデータモデルが用意されています。
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '841'
 ht-degree: 90%
 
 ---
@@ -120,3 +120,8 @@ FSI テーマは、フォームの最小限の機能的外観を強調します�
 * Salesforce
 
 これらのモデルの使用方法については、[Microsoft Dynamics 365 および Salesforce クラウドサービスの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=ja#configure-dynamics-cloud-service)を参照してください。
+
+
+## 関連トピック {#see-also}
+
+{{see-also}}

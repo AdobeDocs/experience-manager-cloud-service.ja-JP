@@ -1,10 +1,10 @@
 ---
 title: アセットの読み込みと書き出しの方法 [!DNL AEM Forms]?
 description: アダプティブフォームで DocuSign を使用して電子署名を収集する方法を説明します。
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 95%
+source-wordcount: '1325'
+ht-degree: 94%
 
 ---
 
@@ -242,3 +242,8 @@ The side panel also lets you save your search settings with names of your choice
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](/help/sites-authoring/search.md).
 
 -->
+
+>[!MORELIKETHIS]
+>
+>* [書き出しフォームテンプレートの読み込み](/help/forms/import-export-forms-templates.md)
+>* [アダプティブフォームのコアコンポーネントでのテーマの使用](/help/forms/using-themes-in-core-components.md)

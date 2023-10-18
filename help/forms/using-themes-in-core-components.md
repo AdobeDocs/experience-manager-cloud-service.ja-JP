@@ -2,9 +2,9 @@
 title: アダプティブFormsでテーマを作成して使用するにはどうすればよいですか？
 description: テーマを使用して、コアコンポーネントを使用してアダプティブフォームのスタイルを設定し、視覚的な ID を付けることができます。 任意の数のアダプティブフォームで、テーマを共有できます。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2680'
 ht-degree: 18%
 
 ---
@@ -418,7 +418,11 @@ The `variable.scss` ファイルには、テーマのグローバル変数が含
 * [サンプルのテーマテンプレートとフォームデータモデル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
-## 関連記事 {#related-article}
+>[!MORELIKETHIS]
+>
+>* [AEM Forms as a Cloud Service およびローカル開発環境で、アダプティブフォームのコアコンポーネントを有効にする](/help/forms/enable-adaptive-forms-core-components.md)
 
-* [AEM Forms as a Cloud Service およびローカル開発環境で、アダプティブフォームのコアコンポーネントを有効にする](/help/forms/enable-adaptive-forms-core-components.md)
-* [スタンドアロンのコアコンポーネントベースのアダプティブフォームを作成する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=ja)
+
+## 関連トピック {#see-also}
+
+{{see-also}}

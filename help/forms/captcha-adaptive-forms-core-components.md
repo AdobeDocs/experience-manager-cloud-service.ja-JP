@@ -4,9 +4,9 @@ description: Google reCAPTCHA サービスでフォームのセキュリティ�
 topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA サービス，アダプティブForms, CAPTCHA の課題，ボットの回避，コアコンポーネント，フォーム送信セキュリティ，フォームスパムの防止
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '919'
 ht-degree: 19%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 19%
 | コアコンポーネントに基づくアダプティブフォーム | この記事 |
 | 基盤コンポーネントに基づくアダプティブフォーム | [ここをクリックしてください](/help/forms/captcha-adaptive-forms.md) |
 
-CAPTCHA（コンピュータと人間を区別する完全に自動化された公開チューリングテスト）は、人と自動化されたプログラムまたはボットを区別するためにオンライントランザクションで一般的に使用されるプログラムです。テストを行ってユーザーの反応を評価し、サイトを使用しているのが人間かボットかを判断します。テストが失敗した場合の続行を防ぎ、ボットがスパムや悪意のある目的の投稿を防ぐことで、オンライントランザクションの安全性を高めます。
+CAPTCHA（コンピュータと人間を区別する完全に自動化された公開チューリングテスト）は、人間と自動化されたプログラム／ボットを区別するために、オンライントランザクションで一般的に使用されるプログラムです。テストを行ってユーザーの反応を評価し、サイトを使用しているのが人間かボットかを判断します。テストが失敗した場合の続行を防ぎ、ボットによるスパムの投稿や悪意のある目的を防止することで、オンライントランザクションの安全性を高めます。
 
 [!DNL AEM Forms] as a [!DNL Cloud Service] は、アダプティブFormsでGoogle reCAPTCHA v2 をサポートしています。 これを使用して、フォームの送信時に CAPTCHA の課題を提示できます. アダプティブフォームで reCAPTCHA を使用するには：
 
@@ -106,9 +106,6 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 **Q：アダプティブフォーム内で複数の Captcha コンポーネントを使用できますか。**
 **回答：** アダプティブフォーム内での複数の Captcha コンポーネントの使用はサポートされていません。 また、遅延読み込みのマークが付けられたフラグメントやパネルで Captcha コンポーネントを使用することはお勧めしません。
 
-## 関連トピック
+## 関連トピック {#see-also}
 
-* [アダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
-* [アダプティブフォームフラグメントを作成する](/help/forms/adaptive-form-fragments-core-components.md)
-* [アダプティブフォームをAEM Sitesページまたはエクスペリエンスフラグメントに追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [アダプティブフォームでのGoogle reCAPTCHA の使用](/help/forms/captcha-adaptive-forms-core-components.md)
+{{see-also}}

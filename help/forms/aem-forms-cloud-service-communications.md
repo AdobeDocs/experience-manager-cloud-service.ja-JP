@@ -2,10 +2,10 @@
 title: Formsas a Cloud Serviceを使用して XDP およびPDFテンプレートとデータを結合したり、PCL、ZPL および PostScript 形式で出力を生成したりする方法を教えてください。
 description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 91%
+source-wordcount: '731'
+ht-degree: 87%
 
 ---
 
@@ -142,3 +142,10 @@ API から提供されるすべてのパラメーター、認証方法および�
 >[!NOTE]
 >
 >コミュニケーション API にアクセスできるのは、forms-users グループのメンバーだけです。
+
+>[!MORELIKETHIS]
+>
+>* [AEM Formsas a Cloud Service通信の概要](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [アダプティブFormsおよび通信 API 用のAEM Formsas a Cloud Serviceアーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [通信処理 — 同期 API](/help/forms/aem-forms-cloud-service-communications.md)
+>* [通信処理 — バッチ API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

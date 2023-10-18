@@ -3,10 +3,10 @@ title: レコードのドキュメントテンプレートを作成するため�
 description: Forms Designer を使用して、レコードのドキュメントのPDFとして機能する XDP およびテンプレートフォームテンプレートを作成します。
 keywords: Designer のインストール、Forms Designer のインストール、Forms Designer のインストール要件
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 61%
+source-wordcount: '410'
+ht-degree: 62%
 
 ---
 
@@ -74,3 +74,8 @@ Designer をインストールするには、以下の手順を実行します�
 * [カスタムフォントを使用](/help/forms/use-custom-fonts.md)
 * [スタンドアロンのコアコンポーネントベースのアダプティブフォームを作成する](/help/forms/creating-adaptive-form-core-components.md)
 * [AEM Sites ページへのアダプティブフォームの作成または追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+
+>[!MORELIKETHIS]
+>
+>* [Forms Designer を使用して、レコードのドキュメント（DoR）のテンプレートとフォームフラグメントを作成](/help/forms/use-forms-designer.md)

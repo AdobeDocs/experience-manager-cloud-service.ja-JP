@@ -6,7 +6,7 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
 workflow-type: tm+mt
 source-wordcount: '3172'
 ht-degree: 96%
@@ -358,7 +358,12 @@ Adobe Sign 契約 ID（agreementId）は、アダプティブフォームの送�
 
 * [!DNL Adobe Sign] アカウントと、最初または唯一の受信者を設定するには、別々のメールアドレスを使用します。最初の受信者または唯一の受信者（受信者が 1 人の場合）のメールアドレスを、AEM Cloud Serviceｓ の設定に使用された [!DNL Adobe Sign] アカウントと同一にすることはできません。
 
-## 関連記事 {#related-articles}
+>[!MORELIKETHIS]
+>
+>* [ [!DNL Adobe Sign]  と  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) の統合
+>* [アダプティブフォームでの [!DNL Adobe Sign] 使用に関するベストプラクティス](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
 
-* [ [!DNL Adobe Sign] と [!DNL AEM Forms]の統合](adobe-sign-integration-adaptive-forms.md)
-* [アダプティブフォームでの [!DNL Adobe Sign] 使用に関するベストプラクティス](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
+
+## 関連トピック {#see-also}
+
+{{see-also}}

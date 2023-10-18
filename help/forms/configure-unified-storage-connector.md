@@ -2,10 +2,10 @@
 title: AEM Forms 用の統合ストレージコネクタの設定方法
 description: AEM Forms 用の統合ストレージコネクタの管理方法を説明します。統合ストレージコネクタを使用すると、AEM Forms を外部データストレージに接続できます。
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 100%
+source-wordcount: '632'
+ht-degree: 95%
 
 ---
 
@@ -66,3 +66,10 @@ AEM ワークフローを使用し、Microsoft Azure ストレージサーバー
 * ワークフローモデルでカスタム AEM ワークフローステップを使用して CRX DE リポジトリーにデータを保存しないでください。
 
 * [外部データストレージ用に AEM ワークフローモデルを設定](#configure-workflow-external-data-storage)する場合、AEM インボックス内の作業項目が外部ストレージとしてマークされたワークフローに属しているとカスタム列の値は取得されないので、AEM インボックス用にカスタム列を作成しないでください。
+
+>[!MORELIKETHIS]
+>
+>* [AEM Forms用のデータソースの設定](/help/forms/configure-data-sources.md)
+>* [AEM Forms用の Azure ストレージの設定](/help/forms/configure-azure-storage.md)
+>* [Microsoft Dynamics 365 および Salesforce とアダプティブFormsの統合](/help/forms/configure-msdynamics-salesforce.md)
+>  [AEM SitesページへのForms Portal の追加](/help/forms/configure-forms-portal.md)

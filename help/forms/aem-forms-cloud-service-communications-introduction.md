@@ -3,10 +3,10 @@ title: Formsas a Cloud Service通信 API とは
 description: PDFAPI を使用して、ドキュメントの署名、認証、保護、通信生成プロセスの自動化、PDFドキュメントの別の形式への変換を行います。
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1433'
-ht-degree: 78%
+source-wordcount: '1446'
+ht-degree: 77%
 
 ---
 
@@ -302,6 +302,6 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## 関連トピック {#see-also}
 
-
 * [通信処理 — 同期 API](/help/forms/aem-forms-cloud-service-communications.md)
 * [通信処理 — バッチ API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+* [アダプティブFormsおよび通信 API 用のAEM Formsas a Cloud Serviceアーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)

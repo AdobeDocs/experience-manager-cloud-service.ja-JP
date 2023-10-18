@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 5e02cf36112ce29cd3ebfd772623654328598bf2
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '984'
 ht-degree: 68%
 
 ---
@@ -176,3 +176,9 @@ AEM 環境は、アダプティブフォームをキャッシュするように�
         RewriteRule "^/content/forms/af/(.*).html$" "/content/forms/af/$1.%1.html" [R]
    </VirtualHost>
 ```
+
+
+
+>[!MORELIKETHIS]
+>
+>* [AEM Forms as a Cloud Serviceのキャッシュ関連の問題のトラブルシューティング](/help/forms/troubleshooting-caching-performance.md)

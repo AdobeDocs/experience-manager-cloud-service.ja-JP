@@ -5,9 +5,9 @@ uuid: b3408aee-ac24-43af-a380-a5892abf0248
 content-type: reference
 topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '350'
 ht-degree: 58%
 
 ---
@@ -172,3 +172,8 @@ ht-degree: 58%
 前述のコードが実装されたサンプルのアダプティブフォーム（demo/AFdemo）を含むコンテンツパッケージ。
 
 [ファイルを入手](assets/dropdown-demo-content-1.0.1-snapshot.zip)
+
+
+>[!MORELIKETHIS]
+>
+>* [アダプティブフォームフィールドに事前入力](/help/forms/prepopulate-adaptive-form-fields.md)

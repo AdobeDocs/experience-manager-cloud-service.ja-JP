@@ -7,15 +7,15 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '2780'
-ht-degree: 87%
+source-wordcount: '2748'
+ht-degree: 88%
 
 ---
 
-
-# アダプティブフォームの作成 {#creating-an-adaptive-form}
+# アダプティブフォームを作成 {#creating-an-adaptive-form}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -53,7 +53,7 @@ ht-degree: 87%
 * **権限**：[!DNL forms-users] グループにユーザーを追加します。[!DNL forms-users] グループのメンバーには、アダプティブフォームを作成する権限があります。フォーム固有のユーザーグループの詳細なリストについては、 [グループと権限](forms-groups-privileges-tasks.md).
 
 
-## アダプティブフォームの作成 {#create-an-adaptive-form-core-components}
+## アダプティブフォームを作成 {#create-an-adaptive-form-core-components}
 
 1. にログインします。 [!DNL Experience Manager Forms] オーサーインスタンス。 Cloud インスタンスまたはローカル開発インスタンスの場合があります。
 
@@ -88,7 +88,7 @@ ht-degree: 87%
 
    * テンプレートを選択すると、テンプレートで指定された送信アクションが自動選択されます。 「送信」タブから、別の送信アクションを選択することができます。 「**[!UICONTROL 送信]**」タブには、使用可能なすべての送信アクションが表示されます。
 
-   * 選択したテンプレートで送信アクションが指定されていない場合は、「**[!UICONTROL 送信]**」タブを使用して送信アクションを選択することができます。
+   * 選択したテンプレートで送信アクションが指定されていない場合は、「**[!UICONTROL 送信]**」タブを使用して送信アクションを選択することができます
 
 1. （オプション）「**[!UICONTROL 配信]**」タブで、アダプティブフォームの公開日または非公開日を指定することができます。
 
@@ -123,10 +123,10 @@ ht-degree: 87%
 
    * **編集可能テンプレート**：[新しいテンプレートを作成](template-editor.md)または[既存の編集可能テンプレートを読み込むことができます](migrate-to-forms-as-a-cloud-service.md)。また、[最新のアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#:~:text=AEM%20アーキタイプは、次のモジュール,Java%20バンドル。%20it.tests%3A%20are%20Java-based%20integration%20tests.)をデプロイして、編集可能なテンプレートのサンプルを取得することもできます。
 
-   * **静的テンプレート**：これらは従来のテンプレートで、Adobe Managed Services（AMS）およびオンプレミスの AEM Forms のインストール（AEM 6.5 Forms 以前）から移行する顧客にのみ推奨されます。 これらを使用すると、静的テンプレートに対する既存の投資を引き続き使用できます。 新しいアダプティブフォームを作成する場合は、編集可能なテンプレートを使用することをお勧めします。
+   * **静的テンプレート**：これらは従来のテンプレートで、Adobe Managed Services（AMS）およびオンプレミスの AEM Forms のインストール（AEM 6.5 Forms 以前）から移行する顧客にのみ推奨されます。 静的テンプレートに対する既存の投資を引き続き使用することができます。新しいアダプティブフォームを作成する場合は、編集可能なテンプレートを使用することをお勧めします。
 
 
-## アダプティブフォームの作成 {#create-an-adaptive-form-foundation-components}
+## アダプティブフォームを作成 {#create-an-adaptive-form-foundation-components}
 
 1. [!DNL Experience Manager Forms] オーサーインスタンスにアクセスします。Cloud インスタンスまたはローカル開発インスタンスの場合があります。
 
@@ -271,7 +271,4 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 >[!MORELIKETHIS]
 >
->* [AEM Sitesページまたはエクスペリエンスフラグメントでアダプティブフォームを作成する](create-or-add-an-adaptive-form-to-aem-sites-page.md)
->* [カスタムアダプティブFormsテーマの作成](using-themes-in-core-components.md)
->* [フォームの送信アクションの設定](configuring-submit-actions.md)
->* [使用可能なアダプティブフォームコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#components)
+>* [アダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)

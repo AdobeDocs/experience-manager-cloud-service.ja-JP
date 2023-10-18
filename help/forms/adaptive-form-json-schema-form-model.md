@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1345'
+source-wordcount: '1347'
 ht-degree: 89%
 
 ---
@@ -770,3 +770,15 @@ JSON スキーマの要素に以下の制限を追加して、アダプティブ
 **JSON スキーマファイルの拡張子は何ですか。**
 
 JSON スキーマファイルの拡張子は、.schema.json にする必要があります。例えば、&lt;filename>.schema.json のように指定します。
+
+## 関連トピック {#see-also}
+
+{{see-also}}
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Design XML Schema for an Adaptive Form](/help/forms/adaptive-form-xml-schema-form-model.md)
+
+-->

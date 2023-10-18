@@ -5,14 +5,14 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
-source-wordcount: '2344'
-ht-degree: 71%
+source-wordcount: '2326'
+ht-degree: 75%
 
 ---
 
-# アダプティブフォームの作成 {#creating-an-adaptive-form-core-components}
+# アダプティブフォームを作成 {#creating-an-adaptive-form-core-components}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -58,7 +58,7 @@ ht-degree: 71%
 > In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
-## アダプティブフォームの作成  {#create-an-adaptive-form-core-components}
+## アダプティブフォームを作成  {#create-an-adaptive-form-core-components}
 
 1. にログインします。 [!DNL Experience Manager Forms] オーサーインスタンス。 Cloud インスタンスまたはローカル開発インスタンスの場合があります。
 
@@ -118,7 +118,7 @@ ht-degree: 71%
 
    ![レンチアイコンをクリックしてアダプティブフォームコンテナダイアログボックスを開き、送信アクションを設定します](/help/forms/assets/adaptive-forms-submit-message.png)
 
-1. を選択して設定します。 **[!UICONTROL 送信アクション]**、要件に応じて。 送信アクションについての詳細情報は、[アダプティブフォームの送信アクション](/help/forms/configuring-submit-actions.md)を参照してください。
+1. を選択して設定します。 **[!UICONTROL 送信アクション]**、要件に応じて。 送信アクションについて詳しくは、[アダプティブフォーム送信アクション](/help/forms/configuring-submit-actions.md)を参照してください。
 
 <!--
     
@@ -126,7 +126,7 @@ ht-degree: 71%
 
 -->
 
-## ユーザーをページにリダイレクトしたり、フォーム送信時に「ありがとうございます」メッセージを表示したりします
+## フォーム送信時に、ユーザーをページにリダイレクトする、またはお礼のメッセージを表示する
 
 フォームの送信時に、ユーザーを別の web ページまたはメッセージにリダイレクトできます。ユーザーをリダイレクトするか、お礼のメッセージを設定するには、次の手順を実行します。
 
@@ -166,7 +166,7 @@ ht-degree: 71%
 
 ## 事前入力サービスの設定  {#configure-prefill-service-for-form}
 
-事前入力サービスを使用すると、既存のデータを使用してアダプティブフォームのフィールドに自動で入力することができます。ユーザーがフォームを開くと、これらのフィールドの値は事前入力されています。以下の操作を実行できます。
+事前入力サービスを使用すると、既存のデータを使用してアダプティブフォームのフィールドに自動入力できます。ユーザーがフォームを開くと、これらのフィールドの値は事前入力されています。以下の操作を実行できます。
 
 * [カスタム事前入力サービスを作成](/help/forms/prepopulate-adaptive-form-fields.md)
 * [フォームデータモデルの事前入力サービスを使用](#fdm-prefill-service)
@@ -179,8 +179,8 @@ ht-degree: 71%
 1. ガイドコンテナのプロパティをクリックします。 ![ガイドのプロパティ](/help/forms/assets/configure-icon.svg) アイコン。 アダプティブフォームコンテナダイアログボックスが開きます。
 1. アダプティブフォームコンテナプロパティ（![アダプティブフォームコンテナプロパティ](/help/forms/assets/configure-icon.svg)アイコン）をクリックします。データモデルを設定するためのアダプティブフォームコンテナダイアログボックスが開きます。
    ![レンチアイコンをクリックしてアダプティブフォームコンテナダイアログボックスを開き、リダイレクトページまたは「ありがとうございます」メッセージを設定します。](/help/forms/assets/adaptive-forms-container-prefill-service.png)
-1. フォームデータモデルを選択します。「**[!UICONTROL 基本]**」タブを開きます。事前入力サービスで、「 」を選択します。 **[!UICONTROL フォームデータモデルの事前入力サービス]**.
-1. 「**[!UICONTROL 完了]**」をクリックします。これで、アダプティブフォームがフォームデータモデルの事前入力を使用するように設定されました。 これで、 [ルールエディター](rule-editor.md) ：フォームのフィールドに事前入力するルールを作成します。
+1. フォームデータモデルを選択. 「**[!UICONTROL 基本]**」タブを開きます。事前入力サービスで、「**[!UICONTROL フォームデータモデルの事前入力サービス]**」を選択します。
+1. 「**[!UICONTROL 完了]**」をクリックします。アダプティブフォームでフォームデータモデルの事前入力を使用するように設定しました。 [ルールエディター](rule-editor.md)を使用して、フォームのフィールドに事前入力するルールを作成できるようになりました。
 
 ## アダプティブフォームのフォームモデルプロパティの編集 {#edit-form-model}
 
@@ -193,12 +193,13 @@ ht-degree: 71%
 
 ## 次を見る
 
-* [フォームのスタイルまたはテーマを作成する](using-themes-in-core-components.md)
-* [ルールエディターを使用してフォームに動的な動作を追加する](rule-editor.md)
-* [画面サイズやデバイスタイプに応じてフォームのレイアウトを設定する](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [フォームのスタイルまたはテーマを作成](using-themes-in-core-components.md)
+* [ルールエディターを使用してフォームに動的な動作を追加](rule-editor.md)
+* [画面サイズやデバイスタイプに応じてフォームのレイアウトを設定](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [サンプルのテーマテンプレートとフォームデータモデル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
+## 関連トピック {#see-also}
 
-## 関連記事 {#related-article}
+{{see-also}}
 
-* [スタンドアロンのコアコンポーネントベースのアダプティブフォームを作成する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=ja)
+

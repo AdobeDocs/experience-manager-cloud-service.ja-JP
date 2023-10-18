@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2484'
 ht-degree: 96%
 
 ---
@@ -361,3 +361,7 @@ J. **その他**：選択したコンポーネントの操作について、さ�
 * **ツールバー**：アダプティブフォームコンテナは、フォームに対してグローバルな、関連付けられたグローバルツールバーを持ちます。このツールバーは、編集バーの&#x200B;**[!UICONTROL ツールバーを追加]**&#x200B;アクションを使用して追加でき、作成者は送信、保存、リセットなどのアクションを追加できます。
 
 * **アセット：**&#x200B;このノードには、フォームのオーサリングに使用される追加情報が含まれます。例えば、フォームモデルの詳細、ローカリゼーションの詳細などです。
+
+## 関連トピック {#see-also}
+
+{{see-also}}

@@ -2,10 +2,10 @@
 title: 基盤コンポーネントに基づいてアダプティブフォームに新しいロケールのサポートを追加する方法を教えてください。
 description: アダプティブFormsの場合は、追加設定なしで提供されるロケールとは別に、追加言語用のロケールを追加できます。
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 79%
+source-wordcount: '1266'
+ht-degree: 80%
 
 ---
 
@@ -159,3 +159,8 @@ I18N.js
 * 新しいフィールドが既存のアダプティブ フォームに追加された場合：
    * **機械翻訳の場合**：辞書を再作成し、翻訳プロジェクトを実行します。 翻訳プロジェクトの作成後にアダプティブフォームに追加されたフィールドは、未翻訳になります。
    * **人間による翻訳の場合**：`[server:port]/libs/cq/i18n/gui/translator.html` から辞書を書き出します。 新しく追加されたフィールド用の辞書を更新し、アップロードします。
+
+
+## 関連トピック {#see-also}
+
+{{see-also}}

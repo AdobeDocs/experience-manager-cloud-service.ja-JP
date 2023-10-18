@@ -2,9 +2,9 @@
 title: AEM Formsのメタデータはどのように管理できますか？
 description: メタデータを使用すると、アセットの分類および編成を容易に行うことができ、特定のアセットを検索しやすくなります。
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1741'
+source-wordcount: '1743'
 ht-degree: 96%
 
 ---
@@ -307,3 +307,8 @@ ht-degree: 96%
    カスタムメタデータのプロパティを正常に追加しました。
 
 [!DNL AEM Forms] のすべてのアダプティブフォームに、この追加のメタデータプロパティが含まれるようになりました。このプロパティは、プロパティページから編集できます。
+
+
+## 関連トピック {#see-also}
+
+{{see-also}}

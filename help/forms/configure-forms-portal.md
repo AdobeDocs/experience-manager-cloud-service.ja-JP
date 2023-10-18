@@ -2,9 +2,9 @@
 title: Experience Manager Sites ページでフォームポータルを作成する方法?
 description: フォームポータルを作成し、標準搭載のコアコンポーネントを AEM Sites ページで使用する方法を説明します。
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1841'
 ht-degree: 94%
 
 ---
@@ -182,3 +182,19 @@ Adobe Experience Manager（AEM）サイトで任意のコアコンポーネン�
 1. 「**[!UICONTROL 有効]**」 チェックボックスをオンにし、フォームの自動保存を有効にします。次の項目を設定できます。
 * デフォルトでは、[!UICONTROL アダプティブフォームイベント] が「true」に設定されている場合は、イベントのたびにフォームが自動保存されます。
 * [!UICONTROL トリガー] で、イベントの発生に基づいて、または特定の時間間隔の経過後に自動保存をトリガーするように設定します。
+
+## 関連トピック {#see-also}
+
+{{see-also}}
+
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
+>* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+
+-->

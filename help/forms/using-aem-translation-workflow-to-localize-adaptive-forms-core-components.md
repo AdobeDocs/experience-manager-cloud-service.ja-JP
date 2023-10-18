@@ -3,9 +3,9 @@ title: コアコンポーネントベースのアダプティブフォームを�
 description: AEM Formsでフォームデータモデルを作成し、サンプルデータとサービスを使用してモデルをテストし、モデルの様々なオプションを設定する方法を説明します。
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '896'
 ht-degree: 93%
 
 ---
@@ -82,4 +82,8 @@ ht-degree: 93%
 
    ![翻訳ファイルをインポート](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
-1. ローカライズされたフォームをプレビューするには、AEM Forms UI で、ローカライズされたフォームを選択します。**[!UICONTROL プレビュー]**／**[!UICONTROL HTML としてプレビュー]**&#x200B;をクリックします。フォームの URL に `afAcceptLang=<locale code>` を追加した後、フォームを再度開きます。例えば、ドイツ語版のフォームを開くには、`afAcceptLang=de` を追加します。
+1. ローカライズされたフォームをプレビューするには、AEM Forms UI で、ローカライズされたフォームを選択します。**[!UICONTROL プレビュー]**／**[!UICONTROL HTML としてプレビュー]**&#x200B;をクリックします。フォームの URL に `afAcceptLang=<locale code>` を追加した後、フォームを再度開きます。例えば、ドイツ語版のフォームを開くには `afAcceptLang=de` を追加します。
+
+## 関連トピック {#see-also}
+
+{{see-also}}

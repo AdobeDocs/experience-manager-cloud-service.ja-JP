@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '549'
 ht-degree: 76%
 
 ---
@@ -51,3 +51,8 @@ ht-degree: 76%
 1. 残りの手順を実行して、フォームテンプレートを作成します。 <!-- For more information, see [Creating a custom Adaptive Form template](custom-adaptive-forms-templates.md). -->
 
 フォームテンプレートでフォームのシーケンスを定義したら、そのテンプレートを使用して、適切なシーケンスで定義した基本構造を持つフォームを作成できます。フォームはいつでも要件に合わせてカスタマイズできます。
+
+
+## 関連トピック {#see-also}
+
+{{see-also}}

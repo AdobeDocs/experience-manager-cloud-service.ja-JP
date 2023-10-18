@@ -5,10 +5,10 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
-workflow-type: ht
-source-wordcount: '1024'
-ht-degree: 100%
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+workflow-type: tm+mt
+source-wordcount: '1032'
+ht-degree: 99%
 
 ---
 
@@ -159,3 +159,6 @@ Forms 中心の AEM ワークフローおよび機能について詳しくは、
 * [ノードおよびプロパティの削除](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
 * [API リファレンス](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ja)
 
+>[!MORELIKETHIS]
+>
+>* [ビジネスプロセスの自動化にAEM Formsワークフローを使用](/help/forms/aem-forms-workflow.md)

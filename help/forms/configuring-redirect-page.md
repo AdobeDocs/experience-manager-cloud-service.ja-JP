@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: e4dc01d2-7c89-4bd8-af0a-1d2df4676a9a
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 89%
+source-wordcount: '214'
+ht-degree: 85%
 
 ---
 
@@ -35,3 +35,7 @@ ht-degree: 89%
 フォーム作成者は、次のパラメーターを使用して「ありがとうございました」ページに渡すことができます。 使用可能なすべての送信アクションに対して、`status` と `owner` のパラメーターが渡されます。これら 2 つのパラメーターの他に、追加のパラメーターが次の送信アクションに渡されます。
 
 * **[!UICONTROL REST エンドポイントへの送信]**：フィールド内にパラメーターマッピングのため追加されたパラメータが渡されます。`status` と `owner` のパラメーターは、この送信アクションでは渡されません。詳しくは、[送信アクション「REST エンドポイントへの送信」の設定](configuring-submit-actions.md)を参照してください。
+
+>[!MORELIKETHIS]
+>
+>* [リダイレクトページまたは「ありがとうございます」メッセージの設定](/help/forms/configure-redirect-page-or-thank-you-message.md)

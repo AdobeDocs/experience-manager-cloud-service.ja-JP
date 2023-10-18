@@ -2,10 +2,10 @@
 title: アダプティブFormsおよび通信 API 用のAEM Formsas a Cloud Serviceアーキテクチャ
 description: ' [!DNL AEM Forms] a s a Cloud Service のアーキテクチャを理解し、プラットフォームの拡張性、回復性、パフォーマンスの側面について学習します。'
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 98%
+source-wordcount: '1093'
+ht-degree: 96%
 
 ---
 
@@ -194,3 +194,10 @@ Set up your development environment, [Configure your CI/CD Pipeline](https://exp
 ## デバッグ {#debugging}
 
 AEM as a Cloud Service は、セルフサービスのスケーラブルなクラウドインフラストラクチャ上で実行します。AEM 開発者は、ビルドとデプロイから、実行中の AEM アプリケーションの詳細情報の取得まで、AEM as a Cloud Service の様々な側面を理解し、デバッグする必要があります。詳しくは、[AEM as a Cloud Service のデバッグ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html?lang=ja)を参照してください。
+
+
+>[!MORELIKETHIS]
+>
+>* [AEM Formsas a Cloud Service通信の概要](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Formsas a Cloud Service通信のバッチ処理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [通信処理 — 同期 API](/help/forms/aem-forms-cloud-service-communications.md)

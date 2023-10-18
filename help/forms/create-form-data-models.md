@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1548'
 ht-degree: 89%
 
 ---
@@ -138,3 +138,8 @@ OSGi Factory Configuration ファイルを、PID `org.apache.sling.caconfig.impl
 これで、データソースが追加されたフォームデータモデルが作成されました。この状態で、フォームデータモデルを編集してデータモデルオブジェクトとサービスの作成と設定を行ったり、データモデルオブジェクト間の関連付けを行ったり、プロパティを編集したり、カスタムのデータモデルオブジェクトとプロパティを追加したり、サンプルデータを生成したりできます。
 
 詳しくは、「[フォームデータモデルの操作](work-with-form-data-model.md)」を参照してください。
+
+
+>[!MORELIKETHIS]
+>
+>* [フォームデータモデルの使用](/help/forms/using-form-data-model.md)

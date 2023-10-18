@@ -5,7 +5,7 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
 exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
-source-git-commit: fb3d3732f698015151d9703bfddfe94b531d31b6
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 63%
@@ -162,3 +162,11 @@ Web ページにアダプティブフォームを埋め込む際は、次のベ�
 1. AEM パブリッシュインスタンスで、AEM Web Console Configuration Manager（`https://'[server]:[port]'/system/console/configMgr`）に移動します。
 1. **Apache Sling Referrer Filter** 構成を探して開きます。
 1. 「許可済みホスト」フィールドで、web ページが存在するドメインを指定します。これにより、ホストは AEM サーバーに POST リクエストをできるようになります。また、正規表現を使用して、一連の外部アプリケーションドメインを指定することもできます。
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Embed adaptive form based on core components to AEM sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+
+-->

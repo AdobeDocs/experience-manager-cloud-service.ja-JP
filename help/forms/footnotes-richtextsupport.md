@@ -2,9 +2,9 @@
 title: 脚注をアダプティブフォームに追加するにはどうすればよいですか？
 description: アダプティブフォーム内の脚注にリッチテキストエディター (RTE) を使用します。
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '443'
 ht-degree: 78%
 
 ---
@@ -55,3 +55,8 @@ ht-degree: 78%
 1. 各プロパティを保存します。
 
 実行時に、数値が上付き文字としてテキストに表示され、[!UICONTROL 脚注のプレースホルダー]がアダプティブフォームに配置されている位置で&#x200B;**[!UICONTROL 脚注]**&#x200B;コンポーネントに対応する説明が表示されます。脚注の説明に直接移動するには、[!UICONTROL 脚注]で対応する数値をクリックします。
+
+
+## 関連トピック {#see-also}
+
+{{see-also}}

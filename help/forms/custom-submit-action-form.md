@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1775'
 ht-degree: 99%
 
 ---
@@ -390,3 +390,7 @@ Perform the following steps to create a custom Submit Action that saves the data
    Select the action in the Adaptive Form. The action sends an email and stores the data. 
 
 -->
+
+>[!MORELIKETHIS]
+>
+>* [アダプティブフォームの送信アクションの設定](/help/forms/configure-submit-actions-core-components.md)

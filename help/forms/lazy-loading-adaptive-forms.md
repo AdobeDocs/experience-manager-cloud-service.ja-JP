@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1077'
 ht-degree: 90%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 90%
 
 ## 遅延読み込みを設定するための注意点とベストプラクティス {#considerations-and-best-practices-for-configuring-lazy-loading}
 
-遅延読み込みを使用する際に留意しておかなければならない制限事項、推奨事項および重要な点を以下に示します。
+遅延読み込みを使用する際に留意しておかなければならない制限事項、レコメンデーションおよび重要な点を以下に示します。
 
 * 大きなフォームに対して遅延読み込みを設定する場合は、XFA ベースのアダプティブフォームより XSD スキーマベースのアダプティブフォームを使用することをお勧めします。XFA ベースのアダプティブフォームでの遅延読み込みの実装によるパフォーマンスの向上は、XSD ベースのアダプティブフォームでの向上に比べて、相対的に小さくなります。
 * ルートパネルの&#x200B;**[!UICONTROL レスポンシブ - ナビゲーションを使用せず、すべてを 1 ページに集約]**&#x200B;レイアウトを使用するアダプティブフォームのフラグメントに遅延読み込みを設定しないでください。レスポンシブレイアウト設定の結果、すべてのフラグメントがアダプティブフォームに同時に読み込まれます。パフォーマンスが低下する可能性もあります。
@@ -90,3 +90,8 @@ ht-degree: 90%
 * フィールドがフラグメント間でグローバルとしてマークされているかどうかにかかわらず、遅延パネル内部のフィールドの参照値を転送しないでください。
 * パネルリセット機能を使用して、パネル上で表示されているすべてのものを、以下のクリック式を使用してリセットしてください。\
   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()
+
+
+## 関連トピック {#see-also}
+
+{{see-also}}

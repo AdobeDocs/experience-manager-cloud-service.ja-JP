@@ -2,10 +2,10 @@
 title: コアコンポーネントに基づいてアダプティブフォームに新しいロケールのサポートを追加するには、どうすればよいですか？
 description: アダプティブフォームに新しいロケールを追加する方法を説明します。
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 21%
+source-wordcount: '1328'
+ht-degree: 22%
 
 ---
 
@@ -176,6 +176,10 @@ AEM Formsには、新しいロケールを簡単に追加できるサンプル�
 
 ## 詳細を表示
 
-* [機械翻訳または人間翻訳を使用した、コアコンポーネントベースのアダプティブフォームの翻訳](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [アダプティブフォーム向けのレコードのドキュメントの生成](/help/forms/generate-document-of-record-core-components.md)
-* [アダプティブフォームをAEM Sitesページまたはエクスペリエンスフラグメントに追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [AEM Sites ページまたはエクスペリエンスフラグメントにアダプティブフォームを追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+
+## 関連トピック {#see-also}
+
+{{see-also}}

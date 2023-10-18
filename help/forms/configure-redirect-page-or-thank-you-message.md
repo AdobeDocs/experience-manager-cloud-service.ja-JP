@@ -4,13 +4,13 @@ description: ユーザーにお礼のメッセージを表示したり、フォ�
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b104c7ddd102b3600384bf7472b166131e334c35
-workflow-type: ht
-source-wordcount: '233'
-ht-degree: 100%
+exl-id: 27decf88-a2ab-4b52-b6ae-babb1d3abdaa
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+workflow-type: tm+mt
+source-wordcount: '239'
+ht-degree: 98%
 
 ---
-
 
 # リダイレクトページの設定 {#configuring-redirect-page}
 
@@ -32,3 +32,11 @@ ht-degree: 100%
 **関連**
 
 * [リダイレクトページの設定（基盤フォーム）](configuring-redirect-page.md)
+
+>[!MORELIKETHIS]
+>
+>* [リダイレクトページの設定](/help/forms/configuring-redirect-page.md)
+
+## 関連トピック {#see-also}
+
+{{see-also}}

@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '959'
 ht-degree: 76%
 
 ---
@@ -298,3 +298,7 @@ XML スキーマの要素に以下の制限を追加して、アダプティブ�
 **繰り返し可能なサブフォーム（minOccurs 値または maxOccurs 値が 1 より大きい）では、サブフォーム（任意の複合型から生成された構造）の個々の要素をドラッグできないのはなぜですか？**
 
 繰り返し可能なサブフォームでは、完全なサブフォームを使用する必要があります。選択した一部のフィールドのみを使用する場合は、構造全体を使用し、不要部分を削除します。
+
+>[!MORELIKETHIS]
+>
+>* [アダプティブフォームの JSON スキーマのデザイン](/help/forms/adaptive-form-json-schema-form-model.md)

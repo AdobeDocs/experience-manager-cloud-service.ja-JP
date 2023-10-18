@@ -3,9 +3,9 @@ title: ' [!DNL AEM Forms] as a Cloud Service の概要'
 description: AEM Forms を検出して、ビジネスに対応するフォームを作成し、ビジネスプロセスのワークフローを作成し、ドキュメントサービスを使用してドキュメントを作成および保護します。
 landing-page-description: AEM as a Cloud Service でのフォームの使用方法を理解します。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1151'
 ht-degree: 94%
 
 ---
@@ -67,11 +67,10 @@ AEM Forms を使用するビジネスユーザーは、ドキュメントテン�
 | データソース | 外部データソースにフォームやドキュメントを簡単に接続して、データを取得したり送信したりできます。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=ja">RDBMS や REST エンドポイントへの接続</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=ja">Microsoft® Dynamics 365 や Salesforce クラウドサービスに接続</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=ja">Microsoft® Azure Blob Storage に接続</a></li></ul> |
 
 
-## 関連記事
-
-* [Cloud Service環境へのオンボーディング](/help/forms/setup-forms-cloud-service.md)
-* [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
-* [AEM 6.5 FormsからCloud Serviceへの移行](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-
-
+>[!MORELIKETHIS]
+>
+>* [アダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
+>* [Cloud Service環境へのオンボーディング](/help/forms/setup-forms-cloud-service.md)
+>* [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
+>* [AEM 6.5 FormsからCloud Serviceへの移行](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '248'
 ht-degree: 59%
 
 ---
@@ -45,3 +45,8 @@ ht-degree: 59%
 >[!NOTE]
 >
 >作成したカスタムプロパティは、フォームを再度開いたときに、フォームのプロパティダイアログに正しく表示されない場合があります。 ただし、正常に機能し、フォームに更新された Page Zero メッセージが表示されます。
+
+>[!MORELIKETHIS]
+>
+>* [Forms Designer をダウンロードしてインストールし、レコードのドキュメントテンプレートを作成する](/help/forms/installing-configuring-designer.md)
+>* [Forms Designer を使用して、レコードのドキュメント（DoR）のテンプレートとフォームフラグメントを作成?](/help/forms/use-forms-designer.md)

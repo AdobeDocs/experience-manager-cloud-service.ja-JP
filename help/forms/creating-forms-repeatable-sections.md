@@ -5,10 +5,10 @@ uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 79%
+source-wordcount: '1140'
+ht-degree: 78%
 
 ---
 
@@ -122,7 +122,7 @@ ht-degree: 79%
 
 ## XML スキーマ（XSD）の繰り返し設定の使用  {#using-repeat-settings-of-an-xml-schema-xsd-br}
 
-XML スキーマ、または任意の複合タイプエレメントの minOccurs および maxOccurs プロパティから、繰り返し可能なパネルを作成できます。XML スキーマについて詳しくは、「[XML スキーマをフォームモデルとして使用するアダプティブフォームの作成](adaptive-form-xml-schema-form-model.md)」を参照してください。
+XML スキーマ、または任意の複合タイプ要素の minOccurs および maxOccurs プロパティから、繰り返し可能なパネルを作成できます。XML スキーマについて詳しくは、「[XML スキーマをフォームモデルとして使用するアダプティブフォームの作成](adaptive-form-xml-schema-form-model.md)」を参照してください。
 
 以下のコードでは、`SampleType` パネルで minOccurs および maxOccurs プロパティが使用されています。
 
@@ -169,3 +169,8 @@ XML スキーマ、または任意の複合タイプエレメントの minOccurs
 >[!NOTE]
 >
 >アコーディオン以外のレイアウトの場合は、アダプティブフォームのボタンコンポーネントを使用して、インスタンスを追加および削除します。
+
+
+>[!MORELIKETHIS]
+>
+>* [アダプティブフォームのコアコンポーネントで繰り返し可能なセクションを持つフォームを作成する](/help/forms/create-forms-repeatable-sections.md)

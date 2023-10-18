@@ -5,9 +5,9 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1013'
 ht-degree: 91%
 
 ---
@@ -355,3 +355,7 @@ AEM Forms as a Cloud Service 環境でアダプティブフォームコアコン
    ![all/pom.xml で core-forms-components-af-core アーティファクトを見つけます](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
 
    依存関係が存在する場合、お使いの環境でアダプティブフォームのコアコンポーネントが有効になります。
+
+>[!MORELIKETHIS]
+>
+>* [アダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)

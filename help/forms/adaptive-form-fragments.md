@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 96%
+source-wordcount: '2029'
+ht-degree: 95%
 
 ---
 
@@ -248,3 +248,7 @@ XFA フォームテンプレートまたは XSD 複合タイプを使用して�
 ## リファレンスフラグメント {#reference-fragments}
 
 フォームを作成するために使用できるリファレンスアダプティブフォームフラグメントが提供されています。詳しくは、[リファレンスフラグメント](reference-adaptive-form-fragments.md)を参照してください。
+
+>[!MORELIKETHIS]
+>
+>* [コアコンポーネントのアダプティブフォームフラグメント](/help/forms/adaptive-form-fragments-core-components.md)

@@ -1,8 +1,8 @@
 ---
-source-git-commit: cada650e940aa941538a43ffb1f9a16d1f0b8a61
+source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 62%
+source-wordcount: '244'
+ht-degree: 25%
 
 ---
 # スニペット {#snippets}
@@ -20,3 +20,28 @@ ht-degree: 62%
 >[!NOTE]
 >
 >AEM では、現在、プロファイルへのグループの割り当てをサポートしていません。代わりに、ユーザーを個別に追加する必要があります。
+
+## 関連トピック {#see-also}
+
+* [AEMアダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
+* [AEMアダプティブフォームをAEM Sitesページに追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [テーマをAEMアダプティブフォームに適用する](/help/forms/using-themes-in-core-components.md)
+* [AEMアダプティブフォームにコンポーネントを追加する](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#components)
+* [AEMアダプティブフォームでの CAPTCHA の使用](/help/forms/captcha-adaptive-forms-core-components.md)
+* [AEMアダプティブフォームのPDFバージョン (DoR) を生成する](/help/forms/generate-document-of-record-core-components.md)
+* [AEMアダプティブフォームの翻訳](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [アダプティブフォームのAdobe Analyticsを有効にしてフォームの使用状況を追跡する](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [アダプティブフォームをMicrosoft SharePointに接続](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
+* [アダプティブフォームをMicrosoft Power Automate に接続](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+* [アダプティブフォームをMicrosoft OneDrive に接続する](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
+* [アダプティブフォームをMicrosoft Azure Blob ストレージに接続](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
+* [アダプティブフォームを Salesforce に接続](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [AEMアダプティブフォームでのAdobe Signの使用](/help/forms/working-with-adobe-sign.md)
+* [アダプティブフォームに新しいロケールを追加する](/help/forms/supporting-new-language-localization-core-components.md)
+* [アダプティブフォームのデータをデータベースに送信する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html?lang=ja)
+* [アダプティブフォームデータを REST エンドポイントに送信する](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
+* [アダプティブフォームデータをAEM Workflow に送信する](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
+* [Forms Portal を使用して、AEM Web サイト上のAEM Adaptive Formsをリストします。](/help/forms/configure-forms-portal.md)
+
+
+

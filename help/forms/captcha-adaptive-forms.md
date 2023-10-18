@@ -1,15 +1,15 @@
 ---
 title: アダプティブFormsでの CAPTCHA の使用方法は？
-description: アダプティブフォームにAEM CAPTCHA またはGoogle reCAPTCHA サービスを設定する方法を説明します。
+description: アダプティブフォームのGoogle reCAPTCHA サービスの設定方法を説明します。
 uuid: 0e11e98a-12ac-484c-b77f-88ebdf0f40e5
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1935'
-ht-degree: 75%
+source-wordcount: '1945'
+ht-degree: 74%
 
 ---
 
@@ -342,3 +342,12 @@ reCAPTCHA サービスは、`https://www.recaptcha.net/` をデフォルトド�
 ```
 
 設定の値をセットするには、[AEM SDK を使用して OSGi 設定を生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#generating-osgi-configurations-using-the-aem-sdk-quickstart)し、Cloud Service インスタンスに[設定をデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja#deployment-process)します。
+
+## 関連トピック {#see-also}
+
+{{see-also}}
+
+
+>[!MORELIKETHIS]
+>
+>* [アダプティブFormsの参照テーマ、テンプレート、フォームデータモデル](/help/forms/reference-themes-templates-data-models.md)

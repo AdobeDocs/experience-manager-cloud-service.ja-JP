@@ -2,7 +2,7 @@
 title: Azure ストレージの設定方法
 description: フォームを Azure ストレージサーバーと統合する方法について説明します。
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 100%
@@ -101,3 +101,13 @@ ht-degree: 100%
 >[!NOTE]
 >
 >Azure では BLOB ごとに 10 個のタグしか許可されておらず、検索キーとしてマークされたプロパティ値はハッシュ後に Azure インデックスタグに格納されるため、Azure エンティティごとに許可される検索キーは 10 個のみです。
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+>  [Add Forms Portal to an AEM Sites page](/help/forms/configure-forms-portal.md)
+
+-->

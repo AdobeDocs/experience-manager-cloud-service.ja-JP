@@ -2,9 +2,9 @@
 title: アダプティブフォームテンプレートはどのようにして作成できますか？
 description: テンプレートエディターを使用して、基本構造と初期コンテンツを定義するアダプティブフォームテンプレートを作成します。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2096'
+source-wordcount: '2098'
 ht-degree: 97%
 
 ---
@@ -220,3 +220,8 @@ Perform the following steps to show and hide templates:
 
 * テンプレートエディターでフォームのプロパティを変更する際は、BindReference プロパティを使用しないようにしてください。
 * ブレークポイントを追加する場合は、アダプティブフォームテンプレートの作成時にブレークポイントを作成します。ブレークポイントについて詳しくは、「[レスポンシブレイアウト](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html?lang=ja#authoring)」を参照してください。
+
+
+## 関連トピック {#see-also}
+
+{{see-also}}

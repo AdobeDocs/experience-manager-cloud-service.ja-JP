@@ -3,7 +3,7 @@ title: アダプティブフォームフィールドの事前入力方法
 description: 既存のデータを使用してアダプティブフォームのフィールドに事前入力します。ユーザーは、ソーシャルプロファイルでログインすることで、フォーム内の基本情報を事前入力できます。
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: ebb77adfc97c805383de660d238e04a2173122b7
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 95%

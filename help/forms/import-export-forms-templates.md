@@ -3,9 +3,9 @@ title: AEM FormsインスタンスでアダプティブFormsまたはPDF forms�
 description: アダプティブForms、PDF forms、テーマおよびその他のサポートアセットを、AEMインスタンスとの間で移行する方法について説明します。
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1206'
 ht-degree: 94%
 
 ---
@@ -223,3 +223,7 @@ On the side panel, you can use the following to narrow down your search results:
 The side panel also lets you save your search settings with names of your choice.
 
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html). -->
+
+>[!MORELIKETHIS]
+>
+>* [アダプティブフォームのコアコンポーネントでのテーマの使用](/help/forms/using-themes-in-core-components.md)

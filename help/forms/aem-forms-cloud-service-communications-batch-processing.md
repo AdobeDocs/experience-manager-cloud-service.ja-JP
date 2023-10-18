@@ -2,10 +2,10 @@
 title: 容易な一括PDFの作成 — バッチ処理を使用したアートのマスター — お客様のセルフヘルプガイドで数百万のPDFドキュメントを生成できます。
 description: ブランド志向のパーソナライズされたコミュニケーションを作成する方法は？
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1705'
-ht-degree: 96%
+source-wordcount: '1735'
+ht-degree: 95%
 
 ---
 
@@ -171,3 +171,10 @@ Microsoft Azure ストレージで、[コンテナ](https://docs.microsoft.com/j
 ## API リファレンスドキュメント
 
 API から提供されるすべてのパラメーター、認証方法および各種サービスの詳細については、API リファレンスドキュメントを参照してください。API リファレンスドキュメントは、.yaml 形式で入手できます。[バッチ API](assets/batch-api.yaml) ファイルをダウンロードし、postman にアップロードして API の機能を確認できます。
+
+>[!MORELIKETHIS]
+>
+>* [AEM Formsas a Cloud Service通信の概要](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [アダプティブFormsおよび通信 API 用のAEM Formsas a Cloud Serviceアーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [通信処理 — 同期 API](/help/forms/aem-forms-cloud-service-communications.md)
+>* [通信処理 — バッチ API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

@@ -2,10 +2,10 @@
 title: Adaptive Forms用の標準搭載のMicrosoft Dynamics 365 および Salesforce データモデルを設定する方法を教えてください。
 description: Microsoft Dynamics 365 と Salesforce をアダプティブFormsと統合する方法を説明します。
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 72%
+source-wordcount: '980'
+ht-degree: 71%
 
 ---
 
@@ -100,3 +100,9 @@ A [!DNL Microsoft® Dynamics 365] フォームデータモデルは、すぐに�
 フォームデータモデルにアクセスするには、**[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL データ統合]**&#x200B;に移動します。使用可能なフォルダーのリストには、[AEM アーキタイププロジェクトの生成](setup-local-development-environment.md#forms-cloud-service-local-development-environment)時に `DappTitle` のタイトルを指定したフォルダーが含まれています。フォルダー名をタップし、 **[!UICONTROL Microsoft® Dynamics 365 データモデル]**&#x200B;をクリックし、「編集」をタップします。 ![編集](assets/edit.png) アイコンをクリックして、フォームデータモデルを表示します。
 
 [[!DNL Microsoft® Dynamics 365] クラウド設定サービス](#configure-dynamics-cloud-service)を設定したら、アダプティブフォームと標準の [!DNL Microsoft® Dynamics 365] データモデルを統合できます。
+
+>[!MORELIKETHIS]
+>
+* [AEM Forms用のデータソースの設定](/help/forms/configure-data-sources.md)
+* [AEM Forms用の Azure ストレージの設定](/help/forms/configure-azure-storage.md)
+[AEM SitesページへのForms Portal の追加](/help/forms/configure-forms-portal.md)
