@@ -2,10 +2,10 @@
 title: WAF ルールを使用したトラフィックフィルタールールの設定
 description: WAF ルールでトラフィックフィルタルールを使用してトラフィックをフィルタリングする
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 445134438c1a43276235b069ab44f99f7255aed1
+source-git-commit: 9345ec974c9fbd525b12b53d20d98809cd72cb04
 workflow-type: tm+mt
-source-wordcount: '2740'
-ht-degree: 2%
+source-wordcount: '3810'
+ht-degree: 1%
 
 ---
 
@@ -429,7 +429,7 @@ AEM as a Cloud Serviceは CDN ログへのアクセスを提供します。CDN �
 "rules": "match=<matching-customer-named-rules-that-are-matched>,waf=<matching-WAF-rules>,action=<action_type>"
 ```
 
-例：
+次に例を示します。
 
 ```
 "rules": "match=Block-Traffic-under-private-folder,Enable-SQL-injection-everywhere,waf="SQLI,SANS",action=block"
@@ -526,3 +526,296 @@ data:
 | *res_age* | 応答が（すべてのノードで）キャッシュされた時間（秒）。 |
 | *ポップ* | CDN キャッシュサーバーのデータセンター。 |
 | *rules* | 一致するルールの名前。<br><br>また、一致がブロックになったかどうかも示します。 <br><br>例：`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`&quot;<br><br>一致するルールがない場合は空です。 |
+
+## ダッシュボードツールのチュートリアル  {#dashboard-tooling}
+
+Adobeは、ダッシュボードツールをコンピューターにダウンロードして、Cloud Manager を通じてダウンロードされた CDN ログを取り込むためのメカニズムを提供します。 このツールを使用すると、トラフィックを分析して、WAF ルールを含む、宣言する適切なトラフィックフィルタールールを考案できます。 この節では、まず、開発環境でのダッシュボードツールに慣れるための手順と、その知識を活用して実稼動環境でルールを作成する方法に関するガイダンスを提供します。
+
+トラフィックフィルタールールをアーリーアダプターのお客様は、ダッシュボードツールの zip を要求する必要があります。この zip には、Docker コンテナの読み込み方法と CDN ログの取り込み方法を説明する README ファイルが含まれています。
+
+
+### ダッシュボードツールの概要 {#dashboard-getting-familiar}
+
+1. 開発環境に関連付けられた Cloud Manager の非実稼動環境設定パイプラインを作成します。 まず、「デプロイメントパイプライン」オプションを選択します。 次に、「ターゲットとなるデプロイメント」、「設定」、リポジトリ、Git ブランチを選択し、コードの場所を/config に設定します。
+
+   ![実稼動以外のパイプラインを追加してデプロイメントを選択](/help/security/assets/waf-select-pipeline1.png)
+
+   ![実稼動以外のパイプラインを追加してターゲットを選択](/help/security/assets/waf-select-pipeline2.png)
+
+
+1. ワークスペースで、ルートレベルにフォルダー設定を作成し、 cdn.yaml という名前のファイルを追加します。ここでは、単純なルールを宣言し、ブロックモードではなくログモードで設定します。
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+       # Log request on simple path
+       - name: log-rule-example
+         when:
+           allOf:
+             - reqProperty: tier
+               matches: "author|publish"
+             - reqProperty: path
+               equals: '/log/me'
+         action: log
+   ```
+
+1. 変更をコミットしてプッシュし、設定パイプラインを使用して設定をデプロイします。
+
+   ![設定パイプラインを実行](/help/security/assets/waf-run-pipeline.png)
+
+1. 設定がデプロイされたら、Web ブラウザーを使用するか、以下の curl コマンドを使用してhttps://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/meにアクセスしてみます。 そのページは存在しないので、404 エラーページが表示されます。
+
+   ```
+   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
+   ```
+
+1. Cloud Manager から CDN ログをダウンロードし、ルールが期待どおりに一致し、ルール名と一致するルールプロパティを持つことを検証します。
+
+   ```
+   "rules": "match=log-rule-example"
+   ```
+
+   ![ログをダウンロードを選択](/help/security/assets/waf-download-logs1.png)
+
+   ![ログをダウンロード](/help/security/assets/waf-download-logs2.png)
+
+1. ダッシュボードツールを使用して Docker イメージを読み込み、README に従って CDN ログを取り込みます。 次のスクリーンショットに示すように、適切な期間、適切な環境および適切なフィルターを選択します。
+
+   ![ダッシュボードから時間を選択](/help/security/assets/dashboard-select-time.png)
+
+   ![ダッシュボードから環境を選択](/help/security/assets/dashboard-select-env.png)
+
+1. 適切なフィルターを適用すると、ダッシュボードに期待されたデータが読み込まれていることを確認できます。 以下のスクリーンショットでは、ルール log-rule-example が、Web ブラウザーと curl を使用して、アイルランドにある同じ IP で過去 2 時間に 3 回トリガーされています。
+
+   ![開発ダッシュボードデータの表示](/help/security/assets/dashboard-see-data-logmode.png)
+   ![開発ダッシュボードのデータウィジェットを表示する](/help/security/assets/dashboard-see-data-logmode2.png)
+
+1. 次に、cdn.yaml を変更してルールをブロックモードにし、ページが期待どおりにブロックされるようにします。 次に、前の手順に従って、設定パイプラインをコミット、プッシュ、トリガーします。
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+       # Log request on simple path
+       - name: log-rule-example
+         when:
+           allOf:
+             - reqProperty: tier
+               matches: "author|publish"
+             - reqProperty: path
+               equals: '/log/me'
+         action: block
+   ```
+
+1. 設定がデプロイされたら、Web ブラウザーを使用するか、以下の curl コマンドを使用してhttps://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/meにアクセスしてみます。 406 エラーページが表示され、リクエストがブロックされたことを示します。
+
+   ```
+   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
+   ```
+
+1. もう一度、CDN ログを Cloud Manager でダウンロードし（注意：新しいリクエストが CDN ログに公開されるまでに最大 5 分かかります）、前の手順と同様に、ダッシュボードツールに読み込みます。 完了したら、ダッシュボードを更新します。 下のスクリーンショットに示すように、 /log/me への要求は、ルールによってブロックされます。
+
+   ![製品ダッシュボードデータの表示](/help/security/assets/dashboard-see-data-blockmode.png)
+   ![製品ダッシュボードデータの表示](/help/security/assets/dashboard-see-data-blockmode2.png)
+
+1. WAF トラフィックフィルタを有効にしている場合（GA の後に追加のライセンスが必要になる）、WAF トラフィックフィルタルールを使用してログモードで繰り返し、ルールを展開します。
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+         - name: log-waf-flags
+           when:
+             reqProperty: tier
+             matches: "author|publish"
+           action:
+             type: log
+             wafFlags:
+                 - SANS
+                 - SIGSCI-IP
+                 - TORNODE
+                 - NOUA
+                 - SCANNER
+                 - USERAGENT
+                 - PRIVATEFILE
+                 - ABNORMALPATH
+                 - TRAVERSAL
+                 - NULLBYTE
+                 - BACKDOOR
+                 - LOG4J-JNDI
+                 - SQLI
+                 - XSS
+                 - CODEINJECTION
+                 - CMDEXE
+                 - NO-CONTENT-TYPE
+                 - UTF8
+   ```
+
+1. 次のようなツールを使用 [nikto](https://github.com/sullo/nikto/tree/master) をクリックして、一致するリクエストを生成します。 以下のコマンドは、1 分以内に約 550 件の悪意のあるリクエストを送信します。
+
+   ```
+   ./nikto.pl -useragent "MyAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h https://publish-pXXXXX-eYYYYY.adobeaemcloud.com
+   ```
+
+1. Cloud Manager から CDN ログをダウンロードし（表示には最大 5 分かかる場合があります）、一致する宣言済みルールと WAF フラグの両方が表示されることを検証します。
+
+   ご覧のように、Nikto が作成したリクエストのいくつかは、WAF によって悪意のあるリクエストとしてフラグ付けされています。 Nikto は CMDEXE、SQLI、NULLBYTE の脆弱性を悪用しようとしたのがわかります。 Nikto を使用して、アクションをログからブロックに変更し、スキャンを再トリガーした場合、以前にフラグを設定したすべてのリクエストが今回ブロックされます。
+
+   ![WAF データを表示](/help/security/assets/dashboard-see-data-waf.png)
+
+
+   リクエストがいずれかの WAF フラグと一致する場合は、宣言されたルールの一部でなくても、それらの WAF フラグが表示されます。これにより、まだ一致ルールを宣言していない、悪意のある新しいトラフィックが常に認識されます。 次に例を示します。
+
+   ```
+   "rules": "match=log-waf-flags,waf=SQLI,action=blocked"
+   ```
+
+1. ログモードで、レート制限を使用するルールで繰り返します。 設定パイプラインをコミット、プッシュ、トリガーして、設定を適用します。
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+         - name: limit-requests-client-ip
+           when:
+             reqProperty: tier
+             matches: "author|publish"
+           rateLimit:
+             limit: 10
+             window: 1
+             penalty: 60
+             groupBy:
+               - reqProperty: clientIp
+           action: log
+   ```
+
+1. 次のようなツールを使用 [ベジータ](https://github.com/tsenart/vegeta) トラフィックを生成します。
+
+   ```
+   echo "GET https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=5s
+   ```
+
+1. ツールを実行した後、CDN ログをダウンロードし、ダッシュボードに取り込んで、レートリミッタールールがトリガーされたことを確認できます
+
+   これで、トラフィックフィルタールールの動作について理解できたので、実稼動環境に移行できます。
+
+### 実稼動環境へのルールのデプロイ {#dashboard-prod-env}
+
+最初は、ルールをログモードで宣言して、偽陽性がないこと、つまり正当なトラフィックが誤ってブロックされることを検証します。
+
+1. 実稼動環境に関連付けられた実稼動設定パイプラインを作成します。
+
+1. 以下の推奨ルールを cdn.yaml にコピーします。 Web サイトのライブトラフィックに固有の特性に基づいてルールを変更することもできます。 設定パイプラインをコミット、プッシュ、トリガーします。 ルールがログモードになっていることを確認します。
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+    #  Block client for 5m when it exceeds 100 req/sec on a time window of 1sec
+    - name: limit-requests-client-ip
+      when:
+        reqProperty: path
+        like: '*'
+      rateLimit:
+        limit: 100
+        window: 1
+        penalty: 300
+        groupBy:
+          - reqProperty: clientIp
+      action: block
+      # Block requests coming from OFAC countries
+      - name: block-ofac-countries
+        when:
+          allOf:
+            - { reqProperty: tier, equals: publish }
+            - reqProperty: clientCountry
+              in:
+                - SY
+                - BY
+                - MM
+                - KP
+                - IQ
+                - CD
+                - SD
+                - IR
+                - LR
+                - ZW
+                - CU
+                - CI
+        action: block
+        # Enable recommended WAF protections (only works if WAF is enabled for your environment)
+        - name: block-waf-flags-globally
+          when:
+            reqProperty: tier
+            matches: "author|publish"
+          action:
+            type: block
+            wafFlags:
+              - SANS
+              - SIGSCI-IP
+              - TORNODE
+              - NOUA
+              - SCANNER
+              - USERAGENT
+              - PRIVATEFILE
+              - ABNORMALPATH
+              - TRAVERSAL
+              - NULLBYTE
+              - BACKDOOR
+              - LOG4J-JNDI
+              - SQLI
+              - XSS
+              - CODEINJECTION
+              - CMDEXE
+              - NO-CONTENT-TYPE
+              - UTF8
+        # Disable protection against CMDEXE on /bin
+        - name: allow-cdmexe-on-root-bin
+          when:
+            allOf:
+              - reqProperty: tier
+                matches: "author|publish"
+              - reqProperty: path
+                matches: "^/bin/.*"
+          action:
+            type: allow
+            wafFlags:
+              - CMDEXE
+```
+
+1. 悪意のあるトラフィックをブロックするためのルールを追加します。 例えば、サイトを攻撃している特定の IP などです。
+
+1. サイトのトラフィック量に応じて、数分、数時間または数日後に、Cloud Manager から CDN ログをダウンロードし、ダッシュボードで分析します。
+
+1. 以下に、考慮事項を示します。
+   1. 宣言されたルールに一致するトラフィックはグラフとリクエストログに表示されるので、宣言されたルールがトリガーされているかどうかを簡単に確認できます。
+   1. WAF フラグに一致するトラフィックは、ルールにログインしていなくても、グラフやリクエストログに表示されます。 これにより、悪意のあるトラフィックが新たに発生した可能性が常に認識され、必要に応じて新しいルールを作成できます。 宣言されたルールに反映されていない WAF フラグを見て、宣言を検討してください。
+   1. 一致ルールについて、リクエストログで偽陽性を調べ、それらをルールから除外できるかどうかを確認します。 例えば、特定のパスに対してのみ偽陽性である可能性があります。
+
+1. 適切なルールを設定してモードをブロックし、追加のルールを追加することを検討します。 より多くのトラフィックを分析する際には、一部のルールをログモードのままにしておく必要がある可能性があります。
+
+1. 設定の再デプロイ
+
+1. 繰り返し処理され、ダッシュボードを頻繁に分析します。
+

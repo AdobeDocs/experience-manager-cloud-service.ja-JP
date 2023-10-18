@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '1238'
-ht-degree: 100%
+source-git-commit: 3a14f3b6f75f6021a7843a5a8a3439d6ea7f886d
+workflow-type: tm+mt
+source-wordcount: '1387'
+ht-degree: 89%
 
 ---
 
@@ -80,7 +80,7 @@ Experience Manager では、アセットの量とサイズに基づいてダウ�
    | ダウンロードオプション | 説明 |
    |---|---|
    | **[!UICONTROL アセットごとに別のフォルダーを作成]** | このオプションを選択すると、アセットごとに、アセットのダウンロード済みレンディションをすべて含んだフォルダーを作成できます。このオプションを選択しない場合、各アセット（ダウンロード用に選択した場合はそのレンディションも含む）は、生成されたアーカイブの親フォルダーに格納されます。 |
-   | **[!UICONTROL メール]** | （ダウンロードへのリンクを含む）メール通知を別のユーザーに送信する場合は、このオプションを選択します。受信者ユーザーは `dam-users` グループのメンバーである必要があります。次の場所にある標準のメールテンプレートを利用できます。<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> デプロイメント時にカスタマイズしたテンプレートは、次の場所で利用できます。 <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>テナント固有のカスタムテンプレートは、次の場所に保存できます。<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
+   | **[!UICONTROL メール]** | （ダウンロードへのリンクを含む）メール通知を別のユーザーに送信する場合は、このオプションを選択します。受信者ユーザーは `dam-users` グループのメンバーである必要があります。次の場所にある標準のメールテンプレートを利用できます。<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> デプロイメント時にカスタマイズしたテンプレートは、次の場所で利用できます。 <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>テナント固有のカスタムテンプレートは、次の場所に保存できます。<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
    | **[!UICONTROL アセット]** | このオプションを選択すると、アセットを元の形式でダウンロードできます。<br>オリジナルアセットにサブアセットがある場合は、サブアセットオプションを使用できます。 |
    | **[!UICONTROL レンディション]** | レンディションは、アセットのバイナリ表現です。アセットには、アップロードされたファイルの一次表現が含まれます。アセットは任意の数の追加の表現を持つことができます。<br>このオプションを選択すると、ダウンロードするレンディションを選択できます。使用できるレンディションは、選択したアセットによって異なります。 |
    | **[!UICONTROL スマート切り抜き]** | このオプションを選択すると、選択したアセットのすべてのスマート切り抜きレンディションが Adobe [!DNL Experience Manager] 内からダウンロードされます。スマート切り抜きレンディションを含む zip ファイルが作成され、ローカルコンピューターにダウンロードされます。 |
@@ -88,7 +88,7 @@ Experience Manager では、アセットの量とサイズに基づいてダウ�
 
 1. ダイアログボックスで、「**[!UICONTROL ダウンロード]**」をクリックします。
 
-   大量のダウンロードに対するメール通知が有効になっている場合は、アーカイブされた zip フォルダーのダウンロード URL を記載したメールがインボックスに表示されます。メールのダウンロードリンクをクリックして、zip アーカイブをダウンロードします。
+   大量のダウンロードに対するメール通知が有効になっている場合は、アーカイブされた zip フォルダーのダウンロード URL を記載したメールがインボックスに表示されます。電子メールからダウンロードリンクをクリックして、zip アーカイブをダウンロードします。
 
    ![email-notifications-for-large-downloads](/help/assets/assets/email-for-large-notification.png)
 
@@ -131,6 +131,15 @@ Experience Manager では、アセットの量とサイズに基づいてダウ�
 1. Dispatcher 設定を通じてアセットダウンロード要求をブロックするには、`dispatcher.any` 設定を編集し、[フィルターセクション](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#configuring)に新しいルールを追加します。
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+
+## OnTime/OffTime レンディション {#on-off-time-rendition}
+
+を有効にするには、以下を実行します。 `OnOffTimeAssetAccessFilter` サービスの場合は、OSGi 設定を作成する必要があります。 このサービスを使用すると、オン/オフタイム設定に基づいて、アセット自体に加えて、レンディションやメタデータへのアクセスをブロックできます。 OSGi 設定の対象は次のとおりです。 `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. 次の手順に従います。
+
+1. Git のプロジェクトコードで、設定ファイルを次の場所に作成します。 `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. ファイルにはが含まれている必要があります `{}` をコンテンツとして指定し、対応する OSGi コンポーネントの空の OSGi 設定を示します。 このアクションを実行すると、サービスが有効になります。
+1. この新しい設定を含むコードを、 [!DNL Cloud Manager].
+1. デプロイすると、アセットのオン/オフタイム設定に従ってレンディションとメタデータにアクセスできるようになります。 現在の日時がオンタイムより前またはオフタイムより後の場合は、エラーメッセージが表示されます。
+空の OSGi 設定の追加について詳しくは、次を参照してください。 [ガイド](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ja).
 
 ## ヒントと制限事項 {#tips-limitations}
 
