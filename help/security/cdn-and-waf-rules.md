@@ -2,7 +2,7 @@
 title: WAF ルールを使用したトラフィックフィルタールールの設定
 description: WAF ルールでトラフィックフィルタルールを使用してトラフィックをフィルタリングする
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 9345ec974c9fbd525b12b53d20d98809cd72cb04
+source-git-commit: 146b85093331fe26da891252c398fc24d4f7c0d6
 workflow-type: tm+mt
 source-wordcount: '3810'
 ht-degree: 1%
@@ -165,7 +165,7 @@ cdn.yaml ファイルのトラフィックフィルタールールの形式を�
 | reqProperty | `string` | リクエストプロパティ。<br><br>次のいずれか： `path` , `queryString`, `method`, `tier`, `domain`, `clientIp`, `clientCountry`<br><br>domain プロパティは、要求のホストヘッダーを小文字で変換したものです。 文字列の比較に役立つので、大文字と小文字の区別による一致の排除はおこなわれません。<br><br>The `clientCountry` は、次の 2 つの文字コードを使用します： [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) |
 | reqHeader | `string` | 指定された名前のリクエストヘッダーを返します |
 | queryParam | `string` | 指定された名前のクエリパラメータを返します |
-| cookie | `string` | 指定された名前の Cookie を返します |
+| reqCookie | `string` | 指定された名前の Cookie を返します |
 
 **述語**
 
