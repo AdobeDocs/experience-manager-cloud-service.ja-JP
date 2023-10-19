@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 3a14f3b6f75f6021a7843a5a8a3439d6ea7f886d
+source-git-commit: d25d433203b8ec6787dec87a9ec35092a247096e
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1388'
 ht-degree: 89%
 
 ---
@@ -132,7 +132,7 @@ Experience Manager では、アセットの量とサイズに基づいてダウ�
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
-## OnTime/OffTime レンディション {#on-off-time-rendition}
+## OnTime または OffTime レンディション {#on-off-time-rendition}
 
 を有効にするには、以下を実行します。 `OnOffTimeAssetAccessFilter` サービスの場合は、OSGi 設定を作成する必要があります。 このサービスを使用すると、オン/オフタイム設定に基づいて、アセット自体に加えて、レンディションやメタデータへのアクセスをブロックできます。 OSGi 設定の対象は次のとおりです。 `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. 次の手順に従います。
 
