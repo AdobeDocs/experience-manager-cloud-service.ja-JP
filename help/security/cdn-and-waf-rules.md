@@ -2,9 +2,9 @@
 title: WAF ルールを使用したトラフィックフィルタールールの設定
 description: WAF ルールでトラフィックフィルタルールを使用してトラフィックをフィルタリングする
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 550ef9a969dc184fccbfd3b79716744cd80ce463
+source-git-commit: 218bf89a21f6b5e7f2027a88c488838b3e72b80e
 workflow-type: tm+mt
-source-wordcount: '3826'
+source-wordcount: '3810'
 ht-degree: 1%
 
 ---
@@ -532,7 +532,7 @@ data:
 
 Adobeは、ダッシュボードツールをコンピューターにダウンロードして、Cloud Manager を通じてダウンロードされた CDN ログを取り込むためのメカニズムを提供します。 このツールを使用すると、トラフィックを分析して、WAF ルールを含む、宣言する適切なトラフィックフィルタールールを考案できます。 この節では、まず、開発環境でのダッシュボードツールに慣れるための手順と、その知識を活用して実稼動環境でルールを作成する方法に関するガイダンスを提供します。
 
-トラフィックフィルタールールをアーリーアダプターのお客様は、ダッシュボードツールの zip を要求する必要があります。この zip には、Docker コンテナの読み込み方法と CDN ログの取り込み方法を説明する README ファイルが含まれています。
+ダッシュボードツールは、 [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) GitHub リポジトリ。
 
 
 ### ダッシュボードツールの概要 {#dashboard-getting-familiar}
