@@ -2,10 +2,10 @@
 title: メールサービスの OAuth2 サポート
 description: Adobe Experience Manager as a Mail Service の Oauth2 サポート
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 417efad485226464b396c3ac3ef5ca8968309792
 workflow-type: tm+mt
 source-wordcount: '679'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -56,9 +56,15 @@ AEM as a Cloud Service のメールサービスの詳細については、[メ�
 
 次に、次の手順に従って OSGi 設定の一部である更新トークンを生成します。
 
-1. `clientID` と `tenantID` を自分のアカウントに固有の値に置き換えてから、ブラウザーで次の URL を開きます。`https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
+1. `clientID` と `tenantID` を自分のアカウントに固有の値に置き換えてから、ブラウザーで次の URL を開きます。
+
+   `https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
+
 1. 指示に従って、権限を許可します。
-1. URL は、`http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#` の形式で構成された新しい場所にリダイレクトします。
+1. URL は新しい場所にリダイレクトします。次の形式で構築されます。
+
+   `http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
+
 1. 上記の例の `<code>` の値をコピーします。
 1. 次の cURL コマンドを使用して、 refreshToken を取得します。tenantID、clientID および clientSecret は、アカウントの値とおよび `<code>` の値と置き換えます。
 
