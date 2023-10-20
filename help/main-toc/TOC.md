@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2bb6c6b5846264145543134f607bd6520865b4ed
+source-git-commit: bb7bbe5e31d75a72b3c81939ce560e3ff3979a86
 workflow-type: tm+mt
-source-wordcount: '4330'
+source-wordcount: '4331'
 ht-degree: 93%
 
 ---
@@ -575,7 +575,7 @@ ht-degree: 93%
          + [コアコンポーネントに基づくアダプティブフォームを外部 Web ページに埋め込む](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [基盤コンポーネントに基づくアダプティブフォームを外部 Web ページに埋め込む](/help/forms/embed-adaptive-form-external-web-page.md)
       + フォームデータモデル {#use-form-data-model}
-         + [データソースの Cloud Service への接続](/help/forms/data-integration.md)
+         + [AEM Formsをデータベースまたはデータソースに接続する](/help/forms/data-integration.md)
          + [データソースの設定](/help/forms/configure-data-sources.md)
          + [ [!DNL Microsoft Dynamics]  OData の設定](/help/forms/ms-dynamics-odata-configuration.md)
          + [OAuth 2.0 クライアント資格情報フローを使用した Salesforce アプリケーションの統合](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
