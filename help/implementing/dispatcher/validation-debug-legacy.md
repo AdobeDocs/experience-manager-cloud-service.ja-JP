@@ -313,7 +313,7 @@ Apache 仮想ホスト設定には、インクルードとして指定できる 
 
 >[!TIP]
 >
-制限の少ない方法でより多くのファイルを含めることができるようにするには、柔軟な Dispatcher 設定モードに切り替えることをお勧めします。フレキシブルモードについて詳しくは、[Dispatcher ツールを使用した検証とデバッグ](/help/implementing/dispatcher/validation-debug.md)のドキュメントを参照してください。
+>制限の少ない方法でより多くのファイルを含めることができるようにするには、柔軟な Dispatcher 設定モードに切り替えることをお勧めします。フレキシブルモードについて詳しくは、[Dispatcher ツールを使用した検証とデバッグ](/help/implementing/dispatcher/validation-debug.md)のドキュメントを参照してください。
 
 または、`conf.d/rewrites/default_rewrite.rules` という名前の、書き換えルールの&#x200B;**デフォルト**バージョンをインクルードすることもできます。
 変数ファイルにはデフォルトバージョンはありません。
@@ -353,7 +353,7 @@ Cloud manager validator 2.0.xx
 このフェーズでは、イメージで Docker を起動して Apache 構文をチェックします。Docker をローカルにインストールする必要がありますが、AEM を実行する必要はありません。
 
 >[!NOTE]
-Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。この前提条件は、ローカルコンピューター上で Dispatcher を実行してデバッグするために必要です。
+>Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。この前提条件は、ローカルコンピューター上で Dispatcher を実行してデバッグするために必要です。
 
 このフェーズは、`validator full -d out src/dispatcher` を使用して独立して実行することもできます。このコマンドは、コマンド `bin/docker_run.sh out host.docker.internal:4503 8080` に必要な「out」ディレクトリを生成します。
 
