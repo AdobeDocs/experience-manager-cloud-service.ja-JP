@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bb7bbe5e31d75a72b3c81939ce560e3ff3979a86
+source-git-commit: 5e6d209729809952b2478fd0a71b32668ba41230
 workflow-type: tm+mt
-source-wordcount: '4331'
+source-wordcount: '4336'
 ht-degree: 93%
 
 ---
@@ -873,6 +873,7 @@ ht-degree: 93%
          + [IP 許可リストの適用と適用解除](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [IP 許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [ライセンスダッシュボード](/help/implementing/cloud-manager/license-dashboard.md)
+      + [Cloud Serviceコンテンツリクエストについて](/help/implementing/cloud-manager/content-requests.md)
       + [Cloud Manager に関する FAQ](/help/implementing/cloud-manager/faqs.md)
    + AEM as a Cloud Service 向けの開発 {#developing}
       + [AEM プロジェクトの構造](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
