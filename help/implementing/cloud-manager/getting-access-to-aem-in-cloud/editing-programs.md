@@ -2,10 +2,10 @@
 title: プログラムの編集
 description: 実稼動およびサンドボックスプログラムを編集し、作成後にオプションを調整する方法について説明します。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 50%
+source-wordcount: '507'
+ht-degree: 44%
 
 ---
 
@@ -53,15 +53,19 @@ ht-degree: 50%
    * この日付は、情報提供のみを目的としています。 プログラムの概要ページの Go Live ウィジェットをトリガーします。 次に、Adobe Experience Manager(AEM)as a Cloud Serviceのベストプラクティスドキュメントへの製品内リンクを提供し、ジャーニーに合わせて Go Live を成功に導きます。
    * このタブは、サンドボックスプログラムでは使用できません。
 
+1. 必要な権限がプログラムで使用できる場合は、 **セキュリティ** タブには、プログラムのセキュリティオプションを変更できる場所が表示されます。
+
+   ![セキュリティ設定を編集](assets/edit-program-security.png)
+
+   * HIPAA を有効または無効にするには、次の操作を行う必要があります： [プログラムの作成。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+      * アドビの HIPAA 対応ソリューションの実装について詳しくは、[こちら](https://www.adobe.com/go/hipaa-ready)を参照してください。
+   * 有効化すると、WAF-DDOS 保護は、 [実稼動以外のパイプライン。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+
+   {{waf-limited-release}}
+
 1. クリック **更新** をクリックして、プログラムに対する変更を保存します。
 
 ソリューションやアドオンの追加と削除を含め、プログラムが編集されるたびに、その変更は次回のデプロイメント後に有効になります。
-
-実稼動プログラムで強化されたセキュリティが有効になっている場合、追加の「**セキュリティの強化**」タブが&#x200B;**プログラムを編集**&#x200B;ウィンドウで使用可能になり、その機能がプログラムに対してアクティブであることを確認できます。
-
-![プログラムのセキュリティ強化がアクティブである](assets/edit-program-enhanced.png)
-
-プログラムの作成後は、この設定を編集できません。 拡張セキュリティオプションの詳細については、 [実稼働プログラムの作成](creating-production-programs.md).
 
 ## サンドボックスプログラムの削除 {#delete-sandbox-program}
 

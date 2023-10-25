@@ -3,10 +3,10 @@ title: CI／CD パイプライン
 description: Cloud Manager の CI／CD パイプラインと、CI／CD パイプラインを使用してコードを効率的にデプロイする方法について説明します。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
 workflow-type: tm+mt
-source-wordcount: '1337'
-ht-degree: 98%
+source-wordcount: '1448'
+ht-degree: 92%
 
 ---
 
@@ -32,12 +32,6 @@ Cloud Manager には、次の 2 種類のパイプラインが用意されてい
 
 ![パイプラインのタイプ](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
 
-## ビデオの概要 {#video}
-
-パイプラインタイプの概要については、この短いビデオを視聴してください。
-
->[!VIDEO](https://video.tv.adobe.com/v/342363)
-
 ## 実稼動パイプライン {#prod-pipeline}
 
 実稼動パイプラインは、ソースコードを実稼動用にデプロイするための調整された一連のステップで構成される専用のパイプラインです。これらのステップには、ビルド、パッケージ化、テスト、検証およびデプロイがあり、最初はすべてステージング環境で行われます。したがって、実稼働パイプラインは、実稼働環境とステージング環境のセットを作成した場合にのみ追加できます。
@@ -59,6 +53,7 @@ Cloud Manager には、次の 2 種類のパイプラインが用意されてい
 実稼働パイプラインと実稼動以外のパイプラインに加えて、デプロイするコードのタイプによってパイプラインを区別することもできます。
 
 * **[フルスタックパイプライン](#full-stack-pipeline)** - 1 つ以上の AEM サーバーアプリケーションを含んだバックエンドおよびフロンエンドコードビルドと HTTPD／Dispatcher 設定を同時にデプロイします。
+* **[デプロイメントパイプラインの設定](#config-deployment-pipeline)** - AEM環境、メンテナンスタスク、CDN ルールなどの設定をおこないます。
 * **[フロントエンドパイプライン](#front-end)** - 1 つ以上のクライアントサイド UI アプリケーションを含んだフロントエンドコードビルドをデプロイします。
 * **[Web 階層設定パイプライン](#web-tier-config-pipelines)** - HTTPD／Dispatcher 設定をデプロイします。
 
@@ -73,9 +68,11 @@ Cloud Manager で使用できるすべてのパイプラインとその用途を
 | 実稼動または非実稼動 | デプロイメント | フルスタック | バックエンドおよびフロンエンドコードビルドと HTTPD／Dispatcher 設定を同時にデプロイ | フロントエンドコードを AEM サーバーコードと同時にデプロイする必要がある場合。<br>フロントエンドパイプラインまたは web 階層設定パイプラインがまだ導入されていない場合。 |
 | 実稼動または非実稼動 | デプロイメント | フロントエンド | 1 つ以上のクライアントサイド UI アプリケーションを含んだフロントエンドコードビルドをデプロイ | 複数の同時フロントエンドパイプラインをサポート<br>フルスタックデプロイメントよりはるかに高速 |
 | 実稼動または非実稼動 | デプロイメント | Web 階層設定 | HTTPD／Dispatcher 設定をデプロイ | 数分でデプロイ |
+| 実稼動または非実稼動 | デプロイメント | Config | トラフィックフィルタールールをデプロイします | 数分でデプロイ |
 | 実稼動以外 | コード品質 | フルスタック | デプロイメントなしでフルスタックコードに対してコード品質スキャンを実行 | 複数のパイプラインをサポート |
 | 実稼動以外 | コード品質 | フロントエンド | デプロイメントなしでフロントエンドコードに対してコード品質スキャンを実行 | 複数のパイプラインをサポート |
 | 実稼動以外 | コード品質 | Web 階層設定 | デプロイメントなしで Dispatcher 設定に対してコード品質スキャンを実行 | 複数のパイプラインをサポート |
+| 実稼動以外 | コード品質 | Config | トラフィックフィルタールールをデプロイします |  |
 
 従来の単一のフロントエンドリポジトリーまたは独立したフロントエンドリポジトリーをセットアップした Cloud Manager パイプライン設定を次の図に示します。
 
@@ -106,6 +103,26 @@ Cloud Manager で使用できるすべてのパイプラインとその用途を
 * 環境に対応する web 階層設定パイプラインが存在しない場合、ユーザーは、Dispatcher 設定を含めるまたは無視するようにフルスタックパイプラインを設定できます。
 
 フルスタックパイプラインは、コード品質パイプラインとすることも、デプロイメントパイプラインとすることもできます。
+
+### フルスタックパイプラインの設定 {#configure-full-stack}
+
+フルスタックパイプラインの設定方法については、次のドキュメントを参照してください。
+
+* [実稼動パイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+* [実稼動以外のパイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
+
+## デプロイメントパイプラインの設定 {#config-deployment-pipeline}
+
+設定デプロイメントパイプラインを使用して、メンテナンスタスクや CDN ルールなどの設定をAEM環境にデプロイできます。
+
+ドキュメントを参照してください [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md) を参照して、リポジトリの設定を管理し、適切にデプロイする方法を確認してください。
+
+### 設定デプロイメントパイプラインの設定 {#configure-config-deployment}
+
+設定デプロイメントパイプラインの設定方法については、次のドキュメントを参照してください。
+
+* [実稼動パイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
+* [実稼動以外のパイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
 
 ## フロントエンドパイプライン {#front-end}
 
@@ -142,14 +159,6 @@ Cloud Manager で使用できるすべてのパイプラインとその用途を
 
 このプロセスの仕組みや、このプロセスの可能性を最大限に引き出すために知っておきたいいくつかの考慮事項については、[フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)を参照してください。
 
-### フルスタックパイプラインの設定 {#configure-full-stack}
-
-フルスタックパイプラインの設定方法については、次のドキュメントを参照してください。
-
-* [実稼動パイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [実稼動以外のパイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
-
-
 ## Web 階層設定パイプライン {#web-tier-config-pipelines}
 
 Web 階層設定パイプラインを使用すると、HTTPD／Dispatcher 設定を他のコード変更から切り離して、この設定のみを AEM ランタイムにデプロイできます。これは効率化されたパイプラインで、Dispatcher 設定変更のみをデプロイしたい場合に、ほんの数分で行うことができます。
@@ -164,7 +173,7 @@ Web 階層設定パイプラインを使用すると、HTTPD／Dispatcher 設定
 * Web 階層設定パイプラインを使用するには、[Dispatcher ツールのフレキシブルモードをオプトインする](/help/implementing/dispatcher/disp-overview.md#validation-debug)必要があります。
 * パイプラインを設定または実行するには、ユーザーが&#x200B;**デプロイメントマネージャー**&#x200B;の役割でログインしている必要があります。
 * Web 階層設定パイプラインは、常に 1 つの環境に 1 つしか存在できません。
-* 対応するフルスタックパイプラインが実行中の場合、ユーザーは Web 層設定パイプラインを設定できません。
+* 対応するフルスタックパイプラインの実行中は、web 階層設定パイプラインを設定できません。
 * Web 階層構造は、[クラウド内の Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) のドキュメントで定義されているフレキシブルモード構造に準拠している必要があります。
 
 さらに、web 階層設定パイプラインを導入した場合に[フルスタックパイプライン](#full-stack-pipeline)がどのように動作するかを認識しておいてください。
@@ -175,9 +184,15 @@ Web 階層設定パイプラインを使用すると、HTTPD／Dispatcher 設定
 
 Web 階層設定パイプラインは、コード品質タイプでもデプロイメントタイプでもかまいません。
 
-### Web 階層設定パイプラインの設定 {#configure-web-tier-config-pipelines}
+### Web 層パイプラインの設定 {#configure-web-tier}
 
-Web 階層設定パイプラインの設定方法については、次のドキュメントを参照してください。
+Web 層パイプラインの設定方法については、次のドキュメントを参照してください。
 
-* [実稼動パイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [実稼動以外のパイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+* [実稼動パイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
+* [実稼動以外のパイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
+
+## パイプラインタイプの概要ビデオ {#video}
+
+パイプラインタイプの概要については、この短いビデオを視聴してください。
+
+>[!VIDEO](https://video.tv.adobe.com/v/342363)

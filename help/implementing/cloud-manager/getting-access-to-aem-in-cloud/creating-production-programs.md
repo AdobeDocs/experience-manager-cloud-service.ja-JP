@@ -2,10 +2,10 @@
 title: 実稼動プログラムの作成
 description: Cloud Manager を使用して、ライブトラフィックをホストする独自の実稼動プログラムを作成する方法について説明します。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '581'
-ht-degree: 100%
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+workflow-type: tm+mt
+source-wordcount: '604'
+ht-degree: 88%
 
 ---
 
@@ -32,12 +32,15 @@ ht-degree: 100%
 
 1. オプションとして、画像ファイルを&#x200B;**プログラム画像を追加**&#x200B;ターゲットにドラッグ＆ドロップするか、ファイルブラウザーからクリックして画像を選択することで、プログラムに画像を追加できます。「**続行**」をタップまたはクリックします。
 
-1. セキュリティの権限を強化した場合、「**セキュリティの強化**」タブには実稼動プログラムに対して「 **セキュリティの強化を有効にする**」というオプションが表示されます。必要に応じて、「セキュリティの強化を有効にする」というオプションをオンにし、「**続行**」をタップまたはクリックします。
+1. 必要な権限がある場合は、 **セキュリティ** タブが表示され、有効化するオプションが提供されます **HIPAA** および/または **WAF-DDOS 保護** 実稼動プログラム用に作成されます。 作成するプログラムに必要な場合は、該当するオプションをオンにし、をタップまたはクリックします。 **続行**.
 
-   * プログラムの作成後に「セキュリティの強化」を有効または無効にすることはできません。
-   * アドビの HIPAA 対応ソリューションの実装について詳しくは、[こちら](https://www.adobe.com/go/hipaa-ready)を参照してください。
+   * プログラムの作成後に HIPAA を有効または無効にすることはできません。
+      * アドビの HIPAA 対応ソリューションの実装について詳しくは、[こちら](https://www.adobe.com/go/hipaa-ready)を参照してください。
+   * 有効化すると、WAF-DDOS 保護は、 [実稼動以外のパイプライン。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
 
-   ![「セキュリティの強化」オプション](assets/create-production-program-enhanced.png)
+   {{waf-limited-release}}
+
+   ![セキュリティオプション](assets/create-production-program-security.png)
 
 1. 「**ソリューションとアドオン**」タブで、プログラムに含めるソリューションを選択します。
 
@@ -65,7 +68,7 @@ ht-degree: 100%
 
 ![Cloud Manager の概要](assets/navigate-cm.png)
 
-## プログラムへのアクセス {#acessing}
+## プログラムへのアクセス {#accessing}
 
 1. ランディングページにプログラムカードが表示されたら、省略記号ボタンを選択して、使用可能なメニューオプションを表示します。
 

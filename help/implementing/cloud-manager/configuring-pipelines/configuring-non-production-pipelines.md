@@ -3,10 +3,10 @@ title: 実稼動以外のパイプラインの設定
 description: 実稼動環境にデプロイする前にコードの品質をテストするための実稼動以外のパイプラインを設定する方法を説明します。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1356'
-ht-degree: 100%
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+workflow-type: tm+mt
+source-wordcount: '1290'
+ht-degree: 80%
 
 ---
 
@@ -14,6 +14,8 @@ ht-degree: 100%
 # 実稼動以外のパイプラインの設定 {#configuring-non-production-pipelines}
 
 実稼動環境にデプロイする前にコードの品質をテストするための実稼動以外のパイプラインを設定する方法を説明します。
+
+ユーザーが **[デプロイメントマネージャー](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** 実稼動以外のパイプラインを設定するためのロール。
 
 ## 実稼動以外のパイプライン {#non-production-pipelines}
 
@@ -62,40 +64,16 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
 
 1. **実稼動以外のパイプラインを追加**&#x200B;ダイアログの「**ソースコード**」タブで、パイプラインが処理するコードのタイプを選択する必要があります。
 
-   * **[フロントエンドコード](#front-end-code)**
    * **[フルスタックコード](#full-stack-code)**
-   * **[Web 階層設定](#web-tier-config)**
+   * **[ターゲットのデプロイメント](#targeted-deployment)**
 
-実稼動以外のパイプラインの作成を完了する手順は、選択した&#x200B;**ソースコード**&#x200B;のオプションによって変わります。上記のリンクをたどって、このドキュメントの次の節に移動し、パイプラインの設定を完了します。
+ドキュメントを参照してください [CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) を参照してください。
 
-### フロントエンドコード {#front-end-code}
-
-フロントエンドコードパイプラインは、1 つ以上のクライアントサイド UI アプリケーションを含んだフロントエンドコードビルドをデプロイします。このタイプのパイプラインについて詳しくは、[CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)ドキュメントを参照してください。
-
-フロントエンドコードの実稼動以外のパイプラインの設定を完了するには、次の手順に従います。
-
-1. 「**ソースコード**」タブで、次のオプションを定義する必要があります。
-
-   * **適格なデプロイメント環境** - パイプラインがデプロイメントパイプラインの場合、デプロイ先の環境を選択する必要があります。
-   * **リポジトリ** - このオプションは、パイプラインがコードを取得する Git リポジトリを定義します。
-
-   >[!TIP]
-   > 
-   >Cloud Manager でリポジトリを追加および管理する方法については、[リポジトリの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)を参照してください。
-
-   * **Git ブランチ** - このオプションは、選択したパイプラインのどのブランチからコードを取得するかを定義します。
-      * ブランチ名の最初の数文字と、このフィールドのオートコンプリート機能を入力します。これにより、選択可能な一致するブランチが検索されます。
-   * **コードの場所** - このオプションは、パイプラインがコードを取得する必要がある、選択したリポジトリーのブランチ内のパスを定義します。
-
-   ![フロントエンドパイプライン](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
-
-1. 「**保存**」をクリックします。
-
-パイプラインが保存され、**プログラムの概要**&#x200B;ページの&#x200B;**パイプライン**&#x200B;カードの[パイプラインを管理](managing-pipelines.md)できるようになります。
+実稼動以外のパイプラインの作成を完了する手順は、選択したソースコードのタイプによって異なります。 上記のリンクをたどって、このドキュメントの次の節に移動し、パイプラインの設定を完了します。
 
 ### フルスタックコード {#full-stack-code}
 
-フルスタックコードパイプラインは、1 つ以上の AEM サーバーアプリケーションを含んだバックエンドおよびフロンエンドコードビルドと HTTPD／Dispatcher 設定を同時にデプロイします。このタイプのパイプラインについて詳しくは、[CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)のドキュメントを参照してください。
+フルスタックコードパイプラインは、1 つ以上の AEM サーバーアプリケーションを含んだバックエンドおよびフロンエンドコードビルドと HTTPD／Dispatcher 設定を同時にデプロイします。
 
 >[!NOTE]
 >
@@ -115,12 +93,12 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
    * **Git ブランチ** - このオプションは、選択したパイプラインのどのブランチからコードを取得するかを定義します。
       * ブランチ名の最初の数文字と、このフィールドのオートコンプリート機能を入力します。これにより、選択できる一致するブランチを検索できます。
    * **web 階層設定を無視** - オンにすると、パイプラインは web 階層設定をデプロイしなくなります。
-
    * **パイプライン** - パイプラインがデプロイメントパイプラインの場合、テストフェーズを実行するように選択できます。このフェーズで有効にするオプションを選択します。どのオプションも選択していない場合、テストフェーズはパイプラインの実行中に表示されません。
 
       * **実稼動機能テスト** - 開発環境に対して[実稼動機能テスト](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)を実行します。
       * **カスタム機能テスト** - 開発環境に対して[カスタム機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)を実行します。
       * **カスタム UI テスト** - カスタムアプリケーションに対して[カスタム UI テスト](/help/implementing/cloud-manager/ui-testing.md)を実行します。
+      * **エクスペリエンス監査**  — 実行 [エクスペリエンス監査](/help/implementing/cloud-manager/experience-audit-testing.md)
 
    ![フルスタックパイプライン](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -128,19 +106,35 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
 
 パイプラインが保存され、**プログラムの概要**&#x200B;ページの&#x200B;**パイプライン**&#x200B;カードの[パイプラインを管理](managing-pipelines.md)できるようになります。
 
-### Web 階層設定 {#web-tier-config}
+### ターゲットのデプロイメント {#targeted-deployment}
 
-Web 階層設定パイプラインは HTTPD／Dispatcher 設定をデプロイします。このタイプのパイプラインについて詳しくは、[CI／CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline)を参照してください。
+ターゲットのデプロイメントは、AEMアプリケーションの選択した部分のコードのみをデプロイします。 このようなデプロイメントでは、次の操作を選択できます。 **次を含む** 次のいずれかのタイプのコード。
+
+* **[Config](#config)** - AEM環境、メンテナンスタスク、CDN ルールなどの設定をおこないます。
+   * ドキュメントを見る [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md) トラフィックフィルタールールをリポジトリで管理し、適切にデプロイする方法を学ぶには、次の手順を実行します。
+* **[フロントエンドコード](#front-end-code)** - AEMアプリケーションのフロントエンド用に JavaScript と CSS を設定します。
+   * フロントエンドパイプラインを使用すると、フロントエンド開発者の作業の独立性が高まるほか、開発プロセスを速めることができます。
+   * このプロセスの可能性を最大限に引き出すために知っておくべきいくつかの考慮事項と、このプロセスがどのように機能するかについては、[フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)のドキュメントを参照してください。
+* **[Web 層の設定](#web-tier-config)** - Web ページをクライアントに保存、処理、配信するための Dispatcher プロパティを設定します。
 
 >[!NOTE]
 >
->選択した環境に web 階層コードパイプラインが存在する場合、この選択は無効になります。
+>* 選択した環境に web 階層コードパイプラインが存在する場合、この選択は無効になります。
+>* 環境に既にフルスタックパイプラインがデプロイされている場合、同じ環境に web 階層設定パイプラインを作成すると、フルスタックパイプライン内の既存の web 階層設定は無視されます。
+> * いつでも、環境ごとに 1 つの設定デプロイメントパイプラインしか存在できません。
 
-Web 階層コードの実稼動以外のパイプラインの設定を完了するには、次の手順に従います。
+実稼動以外のターゲットデプロイメントパイプラインの作成を完了する手順は、デプロイメントタイプを選択した場合と同じです。
 
-1. 「**ソースコード**」タブで、次のオプションを定義する必要があります。
+1. 必要なデプロイメントの種類を選択します。
 
-   * **適格なデプロイメント環境** - パイプラインがデプロイメントパイプラインの場合、デプロイ先の環境を選択する必要があります。
+![ターゲットのデプロイメントオプション](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-targeted-deployment.png)
+
+1. 次を定義： **適格なデプロイメント環境**.
+
+   * パイプラインがデプロイメントパイプラインの場合は、デプロイ先の環境を選択する必要があります。
+
+1. の下 **ソースコード**、次のオプションを定義します。
+
    * **リポジトリ** - このオプションは、パイプラインがコードを取得する Git リポジトリを定義します。
 
    >[!TIP]
@@ -148,25 +142,16 @@ Web 階層コードの実稼動以外のパイプラインの設定を完了す�
    >Cloud Manager でリポジトリを追加および管理する方法については、[リポジトリの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)を参照してください。
 
    * **Git ブランチ** - このオプションは、選択したパイプラインのどのブランチからコードを取得するかを定義します。
+      * ブランチ名の最初の数文字と、このフィールドのオートコンプリート機能を入力します。これにより、選択可能な一致するブランチが検索されます。
    * **コードの場所** - このオプションは、パイプラインがコードを取得する必要がある、選択したリポジトリーのブランチ内のパスを定義します。
-      * Web 階層設定パイプラインの場合、このパスには通常、`conf.d`、`conf.dispatcher.d` および `opt-in` ディレクトリが含まれます。
-      * 例えば、プロジェクト構造が [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)から生成された場合、パスは `/dispatcher/src` のようになります。
 
-   ![Web 階層パイプライン](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-web-tier.png)
+   ![設定デプロイメントパイプライン](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
 
 1. 「**保存**」をクリックします。
 
->[!NOTE]
->
->既存のフルスタックパイプラインが環境にデプロイされている場合、同じ環境に対して web 層設定パイプラインを作成すると、フルスタックパイプライン内の既存の web 層設定が無視されます。
+パイプラインが保存され、**プログラムの概要**&#x200B;ページの&#x200B;**パイプライン**&#x200B;カードの[パイプラインを管理](managing-pipelines.md)できるようになります。
 
-パイプラインが保存され、**プログラムの概要**&#x200B;ページの&#x200B;**パイプライン**&#x200B;カードで[パイプラインを管理](managing-pipelines.md)できるようになりました。
-
-## フロントエンドパイプラインを使用したサイトの開発 {#developing-with-front-end-pipeline}
-
-フロントエンドパイプラインを使用すると、フロントエンド開発者の作業の独立性が高まるほか、開発プロセスを速めることができます。
-
-このプロセスの可能性を最大限に引き出すために知っておくべきいくつかの考慮事項と、このプロセスがどのように機能するかについては、[フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)のドキュメントを参照してください。
+ターゲットのデプロイメントパイプラインを実行する際の設定 [WAF 設定など](/help/security/traffic-filter-rules-including-waf.md) パイプラインで定義した環境、リポジトリ、ブランチに保存されている場合は、デプロイされます。
 
 ## Dispatcher パッケージのスキップ {#skip-dispatcher-packages}
 
