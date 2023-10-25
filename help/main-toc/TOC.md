@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5e6d209729809952b2478fd0a71b32668ba41230
+source-git-commit: c9ad4b6f2ae5107569c556ca11c75868c9e4be63
 workflow-type: tm+mt
-source-wordcount: '4336'
+source-wordcount: '4335'
 ht-degree: 93%
 
 ---
@@ -168,7 +168,7 @@ ht-degree: 93%
    + [AEM as a Cloud Service の IMS サポート](/help/security/ims-support.md)
    + [AEM as a Cloud Service のサイト Cookie サポートポリシー](/help/security/same-site-cookie-support.md)
    + [メールサービスの OAuth2 サポート](/help/security/oauth2-support-for-mail-service.md)
-   + [トラフィックをフィルタリングする WAF ルールを使用したトラフィックフィルタルールの設定](/help/security/cdn-and-waf-rules.md)
+   + [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service のセキュリティに関する考慮事項](/help/security/security-considerations.md)
 + オンボーディング {#onboarding}
    + [ここから開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ja)
@@ -578,7 +578,7 @@ ht-degree: 93%
          + [AEM Formsをデータベースまたはデータソースに接続する](/help/forms/data-integration.md)
          + [データソースの設定](/help/forms/configure-data-sources.md)
          + [ [!DNL Microsoft Dynamics]  OData の設定](/help/forms/ms-dynamics-odata-configuration.md)
-         + [OAuth 2.0 クライアント資格情報フローを使用した Salesforce アプリケーションの統合](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+         + [OAuth 2.0 クライアント資格情報フローを使用して、アダプティブフォームを Salesforce アプリケーションに接続します](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [ [!DNL Azure]  ストレージの設定](/help/forms/configure-azure-storage.md)
          + [ [!DNL Microsoft Dynamics 365] および [!DNL Salesforce] クラウドサービスの設定](/help/forms/configure-msdynamics-salesforce.md)
          + [フォームデータモデルの作成](/help/forms/create-form-data-models.md)

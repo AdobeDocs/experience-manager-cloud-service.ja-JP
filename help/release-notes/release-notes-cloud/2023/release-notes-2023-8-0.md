@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0 リリースのリリースノート。'
-source-git-commit: 2b242cb10fb5d1da725c1396633d2db779a78639
+exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
+source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
 workflow-type: tm+mt
 source-wordcount: '1686'
-ht-degree: 22%
+ht-degree: 30%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の 2023.8.0 リリースノート {#release-notes}
 
@@ -27,7 +27,7 @@ ht-degree: 22%
 
 ### の新機能[!DNL Experience Manager Sites] {#sites-features}
 
-* The [コンテンツフラグメントコンソール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en) では、タグを表示し、メタデータとしてコンテンツフラグメントに適用されたタグで検索できるようになりました。 この機能で Assets UI に切り替える必要がなくなり、コンテキストの切り替えが減り、効率が向上します。
+* The [コンテンツフラグメントコンソール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ja) では、タグを表示し、メタデータとしてコンテンツフラグメントに適用されたタグで検索できるようになりました。 この機能で Assets UI に切り替える必要がなくなり、コンテキストの切り替えが減り、効率が向上します。
 
   ![コンテンツフラグメントコンソールでのタグ付け](/help/assets/content-fragments-console-tags.png)
 * AEM as a Cloud Serviceで新しいコンテンツフラグメントエディターを使用できるようになりました。 これにより、コンテンツ作成者は、オーサリングタスクを合理化し、コンテンツの編集中に異なるアプリを切り替える必要性を減らし、生産性を高めることができます。
@@ -54,7 +54,7 @@ ht-degree: 22%
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Assets ビューの新機能 {#assets-view-features}
+### アセットビューの新機能 {#assets-view-features}
 
 <!--
 
@@ -66,17 +66,17 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 -->
 
-* **データソースからのアセットの一括読み込み**：管理者は、 [多数のアセットを読み込む機能](/help/assets/bulk-import-assets-view.md) データソースからAEM Assetsへ。 管理者は、個々のアセットやフォルダーをAEM Assetsにアップロードする必要はありません。 一括インポートでサポートされるデータソースには、Azure、AWS、Google Cloud、Dropboxが含まれます。
+* **データソースからのアセットの一括読み込み**：管理者は、 [多数のアセットを読み込む機能](/help/assets/bulk-import-assets-view.md) データソースからAEM Assetsへ。 管理者は、個々のアセットやフォルダーを AEM Assets にアップロードする必要がなくなりました。一括読み込みでサポートされるデータソースには、Azure、AWS、Google Cloud、Dropbox が含まれます。
 
   ![データソースからのアセットの一括読み込み](/help/release-notes/assets/bulk-import.png)
 
-* **画像編集ツール (Adobe Express機能 )**：簡単で直感的 [画像編集ツール (Adobe Express機能を利用 )](/help/assets/edit-images-assets-view.md) は、AEM Assets内で直接使用して、コンテンツの再利用を促進し、コンテンツの速度を向上できます。
+* **Adobe Express を活用した画像編集ツール**：簡単で直感的 [画像編集ツール (Adobe Express機能を利用 )](/help/assets/edit-images-assets-view.md) は、AEM Assets内で直接使用して、コンテンツの再利用を促進し、コンテンツの速度を向上できます。
 
-  ![画像編集とAdobe Express](/help/release-notes/assets/edit-adobe-express.png)
+  ![Adobe Express を使用した画像の編集](/help/release-notes/assets/edit-adobe-express.png)
 
-* **My Workspace クイックアクセス用に項目をピン留めする際の柔軟性**：組織全体またはグループのリストの項目を選択してピン留めし、それらを [My Workspace のクイックアクセスセクション](/help/assets/my-workspace-assets-view.md) 選択内容に基づいて選択します。
+* **マイワークスペースのクイックアクセス用に項目をピン留めする際の柔軟性**：組織全体またはグループのリストの項目を選択してピン留めし、それらを [My Workspace のクイックアクセスセクション](/help/assets/my-workspace-assets-view.md) 選択内容に基づいて選択します。
 
-  ![グループの項目をピン留めする](/help/release-notes/assets/pin-items-for-groups.png)
+  ![グループ用の項目のピン留め](/help/release-notes/assets/pin-items-for-groups.png)
 
 ### 管理ビューの新機能 {#admin-view-features}
 
@@ -96,7 +96,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **Assets**:Experience Managerで管理される ZIP アーカイブおよび [ファイルを直接Experience Managerに抽出](/help/assets/manage-digital-assets.md#extract-zip-archives) ダウンロードせずに
 
-  ![グループの項目をピン留めする](/help/release-notes/assets/extract-archive.png)
+  ![グループ用の項目のピン留め](/help/release-notes/assets/extract-archive.png)
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -127,19 +127,19 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **通信 API でのページ数のサポート**：これで、通信 API を使用してドキュメントを取得すると共に、ドキュメント内に含まれるページ数に関する貴重な情報を受け取ることができます。
 
-* **[ルールエディターでのカスタムエラーハンドラーによるエラー処理](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**：外部サービスから返されたエラーに応じてカスタム関数を呼び出し、エンドユーザーに対してカスタマイズされた応答を提供できるようになりました。 例えば、特定のエラーコードに対してバックエンドでカスタムワークフローを呼び出したり、サービスが停止していることを顧客に通知したりできます.
+* **[ルールエディターでのカスタムエラーハンドラーによるエラー処理](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**：外部サービスから返されたエラーに応じてカスタム関数を呼び出し、エンドユーザーに対してカスタマイズされた応答を提供できるようになりました。 例えば、特定のエラーコードに対してバックエンドでカスタムワークフローを呼び出したり、サービスが停止していることを顧客に通知したりできます。
 
 
 ### ヘッドレスアダプティブフォーム早期導入者プログラム {#forms-early-adopter}
 
-用途 [ヘッドレスアダプティブForms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=jp) 開発者が、従来のグラフィカルユーザーインターフェイスを使用するのではなく、API を使用してアクセスし、操作できるインタラクティブフォームを作成、公開、管理できるようにする。 ヘッドレスアダプティブフォームは以下の場合に役立ちます。
+[ヘッドレスアダプティブフォーム](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=jp)を使用すると、開発者は、従来のグラフィカルユーザーインターフェイスではなく、API を介してアクセスおよび操作できるインタラクティブなフォームを作成、公開、管理できます。ヘッドレスアダプティブフォームは以下の場合に役立ちます。
 
 * 高品質のマルチチャネルフォームを好みのプログラミング言語で作成
 * デスクトップおよびモバイルアプリ、web サイト、チャットアプリケーションにフォームをネイティブに統合
 * フォームアプリケーションで独自の UI コンポーネントを再利用
-* Adobe Experience Manager Formsの力を使う
+* Adobe Experience Manager Forms の機能を活用
 
-電子メールを `aem-forms-headless@adobe.com` アーリーアダプタープログラムに参加するための公式電子メール ID から
+ご自身の公式メール ID から `aem-forms-headless@adobe.com` にメールを送信して、早期導入者プログラムにご参加ください。
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
@@ -156,7 +156,7 @@ CDN でのトラフィックのフィルタリング基準：
 
 この機能を試して、フィードバックを共有したい場合は、 電子メールの送信先 **aemcs-waf-adopter@adobe.com** アーリーアダプタープログラムの詳細については、公式電子メール ID を参照してください。 スペースは制限されています。
 
-この機能の詳細については、この記事を参照してください。 [ここ](/help/security/cdn-and-waf-rules.md).
+この機能の詳細については、この記事を参照してください。 [ここ](/help/security/traffic-filter-rules-including-waf.md).
 
 
 ## メンテナンスリリースノート {#maintenance}

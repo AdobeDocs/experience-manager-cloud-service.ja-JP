@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ab0fc832eb66bcf9a0fcd4f08b481845f3664e14
+source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 32%
@@ -60,7 +60,7 @@ ht-degree: 32%
 
 * **ZIP アーカイブの抽出**:Experience Managerで管理される ZIP アーカイブおよび [ファイルを直接Experience Managerに抽出](/help/assets/manage-digital-assets.md#extract-zip-archives) ダウンロードせずに
 
-  ![グループの項目をピン留めする](/help/release-notes/assets/extract-archive.png)
+  ![グループ用の項目のピン留め](/help/release-notes/assets/extract-archive.png)
 
 ### で使用可能なリリース前機能 [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
@@ -126,7 +126,7 @@ CDN でのトラフィックのフィルタリング基準：
 
 この機能を試して、フィードバックを共有したい場合は、 電子メールの送信先 **aemcs-waf-adopter@adobe.com** アーリーアダプタープログラムの詳細については、公式電子メール ID を参照してください。 スペースは制限されています。
 
-この機能の詳細については、この記事を参照してください。 [ここ](/help/security/cdn-and-waf-rules.md).
+この機能の詳細については、この記事を参照してください。 [ここ](/help/security/traffic-filter-rules-including-waf.md).
 
 ## Cloud Manager {#cloud-manager}
 

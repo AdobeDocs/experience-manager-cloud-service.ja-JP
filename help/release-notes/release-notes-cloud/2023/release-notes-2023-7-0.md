@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.7.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.7.0 リリースのリリースノート。'
-source-git-commit: 1158508cc28d33e5799b3102381f227db05a0107
+exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
+source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
 workflow-type: tm+mt
 source-wordcount: '942'
-ht-degree: 33%
+ht-degree: 47%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の 2023.7.0 リリースノート {#release-notes}
 
@@ -15,7 +15,7 @@ ht-degree: 33%
 
 >[!NOTE]
 >
->ここから、2021 年や 2022 年など、以前のバージョンのリリースノートに移動できます。
+>ここから、以前のバージョン（例えば、2021年、2022年）のリリースノートに移動できます。
 >
 >[!DNL Experience Manager] as a Cloud Service の今後の機能のアクティベーションについての詳細は、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja)をご覧ください。
 
@@ -41,13 +41,13 @@ ht-degree: 33%
 
 ### [!DNL Experience Manager Sites] プレリリースの新機能 {#prerelease-sites}
 
-* The [コンテンツフラグメントコンソール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en) では、タグを表示し、メタデータとしてコンテンツフラグメントに適用されたタグで検索できるようになりました。 この機能で Assets UI に切り替える必要がなくなり、コンテキストの切り替えが減り、効率が向上します。
+* The [コンテンツフラグメントコンソール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ja) では、タグを表示し、メタデータとしてコンテンツフラグメントに適用されたタグで検索できるようになりました。 この機能で Assets UI に切り替える必要がなくなり、コンテキストの切り替えが減り、効率が向上します。
 
 ![コンテンツフラグメントコンソールでのタグ付け](/help/assets/content-fragments-console-tags.png)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Assets ビューの新機能 {#assets-view-features}
+### アセットビューの新機能 {#assets-view-features}
 
 <!--
 
@@ -84,7 +84,7 @@ Assets Essentials では、デフォルトで、関連性に基づいて検索�
 
 * **[ヘッドレスForms用 React コンポーネント](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**：すぐに使用できる React コンポーネントを使用して、ヘッドレスアダプティブフォームのレンディションをプレビューし、カスタマイズできるようになりました。 これらのコンポーネントは、アダプティブFormsコアコンポーネントの BEM クラスをスタイル設定に活用するので、特定の要件に従って外観を簡単にカスタマイズできます。
 
-* [**繰り返し可能なセクションでのアダプティブFormsの作成**](/help/forms/create-forms-repeatable-sections.md): [アコーディオン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [ウィザード](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [パネル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)、および [水平タブ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 複数のデータレコードをキャプチャする場合に繰り返し可能な、コンポーネントベースのアダプティブフォーム。  これらの繰り返し可能なセクションを使用すると、複数のデータエントリを簡単に指定できます。 これは、必要なデータインスタンスが事前に不明な場合に役立ちます。 フォームの入力者はセクションを簡単に追加または削除でき、フォームを様々なデータ入力シナリオに対応でき、同じデータレコードの複数回のオカレンスの収集を簡単にします。
+* [**繰り返し可能なセクションでのアダプティブFormsの作成**](/help/forms/create-forms-repeatable-sections.md): [アコーディオン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=ja), [ウィザード](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=ja), [パネル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=ja)、および [水平タブ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=ja) 複数のデータレコードをキャプチャする場合に繰り返し可能な、コンポーネントベースのアダプティブフォーム。  これらの繰り返し可能なセクションを使用すると、複数のデータエントリを簡単に指定できます。 これは、必要なデータインスタンスがあらかじめ不明な場合に役立ちます。フォームの入力者はセクションを簡単に追加または削除でき、フォームを様々なデータ入力シナリオに対応でき、同じデータレコードの複数回のオカレンスの収集を簡単にします。
 
 
 ### で使用可能なリリース前機能 [!DNL Forms] {#pre-release-features-available-in-forms-channel}
@@ -95,14 +95,14 @@ Assets Essentials では、デフォルトで、関連性に基づいて検索�
 
 ### ヘッドレスアダプティブフォーム早期導入者プログラム {#forms-early-adopter}
 
-用途 [ヘッドレスアダプティブForms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=jp) 開発者が、従来のグラフィカルユーザーインターフェイスを使用するのではなく、API を使用してアクセスし、操作できるインタラクティブフォームを作成、公開、管理できるようにする。 ヘッドレスアダプティブフォームは以下の場合に役立ちます。
+[ヘッドレスアダプティブフォーム](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=jp)を使用すると、開発者は、従来のグラフィカルユーザーインターフェイスではなく、API を介してアクセスおよび操作できるインタラクティブなフォームを作成、公開、管理できます。ヘッドレスアダプティブフォームは以下の場合に役立ちます。
 
 * 高品質のマルチチャネルフォームを好みのプログラミング言語で作成
 * デスクトップおよびモバイルアプリ、web サイト、チャットアプリケーションにフォームをネイティブに統合
 * フォームアプリケーションで独自の UI コンポーネントを再利用
-* Adobe Experience Manager Formsの力を使う
+* Adobe Experience Manager Forms の機能を活用
 
-電子メールを `aem-forms-headless@adobe.com` アーリーアダプタープログラムに参加するための公式電子メール ID から
+ご自身の公式メール ID から `aem-forms-headless@adobe.com` にメールを送信して、早期導入者プログラムにご参加ください。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
@@ -120,7 +120,7 @@ CDN でのトラフィックのフィルタリング基準：
 
 この機能を試して、フィードバックを共有したい場合は、 電子メールの送信先 **aemcs-waf-adopter@adobe.com** アーリーアダプタープログラムの詳細については、公式電子メール ID を参照してください。 スペースは制限されています。
 
-この機能の詳細については、この記事を参照してください。 [ここ](/help/security/cdn-and-waf-rules.md).
+この機能の詳細については、この記事を参照してください。 [ここ](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Foundation のその他の変更 {#other-foundation-changes}
 
