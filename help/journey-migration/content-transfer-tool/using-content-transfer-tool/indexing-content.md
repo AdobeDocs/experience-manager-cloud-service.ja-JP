@@ -1,7 +1,8 @@
 ---
 title: コンテンツ移行後のインデックス作成
 description: 移行プロセスで、宛先Cloud Serviceインスタンスで取り込んだコンテンツのインデックスを作成する方法を説明します。
-source-git-commit: 22c5cbf300bb0b3b0db04fcfa669dde44197c326
+exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
+source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 8%

@@ -220,4 +220,4 @@ AEMにはEdge Delivery Servicesが加わり、エンゲージメントとコン�
 
 * [AEMas a Cloud Serviceの概要 —Edge Delivery Services](/help/edge/overview.md)
 * [使用Edge Delivery Services](/help/edge/using.md)
-* [Edge Delivery Servicesを使用して、基盤となるアーキテクチャと重要なAEMの部分をas a Cloud Serviceする](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
+* [Edge Delivery Servicesを使用して、基盤となるアーキテクチャと重要なAEMの部分をas a Cloud Serviceする](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=ja)
