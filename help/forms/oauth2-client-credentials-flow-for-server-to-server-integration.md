@@ -3,14 +3,14 @@ title: OAuth 2.0 クライアントの資格情報フローを使用してAEM Fo
 description: OAuth 2.0 クライアント資格情報フローを使用して、Salesforce とAEM Formsを統合する方法を説明します。
 Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 37%
+source-wordcount: '422'
+ht-degree: 33%
 
 ---
 
-# OAuth 2.0 クライアント資格情報フローによる Salesforce の統合 {#configure-salesforce-with-ouath-2.0-client-credential}
+# OAuth 2.0 クライアント資格情報フローを使用してアダプティブフォームを Salesforce に接続 {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -20,6 +20,7 @@ ht-degree: 37%
 OAuth 2.0 クライアント資格情報を使用して、AEM Formsを Salesforce アプリケーションと統合できます。 OAuth 2.0 クライアント資格情報は、ユーザーの関与なしに直接通信するための標準で安全な方法です。
 
 ![AEM Formsと Salesforce アプリケーション間の通信を設定する際のワークフロー](/help/forms/assets/salesforce-workflow.png)
+
 AEM Formsが、Salesforce 接続アプリケーションで定義されたクライアント資格情報（消費者キーと消費者の秘密鍵）を交換して、アクセストークンを取得します。
 
 認証コードフロー認証を使用した認証に OAuth 2.0 クライアント資格情報を使用すると、次のような複数のメリットがあります。
@@ -38,7 +39,7 @@ Salesforce アプリケーションとAEM環境間の通信を設定する前に
 
 ## OAuth 2.0 クライアント資格情報フローを使用した Salesforce アプリケーションの設定 {#steps-to-create-aem-datasource-configuration}
 
-OAuth 2.0 クライアント資格情報認証設定を使用して Salesforce アプリケーションをアダプティブフォームに統合するには、次の手順を実行します。
+OAuth 2.0 クライアント資格情報認証設定を使用してアダプティブフォームを Salesforce アプリケーションに接続するには、次の手順を実行します。
 
 1. オーサーインスタンスにログインします。
 1. **[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL データソース]**&#x200B;に移動します。
@@ -66,4 +67,6 @@ OAuth 2.0 クライアント資格情報認証設定を使用して Salesforce �
 1. 「**[!UICONTROL 接続をテスト]**」をクリックします。
 1. 接続に成功した場合は、「**[!UICONTROL 作成]**」ボタンをクリックします。
 
-これで、[フォームデータモデルを作成](/help/forms/create-form-data-models.md)して、設定したデータソースをアダプティブフォームと統合できます。
+次に、以下を実行できます。 [フォームデータモデルの作成](/help/forms/create-form-data-models.md) アダプティブフォームを Salesforce アプリケーションに送信する
+
+
