@@ -2,10 +2,10 @@
 title: カスタムコード品質ルール
 description: このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。これらは、Adobe Experience Manager Engineering のベストプラクティスに基づいています。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 57a7cd3fd2bfc34ebcee82832e020cf45887afa9
+source-git-commit: a62312954db0631cf594a27db36bab8a2441360f
 workflow-type: tm+mt
-source-wordcount: '3868'
-ht-degree: 92%
+source-wordcount: '4097'
+ht-degree: 87%
 
 ---
 
@@ -519,6 +519,53 @@ Experience Manager API のサーフェスは、使用が勧められず、非推
 
 ただし、API が Experience Manager のコンテキストで非推奨となるものの、他のコンテキストでは非推奨とならない場合があります。このルールは、この 2 番目のクラスを識別します。
 
+### Sling モデルで@Inject注釈を@Optionalと共に使用しない {#sonarqube-slingmodels-inject-optional}
+
+* **キー**: InjectAnnotationWithOptionalInjectionCheck
+* **タイプ**：ソフトウェアの品質
+* **深刻度**：軽度
+* **最初の対象バージョン**：バージョン 2023.11
+
+Apache Sling プロジェクトでは、 `@Inject` Sling モデルのコンテキストでの注釈。 `DefaultInjectionStrategy.OPTIONAL` （フィールドまたはクラスレベルで）。 代わりに、より具体的な注射 ( `@ValueMapValue` または `@OsgiInjector` 注釈 ) を使用する必要があります。
+
+次を確認します。 [Apache Sling ドキュメント](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) を参照してください。
+
+
+### HTTPClient のインスタンスの再利用 {#sonarqube-reuse-httpclient}
+
+* **キー**:AEMSRE-870
+* **タイプ**：ソフトウェアの品質
+* **深刻度**：軽度
+* **最初の対象バージョン**：バージョン 2023.11
+
+AEMアプリケーションは HTTP プロトコルを使用して他のアプリケーションに接続することが多く、Apache HttpClient はこれを実現するためによく使用されるライブラリです。 しかし、このような HttpClient オブジェクトを作成する際にはオーバーヘッドが発生するので、これらのオブジェクトはできる限り再利用する必要があります。
+
+このルールは、HttpClient オブジェクトがメソッド内でプライベートではなく、クラスレベルでグローバルであることを確認するので、再利用できます。 この場合、httpClient フィールドは、クラスのコンストラクターで設定するか、 `activate()` メソッド（このクラスが OSGi コンポーネント/サービスの場合）
+
+また、 [最適化ガイド](https://hc.apache.org/httpclient-legacy/performance.html) HttpClient の使用に関するベストプラクティスを参照してください。
+
+#### 非準拠コード {#non-compliant-code-14}
+
+```java
+public void doHttpCall() {
+  HttpClient httpclient = HttpClients.createDefault();
+  // do something with the httpclient
+}
+```
+
+#### 準拠コード {#compliant-code-11}
+
+```java
+public class myClass {
+
+  HttpClient httpclient;
+
+  public void doHttpCall() {
+    // do something with the httpclient
+  }
+
+}
+```
 
 ## OakPAL コンテンツルール {#oakpal-rules}
 
