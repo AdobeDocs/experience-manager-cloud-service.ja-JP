@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
 source-wordcount: '2326'
 ht-degree: 75%
@@ -41,7 +41,7 @@ ht-degree: 75%
 
    * `blank` テンプレートは、すべての新しい AEM Forms as a Cloud Service プログラムに含まれています。
    * パッケージマネージャーを使用して参照パッケージをインストールし、AEM Forms as a Cloud Service プログラムに `blank` テンプレートを追加できます。
-   * 最初から[新しいアダプティブフォームテンプレート（コアコンポーネント）を作成する](template-editor.md)こともできます。
+   * 最初から[新しいアダプティブフォームテンプレート（コアコンポーネント）を作成する](/help/forms/template-editor-core-components.md)こともできます。
    * また、 [サンプルテンプレート](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) を環境に追加します。 これらは、フォームの作成を迅速に開始するのに役立ちます。
 
 * **アダプティブフォームのテーマ**：テーマには、コンポーネントとパネル向けのスタイル設定の詳細が含まれます。 スタイルには、背景カラー、ステートカラー、透明度、配置、サイズなどのプロパティが含まれます。テーマを適用すると、指定したスタイルが対応するコンポーネントに反映されます。`Canvas` テンプレートは、すべての新しい AEM Forms as a Cloud Service プログラムに含まれています。また、 [サンプルテーマ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) を環境に追加します。 これらは、フォームのスタイル設定を開始し、ビジネス要件に応じてテーマを作成またはカスタマイズするための基本構造を提供します。

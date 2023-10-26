@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.7.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.7.0 リリースのリリースノート。'
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
-source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
+source-git-commit: 75a26cf6f486ce951f1f81b5125026fac9458ab4
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '937'
 ht-degree: 47%
 
 ---
@@ -79,8 +79,6 @@ Assets Essentials では、デフォルトで、関連性に基づいて検索�
 ### [!DNL Forms] で利用できる新機能 {#new-features-available-in-forms-channel}
 
 * [**標準のテーマ**](/help/forms/using-themes-in-core-components.md) **およびテンプレート**：経験豊富な専門家や新しいフォーム作成者の皆様に役立つようにカスタマイズされた、すぐに使える OOTB のテーマとテンプレートを使用して、フォーム作成プロセスを開始します。 アダプティブFormsのコアコンポーネントを使用してシームレスに構築され、細心の注意を払って厳選されたテーマとテンプレートを使用すれば、一般的な使用例に合わせてすばやくフォームの作成を開始できます。
-
-  ![標準テンプレート](/help/forms/assets/form-templates-ootb.png)
 
 * **[ヘッドレスForms用 React コンポーネント](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**：すぐに使用できる React コンポーネントを使用して、ヘッドレスアダプティブフォームのレンディションをプレビューし、カスタマイズできるようになりました。 これらのコンポーネントは、アダプティブFormsコアコンポーネントの BEM クラスをスタイル設定に活用するので、特定の要件に従って外観を簡単にカスタマイズできます。
 

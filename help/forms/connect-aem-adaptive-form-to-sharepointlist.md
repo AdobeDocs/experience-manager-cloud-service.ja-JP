@@ -3,7 +3,9 @@ title: AEMアダプティブフォームをMicrosoft® SharePointリストに接
 description: アダプティブフォームをMicrosoft® SharePointリストに接続します。 Microsoft® SharePointリストを設定し、設定を使用してフォームデータモデルを作成する方法について説明します。 さらに、FDM をアダプティブフォームに統合する方法についても学習します。
 role: User, Developer
 keywords: AEMアダプティブフォームをMicrosoft SharePointリストに接続し、アダプティブフォームをMicrosoft SharePointリストに接続し、AEMアダプティブフォームをMicrosoft SharePointリストに統合し、アダプティブフォームをMicrosoftリストに統合し、アダプティブフォームからSharePointリストにデータを送信しAEMます。
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+hide: true
+hidefromToC: true
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 5%

@@ -1,13 +1,12 @@
 ---
 title: アダプティブフォームの送信アクションの設定方法?
-description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自のアクションを作成できます。
-hide: true
-hidefromtoc: true
+description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自の送信アクションを作成できます
+keywords: アダプティブフォームの送信アクションの選択、アダプティブフォームの sharepoint リストへの接続、アダプティブフォームの sharepoint ドキュメントライブラリへの接続、アダプティブフォームのフォームデータモデルへの接続の方法
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
-source-wordcount: '3573'
-ht-degree: 79%
+source-wordcount: '3658'
+ht-degree: 81%
 
 ---
 
@@ -107,59 +106,132 @@ ht-degree: 79%
 
 ## SharePoint に送信 {#submit-to-sharedrive}
 
-「**[!UICONTROL SharePoint に送信]**」送信アクションは、アダプティブフォームと Microsoft® SharePoint ストレージを接続します。フォームデータファイル、添付ファイル、またはレコードのドキュメントを、接続された Microsoft Sharepoint ストレージに送信できます。アダプティブフォームで「**[!UICONTROL SharePoint に送信]**」送信アクションを使用するには、次の手順に従います。
+「**[!UICONTROL SharePoint に送信]**」送信アクションは、アダプティブフォームと Microsoft® SharePoint ストレージを接続します。フォームデータファイル、添付ファイル、またはレコードのドキュメントを、接続された Microsoft Sharepoint ストレージに送信できます。
 
-1. [SharePoint 設定の作成](#create-a-sharepoint-configuration-create-sharepoint-configuration)：AEM Forms を Microsoft Sharepoint ストレージに接続します。
+<!--
+Using Submit to SharePoint, you can:
+* [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
+* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list)
+-->
+
+### アダプティブフォームのSharePointドキュメントライブラリへの接続 {#connect-af-sharepoint-doc-library}
+
+次の手順で **[!UICONTROL SharePoint Document Library に送信]** アダプティブフォームでの送信アクション：
+
+1. [SharePoint Document Library 設定の作成](#create-a-sharepoint-configuration-create-sharepoint-configuration):AEM FormsをMicrosoft® Sharepoint ストレージに接続します。
 2. [アダプティブフォームでの「SharePoint に送信」送信アクションの使用](#use-sharepoint-configuartion-in-af)：アダプティブフォームを設定済みの Microsoft® SharePoint に接続します。
 
-### Microsoft SharePoint 設定の作成 {#create-sharepoint-configuration}
+#### SharePoint Document Library 設定の作成 {#create-sharepoint-configuration}
 
-AEM Forms を Microsoft® Sharepoint ストレージに接続するには、次の手順に従います。
+AEM FormsをMicrosoft® Sharepoint ドキュメントライブラリストレージに接続するには：
 
-1. 次の場所に移動します。 **AEM Forms** インスタンス > **[!UICONTROL ツール]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
-1. **設定コンテナ**&#x200B;を選択します。「設定コンテナ」のチェックボックスをオンにしないでください。 設定コンテナの名前をクリックして選択します。 設定は、選択した設定コンテナに保存されます。
-1. 「**[!UICONTROL 作成]**」をクリックします。SharePoint 設定ウィザードが表示されます。
-   ![SharePoint の設定](/help/forms/assets/sharepoint_configuration.png)
+1. **AEM Forms オーサー**&#x200B;インスタンス／**[!UICONTROL ツール]**／**[!UICONTROL Cloud Services]**／**[!UICONTROL Microsoft® SharePoint]** に移動します。
+1. **[!UICONTROL Microsoft® SharePoint]** を選択すると、**[!UICONTROL SharePoint ブラウザー]**&#x200B;にリダイレクトされます。
+1. **設定コンテナ**&#x200B;を選択します。設定は、選択した設定コンテナに保存されます。
+1. クリック **[!UICONTROL 作成]** > **[!UICONTROL SharePoint Document Library]** 」をドロップダウンリストから選択します。 SharePoint 設定ウィザードが表示されます。
+
+![SharePoint の設定](/help/forms/assets/sharepoint_configuration.png)
 1. 「**[!UICONTROL タイトル]**」、「**[!UICONTROL クライアント ID]**」、「**[!UICONTROL クライアント秘密鍵]**」および「**[!UICONTROL OAuth URL]**」を指定します。OAuth URL のクライアント ID、クライアントの秘密鍵、テナント ID を取得する方法について詳しくは、[Microsoft® のドキュメント](https://learn.microsoft.com/ja-jp/graph/auth-register-app-v2)を参照してください。
    * アプリの `Client ID` と `Client Secret` は Microsoft® Azure Portal から取得できます。
-   * Microsoft® Azure Portal で、リダイレクト URI を `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html` として追加します。置換 `[author-instance]` をAEM Formsオーサーインスタンスの URL に置き換えます。
+   * Microsoft® Azure Portal で、リダイレクト URI を `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html` として追加します。`[author-instance]` をオーサーインスタンスの URL に置き換えます。
    * API 権限 `offline_access` および `Sites.Manage.All` を追加して、読み取り／書き込み権限を付与します。
    * OAuth URL `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize` を使用します。`<tenant-id>` を Microsoft® Azure Portal のアプリの `tenant-id` に置き換えます。
 
    >[!NOTE]
    >
-   > The **クライアント秘密鍵** フィールドは、Azure Active Directory アプリケーションの構成に応じて、必須またはオプションです。 アプリケーションでクライアント秘密鍵を使用するように設定されている場合は、クライアントの秘密鍵を指定する必要があります。
+   > **クライアント秘密鍵**&#x200B;フィールドは、Azure Active Directory アプリケーションの設定に応じて、必須またはオプションになります。アプリケーションでクライアント秘密鍵を使用するように設定されている場合は、クライアントの秘密鍵を指定する必要があります。
 
 1. 「**[!UICONTROL 接続]**」をクリックします。接続に成功した場合、`Connection Successful` のメッセージが表示されます。
 
-1. データを保存するフォルダーを選択するには、「 」を選択します。 **SharePoint Site** > **ドキュメントライブラリ** > **SharePoint Folder**、 、 。
+1. **SharePoint サイト**／**ドキュメントライブラリ**／**SharePoint フォルダー**&#x200B;を選択して、データを保存します。
 
    >[!NOTE]
    >
-   >* デフォルトでは、 `forms-ootb-storage-adaptive-forms-submission` 選択したSharePoint Site でフォルダーを使用できます。 フォルダーが使用できない場合は、 **フォルダーを作成** オプションを使用して作成できます。
+   >* デフォルトでは、`forms-ootb-storage-adaptive-forms-submission` は選択した SharePoint サイトに存在します。
+   >* 選択した SharePoint サイトの `Documents` ライブラリにまだ存在しない場合は、「**フォルダーを作成**」をクリックして、フォルダーを `forms-ootb-storage-adaptive-forms-submission` として作成します。
 
-これで、このSharePoint Sites 設定を **SharePointに送信** アダプティブフォームでの送信アクション。
+アダプティブフォームの送信アクションに、この SharePoint サイト設定を使用できるようになりました。
 
-### アダプティブフォームで「 SharePointに送信」送信アクションを使用する {#use-sharepoint-configuartion-in-af}
+#### アダプティブフォームでのSharePointドキュメントライブラリ設定の使用 {#use-sharepoint-configuartion-in-af}
 
-前の節で作成したSharePoint設定を使用して、データやレコードのドキュメントをSharePointフォルダーに保存できます。 アダプティブフォームで「 SharePointに送信」送信アクションを使用するには、以下の手順を実行します。
+作成したSharePointドキュメントライブラリ設定をアダプティブフォーム内で使用して、データや生成後のレコードのドキュメントをSharePointフォルダーに保存することができます。 アダプティブフォームでSharePointドキュメントライブラリのストレージ設定を次の手順で使用します。
 
-1. 「[アダプティブフォーム](/help/forms/creating-adaptive-form.md)」を作成します。アダプティブフォームの作成時に、 [!UICONTROL 設定コンテナ] 使用対象 [SharePoint設定の作成](#create-sharepoint-configuration).
+1. 「[アダプティブフォーム](/help/forms/creating-adaptive-form-core-components.md)」を作成します。
 
    >[!NOTE]
    >
-   > いいえの場合 [!UICONTROL 設定コンテナ] が選択されている場合、グローバル [!UICONTROL ストレージ設定] 送信アクションのプロパティウィンドウにフォルダが表示されます。
+   > * 同じを選択 [!UICONTROL 設定コンテナ] SharePointドキュメントライブラリストレージを作成したアダプティブフォームの場合。
+   > * [!UICONTROL 設定コンテナ]が選択されていない場合、グローバルな[!UICONTROL ストレージ設定]フォルダーが送信アクションのプロパティウィンドウに表示されます。
 
 1. 「**送信アクション**」を「**[!UICONTROL SharePoint に送信]**」として選択します。
-1. 設定済みの **[!UICONTROL ストレージ設定]**. フォームデータとレコードのドキュメントを保存するためのSharePointのフォルダーを指定します。
+   ![SharePoint GIF](/help/forms/assets/sharedrive-video.gif)
+1. データを保存する場所に「**[!UICONTROL ストレージ設定]**」を選択します。
 1. 「**[!UICONTROL 保存]**」をクリックして、送信設定を保存します。
 
-フォームを送信すると、データは指定されたMicrosoft® Sharepoint の保存場所（フォルダー）に保存されます。
-保存されたデータのフォルダー構造は `/folder_name/form_name/year/month/date/submission_id/data`.
+フォームを送信すると、データは指定したMicrosoft® Sharepoint ドキュメントライブラリストレージに保存されます。
+データを保存するフォルダー構造は `/folder_name/form_name/year/month/date/submission_id/data` です。
+
+<!--
+
+### Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
+
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
+
+To use the [!UICONTROL Submit to SharePoint List] Submit Action in an Adaptive Form:
+
+1. [Create a SharePoint List Configuration](#create-sharepoint-list-configuration): It connects AEM Forms to your Microsoft® Sharepoint List Storage.
+1. [Use the Submit using Form Data Model in an Adaptive Form](#use-submit-using-fdm): It connects your Adaptive Form to configured Microsoft® SharePoint.
+
+#### Create a SharePoint List Configuration {#create-sharepoint-list-configuration}
+
+To connect AEM Forms to your Microsoft&reg; Sharepoint List:
+
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.   
+1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
+1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
+1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+    * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
+    * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
+    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft® Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
+    * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
+
+      >[!NOTE]
+      >
+      > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
+
+1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
+1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
+1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+
+
+#### Use the Submit using Form Data Model in an Adaptive Form {#use-submit-using-fdm}
+
+You can use the created SharePoint List configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint List folder. Perform the following steps to use a SharePoint List storage configuration in an Adaptive Form as:
+
+1. [Create a Form Data Model using Microsoft® SharePoint List configuration](/help/forms/create-form-data-models.md)
+1. [Configure the Form Data Model to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
+1. [Configure Submit action using a Form Data Model](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+
+When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
+
+>[!NOTE]
+>
+> In Microsoft® SharePoint List, the following column types are not supported:
+> * image column
+> * metadata column
+> * person column
+> * external data column
+
+-->
 
 ## フォームデータモデルを使用して送信 {#submit-using-form-data-model}
 
 「**[!UICONTROL フォームデータモデルを使用して送信]**」送信アクションでは、フォームデータモデルの特定のデータモデルオブジェクトで送信したアダプティブフォームデータをデータソースに書き込みます。送信アクションの設定時に、データソースに書き戻す送信済みデータを持つデータモデルオブジェクトを選択できます。
+
+「フォームデータモデル送信」アクションを使用して、アダプティブフォームをMicrosoft SharePointリストに接続できます。
 
 さらに、フォームデータモデルとレコードのドキュメント（DoR）を使用して、フォームの添付ファイルをデータソースに送信できます。フォームデータモデルについて詳しくは、[[!DNL AEM Forms]  のデータ統合機能](data-integration.md)を参照してください。
 
@@ -247,7 +319,11 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## OneDrive に送信 {#submit-to-onedrive}
 
-「**[!UICONTROL OneDrive に送信]**」送信アクションでは、アダプティブフォームと Microsoft® OneDrive を接続します。接続されている Microsoft® OneDrive ストレージに、フォーム データ、添付ファイル、またはレコードのドキュメントを送信できます。アダプティブフォームで「[!UICONTROL OneDrive に送信]」送信アクションを使用するには、次の手順に従います。
+「**[!UICONTROL OneDrive に送信]**」送信アクションでは、アダプティブフォームと Microsoft® OneDrive を接続します。接続されている Microsoft® OneDrive ストレージに、フォーム データ、添付ファイル、またはレコードのドキュメントを送信できます。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
+
+アダプティブフォームで「[!UICONTROL OneDrive に送信]」送信アクションを使用するには、次の手順に従います。
 
 1. [OneDrive 設定の作成](#create-a-onedrive-configuration-create-onedrive-configuration)：AEM Forms を Microsoft® OneDrive ストレージに接続します。
 2. [アダプティブフォームでの「OneDrive に送信」アクションの使用](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af)：アダプティブフォームを
@@ -331,7 +407,7 @@ AEM Forms を Azure ストレージコンテナに接続するには、次の手
 ### アダプティブフォームでの Azure ストレージ設定の使用 {#use-azure-storage-configuartion-in-af}
 
 アダプティブフォームで作成した Azure ストレージコンテナ設定を使用して、データや生成済みレコードのドキュメントを Azure ストレージコンテナに保存できます。 アダプティブフォームで Azure ストレージコンテナ設定を使用するには、次の手順を実行します。
-1. [アダプティブフォーム](/help/forms/creating-adaptive-form.md)を作成します。
+1. [アダプティブフォーム](/help/forms/creating-adaptive-form-core-components.md)を作成します。
 
    >[!NOTE]
    >
@@ -348,6 +424,8 @@ AEM Forms を Azure ストレージコンテナに接続するには、次の手
 データを保存するフォルダー構造は `/configuration_container/form_name/year/month/date/submission_id/data` です。
 
 設定の値をセットするには、[AEM SDK を使用して OSGi 設定を生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#generating-osgi-configurations-using-the-aem-sdk-quickstart)し、Cloud Service インスタンスに[設定をデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja#deployment-process)します。
+
+
 
 
 ## Power Automate に送信 {#microsoft-power-automate}
@@ -418,3 +496,16 @@ AEM セキュリティおよび堅牢化ガイドラインの一環として、4
 フォームデータモデルに事前入力したり、`<afData>`、`<afBoundData>` および `</afUnboundData>` タグを含まないデータであるスキーマに対する XML または JSON データの苦情を含むスキーマベースのアダプティブフォームに事前入力すると、アダプティブフォームの境界なしのフィールドのデータは失われます。このスキーマは、XML スキーマ、JSON スキーマまたはフォームデータモデルのいずれかです。境界なしのフィールドは、`bindref` プロパティを持たないアダプティブフォームフィールドです。
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
+
+
+## 次を見る
+
+* [フォームのスタイルまたはテーマを作成](using-themes-in-core-components.md)
+* [アダプティブフォームの作成（コアコンポーネント）](/help/forms/creating-adaptive-form-core-components.md)
+* [アダプティブフォーム用のカスタム送信アクションの作成](/help/forms/custom-submit-action-form.md)
+
+
+## 関連トピック {#see-also}
+
+{{see-also}}
+

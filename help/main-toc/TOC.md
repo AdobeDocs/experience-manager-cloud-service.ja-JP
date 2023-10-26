@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c9ad4b6f2ae5107569c556ca11c75868c9e4be63
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
-source-wordcount: '4335'
+source-wordcount: '4344'
 ht-degree: 93%
 
 ---
@@ -592,6 +592,7 @@ ht-degree: 93%
             + [アダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
             + [アダプティブフォームフラグメントを作成する](/help/forms/adaptive-form-fragments-core-components.md)
             + [アダプティブフォームのテーマの作成 - コアコンポーネント](/help/forms/using-themes-in-core-components.md)
+            + [コアコンポーネントに基づくアダプティブフォームテンプレートの作成](/help/forms/template-editor-core-components.md)
             + [アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-core-components.md)
             + [機械翻訳または人間による翻訳を使用したアダプティブフォームの翻訳](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [リダイレクトページまたはお礼メッセージの設定](/help/forms/configure-redirect-page-or-thank-you-message.md)

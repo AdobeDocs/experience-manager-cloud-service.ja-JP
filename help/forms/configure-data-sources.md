@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
-source-wordcount: '2452'
-ht-degree: 87%
+source-wordcount: '2202'
+ht-degree: 90%
 
 ---
 
@@ -252,13 +252,11 @@ SOAP Web サービス WSDL のインポート文として許可される絶対 U
 
 **[!UICONTROL フォームデータモデル SOAP Web サービスインポート許可リスト]**&#x200B;の設定の `importAllowlistPattern` プロパティを設定して、正規表現を指定します。以下の JSON ファイルにサンプルが表示されています。
 
-
 ```json
 {
   "importAllowlistPattern": ".*"
 }
 ```
-
 
 設定の値をセットするには、[AEM SDK を使用して OSGi 設定を生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#generating-osgi-configurations-using-the-aem-sdk-quickstart)し、Cloud Service インスタンスに[設定をデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja#deployment-process)します。
 
@@ -289,28 +287,31 @@ OData サービスは、そのサービスのルート URL によって識別さ
 
 1. 「**[!UICONTROL 作成]**」をタップして、OData サービス用のクラウド設定を作成します。
 
-## Microsoft® SharePointリストを設定 {#config-sharepoint-list}
+<!--
+## Configure Microsoft® SharePoint List {#config-sharepoint-list}
 
-<span class="preview"> これはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
-表形式でデータを保存するには、「Microsoft® SharePointリスト」を使用します。 でMicrosoft SharePointリストを設定するには、以下を実行します。 [!DNL Experience Manager] as a Cloud Serviceで、次の操作を実行します。
+To save data in a tabular form use, Microsoft® SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 
-1. に移動します。 **[!UICONTROL ツール]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft®® SharePoint]**.
-1. **設定コンテナ**&#x200B;を選択します。設定は、選択した設定コンテナに保存されます。
-1. クリック **[!UICONTROL 作成]** > **[!UICONTROL SharePoint List]** 」をドロップダウンリストから選択します。 SharePoint 設定ウィザードが表示されます。
-1. 「**[!UICONTROL タイトル]**」、「**[!UICONTROL クライアント ID]**」、「**[!UICONTROL クライアント秘密鍵]**」および「**[!UICONTROL OAuth URL]**」を指定します。OAuth URL のクライアント ID、クライアントの秘密鍵、テナント ID を取得する方法について詳しくは、[Microsoft® のドキュメント](https://learn.microsoft.com/ja-jp/graph/auth-register-app-v2)を参照してください。
-   * アプリの `Client ID` と `Client Secret` は Microsoft® Azure Portal から取得できます。
-   * Microsoft® Azure Portal で、リダイレクト URI を `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html` として追加します。`[author-instance]` をオーサーインスタンスの URL に置き換えます。
-   * API 権限の追加 `offline_access` および `Sites.Manage.All` （内） **Microsoft® Graph** タブを使用して、読み取り/書き込み権限を設定します。 追加 `AllSites.Manage` の権限 **SharePoint** タブをクリックして、SharePointデータをリモートで操作します。
-   * OAuth URL `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize` を使用します。`<tenant-id>` を Microsoft® Azure Portal のアプリの `tenant-id` に置き換えます。
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.   
+1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
+1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
+1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+    * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
+    * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
+    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft® Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
+    * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
 
-     >[!NOTE]
-     >
-     **クライアント秘密鍵**&#x200B;フィールドは、Azure Active Directory アプリケーションの設定に応じて、必須またはオプションになります。アプリケーションでクライアント秘密鍵を使用するように設定されている場合は、クライアントの秘密鍵を指定する必要があります。
+      >[!NOTE]
+      >
+      > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
 
-1. 「**[!UICONTROL 接続]**」をクリックします。接続に成功した場合、`Connection Successful` のメッセージが表示されます。
-1. 選択 **[!UICONTROL SharePoint Site]** および **[!UICONTROL SharePoint List]** 」をドロップダウンリストから選択します。
-1. タップ **[!UICONTROL 作成]** Microsoft® SharePointList のクラウド設定を作成する場合。
+1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
+1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
+1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+
+-->
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 

@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
+source-git-commit: 6e834244f3de7e615df12b137f2ae90a11e64ad0
 workflow-type: tm+mt
-source-wordcount: '1440'
-ht-degree: 32%
+source-wordcount: '951'
+ht-degree: 26%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 32%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在の機能リリース (2023.9.0) は 2023 年 9 月 28 日です。 次回の機能リリース (2023.10.0) は、2023 年 10 月 26 日に予定されています。
+のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在の機能リリース (2023.10.0) は 2023 年 10 月 26 日です。 次回の機能リリース (2023.11.0) は、2023 年 11 月 30 日に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -34,33 +34,29 @@ ht-degree: 32%
 
 ## リリースビデオ {#release-video}
 
-2023.9.0 リリースに追加された機能の概要については、 2023 年 9 月リリースの概要ビデオをご覧ください。
+2023.10.0 リリースで追加された機能の概要については、2023年10月リリースの概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
-
-## Edge 配信サービス {#edge-delivery}
-
-エッジ配信は、コンテンツの影響を最大限に高め、顧客とのインタラクションの時点でのビジネス成果を測定できるようにする、合成可能な一連の新しいサービスです。
-
-記事のEdge Delivery Servicesの詳細 [ここ](/help/edge/overview.md).
+>[!VIDEO](https://video.tv.adobe.com/v/3425186/?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
+### 新機能 {#assets-features}
+
+**Adobe Express用AEM Assetsアドオン**:Experience Manager Assetsは、 [Adobe Express用アドオン](/help/assets/addon-adobe-express.md). アドオンを使用すると、Experience Manager Assetsのユーザーインターフェイス内から直接に保存されているAdobe Expressにアクセスできます。 AEM Assetsで管理するコンテンツを Express キャンバスに配置し、新しいコンテンツや編集したコンテンツをAEM Assetsリポジトリに保存できます。 このアドオンには、次の主なメリットがあります。
+
+* AEMでの新しいアセットの編集と保存によるコンテンツの再利用の向上
+
+* 新しいアセットを作成したり、既存のアセットの新しいバージョンを作成したりする際の全体的な時間と労力を削減
+
+  ![Assets アドオンのアセットを含める](/help/assets/assets/aem-assets-add-on-include-assets.png)
+
 ### アセットビューの新機能 {#assets-view-features}
 
-**フォルダーへのメタデータフォームの割り当て**
+* **OneDrive データソースからのアセットの一括読み込み**：管理者は、次の操作を実行できるようになりました。 [多数のアセットを OneDrive からAEM Assetsに読み込む](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). 一括インポートでサポートされるデータソースの更新リストには、Azure、AWS、Google Cloud、Dropbox、OneDrive が含まれます。
 
-これで、デプロイメント内の特定のフォルダーにメタデータフォームを割り当てることができるようになりました。 フォルダー内のすべてのアセット（サブフォルダー内のアセットを含む）には、割り当てられたメタデータフォームで定義されたプロパティが表示されます。
+  ![フォルダーにメタデータフォームを割り当て](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
-![フォルダーにメタデータフォームを割り当て](/help/release-notes/assets/assign-to-folder.png)
-
-### 管理ビューの新機能 {#admin-view-features}
-
-* **AEM Assetsas a Cloud ServiceとドキュメントベースのオーサリングをEdge Delivery Servicesに統合**: AEM Assetsをドキュメントベースのオーサリングと統合して、Edge Delivery Servicesが Web サイト作成者が [Microsoft Word またはGoogleドキュメントでドキュメントを作成する際に、AEM Assetsリポジトリで使用できる画像を使用します。](/help/edge/using.md#integrate-assets-edge).
-
-* **ZIP アーカイブの抽出**:Experience Managerで管理される ZIP アーカイブおよび [ファイルを直接Experience Managerに抽出](/help/assets/manage-digital-assets.md#extract-zip-archives) ダウンロードせずに
-
-  ![グループ用の項目のピン留め](/help/release-notes/assets/extract-archive.png)
+* **組織間のライブラリの権限付与のサポート**:Experience Manager Assetsで、別の IMS 組織のCreative Cloudライブラリへのアクセスを設定できるようになりました。 これにより、Creative CloudとExperience Managerの間の最新のクロス製品ワークフローに容易にアクセスでき、クリエイティブの時間と労力を削減できます。
 
 ### で使用可能なリリース前機能 [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
@@ -72,30 +68,17 @@ ht-degree: 32%
 
 ### の新機能[!DNL Experience Manager Forms] {#forms-features}
 
-* [**Google reCAPTCHA エンタープライズサポート**](/help/forms/captcha-adaptive-forms-core-components.md)：アダプティブフォームでGoogle reCAPTCHA Enterprise を使用して、不正なアクティビティやスパムに対する保護を強化し、より安全なユーザーエクスペリエンスを提供します。 高度なリスク分析とシームレスな統合により、本物のユーザーは、ボットを効果的にブロックしながらフォームを簡単に送信できます。
+* **アダプティブFormsのカスタムプロパティ**：カスタム属性（キーと値のペア）をフォームテンプレートまたはアダプティブフォームコンポーネントに関連付けることで、フォーム開発者は、これらのカスタム属性の値に基づいて適応する動的なフォーム動作を配信できます。 例えば、開発者は、カスタム属性の値に基づいて、モバイル、デスクトップ、Web プラットフォーム上にヘッドレスFormsコンポーネントの様々なレンディションを作成でき、様々なデバイスでのユーザーエクスペリエンスを大幅に強化できます。
 
-* [**Forms向けのExperience Cloud設定自動化機能を備えたAdobe Analytics**](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)：いくつかのボタンをフリップして、Experience Cloud設定の自動化でAdobe Analyticsを有効にできるようになりました。 これにより、AEM Formsas a Cloud ServiceをExperience PlatformタグとAdobe Analyticsに接続して、発行されたフォームのパフォーマンス指標を取得し、追跡できます。
+* **テーマとテンプレート**：経験豊富な専門家と新しいフォーム作成者の両方に力を貸すようにカスタマイズされた新しいテーマとテンプレートを使用して、フォーム作成プロセスを開始します。 アダプティブFormsのコアコンポーネントを使用してシームレスに構築され、細心の注意を払って厳選されたテーマとテンプレートを使用すれば、一般的な使用例に合わせてすばやくフォームの作成を開始できます。
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3424577/enable-adobe-analytics/?quality=12&learn=on)
+  ![標準テンプレート](/help/forms/assets/form-templates-ootb.png)
 
-* [**Adobe AnalyticsアダプティブFormsのレポートテンプレート**](/help/forms/view-understand-aem-forms-analytics-reports.md):Forms as a Cloud ServiceがAdobe Analyticsレポート OOTB を提供するようになりました。 これにより、フォームのパフォーマンスを簡単に理解できます。フォームレベルの指標を使用すると、レンディション、訪問者、送信、平均記入時間など、複数の主要業績評価指標（KPI）に対するフォームのパフォーマンスに関するインサイトを得ることができます。ユーザーの行動やフィードバックを追跡することで、フォームの混乱の原因となっている領域を特定し、フォームのデザインと機能に関するガイドを改善できます。
+### で使用可能なリリース前機能 [!DNL Forms] {#pre-release-features-available-in-forms-channel}
 
-  ![アダプティブフォームのユーザーエンゲージメントの Adobe Analytics レポート](/help/forms/assets/forms-analytics-report.png)
+* **FormsをMicrosoft SharePointリストに送信**:AEM Formsは、フォームデータを直接SharePointリストに送信するための OOTB 統合機能を提供し、SharePointのリスト機能を活用できます。
 
-* **[コアコンポーネントに基づくアダプティブFormsのフォームフラグメント](/help/forms/adaptive-form-fragments-core-components.md)**：フォームフラグメントを使用してフォーム構築のエクスペリエンスを向上させるため、複製を避け、デジタルインベントリを最適化し、コラボレーションを強化します。 これらの再利用可能なコンポーネントは複数のフォームにシームレスに統合され、一貫性のあるプロフェッショナルな外観のフォームの作成を合理化します。 フォームフラグメントは、「一度変更してすべてに反映」機能を通じて、再利用性、標準化、ブランドの一貫性を確保します。 1 か所でおこなわれた更新が、これらのフラグメントを利用するすべてのフォームに自動的に反映されるので、メンテナンス性と効率性が向上します。
-
-* **[Adobe Sign Workflow ステップの強化](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: Adobe Sign Workflow ステップが拡張され、以下が含まれるようになりました。
-   * **Adobe Signの政府機関 ID ベースの認証**:Adobe Acrobat Signの政府 ID ベースの認証では、政府発行の ID（運転免許証、国民 ID、パスポート）を使用してユーザーが ID を認証できるようにすることで、さらに検証レイヤーを提供しています。 この機能強化により、信頼できる ID ドキュメントを活用することで、署名プロセスの信頼性がさらに高まり、高度なセキュリティ、コンプライアンスおよびユーザー検証を必要とするシナリオに最適になります。
-
-   * **Adobe Signドキュメントの監査証跡**：監査記録機能を使用すると、Adobe Signドキュメントのライフサイクルに関する詳細なインサイトを得ることができます。 監査証跡を使用すると、ドキュメントに関連するすべてのアクションとインタラクションの包括的な記録を保持できるようになります。これには、ドキュメントを表示、編集、署名したユーザーなどの詳細と、各イベントのタイムスタンプが含まれます。この機能強化は、コンプライアンスの保持、紛争の解決、デジタル契約の整合性を確保する上で重要です。
-
-   * **署名者以外の契約受信者の新しい役割**:Adobe Acrobat Signには、署名者だけでなく、契約受信者の役割を拡張して、ワークフロー要件をより適切に満たすことができます。 有効にすると、契約の各受信者の役割を個別に設定でき、署名者がデフォルトになります。
-
-* **通信 API でのページ数のサポート**：これで、通信 API を使用してドキュメントを取得すると共に、ドキュメント内に含まれるページ数に関する貴重な情報を受け取ることができます。
-
-* **[ルールエディターでのカスタムエラーハンドラーによるエラー処理](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**：外部サービスから返されたエラーに応じてカスタム関数を呼び出し、エンドユーザーに対してカスタマイズされた応答を提供できるようになりました。 例えば、特定のエラーコードに対してバックエンドでカスタムワークフローを呼び出したり、サービスが停止していることを顧客に通知したりできます。
-
-* **[64 ビット版のAEM Forms Designer](/help/forms/installing-configuring-designer.md)**: 64 ビット版のAEM Forms Designer では、パフォーマンス、拡張性、メモリ管理の機能が強化され、フォーム作成エクスペリエンスが強化されます。 64 ビットアーキテクチャを使用すると、より大規模で複雑なプロジェクトに簡単に取り組むことができ、シームレスな設計ワークフローと最適化された効率を確保できます。 フォームデザインの機能を向上させ、この最先端リリースでAEM Forms Designer の将来を受け入れます。
+  >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
 ### アーリーアダプタープログラム {#forms-early-adopter}
 
@@ -103,30 +86,17 @@ ht-degree: 32%
 
   次に書き込むことができます： `aem-forms-early-adopter-program@adobe.com` アーリーアダプタープログラムに参加し、機能へのアクセスをリクエストするために、公式の電子メール id から。
 
-* **[ヘッドレスアダプティブForms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=jp)**：ヘッドレスアダプティブFormsを使用すると、開発者は、従来のグラフィカルユーザーインターフェイスを使用するのではなく、API を使用してアクセスし、操作できるインタラクティブフォームを作成、公開、管理できます。 ヘッドレスアダプティブフォームは以下の場合に役立ちます。
-
-   * 高品質のマルチチャネルフォームを好みのプログラミング言語で作成
-   * デスクトップおよびモバイルアプリ、web サイト、チャットアプリケーションにフォームをネイティブに統合
-   * フォームアプリケーションで独自の UI コンポーネントを再利用
-   * Adobe Experience Manager Forms の機能を活用
-
-  ご自身の公式メール ID から `aem-forms-headless@adobe.com` にメールを送信して、早期導入者プログラムにご参加ください。
-
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
-### キャンペーン関連の URL パラメーターに対する新しい CDN キャッシュ動作 {#cache-url-params}
+### WAF を含むトラフィックフィルタールール {#traffic-filter-rules-waf}
 
-新しい環境の場合、CDN は、マーケティングキャンペーンのパフォーマンスとキャッシュのヒット率を高めるために、マーケティング関連のクエリパラメーターをデフォルトで削除します。 既存の環境は影響を受けません。 [詳細情報。](/help/implementing/dispatcher/caching.md#marketing-parameters)
+[Adobe管理 CDN でのトラフィックのフィルタリング](/help/security/traffic-filter-rules-including-waf.md) url、IP アドレス、ユーザーエージェントなどのプロパティで web サイトトラフィックに一致するルールを宣言するか、DoS 攻撃を防ぐためにカスタムトラフィックレート制限を設定します。 また、高度な Web サイトの脅威に対する保護を強化するための、一連の高度な Web Application Firewall(WAF;Advanced Web Application Firewall) ルールのライセンスを取得することもできます。
 
-### トラフィックフィルタルール（WAF ルールを含む）アーリーアダプタプログラム {#waf-early-adopter}
+トラフィックフィルタールールについて、 [チュートリアルを試す](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)! 新しい Cloud Manager 設定パイプラインの設定、設定ファイルでのルールの宣言、悪意のあるトラフィックの CDN ログの分析に関する手順を説明します。
 
-CDN でのトラフィックのフィルタリング基準：
-* リクエストヘッダーとプロパティ（IP アドレスなど）
-* 悪意のあるトラフィックに関連付けられていると知られているトラフィックパターン
+トラフィックフィルタールールは、11 月にステージング環境と実稼動環境への段階的なロールアウトを含む、開発環境で使用できるようになりました。 ステージ上および実稼動環境での事前アクセスを電子メールで要求することができます **aemcs-waf-adopter@adobe.com**.
 
-この機能を試して、フィードバックを共有したい場合は、 電子メールの送信先 **aemcs-waf-adopter@adobe.com** アーリーアダプタープログラムの詳細については、公式電子メール ID を参照してください。 スペースは制限されています。
-
-この機能の詳細については、この記事を参照してください。 [ここ](/help/security/traffic-filter-rules-including-waf.md).
+高度な WAF トラフィックフィルタールールは、今年後半に、拡張セキュリティまたは WAF-DoS 保護サービスを通じてライセンスを受けることができます。
 
 ## Cloud Manager {#cloud-manager}
 
