@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスでの AEM および AMS での AEM との重要な違いについて説明します。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5aa4a049bc6a69f161ad04d2a64ab0871e672432
+source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
 workflow-type: tm+mt
-source-wordcount: '2746'
-ht-degree: 93%
+source-wordcount: '2733'
+ht-degree: 94%
 
 ---
 
@@ -69,9 +69,6 @@ HTTP 接続を行う場合は、提供されている [Apache HttpComponents Cli
 
 ## リクエストレート制限の処理 {#rate-limit-handling}
 
->[!NOTE]
->HTTP エラー応答は、2023 年 8 月 7 日の週に 503 から 429 に変更されます。
->
 AEMへの受信要求の割合が正常なレベルを超えると、AEMは HTTP エラーコード 429 を使用して新しい要求に応答します。 AEMに対してプログラム的な呼び出しをおこなうアプリケーションでは、コーディングを防ぐように検討し、指数バックオフ戦略を使用して、数秒後に再試行することができます。 2023 年 8 月中旬より前に、AEMは HTTP エラーコード 503 で同じ条件に応答していました。
 
 ## クラシック UI のカスタマイズがない {#no-classic-ui-customizations}
