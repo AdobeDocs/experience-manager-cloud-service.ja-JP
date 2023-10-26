@@ -2,9 +2,9 @@
 title: WAF ルールを含むトラフィックフィルタールール
 description: Web Application Firewall(WAF) ルールを含むトラフィックフィルタールールの設定
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
+source-git-commit: 00d3323be28fe12729204ef00e336c7a4c63cda7
 workflow-type: tm+mt
-source-wordcount: '3312'
+source-wordcount: '3480'
 ht-degree: 2%
 
 ---
@@ -118,6 +118,10 @@ The `kind` パラメーターは次のように設定する必要があります
 
 RDE の場合は、コマンドラインが使用されますが、現時点では RDE はサポートされていません。
 
+**備考**
+
+* 以下を使用できます。 `yq` ：設定ファイルの YAML フォーマットをローカルで検証します ( 例： `yq cdn.yaml`) をクリックします。
+
 ## トラフィックフィルタールールの構文 {#rules-syntax}
 
 次の項目を設定できます。 `traffic filter rules` を使用して、IP、ユーザーエージェント、リクエストヘッダー、ホスト名、地域、url などのパターンを照合します。
@@ -152,7 +156,7 @@ data:
 |---|---|---|---|---|---|
 | name | X | X | `string` | - | ルール名（64 文字）（英数字と — のみを含めることができます） |
 | when | X | X | `Condition` | - | 基本的な構造は次のとおりです。<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[条件構造の構文を参照してください。](#condition-structure) 以下では、ゲッター、述語および複数の条件の組み合わせ方法について説明します。 |
-| アクション | X | X | `Action` | ログ | log、allow、block、log、または action オブジェクト。デフォルトは log です。 |
+| アクション | X | X | `Action` | ログ | ログ、許可、ブロック、または Action オブジェクト。 デフォルトは log です。 |
 | rateLimit | X |   | `RateLimit` | 定義なし | レート制限の設定。 レート制限は、定義されていない場合、無効になります。<br><br>以下に、rateLimit 構文と例を説明する別の節を示します。 |
 
 ### 条件の構造 {#condition-structure}
@@ -188,11 +192,11 @@ data:
 
 | **プロパティ** | **タイプ** | **説明** |
 |---|---|---|
-| reqProperty | `string` | リクエストプロパティ。<br><br>次のいずれか： `path` , `queryString`, `method`, `tier`, `domain`, `clientIp`, `clientCountry`<br><br>domain プロパティは、要求のホストヘッダーを小文字で変換したものです。 文字列の比較に役立つので、大文字と小文字の区別による一致の排除はおこなわれません。<br><br>The `clientCountry` は、次の 2 つの文字コードを使用します： [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) |
+| reqProperty | `string` | リクエストプロパティ。<br><br>次のいずれか：<br><ul><li>`path`:URL のフルパスをクエリパラメーターなしで戻します。</li><li>`queryString`:URL のクエリ部分を戻します</li><li>`method`：リクエストで使用される HTTP メソッドを戻します。</li><li>`tier`：のいずれか 1 つを戻します `author`, `preview` または `publish`.</li><li>`domain`：ドメインプロパティを戻します ( `Host` ヘッダー ) を小文字で表示する</li><li>`clientIp`：クライアント IP を戻します。</li><li>`clientCountry`:2 文字のコードを戻します ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) クライアントがいる国を識別する</li></ul> |
 | reqHeader | `string` | 指定された名前のリクエストヘッダーを返します |
 | queryParam | `string` | 指定された名前のクエリパラメータを返します |
 | reqCookie | `string` | 指定された名前の Cookie を返します |
-| postParam | `string` | 本文から指定された名前のパラメータを返します。 本文がコンテンツタイプの場合にのみ機能します `application/x-www-form-urlencoded` |
+| postParam | `string` | リクエスト本文から指定された名前の Post パラメーターを返します。 本文がコンテンツタイプの場合にのみ機能します `application/x-www-form-urlencoded` |
 
 **述語**
 
@@ -207,6 +211,19 @@ data:
 | **の** | `array[string]` | 指定されたリストにゲッター結果が含まれている場合は true |
 | **notIn** | `array[string]` | 指定されたリストにゲッター結果が含まれていない場合は true |
 | **は存在しています** | `boolean` | true に設定し、プロパティが存在する場合、または false に設定し、プロパティが存在しない場合。 |
+
+**備考**
+
+* request プロパティ `clientIp` は、次の述語でのみ使用できます。 `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` また、 `in` および `notIn` 述語。 次の例では、クライアント IP が IP 範囲が 192.168.0.0/24であるかどうか (192.168.0.0 ～ 192.168.0.255) を評価する条件を実装しています。
+
+```
+when:
+  reqProperty: clientIp
+  in: [ "192.168.0.0/24" ]
+```
+
+* 使用をお勧めします。 [regex101](https://regex101.com/) および [Fastly Fidle](https://fiddle.fastly.dev/) 正規表現を使用する場合。 また、Fastly による正規表現の処理方法について詳しくは、 [記事](https://developer.fastly.com/reference/vcl/regex/#best-practices-and-common-mistakes).
+
 
 ### アクション構造 {#action-structure}
 
@@ -259,6 +276,8 @@ The `wafFlags` プロパティは、ライセンス可能な WAF トラフィッ
 * ルールが一致し、ブロックされた場合、CDN は次の応答を返します。 `406` リターンコード。
 
 * 設定ファイルには、Git リポジトリにアクセスできるすべてのユーザーが読み取れるので、シークレットを含めないでください。
+
+* Cloud Manager で定義された IP許可リストは、トラフィックフィルタールールよりも優先されます。
 
 ## ルールの例 {#examples}
 
@@ -396,9 +415,10 @@ data:
 | **プロパティ** | **タイプ** | **デフォルト** | **意味** |
 |---|---|---|---|
 | 制限 | 10 ～ 10000の整数 | 必須 | ルールがトリガーされる 1 秒あたりのリクエスト数（CDN POP あたり）。 |
-| window | integer enum: 1、10 または 60 | 10 | リクエスト率が計算されるサンプリングウィンドウ（秒）。 |
+| window | integer enum: 1、10 または 60 | 10 | リクエスト率が計算されるサンプリングウィンドウ（秒）。 カウンターの精度は、ウィンドウのサイズ（ウィンドウが大きいほど精度が高くなる）によって異なります。 例えば、1 秒のウィンドウの精度は 50%、60 秒のウィンドウの精度は 90%と考えられます。 |
 | 違約金 | 60 ～ 3600 の整数 | 300（5 分） | 一致するリクエストがブロックされる期間（秒単位）（最も近い分に丸められます）。 |
 | groupBy | 配列[ゲッター] | なし | レートリミッターカウンターは、一連の要求プロパティ（clientIp など）によって集計されます。 |
+
 
 ### 例 {#ratelimiting-examples}
 
