@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 5540b7aa03a384fe613abe9b32cfbf6da2268b64
+source-git-commit: 177021106fc67e67a8cd6645a6684185331dd6f4
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1344'
 ht-degree: 100%
 
 ---
@@ -21,39 +21,11 @@ ht-degree: 100%
 
 [!DNL Adobe Experience Manager Assets] では、アセット、フォルダー、コレクションを組織内や外部（パートナーやベンダーなど）のメンバーと共有できます。Adobe [!DNL Experience Manager Assets] as a [!DNL Cloud Service] のアセットを共有するには、次の方法を使用します。
 
-* [リンクとして共有](#sharelink).
+* [リンクとして共有](#sharelink)
 * [アセットをダウンロードし、個別に共有します。](/help/assets/download-assets-from-aem.md)
 * [[!DNL Experience Manager]  デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)を使用して共有します。
 * [[!DNL Adobe Asset Link] を使用して共有します](https://www.adobe.com/jp/creativecloud/business/enterprise/adobe-asset-link.html)。
 * [[!DNL Brand Portal] を使用して共有します](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=ja)。
-
-## 前提条件 {#prerequisites}
-
-[アセットをリンクとして共有するための設定](#config-link-share-settings)を行うには、管理者権限が必要です。
-
-## リンク共有設定の指定 {#config-link-share-settings}
-
-[!DNL Experience Manager Assets] では、デフォルトのリンク共有設定を指定できます。
-
-1. [!DNL Experience Manager] ロゴをクリックし、**[!UICONTROL ツール]**／**[!UICONTROL Assets]**／**[!UICONTROL Assets 設定]**／**[!UICONTROL リンク共有]**&#x200B;に移動します。
-1. 初期設定：
-
-   * **オリジナルを含める：**
-
-      * `Select Include Originals` を選択し、デフォルトでリンク共有ダイアログに表示される `Include Originals` オプションを選択します。
-      * 適切なオプションを選択して動作を指定し、`Include Originals` オプションを編集可能、読み取り専用または非表示にします。
-   * **レンディションを含める：**
-      * `Select Include Renditions` オプションを選択して、デフォルトでリンク共有ダイアログに表示される `Include Renditions` オプションを選択します。
-      * 適切なオプションを選択して動作を選択し、`Include Renditions` オプションを編集可能、読み取り専用または非表示にします。
-
-1. 「`Expiration date`」セクションの `Validity Period` フィールドに、リンクのデフォルトの有効期間を指定します。
-
-1. アクションバーの&#x200B;**[!UICONTROL リンク共有]**&#x200B;ボタン：
-   * `jcr:modifyAccessControl` 権限を持つすべてのユーザーは、[!UICONTROL リンク共有]オプションを表示できます。デフォルトでは、すべての管理者に表示されます。[!UICONTROL リンク共有]ボタンは、デフォルトでは全員に表示されます。このオプションを定義済みのグループに対してのみ表示するようにを設定することも、特定のグループからこのオプションを拒否することもできます。特定のグループに対して `Share Link` オプションを表示する場合は、`Allow only for groups` を選択します。`Deny from groups` を選択して、特定のグループから `Share Link` オプションを拒否します。これらのオプションのいずれかを選択したら、`Select Groups` フィールドを使用してグループ名を指定し、許可または拒否するグループ名を追加します。
-
-メール設定に関する設定について詳しくは、[メールサービスドキュメント](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=ja)を参照してください
-
-![メールサービスを設定](config-email-service.png)
 
 ## アセットをリンクとして共有 {#sharelink}
 
@@ -70,12 +42,11 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 リンク共有機能を使用してアセットを共有するには、次の 2 つの方法があります。
 
-1. 共有リンクを生成し、[コピーして、他のユーザーとアセットリンク](#copy-and-share-assets-link) を共有します。
-1. 共有リンクを生成し、[メールでアセットリンクを共有します](#share-assets-link-through-email)。有効期限の日時などのデフォルト値を変更し、元のアセットとそのレンディションをダウンロードできます。メールアドレスを追加することで、複数のユーザーにメールを送信できます。
+1. 共有リンクを生成し、 [コピーして、他のユーザーとアセットリンク](#copy-and-share-assets-link) を共有します。リンクのデフォルトの有効期間は 1 日です。コピーしたリンクを他のユーザーと共有する場合、有効期間は変更できません。
 
-   ![リンク共有ダイアログ](assets/share-link.png)
+1. 共有リンクを生成し、 [メールでアセットリンクを共有します](#share-assets-link-through-email)。この場合、有効期限の日時などのデフォルト値を変更し、元のアセットとそのレンディションをダウンロードできます。 メールアドレスを追加することで、複数のユーザーにメールを送信できます。
 
-どちらの場合も、有効期限の日時などのデフォルト値を変更し、元のアセットとそのレンディションをダウンロードできます。
+   ![リンク共有ダイアログ](assets/link-sharing-dialog.png)
 
 ### アセットリンクをコピーして共有{#copy-and-share-asset-link}
 
@@ -84,9 +55,6 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 1. [!DNL Experience Manager Assets] にログインし、「**[!UICONTROL ファイル]**」に移動します。
 1. アセットまたはアセットを含むフォルダーを選択します。ツールバーで「**[!UICONTROL リンクを共有]**」をクリックします。
 1. **[!UICONTROL リンク共有]** ダイアログが表示され、 **[!UICONTROL 共有リンク]** フィールドに自動生成されたアセットリンクが含まれます。
-1. 必要に応じて、共有リンクの有効期限を設定します。
-1. **[!UICONTROL リンク設定]**&#x200B;で、`Include Originals` または `Include Renditions` をチェックまたはチェック解除して、2 つのいずれかを含めるか除外します。少なくともオプションの選択は必須です。
-1. 選択したアセットの名前は [!DNL Share Link] ダイアログボックスの右行に表示されます。
 1. アセットリンクをコピーしてユーザーと共有します。
 
 ### メール通知によるアセットリンクの共有 {#share-assets-link-through-email}
@@ -96,7 +64,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 1. アセットまたはアセットを含むフォルダーを選択します。ツールバーで「**[!UICONTROL リンクを共有]**」をクリックします。
 1. **[!UICONTROL リンク共有]** ダイアログが表示され、 **[!UICONTROL 共有リンク]** フィールドに自動生成されたアセットリンクが含まれます。
 
-   * 「メールアドレス」ボックスに、リンクを共有するユーザーのメールアドレスを入力します。リンクは複数のユーザーと共有できます。ユーザーが組織のメンバーの場合は、ドロップダウンリストに表示される候補の中からメールアドレスを選択します。メールアドレスのテキストフィールドに、リンクを共有するユーザーのメールアドレスを入力し、[!UICONTROL Enter] をクリックします。リンクは複数のユーザーと共有できます。
+   * 「メールアドレス」ボックスに、リンクを共有するユーザーのメール ID を入力します。リンクを複数のユーザーと共有できます。ユーザーが組織のメンバーの場合は、ドロップダウンリストに表示される候補の中からメール ID を選択します。外部ユーザーの場合は、メール ID を入力し、**[!UICONTROL Enter]** キーを押します。メール ID がユーザーの一覧に追加されます。
 
    * **[!UICONTROL 件名]** ボックスに、共有するアセットの目的を指定する件名を入力します。
    * 「**[!UICONTROL メッセージ]**」ボックスに、必要に応じてメッセージを入力します。
@@ -121,9 +89,9 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
   ![キューのダウンロード](assets/queue-download.png)
 
-* ダウンロードファイルの準備が整ったら、「**[!UICONTROL インボックスのダウンロード]**」オプションをクリックして、ダウンロードのステータスを表示します。大容量のダウンロードの場合は、「**[!UICONTROL 更新]**」ボタンをクリックしてステータスを更新します。
+* ダウンロードファイルの準備が整ったら、「**[!UICONTROL インボックスのダウンロード]**」オプションをクリックして、ダウンロードのステータスを表示します。 大容量のダウンロードの場合は、「**[!UICONTROL 更新]**」ボタンをクリックしてステータスを更新します。
 
-  ![インボックスをダウンロード](assets/link-sharing-download-inbox.png)
+  ![インボックスのダウンロード](assets/link-sharing-download-inbox.png)
 
 * 処理が完了したら、「**[!UICONTROL ダウンロード]**」ボタンをクリックして zip ファイルをダウンロードします。
 
@@ -234,13 +202,20 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 >* `[aem_server]:[port]/linkexpired.html`
 
 <!--
+## Configure Day CQ mail service {#configmailservice}
+
+Before you can share assets as links, configure the email service.
+
+1. Click or tap the Experience Manager logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
-1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service** with the details mentioned against their names:
+1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service]** with the details mentioned against their names:
 
     * SMTP server host name: email server host name
     * SMTP server port: email server port
     * SMTP user: email server user name
     * SMTP password: email server password
+
+1. Click/tap **[!UICONTROL Save]**.
 -->
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
