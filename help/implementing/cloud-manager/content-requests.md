@@ -1,13 +1,13 @@
 ---
 title: Cloud Serviceコンテンツリクエストについて
 description: Adobeからコンテンツリクエストライセンスを購入している場合は、Adobe Experience Cloud as a Service が測定するコンテンツリクエストのタイプと、組織の Analytics レポートツールとの相違について説明します。
-source-git-commit: e34b21194e35b2f56dd1e7df2165c3fa5c0cb7da
+exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
+source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 12%
 
 ---
-
 
 # Cloud Serviceコンテンツリクエスト
 
@@ -67,5 +67,3 @@ ht-degree: 12%
 | 除外Commerce integration framework呼び出し | 除外済み | これらは、Commerce integration frameworkに転送されるAEMに対しておこなわれる要求です。URL はで始まります。 `/api/graphql` — 二重計数を避けるために、Cloud Serviceの請求はできません。 |
 | 除外 `manifest.json` | 除外済み | マニフェストは API 呼び出しではありません。デスクトップまたは携帯電話に Web サイトをインストールする方法に関する情報を提供するために、ここに記載されています。 Adobeは次に対する JSON リクエストをカウントしない `/etc.clientlibs/*/manifest.json` |
 | 除外 `favicon.ico` | 除外済み | 返されるコンテンツはHTMLや JSON ではありませんが、SAMLHTMLフローなどのシナリオでは、favicon が認証として返される場合があるので、カウントから明示的に除外されることがわかります。 |
-
-

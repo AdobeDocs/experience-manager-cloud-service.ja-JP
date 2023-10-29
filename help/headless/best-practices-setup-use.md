@@ -1,13 +1,13 @@
 ---
 title: コンテンツフラグメントを使用したAEM GraphQLの設定と使用のベストプラクティス
 description: コンテンツフラグメントでのAEM GraphQLの設定と使用に関して推奨されるベストプラクティスについて説明します。
-source-git-commit: 9a544fb9d2494862efdb2263f3b9b61214c4b8b9
+exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
+source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
 workflow-type: tm+mt
 source-wordcount: '737'
-ht-degree: 29%
+ht-degree: 35%
 
 ---
-
 
 # コンテンツフラグメントを使用したAEM GraphQLの設定と使用のベストプラクティス{#best-practices-setup-use-aem-graphql-content-fragments}
 
@@ -82,7 +82,7 @@ CORS は通常、次の目的で設定されます。
 
 ### 認証 {#authentication}
 
-コンテンツフラグメント配信用のAdobe Experience Manager as a Cloud Service(AEM)GraphQL API の主な使用例は、サードパーティのアプリケーションまたはサービスからのリモートクエリを受け入れることです。 これらのリモートクエリでヘッドレスコンテンツ配信を保護するには、認証済み API アクセスが必要になる場合があります。
+コンテンツフラグメント配信用の Adobe Experience Manager as a Cloud Service（AEM）GraphQL API の主な使用例は、サードパーティのアプリケーションやサービスからリモートクエリを受け入れることです。ヘッドレスコンテンツ配信を保護するために、これらのリモートクエリには、認証済み API アクセスが必要な場合があります。
 
 #### 詳細 {#details-authentication}
 

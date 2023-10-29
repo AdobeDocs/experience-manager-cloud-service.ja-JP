@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0 リリースのリリースノート。'
-source-git-commit: 8f6611bdee755e0aa6f59c8f322a26cd1a071f23
+exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
+source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 32%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート {#release-notes}
 
