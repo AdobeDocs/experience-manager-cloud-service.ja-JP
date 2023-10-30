@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 65%
+source-wordcount: '771'
+ht-degree: 66%
 
 ---
 
@@ -138,6 +138,11 @@ ht-degree: 65%
 
 {{see-also}}
 
+
+<!--
+
 >[!MORELIKETHIS]
 >
->* [アダプティブフォームのコアコンポーネントでのテーマの使用](/help/forms/using-themes-in-core-components.md)
+>* [Use themes in Adaptive Form Core Components ](/help/forms/using-themes-in-core-components.md)
+
+-->

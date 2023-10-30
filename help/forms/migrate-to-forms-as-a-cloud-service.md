@@ -9,7 +9,7 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
 source-wordcount: '1583'
 ht-degree: 94%
@@ -170,7 +170,7 @@ AEM Workflow モデルをAEM Forms 6.5 からCloud Serviceに移行する場合�
 移行ユーティリティを使用すると、基盤コンポーネントに基づいてアダプティブフォームを移行できます。また、Forms as a Cloud Service は、アダプティブフォームコアコンポーネントをサポートしています。次の事項ができるようになります。
 
 * [コアコンポーネントベースのスタンドアロンのアダプティブフォームを作成する](/help/forms/creating-adaptive-form-core-components.md)
-* [コアコンポーネントベースのアダプティブフォームを AEM Sites ページで直接作成する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [コアコンポーネントベースのアダプティブフォームをAEM Sitesページで直接作成する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 AEM Forms as a Cloud Service の詳細については、次を参照してください。
 

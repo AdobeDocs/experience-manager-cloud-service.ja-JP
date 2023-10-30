@@ -5,9 +5,9 @@ role: User, Developer
 keywords: AEMアダプティブフォームをMicrosoft SharePointリストに接続し、アダプティブフォームをMicrosoft SharePointリストに接続し、AEMアダプティブフォームをMicrosoft SharePointリストに統合し、アダプティブフォームをMicrosoftリストに統合し、アダプティブフォームからSharePointリストにデータを送信しAEMます。
 hide: true
 hidefromToC: true
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '550'
 ht-degree: 5%
 
 ---
@@ -86,16 +86,12 @@ Microsoft® SharePointリストをAEMワークフローに統合するには：
 * [データソースの設定](/help/forms/configuring-submit-actions.md)
 * [フォームデータモデルの作成](/help/forms/create-form-data-models.md)
 * [Forms中心のAEM Workflows — ステップリファレンスを使用して、ビジネスプロセスを自動化します。](/help/forms/aem-forms-workflow-step-reference.md)
-
-## 追加情報
-
+* [アダプティブフォーム用のカスタム送信アクションの作成](/help/forms/custom-submit-action-form.md)
 * [アダプティブフォームを作成するかAEM Sitesページに追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [アダプティブフォームをAEM Sitesページに埋め込む](/help/forms/embed-adaptive-form-aem-sites.md)
 * [アダプティブフォームのテーマを作成、使用、カスタマイズする](/help/forms/using-themes-in-core-components.md)
 
->[!MORELIKETHIS]
->
->* [アダプティブフォーム用のカスタム送信アクションの作成](/help/forms/custom-submit-action-form.md)
+
 
 
 

@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '2326'
+source-wordcount: '2303'
 ht-degree: 75%
 
 ---
@@ -191,15 +191,21 @@ ht-degree: 75%
 1. 「**[!UICONTROL 保存]**」をタップして、プロパティを保存します。
 
 
-## 次を見る
+<!--
 
-* [フォームのスタイルまたはテーマを作成](using-themes-in-core-components.md)
-* [ルールエディターを使用してフォームに動的な動作を追加](rule-editor.md)
-* [画面サイズやデバイスタイプに応じてフォームのレイアウトを設定](/help/sites-cloud/authoring/features/responsive-layout.md)
-* [サンプルのテーマテンプレートとフォームデータモデル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+## See next
+
+* [Create style or themes for your forms](using-themes-in-core-components.md)
+* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+
+-->
 
 ## 関連トピック {#see-also}
 
 {{see-also}}
 
+* [ルールエディターを使用してフォームに動的な動作を追加](rule-editor.md)
+* [画面サイズやデバイスタイプに応じてフォームのレイアウトを設定](/help/sites-cloud/authoring/features/responsive-layout.md)
 

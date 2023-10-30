@@ -3,9 +3,9 @@ title: AEM 6.5 FormsとAEMCloud Serviceの違いは何ですか？
 description: AEM 6.5 Forms と AEM Cloud Services を比較し、アップグレードまたは Cloud Service への移行前に、最も重要な変更点を確認します。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1348'
 ht-degree: 69%
 
 ---
@@ -113,13 +113,20 @@ Forms as a Cloud Service には、ドキュメント生成とドキュメント�
 
 * 通信 API を使用して、パーソナライズされたドキュメントを Forms as a Cloud Service 上でオンデマンドまたはバッチで生成できます。AEM 6.5 Forms 環境は、インタラクティブ通信とエージェント UI のユースケースに使用できます。
 
-## 次へを参照
+## 関連トピック
 
 * [AEM Forms（オンプレミスおよび AMS 環境）からAEM Formsas a Cloud Service環境への移行](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [AEM SitesページへのアダプティブFormsの追加または作成](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [アダプティブフォーム（コアコンポーネント）の作成](/help/forms/creating-adaptive-form-core-components.md)
-
-## 追加情報
-
 * [AEM Forms as a Cloud Service の概要](/help/forms/home.md)
 * [ローカル開発環境と初期開発プロジェクトの設定](/help/forms/setup-local-development-environment.md)
+
+
+<!--
+
+## Additional Information
+
+* [Introduction to AEM Forms as a Cloud Service](/help/forms/home.md)
+* [Set up a local development environment and initial development project](/help/forms/setup-local-development-environment.md)
+
+-->

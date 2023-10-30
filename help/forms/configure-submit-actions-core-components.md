@@ -3,9 +3,9 @@ title: アダプティブフォームの送信アクションの設定方法?
 description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自の送信アクションを作成できます
 keywords: アダプティブフォームの送信アクションの選択、アダプティブフォームの sharepoint リストへの接続、アダプティブフォームの sharepoint ドキュメントライブラリへの接続、アダプティブフォームのフォームデータモデルへの接続の方法
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '3658'
+source-wordcount: '3635'
 ht-degree: 81%
 
 ---
@@ -498,12 +498,14 @@ AEM セキュリティおよび堅牢化ガイドラインの一環として、4
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 
 
-## 次を見る
+<!--
+## See next
 
-* [フォームのスタイルまたはテーマを作成](using-themes-in-core-components.md)
-* [アダプティブフォームの作成（コアコンポーネント）](/help/forms/creating-adaptive-form-core-components.md)
-* [アダプティブフォーム用のカスタム送信アクションの作成](/help/forms/custom-submit-action-form.md)
+* [Create style or themes for your forms](using-themes-in-core-components.md)
+* [Create an Adaptive Form (core components)](/help/forms/creating-adaptive-form-core-components.md)
+* [Create a custom Submit Action for Adaptive Forms](/help/forms/custom-submit-action-form.md)
 
+-->
 
 ## 関連トピック {#see-also}
 
