@@ -2,17 +2,17 @@
 title: ヘッドレスコンテンツの翻訳
 description: 翻訳コネクタを使用してヘッドレスコンテンツを翻訳する方法を説明します。
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
 workflow-type: tm+mt
 source-wordcount: '2175'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
 
 # ヘッドレスコンテンツの翻訳 {#translate-content}
 
-翻訳コネクタを使用してヘッドレスコンテンツを翻訳する方法を説明します。
+翻訳統合を使用して、ヘッドレスコンテンツを翻訳します。
 
 ## これまでの説明内容 {#story-so-far}
 
