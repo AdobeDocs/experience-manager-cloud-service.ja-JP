@@ -8,7 +8,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 1dd0bbbe8a366b38a923e61bd987e248c2f78e86
 workflow-type: tm+mt
 source-wordcount: '2445'
 ht-degree: 79%
@@ -408,8 +408,7 @@ Using this custom error handler, the adaptive form converts the fields listed in
 ## 関連トピック {#see-also}
 
 {{see-also}}
-
->* [アダプティブForms（コアコンポーネント）でカスタムエラーハンドラーを作成して使用する](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
+* [アダプティブForms（コアコンポーネント）でカスタムエラーハンドラーを作成して使用する](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
 
 <!--
 

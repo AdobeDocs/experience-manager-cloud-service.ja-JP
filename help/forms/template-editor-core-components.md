@@ -3,7 +3,7 @@ title: コアコンポーネントに基づいてアダプティブフォーム�
 description: コアコンポーネントに基づいてアダプティブフォームテンプレートを作成し、テンプレートエディターを使用して基本的な構造と初期コンテンツを定義します。
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 25a1504e2655e414f32dfea20e416889cea06dcc
+source-git-commit: f562d082520037fa1b15272c763d35e93dab137f
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 58%
@@ -291,7 +291,6 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 ## 関連トピック {#see-also}
 
 {{see-also}}
-
 * [フォームのスタイルまたはテーマを作成](using-themes-in-core-components.md)
 * [アダプティブフォームの作成（コアコンポーネント）](/help/forms/creating-adaptive-form-core-components.md)
 

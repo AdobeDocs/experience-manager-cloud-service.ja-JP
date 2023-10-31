@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
 workflow-type: tm+mt
 source-wordcount: '2303'
 ht-degree: 75%
@@ -205,7 +205,6 @@ ht-degree: 75%
 ## 関連トピック {#see-also}
 
 {{see-also}}
-
 * [ルールエディターを使用してフォームに動的な動作を追加](rule-editor.md)
 * [画面サイズやデバイスタイプに応じてフォームのレイアウトを設定](/help/sites-cloud/authoring/features/responsive-layout.md)
 

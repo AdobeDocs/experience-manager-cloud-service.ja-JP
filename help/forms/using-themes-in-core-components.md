@@ -2,7 +2,7 @@
 title: アダプティブFormsでテーマを作成して使用するにはどうすればよいですか？
 description: テーマを使用して、コアコンポーネントを使用してアダプティブフォームのスタイルを設定し、視覚的な ID を付けることができます。 任意の数のアダプティブフォームで、テーマを共有できます。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
 workflow-type: tm+mt
 source-wordcount: '2678'
 ht-degree: 18%
@@ -430,7 +430,6 @@ The `variable.scss` ファイルには、テーマのグローバル変数が含
 ## 関連トピック {#see-also}
 
 {{see-also}}
-
 * [画面サイズやデバイスタイプに応じてフォームのレイアウトを設定](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [アダプティブForms（コアコンポーネント）用のレコードのドキュメントを生成する](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [繰り返し可能なセクションを使用したアダプティブFormsの作成](/help/forms/create-forms-repeatable-sections.md)
