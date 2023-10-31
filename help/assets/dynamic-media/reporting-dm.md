@@ -4,13 +4,15 @@ description: 失敗したDynamic Media配信 URL のエラーレポートをリ�
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
-source-git-commit: 7ce15cc755c9db589001d543c16312096d88bcf0
+hide: true
+hidefromtoc: true
+exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
+source-git-commit: aa7429d9ca9f67979303c0b85c9dbd5b8c74c05c
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 4%
 
 ---
-
 
 # 失敗したDynamic Media配信 URL のエラーレポートをリクエストします
 
@@ -31,7 +33,3 @@ ht-degree: 4%
    会社名が不明な場合は、 [Dynamic Media Configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=ja#configuring-dynamic-media-cloud-services) ページ内 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL ツール]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Dynamic Media Configuration]**. Dynamic Media Configuration Browser ページで、 **[!UICONTROL global]**&#x200B;を選択し、 *[Dynamic_Media_folder_icon]* 「 」チェックボックスをオンにして、「 」を選択します。 **[!UICONTROL 編集]**. Dynamic Media設定ページにアクセスするには、AEMの管理者権限が必要です。
 
    ![Dynamic Media設定ページへのアクセス](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)
-
-
-
-
