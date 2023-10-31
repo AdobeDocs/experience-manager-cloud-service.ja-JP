@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7b22d8c4d253642c92f6b2121e2883dac375a5c7
+source-git-commit: 4e3cf2276cdd5fb0722aee0e6cec11da951ca49d
 workflow-type: tm+mt
-source-wordcount: '4347'
-ht-degree: 93%
+source-wordcount: '4357'
+ht-degree: 92%
 
 ---
 
@@ -548,6 +548,10 @@ ht-degree: 93%
 
    + Adobe Expressとの統合 {#integration-adobe-express}
       + [Adobe Express用AEM Assetsアドオン](/help/assets/addon-adobe-express.md)
+
+   + Creative Cloudとの統合 {#integration-creative-cloud}
+      + [AEM AssetsをCreative Cloudに接続](/help/assets/connect-assets-with-creative-cloud.md)
+
 + Forms {#forms}
    + 概要 {#forms-overview}
       + [はじめに](/help/forms/home.md)
