@@ -2,9 +2,9 @@
 title: 非同期ジョブ
 description: Adobe Experience Manager では、リソースを集中的に消費する一部のタスクをバックグラウンド操作として非同期に処理することでパフォーマンスを最適化します。
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
+source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '865'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,6 @@ Adobe Experience Manager では、パフォーマンスを悪化させないた�
 * 多数のアセットまたは多数の参照があるアセットの移動
 * アセットメタデータの一括書き出し／読み込み
 * しきい値制限セットを超えるアセットのリモート Experience Manager デプロイメントからの取得
-* ページの移動
 * ライブコピーのロールアウト
 
 非同期ジョブのステータスは、**グローバルナビゲーション**&#x200B;の&#x200B;**[!UICONTROL バックグラウンド操作]**&#x200B;ダッシュボードから、**ツール**／**一般**／**ジョブ**&#x200B;で確認できます。
@@ -124,20 +123,6 @@ AEM は、毎日午前 1 時にパージジョブを実行して、1 日以上�
 1. 「**メール通知を有効にする**」オプションを選択すると、このジョブステータスに関するメール通知を受信できます例えば、成功、失敗です。
 1. 変更を保存します。
 
-### 非同期ページ移動操作を設定 {#configuring-asynchronous-page-move-operations}
-
-移動するページへの参照数がしきい値を超えると、移動操作は非同期に実行されます。
-
-1. AEM SDK Quickstart Jar の AEM web コンソール（`https://<host>:<port>/system/console`）に管理者ユーザーとしてログインします。
-1. **OSGi**／**設定**&#x200B;に移動します。
-1. Web コンソールで、「**[!UICONTROL Async Page Move Operation Job Processing Configuration]**」を開きます。
-1. 「**[!UICONTROL Threshold number of references]**」ボックスで、ページ移動操作の非同期処理に関する参照の数のしきい値を指定します。
-
-   ![ページ移動しきい値](assets/async-page-move.png)
-
-1. 「**メール通知を有効にする**」オプションを選択すると、このジョブステータスに関するメール通知を受信できます例えば、成功、失敗です。
-1. 変更を保存します。
-
 ### 非同期 MSM 操作を設定 {#configuring-asynchronous-msm-operations}
 
 1. AEM SDK Quickstart Jar の AEM web コンソール（`https://<host>:<port>/system/console`）に管理者ユーザーとしてログインします。
@@ -154,4 +139,3 @@ AEM は、毎日午前 1 時にパージジョブを実行して、1 日以上�
 >* [ページの作成と整理](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
 >* [アセットメタデータの一括読み込みおよび書き出し](/help/assets/metadata-import-export.md)
 >* [Connected Assets を使用したリモートデプロイメントからの DAM アセットの共有](/help/assets/use-assets-across-connected-assets-instances.md)
-
