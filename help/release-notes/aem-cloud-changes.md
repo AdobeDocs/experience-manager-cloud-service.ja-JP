@@ -2,10 +2,10 @@
 title: Adobe Experience Manager（AEM）as a Cloud Service の主な変更点
 description: Adobe Experience Manager（AEM）as a Cloud Service の主な変更点。
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: 30edc83364dd9666b94f54048abc8b7f92ad6ce3
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 49%
+source-wordcount: '871'
+ht-degree: 48%
 
 ---
 
@@ -79,23 +79,9 @@ OSGi バンドルおよび設定の変更は、CI/CD パイプラインを通じ
 
 ## カスタム実行モードは許可されていません {#custom-runmodes}
 
-AEM Cloud Serviceには、次の実行モードが標準で用意されています。
+AEM as a Cloud Service では、追加またはカスタムの実行モードは使用できません。AEM Cloud Serviceに標準で用意されている実行モードの一覧については、このドキュメントを参照してください。 [AEMにデプロイします。](/help/implementing/deploying/overview.md#runmodes)
 
-* `author`
-* `publish`
-* `prod`
-* `author.prod`
-* `publish.prod`
-* `stage`
-* `author.stage`
-* `publish.stage`
-* `dev`
-* `author.dev`
-* `publish.dev`
-
-AEM as a Cloud Service では、追加またはカスタムの実行モードは使用できません。
-
-## レプリケーションエージェントの削除および関連する変更 {#replication-agents}
+## レプリケーションエージェントの削除と関連する変更 {#replication-agents}
 
 AEM as a Cloud Service では、[Sling コンテンツ配布](https://sling.apache.org/documentation/bundles/content-distribution.html)を使用してコンテンツが公開されます。以前のバージョンのAEMで使用されていたレプリケーションエージェントは、使用も提供もされなくなりました。これは、既存のAEMプロジェクトの次の領域に影響を与える可能性があります。
 

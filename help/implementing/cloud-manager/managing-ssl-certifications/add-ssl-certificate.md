@@ -2,10 +2,10 @@
 title: SSL 証明書の追加
 description: Cloud Manager のセルフサービスツールを使用して独自の SSL 証明書を追加する方法を説明します。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 94%
+source-wordcount: '555'
+ht-degree: 88%
 
 ---
 
@@ -17,29 +17,9 @@ Cloud Manager のセルフサービスツールを使用して独自の SSL 証�
 >
 >証明書のプロビジョニングには数日かかる場合があります。アドビでは、証明書を事前に適切にプロビジョニングすることをお勧めします。
 
-## 証明書の形式 {#certificate-format}
+## 証明書の要件 {#certificate-requirements}
 
-SSL 証明書ファイルを Cloud Manager にインストールするには、SSL ファイルを PEM 形式にする必要があります。PEM 形式の一般的なファイル拡張子は次のとおりです `.pem,` .`crt`、`.cer`、`.cert` です。
-
-次の `openssl` コマンドを使用して、PEM 以外の証明書を変換できます。
-
-* PFX を PEM に変換
-
-  ```shell
-  openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
-  ```
-
-* P7B を PEM に変換
-
-  ```shell
-  openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
-  ```
-
-* DER を PEM に変換
-
-  ```shell
-  openssl x509 -inform der -in certificate.cer -out certificate.pem
-  ```
+セクションを確認してください **証明書の要件** ドキュメントの [SSL 証明書管理の概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) 追加する証明書がAEM as a Cloud Serviceでサポートされていることを確認するため。
 
 ## 証明書の追加 {#adding-a-cert}
 

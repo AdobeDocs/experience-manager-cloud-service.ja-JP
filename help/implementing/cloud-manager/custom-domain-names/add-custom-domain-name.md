@@ -2,10 +2,10 @@
 title: カスタムドメイン名の追加
 description: Cloud Manager を使用してカスタムドメイン名を追加する方法を説明します。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 600288a87e024fbe58ff605a8bcdc61535cc0759
+source-git-commit: d3021a4dd78a0ca86352a81965ce92868e94664a
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 93%
+source-wordcount: '637'
+ht-degree: 87%
 
 ---
 
@@ -22,7 +22,9 @@ Cloud Manager では、次の 2 つの場所からカスタムドメイン名を
 
 ## ドメイン設定ページからのカスタムドメイン名の追加 {#adding-cdn-settings}
 
-**ドメイン設定**&#x200B;ページからカスタムドメイン名を追加するには、次の手順に従います。提供された Fastly とは異なる CDN を使用している場合、これらの手順は機能しません。また、お使いのドメインを設定済みの CDN で設定する必要があります。
+カスタムドメイン名を追加する場合、ドメインは、最も具体的で有効な証明書を使用して提供されます。 複数の証明書が同じドメインを持つ場合は、最も新しく更新されたものが選択されます。 Adobeでは、重複するドメインがないように証明書を管理することをお勧めします。
+
+**ドメイン設定**&#x200B;ページからカスタムドメイン名を追加するには、次の手順に従います。これらの手順は Fastly に基づいています。 別の CDN を使用する場合は、使用するように選択した CDN でドメインを設定する必要があります。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 

@@ -2,10 +2,10 @@
 title: 環境の管理
 description: 作成できる環境のタイプと、Cloud Manager プロジェクト用に環境を作成する方法について説明します。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: e636a765cdc1be7cb0d385089e8ccc75b798844a
+source-git-commit: 532f3ac9450d34f3e2a168c04695bafde5a44c9f
 workflow-type: tm+mt
-source-wordcount: '2558'
-ht-degree: 88%
+source-wordcount: '2601'
+ht-degree: 85%
 
 ---
 
@@ -36,6 +36,8 @@ ht-degree: 88%
 >実稼動環境とステージング環境はペアとしてのみ作成されます。ステージング環境または実稼動環境のどちらか一方のみを作成することはできません。
 
 ## 環境の追加 {#adding-environments}
+
+環境を追加または編集するには、ユーザーが **ビジネスオーナー** 役割。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
@@ -234,7 +236,7 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 
 ![「環境」タブの「更新」オプション](assets/environ-update3.png)
 
-**デプロイメントマネージャー**&#x200B;の役割を持つユーザーは、このオプションを使用して、この環境に関連付けられているパイプラインを最新の AEM バージョンに更新できます。
+ユーザーが **デプロイメントマネージャー** または **ビジネスオーナー** 役割では、このオプションを使用して、この環境に関連付けられているパイプラインを最新のAEMバージョンに更新できます。
 
 パイプラインのバージョンが公開済みの最新の AEM バージョンに更新されたら、ユーザーは、関連するパイプラインを実行して最新バージョンの AEM を環境にデプロイするように促されます。
 
@@ -248,7 +250,7 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 
 ## 開発環境の削除 {#deleting-environment}
 
-必要な権限を持つユーザーは、開発環境を削除できます。
+ユーザーが **デプロイメントマネージャー** または **ビジネスオーナー** の役割は、開発環境を削除できます。
 
 **環境**&#x200B;カードのプログラムの&#x200B;**概要**&#x200B;画面で、削除する開発環境の省略記号ボタンをクリックします。
 
@@ -287,7 +289,7 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 
 ## ローカルログイン {#login-locally}
 
-**環境**&#x200B;カードで環境の省略記号メニューから「**ローカルログイン**」を選択すると、Adobe Experience Manager にローカルにログインできるようになります。
+選択 **ローカルログイン** を選択します。 **環境** Adobe Experience Managerにローカルでログオンするためのカード。
 
 ![ローカルログイン](assets/environ-login-locally.png)
 
@@ -300,6 +302,8 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 Cloud Manager では、Sites プログラムのパブリッシュサービスとプレビューサービスの両方に対してカスタムドメイン名がサポートされています。各 Cloud Manager 環境は、最大 250 個のカスタムドメインをホストできます。
 
 カスタムドメイン名を設定するには、「**環境**」タブに移動し、環境をクリックして環境の詳細を表示します。
+
+Cloud Manager でカスタムドメイン名を追加するには、ユーザーが&#x200B;**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持っている必要があります
 
 ![環境の詳細](assets/domain-names.png)
 

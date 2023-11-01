@@ -2,10 +2,10 @@
 title: SSL 証明書の管理の概要
 description: Cloud Manager が、SSL 証明書をインストールするセルフサービスツールを提供する方法について説明します。
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 100%
+source-wordcount: '679'
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ AEM as a Cloud Service は、セキュリティで保護された `https` サイ
 * 複数のカスタムドメインを持つ顧客の場合、ドメインを追加するたびに証明書をアップロードしたくはありません。
 * 複数のドメインを持つ 1 つの証明書を取得することで、そのような顧客はメリットが得られます。
 
-## 要件 {#requirements}
+## 証明書の要件 {#requirements}
 
 * AEM as a Cloud Service では、OV（組織検証）ポリシーまたは EV（拡張検証）ポリシーに準拠する証明書のみを受け付けます。
 * 証明書はすべて、2048 ビットの RSA 秘密鍵と一致する信頼できる証明機関（CA）の X.509 TLS 証明書である必要があります。
@@ -57,6 +57,30 @@ AEM as a Cloud Service は、セキュリティで保護された `https` サイ
 * 自己署名証明書は受け付けられません。
 
 OV 証明書と EV 証明書は、CA で検証された追加の情報をユーザーに提供します。ユーザーは、この情報を使用して、web サイトの所有者、メールの送信者、実行可能なコードや PDF ドキュメントのデジタル署名者の信頼性を判断できます。DV 証明書では、このような所有権の検証は許可されません。
+
+### 証明書の形式 {#certificate-format}
+
+SSL 証明書ファイルを Cloud Manager にインストールするには、SSL ファイルを PEM 形式にする必要があります。PEM 形式の一般的なファイル拡張子は次のとおりです `.pem,` .`crt`、`.cer`、`.cert` です。
+
+次の `openssl` コマンドを使用して、PEM 以外の証明書を変換できます。
+
+* PFX を PEM に変換
+
+  ```shell
+  openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
+  ```
+
+* P7B を PEM に変換
+
+  ```shell
+  openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
+  ```
+
+* DER を PEM に変換
+
+  ```shell
+  openssl x509 -inform der -in certificate.cer -out certificate.pem
+  ```
 
 ## 制限事項 {#limitations}
 
