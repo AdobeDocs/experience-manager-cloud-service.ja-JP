@@ -3,10 +3,10 @@ title: AEM バージョンのアップデート
 description: Adobe Experience Manager(AEM)as a Cloud Serviceで継続的な統合および配信 (CI/CD) を使用して、プロジェクトを最新バージョンに保つ方法を説明します。
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 57d6b50ef5256bf6e8fce84100eed4690b77cb87
+source-git-commit: 9bfea65c07da5da044df8f698e409eab5c4320fb
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 17%
+source-wordcount: '827'
+ht-degree: 16%
 
 ---
 
@@ -30,15 +30,18 @@ AEM as a Cloud Service では、継続的統合および継続的配信（CI／C
 
 AEMバージョンのアップデートは、次の 2 種類があります。
 
-* **AEM メンテナンスアップデート**
+* [**AEM メンテナンスアップデート**](/help/release-notes/maintenance/latest.md)
 
-   * 毎日リリースできます。
    * 最新のバグ修正やセキュリティ更新など、主にメンテナンス目的です。
    * 変更は定期的に適用されるので、影響は最小限に抑えられます。
 
-* **新機能アップデート**
+* [**新機能アップデート**](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-   * これらは、 [予測可能な月次スケジュール](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja)
+   * 予測可能な月次スケジュールでリリースされます。
+
+>[!NOTE]
+>
+> の毎月のリリースの主な日付を確認します。 [Experience Managerリリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja#aem-as-cloud-service) リリースの準備を整えるために、主要なアクティビティの準備をするために、カレンダーにマークを付けます。
 
 ## 更新の失敗 {#update-failure}
 
