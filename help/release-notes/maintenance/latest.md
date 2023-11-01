@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 6e82bbcc1b83fa9216831f6f746665507a46eec7
+source-git-commit: 01f148dbe885c96b27f88a88e7020a1008f4c1d3
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '595'
 ht-degree: 23%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 23%
 
 ### 既知の問題 {#known-issues-14029}
 
-なし。
+* ASSETS-31015：不明なファイル拡張子を持つファイルをアセットにアップロードできません。
 
 ### 組み込みテクノロジー {#embedded-tech-14029}
 
