@@ -2,10 +2,10 @@
 title: 大規模なコンテンツリポジトリーの処理
 description: この節では、大規模なコンテンツリポジトリーの処理について説明します
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
 workflow-type: tm+mt
-source-wordcount: '1813'
-ht-degree: 100%
+source-wordcount: '1835'
+ht-degree: 98%
 
 ---
 
@@ -190,6 +190,9 @@ AzCopy のログエントリは抽出ログに表示され、先頭に c.a.g.s.m
 AzCopy に問題がある場合、抽出は直ちに失敗し、抽出ログには失敗に関する詳細が含まれます。
 
 エラーの発生前にコピーされた BLOB は、その後の実行で AzCopy によって自動的にスキップされ、再度コピーされることはありません。
+
+>[!TIP]
+>取り込みが成功した直後に、取り込みを自動的に開始するようにスケジュールできるようになりました。 詳しくは、 [Target へのコンテンツの取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) を参照してください。
 
 #### ファイルデータストアの場合 {#file-data-store-extract}
 

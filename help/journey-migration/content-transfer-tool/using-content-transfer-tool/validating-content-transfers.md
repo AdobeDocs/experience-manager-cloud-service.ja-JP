@@ -2,10 +2,10 @@
 title: コンテンツ転送の検証
 description: コンテンツ転送ツールを使用してコンテンツ転送を検証します
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
+source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 97%
+source-wordcount: '1084'
+ht-degree: 96%
 
 ---
 
@@ -101,7 +101,7 @@ Migration validation took 33 minutes
 
 抽出ダイジェストに存在していて取り込みダイジェストに見つからないエントリはないので、これは成功した検証の例になります。
 
-これと比較するために、検証が失敗した場合の検証レポートの例を以下に示します。
+比較すると、検証が失敗した（または追加移行が実行された）場合に、検証レポートは次のように表示されます。
 
 ```
 Beginning publish migration validation. Migration job id=[ac217e5a-a08d-4e81-cbd6-f39f88b174ce]
