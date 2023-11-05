@@ -5,11 +5,11 @@ exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: 30edc83364dd9666b94f54048abc8b7f92ad6ce3
 workflow-type: tm+mt
 source-wordcount: '871'
-ht-degree: 48%
+ht-degree: 49%
 
 ---
 
-# Adobe Experience Manager as a Cloud Serviceの主な変更点 {#notable-changes-aem-cloud}
+# Adobe Experience Manager as a Cloud Service の主な変更点 {#notable-changes-aem-cloud}
 
 Adobe Experience Manager(AEM)Cloud Serviceは、AEMプロジェクトを管理するための様々な新機能と可能性を提供します。 ただし、AEM Cloud Serviceとは、オンプレミスまたはAdobe管理サービスのAEM Sitesではいくつかの違いがあります。 ここでは、重要な相違点について重点的に説明します。
 

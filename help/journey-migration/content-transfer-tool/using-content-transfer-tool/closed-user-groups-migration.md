@@ -1,5 +1,5 @@
 ---
-title: 閉じられたユーザーグループの移行
+title: クローズドユーザーグループの移行
 description: コンテンツをAdobe Experience Manager as a Cloud Serviceに移行した後に閉じられたユーザーグループを有効にするために必要な特別な考慮事項について説明します。
 hide: true
 hidefromtoc: true
@@ -7,11 +7,11 @@ exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
 source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
-# 閉じられたユーザーグループの移行 {#migrating-closed-user-groups}
+# クローズドユーザーグループの移行 {#migrating-closed-user-groups}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cug_migration"

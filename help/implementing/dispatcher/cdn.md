@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
 workflow-type: tm+mt
 source-wordcount: '1033'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ Cloud Manager セルフサービス UI を使用して、AEM の標準搭載 CDN
 >
 >許可されている IP からのリクエストのみが、AEM の管理による CDN で処理されます。独自の CDN に AEM の管理による CDN を参照させる場合は、CDN の IP が許可リストに含まれていることを確認してください。
 
-## 顧客 CDN がAEM管理による CDN を指す {#point-to-point-CDN}
+## 顧客 CDN で AEM の管理による CDN を参照する {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"

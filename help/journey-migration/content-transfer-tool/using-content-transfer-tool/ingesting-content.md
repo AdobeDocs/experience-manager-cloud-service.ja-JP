@@ -11,7 +11,7 @@ ht-degree: 48%
 
 # コンテンツの取り込みCloud Service {#ingesting-content}
 
-## Cloud Acceleration Manager での取り込みプロセス {#ingestion-process}
+## Cloud Acceleration Manager での取得プロセス {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
