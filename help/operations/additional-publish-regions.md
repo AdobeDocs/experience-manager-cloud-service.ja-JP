@@ -2,10 +2,10 @@
 title: 追加の公開地域
 description: AEM as a Cloud Service が、可用性の向上と待ち時間の短縮を実現するために、追加の公開地域をサポートする方法を説明します。
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: 4f11d1958cbfb252f29a7815af8800426d945ebd
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 100%
+source-wordcount: '606'
+ht-degree: 89%
 
 ---
 
@@ -35,6 +35,11 @@ AEM Sites で設定されたプログラムでは、追加の公開地域のラ�
 追加の公開地域のライセンスを取得したら、Cloud Manager を使用してその地域を設定します。詳しくは、[Cloud Manager ドキュメント](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)を参照してください。
 
 追加の公開地域は、ステージング環境と実稼動環境には適用されますが、RDE 環境や開発環境には適用されません。
+
+地域が利用できなくなった場合、その地域はAdobeCDN で管理されるので、利用可能な地域へのトラフィックのルーティングを顧客が管理する必要はありません。
+
+次の「高度なネットワークに関する考慮事項」の節で説明するように、高度なネットワークを使用するお客様は、追加のパブリッシュ地域ごとにその地域を設定し、その地域が使用できなくなった場合に可用性を維持することをお勧めします。
+
 
 ## 高度なネットワークに関する考慮事項 {#advanced-networking-considerations}
 
