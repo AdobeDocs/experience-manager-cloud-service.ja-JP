@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service のアーキテクチャの概要
 description: Adobe Experience Manager as a Cloud Service のアーキテクチャの概要。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 689b672e75c4e4d2fa8f716d93c65418f332a266
+source-git-commit: b610de53d1bd1b120a2642336aac1713444bfd3e
 workflow-type: tm+mt
-source-wordcount: '2656'
+source-wordcount: '2665'
 ht-degree: 11%
 
 ---
@@ -66,7 +66,7 @@ AEM Sites、AEM Assets、AEM Formsの各ソリューションを使用してプ�
 
 AEMプログラムは、 [Edge Delivery Services](/help/edge/overview.md) 同様に。
 
-設定が完了すると、AEMは、Edge Delivery Servicesを使用したエクスペリエンスの構築に使用する GitHub コードリポジトリを参照できるようになります。 その結果、関連するエクスペリエンスで新しい設定オプションを使用できるようになります。 これには、Adobe管理 CDN の設定、ライセンス指標へのアクセス、SLA レポートなどが含まれます。
+設定が完了すると、AEMは、Edge Delivery Servicesを使用したエクスペリエンスの構築に使用する GitHub コードリポジトリを参照できるようになります。 その結果、関連するエクスペリエンスで新しい設定オプションを使用できるようになります。 これには、Adobe管理 CDN の設定や、ライセンス指標や SLA レポートへのアクセスが含まれます。
 
 ## サービスアーキテクチャ {#service-architecture}
 
@@ -198,7 +198,7 @@ AEM Manager は、as a Cloud Serviceのインスタンスに対するすべて�
 
 * 製品の整合性を確保するためにAdobeが寄与した
 * お客様が提供するテスト
-   * 機能テスト： http
+   * 機能テスト：AEMオーサー層またはパブリッシュ層への HTTP リクエストを使用
    * UI テスト：Selenium または Cypress テクノロジーに基づく
 
 これらの自動テストはステージング環境で実行されます。そのため、ステージ環境のコンテンツを実稼動インスタンス上のコンテンツにできる限り近づけることが重要です。
