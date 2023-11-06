@@ -233,7 +233,7 @@ ht-degree: 92%
          + [コンテンツ転送ツール使用のガイドラインとベストプラクティス](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [コンテンツ転送ツールの基本を学ぶ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [コンテンツ転送の検証](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
-         + [閉じられたユーザーグループの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
+         + [クローズドユーザーグループの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
          + [大規模なコンテンツリポジトリーの処理](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
          + [ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
          + [ソースからのコンテンツの抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)

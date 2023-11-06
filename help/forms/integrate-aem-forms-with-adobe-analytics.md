@@ -95,7 +95,7 @@ AEM Forms と [Adobe Analytics](https://experienceleague.adobe.com/docs/experien
    <td>PageName</td>
   </tr>
   <tr>
-   <td>PageURL<br /> </td>
+   <td>PageURL<br />。 </td>
    <td>PanelTitle<br /> </td>
    <td>TimeSpent</td>
   </tr>

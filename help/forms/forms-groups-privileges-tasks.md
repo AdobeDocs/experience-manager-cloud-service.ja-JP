@@ -5,7 +5,7 @@ exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
 source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '185'
-ht-degree: 75%
+ht-degree: 80%
 
 ---
 
@@ -112,7 +112,7 @@ ht-degree: 75%
 * [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
 * [AEM 6.5 FormsからCloud Serviceへの移行](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [スタンドアロンのアダプティブフォームを作成](/help/forms/creating-adaptive-form-core-components.md)
-* [アダプティブフォームをAEM Sitesページに追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [ Sites ページへ AEM アダプティブフォームを追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 <!--
 
