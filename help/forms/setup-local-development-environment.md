@@ -2,10 +2,10 @@
 title: AEM Formsのローカル開発環境を設定する方法を教えてください。
 description: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境の設定
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: a0433718a223a6d3aa7740232caa17650bce5ff6
 workflow-type: tm+mt
-source-wordcount: '2811'
-ht-degree: 97%
+source-wordcount: '2847'
+ht-degree: 96%
 
 ---
 
@@ -265,6 +265,10 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    * `includeFormsenrollment=y` オプションを使用して、アダプティブフォームの作成に必要なフォーム固有の設定、テーマ、テンプレート、コアコンポーネントおよび依存関係を含めます。フォームポータルを使用している場合、`includeExamples=y` オプションを設定します。また、フォームポータルのコアコンポーネントをプロジェクトに追加します。
 
    * `includeFormscommunications=y` オプションを使用して、Forms コアコンポーネントとカスタマーコミュニケーション機能を含めるために必要な依存関係を含めます。
+
+     >[!WARNING]
+     >
+     * バージョン 45 でアーキタイププロジェクトを作成する場合、 [AEM Archetype プロジェクトフォルダー]/pom.xmlでは、最初にフォームコアコンポーネントのバージョンを 2.0.64 に設定します。アーキタイププロジェクトを構築またはデプロイする前に、フォームコアコンポーネントのバージョンを 2.0.62 に更新します。
 
 1. プロジェクトをローカル開発環境にデプロイします。以下のコマンドを使用して、ローカル開発環境にデプロイできます
 
