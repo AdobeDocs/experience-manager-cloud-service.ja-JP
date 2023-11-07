@@ -2,10 +2,10 @@
 title: Cloud Serviceコンテンツリクエストについて
 description: Adobeからコンテンツリクエストライセンスを購入している場合は、Adobe Experience Cloud as a Service が測定するコンテンツリクエストのタイプと、組織の Analytics レポートツールとの相違について説明します。
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: dc01da4c85b37f21deb169b941c0cf2a958298b8
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 12%
+source-wordcount: '1164'
+ht-degree: 9%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 12%
 | サードパーティのモニタリングツールとセキュリティツール | モニタリングツールやセキュリティスキャンツールによっては、Analytics レポートでは追跡されない AEM のコンテンツリクエストが生成される場合があります。 |
 | API アクセス | ページまたはAdobe Experience Manager API にプログラムでアクセスすると、Analytics レポートで追跡されないAEMのコンテンツリクエストが生成される場合があります。 |
 | プリフェッチリクエスト | ページを事前にロードして速度を上げるプリフェッチサービスを使用すると、コンテンツリクエストのトラフィックが大幅に増加する可能性があります。 |
-| DDoS | アドビでは、DDoS 攻撃からのトラフィックを自動的に検出して除外するためのあらゆる取り組みを講じていますが、発生し得るすべての DDoS 攻撃が検出される保証はありません。 |
+| DDoS | Adobeは、DDOS 攻撃からのトラフィックを自動的に検出して除外しようとしますが、DDOS 攻撃がすべて検出される保証はありません。 |
 | トラフィックブロッカー | ブラウザーでトラッカーブロッカーを使用すると、一部のリクエストの追跡がオプトアウトされる可能性があります。 |
 | ファイアウォール | ファイアウォールによって、Analytics のトラッキングがブロックされる可能性があります。このシナリオは、企業ファイアウォールでより頻繁に使用されます。 |
 
@@ -59,7 +59,7 @@ ht-degree: 12%
 | HTTP コード 400-499 | 除外済み | コンテンツが存在しない (404) 場合や、その他のコンテンツまたはリクエスト関連の問題がある場合に、訪問者に返されたエラー。 |
 | HTTP コード 300-399 | 除外済み | これらは、サーバー上で何かが変更されたかを確認する、または別のリソースにリクエストをリダイレクトする、適切なリクエストです。 コンテンツ自体が含まれていないので、課金対象になりません。 |
 | /libs/*に移動するリクエスト | 除外済み | AEMの内部 JSON リクエスト（課金対象でない CSRF トークンなど）。 |
-| DDOS 攻撃からのトラフィック | 除外済み | DDOS 保護。 AEMは一部の DDOS 攻撃を自動検出し、ブロックします。 検出された場合は、DDOS 攻撃は課金対象ではありません。<br><br>自動検出された DDOS の種類：<br>・ DDOSBlockedCiphersSHA<br>・ DDOSBlockedPattern<br>・ DDOSSuspticeRequest |
+| DDOS 攻撃からのトラフィック | 除外済み | DDOS 保護。 AEMは一部の DDOS 攻撃を自動検出し、ブロックします。 検出された場合は、DDOS 攻撃は課金対象ではありません。 |
 | AEMas a Cloud ServiceNewRelic 監視 | 除外済み | AEMas a Cloud Service的グローバル監視。 |
 | 顧客がCloud Serviceプログラムを監視するための URL | 除外済み | 可用性を外部で監視するための推奨 URL。<br><br>`/system/probes/health` |
 | AEMas a Cloud Serviceポッドウォームアップサービス | 除外済み | ユーザーエージェント： skyline-service-warmup/1。* |

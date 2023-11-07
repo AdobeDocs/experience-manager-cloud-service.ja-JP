@@ -3,9 +3,9 @@ title: 検索のベストプラクティス： [!DNL Adobe Experience Manager] a
 description: アプリケーション内でアセットのメタデータを検索、検索および取得するためのベストプラクティス。
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: 8fc09f11127b29a6cd0f56f4e9d217b9756bbb8f
 workflow-type: tm+mt
-source-wordcount: '2544'
+source-wordcount: '2603'
 ht-degree: 11%
 
 ---
@@ -46,7 +46,7 @@ Adobe Analytics の **Assets ビュー**&#x200B;の場合、検索バーは上�
 
 検索では、 **[!UICONTROL Assets ビュー]** 同様に。
 
-<!--[Watch a video to perform a simple search in AEM Assets] ()-->
+[AEM Assetsでの基本検索を実行するビデオを見る](https://video.tv.adobe.com/v/3425489)
 
 ## ファイルとフォルダー {#files-folders}
 
@@ -67,7 +67,7 @@ Adobe Analytics の **Assets ビュー**&#x200B;の場合、検索バーは上�
 
 ![ファイルとフォルダーを使用した検索](assets/files-folders.png)
 
-<!--[Watch a video to perform search in AEM Assets using Files and Folders] ()-->
+[ファイルとフォルダーを使用したAEM Assetsでの検索を実行するビデオを見る](https://video.tv.adobe.com/v/3425487)
 
 ## 演算子 {#operators}
 
@@ -119,7 +119,7 @@ AND 演算子は、オムニサーチの 2 つのキーワード間のデフォ�
 * `car*` は、カーウォッシュ、運送業者、運送業者などを含むアセットを返します。
 * `*car` は、最新の車やスポーツカーなどのアセットを返します。
 
-<!--[Watch a video to perform a search in AEM Assets using wildcards] ()-->
+[ワイルドカードを使用したAEM Assetsでの検索の実行方法に関するビデオを見る](https://video.tv.adobe.com/v/3425488)
 
 **[!UICONTROL Assets ビュー]** では、ワイルドカードの使用はサポートされていません。
 
@@ -172,8 +172,6 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 1. 「フィルター」に移動します。 の下 [!UICONTROL MIME タイプ]を選択します。 [!UICONTROL PDF].
 1. に移動します。 [!UICONTROL アセットステータス]を選択します。 [!UICONTROL すべて] をクリックして、公開済みおよび非公開のアセットをすべて含めます。
 
-<!--[Watch a video to perform search in AEM Assets using various filters] ()-->
-
 **シナリオ 5:PNG を除くすべての画像を検索する**
 
 アセットのタイトルやメタ説明が不明な場合は、様々な検索フィルターを使用して、より関連性の高い検索をおこなうことができます。 例えば、でアセットを検索するには、次のようにします。 **[!UICONTROL 管理ビュー]**、次の手順に従います。
@@ -188,6 +186,8 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 
 1. 検索フィルターに移動します。
 1. 「フィルター」に移動します。 の下 [!UICONTROL MIME タイプ]「 」を選択し、「 PNG の選択を解除」を除くすべての指定した MIME タイプを選択します。
+
+[フィルターを使用したAEM Assetsでの検索を実行するビデオを見る](https://video.tv.adobe.com/v/3425486)
 
 ## 詳細検索 {#advanced-search}
 
@@ -240,6 +240,8 @@ When you are unsure about the title or meta description of an asset, you can use
 ![タグを使用した検索](assets/search-tags.png)
 
 検索では、 **[!UICONTROL Assets ビュー]** 同様に。
+
+[詳細検索を使用したAEM Assetsでの検索を実行するビデオを見る](https://video.tv.adobe.com/v/3425490)
 
 **シナリオ 9：赤い色の車に類似した一致を見つける**
 
