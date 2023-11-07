@@ -3,7 +3,7 @@ title: 検索のベストプラクティス： [!DNL Adobe Experience Manager] a
 description: アプリケーション内でアセットのメタデータを検索、検索および取得するためのベストプラクティス。
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 780f0dee9a2a0fd7fa63b93bdd8be6bc23eef04f
+source-git-commit: a3f7564932e7f9318841623376f62dad91ceca18
 workflow-type: tm+mt
 source-wordcount: '2544'
 ht-degree: 11%
@@ -46,7 +46,9 @@ Adobe Analytics の **Assets ビュー**&#x200B;の場合、検索バーは上�
 
 検索では、 **[!UICONTROL Assets ビュー]** 同様に。
 
+<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425489)
+-->
 
 ## ファイルとフォルダー {#files-folders}
 
@@ -67,7 +69,9 @@ Adobe Analytics の **Assets ビュー**&#x200B;の場合、検索バーは上�
 
 ![ファイルとフォルダーを使用した検索](assets/files-folders.png)
 
+<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425487)
+-->
 
 ## 演算子 {#operators}
 
@@ -119,7 +123,9 @@ AND 演算子は、オムニサーチの 2 つのキーワード間のデフォ�
 * `car*` は、カーウォッシュ、運送業者、運送業者などを含むアセットを返します。
 * `*car` は、最新の車やスポーツカーなどのアセットを返します。
 
+<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425488)
+-->
 
 **[!UICONTROL Assets ビュー]** では、ワイルドカードの使用はサポートされていません。
 
@@ -187,7 +193,9 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 1. 検索フィルターに移動します。
 1. 「フィルター」に移動します。 の下 [!UICONTROL MIME タイプ]「 」を選択し、「 PNG の選択を解除」を除くすべての指定した MIME タイプを選択します。
 
+<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425486)
+-->
 
 ## 詳細検索 {#advanced-search}
 
@@ -241,7 +249,9 @@ When you are unsure about the title or meta description of an asset, you can use
 
 検索では、 **[!UICONTROL Assets ビュー]** 同様に。
 
->[!VIDEO](https://video.tv.adobe.com/v/3425490)
+<!--
+>[!VIDEO](https://video.tv.adobe.com/v/3425490)  
+-->
 
 **シナリオ 9：赤い色の車に類似した一致を見つける**
 
