@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.10.0 �
 description: AEM as a Cloud Service の Cloud Manager 2023.10.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: b760b3a65d89b0b4f924379fc460015a58e2ed3e
+source-git-commit: 36f7ece65c1312ff3ac463cd8c6abb2882b99043
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 19%
+source-wordcount: '599'
+ht-degree: 29%
 
 ---
 
@@ -29,12 +29,12 @@ AEM as a Cloud Service の Cloud Manager リリース 2023.10.0 のリリース�
    * 改善点は、コンテンツプロファイルによって異なります。
 * 自動 [開発環境向けの更新](/help/implementing/cloud-manager/manage-environments.md#updating-environments) は、新しいプログラムに対してデフォルトで有効になっているので、更新を手動で実行する時間を節約できます。
    * この更新は段階的に展開されます。
-* 2023 年 10 月の Cloud Manager リリースでは、段階的なロールアウトにより Java バージョンが更新されます。
-   * Java 8 および 11 および Maven のマイナーバージョンが更新され、今後 2 ヶ月間で段階的に展開される予定です。 新しいバージョンには、複数のセキュリティ修正とバグ修正が含まれています。 新しいバージョンは次のとおりです。
-   * *Maven: 3.8.8*
-   * *Java 8 バージョン： /usr/lib/jvm/jdk1.8.0_371*
-   * *Java 11 バージョン： /usr/lib/jvm/jdk-11.0.20*
-   * [OpenJDK のアドバイザリを参照](https://openjdk.org/groups/vulnerability/advisories/) セキュリティおよびバグ修正の詳細については、これらの JDK の更新を参照してください。
+* Cloud Manager の 2023年10月リリースでは、Java バージョンが段階的なロールアウトによって更新されます。
+   * Java 8 および 11 と Maven のマイナーバージョンが更新され、今後 2 か月間で段階的に展開される予定です。新しいバージョンには、複数のセキュリティ修正とバグ修正が含まれます。新しいバージョンは次のとおりです。
+      * **Maven:** `3.8.8`
+      * **Java 8 バージョン：** `/usr/lib/jvm/jdk1.8.0_371`
+      * **Java 11 バージョン：** `/usr/lib/jvm/jdk-11.0.20`
+   * これらの JDK アップデートのセキュリティとバグ修正について詳しくは、[OpenJDK アドバイザリ](https://openjdk.org/groups/vulnerability/advisories/)を参照してください。
 
 ## 早期採用プログラム {#early-adoption}
 
@@ -66,3 +66,15 @@ AEM as a Cloud Service の Cloud Manager リリース 2023.10.0 のリリース�
 このダッシュボードでは、Web アプリの品質を向上させるためのオープンソースの自動ツールであるGoogle Lighthouse を利用します。 これは、任意の Web ページに対して実行できます。公開または認証が必要です。 パフォーマンス、アクセシビリティ、プログレッシブ Web アプリ、SEO などに関する監査を実施しています。
 
 新しいダッシュボードのテストと運用に興味がある場合は、 次の宛先にメールを送信してください： `aem-lighthouse-pilot@adobe.com` Adobe IDに関連付けられたメールから、すぐに使い始めることができます。
+
+## 既知の問題 {#known-issues}
+
+を防ぐ既知のバグがあります [デプロイパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) プッシュされて実稼動環境に移行する前に実行されます。
+
+次の場合、 **実稼動にデプロイする前に一時停止します** 設定デプロイメントパイプラインにはオプションが必要です。バグが解決されるまで、次の回避策が推奨されます。
+
+1. パイプラインを実行.
+1. ステージング環境でコードをテストします。
+1. デプロイと承認が使用可能になったら、「 **拒否**.
+1. パイプラインを編集して **実稼動にデプロイする前に一時停止します** オプション。
+1. パイプラインを再実行します。 ステージング時に再び実行され、実稼動時に実行されます。
