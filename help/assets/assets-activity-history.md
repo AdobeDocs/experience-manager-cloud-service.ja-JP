@@ -5,8 +5,10 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: ht
+hide: true
+hidefromtoc: true
+source-git-commit: 0712e7bb4f3150fd3361bc77652c6883845f960c
+workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 100%
 
