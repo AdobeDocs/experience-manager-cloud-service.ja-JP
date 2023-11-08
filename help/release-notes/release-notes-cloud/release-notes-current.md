@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: f1af229fa0fb75a6181eae545ac7e51b31f212f7
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 27%
+ht-degree: 29%
 
 ---
 
@@ -87,9 +87,9 @@ ht-degree: 27%
 
 [Adobe管理 CDN でのトラフィックのフィルタリング](/help/security/traffic-filter-rules-including-waf.md) url、IP アドレス、ユーザーエージェントなどのプロパティで web サイトトラフィックに一致するルールを宣言するか、DoS 攻撃を防ぐためにカスタムトラフィックレート制限を設定します。 また、高度な Web サイトの脅威に対する保護を強化するための、一連の高度な Web Application Firewall(WAF;Advanced Web Application Firewall) ルールのライセンスを取得することもできます。
 
-トラフィックフィルタールールについて、 [チュートリアルを試す](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)! 新しい Cloud Manager 設定パイプラインの設定、設定ファイルでのルールの宣言、悪意のあるトラフィックの CDN ログの分析に関する手順を説明します。
+トラフィックフィルタールールについて、 [チュートリアルを試す](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=ja)! 新しい Cloud Manager 設定パイプラインの設定、設定ファイルでのルールの宣言、悪意のあるトラフィックの CDN ログの分析に関する手順を説明します。
 
-トラフィックフィルタールールは、11 月にステージング環境と実稼動環境への段階的なロールアウトを含む、開発環境で使用できるようになりました。 ステージ上および実稼動環境での事前アクセスを電子メールで要求することができます **aemcs-waf-adopter@adobe.com**.
+トラフィックフィルタールールは、11 月にステージング環境と実稼動環境への段階的なロールアウトを含む、開発環境で使用できるようになりました。 ステージ上および実稼動環境での事前アクセスを、**aemcs-waf-adopter@adobe.com** にメールでリクエストすることができます。
 
 高度な WAF トラフィックフィルタールールは、今年後半に、拡張セキュリティまたは WAF-DoS 保護サービスを通じてライセンスを受けることができます。
 

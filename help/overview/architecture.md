@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: b610de53d1bd1b120a2642336aac1713444bfd3e
 workflow-type: tm+mt
 source-wordcount: '2665'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -158,11 +158,11 @@ Edge Delivery Servicesは、CDN と、最もパフォーマンスの高い方法
 
 セマンティックHTMLへの変換は、AEMオーサー層またはドキュメントベースのオーサリング環境から提供される公開済みコンテンツからおこなわれます。
 
-次の図は、Microsoft Word（ドキュメントベースのオーサリング）で Sites コンテンツを編集し、Edge 配信に公開する方法を示しています。 また、様々なエディターを使用した従来のAEMの公開方法も示します。
+次の図は、Microsoft Word（ドキュメントベースのオーサリング）で Sites コンテンツを編集し、Edge 配信に公開する方法を示しています。 また、様々なエディターを使用した従来の AEM パブリッシング方法も示します。
 
 ![AEM Sitesas a Cloud Service-Edge Delivery Services付き](assets/architecture-aem-edge-author-publish.png "AEM Sitesas a Cloud Service-Edge Delivery Services付き")
 
-Edge Delivery ServicesはAdobe Experience Managerに含まれているので、Edge 配信、AEM Sites、AEM Assetsは同じドメイン上に共存できます。 これは、大規模な Web サイトの一般的な使用例です。 例えば、顧客はトラフィックの多い特定のページをEdge Delivery Servicesに移行し、その他のすべてのページがAEMパブリッシュ層に残る場合があります。
+Edge Delivery ServicesはAdobe Experience Managerに含まれているので、Edge 配信、AEM Sites、AEM Assetsは同じドメイン上に共存できます。 これは、大規模な web サイトの場合に一般的なユースケースです。例えば、顧客はトラフィックの多い特定のページをEdge Delivery Servicesに移行し、その他のすべてのページがAEMパブリッシュ層に残る場合があります。
 
 ## 開発アーキテクチャ {#development-architecture}
 
@@ -228,5 +228,5 @@ AEMas a Cloud Serviceの最新のアーキテクチャでは、以前の世代 (
 * Edge 配信サービス:
 
    * [AEMas a Cloud Serviceの概要 —Edge Delivery Services](/help/edge/overview.md)
-   * [使用Edge Delivery Services](/help/edge/using.md)
+   * [Edge 配信サービスの使用](/help/edge/using.md)
    * [Edge Delivery Servicesを使用して、基盤となるアーキテクチャと重要なAEMの部分をas a Cloud Serviceする](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=ja)

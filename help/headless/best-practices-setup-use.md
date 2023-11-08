@@ -20,7 +20,7 @@ ht-degree: 35%
 * [ヘッドレスの概念と用語の概要については、ヘッドレスとは](/help/headless/what-is-headless.md)
 * AEMの様々な環境の概要 [アーキテクチャ](/help/headless/deployment/architecture.md)
 
-## セットアップ {#setup}
+## 設定 {#setup}
 
 コンテンツフラグメントやアプリで使用するAEM GraphQLを安全にセットアップするには、様々なコンポーネントを設定する必要があります。
 
