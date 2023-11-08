@@ -5,7 +5,7 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: f5f2c460815d273fe445c6f415dee7776cc18fce
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -15,17 +15,17 @@ ht-degree: 83%
 
 ## リリース日 {#release-date}
 
-の最新バージョン 1.9.14 のリリース日 [!DNL Workfront for Experience Manager enhanced connector] は 2023 年 10 月 13 日です。
+[!DNL Workfront for Experience Manager enhanced connector] の最新バージョン 1.9.14 のリリース日は 2023年10月13日（PT）です。
 
 ## リリースのハイライト {#release-highlights}
 
-の最新バージョン [!DNL Workfront for Experience Manager enhanced connector] には、次のバグ修正が含まれています。
+[!DNL Workfront for Experience Manager enhanced connector] の最新バージョンには、次のバグ修正が含まれています。
 
-* 「詳細設定」でイベントの購読が無効になっている場合、次のオプションを選択できます。 **ドキュメント更新イベントに購読してAEMのアセットメタデータを更新**, **プロジェクトの完了時に、すべてのプロジェクトアセットをBrand Portalに公開する**、および **コメント同期を有効にする**.
+* 詳細設定でイベント購読が無効になっている場合、「**ドキュメント更新イベントに購読して AEM のアセットメタデータを更新**」、「**プロジェクト完了時にすべてのプロジェクトアセットを Brand Portal に公開**」および「**コメント同期を有効にする**」からオプションを選択できます。
 
-* Workfrontでプレビューすると、Experience Managerーに保存されたアセットの一部が適切にレンダリングされない。
+* Workfront でプレビューする際に、Experience Manager に保存されたアセットの一部が適切にレンダリングされません。
 
-* WorkfrontとのExperience Manager接続を再設定する際に、コメント同期の更新、削除、ドキュメントの更新などのイベント購読は正常に作成されません。
+* Workfront との Experience Manager 接続を再設定する際に、コメント同期の更新、削除、ドキュメントの更新などのイベント購読は正常に作成されません。
 
 * リンクされたフォルダーの作成、更新、リンクされたフォルダーの有効化、コメントの同期の有効化と無効化、コネクタでの設定の保存に関する API の大幅なパフォーマンス向上。
 
@@ -37,7 +37,7 @@ ht-degree: 83%
 
 >[!IMPORTANT]
 >
->Adobeが推奨 [最新バージョン 1.9.14 にアップグレード](/help/assets/workfront-connector-install.md) の [!DNL Workfront for Experience Manager enhanced connector].
+>アドビでは [!DNL Workfront for Experience Manager enhanced connector] の[最新バージョン 1.9.14 へのアップグレード](/help/assets/workfront-connector-install.md)をお勧めします。
 
 ## 既知の問題 {#known-issues}
 
@@ -49,17 +49,17 @@ ht-degree: 83%
 
 ### 2023年9月リリース {#september-2023-release}
 
-* Experience Manager拡張コネクタは、プロジェクトのイベント購読を削除する際にWorkfrontからすべてのイベント購読を取得します。これにより、アプリケーションのパフォーマンスに影響を与えます。
+* Experience Manager 拡張コネクタは、プロジェクトのイベント購読を削除する際に Workfront からすべてのイベント購読を取得します。これにより、アプリケーションのパフォーマンスに影響を与えます。
 
-* アセットがWorkfrontからExperience Managerに送信された場合、そのアセットの MIME タイプはに設定されません。 `dc:format` 属性をExperience Manager内に追加します。
+* アセットが Workfront から Experience Manager に送信される場合、Experience Manager 内でそのアセットの MIME タイプは `dc:format` 属性に設定されません。
 
-* Experience Manager強化コネクタに保存されたWorkfrontプロジェクト ID には、重複が含まれます。
+* Experience Manager 強化コネクタに保存された Workfront プロジェクト ID には、重複が含まれます。
 
 ### 2023年8月リリース {#august-2023-release}
 
-* リンクされたフォルダに関連付けられたExperience Managerアカウントがないので、フォルダ内にリンクされたフォルダを作成できません。
+* リンクされたフォルダーに関連付けられたユーザーアカウントが存在しないので、Experience Manager でリンクされたフォルダーを作成できません。
 
-* アセット内のアセットのメタデータ更新中の競合状態。
+* Experience Manager のアセットのメタデータ更新中の競合状態。
 
 ### 2023年6月リリース {#june-2023-release}
 
