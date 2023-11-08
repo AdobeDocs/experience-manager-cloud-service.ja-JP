@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 54a80e7b980c28e50ee849bbb5d23adbf5de2073
+source-git-commit: dc79bb2bfae4071d353ba83c2c9d6cc44d4e9747
 workflow-type: tm+mt
-source-wordcount: '4360'
+source-wordcount: '4363'
 ht-degree: 92%
 
 ---
@@ -431,6 +431,7 @@ ht-degree: 92%
       + [画像のカラータグ](/help/assets/color-tag-images.md)
       + [PDF ドキュメントの管理](/help/assets/manage-pdf-documents.md)
    + [!DNL Assets] の設定、管理、拡張 {#admin}
+      + [重複アセットの検出](/help/assets/detect-duplicate-assets.md)
       + [開発者向けドキュメントと API リファレンス](/help/assets/developer-reference-material-apis.md)
       + [フォルダーメタデータスキーマ](/help/assets/folder-metadata-schema.md)
       + [イメージプロファイルとビデオプロファイルの操作](/help/assets/dynamic-media/about-image-video-profiles.md)

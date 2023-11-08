@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 リリースのリリースノート。'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 87%
@@ -43,7 +43,7 @@ ht-degree: 87%
 
 * [!DNL Experience Manager Assets] のユーザーインターフェイスを使用して以下を行えるようになりました。
 
-   * リポジトリー内の[重複アセットの検出](/help/assets/manage-digital-assets.md#detect-duplicate-assets)の設定。
+   * リポジトリー内の[重複アセットの検出](/help/assets/detect-duplicate-assets.md)の設定。
 
    * [画像へのデジタル透かしの追加](/help/assets/watermark-assets.md)の設定。
 
@@ -112,7 +112,7 @@ Cloud Manager の月次リリースの完全なリストは、[こちら](/help/
 
 ### 新機能 {#what-is-new-ctt}
 
-* サイズ確認ガードレール - コンテンツ転送ツールのサイズ確認機能は、コンテンツ転送の失敗を減らすうえで役に立ちます。[ サイズの確認 ] 機能を使用すると、1) に十分なディスク容量があるかどうかを `crx-quickstart` 抽出前のサブディレクトリ、2) 移行セットのサイズを推定し、サポートされているかどうかを確認します。 これらのチェックのどちらか一方または両方に違反した場合、CTT UI に警告が表示されます。このガードレールを使用すると、コンテンツ転送の失敗を回避し、アドビカスタマーケアと一緒に移行オプションについて事前に検討することができます。詳しくは、 [移行セットのサイズとディスク容量の決定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja#migration-set-size) を参照してください。
+* サイズ確認ガードレール - コンテンツ転送ツールのサイズ確認機能は、コンテンツ転送の失敗を減らすうえで役に立ちます。[ サイズの確認 ] 機能を使用すると、1) に十分なディスク容量があるかどうかを `crx-quickstart` 抽出前のサブディレクトリ、2) 移行セットのサイズを推定し、サポートされているかどうかを確認します。 これらのチェックのどちらか一方または両方に違反した場合、CTT UI に警告が表示されます。このガードレールを使用すると、コンテンツ転送の失敗を回避し、アドビのカスタマーケアと一緒に移行オプションについて事前に検討することができます。詳しくは、[移行セットのサイズとディスク空き容量の決定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja#migration-set-size)を参照してください。
 
 ## ベストプラクティスアナライザー {#bpa-release}
 

@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  6.5 と比較した、  [!DNL Ex
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: ht
-source-wordcount: '1034'
-ht-degree: 100%
+source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+workflow-type: tm+mt
+source-wordcount: '1038'
+ht-degree: 99%
 
 ---
 
@@ -51,14 +51,14 @@ ht-degree: 100%
 
 | 機能またはユースケース | [!DNL Experience Manager] as a [!DNL Cloud Service] のステータス | コメント |
 |-----|-----|-----|
-| [重複アセットの検出](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | 動作が異なる | [ [!DNL Experience Manager] 6.5 での動作](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=ja)を参照してください。 |
+| [重複アセットの検出](/help/assets/detect-duplicate-assets.md) | 動作が異なる | [ [!DNL Experience Manager] 6.5 での動作](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=ja)を参照してください。 |
 | [プレースメント専用（FPO）レンディション](/help/assets/configure-fpo-renditions.md) | 動作が異なる | 処理プロファイルは、アセットマイクロサービスを使用して FPO レンディションを生成します。Experience Manager 6.5 では、[!DNL ImageMagick] などのサードパーティソリューションをレンディションの生成に使用できました。 |
 | メタデータの書き戻し | 動作が異なる | デフォルトで無効必要に応じて、対応するワークフローランチャーを有効にします。書き戻しは、アセットマイクロサービスで処理されます。 |
 | パッケージマネージャーを使用してアップロードされたアセットの処理 | 手動の介入が必要 | 「**[!UICONTROL アセットを再処理]**」アクションを使用して手動で再処理します。 |
 | MIME タイプの検出 | 非対応 | 拡張子のないデジタルアセットや誤った拡張子のデジタルアセットをアップロードした場合は、希望どおりには処理されない可能性があります。それでも、ユーザーは、拡張子のないバイナリファイルを DAM に保存できます。[Adobe  [!DNL Experience Manager] 6.5 の MIME タイプ検出](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html?lang=ja)を参照してください。 |
 | 複合アセットのサブアセットの生成 | 非対応 | 注釈などの従属ユースケースが実行されない可能性があります。[Adobe  [!DNL Experience Manager] 6.5 でのサブアセットの作成](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html?lang=ja#generate-subassets)を参照してください。[2021.7.0 リリース](/help/release-notes/release-notes-cloud/release-notes-current.md)以降、一部のファイルタイプの PDF プレビューが使用可能になりました。 |
 | 画像の編集 | サポート対象外 | アセットの編集は、Experience Manager as a Cloud Service ではサポートされていません。詳しくは、 [Experience Manager 6.5 での仕組み](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=ja#editing-images) を参照してください。 |
-| ホームページ | サポート対象外 | [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html?lang=ja) を参照してください。 |
+| ホームページ | サポート対象外 | 詳しくは、 [[!DNL Assets] でのホームページエクスペリエンス [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html?lang=ja) |
 | ZIP アーカイブからのアセットの抽出 | サポート対象外 | [ [!DNL Experience Manager]  6.5 の ZIP 抽出](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=ja#extractzip) を参照してください。 |
 | アセット評価 | サポート対象外 | メタデータスキーマエディターの評価ウィジェットはサポートされていません。 |
 | Content Disposition フィルター | サポート対象外 | `ContentDispositionFilter` の一般的なユースケースは、HTML ファイルを配信するように、また PDF ファイルをダウンロードする代わりにインラインで開くように管理者が [!DNL Experience Manager] を設定できるようにすることです。パブリッシュインスタンスでは、Dispatcher 設定を使用して処理を管理できます。オーサーインスタンスでは、Content-Disposition ヘッダーの変更をお勧めしません。[Content Disposition フィルター： [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html?lang=ja) を参照してください。 |
@@ -93,4 +93,3 @@ ht-degree: 100%
 >* [主要な変更点](/help/release-notes/aem-cloud-changes.md)
 >* [主要な変更点 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 >* [ビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
-

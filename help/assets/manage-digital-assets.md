@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 22cfb23784544947b6a38be0453959913c9e8ccd
+source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
 workflow-type: tm+mt
-source-wordcount: '4519'
+source-wordcount: '4346'
 ht-degree: 96%
 
 ---
@@ -43,39 +43,6 @@ ht-degree: 96%
 ## アセットのアップロード {#uploading-assets}
 
 [Adobe Experience Manager へのデジタルアセットの追加](add-assets.md)を参照してください。
-
-## 重複アセットの検出 {#detect-duplicate-assets}
-
-<!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
-
-DAM ユーザーがリポジトリーに既に存在する 1 つ以上のアセットをアップロードした場合、[!DNL Experience Manager] は重複を検出し、ユーザーに通知します。重複の検出は、リポジトリーのサイズとアップロードされたアセットの数に応じてパフォーマンスに影響を与える可能性があるので、デフォルトで無効になっています。
-
-この機能を有効にするには：
-
-1. **[!UICONTROL ツール／アセット／アセット設定]**&#x200B;に移動します。
-
-1. 「**[!UICONTROL Asset Duplication Detector]**」をクリックします。
-
-1. [!UICONTROL Asset Duplication Detector] ページで「**[!UICONTROL 有効]**」をクリックします。
-
-   「メタデータフィールドを検出」の値を `dam:sha1` に指定すると、ファイル名が異なる場合でも重複アセットが確実に検出されます。
-
-1. 「**[!UICONTROL 保存]**」をクリックします。
-
-   ![Asset Duplication Detector](assets/asset-duplication-detector.png)
-
->[!NOTE]
->
->`/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` 設定ファイル（OSGi 設定）を使用して Duplication Detector を設定してある場合は、それを引き続き使用できますが、アドビでは新しい手段を使用することをお勧めします。
-
-
-有効にすると、Experience Manager は重複アセットの通知を Experience Manager インボックスに送信します。これは、複数の重複の集計結果です。ユーザーは、結果に基づいてアセットを削除することを選択できます。
-
-![重複アセットのインボックス通知](assets/duplicate-detect-inbox-notification.png)
-
->[!NOTE]
->
->アセットをリポジトリーにアップロードすると、Experience Manager は重複を検出し、最初の 100 個の重複アセットについて通知します。
 
 ## ZIP アーカイブの抽出 {#extract-zip-archives}
 
