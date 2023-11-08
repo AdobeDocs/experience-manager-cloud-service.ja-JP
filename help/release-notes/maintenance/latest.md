@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: e7e565556b382a662fb8afc5aadaa26d2357e294
+source-git-commit: 2f0a7171f93bb5bc947dba5edb59a8e0e538e052
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 11%
+source-wordcount: '1130'
+ht-degree: 12%
 
 ---
 
@@ -101,9 +101,6 @@ ht-degree: 11%
 * FORMS-11206：ユーザーがアダプティブフォームの発行ワークフローをスケジュールしようとすると、期待どおりに機能しなくなる。
 * FORMS-11546: Lighthouse で、アダプティブフォーム内の繰り返しパネルに ARIA ラベルが見つからないことが検出され、アクセシビリティに影響を与えます。
 * FORMS-11095：電話番号、E メールアドレスおよび数値フィールドに ARIA 属性が正しく定義されていないので、アクセシビリティの問題が発生します。
-* FORMS-9894: Output Service API で、ユーザーが無効なリポジトリパスを指定した場合に誤ったエラーコードが生成され、この問題が発生したユーザーを混乱させます。
-* FORMS-11404：様々な XML データを Reader 用に拡張されたPDFと結合すると、ImportData サービスの動作に一貫性がなくなります。 特に、1 つの出力PDFドキュメントの Reader Extension プロパティは正常に保持されますが、他の出力PDFでは保持できません。
-
 
 ### 既知の問題 {#known-issues-14157}
 
