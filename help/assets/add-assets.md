@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] への�
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '3156'
-ht-degree: 100%
+source-git-commit: 4305b334afd3337b849d80e79ca4669802cd4be8
+workflow-type: tm+mt
+source-wordcount: '3188'
+ht-degree: 98%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 100%
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-ファイル（または複数のファイル）をアップロードするには、デスクトップ上でファイルを選択して、ユーザーインターフェイス（web ブラウザー）内の目的のフォルダーにドラッグします。または、ユーザーインターフェイスからアップロードを開始することもできます。
+ファイル（または複数のファイル）をアップロードするには、デスクトップ上でファイルを選択して、ユーザーインターフェイス（web ブラウザー）内の目的のフォルダーにドラッグします。または、ユーザーインターフェイスからアップロードを開始することもできます。[!DNL Experience Manager] は、1000 個を超えるアセットを含むフォルダーに対応できます。 1000 個を超える項目が既に存在する場合に、このようなフォルダーにさらに多くの項目をアップロードすると、新しいフォルダーのアップロードまたは作成に遅延が生じる可能性があります。
 
 >[!IMPORTANT]
 >
@@ -193,7 +193,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. 「**[!UICONTROL 読み込みモード]**」を選択します。「**スキップ**」、「**置換**」または「**バージョンを作成**」を選択します。スキップモードがデフォルトです。このモードでは、アセットが既に存在する場合は、取得をスキップします。[バージョンオプションの置換と作成](#handling-upload-existing-file)の意味を参照してください。
 
-1. 「**[!UICONTROL アセットのターゲットフォルダー]**」フィールドを使用して、アセットの読み込み先となる DAM 内の場所を定義するパスを指定します。（例：`/content/dam/imported_assets`）。
+1. 「**[!UICONTROL アセットのターゲットフォルダー]**」フィールドを使用して、アセットの読み込み先となる DAM 内の場所を定義するパスを指定します。例：`/content/dam/imported_assets`
 
 1. （オプション）「**[!UICONTROL メタデータファイル]**」フィールドに、CSV 形式で読み込むメタデータファイルを指定します。ソース BLOB の場所で CSV ファイルを指定し、一括読み込みツールの設定時にパスを参照します。このフィールドで参照される CSV ファイル形式は、[アセットメタデータの一括読み込みと書き出し](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html?lang=ja)を実行する場合の CSV ファイル形式と同じです。「**読み込み後にソースファイルを削除**」オプションを選択した場合は、「**除外**」または「**MIME タイプを含める**」または「**パス／ファイルでフィルター**」フィールドを使用して CSV ファイルをフィルタリングします。正規表現を使用して、これらのフィールドの CSV ファイルをフィルタリングできます。
 
