@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: cf7c9fc3f254628f2efee2e00ed295e038d17c99
+source-git-commit: 1835559f9becea5f79d179be9b01efbe67c82151
 workflow-type: tm+mt
-source-wordcount: '2147'
+source-wordcount: '2148'
 ht-degree: 89%
 
 ---
@@ -172,7 +172,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
-> アダプティブフォーム内で何度もベースでないフォームフラグメントを使用する場合、フラグメントのフィールド間でデータの同期がおこなわれます。 1 つの [フォームフラグメント（コアコンポーネントに基づく）](/help/forms/adaptive-form-fragments-core-components.md) データの同期に関する問題が発生しない限り、フォーム内で何度もフォームデータモデルに結び付けられることはありません。
+> アダプティブフォーム内で何度もベースでないフォームフラグメントを使用している場合、フラグメントのフィールド間でデータの同期が行われます。 1 つの [フォームフラグメント（コアコンポーネントに基づく）](/help/forms/adaptive-form-fragments-core-components.md) データの同期に関する問題が発生することなく、フォーム内で複数回繰り返し実行される、どのフォームデータモデルにも結び付けられていないデータを削除できます。
 
 ## データ連結のためのフラグメントの自動マッピング {#auto-mapping-of-fragments-for-data-binding}
 
