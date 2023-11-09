@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 2f0a7171f93bb5bc947dba5edb59a8e0e538e052
+source-git-commit: a8651a44300772b5c9706a5fd85e7fefef72e47d
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1124'
 ht-degree: 12%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 12%
 
 次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 14157 {#release-14157}
+## リリース 14227 {#release-14227}
 
-2023 年 11 月 7 日に公開されたメンテナンスリリース14157の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース 14029 からのアップデートです。
+2023 年 11 月 9 日に公開されたメンテナンスリリース14227の継続的な改善点を以下にまとめます。 このメンテナンスリリースは、以前のメンテナンスリリース 14029 からのアップデートです。メンテナンスリリース14227は、1 つの問題を修正する14157に代わるものです。
 
 2023.11.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja)を参照してください。
 
-### 機能強化 {#enhancements-14157}
+### 機能強化 {#enhancements-14227}
 
 * ASSETS-29631:Assets Cloud：安全な配信/検索に dam:roles を使用します。
 * CQ-4354515：翻訳：参照されるリソースの翻訳を抑制するオプション。
@@ -40,7 +40,7 @@ ht-degree: 12%
 * SITES-16545：コンテンツフラグメント：コンテンツフラグメントのバリエーションの参照を取得するためのエンドポイントを追加します。
 * SITES-16853：コンテンツフラグメント： /adobe/sites/cf/fragments/を削除します。{fragmentId}/variation/{name}/tags エンドポイント
 
-### 修正された問題 {#fixed-issues-14157}
+### 修正された問題 {#fixed-issues-14227}
 
 * 様々なアクセシビリティの問題を修正しました
 * ASSETS-31015：不明なファイル拡張子を持つファイルをアセットにアップロードできません。
@@ -85,7 +85,6 @@ ht-degree: 12%
 * SITES-16243：コンテンツフラグメント：検索と置換が、「複数としてレンダリング」のフィールドでは機能しません。
 * SITES-16250：コンテンツフラグメント：CF にパッチを適用すると、間違った ETAG ヘッダーが返される場合があります。
 * SITES-16686：コンテンツフラグメント：親参照が最大深度になると、コンテンツフラグメント以外の参照がシリアル化されます。
-* SITES-16234: ContextHub: 「正しい選択されたブランドアクティビティ名」が、「ターゲティングを開始」の際に表示されません。
 * SITES-12880：高速追跡：サイト/Analytics を設定のローカリゼーションを修正します。
 * SITES-16103：エクスペリエンスフラグメント：コンソールエラーが原因で、Cloud Serviceの下に Target オプションが表示されない。
 * SITES-16001:MSM：ライブコピーの作成中に、ロールアウト設定からマルチフィールドコンポーネントを除外する機能。
@@ -102,11 +101,11 @@ ht-degree: 12%
 * FORMS-11546: Lighthouse で、アダプティブフォーム内の繰り返しパネルに ARIA ラベルが見つからないことが検出され、アクセシビリティに影響を与えます。
 * FORMS-11095：電話番号、E メールアドレスおよび数値フィールドに ARIA 属性が正しく定義されていないので、アクセシビリティの問題が発生します。
 
-### 既知の問題 {#known-issues-14157}
+### 既知の問題 {#known-issues-14227}
 
 なし。
 
-### 組み込みテクノロジー {#embedded-tech-14157}
+### 組み込みテクノロジー {#embedded-tech-14227}
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
