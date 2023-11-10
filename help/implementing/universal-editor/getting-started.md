@@ -2,12 +2,13 @@
 title: AEM のユニバーサルエディターの概要
 description: ユニバーサルエディターへのアクセス権を取得する方法と、これを使用するために最初の AEM アプリのインストルメントを開始する方法について説明します。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: 6c3b286182ae33cafadf51e653c2076d1911e444
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 97%
+source-wordcount: '924'
+ht-degree: 84%
 
 ---
+
 
 # AEM のユニバーサルエディターの概要 {#getting-started}
 
@@ -109,14 +110,17 @@ X-Frame-Options: SAMEORIGIN は、iframe 内で AEM ページのレンダリン�
 アプリで使用する接続は、ページの `<head>` 内に `<meta>` タグとして格納されます。
 
 ```html
-<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
 ```
 
+* `<category>`  — これは、2 つのオプションを持つ接続の分類です。
+   * `system`  — 接続エンドポイントの場合
+   * `config`  — の場合 [オプション設定の定義](#configuration-settings)
 * `<referenceName>` - 接続を識別するためにドキュメントで再利用される短い名前です。例：`aemconnection`
 * `<protocol>` - 使用するユニバーサルエディター永続化サービスの永続化プラグインを示します。例：`aem`
 * `<url>` - 変更が保持されるシステムの URL です。例：`http://localhost:4502`
 
-識別子 `adobe:aem:editor` は、Adobe Universal Editor の接続を表します。
+識別子 `urn:adobe:aue:system` は、Adobe Universal Editor の接続を表します。
 
 `itemid` は `urn` プレフィックスを使用して識別子を短縮します。
 
@@ -134,10 +138,12 @@ itemid="urn:<referenceName>:<resource>"
 ### 接続例 {#example}
 
 ```html
+<meta name="urn:adobe:aue:system:<referenceName>" content="<protocol>:<url>">
+
 <html>
 <head>
-    <meta name="urn:adobe:aem:editor:aemconnection" content="aem:https://localhost:4502">
-    <meta name="urn:adobe:aem:editor:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
+    <meta name="urn:adobe:aue:system:aemconnection" content="aem:https://localhost:4502">
+    <meta name="urn:adobe:aue:system:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
 </head>
 <body>
         <aside>
@@ -147,9 +153,9 @@ itemid="urn:<referenceName>:<resource>"
               <p itemprop="title" itemtype="text">Journalist</p>
               <img itemprop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" itemtype="image" alt="avatar"/>
             </li>
- 
+
 ...
- 
+
             <li itemscope itemid="urn:fcsconnection:/documents/mytext" itemtype="component">
               <p itemprop="name" itemtype="text">John Smith</p>
               <p itemid="urn:aemconnection/content/example/another-source" itemprop="title" itemtype="text">Photographer</p>
@@ -159,6 +165,28 @@ itemid="urn:<referenceName>:<resource>"
         </aside>
 </body>
 </html>
+```
+
+### 設定 {#configuration-settings}
+
+以下を使用すると、 `config` 接続 URN のプレフィックスを使用して、必要に応じてサービスおよび拡張エンドポイントを設定します。
+
+Adobeがホストするが、独自のホストバージョンである Universal Editor Service を使用しない場合は、meta タグで設定できます。 ユニバーサルエディターが提供するデフォルトのサービスエンドポイントを上書きするには、独自のサービスエンドポイントを設定します。
+
+* メタ名 — `urn:adobe:aue:config:service`
+* メタコンテンツ — `content="https://adobe.com"` （例）
+
+```html
+<meta name="urn:adobe:aue:config:service" content="<url>">
+```
+
+ページに対して特定の拡張機能のみを有効にしたい場合は、メタタグで設定できます。 拡張機能を取得するには、拡張機能エンドポイントを設定します。
+
+* メタ名： `urn:adobe:aue:config:extensions`
+* メタコンテンツ： `content="https://adobe.com,https://anotherone.com,https://onemore.com"` （例）
+
+```html
+<meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
 
 ## ユニバーサルエディターを使用する準備が整いました {#youre-ready}
