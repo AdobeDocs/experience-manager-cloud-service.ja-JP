@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: b9fb484135fb2d16758548c525b59f5ba011afb5
 workflow-type: tm+mt
-source-wordcount: '2202'
+source-wordcount: '2203'
 ht-degree: 90%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 90%
 
 [!DNL Experience Manager Forms] データ統合を使用すると、異なるデータソースを設定して接続できます。 以下のタイプがサポートされています。これらのタイプは、すぐに使用することができます。
 
-* リレーショナルデータベース - MySQL、[!DNL Microsoft® SQL Server]、[!DNL IBM® DB2®]、および [!DNL Oracle RDBMS]
+* リレーショナルデータベース — MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®]、postgreSQL および [!DNL Oracle RDBMS]
 * RESTful Web サービス
 * SOAP ベースの web サービス
 * OData サービス（バージョン 4.0）
