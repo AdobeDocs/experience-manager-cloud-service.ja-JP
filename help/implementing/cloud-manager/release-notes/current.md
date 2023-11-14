@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.10.0 のリリースノート
-description: AEM as a Cloud Service の Cloud Manager 2023.10.0 のリリースノートです。
+title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.11.0 のリリースノート
+description: AEM as a Cloud Service の Cloud Manager 2023.11.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 36f7ece65c1312ff3ac463cd8c6abb2882b99043
+source-git-commit: b51b3c9aed4d9dacbf12a6cad5f8923d82766bd9
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 29%
+source-wordcount: '715'
+ht-degree: 14%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.10.0 のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.11.0 のリリースノート {#release-notes}
 
-このページは、AEM as a Cloud Service の Cloud Manager リリース 2023.10.0 のリリースノートです。
+このページは、AEM as a Cloud Service の Cloud Manager リリース 2023.11.0 のリリースノートです。
 
 >[!NOTE]
 >
@@ -21,24 +21,27 @@ ht-degree: 29%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service の Cloud Manager リリース 2023.10.0 のリリース日は 2023年10月5日（PT）です。次回のリリースは 2023年11月2日（PT）に予定されています。
+AEM as a Cloud Service の Cloud Manager 2023.11.0 のリリース日は 2023年11月14日（PT）です。次回のリリースは 2023年12月7日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* の改善点 [インデックス作成](/help/operations/indexing.md) は、新しいインデックスをデプロイする際のパイプライン期間を短縮しました。
-   * 改善点は、コンテンツプロファイルによって異なります。
-* 自動 [開発環境向けの更新](/help/implementing/cloud-manager/manage-environments.md#updating-environments) は、新しいプログラムに対してデフォルトで有効になっているので、更新を手動で実行する時間を節約できます。
-   * この更新は段階的に展開されます。
-* Cloud Manager の 2023年10月リリースでは、Java バージョンが段階的なロールアウトによって更新されます。
-   * Java 8 および 11 と Maven のマイナーバージョンが更新され、今後 2 か月間で段階的に展開される予定です。新しいバージョンには、複数のセキュリティ修正とバグ修正が含まれます。新しいバージョンは次のとおりです。
-      * **Maven:** `3.8.8`
-      * **Java 8 バージョン：** `/usr/lib/jvm/jdk1.8.0_371`
-      * **Java 11 バージョン：** `/usr/lib/jvm/jdk-11.0.20`
-   * これらの JDK アップデートのセキュリティとバグ修正について詳しくは、[OpenJDK アドバイザリ](https://openjdk.org/groups/vulnerability/advisories/)を参照してください。
+* Web アプリケーションファイアウォール —DDOS 保護 (WAF-DDOS) が、AEMのas a Cloud Serviceの使用権限と [は、セルフサービス方式で設定できます。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+* 特殊 [デプロイメントパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) パイプラインを使用して、環境設定、メンテナンスタスク、CDN ルールなどを数分以内に設定できるようになりました。
+* [コンテンツをコピーする場合](/help/implementing/developing/tools/content-copy.md) 高度な環境から開発環境に移行すると、開発環境は容量が制限されるので、大きなコンテンツセットをコピーする際に注意が必要なメッセージが表示されるようになりました。
+* [パイプライン実行の詳細ページ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) が、まだ開始されていないステップが灰色表示になった状態で、パイプライン実行のすべてのステップを表示するようになりました。
+* 両方で **[アクティビティ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** および **[パイプライン](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** 実行中ステータスのパイプラインをクリックしたときに、パイプライン実行の概要を表示できるようになりました。
+* 新しい **期間** セクションが [パイプラインの詳細ページ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) この期間には、そのプログラムの過去のトレンドに基づく、パイプラインステップの平均期間が含まれます。
+* パイプライン実行ページで、完了したステップに期間が表示されるようになりました。
 
 ## 早期採用プログラム {#early-adoption}
 
 初期の採用プログラムに参加し、今後の機能をテストする機会を得ることができます。
+
+### 独自の GitHub を持ち込む {#byo-github}
+
+GitHub を使用してリポジトリを管理する場合は、 [Cloud Manager を使用して、GitHub リポジトリ内で直接コードを検証できるようになりました。](/help/implementing/cloud-manager/managing-code/byo-github.md) この統合により、コードをAdobeリポジトリと一貫して同期する必要がなくなり、プルリクエストを確認してからメインブランチにマージできます。
+
+この新機能のテストとフィードバックの共有に関心がある場合は、に電子メールを送信してください。 `Grp-CloudManager_BYOG@adobe.com` Adobe IDに関連付けられた電子メールアドレスから。
 
 ### カスタム権限 {#custom-permissions}
 

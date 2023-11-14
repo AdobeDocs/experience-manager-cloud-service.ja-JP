@@ -2,10 +2,10 @@
 title: ビルド環境
 description: Cloud Manager のビルド環境と、そこでコードがどのようにビルドされテストされるかを説明します。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 08cb1b4fc74e03a931551042814afb2d722005a5
+source-git-commit: 7945d67fe7d258af7131076d2416cbe121354a62
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 91%
+source-wordcount: '1006'
+ht-degree: 97%
 
 ---
 
@@ -19,25 +19,21 @@ Cloud Manager のビルド環境と、そこでコードがどのようにビル
 Cloud Manager では、専用のビルド環境を使用して、コードのビルドおよびテストを行います。
 
 * ビルド環境は Linux ベースで、Ubuntu 18.04 から派生しています。
-* を使用 [Cloud Manager の 2023 年 10 月リリース、](/help/implementing/cloud-manager/release-notes/current.md) Java および Maven のバージョンは継続的に更新されています。
-   * Apache Maven 3.6.0 または 3.8.8 がインストールされています。
-   * インストールされる Java のバージョンは、OracleJDK 8u202 およびOracleJDK 11.0.2 です。またはOracleJDK 8u371 およびOracleJDK 11.0.20 です。
-   * デフォルトでは、 `JAVA_HOME` 環境変数はに設定されます。 `/usr/lib/jvm/jdk1.8.0_202` (OracleJDK 8u202 またはに含まれる ) `/usr/lib/jvm/jdk1.8.0_371` oracleJDK 8u371 を含む 詳しくは、 [代替 Maven 実行 JDK バージョン](#alternate-maven-jdk-version) の節を参照してください。
+* Apache Maven 3.8.8 がインストールされています。
+* インストールされる Java バージョンは Oracle JDK 8u371 と Oracle JDK 11.0.20 です。
+* デフォルトでは、`JAVA_HOME` 環境変数は `/usr/lib/jvm/jdk1.8.0_371` に設定されています。これには、Oracle JDK 8u371 が含まれています。詳しくは、 [代替 Maven 実行 JDK バージョン](#alternate-maven-jdk-version) の節を参照してください。
 * 必要に応じてインストールされる追加のシステムパッケージが、次のようにいくつかあります。
-
    * `bzip2`
    * `unzip`
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-
 * [追加のシステムパッケージのインストール](#installing-additional-system-packages)の節で説明されているように、ビルド時にその他のパッケージがインストールされる場合があります。
 * すべてのビルドは、Pristine 環境で実行されます。ビルドコンテナは実行から次回の実行までの間、状態を保持しません。
 * Maven は常に次の 3 つのコマンドで実行されます。
-
-* `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
-* `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
-* `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
+   * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
+   * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
+   * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven は、`settings.xml` ファイルを使用してシステムレベルで設定されます。このファイルには、`adobe-public` というプロファイルを使用したアドビの公開アーティファクトリポジトリが自動的に含まれています（詳しくは、[アドビの公開 Maven リポジトリ](https://repo1.maven.org/)を参照してください）。
 
 >[!NOTE]

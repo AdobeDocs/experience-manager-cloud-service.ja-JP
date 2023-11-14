@@ -2,10 +2,10 @@
 title: 相違点と新機能 - Adobe Experience Manager as a Cloud Service
 description: 相違点と新機能 - Adobe Experience Manager（AEM）as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 83b5d9a3ff0e9a3c69e36a97a3f733b05f827d3b
 workflow-type: tm+mt
-source-wordcount: '1896'
-ht-degree: 100%
+source-wordcount: '1897'
+ht-degree: 99%
 
 ---
 
@@ -206,7 +206,7 @@ OSGi バンドルとその関連設定を管理する web コンソール（以�
 
 >[!NOTE]
 >
->詳しくは、まず [AEM as a Cloud Service でのバックアップと復元](/help/operations/backup.md)、[コンテンツの検索とインデックス作成](/help/operations/indexing.md)、[AEM as a Cloud Service でのメンテナンスタスク](/help/operations/maintenance.md)を参照してください。
+>詳しくは、以下を参照してください。 [コンテンツの復元](/help/operations/backup.md), [インデックス作成](/help/operations/indexing.md)、および [その他のメンテナンスタスク](/help/operations/maintenance.md).
 
 AEM as a Cloud Service では、サービスの中断が不要になるように、このような操作は自動化されています。
 

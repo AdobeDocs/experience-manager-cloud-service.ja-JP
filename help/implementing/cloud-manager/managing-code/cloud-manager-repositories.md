@@ -2,10 +2,10 @@
 title: Cloud Manager リポジトリ
 description: Cloud Manager で Git リポジトリを作成、表示および削除する方法について説明します。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: af8ab1f741c658dcb47bdf0d37e403fcb180631a
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 100%
+source-wordcount: '588'
+ht-degree: 96%
 
 ---
 
@@ -22,9 +22,11 @@ Cloud Manager で Git リポジトリを作成、表示および削除する方�
 
 Cloud Manager でリポジトリを表示および管理するには、次の手順に従います。
 
-1. **プログラムの概要**&#x200B;ページで、「**リポジトリー**」タブをクリックし、**リポジトリー**&#x200B;ページに移動します。
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. 「**リポジトリーを追加**」をクリックして、ウィザードを起動します。
+1. 次から： **プログラムの概要** ページ、タップまたはクリック **リポジトリ** タブをクリックして、 **リポジトリ** ページに貼り付けます。
+
+1. クリック： **リポジトリを追加**.
 
    ![「リポジトリーを追加」ボタン](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
 
