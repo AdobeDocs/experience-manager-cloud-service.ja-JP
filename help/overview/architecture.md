@@ -14,7 +14,7 @@ ht-degree: 12%
 >[!CONTEXTUALHELP]
 >id="intro_aem_cloudservice_architecture"
 >title="AEM as a Cloud Service アーキテクチャの概要"
->abstract="ここでは、AEM as a Cloud Service の新しいアーキテクチャを概観し、変更点を理解します。AEMは、様々な数の画像を含む動的なアーキテクチャになったので、クラウドアーキテクチャを理解するのに時間をかけることが重要です。"
+>abstract="ここでは、AEM as a Cloud Service の新しいアーキテクチャを概観し、変更点を理解します。AEM は、画像の数が変化する動的アーキテクチャを実現したので、時間をかけてクラウドアーキテクチャを理解することが重要です。"
 >additional-url="https://video.tv.adobe.com/v/330542/" text="アーキテクチャの概要"
 
 Adobe Experience Manager(AEM)as a Cloud Serviceは、影響の大きいエクスペリエンスを作成および管理するための、合成可能な一連のサービスを提供します。

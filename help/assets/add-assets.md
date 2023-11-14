@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] への�
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 4305b334afd3337b849d80e79ca4669802cd4be8
+source-git-commit: 408fdf3cac2943fc6c8abfa8d3e94b212a1e455f
 workflow-type: tm+mt
-source-wordcount: '3188'
-ht-degree: 98%
+source-wordcount: '3211'
+ht-degree: 97%
 
 ---
 
@@ -382,7 +382,7 @@ Experience Manager は、ジョブ履歴を表示します。一括読み込み�
 
 * 直接バイナリアップロードは、アセットをアップロードする新しい方法です。[!DNL Experience Manager] ユーザーインターフェイス、[!DNL Adobe Asset Link]、[!DNL Experience Manager] デスクトップアプリケーションなど、製品の機能とクライアントでは、この機能がデフォルトでサポートされています。ユーザー側の技術チームでカスタマイズまたは拡張されるカスタムコードでは、新しいアップロード API およびプロトコルを使用する必要があります。
 
-* アドビでは、[!DNL Experience Manager Assets] の各フォルダーに追加するアセットは 1,000 個以下にすることをお勧めします。フォルダーにアセットをさらに追加することもできますが、そのようなフォルダーへのナビゲーション速度の低下など、エクスペリエンスのパフォーマンスの問題が発生する可能性があります。
+* アドビでは、[!DNL Experience Manager Assets] の各フォルダーに追加するアセットは 1,000 個以下にすることをお勧めします。このディレクトリに 1000 以上の項目が含まれている場合は、「このディレクトリには、次のような警告メッセージが表示される場合があります。 アップロードや新しいフォルダーの作成が遅れる場合があります。」 1 つのフォルダーにさらにアセットを追加することもできますが、そのようなフォルダーへの移動が遅くなるなど、パフォーマンスの問題が発生する場合があります。
 
 * [!UICONTROL 名前の競合]ダイアログで「**[!UICONTROL 置換]**」を選択すると、新しいアセットのアセット ID が再生成されます。この ID は以前のアセットの ID とは異なります。[アセットインサイト](/help/assets/assets-insights.md)による [!DNL Adobe Analytics] でのインプレッション数やクリック数の追跡が有効になっている場合は、再生成されたアセット ID により、[!DNL Analytics] から取得したアセットのデータが無効になります。
 
