@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f1af229fa0fb75a6181eae545ac7e51b31f212f7
+source-git-commit: afb3de515336d3d13b392f8fcc4d263f4f063689
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 29%
@@ -87,7 +87,7 @@ ht-degree: 29%
 
 [Adobe管理 CDN でのトラフィックのフィルタリング](/help/security/traffic-filter-rules-including-waf.md) url、IP アドレス、ユーザーエージェントなどのプロパティで web サイトトラフィックに一致するルールを宣言するか、DoS 攻撃を防ぐためにカスタムトラフィックレート制限を設定します。 また、高度な Web サイトの脅威に対する保護を強化するための、一連の高度な Web Application Firewall(WAF;Advanced Web Application Firewall) ルールのライセンスを取得することもできます。
 
-トラフィックフィルタールールについて、 [チュートリアルを試す](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=ja)! 新しい Cloud Manager 設定パイプラインの設定、設定ファイルでのルールの宣言、悪意のあるトラフィックの CDN ログの分析に関する手順を説明します。
+トラフィックフィルタールールについては、 [チュートリアルを試す](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=ja)! 新しい Cloud Manager 設定パイプラインの設定、設定ファイルでのルールの宣言、悪意のあるトラフィックの CDN ログの分析に関する手順を説明します。
 
 トラフィックフィルタールールは、11 月にステージング環境と実稼動環境への段階的なロールアウトを含む、開発環境で使用できるようになりました。 ステージ上および実稼動環境での事前アクセスを、**aemcs-waf-adopter@adobe.com** にメールでリクエストすることができます。
 
