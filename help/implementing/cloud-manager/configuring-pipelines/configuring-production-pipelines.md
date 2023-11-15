@@ -3,9 +3,9 @@ title: 実稼動パイプラインの設定
 description: 実稼動パイプラインを設定し、コードをビルドして実稼働環境にデプロイする方法について説明します。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: edc5d88b4ffc4e13299d21f6579f5f52c40e0773
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1418'
 ht-degree: 80%
 
 ---
@@ -132,7 +132,7 @@ ht-degree: 80%
 >
 >* 選択した環境に web 階層コードパイプラインが存在する場合、この選択は無効になります。
 >* 環境に既にフルスタックパイプラインがデプロイされている場合、同じ環境に web 階層設定パイプラインを作成すると、フルスタックパイプライン内の既存の web 階層設定は無視されます。
-> * いつでも、環境ごとに 1 つの設定デプロイメントパイプラインしか存在できません。
+> * いつでも、環境ごとに 1 つの設定パイプラインしか使用できません。
 
 実稼動環境の作成を完了する手順では、デプロイメントタイプを選択した場合と、ターゲットとするデプロイメントパイプラインは同じです。
 
@@ -158,7 +158,7 @@ ht-degree: 80%
    * **実稼動へのデプロイ前に一時停止** - このオプションを使用すると、実稼動環境にデプロイする前にパイプラインを一時停止できます。
    * **スケジュール設定** - このオプションを使用すると、ユーザーはスケジュールされた実稼動デプロイメントを有効にできます。Web 層ターゲットのデプロイメントでのみ使用できます。
 
-   ![設定デプロイメントパイプライン](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
+   ![設定パイプライン](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 
 1. 「**保存**」をクリックします。
 

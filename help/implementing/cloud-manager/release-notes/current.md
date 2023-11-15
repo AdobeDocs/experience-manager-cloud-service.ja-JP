@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.11.0 �
 description: AEM as a Cloud Service の Cloud Manager 2023.11.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 71746b00c2d4ee05126af54241db30a7d3aeab1c
+source-git-commit: 3a9eaa162d62cd3e674f14ba39ed7c96ad271f79
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '746'
 ht-degree: 14%
 
 ---
@@ -26,7 +26,7 @@ AEM as a Cloud Service の Cloud Manager 2023.11.0 のリリース日は 2023年
 ## 新機能 {#what-is-new}
 
 * Web アプリケーションファイアウォール —DDOS 保護 (WAF-DDOS) が、AEMのas a Cloud Serviceの使用権限と [は、セルフサービス方式で設定できます。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-* 特殊 [デプロイメントパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) パイプラインを使用して、環境設定、メンテナンスタスク、CDN ルールなどを数分以内に設定できるようになりました。
+* 特殊 [パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) は、数分以内に環境設定、メンテナンスタスク、CDN ルールなどを設定できるようになりました。
 * [コンテンツをコピーする場合](/help/implementing/developing/tools/content-copy.md) 高度な環境から開発環境に移行すると、開発環境は容量が制限されるので、大きなコンテンツセットをコピーする際に注意が必要なメッセージが表示されるようになりました。
 * [パイプライン実行の詳細ページ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) が、まだ開始されていないステップが灰色表示になった状態で、パイプライン実行のすべてのステップを表示するようになりました。
 * 両方で **[アクティビティ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** および **[パイプライン](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** 実行中ステータスのパイプラインをクリックしたときに、パイプライン実行の概要を表示できるようになりました。
@@ -75,9 +75,9 @@ GitHub を使用してリポジトリを管理する場合は、 [Cloud Manager 
 
 ## 既知の問題 {#known-issues}
 
-を防ぐ既知のバグがあります [デプロイパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) プッシュされて実稼動環境に移行する前に実行されます。
+を防ぐ既知のバグがあります [パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) プッシュされて実稼動環境に移行する前に実行されます。
 
-次の場合、 **実稼動にデプロイする前に一時停止します** 設定デプロイメントパイプラインにはオプションが必要です。バグが解決されるまで、次の回避策が推奨されます。
+次の場合、 **実稼動にデプロイする前に一時停止します** 設定パイプラインにはオプションが必要です。バグが解決されるまで、次の回避策が推奨されます。
 
 1. パイプラインを実行.
 1. ステージング環境でコードをテストします。

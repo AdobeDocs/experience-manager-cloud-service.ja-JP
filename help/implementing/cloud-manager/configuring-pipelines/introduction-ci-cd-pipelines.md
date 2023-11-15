@@ -3,9 +3,9 @@ title: CI／CD パイプライン
 description: Cloud Manager の CI／CD パイプラインと、CI／CD パイプラインを使用してコードを効率的にデプロイする方法について説明します。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1443'
 ht-degree: 92%
 
 ---
@@ -53,7 +53,7 @@ Cloud Manager には、次の 2 種類のパイプラインが用意されてい
 実稼働パイプラインと実稼動以外のパイプラインに加えて、デプロイするコードのタイプによってパイプラインを区別することもできます。
 
 * **[フルスタックパイプライン](#full-stack-pipeline)** - 1 つ以上の AEM サーバーアプリケーションを含んだバックエンドおよびフロンエンドコードビルドと HTTPD／Dispatcher 設定を同時にデプロイします。
-* **[デプロイメントパイプラインの設定](#config-deployment-pipeline)** - AEM環境、メンテナンスタスク、CDN ルールなどの設定をおこないます。
+* **[パイプラインの設定](#config-deployment-pipeline)** - AEM環境、メンテナンスタスク、CDN ルールなどの設定をおこないます。
 * **[フロントエンドパイプライン](#front-end)** - 1 つ以上のクライアントサイド UI アプリケーションを含んだフロントエンドコードビルドをデプロイします。
 * **[Web 階層設定パイプライン](#web-tier-config-pipelines)** - HTTPD／Dispatcher 設定をデプロイします。
 
@@ -111,15 +111,15 @@ Cloud Manager で使用できるすべてのパイプラインとその用途を
 * [実稼動パイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
 * [実稼動以外のパイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
 
-## デプロイメントパイプラインの設定 {#config-deployment-pipeline}
+## パイプラインの設定 {#config-deployment-pipeline}
 
-設定デプロイメントパイプラインを使用して、メンテナンスタスクや CDN ルールなどの設定をAEM環境にデプロイできます。
+設定パイプラインを使用して、メンテナンスタスクや CDN ルールなどの設定をAEM環境にデプロイできます。
 
 ドキュメントを参照してください [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md) を参照して、リポジトリの設定を管理し、適切にデプロイする方法を確認してください。
 
-### 設定デプロイメントパイプラインの設定 {#configure-config-deployment}
+### 設定パイプラインの設定 {#configure-config-deployment}
 
-設定デプロイメントパイプラインの設定方法については、次のドキュメントを参照してください。
+設定パイプラインの設定方法については、次のドキュメントを参照してください。
 
 * [実稼動パイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
 * [実稼動以外のパイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
