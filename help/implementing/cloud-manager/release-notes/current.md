@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.11.0 �
 description: AEM as a Cloud Service の Cloud Manager 2023.11.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: b51b3c9aed4d9dacbf12a6cad5f8923d82766bd9
+source-git-commit: 71746b00c2d4ee05126af54241db30a7d3aeab1c
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '750'
 ht-degree: 14%
 
 ---
@@ -31,7 +31,10 @@ AEM as a Cloud Service の Cloud Manager 2023.11.0 のリリース日は 2023年
 * [パイプライン実行の詳細ページ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) が、まだ開始されていないステップが灰色表示になった状態で、パイプライン実行のすべてのステップを表示するようになりました。
 * 両方で **[アクティビティ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** および **[パイプライン](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** 実行中ステータスのパイプラインをクリックしたときに、パイプライン実行の概要を表示できるようになりました。
 * 新しい **期間** セクションが [パイプラインの詳細ページ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) この期間には、そのプログラムの過去のトレンドに基づく、パイプラインステップの平均期間が含まれます。
-* パイプライン実行ページで、完了したステップに期間が表示されるようになりました。
+* 次の日： [パイプライン実行ページ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity-window) 完了したステップには、期間が表示されます。
+* 実行数 [ビルドアーティファクトを再利用](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) これで、これらのアーティファクトを最初に構築した実行へのリンクが表示されるようになります。
+* 選択するオプション **重要な指標のエラー** 設定可能になりました。 [コード品質パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 同様に。
+
 
 ## 早期採用プログラム {#early-adoption}
 
