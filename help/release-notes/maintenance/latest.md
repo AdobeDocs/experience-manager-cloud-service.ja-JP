@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: a8651a44300772b5c9706a5fd85e7fefef72e47d
+source-git-commit: 1a128e35be06d018ec25fb0e6a479cfd0d242dbd
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1114'
 ht-degree: 12%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 12%
 
 ### 機能強化 {#enhancements-14227}
 
-* ASSETS-29631:Assets Cloud：安全な配信/検索に dam:roles を使用します。
+<!--* ASSETS-29631: Assets Cloud: Use dam:roles for secure delivery/search.-->
 * CQ-4354515：翻訳：参照されるリソースの翻訳を抑制するオプション。
 * FORMS-9993: Formsコアコンポーネントを Skyline に移動する手順を定義します。
 * FORMS-10570:EC API を API にオンボーディング — 最初のルーター。
