@@ -2,18 +2,15 @@
 title: WAF ルールを含むトラフィックフィルタールール
 description: Web アプリケーションファイアウォール（WAF）ルールを含むトラフィックフィルタールールの設定
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 8df8322eef7c74932d6feeeb4a7a6045935edd88
+source-git-commit: a129c188e9ec6871c86245acb5f0bf0333fdc340
 workflow-type: tm+mt
-source-wordcount: '3473'
+source-wordcount: '3441'
 ht-degree: 97%
 
 ---
 
 
 # WAF ルールを含むトラフィックフィルタールール {#traffic-filter-rules-including-waf-rules}
-
->[!NOTE]
->この機能は、開発環境で使用できるようになりました。11 月後半に、ステージ環境と実稼動環境への段階的なロールアウトが導入されます。 ステージ上および実稼動環境での事前アクセスを、**aemcs-waf-adopter@adobe.com** にメールでリクエストすることができます。
 
 トラフィックフィルタールールを使用して、CDN レイヤーでリクエストをブロックまたは許可できます。これは、次のようなシナリオで役立つ場合があります。
 
