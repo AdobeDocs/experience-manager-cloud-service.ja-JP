@@ -2,20 +2,20 @@
 title: AEM forms で参照用のテーマとテンプレートを取得する方法を教えてください。
 description: AEM Formsには、フォームをすばやく作成できるように、サンプルのアダプティブフォームテーマ、テンプレート、フォームデータモデルが用意されています。
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: dd0c45352ea402065c7c6fced1394849ed9c316c
+source-git-commit: 046ffed13569ca3f9c104fb4525d28361873277a
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 90%
+source-wordcount: '868'
+ht-degree: 88%
 
 ---
 
 # 参照テーマ、テンプレート、フォームデータモデル {#reference-themes-templates-and-data-models}
 
 
-| バージョン | 記事リンク |
+| 適用先 | 記事リンク |
 | -------- | ---------------------------- |
-| アダプティブフォームのコアコンポーネント | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
-| AEM as a Cloud Service | この記事 |
+| コアコンポーネントに基づくアダプティブフォーム | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
+| 基盤コンポーネントに基づくアダプティブフォーム | この記事 |
 
 <span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 
