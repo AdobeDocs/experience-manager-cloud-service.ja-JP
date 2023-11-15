@@ -2,10 +2,10 @@
 title: ログへのアクセスと管理
 description: AEM as a Cloud Service での開発プロセスを支援するために、ログにアクセスして管理する方法について説明します。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '267'
-ht-degree: 100%
+source-git-commit: c4bd0390fc67b3d8e985c0cd2b1f436ae13420ee
+workflow-type: tm+mt
+source-wordcount: '313'
+ht-degree: 91%
 
 ---
 
@@ -83,3 +83,8 @@ Cloud Manager API と Adobe I/O CLI について詳しくは、次の追加の�
 
 * [Cloud Manager API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/)
 * [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+
+AEM as a Cloud Serviceのログファイルについて詳しくは、次のその他のリソースを参照してください。
+
+* [Cloud 5 AEM ログファイル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
+* [ログを使用した AEM as a Cloud Service のデバッグ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=ja)
