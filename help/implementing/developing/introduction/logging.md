@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 向けのログ
 description: AEM as a Cloud Service のログを使用して一元的なログサービスのグローバルパラメーターを設定する方法、個々のサービスに特有の設定またはデータのログ記録をリクエストする方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 12bdd43b870e30984e2812baea956e06ca7c879c
+source-git-commit: 9d1aab8f615f9e6aa9751fe978a56c915c9a8797
 workflow-type: tm+mt
-source-wordcount: '2683'
-ht-degree: 94%
+source-wordcount: '2757'
+ht-degree: 92%
 
 ---
 
@@ -556,6 +556,16 @@ CDN ログは、json 形式に準拠しているという点で、他のログ�
 ### クラウド環境 {#cloud-environments}
 
 Cloud Services の AEM as a Cloud Service のログにアクセスするには、Cloud Manager インターフェイスを使用してダウンロードするか、Adobe I/O コマンドラインインターフェイスを使用してコマンドラインでログに対して tail を実行します。詳しくは、[Cloud Manager のログに関するドキュメント](/help/implementing/cloud-manager/manage-logs.md)を参照してください。
+
+### 追加の公開地域のログ {#logs-for-additional-publish-regions}
+
+特定の環境で追加のパブリッシュ領域が有効になっている場合、前述のように、各地域のログを Cloud Manager からダウンロードできます。
+
+追加のパブリッシュ領域のAEMログと Dispatcher ログは、次に示すように、環境 ID の後の最初の 3 文字で地域を指定します。 **nld2** 以下のサンプルでは、オランダにある追加のAEMパブリッシュインスタンスを参照しています。
+
+```
+cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"
+```
 
 ### ローカル SDK {#local-sdk}
 

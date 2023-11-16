@@ -2,10 +2,10 @@
 title: 追加の公開地域
 description: AEM as a Cloud Service が、可用性の向上と待ち時間の短縮を実現するために、追加の公開地域をサポートする方法を説明します。
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: 4f11d1958cbfb252f29a7815af8800426d945ebd
+source-git-commit: c0c669f847c9ef64b1fa22cfc24ac693c3c8ad90
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 89%
+source-wordcount: '639'
+ht-degree: 84%
 
 ---
 
@@ -46,6 +46,10 @@ AEM Sites で設定されたプログラムでは、追加の公開地域のラ�
 高度なネットワークが既に設定されているプログラムで追加の公開地域を有効にする場合、高度なネットワークルールに一致する追加の公開地域のトラフィックは、デフォルトでプライマリ地域を経由します。可用性の向上を活用するには、追加の地域で高度なネットワークを有効にすることをお勧めします。
 
 接続が途切れることなく高度なネットワーク設定を追加の地域に追加する方法など、詳しくは、高度なネットワークのドキュメントの[追加の公開地域の高度なネットワーク設定](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions)の節を参照してください。
+
+## ログ {#logging}
+
+追加のパブリッシュ領域が有効になっている場合、Cloud Manager を通じて、各地域の個別のログを利用できるようになります。 詳しくは、 [ログへのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md) および [追加の公開地域のログ](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
 
 ## 制限事項 {#limitations}
 
