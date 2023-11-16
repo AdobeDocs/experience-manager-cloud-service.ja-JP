@@ -3,9 +3,9 @@ title: 検索のベストプラクティス： [!DNL Adobe Experience Manager] a
 description: アプリケーション内でアセットのメタデータを検索、検索および取得するためのベストプラクティス。
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 6638298056f2dae027db4df8c31c3fd59812a56b
+source-git-commit: b3b2cc516743243fbfdcf6189bfd851a1272bf78
 workflow-type: tm+mt
-source-wordcount: '2544'
+source-wordcount: '2520'
 ht-degree: 11%
 
 ---
@@ -38,11 +38,11 @@ Adobe Analytics の **Assets ビュー**&#x200B;の場合、検索バーは上�
 
 指定 `classic car` を検索キーワードとして選択し、「検索」をクリックします。 サーチクエリは、キーワードを入力するとドロップダウンリストに表示されます。 検索候補は、Experience Managerデプロイメント上の検索インデックスの内容に基づいて表示されます。 ドロップダウンメニューに適切なアセットが表示されない場合は、Enter キーを押して結果のリストを表示します。 結果は、最も近い一致から順に、関連度の高い順に並べ替えられます。
 
-![基本検索方法 1 の実行](assets/simple-search-1.png)
+<!--![Performing basic search method 1](assets/simple-search-1.png)-->
 
 検索キーワードを二重引用符 (&quot; &quot;) で囲むと、より具体的に検索できます。 この検索には、指定した用語をまとめて含むアセットのみが含まれます。 検索条件は次のようになります。 `"classic car"`. したがって、両方の語句で検索結果が一致します `classic` および `car` が表示されます。
 
-![完全一致の検索](assets/simple-search-2.png)
+<!--![Finding exact match](assets/simple-search-2.png)-->
 
 検索では、 **[!UICONTROL Assets ビュー]** 同様に。
 
@@ -65,7 +65,7 @@ Adobe Analytics の **Assets ビュー**&#x200B;の場合、検索バーは上�
 パスからフォルダーを選択し、特定のフォルダー内を検索する場合は必要なフォルダーに移動します。
 3. ドロップダウンリストから「ファイル」を選択して、キーワードを含むすべてのファイルを表示します。 `classic car`.
 
-![ファイルとフォルダーを使用した検索](assets/files-folders.png)
+<!--![Search using files and folders](assets/files-folders.png)-->
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425487)
 
@@ -164,7 +164,7 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 1. 選択 [!UICONTROL PDF].
 1. に移動します。 [!UICONTROL ステータス] > [!UICONTROL 公開] > [!UICONTROL 非公開].
 
-![フィルターの例 2](assets/filter-2.png)
+<!--![Filter example 2](assets/filter-2.png)-->
 
 で次の手順を実行します。 **[!UICONTROL Assets ビュー]**:
 
@@ -180,7 +180,7 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 1. 「フィルター」に移動します。 の下 [!UICONTROL ファイルタイプ]、展開 [!UICONTROL 画像] を選択し、 [!UICONTROL Web 有効]
 1. 「PNG」の選択を解除します。
 
-![ジープ以外のすべての画像を検索](assets/images-png.png)
+<!--![Search all images except jeep](assets/images-png.png)-->
 
 の前述のシナリオを使用してアセットを検索するには **[!UICONTROL Assets ビュー]**、次の手順に従います。
 
@@ -203,7 +203,7 @@ Adobe Experience Managerでは、検索に複数の条件を追加できます�
 2. フィルターパネルに移動し、「ファイルタイプ」の下の「ドキュメント」を選択します。
 3. アスタリスクワイルドカードを使用して検索を絞り込みます。 タイプ `"classic car"` を含むすべてのアセットを検索するには `classic car` キーワード。
 
-![シナリオ 6](assets/scenario-6.png)
+<!--![Scenario 6](assets/scenario-6.png)-->
 
 シナリオ 6 はで実行できません **[!UICONTROL Assets ビュー]** ワイルドカードの使用はサポートされていないので、
 
@@ -213,7 +213,7 @@ Adobe Experience Managerでは、検索に複数の条件を追加できます�
 
 次を入力します。 `car - classic` キーワードを使用します。 フィルターパネルに移動し、「ファイルタイプ」の下の「ドキュメント」を選択します。 検索の優先順位は、次の順序に基づきます。優先度 1：メタデータ優先度 2：スマートタグ
 
-![シナリオ 7](assets/scenario-7.png)
+<!--![Scenario 7](assets/scenario-7.png)-->
 
 シナリオ 7 はで実行できません **[!UICONTROL Assets ビュー]** ワイルドカードの使用はサポートされていないので、
 
@@ -237,7 +237,7 @@ When you are unsure about the title or meta description of an asset, you can use
 
 様々な検索フィルターを使用して、特定の条件をキャプチャできます。 タグとは、多数のアセットの中で識別可能にするためにアセットに割り当てられるキーワードです。 例えば、このシナリオでは、を含むアセットを検索します。 *ジープ* タグを追加します。 これをおこなうには、次のように入力します。 `tags:jeep` をクリックします。 この条件を満たすアセットのみが検索結果に表示されます。
 
-![タグを使用した検索](assets/search-tags.png)
+<!--![Search using tags](assets/search-tags.png)-->
 
 検索では、 **[!UICONTROL Assets ビュー]** 同様に。
 
