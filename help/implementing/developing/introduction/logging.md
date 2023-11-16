@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 向けのログ
 description: AEM as a Cloud Service のログを使用して一元的なログサービスのグローバルパラメーターを設定する方法、個々のサービスに特有の設定またはデータのログ記録をリクエストする方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 8f20876be6b01e1994fb8f91d4a1b4a113588a3e
+source-git-commit: 12bdd43b870e30984e2812baea956e06ca7c879c
 workflow-type: tm+mt
-source-wordcount: '2657'
-ht-degree: 89%
+source-wordcount: '2683'
+ht-degree: 94%
 
 ---
 
@@ -523,7 +523,8 @@ Splunk 転送機能は、CDN ログをまだサポートしていません。
 "cache": "PASS",
 "status": 200,
 "res_age": 0,
-"pop": "PAR"
+"pop": "PAR",
+"rules": "match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked"
 }
 ```
 
@@ -534,19 +535,21 @@ CDN ログは、json 形式に準拠しているという点で、他のログ�
 | **フィールド名** | **説明** |
 |---|---|
 | *timestamp* | TLS 終了後にリクエストが開始した時刻 |
-| *tfb* | の略称 *最初のバイトまでの時間*. リクエストが開始してから、応答本文がストリーミングを開始するまでの時間間隔です。 |
-| *cli_ip* | クライアントの IP アドレス。 |
-| *cli_country* | 2 文字 [ISO 3166-1](https://ja.wikipedia.org/wiki/ISO_3166-1) 顧客の国コードの alpha-2。 |
-| *rid* | リクエストを一意に識別するために使用されるリクエストヘッダーの値。 |
-| *req_ua* | 特定の HTTP リクエストを実行するユーザーエージェントです。 |
-| *host* | リクエストが意図されている権限。 |
-| *URL* | クエリパラメーターを含む完全パス。 |
-| *メソッド* | 「GET」や「POST」など、クライアントによって送信される HTTP メソッド。 |
+| *ttfb* | *Time To First Byte* の略称です。リクエストの開始から、応答本文のストリーミングが開始される前の時点までの時間間隔です。 |
+| *cli_ip* | クライアントの IP アドレスです。 |
+| *cli_country* | クライアント国の 2 文字の [ISO 3166-1](https://ja.wikipedia.org/wiki/ISO_3166-1) alpha-2 国コードです。 |
+| *rid* | リクエストを一意に識別するために使用されるリクエストヘッダーの値です。 |
+| *req_ua* | 特定の HTTP リクエストの作成を担当するユーザーエージェントです。 |
+| *host* | リクエストの対象となる証明機関です。 |
+| *URL* | クエリパラメーターを含む完全なパスです。 |
+| *method* | 「GET」や「POST」など、クライアントによって送信される HTTP メソッドです。 |
 | *res_ctype* | リソースの元のメディアタイプを示すために使用される Content-Type です。 |
-| *cache* | キャッシュの状態。 指定できる値は、HIT、MISS、PASS です。 |
-| *status* | HTTP ステータスコード（整数値）。 |
-| *res_age* | 応答が（すべてのノードで）キャッシュされた時間（秒）。 |
-| *ポップ* | CDN キャッシュサーバーのデータセンター。 |
+| *cache* | キャッシュの状態です。指定できる値は、HIT、MISS、PASS です |
+| *status* | 整数値としての HTTP ステータスコードです。 |
+| *res_age* | 応答が（すべてのノードで）キャッシュされた時間です（秒単位）。 |
+| *pop* | CDN キャッシュサーバーのデータセンターです。 |
+| *rules* | 一致する任意の名前 [トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md) と WAF フラグ。一致がブロックになったかどうかを示します。 一致するルールがない場合は空です。 |
+
 
 ## ログのアクセス方法 {#how-to-access-logs}
 
