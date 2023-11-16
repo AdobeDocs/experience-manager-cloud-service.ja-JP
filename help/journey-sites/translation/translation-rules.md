@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '789'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '788'
+ht-degree: 96%
 
 ---
 
@@ -97,7 +97,7 @@ AEM は、すべてのコンテンツの翻訳ルールを自動的に作成し�
 * 翻訳ルールの機能を理解する
 * 独自の翻訳ルールを定義できる
 
-この知識を踏まえて、[コンテンツの翻訳](translate-content.md)のドキュメントを次に参照しながら、AEM Sites 翻訳ジャーニーを続けてください。このドキュメントでは、コネクタとルールを連携させてコンテンツを翻訳する方法について説明します。
+この知識に基づいてドキュメントを次に確認し、AEM Sitesの翻訳ジャーニーを続行します [コンテンツを翻訳](translate-content.md) ここでは、コネクタとルールが連携してコンテンツを翻訳する方法を学びます。
 
 ## その他のリソース {#additional-resources}
 

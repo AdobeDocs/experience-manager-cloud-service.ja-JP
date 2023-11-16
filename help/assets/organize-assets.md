@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
-workflow-type: ht
-source-wordcount: '930'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '929'
+ht-degree: 98%
 
 ---
 
@@ -87,7 +87,7 @@ Date24/08/2021
 
 1. [!DNL Experience Manager Assets] にログインします。
 1. **[!UICONTROL アセット]**／**[!UICONTROL ファイル]**&#x200B;をクリックし、アセットを選択して&#x200B;**[!UICONTROL プロパティ]**&#x200B;をクリックして、アセットのプロパティを開きます。
-1. 「**[!UICONTROL 基本]**」タブで、**[!UICONTROL タグ]**&#x200B;メタデータのフォルダーアイコンをクリックします。ポップアップウィンドウが開きます。
+1. Adobe Analytics の **[!UICONTROL 基本]** 」タブで、 **[!UICONTROL タグ]** メタデータ。 ポップアップウィンドウが開きます。
 1. `cq-tags` の既存のタグから適切なタグを検索または選択します。アセットには複数のタグを割り当てることができます。
 
    タグの構造は、**[!UICONTROL 名前]**（アルファベット順）、**[!UICONTROL 作成]**&#x200B;日、**[!UICONTROL 変更]**&#x200B;日を基準に、昇順または降順に並べ替えることができます。以下の図では、タグの構造を&#x200B;**[!UICONTROL 名前]**&#x200B;を基準にアルファベット順にソートしています。

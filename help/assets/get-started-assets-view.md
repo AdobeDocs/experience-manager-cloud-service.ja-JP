@@ -3,10 +3,10 @@ title: ' [!DNL Assets View] の基本'
 description: ' [!DNL Assets View] のアクセス方法、ログイン操作、サポートされているユースケース、既知の問題について説明します。'
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
-source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
-workflow-type: ht
-source-wordcount: '345'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '344'
+ht-degree: 95%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ## [!DNL Assets View] の設定 {#configuration}
 
-環境設定を開くには、ユーザーインターフェイスの右上隅にあるアバターをクリックします。ソリューションの環境設定で、明るいテーマと暗いテーマを切り替えることができます。
+環境設定を開くには、ユーザーインターフェイスの右上隅にあるアバターをクリックします。 ソリューションの環境設定で、明るいテーマと暗いテーマを切り替えることができます。
 
 複数の異なる組織に属している場合は、組織を変更し、様々な組織のアカウントにアクセスすることもできます。
 

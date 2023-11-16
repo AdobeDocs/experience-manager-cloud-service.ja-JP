@@ -2,10 +2,10 @@
 title: ページ編集用のキーボードショートカット
 description: AEM ではページ編集用を含む様々なキーボードショートカットを使用できます
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 100%
+source-wordcount: '236'
+ht-degree: 90%
 
 ---
 
@@ -35,7 +35,7 @@ AEM 全体で様々なキーボードショートカットを利用できます�
 
 >[!NOTE]
 >
->ユーザーがプレビューモードでページの操作を開始すると、`Ctrl-Shift-m` ショートカットは使用できなくなります。ショートカットをもう一度使用できるようにするには、エディターバーの上部をクリックするか、編集モードに戻る必要があります。
+>ユーザーがプレビューモードでページの操作を開始すると、`Ctrl-Shift-m` ショートカットは使用できなくなります。ショートカットを再び使用できるようにするには、エディターの上部バーをクリックするか、編集モードに戻る必要があります。
 
 [コンソール](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)、特に[コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)の使用時には、デスクトップユーザーは様々なキーボードショートカットを利用できます。
 

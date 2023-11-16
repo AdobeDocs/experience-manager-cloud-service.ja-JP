@@ -4,10 +4,10 @@ description: Experience Cloud 設定自動化を使用すると、シンプル�
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
-workflow-type: ht
-source-wordcount: '754'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 96%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Analytics と AEM Sites の統合は、かつてないほどシンプル�
 
 1. Adobe Admin Console（https://adminconsole.adobe.com/）にログインします。
 1. 右上隅で適切な IMS 組織 ID が選択されていることを確認します。
-1. 「製品ナビゲーション」オプションをクリックします。
+1. 「製品」ナビゲーションオプションをクリックします。
 1. 「Adobe Experience Manager as a Cloud Service」が IMS 組織用にプロビジョニングされていることを確認します。
 1. 「Adobe Analytics」が IMS 組織用にプロビジョニングされていることを確認します。
 1. Cloud Manager（https://experience.adobe.com/cloud-manager）に移動します。
@@ -46,7 +46,7 @@ Adobe Analytics と AEM Sites の統合は、かつてないほどシンプル�
 1. **Sites** に移動して、Adobe Analytics と統合するサイトのルートを選択します。
 1. サイドパネルメニューを展開して、 **Analytics を設定** をタップします。
 
-   これはサイドレールの新しいオプションであり、Experience Cloud 設定自動化のコントロールとステータスを提供するパネルが開きます。
+   これは、サイドレールの新しいオプションで、自動設定のコントロールとステータスを提供するパネルを開くExperience Cloudです。
 1. 「**Analytics の統合** 」ボタンをタップします。
 1. 表示されたダイアログで、**レポートスイート ID** の名前を入力します。
 

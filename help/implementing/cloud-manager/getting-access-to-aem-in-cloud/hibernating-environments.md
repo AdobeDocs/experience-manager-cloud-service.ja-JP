@@ -2,10 +2,10 @@
 title: サンドボックス環境の休止と休止解除
 description: サンドボックスプログラムの環境が自動的に休止モードに入る仕組みと、休止状態が解除される仕組みについて説明します。
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 100%
+source-wordcount: '681'
+ht-degree: 93%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 休止状態にするプログラムをクリックして、そのプログラムの詳細を表示します。
+1. 休止状態にするプログラムをクリックして詳細を表示します。
 
 1. **環境**&#x200B;カードで、省略記号ボタンをクリックし、「**開発者コンソール**」を選択します。
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 
    ![休止の確定](assets/hibernate-2.png)
 
-休止処理が正常に完了すると、環境の休止処理完了通知が&#x200B;**開発者コンソール**&#x200B;画面に表示されます。
+休止処理が正常に完了すると、環境の休止処理完了通知が **開発者コンソール** 画面。
 
 ![休止状態の確認](assets/hibernate-4.png)
 
@@ -65,13 +65,13 @@ ht-degree: 100%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 休止状態にするプログラムをクリックして、そのプログラムの詳細を表示します。
+1. 休止状態にするプログラムをクリックして詳細を表示します。
 
 1. **環境**&#x200B;カードで、省略記号ボタンをクリックし、「**開発者コンソール**」を選択します。
 
    * 詳しくは、[Developer Console へのアクセス](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)を参照してください。
 
-1. 「**休止解除**」をクリックします。
+1. クリック **休止状態を解除**.
 
    ![「休止解除」ボタン](assets/de-hibernation-img1.png)
 

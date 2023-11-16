@@ -1,11 +1,11 @@
 ---
 title: ベストプラクティスアナライザーの使用
-description: アップグレードの準備状況を理解するために、ベストプラクティスアナライザーを使用する方法について説明します。
+description: ベストプラクティスアナライザーを使用してアップグレードの準備状況を理解する方法について説明します。
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2484'
-ht-degree: 99%
+source-wordcount: '2478'
+ht-degree: 95%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 99%
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. 「**レポートの生成**」をクリックして、ベストプラクティスアナライザーを実行します。
+1. クリック **レポートを生成** をクリックして、ベストプラクティスアナライザーを実行します。
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
@@ -69,7 +69,7 @@ ht-degree: 99%
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
-1. BPA レポートが生成されると、概要と結果の数が、結果のタイプと重要度レベル別に整理された表形式で表示されます。特定の結果の詳細を取得するには、表で結果のタイプに対応する番号をクリックします。
+1. BPA レポートが生成されると、概要と結果の数が、結果のタイプと重要度レベル別に整理された表形式で表示されます。 特定の検索結果に関する詳細を取得するには、テーブル内の検索のタイプに対応する数をクリックします。
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
 
@@ -95,7 +95,7 @@ ht-degree: 99%
 
 [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) に関連する結果を除外するには、次の手順に従います。
 
-1. ページの左側にある左レールアイコンをクリックします。**ACS Commons フィルター**&#x200B;が表示されます。**ACS Commonsフィルター**&#x200B;でクリックして、下の画像に示すインタラクティブチェックボックスを表示します。
+1. ページの左側にある左側のレールアイコンをクリックします。 **ACS Commons フィルター**&#x200B;が表示されます。次をクリック： **ACS Commons フィルター** をクリックして、次の画像に示すインタラクティブチェックボックスを表示します。
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 

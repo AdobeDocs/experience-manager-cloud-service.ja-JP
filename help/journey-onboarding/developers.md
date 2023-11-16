@@ -4,17 +4,17 @@ description: システム管理者が必要なクラウドリソースを設定�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 95%
+source-wordcount: '1411'
+ht-degree: 90%
 
 ---
 
 
 # 開発者およびデプロイメントマネージャーのタスク {#developer-deployment-manager}
 
-[オンボーディングジャーニー](overview.md)のこのオプションのパートでは、開発者とデプロイメントマネージャーが Git にアクセスしてアプリケーションを開発し、パイプラインを使用してデプロイする方法を説明します。
+このオプションの部分は、 [オンボーディングジャーニー](overview.md) 開発者やデプロイメントマネージャーが git にアクセスしてアプリケーションを開発し、パイプラインを使用してデプロイする方法を学びます。
 
 ## これまでの説明内容 {#story-so-far}
 
@@ -64,7 +64,7 @@ Cloud Manager でセルフサービスの Git アカウント管理を使用す�
 
    ![環境カードの「リポジトリ情報にアクセス」ボタン](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. 「**リポジトリ情報を表示**」ボタンをクリックして、以下を表示するダイアログを開きます。
+1. 次をクリック： **リポジトリ情報を表示** ボタンをクリックして、表示するダイアログを開きます。
 
    * Cloud Manager Git リポジトリへの URL。
    * Git ユーザー名。
@@ -119,7 +119,7 @@ Cloud Manager でセルフサービスの Git アカウント管理を使用す�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動し、前のセクションで作成したパイプラインの横にある省略記号ボタンをクリックして、メニューから「**実行**」を選択します。
+1. 次に移動： **パイプライン** カード **プログラムの概要** 」ページに移動し、前のセクションで作成したパイプラインの横の省略記号ボタンをクリックして、「 」を選択します。 **実行** を選択します。
 
 1. パイプラインの実行が開始され、「**ステータス**」列に示されます。
 

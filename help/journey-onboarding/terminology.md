@@ -2,16 +2,16 @@
 title: AEM as a Cloud Service の用語
 description: AEMaaCS にログインする前に、システムの用語と基本構造を理解しておくと役に立ちます。
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 100%
+source-wordcount: '461'
+ht-degree: 87%
 
 ---
 
 # AEM as a Cloud Service の用語 {#terminology}
 
-[オンボーディングジャーニー](overview.md)のこの部分では、AEM as a Cloud Service の用語と基本構造を説明します。
+この部分では、 [オンボーディングジャーニー](overview.md) AEM as a Cloud Serviceの用語とその基本的な構造について学びます。
 
 ## 目的 {#objective}
 
@@ -53,4 +53,4 @@ AEM as a Cloud Service は強力かつ柔軟なツールです。どのような
 * AEMaaCS を構成する様々なレイヤー
 * 各レイヤーの基本的機能
 
-この知識に基づいて、次は [Admin Console へのアクセス](admin-console.md)のドキュメントを確認して、AEM オンボーディングジャーニーを続行してください。そこでは、コンソールにアクセスしてシステム管理者としてのステータスを確認する方法を習得します。
+この知識に基づいて構築し、次のドキュメントを読んで、AEMオンボーディングジャーニーを継続します。 [Admin Consoleへのアクセス](admin-console.md)コンソールにアクセスする方法、およびシステム管理者としてのステータスを確認する方法を説明します。

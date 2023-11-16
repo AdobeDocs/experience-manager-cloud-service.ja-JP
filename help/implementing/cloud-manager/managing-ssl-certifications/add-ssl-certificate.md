@@ -2,10 +2,10 @@
 title: SSL 証明書の追加
 description: Cloud Manager のセルフサービスツールを使用して独自の SSL 証明書を追加する方法を説明します。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 88%
+source-wordcount: '552'
+ht-degree: 82%
 
 ---
 
@@ -29,11 +29,11 @@ Cloud Manager を使用して証明書を追加するには、次の手順に従
 
 1. **概要**&#x200B;ページから&#x200B;**環境**&#x200B;画面に移動します。
 
-1. 画面左側のナビゲーションパネルで「**SSL 証明書**」をクリックします。既存の SSL 証明書の詳細を示す表がメイン画面に表示されます。
+1. クリック **SSL 証明書** をクリックします。 既存の SSL 証明書の詳細を示す表がメイン画面に表示されます。
 
    ![SSL 証明書の追加](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. 「**SSL 証明書を追加**」をクリックすると、**SSL 証明書を追加**&#x200B;ダイアログボックスが開きます。
+1. クリック **SSL 証明書を追加** 開く **SSL 証明書を追加** ダイアログボックス。
 
    * 「**証明書名**」に証明書の名前を入力します。
       * これは情報提供だけを目的とし、証明書を簡単に参照するのに役立つ任意の名前を指定できます。
@@ -47,7 +47,7 @@ Cloud Manager を使用して証明書を追加するには、次の手順に従
 
 1. 「**保存**」をクリックして証明書を保存します。
 
-保存すると、証明書が表の新しい行として表示されます。
+保存すると、証明書がテーブルの新しい行として表示されます。
 
 ![保存された SSL 証明書](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
 

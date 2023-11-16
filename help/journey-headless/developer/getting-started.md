@@ -2,10 +2,10 @@
 title: AEM Headless as a Cloud Service - はじめに
 description: ここでは、AEM ヘッドレスデベロッパージャーニーのこの部分では、AEM ヘッドレスの前提条件について説明します。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3098'
-ht-degree: 97%
+source-wordcount: '3096'
+ht-degree: 95%
 
 ---
 
@@ -85,7 +85,7 @@ AEM のヘッドレス機能は、いくつかの主要機能に基づいてい�
 * GraphQL API を使用すると、コンテンツフラグメントにアクセスして配信するリクエストを作成できます。
 * Assets REST API を使用すると、コンテンツフラグメント（および他のアセット）を作成および変更できます。
 
-これらの API とその使用方法については、AEM ヘッドレスジャーニーの後半で説明します。または、追加のドキュメントについては、[その他のリソース](#additional-resources)の節を参照してください。
+これらの API の概要と、API をAEMヘッドレスジャーニーの後半で使用する方法について説明します。 または、 [その他のリソース](#additional-resources) 詳細なドキュメントについては、以下の節を参照してください。
 
 ## ヘッドレス統合レベル {#integration-levels}
 
@@ -273,7 +273,7 @@ AEM を使用した[一般的なヘッドレス実装](#level-1)の場合、デ�
 * AEM ヘッドレスの統合レベルを把握する。
 * プロジェクトの範囲を定義する。
 
-次に、必要なツールを設定する方法と AEM でのデータのモデリングに関する考え方を説明する「[AEM ヘッドレス機能を使用した初めてのエクスペリエンスへの道筋](path-to-first-experience.md)」のドキュメンテーションを確認して、AEM ヘッドレスジャーニーを続けてください。
+次にドキュメントを確認して、AEMヘッドレスジャーニーを続ける必要があります [AEMヘッドレスを使用した初めてのエクスペリエンスへのパス](path-to-first-experience.md) 必要なツールの設定方法と、AEMでのデータのモデリングに関する考え方を学ぶための場所です。
 
 ## その他のリソース {#additional-resources}
 

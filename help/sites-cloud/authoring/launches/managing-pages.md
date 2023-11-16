@@ -2,10 +2,10 @@
 title: ローンチでのページの管理
 description: ローンチ内に新しいページを作成できます。また、不要なページを削除することもできます。
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 100%
+source-wordcount: '289'
+ht-degree: 94%
 
 ---
 
@@ -25,36 +25,34 @@ ht-degree: 100%
 * ページエディター：
 
    * 「**ナビゲーション**」を選択して、コンソールでローンチの構造を開きます。
-      ![ページエディターからローンチをナビゲーション](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
+     ![ページエディターからローンチをナビゲーション](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
-      >[!NOTE]
-      >
-      >また、次のことを実行できます。
-      >
-      >* ローンチの&#x200B;**終了**&#x200B;後、ソースページの編集に戻る
-
+     >[!NOTE]
+     >
+     >また、次のことを実行できます。
+     >
+     >* ローンチの&#x200B;**終了**&#x200B;後、ソースページの編集に戻る
 
 * **ローンチ**コンソール：
 特定のローンチを選択すると、「**コンテンツを管理**」を選択できます。
-   ![ローンチコンソール - コンテンツを管理](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+  ![ローンチコンソール - コンテンツを管理](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
 
 * **Sites** コンソール：
 特定のソースページを選択し、「**参照**」を開き、「**ローンチ**」を選択してから「**コンテンツを管理**」を選択します。
-   ![ローンチコンソール - コンテンツを管理](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
+  ![ローンチコンソール - コンテンツを管理](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
 
-   >[!NOTE]
-   >
-   >また、「**ローンチコンソール**」を選択して、「**コンテンツを管理**」（およびその他のアクション）にアクセスすることもできます。
+  >[!NOTE]
+  >
+  >また、「**ローンチコンソール**」を選択して、「**コンテンツを管理**」（およびその他のアクション）にアクセスすることもできます。
 
-これらのエントリポイントのすべてで Sites コンソールのローンチが開き、次の操作ができます。
+これらのエントリポイントすべてを使用すると、サイトコンソールにローンチが開き、次の操作を実行できます。
 
 * ナビゲーションする
 * 新しいページを&#x200B;**作成**&#x200B;する
 * 既存のページを選択し、アクション（例：**編集**、**プロパティ**、**ロック**、**コピー**、**貼り付け**、**削除**）を実行する
-
-   ![「コンテンツの管理」から Sites コンソールでローンチをナビゲーション](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+  ![「コンテンツの管理」から Sites コンソールでローンチをナビゲーション](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * **参照**&#x200B;パネルを使用して、**ローンチソース**ページに戻る
-   ![Sites コンソール - ローンチソース](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
+  ![Sites コンソール - ローンチソース](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
 ## ローンチにページを追加する {#add-pages-to-launch}
 

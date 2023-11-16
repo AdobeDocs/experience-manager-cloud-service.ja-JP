@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 100%
+source-wordcount: '491'
+ht-degree: 97%
 
 ---
 
@@ -47,7 +47,7 @@ AEM を使用すると、コンテンツの作成と管理が簡単になるだ�
 1. 翻訳済みコンテンツをレビューして公開します。
 
 
-さらに、このジャーニーでは、AEM によるコンテンツの翻訳方法の詳細を順を追って説明します。
+さらに、ジャーニーでは、AEMによるコンテンツの翻訳方法に関する詳細を段階的に学びます。
 
 ## 次のステップ {#what-is-next}
 

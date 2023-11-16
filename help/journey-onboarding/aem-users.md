@@ -4,17 +4,17 @@ description: システム管理者が必要なクラウドリソースを設定�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '579'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '577'
+ht-degree: 93%
 
 ---
 
 
 # AEM ユーザータスク {#aem-user-tasks}
 
-[オンボーディングジャーニー](overview.md)のこのオプションのパートでは、AEM ユーザーが AEM as a Cloud Service にアクセスしてコンテンツを作成する方法を学びます。
+このオプションの部分は、 [オンボーディングジャーニー](overview.md) AEMユーザーがコンテンツを作成するためにAEMas a Cloud Serviceにアクセスする方法を学びます。
 
 ## これまでの説明内容 {#story-so-far}
 
@@ -52,7 +52,7 @@ AEM のオーサーは、AEM にログインしてコンテンツの作成を開
 
 1. Cloud Manager の&#x200B;**プログラムと製品**&#x200B;ページで該当のプログラムを選択して、**概要**&#x200B;ページを起動します。アクセスするプログラムが不明な場合は、システム管理者に問い合わせてください。
 
-1. Cloud Manager の&#x200B;**概要**&#x200B;ページで、**環境**&#x200B;カードのオーサーリンクをクリックします。
+1. 次から： **概要** Cloud Manager のページで、 **環境** カード。
 
    ![環境カード](/help/journey-onboarding/assets/author-environ.png)
 

@@ -4,9 +4,9 @@ description: AE の基本を学ぶ。パッケージマネージャーを使用�
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3769'
 ht-degree: 98%
 
 ---
@@ -149,7 +149,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 ## パッケージ設定 {#package-settings}
 
-パッケージとは基本的に、一連のフィルターと、これらのフィルターに基づくリポジトリデータです。パッケージマネージャーの UI を使用して、パッケージをクリックし、「**編集**」ボタンをクリックすると、次の設定を含むパッケージの詳細が表示されます。
+パッケージとは基本的に、一連のフィルターと、これらのフィルターに基づくリポジトリデータです。パッケージマネージャーの UI を使用して、パッケージをクリックし、 **編集** ボタンをクリックすると、次の設定を含むパッケージの詳細が表示されます。
 
 * [一般設定](#general-settings)
 * [パッケージフィルター](#package-filters)

@@ -1,13 +1,13 @@
 ---
 title: カスタム権限
 description: カスタム権限を使用して、設定可能な権限を持つ新しいカスタム権限プロファイルを作成し、Cloud Manager ユーザーのプログラム、パイプライン、環境へのアクセスを制限する方法について説明します。
-source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
+exl-id: 167da985-7f19-45b3-90a3-884817907da2
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1506'
 ht-degree: 2%
 
 ---
-
 
 # カスタム権限 {#custom-permissions}
 
@@ -44,7 +44,7 @@ Cloud Manager には、Cloud Manager の様々な機能へのアクセスを制�
 
 >[!NOTE]
 >
->新しいプロファイルを作成し、Cloud Manager の権限を管理するには、Adobe Experience Manager as a Cloud ServiceのAdmin Consoleで製品管理者権限が必要です。
+>新しいプロファイルを作成し、Cloud Manager の権限を管理するには、Adobe Experience Manager as a Cloud ServiceのAdmin Consoleの製品管理者権限が必要です。
 
 ### 新しい製品プロファイルの作成 {#create}
 

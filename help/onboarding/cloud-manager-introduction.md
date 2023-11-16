@@ -2,10 +2,10 @@
 title: Cloud Manager の概要
 description: プログラム、環境、パイプラインを通じて、Cloud Manager がどのように AEM プロジェクトをサポートするかについて説明します。
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 97%
+source-wordcount: '860'
+ht-degree: 96%
 
 ---
 
@@ -32,7 +32,7 @@ Cloud Manager は、AEM as a Cloud Service に不可欠なコンポーネント�
 
 1. **Experience Manager** を選択します。
 
-1. **Cloud Manager** カードで、「**起動**」をクリックします。
+1. 次の日： **Cloud Manager** カード、クリック **Launch**
 
 ## Cloud Manager での役割ベースの権限 {#role-based-permissions}
 

@@ -2,10 +2,10 @@
 title: カスタムドメイン名の追加
 description: Cloud Manager を使用してカスタムドメイン名を追加する方法を説明します。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: d3021a4dd78a0ca86352a81965ce92868e94664a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 87%
+source-wordcount: '632'
+ht-degree: 83%
 
 ---
 
@@ -30,11 +30,11 @@ Cloud Manager では、次の 2 つの場所からカスタムドメイン名を
 
 1. **概要**&#x200B;ページの&#x200B;**環境**&#x200B;画面に移動します。
 
-1. 左側のナビゲーションパネルで「**ドメイン設定**」をクリックします。
+1. クリック **ドメイン設定** （左側のナビゲーションパネル）
 
    ![ドメイン設定ウィンドウ](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
-1. 右上の「**ドメインを追加**」ボタンをクリックして、**ドメイン名を追加**&#x200B;ダイアログを開きます。
+1. 次をクリック： **ドメインを追加** 右上のボタンで **ドメイン名を追加** ダイアログ。
 
    ![ドメインを追加ダイアログ](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
@@ -82,7 +82,7 @@ CDN デプロイメントの場合は、有効な SSL 証明書が必要で、TX
 
    1. カスタムドメイン名を入力します。
    1. この名前に関連付けられている SSL 証明書をドロップダウンリストから選択します。
-   1. 「**+ 追加**」をクリックします。
+   1. クリック **+追加**.
 
    ![カスタムドメイン名の追加](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 

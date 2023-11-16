@@ -2,10 +2,10 @@
 title: プログラムとプログラムタイプについて
 description: Cloud Manager の階層、その構造に様々な種類のプログラムが収まる仕組み、それらのプログラムの違いなどについて説明します。
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: fc14675e47e7a61bf36acb9a16756a593189b702
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 97%
+source-wordcount: '519'
+ht-degree: 91%
 
 ---
 
@@ -33,7 +33,7 @@ Cloud Manager は、エンティティ階層を軸に構築されています。
 
 Cloud Manager プログラムには、独自の Git リポジトリが自動的にプロビジョニングされます。
 
-Cloud Manager の Git リポジトリにアクセスするには、ユーザーは、コマンドラインツールを持つ Git クライアント、スタンドアロンのビジュアル Git クライアントまたはユーザーが選択した IDE（Eclipse、IntelliJ、NetBeans など）を使用する必要があります。
+Cloud Manager の Git リポジトリにアクセスするには、コマンドラインツール、スタンドアロンの Visual Git クライアント、または Eclipse、IntelliJ、NetBeans などのユーザーの IDE を使用して Git クライアントを使用する必要があります。
 
 Git クライアントをセットアップすると、Cloud Manager ユーザーインターフェイスから Git リポジトリを管理できます。Cloud Manager ユーザーインターフェイスを使用して Git を管理する方法については、[Git へのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)を参照してください。
 

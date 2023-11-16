@@ -2,10 +2,10 @@
 title: 実稼動プログラムの作成
 description: Cloud Manager を使用して、ライブトラフィックをホストする独自の実稼動プログラムを作成する方法について説明します。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 88%
+source-wordcount: '601'
+ht-degree: 73%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 88%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 画面の右上隅にある「**プログラムを追加**」クリックします。
+1. クリック **プログラムの追加** 画面の右上隅から。
 
    ![Cloud Manager ランディングページ](assets/log-in.png)
 
@@ -49,7 +49,7 @@ ht-degree: 88%
 
    ![ソリューションを選択](assets/setup-prod-select.png)
 
-1. ソリューション名の前にある山形アイコンをクリックすると、オプションのアドオンが表示されます（**Sites** の下の **Commerce** アドオンオプションなど）。
+1. ソリューション名の前の山形記号をクリックすると、「 **コマース** 以下のアドオンオプション **Sites**.
 
    ![アドオンを選択](assets/setup-prod-commerce.png)
 
@@ -70,7 +70,7 @@ ht-degree: 88%
 
 ## プログラムへのアクセス {#accessing}
 
-1. ランディングページにプログラムカードが表示されたら、省略記号ボタンを選択して、使用可能なメニューオプションを表示します。
+1. プログラムカードがランディングページに表示されたら、省略記号ボタンを選択して、使用可能なメニューオプションを表示します。
 
    ![プログラムの概要](assets/program-overview.png)
 
@@ -80,7 +80,7 @@ ht-degree: 88%
 
    ![プログラムの概要](assets/set-up-prod5.png)
 
-別のプログラムに切り替えたり、概要ページに戻って別のプログラムを作成したりする必要がある場合は、いつでも画面の左上のプログラム名をクリックして「**移動先**」オプションを表示します。
+別のプログラムに切り替えたり、概要ページに戻って別のプログラムを作成する必要がある場合は、画面の左上にあるプログラム名をクリックすると、 **に移動します。** オプション。
 
 ![](assets/create-program-a1.png) に移動します。
 

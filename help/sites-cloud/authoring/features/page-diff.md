@@ -2,10 +2,10 @@
 title: ページの差分
 description: ページの差分機能を使用すると、2 つのページを並べて比較し、違いを強調表示するのに便利です。
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 93%
+source-wordcount: '609'
+ht-degree: 89%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 93%
 
 ### 全画面表示および終了 {#fullscreen-and-exiting}
 
-特定のコンテンツに集中するには、並列比較による差分表示のいずれかの「サイド」の全画面表示アイコンをクリックすると、ブラウザーの全画面に拡大できます。
+特定のコンテンツに焦点を当てるには、並列比較による差分表示の「側」の全画面表示アイコンをクリックして、それをフルブラウザーウィンドウに拡大します。
 
 ![全画面表示ボタン](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 

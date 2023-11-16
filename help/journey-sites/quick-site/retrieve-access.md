@@ -2,10 +2,10 @@
 title: Git リポジトリのアクセス情報の取得
 description: フロントエンド開発者が Cloud Manager を使用して Git リポジトリ情報にアクセスする方法について説明します。
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '891'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '889'
+ht-degree: 93%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 100%
    * AEM のライブコンテンツに対するカスタマイズをテストするためのプロキシユーザー資格情報
    * フロントエンドの設計要件
 * Cloud Manager 管理者から：
-   * Cloud Manager からのアクセスを通知するお知らせメール
+   * Cloud Manager からのアクセスを通知するウェルカムメール
    * Cloud Manager 内のプログラム名またはプログラムへの URL
 
 これらの項目のいずれかが欠けている場合は、AEM 管理者または Cloud Manager 管理者にお問い合わせください。
@@ -68,15 +68,15 @@ Cloud Manager を使用すると、クラウド内の AEM を組織で自己管�
 * AEM Git リポジトリ情報にアクセスして、フロントエンドのカスタマイズをコミットできるようにします。
 * デプロイメントパイプラインを開始して、カスタマイズをデプロイします。
 
-Cloud Manager 管理者から、Cloud Manager ユーザーとしてオンボーディングされます。次のようなお知らせメールが届いているはずです。
+Cloud Manager 管理者から、Cloud Manager ユーザーとしてオンボーディングされます。次のようなウェルカムメールが届いているはずです。
 
-![お知らせメール](assets/welcome-email.png)
+![ウェルカムメール](assets/welcome-email.png)
 
 このメールをまだ受け取っていない場合は、Cloud Manager 管理者にお問い合わせください。
 
 ## Cloud Manager へのアクセス {#access-cloud-manager}
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) の Adobe Experience Cloud にログインするか、お知らせメールに記載されているリンクをクリックします。
+1. Adobe Experience Cloud( ) にログインします。 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) または「ようこそ」の電子メールに記載されているリンクをクリックします。
 
 1. Cloud Manager に、使用可能な様々なプログラムのリストが表示されます。Cloud Manager 管理者から提供されたプログラムの中から、アクセスする必要があるものをタップまたはクリックします。これが最初の AEMaaCS のフロントエンドプロジェクトの場合は、提供されるプログラムは 1 つだけでしょう。
 
@@ -111,7 +111,7 @@ Cloud Manager 管理者から、Cloud Manager ユーザーとしてオンボー�
 * Cloud Manager とは何かをハイレベルで理解します。
 * カスタマイズをコミットできるよう、AEM Git にアクセスするための資格情報を取得しました。
 
-この知識に基づいて、次は [サイトテーマのカスタマイズ](customize-theme.md) のドキュメントを確認して、AEM クイックサイト作成ジャーニーを続行してください。そこでは、サイトテーマの作成方法、カスタマイズ方法、および AEM のライブコンテンツを使用したテスト方法を習得します。
+この知識に基づいてドキュメントを次に確認し、AEMクイックサイト作成のジャーニーを続行します。 [サイトテーマのカスタマイズ](customize-theme.md) ここでは、サイトテーマの構築方法、カスタマイズ方法、およびAEMのライブコンテンツを使用したテスト方法について学びます。
 
 ## その他のリソース {#additional-resources}
 

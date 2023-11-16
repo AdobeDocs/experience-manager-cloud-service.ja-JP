@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service でのチャネルの作成と管理
 description: ここでは、Screens as a Cloud Service でチャネルを作成および管理する方法について説明します。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 96%
+source-wordcount: '1087'
+ht-degree: 90%
 
 ---
 
@@ -34,18 +34,18 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 
 1. *FirstDigitalExperience*&#x200B;など、AEM Screens プロジェクトに移動します。
 
-1. プロジェクトから&#x200B;**チャネル**&#x200B;フォルダーを選択（例：**FirstDigitalExperience**／**チャネル**）し、アクションバーの「**作成**」をクリックします。
+1. を選択します。 **チャネル** 次のようなフォルダーをプロジェクトから作成します。 **FirstDigitalExperience** —> **チャネル** をクリックします。 **作成** をクリックします。
 
    ![channel-create1](/help/screens-cloud/assets/create-content/channel-create1.png)
 
-1. **作成**&#x200B;ウィザードで&#x200B;**シーケンスチャネル**&#x200B;などのテンプレートを選択し、「**次へ**」をクリックします。
+1. テンプレートを選択します。例： **シーケンスチャネル** から **作成** ウィザードとクリック **次へ**.
 
    ![channel-create2](/help/screens-cloud/assets/create-content/channel-create2.png)
 
    >[!NOTE]
    > **作成**&#x200B;ウィザードは、チャネルの作成時に様々なタイプのテンプレートを提供します。詳しくは、作成ウィザードの[使用可能なテンプレート](#available-templates)を参照してください。
 
-1. シーケンスチャネルの名前（例：**LoopingChannelOne**）を入力し、「**作成**」をクリックします。
+1. シーケンスチャネルの名前を入力します（例： ）。 **LoopingChannelOne** をクリックします。 **作成**.
 
    ![channel-create3](/help/screens-cloud/assets/create-content/channel-create3.png)
 
@@ -65,7 +65,7 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 
 チャネルにコンテンツを追加するには、下の手順に従います。
 
-1. 編集するチャネルを選択します（下の図を参照）。アクションバーの左上の「**編集**」をクリックして、エディターを開きます。
+1. 編集するチャネルを選択します（下の図を参照）。クリック **編集** アクションバーの左上隅から、エディターを開きます。
 
    ![edit-channel1](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
@@ -76,7 +76,7 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
    ![edit-channel2](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
-   >「**プレビュー**」をクリックして、チャネルのコンテンツをプレビューします。
+   >クリック **プレビュー** をクリックして、チャネルのコンテンツをプレビューします。
    >![edit-channelpreview](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## 作成ウィザードで使用可能なテンプレート {#available-templates}

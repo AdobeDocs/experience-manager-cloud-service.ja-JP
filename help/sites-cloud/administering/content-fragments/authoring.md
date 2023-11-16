@@ -4,9 +4,9 @@ description: コンテンツフラグメントのコンテンツを作成する�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: b8206ffc0947de4fed085a03a6f90b5ac0f85aab
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2252'
 ht-degree: 4%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 4%
 
      >[!WARNING]
      >
-     >元のエディターが同じタブで開きます。 両方のエディターを同時に開くことはお勧めしません。
+     >元のエディターが同じタブに開きます。 両方のエディターを同時に開くことはお勧めしません。
 
 * 左側のパネル：表示 **[バリエーション](#variations)** コンテンツフラグメントとその **フィールド**:
    * これらのリンクは、 [コンテンツフラグメント構造に移動する](#navigate-structure)
@@ -88,7 +88,7 @@ ht-degree: 4%
 
 ### リンク先に移動 {#follow-links}
 
-エディターの様々な部分に、リンクアイコンが表示されます。 これを使用して、表示される項目（コンテンツフラグメントモデル、親参照、参照されているフラグメントなど）を開くことができます。
+エディターの様々な部分で、リンクアイコンが表示されます。 これを使用して、表示される項目（コンテンツフラグメントモデル、親参照、参照されているフラグメントなど）を開くことができます。
 
 ![コンテンツフラグメントエディター — リンクアイコン](assets/cf-authoring-link-icon.png)
 
@@ -203,7 +203,7 @@ ht-degree: 4%
 * [統計](#statistics-rich-text)
 * [比較と同期](#compare-and-synchronize-rich-text)
 
-例：
+次に例を示します。
 
 ![コンテンツフラグメントエディター — 複数行テキスト — 全画面表示切り替え](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
 
@@ -215,7 +215,7 @@ ht-degree: 4%
 
 全画面表示エディターでは、インフロー時と同じ編集オプションを提供しますが、テキスト用のスペースが増えます。
 
-例：
+次に例を示します。
 
 ![コンテンツフラグメントエディター — 複数行テキスト — 全画面表示](assets/cf-authoring-multilinetext-fullscreen.png)
 
@@ -223,7 +223,7 @@ ht-degree: 4%
 
 アクション **統計** [ 複数行 ] フィールドに、テキストに関する情報の範囲を表示します。
 
-例：
+次に例を示します。
 
 ![コンテンツフラグメントエディター — 統計](assets/cf-authoring-multilinetext-statistics.png)
 
@@ -320,13 +320,13 @@ AEMページ、エクスペリエンスフラグメントまたはその他の�
 
 上部のツールバーでリンクアイコンを選択すると、すべての親参照のリストが開きます。
 
-例：
+次に例を示します。
 
 ![コンテンツフラグメントエディター — 参照を表示](assets/cf-authoring-show-references-link.png)
 
 ウィンドウが開き、関連するすべての参照が表示されます。 参照を開くには、名前、タイトル、またはリンクアイコンを選択します。
 
-例：
+次に例を示します。
 
 ![コンテンツフラグメントエディター — 参照を表示](assets/cf-authoring-show-references.png)
 
@@ -353,7 +353,7 @@ AEMページ、エクスペリエンスフラグメントまたはその他の�
 
 次の場合： **メイン** オンにすると、基になるコンテンツフラグメントモデルの名前が「プロパティ」セクションに表示されます。 リンクアイコンを選択すると、モデルが別のタブで開きます。
 
-例：
+次に例を示します。
 
 ![コンテンツフラグメントエディター — コンテンツフラグメントモデルを開く](assets/cf-authoring-open-model.png)
 
@@ -383,7 +383,7 @@ Adobe Analytics の **バージョン履歴** 右のパネルの「 」タブに
 
 Adobe Analytics の **言語プロパティ** 関連する言語コピーのタブの詳細が表示されます。 リンクアイコンを選択すると、そのコピーが別のタブで開きます。
 
-例：
+次に例を示します。
 
 ![コンテンツフラグメントエディター — 言語コピーを開く](assets/cf-authoring-open-language-copies.png)
 
@@ -478,7 +478,7 @@ The **フィールド** パネルには、コンテンツフラグメント内�
 
 さらに、
 
-* コンテンツフラグメントを編集するには、 [適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). 問題が発生している場合は、システム管理者に問い合わせてください。
+* コンテンツフラグメントを編集するには、 [適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). 問題が発生している場合は、システム管理者にお問い合わせください。
 
   例えば、 `edit` 権限エディターは読み取り専用になります。
 

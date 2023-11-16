@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 リリースのリリースノート。'
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1437'
+source-wordcount: '1436'
 ht-degree: 95%
 
 ---
@@ -79,7 +79,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 * CIF アドオンでは、新しい GraphQL API とスキーマを備えた最新の Commerce v2.4.3 をサポートしています
 
-* 作成者は、リッチテキストエディター（RTE）を使用して、製品ページやカタログページへのリンクをテキストフィールドに追加できます。RTE ツールバーに追加された CIF アイコンをクリックすると、ピッカーが開いて、コンテキストを離れることなく製品やカテゴリをすばやく検索および選択できるようになりました。
+* 作成者は、リッチテキストエディター（RTE）を使用して、製品ページやカタログページへのリンクをテキストフィールドに追加できます。RTE ツールバーにCIFアイコンが追加され、選択者がすばやく検索して製品やカテゴリを選択できるようになりました。このアイコンは、コンテキスト内に表示されることなく、選択できます。
 
 * 既存のポップアップ買い物かごとチェックアウトは、AEM 専用の買い物かごとチェックアウトページに置き換えられました。これらのページ上のコンポーネントは、Adobe Commerce の拡張可能な Peregrine コンポーネントを使用して構築されています
 
@@ -98,10 +98,10 @@ AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021年
 
 ### 新機能 {#what-is-new-cm-nov}
 
-* ユーザーは、新しいフロントエンドパイプラインを使用して、フロントエンドコードを迅速に排他的にデプロイできるようになりました。 詳しくは、[Cloud Manager フロントエンドパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)を参照してください。
+* ユーザーは、新しいフロントエンドパイプラインを活用して、フロントエンドコードを迅速かつ排他的にデプロイできるようになりました。詳しくは、[Cloud Manager フロントエンドパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)を参照してください。
 
   >[!IMPORTANT]
-  >AEM版である必要があります `2021.10.5933.20211012T154732Z` を使用して、新しいフロントエンドパイプラインを使用します。
+  >新しいフロントエンドパイプラインを活用するには、AEM バージョン `2021.10.5933.20211012T154732Z` を使用している必要があります。
 
 * AEM 画像全体を作成する必要がなく、より効率的にコード分析を実行することで、コード品質パイプラインの期間を大幅に短縮できます。この変更は、リリース後の数週間で徐々に適用される予定です。
 

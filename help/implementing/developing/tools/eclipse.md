@@ -2,10 +2,10 @@
 title: AEM Developer Tools for Eclipse
 description: Apache Sling 用の Eclipse プラグインに基づく Eclipse プラグインであるAEM Developer Tools for Eclipse の使用方法について説明します。
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 98%
+source-wordcount: '1192'
+ht-degree: 91%
 
 ---
 
@@ -34,7 +34,7 @@ AEM Developer Tools を使用する前に、次の作業が必要です。
 
 >[!NOTE]
 >
->macOS では、**Eclipse.app** を右クリックし、「**パッケージの内容を表示**」を選択して、`eclipse.ini`**を探します。**
+>macOSでは、右クリックする必要があります **Eclipse.app**&#x200B;を選択し、 **パッケージコンテンツを表示** を見つける `eclipse.ini`**.**
 
 ## Eclipse 用 AEM 開発者ツールのインストール方法 {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -132,16 +132,16 @@ _Experience Manager Developer Tools for Eclipse_ には、Eclipse でのプロ�
 1. `PROJECT.ui.apps` プロジェクトの内容をパッケージの `apps` フォルダーと `etc` フォルダーに置き換えます。
 
    1. Project Explorer パネルで、`PROJECT.ui.apps`／`src`／`main`／`content`／`jcr_root`／`apps` を展開します。
-   1. `apps` フォルダーを右クリックし、**Show In**／**System Explorer** を選択します。
+   1. を右クリックします。 `apps` フォルダーと選択 **表示場所** > **システムエクスプローラ**.
    1. 表示される `apps` フォルダーと `etc` フォルダーを削除し、その場所にコンテンツパッケージの `apps` フォルダーと `etc` フォルダーを配置します。
-   1. Eclipse で `PROJECT.ui.apps` プロジェクトを右クリックし、「**Refresh**」を選択します。
+   1. Eclipse で、 `PROJECT.ui.apps` プロジェクトと選択 **更新**.
 
 1. 続いて、`PROJECT.ui.content` に対して同じことを行い、そのコンテンツフォルダーを自分のパッケージの 1 つに置き換えます。
 
    1. Project Explorer パネルで、`PROJECT.ui.content`／`src`／`main`／`content`／`jcr_root`／`content` を展開します。
-   1. 深い階層のコンテンツフォルダーを右クリックし、**Show In**／**System Explorer** を選択します。
+   1. より深いコンテンツフォルダーを右クリックし、「 」を選択します。 **表示場所** -> **システムエクスプローラ**.
    1. 表示されるコンテンツフォルダーを削除し、その場所にコンテンツパッケージのコンテンツフォルダーを配置します。
-   1. Eclipse で `PROJECT.ui.content` プロジェクトを右クリックし、「**Refresh**」を選択します。
+   1. Eclipse で、 `PROJECT.ui.content` プロジェクトと選択 **更新**.
 
 1. 次に、コンテンツパッケージの内容に対応するように、これら 2 つのプロジェクトの `filter.xml` ファイルを更新する必要があります。それには、コンテンツパッケージの `META-INF/vault/filter.xml` ファイルを別のテキスト／コードエディターで開きます。
 
@@ -190,11 +190,11 @@ _Experience Manager Developer Tools for Eclipse_ には、Eclipse でのプロ�
 1. すべての変更を保存してください。これで、新しいコンテンツが AEM インスタンスに同期するようになりました。
 
 1. Servers パネルで、接続が開始されていることを確認します。開始していない場合は開始します。
-1. 「**Clean and Publish**」アイコンをクリックします。
+1. 次をクリック： **クリーンと公開** アイコン。
 
 完了したら、インスタンスでパッケージが動作しており、保存時には、変更が自動的にインスタンスに同期します。
 
-プロジェクトからパッケージを再ビルドする場合は、`PROJECT.ui.apps` または `PROJECT.ui.content` を右クリックし、**Run As**／**Maven install** を選択します。
+プロジェクトからパッケージを再ビルドする場合は、 `PROJECT.ui.apps` または `PROJECT.ui.content` を選択します。 **実行ユーザー** -> **Maven インストール**.
 
 これで、パッケージ（例えば、`PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`）を含んだターゲットフォルダーが作成されました。
 

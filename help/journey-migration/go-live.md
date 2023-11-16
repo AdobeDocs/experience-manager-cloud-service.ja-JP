@@ -2,10 +2,10 @@
 title: 運用開始
 description: コードとコンテンツがクラウドに対応した後に移行を実行する方法について
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 100%
+source-wordcount: '1704'
+ht-degree: 96%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 >title="運用開始準備"
 >abstract="AEM as a Cloud Service 上でうまくスムーズに運用を開始できるようにするには、コードおよびコンテンツ凍結期間、反復テスト、コンテンツ追加、パフォーマンステスト、セキュリティテストなどの計画を立案してください。"
 
-ジャーニーのこのステップでは、コードとコンテンツの両方を AEM as a Cloud Service に移行する準備ができた後で移行を計画して実行する方法を説明します。さらに、移行を実行する際のベストプラクティスと既知の制限事項についても説明します。
+このジャーニーのこの部分では、コードとコンテンツの両方をAEM as a Cloud Serviceに移行する準備が整ったら、移行を計画および実行する方法を学びます。 さらに、移行を実行する際のベストプラクティスと既知の制限事項についても説明します。
 
 ## これまでの説明内容 {#story-so-far}
 
@@ -138,7 +138,7 @@ ht-degree: 100%
 * CDN、SSL および DNS を設定します。
    * 独自の CDN を使用している場合は、適切なルーティングを設定するためのサポートチケットを入力します。
       * 詳しくは、CDN ドキュメントの[顧客 CDN で AEM 管理 CDN を参照する](/help/implementing/dispatcher/cdn.md#point-to-point-cdn)の節を参照してください。
-      * CDN ベンダーのドキュメントに従って、SSL と DNS を設定する必要があります。
+      * CDN ベンダーのドキュメントに従って、SSL および DNS を設定します。
    * 追加の CDN を使用しない場合は、次のドキュメントに従って、SSL と DNS を管理します。
       * SSL 証明書の管理
          * [SSL 証明書の管理の概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)

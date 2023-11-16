@@ -4,17 +4,17 @@ description: このページでは、チームメンバーを Cloud Manager 製�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '1532'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1528'
+ht-degree: 94%
 
 ---
 
 
 # Cloud Manager 製品プロファイルへのチームメンバーの割り当て {#assign-team-members}
 
-[オンボーディングジャーニー](overview.md)のこのパートでは、チームメンバーを Cloud Manager 製品プロファイルに割り当てる方法を説明します。
+この部分では、 [オンボーディングジャーニー](overview.md) チームメンバーを Cloud Manager 製品プロファイルに割り当てる方法を学びます。
 
 ## 目的 {#objective}
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 
 ## 前提条件 {#prerequisites}
 
-チームメンバーを製品プロファイルに割り当てるには、AEM as a Cloud Service にアクセスする必要があるチームメンバーについて、次のような詳細が必要です。
+チームメンバーを製品プロファイルに割り当てるには、チームメンバーに関する詳細が必要です。チームメンバーは、次の情報を含め、AEMas a Cloud Serviceにアクセスする必要があります。
 
 * 氏名
 * メールアドレス
@@ -73,7 +73,7 @@ Cloud Manager は、AEM as a Cloud Service の不可欠な部分であり、コ�
 
    ![Cloud Manager](/help/journey-onboarding/assets/assign-team2.png)
 
-1. 事前設定済みの Cloud Manager 製品プロファイルのリストが表示されます。
+1. 事前設定済みの Cloud Manager 製品プロファイルのリストを表示できます。
 
    ![製品プロファイル](/help/journey-onboarding/assets/assign-team3.png)
 
@@ -112,7 +112,7 @@ Cloud Manager は、AEM as a Cloud Service の不可欠な部分であり、コ�
 
    ![ユーザーの割り当て](/help/journey-onboarding/assets/assign-team6.png)
 
-1. 「**保存**」をクリックすると、追加したユーザー宛に「ようこそ」のメールが送信されます。招待されたユーザーは、「ようこそ」のメールに記載されているリンクをクリックし、Adobe ID を使用してログインすることで、Cloud Manager にアクセスできます。
+1. 「**保存**」をクリックすると、追加したユーザー宛にウェルカムメールが送信されます。招待されたユーザーは、ウェルカムメールに記載されているリンクをクリックし、Adobe ID を使用してログインすることで、Cloud Manager にアクセスできます。
 
 1. チームに属するユーザーに対して、上記の手順を繰り返します。
 
@@ -177,7 +177,7 @@ Cloud Manager は、AEM as a Cloud Service の不可欠な部分であり、コ�
 * **ビジネスオーナー**、**デプロイメントマネージャー**、**開発者**&#x200B;という 3 種類の重要な Cloud Manager 製品プロファイルを理解する。
 * Cloud Manager 製品プロファイルにチームメンバーを割り当てることができる。
 
-次に [Cloud Manager へのアクセス](cloud-manager.md)のドキュメントを確認して、オンボーディングジャーニーを続ける準備が整いました。このドキュメントでは、Cloud Manager にアクセスしてプロジェクトリソースを作成する方法を説明します。
+これで、次にドキュメントを確認して、オンボーディングジャーニーを続行する準備が整いました [Cloud Manager にアクセスする](cloud-manager.md) ここでは、 Cloud Manager にアクセスしてプロジェクトリソースを作成する方法について説明します。
 
 ## その他のリソース {#additional-resources}
 

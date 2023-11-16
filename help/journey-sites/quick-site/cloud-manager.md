@@ -2,10 +2,10 @@
 title: Cloud Manager とクイックサイト作成ワークフローについて
 description: Cloud Manager と、新しいクイックサイト作成プロセスとの結び付けを説明します。
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1128'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1127'
+ht-degree: 96%
 
 ---
 
@@ -117,7 +117,7 @@ Cloud Manager は、AEM as a Cloud Service の必須コンポーネントであ�
 * AEM Sites と Cloud Manager が連携してフロントエンド開発を容易にする仕組みを理解する。
 * フロントエンドのカスタマイズ手順が AEM から完全に切り離されており、AEM に関する知識を必要としない仕組みを確認する。
 
-この知識に基づいて、次は [テンプレートからのサイトの作成](create-site.md) のドキュメントを確認して、AEM クイックサイト作成ジャーニーを続行してください。そこでは、テンプレートを使用して新規 AEM サイトを迅速に作成する方法を習得します。
+この知識に基づいてドキュメントを次に確認し、AEMクイックサイト作成のジャーニーを続行します。 [テンプレートからサイトを作成し、](create-site.md) ここでは、テンプレートを使用して新しいAEMサイトをすばやく作成する方法を学びます。
 
 ## その他のリソース {#additional-resources}
 

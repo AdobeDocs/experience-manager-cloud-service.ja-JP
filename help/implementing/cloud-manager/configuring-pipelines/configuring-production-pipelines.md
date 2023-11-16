@@ -3,10 +3,10 @@ title: 実稼動パイプラインの設定
 description: 実稼動パイプラインを設定し、コードをビルドして実稼働環境にデプロイする方法について説明します。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 80%
+source-wordcount: '1416'
+ht-degree: 79%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 80%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動し、「**追加**」をクリックして「**実稼動パイプラインを追加**」を選択します。
+1. 次に移動： **パイプライン** カード **プログラムの概要** ページを開き、をクリックします。 **追加** 選択 **実稼動パイプラインを追加**.
 
    ![プログラムの概要ページのパイプラインカード](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
@@ -111,7 +111,7 @@ ht-degree: 80%
    * 最大 25 個のパスを追加できます。
    * パスを定義しない場合は、デフォルトでサイトのホームページがエクスペリエンス監査に含められます。
 
-1. 「**保存**」をクリックして、パイプラインを保存します。
+1. 「**保存**」をクリックしてパイプラインを保存します。
 
 エクスペリエンス監査の対象として設定されたパスはサービスに送信され、パイプラインの実行時にパフォーマンス、アクセシビリティ、SEO（検索エンジン最適化）、ベストプラクティスおよび PWA（プログレッシブ ｗeb アプリ）の各テストに従って評価されます。詳しくは、[エクスペリエンス監査結果について](/help/implementing/cloud-manager/experience-audit-testing.md)を参照してください。
 

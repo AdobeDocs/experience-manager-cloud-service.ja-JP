@@ -2,10 +2,10 @@
 title: ページの公開
 description: AEMの様々なメカニズムを使用して、ページを公開および非公開にする方法を説明します。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 97%
+source-wordcount: '1801'
+ht-degree: 95%
 
 ---
 
@@ -100,7 +100,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 クイック公開でページを公開するには、次の手順に従います。
 
-1. サイトコンソールで 1 つ以上のページを選択し、「**クイック公開**」ボタンをクリックします。
+1. サイトコンソールで 1 つ以上のページを選択し、 **クイック公開** 」ボタンをクリックします。
 
    ![公開するページの選択](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -120,7 +120,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 公開を管理を使用してページを公開または非公開にするには、次の手順を実行します。
 
-1. サイトコンソールで 1 つまたは複数のページを選択し、「**公開を管理**」ボタンをクリックします。
+1. サイトコンソールで 1 つ以上のページを選択し、 **公開を管理** 」ボタンをクリックします。
 
    ![公開するページの選択](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -234,7 +234,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 [「公開を管理」オプションを使用して公開する](#manage-publication)場合と同様に、「公開を管理」オプションを使用して非公開にできます。
 
-1. サイトコンソールで 1 つまたは複数のページを選択し、「**公開を管理**」ボタンをクリックします。
+1. サイトコンソールで 1 つ以上のページを選択し、 **公開を管理** 」ボタンをクリックします。
 1. **公開を管理**&#x200B;ウィザードが起動します。最初の手順の&#x200B;**オプション**&#x200B;で、デフォルトオプションの&#x200B;**公開**&#x200B;の代わりに&#x200B;**非公開**&#x200B;を選択します。
 
    ![非公開 - オプション](/help/sites-cloud/authoring/assets/publishing-unpublish.png)

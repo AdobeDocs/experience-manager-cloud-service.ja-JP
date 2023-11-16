@@ -2,10 +2,10 @@
 title: コンテンツ転送の検証
 description: コンテンツ転送ツールを使用してコンテンツ転送を検証します
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 96%
+source-wordcount: '1077'
+ht-degree: 92%
 
 ---
 
@@ -127,7 +127,7 @@ Migration validation took 0 minutes
 
 上記の失敗例は、取り込みを実行したあと、取り込み時にノードが関係しないように、ワイプを無効にして同じ取り込みを再度実行することで得られたものです。すべてのノードが既にターゲット上に存在していたケースです。
 
-検証レポートは、取り込みログに含まれるだけでなく、Cloud Acceleration Manager の&#x200B;**取り込みジョブ**&#x200B;ユーザーインターフェイスからアクセスすることも可能です。これを行うには、3 つのドット（**...**）をクリックし、ドロップダウンで「**検証レポート**」をクリックして検証レポートを表示します。
+検証レポートは、取り込みログに含まれるだけでなく、Cloud Acceleration Manager の&#x200B;**取り込みジョブ**&#x200B;ユーザーインターフェイスからアクセスすることも可能です。それには、「**...**) をクリックし、 **検証レポート** をクリックして、検証レポートを表示します。
 
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
@@ -138,11 +138,11 @@ Migration validation took 0 minutes
 
 抽出と取り込みが正常に完了すると、プリンシパルの移行の概要とレポートが使用可能になります。この情報を使用して、どのユーザーとグループが正常に移行されたかを検証し、一部のユーザーとグループが正常に移行されなかった理由を判断することもできます。
 
-この情報を表示するには、Cloud Acceleration Manager に移動します。プロジェクトカードをクリックし、コンテンツ転送カードをクリックします。**取り込みジョブ**&#x200B;に移動し、検証する取り込みを見つけます。その取り込みの 3 つのドット （**...**）をクリックし、ドロップダウンで「**プリンシパルの概要を表示**」をクリックします。
+この情報を表示するには、Cloud Acceleration Manager に移動します。プロジェクトカードをクリックし、コンテンツ転送カードをクリックします。**取り込みジョブ**&#x200B;に移動し、検証する取り込みを見つけます。3 つのドット (**...**) をクリックし、 **プリンシパルの概要を表示** 」と入力します。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-概要情報を含むダイアログが表示されます。ヘルプアイコンを使用して、詳細な説明を参照します。「**レポートをダウンロード**」ボタンをクリックして、完全なコンマ区切り（CSV）レポートをダウンロードします。
+概要情報を含むダイアログが表示されます。 ヘルプアイコンを使用して、詳細な説明を参照します。「**レポートをダウンロード**」ボタンをクリックして、完全なコンマ区切り（CSV）レポートをダウンロードします。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 

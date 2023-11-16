@@ -2,9 +2,9 @@
 title: ヘッドレスコンテンツの翻訳ルールの設定
 description: 翻訳するコンテンツを特定するための翻訳ルールを定義する方法を説明します。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '940'
 ht-degree: 90%
 
 ---
@@ -100,7 +100,7 @@ ht-degree: 90%
 * 翻訳ルールの機能を理解する
 * 独自の翻訳ルールを定義できる
 
-この知識に基づいてドキュメントを次に確認し、AEMヘッドレス翻訳ジャーニーを継続します。 [コンテンツを翻訳](translate-content.md) ここでは、統合とルールが連携してヘッドレスコンテンツを翻訳する方法について説明します。
+この知識に基づいてドキュメントを次に確認し、AEMヘッドレス翻訳ジャーニーを継続します。 [コンテンツを翻訳](translate-content.md) ここでは、統合とルールが連携してヘッドレスコンテンツを翻訳する方法を学びます。
 
 ## その他のリソース {#additional-resources}
 

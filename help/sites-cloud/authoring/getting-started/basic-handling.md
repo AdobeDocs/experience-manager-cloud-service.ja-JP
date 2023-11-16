@@ -2,10 +2,10 @@
 title: 基本操作
 description: AEM の操作とその基本的な使用方法の習得
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2975'
-ht-degree: 98%
+source-wordcount: '2970'
+ht-degree: 95%
 
 ---
 
@@ -133,7 +133,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
   パネルの中央に位置し、常に現在選択している項目の説明を表示するパンくずリストを使用すると、特定のコンソール内を移動できます。**Sites** コンソールでは、Web サイトのレベル間を移動できます。
 
-  パンくずリストのテキストをクリックすると、現在選択している項目の階層レベルをリストするドロップダウンが表示されます。エントリをクリックすると、その場所にジャンプします。
+  パンくずテキストをクリックするだけで、現在選択されている項目の階層レベルをリストするドロップダウンが表示されます。 エントリをクリックすると、その場所にジャンプします。
 
   ![展開したパンくずリストの例](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
@@ -171,7 +171,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
 * **コンソールツールバー**
 
-  「**ヘルプ**」アイコンをクリックすると、現在の場所に応じた適切なリソースが開きます。
+  場所に応じて、 **ヘルプ** アイコンは、次の適切なリソースを開きます。
 
   ![ヘルプアイコン](/help/sites-cloud/authoring/assets/help-console.png)
 
@@ -475,6 +475,6 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
 ### フィルター {#filter}
 
-これを使用すると、適切な場所フィルターが既に設定された状態で[検索](/help/sites-cloud/authoring/getting-started/search.md)と同じようなパネルが開き、表示するコンテンツをさらにフィルタリングできます。
+これにより、 [検索](/help/sites-cloud/authoring/getting-started/search.md) 適切な場所のフィルターが既に設定されているので、表示するコンテンツをさらにフィルターできます。
 
 ![フィルターの例](/help/sites-cloud/authoring/assets/filter.png)

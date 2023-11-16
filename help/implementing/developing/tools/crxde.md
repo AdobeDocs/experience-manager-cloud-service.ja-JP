@@ -2,10 +2,10 @@
 title: CRXDE Lite の使用
 description: CRXDE Lite は AEM クイックスタートの一部で、ブラウザー内のローカル開発環境でリポジトリーにアクセスして変更できます。
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1685'
-ht-degree: 96%
+source-wordcount: '1684'
+ht-degree: 95%
 
 ---
 
@@ -71,7 +71,7 @@ CRXDE Lite のユーザーインターフェイスには多くのパーツと機
 * **ツリーで表示** - リポジトリーツリーにファイルを表示します。
 * **検索／置換** - 検索または置換を実行します。
 
-**編集ウィンドウ**&#x200B;のステータス行をダブルクリックすると、**移動**&#x200B;ダイアログが開くので、移動先の特定の行番号を入力できます。
+ステータス行をダブルクリックします。 **編集ウィンドウ** が開きます。 **行に移動** ダイアログで、特定の行番号を入力できます。
 
 ### 「プロパティ」タブ {#properties-tab}
 

@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1399'
-ht-degree: 98%
+source-wordcount: '1398'
+ht-degree: 95%
 
 ---
 
@@ -107,7 +107,7 @@ Sites コンソールにアクセスするには：
 
    ![ページの編集](assets/sites-editor-title.png)
 
-ブラウザーで Sites コンソールのタブに切り替えれば、いつでもコンソールに戻ることができます。サイトエディターを使用すると、コンテンツ作成者やオーディエンスに表示されるページのコンテンツをすばやく表示できます。
+ブラウザーで Sites コンソールのタブに切り替えれば、いつでもコンソールに戻ることができます。サイトエディターを使用すると、コンテンツ作成者や閲覧者がページのコンテンツを見るのに合わせて、ページのコンテンツをすばやく表示できます。
 
 >[!NOTE]
 >
@@ -201,7 +201,7 @@ AEM のコンテンツは、その構造によって決まります。AEM では
 * AEM でのコンテンツの保存方法を理解する
 * AEM の翻訳ツールに詳しくなる
 
-この知識を基に、AEM Sites 翻訳ジャーニーを続けてください。次に、[翻訳コネクタの設定](configure-connector.md)のドキュメントを参照しながら、AEM を翻訳サービスに接続する方法について説明します。
+この知識に基づいてドキュメントを次に確認し、AEM Sitesの翻訳ジャーニーを続行します [翻訳コネクタの設定](configure-connector.md) AEMを翻訳サービスに接続する方法を学ぶ場所です。|
 
 ## その他のリソース {#additional-resources}
 

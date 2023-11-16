@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1164'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1163'
+ht-degree: 97%
 
 ---
 
@@ -133,7 +133,7 @@ AEM は柔軟かつ強力なツールで、複数のコネクタと複数の設�
 * AEM の翻訳統合フレームワークの重要なパラメーターを理解する
 * 翻訳サービスへの独自の接続をセットアップできる
 
-この知識を踏まえて、[翻訳ルールの設定](translation-rules.md)のドキュメントを次に参照しながら、AEM Sites 翻訳ジャーニーを続けてください。このドキュメントでは、翻訳するコンテンツを定義する方法について説明します。
+この知識に基づいてドキュメントを次に確認し、AEM Sitesの翻訳ジャーニーを続行します [翻訳ルールを設定する](translation-rules.md) 翻訳するコンテンツを定義する方法を学ぶ場所。
 
 ## その他のリソース {#additional-resources}
 

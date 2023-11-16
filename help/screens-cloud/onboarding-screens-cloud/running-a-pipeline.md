@@ -2,10 +2,10 @@
 title: パイプラインの実行
 description: ここでは、Cloud Manager で Screens as Cloud Service プロジェクトのパイプラインを実行する方法について説明します。
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 100%
 
    ![画像](/help/screens-cloud/assets/onboarding/run-pipeline4.png)
 
-1. ビルドプロセスが完了すると、Cloud Manager の&#x200B;**概要**&#x200B;ページの&#x200B;**環境**&#x200B;カードにオーサーリンクが表示されます。
+1. ビルドプロセスが完了すると、 **環境** Cloud Manager の **概要** ページに貼り付けます。
 
    ![画像](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 

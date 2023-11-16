@@ -2,10 +2,10 @@
 title: ヘッドレスコンテンツ用の翻訳統合の設定
 description: AEM を翻訳サービスに接続する方法を説明します。
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1231'
-ht-degree: 97%
+source-wordcount: '1230'
+ht-degree: 95%
 
 ---
 
@@ -132,7 +132,7 @@ AEM は柔軟かつ強力なツールで、複数のコネクタと複数の設�
 * AEM の翻訳統合フレームワークの重要なパラメーターを理解する
 * 翻訳サービスへの独自の接続をセットアップできる
 
-この知識を基に、AEM ヘッドレス翻訳ジャーニーを続けてください。次は、[コンテンツの翻訳](translation-rules.md)のドキュメントを参照して、これまでの設定を使って、実際にコンテンツを翻訳する方法を確認してください。
+この知識に基づいてドキュメントを次に確認し、AEMヘッドレス翻訳ジャーニーを継続します。 [コンテンツを翻訳](translation-rules.md) ここまで設定を使用して、コンテンツを実際に翻訳する方法を学びます。
 
 ## その他のリソース {#additional-resources}
 

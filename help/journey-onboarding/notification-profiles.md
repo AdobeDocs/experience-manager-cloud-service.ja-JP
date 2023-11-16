@@ -4,10 +4,10 @@ description: Admin Console でユーザープロファイルを作成して重�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 96%
+source-wordcount: '985'
+ht-degree: 93%
 
 ---
 
@@ -38,7 +38,7 @@ Admin Console でユーザープロファイルを作成して重要なメール
 
 ## 新しい Cloud Manager 製品プロファイルの作成 {#create-profiles}
 
-通知の受信を適切に設定するには、2 つのユーザープロファイルを作成する必要があります。これらの手順は、1 回のみ実行する必要があります。
+通知の受信を適切に設定するには、2 つのユーザープロファイルを作成します。 これらの手順は 1 回だけ実行されます。
 
 1. [`https://adminconsole.adobe.com` ](https://adminconsole.adobe.com) で Admin Console にログインします。
 
@@ -52,7 +52,7 @@ Admin Console でユーザープロファイルを作成して重要なメール
 
    ![Admin Console のインスタンスのリスト](assets/cloud_manager_instance.png)
 
-1. 設定済みのすべての Cloud Manager 製品プロファイルのリストが表示されます。
+1. 設定済みのすべての Cloud Manager 製品プロファイルのリストを表示できます。
 
    ![Admin Console の製品プロファイル](assets/cloud_manager_profiles.png)
 

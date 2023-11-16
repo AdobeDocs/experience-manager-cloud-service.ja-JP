@@ -4,10 +4,10 @@ description: AEM でサイトテンプレートを使用してサイトを作成
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '775'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '774'
+ht-degree: 96%
 
 ---
 
@@ -59,7 +59,7 @@ AEM クイックサイト作成ツールを使用すると、開発者以外の�
 
    ![テンプレートからのサイトの作成](../assets/create-site-from-template.png)
 
-1. サイトの作成ウィザードで、左側パネルの既存のテンプレート、または左列上部の「**読み込み**」をクリックして、新しいテンプレートを読み込みます。
+1. サイトを作成ウィザードで、左側のパネルまたは **インポート** をクリックして、新しいテンプレートをインポートします。
 
    ![サイト作成ウィザード](../assets/site-creation-wizard.png)
 

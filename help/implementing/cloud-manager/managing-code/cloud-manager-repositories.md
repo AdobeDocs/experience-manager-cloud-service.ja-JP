@@ -2,10 +2,10 @@
 title: Cloud Manager リポジトリ
 description: Cloud Manager で Git リポジトリを作成、表示および削除する方法について説明します。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: af8ab1f741c658dcb47bdf0d37e403fcb180631a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 96%
+source-wordcount: '585'
+ht-degree: 87%
 
 ---
 
@@ -24,9 +24,9 @@ Cloud Manager でリポジトリを表示および管理するには、次の手
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. 次から： **プログラムの概要** ページ、タップまたはクリック **リポジトリ** タブをクリックして、 **リポジトリ** ページに貼り付けます。
+1. 次から： **プログラムの概要** ページで、「 」をタップまたはクリックします。 **リポジトリ** タブをクリックして、 **リポジトリ** ページに貼り付けます。
 
-1. クリック： **リポジトリを追加**.
+1. クリック **リポジトリを追加**.
 
    ![「リポジトリーを追加」ボタン](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
 
@@ -36,7 +36,7 @@ Cloud Manager でリポジトリを表示および管理するには、次の手
 
 ウィザードが閉じると、新しいリポジトリがテーブルに表示されます。
 
-テーブルでリポジトリを選択し、省略記号ボタンをクリックして、「**リポジトリー URL をコピー**」、「**表示と更新**」または「**削除**」を選択できます。
+テーブル内のリポジトリーを選択し、省略記号ボタンをクリックして、「 」を選択します。 **リポジトリ URL をコピー**, **表示と更新**&#x200B;または **削除**.
 
 ![リポジトリ関連オプション](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
@@ -58,9 +58,9 @@ Cloud Manager で作成されたリポジトリは、パイプラインの追加
 
 Cloud Manager でリポジトリを削除するには、次の手順に従います。
 
-1. **プログラムの概要**&#x200B;ページで、「**リポジトリー**」タブをクリックし、**リポジトリー**&#x200B;ページに移動します。
+1. 次から： **プログラムの概要** ページで、 **リポジトリ** 」タブに移動し、 **リポジトリ** ページに貼り付けます。
 
-1. リポジトリを選択し、省略記号ボタンをクリックして「**削除**」を選択すると、リポジトリが削除されます。
+1. リポジトリを選択し、省略記号ボタンをクリックして、「 」を選択します。 **削除** をクリックして、リポジトリを削除します。
 
    ![リポジトリの削除](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 

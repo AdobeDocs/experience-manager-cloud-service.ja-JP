@@ -2,10 +2,10 @@
 title: データ保護およびデータプライバシーに関する規制 - Adobe Experience Manager as a Cloud Service Sites の対応
 description: EU 一般データ保護規則（GDPR）やカリフォルニア州消費者プライバシー法など、データ保護およびデータプライバシーに関する様々な規制に対する Adobe Experience Manager as a Cloud Service Sites のサポートと、新しい AEM as a Cloud Service プロジェクトを実装する際にこれらの規制に準拠する方法について説明します。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 100%
+source-wordcount: '1024'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ Adobe Experience Manager には、ユーザーのオプトイン／オプトア�
 
    * このサイトへのユーザーの訪問に関するデータ集計および解析をオプトアウトするには、ブラウザーに cookie をインストールする必要があります。この cookie はユーザーがオプトアウトしたことを識別します。
 
-     オプトアウト cookie を削除する、またはコンピューターまたは Web ブラウザーを変更する場合は、再度オプトアウトする必要があります。
+     オプトアウト Cookie を削除した場合、またはコンピューターや Web ブラウザーを変更した場合は、再度オプトアウトする必要があります。
 
      オプトアプト - ユーザーを訪問者セッション集計や解析から除外 (`amcglobal.sc.omtrdc.net` オプトアウト cookie をインストール) - ここをクリック
 
@@ -104,7 +104,7 @@ AEM には、ContextHub を使用するオプションのデータレイヤー�
 * Web サイトのデータ保護およびプライバシーに関連する利用条件を Web サイトの訪問者に表示して、訪問者が以下を行えるようにする必要があります。
 
    * 同意
-   * reject
+   * 拒否
    * 以前の選択の変更
 
 * サイト訪問者がサイトの利用条件に同意した場合は、ContextHub のオプトアウト cookie を削除する必要があります。

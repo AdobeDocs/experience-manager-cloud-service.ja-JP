@@ -2,10 +2,10 @@
 title: カスタムエラーページ
 description: AEM には、HTTP エラーを処理するための標準的なエラーハンドラーが付属しており、これはカスタマイズできます。
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 100%
+source-wordcount: '572'
+ht-degree: 96%
 
 ---
 
@@ -36,7 +36,7 @@ AEM には、HTTP エラーを処理するための標準的なエラーハン�
    * コピー元：`/libs/sling/servlet/errorhandler/`
    * コピー先：`/apps/sling/servlet/errorhandler/`
 
-   コピー先のパスはデフォルトでは存在しないので、この操作を初めて行う際は作成する必要があります。
+   デフォルトでは宛先パスは存在しないので、初めてこの処理を行う際に作成する必要があります。
 
 1. `/apps/sling/servlet/errorhandler` に移動します。次のどちらかを実行します。
 

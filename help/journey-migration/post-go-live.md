@@ -2,9 +2,9 @@
 title: 運用開始後
 description: 問題を監視し、パフォーマンスを向上させる方法を説明します
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 1b9d49ce1ef8ad4b0a11400b41d8c9b880cbf884
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '482'
 ht-degree: 76%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 76%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=ja" text="ログへのアクセスと管理"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=ja#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service の開発ツール"
 
-このジャーニーは最後の部分なので、移行が完了した後に、問題を監視し、パフォーマンスを向上させる方法を学びます。 一時ファイルを確実にクリーンアップし、継続的な開発のベストプラクティスを確認し、ログを管理する必要があります。
+このジャーニーは最後の部分なので、問題を監視し、移行完了後にパフォーマンスを向上させる方法を学びます。 一時ファイルを確実にクリーンアップし、継続的な開発のベストプラクティスを確認し、ログを管理する必要があります。
 
 ## これまでの説明内容 {#story-so-far}
 

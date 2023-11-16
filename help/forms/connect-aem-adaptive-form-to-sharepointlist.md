@@ -1,13 +1,13 @@
 ---
-title: AEMアダプティブフォームをMicrosoft® SharePointリストに接続する方法
-description: アダプティブフォームをMicrosoft® SharePointリストに接続します。 Microsoft® SharePointリストを設定し、設定を使用してフォームデータモデルを作成する方法について説明します。 さらに、FDM をアダプティブフォームに統合する方法についても学習します。
+title: AEMアダプティブフォームをMicrosoft&reg; SharePointリストに接続する方法
+description: アダプティブフォームをMicrosoft&reg; SharePointリストに接続します。 Microsoft&reg; SharePointリストを設定し、設定を使用してフォームデータモデルを作成する方法を説明します。 さらに、FDM をアダプティブフォームに統合する方法も説明します。
 role: User, Developer
 keywords: AEMアダプティブフォームをMicrosoft SharePointリストに接続し、アダプティブフォームをMicrosoft SharePointリストに接続し、AEMアダプティブフォームをMicrosoft SharePointリストに統合し、アダプティブフォームをMicrosoftリストに統合し、アダプティブフォームからSharePointリストにデータを送信しAEMます。
 hide: true
 hidefromToC: true
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '539'
 ht-degree: 5%
 
 ---
@@ -30,15 +30,15 @@ ht-degree: 5%
 
 アダプティブフォームをMicrosoft® SharePointリストに接続する前に、次の手順を実行します。
 
-1. [Microsoft® SharePointリストを設定](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
-1. [Microsoft® SharePointリスト設定を使用したフォームデータモデルの作成](/help/forms/create-form-data-models.md)
+1. [Microsoftの設定](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
+1. [Microsoftを使用してフォームデータモデルを作成する](/help/forms/create-form-data-models.md)
 1. [データを取得して送信するためのフォームデータモデルの設定](/help/forms/work-with-form-data-model.md#configure-services)
 1. [アダプティブフォームを作成](/help/forms/creating-adaptive-form-core-components.md)
 
 次の操作が可能になりました。
 
-* [Microsoft® SharePointリストをアダプティブフォームに接続する](#connect-an-adaptive-form-to-microsoft-sharepoint-list-connect-af-sharepoint-list)
-* [Microsoft® SharePointリストをAEMワークフローに接続](#connect-sharepoint-list-workflow)
+* [Connect Microsoft](#connect-an-adaptive-form-to-microsoft-sharepoint-list-connect-af-sharepoint-list)
+* [Connect Microsoft](#connect-sharepoint-list-workflow)
 
 ## アダプティブフォームのMicrosoft® SharePointリストへの接続 {#connect-af-sharepoint-list}
 
@@ -73,7 +73,7 @@ Microsoft® SharePointリストをAEMワークフローに統合するには：
 
 ## ベストプラクティス {#best-practices}
 
-<!-- * For storing data in a tabular format or implementing data permissions, it is advisable to use Microsoft® SharePoint List rather than Microsoft® SharePoint Document Library. -->
+<!-- * For storing data in a tabular format or implementing data permissions, it is advisable to use Microsoft&reg; SharePoint List rather than Microsoft&reg; SharePoint Document Library. -->
 * Microsoft® SharePointリストでは、次の列タイプはサポートされていません。
    * 画像列
    * メタデータ列

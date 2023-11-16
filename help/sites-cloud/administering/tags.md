@@ -1,13 +1,13 @@
 ---
 title: タグの管理
 description: AEMでタグを管理してコンテンツを整理する方法を説明します。
-source-git-commit: af60a2b8f1e2dd7fc55247ecb0251d7b85f63eb3
+exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2272'
+source-wordcount: '2268'
 ht-degree: 5%
 
 ---
-
 
 # タグの管理 {#administering-tags}
 
@@ -153,7 +153,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 ## タグの管理 {#managing-tags}
 
-既存のタグや名前空間を管理および整理するために、既存のタグや名前空間に対して実行できるアクションは多数あります。 タグまたは名前空間を [タグ付けコンソール](#tagging-console) をクリックすると、使用可能なアクションがツールバーに表示されます。
+既存のタグや名前空間を管理および整理するために実行できるアクションは多数あります。 タグまたは名前空間を [タグ付けコンソール](#tagging-console) をクリックすると、使用可能なアクションがツールバーに表示されます。
 
 * [プロパティを表示](#viewing-tag-properties)
 * [編集](#editing-tags)

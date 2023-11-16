@@ -2,10 +2,10 @@
 title: オンボーディングの準備
 description: オンボーディングプロセスの開始に先立って、システム管理者がシステムにログインする前に理解しておく必要がある準備手順がいくつかあります。
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 96%
 
 ---
 
@@ -88,4 +88,4 @@ AEM as a Cloud Service へのオンボーディングは、お客様の組織と
 * 契約がオンボーディングプロセスに与える影響
 * オンボーディング電話会議の準備方法
 
-これらの準備手順を理解できたので、自分自身でシステムにログインする準備がほぼ整いました。 ただし、その前に、AEM as a Cloud Service がどのように構成されているかシステム管理者の視点から概要を確認し 、いくつかの重要な用語を理解しておく必要があります。ジャーニーの次のパートである [AEM as a Cloud Service の用語](terminology.md)に進んでください。
+これらの準備手順を理解できたので、自分自身でシステムにログインする準備がほぼ整いました。 しかし、まず、システム管理者の観点からAEMas a Cloud Serviceの構造を簡単に説明し、重要な用語を知る必要があります。 ジャーニーの次のパートである [AEM as a Cloud Service の用語](terminology.md)に進んでください。

@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: ac393e4b275693fae7413fb79496052d106b219c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2589'
-ht-degree: 97%
+source-wordcount: '2585'
+ht-degree: 94%
 
 ---
 
@@ -48,7 +48,7 @@ Brand Portal のライセンス認証は、Experience Manager Assets as a [!DNL 
 
    Brand Portal には利用可能な環境のうちいずれかの権利が付与され、**[!UICONTROL 環境情報]**&#x200B;に反映されます。
 
-   Brand Portal に関連付けられている環境を見つけたら、「**[!UICONTROL Brand Portal のライセンス認証]**」ボタンをクリックして、アクティベーションワークフローを開始します。
+   Brand Portalに関連付けられている環境が見つかったら、 **[!UICONTROL Brand Portalをアクティベート]** ボタンをクリックして、アクティベーションワークフローを開始します。
 
    ![Brand Portal のライセンス認証](assets/create-environment4.png)
 
@@ -86,7 +86,7 @@ Brand Portal テナントのデフォルト URL は `https://<tenant-id>.brand-p
 
 1. [Admin Console](https://adminconsole.adobe.com/) にログインし、**[!UICONTROL 製品]**&#x200B;に移動します。
 1. 左パネルの「**[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**」を選択します。
-1. 「**[!UICONTROL Brand Portal に移動]**」をクリックして、ブラウザーで直接 Brand Portal を開きます。
+1. クリック **[!UICONTROL Brand Portalに移動]** をクリックして、ブラウザーでBrand Portalを直接開きます。
 
    または、**[!UICONTROL Brand Portal へ移動]**&#x200B;リンクから Brand Portal テナント URL をコピーし、ブラウザーに貼り付けて Brand Portal インターフェイスを開きます。
 
@@ -122,7 +122,7 @@ Experience Manager Assets as a [!DNL Cloud Service] インスタンスと Brand 
 
    ![アセット配布用の処理キュー](assets/test-bpconfig3.png)
 
-1. Experience Manager Assets as a [!DNL Cloud Service] と Brand Portal との接続を確認するには、「**[!UICONTROL 接続をテスト]**」アイコンをクリックします。
+1. Experience Manager Assets as a 間の接続を検証するには、以下を実行します。 [!DNL Cloud Service] Brand Portal、 **[!UICONTROL 接続をテスト]** アイコン。
 
    ![AEM と Brand Portal 間の接続を検証](assets/test-bpconfig4.png)
 
@@ -290,7 +290,7 @@ Adobe 開発者コンソールで、プロジェクトと API を Brand Portal �
 
    ![製品プロファイルを選択](assets/service-account4.png)
 
-1. API が設定されると、API の概要ページにリダイレクトされます。左側のナビゲーションツリーで「**[!UICONTROL 資格情報]**」の下の「**[!UICONTROL サービスアカウント（JWT）]**」オプションをクリックします。
+1. API が設定されると、API の概要ページにリダイレクトされます。左側のナビゲーションから、 **[!UICONTROL 資格情報]**&#x200B;をクリックし、 **[!UICONTROL サービスアカウント (JWT)]** オプション。
 
    >[!NOTE]
    >
@@ -444,7 +444,7 @@ Perform the following steps to validate the configuration:
 
    ![test-bpconfig3](assets/test-bpconfig3.png)
 
-1. To verify the connection between AEM Assets as a [!DNL Cloud Service] and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
+1. To verify the connection between AEM Assets as a [!DNL Cloud Service] and Brand Portal, click the **[!UICONTROL Test Connection]** icon.
 
    ![test-bpconfig4](assets/test-bpconfig4.png)
 

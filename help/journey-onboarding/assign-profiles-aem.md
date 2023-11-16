@@ -1,13 +1,13 @@
 ---
 title: AEM 製品プロファイルの割り当て
-description: クラウドリソースを設定したら、AEM 製品プロファイルを使用して、AEM 自体へのアクセス権をチームに付与する必要があります。
+description: クラウドリソースを設定したら、AEM製品プロファイルを使用して、チームにAEM自体へのアクセス権を付与します。
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 97%
+source-wordcount: '886'
+ht-degree: 79%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 97%
 >title="AEM 製品プロファイルの割り当て"
 >abstract="Experience Manager Assets を使用する資格が付与されていません。システム管理者にお問い合わせください。"
 
-[オンボーディングジャーニー](overview.md)のこのパートでは、AEM 製品プロファイルを使用して、AEM へのアクセス権をチームに付与する方法を説明します。
+この部分では、 [オンボーディングジャーニー](overview.md) AEM製品プロファイルを使用して、チームにAEMへのアクセス権を付与する方法を学びます。
 
 ## 目的 {#objective}
 
-オンボーディングジャーニーの前のドキュメント「[環境の作成](create-environments.md)」を読み、クラウドリソースを設定したら、AEM 製品プロファイルを使用して、AEM 自体へのアクセス権をチームに付与する必要があります。これを行うには、システム管理者が AEM 製品プロファイルを割り当てます。
+このオンボーディングジャーニーの前のドキュメントを読んだ後、 [環境の作成、](create-environments.md) お使いのクラウドリソースを設定し、AEM製品プロファイルを使用して、チームにAEM自体へのアクセス権を付与します。 これを行うには、システム管理者が AEM 製品プロファイルを割り当てます。
 
 このドキュメントを読むと、次の点を理解できるようになります。
 
@@ -74,7 +74,7 @@ AEM を使用するには、チームメンバーが 1 つまたは複数の AEM
 
    ![インスタンスの選択](/help/journey-onboarding/assets/cloud-profiles-1.png)
 
-1. 役割に基づいてユーザーに割り当てる必要がある AEM as a Cloud Service 製品プロファイルのリストが表示されます。
+1. ユーザーの役割に基づいてユーザーに割り当てることができるAEMas a Cloud Service製品プロファイルのリストを表示できます。
 
    ![製品プロファイル](/help/journey-onboarding/assets/cloud-profiles-2.png)
 
@@ -92,7 +92,7 @@ AEM を使用するには、チームメンバーが 1 つまたは複数の AEM
 
    ![アクセス権限の割り当て](/help/journey-onboarding/assets/add-team2.png)
 
-1. 「`AEM Administrator`」または「`AEM User`」を選択し、「**ユーザーを追加**」（下図を参照）をクリックして、チームメンバーの追加に必要な詳細を送信します。
+1. 選択 `AEM Administrator` または `AEM User` をクリックします。 **ユーザーを追加** 以下に示すように、チームメンバーの追加を完了するために必要な詳細を送信します。
 
    ![チームメンバーの追加](/help/journey-onboarding/assets/add-team3.png)
 
@@ -106,8 +106,8 @@ AEM を使用するには、チームメンバーが 1 つまたは複数の AEM
 
 ただし、作成者と開発者がシステムをどのように使用しているかをより深く理解したい場合は、このオンボーディングジャーニーの次の 2 つのオプションのパートに進んでください。
 
-* [開発者およびデプロイメントマネージャーのタスク](developers.md) - 開発者が Git にアクセスしてカスタムコードを保存し、Cloud Manager パイプラインを使用してデプロイする方法を説明します。
-* [AEM ユーザータスク](aem-users.md) - コンテンツの作成を開始できる AEM 環境にアクセスする方法を説明します。
+* [開発者およびデプロイメントマネージャーのタスク](developers.md)  — 開発者が Git にアクセスしてカスタムコードを保存し、Cloud Manager パイプラインを使用してデプロイする方法を学ぶ場所です。
+* [AEM User Tasks](aem-users.md)  — コンテンツの作成を開始できるAEM環境にアクセスする方法を学ぶ場所。
 
 ## その他のリソース {#additional-resources}
 

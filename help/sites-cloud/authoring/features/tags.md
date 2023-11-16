@@ -2,9 +2,9 @@
 title: タグの使用
 description: タグを使用すると、web サイト内のコンテンツを素早く簡単に分類できます。
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: a7774ff75fb6bac55d5e931b13597d90bf8d721b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '560'
 ht-degree: 93%
 
 ---

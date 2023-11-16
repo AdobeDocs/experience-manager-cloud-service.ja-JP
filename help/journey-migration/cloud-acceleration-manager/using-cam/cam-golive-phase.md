@@ -2,10 +2,10 @@
 title: Cloud Acceleration Manager での運用開始フェーズ
 description: このページでは、Cloud Acceleration Manager での運用開始フェーズの概要について説明します。
 exl-id: 2ec31445-899d-40b8-b3eb-073cb07aff12
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '149'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '147'
+ht-degree: 78%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 運用開始カードには、AEM as a Cloud Service でスムーズに運用を開始するための準備、実行すべき特定のアクション、詳細な検討事項などのすべての関連コンテンツを提供します。
 
-プロジェクトカードをクリックしてプロジェクトのランディングページを開き、「**運用開始**」セクションに移動します（下図を参照）。
+プロジェクトカードをクリックしてプロジェクトランディングページを開き、 **ライブにする** を参照してください。
 
 ![画像](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 この節では、「運用開始」アクティビティカードについて説明します。
 
-1. **運用開始**&#x200B;カードの「**表示**」ボタンをクリックします。
+1. 次をクリック： **表示** ボタンを **ライブにする** カード。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 

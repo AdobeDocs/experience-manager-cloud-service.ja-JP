@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3870'
+source-wordcount: '3869'
 ht-degree: 98%
 
 ---
@@ -233,7 +233,7 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
    ![アセットプロパティのリモート参照ページ](assets/connected-assets-remote-reference.png)
 
 1. [!DNL Sites] ページの参照は、各ローカル [!DNL Sites] の参照の合計数を表示します。すべての参照を見つけて、参照の総数を表示するのは時間がかかる場合があります。
-1. 参照のリストはインタラクティブで、DAM ユーザーは参照をクリックして参照ページを開くことができます。何らかの理由でリモート参照を取得できない場合は、失敗の通知が表示されます。
+1. 参照のリストはインタラクティブで、DAM ユーザーは参照をクリックして参照ページを開くことができます。 何らかの理由でリモート参照を取得できない場合は、失敗の通知が表示されます。
 1. ユーザーはアセットを移動または削除できます。アセットを移動または削除すると、選択したすべてのアセット／フォルダーの参照の合計数が警告ダイアログに表示されます。参照がまだ取得されていないアセットを削除すると、警告ダイアログが表示されます。
 
    ![強制削除警告](assets/delete-referenced-asset.png)

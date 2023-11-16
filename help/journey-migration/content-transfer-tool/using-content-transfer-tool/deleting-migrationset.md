@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールでの移行セットの削除
 description: コンテンツ転送ツールで移行セットを削除する方法を説明します。
 exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 95%
+source-wordcount: '232'
+ht-degree: 68%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 95%
 
 移行セットを削除する手順は次のとおりです。
 
-1. Cloud Acceleration Manager で移行セットリスト表示に移動し、削除する移行セットの横の 3 つのドット（**...**）をクリックします。**削除**&#x200B;アクションは、次のように表示されます。
+1. Cloud Acceleration Manager で移行セットリストビューに移動し、3 つのドット (**...**) をクリックします。 **削除**&#x200B;アクションは、次のように表示されます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 
-1. 「**削除**」をクリックすると、削除アクションを確認するダイアログが表示されます。
+1. クリック時 **削除** 削除アクションを確認するダイアログボックスが表示されます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete2.png)
 
@@ -36,6 +36,6 @@ ht-degree: 95%
 >
 >コンテンツ転送ツールと Cloud Acceleration Manager の同期を維持するために、コンテンツ転送ツールから移行セットを削除することもできます。
 
-コンテンツ転送ウィザードで移行セットを削除するには、移行セットを選択し、アクションバーの「**削除**」をクリックします。
+コンテンツ転送ウィザードで移行セットを削除するには、移行セットを選択し、 **削除** 」をクリックします。
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam27.png)

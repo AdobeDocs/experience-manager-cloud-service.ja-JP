@@ -4,10 +4,10 @@ description: アダプティブフォームに表を追加するには、表コ�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2498'
-ht-degree: 95%
+source-wordcount: '2494'
+ht-degree: 92%
 
 ---
 
@@ -77,7 +77,7 @@ AEM Forms では、サイドバーのコンポーネントブラウザーにテ�
 
 #### 列の追加または削除
 
-列を追加または削除するには、ヘッダーセクションのテキストセルをクリックします。ツールバーが開き、列を追加または削除するオプションが表示されます。
+列を追加または削除するには、ヘッダーセクションのテキストセルをクリックすると、列を追加または削除するオプションを含むツールバーが開きます。
 
 ![add-delete-move-row-column](assets/add-delet-column.png)
 
@@ -154,7 +154,7 @@ AEM Forms では、サイドバーのコンポーネントブラウザーにテ�
 1. 「設定を繰り返し」タブで、テーブルの行の数を制限する最大値と最小値を指定します。
 1. 「**完了**」をクリックします。
 
-実行時やプレビュー時に、行を追加/削除するための **+** ボタンと ![削除ボタン](/help/forms/assets/Smock_Delete.svg) ボタンが表示されます。
+実行時またはプレビュー時に、 **+** および ![削除ボタン](/help/forms/assets/Smock_Delete.svg) ボタンを使用して行を追加または削除します。
 
 ![add-delete-rows-dynamically](assets/add-delete-layout.png)
 

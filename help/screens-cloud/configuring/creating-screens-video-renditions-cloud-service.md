@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service でのビデオレンディションの作成
 description: ここでは、Screens as a Cloud Service でビデオレンディションを作成する方法について説明します。
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 93%
+source-wordcount: '366'
+ht-degree: 92%
 
 ---
 
@@ -29,7 +29,7 @@ Screens as a Cloud Service で Screens コンテンツプロバイダーから�
 
 1. 左側のナビゲーションバーの「ツール」セクションをクリックして、「**アセット**」をクリックし、「**処理プロファイル**」をクリックします。
 
-   ![処理プロファイルをクリックする](/help/screens-cloud/assets/configure/screens-cp-3.png)
+   ![処理プロファイルをクリック](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
 1. 「**作成**」をクリックして、処理プロファイルを作成します。
 

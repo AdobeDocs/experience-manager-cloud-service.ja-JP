@@ -2,10 +2,10 @@
 title: デモサイトで AEM Screens を有効にする
 description: デモサイトで AEM Screens as a Cloud Service の完全なエクスペリエンスを有効にする手順を説明します。
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2666'
-ht-degree: 100%
+source-wordcount: '2665'
+ht-degree: 98%
 
 ---
 
@@ -135,9 +135,9 @@ AEM Sites と同様に、AEM Screens もコンテキストに基づいて動的�
 
    ![API とサービス](assets/apis-services.png)
 
-1. API とサービスウィンドウの左側のパネルで、ウィンドウ上部の「**認証情報**」をクリックし、「**認証情報を作成**」で「**API キー**」をクリックします。
+1. API とサービスウィンドウの左側のパネルで、ウィンドウ上部の「**資格情報**」をクリックし、「**資格情報を作成**」で「**API キー**」をクリックします。
 
-   ![認証情報](assets/credentials.png)
+   ![資格情報](assets/credentials.png)
 
 1. ダイアログボックスの新しい API キーをコピーし、後で使用するために保存します。「**閉じる**」をクリックすると、ダイアログボックスを終了できます。
 
@@ -388,7 +388,7 @@ Player にディスプレイを割り当てると、AEM Screens as a Cloud Servi
 * We.Cafe デモコンテンツの理解。
 * We.Cafe 用の AEM Screens の設定方法。
 
-これで、独自のデモサイトを使用して AEM Screens の機能を試す準備が整いました。続いてジャーニーの次の節、[デモサイトの管理](manage.md)に進んで、デモサイトの管理に役立つツールと、デモサイトを削除する方法を学びます。
+これで、独自のデモサイトを使用して AEM Screens の機能を試す準備が整いました。ジャーニーの次の節に進みます。 [デモサイトの管理、](manage.md) ここでは、デモサイトの管理と削除方法に役立つツールについて説明します。
 
 また、このジャーニーで説明した機能について詳しくは、[その他のリソース](#additional-resources)の節で紹介しているその他のリソースを参照してください。
 

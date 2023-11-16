@@ -2,10 +2,10 @@
 title: AEM Formsのローカル開発環境を設定する方法を教えてください。
 description: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境の設定
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a0433718a223a6d3aa7740232caa17650bce5ff6
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2847'
-ht-degree: 96%
+source-wordcount: '2846'
+ht-degree: 95%
 
 ---
 
@@ -88,7 +88,7 @@ You can use the [development tools](https://experienceleague.adobe.com/docs/expe
 
 1. 「**[!UICONTROL AEM as a Cloud Service]**」タブに移動します。
 1. 公開日を降順で並べ替えます。
-1. 最新の Adobe Experience Manager as a Cloud Service SDK、Experience Manager Forms 機能アーカイブ（AEM Forms アドオン）、Forms 参照アアセット、Forms Designer をクリックします。
+1. 最新のAdobe Experience Manager as a Cloud Service SDK、Experience Manager Forms機能アーカイブ (AEM Formsアドオン )、フォームリファレンスアセット、またはForms Designer をクリックします。
 1. ソフトウェア利用許諾契約を確認し、同意します。「**[!UICONTROL ダウンロード]**」ボタンをタップします。
 
 ## AEM プロジェクト用の開発ツールの設定 {#setup-development-tools-for-AEM-projects}

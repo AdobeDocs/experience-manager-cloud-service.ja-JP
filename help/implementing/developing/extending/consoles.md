@@ -1,13 +1,13 @@
 ---
 title: コンソールのカスタマイズ
 description: オーサーインスタンスのコンソールをカスタマイズするためにAEMが提供する様々なオプションについて説明します。
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
+exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '546'
 ht-degree: 10%
 
 ---
-
 
 # コンソールのカスタマイズ {#customizing-consoles}
 
@@ -117,4 +117,4 @@ clientlibs の詳細については、このドキュメントを参照してく
 
 コンソールを使用する場合、多くの場合、ユーザーはページ、コンポーネント、アセットなどのリソースから選択する必要があります。 作成者が項目を選択する必要があるリストの形式をとることができます。
 
-リストを適切なサイズに保ち、使用事例にも関連するように、カスタム述語の形式でフィルターを実装できます。 ドキュメントを参照してください[ページオーサリングのカスタマイズ](/help/implementing/developing/extending/page-authoring.md#filtering-resources) 」を参照してください。
+リストを適切なサイズに保ち、使用例にも関連するように、フィルターをカスタム述語の形式で実装できます。 ドキュメントを参照してください[ページオーサリングのカスタマイズ](/help/implementing/developing/extending/page-authoring.md#filtering-resources) 」を参照してください。

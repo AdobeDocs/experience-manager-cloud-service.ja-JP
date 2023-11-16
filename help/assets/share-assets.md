@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 177021106fc67e67a8cd6645a6684185331dd6f4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1340'
 ht-degree: 100%
 
 ---
@@ -89,9 +89,9 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
   ![キューのダウンロード](assets/queue-download.png)
 
-* ダウンロードファイルの準備が整ったら、「**[!UICONTROL インボックスのダウンロード]**」オプションをクリックして、ダウンロードのステータスを表示します。 大容量のダウンロードの場合は、「**[!UICONTROL 更新]**」ボタンをクリックしてステータスを更新します。
+* ダウンロードファイルの準備が整ったら、「**[!UICONTROL インボックスのダウンロード]**」オプションをクリックして、ダウンロードのステータスを表示します。大容量のダウンロードの場合は、「**[!UICONTROL 更新]**」ボタンをクリックしてステータスを更新します。
 
-  ![インボックスのダウンロード](assets/link-sharing-download-inbox.png)
+  ![インボックスをダウンロード](assets/link-sharing-download-inbox.png)
 
 * 処理が完了したら、「**[!UICONTROL ダウンロード]**」ボタンをクリックして zip ファイルをダウンロードします。
 

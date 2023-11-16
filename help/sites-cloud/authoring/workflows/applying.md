@@ -2,10 +2,10 @@
 title: ページへのワークフローの適用
 description: オーサリングでは、ワークフローを呼び出して、ページにアクションを実行できます。複数のワークフローを適用することもできます。
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 100%
+source-wordcount: '657'
+ht-degree: 93%
 
 ---
 
@@ -53,9 +53,7 @@ ht-degree: 100%
 * [サイトツールバーの「作成」オプション](#starting-a-workflow-from-the-sites-toolbar)。
 * [サイトコンソールのタイムラインレール](#starting-a-workflow-from-the-timeline)。
 
-どちらの場合も、次の操作が必要です。
-
-* [ワークフローを作成ウィザードでワークフローの詳細を指定します](#specifying-workflow-details-in-the-create-workflow-wizard)。
+どちらの場合も、 [ワークフローを作成ウィザードでワークフローの詳細を指定します](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### Sites ツールバーからのワークフローの開始 {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -124,7 +122,7 @@ ht-degree: 100%
    * 追加のアクションを表示するための既存のリソース
 
       * 「**子を含める**」で、ワークフローに含まれるそのリソースの子を指定します。
-ダイアログが開いて、以下のものに従って選択を絞り込むことができます。
+ダイアログボックスが開き、以下に従って選択を絞り込むことができます。
 
          * 直近の子のみを含める。
          * 変更されたページのみを含める。
@@ -144,6 +142,6 @@ ht-degree: 100%
 
 ## ページエディターからのワークフローの開始 {#starting-a-workflow-from-the-page-editor}
 
-ページの編集時に、ツールバーから「**ページ情報**」を選択できます。ドロップダウンメニューには、「**ワークフローで開始**」オプションがあります。これによりダイアログが開き、必要なワークフローと必要な場合はタイトルを指定できます。
+ページの編集時に、ツールバーから「**ページ情報**」を選択できます。ドロップダウンメニューには、「**ワークフローで開始**」オプションがあります。ダイアログが開き、必要なワークフローと必要に応じてタイトルを指定できます。
 
 ![ページエディターからのワークフローの開始](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)

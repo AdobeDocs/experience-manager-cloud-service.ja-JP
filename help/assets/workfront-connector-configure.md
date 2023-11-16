@@ -4,9 +4,9 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] の設
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: bb80414989aa5ceb624550d0ea41283c7d5da4c6
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1772'
+source-wordcount: '1771'
 ht-degree: 99%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 99%
 1. プロジェクトのステータス：プロジェクトを設定する必要があるステータスを選択して、リンクされたフォルダーを作成します。
 1. ポートフォリオを使用してプロジェクトにリンクされたフォルダーを作成する：プロジェクトが属する必要のあるポートフォリオのリストで、リンクされたフォルダーを作成できます。この一覧を空のままにして、すべてのプロジェクトポートフォリオのリンクフォルダーを作成します。
 1. カスタムフォームフィールドを使用してプロジェクトにリンクされたフォルダーを作成する：プロジェクトに必要なカスタムフォームフィールドおよびそれに対応する値で、リンクされたフォルダーを作成できます。この設定は、空である場合は無視されます。フィールドに `CUSTOM FORMS: Create DAM Linked Folder` を選択して、値に `Yes` を入力します。
-1. 「リンクされたフォルダーの自動作成を有効にする」をクリックします。「イベントの購読」タブに戻ると、作成イベントが 1 つ表示されます。
+1. [ リンクされたフォルダの自動作成を有効にする ] をクリックします。 「イベントの購読」タブに戻ると、作成イベントが 1 つ表示されます。
 
 ![リンクされたフォルダー設定](/help/assets/assets/wf-linked-folder-config.png)
 

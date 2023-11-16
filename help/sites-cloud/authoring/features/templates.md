@@ -2,9 +2,9 @@
 title: ページテンプレートの作成
 description: テンプレートは、作成されるページの構造を定義します。テンプレートエディターを使用すれば、テンプレートの作成および維持は、もはや開発者だけのタスクではなくなります。
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '4570'
+source-wordcount: '4567'
 ht-degree: 97%
 
 ---
@@ -607,7 +607,7 @@ The **機能** 「 」タブでは、コンポーネントの追加機能を有�
 
 >[!NOTE]
 >
->テンプレート作成者は、テンプレートにページポリシーを指定できるますが、開発者から適切なクライアントサイドライブラリの詳細を得る必要があります。
+>テンプレート作成者は、テンプレートにページポリシーを指定できますが、開発者から適切なクライアント側ライブラリの詳細を取得する必要があります。
 
 ### テンプレートの編集 - 最初のページのプロパティ - 作成者 {#editing-a-template-initial-page-properties-author}
 

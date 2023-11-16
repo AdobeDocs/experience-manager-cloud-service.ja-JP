@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service でのディスプレイの作成と管理
 description: このページでは、Screens as a Cloud Service でディスプレイを作成および管理する方法について説明します。
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '663'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '659'
+ht-degree: 93%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 以下の手順に従って、Screens サービスプロバイダーからディスプレイを作成します。
 
 1. AEM Cloud Service インスタンスから Screens Services Provider に移動します。
-1. 左側のナビゲーションパネルから「**ディスプレイ**」を選択し、画面の右上隅にある「**作成**」をクリックします。
+1. 選択 **表示** 左側のナビゲーションパネルから、 **作成** 画面の右上隅から。
 
    ![画像](/help/screens-cloud/assets/display/disp-1.png)
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
    ![画像](/help/screens-cloud/assets/display/disp-2.png)
 
-1. 「**表示名**」に「**LoopingChannelDisplay**」と入力し、「**作成**」をクリックします。
+1. タイトルに「 」と入力します。 **LoopingChannelDisplay** in **表示名** をクリックします。 **作成**.
 
    ![画像](/help/screens-cloud/assets/display/disp3.png)
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 
 ディスプレイは、Screens サービスプロバイダーから削除できます。
 
-ディスプレイを選択し、パネルの下部にある「**削除**」をクリックします（下図を参照）。
+ディスプレイを選択し、 **削除** パネルの下部から、次の図に示すように。
 
 ![画像](/help/screens-cloud/assets/display/disp-5.png)
 

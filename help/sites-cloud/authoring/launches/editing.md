@@ -2,10 +2,10 @@
 title: ローンチの編集
 description: ページ（またはページのセット）にローンチを作成したら、ページのローンチコピーのコンテンツを編集できます。
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '553'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 1. [「参照」のローンチ（Sites コンソール）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)にアクセスして使用可能なアクションを表示します。
 1. 「**このページに移動**」を選択して、編集するページを開きます。
 
-ページを編集すると、上部のツールバーに、「**終了**」および「**ナビゲート**」オプションと共に表示されます。
+ページの編集時に、上部のツールバーに表示され、 **終了** および **移動** options:
 
 ![ページエディターからの「終了」と「ローンチをナビゲート」](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 

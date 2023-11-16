@@ -2,10 +2,10 @@
 title: ページの作成と整理
 description: AEMでページを作成および管理して、Web サイトを整理する方法について説明します。
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2451'
-ht-degree: 98%
+source-wordcount: '2449'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 98%
 
 ## Web サイトの整理 {#organizing-your-website}
 
-作成者は、AEM 内で web サイトを構成する必要があります。この作業中に、次の目的でコンテンツページを作成して名前を付けます。
+作成者は、AEM内で Web サイトを整理する必要があります。 この作業中に、次の目的でコンテンツページを作成して名前を付けます。
 
 * 作成者がオーサー環境でコンテンツページを容易に検索できるようにする
 * サイトへの訪問者がパブリッシュ環境でコンテンツページを容易に閲覧できるようにする
@@ -306,7 +306,7 @@ AEM では、名前変更または移動が行われるページへの内部リ�
 
    ![「移動」ボタン](/help/sites-cloud/authoring/assets/move.png)
 
-   これにより、ページの移動ウィザードが開きます。
+   ページの移動ウィザードが開きます。
 
 1. ウィザードの&#x200B;**名前の変更**&#x200B;ステージで、次のいずれかを実行できます。
 

@@ -2,10 +2,10 @@
 title: レスポンシブレイアウト
 description: AEMを使用すると、ページのレスポンシブレイアウトを実現できます
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 92%
+source-wordcount: '1734'
+ht-degree: 86%
 
 ---
 
@@ -108,7 +108,7 @@ AEMでは、デバイスの幅に応じたレイアウトを定義できます�
 1. エミュレートする特定のデバイスを選択するには、次のいずれかを実行します。
 
    * デバイスを選択アイコンを使用して、ドロップダウンセレクターから選択する。
-   * エミュレーターツールバーのデバイスのインジケーターをタップまたはクリックする。
+   * エミュレーターツールバーのデバイスインジケーターをタップまたはクリックします。
 
    ![デバイス選択ドロップダウン](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
@@ -120,8 +120,8 @@ AEMでは、デバイスの幅に応じたレイアウトを定義できます�
 
    ![フォールド](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
 
-   * 折りたたみは、コンテンツの改ページと見なすこともできます（[ブレークポイント](#layout-definitions-device-emulation-and-breakpoints)と混同しないでください）。これは、スクロールする前にデバイス上でユーザーに表示されるコンテンツの部分を確認するのに便利です。
-   * エミュレートしているデバイスの高さが画面サイズより高い場合、折りたたみの線は表示されません。
+   * 折りたたみは、コンテンツの改ページと見なすこともできます（[ブレークポイント](#layout-definitions-device-emulation-and-breakpoints)と混同しないでください）。これは、スクロールする前にユーザーがデバイス上で表示するコンテンツの部分を示すのに便利です。
+   * エミュレートされるデバイスの高さが画面サイズより高い場合、折り目の線は表示されません。
    * フォールドは、作成者の利便性のために表示されます。公開されたページには表示されません。
 
 ## レイアウトコンテナとそのコンテンツの追加（編集モード） {#adding-a-layout-container-and-its-content-edit-mode}
@@ -136,7 +136,7 @@ AEMでは、デバイスの幅に応じたレイアウトを定義できます�
 >
 >まだ使用可能になっていない場合は、**レイアウトコンテナ**&#x200B;を、段落システムまたはページ用に明示的にアクティベートする必要があります。<!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
-1. **レイアウトコンテナ**&#x200B;は、[コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)で標準コンポーネントとして使用できます。ここから、ページ上の必要な場所へドラッグできます。そうすると、「**コンポーネントをここにドラッグ**」プレースホルダーが表示されます。
+1. **レイアウトコンテナ**&#x200B;は、[コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)で標準コンポーネントとして使用できます。ここから、ページ上の必要な場所にドラッグできます。その後、ページの **コンポーネントをここにドラッグ** プレースホルダー。
 1. その後、レイアウトコンテナにコンポーネントを追加できます。これらのコンポーネントには、実際のコンテンツが格納されます。
 
    ![レイアウトコンテナ](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
@@ -202,7 +202,7 @@ AEMでは、デバイスの幅に応じたレイアウトを定義できます�
 
   ![コンポーネントを非表示](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* **レイアウト**&#x200B;モードでは、「**コンポーネントをここにドラッグ**」をタップまたはクリックすると、コンポーネント全体を選択できます。このモードでは、ツールバーが表示されます。
+* In **レイアウト** モードをタップまたはクリックすると、 **ここにコンポーネントをドラッグ** をクリックして、コンポーネント全体を選択します。 このモードでは、ツールバーが表示されます。
 
   ツールバーには、レイアウトコンポーネントの状態やそれに属するコンポーネントに応じて異なるオプションが表示されます。次に例を示します。
 

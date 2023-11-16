@@ -2,9 +2,9 @@
 title: Cloud Manager での独自の GitHub リポジトリーの操作
 description: 独自の GitHub リポジトリを操作するように Cloud Manager を設定する方法について説明します。
 feature: Release Information
-source-git-commit: 8d689ea08ab7caf9cb0fa84df23d7e0fd906f379
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '745'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ### リポジトリーを追加 {#add-repo}
 
-1. Cloud Manager で、 **プログラムの概要** ページ、タップまたはクリック **リポジトリ** タブをクリックして、 **リポジトリ** ページを開き、をクリックします。 **リポジトリを追加**.
+1. Cloud Manager で、 **プログラムの概要** ページで、「 」をタップまたはクリックします。 **リポジトリ** タブをクリックして、 **リポジトリ** ページを開き、をクリックします。 **リポジトリを追加**.
 
 1. Adobe Analytics の **リポジトリを追加** ダイアログ、選択 **プライベートリポジトリ** をリポジトリタイプとして使用します。
 
@@ -65,7 +65,7 @@ Cloud Manager は GitHub リポジトリについて認識しますが、アク�
 
 1. 戻る **プライベートリポジトリの所有権の検証** ウィンドウが開いたら、Cloud Manager が、プライベートファイルのコンテンツを **秘密のファイルコンテンツ** フィールドに入力します。 そのフィールドからコンテンツをコピーします。
 
-   * シークレットファイルの内容は 1 回だけ表示されます。 このウィンドウを閉じる前にコンテンツをコピーしない場合は、秘密鍵を再生成する必要があります。
+   * シークレットファイルの内容は 1 回だけ表示されます。 このウィンドウを閉じる前にコンテンツをコピーしない場合は、秘密鍵を再生成します。
 
    ![秘密鍵ファイルの内容をコピー](/help/implementing/cloud-manager/assets/repos/new-secret.png)
 

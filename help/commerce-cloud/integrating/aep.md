@@ -11,10 +11,10 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2076'
-ht-degree: 97%
+source-wordcount: '2074'
+ht-degree: 96%
 
 ---
 
@@ -438,9 +438,9 @@ Experience Platform でデータストリームを作成するには、次の手
 
 1. Sites ページから、 __My Demo StoreFront／us／en__ ページを選択し、上部のアクションバーの「__編集__」クリックします。
 
-1. 上部のアクションバーで、「__公開済みとして表示__」をクリックし、ストアフロントのナビゲーションで該当カテゴリをクリックします。
+1. 上部のアクションバーで、 __公開済みとして表示__&#x200B;をクリックし、ストアフロントのナビゲーションから目的のカテゴリをクリックします。
 
-1. __製品ページ__&#x200B;で該当する製品カードをクリックし、__色とサイズ__&#x200B;を選択して「__買い物かごに追加__」ボタンを有効にします。
+1. の任意の製品カードをクリックします。 __製品紹介ページ__&#x200B;を選択し、「 __色、サイズ__ 有効にする __買い物かごに追加__ 」ボタンをクリックします。
 
 
 1. ブラウザーの拡張パネルから __Adobe Experience Platform デバッガー__&#x200B;拡張機能を開き、左側のパネルで __Experience Platform Wed SDK__ を選択します。

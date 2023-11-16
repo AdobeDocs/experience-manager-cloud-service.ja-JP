@@ -2,10 +2,10 @@
 title: オーサリングの基本
 description: コンテンツフラグメントを使用したヘッドレス CMS のコンテンツオーサリングの概念と仕組みについて説明します。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1729'
-ht-degree: 84%
+source-wordcount: '1727'
+ht-degree: 83%
 
 ---
 
@@ -135,7 +135,7 @@ You can view additional information about items using the Rail Selector. This al
 
 ![フォルダー作成オプション](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-詳細を入力できるダイアログが開くので、入力後、「**作成**」で確定します。
+詳細を入力し、次で確認できるダイアログが開きます。 **作成**:
 
 ![フォルダー作成ダイアログ](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -216,7 +216,7 @@ You can view additional information about items using the Rail Selector. This al
 
 例えば、フラグメントでは次のことが可能です。
 
-* 複数の情報が必要です。一部の情報は特定のタイプを持ちます。 ヘッドレスコンテンツの場合、参照は重要です。これについては、後ほどジャーニーの中で説明します。
+* 複数の情報が必要です。一部の情報は特定のタイプを持ちます。 ヘッドレスコンテンツの場合、参照は重要です（これらについては、後でジャーニーで学びます）。
 
 * テキストの長いセクションを記述できます。 ここには、テキストを管理および書式設定するための追加のオプションがあります。個々のテキストフィールドを全画面表示エディターで開くこともできます（右側の小さい画面アイコンを使用）。
 
