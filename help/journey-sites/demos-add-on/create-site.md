@@ -2,10 +2,10 @@
 title: デモサイトを作成
 description: 事前設定済みのテンプレートのライブラリに基づいて、AEM にデモサイトを作成します。
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 92%
+source-wordcount: '836'
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 92%
 
 AEM Reference Demo Add-On ジャーニーの前のドキュメントである[プログラムを作成](create-program.md)では、最初の設定手順で、テスト用のプログラムを作成し、パイプラインを使用してアドオンコンテンツをデプロイしました。その結果、以下を習得しました。
 
-* Cloud Manager を使用した新しいプログラムの作成方法。
+* Cloud Manager を使用してプログラムを作成する方法を説明します。
 * 新しいプログラムの Reference Demos Add-On を有効にする方法。
 * パイプラインを実行してアドオンコンテンツをデプロイ。
 
@@ -25,7 +25,7 @@ AEM Reference Demo Add-On ジャーニーの前のドキュメントである[�
 
 ## 目的 {#objective}
 
-このドキュメントは、Reference Demo Add-On のテンプレートに基づいて新しいサイトを作成する方法を理解するのに役立ちます。読み終えると、次のことが習得できます。
+このドキュメントでは、参照デモアドオンのテンプレートに基づいてサイトを作成する方法を説明します。 読み終えると、次のことが習得できます。
 
 * AEM オーサリング環境へのアクセス方法の理解。
 * テンプレートに基づくサイトの作成方法の理解。

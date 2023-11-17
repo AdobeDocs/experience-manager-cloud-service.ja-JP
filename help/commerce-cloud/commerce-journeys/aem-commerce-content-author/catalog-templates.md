@@ -2,10 +2,10 @@
 title: 製品カタログのページとテンプレートを管理
 description: 製品カタログのページとテンプレートの管理方法を説明します
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 88%
+source-wordcount: '718'
+ht-degree: 85%
 
 ---
 
@@ -61,7 +61,7 @@ Venia ストアフロントには、ナビゲーション、ランディング�
 
 ### カテゴリまたは製品に固有のテンプレート {#specific}
 
-CIF は、数回のクリックで複数のテンプレートをサポートします。 別のテンプレートを作成するには、それぞれのカテゴリから汎用テンプレートを選択し、 **作成** アクションを使用して新しいページを作成します。
+CIF は、数回のクリックで複数のテンプレートをサポートします。 別のテンプレートを作成するには、それぞれのカテゴリから汎用テンプレートを選択し、 **作成** アクション。
 
 ![テンプレートページを作成](assets/create-template-page.png)
 

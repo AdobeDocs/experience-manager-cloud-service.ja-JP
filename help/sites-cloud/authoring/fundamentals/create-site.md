@@ -1,20 +1,20 @@
 ---
 title: 新しいサイトの作成
-description: 管理者が AEM を使用して、サイトのスタイルや構造を定義するサイトテンプレートから新しいサイトを作成する方法を説明します。
+description: 管理者がAEMを使用して、サイトテンプレートを使用してサイトを作成し、サイトのスタイルと構造を定義する方法を説明します。
 feature: Administering
 role: Admin
 exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 100%
+source-wordcount: '125'
+ht-degree: 67%
 
 ---
 
 
 # 新しいサイトの作成 {#new-site}
 
-管理者が AEM を使用して、サイトのスタイルや構造を定義するサイトテンプレートから新しいサイトを作成する方法を説明します。
+管理者がAEMを使用してサイトテンプレートを使用してサイトを作成し、サイトのスタイルと構造を定義する方法について説明します。
 
 {{edge-delivery-authoring}}
 

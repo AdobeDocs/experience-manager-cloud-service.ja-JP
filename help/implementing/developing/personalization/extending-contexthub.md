@@ -2,10 +2,10 @@
 title: ContextHub の拡張
 description: 提供される ContextHub ストアやモジュールがソリューションの要件を満たさない場合は、新しいタイプの ContextHub ストアやモジュールを定義する
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 81%
+source-wordcount: '627'
+ht-degree: 77%
 
 ---
 
@@ -62,7 +62,7 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
 
 ## ContextHub UI モジュールタイプの作成 {#creating-contexthub-ui-module-types}
 
-[ContextHub に付属してインストールされる](sample-modules.md) UI モジュールタイプが要件を満たさない場合は、カスタム UI モジュールタイプを作成できます。UI モジュールタイプを作成するには、`ContextHub.UI.BaseModuleRenderer` クラスを拡張して `ContextHub.UI` に登録し、新しい UI モジュールレンダラーを作成します。
+[ContextHub に付属してインストールされる](sample-modules.md) UI モジュールタイプが要件を満たさない場合は、カスタム UI モジュールタイプを作成できます。UI モジュールタイプを作成するには、 `ContextHub.UI.BaseModuleRenderer` クラスとその後の登録 `ContextHub.UI`.
 
 UI モジュールレンダラーを作成するには、UI モジュールをレンダリングするロジックを格納する `Class` オブジェクトを作成します。少なくとも、このクラスは次のアクションを実行する必要があります。
 

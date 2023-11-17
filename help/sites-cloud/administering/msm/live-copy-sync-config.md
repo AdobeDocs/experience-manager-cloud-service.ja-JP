@@ -4,9 +4,9 @@ description: 使用できる強力なライブコピー同期オプションと�
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 1d5460c87aef10ae1adee7401cd462242e106f8c
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2425'
 ht-degree: 96%
 
 ---
@@ -45,7 +45,7 @@ Adobe Experience Manager には、そのまま使用できる多数の同期設�
 
 AEM に標準で用意されているロールアウト設定の一覧を次の表に示します。表には各ロールアウト設定のトリガーと同期アクションが含まれます。
 
-インストールされたロールアウト設定のアクションが要件を満たさない場合は、次の操作を実行できます。 [新しいロールアウト設定を作成します。](#creating-a-rollout-configuration)
+インストールされたロールアウト設定のアクションが要件を満たさない場合は、次の操作を実行できます。 [ロールアウト設定を作成します。](#creating-a-rollout-configuration)
 
 | 名前 | 説明 | トリガー | [同期アクション](#synchronization-actions) |
 |---|---|---|---|

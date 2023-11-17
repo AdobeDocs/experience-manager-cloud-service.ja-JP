@@ -2,10 +2,10 @@
 title: オファーの作成と管理（オファーコンソール）
 description: アクティビティエクスペリエンスで使用するオファーを作成するには、オファーコンソールを使用します。
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 98%
+source-wordcount: '1390'
+ht-degree: 96%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->また、新しいエクスペリエンスフラグメントを自分で作成し、レガシーオファーからフラグメントにコンテンツを手動で転送してから、レガシーオファーを削除することもできます。
+>また、エクスペリエンスフラグメントを自分で作成し、従来のオファーからフラグメントにコンテンツを手動で転送してから、従来のオファーを削除することもできます。
 
 >[!CAUTION]
 >

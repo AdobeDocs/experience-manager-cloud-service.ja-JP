@@ -2,10 +2,10 @@
 title: ターゲットモードを使用したターゲットコンテンツのオーサリング
 description: ターゲティングモードとターゲットコンポーネントには、エクスペリエンス用のコンテンツを作成するためのツールが用意されています
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '5409'
-ht-degree: 99%
+source-wordcount: '5408'
+ht-degree: 98%
 
 ---
 
@@ -102,7 +102,7 @@ AEM または Adobe Target をターゲティングエンジンとして使用�
 
    >[!NOTE]
    >
-   >新しいアクティビティを作成し、Adobe Target クラウド設定をページまたはその親ページのいずれかに添付すると、Adobe Target がエンジンとして自動的に推測されます。
+   >アクティビティを作成し、Adobe Targetクラウド設定をページまたはその親ページの 1 つに添付すると、AEMはAdobe Targetをエンジンとして自動的に推測します。
 
 1. **ターゲティングエンジン**&#x200B;ドロップダウンメニューで、ターゲティングエンジンを選択します。
 

@@ -2,10 +2,10 @@
 title: オーサリング環境とツール
 description: AEM のオーサリング環境は、コンテンツを編成および編集するための様々なメカニズムを提供しています
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2164'
-ht-degree: 94%
+source-wordcount: '2163'
+ht-degree: 93%
 
 ---
 
@@ -120,7 +120,7 @@ The **Sites** コンソールを使用すると、ヘッダーバー、ツール
 
 * 適切なタイプの既存のコンポーネント。
    * 例えば、画像タイプのアセットを画像コンポーネントにドラッグできます。
-* 適切なタイプの新しいコンポーネントを作成するための段落システム内の[プレースホルダー](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder)。
+* A [プレースホルダー](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) を使用して、適切なタイプのコンポーネントを作成します。
    * 例えば、画像タイプのアセットを段落システムにドラッグして画像コンポーネントを作成できます。
 
 >[!NOTE]

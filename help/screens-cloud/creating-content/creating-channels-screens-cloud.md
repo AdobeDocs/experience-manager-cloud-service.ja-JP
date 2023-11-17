@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service でのチャネルの作成と管理
 description: ここでは、Screens as a Cloud Service でチャネルを作成および管理する方法について説明します。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 90%
+source-wordcount: '1086'
+ht-degree: 88%
 
 ---
 
@@ -28,7 +28,7 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 >**前提条件**
 >ガイドのこの節を開始する前に、[Screens as a Cloud Service でのプロジェクトの作成と管理](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)を確認してください。
 
-以下の手順に従って、Screens as a Cloud Service で新しいシーケンスチャネルを作成します。
+以下の手順に従って、Screens チャネルでシーケンスチャネルをas a Cloud Serviceします。
 
 1. Screens コンテンツプロバイダーに移動します。
 

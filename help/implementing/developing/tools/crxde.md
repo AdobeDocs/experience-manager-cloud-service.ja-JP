@@ -2,9 +2,9 @@
 title: CRXDE Lite の使用
 description: CRXDE Lite は AEM クイックスタートの一部で、ブラウザー内のローカル開発環境でリポジトリーにアクセスして変更できます。
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1683'
 ht-degree: 95%
 
 ---
@@ -206,7 +206,7 @@ CRXDE Lite でプロパティを作成するには：
 
 ## ファイルの作成 {#creating-a-file}
 
-CRXDE Lite で新しいファイルを作成するには：
+次の手順で、CRXDE Liteを含むファイルを作成します。
 
 1. ブラウザーで CRXDE Lite を開きます。
 1. [**エクスプローラーウィンドウで**、](#explorer-pane)ファイルを作成するコンポーネントを右クリックして、「**作成**」、「**ファイルを作成**」の順に選択します。

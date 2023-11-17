@@ -11,10 +11,10 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 43220614f567bdfad17c6ac9c8b3adcc856ff044
 workflow-type: tm+mt
-source-wordcount: '2074'
-ht-degree: 96%
+source-wordcount: '2068'
+ht-degree: 95%
 
 ---
 
@@ -502,6 +502,6 @@ __プロファイル XDM イベント：__
 詳しくは、次のリソースを参照してください。
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- [Experience Platform コネクタの概要](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html?lang=ja)
-- [Experience Platform コネクタイベント](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html?lang=ja)
+- [[!DNL Data Connection] の概要](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
+- [[!DNL Data Connection] イベント](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
 - [Adobe Experience Platform の概要](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=ja)

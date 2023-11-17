@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 リリースのリリースノート。'
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 79%
+source-wordcount: '835'
+ht-degree: 77%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 79%
    * **[テンプレートエディターのフォームデータモデル](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**：テンプレートエディター内で、フォームデータモデルスキーマをアダプティブフォームテンプレートに関連付けることができます。 これにより、アダプティブフォームの作成に要する時間を短縮します。 このオプションはアダプティブ フォームエディターにも追加され、ユーザーは既存のフォームのフォームデータモデルを選択または変更することができます。
    * **[テンプレートエディターでのレコードのドキュメント](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**：テンプレートを使用して作成されたすべてのフォームのレコードのドキュメント生成を標準化できるようになりました。これにより、組織の要件に対するコンプライアンスと標準化が強化されます。
 
-* **[AEM Sites ページからアダプティブフォームウィザードを起動](/help/forms/embed-adaptive-form-aem-sites.md)**：AEM Sites ページでは、アダプティブフォームのサポートが拡張されました。AEM Sites ページを表示したまま、新しいアダプティブフォームを作成したり、既存のアダプティブフォームを埋め込んだりすることができるようになりました。
+* **[AEM Sites ページからアダプティブフォームウィザードを起動](/help/forms/embed-adaptive-form-aem-sites.md)**：AEM Sites ページでは、アダプティブフォームのサポートが拡張されました。AEM Sitesページに留まったまま、アダプティブフォームを作成したり、既存のアダプティブフォームを埋め込んだりできるようになりました。
 * **[DoR でチェックボックスとラジオボタンの表示の配置を変更](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**：レコードのドキュメントのチェックボックスおよびラジオボタンに対して、配置（水平、垂直、アダプティブフォームと同じ）を設定できるようになりました。このオプションは、レコードのドキュメント内でのチェックボックスおよびラジオボタンの位置を決定します。
 
 ## CIF アドオン {#cloud-services-cif}

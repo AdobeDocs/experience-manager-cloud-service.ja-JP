@@ -2,9 +2,9 @@
 title: Screens as a Cloud Service 用カスタムコンポーネントの開発
 description: 以下のチュートリアルでは、AEM Screens 用のカスタムコンポーネントを作成する手順について説明します。AEM Screens では、他の AEM 製品の様々な既存のデザインパターンやテクノロジーを再利用しています。このチュートリアルでは、AEM Screens 用に開発する際の相違点と特別な考慮事項について重点的に説明します。
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2106'
 ht-degree: 99%
 
 ---
@@ -329,7 +329,7 @@ AEM Screens コンポーネントは、編集モードとプレビュー／実�
 
 1. クライアントライブラリフォルダー `shared` をコピーして貼り付けて、`production` という名前のクライアントライブラリを作成します。
 
-   ![共有クライアントライブラリをコピーして実稼動用の新しいクライアントライブラリを作成する](/help/screens-cloud/developing/assets/copy-clientlib.gif)
+   ![共有クライアントライブラリをコピーして実稼動用クライアントライブラリを作成する](/help/screens-cloud/developing/assets/copy-clientlib.gif)
 
    共有クライアントライブラリをコピーして実稼動用のクライアントライブラリを作成します。
 

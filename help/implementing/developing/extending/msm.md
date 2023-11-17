@@ -1,13 +1,13 @@
 ---
 title: Multi Site Manager の拡張
 description: マルチサイトマネージャーの機能を拡張する方法を説明します。
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
+exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2436'
+source-wordcount: '2435'
 ht-degree: 61%
 
 ---
-
 
 # Multi Site Manager の拡張 {#extending-the-multi-site-manager}
 
@@ -77,7 +77,7 @@ ht-degree: 61%
 
 同期アクションを作成するには、次の 2 つのクラスを作成します。
 
-* アクションを実行する [`com.day.cq.wcm.msm.api.LiveAction` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) インターフェイスの実装。
+* アクションを実行する [`com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) インターフェイスの実装。
 * を実装する OSGi コンポーネント [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) インターフェイスを作成し、 `LiveAction` クラス
 
 `LiveActionFactory` は、指定された設定の `LiveAction` クラスのインスタンスを作成します。
@@ -165,7 +165,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 ### ロールアウト設定の作成 {#create-the-rollout-configuration}
 
-新しいロールアウト設定を作成するには：
+ロールアウト設定を作成するには：
 
 1. CRXDE Liteを開く `https://<host>:<port>/crx/de`.
 

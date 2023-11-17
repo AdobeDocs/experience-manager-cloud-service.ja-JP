@@ -4,10 +4,10 @@ description: サードパーティの翻訳サービスと統合するための 
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 100%
+source-wordcount: '1517'
+ht-degree: 99%
 
 ---
 
@@ -67,7 +67,7 @@ Web サイトのセクションごとに翻訳要件が異なる場合は、そ�
 >
 >AEM のコンテンツ翻訳機能の概要については、[多言語サイトのコンテンツの翻訳](overview.md)を参照してください。
 
-フレームワークの単一の設定によって、ページコンテンツとアセットの翻訳方法が制御されます。新しい翻訳設定を作成するには：
+フレームワークの単一の設定によって、ページコンテンツとアセットの翻訳方法が制御されます。翻訳設定を作成するには：
 
 1. [グローバルナビゲーションメニュー](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)で、**ツール／Cloud Services／Translation Cloud Services** をクリックまたはタップします。
 1. コンテンツ構造内で設定を作成する場所に移動します。この場所は多くの場合、特定のサイトに基づいている場合もあれば、グローバルな場合もあります。

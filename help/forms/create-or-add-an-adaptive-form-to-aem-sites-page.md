@@ -4,10 +4,10 @@ description: アダプティブフォームを作成するか、AEM Sitesペー�
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3212'
-ht-degree: 82%
+source-wordcount: '3209'
+ht-degree: 81%
 
 ---
 
@@ -24,7 +24,7 @@ AEM Formsを使用すれば、AEM Sitesページにシームレスにフォー�
 
 AEM ページエディターを使用すると、複数のフォームをすばやく作成して AEM Sites ページに追加できます。AEM Page Editor を使用すると、動的な動作、検証、データ統合、レコードのドキュメントの生成、ビジネスプロセスの自動化など、アダプティブフォームのコンポーネントを活用して、Sites ページ内にシームレスなデータ取得エクスペリエンスを作成できます。 また、バージョン管理、ターゲティング、翻訳、マルチサイトマネージャーなど、AEM Sitesページの様々な機能を使用できます。
 
-AEM FormsCloud Serviceは、アダプティブフォームコンテナとアダプティブForms — 埋め込みコンポーネントを提供します。 アダプティブフォームコンテナを使用して、AEM Sitesページやエクスペリエンスフラグメントで新しいフォームを作成できます。アダプティブForms — 埋め込みコンポーネントでは、既存のアダプティブフォームを追加したり、アダプティブFormsエディターを使用して新しいフォームを作成できます。
+AEM FormsCloud Serviceは、アダプティブフォームコンテナとアダプティブForms — 埋め込みコンポーネントを提供します。 アダプティブフォームコンテナを使用して、AEM Sitesページまたはエクスペリエンスフラグメント内にフォームを作成できます。アダプティブForms — 埋め込みコンポーネントでは、既存のアダプティブフォームを追加したり、アダプティブFormsエディターを使用してフォームを作成できます。
 
 ![AEM Sites ページでのアダプティブフォームの例](/help/forms/assets/adaptive-form-in-sites-page.png)
 
@@ -187,7 +187,7 @@ AEM Sites ページ内のアダプティブフォームをエクスペリエン�
    アダプティブフォームコンテナを新しいエクスペリエンスフラグメントに変換するか、既存のエクスペリエンスフラグメントに追加するためのダイアログボックスが表示されます。
 1. エクスペリエンスフラグメントバリエーションに変換ダイアログボックスで、次のオプションの値を設定します。
 
-   * **アクション：**&#x200B;新しいエクスペリエンスフラグメントを作成するか、既存のエクスペリエンスフラグメントに追加するかを選択します。
+   * **アクション：** エクスペリエンスフラグメントを作成する場合は「 」を選択し、既存のエクスペリエンスフラグメントに追加する場合は「 」を選択します。
    * **親パス：**&#x200B;エクスペリエンスフラグメントをホストするフォルダーのパスを指定します。このオプションは、新しいエクスペリエンスフラグメントを作成する場合にのみ使用できます。
    * **テンプレート：**&#x200B;エクスペリエンスフラグメントテンプレートのパスを指定します。エクスペリエンスフラグメントテンプレートがない場合は、[作成します](/help/implementing/developing/extending/experience-fragments.md)。このオプションは、アダプティブフォームを既存のエクスペリエンスフラグメントに追加する場合にのみ使用できます。
    * **フラグメントのタイトル：**&#x200B;エクスペリエンスフラグメントのタイトルを指定します。タイトルは、エクスペリエンスフラグメントを一意に識別します。

@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 90%
+source-wordcount: '1546'
+ht-degree: 87%
 
 ---
 
@@ -62,13 +62,13 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 * **権限**：ユーザーを [!DNL forms-users] に追加し、アダプティブフォームを作成するための権限をユーザーに付与します。フォーム専用のユーザーグループの詳細なリストについては、[グループと権限](forms-groups-privileges-tasks.md)を参照してください。
 
-* **アダプティブフォームのテーマ**：テーマには、コンポーネントとパネル向けのスタイル設定の詳細が含まれます。 スタイルには、背景カラー、ステートカラー、透明度、配置、サイズなどのプロパティが含まれます。テーマを適用すると、指定したスタイルが対応するコンポーネントに反映されます。[新しいテーマを作成する](themes.md)または[既存のテーマを読み込む](import-export-forms-templates.md#uploading-a-theme)ことができます。一部のサンプル テーマでは、[最新のアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#create-project)をデプロイすることもできます。
+* **アダプティブフォームのテーマ**：テーマには、コンポーネントとパネル向けのスタイル設定の詳細が含まれます。 スタイルには、背景カラー、ステートカラー、透明度、配置、サイズなどのプロパティが含まれます。テーマを適用すると、指定したスタイルが対応するコンポーネントに反映されます。以下が可能です。 [テーマの作成](themes.md) または [既存のテーマを読み込む](import-export-forms-templates.md#uploading-a-theme). 一部のサンプル テーマでは、[最新のアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#create-project)をデプロイすることもできます。
 
 * **アダプティブフォームテンプレート**：テンプレートは基本構造を提供し、アダプティブフォームのアピアランス（レイアウトとスタイル）を定義します。これには、特定のプロパティやコンテンツ構造を有するフォーマット済みのコンポーネントが含まれます。また、テーマと送信アクションを定義するオプションも提供されます。 テーマは、ルックアンドフィールと送信アクションを定義し、アダプティブフォームの送信時に実行するアクションを定義します。 例えば、収集したデータをデータソースに送信する場合などです。 Cloud Service は、2 種類のテンプレートをサポートしています。
 
-   * **編集可能テンプレート**：[新しいテンプレートを作成](template-editor.md)または[既存の編集可能テンプレートを読み込むことができます](migrate-to-forms-as-a-cloud-service.md)。また、[最新のアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#:~:text=AEM%20アーキタイプは、次のモジュール,Java%20バンドル。%20it.tests%3A%20are%20Java-based%20integration%20tests.)をデプロイして、編集可能なテンプレートのサンプルを取得することもできます。
+   * **編集可能テンプレート**：以下が可能です。 [を作成する](template-editor.md) または [既存の編集可能テンプレートのインポート](migrate-to-forms-as-a-cloud-service.md). また、[最新のアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#:~:text=AEM%20アーキタイプは、次のモジュール,Java%20バンドル。%20it.tests%3A%20are%20Java-based%20integration%20tests.)をデプロイして、編集可能なテンプレートのサンプルを取得することもできます。
 
-   * **静的テンプレート**：これらは従来のテンプレートで、Adobe Managed Services（AMS）およびオンプレミスの AEM Forms のインストール（AEM 6.5 Forms 以前）から移行する顧客にのみ推奨されます。 静的テンプレートに対する既存の投資を引き続き使用することができます。新しいアダプティブフォームを作成する場合は、編集可能なテンプレートを使用することをお勧めします。
+   * **静的テンプレート**：これらは従来のテンプレートで、Adobe Managed Services（AMS）およびオンプレミスの AEM Forms のインストール（AEM 6.5 Forms 以前）から移行する顧客にのみ推奨されます。 静的テンプレートに対する既存の投資を引き続き使用することができます。アダプティブフォームを作成する場合は、編集可能テンプレートを使用します。
 
 
 
@@ -89,7 +89,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
      >
      > アダプティブフォームエディターを使用して、[!UICONTROL レコードのドキュメント]テンプレートを作成することもできます。詳しくは、「[アダプティブフォームエディターでのレコードのドキュメントのサポート](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)」を参照してください。
 
-   * 静的テンプレートを選択すると、データ、スタイル、送信、配信、プレビューの各オプションは使用できなくなります。 新しいアダプティブフォームを作成する場合は、編集可能なテンプレートを使用することをお勧めします。
+   * 静的テンプレートを選択すると、データ、スタイル、送信、配信、プレビューの各オプションは使用できなくなります。 アダプティブフォームを作成する場合は、編集可能テンプレートを使用します。
 
 1. 「**[!UICONTROL スタイル]**」タブで、テーマを選択します。
 

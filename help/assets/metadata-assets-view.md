@@ -4,10 +4,10 @@ description: Assets ビューでのメタデータの管理方法について説
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
-source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 98%
+source-wordcount: '1556'
+ht-degree: 96%
 
 ---
 
@@ -111,7 +111,7 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
 
 作成したフォームは、一致する MIME タイプのアセットをユーザーがアップロードすると自動的に適用されます。
 
-既存のフォームを再利用して新しいフォームを作成するには、メタデータフォームを選択し、ツールバーの「**[!UICONTROL コピー]**」をクリックし、名前を指定して、「**[!UICONTROL 確認]**」をクリックします。メタデータフォームを編集して変更することができます。変更したフォームは、変更後にアップロードされたアセットに対して使用されます。既存のアセットは変更されません。
+既存のフォームを再利用してフォームを作成するには、メタデータフォームを選択し、 **[!UICONTROL コピー]** ツールバーで名前を入力し、 **[!UICONTROL 確認]**. メタデータフォームを編集して変更することができます。変更したフォームは、変更後にアップロードされたアセットに対して使用されます。既存のアセットは変更されません。
 
 ## プロパティコンポーネント {#property-components}
 
@@ -145,7 +145,7 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
 * [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&amp;lang=ja#support)に問い合わせる
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
-To reuse an existing form to create a new form, do one of these:
+To reuse an existing form to create a form, do one of these:
 
 * Select a metadata form and click **[!UICONTROL Copy]** from the toolbar, provide a name, and click **[!UICONTROL Confirm]**.
 

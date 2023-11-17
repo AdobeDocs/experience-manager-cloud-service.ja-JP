@@ -2,10 +2,10 @@
 title: ページのコンテンツの編集
 description: ページを作成したら、必要な変更を行うためにコンテンツを編集できます
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2978'
-ht-degree: 94%
+source-wordcount: '2975'
+ht-degree: 93%
 
 ---
 
@@ -161,7 +161,7 @@ ht-degree: 94%
 
 ### アセットブラウザーを使用したコンポーネントの挿入 {#inserting-a-component-using-the-assets-browser}
 
-[アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)からアセットをドラッグして、新しいコンポーネントをページに追加することもできます。これにより、適切なタイプの新しいコンポーネント（アセットを含む）が自動的に作成されます。
+[アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)からアセットをドラッグして、新しいコンポーネントをページに追加することもできます。これにより、適切なタイプの（およびアセットを含む）コンポーネントが自動的に作成されます。
 
 この動作は使用しているインストール環境で設定できます。詳しくは、「アセットをドラッグするとコンポーネントインスタンスが作成されるように段落システムを設定」を参照してください。<!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
 
@@ -261,7 +261,7 @@ ht-degree: 94%
 
 * **エクスペリエンスフラグメントバリエーションに変換**
 
-  これにより、新しい [エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) 選択したコンポーネントから、または既存のエクスペリエンスフラグメントに追加します。
+  これにより、 [エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) 選択したコンポーネントから、または既存のエクスペリエンスフラグメントに追加します。
 
   ![エクスペリエンスフラグメントへの変換ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 

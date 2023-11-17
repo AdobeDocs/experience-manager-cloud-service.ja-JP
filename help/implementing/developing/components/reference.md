@@ -2,9 +2,9 @@
 title: コンポーネントリファレンスガイド
 description: コンポーネントとその構造の詳細に関するデベロッパー向けリファレンスガイド
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '3646'
 ht-degree: 99%
 
 ---
@@ -248,7 +248,7 @@ Content not found
 >See the [AEM Gems session](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html) on customizing dialog fields.
 -->
 
-コンポーネントダイアログで使用する新しいウィジェットを作成するには、新しい Granite UI フィールドコンポーネントを作成する必要があります。
+コンポーネントダイアログで使用するウィジェットを作成するには、Granite UI フィールドコンポーネントを作成する必要があります。
 
 ダイアログをフォーム要素の単純なコンテナと見なす場合、ダイアログコンテンツの主なコンテンツをフォームフィールドとして表示することもできます。新しいフォームフィールドを作成するには、リソースタイプを作成する必要があります。これは、新しいコンポーネントの作成と同じです。この作業を容易にするために、Granite UI は、`sling:resourceSuperType` を使用して以下を継承する汎用フィールドコンポーネントを提供しています。
 

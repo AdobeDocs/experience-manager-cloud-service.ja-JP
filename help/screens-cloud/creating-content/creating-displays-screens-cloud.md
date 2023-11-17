@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service でのディスプレイの作成と管理
 description: このページでは、Screens as a Cloud Service でディスプレイを作成および管理する方法について説明します。
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 93%
+source-wordcount: '657'
+ht-degree: 91%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 93%
 
 1. 「**フォルダーを非表示**」を選択して閉じます。
 
-## 新しいフォルダーの作成方法 {#create-folder}
+## フォルダーの作成方法 {#create-folder}
 
 フォルダーを作成して、ディスプレイを整理しやすくできます。
 
@@ -86,7 +86,7 @@ ht-degree: 93%
 
    ![画像](/help/screens-cloud/assets/display/Createfolder2.png)
 
-## ネストされたフォルダーの新規作成方法 {#nested-folder}
+## ネストされたフォルダーの作成方法 {#nested-folder}
 
 1. 在庫表示にナビゲートします。
 

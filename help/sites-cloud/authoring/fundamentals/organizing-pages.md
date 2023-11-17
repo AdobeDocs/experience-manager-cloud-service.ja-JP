@@ -2,10 +2,10 @@
 title: ページの作成と整理
 description: AEMでページを作成および管理して、Web サイトを整理する方法について説明します。
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2449'
-ht-degree: 97%
+source-wordcount: '2448'
+ht-degree: 96%
 
 ---
 
@@ -210,7 +210,7 @@ AEM では、複数のテンプレートが標準提供されています。使�
    >
    > [ページ命名規則](#page-naming-conventions)を参照してください。
 
-   新しいページの作成に必要となる最小限の情報は、「**タイトル**」です。
+   ページの作成に最低限必要な情報は、 **タイトル**.
 
    ![ページタイトルの指定](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 

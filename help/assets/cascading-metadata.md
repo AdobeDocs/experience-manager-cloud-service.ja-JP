@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 98%
+source-wordcount: '984'
+ht-degree: 96%
 
 ---
 
@@ -41,9 +41,9 @@ ht-degree: 98%
 
    ![select_form](assets/select_form.png)
 
-1. （オプション）メタデータスキーマエディターで、条件化する新しいフィールドを作成します。「**[!UICONTROL 設定]**」タブで、名前およびプロパティのパスを指定します。
+1. （オプション）メタデータスキーマエディターで、条件を設定するフィールドを作成します。 「**[!UICONTROL 設定]**」タブで、名前およびプロパティのパスを指定します。
 
-   新しいタブを作成するには、「`+`」をタップまたはクリックしてタブを追加し、メタデータフィールドを追加します。
+   タブを作成するには、をタップまたはクリックします `+` をクリックして、タブを追加し、メタデータフィールドを追加します。
 
    ![add_tab](assets/add_tab.png)
 

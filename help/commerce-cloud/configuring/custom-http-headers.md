@@ -2,10 +2,10 @@
 title: カスタム HTTP ヘッダー
 description: コマースエンジンに送信されるカスタム HTTP ヘッダーと、CIFから既に送信されたヘッダーを設定する方法について説明します。
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 91%
+source-wordcount: '285'
+ht-degree: 89%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 91%
 HTTP ヘッダーの値は、プロジェクトのクラウドサービス設定ページで設定できます。
 
 1. ツール／クラウドサービス／CIF 設定のクラウドサービス設定ページに移動します。
-1. 既存の設定を開くか、新しい設定を作成します。
+1. 既存の設定を開くか、作成します
 1. 「詳細」タブに移動し、「カスタム HTTP ヘッダー」マルチフィールドを探します。定義済みのヘッダーを選択し、それらに値を割り当てることができます。
 
 上記のクラウドサービス設定を使用するコンポーネントは、すべての GraphQL リクエストでこれらの HTTP ヘッダーを送信します。

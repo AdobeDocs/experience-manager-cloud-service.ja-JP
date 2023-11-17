@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1162'
 ht-degree: 97%
 
 ---
@@ -71,7 +71,7 @@ AEM の翻訳統合フレームワーク（TIF）は、AEM コンテンツの翻
 * 人間による翻訳と機械翻訳のどちらを実行するか
 * ページに関連付けられている他のコンテンツ（タグなど）を翻訳するかどうか
 
-新しい翻訳設定を作成するには：
+翻訳設定を作成するには：
 
 1. グローバルナビゲーションメニューで、**ツール**／**クラウドサービス**／**翻訳クラウドサービス**&#x200B;をクリックまたはタップします。
 1. コンテンツ構造内で設定を作成する場所に移動します。この場所は多くの場合、特定のプロジェクトに基づいている場合もあれば、グローバルな場合もあります。

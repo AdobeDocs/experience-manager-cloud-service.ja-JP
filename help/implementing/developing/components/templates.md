@@ -2,10 +2,10 @@
 title: ページテンプレート
 description: ページテンプレートは、新しいページのベースとして使用するページを作成する際に使用します
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3291'
-ht-degree: 98%
+source-wordcount: '3287'
+ht-degree: 97%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 98%
 
 1. テンプレートを使用してコンテンツページを作成します。
 
-   * テンプレートを新しいページを作成するために使用するときは、静的テンプレートと編集可能なテンプレートの間に視覚的な違いはありません。
+   * テンプレートを使用してページを作成する場合、静的テンプレートと編集可能テンプレートの間に視覚的な違いはなく、表示上の違いもありません。
    * ページの作成者にとって、この処理は透過的です。
 
    ページ作成者がテンプレートを使用してページを作成する方法について詳しくは、[ページの作成と整理](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates)を参照してください。
@@ -145,7 +145,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->カスタマイズしたテンプレートを格納する新しいフォルダーを作成し、`global` フォルダーは使用しないことをお勧めします。
+>カスタマイズしたテンプレートを格納するフォルダーを作成し、 `global` フォルダー。
 
 >[!CAUTION]
 >
@@ -161,7 +161,7 @@ ht-degree: 98%
 
 許可されたすべてのエントリのリストが表示されます。オーバーラップする設定がある場合（`path`／`label`）、現在のフォルダーに最も近いインスタンスがユーザーに表示されます。
 
-新しいフォルダーを作成するには、次のいずれかを実行します。
+フォルダーを作成するには、次のいずれかの方法を実行します。
 
 * プログラムで自動的に、または CRXDE Lite を使用して作成
 * [設定ブラウザー](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)の使用 

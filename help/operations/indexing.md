@@ -2,10 +2,10 @@
 title: コンテンツの検索とインデックス作成
 description: AEM as a Cloud Serviceでのコンテンツの検索とインデックス作成について説明します。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: d567115445c0a068380e991452d9b976535e3a1d
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2433'
-ht-degree: 72%
+source-wordcount: '2432'
+ht-degree: 71%
 
 ---
 
@@ -47,7 +47,7 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 2. **更新** 新しいバージョンを追加することにより、既存のインデックス定義を作成する。
 3. **削除** 不要になったインデックス定義。
 
-上記のポイント 1 と 2 の両方について、それぞれの Cloud Manager リリーススケジュールで、カスタムコードベースの一部として新しいインデックス定義を作成する必要があります。詳しくは、 [AEMへのデプロイ (as a Cloud Service)](/help/implementing/deploying/overview.md) ドキュメント。
+上記のポイント 1 と 2 の両方で、それぞれの Cloud Manager リリーススケジュールで、カスタムコードベースの一部としてインデックス定義を作成する必要があります。 詳しくは、 [AEMへのデプロイ (as a Cloud Service)](/help/implementing/deploying/overview.md) ドキュメント。
 
 ## インデックス名 {#index-names}
 

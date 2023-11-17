@@ -2,10 +2,10 @@
 title: サンドボックスプログラムの概要
 description: サンドボックスプログラムの概要と実稼動プログラムとの違いについて説明します。
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 100%
+source-wordcount: '474'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## 自動作成 {#auto-creation}
 
-サンドボックスプログラムは自動作成機能を備えています。新しいサンドボックスプログラムを作成するたびに、Cloud Manager は自動的に以下を行います。
+サンドボックスプログラムは自動作成機能を備えています。サンドボックスプログラムを作成すると、Cloud Manager は自動的に次の操作をおこないます。
 
 * AEM Sites と AEM Assets をソリューションとしてプログラムに追加します。
 * プロジェクト Git リポジトリと、[AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)に基づくサンプルプロジェクトをセットアップします。

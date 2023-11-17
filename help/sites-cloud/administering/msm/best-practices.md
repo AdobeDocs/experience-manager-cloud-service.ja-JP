@@ -4,10 +4,10 @@ description: Adobe のエンジニアリングおよびコンサルティング�
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 95%
+source-wordcount: '1419'
+ht-degree: 94%
 
 ---
 
@@ -66,7 +66,7 @@ AEM でライブコピーを作成する方法は、主に次の 2 つです。
 
 サイトを作成する際に留意する点のいくつかを次に示します。
 
-* 新しいサイトを作成するには、[ブループリント設定](creating-live-copies.md#managing-blueprint-configurations)が必要です。
+* サイトを作成するには、 [ブループリント設定](creating-live-copies.md#managing-blueprint-configurations).
 * 新しいサイトに作成する言語のパスの選択を許可するには、対応する言語ルートがブループリント（ソース）内に存在する必要があります。
 * [新しいサイトをライブコピーとして作成](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)（**作成**／**サイト**&#x200B;を使用）すると、そのライブコピーの最初の 2 つのレベルは「*シャロー*」になります。ページの子はライブ関係には属しませんが、トリガーに一致するライブ関係が見つかった場合には引き続きロールアウトが引き継がれます。
 

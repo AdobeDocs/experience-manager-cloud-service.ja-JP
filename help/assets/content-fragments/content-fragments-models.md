@@ -2,9 +2,9 @@
 title: コンテンツフラグメントモデル（Assets - コンテンツフラグメント）
 description: コンテンツフラグメントモデルが AEM におけるヘッドレスコンテンツの基盤となっている仕組みと、構造化コンテンツを含んだコンテンツフラグメントを作成する方法について説明します。
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f499edbc05b71495c072564bb065a07c34a9e236
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2937'
+source-wordcount: '2935'
 ht-degree: 96%
 
 ---
@@ -294,7 +294,7 @@ type CompanyModel {
 
 * **フラグメントの作成を許可**
 
-  これにより、適切なモデルに基づいてフラグメント作成者が新しいフラグメントを作成できるようになります。
+  これにより、フラグメント作成者は、適切なモデルに基づいてフラグメントを作成できます。
 
    * **fragmentreferencecomposite** - フラグメント作成者が複数のフラグメントを選択して複合フラグメントを作成できるようになります。
 

@@ -4,9 +4,9 @@ description: AEM の宛先セレクターを使用して、元のアセットの
 contentOwner: Adobe
 role: Admin,User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1908'
+source-wordcount: '1906'
 ht-degree: 93%
 
 ---
@@ -212,7 +212,7 @@ interface SelectedDestination {
 
 ### 例 1：宛先セレクターでフォルダーを作成
 
-宛先セレクターを使用すると、特定の場所にアセットをアップロード、移動またはコピーするための新しいフォルダーを作成できます。
+宛先セレクターを使用すると、特定の場所にアセットをアップロード、移動またはコピーするためのフォルダーを作成できます。
 
 ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 

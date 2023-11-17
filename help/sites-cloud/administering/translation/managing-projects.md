@@ -4,9 +4,9 @@ description: AEM で機械翻訳と人間による翻訳の両方のプロジェ
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '4077'
+source-wordcount: '4075'
 ht-degree: 99%
 
 ---
@@ -448,9 +448,10 @@ AEM の翻訳プロジェクトでは、標準の [AEM プロジェクトコン�
 
 ## ソースページの移動または名前の変更 {#move-source}
 
-翻訳済みのソースページの[名前変更または移動](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page)が必要な場合、移動後にページを再度翻訳すると、新しいページ名／場所に基づいて新しい言語コピーが作成されます。以前の名前／場所にもとづく古い言語コピーは、引き続き存在します。
+翻訳済みのソースページを [名前が変更されたか、移動されました](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page)移動後に再度ページを翻訳し、新しいページ名/場所に基づいて言語コピーを作成します。 以前の名前／場所にもとづく古い言語コピーは、引き続き存在します。
 
 このシナリオでのベストプラクティスは、次の手順に従うことです。
+
 1. 移動するソースページに関連付けられている言語コピーを非公開にします。
 1. それらを削除します。
 1. 新しく移動したソースページから新しい言語コピーを作成します。

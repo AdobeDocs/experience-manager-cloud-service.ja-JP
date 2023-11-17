@@ -8,10 +8,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2748'
-ht-degree: 88%
+source-wordcount: '2737'
+ht-degree: 85%
 
 ---
 
@@ -38,17 +38,17 @@ ht-degree: 88%
 
 アダプティブフォームを作成するには、以下が必要です。
 
-* **お使いの環境でアダプティブフォームズコアコンポーネントを有効化**：新しいプログラムを作成すると、アダプティブコアコンポーネントはお使いの環境で既に有効になっています。アーキタイプ 39 以前に基づくFormsas a Cloud Service環境がある場合、 [環境でのアダプティブFormsコアコンポーネントの有効化](enable-adaptive-forms-core-components.md). ご利用の環境でコアコンポーネントを有効にすると、**アダプティブフォーム（コアコンポーネント）**&#x200B;のテンプレートとキャンバステーマが環境に追加されます。AEM SDK バージョンが 2023.02.0 より前の場合は、2023.02.0 リリースより前にアダプティブフォームのコアコンポーネントがプレリリースの一部であったので、[お使いの環境で `prerelease` フラグが有効になっていることを確認してください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)。
+* **環境でのアダプティブFormsコアコンポーネントの有効化**：プログラムを作成する際、お使いの環境で既にアダプティブFormsコアコンポーネントが有効になっています。 アーキタイプ 39 以前に基づくFormsas a Cloud Service環境がある場合、 [環境でのアダプティブFormsコアコンポーネントの有効化](enable-adaptive-forms-core-components.md). ご利用の環境でコアコンポーネントを有効にすると、**アダプティブフォーム（コアコンポーネント）**&#x200B;のテンプレートとキャンバステーマが環境に追加されます。AEM SDK バージョンが 2023.02.0 より前の場合は、2023.02.0 リリースより前にアダプティブフォームのコアコンポーネントがプレリリースの一部であったので、[お使いの環境で `prerelease` フラグが有効になっていることを確認してください](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)。
 
 * **アダプティブフォームテンプレート**：テンプレートは基本構造を提供し、アダプティブフォームのアピアランス（レイアウトとスタイル）を定義します。これには、特定のプロパティやコンテンツ構造を有するフォーマット済みのコンポーネントが含まれます。また、テーマと送信アクションを定義するオプションも提供されます。 テーマは、ルックアンドフィールと送信アクションを定義し、アダプティブフォームの送信時に実行するアクションを定義します。 例えば、収集したデータをデータソースに送信する場合などです。 クラウドサービスでは、空白という名前の OOTB テンプレートが提供されます。
 
    * `blank` テンプレートは、すべての新しい AEM Forms as a Cloud Service プログラムに含まれています。
    * パッケージマネージャーを使用して参照パッケージをインストールし、AEM Forms as a Cloud Service プログラムに `blank` テンプレートを追加できます。
-   * 最初から[新しいアダプティブフォームテンプレート（コアコンポーネント）を作成する](template-editor.md)こともできます。
+   * また、 [アダプティブFormsテンプレートの作成（コアコンポーネント）](template-editor.md) 最初から
 
 * **アダプティブフォームのテーマ**：テーマには、コンポーネントとパネル向けのスタイル設定の詳細が含まれます。 スタイルには、背景カラー、ステートカラー、透明度、配置、サイズなどのプロパティが含まれます。テーマを適用すると、指定したスタイルが対応するコンポーネントに反映されます。`Canvas` テンプレートは、すべての新しい AEM Forms as a Cloud Service プログラムに含まれています。
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
-    * You can also [create a new Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
+    * You can also [create an Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
 
 * **権限**：[!DNL forms-users] グループにユーザーを追加します。[!DNL forms-users] グループのメンバーには、アダプティブフォームを作成する権限があります。フォーム固有のユーザーグループの詳細なリストについては、 [グループと権限](forms-groups-privileges-tasks.md).
 
@@ -117,13 +117,13 @@ ht-degree: 88%
 
 * **権限**：ユーザーを [!DNL forms-users] に追加し、アダプティブフォームを作成するための権限をユーザーに付与します。フォーム固有のユーザーグループの詳細なリストについては、 [グループと権限](forms-groups-privileges-tasks.md).
 
-* **アダプティブフォームのテーマ**：テーマには、コンポーネントとパネル向けのスタイル設定の詳細が含まれます。 スタイルには、背景カラー、ステートカラー、透明度、配置、サイズなどのプロパティが含まれます。テーマを適用すると、指定したスタイルが対応するコンポーネントに反映されます。[新しいテーマを作成する](themes.md)または[既存のテーマを読み込む](import-export-forms-templates.md#uploading-a-theme)ことができます。一部のサンプル テーマでは、[最新のアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#create-project)をデプロイすることもできます。
+* **アダプティブフォームのテーマ**：テーマには、コンポーネントとパネル向けのスタイル設定の詳細が含まれます。 スタイルには、背景カラー、ステートカラー、透明度、配置、サイズなどのプロパティが含まれます。テーマを適用すると、指定したスタイルが対応するコンポーネントに反映されます。以下が可能です。 [テーマの作成](themes.md) または [既存のテーマを読み込む](import-export-forms-templates.md#uploading-a-theme). 一部のサンプル テーマでは、[最新のアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#create-project)をデプロイすることもできます。
 
 * **アダプティブフォームテンプレート**：テンプレートは基本構造を提供し、アダプティブフォームのアピアランス（レイアウトとスタイル）を定義します。これには、特定のプロパティやコンテンツ構造を有するフォーマット済みのコンポーネントが含まれます。また、テーマと送信アクションを定義するオプションも提供されます。 テーマは、ルックアンドフィールと送信アクションを定義し、アダプティブフォームの送信時に実行するアクションを定義します。 例えば、収集したデータをデータソースに送信する場合などです。 Cloud Service は、2 種類のテンプレートをサポートしています。
 
-   * **編集可能テンプレート**：[新しいテンプレートを作成](template-editor.md)または[既存の編集可能テンプレートを読み込むことができます](migrate-to-forms-as-a-cloud-service.md)。また、[最新のアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#:~:text=AEM%20アーキタイプは、次のモジュール,Java%20バンドル。%20it.tests%3A%20are%20Java-based%20integration%20tests.)をデプロイして、編集可能なテンプレートのサンプルを取得することもできます。
+   * **編集可能テンプレート**：以下が可能です。 [を作成する](template-editor.md) または [既存の編集可能テンプレートのインポート](migrate-to-forms-as-a-cloud-service.md). また、[最新のアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#:~:text=AEM%20アーキタイプは、次のモジュール,Java%20バンドル。%20it.tests%3A%20are%20Java-based%20integration%20tests.)をデプロイして、編集可能なテンプレートのサンプルを取得することもできます。
 
-   * **静的テンプレート**：これらは従来のテンプレートで、Adobe Managed Services（AMS）およびオンプレミスの AEM Forms のインストール（AEM 6.5 Forms 以前）から移行する顧客にのみ推奨されます。 静的テンプレートに対する既存の投資を引き続き使用することができます。新しいアダプティブフォームを作成する場合は、編集可能なテンプレートを使用することをお勧めします。
+   * **静的テンプレート**：これらは従来のテンプレートで、Adobe Managed Services（AMS）およびオンプレミスの AEM Forms のインストール（AEM 6.5 Forms 以前）から移行する顧客にのみ推奨されます。 静的テンプレートに対する既存の投資を引き続き使用することができます。アダプティブフォームを作成する際には、編集可能なテンプレートを使用します。
 
 
 ## アダプティブフォームを作成 {#create-an-adaptive-form-foundation-components}
@@ -143,7 +143,7 @@ ht-degree: 88%
      >
      > アダプティブフォームエディターを使用して、[!UICONTROL レコードのドキュメント]テンプレートを作成することもできます。詳しくは、「[アダプティブフォームエディターでのレコードのドキュメントのサポート](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)」を参照してください。
 
-   * 静的テンプレートを選択すると、データ、スタイル、送信、配信、プレビューの各オプションは使用できなくなります。 新しいアダプティブフォームを作成する場合は、編集可能なテンプレートを使用することをお勧めします。
+   * 静的テンプレートを選択すると、データ、スタイル、送信、配信、プレビューの各オプションは使用できなくなります。 アダプティブフォームを作成する場合は、編集可能なテンプレートを使用することをお勧めします。
 
 1. 「**[!UICONTROL スタイル]**」タブで、テーマを選択します。
 

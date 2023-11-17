@@ -4,10 +4,10 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] の設
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1771'
-ht-degree: 99%
+source-wordcount: '1770'
+ht-degree: 98%
 
 ---
 
@@ -98,7 +98,7 @@ Adobe Workfront ドキュメントとアセット間のメタデータマッピ�
 マッピングを設定するには、次の手順に従います。
 
 1. **ツール**／**Assets**／**メタデータスキーマ**&#x200B;に移動します。
-1. 編集するメタデータスキーマフォームを選択し、「**編集**」をクリックするか、 新しいメタデータスキーマを最初から作成します。
+1. 編集するメタデータスキーマフォームを選択し、 **編集** または、メタデータスキーマを最初から作成します。
 1. 編集するメタデータスキーマフォームフィールドを選択し、右側のパネルで「**設定** 」タブを選択します。
 1. [!DNL Workfront] カスタムフォームフィールドで、選択した AEM プロパティにマッピングする [!DNL Workfront] フィールドの名前を選択します。次のオプションを使用できます。
 

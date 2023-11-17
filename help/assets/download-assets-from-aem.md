@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: d25d433203b8ec6787dec87a9ec35092a247096e
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1388'
-ht-degree: 89%
+source-wordcount: '1387'
+ht-degree: 88%
 
 ---
 
@@ -116,7 +116,7 @@ Experience Manager では、アセットの量とサイズに基づいてダウ�
 
    `/apps/<your-app-name>/config.publish`
 
-1. config フォルダーに、`nt:file` タイプのファイル `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` を新しく作成します。
+1. config フォルダーに、タイプのファイルを作成します。 `nt:file` 名前付き `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
 1. `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` に以下を入力します。ダウンロードの最大サイズ（バイト単位）を `asset.download.prezip.maxcontentsize` の値として設定します。以下のサンプルでは、100 KB を超えないように ZIP ダウンロードの最大サイズを設定しています。
 
    ```java

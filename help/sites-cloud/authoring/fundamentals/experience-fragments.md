@@ -2,10 +2,10 @@
 title: エクスペリエンスフラグメント
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントを使用すると、エクスペリエンスの再利用性と柔軟性を高めることができます。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: bad2225e7c5f2554ebd51c0e7e737296c3aa552b
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2044'
-ht-degree: 99%
+source-wordcount: '2043'
+ht-degree: 98%
 
 ---
 
@@ -279,7 +279,7 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 
 ### 構築ブロックの作成 {#creating-a-building-block}
 
-新しい構築ブロックを作成するには、次の手順に従います。
+構築ブロックを作成するには：
 
 1. エクスペリエンスフラグメントエディターで、再利用するコンポーネントを選択します。
 

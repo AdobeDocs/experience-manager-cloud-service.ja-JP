@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
 source-wordcount: '929'
 ht-degree: 98%
@@ -32,7 +32,7 @@ When organizing a collection of assets, for example, all *Nature* images, you ca
 >
 >Sharing an Assets folder (in Marketing Cloud) of the type `sling:OrderedFolder`, is not supported. If you want to share a folder, do not select Ordered when creating a folder.
 
-1. Navigate to the place in your digital assets folder where you want to create a new folder.
+1. Navigate to the place in your digital assets folder where you want to create a folder.
 1. In the menu, click **[!UICONTROL Create]**. Select **[!UICONTROL New Folder]**.
 1. In the **[!UICONTROL Title]** field, provide a folder name. By default, DAM uses the title that you provided as the folder name. Once the folder is created, you can override the default and specify another folder name.
 1. Click **[!UICONTROL Create]**. Your folder is displayed in the digital assets folder.

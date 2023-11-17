@@ -5,7 +5,7 @@ role: User, Developer
 keywords: AEMアダプティブフォームをMicrosoft SharePointリストに接続し、アダプティブフォームをMicrosoft SharePointリストに接続し、AEMアダプティブフォームをMicrosoft SharePointリストに統合し、アダプティブフォームをMicrosoftリストに統合し、アダプティブフォームからSharePointリストにデータを送信しAEMます。
 hide: true
 hidefromToC: true
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 5%
@@ -56,7 +56,7 @@ Microsoft® SharePointリストをAEMワークフローに統合するには：
 1. [フォームデータモデルを呼び出すためのワークフローを作成する](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ja#extending-aem)
 
    <!--
-    To create a new workflow with the editor, perform the following steps:
+    To create a workflow with the editor:
     1.  Go to your **AEM Forms Author** instance > **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
     1.  Click **[!UICONTROL Create]** > **[!UICONTROL Create Model]**. The Add Workflow Model dialog appears. 
     1. Specify **[!UICONTROL Title]** and **[!UICONTROL Name (optional)]**.

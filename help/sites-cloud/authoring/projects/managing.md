@@ -2,10 +2,10 @@
 title: プロジェクトの管理
 description: プロジェクトを使用すると、リソースをプロジェクトコンソールでアクセスして管理できる 1 つのエンティティにグループ化して整理できます。
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '893'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '892'
+ht-degree: 99%
 
 ---
 
@@ -31,7 +31,7 @@ AEM には次のテンプレートが始めから用意されていて、プロ�
 * Product Photo Shoot Project 
 -->
 
-プロジェクトの作成手順は、どのプロジェクトでも同じです。プロジェクトのタイプによって異なるものとしては、使用可能な[ユーザーの役割](/help/sites-cloud/authoring/projects/overview.md)と[ワークフロー](/help/sites-cloud/authoring/projects/workflows.md)があります。新しいプロジェクトを作成するには、次の手順を実行します。
+プロジェクトの作成手順は、どのプロジェクトでも同じです。プロジェクトのタイプによって異なるものとしては、使用可能な[ユーザーの役割](/help/sites-cloud/authoring/projects/overview.md)と[ワークフロー](/help/sites-cloud/authoring/projects/workflows.md)があります。プロジェクトを作成するには：
 
 1. **プロジェクト**&#x200B;で「**作成**」をタップまたはクリックして「**プロジェクトを作成**」ウィザードを開きます。
 1. テンプレートを選択して、「**次へ**」をクリックします。
@@ -135,7 +135,7 @@ AEM には次のテンプレートが始めから用意されていて、プロ�
 
    >[!NOTE]
    >
-   >このタイルがプロジェクトにまだない場合は、追加する必要があります。[タイルの追加](#adding-items-to-a-tile)を参照してください。
+   このタイルがプロジェクトにまだない場合は、追加する必要があります。[タイルの追加](#adding-items-to-a-tile)を参照してください。
 
 1. 「**編集**」をタップまたはクリックします。
 1. セレクターを「**アクティブ**」から「**非アクティブ**」（またはその逆）に変更します。

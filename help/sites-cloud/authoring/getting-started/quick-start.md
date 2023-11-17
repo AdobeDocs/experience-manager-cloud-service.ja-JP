@@ -2,9 +2,9 @@
 title: ページのオーサリングのクイックスタートガイド
 description: ページコンテンツのオーサリングに初めて取り組む際に役立つ概要レベルのクイックガイドです。
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1561'
+source-wordcount: '1560'
 ht-degree: 90%
 
 ---
@@ -76,7 +76,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
 ### 新しいページの作成 {#creating-a-new-page}
 
-[新しいページを作成](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)するには：
+宛先 [ページの作成](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
 
 1. [新しいページを作成する場所に移動します。](#finding-your-page)
 1. 「**作成**」アイコンを使用して、リストから「**ページ**」を選択します。
