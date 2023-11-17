@@ -3,9 +3,9 @@ title: 実稼動以外のパイプラインの設定
 description: 実稼動環境にデプロイする前にコードの品質をテストするための実稼動以外のパイプラインを設定する方法を説明します。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1285'
 ht-degree: 80%
 
 ---
@@ -67,7 +67,7 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
    * **[フルスタックコード](#full-stack-code)**
    * **[ターゲットのデプロイメント](#targeted-deployment)**
 
-ドキュメントを参照してください [CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) を参照してください。
+詳しくは、 [CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) を参照してください。
 
 実稼動以外のパイプラインの作成を完了する手順は、選択したソースコードのタイプによって異なります。 上記のリンクをたどって、このドキュメントの次の節に移動し、パイプラインの設定を完了します。
 

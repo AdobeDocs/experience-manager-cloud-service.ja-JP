@@ -3,10 +3,10 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: f58581f6f81e60edafd79dd1d305bd479b65eed5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4922'
-ht-degree: 98%
+source-wordcount: '4921'
+ht-degree: 95%
 
 ---
 
@@ -47,7 +47,7 @@ GraphQL とは次のことを意味します。
   [GraphQL Foundation](https://foundation.graphql.org/) を参照してください。
 
 <!--
-"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
+"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world the tools they need to understand and adopt GraphQL.*". 
 -->
 
 GraphQL API の詳細については、（多くのリソースの中でも特に）以下を参照してください。
@@ -156,13 +156,13 @@ Assets へのアクセスに必要な権限です。
 
 GraphQL クエリは、基になるリクエストの AEM ユーザーの権限で実行します。一部のフラグメント（Assets として保存）への読み取りアクセス権を持っていない場合、ユーザーは結果セットの一部になりません。
 
-また、ユーザーは GraphQL クエリを実行できるように、GraphQL エンドポイントにアクセスできる必要があります。
+また、GraphQLクエリを実行するには、ユーザーがGraphQLエンドポイントにアクセスできる必要があります。
 
 ## スキーマ生成 {#schema-generation}
 
 GraphQLは、厳密に型指定された API で、データは型別に明確に構造化および整理される必要があります。
 
-GraphQL の仕様には、特定のインスタンス上のデータをクエリするための堅牢な API を作成する方法に関する一連のガイドラインが用意されています。そのタスクを行うには、クライアントは[スキーマ](#schema-generation)を取得する必要があります。この中には、クエリに必要なすべての型が定義されています。
+GraphQL の仕様には、特定のインスタンス上のデータをクエリするための堅牢な API を作成する方法に関する一連のガイドラインが用意されています。これをおこなうには、クライアントが [スキーマ](#schema-generation)：クエリに必要なすべてのタイプを含みます。
 
 コンテンツフラグメントの場合、GraphQL スキーマ（構造とタイプ）は、**有効**&#x200B;な[コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)とそれらのデータタイプに基づいています。
 
@@ -235,9 +235,9 @@ Sites GraphQL サービスは、コンテンツフラグメントモデルに対
 
   選択された[フィールドタイプ](#Data-types)を使用して、コンテンツフラグメントモデルの設定方法に基づいてフィールドが作成されます。フィールド名は、「**データタイプ**」タブの「**プロパティ名**」フィールドから取得されます。
 
-   * ユーザーが特定のデータタイプを設定できるので、**レンダリング形式**&#x200B;設定も考慮する必要があります。例えば、1 行のテキストフィールドに複数の 1 行のテキストを含めるように設定するには、ドロップダウンから「`multifield`」を選択します。
+   * ユーザーが特定のデータタイプを設定できるので、**レンダリング形式**&#x200B;設定も考慮する必要があります。例えば、1 行のテキストフィールドに複数の 1 行のテキストを含めるように設定するには、「 `multifield` 」をドロップダウンリストから選択します。
 
-* AEM 用 GraphQL が生成する多数の[ヘルパーフィールド](#helper-fields)
+* AEM の GraphQL も、複数の[ヘルパーフィールド](#helper-fields)を生成します。
 
 ### データタイプ {#data-types}
 
@@ -245,7 +245,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 | コンテンツフラグメントモデル - データ型 | GraphQL の型 | 説明 |
 |--- |--- |--- |
-| 1 行のテキスト | `String`、`[String]` | 作成者名、場所名などの単純な文字列に使用します. |
+| 1 行のテキスト | `String`、`[String]` | 作成者名、場所名など、単純な文字列に使用されます。 |
 | 複数行テキスト | `String`、`[String]` | 記事の本文などのテキストを出力するために使用します |
 | 数値 | `Float`、`[Float]` | 浮動小数点数と整数を表示するために使用します |
 | ブール値 | `Boolean` | チェックボックスを表示するために使用します（単純な真／偽のステートメント） |
@@ -259,7 +259,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 ### ヘルパーフィールド {#helper-fields}
 
-ユーザー生成フィールドのデータ型に加えて、AEM 用 GraphQL では、コンテンツフラグメントの識別やコンテンツフラグメントに関する追加情報の提供に役立つ多数の&#x200B;*ヘルパー*&#x200B;フィールドも生成されます。
+ユーザー生成フィールドのデータタイプに加えて、GraphQL for AEMでは複数のデータタイプも生成されます *ヘルパー* コンテンツフラグメントの識別に役立つフィールド、またはコンテンツフラグメントに関する追加情報の提供に役立つフィールドです。
 
 これらの[ヘルパーフィールド](#helper-fields)は、ユーザーが定義したものと自動生成されたものを区別するために、先頭に `_` が付きます。
 
@@ -365,7 +365,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 >[!NOTE]
 >
->技術的には元のデータ（UI で&#x200B;*マスター*&#x200B;として参照される）は明示的なバリエーションとは見なされないので、「`_variations`」フィールドには `master` バリエーションが含まれません。
+>技術的には元のデータ（UI で&#x200B;*マスター*&#x200B;として参照される）は明示的なバリエーションと見なされず、「`_variations`」フィールドには `master` バリエーションが含まれません。
 
 詳しくは、[サンプルクエリ - 名前付きバリエーションを持つすべての都市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)を参照してください。
 
@@ -571,8 +571,8 @@ GraphQL クエリでフィルタリングを使用して、特定のデータを
 並び替え条件：
 
 * フィールドパスを表すコンマ区切りの値のリストにする
-   * リストの最初のフィールドではプライマリの並び替え順を定義し、2 番目のフィールドではプライマリの並び替え順の 2 つの値が等しい場合に、3 番目のフィールドでは最初の 2 つの条件が等しい場合などに使用されます。
-   * ドット表記（field1.subfield.subfield など）
+   * リストの最初のフィールドでは主な並べ替え順が定義され、2 番目のフィールドは主な並べ替え条件の 2 つの値が等しい場合に使用され、3 番目のフィールドは最初の 2 つの条件が等しい場合に使用されます。
+   * ドット表記、つまり field1.subfield.subfield など。
 * （オプション）並べ替えの方向
    * ASC（昇順）または DESC（降順）。デフォルトでは ASC が適用されます
    * 並べ替えの方向は、フィールドごとに指定できます。つまり、あるフィールドを昇順で、別のフィールドを降順（name、firstName DESC）で並べ替えることができます

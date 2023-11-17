@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service 用カスタムコンポーネントの開発
 description: 以下のチュートリアルでは、AEM Screens 用のカスタムコンポーネントを作成する手順について説明します。AEM Screens では、他の AEM 製品の様々な既存のデザインパターンやテクノロジーを再利用しています。このチュートリアルでは、AEM Screens 用に開発する際の相違点と特別な考慮事項について重点的に説明します。
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2106'
-ht-degree: 99%
+source-wordcount: '2105'
+ht-degree: 97%
 
 ---
 
@@ -77,7 +77,7 @@ Screens プロジェクトのソースコードは、通常、マルチモジュ
    * `/content/dam/we-retail-run`
    * `/content/screens/we-retail-run`
 
-   このパッケージには、プロジェクトに必要な初期コンテンツおよび設定構造が含まれています。**`/conf/we-retail-run`** には、We.Retail Run プロジェクトのすべての設定が含まれています。**`/content/dam/we-retail-run`** には、プロジェクトの初期デジタルアセットが含まれています。**`/content/screens/we-retail-run`** には、Screens のコンテンツ構造が含まれています。これらすべてのパスの下に含まれるコンテンツは主に AEM で更新されます。環境（ローカル、開発、ステージング、実稼動）間の一貫性を高めるために、多くの場合、ベースコンテンツ構造がソース管理下に保存されます。
+   このパッケージには、プロジェクトに必要な初期コンテンツおよび設定構造が含まれています。**`/conf/we-retail-run`** には、We.Retail Run プロジェクトのすべての設定が含まれています。**`/content/dam/we-retail-run`** には、プロジェクトの初期デジタルアセットが含まれています。**`/content/screens/we-retail-run`** には、Screens のコンテンツ構造が含まれています。これらのパスの下にあるコンテンツは、主にAEMで更新されます。 環境（ローカル、開発、ステージング、実稼動）間の一貫性を高めるために、多くの場合、ベースコンテンツ構造がソース管理下に保存されます。
 
 1. **AEM Screens／We.Retail Run プロジェクト**&#x200B;に移動します。
 
@@ -125,14 +125,14 @@ AEM Screens には、従来の WCM Sites コンポーネントには必ずしも
    <!--/* production: preview authoring mode + unspecified mode (that is, on publish) */-->
    <sly data-sly-test.production="${wcmmode.preview || wcmmode.disabled}" data-sly-include="production.html" />
    
-   <!--/* edit: any other authoring mode, that is, edit, design, scaffolding, etc. */-->
+   <!--/* edit: any other authoring mode, that is, edit, design, scaffolding, and so on. */-->
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
    Screens コンポーネントでは、使用する[オーサリングモード](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=ja#page-modes)に応じて、2 種類のレンダリングが必要になります。
 
    1. **実稼動**：プレビューまたはパブリッシュモード（wcmmode=disabled）
-   1. **編集**：編集、デザイン、基礎、開発者など、他のすべてのオーサリングモードに使用されます。
+   1. **編集**：他のすべてのオーサリングモード（編集、デザイン、基礎、開発者など）に使用されます。
 
    `helloworld.html` はスイッチとして機能し、アクティブなオーサリングモードを確認し、別の HTL スクリプトにリダイレクトします。編集モード用に `edit.html` スクリプトを用意し、実稼動モード用に `production.html` スクリプトを用意するというのが、Screens コンポーネントで一般に使用される規則です。
 

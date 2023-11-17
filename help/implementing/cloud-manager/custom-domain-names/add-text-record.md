@@ -2,10 +2,10 @@
 title: TXT レコードの追加
 description: TXT レコードを追加して、Cloud Manager でカスタムドメイン名を追加する方法を説明します。
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '329'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 97%
 
 ---
 
@@ -46,4 +46,4 @@ dig TXT _aemverification.example.com -t txt
 
 >[!TIP]
 >
->多くの [DNS ルックアップツール](https://www.ultratools.com/tools/dnsLookup)が使用可能です。Google DoH を使用して、TXT レコードエントリを検索し、TXT レコードが見つからないか、間違っているかを識別できます。
+>次の項目があります。 [DNS ルックアップツール](https://www.ultratools.com/tools/dnsLookup) 使用可能 Google DoH を使用して、TXT レコードエントリを検索し、TXT レコードが見つからないか、間違っているかを識別できます。

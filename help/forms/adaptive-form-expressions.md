@@ -1,10 +1,10 @@
 ---
 title: アダプティブフォームの数式とは
 description: アダプティブフォームの式を使用して、自動検証や演算を追加したり、セクションの表示のオン／オフを切り替えたりします。
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2697'
-ht-degree: 99%
+source-wordcount: '2698'
+ht-degree: 98%
 
 ---
 
@@ -107,7 +107,7 @@ ht-degree: 99%
 
 **`marital_status.value == "married" ? ["1=One", "2=two"] : ["0=Zero"]`.**
 
-**marital_status** フィールドの値が変わる場合は、常に式が再トリガーされます。REST サービスからドロップダウンに入力することもできます。<!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
+**marital_status** フィールドの値が変わる場合は、常に式が再トリガーされます。REST サービスからドロップダウンリストを設定することもできます。 <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
 
 ### 要約式 {#summary}
 

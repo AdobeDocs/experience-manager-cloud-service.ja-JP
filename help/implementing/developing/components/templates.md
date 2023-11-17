@@ -2,10 +2,10 @@
 title: ページテンプレート
 description: ページテンプレートは、新しいページのベースとして使用するページを作成する際に使用します
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3287'
-ht-degree: 97%
+source-wordcount: '3279'
+ht-degree: 95%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 97%
 
 ページテンプレートの作成は、主にテンプレート作成者が、[テンプレートコンソールおよびテンプレートエディター](/help/sites-cloud/authoring/features/templates.md)を使用して行います。ここでは、そのプロセスの概要を示し、技術的なレベルでどのような処理が行われるかを説明します。
 
-新しい編集可能テンプレートを作成する場合は、次の手順を実行します。
+編集可能テンプレートを作成する場合は、次の操作を実行します。
 
 1. [テンプレート用フォルダー](#template-folders)を作成します。これは必須ではありませんが、ベストプラクティスとして推奨されます。
 1. [テンプレートタイプ](#template-type)を選択します。[テンプレート定義](#template-definitions)を作成するために、このタイプがコピーされます。
@@ -112,7 +112,7 @@ ht-degree: 97%
 
 >[!TIP]
 >
->国際化する必要がある情報は、テンプレートに含めないでください。国際化のためには、[コアコンポーネントのローカライゼーション機能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=ja)の利用をお勧めします。
+>国際化が必要な情報は、決してテンプレートに含めないようにしてください。国際化のためには、[コアコンポーネントのローカライゼーション機能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=ja)の利用をお勧めします。
 
 >[!NOTE]
 >
@@ -197,7 +197,7 @@ ht-degree: 97%
 
 ### 設定ブラウザーの使用 {#using-the-configuration-browser}
 
-1. **グローバルナビゲーション**／**ツール**／[**設定ブラウザー**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)&#x200B;に移動します。
+1. に移動します。 **グローバルナビゲーション** > **ツール** > [**設定ブラウザー**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
    `global` フォルダーなどの既存のフォルダーは左側に一覧表示されます。
 
@@ -211,7 +211,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->グローバルフォルダーにテンプレートを作成する場合は、[設定ブラウザー](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)でグローバルフォルダーを編集し、「**編集可能なテンプレート**」オプションをオンにします。ただし、これは推奨されるベストプラクティスではありません。
+>Adobe Analytics の [設定ブラウザー、](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) グローバルフォルダーを編集し、 **編集可能なテンプレート** オプションこのフォルダー内にテンプレートを作成する場合は、このオプションを選択します。ただし、これは推奨されるベストプラクティスではありません。
 
 ### ACL とグループ {#acls-and-groups}
 
@@ -289,9 +289,9 @@ ht-degree: 97%
 
 ## テンプレートタイプ {#template-type}
 
-新しいテンプレートの作成時には、テンプレートタイプを指定する必要があります。
+テンプレートを作成する際には、テンプレートタイプを指定する必要があります。
 
-* テンプレートタイプは、テンプレートのためのテンプレートとなるものです。新規テンプレート作成時に選択したテンプレートタイプの構造および初期コンテンツに基づいて、新規テンプレートが作成されます。
+* テンプレートタイプは、テンプレートのためのテンプレートとなるものです。テンプレートを作成する際、選択したテンプレートタイプの構造と初期コンテンツを使用して、新しいテンプレートが作成されます。
 
    * テンプレートタイプがコピーされて、テンプレートが作成されます。
    * コピー後のテンプレートとテンプレートタイプとの関連付けは、情報を取得するだけの静的参照のみとなります。
@@ -338,7 +338,7 @@ The [device groups](/help/sites-developing/mobile.md#device-groups) used for an 
 * On the editable template type
 * On the editable template
 
-When creating a new editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
+When creating an editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
 
 >[!CAUTION]
 >
@@ -432,7 +432,7 @@ GitHub のコード
 
 作成されるページの構造を定義します。
 
-* 新しいページの作成時に初期コンテンツ（`/initial`）と統合されます。
+* ページの作成時に初期コンテンツ（`/initial`）と統合されます。
 * 構造に加えた変更は、そのテンプレートを使用して作成されたすべてのページに反映されます。
 * `root`（`structure/jcr:content/root`）ノードは、作成されたページで使用できるコンポーネントのリストを定義します。
    * テンプレート構造で定義されたコンポーネントは、作成されたページで移動することも、作成されたページから削除することもできません。
@@ -446,7 +446,7 @@ GitHub のコード
 作成時に新しいページに表示される初期コンテンツを定義します。
 
 * すべての新しいページにコピーされる `jcr:content` ノードが含まれます。
-* 新しいページの作成時に構造（`/structure`）と統合されます。
+* ページ作成時に構造（`/structure`）と統合されます。
 * 作成後に初期コンテンツが変更されても、既存のページはすべて更新されません。
 * `root` ノードにはコンポーネントのリストが格納され、結果として得られるページで使用できるコンポーネントを定義します。
 * コンテンツが構造モードでコンポーネントに追加され、その後、そのコンポーネントがロック解除された場合（またはコンポーネントのロック解除後にコンテンツが追加された場合）、このコンテンツは初期コンテンツとして使用されます。
@@ -545,7 +545,7 @@ GitHub のコード
 
 ### 使用可能なテンプレート {#template-availability}
 
-サイト管理インターフェイスで新しいページを作成する場合、使用可能なテンプレートのリストは、新しいページの場所と、各テンプレートで指定されている配置制限によって異なります。
+サイト管理インターフェイスでページを作成する場合、使用可能なテンプレートのリストは、新しいページの場所と、各テンプレートで指定されている配置制限によって異なります。
 
 次のプロパティは、新しいページをページ `P` の子として配置する場合に、テンプレート `T` を使用できるかどうかを決定します。これらの各プロパティは、0 個以上の正規表現を保持する複数値の文字列で、パスの照合に使用されます。
 

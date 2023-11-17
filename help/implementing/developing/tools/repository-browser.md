@@ -4,10 +4,10 @@ seo-title: Repository Browser
 description: リポジトリーブラウザーは、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対して、リポジトリーへの読み取り専用ビューを提供します。
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
-workflow-type: ht
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
 source-wordcount: '844'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -52,7 +52,7 @@ Developer Console にアクセスするには、次の操作を実行します�
    ![repobrowser1](/help/implementing/developing/tools/assets/repobrowser1.png)
 
 1. 次に、「**リポジトリーブラウザー**」タブをクリックします。
-1. 「**ポッド**」ドロップダウンリストをクリックして、オーサー層、パブリッシュ層、プレビュー層のいずれかに対応する任意のポッドを選択します。
+1. 作成者、公開、またはプレビューに対応するポッドを選択するには、 **ポッド** 」ドロップダウンリストから選択できます。
 
    ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 

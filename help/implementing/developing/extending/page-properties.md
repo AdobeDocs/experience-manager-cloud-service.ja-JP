@@ -1,13 +1,13 @@
 ---
 title: ページプロパティのビューのカスタマイズ
 description: 作成者がページのプロパティを表示および編集する方法について説明します。
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
+exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 47%
+source-wordcount: '361'
+ht-degree: 48%
 
 ---
-
 
 # ページプロパティのビューのカスタマイズ{#customizing-views-of-page-properties}
 
@@ -70,10 +70,10 @@ ht-degree: 47%
 
 >[!NOTE]
 >
->ライブコピーで使用するページプロパティを設定する場合は、ドキュメントを参照してください [マルチサイトマネージャの拡張](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) を参照してください。
+>ライブコピーで使用するページプロパティを設定する場合は、 [マルチサイトマネージャの拡張](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) を参照してください。
 
 ## ページプロパティの設定例 {#sample-configuration-of-page-properties}
 
 このサンプルは、 [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) 使用を含む [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties). `cq:showOnCreate` と `cq:hideOnEdit` の両方を使用することも説明されています。
 
-このページのコードは、 [GitHub です。](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)
+このページのコードは、 [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).

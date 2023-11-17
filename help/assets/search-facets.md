@@ -4,10 +4,10 @@ description: この記事では、Adobe Experience Manager で検索ファセッ
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2506'
-ht-degree: 97%
+source-wordcount: '2504'
+ht-degree: 96%
 
 ---
 
@@ -108,7 +108,7 @@ CRX リポジトリーのオプションでノード構造を手動で作成す�
 1. 次のいずれかの操作を行います。
 
    * 「**[!UICONTROL プロパティ名]**」フィールドで、オプションのノードを定義する JSON ファイルのパスを指定し、対応するキーと値のペアを指定します。
-   * 「オプション」フィールドの横にある![アセット追加アイコン](assets/do-not-localize/aem_assets_add_icon.png)をタップして、フィルターパネルに入力するオプションの表示テキストと値を指定します。別のオプションを追加するには、![アセット追加アイコン](assets/do-not-localize/aem_assets_add_icon.png)をタップまたはクリックして手順を繰り返します。
+   * 「オプション」フィールドの横にある![アセット追加アイコン](assets/do-not-localize/aem_assets_add_icon.png)をタップして、フィルターパネルに入力するオプションの表示テキストと値を指定します。別のオプションを追加するには、「 ![アセット追加アイコン](assets/do-not-localize/aem_assets_add_icon.png) をクリックし、手順を繰り返します。
 
 1. ユーザーが一度に複数のファイルタイプのオプション（例：「画像」、「ドキュメント」、「マルチメディア」、「アーカイブ」）を選択可能にするには、「**[!UICONTROL 単一の選択]**」チェックボックスをオフにします。「**[!UICONTROL 単一の選択]**」をオンにすると、ユーザーは一度に 1 つのファイルタイプのオプション選択できます。
 
@@ -145,7 +145,7 @@ The `Tags` 述語では、タグに基づいたアセットの検索を実行で
 
    ![タグの述語の一般的な設定](assets/tags_predicate.png)
 
-1. 「**[!UICONTROL 説明]**」フィールドに説明を任意で入力し、「**[!UICONTROL 完了]**」をクリックまたはタップします。
+1. Adobe Analytics の **[!UICONTROL 説明]** フィールドに説明を入力し、「 **[!UICONTROL 完了]**.
 1. 検索パネルに移動します。**[!UICONTROL タグ]**&#x200B;の述語が検索パネルに追加されています。
 1. アセットの検索に使用するタグを指定するか、候補のリストから選択します。
 1. 指定したすべてのタグに一致するアセットを検索するには、「**[!UICONTROL すべてに一致]**」を選択します。

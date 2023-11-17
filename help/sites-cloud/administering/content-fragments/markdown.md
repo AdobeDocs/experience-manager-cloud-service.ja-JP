@@ -3,13 +3,13 @@ title: マークダウン
 description: コンテンツフラグメントエディターがページオーサリングとヘッドレス配信の両方にマークダウン構文を使用して、コンテンツを簡単に作成する仕組みを説明します。
 feature: Content Fragments
 role: User
-source-git-commit: af97fec754edae6216551763fd20cad5ee07179c
+exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 60%
+source-wordcount: '559'
+ht-degree: 61%
 
 ---
-
 
 # マークダウン {#markdown}
 
@@ -31,7 +31,7 @@ ht-degree: 60%
 
 ## 見出し表記 {#heading-notation}
 
-ヘッダーを作成するには、見出しの前にハッシュタグ (#) を配置します。 H1 には 1 つのハッシュタグ (#)、H2 には 2 つのハッシュタグ (##) が使用されます。 最大 6 個のハッシュタグを使用できます。 次に例を示します。
+ヘッダーを作成するには、見出しの前にハッシュタグ (#) を配置します。 H1 には 1 つのハッシュタグ (#) が使用され、H2 には 2 つのハッシュタグ (##) が使用されます。 最大 6 個のハッシュタグを使用できます。 次に例を示します。
 
     `## This is an H2`
 

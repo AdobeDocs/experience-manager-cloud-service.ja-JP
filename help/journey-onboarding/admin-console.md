@@ -2,10 +2,10 @@
 title: Admin Console へのアクセス
 description: オンボーディングに必要な準備と AEMaaCS 構造の基本事項を理解したら、Admin Console に初めてログインする準備が整います。
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 85%
+source-wordcount: '1097'
+ht-degree: 84%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe ID には次の 3 種類があります。
 
 * **Enterprise ID**：組織は、ユーザーのアカウントに対する管理を強化したいと考えるのが普通です。Enterprise ID を作成できるのはシステム管理者のみであり、これらのアカウントを所有するのはお客様組織です（アドビはホストとしてのみ機能します）。
 
-* **Federated ID**：Federated ID を使用すると、組織はアカウントを完全に所有して管理できます。これを行うには、組織は Adobe Experience Cloud を SAML2 シングルサインオン（SSO）システムと統合する必要があります。これにより、ユーザーはアドビがホストするアカウントではなく、組織の SSO システムに対して認証できます。
+* **Federated ID**：Federated ID を使用すると、組織はアカウントを完全に所有して管理できます。これをおこなうには、組織でAdobe Experience Cloudを SAML2 シングルサインオン (SSO) システムと統合する必要があります。 これにより、ユーザーはアドビがホストするアカウントではなく、組織の SSO システムに対して認証できます。
 
 システム管理者は、Enterprise ID または Federated ID を設定する前に、個人 ID を使用して自分自身とチームを AEM as a Cloud Service にオンボードすることを決定できます。Enterprise ID または Federated ID を設定したら、それらの ID を使用するようにメンバーを移行できます。
 

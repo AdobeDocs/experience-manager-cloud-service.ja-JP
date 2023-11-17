@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service での Sling Resource Merger の使用
 description: Sling Resource Merger は、リソースのアクセスとマージのためのサービスを提供します
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 100%
+source-wordcount: '1157'
+ht-degree: 95%
 
 ---
 
@@ -189,7 +189,7 @@ AEM で Sling Resource Merger を使用する目的は、次のとおりです�
 
 * **ノードの子の非表示（そのノードのプロパティは維持）**
 
-  ノード、そのプロパティおよびその子が `/libs` に定義されていて、ノードとそのプロパティは `/apps` オーバーレイ／オーバーライドで必要であるものの、一部またはすべての子ノードが `/apps` オーバーレイ／オーバーライドで不要な場合に、不要なものを非表示にできます。
+  ノード、そのプロパティおよびその子が `/libs` に定義されていて、ノードとそのプロパティは、 `/apps` オーバーレイ/オーバーライドしますが、一部またはすべての子ノードが `/apps` overlay/override を選択します。
 
    1. `/apps` 以下に、対応するノードを作成します。
    1. `sling:hideChildren` プロパティを作成します。
@@ -221,7 +221,7 @@ Sling Resource Merger には 2 つのカスタムリソースプロバイダー�
 >
 >リソースにアクセスする場合は、適切なマウントポイントを使用することをお勧めします。
 >
->適切なマウントポイントを使用すれば、Sling Resource Merger が確実に呼び出され、完全にマージされたリソースが確実に返されます（`/libs` からレプリケートする必要がある構造が低減します）。
+>これにより、Sling Resource Merger が確実に呼び出され、完全にマージされたリソースが確実に返されます（からレプリケートする必要がある構造が削減されます）。 `/libs`) をクリックします。
 
 * オーバーレイ：
 

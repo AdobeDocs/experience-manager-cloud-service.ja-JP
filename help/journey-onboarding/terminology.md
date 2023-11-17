@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の用語
 description: AEMaaCS にログインする前に、システムの用語と基本構造を理解しておくと役に立ちます。
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 87%
+source-wordcount: '463'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 87%
 
 AEM as a Cloud Service は強力かつ柔軟なツールです。どのようなツールであれ、使用するには、ツールの構成とツールの説明に使用される用語および言語を理解しておく必要があります。このドキュメントでは、システムの使用を開始する前に理解しておく必要がある主な用語をまとめています。
 
-このドキュメントを読み終えると、次のことを理解できるようになります。
+このドキュメントを読んだ後、
 
 * AEMaaCS を構成する様々なレイヤー
 * 各レイヤーの基本的機能
@@ -44,9 +44,9 @@ AEM as a Cloud Service は強力かつ柔軟なツールです。どのような
    * WKND Media 部門用の 1 つの Assets プログラム
 * WKND Magazine プログラムにも WKND Media プログラムにも、開発、ステージングおよび実稼動の各&#x200B;**環境**&#x200B;があります。
 * **リポジトリ** は、WKND Magazine と WKND Media のカスタムコードおよびアプリケーションを維持管理するために使用されます。
-* 様々な&#x200B;**ツールとワークフロー**&#x200B;がリポジトリ全体で機能して、CI／CD パイプラインを使用したコードのデプロイ、ログへのアクセス、AEM へのアクセスなどを行います。
+* 様々 **ツールとワークフロー** リポジトリをまたいで、CI/CD パイプライン、アクセスログ、AEMなどを使用してコードをデプロイします。
 
-## 次のステップ {#what-is-next}
+## 次の手順 {#what-is-next}
 
 これで AEM オンボーディング ジャーニーのこの部分を完了したので、次のことを理解しました。
 

@@ -4,9 +4,9 @@ description: コンテンツをAdobe Experience Manager as a Cloud Serviceに移
 hide: true
 hidefromtoc: true
 exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '461'
 ht-degree: 9%
 
 ---

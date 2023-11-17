@@ -2,9 +2,9 @@
 title: SLA レポート
 description: 契約済みのサービスレベル契約 (SLA) に対する、実稼動AEM環境のパフォーマンスを確認する方法を説明します。
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '245'
 ht-degree: 9%
 
 ---
@@ -32,7 +32,7 @@ SLA レポートデータは、 **レポート** タブをクリックします�
 
 ## SLA 指標 {#sla-metrics}
 
-選択した年のグラフには、多数のデータセットが含まれます。
+選択した年のグラフには、複数のデータセットが含まれます。
 
 * **パブリッシュ層の契約**  — これは、パブリッシュ層のAdobeとの契約で定義される SLA です。
 

@@ -2,10 +2,10 @@
 title: アセットへのリンクの共有方法
 description: リンクを生成し、 [!DNL Assets view]  アプリケーションへのアクセス権を持たない他のユーザーとアセットを共有します。
 exl-id: 6e05b06c-7436-40e3-acee-c8b1ed218f9e
-source-git-commit: e2efffe0192f7914fd97178884b7938b84fd9a27
-workflow-type: ht
-source-wordcount: '407'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '406'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 アセットまたはアセットを含むフォルダーのリンクを生成するには：
 
-1. アセットまたはアセットを含むフォルダーを選択し、「**[!UICONTROL リンクを共有]**」をクリックします。
+1. アセットを含むアセット、フォルダーまたはその両方を選択し、 **[!UICONTROL リンクを共有]**.
 
 1. 調整したい場合は、カレンダーアイコンをクリックし、「**[!UICONTROL 有効期限]**」フィールドを使用してリンクの有効期限を定義します。 また、`yyyy-mm-dd` 形式で日付を直接指定することもできます。デフォルトでは、リンクの有効期限は共有日から 2 週間に設定されています。
 

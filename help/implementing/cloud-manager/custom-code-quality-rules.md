@@ -2,9 +2,9 @@
 title: カスタムコード品質ルール
 description: このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。これらは、Adobe Experience Manager Engineering のベストプラクティスに基づいています。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: a62312954db0631cf594a27db36bab8a2441360f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4097'
+source-wordcount: '4095'
 ht-degree: 87%
 
 ---
@@ -542,7 +542,7 @@ AEMアプリケーションは HTTP プロトコルを使用して他のアプ�
 
 このルールは、HttpClient オブジェクトがメソッド内でプライベートではなく、クラスレベルでグローバルであることを確認するので、再利用できます。 この場合、httpClient フィールドは、クラスのコンストラクターで設定するか、 `activate()` メソッド（このクラスが OSGi コンポーネント/サービスの場合）
 
-また、 [最適化ガイド](https://hc.apache.org/httpclient-legacy/performance.html) HttpClient の使用に関するベストプラクティスを参照してください。
+次を確認します。 [最適化ガイド](https://hc.apache.org/httpclient-legacy/performance.html) HttpClient の使用に関するベストプラクティスを参照してください。
 
 #### 非準拠コード {#non-compliant-code-14}
 

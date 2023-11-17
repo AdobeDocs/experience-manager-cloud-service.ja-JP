@@ -2,9 +2,9 @@
 title: Adobe Experience Manager（AEM）as a Cloud Service の主な変更点
 description: Adobe Experience Manager（AEM）as a Cloud Service の主な変更点。
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 30edc83364dd9666b94f54048abc8b7f92ad6ce3
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '868'
 ht-degree: 49%
 
 ---
@@ -79,7 +79,7 @@ OSGi バンドルおよび設定の変更は、CI/CD パイプラインを通じ
 
 ## カスタム実行モードは許可されていません {#custom-runmodes}
 
-AEM as a Cloud Service では、追加またはカスタムの実行モードは使用できません。AEM Cloud Serviceに標準で用意されている実行モードの一覧については、このドキュメントを参照してください。 [AEMにデプロイします。](/help/implementing/deploying/overview.md#runmodes)
+AEM as a Cloud Service では、追加またはカスタムの実行モードは使用できません。AEM Cloud Serviceに標準で用意されている実行モードの一覧については、 [AEMへのデプロイ (as a Cloud Service)](/help/implementing/deploying/overview.md#runmodes).
 
 ## レプリケーションエージェントの削除と関連する変更 {#replication-agents}
 

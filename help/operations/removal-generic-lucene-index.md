@@ -2,10 +2,10 @@
 title: 汎用 Lucene インデックスの削除
 description: 汎用 Lucene インデックスの計画的な削除と、それによって受ける可能性がある影響について説明します。
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 100%
+source-wordcount: '1335'
+ht-degree: 95%
 
 ---
 
@@ -38,7 +38,7 @@ org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-アドビは、大規模な顧客データボリュームをサポートするために、新しい AEM as a Cloud Service 環境での汎用 Lucene インデックスの作成を終了します。さらに、既存のリポジトリからインデックスを削除します。詳しくは、このドキュメントの末尾で示されている[タイムライン](#timeline)を参照してください。
+アドビは、大規模な顧客データボリュームをサポートするために、新しい AEM as a Cloud Service 環境での汎用 Lucene インデックスの作成を終了します。また、Adobeは既存のリポジトリからインデックスを削除します。 詳しくは、このドキュメントの末尾で示されている[タイムライン](#timeline)を参照してください。
 
 アドビでは、`costPerEntry` および `costPerExecution` プロパティを使用してインデックスコストを既に調整しており、`/oak:index/pathreference` などの他のインデックスが可能な限り環境設定で使用されるようにしています。
 
@@ -74,7 +74,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 
 ## 汎用 Lucene インデックスに対する可能性のある依存関係 {#potential-dependencies}
 
-アプリケーションや AEM インストールが、オーサーインスタンスであってもパブリッシュインスタンスであっても、汎用 Lucene インデックスに依存する可能性がある領域は多数あります。
+アプリケーションやAEMのインストールが、オーサーインスタンスとパブリッシュインスタンスの両方で汎用の Lucene インデックスに依存する場合がある領域がいくつかあります。
 
 ### パブリッシュインスタンス {#publish-instance}
 
@@ -121,7 +121,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 
 ### オーサーインスタンス {#author-instance}
 
-顧客アプリケーションサーブレット、OSGi コンポーネントおよびレンダリングスクリプトでのクエリに加えて、汎用 Lucene インデックスには作成者固有の様々な用途が考えられます。
+顧客アプリケーションサーブレット、OSGi コンポーネント、レンダリングスクリプトのクエリに加えて、汎用 Lucene インデックスの作成者固有の使用も複数存在します。
 
 #### 参照検索 {#reference-search}
 

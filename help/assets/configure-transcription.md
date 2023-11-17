@@ -11,10 +11,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1690'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 94%
 
 に移動します。 **[!UICONTROL ツール]** > **[!UICONTROL Assets]** > **[!UICONTROL 処理プロファイル]** をクリックし、 **[!UICONTROL 作成]** ボタンをクリックして、オーディオおよびビデオファイルの転写を生成する AI ベースの処理プロファイルを作成します。 デフォルトでは、処理プロファイルページには 3 つのタブ（「画像」、「ビデオ」、「カスタム」）のみ表示されます。ただし、お使いの [!DNL Experience Manager Assets] インスタンスに [!DNL Azure Media Services] を設定してある場合は、「**[!UICONTROL コンテンツ AI]**」タブも表示されます。処理プロファイルの作成時に「**[!UICONTROL コンテンツ AI]**」タブが表示されない場合は、[!DNL Azure] 資格情報を確かめてください。
 
-Adobe Analytics の **[!UICONTROL コンテンツ AI]** タブで、 **[!UICONTROL 新規追加]** ボタンをクリックして、転写を設定します。 ここでは、ドロップダウンリストからファイルタイプを選択して、トランスクリプトを生成するためのファイル形式（MIME タイプ）を含めたり除外したりすることができます。次の図では、サポートされているオーディオおよびビデオファイルがすべて含まれ、テキストファイルは除外されています。
+Adobe Analytics の **[!UICONTROL コンテンツ AI]** タブで、 **[!UICONTROL 新規追加]** ボタンをクリックして、転写を設定します。 ここでは、ドロップダウンリストからファイルタイプを選択して、トランスクリプトを生成するためのファイル形式（MIME タイプ）を含めたり除外したりすることができます。 次の図では、サポートされているオーディオおよびビデオファイルがすべて含まれ、テキストファイルは除外されています。
 
 「**[!UICONTROL 同じディレクトリに VTT トランスクリプトを作成]**」トグルを有効にして、トランスクリプトレンディション（.vtt ファイル）がオリジナルアセットが存在するフォルダーに作成、保存されるようにします。他のレンディションも、この設定に関係なく、デフォルトの DAM アセット処理ワークフローで生成されます。
 

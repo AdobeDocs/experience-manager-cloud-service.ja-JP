@@ -2,9 +2,9 @@
 title: SSL 証明書の追加
 description: Cloud Manager のセルフサービスツールを使用して独自の SSL 証明書を追加する方法を説明します。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '551'
 ht-degree: 82%
 
 ---
@@ -19,7 +19,7 @@ Cloud Manager のセルフサービスツールを使用して独自の SSL 証�
 
 ## 証明書の要件 {#certificate-requirements}
 
-セクションを確認してください **証明書の要件** ドキュメントの [SSL 証明書管理の概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) 追加する証明書がAEM as a Cloud Serviceでサポートされていることを確認するため。
+セクションを確認する **証明書の要件** ドキュメントの [SSL 証明書管理の概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) 追加する証明書がAEM as a Cloud Serviceでサポートされていることを確認するため。
 
 ## 証明書の追加 {#adding-a-cert}
 

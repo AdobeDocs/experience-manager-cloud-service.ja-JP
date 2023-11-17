@@ -2,9 +2,9 @@
 title: WAF ルールを含むトラフィックフィルタールール
 description: Web アプリケーションファイアウォール（WAF）ルールを含むトラフィックフィルタールールの設定
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: a129c188e9ec6871c86245acb5f0bf0333fdc340
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3435'
 ht-degree: 97%
 
 ---
@@ -113,8 +113,8 @@ ht-degree: 97%
 
 1. RDE 以外の環境タイプの場合は、Cloud Manager でターゲットデプロイメント設定パイプラインを作成します。
 
-   * [実稼動パイプラインについては、このドキュメントを参照してください。](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-   * [実稼動以外のパイプラインについては、このドキュメントを参照してください。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   * [実稼動パイプラインの設定を参照してください。](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * [実稼動以外のパイプラインの設定を参照](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 RDE の場合は、コマンドラインが使用されますが、現時点では RDE はサポートされていません。
 
@@ -588,7 +588,7 @@ CDN ログで使用されるフィールド名と、それらの簡単な説明�
 
 ## 推奨されるスタータールール {#recommended-starter-rules}
 
-以下の推奨ルールを `cdn.yaml` にコピーして開始できます。ログモードで開始してトラフィックを分析し、満たしたらブロックモードに変更します。Web サイトのライブトラフィックの一意の特性に基づいてルールを変更することが必要な場合があります。
+以下の推奨ルールを `cdn.yaml` にコピーして開始できます。ログモードで開始してトラフィックを分析し、満たしたらブロックモードに変更します。Web サイトのライブトラフィックに固有の特性に基づいて、ルールを変更することができます。
 
 ```
 kind: "CDN"

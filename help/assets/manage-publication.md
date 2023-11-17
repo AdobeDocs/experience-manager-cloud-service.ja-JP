@@ -5,10 +5,10 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1627'
-ht-degree: 95%
+ht-degree: 93%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 95%
 
 ## 「クイック公開」を使用したアセットの公開 {#quick-publish}
 
-クイック公開を使用すると、選択した宛先に直ちにコンテンツを公開できます。 [!DNL Experience Manager Assets] コンソールで、親フォルダーに移動し、公開するアセットまたはフォルダーをすべて選択します。ツールバーの「**[!UICONTROL クイック公開]**」オプションをクリックし、アセットの公開先をドロップダウンリストから選択します。
+クイック公開を使用すると、選択した宛先に直ちにコンテンツを公開できます。 [!DNL Experience Manager Assets] コンソールで、親フォルダーに移動し、公開するアセットまたはフォルダーをすべて選択します。クリック **[!UICONTROL クイック公開]** オプションを選択し、ドロップダウンリストからアセットを公開する宛先を選択します。
 
 ![クイック公開](assets/quick-publish-to-aem.png)
 
@@ -96,7 +96,7 @@ Only the selected folder content and references are published.
 
 上図で、「**[!UICONTROL 公開ターゲット]**」属性の値が異なることがわかります。[!DNL Experience Manager Assets] への公開（`Destination: Publish`）を選択したことを思い出してください。表示では、フォルダーと 1 つのアセットのみ `AEM` に公開され、他の 2 つのアセットは `AEM` と `Dynamic Media` の両方に公開されますが、これはなぜでしょうか。
 
-ここで、フォルダープロパティの役割を理解しておく必要があります。フォルダーの **[!UICONTROL Dynamic Media 公開モード]**&#x200B;プロパティは、公開で重要な役割を果たします。フォルダーのプロパティを表示するには、フォルダーを選択し、ツールバーの「**[!UICONTROL プロパティ]**」をクリックします。アセットの場合は、アセットの親フォルダーのプロパティを参照します。
+ここで、フォルダープロパティの役割を理解しておく必要があります。フォルダーの **[!UICONTROL Dynamic Media パブリッシングモード]**&#x200B;プロパティは、公開において重要な役割を果たします。フォルダーのプロパティを表示するには、フォルダーを選択し、ツールバーの「**[!UICONTROL プロパティ]**」をクリックします。アセットの場合は、アセットの親フォルダーのプロパティを参照します。
 
 定義されている&#x200B;**[!UICONTROL 宛先]**&#x200B;と **[!UICONTROL Dynamic Media 公開モード]**&#x200B;に応じて公開がどのように行われるかを次の表に示します。
 
@@ -133,7 +133,6 @@ Only the selected folder content and references are published.
 >[!DNL Manage Publication] ウィザードをカスタマイズしてある場合、カスタマイズ部分は既存の機能で引き続き動作します。
 >
 >ただし、既存のカスタマイズ部分を削除して、新しい [!DNL Manager Publication] 機能を使用することができます。
-
 
 ## 後からのアセットの公開 {#publish-assets-later}
 
@@ -179,9 +178,10 @@ Only the selected folder content and references are published.
 
 ## 公開をリクエスト {#request-publication}
 
-`Request Publication` オプションは、[!DNL AEM] Assets 環境で公開する前に、アセットのワークフローを認証する際に役立ちます。[!DNL AEM] は、様々なユーザーに異なるレベルの権限を提供します。アセットをアップロードする&#x200B;*投稿者*&#x200B;になることもできますが、アップロードが確認されるまでアセットを公開できません。また、*管理者*&#x200B;であれば、アセットの読み取りワークフローと書き込みワークフローを管理できます。
+`Request Publication` オプションは、[!DNL AEM] Assets 環境で公開する前に、アセットのワークフローを認証する際に役立ちます。[!DNL AEM] は、様々なユーザーに異なるレベルの権限を提供します。アセットをアップロードする&#x200B;*投稿者*&#x200B;になることもできますが、アップロードが確認されるまでアセットを公開できません。また、 *管理者* アセットの読み取りワークフローと書き込みワークフローを管理できます。
 
 「公開をリクエスト」オプションは、次のユーザーが使用できます。
+
 * **投稿者：**[!DNL AEM] Assets に投稿できるユーザーの場合、[!DNL AEM] Assets ワークフローへのアクセスが制限されています。「`Manage publication`」ボタンが非表示になっています。投稿者は、アセットを追加することによって投稿のみできますが、アセットを公開したり、ワークフローへの読み取りアクセス権を持つことはできません。
 
 * **ワークフローユーザー：**&#x200B;このユーザーはアセットを公開できませんが、ワークフローに対する読み取りアクセス権があります。ワークフローユーザーは、次の操作を実行できます。

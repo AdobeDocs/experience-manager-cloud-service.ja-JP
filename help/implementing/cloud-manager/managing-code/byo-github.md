@@ -2,9 +2,9 @@
 title: Cloud Manager での独自の GitHub リポジトリーの操作
 description: 独自の GitHub リポジトリを操作するように Cloud Manager を設定する方法について説明します。
 feature: Release Information
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '721'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ### リポジトリーを追加 {#add-repo}
 
-1. Cloud Manager で、 **プログラムの概要** ページで、「 」をタップまたはクリックします。 **リポジトリ** タブをクリックして、 **リポジトリ** ページを開き、をクリックします。 **リポジトリを追加**.
+1. Cloud Manager で、 **プログラムの概要** ページで、 **リポジトリ** タブをクリックして、 **リポジトリ** ページを開き、をクリックします。 **リポジトリを追加**.
 
 1. Adobe Analytics の **リポジトリを追加** ダイアログ、選択 **プライベートリポジトリ** をリポジトリタイプとして使用します。
 
@@ -39,11 +39,11 @@ ht-degree: 1%
 
    ![独自のリポジトリを追加](/help/implementing/cloud-manager/assets/repos/add-own-github.png)
 
-1. 「**保存**」して閉じるをタップまたはクリックします。
+1. 「**保存**」を選択します。
 
 >[!TIP]
 >
->Cloud Manager でのリポジトリ管理について詳しくは、このドキュメントを参照してください。 [Cloud Manager リポジトリーを参照してください。](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+>Cloud Manager でのリポジトリ管理について詳しくは、 [Cloud Manager リポジトリ](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md).
 
 ### プライベートリポジトリの所有権の検証 {#validate-ownership}
 
@@ -55,9 +55,9 @@ Cloud Manager は GitHub リポジトリについて認識しますが、アク�
 
 1. Cloud Manager では、GitHub アプリを使用して、リポジトリと安全にやり取りします。
    * GitHub 組織の所有者が、次の場所にあるアプリをインストールする必要があります。 `https://github.com/apps/cloud-manager-for-aem-stage` リポジトリへのアクセス権を付与します。
-   * この処理の詳細については、GitHub のドキュメントを参照してください。
+   * この方法について詳しくは、 GitHub のドキュメントを参照してください。
 
-1. セキュリティを強化するには、リポジトリのデフォルトブランチにシークレットファイルを作成する必要があります。 タップまたはクリック **生成**.
+1. セキュリティを強化するには、リポジトリのデフォルトブランチにシークレットファイルを作成する必要があります。 選択 **生成**.
 
 1. 「 」をタップまたはクリックして、秘密鍵ファイルの生成を確認します。 **確認**.
 
@@ -71,7 +71,7 @@ Cloud Manager は GitHub リポジトリについて認識しますが、アク�
 
 1. GitHub リポジトリのデフォルトブランチ ( ) に、という名前の新しいファイルを作成します。 `.well-known/adobe/cloud-manager-challenge` をクリックし、そのファイルに秘密のファイルの内容を貼り付けて保存します。
 
-1. アプリケーションがインストールされ、リポジトリにシークレットファイルが存在したら、をタップまたはクリックできます **検証** （内） **プライベートリポジトリの所有権の検証** ダイアログ。
+1. アプリケーションがインストールされ、リポジトリにシークレットファイルが存在する場合は、 **検証** （内） **プライベートリポジトリの所有権の検証** ダイアログ。
 
 デスクトップアプリケーションは任意の順序でインストールでき、シークレットファイルを作成できます。 ただし、検証する前に、両方の手順を完了する必要があります。
 
@@ -79,9 +79,9 @@ Cloud Manager は GitHub リポジトリについて認識しますが、アク�
 
 ![未検証のリポジトリ](/help/implementing/cloud-manager/assets/repos/unvalidated-repo.png)
 
-なお、 **タイプ** 列は、Adobeが提供するリポジトリ (**Adobe**) と独自の GitHub リポジトリ (**GitHub**) をクリックします。
+The **タイプ** 列は、Adobeが提供するリポジトリ (**Adobe**) と独自の GitHub リポジトリ (**GitHub**) をクリックします。
 
-検証を完了するために後でリポジトリに戻る必要がある場合は、 **リポジトリ** ページで、追加した GitHub リポジトリを表す行の省略記号ボタンをタップまたはクリックし、「 」を選択します。 **所有権の検証** を選択します。
+検証を完了するために後でリポジトリに戻る必要がある場合は、 **リポジトリ** ページで、追加した GitHub リポジトリを表す行の省略記号ボタンを選択し、「 」を選択します。 **所有権の検証** を選択します。
 
 ## Cloud Manager での独自の GitHub リポジトリの使用 {#using}
 
@@ -101,7 +101,7 @@ Cloud Manager で GitHub リポジトリの検証が完了すると、統合が�
 
 ## 制限事項 {#limitations}
 
-独自の GitHub リポジトリを Cloud Manager で使用する際は、次の制限事項に注意してください。
+独自の GitHub リポジトリを Cloud Manager で使用する際の制限事項について説明します。
 
 * GitHub リポジトリを、管理するパイプラインの直接リポジトリソースとして使用することはできません。
    * この機能は、予定されています。

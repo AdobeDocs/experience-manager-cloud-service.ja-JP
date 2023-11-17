@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2490'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -124,7 +124,7 @@ IMS 設定には、次の 2 つの手順が含まれます。
 
 1. Adobe IMS 設定ページで、「**[!UICONTROL 作成]**」をクリックします。「**[!UICONTROL Adobe IMS テクニカルアカウント設定]**」ページが表示されます。
 
-1. 「**[!UICONTROL 証明書]**」タブで、**[!UICONTROL クラウドソリューション]**&#x200B;ドロップダウンリストから「**[!UICONTROL Adobe Stock]**」を選択します。
+1. Adobe Analytics の **[!UICONTROL 証明書]** タブ、選択 **[!UICONTROL Adobe Stock]** から **[!UICONTROL クラウドソリューション]** 」ドロップダウンリストから選択できます。
 
 1. 証明書を作成するか、既存の証明書を設定に再利用できます。
 
@@ -151,7 +151,7 @@ Adobe 開発者コンソールで、プロジェクトと API を組織レベル
 1. システム管理者権限で Adobe 開発者コンソールにログインします。デフォルトの URL は [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui) です。
 
 
-   ドロップダウン（組織）リストから、正しい IMS 組織（Stock 使用権限）が選択されていることを確認します。
+   正しい IMS 組織（Stock 使用権限）がドロップダウン（組織）リストから選択されていることを確認します。
 
 1. 「**[!UICONTROL 新規プロジェクトを作成]**」をクリックします。システムで生成された名前を持つ空のプロジェクトが組織に対して作成されます。
 
@@ -308,7 +308,7 @@ IMS アカウントを設定するには：
 
 1. 右上隅のユーザーアイコンをクリックし、「**[!UICONTROL 環境設定]**」をクリックします。**[!UICONTROL ユーザー管理]**&#x200B;ウィンドウが開きます。
 
-1. 目的の&#x200B;**[!UICONTROL 在庫設定]**&#x200B;をドロップダウンリストから選択し、「**[!UICONTROL 確定]**」をクリックして、設定をアクティベートします。
+1. 目的のを選択します。 **[!UICONTROL 在庫設定]** ドロップダウンリストから、 **[!UICONTROL 確定]** をクリックして設定をアクティベートします。
 
    ![user-preferences](assets/aem-stock-preferences.png)
 

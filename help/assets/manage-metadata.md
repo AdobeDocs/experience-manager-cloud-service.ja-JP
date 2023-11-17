@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: ht
-source-wordcount: '2003'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '2000'
+ht-degree: 98%
 
 ---
 
@@ -135,7 +135,7 @@ Adobe Experience Manager Assets を使用すると、複数のアセットのメ
 
 1. 編集するアセットの場所に移動します。
 1. 共通のプロパティを編集するアセットを選択します。
-1. ツールバーで「**[!UICONTROL プロパティ]**」をタップまたはクリックして、選択したアセットの[!UICONTROL プロパティ]ページを開きます。
+1. ツールバーで、「 」を選択します。 **[!UICONTROL プロパティ]** 開く [!UICONTROL プロパティ] 選択したアセットのページ。
 
    >[!NOTE]
    >
@@ -149,9 +149,8 @@ Adobe Experience Manager Assets を使用すると、複数のアセットのメ
    >* [!UICONTROL プロパティ]ページで、選択をキャンセルすることでアセットリストからアセットを削除できます。アセットリストは、デフォルトではすべてのアセットが選択されています。リストから削除するアセットのメタデータは更新されていません。
    >* アセットリストの上部で、「**[!UICONTROL タイトル]**」の横にあるチェックボックスをオンにして、アセットの選択とリストの消去を切り替えます。
 
-
-1. アセットに別のメタデータスキーマを選択するには、ツールバーの「]**設定**[!UICONTROL 」をタップまたはクリックし、目的のスキーマを選択します。変更内容を保存します。
-1. 複数の値が含まれるフィールドで、既存のメタデータに新しいメタデータを追加するには、「**[!UICONTROL 追加モード]**」を選択します。このオプションを選択しないと、フィールド内の既存のメタデータが新しいメタデータに置換されます。「**[!UICONTROL 送信]**」をタップまたはクリックします。
+1. アセットに別のメタデータスキーマを選択するには、「 **[!UICONTROL 設定]** ツールバーで、目的のスキーマを選択します。 変更内容を保存します。
+1. 複数の値が含まれるフィールドで、既存のメタデータに新しいメタデータを追加するには、「**[!UICONTROL 追加モード]**」を選択します。このオプションを選択しないと、フィールド内の既存のメタデータが新しいメタデータに置換されます。「**[!UICONTROL 送信]**」を選択します。
 
    >[!CAUTION]
    >
@@ -266,4 +265,3 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 >
 >* [XMP メタデータ](xmp-metadata.md)
 >* [メタデータの編集と追加](meta-edit.md)
-

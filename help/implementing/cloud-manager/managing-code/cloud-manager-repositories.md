@@ -2,10 +2,10 @@
 title: Cloud Manager リポジトリ
 description: Cloud Manager で Git リポジトリを作成、表示および削除する方法について説明します。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 87%
+source-wordcount: '582'
+ht-degree: 85%
 
 ---
 
@@ -24,7 +24,7 @@ Cloud Manager でリポジトリを表示および管理するには、次の手
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. 次から： **プログラムの概要** ページで、「 」をタップまたはクリックします。 **リポジトリ** タブをクリックして、 **リポジトリ** ページに貼り付けます。
+1. 次から： **プログラムの概要** ページで、 **リポジトリ** タブをクリックして、 **リポジトリ** ページに貼り付けます。
 
 1. クリック **リポジトリを追加**.
 
@@ -130,5 +130,5 @@ Git サブモジュールを使用する場合は、次の制限事項に注意�
 * セキュリティ上の理由から、Git の URL に資格情報を埋め込まないでください。
 * 特に必要がない限り、シャローサブモジュールを使用することを強くお勧めします。
    * それには、サブモジュールごとに `git config -f .gitmodules submodule.<submodule path>.shallow true` を実行します。
-* Git サブモジュール参照は、特定の Git コミットに保存されます。その結果、サブモジュールリポジトリに対して変更を加えた場合は、 参照されるコミットを更新する必要があります。
+* Git サブモジュール参照は、特定の Git コミットに保存されます。その結果、サブモジュールリポジトリを変更する場合は、参照されるコミットを更新する必要があります。
    * 使用するコマンドの例：`git submodule update --remote`

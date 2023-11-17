@@ -1,9 +1,10 @@
 ---
 title: Adobe Express用AEM Assetsアドオン
 description: AEM Assets add-on for AEM Assetsを使用すると、Adobe Expressユーザーインターフェイス内からAdobe Expressに保存されているアセットに直接アクセスできます。
-source-git-commit: e9ff2f2b15642288e82ac6f900dc567231bf85c7
+exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ AEM Assets内のAdobe Expressと 1 つ以上の環境にアクセスする権限
 
 1. Adobe ExpressWeb アプリケーションを開きます。
 
-1. 新しいテンプレートまたはプロジェクトを読み込むか、新しいアセットを作成して、新しい空のキャンバスを開きます。
+1. 新しいテンプレートやプロジェクトを読み込むか、アセットを作成して、新しい空のキャンバスを開きます。
 
 1. クリック **[!UICONTROL アドオン]** は、左側のナビゲーションペインで使用できます。
 
@@ -64,4 +65,3 @@ Express キャンバスに適切な変更を組み込んだ後、AEM Assetsリ�
 1. クリック **[!UICONTROL アップロード]** をクリックして、AEM Assetsにアセットをアップロードします。
 
    ![AEMでのアセットの保存](assets/aem-assets-add-on-save.png)
-

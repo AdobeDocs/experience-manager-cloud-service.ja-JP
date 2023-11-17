@@ -6,10 +6,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3172'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -168,13 +168,13 @@ Cloud Service と署名する順序を選択するには：
 
    「**[!UICONTROL Adobe Sign Cloud Service]**」リストに何も表示されていない場合は、[ [!DNL Adobe Sign] の設定： [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)の記事に従い、サービスを設定してください。
 
-   ドロップダウンリストには、ツール／**[!UICONTROL クラウドサービス]**／**[!UICONTROL Adobe Sign]** の `global` フォルダーに存在するクラウドサービスが表示されます。また、このドロップダウンには、アダプティブフォームの作成時に「**[!UICONTROL 設定コンテナ]**」フィールドで選択したクラウドサービスに存在するリストも含まれます。
+   ドロップダウンリストには、 `global` ツール/のフォルダー **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. また、ドロップダウンリストには、選択したCloud Serviceー内に存在するフォルダーが一覧表示されます。 **[!UICONTROL 設定コンテナ]** フィールドに値を入力する必要があります。
 
 1. 「**[!UICONTROL 受信者の署名順序]**」ドロップダウンから、署名順序を選択します。受信者は、アダプティブフォームを&#x200B;**[!UICONTROL 連続]**&#x200B;して（指定順に）署名することも、**[!UICONTROL 同時]**&#x200B;に（順不同で）署名することもできます。
 
    順に署名する場合は、Adobe Sign 契約書は一度に 1 人の受信者に送られます。割り当てられたアクションを受信者が完了すると、契約書が次の受信者に送信されます。以下、同様の処理が繰り返されます。
 
-   同時に署名する場合は、すべての受信者が Adobe Sign 契約書を受け取り、並行してアクションを実行できます。
+   すべての受信者が同時にAdobe Sign契約を受け取り、相互に並行して行動できます。
 
 1. 「契約 ID」フィールドを使用して、bindref を契約 ID（agreementId）に関連付けます。これにより、スキーマベースフォームの送信データの afBoundData セクションに契約 ID が追加されます。すべての Adobe Sign 対応フォームの送信済みデータの afSubmissionInfo セクションにも契約 ID が追加されます。カスタムコードを使用して、契約ステータスのトラッキングに契約 ID を使用できます（カスタム実装が必要です）。
 
@@ -286,7 +286,7 @@ Adobe Sign 契約 ID（agreementId）は、アダプティブフォームの送�
 <!-- Remove when forms portal goes live
 >[!NOTE]
 >
->Data of the Adaptive Form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
+>Data of the Adaptive Form is stored temporarily on Forms Portal. Adobe recommends using [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
 これで、フォームに署名する準備が整いました。フォームのプレビューを表示して、署名エクスペリエンスを確認できます。受信者がメールで署名用のフォームを受信すると、公開済みフォーム上に [!DNL Adobe Sign] ブロックのフィールドが表示されます。「**[!UICONTROL 受信者とフォーム記入者は同一ですか？]**」オプションが「はい」とマークされ、条件が満たされると、ユーザーは送信後に Adobe Sign 契約書にリダイレクトされ、契約書がメールに表示されるのを待たずに、即座にドキュメントに署名できます。

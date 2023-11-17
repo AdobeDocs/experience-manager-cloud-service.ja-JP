@@ -2,10 +2,10 @@
 title: タスクの操作
 description: タスクは、コンテンツで実行するべき作業項目を表し、プロジェクトで現在のタスクの完了レベルを判断するために使用されます。
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '576'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '573'
+ht-degree: 95%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 
 #### タスクの詳細 {#task-details}
 
-特定のタスクの詳細を表示するには、タスクリストでタスクをタップまたはクリックし、「**開く**」をタップまたはクリックします。
+特定のタスクの詳細については、[ タスク一覧 ] でタスクを選択し、 **開く**.
 
 ![タスクの詳細](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -63,12 +63,12 @@ ht-degree: 100%
 
 タスクを追加するには：
 
-1. プロジェクトの&#x200B;**タスク**&#x200B;タイルで、「+」アイコンをタップまたはクリックします。**タスクを追加**&#x200B;ウィンドウが開きます。
+1. プロジェクト内の **タスク** タイルで、 +アイコンを選択します。 **タスクを追加**&#x200B;ウィンドウが開きます。
 1. タスクに関する情報を入力します。タスクのタイトルと、そのタスクを割り当てるグループは必須です。コンテンツのパス、説明、タスクの優先度、期限などの追加情報はオプションです。さらに、「**詳細**」タブを選択して、URL の命名に使用するタスク名を入力できます。
 
    ![タスクの追加](/help/sites-cloud/authoring/assets/projects-add-task.png)
 
-1. 「**作成**」をタップまたはクリックします。
+1. 「**作成**」を選択します。
 
 ## インボックス内でのタスクの使用 {#working-with-tasks-in-the-inbox}
 

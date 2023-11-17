@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service の OSGi の設定
 description: シークレット値と環境固有の値を使用する OSGi 設定
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3318'
-ht-degree: 100%
+source-wordcount: '3317'
+ht-degree: 97%
 
 ---
 
@@ -79,9 +79,9 @@ AEM as a Cloud Service の実行モードは、環境のタイプとサービス
 実行モードで指定された OSGi 設定値は、次の方法で検証できます。
 
 1. AEM as a Cloud Services 環境の[開発者コンソール](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=ja)を開きます
-1. __ポッド__&#x200B;ドロップダウンを使用して、検査するサービス層を選択します
+1. 検査するサービス層の選択 ( __ポッド__ ドロップダウンリスト
 1. 「__ステータス__」タブを選択します
-1. __ステータスダンプ__&#x200B;ドロップダウンから「__設定__」を選択します
+1. 選択 __設定__ から __ステータスダンプ__ ドロップダウンリスト
 1. 「__ステータスの取得__」ボタンを選択します
 
 結果には、選択した層のすべての OSGi コンポーネント設定と、該当する OSGi 設定値が表示されます。 これらの値は、`/apps/example/osgiconfig/config.<runmode(s)>` の下にある AEM プロジェクトのソースコード内の OSGi 設定値と相互参照できます
@@ -157,7 +157,7 @@ OSGi 設定値を定義する場合は、インライン値から開始し、必
 非シークレットの設定値に対しては、プレビュー層で値が異なる場合や、開発環境間で値が異なる場合にのみ、環境固有の設定（`$[env:ENV_VAR_NAME]`）を使用してください。これには、ローカル開発インスタンスと、Adobe Experience Manager as a Cloud Service 開発環境が含まれます。プレビュー層に一意の値を設定する場合を除き、Adobe Experience Manager as a Cloud Service の非シークレットの環境固有の設定をステージ環境または実稼動環境で使用しないでください。
 
 * パブリッシュ層とプレビュー層で異なる設定値や、開発環境間（ローカル開発インスタンスを含む）で異なる値には、非シークレット環境固有の設定値のみを使用します。
-* プレビュー層とパブリッシュ層が異なる必要がある場合のシナリオを除き、ステージと実稼動の非シークレット値の OSGi 設定では標準のインライン値を使用します。これに関連して、ステージング環境と実稼働環境に対して、環境固有の設定を使用して、実行時に設定を変更しやすくすることは勧められません。これらの変更は、ソースコード管理を通じて導入する必要があります。
+* プレビュー層がパブリッシュ層と異なる必要がある場合のシナリオの他に、ステージングと実稼動の非シークレット値の OSGi 設定で標準のインライン値を使用します。 これに関連して、ステージング環境と実稼働環境に対して、環境固有の設定を使用して、実行時に設定を変更しやすくすることは勧められません。これらの変更は、ソースコード管理を通じて導入する必要があります。
 
 ### シークレットの環境固有の設定値を使用する場合 {#when-to-use-secret-environment-specific-configuration-values}
 
@@ -594,7 +594,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 シークレットと環境に固有の設定値は Git の外部に存在するので、Adobe Experience Manager as a Cloud Service の正式なデプロイメントメカニズムには含まれません。そのため、顧客が管理および統括し、Adobe Experience Manager as a Cloud Service のデプロイメントプロセスに統合する必要があります。
 
-前述したように、API を呼び出すと、一般的なカスタマーコードのデプロイメントパイプラインと同様に、新しい変数と値がクラウド環境にデプロイされます。オーサーサービスおよびパブリッシュサービスが再起動され、新しい値が参照されます（通常、数分かかります）。通常のコードのデプロイメント中に Cloud Manager によって実行される品質ゲートおよびテストは、このプロセス中は実行されません。
+前述したように、API を呼び出すと、一般的なカスタマーコードのデプロイメントパイプラインと同様に、新しい変数と値がクラウド環境にデプロイされます。オーサーサービスおよびパブリッシュサービスが再起動され、新しい値が参照されます（通常、数分かかります）。通常のコードのデプロイメント中に Cloud Manager で実行される品質ゲートおよびテストは、このプロセス中は実行されません。
 
 通常、Cloud Manager で API を使用するコードをデプロイする前に、API を呼び出して環境変数を設定します。場合によっては、コードが既にデプロイされた後で既存の変数を変更する必要があります。
 

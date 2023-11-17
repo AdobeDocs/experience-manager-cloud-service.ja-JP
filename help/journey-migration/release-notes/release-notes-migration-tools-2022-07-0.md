@@ -3,10 +3,10 @@ title: AEM as a Cloud Service Release 2022.7.0 の移行ツールのリリース
 description: AEM as a Cloud Service Release 2022.7.0 の移行ツールのリリースノート
 feature: Release Information
 exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '428'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '429'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 ### 新機能 {#what-is-new-bpa}
 
 * BPA は、`/oak:index/lucene` および `/oak:index/damAssetLucene` を除く合計 Lucene インデックスである、移行可能な Lucene インデックスの合計サイズを検出して報告できるようになりました。
-* カスタム i18n 辞書の使用を検出してレポートするための新しいパターンが BPA に追加されました。Translator.html は AEM as a Cloud Service では使用できず、Cloud Manager CI/CD パイプラインを介して Git からカスタム i18n 辞書をデプロイする必要があります。
+* カスタム i18n 辞書の使用を検出してレポートするための新しいパターンが BPA に追加されました。AEMas a Cloud Serviceでは Translator.html を使用できません。また、Cloud Manager CI/CD パイプラインを通じて、カスタム i18n 辞書を Git からデプロイする必要があります。
 
 ### バグの修正 {#bug-fixes-bpa}
 

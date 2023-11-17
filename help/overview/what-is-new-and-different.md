@@ -2,10 +2,10 @@
 title: 相違点と新機能 - Adobe Experience Manager as a Cloud Service
 description: 相違点と新機能 - Adobe Experience Manager（AEM）as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1895'
-ht-degree: 98%
+source-wordcount: '1889'
+ht-degree: 94%
 
 ---
 
@@ -36,13 +36,13 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->オンプレミス版および Managed Services 版について詳しくは、[AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ja) のドキュメントセットを参照してください。
+>オンプレミス版と Managed Services 版について詳しくは、 [AEM 6.5 ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ja) .
 
 ## アーキテクチャ {#architecture}
 
 >[!NOTE]
 >
->詳しくは、[アーキテクチャ](/help/overview/architecture.md)を参照してください。
+>詳しくは、 [アーキテクチャ](/help/overview/architecture.md).
 
 AEM as a Cloud Service には次の機能が追加されました。
 
@@ -87,7 +87,7 @@ AEMバージョンのアップデートは、次の 2 種類があります。
 
 >[!TIP]
 >
->詳しくは、[AEM のバージョンアップデート](/help/implementing/deploying/aem-version-updates.md)を参照してください。
+>詳しくは、 [AEMバージョンの更新](/help/implementing/deploying/aem-version-updates.md).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -156,7 +156,7 @@ AEM as a Cloud Service を使用すると、次のように作業の多くの側
 
 >[!NOTE]
 >
->詳しくは、まず [AEM as a Cloud Service の開発ガイドライン](/help/implementing/developing/introduction/development-guidelines.md)と [AEM Sites の開発の手引き - WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)を参照してください。
+>詳しくは、以下のドキュメントから始めてください。 [開発ガイドライン](/help/implementing/developing/introduction/development-guidelines.md) および [開発 — WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 AEM as a Cloud Service をサポートする新しいアーキテクチャには、開発者のエクスペリエンス全体に対するいくつかの重要な変更が含まれています。AEM as a Cloud Service の主要な目標の 1 つは、（AEM をオンプレミスまたは Adobe Managed Services のコンテキストで使用したことがある）経験豊富な顧客が、カスタマイズしたコードの大部分を書き直さずに、できるだけ迅速に AEM as a Cloud Service に移行できるようにすることです。ただし、若干の調整が必要になる可能性はあります。
 
@@ -206,7 +206,7 @@ OSGi バンドルとその関連設定を管理する web コンソール（以�
 
 >[!NOTE]
 >
->詳しくは、以下を参照してください。 [コンテンツの復元](/help/operations/backup.md), [インデックス作成](/help/operations/indexing.md)、および [その他のメンテナンスタスク](/help/operations/maintenance.md).
+>詳しくは、まず [コンテンツの復元](/help/operations/backup.md), [インデックス作成](/help/operations/indexing.md)、および [その他のメンテナンスタスク](/help/operations/maintenance.md).
 
 AEM as a Cloud Service では、サービスの中断が不要になるように、このような操作は自動化されています。
 
@@ -224,7 +224,7 @@ AEM as a Cloud Service の運用も、監視、レポート、警告用の新し
 
 >[!NOTE]
 >
->詳しくは、[Adobe Experience Manager as a Cloud Service に対する IMS のサポート](/help/security/ims-support.md)を参照してください。
+>詳しくは、 [セキュリティ — IMS のサポート](/help/security/ims-support.md).
 
 AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用したオーサー層へのアクセスが完全に統合されていることです。
 
@@ -240,7 +240,7 @@ AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用した
 
 >[!NOTE]
 >
->詳しくは、まず[基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)を参照してください。
+>詳しくは、 [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md) は出発点として適切です。
 
 AEM Sites についても AEM Assets についても、オーサリングユーザーインターフェイス（UI）の基本原則は、これまでに AEM を使用したことがある人にとってはなじみ深いものです。
 
@@ -274,6 +274,6 @@ Assets が提供する機能には、クラウドでの次世代アセット処�
 
 >[!TIP]
 >
->AEM as a Cloud Service の概要を把握したら、[オンボーディングジャーニー](/help/journey-onboarding/overview.md)を確認することで、すばやくオンボーディングできます。
+>AEM as a Cloud Serviceの概要を確認したら、 [オンボーディングジャーニー](/help/journey-onboarding/overview.md).
 >
 >すでにオンボード済み、または AEM の機能のテストに取り掛かる準備できている場合[AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) をインストールし、豊富な例を使用して AEM の強力な機能を調べてみましょう。

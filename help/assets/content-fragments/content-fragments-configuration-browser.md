@@ -2,10 +2,10 @@
 title: コンテンツフラグメント - 設定ブラウザー（アセット - コンテンツフラグメント）
 description: 設定ブラウザーでコンテンツフラグメント機能を有効にする方法について説明します。
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '358'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ AEM の強力なヘッドレス配信機能を使用するために、設定ブ�
 
 >[!NOTE]
 >
->詳しくは、[設定ブラウザー](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)を参照してください。
+>詳しくは、 [設定ブラウザー](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!NOTE]
 >
@@ -76,6 +76,6 @@ AEM の強力なヘッドレス配信機能を使用するために、設定ブ�
 
 「**グローバル**」がコンテンツフラグメント機能に対して有効になっている場合、設定はすべてのアセットフォルダーに適用されます。
 
-他の設定（グローバル以外）を同等のアセットフォルダーで使用するには、接続を定義する必要があります。この接続を実行するには、適切なフォルダーの&#x200B;**フォルダープロパティ**&#x200B;の「**クラウドサービス**」タブで、適切な「**設定**」を選択します。
+他の設定（グローバル以外）を同等のアセットフォルダーで使用するには、接続を定義する必要があります。そのためには、適切なフォルダーの「**フォルダーのプロパティ**」の「**クラウドサービス**」タブで、適切な「**設定**」を選択します。
 
-![設定の適用](assets/cfm-conf-02.png)
+![設定を適用](assets/cfm-conf-02.png)

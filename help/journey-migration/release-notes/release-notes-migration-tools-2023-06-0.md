@@ -3,10 +3,10 @@ title: AEM as a Cloud Service リリース 2023.06.0 の移行ツールのリリ
 description: AEM as a Cloud Service リリース 2022.06.0 の移行ツールのリリースノート
 feature: Release Information
 exl-id: 021b7472-d1e4-4ef6-a040-c612fed8d3c3
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
-workflow-type: ht
-source-wordcount: '237'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '233'
+ht-degree: 84%
 
 ---
 
@@ -26,4 +26,4 @@ ht-degree: 100%
 コンテンツ変換サービスのメリットは次のとおりです。
    * フェイルセーフ：問題を修正しようとリポジトリを変更するたびに、コンテンツ変換サービスによってパッケージが作成されます。必要に応じて、パッケージをインストールして前の状態に戻すことができます。
    * 使いやすさ：コンテンツ変換サービスは、コンテンツ転送ツールに統合され、直感的なシンプルなユーザーインターフェイスを備えています。
-   * 時間を節約：1 つのパターンカテゴリに分類されるコンテンツの問題が多数ある場合、コンテンツ変換サービスを使用すると、数回のクリックですべての問題を解決でき、時間と移行の複雑さを大幅に削減できます。
+   * 時間を節約：1 つのパターンカテゴリに該当するコンテンツの問題が多数ある場合、Content Transformer を使用してそれらすべてを数回クリックすることで、時間と移行の複雑さを大幅に削減できます。

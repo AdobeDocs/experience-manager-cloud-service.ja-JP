@@ -3,10 +3,10 @@ title: AMS から AEM as a Cloud Service への Dispatcher 設定の移行
 description: AMS から AEM as a Cloud Service への Dispatcher 設定の移行
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 24c6e5e78e3e1b30e4becfad2f4f6e57e75ad4e9
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1451'
-ht-degree: 100%
+source-wordcount: '1455'
+ht-degree: 97%
 
 ---
 

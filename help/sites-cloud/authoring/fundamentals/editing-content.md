@@ -2,9 +2,9 @@
 title: ページのコンテンツの編集
 description: ページを作成したら、必要な変更を行うためにコンテンツを編集できます
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2975'
+source-wordcount: '2973'
 ht-degree: 93%
 
 ---
@@ -341,7 +341,7 @@ ht-degree: 93%
 
    ![ページコンポーネントのコンポーネントツールバー](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   コンポーネントのレイアウトを調整するには、**レイアウト**&#x200B;アクションをクリックまたはタップします。
+   を選択します。 **レイアウト** アクションを使用して、コンポーネントのレイアウトを調整します。
 
    ![コンポーネントツールバーのレイアウトボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 

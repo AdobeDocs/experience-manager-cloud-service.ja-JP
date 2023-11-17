@@ -2,10 +2,10 @@
 title: ページバージョンの処理
 description: AEMでページのバージョンを作成、比較および復元する方法について説明します。
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 99%
+source-wordcount: '1505'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 99%
 1. バージョンを作成するページに移動して、そのページを表示します。
 1. [選択モード](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)でページを選択します。
 1. **タイムライン**&#x200B;パネルを開きます。
-1. コメントフィールドの横の省略記号をクリックまたはタップして、オプションを表示します。
+1. コメントフィールドの横の省略記号を選択して、オプションを表示します。
 
    ![タイムラインパネルに表示されるバージョン](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
@@ -209,7 +209,7 @@ ht-degree: 99%
 
 タイムワープは、ページエディターの[モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)です。開始するには、他のモードに切り替えるときと同様にタイムワープモードに切り替えます。
 
-1. タイムワープを開始するページのエディターを起動し、モード選択で&#x200B;**タイムワープ**&#x200B;を選択します。
+1. タイムワープを開始するページのエディターを起動し、「 **タイムワープ** を選択します。
 
    ![タイムワープモード](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 

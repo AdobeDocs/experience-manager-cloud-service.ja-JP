@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 リリースのリリースノート。'
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: fe19e99baa921247f86542c6643c1faf837e7d91
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 75%
+source-wordcount: '789'
+ht-degree: 77%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 75%
 
 ### [!DNL Assets] プレリリースチャネルで利用できる新機能 {#prerelease-features-assets}
 
-Experience Manager Assets は、Adobe Sensei AI 機能を使用して、[画像内のカラーを識別し、取り込み時に自動的にタグとして適用](/help/assets/color-tag-images.md)するようになりました。これらのタグを使用すると、画像の色の構成に基づいて、検索エクスペリエンスを強化できます。 画像にタグ付けされる色の数を 1 ～ 40 の範囲で設定し、後でそれらの色に基づいて画像を検索できるようにします。
+Experience Manager Assets は、Adobe Sensei AI 機能を使用して、[画像内のカラーを識別し、取り込み時に自動的にタグとして適用](/help/assets/color-tag-images.md)するようになりました。これらのタグを使用すると、画像の色の構成に基づいて、検索エクスペリエンスを強化できます。 画像にタグ付けされるカラーの数を 1～40 の範囲内で設定し、後でそれらのカラーに基づいて画像を検索できます。
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -68,9 +68,9 @@ Experience Manager Assets は、Adobe Sensei AI 機能を使用して、[画像�
 
 * 製品コックピットに素早くアクセス：サイトエディターでワンクリックで詳細な製品情報に簡単にアクセス
 
-  ![ウィッシュリストを有効にする](/help/assets/CIF/enable-wishlist.png)
+<!-- Image was not found during PR validation despite correct path   ![Enable wantlist](/help/assets/CIF/enable-wishlist.png) -->
 
-* 追加のマーケティングコマースコンポーネントのサポート：コンポーネントを、買い物かごへの追加と、リストへの追加のコールトゥアクションを表示するように設定できます。
+* 追加のマーケティングコマースコンポーネントのサポート：コンポーネントは、買い物かごへの追加と WANTLIST へのコールトゥアクションの追加を表示するように設定できます。
 
   ![製品コックピットへのサイトエディターショートカット](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 

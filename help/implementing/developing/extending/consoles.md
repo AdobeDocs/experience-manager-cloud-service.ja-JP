@@ -2,10 +2,10 @@
 title: コンソールのカスタマイズ
 description: オーサーインスタンスのコンソールをカスタマイズするためにAEMが提供する様々なオプションについて説明します。
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 10%
+source-wordcount: '525'
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ AEMには、コンソール ( および [ページオーサリング機能](/hel
 
 clientlibs を使用すると、デフォルトの実装を拡張して新しい機能を提供し、標準の関数、オブジェクト、メソッドを再利用できます。 clientlibs を使用してカスタマイズする場合、独自の clientlib を `/apps.` 例えば、カスタムコンポーネントに必要なコードを保持できます。
 
-clientlibs の詳細については、このドキュメントを参照してください。 [AEMでのクライアント側ライブラリの使用をas a Cloud Serviceします。](/help/implementing/developing/introduction/clientlibs.md)
+詳しくは、 [AEMでのクライアント側ライブラリの使用 (as a Cloud Service)](/help/implementing/developing/introduction/clientlibs.md).
 
 ## オーバーレイ {#overlays}
 
@@ -25,11 +25,11 @@ clientlibs の詳細については、このドキュメントを参照してく
 
 オーバーレイは、様々な方法でAEMコンソールを拡張できます。 次の節では、いくつかの例を示します。
 
-オーバーレイについて詳しくは、ドキュメントを参照してください。 [Adobe Experience Manager as a Cloud Serviceのオーバーレイ。](/help/implementing/developing/introduction/overlays.md)
+関連トピック [Adobe Experience Manager as a Cloud Serviceのオーバーレイ](/help/implementing/developing/introduction/overlays.md).
 
 >[!TIP]
 >
->オーサリングエクスペリエンスをカスタマイズするオプションに興味がある場合は、ドキュメントを参照してください [ページオーサリングのカスタマイズ。](/help/implementing/developing/extending/page-authoring.md)
+>オーサリングエクスペリエンスをカスタマイズするオプションについては、 [ページオーサリングのカスタマイズ](/help/implementing/developing/extending/page-authoring.md).
 
 ## コンソールのデフォルト表示のカスタマイズ {#customizing-the-default-view-for-a-console}
 
@@ -117,4 +117,4 @@ clientlibs の詳細については、このドキュメントを参照してく
 
 コンソールを使用する場合、多くの場合、ユーザーはページ、コンポーネント、アセットなどのリソースから選択する必要があります。 作成者が項目を選択する必要があるリストの形式をとることができます。
 
-リストを適切なサイズに保ち、使用例にも関連するように、フィルターをカスタム述語の形式で実装できます。 ドキュメントを参照してください[ページオーサリングのカスタマイズ](/help/implementing/developing/extending/page-authoring.md#filtering-resources) 」を参照してください。
+リストを適切なサイズに保ち、使用例にも関連するように、フィルターをカスタム述語の形式で実装できます。 詳しくは、 [ページオーサリングのカスタマイズ](/help/implementing/developing/extending/page-authoring.md#filtering-resources) 」を参照してください。

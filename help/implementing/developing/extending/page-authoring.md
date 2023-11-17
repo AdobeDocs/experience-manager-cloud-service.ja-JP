@@ -1,13 +1,13 @@
 ---
 title: ページオーサリングのカスタマイズ
 description: ページオーサリング機能をカスタマイズするためにAEM as a Cloud Serviceが提供するメカニズムについて説明します。
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
+exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 32%
+source-wordcount: '969'
+ht-degree: 33%
 
 ---
-
 
 # ページオーサリングのカスタマイズ {#customizing-page-authoring}
 
@@ -22,7 +22,7 @@ clientlibs を使用すると、デフォルトの実装を拡張して新しい
 * オーサリング clientlib に依存 `cq.authoring.editor.sites.page`.
 * 適切な `cq.authoring.editor.sites.page.hook` カテゴリ。
 
-clientlibs の詳細については、このドキュメントを参照してください。 [AEMでのクライアント側ライブラリの使用をas a Cloud Serviceします。](/help/implementing/developing/introduction/clientlibs.md)
+詳しくは、 [AEMでのクライアント側ライブラリの使用 (as a Cloud Service)](/help/implementing/developing/introduction/clientlibs.md).
 
 ## オーバーレイ {#overlays}
 
@@ -32,7 +32,7 @@ clientlibs の詳細については、このドキュメントを参照してく
 
 詳しくは、 [JS ドキュメントセット](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
-オーバーレイについて詳しくは、ドキュメントを参照してください。 [Adobe Experience Manager as a Cloud Serviceのオーバーレイ。](/help/implementing/developing/introduction/overlays.md)
+オーバーレイについて詳しくは、 [Adobe Experience Manager as a Cloud Serviceのオーバーレイ](/help/implementing/developing/introduction/overlays.md).
 
 ## 新しいレイヤー（モード）の追加 {#add-new-layer-mode}
 

@@ -4,10 +4,10 @@ description: アダプティブフォームを作成するか、AEM Sitesペー�
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3209'
-ht-degree: 81%
+source-wordcount: '3208'
+ht-degree: 80%
 
 ---
 
@@ -33,7 +33,7 @@ AEM FormsCloud Serviceは、アダプティブフォームコンテナとアダ�
 過去に Sites 用にアダプティブForms基盤コンポーネントまたはプレーンHTMLベースのフォームを作成している場合、Adobeでは、アダプティブFormsコアコンポーネントを使用してAEM Sitesページまたはエクスペリエンスフラグメントでアダプティブフォームを作成することをお勧めします。 これにより、バージョン管理、ターゲティング、翻訳、マルチサイトマネージャーなど、AEM Sitesページの様々な機能を使用して、アダプティブFormsの全体的なフォーム作成と管理エクスペリエンスを強化できます。 次の機能の一部を見てみましょう。
 
 * **バージョン管理：** AEM Sites ページは、[堅牢なバージョン管理機能](/help/sites-cloud/authoring/features/page-versions.md)を提供し、フォームの様々なバージョンを追跡および管理できます。これにより、必要に応じて以前のバージョンにロールバックする機能を維持しながら、フォームに変更や機能強化を加えることができます。バージョン管理により、フォームの開発と進化に対する制御可能で体系的なアプローチが実現します。
-* **ターゲティング（Adobe Target との統合）：** AEM Sites ページのターゲティング機能を使用して、[様々なオーディエンス向けにフォームエクスペリエンスをパーソナライズします](/help/sites-cloud/integrating/integration-adobe-target-ims.md)。ユーザーセグメントおよびターゲティング条件を活用することで、特定のユーザーグループに合わせてフォームのコンテンツ、デザインまたは動作を調整できます。これにより、パーソナライズされた関連性の高いフォームエクスペリエンスを提供し、エンゲージメント率とコンバージョン率を高めることができます。
+* **ターゲティング（Adobe Target との統合）：** AEM Sites ページのターゲティング機能を使用して、[様々なオーディエンス向けにフォームエクスペリエンスをパーソナライズします](/help/sites-cloud/integrating/integration-adobe-target-ims.md)。ユーザーセグメントとターゲット条件を使用すると、特定のユーザーグループに合わせてフォームのコンテンツ、デザインまたは動作を調整できます。 これにより、パーソナライズされた関連性の高いフォームエクスペリエンスを提供し、エンゲージメント率とコンバージョン率を高めることができます。
 * **翻訳：** AEM Sites [翻訳サービスとのシームレスな統合](/help/sites-cloud/administering/translation/overview.md)を使用すると、フォームを複数の言語に簡単に翻訳できます。この機能により、ローカライゼーションプロセスが簡素化され、グローバルなオーディエンスがフォームに確実にアクセスできるようになります。AEM 翻訳プロジェクト内で翻訳を効率的に管理できるので、多言語フォームのサポートに必要な時間と労力を削減できます。翻訳について詳しくは、考慮事項の節を参照してください。
 * **マルチサイト管理とライブコピー：** AEM Sites [マルチサイト管理およびライブコピー機能](/help/sites-cloud/administering/msm/overview.md)を使用すると、1 つの環境内で複数の web サイトを作成および管理できます。この機能を使用すると、異なるサイト間でフォームを再利用できるようになり、一貫性を確保し、重複作業を減らすことができます。 一元化された制御と管理により、複数の web サイトにわたってフォームの管理と更新を効率的に行うことができます。
 * **テーマ：** AEM Sites ページには、複数の web ページをまたいで一貫したビジュアルスタイルをデザインし、維持するためのフレームワークが用意されています。これらは、web サイトの全体的なルックアンドフィールに貢献するカラー、フォント、スタイルシートおよびその他のビジュアル要素を定義します。[アダプティブフォームで AEM Sites ページ用に設計されたテーマを使用することで、時間と労力を節約できます](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes)。
@@ -188,7 +188,7 @@ AEM Sites ページ内のアダプティブフォームをエクスペリエン�
 1. エクスペリエンスフラグメントバリエーションに変換ダイアログボックスで、次のオプションの値を設定します。
 
    * **アクション：** エクスペリエンスフラグメントを作成する場合は「 」を選択し、既存のエクスペリエンスフラグメントに追加する場合は「 」を選択します。
-   * **親パス：**&#x200B;エクスペリエンスフラグメントをホストするフォルダーのパスを指定します。このオプションは、新しいエクスペリエンスフラグメントを作成する場合にのみ使用できます。
+   * **親パス：**&#x200B;エクスペリエンスフラグメントをホストするフォルダーのパスを指定します。このオプションは、エクスペリエンスフラグメントの作成にのみ使用できます。
    * **テンプレート：**&#x200B;エクスペリエンスフラグメントテンプレートのパスを指定します。エクスペリエンスフラグメントテンプレートがない場合は、[作成します](/help/implementing/developing/extending/experience-fragments.md)。このオプションは、アダプティブフォームを既存のエクスペリエンスフラグメントに追加する場合にのみ使用できます。
    * **フラグメントのタイトル：**&#x200B;エクスペリエンスフラグメントのタイトルを指定します。タイトルは、エクスペリエンスフラグメントを一意に識別します。
 

@@ -4,10 +4,10 @@ description: AEM でサイトテンプレートを使用してサイトを作成
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 93%
+source-wordcount: '756'
+ht-degree: 77%
 
 ---
 
@@ -55,19 +55,19 @@ AEMクイックサイト作成ツールを使用すると、開発者以外の�
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. 画面の右上にある「**作成**」をタップまたはクリックし、ドロップダウンメニューから「**テンプレートのサイト**」を選択します。
+1. 選択 **作成** 画面の右上にあるをクリックし、ドロップダウンメニューから「 」を選択します。 **テンプレートからのサイト**.
 
    ![テンプレートからのサイトの作成](../assets/create-site-from-template.png)
 
 1. サイトを作成ウィザードで、左側のパネルまたは **インポート** をクリックして、新しいテンプレートをインポートします。
 
-   ![サイト作成ウィザード](../assets/site-creation-wizard.png)
+   ![サイトの作成ウィザード](../assets/site-creation-wizard.png)
 
-   1. 読み込みを選択した場合は、ファイルブラウザーで、使用するテンプレートを見つけて、「**アップロード**」をタップまたはクリックします。
+   1. インポートを選択した場合は、ファイルブラウザで、使用するテンプレートを探し、「 」を選択します。 **アップロード**.
 
    1. アップロードが完了すると、使用可能なテンプレートのリストに表示されます。
 
-1. テンプレートを選択すると、右側の列にそのテンプレートに関する情報が表示されます。目的のテンプレートを選択した状態で、「**次へ**」をタップまたはクリックします。
+1. テンプレートを選択すると、右側の列にそのテンプレートに関する情報が表示されます。目的のテンプレートを選択した状態で、「 」を選択します。 **次へ**.
 
    ![テンプレートを選択](../assets/select-site-template.png)
 
@@ -77,11 +77,11 @@ AEMクイックサイト作成ツールを使用すると、開発者以外の�
    * サイト名が URL の一部になります。
    * サイト名は、[AEM のページ命名規則](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)に従う必要があります。
 
-1. 「**作成**」をタップまたはクリックすると、サイトテンプレートからサイトが作成されます。
+1. 選択 **作成** サイトはサイトテンプレートから作成されます。
 
    ![新しいサイトの詳細](../assets/create-site-details.png)
 
-1. 表示される確認ダイアログで、「**完了**」をタップまたはクリックします。
+1. 表示される確認ダイアログで、「 」を選択します。 **完了**.
 
    ![成功ダイアログ](../assets/success.png)
 
@@ -93,10 +93,10 @@ AEMクイックサイト作成ツールを使用すると、開発者以外の�
 
 ## サイトのカスタマイズ {#site-customization}
 
-使用可能なテンプレート以外のカスタマイズが必要なサイトの場合は、多くのオプションを使用できます。
+使用可能なテンプレート以外のカスタマイズが必要なサイトの場合は、複数のオプションがあります。
 
-* サイトの構造または初期コンテンツを調整する必要がある場合、[サイトテンプレートは、要件に合わせてカスタマイズできます](site-templates.md)。
-* サイトのスタイルを調整する必要がある場合、[サイトテーマをダウンロードしてカスタマイズすることができます](/help/journey-sites/quick-site/overview.md)。
-* サイトの機能を調整する必要がある場合は、[サイトを完全にカスタマイズできます](/help/implementing/developing/introduction/develop-wknd-tutorial.md)。
+* サイトの構造または初期コンテンツを調整する必要がある場合は、 [サイトテンプレートは、要件に合わせてカスタマイズできます。](site-templates.md).
+* サイトのスタイルを調整する必要がある場合、 [サイトのテーマをダウンロードし、カスタマイズすることができます。](/help/journey-sites/quick-site/overview.md).
+* サイトの機能を調整する必要がある場合は、 [サイトを完全にカスタマイズ可能](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 カスタマイズは、開発チームのサポートを得て行う必要があります。

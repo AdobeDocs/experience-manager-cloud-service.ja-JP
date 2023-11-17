@@ -2,10 +2,10 @@
 title: AEM Developer Tools for Eclipse
 description: Apache Sling 用の Eclipse プラグインに基づく Eclipse プラグインであるAEM Developer Tools for Eclipse の使用方法について説明します。
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 91%
+source-wordcount: '1191'
+ht-degree: 88%
 
 ---
 
@@ -64,7 +64,7 @@ Eclipse では、パースペクティブによって、ウィンドウ内で使
 
 _Experience Manager Development Tools for Eclipse_ には、AEM プロジェクトおよびインスタンスを完全にコントロールできる AEM パースペクティブが用意されています。AEM パースペクティブを開くには、次の操作を行います。
 
-1. Eclipse メニューバーから、**Window**／**Perspective**／**Open Perspective**／**Other** を選択します。
+1. Eclipse メニューバーから、「 」を選択します。 **ウィンドウ** > **遠近法** > **Open Perspective** > **その他**.
 1. ダイアログで「**AEM**」を選択し、「**Open**」をクリックします。
 
 ![Eclipse の AEM パースペクティブ](assets/eclipse-aem-perspective.png)
@@ -83,7 +83,7 @@ _Experience Manager Developer Tools for Eclipse_ には、Eclipse でのプロ�
 
    >[!NOTE]
    >
-   >m2eclipse がアーキタイプカタログをスキャンする必要があるので、この手順には少し時間がかかることがあります。
+   >m2eclipse はアーキタイプカタログをスキャンする必要があるので、この手順には少し時間がかかる場合があります。
 
 1. メニューから「`com.adobe.granite.archetypes : sample-project-archetype : <highest-number>`」を選択し、「**Next**」をクリックします。
 
@@ -139,7 +139,7 @@ _Experience Manager Developer Tools for Eclipse_ には、Eclipse でのプロ�
 1. 続いて、`PROJECT.ui.content` に対して同じことを行い、そのコンテンツフォルダーを自分のパッケージの 1 つに置き換えます。
 
    1. Project Explorer パネルで、`PROJECT.ui.content`／`src`／`main`／`content`／`jcr_root`／`content` を展開します。
-   1. より深いコンテンツフォルダーを右クリックし、「 」を選択します。 **表示場所** -> **システムエクスプローラ**.
+   1. より深いコンテンツフォルダーを右クリックし、「 」を選択します。 **表示場所** > **システムエクスプローラ**.
    1. 表示されるコンテンツフォルダーを削除し、その場所にコンテンツパッケージのコンテンツフォルダーを配置します。
    1. Eclipse で、 `PROJECT.ui.content` プロジェクトと選択 **更新**.
 
@@ -194,7 +194,7 @@ _Experience Manager Developer Tools for Eclipse_ には、Eclipse でのプロ�
 
 完了したら、インスタンスでパッケージが動作しており、保存時には、変更が自動的にインスタンスに同期します。
 
-プロジェクトからパッケージを再ビルドする場合は、 `PROJECT.ui.apps` または `PROJECT.ui.content` を選択します。 **実行ユーザー** -> **Maven インストール**.
+プロジェクトからパッケージを再ビルドする場合は、 `PROJECT.ui.apps` または `PROJECT.ui.content` を選択します。 **実行ユーザー** > **Maven インストール**.
 
 これで、パッケージ（例えば、`PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`）を含んだターゲットフォルダーが作成されました。
 
@@ -206,7 +206,7 @@ _Experience Manager Developer Tools for Eclipse_ には、Eclipse でのプロ�
 
 1. 作成したプロジェクトをすべて選択します。
 1. 右クリックします。
-1. コンテキストメニューで、**Maven**／**Update Projects** を選択します。
+1. コンテキストメニューで、「 」を選択します。 **Maven** > **プロジェクトを更新**.
 1. 「**Force Updates of Snapshot/Releases**」をオンにします。
 1. 「**OK**」をクリックします。
 

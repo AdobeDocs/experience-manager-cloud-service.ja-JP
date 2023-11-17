@@ -2,10 +2,10 @@
 title: Adobe Target へのコンテンツフラグメントの書き出し
 description: コンテンツフラグメントをAdobe Targetに書き出し、エクスペリエンスをテストしてパーソナライズする方法について説明します。
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2231'
-ht-degree: 99%
+source-wordcount: '2223'
+ht-degree: 96%
 
 ---
 
@@ -162,7 +162,7 @@ AEMで Target クラウド設定を作成するには、以下の手順を実行
    >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
    >1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    >1. Set the property **disable** to **false**.
-   >1. Tap or click **Save All**.
+   >1. Select **Save All**.
 
    -->
 
@@ -186,7 +186,7 @@ AEMで Target クラウド設定を作成するには、以下の手順を実行
 
    * **正確なターゲット設定を使用**：デフォルトでは、このチェックボックスはオンになっています。選択した場合、クラウドサービス設定は、コンテキストの読み込みを待ってからコンテンツを読み込みます。次のメモを参照してください。
 
-   * **Adobe Target からセグメントを同期**：Target で定義されているセグメントをダウンロードして AEM で使用するには、このオプションをオンにします。API Type プロパティが REST の場合は、このオプションを選択する必要があります。インラインセグメントはサポートされず、常に Target のセグメントを使用する必要があるからです。（AEM の用語「セグメント」は、Target の「オーディエンス」と同じです。）
+   * **Adobe Target からセグメントを同期**：Target で定義されているセグメントをダウンロードして AEM で使用するには、このオプションをオンにします。インラインセグメントはサポートされておらず、常に Target のセグメントを使用する必要があるので、API Type プロパティが REST の場合は、このオプションを選択します。 （AEM の用語「セグメント」は、Target の「オーディエンス」と同じです。）
 
    * **クライアントライブラリ**：デフォルトは AT.js です（mbox.js は非推奨／廃止予定です）。
 
@@ -287,8 +287,8 @@ When you associate a page with the framework, the child pages inherit the associ
 1. In the **Sites** console, navigate to the site that you want to configure.
 1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
-1. Tap/click **Edit**.
-1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
+1. Select **Edit**.
+1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
   ![Cloud Service Configurations](assets/chlimage_1-165.png)
 
@@ -298,7 +298,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
-1. Tap/click **Done**.
+1. Select **Done**.
 1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
 
    >[!NOTE]
@@ -319,7 +319,7 @@ When you associate a page with the framework, the child pages inherit the associ
 1. **Assets** コンソールのコンテンツフラグメントに移動します。
 1. Target に書き出すコンテンツフラグメントを選択します。
 
-1. 「**Adobe Target オファーに書き出し**」をタップまたはクリックします。
+1. 選択 **Adobe Targetオファーに書き出し**.
 
    ![Adobe Target に書き出し](assets/cfm-export-target-01.png)
 
@@ -333,7 +333,7 @@ When you associate a page with the framework, the child pages inherit the associ
    
    -->
 
-1. 必要に応じて、「**公開せずに書き出し**」または「**公開**」をタップまたはクリックします。
+1. 選択 **公開せずに書き出し** または **公開** 必要に応じて。
 
    >[!NOTE]
    >
@@ -345,7 +345,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >
    >「**公開**」を選択すると、コンテンツフラグメントはすぐに公開され、Target に送信されます。
 
-1. 確認ダイアログで「**OK**」をタップ／クリックします。
+1. 選択 **OK** をクリックします。
 
    コンテンツフラグメントは Target に送信されているはずです。
 

@@ -1,13 +1,13 @@
 ---
-title: フロントエンドパイプラインの有効化
+title: フロントエンドパイプラインを有効にする
 description: サイトテーマを使用してサイトをより迅速にカスタマイズできるように、既存のサイトのフロントエンドパイプラインを有効にする方法について説明します。
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '562'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '560'
+ht-degree: 98%
 
 ---
 
@@ -50,7 +50,7 @@ AEM では、フロントエンドパイプラインを使用するように既�
 サイトのフロントエンドパイプラインを有効にするには、Sites コンソールで[サイトパネル](site-rail.md)を使用します。
 
 1. AEM にログインし、**グローバルナビゲーション**／**サイト**&#x200B;を使用して Sites コンソールに移動します。
-1. サイトをコンソールで選択します。サイトの子ページではなくルートを選択する必要があります。
+1. サイトをコンソールで選択します。子ページではなく、サイトのルートを選択します。
 1. サイトが選択された状態で、左側の[パネルセレクター](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)を開き、「**サイト**」を選択します。
 1. **サイト**&#x200B;パネルで「**フロントエンドパイプラインを有効化**」ボタンをクリックします。
 

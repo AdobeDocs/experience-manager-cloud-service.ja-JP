@@ -4,10 +4,10 @@ description: Admin Console でユーザープロファイルを作成して重�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 93%
+source-wordcount: '982'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ Admin Console でユーザープロファイルを作成して重要なメール
 
 ## 概要 {#overview}
 
-アドビでは、場合によって、AEM as a Cloud Service 環境に関してユーザーに連絡する必要があります。アドビは、製品内通知に加えて、通知にメールを使用する場合もあります。 このようなメール通知には、次の 2 種類があります。
+Adobeは、時々、AEMのas a Cloud Service環境に関するユーザーに連絡します。 アドビは、製品内通知に加えて、通知にメールを使用する場合もあります。 このようなメール通知には、次の 2 種類があります。
 
 * **インシデント通知** - これらの通知は、インシデント発生時またはアドビが AEM as a Cloud Service 環境の可用性に関する潜在的な問題を特定した場合に送信されます。
 * **事前通知** - これらの通知は、アドビのサポートチームメンバーが、AEM as a Cloud Service 環境に役立つ、潜在的な最適化やレコメンデーションに関するガイダンスを提供したい場合に送信されます。
@@ -148,4 +148,4 @@ Federated ID が既に存在するユーザーを追加するには、次の手�
 
 オンボーディングジャーニーのコンテンツの範囲を超えてさらに詳しく知りたい場合に役立つ、追加のオプションリソースを次に示します。
 
-* [アクションセンター](/help/operations/actions-center.md)  — アクションセンターを活用して、インシデントやその他の重要な情報に対して便利に対処します。
+* [アクションセンター](/help/operations/actions-center.md)  — アクションセンターを活用して、インシデントやその他の重要な情報に便利に対応します。

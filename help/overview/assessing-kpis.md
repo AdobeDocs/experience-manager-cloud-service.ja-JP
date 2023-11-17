@@ -2,10 +2,10 @@
 title: KPI へのアクセス
 description: KPI にアクセスし、レポートプロセスを定義する方法を説明します
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 97%
+source-wordcount: '544'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ Adobe Experience Manager をローンチする前に、プロジェクトの関�
 
 2018 年の調査で、IDC は、複数の大企業が Adobe Experience Manager の使用によって得られたビジネス価値を分析しました。Experience Manager Sites を使用する組織では、平均してデジタルエクスペリエンスチームの生産性が 23％向上、小さな編集上の変更に要する時間が 64％短縮、月別のサイト訪問回数が 10％増加しました。Experience Manager Assets を使用する会社では、デジタルアセットチームの生産性が 19％向上、新しいアセットの作成時間が 47％短縮、マーケティングキャンペーンの開始時間が 20％短縮しました。
 
-同じ劇的な効果を実現するため、組織では、Experience Manager の実装に関する明確な目標を持つ必要があります。そして、全員がその目標に集中できるように KPI を設ける必要があります。
+同じ劇的な増加を実現するには、組織がExperience Manager実装の明確な目標を持っている必要があります。 そして、全員がその目標に集中できるように KPI を設ける必要があります。
 
 ## KPI へのアクセス
 

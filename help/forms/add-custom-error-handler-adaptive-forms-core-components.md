@@ -1,14 +1,12 @@
 ---
 title: AEM Adaptive Formsのコアコンポーネントに基づいて、アダプティブFormsにカスタムエラーハンドラーを追加します。
-seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms core components
 description: AEM Forms は、外部サービスを呼び出すように設定された REST エンドポイントを使用して、フォームに対して標準で提供される成功ハンドラーとエラーハンドラーを提供します。 AEMアダプティブフォームに、デフォルトのエラーハンドラーとカスタムエラーハンドラーを追加できます。
-seo-description: Error handler function and Rule Editor in Adaptive Forms core components helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 keywords: カスタムエラーハンドラーを追加、デフォルトのエラーハンドラーを追加、フォームにエラーハンドラーを追加、ルールエディターのサービス呼び出しを使用してカスタムエラーハンドラーを追加、ルールエディターを設定してカスタムエラーハンドラーを追加、ルールエディターを使用してカスタムエラーハンドラーを追加
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2410'
 ht-degree: 76%
@@ -252,7 +250,7 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
            console.log("Custom Error Handler processing start...");
            console.log("response:"+JSON.stringify(response));
            console.log("headers:"+JSON.stringify(headers));
-           alert("CustomErrorHandler - Please enter valid PetId.")
+           alert("CustomErrorHandler - Enter valid PetId.")
            globals.invoke('defaultErrorHandler',response, headers)
            console.log("Custom Error Handler processing end...");
        }

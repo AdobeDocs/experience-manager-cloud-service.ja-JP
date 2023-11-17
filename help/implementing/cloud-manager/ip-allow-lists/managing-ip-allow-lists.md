@@ -2,7 +2,7 @@
 title: IP 許可リストの管理
 description: Cloud Manager で IP セグメントのステータスを表示、編集、削除および確認する方法につい許可リストに加えるて説明します。
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '784'
 ht-degree: 52%

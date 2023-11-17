@@ -2,9 +2,9 @@
 title: Cloud Serviceコンテンツリクエストについて
 description: Adobeからコンテンツリクエストライセンスを購入している場合は、Adobe Experience Cloud as a Service が測定するコンテンツリクエストのタイプと、組織の Analytics レポートツールとの相違について説明します。
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: dc01da4c85b37f21deb169b941c0cf2a958298b8
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1162'
 ht-degree: 9%
 
 ---

@@ -2,10 +2,10 @@
 title: AEM アプリケーションへのタグ付けの構築
 description: カスタム AEM アプリケーション内のタグまたは拡張タグをプログラムで操作します
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 100%
+source-wordcount: '758'
+ht-degree: 95%
 
 ---
 
@@ -51,7 +51,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### Tag オブジェクトの取得 {#retrieving-a-tag-object}
 
-`Tag` は、既存のタグを解決するか新しいタグを作成することにより、`TagManager` を介して取得できます。
+A `Tag` ～を通じて取り出すことができる `TagManager`（既存のタグを解決するか作成する）:
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags
@@ -168,4 +168,4 @@ AEM では、言語はページ言語またはユーザー言語のどちらか�
 
 >[!NOTE]
 >
->新しい言語は、AEM で認識される言語である必要があります。つまり、`/libs/wcm/core/resources/languages` の下でノードとして使用できる必要があります。
+>新しい言語は、AEMで認識される言語の 1 つである必要があります。 つまり、以下のノードとして使用できる必要があります。 `/libs/wcm/core/resources/languages`.

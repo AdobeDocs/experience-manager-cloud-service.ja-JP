@@ -2,10 +2,10 @@
 title: AEM クイックサイト作成ジャーニー
 description: 使いやすい AEM クイックサイト作成ツールを使用し、AEM サイトのフロントエンド開発を合理化し、AEM のバックエンドに関する知識を持たずにサイトをすばやくカスタマイズするための、ガイド付きのジャーニーを参照するには、ここから始めてください。
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 96%
+source-wordcount: '1029'
+ht-degree: 89%
 
 ---
 
@@ -29,7 +29,7 @@ AEM クイックサイト作成ツールは、サイト作成に関する開発�
 
 ## AEM ドキュメントジャーニー {#documentation-journeys}
 
-[ドキュメントジャーニー](/help/journey-documentation/documentation-journeys.md)は、前提となる事前のトピックや AEM の知識を最小限に抑えながら、AEM を初めて使用することもある読者がビジネス上の問題全体を把握し解決するのに役立つ説明を提供して、複雑であろう様々なトピックや機能をひとまとめに扱っています。
+[ドキュメントジャーニー](/help/journey-documentation/documentation-journeys.md) AEMを初めて使用する読者が、最初から最後までビジネス上の問題を理解し、解決するのに役立つナレーションを提供し、前のトピックやAEMの知識を最小限に抑えながら、様々な複雑なトピックや機能を結び付けます。
 
 ドキュメントジャーニーは、アドビの最新の調査、アドビのコンサルタントによる実装実績、顧客プロジェクトからのフィードバックなどに基づいて、ベストプラクティス原則を軸に設計されています。
 
@@ -67,7 +67,7 @@ AEM を使用してサイトのビジネスケースを解決する方法をア�
 
 * AEM 管理者または Cloud Manager の管理者の場合、またはフロントエンド開発者と管理者の役割を両方担当している場合、または AEM のエンドツーエンドのプロセスを理解したい場合は、以下に示すように、[Cloud Manager について](cloud-manager.md)でジャーニーを最初から始めてください。
 * フロントエンド開発のみを担当し、AEM と Cloud Manager 管理者とやり取りする場合は、 [Git リポジトリのアクセス情報を取得](retrieve-access.md) に直接スキップして、AEM Git リポジトリにアクセスしてカスタマイズを開始できます。
-* AEM Sites とCloud Manager が連携して動作することを既に理解していて、設定から直接開始する場合は、[テンプレートから新しいサイトの作成に直接スキップできます。](create-site.md)
+* 既にAEM Sitesと Cloud Manager が連携し、設定を直接おこなうことを理解している場合は、次の操作を実行できます。 [スキップして、テンプレートからサイトを直接作成します。](create-site.md)
 
 ## その他のリソース {#additional-resources}
 

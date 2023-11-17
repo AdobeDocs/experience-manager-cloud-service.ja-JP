@@ -2,10 +2,10 @@
 title: コンテンツフラグメントでの参照の使用について
 description: コンテンツ、他のフラグメントおよび他のアセット（メディア）への参照をコンテンツフラグメントで使用する方法について説明します。ヘッドレス CMS オーサリング用のネストされたフラグメントの必要性と仕組みを紹介します。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 92%
+source-wordcount: '708'
+ht-degree: 91%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 92%
 * Person（ユーザー）
 * 授賞歴
 
-とても簡単に見えますが、もちろん Company には CEO も Employees（従業員）もいます。これらはすべて人物で、それぞれが Person として定義されます。
+非常に簡単に見えますが、会社には CEO と従業員の両方がいます....これらはすべて人物で、それぞれが Person として定義されます。
 
 また、Person は Award（1 つまたは複数）を持っている可能性があります。
 

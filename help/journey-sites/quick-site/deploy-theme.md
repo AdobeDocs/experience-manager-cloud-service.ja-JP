@@ -2,10 +2,10 @@
 title: カスタマイズしたテーマのデプロイ
 description: パイプラインを使用してサイトテーマをデプロイする方法を説明します。
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1022'
-ht-degree: 96%
+source-wordcount: '1014'
+ht-degree: 88%
 
 ---
 
@@ -42,11 +42,11 @@ AEM クイックサイト作成ジャーニーの以前のドキュメントで�
 
    ![Cloud Manager の概要](assets/cloud-manager-overview.png)
 
-1. 開始する必要があるパイプラインの横の省略記号ボタンをタップまたはクリックします。ドロップダウンメニューから、 「**実行**」を選択します。
+1. 開始する必要があるパイプラインの横の省略記号を選択します。 ドロップダウンメニューから、 「**実行**」を選択します。
 
    ![パイプラインを実行](assets/run-pipeline.png)
 
-1. **パイプラインを実行** 確認ダイアログで、「**はい**」をタップまたはクリックします。
+1. Adobe Analytics の **パイプラインを実行** 確認ダイアログ、「 」を選択 **はい**.
 
    ![パイプライン実行の確認](assets/pipeline-confirm.png)
 
@@ -58,7 +58,7 @@ AEM クイックサイト作成ジャーニーの以前のドキュメントで�
 
 パイプラインのステータスを確認して、進行状況の詳細をいつでも確認できます。
 
-1. パイプラインの横にある省略記号アイコンをタップまたはクリックします。
+1. パイプラインの横にある省略記号を選択します。
 
    ![パイプラインの詳細の表示](assets/view-pipeline-details.png)
 
@@ -68,7 +68,7 @@ AEM クイックサイト作成ジャーニーの以前のドキュメントで�
 
 >[!TIP]
 >
->パイプラインの詳細ウィンドウでは、いずれかのステップが失敗した場合に、デバッグ目的でパイプラインの任意のステップの「**ログをダウンロード**」をタップまたはクリックすることができます。パイプラインのデバッグは、このジャーニーの範囲外です。このページの [その他のリソース](#additional-resources) の節で紹介している Cloud Manager の技術ドキュメントを参照してください。
+>パイプラインの詳細ウィンドウで、「 **ログをダウンロード** デバッグ目的でパイプラインの任意のステップを実行する場合に、いずれかのステップが失敗する可能性があります。 パイプラインのデバッグは、このジャーニーの範囲外です。このページの [その他のリソース](#additional-resources) の節で紹介している Cloud Manager の技術ドキュメントを参照してください。
 
 ## デプロイ済みのカスタマイズの検証 {#view-customizations}
 
@@ -112,7 +112,7 @@ AEM は強力なツールであり、その他にも使用可能なオプショ�
 * [AEM サイトテーマ](https://github.com/adobe/aem-site-template-standard-theme-e2e) - これは AEM サイトテーマの GitHub リポジトリです。
 * [npm](https://www.npmjs.com) - サイトをすばやく作成するために使用される AEM テーマが npm に基づいている場合。
 * [webpack](https://webpack.js.org) - サイトをすばやく作成するために使用される AEM テーマが webpack に基づいている場合。
-* [ページの作成と整理](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - このガイドでは、テンプレートから作成した後にさらにカスタマイズする場合の、AEM サイトのページの管理方法について詳しく説明します。
+* [ページの作成と整理](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)  — このガイドでは、AEMサイトをテンプレートから作成した後にさらにカスタマイズする場合の、テンプレートサイトのページの管理方法について詳しく説明します。
 * [パッケージの操作方法](/help/implementing/developing/tools/package-manager.md) - パッケージを使用すると、リポジトリコンテンツの読み込みと書き出しが可能になります。このドキュメントでは、AEM 6.5 でのパッケージの操作方法を説明します（AEMaaCS にも適用）。
 * [オンボーディングジャーニー](/help/journey-onboarding/overview.md) - このガイドは、チームが確実に設定され、AEM as a Cloud Service にアクセスできるようにするための出発点となります。
 * [Adobe Experience Manager Cloud Manager ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja) - Cloud Manager の機能について詳しくは、Cloud Manager のドキュメントを参照してください。

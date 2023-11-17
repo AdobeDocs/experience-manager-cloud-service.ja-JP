@@ -2,10 +2,10 @@
 title: URL の外部化
 description: Externalizer は、プログラムによってリソースパスを外部および絶対 URL に変換できる OSGi サービスです。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 86%
+source-wordcount: '651'
+ht-degree: 84%
 
 ---
 
@@ -72,7 +72,7 @@ Externalizer サービスのドメインマッピングを定義するには：
 
    * **`scheme`** は通常、http または https ですが、別のプロトコルを指定することもできます。
 
-      * https リンクを強制するには、https を使用することをお勧めします。
+      * Adobeでは、https リンクを強制するために https を使用することをお勧めします。
       * URL の外部化を要求する際にクライアントコードがスキームを上書きしない場合に使用されます。
 
    * **`server`** はホスト名（ドメイン名または IP アドレス）です。

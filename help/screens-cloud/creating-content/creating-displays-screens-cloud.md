@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service でのディスプレイの作成と管理
 description: このページでは、Screens as a Cloud Service でディスプレイを作成および管理する方法について説明します。
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '657'
-ht-degree: 91%
+ht-degree: 89%
 
 ---
 
@@ -118,7 +118,7 @@ ht-degree: 91%
 
 ![画像](/help/screens-cloud/assets/display/movetofolder.png)
 
-**注意**：フォルダーのサイドパネルでフォルダーを選択する必要があります。また、パンくずナビゲーションでは、「**ディスプレイ**」の横に現在のフォルダー名が表示されます。
+**注意**：フォルダーのサイドパネルでフォルダーを選択する必要があります。また、パンくずナビゲーションでは、現在のフォルダー名がの横に表示されます。 **表示**.
 
 ## フォルダーからコンテンツを削除する方法 {#delete-folder}
 

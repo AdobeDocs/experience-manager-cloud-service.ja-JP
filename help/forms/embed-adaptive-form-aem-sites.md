@@ -4,10 +4,10 @@ description: アダプティブFormsを、AEMの外部でホストされてい�
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3165'
-ht-degree: 34%
+source-wordcount: '3164'
+ht-degree: 43%
 
 ---
 
@@ -27,7 +27,7 @@ AEMページエディターを使用して、複数のフォームをAEM Sites�
 
 AEM Forms提供 **[!UICONTROL アダプティブフォームコンテナ]** および **[!UICONTROL アダプティブForms — 埋め込み (v2)]** コンポーネント。 以下を使用できます。 **[!UICONTROL アダプティブForms — 埋め込み (v2)]** 既存のアダプティブフォームを追加するコンポーネント、またはアダプティブFormsエディターを使用してフォームを作成するコンポーネント **[!UICONTROL アダプティブフォームコンテナ]** をクリックして、エクスペリエンスフラグメントページまたはAEM Sitesページ内に新しいフォームを作成します。
 
-![AEM Sitesページでのアダプティブフォームの例](/help/forms/assets/adaptive-form-in-sites-page.png)
+![AEM Sites ページでのアダプティブフォームの例](/help/forms/assets/adaptive-form-in-sites-page.png)
 
 <!-- For information about embedding an Adaptive Form in an external web page, see [Embed Adaptive Form in external web page](/help/forms/using/embed-adaptive-form-external-web-page.md). 
 
@@ -36,7 +36,7 @@ AEM Forms提供 **[!UICONTROL アダプティブフォームコンテナ]** お�
 Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you create seamless data capture experiences within a Sites page using the power of Adaptive Forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. It also lets you use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager, enhancing the overall form creation and management experience. Let's explore some of these features:
 
 * **Versioning:** AEM Sites pages offer [robust versioning capabilities](/help/sites-cloud/authoring/features/page-versions.md), allowing you to track and manage different versions of your forms. This enables you to make changes and enhancements to forms while maintaining the ability to roll back to previous versions if needed. Versioning ensures a controlled and organized approach to form development and evolution.
-* **Targeting (Integration with Adobe Target):** With AEM Sites pages targeting capabilities, you can also [personalize the form experience for different audiences](/help/sites-cloud/integrating/integration-adobe-target-ims.md). By leveraging user segments and targeting criteria, you can tailor the form's content, design, or behavior to specific groups of users. This enables you to provide a personalized and relevant form experience, increasing engagement and conversion rates.
+* **Targeting (Integration with Adobe Target):** With AEM Sites pages targeting capabilities, you can also [personalize the form experience for different audiences](/help/sites-cloud/integrating/integration-adobe-target-ims.md). By using user segments and targeting criteria, you can tailor the form's content, design, or behavior to specific groups of users. This enables you to provide a personalized and relevant form experience, increasing engagement and conversion rates.
 * **Translation:** AEM Sites [seamless integration with translation services](/help/sites-cloud/administering/translation/overview.md), allowing you to translate forms into multiple languages easily. This feature simplifies the localization process, ensuring that your forms are accessible to a global audience. You can manage translations efficiently within AEM translation projects, reducing time and effort required for multilingual form support. See considerations section for more information on translation.  
 * **Multi-site Management and Live Copy:** AEM Sites provide robust [Multi-site Management and Live Copy capabilities](/help/sites-cloud/administering/msm/overview.md), enabling you to create and manage multiple websites within a single environment. This feature now lets you reuse forms across different sites, ensuring consistency and reducing duplication efforts. With centralized control and management, you can efficiently maintain and update forms across multiple websites.
 * **Themes:** AEM Sites pages provide a framework for designing and maintaining consistent visual styles across multiple web pages. These define colors, fonts, style sheets, and other visual elements that contribute to the overall look and feel of the website. [You can use the themes designed for an AEM Sites page for an Adaptive Form, saving time and effort](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes). 
@@ -57,11 +57,11 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 * **[埋め込まれたアダプティブフォームをエクスペリエンスフラグメントに変換する](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment):** AEM Sitesページに追加された埋め込みアダプティブフォームをエクスペリエンスフラグメントに変換して、複数のAEM Sitesページにわたってフォームを再利用する。
 
-* **[カスタムアダプティブフォームを作成してAEM Sitesページに追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor-or-experience-fragment):** 以下を使用すると、 **[!UICONTROL アダプティブフォームコンテナ]** コンポーネントを使用して、要件やデザイン環境設定に合わせて独自の新しいフォームを一から作成できます。
+* **[カスタムアダプティブフォームを作成し、AEM Sites ページに追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor-or-experience-fragment)：****[!UICONTROL アダプティブフォームコンテナコンポーネントを使用すると、要件やデザインの好みに合わせてカスタマイズし、新規フォームをゼロから作成します。]**
 
-* **[エクスペリエンスフラグメントにカスタムアダプティブフォームを作成して追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor):** フォームをAEMエクスペリエンスフラグメントに追加することで、フォームのリーチを拡大して、複数のページやサイトでシームレスに再利用できます。
+* **[カスタムアダプティブフォームを作成し、エクスペリエンスフラグメントに追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor)：** AEM エクスペリエンスフラグメントにフォームを追加して、フォームのリーチを拡張し、複数のページやサイトでシームレスに再利用できます。
 
-* **複数のフォームをAEM Sitesページまたはエクスペリエンスフラグメントに追加する：**  複数のアダプティブFormsを作成またはAEM Sitesページに追加して、ユーザーの環境設定や要件に基づいて複数の選択肢をユーザーに提供できます。 AEMページエディターを使用して、複数のフォームをAEM Sitesページにすばやく埋め込むことができます。 以下を使用すると、 **[!UICONTROL アダプティブフォームコンテナ]** コンポーネントを複数回追加して、AEM SitesページにアダプティブFormsを追加します。 以下を使用すると、 **[!UICONTROL アダプティブForms — 埋め込み]** AEM Sitesページでコンポーネントを複数回作成する ( **[!UICONTROL フォームはフレームの幅全体をカバーします]** 」オプションが選択されている。 例えば、 **[!UICONTROL フォームはフレームの幅全体をカバーします]** 「 」オプションがオフの場合、AEM Sitesページでは、iframe なしで存在するアダプティブフォームが 1 つだけサポートされます。 を使用してアダプティブFormsをさらに追加するには **[!UICONTROL アダプティブForms — 埋め込み]** コンポーネント、選択 **[!UICONTROL フォームはフレームの幅全体をカバーします]** オプション。
+* **複数のフォームを AEM Sites ページまたはエクスペリエンスフラグメントに追加：**&#x200B;複数のアダプティブフォームを作成し、AEM Sites ページに追加して、ユーザーの環境設定や要件に基づいて複数の選択肢をユーザーに提供します。AEMページエディターを使用して、複数のフォームをAEM Sitesページにすばやく埋め込むことができます。 以下を使用すると、 **[!UICONTROL アダプティブフォームコンテナ]** コンポーネントを複数回追加して、AEM SitesページにアダプティブFormsを追加します。 以下を使用すると、 **[!UICONTROL アダプティブForms — 埋め込み]** AEM Sitesページでコンポーネントを複数回作成する ( **[!UICONTROL フォームはフレームの幅全体をカバーします]** 」オプションが選択されている。 例えば、 **[!UICONTROL フォームはフレームの幅全体をカバーします]** 「 」オプションがオフの場合、AEM Sitesページでは、iframe なしで存在するアダプティブフォームが 1 つだけサポートされます。 を使用してアダプティブFormsをさらに追加するには **[!UICONTROL アダプティブForms — 埋め込み]** コンポーネント、選択 **[!UICONTROL フォームはフレームの幅全体をカバーします]** オプション。
 
 ## アダプティブフォームをAEM SitesページまたはAEM Experience Fragment に埋め込む際の考慮事項 {#consideration}
 
@@ -74,13 +74,13 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 新しいアダプティブフォームまたは既存のアダプティブフォームを埋め込む前に、 **[!UICONTROL アダプティブForms — 埋め込み (v2)]**，有効 **アダプティブFormsコアコンポーネント** とを追加します。 **アダプティブFormsクライアントライブラリ** をAEM Sitesページに追加します。
 
-+++  AEM Cloud Service環境でのアダプティブFormsコアコンポーネントの有効化
++++  AEM Cloud Service 環境でのアダプティブフォームコアコンポーネントの有効化
 
-次の点を確認します。 [アダプティブFormsコアコンポーネントがAEM Formsas a Cloud Service環境で有効になっている](enable-adaptive-forms-core-components.md).
+[アダプティブフォームコアコンポーネントがお使いの AEM Forms as a Cloud Service 環境で有効になっている](enable-adaptive-forms-core-components.md)ことを確認します。
 
 +++
 
-+++  アダプティブFormsクライアントライブラリをAEM Sitesページまたはエクスペリエンスフラグメントに追加する
++++  AEM Sites ページまたはエクスペリエンスフラグメントに、アダプティブフォームクライアントライブラリを追加
 
 次の場合に **[!UICONTROL フォームがページの幅全体に対応している場合]** オプションが選択されている場合、 **[!UICONTROL フォームコンテナ]** コアコンポーネントを使用して設定ダイアログボックスと Adaptive Formsを使用する場合は、対応するサイトのページにクライアントライブラリを含める必要があります。
 
@@ -89,8 +89,8 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 次を追加： **Customheaderlibs** および **Customfooterlibs** クライアントライブラリをAEM Sitesページに追加します。 クライアントライブラリを追加するには：
 
-1. にアクセスしてクローンを作成 [AEM Cloud Service Git リポジトリ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html).
-1. プランテキストエディターでAEM Cloud Service Git リポジトリフォルダーを開きます。 例： Microsoft® Visual Code。
+1. [AEM Cloud Service Git リポジトリ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=ja)にアクセスしてクローンを作成します。
+1. プランテキストエディターで AEM Cloud Service Git リポジトリフォルダーを開きます。例： Microsoft® Visual Code。
 1. `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` ファイルを開き、次のコードをファイルに追加します。
 
    ```
@@ -127,7 +127,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
        </sly> 
    ```
 
-1. [デプロイメントパイプラインの実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=ja) クライアントライブラリをAEM as a Cloud Service環境にデプロイする場合。
+1. [デプロイメントパイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=ja)して、クライアントライブラリを AEM as a Cloud Service 環境にデプロイします。
 
 +++
 
@@ -219,25 +219,25 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 次に、次の操作を行います。 [送信アクションの設定](/help/forms/configuring-submit-actions.md) 埋め込まれたアダプティブフォームの詳細プロパティを作成するには、フォーム作成ウィザードを使用します。
 
-### AEM Sitesページのフォームをエクスペリエンスフラグメントに変換する {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
+### AEM Sites ページ内のフォームをエクスペリエンスフラグメントに変換 {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
 
 Sites ページエディター内にある既存のアダプティブフォームをエクスペリエンスフラグメントに変換すると、複数のページやサイトでフォームを再利用できます。
 
 AEM Sites ページ内のアダプティブフォームをエクスペリエンスフラグメントに変換するには、次の手順を実行します。
 
 1. アダプティブフォームを含む AEM Sites ページ（アダプティブフォームコンテナコンポーネント内）を編集モードで開きます。
-1. コンテンツ ツリーを開き、アダプティブフォームをホストする&#x200B;**[!UICONTROL アダプティブフォームコンテナ]**&#x200B;を選択します。AEM Sites ページは複数のアダプティブフォームをホストできます。したがって、適切なアダプティブフォームコンテナを慎重に選択してください。
+1. コンテンツツリーを開き、アダプティブフォームをホストする&#x200B;**[!UICONTROL アダプティブフォームコンテナ]**&#x200B;を選択します。1 つの AEM Sites ページで複数のアダプティブフォームをホストできます。したがって、適切なアダプティブフォームコンテナを慎重に選択してください。
 1. メニューバーで、![「エクスペリエンスフラグメントバリエーションに変換」アイコン](/help/forms/assets/Smock_FilingCabinet_18_N.svg)を選択します。「エクスペリエンスフラグメントバリエーションに変換」アイコン。
 
-   ![ファイルキャビネットのロゴをクリックして、AEM Sitesページのアダプティブフォームをエクスペリエンスフラグメントに変換する](/help/forms/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
+   ![ファイルキャビネットのロゴをクリックして、AEM Sites ページのアダプティブフォームをエクスペリエンスフラグメントに変換](/help/forms/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
-   アダプティブフォームコンテナを新しいエクスペリエンスフラグメントに変換するか、既存のエクスペリエンスフラグメントに追加するためのダイアログボックスが表示されます。
+   アダプティブフォームコンテナを新しいエクスペリエンスフラグメントに変換するか、既存のエクスペリエンスフラグメントに追加するためのダイアログボックスが表示されます。。
 
 1. 次の日： **[!UICONTROL エクスペリエンスフラグメントに変換]** [ バリエーション ] ダイアログボックスで、次のオプションの値を設定します。
 
    * **アクション：** エクスペリエンスフラグメントを作成する場合は「 」を選択し、既存のエクスペリエンスフラグメントに追加する場合は「 」を選択します。
    * **親パス：**&#x200B;エクスペリエンスフラグメントをホストするフォルダーのパスを指定します。このオプションは、新しいエクスペリエンスフラグメントを作成する場合にのみ使用できます。
-   * **テンプレート：**&#x200B;エクスペリエンスフラグメントテンプレートのパスを指定します。エクスペリエンスフラグメントテンプレートがない場合は、 [作成する](/help/implementing/developing/extending/experience-fragments.md). このオプションは、アダプティブフォームを既存のエクスペリエンスフラグメントに追加する場合にのみ使用できます。
+   * **テンプレート：**&#x200B;エクスペリエンスフラグメントテンプレートのパスを指定します。エクスペリエンスフラグメントテンプレートがない場合は、[作成します](/help/implementing/developing/extending/experience-fragments.md)。このオプションは、アダプティブフォームを既存のエクスペリエンスフラグメントに追加する場合にのみ使用できます。
    * **フラグメントのタイトル：**&#x200B;エクスペリエンスフラグメントのタイトルを指定します。タイトルは、エクスペリエンスフラグメントを一意に識別します。。
    * **フラグメントタグ：** エクスペリエンスフラグメントのタグを指定します。 このタグは、エクスペリエンスフラグメントのカテゴリを一意に識別します。
 
@@ -371,5 +371,5 @@ AEM Sites ページにアダプティブフォームを埋め込む際は、以�
 
 ## 関連トピック {#see-also}
 
-* [コアコンポーネントベースのスタンドアロンのアダプティブFormsを作成する](/help/forms/creating-adaptive-form-core-components.md)
-* [コアコンポーネントベースのアダプティブフォームをAEM Sitesページで直接作成する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [コアコンポーネントベースのスタンドアロンのアダプティブフォームを作成する](/help/forms/creating-adaptive-form-core-components.md)
+* [コアコンポーネントベースのアダプティブフォームを AEM Sites ページで直接作成する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

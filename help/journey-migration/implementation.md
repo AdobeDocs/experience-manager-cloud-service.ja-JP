@@ -2,7 +2,7 @@
 title: 実装段階
 description: クラウドに移行するためのコードとコンテンツの準備が整っていることの確認
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2339'
 ht-degree: 96%
@@ -75,7 +75,7 @@ Cloud Services と互換性を持たせるために、既存の機能のリフ�
 * [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ja) をダウンロードして、ローカル開発環境を設定する方法を確認してください。
 * 最後に、[AEM as a Cloud Service Java API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) について詳しく確認してください。
 
-また、以下も行ってください。
+また、次のこともできます。
 
 * このビデオを視聴すると、Dispatcher SDK をローカルにインストールする方法を理解できます。
 

@@ -2,9 +2,9 @@
 title: コンテンツサービス用の JSON エクスポーター
 description: AEM コンテンツサービスは、web ページだけに焦点を置かずに AEM のコンテンツの記述と配信を一般化するように設計されています。AEM コンテンツサービスにより、あらゆるクライアントで使用できる標準化された方法で、従来の AEM web ページとは異なるチャネルにコンテンツを配信できます。
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '398'
 ht-degree: 92%
 
 ---
@@ -67,8 +67,6 @@ AEM 内では、セレクター `model` と `.json` 拡張機能を使用して�
 
 ### その他の情報 {#further-information}
 
-関連トピック：
-
 * Assets HTTP API
    * [Assets HTTP API](/help/assets/developer-reference-material-apis.md)
 * Sling モデル：
@@ -77,8 +75,6 @@ AEM 内では、セレクター `model` と `.json` 拡張機能を使用して�
    * [コンポーネントの JSON 書き出しの有効化](enabling-json-exporter.md)
 
 ## 関連ドキュメント {#related-documentation}
-
-詳しくは、以下を参照してください。
 
 * [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)
 * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

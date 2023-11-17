@@ -2,10 +2,10 @@
 title: サイトテーマのカスタマイズ
 description: サイトテーマの作成方法、カスタマイズ方法、および AEM のライブコンテンツを使用したテスト方法を説明します。
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 96%
+source-wordcount: '960'
+ht-degree: 94%
 
 ---
 
@@ -64,7 +64,7 @@ AEM 管理者が提供するテーマを編集場所に抽出し、目的のエ�
 
    ![npm run live](assets/npm-run-live.png)
 
-1. プロキシサーバーが起動すると、`http://localhost:7001/` へのブラウザーが自動的に開きます。「**ローカルでログイン（管理者タスクのみ）**」をタップまたはクリックし、AEM 管理者から提供されたプロキシユーザーの資格情報を使用してサインオンします。
+1. プロキシサーバーが起動すると、`http://localhost:7001/` へのブラウザーが自動的に開きます。選択 **ローカルでログイン（管理者タスクのみ）** をクリックし、AEM管理者から提供されたプロキシユーザーの資格情報を使用してサインオンします。
 
    ![ローカルでログイン](assets/sign-in-locally.png)
 

@@ -2,17 +2,17 @@
 title: AEM Cloud Service の AEM Sites の主な変更点
 description: AEM Cloud ServiceのAEM Sitesの主な変更点の詳細
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 97%
+source-wordcount: '535'
+ht-degree: 91%
 
 ---
 
 
 # AEM Sites as a Cloud Service の主な変更点 {#notable-changes}
 
-AEM Sites as a Cloud Service は、クラウドネイティブな AEM as a Cloud Service プラットフォームの一部として、エクスペリエンス管理機能を提供します。AEM Sites as a Cloud Service には、AEM as a Cloud Service の主なメリット（クラウドネイティブの拡張性、稼動時間、最新状態の維持など）に加え、Sites 固有の変更や追加も数多く含まれています。
+AEM Sites as a Cloud Service は、クラウドネイティブな AEM as a Cloud Service プラットフォームの一部として、エクスペリエンス管理機能を提供します。AEM Sites as a Cloud Serviceは、クラウドネイティブな拡張性、稼動時間、常に最新状態といったAEMas a Cloud Serviceの主なメリットに加えて、Sites 固有の変更や追加も提供します。
 
 >[!NOTE]
 >このドキュメントでは、AEM Sites の主な変更点について重点的に説明します。AEM as a Cloud Service およびその他のモジュールに関する一般的な変更点については、以下を参照してください。

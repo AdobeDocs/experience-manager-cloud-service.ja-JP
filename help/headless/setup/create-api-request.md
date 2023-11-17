@@ -2,10 +2,10 @@
 title: API リクエストの作成 - ヘッドレス設定
 description: コンテンツフラグメントコンテンツと AEM Assets REST API のヘッドレス配信に GraphQL API を使用して、コンテンツフラグメントを管理する方法を説明します。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 95%
+source-wordcount: '652'
+ht-degree: 93%
 
 ---
 
@@ -31,7 +31,7 @@ GraphQL API を使用する前に、GraphQL エンドポイントを作成する
 1. 「**作成**」を選択します。
 1. **新しい GraphQL エンドポイントを作成**&#x200B;ダイアログボックスが開きます。以下を指定します。
    * **名前**：エンドポイントの名前。任意のテキストを入力できます。
-   * **使用する GraphQL スキーマの提供元**：ドロップダウンを使用して、必要な設定を選択します。
+   * **次から提供されるGraphQLスキーマを使用**：ドロップダウンリストを使用して、必要な設定を選択します。
 1. 「**作成**」で確定します。
 1. コンソールで、前に作成した設定に基づいて、**パス**&#x200B;が表示されます。このパスを使用して、GraphQLクエリを実行します。
 

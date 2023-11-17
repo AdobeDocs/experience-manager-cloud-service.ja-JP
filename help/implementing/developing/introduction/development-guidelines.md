@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスでの AEM および AMS での AEM との重要な違いについて説明します。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2733'
-ht-degree: 94%
+source-wordcount: '2732'
+ht-degree: 92%
 
 ---
 
@@ -243,7 +243,7 @@ AEM 内のメールは、[Day CQ Mail Service OSGi](https://experienceleague.ado
 
 SMTP サーバーポートには、高度なネットワーク設定時に API 呼び出しで使用される portForwards パラメーターに設定された `portDest` 値を設定する必要があります。`portOrig` 値は、30000 ～ 30999 の必須範囲内の意味のある値である必要があります。例えば、SMTP サーバーポートが 465 の場合、ポート 30465 を `portOrig` の値として使用します。
 
-この例で、SSL を有効にする必要がある場合、**Day CQ Mail Service OSGI** サービスの設定は次のとおりです。
+この場合、SSL を有効にする必要があると想定し、SSL を **Day CQ Mail Service OSGI** サービス：
 
 * `smtp.port` を `30465` に設定
 * `smtp.ssl` を `true` に設定

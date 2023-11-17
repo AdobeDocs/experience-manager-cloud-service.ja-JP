@@ -3,10 +3,10 @@ title: AEM Forms と Adobe Analytics を統合する方法
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: true
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1757'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -274,7 +274,7 @@ Adobe Launch 設定を作成するには、次の手順を実行します。
 
 1. 「**[!UICONTROL プロジェクトを作成]**」をタップし、「**[!UICONTROL 空のプロジェクト]**」を選択します。
 
-1. フリーフォームの右上にあるドロップダウンリストからレポートスイート名を選択します。
+1. フリーフォームの右上にあるドロップダウンリストから、レポートスイート名を選択します。
 
 1. すべてのフォームタイトルを表示するには、「**[!UICONTROL ディメンション項目を検索]**」テキストボックスで「**フォームタイトル**」を指定します。
 

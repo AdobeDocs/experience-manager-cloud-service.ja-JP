@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.11.0 �
 description: AEM as a Cloud Service の Cloud Manager 2023.11.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 14%
+source-wordcount: '740'
+ht-degree: 13%
 
 ---
 
@@ -50,7 +50,7 @@ GitHub を使用してリポジトリを管理する場合は、 [Cloud Manager 
 
 [Cloud Manager のカスタム権限](/help/implementing/cloud-manager/custom-permissions.md) では、設定可能な権限を持つ新しいカスタム権限プロファイルを作成して、Cloud Manager ユーザーのプログラム、パイプライン、環境へのアクセスを制限できます。
 
-この新機能のテストとフィードバックの共有に関心がある場合は、電子メールでお送りください `Grp-CloudManager-custom-permissions@adobe.com` Adobe IDに関連付けられた電子メールアドレスから。
+この新機能のテストとフィードバックの共有に関心がある場合は、 `Grp-CloudManager-custom-permissions@adobe.com` Adobe IDに関連付けられた電子メールアドレスから。
 
 ### セルフ・サービス・コンテンツのリストア {#content-restore}
 
@@ -59,7 +59,7 @@ GitHub を使用してリポジトリを管理する場合は、 [Cloud Manager 
 * 過去 24 時間のポイント・イン・タイム・バックアップのリストア
 * 最大 7 日間の固定時間の復元
 
-この新機能のテストとフィードバックの共有に関心がある場合は、に電子メールを送信してください。 `aemcs-restorefrombackup-adopter@adobe.com` Adobe IDに関連付けられた電子メールから。 注：
+この新機能のテストとフィードバックの共有に関心がある場合は、に電子メールを送信してください。 `aemcs-restorefrombackup-adopter@adobe.com` Adobe IDに関連付けられた電子メールから。
 
 * アーリーアダプタープログラムは開発環境のみに限定されます。
 * この機能のアーリーアダプタープログラムの提供は制限されています。
@@ -71,7 +71,7 @@ GitHub を使用してリポジトリを管理する場合は、 [Cloud Manager 
 
 このダッシュボードでは、Web アプリの品質を向上させるためのオープンソースの自動ツールであるGoogle Lighthouse を利用します。 これは、任意の Web ページに対して実行できます。公開または認証が必要です。 パフォーマンス、アクセシビリティ、プログレッシブ Web アプリ、SEO などに関する監査を実施しています。
 
-新しいダッシュボードのテストと運用に興味がある場合は、 次の宛先にメールを送信してください： `aem-lighthouse-pilot@adobe.com` Adobe IDに関連付けられたメールから、すぐに使い始めることができます。
+新しいダッシュボードのテストと運用に興味がある場合は、 電子メールの送信先 `aem-lighthouse-pilot@adobe.com` Adobe IDに関連付けられたメールから、すぐに使い始めることができます。
 
 ## 既知の問題 {#known-issues}
 

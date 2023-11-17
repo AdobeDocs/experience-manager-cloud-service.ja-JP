@@ -2,9 +2,9 @@
 title: コンポーネントコンソール
 description: コンポーネントコンソールを使用すると、インスタンスに定義されたすべてのコンポーネントを参照できます
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 69%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 69%
 
 ### コンポーネントの詳細 {#component-details}
 
-特定のコンポーネントに関する詳細を表示するには、必要なリソースをタップまたはクリックします。 次の 3 つのタブが表示されます。
+特定のコンポーネントに関する詳細を表示するには、必要なリソースを選択します。 次の 3 つのタブが表示されます。
 
 * **プロパティ**
 

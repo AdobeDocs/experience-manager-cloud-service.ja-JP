@@ -2,10 +2,10 @@
 title: レンダリングコンポーネントのコンテンツフラグメントの設定
 description: レンダリングコンポーネントのコンテンツフラグメントの設定
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 100%
+source-wordcount: '521'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 * 独自のコンテンツフラグメントベースのコンポーネントを実装する必要がある。
 * アドバンスドサービスを利用する必要がある。
 
-コアコンポーネントを使用することをお勧めします。
+Adobeは、コアコンポーネントの使用をお勧めします。
 
 >[!CAUTION]
 >
@@ -47,7 +47,7 @@ ht-degree: 100%
 
 ## OSGi サービス - コンテンツフラグメントコンポーネントの設定 {#osgi-service-content-fragment-component-configuration}
 
-設定は、OSGi サービス&#x200B;**コンテンツフラグメントコンポーネントの設定**&#x200B;に結び付ける必要があります。
+設定は OSGi サービスにバインドする必要があります **コンテンツフラグメントコンポーネントの設定**:
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 

@@ -2,10 +2,10 @@
 title: コンテンツの検索とインデックス作成
 description: AEM as a Cloud Serviceでのコンテンツの検索とインデックス作成について説明します。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 71%
+source-wordcount: '2428'
+ht-degree: 70%
 
 ---
 
@@ -61,7 +61,7 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 
 >[!NOTE]
 >
->での新しいインデックスの概要 `dam:Asset` nodetype（特に fulltext インデックス）は、OOTB 製品の機能と競合し、パフォーマンスの問題を引き起こす可能性があるので、強くお勧めしません。 一般に、現在の `damAssetLucene-*` インデックスのバージョンは、 `dam:Asset` nodetype （これらの変更は、以降にリリースされた場合、新しい製品バージョンのインデックスに自動的に結合されます）。 不明な点がある場合は、Adobeサポートにお問い合わせください。
+>での新しいインデックスの概要 `dam:Asset` nodetype（特に fulltext インデックス）は、OOTB 製品の機能と競合し、パフォーマンスの問題を引き起こす可能性があるので、強くお勧めしません。 一般に、現在の `damAssetLucene-*` インデックスのバージョンは、 `dam:Asset` nodetype （これらの変更は、以降にリリースされた場合、新しい製品バージョンのインデックスに自動的に結合されます）。 不明な場合は、アドバイスをAdobeサポートに問い合わせてください。
 
 ## 新しいインデックス定義の準備 {#preparing-the-new-index-definition}
 
@@ -240,7 +240,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!TIP]
 >
->AEM as a Cloud Service を使用する場合に必要なパッケージ構造の詳細については、[AEM プロジェクト構造](/help/implementing/developing/introduction/aem-project-content-package-structure.md)のドキュメントを参照してください。
+>AEM as a Cloud Serviceに必要なパッケージ構造について詳しくは、 [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ## ローリングデプロイメントを使用したインデックス管理 {#index-management-using-rolling-deployments}
 

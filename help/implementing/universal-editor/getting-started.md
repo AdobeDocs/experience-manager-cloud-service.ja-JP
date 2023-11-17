@@ -2,10 +2,10 @@
 title: AEM のユニバーサルエディターの概要
 description: ユニバーサルエディターへのアクセス権を取得する方法と、これを使用するために最初の AEM アプリのインストルメントを開始する方法について説明します。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 84%
+source-wordcount: '920'
+ht-degree: 76%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 84%
 
 ユニバーサルエディターは任意のソースからコンテンツを編集できますが、このドキュメントでは AEM アプリを例として使用します。
 
-AEM アプリをオンボーディングし、ユニバーサルエディターを使用するために実装する手順はいくつかあります。
+AEMアプリをオンボーディングし、ユニバーサルエディターを使用するために実装する手順はいくつかあります。
 
 1. [ユニバーサルエディターへのアクセスをリクエストします。](#request-access)
 1. [ユニバーサルエディターのコアライブラリを含めます。](#core-library)
@@ -43,13 +43,13 @@ AEM アプリをオンボーディングし、ユニバーサルエディター�
 
 ## ユニバーサルエディターコアライブラリを含める {#core-library}
 
-ユニバーサルエディターで使用するためにアプリの実装を行う前に、次の依存関係を含める必要があります。
+アプリをユニバーサルエディターで使用するために実装する前に、次の依存関係を含める必要があります。
 
 ```javascript
 @adobe/universal-editor-cors
 ```
 
-実装を有効にするには、以下の読み込みを `index.js` に追加する必要があります。
+計装を有効にするには、次のインポートを `index.js`.
 
 ```javascript
 import "@adobe/universal-editor-cors";
@@ -103,7 +103,7 @@ X-Frame-Options: SAMEORIGIN は、iframe 内で AEM ページのレンダリン�
 
 ユニバーサルエディターサービスは、編集中のアプリのコンテンツに対して正しいバックエンドシステムを識別して利用するために、[統一リソース名（URN）](https://ja.wikipedia.org/wiki/Uniform_Resource_Name)を要求します。したがって、コンテンツをコンテンツリソースにマッピングし直すには、URN スキーマが必要です。
 
-ページに追加されたインストルメンテーション属性は、ほとんどが [HTML マイクロデータ](https://developer.mozilla.org/ja/docs/Web/HTML/Microdata)で構成されており、HTML により適切な意味を持たせたり、HTML 文書をインデックス化したりなどに使用することもできる、業界標準です。
+ページに追加される計測属性は、主に [HTMLマイクロデータ、](https://developer.mozilla.org/ja/docs/Web/HTML/Microdata) HTMLをより意味的にし、HTMLドキュメントのインデックスを作成するなどの目的にも使用できる業界標準です。
 
 ### 接続の作成 {#connections}
 

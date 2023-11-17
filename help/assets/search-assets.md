@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '5564'
+source-wordcount: '5562'
 ht-degree: 90%
 
 ---
@@ -506,11 +506,11 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 ### ワークフローの作成 {#create-workflow}
 
-バージョンの作成機能と同様に、検索結果に表示されるアセットのワークフローを作成することもできます。アセット（複数も可）を選択し、**[!UICONTROL 作成]**／**[!UICONTROL ワークフロー]**&#x200B;をクリックします。ワークフローモデルを選択し、ワークフローのタイトルを指定して、「**[!UICONTROL 開始]**」をクリックします。
+バージョンの作成機能と同様に、検索結果に表示されるアセットのワークフローを作成することもできます。アセットを選択し、 **[!UICONTROL 作成]** > **[!UICONTROL ワークフロー]**. ワークフローモデルを選択し、ワークフローのタイトルを指定して、「**[!UICONTROL 開始]**」をクリックします。
 
 ### 関連付けと関連付けを解除 {#relate-unrelate-assets}
 
-検索結果に表示されるアセットの関連付けと関連付けを解除を実行します。アセット（複数も可）を選択し、「**[!UICONTROL 関連付け]**」または「**[!UICONTROL 関連付けを解除]**」をクリックします。
+検索結果に表示されるアセットの関連付けと関連付けを解除を実行します。アセットを選択し、 **[!UICONTROL 関連付け]** または **[!UICONTROL 関連付けを解除]**.
 
 ### アセットフォルダーの場所に移動します {#navigate-asset-folder-location}
 

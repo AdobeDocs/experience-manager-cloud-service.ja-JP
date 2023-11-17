@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 リリースのリリースノート。'
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 89%
+source-wordcount: '1533'
+ht-degree: 87%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 89%
 
 * プロパティページでメタデータをアップデートするように選択すると、スキーマで多くのオプションが提供される場合、インターフェイスの応答が遅くなります。（CQ-4318538）
 
-* 1 行のテキストフィールドでメタデータ値をアップデートおよび保存すると、ドロップダウンメニューで編集が無効になっている場合でも、ドロップダウンメニューの値が削除されます。（CQ-4317077）
+* 1 行のテキストフィールドでメタデータ値を更新および保存すると、ドロップダウンリストメニューで編集が無効になっている場合でも、ドロップダウンリストメニューの値が削除されます。 （CQ-4317077）
 
 * アセットをレビューする際に、省略記号を注釈として使用できます。省略記号を使用すると、印刷したときに省略記号の数が注釈の番号になります。（CQ-4316792）
 

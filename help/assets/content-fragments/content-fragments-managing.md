@@ -2,9 +2,9 @@
 title: コンテンツフラグメントの管理（アセット - コンテンツフラグメント）
 description: ヘッドレスコンテンツの基礎となる AEM コンテンツフラグメントを Assets コンソールを使用して管理する方法について説明します。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1876'
 ht-degree: 89%
 
 ---
@@ -149,7 +149,7 @@ ht-degree: 89%
 
    >[!NOTE]
    >
-   >「**保存して閉じる**」は、**保存**&#x200B;ドロップダウンからアクセスできます。
+   >**保存して閉じる** は、 **保存** 」ドロップダウンリストから選択できます。
 
    >[!NOTE]
    >

@@ -2,10 +2,10 @@
 title: 参照デモのアドオンのインストールについて
 description: Cloud Manager と、それを使用してアドオンをインストールする方法を説明します。
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
 source-wordcount: '956'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -55,7 +55,7 @@ Cloud Manager を使用すると、必要な環境やツールなど、AEM プ�
 
 >[!TIP]
 >
->Cloud Manager について詳しく知るには、この記事の[その他のリソース](#additional-resources)セクションで詳細情報へのリンクを確認してください。
+>Cloud Manager について詳しくは、 [その他のリソース](#additional-resources) この記事の節を参照してください。
 
 ### プログラム {#programs}
 

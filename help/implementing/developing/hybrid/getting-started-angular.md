@@ -2,10 +2,10 @@
 title: Angular を使用した AEM での SPA の概要
 description: この記事では、サンプルのSPAアプリケーションを紹介し、その設定方法を説明し、Angularフレームワークを使用して独自のSPAをすぐに使い始める方法を説明します。
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '990'
-ht-degree: 97%
+ht-degree: 93%
 
 ---
 
@@ -276,4 +276,4 @@ AEM の SPA の中核概念は、SPA コンポーネントを AEM コンポー�
 * 「[SPA エディターの概要](editor-overview.md)」では、AEM と SPA 間の通信モデルをより深く分析しています。
 * [WKND SPA プロジェクト](wknd-tutorial.md)は、AEM で簡単な SPA プロジェクトを実装するための、手順を追ったチュートリアルです。
 * [SPA の動的モデルからコンポーネントへのマッピング](model-to-component-mapping.md)では、動的モデルとコンポーネントのマッピング、および AEM の SPA 内での動作方法について説明しています。
-* [SPA ブループリント](blueprint.md)は、React や Angular 以外のフレームワーク用に、AEM に SPA を実装する場合や、単に理解を深めたい場合に、AEM 用の SPA SDK の詳しい仕組みを提供します。
+* [SPA Blueprint](blueprint.md) は、React やAngular以外のフレームワーク用にAEMにSPAを実装する場合や、単に理解を深めたい場合に、AEM用SPA SDK の仕組みに関する詳細な情報を提供します。

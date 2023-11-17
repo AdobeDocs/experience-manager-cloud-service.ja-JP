@@ -2,10 +2,10 @@
 title: データ保護およびデータプライバシーに関する規制 - Adobe Experience Manager as a Cloud Service Sites の対応
 description: EU 一般データ保護規則（GDPR）やカリフォルニア州消費者プライバシー法など、データ保護およびデータプライバシーに関する様々な規制に対する Adobe Experience Manager as a Cloud Service Sites のサポートと、新しい AEM as a Cloud Service プロジェクトを実装する際にこれらの規制に準拠する方法について説明します。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 98%
+source-wordcount: '1023'
+ht-degree: 96%
 
 ---
 
@@ -96,7 +96,7 @@ AEM には、ContextHub を使用するオプションのデータレイヤー�
 
 ### オプトイン／オプトアウトの実装 {#implementing-opt-in-opt-out}
 
-サイト所有者は、次のガイドラインに従ってオプトアウトコンポーネントを実装する必要があります。
+サイトの所有者は、次のガイドラインに従ってオプトアウトコンポーネントを実装する必要があります。
 
 以下のガイドラインでは、デフォルトでオプトインが実装されています。そのため、Web サイトの訪問者は、個人データがブラウザーの（クライアントサイド）永続ストレージに格納される前に、明確に同意する必要があります。
 

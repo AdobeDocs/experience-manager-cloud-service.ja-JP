@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 リリースのリリースノート。'
 description: "[!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 のリリースノート."
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1032'
 ht-degree: 93%
 
 ---
@@ -39,7 +39,7 @@ Experience Manager as a Cloud Service 2020.7.0 の一般的なリリースノー
 
 * [!DNL Dynamic Media] へのアセットの発行は、アセットマイクロサービスを使用するアセット処理パイプライン全体で不可欠な要素とし、バッチ発行バックエンドを改善することで、簡単になり、より堅牢になっています。
 
-* [!UICONTROL ワークフローモデル]エディターで、Cloud Service の展開と互換性のないワークフローステップに警告のマークがつくようになりました。また、Cloud Service 環境上で既存のワークフローを実行する場合、互換性のないワークフロー手順はスキップされます。
+* [!UICONTROL ワークフローモデル]エディターで、Cloud Service の展開と互換性のないワークフローステップに警告のマークがつくようになりました。また、ワークフロー環境で既存のワークフローをCloud Serviceする場合、互換性のないワークフロー手順はスキップされます。
 
 * [!DNL Cloud Manager] の環境に関連付けられた Git プロジェクトの `/conf/global` にデプロイされた、顧客が作成したワークフローモデルは、`/var` に自動的にデプロイされ、[!DNL Experience Manager] で使用できます。顧客が変更した、`/libs` にある製品ワークフローモデルは、自動的には `/var` にデプロイされません。
 
@@ -93,7 +93,7 @@ AEM Commerce が Cloud Service で利用できるようになりました。
 
 * 認証バウンドのプライベート Maven リポジトリがサポートされるようになりました。
 
-* Cloud Manager ビルドコンテナで、Java 8 と Java 11 の両方がサポートされるようになりました。詳しくは、「 Java 11 サポートの使用」を参照してください。
+* Cloud Manager ビルドコンテナで、Java 8 と Java 11 の両方がサポートされるようになりました。詳しくは、Java 11 サポートの使用を参照してください。
 
 ### バグの修正 {#bug-fixes-cm}
 
@@ -105,7 +105,7 @@ AEM Commerce が Cloud Service で利用できるようになりました。
 
 * コード品質プロセスで特定のエラーが発生すると、ログファイルが正しく生成されない場合があります。
 
-* 新しいプログラムを作成する際に、推奨名が既存のプログラム名と重複する場合がありました。
+* プログラムを作成する際に、推奨名が既存のプログラム名と重複する場合がありました。
 
 * 一部の大規模なパイプラインステップログは、ユーザーインターフェイスから一貫性のある方法でダウンロードできませんでした。
 

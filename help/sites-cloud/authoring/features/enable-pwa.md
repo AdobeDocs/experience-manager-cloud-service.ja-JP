@@ -2,10 +2,10 @@
 title: プログレッシブ web アプリケーション機能の有効化
 description: AEM Sites では、コンテンツ作成者がコーディングの代わりにシンプルな設定で、任意のサイトに対してプログレッシブ web アプリケーション機能を有効にすることができます。
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2004'
-ht-degree: 67%
+source-wordcount: '1998'
+ht-degree: 66%
 
 ---
 
@@ -102,8 +102,8 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 を使用 [前提条件](#prerequisites) を満たした場合、コンテンツ作成者はサイトへのPWA機能を簡単に有効にできます。 次に、その方法の概要を示します。個々のオプションについて詳しくは、の節を参照してください。 [詳細オプション。](#detailed-options)
 
 1. AEM にログインします。
-1. メインメニューで、**ナビゲーション**／**Sites** をタップまたはクリックします。
-1. サイトプロジェクトを選択し、「[**プロパティ**](/help/sites-cloud/authoring/fundamentals/page-properties.md)」をタップまたはクリックするか、ホットキー `p` を使用します。
+1. メインメニューから、「 」を選択します。 **ナビゲーション** > **Sites**.
+1. サイトプロジェクトを選択し、「 」を選択します。 [**プロパティ**](/help/sites-cloud/authoring/fundamentals/page-properties.md) または、ホットキーを使用します。 `p`.
 1. 「**プログレッシブ Web アプリケーション**」タブを選択し、該当するプロパティを設定します。少なくとも、次の操作が必要です。
    1. 「**PWA を有効にする**」オプションを選択します。
    1. **スタートアップ URL** を定義します。
@@ -123,7 +123,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
       ![PWA のオフラインパスの定義](../assets/pwa-offline.png)
 
-1. 「**保存して閉じる**」をタップまたはクリックします。
+1. 「**保存して閉じる**」を選択します。
 
 これでサイトが構成され、[ローカルアプリケーションとしてインストールできます。](#using-pwa-enabled-site)
 

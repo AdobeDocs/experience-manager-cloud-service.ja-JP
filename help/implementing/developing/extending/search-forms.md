@@ -2,10 +2,10 @@
 title: 検索フォームの設定
 description: Adobe Experience Manager as a Cloud Service の検索フォームの設定。
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2035'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -64,7 +64,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
 
 >[!NOTE]
 >
->アセット関連の検索フォームについて詳しくは、[Assets - 検索ファセット](/help/assets/search-facets.md)を参照してください。
+>Assets 関連の検索フォームについて詳しくは、 [Assets — 検索ファセット](/help/assets/search-facets.md).
 
 
 ## 述語とその設定 {#predicates-and-their-settings}

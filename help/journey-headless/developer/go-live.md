@@ -2,10 +2,10 @@
 title: ヘッドレスアプリケーションの運用開始方法
 description: AEM ヘッドレスデベロッパージャーニーのこのパートでは、Git 内のローカルコードを CI／CD パイプライン用に Cloud Manager Git に移行することでヘッドレスアプリケーションをライブ環境にデプロイする方法を説明します。
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1093'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -67,7 +67,7 @@ AEM ヘッドレスアプリケーションのローンチに備えるには、�
 
 アップデートが Cloud Manager にアップロードされたら、[Cloud Managerの CI／CD パイプライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja#how-to-use)を使用して、アップデートを AEM as a Cloud Service にデプロイできます。
 
-コードのデプロイを開始するには、Cloud Manager CI／CD パイプラインを利用します。このパイプラインについて詳しくは、[こちら](/help/implementing/deploying/overview.md)を参照してください。
+Cloud Manager CI/CD パイプラインを使用して、コードのデプロイを開始できます。このパイプラインについては幅広く取り上げています [ここ](/help/implementing/deploying/overview.md).
 
 ## パフォーマンスの監視 {#performance-monitoring}
 

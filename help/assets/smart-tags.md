@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2463'
-ht-degree: 99%
+source-wordcount: '2461'
+ht-degree: 98%
 
 ---
 
@@ -78,7 +78,7 @@ AEM ではデフォルトで、スマートタグがテキストベースのア�
 
 **数量とサイズ：**&#x200B;タグ 1 つにつき画像は最小 10 個、最大 50 個。
 
-**コヒーレンス**：タグの画像の見た目が似ていることを確認します。同じ視覚的要素（画像内の同じタイプのオブジェクトなど）に関するタグを 1 つのタグモデルにまとめるのが最適です。例えば、以下の画像は似ていないので、これらの画像すべてを `my-party`（トレーニング用）としてタグ付けするのは適切ではありません。
+**コヒーレンス**：タグの画像の見た目が似ていることを確認します。同じ視覚的要素（画像内の同じタイプのオブジェクトなど）に関するタグを 1 つのタグモデルにまとめるのが最適です。例えば、これらの画像を `my-party` （トレーニングの場合）似ていないので、似ていないと見なされます。
 
 ![トレーニングガイドラインの例を示すイラスト](assets/do-not-localize/coherence.png)
 

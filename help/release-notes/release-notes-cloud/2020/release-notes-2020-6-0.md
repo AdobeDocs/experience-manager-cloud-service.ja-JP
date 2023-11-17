@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 のリリースノート
 description: 「[!DNL Adobe Experience Manager] as a Cloud Service 2020.6.0 のリリースノート」
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1933'
-ht-degree: 91%
+source-wordcount: '1932'
+ht-degree: 95%
 
 ---
 
@@ -58,13 +58,13 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 ### 新機能 {#what-is-new-cloud-manager}
 
-* Cloud Manager でのロールが&#x200B;*ビジネス所有者*&#x200B;のユーザーは、サンドボックスプログラムをランディングページから（プログラムカードのクイックアクションボタンを使用して）またはプログラム内から削除できるようになりました。
+* Cloud Manager での役割が&#x200B;*ビジネス所有者*&#x200B;のユーザーは、サンドボックスプログラムをランディングページから（プログラムカードのクイックアクションボタンを使用して）またはプログラム内から削除できるようになりました。
 
-  詳しくは、 [サンドボックスプログラムの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=ja) を参照してください。
+  詳細は、[サンドボックスプログラムの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=ja)を参照してください。
 
-* Cloud Manager の&#x200B;*ビジネス所有者*&#x200B;または&#x200B;*デプロイメントマネージャー*&#x200B;のロールにあるサンドボックスプログラムユーザーが、Cloud Manager UI を使用して、実稼動環境とステージ環境のセットを削除できるようになりました。削除オプションが、 **プログラムの概要** ページと **環境** ページに貼り付けます。 実稼動環境またはステージ環境で削除オプションを選択すると、セットの他の内容も削除されます。
+* Cloud Manager の&#x200B;*ビジネス所有者*&#x200B;または&#x200B;*デプロイメントマネージャー*&#x200B;の役割を持つサンドボックスプログラムユーザーが、Cloud Manager UI を使用して、実稼動環境とステージ環境のセットを削除できるようになりました。削除オプションが、**プログラムの概要**&#x200B;ページの環境カードと、**環境**&#x200B;ページの両方から利用できるようになりました。実稼動環境またはステージ環境で削除オプションを選択すると、セットの他の内容も削除されます。
 
-  詳しくは、 [サンドボックスプログラムの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=ja) を参照してください。
+  詳細は、[サンドボックスプログラムの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=ja)を参照してください。
 
 * ランディングページにコーチマークを付け、基本的なナビゲーションについてユーザーに通知し、指示します。
 
@@ -72,19 +72,19 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 * Cloud Manager で&#x200B;**学習**&#x200B;ページが利用できるようになり、トップナビゲーションからアクセスできます。このページには、Cloud Manager で割り当てられたロールに関連して、最も頻繁に使用されるワークフローについてユーザーが知るのに役立つリソースが含まれています。
 
-* サンドボックスプログラムは、 **サンドボックス** ランディングページのプログラムカードに表示され、 **プログラムの概要** ページに貼り付けます。
+* サンドボックスプログラムは、**サンドボックス**&#x200B;バッジによって識別されるようになります。このバッジは、ランディングページのプログラムカードおよび&#x200B;**プログラムの概要**&#x200B;ページで、プログラム名の横に表示されます。
 
 * 「システム管理者」のロールを持つユーザーは、Admin Console 内の場所に 1 回のクリックでアクセスできるようになりました。この場所から、ユーザーのロールや Cloud Manager への権限を管理できます。「**アクセスを管理**」ボタンが、ランディングページの「**プログラムを追加**」ボタンの横に表示されて使用できるようになりました。
 
-  詳しくは、 [システム管理者のタスク](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=ja#sysadmin-tasks) を参照してください。
+  詳しくは、[システム管理者のタスク](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=ja#sysadmin-tasks)を参照してください。
 
 * 「システム管理者」のロールを持つユーザーは、Cloud Manager から直接オーサーインスタンスに対して 1 回のクリックでアクセスできるようになりました。
 
-  詳しくは、 [オーサーインスタンスへのアクセスの管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=ja#manage-access-aem) を参照してください。
+  詳しくは、[オーサーインスタンスへのアクセス管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=ja#manage-access-aem)を参照してください。
 
 * ビルドログに、スキップされたコンテンツパッケージを含む、検出されたアーティファクトのリストが含まれるようになりました。
 
-* ビルド手順で、生成されるすべてのコンテンツパッケージに、名前、グループ、バージョンのすべての必須プロパティが含まれていることを検証できるようになりました。
+* ビルド手順で、生成されるすべてのコンテンツパッケージに、名前、グループ、バージョンのすべての必須プロパティが含まれているかを検証できるようになりました。
 
 * ビルド手順で、ビルドで少なくとも 1 つのコンテンツパッケージが生成されたかどうかを検証できるようになりました。
 
@@ -98,7 +98,7 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 ### 既知の問題 {#known-issues-cm}
 
-* サンドボックスプログラム内の環境は、一定期間アクティビティが検出されなかった場合、休止状態になります。 このステータスは、Cloud Manager では確認されません。このステータスが確認されるのは、開発者コンソールを経由した場合です。この問題は、今後のリリースで修正される予定です。
+* サンドボックスプログラム内の環境が、一定期間アクティビティが検出されない場合、休止状態になります。このステータスは、Cloud Manager では確認されません。このステータスが確認されるのは、開発者コンソールを経由した場合です。この問題は、今後のリリースで修正される予定です。
 
 * Cloud Manager から開発者コンソールへの直接リンクが、サンドボックスプログラムの環境を非休止／休止にするオプションを表示しない。これを解決するには、開発者コンソールで、url の末尾にパターン `#release-cm-p1234-e5678` を追加します。ここで、*1234* はプログラム ID、*5678* は環境 ID です。この問題は、今後のリリースで修正される予定です。
 

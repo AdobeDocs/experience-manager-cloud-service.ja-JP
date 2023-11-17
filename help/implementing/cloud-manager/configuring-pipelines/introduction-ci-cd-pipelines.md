@@ -3,10 +3,10 @@ title: CI／CD パイプライン
 description: Cloud Manager の CI／CD パイプラインと、CI／CD パイプラインを使用してコードを効率的にデプロイする方法について説明します。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 8b8f10bfaad2d8d7d409384e01a2c65a588d77e0
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 92%
+source-wordcount: '1418'
+ht-degree: 90%
 
 ---
 
@@ -61,7 +61,7 @@ Cloud Manager には、次の 2 種類のパイプラインが用意されてい
 
 ### Cloud Manager の CI／CD パイプラインについて {#understand-pipelines}
 
-Cloud Manager で使用できるすべてのパイプラインとその用途を次の表にまとめます。
+Cloud Manager で使用可能なパイプラインとその使用方法の概要を次の表に示します。
 
 | パイプラインタイプ | デプロイメントまたはコード品質 | ソースコード | 目的 | 備考 |
 |--- |--- |--- |---|---|
@@ -115,7 +115,7 @@ Cloud Manager で使用できるすべてのパイプラインとその用途を
 
 設定パイプラインを使用して、WAF ルールを含むトラフィックフィルタールールを数分以内に設定およびデプロイできます。
 
-ドキュメントを参照してください [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md) を参照して、リポジトリの設定を管理し、適切にデプロイする方法を確認してください。
+詳しくは、 [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md) を参照して、リポジトリの設定を管理し、適切にデプロイする方法を確認してください。
 
 ### 設定パイプラインの設定 {#configure-config-deployment}
 
@@ -157,7 +157,7 @@ Cloud Manager で使用できるすべてのパイプラインとその用途を
 
 ## Web 階層設定パイプライン {#web-tier-config-pipelines}
 
-Web 階層設定パイプラインを使用すると、HTTPD／Dispatcher 設定を他のコード変更から切り離して、この設定のみを AEM ランタイムにデプロイできます。これは効率化されたパイプラインで、Dispatcher 設定変更のみをデプロイしたい場合に、ほんの数分で行うことができます。
+Web 階層設定パイプラインを使用すると、HTTPD／Dispatcher 設定を他のコード変更から切り離して、この設定のみを AEM ランタイムにデプロイできます。Dispatcher 設定の変更のみをデプロイするユーザーを提供する、合理化されたパイプラインです。これは、数分で迅速にデプロイする方法です。
 
 >[!TIP]
 >

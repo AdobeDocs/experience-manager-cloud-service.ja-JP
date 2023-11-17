@@ -2,10 +2,10 @@
 title: ContextHub JavaScript API リファレンス
 description: ContextHub コンポーネントをページに追加すると、ContextHub JavaScript API がスクリプトで使用できるようになります。
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4620'
-ht-degree: 100%
+source-wordcount: '4612'
+ht-degree: 99%
 
 ---
 
@@ -403,7 +403,7 @@ JSONP サービスへの最後の呼び出し以降キャッシュされてい�
 
 #### getServiceDetails() {#getservicedetails}
 
-この ContextHub.Store.JSONPStore オブジェクトのサービスオブジェクトを取得します。サービスオブジェクトには、サービス URL を作成するのに必要なすべての情報が格納されています。
+この ContextHub.Store.JSONPStore オブジェクトのサービスオブジェクトを取得します。service オブジェクトには、サービス URL の作成に必要な情報が含まれています。
 
 ##### 戻り値 {#returns-getservicedetails}
 
@@ -481,15 +481,15 @@ JSONP サービスの URL を取得します。
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore` は [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) を拡張したものなので、このクラスのすべての関数を継承しています。ただし、JSONP サービスから取得されるデータは、ContextHub の永続性に応じて保持されます（[永続モード](adding-contexthub.md#persistence-modes)：を参照）
+`ContextHub.Store.PersistedJSONPStore` extends [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) そのクラスのすべての関数を継承します。 ただし、JSONP サービスから取得されるデータは、ContextHub の永続性に応じて保持されます（[永続モード](adding-contexthub.md#persistence-modes)：を参照）
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
-`ContextHub.Store.PersistedStore` は [ContextHub.Store.Core](#contexthub-store-core) を拡張したものなので、このクラスのすべての関数を継承しています。このストアのデータは、ContextHub の永続性の設定に応じて保持されます。
+`ContextHub.Store.PersistedStore` extends [ContextHub.Store.Core](#contexthub-store-core) そのクラスのすべての関数を継承します。 このストアのデータは、ContextHub の永続性の設定に応じて保持されます。
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-`ContextHub.Store.SessionStore` は [ContextHub.Store.Core](#contexthub-store-core) を拡張したものなので、このクラスのすべての関数を継承しています。このストアのデータは、インメモリパーシスタンス（JavaScript オブジェクト）を使用して保持されます。
+`ContextHub.Store.SessionStore` extends [ContextHub.Store.Core](#contexthub-store-core) そのクラスのすべての関数を継承します。 このストアのデータは、インメモリパーシスタンス（JavaScript オブジェクト）を使用して保持されます。
 
 ## ContextHub.UI {#contexthub-ui}
 

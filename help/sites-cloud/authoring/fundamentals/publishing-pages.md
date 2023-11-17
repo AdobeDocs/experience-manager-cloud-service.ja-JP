@@ -2,10 +2,10 @@
 title: ページの公開
 description: AEMの様々なメカニズムを使用して、ページを公開および非公開にする方法を説明します。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1801'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -224,7 +224,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 ### エディターから非公開にする {#unpublishing-from-the-editor}
 
-ページを編集する際に、そのページを非公開にする場合、**ページを公開**&#x200B;する際と同じように、**ページ情報**&#x200B;メニューで「[ページを非公開](#publishing-from-the-editor)」を選択します。
+ページの編集時に、そのページを非公開にする場合は、「 **ページを非公開にする** （内） **ページ情報** メニューは、 [ページを公開する](#publishing-from-the-editor).
 
 >[!NOTE]
 >
@@ -258,7 +258,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 サイトコンソールにある「[公開を管理](#manage-publication)」オプションを使用すると、これを行うことができます。
 
-1. サイトコンソールで、公開または非公開するツリーのルートページを選択し、「**公開を管理**」を選択します。
+1. サイトコンソールで、公開または非公開にするツリーのルートページを選択し、「 」を選択します。 **公開を管理**.
 1. **公開を管理**&#x200B;ウィザードが起動します。公開または非公開および実行するタイミングを選択して、「**次へ**」を選択して続行します。
 1. **範囲**&#x200B;の手順で、ルートページを選択して、「**子を含める**」を選択します。
 

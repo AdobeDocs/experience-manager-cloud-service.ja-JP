@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] への�
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 5dfcf1c5484b978c1a778eb99a09421533234734
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3179'
 ht-degree: 98%
@@ -173,7 +173,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. 「**[!UICONTROL タイトル]**」フィールドで一括読み込み設定のタイトルを指定します。
 
-1. 「**[!UICONTROL ソースを読み込み]**」ドロップダウンリストからデータソースのタイプを選択します。
+1. 次の中からデータソースタイプを選択します。 **[!UICONTROL ソースを読み込み]** 」ドロップダウンリストから選択できます。
 
 1. データソースとの接続を作成するための値を指定します。例えば、データソースとして **Azure Blob Storage** を選択した場合は、Azure ストレージアカウント、Azure BLOB コンテナ、Azure アクセスキーの値を指定します。
 

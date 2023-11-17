@@ -5,10 +5,10 @@ uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 75%
+source-wordcount: '726'
+ht-degree: 74%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 75%
    * **テンプレートメッセージ：** 署名メッセージの読み込み中に表示するPDFを指定します。 Adobe Signサービスでは、署名PDFの準備と読み込みに時間がかかります。
    * **署名サービス：**「**手書き署名**」オプションを選択します。
 
-   * **CSS クラス**：クライアントライブラリの CSS クラスを指定します（存在する場合）。CSS クラスの代わりに[テーマ](themes.md)や[インラインスタイル](inline-style-adaptive-forms.md)を使用することをお勧めします。
+   * **CSS クラス**：クライアントライブラリの CSS クラスを指定します（存在する場合）。Adobeは、 [テーマ](themes.md) および [インラインスタイル](inline-style-adaptive-forms.md) を使用します。
 
    完了 ![aem_forms_save](assets/aem_forms_save.png) アイコンをタップして、変更を保存します。署名が正常に設定されました。
 

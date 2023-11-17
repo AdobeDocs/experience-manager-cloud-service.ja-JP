@@ -4,9 +4,9 @@ description: コンテンツフラグメントのコンテンツを作成する�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2251'
 ht-degree: 4%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 4%
    * （内） **プロパティ** タブを更新するには、 **タイトル** および **説明** フラグメントの場合は、 **バリエーション**
 * 中央パネル：選択したバリエーションの実際のフィールドとコンテンツを表示します
    * コンテンツの編集が可能
-   * if **タブプレースホルダー** フィールドは、ここに表示されるモデル内で定義され、ナビゲーションに使用できます。フィールドは水平方向に表示されるか、ドロップダウンリストとして表示されます
+   * if **タブプレースホルダー** フィールドは、ここに表示されるモデル内で定義され、ナビゲーションに使用できます。フィールドは、水平方向に表示されるか、ドロップダウンリストとして表示されます。
 
 ![コンテンツフラグメントエディター — 概要](assets/cf-authoring-overview.png)
 
@@ -345,7 +345,7 @@ AEMページ、エクスペリエンスフラグメントまたはその他の�
 
 * **タイトル**
 * **説明**
-* **タグ**：ドロップダウンまたは選択ダイアログの使用
+* **タグ**：ドロップダウンリストまたは選択ダイアログの使用
 
   ![コンテンツフラグメントエディター — タグを管理](assets/cf-authoring-edit-tags.png)
 
@@ -399,7 +399,7 @@ Adobe Analytics の **言語プロパティ** 関連する言語コピーのタ�
 この機能を使用するには、まず次の操作が必要です。
 
 * IT チームと協力して、JSON 出力を使用してコンテンツフラグメントをレンダリングする外部フロントエンドアプリケーションを設定します。
-* 外部フロントエンドアプリケーションを設定すると、 **デフォルトのプレビュー URL パターン** は、 [適切なコンテンツフラグメントモデルのプロパティ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
+* 外部フロントエンドアプリケーションが設定されると、 **デフォルトのプレビュー URL パターン** は、 [適切なコンテンツフラグメントモデルのプロパティ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
 
 URL が定義されると、 **プレビュー** ボタンがアクティブです。 このボタンを選択すると、（別のタブで）外部アプリケーションを起動して、コンテンツフラグメントをレンダリングできます。
 
@@ -475,8 +475,6 @@ The **フィールド** パネルには、コンテンツフラグメント内�
 </table>
 
 ## 役に立つ知識 {#good-to-know}
-
-さらに、
 
 * コンテンツフラグメントを編集するには、 [適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). 問題が発生している場合は、システム管理者にお問い合わせください。
 

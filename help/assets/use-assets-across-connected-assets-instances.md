@@ -6,7 +6,7 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3869'
 ht-degree: 98%
@@ -33,7 +33,7 @@ Connected Assets 機能では、[!DNL Experience Manager Sites] と [!DNL Experi
 
 [!UICONTROL ページエディター]でページをターゲット先として編集する場合、作成者は、アセットのソースとして機能する別の [!DNL Assets] デプロイメントのアセットをシームレスに検索、参照および埋め込むことができます。管理者は、 [!DNL Sites] の機能を備える [!DNL Experience Manager] のデプロイメントと [!DNL Assets] の機能を備える [!DNL Experience Manager] 別のデプロイメントとの 1 回限りの統合を作成します。また、Connected Assets を通じてサイトの web ページで Dynamic Media 画像を使用し、スマート切り抜きや画像プリセットなどの Dynamic Media 機能を利用することもできます。
 
-[!DNL Sites] 作成者の場合、リモートアセットは読み取り専用のローカルアセットとして利用できます。この機能は、サイトエディター上のリモートアセットへのシームレスな検索とアクセスをサポートします。Sites で完全なアセットコーパスを使用する必要があるその他のユースケースについては、Connected Assets を活用する代わりにアセットの一括移行を検討してください。
+[!DNL Sites] 作成者の場合、リモートアセットは読み取り専用のローカルアセットとして利用できます。この機能は、サイトエディター上のリモートアセットへのシームレスな検索とアクセスをサポートします。Sites で完全なアセットコーパスの使用を必要とするその他のユースケースについては、Connected Assets を活用する代わりにアセットの一括移行を検討してください。
 
 ### 前提条件とサポートされているデプロイメント {#prerequisites}
 

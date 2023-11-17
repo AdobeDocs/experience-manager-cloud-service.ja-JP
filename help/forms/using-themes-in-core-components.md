@@ -2,9 +2,9 @@
 title: アダプティブFormsでテーマを作成して使用するにはどうすればよいですか？
 description: テーマを使用して、コアコンポーネントを使用してアダプティブフォームのスタイルを設定し、視覚的な ID を付けることができます。 任意の数のアダプティブフォームで、テーマを共有できます。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2677'
+source-wordcount: '2676'
 ht-degree: 18%
 
 ---
@@ -367,7 +367,7 @@ The `variable.scss` ファイルには、テーマのグローバル変数が含
 
    ![ランパイプリン](/help/forms/assets/canvas-theme-run-pipeline.png)
 
-ビルドが完了すると、オーサーインスタンスでテーマを使用できるようになります。 これは、 **[!UICONTROL スタイル]** 新しいアダプティブフォームの作成時に、アダプティブフォーム作成ウィザードのタブをクリックします。
+ビルドが完了すると、オーサーインスタンスでテーマを使用できるようになります。 これは、 **[!UICONTROL スタイル]** 」タブをクリックします。
 
 ![「スタイル」タブで使用可能なカスタムテーマ](/help/forms/assets/custom-theme-style-tab.png)
 

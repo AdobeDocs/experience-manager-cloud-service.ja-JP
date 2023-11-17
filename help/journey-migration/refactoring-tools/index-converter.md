@@ -2,10 +2,10 @@
 title: インデックスコンバーター
 description: AEM as a Cloud Serviceへの移行に備えて、インデックス定義を移行する方法を説明します。
 exl-id: ac02ca41-eb35-4f24-bf17-d00ce318423d
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 93%
+source-wordcount: '288'
+ht-degree: 83%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 93%
 
 ## インデックスコンバーターの使用 {#using-index-converter}
 
-* Adobe I/O CLI を経由：`aio-cli-plugin-aem-cloud-service-migration`（AEM as a Cloud Service の Adobe I/O CLI 用コードリファクタリングプラグイン）を介してインデックスコンバーターを使用することをお勧めします。
+* Adobe I/O別 CLI :Adobeは、 `aio-cli-plugin-aem-cloud-service-migration` (Adobe I/OCLI 用のAEMas a Cloud Serviceコードリファクタリングプラグイン )。
 
   プラグインをインストールして使用する方法について詳しくは、**[Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** を参照してください。
 

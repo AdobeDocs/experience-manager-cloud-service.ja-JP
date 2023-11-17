@@ -4,10 +4,10 @@ description: 多言語サイトのコンテンツを翻訳する方法の概要�
 feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '289'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,7 @@ AEM との統合のためのコネクタが翻訳サービスプロバイダー�
 
 >[!NOTE]
 >
->言語コピー機能を使用するには、ユーザーが `project-administrators` グループのメンバーである必要があります。
+>ユーザーは、 `project-administrators` グループを使用して、言語コピー機能を使用します。
 
 ## ベストプラクティス {#best-practices}
 

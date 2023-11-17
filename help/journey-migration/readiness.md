@@ -2,10 +2,10 @@
 title: 準備段階
 description: AEM インストールをクラウドに移行する準備ができていることを確認するために、必要な手順を説明します。
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2066'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -80,7 +80,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
   <tr>
     <td>組み込み CDN と独自の CDN の取得</td>
     <td></td>
-    <td>AEM as a Cloud Service には、ほとんどの使用例に最適化されたすべての環境用の CDN が含まれています。<br>独自の CDN を設定する場合、アドビサポートにリクエストを送信して承認を得る必要があります。<br>承認されると、CDN は環境内の AEM インスタンスではなく、Fastly を指します。</td>
+    <td>AEM as a Cloud Service には、ほとんどの使用例に最適化されたすべての環境用の CDN が含まれています。<br>独自の CDN を設定する場合は、承認を求めるリクエストをAdobeサポートに送信する必要があります。<br>承認されると、CDN は環境内の AEM インスタンスではなく、Fastly を指します。</td>
   </tr>
   <tr>
     <td>長時間実行されているジョブ</td>

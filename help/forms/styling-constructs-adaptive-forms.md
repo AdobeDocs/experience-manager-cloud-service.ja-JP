@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2315'
-ht-degree: 99%
+source-wordcount: '2316'
+ht-degree: 97%
 
 ---
 
@@ -276,7 +276,7 @@ Web ページのテーマは、ブートストラップに基づき、以下の 
   </tr>
   <tr>
    <td><p><code>listboxwidget-height</code></p> </td>
-   <td><p>複数選択ドロップダウンの最大の高さ</p> </td>
+   <td><p>複数選択ドロップダウンリストの最大の高さ</p> </td>
   </tr>
  </tbody>
 </table>
@@ -686,7 +686,7 @@ Web ページのテーマは、ブートストラップに基づき、以下の 
 
 `}`
 
-さらに、入れ子のナビゲーターの有無に基づいて、タブナビゲーター（左側と上部の両方）のスタイル設定を行うためのクラスがあります。
+また、入れ子のナビゲーターがあるかどうかに基づいて、タブナビゲーター（左と上の両方）のスタイルを設定するクラスもあります。
 
 <table>
  <tbody>

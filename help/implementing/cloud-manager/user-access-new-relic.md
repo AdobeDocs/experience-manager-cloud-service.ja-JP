@@ -2,10 +2,10 @@
 title: New Relic One
 description: AEM as a Cloud Service の New Relic One アプリケーションパフォーマンスモニタリング（APM）サービスと、そのサービスへのアクセス方法について説明します。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 90%
+source-wordcount: '1728'
+ht-degree: 88%
 
 ---
 
@@ -52,7 +52,7 @@ AEM as a Cloud Service 用の New Relic One APM には、多くの機能があ�
 
    * プログラムの&#x200B;**環境**&#x200B;画面の上部にある省略記号ボタンから「**ユーザーを管理**」オプションにアクセスすることもできます。
 
-1. **New Relic ユーザーを管理**&#x200B;ダイアログで、追加するユーザーの姓名を入力し、「**追加**」ボタンをクリックします。追加するすべてのユーザーについて、この手順を繰り返します。
+1. Adobe Analytics の **New Relicユーザーの管理** ダイアログで、追加するユーザーの姓名を入力し、 **追加** 」ボタンをクリックします。 追加するすべてのユーザに対して、この手順を繰り返します。
 
    ![ユーザーを追加](assets/newrelic-add-users.png)
 
@@ -154,7 +154,7 @@ New Relic One にユーザーを追加する場合は、次の制限が適用さ
 >
 >New Relic Oneアカウントで 90 日以上アクティビティが検出されなかった場合、APM エージェントは停止します。
 >
->サポートチケットを開いて、 [AEM Support Portal](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) AEMaaCS 環境用に APM エージェントを再度有効にする場合。
+>サポートチケットを [AEM Support Portal](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) AEMaaCS 環境用に APM エージェントを再度有効にする場合。
 
 AEM as a Cloud Service プログラムの New Relic One 製品に関する詳細なヘルプまたは追加のガイダンスについては、[AEM サポートポータル](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)からサポートチケットを開いてください。
 
@@ -202,4 +202,4 @@ New Relic One を使用すると、ユーザーがアクセスできるすべて
 
 ### New Relic Oneアカウントの APM エージェントが停止しました。 何が起こったの？ {#deactivated}
 
-[APM エージェントが停止しています](#limitations) 90 日以上アクティビティが検出されなかった場合。 サポートチケットを開いて、 [AEM Support Portal](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) AEMaaCS 環境用に APM エージェントを再度有効にする場合。
+[APM エージェントが停止しています](#limitations) 90 日以上アクティビティが検出されなかった場合。 サポートチケットを [AEM Support Portal](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) AEMaaCS 環境用に APM エージェントを再度有効にする場合。

@@ -2,10 +2,10 @@
 title: 属性とタイプ
 description: ユニバーサルエディターに必要なデータ属性とデータ型について説明します。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 3b98543098f4125a7d7e5896e5aa46e441a40f32
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 87%
+source-wordcount: '679'
+ht-degree: 85%
 
 ---
 

@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 向けのログ
 description: AEM as a Cloud Service のログを使用して一元的なログサービスのグローバルパラメーターを設定する方法、個々のサービスに特有の設定またはデータのログ記録をリクエストする方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 9d1aab8f615f9e6aa9751fe978a56c915c9a8797
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2757'
-ht-degree: 92%
+source-wordcount: '2753'
+ht-degree: 91%
 
 ---
 
@@ -279,7 +279,7 @@ AEM as a Cloud Service は、パブリッシュ上の Apache Web サーバーと
 * Apache HTTPD Web サーバーエラーログ
 * Dispatcher ログ
 
-これらのログはパブリッシュ層でのみ使用できます。
+これらのログは、パブリッシュ層でのみ使用できます。
 
 これらのログは、AEM アプリケーションに到達する前に、AEM as a Cloud Service のパブリッシュ層に対して行われた HTTP リクエストに関するインサイトを提供します。理想的には、パブリッシュ層サーバーへのほとんどの HTTP リクエストは、Apache HTTPD Web サーバーおよび AEM Dispatcher によってキャッシュされたコンテンツによって処理され、AEM アプリケーション自体には届きません。それを理解することは重要です。したがって、AEM の Java ログ、リクエストログ、アクセスログには、これらのリクエストに対するログステートメントはありません。
 

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: ht
-source-wordcount: '2642'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '2638'
+ht-degree: 98%
 
 ---
 
@@ -41,18 +41,18 @@ ht-degree: 100%
 
 [!DNL Experience Manager] には、次のメタデータスキーマフォームテンプレートが用意されています。
 
-| テンプレート |  | 説明 |
+| テンプレート | | 説明 |
 |---|---|---|
-| [!UICONTROL default] |  | アセットの基本メタデータスキーマフォーム |
-|  | 次の子フォームは、[!UICONTROL default] フォームのプロパティを継承します。 |  |
-|  | <ul><li>[!UICONTROL dm_video]</li></ul> | Dynamic Media ビデオのスキーマフォーム |
-|  | <ul><li>[!UICONTROL 画像]</li></ul> | `image/jpeg` や `image/png` などの MIME タイプを持つ画像のスキーマフォーム<br>[!UICONTROL 画像] フォームには、次の子フォームテンプレートがあります。 <ul><li> [!UICONTROL jpeg]：サブタイプが [!UICONTROL jpeg] であるアセットのスキーマフォーム</li> <li>[!UICONTROL tiff]：サブタイプが TIFF であるアセットのスキーマフォーム</li></ul> |
-|  | <ul><li>[!UICONTROL application]</li></ul> | `application/pdf` や `application/zip` などの MIME タイプを持つアセットのスキーマフォーム<br>[!UICONTROL pdf]：サブタイプが PDF であるアセットのスキーマフォーム |
-|  | <ul><li>[!UICONTROL video]</li></ul> | `video/avi` や `video/mp4` などの MIME タイプを持つビデオアセットのスキーマフォーム |
-| [!UICONTROL collection] |  | コレクションのスキーマフォーム |
-| [!UICONTROL contentfragment] |  | コンテンツフラグメントのスキーマフォーム |
-| [!UICONTROL forms] |  | このスキーマフォームは [!DNL Adobe Experience Manager Forms] に関係しています。 |
-| [!UICONTROL ugc_contentfragment] |  | ソーシャルメディアから Experience Manager に統合されたユーザー生成コンテンツ断片およびアセットのスキーマフォーム |
+| [!UICONTROL default] | | アセットの基本メタデータスキーマフォーム |
+| | 次の子フォームは、[!UICONTROL default] フォームのプロパティを継承します。 | |
+| | <ul><li>[!UICONTROL dm_video]</li></ul> | Dynamic Media ビデオのスキーマフォーム |
+| | <ul><li>[!UICONTROL 画像]</li></ul> | `image/jpeg` や `image/png` などの MIME タイプを持つ画像のスキーマフォーム<br>[!UICONTROL 画像] フォームには、次の子フォームテンプレートがあります。 <ul><li> [!UICONTROL jpeg]：サブタイプが [!UICONTROL jpeg] であるアセットのスキーマフォーム</li> <li>[!UICONTROL tiff]：サブタイプが TIFF であるアセットのスキーマフォーム</li></ul> |
+| | <ul><li>[!UICONTROL application]</li></ul> | `application/pdf` や `application/zip` などの MIME タイプを持つアセットのスキーマフォーム<br>[!UICONTROL pdf]：サブタイプが PDF であるアセットのスキーマフォーム |
+| | <ul><li>[!UICONTROL video]</li></ul> | `video/avi` や `video/mp4` などの MIME タイプを持つビデオアセットのスキーマフォーム |
+| [!UICONTROL collection] | | コレクションのスキーマフォーム |
+| [!UICONTROL contentfragment] | | コンテンツフラグメントのスキーマフォーム |
+| [!UICONTROL forms] | | このスキーマフォームは [!DNL Adobe Experience Manager Forms] に関係しています。 |
+| [!UICONTROL ugc_contentfragment] | | ソーシャルメディアから Experience Manager に統合されたユーザー生成コンテンツ断片およびアセットのスキーマフォーム |
 
 >[!NOTE]
 >
@@ -173,7 +173,6 @@ Experience Manager では、カスタムのスキーマフォームのみを削�
 >* デフォルトフォームに対するカスタムの変更を削除すると、ロック記号（![閉じたロック](assets/do-not-localize/lock_closed_icon.svg)）がフォームの前に再び表示されます。これは、フォームがデフォルトの状態に戻ったことを示します。
 >* [!DNL Assets] 内のデフォルトのメタデータスキーマフォームは削除できません。
 
-
 ## MIME タイプ用のスキーマフォーム {#schema-forms-for-mime-types}
 
 [!DNL Experience Manager] には、様々な MIME タイプですぐに使用できるデフォルトのフォームが用意されています。ただし、様々な MIME タイプのアセットにカスタムのフォームを追加することができます。
@@ -229,8 +228,8 @@ Experience Manager では、カスタムのスキーマフォームのみを削�
 1. **[!UICONTROL メタデータスキーマフォーム]**&#x200B;ページで、`my_default` フォームを選択し、「**[!UICONTROL 編集]**」をクリックします。
 1. **[!UICONTROL メタデータスキーマエディター]**&#x200B;ページで、スキーマフォームにテキストフィールドを追加します。例えば、「**[!UICONTROL カテゴリ]**」というラベルのフィールドを追加します。
 1. 「**[!UICONTROL 保存]**」をクリックします。変更されたフォームは&#x200B;**[!UICONTROL メタデータスキーマフォーム]**&#x200B;ページにリストされます。
-1. ツールバーの「**[!UICONTROL フォルダーに適用]**」をクリックまたはタップしてカスタムメタデータをフォルダーに適用します。
-1. 変更されたスキーマを適用するフォルダーを選択し、「**[!UICONTROL 適用]**」をクリックまたはタップします。
+1. 選択 **[!UICONTROL フォルダーに適用]** ツールバーからカスタムメタデータをフォルダーに適用します。
+1. 変更されたスキーマを適用するフォルダーを選択し、「 」を選択します。 **[!UICONTROL 適用]**.
 1. フォルダーに他のメタデータが適用されている場合は、既存のメタデータスキーマを上書きする旨の警告メッセージが表示されます。「**上書き**」をクリックします。
 1. 「**OK**」をクリックして、成功メッセージを閉じます。
 1. 変更したメタデータスキーマを適用したフォルダーに移動します。
@@ -246,7 +245,7 @@ Experience Manager では、カスタムのスキーマフォームのみを削�
 1. Experience Manager のロゴをクリックし、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL メタデータスキーマ]**&#x200B;に移動します。**[!UICONTROL メタデータスキーマフォーム]**&#x200B;ページが表示されます。
 1. デフォルトのメタデータフォームをカスタムフォームとして保存します。例えば、`my_default` として保存します。
 1. カスタムフォームを編集します。必須フィールドを追加します。例えば、「**[!UICONTROL カテゴリ]**」フィールドを追加して、それを必須フィールドにします。
-1. 「**[!UICONTROL 保存]**」をクリックします。変更されたフォームは&#x200B;**[!UICONTROL メタデータスキーマフォーム]**&#x200B;ページにリストされます。フォームを選択し、ツールバーの「**[!UICONTROL フォルダーに適用]**」をクリックまたはタップしてカスタムメタデータをフォルダーに適用します。
+1. 「**[!UICONTROL 保存]**」をクリックします。変更されたフォームは&#x200B;**[!UICONTROL メタデータスキーマフォーム]**&#x200B;ページにリストされます。フォームを選択し、 **[!UICONTROL フォルダーに適用]** ツールバーからカスタムメタデータをフォルダーに適用します。
 1. フォルダーに移動し、カスタムフォームに追加した必須フィールドにメタデータが指定されていないアセットをアップロードします。必須フィールドの指定されていないメタデータに関するメッセージが、アセットのカード表示に表示されます。
 1. （オプション）`https://[server]:[port]/system/console/components/`にアクセスします。`com.day.cq.dam.core.impl.MissingMetadataNotificationJob` コンポーネントを設定して有効にします。このコンポーネントはデフォルトで無効になっています。Experience Manager がアセット上にあるメタデータの妥当性をチェックする頻度を設定します。
 

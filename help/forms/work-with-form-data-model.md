@@ -5,7 +5,7 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '4115'
 ht-degree: 97%
@@ -531,7 +531,7 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
    {
    name: "orderId",
    in: "path",
-   description: "ID of pet that needs to be fetched",
+   description: "ID of pet that must be fetched",
    required: true,
    type: "integer",
    maximum: 10,

@@ -2,10 +2,10 @@
 title: ビルド環境
 description: Cloud Manager のビルド環境と、そこでコードがどのようにビルドされテストされるかを説明します。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1005'
-ht-degree: 95%
+source-wordcount: '1004'
+ht-degree: 94%
 
 ---
 
@@ -42,7 +42,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 ### 特定の Java バージョンの使用 {#using-java-support}
 
-デフォルトでは、プロジェクトは、Oracle 8 JDK を使用して Cloud Manager ビルドプロセスでビルドされます。代替 JDK を使用する場合は、次の 2 つの選択肢があります。
+デフォルトでは、プロジェクトは、Oracle 8 JDK を使用して Cloud Manager ビルドプロセスでビルドされます。代替 JDK を使用するお客様には、2 つのオプションがあります。
 
 * [Maven ツールチェーンを使用する](#maven-toolchains)
 * [Maven 実行プロセス全体で使用する代替 JDK バージョンを選択する](#alternate-maven-jdk-version)
@@ -179,7 +179,7 @@ Maven `pom.xml` ファイル内で使用する場合は、通常、次のよう�
 
 ## 追加のシステムパッケージのインストール {#installing-additional-system-packages}
 
-すべての機能を実装するにあたり、一部のビルドでは追加のシステムパッケージをインストールする必要があります。例えば、Python や Ruby のスクリプトを呼び出すビルドでは、適切な言語インタープリターをインストールする必要があります。 その場合は、`pom.xml` で [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) を呼び出して、APT を起動します。この実行は通常、Cloud Manager 専用の Maven プロファイルにラップされます。この例では、Python をインストールしています。
+すべての機能を実装するにあたり、一部のビルドでは追加のシステムパッケージをインストールする必要があります。例えば、Python や Ruby のスクリプトを呼び出すビルドには、適切な言語インタープリターがインストールされている必要があります。 その場合は、`pom.xml` で [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) を呼び出して、APT を起動します。この実行は通常、Cloud Manager 専用の Maven プロファイルにラップされます。この例では、Python をインストールしています。
 
 ```xml
         <profile>

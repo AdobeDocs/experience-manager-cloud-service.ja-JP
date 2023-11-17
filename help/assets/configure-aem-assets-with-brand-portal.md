@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2585'
-ht-degree: 94%
+source-wordcount: '2584'
+ht-degree: 93%
 
 ---
 
@@ -237,7 +237,7 @@ IMS 設定には、次の 2 つの手順が含まれます。
 1. Experience Manager Assets にログインします。
 1. **ツール**&#x200B;パネルで、**[!UICONTROL セキュリティ]**／**[!UICONTROL Adobe IMS 設定]**&#x200B;に移動します。
 1. Adobe IMS 設定ページで、「**[!UICONTROL 作成]**」をクリックします。**[!UICONTROL Adobe IMS 技術アカウント設定]**&#x200B;ページにリダイレクトされます。デフォルトでは、「**証明書**」タブが開きます。
-1. 「**[!UICONTROL クラウドソリューション]**」ドロップダウンリストで「**[!UICONTROL Adobe Brand Portal]**」を選択します。
+1. 選択 **[!UICONTROL AdobeBrand Portal]** （内） **[!UICONTROL クラウドソリューション]** 」ドロップダウンリストから選択できます。
 1. 「**[!UICONTROL 新しい証明書を作成]**」チェックボックスをオンにして、公開鍵の **エイリアス** を指定します。ここで入力したエイリアスが、公開鍵になります。
 1. 「**[!UICONTROL 証明書を作成]**」をクリックします。「**[!UICONTROL OK]**」をクリックして公開証明書を生成します。
 
@@ -266,7 +266,7 @@ Adobe 開発者コンソールで、プロジェクトと API を Brand Portal �
 
    >[!NOTE]
    >
-   >右上隅にあるドロップダウン（組織）リストから正しい IMS 組織（Brand Portal テナント）が選択されていることを確認します。
+   >右上隅にあるドロップダウン（組織）リストから正しい IMS 組織 (Brand Portalテナント ) が選択されていることを確認します。
 
 1. 「**[!UICONTROL 新規プロジェクトを作成]**」をクリックします。システムで生成された名前を持つ空のプロジェクトが組織に対して作成されます。
 
@@ -313,7 +313,7 @@ Adobe 開発者コンソールで、プロジェクトと API を Brand Portal �
 
    ![Create New Integration](assets/create-new-integration1.png)
 
-1. Create a new integration page opens. 
+1. Create an integration page. 
    
    Select your organization from the drop-down list.
 
@@ -377,7 +377,7 @@ IMS アカウントを設定するには、次の手順を実行します。
 >
 >IMS 設定は 1 つだけにする必要があります。
 >
->IMS 設定がヘルスチェックに合格していることを確認します。設定がヘルスチェックに合格しない場合は無効です。削除して、新しい有効な設定を作成する必要があります。
+>IMS 設定がヘルスチェックに合格していることを確認します。設定がヘルスチェックに合格しない場合は無効です。この設定を削除して、別の有効な設定を作成する必要があります。
 
 ### Cloud Service の設定 {#configure-the-cloud-service}
 

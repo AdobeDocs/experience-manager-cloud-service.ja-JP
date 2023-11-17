@@ -4,10 +4,10 @@ description: AEM の宛先セレクターを使用して、元のアセットの
 contentOwner: Adobe
 role: Admin,User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 93%
+source-wordcount: '1904'
+ht-degree: 92%
 
 ---
 
@@ -259,7 +259,7 @@ interface SelectedDestination {
 
 `optionsFormSetup` プロパティの例です。選択を確認するのに使用でき、`onConfirm` イベントで渡されます。
 
-### 新しいフォルダーを作成 {#create-new-folder}
+### フォルダーの作成 {#create-new-folder}
 
 これにより、 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
@@ -274,7 +274,7 @@ interface SelectedDestination {
 
 ### 情報 {#info}
 
-情報または情報アイコンを使用して、選択したアセットのメタデータを表示できます。 寸法、サイズ、説明、パス、変更日、作成日など、様々な詳細が含まれます。メタデータ情報は、新しいアセットのアップロード時、コピー時、作成時に提供されます。
+情報または情報アイコンを使用して、選択したアセットのメタデータを表示できます。 寸法、サイズ、説明、パス、変更日、作成日など、様々な詳細が含まれます。メタデータ情報は、アセットのアップロード時、コピー時、作成時に提供されます。
 
 ### フォルダーの選択 {#select-folder}
 

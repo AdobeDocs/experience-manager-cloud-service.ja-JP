@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Collections,Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: ht
-source-wordcount: '845'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 73%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Experience Manager Assets では、フォルダー内またはコレクシ
 ## フォルダー用レビュータスクの作成 {#creating-a-review-task-for-folders}
 
 1. Assets ユーザーインターフェイスで、レビュータスクを作成するフォルダーを選択します。
-1. ツールバーで「**[!UICONTROL レビュータスクを作成]**」アイコンをタップまたはクリックして、**[!UICONTROL レビュータスク]**&#x200B;ページを開きます。ツールバーにこのアイコンが表示されていない場合は、「**[!UICONTROL その他]**」をタップまたはクリックしてアイコンを選択します。
+1. ツールバーで、 **[!UICONTROL レビュータスクを作成]** アイコンをクリックして開きます。 **[!UICONTROL レビュータスク]** ページに貼り付けます。 ツールバーにこのアイコンが表示されていない場合は、「 **[!UICONTROL その他]** 次に、アイコンを選択します。
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
@@ -52,17 +52,17 @@ Adobe Experience Manager Assets では、フォルダー内またはコレクシ
 
    ![review_name](assets/review_name.png)
 
-1. 「**[!UICONTROL 送信]**」、「**[!UICONTROL 完了]**」の順にタップまたはクリックし、確認メッセージを閉じます。新しいタスクに関する通知が承認者に送信されます。
-1. [!DNL Experience Manager Assets] に承認者としてログインし、Assets UI に移動します。アセットを承認するには、**[!UICONTROL 通知]**&#x200B;アイコンをクリックまたはタップし、リストからレビュータスクを選択します。
+1. 選択 **[!UICONTROL 送信]**&#x200B;を選択し、 **[!UICONTROL 完了]** をクリックして確認メッセージを閉じます。 新しいタスクに関する通知が承認者に送信されます。
+1. [!DNL Experience Manager Assets] に承認者としてログインし、Assets UI に移動します。アセットを承認するには、 **[!UICONTROL 通知]** アイコンをクリックし、リストからレビュータスクを選択します。
 
    ![通知](assets/notification.png)
 
-1. **[!UICONTROL レビュータスク]**&#x200B;ページでレビュータスクの詳細を確認し、「**[!UICONTROL レビュー]**」をタップまたはクリックします。
-1. **[!UICONTROL レビュータスク]**&#x200B;ページでアセットを選択し、必要に応じて&#x200B;**[!UICONTROL 「承認」または「非承認」]**&#x200B;アイコンをタップまたはクリックして、承認するか拒否します。
+1. Adobe Analytics の **[!UICONTROL レビュータスク]** ページでレビュータスクの詳細を確認し、「 **[!UICONTROL レビュー]**.
+1. Adobe Analytics の **[!UICONTROL レビュータスク]** ページでアセットを選択し、「 **[!UICONTROL 承認/却下]** アイコンを使用して、必要に応じて承認または拒否します。
 
    ![review_task](assets/review_task.png)
 
-1. ツールバーの「**[!UICONTROL 完了]**」アイコンをタップまたはクリックします。ダイアログでコメントを入力し、「**[!UICONTROL 完了]**」をタップまたはクリックして確認します。
+1. を選択します。 **[!UICONTROL 完了]** アイコンをクリックします。 ダイアログで、コメントを入力し、「 」を選択します。  **[!UICONTROL 完了]** をクリックして確定します。
 1. Assets UI に移動し、フォルダーを開きます。アセットの承認ステータスアイコンは、カード表示とリスト表示の両方に表示されます。
 
    **カード表示**
@@ -76,7 +76,7 @@ Adobe Experience Manager Assets では、フォルダー内またはコレクシ
 ## コレクション用レビュータスクの作成 {#creating-a-review-task-for-collections}
 
 1. コレクションページで、レビュータスクを作成するコレクションを選択します。
-1. ツールバーで「**[!UICONTROL レビュータスクを作成]**」アイコンをタップまたはクリックして、**[!UICONTROL レビュータスク]**&#x200B;ページを開きます。ツールバーにこのアイコンが表示されていない場合は、「**[!UICONTROL その他]**」をタップまたはクリックしてアイコンを選択します。
+1. ツールバーで、 **[!UICONTROL レビュータスクを作成]** アイコンをクリックして開きます。 **[!UICONTROL レビュータスク]** ページに貼り付けます。 ツールバーにこのアイコンが表示されていない場合は、「 **[!UICONTROL その他]** 次に、アイコンを選択します。
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
@@ -96,14 +96,14 @@ Adobe Experience Manager Assets では、フォルダー内またはコレクシ
 
    ![task_details-collection](assets/task_details-collection.png)
 
-1. 「**[!UICONTROL 送信]**」、「**[!UICONTROL 完了]**」の順にタップまたはクリックし、確認メッセージを閉じます。新しいタスクに関する通知が承認者に送信されます。
-1. [!DNL Experience Manager Assets] に承認者としてログインし、Assets コンソールに移動します。アセットを承認するには、**[!UICONTROL 通知]**&#x200B;アイコンをタップまたはクリックし、リストからレビュータスクを選択します。
-1. **[!UICONTROL レビュータスク]**&#x200B;ページでレビュータスクの詳細を確認し、「**[!UICONTROL レビュー]**」をタップまたはクリックします。
-1. コレクションのすべてのアセットがレビューページに表示されます。アセットを選択し、必要に応じて&#x200B;**[!UICONTROL 「承認」または「非承認」]**&#x200B;アイコンをタップまたはクリックして、アセットを承認するか拒否します。
+1. 選択 **[!UICONTROL 送信]**&#x200B;を選択し、 **[!UICONTROL 完了]** をクリックして確認メッセージを閉じます。 新しいタスクに関する通知が承認者に送信されます。
+1. [!DNL Experience Manager Assets] に承認者としてログインし、Assets コンソールに移動します。アセットを承認するには、 **[!UICONTROL 通知]** アイコンをクリックし、リストからレビュータスクを選択します。
+1. Adobe Analytics の **[!UICONTROL レビュータスク]** ページでレビュータスクの詳細を確認し、「 **[!UICONTROL レビュー]**.
+1. コレクションのすべてのアセットがレビューページに表示されます。アセットを選択し、 **[!UICONTROL 承認/却下]** アイコンを使用して、必要に応じてアセットを承認または拒否します。
 
    ![review_task_collection](assets/review_task_collection.png)
 
-1. ツールバーの「**[!UICONTROL 完了]**」アイコンをタップまたはクリックします。ダイアログでコメントを入力し、「**[!UICONTROL 完了]**」をタップまたはクリックして確認します。
+1. を選択します。 **[!UICONTROL 完了]** アイコンをクリックします。 ダイアログで、コメントを入力し、「 」を選択します。 **[!UICONTROL 完了]** をクリックして確定します。
 1. コレクションコンソールに移動して、コレクションを開きます。アセットの承認ステータスアイコンは、カード表示とリスト表示の両方に表示されます。
 
    **カード表示**

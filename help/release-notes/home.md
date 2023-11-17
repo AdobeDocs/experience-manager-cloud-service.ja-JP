@@ -2,10 +2,10 @@
 title: Adobe Experience Manager（AEM）as a Cloud Service のリリースノート。
 description: Adobe Experience Manager（AEM）as a Cloud Service のリリースノート。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: a1fc394c13d740b2250ec91340a0fe0e865ecbe3
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 95%
+source-wordcount: '644'
+ht-degree: 92%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 95%
 
 | ユーザーガイド | 説明 |
 |---|---|
-| [概要](/help/overview/home.md) | このガイドでは、ソリューションの紹介、用語など、Adobe Experience Manager as a Cloud Service の概要を説明します。 |
+| [概要](/help/overview/home.md) | このガイドでは、導入、用語など、Experience Manageras a Cloud Service の概要を説明します。 |
 | [セキュリティユーザーガイド](/help/security/home.md) | Adobe Experience Manager as a Cloud Service のセキュリティに関する重要なトピックについて説明します。 |
 | [オンボーディングジャーニー](/help/journey-onboarding/overview.md) | このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。 |
 | [Sites ユーザーガイド](/help/sites-cloud/home.md) | Adobe Experience Manager Sites as a Cloud Service を使用したオーサリングおよび管理方法について説明します。 |

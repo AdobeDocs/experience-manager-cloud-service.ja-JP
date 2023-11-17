@@ -2,10 +2,10 @@
 title: CRXDE Lite の使用
 description: CRXDE Lite は AEM クイックスタートの一部で、ブラウザー内のローカル開発環境でリポジトリーにアクセスして変更できます。
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1683'
-ht-degree: 95%
+source-wordcount: '1685'
+ht-degree: 92%
 
 ---
 
@@ -32,7 +32,7 @@ CRXDE Lite を使い始めるには：
 
 >[!TIP]
 >
->AEM メニューから CRXDE Lite にアクセスすることもできます。メインメニューから **ツール**／**一般**／**CRXDE Lite** を選択します。
+>AEM メニューから CRXDE Lite にアクセスすることもできます。メインメニューからを選択します。 **ツール** > **一般** > **CRXDE Lite**.
 
 ## ユーザーインターフェイスの概要 {#overview-of-the-user-interface}
 
@@ -163,7 +163,7 @@ The **Mixin ボタン** ノードタイプに mixin タイプを追加できま�
 
 別のユーザーとしてログインまたは再ログインするには、このウィジェットをクリックします。`@crx.default` は、ユーザーがリポジトリーのデフォルトの（唯一の）ワークスペースにいることを表します。
 
-**環境設定**&#x200B;オプションを使用して、UI 言語を設定し、保存、検索、メモの作成など、様々な操作のホットキーを表示およびカスタマイズすることができます。
+The **環境設定** オプションを使用して、UI 言語を設定したり、保存、検索、メモの作成など、様々なアクションのホットキーを表示およびカスタマイズしたりできます。
 
 ## フォルダーの作成 {#creating-a-folder}
 

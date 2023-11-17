@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '2872'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '2870'
+ht-degree: 99%
 
 ---
 
@@ -66,7 +66,7 @@ Dynamic Media には、web ページ上の画像アセットの微調整に使�
 
 次に、時計の画像に回転パラメーターを追加してみます。URL パスの末尾、`wid=1000` の直後に、`&rotate=90` と入力して **[!UICONTROL Enter]** キーを押します。[試してみる](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target="_blank"}。
 
-時計はまだ少し左に歪んでいます。回転の値を `90` から `92` に変更し、**[!UICONTROL Enter]** キーを押します。[試してみる](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9)。{target="_blank"}
+時計はまだ少し左に歪んでいます。回転の値を `90` から `92` に変更し、**[!UICONTROL Enter]** キーを押します。[試してみる](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9)。{target="_blank"}。
 
 先ほどと同様に、**[!UICONTROL Enter]** キーが押された瞬間に、新しいレンディションの腕時計がほぼ瞬時に生成されます。Dynamic Media が 80 万件を超える画像リクエストを、混雑する週末や主要な休日でも&#x200B;_秒_&#x200B;単位で配信できる理由は、このようなパフォーマンスにあります。
 
@@ -83,7 +83,7 @@ _良好：静止画をそれぞれ手動で作成。_
 
 _「実は、時計の文字盤を見やすくするために、長針が 4 を、短針が 1 を指すように撮りたかったんだ」_
 
-クリエイターは、いままであれば、静的画像をすべて新しく撮影し直す必要があります。
+クリエイティブは、すべての新しい静的画像を再撮影する必要があります。
 
 しかし、Dynamic Media では、異なる画像プリセットがあれば、必要な場所でそれらの画像を使用できます。画像プリセットには標準が適用されます。
 

@@ -2,10 +2,10 @@
 title: SPA エディターの概要
 description: この記事では、SPA エディターの包括的な概要と動作の仕組み（AEM 内での SPA エディターの詳細なインタラクションワークフローなど）を説明します。
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1630'
-ht-degree: 100%
+source-wordcount: '1632'
+ht-degree: 94%
 
 ---
 
@@ -21,13 +21,13 @@ React や Angular などの一般的な SPA フレームワークを使用して
 
 AEM 内で SPA の編集を有効にするには、SPA の JSON 出力と AEM リポジトリーのコンテンツモデルとの間でマッピングを行い、変更をコンテンツに保存できるようにする必要があります。
 
-AEM の SPA サポートにより、シン JS レイヤーが導入されました。このレイヤーは、ページエディターに読み込まれると、SPA の JS コードとやり取りします。これにより、イベントを送信したり、編集コントロールの場所をアクティブにしてコンテキスト内で編集したりできます。この機能は、コンテンツサービス API エンドポイントの概念に基づいて構築されています。SPA のコンテンツは、コンテンツサービスを使用して読み込む必要があるからです。
+AEM の SPA サポートにより、シン JS レイヤーが導入されました。このレイヤーは、ページエディターに読み込まれると、SPA の JS コードとやり取りします。これにより、イベントを送信したり、編集コントロールの場所をアクティブにしてコンテキスト内で編集したりできます。この機能は、SPAのコンテンツを Content Services を使用して読み込む必要があるので、Content Services API エンドポイントの概念に基づいて構築されます。
 
-AEM の SPA について詳しくは、次のドキュメントを参照してください。
+AEMでのSPAについて詳しくは、次を参照してください。
 
-* SPA の技術要件に関する [SPA ブループリント](blueprint.md)
-* React を使用したシンプルな SPA のクイックツアーについては、[React を使用した AEM での SPA の利用](getting-started-react.md)を参照してください。
-* Angular を使用したシンプルな SPA のクイックツアーについては、[Angular を使用した AEM での SPA の利用](getting-started-angular.md)を参照してください。
+* SPA の技術要件に関する [SPA ブループリント.](blueprint.md)
+* [React を使用したAEMでのSPAの概要](getting-started-react.md) React を使用したシンプルなSPAのクイックツアー。
+* [angularを使用したAEMでのSPAの概要](getting-started-angular.md) angularを使用したシンプルなSPAのクイックツアー
 
 ## デザイン {#design}
 
@@ -184,6 +184,6 @@ AEM SPA エディター SDK はアドビで完全にサポートされており�
 * 設定の編集（例：リスナー）
 * 取り消し／やり直し
 * ページの差分とタイムワープ
-* リンクチェッカー、CDN 書き直しサービス、URL 短縮など、サーバー側で HTML の書き換えを実行する機能
+* リンクチェッカー、CDN 書き換えサービス、URL 短縮など、HTMLのサーバー側書き換えを実行する機能。
 * 開発者モード
 * AEM ローンチ

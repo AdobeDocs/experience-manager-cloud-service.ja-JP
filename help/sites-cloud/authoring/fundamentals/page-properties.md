@@ -2,10 +2,10 @@
 title: ページプロパティの編集
 description: AEMでページを管理するために必要なプロパティを定義する方法について説明します。
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2280'
-ht-degree: 96%
+source-wordcount: '2270'
+ht-degree: 94%
 
 ---
 
@@ -87,9 +87,9 @@ ht-degree: 96%
   >* 正規表現パターンはサポートしていません。
   >* 既存のページには設定しないでください。
 
-   * **追加** - タップまたはクリックすると、ページのバニティ URL を定義するフィールドが表示されます。
-      * 再度タップまたはクリックすると、複数のフィールドが追加されます。
-      * **削除**&#x200B;アイコンをタップまたはクリックすると、バニティ URL が削除されます。
+   * **追加**  — ページのバニティー URL を定義するフィールドを表示する場合に選択します。
+      * 複数を追加するには、再度選択します。
+      * を選択します。 **削除** バニティー URL を削除するアイコン。
    * **バニティー URL をリダイレクト** - ページでバニティー URL を使用するかどうかを示します。
 
 ### 詳細 {#advanced}
@@ -105,7 +105,7 @@ ht-degree: 96%
       * 例えば、`/content/wknd/us/en/magazine/members-only` ページに `private` というエイリアスを定義した場合、このページは `/content/wknd/us/en/magazine/private` からもアクセスできます。
       * エイリアスを作成すると、ページノードに `sling:alias` プロパティが設定されます。これは、リポジトリパスではなく、リソースにのみ影響を与えます。
       * エディターでエイリアスによってアクセスされたページは公開できません。 エディターの[「公開」オプション](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)は、実際のパスを介してアクセスしたページでのみ使用できます。
-      * 詳しくは、[「SEO と URL 管理のベストプラクティス」の「ページ名のローカライズ」](/help/overview/seo-and-url-management.md#localized-page-names)を参照してください。
+      * 詳しくは、 [「SEO と URL 管理のベストプラクティス」のページ名のローカライズ](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **設定**
 
@@ -147,7 +147,7 @@ ht-degree: 96%
 
 * **アイキャッチ画像**
 
-  取り上げる画像を選択し、設定します。これは、ページを参照するコンポーネントで使用されます。例えば、ティーザー、ページリストなどです。
+  取り上げる画像を選択し、設定します。これは、ページを参照するコンポーネント（ティーザー、ページリストなど）で使用されます。
 
    * **画像**
 
@@ -237,7 +237,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->詳しくは、[プログレッシブ web アプリ機能を有効にする](/help/sites-cloud/authoring/features/enable-pwa.md)を参照してください。
+>詳しくは、 [プログレッシブ Web アプリ機能の有効化](/help/sites-cloud/authoring/features/enable-pwa.md).
 
 * **インストール可能なエクスペリエンスを設定**
 

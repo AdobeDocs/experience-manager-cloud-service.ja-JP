@@ -2,10 +2,10 @@
 title: ページの作成と整理
 description: AEMでページを作成および管理して、Web サイトを整理する方法について説明します。
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 96%
+source-wordcount: '2429'
+ht-degree: 86%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->適切なアクセス権と、ページに対するアクション（作成、コピー、移動、編集、削除など）を実行するための権限を持つアカウントが必要です。
+>ページに対して実行する適切なアクセス権と権限（作成、コピー、移動、編集、削除など）を持つアカウントが必要です。
 >
 >問題が発生した場合は、システム管理者にお問い合わせください。
 
 <!--
->Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to take action on pages such as create, copy, move, edit, and delete.
+>Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to act on pages such as create, copy, move, edit, and delete.
 -->
 
 >[!TIP]
 >
->Web サイトコンソールから使用できる[キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)が多数あり、ページをより効率的に整理できます。
+>次の項目があります。 [キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ページをより効率的に整理するために、web サイトコンソールから使用できます。
 
 {{edge-delivery-authoring}}
 
@@ -70,7 +70,7 @@ Web サイトの構造は、コンテンツページを保持するツリーと�
 
 ### ページ命名規則 {#page-naming-conventions}
 
-新しいページを作成する際の主要なフィールドは 2 つあります。
+ページを作成する際の主なフィールドは 2 つあります。
 
 * **[タイトル](#title)**：
 
@@ -95,9 +95,9 @@ Web サイトの構造は、コンテンツページを保持するツリーと�
 >
 >また、一部のブラウザー（旧バージョンの IE など）では、特定の長さまでの URL しか受け付けないので、ページ名を短くするには技術的な理由もあります。
 
-[新しいページを作成するとき、AEM では AEM と JCR によって課された規則に基づいてページ名が検証されます。](/help/implementing/developing/introduction/naming-conventions.md)
+ページを作成する際に、AEM [の規則に従ってページ名を検証します。](/help/implementing/developing/introduction/naming-conventions.md) AEMと JCR によって課せられます。
 
-使用できる最小限の文字は次のとおりです。
+使用できる最低限の文字は次のとおりです。
 
 * `a` から `z` まで
 * `A` から `Z` まで
@@ -113,7 +113,7 @@ Web サイトの構造は、コンテンツページを保持するツリーと�
 
 #### タイトル {#title}
 
-新しいページを作成するときにページの&#x200B;**タイトル**&#x200B;のみを指定した場合、AEM ではページの&#x200B;**名前**&#x200B;がこの文字列から派生され、AEM と JCR [によって課された規則に基づいてページ名が検証されます](/help/implementing/developing/introduction/naming-conventions.md)。
+ページのみを指定する場合 **タイトル** ページを作成する場合、AEMはページを派生します **名前** この文字列から、および [規則に従って名前を検証する](/help/implementing/developing/introduction/naming-conventions.md) AEMと JCR によって課せられます。
 
 「**タイトル**」フィールドに無効な文字が含まれていてもエラーにはなりませんが、派生された名前では、無効な文字が別の文字に置き換えられます。次に例を示します。
 
@@ -124,7 +124,7 @@ Web サイトの構造は、コンテンツページを保持するツリーと�
 
 #### 名前 {#name}
 
-新しいページを作成するときにページの&#x200B;**名前**&#x200B;を指定すると、AEM では AEM と JCR [によって課された規則に基づいてページ名が検証されます](/help/implementing/developing/introduction/naming-conventions.md)。「**名前**」フィールドに無効な文字は指定できません。AEM で無効な文字が検出されると、フィールドが強調表示され、説明メッセージが表示されます。
+ページを指定する場合 **名前** ページを作成する際に、AEM [の規則に従って名前を検証します。](/help/implementing/developing/introduction/naming-conventions.md) AEMと JCR によって課せられます。 「**名前**」フィールドに無効な文字は指定できません。AEM で無効な文字が検出されると、フィールドが強調表示され、説明メッセージが表示されます。
 
 ![無効なページ名の入力例](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -182,7 +182,7 @@ AEM では、複数のテンプレートが標準提供されています。使�
 
 1. ウィザードの最初のステージで、次のいずれかを実行できます。
 
-   * 新しいページの作成に使用するテンプレートを選択し、「**次へ**」をクリックまたはタップして続行します。
+   * 新しいページの作成に使用するテンプレートを選択し、「 」を選択します。 **次へ** をクリックして続行します。
 
    * 「**キャンセル**」を使用してプロセスを中止します。
 
@@ -190,7 +190,7 @@ AEM では、複数のテンプレートが標準提供されています。使�
 
 1. ウィザードの最後のステージで、次のいずれかを実行できます。
 
-   * 3 つのタブを使用して、新しいページに割り当てる[ページプロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md)を入力し、「**作成**」をクリックまたはタップしてページを実際に作成します。
+   * 3 つのタブを使用して、 [ページのプロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md) 新しいページに割り当てる場合は、「 」を選択します。 **作成** をクリックして、実際にページを作成します。
 
    * 「**戻る**」を使用してテンプレートの選択に戻ります。
 
@@ -203,7 +203,7 @@ AEM では、複数のテンプレートが標準提供されています。使�
    * **名前**：
 
       * これは URI の生成に使用されます。指定しない場合、名前はタイトルから派生します。
-      * 新しいページを作成するときにページの「**名前**」を指定すると、AEM では AEM と JCR [の規則に基づいてページ名が検証されます](/help/implementing/developing/introduction/naming-conventions.md)。
+      * ページを指定する場合 **名前** ページを作成する際に、AEM [の規則に従って名前を検証します。](/help/implementing/developing/introduction/naming-conventions.md) AEMと JCR によって課せられます。
       * 「**名前**」フィールドに&#x200B;**無効な文字は指定できません**。AEM で無効な文字が検出されると、そのフィールドは強調表示され、対象の文字を削除または置換する必要があることを示す説明メッセージが表示されます。
 
    >[!TIP]
@@ -266,7 +266,7 @@ AEM では、複数のテンプレートが標準提供されています。使�
    ![コピー](/help/sites-cloud/authoring/assets/copy.png)
 
 1. ページの新しいコピーを配置する場所に移動します。
-1. 使用可能になった「**貼り付け**」アイコンをタップまたはクリックします。
+1. を選択します。 **貼り付け** アイコンが表示されます。
 
    ![貼り付け](/help/sites-cloud/authoring/assets/paste.png)
 
@@ -276,7 +276,7 @@ AEM では、複数のテンプレートが標準提供されています。使�
 
    ![貼り付けダイアログ](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-1. 「**貼り付け**」ボタンをタップまたはクリックして、貼り付けトランザクションを確定し、新しいページを作成します。
+1. を選択します。 **貼り付け** ボタンをクリックして貼り付けトランザクションを確定し、新しいページを作成します。
 
 >[!NOTE]
 >
@@ -310,7 +310,7 @@ AEM では、名前変更または移動が行われるページへの内部リ�
 
 1. ウィザードの&#x200B;**名前の変更**&#x200B;ステージで、次のいずれかを実行できます。
 
-   * 移動後にページに表示する名前を指定し、「**次へ**」をクリックまたはタップして続行します。
+   * 移動後にページに表示する名前を指定し、「 **次へ** をクリックして続行します。
    * 「**キャンセル**」を使用してプロセスを中止します。
 
    ![ページの移動と名前変更](/help/sites-cloud/authoring/assets/move-page-rename.png)
@@ -380,7 +380,7 @@ AEM では、名前変更または移動が行われるページへの内部リ�
   ![Asynchronous page move](assets/asynchronous-page-move.png)
 -->
 
-非同期ジョブの状態は、[**非同期ジョブステータス**&#x200B;ダッシュボード](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)（**グローバルナビゲーション**／**ツール**／**操作**／**ジョブ**）で確認できます。
+非同期ジョブのステータスは、 [**非同期ジョブステータス** dashboard](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) 時刻 **グローバルナビゲーション** > **ツール** > **運用** > **ジョブ**
 
 >[!NOTE]
 >

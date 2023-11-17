@@ -2,9 +2,9 @@
 title: Multi Site Manager の拡張
 description: マルチサイトマネージャーの機能を拡張する方法を説明します。
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2435'
+source-wordcount: '2425'
 ht-degree: 61%
 
 ---
@@ -106,11 +106,11 @@ ht-degree: 61%
 
 リポジトリ内の `LiveAction` 設定ノードを使用して、`LiveAction` インスタンスの実行時の動作に影響を与える情報を格納します。`LiveAction` 設定を保存するリポジトリ内のノードは、実行時に `LiveActionFactory` オブジェクトに使用できます。そのため、設定ノードにプロパティを追加し、必要に応じて `LiveActionFactory` 実装内で使用することができます。
 
-例えば、`LiveAction` にはブループリント作成者の名前を保存する必要があります。設定ノードのプロパティには、情報を保存するブループリントページのプロパティ名が含まれます。実行時、`LiveAction` は設定からプロパティ名を取得して、そのプロパティ値を取得します。
+例えば、 `LiveAction` ブループリント作成者の名前を保存する必要があります。 設定ノードのプロパティには、情報を保存するブループリントページのプロパティ名が含まれます。実行時、`LiveAction` は設定からプロパティ名を取得して、そのプロパティ値を取得します。
 
 [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) メソッドのパラメーターは `Resource` オブジェクトです。この `Resource` オブジェクトは、 `cq:LiveSyncAction` ロールアウト設定のこのライブアクションのノード。
 
-ドキュメントを参照してください [ロールアウト設定の作成](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) を参照してください。
+詳しくは、 [ロールアウト設定の作成](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) を参照してください。
 
 通常どおり、設定ノードを使用する場合は、`ValueMap` オブジェクトに適応させる必要があります。
 
@@ -136,7 +136,7 @@ public LiveAction createAction(Resource resource) throws WCMException {
    * The `autoSave` 値は、 `LiveAction` リポジトリに対して行われた変更を保存する
    * The `reset` 値は、ロールアウトのリセットモードを示します。
 
-これらのオブジェクトから、`LiveCopy` に関するすべての情報を取得できます。`Resource` オブジェクトを使用して、`ResourceResolver`、`Session`、`Node` の各オブジェクトも取得できます。これらのオブジェクトは、リポジトリコンテンツの操作に役立ちます。
+これらのオブジェクトから、 `LiveCopy`. `Resource` オブジェクトを使用して、`ResourceResolver`、`Session`、`Node` の各オブジェクトも取得できます。これらのオブジェクトは、リポジトリコンテンツの操作に役立ちます。
 
 以下のコードの先頭行で、source はソースページの `Resource` オブジェクトです。
 
@@ -349,7 +349,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 次の `LiveActionFactory` クラスは、ソースページおよびターゲットページに関するメッセージをログに記録し、ソースノードからターゲットノードに `cq:lastModifiedBy` プロパティをコピーする `LiveAction` を実装します。ライブアクションの名前は `exampleLiveAction` です。
 
-1. Eclipse Project Explorer で、 `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` パッケージ化し、 **新規** -> **クラス**.
+1. Eclipse Project Explorer で、`MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` パッケージを右クリックし、**新規**／**クラス**&#x200B;をクリックします。
 
 1. 「**名前**」に「`ExampleLiveActionFactory`」と入力し、「**完了**」をクリックします。
 
@@ -617,7 +617,7 @@ MSM は、保存されている言語コードと国コードのリストを使�
 * 連絡先メール：
 
    * ロールアウトされたプロパティから除外されます。
-   * ドキュメントを参照してください [ライブコピーの同期の設定](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) を参照してください。
+   * 詳しくは、 [ライブコピーの同期の設定](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) を参照してください。
 
 * キービジュアルのスタイル：
 

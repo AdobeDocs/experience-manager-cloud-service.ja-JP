@@ -2,9 +2,9 @@
 title: コンテンツ移行後のインデックス作成
 description: 移行プロセスで、宛先Cloud Serviceインスタンスで取り込んだコンテンツのインデックスを作成する方法を説明します。
 exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '505'
 ht-degree: 6%
 
 ---
@@ -29,7 +29,7 @@ Cloud Acceleration Manager がコンテンツのCloud Serviceインスタンス�
 リストに表示されているジョブを確認します。
 
 >[!NOTE]
->インデックス作成ログを表示またはダウンロードするには、取り込みジョブのアクション、「 ... 」ドロップダウンを使用します。 ログは、
+>インデックス作成ログを表示またはダウンロードするには、インジェストジョブのアクションの「 ... 」ドロップダウンリストを使用します。 ログは、
 > インデックス作成ジョブの完了後の「インデックス作成ログ」アクションセクション
 
 ### 保留中

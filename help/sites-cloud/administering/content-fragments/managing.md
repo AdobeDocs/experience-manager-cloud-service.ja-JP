@@ -4,10 +4,10 @@ description: コンソールやエディターから、ヘッドレスコンテ�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2532'
-ht-degree: 53%
+source-wordcount: '2531'
+ht-degree: 51%
 
 ---
 
@@ -124,7 +124,7 @@ ht-degree: 53%
 
   >[!NOTE]
   >
-  > **Assets** コンソールは、画像、ビデオなどのアセットにアクセスするために使用します。このコンソールには、次の方法でアクセスできます。
+  >The **Assets** コンソールは、画像、ビデオなどのアセットにアクセスするために使用します。  このコンソールには、次の方法でアクセスできます。
   >
   >* **Assets で開く**&#x200B;のリンクを使用（コンテンツフラグメントコンソール内にあります
   >* グローバルから直接 **ナビゲーション** パネル
@@ -201,7 +201,7 @@ ht-degree: 53%
 
      ![コンテンツフラグメントコンソール - 言語インジケーター](assets/cf-managing-console-language-indicator.png)
 
-   * カウントをクリックまたはタップして、すべての言語コピーを表示するダイアログを開きます。 特定の言語コピーを開くには、 **タイトル** 」と入力します。
+   * カウントを選択して、すべての言語コピーを表示するダイアログを開きます。 特定の言語コピーを開くには、 **タイトル** 」と入力します。
 
      ![コンテンツフラグメントコンソール - 言語ダイアログ](assets/cf-managing-console-languages-dialog.png)
 
@@ -415,7 +415,7 @@ The **Replace** option is available to find, and replace, specified text in your
 
 ![コンテンツフラグメントコンソール - 言語インジケーター](assets/cfc-console-language-indicator.png)
 
-カウントをクリックまたはタップして、すべての言語コピーを表示するダイアログを開きます。 特定の言語コピーを開くには、 **タイトル** 」と入力します。
+カウントを選択して、すべての言語コピーを表示するダイアログを開きます。 特定の言語コピーを開くには、 **タイトル** 」と入力します。
 
 ![コンテンツフラグメントコンソール - 言語ダイアログ](assets/cf-managing-console-languages-dialog.png)
 

@@ -4,10 +4,10 @@ description: AEM サイトテンプレートを使用して、サイト構造と
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '568'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '566'
+ht-degree: 84%
 
 ---
 
@@ -37,15 +37,15 @@ AEM サイトテンプレートを使用して、サイト構造と初期コン�
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. 画面の右上にある「**作成**」をタップまたはクリックし、ドロップダウンメニューから「**テンプレートのサイト**」を選択します。
+1. 選択 **作成** 画面の右上にあるをクリックし、ドロップダウンメニューから「 」を選択します。 **テンプレートからのサイト**.
 
    ![テンプレートからのサイトの作成](../assets/create-site-from-template.png)
 
-1. サイトの作成ウィザードで、左側の列の上部にある「**インポート**」をタップまたはクリックします。
+1. サイトの作成ウィザードで、 **インポート** をクリックします。
 
    ![サイトの作成ウィザード](../assets/site-creation-wizard.png)
 
-1. ファイルブラウザーで、使用するテンプレートを見つけて、「**アップロード**」をタップまたはクリックします。
+1. ファイルブラウザーで、使用するテンプレートを探し、「 」を選択します。 **アップロード**.
 
 1. アップロードが完了すると、使用可能なテンプレートのリストに表示されます。
 
@@ -61,8 +61,8 @@ AEM サイトテンプレートを使用して、サイト構造と初期コン�
 
 * `files`：UI キット、XD ファイル、およびその他のファイルを含むフォルダー
 * `previews`：サイトテンプレートのスクリーンショットを含むフォルダー
-* `site`：ページテンプレート、ページなど、このテンプレートから作成したサイトごとにコピーされるコンテンツのコンテンツパッケージ。
-* `theme`：CSS、JavaScript など、サイトの外観を変更するための[サイトテーマ](site-themes.md)のソース。
+* `site`：このテンプレートから作成される各サイト用にコピーされるコンテンツのコンテンツパッケージ（ページテンプレート、ページなど）。
+* `theme`：のソース [サイトのテーマ](site-themes.md) を使用して、CSS や JavaScript などを含むサイトの外観を変更する場合。
 
 ## Standard Site Template {#standard-site-template}
 

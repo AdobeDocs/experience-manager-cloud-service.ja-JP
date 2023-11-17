@@ -2,9 +2,9 @@
 title: Adobe Analytics との統合時に使用する IMS 設定
 description: Adobe Analytics との統合時に使用する IMS 設定について説明します
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '908'
 ht-degree: 94%
 
 ---
@@ -35,7 +35,7 @@ Analytics Standard API を使用して Adobe Experience Manager as a Cloud Servi
 * 組織のシステム管理者は、Admin Console を使用して、組織内で必要な開発者を関連する製品プロファイルに追加する必要があります。
 
    * これにより、Adobe Developer Console 使用して統合を有効にする権限が特定の開発者に付与されます。
-   * 詳しくは、[開発者の管理](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)を参照してください。
+   * 詳しくは、 [開発者の管理](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
 ## IMS 設定の指定 - 公開鍵の生成 {#configuring-ims-generating-a-public-key}

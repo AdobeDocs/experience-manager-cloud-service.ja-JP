@@ -2,10 +2,10 @@
 title: CIF オーサリングの概要
 description: CIF オーサリングの概要。
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 56%
+source-wordcount: '778'
+ht-degree: 55%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Experience Manager(AEM)CIF Authoring について説明します。
 
 CIFは、ユニバーサルエディターを拡張し、コンテキストを離れることなく、リアルタイムの製品データにアクセスする機能を備えています。
 
-サイドパネルを開き、ドロップダウンから「製品」を選択します。
+サイドパネルを開き、ドロップダウンリストから「製品」を選択します。
 ![製品タイプを選択](assets/asset-finder-overview.png)
 
 製品カタログを参照するか、全文検索フィールドを使用して製品を検索できます。

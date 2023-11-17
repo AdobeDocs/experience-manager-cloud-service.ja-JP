@@ -2,10 +2,10 @@
 title: 設定と設定ブラウザー
 description: Adobe Experience Manager(AEM) の設定と、AEMでの Workspace 設定の管理方法について説明します。
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 60%
+source-wordcount: '1487'
+ht-degree: 55%
 
 ---
 
@@ -68,8 +68,8 @@ WKND-General を WKND サイトのすべてのコンテンツに関連付ける�
 
 設定ブラウザーを使用してAEMで設定を簡単に作成できます。
 
-1. AEM as a Cloud Service にログインし、メインメニューで&#x200B;**ツール**／**一般**／**設定ブラウザー**&#x200B;を選択します。
-1. 「**作成**」をタップまたはクリックします。
+1. AEM as a Cloud Serviceにログインし、メインメニューからを選択します。 **ツール** > **一般** > **設定ブラウザー**.
+1. 「**作成**」を選択します。
 1. 設定に&#x200B;**タイトル**&#x200B;と&#x200B;**名前**&#x200B;を指定します。
 
    ![設定の作成](assets/configuration-create.png)
@@ -83,7 +83,7 @@ WKND-General を WKND サイトのすべてのコンテンツに関連付ける�
    * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
    * [編集可能なテンプレート](/help/sites-cloud/authoring/features/templates.md)
    * 各種クラウド設定
-1. 「**作成**」をタップまたはクリックします。
+1. 「**作成**」を選択します。
 
 >[!TIP]
 >
@@ -93,7 +93,7 @@ WKND-General を WKND サイトのすべてのコンテンツに関連付ける�
 
 設定をワークスペースと考える場合、これらの設定にアクセス権を設定して、それらのワークスペースにアクセスできるユーザーとアクセスできないユーザーを指定することができます。
 
-1. AEM as a Cloud Service にログインし、メインメニューで&#x200B;**ツール**／**一般**／**設定ブラウザー**&#x200B;を選択します。
+1. AEM as a Cloud Serviceにログインし、メインメニューからを選択します。 **ツール** > **一般** > **設定ブラウザー**.
 1. 編集する設定を選択し、「 」を選択します。 **プロパティ** 」をクリックします。
 1. 設定に追加する追加機能を選択します。
 
@@ -110,7 +110,7 @@ WKND-General を WKND サイトのすべてのコンテンツに関連付ける�
 1. 1 人または複数の選択したユーザーまたはロールのアクセスオプションをチェックし、 **追加**.
    ![設定へのアクセス権の追加](assets/configuration-edit.png)
 1. 手順を繰り返して、ユーザーまたはロールを選択し、必要に応じて追加のアクセス権を割り当てることができます。
-1. 終了したら、「**保存して閉じる**」をタップまたはクリックします。
+1. 選択 **保存して閉じる** 終了したとき。
 
 ## デベロッパーにとっての設定 {#configurations-developer}
 
@@ -196,9 +196,9 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 ### 設定の使用 {#using-configurations}
 
-AEM の設定は、Sling コンテキスト対応設定に基づいています。Sling バンドルには、コンテキスト対応設定の取得に使用できるサービス API が用意されています。コンテキスト対応設定とは、[前の例で説明したように](#developer-example)、コンテンツリソースまたはリソースツリーに関連する設定です。
+AEM の設定は、Sling コンテキスト対応設定に基づいています。Sling バンドルには、コンテキスト対応設定の取得に使用できるサービス API が用意されています。コンテキスト対応設定とは、コンテンツリソースまたはリソースツリーに従来どおりに関連する設定です [前の例で説明した](#developer-example).
 
-コンテキスト対応設定、例、使用方法の詳細については、[Sling のドキュメント](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)を参照してください。
+コンテキスト対応の設定、例、その使用方法の詳細については、 [Sling ドキュメント。](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
 
 ### ConfMgr Web コンソール {#confmgr-web-console}
 

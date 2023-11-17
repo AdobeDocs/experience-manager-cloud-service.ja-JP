@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 97%
+source-wordcount: '927'
+ht-degree: 91%
 
 ---
 
@@ -26,7 +26,7 @@ AEM Sites と翻訳要件に精通している方は、このジャーニーの�
 
 ## AEM ドキュメントジャーニー {#documentation-journeys}
 
-[ドキュメントジャーニー](/help/journey-documentation/documentation-journeys.md)は、前提となる事前のトピックや AEM の知識を最小限に抑えながら、AEM を初めて使用することもある読者がビジネス上の問題全体を把握し解決するのに役立つ説明を提供して、複雑であろう様々なトピックや機能をひとまとめに扱っています。
+[ドキュメントジャーニー](/help/journey-documentation/documentation-journeys.md) AEMを初めて使用する読者が、最初から最後までビジネス上の問題を理解し、解決するのに役立つナレーションを提供し、前のトピックやAEMの知識を最小限に抑えながら、様々な複雑なトピックや機能を結び付けます。
 
 ドキュメントジャーニーは、アドビの最新の調査、アドビのコンサルタントによる実装実績、顧客プロジェクトからのフィードバックなどに基づいて、ベストプラクティス原則を軸に設計されています。
 
@@ -47,7 +47,7 @@ AEM を使用してサイトのビジネスケースを解決する方法をア�
 | 管理者 | AEM の基本セットアップと設定を管理します。 | 翻訳担当者は管理者と協力して、翻訳コネクタのインストールなど、翻訳に必要な設定変更を行います。 |
 | コンテンツアーキテクト | サイトとして配信する必要があるデータの要件を分析し、そのデータの構造を定義します。 | 翻訳担当者はコンテンツアーキテクトと協力して、翻訳しやすいようにコンテンツの構成を定義します。 |
 
-このジャーニーの情報は、もちろんすべてのペルソナにとって役に立ちますが、特定の役割には必要ない情報も一部あります。[その他の役割に対応するジャーニーが今後公開](/help/journey-documentation/documentation-journeys.md#journeys)され次第、随時お知らせします。
+このジャーニーの情報は、すべてのペルソナに役立ちますが、一部の情報は特定の役割で余分なものになる場合があります。 [その他の役割に対応するジャーニーが今後公開](/help/journey-documentation/documentation-journeys.md#journeys)され次第、随時お知らせします。
 
 ## サイト翻訳ジャーニー {#the-journey}
 

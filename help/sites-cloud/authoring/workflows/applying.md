@@ -1,17 +1,17 @@
 ---
 title: ページへのワークフローの適用
-description: オーサリングでは、ワークフローを呼び出して、ページにアクションを実行できます。複数のワークフローを適用することもできます。
+description: オーサリング時に、ワークフローを呼び出してページ上で動作させることができます。複数のワークフローを適用することもできます。
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 93%
+source-wordcount: '654'
+ht-degree: 83%
 
 ---
 
 # ページへのワークフローの適用  {#applying-workflows-to-pages}
 
-オーサリングでは、ワークフローを呼び出して、ページにアクションを実行することができます。複数のワークフローを適用することもできます。
+オーサリング時に、ワークフローを呼び出してページ上で動作させることができます。複数のワークフローを適用することもできます。
 
 ワークフローを適用する際には、次の情報を指定します。
 
@@ -117,7 +117,7 @@ ht-degree: 93%
 
 1. **スコープ**&#x200B;ステップで、以下のものを選択できます。
 
-   * 「**コンテンツを追加**」で[パスブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)を開き、追加リソースを選択します。ブラウザーでは、「**選択**」をクリックまたはタップして、コンテンツをワークフローインスタンスに追加します。
+   * **コンテンツを追加** 開く [パスブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) 追加のリソースを選択します。ブラウザーで、 **選択** をクリックして、コンテンツをワークフローインスタンスに追加します。
 
    * 追加のアクションを表示するための既存のリソース
 

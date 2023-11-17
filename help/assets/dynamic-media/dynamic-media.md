@@ -4,10 +4,10 @@ description: Dynamic Media を使用して、Web、モバイルおよびソー�
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 93%
+source-wordcount: '397'
+ht-degree: 82%
 
 ---
 
@@ -81,7 +81,7 @@ Dynamic Media 対応のアセットには `pyramid.tiffs` が含まれていま�
 
 ### アセットのビューの変化 {#asset-views-change}
 
-Dynamic Media を有効にすると、「`+`」ボタンをクリックしてズームインし、「`-`」ボタンをクリックしてズームアウトすることができます。クリックまたはタップして、特定の領域にズームインすることもできます。元に戻すアイコンをクリックすると元のバージョンに戻ります。また、斜めの矢印をクリックすると、画像を全画面表示にすることができます。Dynamic Media を有効にした場合の画面は次のようになります。
+Dynamic Mediaを有効にした場合、 `+` および `-` ボタン。 を選択して、特定の領域にズームインすることもできます。 「元に戻す」を選択すると元のバージョンに戻り、斜めの矢印をクリックして画像を全画面表示にすることができます。 Dynamic Media を有効にした場合の画面は次のようになります。
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

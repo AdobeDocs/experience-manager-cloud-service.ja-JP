@@ -2,9 +2,9 @@
 title: GraphQL クエリの最適化
 description: ヘッドレスコンテンツ配信用の Adobe Experience Manager as a Cloud Service でコンテンツフラグメントをフィルタリング、ページング、並べ替える際に、GraphQL クエリを最適化する方法について説明します。
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: 2ac93fbe0075cc2c88def444daba613e8b40c018
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1876'
 ht-degree: 65%
 
 ---
@@ -89,7 +89,7 @@ GraphQLクエリとその JSON 応答は、をターゲット設定した場合�
 
 **その他の参照**
 
-Adobeに連絡して、AEM Cloud Serviceのプログラムおよび環境でこの機能を有効にしてください。
+Adobeに問い合わせて、AEM Cloud Serviceのプログラムおよび環境でこの機能を有効にします。
 
 ### GraphQL Query optimization {#graphql-query-optimization}
 

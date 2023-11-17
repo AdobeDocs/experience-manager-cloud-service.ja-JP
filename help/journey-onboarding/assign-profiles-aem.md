@@ -4,10 +4,10 @@ description: クラウドリソースを設定したら、AEM製品プロファ�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 79%
+source-wordcount: '885'
+ht-degree: 77%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 79%
 
 このオンボーディングジャーニーの前のドキュメントを読んだ後、 [環境の作成、](create-environments.md) お使いのクラウドリソースを設定し、AEM製品プロファイルを使用して、チームにAEM自体へのアクセス権を付与します。 これを行うには、システム管理者が AEM 製品プロファイルを割り当てます。
 
-このドキュメントを読むと、次の点を理解できるようになります。
+このドキュメントを読むと、次のことを理解できるようになります。
 
 * AEM 製品プロファイルとは何か。
 * チームメンバーを「AEM ユーザー」製品プロファイルに追加する方法
@@ -88,7 +88,7 @@ AEM を使用するには、チームメンバーが 1 つまたは複数の AEM
 
    ![アクセスの管理](/help/journey-onboarding/assets/add-team1.png)
 
-1. 新しいタブで Admin Console が表示されます。ここから、環境のオーサーインスタンスにアクセスできます。その人に付与すべき権限に基づいて、「**AEM 管理者**」または「**AEM ユーザー**」を選択します。
+1. 新しいタブで Admin Console が表示されます。ここから、環境のオーサーインスタンスにアクセスできます。選択 **AEM Administrators** または **AEM Users** この個人に与える必要がある権限に基づいて、
 
    ![アクセス権限の割り当て](/help/journey-onboarding/assets/add-team2.png)
 

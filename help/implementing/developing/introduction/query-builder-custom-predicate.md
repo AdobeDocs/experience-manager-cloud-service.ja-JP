@@ -2,10 +2,10 @@
 title: Query Builder 用のカスタム述語エバリュエーターの実装
 description: AEM の Query Builder を使用すると、コンテンツリポジトリーへのクエリをカスタマイズして簡単に実行できます
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '668'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '667'
+ht-degree: 97%
 
 ---
 
@@ -101,7 +101,7 @@ replic.action=Activate
 >
 >Maven の使用など、新しい AEM プロジェクトのセットアップについて詳しくは、[WKND チュートリアル](develop-wknd-tutorial.md)を参照してください。
 
-まず、プロジェクトの Maven 依存関係を更新する必要があります。`PredicateEvaluator` は `cq-search` アーティファクトの一部なので、Maven の pom ファイルに追加する必要があります。
+まず、プロジェクトの Maven 依存関係を更新する必要があります。The `PredicateEvaluator` は、 `cq-search` アーティファクトなので、Maven の pom ファイルに追加する必要があります。
 
 >[!NOTE]
 >

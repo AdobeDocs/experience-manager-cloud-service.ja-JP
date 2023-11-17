@@ -2,10 +2,10 @@
 title: DNS 設定の指定
 description: カスタムドメイン名の DNS 設定を構成する方法を説明します。
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
-source-git-commit: 9fd7c17fce8c11809eabcc6387cbace0ebdc64a2
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 96%
+source-wordcount: '337'
+ht-degree: 92%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 96%
 
 apex ドメインは、サブドメインを含まないカスタムドメイン（例：`example.com` など）です。DNS プロバイダーを通じて、Apex ドメインは `A`、`ALIAS`、`ANAME` のいずれかのレコードで設定されます。Apex ドメインは、特定の IP アドレスを指す必要があります。
 
-ドメインプロバイダーを通じて、ドメインの DNS 設定に次の `A` レコードをすべて追加します。
+以下を追加します。 `A` ドメインプロバイダを介してドメインの DNS 設定に対するレコード。
 
 * `A RECORD`
 

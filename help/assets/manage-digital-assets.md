@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4344'
-ht-degree: 96%
+source-wordcount: '4301'
+ht-degree: 84%
 
 ---
 
@@ -73,7 +73,7 @@ ZIP ファイルを抽出するには、次の手順を実行します。
 
 1. プレビューモードでは、[サポートされている画像タイプ](/help/assets/file-format-support.md)で（インタラクティブ編集中に）ズームオプションを使用できます。
 
-   アセットにズームインするには、`+` をタップまたはクリック（またはアセット上の虫眼鏡アイコンをタップまたはクリック）します。ズームアウトするには、`-` をタップまたはクリックします。ズームインすると、パンニングによって画像の任意の場所を詳細に確認できます。「ズームをリセット」矢印をクリックすると、元の表示に戻ります。
+   アセットにズームインするには、「 `+` （またはアセット上の虫眼鏡アイコンを選択します）。 ズームアウトするには、「 」を選択します。 `-`. ズームインすると、パンニングによって画像の任意の場所を詳細に確認できます。「ズームをリセット」矢印をクリックすると、元の表示に戻ります。
 
    **[!UICONTROL リセット]**&#x200B;をタップすると、表示を元のサイズに戻すことができます。
 
@@ -81,7 +81,7 @@ ZIP ファイルを抽出するには、次の手順を実行します。
 
 1. メタデータを編集するアセットの場所に移動します。
 
-1. アセットを選択し、ツールバーの「**[!UICONTROL プロパティ]**」をタップまたはクリックして、アセットのプロパティを表示します。または、アセットカードで **[!UICONTROL プロパティ]** クイックアクションを選択します。
+1. アセットを選択し、「 」を選択します。 **[!UICONTROL プロパティ]** ツールバーからアセットのプロパティを表示します。 または、アセットカードで **[!UICONTROL プロパティ]** クイックアクションを選択します。
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
@@ -106,7 +106,7 @@ ZIP ファイルを抽出するには、次の手順を実行します。
    >
    > タグを作成するには、CRX リポジトリーの `/content/cq:tags/default` パスでの書き込み権限が必要です。
 
-1. 「**[!UICONTROL 保存して閉じる]**」をタップまたはクリックします。
+1. 「**[!UICONTROL 保存して閉じる]**」を選択します。
 
 1. Assets ユーザーインターフェイスに移動します。編集済みのメタデータのプロパティ（タイトル、説明、タグなど）は、カード表示のアセットカードまたはリスト表示の関連する列に表示されます。
 
@@ -138,7 +138,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 その他のプロパティとメタデータ情報は保持されます。アセットをコピーする際に、部分的なコピーが作成されることはありません。
 
-1. Assets UI から 1 つ以上のアセットを選択し、ツールバーの「**[!UICONTROL コピー]**」アイコンをタップまたはクリックします。または、アセットカードから&#x200B;**[!UICONTROL コピー]** ![copy_icon](assets/copy_icon.png) クイックアクションを選択します。
+1. Assets UI から 1 つ以上のアセットを選択し、 **[!UICONTROL コピー]** アイコンをクリックします。 または、アセットカードから&#x200B;**[!UICONTROL コピー]** ![copy_icon](assets/copy_icon.png) クイックアクションを選択します。
 
    >[!NOTE]
    >
@@ -162,13 +162,13 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 移動するアセットの場所に移動します。
 
-1. アセットを選択し、ツールバーの **[!UICONTROL 移動]** アイコン ![move_icon](assets/move_icon.png) をタップまたはクリックします。
+1. アセットを選択し、 **[!UICONTROL 移動]** アイコン ![move_icon](assets/move_icon.png) をクリックします。
 
 1. アセットを移動ウィザードで、次のいずれかの操作を行います。
 
-   * 移動後のアセットの名前を指定します。その後、「**[!UICONTROL 次へ]**」をタップまたはクリックして先に進みます。
+   * 移動後のアセットの名前を指定します。次に、 **[!UICONTROL 次へ]** をクリックして続行します。
 
-   * 「**[!UICONTROL キャンセル]**」をタップまたはクリックして、プロセスを停止します。
+   * 選択 **[!UICONTROL キャンセル]** をクリックしてプロセスを停止します。
 
    >[!NOTE]
    >
@@ -177,20 +177,20 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. **[!UICONTROL 宛先を選択]**&#x200B;ダイアログで、次のいずれかの操作を行います。
 
-   * アセットの移動先に移動し、「**[!UICONTROL 次へ]**」をタップまたはクリックして次に進みます。
+   * アセットの新しい場所に移動し、「 」を選択します。 **[!UICONTROL 次へ]** をクリックして続行します。
 
-   * 「**[!UICONTROL 戻る]**」をタップまたはクリックして、**[!UICONTROL 名前を変更]**&#x200B;画面に戻ります。
+   * 選択 **[!UICONTROL 戻る]** に戻る **[!UICONTROL 名前を変更]** 画面。
 
 1. 移動されるアセットに参照ページ、アセット、コレクションがある場合は、「**[!UICONTROL 宛先を選択]**」タブの横に「**[!UICONTROL 参照を調整]**」タブが表示されます。
 
    **[!UICONTROL 参照を調整]**&#x200B;画面で次のいずれかの操作を実行します。
 
-   * 新しい情報に基づいて調整する参照を指定し、「**[!UICONTROL 移動]**」をタップまたはクリックして次に進みます。
+   * 新しい詳細に基づいて調整する参照を指定し、「 」を選択します。 **[!UICONTROL 移動]** をクリックして続行します。
 
    * 「**[!UICONTROL 調整]**」列で、アセットへの参照を選択／選択解除します。
-   * 「**[!UICONTROL 戻る]**」をタップまたはクリックして、**[!UICONTROL 宛先を選択]**&#x200B;画面に戻ります。
+   * 選択 **[!UICONTROL 戻る]** に戻る **[!UICONTROL 宛先を選択]** 画面。
 
-   * 「**[!UICONTROL キャンセル]**」をタップまたはクリックして、移動操作を停止します。
+   * 選択 **[!UICONTROL キャンセル]** 移動操作を停止する。
 
    参照を更新しなければ、引き続きアセットの以前のパスが示されます。参照を調整すると、更新され、アセットの新しいパスが反映されます。
 
@@ -198,11 +198,11 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. アセットのレンディション（オリジナルを除く）を追加または削除できます。レンディションを追加または削除するアセットの場所に移動します。
 
-1. アセットをタップまたはクリックして、そのアセットページを開きます。
+1. アセットを選択して、そのアセットのページを開きます。
 
    <!--![chlimage_1-220](assets/chlimage_1-220.png)-->
 
-1. グローバルナビゲーションアイコンをタップまたはクリックし、リストから「**[!UICONTROL レンディション]**」を選択します。
+1. グローバルナビゲーションアイコンを選択し、「 」を選択します。 **[!UICONTROL レンディション]** を選択します。
 
    ![renditions_menu](assets/renditions_menu.png)
 
@@ -218,13 +218,13 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    **レンディションの削除**
 
-   **[!UICONTROL レンディション]**&#x200B;パネルからレンディションを選択し、ツールバーの「**[!UICONTROL レンディションを削除]**」アイコンをタップまたはクリックします。アセット処理の完了後は、レンディションを一括削除することはできません。個々のアセットについては、ユーザーインターフェイスからレンディションを手動で削除できます。複数のアセットについては、特定のレンディションを削除するか、アセットを削除して削除したアセットを再度アップロードするように、[!DNL Experience Manager] をカスタマイズできます。
+   レンディションを **[!UICONTROL レンディション]** パネルを選択し、 **[!UICONTROL レンディションを削除]** アイコンをクリックします。 アセット処理の完了後は、レンディションを一括削除することはできません。個々のアセットについては、ユーザーインターフェイスからレンディションを手動で削除できます。複数のアセットについては、特定のレンディションを削除するか、アセットを削除して削除したアセットを再度アップロードするように、[!DNL Experience Manager] をカスタマイズできます。
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
    **新しいレンディションのアップロード**
 
-   アセットの詳細ページに移動し、ツールバーの「**[!UICONTROL レンディションを追加]**」アイコンをタップまたはクリックして、アセットの新しいレンディションをアップロードします。
+   アセットの詳細ページに移動し、 **[!UICONTROL レンディションを追加]** アイコンを使用して、アセットの新しいレンディションをアップロードします。
 
    <!--![chlimage_1-221](assets/chlimage_1-221.png)-->
 
@@ -314,7 +314,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 CUG は、アセットへのアクセスを制限する追加の方法です。また、フォルダーのログインページを設定することもできます。
 
-1. Assets UI からフォルダーを選択し、ツールバーの「プロパティ」アイコンをタップまたはクリックして、プロパティページを表示します。
+1. Assets UI からフォルダーを選択し、ツールバーの「プロパティ」アイコンを選択して、プロパティページを表示します。
 1. 「**[!UICONTROL 権限]**」タブで、「**[!UICONTROL 閉じられたユーザーグループ]**」の下でメンバーまたはグループを追加します。
 
    ![add_user](assets/add_user.png)
@@ -355,13 +355,13 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. Do one of the following to open an asset in edit mode:
 
-    * Select the asset and then click/tap the **[!UICONTROL Edit]** icon in the toolbar.
-    * Tap/click the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
-    * In the asset page, tap/click the **[!UICONTROL Edit]** icon in the toolbar.
+    * Select the asset and then select the **[!UICONTROL Edit]** icon in the toolbar.
+    * Select the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
+    * In the asset page, select the **[!UICONTROL Edit]** icon in the toolbar.
 
    ![edit_icon](assets/edit_icon.png)
 
-1. To crop the image, tap/click the **Crop** icon.
+1. To crop the image, select the **Crop** icon.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
@@ -378,15 +378,15 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    ![chlimage_1-229](assets/chlimage_1-229.png)
 
-1. Tap/click the appropriate Rotate icon to rotate the image clockwise or anti-clockwise.
+1. Select the appropriate Rotate icon to rotate the image clockwise or anti-clockwise.
 
    ![chlimage_1-230](assets/chlimage_1-230.png)
 
-1. Tap/click the appropriate Flip icon to flip the image horizontally or vertically.
+1. Select the appropriate Flip icon to flip the image horizontally or vertically.
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
-1. Tap/click the **Finish** icon to save the changes.
+1. Select the **Finish** icon to save the changes.
 
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
@@ -425,7 +425,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 >コンテンツフラグメントの場合、[注釈はフラグメントエディターで作成されます](content-fragments/content-fragments.md)。
 
 1. 注釈を追加するアセットの場所に移動します。
-1. 以下のいずれかから&#x200B;**[!UICONTROL 注釈]**&#x200B;アイコンをタップまたはクリックします。
+1. を選択します。 **[!UICONTROL 注釈]** 次のいずれかのアイコンをクリックします。
 
    * [クイックアクション](#quick-actions)
    * アセットを選択した後のツールバーから、またはアセットページに移動して
@@ -454,18 +454,18 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
    >
    >複数の注釈を追加してから、それらを保存できます。
 
-1. 「**[!UICONTROL 閉じる]**」をタップまたはクリックして注釈モードを終了します。
+1. 選択 **[!UICONTROL 閉じる]** をクリックして注釈モードを終了します。
 1. 通知を表示するには、Aaron MacDonald の資格情報を使用して Assets にログインし、「**[!UICONTROL 通知]**」アイコンをクリックします。
 
    >[!NOTE]
    >
    >注釈はビデオアセットにも追加できます。ビデオに注釈を追加する際は、ユーザーがフレームに注釈を追加できるようにプレーヤーが一時停止します。詳しくは、 [ビデオアセットの管理](manage-video-assets.md) を参照してください。ただし、MXF ビデオ形式は、ビデオの注釈ではまだサポートされていません。
 
-1. 別の色を選択してユーザーを区別できるようにするには、プロファイルアイコンをクリックまたはタップし、「**[!UICONTROL 環境設定]**」をクリックまたはタップします。
+1. 別の色を選択してユーザーを区別するには、プロファイルアイコンを選択し、「 **[!UICONTROL 環境設定]**.
 
    <!--![chlimage_1-237](assets/chlimage_1-237.png)-->
 
-   **[!UICONTROL 注釈カラー]**&#x200B;ボックスに必要な色を指定し、**[!UICONTROL 確定]**&#x200B;をクリックまたはタップします。
+   目的の色を **[!UICONTROL 注釈の色]** ボックスをクリックし、 **[!UICONTROL 確定]**.
 
 <!-- ![chlimage_1-238](assets/chlimage_1-238.png)-->
 
@@ -485,7 +485,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. アセットに対して保存された注釈を表示するには、アセットの場所に移動して、そのアセットのアセットページを開きます。
 
-1. グローバルナビゲーションアイコンをタップまたはクリックし、リストから「**[!UICONTROL タイムライン]**」を選択します。
+1. グローバルナビゲーションアイコンを選択し、「 」を選択します。 **[!UICONTROL タイムライン]** を選択します。
 
    <!--![chlimage_1-239](assets/chlimage_1-239.png)-->
 
@@ -493,11 +493,11 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    <!--![chlimage_1-240](assets/chlimage_1-240.png)-->
 
-   **[!UICONTROL タイムライン]**&#x200B;パネルでコメントをタップまたはクリックし、対応する画像の注釈を表示します。
+   コメントを **[!UICONTROL タイムライン]** パネルを使用して、対応する注釈を画像に表示します。
 
    <!--![chlimage_1-241](assets/chlimage_1-241.png)-->
 
-   特定のコメントを削除するには、「**[!UICONTROL 削除]**」をタップまたはクリックします。
+   選択 **[!UICONTROL 削除]**、特定のコメントを削除します。
 
 ### 注釈の印刷 {#printing-annotations}
 
@@ -509,7 +509,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 >
 >注釈付きアセットを PDF 形式で印刷する際に、複数の注釈を選択できます。
 
-注釈とレビューステータスを印刷するには、**[!UICONTROL 印刷]**&#x200B;アイコンをタップまたはクリックし、ウィザードの指示に従ってください。**[!UICONTROL 印刷]**&#x200B;アイコンは、アセットに注釈またはレビューステータスが少なくとも 1 つ割り当てられている場合にのみ、ツールバーに表示されます。
+注釈とレビューステータスを印刷するには、 **[!UICONTROL 印刷]** アイコンをクリックし、ウィザードの指示に従います。 **[!UICONTROL 印刷]**&#x200B;アイコンは、アセットに注釈またはレビューステータスが少なくとも 1 つ割り当てられている場合にのみ、ツールバーに表示されます。
 
 1. Assets UI から、アセットのプレビューページを開きます。
 1. 次のいずれかの操作を行います。
@@ -525,7 +525,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    <!--![chlimage_1-243](assets/chlimage_1-243.png)-->
 
-1. ツールバーの&#x200B;**[!UICONTROL 印刷]**&#x200B;アイコンをタップまたはクリックします。
+1. を選択します。 **[!UICONTROL 印刷]** アイコンをクリックします。
 
    <!--![chlimage_1-244](assets/chlimage_1-244.png)-->
 
@@ -565,21 +565,21 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 * アセットの現在のリビジョンを表示します。
 * アセットを以前のバージョンに復元します。
 
-1. バージョンを作成するアセットの場所に移動し、アセットをタップまたはクリックしてそのアセットのページを開きます。
+1. バージョンを作成するアセットの場所に移動し、アセットを選択してそのアセットのページを開きます。
 
-1. グローバルナビゲーションアイコンをタップまたはクリックし、メニューから「**[!UICONTROL タイムライン]**」を選択します。
+1. グローバルナビゲーションアイコンを選択し、「 」を選択します。 **[!UICONTROL タイムライン]** を選択します。
 
    ![タイムライン](assets/timeline.png)
 
-1. 下にある&#x200B;**[!UICONTROL アクション]**（矢印）アイコンをタップまたはクリックして、アセットで実行できるアクションを表示します。
+1. を選択します。 **[!UICONTROL アクション]** （矢印）アイコンを使用して、アセットで実行できるアクションを表示します。
 
    <!--![chlimage_1-249](assets/chlimage_1-249.png)-->
 
-1. 「**[!UICONTROL 保存するバージョン]**」をタップまたはクリックして、アセットのバージョンを作成します。
+1. 選択 **[!UICONTROL バージョンとして保存]** をクリックして、アセットのバージョンを作成します。
 
 <!--![chlimage_1-250](assets/chlimage_1-250.png)-->
 
-1. ラベルとコメントを追加し、「**[!UICONTROL 作成]**」をクリックしてバージョンを作成します。または、「**キャンセル**」をタップまたはクリックして操作を終了します。
+1. ラベルとコメントを追加し、「**[!UICONTROL 作成]**」をクリックしてバージョンを作成します。または、 **キャンセル** をクリックして操作を終了します。
 
    <!--![chlimage_1-251](assets/chlimage_1-251.png)-->
 
@@ -595,9 +595,9 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    ![save_version](assets/save_version.png)
 
-1. バージョンのプレビューを生成するには、「**[!UICONTROL バージョンをプレビュー]**」をタップまたはクリックします。
+1. バージョンのプレビューを生成するには、「 **[!UICONTROL バージョンをプレビュー]**.
 1. Assets UI でこのバージョンを表示するには、「**[!UICONTROL このバージョンに戻る]**」を選択します。
-1. 2 つのバージョンを比較するには、アセットのアセットページに移動し、現在のバージョンと比較するバージョンをタップまたはクリックします。
+1. 2 つのバージョンを比較するには、アセットのアセットページに移動し、現在のバージョンと比較するバージョンを選択します。
 
    ![select_version_tocompare](assets/select_version_tocompare.png)
 
@@ -607,16 +607,16 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 ### アセットでのワークフローの開始 {#starting-a-workflow-on-an-asset}
 
-1. ワークフローを開始するアセットの場所に移動し、アセットをタップまたはクリックしてそのアセットのページを開きます。
-1. グローバルナビゲーションアイコンをタップまたはクリックし、メニューから「**[!UICONTROL タイムライン]**」を選択してタイムラインを表示します。
+1. ワークフローを開始するアセットの場所に移動し、アセットを選択してアセットページを開きます。
+1. グローバルナビゲーションアイコンを選択し、「 」を選択します。 **[!UICONTROL タイムライン]** メニューからタイムラインを表示します。
 
    ![timeline-1](assets/timeline-1.png)
 
-1. 下にある&#x200B;**[!UICONTROL アクション]**（矢印）アイコンをタップまたはクリックして、アセットで使用可能なアクションのリストを表示します。
+1. を選択します。 **[!UICONTROL アクション]** （矢印）アイコンをクリックして、アセットで使用可能なアクションのリストを開きます。
 
    <!--![chlimage_1-252](assets/chlimage_1-252.png)-->
 
-1. リストの「**[!UICONTROL ワークフローを開始]**」をタップまたはクリックします。
+1. 選択 **[!UICONTROL ワークフローを開始]** を選択します。
 
    <!--![chlimage_1-253](assets/chlimage_1-253.png)-->
 
@@ -628,7 +628,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    <!--![chlimage_1-255](assets/chlimage_1-255.png)-->
 
-1. ダイアログで、「**[!UICONTROL 開始]**」をタップまたはクリックし、次に「**[!UICONTROL 続行]**」をタップまたはクリックして確定します。ワークフローの各ステップは、タイムラインにイベントとして表示されます。
+1. 選択 **[!UICONTROL 開始]** 次に、「 **[!UICONTROL 続行]** をクリックして確定します。 ワークフローの各ステップは、タイムラインにイベントとして表示されます。
 
    <!--![chlimage_1-256](assets/chlimage_1-256.png)-->
 

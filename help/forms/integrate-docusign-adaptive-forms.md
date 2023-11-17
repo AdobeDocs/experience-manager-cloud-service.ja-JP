@@ -2,10 +2,10 @@
 title: DocuSign をアダプティブフォームに統合する方法
 description: アダプティブフォームで DocuSign を使用して電子サインを収集する方法を説明します。
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1559'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -186,7 +186,7 @@ AEM Forms as a Cloud Service には DocuSign 用のカスタム送信アクシ�
 1. 「**[!UICONTROL 作成」をタップします。]** 署名が有効なアダプティブフォームが作成されます。[!DNL DocuSign] フィールドをフォームに追加し、署名用に送信できます。
 1. アダプティブフォームを編集モードで開きます。「**[!UICONTROL コンテンツ]**」タブで「**[!UICONTROL フォームコンテナ]**」をタップし、「![設定](assets/configure-icon.svg)」をタップします。
 
-1. 「**[!UICONTROL 送信]**」セクションの「**[!UICONTROL 送信アクション]**」ドロップダウンリストで「**[!UICONTROL DocuSign 電子サインを使用して送信]**」を選択します。
+1. Adobe Analytics の **[!UICONTROL 送信]** セクション、選択 **[!UICONTROL DocuSign 電子署名を使用して送信]** から **[!UICONTROL 送信アクション]** 」ドロップダウンリストから選択できます。
 
 1. 「**[!UICONTROL アクション設定]**」セクションで「**[!UICONTROL 追加]**」をタップして受信者を追加し、その受信者のメールアドレスを指定します。「**[!UICONTROL 追加]**」を再度タップして、受信者をさらに追加します。
 
@@ -211,7 +211,7 @@ AEM Forms as a Cloud Service には DocuSign 用のカスタム送信アクシ�
 
 1. アダプティブフォームを編集モードで開きます。「**[!UICONTROL コンテンツ]**」タブで「**[!UICONTROL フォームコンテナ]**」をタップし、「![設定](assets/configure-icon.svg)」をタップします。
 
-1. 「**[!UICONTROL 送信]**」セクションの「**[!UICONTROL 送信アクション]**」ドロップダウンリストで「**[!UICONTROL DocuSign 電子サインを使用して送信]**」を選択します。
+1. Adobe Analytics の **[!UICONTROL 送信]** セクション、選択 **[!UICONTROL DocuSign 電子署名を使用して送信]** から **[!UICONTROL 送信アクション]** 」ドロップダウンリストから選択できます。
 
 1. 「**[!UICONTROL アクション設定]**」セクションで「**[!UICONTROL 追加]**」をタップして受信者を追加し、その受信者のメールアドレスを指定します。「**[!UICONTROL 追加]**」を再度タップして、受信者をさらに追加します。
 

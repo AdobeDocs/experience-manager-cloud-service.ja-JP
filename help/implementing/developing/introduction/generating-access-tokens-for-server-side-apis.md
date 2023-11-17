@@ -2,10 +2,10 @@
 title: サーバーサイド API 用のアクセストークンの生成
 description: セキュアな JWT トークンを生成してサードパーティサーバーおよび AEM as a Cloud Service の間の通信を容易にする方法について説明します。
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: ht
-source-wordcount: '2090'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '2089'
+ht-degree: 98%
 
 ---
 
@@ -49,7 +49,7 @@ AEM as a Cloud Service の Developer Console にアクセスできるユーザ�
 
 ![資格情報の表示](/help/implementing/developing/introduction/assets/s2s-viewcredentials.png)
 
-ユーザーは、後で表示アクションを使用して資格情報を表示できます。さらに、この記事で後述するように、ユーザーは同じテクニカルアカウントの資格情報を編集できます。証明書を更新または失効させる必要がある場合に備えて、新しい秘密鍵または証明書を作成することで、この編集を実行します。
+ユーザーは、後で表示アクションを使用して資格情報を表示できます。さらに、この記事で後述するように、ユーザーは同じテクニカルアカウントの資格情報を編集できます。証明書を更新または失効させる必要がある場合に備えて、秘密鍵または証明書を作成することで、この編集を実行します。
 
 AEM as a Cloud Service の環境管理者の役割を持つユーザーは、後で追加のテクニカルアカウントの新しい資格情報を作成できます。この機能は、API が異なるとアクセス要件も異なる場合に役立ちます。（例：読み取り専用と読み取り／書き込み）。
 

@@ -3,9 +3,9 @@ title: AEM as a Cloud Service でのキャッシュ
 description: AEM as a Cloud Serviceでのキャッシュの基本について説明します。
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2874'
+source-wordcount: '2873'
 ht-degree: 95%
 
 ---
@@ -238,7 +238,7 @@ Web サイトの URL には、キャンペーンの成功をトラックする�
 ^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
 ```
 
-この動作を無効にしたい場合は、サポートチケットを送信してください。
+この動作を無効にしたい場合は、サポートチケットを送信します。
 
 2023 年 10 月より前に作成された環境の場合は、Dispatcher 設定の `ignoreUrlParams` プロパティとして [ここに記載されています](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#ignoring-url-parameters).
 

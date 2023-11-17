@@ -2,10 +2,10 @@
 title: 設定の作成 - ヘッドレスセットアップ
 description: AEM as a Cloud Service でヘッドレスを使い始めるための最初の手順として設定を作成します。
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '327'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '325'
+ht-degree: 94%
 
 ---
 
@@ -25,10 +25,10 @@ AEM のヘッドレスなコンテンツ管理に関しては、AEM 内でコン
 
 管理者は、設定を 1 回だけ作成する必要があります。コンテンツモデルの整理のために新しいワークスペースが必要になることはほとんどありません。この「はじめる前に」ガイドの目的上、設定を 1 つ作成する必要があります。
 
-1. AEM as a Cloud Service にログインし、メインメニューで&#x200B;**ツール／一般／設定ブラウザー**&#x200B;を選択します。
+1. AEM as a Cloud Serviceにログインし、メインメニューからを選択します。 **ツール/一般/設定ブラウザー**.
 1. 設定に&#x200B;**タイトル**&#x200B;と&#x200B;**名前**&#x200B;を指定します。
    * **タイトル**&#x200B;は内容がわかるように付けます。
-   * **名前**&#x200B;はリポジトリのノード名になります。
+   * 「**名前**」はリポジトリ内のノード名になります。
       * タイトルに基づいて自動的に生成され、[AEM の命名規則](/help/implementing/developing/introduction/naming-conventions.md)に従って調整されます。
       * 必要に応じて調整できます。
 1. 次のオプションを確認します。
@@ -37,7 +37,7 @@ AEM のヘッドレスなコンテンツ管理に関しては、AEM 内でコン
 
    ![設定の作成](../assets/create-configuration.png)
 
-1. 「**作成**」をタップまたはクリックします。
+1. 選択 **作成**
 
 必要に応じて、複数の設定を作成できます。設定は入れ子にすることもできます。
 

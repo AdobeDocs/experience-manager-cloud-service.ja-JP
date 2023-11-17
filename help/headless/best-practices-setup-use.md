@@ -2,9 +2,9 @@
 title: コンテンツフラグメントを使用したAEM GraphQLの設定と使用のベストプラクティス
 description: コンテンツフラグメントでのAEM GraphQLの設定と使用に関して推奨されるベストプラクティスについて説明します。
 exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '739'
 ht-degree: 35%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 35%
 * [ヘッドレスの概念と用語の概要については、ヘッドレスとは](/help/headless/what-is-headless.md)
 * AEMの様々な環境の概要 [アーキテクチャ](/help/headless/deployment/architecture.md)
 
-## 設定 {#setup}
+## セットアップ {#setup}
 
 コンテンツフラグメントやアプリで使用するAEM GraphQLを安全にセットアップするには、様々なコンポーネントを設定する必要があります。
 

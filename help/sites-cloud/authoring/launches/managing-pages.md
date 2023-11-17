@@ -2,10 +2,10 @@
 title: ローンチでのページの管理
 description: ローンチ内に新しいページを作成できます。また、不要なページを削除することもできます。
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 94%
+source-wordcount: '288'
+ht-degree: 89%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 94%
 
 * ナビゲーションする
 * 新しいページを&#x200B;**作成**&#x200B;する
-* 既存のページを選択し、アクション（例：**編集**、**プロパティ**、**ロック**、**コピー**、**貼り付け**、**削除**）を実行する
+* 既存のページを選択し、アクション（例： ）を実行します。 **編集**，開く **プロパティ**, **ロック**, **コピー**, **貼り付け** および **削除**
   ![「コンテンツの管理」から Sites コンソールでローンチをナビゲーション](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * **参照**&#x200B;パネルを使用して、**ローンチソース**ページに戻る
   ![Sites コンソール - ローンチソース](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)

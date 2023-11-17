@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2930'
-ht-degree: 99%
+source-wordcount: '2928'
+ht-degree: 98%
 
 ---
 
@@ -194,7 +194,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 後処理ワークフロー設定を [!DNL Experience Manager] に追加するには、次の手順に従います。
 
 * 1 つ以上のワークフローモデルを作成します。このドキュメントでは、これらのカスタムモデルを&#x200B;*後処理ワークフローモデル*&#x200B;と呼びます。これらは、通常の [!DNL Experience Manager] ワークフローモデルです。
-* 必要なワークフローステップをこれらのモデルに追加します。デフォルトワークフローのステップを確認し、必要なデフォルトステップをすべてカスタムワークフローに追加します。手順は、ワークフローモデルの設定に基づいてアセットに対して実行されます。例えば、アセットのアップロード時に自動的にスマートタグ付けを実行する場合は、そのステップをカスタムの後処理ワークフローモデルに追加します。
+* 必要なワークフローステップをこれらのモデルに追加します。デフォルトのワークフローのステップを確認し、必要なすべてのデフォルトステップをカスタムワークフローに追加します。 手順は、ワークフローモデルの設定に基づいて、アセットに対して実行されます。 例えば、アセットのアップロード時に自動的にスマートタグ付けを実行する場合は、そのステップをカスタムの後処理ワークフローモデルに追加します。
 * [!UICONTROL DAM アセットの更新ワークフロー完了プロセス]ステップを最後に追加します。この手順を追加すると、Experience Manager がいつ処理が終了したかを把握して、アセットを処理済みとしてマークできるので、アセットに&#x200B;*新規*&#x200B;が表示されます。
 * Custom Workflow Runner サービスの設定を作成すると、パス（フォルダーの場所）または正規表現で後処理ワークフローモデルの実行を設定できます。
 

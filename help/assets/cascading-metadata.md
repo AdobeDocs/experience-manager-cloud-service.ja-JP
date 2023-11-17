@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 96%
+source-wordcount: '971'
+ht-degree: 84%
 
 ---
 
@@ -36,14 +36,14 @@ ht-degree: 96%
 
 選択したアセットタイプに関係なく、著作権情報を必須フィールドとして表示します。
 
-1. [!DNL Experience Manager] のロゴをタップまたはクリックし、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL メタデータスキーマ]**&#x200B;に移動します。
-1. **[!UICONTROL スキーマフォーム]**&#x200B;ページでスキーマフォームを選択し、ツールバーの「**[!UICONTROL 編集]**」をタップまたはクリックしてスキーマを編集します。
+1. を選択します。 [!DNL Experience Manager] ロゴをクリックし、に移動します。 **[!UICONTROL ツール]** > **[!UICONTROL Assets]** > **[!UICONTROL メタデータスキーマ]**.
+1. Adobe Analytics の **[!UICONTROL スキーマForms]** ページで、スキーマフォームを選択し、 **[!UICONTROL 編集]** ツールバーからスキーマを編集します。
 
    ![select_form](assets/select_form.png)
 
 1. （オプション）メタデータスキーマエディターで、条件を設定するフィールドを作成します。 「**[!UICONTROL 設定]**」タブで、名前およびプロパティのパスを指定します。
 
-   タブを作成するには、をタップまたはクリックします `+` をクリックして、タブを追加し、メタデータフィールドを追加します。
+   タブを作成するには、「 」を選択します。 `+` をクリックして、タブを追加し、メタデータフィールドを追加します。
 
    ![add_tab](assets/add_tab.png)
 
@@ -53,7 +53,7 @@ ht-degree: 96%
 
 1. キーと値のペアは、フォームユーザーに提供されるオプションです。キーと値のペアは手動でも JSON ファイルからも指定できます。
 
-   * 値を手動で指定するには、「**[!UICONTROL 手動で追加]**」を選択し、「**[!UICONTROL 選択肢を追加]**」をタップまたはクリックした後、オプションのテキストと値を指定します。例えば、ビデオ、PDF、Word、画像などのアセットタイプを指定します。
+   * 値を手動で指定するには、 **[!UICONTROL 手動で追加]**&#x200B;をクリックし、次を選択します。 **[!UICONTROL 選択肢を追加]** オプションのテキストと値を指定します。 例えば、ビデオ、PDF、Word、画像などのアセットタイプを指定します。
 
    * JSON ファイルから値を動的に取得するには、「**[!UICONTROL JSON パスで追加]**」を選択し、JSON ファイルのパスを指定します。[!DNL Experience Manager] は、フォームがユーザーに提供されたときに、キーと値のペアをリアルタイムで取得します。
 
@@ -80,7 +80,7 @@ ht-degree: 96%
    ![select_dependentfield](assets/select_dependentfield.png)
 
 1. 「**[!UICONTROL 要件]**」から、「**[!UICONTROL 必須、新しいルールに基づく]**」オプションを選択します。
-1. 「**[!UICONTROL ルールを追加]**」をタップまたはクリックし、「**[!UICONTROL アセットタイプ]**」フィールドを選択して依存関係を作成します。また、依存関係を作成するフィールド値も選択します。この場合は、「**[!UICONTROL Video]**」を選択します。「**[!UICONTROL 完了]**」をタップまたはクリックして、変更内容を保存します。
+1. 選択 **[!UICONTROL ルールを追加]** を選択し、 **[!UICONTROL アセットタイプ]** 依存関係を作成するフィールド。 また、依存関係を作成するフィールド値も選択します。 この場合は、「**[!UICONTROL Video]**」を選択します。選択 **[!UICONTROL 完了]** をクリックして変更を保存します。
 
    ![define_rule](assets/define_rule.png)
 
@@ -90,13 +90,13 @@ ht-degree: 96%
 
 1. 「**[!UICONTROL 視認性]**」の下で、「**[!UICONTROL 表示可、新しいルールに基づく]**」オプションを選択します。
 
-1. 「**[!UICONTROL ルールを追加]**」をタップまたはクリックし、「**[!UICONTROL アセットタイプ]**」フィールドを選択して依存関係を作成します。また、依存関係を作成するフィールド値も選択します。この場合は、「**[!UICONTROL Video]**」を選択します。「**[!UICONTROL 完了]**」をタップまたはクリックして、変更内容を保存します。
+1. 選択 **[!UICONTROL ルールを追加]** を選択し、 **[!UICONTROL アセットタイプ]** 依存関係を作成するフィールド。 また、依存関係を作成するフィールド値も選択します。この場合は、「**[!UICONTROL Video]**」を選択します。選択 **[!UICONTROL 完了]** をクリックして変更を保存します。
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
    >[!CAUTION]
    >
-   >値をリセットするには、インターフェイス上の空白領域など値以外の任意の場所をクリックまたはタップします。値がリセットされた場合は、値を再度選択します。
+   >値をリセットするには、インターフェイス上で値以外の任意の場所を選択します。 値がリセットされた場合は、値を再度選択します。
 
    >[!NOTE]
    >

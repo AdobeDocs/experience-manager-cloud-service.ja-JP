@@ -5,7 +5,7 @@ uuid: b3408aee-ac24-43af-a380-a5892abf0248
 content-type: reference
 topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 58%
@@ -39,7 +39,7 @@ ht-degree: 58%
    @Properties({
            @Property(name = "sling.servlet.resourceTypes", value = "/apps/populatedropdown"),
            @Property(name = "sling.servlet.methods", value = {"GET", "POST"}),
-           @Property(name = "service.description", value = "Populate states dropdown based on country value")
+           @Property(name = "service.description", value = "Populate states drop-down based on country value")
    })
    public class DropDownPopulator extends SlingAllMethodsServlet {
        private Logger logger = LoggerFactory.getLogger(DropDownPopulator.class);

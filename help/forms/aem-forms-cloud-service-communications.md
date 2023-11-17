@@ -2,7 +2,7 @@
 title: Formsas a Cloud Serviceを使用して XDP およびPDFテンプレートとデータを結合したり、PCL、ZPL および PostScript 形式で出力を生成したりする方法を教えてください。
 description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 87%
@@ -89,7 +89,7 @@ To programmatically generate an access token, generate a JSON Web Token (JWT) an
 Use the following keys, referred to as claims, to construct JWT JSON object:
 
 
-* `exp`- the requested expiration of the access token, expressed as a number of seconds since January 1, 1970 GMT. For most use cases, this is a relatively small value. For example, 5 minutes, for five minutes from now, this value should be 1670923791.
+* `exp`- the requested expiration of the access token, expressed as several seconds since January 1, 1970 GMT. For most use cases, this is a relatively small value. For example, 5 minutes, for five minutes from now, this value should be 1670923791.
 * `iss` - the Organization ID from the Adobe Developer Console project, in the format org_ident@AdobeOrg.
 * `sub` - the Technical Account ID from the Adobe Developer Console integration, in the format: id@techacct.adobe.com.
 * `aud` - the Client ID from the Adobe Developer Console integration prepended with `https://ims-na1.adobelogin.com/c/`.

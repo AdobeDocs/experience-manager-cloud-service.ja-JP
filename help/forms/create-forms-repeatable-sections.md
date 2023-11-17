@@ -3,10 +3,10 @@ title: アダプティブフォームのコアコンポーネントで繰り返�
 description: アダプティブフォームで繰り返し可能なセクションまたはフィールドを作成する方法を説明します。
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 96%
+source-wordcount: '1357'
+ht-degree: 93%
 
 ---
 
@@ -139,7 +139,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
-> パネルのすべてのインスタンスがアダプティブフォームから削除されているとき、削除されたパネルのインスタンスを 1 つ追加するには、_panelName 構文を使用してパネルのインスタンスマネージャをキャプチャし、インスタンスマネージャの addInstance API を使用して、削除されたインスタンスを追加します。例えば、_panelName.addInstance() です。削除されたパネルのインスタンスを 1 つ追加します。
+> パネルのすべてのインスタンスがアダプティブフォームから削除された場合、削除されたパネルのインスタンスを追加するには、 _panelName 構文を使用してパネルのインスタンスマネージャーを取り込み、削除されたインスタンスを追加するには、 addInstance API を使用します。 例えば、_panelName.addInstance() です。削除されたパネルのインスタンスを 1 つ追加します。
 
 <!--
 ![panel-repeatability-video](/help/adaptive-forms/assets/panel-repeatability-video.mp4)

@@ -1,11 +1,11 @@
 ---
 title: 画像のカラータグ
-description: Adobe Experience Manager Assets では、画像内の色を区別し、自動的にタグとして適用できます。 その後、これらのタグを使用して、画像を検索およびフィルタリングできます。
+description: Adobe Experience Manager Assetsを使用すると、画像内の色を区別し、自動的にタグとして適用できます。 その後、これらのタグを使用して、画像を検索およびフィルタリングできます。
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: 57d6b50ef5256bf6e8fce84100eed4690b77cb87
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1220'
-ht-degree: 74%
+ht-degree: 73%
 
 ---
 
@@ -169,7 +169,7 @@ DAM 内の既存の画像は、自動的にカラータグ付けされません�
 
 1. **[!UICONTROL Assets／ファイル]**&#x200B;に移動します。
 
-1. ドロップダウンリストから「**[!UICONTROL フィルター]**」を選択します。
+1. 選択 **[!UICONTROL フィルター]** 」をドロップダウンリストから選択します。
    ![アセットのフィルタリング](assets/filter-assets.png)
 
 1. 「[AEM Assets のカラー述語](#configure-search-predicate)」を選択します。

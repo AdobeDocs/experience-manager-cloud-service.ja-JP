@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 リリースのリリースノート。'
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: fe19e99baa921247f86542c6643c1faf837e7d91
 workflow-type: tm+mt
-source-wordcount: '1074'
-ht-degree: 94%
+source-wordcount: '1072'
+ht-degree: 87%
 
 ---
 
@@ -87,12 +87,12 @@ ht-degree: 94%
 * myAccount コンポーネントの強化機能
 * 「製品のレコメンデーション」コンポーネントで追加のページタイプ（ホームページ、買い物かご、注文確認）がサポートされるようになりました
 * **ウィッシュリスト**
-   * ログインした訪問者は、ウィッシュリストに製品を追加できます
-   * ウィッシュリストとその製品の管理は、myAccount を使用して行えます
-   * 「ウィッシュリストに追加」ボタンは、ポリシー（製品ティーザー、製品詳細など）を介して、コンポーネントレベルで有効／無効にできます
+   * ログインした訪問者は、wantlist に製品を追加できます
+   * ウォントリストとその製品の管理は、myAccount を通じて可能です
+   * 「Add to wantlist」ボタンは、ポリシー（製品ティーザー、製品の詳細など）を介して、コンポーネントレベルで有効/無効にできます
    * コアコンポーネントおよび AEM Venia ストアフロントで使用できます。
 
-![ウィッシュリスト](/help/assets/CIF/wishlist.png)
+<!-- Image was not found during PR validation despite correct path ![Wishlist](/help/assets/CIF/wantlist.png) -->
 
 ## Cloud Manager {#cloud-manager}
 
@@ -122,7 +122,7 @@ AEM as a Cloud Service 2022.01.0 における Cloud Manager のリリース日�
 
 ### 新機能 {#what-is-new-ctt}
 
-* コンテンツの検証 - コンテンツ転送ツールで抽出されたすべてのコンテンツがターゲットインスタンスに正常に取り込まれたかどうかをユーザーが確実に判断できます。この機能を使用するには、 `System Console` ソースAEM環境の 詳しくは、[コンテンツ転送の検証 - はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=ja#getting-started)を参照してください。
+* コンテンツの検証 — コンテンツ転送ツールで抽出されたすべてのコンテンツがターゲットインスタンスに正常に取り込まれたかどうかを確実に判断できます。 この機能を使用するには、 `System Console` ソースAEM環境の 詳しくは、[コンテンツ転送の検証 - はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=ja#getting-started)を参照してください。
 
 ### バグの修正 {#bug-fixes-ctt}
 

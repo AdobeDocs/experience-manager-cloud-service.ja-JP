@@ -2,10 +2,10 @@
 title: コンポーネントの JSON 書き出しの有効化
 description: モデラーフレームワークに基づいてコンテンツの JSON 書き出しを生成するように、コンポーネントを適応させることができます。
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 97%
+source-wordcount: '462'
+ht-degree: 91%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 JSON 書き出しは、[Sling Model](https://sling.apache.org/documentation/bundles/models.html) と [Sling Model Exporter](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) フレームワーク（それ自体が [Jackson 注釈](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)に依存）に基づいています。
 
-つまり、JSON を書き出す必要がある場合、コンポーネントには Sling モデルが必要です。したがって、次の 2 つの手順に従って、任意のコンポーネントで JSON 書き出しを有効にします。
+つまり、JSON を書き出す必要がある場合、コンポーネントに Sling モデルが必要です。 したがって、次の 2 つの手順に従って、任意のコンポーネントで JSON 書き出しを有効にします。
 
 * [コンポーネントに Sling Model を定義する](#define-a-sling-model-for-the-component)
 * [Sling Model インターフェイスに注釈を付ける](#annotate-the-sling-model-interface)
@@ -66,7 +66,7 @@ JSON エクスポーターフレームワークで認識されるようにする
 
 対応する Sling Model インターフェイス（`MyComponent`）には、[Jackson 注釈](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)を使用して注釈が付けられ、どのように書き出し（シリアル化）が行われるかが定義されます。
 
-シリアル化されるメソッドを定義するためには、モデルインターフェイスに適切に注釈を付ける必要があります。デフォルトでは、getter の通常の命名規則に準拠するすべてのメソッドがシリアル化され、JSON プロパティ名が getter 名から派生されます。これを回避または上書きするには、`@JsonIgnore` または `@JsonProperty` を使用して JSON プロパティの名前を変更します。
+モデルインターフェイスに適切に注釈を付け、シリアル化するメソッドを定義する必要があります。 デフォルトでは、getter の通常の命名規則に準拠するすべてのメソッドがシリアル化され、JSON プロパティ名が getter 名から派生されます。これを回避または上書きするには、`@JsonIgnore` または `@JsonProperty` を使用して JSON プロパティの名前を変更します。
 
 ## 例 {#example}
 
@@ -75,8 +75,6 @@ JSON エクスポーターフレームワークで認識されるようにする
 例えば、画像コアコンポーネントの Sling Model 実装とその注釈されたインターフェイスを参照してください。
 
 ## 関連ドキュメント {#related-documentation}
-
-詳しくは、以下を参照してください。
 
 * [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)
 * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

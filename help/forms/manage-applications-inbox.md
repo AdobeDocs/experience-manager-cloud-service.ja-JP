@@ -5,10 +5,10 @@ uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 83%
+source-wordcount: '1149'
+ht-degree: 82%
 
 ---
 
@@ -95,7 +95,7 @@ Formsワークフロートリガーが担当者または担当者グループの
 
 アクションツールバーは、タスクの使用可能なすべてのオプションを表示します。「保存」、「リセット」、「委任」はデフォルトのアクションですが、他の使用可能なアクションは [タスクを割り当てステップ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=ja#extending-aem). 上記の例では、ワークフローに承認と拒否が設定されています。
 
-タスクに対してアクションを実行すると、ワークフローの次の段階に進みます。
+タスクを実行すると、ワークフローがさらに進みます。
 
 ### 完了したタスクの表示 {#view-completed-tasks}
 

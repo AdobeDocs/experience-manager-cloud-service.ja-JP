@@ -2,10 +2,10 @@
 title: Adobe Content Package Maven Plugin
 description: Content Package Maven Plugin を使用した AEM アプリケーションのデプロイについて説明します
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1838'
-ht-degree: 100%
+source-wordcount: '1832'
+ht-degree: 97%
 
 ---
 
@@ -26,6 +26,7 @@ ht-degree: 100%
 >[!NOTE]
 >
 >パッケージの&#x200B;**作成**&#x200B;は、[Apache Jackrabbit FileVault Package Maven プラグイン](https://jackrabbit.apache.org/filevault-package-maven-plugin/)で管理されるようになりました。
+>
 >* `content-package-maven-plugin` は、リリース 1.0.2 以降、パッケージ化をサポートしなくなりました。
 >* この記事では、構築済みパッケージの AEM への&#x200B;**デプロイメント**&#x200B;を、Adobe Content Package Maven プラグインで実行する方法について説明します。
 
@@ -35,7 +36,7 @@ AEM as a Cloud Service は、最新の AEM プロジェクトアーキタイプ�
 
 >[!TIP]
 >
->詳しくは、AEM as a Cloud Service のドキュメントの [AEM プロジェクトの構造](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ja)の記事および [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)のドキュメントを参照してください。どちらも AEM 6.5 に完全に対応しています。
+>詳しくは、 [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ja) AEMas a Cloud Serviceドキュメントの記事と [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) ドキュメント。 どちらも AEM 6.5 に完全に対応しています。
 
 ## Content Package Maven Plugin の入手 {#obtaining-the-content-package-maven-plugin}
 
@@ -267,4 +268,4 @@ uninstall ゴールのすべてのパラメーターについては、[共通パ
 
 >[!TIP]
 >
->詳しくは、AEM as a Cloud Service のドキュメントの [AEM プロジェクトの構造](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ja)の記事および [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)のドキュメントを参照してください。どちらも AEM 6.5 に完全に対応しています。
+>詳しくは、 [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ja) AEMas a Cloud Serviceドキュメントの記事と [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) ドキュメント。 どちらも AEM 6.5 に完全に対応しています。

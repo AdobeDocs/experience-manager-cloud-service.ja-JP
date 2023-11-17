@@ -2,10 +2,10 @@
 title: ログへのアクセスと管理
 description: AEM as a Cloud Service での開発プロセスを支援するために、ログにアクセスして管理する方法について説明します。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 7272f6ebd1b9c4e67985cba0221d8cafbeb1560a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '345'
-ht-degree: 81%
+ht-degree: 76%
 
 ---
 
@@ -36,7 +36,7 @@ AEM as a Cloud Service での開発プロセスを支援するために、ログ
 
    ![その他の公開地域についてはログをダウンロード](assets/download-publish-region-logs.png)
 
-1. サービスを選択したら、取得するログの隣にあるダウンロードアイコンをクリックします。
+1. サービスを選択したら、取得するログの横にあるダウンロードアイコンをクリックします。
 
 **環境**&#x200B;ページからもログにアクセスできます。
 

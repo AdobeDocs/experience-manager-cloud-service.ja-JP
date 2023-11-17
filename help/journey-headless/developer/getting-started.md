@@ -2,9 +2,9 @@
 title: AEM Headless as a Cloud Service - はじめに
 description: ここでは、AEM ヘッドレスデベロッパージャーニーのこの部分では、AEM ヘッドレスの前提条件について説明します。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3095'
+source-wordcount: '3093'
 ht-degree: 94%
 
 ---
@@ -123,7 +123,7 @@ SPA エディターを使用すると、SPA で AEM のコンテンツを使用�
 
 ## 要件と前提条件 {#requirements-prerequisites}
 
-ヘッドレス AEM プロジェクトを開始するには、いくつかの要件があります。
+ヘッドレスAEMプロジェクトを開始する前に、いくつかの要件があります。
 
 ### 知識 {#knowledge}
 

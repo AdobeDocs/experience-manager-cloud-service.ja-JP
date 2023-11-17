@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の 2020.8.0 リリースのリリースノート。'
 description: "[!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 のリリースノート。"
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 87%
+source-wordcount: '1036'
+ht-degree: 90%
 
 ---
 
@@ -76,13 +76,13 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 ### 新機能 {#what-is-new-cloud-manager}
 
-* コンテンツ監査は、Cloud Manager Sites 実稼動パイプラインで有効な機能です。Sites を使用するプログラムの実稼働パイプライン設定に、**コンテンツ監査**&#x200B;という名前の 3 番目のタブが含まれるようになりました。実稼動パイプラインが実行されるたびに、カスタム機能テストの後に新しいコンテンツ監査手順がパイプラインに含まれます。このテストでは、パフォーマンス、SEO（検索エンジン最適化）、アクセシビリティ、ベストプラクティス、PWA（プログレッシブ Web アプリ）などの数のディメンションと比較してサイトを評価します。
+* コンテンツ監査は、Cloud Manager Sites 実稼動パイプラインで有効な機能です。Sites を使用するプログラムの実稼働パイプライン設定に、**コンテンツ監査**&#x200B;という名前の 3 番目のタブが含まれるようになりました。実稼動パイプラインが実行されるたびに、カスタム機能テストの後に新しいコンテンツ監査手順がパイプラインに含まれます。この手順は、パフォーマンス、SEO（検索エンジン最適化）、アクセシビリティ、ベストプラクティス、PWA（プログレッシブ Web アプリ）などの複数のディメンションに対してサイトを評価します。
 
 
   >[!NOTE]
   >「コンテンツ監査」は、「エクスペリエンス監査」に名称が変更されました。
 
-  詳しくは、 [エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md) を参照してください。
+  詳しくは、[エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md)を参照してください。
 
 * アセットプログラムで新しく作成した環境は、スマートコンテンツサービスを使用して自動的に設定されるようになりました。
 
@@ -116,7 +116,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * 「コンテンツ監査」タブに、パブリッシュドメインではなくオーサードメインを使用したベース URL が誤って表示されます。
 
-* コンテンツ監査ステップをアクティブ化するには、ユーザーがパイプラインを編集し、必要に応じてページを追加する必要があります。 ページが追加されない場合は、ホームページが監査されます。
+* コンテンツ監査ステップをアクティブにするには、ユーザーがパイプラインを編集し、必要に応じてページを追加する必要があります。ページが追加されない場合は、トップページが監査されます。
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 

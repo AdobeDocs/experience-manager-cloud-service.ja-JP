@@ -2,10 +2,10 @@
 title: ContextHub UI モジュールタイプのサンプル
 description: ContextHub には、ソリューションで使用できるいくつかのサンプル UI モジュールが用意されています
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1126'
-ht-degree: 100%
+source-wordcount: '1124'
+ht-degree: 99%
 
 ---
 
@@ -170,7 +170,7 @@ UI モジュールのソースは `/libs/granite/contexthub/components/modules/s
 
 ### 設定 {#configuration-5}
 
-`contexthub.screen-orientation` UI モジュールのインスタンスには、詳細設定用の値は必要ありません。次の JSON テキストは、モジュールのデフォルトの設定を表しています。`clickable` プロパティは、デフォルトでは `false` です。デフォルトの設定を上書きして `clickable` を `true` に設定した場合、このモジュールをクリックするとポップアップが表示され、向きを選択できます。
+`contexthub.screen-orientation` UI モジュールのインスタンスには、詳細設定用の値は必要ありません。次の JSON テキストは、モジュールのデフォルトの設定を表しています。The `clickable` プロパティは次のとおりです。 `false` デフォルトでは。 デフォルトの設定を上書きして `clickable` を `true` に設定した場合、このモジュールをクリックするとポップアップが表示され、向きを選択できます。
 
 ```javascript
 {
