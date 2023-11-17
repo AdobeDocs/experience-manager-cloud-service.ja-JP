@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの基本を学ぶ
 description: コンテンツ転送ツールの使用を開始する方法を説明します。
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 90%
+source-wordcount: '1424'
+ht-degree: 87%
 
 ---
 
@@ -74,7 +74,7 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 >abstract="移行セットを作成して管理し、抽出キーをコピーする方法を説明します。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ja#migration" text="チュートリアル - コンテンツ転送ツールの使用"
 
-<!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
+<!-- Contextualhelp id "aemcloud_ctt_extraction_setup" must be added here -->
 
 1. Cloud Acceleration Manager(CAM) にログインし、以前に作成した CAM プロジェクトをクリックして、AEM as a Cloud Serviceへの移行に対する準備状況を評価します。 CAM プロジェクトをまだ作成していない場合は、「CAM でのプロジェクトの作成と管理」を参照してください。
 
@@ -111,7 +111,7 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_populate_migrationset"
 >title="移行セットの追加"
->abstract="移行セットを作成したら、AEM as a Cloud Service 環境に移行する必要があるソースインスタンスのコンテンツを入力する必要があります。これを行うには、移行元のインスタンスにコンテンツ転送ツールをインストールする必要があります。"
+>abstract="移行セットを作成した後、AEMas a Cloud Service環境に移動する必要があるソースインスタンスのコンテンツを、移行セットに入力する必要があります。 これをおこなうには、コンテンツ転送ツールをソースインスタンスにインストールする必要があります。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=ja" text="コンテンツの抽出"
 
 Cloud Acceleration Manager で作成した移行セットを入力するには、最新バージョンのコンテンツ転送ツールを移行元の Adobe Experience Manager（AEM）インスタンスにインストールする必要があります。移行セットの入力方法については、この節を参照してください。
