@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 16aa0241dd954b7f66523d746827d81b956578bd
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 97%
+source-wordcount: '1379'
+ht-degree: 95%
 
 ---
 
@@ -15,20 +15,14 @@ ht-degree: 97%
 
 ## リリース日 {#release-date}
 
-[!DNL Workfront for Experience Manager enhanced connector] の最新バージョン 1.9.14 のリリース日は 2023年10月13日（PT）です。
+[!DNL Workfront for Experience Manager enhanced connector] の最新バージョン 1.9.15 のリリース日は 2023年17月11日（PT）です。
 
 ## リリースのハイライト {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] の最新バージョンには、次のバグ修正が含まれています。
 
-* 詳細設定でイベント購読が無効になっている場合、「**ドキュメント更新イベントに購読して AEM のアセットメタデータを更新**」、「**プロジェクト完了時にすべてのプロジェクトアセットを Brand Portal に公開**」および「**コメント同期を有効にする**」からオプションを選択できます。
-
-* Workfront でプレビューする際に、Experience Manager に保存されたアセットの一部が適切にレンダリングされません。
-
-* Workfront との Experience Manager 接続を再設定する際に、コメント同期の更新、削除、ドキュメントの更新などのイベント購読は正常に作成されません。
-
-* リンクされたフォルダーの作成、更新、リンクされたフォルダーの有効化、コメントの同期の有効化と無効化、コネクタでの設定の保存に関する API の大幅なパフォーマンス向上。
-
+* AEMフォルダーのリストを表示している間、ダイアログの読み込みに 1 分以上かかります。
+* 認証済み [!DNL Workfront] ユーザーは、常に認証失敗エラーログを受け取っています。
 
 >[!NOTE]
 >
@@ -37,7 +31,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->アドビでは [!DNL Workfront for Experience Manager enhanced connector] の[最新バージョン 1.9.14 へのアップグレード](/help/assets/workfront-connector-install.md)をお勧めします。
+>アドビでは [ の](/help/assets/workfront-connector-install.md)最新バージョン 1.9.15 へのアップグレード[!DNL Workfront for Experience Manager enhanced connector]をお勧めします。
 
 ## 既知の問題 {#known-issues}
 
@@ -46,6 +40,16 @@ ht-degree: 97%
 * 従来のWorkfrontエクスペリエンスを使用している場合、 **[!UICONTROL 送信先]** オプションは **[!UICONTROL その他]** 」ドロップダウンリストでは、「Experience Manager」内でターゲットの宛先を選択できません。 「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストを使用する場合、「**[!UICONTROL 送信先]**」オプションは正常に機能します。新しい Workfront エクスペリエンスの「**[!UICONTROL 詳細]**」ドロップダウンリストと「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストでは、「**[!UICONTROL 送信先]**」オプションは正常に機能します。
 
 ## 以前のリリース {#previous-releases}
+
+### 2023年10月リリース {#october-2023-release}
+
+* 詳細設定でイベント購読が無効になっている場合、「**ドキュメント更新イベントに購読して AEM のアセットメタデータを更新**」、「**プロジェクト完了時にすべてのプロジェクトアセットを Brand Portal に公開**」および「**コメント同期を有効にする**」からオプションを選択できます。
+
+* Workfront でプレビューする際に、Experience Manager に保存されたアセットの一部が適切にレンダリングされません。
+
+* Workfront との Experience Manager 接続を再設定する際に、コメント同期の更新、削除、ドキュメントの更新などのイベント購読は正常に作成されません。
+
+* リンクされたフォルダーの作成、更新、リンクされたフォルダーの有効化、コメントの同期の有効化と無効化、コネクタでの設定の保存に関する API の大幅なパフォーマンス向上。
 
 ### 2023年9月リリース {#september-2023-release}
 
