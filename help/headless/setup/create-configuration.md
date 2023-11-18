@@ -2,10 +2,10 @@
 title: 設定の作成 - ヘッドレスセットアップ
 description: AEM as a Cloud Service でヘッドレスを使い始めるための最初の手順として設定を作成します。
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -39,7 +39,7 @@ AEM のヘッドレスなコンテンツ管理に関しては、AEM 内でコン
 
 1. 選択 **作成**
 
-必要に応じて、複数の設定を作成できます。設定は入れ子にすることもできます。
+必要に応じて、複数の設定を作成できます。 設定は入れ子にすることもできます。
 
 >[!NOTE]
 >

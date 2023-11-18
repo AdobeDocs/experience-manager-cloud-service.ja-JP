@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスでの AEM および AMS での AEM との重要な違いについて説明します。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2732'
-ht-degree: 92%
+source-wordcount: '2733'
+ht-degree: 91%
 
 ---
 
@@ -79,7 +79,7 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 ネイティブバイナリおよびライブラリを、クラウド環境にデプロイしたり、インストールしたりしないでください。
 
-また、コード実行時にネイティブバイナリやネイティブ Java 拡張機能（JNI など）をダウンロードしようとしないでください。
+また、コードは、実行時にネイティブバイナリやネイティブ Java 拡張（JNI など）をダウンロードしようとしないでください。
 
 ## AEM as a Cloud Service を使用したストリーミングバイナリがない {#no-streaming-binaries}
 

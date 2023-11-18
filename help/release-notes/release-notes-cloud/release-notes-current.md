@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: afb3de515336d3d13b392f8fcc4d263f4f063689
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '917'
 ht-degree: 29%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 29%
 
 ### アセットビューの新機能 {#assets-view-features}
 
-* **OneDrive データソースからのアセットの一括読み込み**：管理者は、次の操作を実行できるようになりました。 [多数のアセットを OneDrive からAEM Assetsに読み込む](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). 一括インポートでサポートされるデータソースの更新リストには、Azure、AWS、Google Cloud、Dropbox、OneDrive が含まれます。
+* **OneDrive データソースからのアセットの一括読み込み**：管理者が [多数のアセットを OneDrive からAEM Assetsに読み込む](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). 一括インポートでサポートされるデータソースの更新リストには、Azure、AWS、Google Cloud、Dropbox、OneDrive が含まれます。
 
   ![フォルダーにメタデータフォームを割り当て](/help/assets/assets/bulk-import-source-details-onedrive.png)
 

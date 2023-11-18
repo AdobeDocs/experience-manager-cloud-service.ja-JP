@@ -2,10 +2,10 @@
 title: ページの公開
 description: AEMの様々なメカニズムを使用して、ページを公開および非公開にする方法を説明します。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1801'
-ht-degree: 92%
+source-wordcount: '1805'
+ht-degree: 91%
 
 ---
 
@@ -66,7 +66,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
    * 公開する参照がない場合、ページが直接公開されます。
    * 公開が必要な参照がページに含まれている場合は、それらのリストが&#x200B;**公開**&#x200B;ウィザードに表示され、ウィザードで次のいずれかを実行できます。
-      * ページと一緒に公開するアセットやタグなどを指定し、「**公開**」を使用してプロセスを完了します。
+      * ページと一緒に公開するアセットやタグなどを指定し、 **公開** をクリックしてプロセスを完了します。
       * 「**キャンセル**」を使用してアクションを中止します。
 
    ![ページでの参照の公開](/help/sites-cloud/authoring/assets/publishing-references.png)

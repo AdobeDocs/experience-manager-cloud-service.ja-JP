@@ -2,10 +2,10 @@
 title: オファーの作成と管理（オファーコンソール）
 description: アクティビティエクスペリエンスで使用するオファーを作成するには、オファーコンソールを使用します。
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1351'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 

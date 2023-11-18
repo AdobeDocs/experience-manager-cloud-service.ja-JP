@@ -4,10 +4,10 @@ description: コンソールやエディターから、ヘッドレスコンテ�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2531'
-ht-degree: 51%
+ht-degree: 50%
 
 ---
 
@@ -226,10 +226,10 @@ ht-degree: 51%
 
 1. The **新しいコンテンツフラグメント** ダイアログが開きます。ここから、次の項目を指定できます。
 
-   * **場所** - 現在の場所がオートコンプリートされますが、必要に応じて別の場所を選択できます
+   * **場所**  — 現在の場所で自動入力されますが、必要に応じて別の場所を選択できます
    * **コンテンツフラグメントモデル** - ドロップダウンリストからフラグメントの基礎として使用するモデルを選択します
    * **タイトル**
-   * **名前** - **タイトル**&#x200B;に基づいてオートコンプリートされますが、必要に応じて編集できます
+   * **名前**  — これは、 **タイトル**&#x200B;必要に応じて編集できます。
    * **説明**
 
    ![新しいコンテンツフラグメントダイアログ](assets/cf-managing-new-cf-dialog.png)

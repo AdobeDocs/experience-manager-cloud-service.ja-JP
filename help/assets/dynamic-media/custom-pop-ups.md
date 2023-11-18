@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -141,9 +141,10 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
    * クイックビューに含まれる追加の変数をマッピングします。
 
       * さらに変数を追加する場合は、`loadQuickView(sku,*var1*,*var2*)` 呼び出しを更新します。
+
    * ビューア外でページにシンプルな `loadQuickView` () 関数を作成します。
 
-      例えば、以下の場合は、ブラウザーのコンソールに SKU の値が書き込まれます。
+     例えば、以下の場合は、ブラウザーのコンソールに SKU の値が書き込まれます。
 
    ```xml {.line-numbers}
    function loadQuickView(sku){
@@ -153,11 +154,9 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
 
    * Web サーバーにテスト HTML ページをアップロードし、開きます。
 
-      クイックビューの変数がマッピングされます。関数の呼び出しが適切に行われています。また、変数値がブラウザーコンソールに書き込まれます。これは、提供されたサンプル関数を使用して行われます。
+     クイックビューの変数がマッピングされます。関数の呼び出しが適切に行われています。また、変数値がブラウザーコンソールに書き込まれます。これは、提供されたサンプル関数を使用して行われます。
 
-
-
-1. これで、関数を使用してクイックビューでシンプルなポップアップを起動できるようになりました。以下の例では、ポップアップに `DIV` を使用しています。
+1. これで、関数を使用してクイックビューでシンプルなポップアップを起動できるようになりました。次の例では、 `DIV` ポップアップ用。
 1. ポップアップの `DIV` を以下のようなスタイルにします。必要に応じて、スタイル設定を追加します。
 
    ```xml {.line-numbers}
@@ -189,7 +188,7 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
    <script type="text/javascript">
        function loadQuickView(sku){
            document.getElementById("txtSku").setAttribute("value",sku); // write sku value
-           document.getElementById("quickview_div").style.display="block"; // show popup
+           document.getElementById("quickview_div").style.display="block"; // show pop-up
        }
    </script>
    ```

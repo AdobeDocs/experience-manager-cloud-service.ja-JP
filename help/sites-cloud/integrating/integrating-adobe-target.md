@@ -4,10 +4,10 @@ description: タッチ UI と Launch を使用して、Adobe TargetをAEM as a C
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 

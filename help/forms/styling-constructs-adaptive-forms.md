@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2316'
+source-wordcount: '2314'
 ht-degree: 97%
 
 ---
@@ -53,7 +53,7 @@ Web ページのテーマは、ブートストラップに基づき、以下の 
 
 ## コンポーネントスタイルの変更 {#changing-component-style}
 
-要素の外観、レイアウト、配置、可視性を変更できます。そのためには、カスタムの .css ファイルを作成または更新し、この記事で説明するスタイル構成をそのファイルに含める必要があります。
+要素の外観、レイアウト、配置、表示設定を変更できます。 そのためには、カスタムの .css ファイルを作成または更新し、この記事で説明するスタイル構成をそのファイルに含める必要があります。
 
 アダプティブフォームにスタイルを適用するには、編集用としてアダプティブフォームを開き、アダプティブフォームコンテナのプロパティを開いて、「基本」タブでカスタム .css ファイルのパスを指定します。アダプティブフォームのデフォルトのスタイル構成は、カスタムの .css ファイル内の構成によって上書きされます。
 

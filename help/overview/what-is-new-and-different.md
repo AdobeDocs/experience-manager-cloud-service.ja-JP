@@ -2,10 +2,10 @@
 title: 相違点と新機能 - Adobe Experience Manager as a Cloud Service
 description: 相違点と新機能 - Adobe Experience Manager（AEM）as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1889'
-ht-degree: 94%
+source-wordcount: '1891'
+ht-degree: 93%
 
 ---
 
@@ -182,7 +182,7 @@ OSGi バンドルとその関連設定を管理する web コンソール（以�
 
 コードとコンテンツが明確に分離されているので、開発者は、特定のプロセスを使用して、デプロイメントの一環としてコンテンツを更新できます。可変コンテンツの典型的なユースケースは次のとおりです。
 
-* 顧客プロジェクトの一部となる標準的な&#x200B;*デフォルト*&#x200B;コンテンツ（フォルダー、テンプレート、ワークフローなど）
+* 標準 *デフォルト* 顧客プロジェクトの一部となるコンテンツ（フォルダー、テンプレート、ワークフローなど）
 
 * 検索インデックスの定義
 

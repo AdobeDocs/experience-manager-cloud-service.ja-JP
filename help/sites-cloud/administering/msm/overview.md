@@ -4,10 +4,10 @@ description: AEM の強力なライブコピーとマルチサイトマネージ
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2702'
-ht-degree: 94%
+source-wordcount: '2698'
+ht-degree: 92%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
    * コンテンツを 1 回作成し、
    * （[ライブコピー](#live-copies)を介して）このコンテンツを、同じサイトまたは他のサイトの他の領域で再利用します。
 * その後、MSM は次の目的でソースコンテンツとライブコピーの間のライブ関係を維持します。
-   * ソースコンテンツに変更を加えると、ソースコピーとライブコピーが同期されます。
+   * ソースコンテンツを変更すると、ソースとライブコピーが同期されます。
    * 個々のサブページやコンポーネントのライブ関係を解除することで、ライブコピーを微調整できます。
 
 このページでは、MSM でのコンテンツの再利用の概要を説明します。以下のページでは、関連する問題について詳しく説明します。
@@ -189,7 +189,7 @@ MSM のライブコピーは、特定のサイトコンテンツのコピーで�
 
 * `/content/wknd/language-masters/en` の下のコンテンツがソースです。
 * `/content/wknd/language-masters/en` の下のコンテンツが `/content/wknd/us/en/` および `/content/wknd/ca/en` の各ノードの下にコピーされます。これらがライブコピーです。
-* 作成者は、`/content/wknd/language-masters/en` の下のページを変更します。
+* 作成者が以下のページを変更する `/content/wknd/language-masters/en`.
 * トリガーされると、MSM はこれらの変更をライブコピーに同期します。
 
 ### ライブコピー - 構成 {#live-copies-composition}
@@ -320,10 +320,10 @@ MSM を使用してコンテンツを再利用し、ライブコピーに対す�
 1. 使用するロールアウト設定を決定します。
 
    1. MSM [複数のロールアウト設定をインストールします。](live-copy-sync-config.md#installed-rollout-configurations) を使用すると、複数の使用例を満たすことができます。
-   1. 必要に応じて、[ロールアウト設定を作成](live-copy-sync-config.md#creating-a-rollout-configuration)できます。
+   1. 必要に応じて、次の操作が可能です。 [ロールアウト設定の作成](live-copy-sync-config.md#creating-a-rollout-configuration) 必要に応じて。
 
 1. [使用するロールアウト設定を指定する](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)場所を決定し、必要に応じて設定を行います。
-1. 必要に応じて、ライブコピーのソースコンテンツを識別する[ブループリント設定を作成](creating-live-copies.md#creating-a-blueprint-configuration)できます。
+1. 必要に応じて、 [ブループリント設定を作成](creating-live-copies.md#creating-a-blueprint-configuration) は、ライブコピーのソースコンテンツを識別します。
 1. [ライブコピーを作成します。](creating-live-copies.md#creating-a-live-copy)
 1. 必要に応じてソースコンテンツを変更します。組織で確立されている通常のコンテンツのレビューと承認プロセスを採用してください。
 1. ブループリントを[ロールアウト](creating-live-copies.md#rolling-out-a-blueprint)するか、変更内容と[ライブコピーを同期](creating-live-copies.md#synchronizing-a-live-copy)します。

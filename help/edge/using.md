@@ -3,10 +3,10 @@ title: Edge 配信サービスの使用
 description: Edge 配信サービスの使用 (EDS)
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
-source-git-commit: 34965338015df868778a95582524df08a7c5f136
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 99%
+source-wordcount: '617'
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ Edge Delivery では GitHub を利用しているので、ユーザーは自分�
 
 ## Sidekick の使用 {#using-sidekick}
 
-AEM Sidekick には、コンテキストに応じたオプションを備えたツールバーがあり、これを使用して、コンテンツの編集、プレビューおよび公開を簡単に行うことができます。AEM Sidekick 拡張機能の[インストール](https://www.hlx.live/docs/sidekick-extension)後、プロジェクト環境でまたはコンテンツの編集時（例えば、Google Docs 内）に使用できます。環境に応じて、プレビュー、リロード、編集および公開など、いくつかのアクションを使用できます。サイドキックを使用する場合、プレビュー環境から実稼動環境（その逆も同様）に環境をを切り替えることもできます。
+AEM Sidekick には、コンテキストに応じたオプションを備えたツールバーがあり、これを使用して、コンテンツの編集、プレビューおよび公開を簡単に行うことができます。AEM Sidekick 拡張機能の[インストール](https://www.hlx.live/docs/sidekick-extension)後、プロジェクト環境でまたはコンテンツの編集時（例えば、Google Docs 内）に使用できます。環境に応じて、プレビュー、リロード、編集および公開など、いくつかのアクションを使用できます。プレビューから実稼動に移行するサイドキックを使用する場合や、逆に使用する場合に環境を切り替えることもできます。
 
 **公開する**&#x200B;には、プレビューページでサイドキックを開き、公開アクションを使用します。「公開」をクリックした後、ページの現在のプレビューバージョンが公開され、実稼動環境で使用できるようになります。
 

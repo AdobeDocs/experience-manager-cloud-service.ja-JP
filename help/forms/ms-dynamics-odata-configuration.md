@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 94%
+source-wordcount: '985'
+ht-degree: 92%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 94%
 
 * [!DNL Microsoft Dynamics] サーバーに対してデータに関するクエリを実行し、アダプティブフォームに事前入力する
 * アダプティブフォームの送信時に、データを [!DNL Microsoft Dynamics] に書き込む
-* フォームデータモデル内で定義されているカスタムエンティティを使用して、データを [!DNL Microsoft Dynamics] に書き込む（またはその逆の動作）
+* データを書き込む [!DNL Microsoft Dynamics] フォームデータモデルで定義されたカスタムエンティティを使用し、逆に
 
 <!--[!DNL Experience Manager Forms] add-on package also includes reference OData configuration that you can use to quickly integrate [!DNL Microsoft Dynamics] with [!DNL Experience Manager Forms].-->
 

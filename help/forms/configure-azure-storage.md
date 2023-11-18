@@ -2,10 +2,10 @@
 title: Azure ストレージの設定方法
 description: フォームを Azure ストレージサーバーと統合する方法について説明します。
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 100%
+source-wordcount: '581'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 [[!DNL Experience Manager Forms] データ統合](data-integration.md)では、フォームを [!DNL Azure] ストレージサービスと統合するための [!DNL Azure] ストレージ設定を提供します。フォームデータモデルを使用して、[!DNL Azure] サーバーと連携するアダプティブフォームを作成することにより、ビジネスワークフローを使用できるようになります。次に例を示します。
 
 * アダプティブフォームの送信時に、データを [!DNL Azure] に書き込む。
-* フォームデータモデル内で定義されているカスタムエンティティを使用して、データを [!DNL Azure] に書き込む（またはその逆の動作）。
+* データを書き込む [!DNL Azure] フォームデータモデルで定義されたカスタムエンティティを使用し、逆に。
 * [!DNL Azure] サーバーに対してデータに関するクエリを実行し、アダプティブフォームに事前入力する。
 * [!DNL Azure] サーバーからデータを読み取る。
 

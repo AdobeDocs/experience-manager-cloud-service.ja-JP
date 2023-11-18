@@ -2,10 +2,10 @@
 title: コンテンツモデリングの基本について
 description: コンテンツフラグメントを使用したヘッドレス CMS のコンテンツモデリングの基本について説明します。
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 94%
+source-wordcount: '900'
+ht-degree: 93%
 
 ---
 
@@ -105,7 +105,7 @@ AEM では、コンテンツをモデル化するための次のデータタイ�
 
 >[!NOTE]
 >
->また、テキストブロック内でリンクを使用してアドホック参照を作成することもできます。
+>また、テキストブロック内のリンクを使用して、即興の参照を作成することもできます。
 
 ## 構造レベル（ネストされたフラグメント） {#levels-of-structure-nested-fragments}
 

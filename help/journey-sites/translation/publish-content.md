@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1329'
-ht-degree: 83%
+source-wordcount: '1326'
+ht-degree: 82%
 
 ---
 
@@ -157,7 +157,7 @@ AEM Sites 翻訳ジャーニーの以前のドキュメント（[コンテンツ
 
 * AEM のコンテンツ管理機能を基本的に理解する
 * AEM の翻訳機能とその Sites コンテンツとの関連を理解する
-* 独自のコンテンツの翻訳を開始できる
+* 自分のコンテンツを翻訳してはいけません。
 
 これで、AEM で独自のコンテンツを翻訳する準備が整いました。ただし、AEM は強力なツールであり、その他にも使用可能なオプションが多数あります。このジャーニーで説明した機能について詳しくは、[その他のリソース](#additional-resources)の節で紹介しているその他のリソースを参照してください。
 

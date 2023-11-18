@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 リリースのリリースノート。'
 description: 「[!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 のリリースノート」
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 90%
@@ -54,7 +54,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 * PDF レンディションには、InDesign テンプレートの最後のページのみが含まれます。（CQ-4317305）
 * ピッカーが複雑なメタデータスキーマに含まれている場合、タグピッカーが開くのに時間がかかります。（CQ-4316426）
 * 既存のファイル名と同じファイル名を持つアセットをアップロードする場合、名前の競合ダイアログが表示されず、バージョンを作成するように求められます。（CQ-4315424）
-* フォルダーメタデータのプロパティは、フォルダーのプロパティページのポップアップメニューから設定および保存できます。選択内容はリポジトリに保存されている間、フォルダーメタデータプロパティを再度開いても表示されません。（CQ-4314429）
+* フォルダーメタデータプロパティは、フォルダーのプロパティページのポップアップメニューで設定および保存できます。 選択内容はリポジトリに保存されている間、フォルダーメタデータプロパティを再度開いても表示されません。（CQ-4314429）
 * スペースや特殊文字を含むファイル名を持つアセットは、ブラウザーを使用してアップロードされます。（CQ-4318381）
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -73,9 +73,9 @@ AEM Forms は、長年にわたって、優れたオンボーディングと登�
 
 * 製品の詳細コンポーネントを任意のコンテンツページで使用および設定できるようになりました。
 
-* 最新の CIF コアコンポーネントバージョン v1.9.0 を含む CIF Venia 参照サイト2021.03.25をリリースしました。詳しくは、 [CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) を参照してください。
+* 最新のCIFコアコンポーネントバージョン v1.9.0 を含むCIF Venia リファレンスサイト2021.03.25をリリースしました。詳しくは、 [CIF Venia リファレンスサイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) を参照してください。
 
-* CIF コアコンポーネント v1.9.0 がリリースされました。詳しくは、 [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) を参照してください。
+* CIF Core Components v1.9.0 がリリースされました。詳しくは、 [CIFコアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) を参照してください。
 
 
 ## Cloud Manager {#cloud-manager}
@@ -127,7 +127,7 @@ AEM as a Cloud Service 2021.3.0 の Cloud Manager のリリース日は 2021 年
 
 * 該当する設定がデプロイされていない場合でも、IP 許可リストの横に緑色の「アクティブ」ステータスが表示される場合がありました。
 
-* 既存のすべての実稼動パイプラインは、エクスペリエンス監査ステップで自動的に有効になります。
+* 既存のすべての実稼動パイプラインは、エクスペリエンス監査の手順で自動的に有効になります。
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 

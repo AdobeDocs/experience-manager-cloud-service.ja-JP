@@ -3,7 +3,7 @@ title: AEM FormsインスタンスでアダプティブFormsまたはPDF forms�
 description: アダプティブForms、PDF forms、テーマおよびその他のサポートアセットを、AEMインスタンスとの間で移行する方法について説明します。
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 94%
@@ -199,7 +199,7 @@ Complete the following steps to create copies of assets and letters:
 
    If you are copying and pasting the assets/letters at the same place, a suffix "-CopyXX" gets added to the existing name of the asset/letter. If no title existed for the copied asset/letter, the auto generated title field remains blank.
 
-1. If required, edit the Title and Name with which you want to save the copy of the asset/letter.
+1. If necessary, edit the Title and Name with which you want to save the copy of the asset/letter.
 1. Tap **[!UICONTROL Paste]**. New copies of the copied assets are created.
 
 ## Search {#search-forms}

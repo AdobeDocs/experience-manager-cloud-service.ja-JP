@@ -2,10 +2,10 @@
 title: ContextHub UI モジュールタイプのサンプル
 description: ContextHub には、ソリューションで使用できるいくつかのサンプル UI モジュールが用意されています
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1124'
-ht-degree: 99%
+ht-degree: 94%
 
 ---
 
@@ -170,7 +170,7 @@ UI モジュールのソースは `/libs/granite/contexthub/components/modules/s
 
 ### 設定 {#configuration-5}
 
-`contexthub.screen-orientation` UI モジュールのインスタンスには、詳細設定用の値は必要ありません。次の JSON テキストは、モジュールのデフォルトの設定を表しています。The `clickable` プロパティは次のとおりです。 `false` デフォルトでは。 デフォルトの設定を上書きして `clickable` を `true` に設定した場合、このモジュールをクリックするとポップアップが表示され、向きを選択できます。
+`contexthub.screen-orientation` UI モジュールのインスタンスには、詳細設定用の値は必要ありません。次の JSON テキストは、モジュールのデフォルトの設定を表しています。The `clickable` プロパティは次のとおりです。 `false` デフォルトでは。 デフォルトの設定を上書きして `clickable` から `true`をクリックすると、向きを選択できるポップアップが表示されます。
 
 ```javascript
 {
@@ -186,7 +186,7 @@ UI モジュールのソースは `/libs/granite/contexthub/components/modules/s
 
 ## contexthub.tagcloud UI モジュールタイプ {#contexthub-tagcloud-ui-module-type}
 
-`contexthub.tagcloud` UI モジュールは、タグに関する情報を表示します。UI モジュールのツールバーにはタグの数が表示されます。ポップアップには、タグクラウドと新しいタグを追加するためのテキストボックスが表示されます。この UI モジュールは、`contexthub.tagcloud` ストア候補をベースとする、tagcloud という名前の ContextHub ストアから情報を取得します。
+`contexthub.tagcloud` UI モジュールは、タグに関する情報を表示します。UI モジュールのツールバーにはタグの数が表示されます。ポップアップに、新しいタグを追加するためのタグクラウドとテキストボックスが表示されます。 この UI モジュールは、`contexthub.tagcloud` ストア候補をベースとする、tagcloud という名前の ContextHub ストアから情報を取得します。
 
 ![contexthub.tagcloud モジュール](assets/tagcloud-module.png)
 
@@ -210,7 +210,7 @@ UI モジュールのソースは `/libs/granite/contexthub/components/modules/t
 
 ## granite.profile UI モジュールタイプ {#granite-profile-ui-module-type}
 
-`granite.profile` ContextHub UI モジュールは、現在のユーザーの表示名を表示します。ポップアップにはユーザーのログイン名が表示され、表示名の値を変更できます。この UI モジュールは、[granite.profile](sample-stores.md#granite-profile-sample-store-candidate) ストア候補をベースとする、profile という名前の ContextHub ストアから情報を取得します。
+`granite.profile` ContextHub UI モジュールは、現在のユーザーの表示名を表示します。ポップアップにユーザーのログイン名が表示され、表示名の値を変更できます。 この UI モジュールは、[granite.profile](sample-stores.md#granite-profile-sample-store-candidate) ストア候補をベースとする、profile という名前の ContextHub ストアから情報を取得します。
 
 ![granite.profile モジュール](assets/profile-module.png)
 

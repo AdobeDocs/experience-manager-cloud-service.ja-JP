@@ -2,10 +2,10 @@
 title: AEM ヘッドレスコンテンツ作成者ジャーニー
 description: AEM の強力で柔軟なヘッドレス機能とその能力およびプロジェクトのコンテンツをオーサリングする方法を説明するガイド付きジャーニーは、ここから始めてください。
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 88%
+source-wordcount: '873'
+ht-degree: 87%
 
 ---
 
@@ -27,7 +27,7 @@ AEM では、これはコンテンツフラグメントで実現されます。�
 
 * ヘッドレスコンテンツ配信の概要とメリットを基本的に理解する。
 * AEM ヘッドレス機能と、それらが連携してヘッドレスなエクスペリエンスを提供する仕組みを理解する。
-* AEM ヘッドレスプロジェクトのコンテンツをオーサリングできる。
+* AEMヘッドレスプロジェクトのコンテンツを作成できます。
 
 ## AEM ドキュメントジャーニー {#documentation-journeys}
 

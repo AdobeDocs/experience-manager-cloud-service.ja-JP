@@ -2,10 +2,10 @@
 title: AEM forms で参照用のテーマとテンプレートを取得する方法を教えてください。
 description: AEM Formsには、フォームをすばやく作成できるように、サンプルのアダプティブフォームテーマ、テンプレート、フォームデータモデルが用意されています。
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 046ffed13569ca3f9c104fb4525d28361873277a
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 88%
+source-wordcount: '867'
+ht-degree: 86%
 
 ---
 
@@ -116,7 +116,7 @@ FSI テーマは、フォームの最小限の機能的外観を強調します�
 アダプティブフォームは Microsoft Dynamics 365 サーバーや Salesforce サーバーと連携し、ビジネスワークフローを実現できるようになります。次に例を示します。
 
 * アダプティブフォームの送信時に、データを Microsoft Dynamics 365 および Salesforce に書き込む。
-* フォームデータモデル内で定義されているカスタムエンティティを使用して、データを Microsoft Dynamics 365 および Salesforce に書き込む（またはその逆の動作）。
+* フォームデータモデルで定義されたカスタムエンティティを使用し、逆にMicrosoft Dynamics 365 と Salesforce にデータを書き込みます。
 * Microsoft Dynamics 365 および Salesforce サーバーに対してデータのクエリを実行し、アダプティブフォームに事前設定する。
 * Microsoft Dynamics 365 および Salesforce サーバーからデータを読み取る。
 

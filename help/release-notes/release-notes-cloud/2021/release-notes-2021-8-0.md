@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.8.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.8.0 リリースのリリースノート。'
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: f956b8379b5b93bc00e25f0eec641430c5565e34
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 55%
+ht-degree: 57%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 55%
 ### [!DNL Assets] で修正されたバグ  {#assets-bugs-fixed}
 
 * 寄稿者グループのメンバーが [!DNL Assets] コンソール、追加 `POST` リクエストが生成され、コレクションが作成されます。 このリクエストは必須ではありません。権限の問題が原因で失敗し、多くのエラーがログに記録されます。 （CQ-4328856）
-* ユーザーがアセットを表示し、左パネルのポップアップメニューから「[!UICONTROL タイムライン]」を選択すると、エラーが表示されます。ログには、無効なクエリが原因で多数の警告が記録されます。（CQ-4328919）
+* ユーザーがアセットを表示し、 [!UICONTROL タイムライン] 左パネルのポップアップメニューから、エラーが表示されます。 ログには、無効なクエリが原因で多数の警告が記録されます。（CQ-4328919）
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -96,11 +96,11 @@ AEM as a Cloud Service 2021.8.0 の Cloud Manager のリリース日は 2021年8
 ### 新機能 {#what-is-new-aug}
 
 * Cloud Service ユーザーは、Cloud Manager でサービスレベル契約（SLA）レポートを表示できるようになりました。これは今後数か月で段階的に利用可能になる予定です。
-詳しくは、 [SLA レポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/sla-reporting.html).
+詳しくは、[SLA レポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/sla-reporting.html?lang=ja)を参照してください。
 
 * IndexType および `IndexDamAssetLucene` 品質ルールのタイプと重大度が変更されました。これらは現在、両方ともブロッカーのバグです *重大度*.
 
-* 非同期および Tika 設定をカバーする新しい Oak インデックス品質ルールが導入されました。
+* 新しい Oak インデックス品質ルールが導入されて、非同期設定と Tika 設定に対応するようになりました。
 
 * プログラムごとの SSL 証明書の最大数が 50 に増えました。
 
@@ -116,7 +116,7 @@ AEM as a Cloud Service 2021.8.0 の Cloud Manager のリリース日は 2021年8
 
 * 最新リリースが現在のリリースよりも小さい場合は、「更新可能」ステータスが表示されません。
 
-* 名前が長い新規組織で、初回のオンボーディングが失敗していた問題を修正しました。
+* 名前が長い新しい組織では、初回のオンボーディングが失敗していました。
 
 * 何らかの理由でパイプラインが 2 回トリガーされた場合、実行の 1 つが *`cannot update pipeline execution status`* エラー。
 

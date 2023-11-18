@@ -2,10 +2,10 @@
 title: 検索フォームの設定
 description: Adobe Experience Manager as a Cloud Service の検索フォームの設定。
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2035'
-ht-degree: 97%
+source-wordcount: '2033'
+ht-degree: 96%
 
 ---
 
@@ -480,7 +480,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
 >一般的な検索述語は、次の場所で定義されます。
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->この情報は参照用です。`/libs` には変更を加えないでください。
+>この情報は参照用です。 `/libs`.
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
@@ -527,7 +527,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
 
 * **オプションパス**
 
-  ユーザーは、「述語の設定」タブのパスブラウザーを使用してパスを選択できます。選択した後、**+** アイコンを使用して、有効なオプションのリストに選択を追加します（必要に応じて、**-** アイコンを削除します）。
+  ユーザーは、「述語の設定」タブのパスブラウザーを使用してパスを選択できます。次を選択した後： **+** アイコンを使用して、選択範囲を有効なオプションのリストに追加します ( **-** アイコンをクリックして、必要に応じて削除します )。
 
   オプションは、ユーザーが作成したコンテンツノードで、次の構造を持ちます。
 

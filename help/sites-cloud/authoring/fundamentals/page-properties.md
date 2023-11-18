@@ -2,10 +2,10 @@
 title: ページプロパティの編集
 description: AEMでページを管理するために必要なプロパティを定義する方法について説明します。
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2270'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -315,7 +315,7 @@ ht-degree: 94%
 * **表示**
 
    * 影響を受けるページのリスト
-      * 必要に応じて、選択／選択解除できます。
+      * 必要に応じて、選択/選択解除を切り替えることができます
       * タブ
          * 単一ページのプロパティを表示する場合と同様に、プロパティがタブの下で順に並べられます。
    * プロパティのサブセット

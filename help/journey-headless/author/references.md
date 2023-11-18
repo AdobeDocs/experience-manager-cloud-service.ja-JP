@@ -2,10 +2,10 @@
 title: コンテンツフラグメントでの参照の使用について
 description: コンテンツ、他のフラグメントおよび他のアセット（メディア）への参照をコンテンツフラグメントで使用する方法について説明します。ヘッドレス CMS オーサリング用のネストされたフラグメントの必要性と仕組みを紹介します。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 91%
+source-wordcount: '705'
+ht-degree: 84%
 
 ---
 
@@ -27,13 +27,13 @@ ht-degree: 91%
    * コンテンツ参照
    * アセット／メディア参照
    * フラグメント参照
-   * テキストブロック内からのアドホック参照
+   * テキストブロック内から参照を即応化する
 
 ## 参照とは {#what-are-references}
 
 参照は、他のコンテンツ、アセット（画像など）、他のフラグメントなどのリソースを接続するためのメカニズムです。それぞれよく似ていますが、いくつかの違いがあります。
 
-参照には、専用のデータタイプを持つもの（コンテンツ参照やフラグメント参照など）もあれば、テキストブロック内の参照として追加されるもの（アセット参照やアドホック参照など）もあります。
+一部の参照には専用のデータ型（コンテンツ参照やフラグメント参照など）があり、それ以外の参照は、テキストブロック内の参照として追加されるだけです（アセット参照や即応参照）。
 
 ![コンテンツフラグメント - 参照](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
@@ -96,7 +96,7 @@ ht-degree: 91%
 
 ## アドホック参照 {#adhoc-references}
 
-アドホック参照は、テキストブロック内に単純なリンクとして追加できます。
+即席参照は、テキストのブロック内にシンプルなリンクとして追加できます。
 
 ![コンテンツフラグメント - アドホック参照](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 

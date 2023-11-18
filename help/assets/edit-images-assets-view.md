@@ -3,10 +3,10 @@ title: 画像の編集
 description: ' [!DNL Adobe Photoshop Express]  を利用したオプションを使用して画像を編集し、更新した画像をバージョンとして保存します。'
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: 30b8c9b8eaee6292323dde4b436c29fe8290c910
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 94%
 1. 画像を選択し、「**編集**」をクリックします。
 2. クリック **[!DNL Resize Image]** 左側のウィンドウで使用できるクイックアクションから。
 3. **[!UICONTROL サイズを変更]**&#x200B;ドロップダウンリストから適切なソーシャルメディアプラットフォームを選択し、表示されるオプションから画像サイズを選択します。
-4. 必要に応じて、「**[!UICONTROL 画像の拡大・縮小]**」フィールドを使用して画像を拡大・縮小します。
+4. 必要に応じて、 **[!UICONTROL 画像の拡大・縮小]** フィールドに入力します。
 5. クリック **[!DNL Apply]** 変更を適用します。
    ![Adobe Express を使用した画像の編集](assets/adobe-express-resize-image.png)
 

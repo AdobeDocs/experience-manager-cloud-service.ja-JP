@@ -2,10 +2,10 @@
 title: 非表示条件の使用
 description: 非表示の条件を使用して、コンポーネントリソースをレンダリングするかどうかを決定できます。
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '617'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -45,7 +45,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 * 式を有効にするには、プロパティの検索範囲を表します（例：`cqDesign.myProperty`）。
 * 値は読み取り専用です。
-* 関数（必要な場合）は、サービスによって提供される所定のセットに限られます。
+* 関数（必要に応じて）は、サービスが提供する特定のセットに限定する必要があります。
 
 ## 例 {#example}
 

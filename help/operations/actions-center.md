@@ -2,10 +2,10 @@
 title: アクションセンター
 description: アクションセンターを活用して、インシデントやその他の重要な情報に便利に対応
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '726'
-ht-degree: 93%
+ht-degree: 79%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 93%
 
 AEM as Cloud Service では、即時対応を求められる重大なインシデントが発生した場合のアクションセンターのメール通知や、最適化のための事前対応の推奨事項が送信されます。例えば、ブロックされたキューや、期限が切れる一連の資格情報などです。すべてのアクションセンター通知タイプは[下の表](#supported-notification-types)で確認でき、この表には時間の経過と共に項目が追加されます。
 
-アクションセンターの電子メール通知を受信したら、クリックすると AEM as a Cloud Service のアクションセンターとポップアップが開き、顧客が実行すべきアクションを説明する追加のコンテキストが表示されます。
+アクションセンターの電子メール通知を受け取ったら、クリックしてAEMas a Cloud Serviceのアクションセンターを開き、顧客が実行するアクションを説明する追加のコンテキストを表示するポップアップを表示できます。
 
 アクションセンターは、クリックした通知に関する情報を表示するだけでなく、現在および過去に受信した一連の通知を表示して管理するための拠点としても機能します。<!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
@@ -35,7 +35,7 @@ AEM as Cloud Service では、即時対応を求められる重大なインシ�
 
 ## 詳細なユーザーフロー {#detailed-user-flow}
 
-メールをクリックすると、アクションセンターに移動し、クリックした通知のコンテキストを示すポップアップと、是正措置の実行方法を説明する追加情報へのリンクが表示されます。また、次の場所からアクションセンターに直接アクセスすることもできます： [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/)：関連するプログラムおよび環境を選択できます。
+メールをクリックすると、クリックした通知のコンテキストを示すポップアップと、修正処理の実行方法を説明する追加情報へのリンクが表示され、アクションセンターに移動します。 また、次の場所からアクションセンターに直接アクセスすることもできます： [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/)：関連するプログラムおよび環境を選択できます。
 
 ![インシデントの詳細](/help/operations/assets/incident-details.png)
 
@@ -45,7 +45,7 @@ AEM as Cloud Service では、即時対応を求められる重大なインシ�
 
 ![通知リスト](/help/operations/assets/notification-list.png)
 
-ほとんどの場合、問題を解決するために必要なすべてのコンテキストがポップアップに表示されます。ただし、アドビサポートに質問がある場合は、ポップアップの&#x200B;**サポートへのお問い合わせ**&#x200B;リンクをクリックします。表示されたフォームで質問を説明して送信し、サポートチケットを作成することができます。このフォームには、アドビサポートエンジニアが関連コンテキストを把握できるように、特定の通知への参照も含まれます。
+ほとんどの場合、問題を解決するために必要なすべてのコンテキストがポップアップに表示されます。 ただし、Adobeサポートに関する質問がある場合は、 **サポートへの問い合わせ** リンクをクリックします。 表示されたフォームで質問を説明して送信し、サポートチケットを作成することができます。このフォームには、アドビサポートエンジニアが関連コンテキストを把握できるように、特定の通知への参照も含まれます。
 
 ![サポートへのお問い合わせ 1](/help/operations/assets/contact-support1.png)
 

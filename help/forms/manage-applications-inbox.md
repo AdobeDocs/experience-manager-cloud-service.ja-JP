@@ -5,10 +5,10 @@ uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1149'
-ht-degree: 82%
+source-wordcount: '1148'
+ht-degree: 80%
 
 ---
 
@@ -60,7 +60,7 @@ Formsワークフロートリガーが担当者または担当者グループの
 タスクを開くと、タスクの詳細を表示して使用可能なアクションを実行できます。タスクで使用できるアクションは、関連するタスクのタスクの割り当て手順で定義します。Forms Workflow
 
 1. タスクのサムネールをタップして選択します。選択したタスクを開く、または委任するオプションが上部に表示されます。
-1. 「**開く**」をタップしてタスクの詳細を表示し、アクションを実行します。タスクの詳細表示が開きます。このビューでは、タスクの詳細を表示したり、アクションを実行したりできます。
+1. 選択 **開く** をクリックして、タスクの詳細と使用可能なアクションを表示します。 タスクの詳細表示が開きます。このビューでは、タスクの詳細を表示し、タスクに基づいて行動できます。
 
    >[!NOTE]
    >

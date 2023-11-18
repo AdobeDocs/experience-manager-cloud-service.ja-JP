@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3489'
 ht-degree: 96%
@@ -82,7 +82,7 @@ Adobe Creative Cloud は、デジタルアセットの作成を支援するソ�
 * [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=ja)：Assets への設定可能なアドオンでアセットの公開に使用。
 
 * カスタムソリューションは [Asset Share Commons](https://opensource.adobe.com/asset-share-commons/) のコードベースに基づいて作成される。
-* Experience Manager [リンク共有](/help/assets/share-assets.md)：リンクを使用してアドホックでアセットを共有する。
+* Experience Manager [リンク共有](/help/assets/share-assets.md) を使用して、リンクを使用してアセットをオンデマンドで共有する。
 * [ Assets Web インターフェイス](/help/assets/manage-digital-assets.md)：外部ユーザーが Experience Manager にアクセスできるようにする、Experience Manager アクセス制御の設定で保護されている外部関係者向けのエリア。必要な IT／ネットワーク設定の調整機能が備わっている。
 
 ## 主な概念と使用例 {#key-concepts-and-use-cases}

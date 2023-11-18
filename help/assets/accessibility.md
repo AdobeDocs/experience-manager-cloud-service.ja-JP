@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1943'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ Possible topics to cover in this article are below.
 
 * Compile a list of enhancements done in the last ~1 year.
 * Showcase a few prominent use cases (search?) in a screencast.
-* Top-level actions supported, such as clickable UI elements, keyboard shortcuts, popup dialogs, and so on.
+* Top-level actions supported, such as clickable UI elements, keyboard shortcuts, pop-up dialogs, and so on.
 * List all UIs that are keyboard navigable.
 * Unified list of the product tasks supported, such as, search assets, download assets, add or editing metadata, use DM Viewers, and so on.
 * Do we need to add support matrix of user tasks with browser and screen reader combinations. Everything may not work in all browsers and/or using all screen readers.
@@ -73,7 +73,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 <!-- TBD items:
 
 * The button/menu to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
-* How to open and browse through the profile popup dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
+* How to open and browse through the profile pop-up dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
 * Using the [!DNL Experience Manager] tag browser and operating the buttons like delete tag? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
 * Read-only form fields can be focused with the keyboard. Can users tab to these fields to understand the contents and are they able to copy text from the fields?
 -->
@@ -171,7 +171,7 @@ CRUD 操作、アセットのダウンロード、メタデータの追加など
 
 * アセットの[!UICONTROL プロパティ]ページの「[!UICONTROL 保存して閉じる]」オプションが、キーボードを使用してアクセスできるようになりました。
 * アセットの[!UICONTROL プロパティ]の「[!UICONTROL 基本]」タブで選択したタグを削除するオプションをスクリーンリーダーが読み上げます。
-* ユーザーは、日付選択ポップアップダイアログをキーボードで使用できます。日付選択ユーザーインターフェイス要素は、オン時刻とオフ時刻の設定や日付の選択に使用します。
+* ユーザーは、キーボードと共に日付選択ポップアップダイアログを使用できます。 日付選択ユーザーインターフェイス要素は、オン時刻とオフ時刻の設定や日付の選択に使用します。
 * キーボードを使用したドラッグ機能は、スクリーンリーダーの参照モードの[!UICONTROL メタデータスキーマエディター]で正しく機能します。
 * キーボードを使用して、フォルダーの[!UICONTROL プロパティ]の「[!UICONTROL 権限]」タブにある「[!UICONTROL 閉じられたユーザーグループ]」の下の「ユーザーまたはグループを追加」フィールドにフォーカスを移動できます。
 

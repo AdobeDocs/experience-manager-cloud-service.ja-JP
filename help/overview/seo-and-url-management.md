@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service の SEO および URL 管理のベストプラクティス
 description: Adobe Experience Manager as a Cloud Service の SEO および URL 管理のベストプラクティス
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3705'
 ht-degree: 99%
@@ -429,7 +429,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
         }
         String location = externalizer.externalize(resource);
         Url url = sitemap.addUrl(location + ".html");
-        // add any additional content to the Url like lastmod, change frequency, etc
+        // add any additional content to the Url like lastmod, change frequency, and so on
     }
 
     @Override

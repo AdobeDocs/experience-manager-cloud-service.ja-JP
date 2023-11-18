@@ -2,10 +2,10 @@
 title: 汎用 Lucene インデックスの削除
 description: 汎用 Lucene インデックスの計画的な削除と、それによって受ける可能性がある影響について説明します。
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1335'
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
@@ -42,7 +42,7 @@ org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is
 
 アドビでは、`costPerEntry` および `costPerExecution` プロパティを使用してインデックスコストを既に調整しており、`/oak:index/pathreference` などの他のインデックスが可能な限り環境設定で使用されるようにしています。
 
-このインデックスにまだ依存しているクエリを使用する顧客アプリケーションは、他の既存のインデックスを利用するように直ちに更新してください。既存のインデックスは、必要に応じてカスタマイズできます。または、新しいカスタムインデックスを顧客アプリケーションに追加できます。AEM as a Cloud Service でのインデックス管理の詳しい手順については、[インデックス作成に関するドキュメント](/help/operations/indexing.md)を参照してください。
+このインデックスに依存するクエリを使用する顧客アプリケーションは、他の既存のインデックスを使用するように即座に更新する必要があります。必要に応じてカスタマイズできます。 または、新しいカスタムインデックスを顧客アプリケーションに追加できます。AEM as a Cloud Service でのインデックス管理の詳しい手順については、[インデックス作成に関するドキュメント](/help/operations/indexing.md)を参照してください。
 
 ## 影響を受けるユーザー {#are-you-affected}
 
@@ -129,7 +129,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 
 #### パスフィールドピッカー検索 {#picker-search}
 
-AEM には、`granite/ui/components/coral/foundation/form/pathfield` の Sling リソースタイプを持つカスタムダイアログコンポーネントが含まれています。これは、別の AEM パスを選択するためのブラウザー／ピッカーとなります。デフォルトのパスフィールドピッカーは、カスタムの `pickerSrc` プロパティがコンテンツ構造で定義されていない場合に使用されるもので、ポップアップダイアログボックスに検索バーをレンダリングします。
+AEM には、`granite/ui/components/coral/foundation/form/pathfield` の Sling リソースタイプを持つカスタムダイアログコンポーネントが含まれています。これは、別の AEM パスを選択するためのブラウザー／ピッカーとなります。デフォルトのパスフィールドピッカー。カスタムパスがない場合に使用されます。 `pickerSrc` プロパティはコンテンツ構造で定義され、ポップアップダイアログボックスで検索バーをレンダリングします。
 
 検索対象となるノードタイプは、`nodeTypes` プロパティを使用して指定できます。
 

@@ -3,10 +3,10 @@ title: Edge Delivery の概要
 description: Edge 配信サービス（EDS）の概要。
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 92%
+source-wordcount: '862'
+ht-degree: 74%
 
 ---
 
@@ -22,15 +22,15 @@ Edge Delivery により、AEM はエンゲージメントとコンバージョ�
 
 ## Edge Delivery の仕組み {#edge-works}
 
-Microsoft Word でコンテンツを編集して（ドキュメントベースの編集）、Edge Delivery に公開する方法を次の図に示します。また、様々なエディターを使用した従来の AEM パブリッシング方法も示します。
+次の図は、Microsoft® Word（ドキュメントベースの編集）でコンテンツを編集し、Edge 配信に公開する方法を示しています。 また、様々なエディターを使用した従来の AEM パブリッシング方法も示します。
 
 ![Edge Delivery のアーキテクチャ](assets/edgedelivery.png)
 
 Edge Delivery は、web サイト上のコンテンツの非常に柔軟なオーサリングを可能にする、構成可能なサービスセットです。前述のとおり、[AEM オーサリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=ja)と[ドキュメントベースのオーサリング](https://www.hlx.live/docs/authoring)の両方を使用できます。
 
-例えば、Microsoft Word や Google Docs のコンテンツを直接使用できます。つまり、これらのソースのドキュメントを web サイト上のページにすることができます。さらに、見出し、リスト、画像、フォント要素などはすべて、当初のソースから web サイトに転送できます。新しいコンテンツは、再作成プロセスなしで即座に追加されます。
+例えば、Microsoft® Word またはGoogle Docs から直接コンテンツを使用できます。 つまり、これらのソースのドキュメントを web サイト上のページにすることができます。さらに、見出し、リスト、画像、フォント要素などはすべて、当初のソースから web サイトに転送できます。新しいコンテンツは、再構築プロセスなしで即座に追加されます。
 
-Edge Delivery では GitHub を利用しているので、ユーザーは自分の GitHub リポジトリから直接コードを管理およびデプロイできます。例えば、コンテンツを Google Docs または Microsoft Word で作成し、サイトの機能を GitHub の CSS と JavaScript で開発することができます。準備が整ったら、Sidekick ブラウザー拡張機能を使用して、コンテンツの更新をプレビューおよび公開できます。
+Edge 配信では GitHub を使用するので、顧客は GitHub リポジトリから直接コードを管理およびデプロイできます。 例えば、 Google Docs またはMicrosoft® Word にコンテンツを書き込み、 GitHub で CSS と JavaScript を使用してサイトの機能を開発できます。 準備が整ったら、Sidekick ブラウザー拡張機能を使用して、コンテンツの更新をプレビューおよび公開できます。
 
 参考情報：
 
@@ -40,9 +40,9 @@ Edge Delivery では GitHub を利用しているので、ユーザーは自分�
 
 ## Edge Delivery と他の Adobe Experience Cloud 製品 {#edge-other-products}
 
-Edge Delivery は Adobe Experience Manager の構成要素なので、Edge Delivery サイトと AEM サイトは同じドメイン上に共存できます。これは、大規模な web サイトの場合に一般的なユースケースです。さらに、Edge Delivery のコンテンツは AEM Sites ページで簡単に使用でき、その逆もまた可能です。
+Edge Delivery は Adobe Experience Manager の構成要素なので、Edge Delivery サイトと AEM サイトは同じドメイン上に共存できます。これは、大規模な web サイトの場合に一般的なユースケースです。その上、Edge 配信のコンテンツをAEM Sitesページで容易に利用したり、逆に利用したりできます。
 
-また、Edge Delivery を Adobe Target、Analytics および Launch と組み合わせて使用することもできます。
+また、Adobe Target、Analytics および Launch でEdge Delivery Servicesを使用することもできます。
 
 ## Edge Delivery へのアクセス {#getting-access}
 
@@ -64,7 +64,7 @@ Edge Delivery の使用を開始するのは簡単です。[はじめに - 開�
 
 ### 製品コラボレーションチャネルへのアクセス方法 {#collab-channel}
 
-お客様との直接的なコミュニケーションチャネルの価値を考慮し、ローンチ時のすべての AEM ユーザーは、スピード、重要なアップデートおよびエクスペリエンス品質に関する拡張レポートを目的として、Slack チャネルを確立します。組織に固有の Slack チャネルに参加するための招待メールがアドビから届きます。
+お客様との直接通信チャネルの価値を考慮すると、AEMをご利用のすべてのお客様は、エクスペリエンスの品質に関する迅速なSlack、重要な更新、拡張レポートのための通信チャネルを確立します。 組織に固有のSlackチャネルに参加するための招待メールをAdobeから受け取ります。
 
 詳しくは、[Slack ボットの使用](https://www.hlx.live/docs/slack)ドキュメントを参照してください。
 

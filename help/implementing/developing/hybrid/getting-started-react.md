@@ -2,10 +2,10 @@
 title: React を使用した AEM での SPA の概要
 description: この記事では、サンプルのSPAアプリケーションを紹介し、その設定方法を説明し、React フレームワークを使用して独自のSPAをすぐに使い始めるための方法について説明します。
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1139'
-ht-degree: 94%
+source-wordcount: '1138'
+ht-degree: 91%
 
 ---
 
@@ -209,7 +209,7 @@ class Image extends Component {
 MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);
 ```
 
-AEM の SPA の中核概念は、SPA コンポーネントを AEM コンポーネントにマッピングし、コンテンツが変更されたときにコンポーネントも更新する（またはその逆も含む）というものです。この通信モデルの概要については、「[SPA エディターの概要](editor-overview.md)」を参照してください。
+AEMのSPAの中心概念は、SPAコンポーネントをAEMコンポーネントにマッピングし、コンテンツが変更された場合（および逆の場合）にコンポーネントを更新するという考えです。 この通信モデルの概要については、「[SPA エディターの概要](editor-overview.md)」を参照してください。
 
 `MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);`
 

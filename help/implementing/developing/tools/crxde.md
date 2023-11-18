@@ -2,7 +2,7 @@
 title: CRXDE Lite の使用
 description: CRXDE Lite は AEM クイックスタートの一部で、ブラウザー内のローカル開発環境でリポジトリーにアクセスして変更できます。
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 92%
@@ -226,7 +226,7 @@ CRXDE Lite でノードタイプ定義を書き出すには：
 1. 必要なノードを選択します。
 1. 「**ツール**」、「**ノードタイプを書き出し**」の順に選択します。
 1. ブラウザーの新しいタブに、定義が CND 表記で表示されます。
-1. 必要に応じて情報を保存します。
+1. 必要に応じて、情報を保存します。
 
 ノードタイプ定義を読み込むには：
 

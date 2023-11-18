@@ -2,10 +2,10 @@
 title: WAF ルールを含むトラフィックフィルタールール
 description: Web アプリケーションファイアウォール（WAF）ルールを含むトラフィックフィルタールールの設定
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '3435'
-ht-degree: 97%
+source-wordcount: '3437'
+ht-degree: 95%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 97%
 `kind` パラメーターは `CDN` に設定し、バージョンはスキーマバージョン（現在 `1`）に設定する必要があります。詳しくは、以下の例を参照してください。
 
 
-<!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
+<!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (for example, "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
 1. WAF ルールにライセンスが付与されている場合は、新規および既存のプログラムシナリオの両方について、以下で説明するように、Cloud Manager で機能を有効にする必要があります。
 
@@ -120,7 +120,7 @@ RDE の場合は、コマンドラインが使用されますが、現時点で�
 
 **備考**
 
-* `yq` を使用すると、設定ファイル（例：`yq cdn.yaml`）の YAML 形式をローカルで検証できます。
+* 以下を使用できます。 `yq` ：設定ファイルの YAML フォーマットをローカルで検証する場合 ( 例： `yq cdn.yaml`) をクリックします。
 
 ## トラフィックフィルタールールの構文 {#rules-syntax}
 
@@ -490,7 +490,7 @@ AEM as a Cloud Service では、ユーザーが CDN ログにアクセスでき�
 
 * 一致するルールの、ユーザーが宣言したルール名が `match` 属性にリストされます。
 * `action` 属性は、ルールにブロック、許可、ログのどの効果があるかを決定します。
-* WAF がライセンス取得済みで有効になっている場合、WAF フラグがルールにリストされていたかどうかに関係なく、`waf` 属性には検出されたすべての WAF フラグ（SQLI など）がリストされます。これは、宣言する可能性のある新しいルールに関するインサイトを提供するためです。
+* WAF がライセンスを受け、有効になっている場合は、 `waf` 属性は、WAF フラグがどのルールにもリストされているかどうかに関係なく、検出された WAF フラグ（SQLI など）をリストします。 これは、宣言する可能性のある新しいルールに関するインサイトを提供するためです。
 * ユーザーが宣言したルールが一致せず、WAF ルールも一致しない場合、`rules` プロパティは空白になります。
 
 前述のように、WAF ルールの一致は、CDN のミスとパスに関して CDN ログにのみ表示され、ヒットには表示されません。

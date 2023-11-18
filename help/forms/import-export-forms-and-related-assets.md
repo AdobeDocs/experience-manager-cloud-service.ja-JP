@@ -1,7 +1,7 @@
 ---
 title: アセットの読み込みと書き出しの方法 [!DNL AEM Forms]?
 description: アダプティブフォームで DocuSign を使用して電子署名を収集する方法を説明します。
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1322'
 ht-degree: 90%
@@ -214,7 +214,7 @@ Complete the following steps to create copies of assets and letters:
 
    If you are copying and pasting the assets/letters at the same place, a suffix "-CopyXX" gets added to the existing name of the asset/letter. If no title existed for the copied asset/letter, the auto generated title field remains blank.
 
-1. If required, edit the Title and Name with which you want to save the copy of the asset/letter.
+1. If necessary, edit the Title and Name with which you want to save the copy of the asset/letter.
 1. Tap Paste. New copies of the copied assets are created.
 
 ## Search {#search-forms}

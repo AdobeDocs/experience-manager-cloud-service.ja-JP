@@ -3,7 +3,7 @@ title: クエリとインデックス作成のベストプラクティス
 description: アドビのベストプラクティスガイドラインに基づいてインデックスとクエリを最適化する方法を説明します。
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3128'
 ht-degree: 47%
@@ -140,16 +140,16 @@ The `Reset Statistics` 」オプションが指定され、テーブルで収集
 
 * 適切なクエリ言語を `Language` 」ドロップダウンリストから選択できます。
 * クエリ文を `Query` フィールドに入力します。
-* 必要に応じて、提供されたチェックボックスを使用して、クエリを実行する方法を選択します。
+* 必要に応じて、提供されたチェックボックスを使用してクエリを実行する方法を選択します。
    * デフォルトでは、JCR クエリを実行してクエリ実行計画を識別する必要はありません（QueryBuilder クエリの場合は異なります）。
    * クエリを実行するための 3 つのオプションが用意されています。
       * `Include Execution Time`  — クエリを実行しますが、結果を読み込もうとしません。
       * `Read first page of results`  — クエリを実行し、20 件の結果の最初の「ページ」を読み取ります（クエリを実行するためのベストプラクティスを複製します）。
       * `Include Node Count`  — クエリを実行し、結果セット全体を読み取ります ( 通常、これはお勧めしません。 [インデックストラバーサル](#index-traversal)) をクリックします。
 
-#### クエリの説明ポップアップ {#query-explanation-popup}
+#### 「クエリの説明」ポップアップ {#query-explanation-popup}
 
-![クエリの説明ポップアップ](./assets/query-explanation-popup.png)
+![「クエリの説明」ポップアップ](./assets/query-explanation-popup.png)
 
 選択後 `Explain`を指定した場合、ユーザーには、クエリの説明の結果（および選択されている場合は実行）を説明するポップアップが表示されます。
 このポップアップには、次の詳細が含まれます。

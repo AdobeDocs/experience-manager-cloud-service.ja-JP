@@ -2,10 +2,10 @@
 title: Angular を使用した AEM での SPA の概要
 description: この記事では、サンプルのSPAアプリケーションを紹介し、その設定方法を説明し、Angularフレームワークを使用して独自のSPAをすぐに使い始める方法を説明します。
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 93%
+source-wordcount: '989'
+ht-degree: 90%
 
 ---
 
@@ -239,7 +239,7 @@ export class ImageComponent {
 MapTo('my-angular-app/components/image')(ImageComponent, ImageEditConfig);
 ```
 
-AEM の SPA の中核概念は、SPA コンポーネントを AEM コンポーネントにマッピングし、コンテンツが変更されたときにコンポーネントも更新する（またはその逆も含む）というものです。この通信モデルの概要については、[SPA エディターの概要](editor-overview.md)のドキュメントを参照してください。
+AEMのSPAの中心概念は、SPAコンポーネントをAEMコンポーネントにマッピングし、コンテンツが変更された場合（および逆の場合）にコンポーネントを更新するという考えです。 この通信モデルの概要については、[SPA エディターの概要](editor-overview.md)のドキュメントを参照してください。
 
 `MapTo('my-angular-app/components/image')(Image, ImageEditConfig);`
 

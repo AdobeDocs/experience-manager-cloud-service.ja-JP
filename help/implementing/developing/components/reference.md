@@ -2,7 +2,7 @@
 title: コンポーネントリファレンスガイド
 description: コンポーネントとその構造の詳細に関するデベロッパー向けリファレンスガイド
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3642'
 ht-degree: 96%
@@ -59,7 +59,7 @@ Sling Resource Merger を使用し、`sling:resourceSuperType` プロパティ�
 
 マークアップおよびレンダリングを行うコードと、コンポーネントのコンテンツ選択に関するロジックを制御するコードは、分離しておくことをお勧めします。
 
-この方法をサポートするテンプレート言語が [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ja) です。HTL では、基盤となるビジネスロジックを定義するときにのみプログラミング言語を使用します。このメカニズムは、指定された表示に対して呼び出されるコードを強調表示し、必要に応じて、同じコンポーネントの異なる表示に対して特定のロジックを使用できるようにします。
+この方法をサポートするテンプレート言語が [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ja) です。HTL では、基盤となるビジネスロジックを定義するときにのみプログラミング言語を使用します。このメカニズムは、特定のビューに対して呼び出されるコードを強調表示し、必要に応じて、同じコンポーネントの異なるビューに対して特定のロジックを許可します。
 
 この（オプション）ロジックは様々な方法で実装でき、特定のコマンドを使用して HTL から呼び出します。
 

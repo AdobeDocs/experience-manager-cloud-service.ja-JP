@@ -2,10 +2,10 @@
 title: ページテンプレートの作成
 description: テンプレートは、作成されるページの構造を定義します。テンプレートエディターを使用すれば、テンプレートの作成および維持は、もはや開発者だけのタスクではなくなります。
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4538'
-ht-degree: 87%
+source-wordcount: '4535'
+ht-degree: 86%
 
 ---
 
@@ -73,7 +73,7 @@ ht-degree: 87%
    * または直接アクセスします：`https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * 必要に応じて、[テンプレート用のフォルダーを作成](#creating-a-template-folder-admin)できます。
 * [新しいテンプレートを作成します](#creating-a-new-template-template-author)（最初は空の状態です）。
-* （必要に応じて）テンプレートの[追加プロパティを定義](#defining-template-properties-template-author)します。
+* [追加のプロパティを定義する](#defining-template-properties-template-author) 必要に応じて、テンプレートの
 * [テンプレートを編集](#editing-templates-template-authors)して次の要素を定義します。
    * [構造](#editing-a-template-structure-template-author) - テンプレートで作成されたページでは変更できない定義済みのコンテンツ。
    * [初期コンテンツ](#editing-a-template-initial-content-author) - テンプレートで作成されたページで変更可能な定義済みのコンテンツ。
@@ -351,8 +351,8 @@ The **モード** ツールバーのセレクターを使用すると、テン�
 
 設定ウィンドウは 2 つに分割されます。
 
-* **ポリシー**&#x200B;の下のダイアログの左側では、既存のポリシーを選択したり、既存のものを選択したりすることができます。
-* **プロパティ**&#x200B;の下のダイアログの右側では、コンポーネントタイプ固有のプロパティを設定できます。
+* ダイアログの左側で、 **ポリシー**、既存のポリシーを選択するか、既存のポリシーを選択することができます。
+* ダイアログの右側で、 **プロパティ**&#x200B;を使用すると、コンポーネントタイプに固有のプロパティを設定できます。
 
 利用できるプロパティは選択されたコンポーネントに依存します。例えば、テキストコンポーネントのプロパティでは、コピー＆ペーストのオプション、フォーマットのオプション、段落スタイルなどが定義されます。
 

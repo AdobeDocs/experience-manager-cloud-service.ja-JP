@@ -2,10 +2,10 @@
 title: 追加の公開地域
 description: AEM as a Cloud Service が、可用性の向上と待ち時間の短縮を実現するために、追加の公開地域をサポートする方法を説明します。
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: c0c669f847c9ef64b1fa22cfc24ac693c3c8ad90
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 84%
+source-wordcount: '640'
+ht-degree: 80%
 
 ---
 
@@ -55,7 +55,7 @@ AEM Sites で設定されたプログラムでは、追加の公開地域のラ�
 
 追加の公開地域の使用を検討する場合は、次の制限事項に注意してください。
 
-* 追加の公開地域は、AEM Sites にのみ追加できます。追加の公開領域は、同じプログラムでデプロイされる他の AEM ソリューションや関連機能（AEM Forms や Adobe Learning Manager など）には拡張されません。
+* 追加の公開地域は、AEM Sites にのみ追加できます。追加の公開領域は、同じプログラムにデプロイされる他のAEMソリューションや関連機能 (AEM FormsやAdobeラーニングマネージャーなど ) に拡張されるわけではありません。
 * 追加の地域は、関連する使用資格がテナントで使用可能かつ未使用の場合にのみ追加できます。
 * 個々の環境には、最大で 3 つの追加の公開地域を追加できます。
 * 追加の地域は、実稼動プログラムでのみ利用できます。この機能は、サンドボックスプログラムでは使用できません。

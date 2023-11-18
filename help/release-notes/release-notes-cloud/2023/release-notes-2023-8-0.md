@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0 リリースのリリースノート。'
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1687'
 ht-degree: 30%
 
 ---
@@ -151,7 +151,8 @@ Cloud Manager から CDN ログをダウンロードします。これは、キ�
 ### CDN および WAF ルールのアーリーアダプタープログラム {#waf-early-adopter}
 
 CDN でのトラフィックのフィルタリング基準：
-* リクエストヘッダーとプロパティ（IP アドレスなど）
+
+* ヘッダーとプロパティのリクエスト（IP アドレスなど）
 * 悪意のあるトラフィックに関連付けられていると知られているトラフィックパターン
 
 この機能を試して、フィードバックを共有したい場合は、 電子メールの送信先 **aemcs-waf-adopter@adobe.com** アーリーアダプタープログラムの詳細については、公式電子メール ID を参照してください。 スペースは制限されています。

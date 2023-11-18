@@ -3,10 +3,10 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4921'
-ht-degree: 95%
+source-wordcount: '4923'
+ht-degree: 94%
 
 ---
 
@@ -503,7 +503,7 @@ GraphQL クエリでフィルタリングを使用して、特定のデータを
 
 | オプション | タイプ | 説明 |
 |--- |--- |--- |
-| `_ignoreCase` | `String` | 文字列の大文字と小文字は無視されます（例：`time` の値は `TIME`、`time`、`tImE` と一致） |
+| `_ignoreCase` | `String` | 文字列の大文字と小文字を無視します（例：`time` の値は `TIME`、`time`、`tImE` ...に一致） |
 | `_sensitiveness` | `Float` | `float` 値が同じと見なされるための一定のマージンを許可します（`float` 値の内部表現による技術的な制限を回避するため）。このオプションはパフォーマンスに悪影響を及ぼす可能性があるので、避ける必要があります。 |
 
 式は、論理演算子（`_logOp`）を使用して設定に組み合わせることができます。
@@ -515,7 +515,7 @@ GraphQL クエリでフィルタリングを使用して、特定のデータを
 
 フィルター定義（`filter` 引数としてクエリに渡される）には次が含まれます。
 
-* 各フィールドのサブ定義（フィールド名を使用してアクセスできます。例えば、データ（フィールド）タイプの `lastName` フィールドのフィルターには `lastName` フィールドがあります）
+* 各フィールドのサブ定義 ( フィールド名を使用してアクセスできます。例えば、 `lastName` フィールドの `lastName` データ（フィールド）タイプのフィールド
 * 各サブ定義には、式セットを提供する `_expressions` 配列と、式を組み合わせる必要がある論理演算子を定義する `_logOp` フィールドが含まれます
 * 各式は、値（`value` フィールド）と演算子（`_operator` フィールド）によって定義され、フィールドの内容を比較する必要があります
 
@@ -914,7 +914,7 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様に従います。AEM での GraphQL クエリには、次のような拡張機能があります。
 
 * 結果が 1 つだけ必要な場合：
-   * モデル名（例：city）を使用します
+   * 市区町村などのモデル名を使用します。
 
 * 結果のリストを想定している場合：
    * モデル名に `List` を付け加えます（例：`cityList`）

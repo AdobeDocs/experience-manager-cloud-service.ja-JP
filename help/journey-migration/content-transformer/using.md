@@ -2,10 +2,10 @@
 title: コンテンツ変換サービスの使用
 description: AEM as a Cloud Serviceへの移行に備えて、コンテンツ構造を変換する方法を説明します。
 exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 89%
+source-wordcount: '638'
+ht-degree: 87%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 89%
 
    ![画像](/help/journey-migration/content-transformer/assets/ct-4.png)
 
-1. すべての問題または特定の問題を選択し、移動、削除、名前変更などのアクションを実行して、問題を解決できます。また、カスタムパスは右上隅にある「**パスを追加**」ボタンを使用して追加できます。
+1. すべての問題または特定の問題を選択し、移動、削除または名前変更して解決できます。 また、カスタムパスは右上隅にある「**パスを追加**」ボタンを使用して追加できます。
 
    >[!NOTE]
    > 移動操作を使用する場合は、すべてのパスを 1 つのフォルダーにのみ移動することをお勧めします（`/etc/packages/content-transformation/paths` 下など）。そうすると、バックアップパッケージがインストールされてインスタンスが元の状態に戻る際に、フォルダー（`/etc/packages/content-transformation/paths`）は、削除操作を使用して削除され、リポジトリのサイズを縮小できます。

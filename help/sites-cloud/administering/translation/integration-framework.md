@@ -4,7 +4,7 @@ description: サードパーティの翻訳サービスと統合するための 
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1499'
 ht-degree: 91%
@@ -45,7 +45,7 @@ AEM を翻訳サービスプロバイダーに接続するためのクラウド�
 
 コネクタパッケージをインストールしたら、コネクタ用のクラウド設定を作成できます。通常は、翻訳サービスで認証を行うための資格情報を指定する必要があります。Microsft Translator コネクタ用のクラウド設定の追加については、[Microsoft Translator との統合](connect-ms-translator.md)を参照してください。
 
-必要に応じて、同じコネクタに対して複数のクラウド設定を作成できます。例えば、同じベンダーを使用するアカウントまたはプロジェクトごとに設定を 1 つずつ作成します。
+必要に応じて、同じコネクタに対して複数のクラウド設定を作成できます。 例えば、同じベンダーを使用するアカウントまたはプロジェクトごとに設定を 1 つずつ作成します。
 
 接続の設定が完了したら、その接続を使用する翻訳統合フレームワーク設定を作成できます。
 

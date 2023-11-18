@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 69%
+ht-degree: 65%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 69%
 
 メタデータは、検索可能なアセットに関する追加情報です。画像をアップロードすると自動的に抽出されます。既存のメタデータを編集したり、新しいメタデータプロパティを既存のフィールドに追加（例えば、メタデータフィールドが空白の場合など）したりすることができます。
 
-どの企業でも、メタデータの語彙を制御して信頼性を確保する必要があります。そのため、[!DNL Experience Manager Assets] では、新しいメタデータプロパティをアドホックに追加することはできません。作成者は、アセットの新しいメタデータフィールドを追加することはできませんが、開発者は追加できます。[アセットの新しいメタデータプロパティの作成](meta-edit.md#editing-metadata-schema)を参照してください。
+メタデータの語彙を制御し、信頼性を確保する必要があるので、 [!DNL Experience Manager Assets] では、新しいメタデータプロパティをオンデマンドで追加することはできません。 作成者は、アセットの新しいメタデータフィールドを追加することはできませんが、開発者は追加できます。[アセットの新しいメタデータプロパティの作成](meta-edit.md#editing-metadata-schema)を参照してください。
 
 ## アセットのメタデータの編集 {#editing-metadata-for-an-asset}
 

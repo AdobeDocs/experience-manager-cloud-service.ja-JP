@@ -2,7 +2,7 @@
 title: ページのコンテンツの編集
 description: ページを作成したら、必要な変更を行うためにコンテンツを編集できます
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2973'
 ht-degree: 93%
@@ -173,7 +173,7 @@ ht-degree: 93%
 
    アセットタイプに適したコンポーネントが、必要な場所に作成されます。これには選択したアセットが含まれます。
 
-1. 必要に応じて、コンポーネントを[編集](#edit-content)します。
+1. [編集](#edit-content) 必要に応じて、コンポーネントを選択します。
 
 >[!NOTE]
 >
