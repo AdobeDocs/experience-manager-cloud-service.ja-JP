@@ -3,10 +3,10 @@ title: AEM での GraphiQL IDE の使用
 description: Adobe Experience Manager で GraphiQL IDE を使用する方法について説明します。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 94%
+source-wordcount: '1138'
+ht-degree: 90%
 
 ---
 
@@ -105,7 +105,7 @@ The **GraphiQL** ツールを使用すると、次のことが可能になり、
 >
 >Dispatcher 上のカスタム書き換えルールが、AEM パブリッシュのデフォルトを上書きする場合があります。
 >
->TTL ベースのキャッシュコントロールヘッダーを Dispatcher から送信する場合、場所の一致パターンにもとづいて、必要に応じて一致パターンから `/graphql/execute.json/*` を除外できます。
+>TTL ベースの cache-control ヘッダーを Dispatcher から送信する場合、場所の一致パターンに基づいて、必要に応じて除外できます `/graphql/execute.json/*` マッチから
 
 GraphQL を使用すると、HTTP キャッシュヘッダーを設定することにより、個々の永続クエリ用にこれらのパラメーターを制御できます。
 

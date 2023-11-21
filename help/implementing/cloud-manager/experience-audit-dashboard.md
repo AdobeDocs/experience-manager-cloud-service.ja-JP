@@ -2,10 +2,10 @@
 title: エクスペリエンス監査ダッシュボード
 description: Experience Audit がデプロイメントプロセスを検証する方法、およびデプロイ済みの変更が、明確でわかりやすいダッシュボードインターフェイスを通じて、パフォーマンス、アクセシビリティ、ベストプラクティス、SEO の基準を満たしていることを確認する方法について説明します。
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 23%
+source-wordcount: '830'
+ht-degree: 22%
 
 ---
 
@@ -16,7 +16,7 @@ Experience Audit がデプロイメントプロセスを検証する方法、お
 
 >[!NOTE]
 >
->この機能は、次の場合にのみ使用できます。 [アーリーアダプタープログラム。](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+>この機能は、[早期導入プログラム](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)でのみ利用できます。
 >
 >AEM as a Cloud Serviceの既存のエクスペリエンス監査機能について詳しくは、 [エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md).
 
@@ -28,7 +28,7 @@ Experience Audit がデプロイメントプロセスを検証する方法、お
 
 1. リグレッションを導入しない。
 
-Cloud Manager のエクスペリエンス監査を使用すると、サイト上でのエンドユーザーのエクスペリエンスが最も高い標準に準拠します。
+Cloud Manager のエクスペリエンス監査では、サイト上でのユーザーのエクスペリエンスが最も高い標準に準拠します。
 
 監査結果は参考情報であり、デプロイメントマネージャーはスコアおよび現在のスコアと以前のスコアの変化を確認できます。このインサイトは、現在のデプロイメントで前のバージョンになかった不具合が導入されたかどうかを判断するのに役立ちます。
 

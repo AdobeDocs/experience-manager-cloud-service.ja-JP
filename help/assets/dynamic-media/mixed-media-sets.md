@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 93%
@@ -118,7 +118,7 @@ ht-degree: 93%
 
 1. アセットを削除するには、対応するチェックボックスを選択して、「**[!UICONTROL アセットを削除]**」を選択します。
 1. プリセットを適用するには、右上隅にある「**[!UICONTROL プリセット]**」を選択し、アセットに適用するプリセットを選択します。
-1. 「**[!UICONTROL 保存]**」を選択します。新しく作成された混在メディアセットが、作成元のフォルダーに表示されます。
+1. 「**[!UICONTROL 保存]**」を選択します。作成した混在メディアセットが、作成元のフォルダーに表示されます。
 
 ## 混在メディアセットの編集 {#editing-mixed-media-sets}
 

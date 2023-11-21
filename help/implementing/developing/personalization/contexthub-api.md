@@ -2,10 +2,10 @@
 title: ContextHub JavaScript API リファレンス
 description: ContextHub コンポーネントをページに追加すると、ContextHub JavaScript API がスクリプトで使用できるようになります。
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '4612'
-ht-degree: 99%
+source-wordcount: '4613'
+ht-degree: 98%
 
 ---
 
@@ -219,7 +219,7 @@ ContextHub ストアのベースクラス。
 
 ##### パラメーター {#parameters-getkeys}
 
-* **`includeInternals`：**&#x200B;値 `true` は、内部的に使用されているキーを結果に含めます。このようなキーは、アンダースコア（`_`）文字で始まります。デフォルト値は `false` です。
+* **`includeInternals`:** 値： `true` 内部的に使用されているキーを結果に含めます。 このようなキーは、アンダースコア（`_`）文字で始まります。デフォルト値は `false` です。
 
 ##### 戻り値 {#returns-getkeys}
 
@@ -242,7 +242,7 @@ ContextHub ストアのベースクラス。
 
 ##### パラメーター {#parameters-gettree}
 
-* `includeInternals:`：値 `true` は、内部的に使用されているキーと値のペアを結果に含めます。このデータのキーは、アンダースコア（`_`）文字で始まります。デフォルト値は `false` です。
+* `includeInternals:` 値： `true` 内部的に使用されているキーと値のペアを結果に含めます。 このデータのキーは、アンダースコア（`_`）文字で始まります。デフォルト値は `false` です。
 
 ##### 戻り値 {#returns-gettree}
 
@@ -856,7 +856,7 @@ ContextHub.Utils.JSON.stringify({
 
 #### getItem() {#getitem}
 
-キーに対する値をオブジェクトから取得します。
+キーの値をオブジェクトから取得します。
 
 ##### パラメーター {#parameters-getitem-2}
 

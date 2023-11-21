@@ -2,10 +2,10 @@
 title: Experience Manager Sites ページでフォームポータルを作成する方法?
 description: フォームポータルを作成し、標準搭載のコアコンポーネントを AEM Sites ページで使用する方法を説明します。
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1841'
-ht-degree: 94%
+source-wordcount: '1840'
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ AEM Forms は管理のオーバーヘッドと実稼働の遅延を低減する�
 * タイトルと説明に基づいてフォームを検索できるようにします。
 * カスタム CSS を使用してポータルのルックアンドフィールをカスタマイズします。
 * フォームへのリンクを作成します。
-* エンドユーザーが作成したアダプティブフォームに関連するドラフトおよび送信をリスト表示します。
+* ユーザーが作成したアダプティブFormsに関連するドラフトと送信を一覧表示します。
 
 ## フォームポータルページのコンポーネント {#forms-portal-components}
 

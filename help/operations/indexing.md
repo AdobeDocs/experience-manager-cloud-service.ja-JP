@@ -2,10 +2,10 @@
 title: コンテンツの検索とインデックス作成
 description: AEM as a Cloud Serviceでのコンテンツの検索とインデックス作成について説明します。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2428'
-ht-degree: 70%
+source-wordcount: '2427'
+ht-degree: 68%
 
 ---
 
@@ -96,7 +96,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 1. 新しいフォルダーを作成し、更新されたインデックス名を `ui.apps` ディレクトリ：
    * 例：`ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
-2. 設定ファイルを追加 `.content.xml` 新しく作成されたフォルダー内のカスタム設定を使用します。 カスタマイズの例を次に示します。ファイル名： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
+2. 設定ファイルを追加 `.content.xml` 作成したフォルダー内のカスタム設定を含む カスタマイズの例を次に示します。ファイル名： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -307,7 +307,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ### 現在の制限事項 {#current-limitations}
 
-インデックス管理は、`compatVersion` が `2` に設定された `lucene` 型のインデックスに対してのみサポートされています。内部的には、例えば Elasticsearch インデックスなどの他のインデックスが設定され、クエリに使用される場合があります。`damAssetLucene` インデックスに対して書き込まれるクエリは、AEM as a Cloud Serviceでは、実際には、このインデックスの Elasticsearch バージョンに対して実行される場合があります。 この違いは、アプリケーションのエンドユーザーには見えませんが、`explain` 機能などの特定のツールでは異なるインデックスがレポートされます。Lucene インデックスと Elasticsearch インデックスの違いについては、[Apache Jackrabbit Oak の Elasticsearch ドキュメント](https://jackrabbit.apache.org/oak/docs/query/elastic.html)を参照してください。顧客が Elasticsearch インデックスを直接設定することはできず、またその必要もありません。
+インデックス管理は、`compatVersion` が `2` に設定された `lucene` 型のインデックスに対してのみサポートされています。内部的には、例えば Elasticsearch インデックスなどの他のインデックスが設定され、クエリに使用される場合があります。に対して書き込まれるクエリ `damAssetLucene` index は、AEMas a Cloud Service上で、実際には、このインデックスのElasticsearchバージョンに対して実行される可能性があります。 この違いは、アプリケーションユーザーには見えませんが、 `explain` 機能は、異なるインデックスをレポートします。 Lucene インデックスと Elasticsearch インデックスの違いについては、[Apache Jackrabbit Oak の Elasticsearch ドキュメント](https://jackrabbit.apache.org/oak/docs/query/elastic.html)を参照してください。顧客が Elasticsearch インデックスを直接設定することはできず、またその必要もありません。
 
 ビルトインアナライザー（製品に付属しているアナライザー）のみがサポートされています。カスタムアナライザーはサポートされていません。
 

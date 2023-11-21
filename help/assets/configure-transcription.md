@@ -1,8 +1,6 @@
 ---
 title: トランスクリプションサービスの設定
-seo-title: Configure transcription service
 description: Adobe Experience Manager Assets には、 [!DNL Azure Media Services]  が設定されています。このサービスは、サポートされているオーディオまたはビデオファイルに含まれている音声言語のテキストトランスクリプトを WebVTT（.vtt）形式で自動的に生成します。
-seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content and increase the ROI of these assets by supporting accessibility and localization.
 products: SG_EXPERIENCEMANAGER/ASSETS and Experience Manager as a Cloud Service
 sub-product: assets
 content-type: reference
@@ -11,10 +9,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1690'
-ht-degree: 93%
+source-wordcount: '1689'
+ht-degree: 92%
 
 ---
 
@@ -158,7 +156,7 @@ Adobe Analytics の **[!UICONTROL コンテンツ AI]** タブで、 **[!UICONTR
 ## 既知の制限事項 {#known-limitations}
 
 * トランスクリプション機能は、10 分までのビデオに対応しています。
-* ビデオタイトルは 80 文字未満にする必要があります。
+* ビデオタイトルは 80 文字以下にする必要があります。
 * サポートされているファイルサイズは最大 15 GB です。
 * サポートされている最大処理時間は 60 分です。
 * [!DNL Azure] の有料アカウントでは、1 分あたり最大 50 本のムービーをアップロードできます。一方、体験版アカウントでは、1 分あたり最大 5 本のムービーをアップロードできます。

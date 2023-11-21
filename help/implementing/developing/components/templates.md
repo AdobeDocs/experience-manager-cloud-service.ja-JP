@@ -2,7 +2,7 @@
 title: ページテンプレート
 description: ページテンプレートは、新しいページのベースとして使用するページを作成する際に使用します
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3278'
 ht-degree: 93%
@@ -356,7 +356,7 @@ When creating an editable template, the value is copied from the template type t
 他のテンプレートの基盤となるテンプレートを作成した場合、このテンプレートをテンプレートタイプとしてコピーできます。
 
 1. [こちらのドキュメント](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author)で説明されているページテンプレートと同じようにテンプレートを作成します。これは、テンプレートタイプの基盤となります。
-1. CRXDE Lite を使用している場合は、新しく作成したテンプレートを `templates` ノードから`template-types`テンプレートフォルダー[の下の ](#template-folders) ノードにコピーします。
+1. CRXDE Liteを使用して、作成したテンプレートを `templates` ノードから `template-types` ノードの [テンプレートフォルダー](#template-folders).
 1. このテンプレートを[テンプレートフォルダー](#template-folders)の下の `templates` ノードから削除します。
 1. `template-types` ノードの下にあるテンプレートのコピーで、すべての `jcr:content` ノードから `cq:template` および `cq:templateType` プロパティをすべて削除します。
 
@@ -595,6 +595,6 @@ GitHub のコード
 
 特定のページの下に子ページを作成するために使用できるテンプレートを制限するには、ページの `jcr:content` ノードの `cq:allowedTemplates` プロパティを使用して、子ページとして許可するテンプレートのリストを指定します。例えば、`/apps/wknd/templates/page-content` リストの各値は、許可されている子ページのテンプレートへの絶対パスである必要があります。
 
-以下を使用すると、 `cq:allowedTemplates` プロパティを使用して、テンプレートの  `jcr:content` ノードを追加して、このテンプレートを使用するすべての新しく作成されたページにこの設定を適用します。
+以下を使用すると、 `cq:allowedTemplates` プロパティを使用して、テンプレートの  `jcr:content` ノードを追加して、このテンプレートを使用するすべての作成済みページにこの設定を適用します。
 
 テンプレート階層に関する制約などをさらに追加する場合は、テンプレートの `allowedParents/allowedChildren` プロパティを使用できます。その後、テンプレート T から作成されたページが、テンプレート T から作成されたページと親子である必要があることを明示的に指定できます。

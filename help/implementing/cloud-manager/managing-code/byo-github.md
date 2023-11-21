@@ -1,22 +1,22 @@
 ---
-title: Cloud Manager での独自の GitHub リポジトリーの操作
-description: 独自の GitHub リポジトリを操作するように Cloud Manager を設定する方法について説明します。
+title: Cloud Manager での独自の GitHub リポジトリの操作
+description: 独自の GitHub リポジトリを操作するために Cloud Manager を設定する方法について説明します。
 feature: Release Information
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 1%
+source-wordcount: '720'
+ht-degree: 70%
 
 ---
 
 
-# Cloud Manager での独自の GitHub リポジトリーの操作 {#byo-github}
+# Cloud Manager での独自の GitHub リポジトリの操作 {#byo-github}
 
-独自の GitHub リポジトリと連携するように Cloud Manager を設定することで、Cloud Manager を通じて GitHub リポジトリ内で直接コードを検証でき、コードをAdobeリポジトリと一貫して同期する必要がなくなります。
+独自の GitHub リポジトリを操作すると、Cloud Manager を通じて GitHub リポジトリ内でコードを直接検証できるので、コードを Adobe リポジトリと一貫して同期する必要がなくなります。
 
 >[!NOTE]
 >
->この機能は、次の場合にのみ使用できます。 [アーリーアダプタープログラム。](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+>この機能は、[早期導入プログラム](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)でのみ利用できます。
 
 ## 設定 {#configuration}
 
@@ -25,19 +25,19 @@ ht-degree: 1%
 1. [リポジトリを追加](#add-repo)
 1. [プライベートリポジトリの所有権の検証](#validate-ownership)
 
-### リポジトリーを追加 {#add-repo}
+### リポジトリを追加 {#add-repo}
 
 1. Cloud Manager で、 **プログラムの概要** ページで、 **リポジトリ** タブをクリックして、 **リポジトリ** ページを開き、をクリックします。 **リポジトリを追加**.
 
-1. Adobe Analytics の **リポジトリを追加** ダイアログ、選択 **プライベートリポジトリ** をリポジトリタイプとして使用します。
+1. **リポジトリを追加**&#x200B;ダイアログで、リポジトリタイプとして「**プライベートリポジトリ**」を選択します。
 
 1. リポジトリの詳細を指定します
 
-   * **リポジトリ名**  — 表現名
-   * **リポジトリ URL**  — リポジトリの URL（で終わる必要があります） `.git`
-   * **説明** （オプション） — 必要に応じてリポジトリの長い説明
+   * **リポジトリ名** - 表現名
+   * **リポジトリ URL** - リポジトリの URL。`.git` で終了する必要があります。
+   * **説明**（オプション）- 必要に応じてリポジトリの詳細な説明
 
-   ![独自のリポジトリを追加](/help/implementing/cloud-manager/assets/repos/add-own-github.png)
+   ![独自のリポジトリの追加](/help/implementing/cloud-manager/assets/repos/add-own-github.png)
 
 1. 「**保存**」を選択します。
 
@@ -47,35 +47,35 @@ ht-degree: 1%
 
 ### プライベートリポジトリの所有権の検証 {#validate-ownership}
 
-Cloud Manager は GitHub リポジトリについて認識しますが、アクセスする必要があります。 アクセス権を付与するには、AdobeGitHub アプリをインストールし、指定したリポジトリを所有していることを確認する必要があります。
+Cloud Manager は GitHub リポジトリを認識しましたが、引き続きアクセスする必要があります。アクセス権を付与するには、Adobe GitHub アプリをインストールし、指定したリポジトリを所有していることを確認する必要があります。
 
 1. 独自のリポジトリを追加した後、 **プライベートリポジトリの所有権の検証** ダイアログが開きます。
 
    ![プライベートリポジトリの所有権の検証](/help/implementing/cloud-manager/assets/repos/private-repo-validate.png)
 
-1. Cloud Manager では、GitHub アプリを使用して、リポジトリと安全にやり取りします。
-   * GitHub 組織の所有者が、次の場所にあるアプリをインストールする必要があります。 `https://github.com/apps/cloud-manager-for-aem-stage` リポジトリへのアクセス権を付与します。
+1. Cloud Manager は、GitHub アプリを使用して、リポジトリと安全にやり取りします。
+   * GitHub 組織の所有者は、`https://github.com/apps/cloud-manager-for-aem-stage` にあるアプリをインストールし、リポジトリへのアクセス権を付与する必要があります。
    * この方法について詳しくは、 GitHub のドキュメントを参照してください。
 
-1. セキュリティを強化するには、リポジトリのデフォルトブランチにシークレットファイルを作成する必要があります。 選択 **生成**.
+1. セキュリティを強化するには、リポジトリのデフォルトのブランチに秘密鍵ファイルを作成する必要があります。選択 **生成**.
 
-1. 「 」をタップまたはクリックして、秘密鍵ファイルの生成を確認します。 **確認**.
+1. 「**確認**」をタップまたはクリックして、秘密鍵ファイルの生成を確認します。
 
-   ![秘密鍵の生成を確認](/help/implementing/cloud-manager/assets/repos/confirm-generation.png)
+   ![秘密鍵の生成の確認](/help/implementing/cloud-manager/assets/repos/confirm-generation.png)
 
-1. 戻る **プライベートリポジトリの所有権の検証** ウィンドウが開いたら、Cloud Manager が、プライベートファイルのコンテンツを **秘密のファイルコンテンツ** フィールドに入力します。 そのフィールドからコンテンツをコピーします。
+1. **プライベートリポジトリの所有権の検証**&#x200B;ウィンドウに戻ると、Cloud Manager は「**秘密鍵ファイルコンテンツ**」フィールドにプライベートファイルのコンテンツを生成しています。そのフィールドからコンテンツをコピーします。
 
-   * シークレットファイルの内容は 1 回だけ表示されます。 このウィンドウを閉じる前にコンテンツをコピーしない場合は、秘密鍵を再生成します。
+   * 秘密鍵ファイルのコンテンツは 1 回だけ表示されます。このウィンドウを閉じる前にコンテンツをコピーしない場合は、秘密鍵を再生成します。
 
-   ![秘密鍵ファイルの内容をコピー](/help/implementing/cloud-manager/assets/repos/new-secret.png)
+   ![秘密鍵ファイルコンテンツのコピー](/help/implementing/cloud-manager/assets/repos/new-secret.png)
 
-1. GitHub リポジトリのデフォルトブランチ ( ) に、という名前の新しいファイルを作成します。 `.well-known/adobe/cloud-manager-challenge` をクリックし、そのファイルに秘密のファイルの内容を貼り付けて保存します。
+1. GitHub リポジトリのデフォルトブランチに `.well-known/adobe/cloud-manager-challenge` という名前の新しいファイルを作成し、秘密鍵ファイルコンテンツをそのファイルにペーストして保存します。
 
 1. アプリケーションがインストールされ、リポジトリにシークレットファイルが存在する場合は、 **検証** （内） **プライベートリポジトリの所有権の検証** ダイアログ。
 
-デスクトップアプリケーションは任意の順序でインストールでき、シークレットファイルを作成できます。 ただし、検証する前に、両方の手順を完了する必要があります。
+アプリのインストールと秘密鍵ファイルの作成は、任意の順序で行うことができます。ただし、検証する前に両方の手順を完了する必要があります。
 
-検証されるまで、リポジトリは赤いアイコンで表示され、まだ検証されておらず、まだ使用できないことを示します。
+検証されるまで、リポジトリは赤いアイコンで表示され、まだ検証されておらず、まだ使用されていないことを示します。
 
 ![未検証のリポジトリ](/help/implementing/cloud-manager/assets/repos/unvalidated-repo.png)
 
@@ -85,26 +85,26 @@ The **タイプ** 列は、Adobeが提供するリポジトリ (**Adobe**) と�
 
 ## Cloud Manager での独自の GitHub リポジトリの使用 {#using}
 
-Cloud Manager で GitHub リポジトリの検証が完了すると、統合が完了し、リポジトリを Cloud Manager で使用できます。
+Cloud Manager で GitHub リポジトリを検証すると統合が完了し、Cloud Manager でリポジトリを使用できるようになります。
 
 1. プルリクエストを作成すると、GitHub チェックが自動的に開始します。
 
-   ![GitHub のチェック](/help/implementing/cloud-manager/assets/repos/github-checks.png)
+   ![GitHub チェック](/help/implementing/cloud-manager/assets/repos/github-checks.png)
 
-1. プル要求ごとに、 [フルスタックコード品質パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) が自動的に作成されます。 このパイプラインは、プルリクエストの更新のたびに開始されます。
+1. プルリクエストごとに、[フルスタックコード品質パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)が自動的に作成されます。このパイプラインは、プルリクエストの更新のたびに開始されます。
 
-1. GitHub チェックは、コード品質チェックが完了するまで、実行状態のままです。 コード品質の結果が GitHub チェックに反映されます。
+1. GitHub チェックは、コード品質チェックが完了するまで実行状態のままになります。コード品質の結果は、GitHub チェックに生成されます。
 
    ![GitHub コード品質チェック](/help/implementing/cloud-manager/assets/repos/github-code-quality.png)
 
-プルリクエストが閉じられるかマージされると、作成された完全なスタックコード品質パイプラインが自動的に削除されます。
+プルリクエストが閉じられるか結合されると、作成したフルスタックコード品質パイプラインが自動的に削除されます。
 
 ## 制限事項 {#limitations}
 
 独自の GitHub リポジトリを Cloud Manager で使用する際の制限事項について説明します。
 
 * GitHub リポジトリを、管理するパイプラインの直接リポジトリソースとして使用することはできません。
-   * この機能は、予定されています。
+   * この機能は予定されています。
 * Cloud Manager の GitHub チェックを使用して、プル要求の検証を一時停止することはできません。
-   * GitHub リポジトリが Cloud Manager で検証されている場合、Cloud Manager は常にそのリポジトリ用に作成されたプル要求を検証しようとします。
-AdobeGitHub アプリが GitHub 組織から削除されると、すべてのリポジトリのプルリクエスト検証機能が削除されます。
+   * GitHub リポジトリが Cloud Manager で検証されている場合、Cloud Manager は常に、そのリポジトリに対して作成されたプルリクエストの検証を試みます。
+Adobe GitHub アプリを GitHb 組織から削除すると、すべてのリポジトリのプルリクエスト検証機能が削除されます。

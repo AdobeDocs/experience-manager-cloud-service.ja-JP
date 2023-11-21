@@ -2,10 +2,10 @@
 title: ドメイン名ステータスの確認
 description: Cloud Manager でカスタムドメイン名が正常に検証されたかどうかを判断する方法について説明します。
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 92%
+source-wordcount: '646'
+ht-degree: 85%
 
 ---
 
@@ -82,7 +82,7 @@ Fastly は、ドメインを最初に登録したアカウントにロックし�
 
 ## カスタムドメイン名の既存の CDN 設定 {#pre-existing-cdn}
 
-カスタムドメイン名の既存の CDN 設定がある場合は、UI を通じてこれらの設定を追加して Cloud Manager で表示および設定できるようにすることを促す情報メッセージが&#x200B;**カスタムドメイン名**&#x200B;ページと&#x200B;**環境**&#x200B;ページに表示されます。
+カスタムドメイン名用の既存の CDN 設定がある場合は、 **カスタムドメイン名** および **環境** ページに表示され、Cloud Manager で設定できるように、UI を使用してこれらの設定を追加するよう促す。
 
 UI を使用して既存の環境設定をすべて移行すると、このメッセージは表示されなくなります。メッセージが表示されなくなるまでに 1～2 営業日かかる場合があります。
 

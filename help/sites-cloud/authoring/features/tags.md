@@ -2,7 +2,7 @@
 title: タグの使用
 description: タグを使用すると、web サイト内のコンテンツを素早く簡単に分類できます。
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 93%
@@ -47,7 +47,7 @@ ht-degree: 93%
 
 * 個々のタグをアクティベートします。
 
-  ページと同様、新しく作成されたタグは、パブリッシュ環境で使用可能になる前にアクティベートする必要があります。
+  ページと同様に、作成したタグは、パブリッシュ環境で使用可能になる前にアクティベートする必要があります。
 
 >[!NOTE]
 >

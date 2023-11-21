@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 リリースのリリースノート。'
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1436'
-ht-degree: 94%
+source-wordcount: '1435'
+ht-degree: 97%
 
 ---
 
@@ -46,7 +46,7 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 
 ### 新機能 {#what-is-new-junecm}
 
-* プレビューサービスは、すべてのプログラムに周期的にデプロイされます。プログラムのプレビューサービスが有効になると、製品内で通知が送信されます。 詳しくは、 [Preview Service へのアクセス](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) を参照してください。
+* プレビューサービスは、すべてのプログラムに周期的にデプロイされます。顧客は、プログラムがプレビューサービスに対して有効になると、製品内で通知を受け取ります。詳しくは、[プレビューサービスへのアクセス](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)を参照してください。
 
 * ビルド手順中にダウンロードされた Maven の依存関係は、パイプライン実行から次回の実行までの間にキャッシュされるようになりました。この機能は、今後数週間にわたり、お客様に対して有効になる予定です。
 
@@ -58,15 +58,15 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 
 * 品質ルール `ImmutableMutableMixCheck` が更新され、`/oak:index` ノードが不変として分類されるようになりました。
 
-* 品質ルール `CQBP-84` と `CQBP-84--dependencies` は、1 つのルールに統合されました。この統合の一環として、依存関係のスキャンにより、AEM Runtime にデプロイされるサードパーティの依存関係の問題をより正確に特定できます。
+* 品質ルール `CQBP-84` と `CQBP-84--dependencies` は、1 つのルールに統合されました。この統合の一環として、AEM ランタイムにデプロイされるサードパーティの依存関係の問題を、依存関係のスキャンでより正確に特定できます。
 
 * 混乱を避けるために、環境の詳細ページのパブリッシュ AEM とパブリッシュ Dispatcher のセグメント行が統合されました。
 
   ![Dispatcher 環境](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
-* `damAssetLucene` インデックスの構造を検証するための新しいコード品質ルールが追加されました。詳しくは、 [カスタム DAM Asset Lucene Oak インデックス](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) を参照してください。
+* `damAssetLucene` インデックスの構造を検証するための新しいコード品質ルールが追加されました。詳しくは、[カスタム DAM Asset Lucene Oak インデックス](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check)を参照してください。
 
-* 環境の詳細ページに、公開サービスとプレビューサービスの複数のドメイン名が表示されるようになりました（該当する場合）。詳しくは、 [環境の詳細](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) 」を参照してください。
+* 環境の詳細ページに、公開サービスとプレビューサービスの複数のドメイン名が表示されるようになりました（該当する場合）。詳しくは、[環境の詳細](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)を参照してください。
 
 ### バグの修正 {#bug-fixes-junecm}
 
@@ -100,7 +100,7 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 * ビュー設定が強化され、デフォルトのビューとデフォルトの並べ替えパラメーターを選択できるようになりました。
 * Linkshare のダウンロード機能は、非同期ダウンロードを使用してダウンロード速度を向上させます。
 * プロパティの述語に基づいて、フォルダーを検索およびフィルタリングできます。
-* [!DNL Experience Manager Assets] に [!DNL Adobe Document Cloud] を使用した PDF ビューアが埋め込まれ、サポートされているドキュメントをプレビューできます。この機能を使用すると、複雑な処理を行わずに、PDF ファイルやその他の複数ページファイルをプレビューできます。これにより、[!DNL Experience Manager] 6.5 との機能の等価性が向上します。
+* [!DNL Experience Manager Assets] を使用してPDFビューアを埋め込みます。 [!DNL Adobe Document Cloud] をクリックして、サポートされているドキュメントをプレビューします。 この機能を使用すると、複雑な処理を行わずに、PDF ファイルやその他の複数ページファイルをプレビューできます。これにより、[!DNL Experience Manager] 6.5 との機能の等価性が向上します。
 
 ### [!DNL Assets] で修正されたバグ  {#bugs-fixed-assets}
 

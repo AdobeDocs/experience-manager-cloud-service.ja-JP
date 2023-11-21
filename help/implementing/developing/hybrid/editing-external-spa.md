@@ -2,10 +2,10 @@
 title: AEM 内での外部 SPA の編集
 description: このドキュメントでは、スタンドアロン SPA を AEM インスタンスにアップロードし、編集可能なコンテンツのセクションを追加し、オーサリングを有効にするための推奨手順について説明します。
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2418'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -111,7 +111,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
    ![テキストコンポーネントのプロパティ](assets/external-spa-text-properties.png)
 
-   これらの値は、新しく作成された `AEMText` React コンポーネントにプロパティとして渡され、コンテンツのレンダリングに使用できます。
+   これらの値は、プロパティとして作成されたに渡されます。 `AEMText` React コンポーネントを使用し、コンテンツのレンダリングに使用できます。
 
    ```javascript
    import React from 'react';
@@ -343,7 +343,7 @@ mvn clean install -PautoInstallSinglePackage
 
 1. SPA ルーティング内のヘルパーを追加します。
 
-   * 新しく作成されたページは、AEMで期待されたコンテンツをまだレンダリングできません。 これは、ルーターが `/test` のパスを想定しているのに対し、AEM のアクティブパスは `/wknd-spa-react/us/en/test` であるからです。AEM 固有の URL 部分を受け入れるには、SPA 側にヘルパーを追加する必要があります。
+   * 作成されたページは、AEMで期待されたコンテンツをまだレンダリングできません。 これは、ルーターが `/test` のパスを想定しているのに対し、AEM のアクティブパスは `/wknd-spa-react/us/en/test` であるからです。AEM 固有の URL 部分を受け入れるには、SPA 側にヘルパーを追加する必要があります。
 
    ![ルーティングヘルパー](assets/external-spa-router-helper.png)
 
@@ -356,7 +356,7 @@ mvn clean install -PautoInstallSinglePackage
 
 1. AEM でのページの編集を確認します。
 
-   * プロジェクトをAEMにデプロイし、新しく作成した `test` ページに貼り付けます。 これで、ページコンテンツがレンダリングされ、AEM コンポーネントが編集可能になります。
+   * プロジェクトをAEMにデプロイし、作成した `test` ページに貼り付けます。 これで、ページコンテンツがレンダリングされ、AEM コンポーネントが編集可能になります。
 
 ## フレームワークの制限 {#framework-limitations}
 

@@ -1,10 +1,10 @@
 ---
 title: アダプティブフォームの数式とは
 description: アダプティブフォームの式を使用して、自動検証や演算を追加したり、セクションの表示のオン／オフを切り替えたりします。
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2698'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -119,7 +119,7 @@ ht-degree: 98%
 
 **戻り値のタイプ**：式は、アコーディオンのタイトルとなる文字列を返します。
 
-**例**：“Account number : “ + textbox1.value
+**例：**&quot;Account number : &quot; + textbox1.value
 
 ### 検証式 {#validate-expression}
 
@@ -182,7 +182,7 @@ ht-degree: 98%
 
 ### 必須 {#required}
 
-コンポーネントを必須にするには、コンポーネントの **編集** ダイアログで、 **タイトルとテキスト／必須** オプションを選択します。また、適切な必須メッセージも追加できます（オプション）。
+コンポーネントを必須にするには、コンポーネントの&#x200B;**編集**&#x200B;ダイアログで、**タイトルとテキスト／必須**&#x200B;オプションを選択します。また、適切な必須メッセージを追加することもできます（オプション）。
 
 ### 検証パターン {#validation-patterns}
 
@@ -200,7 +200,7 @@ ht-degree: 98%
 
 ### GuideBridge - API とイベント {#guidebridge-apis-and-events}
 
-GuideBridge は、ブラウザーのメモリーモデルでアダプティブフォームとやり取りするのに使用できる API のコレクションです。Guide Bridge API、クラスメソッド、公開されたイベントについて詳しくは、「[アダプティブフォーム用 JavaScript™ ライブラリ API リファレンス](https://helpx.adobe.com/jp/aem-forms/6/javascript-api/)」を参照してください。
+GuideBridge は、ブラウザーのメモリモデルでアダプティブFormsとやり取りする際に使用できる API のコレクションです。 Guide Bridge API、クラスメソッド、公開されたイベントについて詳しくは、「[アダプティブフォーム用 JavaScript™ ライブラリ API リファレンス](https://helpx.adobe.com/jp/aem-forms/6/javascript-api/)」を参照してください。
 
 >[!NOTE]
 >

@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '6663'
+source-wordcount: '6661'
 ht-degree: 99%
 
 ---
@@ -52,7 +52,7 @@ Experience Platform タグとの統合の主なユースケースは、Experienc
 
 ### Adobe Analytics を使用したトラッキングについて   {#about-tracking-using-adobe-analytics}
 
-Adobe Analytics を使用すると、エンドユーザーが Web サイト上で Dynamic Media ビューアとやり取りしたときに実行したアクションを追跡できます。また、Adobe Analytics では、ビューア固有のデータも追跡できます。例えば、ビューの読み込みイベントを、アセット名や、発生したズーム操作、ビデオ再生操作などと共に追跡して記録できます。
+Adobe Analyticsでは、Web サイト上でユーザーがDynamic Mediaビューアとやり取りしたときに実行したアクションを追跡できます。 また、Adobe Analytics では、ビューア固有のデータも追跡できます。例えば、ビューの読み込みイベントを、アセット名や、発生したズーム操作、ビデオ再生操作などと共に追跡して記録できます。
 
 Experience Platform タグでは、*データ要素*&#x200B;と&#x200B;*ルール*&#x200B;の概念を組み合わせて、Adobe Analytics のトラッキングを有効にします。
 
@@ -221,9 +221,9 @@ Dynamic Media ビューアは web ページ上で一意の識別子を持ちま�
    * Core Experience Platform タグ拡張機能のキー押下イベントをトリガーとして使用。
    * **[!UICONTROL ZoomScale]** データ要素の値を Adobe Analytics に送信。
 
-ここで、エンドユーザーが 2 つのビューアで web ページを読み込んだとします。*viewer1* では 50％の拡大率でズームインし、次に、*viewer2* では 25％の拡大率でズームインします。*viewer1* では、画像がパンされ、最後にキーボードのキーが押されます。
+次に、ユーザーが 2 つのビューアで Web ページを読み込んだとします。 *viewer1* では 50％の拡大率でズームインし、次に、*viewer2* では 25％の拡大率でズームインします。*viewer1* では、画像がパンされ、最後にキーボードのキーが押されます。
 
-エンドユーザーのアクティビティによって、Adobe Analytics に対して次の 2 つのトラッキングコールが実行されます。
+このユーザーのアクティビティによって、Adobe Analyticsに対して次の 2 つのトラッキングコールが実行されます。
 
 * 最初の呼び出しは、ユーザーが *viewer1* でパンしたときに **[!UICONTROL TrackPan]** ルールがトリガーされることから発生します。この呼び出しでは、**[!UICONTROL ZoomScale]**&#x200B;データ要素の値として 50％が送信されます。これはデータ要素が、ルールが&#x200B;*viewer1*&#x200B;によってトリガーされることを認識しており、対応するスケール値をフェッチするためです。 
 * 2 回目の呼び出しは、ユーザーがキーボードのキーを押したときに **[!UICONTROL TrackKey]** ルールがトリガーされるので発生します。ルールをトリガーしたのがビューアでなかったので、この呼び出しでは **[!UICONTROL ZoomScale]** データ要素の値として 25％が送信されます。このようにして、データ要素は最新の値を返します。
@@ -257,7 +257,7 @@ Dynamic Media ビューア拡張機能を使用すると、Dynamic Media ビュ�
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-ただし、別の方法を使用して、データ要素の作成をスキップすることは可能です。引数は、Dynamic Media ビューアイベントから直接参照できます。イベント引数の完全修飾名を **[!UICONTROL 値]** Analytics 変数割り当ての入力フィールド。 パーセント記号（%）で囲んでください。例：
+ただし、別の方法を使用して、データ要素の作成をスキップすることは可能です。引数は、Dynamic Media ビューアイベントから直接参照できます。Analytics 変数の割り当ての「**[!UICONTROL 値]**」入力フィールドに、イベント引数の完全修飾名を入力します。パーセント記号（%）で囲んでください。例：
 
 `%event.detail.dm.LOAD.asset%`
 
@@ -519,7 +519,7 @@ Experience Platform タグのプロパティは、すべての設定をまとめ
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-   新しく作成されたプロパティを選択し、に進みます。 *拡張機能のインストールとセットアップ*.
+   作成したプロパティを選択し、に進みます。 *拡張機能のインストールとセットアップ*.
 
 ### 拡張機能のインストールとセットアップ {#installing-and-setup-of-extensions}
 

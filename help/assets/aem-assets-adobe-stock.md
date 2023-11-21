@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2490'
 ht-degree: 96%
@@ -271,7 +271,7 @@ IMS アカウントを設定するには：
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／ **[!UICONTROL Adobe Stock]** に移動します。[!DNL Adobe Stock] クラウド設定を選択し、「**[!UICONTROL プロパティ]**」をクリックします。
 
-1. 新しく作成したユーザーグループを [!DNL Adobe Stock] 設定。 「**[!UICONTROL 保存して閉じる]**」をクリックします。
+1. 作成したユーザーグループを [!DNL Adobe Stock] 設定。 「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
    ![assign-user](assets/aem-stock-adduser.png)
 

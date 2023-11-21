@@ -2,7 +2,7 @@
 title: コアコンポーネントに基づいてアダプティブフォームに新しいロケールのサポートを追加するには、どうすればよいですか？
 description: アダプティブフォームに新しいロケールを追加する方法を説明します。
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1328'
 ht-degree: 22%
@@ -145,7 +145,7 @@ AEM Formsには、新しいロケールを簡単に追加できるサンプル�
    <filter root="/etc/languages"/>
    ```
 
-   ![新しく作成したフォルダーを `filter.xml` under `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
+   ![作成したフォルダーを `filter.xml` under `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
 ### 6.変更をコミットし、パイプラインをデプロイします。 {#commit-changes-in-repo-deploy-pipeline}
 

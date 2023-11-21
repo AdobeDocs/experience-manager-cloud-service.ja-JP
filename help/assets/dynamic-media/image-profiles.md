@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3528'
 ht-degree: 99%
@@ -134,7 +134,7 @@ ht-degree: 99%
 
    ![切り抜き](assets/crop.png)
 
-1. 「**[!UICONTROL 保存]**」を選択します。新しく作成されたプロファイルが、使用可能なプロファイルのリストに表示されます。
+1. 「**[!UICONTROL 保存]**」を選択します。作成したプロファイルが、使用可能なプロファイルのリストに表示されます。
 
 ## Dynamic Media イメージプロファイルの編集または削除 {#editing-or-deleting-image-profiles}
 

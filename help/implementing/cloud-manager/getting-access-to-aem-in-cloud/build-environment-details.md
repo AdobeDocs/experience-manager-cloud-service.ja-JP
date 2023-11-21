@@ -2,10 +2,10 @@
 title: ビルド環境
 description: Cloud Manager のビルド環境と、そこでコードがどのようにビルドされテストされるかを説明します。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1004'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -157,9 +157,9 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 * 変数には、英数字とアンダースコア（`_`）のみ使用できます。
 * 名前はすべて大文字にします。
 * 変数の数はパイプラインあたり最大 200 個までです。
-* 名前は 100 文字未満にする必要があります。
+* 名前は 100 文字以下にする必要があります。
 * `string` 型変数の値は 2048 文字未満にする必要があります。
-* `secretString` 型変数の値は 500 文字未満にする必要があります。
+* 各 `secretString` 変数型の値は 500 文字以下にする必要があります。
 
 Maven `pom.xml` ファイル内で使用する場合は、通常、次のような構文を使用して、これらの変数を Maven プロパティにマッピングすると便利です。
 

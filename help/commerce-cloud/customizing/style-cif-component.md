@@ -11,7 +11,7 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2535'
 ht-degree: 99%
@@ -57,7 +57,7 @@ ht-degree: 99%
    $ mvn clean install -PautoInstallPackage,cloud
    ```
 
-1. 必要な OSGi 設定を追加して、AEMインスタンスをAdobe Commerceインスタンスに接続したり、新しく作成したプロジェクトに設定を追加したりできます。
+1. 必要な OSGi 設定を追加して、AEMインスタンスをAdobe Commerceインスタンスに接続したり、作成したプロジェクトに設定を追加したりできます。
 
 1. この時点で、Adobe Commerce インスタンスに接続されたストアフロントの作業用のバージョンが必要です。`US`／`Home` ページ（[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)）にアクセスします。
 

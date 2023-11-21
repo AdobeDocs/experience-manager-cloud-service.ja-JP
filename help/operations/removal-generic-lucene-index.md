@@ -2,10 +2,10 @@
 title: 汎用 Lucene インデックスの削除
 description: 汎用 Lucene インデックスの計画的な削除と、それによって受ける可能性がある影響について説明します。
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1335'
-ht-degree: 91%
+ht-degree: 87%
 
 ---
 
@@ -154,6 +154,7 @@ AEM には、`granite/ui/components/coral/foundation/form/pathfield` の Sling �
 >[!NOTE]
 >
 >コンテンツフラグメントモデルエディターでは、`dam/cfm/models/editor/components/contentreference` の Sling リソースタイプを持つ専用のパスフィールドを使用します。
+>
 > * 現在のところ、これらはノードタイプが指定されていないクエリを実行するので、汎用 Lucene インデックスの使用に起因する WARN がログに記録されます。
 > * これらのコンポーネントのインスタンスでは間もなく、自動的に `cq:Page` および `dam:Asset` ノードタイプをデフォルトで使用するようになるので、顧客側でのさらなる対応は必要ありません。
 > * `nodeTypes` プロパティを追加して、これらのデフォルトのノードタイプをオーバーライドできます。
@@ -167,6 +168,6 @@ AEM には、`granite/ui/components/coral/foundation/form/pathfield` の Sling �
 
 アドビでは前述のログメッセージを監視し、汎用 Lucene インデックスをまだ利用しているお客様への連絡を試みます。
 
-短期的な緩和策として、アドビでは、必要に応じて、カスタムインデックス定義を直接お客様のシステムに追加して、汎用 Lucene インデックスの削除に起因する機能の問題やパフォーマンスの問題を防止します。
+短期的な緩和として、Adobeはカスタムインデックス定義を直接お客様のシステムに追加し、必要に応じて汎用 Lucene インデックスを削除した結果として、機能やパフォーマンスの問題を防ぎます。
 
-このような場合、お客様には、更新されたインデックス定義が提供され、Cloud Manager を使用してアプリケーションの今後のリリースにそれを組み込むように助言されます。
+このような場合、お客様には更新されたインデックス定義が提供され、Cloud Manager を介してアプリケーションの将来のリリースにそのインデックス定義を含めるようお勧めします。

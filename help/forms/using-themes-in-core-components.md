@@ -2,7 +2,7 @@
 title: アダプティブFormsでテーマを作成して使用するにはどうすればよいですか？
 description: テーマを使用して、コアコンポーネントを使用してアダプティブフォームのスタイルを設定し、視覚的な ID を付けることができます。 任意の数のアダプティブフォームで、テーマを共有できます。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2676'
 ht-degree: 18%
@@ -319,7 +319,7 @@ The `variable.scss` ファイルには、テーマのグローバル変数が含
 
 ##### 5.2.リポジトリに変更をプッシュします。 {#committing-the-changes}
 
-次に、変更をAEM FormsCloud Serviceのテーマリポジトリにプッシュします。.
+次に、変更をAEM FormsCloud Serviceのテーマリポジトリにプッシュします。
 
 1. テーマフォルダーのルートに移動します。  この場合、テーマのフォルダー名は次のようになります。 `aem-forms-theme-canvas`.
 1. コマンドプロンプトまたはターミナルを開きます。

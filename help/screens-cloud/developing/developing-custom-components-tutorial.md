@@ -2,7 +2,7 @@
 title: Screens as a Cloud Service 用カスタムコンポーネントの開発
 description: 以下のチュートリアルでは、AEM Screens 用のカスタムコンポーネントを作成する手順について説明します。AEM Screens では、他の AEM 製品の様々な既存のデザインパターンやテクノロジーを再利用しています。このチュートリアルでは、AEM Screens 用に開発する際の相違点と特別な考慮事項について重点的に説明します。
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 97%
@@ -423,7 +423,7 @@ Hello World コンポーネントは、シーケンスチャネルでの使用�
 
    /apps/settings/wcm/designs/we-retail-run を指しているデザイン設定
 
-1. 新しく作成した Idle Channel を編集して、開けるようにします。
+1. 作成した Idle Channel を編集して、開けるようにします。
 
 1. ページモードを&#x200B;**デザイン**&#x200B;モードに切り替えます。
 

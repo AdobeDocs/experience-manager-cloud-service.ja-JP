@@ -2,9 +2,9 @@
 title: GraphQL クエリの最適化
 description: ヘッドレスコンテンツ配信用の Adobe Experience Manager as a Cloud Service でコンテンツフラグメントをフィルタリング、ページング、並べ替える際に、GraphQL クエリを最適化する方法について説明します。
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1877'
 ht-degree: 65%
 
 ---
@@ -280,7 +280,7 @@ JCR レベルでフィルター式を評価できない場合が他にもいく�
 
 ### コンテンツフラグメントのネストを最小化 {#minimize-content-fragment-nesting}
 
-コンテンツフラグメントのネストは、カスタムコンテンツ構造をモデル化する優れた方法です。 ネストされたフラグメントを持つフラグメント（ネストされたフラグメントを持つ、など）を持つこともできます。
+コンテンツフラグメントのネストは、カスタムコンテンツ構造をモデル化する優れた方法です。 ネストされたフラグメントを含むフラグメントを持つこともできます。そのフラグメントには、ネストされたフラグメントも含まれ、その中に…などが含まれています。
 
 ただし、レベルが多すぎる構造を作成すると、GraphQLはネストされたすべてのコンテンツフラグメントの階層全体をトラバースする必要があるので、GraphQLクエリの処理時間が長くなる可能性があります。
 

@@ -4,10 +4,10 @@ description: 多言語 Web サイトを開発する際に、翻訳するコン�
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 86%
+source-wordcount: '752'
+ht-degree: 83%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 86%
 
 サイトのコンテンツを最初にオーサリングするための言語コピーが言語マスターです。言語マスターは、他の言語に翻訳されるソースです。
 
-サイトの各言語分岐は、言語コピーと呼ばれます。言語コピーのルートフォルダー（言語ルート）が、言語コピー内のコンテンツの言語を識別します。例えば、`/content/wknd/fr` は、フランス語の言語コピー用の言語ルートです。ソースサイトの翻訳の実行時に適切な言語がターゲットになるように、言語コピーでは、[正しく設定された言語ルート](preparation.md#creating-a-language-root)を使用する必要があります。
+サイトの各言語分岐は、言語コピーと呼ばれます。言語コピーのルートフォルダー（言語ルート）が、言語コピー内のコンテンツの言語を識別します。例えば、`/content/wknd/fr` は、フランス語の言語コピー用の言語ルートです。言語コピーでは [正しく設定された言語ルート](preparation.md#creating-a-language-root) したがって、ソースサイトの翻訳の実行時に正しい言語がターゲットになります。
 
 翻訳するサイトを準備するには、次の手順を使用します。
 

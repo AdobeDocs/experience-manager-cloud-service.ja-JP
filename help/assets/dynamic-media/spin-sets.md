@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 86%
@@ -168,7 +168,7 @@ ht-degree: 86%
 
    * ページの右上隅付近にプリセットを適用するには、「]**プリセット**[!UICONTROL 」を選択した後、すべてのアセットに一度に適用するプリセットを選択します。
 
-1. 「**[!UICONTROL 保存]**」を選択します。新しく作成したスピンセットが、作成元のフォルダーに表示されます。
+1. 「**[!UICONTROL 保存]**」を選択します。作成したスピンセットが、作成元のフォルダーに表示されます。
 
 ## スピンセットの表示 {#viewing-spin-sets}
 

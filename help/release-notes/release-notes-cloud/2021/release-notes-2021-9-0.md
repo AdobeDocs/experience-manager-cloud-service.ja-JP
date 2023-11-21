@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 リリースのリリースノート。'
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1573'
-ht-degree: 52%
+source-wordcount: '1572'
+ht-degree: 57%
 
 ---
 
@@ -111,10 +111,10 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### 新機能 {#what-is-new-screens}
 
-* Screens as a Cloud Service で、基本的な再生モニタリングがサポートされるようになりました。各 ping で様々な再生指標がレポートされるようになりました（デフォルトは 30 秒）。 指標に基づいて、様々なエッジケース（動きのないエクスペリエンス、空白の画面、スケジュールの問題など）を検出できます。 この機能を使用すると、プレーヤーがコンテンツを適切に再生しているかどうかをチームがリモートで監視できます。 空白の画面やフィールド内の壊れたエクスペリエンスに対する反応性が向上し、壊れたエクスペリエンスがエンドユーザーに表示されるリスクが低減します。
+* Screens as a Cloud Service で、基本的な再生モニタリングがサポートされるようになりました。各 ping で様々な再生指標がレポートされるようになりました（デフォルトは 30 秒）。 指標に基づいて、様々なエッジケース（動きのないエクスペリエンス、空白の画面、スケジュールの問題など）を検出できます。 この機能を使用すると、プレーヤーがコンテンツを適切に再生しているかどうかをチームがリモートで監視できます。 空白の画面やフィールド内の壊れたエクスペリエンスに対する反応性が向上し、壊れたエクスペリエンスがユーザーに表示されるリスクが低減します。
 詳しくは、[基本的な再生モニタリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring)を参照してください。
 
-* ビデオのサムネールが Screens as a Cloud Service でサポートされるようになりました。コンテンツ作成者は、画像をプレースホルダーとして使用し、コンテンツの再生とターゲティングを適切にテストし、実際のビデオが適切なチームで最終処理されるように、ビデオのサムネールを定義できます。 また、ビデオの再生に失敗した場合にも、画像を使用できます。
+* ビデオのサムネールが Screens as a Cloud Service でサポートされるようになりました。コンテンツ作成者は、ビデオのサムネールを定義して、その画像をプレースホルダーとして使用できるようにし、実際のビデオを担当チームが仕上げている間に、コンテンツの再生とターゲティングを適切にテストすることができます。また、ビデオの再生に失敗した場合にも、画像を使用できます。
 詳しくは、[ビデオのサムネールサポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html)を参照してください。
 
 ### バグの修正 {#bug-fixes-screens}
@@ -160,15 +160,15 @@ AEM as a Cloud Service 2021.9.0 の Cloud Manager のリリース日は 2021年9
 
 * Cloud Manager で使用される AEM プロジェクトアーキタイプのバージョンが 30 に更新されました。
 
-* Cloud Manager ランディングページのプログラムカードと関連するエクスペリエンスが更新されました。
+* Cloud Manager ランディングページのプログラムカードおよび関連するエクスペリエンスが更新されました。
 
 * コード品質ステップログに、OakPal スキャンプロセスの詳細なログ情報が含まれるようになりました。
 
-* アクティビティページのメニューオプションに、 **ログをダウンロード** 完了したコードジェネレーターの実行。 これを選択すると、ビルド手順のログがダウンロードされます。
+* アクティビティページのメニューオプションに、完了したコードジェネレーター実行に適用できる「**ログをダウンロード**」オプションが含まれるようになりました。これを選択すると、ビルド手順のログがダウンロードされます。
 
 * プログラムカードを直接クリックすると、 Cloud Manager の概要ページに移動するようになりました。
 
-### バグ修正 {#bug-fixes-sept}
+### バグの修正 {#bug-fixes-sept}
 
 * 設定可能な IP の最大数に達したプログラムに IP メッセージを追加しようとする許可リストに加えると、よりわかりやすくなるメッセージが表示されるようになりま許可リストに加えるした。
 
@@ -192,7 +192,7 @@ Cloud Acceleration Manager のリリース日は 2021年10月4日です。
 
 ### 新機能 {#what-is-new-ctt}
 
-* 以下に一覧表示されている機能を含め、ユーザーエクスペリエンスがシンプルになり、ユーザーマッピングが改善されました。詳しくは、 [ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=ja#using-user-mapping-tool).
+* 以下に一覧表示されている機能を含め、ユーザーエクスペリエンスがシンプルになり、ユーザーマッピングが改善されました。詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=ja#using-user-mapping-tool)を参照してください。
    * ユーザーマッピングを実行する前に、User Management API への接続をテストできます
    * エラーを適切にスキップし、「ユーザーマッピング」アクティビティを続行できます
    * アクセストークンの有効期限が 24 時間後に切れた場合、ユーザーマッピングが失敗しなくなりました。 最後に停止した位置からユーザーマッピングを再実行できます。

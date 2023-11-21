@@ -4,10 +4,10 @@ description: このページでは、チームメンバーを Cloud Manager 製�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1527'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -181,7 +181,7 @@ Cloud Manager は、AEM as a Cloud Service の不可欠な部分であり、コ�
 
 ## その他のリソース {#additional-resources}
 
-前述したようにオンボーディングジャーニーを続行することをお勧めします。このジャーニーの特定のトピックについて詳しく調べたい場合は、これらのリソースを追加します。
+前述のように、オンボーディングジャーニーを続行することをお勧めします。 このジャーニーの特定のトピックについて詳しく調べたい場合は、これらのリソースを追加します。
 
 * [Cloud Manager の概要](/help/onboarding/cloud-manager-introduction.md) - Cloud Manager、Cloud Manager プログラム、環境について説明します。
 * [Cloud Manager 製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md) - AEM as a Cloud Service のチームおよび製品プロファイルについて説明します。

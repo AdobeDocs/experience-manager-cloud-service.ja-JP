@@ -3,7 +3,7 @@ title: AEM FormsインスタンスでアダプティブFormsまたはPDF forms�
 description: アダプティブForms、PDF forms、テーマおよびその他のサポートアセットを、AEMインスタンスとの間で移行する方法について説明します。
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 94%
@@ -184,7 +184,7 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
    指定した名前を持つフォルダーが既に存在する場合は、送信はエラーになり失敗します。名前フィールドの横に表示されるエラー ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) アイコンの上にマウスポインターを置くと、エラーメッセージを見ることができます。
 
-   新しく作成したフォルダーをタップしてフォルダー内に移動し、そのフォルダー内にアセットやフォルダーを作成できます。 さらに、フォルダーを選択し、ダウンロード、削除、名前の編集用にそのフォルダーをキューに入れることができます。
+   作成したフォルダーをタップしてフォルダー内に移動し、そのフォルダー内にアセットやフォルダーを作成できます。 さらに、フォルダーを選択し、ダウンロード、削除、名前の編集用にそのフォルダーをキューに入れることができます。
 
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}

@@ -2,10 +2,10 @@
 title: レスポンシブレイアウト
 description: AEMを使用すると、ページのレスポンシブレイアウトを実現できます
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1731'
-ht-degree: 83%
+source-wordcount: '1732'
+ht-degree: 82%
 
 ---
 
@@ -149,7 +149,7 @@ AEMでは、デバイスの幅に応じたレイアウトを定義できます�
 >
 >レイアウトコンテナは段落システムです。コンポーネントを削除すると、レイアウトグリッドと、コンテナ内に保持されているすべてのコンポーネント（およびそのコンテンツ）の両方が削除されます。
 
-1. グリッドのプレースホルダーにマウスポインターを置くかタップすると、アクションメニューが表示されます。
+1. グリッドプレースホルダーの上にマウスポインターを置くかタップすると、アクションメニューが表示されます。
 
    ![レイアウトコンテナへの追加](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 

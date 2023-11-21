@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service でのプレーヤーのインストールと設定
 description: ここでは、Screens as a Cloud Service でプレーヤーをインストールおよび設定する方法について説明します。
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '582'
-ht-degree: 100%
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+workflow-type: tm+mt
+source-wordcount: '581'
+ht-degree: 98%
 
 ---
 
@@ -53,7 +53,7 @@ AEM Screens Player での基本的な再生モニタリングにより、以下�
 
 * 空白の画面やフィールド内のエクスペリエンスの不具合に対する反応性の向上
 
-* 不具合のあるエクスペリエンスがエンドユーザーに表示されるリスクの軽減
+* ユーザーに壊れたエクスペリエンスを表示するリスクを軽減します。
 
 ### プロパティについて {#understand-properties}
 

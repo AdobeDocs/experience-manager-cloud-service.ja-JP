@@ -2,10 +2,10 @@
 title: AEM Formsのローカル開発環境を設定する方法を教えてください。
 description: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境の設定
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2846'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -286,7 +286,7 @@ Dispatcher は、CDN と AEM パブリッシュ層の間にセキュリティと
 
 ### ローカル Dispatcher の設定 {#setup-local-dispatcher}
 
-[!DNL Experience Manager] as a Cloud Service SDK には、推奨される Dispatcher ツールのバージョンが含まれており、これにより、Dispatcher をローカルで設定、検証、シミュレーションできます。Dispatcher ツールは Docker ベースで、Apache HTTP Web サーバーおよび Dispatcher 設定ファイルを互換性のある形式に変換し、Docker コンテナで実行される Dispatcher にデプロイするコマンドラインツールを提供します。
+The [!DNL Experience Manager] As a Cloud Service SDK には、Dispatcher をローカルで設定、検証、シミュレーションする、推奨される Dispatcher ツールバージョンが含まれています。 Dispatcher ツールは Docker ベースで、Apache HTTP Web サーバーおよび Dispatcher 設定ファイルを互換性のある形式に変換し、Docker コンテナで実行される Dispatcher にデプロイするコマンドラインツールを提供します。
 
 Dispatcher 上のキャッシュを使用すると、[!DNL AEM Forms] は、アダプティブフォームをクライアントで事前入力できます。キャッシュにより、事前入力されたフォームのレンダリング速度が向上します。
 
@@ -298,7 +298,7 @@ Dispatcher を設定する詳細な手順については、「[ローカル Disp
 
 1. AEM プロジェクトを開き、`\src\conf.dispatcher.d\available_farms` に移動します
 1. `default.farm` ファイルのコピーを作成します（例：`forms.farm`）。
-1. 新しく作成した `forms.farm` ファイルを編集し、次のコードを置き換えます。
+1. 作成した `forms.farm` ファイルを編集し、次のコードを置き換えます。
 
    ```json
    #/ignoreUrlParams {

@@ -2,10 +2,10 @@
 title: SPA の概要およびガイド
 description: この記事では、SPA の概念を説明し、基本的な SPA アプリケーションを使用したオーサリング方法を紹介し、基礎となる AEM SPA エディターとの関連を示します。
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 94%
+source-wordcount: '2065'
+ht-degree: 93%
 
 ---
 
@@ -130,7 +130,7 @@ AEM SPA エディターを活用する SPA が構築されている場合、コ�
 
 ## SPA アプリと AEM SPA エディター {#spa-apps-and-the-aem-spa-editor}
 
-エンドユーザーが SPA を動作させ、SPA ページを調査すると、SAP アプリが AEM の SPA エディターと連携する仕組みをより深く理解できます。
+ユーザーがSPAを動作させ、SPAページを調べると、SAP アプリがAEMのSPA Editor と連携する仕組みをより深く理解できます。
 
 ### SPA アプリケーションの使用 {#using-an-spa-application}
 

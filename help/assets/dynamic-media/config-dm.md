@@ -4,7 +4,7 @@ description: Adobe Experience Manager as a Cloud Service で Dynamic Media を�
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3794'
 ht-degree: 97%
@@ -84,7 +84,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    新しいパスワードは、**[!UICONTROL Dynamic Media 設定を作成]**&#x200B;ページの右上隅にある「**[!UICONTROL 保存]**」を選択したときに保存されます。
 
-   次を選択した場合： **[!UICONTROL キャンセル]** （内） **[!UICONTROL パスワードを変更]** ダイアログボックスで、新しく作成したDynamic Media設定を保存する際には、新しいパスワードを入力する必要があります。
+   次を選択した場合： **[!UICONTROL キャンセル]** （内） **[!UICONTROL パスワードを変更]** ダイアログボックスで、作成したDynamic Media設定を保存する際には、新しいパスワードを入力する必要があります。
 
    [Dynamic Media のパスワードの変更](#change-dm-password)も参照してください。
 

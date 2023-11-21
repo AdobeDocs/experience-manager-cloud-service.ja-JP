@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 87%
@@ -190,7 +190,7 @@ ht-degree: 87%
    >
    >画像セットを作成するときに、画像セットのサムネールを変更できます。または、画像セット内のアセットに基づいて Experience Manager が自動的にサムネールを選択するように設定することもできます。サムネールを選択するには、画像セットエディターページの「タイトル」フィールドの上にある「**[!UICONTROL サムネールを変更]**」を選択します。次に、任意の画像を選択します（他のフォルダーに移動して画像を探すこともできます）。サムネールを選択した状態で、Experience Manager で画像セットからサムネールを自動的に生成する場合は、「**[!UICONTROL 自動サムネールに]** **[!UICONTROL 切り替え]**」を選択します。
 
-1. 「**[!UICONTROL 保存]**」をクリックします。新しく作成した画像セットが、作成元のフォルダに表示されます。
+1. 「**[!UICONTROL 保存]**」をクリックします。作成した画像セットが、作成元のフォルダに表示されます。
 
 ## 画像セットの表示 {#viewing-image-sets}
 

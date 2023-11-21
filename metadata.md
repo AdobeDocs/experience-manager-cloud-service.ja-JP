@@ -7,17 +7,17 @@ type: Documentation
 solution: Experience Manager
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 cloud: Experience Cloud
-source-git-commit: a7a8b14c6d95f704c6ea4ee0d1424e77df045a4c
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 77%
+source-wordcount: '89'
+ht-degree: 58%
 
 ---
 
 
 # 内部使用メタデータ
 
-GitHub オーサリングシステムのメタデータは階層的で、次の増加する先例レベルが定義されます。
+GitHub オーサリングシステムのメタデータは階層的で、次に示すように前例のレベルが高くなっていきます。
 
 1. metadata.md
 1. 目次

@@ -2,10 +2,10 @@
 title: Workfront と Experience Manager Assets 間のアセットメタデータのマッピング設定
 description: Adobe Workfront と Experience Manager as a Cloud Service のアプリケーション間で、アセットメタデータのフィールドをマッピングします。 メタデータフィールドをマッピングした結果、アセットを Workfront から Experience Manager Assets に送信すると、マッピングされたアセットメタデータを Experience Manager Assets で表示できます。
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 97%
+source-wordcount: '1024'
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ Workfront で「プロジェクト名」、「ドキュメント名」および�
 
 1. Experience Manager Assets 統合を選択し、「**[!UICONTROL 編集]**」をクリックします。
 
-1. 「**[!UICONTROL メタデータ]**」をクリックします。 「**[!UICONTROL Assets]**」タブで、[!UICONTROL プロジェクト]／[!UICONTROL 名前] Workfront フィールドを `wm:projectName`Experience Manager Assets フィールドにマッピングします。 完全に一致するものが見つからない場合、アドビでは、一番よく一致している Workfront と Experience Manager Assets のフィールドを探してマッピングすることをお勧めします。 様々なデータタイプのフィールドをマッピングするのを避けることができます。 例えば、Workfront の日付フィールドを Assets の説明フィールドにマッピングするとします。
+1. 「**[!UICONTROL メタデータ]**」をクリックします。 「**[!UICONTROL Assets]**」タブで、[!UICONTROL プロジェクト]／[!UICONTROL 名前] Workfront フィールドを `wm:projectName`Experience Manager Assets フィールドにマッピングします。 完全一致が見つからない場合は、WorkfrontとExperience Manager Assetsのフィールドをマッピングするうえで最適な一致を探すことをAdobeにお勧めします。 様々なデータタイプのフィールドをマッピングするのを避けることができます。 例えば、Workfront の日付フィールドを Assets の説明フィールドにマッピングするとします。
 1. [!UICONTROL ドキュメント]／[!UICONTROL 名前] Workfront フィールドを `wm:documentName`Experience Manager Assets フィールドにマッピングします。
 
    ![Workfront でのマッピング](assets/workfront-metadata-mapping.png)

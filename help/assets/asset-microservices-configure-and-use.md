@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2928'
 ht-degree: 98%
@@ -246,7 +246,7 @@ OSGi 設定のデプロイ方法については、[ [!DNL Experience Manager]](/
    * タイトル：自動開始ワークフローを無効にする
    * 名前：disable-auto-start-workflow
 1. 「__完了__」を選択して、ワークフローモデルを作成します。
-1. __選択__ および __編集__ 新しく作成されたワークフローモデル
+1. __選択__ および __編集__ 作成されたワークフローモデル
 1. ワークフローモデルエディターで、モデル定義から「__ステップ 1__」を選択して削除します。
 1. __サイドパネル__&#x200B;を開き、「__ステップ__」を選択します。
 1. 「__DAM アセットの更新ワークフローの完了__」ステップをモデル定義にドラッグします。

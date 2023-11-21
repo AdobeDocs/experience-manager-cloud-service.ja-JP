@@ -2,10 +2,10 @@
 title: AEM Formsas a Cloud Serviceリリースノート
 description: AEM Formsas a Cloud Serviceの新機能、ベータリリース、プレリリース情報などについて説明します。
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
-source-git-commit: 8074c0e9566b679830a56094bc9b47cb22f4bb4a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2028'
-ht-degree: 93%
+source-wordcount: '2024'
+ht-degree: 83%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms-oct-2021}
 
-- **Analytics for Adaptive Forms**：ログイン済みの場合と未ログイン（匿名）の場合の行動を Adobe Analytics for Adaptive Forms で捉え追跡して、エンドユーザーに関するインサイトを収集できるようになりました。十分な情報に基づいて決定を行い、エンドユーザーのエクスペリエンスを向上させることができます。
+- **Analytics for Adaptive Forms**:Adobe Analytics for Adaptive Formsでログイン済みとログインしていない（匿名）の両方の動作を取得および追跡して、ユーザーインサイトを収集できるようになりました。 データに基づく情報に基づく意思決定をおこない、ユーザーエクスペリエンスを向上させるのに役立ちます。
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms-oct-2021}
 
@@ -52,7 +52,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
 
 - **アダプティブフォームでの Adobe Sign の役割の使用**：ビジネスおよびエンタープライズサービスレベルの Adobe Sign では、ワークフロー要件に適切に合致するように、契約書受信者の役割を署名者以外にも拡大できます。[契約書の受信者ごとに、アダプティブフォームでの自分の役割を設定できる](working-with-adobe-sign.md#addsignerstoanadaptiveform)ようになりました。デフォルトの役割は署名者です。
 
-- **Analytics for Adaptive Forms**：[Adobe Analytics for Adaptive Forms](integrate-aem-forms-with-adobe-analytics.md) でエンドユーザーの行動を捉え追跡して、エンドユーザーに関するインサイトを収集できるようになりました。十分な情報に基づいて決定を行い、エンドユーザーのエクスペリエンスを向上させることができます。
+- **Analytics for Adaptive Forms**：をキャプチャし、 [Adobe Analyticsを介したユーザーの行動の追跡](integrate-aem-forms-with-adobe-analytics.md) アダプティブFormsでのユーザーインサイトの収集 データに基づく情報に基づく意思決定をおこない、ユーザーエクスペリエンスを向上させるのに役立ちます。
 
 - **AEM Forms と Microsoft Dynamics および Salesforce との簡単な接続**：Microsoft Dynamics と Salesforce のデータソース設定およびデータモデルが標準で提供されるので、[開発者が Microsoft Dynamics と Salesforce をアダプティブフォームのデータソースとしてより迅速かつ簡単に設定できる](configure-msdynamics-salesforce.md)ようになりました。
 
@@ -61,7 +61,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
 ### [!DNL Forms] のベータ版機能 {#sep-what-is-new-forms-prerelease}
 
 - **統合ストレージコネクタ：**統合ストレージコネクタを使用すると、顧客側で管理されるリポジトリ内の処理中のデータを外部化することができます。例えば、個人の機密情報（SPD）を含んだ処理中の AEM ワークフローデータ（AEM ワークフロー変数データ）を顧客側で管理されるリポジトリに格納できます。
-  <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
+  <!--* Enable Forms Portal's save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) では、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。 API により、以下のような機能を備えたアプリケーションを作成することができます。
    - テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成します。
@@ -90,7 +90,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
 
   * Enable searching of forms based on a various criteria, such as form properties, metadata, and tags.
 
-  * Lists drafts and submissions related to Adaptive Form created by end user.
+  * Lists drafts and submissions related to Adaptive Form created by user.
 
   -->
 
@@ -108,9 +108,9 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
 
 ### [!DNL Forms] のベータ版機能 {#aug-what-is-new-forms-prerelease}
 
-- **統合ストレージコネクタ：**&#x200B;統合ストレージコネクタを使用すると、顧客側で管理されるリポジトリ内の処理中のデータを外部化することができます。例えば、次のことができます。
+- **統合ストレージコネクタ：**&#x200B;統合ストレージコネクタを使用すると、顧客側で管理されるリポジトリ内の処理中のデータを外部化することができます。例えば、
 
-   - Forms ポータルの保存および再開機能を有効にし、顧客側で管理されるデータリポジトリにアダプティブフォームのドラフトを格納する
+   - Forms Portal の保存と再開機能を有効にし、顧客が管理するデータリポジトリにアダプティブフォームのドラフトを保存します。
    - 個人の機密情報（SPD）を含んだ処理中の AEM ワークフローデータ（AEM ワークフロー変数データ）を、顧客側で管理されるリポジトリに格納する
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) では、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。 API により、以下のような機能を備えたアプリケーションを作成することができます。
@@ -124,7 +124,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
 
 - **アダプティブフォームでの Adobe Sign の役割の使用**：ビジネスおよびエンタープライズサービスレベルの Adobe Sign では、ワークフロー要件に適切に合致するように、契約書受信者の役割を署名者以外にも拡大できます。[契約書の受信者ごとに、アダプティブフォームでの自分の役割を設定できる](working-with-adobe-sign.md#addsignerstoanadaptiveform)ようになりました。デフォルトの役割は署名者です。
 
-- **Analytics for Adaptive Forms**：Adobe Analytics for Adaptive Forms でエンドユーザーの行動を捉え追跡して、エンドユーザーに関するインサイトを収集できるようになりました。十分な情報に基づいて決定を行い、エンドユーザーのエクスペリエンスを向上させることができます。
+- **Analytics for Adaptive Forms**:Adobe Analyticsを使用してユーザーの行動をキャプチャおよび追跡し、アダプティブFormsでユーザーのインサイトを収集できるようになりました。 データに基づく情報に基づく意思決定をおこない、ユーザーエクスペリエンスを向上させるのに役立ちます。
 
 - **AEM Forms と Microsoft Dynamics および Salesforce との簡単な接続**：Microsoft Dynamics と Salesforce のデータソース設定およびデータモデルが標準で提供されるので、[開発者が Microsoft Dynamics と Salesforce をアダプティブフォームのデータソースとしてより迅速かつ簡単に設定できる](configure-msdynamics-salesforce.md)ようになりました。
 
@@ -207,9 +207,9 @@ Output as a Cloud service：出力サービスを使用すると、XDP テンプ
 
 - **Adobe Sign 対応アダプティブフォームでの Government ID 認証方法の使用**
 
-  高度な機械学習アルゴリズムを活用した Adobe Sign の Government ID プロセスにより、世界中の企業がその受信者の ID を高品質に認証できるように支援します。Adobe Sign 対応のアダプティブフォームで、Government ID 認証方法を使用できるようになりました。
+  高度な機械学習アルゴリズムを活用したAdobe Signの政府 ID プロセスにより、世界中の企業が受信者の ID の高品質な認証を保護できます。 Adobe Sign 対応のアダプティブフォームで、Government ID 認証方法を使用できるようになりました。
 
-  Government ID は、政府発行の ID 文書[（運転免許証、国民 ID、パスポート）の画像をアップロード](https://helpx.adobe.com/jp/sign/using/adobesign-authentication-government-id.html)するように受信者に指示し、その文書を評価して信頼性を確認するプレミアム ID 認証方法です。
+  政府機関 ID は、受信者に対して [政府発行の ID 文書（運転免許証、国籍 ID、パスポート）の画像をアップロードする](https://helpx.adobe.com/jp/sign/using/adobesign-authentication-government-id.html)をクリックし、そのドキュメントを評価して、真正なものであるかを確認します。
 
 - **非同期のアダプティブフォーム送信に対するフォーム内署名機能の使用をサポート**
 

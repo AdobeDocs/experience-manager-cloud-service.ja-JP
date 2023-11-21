@@ -5,10 +5,10 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 95%
+source-wordcount: '763'
+ht-degree: 92%
 
 ---
 
@@ -117,7 +117,7 @@ GraphQL エンドポイントを紹介するために、サンプルコンテン
 
 * Apollo Client をカスタマイズする代わりに、AEM と Adobe Commerce GraphQL データを組み合わせて単一のフェデレーテッド GraphQL エンドポイントにすることができます。
 * PWA Studio アプリケーションでは、UPWARD 設定のプロキシを介さずに、AEM GraphQL エンドポイント URL を直接使用することもできます。プロキシは別のレイヤー（CDN など）に移動することもできます。
-* どのアプローチが最適かは、エンドユーザーへの PWA Studio アプリケーションの提供方法によっても大きく異なります。
+* また、どのアプローチが最適かは、ユーザーにPWA Studio・アプリケーションを提供する方法によっても大きく異なります。
 
 この拡張機能には 2 つの例が用意されています。
 

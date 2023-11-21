@@ -2,10 +2,10 @@
 title: プログラムの編集
 description: 実稼動およびサンドボックスプログラムを編集し、作成後にオプションを調整する方法について説明します。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 44%
+source-wordcount: '506'
+ht-degree: 45%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 44%
 
    ![セキュリティ設定を編集](assets/edit-program-security.png)
 
-   * HIPAA を有効または無効にするには、次の操作を行う必要があります： [プログラムの作成。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+   * HIPAA は、次の後は有効または無効にできません： [プログラムの作成。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
       * アドビの HIPAA 対応ソリューションの実装について詳しくは、[こちら](https://www.adobe.com/go/hipaa-ready)を参照してください。
    * 有効化すると、WAF-DDOS 保護は、 [実稼動以外のパイプライン。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
 

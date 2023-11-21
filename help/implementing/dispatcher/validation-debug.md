@@ -3,7 +3,7 @@ title: Dispatcher ツールを使用した検証とデバッグ
 description: ローカル検証、デバッグ、柔軟なモードのファイル構造、およびレガシーモードから柔軟なモードに移行する方法について説明します。
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 4a79284d879af1920c839a68be14619d1e35f7e9
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2990'
 ht-degree: 94%
@@ -396,7 +396,7 @@ Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも�
 | `conf.d/modsec` |
 | `conf.d/rewrites` |
 
-例えば、新しく作成したディレクトリの下にファイルを含めることができます。 `conf.d/includes` ディレクトリの内容は次のとおりです。
+例えば、以下で作成したディレクトリにファイルを含めることができます。 `conf.d/includes` ディレクトリの内容は次のとおりです。
 
 ```
 Include conf.d/includes/mynewdirectory/myincludefile.conf

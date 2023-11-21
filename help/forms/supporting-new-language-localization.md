@@ -2,7 +2,7 @@
 title: 基盤コンポーネントに基づいてアダプティブフォームに新しいロケールのサポートを追加する方法を教えてください。
 description: アダプティブFormsの場合は、追加設定なしで提供されるロケールとは別に、追加言語用のロケールを追加できます。
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 80%
@@ -104,7 +104,7 @@ I18N.js
 1. 既に存在しない場合は、`<locale-name>`デフォルトのロケール値`de`、`es`、`fr`、`it`、`pt-br`、`zh-cn`、`zh-tw`、`ja`、`ko-kr` を追加します。
 
 1. `<locale>` を `/etc/languages` の `languages` プロパティの値に追加します。
-1. 新しく作成したフォルダーを `filter.xml` etc/META-INF/の下[フォルダー階層] 形式：
+1. 作成したフォルダーを `filter.xml` etc/META-INF/の下[フォルダー階層] 形式：
 
    ```
    <filter root="/etc/clientlibs/[locale-name]"/>

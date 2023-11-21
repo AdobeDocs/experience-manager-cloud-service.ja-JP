@@ -3,10 +3,10 @@ title: Edge Delivery の概要
 description: Edge 配信サービス（EDS）の概要。
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 74%
+source-wordcount: '863'
+ht-degree: 72%
 
 ---
 
@@ -46,7 +46,7 @@ Edge Delivery は Adobe Experience Manager の構成要素なので、Edge Deliv
 
 ## Edge Delivery へのアクセス {#getting-access}
 
-Edge Delivery の使用を開始するのは簡単です。[はじめに - 開発者向けチュートリアル](https://www.hlx.live/developer/tutorial)に従って、作業に取りかかります。
+Edge Delivery Servicesの使用を簡単に開始できます。 [はじめに - 開発者向けチュートリアル](https://www.hlx.live/developer/tutorial)に従って、作業に取りかかります。
 
 ## アドビからのヘルプの入手 {#adobe-gethelp}
 

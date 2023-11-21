@@ -2,7 +2,7 @@
 title: コンテンツ変換サービスの概要
 description: コンテンツトランスフォーマーを使用して BPA で報告されるコンテンツ関連の問題を検出および修正する方法について説明します。
 exl-id: aa3397ff-3dd6-4c67-9064-cb9b19bf1c73
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 87%
@@ -24,7 +24,7 @@ ht-degree: 87%
 | DOPI | deprecated.ordered.index | 非推奨のインデックスを削除します。 |
 | OAUI | non.migrated.oauth.users | これらのユーザーを削除して、AEM as a Cloud Service に移行されないようにします。 |
 | PCX | page.complexity.medium <br> page.complexity.high | ページ／子を削除するか、または別の場所に移動して AEM as a Cloud Service に移行されないようにします。 |
-| REP | forward.replication <br> reverse.replication <br> standard.replication.agent.modification <br> custom.replication.agent.detection | 新しく作成したレプリケーションエージェントを削除します。 <br> または <br> 変更または追加したプロパティを削除します。 |
+| REP | forward.replication <br> reverse.replication <br> standard.replication.agent.modification <br> custom.replication.agent.detection | 作成したレプリケーションエージェントを削除します。 <br> または <br> 変更または追加したプロパティを削除します。 |
 | URS | clientlibs.location <br> file.location <br> node.location <br> workflow.location | 正しい場所に移動して、移行中の問題を回避します。 |
 | URS | node.size | ノードを一時的に `/etc/packages/content-transformation/paths` に移動し、AEM as a Cloud Service に移行されないようにします。 |
 

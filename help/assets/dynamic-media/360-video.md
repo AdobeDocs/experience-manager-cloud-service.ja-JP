@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 96%
+source-wordcount: '988'
+ht-degree: 95%
 
 ---
 
@@ -59,14 +59,16 @@ AdobePremier Pro を使用して、360/VR フッテージを表示および編�
 
       * 1080p - 1920 x 1080：フル HD または FHD 解像度と呼ばれます。
       * 2160p - 3840 x 2160：4K、UHD または Ultra HD 解像度と呼ばれます。この大きなディスプレイ解像度は、ハイエンドのテレビやコンピューターモニターでよく見られます。2160p 解像度がよく「4K」と呼ばれるのは、その幅が 4000 ピクセルに近いからです。つまり、そのピクセル数は 1080p の 4 倍になります。
+
    * より高品質のレンディションを含む[カスタムアダプティブビデオプロファイルを作成](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)します。例えば、次の 3 つの設定を含むアダプティブビデオプロファイルを作成できます。
 
       * width=auto; height=720; bitrate=2500 kbps
       * width=auto; height=1080; bitrate=5000 kbps
       * width=auto; height=1440; bitrate=6600 kbps
+
    * 360 ビデオアセット専用のフォルダー内の 360 ビデオコンテンツを処理します。
 
-   このアプローチを使用する場合は、エンドユーザーのネットワークや CPU の要件も高くなります。
+   このアプローチにより、ユーザーのネットワークと CPU に対する要求が増えます。
 
 1. [フォルダーにビデオをアップロードします](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
 
@@ -122,7 +124,8 @@ Start by uploading 360 Videos.
 
    * 「ビューア」リストから **[!UICONTROL Video360VR]** を選択します。
 
-      バーチャルリアリティ（VR）ビデオは、バーチャルリアリティヘッドセットで視聴する、没入感のあるビデオコンテンツです。通常のビデオと同様に、360 度ビデオカメラを使用してビデオを録画またはキャプチャする際、最初に VR ビデオを作成します。
+     バーチャルリアリティ（VR）ビデオは、バーチャルリアリティヘッドセットで視聴する、没入感のあるビデオコンテンツです。通常のビデオと同様に、360 度ビデオカメラを使用してビデオを録画またはキャプチャする際、最初に VR ビデオを作成します。
+
    ![Video360VR ビューアオプションにポインタを置いているユーザーのスクリーンショット。](assets/6_5_360video-preview-video360vr.png)
    *360 VR ビデオのスクリーンショット。*
 

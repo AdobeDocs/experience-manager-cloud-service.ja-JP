@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 リリースのリリースノート。'
 description: "[!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 のリリースノート。"
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 95%
+source-wordcount: '1194'
+ht-degree: 93%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 95%
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms-oct-2021}
 
-* **Analytics for Adaptive Forms**：ログイン済み状態と未ログイン（匿名）状態の両方の動作を Adobe Analytics for Adaptive Forms でキャプチャおよび追跡して、エンドユーザーのインサイトを収集できるようになりました。これにより、ビジネスユーザーは、収集されたインサイトに基づいて、アダプティブフォームのコンテンツ、レイアウトおよびスタイルについて、情報に基づいた意思決定を行えます。
+* **Analytics for Adaptive Forms**:Adobe Analyticsを使用して Adaptive Formsにログインしている（匿名）ユーザーとログインしていない（匿名の）ユーザーの行動を取得および追跡し、ユーザーのインサイトを収集できるようになりました。 これにより、ビジネスユーザーは、収集されたインサイトに基づいて、アダプティブフォームのコンテンツ、レイアウトおよびスタイルについて、情報に基づいた意思決定を行えます。
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms-oct-2021}
 
@@ -62,9 +62,9 @@ ht-degree: 95%
 
 ### 新機能 {#what-is-new-commerce}
 
-* 最新の CIF コアコンポーネントバージョン v1.4.0 を含む CIF Venia 参照サイト2020.10.2をリリースしました。詳しくは、 [CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) を参照してください。
+* 最新のCIFコアコンポーネントバージョン v1.4.0 を含むCIF Venia リファレンスサイト2020.10.2をリリースしました。詳しくは、 [CIF Venia リファレンスサイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) を参照してください。
 
-* CIF コアコンポーネント v1.4.0 がリリースされました。詳しくは、 [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) を参照してください。
+* CIF Core Components v1.4.0 がリリースされました。詳しくは、 [CIFコアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) を参照してください。
 
 ### バグの修正 {#bug-fixes-commerce}
 
@@ -89,7 +89,7 @@ Experience Manager as a Cloud Service 2020.10.0 の Cloud Manager のリリー�
 * 環境ごとの環境変数の数が 200 に増えました。
 
 * 概要ページの環境カードに最大 3 つの環境が表示されるようになりました。「**すべてを表示**」ボタンを選択して環境の概要ページに移動し、環境の完全なリストを含む表を表示できます。
-詳しくは、 [環境の表示](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) を参照してください。
+詳しくは、[表示環境](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)を参照してください。
 
 ### バグの修正 {#bug-fixes-cloud-manager}
 

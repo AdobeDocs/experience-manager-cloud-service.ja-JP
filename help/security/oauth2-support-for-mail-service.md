@@ -2,7 +2,7 @@
 title: メールサービスの OAuth2 サポート
 description: Adobe Experience Manager as a Mail Service の Oauth2 サポート
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: ede877212de3394cbdc81e1097d3d6eaf9f390cc
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 97%
@@ -26,7 +26,7 @@ AEM as a Cloud Service のメールサービスの詳細については、[メ�
    ![アプリ登録プロセスを開始](assets/oauth-outlook1.png)
 
 1. 必要に応じて情報を入力し、「**登録**」をクリックします。
-1. 新しく作成されたアプリに移動し、「 」を選択します。 **API 権限**.
+1. 作成したアプリに移動し、「 」を選択します。 **API 権限**.
 1. **権限を追加**／**グラフ権限**／**委任権限**&#x200B;に移動します。
 1. アプリに対して以下の権限を選択し、「**権限を追加**」をクリックします。
    * `https://outlook.office.com/SMTP.Send`

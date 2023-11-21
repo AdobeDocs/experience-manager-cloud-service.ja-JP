@@ -4,9 +4,9 @@ description: AE の基本を学ぶ。パッケージマネージャーを使用�
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '3771'
+source-wordcount: '3774'
 ht-degree: 92%
 
 ---

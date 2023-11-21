@@ -4,7 +4,7 @@ description: AEM で機械翻訳と人間による翻訳の両方のプロジェ
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3971'
 ht-degree: 86%
@@ -455,7 +455,7 @@ AEM の翻訳プロジェクトでは、標準の [AEM プロジェクトコン�
 1. 移動するソースページに関連付けられている言語コピーを非公開にします。
 1. それらを削除します。
 1. 新しく移動したソースページから新しい言語コピーを作成します。
-1. 新しく作成した言語コピーを公開します。
+1. 作成した言語コピーを公開します。
 
 ## 翻訳ジョブの読み込みと書き出し {#import-export}
 

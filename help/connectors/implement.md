@@ -2,10 +2,10 @@
 title: AEM コネクタの実装
 description: AEMコネクタを構築、テスト、実装する方法について説明します。 また、一般的な統合パターンについても学習します。
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 98%
+source-wordcount: '980'
+ht-degree: 95%
 
 ---
 
@@ -63,7 +63,7 @@ Adobe Experience Manager as a Cloud Service の[ドキュメント](../overview/
 
 既存のコネクタの場合、一度 `/etc` に配置した設定を他の最上位フォルダー（`/conf` など）に移動するには、コネクタのリファクタリングも必要になる可能性があります。この再構築は AEM 6.5 の一部としておこなわれ、[AEM 6.5 のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja)で説明されています。
 
-複数のコネクタを持つユーザー向けにクリーンなリポジトリ構造を推進するには、コネクタコードの大部分を `/apps/connectors/<vendor>` の配下に格納することをお勧めします。
+コネクタコードの大部分は、の下に配置することをお勧めします。 `/apps/connectors/<vendor>` 複数のコネクタを持つお客様向けに、クリーンなリポジトリ構造を推進する。
 
 クラウドサービスの設定
 -----------------------------

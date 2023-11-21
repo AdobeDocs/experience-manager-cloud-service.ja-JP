@@ -4,10 +4,10 @@ description: サンプル React アプリを使用して、AEM as a Cloud Servic
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 88%
+source-wordcount: '1019'
+ht-degree: 87%
 
 ---
 
@@ -89,7 +89,7 @@ AEM ヘッドレス体験版で提供されるサンプルアプリが既に読�
 
 1. 選択 **プレビュー** をクリックして、変更内容を確認します。 デモアプリのプレビューが新しいタブで開きます。ブラウザーで更新をクリックすると、アプリに黄色のショートパンツを履いた新しいバイカーの画像が表示されます。
 
-AEM ヘッドレス CMS を使用すると、アプリ内の画像やアセットを簡単に更新できます。
+AEMヘッドレス CMS を使用して、アプリ内の画像やアセットを簡単に更新できます。
 
 ## 新しいコンテンツフラグメントへの参照をアプリに追加 {#create-moment}
 

@@ -2,9 +2,9 @@
 title: 設定方法 [!DNL AEM Forms] as a cloud service 環境の場合
 description: 設定と設定について説明します。 [!DNL AEM Forms] as a Cloud Service環境。
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '649'
 ht-degree: 64%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 64%
 
 * **AEM 管理者**：AEM 管理者は、ユーザーの設定、環境の堅牢化、データソースの設定、メールの設定、サードパーティ製ソフトウェアなど、全体的な設定を支援します。AEM 管理者は、Adobe Analytics、Adobe Target、Adobe Sign との統合なども支援します。
 
-* **エンドユーザー**：エンドユーザーは、公開済みのフォームを操作して送信し、送信済みのフォームに署名し、送信済みのアプリケーションを Web ポータル経由で追跡し、パーソナライズされたコミュニケーションを受け取ります。
+* **エンドユーザー**：ユーザーは、公開済みのフォームを操作して送信し、送信済みのフォームに署名し、送信済みのアプリケーションを Web ポータル経由でトラッキングして、パーソナライズされたコミュニケーションを受け取ります。
 
 <!-- While onboarding to the service, assign the following AEM groups to [!DNL AEM Forms] as a Cloud Service based on their role:
 
