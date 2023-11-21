@@ -5,7 +5,7 @@ exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '505'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_indexing"
 >title="コンテンツのインデックス作成"
->abstract="AEM のインデックス作成とは、Cloud Service インスタンスにコンテンツを移行した後の、Cloud Service インスタンス上のコンテンツのインデックス作成を指します。インデックス作成は、そのインスタンス上でのコンテンツの検索をサポートするために必要です。"
+>abstract="AEM のインデックス作成とは、Cloud Service インスタンスにコンテンツを移行した後の、Cloud Service インスタンス上のコンテンツのインデックス作成を指します。インデックス作成は、そのインスタンスでのコンテンツの検索をサポートするために必要です。"
 
 Cloud Acceleration Manager がコンテンツのCloud Serviceインスタンスへの取り込みを完了すると、コンテンツの使用準備が整います。 最初は、コンテンツのインデックスが作成されず、不安定な環境に陥り、検索不可能なコンテンツやパフォーマンスの低下などの問題が予想される可能性があります。
 インスタンスのパフォーマンスを最適化するために、移行プロセスはコンテンツのインデックス作成を自動的に開始します。 インデックス作成の進行状況を監視する以外は、実行することはありません。
