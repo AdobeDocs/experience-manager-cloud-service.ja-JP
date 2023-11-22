@@ -2,13 +2,13 @@
 title: Cloud Manager での独自の GitHub リポジトリの操作
 description: 独自の GitHub リポジトリを操作するために Cloud Manager を設定する方法について説明します。
 feature: Release Information
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
+source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 70%
 
 ---
-
 
 # Cloud Manager での独自の GitHub リポジトリの操作 {#byo-github}
 

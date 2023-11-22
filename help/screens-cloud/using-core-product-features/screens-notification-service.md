@@ -2,13 +2,13 @@
 title: Screens の Screens 通知サービス (as a Cloud Service)
 description: ここでは、Screens で通知サービスを設定するas a Cloud Service方法について説明します。
 index: true
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+exl-id: 74215a70-45c8-4b7f-ba30-60c332de07e9
+source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 4%
 
 ---
-
 
 # Screens 通知サービス {#notification-service}
 

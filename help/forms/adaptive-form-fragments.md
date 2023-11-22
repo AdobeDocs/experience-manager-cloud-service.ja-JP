@@ -6,13 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 1835559f9becea5f79d179be9b01efbe67c82151
+exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
+source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
 workflow-type: tm+mt
 source-wordcount: '2148'
 ht-degree: 89%
 
 ---
-
 
 # アダプティブフォームでのアダプティブFormsフラグメントの作成と使用  {#adaptive-form-fragments}
 

@@ -1,7 +1,8 @@
 ---
 title: AEM AssetsをCreative Cloudに接続
 description: AEM Assetsを設定し、Creative Cloudに接続する方法を説明します。 別の IMS 組織にプロビジョニングされたCreative Cloudの権限付与に接続して、AEM Assetsでの最新のCreative Cloud統合 (Express やCreative Cloudライブラリなど ) を簡単に使用できます。
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+exl-id: 880200fe-94b3-49de-802c-34283f7c71bc
+source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -37,4 +38,3 @@ Creative Cloud製品とAEM Assetsが別々の IMSCreative Cloudにプロビジ�
 * 一度にAEM Assetsを 1 つのCreative Cloud組織に接続できます。 一度に複数のCreative Cloud組織に接続することはできません。
 
 * AEM Assets内で接続するCreative Cloud組織は、組織内のすべてのユーザーに適用できます。
-

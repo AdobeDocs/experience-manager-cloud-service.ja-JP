@@ -2,10 +2,10 @@
 title: メールサービスの OAuth2 サポート
 description: Adobe Experience Manager as a Mail Service の Oauth2 サポート
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: c8e8a1c862784976094391d567fac0f9122af8b4
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 97%
+source-wordcount: '712'
+ht-degree: 91%
 
 ---
 
@@ -29,10 +29,12 @@ AEM as a Cloud Service のメールサービスの詳細については、[メ�
 1. 作成したアプリに移動し、「 」を選択します。 **API 権限**.
 1. **権限を追加**／**グラフ権限**／**委任権限**&#x200B;に移動します。
 1. アプリに対して以下の権限を選択し、「**権限を追加**」をクリックします。
+
+   >[!NOTE]
+   >
+   >権限の設定は、時間の経過と共に進化する可能性があります。 これらが期待どおりに動作しない場合は、Microsoftを使用してください。
+
    * `https://outlook.office.com/SMTP.Send`
-   * `https://graph.microsoft.com/Mail.Read`
-   * `https://graph.microsoft.com/Mail.Send`
-   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
    * `email`
@@ -134,15 +136,18 @@ AEM 側で Oauth を設定する前に、次の手順で accessToken と refresh
 
 1. 前の節で説明したように、`authUrl`、`tokenUrl` および `refreshURL` を作成して入力します。
 1. 次のスコープを設定に追加します。
+
+   >[!NOTE]
+   >
+   >スコープは時間の経過と共に進化する可能性があります。 これらが期待どおりに動作しない場合は、Microsoftを使用してください。
+
    * `https://outlook.office.com/SMTP.Send`
-   * `https://graph.microsoft.com/Mail.Read`
-   * `https://graph.microsoft.com/Mail.Send`
-   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
    * `email`
    * `profile`
-1. 次の構文で、OSGI プロパティファイル`called com.day.cq.mailer.DefaultMailService.cfg.json`を `/apps/<my-project>/osgiconfig/config` 下に作成します。`smtp.host` および `smtp.port` の値は、[メールサービスのチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=ja)で説明するように、高度なネットワーク設定を反映します。
+1. OSGI プロパティファイルの作成 `called com.day.cq.mailer.DefaultMailService.cfg.json`
+under `/apps/<my-project>/osgiconfig/config` を次の構文で置き換えます。 `smtp.host` および `smtp.port` の値は、[メールサービスのチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=ja)で説明するように、高度なネットワーク設定を反映します。
 
    ```
    {
