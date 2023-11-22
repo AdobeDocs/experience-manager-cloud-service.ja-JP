@@ -2,7 +2,7 @@
 title: AEM Formsでレコードのドキュメント (DoR) を生成する方法
 description: アダプティブForms用のレコードのドキュメント (DoR) のテンプレートを生成する方法を説明します。
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 00a905a08de1c14ef0ded7475d2f95abacc50af1
 workflow-type: tm+mt
 source-wordcount: '4139'
 ht-degree: 94%
@@ -499,7 +499,7 @@ XCI ファイルは、ドキュメントの様々なプロパティを設定す�
 ### ローカルの Forms as a Cloud Service 開発環境でのカスタム XCI ファイルの使用
 
 1. XCI ファイルをアップロード環境にローカル開発します。
-1. Cloud Service SDK 設定マネージャーを開きます。デフォルトの URL は <http://localhost:4502/system/console/configMgr> です。
+1. Cloud ServiceSDK Configuration Manager を開きます。 デフォルトの URL は <http://localhost:4502/system/console/configMgr> です。
 1. 「**[!UICONTROL アダプティブフォームおよびインタラクティブ通信 Web チャネル]**」の設定を検索して開きます。
 1. XCI ファイルのパスを指定し、「**[!UICONTROL 保存]**」をクリックします。
 
