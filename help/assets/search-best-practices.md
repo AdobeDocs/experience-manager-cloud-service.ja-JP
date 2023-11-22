@@ -3,14 +3,14 @@ title: 検索のベストプラクティス： [!DNL Adobe Experience Manager] a
 description: アプリケーション内でアセットのメタデータを検索、検索および取得するためのベストプラクティス。
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: b3b2cc516743243fbfdcf6189bfd851a1272bf78
+source-git-commit: 47003c9aa0faefc01a9935c53a5a78938c37cf66
 workflow-type: tm+mt
-source-wordcount: '2520'
+source-wordcount: '2521'
 ht-degree: 11%
 
 ---
 
-# AEM Search のベストプラクティス
+# AEM Assets Search のベストプラクティス
 
 [!DNL Adobe Experience Manager Assets] は、コンテンツ速度の向上に役立つ堅牢なアセット検索方法を備えています。適切なアセットの検索が困難で時間がかかる場合があります。 したがって、でのアセット検索機能 [!DNL Adobe Experience Manager Assets] は、デジタルアセット管理システムの中心となる役割を果たします。クリエイティブによるさらなる使用、ビジネスユーザーやマーケターによるアセットの堅牢な管理、DAM 管理者による管理のために使用されます。
 
