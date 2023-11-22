@@ -1,9 +1,10 @@
 ---
 title: AEM as a Cloud Service リリース 2023.03.0 の移行ツールのリリースノート
-description: AEM as a Cloud Service リリース 2022.03.0 の移行ツールのリリースノート
+description: AEM as a Cloud Service リリース 2023.03.0 の移行ツールのリリースノート
 feature: Release Information
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
+exl-id: cdc57cca-e10a-4b0d-b803-910ccc9350a6
+source-git-commit: d7e5a14c2dfee41b4ab5af733218fe58d17871fa
+workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 100%
 
@@ -11,7 +12,7 @@ ht-degree: 100%
 
 # AEM as a Cloud Service リリース 2023.03.0 の移行ツールのリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Service 2022.03.0 の移行ツールのリリースノートの概要を説明しています。
+このページでは、AEM as a Cloud Service 2023.03.0 の移行ツールのリリースノートの概要を説明しています。
 
 ## ベストプラクティスアナライザー {#bpa-release}
 
@@ -32,7 +33,7 @@ ht-degree: 100%
 
 ### リリース日 {#release-date-ctt}
 
-コンテンツ転送ツール v2.0.16 のリリース日は 2022年3月8日（PT）です。
+コンテンツ転送ツール v2.0.16 のリリース日は 2023年3月8日（PT）です。
 
 ### 新機能 {#what-is-new-ctt}
 
