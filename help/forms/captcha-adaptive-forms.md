@@ -1,34 +1,34 @@
 ---
-title: アダプティブFormsでの CAPTCHA の使用方法は？
+title: アダプティブフォームで CAPTCHA を使用するには、以下を実行します。
 description: アダプティブフォームのGoogle reCAPTCHA サービスの設定方法を説明します。
 uuid: 0e11e98a-12ac-484c-b77f-88ebdf0f40e5
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 9d2f8794a061c44cab016ab049c8c8ac7b3b2784
 workflow-type: tm+mt
-source-wordcount: '1935'
-ht-degree: 75%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# アダプティブFormsでの reCAPTCHA の使用 {#using-reCAPTCHA-in-adaptive-forms}
+# アダプティブフォームでの reCAPTCHA の使用 {#using-reCAPTCHA-in-adaptive-forms}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+[新しいアダプティブフォームを作成する](/help/forms/creating-adaptive-form-core-components.md)、または [AEM Sites ページにアダプティブフォームを追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)際には、<span class="preview"> 最新の拡張可能なデータキャプチャである[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
 
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 | 適用先 | 基盤コンポーネントに基づくアダプティブフォーム。 <br> コアコンポーネントに基づくアダプティブフォームの場合、 [ここをクリック](/help/forms/captcha-adaptive-forms-core-components.md). |
 
 
 CAPTCHA（コンピュータと人間を区別する完全に自動化された公開チューリングテスト）は、人間と自動化されたプログラム／ボットを区別するために、オンライントランザクションで一般的に使用されるプログラムです。テストを行ってユーザーの反応を評価し、サイトを使用しているのが人間かボットかを判断します。テストが失敗した場合の続行を防ぎ、ボットによるスパムの投稿や悪意のある目的を防止することで、オンライントランザクションの安全性を高めます。
 
-[!DNL AEM Forms] アダプティブFormsで reCAPTCHA をサポートします。 Google が提供する reCAPTCHA サービスを使用して、CAPTCHA を実装できます。
+[!DNL AEM Forms] アダプティブフォームでの reCAPTCHA の使用. Google が提供する reCAPTCHA サービスを使用して、CAPTCHA を実装できます。
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ CAPTCHA（コンピュータと人間を区別する完全に自動化された�
 
 ## Google が提供する reCAPTCHA サービスの設定 {#google-reCAPTCHA}
 
-フォーム作成者は、Googleの reCAPTCHA サービスを使用して、アダプティブFormsに reCAPTCHA を実装できます。 サイトを保護するための高度な CAPTCHA 機能を提供します。 reCAPTCHA の仕組みについて詳しくは、[Google reCAPTCHA](https://developers.google.com/recaptcha/) を参照してください。reCAPTCHA サービスには以下が含まれます。 [!DNL reCAPTCHA v2] および [!DNL reCAPTCHA Enterprise] これらは、 [!DNL AEM Forms]. 要件に基づいて、reCAPTCHA サービスを設定して、次を有効にすることができます。
+フォームの作成者は、Google による reCAPTCHA サービスを使用してアダプティブフォームに CAPTCHA を実装できます。サイトを保護する高度な CAPTCHA 機能を提供します。reCAPTCHA の仕組みについて詳しくは、[Google reCAPTCHA](https://developers.google.com/recaptcha/) を参照してください。reCAPTCHA サービスには以下が含まれます。 [!DNL reCAPTCHA v2] および [!DNL reCAPTCHA Enterprise] これらは、 [!DNL AEM Forms]. 要件に基づいて、reCAPTCHA サービスを設定して、次を有効にすることができます。
 
 ![reCAPTCHA](/help/forms/assets/recaptcha_new.png)
 
@@ -54,7 +54,7 @@ CAPTCHA（コンピュータと人間を区別する完全に自動化された�
 
    1. **[!UICONTROL ツール／一般／設定ブラウザー]**&#x200B;に移動します。
    1. 次の手順に従って、フォルダーを選択するか、フォルダーを作成し、クラウド設定用にフォルダーを有効にします。
-      1. 設定ブラウザーで、「」フォルダーを選択して「**[!UICONTROL プロパティ]**」をタップします。
+      1. 設定ブラウザーで、フォルダーを選択して「**[!UICONTROL プロパティ]**」をタップします。
       1. 設定プロパティダイアログで、「**[!UICONTROL クラウド設定]**」を有効にします。
       1. 「**[!UICONTROL 保存して閉じる]**」をタップして設定内容を保存し、ダイアログを閉じます。
 
@@ -83,7 +83,7 @@ reCAPTCHA Enterprise サービスを有効にすると、アダプティブフ�
 1. クラウドサービス用の設定コンテナを作成します。
    1. **[!UICONTROL ツール／一般／設定ブラウザー]**&#x200B;に移動します。
    1. 次の手順に従って、フォルダーを選択するか、フォルダーを作成し、クラウド設定用にフォルダーを有効にします。
-      1. 設定ブラウザーで、「」フォルダーを選択して「**[!UICONTROL プロパティ]**」をタップします。
+      1. 設定ブラウザーで、フォルダーを選択して「**[!UICONTROL プロパティ]**」をタップします。
       1. 設定プロパティダイアログで、「**[!UICONTROL クラウド設定]**」を有効にします。
       1. 「**[!UICONTROL 保存して閉じる]**」をタップして設定内容を保存し、ダイアログを閉じます。
 
@@ -291,11 +291,13 @@ if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
 
 同様に、ルールエディターを使用して、アダプティブフォーム内の CAPTCHA を検証するカスタムメソッドを含めることができます。
 
-### カスタム CAPTCHA サービスの追加 {#add-custom-captcha-service}
+<!--
 
-[!DNL Experience Manager Forms] は、CAPTCHA サービスとして reCAPTCHA を提供します。**[!UICONTROL CAPTCHA サービス]**&#x200B;ドロップダウンリストに表示するカスタムサービスを追加できます。
+### Add custom CAPTCHA services {#add-custom-captcha-service}
 
-以下は、アダプティブフォームに CAPTCHA サービスを追加するためのインターフェイスの実装例です。
+[!DNL Experience Manager Forms] provides reCAPTCHA as the CAPTCHA service. However, you can add a custom service to display in the **[!UICONTROL CAPTCHA Service]** drop-down list.  
+
+The following is a sample implementation of the interface to add additional CAPTCHA service to your Adaptive Form:
 
 ```javascript
 package com.adobe.aemds.guide.service;
@@ -325,15 +327,15 @@ public interface GuideCaptchaValidator {
 }
 ```
 
-`captchaPropertyNodePath` は、Sling リポジトリ内の CAPTCHA コンポーネントのリソースパスを参照します。CAPTCHA コンポーネントに特有の詳細を含めるには、このプロパティを使用します。例えば、`captchaPropertyNodePath` には、CAPTCHA コンポーネントで設定された reCAPTCHA クラウド設定に関する情報が含まれます。クラウド設定情報は、reCAPTCHA サービスを実装するための&#x200B;**[!UICONTROL サイトキー]**&#x200B;と&#x200B;**[!UICONTROL 秘密鍵]**&#x200B;の設定を提供します。
+`captchaPropertyNodePath` refers to the resource path of the CAPTCHA component in the Sling repository. Use this property to include details specific to the CAPTCHA component. For example, `captchaPropertyNodePath` includes information for the reCAPTCHA cloud configuration configured on the CAPTCHA component. The cloud configuration information provides **[!UICONTROL Site Key]** and **[!UICONTROL Secret Key]** settings for implementing the reCAPTCHA service.
 
-`userResponseToken` は、フォームで CAPTCHA を解決した後に生成される `g_recaptcha_response` を指します。
+`userResponseToken` refers to the `g_recaptcha_response` that gets generated after solving a CAPTCHA in a form.
 
-### reCAPTCHA サービスドメインの編集 {#reCAPTCHA-service-domain}
+### Edit reCAPTCHA service domain {#reCAPTCHA-service-domain}
 
-reCAPTCHA サービスは、`https://www.recaptcha.net/` をデフォルトドメインとして使用します。設定を変更して `https://www.google.com/` を設定したり、reCAPTCHA サービスの読み込み、レンダリング、検証を行うカスタムドメイン名を設定したりできます。
+reCAPTCHA service uses `https://www.recaptcha.net/` as the default domain. You can modify the settings to set `https://www.google.com/` or any custom domain name for loading, rendering, and validating the reCAPTCHA service.
 
-**[!UICONTROL アダプティブフォームおよびインタラクティブ通信 Web チャネル設定]**&#x200B;の **[!UICONTROL af.cloudservices.recaptcha.domain]** プロパティを設定して、`https://www.google.com/` または他のカスタムドメイン名を指定します。以下の JSON ファイルにサンプルが表示されています。
+Set the **[!UICONTROL af.cloudservices.recaptcha.domain]** property of the **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** configuration to specify `https://www.google.com/` or any other custom domain name. The following JSON file displays a sample:
 
 ```json
 {
@@ -341,9 +343,9 @@ reCAPTCHA サービスは、`https://www.recaptcha.net/` をデフォルトド�
 }
 ```
 
-設定の値をセットするには、[AEM SDK を使用して OSGi 設定を生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#generating-osgi-configurations-using-the-aem-sdk-quickstart)し、Cloud Service インスタンスに[設定をデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja#deployment-process)します。
+To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
-## 関連トピック {#see-also}
+## See Also {#see-also}
 
 {{see-also}}
 
