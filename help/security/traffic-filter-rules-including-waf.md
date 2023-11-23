@@ -2,10 +2,10 @@
 title: WAF ルールを含むトラフィックフィルタールール
 description: Web アプリケーションファイアウォール（WAF）ルールを含むトラフィックフィルタールールの設定
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 8407f3142de78ee792bdece327734dd02a4f234b
 workflow-type: tm+mt
-source-wordcount: '3437'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -259,7 +259,6 @@ An `action` は、アクション (allow、block、log) を指定する文字列
 | JSON-ERROR | JSON エンコーディングエラー | 「Content-Type」リクエストヘッダー内に JSON を含むように指定されている POST、PUT、PATCH リクエスト本文には、JSON 解析エラーが含まれています。これは、多くの場合、プログラミングエラー、自動リクエストまたは悪意のあるリクエストに関係しています。 |
 | MALFORMED-DATA | リクエスト本文内の不正なデータ | 「Content-Type」リクエストヘッダーに従って不正な形式である POST、PUT、PATCH リクエストの本文です。例えば、「Content-Type: application/x-www-form-urlencoded」リクエストヘッダーが指定され、JSON である POST 本文が含まれているとします。これは、多くの場合、プログラミングエラーや、自動リクエスト、悪意のあるリクエストです。エージェント 3.2 以降が必要です。 |
 | SANS | 悪意のある IP トラフィック | [SANS Internet Storm Center](https://isc.sans.edu/) による、悪意のあるアクティビティにエンゲージしたことが報告されている IP アドレスのリストです |
-| SIGSCI-IP | ネットワーク効果 | SignalSciences によってフラグが付けられた IP：決定エンジンによる悪意のあるシグナルが原因で IP にフラグが付けられると、その IP はすべてのお客様に伝播されます。フラグの期間中に追加のシグナルを含む IP アドレスからの後続のリクエストがログに記録されます |
 | NO-CONTENT-TYPE | 「Content-Type」リクエストヘッダーなし | 「Content-Type」リクエストヘッダーを持たない POST、PUT または PATCH リクエストです。この場合、アプリケーションサーバーでは、デフォルトで「Content-Type: text/plain; charset=us-ascii」を想定する必要があります。自動化された悪意のあるリクエストの多くには、「Content-Type」が欠落している可能性があります。 |
 | NOUA | ユーザーエージェントなし | 自動化された悪意のあるリクエストの多くでは、偽のユーザーエージェントまたは欠落したユーザーエージェントを使用して、リクエストを行っているデバイスのタイプを識別することを困難にしています。 |
 | TORNODE | Tor トラフィック | Tor は、ユーザーの ID を隠すソフトウェアです。Tor トラフィックのスパイクは、攻撃者がその場所をマスクしようとしていることを示す可能性があります。 |
@@ -639,7 +638,6 @@ data:
         type: log
         wafFlags:
           - SANS
-          - SIGSCI-IP
           - TORNODE
           - NOUA
           - SCANNER
