@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 219eb2544dbac8ac5104be4ef8eb1bae996d95f0
+source-git-commit: 700d07e941dafd8dadd8f7abbfc10b92cb7e8144
 workflow-type: tm+mt
-source-wordcount: '4384'
-ht-degree: 92%
+source-wordcount: '4390'
+ht-degree: 93%
 
 ---
 
@@ -551,7 +551,7 @@ ht-degree: 92%
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
    + Adobe Expressとの統合 {#integration-adobe-express}
-      + [Adobe Express用AEM Assetsアドオン](/help/assets/addon-adobe-express.md)
+      + [Adobe Express 向けの AEM Assets アドオン](/help/assets/addon-adobe-express.md)
 
    + Creative Cloudとの統合 {#integration-creative-cloud}
       + [AEM AssetsをCreative Cloudに接続](/help/assets/connect-assets-with-creative-cloud.md)
@@ -608,7 +608,7 @@ ht-degree: 92%
             + [リダイレクトページまたはお礼メッセージの設定](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [繰り返し可能なセクションを使用したフォームの作成](/help/forms/create-forms-repeatable-sections.md)
             + [アダプティブフォームの送信アクションの設定](/help/forms/configure-submit-actions-core-components.md)
-            + [アダプティブフォームでのGoogle reCAPTCHA の使用](/help/forms/captcha-adaptive-forms-core-components.md)
+            + [アダプティブフォームで Google reCAPTCHA を使用](/help/forms/captcha-adaptive-forms-core-components.md)
             + [アダプティブフォームにカスタムエラーハンドラーを追加する](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [コアコンポーネントに基づくアダプティブFormsのロケールの追加](/help/forms/supporting-new-language-localization-core-components.md)
       + 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
@@ -680,6 +680,7 @@ ht-degree: 92%
    + Screens as a Cloud Service の概要 {#overview}
       + [はじめに](/help/screens-cloud/introduction/introduction.md)
       + [役割の定義について](/help/screens-cloud/introduction/personas-screens-cloud.md)
+      + [Adobe Analyticsと Screens Cloud の統合](/help/screens-cloud/introduction/adobe-analytics-integration-with-screens.md)
    + Screens as a Cloud Service のオンボーディング {#onboarding-screens-cloud}
       + [初回ログイン](/help/screens-cloud/onboarding-screens-cloud/first-time-login-screens-cloud.md)
       + Cloud Manager におけるアドオンとしての Screens プログラムの追加 {#adding-screens-addon}
