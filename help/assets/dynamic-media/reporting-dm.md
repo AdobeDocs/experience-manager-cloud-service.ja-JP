@@ -1,5 +1,5 @@
 ---
-title: Dynamic Mediaでのレポート
+title: Dynamic Media のビデオ
 description: 失敗したDynamic Media配信 URL のエラーレポートをリクエストする方法を説明します。
 contentOwner: Rick Brough
 feature: Asset Management
@@ -10,7 +10,7 @@ exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
 source-git-commit: aa7429d9ca9f67979303c0b85c9dbd5b8c74c05c
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 

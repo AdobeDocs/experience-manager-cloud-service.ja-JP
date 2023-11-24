@@ -9,7 +9,7 @@ exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '5562'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
@@ -37,7 +37,7 @@ AEM は次のユースケースをサポートしています。この記事で�
 | [制限事項](#limitations)と[ヒント](#tips) | | |
 | [例を使った説明](#samples) | | |
 
-[!DNL Experience Manager] Web インターフェイスの上部にあるオムニサーチフィールドを使用して、アセットを検索します。[!DNL Experience Manager] で&#x200B;**[!UICONTROL アセット]**／**[!UICONTROL ファイル]**&#x200B;に移動し、上部バーの検索アイコン ![search_icon](assets/do-not-localize/search_icon.png) をクリックし、検索キーワードを入力して、`Return` を選択します。または、キーワードショートカット `/`（スラッシュ）を使用して、オムニサーチフィールドを開きます。`Location:Assets` が事前に選択されており、DAM アセットの検索に制限されています。`Path:/content/dam` また、は、 **[!UICONTROL ファイル]** フォルダー。 他のフォルダーに移動する場合は、 `Path:/content/dam/<folder name>` をオムニサーチフィールドに表示して、検索範囲を現在のフォルダーに限定します。 [!DNL Experience Manager] 検索キーワードの入力中に候補が表示されます。
+[!DNL Experience Manager] Web インターフェイスの上部にあるオムニサーチフィールドを使用して、アセットを検索します。[!DNL Experience Manager] で&#x200B;**[!UICONTROL アセット]**／**[!UICONTROL ファイル]**&#x200B;に移動し、上部バーの検索アイコン ![search_icon](assets/do-not-localize/search_icon.png) をクリックし、検索キーワードを入力して、`Return` を選択します。または、キーワードショートカット `/`（スラッシュ）を使用して、オムニサーチフィールドを開きます。`Location:Assets` が事前に選択されており、DAM アセットの検索に制限されています。`Path:/content/dam` は、**[!UICONTROL ファイル]**&#x200B;フォルダー内においてルートレベルで検索を実行する際に表示されます。他のフォルダーに移動する場合は、`Path:/content/dam/<folder name>` を「オムニサーチ」フィールドに表示して、検索範囲を現在のフォルダーに制限します。検索キーワードの入力を開始すると、[!DNL Experience Manager] によって検索候補が表示されます。
 
 アセット、フォルダー、タグおよびメタデータを検索するには、**[!UICONTROL フィルター]**&#x200B;パネルを使用します。ファイルタイプ、ファイルサイズ、最終変更日、アセットのステータス、インサイトデータ、Adobe Stock ライセンスなどの、様々なオプション（述部）に基づいて検索結果をフィルタリングできます。フィルターパネルをカスタマイズし、[検索ファセット](/help/assets/search-facets.md)を使用して検索述語を追加したり、削除したりすることができます。[!UICONTROL フィルター]パネルの[!UICONTROL ファイルタイプ]フィルターには、状態が混在したチェックボックスがあります。したがって、すべてのネストされた述語（またはフォーマット）を選択しない限り、第 1 レベルのチェックボックスは部分的にチェックされています。
 
@@ -49,19 +49,22 @@ AEM は次のユースケースをサポートしています。この記事で�
 <!--
 ![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
 -->
-![Experience Manager Assets検索結果インターフェイスについて](assets/aem-search-interface.png)
-*図：理解 [!DNL Experience Manager Assets] 検索結果インターフェイス。*
+![Experience Manager Assets 検索結果インターフェイスについて](assets/aem-search-interface.png)
+*図：[!DNL Experience Manager Assets] 検索結果インターフェイスについて理解する。*
 
-**A：**&#x200B;検索をスマートコレクションとして保存。**B：**&#x200B;検索結果を絞り込むフィルターまたは述語。**C：**&#x200B;ファイル、フォルダー、またはその両方を表示。**D.** 検索場所は DAM です。
+**A：**検索をスマートコレクションとして保存。
+**B：**検索結果を絞り込むフィルターまたは述語。
+**C：**ファイル、フォルダー、またはその両方を表示。
+**D.** 検索場所は DAM です。
 **E.** 保存済みの検索結果にアクセスします。
-**金。** 「フィルター」をクリックして、左側のパネルを開くか閉じます。
+**F.** 「フィルター」をクリックして、左側のパネルを開閉します。
 **G.** アセットをデフォルトの検索として表示します。
 **H.** 検索場所は DAM です。
-**I.** ユーザーが指定した検索キーワードを含むオムニサーチフィールド。
+**I.** ユーザが検索キーワードを入力するオムニサーチフィールドです。
 **J.** 読み込まれた検索結果を選択します。
-**K.** 作成日、変更日、名前、なしで並べ替え。
-**リ。** 昇順または降順で並べ替え。
-**月曜** 検索結果の合計のうちに表示された検索結果の数。 **いいえ。** 検索を閉じます。
+**K.** 作成日、変更日、名前、なしで並べ替えます。
+**L.** 昇順または降順で並べ替えます。
+**M.** 検索結果の合計数の中で表示される検索結果数です。**N.** 検索を閉じます。
 **O.** カード表示とリスト表示を切り替えます。
 
 ### 動的検索ファセット {#dynamicfacets}
@@ -72,19 +75,19 @@ AEM は次のユースケースをサポートしています。この記事で�
 
 *図：検索ファセットで検索結果をフィルタリングしない場合のアセット概数の表示*
 
-Experience Manager Assetsには、デフォルトで、2 つのプロパティのファセット数が表示されます。
+Experience Manager Assets には、デフォルトで 2 つのプロパティのファセット数が表示されます。
 
-* アセットタイプ (jcr:content/metadata/dc:format)
+* アセットタイプ（jcr:content/metadata/dc:format）
 
-* 承認ステータス (jcr:content/metadata/dam:status)
+* 承認ステータス（jcr:content/metadata/dam:status）
 
-2023 年 8 月の時点で、Experience Manager Assetsにはの新しいバージョン 9 が含まれます。 `damAssetLucene` インデックス。 以前のバージョンの `damAssetLucene-8` 以下で、 `statistical` 各検索ファセット数の項目のサンプルに対するアクセス制御を確認するモード。
+2023年8月の時点で、Experience Manager Assets には `damAssetLucene` インデックスの新しいバージョン 9 が含まれています。以前のバージョンの `damAssetLucene-8` と以下では、`statistical` モードを使用して各検索ファセット数の項目のサンプルに対するアクセス制御を確認していました。
 
-`damAssetLucene-9` は、Oak クエリファセットのカウントの動作を変更し、基になる検索インデックスによって返されるファセット数のアクセス制御を評価しなくなり、検索応答時間が短縮されます。 その結果、ユーザーにファセット数の値が表示され、アクセス権のないアセットが含まれる場合があります。 これらのユーザーは、アセットの詳細（パスを含む）へのアクセス、ダウンロード、読み取り、またはアセットに関する詳細情報の取得をおこなうことができません。
+`damAssetLucene-9` が Oak クエリファセットのカウントの動作を変更し、基になる検索インデックスによって返されるファセット数のアクセス制御を評価しなくなるため、検索応答時間が短縮されます。その結果、アクセス権のないアセットが含まれるファセット数の値がユーザーに表示される場合があります。これらのユーザーは、これらのアセットのその他の詳細（パスを含む）に対してアクセス、ダウンロードまたは読み取りを行ったり、アセットに関する詳細情報を取得したりすることはできません。
 
-前の動作に切り替える必要がある場合 (`statistical` モード )、詳しくは、 [コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=ja) のカスタムバージョンを作成するには、以下を実行します。 `damAssetLucene-9` インデックス。 Adobeでは、 `secure` モードを変更する必要があります。
+以前の動作（`statistical` モード）に切り替える必要がある場合は、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=ja)を参照し、`damAssetLucene-9` インデックスのカスタムバージョンを作成します。結果セットの数が多いと検索応答に長い時間がかかるため、`secure` モードに切り替えることはお勧めしません。
 
-Oak のファセット機能の詳細（これらのモードの詳細な説明など）については、 [この記事](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
+これらのモードの詳細な説明を含む、Oak のファセット機能の詳細については、[こちらの記事](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets)を参照してください。
 
 ## 入力に応じた検索候補 {#searchsuggestions}
 
@@ -141,7 +144,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 1. [!DNL Assets] のユーザーインターフェイスから、アセットのプロパティページを開きます。「**[!UICONTROL 詳細]**」をクリックし、「**[!UICONTROL 検索キーワードに採用]**」の下の「**[!UICONTROL 追加]**」をクリックします。
 1. 「**[!UICONTROL 昇格を検索]**」ボックスで、画像検索時の強化の対象となるキーワードを指定し、「**[!UICONTROL 追加]**」をクリックします。同じ方法で複数のキーワードを指定できます。
-1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。昇格したこのキーワードの対象となるアセットが、検索結果の上位に表示されます。
+1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。指定したキーワードに対して昇格したアセットが、検索結果の上位に表示されます。
 
 ターゲットを絞ったキーワードの検索結果で一部のアセットのランクを上げることで、この機能をうまく利用できます。以下の例（ビデオ）を参照してください。詳しくは、「[ での検索](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=ja)」を参照してください。 [!DNL Experience Manager]
 
@@ -149,19 +152,19 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 *ビデオ：検索結果のランク付けの方法とランクへの影響について*
 
-## 検索結果を表示するためのアセットのバッチサイズの設定 {#configure-asset-batch-size}
+## 検索結果を表示するためのアセットのバッチサイズを設定 {#configure-asset-batch-size}
 
-管理者は、検索の実行時に表示されるアセットのバッチサイズを設定できるようになりました。 アセット検索結果をさらに下にスクロールして結果を読み込むと、設定したバッチサイズの数倍の値でアセット検索結果が表示されます。 200、500、1,000 個のアセットの使用可能なバッチサイズから選択できます。 バッチサイズを小さく設定すると、検索応答時間が短縮されます。
+管理者が、検索の実行時に表示されるアセットのバッチサイズを設定できるようになりました。アセット検索結果をさらに下にスクロールして結果を読み込むと、設定したバッチサイズの倍数でアセット検索結果が表示されます。200、500、1,000 個のアセットの使用可能なバッチサイズから選択できます。バッチサイズを小さく設定すると、検索応答時間が短縮されます。
 
-例えば、結果数の上限を 200 アセットのバッチサイズに設定した場合、Experience Manager Assetsで検索を開始すると、検索結果に 200 アセットのバッチサイズが表示されます。 下にスクロールして検索結果間を移動すると、200 個のアセットの次のバッチが表示されます。 検索クエリに一致するすべてのアセットが表示されるまで、処理は続行されます。
+例えば、結果数の上限を 200 個のアセットのバッチサイズに設定した場合、Experience Manager Assets で検索を開始すると、検索結果に 200 個のアセットのバッチが表示されます。下にスクロールして検索結果を移動すると、200 個のアセットの次のバッチが表示されます。検索クエリに一致するすべてのアセットが表示されるまで、このプロセスは続行されます。
 
 アセットのバッチサイズを設定するには：
 
-1. に移動します。 **[!UICONTROL ツール]** > **[!UICONTROL Assets]** > **[!UICONTROL アセット設定]** > **[!UICONTROL アセットのオムニサーチ設定]**.
+1. **[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL アセットの設定]**／**[!UICONTROL アセットのオムニサーチの設定]**&#x200B;に移動します。
 
-1. 結果数の制限を選択し、 **[!UICONTROL 保存]**.
+1. 結果数の制限を選択し、「**[!UICONTROL 保存]**」をクリックします。
 
-   ![Assets のバッチサイズ設定](/help/release-notes/assets/assets-batch-size-configuration.png)
+   ![アセットのバッチサイズ設定](/help/release-notes/assets/assets-batch-size-configuration.png)
 
 ## 詳細検索 {#scope}
 
@@ -459,7 +462,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 * ワークフローを開始
 * アセットの関連付けまたは関連付けを解除
 * 検索を実行した後に自動的に表示されるフィルターパネルを使用してフィルターを適用し、検索結果を絞り込みます。
-* アセットの場所に移動します。
+* アセットの場所に移動します
 
 ### 検索結果の並べ替え {#sort}
 
@@ -514,7 +517,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 ### アセットフォルダーの場所に移動します {#navigate-asset-folder-location}
 
-検索結果に表示されるアセットのフォルダーの場所に移動します。 アセットを選択し、 **[!UICONTROL ファイルの場所を表示]**.
+検索結果に表示されるアセットのフォルダーの場所へ移動します。アセットを選択し、「**[!UICONTROL ファイルの場所を表示]**」をクリックします。
 
 ## 予期しない検索結果と問題 {#unexpected-results}
 

@@ -8,11 +8,11 @@ exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
 source-wordcount: '1775'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# アダプティブフォーム用のカスタム送信アクションの作成 {#writing-custom-submit-action-for-adaptive-forms}
+# アダプティブフォーム用のカスタム送信アクションを作成 {#writing-custom-submit-action-for-adaptive-forms}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -393,4 +393,4 @@ Perform the following steps to create a custom Submit Action that saves the data
 
 >[!MORELIKETHIS]
 >
->* [アダプティブフォームの送信アクションの設定](/help/forms/configure-submit-actions-core-components.md)
+>* [アダプティブフォームの送信アクションの設定方法](/help/forms/configure-submit-actions-core-components.md)

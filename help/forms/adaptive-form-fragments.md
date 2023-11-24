@@ -10,7 +10,7 @@ exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
 source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
 workflow-type: tm+mt
 source-wordcount: '2148'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 89%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 すべてのフォームは特定の目的用に設計されますが、ほとんどのフォームには、いくつかの共通するセグメントがあります（例：名前と住所、家族の詳細、収入の詳細などの個人情報などを入力するためのセグメント）。フォームのデベロッパーは、新しいフォームを作成するたびに、こうした共通セグメントを作成する必要があります。アダプティブフォームには、パネルやフィールドグループなどのフォームセグメントを 1 回だけ作成するための便利な機能が用意されています。作成したフォームセグメントは、アダプティブフォームで再利用することができます。この再利用可能なスタンドアロンのセグメントは、アダプティブフォームフラグメントといいます。
@@ -69,7 +69,7 @@ ht-degree: 89%
 
 編集モードでは、AEM サイドキックから任意のアダプティブフォームコンポーネントをフラグメントにドラッグアンドドロップできます。<!-- For information about Adaptive Form components, see Introduction to authoring Adaptive Forms. -->
 
-さらに、フラグメントのフォームモデルとして、XML スキーマまたは XDP フォームテンプレートを選択していた場合は、フォームモデル階層を示す新しいタブがコンテンツファインダーに表示されます。これにより、フォームモデルの要素をフラグメントにドラッグ&amp;ドロップできます。 追加されたフォームモデルエレメントはフォームコンポーネントに変換されますが、関連の XDP または XSD からの元のプロパティは保持されます。
+さらに、フラグメントのフォームモデルとして、XML スキーマまたは XDP フォームテンプレートを選択していた場合は、フォームモデル階層を示す新しいタブがコンテンツファインダーに表示されます。これにより、フォームモデルの要素をフラグメントにドラッグ＆ドロップできます。追加されたフォームモデルの要素はフォームコンポーネントに変換されますが、関連の XDP または XSD からの元のプロパティは保持されます。
 
 ### パネルをフラグメントとして保存 {#save-panel-as-a-fragment}
 
@@ -243,7 +243,7 @@ XFA フォームテンプレートまたは XSD 複合タイプを使用して�
 
 >[!NOTE]
 >
->フラグメント内のローカライゼーションキーは、アダプティブフォームの XLIFF ファイルには表示されません。
+>フラグメント内のローカリゼーションキーは、アダプティブフォームの XLIFF ファイル内には表示されません。
 
 ## フラグメントで作業するときの考慮事項 {#key-points-to-remember-when-working-with-fragments}
 

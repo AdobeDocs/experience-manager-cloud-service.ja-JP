@@ -8,7 +8,7 @@ exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1385'
-ht-degree: 87%
+ht-degree: 98%
 
 ---
 
@@ -88,7 +88,7 @@ Experience Manager では、アセットの量とサイズに基づいてダウ�
 
 1. ダイアログボックスで、「**[!UICONTROL ダウンロード]**」をクリックします。
 
-   大量のダウンロードに対するメール通知が有効になっている場合は、アーカイブされた zip フォルダーのダウンロード URL を記載したメールがインボックスに表示されます。電子メールからダウンロードリンクをクリックして、zip アーカイブをダウンロードします。
+   大量のダウンロードに対するメール通知が有効になっている場合は、アーカイブされた zip フォルダーのダウンロード URL を記載したメールがインボックスに表示されます。メールのダウンロードリンクをクリックして、zip アーカイブをダウンロードします。
 
    ![email-notifications-for-large-downloads](/help/assets/assets/email-for-large-notification.png)
 

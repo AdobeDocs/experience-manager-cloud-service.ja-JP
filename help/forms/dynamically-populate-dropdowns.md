@@ -1,5 +1,5 @@
 ---
-title: ドロップダウンリストにデータを動的に埋め込む方法は？
+title: ドロップダウンリストを動的に自動入力する手順?
 description: カスケーディングリストボックスを作成する方法、またはドロップダウンリストを動的に設定する方法について説明します。
 uuid: b3408aee-ac24-43af-a380-a5892abf0248
 content-type: reference
@@ -8,7 +8,7 @@ discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 

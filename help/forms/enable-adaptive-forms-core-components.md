@@ -1,6 +1,6 @@
 ---
-title: AEM Formsのas a Cloud Serviceおよびローカル開発環境でアダプティブFormsコアコンポーネントを有効にするにはどうすればよいですか？
-description: AEM Forms as a Cloud ServiceでアダプティブFormsコアコンポーネントを有効にする方法を説明します。
+title: AEM Forms as a Cloud Service およびローカル開発環境で、アダプティブフォームのコアコンポーネントを有効にする方法
+description: 詳しくは、AEM Forms as a Cloud Service でアダプティブフォームコアコンポーネントを有効にする方法参照してください。
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
@@ -8,18 +8,18 @@ exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
 source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '1013'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# アダプティブFormsコアコンポーネントの有効化 {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+# アダプティブフォームのコアコンポーネントの有効化 {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
-AEM Formsas a Cloud ServiceのアダプティブFormsコアコンポーネントを有効にすると、AEM FormsCloud Serviceインスタンスを使用して、複数のチャネルに対して、アダプティブFormsおよびヘッドレスFormsベースのコアコンポーネントの作成、公開、配信を開始できます。 ヘッドレスアダプティブフォームを使用するには、アダプティブフォームコアコンポーネントが有効な環境が必要です。
+AEM Forms as a Cloud Service のアダプティブフォームのコアコンポーネントを有効にすると、AEM Forms Cloud Service インスタンスを使用して、複数のチャネルへのコアコンポーネントベースのアダプティブフォームとヘッドレスフォームの作成、公開、配信を開始できます。ヘッドレスアダプティブフォームを使用するには、アダプティブフォームコアコンポーネントが有効な環境が必要です。
 
 ## 検討事項
 
@@ -358,4 +358,4 @@ AEM Forms as a Cloud Service 環境でアダプティブフォームコアコン
 
 >[!MORELIKETHIS]
 >
->* [アダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
+>* [アダプティブフォームを作成](/help/forms/creating-adaptive-form-core-components.md)

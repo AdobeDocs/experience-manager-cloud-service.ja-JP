@@ -7,7 +7,7 @@ exl-id: b01e98b9-0cc2-47c5-9f5b-79b8e6bef39f
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -88,7 +88,7 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 **必要な権限：** `Can Edit`、`Owner` またはアセットに対する管理者権限。
 
-Assets ビューを使用すると、リポジトリで使用可能なアセットのステータスを設定できます。 デジタルアセットのダウンストリーム使用をより適切に制御および管理するためのアセットステータスを設定します。
+アセットビューでは、リポジトリで使用可能なアセットのステータスを設定できます。デジタルアセットのダウンストリーム使用をより適切に制御および管理するためのアセットステータスを設定します。
 
 アセットに対して次のステータスを設定できます。
 
@@ -111,7 +111,7 @@ Assets ビューを使用すると、リポジトリで使用可能なアセッ�
 
 ### アセットの有効期限を設定 {#set-asset-expiration-date}
 
-また、Assets ビューでは、リポジトリーで使用可能なアセットに有効期限日を設定できます。 その後、アセットの `Expired` ステータスに基づいて[検索結果をフィルタリング](search-assets-view.md#refine-search-results)できます。また、アセットの有効期限の日付範囲を指定して、検索結果をさらにフィルタリングすることもできます。
+また、アセットビューでは、リポジトリで使用可能なアセットの有効期限を設定することもできます。その後、アセットの `Expired` ステータスに基づいて[検索結果をフィルタリング](search-assets-view.md#refine-search-results)できます。また、アセットの有効期限の日付範囲を指定して、検索結果をさらにフィルタリングすることもできます。
 
 アセットの有効期限を設定するには：
 

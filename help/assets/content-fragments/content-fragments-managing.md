@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1876'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -34,11 +34,11 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->コンテンツフラグメントは Sites 機能ですが、 **Assets**.
+>コンテンツフラグメントは Sites 機能ですが、**アセット**&#x200B;として保存されています。
 >
 >引き続き **Assets** コンソールから管理できますが、現在は主に&#x200B;**[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**&#x200B;コンソールで管理します。このセクションでは、**Assets** コンソールでの管理を説明しています。
 >
->コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。 この節では、主に **Assets** コンソール。 Sites のドキュメントを参照してください。 [コンテンツフラグメント — オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)：新しいエディターの詳細 ( 主に **コンテンツフラグメント** コンソール )。 どちらのエディターも、上部のツールバーに切り替えスイッチを使用して、他のエディターにすばやくアクセスできます。
+>コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。この節では、**Assets** コンソールから主にアクセスされるエディターについて説明します。（主に&#x200B;**コンテンツフラグメント**&#x200B;コンソールからアクセスされる）新しいエディターについて詳しくは、Sites のドキュメントの[コンテンツフラグメント - オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)を参照してください。どちらのエディターも、上部のツールバーに切り替えスイッチを使用して、他のエディターにすばやくアクセスできます。
 
 ## コンテンツフラグメントの作成 {#creating-content-fragments}
 
@@ -109,11 +109,11 @@ ht-degree: 89%
 * **チェックアウト**
 * **プロパティ**
 
-   * フラグメントのメタデータを表示、編集、またはその両方できます。
+   * フラグメントのメタデータを表示、編集、またはその両方を行います。
 
 * **編集**
 
-   * 以下が可能です。 [コンテンツ編集用にフラグメントを開く](/help/assets/content-fragments/content-fragments-variations.md) 要素、バリエーション、関連するコンテンツおよびメタデータと共に表示されます。
+   * フラグメントの要素、バリエーション、および関連付けられているコンテンツやメタデータと共に、[コンテンツを編集するためにフラグメントを開く](/help/assets/content-fragments/content-fragments-variations.md)ことができます。
 
 * **クイック公開**
 * **公開を管理**
@@ -195,7 +195,7 @@ ht-degree: 89%
    * **変更**：オレンジ
    * **アクティベートを解除済み**：赤
 
-* ボタンを使用すると、次のことができます。 **新しいエディタを試す**&#x200B;を直接開く *新規* [コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md) は、 [コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+* ボタンを使用すると、[コンテントフラグメントコンソール](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)からアクセスできる&#x200B;*新しい*[コンテントフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md)を直接開くことにより&#x200B;**新しいエディターを使える**&#x200B;ようになります。
 
   >[!WARNING]
   >
@@ -333,7 +333,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * 挿入されたテキスト - 緑
    * 置き換えられたテキスト - 青
 
-* 全画面表示アイコンを使用すると、どちらかのバージョンで開いた後、並列表示に切り替えることができます
+* 全画面表示アイコンを使用すれば、どちらかのバージョンで開いた後で、並列表示に切り替えることができます
 * 特定のバージョンに&#x200B;**戻す**&#x200B;ことができます
 * 「**完了**」を選択すると、コンソールに戻ります
 

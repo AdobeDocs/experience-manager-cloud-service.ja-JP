@@ -7,18 +7,18 @@ exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '2494'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
 # アダプティブフォームのテーブル {#tables-in-adaptive-forms}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+[新しいアダプティブフォームを作成する](/help/forms/creating-adaptive-form-core-components.md)、または [AEM Sites ページにアダプティブフォームを追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)際には、<span class="preview"> 最新の拡張可能なデータキャプチャである[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
 
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-forms-tables.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 
@@ -318,7 +318,7 @@ XFA のテーブル要素はテーブルコンポーネントにマッピング�
 
 >[!NOTE]
 >
->XDP テーブルコンポーネント、サブフォーム、または XSD 複合型の要素の数は、行のセル数を超えることはできません。 例えば、セルが 3 つしかない行に、4 つの要素をドロップすることはできません。これは、エラーとなります。
+>XDP テーブルコンポーネント（サブフォーム）または XSD 複合タイプ内の要素の数は、行内のセルの数を超えることはできません。例えば、セルが 3 つしかない行に、4 つの要素をドロップすることはできません。これは、エラーとなります。
 >
 >要素数が行内のセルの数より少ない場合、要素に基づいたセルが新しい行にまず追加され、その後、行内の残りのセルに入力するためにデフォルトのセルが追加されます。例えば、3 つの要素のグループを 4 つのセルを持つ行にドロップした場合、最初の 3 つのセルはドロップされた要素に基づくセルとなり、残りの 1 つのセルは表のデフォルトのセルになります。
 

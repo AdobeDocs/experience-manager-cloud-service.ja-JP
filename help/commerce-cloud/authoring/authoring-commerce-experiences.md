@@ -1,11 +1,11 @@
 ---
 title: コマースエクスペリエンスのオーサリング
-description: コンテキストを離れることなく製品データやコンテンツにアクセスし、コマース関連のエクスペリエンスを効率的に作成および構築する方法を説明します。
+description: コンテキストを離れることなく製品データやコンテンツにアクセスして、コマース関連のエクスペリエンスを効率的に作成する方法を見ていきましょう。
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '718'
-ht-degree: 89%
+ht-degree: 92%
 
 ---
 

@@ -1,16 +1,16 @@
 ---
-title: Formsas a Cloud Service通信 API とは
-description: PDFAPI を使用して、ドキュメントの署名、認証、保護、通信生成プロセスの自動化、PDFドキュメントの別の形式への変換を行います。
+title: Forms as a Cloud Service 通信 API とは
+description: 通信 API を使用して、ドキュメントの署名、認証、保護、PDF 生成プロセスの自動化、PDFドキュメントの別の形式への変換を行います。
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1446'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
-# AEM Formsas a Cloud Service通信の概要 {#frequently-asked-questions}
+# AEM Forms as a Cloud Service 通信の概要 {#frequently-asked-questions}
 
 
 | バージョン | 記事リンク |
@@ -108,9 +108,9 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ### PDF ドキュメントのアセンブリ
 
-ドキュメント操作 API を使用すると、複数の PDF または XDP ドキュメントを 1 つの PDF ドキュメントまたは PDF ポートフォリオに組み合わせることができます。次に、PDF・ドキュメントのアセンブリ方法を示します。
+ドキュメント操作 API を使用すると、複数の PDF または XDP ドキュメントを 1 つの PDF ドキュメントまたは PDF ポートフォリオに組み合わせることができます。次に、PDF ドキュメントのアセンブリ方法を示します。
 
-* 単純なPDF文書のアセンブリ
+* 単純な PDF ドキュメントのアセンブリ
 * PDF ポートフォリオの作成
 * 暗号化ドキュメントのアセンブリ
 * ベイツナンバリングを使用したドキュメントのアセンブリ
@@ -121,7 +121,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ### PDF ドキュメントのディスアセンブリ
 
-ドキュメント操作 API を使用して PDF ドキュメントを分割できます。また、ソースドキュメントからページを抽出したり、しおりの位置を境にソースドキュメントを分割することもできます。通常、このタスクは、PDFドキュメントが多数の個々のドキュメント（ステートメントの集まりなど）から最初に作成された場合に役立ちます。
+ドキュメント操作 API を使用して PDF ドキュメントを分割できます。また、ソースドキュメントからページを抽出したり、しおりの位置を境にソースドキュメントを分割することもできます。通常、このタスクは PDF ドキュメントが最初に多数の個別ドキュメント（明細書など）から作成された場合に役立ちます。
 
 * ソースドキュメントからのページの抽出
 * しおりに基づいたソースドキュメントの分割
@@ -131,7 +131,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ### PDF/A 準拠ドキュメントへの変換と PDF/A 準拠ドキュメントの検証
 
-ドキュメント操作 API を使用して、PDF ドキュメントを PDF/A 準拠のドキュメントに変換したり、PDF ドキュメントが PDF/A に準拠しているかどうかを判断したりできます。PDF/A は、ドキュメントのコンテンツを長期保存するためのアーカイブ形式です。 フォントはドキュメントに埋め込まれ、ファイルは非圧縮になります。 その結果、通常、PDF/A ドキュメントは標準の PDF ドキュメントよりも大きくなります。なお、PDF/A ドキュメントには、オーディオおよびビデオのコンテンツは含まれません。
+ドキュメント操作 API を使用して、PDF ドキュメントを PDF/A 準拠のドキュメントに変換したり、PDF ドキュメントが PDF/A に準拠しているかどうかを判断したりできます。PDF/A は、ドキュメントのコンテンツを長期保存するためのアーカイブ形式です。フォントはドキュメントに埋め込まれ、ファイルは非圧縮になります。その結果、通常、PDF/A ドキュメントは標準の PDF ドキュメントよりも大きくなります。なお、PDF/A ドキュメントには、オーディオおよびビデオのコンテンツは含まれません。
 
 <!-- 
 
@@ -163,25 +163,25 @@ The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-
 
 DocAssurance サービスには、以下の Signature API と Encyption API が含まれています。
 
-### 署名 API
+### Signature API
 
-署名 API を使用すると、組織が配信および受信するAdobe PDFドキュメントのセキュリティとプライバシーを保護できます。 このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。セキュリティ機能がドキュメント自体に適用されるので、ドキュメントは安全で、ライフサイクル全体にわたって制御されます。ドキュメントは、ファイアウォール外でも、オフラインでダウンロードされた場合でも、組織に送り返される場合であったとしても、保護された状態を維持します。署名 API を使用して、次のタスクを実行できます。
+Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。セキュリティ機能がドキュメント自体に適用されるので、ドキュメントは安全で、ライフサイクル全体にわたって制御されます。オフラインでダウンロードされる場合や組織に送り返される場合にファイアウォールを超えても、ドキュメントを安全な状態に維持します。Signature API を使用して、次のタスクを実行できます。
 
-* 署名ドキュメントに署名フィールドをPDFします。
-* 署名ドキュメント内の指定した署名フィールドにPDFします。
-* PDF文書の認証
+* PDF ドキュメントに署名フィールドを追加します。
+* PDF ドキュメント内の指定した署名フィールドに署名します。
+* PDF ドキュメントの証明
 
 ### 暗号化 API
 
-暗号化 API を使用して、ドキュメントを暗号化および復号化できます。 ドキュメントが暗号化されると、その内容が読み取れなくなります。 許可されたユーザーは、ドキュメントを復号化して、コンテンツにアクセスできます。 PDFドキュメントがパスワードで暗号化されている場合、ユーザーは開くパスワードを指定してから、Adobe ReaderまたはAdobe Acrobatでドキュメントを表示する必要があります。 同様に、PDFドキュメントが証明書で暗号化されている場合、PDFドキュメントを、PDFドキュメントの暗号化に使用された証明書（秘密鍵）に対応する公開鍵で復号化する必要があります。
+暗号化 API を使用すると、ドキュメントの暗号化および復号が可能になります。ドキュメントが暗号化されると、その内容が読み取れなくなります。承認済みユーザーは、ドキュメントを復号して内容を確認できます。PDF ドキュメントがパスワードで暗号化されている場合、ユーザーは開くパスワードを指定してから、Adobe Reader または Adobe Acrobat でドキュメントを表示する必要があります。同様に、PDF ドキュメントが証明書で暗号化されている場合は、、PDF ドキュメントの暗号化に使用された証明書 (秘密鍵) に対応する公開鍵で PDF ドキュメントを復号する必要があります。
 
-Encryption API を使用して、次のタスクを実行できます。
+暗号化 API を使用して、次のタスクを実行できます。
 
 * パスワードで PDF ドキュメントを暗号化します。
 * PDF ドキュメントからパスワードベースの暗号化を削除します。
-* セキュリティドキュメントに適用されるセキュリティのPDFを取得します。
+* PDF ドキュメントに適用されるセキュリティのタイプを取得します。
 
-署名 API と暗号化 API の両方が [同期 API](#types-of-communications-apis-types).
+Signature API と Encryption API は両方とも [同期 API](#types-of-communications-apis-types) です。
 
 
 ## 通信 API のタイプ {#types}
@@ -302,6 +302,6 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## 関連トピック {#see-also}
 
-* [通信処理 — 同期 API](/help/forms/aem-forms-cloud-service-communications.md)
-* [通信処理 — バッチ API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-* [アダプティブFormsおよび通信 API 用のAEM Formsas a Cloud Serviceアーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
+* [通信処理 - 同期 API](/help/forms/aem-forms-cloud-service-communications.md)
+* [通信処理 - バッチ API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+* [アダプティブフォームおよび通信 API 用の AEM Forms as a Cloud Service アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)

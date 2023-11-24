@@ -1,11 +1,11 @@
 ---
-title: アダプティブフォームの送信アクションの設定方法?
+title: アダプティブフォームの送信アクションの設定方法
 description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自のアクションを作成できます。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3428'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -13,12 +13,12 @@ ht-degree: 93%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
-**適用先**: ✔️アダプティブフォームの基盤コンポーネント。 ❌ [アダプティブフォームのコアコンポーネント](/help/forms/configure-submit-actions-core-components.md). Adobeでは、コアコンポーネントを次のように使用することをお勧めします。 [AEM SitesページへのアダプティブFormsの追加](create-or-add-an-adaptive-form-to-aem-sites-page.md) または [スタンドアロンのアダプティブFormsを作成する](creating-adaptive-form-core-components.md).
+**適用先**: ✔️アダプティブフォームの基盤コンポーネント。 ❌ [アダプティブフォーム (コアコンポーネント](/help/forms/configure-submit-actions-core-components.md). Adobeでは、コアコンポーネントを次のように使用することをお勧めします。 [AEM SitesページへのアダプティブFormsの追加](create-or-add-an-adaptive-form-to-aem-sites-page.md) または [スタンドアロンのアダプティブFormsを作成する](creating-adaptive-form-core-components.md).
 
-送信アクションは、ユーザーがアダプティブフォームの「**[!UICONTROL 送信]**」ボタンをクリックしたするときにトリガーされます。Forms as a Cloud Serviceでは、次の送信アクションが初期設定で提供されています。
+送信アクションは、ユーザーがアダプティブフォームの「**[!UICONTROL 送信]**」ボタンをクリックするときにトリガーされます。Forms as a Cloud Serviceでは、次の送信アクションが初期設定で提供されています。
 
 * [REST エンドポイントへの送信](#submit-to-rest-endpoint)
 * [メールを送信](#send-email)
@@ -360,7 +360,7 @@ AEM Forms を Microsoft® OneDrive ストレージに接続するには、以下
 「**[!UICONTROL Azure Blob Storage に送信]**」送信アクションは、アダプティブフォームを Microsoft Azure Portal に接続します。フォームデータ、ファイル、添付ファイル、またはレコードのドキュメントを、接続された Azure ストレージコンテナに送信できます。 Azure Blob Storage の送信アクションを使用するには、次の手順に従います。
 
 1. [Azure Blob Storage コンテナの作成](#create-a-azure-blob-storage-container-create-azure-configuration)：AEM Forms を Azure Storage コンテナに接続します。
-2. [アダプティブフォームでの Azure ストレージ設定の使用 ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af)：アダプティブフォームを、設定済みの Azure ストレージコンテナに接続します。
+2. [アダプティブフォームでの Azure ストレージ設定の使用](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af)：アダプティブフォームを、設定済みの Azure ストレージコンテナに接続します。
 
 ### Azure Blob Storage コンテナの作成 {#create-azure-configuration}
 
@@ -413,7 +413,7 @@ AEM Forms を Azure ストレージコンテナに接続するには、次の手
 
 アダプティブフォームエディターには「**Microsoft Power Automate フローの呼び出し**」送信アクションが用意されており、アダプティブフォームのデータ、添付ファイル、レコードのドキュメントを Power Automate クラウドフローに送信することができます。送信アクションを使用して、キャプチャしたデータを Microsoft® Power Automate に送信するには、[Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接続](forms-microsoft-power-automate-integration.md)します
 
-設定が正常に完了したら、 [Microsoft® Power Automate フローを起動します。](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) 送信アクションを使用して、Power Automate Flow にデータを送信します。
+「[Microsoft® Power Automate フローの呼び出し](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action)」送信アクションを使用して、Power Automate フローにデータを送信する
 
 ## 同期または非同期送信の使用 {#use-synchronous-or-asynchronous-submission}
 

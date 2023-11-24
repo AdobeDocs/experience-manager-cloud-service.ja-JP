@@ -6,18 +6,18 @@ exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
 source-wordcount: '733'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # フォームでのレビューの作成と管理{#creating-and-managing-reviews-to-forms}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+[新しいアダプティブフォームを作成する](/help/forms/creating-adaptive-form-core-components.md)、または [AEM Sites ページにアダプティブフォームを追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)際には、<span class="preview"> 最新の拡張可能なデータキャプチャである[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 ## レビュー {#review}
@@ -33,7 +33,7 @@ ht-degree: 85%
    * **タイトル**：必須。英数字、ハイフンおよびアンダースコアを含めることができます。
    * **説明**：任意。レビューの目的／内容の説明。
    * **期限**：任意。レビューが終了する日付。期限を過ぎている場合、タスクが「期限切れ」と表示されます。
-   * **レビュー担当者名**：少なくとも 1 つは必須です。コンボボックスを使用して、レビュー担当者を追加し、一致するすべての名前の名前リストを入力します。名前を選択し、「**追加**」をクリックします。の次のセクション **レビュー担当者** 「 」タブには、すべてのレビュー担当者の名前が表示されます。
+   * **レビュー担当者名**：少なくとも 1 つは必須です。コンボボックスを使用して、レビュー担当者を追加し、一致するすべての名前の名前リストを入力します。名前を選択し、「**追加**」をクリックします。「**レビュー担当者**」タブの次のセクションには、すべてのレビュー担当者の名前が表示されます。
 
 1. 「**開始**」をクリックして、レビューを開始します。
 
@@ -68,7 +68,7 @@ ht-degree: 85%
 
    **レビューを管理** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) アイコンをクリックします。
 
-   開始者以外のユーザーに対しては、「レビューを管理」アイコンは無効になります。
+   開始者以外のユーザーに対しては、レビューを管理アイコンは表示されません。
 
 1. 次の情報を含む画面が表示されます。
 

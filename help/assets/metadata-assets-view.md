@@ -1,13 +1,13 @@
 ---
-title: Assets ビューでメタデータを管理する方法は？
-description: Assets ビューでのメタデータの管理方法について説明します。 メタデータ管理が改善され、アセットへのアクセス性が向上し、管理が容易になり、アセットを完全に管理できるようになりました。
+title: アセットビューでメタデータを管理する方法
+description: アセットビューでメタデータを管理する方法を説明します。メタデータ管理が改善され、アセットへのアクセス性が向上し、アセットを完全かつ容易に管理できるようになりました。
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
 source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
 source-wordcount: '1556'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 

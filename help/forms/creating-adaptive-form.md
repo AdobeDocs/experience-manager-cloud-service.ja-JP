@@ -1,5 +1,5 @@
 ---
-title: アダプティブフォームの作成方法?
+title: アダプティブフォームの作成方法
 description: 情報の収集と処理を合理化するアダプティブフォームの作成方法を説明します。 また、フォームデータモデルに基づいてアダプティブフォームを作成する方法についても説明します。
 feature: Adaptive Forms
 role: User, Developer
@@ -8,7 +8,7 @@ exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1546'
-ht-degree: 86%
+ht-degree: 93%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 86%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=ja#) |
 | AEM as a Cloud Service | この記事 |
 
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
 
 アダプティブフォームを使用すると、魅力的でレスポンシブ、かつ動的でアダプティブなフォームを作成できます。AEM Forms は、アダプティブ Forms を素早くオーサリングするための、ビジネスユーザーにとってわかりやすいウィザードを提供します。 このウィザードはクイックタブナビゲーションを備えており、アダプティブフォームを作成するための事前設定済みのテンプレート、スタイル設定、フィールド、送信オプションを簡単に選択することができます。
 
@@ -196,7 +196,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 1. 「**[!UICONTROL データモデル]**」タブを選択し、以下のいずれかを実行します。
 
    * アダプティブフォームにフォームモデルがない場合、フォームモデルを 1 つ選択し、それに応じて <!-- a form template, -->XML／JSON スキーマまたはフォームデータモデルを選択することができます。
-   * アダプティブフォームがフォームモデルに基づいている場合、フォームモデルを変更することはできません。 別の<!-- form template, --> XML スキーマまたは JSON スキーマを選択するか、同じフォームモデルのフォームデータモデルを適宜選択することができます。
+   * アダプティブフォームがフォームモデルに基づいている場合、そのフォームモデルを変更することはできません。 別の<!-- form template, --> XML スキーマまたは JSON スキーマを選択するか、同じフォームモデルのフォームデータモデルを適宜選択することができます。
 1. 「![保存](/help/forms/assets/check-button.png)」をタップして、プロパティを保存します。
 
 ![FDM スキーマのサポート](/help/forms/assets/fdmsupport.png)

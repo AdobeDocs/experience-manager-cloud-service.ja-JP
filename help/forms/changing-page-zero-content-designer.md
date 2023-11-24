@@ -9,7 +9,7 @@ docset: aem65
 source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '248'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 59%
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
-[!DNL AEM Forms] Designer のバージョンでは、Page Zero に表示されるメッセージを変更できます。 Page Zero メッセージを変更するには、以下の手順を実行します。
+[!DNL AEM Forms] バージョンの Designer を使用すると、Page Zero に表示されるメッセージを変更できます。Page Zero メッセージを変更するには、以下の手順を実行します。
 
 1. [!DNL AEM Forms] バージョンの Designer がインストールされていることを確認します。Designer のバージョン情報画面で、バージョンを確認できます。
 
@@ -48,5 +48,5 @@ ht-degree: 59%
 
 >[!MORELIKETHIS]
 >
->* [Forms Designer をダウンロードしてインストールし、レコードのドキュメントテンプレートを作成する](/help/forms/installing-configuring-designer.md)
->* [Forms Designer を使用して、レコードのドキュメント（DoR）のテンプレートとフォームフラグメントを作成?](/help/forms/use-forms-designer.md)
+>* [レコードのドキュメントテンプレートを作成するために Forms Designer をダウンロードしてインストールする方法](/help/forms/installing-configuring-designer.md)
+>* [Forms Designer を使用して、レコードのドキュメント（DoR）のテンプレートとフォームフラグメントを作成](/help/forms/use-forms-designer.md)

@@ -1,17 +1,17 @@
 ---
 title: Experience Manager Sites ページでフォームポータルを作成する方法?
-description: フォームポータルを作成し、標準搭載のコアコンポーネントを AEM Sites ページで使用する方法を説明します。
+description: フォームポータルを作成し、標準搭載のコアコンポーネントを AEM Sites ページで使用する方法について説明します。
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1840'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
-# AEM SitesページへのForms Portal の追加 {#publish-forms-on-portal}
+# AEM Sites ページへのフォームポータルの追加 {#publish-forms-on-portal}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+[新しいアダプティブフォームを作成する](/help/forms/creating-adaptive-form-core-components.md)、または [AEM Sites ページにアダプティブフォームを追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)際には、<span class="preview"> 最新の拡張可能なデータキャプチャである[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -39,7 +39,7 @@ AEM Forms は管理のオーバーヘッドと実稼働の遅延を低減する�
 
 AEM Forms は、次のポータルコンポーネントを標準搭載しています。
 
-* Search &amp; Lister：このコンポーネントを使用すると、フォームリポジトリーのフォームをポータルページにリストし、指定した条件に基づいてフォームをリストするための設定オプションを提供します。
+* 検索とリスター：このコンポーネントを使用すると、フォームリポジトリ内のフォームをポータルページに一覧表示できます。また、指定した基準に基づいてフォームを一覧表示するための設定オプションが提供されます。
 
 * ドラフトと送信：「検索とリスター」コンポーネントはフォーム作成者が発行しれたフォームを表示するのに対し、「ドラフトと送信」コンポーネントはドラフトとして保存され、後で完了して送信されるフォームを表示します。このコンポーネントは、ログインしたユーザーに対してパーソナライズされたエクスペリエンスを提供します。
 

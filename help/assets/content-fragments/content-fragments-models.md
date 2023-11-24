@@ -5,7 +5,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2931'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -30,11 +30,12 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
    >
    >[コンテンツフラグメントモデルの使用が有効になっていない](/help/assets/content-fragments/content-fragments-configuration-browser.md)場合、「**作成**」オプションは使用できません。
 
-1. 「**モデルタイトル**」を指定します。また、様々なプロパティ ( 例えば、 **タグ**, a **説明**&#x200B;をクリックし、次を選択します。 **モデルを有効にする** から [モデルを有効にする](#enabling-disabling-a-content-fragment-model) 必要に応じて。
+1. **モデルタイトル**を指定します。
+また、様々なプロパティ ( 例えば、 **タグ**, a **説明**&#x200B;をクリックし、次を選択します。 **モデルを有効にする** から [モデルを有効にする](#enabling-disabling-a-content-fragment-model) 必要に応じて。
 
    >[!NOTE]
    >
-   >詳しくは、 **デフォルトのプレビュー URL パターン** 参照 [コンテンツフラグメントモデル — プロパティ](#content-fragment-model-properties).
+   >**デフォルトのプレビュー URL パターン**&#x200B;について詳しくは、[コンテンツフラグメントモデル - プロパティ](#content-fragment-model-properties)を参照してください。
 
    ![タイトルと説明](assets/cfm-models-02.png)
 
@@ -238,9 +239,9 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
 
 ### コンテンツ参照 {#content-reference}
 
-コンテンツ参照を使用すると、画像やコンテンツフラグメントなど、別のソースからコンテンツをレンダリングできます。
+コンテンツ参照を使用すると、別のソース（例：画像やコンテンツフラグメント）からコンテンツをレンダリングできます。
 
-標準プロパティに加えて、次のものを指定できます。
+標準プロパティに加えて、以下を指定できます。
 
 * 参照される任意のコンテンツの&#x200B;**ルートパス**
 * 参照可能なコンテンツタイプ
@@ -253,7 +254,7 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
 
 ### フラグメント参照（ネストされたフラグメント） {#fragment-reference-nested-fragments}
 
-フラグメント参照は 1 つ以上のコンテンツフラグメントを参照します。アプリで使用するコンテンツを取得する際に特に関心のあるこの機能は、複数のレイヤーを持つ構造化データを取得できるので、この機能を使用します。
+フラグメント参照は 1 つ以上のコンテンツフラグメントを参照します。複数のレイヤーを持つ構造化データを取得できるようになるので、アプリで使用するコンテンツを取得する場合、この機能は特に重要になります。
 
 次に例を示します。
 
@@ -319,7 +320,7 @@ type CompanyModel {
 
      >[!NOTE]
      >
-     >これは、 *新規* コンテンツフラグメントエディター。 詳しくは、 [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) を参照してください。
+     >これは、*新規*&#x200B;コンテンツフラグメントエディターのみで使用されます。詳しくは、[コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)を参照してください。
 
 
 ## コンテンツフラグメントモデルの有効化または無効化 {#enabling-disabling-a-content-fragment-model}

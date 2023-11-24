@@ -1,6 +1,6 @@
 ---
-title: アダプティブFormsの予約キーワードとは
-description: アダプティブFormsで識別子として使用できない予約済みのキーワード。
+title: アダプティブフォームの予約済みのキーワードとは
+description: アダプティブフォームで識別子として使用できない予約済みのキーワードです。
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -8,7 +8,7 @@ discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 44%
 <table>
  <tbody>
   <tr>
-   <td><p>初期化する</p> </td>
+   <td><p>intialize</p> </td>
    <td><p>getOnOffValues</p> </td>
    <td><p>minOccur</p> </td>
   </tr>
@@ -41,7 +41,7 @@ ht-degree: 44%
   </tr>
   <tr>
    <td><p>playJson</p> </td>
-   <td><p>準備</p> </td>
+   <td><p>prepare</p> </td>
    <td><p>instanceCount</p> </td>
   </tr>
   <tr>
@@ -52,7 +52,7 @@ ht-degree: 44%
   <tr>
    <td><p>calcExp</p> </td>
    <td><p>queueExpressions</p> </td>
-   <td><p>インスタンス</p> </td>
+   <td><p>instances</p> </td>
   </tr>
   <tr>
    <td><p>title</p> </td>
@@ -62,7 +62,7 @@ ht-degree: 44%
   <tr>
    <td><p>valueCommitScript</p> </td>
    <td><p>autoSaveStart</p> </td>
-   <td><p>訪問</p> </td>
+   <td><p>visit</p> </td>
   </tr>
   <tr>
    <td><p>validateExp</p> </td>
@@ -72,7 +72,7 @@ ht-degree: 44%
   <tr>
    <td><p>placeholderText</p> </td>
    <td><p>autoSaveStartExpression</p> </td>
-   <td><p>子</p> </td>
+   <td><p>children</p> </td>
   </tr>
   <tr>
    <td><p>value</p> </td>
@@ -130,7 +130,7 @@ ht-degree: 44%
    <td><p>索引</p> </td>
   </tr>
   <tr>
-   <td><p>高さ</p> </td>
+   <td><p>height</p> </td>
    <td><p>showComment</p> </td>
    <td><p>visible</p> </td>
   </tr>
@@ -200,7 +200,7 @@ ht-degree: 44%
    <td><p>isLastPart</p> </td>
   </tr>
   <tr>
-   <td><p>instanceManager</p> </td>
+   <td><p>InstanceManager</p> </td>
    <td><p>completionAfterMessage</p> </td>
    <td><p>isFirstPart</p> </td>
   </tr>
@@ -210,7 +210,7 @@ ht-degree: 44%
    <td><p>currentActivePart</p> </td>
   </tr>
   <tr>
-   <td><p>概要</p> </td>
+   <td><p>summary</p> </td>
    <td><p>completionFailureScript</p> </td>
    <td><p>sectionName</p> </td>
   </tr>

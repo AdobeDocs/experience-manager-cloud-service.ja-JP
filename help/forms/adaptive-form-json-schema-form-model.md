@@ -1,5 +1,5 @@
 ---
-title: アダプティブフォームの JSON スキーマをデザインするにはどうすればよいですか？
+title: アダプティブフォームの JSON スキーマのデザイン?
 description: アダプティブフォームの JSON スキーマを作成し、そのスキーマに基づいてアダプティブフォームを作成して、スキーマ苦情データを生成する方法を説明します。
 feature: Adaptive Forms
 role: User, Developer
@@ -8,17 +8,17 @@ exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
 source-wordcount: '1347'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# アダプティブフォームの JSON スキーマのデザイン {#creating-adaptive-forms-using-json-schema}
+# アダプティブフォームの JSON スキーマをデザイン {#creating-adaptive-forms-using-json-schema}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+[新しいアダプティブフォームを作成する](/help/forms/creating-adaptive-form-core-components.md)、または [AEM Sites ページにアダプティブフォームを追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)際には、<span class="preview"> 最新の拡張可能なデータキャプチャである[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 
@@ -737,12 +737,12 @@ JSON スキーマの要素に以下の制限を追加して、アダプティブ
 フォーム送信時に、すべての JSON スキーマベースのアダプティブFormsでスキーマに準拠したデータを生成するには、次の手順に従います。
 
 1. Experience ManagerWeb コンソール ( ) に移動します。 `https://server:host/system/console/configMgr`.
-1. 場所 **[!UICONTROL アダプティブフォームとインタラクティブ通信の Web チャネル設定]**.
+1. **[!UICONTROL アダプティブフォームおよびインタラクティブ通信 web チャネルの設定]**
 1. その設定をタップして編集モードで開きます。
 1. を選択します。 **[!UICONTROL スキーマ準拠データを生成]** チェックボックス。
 1. 設定を保存します。
 
-![アダプティブフォームとインタラクティブ通信の Web チャネル設定](/help/forms/assets/af-ic-web-channel-configuration.png)
+![アダプティブフォームおよびインタラクティブ通信 web チャネルの設定](/help/forms/assets/af-ic-web-channel-configuration.png)
 
 
 ## サポート対象外の構成  {#non-supported-constructs}

@@ -1,5 +1,5 @@
 ---
-title: AEM Adaptive Forms用の非同期送信を設定する方法を教えてください。
+title: アダプティブフォームの非同期送信の設定方法
 description: アダプティブフォームの非同期送信を設定する方法について説明します。アダプティブフォームで非同期送信がどのように機能するかを詳しく調べます。
 feature: Adaptive Forms
 role: User
@@ -8,7 +8,7 @@ exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
 source-wordcount: '751'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/asynchronous-submissions-adaptive-forms.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 

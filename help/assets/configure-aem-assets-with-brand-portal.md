@@ -1,5 +1,5 @@
 ---
-title: AEM Assets as a [!DNL Cloud Service] と Brand Portal の連携の設定
+title: Brand Portal を使用した AEM Assets as a  [!DNL Cloud Service]  設定
 description: AEM AssetsとBrand Portalの設定方法を説明します。 この設定を使用すると、承認済みのブランドアセットをAEMインスタンスからBrand Portalに公開し、Brand Portalユーザーに配布できます。
 contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
@@ -8,20 +8,20 @@ exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2584'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
-# Brand Portal で Experience Manager Assets を設定 {#configure-aem-assets-with-brand-portal}
+# Brand Portal を使用した Experience Manager Assets 設定 {#configure-aem-assets-with-brand-portal}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
-Adobe Experience Manager Assets Brand Portalを設定すると、承認済みのブランドアセットをAdobe Experience Manager Assets as a から公開できます [!DNL Cloud Service] インスタンスをBrand Portalに送信し、Brand Portalユーザーに配布します。
+Adobe Experience Manager Assets Brand Portal を設定すると、承認済みのブランドアセットを Adobe Experience Manager Assets as a [!DNL Cloud Service] インスタンスから Brand Portal に公開し、Brand Portal ユーザーに配信できます。
 
-## Cloud Manager を使用して Brand Portal をライセンス認証する {#activate-brand-portal}
+## Cloud Manager を使用して Brand Portal をアクティベート {#activate-brand-portal}
 
 Cloud Manager ユーザーは、Experience Manager Assets as a [!DNL Cloud Service] インスタンス用の Brand Portal をアクティブ化します。アクティブ化のワークフローでは、必要な設定（認証トークン、IMS 設定および Brand Portal クラウドサービス）がバックエンドで作成され、Cloud Manager の Brand Portal テナントのステータスが反映されます。Brand Portal をアクティブ化すると、Experience Manager Assets のユーザーが Brand Portal にアセットを公開して、Brand Portal ユーザーに配布できるようになります。
 

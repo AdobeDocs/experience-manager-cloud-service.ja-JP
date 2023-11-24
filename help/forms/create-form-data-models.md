@@ -8,11 +8,11 @@ exl-id: b17b7441-912c-44c7-a835-809f014a8c86
 source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '1548'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# フォームデータモデルの作成 {#create-form-data-model}
+# フォームデータモデルを作成 {#create-form-data-model}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -142,4 +142,4 @@ OSGi Factory Configuration ファイルを、PID `org.apache.sling.caconfig.impl
 
 >[!MORELIKETHIS]
 >
->* [フォームデータモデルの使用](/help/forms/using-form-data-model.md)
+>* [フォームデータモデルを使用](/help/forms/using-form-data-model.md)

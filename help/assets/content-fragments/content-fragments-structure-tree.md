@@ -5,7 +5,7 @@ exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '169'
-ht-degree: 55%
+ht-degree: 92%
 
 ---
 
@@ -15,9 +15,9 @@ AEM のコンテンツフラグメントエディターの構造ツリー機能�
 
 >[!NOTE]
 >
->コンテンツフラグメント は Sites 機能ですが、 **Assets**.
+>コンテンツフラグメントは Sites 機能ですが、 **Assets**.
 >
->コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。 この節では、主に **Assets** コンソール。 Sites のドキュメントを参照してください。 [コンテンツフラグメント — オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)：新しいエディターの詳細 ( 主に **コンテンツフラグメント** コンソール )。
+>コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。この節では、**Assets** コンソールから主にアクセスされるエディターを説明します。（主に&#x200B;**コンテンツフラグメント**&#x200B;コンソールからアクセスされる）新しいエディターについて詳しくは、Sites のドキュメントの[コンテンツフラグメント - オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)を参照してください。
 
 コンテンツフラグメントエディターで「構造ツリー」アイコンを選択できます。
 

@@ -9,7 +9,7 @@ exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3869'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -71,7 +71,7 @@ Connected Assets 機能では、[!DNL Experience Manager Sites] と [!DNL Experi
 
 ### Connected Assets のアーキテクチャ {#connected-assets-architecture}
 
-Experience Managerを使用すると、リモート DAM デプロイメントをソースとして複数のExperience Managerに接続できます [!DNL Sites] デプロイメント。 ただし、1 つの [!DNL Sites] デプロイメントに接続できるリモート DAM デプロイメントは 1 つだけです。
+Experience Manager を使用すると、リモート DAM デプロイメントをソースとして複数の Experience Manager [!DNL Sites] デプロイメントに接続できます。ただし、1 つの [!DNL Sites] デプロイメントに接続できるリモート DAM デプロイメントは 1 つだけです。
 
 リモート DAM デプロイメントに接続するための Sites インスタンスの最適な数を評価します。接続された各 Sites インスタンスがリモート DAM のデータトラフィックに寄与するため、デプロイメントに Sites インスタンスを段階的に接続し、リモート DAM のパフォーマンスに影響がないことをテストすることをお勧めします。
 
@@ -318,7 +318,7 @@ Connected Assets の設定後、[!DNL Dynamic Media] アセットは、[!DNL Sit
 * アセットの使用状況に関するインサイトを取得するには、[!DNL Sites] インスタンスで[アセットインサイト](/help/assets/assets-insights.md)機能を設定します。
 * オーサリングコンポーネントでのパスブラウザーの使用は、Connected Assets ではサポートされていません。
 
-* リモートアセットを [画像コンポーネント設定ダイアログ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog). ただし、リモートアセットを、 **[!UICONTROL 設定]**.
+* リモートアセットを [画像コンポーネント設定ダイアログ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=ja). ただし、リモートアセットを、 **[!UICONTROL 設定]**.
 
 ### 権限とアセット管理 {#permissions-and-managing-assets}
 

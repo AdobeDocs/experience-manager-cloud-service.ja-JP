@@ -1,12 +1,12 @@
 ---
 title: AEM Workflow でユーザーを選択する方法は？
-description: 実行時に [!DNL AEM Forms] ワークフローのユーザーまたはグループを選択する方法について説明します。
+description: 実行時に  [!DNL AEM Forms]  ワークフローのユーザーまたはグループを選択する方法について説明します。
 content-type: troubleshooting
 topic-tags: publish
 source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '902'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -117,8 +117,8 @@ function getAdobeSignRecipients() {
 以下のコードサンプルをコンパイルするには、[[!DNL AEM Forms] Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ja) jar および [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) ファイルが必要です。これらの jar ファイルを外部の依存関係として OSGi バンドルプロジェクトに追加します。 任意の Java IDE を使用して、OSGi バンドルを作成できます。 次の手順は、Eclipse を使用して OSGi バンドルを作成する手順を示しています。
 
 1. Eclipse IDE を開きます。 **[!UICONTROL ファイル]**／**[!UICONTROL 新規プロジェクト]**&#x200B;に移動します。
-1. ウィザードを選択画面で、「 」を選択します。 **[!UICONTROL Maven プロジェクト]**&#x200B;をクリックし、 **[!UICONTROL 次へ]**.
-1. 新しい Maven プロジェクトで、デフォルトをそのままにして、「 **[!UICONTROL 次へ]**. アーキタイプを選択して「**[!UICONTROL 次へ]**」をクリックします。例えば、maven-archetype-quickstart などです。 指定 **[!UICONTROL グループ ID]**, **[!UICONTROL アーティファクト ID]**, **[!UICONTROL version]**、および **[!UICONTROL パッケージ]** プロジェクトの場合は、をクリックします。 **[!UICONTROL 完了]**. プロジェクトが作成されます。
+1. ウィザードを選択画面で、**[!UICONTROL Maven プロジェクト]**&#x200B;を選択し、「**[!UICONTROL 次へ]**」をクリックします。
+1. 新しい Maven プロジェクトで、デフォルトをそのままにして、「 **[!UICONTROL 次へ]**. アーキタイプを選択して「**[!UICONTROL 次へ]**」をクリックします。例えば、maven-archetype-quickstart などです。 指定 **[!UICONTROL グループ ID]**, **[!UICONTROL アーティファクト ID]**, **[!UICONTROL version]**、および **[!UICONTROL パッケージ]** プロジェクトの場合は、をクリックします。 **[!UICONTROL 完了]**. プロジェクト構造が作成されます。
 1. 編集用に pom.xml ファイルを開き、ファイルのすべてのコンテンツを以下に置き換えます。
 
    ```xml

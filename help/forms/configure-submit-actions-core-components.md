@@ -1,12 +1,12 @@
 ---
-title: アダプティブフォームの送信アクションの設定方法?
+title: アダプティブフォームの送信アクションの設定方法
 description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自の送信アクションを作成できます
 keywords: アダプティブフォームの送信アクションの選択、アダプティブフォームの sharepoint リストへの接続、アダプティブフォームの sharepoint ドキュメントライブラリへの接続、アダプティブフォームのフォームデータモデルへの接続の方法
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3634'
-ht-degree: 80%
+ht-degree: 94%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 80%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
-| 適用先 | ✅アダプティブフォームのコアコンポーネント❎、 [アダプティブフォームの基盤コンポーネント](/help/forms/configuring-submit-actions.md) |
+| 対象 | ✅アダプティブフォームのコアコンポーネント❎、 [アダプティブフォームの基盤コンポーネント](/help/forms/configuring-submit-actions.md) |
 
 
-送信アクションを使用すると、アダプティブフォームから取り込んだデータの送信先を選択できます。 ユーザーが **[!UICONTROL 送信]** ボタンを使用して、アダプティブフォームを編集できます。 Formsas a Cloud Serviceのは、コアコンポーネントに基づくアダプティブFormsの場合、事前に作成された送信アクションの配列を提供します。 標準のこれらの送信アクションを使用すると、次のことができます。
+送信アクションを使用すると、アダプティブフォーム経由で取り込んだデータの送信先を選択できます。送信アクションは、ユーザーがアダプティブフォームの「**[!UICONTROL 送信]** button on an Adaptive Form. 」ボタンをクリックするとトリガーされます。Formsas a Cloud Serviceのは、コアコンポーネントに基づくアダプティブFormsの場合、事前に作成された送信アクションの配列を提供します。 標準のこれらの送信アクションを使用すると、次のことができます。
 
 * フォームデータを E メールで簡単に送信できます。
 * データの送信中に、Microsoft Power Automate のフローまたはAEM Workflows を開始します。
@@ -32,18 +32,18 @@ ht-degree: 80%
 
 また、 [デフォルトの送信アクションの拡張](custom-submit-action-form.md) をクリックして、独自の送信アクションを作成します。
 
-## アダプティブフォームの送信アクションの選択と設定 {#select-and-configure-submit-action}
+## アダプティブフォームの送信アクションの設定方法 {#select-and-configure-submit-action}
 
-フォームの送信アクションを選択して設定するには、次の手順を実行します。
+フォームの送信アクションを設定するには、次の手順を実行します。
 
 1. コンテンツブラウザーを開き、「 **[!UICONTROL ガイドコンテナ]** アダプティブフォームのコンポーネント
 1. ガイドコンテナのプロパティをクリックします。 ![ガイドのプロパティ](/help/forms/assets/configure-icon.svg) アイコン。 アダプティブフォームコンテナダイアログボックスが開きます。
 
-1. 次をクリック：  **[!UICONTROL 送信]** タブをクリックします。
+1. 「**[!UICONTROL グループ]**」タブをクリックします。
 
    ![レンチアイコンをクリックしてアダプティブフォームコンテナダイアログボックスを開き、送信アクションを設定します](/help/forms/assets/adaptive-forms-submit-message.png)
 
-1. を選択して設定します。 **[!UICONTROL 送信アクション]**、要件に応じて。 選択した送信アクションの詳細については、次を参照してください。
+1. 必要に応じて、**[!UICONTROL 送信アクション]**&#x200B;を選択して設定します。選択した送信アクションの詳細については、次を参照してください。
 
    * [メールを送信](#send-email)
    * [SharePoint に送信](#submit-to-sharedrive)
@@ -76,11 +76,11 @@ ht-degree: 80%
 >[!NOTE]
 >
 > * アダプティブフォーム内の別のパネルに配置されている場合でも、すべてのフォームフィールドに一意の要素名を付けることが非常に重要です。
-> * AEM as a Cloud Serviceを使用する場合、送信電子メールでは暗号化が必要です。 デフォルトでは、送信電子メール機能は無効になっています。 有効化するには、サポートチケットをに送信します。 [アクセスを申請](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ja#sending-email).
+> * AEM as a Cloud Serviceを使用する場合、送信電子メールでは暗号化が必要です。 デフォルトでは、送信メールは無効になっています。有効にするには、[アクセスのリクエスト](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ja#sending-email)にサポートチケットを送信します。
 
 さらに、 **[!UICONTROL メールの送信]** 送信アクションには、電子メールに添付ファイルとレコードのドキュメント (DoR) を含めるオプションが用意されています。
 
-を有効にするには、以下を実行します。 [!UICONTROL レコードのドキュメントを添付] オプションについては、 [アダプティブフォームを設定してレコードのドキュメント (DoR) を生成する](generate-document-of-record-core-components.md). このオプションは、アダプティブフォームのプロパティから有効にすることができます。
+「[!UICONTROL レコードのドキュメントを添付][」オプションを有効にするには、レコードのドキュメント（DoR）を生成するようにアダプティブフォームを設定します。](generate-document-of-record-core-components.md)このオプションは、アダプティブフォームのプロパティから有効にすることができます。
 
 <!-- [!NOTE]
 >
@@ -319,7 +319,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## OneDrive に送信 {#submit-to-onedrive}
 
-「**[!UICONTROL OneDrive に送信]**」送信アクションでは、アダプティブフォームと Microsoft® OneDrive を接続します。接続されている Microsoft® OneDrive ストレージに、フォーム データ、添付ファイル、またはレコードのドキュメントを送信できます。
+「**[!UICONTROL OneDrive に送信]**」送信アクションでは、アダプティブフォームと Microsoft® OneDrive を接続します。接続されている Microsoft® OneDrive ストレージに、フォームデータ、ファイル、添付ファイル、またはレコードのドキュメントを送信できます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 
@@ -384,7 +384,7 @@ AEM Forms を Microsoft® OneDrive ストレージに接続するには、以下
 「**[!UICONTROL Azure Blob Storage に送信]**」送信アクションは、アダプティブフォームを Microsoft Azure Portal に接続します。フォームデータ、ファイル、添付ファイル、またはレコードのドキュメントを、接続された Azure ストレージコンテナに送信できます。 Azure Blob Storage の送信アクションを使用するには、次の手順に従います。
 
 1. [Azure Blob Storage コンテナの作成](#create-a-azure-blob-storage-container-create-azure-configuration)：AEM Forms を Azure Storage コンテナに接続します。
-2. [アダプティブフォームでの Azure ストレージ設定の使用 ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af)：アダプティブフォームを、設定済みの Azure ストレージコンテナに接続します。
+2. [アダプティブフォームでの Azure ストレージ設定の使用](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af)：アダプティブフォームを、設定済みの Azure ストレージコンテナに接続します。
 
 ### Azure Blob Storage コンテナの作成 {#create-azure-configuration}
 
@@ -437,9 +437,9 @@ AEM Forms を Azure ストレージコンテナに接続するには、次の手
 * キャプチャしたデータに対する複雑な計算を実行する
 * 事前に定義されたスケジュールでアダプティブフォームのデータをストレージシステムに保存する
 
-アダプティブFormsエディターでは、 **Microsoft® Power Automate フローを起動します。** 送信アクションを実行して、アダプティブフォームのデータ、添付ファイル、レコードのドキュメントを Power Automate Cloud Flow に送信します。 送信アクションを使用して、キャプチャしたデータを Microsoft® Power Automate に送信するには、[Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接続](forms-microsoft-power-automate-integration.md)します
+アダプティブフォームエディターには「**Microsoft Power Automate フローの呼び出し**」送信アクションが用意されており、アダプティブフォームのデータ、添付ファイル、レコードのドキュメントを Power Automate クラウドフローに送信することができます。送信アクションを使用して、キャプチャしたデータを Microsoft® Power Automate に送信するには、[Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接続](forms-microsoft-power-automate-integration.md)します
 
-設定が正常に完了したら、 [Microsoft® Power Automate フローを起動します。](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) 送信アクションを使用して、Power Automate Flow にデータを送信します。
+「[Microsoft® Power Automate フローの呼び出し](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action)」送信アクションを使用して、Power Automate フローにデータを送信する
 
 ## 同期または非同期送信の使用 {#use-synchronous-or-asynchronous-submission}
 

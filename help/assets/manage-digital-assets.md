@@ -9,7 +9,7 @@ exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '4301'
-ht-degree: 84%
+ht-degree: 87%
 
 ---
 
@@ -46,18 +46,18 @@ ht-degree: 84%
 
 ## ZIP アーカイブの抽出 {#extract-zip-archives}
 
-Experience Managerで管理されている ZIP アーカイブを選択し、ファイルをダウンロードせずにExperience Managerに直接展開します。
+Experience Manager で管理されている ZIP アーカイブを選択し、ファイルをダウンロードせずに Experience Manager に直接抽出します。
 
 ZIP ファイルを抽出するには、次の手順を実行します。
 
 1. ZIP ファイルタイプを選択します。
-1. 次をクリック： **[!UICONTROL アーカイブを抽出]** オプションは、アクションバーで使用できます。
-1. 圧縮フォルダー内で使用可能な、抽出したアセットを保存するフォルダーを選択します。
+1. アクションバーで利用可能な「**[!UICONTROL アーカイブを抽出]**」オプションをクリックします。
+1. 圧縮フォルダー内で使用可能な、抽出済みアセットを保存する必要があるフォルダーを選択します。
 1. 「**[!UICONTROL 次へ]**」をクリックします。
-1. 抽出時にファイル名の競合を処理するには、適切な動作を選択します。 既存のアセットのバージョンを作成するか、アセットを置き換えるか、両方のアセットを保存先フォルダーに保持するか、新しいアセットの抽出をスキップするかを選択できます。
-1. クリック **[!UICONTROL 抽出]**. Zip 抽出プロセスが開始します。 処理が完了したら、抽出したアセットを保存先フォルダーに表示できます。
+1. 抽出時にファイル名の競合を処理するための、適切な動作を選択します。既存のアセットのバージョンを作成するか、アセットを置き換えるか、両方のアセットを保存先フォルダーに保持するか、新しいアセットの抽出をスキップするかを選択できます。
+1. 「**[!UICONTROL 抽出]**」をクリックします。ZIP 抽出プロセスが開始されます。処理が完了したら、抽出したアセットを保存先フォルダーに表示できます。
 
-   ![zip 抽出](assets/zip-extraction.png)
+   ![ZIP 抽出](assets/zip-extraction.png)
 
 >[!NOTE]
 >
@@ -156,7 +156,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    >[!NOTE]
    >
-   >ツールバーの&#x200B;**[!UICONTROL 貼り付け]**&#x200B;アイコンが使用できるのは、貼り付け操作が完了するまでです。
+   >ツールバーの「**[!UICONTROL 貼り付け]**」アイコンを使用できるのは、貼り付け操作が完了するまでです。
 
 ### アセットの移動または名前変更 {#moving-or-renaming-assets}
 
@@ -489,7 +489,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    <!--![chlimage_1-239](assets/chlimage_1-239.png)-->
 
-1. タイムラインの「**[!UICONTROL すべて表示]**」のリストから「**[!UICONTROL コメント]**」を選択し、注釈に基づいて結果にフィルターを適用します。
+1. タイムラインの&#x200B;**[!UICONTROL すべて表示]**&#x200B;リストから「**[!UICONTROL コメント]**」を選択し、注釈に基づいて結果にフィルターを適用します。
 
    <!--![chlimage_1-240](assets/chlimage_1-240.png)-->
 

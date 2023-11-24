@@ -1,11 +1,11 @@
 ---
-title: AEM Formsの考慮事項、既知の問題およびベストプラクティスについて教えてください。
-description: AEM Forms Communication API に関する既知の問題とベストプラクティスを考慮します。
+title: AEM Forms の考慮事項、既知の問題およびベストプラクティスについて教えてください。
+description: AEM Forms Communication API に関する既知の問題とベストプラクティスの考慮事項。
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1749'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -202,12 +202,12 @@ AEM Forms Output サービスを使用すると、テンプレート（XFA ま�
 **Where is data hosted?** -->
 
 **複数のバッチ操作を同時に実行できますか？**
-はい、複数のバッチ操作を同時に実行できます。 競合を避けるために、操作ごとに異なるソースフォルダーと出力先フォルダーを常に使用するようにします。
+はい、複数のバッチ操作を同時に実行できます。競合を避けるために、操作ごとに異なるソースフォルダーと出力先フォルダーを常に使用するようにします。
 
 >[!MORELIKETHIS]
 >
->* [AEM Formsas a Cloud Service通信の概要](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [アダプティブFormsおよび通信 API 用のAEM Formsas a Cloud Serviceアーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
->* [通信処理 — 同期 API](/help/forms/aem-forms-cloud-service-communications.md)
->* [通信処理 — バッチ API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [AEM Forms as a Cloud Service 通信の概要](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [アダプティブフォームおよび通信 API 用のAEM Forms as a Cloud Service アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [通信処理 - 同期 API](/help/forms/aem-forms-cloud-service-communications.md)
+>* [通信処理 - バッチ API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
 

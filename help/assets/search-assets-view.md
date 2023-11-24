@@ -1,16 +1,16 @@
 ---
-title: でのアセットの検索と検出の方法について説明します。 [!DNL Assets view]?
-description: AEM Assetsビューでアセットを検索および検出する方法について説明します。 この強力な検索機能を使用すると、適切なアセットをすばやく発見できるので、コンテンツベロシティ（コンテンツ創出の速度）の向上に役立ちます。
+title: ' [!DNL Assets view] でのアセットの検索と検出の方法を学ぶ'
+description: 詳しくは、AEM Assets ビューでアセットを検索および検出する方法を参照してください。この強力な検索機能を使用すると、適切なアセットをすばやく発見できるので、コンテンツベロシティ（コンテンツ創出の速度）の向上に役立ちます。
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '922'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
-# [!DNL Assets view] でのアセットの検索  {#search-assets}
+# [!DNL Assets view] でアセットを検索 {#search-assets}
 
 >[!CONTEXTUALHELP]
 >id="assets_search"

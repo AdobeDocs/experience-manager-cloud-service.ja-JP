@@ -1,18 +1,18 @@
 ---
-title: Formsas a Cloud Serviceを使用して XDP およびPDFテンプレートとデータを結合したり、PCL、ZPL および PostScript 形式で出力を生成したりする方法を教えてください。
+title: Forms as a Cloud Service を使用して、XDP や PDF のテンプレートとデータを結合したり、PCL、ZPL および PostScript 形式で出力を生成したりする方法
 description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
 # 同期処理を使用 {#sync-processing-introduction}
 
-Formsas a Cloud Service — コミュニケーション API を使用すると、ビジネス通信、ドキュメント、声明、請求処理レター、給付通知、請求処理レター、月次請求、ウェルカムキットなど、ブランド指向でパーソナライズされたコミュニケーションを作成、組み立て、提供できます。 コミュニケーション API を使用して、テンプレート（XFA または PDF）と顧客データを組み合わせ、PDF、PS、PCL、DPL、IPL、ZPL 形式のドキュメントを生成できます。
+Forms as a Cloud Service - 通信 API では、ビジネスコミュニケーション、ドキュメント、声明書、請求処理レター、給付通知、請求処理レター、月次請求書、ウェルカムキットなど、ブランド志向でパーソナライズされたコミュニケーションを作成、アセンブリ、配信できます。コミュニケーション API を使用して、テンプレート（XFA または PDF）と顧客データを組み合わせ、PDF、PS、PCL、DPL、IPL、ZPL 形式のドキュメントを生成できます。
 
 例えば、1 つ以上のテンプレートが存在しており、各テンプレートには XML データの複数のレコードがあるシナリオを考えてみましょう。通信 API を使用して、各レコードの印刷用ドキュメントを生成できます。<!-- You can also combine the records into a single document. -->結果は非インタラクティブ PDF ドキュメントになります。非インタラクティブ PDF ドキュメントのフィールドには、ユーザーがデータを入力することはできません。
 
@@ -145,7 +145,7 @@ API から提供されるすべてのパラメーター、認証方法および�
 
 >[!MORELIKETHIS]
 >
->* [AEM Formsas a Cloud Service通信の概要](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [アダプティブFormsおよび通信 API 用のAEM Formsas a Cloud Serviceアーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
->* [通信処理 — 同期 API](/help/forms/aem-forms-cloud-service-communications.md)
->* [通信処理 — バッチ API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [AEM Forms as a Cloud Service 通信の概要](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [アダプティブフォームおよび通信 API 用のAEM Forms as a Cloud Service アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [通信処理 - 同期 API](/help/forms/aem-forms-cloud-service-communications.md)
+>* [通信処理 - バッチ API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

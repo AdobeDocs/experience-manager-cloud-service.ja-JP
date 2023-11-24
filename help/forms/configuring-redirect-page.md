@@ -8,7 +8,7 @@ exl-id: e4dc01d2-7c89-4bd8-af0a-1d2df4676a9a
 source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 85%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-redirect-page.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 フォーム作成者は、フォーム送信後にユーザーがリダイレクトされるページを各フォームに設定することができます。
@@ -38,4 +38,4 @@ ht-degree: 85%
 
 >[!MORELIKETHIS]
 >
->* [リダイレクトページまたは「ありがとうございます」メッセージの設定](/help/forms/configure-redirect-page-or-thank-you-message.md)
+>* [リダイレクトページまたはお礼のメッセージの設定方法？](/help/forms/configure-redirect-page-or-thank-you-message.md)

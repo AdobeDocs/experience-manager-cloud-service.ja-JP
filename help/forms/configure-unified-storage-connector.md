@@ -5,7 +5,7 @@ exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
 source-git-commit: c33f59cb56decf1e5bbbe0b5bb084e906585e702
 workflow-type: tm+mt
 source-wordcount: '641'
-ht-degree: 78%
+ht-degree: 82%
 
 ---
 
@@ -69,7 +69,7 @@ AEM ワークフローを使用し、Microsoft Azure ストレージサーバー
 
 >[!MORELIKETHIS]
 >
->* [AEM Forms用のデータソースの設定](/help/forms/configure-data-sources.md)
->* [AEM Forms用の Azure ストレージの設定](/help/forms/configure-azure-storage.md)
->* [Microsoft Dynamics 365 および Salesforce とアダプティブFormsの統合](/help/forms/configure-msdynamics-salesforce.md)
->  [AEM SitesページへのForms Portal の追加](/help/forms/configure-forms-portal.md)
+>* [AEM Forms のデータソースを設定](/help/forms/configure-data-sources.md)
+>* [AEM Forms の Azure ストレージを設定](/help/forms/configure-azure-storage.md)
+>* [Microsoft Dynamics 365 および Salesforce とアダプティブフォームの統合](/help/forms/configure-msdynamics-salesforce.md)
+>  [AEM Sites ページへフォームポータルを追加](/help/forms/configure-forms-portal.md)

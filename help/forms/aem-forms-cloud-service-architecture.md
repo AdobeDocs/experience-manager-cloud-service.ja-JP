@@ -1,11 +1,11 @@
 ---
-title: アダプティブFormsおよび通信 API 用のAEM Formsas a Cloud Serviceアーキテクチャ
-description: ' [!DNL AEM Forms] a s a Cloud Service のアーキテクチャを理解し、プラットフォームの拡張性、回復性、パフォーマンスの側面について学習します。'
+title: アダプティブフォームおよび通信 API 用の AEM Forms as a Cloud Service アーキテクチャ
+description: ' [!DNL AEM Forms]  as a Cloud Service のアーキテクチャを理解し、プラットフォームの拡張性、回復性、パフォーマンスの側面について学習します。'
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1093'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 96%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/aem-forms-architecture-deployment.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 [!DNL Adobe Experience Manager Forms] as a Cloud Service は、企業が複雑なデジタルフォームやコミュニケーションを作成、管理、公開、更新しながら、送信データをバックエンドプロセスやビジネスルールと統合しデータを外部データストアに保存するためのクラウドネイティブなソリューションです。[!DNL Adobe Experience Manager as a Cloud Service] を拡張するものです。スケーリング、デプロイメント、環境などのインフラストラクチャについて詳しくは、[ [!DNL Adobe Experience Manager as a Cloud Service] のアーキテクチャの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=ja)を参照してください。
@@ -198,6 +198,6 @@ AEM as a Cloud Service は、セルフサービスのスケーラブルなクラ
 
 >[!MORELIKETHIS]
 >
->* [AEM Formsas a Cloud Service通信の概要](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [AEM Formsas a Cloud Service通信のバッチ処理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [AEM Forms as a Cloud Service の概要](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Forms as a Cloud Service の通信バッチ処理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
 >* [通信処理 — 同期 API](/help/forms/aem-forms-cloud-service-communications.md)

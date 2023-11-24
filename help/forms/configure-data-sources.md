@@ -1,6 +1,6 @@
 ---
 title: データソースの設定方法
-description: フォームデータモデルのデータソースとして、RESTful Web サービス、SOAP ベースの Web サービス、OData サービスを設定する方法について説明します。
+description: RESTful Web サービス、SOAP ベースの Web サービスおよび OData サービスをデータソースとして設定し、それらを使用してフォームデータモデルを作成する方法について説明します。
 feature: Form Data Model
 role: User, Developer
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2201'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 90%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 ![データ統合](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] データ統合を使用すると、異なるデータソースを設定して接続できます。 以下のタイプがサポートされています。これらのタイプは、すぐに使用することができます。
+[!DNL Experience Manager Forms] のデータ統合機能により、複数の異なるデータソースを設定して接続することができます。以下のタイプがサポートされています。これらのタイプは、すぐに使用することができます。
 
 * リレーショナルデータベース — MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®]、postgreSQL および [!DNL Oracle RDBMS]
 * RESTful Web サービス
@@ -39,11 +39,11 @@ ht-degree: 90%
 ### 前提条件
 
 [!DNL Experience Manager] web コンソール設定を使用してリレーショナルデータベースを設定する前に、次の操作が必須です。
-* [Cloud Manager API を使用した高度なネットワークの有効化](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)（ポートはデフォルトで無効になっているので）。
+* ポートはデフォルトで無効になっているので、[Cloud Manager API から高度なネットワークを有効にします。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
 * [Maven に JDBC ドライバーの依存関係を追加](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=ja).
 
 
-### リレーショナルデータベースを構成する手順
+### リレーショナルデータベースを設定する手順
 
 [!DNL Experience Manager] web コンソールの設定を使用して、リレーショナルデータベースを設定することができます。次の手順を実行します。
 
@@ -58,11 +58,11 @@ ht-degree: 90%
    * JDBC 接続 URI
    * JDBC ドライバーとの接続を確立するためのユーザー名とパスワード
    * 「**[!UICONTROL 検証クエリ]**」フィールドの SQL SELECT クエリを指定して、プールからの接続を検証します。クエリは、少なくとも 1 つのレコードを返す必要があります。データベースに応じて、次のいずれかを指定します。
-      * SELECT 1 (MySQL と MS® SQL)
+      * SELECT 1（MySQL または MS SQL の場合）
       * SELECT 1 from dual（Oracle の場合）
    * データソースの名前
 
-   リレーショナル・データベースを構成するための文字列の例：
+   リレーショナルデータベースを構成するための文字列の例：
 
    ```text
       "datasource.name": "sqldatasourcename-mysql",
@@ -123,7 +123,7 @@ RESTful サービス、SOAP サービス、OData サービスのクラウドサ�
 
 ## RESTful Web サービスの設定 {#configure-restful-web-services}
 
-RESTful Web サービスは、 [Swagger の仕様](https://swagger.io/specification/v2/) JSON 形式または YAML 形式の [!DNL Swagger] 定義ファイル。 [!DNL Experience Manager] as a Cloud Service で RESTful web サービスを設定するには、ファイルシステムまたはファイルがホストされている URL に [!DNL Swagger] ファイル（[Swagger Version 2.0](https://swagger.io/specification/v2/)）[!DNL Swagger] ファイル（[Swagger Version 3.0](https://swagger.io/specification/v3/)）が存在しているか、Swagger ファイルがホストされる URL を指定する必要があります。
+RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式または YAML 形式で [ in JSON or YAML forSwagger 定義ファイル](https://swagger.io/specification/v2/) in JSON or YAML format in a 内に記述できます。[!DNL Experience Manager] as a Cloud Service で RESTful web サービスを設定するには、ファイルシステムまたはファイルがホストされている URL に [!DNL Swagger] ファイル（[Swagger Version 2.0](https://swagger.io/specification/v2/)）[!DNL Swagger] ファイル（[Swagger Version 3.0](https://swagger.io/specification/v3/)）が存在しているか、Swagger ファイルがホストされる URL を指定する必要があります。
 
 ### Open API 仕様バージョン 2.0 {#configure-restful-services-open-api-2.0} 用の RESTful サービスの設定
 
@@ -134,7 +134,7 @@ RESTful Web サービスは、 [Swagger の仕様](https://swagger.io/specificat
 1. 「**[!UICONTROL 作成]**」をタップして、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL RESTful サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」をタップします。
 1. RESTful サービスの次の詳細を指定します。
 
-   * 次の場所から URL またはファイルを選択します。 [!UICONTROL Swagger ソース] ドロップダウンで、それに応じて [!DNL Swagger URL] から[!DNL  Swagger] 定義ファイルまたはアップロード [!DNL Swagger] ファイルをローカルファイルシステムから取得します。
+   * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL  Swagger] 定義ファイルに対する [!DNL Swagger URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
    * [!DNL  Swagger] ソース入力に基づいて、次のフィールドに値が事前入力されます。
 
       * スキーム：REST API で使用される転送プロトコル。ドロップダウンリストに表示されるスキームの種類の数は、[!DNL Swagger] ソースで定義されているスキームによって異なります。
@@ -159,7 +159,7 @@ RESTful Web サービスは、 [Swagger の仕様](https://swagger.io/specificat
 1. 「**[!UICONTROL 作成]**」をタップして、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL RESTful サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」をタップします。
 1. RESTful サービスの次の詳細を指定します。
 
-   * 次の場所から URL またはファイルを選択します。 [!UICONTROL Swagger ソース] ドロップダウンで、それに応じて [!DNL Swagger 3.0 URL] から[!DNL  Swagger] 定義ファイルまたはアップロード [!DNL Swagger] ファイルをローカルファイルシステムから取得します。
+   * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL  Swagger] 定義ファイルに対する [!DNL Swagger 3.0 URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
    * [!DNL  Swagger] ソース入力に基づいて、ターゲットサーバとの接続情報が表示されます。
    * RESTful サービスにアクセスするための認証タイプ（なし、OAuth2.0（[認証コード](https://oauth.net/2/grant-types/authorization-code/)、[クライアント資格情報](https://oauth.net/2/grant-types/client-credentials/)）、基本認証、API キー認証、カスタム認証）を選択し、その選択内容に応じて認証の詳細を指定します。
 
@@ -180,7 +180,8 @@ RESTful サービス Open API 仕様バージョン 3.0 でサポートされて
 
 ### パフォーマンスを最適化するためのフォームデータモデル HTTP クライアント設定 {#fdm-http-client-configuration}
 
-[!DNL Experience Manager Forms] データソースにはパフォーマンス最適化のための HTTP クライアント設定が含まれているので、RESTful Web サービスとの統合時にデータモデルを作成します。
+データソースとして RESTful web サービスと統合する場合の [!DNL Experience Manager Forms] フォームデータモデルには、パフォーマンス最適化のための HTTP クライアント設定が含まれています。
+
 
 **[!UICONTROL REST データソース設定のフォームデータモデル HTTP クライアント設定]**&#x200B;の次のプロパティを設定し、正規表現を指定します。
 
@@ -267,7 +268,7 @@ OData サービスは、そのサービスのルート URL によって識別さ
 >[!NOTE]
 >
 > フォームデータモデルは [OData バージョン 4](https://www.odata.org/documentation/) をサポートします。
->を設定するための詳しい手順ガイド [!DNL Microsoft®® Dynamics 365]、オンラインまたはオンプレミスの場合は、 [[!DNL Microsoft® Dynamics] OData 設定](ms-dynamics-odata-configuration.md).
+>オンライン環境またはオンプレミス環境で [!DNL Microsoft®® Dynamics 365] を設定する詳しい手順については、[[!DNL Microsoft® Dynamics] OData 設定](ms-dynamics-odata-configuration.md)を参照してください。
 
 1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーをタップして選択します。
 

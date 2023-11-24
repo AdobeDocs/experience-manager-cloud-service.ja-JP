@@ -2,7 +2,7 @@
 source-git-commit: c20f59770f4eb722d49a96952126993577bfd65e
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 # スニペット {#snippets}
@@ -13,7 +13,7 @@ ht-degree: 77%
 
 ## Edge 配信サービス オーサリング {#edge-delivery-authoring}
 
-[!BADGE Edge Delivery Services向けのAEMコンテンツをオーサリングする場合は、ここをクリックしてください。]{type=Positive url="/help/edge/overview.md" tooltip="Edge Delivery Services向けのAEMコンテンツのオーサリング"}
+[!BADGE Edge 配信サービス向けの AEM コンテンツをオーサリングする場合は、こちらをクリックしてください。]{type=Positive url="/help/edge/overview.md" tooltip="Edge 配信サービス向けの AEM コンテンツのオーサリング"}
 
 ## プロファイルへのグループ割り当てに対する IMS のサポート {#ims-group-profiles}
 
@@ -21,17 +21,17 @@ ht-degree: 77%
 >
 >AEM では、現在、プロファイルへのグループの割り当てをサポートしていません。代わりに、ユーザーを個別に追加する必要があります。
 
-## WAF Config Limited Release {#waf-limited-release}
+## WAF 設定限定リリース {#waf-limited-release}
 
-[!BADGE WAF-DDOS 保護は、2023 年末に提供される予定です。]{type=Caution tooltip="WAF-DDOS 保護は、2023 年末に提供される予定です。"}
+[!BADGE WAF-DDOS 保護は、2023年末に利用可能になります。]{type=Caution tooltip="WAF-DDOS 保護は、2023年末に利用可能になります。"}
 
 ## 関連トピック {#see-also}
 
-* [AEM アダプティブフォームを作成](/help/forms/creating-adaptive-form-core-components.md)
+* [AEM アダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
 * [AEM Sites ページへ AEM アダプティブフォームを追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [AEM アダプティブフォームへテーマを適用](/help/forms/using-themes-in-core-components.md)
-* [AEM アダプティブフォームへコンポーネントを追加](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#components)
-* [AEMアダプティブフォームでの CAPTCHA の使用](/help/forms/captcha-adaptive-forms-core-components.md)
+* [AEM アダプティブフォームへコンポーネントを追加](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja#components)
+* [AEM アダプティブフォームでの Captcha の使用](/help/forms/captcha-adaptive-forms-core-components.md)
 * [AEM アダプティブフォームの PDF バージョン（DoR）を生成](/help/forms/generate-document-of-record-core-components.md)
 * [AEM アダプティブフォームを翻訳](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [フォームの使用状況を追跡するアダプティブフォームの Adobe Analytics を有効にする](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
@@ -45,7 +45,7 @@ ht-degree: 77%
 * [データベースへアダプティブフォームデータを送信](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html?lang=ja)
 * [REST エンドポイントへアダプティブフォームデータを送信](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [AEM ワークフローへアダプティブフォームデータを送信](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
-* [AEM web サイト上の AEM アダプティブフォームをリストするフォームポータルを使用](/help/forms/configure-forms-portal.md)
+* [フォームポータルを使用して AEM web サイト上の AEM アダプティブフォームを一覧表示](/help/forms/configure-forms-portal.md)
 
 
 

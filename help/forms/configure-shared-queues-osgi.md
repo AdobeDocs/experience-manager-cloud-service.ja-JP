@@ -7,7 +7,7 @@ docset: aem65
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '839'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 95%
 
 ## インボックスの 1 つまたはすべての項目を他のユーザーと共有
 
-AEM Inbox では、インボックス内の 1 つの項目またはすべての項目を別のユーザーと共有できます。
+AEM インボックスは、インボックス内の 1 つまたはすべての項目を他のユーザーと共有できます。
 
 ### すべてのインボックス項目を共有
 

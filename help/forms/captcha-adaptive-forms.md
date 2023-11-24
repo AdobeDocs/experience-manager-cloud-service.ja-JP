@@ -8,8 +8,8 @@ topic-tags: adaptive_forms, author
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
 source-git-commit: 9d2f8794a061c44cab016ab049c8c8ac7b3b2784
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1720'
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ CAPTCHA（コンピュータと人間を区別する完全に自動化された�
 >[!NOTE]
 >
 >* [!DNL AEM Forms] reCaptcha v2 および reCaptcha Enterprise をサポートします。 その他のバージョンはサポートされません。
->* アダプティブFormsの reCAPTCHA は、 [!DNL AEM Forms] アプリを使用します。
+>* アダプティブフォームの CAPTCHA は、[!DNL AEM Forms] アプリのオフラインモードではサポートされていません。
 >
 
 ## Google が提供する reCAPTCHA サービスの設定 {#google-reCAPTCHA}
@@ -58,12 +58,12 @@ CAPTCHA（コンピュータと人間を区別する完全に自動化された�
       1. 設定プロパティダイアログで、「**[!UICONTROL クラウド設定]**」を有効にします。
       1. 「**[!UICONTROL 保存して閉じる]**」をタップして設定内容を保存し、ダイアログを閉じます。
 
-1. クラウドサービスの設定対象 [!DNL reCAPTCHA Enterprise].
+1.  のクラウドサービスを設定します[!DNL reCAPTCHA Enterprise]。
 
    1. Experience Manager オーサーインスタンスで、![tools-1](assets/tools-1.png)／**[!UICONTROL クラウドサービス]**&#x200B;に移動します。
    1. 「**[!UICONTROL reCAPTCHA]**」をタップします。設定ページが表示されます。作成した設定コンテナを選択し、をタップします。 **[!UICONTROL 作成]**.
-   1. バージョンを次の形式で選択 [!DNL reCAPTCHA Enterprise] reCAPTCHA Enterprise サービスの名前、プロジェクト ID、サイトキー、API キー（手順 2 で取得）を指定します。
-   1. キータイプを選択します。キーのタイプは、 [Google Cloud プロジェクト](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys?hl=ja#before-you-begin)例： **チェックボックスサイトキー** または **スコアベースのサイトキー**.
+   1.  としてバージョンを選択し、[!DNL reCAPTCHA Enterprise]名前、reCAPTCHA Enterprise サービスのプロジェクト ID、サイトキーおよび API キー（手順 2 および で取得）を指定します。
+   1. キーのタイプを選択します。キーのタイプは、[Google Cloud プロジェクト](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys?hl=ja#before-you-begin)で設定したサイトキー（**チェックボックスサイトキー**&#x200B;または&#x200B;**スコアベースのサイトキー**&#x200B;など）と同じにする必要があります。
    1. を指定します。 [0 ～ 1 の範囲のしきい値スコア](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment?hl=ja#interpret_scores). スコアがしきい値以上になると、人間のインタラクションを識別し、それ以外の場合はボットのインタラクションとみなされます。
    1. 「**[!UICONTROL 作成]**」をタップして、クラウドサービス設定を作成します。
 
@@ -91,7 +91,7 @@ reCAPTCHA Enterprise サービスを有効にすると、アダプティブフ�
 
    1. AEM オーサーインスタンスで、![tools-1](assets/tools-1.png)／**クラウドサービス**&#x200B;に移動します。
    1. 「**[!UICONTROL reCAPTCHA]**」をタップします。設定ページが表示されます。作成した設定コンテナを選択し、をタップします。 **[!UICONTROL 作成]**.
-   1. バージョンを次の形式で選択 [!DNL reCAPTCHA v2] 、 reCAPTCHA サービスの名前、サイトキー、秘密鍵（手順 1 で取得）を指定してをタップします。 **[!UICONTROL 作成]** クラウドサービス設定を作成します。
+   1. [!DNL reCAPTCHA v2]バージョンとして を選択し、名前を指定します。reCAPTCHA サービスのサイトキーと秘密鍵（手順 1 で取得）を入力し、「**[!UICONTROL 作成]**」をタップしてクラウドサービス設定を作成します。
    1. コンポーネントを編集ダイアログで、サイトおよび手順 1 で取得した秘密鍵を指定します。「**[!UICONTROL 設定を保存]**」をタップしてから、「**OK**」をタップして設定を完了します。
 
    reCAPTCHA サービスを設定すると、アダプティブフォームで使用できるようになります。詳細情報は、[アダプティブフォームでの CAPTCHA の使用](#using-reCAPTCHA)を参照してください。
@@ -128,7 +128,7 @@ reCAPTCHA Enterprise サービスを有効にすると、アダプティブフ�
    >* クラウド設定で、 **キーの種類** as **スコアベース**&#x200B;を指定した場合、カスタマイズされたエラーメッセージは、captcha の検証が失敗した場合にポップアップメッセージとして表示されます。
 
    1. サイズは、「**[!UICONTROL 標準]**」と「**[!UICONTROL コンパクト]**」から選択できます。
-   1. 次の項目を選択できます。 **[!UICONTROL バインド参照]**、内 **[!UICONTROL バインド参照]** 送信されたデータは連結データです。連結されていない場合は、連結されていないデータです。 フォームが送信されたときの、非連結データと連結データ（バインド参照が SSN）の XML の例を以下に示します。
+   1. **[!UICONTROL バインド参照]**&#x200B;を選択した場合は連結データが送信され、それ以外の場合は非連結データが送信されます。****&#x200B;フォームが送信されたときの、非連結データと連結データ（バインド参照が SSN）の XML の例を以下に示します。
 
    ```xml
            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -203,8 +203,8 @@ reCAPTCHA Enterprise サービスを有効にすると、アダプティブフ�
    ```
 
    次を選択した場合、 **reCAPTCHA v2** バージョン：
-   1. サイズは、 **[!UICONTROL 標準]** または **[!UICONTROL コンパクト]** reCAPTCHA ウィジェット用。
-   1. 次の項目を選択できます。 **[!UICONTROL 非表示]** オプションを使用して、疑わしいアクティビティの場合にのみ CAPTCHA チャレンジを表示できます。
+   1. reCAPTCHA ウィジェットのサイズを、「**[!UICONTROL 標準]**」または「**[!UICONTROL コンパクト]**」から選択します。
+   1. また、「**[!UICONTROL 非表示]** option to show the CAPTCHA chall」オプションを使用して、疑わしいアクティビティの場合にのみ CAPTCHA チャレンジを表示できます。
 
    アダプティブフォーム上で reCAPTCHA サービスが有効になります。フォームをプレビューして、CAPTCHA が機能していることを確認できます。以下に表示されている **reCAPTCHA による保護**バッジが保護されたフォームに表示されます。
    ![reCAPTCHA バッジによって保護された Google](/help/forms/assets/google-recaptcha-v2.png)

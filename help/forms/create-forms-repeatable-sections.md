@@ -6,7 +6,7 @@ exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1357'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 93%
 * アダプティブフォームコンポーネントの繰り返し回数の最小数または最大数を設定する
 * 繰り返し可能なセクションに対して追加または削除のアクションを設定するために、ルールエディターを使用する
 
-以下を使用すると、 [パネル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=ja), [アコーディオン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=ja), [水平タブ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=ja)または [ウィザード](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=ja) アダプティブフォームのセクションを繰り返し可能にするコンポーネント パネル、アコーディオン、水平タブ、またはウィザードコンポーネントに子コンポーネントを追加して、フォーム内に繰り返し可能なセクションを作成できます。
+[パネル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=ja)、[アコーディオン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=ja)、[水平タブ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=ja)、または[ウィザード](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=ja)コンポーネントを使用して、アダプティブフォームのセクションを繰り返し可能にすることができます。パネル、アコーディオン、水平タブ、またはウィザードコンポーネントに子コンポーネントを追加して、フォーム内に繰り返し可能なセクションを作成できます。
 
 
 このドキュメントの例は、[パネル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=ja)コンポーネントに基づいています。同じ手順を実行して、[アコーディオン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=ja)、[水平タブ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=ja)、および[ウィザード](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=ja)コンポーネントを繰り返すことができます。
@@ -101,7 +101,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->フィールドが繰り返し可能なパネルに属する場合、スクリプトで名前を指定して直接アクセスすることはできません。フィールドにアクセスするには、`InstanceManager` の `instances` API を使用してフィールドが属している繰り返し可能インスタンスを指定します。`InstanceManager` の `instances` API を使用するための構文を以下に示します。
+>フィールドが繰り返し可能なパネルに属する場合、スクリプトで名前を指定して直接アクセスすることはできません。フィールドにアクセスするには、`instances` の `InstanceManager` API を使用してフィールドが属している繰り返し可能インスタンスを指定します。`instances` の API `InstanceManager`を使用するための構文を以下に示します。
 >
 >
 >`<panelName>.instanceManager.instances[<instanceNumber>].<fieldname>`

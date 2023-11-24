@@ -1,11 +1,11 @@
 ---
 title: カスタム HTTP ヘッダー
-description: コマースエンジンに送信されるカスタム HTTP ヘッダーと、CIFから既に送信されたヘッダーを設定する方法について説明します。
+description: コマースエンジンに送信されるカスタム HTTP ヘッダーと、CIF から既に送信されたヘッダーを設定する方法について説明します。
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
 source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
 source-wordcount: '285'
-ht-degree: 89%
+ht-degree: 97%
 
 ---
 
