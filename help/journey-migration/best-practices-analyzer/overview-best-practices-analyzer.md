@@ -5,7 +5,7 @@ exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 80%
+ht-degree: 94%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 80%
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_overview"
 >title="ベストプラクティスアナライザーの概要"
->abstract="ベストプラクティスアナライザーは、AEM のベストプラクティスに従っていない部分を指摘することで、現在の AEM 実装を評価します。また、AEM のベストプラクティスを導入するための次の手順に関するガイダンスも提供します。また、既存のAdobe Experience Manager(AEM) のデプロイメントからAEM as a Cloud Serviceへの移行に対する準備状況を評価するプロセスを迅速に実行できます。"
+>abstract="ベストプラクティスアナライザーは、AEM のベストプラクティスに従っていない部分を指摘することで、現在の AEM 実装を評価します。また、AEM のベストプラクティスを導入するための次の手順に関するガイダンスも提供します。また、既存の Adobe Experience Manager（AEM）のデプロイメントから AEM as a Cloud Service への移行の準備状況を評価するプロセスを迅速に実行する上でも役立ちます。"
 
-ベストプラクティスアナライザーは、AEM のベストプラクティスに従っていない部分を指摘することで、現在の AEM 実装を評価します。また、AEM のベストプラクティスを導入するための次の手順に関するガイダンスも提供します。また、既存のAdobe Experience Manager(AEM) のデプロイメントからAEM as a Cloud Serviceへの移行に対する準備状況を評価するプロセスを迅速に実行できます。
+ベストプラクティスアナライザーは、AEM のベストプラクティスに従っていない部分を指摘することで、現在の AEM 実装を評価します。また、AEM のベストプラクティスを導入するための次の手順に関するガイダンスも提供します。また、既存の Adobe Experience Manager（AEM）のデプロイメントから AEM as a Cloud Service への移行の準備状況を評価するプロセスを迅速に実行する上でも役立ちます。
 
 このツールでは、AEM as a Cloud Service への移行の最初の手順として、リファクタリングの可能性がある部分を識別するレポートを生成します。
 
