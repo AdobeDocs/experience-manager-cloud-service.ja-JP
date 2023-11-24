@@ -2,7 +2,7 @@
 title: 非推奨（廃止予定）の API
 description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の非推奨（廃止予定）の API と削除された API）。
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: d2c7e3d88b5545eee3e6f1c511088c0f6638cfe7
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 100%
@@ -14,9 +14,8 @@ ht-degree: 100%
 非推奨（廃止予定）の AEM API とそれらの削除予定日の一覧を以下に示します。お客様は、削除予定日までに、これらの API をコードから削除する必要があります。該当する API を削除日以降に使用すると、ローカル SDK／開発環境および Cloud Manager ビルドプロセスでエラーが発生します。
 
 
-<table>
-<thead>
 <table style="table-layout:auto">
+<thead>
   <tr>
     <th>パッケージ／クラス</th>
     <th>コメント</th>
