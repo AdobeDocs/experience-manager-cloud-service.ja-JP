@@ -1,11 +1,11 @@
 ---
 title: Edge Delivery の概要
-description: Edge 配信サービス（EDS）の概要。
+description: Edge Delivery の概要。
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 185a192b0d40e25cdb09fd8a1f222d9d9b1bd631
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '862'
 ht-degree: 72%
 
 ---
