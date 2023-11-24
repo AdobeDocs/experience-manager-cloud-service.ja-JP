@@ -1,5 +1,5 @@
 ---
-title: Adobe Analytics と AEM Screens の統合
+title: Adobe AnalyticsとAEM Screens Cloud の統合
 seo-title: Adobe Analytics Integration with AEM Screens
 description: ここでは、標準で利用できる、AEM Screens と Adobe Analytics の統合について説明し、提供される再生検証機能についても紹介します。
 seo-description: Follow this page to learn about out of the box integration of AEM Screens with Adobe Analytics and provides you with a proof of play.
@@ -12,14 +12,15 @@ discoiquuid: b1a0e00e-0368-42c9-8bcd-5f00b4d0990c
 docset: aem65
 role: Admin, Developer
 level: Intermediate
-source-git-commit: bf0a841a5cd5eb278fd3d59484c84d1cee172b4e
+exl-id: e22242ce-e5ce-4486-bba4-e6a89ac4fb5e
+source-git-commit: 75d147886c8151f8b8ac41af907e17b5deff5a9c
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 95%
+source-wordcount: '419'
+ht-degree: 82%
 
 ---
 
-# Adobe Analytics と AEM Screens の統合 {#adobe-analytics-integration-with-aem-screens}
+# Adobe AnalyticsとAEM Screens Cloud の統合 {#adobe-analytics-integration-with-aem-screens}
 
 ここでは、以下のトピックについて説明します。
 
@@ -54,18 +55,15 @@ AEM Screens ユーザーは、どのコンテンツが、いつ、どのくら�
 
 ![Adobe Analytics との統合](/help/screens-cloud/assets/analytics-architecture.png)
 
-## AEM ScreensクラウドでのAdobe Analyticsの有効化 {#enabling-adobe-analytics-in-aem-screens-cloud}
+## AEM Screens Cloud でのAdobe Analyticsの有効化 {#enabling-adobe-analytics-in-aem-screens-cloud}
 
 Screens Cloud でAdobe分析を有効にするには、Adobeのリレーションシップマネージャーにお問い合わせください。
 
-## Screens 用 Analytics：有効化フロー {#screens-analytics-enablement-flow}
-
->[!CAUTION]
->
->プロパティを設定する前に、アドビのリレーションシップマネージャーに連絡して、AEM Screens で使用する **Analytics API キー**&#x200B;と **Analytics プロジェクト**&#x200B;を取得するためのチケットを作成してください。
-
-## AEM Screens での Adobe Analytics サービスの使用 {#using-adobe-analytics-service-in-aem-screens}
+## AEM Screens Cloud でのAdobe Analytics Service の使用 {#using-adobe-analytics-service-in-aem-screens}
 
 このシナリオでは、ファームウェアや機器の Screens コアコンポーネントに実装されている Analytics サービスから REST 呼び出しを通じて Analytics API を呼び出して、特定の使用例に固有のイベントを明示的に作成および送信しつつ、カスタム開発したチャネルから任意のカスタムメッセージを Analytics に送信できる拡張性も備えています。
 
 Analytics イベントは、IndexedDB にオフラインで保存され、後でまとめてクラウドに送信されます。
+
+>[!NOTE]
+>シーケンスとイベントの標準データモデルについて詳しくは、 [Adobe Analytics for AEM Screensの設定](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) 」を参照してください。
