@@ -1,17 +1,17 @@
 ---
-title: コンテンツの HTTP/2 配信の FAQ
+title: コンテンツの HTTP2 配信の FAQ
 description: HTTP2 コンテンツ配信と、ブラウザーとサーバー間の通信を改善して情報を高速に転送する方法について説明します。
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
 source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '807'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# コンテンツの HTTP/2 配信の FAQ{#http-delivery-of-content-faq}
+# コンテンツの HTTP2 配信の FAQ{#http-delivery-of-content-faq}
 
 コンテンツの HTTP/2 配信が可能になったことをお知らせします。HTTP/2 を使用すると、全体的なパフォーマンスが向上します。
 

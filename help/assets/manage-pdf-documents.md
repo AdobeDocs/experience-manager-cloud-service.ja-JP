@@ -5,15 +5,15 @@ feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '849'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # Experience Manager Assets as a Cloud Service での PDF ドキュメントの管理 {#add-assets-to-experience-manager}
 
-Experience Manager AssetsはDocument CloudPDFビューアとシームレスに統合され、PDFドキュメントの複数ページをプレビューできます。 さらに、注釈、テキストの検索、ブックマークやサムネールを使用した PDF ドキュメント内の移動など、高度な Document Cloud PDF ビューア機能も使用できます。また、Experience Manager Assetsでは、サポートされている他の形式のドキュメントをアップロードし、PDF形式でプレビューすることもできます。
+Experience Manager Assets は、Document Cloud PDF ビューアとシームレスに統合され、PDF ドキュメントの複数ページをプレビューできます。 さらに、注釈、テキストの検索、ブックマークやサムネールを使用した PDF ドキュメント内の移動など、高度な Document Cloud PDF ビューア機能も使用できます。Experience Manager Assets では、サポートされている他の形式でドキュメントをアップロードし、PDF 形式でプレビューすることもできます。
 
 Document Cloud PDF ビューアは、AEM Assets に次のようなメリットをもたらします。
 * [PDF Document Cloud ビューアコンポーネントのサポート](#pdf-doc-cloud)
@@ -44,7 +44,7 @@ Document Cloud PDF ビューアは、AEM Assets に次のようなメリット�
 
 ## PDF アセットでの複数ページのプレビューと注釈のサポート {#multi-page}
 
-Adobe Experience Manager Assets では、複数のページで構成されるPDFドキュメントをプレビューできます。 PDF ドキュメントの複数ページをプレビューするには、次の手順を検討してください。
+Adobe Experience Manager Assets では、複数のページで構成される PDF ドキュメントをプレビューできます。PDF ドキュメントの複数ページをプレビューするには、次の手順を検討してください。
 
 1. [AEM でアセットをアップロード](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=ja)する手順に従います。
 1. アップロードしてプレビューする PDF ドキュメントを参照します。
@@ -66,7 +66,7 @@ Adobe Experience Manager Assets では、複数のページで構成されるPDF
 
 **PDF 注釈{#pdf-annotations}**
 
-Experience Manager Assetsでは、PDFドキュメントにコメントを追加できます。 1 つの PDF ドキュメントに複数の注釈を付けることができます。
+Experience Manager Assets では、PDF ドキュメントにコメントを追加できます。 1 つの PDF ドキュメントに複数の注釈を付けることができます。
 
 PDF ドキュメントに注釈を付けるには、次の手順を実行します。
 1. Assets インターフェイスに移動し、注釈を付ける PDF ドキュメントに移動します。 ネイティブ PDF ビューアが右側に開き、選択した PDF ドキュメントのプレビューが表示されます。

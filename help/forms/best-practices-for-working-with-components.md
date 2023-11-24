@@ -2,9 +2,9 @@
 title: AEMアダプティブフォームを使用する際のベストプラクティスと重要なポイント
 description: アダプティブフォームの各種コンポーネントを使用する場合のベストプラクティスと重要事項.
 source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '641'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 

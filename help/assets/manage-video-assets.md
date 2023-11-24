@@ -6,9 +6,9 @@ feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4937'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ YouTube は独自のエンコーディングを行います。そのため、Dyn
 
 ### Google Cloud の設定 {#configuring-google-cloud-settings}
 
-YouTube に公開するには、Google アカウントが必要です。Gmail のアカウントを持っている場合は、既に Google アカウントも所有しています。Google アカウントがない場合も、簡単に作成できます。Google アカウントが必要な理由は、YouTube へのビデオアセットの公開時に秘密鍵証明書が必要だからです。<!-- hidden March 3 2022 If you have an account already created, then skip this task and proceed directly to [Create a YouTube channel](#creating-a-youtube-channel). -->
+YouTube に公開するには、Google アカウントが必要です。Gmail のアカウントを持っている場合は、既に Google アカウントも所有しています。Google アカウントがない場合も、簡単に作成できます。Google アカウントが必要な理由は、YouTube へのビデオアセットの公開時に資格情報が必要だからです。<!-- hidden March 3 2022 If you have an account already created, then skip this task and proceed directly to [Create a YouTube channel](#creating-a-youtube-channel). -->
 
 Google Cloud で使用するアカウントと YouTube に使用する Google アカウントは、必ずしも同じである必要はありません。
 
@@ -566,7 +566,7 @@ For YouTube publishing jobs, do the following:
 
 ## 処理プロファイルを使用したトランスコード {#transcode-video}
 
-[!DNL Experience Manager] as a [!DNL Cloud Service] では、処理プロファイルを使用して MP4 ビデオファイルの基本的なトランスコードを実行できます。この機能を使用すると、アップロードだけでなく、MP4 ビデオファイルのプレビューや拡大/縮小も可能です。
+[!DNL Experience Manager] as a [!DNL Cloud Service] では、処理プロファイルを使用して MP4 ビデオファイルの基本的なトランスコードを実行できます。この機能により、アップロードだけでなく、MP4 ビデオファイルのプレビューやスケールの操作も実行できます。
 
 ![ でのビデオトランスコードの処理プロファイルの作成[!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
 

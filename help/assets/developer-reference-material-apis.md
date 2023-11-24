@@ -6,15 +6,15 @@ feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 source-git-commit: a63a237e8da9260fa5f88060304b8cf9f508da7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1899'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets] デベロッパー向けの使用例、API、参考資料 {#assets-cloud-service-apis}
 
-このドキュメントは、[!DNL Assets] as a [!DNL Cloud Service] のデベロッパー向けリファレンス資料およびリソースが含まれています。新しいアップロードモジュール、API リファレンス、後処理ワークフローで提供されるサポートに関する情報が含まれています。
+このドキュメントは、[!DNL Assets] as a [!DNL Cloud Service] の開発者向けレコメンデーション、リファレンス資料およびリソースが含まれています。新しいアップロードモジュール、API リファレンス、後処理ワークフローで提供されるサポートに関する情報が含まれています。
 
 ## [!DNL Experience Manager Assets] API と操作 {#use-cases-and-apis}
 
@@ -203,7 +203,7 @@ aem-upload ライブラリとコマンドラインツールの両方で、[node-
 新しいアップロード方法は、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の場合のみサポートされます。[!DNL Adobe Experience Manager] 6.5 の API は非推奨（廃止予定）となりました。アセットやレンディションのアップロードまたは更新（あらゆるバイナリアップロード）に関連するメソッドは、次の API で非推奨（廃止予定）となりました。
 
 * [Adobe Experience Manager Assets HTTP API](mac-api-assets.md)
-* `AssetManager` Java API（など） `AssetManager.createAsset(..)`, `AssetManager.createAssetForBinary(..)`, `AssetManager.getAssetForBinary(..)`, `AssetManager.removeAssetForBinary(..)`, `AssetManager.createOrUpdateAsset(..)`, `AssetManager.createOrReplaceAsset(..)`
+* `AssetManager`Java API（`AssetManager.createAsset(..)`、`AssetManager.createAssetForBinary(..)`、`AssetManager.getAssetForBinary(..)`、`AssetManager.removeAssetForBinary(..)`、`AssetManager.createOrUpdateAsset(..)`、`AssetManager.createOrReplaceAsset(..)` など）
 
 >[!MORELIKETHIS]
 >

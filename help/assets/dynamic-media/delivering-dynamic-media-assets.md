@@ -1,14 +1,14 @@
 ---
-title: Dynamic Media アセットの配信
+title: Dynamic Media アセットを配信
 description: 埋め込みビデオや画像を使用したり、Web アプリケーションへの URL のリンクを使用して、Dynamic Mediaアセットを Web ページに配信する方法について説明します。
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '335'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 

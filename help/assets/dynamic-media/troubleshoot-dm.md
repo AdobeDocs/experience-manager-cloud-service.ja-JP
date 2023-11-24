@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
 source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1146'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ CRXDE Lite で次のアセットプロパティを見直すと、Adobe Experienc
     </ol> </td>
    <td><p>ページを更新するか、別のページに移動してから戻ります（サイドレール JSP を再コンパイルする必要があります）。</p> <p>それでも動作しない場合：</p>
     <ul>
-     <li>アセットを公開します。</li>
+     <li>アセットを公開.</li>
      <li>アセットを再度アップロードして公開します。</li>
     </ul> </td>
   </tr>
@@ -122,7 +122,7 @@ CRXDE Lite で次のアセットプロパティを見直すと、Adobe Experienc
     </ul> </td>
    <td>
     <ol>
-     <li>フォルダーにビデオプロファイルを割り当てます。</li>
+     <li>ビデオプロファイルをフォルダーに適用します.。</li>
      <li>複数のエンコーディングプリセットを含めるには、ビデオプロファイルを編集します。</li>
      <li>ビデオの処理が終了するまで待ちます。</li>
      <li>ビデオを再度読み込む前に、「Dynamic Media エンコーディングビデオ」ワークフローが実行されていないことを確認します。<br/> </li>
@@ -159,7 +159,7 @@ CRXDE Lite で次のアセットプロパティを見直すと、Adobe Experienc
     </ul> </td>
    <td>
     <ol>
-     <li>フォルダーにビデオプロファイルを割り当てます。</li>
+     <li>ビデオプロファイルをフォルダーに適用します.。</li>
      <li>ビデオの処理が終了するまで待ちます。<br /> </li>
     </ol> </td>
   </tr>

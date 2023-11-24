@@ -6,9 +6,9 @@ feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
 source-git-commit: 7f806c457f7bef1c5309bbc6f69d3989af1b06d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1301'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -93,7 +93,7 @@ Brand Portal インターフェイスにログインして、公開されたア�
 >
 > * DAM-Users グループの既存のユーザーは、パス「/conf/global/settings/cloudconfigs/mediaportal」に対する読み取りアクセス権を持ちます。
 >* 新しいユーザー（または管理者以外のユーザー）は、brand portal に公開するために、次の権限が必要です。
-> パス:
+> パス：
 > &quot;/conf/global/settings/cloudconfigs/mediaportal&quot; : jcr:read
 >/libs : jcr:read
 >/conf : jcr:read

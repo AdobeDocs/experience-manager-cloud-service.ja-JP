@@ -9,15 +9,15 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1104'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # AEM Commerce as a Cloud Service の基本を学ぶ {#start}
 
-Adobe Experience Manager(AEM)Commerceas a Cloud Serviceの使用を開始するには、Experience Manager Cloud ServiceにCommerce integration framework(CIF) アドオンがプロビジョニングされている必要があります。 CIF アドオンは、[AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html?lang=ja) の追加モジュールです。
+AEM Commerce as a Cloud Service の使用を開始するには、Experience Manager Cloud Service が Commerce Integration Framework（CIF）アドオンによりプロビジョニングされている必要があります。CIF アドオンは、[AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html?lang=ja) の追加モジュールです。
 
 ## オンボーディング {#onboarding}
 
@@ -28,7 +28,7 @@ AEM Commerce as a Cloud Service のオンボーディングは、次の 2 つの
 
 最初のオンボーディング手順はアドビが行います。価格とプロビジョニングの詳細については、セールス担当者にお問い合わせください。
 
-CIF アドオンのプロビジョニングが完了すると、既存の Cloud Manager プログラムに適用されます。Cloud Manager プログラムがない場合は、作成する必要があります。 詳しくは、[プログラムの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=ja)を参照してください。
+CIF アドオンのプロビジョニングが完了すると、既存の Cloud Manager プログラムに適用されます。Cloud Manager プログラムがない場合は、作成する必要があります。詳しくは、[プログラムの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=ja)を参照してください。
 
 2 つ目の手順は、各 AEM as a Cloud Service 環境のセルフサービスです。CIF アドオンの初期プロビジョニングの後で、いくつかの追加の設定を行う必要があります。
 
@@ -43,7 +43,7 @@ CIF アドオンと [AEM CIF コアコンポーネント](https://github.com/ado
 
 AEM as a Cloud Service 環境ごとに異なる GraphQL エンドポイント URL を使用できます。この方法で、プロジェクトは AEM ステージング環境をコマースステージングシステムに、また、AEM 実稼働環境をコマース実稼働システムに接続できます。GraphQL エンドポイントは、公開されている必要があります。プライベート VPN またはローカル接続はサポートされていません。オプションで、認証が必要な追加の CIF 機能を使用するために認証ヘッダーを指定できます。
 
-Adobe Commerce Enterprise／Cloud の場合のみ、CIF アドオンはオプションで AEM 作成者向けのステージング済みカタログデータの使用をサポートします。このデータを使用するには、認証ヘッダーを設定する必要があります。このヘッダーは、セキュリティ上の理由から、AEMオーサーインスタンスでのみ使用および使用できます。 AEMパブリッシュインスタンスは、ステージ済みデータを表示できません。
+Adobe Commerce Enterprise／Cloud の場合のみ、CIF アドオンはオプションで AEM 作成者向けのステージング済みカタログデータの使用をサポートします。このデータを使用するには、認証ヘッダーを設定する必要があります。このヘッダーは、セキュリティ上の理由から、AEM オーサーインスタンスでのみ使用できます。AEM パブリッシュインスタンスでは、ステージング済みデータを表示できません。
 
 エンドポイントを設定する方法は 2 つあります。
 

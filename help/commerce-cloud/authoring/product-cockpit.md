@@ -3,9 +3,9 @@ title: 製品コックピット
 description: 製品コックピットの操作方法を学びます。製品コクピットでは、リンクされた製品カタログと関連コンテンツの概要を統一して提供します。
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
 source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '448'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 

@@ -1,14 +1,14 @@
 ---
-title: Dynamic Media アセットを管理する
+title: Dynamic Media アセットの管理
 description: プレビュー、ダウンロード、公開などのワークフローを使用して、Dynamic Mediaアセットを操作および管理する方法について説明します。
 contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
 exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
 source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '128'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 

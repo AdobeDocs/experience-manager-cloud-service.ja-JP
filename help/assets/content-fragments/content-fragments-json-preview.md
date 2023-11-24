@@ -3,9 +3,9 @@ title: プレビュー - JSON 表現（アセット - コンテンツフラグ�
 description: AEM ヘッドレスソリューションの実装時にコンテンツフラグメントの JSON 表現を簡単にプレビューする方法について説明します。
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
 source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '168'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ AEM ヘッドレス実装の一環としてコンテンツフラグメントの�
 >
 >コンテンツフラグメントは Sites 機能ですが、 **Assets**.
 >
->コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。 この節では、主に **Assets** コンソール。 Sites のドキュメントを参照してください。 [コンテンツフラグメント — オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)：新しいエディターの詳細 ( 主に **コンテンツフラグメント** コンソール )。
+>コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。この節では、**Assets** コンソールから主にアクセスされるエディターを説明します。（主に&#x200B;**コンテンツフラグメント**&#x200B;コンソールからアクセスされる）新しいエディターについて詳しくは、Sites のドキュメントの[コンテンツフラグメント - オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)を参照してください。
 
 **プレビュー**&#x200B;アイコンを使用すると
 

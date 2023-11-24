@@ -3,9 +3,9 @@ title: Commerce Integration Framework を使用した AEM と Commerce の統合
 description: Commerce Integration Framework を使用した AEM と Commerce の統合に関する FAQ
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '967'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Dispatcher には、価格や在庫などの動的データはキャッシュさ
 
 ## 9. AEM Dispatcher のキャッシュ無効化は、AEM とコマースでどのように機能しますか。
 
-Dispatcher にキャッシュされたページに対しては、TTL ベースのキャッシュ無効化を設定することをお勧めします。価格や在庫などの動的な情報については、Adobeはデータをクライアントサイドでレンダリングすることをお勧めします。 TTL ベースのキャッシュの無効化について詳しくは、[Dispatcher キャッシュの最適化](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=ja)および [AEM パフォーマンスの最適化](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html?lang=ja)を参照してください。
+Dispatcher にキャッシュされたページに対しては、TTL ベースのキャッシュ無効化を設定することをお勧めします。価格や在庫などの動的な情報については、クライアントサイドで日付をレンダリングすることをお勧めします。TTL ベースのキャッシュの無効化について詳しくは、[Dispatcher キャッシュの最適化](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=ja)および [AEM パフォーマンスの最適化](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html?lang=ja)を参照してください。
 
 ## 10. コマースでの、AEM コンテンツをまたぐ統合検索に関してレコメンデーションはありますか。
 
@@ -63,7 +63,7 @@ CIF には、検索バーと検索結果のコンポーネントが用意され�
 
 ## 13. 商業文で製品データを充実させる方法はありますか。それはどこでできますか。AEM とコマースソリューションのどちらですか。
 
-Adobeは、AEMでマーケティング関連のデータとコンテンツを管理することをお勧めします。 コンテンツフラグメントを使用して、コマースソリューションの製品データを追加の属性で修飾するか、構造化されていないコンテンツ用のエクスペリエンスフラグメントを作成して製品とリンクします。
+AEM でマーケティング関連のデータとコンテンツを管理することをお勧めします。コンテンツフラグメントを使用して、コマースソリューションの製品データを追加の属性で修飾するか、構造化されていないコンテンツ用のエクスペリエンスフラグメントを作成して製品とリンクします。
 
 ## 14. プレゼンテーションレイヤー全体に AEM を使用する場合、PCI への準拠をどのように確保できますか。
 

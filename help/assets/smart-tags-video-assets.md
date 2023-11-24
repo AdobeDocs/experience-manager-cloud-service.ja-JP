@@ -5,9 +5,9 @@ feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1212'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ DAM 内の既存のビデオアセットに対しては、スマートタグが�
 
 ## ビデオスマートタグのモデレート {#moderate-video-smart-tags}
 
-[!DNL Adobe Experience Manager] スマートタグをキュレーションして次の操作を実行できます。
+[!DNL Adobe Experience Manager] では、スマートタグをキュレーションして次の操作を行うことができます。
 
 * ブランドビデオに割り当てられている不正確なタグを削除します。
 

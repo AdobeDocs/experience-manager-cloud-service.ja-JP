@@ -5,9 +5,9 @@ role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
 source-git-commit: f295eead13bcdeed910ae6b8c82373e2b70f1224
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '411'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 88%
 
 Adobeオファー [統合する [!DNL Workfront] および [!DNL Adobe Experience Manager Assets] ネイティブ ( サポートAssets Essentialsとas a Cloud Service)](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=ja).
 
-ネイティブExperience Manager統合を使用すると、次のことができます。
+ネイティブ Experience Manager 統合と  を使用すると、以下が可能です。
 
 * Workfront 内で統合をすばやく設定します。
 
@@ -35,14 +35,14 @@ Adobeオファー [統合する [!DNL Workfront] および [!DNL Adobe Experienc
 * 複数の Experience Manager Assets リポジトリを 1 つの Workfront 環境に、または複数の Workfront 環境を 1 つの Experience Manager Assets リポジトリに、組織 ID を横断してスムーズに接続します。
 
 
-## Adobe Workfront forExperience Manager拡張コネクタ {#enhanced-connector-information}
+## Workfront for Experience Manager 拡張コネクタに関するセッション {#enhanced-connector-information}
 
 
 2022年6月に、アドビは Workfront と Adobe Experience Manager Assets as a Cloud Service を接続するための新しいネイティブ統合をリリースしました。この統合は、これら 2 つのソリューションを接続するために必須の方法となりました。Workfront と AEM Assets as a Cloud Service を接続する拡張コネクタ（1.9.8 以降）の今後の新しい実装は、ブロックされます。この統合の設定方法について詳しくは、[Experience Manager Assets as a Cloud Service統合の設定](workfront-connector-configure.md)を参照してください。
 
 >[!NOTE]
 >
->アドビでは、 Workfront for AEM コネクタまたは Workfront for Experience Manager 拡張コネクタと Experience Manager 統合の並行使用をサポートしていません。
+>アドビでは、Workfront for Experience Manager 拡張コネクタと Experience Manager 統合の並行使用をサポートしていません。
 
 2022 年 6 月より前のインストールでは、次に、のデプロイメントと設定に関する注意事項を示します。 [!DNL Adobe Workfront for Experience Manager enhanced connector]:
 

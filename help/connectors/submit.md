@@ -1,17 +1,17 @@
 ---
 title: AEM コネクタの登録
-description: Adobe Experience Manager(AEM)as a Cloud Serviceでコネクタを正しく参照およびデプロイする方法を説明します。
+description: Adobe Experience Manager（AEM）as a Cloud Service でコネクタを正しく参照およびデプロイする方法を説明します。
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
 source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '310'
-ht-degree: 30%
+ht-degree: 100%
 
 ---
 
 # AEM コネクタの登録
 
-以下に、Adobe Experience Manager(AEM) コネクタの送信に役立つ便利な情報を示します。 [実装する](implement.md) および  [維持](maintain.md) コネクタ。
+以下に、Adobe Experience Manager（AEM）Connectors の送信に役立つ便利な情報を示します。コネクタの[実装](implement.md)と[保守](maintain.md)に関する記事と併せてお読みください。
 
 AEM コネクタは [Adobe Exchange](https://partners.adobe.com/technologyprogram/experiencecloud.html) に一覧表示されています。
 
@@ -20,10 +20,10 @@ AEM コネクタは [Adobe Exchange](https://partners.adobe.com/technologyprogra
 パッケージをプロジェクトに組み込む方法には、様々な選択肢があります。
 
 1. パートナーの公開リポジトリー - 公にアクセス可能な Maven リポジトリーでパートナーがコンテンツパッケージをホストします。
-1. パスワードで保護されたパートナーのリポジトリ — パスワードで保護された Maven リポジトリでパートナーがコンテンツパッケージをホストします。 詳しくは、 [パスワードで保護された Maven リポジトリ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories) 」を参照してください。
+1. パートナーのパスワードで保護されたリポジトリ - パスワードで保護された Maven リポジトリでパートナーがコンテンツパッケージをホストします。手順について詳しくは、[パスワードで保護された Maven リポジトリ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=ja#password-protected-maven-repositories)を参照してください。
 1. アーティファクトのバンドル - ユーザーの Maven プロジェクトにコネクタパッケージがローカルに含まれます。
 
-パッケージは、ホストされている場所に関係なく、ベンダーから提供されるように、パッケージを依存関係として pom.xml で参照する必要があります。
+パッケージは、ホストされている場所に関係なく、ベンダーから提供されるとおりに、パッケージを依存関係として pom.xml で参照する必要があります。
 
 ```xml
 <!-- UberJAR Dependency to be added to the project's Reactor pom.xml -->
@@ -36,7 +36,7 @@ AEM コネクタは [Adobe Exchange](https://partners.adobe.com/technologyprogra
 </dependency>
 ```
 
-ISV パートナーがインターネットにアクセス可能な（Cloud Manager からアクセス可能な）Maven リポジトリでコネクタをホストする場合、ISV はリポジトリ設定を提供する必要があります。 `pom.xml` を配置できます。 その理由は、ローカルでも Cloud Manager でも、コネクタの依存関係（上記）をビルド時に解決できるからです。
+ISV パートナーがインターネットにアクセス可能な（Cloud Manager でアクセス可能な）Maven リポジトリでコネクタをホストする場合、ISV は `pom.xml` を配置できるリポジトリ設定を提供する必要があります。その理由は、ローカルでも Cloud Manager でも、コネクタの依存関係（上記）をビルド時に解決できるからです。
 
 ```xml
 <repository>
@@ -53,4 +53,4 @@ ISV パートナーがインターネットにアクセス可能な（Cloud Mana
 </repository>
 ```
 
-ISV パートナーが Connector をダウンロード可能ファイルとして配布する場合は、ISV が指示を提供する必要があります。 手順では、AEMプロジェクトの一環として Git にチェックインする必要があるローカルファイルシステムの Maven リポジトリに、ファイルをデプロイする方法を説明する必要があります。 これにより、Cloud Manager はこれらの依存関係を解決できます。
+ISV パートナーがコネクタをダウンロード可能ファイルとして配布することを選択した場合、ISV が手順を提供する必要があります。手順では、AEM プロジェクトの一環として Git にチェックインする必要があるローカルファイルシステムの Maven リポジトリに、ファイルをデプロイする方法を説明する必要があります。これにより、Cloud Manager はこれらの依存関係を解決できます。

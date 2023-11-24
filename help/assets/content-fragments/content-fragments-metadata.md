@@ -3,9 +3,9 @@ title: メタデータ - フラグメントのプロパティ（アセット - �
 description: コンテンツフラグメントのメタデータプロパティの表示と編集の方法について説明します。
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
 source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '274'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->コンテンツフラグメント は Sites 機能ですが、 **Assets**.
+>コンテンツフラグメントこれは Sites 機能ですが、**Assets** として保存されます。
 >
->コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。 この節では、主に **Assets** コンソール。 Sites のドキュメントを参照してください。 [コンテンツフラグメント — オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)：新しいエディターの詳細 ( 主に **コンテンツフラグメント** コンソール )。
+>コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。この節では、**Assets** コンソールから主にアクセスされるエディターを説明します。（主に&#x200B;**コンテンツフラグメント**&#x200B;コンソールからアクセスされる）新しいエディターについて詳しくは、Sites のドキュメントの[コンテンツフラグメント - オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)を参照してください。
 
 ## プロパティ／メタデータの編集 {#editing-properties-meta-data}
 
