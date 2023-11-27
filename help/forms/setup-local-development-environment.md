@@ -241,7 +241,7 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
 >[!NOTE]
 >
 > Microsoft® Dynamics 365 および Salesforce フォームデータモデルを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 30 以降に基づくプロジェクトをセットアップします。
-Tranquil、Urbane、Ultramarine テーマを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 32 以降に基づくプロジェクトをセットアップします。
+>Tranquil、Urbane、Ultramarine テーマを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 32 以降に基づくプロジェクトをセットアップします。
 
 プロジェクトを設定するには、以下を実行します。
 
@@ -268,7 +268,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
      >[!WARNING]
      >
-     * バージョン 45 でアーキタイププロジェクトを作成する場合、 [AEM Archetype プロジェクトフォルダー]/pom.xmlでは、最初にフォームコアコンポーネントのバージョンを 2.0.64 に設定します。アーキタイププロジェクトを構築またはデプロイする前に、フォームコアコンポーネントのバージョンを 2.0.62 に更新します。
+     >* バージョン 45 でアーキタイププロジェクトを作成する場合、 [AEM Archetype プロジェクトフォルダー]/pom.xmlでは、最初にフォームコアコンポーネントのバージョンを 2.0.64 に設定します。アーキタイププロジェクトを構築またはデプロイする前に、フォームコアコンポーネントのバージョンを 2.0.62 に更新します。
 
 1. プロジェクトをローカル開発環境にデプロイします。以下のコマンドを使用して、ローカル開発環境にデプロイできます
 

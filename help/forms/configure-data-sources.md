@@ -125,7 +125,7 @@ RESTful サービス、SOAP サービス、OData サービスのクラウドサ�
 
 RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式または YAML 形式で [ in JSON or YAML forSwagger 定義ファイル](https://swagger.io/specification/v2/) in JSON or YAML format in a 内に記述できます。[!DNL Experience Manager] as a Cloud Service で RESTful web サービスを設定するには、ファイルシステムまたはファイルがホストされている URL に [!DNL Swagger] ファイル（[Swagger Version 2.0](https://swagger.io/specification/v2/)）[!DNL Swagger] ファイル（[Swagger Version 3.0](https://swagger.io/specification/v3/)）が存在しているか、Swagger ファイルがホストされる URL を指定する必要があります。
 
-### Open API 仕様バージョン 2.0 {#configure-restful-services-open-api-2.0} 用の RESTful サービスの設定
+### Open API 仕様バージョン 2.0 用の RESTful サービスの設定 {#configure-restful-services-open-api-2.0}
 
 1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーをタップして選択します。
 
@@ -140,6 +140,7 @@ RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式ま
       * スキーム：REST API で使用される転送プロトコル。ドロップダウンリストに表示されるスキームの種類の数は、[!DNL Swagger] ソースで定義されているスキームによって異なります。
       * ホスト：REST API を提供するホストのドメイン名または IP アドレス。このフィールドは必須です。
       * 基本パス：すべての API パスの URL プリフィックス。これはオプションのフィールドです。\
+
         必要に応じて、これらのフィールドの事前入力された値を編集します。
 
    * RESTful サービスにアクセスするための認証タイプ（なし、「OAuth2.0（[認証コード](https://oauth.net/2/grant-types/authorization-code/)、[クライアント資格情報](https://oauth.net/2/grant-types/client-credentials/)）、基本認証、API キー認証、カスタム認証）を選択し、その選択内容に応じて認証の詳細を指定します。
@@ -150,7 +151,7 @@ RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式ま
 
 1. 「**[!UICONTROL 作成]**」をタップして、RESTful サービス用のクラウド設定を作成します。
 
-### Open API 仕様バージョン 3.0 {#configure-restful-services-open-api-3.0} 用の RESTful サービスの設定
+### Open API 仕様バージョン 3.0 用の RESTful サービスの設定 {#configure-restful-services-open-api-3.0}
 
 1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーをタップして選択します。
 
@@ -284,7 +285,7 @@ OData サービスは、そのサービスのルート URL によって識別さ
 
    >[!NOTE]
    >
-   接続する OAuth 2.0 認証タイプを選択します。 [!DNL Microsoft®® Dynamics] OData エンドポイントをサービスルートとして使用するサービス。
+   >接続する OAuth 2.0 認証タイプを選択します。 [!DNL Microsoft®® Dynamics] OData エンドポイントをサービスルートとして使用するサービス。
 
 1. 「**[!UICONTROL 作成]**」をタップして、OData サービス用のクラウド設定を作成します。
 

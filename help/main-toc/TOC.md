@@ -215,7 +215,7 @@ ht-degree: 93%
    + [運用開始後](/help/journey-migration/post-go-live.md)
    + [Experience Manager as a Cloud Service への移行ガイド（パートナー向け）](/help/journey-migration/getting-started-partners.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
-      + Cloud Acceleration Manager{#introduction-cam} の概要
+      + Cloud Acceleration Manager の概要{#introduction-cam}
          + [概要](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
          + [メリット](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)
       + Cloud Acceleration Manager の使用 {#using-cam}
@@ -572,7 +572,7 @@ ht-degree: 93%
       + [as a Cloud Service の移行元 [!DNL AEM 6.5 Forms] または以前のバージョン [!DNL AEM Forms] ](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [グループと権限](/help/forms/forms-groups-privileges-tasks.md)
       + [アダプティブフォーム、PDF フォームおよびその他のアセットの読み込み、書き出し、整理](/help/forms/import-export-forms-templates.md)
-   + {#integrate} の統合
+   +  の統合{#integrate}
       + サービス {#services}
          + [AEM Forms as a Cloud Service と Adobe Sign の統合](/help/forms/adobe-sign-integration-adaptive-forms.md)
          + [AEM Forms as a Cloud Service と DocuSign の統合](/help/forms/integrate-docusign-adaptive-forms.md)
@@ -707,7 +707,7 @@ ht-degree: 93%
    + コア製品機能の使用 {#core-product-features}
       + [ビデオのサムネールサポート](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
       + [Screens 通知サービス](/help/screens-cloud/using-core-product-features/screens-notification-service.md)
-   + Screens as a Cloud Service {#developing-screens-cloud}での開発
+   + Screens as a Cloud Serviceでの開発 {#developing-screens-cloud}
       + [REST API](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
       + [コンポーネントの作成](/help/screens-cloud/developing/creating-components.md)
       + [Screens as a Cloud Service 用カスタムコンポーネントの開発](/help/screens-cloud/developing/developing-custom-components-tutorial.md)

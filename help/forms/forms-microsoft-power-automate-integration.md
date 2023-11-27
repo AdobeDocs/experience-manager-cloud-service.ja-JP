@@ -85,7 +85,7 @@ Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接
 
    >[!NOTE]
    >
-   アダプティブフォームを作成する際に、**[!UICONTROL 設定コンテナ]**&#x200B;フィールドにコンテナ名を指定します。
+   >アダプティブフォームを作成する際に、**[!UICONTROL 設定コンテナ]**&#x200B;フィールドにコンテナ名を指定します。
 
 1. 設定ページで「**[!UICONTROL 作成]**」をタップして、AEM Forms 内に [!DNL Microsoft®® Power Automate Flow Service] の設定を作成します。
 1. 次の日： **[!UICONTROL Microsoft®® Power Automate の Dataverse Service の設定]** ページで、 **[!UICONTROL クライアント ID]** （アプリケーション ID とも呼ばれます）。 **[!UICONTROL クライアントの秘密鍵]**, **[!UICONTROL OAuth URL]** および **[!UICONTROL 動的環境 URL]**. 前のセクションで作成した [Microsoft® Azure Active Directory アプリケーション](#ms-power-automate-application)のクライアント ID、クライアントシークレット、OAuth URL およびDynamics 環境 URL を使用します。Microsoft® Azure Active Directory アプリケーション UI の「エンドポイント」オプションを使用して OAuth URL を検索する
@@ -101,7 +101,7 @@ Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接
 
    >[!NOTE]
    >
-   アダプティブフォームを作成する際に、**[!UICONTROL 設定コンテナ]**&#x200B;フィールドにコンテナ名を指定します。
+   >アダプティブフォームを作成する際に、**[!UICONTROL 設定コンテナ]**&#x200B;フィールドにコンテナ名を指定します。
 
 1. 設定ページで「**[!UICONTROL 作成]**」をタップして、AEM Forms 内に [!DNL Microsoft®® Power Automate Flow Service] の設定を作成します。
 1. 次の日： **[!UICONTROL Microsoft®® Power Automate の Dataverse の設定]** ページで、 **[!UICONTROL クライアント ID]** （アプリケーション ID とも呼ばれます）。 **[!UICONTROL クライアントの秘密鍵]**, **[!UICONTROL OAuth URL]** および **[!UICONTROL 動的環境 URL]**. クライアント ID、クライアントシークレット、OAuth URL、Dynamics 環境 ID を使用します。 Microsoft® Azure Active Directory アプリケーション UI の「エンドポイント」オプションを使用して、OAuth URL を検索します。 [マイフロー](https://us.flow.microsoft.com)リンクを開いて「マイフロー」をタップし、URL にリストされている ID を Dynamics 環境 ID として使用します。
@@ -128,7 +128,7 @@ Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接
 
 >[!NOTE]
 >
-アダプティブフォームを送信する前に、以下の JSON スキーマを持つ `When an HTTP Request is received` トリガーが Power Automate フローに追加されていることを確認してください。
+>アダプティブフォームを送信する前に、以下の JSON スキーマを持つ `When an HTTP Request is received` トリガーが Power Automate フローに追加されていることを確認してください。
 
 ```
         {

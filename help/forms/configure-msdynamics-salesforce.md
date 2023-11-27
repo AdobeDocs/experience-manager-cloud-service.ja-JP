@@ -59,7 +59,7 @@ ht-degree: 100%
 
 ### 標準の [!DNL Salesforce] フォームデータモデルへのアクセス
 
-](setup-local-development-environment.md#forms-cloud-service-local-development-environment)Experience Manager アーキタイプに基づいて Forms の開発プロジェクトをセットアップ[すると、[!DNL Salesforce] フォームデータモデルを [!DNL AEM Forms] サーバー上ですぐに使用できるようになります。
+[&#128279;](setup-local-development-environment.md#forms-cloud-service-local-development-environment)Experience Manager アーキタイプに基づいて Forms の開発プロジェクトをセットアップすると、[!DNL Salesforce] フォームデータモデルを [!DNL AEM Forms] サーバー上ですぐに使用できるようになります。
 
 フォームデータモデルにアクセスするには、**[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL データ統合]**&#x200B;に移動します。使用可能なフォルダーのリストには、[AEM アーキタイププロジェクトの生成](setup-local-development-environment.md#forms-cloud-service-local-development-environment)時に `DappTitle` のタイトルを指定したフォルダーが含まれています。フォルダー名をタップし、「**[!UICONTROL Salesforce データモデル]**」を選択したあと、編集アイコン（![編集](assets/edit.png)）をタップしてフォームデータモデルを表示します。
 
@@ -95,7 +95,7 @@ ht-degree: 100%
 
 ### 標準の [!DNL Microsoft® Dynamics 365] フォームデータモデルへのアクセス
 
-](setup-local-development-environment.md##forms-cloud-service-local-development-environment)Experience Manager アーキタイプに基づいて Forms の開発プロジェクトをセットアップ[すると、[!DNL Microsoft® Dynamics 365] フォームデータモデルを [!DNL AEM Forms] サーバー上ですぐに使用できるようになります。
+[&#128279;](setup-local-development-environment.md##forms-cloud-service-local-development-environment)Experience Manager アーキタイプに基づいて Forms の開発プロジェクトをセットアップすると、[!DNL Microsoft® Dynamics 365] フォームデータモデルを [!DNL AEM Forms] サーバー上ですぐに使用できるようになります。
 
 フォームデータモデルにアクセスするには、**[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL データ統合]**&#x200B;に移動します。使用可能なフォルダーのリストには、[AEM アーキタイププロジェクトの生成](setup-local-development-environment.md#forms-cloud-service-local-development-environment)時に `DappTitle` のタイトルを指定したフォルダーが含まれています。フォルダー名をタップして「**[!UICONTROL Microsoft® Dynamics 365 データモデル]**」を選択し、編集 ![編集](assets/edit.png) アイコンをタップしてフォームデータモデルを表示します。
 
@@ -103,6 +103,6 @@ ht-degree: 100%
 
 >[!MORELIKETHIS]
 >
-* [AEM Forms 用のデータソースの設定](/help/forms/configure-data-sources.md)
-* [AEM Forms 用の Azure ストレージの設定](/help/forms/configure-azure-storage.md)
-[AEM Sites ページへのフォームポータルの追加](/help/forms/configure-forms-portal.md)
+>* [AEM Forms 用のデータソースの設定](/help/forms/configure-data-sources.md)
+>* [AEM Forms 用の Azure ストレージの設定](/help/forms/configure-azure-storage.md)
+>[AEM Sites ページへのフォームポータルの追加](/help/forms/configure-forms-portal.md)

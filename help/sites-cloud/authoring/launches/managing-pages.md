@@ -25,6 +25,7 @@ ht-degree: 89%
 * ページエディター：
 
    * 「**ナビゲーション**」を選択して、コンソールでローンチの構造を開きます。
+
      ![ページエディターからローンチをナビゲーション](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
      >[!NOTE]

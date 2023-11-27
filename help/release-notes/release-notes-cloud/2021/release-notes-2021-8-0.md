@@ -28,7 +28,7 @@ ht-degree: 57%
 
 ## リリースビデオ {#release-video}
 
-追加された機能の概要については、](https://video.tv.adobe.com/v/336277)2021年8月リリースの概要ビデオ[をご覧ください。
+追加された機能の概要については、[&#128279;](https://video.tv.adobe.com/v/336277)2021年8月リリースの概要ビデオをご覧ください。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

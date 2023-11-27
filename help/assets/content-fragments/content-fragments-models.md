@@ -222,6 +222,7 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
 * **[フラグメント参照](#fragment-reference-nested-fragments)**（ネストされたフラグメント）
    * 指定した特定のモデルに応じて、他のフラグメントを参照します。
    * 構造化データを含めたり、取得したりできます。
+
      >[!NOTE]
      >
      >この方法は、[GraphQL でコンテンツフラグメントを使用したヘッドレスコンテンツ配信](/help/assets/content-fragments/content-fragments-graphql.md)との関連で特に重要になります。

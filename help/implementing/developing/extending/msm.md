@@ -181,14 +181,17 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 1. このノードに次のプロパティを追加します。
 
    * **名前**：`jcr:title`
+
      **型**：`String`
      **値**:UI に表示される識別的なタイトル
 
    * **名前**：`jcr:description`
+
      **型**：`String`
      **値**：オプションの説明です。
 
    * **名前**：`cq:trigger`
+
      **型**：`String`
      **値**: [ロールアウトトリガー](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers) 使用される
       * `rollout`
@@ -634,6 +637,7 @@ MSM は、保存されている言語コードと国コードのリストを使�
       * **タイプ**：`String`
       * **値**：考慮中のプロパティの名前を保持し、プロパティの値に相当します `name`
          * 例えば、
+
            `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 `cq-msm-lockable` が定義されている場合は、次の方法でチェーンの解除またはクローズを MSM と連携できます。

@@ -32,17 +32,21 @@ ht-degree: 99%
 1. **実行中のワークフロー**：実行中のワークフローの数とステータスを表示します。例えば、以下の画像で表示されているのは、AEMインスタンスの&#x200B;**実行中のワークフロー**&#x200B;の数と&#x200B;**ステータス**&#x200B;です。
 
    * **ステータス：正常**
+
      ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **ステータス：正常でない**
+
      ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
 1. ワークフローインスタンスの&#x200B;**ステータスの詳細**&#x200B;では、「**詳細**」をクリックすると、**実行中のワークフローインスタンス**、**完了したワークフローインスタンス**、**中止されたワークフローインスタンス**、**失敗したワークフローインスタンス**&#x200B;などの数が表示されます。例えば、以下の画像では、**ステータスの詳細**&#x200B;が表示されています。
 
    * **ステータスの詳細：正常**
+
      ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
    * **ステータスの詳細：正常でない**
+
      ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]

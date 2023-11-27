@@ -64,7 +64,7 @@ Experience Manager Assetsを使用すると、検索結果のユーザーイン�
 
 **3D アセットのサムネールプレビュー**
 
-[!DNL Experience Manager Assets] では、gLB、USDz、FBX、3DS、OBJ、SBSAR など、一般的な 3D ファイル形式のサムネールプレビューを生成するようになりました。[](/help/assets/file-format-support.md)これらのファイルがアップロードされると、デフォルトでサムネールが自動的に生成されます。
+[!DNL Experience Manager Assets] では、gLB、USDz、FBX、3DS、OBJ、SBSAR など、一般的な 3D ファイル形式のサムネールプレビューを生成するようになりました。[&#128279;](/help/assets/file-format-support.md)これらのファイルがアップロードされると、デフォルトでサムネールが自動的に生成されます。
 
 **リンク共有設定**
 

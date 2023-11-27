@@ -425,7 +425,7 @@ GitHub のコード
 
 * **名前**：`jcr:title`
 * **名前**：`status`
-   * ``**型**：`String`
+   * &grave;&grave;**型**：`String`
    * **値**：`draft`、`enabled` または `disabled`
 
 ### 構造 {#structure}
@@ -489,6 +489,7 @@ GitHub のコード
    * `jcr:content` ノードの status プロパティを設定する。
 
       * 例：
+
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * 次のプロパティを定義します。
@@ -501,6 +502,7 @@ GitHub のコード
 
    * [適切なページまたはサブブランチのルートページの&#x200B;**ページプロパティ**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author)&#x200B;に対して許可されたテンプレートのパスを定義します。
    * プロパティを設定します。
+
      `cq:allowedTemplates` 
 を必要な分岐の `jcr:content` ノードに設定します。
 

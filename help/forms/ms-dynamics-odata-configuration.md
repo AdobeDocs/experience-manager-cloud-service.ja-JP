@@ -100,6 +100,7 @@ OAuth クライアントを Active Directory Federation Services（AD FS）マ�
 
    * `Client-ID` は、任意の GUID ジェネレーターを使用して生成できるクライアント ID です。
    * `redirect-uri` は、[!DNL Experience Manager Forms] 上の [!DNL Microsoft Dynamics] OData クラウドサービスに対する URL です。[!DNL Experience Manager Forms] と共にインストールされるデフォルトのクラウドサービスは、次の URL にデプロイされます。
+
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. 以下のコマンドを実行して、AD FS マシン上でアクセス権を設定します。

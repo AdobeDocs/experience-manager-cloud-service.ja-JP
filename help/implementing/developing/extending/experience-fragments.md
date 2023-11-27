@@ -83,9 +83,11 @@ HTML レンディションは、Sling Rewriter パイプラインを使用して
 1. 次の両方：
 
    1. テンプレート（初期ノード）のリソースタイプは、次のものから継承する必要があります。
+
       `cq/experience-fragments/components/xfpage`
 
    1. テンプレートの名前は次の文字列で始まる必要があります。
+
       `experience-fragments`
 これにより、ユーザーは /content/experience-fragments にエクスペリエンスフラグメントを作成できます。このフォルダーの `cq:allowedTemplates` プロパティには、`experience-fragment` で始まる名前の付いたすべてのテンプレートが含まれています。ユーザーは、このプロパティを更新して、独自の命名方式やテンプレート場所を取り入れることができます。
 

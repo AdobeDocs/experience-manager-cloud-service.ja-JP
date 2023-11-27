@@ -61,6 +61,7 @@ Adobe Experience Manager as a Cloud Service 内で、コンテンツフラグメ
 * すべてのコンテンツはアセットの `jcr:content/data` ノードに格納されます。
 
    * 要素のデータは次のマスターサブノードに格納されます。
+
      `jcr:content/data/master`
 
    * バリエーションは、そのバリエーションの名前を持つサブノードに格納されます（例： ）。 `jcr:content/data/myvariation`

@@ -71,7 +71,7 @@ URL をリソースにマップするために ResourceResolver.resolve メソ�
 
 以下のリクエストをリダイレクトします。
 
-`https://localhost:4503/welcome` ``
+`https://localhost:4503/welcome` &grave;&grave;
 
 次のようになります。
 

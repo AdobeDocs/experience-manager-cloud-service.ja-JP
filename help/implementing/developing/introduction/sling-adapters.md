@@ -357,4 +357,4 @@ null ケースを適切に処理することが重要です。JSP レンダリ�
 
 #### その他 {#other}
 
-さらに、Sling、JCR、OCM では、カスタム OCM（[`AdapterFactory`](https://sling.apache.org/documentation/the-sling-engine/adapters.html)Object Content Mapping）オブジェクト用の [](https://jackrabbit.apache.org/jcr/object-content-mapping.html) も提供しています。
+さらに、Sling、JCR、OCM では、カスタム OCM（[`AdapterFactory`](https://sling.apache.org/documentation/the-sling-engine/adapters.html)Object Content Mapping）オブジェクト用の [&#128279;](https://jackrabbit.apache.org/jcr/object-content-mapping.html) も提供しています。

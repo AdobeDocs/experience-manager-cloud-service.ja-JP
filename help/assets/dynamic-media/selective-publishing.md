@@ -266,6 +266,7 @@ Experience Manager の&#x200B;**[!UICONTROL カード表示]**、**[!UICONTROL �
 **[!UICONTROL リスト表示]**&#x200B;を使用する場合、**[!UICONTROL Dynamic Media]** の公開状態に関する追加の列が表示されます。
    * Dynamic Media と同期するように設定されたフォルダーには、デフォルトで「**[!UICONTROL Dynamic Media]**」列が表示されます。
    * Dynamic Media と同期するように設定されて&#x200B;*いない*フォルダーには、「Dynamic Media」列は表示されません。
+
       ![リスト表示とタイムライン](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
 ## 選択的公開のトラブルシューティング {#selective-publish-troubleshoot}

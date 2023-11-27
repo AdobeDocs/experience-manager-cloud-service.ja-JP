@@ -212,6 +212,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. フォルダーがセグメントのリストに表示されます。
    * 列の並べ替え方法によって、リスト内の新しいフォルダーの表示場所が異なります。
    * 列見出しを選択して、並べ替えを調整できます。
+
      ![新規フォルダー](../assets/contexthub-folder.png)
 
 ### 既存のフォルダーの変更 {#modify-folders}

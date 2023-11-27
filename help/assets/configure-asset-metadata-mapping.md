@@ -89,6 +89,7 @@ Experience Manager Assets as a Cloud Service で、新しいメタデータフ�
    1. `Project Name` を&#x200B;**[!UICONTROL フィールドラベル]**&#x200B;フィールドに入力します。
 
    1. `./jcr:content/metadata/wm:projectName` を&#x200B;**[!UICONTROL プロパティにマッピング]**フィールドに入力します。ガイドラインとして、次のテンプレートを使用して Experience Manager Assets のフィールドマッピングを定義します。
+
       `./jcr:content/metadata/<mapping defined for the field in workfront>`。
 
       Workfront でマッピングを設定する際に、`wm:projectName` Experience Manager Assets フィールドをプロジェクト／名前 Workfront フィールドにマッピングしました。

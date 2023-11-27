@@ -33,7 +33,7 @@ ht-degree: 100%
 1. 次の図に示すように、**login-token cookie の SameSite 属性**&#x200B;を `None` に設定します。
    ![samesite](/help/security/assets/samesite1.png)
 1. 「保存」をクリックします。
-1. ](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)AEM SDK クイックスタートを使用した OSGi 設定の生成[で説明されている手順に従って、この特定の設定の JSON 形式の設定を生成します。
+1. [&#128279;](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)AEM SDK クイックスタートを使用した OSGi 設定の生成で説明されている手順に従って、この特定の設定の JSON 形式の設定を生成します。
 1. [プロパティ設定用の Cloud Manager API 形式](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) OSGiドキュメントの手順に従って設定を適用します。
 
 この設定が更新され、ユーザーがログオフしてから再度ログオンすると、`login-token` cookie に `None` 属性が設定され、クロスサイトリクエストに含められるようになります。

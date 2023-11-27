@@ -28,7 +28,7 @@ ht-degree: 58%
 
 ## リリースビデオ {#release-video}
 
-追加された機能の概要については、](https://video.tv.adobe.com/v/335580)2021 年 7 月リリースの概要ビデオ[をご覧ください。
+追加された機能の概要については、[&#128279;](https://video.tv.adobe.com/v/335580)2021 年 7 月リリースの概要ビデオをご覧ください。
 
 ## Experience Manager Foundation as a Cloud Service {#foundation}
 
@@ -108,7 +108,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` は、[!DNL Experience Manag
    * オーサリングモードでのステージングされた製品データの視覚的インジケーターにより、今後の変更の可視性が向上
    * コンテンツページとコマースページ用の新しいサイトマップコンポーネント
 
-* 事前定義済みのレコメンデーションまたはオンザフライで作成されたレコメンデーションを使用した、AEM Storefront の Adobe Sensei](https://business.adobe.com/jp/products/magento/product-recommendations.html) による [Adobe Commerce Sensei 製品レコメンデーションのサポート
+* 事前定義済みのレコメンデーションまたはオンザフライで作成されたレコメンデーションを使用した、AEM Storefront の Adobe Sensei[&#128279;](https://business.adobe.com/jp/products/magento/product-recommendations.html) による Adobe Commerce Sensei 製品レコメンデーションのサポート
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 

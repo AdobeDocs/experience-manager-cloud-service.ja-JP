@@ -28,7 +28,7 @@ ht-degree: 95%
 
 AEM の[タグ付けフレームワーク](tagging-framework.md)の実装により、JCR API を使用してタグおよびタグコンテンツを管理できます。`TagManager` は、`cq:tags` 文字列配列プロパティに値として入力されたタグが重複しないように、存在しないタグを指している `TagID` を削除し、移動または結合されたタグの `TagID` を更新します。`TagManager` は、間違った変更を元に戻す JCR 監視リスナーを使用します。メインクラスは [com.day.cq.tagging](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html) パッケージ内にあります。
 
-* `JcrTagManagerFactory``TagManager` の JCR ベースの実装を返します。タグ付け API のリファレンス実装です。
+* `JcrTagManagerFactory` `TagManager` の JCR ベースの実装を返します。タグ付け API のリファレンス実装です。
 * `TagManager` - パスと名前を使用して、タグを解決して作成できます。
 * `Tag` - タグオブジェクトを定義します。
 
