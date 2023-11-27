@@ -3,9 +3,9 @@ title: アダプティブフォームに対してAdobe Analyticsを有効にす�
 description: Experience Cloudの自動設定を使用すると、Adobe Analyticsをアダプティブフォームに接続して、訪問者のインタラクションとエンゲージメントに関するインサイトを追跡できます。
 keywords: Experience Cloud設定の自動化、FormsでのAdobe Analyticsの有効化、アダプティブFormsでのAdobe Analyticsの有効化、Forms分析の統合、FormsとAdobe Analyticsを使用したアダプティブフォームのAdobe Analyticsの有効化
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: fa107ee89deb217ada2cfbcccb4602a7a6aff125
 workflow-type: tm+mt
-source-wordcount: '1593'
+source-wordcount: '1576'
 ht-degree: 7%
 
 ---
@@ -161,14 +161,13 @@ AEM Sitesページでアダプティブフォームに接続して Analytics を
 
 1. を追加します。 `customfooterlibs.html` ファイル。
 
-       &quot;&#39;
-       // customheaderlibs.html
-       &lt;sly data-sly-use.page=&quot;com.adobe.cq.wcm.core.components.models.Page&quot;>
-       &lt;sly data-sly-test=&quot;${page.data &amp;&amp; page.dataLayerClientlibIncluded}&quot; data-sly-call=&quot;${clientlib.js @ categories=&amp;#39;core.forms.components.commons.v1.datalayer&amp;#39;, async=true}&quot;>&lt;/sly>
-       &lt;/sly>
-       
-       &quot;&#39;
-   
+   ```
+   // customheaderlibs.html
+   <sly data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page">
+   <sly data-sly-test="${page.data && page.dataLayerClientlibIncluded}" data-sly-call="${clientlib.js @ categories='core.forms.components.commons.v1.datalayer', async=true}"></sly>
+   </sly>
+   ```
+
    The `customfooterlibs.html` は JavaScript で使用されます。
 
 1. [パイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=ja)して変更をデプロイします。
@@ -237,5 +236,5 @@ AEM Sitesページでアダプティブフォームに接続して Analytics を
 ## 関連トピック {#see-also}
 
 * [アダプティブForms分析レポートの表示と理解](/help/forms/view-understand-aem-forms-analytics-reports.md)
-* [アダプティブフォームをAEM Sitesページまたはエクスペリエンスフラグメントに追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [AEM Sites ページまたはエクスペリエンスフラグメントにアダプティブフォームを追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [AEM FormsとAdobe Analyticsの統合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
