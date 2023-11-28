@@ -2,7 +2,7 @@
 title: アダプティブフォームの送信アクションの設定方法
 description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自のアクションを作成できます。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 24b0871e75280d0125c13b1605c0e8b5e555c8e7
 workflow-type: tm+mt
 source-wordcount: '3428'
 ht-degree: 95%
@@ -54,8 +54,6 @@ ht-degree: 95%
 >[!CAUTION]
 >
 >If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
-
-
 -->
 
 ## REST エンドポイントへの送信 {#submit-to-rest-endpoint}
@@ -173,10 +171,12 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 ## SharePoint に送信 {#submit-to-sharedrive}
 
 「**[!UICONTROL SharePoint に送信]**」送信アクションは、アダプティブフォームと Microsoft® SharePoint ストレージを接続します。フォームデータファイル、添付ファイル、またはレコードのドキュメントを、接続された Microsoft Sharepoint ストレージに送信できます。
-
-<!-- Using Submit to SharePoint, you can:
+<!--
+Using Submit to SharePoint, you can:
 * [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
-* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) -->
+* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) 
+
+-->
 
 ### アダプティブフォームのSharePointドキュメントライブラリへの接続 {#connect-af-sharepoint-doc-library}
 
@@ -194,7 +194,7 @@ AEM FormsをMicrosoft® Sharepoint ドキュメントライブラリストレー
 1. **設定コンテナ**&#x200B;を選択します。設定は、選択した設定コンテナに保存されます。
 1. クリック **[!UICONTROL 作成]** > **[!UICONTROL SharePoint Document Library]** 」をドロップダウンリストから選択します。 SharePoint 設定ウィザードが表示されます。
 
-![SharePoint の設定](/help/forms/assets/sharepoint_configuration.png)
+   ![SharePoint の設定](/help/forms/assets/sharepoint_configuration.png)
 1. 「**[!UICONTROL タイトル]**」、「**[!UICONTROL クライアント ID]**」、「**[!UICONTROL クライアント秘密鍵]**」および「**[!UICONTROL OAuth URL]**」を指定します。OAuth URL のクライアント ID、クライアントの秘密鍵、テナント ID を取得する方法について詳しくは、[Microsoft® のドキュメント](https://learn.microsoft.com/ja-jp/graph/auth-register-app-v2)を参照してください。
    * アプリの `Client ID` と `Client Secret` は Microsoft® Azure Portal から取得できます。
    * Microsoft® Azure Portal で、リダイレクト URI を `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html` として追加します。`[author-instance]` をオーサーインスタンスの URL に置き換えます。
@@ -236,6 +236,7 @@ AEM FormsをMicrosoft® Sharepoint ドキュメントライブラリストレー
 データを保存するフォルダー構造は `/folder_name/form_name/year/month/date/submission_id/data` です。
 
 <!--
+
 ### Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
 
 <span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
@@ -268,13 +269,6 @@ To connect AEM Forms to your Microsoft&reg; Sharepoint List:
 1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
 1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
 
-    >[!NOTE]
-    >
-    > In Microsoft® SharePoint List, the following column types are not supported:
-    > * image column
-    > * metadata column
-    > * person column
-    > * external data column
 
 #### Use the Submit using Form Data Model in an Adaptive Form {#use-submit-using-fdm}
 
@@ -287,14 +281,14 @@ You can use the created SharePoint List configuration in an Adaptive Form, to sa
 
 When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
 
-    >[!NOTE]
-    >
-    > In Microsoft® SharePoint List, the following column types are not supported:
-    > * image column
-    > * metadata column
-    > * person column
-    > * external data column
-    
+>[!NOTE]
+>
+> In Microsoft® SharePoint List, the following column types are not supported:
+> * image column
+> * metadata column
+> * person column
+> * external data column
+
 -->
 
 ## OneDrive に送信 {#submit-to-onedrive}
