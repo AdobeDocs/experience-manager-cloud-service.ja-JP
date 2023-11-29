@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f2f81e2e3e7ff0b5bad4a5490f5cbec752c92578
 workflow-type: tm+mt
 source-wordcount: '1385'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 98%
 
 ## [!DNL Experience Manager] インターフェイスを使用したアセットのダウンロード {#download-assets}
 
-Experience Manager では、アセットの量とサイズに基づいてダウンロードエクスペリエンスを最適化します。サイズの小さいファイルはユーザーインターフェイスからリアルタイムでダウンロードされます。[!DNL Experience Manager] では、単一のアセットを ZIP アーカイブに格納するのではなく、元のファイルの単一のアセットリクエストを直接ダウンロードして、ダウンロードを高速化します。Experience Manager では、非同期リクエストによる大規模なダウンロードをサポートしています。100 GB を超えるダウンロードリクエストは、それぞれ最大 100 GB の複数の ZIP アーカイブに分割されます。
+Experience Manager では、アセットの量とサイズに基づいてダウンロードエクスペリエンスを最適化します。サイズの小さいファイルはユーザーインターフェイスからリアルタイムでダウンロードされます。[!DNL Experience Manager] では、単一のアセットを ZIP アーカイブに格納するのではなく、元のファイルの単一のアセットリクエストを直接ダウンロードして、ダウンロードを高速化します。Experience Manager では、非同期リクエストによる大規模なダウンロードをサポートしています。100 GB を超えるダウンロードリクエストは、最大サイズが 100 MB の複数の ZIP アーカイブに分割されます。
 
 デフォルトでは、[!DNL Experience Manager] は、ダウンロードアーカイブの生成時に [[!DNL Experience Manager] インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)で通知をトリガーします。
 
