@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスでの AEM および AMS での AEM との重要な違いについて説明します。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: c706757857a528a0475f659c6b38110db6f6572a
 workflow-type: tm+mt
-source-wordcount: '2733'
-ht-degree: 91%
+source-wordcount: '2791'
+ht-degree: 84%
 
 ---
 
@@ -166,7 +166,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 クラウド環境のスレッドダンプは継続的に収集されますが、現時点ではセルフサービス方式でダウンロードすることはできません。その間、問題のデバッグ用にスレッドダンプが必要な場合は、AEM サポートに問い合わせ、正確な時間枠を指定してください。
 
-## CRXDE Lite とデベロッパーコンソール {#crxde-lite-and-developer-console}
+## CRX/DE Lite とAEM as a Cloud Service Developer Console {#crxde-lite-and-developer-console}
 
 ### ローカル開発 {#local-development}
 
@@ -176,15 +176,19 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ### AEM as a Cloud Service の開発ツール {#aem-as-a-cloud-service-development-tools}
 
+>[!NOTE]
+>AEMas a Cloud Serviceの開発者コンソールは、同じ名前の [*Adobe Developer Console*](https://developer.adobe.com/developer-console/).
+>
+
 ユーザーはオーサー層の開発環境では CRXDE Lite にアクセスできますが、ステージ環境や実稼動環境ではアクセスできません。不変リポジトリー（`/libs`、`/apps`）に実行時に書き込むことはできないので、書き込もうとするとエラーが発生します。
 
-代わりに、開発者コンソールからリポジトリーブラウザーを起動して、オーサー層、パブリッシュ層およびプレビュー層にあるすべての環境のリポジトリーに対して読み取り専用ビューを提供できます。リポジトリーブラウザーについて詳しくは、[こちら](/help/implementing/developing/tools/repository-browser.md)を参照してください。
+代わりに、AEMas a Cloud Service開発者コンソールからリポジトリブラウザーを起動して、オーサー層、パブリッシュ層、プレビュー層のすべての環境のリポジトリに対する読み取り専用ビューを提供できます。 リポジトリーブラウザーについて詳しくは、[こちら](/help/implementing/developing/tools/repository-browser.md)を参照してください。
 
-AEM as a Cloud Service 開発者環境をデバッグするための一連のツールは、RDE 環境、開発環境、ステージ環境、実稼動環境の開発者コンソールで利用できます。URL は、次のようにオーサーサービス URL またはパブリッシュサービス URL を調整して決定できます。
+RDE、開発、ステージ、実稼動環境用のAEM as a Cloud Service開発者コンソールで、AEMの開発者環境をデバッグするための一連のツールを使用できます。 URL は、次のようにオーサーサービス URL またはパブリッシュサービス URL を調整して決定できます。
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-ショートカットとして、次の Cloud Manager CLI コマンドを使用して、下記の環境パラメーターに基づいて開発者コンソールを起動できます。
+ショートカットとして、次の Cloud Manager CLI コマンドを使用し、以下に説明する環境パラメーターに基づいてAEMas a Cloud Service開発者コンソールを起動できます。
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
@@ -202,11 +206,11 @@ AEM as a Cloud Service 開発者環境をデバッグするための一連のツ
 
 ![開発者コンソール 3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-また、デバッグにも便利です。開発者コンソールには、次のように「クエリの説明を実行」ツールへのリンクがあります。
+また、デバッグにも便利です。AEMas a Cloud Service開発者コンソールには、次のように「クエリの説明を実行」ツールへのリンクがあります。
 
 ![開発者コンソール 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-実稼動プログラムの場合、開発者コンソールへのアクセスは Admin Console の「Cloud Manager - デベロッパーロール」で定義されます。一方、サンドボックスプログラムの場合、開発者コンソールは、AEM as a Cloud Service へのアクセスを可能にする製品プロファイルを持つすべてのユーザーが使用できます。すべてのプログラムで、ステータスダンプとリポジトリブラウザーには「Cloud Manager - デベロッパーの役割」が必要です。また、オーサーサービスとパブリッシュサービスの両方のサービスからデータを表示するには、両方のサービスで AEM ユーザーまたはAEM 管理者製品プロファイルでもユーザーが定義されている必要があります。ユーザー権限の設定について詳しくは、 [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ja) を参照してください。
+実稼動プログラムの場合、AEMas a Cloud Serviceの開発者コンソールへのアクセスはAdobe Admin Consoleの「Cloud Manager - Developer Role」で定義されます。サンドボックスプログラムの場合、AEM as a Cloud Serviceへのアクセス権を持つ製品プロファイルを持つ任意のユーザーがAEMas a Cloud Serviceの開発者コンソールを使用できます。 すべてのプログラムで、ステータスダンプとリポジトリブラウザーには「Cloud Manager - デベロッパーの役割」が必要です。また、オーサーサービスとパブリッシュサービスの両方のサービスからデータを表示するには、両方のサービスで AEM ユーザーまたはAEM 管理者製品プロファイルでもユーザーが定義されている必要があります。ユーザー権限の設定について詳しくは、 [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ja) を参照してください。
 
 ### パフォーマンスの監視 {#performance-monitoring}
 

@@ -4,10 +4,10 @@ seo-title: Repository Browser
 description: リポジトリーブラウザーは、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対して、リポジトリーへの読み取り専用ビューを提供します。
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: a7fa9ecc54bdee394852d765011df2ddd0a4950c
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 98%
+source-wordcount: '866'
+ht-degree: 87%
 
 ---
 
@@ -25,20 +25,20 @@ ht-degree: 98%
 
 リポジトリブラウザーは、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対してリポジトリへの読み取り専用ビューを提供する開発者ツールです。コンテンツの確認やデバッグを容易にするように、コンテンツ構造が見やすく設計されています。
 
-開発者コンソールからアクセスでき、選択した環境のオーサーインスタンスまたはパブリッシュインスタンスのリポジトリーを参照するために使用できます。
+次からアクセス可能： [AEMas a Cloud Service的開発者コンソール](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)を使用すると、選択した環境のオーサーまたはパブリッシュインスタンスのリポジトリを参照できます。
 
 ### アクセスのための前提条件 {#access-prerequisites}
 
-Developer Console またはリポジトリブラウザーにアクセスするには、次の条件を満たす必要があります。
+AEM as a Cloud Service Developer Console またはリポジトリブラウザーにアクセスするには、次の条件を満たす必要があります。
 
-Developer Console にアクセスするには、次の操作を実行します。
+AEM as a Cloud Service Developer Console にアクセスするには：
 
-* 実稼動プログラムの場合、ユーザーは Admin Console で「**Cloud Manager - デベロッパーロール**」に割り当てられている必要があります。
+* 実稼動プログラムの場合、ユーザーは **Cloud Manager — デベロッパーロール** Adobe Admin Console
 * サンドボックスプログラムの場合、AEM as a Cloud Service へのアクセス権を付与する製品プロファイルを持つ任意のユーザーが使用できます。
 
 リポジトリブラウザーにアクセスするには、次の操作を実行します。
 
-* オーサーインスタンスとパブリッシュインスタンスを表示するには、ユーザーは Admin Console で「**Cloud Manager - デベロッパーロール**」に割り当てられている必要があります。
+* ユーザーは、 **Cloud Manager — 開発者** オーサーインスタンスとパブリッシュインスタンスを表示するAEMas a Cloud Service開発者コンソールでの役割。
 * さらに、オーサー層の場合、「AEM ユーザー」製品プロファイルを持つユーザーは最小限の読み取りアクセス権でリポジトリーブラウザーを表示できます。ユーザーの権限は、リポジトリーを参照する際に考慮されます。「AEM 管理者」製品プロファイルを持つユーザーは、完全な読み取りアクセス権でリポジトリーブラウザーを表示できます。
 
 ユーザー権限の設定について詳しくは、[Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=ja)を参照してください。
