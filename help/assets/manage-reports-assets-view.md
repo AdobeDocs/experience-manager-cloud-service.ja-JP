@@ -2,10 +2,10 @@
 title: アセットビューでのレポートの管理
 description: アセットビューの「レポート」セクションのデータにアクセスして、製品と機能の使用状況を評価し、主要な成功指標に関するインサイトを導き出します。
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
-source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
+source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 100%
+source-wordcount: '825'
+ht-degree: 97%
 
 ---
 
@@ -26,13 +26,23 @@ ht-degree: 100%
 
 アセットビューを使用すると、アセットビュー環境のリアルタイムデータをインサイトダッシュボードで表示できます。過去 30 日間または過去 12 か月間のリアルタイムイベント指標を表示できます。
 
-![アセット選択時のツールバーオプション](assets/assets-essentials-live-statistics.png)
+<!--![Toolbar options when you select an asset](assets/assets-essentials-live-statistics.png)-->
 
 左側のナビゲーションパネルにある「**[!UICONTROL インサイト]**」をクリックすると、自動生成された以下のグラフを表示できます。
+
+![インサイト](assets/insights.png)
 
 * **ダウンロード**：過去 30 日間または 12 か月間にアセットビュー環境からダウンロードされたアセットの数が、折れ線グラフで表されます。
 
 * **アップロード**：過去 30 日間または 12 か月間にアセットビュー環境にアップロードされたアセットの数が、折れ線グラフで表されます。
+
+<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
+
+* **ストレージ使用量**：棒グラフで表される Assets ビュー環境のストレージ使用量（バイト単位）。
+
+<!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
+
+<!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **上位の検索**：過去 30 日間または 12 ヶ月間にアセットビュー環境で検索された上位の検索用語と共に検索回数が、表形式で表されます。
 

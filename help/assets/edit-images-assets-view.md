@@ -3,10 +3,10 @@ title: 画像の編集
 description: ' [!DNL Adobe Photoshop Express]  を利用したオプションを使用して画像を編集し、更新した画像をバージョンとして保存します。'
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 98%
+source-wordcount: '1159'
+ht-degree: 76%
 
 ---
 
@@ -79,6 +79,36 @@ Adobe Express を使用すると、JPEG 画像を PNG 形式にすばやく変�
 * サポートされる画像解像度：最小 - 50 ピクセル、最大 - サイズあたり 6000 ピクセル
 
 * サポートされる最大ファイルサイズ：17 MB
+
+## 埋め込み画像エディターを使用したAdobe Expressの編集 {#edit-using-embedded-editor}
+
+[!DNL Assets view] では、アセットリポジトリーから直接画像を包括的に編集できます。 組み込みエディターを使用すると、画像を簡単かつ直感的に編集できます。 [!DNL Adobe Express]. テンプレートを使用したり、既存のアセットを変更したりして、アセットの再利用性を高めます。 事前定義済みの要素を使用して、アセットを見栄えの良いものにしたり、数回のクリックで画像を編集するクイックアクションを実行したりできます。
+
+を使用して画像を編集するには [!DNL Adobe Express] 埋め込みエディターの場合は、次の手順に従います。
+
+1. 次の場所から画像を選択： [!DNL Experience Manager] Assets リポジトリ。
+1. クリック **[!UICONTROL 「開く」Adobe Express]**. [!DNL Adobe Express] 画面が表示されます。
+
+   ![Adobe Express埋め込みエディター](assets/embedded-editor.png)
+
+   次の機能を活用できます： [!DNL Adobe Express] 画像編集関連のすべてのアクション ( 例： [画像のサイズ変更](https://helpx.adobe.com/in/express/using/resize-image.html), [背景色を削除または変更する](https://helpx.adobe.com/in/express/using/remove-background.html), [切り抜き画像](https://helpx.adobe.com/in/express/using/crop-image.html)など。
+
+1. 画像の編集が完了したら、アセットを新しいアセットとしてダウンロードしたり、アセットを新しいバージョンとして保存したりできます。
+
+## 「 」Adobe Expressを使用して新しいアセットを作成 {#create-new-embedded-editor}
+
+[!DNL Assets view] を使用して新しいテンプレートを最初から作成する機能を提供します。 [!DNL Adobe Express] 埋め込みエディター。 を使用して新しいアセットを作成するには [!DNL Adobe Expresss]、次の手順を実行します。
+
+1. に移動します。 **[!UICONTROL マイワークスペース]** をクリックします。 **[!UICONTROL 作成]**. [!DNL Adobe Express] 空白のキャンバスが [!DNL Assets view] ユーザーインターフェイス。
+1. 次を使用してコンテンツを作成： [テンプレート](https://helpx.adobe.com/in/express/using/work-with-templates.html). それ以外の場合は、に移動します。 **[!UICONTROL お使いのもの]** 既存のコンテンツを変更する場合。
+1. 編集が完了したら、「 **[!UICONTROL 新しいアセットとして保存]**.
+1. 作成したアセットの宛先パスを指定します。
+
+>[!NOTE]
+>
+>* 変更できるのは、 `JPEG` および `PNG` 形式。
+>* アセットのサイズは 14 MB 未満にする必要があります。
+>* 画像は、 `PDF`, `JPEG`または `PNG` 形式。
 
 ## [!DNL Adobe Photoshop Express] を使用した画像の編集 {#edit-using-photoshop-express}
 

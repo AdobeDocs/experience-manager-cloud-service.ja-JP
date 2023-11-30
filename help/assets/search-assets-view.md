@@ -3,10 +3,10 @@ title: ' [!DNL Assets view] でのアセットの検索と検出の方法を学�
 description: 詳しくは、AEM Assets ビューでアセットを検索および検出する方法を参照してください。この強力な検索機能を使用すると、適切なアセットをすばやく発見できるので、コンテンツベロシティ（コンテンツ創出の速度）の向上に役立ちます。
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 224529293f87b772c150dd26ce5260a9172c8b68
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 96%
+source-wordcount: '1321'
+ht-degree: 78%
 
 ---
 
@@ -141,6 +141,67 @@ What about temporarily hiding an asset (suspending search on it) from the search
 
 When userA is searching and userB add an asset that matches search results, will the asset display in search as soon as userA refreshes the page? Assuming indexing is near real-time. May not be so for bulk uploads.
 -->
+
+## 検索結果の操作 {#work-with-search-results}
+
+検索結果に表示するアセットを選択し、次の操作を実行できます。
+
+* **詳細**：アセットのプロパティを表示および編集します。
+
+* **コレクションに追加**：選択したアセットをコレクションに追加します。
+
+* **ダウンロード**：アセットをダウンロードします。
+
+* **削除**：アセットを削除します。
+
+* **コピー**：別のフォルダーの場所にアセットをコピーします。
+
+* **移動**：アセットを別のフォルダーの場所に移動します。
+
+* **名前を変更**：アセットの名前を変更します。
+
+* **タスクを割り当て**：アセットのユーザーにタスクを割り当てます。
+
+* **リンクを共有**：他のユーザーとアセットの[リンクを共有](share-links-for-assets-view.md)して、アセットにアクセスしてダウンロードできるようにします。
+
+* **監視**：アセットに対して実行される[操作を監視](manage-notifications-assets-view.md)します。
+
+* **ファイルの場所を表示**：アセットフォルダーの場所に移動します。
+
+* **クイックアクセスにピン留め**：[アセットをピン留め](my-workspace-assets-view.md)すると、後で必要になった際に、すばやくアクセスできるようになります。ピン留めしたすべての項目は、マイワークスペースの「**クイックアクセス**」セクションに表示されます。
+
+## 最初のホームページを検索する設定 {#configuring-search-first-homepage}
+
+最初のホームページを検索すると、様々なファイルやフォルダーをすぐに検索できます。 これにより、正確なキーワードを知らずに、アセットタイプ、メタデータ、スマートタグ、コンテンツ自体を簡単にナビゲートできます。 [!DNL Assets view] にログオンする際に何を表示するかを制御することで、ホームページを設定できます。 [!DNL Assets view].
+
+検索用の最初のホームページを設定するには、次の手順を実行します。
+
+1. に移動します。 **[!UICONTROL 設定]** > **[!UICONTROL 一般設定]**.
+1. 選択 **[!UICONTROL 最初に検索]**. さらに、検索に関連する最初の設定が開きます。 次の設定が可能です。 [整列](#setting-alignment-search-bar) または [背景とロゴの画像を設定](#setting-background-image-and-logo) 」をクリックします。
+
+### 検索バーの配置を設定しています {#setting-alignment-search-bar}
+
+[!DNL Assets view] 検索バーの配置を変更できます。 検索バーは中央または上部に表示できます。 適切な位置揃えを選択し、 **[!UICONTROL 保存]**.
+
+![最初のホームページの配置を検索](assets/search-first-alignment.png)
+
+### ホームページの背景とロゴイメージを設定しています {#setting-background-image-and-logo}
+
+検索最初のホームページにブランドのロゴと背景画像を追加できます。 以下の手順を実行します。
+
+1. に移動します。 **[!UICONTROL 背景とロゴの画像]** の下のセクション **[!UICONTROL ホームページ]**.
+1. クリック **[!UICONTROL 置換]** 既存のアセットリポジトリーから画像を参照する場合。
+1. 「**[!UICONTROL 保存]**」をクリックします。[プレビュー](#preview-configured-homepage) 変更内容に対する変更が反映されます。
+
+### 設定済みのホームページをプレビュー {#preview-configured-homepage}
+
+プレビューを使用して、検索最初のホームページのレイアウトや書式を確認できます。 使用 **[!UICONTROL プレビュー]**&#x200B;を使用すると、レイアウトを修正したり、必要に応じて変更したりできます。 設定済みのホームページをプレビューするには、次の手順を実行します。
+
+1. クリック **[!UICONTROL 一般設定]** を選択し、 **[!UICONTROL 最初に検索]**.
+1. に移動します。 **[!UICONTROL 最初のホームページで検索をカスタマイズ]** をクリックします。 **[!UICONTROL プレビュー]**. 切り替え **[!UICONTROL ダークテーマ]** ボタンをクリックして、ホームページを暗いテーマまたは明るいテーマでプレビューします。
+1. クリック **[!UICONTROL 閉じる]** をクリックして、プレビュー画面を閉じます。
+
+   ![最初のホームページのプレビューを検索](assets/search-first-preview.gif)
 
 ## 次の手順 {#next-steps}
 
