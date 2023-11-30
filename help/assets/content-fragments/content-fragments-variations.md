@@ -2,10 +2,10 @@
 title: バリエーション - フラグメントコンテンツのオーサリング（アセット - コンテンツフラグメント）
 description: フラグメントのコンテンツを作成し、目的に応じてそのコンテンツのバリエーションを作成できるようにすることで、バリエーションによって AEM でのヘッドレスコンテンツの柔軟性をさらに高める方法を説明します。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2530'
-ht-degree: 99%
+source-wordcount: '2546'
+ht-degree: 98%
 
 ---
 
@@ -76,6 +76,10 @@ ht-degree: 99%
   >**タグ**&#x200B;は、[メタデータ](/help/assets/content-fragments/content-fragments-metadata.md)の一部として（**マスター**&#x200B;バリエーションに）追加することもできます
 
 * [マスター](#managing-variations)コンテンツの&#x200B;**バリエーションの作成および管理.**
+
+>[!NOTE]
+>
+>基になるモデルの定義に応じて、フィールドは特定のタイプの [検証](/help/assets/content-fragments/content-fragments-models.md#validation).
 
 ### 全画面表示エディター {#full-screen-editor}
 
@@ -153,7 +157,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->詳しくは、[&#128279;](/help/assets/content-fragments/content-fragments-markdown.md)マークダウンのドキュメントを参照してください。
+>詳しくは、](/help/assets/content-fragments/content-fragments-markdown.md)マークダウン[のドキュメントを参照してください。
 
 これにより、Markdown を使用してテキストの形式を設定できます。以下を定義できます。
 
@@ -238,14 +242,14 @@ ht-degree: 99%
 
 >[!CAUTION]
 >
->英語版は標準で提供されています。
+英語版は標準で提供されています。
 >
->他の言語版は、ソフトウェア配布から言語モデルパッケージとして使用できます。
+他の言語版は、ソフトウェア配布から言語モデルパッケージとして使用できます。
 >
->* [フランス語（fr）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=ja?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [ドイツ語（de）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=ja?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [イタリア語（it）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=ja?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [スペイン語（es）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=ja?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+* [フランス語（fr）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=ja?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+* [ドイツ語（de）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=ja?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+* [イタリア語（it）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=ja?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+* [スペイン語（es）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=ja?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 1. 「**プライマリ**」または必要なバリエーションを選択します。
@@ -314,7 +318,7 @@ ht-degree: 99%
 
   >[!NOTE]
   >
-  >1 つのテキストに複数の注釈が適用されている場合は、ドロップダウンセレクターが表示されます。
+  1 つのテキストに複数の注釈が適用されている場合は、ドロップダウンセレクターが表示されます。
 
 * 注釈が適用されたテキスト全体を削除すると、注釈も削除されます。
 
@@ -332,13 +336,13 @@ ht-degree: 99%
 
 >[!CAUTION]
 >
->参照ページではこれらのアセットの移動や削除はできません。移動や削除にはフラグメントエディターを使用する必要があります。
+参照ページではこれらのアセットの移動や削除はできません。移動や削除にはフラグメントエディターを使用する必要があります。
 >
->ただし、アセットの書式設定（サイズなど）は、[ページエディター](/help/sites-cloud/authoring/fundamentals/content-fragments.md)で行う必要があります。フラグメントエディターでのアセットの表示は、純粋にコンテンツフローのオーサリング用です。
+ただし、アセットの書式設定（サイズなど）は、[ページエディター](/help/sites-cloud/authoring/fundamentals/content-fragments.md)で行う必要があります。フラグメントエディターでのアセットの表示は、純粋にコンテンツフローのオーサリング用です。
 
 >[!NOTE]
 >
->[画像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)は様々な方法でフラグメントやページに追加できます。
+[画像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)は様々な方法でフラグメントやページに追加できます。
 
 1. 画像を追加したい位置にカーソルを置きます。
 1. **アセットを挿入** アイコンを使用して、検索ダイアログを開きます。
@@ -353,10 +357,10 @@ ht-degree: 99%
 
    >[!CAUTION]
    >
-   >アセットを追加した後に形式を次のように変更した場合：
+   アセットを追加した後に形式を次のように変更した場合：
    >
-   >* **プレーンテキスト**：アセットはフラグメントから完全に失われます。
-   >* **マークダウン**：アセットは表示されなくなりますが、**リッチテキスト**&#x200B;に戻すとアセットがまた表示されます。
+   * **プレーンテキスト**：アセットはフラグメントから完全に失われます。
+   * **マークダウン**：アセットは表示されなくなりますが、**リッチテキスト**&#x200B;に戻すとアセットがまた表示されます。
 
 ### コンテンツフラグメントをフラグメントに挿入 {#inserting-content-fragment-into-your-fragment}
 
@@ -366,17 +370,17 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->このオプションは、「**複数行テキスト**」が「**フラグメント参照を許可**」に設定されている場合に使用できます。
+このオプションは、「**複数行テキスト**」が「**フラグメント参照を許可**」に設定されている場合に使用できます。
 
 >[!CAUTION]
 >
->参照ページではこれらのアセットの移動や削除はできません。移動や削除にはフラグメントエディターを使用する必要があります。
+参照ページではこれらのアセットの移動や削除はできません。移動や削除にはフラグメントエディターを使用する必要があります。
 >
->ただし、アセットの書式設定（サイズなど）は、[ページエディター](/help/sites-cloud/authoring/fundamentals/content-fragments.md)で行う必要があります。フラグメントエディターでのアセットの表示は、純粋にコンテンツフローのオーサリング用です。
+ただし、アセットの書式設定（サイズなど）は、[ページエディター](/help/sites-cloud/authoring/fundamentals/content-fragments.md)で行う必要があります。フラグメントエディターでのアセットの表示は、純粋にコンテンツフローのオーサリング用です。
 
 >[!NOTE]
 >
->[画像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)は様々な方法でフラグメントやページに追加できます。
+[画像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)は様々な方法でフラグメントやページに追加できます。
 
 1. フラグメントを追加したい位置にカーソルを置きます。
 1. **コンテンツフラグメントを挿入** アイコンを使用して、検索ダイアログを開きます。
@@ -391,10 +395,10 @@ ht-degree: 99%
 
    >[!CAUTION]
    >
-   >別のフラグメントへの参照を追加した後に、形式を変更すると次のようになります。
+   別のフラグメントへの参照を追加した後に、形式を変更すると次のようになります。
    >
-   >* **プレーンテキスト**：参照はフラグメントから完全に失われます。
-   >* **Markdown**：参照は残ります。
+   * **プレーンテキスト**：参照はフラグメントから完全に失われます。
+   * **Markdown**：参照は残ります。
 
 ## 継承 {#inheritance}
 
@@ -436,11 +440,11 @@ ht-degree: 99%
 
    >[!NOTE]
    >
-   >新しいバリエーションを作成すると、常に&#x200B;**プライマリ**&#x200B;がコピーされます（現在開いているバリエーションではありません）。
+   新しいバリエーションを作成すると、常に&#x200B;**プライマリ**&#x200B;がコピーされます（現在開いているバリエーションではありません）。
 
    >[!NOTE]
    >
-   >新しいバリエーションを作成すると、**マスター**&#x200B;バリエーションに現在割り当てられているすべての&#x200B;**タグ**&#x200B;が新しいバリエーションにコピーされます。
+   新しいバリエーションを作成すると、**マスター**&#x200B;バリエーションに現在割り当てられているすべての&#x200B;**タグ**&#x200B;が新しいバリエーションにコピーされます。
 
 ### バリエーションの編集 {#editing-a-variation}
 
@@ -463,7 +467,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->この手順はバリエーションの&#x200B;**タイトル**&#x200B;にのみ影響を与えます。
+この手順はバリエーションの&#x200B;**タイトル**&#x200B;にのみ影響を与えます。
 
 ### バリエーションの削除 {#deleting-a-variation}
 
@@ -475,7 +479,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->**プライマリ**&#x200B;は削除できません。
+**プライマリ**&#x200B;は削除できません。
 
 ### プライマリとの同期 {#synchronizing-with-master}
 
@@ -485,13 +489,13 @@ ht-degree: 99%
 
 >[!CAUTION]
 >
->同期を使用できるのは、変更内容&#x200B;*を&#x200B;**プライマリ**からバリエーションに*&#x200B;コピーする場合のみです。
+同期を使用できるのは、変更内容&#x200B;*を&#x200B;**プライマリ**からバリエーションに*&#x200B;コピーする場合のみです。
 >
->バリエーションの現在の要素のみが同期されます。
+バリエーションの現在の要素のみが同期されます。
 >
->同期は、**複数行テキスト**&#x200B;データタイプに対してのみ機能します。
+同期は、**複数行テキスト**&#x200B;データタイプに対してのみ機能します。
 >
->*バリエーションから&#x200B;**プライマリ***へ変更内容を転送することはできません。
+*バリエーションから&#x200B;**プライマリ***へ変更内容を転送することはできません。
 
 1. フラグメントエディターでコンテンツフラグメントを開きます。**プライマリ**&#x200B;が編集されていることを確認します。
 

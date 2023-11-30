@@ -2,14 +2,15 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0 リリースのリリースノート。'
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '1442'
-ht-degree: 32%
+source-wordcount: '1441'
+ht-degree: 36%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート {#release-notes}
+
+# [!DNL Adobe Experience Manager] as a Cloud Service の 2023.9.0 リリースノート {#release-notes}
 
 以下のセクションでは、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンの機能リリースノートの概要について説明します。
 
@@ -81,7 +82,7 @@ ht-degree: 32%
 
   ![アダプティブフォームのユーザーエンゲージメントの Adobe Analytics レポート](/help/forms/assets/forms-analytics-report.png)
 
-* **[コアコンポーネントに基づくアダプティブFormsのフォームフラグメント](/help/forms/adaptive-form-fragments-core-components.md)**：フォームフラグメントを使用してフォーム構築のエクスペリエンスを向上させるため、複製を避け、デジタルインベントリを最適化し、コラボレーションを強化します。 これらの再利用可能なコンポーネントは複数のフォームにシームレスに統合され、一貫性のあるプロフェッショナルな外観のフォームの作成を合理化します。 フォームフラグメントは、「一度変更してすべてに反映」機能を通じて、再利用性、標準化、ブランドの一貫性を確保します。 1 か所でおこなわれた更新が、これらのフラグメントを利用するすべてのフォームに自動的に反映されるので、メンテナンス性と効率性が向上します。
+* **[コアコンポーネントに基づくアダプティブFormsのフォームフラグメント](/help/forms/adaptive-form-fragments-core-components.md)**：フォームフラグメントを使用してフォーム構築のエクスペリエンスを向上させるため、複製を避け、デジタルインベントリを最適化し、コラボレーションを強化します。 これらの再利用可能なコンポーネントは複数のフォームにシームレスに統合され、一貫性のあるプロフェッショナルな外観のフォームの作成を合理化します。 フォームフラグメントは、「一度変更すればすべてに反映」機能を通じて、再利用性、標準化、ブランドの一貫性を確保します。1 か所で行われた更新が、これらのフラグメントを利用するすべてのフォームに自動反映されるので、メンテナンス性と効率性が向上します。
 
 * **[Adobe Sign Workflow ステップの強化](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: Adobe Sign Workflow ステップが拡張され、以下が含まれるようになりました。
    * **Adobe Signの政府機関 ID ベースの認証**:Adobe Acrobat Signの政府 ID ベースの認証では、政府発行の ID（運転免許証、国民 ID、パスポート）を使用してユーザーが ID を認証できるようにすることで、さらに検証レイヤーを提供しています。 この機能強化により、信頼できる ID ドキュメントを使用することで、署名プロセスの信頼性がさらに高まり、高度なセキュリティ、コンプライアンスおよびユーザー検証を必要とするシナリオに最適になります。
@@ -98,7 +99,7 @@ ht-degree: 32%
 
 ### アーリーアダプタープログラム {#forms-early-adopter}
 
-* **[DocAssurance API（通信 API の一部）を使用してドキュメントをProtect](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**:DocAssurance API を使用すると、ドキュメントに署名し、暗号化することで、機密情報を保護できます。 暗号化を通じて、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセス権を取得できるようになります。 この防護の強化された層は、不正な目から貴重なデータを守るだけでなく、心の安らぎも提供します。 署名 API を使用すると、組織が配信および受信するAdobe PDFドキュメントのセキュリティとプライバシーを保護できます。 このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
+* **[DocAssurance API（通信 API の一部）を使用してドキュメントをProtect](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**:DocAssurance API を使用すると、ドキュメントに署名し、暗号化することで、機密情報を保護できます。 暗号化を通じて、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセス権を取得できるようになります。 この防護の強化された層は、不正な目から貴重なデータを守るだけでなく、心の安らぎも提供します。 Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
 
   次に書き込むことができます： `aem-forms-early-adopter-program@adobe.com` アーリーアダプタープログラムに参加し、機能へのアクセスをリクエストするために、公式の電子メール id から。
 

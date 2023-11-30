@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 700d07e941dafd8dadd8f7abbfc10b92cb7e8144
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '4390'
+source-wordcount: '4393'
 ht-degree: 93%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 93%
    + AEMaaCS 機能のリリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2023年度 {#2023}
+         + [2023.10.0 のリリースノート](/help/release-notes/release-notes-cloud/2023/release-notes-2023-10-0.md)
          + [リリースノート（2023.9.0）](/help/release-notes/release-notes-cloud/2023/release-notes-2023-9-0.md)
          + [2023.8.0 のリリースノート](/help/release-notes/release-notes-cloud/2023/release-notes-2023-8-0.md)
          + [リリースノート（2023.7.0）](/help/release-notes/release-notes-cloud/2023/release-notes-2023-7-0.md)
@@ -215,7 +216,7 @@ ht-degree: 93%
    + [運用開始後](/help/journey-migration/post-go-live.md)
    + [Experience Manager as a Cloud Service への移行ガイド（パートナー向け）](/help/journey-migration/getting-started-partners.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
-      + Cloud Acceleration Manager の概要{#introduction-cam}
+      + Cloud Acceleration Manager{#introduction-cam} の概要
          + [概要](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
          + [メリット](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)
       + Cloud Acceleration Manager の使用 {#using-cam}
@@ -572,7 +573,7 @@ ht-degree: 93%
       + [as a Cloud Service の移行元 [!DNL AEM 6.5 Forms] または以前のバージョン [!DNL AEM Forms] ](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [グループと権限](/help/forms/forms-groups-privileges-tasks.md)
       + [アダプティブフォーム、PDF フォームおよびその他のアセットの読み込み、書き出し、整理](/help/forms/import-export-forms-templates.md)
-   +  の統合{#integrate}
+   + {#integrate} の統合
       + サービス {#services}
          + [AEM Forms as a Cloud Service と Adobe Sign の統合](/help/forms/adobe-sign-integration-adaptive-forms.md)
          + [AEM Forms as a Cloud Service と DocuSign の統合](/help/forms/integrate-docusign-adaptive-forms.md)
@@ -707,7 +708,7 @@ ht-degree: 93%
    + コア製品機能の使用 {#core-product-features}
       + [ビデオのサムネールサポート](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
       + [Screens 通知サービス](/help/screens-cloud/using-core-product-features/screens-notification-service.md)
-   + Screens as a Cloud Serviceでの開発 {#developing-screens-cloud}
+   + Screens as a Cloud Service {#developing-screens-cloud}での開発
       + [REST API](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
       + [コンポーネントの作成](/help/screens-cloud/developing/creating-components.md)
       + [Screens as a Cloud Service 用カスタムコンポーネントの開発](/help/screens-cloud/developing/developing-custom-components-tutorial.md)

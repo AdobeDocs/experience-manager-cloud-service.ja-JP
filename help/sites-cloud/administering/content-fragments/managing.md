@@ -4,10 +4,10 @@ description: コンソールやエディターから、ヘッドレスコンテ�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 50%
+source-wordcount: '2622'
+ht-degree: 48%
 
 ---
 
@@ -143,10 +143,7 @@ ht-degree: 50%
 * **[移動](/help/assets/manage-digital-assets.md)**
 * **[名前を変更](/help/assets/manage-digital-assets.md)**
 * **[削除](#deleting-a-fragment)**
-
-<!--
 * **[Replace](#find-and-replace)**
--->
 
 >[!NOTE]
 >
@@ -370,13 +367,22 @@ ht-degree: 50%
 >
 >フラグメントが既に別のフラグメントから参照されている場合、またはページから参照されている場合は、警告メッセージが表示され、続行を確認する必要があります。
 
-<!--
-## Find and Replace {#find-and-replace}
+## 検索と置換 {#find-and-replace}
 
-The **Replace** option is available to find, and replace, specified text in your selected Content Fragment:
+The **置換** アクションを使用して、選択したコンテンツフラグメント内の指定したテキストを検索し、置き換えることができます（上部のツールバーにある）。
 
-![Unpublish dialog](assets/cf-managing-find-replace.png)
--->
+![検索と置換](assets/cf-managing-find-replace.png)
+
+置き換え前に、検証条件がチェックされ、競合が発生した場合は通知され、置き換え文字列を変更したり、検証済みのインスタンスを置き換えたりできます。
+
+>[!NOTE]
+>
+>検索と置換の操作は、選択したコンテンツフラグメントの数が最大 20 個（一度に 1 回）に制限されます。
+>
+>20 を超えるコンテンツフラグメントを選択した場合は、メッセージが表示されます **検索と置換ができません**.
+
+![置換を確認](assets/cf-managing-confirm-replace.png)
+
 
 ## フラグメントの削除 {#deleting-a-fragment}
 
