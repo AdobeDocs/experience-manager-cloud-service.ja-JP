@@ -7,9 +7,9 @@ topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
-source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
+source-git-commit: 1d0f8bfd955c9315b01e49d8b1924add996b1599
 workflow-type: tm+mt
-source-wordcount: '2148'
+source-wordcount: '2146'
 ht-degree: 93%
 
 ---
@@ -172,7 +172,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
-> アダプティブフォーム内で何度もベースでないフォームフラグメントを使用している場合、フラグメントのフィールド間でデータの同期が行われます。 1 つの [フォームフラグメント（コアコンポーネントに基づく）](/help/forms/adaptive-form-fragments-core-components.md) データの同期に関する問題が発生することなく、フォーム内で複数回繰り返し実行される、どのフォームデータモデルにも結び付けられていないデータを削除できます。
+> アダプティブフォーム内で何度もベースでないフォームフラグメントを使用している場合、フラグメントのフィールド間でデータの同期が行われます。 次の項目を使用できます。 [コアコンポーネントベースのフォームフラグメント](/help/forms/adaptive-form-fragments-core-components.md) データの同期に関する問題が発生することなく、フォーム内で複数回繰り返し実行される、どのフォームデータモデルにも結び付けられていないデータを削除できます。
 
 ## データ連結のためのフラグメントの自動マッピング {#auto-mapping-of-fragments-for-data-binding}
 
