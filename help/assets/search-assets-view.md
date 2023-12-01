@@ -3,9 +3,9 @@ title: ' [!DNL Assets view] でのアセットの検索と検出の方法を学�
 description: 詳しくは、AEM Assets ビューでアセットを検索および検出する方法を参照してください。この強力な検索機能を使用すると、適切なアセットをすばやく発見できるので、コンテンツベロシティ（コンテンツ創出の速度）の向上に役立ちます。
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 224529293f87b772c150dd26ce5260a9172c8b68
+source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1314'
 ht-degree: 78%
 
 ---
@@ -172,7 +172,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 ## 最初のホームページを検索する設定 {#configuring-search-first-homepage}
 
-最初のホームページを検索すると、様々なファイルやフォルダーをすぐに検索できます。 これにより、正確なキーワードを知らずに、アセットタイプ、メタデータ、スマートタグ、コンテンツ自体を簡単にナビゲートできます。 [!DNL Assets view] にログオンする際に何を表示するかを制御することで、ホームページを設定できます。 [!DNL Assets view].
+Experience Manager Assetsを使用すると、組織のデフォルトのランディングページを選択できます。 「最初に検索」をホームページとして使用する場合、ブランドに合わせて背景画像とロゴ画像を設定し、ページのブランディングをカスタマイズするオプションもあります。
 
 検索用の最初のホームページを設定するには、次の手順を実行します。
 
@@ -191,7 +191,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 1. に移動します。 **[!UICONTROL 背景とロゴの画像]** の下のセクション **[!UICONTROL ホームページ]**.
 1. クリック **[!UICONTROL 置換]** 既存のアセットリポジトリーから画像を参照する場合。
-1. 「**[!UICONTROL 保存]**」をクリックします。[プレビュー](#preview-configured-homepage) 変更内容に対する変更が反映されます。
+1. 「**[!UICONTROL 保存]**」をクリックします。[プレビュー](#preview-configured-homepage) 変更をレビューします。
 
 ### 設定済みのホームページをプレビュー {#preview-configured-homepage}
 
