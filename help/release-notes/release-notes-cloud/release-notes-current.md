@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 0290e40094147a1c85eacf157904c7ef7388c5e7
+source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1297'
 ht-degree: 16%
 
 ---
@@ -146,6 +146,6 @@ Cloud Manager の月次リリースの完全なリストは、[こちら](/help/
 
 ## 既知の問題 {#known-issues}
 
-* コアコンポーネントに基づいてアダプティブFormsを送信できない。 この問題は、コアコンポーネントバージョン 2.0.38 ～ 2.0.60 を使用して構築されたアダプティブFormsで発生します。
+* コアコンポーネントに基づいたアダプティブFormsを送信できない。 この問題は、コアコンポーネントバージョン 2.0.38 ～ 2.0.60 を使用して構築されたアダプティブFormsで発生します。
 
   問題を解決する。 アダプティブフォームのコアコンポーネントバージョン 2.0.62 以降に移行できます。 お使いの環境用にアダプティブFormsコアコンポーネントのバージョンを設定するには、次の手順を実行します。 [core.forms.components.version、core.forms.components.af.version および core.wcm.components.version コンポーネントのバージョンを設定します。](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) Formsas a Cloud ServiceリポジトリまたはAEMアーキタイプベースのプロジェクトとの依存関係 [Formsas a Cloud Service環境に変更をデプロイする](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). アダプティブFormsコアコンポーネントの依存関係の最新バージョンは、次の場所にあります。 [アダプティブFormsコアコンポーネント Git リポジトリ](https://github.com/adobe/aem-core-forms-components#system-requirements).
