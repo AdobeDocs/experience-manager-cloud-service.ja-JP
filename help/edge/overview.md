@@ -3,10 +3,10 @@ title: Edge Delivery の概要
 description: Edge Delivery の概要。
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 185a192b0d40e25cdb09fd8a1f222d9d9b1bd631
+source-git-commit: c3c1a2c89031b6a7a44ac8d16ecb2e64f37490a8
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 72%
+source-wordcount: '823'
+ht-degree: 71%
 
 ---
 
@@ -50,7 +50,7 @@ Edge Delivery Servicesの使用を簡単に開始できます。 [はじめに -
 
 ## アドビからのヘルプの入手 {#adobe-gethelp}
 
-プロビジョニングされた製品コラボレーションチャネル（アクセスについて詳しくは以下を参照）を介してアドビ製品チームと連携し、製品の使用方法やベストプラクティスに関する質問に回答できます。製品コラボレーションチャネルを介した会話に関連付けられたサービスレベル用語 (SLT) はありません。 製品の問題が追加の調査とトラブルシューティングを必要とし、応答 SLT を満たす必要がある場合は、次の手順に従ってサポートチケットを送信できます。 [支援プロセス](https://experienceleague.adobe.com/?lang=ja&amp;support-tab=home#support).
+プロビジョニングされた製品コラボレーションチャネル（アクセスについて詳しくは以下を参照）を介してアドビ製品チームと連携し、製品の使用方法やベストプラクティスに関する質問に回答できます。製品コラボレーションチャネルを介した会話に関連付けられたサービスレベルターゲット (SLT) はありません。 製品の問題が追加の調査とトラブルシューティングを必要とし、応答 SLT を満たす必要がある場合は、次の手順に従ってサポートチケットを送信できます。 [支援プロセス](https://experienceleague.adobe.com/?lang=ja&amp;support-tab=home#support).
 
 アドビには、Edge 配信サービスに役立つ 3 つのチャネルが用意されています。
 
