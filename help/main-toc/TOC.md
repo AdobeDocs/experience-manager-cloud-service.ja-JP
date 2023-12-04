@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: ba7976c192e3696b1367a4f9a5bf0c320a5f258e
 workflow-type: tm+mt
-source-wordcount: '4393'
+source-wordcount: '4420'
 ht-degree: 93%
 
 ---
@@ -77,11 +77,11 @@ ht-degree: 93%
    + AEMaaCS メンテナンスリリースノート {#maintenance}
       + [最新のメンテナンスリリースノート](/help/release-notes/maintenance/latest.md)
       + 2023年度 {#2023}
-         + [メンテナンスリリースノート（2023.11.0）](/help/release-notes/maintenance/2023/2023.11.0.md)
-         + [メンテナンスリリースノート（2023.10.0）](/help/release-notes/maintenance/2023/2023.10.0.md)
-         + [メンテナンスリリースノート（2023.9.0）](/help/release-notes/maintenance/2023/2023.9.0.md)
-         + [メンテナンスリリースノート（2023.8.0）](/help/release-notes/maintenance/2023/2023.8.0.md)
-         + [メンテナンスリリースノート（2023.7.0）](/help/release-notes/maintenance/2023/2023.7.0.md)
+         + [メンテナンスリリースノート (2023.11.0)](/help/release-notes/maintenance/2023/2023.11.0.md)
+         + [メンテナンスリリースノート (2023.10.0)](/help/release-notes/maintenance/2023/2023.10.0.md)
+         + [メンテナンスリリースノート (2023.9.0)](/help/release-notes/maintenance/2023/2023.9.0.md)
+         + [メンテナンスリリースノート (2023.8.0)](/help/release-notes/maintenance/2023/2023.8.0.md)
+         + [メンテナンスリリースノート (2023.7.0)](/help/release-notes/maintenance/2023/2023.7.0.md)
          + [メンテナンスリリースノート（2023.6.0）](/help/release-notes/maintenance/2023/2023.6.0.md)
          + [メンテナンスリリースノート（2023.4.0）](/help/release-notes/maintenance/2023/2023.4.0.md)
          + [メンテナンスリリースノート（2023.2.0）](/help/release-notes/maintenance/2023/2023.2.0.md)
@@ -178,7 +178,7 @@ ht-degree: 93%
 + オンボーディング {#onboarding}
    + [ここから開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ja)
    + オンボーディングジャーニー {#journey}
-      + [オンボーディングジャーニー概要](/help/journey-onboarding/overview.md)
+      + [オンボーディングジャーニーの概要](/help/journey-onboarding/overview.md)
       + [オンボーディングの準備](/help/journey-onboarding/preparation.md)
       + [AEM as a Cloud Service の用語](/help/journey-onboarding/terminology.md)
       + [Admin Console](/help/journey-onboarding/admin-console.md)
@@ -385,7 +385,7 @@ ht-degree: 93%
       + [ワークフローの管理](/help/sites-cloud/administering/workflows-administering.md)
    + AEM as a Cloud Service との統合 {#integrations}
       + [Adobe Analytics との統合](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
-      + [Adobe Analytics との統合自動セットアップ](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
+      + [Adobe Analytics Automated Setup との統合](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [Adobe Analytics との統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Adobe Learning Manager との統合](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Adobe Target との統合](/help/sites-cloud/integrating/integrating-adobe-target.md)
@@ -504,7 +504,7 @@ ht-degree: 93%
       + [パノラマ画像](/help/assets/dynamic-media/panoramic-images.md)
       + [混在メディアセット](/help/assets/dynamic-media/mixed-media-sets.md)
       + [スピンセット](/help/assets/dynamic-media/spin-sets.md)
-      + [ビデオ（Dynamic Media 内）](/help/assets/dynamic-media/video.md)
+      + [Dynamic Media のビデオ](/help/assets/dynamic-media/video.md)
       + [カルーセルバナー](/help/assets/dynamic-media/carousel-banners.md)
       + [インタラクティブ画像](/help/assets/dynamic-media/interactive-images.md)
       + [インタラクティブビデオ](/help/assets/dynamic-media/interactive-videos.md)
@@ -552,7 +552,7 @@ ht-degree: 93%
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
    + Adobe Expressとの統合 {#integration-adobe-express}
-      + [Adobe Express 向けの AEM Assets アドオン](/help/assets/addon-adobe-express.md)
+      + [Adobe Express用AEM Assetsアドオン](/help/assets/addon-adobe-express.md)
 
    + Creative Cloudとの統合 {#integration-creative-cloud}
       + [AEM AssetsをCreative Cloudに接続](/help/assets/connect-assets-with-creative-cloud.md)
@@ -585,6 +585,7 @@ ht-degree: 93%
          + [コアコンポーネントに基づくアダプティブフォームを外部 Web ページに埋め込む](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [基盤コンポーネントに基づくアダプティブフォームを外部 Web ページに埋め込む](/help/forms/embed-adaptive-form-external-web-page.md)
       + フォームデータモデル {#use-form-data-model}
+         + [アダプティブフォームをAdobe Workfront Fusion に送信する](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [AEM Formsをデータベースまたはデータソースに接続する](/help/forms/data-integration.md)
          + [データソースの設定](/help/forms/configure-data-sources.md)
          + [ [!DNL Microsoft Dynamics]  OData の設定](/help/forms/ms-dynamics-odata-configuration.md)
@@ -788,7 +789,7 @@ ht-degree: 93%
       + [認証](/help/headless/security/authentication.md)
    + デプロイメント {#deployment}
       + [アーキテクチャ](/help/headless/deployment/architecture.md)
-      + [Dispatcher  — エンドポイント](/help/headless/deployment/dispatcher.md)
+      + [Dispatcher — エンドポイント](/help/headless/deployment/dispatcher.md)
       + [Dispatcher — 永続化されたクエリのキャッシュの有効化](/help/headless/deployment/dispatcher-caching.md)
       + [CORS 設定](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [リファラーフィルター](/help/headless/deployment/referrer-filter.md)
