@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8eb087bdda335b0a33e616eb534615396b220369
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1279'
 ht-degree: 16%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 16%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在の機能リリース (2023.11.0) は 2023 年 11 月 30 日です。 次回の機能リリース (2023.12.0) は、2023 年 12 月 14 日 (PT) に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.11.0）のリリース日は 2023年11月30日です。次回の機能リリース（2023.12.0）は 2023年12月14日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -103,13 +103,13 @@ ht-degree: 16%
 
 ### アーリーアダプタープログラム {#forms-early-adopter}
 
-* **アダプティブフォームをAdobe Workfront Fusion に送信するシナリオ**:Forms as a Cloud Serviceには、アダプティブフォームをAdobe Workfrontに簡単に接続するための既製のオプションが用意されています。 これにより、アダプティブフォームをAdobe Workfrontシナリオに送信するプロセスが簡単になり、アダプティブフォームの送信時にWorkfront Fusion シナリオをトリガーできます。
+* **[アダプティブフォームをAdobe Workfront Fusion に送信するシナリオ](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**:Forms as a Cloud Serviceには、アダプティブフォームをAdobe Workfrontに簡単に接続するための既製のオプションが用意されています。 これにより、アダプティブフォームをAdobe Workfrontシナリオに送信するプロセスが簡単になり、アダプティブフォームの送信時にWorkfront Fusion シナリオをトリガーできます。
 
 * **[右から左への言語のサポート](/help/forms/supporting-new-language-localization-core-components.md)**：コアコンポーネントに基づいて構築されたアダプティブFormsは、アラビア語、ペルシャ語、ウルドゥー語などの右から左 (RTL) 言語で表示できるようになりました。 RTL 言語は世界で 20 億人以上の人々が話しています RTL 言語のフォームを使用すると、アダプティブフォームのリーチを拡大して、これらの多様なオーディエンスに対応し、RTL 市場をタップできます。 地域によっては、現地の言語でフォームを提供することが法的義務でもあります。 現地の言語に対応することで、より広いオーディエンスへの扉を開くだけでなく、関連する法令への準拠も確保できます。
 
   ![右から左への言語サポート](/help/forms/assets/right-to-left-language-support.png)
 
-* **[DocAssurance API（通信 API の一部）を使用してドキュメントをProtect](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**:DocAssurance API を使用すると、ドキュメントに署名し、暗号化することで、機密情報を保護できます。 暗号化を通じて、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセス権を取得できるようになります。 この防護の強化された層は、不正な目から貴重なデータを守るだけでなく、心の安らぎも提供します。 Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
+* **[DocAssurance API（通信 API の一部）を使用してドキュメントをProtect](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**:DocAssurance API を使用すると、ドキュメントに署名し、暗号化することで、機密情報を保護できます。 暗号化を通じて、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセス権を取得できるようになります。 この防護の強化された層は、不正な目から貴重なデータを守るだけでなく、心の安らぎも提供します。 Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、電子署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
 
   次に書き込むことができます： `aem-forms-early-adopter-program@adobe.com` アーリーアダプタープログラムに参加し、機能へのアクセスをリクエストするために、公式の電子メール id から。
 

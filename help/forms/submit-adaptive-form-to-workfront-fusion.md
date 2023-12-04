@@ -3,15 +3,17 @@ title: Adobe Workfront Fusion とAEM Forms Submission の統合
 description: Adobe Workfront Fusion を使用すると、繰り返しのタスクに重点を置くのではなく、新しいタスクに重点を置くことができます。 フォーム送信を使用して、Adobe Workfront Fusion をアダプティブフォームに接続することができます。
 keywords: Adobe Workfront Fusion、Adobe Workfront Fusion とAEM Forms Submission の統合、Adobe Workfront Fusion とAEM Forms、Workfront Fusion とAEM Forms、Workfront Fusion とAEM Forms、AEM FormsとWorkfront Fusion の接続、WorkfrontとAEM Forms Fusion とWorkfrontの接続方法、 Fusion と Fusion をフォームに接続する
 topic-tags: author, developer
-source-git-commit: b1a5c321d7b765a53c1c38fff9888eb22172edae
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1242'
 ht-degree: 4%
 
 ---
 
 
 # アダプティブフォームをAdobe Workfront Fusion に送信する
+
+<span class="preview"> この機能は、アーリーアダプタープログラムで利用できます。 アーリーアダプタープログラムに参加し、機能へのアクセス権をリクエストするには、公式のメール ID からaem-forms-early-adopter-program@adobe.comに書き込むことができます。 </span>
 
 [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) ドキュメント承認ワークフロー、E メールのフィルタリングや並べ替えなど、同じタスクを繰り返すプロセスを自動化し、繰り返しタスクではなく新しいタスクに焦点を当てることができます。 Adobe Workfront Fusion には、複数のシナリオが含まれています。 シナリオは、アプリケーションと Web サービス間のデータ転送を実行する一連のモジュールで構成されます。 シナリオでは、様々な手順（モジュール）を追加してタスクを自動化します。
 

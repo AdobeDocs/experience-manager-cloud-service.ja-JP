@@ -3,10 +3,10 @@ title: アダプティブフォームの送信アクションの設定方法
 description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自の送信アクションを作成できます
 keywords: アダプティブフォームの送信アクションの選択、アダプティブフォームの sharepoint リストへの接続、アダプティブフォームの sharepoint ドキュメントライブラリへの接続、アダプティブフォームのフォームデータモデルへの接続の方法
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 6ebc40b501472025cafffa258e253a53139a0301
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '4063'
-ht-degree: 91%
+source-wordcount: '4006'
+ht-degree: 90%
 
 ---
 
@@ -105,7 +105,7 @@ ht-degree: 91%
 
 ## SharePoint に送信 {#submit-to-sharedrive}
 
-「**[!UICONTROL SharePoint に送信]**」送信アクションは、アダプティブフォームと Microsoft® SharePoint ストレージを接続します。フォームデータファイル、添付ファイル、またはレコードのドキュメントを、接続された Microsoft Sharepoint ストレージに送信できます。
+「**[!UICONTROL SharePoint に送信]**」送信アクションは、アダプティブフォームと Microsoft® SharePoint ストレージを接続します。接続されたMicrosoft® Sharepoint ストレージに、フォームデータファイル、添付ファイル、またはレコードのドキュメントを送信できます。
 
 「SharePointに送信」を使用して、次の操作を実行できます。
 * [アダプティブフォームのSharePointドキュメントライブラリへの接続](#connect-af-sharepoint-doc-library)
@@ -205,7 +205,7 @@ AEM FormsをMicrosoft® Sharepoint リストに接続するには：
 
 作成したSharePointリスト設定をアダプティブフォーム内で使用して、データや生成後のレコードのドキュメントをSharePointリストに保存することができます。 アダプティブフォームでSharePointリストを使用するには、以下の手順を実行します。
 
-1. [Microsoft® SharePointリスト設定を使用したフォームデータモデルの作成](/help/forms/create-form-data-models.md)
+1. [Microsoftを使用してフォームデータモデルを作成する](/help/forms/create-form-data-models.md)
 1. [データを取得して送信するためのフォームデータモデルの設定](/help/forms/work-with-form-data-model.md#configure-services)
 1. [アダプティブフォームを作成](/help/forms/creating-adaptive-form-core-components.md)
 1. [フォームデータモデルを使用した送信アクションの設定](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
@@ -215,10 +215,10 @@ AEM FormsをMicrosoft® Sharepoint リストに接続するには：
 >[!NOTE]
 >
 > Microsoft® SharePointリストでは、次の列タイプはサポートされていません。
-> * 画像列
-> * メタデータ列
-> * ユーザー列
-> * 外部データ列
+* 画像列
+* メタデータ列
+* ユーザー列
+* 外部データ列
 
 ## フォームデータモデルを使用して送信 {#submit-using-form-data-model}
 
@@ -263,7 +263,7 @@ AEM FormsをMicrosoft® Sharepoint リストに接続するには：
 
 >[!NOTE]
 >
->フィールドを REST URL 内のパラメーターとして渡すためには、すべてのフィールドが異なる要素名を持っている必要があります。これは、異なるパネルに置かれているフィールドにも適用されます。
+フィールドを REST URL 内のパラメーターとして渡すためには、すべてのフィールドが異なる要素名を持っている必要があります。これは、異なるパネルに置かれているフィールドにも適用されます。
 
 <!-- ## Send PDF via Email {#send-pdf-via-email}
 
@@ -341,7 +341,7 @@ AEM Forms を Microsoft® OneDrive ストレージに接続するには、以下
 
    >[!NOTE]
    >
-   > **クライアント秘密鍵**&#x200B;フィールドは、Azure Active Directory アプリケーションの設定に応じて、必須またはオプションになります。アプリケーションでクライアント秘密鍵を使用するように設定されている場合は、クライアントの秘密鍵を指定する必要があります。
+   **クライアント秘密鍵**&#x200B;フィールドは、Azure Active Directory アプリケーションの設定に応じて、必須またはオプションになります。アプリケーションでクライアント秘密鍵を使用するように設定されている場合は、クライアントの秘密鍵を指定する必要があります。
 
 1. 「**[!UICONTROL 接続]**」をクリックします。接続が完了すると `Connection Successful` メッセージが表示されます。
 
@@ -349,8 +349,8 @@ AEM Forms を Microsoft® OneDrive ストレージに接続するには、以下
 
    >[!NOTE]
    >
-   >* デフォルトでは、`forms-ootb-storage-adaptive-forms-submission` は OneDrive コンテナに存在します。
-   > * 「**フォルダーを作成**」をクリックして、まだ存在しない場合は、フォルダーを `forms-ootb-storage-adaptive-forms-submission` として作成します。
+   * デフォルトでは、`forms-ootb-storage-adaptive-forms-submission` は OneDrive コンテナに存在します。
+   * 「**フォルダーを作成**」をクリックして、まだ存在しない場合は、フォルダーを `forms-ootb-storage-adaptive-forms-submission` として作成します。
 
 アダプティブフォームの送信アクションに、この OneDrive ストレージ設定を使用できるようになりました。
 
@@ -361,8 +361,8 @@ AEM Forms を Microsoft® OneDrive ストレージに接続するには、以下
 
    >[!NOTE]
    >
-   > * OneDrive ストレージを作成したアダプティブ フォームと同じ[!UICONTROL 設定コンテナ]を選択します。
-   > * [!UICONTROL 設定コンテナ]が選択されていない場合、グローバルな[!UICONTROL ストレージ設定]フォルダーが送信アクションのプロパティウィンドウに表示されます。
+   * OneDrive ストレージを作成したアダプティブ フォームと同じ[!UICONTROL 設定コンテナ]を選択します。
+   * [!UICONTROL 設定コンテナ]が選択されていない場合、グローバルな[!UICONTROL ストレージ設定]フォルダーが送信アクションのプロパティウィンドウに表示されます。
 
 1. 「**送信アクション**」を「**[!UICONTROL OneDrive に送信]**」として選択します。
    ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
@@ -404,8 +404,8 @@ AEM Forms を Azure ストレージコンテナに接続するには、次の手
 
    >[!NOTE]
    >
-   > * OneDrive ストレージを作成したアダプティブ フォームと同じ[!UICONTROL 設定コンテナ]を選択します。
-   > * [!UICONTROL 設定コンテナ]が選択されていない場合、グローバルな[!UICONTROL ストレージ設定]フォルダーが送信アクションのプロパティウィンドウに表示されます。
+   * OneDrive ストレージを作成したアダプティブ フォームと同じ[!UICONTROL 設定コンテナ]を選択します。
+   * [!UICONTROL 設定コンテナ]が選択されていない場合、グローバルな[!UICONTROL ストレージ設定]フォルダーが送信アクションのプロパティウィンドウに表示されます。
 
 1. 「**送信アクション**」を「**[!UICONTROL Azure Blob Storage に送信]**」として選択します。
    ![Azure Blob Storage GIF](/help/forms/assets/azure-submit-video.gif)
@@ -470,7 +470,7 @@ AEM Forms を Azure ストレージコンテナに接続するには、次の手
 
 >[!NOTE]
 >
->サーバーサイド検証により、フォームモデルが検証されます。検証のために別個のクライアントライブラリを作成し、1 つのクライアントライブラリに HTML のスタイルや DOM 操作を混在させないことをお勧めします。
+サーバーサイド検証により、フォームモデルが検証されます。検証のために別個のクライアントライブラリを作成し、1 つのクライアントライブラリに HTML のスタイルや DOM 操作を混在させないことをお勧めします。
 
 ### 検証式でのカスタム関数のサポート {#supporting-custom-functions-in-validation-expressions-br}
 
