@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 description: Adobe Experience Manager as a Cloud Service の Image Management System のサポート
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 0074f483bffa1cd7c2cc468a74730672511f0956
 workflow-type: tm+mt
 source-wordcount: '1917'
 ht-degree: 99%
@@ -20,8 +20,6 @@ ht-degree: 99%
 >[!TIP]
 >
 >Adobe IMS を使用した AEM as a Cloud のユーザー認証の概要については、[AEM のアクセスの設定（管理者向け）](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)を参照してください。また、Adobe IMS ユーザー、ユーザーグループ、製品プロファイルを使用して、AEM とその機能のアクセス権を制御する方法についても説明します。Adobe ID が必要です。
-
-{{ims-group-profiles}}
 
 ## 主なハイライト {#key-highlights}
 
