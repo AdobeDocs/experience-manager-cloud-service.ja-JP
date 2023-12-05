@@ -2,7 +2,7 @@
 title: アダプティブフォームの送信アクションの設定方法
 description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自のアクションを作成できます。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 4e5a730f59a7594085319435bfe1ea3a7368bfc2
+source-git-commit: 738a0ceeb0a8cc9b08a1871ef3b2939cbcf2f80a
 workflow-type: tm+mt
 source-wordcount: '3913'
 ht-degree: 88%
@@ -411,7 +411,6 @@ AEM Forms を Azure ストレージコンテナに接続するには、次の手
 アダプティブフォームを設定して、送信時にWorkfront Fusion にデータを送信することができます。 Workfront Fusion を使用すると、プロセスを自動化できるので、同じタスクを何度も繰り返す代わりに、新しいタスクに集中できます。 シンプルなタスクと複雑なタスクの両方を自動化し、時間を節約し、プロセスの一貫した実行を実現します。
 
 アダプティブFormsエディターでは、 **Workfront Fusion シナリオを呼び出す** 送信アクションを使用して、Adaptive Formsのデータまたは添付ファイルをWorkfront Fusion シナリオに送信します。 送信アクションを使用して取得したデータをWorkfront Fusion シナリオに送信する方法については、 [アダプティブフォームをAdobe Workfront Fusion に送信する](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
-
 
 ## 同期または非同期送信の使用 {#use-synchronous-or-asynchronous-submission}
 
