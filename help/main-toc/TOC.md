@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ce98053371c8a40db3935c47356213e712a4e39e
+source-git-commit: 54ab961b9689075f6a34ff51ecf92bf1ae68ebf1
 workflow-type: tm+mt
 source-wordcount: '4429'
 ht-degree: 93%
@@ -581,11 +581,11 @@ ht-degree: 93%
          + [アダプティブFormsとAdobe Analyticsの統合](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
          + [アダプティブForms Analytics レポートの表示と理解](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [アダプティブフォームと Microsoft Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)
+         + [アダプティブフォームをAdobe Workfront Fusion に送信する](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [AEM Sites ページへのアダプティブフォームの埋め込み](/help/forms/embed-adaptive-form-aem-sites.md)
          + [コアコンポーネントに基づくアダプティブフォームを外部 Web ページに埋め込む](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [基盤コンポーネントに基づくアダプティブフォームを外部 Web ページに埋め込む](/help/forms/embed-adaptive-form-external-web-page.md)
       + フォームデータモデル {#use-form-data-model}
-         + [アダプティブフォームをAdobe Workfront Fusion に送信する](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [AEM Formsをデータベースまたはデータソースに接続する](/help/forms/data-integration.md)
          + [データソースの設定](/help/forms/configure-data-sources.md)
          + [ [!DNL Microsoft Dynamics]  OData の設定](/help/forms/ms-dynamics-odata-configuration.md)

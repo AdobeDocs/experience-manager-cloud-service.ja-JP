@@ -3,9 +3,9 @@ title: Adobe Workfront Fusion とAEM Forms Submission の統合
 description: Adobe Workfront Fusion を使用すると、繰り返しのタスクに重点を置くのではなく、新しいタスクに重点を置くことができます。 フォーム送信を使用して、Adobe Workfront Fusion をアダプティブフォームに接続することができます。
 keywords: Adobe Workfront Fusion、Adobe Workfront Fusion とAEM Forms Submission の統合、Adobe Workfront Fusion とAEM Forms、Workfront Fusion とAEM Forms、Workfront Fusion とAEM Forms、AEM FormsとWorkfront Fusion の接続、WorkfrontとAEM Forms Fusion とWorkfrontの接続方法、 Fusion と Fusion をフォームに接続する
 topic-tags: author, developer
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: cebdd5c4b1ad9531f2cc2893c2e7900658e451ed
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1240'
 ht-degree: 4%
 
 ---
@@ -144,7 +144,7 @@ Workfont Fusion の送信アクションは、次の場合に設定できます�
 - [新しいアダプティブForms](#new-af-submit-action)
 - [既存のアダプティブフォーム](#existing-af-submit-action)
 
-#### 2.1 Workfront Fusion 用の新しいアダプティブフォームの送信アクションの設定 {#new-af-submit-action}
+#### Workfront Fusion 用の新しいアダプティブフォームの送信アクションを設定する {#new-af-submit-action}
 
 新しいアダプティブフォームの送信アクションをWorkfront Fusion 用に設定するには：
 
@@ -165,7 +165,7 @@ Workfont Fusion の送信アクションは、次の場合に設定できます�
 1. 「**[!UICONTROL 作成]**」をクリックします。
 1. 新しいアダプティブフォームの名前を指定し、 **[!UICONTROL 作成]**.
 
-#### 2.2 既存のアダプティブフォームの送信アクションをWorkfront Fusion 用に設定する {#existing-af-submit-action}
+#### 既存のアダプティブフォームの送信アクションをWorkfront Fusion 用に設定する {#existing-af-submit-action}
 
 既存のアダプティブフォームの送信アクションをWorkfront Fusion 用に設定するには：
 
@@ -178,7 +178,7 @@ Workfont Fusion の送信アクションは、次の場合に設定できます�
    ![Workfront Fusion の送信アクション](/help/forms/assets/workfront-scenario-existing-af.png)
 
 1. 「**[!UICONTROL 送信]**」タブを開きます。
-1. を選択します。 **[送信アクション]** as **[!UICONTROL Workfront Fusion シナリオを呼び出す]**
+1. を選択します。 **[!UICONTROL 送信アクション]** as **[!UICONTROL Workfront Fusion シナリオを呼び出す]**
 1. 選択 **[!UICONTROL Workfront Fusion のシナリオ]** 」をドロップダウンリストから選択します。
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
