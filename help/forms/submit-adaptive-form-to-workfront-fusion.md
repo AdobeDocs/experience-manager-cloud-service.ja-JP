@@ -3,7 +3,7 @@ title: Adobe Workfront Fusion とAEM Forms Submission の統合
 description: Adobe Workfront Fusion を使用すると、繰り返しのタスクに重点を置くのではなく、新しいタスクに重点を置くことができます。 フォーム送信を使用して、Adobe Workfront Fusion をアダプティブフォームに接続することができます。
 keywords: Adobe Workfront Fusion、Adobe Workfront Fusion とAEM Forms Submission の統合、Adobe Workfront Fusion とAEM Forms、Workfront Fusion とAEM Forms、Workfront Fusion とAEM Forms、AEM FormsとWorkfront Fusion の接続、WorkfrontとAEM Forms Fusion とWorkfrontの接続方法、 Fusion と Fusion をフォームに接続する
 topic-tags: author, developer
-source-git-commit: cebdd5c4b1ad9531f2cc2893c2e7900658e451ed
+source-git-commit: 68314ca09594d3c4c5639363326117b89b733a4d
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 4%
@@ -128,6 +128,7 @@ Webhook を追加するには：
 #### 1.3 Workfrontシナリオの有効化 {#activate-scenario}
 
 シナリオを有効にするには：
+
 1. クリック **[!UICONTROL シナリオ]** ![共有アイコン](/help/forms/assets/Smock_ShareAndroid_18_N.svg) をクリックします。
 1. 次をクリック： **[!UICONTROL 非アクティブなシナリオ]** タブをクリックします。
 1. 次をクリック： **オン/オフ** 「切り替え」ボタンを使用してAEM Formsシナリオを切り替えることができます。
