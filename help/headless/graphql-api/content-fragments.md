@@ -3,10 +3,10 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4923'
-ht-degree: 94%
+source-wordcount: '4863'
+ht-degree: 92%
 
 ---
 
@@ -115,7 +115,7 @@ AEM は、クエリ（両方のタイプ）を Dispatcher と CDN によって[�
 
 POST リクエストを使用する GraphQL クエリは、キャッシュされないのでお勧めしません。そのため、デフォルトのインスタンスでは、Dispatcher はそれらのクエリをブロックするように設定されています。
 
-GraphQL は GET リクエストもサポートしていますが、永続クエリを使用して回避できる制限（URL の長さなど）に達する可能性があります。
+GraphQLはGETリクエストもサポートしますが、これらは、永続化されたクエリを使用して回避できる制限（URL の長さなど）にヒットする可能性があります。
 
 詳しくは、 [永続クエリのキャッシュの有効化](/help/headless/deployment/dispatcher-caching.md) 詳しくは、を参照してください。
 
@@ -253,7 +253,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 | 定義済みリスト | `String` | モデルの作成時に定義されたオプションのリストに含まれるオプションを表示するために使用します |
 | タグ | `[String]` | AEM で使用されているタグを表す文字列のリストを表示するために使用します |
 | コンテンツ参照 | `String`、`[String]` | AEM 内の別のアセットへのパスを表示するために使用します |
-| フラグメント参照 |  *モデルタイプ*<br><br>単一のフィールド： `Model` - 直接参照されるモデル型 <br><br>マルチフィールド（1 つの参照タイプ）：`[Model]` - 型の配列 `Model`（配列から直接参照）<br><br>複数の参照型を持つマルチフィールド：`[AllFragmentModels]` - 和集合型を持つ配列から参照される、すべてのモデル型の配列 | モデルの作成時に定義された、特定のモデル型の 1 つ以上のコンテンツフラグメントの参照に使用します |
+| フラグメント参照 |  *モデルタイプ* <br><br>単一のフィールド： `Model`  — 直接参照されるモデルタイプ <br><br>複数フィールド（1 つの参照タイプ）: `[Model]`  — 型の配列 `Model`（配列から直接参照） <br><br>複数の参照型を持つマルチフィールド： `[AllFragmentModels]`  — 和集合型を持つ配列から参照される、すべてのモデル型の配列 | モデルの作成時に定義された、特定のモデル型の 1 つ以上のコンテンツフラグメントの参照に使用します |
 
 {style="table-layout:auto"}
 
@@ -519,7 +519,7 @@ GraphQL クエリでフィルタリングを使用して、特定のデータを
 * 各サブ定義には、式セットを提供する `_expressions` 配列と、式を組み合わせる必要がある論理演算子を定義する `_logOp` フィールドが含まれます
 * 各式は、値（`value` フィールド）と演算子（`_operator` フィールド）によって定義され、フィールドの内容を比較する必要があります
 
-項目を `AND` で組み合わせたい場合は `_logOp` を省略できます。また、等価性を確認したい場合は、これらがデフォルト値になるので、`_operator` を省略できます。
+省略できます `_logOp` 項目を `AND` および `_operator` 等価を確認する場合は、これらがデフォルト値になるので、等価を確認します。
 
 次の例は、大文字と小文字を区別せずに、`Provo` が `lastName` である、または `sjö` を含むすべてのユーザーをフィルタリングする完全なクエリを示しています。
 
@@ -1006,7 +1006,7 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
    * 操作の場合：
 
-      * `_operator`：特定の演算子（`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`、`STARTS_WITH`）を適用します
+      * `_operator` ：特定の演算子を適用します。 `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
          * [サンプルクエリ - 「Jobs」という名前を持たないすべての人物](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)を参照してください
          * [サンプルクエリ - `_path` が特定のプレフィックスで始まるすべてのアドベンチャーを参照してください](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)
 

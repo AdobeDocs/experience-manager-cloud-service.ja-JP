@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '9461'
+source-wordcount: '9454'
 ht-degree: 99%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 99%
 
 1. 次の手順を実行して、**Dynamic Media ビデオをアップロード**&#x200B;します。
 
-   * 独自のビデオエンコーディングプロファイルを作成します。または、Dynamic Media に付属している事前定義済みの&#x200B;_アダプティブビデオエンコーディング_（AVE）プロファイルを使用してもかまいません。
+   * 独自のビデオエンコーディングプロファイルを作成します。 または、次のように定義済み _アダプティブビデオエンコーディング_ Dynamic Mediaに付属するプロファイル。
 
       * [ビデオエンコーディングプロファイルを作成します](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)。
       * 詳しくは、[ビデオエンコーディングのベストプラクティス](#best-practices-for-encoding-videos)を参照してください。
@@ -58,7 +58,6 @@ ht-degree: 99%
    * ビデオアセットをプレビューして公開します。
 
       * ソースビデオとビデオのエンコードされたレンディションを、関連するサムネールと共に表示します。
-
         [ビデオをプレビュー](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)するか[アセットをプレビュー](/help/assets/dynamic-media/previewing-assets.md)します。
         [ビデオレンディションを管理します](/help/assets/manage-digital-assets.md#managing-renditions)。
 
@@ -68,7 +67,6 @@ ht-degree: 99%
    * ビデオのメタデータを操作します。
 
       * タイトル、説明、タグ、カスタムメタデータフィールドなど、ビデオのプロパティを編集：
-
         [ビデオのプロパティの編集](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [デジタルアセット用のメタデータの管理](/help/assets/manage-metadata.md)
@@ -93,11 +91,9 @@ ht-degree: 99%
    * サードパーティの web コンテンツ管理システムを使用している場合、web ページにビデオをリンクするか、ビデオを埋め込むことができます。
 
       * URL を使用したビデオの統合：
-
         [Web アプリケーションに URL をリンクします](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。
 
       * Web ページの埋め込みコードを使用したビデオの統合：
-
         [Web ページにビデオビューアを埋め込みます](/help/assets/dynamic-media/embed-code.md)。
 
    * [ビデオレポートを生成します](#viewing-video-reports)。
@@ -716,7 +712,7 @@ Dynamic Media では、URL 修飾子を使用して、ビデオでの単一の�
 >デフォルトのオーディオの再生は、次のブラウザーで設定されている内容によっても異なります。
 >
 >* Chrome - ビデオに設定されるデフォルトのオーディオが再生されます。
->* Safari - Safari でデフォルト言語が設定されている場合、オーディオは設定されたデフォルト言語で再生されます（ビデオのマニフェストで使用できる場合）。それ以外の場合は、ビデオのプロパティの一部として設定されたデフォルトのオーディオが再生されます。
+* Safari - Safari でデフォルト言語が設定されている場合、オーディオは設定されたデフォルト言語で再生されます（ビデオのマニフェストで使用できる場合）。それ以外の場合は、ビデオのプロパティの一部として設定されたデフォルトのオーディオが再生されます。
 
 **複数のオーディオトラックを持つビデオのデフォルトオーディオを設定するには、次の手順に従います。**
 
@@ -743,7 +739,7 @@ Dynamic Media では、URL 修飾子を使用して、ビデオでの単一の�
 
 >[!NOTE]
 >
->デフォルトの「Experience Managerプレビュー」タブには、複数の字幕とオーディオのトラックは表示されません。 これは、これらのトラックがDynamic Mediaに関連付けられており、Dynamic Media Viewer プレビューでのみ表示できるからです。
+デフォルトの「Experience Managerプレビュー」タブには、複数の字幕とオーディオのトラックは表示されません。 これは、これらのトラックがDynamic Mediaに関連付けられており、Dynamic Media Viewer プレビューでのみ表示できるからです。
 
 **複数のサブタイトルとオーディオトラックを持つビデオをプレビューするには：**
 
@@ -822,7 +818,7 @@ Dynamic Media では、URL 修飾子を使用して、ビデオでの単一の�
 
 >[!IMPORTANT]
 >
->Dynamic Media アカウントで[マルチサブタイトルおよびマルチオーディオトラック機を有効にする](#enable-dash)ことをお勧めします。これにより、最新の Dynamic Media バックエンドアーキテクチャと、キャプション、サブタイトル、オーディオトラックをビデオに追加するためのシンプルなワークフローを活用できます。
+Dynamic Media アカウントで[マルチサブタイトルおよびマルチオーディオトラック機を有効にする](#enable-dash)ことをお勧めします。これにより、最新の Dynamic Media バックエンドアーキテクチャと、キャプション、サブタイトル、オーディオトラックをビデオに追加するためのシンプルなワークフローを活用できます。
 
 クローズドキャプションを 1 つのビデオまたはアダプティブビデオセットに追加することにより、ビデオの配信先をグローバルマーケットまで拡大できます。クローズドキャプションを追加すると、音声をダビングする必要も、異なる言語ごとにネイティブスピーカーの音声を使って再録音する必要もなくなります。ビデオは、録画された言語で再生されます。外国語の字幕が表示されるので、違う言語の視聴者もオーディオ部分を理解できます。
 
@@ -830,7 +826,7 @@ Dynamic Media では、URL 修飾子を使用して、ビデオでの単一の�
 
 >[!NOTE]
 >
->使用するビデオプレーヤーがクローズドキャプションの表示に対応する必要があります。
+使用するビデオプレーヤーがクローズドキャプションの表示に対応する必要があります。
 
 詳しくは、[Dynamic Media のアクセシビリティ](/help/assets/dynamic-media/accessibility-dm.md)を参照してください。
 
@@ -858,7 +854,7 @@ URL での JSON 機能の使用について詳しくは、[静的な（画像以
 
    >[!NOTE]
    >
-   >複数言語のビデオサブタイトルを用意してグローバル対応する場合、WebVTT 標準の規定により、サポート対象の言語ごとに個別の .vtt ファイルを作成して呼び出す必要があります。
+   複数言語のビデオサブタイトルを用意してグローバル対応する場合、WebVTT 標準の規定により、サポート対象の言語ごとに個別の .vtt ファイルを作成して呼び出す必要があります。
 
    一般に、VTT キャプションファイルの名前には、ビデオファイルと同じ名前を付けて、名前の末尾に言語ロケール（-EN、-FR、-DE など）を追加します。そうしておくと、既存の web コンテンツ管理システムを使用してビデオの URL を自動的に生成する際に役立ちます。
 
@@ -871,7 +867,7 @@ URL での JSON 機能の使用について詳しくは、[静的な（画像以
 
 1. 次のいずれかの操作を行います。
 
-   * ポップアップビデオビューアエクスペリエンスの場合は、「**[!UICONTROL URL]**」を選択します。URL ダイアログボックスで、URL を選択してクリップボードにコピーし、その URL を単純なテキストエディターに貼り付けます。コピーしたビデオの URL を次の構文で追加します。
+   * ポップアップビデオビューアエクスペリエンスの場合は、 **[!UICONTROL URL]**. URL ダイアログボックスで、URL を選択してクリップボードにコピーし、その URL を単純なテキストエディターに貼り付けます。コピーしたビデオの URL を次の構文で追加します。
 
      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
@@ -889,7 +885,7 @@ URL での JSON 機能の使用について詳しくは、[静的な（画像以
 
 >[!NOTE]
 >
->ビデオプレーヤーが、チャプターマーカーの使用をサポートしている必要があります。Dynamic Media ビデオプレーヤーは、チャプターマーカーをサポートしていますが、サードパーティのビデオプレーヤーは、チャプターマーカーをサポートしているとは限りません。
+ビデオプレーヤーが、チャプターマーカーの使用をサポートしている必要があります。Dynamic Media ビデオプレーヤーは、チャプターマーカーをサポートしていますが、サードパーティのビデオプレーヤーは、チャプターマーカーをサポートしているとは限りません。
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -1060,7 +1056,7 @@ See [Adding a video thumbnail](#adding-a-video-thumbnail).
 
    if the directory panel is not visible, you may need to select the >> icon to the left of the Home tab.
 
-1. On the lower-right panel, in the Properties tab, double-tap `thumbnailtime`.
+1. On the lower-right panel, in the Properties tab, double-select `thumbnailtime`.
 1. In the Edit thumbnailtime dialog box, use the text fields to enter interval values as percentages.
 
     * Select the plus sign (+) icon to add one or more interval value fields. You may need to scroll to the bottom of the dialog box to see the icon.

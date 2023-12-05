@@ -2,9 +2,9 @@
 title: ContextHub JavaScript API リファレンス
 description: ContextHub コンポーネントをページに追加すると、ContextHub JavaScript API がスクリプトで使用できるようになります。
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4613'
+source-wordcount: '4602'
 ht-degree: 98%
 
 ---
@@ -162,7 +162,7 @@ ContextHub ストアのベースクラス。
 * **オブジェクト：**&#x200B;キーはプロパティ名です。
 * **配列：**&#x200B;キーは配列のインデックスです。
 
-値にオブジェクトを使用できます。
+値はオブジェクトにすることができます。
 
 ##### パラメーター {#parameters-addallitems}
 
@@ -499,7 +499,7 @@ UI モジュールおよび UI モジュールレンダラーを管理します�
 
 #### registerRenderer(moduleType, renderer, dontRender) {#registerrenderer-moduletype-renderer-dontrender}
 
-UI モジュールレンダラーを ContextHub に登録します。レンダラーが登録された後は、レンダラーを [UI モジュールの作成](configuring-contexthub.md#adding-a-ui-module)に使用できます。`ContextHub.UI.BaseModuleRenderer`[&#128279;](extending-contexthub.md#creating-contexthub-ui-module-types) を拡張してカスタム UI モジュールレンダラーを作成する場合は、この関数を使用します。
+UI モジュールレンダラーを ContextHub に登録します。レンダラーが登録された後は、レンダラーを [UI モジュールの作成](configuring-contexthub.md#adding-a-ui-module)に使用できます。`ContextHub.UI.BaseModuleRenderer`](extending-contexthub.md#creating-contexthub-ui-module-types) を拡張[してカスタム UI モジュールレンダラーを作成する場合は、この関数を使用します。
 
 ##### パラメーター {#parameters-registerrenderer}
 

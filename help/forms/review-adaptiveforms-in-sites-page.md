@@ -1,13 +1,13 @@
 ---
 title: アダプティブフォームをレビュー用に送信する方法は？ AEM アダプティブフォームのレビューを管理する方法は？
-description: レビューとは、レビュー担当者がタスクの割り当て手順を使用して、アダプティブフォームに対して様々なタスクを実行できるメカニズムです.
+description: レビューとは、レビュー担当者がタスクの割り当て手順を使用してアダプティブフォームに対して様々なタスクを実行できるメカニズムです。
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 93%
+source-wordcount: '338'
+ht-degree: 83%
 
 ---
 
@@ -25,7 +25,7 @@ AEM ワークフローの[割り当て手順](https://experienceleague.adobe.com
 1. オーサーインスタンスを編集モードで開きます。
 1. **[!UICONTROL ツール]**／**[!UICONTROL ワークフロー]**／**[!UICONTROL モデル]**／**[!UICONTROL 作成]**／**[!UICONTROL モデルを作成]**&#x200B;に移動します。
 1. ワークフローのタイトルを指定し、**[タスクを割り当て]**&#x200B;手順を追加します。
-1. アクションバーで ![settings_icon](assets/settings_icon.png) をタップします。**[!UICONTROL タスクを割り当て]**&#x200B;ダイアログが開きます。
+1. 選択 ![settings_icon](assets/settings_icon.png) をクリックします。 **[!UICONTROL タスクを割り当て]**&#x200B;ダイアログが開きます。
 1. 「[!UICONTROL フォームとドキュメント]」タブを開き、[!UICONTROL 事前入力]ドロップダウンを開いて、次を指定します。
 
    * 次を使用して入力データファイルを選択
@@ -44,7 +44,7 @@ AEM ワークフローの[割り当て手順](https://experienceleague.adobe.com
 次に、サイトのページでアダプティブフォームコンテナコンポーネントの送信アクションを設定します。
 
 1. サイトのページに移動します。
-1. アダプティブフォームコンテナの ![settings_icon](assets/settings_icon.png) をタップします。**[!UICONTROL アダプティブフォームコンテナ]**&#x200B;ダイアログが開きます。
+1. 選択 ![settings_icon](assets/settings_icon.png) を作成します。 **[!UICONTROL アダプティブフォームコンテナ]**&#x200B;ダイアログが開きます。
 1. 「**[!UICONTROL 送信]**」タブを開き、**[!UICONTROL 送信アクション]**&#x200B;から「[AEM ワークフローの呼び出し](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=ja#invoke-an-aem-workflow)」を指定します
 
 1. 「[完了]」をクリックして、設定を保存します。

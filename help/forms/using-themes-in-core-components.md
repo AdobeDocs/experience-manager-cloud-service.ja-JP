@@ -2,10 +2,10 @@
 title: アダプティブFormsでテーマを作成して使用するにはどうすればよいですか？
 description: テーマを使用して、コアコンポーネントを使用してアダプティブフォームのスタイルを設定し、視覚的な ID を付けることができます。 任意の数のアダプティブフォームで、テーマを共有できます。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2676'
-ht-degree: 18%
+source-wordcount: '2610'
+ht-degree: 17%
 
 ---
 
@@ -60,7 +60,7 @@ Forms as Cloud Serviceが提供する、コアコンポーネントベースの�
 
 * に慣れてください。 [Cloud Manager でのパイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) また、パイプラインの設定方法に関する基本的な知識を持つことで、テーマのカスタマイズを効率的に管理およびデプロイできます。
 * 方法を学ぶ [貢献者の役割を持つユーザーを構成する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). 貢献者の役割を持つユーザーを構成する方法を理解すると、テーマのカスタマイズに必要な権限を付与できます。
-* [Apache Maven の最新リリースをインストールします。](https://maven.apache.org/download.cgi) Apache Maven は、Java™プロジェクトで一般的に使用されるビルド自動化ツールです。 最新のリリースをインストールすると、テーマのカスタマイズに必要な依存関係が確保されます。
+* 最新リリースのをインストールする [Apache Maven。](https://maven.apache.org/download.cgi) Apache Maven は、Java™プロジェクトで一般的に使用されるビルド自動化ツールです。 最新のリリースをインストールすると、テーマのカスタマイズに必要な依存関係が確保されます。
 * プレーンテキストエディターをインストールします。例： Microsoft® Visual Studio Code。 Microsoft® Visual Studio Code などのプレーンテキストエディターを使用すると、テーマファイルの編集と変更を行う際に使いやすい環境を提供します。
 
 ### 環境の設定
@@ -158,7 +158,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 The `variable.scss` ファイルには、テーマのグローバル変数が含まれます。 これらの変数を更新すると、テーマレベルでスタイル関連の変更を行うことができます。 テーマレベルのスタイルを適用するには、次の手順に従います。
 
 1. `<your-theme-sources>/src/site/_variables.scss` ファイルを編集用に開きます。
-1. 任意のプロパティの値を変更します。 例えば、デフォルトのエラー色は次のようになります。 `red`. エラーの色を次のように変更するには： `red` から `blue`を変更する場合は、 `$errorvariable`. 例：`$error: #196ee5`
+1. 任意のプロパティの値を変更します。 例えば、デフォルトのエラー色は次のようになります。 `red`. エラーの色を次のように変更するには： `red` から `blue`を変更する場合は、 `$errorvariable`. 例：`$error: #196ee5`。
 1. ファイルを保存して閉じます。
 
    ![テーマを編集](/help/forms/assets/edit_theme.png)
@@ -363,7 +363,7 @@ The `variable.scss` ファイルには、テーマのグローバル変数が含
    パイプラインの設定が完了したら、コールトゥアクションカードが更新されます。
 
 1. 作成したパイプラインを右クリックします。
-1. 「**[!UICONTROL 実行]**」をクリックします。
+1. クリック **[!UICONTROL 実行]** .
 
    ![ランパイプリン](/help/forms/assets/canvas-theme-run-pipeline.png)
 
@@ -377,7 +377,7 @@ The `variable.scss` ファイルには、テーマのグローバル変数が含
 
 1. AEM Forms オーサーインスタンスにログインします。
 
-1. **Adobe Experience Manager**／**Forms**／**フォームとドキュメント**&#x200B;の順にタップします。
+1. 選択 **Adobe Experience Manager** > **Forms** > **Forms &amp; Documents**.
 
 1. **作成**／**アダプティブフォーム**&#x200B;の順にクリックします。アダプティブフォームを作成するためのウィザードが開きます。
 
@@ -433,5 +433,5 @@ The `variable.scss` ファイルには、テーマのグローバル変数が含
 * [画面サイズやデバイスタイプに応じてフォームのレイアウトを設定](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [アダプティブForms（コアコンポーネント）用のレコードのドキュメントを生成する](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [繰り返し可能なセクションを使用したアダプティブFormsの作成](/help/forms/create-forms-repeatable-sections.md)
-* [サンプルのテーマテンプレートとフォームデータモデル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+* [サンプルのテーマ、テンプレートおよびフォームデータモデル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ja)
 * [AEM Forms as a Cloud Service およびローカル開発環境で、アダプティブフォームのコアコンポーネントを有効にする](/help/forms/enable-adaptive-forms-core-components.md)

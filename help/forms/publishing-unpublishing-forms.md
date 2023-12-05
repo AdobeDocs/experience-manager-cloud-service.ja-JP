@@ -5,10 +5,10 @@ content-type: reference
 topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65s
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 84%
+source-wordcount: '1327'
+ht-degree: 68%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 84%
 * 編集可能なアダプティブフォームテンプレート
 * Adobe Sign、Typekit、reCAPTCHA、フォームデータモデルのクラウドサービス設定
 * その他のクラウドサービスの設定は、ユーザーが管理者権限を保有している場合にのみアクティブ化されます。
-* カスタマイズ. 以下のようなものが含まれます。
+* カスタマイズ。 以下のようなものが含まれます。
 
    * カスタムレイアウト
    * カスタム外観
@@ -62,19 +62,19 @@ ht-degree: 84%
 1. [!DNL AEM Forms] サーバーにログインします。
 1. 次のいずれかの手順を使って、アセットを選択して公開します。
 
-   1. ポインターをアセットの上に置き、「**[!UICONTROL 公開]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png)」をタップします。
-   1. 次のいずれかを実行し、「公開」をタップします。
+   1. アセット上にポインターを移動し、「 」を選択します。 **[!UICONTROL 公開]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
+   1. 次のいずれかの操作を行い、「公開」を選択します。
 
-      * カード表示になっている場合は、「**[!UICONTROL 選択を入力]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)」をタップし、アセットをタップします。アセットが選択されます。
+      * カード表示の場合は、 **[!UICONTROL 選択を入力]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)をクリックし、アセットを選択します。 アセットが選択されます。
       * リスト表示の場合は、アセットのチェックボックスをオンにします。 アセットが選択されます。
-      * 詳細を表示するアセットを表示します。
+      * 詳細を表示するアセットを選択します。
       * 「プロパティを表示 ![viewproperties](assets/viewproperties.png)」をタップしてアセットのプロパティを表示します。
 
       >[!NOTE]
       >
       >複数のアセットを選択しないでください。複数のアセットを一度に公開することはサポートされていません。
 
-1. 公開プロセスが始まるときに、確認ダイアログが表示され、関連するすべてのアセットとリソースが表示されます。関連アセットを含むダイアログボックスで、「**[!UICONTROL 公開]**」をタップします。アセットが公開され、「アセット公開成功」ダイアログが表示されます。
+1. 公開プロセスが始まるときに、確認ダイアログが表示され、関連するすべてのアセットとリソースが表示されます。関連アセットを含むダイアログボックスで、「 」を選択します。 **[!UICONTROL 公開]**. アセットが公開され、「アセット公開成功」ダイアログが表示されます。
 
    >[!NOTE]
    >
@@ -99,9 +99,9 @@ ht-degree: 84%
 サーバー上のすべての Correspondence Management アセットを公開するには、次の手順を実行します。
 
 1. [!DNL AEM Forms] サーバーにログインします。
-1. グローバルナビゲーションバーで「**Adobe Experience Manager**」をタップします。
-1. ![ツール](assets/tools.png) をタップし、「**Forms**」をタップします。
-1. 「**Correspondence Management アセットを公開する**」をタップします。
+1. 選択 **Adobe Experience Manager** 」をクリックします。
+1. 選択 ![ツール](assets/tools.png)を選択し、 **Forms**.
+1. 選択 **Correspondence Management アセットを発行**.
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
 
@@ -109,7 +109,7 @@ ht-degree: 84%
 
    ![publish-last-run-details](assets/publish-last-run-details.png)
 
-1. 「**公開**」をタップし、確認メッセージで「**OK**」をタップします。
+1. 選択 **公開** 確認メッセージで、 **OK**.
 
    バッチ処理が完了したら、最後の実行の詳細を表示できます。 これには管理者ログインや、バッチの実行が成功したか失敗したかなどの情報が含まれます。
 
@@ -123,27 +123,27 @@ ht-degree: 84%
 
 以下の手順に従って、フォームとドキュメントのアセットを公開および非公開する日時をスケジュールします。
 
-1. アセットを選択し、「**[!UICONTROL プロパティの表示]**」をタップします。メタデータプロパティページが開きます。
-1. メタデータプロパティページで、「**[!UICONTROL 詳細]**」をタップし、「**[!UICONTROL 編集]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png)」をタップします。
+1. アセットを選択し、「 」を選択します。 **[!UICONTROL プロパティを表示]**. メタデータプロパティページが開きます。
+1. メタデータのプロパティページで、「 」を選択します。 **[!UICONTROL 詳細]**&#x200B;を選択し、 **[!UICONTROL 編集]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
 1. 「**[!UICONTROL オンタイムに公開]**」フィールドと「**[!UICONTROL オフタイムに公開]**」フィールドで、日時を選択します。\
-   「**[!UICONTROL 完了]** ![aem6forms_check](assets/aem6forms_check.png)」をタップします。
+   選択 **[!UICONTROL 完了]** ![aem6forms_check](assets/aem6forms_check.png).
 
 ## アセットの非公開 {#unpublish-an-asset}
 
-1. 公開されるアセットを選択し、「**[!UICONTROL 非公開]** ![非公開](assets/unpublish.png)」をタップします。
+1. 公開されているアセットを選択し、「 」を選択します。 **[!UICONTROL 非公開]** ![非公開](assets/unpublish.png).
 1. 次のいずれかの手順を使用して、アセットを選択し非公開にします。
 
-   1. ポインターをアセットの上に置き、「**[!UICONTROL 非公開]** ![非公開](assets/unpublish.png)」をタップします。
-   1. 次のいずれかを行い、「非公開」をタップします。
+   1. アセット上にポインターを移動し、「 」を選択します。 **[!UICONTROL 非公開]** ![非公開](assets/unpublish.png).
+   1. 次のいずれかの操作を行い、「非公開」を選択します。
 
-      * カード表示になっている場合は、「**[!UICONTROL 選択を入力]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)」をタップし、アセットをタップします。アセットが選択されます。
+      * カード表示の場合は、 **[!UICONTROL 選択を入力]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)をクリックし、アセットを選択します。 アセットが選択されます。
 
-      * リスト表示になっている場合は、マウスをアセットに移動して ![selectassetcheckmark](assets/selectassetcheckmark.png) をタップします。アセットが選択されます。
+      * リスト表示の場合は、アセットの上にマウスポインターを置いて、「 ![selectassetcheckmark](assets/selectassetcheckmark.png) . アセットが選択されます。
 
-      * 詳細を表示するアセットを表示します。
+      * 詳細を表示するアセットを選択します。
       * 「プロパティを表示 ![viewproperties](assets/viewproperties.png)」をタップしてアセットのプロパティを表示します。
 
-1. 非公開プロセスが始まるときに、確認ダイアログが表示されます。「**[!UICONTROL 非公開]**」をタップします。
+1. 非公開プロセスが始まるときに、確認ダイアログが表示されます。選択 **[!UICONTROL 非公開]**.
 
    >[!NOTE]
    >
@@ -157,8 +157,8 @@ ht-degree: 84%
 >
 >公開済みのレターで使用されている依存アセットがシステムから削除されている場合、そのレターを最後に公開した状態に戻さないでください。
 
-1. アセットを選択し、「**[!UICONTROL 以前に公開したバージョンに戻す]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png)」をタップします。
-1. アセットが戻される前に、確認ダイアログが表示されます。「**[!UICONTROL 元に戻す]**」をタップします。
+1. アセットを選択し、「 」を選択します。 **[!UICONTROL 以前に公開したバージョンに戻す]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
+1. アセットが戻される前に、確認ダイアログが表示されます。選択 **[!UICONTROL 元に戻す]**.
 
    アセットまたはレターが、以前に公開したバージョンにロールバックされます。
 
@@ -168,17 +168,17 @@ ht-degree: 84%
 >
 >アセットを削除すると、そのアセットはパブリッシュインスタンスから削除されます。 アセットを削除すると、ベースバージョンを除くバージョン履歴も削除されます。
 
-1. アセットを選択し、「**[!UICONTROL 削除]** ![削除](assets/delete.png)」をタップします。
+1. アセットを選択し、「 」を選択します。 **[!UICONTROL 削除]** ![削除](assets/delete.png).
 
    >[!NOTE]
    >
    >「削除」オプションは、アセットをタップしてアセットの詳細を表示する場合や、「プロパティを表示 ![viewproperties](assets/viewproperties.png)」をタップしてアセットのプロパティを表示する場合にも使用できます。
 
-1. アセットを削除する前に、確認ダイアログが表示されます。「**[!UICONTROL 削除]**」をタップします。
+1. アセットを削除する前に、確認ダイアログが表示されます。「**[!UICONTROL 削除]**」を選択します。
 
    >[!NOTE]
    >
-   >選択されているアセットだけが削除され、従属アセットは削除されません。アセットの参照を確認するには、 ![参照](assets/references.png) をタップしてからアセットを選択します。
+   >選択されているアセットだけが削除され、従属アセットは削除されません。アセットの参照を確認するには、「 ![参照](assets/references.png) 次に、アセットを選択します。
    >
    >
    >削除しようとしているアセットが別のアセットの子アセットの場合、そのアセットは削除されません。 このようなアセットを削除するには、他のアセットからこのアセットの参照を削除してから、再試行してください。

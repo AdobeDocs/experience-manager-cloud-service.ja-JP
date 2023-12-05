@@ -3,10 +3,10 @@ title: コアコンポーネントに基づいてアダプティブフォーム�
 description: コアコンポーネントに基づいてアダプティブフォームテンプレートを作成し、テンプレートエディターを使用して基本的な構造と初期コンテンツを定義します。
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 58%
+source-wordcount: '1961'
+ht-degree: 53%
 
 ---
 
@@ -46,13 +46,13 @@ Experience Manager には、テンプレートを整理するためのグロー�
 
 フォルダーの作成後、フォルダーを開いて以下の手順を実行し、テンプレートを作成します。
 
-1. 作成したフォルダー内で「**[!UICONTROL 作成]**」をタップします。
-1. Adobe Analytics の **[!UICONTROL テンプレートタイプを選択]** セクション、選択 **[!UICONTROL アダプティブフォーム（コアコンポーネント）テンプレート]** とタップします。 **[!UICONTROL 次へ]**.
+1. 選択 **[!UICONTROL 作成]** 作成したフォルダー内にあります。
+1. Adobe Analytics の **[!UICONTROL テンプレートタイプを選択]** セクション、選択 **[!UICONTROL アダプティブフォーム（コアコンポーネント）テンプレート]** を選択し、 **[!UICONTROL 次へ]**.
 
-1. Adobe Analytics の **[!UICONTROL テンプレートの詳細]** セクションに、 **テンプレートタイトル** とタップします。 **[!UICONTROL 作成]**.
+1. Adobe Analytics の **[!UICONTROL テンプレートの詳細]** セクションに、 **テンプレートタイトル** を選択し、 **[!UICONTROL 作成]**.
 説明を入力することもできます。
 
-1. 「**[!UICONTROL 完了]**」をタップしてコンソールに戻るか、「**[!UICONTROL 開く]**」をタップしてテンプレートをエディターで開きます。
+1. 選択 **[!UICONTROL 完了]** コンソールに戻るか、「 **[!UICONTROL 開く]** をクリックして、テンプレートをエディターで開きます。
 
 ## テンプレートエディター UI {#template-editor-ui}
 
@@ -64,7 +64,7 @@ Experience Manager には、テンプレートを整理するためのグロー�
    * **サイドパネルを切り替え**：サイドバーの表示と非表示を切り替えることができます。
    * **ページ情報**：公開／非公開の時間、サムネール、クライアントサイドライブラリ、ページポリシー、ページデザインのクライアントサイドライブラリなどの情報を指定できます。
      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-   * **モードセレクター**：モードを変更できます。**[!UICONTROL 構造]**&#x200B;モード、**[!UICONTROL 初期コンテンツ]**、**[!UICONTROL レイアウト制御]**&#x200B;モードを選択できます。構造モードを使用すると、ヘッダーとフッターを追加してカスタマイズできます。初期コンテンツモードを使用すると、フォームコンテンツをカスタマイズできます。
+   * **モードセレクター：** モードを変更できます。 **[!UICONTROL 構造]**&#x200B;モード、**[!UICONTROL 初期コンテンツ]**、**[!UICONTROL レイアウト制御]**&#x200B;モードを選択できます。構造モードを使用すると、ヘッダーとフッターを追加してカスタマイズできます。初期コンテンツモードを使用すると、フォームコンテンツをカスタマイズできます。
    * **プレビュー**：テンプレート公開時の外観をプレビューできます。「レイヤーセレクター」と「プレビュー」を使用して、編集モードとプレビューモードを切り替えることができます。
 * **サイドバー**：コンテンツブラウザー、プロパティブラウザー、アセットブラウザー、コンポーネントブラウザーを提供します。
 * **コンポーネントツールバー**：コンポーネントを選択すると、コンポーネントをカスタマイズできるツールバーが表示されます。
@@ -119,7 +119,7 @@ Header and footer are added in the Initial Content layer.
 
 「初期コンテンツ」オプションを選択すると、テンプレートのアダプティブフォームコンテナがアダプティブフォームと同様に開いて編集可能になります。事前定義済みのコンテンツを作成し、テンプレートに関連付けられたアダプティブFormsを作成する際に変更できます。 アダプティブフォームを作成する場合と同様、テーマや送信アクションの選択などの初期設定を指定できます。
 
-フォーム作成者はこれをベースにしてフォームを作成します。コンテンツのフロー構造は、テンプレートの初期コンテンツレイヤーで指定されます。フォームテンプレートの初期コンテンツの編集に切り替えるには、ページツールバーでプレビューを実行する前に、![canvas-drop-down](assets/canvas-drop-down.png) **／** **[!UICONTROL 初期コンテンツ]**&#x200B;をタップします。
+フォーム作成者はこれをベースにしてフォームを作成します。コンテンツのフロー構造は、テンプレートの初期コンテンツレイヤーで指定されます。フォームテンプレートの初期コンテンツの編集に切り替えるには、ページツールバーで「プレビュー」を実行する前に、 ![キャンバスドロップダウン](assets/canvas-drop-down.png) **>** **[!UICONTROL 初期コンテンツ]**.
 
 ![初期コンテンツレイヤーに追加されたヘッダーとフッター](assets/header-and-footer.png)
 
@@ -133,7 +133,7 @@ Header and footer are added in the Initial Content layer.
 
 ### レイアウト {#layout}
 
-テンプレートを編集する際に、レイアウトを定義できます。これには、標準のレスポンシブレイアウトが使用されます。このレイアウトを使用すると、デバイスの幅に基づいてコンポーネントの幅を管理し、レスポンシブなアダプティブフォームデザインを容易にすることができます。
+テンプレートを編集する際に、レイアウトを定義できます。これには、標準のレスポンシブレイアウトが使用されます。 このレイアウトを使用すると、デバイスの幅に基づいてコンポーネントの幅を管理し、レスポンシブなアダプティブフォームデザインを容易にすることができます。
 
 ![構造レイヤー内のレイアウトコンテナ](/help/forms/assets/layout-template-core-component.png)
 
@@ -143,8 +143,10 @@ Header and footer are added in the Initial Content layer.
 
 作成したテンプレートは、ドラフトとして追加されます。テンプレートを有効にして、アダプティブフォームの作成に使用できるようにします。テンプレートを有効にするには、以下の手順を実行します。
 
-1. **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL ツール]**／**[!UICONTROL テンプレート]**&#x200B;に移動して、テンプレートの作成先のフォルダーを開きます。作成したテンプレートは、ドラフトとしてマークされます。
-1. テンプレートを選択して、ツールバーで「**[!UICONTROL 有効]**」をタップします。アダプティブフォームの作成時に、テンプレートの選択を求められる際にこのテンプレートがリストに表示されるようになります。
+1. に移動します。 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL ツール]** > **[!UICONTROL テンプレート]**をクリックし、テンプレートを作成したフォルダーを開きます。
+作成したテンプレートは、ドラフトとしてマークされます。
+1. テンプレートを選択し、「 」を選択します。 **[!UICONTROL 有効にする]** 」と入力します。
+アダプティブフォームの作成時に、テンプレートの選択を求められる際にこのテンプレートがリストに表示されるようになります。
 
 ## テンプレートの読み込みまたは書き出し {#importing-or-exporting-a-template}
 
@@ -158,7 +160,7 @@ Header and footer are added in the Initial Content layer.
 
 作成者はテンプレートエディターで、[!UICONTROL フォームデータモデルスキーマ]をアダプティブフォームテンプレートに関連付けることができます。作成者は、スキーマをテンプレートエディターから選択できます。 スキーマをテンプレートに関連付け、フォーム作成者がそのテンプレートに基づいてフォームを作成すると、フォームのスキーマが事前に選択されます。フォーム作成者がスキーマの使用を規制し、フォーム作成者の時間を節約できます。 テンプレートエディターでフォームデータモデルスキーマを選択するには、次の手順に従います。
 
-1. タップ **[!UICONTROL コンテンツブラウザー]** は左側にあります。
+1. 選択 **[!UICONTROL コンテンツブラウザー]** は左側にあります。
 1. フォームコンテナの「**[!UICONTROL 設定]**」に移動します。
 1. **[!UICONTROL データモデル]**&#x200B;を選択します。
 1. **[!UICONTROL フォームデータモデルを選択]**&#x200B;からフォームデータモデルを選択し、設定を保存します。
@@ -183,7 +185,7 @@ Change the layer from **Structure** to **Initial Content**, and start adding con
 * You can drag-drop the panel component from the components browser in the sidebar.
 * You can add child panel of the `guideRootPanel` from the component toolbar.
 
-To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and tap ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, tap content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Tap ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and tap **[!UICONTROL Done]**. The tabbed template structure is applied.
+To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and select ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, select content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Select ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and select **[!UICONTROL Done]**. The tabbed template structure is applied.
 
 ### Adding content in tabs {#adding-content-in-tabs}
 
@@ -222,10 +224,10 @@ After you have added fields, you can add buttons such as Submit and Reset.
 #### コアコンポーネントの編集ダイアログでカスタムグループ名を選択します。 {#select-a-custom-group-name}
 
 1. アダプティブフォームを編集モードで開きます。
-1. テンプレートエディターでカスタムプロパティを定義したコンポーネントをタップし、をタップします。 ![settings_icon](assets/configure-icon.svg) をクリックして、コンポーネントの編集ダイアログを開きます。
+1. テンプレートエディターでカスタムプロパティを定義したコンポーネントを選択し、「 」を選択します。 ![settings_icon](assets/configure-icon.svg) をクリックして、コンポーネントの編集ダイアログを開きます。
 1. 「**[!UICONTROL 詳細]**」タブを選択します。
 1. 次の中からカスタムプロパティグループ名を選択します。 **[!UICONTROL カスタムプロパティの選択]** 」ドロップダウンリストから選択できます。 定義済みのすべてのカスタムグループ名が、ドロップダウンリストに自動的に入力されます。
-1. 「**[!UICONTROL 完了]**」をタップして、プロパティを保存します。
+1. 選択 **[!UICONTROL 完了]** をクリックしてプロパティを保存します。
 
 ![カスタムプロパティグループ名を選択](/help/forms/assets/select-custom-properties-group-name.png)
 

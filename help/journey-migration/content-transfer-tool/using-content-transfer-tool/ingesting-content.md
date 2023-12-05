@@ -2,10 +2,10 @@
 title: コンテンツの取り込みCloud Service
 description: Cloud Acceleration Manager を使用して、移行セットから宛先Cloud Serviceインスタンスにコンテンツを取り込む方法を説明します。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2326'
-ht-degree: 48%
+source-wordcount: '2275'
+ht-degree: 45%
 
 ---
 
@@ -49,7 +49,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 
    * **ワイプ：** を選択します。 `Wipe` 値
       * The **ワイプ** 「 」オプションは、インジェストの開始点を設定します。 次の場合 **ワイプ** を有効にすると、そのすべてのコンテンツを含む宛先が、Cloud Manager で指定されたAEMのバージョンにリセットされます。 有効にしない場合、宛先は現在のコンテンツを出発点として維持します。
-      * このオプションは **NOT** は、コンテンツの取り込みの実行方法に影響します。 取り込みでは常にコンテンツ置換戦略を使用し、 _not_ コンテンツ結合戦略で、両方で **ワイプ** および **ワイプしない** 場合、移行セットを取り込むと、宛先上の同じパスにあるコンテンツが上書きされます。 例えば、移行セットに `/content/page1` と宛先には既に次が含まれています： `/content/page1/product1`を含めない場合、取り込みにより、 `page1` パスとそのサブページ ( `product1`をクリックし、移行セット内のコンテンツに置き換えます。 つまり、 **ワイプしない** 管理する必要のあるコンテンツを含む宛先への取り込み。
+      * このオプションは、 **NOT** は、コンテンツの取り込みの実行方法に影響します。 取り込みでは常にコンテンツ置換戦略を使用し、 _not_ コンテンツ結合戦略で、両方で **ワイプ** および **ワイプしない** 場合、移行セットを取り込むと、宛先上の同じパスにあるコンテンツが上書きされます。 例えば、移行セットに `/content/page1` と宛先には既に次が含まれています： `/content/page1/product1`を含めない場合、取り込みにより、 `page1` パスとそのサブページ ( `product1`をクリックし、移行セット内のコンテンツに置き換えます。 つまり、 **ワイプしない** 管理する必要のあるコンテンツを含む宛先への取り込み。
 
    >[!IMPORTANT]
    > 設定が **ワイプ** を有効にすると、ターゲットリポジトリインスタンスに対するユーザー権限を含む、既存のCloud Service全体がリセットされます。 このリセットは、管理者ユーザーが **管理者** 取り込みを開始するには、グループに追加し、そのユーザーを administrators グループに再度追加する必要があります。
@@ -131,7 +131,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 
 ### AEMバージョンの更新と取り込み
 
-[AEMバージョンの更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=ja) は、最新のAEM as a Cloud Serviceバージョンを使用して最新の状態に保つために、環境に自動的に適用されます。 取り込みの実行中に更新がトリガーされると、環境が壊れるなど、予期しない結果が生じる可能性があります。
+[AEMバージョンの更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=ja) は、最新のAEM as a Cloud Serviceバージョンを使用して最新の状態に保つために、環境に自動的に適用されます。 取り込みの実行時に更新がトリガーされると、環境の破損を含む予期しない結果が生じる可能性があります。
 
 「AEM Version Updates」が宛先プログラムでオンボーディングされている場合、取り込みプロセスは、キューを開始する前に無効にしようとします。 取り込みが完了すると、バージョンアップデータの状態が、取り込みが開始される前の状態に戻ります。
 
@@ -147,7 +147,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### 追加取り込みエラー 一意性制約違反による
+### 一意性制約違反による追加取り込み失敗
 
 [追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)エラーの一般的な原因は、ノード ID の競合です。このエラーを識別するには、Cloud Acceleration Manager UI を使用して取り込みログをダウンロードし、次のようなエントリを探します。
 
@@ -167,7 +167,7 @@ AEM の各ノードには、一意の UUID が必要です。このエラーは�
 
 この問題は、取り込みとそれ以降の間に宛先のノードが変更された場合に発生する可能性があります **ワイプしない** 取り込み（新しいバージョンが作成される） 「バージョンを含める」を有効にして移行セットを抽出した場合、宛先にバージョン履歴や他のコンテンツで参照される最新のバージョンが含まれているので、競合が発生する可能性があります。 取り込みプロセスは、参照されているので、問題のあるバージョンノードを削除できません。
 
-解決策として、問題のあるノードがなくても、追加抽出を再度行う必要が生じる場合があります。または、問題のあるノードの小さな移行セットを作成し、「インクルードバージョン」を無効にします。
+ソリューションでは、問題のあるノードがなくても、追加抽出を再び実行する必要が生じる場合があります。 または、問題のあるノードの小さな移行セットを作成し、「インクルードバージョン」を無効にします。
 
 ベストプラクティスは、 **ワイプしない** 取り込みは、バージョンを含む（つまり、「include versions」=true で抽出される）移行セットを使用して実行する必要があります。移行ジャーニーが完了するまで、宛先のコンテンツをできるだけ変更する必要があります。 そうしないと、これらの競合が発生する可能性があります。
 

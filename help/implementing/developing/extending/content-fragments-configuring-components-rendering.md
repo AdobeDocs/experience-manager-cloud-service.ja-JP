@@ -2,10 +2,10 @@
 title: レンダリングコンポーネントのコンテンツフラグメントの設定
 description: レンダリングコンポーネントのコンテンツフラグメントの設定
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 96%
+source-wordcount: '519'
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 96%
 この情報は、次の場合に必要です。
 
 * 独自のコンテンツフラグメントベースのコンポーネントを実装する必要がある。
-* アドバンスドサービスを利用する必要がある。
+* アドバンスドサービスを使用する必要がある。
 
 Adobeは、コアコンポーネントの使用をお勧めします。
 

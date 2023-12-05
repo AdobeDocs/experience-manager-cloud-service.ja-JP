@@ -3,10 +3,10 @@ title: コアコンポーネントベースのアダプティブフォームを�
 description: AEM Formsでフォームデータモデルを作成し、サンプルデータとサービスを使用してモデルをテストし、モデルの様々なオプションを設定する方法を説明します。
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 93%
+source-wordcount: '884'
+ht-degree: 90%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 93%
 
 機械翻訳サービスを使用すると、アダプティブフォームおよび[レコードのドキュメント](/help/forms/generate-document-of-record-core-components.md)を即座に翻訳できます。AEM Forms as a Cloud Service では、機械翻訳に Microsoft Translator の体験版を使用することが事前に定義されています。アダプティブフォームおよびレコードのドキュメントの機械翻訳を有効にするには、以下の手順を実行します。
 
-1. AEM Forms UI 上でフォームを選択し、「**[!UICONTROL 辞書の追加]**」オプションをタップします。
-1. 辞書を翻訳プロジェクトに追加画面の、**[!UICONTROL プロジェクト]**&#x200B;オプション
+1. AEM Forms UI で、フォームを選択し、 **[!UICONTROL 辞書を追加]** オプション。
+1. 辞書を翻訳プロジェクトに追加画面の、「**[!UICONTROL プロジェクト]**」オプション
 
    * 翻訳プロジェクトを作成するには、「**[!UICONTROL 新しい翻訳プロジェクトを作成]**」オプションを選択し、「**プロジェクトタイトル**」フィールドでタイトルを指定します。例：`Government Reference Site - German locale.`
    * 新しい辞書を既存の翻訳プロジェクトに追加するには、「**[!UICONTROL 既存の翻訳プロジェクトに追加]**」オプションを選択し、「**[!UICONTROL 既存の翻訳プロジェクト]**」を選択します。
@@ -31,7 +31,7 @@ ht-degree: 93%
    ![翻訳を開始](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
 1. **翻訳ジョブ**&#x200B;タイルのステータスが「**承認済み**」に変わったら、「![aem62forms_downarrow](assets/aem62forms_downarrow.png)」アイコンをクリックし、「**完了**」をクリックします。
 
-1. ローカライズされたフォームをプレビューするには、AEM Forms UI で、ローカライズされたフォームを選択します。**[!UICONTROL プレビュー]**／**[!UICONTROL HTML としてプレビュー]**&#x200B;をクリックします。フォームの URL に `afAcceptLang=<locale code>` を追加した後、フォームを再度開きます。例えば、ドイツ語版のフォームを開くには `afAcceptLang=de` を追加します。
+1. ローカライズされたフォームをプレビューするには、AEM Forms UI で、ローカライズされたフォームを選択します。**[!UICONTROL プレビュー]**／**[!UICONTROL HTML をプレビュー]**&#x200B;をクリックします。フォームの URL に `afAcceptLang=<locale code>` を追加した後、フォームを再度開きます。例えば、ドイツ語版のフォームを開くには `afAcceptLang=de` を追加します。
 
 
    >[!NOTE]
@@ -49,7 +49,7 @@ ht-degree: 93%
    [Document of Record settings](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Customize the branding information of the document of record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) and ensure that the browser locale is set to the same language to which you have localized the Adaptive Form using machine language. The browser locale helps localize the branding information in the document of record.
-1. To view the localized document of record, tap Generate Preview. The document of record PDF is generated and opened in a new tab in your browser.
+1. To view the localized document of record, select Generate Preview. The document of record PDF is generated and opened in a new tab in your browser.
 
 -->
 
@@ -61,8 +61,8 @@ ht-degree: 93%
 
 人間による翻訳を使用してフォームとレコードのドキュメントをローカライズするには、次の手順を実行します。
 
-1. AEM Forms UI 上でフォームを選択し、「**[!UICONTROL 辞書の追加]**」オプションをタップします。
-1. 辞書を翻訳プロジェクトに追加画面の、**[!UICONTROL プロジェクト]**&#x200B;オプション
+1. AEM Forms UI で、フォームを選択し、 **[!UICONTROL 辞書を追加]** オプション。
+1. 辞書を翻訳プロジェクトに追加画面の、「**[!UICONTROL プロジェクト]**」オプション
 
    * 翻訳プロジェクトを作成するには、「**[!UICONTROL 新しい翻訳プロジェクトを作成]**」オプションを選択し、「**プロジェクトタイトル**」フィールドでタイトルを指定します。例：`Government Reference Site - German locale.`
    * 新しい辞書を既存の翻訳プロジェクトに追加するには、「**[!UICONTROL 既存の翻訳プロジェクトに追加]**」オプションを選択し、「**[!UICONTROL 既存の翻訳プロジェクト]**」を選択します。
@@ -82,7 +82,7 @@ ht-degree: 93%
 
    ![翻訳ファイルをインポート](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
-1. ローカライズされたフォームをプレビューするには、AEM Forms UI で、ローカライズされたフォームを選択します。**[!UICONTROL プレビュー]**／**[!UICONTROL HTML としてプレビュー]**&#x200B;をクリックします。フォームの URL に `afAcceptLang=<locale code>` を追加した後、フォームを再度開きます。例えば、ドイツ語版のフォームを開くには `afAcceptLang=de` を追加します。
+1. ローカライズされたフォームをプレビューするには、AEM Forms UI で、ローカライズされたフォームを選択します。**[!UICONTROL プレビュー]**／**[!UICONTROL HTML をプレビュー]**&#x200B;をクリックします。フォームの URL に `afAcceptLang=<locale code>` を追加した後、フォームを再度開きます。例えば、ドイツ語版のフォームを開くには、`afAcceptLang=de` を追加します。
 
 ## 関連トピック {#see-also}
 

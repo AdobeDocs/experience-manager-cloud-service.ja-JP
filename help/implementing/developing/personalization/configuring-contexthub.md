@@ -2,10 +2,10 @@
 title: ContextHub の設定
 description: コンテキストデータを保存、操作、表示するためのフレームワークである Context Hub の設定方法について説明します。
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1629'
-ht-degree: 87%
+source-wordcount: '1609'
+ht-degree: 85%
 
 ---
 
@@ -53,7 +53,7 @@ UI モードを追加すると、関連する ContextHub モジュールをグ�
 1. 次のプロパティの値を指定します。
 
    * UI モードのタイトル：UI モードを識別するタイトル。
-   * モードアイコン：使用する [Coral UI アイコン](https://helpx.adobe.com/jp/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)のセレクター（例：`coral-Icon--user`）。
+   * モードアイコン： [Coral UI アイコン](https://helpx.adobe.com/jp/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) 例えば、 `coral-Icon--user`
    * 有効：ContextHub ツールバーに UI モードを表示する場合に選択します
 
 1. 「保存」を選択します。
@@ -78,7 +78,7 @@ UI モジュールのプロパティには、モジュール固有のプロパ�
 
 1. Experience Managerレールで、ツール/サイト/ContextHub を選択します。
 1. UI モジュールを追加する設定コンテナを選択します。
-1. UI モジュールを追加する ContextHub 設定コンテナをクリックまたはタップします。
+1. UI モジュールを追加する ContextHub 設定を選択または入力します。
 1. UI モジュールを追加する UI モードを選択します。
 1. 「作成」ボタンを選択し、「 ContextHub UI モジュール（汎用） 」を選択します。
 

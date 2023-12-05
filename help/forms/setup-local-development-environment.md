@@ -2,10 +2,10 @@
 title: AEM Formsのローカル開発環境を設定する方法を教えてください。
 description: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境の設定
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2846'
-ht-degree: 94%
+source-wordcount: '2682'
+ht-degree: 95%
 
 ---
 
@@ -89,7 +89,7 @@ You can use the [development tools](https://experienceleague.adobe.com/docs/expe
 1. 「**[!UICONTROL AEM as a Cloud Service]**」タブに移動します。
 1. 公開日を降順で並べ替えます。
 1. 最新のAdobe Experience Manager as a Cloud Service SDK、Experience Manager Forms機能アーカイブ (AEM Formsアドオン )、フォームリファレンスアセット、またはForms Designer をクリックします。
-1. ソフトウェア利用許諾契約を確認し、同意します。「**[!UICONTROL ダウンロード]**」ボタンをタップします。
+1. ソフトウェア利用許諾契約を確認し、同意します。「**[!UICONTROL ダウンロード]**」ボタンを選択します。
 
 ## AEM プロジェクト用の開発ツールの設定 {#setup-development-tools-for-AEM-projects}
 
@@ -241,7 +241,7 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
 >[!NOTE]
 >
 > Microsoft® Dynamics 365 および Salesforce フォームデータモデルを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 30 以降に基づくプロジェクトをセットアップします。
->Tranquil、Urbane、Ultramarine テーマを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 32 以降に基づくプロジェクトをセットアップします。
+Tranquil、Urbane、Ultramarine テーマを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 32 以降に基づくプロジェクトをセットアップします。
 
 プロジェクトを設定するには、以下を実行します。
 
@@ -268,7 +268,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
      >[!WARNING]
      >
-     >* バージョン 45 でアーキタイププロジェクトを作成する場合、 [AEM Archetype プロジェクトフォルダー]/pom.xmlでは、最初にフォームコアコンポーネントのバージョンを 2.0.64 に設定します。アーキタイププロジェクトを構築またはデプロイする前に、フォームコアコンポーネントのバージョンを 2.0.62 に更新します。
+     * バージョン 45 でアーキタイププロジェクトを作成する場合、 [AEM Archetype プロジェクトフォルダー]/pom.xmlでは、最初にフォームコアコンポーネントのバージョンを 2.0.64 に設定します。アーキタイププロジェクトを構築またはデプロイする前に、フォームコアコンポーネントのバージョンを 2.0.62 に更新します。
 
 1. プロジェクトをローカル開発環境にデプロイします。以下のコマンドを使用して、ローカル開発環境にデプロイできます
 
@@ -335,7 +335,7 @@ Dispatcher を設定する詳細な手順については、「[ローカル Disp
 
 ## AEM Forms as a Cloud Service およびローカル開発環境で、アダプティブフォームのコアコンポーネントを有効にする
 
-AEM Formsas a Cloud ServiceのアダプティブFormsコアコンポーネントを有効にすると、AEM FormsCloud Serviceインスタンスを使用して、複数のチャネルに対して、アダプティブFormsおよびヘッドレスFormsベースのコアコンポーネントの作成、公開、配信を開始できます。 ヘッドレスアダプティブフォームを使用するには、アダプティブフォームコアコンポーネントが有効な環境が必要です。
+AEM Forms as a Cloud Service のアダプティブフォームのコアコンポーネントを有効にすると、AEM Forms Cloud Service インスタンスを使用して、複数のチャネルへのコアコンポーネントベースのアダプティブフォームとヘッドレスフォームの作成、公開、配信を開始できます。ヘッドレスアダプティブフォームを使用するには、アダプティブフォームコアコンポーネントが有効な環境が必要です。
 
 手順については、[AEM Forms as a Cloud Service およびローカル開発環境でのアダプティブフォームコアコンポーネントの有効化](/help/forms/enable-adaptive-forms-core-components.md)を参照してください。
 

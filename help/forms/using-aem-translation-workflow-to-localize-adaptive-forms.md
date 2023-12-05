@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 94%
+source-wordcount: '533'
+ht-degree: 90%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 94%
 
 機械翻訳サービスを使用すると、アダプティブフォームおよびレコードのドキュメントを即座に翻訳できます。[!DNL AEM Forms] では、機械翻訳に [!DNL Microsoft Translator] の体験版を使用するように事前設定されています。アダプティブフォームおよびレコードのドキュメントの機械翻訳を有効にするには、以下の手順を実行します。
 
-1. [!DNL AEM Forms] UI 上でフォームを選択し、「**辞書の追加**」オプションをタップします。
+1. 次の日： [!DNL AEM Forms] UI、フォームを選択し、 **辞書を追加** オプション。
 1. **辞書を翻訳プロジェクトに追加** 画面で、「**新しい翻訳プロジェクトを作成**」または「**既存の翻訳プロジェクトを追加**」オプションを選択します。
 1. 「**プロジェクトタイトル**」フィールドでタイトルを指定します。例：`Government Reference Site - German locale.`
 1. 「**ターゲット言語**」フィールドでロケールを指定し（例えば `German(de)` と入力します）、「**完了**」をクリックします。複数のロケールを指定できます。フォームは、**ターゲット言語**&#x200B;フィールドに指定されたすべてのロケールに翻訳されます。
@@ -48,7 +48,7 @@ ht-degree: 94%
 [レコードのドキュメントの設定](generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [レコードのドキュメントのブランディング情報をカスタマイズ](generate-document-of-record-for-non-xfa-based-adaptive-forms.md)し、ブラウザーのロケールを、機械語を使用してアダプティブフォームをローカライズしたのと同じ言語に設定します。ブラウザーのロケールは、レコードのドキュメントにあるブランディング情報のローカライズに役立ちます。
-1. ローカライズされたレコードのドキュメントを表示するには、「プレビューを生成」をタップします。レコードのドキュメントの PDF が生成され、ブラウザーの新しいタブに表示されます。
+1. ローカライズされたレコードのドキュメントを表示するには、「プレビューを生成」を選択します。 レコードのドキュメントの PDF が生成され、ブラウザーの新しいタブに表示されます。
 
 <!-- ## Localizing an Adaptive Form and its Document of Record using Human Translation {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 

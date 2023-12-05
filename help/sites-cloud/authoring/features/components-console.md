@@ -2,10 +2,10 @@
 title: コンポーネントコンソール
 description: コンポーネントコンソールを使用すると、インスタンスに定義されたすべてのコンポーネントを参照できます
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 69%
+ht-degree: 66%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 69%
 
 コンポーネントコンソールを使用すると、インスタンスに定義されたすべてのコンポーネントを参照し、各コンポーネントの主な情報を表示できます。
 
-**ツール**／**一般**／**コンポーネント**&#x200B;からアクセスできます。コンポーネントのツリー構造がないので、リスト表示のみ使用できます。
+次の場所からアクセスできます。 **ツール/** **一般/** **コンポーネント**. コンポーネントのツリー構造がないので、リスト表示のみ使用できます。
 
 ![コンポーネントコンソール](/help/sites-cloud/authoring/assets/components-console.png)
 

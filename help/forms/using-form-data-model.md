@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1231'
-ht-degree: 61%
+source-wordcount: '1213'
+ht-degree: 58%
 
 ---
 
@@ -46,13 +46,13 @@ JSON スキーマの拡張機能であるフォームデータモデルを使用
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. 「**[!UICONTROL フォームデータモデルを選択]**」をタップして展開します。使用可能なすべてのフォームデータモデルが表示されます。
+1. 選択して展開 **[!UICONTROL フォームデータモデルを選択]**. 使用可能なすべてのフォームデータモデルが表示されます。
 
    データモデルからを選択します。
 
    ![create-af-2-1](assets/create-af-2-1.png)
 
-1. （**アダプティブフォームフラグメントのみ**）フォームデータモデル内の 1 つのデータモデルオブジェクトのみに基づいて、アダプティブフォームフラグメントを作成できます。**[!UICONTROL フォームデータモデル定義]**&#x200B;ドロップダウンを展開します。指定したフォームデータモデル内のすべてのデータモデルオブジェクトが一覧表示されます。 リストからデータモデルオブジェクトを選択します。
+1. （**アダプティブフォームフラグメントのみ**）フォームデータモデル内の 1 つのデータモデルオブジェクトのみに基づいて、アダプティブフォームフラグメントを作成できます。**[!UICONTROL フォームデータモデル定義]**&#x200B;ドロップダウンを展開します。指定したフォームデータモデル内のすべてのデータモデルオブジェクトがリスト表示されます。リストから、データモデルオブジェクトを選択します。
 
    ![create-af-3](assets/create-af-3.png)
 
@@ -93,14 +93,14 @@ For more information, see:
 <!--To preview an interactive communication with sample Form Data Model data:
 
 1. On [!DNL  Experience Manager] author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
-1. Select an interactive communication and tap **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
-1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and tap **[!UICONTROL Preview]**.
+1. Select an interactive communication and select **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
+1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and select **[!UICONTROL Preview]**.
 
 The interactive communication opens with prefilled sample data.
 
 ![web-preview](assets/web-preview.png)-->
 
-サンプルデータが取り込まれた状態のアダプティブフォームをプレビューするには、オーサーモードでアダプティブフォームを開いて「**[!UICONTROL プレビュー]**」をタップします。
+サンプルデータを含むアダプティブフォームをプレビューするには、アダプティブフォームをオーサリングモードで開き、「 **[!UICONTROL プレビュー]**.
 
 ## フォームデータモデルサービスを使用したデータの事前入力 {#prefill}
 
@@ -130,10 +130,10 @@ Edit Properties dialog for an interactive communication-->
 
 1. バイナリプロパティを含むデータモデルオブジェクトをフォームデータモデルに追加します。
 1. コンポーネントブラウザーの「**[!UICONTROL 添付ファイル]**」コンポーネントを、アダプティブフォームにドラッグ＆ドロップします。
-1. 追加されたコンポーネントをタップして選択し、次に ![settings_icon](assets/configure-icon.svg) をタップして、そのコンポーネントのプロパティブラウザーを開きます。
-1. 「バインド参照」フィールドで ![foldersearch_18](assets/folder-search-icon.svg) をタップし、フォームデータモデルに追加したバイナリプロパティに移動してそのプロパティを選択します。必要に応じて、他のプロパティを設定します。
+1. 「 」を選択して追加したコンポーネントを選択し、「 」を選択します。 ![settings_icon](assets/configure-icon.svg) をクリックして、コンポーネントのプロパティブラウザーを開きます。
+1. 「バインド参照」フィールドで、「 ![foldersearch_18](assets/folder-search-icon.svg) フォームデータモデルに追加したバイナリプロパティに移動して選択します。 必要に応じて、他のプロパティを設定します。
 
-   ![check-button](assets/save_icon.svg) をタップしてプロパティを保存します。これで、添付フィールドがフォームデータモデルのバイナリプロパティにバインドされました。
+   選択 ![check-button](assets/save_icon.svg) をクリックしてプロパティを保存します。 これで、添付フィールドがフォームデータモデルのバイナリプロパティにバインドされました。
 
 1. アダプティブフォームコンテナプロパティの「送信」セクションで、 **[!UICONTROL フォームの添付ファイルを送信]**. バイナリプロパティフィールド内の添付ファイルが、フォーム送信時にデータソースに送信されます。
 

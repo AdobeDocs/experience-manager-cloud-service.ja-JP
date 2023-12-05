@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 99%
+source-wordcount: '1507'
+ht-degree: 97%
 
 ---
 
@@ -158,7 +158,7 @@ ht-degree: 99%
 
    >[!NOTE]
    >
-   >* 混在メディアセット内のアセットを編集するには - 混在メディアセットに移動します。セットを（選択ではなく）タップして、Adobe Experience Manager のプレビューを設定ページで開きます。左パネルで、下向き矢印を選択してドロップダウンリストを開き、「**[!UICONTROL メンバーを設定]**」を選択します。メンバーを設定ページで、アセットの上にマウスポインターを置き、「**[!UICONTROL 編集]**」（鉛筆アイコン）を選択して編集ページを開きます。
+   >* 混在メディアセット内のアセットを編集するには - 混在メディアセットに移動します。セットを選択（選択しない）して、「プレビューをExperience Manager」(Set Preview) ページで開けるようにします。 左パネルで、下向き矢印を選択してドロップダウンリストを開き、「**[!UICONTROL メンバーを設定]**」を選択します。メンバーを設定ページで、アセットの上にマウスポインターを置き、「**[!UICONTROL 編集]**」（鉛筆アイコン）を選択して編集ページを開きます。
    >
    >* 混在メディアセット全体を削除するには - 任意の表示モード（カード表示や列表示など）から混在メディアセットに移動します。セットの上にマウスポインターを置き、「**[!UICONTROL 選択]**」（チェックマークアイコン）を選択します。キーボードの **[!UICONTROL Backspace]** キーを押すか、「**[!UICONTROL 詳細]**」（連続する 3 つのドット）を選択してから「**[!UICONTROL 削除]**」を選択します。
 

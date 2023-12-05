@@ -2,9 +2,9 @@
 title: コンソールのカスタマイズ
 description: オーサーインスタンスのコンソールをカスタマイズするためにAEMが提供する様々なオプションについて説明します。
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '516'
 ht-degree: 11%
 
 ---
@@ -111,7 +111,7 @@ clientlibs を使用すると、デフォルトの実装を拡張して新しい
 
 >[!NOTE]
 >
->この機能は、テキストフィールドの列に対して最適化されています。他のデータタイプの場合は、 `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
+>この機能は、テキストフィールドの列に対して最適化されています。 他のデータタイプの場合は、 `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
 
 ### リソースのフィルタリング {#filtering-resources}
 

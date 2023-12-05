@@ -3,7 +3,7 @@ title: アダプティブフォームの送信アクションの設定方法
 description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自の送信アクションを作成できます
 keywords: アダプティブフォームの送信アクションの選択、アダプティブフォームの sharepoint リストへの接続、アダプティブフォームの sharepoint ドキュメントライブラリへの接続、アダプティブフォームのフォームデータモデルへの接続の方法
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '4006'
 ht-degree: 90%
@@ -198,7 +198,7 @@ AEM FormsをMicrosoft® Sharepoint リストに接続するには：
 
 1. 「**[!UICONTROL 接続]**」をクリックします。接続に成功した場合、`Connection Successful` のメッセージが表示されます。
 1. 選択 **[!UICONTROL SharePoint Site]** および **[!UICONTROL SharePoint List]** 」をドロップダウンリストから選択します。
-1. 「**[!UICONTROL 作成]**」をタップして、RESTful サービス用のクラウド設定を作成します。
+1. 選択 **[!UICONTROL 作成]** Microsoft® SharePointList のクラウド設定を作成する場合。
 
 
 #### アダプティブフォーム内でのフォームデータモデルを使用した送信の使用 {#use-submit-using-fdm}

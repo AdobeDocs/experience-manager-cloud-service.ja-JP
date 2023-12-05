@@ -2,10 +2,10 @@
 title: 大規模なコンテンツリポジトリーの処理
 description: この節では、大規模なコンテンツリポジトリーの処理について説明します
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1835'
-ht-degree: 98%
+source-wordcount: '1800'
+ht-degree: 96%
 
 ---
 
@@ -179,7 +179,7 @@ AzCopy のログエントリは抽出ログに表示され、先頭に c.a.g.s.m
 > 抽出の最初の数分は、問題の兆候がないか抽出ログを注意して確認します。例として、ソース Azure コンテナが見つからない場合にログに記録される内容を次に示します。
 
 ```
-[AzCopy pre-copy] failed to perform copy command due to error: cannot start job due to error: cannot list files due to reason -> github.com/Azure/azure-storage-blob-go/azblob.newStorageError, github.com/Azure/azure-storage-blob-go@v0.10.1-0.20210407023846-16cf969ec1c3/azblob/zc_storage_error.go:42
+[AzCopy pre-copy] failed to perform copy command due to error: cannot start job due to error: cannot list files due to reason > github.com/Azure/azure-storage-blob-go/azblob.newStorageError, github.com/Azure/azure-storage-blob-go@v0.10.1-0.20210407023846-16cf969ec1c3/azblob/zc_storage_error.go:42
 [AzCopy pre-copy] ===== RESPONSE ERROR (ServiceCode=ContainerNotFound) =====
 [AzCopy pre-copy] Description=The specified container does not exist.
 [AzCopy pre-copy] RequestId:5fb674b9-201e-001b-2a5b-527400000000
@@ -201,9 +201,7 @@ AzCopy がソースファイルデータストアに対して実行されてい�
 
 ### 5. AzCopy で取り込む {#ingesting-azcopy}
 
-Cloud Acceleration Manager（CAM）からターゲットにコンテンツを取り込む方法に関する一般的な情報については、
-[ターゲットへのコンテンツの取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)を参照してください。これには、
-「新規取り込み」ダイアログで AzCopy（プレコピー）を使用する方法、または使用しない方法が含まれます。 
+詳しくは、 [Target へのコンテンツの取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) Cloud Acceleration Manager(CAM) からターゲットにコンテンツを取り込む方法に関する一般的な情報 (「新規取り込み」ダイアログで AzCopy（プリコピー）を使用する方法や使用しない方法など )。
 
 取り込み中に AzCopy を利用するには、バージョン 2021.6.5561 以上の AEM as a Cloud Service バージョンを使用する必要があります。
 

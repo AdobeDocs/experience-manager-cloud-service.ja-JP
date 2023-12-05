@@ -2,16 +2,16 @@
 title: アダプティブFormsのレイアウト機能とは
 description: 各種デバイスごとのアダプティブフォームのレイアウトと外観はレイアウト設定で管理できます。各種レイアウトとレイアウトの適用方法について説明します。
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 78%
+source-wordcount: '847'
+ht-degree: 81%
 
 ---
 
 # アダプティブフォームのレイアウト機能 {#layout-capabilities-of-adaptive-forms}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
 
 
 | バージョン | 記事リンク |
@@ -43,7 +43,7 @@ Before learning about the different layout capabilities of Adaptive Forms, read 
 
 フォーム作成者は、ルートパネルを含めたアダプティブフォームの各パネルにレイアウトを関連付けることができます。
 
-パネルレイアウトは`/libs/fd/af/layouts/panel`から利用できます。パネルをタップし、![cmppr1](assets/configure-icon.svg) を選択して、パネルのプロパティを表示します。
+パネルレイアウトは`/libs/fd/af/layouts/panel`から利用できます。パネルを選択し、「 」を選択します。 ![cmppr1](assets/configure-icon.svg) をクリックして、パネルのプロパティを表示します。
 
 ![アダプティブフォームのルートパネルに使用できるパネルレイアウトのリスト](assets/layouts.png)
 
@@ -75,7 +75,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![アコーディオンレイアウトを使用したアダプティブフォームの繰り返し可能なパネル](assets/accordion-layout.png)
 
-### [!UICONTROL タブ付きレイアウト - タブを左側に表示 ] {#tabbed-layout-tabs-appear-on-the-left}
+### [!UICONTROL タブ付きレイアウト — タブを左側に表示]{#tabbed-layout-tabs-appear-on-the-left}
 
 このレイアウトを使用すると、タブ付きナビゲーションのパネルに&#x200B;**[!UICONTROL アダプティブフォームのパネル]**&#x200B;コンポーネントを配置できます。タブはパネルコンテンツの左側に配置されます。
 
@@ -109,7 +109,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![フォームのヘッダー部分にパネルタイトルを表示するモバイルレイアウト](assets/mobile-layout1.png)
 
-### [!UICONTROL フォームのヘッダー部分にパネルタイトルを表示しないレイアウト ] {#layout-without-panel-titles-in-the-form-header}
+### [!UICONTROL フォームのヘッダー部分にパネルタイトルを表示しないレイアウト]{#layout-without-panel-titles-in-the-form-header}
 
 このレイアウトは、名前が示すように、ナビゲーションメニューとナビゲーションバーのみを表示し、パネルタイトルは表示されません。 このレイアウトでは、ナビゲーション用に「次へ」アイコンと「前へ」アイコンも表示されます。
 

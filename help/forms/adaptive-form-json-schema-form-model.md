@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1347'
-ht-degree: 100%
+source-wordcount: '1333'
+ht-degree: 99%
 
 ---
 
@@ -738,7 +738,7 @@ JSON スキーマの要素に以下の制限を追加して、アダプティブ
 
 1. Experience ManagerWeb コンソール ( ) に移動します。 `https://server:host/system/console/configMgr`.
 1. **[!UICONTROL アダプティブフォームおよびインタラクティブ通信 web チャネルの設定]**
-1. その設定をタップして編集モードで開きます。
+1. 「 」を選択して、設定を編集モードで開きます。
 1. を選択します。 **[!UICONTROL スキーマ準拠データを生成]** チェックボックス。
 1. 設定を保存します。
 

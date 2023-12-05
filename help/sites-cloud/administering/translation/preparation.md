@@ -4,10 +4,10 @@ description: 多言語 Web サイトを開発する際に、翻訳するコン�
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 83%
+source-wordcount: '756'
+ht-degree: 68%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 83%
 1. 言語マスターのコンテンツをオーサリングします。
 1. サイトの各言語コピーの言語ルートを作成します。例えば、WKND のサンプルサイトのフランス語の言語コピーは `/content/wknd/language-masters/fr` です。
 
-翻訳するコンテンツの準備が完了したら、言語コピーおよび関連する翻訳プロジェクトの不足ページを自動的に作成できます（[翻訳プロジェクトの作成](managing-projects.md)を参照）。AEM のコンテンツ翻訳プロセスの概要については、[多言語サイトのコンテンツの翻訳](overview.md)を参照してください。
+翻訳するコンテンツを準備した後、言語コピーと関連する翻訳プロジェクトに、見つからないページを自動的に作成できます。 ( 詳しくは、 [翻訳プロジェクトの作成](managing-projects.md).) AEMのコンテンツ翻訳プロセスの概要については、 [多言語 Web サイトのコンテンツの翻訳](overview.md).
 
 ## 言語ルートの作成 {#creating-a-language-root}
 
@@ -68,8 +68,8 @@ ht-degree: 83%
 
 言語ルートを作成するには、ページを作成し、「**名前**」プロパティの値として ISO 言語コードを使用します。言語コードは次のどちらかの形式にしてください。
 
-* `<language-code>`：サポートされている言語コードは、ISO-639-1 で定義されている 2 文字のコード（例：`en`）です。
-* `<language-code>_<country-code>` または `<language-code>-<country-code>`：サポートされている国コードは、ISO 3166 で定義されている小文字または大文字 2 文字のコード（例：、`en_US`、`en_us`、`en_GB`、`en-gb`）です。
+* `<language-code>`  — サポートされている言語コードは、ISO-639-1 で定義されている 2 文字のコードです。例： `en`.
+* `<language-code>_<country-code>` または `<language-code>-<country-code>`  — サポートされている国コードは、ISO 3166 で定義されている小文字または大文字 2 文字のコードです。例： `en_US`, `en_us`, `en_GB`, `en-gb`.
 
 グローバルサイト用に選択した構造に従って、どちらかの形式を使用できます。例えば、WKND サイトのフランス語の言語コピーのルートページの「`fr`名前&#x200B;**」プロパティは** になります。The **名前** プロパティは、リポジトリ内のページノードの名前として使用されるので、ページのパスを決定します (`http://<host>:<4502>/content/wknd/language-masters/fr.html`) をクリックします。
 
@@ -80,7 +80,7 @@ ht-degree: 83%
    ![ページを作成](../assets/create-page.png)
 
 1. ページテンプレートを選択し、「 」を選択します。 **次へ**.
-1. 「**名前**」フィールドに言語コードを入力します。言語コードの形式は `<language-code>` または `<language-code>_<country-code>` です。例：`en`、`en_US`、`en_us`、`en_GB`、`en_gb`。ページのタイトルを入力します。
+1. Adobe Analytics の **名前** フィールド国コードを次の形式で入力： `<language-code>` または `<language-code>_<country-code>`例： `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. ページのタイトルを入力します。
 
    ![言語ルートページの作成](../assets/create-language-root.png)
 
@@ -102,7 +102,7 @@ AEM には&#x200B;**参照**&#x200B;パネルがあります。このパネル�
 
 ## 複数のレベルの言語コピー {#multiple-levels}
 
-言語ルートは、言語コピーのルートを認識できる状態で、ノード（地域など）の下にグループ化することもできます。
+言語ルートは、ノード（例えば、地域）の下にグループ化することもできますが、言語コピーのルートとして認識されます。
 
 ```text
 /content

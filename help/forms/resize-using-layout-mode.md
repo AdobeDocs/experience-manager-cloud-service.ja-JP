@@ -5,16 +5,16 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 89%
+source-wordcount: '1138'
+ht-degree: 76%
 
 ---
 
 # レイアウトモードを使用して、アダプティブFormsのコンポーネントのサイズを変更する {#use-layout-mode-to-resize-components}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -37,7 +37,7 @@ ht-degree: 89%
 
 ## コンポーネントのサイズ変更 {#resize-components}
 
-1. レイアウトモードで、サイズを変更するコンポーネントをタップします。レスポンシブグリッドの開始と終了に青い点が表示されます。
+1. レイアウトモードで、サイズを変更するコンポーネントを選択します。 レスポンシブグリッドの開始と終了に青い点が表示されます。
 1. レスポンシブグリッド内のコンポーネントの位置を定義する青い点をドラッグ＆ドロップします。
 
    ![レイアウトモードを使用したサイズ変更](assets/layout_mode_resize_new_updated1.png)
@@ -59,7 +59,7 @@ ht-degree: 89%
 **目的：** テーブルコンポーネントと画像コンポーネントを挿入し、アダプティブフォームでそれらを互いに平行に配置します。
 
 1. アダプティブフォームで[!UICONTROL 編集]モードを使用して、テーブルコンポーネントと画像コンポーネントを挿入します。画像コンポーネントは、テーブルコンポーネントの後に表示されます。
-1. [!UICONTROL レイアウト]モードに切り替えて、[!UICONTROL テーブル]コンポーネントをタップします。コンポーネントのサイズを変更する青い点が列 1 と列 12 に表示されます。
+1. 切り替え先 [!UICONTROL レイアウト] モードを選択し、 [!UICONTROL テーブル] コンポーネント。 コンポーネントのサイズを変更する青い点が列 1 と列 12 に表示されます。
 1. レスポンシブグリッドの列 12 の青い点を列 6 にドラッグします。
 
    ![テーブルの終了点を定義](assets/layout_mode_end_point_table_new.png)
@@ -68,13 +68,13 @@ ht-degree: 89%
 
    ![レイアウトモードでのテーブルと画像の並行表示](assets/table_image_parallel_new.png)
 
-   画像コンポーネントを選択し、ツールバーにある「**[!UICONTROL 新しい行にフローティングする]**」オプションをタップして、画像コンポーネントを次の行に移動できます。
+   画像コンポーネントを選択し、 **[!UICONTROL 新規行にフロート]** オプションを使用して、画像コンポーネントを次の行に移動できます。
 
 ## パネルのサイズ変更 {#resize-panels-layout-mode}
 
 個々のコンポーネントではなくパネル全体のサイズを変更する場合は、以下の手順を実行します。
 
-1. パネル内でサイズを変更するコンポーネントのいずれかをタップし、「![親を選択](assets/select_parent_icon.svg)」を選択して、ドロップダウンリストの最初のオプションを選択します（パネルがコンポーネントの直接の親である場合）。
+1. パネル内のサイズを変更するコンポーネントを選択し、「 」を選択します。 ![親を選択](assets/select_parent_icon.svg)パネルがコンポーネントの直近の親である場合は、をクリックして、ドロップダウンリストの最初のオプションを選択します。
 
    レスポンシブグリッドの開始と終了に青い点が表示されます。
 
@@ -84,13 +84,13 @@ ht-degree: 89%
 
 以下の手順を実行して、パネルの列数を定義します。
 
-1. **[!UICONTROL 編集]** モードで、パネルをタップし、「![設定](assets/configure-icon.svg)」を選択します。次に、**[!UICONTROL パネルレイアウト]**&#x200B;ドロップダウンリストから「**[!UICONTROL レスポンシブ - ページ上のすべて（ナビゲーションなし）]**」を選択します。
+1. In **[!UICONTROL 編集]** モード、パネルを選択、 ![設定](assets/configure-icon.svg)をクリックし、次を選択します。 **[!UICONTROL レスポンシブ — ナビゲーションなしでページ上のすべて]** オプションを **[!UICONTROL パネルレイアウト]** 」ドロップダウンリストから選択できます。
 
-1. 「![保存](assets/save_icon.svg)」をタップして、プロパティを保存します。
+1. 選択 ![保存](assets/save_icon.svg) をクリックしてプロパティを保存します。
 
-1. **[!UICONTROL レイアウト]** モードで、パネル内の任意のコンポーネントをタップし、「![親を選択](assets/select_parent_icon.svg)」を選択して、パネルを選択します。
+1. Adobe Analytics の **[!UICONTROL レイアウト]** モードで、パネル内の任意のコンポーネントを選択し、 ![親を選択](assets/select_parent_icon.svg)をクリックし、パネルを選択します。
 
-1. ![複数列](assets/multi-column.svg) をタップし、ドロップダウンリストから列数を選択します。列数の範囲は 1 ～ 12 です。パネルが複数列のレイアウトに分割されます。
+1. 選択 ![複数列](assets/multi-column.svg) をクリックし、ドロップダウンリストから列数を選択します。 列数の範囲は 1 ～ 12 です。パネルが複数列のレイアウトに分割されます。
 
 ![レイアウトモードでの複数列](assets/multi-column-layout.png)
 
@@ -105,7 +105,7 @@ ht-degree: 89%
 以下の手順を実行して、新しいレスポンシブグリッドを有効にします。
 
 1. 「**[!UICONTROL プレビュー]**」オプションの横の上部に表示されるドロップダウンリストから「**[!UICONTROL レイアウト]**」を選択します。レイアウトモードを有効にするための確認メッセージが表示されます。
-1. 「**[!UICONTROL はい]**」をタップして、フォームの&#x200B;**[!UICONTROL レイアウト]**&#x200B;モードを有効にします。
+1. 選択 **[!UICONTROL はい]** 有効にする **[!UICONTROL レイアウト]** フォームのモード。
 
 ### 新しいレスポンシブレイアウトを使用した、古いフラグメントのアダプティブフォームへの埋め込み {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
@@ -115,7 +115,7 @@ ht-degree: 89%
 
 古いレスポンシブレイアウトを含むアダプティブフォームで、新しいレスポンシブレイアウトを使用してフラグメントを埋め込むと、そのフォームのレイアウトモードを有効にし、フラグメントを再埋め込みするよう求められます。
 
-レイアウトモードを有効にするには、「**[!UICONTROL プレビュー]**」オプションの横の上部に表示されるドロップダウンリストから「**[!UICONTROL レイアウト]**」を選択し、「**[!UICONTROL はい]**」をタップして確認します。**[!UICONTROL 編集]**&#x200B;モードを選択して、フラグメントを再埋め込みします。
+レイアウトモードを有効にするには、 **[!UICONTROL レイアウト]** 」を選択します。 **[!UICONTROL プレビュー]** オプションと選択 **[!UICONTROL はい]** をクリックして確定します。 **[!UICONTROL 編集]**&#x200B;モードを選択して、フラグメントを再埋め込みします。
 
 ## 古いレスポンシブレイアウトを含むフォームに対するレイアウトモードの無効化 {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
@@ -124,12 +124,12 @@ ht-degree: 89%
 レイアウトモードを無効にするには、以下の手順を実行します。
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL 一般]**／**[!UICONTROL テンプレート]**&#x200B;を選択し、フォームで使用するテンプレートを&#x200B;**[!UICONTROL 編集]**&#x200B;モードで開きます。
-1. 左側のウィンドウでフォームコンテナを選択し、「**[!UICONTROL ポリシー]**」をタップします。
+1. 左側のペインでフォームコンテナを選択し、「 」を選択します。 **[!UICONTROL ポリシー。]**
 
    ![レイアウトモードを無効にする](assets/policy_disable_layout_mode.png)
 
-1. 「**[!UICONTROL レイアウト設定]**」タブをタップし、「**[!UICONTROL レイアウトモードを無効にする]**」を選択します。
-1. 「![変更を保存](assets/save_icon.svg)」をタップして、テンプレートプロパティを保存します。
+1. を選択します。 **[!UICONTROL レイアウト設定]** 「 」タブで「 」を選択します。 **[!UICONTROL レイアウトモードを無効にする]**.
+1. 選択 ![変更を保存](assets/save_icon.svg) をクリックして、テンプレートのプロパティを保存します。
 
 ## 関連トピック {#see-also}
 

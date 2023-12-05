@@ -1,22 +1,18 @@
 ---
 title: Adobe AnalyticsとAEM Screens Cloud の統合
-seo-title: Adobe Analytics Integration with AEM Screens
 description: ここでは、標準で利用できる、AEM Screens と Adobe Analytics の統合について説明し、提供される再生検証機能についても紹介します。
-seo-description: Follow this page to learn about out of the box integration of AEM Screens with Adobe Analytics and provides you with a proof of play.
-uuid: 80d61af7-bf4d-46ca-a026-99a666c2e1a0
 contentOwner: trushton
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Cloud/SCREENS
 topic-tags: administering
-discoiquuid: b1a0e00e-0368-42c9-8bcd-5f00b4d0990c
 docset: aem65
 role: Admin, Developer
 level: Intermediate
 exl-id: e22242ce-e5ce-4486-bba4-e6a89ac4fb5e
-source-git-commit: 75d147886c8151f8b8ac41af907e17b5deff5a9c
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 82%
+source-wordcount: '408'
+ht-degree: 75%
 
 ---
 
@@ -49,7 +45,7 @@ Adobe Analytics と AEM Screens の統合により、*次の*&#x200B;目標を�
 
 ## アーキテクチャの詳細 {#architectural-details}
 
-AEM Screens ユーザーは、どのコンテンツが、いつ、どのくらいの時間（集計）表示されたかを把握したいと考えています。これは、サイネージソリューションの一般的な機能です。独自に分析を作成するのではなく、AEM Screens で Adobe Analytics を活用することにより、特定の場所に表示されるコンテンツと他のデータソースとの関連性を探るのに役立つユニークなクロスチャネル分析を実現できます。
+AEM Screens ユーザーは、どのコンテンツが、いつ、どのくらいの時間（集計）表示されたかを把握したいと考えています。これは、サイネージソリューションの一般的な機能です。AEM Screensでは、独自の分析を作成する代わりにAdobe Analyticsを使用して、特定の場所に表示されるコンテンツと他のデータソースとの関連を探るのに役立つユニークなクロスチャネル分析を実現できます。
 
 次のアーキテクチャ図では、Adobe Analytics と AEM Screens の統合について説明しています。
 
@@ -57,7 +53,7 @@ AEM Screens ユーザーは、どのコンテンツが、いつ、どのくら�
 
 ## AEM Screens Cloud でのAdobe Analyticsの有効化 {#enabling-adobe-analytics-in-aem-screens-cloud}
 
-Screens Cloud でAdobe分析を有効にするには、Adobeのリレーションシップマネージャーにお問い合わせください。
+担当のAdobeリレーションシップマネージャーに連絡して、Screens Cloud でAdobe分析を有効にしてもらってください。
 
 ## AEM Screens Cloud でのAdobe Analytics Service の使用 {#using-adobe-analytics-service-in-aem-screens}
 

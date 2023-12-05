@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3629'
-ht-degree: 87%
+source-wordcount: '3587'
+ht-degree: 85%
 
 ---
 
 # 画像プリセットの管理{#managing-image-presets}
 
-画像プリセットを使用すると、Adobe Experience Manager Assets は異なるサイズや異なる形式の画像、あるいは動的に生成された他の画像プロパティを設定した画像を動的に配信できます。各画像プリセットは、画像を表示するためのサイズとフォーマットに関するコマンドの事前定義済みのコレクションを表します。 画像プリセットを作成する際に、画像配信のサイズを選択します。 また、画像が表示用に配信される際に、画像の外観が最適化されるように、書式設定コマンドを選択します。
+画像プリセットを使用すると、Adobe Experience Manager Assets は異なるサイズや異なる形式の画像、あるいは動的に生成された他の画像プロパティを設定した画像を動的に配信できます。各画像プリセットは、画像を表示するためのサイズとフォーマットに関するコマンドの事前定義済みのコレクションを表します。 画像プリセットを作成する際に、画像配信用のサイズを選択します。 また、画像が表示用に配信される際に、画像の外観が最適化されるように、書式設定コマンドを選択します。
 
 管理者は、アセットを書き出すためのプリセットを作成できます。ユーザーは画像を書き出すときにプリセットを選択できます。また、この操作によって、管理者が指定した仕様に合わせて画像が再フォーマットされます。
 
@@ -32,7 +32,7 @@ ht-degree: 87%
 
 デスクトップバージョン（500 x 500 ピクセル）とモバイルバージョン（150 x 150 ピクセル）の 2 つの画像プリセットを作成できます。2 つの画像プリセットを作成します。つまり、500 x 500 ピクセルで画像を表示するための `Enlarge` プリセットとで、150 x 150 ピクセルで画像を表示するための `Thumbnail` プリセットです。`Enlarge` および `Thumbnail` サイズの画像を配信するために、Adobe Experience Manager では「拡大画像プリセット」と「サムネール画像プリセット」の定義を検索します。その後、Adobe Experience Manager は各画像プリセットのサイズと形式の仕様に従って画像を動的に生成します。
 
-動的に配信される際にサイズが縮小された画像は、シャープさとディテールが失われる可能性があります。 このため、各画像プリセットには、特定のサイズで配信される場合に画像を最適化するための書式設定コントロールが含まれています。 これらのコントロールを使用すると、画像が Web サイトやアプリケーションに配信される際に、シャープで明確な画像を生成できます。
+動的に配信される際にサイズが縮小された画像は、シャープさとディテールが失われる可能性があります。 このため、各画像プリセットには、特定のサイズで配信される場合に画像を最適化するための書式設定コントロールが含まれています。 これらのコントロールを使用すると、画像が Web サイトやアプリケーションに配信される際に、シャープで明確な画像を使用できます。
 
 管理者は画像プリセットを作成できます。 画像プリセットを作成するには、最初から開始するか、既存のプリセットから開始して新しい名前で保存します。
 
@@ -46,7 +46,7 @@ Adobe Experience Manager で画像プリセットを管理するには、Adobe E
 >
 >作成した画像プリセットは、アセットをプレビューまたは配信する際の動的レンディションとしても使用できます。
 >
->実行する *not* 画像プリセットが自動的に公開されるので、画像プリセットを公開する必要があります。
+>あなたが行う *not* 画像プリセットが自動的に公開されるので、画像プリセットを公開する必要があります。
 >
 >[画像プリセットの公開](#publishing-image-presets)を参照してください。
 
@@ -88,7 +88,7 @@ Dynamic Media を使用して AI、EPS または PDF ファイルの動的レン
 
 `Rasterize PDF/AI Image Preview Rendition` プロセスコンポーネントのオプションには、`DAM Update Asset` ワークフローを通じてアクセスします。
 
-左上の Adobe Experience Manager を選択し、**[!UICONTROL ツール]**／**[!UICONTROL ワークフロー]**／**[!UICONTROL モデル]**&#x200B;に移動します。ワークフローモデルページで「**[!UICONTROL DAM アセットの更新]**」を選択し、ツールバーの「**[!UICONTROL 編集]**」を選択します。DAM アセットの更新ワークフローページで、`Rasterize PDF/AI Image Preview Rendition` プロセスコンポーネントをダブルタップして、ステップのプロパティダイアログボックスを開きます。
+左上の Adobe Experience Manager を選択し、**[!UICONTROL ツール]**／**[!UICONTROL ワークフロー]**／**[!UICONTROL モデル]**&#x200B;に移動します。ワークフローモデルページで「**[!UICONTROL DAM アセットの更新]**」を選択し、ツールバーの「**[!UICONTROL 編集]**」を選択します。DAM アセットの更新ワークフローページで、 `Rasterize PDF/AI Image Preview Rendition` プロセスコンポーネントを使用して、ステップのプロパティダイアログボックスを開きます。
 
 #### PDF/AI 画像プレビューレンディションをラスタライズのオプション {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -101,7 +101,7 @@ PDF または AI ワークフローのラスタライズの引数
 | MIME タイプ | application/pdf<br>application/postscript<br>application/illustrator | PDF または Illustrator のドキュメントと見なされるドキュメントの MIME タイプのリスト。 |
 | 最大の幅 | 2048 | 生成されたプレビューレンディションの最大の幅（ピクセル単位）。 |
 | 最大の高さ | 2048 | 生成されたプレビューレンディションの最大の高さ（ピクセル単位）。 |
-| 解像度 | 72 | 最初のページをラスタライズする解像度 (ppi(ppi))。 |
+| 解像度 | 72 | 最初のページをラスタライズする解像度 (ppi(ppi) 単位 )。 |
 
 デフォルトのプロセス引数を使用して、PDF/AI ドキュメントの最初のページが 72 ppi でラスタライズされ、生成されたプレビュー画像のサイズは 2048 x 2048 ピクセルになります。通常のデプロイメントでは、解像度を 150 ppi 以上に増やす必要が生じる可能性があります。例えば、300 ppi の US Letter サイズのドキュメントの幅と高さにはそれぞれ最大で 2550 x 3300 ピクセルが必要です。
 
@@ -138,7 +138,7 @@ Dynamic Media 統合では、以下のスクリプトが使用されます。
 
 **[!UICONTROL Dynamic Media プロセスの画像アセット]**&#x200B;のステップでは、サムネールは Image Server で生成されます。この設定は、**[!UICONTROL サムネールを処理]**&#x200B;のステップで適用される設定とは独立した設定です。**[!UICONTROL サムネールを処理]**&#x200B;のステップで行うサムネールの生成は、サムネール生成で最も遅く、最もメモリを使う方法です。
 
-サムネールのサイズは **[!UICONTROL width:height:center]** の形式で定義されます。例えば `80:80:false` のようになります。width と height はサムネールのサイズをピクセル単位で指定します。center の値は false または true で、true に設定した場合は、サムネール画像のサイズが設定で指定されたサイズとまったく同じであることを示します。画像が指定よりも小さいサイズに変更された場合は、サムネール内で中央揃えされます。
+サムネールのサイズ設定は次の形式で定義します。 **[!UICONTROL 幅:height:中央]**&#x200B;例： `80:80:false`. width と height はサムネールのサイズをピクセル単位で指定します。center の値は false または true で、true に設定した場合は、サムネール画像のサイズが設定で指定されたサイズとまったく同じであることを示します。画像が指定よりも小さいサイズに変更された場合は、サムネール内で中央揃えされます。
 
 >[!NOTE]
 >
@@ -146,7 +146,6 @@ Dynamic Media 統合では、以下のスクリプトが使用されます。
 >
 >* ビデオのサムネールサイズは「**[!UICONTROL 引数]**」の下にある「**[!UICONTROL 処理]**」タブの **[!UICONTROL FFmpeg サムネール]**&#x200B;のステップで設定します。
 >
-
 
 **画像のサムネールサイズを設定するには**：:
 
@@ -179,7 +178,7 @@ Dynamic Media 統合では、以下のスクリプトが使用されます。
 
    ![chlimage_1-495](assets/chlimage_1-495.png)
 
-1. 「limit」プロパティの数を、目的の数（例：`{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`）に変更します。
+1. 「 limit 」プロパティで、数を目的の数（例： ）に変更します。 `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. 「**[!UICONTROL すべて保存]**」を選択します。
 
 ### 画像プリセットの作成 {#creating-image-presets}
@@ -245,7 +244,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
 | --- | --- |
 | **名前** | わかりやすい名前を空白なしで入力します。この画像プリセットを識別しやすくするには、名前に画像サイズを含めます。 |
 | **「幅」と「高さ」** | 画像の配信サイズをピクセル単位で入力します。 幅と高さは 0 ピクセルより大きくする必要があります。 いずれかの値が 0 の場合、プリセットは作成されません。両方の値が空の場合、レスポンシブな画像プリセットが作成されます。 |
-| **形式** | メニューから形式を選択します。<br>「**JPEG**」を選択すると、他に次のオプションが表示されます。<br>• **画質** - JPEG 画質の尺度は 1～100 です。スライダーをドラッグすると、この尺度が表示されます。<br>• **JPG クロミナンスダウンサンプリングを有効にする** - 目は高周波の色情報よりも高周波の輝度に対して敏感であるので、JPEG 画像は画像情報を輝度成分と色の成分に分けています。JPEG 画像が圧縮されると、輝度成分はフル解像度のまま、色成分がピクセルのグループでまとめて平均化されることでダウンサンプリングされます。ダウンサンプリングによって、知覚される画質にはほぼ影響を与えることなく、データ量を半分から 3 分の 1 程度削減できます。ダウンサンプリングは、グレースケールの画像には適用されません。この技術によって圧縮量が削減されます。これは、高コントラストの画像（オーバーレイされたテキストを含む画像など）で役立ちます。<br><br>「**GIF**」または「**アルファ付き GIF**」を選択すると、次の追加の「**GIF カラー量子化**」オプションを入力できます。<br>• **タイプ** - 「**アダプティブ**」（デフォルト）、「**Web**」、「**Macintosh**」のいずれかを選択します。「**アルファ付き GIF**」を選択した場合は、「Macintosh」オプションは使用できません。<br>• **ディザ** - 「**拡散**」または「**オフ**」を選択します。<br>• **色数** - 2～256 の値を入力します。<br>• **カラーリスト** - コンマ区切りリストを入力します。例えば、白、グレーおよび黒の場合は、「`000000,888888,ffffff`」と入力します。<br><br>「**PDF**」、「**TIFF**」または「**アルファ付き TIFF**」を選択すると、次の追加オプションを入力できます。<br>• **圧縮** - 圧縮アルゴリズムを選択します。PDF 用のアルゴリズムオプションは、「**なし**」、「**Zip**」および「**JPEG**」です。TIFF の場合は、「**なし**」、「**LZW**」、「**JPEG**」および「**Zip**」です。また、アルファ付き TIFF の場合は、「**なし**」、「**LZW**」および「**Zip**」です。<br><br>「**PNG**」、「**アルファ付き PNG**」または「**EPS**」を選択した場合は、追加オプションはありません。 |
+| **形式** | メニューから形式を選択します。<br>「**JPEG**」を選択すると、他に次のオプションが表示されます。<br>• **画質** - JPEG 画質の尺度は 1～100 です。スライダーをドラッグすると、この尺度が表示されます。<br>• **JPG クロミナンスダウンサンプリングを有効にする** - 目は高周波の色情報よりも高周波の輝度に対して敏感であるので、JPEG 画像は画像情報を輝度成分と色の成分に分けています。JPEG 画像が圧縮されると、輝度成分はフル解像度のまま、色成分がピクセルのグループでまとめて平均化されることでダウンサンプリングされます。ダウンサンプリングによって、知覚される画質にはほぼ影響を与えることなく、データ量を半分から 3 分の 1 程度削減できます。ダウンサンプリングは、グレースケールの画像には適用されません。この技術によって圧縮量が削減されます。これは、高コントラストの画像（オーバーレイされたテキストを含む画像など）で役立ちます。<br><br>「**GIF**」または「**アルファ付き GIF**」を選択すると、次の追加の「**GIF カラー量子化**」オプションを入力できます。<br>• **タイプ** - 「**アダプティブ**」（デフォルト）、「**Web**」、「**Macintosh**」のいずれかを選択します。「**アルファ付き GIF**」を選択した場合は、「Macintosh」オプションは使用できません。<br>• **ディザ** - 「**拡散**」または「**オフ**」を選択します。<br>• **色数** - 2～256 の値を入力します。<br>・ **カラーリスト**  — コンマ区切りのリストを入力します。 たとえば、白、灰色、黒の場合は、と入力します。 `000000,888888,ffffff`.<br><br>「**PDF**」、「**TIFF**」または「**アルファ付き TIFF**」を選択すると、次の追加オプションを入力できます。<br>• **圧縮** - 圧縮アルゴリズムを選択します。PDF 用のアルゴリズムオプションは、「**なし**」、「**Zip**」および「**JPEG**」です。TIFF の場合は、「**なし**」、「**LZW**」、「**JPEG**」および「**Zip**」です。また、アルファ付き TIFF の場合は、「**なし**」、「**LZW**」および「**Zip**」です。<br><br>「**PNG**」、「**アルファ付き PNG**」または「**EPS**」を選択した場合は、追加オプションはありません。 |
 | **シャープ** | 「**シンプルシャープを有効にする**」を選択すると、すべての拡大縮小の実行後、画像に対して基本的なシャープフィルターが適用されます。シャープにより、画像を異なるサイズで表示した場合に発生するぼかしを補うことができます。 |
 
 #### 「詳細」タブオプション  {#advanced-tab-options}
@@ -292,7 +291,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
     </ul> <p>「<strong>アンシャープマスク</strong>」には次のオプションがあります。</p>
     <ul>
      <li><strong>量</strong> - 端のピクセルに適用されるコントラストを制御します。デフォルトの実数値は 1.0 です。高解像度の画像に対しては、この値を 5.0 まで増やすことができます。「量」は、フィルター強度の尺度だと考えてください。</li>
-     <li><strong>半径</strong> - シャープに影響するエッジピクセルの周囲のピクセル数を決定します。高解像度画像の場合は、1 ～ 2 の実数を入力します。 値が小さい場合、エッジのピクセルのみがシャープニングされます。値が大きい場合、より広い範囲のピクセルがシャープニングされます。正しい値は、画像のサイズによって異なります。</li>
+     <li><strong>半径</strong> - シャープに影響するエッジピクセルの周囲のピクセル数を決定します。高解像度の画像の場合は、1 ～ 2 の実数を入力します。 値が小さい場合、エッジのピクセルのみがシャープニングされます。値が大きい場合、より広い範囲のピクセルがシャープニングされます。正しい値は、画像のサイズによって異なります。</li>
      <li><strong>しきい値</strong> - アンシャープマスクフィルターが適用される場合のコントラストの範囲を指定します。つまり、このオプションは、シャープニングされるピクセルが周囲の領域とどの程度違えば、そのピクセルをエッジのピクセルと見なしてシャープニングするかを決定するものです。ノイズが入らないように、2～20 の範囲で様々な整数値を試してください。 </li>
      <li><strong>適用先</strong> - アンシャープを各カラーまたは明るさに適用するかを指定します。</li>
     </ul>
@@ -344,43 +343,43 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
 
 * [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html?lang=ja) - それぞれの色成分を、画像の効果が反対になるように逆転させます。
 
-   ```xml {.line-numbers}
-   &op_invert=1
-   ```
+  ```xml {.line-numbers}
+  &op_invert=1
+  ```
 
-   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
+  ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
 * [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html?lang=ja) - 画像にぼかしフィルターを適用します。
 
-   ```xml {.line-numbers}
-   &op_blur=7
-   ```
+  ```xml {.line-numbers}
+  &op_blur=7
+  ```
 
-   ![6_5_imagepreset-edit-blur](assets/6_5_imagepreset-edit-blur.png)
+  ![6_5_imagepreset-edit-blur](assets/6_5_imagepreset-edit-blur.png)
 
 * コマンドの組み合わせ - op_blur と op-invert
 
-   ```xml {.line-numbers}
-   &op_invert=1&op_blur=7
-   ```
+  ```xml {.line-numbers}
+  &op_invert=1&op_blur=7
+  ```
 
-   ![chlimage_1-80](assets/chlimage_1-501.png)
+  ![chlimage_1-80](assets/chlimage_1-501.png)
 
 * [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html?lang=ja) - 明るさを増減させます。
 
-   ```xml {.line-numbers}
-   &op_brightness=58
-   ```
+  ```xml {.line-numbers}
+  &op_brightness=58
+  ```
 
-   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
+  ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
 * [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html?lang=ja)  — 画像の不透明度を調整します。 前景の不透明度を減らすことができます。
 
-   ```xml {.line-numbers}
-   opac=29
-   ```
+  ```xml {.line-numbers}
+  opac=29
+  ```
 
-   ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
+  ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
 ### 画像プリセットの編集 {#modifying-image-presets}
 

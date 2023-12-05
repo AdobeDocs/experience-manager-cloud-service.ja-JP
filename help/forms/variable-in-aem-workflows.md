@@ -2,10 +2,10 @@
 title: AEM Workflow ステップに変数を追加するにはどうすればよいですか？
 description: 変数の作成、変数の値の設定、 [!DNL AEM Forms]  ワークフローステップでの変数の使用について説明します。
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2080'
-ht-degree: 98%
+source-wordcount: '1928'
+ht-degree: 88%
 
 ---
 
@@ -46,8 +46,8 @@ ArrayList データタイプを使用して、変数コレクションを作成�
 変数を作成するには：
 
 1. AEM インスタンスで、ツール![ハンマーアイコン](assets/hammer-icon.svg)／ワークフロー／モデルに移動します。
-1. 「**[!UICONTROL 作成]**」をタップし、ワークフローモデルのタイトルとオプション名を指定します。モデルを選択し、「**[!UICONTROL 編集]**」をタップします。
-1. ワークフローモデルのサイドキックにある変数アイコンをタップし、「**[!UICONTROL 追加変数]**」をタップします。
+1. 選択 **[!UICONTROL 作成]** ワークフローモデルのタイトルと名前（オプション）を指定します。 モデルを選択し、「 」を選択します。 **[!UICONTROL 編集]**.
+1. ワークフローモデルのサイドキックで使用可能な変数アイコンを選択し、「 」を選択します。 **[!UICONTROL 変数を追加]**.
 
    ![変数を追加](assets/variables_add_variable_new.png)
 
@@ -59,7 +59,7 @@ ArrayList データタイプを使用して、変数コレクションを作成�
    * フォームデータモデル - フォームデータモデルのパスを指定します。
    * ArrayList - コレクションのサブタイプを指定します。
 
-1. 変数の説明（オプション）を指定し、![done_icon](assets/Smock_Checkmark_18_N.svg) をタップして変更を保存します。変数は、左側のペインで使用可能なリストに表示されます。
+1. 変数の説明を任意で指定し、「 」を選択します。 ![done_icon](assets/Smock_Checkmark_18_N.svg) をクリックして変更を保存します。 変数は、左側のペインで使用可能なリストに表示されます。
 
 変数を作成する場合、次のプラクティスをお勧めします。
 
@@ -92,11 +92,11 @@ ArrayList データタイプを使用して、変数コレクションを作成�
 
 変数間にマッピングを追加するには：
 
-1. ワークフローの編集ページで、ワークフローモデルのサイドキックにある「ステップ」アイコンをタップします。
-1. 「**[!UICONTROL 変数を設定]**」ステップをワークフローエディターにドラッグ&amp;ドロップし、手順をタップして ![configure_icon](assets/Smock_Wrench_18_N.svg) （設定）を選択します。
+1. ワークフローの編集ページで、ワークフローモデルのサイドキックにある「ステップ」アイコンを選択します。
+1. 次をドラッグ&amp;ドロップ： **[!UICONTROL 変数を設定]** ワークフローエディターにステップを移動し、ステップを選択して「 」を選択します。 ![configure_icon](assets/Smock_Wrench_18_N.svg) （設定）を参照してください。
 1. 「変数を設定」ダイアログで、 **[!UICONTROL マッピング]**／**[!UICONTROL マッピングを追加]** を選択します。
 1. 「**変数のマップ**」セクションで、データを格納する変数を選択し、マッピングモードを選択して、変数に格納する値を指定します。マッピングモードは、変数のタイプによって異なります。
-1. より多くの変数をマップして、意味のある式を作成します。「![done_icon](assets/Smock_Checkmark_18_N.svg)」をタップして、変更内容を保存します。
+1. より多くの変数をマップして、意味のある式を作成します。選択 ![done_icon](assets/Smock_Checkmark_18_N.svg) をクリックして変更を保存します。
 
 ### 例 1：XML 変数をクエリして、文字列変数の値を設定 {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -161,7 +161,7 @@ OR 分割は、ワークフロー内に分割を作成し、以降は 1 つの�
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
-同様に、外部スクリプトパスを選択するか、ルーティング式の ECMA スクリプトを指定して、アクティブな分岐を評価します。「**[!UICONTROL 分岐名の変更]**」をタップして、分岐に別名を指定します。
+同様に、外部スクリプトパスを選択するか、ルーティング式の ECMA スクリプトを指定して、アクティブな分岐を評価します。選択 **[!UICONTROL ブランチ名を変更]** をクリックして、ブランチの別の名前を指定します。
 
 <!-- For more examples, see [Create a workflow model](aem-forms-workflow.md#create-a-workflow-model). -->
 
@@ -267,9 +267,9 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ## 変数の編集 {#edit-a-variable}
 
-1. ワークフローの編集ページで、ワークフローモデルのサイドキックにある「変数」アイコンをタップします。左側のペインの「変数」セクションには、既存のすべての変数が表示されます。
-1. 編集する変数名の横にある ![編集](assets/edit.svg) （編集）アイコンをタップします。
-1. 変数情報を編集し、![done_icon](assets/Smock_Checkmark_18_N.svg) をタップして変更を保存します。変数の「**[!UICONTROL 名前]**」フィールドと「**[!UICONTROL タイプ]**」フィールドは編集できません。
+1. ワークフローを編集ページで、ワークフローモデルのサイドキックにある変数アイコンを選択します。 左側のペインの「変数」セクションには、既存のすべての変数が表示されます。
+1. を選択します。 ![編集](assets/edit.svg) （編集）編集する変数名の横にあるアイコン。
+1. 変数情報を編集し、「 」を選択します。 ![done_icon](assets/Smock_Checkmark_18_N.svg) をクリックして変更を保存します。 変数の「**[!UICONTROL 名前]**」フィールドと「**[!UICONTROL タイプ]**」フィールドは編集できません。
 
 ## 変数の削除 {#delete-a-variable}
 
@@ -277,9 +277,9 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 変数を削除するには：
 
-1. ワークフローの編集ページで、ワークフローモデルのサイドキックにある「変数」アイコンをタップします。左側のペインの「変数」セクションには、既存のすべての変数が表示されます。
-1. 削除する変数名の横にある削除アイコンをタップします。
-1. ![Done_icon](assets/Smock_Checkmark_18_N.svg) をタップして、変数を確認して削除します。
+1. ワークフローを編集ページで、ワークフローモデルのサイドキックにある変数アイコンを選択します。 左側のペインの「変数」セクションには、既存のすべての変数が表示されます。
+1. 削除する変数名の横にある削除アイコンを選択します。
+1. 選択 ![done_icon](assets/Smock_Checkmark_18_N.svg) をクリックして、変数を確定および削除します。
 
 ## 参照 {#references}
 

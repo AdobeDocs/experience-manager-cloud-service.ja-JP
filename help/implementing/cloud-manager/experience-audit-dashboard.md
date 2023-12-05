@@ -2,9 +2,9 @@
 title: エクスペリエンス監査ダッシュボード
 description: Experience Audit がデプロイメントプロセスを検証する方法、およびデプロイ済みの変更が、明確でわかりやすいダッシュボードインターフェイスを通じて、パフォーマンス、アクセシビリティ、ベストプラクティス、SEO の基準を満たしていることを確認する方法について説明します。
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '824'
 ht-degree: 22%
 
 ---
@@ -97,7 +97,7 @@ The **ページ** 「 」セクションには、テストされたページと�
 
 実稼動パイプラインの実行ページに戻るには、ブラウザーで戻る矢印を選択します。
 
-### 問題 {#issues}
+### 発行 {#issues}
 
 The **問題** 「 」タブには、このパイプライン実行のコードで検出されたパフォーマンスの問題の概要が表示されます。
 

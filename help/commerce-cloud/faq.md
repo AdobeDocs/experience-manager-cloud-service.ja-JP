@@ -2,10 +2,10 @@
 title: Commerce Integration Framework を使用した AEM と Commerce の統合に関する FAQ
 description: Commerce Integration Framework を使用した AEM と Commerce の統合に関する FAQ
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '967'
-ht-degree: 100%
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+workflow-type: tm+mt
+source-wordcount: '963'
+ht-degree: 98%
 
 ---
 
@@ -65,7 +65,7 @@ CIF には、検索バーと検索結果のコンポーネントが用意され�
 
 AEM でマーケティング関連のデータとコンテンツを管理することをお勧めします。コンテンツフラグメントを使用して、コマースソリューションの製品データを追加の属性で修飾するか、構造化されていないコンテンツ用のエクスペリエンスフラグメントを作成して製品とリンクします。
 
-## 14. プレゼンテーションレイヤー全体に AEM を使用する場合、PCI への準拠をどのように確保できますか。
+## 14.プレゼンテーションレイヤー全体にAEMを使用する場合、PCI への準拠はどのように確保できますか。
 
 アドビでは、抽象化された支払い方法を使用することをお勧めします。これにより、ブラウザークライアントは支払いゲートウェイプロバイダーと直接通信し、アドビもコマースソリューションもカード所有者データを保持したり受け渡したりしないようになります。このアプローチには レベル 3 の PCI コンプライアンスのみ必要です。しかし、従業員がシステムやデータとやり取りする方法など、完全に PCI に準拠するには、考慮されるべき点が他にもあります。Adobe Commerce の PCI 準拠について詳しくは、[PCI コンプライアンス要件](https://business.adobe.com/jp/products/magento/pci-compliance.html)を参照してください。
 

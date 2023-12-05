@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 description: Adobe Experience Manager as a Cloud Service の Image Management System のサポート
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 100%
+source-wordcount: '1917'
+ht-degree: 99%
 
 ---
 
@@ -55,7 +55,7 @@ AEM のお客様は、既に組織がプロビジョニングされています�
 ![IMS のオンボーディング](/help/security/assets/ims2.png)
 
 1. 指定されたシステム管理者が、Cloud Manager へのログインの招待を受け取ります。Cloud Manager にログインした後、システム管理者は AEM のプログラムと環境のプロビジョニングを選択するか、Admin Console に移動して管理タスクを実行することができます。
-1. システム管理者がドメインを要求して、それぞれのドメイン（この例では acme.com）の所有権を確認します。
+1. システム管理者がドメインを要求して、それぞれのドメイン (acme.comなど ) の所有権を確認します
 1. システム管理者がユーザーディレクトリを設定します。
 1. システム管理者は、シングルサインオンを設定するために Admin Console で IDP 設定を行います。
 1. AEM 管理者が、通常どおりローカルグループと権限および特権を管理します。

@@ -2,10 +2,10 @@
 title: レスポンシブレイアウト
 description: AEMを使用すると、ページのレスポンシブレイアウトを実現できます
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1732'
-ht-degree: 82%
+source-wordcount: '1737'
+ht-degree: 79%
 
 ---
 
@@ -49,7 +49,7 @@ AEM は、次のメカニズムを組み合わせて使用することにより�
 
 >[!TIP]
 >
->アドビはフロントエンド開発者用にレスポンシブレイアウトの [GitHub ドキュメント](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)をリファレンスとして提供しており、フロントエンド開発者は AEM の外部で AEM グリッドを使用できます（例えば、今後の AEM サイトの静的 HTML モックアップを作成する場合）。
+>Adobe提供 [GitHub ドキュメント](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) フロントエンド開発者がAEMの外部でAEMグリッドを使用できるようにする参照として、レスポンシブレイアウトを使用します。例えば、将来のAEMサイト用に静的HTMLモックアップを作成する場合などです。
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ AEMでは、デバイスの幅に応じたレイアウトを定義できます�
 
    エミュレーターツールバーに追加のレイアウトオプションが表示されます。
 
-   * **デバイスを回転**  — デバイスを垂直方向（縦置き）から水平方向（横置き）に、またはその逆に回転できます。
+   * **デバイスを回転**  — デバイスを垂直方向（縦置き）から水平方向（横置き）に、逆に回転できます。
 
    ![デバイスの回転（横置き）ボタン](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
    ![デバイスの回転（縦置き）ボタン](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
@@ -149,7 +149,7 @@ AEMでは、デバイスの幅に応じたレイアウトを定義できます�
 >
 >レイアウトコンテナは段落システムです。コンポーネントを削除すると、レイアウトグリッドと、コンテナ内に保持されているすべてのコンポーネント（およびそのコンテンツ）の両方が削除されます。
 
-1. グリッドプレースホルダーの上にマウスポインターを置くかタップすると、アクションメニューが表示されます。
+1. グリッドプレースホルダーにマウスを移動するか選択すると、アクションメニューが表示されます。
 
    ![レイアウトコンテナへの追加](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 
@@ -210,7 +210,7 @@ AEMでは、デバイスの幅に応じたレイアウトを定義できます�
 
      ![親ボタン](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-   * **非表示のコンポーネントを表示** - すべてまたは個別のコンポーネントを表示します。数字は現在非表示のコンポーネントの数を示します。カウンターは非表示のコンポーネントの数を示します。
+   * **非表示のコンポーネントを表示** - すべてのコンポーネントまたは個々のコンポーネントを表示します。数字は、現在非表示のコンポーネントの数を示します。 カウンターは非表示のコンポーネントの数を示します。
 
      ![「非表示のコンポーネントを表示」ボタン](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 

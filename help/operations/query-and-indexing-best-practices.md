@@ -3,10 +3,10 @@ title: クエリとインデックス作成のベストプラクティス
 description: アドビのベストプラクティスガイドラインに基づいてインデックスとクエリを最適化する方法を説明します。
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3127'
-ht-degree: 47%
+source-wordcount: '3088'
+ht-degree: 46%
 
 ---
 

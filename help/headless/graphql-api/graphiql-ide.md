@@ -3,9 +3,9 @@ title: AEM での GraphiQL IDE の使用
 description: Adobe Experience Manager で GraphiQL IDE を使用する方法について説明します。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1138'
+source-wordcount: '1136'
 ht-degree: 90%
 
 ---
@@ -36,7 +36,7 @@ The **GraphiQL** ツールを使用すると、次のことが可能になり、
 
 クエリエディターには、次のいずれかの方法でアクセスできます。
 
-* **ツール**／**一般**／**GraphQL クエリエディター**
+* **ツール** > **一般** > **GraphQL Query Editor**
 * 直接アクセス（例：`http://localhost:4502/aem/graphiql.html`）
 
 ![GraphiQL インターフェイス](assets/cfm-graphiql-interface.png "GraphiQL インターフェイス")

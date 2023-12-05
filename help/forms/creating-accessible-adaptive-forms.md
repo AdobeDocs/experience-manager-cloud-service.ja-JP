@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2022'
-ht-degree: 97%
+source-wordcount: '2018'
+ht-degree: 94%
 
 ---
 
@@ -47,7 +47,7 @@ Ultramarine-Accessible テーマは、リファレンステーマです。これ
 
 1. テーマパッケージをダウンロードします。
 1. AEM インスタンスで **[!UICONTROL Experience Manager]**／**[!UICONTROL ナビゲーション]** ![ナビゲーション](assets/Smock_Compass_18_N.svg)／**[!UICONTROL Forms]** に移動します。
-1. **[!UICONTROL 作成]**／**[!UICONTROL ファイルのアップロード]**&#x200B;をタップします。Ultramarine-Accessible-Theme.zip ファイルを選択し、アップロードします。AEM インスタンスにテーマをアップロードします。
+1. 選択 **[!UICONTROL 作成]** > **[!UICONTROL ファイルのアップロード]**. Ultramarine-Accessible-Theme.zip ファイルを選択し、アップロードします。AEM インスタンスにテーマをアップロードします。
 
 ## アダプティブフォームのアクセシビリティ対応
 
@@ -58,8 +58,8 @@ Ultramarine-Accessible テーマは、リファレンステーマです。これ
 Ultramarine-Accessible テーマを既存のアダプティブフォームに適用します。テーマを適用するには：
 
 1. アダプティブフォームを編集用に開きます。
-1. コンポーネントを選択し、親アイコンをタップします。コンテキストメニューで、「**[!UICONTROL アダプティブフォームコンテナ]**」をタップし、設定アイコンをタップします。
-1. プロパティブラウザーで Ultramarine-Accessible テーマを選択し、「**[!UICONTROL 保存]**」アイコンをタップします。
+1. コンポーネントを選択し、親アイコンを選択します。 コンテキストメニューで、「 」を選択します。 **[!UICONTROL アダプティブフォームコンテナ]** 次に設定アイコンを選択します。
+1. プロパティブラウザーで「 Ultramarine-Accessible 」テーマを選択し、「 」を選択します。 **[!UICONTROL 保存]** アイコン。
 1. ブラウザーウィンドウを更新します。テーマがアダプティブフォームに適用されます。
 
 アクセシブルなテーマを適用した後、以下にリストされている追加の修正を実行します。これらの修正は、アクセシブルなテーマで扱われているアクセシビリティの修正に追加されます。
@@ -100,7 +100,7 @@ Ultramarine-Accessible テーマを既存のアダプティブフォームに適
 
 アクセシビリティオプションを使用するには、次の手順に従います。
 
-1. コンポーネントを選択して、![cmppr](assets/cmppr.png) をタップします。
+1. コンポーネントを選択し、 ![cmppr](assets/cmppr.png).
 1. サイドバーの&#x200B;**[!UICONTROL アクセシビリティ]**&#x200B;をクリックして、必要なアクセシビリティオプションを選択します。
 
 ### フォームコンポーネントのアクセシビリティオプション {#accessibility-options-in-form-components}
@@ -128,7 +128,7 @@ Ultramarine-Accessible テーマを既存のアダプティブフォームに適
 
 このテキストは、フォーム内のオブジェクトとその目的を説明する内容である必要があります。スクリーンリーダーが画像を検出すると、この代替テキストを読み上げます。画像には常に代替テキストを指定する必要があります。
 
-画像コンポーネントを選択し ![cmppr](assets/cmppr.png) をタップします。サイドバーのプロパティで、画像の代替テキストを指定します。
+画像コンポーネントを選択し、「 」を選択します。 ![cmppr](assets/cmppr.png). サイドバーのプロパティで、画像の代替テキストを指定します。
 
 ![画像の代替テキスト](assets/image-properties.png)
 
@@ -157,7 +157,7 @@ Ultramarine-Accessible テーマを既存のアダプティブフォームに適
 | フォーム内の記入済みデータをリセットします。 | Alt + R |
 | フォームを送信します。 | Alt + S |
 
-さらに、アダプティブフォームの&#x200B;**[!UICONTROL 日付選択]**&#x200B;コンポーネントで使用できる様々なキーボードショートカットキーがあります。ショートカットキーを有効にするには、**[!UICONTROL 日付選択]**&#x200B;コンポーネントをタップし、「![設定](assets/configure-icon.svg)」をタップしてプロパティを開きます。Adobe Analytics の **[!UICONTROL パターン]** セクションで、 **[!UICONTROL タイプ]** および **[!UICONTROL パターン]** 」ドロップダウンリストを使用します。 プロパティを保存して、**[!UICONTROL 日付選択]**&#x200B;コンポーネントのショートカットキーを使用できるようにします。
+さらに、アダプティブフォームの&#x200B;**[!UICONTROL 日付選択]**&#x200B;コンポーネントで使用できる様々なキーボードショートカットキーがあります。ショートカットキーを有効にするには、 **[!UICONTROL 日付選択]** コンポーネントと選択 ![設定](assets/configure-icon.svg) をクリックしてプロパティを開きます。 Adobe Analytics の **[!UICONTROL パターン]** セクションで、 **[!UICONTROL タイプ]** および **[!UICONTROL パターン]** 」ドロップダウンリストを使用します。 プロパティを保存して、**[!UICONTROL 日付選択]**&#x200B;コンポーネントのショートカットキーを使用できるようにします。
 
 アダプティブフォームの日付選択コンポーネントでは、次のキーボードショートカットキーを使用できます。
 

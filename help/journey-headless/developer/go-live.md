@@ -2,10 +2,10 @@
 title: ヘッドレスアプリケーションの運用開始方法
 description: AEM ヘッドレスデベロッパージャーニーのこのパートでは、Git 内のローカルコードを CI／CD パイプライン用に Cloud Manager Git に移行することでヘッドレスアプリケーションをライブ環境にデプロイする方法を説明します。
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 97%
+source-wordcount: '1060'
+ht-degree: 91%
 
 ---
 
@@ -83,7 +83,7 @@ AEM ヘッドレスアプリケーションの使用時に最高のユーザー�
       * ユーザー数、リクエスト数、読み込み数を確認する
 * アプリおよびスペース固有のパフォーマンスレポートにアクセスする
    * サーバーが起動したら、一般的な指標が緑／オレンジ／赤のどれになっているかを確認し、アプリの具体的な問題を特定する
-   * 特定のアプリやスペース（例：Photoshop デスクトップ、ペイウォール）に限定した上記レポートを開く
+   * 上記のフィルターで同じレポートを開き、アプリまたはスペースで (Photoshopデスクトップ、ペイウォールなど )
    * Splunk ログ API を使用してサービスやアプリケーションのパフォーマンスにアクセスする
    * その他の問題が発生した場合は、カスタマーサポートに連絡する
 
@@ -124,7 +124,7 @@ AEM ヘッドレスアプリケーションの使用時に最高のユーザー�
 
 ### 単一ページアプリケーションの調査 {#explore-spa}
 
-ただし、AEM のヘッドレスストアは、ここで終わる必要はありません。[ジャーニーの「はじめに」のパート](getting-started.md#integration-levels)では、AEM でヘッドレス配信と従来のフルスタックモデルをサポートできるだけでなく、両方の利点を組み合わせたハイブリッドモデルもサポートできることを簡単に説明しました。
+ただし、AEM のヘッドレスストアは、ここで終わる必要はありません。次の場所で [ジャーニーの開始の手引き](getting-started.md#integration-levels) AEMがヘッドレス配信と従来のフルスタックモデルをサポートするだけでなく、両方の利点を組み合わせたハイブリッドモデルをサポートする方法について簡単に説明しました。
 
 このような柔軟性がプロジェクトに必要な場合は、さらにジャーニーのオプションパート [AEM で単一ページアプリケーション（SPA）を作成する方法](create-spa.md)に進んでください。
 
@@ -132,7 +132,7 @@ AEM ヘッドレスアプリケーションの使用時に最高のユーザー�
 
 * [AEM as a Headless CMS の概要](/help/headless/introduction.md)
 * [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
-* [AEM のヘッドレスに関するチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja)
+* [AEMのヘッドレスのTutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja)
 * [AEM as a Cloud Service へのデプロイの概要](/help/implementing/deploying/overview.md)
 * [Cloud Manager を使用したコードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja#how-to-use)
 * [Cloud Manager Git リポジトリーと外部 Git リポジトリーの統合および AEM as a Cloud Service へのプロジェクトのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=ja)

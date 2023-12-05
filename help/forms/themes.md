@@ -2,16 +2,16 @@
 title: テーマを作成して使用し、アダプティブフォームのスタイルを設定するにはどうすればよいですか？
 description: アダプティブフォームテーマを使用して、アダプティブフォームのスタイルを設定し、視覚的な ID を付けます。 任意の数のアダプティブフォームで、テーマを共有できます。
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '5578'
+source-wordcount: '5558'
 ht-degree: 98%
 
 ---
 
 # テーマの作成および使用 {#creating-and-using-themes}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -359,7 +359,7 @@ Cloud Service インスタンスで作成されたテーマ：
 * **[!UICONTROL 数値ボックスウィジェット]**：サイドバーで外観をカスタマイズするコンポーネントを選択できます。
 * **[!UICONTROL フィールドウィジェット]**：スタイル設定の汎用コンポーネントを選択できます。この例では、スタイル設定にすべてのテキスト入力コンポーネント（テキストボックス／数値ボックス／数値ステッパー／日付入力）が選択されています。
 
-* ![field-level](assets/select_parent_icon.svg)：親コンポーネントを選択してスタイル設定できます。数値ボックスを選択してこのアイコンをタップすると、フィールドコンポーネントが選択されます。フィールドコンポーネントを選択してこのアイコンをタップすると、パネルが選択されます。このアイコンをタップし続けると、最終的にスタイル設定用のレイアウトが選択されます。
+* ![field-level](assets/select_parent_icon.svg)：親コンポーネントを選択してスタイル設定できます。数値ボックスを選択してこのアイコンを選択すると、フィールドコンポーネントが選択されます。 フィールドコンポーネントを選択してこのアイコンを選択すると、パネルが選択されます。 このアイコンをタップし続けると、最終的にスタイル設定用のレイアウトが選択されます。
 
 >[!NOTE]
 >
@@ -581,7 +581,7 @@ themeOverride パラメーターを使用して、実行時にテーマを適用
 
 1. オーサーインスタンスで、**[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL テーマ]**&#x200B;に移動します。
 1. テーマライブラリフォルダーを開きます。
-1. テーマライブラリフォルダーで、対応するすぐに使用可能なテーマにポインターを置いて、「**[!UICONTROL コピー]**」をタップします。
+1. Theme Library フォルダーで、対応する標準のテーマの上にマウスポインターを置いて、「 」を選択します。 **[!UICONTROL コピー]**.
 1. コピーしたテーマをテーマライブラリフォルダーの外部に貼り付けます。
 1. コピーしたテーマをカスタマイズします。
 

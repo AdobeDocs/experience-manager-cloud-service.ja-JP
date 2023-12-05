@@ -3,10 +3,10 @@ title: AEM での GraphQL の使用方法 - サンプルコンテンツとサン
 description: GraphQL を AEM と共に使用し、サンプルコンテンツとクエリを調べて、コンテンツをヘッドレスに提供する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: 667cac9153947d1c236ff1117fc7200883416d8d
 workflow-type: tm+mt
-source-wordcount: '1752'
-ht-degree: 100%
+source-wordcount: '1754'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ GraphQL クエリの基本と、AEM コンテンツフラグメントとの連�
 >
 >クエリエディターには、次のいずれかの方法でアクセスできます。
 >
->* **ツール**／**一般**／**GraphQL クエリエディター**
+>* **ツール** > **一般** > **GraphQL Query Editor**
 >* 直接アクセス（例：`http://localhost:4502/aem/graphiql.html`）
 
 >[!NOTE]
@@ -362,7 +362,7 @@ query {
 }
 ```
 
-### サンプルクエリ - すべての都市の名前都市滞在型休暇としてタグ付けされた {#sample-names-all-cities-tagged-city-breaks}
+### サンプルクエリ — 区切り文字としてタグ付けされたすべての都市の名前 {#sample-names-all-cities-tagged-city-breaks}
 
 次の場合：
 

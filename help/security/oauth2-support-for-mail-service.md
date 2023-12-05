@@ -2,10 +2,10 @@
 title: メールサービスの OAuth2 サポート
 description: Adobe Experience Manager as a Mail Service の Oauth2 サポート
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: c8e8a1c862784976094391d567fac0f9122af8b4
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 91%
+source-wordcount: '672'
+ht-degree: 88%
 
 ---
 
@@ -32,7 +32,7 @@ AEM as a Cloud Service のメールサービスの詳細については、[メ�
 
    >[!NOTE]
    >
-   >権限の設定は、時間の経過と共に進化する可能性があります。 これらが期待どおりに動作しない場合は、Microsoftを使用してください。
+   >権限の設定は、時間の経過と共に進化する可能性があります。 これらが期待どおりに動作しない場合は、Microsoftを使用します。
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -58,7 +58,7 @@ AEM as a Cloud Service のメールサービスの詳細については、[メ�
 
 次に、次の手順に従って OSGi 設定の一部である更新トークンを生成します。
 
-1. `clientID` と `tenantID` を自分のアカウントに固有の値に置き換えてから、ブラウザーで次の URL を開きます。
+1. 置き換えた後、ブラウザーで次の URL を開きます `clientID` および `tenantID` アカウントに固有の値を使用：
 
    ```
    https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
@@ -139,7 +139,7 @@ AEM 側で Oauth を設定する前に、次の手順で accessToken と refresh
 
    >[!NOTE]
    >
-   >スコープは時間の経過と共に進化する可能性があります。 これらが期待どおりに動作しない場合は、Microsoftを使用してください。
+   >スコープは時間の経過と共に進化する可能性があります。 これらが期待どおりに動作しない場合は、Microsoftを使用します。
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`

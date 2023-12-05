@@ -3,10 +3,10 @@ title: 画像の編集
 description: ' [!DNL Adobe Photoshop Express]  を利用したオプションを使用して画像を編集し、更新した画像をバージョンとして保存します。'
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 75%
+source-wordcount: '1136'
+ht-degree: 76%
 
 ---
 
@@ -91,7 +91,7 @@ Express へのアクセス権を持つユーザーは、AEM Assets内で直接�
 
    ![Adobe Express埋め込みエディター](assets/embedded-editor.png)
 
-   次の機能を活用できます： [!DNL Adobe Express] 画像編集関連のすべてのアクション ( 例： [画像のサイズ変更](https://helpx.adobe.com/in/express/using/resize-image.html), [背景色を削除または変更する](https://helpx.adobe.com/in/express/using/remove-background.html), [切り抜き画像](https://helpx.adobe.com/in/express/using/crop-image.html)など。
+   次の機能を使用できます： [!DNL Adobe Express] 画像編集関連のすべてのアクション ( 例： [画像のサイズ変更](https://helpx.adobe.com/in/express/using/resize-image.html), [背景色を削除または変更する](https://helpx.adobe.com/in/express/using/remove-background.html), [切り抜き画像](https://helpx.adobe.com/in/express/using/crop-image.html)など。
 
 1. 画像の編集が完了したら、アセットを新しいアセットとしてダウンロードしたり、アセットを新しいバージョンとして保存したりできます。
 

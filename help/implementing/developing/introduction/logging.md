@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 向けのログ
 description: AEM as a Cloud Service のログを使用して一元的なログサービスのグローバルパラメーターを設定する方法、個々のサービスに特有の設定またはデータのログ記録をリクエストする方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2753'
-ht-degree: 91%
+source-wordcount: '2720'
+ht-degree: 90%
 
 ---
 
@@ -190,14 +190,14 @@ Sling LogManager ファクトリの OSGi 設定を使用して、カスタム Ja
 
 AEM as a Cloud Service の HTTP リクエストログは、AEM に対して行われた HTTP リクエストと、それに対する HTTP レスポンスに関する情報を時系列で提供します。このログは、AEM に対して行われる HTTP リクエストと、それらの要求が処理され応答される順序を理解するのに役立ちます。
 
-このログを理解するための鍵は、HTTP リクエストとレスポンスのペアを、括弧内の数値で示される ID でマッピングすることです。多くの場合、リクエストと対応するレスポンスには、その他の HTTP リクエストとレスポンスがログ内に差し込まれています。
+このログを理解するための鍵は、HTTP リクエストとレスポンスのペアを、括弧内の数値で示される ID でマッピングすることです。多くの場合、リクエストと対応する応答には、他の HTTP リクエストと応答がログ内に差し込まれています。
 
 **サンプルログ**
 
 ```
-29/Apr/2020:19:14:21 +0000 [137] -> POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:21 +0000 [137] > POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
-29/Apr/2020:19:14:22 +0000 [139] -> GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:22 +0000 [139] > GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
 29/Apr/2020:19:14:21 +0000 [137] <- 201 text/html 111ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
@@ -285,7 +285,7 @@ AEM as a Cloud Service は、パブリッシュ上の Apache Web サーバーと
 
 ### Apache HTTPD Web サーバーアクセスログ {#apache-httpd-web-server-access-log}
 
-Apache HTTP Web Server アクセスログは、パブリッシュ層の Web サーバー／Dispatcher に到達する各 HTTP リクエストのステートメントを提供します。アップストリーム CDN から提供されるリクエストは、これらのログには反映されません。
+Apache HTTP Web Server アクセスログは、パブリッシュ層の Web サーバー／Dispatcher に到達する各 HTTP リクエストのステートメントを提供します。アップストリーム CDN から提供されるリクエストは、これらのログに反映されません。
 
 エラーログの形式に関する情報については、[公式の Apache ドキュメント](https://httpd.apache.org/docs/2.4/logs.html#accesslog)を参照してください。
 

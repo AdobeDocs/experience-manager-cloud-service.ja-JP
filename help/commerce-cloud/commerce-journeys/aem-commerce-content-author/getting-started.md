@@ -1,11 +1,11 @@
 ---
 title: CIF オーサリングの概要
-description: CIF オーサリングの概要。
+description: CIFオーサリングの概要。
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '778'
-ht-degree: 98%
+ht-degree: 94%
 
 ---
 
@@ -45,7 +45,7 @@ AEM 作成者は、コマースコンポーネントや AEM のバックオフ�
 
 ### 製品ピッカー
 
-フォルダーアイコンをクリックすると、ピッカーモーダル UI（製品ティーザーなど）が開きます。
+フォルダーアイコンをクリックすると、ピッカーモーダル UI が開きます（製品ティーザーなど）。
 ![製品ピッカー](assets/product-picker-open.png)
 
 製品は、左側のカタログ構造を参照するか、検索して見つけることができます。フルテキスト検索では、選択したカテゴリが適用され、検索結果がこのカテゴリに限定されます。

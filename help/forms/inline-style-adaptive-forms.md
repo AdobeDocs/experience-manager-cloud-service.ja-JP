@@ -5,16 +5,16 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 66%
+source-wordcount: '761'
+ht-degree: 56%
 
 ---
 
 # アダプティブフォームコンポーネントのインラインスタイル設定 {#inline-styling-of-adaptive-form-components}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -27,8 +27,8 @@ ht-degree: 66%
 
 コンポーネントにインラインスタイルを追加するには、次の手順を実行します。
 
-1. フォームエディターでフォームを開き、モードをスタイルモードに変更します。 モードをスタイルモードに変更するには、ページツールバーで ![canvas-drop-down](assets/Smock_ChevronDown.svg)／**[!UICONTROL スタイル]**&#x200B;をタップします。
-1. ページ内のコンポーネントを選択し、編集ボタン ![edit-button](assets/edit.svg) をタップします。スタイル設定プロパティがサイドバーに開きます。
+1. フォームエディターでフォームを開き、モードをスタイルモードに変更します。 モードをスタイルモードに変更するには、ページツールバーで、 ![キャンバスドロップダウン](assets/Smock_ChevronDown.svg) > **[!UICONTROL スタイル]**.
+1. ページ内のコンポーネントを選択し、「編集」ボタンを選択します。 ![edit-button](assets/edit.svg). スタイル設定プロパティがサイドバーに開きます。
 
    サイドバーのフォーム階層ツリーからコンポーネントを選択することもできます。 フォーム階層ツリーは、サイドバーでフォームオブジェクトとして使用できます。
 
@@ -46,7 +46,7 @@ ht-degree: 66%
    * [!UICONTROL 詳細]（コンポーネントのカスタム CSS を作成できます）
 
 1. 同様に、コンポーネントの他の部分（[!UICONTROL ウィジェット]、[!UICONTROL キャプション]、[!UICONTROL ヘルプ]など）のスタイルを適用できます。
-1. 「**[!UICONTROL 完了]**」をクリックして変更を確定するか、または「**[!UICONTROL キャンセル]**」をクリックして変更を破棄します。
+1. 選択 **[!UICONTROL 完了]** 変更を確定するか、 **[!UICONTROL キャンセル]** 変更を破棄します。
 
 ## 例：フィールドコンポーネントのインラインスタイル {#example-inline-styles-for-a-field-component}
 
@@ -81,7 +81,7 @@ ht-degree: 66%
   <tr>
    <td><p>ラベル</p> </td>
    <td><p>寸法と位置／幅</p> </td>
-   <td><p>100 px</p> </td>
+   <td><p>100px</p> </td>
    <td><p>ラベルの幅を 100 px に固定します</p> </td>
   </tr>
   <tr>
@@ -111,9 +111,9 @@ ht-degree: 66%
 
 ## スタイルをコピー＆ペースト {#copy-paste-styles}
 
-アダプティブフォーム内のあるコンポーネントから別のコンポーネントにスタイルをコピーして貼り付けることもできます。**[!UICONTROL スタイル]**&#x200B;モードで、コンポーネントをタップし、コピーアイコン![コピー](assets/property-copy-icon.svg)をタップします。
+アダプティブフォーム内のあるコンポーネントから別のコンポーネントにスタイルをコピーして貼り付けることもできます。Adobe Analytics の **[!UICONTROL スタイル]** モードで、コンポーネントを選択し、コピーアイコンを選択します。 ![コピー](assets/property-copy-icon.svg).
 
-同じ種類の別のコンポーネントをタップし、貼り付けアイコン![コピー](assets/Smock_Paste_18_N.svg)をタップして、コピーしたスタイルを貼り付けます。スタイルを消去アイコン![コピー](assets/clear-style-icon.svg)をタップして、適用したスタイルを消去することもできます。
+同じタイプの他のコンポーネントを選択し、貼り付けアイコンを選択します。 ![コピー](assets/Smock_Paste_18_N.svg) コピーしたスタイルを貼り付けます。 また、「スタイルをクリア」アイコンを選択することもできます ![コピー](assets/clear-style-icon.svg) をクリックして、適用されたスタイルをクリアします。
 
 ## コンポーネントの異なる状態にスタイルを設定 {#set-styles-for-states}
 
@@ -121,15 +121,15 @@ ht-degree: 66%
 
 コンポーネントの状態のスタイル設定を定義するには、次の手順を実行します。
 
-1. **[!UICONTROL スタイル]**&#x200B;モードで、コンポーネントをタップし、編集アイコン![編集](assets/Smock_Edit_18_N.svg)をタップします。
+1. Adobe Analytics の **[!UICONTROL スタイル]** モードで、コンポーネントを選択し、編集アイコンを選択します。 ![編集](assets/Smock_Edit_18_N.svg).
 
 1. 「**[!UICONTROL 状態]**」ドロップダウンリストを使用して、コンポーネントの状態を選択します。
 
    ![状態を選択](assets/select-state.png)
 
-1. コンポーネントの選択した状態のスタイル設定を定義し、「![保存](assets/save_icon.svg)」をタップしてプロパティを保存します。
+1. コンポーネントの選択状態のスタイル設定を定義し、「 」を選択します。 ![保存](assets/save_icon.svg) をクリックしてプロパティを保存します。
 
-成功状態とエラー状態をシミュレートすることもできます。展開アイコンをタップして、「**[!UICONTROL 成功をシミュレート]**」および「**[!UICONTROL エラーをシミュレート]**」表示を選択します。
+成功状態とエラー状態をシミュレートすることもできます。展開アイコンを選択して、 **[!UICONTROL 成功をシミュレート]** および **[!UICONTROL エラーをシミュレート]** オプション。
 
 ![状態をシミュレート](assets/simulate-states.png)
 

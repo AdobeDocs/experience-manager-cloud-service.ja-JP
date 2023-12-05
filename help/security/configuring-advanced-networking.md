@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の高度なネットワーク機能の設定
 description: AEM as a Cloud Service の高度なネットワーク機能（VPN やフレキシブルエグレス IP アドレスまたは専用エグレス IP アドレスなど）を設定する方法を説明します
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3594'
-ht-degree: 93%
+source-wordcount: '3526'
+ht-degree: 92%
 
 ---
 
@@ -362,7 +362,7 @@ VPN 経由でのルーティングが必要な HTTP またはHTTPS プロトコ�
 
 API が数秒以内に応答して「`updating`」のステータスを返し、約 10 分後に、Cloud Manager の環境 GET エンドポイントの呼び出しで「`ready`」のステータスが返されます。これは、環境のアップデートが適用されたことを示します。
 
-環境のトラフィックルーティングルール（ホストまたはバイパス）がない場合でも、空のペイロードを渡して `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` を呼び出す必要があります。
+環境トラフィックルーティングルール（ホストまたはバイパス）がない場合でも、 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` は、空のペイロードと同じように、引き続き呼び出す必要があります。
 
 ### VPN の更新 {#updating-the-vpn}
 
@@ -562,7 +562,7 @@ Header always set Cache-Control private
 
 1. [Cloud Manager Create Network Infrastructure API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure) への POST 呼び出しを通して、すべての地域のネットワークインフラストラクチャを作成します。ペイロードの JSON 設定のプライマリ地域に対する唯一の違いは、地域プロパティです。
 1. ステージング環境の場合は、`PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` を実行して、環境範囲を指定した高度なネットワークを有効にし、設定します。詳しくは、[こちら](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)の API ドキュメントを参照してください。
-1. 必要に応じて、できれば FQDN（例えば `p1234.external.adobeaemcloud.com`）で、外部インフラストラクチャをロックダウンします。それ以外の場合は、IP アドレスで行うことができます
+1. 必要に応じて、外部インフラストラクチャをロックダウンします。FQDN（例： ）でロックダウンします。 `p1234.external.adobeaemcloud.com`) をクリックします。 それ以外の場合は、IP アドレスで行うことができます
 1. ステージング環境が期待どおりに動作する場合は、実稼動環境用に環境範囲を定めた高度なネットワーク設定を有効にして設定します。
 
 #### VPN {#vpn-regions}

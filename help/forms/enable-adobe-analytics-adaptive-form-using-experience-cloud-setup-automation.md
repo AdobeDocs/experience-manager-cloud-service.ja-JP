@@ -3,10 +3,10 @@ title: アダプティブフォームに対してAdobe Analyticsを有効にす�
 description: Experience Cloudの自動設定を使用すると、Adobe Analyticsをアダプティブフォームに接続して、訪問者のインタラクションとエンゲージメントに関するインサイトを追跡できます。
 keywords: Experience Cloud設定の自動化、FormsでのAdobe Analyticsの有効化、アダプティブFormsでのAdobe Analyticsの有効化、Forms分析の統合、FormsとAdobe Analyticsを使用したアダプティブフォームのAdobe Analyticsの有効化
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: fa107ee89deb217ada2cfbcccb4602a7a6aff125
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 7%
+source-wordcount: '1555'
+ht-degree: 6%
 
 ---
 
@@ -93,7 +93,7 @@ Experience Cloudの自動設定には、 **Adobe Analyticsライセンス**, **�
 1. クラウドサービスの設定コンテナを作成します。
    1. **[!UICONTROL ツール／一般／設定ブラウザー]**&#x200B;に移動します。
    1. 設定コンテナを選択または作成し、次のフォルダーを有効にします。 **[!UICONTROL クラウド設定]**.
-   1. 「**[!UICONTROL 保存して閉じる]**」をタップして設定内容を保存し、ダイアログを閉じます。
+   1. 選択 **[!UICONTROL 保存して閉じる]** 設定を保存し、ダイアログを終了します。
 1. AEMインスタンスで、に移動します。 **[Forms]** >> **[Formsとドキュメント]**.
 1. を選択します。 **[!UICONTROL フォーム]** >> **[!UICONTROL プロパティ]**、 **[!UICONTROL 設定コンテナ]**」で、 **[!UICONTROL 設定ブラウザー]** 手順 1.
 1. 左側のパネルでタスクパネルを選択し、 **Analytics を設定** および **Adobe Analyticsをアクティベート**.

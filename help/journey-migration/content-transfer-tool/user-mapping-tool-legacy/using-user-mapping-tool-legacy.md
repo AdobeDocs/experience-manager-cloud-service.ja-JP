@@ -4,10 +4,10 @@ description: ユーザーマッピングツールの使用（従来）
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '829'
-ht-degree: 100%
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 98%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 100%
 
 ユーザーマッピングツールは、コンテンツ転送ツールに統合されています。コンテンツ転送ツールは[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)からダウンロードできます。最新バージョンについて詳しくは、[最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
-1. Adobe Experience Manager を選択し、ツール／**運営**／**コンテンツ移行**&#x200B;に移動します。
+1. Adobe Experience Managerを選択し、ツール/に移動します。 **運用** > **コンテンツの移行**.
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access1.png)
 

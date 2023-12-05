@@ -2,10 +2,10 @@
 title: スタイルシステム
 description: スタイルシステムを使用すると、テンプレート作成者がコンポーネントのコンテンツポリシーのスタイルクラスを定義し、コンテンツ作成者がページでのコンポーネントの編集時にそのスタイルクラスを選択できます。これらのスタイルは、1 つのコンポーネントの別の視覚的バリエーションとして使用することができるので、コンポーネントがより柔軟で扱いやすいものになります。
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 88%
+source-wordcount: '1305'
+ht-degree: 87%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 88%
 
 1. 次に AEM ページ作成者は、ページエディターでコンポーネントのツールバーのスタイルメニューからデザイン済みのスタイルを選択できます。
 
-AEM では、実際には最後の 3 つの手順のみが実行されます。つまり、必要な CSS と JavaScript のすべての開発は AEM なしで行うことができます。
+AEMでは、実際には最後の 3 つの手順のみが実行されます。 つまり、必要な CSS と JavaScript のすべての開発は AEM なしで行うことができます。
 
 実際にスタイルを実装するには、AEM にデプロイし、目的のテンプレートのコンポーネント内で選択する必要があるだけです。
 
@@ -120,7 +120,7 @@ AEM では、実際には最後の 3 つの手順のみが実行されます。�
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->これには、[Sling Resource Merger](/help/implementing/developing/introduction/overlays.md) を介して[オーバーレイ](/help/implementing/developing/introduction/sling-resource-merger.md)を使用します。
+これには、[Sling Resource Merger](/help/implementing/developing/introduction/overlays.md) を介して[オーバーレイ](/help/implementing/developing/introduction/sling-resource-merger.md)を使用します。
 
 コンポーネントが設定されると、すべての編集可能なコンポーネントを自動的にラップする装飾要素に、ページ作成者が設定したスタイルが AEM により自動的に挿入されます。コンポーネント自体で必要な操作はこれで終わりです。
 
@@ -134,11 +134,11 @@ AEM では、実際には最後の 3 つの手順のみが実行されます。�
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->これには、[Sling Resource Merger](/help/implementing/developing/introduction/overlays.md) を介して[オーバーレイ](/help/implementing/developing/introduction/sling-resource-merger.md)を使用します。
+これには、[Sling Resource Merger](/help/implementing/developing/introduction/overlays.md) を介して[オーバーレイ](/help/implementing/developing/introduction/sling-resource-merger.md)を使用します。
 
 >[!NOTE]
 >
->編集ダイアログの「スタイル」タブは、デフォルトでは有効になっていません。
+編集ダイアログの「スタイル」タブは、デフォルトでは有効になっていません。
 
 ### 要素名を持つスタイル {#styles-with-element-names}
 
@@ -150,11 +150,11 @@ AEM では、実際には最後の 3 つの手順のみが実行されます。�
 
 >[!CAUTION]
 >
->組み合わせ可能なスタイルには要素名を定義しないでください。 複数の要素名を定義する場合の、優先順位は次のようになります。
+組み合わせ可能なスタイルには要素名を定義しないでください。 複数の要素名を定義する場合の、優先順位は次のようになります。
 >
->1. HTL（`data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`）が他のすべての要素よりも優先されます。
->1. 次に、複数のアクティブなスタイルの中で、コンポーネントのポリシーで設定されたスタイルのリストの最初のスタイルが優先されます。
->1. 最後に、コンポーネントの `cq:htmlTag` または `cq:tagName` がフォールバック値と見なされます。
+1. HTL（`data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`）が他のすべての要素よりも優先されます。
+1. 次に、複数のアクティブなスタイルの中で、コンポーネントのポリシーで設定されたスタイルのリストの最初のスタイルが優先されます。
+1. 最後に、コンポーネントの `cq:htmlTag` または `cq:tagName` がフォールバック値と見なされます。
 >
 
 スタイル名を定義するこの機能は、レイアウトコンテナやコンテンツフラグメントコンポーネントなどの一般的なコンポーネントに意味を追加できます。

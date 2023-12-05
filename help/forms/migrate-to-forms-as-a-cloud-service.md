@@ -9,10 +9,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 94%
+source-wordcount: '1430'
+ht-degree: 86%
 
 ---
 
@@ -23,7 +23,8 @@ ht-degree: 94%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/upgrade.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
-アダプティブフォーム、テーマ、テンプレートおよびクラウドの設定は、OSGi 上の <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> AEM 6.5 Forms から [!DNL AEM] as a Cloud Service に移行またはアップグレードできます。これらのアセットを移行する前に、移行ユーティリティを使用して、以前のバージョンで使用されていた形式を [!DNL AEM] as a Cloud Service で使用されていた形式に変換します。AEM as a Cloud Serviceへの移行ジャーニーを開始します | Adobe Experience Manager 移行ユーティリティを実行すると、以下の項目が更新されます。
+アダプティブフォーム、テーマ、テンプレートおよびクラウドの設定は、OSGi 上の <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> AEM 6.5 Forms から [!DNL AEM] as a Cloud Service に移行またはアップグレードできます。これらのアセットを移行する前に、移行ユーティリティを使用して、以前のバージョンで使用されていた形式をで使用されていた形式に変換します [!DNL AEM] as a Cloud Service。
+AEM as a Cloud Serviceへの移行ジャーニーを開始します | Adobe Experience Manager 移行ユーティリティを実行すると、以下の項目が更新されます。
 
 * アダプティブフォームのカスタムコンポーネント
 * アダプティブフォームのテンプレートとテーマ
@@ -104,20 +105,20 @@ AEM Forms 6.5 から AEM as a Cloud Service 環境へのスムーズな移行を
 
 1. オプションを次々に使用して、[!DNL AEM Forms] アセットに [!DNL AEM] as a Cloud Service との互換性を持たせます。
 
-   1. 「**[!UICONTROL AEM Forms アセットの移行]**」をタップし、次の画面で「**[!UICONTROL 移行を開始]**」をタップします。これにより、[!DNL AEM Forms] 環境のアダプティブフォームとテーマは [!DNL AEM] as a Cloud Service と互換性を持つようになります。
+   1. 選択 **[!UICONTROL AEM Forms Assets の移行]**&#x200B;次の画面で、「 」を選択します。 **[!UICONTROL 移行を開始]**. これにより、[!DNL AEM Forms] 環境のアダプティブフォームとテーマは [!DNL AEM] as a Cloud Service と互換性を持つようになります。
 
-   1. 「**[!UICONTROL アダプティブフォームカスタムコンポーネントの移行]**」をタップし、カスタムコンポーネントの移行ページで「**[!UICONTROL 移行の開始]**」をタップします。これは、アダプティブフォーム用に開発されたカスタムコンポーネントと、[!DNL AEM Forms] 環境上のコンポーネントオーバーレイを、[!DNL AEM] as a Cloud Service と互換性を持たせます。
+   1. 選択 **[!UICONTROL アダプティブFormsカスタムコンポーネントの移行]** カスタムコンポーネントの移行ページで、「 **[!UICONTROL 移行を開始]**. これは、アダプティブフォーム用に開発されたカスタムコンポーネントと、[!DNL AEM Forms] 環境上のコンポーネントオーバーレイを、[!DNL AEM] as a Cloud Service と互換性を持たせます。
 
-   1. 「**[!UICONTROL アダプティブフォームテンプレートの移行]**」をタップし、カスタムコンポーネントの移行ページで、「**[!UICONTROL 移行の開始]**」をタップします。AEM テンプレートエディターを使用して作成された `/apps` または `/conf` のアダプティブフォームテンプレートは、[!DNL AEM] as a Cloud Service と互換性があります。
+   1. 選択 **[!UICONTROL アダプティブFormsテンプレートの移行]** カスタムコンポーネントの移行ページで、「 **[!UICONTROL 移行を開始]**. AEM テンプレートエディターを使用して作成された `/apps` または `/conf` のアダプティブフォームテンプレートは、[!DNL AEM] as a Cloud Service と互換性があります。
 
-   1. 「**[!UICONTROL AEM Forms クラウド設定の移行]**」をタップし、設定の移行ページで「**[!UICONTROL 移行の開始]**」をタップします。次のクラウドサービスを更新して新しい場所に移動します。
+   1. 選択 **[!UICONTROL AEM Forms Cloud 設定の移行]** 次に、「設定の移行」ページで、「 **[!UICONTROL 移行を開始]**. 次のクラウドサービスを更新して新しい場所に移動します。
 
       * Form Data Model Cloud Service
       * Google reCAPTCHA Cloud Service
       * [!DNL Adobe Sign] Cloud Service
       * Adobe Fonts Cloud Service
 
-   1. 「**[!UICONTROL コードエディタースクリプトの移行]**」をタップし、再利用可能な関数を保存する場所を指定して、「**[!UICONTROL 移行の開始]」をタップします。
+   1. 選択 **[!UICONTROL コードエディターのスクリプトの移行]**、再利用可能な関数を保存する場所を指定し、「**」を選択します[!UICONTROL 移行を開始].
 
    Cloud Service は、ルールエディタースクリプトをサポートしていません。**[!UICONTROL コードエディタースクリプトの移行]**&#x200B;ツールは、環境上のすべてのルールスクリプトを再利用可能な関数に変換し、再利用可能な関数を適切な場所のビジュアルエディターに適用します。これらの再利用可能な関数は、クライアントライブラリの形式で保存され、既存の機能をそのまま維持するのに役立ちます。ツールは、生成された再利用可能な関数を、対応するアダプティブフォームに自動的に適用します。
 

@@ -3,10 +3,10 @@ title: AEM FormsインスタンスでアダプティブFormsまたはPDF forms�
 description: アダプティブForms、PDF forms、テーマおよびその他のサポートアセットを、AEMインスタンスとの間で移行する方法について説明します。
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1206'
-ht-degree: 94%
+source-wordcount: '1193'
+ht-degree: 82%
 
 ---
 
@@ -21,15 +21,15 @@ ht-degree: 94%
 フォームや関連アセットをダウンロードするには、以下の手順を実行します。
 
 1. [!DNL AEM Forms] インスタンスにログインします。
-1. **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) アイコン／**[!UICONTROL ナビゲーション]** ![コンパス](assets/Smock_Compass_18_N.svg) アイコン／**[!UICONTROL フォーム]**／**[!UICONTROL フォームとドキュメント]**&#x200B;をタップします。
-1. アセットを選択し、「**[!UICONTROL ダウンロード]**」アイコンをタップします。
-1. 「アセットをダウンロード」で、以下のいずれかのオプションを選択し、「**[!UICONTROL ダウンロード]**」をタップします。
+1. 選択 **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) アイコン/ **[!UICONTROL ナビゲーション]** ![コンパス](assets/Smock_Compass_18_N.svg) アイコン/ **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**.
+1. アセットを選択し、 **[!UICONTROL ダウンロード]** アイコン。
+1. 「アセットをダウンロード」で、次のいずれかのオプションを選択し、「 」を選択します。 **[!UICONTROL ダウンロード]**.
 
    * 「**CRX パッケージとしてダウンロード**」：選択したすべてのアセットおよび関連する依存関係を [!DNL AEM Forms] インスタンスからダウンロードして、別のインスタンスに移動するオプションを使用します。AEM（アダプティブフォームおよびアダプティブフォームフラグメント）、フォームセット、フォームデータモデル、フォームテンプレート、PDF ドキュメント、参照リソース（XSD および画像）で作成されたフォームを含む、すべてのアセットとフォルダーを CRX パッケージとしてダウンロードします。
 アセットをパッケージとしてダウンロードすることのメリットは、選択したアセットから参照されるアセットもダウンロードできる点です。例えば、フォームテンプレート、XSD および画像を使用するアダプティブフォームがあるとします。このアダプティブフォームを選択してパッケージとしてダウンロードする場合、ダウンロードされたパッケージには、フォームテンプレート、XSD および画像も含まれています。そのアセットに関連付けられているすべてのメタデータプロパティ（カスタムプロパティを含む）も同様にダウンロードされます。
 
-   * 「**アセットをバイナリファイルとしてダウンロード**」：このオプションを使用して、フォームテンプレート（XDP）、PDF forms（PDF）、ドキュメント（PDF）、リソース（画像、スキーマ、スタイルシート）のみをダウンロードします。これらのアセットは、外部アプリケーションで編集できます。バイナリ（画像、PDF、その他のサポートされている形式など）を持つアセットを .zip ファイルとしてダウンロードします。
-「**[!UICONTROL アセットをバイナリファイルとしてダウンロード]**」オプションを使用して、アダプティブフォーム、アダプティブフォームフラグメント、テーマおよびフォームセットをダウンロードすることはできません。これらのアセットをダウンロードするには、「**[!UICONTROL CRX パッケージとしてダウンロード]**」オプションを使用する必要があります。
+   * **アセットをバイナリファイルとしてダウンロード：** フォームテンプレート (XDP)、PDF forms(PDF)、ドキュメント (PDF)、およびリソース（画像、スキーマ、スタイルシート）のみをダウンロードするには、このオプションを使用します。 これらのアセットは、外部アプリケーションで編集できます。バイナリ（画像、PDF、その他のサポートされている形式など）を持つアセットを .zip ファイルとしてダウンロードします。
+アダプティブForms、アダプティブフォームフラグメント、テーマ、フォームセットは、 **[!UICONTROL アセットをバイナリファイルとしてダウンロード]** オプション。 これらのアセットをダウンロードするには、「**[!UICONTROL CRX パッケージとしてダウンロード]**」オプションを使用する必要があります。
 
    選択したアセットはアーカイブ（.zip ファイル）としてダウンロードされます。
 
@@ -42,11 +42,11 @@ ht-degree: 94%
 サポートされているアセットタイプを個別にまたは ZIP アーカイブとしてアップロードできます。ZIP ファイルの場合は、サポートされているすべてのアセットの相対パスが表示されます。ZIP 内の未サポートアセットは無視され、一覧には表示されません。ただし、ZIP アーカイブに未サポートアセットのみが含まれている場合は、エラーメッセージが表示され、ポップアップダイアログは表示されません。フォームや関連アセットをアップロードするには、以下の手順を実行します。
 
 1. [!DNL AEM Forms] インスタンスにログインします。
-1. **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) アイコン／**[!UICONTROL ナビゲーション]** ![コンパス](assets/Smock_Compass_18_N.svg) アイコン／**[!UICONTROL フォーム]**／**[!UICONTROL フォームとドキュメント]**&#x200B;をタップします。
-1. **[!UICONTROL 作成]**／**[!UICONTROL ファイルのアップロード]**&#x200B;をタップします。ダイアログボックスが表示されます。
-1. ダイアログボックスで、読み込むパッケージまたはアーカイブを参照し、選択します。サポートされる他のファイルタイプを選択することもできます。「**[!UICONTROL 開く]**」をタップします。選択するフォルダーまたはファイル名に特殊文字を含めないでください。
+1. 選択 **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) アイコン/ **[!UICONTROL ナビゲーション]** ![コンパス](assets/Smock_Compass_18_N.svg) アイコン/ **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**.
+1. 選択 **[!UICONTROL 作成]** > **[!UICONTROL ファイルのアップロード]**. ダイアログボックスが表示されます。
+1. ダイアログボックスで、読み込むパッケージまたはアーカイブを参照し、選択します。サポートされる他のファイルタイプを選択することもできます。選択 **[!UICONTROL 開く]**. 選択するフォルダーまたはファイル名に特殊文字を含めないでください。
 
-   ダイアログボックスで、アップロードするアセットの詳細を確認し、「**[!UICONTROL アップロード]**」をタップします。
+   ダイアログボックスで、アップロードするアセットの詳細を確認し、「 」を選択します。 **[!UICONTROL アップロード]**.
 
    既存のフォームアセットをアップロードすると、そのアセットが更新されます。
 
@@ -63,8 +63,8 @@ ht-degree: 94%
 テーマをダウンロードするには、以下の手順を実行します。
 
 1. [!DNL AEM Forms] インスタンスにログインします。
-1. **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) アイコン／**[!UICONTROL ナビゲーション]** ![コンパス](assets/Smock_Compass_18_N.svg) アイコン／**[!UICONTROL フォーム]**／**[!UICONTROL テーマ]**&#x200B;をタップします。
-1. テーマを選択し、「**[!UICONTROL ダウンロード]**」をタップします。テーマはアーカイブ（.zip ファイル）としてダウンロードされます。
+1. 選択 **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) アイコン/ **[!UICONTROL ナビゲーション]** ![コンパス](assets/Smock_Compass_18_N.svg) アイコン/ **[!UICONTROL Forms]** > **[!UICONTROL テーマ]**.
+1. テーマを選択し、「 」を選択します。 **[!UICONTROL ダウンロード]**. テーマはアーカイブ（.zip ファイル）としてダウンロードされます。
 
 ## テーマのアップロード {#uploading-a-theme}
 
@@ -80,15 +80,15 @@ To share assets, such as data dictionaries, letters, and document fragments, bet
 
 ### Export Document Fragments, Letters, and/or Data Dictionaries {#export-document-fragments-letters-and-or-data-dictionaries}
 
-1. In the letters, document fragments, or data dictionary pages, tap and select the assets you want to export to a single package, and then tap Queue For Download. The assets are lined-up for export.
+1. In the letters, document fragments, or data dictionary pages, select and select the assets you want to export to a single package, and then select Queue For Download. The assets are lined-up for export.
 1. As required, repeat the above step to add letters, document fragments, and data dictionaries.
-1. Tap **Download**.
+1. Select **Download**.
 1. Correspondence Management displays Download Asset(s) dialog with a list of assets in the export list.
 
    ![export](assets/export.png)
 
-1. To view the dependencies that are exported, Tap Resolve. Or skip to the next step. Even if you do not tap resolve, the dependencies are still exported.
-1. To download the .cmp file, tap **OK**.
+1. To view the dependencies that are exported, Select Resolve. Or skip to the next step. Even if you do not select resolve, the dependencies are still exported.
+1. To download the .cmp file, select **OK**.
 1. Correspondence Management downloads a .cmp file to your computer.
 
    The .cmp file includes the exported assets. You can share the .cmp file with others. Other users can import the .cmp file in a different server to get all the assets in the new server.
@@ -102,9 +102,9 @@ For example, if Correspondence Management has a letter that uses an image and te
 To download all the Correspondence Management assets and related dependencies as a package, complete the following steps:
 
 1. Log in to [!DNL AEM Forms] server as a forms user.
-1. Tap **Adobe Experience Manager** in the Global Navigation bar.
-1. Tap tools ( ![tools](assets/tools.png)) and then tap **Forms**.
-1. Tap **Export Correspondence Management Assets**.
+1. Select **Adobe Experience Manager** in the Global Navigation bar.
+1. Select tools ( ![tools](assets/tools.png)) and then select **Forms**.
+1. Select **Export Correspondence Management Assets**.
 
    ![publish-cmp-assets-1](assets/publish-cmp-assets-1.png)
 
@@ -112,7 +112,7 @@ To download all the Correspondence Management assets and related dependencies as
 
    ![export-last-run-details](assets/export-last-run-details.png)
 
-1. Tap **Export** and, in the confirm message, tap **OK**.
+1. Select **Export** and, in the confirm message, select **OK**.
 
    After a batch process is complete, the last run details and the link to download the package are updated. This includes information such as the Administrator login and if the batch run successfully or failed. The assets are exported to a package and the Download Exported Package link appears.
 
@@ -120,7 +120,7 @@ To download all the Correspondence Management assets and related dependencies as
    >
    >The Export All Assets process cannot be canceled once initiated. Also, while the export all operation is in process, do not create, delete, modify, or publish any assets or initiate Publish All Assets process.a
 
-1. Tap the **Download Exported Package** link to download the package file.
+1. Select the **Download Exported Package** link to download the package file.
 
    To add the assets in the package to another instance of Correspondence Management, [import the package to an [!DNL AEM Forms] instance](import-export-forms-templates.md#p-upload-forms-documents-assets-p).
 
@@ -132,8 +132,8 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 >
 >While importing old Correspondence Management assets for migration, log in using an Admin account. For more information on Migrating old Correspondence Management assets, see [Migrate Correspondence Management assets to AEM 6.1 forms](migration-utility.md).
 
-1. On the data dictionary, letters, or document fragments page, tap **Create &gt; File Upload** and select the .cmp file.
-1. Correspondence Management displays the Import Assets dialog with the list of assets that are imported. Tap **Import**.
+1. On the data dictionary, letters, or document fragments page, select **Create &gt; File Upload** and select the .cmp file.
+1. Correspondence Management displays the Import Assets dialog with the list of assets that are imported. Select **Import**.
 
    After importing the assets, the following properties of the assets are updated while the other properties remain the same:
 
@@ -169,8 +169,8 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 ### フォルダーの作成 {#create-a-folder}
 
 1. [!DNL AEM Forms] インスタンスにログインします。
-1. Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) アイコン／ナビゲーション ![コンパス](assets/Smock_Compass_18_N.svg) アイコン／**[!UICONTROL フォーム]**／**[!UICONTROL フォームとドキュメント]**&#x200B;をタップします。
-1. **[!UICONTROL 作成]**／**[!UICONTROL フォルダー]**&#x200B;をタップします。
+1. 選択Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) アイコン/ナビゲーション ![コンパス](assets/Smock_Compass_18_N.svg) アイコン > **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**.
+1. 選択 **[!UICONTROL 作成]** > **[!UICONTROL フォルダー]**.
 1. 以下の詳細を入力します。
 
    * **[!UICONTROL タイトル]**：フォルダーの表示名
@@ -184,7 +184,7 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
    指定した名前を持つフォルダーが既に存在する場合は、送信はエラーになり失敗します。名前フィールドの横に表示されるエラー ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) アイコンの上にマウスポインターを置くと、エラーメッセージを見ることができます。
 
-   作成したフォルダーをタップしてフォルダー内に移動し、そのフォルダー内にアセットやフォルダーを作成できます。 さらに、フォルダーを選択し、ダウンロード、削除、名前の編集用にそのフォルダーをキューに入れることができます。
+   作成したフォルダーを選択してフォルダー内に移動し、そのフォルダー内にアセットやフォルダーを作成できます。 さらに、フォルダーを選択し、ダウンロード、削除、名前の編集用にそのフォルダーをキューに入れることができます。
 
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
@@ -194,17 +194,17 @@ You can use an existing assets to quickly create an asset with similar propertie
 Complete the following steps to create copies of assets and letters:
 
 1. On the relevant assets page, select one or more assets. The UI displays the Copy icon.
-1. Tap **[!UICONTROL Copy]**. The UI displays the **[!UICONTROL Paste]** icon. You can also choose to go/navigate inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](#folders-and-organizing-assets).
-1. Tap **[!UICONTROL Paste]**. The **[!UICONTROL Paste]** dialog appears. The system auto generates names and titles to the new copies of assets/letters, but you can edit the titles and names of the assets/letters.
+1. Select **[!UICONTROL Copy]**. The UI displays the **[!UICONTROL Paste]** icon. You can also choose to go/navigate inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](#folders-and-organizing-assets).
+1. Select **[!UICONTROL Paste]**. The **[!UICONTROL Paste]** dialog appears. The system auto generates names and titles to the new copies of assets/letters, but you can edit the titles and names of the assets/letters.
 
    If you are copying and pasting the assets/letters at the same place, a suffix "-CopyXX" gets added to the existing name of the asset/letter. If no title existed for the copied asset/letter, the auto generated title field remains blank.
 
 1. If necessary, edit the Title and Name with which you want to save the copy of the asset/letter.
-1. Tap **[!UICONTROL Paste]**. New copies of the copied assets are created.
+1. Select **[!UICONTROL Paste]**. New copies of the copied assets are created.
 
 ## Search {#search-forms}
 
-You ca use the top bar **[A]** to search your content. When you search for assets, a side panel is displayed. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
+You ca use the top bar **[A]** to search your content. When you search for assets, a side panel is displayed. You can also select ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
 
 ![search_topbar](assets/search_topbar.png)
 

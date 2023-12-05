@@ -2,9 +2,9 @@
 title: Cloud Manager FAQ
 description: AEM as a Cloud Service の Cloud Manager に関するよくある質問への回答を確認できます。
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '961'
 ht-degree: 99%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 99%
 ビルドを Java™ 8 から 11 に切り替えようとすると、AEM Cloud Manager のビルドに失敗する場合があります。次のエラーが発生した場合は、`maven-scr-plugin` を削除し、すべての OSGi 注釈を OSGi R6 注釈に変換する必要があります。
 
 ```text
-[main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
+[main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 > [Help 1]
 ```
 
 このプラグインの削除方法については、[こちら](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/)を参照してください。

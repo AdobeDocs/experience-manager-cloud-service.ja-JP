@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4301'
-ht-degree: 87%
+source-wordcount: '4270'
+ht-degree: 84%
 
 ---
 
@@ -69,13 +69,13 @@ ZIP ファイルを抽出するには、次の手順を実行します。
 アセットをプレビューするには、次の手順に従います。
 
 1. Assets ユーザーインターフェイスで、プレビューするアセットの場所に移動します。
-1. 目的のアセットをタップして開きます。
+1. 目的のアセットを選択して開きます。
 
 1. プレビューモードでは、[サポートされている画像タイプ](/help/assets/file-format-support.md)で（インタラクティブ編集中に）ズームオプションを使用できます。
 
    アセットにズームインするには、「 `+` （またはアセット上の虫眼鏡アイコンを選択します）。 ズームアウトするには、「 」を選択します。 `-`. ズームインすると、パンニングによって画像の任意の場所を詳細に確認できます。「ズームをリセット」矢印をクリックすると、元の表示に戻ります。
 
-   **[!UICONTROL リセット]**&#x200B;をタップすると、表示を元のサイズに戻すことができます。
+   選択 **[!UICONTROL リセット]** をクリックして、表示を元のサイズに戻します。
 
 ## プロパティの編集 {#editing-properties}
 
@@ -270,7 +270,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    * **[!UICONTROL 削除]**：アクションの実行を確定します。
 
       * アセットに参照がない場合は、アセットが削除されます。
-      * アセットに参照がある場合は、「**[!UICONTROL 1 つ以上のアセットが参照されています。]**」というエラーメッセージが表示されます。「**[!UICONTROL 削除を強制]**」または「**[!UICONTROL キャンセル]**」を選択できます。
+      * アセットに参照がある場合は、次のようなエラーメッセージが表示されます。 **[!UICONTROL 1 つ以上のアセットが参照されています]**. 次の項目を選択できます。 **[!UICONTROL 削除を強制]** または **[!UICONTROL キャンセル]**.
 
    >[!NOTE]
    >
@@ -340,7 +340,7 @@ CUG は、アセットへのアクセスを制限する追加の方法です。�
 
 クイックアクションのアイコンは、一度に 1 つのアセットに対してのみ利用できます。デバイスに応じて、次の操作を実行してクイックアクションアイコンを表示します。
 
-* タッチデバイス：タッチ＆ホールド。例えば iPad では、アセットをタップ＆ホールドするとクイックアクションが表示されます。
+* タッチデバイス：タッチ＆ホールド。例えば、iPadでは、アセットを選択したままにしてクイックアクションを表示できます。
 * 非タッチデバイス：マウスポインターで指す。例えばデスクトップデバイスでは、アセットのサムネールをマウスポインターで指すとクイックアクションバーが表示されます。
 
 <!-- Hiding this topic via cqdoc-18707
@@ -428,7 +428,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 1. を選択します。 **[!UICONTROL 注釈]** 次のいずれかのアイコンをクリックします。
 
    * [クイックアクション](#quick-actions)
-   * アセットを選択した後のツールバーから、またはアセットページに移動して
+   * アセットを選択した後、またはアセットページに移動した後のツールバーから
 
    <!--![chlimage_1-233](assets/chlimage_1-233.png)-->
 
@@ -543,7 +543,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    <!--![chlimage_1-247](assets/chlimage_1-247.png)-->
 
-   レンダリングされた PDF ファイルの外観を変更するには、Configuration Manager から&#x200B;**[!UICONTROL 注釈 PDF の設定]**&#x200B;を開き、必要なオプションを変更します。例えば、コメントとステータスのフォントカラー、サイズ、スタイル、背景色を変更できます。例えば、承認済みステータスの表示色を変更するには、対応するフィールドのカラーコードを変更します。注釈のフォントカラーの変更について詳しくは、[注釈](/help/assets/manage-digital-assets.md#annotating)を参照してください。
+   レンダリングされたPDFファイルの外観を変更するには、コメントとステータスのフォントカラー、サイズ、スタイル、背景色などを変更するには、 **[!UICONTROL 注釈PDFの設定]** Configuration Manager から、必要なオプションを変更します。 例えば、承認済みステータスの表示色を変更するには、対応するフィールドのカラーコードを変更します。注釈のフォントカラーの変更について詳しくは、[注釈](/help/assets/manage-digital-assets.md#annotating)を参照してください。
 
    レンダリングされた PDF ファイルに戻り、更新します。更新された PDF に、変更が反映されています。
 

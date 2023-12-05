@@ -2,10 +2,10 @@
 title: AEM Developer Tools for Eclipse
 description: Apache Sling 用の Eclipse プラグインに基づく Eclipse プラグインであるAEM Developer Tools for Eclipse の使用方法について説明します。
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1191'
-ht-degree: 88%
+source-wordcount: '1138'
+ht-degree: 86%
 
 ---
 
@@ -40,7 +40,7 @@ AEM Developer Tools を使用する前に、次の作業が必要です。
 
 前述の[要件](#requirements)を満たしたら、次の手順でプラグインをインストールできます。
 
-1. [AEM 開発者ツールの web サイト](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip)を開きます。 <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
+1. を開きます。 [AEM Developer Tools Web Site](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip). <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
 1. **インストール用リンク**&#x200B;をコピーします。
 
@@ -196,7 +196,7 @@ _Experience Manager Developer Tools for Eclipse_ には、Eclipse でのプロ�
 
 プロジェクトからパッケージを再ビルドする場合は、 `PROJECT.ui.apps` または `PROJECT.ui.content` を選択します。 **実行ユーザー** > **Maven インストール**.
 
-これで、パッケージ（例えば、`PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`）を含んだターゲットフォルダーが作成されました。
+これで、パッケージを含むターゲットフォルダーが作成されました（例： ）。 `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`) をクリックします。
 
 ## トラブルシューティング {#troubleshooting}
 

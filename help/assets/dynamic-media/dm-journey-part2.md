@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2872'
-ht-degree: 98%
+source-wordcount: '2677'
+ht-degree: 97%
 
 ---
 
@@ -66,7 +66,7 @@ Dynamic Media には、web ページ上の画像アセットの微調整に使�
 
 次に、時計の画像に回転パラメーターを追加してみます。URL パスの末尾、`wid=1000` の直後に、`&rotate=90` と入力して **[!UICONTROL Enter]** キーを押します。[試してみる](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target="_blank"}。
 
-時計はまだ少し左に歪んでいます。回転の値を `90` から `92` に変更し、**[!UICONTROL Enter]** キーを押します。[試してみる](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9)。{target="_blank"}。
+時計はまだ少し左に歪んでいます。回転の値を `90` から `92` に変更し、**[!UICONTROL Enter]** キーを押します。[試してみる](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target="_blank"}。
 
 先ほどと同様に、**[!UICONTROL Enter]** キーが押された瞬間に、新しいレンディションの腕時計がほぼ瞬時に生成されます。Dynamic Media が 80 万件を超える画像リクエストを、混雑する週末や主要な休日でも&#x200B;_秒_&#x200B;単位で配信できる理由は、このようなパフォーマンスにあります。
 
@@ -123,7 +123,7 @@ _「詳細」タブのオプションを選択して画像プリセットを作�
 
 画像プリセットは、画像のレシピと考えることができます。プリセットを使用する画像は、常に、常に、同じように配信されます。 また、パラメーター `&op_brightness=+10` が、明るさを少し増やすために追加されました。
 
-完了したら、プリセットを保存すると、既存のすべての画像で使用できるようになります。この例では、この _Medium_ 画像プリセットを、液体チョコレートが入ったボウルの画像に適用します。
+完了したら、プリセットを保存すると、既存のすべての画像で使用できるようになります。この場合、 _中_ 液体チョコレートのボウルの画像にプリセットされる画像。
 
 ![画像プリセット *Medium* を適用して、画像のレンディションを生成](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _画像プリセット Medium を適用して、画像のレンディションを生成。_

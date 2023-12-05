@@ -2,10 +2,10 @@
 title: React を使用した AEM での SPA の概要
 description: この記事では、サンプルのSPAアプリケーションを紹介し、その設定方法を説明し、React フレームワークを使用して独自のSPAをすぐに使い始めるための方法について説明します。
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 91%
+source-wordcount: '1130'
+ht-degree: 90%
 
 ---
 
@@ -254,9 +254,9 @@ export default MapTo('my-react-app/react/components/structure/page')(PageClass, 
 
 ## SPA コンポーネント間での情報の共有 {#sharing-information-between-spa-components}
 
-単一ページのアプリケーション内のコンポーネントが情報を共有することは定期的に必要です。これをおこなう推奨方法にはいくつかあり、以下に簡単なものから順に示します。
+単一ページのアプリケーション内のコンポーネントが情報を共有することは定期的に必要です。これを行う推奨方法にはいくつかあり、以下に簡単なものから順に示します。
 
-* **オプション 1：** React Context などを使用して、ロジックを一元化し、必要なコンポーネントにブロードキャストします。
+* **オプション 1:** React Context などを使用して、ロジックを一元化し、必要なコンポーネントにブロードキャストします。
 * **オプション 2：** Redux などのステートライブラリを使用して、コンポーネントの状態を共有します。
 * **オプション 3：**&#x200B;コンテナコンポーネントをカスタマイズおよび拡張することで、オブジェクト階層を活用します。
 

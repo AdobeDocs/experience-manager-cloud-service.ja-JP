@@ -2,10 +2,10 @@
 title: ページテンプレート
 description: ページテンプレートは、新しいページのベースとして使用するページを作成する際に使用します
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3278'
-ht-degree: 93%
+source-wordcount: '3267'
+ht-degree: 92%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 93%
 編集可能テンプレートを作成する場合は、次の操作を実行します。
 
 1. [テンプレート用フォルダー](#template-folders)を作成します。これは必須ではありませんが、ベストプラクティスとして推奨されます。
-1. [テンプレートタイプ](#template-type)を選択します。[テンプレート定義](#template-definitions)を作成するために、このタイプがコピーされます。
+1. [テンプレートタイプ](#template-type)を選択します。これは、 [テンプレート定義](#template-definitions).
 
    >[!NOTE]
    >
@@ -425,7 +425,7 @@ GitHub のコード
 
 * **名前**：`jcr:title`
 * **名前**：`status`
-   * &grave;&grave;**型**：`String`
+   * ``**型**：`String`
    * **値**：`draft`、`enabled` または `disabled`
 
 ### 構造 {#structure}
@@ -489,7 +489,6 @@ GitHub のコード
    * `jcr:content` ノードの status プロパティを設定する。
 
       * 例：
-
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * 次のプロパティを定義します。
@@ -502,9 +501,8 @@ GitHub のコード
 
    * [適切なページまたはサブブランチのルートページの&#x200B;**ページプロパティ**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author)&#x200B;に対して許可されたテンプレートのパスを定義します。
    * プロパティを設定します。
-
-     `cq:allowedTemplates` 
-を必要な分岐の `jcr:content` ノードに設定します。
+     `cq:allowedTemplates`
+次の日： `jcr:content` 必要なブランチのノードに設定します。
 
    例えば、次の値を使用します。
 
@@ -595,8 +593,8 @@ GitHub のコード
 
 #### 子ページで使用するテンプレートの制限 {#limiting-templates-used-in-child-pages}
 
-特定のページの下に子ページを作成するために使用できるテンプレートを制限するには、ページの `jcr:content` ノードの `cq:allowedTemplates` プロパティを使用して、子ページとして許可するテンプレートのリストを指定します。例えば、`/apps/wknd/templates/page-content` リストの各値は、許可されている子ページのテンプレートへの絶対パスである必要があります。
+特定のページの下に子ページを作成するために使用できるテンプレートを制限するには、ページの `jcr:content` ノードの `cq:allowedTemplates` プロパティを使用して、子ページとして許可するテンプレートのリストを指定します。例えば、リストの各値は、許可されている子ページのテンプレートへの絶対パスである必要があります。 `/apps/wknd/templates/page-content`.
 
 以下を使用すると、 `cq:allowedTemplates` プロパティを使用して、テンプレートの  `jcr:content` ノードを追加して、このテンプレートを使用するすべての作成済みページにこの設定を適用します。
 
-テンプレート階層に関する制約などをさらに追加する場合は、テンプレートの `allowedParents/allowedChildren` プロパティを使用できます。その後、テンプレート T から作成されたページが、テンプレート T から作成されたページと親子である必要があることを明示的に指定できます。
+例えばテンプレート階層に対してさらに制約を追加する場合は、テンプレートの `allowedParents/allowedChildren` プロパティを使用できます。その後、テンプレート T から作成されたページが、テンプレート T から作成されたページと親子である必要があることを明示的に指定できます。

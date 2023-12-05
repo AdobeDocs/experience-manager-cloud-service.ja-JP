@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '594'
-ht-degree: 100%
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+workflow-type: tm+mt
+source-wordcount: '578'
+ht-degree: 95%
 
 ---
 
@@ -94,7 +94,7 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 >
 >DAM の高度なユースケースの多くは、[!DNL Experience Manager Assets] で処理されます。Media Library ライセンスでは、Media Library を使用して、記載されているユースケースのみを実行することができます。ユースケースがリストに表示されていない場合は、Media Library ライセンスで使用しないでください。質問がある場合は、カスタマーサポートまで問い合わせください。
 
-なお、[!DNL Assets] ライセンスがなければ、スマートタグ、[!DNL Asset] リンク、[!DNL Asset] セレクター、一括タグ付け、アセットワークフローの変更、Media Library にアクセスするための標準 [!DNL Adobe Experience Manager] ユーザーインターフェイスは使用できません。
+スマートタグは使用できません。 [!DNL Asset] リンク、 [!DNL Asset] セレクター、一括タグ付け、アセットワークフローの変更、標準 [!DNL Adobe Experience Manager] を使用せずにMedia Libraryにアクセスするためのユーザーインターフェイス [!DNL Assets] ライセンス。
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 

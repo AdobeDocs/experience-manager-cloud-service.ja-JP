@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2461'
-ht-degree: 98%
+source-wordcount: '2453'
+ht-degree: 97%
 
 ---
 
@@ -68,7 +68,7 @@ AEM ではデフォルトで、スマートタグがテキストベースのア�
 
 ## タグモデルとガイドラインの理解 {#understand-tag-models-guidelines}
 
-タグモデルは、タグ付けされる画像の様々な視覚要素に関連付けられた、関連タグのグループです。タグは、画像の明確に異なる視覚的要素と関連付けられるので、タグを適用すると、特定のタイプの画像を検索するのに役立ちます。例えば、靴のコレクションは異なるタグを持つことができますが、すべてのタグは靴に関連し、同じタグモデルに属します。タグを適用すると、デザイン別や使用方法別など、様々なタイプの靴を探すのに役立ちます。[!DNL Experience Manager] でトレーニングモデルのコンテンツ表現を理解するには、各タグに対して手動で追加されたタグと例として用いる画像のグループから構成されるトップレベルのエンティティとして、トレーニングモデルを視覚化します。各タグは、画像にのみ適用できます。
+タグモデルは、タグ付けされる画像の様々な視覚要素に関連付けられた、関連タグのグループです。タグは、画像の明確に異なる視覚的要素と関連付けられるので、タグを適用すると、特定のタイプの画像を検索するのに役立ちます。例えば、靴のコレクションは異なるタグを持つことができますが、すべてのタグは靴に関連し、同じタグモデルに属します。タグを適用すると、デザインや使用法など、様々なタイプの靴を見つけるのに役立ちます。 [!DNL Experience Manager] でトレーニングモデルのコンテンツ表現を理解するには、各タグに対して手動で追加されたタグと例として用いる画像のグループから構成されるトップレベルのエンティティとして、トレーニングモデルを視覚化します。各タグは、画像にのみ適用できます。
 
 タグモデルを作成してサービスをトレーニングする前に、自社ビジネスのコンテキストでイメージ内のオブジェクトを最もよく説明する一意のタグのセットを特定します。キュレーション後のセット内のアセットが、[トレーニングガイドライン](#training-guidelines)に従っていることを確認してください。
 
@@ -189,7 +189,7 @@ AEM ではデフォルトで、スマートタグがテキストベースのア�
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## スマートタグを使用したアセットのタグ付け（AEM） {#tag-assets}
+## AEMでのスマートタグによるアセットのタグ付け {#tag-assets}
 
 サポートされているすべてのタイプのアセットは、アップロード時に [!DNL Experience Manager Assets] によって自動的にタグ付けされます。タグ付けはデフォルトで有効になっており、機能します。AEM は、ほぼリアルタイムで適切なスマートタグを適用します。<!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 

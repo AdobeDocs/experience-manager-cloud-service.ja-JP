@@ -5,10 +5,10 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 92%
+source-wordcount: '719'
+ht-degree: 89%
 
 ---
 
@@ -105,7 +105,7 @@ AEM コンテンツフラグメントのドキュメントに従って、AEM プ
 
 両方の設定の完全な例については、<https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config> を参照してください。
 
-GraphQL エンドポイントを紹介するために、サンプルコンテンツフラグメントのモデルとデータのサンプルを、コンテンツパッケージで用意しました。これらは、PWA Studio 用拡張機能に付属する React コンポーネントとうまく連携して機能します。
+GraphQLエンドポイントを紹介するために、コンテンツパッケージを介して用意されたサンプルコンテンツフラグメントモデルとデータがあります。 これらは、PWA Studio 用拡張機能に付属する React コンポーネントとうまく連携して機能します。
 
 ## 使用方法 {#how-to-use}
 

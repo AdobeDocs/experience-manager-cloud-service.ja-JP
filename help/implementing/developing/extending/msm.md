@@ -2,10 +2,10 @@
 title: Multi Site Manager の拡張
 description: マルチサイトマネージャーの機能を拡張する方法を説明します。
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2429'
-ht-degree: 58%
+source-wordcount: '2337'
+ht-degree: 55%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 58%
 
    * `getName`  — アクションの名前を戻します
 
-      * この名前は、アクションを参照するために使用されます（例えば、ロールアウト設定で）。
+      * この名前は、アクションを参照するために使用されます（例えば、ロールアウト設定）。
 
    * `execute`  — アクションのタスクを実行します
 
@@ -181,17 +181,14 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 1. このノードに次のプロパティを追加します。
 
    * **名前**：`jcr:title`
-
      **型**：`String`
      **値**:UI に表示される識別的なタイトル
 
    * **名前**：`jcr:description`
-
      **型**：`String`
      **値**：オプションの説明です。
 
    * **名前**：`cq:trigger`
-
      **型**：`String`
      **値**: [ロールアウトトリガー](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers) 使用される
       * `rollout`
@@ -209,15 +206,15 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. CRXDE Liteで、 [ロールアウト設定](#create-the-rollout-configuration) ノード、例： `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
 
-1. 次のノードプロパティを持つノードを作成 ：
+1. 次のノードプロパティを持つノードを作成します。
 
    * **名前**：同期アクションのノード名
       * 名前は **アクション名** 下のテーブルで [同期アクション](/help/sites-cloud/administering/msm/live-copy-sync-config.md#installed-synchronization-actions) 例： `contentCopy` または `workflow`.
    * **タイプ**：`cq:LiveSyncAction`
 
-1. 必要な数の同期アクションノードを追加して設定します。
+1. 必要な数の同期アクションノードを追加して構成します。
 
-1. アクションノードの順序を、実行する順序と一致するように並べ替えます。
+1. アクションノードの順序が、実行する順序に一致するようにアクションノードを並べ替えます。
    * 最上位のアクションノードが最初に実行されます。
 
 ## シンプルな LiveActionFactory クラスの作成と使用 {#creating-and-using-a-simple-liveactionfactory-class}
@@ -230,7 +227,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 1. [ロールアウト設定を作成します](#create-the-example-rollout-configuration)。
 1. [ライブコピーを作成](#create-the-live-copy)します。
 
-[Maven プロジェクトと Java クラスのソースコードは、公開されている Git リポジトリで入手できます。](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout)
+[Maven プロジェクトと Java クラスのソースコード](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout) は、パブリック Git リポジトリで入手できます。
 
 ### Maven プロジェクトの作成 {#create-the-maven-project}
 
@@ -352,7 +349,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 次の `LiveActionFactory` クラスは、ソースページおよびターゲットページに関するメッセージをログに記録し、ソースノードからターゲットノードに `cq:lastModifiedBy` プロパティをコピーする `LiveAction` を実装します。ライブアクションの名前は `exampleLiveAction` です。
 
-1. Eclipse Project Explorer で、`MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` パッケージを右クリックし、**新規**／**クラス**&#x200B;をクリックします。
+1. Eclipse Project Explorer で、 `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` パッケージ化し、 **新規** > **クラス**.
 
 1. 「**名前**」に「`ExampleLiveActionFactory`」と入力し、「**完了**」をクリックします。
 
@@ -591,7 +588,7 @@ MSM は、保存されている言語コードと国コードのリストを使�
 
 1. 新しいフォルダーに「`wcm`」という名前を付けます。
 
-1. 前のステップを繰り返して、`/apps/wcm/core` フォルダーツリーを作成します。タイプ `sling:Folder` の `core` というノードを `resources` に作成します。
+1. 前のステップを繰り返して、`/apps/wcm/core` フォルダーツリーを作成します。タイプのノードの作成 `sling:Folder` in `core` 呼び出し `resources`.
 
 1. `/libs/wcm/core/resources/languages` ノードを右クリックして、「**コピー**」をクリックします。
 1. `/apps/wcm/core/resources` フォルダーを右クリックして、「**貼り付け**」をクリックします。必要に応じて子ノードを変更します。
@@ -637,7 +634,6 @@ MSM は、保存されている言語コードと国コードのリストを使�
       * **タイプ**：`String`
       * **値**：考慮中のプロパティの名前を保持し、プロパティの値に相当します `name`
          * 例えば、
-
            `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 `cq-msm-lockable` が定義されている場合は、次の方法でチェーンの解除またはクローズを MSM と連携できます。

@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
-workflow-type: ht
-source-wordcount: '1104'
-ht-degree: 100%
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+workflow-type: tm+mt
+source-wordcount: '1066'
+ht-degree: 99%
 
 ---
 
@@ -107,7 +107,7 @@ CIF アドオンと [CIF コアコンポーネント](https://github.com/adobe/a
 
 この設定は、次の手順に従って、CIF Cloud Service 設定を使用してプロジェクトに合わせて調整できます。
 
-1. AEM で、ツール／Cloud Services／CIF 設定に移動します。
+1. AEMで、ツール/Cloud Service/CIF設定に移動します。
 
 2. 変更するコマース設定を選択します。
 

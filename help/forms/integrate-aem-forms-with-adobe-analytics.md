@@ -3,10 +3,10 @@ title: AEM Forms と Adobe Analytics を統合する方法
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: true
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1757'
-ht-degree: 82%
+source-wordcount: '1709'
+ht-degree: 60%
 
 ---
 
@@ -61,20 +61,20 @@ AEM Forms と [Adobe Analytics](https://experienceleague.adobe.com/docs/experien
 
 1. Adobe Experience Cloud にログオンし、会社の名前を選択します。
 
-1. 「**[!UICONTROL Launch / データ収集]**」をタップし、「**[!UICONTROL Launch / データ収集に移動]**」をタップします。
+1. 選択 **[!UICONTROL Launch/データ収集]** を選択し、 **[!UICONTROL Launch/データ収集に移動]**.
 
-1. 「**[!UICONTROL 新しいプロパティ]**」をタップし、設定の名前を指定します。
+1. 選択 **[!UICONTROL 新しいプロパティ]** 設定の名前を指定します。
 
-1. ドメイン名を指定し、「**[!UICONTROL 保存]**」をタップしてプロパティを保存します。
+1. ドメイン名を指定し、「 」を選択します。 **[!UICONTROL 保存]** をクリックしてプロパティを保存します。
 
-1. タグプロパティのリストで使用可能な設定名をタップします。
+1. タグプロパティのリストで使用可能な設定名を選択します。
 
-1. 「**[!UICONTROL オーサリング]**」セクションで、「**[!UICONTROL 拡張機能]**」をタップします。
+1. Adobe Analytics の **[!UICONTROL オーサリング]** セクション、選択 **[!UICONTROL 拡張機能]**.
 
-1. 「**[!UICONTROL カタログ]**」をタップし、**[!UICONTROL Adobe Experience Manager Forms]** 拡張機能の「**[!UICONTROL インストール]**」をタップします。「**インストール済み**」タブで、使用可能なインストール済み拡張機能のリストに **[!UICONTROL Adobe Experience Manager Forms]** が表示されます。
+1. 選択 **[!UICONTROL カタログ]** を選択し、 **[!UICONTROL インストール]** （の） **[!UICONTROL Adobe Experience Manager Forms]** 拡張子。 「**インストール済み**」タブで、使用可能なインストール済み拡張機能のリストに **[!UICONTROL Adobe Experience Manager Forms]** が表示されます。
 
-1. **[!UICONTROL Adobe Analytics]** 拡張機能の「**[!UICONTROL インストール]**」をタップします。
-1. 「**[!UICONTROL 開発レポートスイート]**」、「**[!UICONTROL ステージングレポートスイート]**」、「**[!UICONTROL 実稼動レポートスイート]**」の各ドロップダウンリストでレポートスイート名を選択し、「**[!UICONTROL 保存]**」をタップして拡張機能を保存します。
+1. 選択 **[!UICONTROL インストール]** （の） **[!UICONTROL Adobe Analytics]** 拡張子。
+1. レポートスイート名を **[!UICONTROL 開発レポートスイート]**, **[!UICONTROL ステージングレポートスイート]**、および **[!UICONTROL 製品レポートスイート]** ドロップダウンリストと選択 **[!UICONTROL 保存]** 拡張機能を保存します。
 
 ### データ要素の設定 {#configure-data-elements}
 
@@ -95,7 +95,7 @@ AEM Forms と [Adobe Analytics](https://experienceleague.adobe.com/docs/experien
    <td>PageName</td>
   </tr>
   <tr>
-   <td>PageURL<br />。 </td>
+   <td>PageURL<br /> </td>
    <td>PanelTitle<br /> </td>
    <td>TimeSpent</td>
   </tr>
@@ -104,9 +104,9 @@ AEM Forms と [Adobe Analytics](https://experienceleague.adobe.com/docs/experien
 
 データ要素を設定するには、次の手順を実行します。
 
-1. 「**[!UICONTROL オーサリング]**」セクションで、「**[!UICONTROL データ要素]**」をタップします。
+1. Adobe Analytics の **[!UICONTROL オーサリング]** セクション、選択 **[!UICONTROL データ要素]**.
 
-1. 「**[!UICONTROL 新規データ要素を作成]**」をタップします。
+1. 選択 **[!UICONTROL 新しいデータ要素を作成]**.
 
 1. データ要素の名前を指定します。例えば、フォームタイトルデータ要素タイプの場合は「フォームタイトル」などと指定します。
 
@@ -114,7 +114,7 @@ AEM Forms と [Adobe Analytics](https://experienceleague.adobe.com/docs/experien
 
 1. 「**[!UICONTROL データ要素のタイプ]**」を選択します。
 
-1. 「**[!UICONTROL 保存]**」をタップして、データ要素を保存します。
+1. 選択 **[!UICONTROL 保存]** をクリックしてデータ要素を保存します。
 
    >[!VIDEO](https://video.tv.adobe.com/v/337472)
 
@@ -122,21 +122,21 @@ AEM Forms と [Adobe Analytics](https://experienceleague.adobe.com/docs/experien
 
 **[!UICONTROL Adobe Experience Manager Forms]** 拡張機能に基づいてルールを作成するには、次の手順を実行します。
 
-1. 「**[!UICONTROL オーサリング]**」セクションで、「**[!UICONTROL ルール]**」をタップします。
+1. Adobe Analytics の **[!UICONTROL オーサリング]** セクション、選択 **[!UICONTROL ルール]**.
 
-1. 「**[!UICONTROL 新規ルールを作成]**」をタップします。
+1. 選択 **[!UICONTROL 新規ルールの作成]**.
 
 1. ルール名を指定します。例えば、フォーム送信を記録する場合は、「フォーム送信」などと指定します。
 
-1. 「**[!UICONTROL イベント]**」セクションで、「**[!UICONTROL 追加]**」をタップします。
+1. Adobe Analytics の **[!UICONTROL イベント]** セクション、選択 **[!UICONTROL 追加]**.
 
 1. 拡張機能名として **[!UICONTROL Adobe Experience Manager Forms]** を指定します。
 
 1. イベントタイプを選択します。「**[!UICONTROL 名前]**」フィールドには、選択したイベントタイプに基づいて自動的に入力されます。
 
-1. 「**[!UICONTROL 変更を保持]**」をタップして、イベントを保存します。
+1. 選択 **[!UICONTROL 変更を保持]** をクリックしてイベントを保存します。
 
-1. 「**[!UICONTROL アクション]**」セクションで、「**[!UICONTROL 追加]**」をタップします。
+1. Adobe Analytics の **[!UICONTROL アクション]** セクション、選択 **[!UICONTROL 追加]**.
 
 1. 拡張機能名として「**[!UICONTROL Adobe Analytics]**」を指定します。
 
@@ -153,28 +153,28 @@ AEM Forms と [Adobe Analytics](https://experienceleague.adobe.com/docs/experien
 1. 「**[!UICONTROL prop]**」セクションで、ドロップダウンリストで選択可能なレポートスイートオプションを、[データ要素の設定](#configure-data-elements)で定義したデータ要素にマッピングします。
 
    例えば、フォームの送信時に AEM Forms から [!DNL Adobe Analytics] に&#x200B;**フォームタイトル**&#x200B;データ要素を送信するには、次のようにします。
-   1. 「**[!UICONTROL prop]**」セクションで、レポートスイートで使用可能なフォームタイトルフォームタイトルの prop を選択したあと、![データベースアイコン](assets/database-icon.svg)アイコンをタップして、[データ要素の設定](#configure-data-elements)で作成したフォームタイトルフォームタイトルにマッピングします。
+   1. Adobe Analytics の **[!UICONTROL Props]** 「 」セクションで、レポートスイートで使用可能なフォームタイトルの prop を選択し、「 」を選択します。 ![データベースアイコン](assets/database-icon.svg) を、 [データ要素の設定](#configure-data-elements).
 
       ![define-props](assets/define-props.png)
 
-   1. 「**[!UICONTROL 別の要素を追加]**」をタップして、リストにさらにデータ要素を追加します。
+   1. 選択 **[!UICONTROL 別の項目を追加]** をクリックして、リストにデータ要素を追加します。
 
-1. 「**[!UICONTROL イベント]**」セクションで、レポートスイートで使用可能なオプションからイベントを選択して、「**[!UICONTROL 変更を保持]**」をタップします。
+1. Adobe Analytics の **[!UICONTROL イベント]** セクションで、レポートスイートのオプションからイベントを選択し、 **[!UICONTROL 変更を保持]**.
 
-1. 「**[!UICONTROL アクション]**」セクションで、「+」をタップし、拡張機能名として「**[!UICONTROL Adobe Analytics]**」を指定します。
+1. Adobe Analytics の **[!UICONTROL アクション]** 「 」セクションで、「 + 」を選択して、次の値を指定します。 **[!UICONTROL Adobe Analytics]** を拡張名として使用します。
 
-1. 「アクションタイプ」として「**[!UICONTROL ビーコンを送信]**」を選択します。データを [!DNL Adobe Analytics] に送信してページビューとして扱う場合は、右側のウィンドウで「**[!UICONTROL s.t()]**」を選択します。また、データを [!DNL Adobe Analytics] に送信はするものの、ページビューとして扱わない場合は、「**[!UICONTROL s.tl()]**」を選択します。「**[!UICONTROL 変更を保持]**」をタップします。
+1. 「アクションタイプ」として「**[!UICONTROL ビーコンを送信]**」を選択します。データを [!DNL Adobe Analytics] に送信してページビューとして扱う場合は、右側のウィンドウで「**[!UICONTROL s.t()]**」を選択します。また、データを [!DNL Adobe Analytics] に送信はするものの、ページビューとして扱わない場合は、「**[!UICONTROL s.tl()]**」を選択します。選択 **[!UICONTROL 変更を保持]**.
 
-1. 「**[!UICONTROL アクション]**」セクションで、「+」をタップし、拡張機能名として「**[!UICONTROL Adobe Analytics]**」を指定します。
+1. Adobe Analytics の **[!UICONTROL アクション]** 「 」セクションで、「 + 」を選択して、次の値を指定します。 **[!UICONTROL Adobe Analytics]** を拡張名として使用します。
 
-1. 「アクションタイプ」として「**[!UICONTROL 変数をクリア]**」を選択します。「**[!UICONTROL 変更を保持]**」をタップします。これらの手順を実行すると、「**[!UICONTROL アクション]**」セクションの表示は次のようになります。
+1. 「アクションタイプ」として「**[!UICONTROL 変数をクリア]**」を選択します。選択 **[!UICONTROL 変更を保持]**. これらの手順を実行すると、「**[!UICONTROL アクション]**」セクションの表示は次のようになります。
    ![アクションの設定](assets/actions-config.png)
 
    必要に応じて、「**[!UICONTROL アクション]**」セクションをカスタマイズします。例えば、 **ビーコンを送信** にデータを送信するアクションフローの手順 [!DNL Adobe Analytics] を使用して、1 つの手順でページビューとして扱い、にデータを送信します。 [!DNL Adobe Analytics] 2 番目の手順ではページビューとして扱わないでください。
 
    ![アクションの設定](assets/actions-config-2.png)
 
-1. 「**[!UICONTROL 保存]**」をタップして、ルールを保存します。
+1. 選択 **[!UICONTROL 保存]** 」と入力してルールを保存します。
 
    中断、エラー、フィールド訪問、ヘルプ、レンダリング、保存、送信などのすべてのイベントタイプに対するルールを作成できます。
 
@@ -187,13 +187,13 @@ AEM Forms と [Adobe Analytics](https://experienceleague.adobe.com/docs/experien
 
 設定を公開するには、次の手順を実行します。
 
-1. 「**[!UICONTROL 公開]**」セクションで、「**[!UICONTROL 公開フロー]**」をタップします。
+1. Adobe Analytics の **[!UICONTROL 公開]** セクション、選択 **[!UICONTROL 公開フロー]**.
 
-1. 「**[!UICONTROL ライブラリを追加]**」をタップし、名前を指定して、ライブラリの環境を選択します。
+1. 選択 **[!UICONTROL ライブラリを追加]** をクリックし、名前を指定して、ライブラリの環境を選択します。
 
-1. 「**[!UICONTROL 変更されたすべてのリソースを追加]**」をタップしたあと、「**[!UICONTROL 保存して開発用にビルド]**」をタップします。
+1. 選択 **[!UICONTROL 変更されたリソースをすべて追加]** 次に、「 **[!UICONTROL 開発用に保存およびビルド]**.
 
-1. 「**[!UICONTROL 開発]**」セクションで、「![その他のオプション](assets/more-options-icon.svg)」をタップしたあと、「**[!UICONTROL 承認して実稼動環境に公開]**」をタップします。
+1. Adobe Analytics の **[!UICONTROL 開発]** セクション、選択 ![その他のオプション](assets/more-options-icon.svg) 次に、「 **[!UICONTROL 承認して実稼動環境にパブリッシュ]**.
 
 1. 変更と公開フローがすぐに **[!UICONTROL 公開済み]** 」セクションに入力します。
 
@@ -209,7 +209,7 @@ Adobe Launch 設定を作成するには、次の手順を実行します。
 
 1. AEM Forms オーサーインスタンスで、**[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL Adobe Launch 設定]**&#x200B;に移動します。
 
-1. 設定を作成するフォルダーを選択して、「**[!UICONTROL 作成]**」をタップします。
+1. 設定を作成するフォルダーを選択し、「 」を選択します。 **[!UICONTROL 作成]**.
 
 1. 「**[!UICONTROL タイトル]**」フィールドで設定のタイトルを指定します。
 
@@ -219,7 +219,7 @@ Adobe Launch 設定を作成するには、次の手順を実行します。
 
 1. [Adobe Analytics の設定](#install-extensions) 時に作成したプロパティの名前を選択します。
 
-1. 「**[!UICONTROL 保存して閉じる]**」をタップします。
+1. 「**[!UICONTROL 保存して閉じる]**」を選択します。
 
 1. 設定を公開します。
 
@@ -228,9 +228,9 @@ Adobe Launch 設定を作成するには、次の手順を実行します。
 次の手順で [!DNL Adobe Launch] 既存のアダプティブフォームの設定：
 
 1. AEM Forms オーサーインスタンスで、**[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;に移動します。
-1. アダプティブフォームを選択し、**[!UICONTROL プロパティ]**&#x200B;アイコンをタップします。
+1. アダプティブフォームを選択し、 **[!UICONTROL プロパティ]**.
 1. 「**[!UICONTROL 基本]**」タブで、Adobe Launch 設定の作成時に使用した [設定コンテナ](#create-adobe-launch-configuration) を選択します。
-1. 「**[!UICONTROL 保存して閉じる]**」をタップします。アダプティブフォームは [!DNL Adobe Analytics] に対して有効になっています。
+1. 選択 **[!UICONTROL 保存して閉じる]**. アダプティブフォームは [!DNL Adobe Analytics] に対して有効になっています。
 1. フォームを公開します。
 
 アダプティブフォームで [!DNL Adobe Analytics] を有効にすると、AEM Forms と [!DNL Adobe Analytics] の間に適切なデータイベントフローがあるかどうかを[検証](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=ja#validate-the-page-view-beacon)できます。AEM Forms と Adobe Analytics の統合が完了しました。これで [Adobe Analytics でのレポートの設定と表示](#view-reports-adobe-analytics)を行えるようになりました。
@@ -243,7 +243,7 @@ Adobe Launch 設定を作成するには、次の手順を実行します。
 
 アダプティブフォーム内でルールエディターを使用してルールを作成するには、次の手順を実行します。
 
-1. フィールドをタップし、「![ルールエディター](assets/rule-editor-icon.svg)」を選択してルールエディターページを開きます。
+1. フィールドを選択し、「 」を選択します。 ![ルールエディター](assets/rule-editor-icon.svg) をクリックして、ルールエディターページを開きます。
 1. ルールの「[!UICONTROL 条件]」セクションで条件を定義します。
 1. ルールの「[!UICONTROL 場合、]」セクションで、「**[!UICONTROL アクションを選択]**」ドロップダウンリストから「**[!UICONTROL イベントをディスパッチ]**」を選択します。
 1. 「**[!UICONTROL イベント名を入力]**」フィールドでイベントの名前を指定します。
@@ -256,7 +256,7 @@ Adobe Launch 設定を作成するには、次の手順を実行します。
 
 1. [ルールを作成](#configure-rules)します。
 
-1. 「**[!UICONTROL イベント]**」セクションで、「**[!UICONTROL 追加]**」をタップします。
+1. Adobe Analytics の **[!UICONTROL イベント]** セクション、選択 **[!UICONTROL 追加]**.
 
 1. 拡張機能名として **[!UICONTROL Adobe Experience Manager Forms]** を指定します。
 
@@ -264,15 +264,15 @@ Adobe Launch 設定を作成するには、次の手順を実行します。
 
 1. ルールエディターを使用してルールを作成する際に、手順 4 で指定したイベントの名前を指定します。
 
-1. 「**変更を保持**」をタップし、[ルールの設定](#configure-rules)で指定した残りのアクションを実行します。
+1. 選択 **変更を保持** を実行し、 [ルールの設定](#configure-rules).
 
 ## 3. [!DNL Adobe Analytics] でのレポートの設定と表示 {#view-reports-adobe-analytics}
 
 イベントデータを [!DNL Adobe Analytics] に送信するようにアダプティブフォームを設定したら、[!DNL Adobe Analytics] でレポートの表示を開始できます。
 
-1. 「![製品を選択](assets/select-analytics.png)」をタップし、「**[!UICONTROL Analytics]**」を選択します。
+1. 選択 ![製品を選択](assets/select-analytics.png) を選択し、 **[!UICONTROL Analytics]**.
 
-1. 「**[!UICONTROL プロジェクトを作成]**」をタップし、「**[!UICONTROL 空のプロジェクト]**」を選択します。
+1. 選択 **[!UICONTROL プロジェクトを作成]** を選択し、 **[!UICONTROL 空のプロジェクト]**.
 
 1. フリーフォームの右上にあるドロップダウンリストから、レポートスイート名を選択します。
 
@@ -282,9 +282,9 @@ Adobe Launch 設定を作成するには、次の手順を実行します。
 
 1. 「**[!UICONTROL 指標]**」セクションで、追跡するイベントを「**[!UICONTROL 指標 (または他のコンポーネント) をここにドロップ]**」テキストボックスにドロップします。
 
-1. 「![ビジュアライゼーション](assets/visualization-icon.svg)」をタップし、グラフのタイプを「フリーフォーム」セクションにドロップします。同様に、複数のグラフタイプを「フリーフォーム」セクションに追加できます。
+1. 選択 ![ビジュアライゼーション](assets/visualization-icon.svg) をクリックし、「フリーフォーム」セクションにグラフタイプをドロップします。 同様に、複数のグラフタイプを「フリーフォーム」セクションに追加できます。
 
-1. Ctrl + S キーをタップし、プロジェクトを保存する名前を指定します。
+1. Ctrl + S キーを選択し、プロジェクトを保存する名前を指定します。
 
 <!--
 

@@ -2,10 +2,10 @@
 title: アダプティブフォームの送信アクションの設定方法
 description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自のアクションを作成できます。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 0e6c4e6745a03e0d48c535e2e113d2a7e5ff4e78
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3859'
-ht-degree: 92%
+source-wordcount: '3805'
+ht-degree: 91%
 
 ---
 
@@ -170,7 +170,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## SharePoint に送信 {#submit-to-sharedrive}
 
-「**[!UICONTROL SharePoint に送信]**」送信アクションは、アダプティブフォームと Microsoft® SharePoint ストレージを接続します。フォームデータファイル、添付ファイル、またはレコードのドキュメントを、接続された Microsoft Sharepoint ストレージに送信できます。
+「**[!UICONTROL SharePoint に送信]**」送信アクションは、アダプティブフォームと Microsoft® SharePoint ストレージを接続します。接続されたMicrosoft® Sharepoint ストレージに、フォームデータファイル、添付ファイル、またはレコードのドキュメントを送信できます。
 
 「SharePointに送信」を使用して、次の操作を実行できます。
 * [アダプティブフォームのSharePointドキュメントライブラリへの接続](#connect-af-sharepoint-doc-library)
@@ -264,7 +264,7 @@ AEM FormsをMicrosoft® Sharepoint リストに接続するには：
 
 1. 「**[!UICONTROL 接続]**」をクリックします。接続に成功した場合、`Connection Successful` のメッセージが表示されます。
 1. 選択 **[!UICONTROL SharePoint Site]** および **[!UICONTROL SharePoint List]** 」をドロップダウンリストから選択します。
-1. 「**[!UICONTROL 作成]**」をタップして、RESTful サービス用のクラウド設定を作成します。
+1. 選択 **[!UICONTROL 作成]** Microsoft® SharePointList のクラウド設定を作成する場合。
 
 
 #### アダプティブフォーム内でのフォームデータモデルを使用した送信の使用 {#use-submit-using-fdm}

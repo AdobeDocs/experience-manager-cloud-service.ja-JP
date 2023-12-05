@@ -2,16 +2,16 @@
 title: 脚注をアダプティブフォームに追加するにはどうすればよいですか？
 description: アダプティブフォーム内の脚注にリッチテキストエディター (RTE) を使用します。
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 78%
+source-wordcount: '429'
+ht-degree: 89%
 
 ---
 
 # 脚注コンポーネント {#footnotecomponent}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
 
 **[!UICONTROL 脚注]**&#x200B;は、ページの最後に表示される追加の情報またはメモです。[!UICONTROL 脚注]は、テキスト内で数字を上付き文字として示すメモで構成されます。
 
@@ -33,7 +33,7 @@ ht-degree: 78%
 アダプティブフォームに脚注を追加するには、次の手順を実行します。
 1. アダプティブフォームを「**編集**」モードで開きます。
 1. コンポーネントブラウザーから&#x200B;**[!UICONTROL テキスト]**&#x200B;コンポーネントを、アダプティブフォームにドラッグ＆ドロップします。
-1. を選択します。 **[!UICONTROL テキスト]** 追加してタップしたコンポーネント ![cmppr](assets/configure-icon.svg) をクリックして、そのプロパティを編集します。
+1. を選択します。 **[!UICONTROL テキスト]** 追加して選択したコンポーネント ![cmppr](assets/configure-icon.svg) をクリックして、そのプロパティを編集します。
 
    ![アダプティブフォームの脚注](/help/forms/assets/footnote_rte.png)
 

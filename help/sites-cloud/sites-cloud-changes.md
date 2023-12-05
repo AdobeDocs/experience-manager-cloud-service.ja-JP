@@ -2,10 +2,10 @@
 title: AEM Cloud Service の AEM Sites の主な変更点
 description: AEM Cloud ServiceのAEM Sitesの主な変更点の詳細
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 91%
+source-wordcount: '513'
+ht-degree: 88%
 
 ---
 
@@ -41,7 +41,7 @@ AEM Cloud Service では、従来 UI をブロックしていた操作は、バ�
 
 >[!NOTE]
 >
->この新機能を利用するためにシステムのユーザーに必要な変更はありません。ここでは、以前のオンプレミスバージョンの AEM から動作が変更された点としてのみ記載しておきます。
+>この新機能を使用するためにシステムのユーザーが必要とする変更はありません。 ここでは、以前のオンプレミスバージョンの AEM から動作が変更された点としてのみ記載しておきます。
 
 ## 新しい参照サイトおよびチュートリアル {#new-reference-site-and-tutorial}
 

@@ -2,10 +2,10 @@
 title: ベストプラクティスアナライザーの使用
 description: ベストプラクティスアナライザーを使用してアップグレードの準備状況を理解する方法について説明します。
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2476'
-ht-degree: 94%
+source-wordcount: '2418'
+ht-degree: 92%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 94%
 
 ベストプラクティスアナライザーレポートを表示するには、次のようにします。
 
-1. Adobe Experience Manager を選択し、ツール／**操作**／**ベストプラクティスアナライザー** に移動します。
+1. Adobe Experience Managerを選択し、ツール/に移動します。 **運用** > **ベストプラクティスアナライザー**.
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 

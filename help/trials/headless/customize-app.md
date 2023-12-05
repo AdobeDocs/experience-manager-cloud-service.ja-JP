@@ -4,10 +4,10 @@ description: サンプル React アプリを使用して、AEM as a Cloud Servic
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 87%
+source-wordcount: '1017'
+ht-degree: 85%
 
 ---
 
@@ -69,7 +69,7 @@ AEM ヘッドレス体験版で提供されるサンプルアプリが既に読�
 
 1. プレビューからコンテンツフラグメントエディターのブラウザータブに戻ります。
 
-1. コンテンツフラグメントエディター内の正しい場所に戻る必要があります。エディターの左上にあるパンくずリストには、コンテンツ階層内の位置が表示されます。パンくずリストの「**Mtn Biker in Canyon**」をタップまたはクリックして、そのページに戻ります。
+1. コンテンツフラグメントエディター内の正しい場所に戻る必要があります。エディターの左上にあるパンくずリストには、コンテンツ階層内の位置が表示されます。選択 **Mtn Biker in Canyon** 」をクリックして、そのページに戻ります。
 
    ![パンくずリスト](assets/do-not-localize/swap-image-2.png)
 

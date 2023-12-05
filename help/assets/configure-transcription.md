@@ -9,10 +9,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 94%
+source-wordcount: '1663'
+ht-degree: 92%
 
 ---
 
@@ -83,7 +83,7 @@ Adobe Analytics の **[!UICONTROL コンテンツ AI]** タブで、 **[!UICONTR
 
 オーディオおよびビデオファイルのトランスクリプション用に処理プロファイルを設定したら、次のいずれかの方法を使用して、この処理プロファイルをフォルダーに適用できます。
 
-* **[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL 処理プロファイル]**&#x200B;で処理プロファイルの定義を選択し、「**[!UICONTROL プロファイルをフォルダーに適用]**」アクションを使用します。コンテンツブラウザーを使用すると、特定のフォルダーに移動し、フォルダーを選択して、プロファイルの適用を確定できます。
+* で処理プロファイルの定義を選択 **[!UICONTROL ツール]** > **[!UICONTROL Assets]** > **[!UICONTROL 処理プロファイル]**、およびを使用します。 **[!UICONTROL プロファイルをフォルダーに適用]** アクション。 コンテンツブラウザーを使用すると、特定のフォルダーに移動し、フォルダーを選択して、プロファイルの適用を確定できます。
 * Assets ユーザーインターフェイスでフォルダーを選択し、「**[!UICONTROL プロパティ]**」アクションをクリックして、フォルダーのプロパティを開きます。「**[!UICONTROL アセット処理]**」タブをクリックし、そのフォルダーに適した処理プロファイルを「**[!UICONTROL 処理プロファイル]**」リストから選択します。変更を保存するには、「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
   ![configure-transcription-service](assets/video-processing-profile3.png)

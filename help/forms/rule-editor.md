@@ -1,20 +1,20 @@
 ---
 title: ルールエディターを使用してルールをフォームフィールドに追加し、動的な動作を追加し、アダプティブフォームに複雑なロジックを構築する方法を教えてください。
-description: アダプティブフォームルールエディターを使用すると、コーディングやスクリプトの作成を行わずに、動的な動作を追加し、複雑なロジックをフォームに組み込むことができます。
+description: アダプティブFormsのルールエディターを使用すると、コーディングやスクリプティングを行わずに、動的な動作を追加し、複雑なロジックをフォームに組み込むことができます。
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '6439'
-ht-degree: 94%
+source-wordcount: '6457'
+ht-degree: 88%
 
 ---
 
 # アダプティブフォームへのルールの追加 {#adaptive-forms-rule-editor}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -332,13 +332,13 @@ When （オプション）：
 ルールエディターのユーザーインターフェイスを起動するには：
 
 1. アダプティブフォームをオーサリングモードで開きます。
-1. ルールを記述するフォームオブジェクトをタップし、コンポーネントツールバーで「![edit-rules](assets/edit-rules-icon.svg)」をタップします。ルールエディターのユーザーインターフェイスが表示されます。
+1. ルールを記述するフォームオブジェクトを選択し、「コンポーネントツールバー」でを選択します。 ![edit-rules](assets/edit-rules-icon.svg). ルールエディターのユーザーインターフェイスが表示されます。
 
    ![create-rules](assets/create-rules.png)
 
    選択したフォームオブジェクトの既存のルールが、このビューに一覧表示されます。既存ルールの詳細な管理方法については、[ルール管理](rule-editor.md#p-manage-rules-p)を参照してください。
 
-1. 「**[!UICONTROL 作成]**」をタップして、新しいルールを追加します。ルールエディターの初回起動時は、ルールエディターの UI がビジュアルエディターモード（デフォルト）で表示されます。
+1. 選択 **[!UICONTROL 作成]** をクリックして新しいルールを作成します。 ルールエディターの初回起動時は、ルールエディターの UI がビジュアルエディターモード（デフォルト）で表示されます。
 
    ![ルールエディターのユーザーインターフェイス](assets/rule-editor-ui.png)
 
@@ -364,7 +364,7 @@ When （オプション）：
 >
 >「フォームオブジェクト」と「関数」の各タブ内では、オブジェクトや関数の名前やタイトルを基にテキスト検索を行うことができます。
 
-フォームオブジェクトの左側のツリーでフォームオブジェクトをタップすると、各オブジェクトに適用されるルールが表示されます。ここでは、様々なフォームオブジェクトのルール間を移動できるだけでなく、フォームオブジェクト間でルールをコピー＆ペーストすることもできます。詳しくは、[ルールのコピー＆ペースト](rule-editor.md#p-copy-paste-rules-p)を参照してください。
+フォームオブジェクトの左側のツリーで、フォームオブジェクトを選択して、各オブジェクトに適用されるルールを表示できます。 ここでは、様々なフォームオブジェクトのルール間を移動できるだけでなく、フォームオブジェクト間でルールをコピー＆ペーストすることもできます。詳しくは、[ルールのコピー＆ペースト](rule-editor.md#p-copy-paste-rules-p)を参照してください。
 
 ### C. フォームオブジェクトと関数の切り替え {#c-form-objects-and-functions-toggle-br}
 
@@ -416,15 +416,15 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. まず、「Marital Status（配偶者の有無）」のラジオボタンの選択内容に応じて「Spouse Salary（配偶者の給与）」フィールドの表示・非表示を制御するためのルールを記述します。
 
-   融資申請フォームをオーサリングモードで開きます。「**[!UICONTROL Marital Status（配偶者の有無）]**」コンポーネントをタップし、「![edit-rules](assets/edit-rules-icon.svg)」をタップします。次に、ルールエディターを起動し「**[!UICONTROL 作成]**」をタップします。
+   融資申請フォームをオーサリングモードで開きます。を選択します。 **[!UICONTROL 配偶者の有無]** コンポーネントと選択 ![edit-rules](assets/edit-rules-icon.svg). 次に、「 **[!UICONTROL 作成]** をクリックして、ルールエディターを起動します。
 
    ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1.png)
 
    ルールエディターを起動すると、「When」ルールがデフォルトで選択されます。また、ルールエディターを起動したフォームオブジェクト（この場合は「Marital Status（配偶者の有無）」）は、「When」文に入力されています。
 
-   選択したオブジェクトを変更または修正できませんが、以下に示すように、ルールドロップダウンを使用して別のルールタイプを選択できます。別のオブジェクトにルールを作成する場合は、「キャンセル」をタップしてルールエディターを終了し、目的のフォームオブジェクトからルールエディターを再起動します。
+   選択したオブジェクトを変更または修正できませんが、以下に示すように、ルールドロップダウンを使用して別のルールタイプを選択できます。別のオブジェクトにルールを作成する場合は、「キャンセル」を選択してルールエディターを終了し、目的のフォームオブジェクトから再度起動します。
 
-1. 「**[!UICONTROL 状態の選択]**」のドロップダウンをタップし、「**[!UICONTROL is equal to （に等しい）]**」を選択します。「**[!UICONTROL 文字列を入力]**」フィールドが表示されます。
+1. 選択 **[!UICONTROL 状態を選択]** ドロップダウンして「 」を選択します。 **[!UICONTROL 次と等しい]**. 「**[!UICONTROL 文字列を入力]**」フィールドが表示されます。
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2.png)
 
@@ -442,7 +442,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
-1. 「**[!UICONTROL オブジェクトをドロップするか、または次から選択]**」フィールドの「フォームオブジェクト」タブから「**[!UICONTROL Spouse Salary （配偶者の給与）]**」フィールドをドラッグ・ドロップします。あるいは、「**[!UICONTROL オブジェクトをドロップするか、または次から選択]**」フィールドをタップし、ポップアップメニューから「**[!UICONTROL Spouse Salary （配偶者の給与）]**」フィールドを選択します。この中には、フォーム内のすべてのフォームオブジェクトが一覧表示されます。
+1. 「**[!UICONTROL オブジェクトをドロップするか、または次から選択]**」フィールドの「フォームオブジェクト」タブから「**[!UICONTROL Spouse Salary （配偶者の給与）]**」フィールドをドラッグ・ドロップします。または、 **[!UICONTROL オブジェクトをドロップするか、ここから選択]** フィールドに値を入力し、 **[!UICONTROL 配偶者の給与]** フィールドを選択します。
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
 
@@ -450,7 +450,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7.png)
 
-1. 「**[!UICONTROL 完了]**」をクリックして、ルールを保存します。
+1. 選択 **[!UICONTROL 完了]** 」と入力してルールを保存します。
 
 1. 配偶者の有無が「Single（独身）」の場合は「Spouse Salary（配偶者の給与）」フィールドを非表示にするため、手順 1～5 を繰り返して別のルールを定義します。ルールエディターでは、ルールが次のように表示されます。
 
@@ -464,13 +464,13 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. 次に、融資適格金額を算出するためのルールを記述します。ここでは、総給与の 50% として計算され、「Loan Eligibility（貸付資格）」フィールドに表示されます。この結果を得るには、「Loan Eligibility （貸付資格）」フィールド上に「**[!UICONTROL 設定値]**」ルールを作成します。
 
-   オーサリングモードで「**[!UICONTROL Loan Eligibility （貸付資格）]**」フィールドをタップし、![edit-rules](assets/edit-rules-icon.svg) をタップします。次に、ルールエディターを起動し「**[!UICONTROL 作成]**」をタップします。
+   オーサリングモードで、 **[!UICONTROL ローンの適格要件]** 「 」フィールドで「 」を選択します。 ![edit-rules](assets/edit-rules-icon.svg). 次に、「 **[!UICONTROL 作成]** をクリックして、ルールエディターを起動します。
 
 1. ルールのドロップダウンから「**[!UICONTROL 指定値]**」ルールを選択します。
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. 「**[!UICONTROL オプションの選択]**」をタップして「**[!UICONTROL 数式]**」を選択します。数式記述用のフィールドが表示されます。
+1. 選択 **[!UICONTROL オプションを選択]** を選択し、 **[!UICONTROL 数式]**. 数式記述用のフィールドが表示されます。
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
@@ -484,7 +484,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
-1. 次に、式フィールドの周りの強調表示された領域をタップし、「**[!UICONTROL 拡張式]**」をタップします。
+1. 次に、式フィールドの周囲のハイライト表示された領域で「 」を選択し、「 」を選択します。 **[!UICONTROL 式を拡張]**.
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13.png)
 
@@ -498,7 +498,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    次に、True が返された場合に式を実行する条件を作成します。
 
-1. 「**[!UICONTROL 条件の追加]**」をタップして、「When」文を追加します。
+1. 選択 **[!UICONTROL 条件を追加]** をクリックして、 When 文を追加します。
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15.png)
 
@@ -512,7 +512,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ルールは、ルールエディターで最終的には次のように表示されます。![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
 
-1. 「**[!UICONTROL 完了]**」をタップします。ルールが保存されます。
+1. 選択 **[!UICONTROL 完了]**. ルールが保存されます。
 
 1. ステップ 7～14 を繰り返し、配偶者の有無が「Single（独身）」であれば融資適格額を計算する別のルールを定義します。ルールエディターでは、ルールが次のように表示されます。
 
@@ -601,8 +601,8 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
   他のすべての戻り値のタイプは、上記のいずれかに分類されます。「なし」はサポートされていません。上記のタイプのいずれかを選択していることを確認してください。戻り値のタイプでは大文字と小文字が区別されません。
 
-   * **This**
-Syntax（これ構文）： `@this currentComponent`
+   * **この**
+構文： `@this currentComponent`
 
   ルールが記述されているアダプティブフォームコンポーネントを参照するには、@this を使用します。
 
@@ -643,18 +643,18 @@ Syntax（これ構文）： `@this currentComponent`
 CRX リポジトリーにクライアントライブラリを追加した後は、アダプティブフォームでそれを使用します。これにより、カスタム関数をルールとしてフォーム内で使用することができます。アダプティブフォームにクライアントライブラリを追加するには、次の手順を実行します。
 
 1. フォームを編集モードで開きます。
-フォームを編集モードで開くには、フォームを選択し、「**[!UICONTROL 開く]**」をタップします。
-1. 編集モードで、コンポーネントを選択し、![フィールドレベル](assets/select_parent_icon.svg)／**[!UICONTROL アダプティブフォームコンテナ]**&#x200B;をタップしてから、 ![cmppr](assets/configure-icon.svg) をタップします。
+フォームを編集モードで開くには、フォームを選択し、 **[!UICONTROL 開く]**.
+1. 編集モードで、コンポーネントを選択し、「 」を選択します。 ![フィールドレベル](assets/select_parent_icon.svg) > **[!UICONTROL アダプティブフォームコンテナ]**&#x200B;を選択し、 ![cmppr](assets/configure-icon.svg).
 1. サイドバーの「クライアントライブラリの名前」の下から、クライアントライブラリを追加します。（この例では、「`customfunction`」）。
 
    ![カスタム関数をクライアントライブラリを追加する](assets/clientlib.png)
 
-1. 入力数値ボックスを選択し、![edit-rules](assets/edit-rules-icon.svg) をタップしてルールエディターを開きます。
-1. 「**[!UICONTROL ルールを作成]**」をタップします。フォームの出力フィールドに入力の自乗値を保存するルールを、次のオプションを使用して作成します。
+1. 入力数値ボックスを選択し、「 」を選択します。 ![edit-rules](assets/edit-rules-icon.svg) をクリックして、ルールエディターを開きます。
+1. 選択 **[!UICONTROL ルールを作成]**. フォームの出力フィールドに入力の自乗値を保存するルールを、次のオプションを使用して作成します。
 
    [![カスタム関数を利用したルールの作成](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
 
-1. 「**[!UICONTROL 完了]**」をタップします。これでカスタム機能が追加されました。
+1. 選択 **[!UICONTROL 完了]**. これでカスタム関数が追加されました。
 
    >[!NOTE]
    >
@@ -725,21 +725,21 @@ var c = {
 
 ## ルール管理 {#manage-rules}
 
-オブジェクトをタップして ![edit-rules1](assets/edit-rules-icon.svg) をタップすると、フォームオブジェクトの既存のルールが一覧表示されます。タイトルを表示し、ルール概要をプレビューできます。さらに、UI を使用して、完全なルール概要の展開と表示、ルールの順序の変更、ルールの編集、ルールの削除を行うことができます。
+フォームオブジェクト上の既存のルールは、オブジェクトを選択し、 ![edit-rules1](assets/edit-rules-icon.svg). タイトルを表示し、ルール概要をプレビューできます。さらに、UI を使用して、完全なルール概要の展開と表示、ルールの順序の変更、ルールの編集、ルールの削除を行うことができます。
 
 ![リストルール](assets/list-rules.png)
 
 ルールに対して、次の操作を実行できます。
 
-* **展開／折りたたみ**：ルールリスト内の「コンテンツ」の列には、ルールの内容が表示されます。デフォルトビューにルール内容の全体が表示されていない場合は、![expand-rule-content](assets/Smock_ChevronDown.svg) をタップしてビューを展開します。
+* **展開／折りたたみ**：ルールリスト内の「コンテンツ」の列には、ルールの内容が表示されます。ルールの内容全体がデフォルトビューに表示されない場合は、「 ![expand-rule-content](assets/Smock_ChevronDown.svg) 拡張する
 
 * **並べ替え**：新しく作成したルールは、すべてルールリストの一番下に追加されます。ルールは上から下に実行されます。一番上のルールが最初に実行され、続けて同じタイプの他のルールが実行されます。例えば、「When」、「Show」、「Enable」、および「When」の各ルールが、リストの 1～4 番目にある場合、一番上にある「When」ルールが最初に実行され、次に 4 番目の「When」ルールが実行されます。そして、「Show」ルールおよび「Enable」ルールが実行されます。ルールの順序を変更するには、![sort-rules](assets/sort-rules.svg) をタップするか、リスト内の目的の位置にドラッグアンドドロップします。
 
-* **編集**：ルールを編集するには、ルールタイトルの横にあるチェックボックスを選択します。ルールを編集・削除するためのオプションが表示されます。「**[!UICONTROL 編集]**」をタップして、選択したルールをルールエディター<!-- in visual  or code editor mode depending on the mode used to create the rule -->で開きます。
+* **編集**：ルールを編集するには、ルールタイトルの横にあるチェックボックスを選択します。ルールを編集・削除するためのオプションが表示されます。選択 **[!UICONTROL 編集]** 選択したルールをルールエディターで開くには <!-- in visual  or code editor mode depending on the mode used to create the rule -->.
 
-* **削除**：ルールを削除するには、ルールを選択し「**[!UICONTROL 削除]**」をタップします。
+* **削除**：ルールを削除するには、ルールを選択し、「 」を選択します。 **[!UICONTROL 削除]**.
 
-* **有効／無効**：ルールの使用を一時的に停止する必要がある場合、1 つ以上のルールを選択し、アクションツールバーの「**[!UICONTROL 無効]**」をタップして無効にすることができます。ルールが無効化されている場合は、ランタイムには実行されません。無効になっているルールを有効にするには、そのルールを選択して、アクションツールバーで「有効にする」をタップします。ルールの「ステータス」列には、ルールが有効か無効かが表示されます。
+* **有効/無効**：ルールの使用を一時的に中止する必要がある場合は、1 つ以上のルールを選択し、「 」をクリックします **[!UICONTROL 無効にする]** をクリックして無効にします。 ルールが無効化されている場合は、ランタイムには実行されません。無効になっているルールを有効にするには、そのルールを選択し、アクションツールバーの「有効」を選択します。 ルールの「ステータス」列には、ルールが有効か無効かが表示されます。
 
 ![ルールを無効にする](assets/disablerule.png)
 
@@ -749,23 +749,23 @@ var c = {
 
 ルールをコピー＆ペーストするには、次の手順を実行します。
 
-1. ルールをコピーするフォームオブジェクトをタップし、コンポーネントツールバーから ![edit rule](assets/edit-rules-icon.svg) をタップします。フォームオブジェクトが選択された状態でルールエディターのユーザーインタフェイスが表示され、既存のルールが表示されます。
+1. ルールのコピー元となるフォームオブジェクトを選択し、コンポーネントツールバーで「 」を選択します。 ![ルールを編集](assets/edit-rules-icon.svg). フォームオブジェクトが選択された状態でルールエディターのユーザーインタフェイスが表示され、既存のルールが表示されます。
 
    ![ルールのコピー](assets/copyrule.png)
 
    既存ルールの詳細な管理方法については、[ルール管理](rule-editor.md#p-manage-rules-p)を参照してください。
 
-1. ルールタイトルの横にあるチェックボックスを選択すると、ルールを管理するオプションが表示されます。「**[!UICONTROL コピー]**」をタップします。
+1. ルールタイトルの横にあるチェックボックスを選択すると、ルールを管理するオプションが表示されます。「**[!UICONTROL コピー]**」を選択します。
 
    ![copyrule2](assets/copyrule2.png)
 
-1. ルールを貼り付ける別のフォームオブジェクトを選択し、「**[!UICONTROL 貼り付け]**」をタップします。さらに、ルールを編集して、変更をを加えることもできます。
+1. ルールを貼り付ける別のフォームオブジェクトを選択し、「 」を選択します。 **[!UICONTROL 貼り付け]**. さらに、ルールを編集して、変更をを加えることもできます。
 
    >[!NOTE]
    >
    >ルールを別のフォームオブジェクトに貼り付けることができるのは、そのフォームオブジェクトがコピーしたルールのイベントをサポートしている場合に限られます。例えば、ボタンはクリックイベントをサポートします。クリックイベントを含むルールをボタンに貼り付けることはできますが、チェックボックスには貼り付けることはできません。
 
-1. 「**[!UICONTROL 完了]**」をクリックして、ルールを保存します。
+1. 選択 **[!UICONTROL 完了]** 」と入力してルールを保存します。
 
 ## ネスト式 {#nestedexpressions}
 
@@ -775,7 +775,7 @@ var c = {
 
 ![複雑な式](assets/complexexpression.png)
 
-ルール内で条件をドラッグアンドドロップして編集することもできます。条件の前のハンドル（![handle](assets/drag-handle.svg)）をタップし続けます。次に示すようにポインターが手の形になったら、ルール内の任意の場所に条件をドラッグ＆ドロップします。ルール構造が変化します。
+ルール内で条件をドラッグアンドドロップして編集することもできます。を選択し、ハンドル ( ![取り扱い](assets/drag-handle.svg)) をクリックします。 次に示すようにポインターが手の形になったら、ルール内の任意の場所に条件をドラッグ＆ドロップします。ルール構造が変化します。
 
 ![Drag-and-drop](assets/drag-and-drop.png)
 

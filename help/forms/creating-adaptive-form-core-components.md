@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2301'
-ht-degree: 96%
+source-wordcount: '2264'
+ht-degree: 94%
 
 ---
 
@@ -62,9 +62,9 @@ ht-degree: 96%
 
 1. [!DNL Experience Manager Forms] オーサーインスタンスにログインします。Cloud インスタンスまたはローカル開発インスタンスの場合があります。
 
-1. Experience Manager のログインページに資格情報を入力します。ログイン後、左上隅の **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;をタップします。
+1. Experience Manager のログインページに資格情報を入力します。ログイン後、左上隅の「 」を選択します。 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**.
 
-1. 「**[!UICONTROL 作成]**」をタップして、「**[!UICONTROL アダプティブフォーム]**」を選択します。ウィザードが開きます。ソースタブで、テンプレートを選択します。
+1. 選択 **[!UICONTROL 作成]**  > **[!UICONTROL アダプティブForms]**. ウィザードが開きます。ソースタブで、テンプレートを選択します。
 
    ![コアコンポーネントテンプレート](/help/forms/assets/core-components-template.png)
 
@@ -97,13 +97,13 @@ ht-degree: 96%
 
 1. （オプション）「**[!UICONTROL 配信]**」タブで、アダプティブフォームの公開日または非公開日を指定することができます。
 
-1. 「**[!UICONTROL 作成]**」をタップします。アダプティブフォームを保存するためのタイトル、名前および場所を指定するためのダイアログが表示されます。
+1. 「**[!UICONTROL 作成]**」を選択します。アダプティブフォームを保存するためのタイトル、名前および場所を指定するためのダイアログが表示されます。
 
    * **[!UICONTROL タイトル]**：フォームの表示名を指定します。タイトルを指定すると、[!DNL Experience Manager Forms] ユーザーインターフェイス内のフォームを特定しやすくなります。
    * **[!UICONTROL 名前：]**&#x200B;フォームの名前を指定します。指定された名前のノードがリポジトリーに作成されます。タイトルを入力し始めると、名前フィールドの値が自動的に生成されます。候補として入力された値は変更可能です。「ドキュメント名」フィールドには、英数字、ハイフン、アンダースコアのみを使用できます。無効な入力は、すべてハイフンに置き換えられます。
    * **[!UICONTROL パス]**：アダプティブフォームを保存する場所を指定します。 アダプティブフォームは、`/content/dam/formsanddocuments` に直接保存することができます。または、`/content/dam/formsanddocuments/adaptiveforms` などのフォルダーを作成して、アダプティブフォームを保存することができます。フォルダーをパスで使用する前に、必ずフォルダーを作成してください。 「**[!UICONTROL パス]**」フィールドでは、フォルダーは自動的には作成されません。
 
-1. 「**[!UICONTROL 作成]**」をタップします。アダプティブフォームが作成され、アダプティブフォームエディターで開かれます。 エディターに、テンプレートで使用可能なコンテンツが表示されます。 アダプティブフォームのタイプに応じて、関連する <!--XFA form template, XML schema or --> JSON スキーマまたはフォームデータモデルに存在するフォーム要素が、サイドバーの&#x200B;**[!UICONTROL コンテンツブラウザ]**&#x200B;の「**[!UICONTROL データモデルオブジェクト]**」タブに表示されます。これらの要素もアドラッグ＆ドロップしてダプティブフォームを作成できます。
+1. 「**[!UICONTROL 作成]**」を選択します。アダプティブフォームが作成され、アダプティブフォームエディターで開かれます。 エディターに、テンプレートで使用可能なコンテンツが表示されます。 アダプティブフォームのタイプに応じて、関連する <!--XFA form template, XML schema or --> JSON スキーマまたはフォームデータモデルに存在するフォーム要素が、サイドバーの&#x200B;**[!UICONTROL コンテンツブラウザ]**&#x200B;の「**[!UICONTROL データモデルオブジェクト]**」タブに表示されます。これらの要素もアドラッグ＆ドロップしてダプティブフォームを作成できます。
 
 これで、[アダプティブフォームのコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)をアダプティブフォームのコンテナにドラッグ＆ドロップし、フォームをデザインおよび作成できます。また、[https://aemcomponents.dev/](https://aemcomponents.dev/) では、使用可能なコアコンポーネントの動作を確認できます。
 
@@ -184,11 +184,11 @@ ht-degree: 96%
 
 ## アダプティブフォームのフォームモデルプロパティの編集 {#edit-form-model}
 
-1. アダプティブフォームを選択し、![ページ情報](/help/forms/assets/Smock_Properties_18_N.svg)／**[!UICONTROL プロパティを開く]**&#x200B;をタップします。フォームプロパティページが開きます。
+1. アダプティブフォームを選択し、 ![ページ情報](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL プロパティを開く]**. フォームプロパティページが開きます。
 
 1. 「**[!UICONTROL フォームモデル]**」タブをクリックし、フォームモデルを選択します。アダプティブフォームにフォームモデルがない場合は、JSON スキーマまたはフォームデータモデルを自由に選択できます。一方、アダプティブフォームが既にフォームモデルに基づいている場合は、同じタイプの別のフォームモデルに切り替えることもできます。例えば、フォームが JSON スキーマを使用している場合、別の JSON スキーマに容易に切り替えることができます。同様に、フォームがフォームデータモデルを使用している場合は、別のフォームデータモデルに切り替えることができます。
 
-1. 「**[!UICONTROL 保存]**」をタップして、プロパティを保存します。
+1. 選択 **[!UICONTROL 保存]** をクリックしてプロパティを保存します。
 
 
 <!--

@@ -4,9 +4,9 @@ description: コンテンツフラグメントのコンテンツを作成する�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2266'
 ht-degree: 5%
 
 ---
@@ -190,7 +190,7 @@ ht-degree: 5%
 の場合 **[複数行テキスト](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** 次のように定義されたフィールド **リッチテキスト**&#x200B;には、様々な機能を使用できます。
 
 * コンテンツを編集します。
-   * 取り消し／やり直し
+   * 取り消し/やり直し
    * テキストとして貼り付け/貼り付け
    * コピー
    * 段落書式を選択

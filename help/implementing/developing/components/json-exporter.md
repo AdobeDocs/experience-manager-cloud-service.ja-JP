@@ -2,10 +2,10 @@
 title: コンテンツサービス用の JSON エクスポーター
 description: AEM コンテンツサービスは、web ページだけに焦点を置かずに AEM のコンテンツの記述と配信を一般化するように設計されています。AEM コンテンツサービスにより、あらゆるクライアントで使用できる標準化された方法で、従来の AEM web ページとは異なるチャネルにコンテンツを配信できます。
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 92%
+source-wordcount: '383'
+ht-degree: 87%
 
 ---
 
@@ -41,7 +41,7 @@ AEM 内では、セレクター `model` と `.json` 拡張機能を使用して�
 
 代わりに、構造化コンテンツフラグメントのコンテンツを、ターゲット設定して配信することもできます。
 
-これをおこなうには、（`jcr:content` を介して）フラグメントへのパス全体を使用します。例えば、次のようなサフィックスを付けます。
+これは、( `jcr:content`) で始まります。例えば、次のようなサフィックスを付けます。
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 

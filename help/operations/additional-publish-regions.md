@@ -2,10 +2,10 @@
 title: 追加の公開地域
 description: AEM as a Cloud Service が、可用性の向上と待ち時間の短縮を実現するために、追加の公開地域をサポートする方法を説明します。
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 80%
+source-wordcount: '638'
+ht-degree: 78%
 
 ---
 
@@ -20,7 +20,7 @@ AEM Sites で設定されたプログラムでは、追加の公開地域のラ�
 
 >[!NOTE]
 >
->現在、この機能は、AEM Sites でのみ使用できます。また、サンドボックスプログラムには適用できません。さらに、追加の公開地域機能を使用するには、プログラムを AEM リリースバージョン 12142 以降に更新する必要があることに注意してください。
+>現在、この機能は、AEM Sites でのみ使用できます。また、サンドボックスプログラムには適用できません。また、追加の公開地域機能を使用するには、プログラムをAEMリリースバージョン12142以降に更新する必要があります。
 
 ## ユースケース {#use-cases}
 

@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 92%
+source-wordcount: '957'
+ht-degree: 87%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 92%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html?lang=ja) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html) |
 | AEM as a Cloud Service | この記事 |
 
 ![データ統合](assets/data-integeration.png)
@@ -100,7 +100,6 @@ OAuth クライアントを Active Directory Federation Services（AD FS）マ�
 
    * `Client-ID` は、任意の GUID ジェネレーターを使用して生成できるクライアント ID です。
    * `redirect-uri` は、[!DNL Experience Manager Forms] 上の [!DNL Microsoft Dynamics] OData クラウドサービスに対する URL です。[!DNL Experience Manager Forms] と共にインストールされるデフォルトのクラウドサービスは、次の URL にデプロイされます。
-
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. 以下のコマンドを実行して、AD FS マシン上でアクセス権を設定します。
@@ -123,13 +122,14 @@ OData サービスは、そのサービスのルート URL によって識別さ
 >
 >オンライン環境またはオンプレミス環境で [!DNL Microsoft Dynamics 365] を設定する詳しい手順については、[[!DNL Microsoft Dynamics] OData 設定](ms-dynamics-odata-configuration.md)を参照してください。
 
-1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーをタップして選択します。
+1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定を作成するフォルダーを選択します。
 
    クラウドサービス設定用フォルダーの作成方法と構成方法については、「[クラウドサービス設定用フォルダーの構成](#cloud-folder)」を参照してください。
 
-1. 「**[!UICONTROL 作成]**」をタップして、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL OData サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」をタップします。「**[!UICONTROL 認証設定]**」タブで、次のように設定します。
+1. 選択 **[!UICONTROL 作成]** 開く **[!UICONTROL データソース設定の作成ウィザード]**. 設定の名前を指定し、必要に応じて設定のタイトルを指定して、「 」を選択します。 **[!UICONTROL OData サービス]** から **[!UICONTROL サービスタイプ]** ドロップダウンで、必要に応じて設定のサムネール画像を参照して選択し、 **[!UICONTROL 次へ]**.
+「**[!UICONTROL 認証設定]**」タブで、次のように設定します。
 
-   1. の値を入力します。 **[!UICONTROL サービスルート]** フィールドに入力します。 Dynamics インスタンスの「**[!UICONTROL 開発者向けリソース]**」に移動し、「サービスルート」フィールドの値を表示します。例えば、https://&lt;tenant-name>/api/data/v9.1/ です。
+   1. 「**[!UICONTROL サービスルート]**」フィールドの値を入力します。Dynamics インスタンスの「**[!UICONTROL 開発者向けリソース]**」に移動し、「サービスルート」フィールドの値を表示します。例えば、https://&lt;tenant-name>/api/data/v9.1/ です。
 
    1. 認証のタイプとして「**[!UICONTROL OAuth 2.0]**」を選択します。
 

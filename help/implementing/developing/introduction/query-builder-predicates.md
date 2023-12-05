@@ -2,10 +2,10 @@
 title: Query Builder の述語リファレンス
 description: AEM as a Cloud Serviceの Query Builder API の述語リファレンス。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: e10c39c1d7fa05b738dd8f25662617a3a9568f83
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2295'
-ht-degree: 97%
+source-wordcount: '2270'
+ht-degree: 89%
 
 ---
 
@@ -23,13 +23,13 @@ ht-degree: 97%
 
 * **`p.offset`** - 結果ページの開始を表す数値（スキップする項目数）
 * **`p.limit`** - ページのサイズを表す数値.
-* **`p.guessTotal`** - 推奨：負荷が大きくなる場合があるので、結果をすべて計算することは避けるようにしてください。カウントする最大数（1000 など、大まかなサイズに関する十分なフィードバックが得られ、結果が比較的少数の場合は正確な量がわかる数値）、または最低限必要な数値（`p.offset` + `p.limit`）までをカウントする場合は「`true`」。
+* **`p.guessTotal`**  — 推奨：結果の全体を計算するのを避けます。これはコストのかかる場合があります。 最大数を示す数値（例：1000）。大まかなサイズと小さい結果を得るための正確な数値に関する十分なフィードバックをユーザーに提供する数値です。 または、 `true` 必要最小限の数まで数える `p.offset` + `p.limit`.
 * **`p.excerpt`** - `true` に設定した場合は、完全なテキストの抜粋が結果に含まれます。
 * **`p.indexTag`**  — 設定すると、クエリにインデックスタグオプションが含まれます ( [クエリオプションインデックスタグ](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)) をクリックします。
 * **`p.facetStrategy`**  — 設定されている場合は `oak`、Query Builder はファセット抽出を Oak に委任します ( [ファセット](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)) をクリックします。
 * **`p.hits`** - （JSON サーブレット専用）ヒットを JSON として記述する方法を、次の標準的なものの中から選択します（ResultHitWriter サービスを使用して拡張可能）。
    * **`simple`** - `path`、`title`、`lastmodified`、`excerpt`（設定されている場合）などの最小限の項目。
-   * **`full`** - ノードの Sling JSON レンダリング。`jcr:path` はヒットのパスを示します。デフォルトではノードの直属のプロパティのみをリストし、`p.nodedepth=N` で指定された深さのツリーが含まれます（0 は無制限のサブツリー全体を表します）。`p.acls=true` を追加すると、特定の結果項目の現在のセッションの JCR 権限が含まれます（マッピング： `create` = `add_node`、`modify` = `set_property`、`delete` = `remove`）。
+   * **`full`**  — ノードの sling JSON レンダリング（を使用） `jcr:path` ヒットのパスを示します。 デフォルトでは、ノードの直接プロパティのリストのみが表示され、 `p.nodedepth=N`（0 はサブツリー全体を表し、無限サブツリーを表します） 追加 `p.acls=true` 指定した結果項目に対する現在のセッションの JCR 権限を含めるには ( マッピング： `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`) をクリックします。
    * **`selective`** - `p.properties` で指定されたプロパティのみ、スペースで区切られた相対パスのリスト（URL では `+` を使用）。相対パスの深さが `>1` の場合、これらのプロパティは子オブジェクトとして表されます。特別な `jcr:path` プロパティには、ヒットのパスが含まれます。
 
 ### group {#group}
@@ -76,7 +76,7 @@ group.2_group.type=dam:Asset
 
 #### プロパティ {#properties-13}
 
-* **`orderby`** - 並べ替えの基準となる、先頭が @ の JCR プロパティ名（例：`@jcr:lastModified`、`@jcr:content/jcr:title`）またはクエリ内の別の述語（例：`2_property`）
+* **`orderby`**  — 先頭に@が付く JCR プロパティ名（例： ） `@jcr:lastModified` または `@jcr:content/jcr:title`またはクエリ内の別の述語（例： ） `2_property`（並べ替えの基準となる）
 * **`sort`** - 並べ替えの方向。降順の場合は `desc`、昇順の場合は `asc`（デフォルト）です
 * **`case`** - `ignore` に設定すると、並べ替えで大文字と小文字が区別されなくなります（`a` が `B` の前になります）。空白または未指定の場合は、並べ替えで大文字と小文字が区別されます（`B` が `a` の前になります）
 
@@ -92,7 +92,7 @@ JCR ブール値プロパティと照合されます。受け入れられる値�
 
 #### プロパティ {#properties}
 
-* **`boolproperty`** - プロパティの相対パス（例：`myFeatureEnabled`、`jcr:content/myFeatureEnabled`）
+* **`boolproperty`**  — プロパティへの相対パス（例： ） `myFeatureEnabled` または `jcr:content/myFeatureEnabled`
 * **`value`** - プロパティでチェックする値（`true` または `false`）
 
 ### contentfragment {#contentfragment}
@@ -135,10 +135,10 @@ JCR 日付プロパティを日時の間隔と照合します。ISO8601
 
 #### プロパティ {#properties-3}
 
-* **`property`** - `DATE` プロパティの相対パス（例：`jcr:lastModified`）
-* **`lowerBound`** - プロパティでチェックする日付の下限（例：`2014-10-01`）
+* **`property`**  — に対する相対パス `DATE` プロパティ。例： `jcr:lastModified`
+* **`lowerBound`**  — プロパティを確認する日付の下限（例： ） `2014-10-01`
 * **`lowerOperation`** - `>`（より後）または `>=`（以降）。`lowerBound` に適用されます。デフォルトは `>` です
-* **`upperBound`** - プロパティでチェックする日付の上限（例：`2014-10-01T12:15:00`）
+* **`upperBound`**  — プロパティをチェックする上限（例： ） `2014-10-01T12:15:00`
 * **`upperOperation`** - `<`（より前）または `<=`（以前）。`upperBound` に適用されます。デフォルトは `<` です
 * **`timeZone`** - ISO-8601 の日付文字列で指定されていない場合に使用するタイムゾーンの ID。デフォルトは、システムのデフォルトのタイムゾーンです。
 
@@ -187,7 +187,7 @@ JCR 日付プロパティを日時の間隔と照合します。ISO8601
 
 #### プロパティ {#properties-8}
 
-* **`language`** - ISO 言語コード（例：`de`）
+* **`language`** - ISO 言語コード（例： ） `de`
 
 ### mainasset {#mainasset}
 
@@ -261,12 +261,12 @@ JCR プロパティおよびその値と照合されます。
 
 #### プロパティ {#properties-15}
 
-* **`property`** - プロパティへの相対パス。例：`jcr:title`.
+* **`property`**  — プロパティへの相対パス（例： ） `jcr:title`.
 * **`value`** - プロパティでチェックする値。JCR プロパティタイプから文字列への変換に従います.
 * **`N_value`** - `1_value`、`2_value` などを使用して複数の値（デフォルトで `OR` で結合、`and=true` の場合は `AND` で結合）をチェックします。
 * **`and`** - 複数の値（`N_value`）を `AND` で結合する場合は `true` に設定
 * **`operation`**
-   * `equals`：完全一致（デフォルト）。
+   * `equals` 完全一致（デフォルト）の場合。
    * `unequals`：不等比較。
    * `like`：xpath 関数 `jcr:like` を使用（オプション）。
    * `not`：一致せず（例：xpath の `not(@prop)`、値パラメーターは無視されます）。
@@ -348,7 +348,7 @@ JCR XPath の `rep:similar()` を使用した類似性検索です。
 
 #### プロパティ {#properties-21}
 
-* **`tag`** - 検索するタグタイトルのパス（例：`properties:orientation/landscape`）
+* **`tag`**  — 検索するタグタイトルのパス（例： ）。 `properties:orientation/landscape`
 * **`N_value`** - `1_value`、`2_value` などを使用して複数のタグ（デフォルトで `OR` で結合、`and=true` の場合は `AND` で結合）をチェックします
 * **`property`** - 検索するプロパティまたはプロパティの相対パス（デフォルトは `cq:tags`）
 
@@ -360,7 +360,7 @@ JCR XPath の `rep:similar()` を使用した類似性検索です。
 
 #### プロパティ {#properties-22}
 
-* **`tagid`** - 検索するタグ ID（例：`properties:orientation/landscape`）
+* **`tagid`**  — 検索するタグ ID（例： ）。 `properties:orientation/landscape`
 * **`N_value`** - `1_value`、`2_value` などを使用して複数のタグ ID（デフォルトで `OR` で結合、`and=true` の場合は `AND` で結合）をチェックします
 * **`property`** - 検索するプロパティまたはプロパティの相対パス（デフォルトは `cq:tags`）
 
@@ -385,4 +385,4 @@ JCR XPath の `rep:similar()` を使用した類似性検索です。
 
 #### プロパティ {#Properties-2}
 
-* **`type`**`mixin` - 検索するノードタイプまたは 名（例：`cq:Page`）
+* **`type`**  — ノードタイプまたは `mixin` 検索する名前（例： ）。 `cq:Page`

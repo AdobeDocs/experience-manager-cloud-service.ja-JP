@@ -2,9 +2,9 @@
 title: Cloud Serviceコンテンツリクエストについて
 description: Adobeからコンテンツリクエストライセンスを購入している場合は、Adobe Experience Cloud as a Service が測定するコンテンツリクエストのタイプと、組織の Analytics レポートツールとの相違について説明します。
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1165'
 ht-degree: 9%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 9%
 
 ## Cloud Serviceコンテンツリクエストの相違{#content-requests-variances}
 
-コンテンツリクエストは、次の表に要約されるように、組織の Analytics レポートツールとの相違を持つ可能性があります。 一般に、Analytics ツールは、クライアント側の計測機能を使用してデータを収集します <b>を使用しない</b> 特定のサイトに対するコンテンツリクエスト数をレポートする場合は、多くの場合、トリガーされるユーザーの同意に依存しているので、トラフィックの大部分が欠落しています。 AEMas a Cloud Serviceの上に独自の CDN を追加するお客様向けに、ログファイルのサーバーサイドでデータを収集する Analytics ツール、または CDN レポートを使用すると、カウントが向上します。 ページビューおよび関連するパフォーマンスのレポートでは、AdobeRUM データサービスが推奨Adobeです。
+コンテンツリクエストは、次の表に要約されるように、組織の Analytics レポートツールとの相違を持つ可能性があります。 一般に *しない* クライアント側の計測を通じてデータを収集する analytics ツールを使用して、特定のサイトのコンテンツリクエスト数を報告します。これは、多くの場合、トリガーされるユーザーの同意に依存しているので、トラフィックの大部分が欠落しているからです。 AEMas a Cloud Serviceの上に独自の CDN を追加するお客様向けに、ログファイルのサーバーサイドでデータを収集する Analytics ツール、または CDN レポートを使用すると、カウントが向上します。 ページ・ビューおよび関連するパフォーマンスのレポートでは、AdobeRUM データ・サービスがAdobe推奨オプションです。
 
 | 差異の理由 | 説明 |
 |---|---|

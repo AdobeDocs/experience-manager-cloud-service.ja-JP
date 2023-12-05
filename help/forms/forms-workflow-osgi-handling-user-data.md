@@ -5,10 +5,10 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 96%
+source-wordcount: '994'
+ht-degree: 95%
 
 ---
 
@@ -137,7 +137,7 @@ Forms 中心の AEM ワークフローおよび機能について詳しくは、
 
    1. `https://'[server]:[port]'/aem/start.html` にアクセスして、管理者の資格情報を使用してログインします。
    1. **[!UICONTROL ツール／ワークフロー／インスタンス]**&#x200B;の順に移動します。
-   1. ユーザーの関連ワークフローインスタンスを選択し、「**[!UICONTROL 終了]**」をタップして実行中のインスタンスを終了します。
+   1. ユーザーに関連するワークフローインスタンスを選択し、「 」を選択します **[!UICONTROL 終了]** ：実行中のインスタンスを終了します。
 
       ワークフローインスタンスの操作方法について詳しくは、[ワークフローインスタンスの管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html?lang=ja#authoring)を参照してください。
 

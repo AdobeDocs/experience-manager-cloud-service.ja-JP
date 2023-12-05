@@ -3,10 +3,10 @@ title: 永続的な GraphQL クエリ
 description: Adobe Experience Manager as a Cloud Service で GraphQL クエリを永続化してパフォーマンスを最適化する方法を説明します。クライアントアプリケーションで HTTP GET メソッドを使用して永続的クエリをリクエストでき、応答を Dispatcher および CDN レイヤーにキャッシュできるので、最終的にクライアントアプリケーションのパフォーマンスが向上します。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1676'
-ht-degree: 98%
+source-wordcount: '1656'
+ht-degree: 97%
 
 ---
 
@@ -256,7 +256,7 @@ query getAdventuresByActivity($activity: String!) {
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-なお、`%3B` は `;` の UTF-8 エンコーディングで、`%3D` は `=` のエンコーディングです。永続クエリを実行するには、クエリ変数と特殊文字を[適切にエンコード](#encoding-query-url)する必要があります。
+UTF-8 エンコーディング `%3B` 次の値に一致 `;` および `%3D` は、 `=`. 永続クエリを実行するには、クエリ変数と特殊文字を[適切にエンコード](#encoding-query-url)する必要があります。
 
 ## 永続クエリのキャッシュ {#caching-persisted-queries}
 
@@ -442,8 +442,8 @@ URL は次の部分に分解できます。
 1. パッケージ定義ダイアログの「**一般**」で、「wknd-persistent-queries」などの&#x200B;**名前**&#x200B;を入力します。
 1. 「1.0」のようなバージョン番号を入力します。
 1. 「**フィルター**」で、新しい&#x200B;**フィルター**&#x200B;を追加します。パスファインダーを使用して、設定の下にある `persistentQueries` フォルダーを選択します。例えば、`wknd` 設定の場合、フルパスは `/conf/wknd/settings/graphql/persistentQueries` になります。
-1. 「**保存**」をタップして新しいパッケージ定義を保存し、ダイアログを閉じます。
-1. 次をタップします。 **ビルド** ボタンをクリックします。
+1. 選択 **保存** 新しいパッケージ定義を保存し、ダイアログを閉じます。
+1. を選択します。 **ビルド** ボタンをクリックします。
 
 パッケージが構築されたら、次の操作を実行できます。
 

@@ -2,9 +2,9 @@
 title: コアコンポーネントに基づいてアダプティブフォームに新しいロケールのサポートを追加するには、どうすればよいですか？
 description: アダプティブフォームに新しいロケールを追加する方法を説明します。
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1333'
 ht-degree: 18%
 
 ---
@@ -74,7 +74,7 @@ AEM Forms が標準でサポートしているロケールは、英語（en）�
    git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/
    ```
 
-   置換 `<my-org>` および `<my-program>` 上記の URL に、組織名とプログラム名を入力します。 組織名、プログラム名、または Git リポジトリの完全パスと、リポジトリのクローンに必要な資格情報を取得する詳しい手順については、 [Git へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) 記事。
+   置換 `<my-org>` および `<my-program>` 上記の URL に、組織名とプログラム名を入力します。 組織名、プログラム名、または Git リポジトリの完全パスと、リポジトリのクローンに必要な資格情報を取得する方法について詳しくは、 [Git へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) 記事。
 
    コマンドが正常に完了した後、フォルダ `<my-program>` が作成されました。 Git リポジトリから複製されたコンテンツが含まれます。 記事の残りの部分では、フォルダーは次のようにレファリングされます。 `[AEM Forms as a Cloud Service Git repository]`.
 

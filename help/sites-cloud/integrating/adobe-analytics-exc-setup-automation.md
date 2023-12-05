@@ -4,10 +4,10 @@ description: Experience Cloud 設定自動化を使用すると、シンプル�
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 92%
+source-wordcount: '719'
+ht-degree: 87%
 
 ---
 
@@ -44,15 +44,15 @@ Adobe Analytics と AEM Sites の統合は、かつてないほどシンプル�
 ## 設定方法
 
 1. **Sites** に移動して、Adobe Analytics と統合するサイトのルートを選択します。
-1. サイドパネルメニューを展開して、 **Analytics を設定** をタップします。
+1. サイドレールメニューを展開し、「 」を選択します。 **Analytics を設定**.
 
    これは、サイドレールの新しいオプションで、自動設定のコントロールとステータスを提供するパネルを開くExperience Cloudです。
-1. 「**Analytics の統合** 」ボタンをタップします。
+1. を選択します。 **Analytics の統合** 」ボタンをクリックします。
 1. 表示されたダイアログで、**レポートスイート ID** の名前を入力します。
 
    この文字列は、 [レポートスイート ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=ja) 選択したAEMサイトの analytics データのデータストアとしてAdobe Analyticsに保存されます。 提供された文字列には、一意性を確保するために環境および層の識別子が追加されます。
 
-1. ページとパネルを更新し、 **統合ステータスの確認** をタップして、自動化のステータスを確認します。
+1. ページとパネルを更新し、「 」を選択します。 **統合ステータスの確認** 自動化のステータスを確認します。
 
    自動化の設定は非同期で実行されます。**統合ステータスの確認** には、統合の現在のステータスが表示されます。
 
@@ -75,7 +75,7 @@ Adobe Analytics と AEM Sites の統合は、かつてないほどシンプル�
 
 1. AEM サイトと同じ IMS 組織の Adobe Analytics に移動します。
 1. **レポート**／**エンゲージメント**／**Adobe Experience Manager**／**サイトのパフォーマンスの概要** に移動して、AEM Sites の新しい概要レポートを作成します。
-1. **レポートを開く** をタップします。
+1. 選択 **レポートを開く**.
 1. 前の演習で使用したレポートスイート名と一致する **レポートスイート ID** を選択します。
 1. 新しいテンプレートに流入する分析データを経時的に表示します。
 

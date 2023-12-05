@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2201'
-ht-degree: 99%
+source-wordcount: '2121'
+ht-degree: 83%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 99%
 [!DNL Experience Manager] web コンソールの設定を使用して、リレーショナルデータベースを設定することができます。次の手順を実行します。
 
 1. `https://server:host/system/console/configMgr` で [!DNL Experience Manager] web コンソールに移動します。
-1. **[!UICONTROL 「Day Commons JDBC 接続プール」]**&#x200B;設定を見つけます。その設定をタップして編集モードで開きます。
+1. **[!UICONTROL 「Day Commons JDBC 接続プール」]**&#x200B;設定を見つけます。「 」を選択して、設定を編集モードで開きます。
 
    ![JDBC コネクタープール](/help/forms/assets/jdbc_connector.png)
 
@@ -74,7 +74,7 @@ ht-degree: 99%
    >
    > 詳しくは、[JDBC DataSourcePool を使用した SQL 接続](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=ja)を参照してください。
 
-1. 「**[!UICONTROL 保存]**」をタップして、設定内容を保存します。
+1. 「**[!UICONTROL 保存]**」をクリックして、設定を保存します。
 
 これで、設定済みのリレーショナルデータベースをフォームデータモデルと共に使用できます。
 
@@ -83,7 +83,7 @@ ht-degree: 99%
 You can configure [!DNL Experience Manager] user profile using User Profile Connector configuration in [!DNL Experience Manager] Web Console. Do the following:
 
 1. Go to [!DNL Experience Manager] web console at `https://[server]:[port]/system/console/configMgr`.
-1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and tap to open the configuration in edit mode.
+1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and select to open the configuration in edit mode.
 1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model. Use the following format to specify user profile properties:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
@@ -97,7 +97,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
    >
    >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
 
-1. Tap **[!UICONTROL Save]** to save the configuration. -->
+1. Select **[!UICONTROL Save]** to save the configuration. -->
 
 ## クラウドサービス設定用フォルダーの構成 {#cloud-folder}
 
@@ -111,27 +111,27 @@ RESTful サービス、SOAP サービス、OData サービスのクラウドサ�
    * 詳しくは、[設定ブラウザー](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=ja)のドキュメントを参照してください。
 1. 以下の手順を実行して、global フォルダーをクラウド設定用に有効にします。クラウドサービス設定用に別のフォルダーを作成する場合は、この手順をスキップしてください。
 
-   1. **[!UICONTROL 設定ブラウザー]**&#x200B;で、「`global`」フォルダーを選択して「**[!UICONTROL プロパティ]**」をタップします。
+   1. Adobe Analytics の **[!UICONTROL 設定ブラウザー]**&#x200B;を選択し、 `global` フォルダーと選択 **[!UICONTROL プロパティ]**.
 
    1. **[!UICONTROL 設定プロパティ]**&#x200B;ダイアログで、「**[!UICONTROL クラウド設定]**」を有効にします。
 
-   1. 「**[!UICONTROL 保存して閉じる]**」をタップして設定内容を保存し、ダイアログを閉じます。
+   1. 選択 **[!UICONTROL 保存して閉じる]** 設定を保存し、ダイアログを終了します。
 
-1. **[!UICONTROL 設定ブラウザー]**&#x200B;で「**[!UICONTROL 作成]**」をタップします。
+1. Adobe Analytics の **[!UICONTROL 設定ブラウザー]**&#x200B;を選択します。 **[!UICONTROL 作成]**.
 1. 「**[!UICONTROL 設定を作成]**」ダイアログでフォルダーのタイトルを指定し、「**[!UICONTROL クラウド設定]**」を有効にします。
-1. 「**[!UICONTROL 作成]**」をタップします。これで、クラウドサービス設定が有効になったフォルダーが作成されました。
+1. 選択 **[!UICONTROL 作成]** をクラウドサービス設定に対して有効なフォルダーを作成します。
 
 ## RESTful Web サービスの設定 {#configure-restful-web-services}
 
 RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式または YAML 形式で [ in JSON or YAML forSwagger 定義ファイル](https://swagger.io/specification/v2/) in JSON or YAML format in a 内に記述できます。[!DNL Experience Manager] as a Cloud Service で RESTful web サービスを設定するには、ファイルシステムまたはファイルがホストされている URL に [!DNL Swagger] ファイル（[Swagger Version 2.0](https://swagger.io/specification/v2/)）[!DNL Swagger] ファイル（[Swagger Version 3.0](https://swagger.io/specification/v3/)）が存在しているか、Swagger ファイルがホストされる URL を指定する必要があります。
 
-### Open API 仕様バージョン 2.0 用の RESTful サービスの設定 {#configure-restful-services-open-api-2.0}
+### Open API 仕様バージョン 2.0 {#configure-restful-services-open-api-2.0} 用の RESTful サービスの設定
 
-1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーをタップして選択します。
+1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定を作成するフォルダーを選択します。
 
    クラウドサービス設定用フォルダーの作成方法と構成方法については、「[クラウドサービス設定用フォルダーの構成](configure-data-sources.md#cloud-folder)」を参照してください。
 
-1. 「**[!UICONTROL 作成]**」をタップして、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL RESTful サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」をタップします。
+1. 選択 **[!UICONTROL 作成]** 開く **[!UICONTROL データソース設定の作成ウィザード]**. 設定の名前を指定し、必要に応じて設定のタイトルを指定して、「 」を選択します。 **[!UICONTROL RESTful サービス]** から **[!UICONTROL サービスタイプ]** ドロップダウンで、必要に応じて設定のサムネール画像を参照して選択し、 **[!UICONTROL 次へ]**.
 1. RESTful サービスの次の詳細を指定します。
 
    * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL  Swagger] 定義ファイルに対する [!DNL Swagger URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
@@ -140,7 +140,6 @@ RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式ま
       * スキーム：REST API で使用される転送プロトコル。ドロップダウンリストに表示されるスキームの種類の数は、[!DNL Swagger] ソースで定義されているスキームによって異なります。
       * ホスト：REST API を提供するホストのドメイン名または IP アドレス。このフィールドは必須です。
       * 基本パス：すべての API パスの URL プリフィックス。これはオプションのフィールドです。\
-
         必要に応じて、これらのフィールドの事前入力された値を編集します。
 
    * RESTful サービスにアクセスするための認証タイプ（なし、「OAuth2.0（[認証コード](https://oauth.net/2/grant-types/authorization-code/)、[クライアント資格情報](https://oauth.net/2/grant-types/client-credentials/)）、基本認証、API キー認証、カスタム認証）を選択し、その選択内容に応じて認証の詳細を指定します。
@@ -149,15 +148,15 @@ RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式ま
 
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. 「**[!UICONTROL 作成]**」をタップして、RESTful サービス用のクラウド設定を作成します。
+1. 選択 **[!UICONTROL 作成]** をクリックして、RESTful サービスのクラウド設定を作成します。
 
-### Open API 仕様バージョン 3.0 用の RESTful サービスの設定 {#configure-restful-services-open-api-3.0}
+### Open API 仕様バージョン 3.0 {#configure-restful-services-open-api-3.0} 用の RESTful サービスの設定
 
-1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーをタップして選択します。
+1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定を作成するフォルダーを選択します。
 
    クラウドサービス設定用フォルダーの作成方法と構成方法については、「[クラウドサービス設定用フォルダーの構成](configure-data-sources.md#cloud-folder)」を参照してください。
 
-1. 「**[!UICONTROL 作成]**」をタップして、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL RESTful サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」をタップします。
+1. 選択 **[!UICONTROL 作成]** 開く **[!UICONTROL データソース設定の作成ウィザード]**. 設定の名前を指定し、必要に応じて設定のタイトルを指定して、「 」を選択します。 **[!UICONTROL RESTful サービス]** から **[!UICONTROL サービスタイプ]** ドロップダウンで、必要に応じて設定のサムネール画像を参照して選択し、 **[!UICONTROL 次へ]**.
 1. RESTful サービスの次の詳細を指定します。
 
    * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL  Swagger] 定義ファイルに対する [!DNL Swagger 3.0 URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
@@ -168,7 +167,7 @@ RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式ま
 
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. 「**[!UICONTROL 作成]**」をタップして、RESTful サービス用のクラウド設定を作成します。
+1. 選択 **[!UICONTROL 作成]** をクリックして、RESTful サービスのクラウド設定を作成します。
 
 RESTful サービス Open API 仕様バージョン 3.0 でサポートされていない操作の一部は次のとおりです。
 * コールバック
@@ -210,7 +209,7 @@ RESTful サービス Open API 仕様バージョン 3.0 でサポートされて
 } 
 ```
 
-1. 「**[!UICONTROL REST データソース用フォームデータモデル HTTP クライアント設定]**」をタップします。
+1. 選択 **[!UICONTROL REST データソース用のフォームデータモデル HTTP クライアント設定]**.
 
 1. [!UICONTROL REST データソース用フォームデータモデル HTTP クライアント設定]ダイアログで、
 
@@ -230,11 +229,11 @@ SOAP ベースの web サービスは、[Web Services Description Language（WSD
 
 [!DNL Experience Manager] as a Cloud Service で SOAP ベースの web サービスを設定するには、その web サービスの WSDL URL を確認して、以下の手順を実行します。
 
-1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーをタップして選択します。
+1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定を作成するフォルダーを選択します。
 
    クラウドサービス設定用フォルダーの作成方法と構成方法については、「[クラウドサービス設定用フォルダーの構成](configure-data-sources.md#cloud-folder)」を参照してください。
 
-1. 「**[!UICONTROL 作成]**」をタップして、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL SOAP Web サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」をタップします。
+1. 選択 **[!UICONTROL 作成]** 開く **[!UICONTROL データソース設定の作成ウィザード]**. 設定の名前を指定し、必要に応じて設定のタイトルを指定して、「 」を選択します。 **[!UICONTROL SOAP Web サービス]** から **[!UICONTROL サービスタイプ]** ドロップダウンで、必要に応じて設定のサムネール画像を参照して選択し、 **[!UICONTROL 次へ]**.
 1. SOAP web サービスに対して次の情報を指定します。
 
    * Web サービスの WSDL URL。
@@ -246,7 +245,7 @@ SOAP ベースの web サービスは、[Web Services Description Language（WSD
 
      <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. 「**[!UICONTROL 作成]**」をタップして、SOAP web サービス用のクラウド設定を作成します。
+1. 選択 **[!UICONTROL 作成]** をクリックして、SOAP web サービスのクラウド設定を作成します。
 
 ### SOAP Web サービス WSDL でのインポート文の使用を有効にする {#enable-import-statements}
 
@@ -271,11 +270,11 @@ OData サービスは、そのサービスのルート URL によって識別さ
 > フォームデータモデルは [OData バージョン 4](https://www.odata.org/documentation/) をサポートします。
 >オンライン環境またはオンプレミス環境で [!DNL Microsoft®® Dynamics 365] を設定する詳しい手順については、[[!DNL Microsoft® Dynamics] OData 設定](ms-dynamics-odata-configuration.md)を参照してください。
 
-1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーをタップして選択します。
+1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定を作成するフォルダーを選択します。
 
    クラウドサービス設定用フォルダーの作成方法と構成方法については、「[クラウドサービス設定用フォルダーの構成](#cloud-folder)」を参照してください。
 
-1. 「**[!UICONTROL 作成]**」をタップして、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL OData サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」をタップします。
+1. 選択 **[!UICONTROL 作成]** 開く **[!UICONTROL データソース設定の作成ウィザード]**. 設定の名前を指定し、必要に応じて設定のタイトルを指定して、「 」を選択します。 **[!UICONTROL OData サービス]** から **[!UICONTROL サービスタイプ]** ドロップダウンで、必要に応じて設定のサムネール画像を参照して選択し、 **[!UICONTROL 次へ]**.
 1. OData サービスの次の詳細を指定します。
 
    * 設定する OData サービスのサービスルート URL。
@@ -285,9 +284,9 @@ OData サービスは、そのサービスのルート URL によって識別さ
 
    >[!NOTE]
    >
-   >接続する OAuth 2.0 認証タイプを選択します。 [!DNL Microsoft®® Dynamics] OData エンドポイントをサービスルートとして使用するサービス。
+   接続する OAuth 2.0 認証タイプを選択します。 [!DNL Microsoft®® Dynamics] OData エンドポイントをサービスルートとして使用するサービス。
 
-1. 「**[!UICONTROL 作成]**」をタップして、OData サービス用のクラウド設定を作成します。
+1. 選択 **[!UICONTROL 作成]** をクリックして、OData サービスのクラウド設定を作成します。
 
 <!--
 ## Configure Microsoft® SharePoint List {#config-sharepoint-list}
@@ -311,7 +310,7 @@ To save data in a tabular form use, Microsoft® SharePoint List. To configure a 
 
 1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
 1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
-1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+1. Select **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
 
 -->
 
@@ -321,11 +320,11 @@ When you enable mutual authentication for form data model, both the data source 
 
 1. Upload the private key (certificate) to [!DNL Experience Manager Forms] server. To upload the private key:
    1. Log in to your [!DNL Experience Manager Forms] server as an administrator.
-   1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**. Select the `fd-cloudservice` user and tap **[!UICONTROL Properties]**.
-   1. Open the **[!UICONTROL Keystore]** tab, expand the **[!UICONTROL Add Private Key from KeyStore file]** option, upload the KeyStore File, specify the aliases, passwords, and tap **[!UICONTROL Submit]**. The Certificate is uploaded.  The private key alias is mentioned in the certificate and set while creating the certificate.
+   1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**. Select the `fd-cloudservice` user and select **[!UICONTROL Properties]**.
+   1. Open the **[!UICONTROL Keystore]** tab, expand the **[!UICONTROL Add Private Key from KeyStore file]** option, upload the KeyStore File, specify the aliases, passwords, and select **[!UICONTROL Submit]**. The Certificate is uploaded.  The private key alias is mentioned in the certificate and set while creating the certificate.
 1. Upload trust certificate to Global Trust Store. To upload the certificate:
    1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Trust Store]**.
-   1. Expand the **[!UICONTROL Add Certificate from CER file]** option, tap **[!UICONTROL Select Certificate File]**, upload the certificate, and tap **[!UICONTROL Submit]**.
+   1. Expand the **[!UICONTROL Add Certificate from CER file]** option, select **[!UICONTROL Select Certificate File]**, upload the certificate, and select **[!UICONTROL Submit]**.
 1. Configure [SOAP](#configure-soap-web-services) or [RESTful](#configure-restful-web-services) web services as the data source and select **[!UICONTROL Mutual authentication]** as the authentication type. If you configure multiple self-signed certificates for `fd-cloudservice` user, specify the Key Alias name for the certificate.-->
 
 ## 次の手順 {#next-steps}

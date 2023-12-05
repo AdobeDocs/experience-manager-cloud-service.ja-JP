@@ -2,10 +2,10 @@
 title: ContextHub ストア候補のサンプル
 description: ContextHub には、ソリューションで利用できるサンプルストア候補がいくつか用意されています
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
-workflow-type: ht
-source-wordcount: '464'
-ht-degree: 100%
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+workflow-type: tm+mt
+source-wordcount: '457'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ContextHub には、ソリューションで利用できるサンプルストア
 
 >[!WARNING]
 >
->サンプルストア候補は、プロジェクト専用の設定を構築する際に役立つリファレンス設定として提供されているので、直接使用しないでください。
+>サンプルストア候補は、プロジェクト専用の独自設定を構築するのに役立つリファレンス設定として提供されています。 直接使用しないでください。
 
 ## aem.segmentation サンプルストア候補 {#aem-segmentation-sample-store-candidate}
 

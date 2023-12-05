@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service の OSGi の設定
 description: シークレット値と環境固有の値を使用する OSGi 設定
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3317'
+source-wordcount: '3265'
 ht-degree: 97%
 
 ---
@@ -176,7 +176,7 @@ JSON 形式の OSGi 設定ファイルは、AEM プロジェクト内から直�
 1. IDE で `ui.apps` プロジェクトを開き、新しい OSGi 設定が有効となる実行モードをターゲットに設定する config フォルダー（`/apps/.../config.<runmode>`）を探すか作成します。
 1. この config フォルダーで、`<PID>.cfg.json` ファイルを作成します。PID は OSGi コンポーネントの永続 ID です。通常は、OSGi コンポーネント実装の完全なクラス名になります。次に例を示します。
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-OSGi 設定ファクトリのファイル名には `<factoryPID>-<name>.cfg.json` 命名規則を使用します。
+OSGi 設定ファクトリのファイル名には、 `<factoryPID>-<name>.cfg.json` 命名規則
 1. 新しい `.cfg.json` ファイルを開き、[JSON OSGi 設定形式](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)に従って、OSGi プロパティと値のペアのキー／値の組み合わせを定義します。
 1. 変更を新しい `.cfg.json` ファイルに保存します。
 1. 新しい追加 OSGi 構成ファイルを Git にコミットします。
@@ -191,14 +191,14 @@ AEM SDK Quickstart Jar の AEM Web コンソールは、OSGi コンポーネン�
 
 1. AEM SDK Quickstart Jar の AEM webコンソール（`https://<host>:<port>/system/console`）にadmin ユーザーでログインする。
 1. **OSGi**／**設定**&#x200B;に移動する。
-1. 設定するには、該当する OSGi コンポーネントを見つけ、タイトルをタップして編集に入ります。
+1. 設定するには、OSGi コンポーネントを探し、編集するタイトルを選択します
    ![OSGi 設定](./assets/configuring-osgi/configuration.png)
 1. 必要に応じて Web UI を使用して OSGi 設定プロパティの値を編集します。
 1. 永続 ID（PID）を安全な場所に記録します。これは後で OSGi 設定 JSON の生成に使用します。
-1. 「保存」をタップします。
+1. 「保存」を選択します。
 1. OSGi／OSGi インストーラー設定プリンターに移動します。
 1. 手順 5 でコピーした PID に貼り付け、シリアル化形式が「OSGi Configurator JSON」に設定されていることを確認します。
-1. 「印刷」をタップします。
+1. 印刷を選択
 1. JSON 形式の OSGi 設定は、「シリアライズされた設定プロパティ」セクションに表示されます。
    ![OSGi インストーラー設定プリンター](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. IDE で `ui.apps` プロジェクトを開き、新しい OSGi 設定が有効となる実行モードをターゲットに設定する config フォルダー（`/apps/.../config.<runmode>`）を探すか作成します。
@@ -316,7 +316,6 @@ OSGi プロパティで、オーサーとパブリッシュで異なる値が必
 * [実行モードの解決](#runmode-resolution)のセクションで説明したように、`config.author` と `config.publish` の別個の OSGi フォルダーを使用する必要があります。
 * 独立した変数名を作成する場合、次の 2 つのオプションを使用できます。
    * 最初のオプション（推奨）：異なる値を定義するように宣言されたすべての OSGI フォルダー（`config.author` と `config.publish` など）で、同じ変数名を使用します。例：
-
      `$[env:ENV_VAR_NAME;default=<value>]`：デフォルトは、その層（オーサーまたはパブリッシュ）のデフォルト値です。環境変数を [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) またはクライアントを使用して設定する場合は、この [API リファレンスドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/)で説明されているように、「service」パラメーターを使用して層を区別します。「service」パラメーターは、変数の値を適切な OSGI 層にバインドします。「author」、「publish」、「preview」のいずれかです。
    * 2 つ目のオプション：`author_<samevariablename>` や `publish_<samevariablename>` などのプレフィックスを使用して個別の変数を宣言します。
 
@@ -343,11 +342,11 @@ config
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -357,11 +356,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -386,11 +385,11 @@ config.stage
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -400,11 +399,11 @@ config.prod
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val2",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -414,11 +413,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -443,11 +442,11 @@ config
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -457,11 +456,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -484,11 +483,11 @@ config
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -498,11 +497,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "$[env:my_var1;default=val1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>

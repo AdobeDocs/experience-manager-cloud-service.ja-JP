@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1391'
 ht-degree: 89%
 
 ---
@@ -101,7 +101,7 @@ Sites コンソールにアクセスするには：
 
    ![編集するページの選択](assets/sites-editor-select-page.png)
 
-1. ツールバーの「**編集**」オプションをタップします。
+1. を選択します。 **編集** 」オプションを使用します。
 1. サイトエディターが開き、選択したページが新しいブラウザータブに編集用に読み込まれます。
 1. コンテンツにマウスポインターを置くかコンテンツをタップすると、個々のコンポーネントのセレクターが表示されます。コンポーネントは、ドラッグ＆ドロップ可能なページを構成する構築ブロックです。
 

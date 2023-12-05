@@ -4,10 +4,10 @@ description: Google reCAPTCHA サービスでフォームのセキュリティ�
 topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA サービス, アダプティブフォーム, CAPTCHA の課題, ボットの回避, コアコンポーネント, フォーム送信セキュリティ, フォームスパムの防止
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 100%
+source-wordcount: '918'
+ht-degree: 90%
 
 ---
 
@@ -42,14 +42,14 @@ AEM Forms 環境を Google による reCAPTCHA サービスに接続するには
          1. 設定作成ダイアログで、名前とタイトルを指定し、「**[!UICONTROL クラウド設定]**」オプションを選択します。
          1. 「**[!UICONTROL 作成]**」をクリックします
       * 既存のフォルダーに対して「クラウド設定」オプションを有効にするには：
-         1. 設定ブラウザーで、フォルダーを選択して「**[!UICONTROL プロパティ]**」をタップします。
+         1. 設定ブラウザーで、フォルダーを選択し、「 」を選択します。 **[!UICONTROL プロパティ]**.
          1. 設定プロパティダイアログで、「**[!UICONTROL クラウド設定]**」を有効にします。
-         1. 「**[!UICONTROL 保存して閉じる]**」をタップして設定内容を保存し、ダイアログを閉じます。
+         1. 選択 **[!UICONTROL 保存して閉じる]** 設定を保存し、ダイアログを終了します。
 
 1. Cloud Service を設定：
-   1. AEM オーサーインスタンスで、![tools-1](assets/tools-1.png)／**[!UICONTROL クラウドサービス]**&#x200B;に移動し、 **[!UICONTROL reCAPTCHA]**&#x200B;をタップします。
-   1. 前の節で作成または更新した設定コンテナを選択します。「**[!UICONTROL 作成]**」をタップします。
-   1. reCAPTCHA サービス用（手順 1 で取得）に&#x200B;**[!UICONTROL タイトル]**、**[!UICONTROL 名前]**、**[!UICONTROL サイトキー]**&#x200B;および **[!UICONTROL 秘密鍵]**&#x200B;を指定します。「**[!UICONTROL 作成]**」をタップします。
+   1. AEMオーサーインスタンスで、に移動します。 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** を選択し、 **[!UICONTROL reCAPTCHA]**.
+   1. 前の節で作成または更新した設定コンテナを選択します。「**[!UICONTROL 作成]**」を選択します。
+   1. reCAPTCHA サービス用（手順 1 で取得）に&#x200B;**[!UICONTROL タイトル]**、**[!UICONTROL 名前]**、**[!UICONTROL サイトキー]**&#x200B;および **[!UICONTROL 秘密鍵]**&#x200B;を指定します。「**[!UICONTROL 作成]**」を選択します。
 
    ![AEM Forms 環境を Google の reCAPTCHA サービスに接続するよう Cloud Service を設定](/help/forms/assets/captcha-configuration.gif)
 
@@ -61,23 +61,23 @@ AEM Forms 環境を Google による reCAPTCHA サービスに接続するには
 
 1. AEM Forms as a Cloud Service インスタンスを開きます。
 1. **[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;に移動します。
-1. アダプティブフォームを選択し、「**[!UICONTROL プロパティ]**」をタップします。「**[!UICONTROL 設定コンテナ]**」オプションで AEM Forms を Google の reCAPTCHA サービスに接続するクラウド設定を含む設定コンテナを選択し、「**[!UICONTROL 保存して閉じる]**」をタップします。
+1. アダプティブFormsを選択し、 **[!UICONTROL プロパティ]**. の **[!UICONTROL 設定コンテナ]** 」オプションを選択し、GoogleによってAEM Formsと reCAPTCHA サービスを接続するクラウド設定を含む設定コンテナを選択して、 **[!UICONTROL 保存して閉じる]**.
 
    このような設定コンテナがない場合は、[Googleによる reCAPTCHA サービスを使用した AEM Forms 環境の接続](#connect-your-forms-environment-with-recaptcha-service-by-google)の節を参照して、設定コンテナを作成する方法を確認してください。
 
    ![設定コンテナの選択](/help/forms/assets/captcha-properties.png)
 
-1. アダプティブフォームを選択し、「**[!UICONTROL 編集]**」をタップします。アダプティブフォームエディターでアダプティブフォームが開きます。
+1. アダプティブFormsを選択し、 **[!UICONTROL 編集]**. アダプティブフォームエディターでアダプティブフォームが開きます。
 1. コンポーネントブラウザーから **[!UICONTROL アダプティブフォーム reCAPTCHA]** コンポーネントをアダプティブフォームにドラッグ＆ドロップします。
 
    Google reCAPTCHA 検証は時間的制約があり、数分で期限切れになります。そのため、**[!UICONTROL アダプティブフォーム reCAPTCHA]** コンポーネントを&#x200B;**[!UICONTROL 送信]**&#x200B;ボタンのすぐ前に配置することをお勧めします。
 
-1. **[!UICONTROL アダプティブフォーム reCAPTCHA]** コンポーネントを選択し、プロパティをタップし、プロパティ ![プロパティアイコン](assets/configure-icon.svg) をタップします。プロパティダイアログが開きます。次の必須プロパティを指定します。
+1. を選択します。 **[!UICONTROL アダプティブフォーム reCAPTCHA]** コンポーネントを選択し、プロパティを選択します。 ![プロパティアイコン](assets/configure-icon.svg) アイコン。 プロパティダイアログが開きます。次の必須プロパティを指定します。
    * **[!UICONTROL 名前]：** フォームコンポーネントは、フォーム内とルールエディター内の両方で一意の名前で簡単に識別できますが、名前にスペースや特殊文字を含めることはできません。
    * **[!UICONTROL Captcha 設定]：** フォームの Google reCAPTCHA ダイアログを表示するように設定されたクラウド設定を選択します。同様の目的で、環境内に複数のクラウド設定を作成することができます。そのため、サービスは慎重に選択してください。サービスが表示されない場合は、[Googleによる reCAPTCHA サービスを使用した AEM Forms 環境の接続](#connect-your-forms-environment-with-recaptcha-service-by-google)で、AEM Forms 環境と Google の reCAPTCHA サービスを接続する Cloud Service を作成する方法を参照してください。
    * **Captcha サイズ：**「Google reCAPTCHA チャレンジ」ダイアログの表示サイズを選択できます。「**[!UICONTROL コンパクト]**」オプションを選択すると小さいサイズ、「**[!UICONTROL 標準]**」オプションを選択すると比較的大きなサイズの Google reCAPTCHA チャレンジダイアログを表示できます。
 
-1. 「**[!UICONTROL 完了]**」をタップします。
+1. 「**[!UICONTROL 完了]**」を選択します。
 
    reCAPTCHA **で保護された** がアダプティブフォームに表示されます。Google reCAPTCHA サービスを使用するように設定されているすべてのアダプティブフォームに表示されます。
 
@@ -87,11 +87,11 @@ AEM Forms 環境を Google による reCAPTCHA サービスに接続するには
 <!--
 ### Show or hide CAPTCHA component based on rules {#show-hide-captcha}
 
-You can select to show or hide the CAPTCHA component based on rules that you apply on a component in an Adaptive Form. Tap the component, select ![edit rules](assets/edit-rules-icon.svg), and tap **[!UICONTROL Create]** to create a rule. For more information on creating rules, see [Rule Editor](rule-editor.md).
+You can select to show or hide the CAPTCHA component based on rules that you apply on a component in an Adaptive Form. Select the component, select ![edit rules](assets/edit-rules-icon.svg), and select **[!UICONTROL Create]** to create a rule. For more information on creating rules, see [Rule Editor](rule-editor.md).
 
 For example, the CAPTCHA component must display in an Adaptive Form only if the Currency Value field in the form has a value of more than 25000.
 
-Tap the **[!UICONTROL Currency Value]** field in the form and create the following rules:
+Select the **[!UICONTROL Currency Value]** field in the form and create the following rules:
 
 ![Show or hide rules](assets/rules-show-hide-captcha.png)
 

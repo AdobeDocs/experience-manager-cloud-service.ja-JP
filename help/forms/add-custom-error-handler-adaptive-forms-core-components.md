@@ -6,10 +6,10 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2410'
-ht-degree: 100%
+source-wordcount: '2329'
+ht-degree: 96%
 
 ---
 
@@ -193,9 +193,9 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
 デフォルトのエラーハンドラーは、エラー応答が標準スキーマの場合、またはサーバーサイドの検証エラーの場合に、フィールドにエラーメッセージを表示する機能をサポートしています。
 [ルールエディターのサービスの呼び出し](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=ja#custom-functions) action, take an example of a simple Adaptive Form with two fieldsアクションを使用してカスタムエラーハンドラーを作成および使用する方法を理解するために、「**ペット ID**」および「**ペット名**」という 2 つのフィールドを持つアダプティブフォームを例に、「**ペット ID**」でカスタムエラーハンドラーを使用して、`200 - OK`、`404 - Not Found`、`400 - Bad Request` などの外部サービスを呼び出すように設定された REST エンドポイントが返す様々なエラーをチェックしましょう。ルールエディターのサービスの呼び出しアクションを使用してデフォルトのエラーハンドラーを追加するには、次の手順を実行します。
 
-1. アダプティブフォームをオーサリングモードで開き、フォームコンポーネントを選択してから、**[!UICONTROL ルールエディター]**&#x200B;をタップしてルールエディターを開きます。
-1. 「**[!UICONTROL 作成]**」をタップします。
-1. ルールの&#x200B;**条件**&#x200B;セクションで条件を作成します。**例えば、[ペット ID の名前フィールド]**&#x200B;が変更された場合は、「**状態を選択** 」ドロップダウンリストから「変更済み」を選択します。
+1. アダプティブフォームをオーサリングモードで開き、フォームコンポーネントを選択して、 **[!UICONTROL ルールエディター]** をクリックして、ルールエディターを開きます。
+1. 「**[!UICONTROL 作成]**」を選択します。
+1. ルールの&#x200B;**条件**&#x200B;セクションで条件を作成します。例： **条件[ペット ID フィールドの名前]** が変更されました。 「 」を **状態を選択** 」ドロップダウンリストから選択できます。
 1. 「**Then**」セクションの&#x200B;**[!UICONTROL アクションの選択]**&#x200B;ドロップダウンリストで「**サービスの呼び出し**」を選択します。
 1. 「**入力**」セクションから、**Post サービス**&#x200B;とそれに対応するデータ連結を選択します。例えば、**ペット ID** を検証する場合は、**Post サービス**&#x200B;を **GET /pet/{petId}** として選択し、「**入力**」セクションで「**ペット ID**」を選択します。
 1. 「**出力**」セクションからデータ連結を選択します。例えば、「**出力**」セクションで「**ペット名**」を選択します。
@@ -236,7 +236,7 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
 1. に移動します。 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` をクリックし、 `ClientLibraryFolder` as `clientlibs`.
 1. `js` という名前のフォルダーを作成します。
 1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` フォルダーに移動します。
-1. JavaScript ファイル（例：`function.js`）を追加します。ファイルには、カスタムエラーハンドラーのコードが含まれています。
+1. JavaScript ファイルを追加します。例： `function.js`. ファイルには、カスタムエラーハンドラーのコードが含まれています。
 次のコードを JavaScript ファイルに追加して、REST サービスエンドポイントから受け取った応答とヘッダーをブラウザーコンソールに表示します。
 
    ```javascript
@@ -303,8 +303,8 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
 
 **[!UICONTROL ルールエディターのサービスの呼び出し]**&#x200B;アクションを使用してカスタムエラーハンドラーを使用するには、次の手順を実行します。
 
-1. アダプティブフォームをオーサリングモードで開き、フォームコンポーネントを選択してから、**[!UICONTROL ルールエディター]**&#x200B;をタップしてルールエディターを開きます。
-1. 「**[!UICONTROL 作成]**」をタップします。
+1. アダプティブフォームをオーサリングモードで開き、フォームコンポーネントを選択して、 **[!UICONTROL ルールエディター]** をクリックして、ルールエディターを開きます。
+1. 「**[!UICONTROL 作成]**」を選択します。
 1. ルールの&#x200B;**条件**&#x200B;セクションで条件を作成します。例えば、**[ペット ID の名前フィールド]**&#x200B;が変更された場合は、「**状態を選択** 」ドロップダウンリストから「**変更済み**」を選択します。
 1. 「**Then**」セクションの&#x200B;**[!UICONTROL アクションの選択]**&#x200B;ドロップダウンリストで「**サービスの呼び出し**」を選択します。
 1. 「**入力**」セクションから、**Post サービス**&#x200B;とそれに対応するデータ連結を選択します。例えば、**ペット ID** を検証する場合は、**Post サービス**&#x200B;を **GET /pet/{petId}** として選択し、「**入力**」セクションで「**ペット ID**」を選択します。
@@ -312,7 +312,7 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
 1. 「**[!UICONTROL エラーハンドラー]**」セクションから「**[!UICONTROL カスタムエラーハンドラー]**」を選択します。
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
-![エラー応答を処理するためのカスタムエラーハンドラーをフォームに追加します](/help/forms/assets/custom-error-handler.png)秒
+![エラー応答を処理するためのカスタムエラーハンドラーをフォームに追加します](/help/forms/assets/custom-error-handler.png)s
 
 
 このルールの結果、REST エンドポイントによって呼び出された外部サービスを使用して、**ペット ID** に入力した値が&#x200B;**ペット名**&#x200B;の検証をチェックします。データソースに基づく検証条件が失敗した場合は、エラーメッセージがフィールドレベルで表示されます。
@@ -334,7 +334,7 @@ If the server validation error message does not display in the standard format, 
 
 Before adding custom handler, you must configure the adaptive form for asynchronous submission. Execute the following steps:
 
-1. In adaptive form authoring mode, select the Form Container object and tap ![adaptive form properties](assets/configure_icon.png) to open its properties.
+1. In adaptive form authoring mode, select the Form Container object and select ![adaptive form properties](assets/configure_icon.png) to open its properties.
 1. In the **[!UICONTROL Submission]** properties section, enable **[!UICONTROL Use asynchronous submission]**.
 1. Select **[!UICONTROL Revalidate on server]** to validate the input field values on server before submission.
 1. Select the Submit Action:
@@ -344,7 +344,7 @@ Before adding custom handler, you must configure the adaptive form for asynchron
 
     ![adaptive form submission properties](assets/af_submission_properties.png)
 
-1. Tap ![Save](assets/save_icon.png) to save the properties.
+1. Select ![Save](assets/save_icon.png) to save the properties.
 
 ### Add custom error handler on Adaptive Form submission {#add-custom-error-handler-af-submission}
 
@@ -352,10 +352,10 @@ AEM Forms provides out-of-the-box success and error handlers for form submission
 
 Execute the following steps to add custom error handler on Adaptive Form submission:
 
-1. Open an Adaptive Form in authoring mode, select any form object, and tap  to open the rule editor.
-1. Select **[!UICONTROL Form]** in the Form Objects tree and tap **[!UICONTROL Create]**.
+1. Open an Adaptive Form in authoring mode, select any form object, and select  to open the rule editor.
+1. Select **[!UICONTROL Form]** in the Form Objects tree and select **[!UICONTROL Create]**.
 1. Select **[!UICONTROL Error in Submission]** from the Event drop-down list.
-1. Write a rule to convert custom error structure to the standard error structure and tap **[!UICONTROL Done]** to save the rule.
+1. Write a rule to convert custom error structure to the standard error structure and select **[!UICONTROL Done]** to save the rule.
 
 The following is a sample code to convert a custom error structure to the standard error structure:
 

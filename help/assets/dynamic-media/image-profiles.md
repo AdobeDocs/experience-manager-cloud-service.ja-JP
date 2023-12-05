@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3528'
+source-wordcount: '3555'
 ht-degree: 99%
 
 ---
@@ -178,7 +178,7 @@ ht-degree: 99%
 
 #### プロパティを使用したフォルダーへの Dynamic Media イメージプロファイルの適用 {#applying-image-profiles-to-folders-from-properties}
 
-1. Experience Manager のロゴをタップし、**[!UICONTROL Assets]** に移動します。
+1. Experience Managerのロゴを選択し、に移動します。 **[!UICONTROL Assets]**.
 1. イメージプロファイルを適用する&#x200B;*フォルダー*（アセットではない）に移動します。
 1. 現在の表示に応じて、次のいずれかの操作を行います。
    * カード表示では、フォルダーの上にポインターを置き、チェックマークを選択してフォルダーを選択します。

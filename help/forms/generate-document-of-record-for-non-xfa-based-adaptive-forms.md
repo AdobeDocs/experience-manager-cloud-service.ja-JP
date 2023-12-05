@@ -2,16 +2,16 @@
 title: AEM Formsでレコードのドキュメント (DoR) を生成する方法
 description: アダプティブForms用のレコードのドキュメント (DoR) のテンプレートを生成する方法を説明します。
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 00a905a08de1c14ef0ded7475d2f95abacc50af1
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4139'
-ht-degree: 94%
+source-wordcount: '4124'
+ht-degree: 93%
 
 ---
 
 # アダプティブフォームにおけるレコードのドキュメントの生成
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
 
 
 | バージョン | 記事リンク |
@@ -47,7 +47,7 @@ XFA テンプレート（XDP ファイル）を AEM Forms インスタンスに�
 
 1. Experience Manager オーサーインスタンスで、**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;をクリックします。
 1. フォームを選択し、「**[!UICONTROL プロパティ]**」をクリックします。
-1. 「プロパティ」ウィンドウで、「**[!UICONTROL フォームモデル]**」をタップします。
+1. プロパティウィンドウで、「 」を選択します。 **[!UICONTROL フォームモデル]**.
 1. 「**[!UICONTROL フォームモデル]**」タブの「**[!UICONTROL モデルを選択]**」ドロップダウンで、「**[!UICONTROL スキーマ]**」または「**[!UICONTROL なし]**」を選択します。フォームモデルの選択は、フォームの作成時にも行うことができます。
 1. 「フォームモデル」タブの「レコードのドキュメントテンプレート設定」セクションで、「**フォームテンプレートをレコードのドキュメントテンプレートとして関連付ける**」を選択します。このオプションを選択すると、マシン上で使用可能なすべての XFA テンプレート（XDP ファイル）が表示されます。適切なファイルを選択します。また、アダプティブフォームと選択した XFA テンプレート（XDP ファイル）で、必ず同じスキーマ（データスキーマ）が使用されるようにします。
 1. 「**[!UICONTROL 完了]**」をクリックします。
@@ -60,7 +60,7 @@ Adobe Acrobat PDF（AcroForm）を AEM Forms インスタンスにアップロ�
 
 1. Experience Manager オーサーインスタンスで、**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;をクリックします。
 1. フォームを選択し、「**[!UICONTROL プロパティ]**」をクリックします。
-1. 「プロパティ」ウィンドウで、「**[!UICONTROL フォームモデル]**」をタップします。
+1. プロパティウィンドウで、「 」を選択します。 **[!UICONTROL フォームモデル]**.
 1. 「**[!UICONTROL フォームモデル]**」タブの「**[!UICONTROL モデルを選択]**」ドロップダウンで、「**[!UICONTROL スキーマ]**」または「**[!UICONTROL なし]**」を選択します。フォームモデルの選択は、フォームの作成時にも行うことができます。
 1. 「フォームモデル」タブの「レコードのドキュメントテンプレート設定」セクションで、「**フォームテンプレートをレコードのドキュメントテンプレートとして関連付ける**」を選択します。このオプションを選択すると、マシン上で使用可能なすべての Acrobat PDF（AcroForm）が表示されます。適切なファイルを選択します。
 1. 「**[!UICONTROL 完了]**」をクリックします。
@@ -81,7 +81,7 @@ Adobe Acrobat PDF（AcroForm）を AEM Forms インスタンスにアップロ�
 
 1. Experience Manager オーサーインスタンスで、**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;をクリックします。
 1. フォームを選択し、「**[!UICONTROL プロパティ]**」をクリックします。
-1. 「プロパティ」ウィンドウで、「**[!UICONTROL フォームモデル]**」をタップします。
+1. プロパティウィンドウで、「 」を選択します。 **[!UICONTROL フォームモデル]**.
 1. 「**[!UICONTROL フォームモデル]**」タブの「**[!UICONTROL モデルを選択]**」ドロップダウンで、「**[!UICONTROL スキーマ]**」または「**[!UICONTROL なし]**」を選択します。フォームモデルの選択は、フォームの作成時にも行うことができます。
 1. 「フォームモデル」タブの「レコードのドキュメントテンプレート設定」セクションで、「**レコードのドキュメントを生成**」を選択します。
 1. 「**[!UICONTROL 完了]**」をクリックします。
@@ -334,10 +334,10 @@ When you select a form model, configure Document of Record using options availab
 
 「レコードのドキュメント」タブに入力されたブランディング情報をローカライズするには、ブラウザーのロケールを正しく設定してください。レコードのドキュメントのブランディング情報をカスタマイズするには、次の手順を実行します。
 
-1. レコードのドキュメント内でパネル（ルートパネル）を選択して、![configure](assets/configure.png) をタップします。
-1. ![dortab](assets/dortab.png) をタップします。「レコードのドキュメント」タブが表示されます。
+1. レコードのドキュメントでパネル（ルートパネル）を選択し、 ![設定](assets/configure.png).
+1. 選択 ![ドータ](assets/dortab.png). 「レコードのドキュメント」タブが表示されます。
 1. レコードのドキュメントをレンダリングするための、デフォルトのテンプレートまたはカスタムのテンプレートのいずれかを選択します。デフォルトのテンプレートを選択すると、レコードのドキュメントのサムネイルが「テンプレート」ドロップダウンの下に表示されます。
-1. デフォルトのテンプレートとカスタムのテンプレートのどちらを選択するかにより異なりますが、以下のプロパティの一部または全部が「レコードのドキュメント」タブに表示されます。以下のプロパティを指定して、レコードのドキュメントの表示方法を定義します。
+1. 既定のテンプレートとカスタムテンプレートのどちらを選択したかに基づいて、次のプロパティの一部またはすべてのプロパティが [ レコードのドキュメント ] タブに表示されます。 以下のプロパティを指定して、レコードのドキュメントの表示方法を定義します。
 
    1. **基本のプロパティ**：
       * **テンプレート**：カスタムテンプレートを選択する場合は、[!DNL AEM Forms] サーバーで XDP を参照して選択します。お使いの [!DNL AEM Forms] サーバーにまだないテンプレートを使用する場合は、まず XDP を [!DNL AEM Forms] サーバーにアップロードする必要があります。
@@ -383,7 +383,7 @@ When you select a form model, configure Document of Record using options availab
    </proto>
    ```
 
-1. ブランディングの変更内容を保存するには、「**[!UICONTROL 完了]**」をタップします。
+1. ブランディングの変更を保存するには、「 **[!UICONTROL 完了]**.
 
 ## アダプティブフォームエディターでのレコードのドキュメントのサポート {#dor-support-in-adaptiveform}
 
@@ -400,7 +400,7 @@ When you select a form model, configure Document of Record using options availab
 
    * **[!UICONTROL レコードのドキュメントを生成]**：このオプションを選択すると、[!UICONTROL レコードのドキュメント]のテンプレートがアダプティブフォーム用に自動的に生成されます。
 
-1. 「![保存](/help/forms/assets/check-button.png)」をタップして、プロパティを保存します。
+1. 選択 ![保存](/help/forms/assets/check-button.png) をクリックしてプロパティを保存します。
 
 ![レコードのドキュメントのテンプレートのサポート](/help/forms/assets/dor-templatesupport.png)
 

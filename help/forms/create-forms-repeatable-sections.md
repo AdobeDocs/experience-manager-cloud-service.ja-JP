@@ -3,10 +3,10 @@ title: アダプティブフォームのコアコンポーネントで繰り返�
 description: アダプティブフォームで繰り返し可能なセクションまたはフィールドを作成する方法を説明します。
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 96%
+source-wordcount: '1256'
+ht-degree: 94%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 96%
 ![「アクセシビリティ」タブ](/help/forms/assets/repeat-panel.png)
 
 パネルを繰り返し可能にするには、次の手順を実行します。
-1. パネルコンテナを選択して、![cmppr](/help/forms/assets/cmppr.png) をタップします。
+1. パネルコンテナを選択し、「 」を選択します。 ![cmppr](/help/forms/assets/cmppr.png).
 1. **繰り返しパネル**&#x200B;をクリックし、**パネルを繰り返し可能にする**&#x200B;のスイッチをオンにします。
 1. 最小繰り返し可能セクションの必要に応じて&#x200B;**最小繰り返し回数**&#x200B;を設定します。パネルを繰り返しない場合、または繰り返しパネルを削除するには、**最小繰り返し回数**&#x200B;を 0 に設定できます。デフォルトでは、最小繰り返し回数の値は 0 です。
 1. **最大繰り返し回数**&#x200B;を設定して、必要な回数パネルを繰り返します。デフォルトの値は無限です。
@@ -63,7 +63,7 @@ ht-degree: 96%
 
 パネルの親要素に繰り返しを許可する場合は、パネルの繰り返しインスタンスを管理するために追加ボタンが含まれている必要があります。親要素にボタンを挿入し、ボタン上のスクリプトを有効にするには、以下の手順を実行します。
 
-1. **ボタンコンポーネント**&#x200B;をパネルの親要素に追加します。以下のビデオの例では、ラベル名 **Add** とフィールド名 **AddPanel** のボタンコンポーネントが使用されています。コンポーネントを選択して、「![編集ルール](/help/forms/assets/edit-rules.png)」をタップします。ルールエディターでボタンコンポーネントのルールが開きます。
+1. **ボタンコンポーネント**&#x200B;をパネルの親要素に追加します。以下のビデオの例では、ラベル名 **Add** とフィールド名 **AddPanel** のボタンコンポーネントが使用されています。コンポーネントを選択し、「 」を選択します。 ![edit-rules](/help/forms/assets/edit-rules.png). ルールエディターでボタンコンポーネントのルールが開きます。
 1. ルールエディターウィンドウで、「**作成**」をクリックします。
 
    フォームオブジェクトと関数の行で、「**ビジュアルエディター**」を選択します。
@@ -84,7 +84,7 @@ ht-degree: 96%
 
 パネルの親要素には、繰り返し可能なパネルのインスタンスを削除するために削除ボタンが含まれている必要があります。親要素にボタンを挿入し、ボタン上のスクリプトを有効にして反復可能なパネルを削除するには、以下の手順を実行します。
 
-1. **ボタンコンポーネント**&#x200B;をパネルの親要素に追加します。下のビデオでは、ラベル名 **DELETE** が付いたボタンコンポーネントおよびフィールド名 **DeletePanel** が使用されます。コンポーネントを選択して、「![編集ルール](/help/forms/assets/edit-rules.png)」をタップします。ルールエディターでボタンコンポーネントのルールが開きます。
+1. **ボタンコンポーネント**&#x200B;をパネルの親要素に追加します。下のビデオでは、ラベル名 **DELETE** が付いたボタンコンポーネントおよびフィールド名 **DeletePanel** が使用されます。コンポーネントを選択し、「 」を選択します。 ![edit-rules](/help/forms/assets/edit-rules.png). ルールエディターでボタンコンポーネントのルールが開きます。
 1. ルールエディターウィンドウで、「**作成**」をクリックします。
 
    フォームオブジェクトと関数の行で、「**ビジュアルエディター**」を選択します。
@@ -151,8 +151,8 @@ ht-degree: 96%
 
 A panel has various layouts options. The Layout for accordian design option has out of the box support for repeatable panels. Perform the following steps to repeatable panel with Layout for accordian design option:
 
-1. On the parent of panel to be repeated, tap ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
-1. On a panel, which is to be repeated, tap ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
+1. On the parent of panel to be repeated, select ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
+1. On a panel, which is to be repeated, select ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
 
    Now, you can use the plus (+) and delete ( ![delete-panel](assets/delete-panel.png)) buttons to add and remove the panels.
 

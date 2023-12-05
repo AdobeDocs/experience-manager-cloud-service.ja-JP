@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 100%
+source-wordcount: '746'
+ht-degree: 92%
 
 ---
 
@@ -31,14 +31,14 @@ ht-degree: 100%
 
 アダプティブフォームの非同期送信を設定するには、以下の手順を実行します。
 
-1. アダプティブフォームのオーサリングモードで、フォームコンテナオブジェクトを選択し、![cmppr1](assets/configure-icon.svg) をタップしてプロパティを開きます。
+1. アダプティブフォームのオーサリングモードで、フォームコンテナオブジェクトを選択し、 ![cmppr1](assets/configure-icon.svg) をクリックしてプロパティを開きます。
 1. 「**[!UICONTROL 送信]**」プロパティセクションで、「**[!UICONTROL 非同期送信を使用]**」を有効にします。
 1. 「**[!UICONTROL 送信時]**」セクションで、フォームが正常に送信された場合に実行するオプションを以下のどちらかから選択します。
 
    * **[!UICONTROL URL にリダイレクト]**：フォームの送信時に、指定の URL またはページにリダイレクトされます。「**[!UICONTROL リダイレクト URL / パス]**」フィールドで URL を指定することも、ページのパスを参照して選択することもできます。
    * **[!UICONTROL メッセージを表示]**：フォームの送信時にメッセージを表示します。「**[!UICONTROL メッセージを表示]**」オプションの下のテキストフィールドにメッセージを入力できます。このテキストフィールドは、リッチテキスト形式をサポートします。
 
-1. ![check-button1](assets/save_icon.svg) をタップしてプロパティを保存します。
+1. 選択 ![check-button1](assets/save_icon.svg) をクリックしてプロパティを保存します。
 
 ## 非同期送信の仕組み {#how-asynchronous-submission-works}
 
@@ -108,11 +108,11 @@ ht-degree: 100%
 
 成功イベントとエラーイベントを処理するためのルールを作成するには、以下の手順を実行します。
 
-1. アダプティブフォームをオーサリングモードで開いて、任意のフォームオブジェクトを選択し、![edit-rules1](assets/edit-rules-icon.svg) をタップしてルールエディターを開きます。
-1. フォームオブジェクトツリーで「**[!UICONTROL フォーム]**」選択し、「**[!UICONTROL 作成]**」をタップします。
+1. アダプティブフォームをオーサリングモードで開き、任意のフォームオブジェクトを選択して、 ![edit-rules1](assets/edit-rules-icon.svg) をクリックして、ルールエディターを開きます。
+1. 選択 **[!UICONTROL フォーム]** フォームオブジェクトツリーで「 」を選択し、 **[!UICONTROL 作成]**.
 1. 「**[!UICONTROL 正常に送信された]**」または「**[!UICONTROL 送信が失敗した]**」を&#x200B;**[!UICONTROL 状態を選択]**&#x200B;ドロップダウンリストから選択します。
 1. 選択した状態の **[!UICONTROL THEN]** アクションを定義します。例えば、「**[!UICONTROL 次に移動]**」を選択し、URL を入力または貼り付けます。「**[!UICONTROL 関数]**」タブを使用して、任意の関数をルールにドラッグすることもできます。
 
    ![送信ハンドラーの成功](assets/form-submission-handler.png)
 
-1. 「**[!UICONTROL 完了]**」をクリックして、ルールを保存します。
+1. 選択 **[!UICONTROL 完了]** 」と入力してルールを保存します。

@@ -3,10 +3,10 @@ title: AEM as a Cloud Service リリース 2023.11.0 の移行ツールのリリ
 description: AEM as a Cloud Service リリース 2023.11.0 の移行ツールのリリースノート
 feature: Release Information
 exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
-source-git-commit: e2ab119315e18bbef40efb712bdf6397cfa8adfc
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 44%
+source-wordcount: '143'
+ht-degree: 50%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 44%
 
 ### 新機能 {#what-is-new-ctt}
 
-* 移行セットの抽出が正常に完了すると、Cloud Acceleration Manager(CAM) が自動的に取り込みを開始するように更新されました。  取り込みを手動で開始するために、抽出が完了するまで待つ必要がなくなりました。 CAM でのコンテンツの取り込みについて詳しくは、 [ここ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#ingestion-process)
+* 移行セットの抽出が正常に完了すると、Cloud Acceleration Manager(CAM) が自動的に取り込みを開始するように更新されました。 取り込みを手動で開始するために、抽出が完了するまで待つ必要がなくなりました。 CAM でのコンテンツの取り込みについて詳しくは、 [ここ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#ingestion-process).
 
 ### バグの修正 {#bug-fixes-ctt}
 

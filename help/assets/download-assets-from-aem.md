@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: f2f81e2e3e7ff0b5bad4a5490f5cbec752c92578
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 96%
+source-wordcount: '1329'
+ht-degree: 97%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 96%
 
 ## [!DNL Experience Manager] インターフェイスを使用したアセットのダウンロード {#download-assets}
 
-Experience Manager では、アセットの量とサイズに基づいてダウンロードエクスペリエンスを最適化します。サイズの小さいファイルはユーザーインターフェイスからリアルタイムでダウンロードされます。[!DNL Experience Manager] では、単一のアセットを ZIP アーカイブに格納するのではなく、元のファイルの単一のアセットリクエストを直接ダウンロードして、ダウンロードを高速化します。Experience Manager では、非同期リクエストによる大規模なダウンロードをサポートしています。100 GB を超えるダウンロードリクエストは、最大サイズが 100 MB の複数の ZIP アーカイブに分割されます。
+Experience Manager では、アセットの量とサイズに基づいてダウンロードエクスペリエンスを最適化します。サイズの小さいファイルはユーザーインターフェイスからリアルタイムでダウンロードされます。[!DNL Experience Manager] では、単一のアセットを ZIP アーカイブに格納するのではなく、元のファイルの単一のアセットリクエストを直接ダウンロードして、ダウンロードを高速化します。Experience Manager では、非同期リクエストによる大規模なダウンロードをサポートしています。100 GB を超えるダウンロードリクエストは、それぞれ最大 100 MB の複数の ZIP アーカイブに分割されます。
 
 デフォルトでは、[!DNL Experience Manager] は、ダウンロードアーカイブの生成時に [[!DNL Experience Manager] インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)で通知をトリガーします。
 
@@ -139,7 +139,7 @@ Experience Manager では、アセットの量とサイズに基づいてダウ�
 1. Git のプロジェクトコードで、設定ファイルを次の場所に作成します。 `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. ファイルにはが含まれている必要があります `{}` をコンテンツとして指定し、対応する OSGi コンポーネントの空の OSGi 設定を示します。 このアクションを実行すると、サービスが有効になります。
 1. この新しい設定を含むコードを、 [!DNL Cloud Manager].
 1. デプロイすると、アセットのオン/オフタイム設定に従ってレンディションとメタデータにアクセスできるようになります。 現在の日時がオンタイムより前またはオフタイムより後の場合は、エラーメッセージが表示されます。
-空の OSGi 設定の追加について詳しくは、次を参照してください。 [ガイド](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ja).
+空の OSGi 設定の追加について詳しくは、次を参照してください [ガイド](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=ja).
 
 ## ヒントと制限事項 {#tips-limitations}
 

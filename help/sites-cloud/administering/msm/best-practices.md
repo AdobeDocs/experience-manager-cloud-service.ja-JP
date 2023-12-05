@@ -4,9 +4,9 @@ description: Adobe のエンジニアリングおよびコンサルティング�
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1413'
 ht-degree: 92%
 
 ---
@@ -119,7 +119,7 @@ MSM は、次の 2 つの方法で多言語 Web サイトを作成するため�
 
 ## ロールアウトのカスタマイズ {#customizing-rollouts}
 
-MSM ロールアウト設定は高度にカスタマイズ可能です。ロールアウトの自動化は、大きな影響を及ぼす可能性があることに注意する必要があります。ベストプラクティスとして、次のアクティビティを行う前に、十分に入念に計画する必要があります。
+MSM ロールアウト設定は高度にカスタマイズ可能です。ロールアウトの自動化は、大きな影響を及ぼす可能性があります。 ベストプラクティスとして、次のアクティビティを行う前に、十分に入念に計画する必要があります。
 
 * [onModify トリガー](#onmodify)を使用したロールアウトの自動化
 * [ノードタイプ／プロパティ](#node-types-properties)のカスタマイズ

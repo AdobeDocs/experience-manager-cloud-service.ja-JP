@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1397'
 ht-degree: 100%
 
 ---
@@ -55,7 +55,6 @@ Dynamic Media アセットは、顧客との配信を高速化するために、
    >CDN 無効化テンプレートは、最大 2500 文字までのテキストを保存できます。
 
 1. **[!UICONTROL CDN 無効化テンプレート]**&#x200B;ページの右上隅にある「**[!UICONTROL 保存]**」を選択し、「**[!UICONTROL OK]**」を選択します。<br>
-
    *パート 2 / 2：CDN 無効化オプションの設定*
    <br>
 
@@ -102,4 +101,4 @@ Dynamic Media アセットは、顧客との配信を高速化するために、
 | *無効にする URL が入力されていません。* | **[!UICONTROL CDN 無効化]** - **[!UICONTROL 確認]**&#x200B;ページに URL が存在せず、「**[!UICONTROL 送信]**」を選択した場合に発生します。 |
 
 
-<!--  | I do not want to create a template. | Near the upper-right corner of the page, select **[!UICONTROL Cancel]**, then continue with ***Part 2: Working with CDN Invalidation***. Note that while you are not required to create a template to use CDN Invalidation, Adobe recommends that you create one, especially if you have numerous assets that you need to update immediately, on a regular basis. The template is used at the time you set CDN invalidation options. | -->
+<!--  | I do not want to create a template. | Near the upper-right corner of the page, select **[!UICONTROL Cancel]**, then continue with ***Part 2: Working with CDN Invalidation***. While you are not required to create a template to use CDN Invalidation, Adobe recommends that you create one, especially if you have numerous assets that you need to update immediately, on a regular basis. The template is used at the time you set CDN invalidation options. | -->

@@ -2,10 +2,10 @@
 title: AEM コネクタの実装
 description: AEMコネクタを構築、テスト、実装する方法について説明します。 また、一般的な統合パターンについても学習します。
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 95%
+source-wordcount: '935'
+ht-degree: 94%
 
 ---
 
@@ -14,7 +14,7 @@ AEM コネクタの実装
 
 [AEM コネクタ](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html)の作成に役立つリファレンス情報を以下に示します。コネクタの[登録](submit.md)と[管理](maintain.md)に関するガイダンスと共に参照してください。
 
-AEM の開発者用ライセンスは、[Adobe Exchange プログラム](https://partners.adobe.com/exchangeprogram/experiencecloud)を通じて取得できます。
+AEMの開発者用ライセンスは、 [Adobe交換プログラム](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
 一般的な統合パターン
 ---------------------------

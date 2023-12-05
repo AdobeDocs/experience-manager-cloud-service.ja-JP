@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
-workflow-type: ht
-source-wordcount: '378'
-ht-degree: 100%
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 93%
 
 ---
 
@@ -39,11 +39,11 @@ AEM サイトと AEM CIF コアコンポーネントを専用のストア表示�
 
 3. 次の手順に従って、CIF Cloud Service 設定の子設定を作成します。
 
-   * AEM で、ツール／一般／[設定ブラウザー](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)に移動します。
+   * AEMで、ツール/一般/に移動します。 [設定ブラウザー](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * 作成したベース設定を選択します。
    * 上記のポイント 2 で説明した手順を使用して、新しい設定を作成します。
 
-   この新しい設定は、基本設定の子設定として作成されます。ツール／一般／設定ブラウザーに移動して、設定を作成できるようになっています。
+   この新しい設定は、基本設定の子設定として作成されます。ツール/一般/設定ブラウザーに移動して、設定を作成できるようになりました。
 
    >[!TIP]
    >

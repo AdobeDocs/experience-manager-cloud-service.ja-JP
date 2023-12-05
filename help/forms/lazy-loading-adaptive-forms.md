@@ -5,16 +5,16 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1074'
-ht-degree: 89%
+source-wordcount: '1063'
+ht-degree: 91%
 
 ---
 
 # 遅延読み込みによる大きなフォームのパフォーマンスの向上 {#improve-performance-of-large-forms-with-lazy-loading}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブFormsの作成における大幅な進歩を表し、印象的なユーザーエクスペリエンスを実現します。 この記事では、基盤コンポーネントを使用してアダプティブFormsを作成する古い方法について説明します。 </span>
+<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -52,8 +52,8 @@ ht-degree: 89%
 以下の手順を実行して、アダプティブフォームフラグメントに対して遅延読み込みを有効にします。
 
 1. 遅延読み込みを有効にしたいフラグメントを含むアダプティブフォームをオーサリングモードで開きます。
-1. アダプティブフォームフラグメントを選択して、![設定](assets/configure-icon.svg) をタップします。
-1. サイドバーで、「**[!UICONTROL フラグメントを緩慢に読み込む]**」を有効にして、「**完了**」をタップします。
+1. アダプティブフォームフラグメントを選択し、「 」を選択します。 ![設定](assets/configure-icon.svg).
+1. サイドバーで、 **[!UICONTROL フラグメントを遅延的に読み込む]** を選択し、 **完了**.
 
    ![アダプティブフォームフラグメントに対する遅延読み込みの有効化](assets/lazy-loading-fragment.png)
 
@@ -62,7 +62,7 @@ ht-degree: 89%
 遅延読み込みフラグメント内のオブジェクトの値をグローバルとしてマーク付けすることで、これらの値は、そのフラグメントが読み込まれていなくてもスクリプトで使用できるようになります。以下の操作を実行します。
 
 1. アダプティブフォームフラグメントをオーサリングモードで開きます。
-1. グローバルとしてマークしたい値のフィールドをタップしてから、![設定](assets/configure-icon.svg) をタップします。
+1. グローバルとしてマークする値を持つフィールドを選択し、「 」を選択します。 ![設定](assets/configure-icon.svg).
 1. サイドバーで、**[!UICONTROL 遅延読み込み中に値を使用]**&#x200B;を有効にします。
 
    ![サイドバーの遅延読み込みフィールド](assets/enable-lazy-loading.png)

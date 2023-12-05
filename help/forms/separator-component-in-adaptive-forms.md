@@ -5,10 +5,10 @@ uuid: f8d2aed3-52aa-437f-bfe3-0c8779e7986c
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 35%
+source-wordcount: '313'
+ht-degree: 32%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 35%
 
 区切り文字コンポーネントのプロパティを指定するには：
 
-1. セパレーターコンポーネントを選択して、![cmppr](assets/cmppr.png) をタップします。プロパティがサイドバーに開きます。
+1. 区切り文字コンポーネントを選択し、「 」を選択します。 ![cmppr](assets/cmppr.png). プロパティがサイドバーに開きます。
 1. インライン CSS プロパティセクションのタブをクリックして、CSS プロパティを指定できます。 例えば、a.「フィールド」タブで、 **項目を追加**. 2 つのフィールドを持つ行が追加されます。
 1. 左側の最初のフィールドで、適用する CSS3 プロパティを指定します。 例： **ボーダー**. 下向き矢印ボタンをクリックしてプロパティを選択することもできます。 ドロップダウンリストに含まれるプロパティがすべてではなく、サポートされている CSS3 プロパティの名前をこのフィールドで指定できます。
 1. 隣接するフィールドで、指定した CSS3 プロパティに有効な値を指定します。 例： **3 ピクセル（実線黒）**.

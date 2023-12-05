@@ -2,10 +2,10 @@
 title: エクスペリエンスフラグメント
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントを使用すると、エクスペリエンスの再利用性と柔軟性を高めることができます。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 98%
+source-wordcount: '2035'
+ht-degree: 97%
 
 ---
 
@@ -68,7 +68,7 @@ Adobe Experience Manager as a Cloud Service 内では、エクスペリエンス
    * サードパーティのタッチポイントへのコンテンツの埋め込み。
 * 異なるバリエーションやレンディションを持つエクスペリエンスがある場合。
    * チャネル固有またはコンテキスト固有のバリエーション.
-   * グループに対応したエクスペリエンス（チャネル間でエクスペリエンスが異なるキャンペーンなど）。
+   * グループに適したエクスペリエンス（チャネル間でエクスペリエンスが異なるキャンペーンなど）。
 * オムニチャネルコマースを使用する場合。
    * タッチポイントのトランザクション化。
 

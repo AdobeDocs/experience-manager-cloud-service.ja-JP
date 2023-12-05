@@ -4,10 +4,10 @@ description: ユーザーが提供したデータを使用して、送信済み�
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 58%
+source-wordcount: '693'
+ht-degree: 54%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 58%
 フォーム要素をメタデータに追加するには、次の手順を実行します。
 
 1. アダプティブフォームを編集モードで開きます。\
-   フォームを編集モードで開くには、Forms Manager でフォームを選択して、「**[!UICONTROL 開く]**」をタップします。
-1. 編集モードでコンポーネントを選択し、![フィールドレベル](assets/select_parent_icon.svg)／**[!DNL Adaptive Form Container]** をタップし、![cmppr](assets/configure-icon.svg) をタップします。
+   フォームを編集モードで開くには、フォームマネージャーでフォームを選択し、「 **[!UICONTROL 開く]**.
+1. 編集モードで、コンポーネントを選択し、「 」を選択します。 ![フィールドレベル](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]**&#x200B;を選択し、 ![cmppr](assets/configure-icon.svg).
 1. サイドバーで、「**[!DNL Metadata]**」をクリックします。
 1. 「メタデータ」セクションで、「**[!DNL Add]**」をクリックします。
 1. スクリプトを追加するには、「メタデータ」タブの「値」フィールドを使用します。 追加したスクリプトは、フォーム上の要素からデータを収集し、メタデータに入力される値を計算します。
