@@ -4,8 +4,8 @@ description: AEM as a Cloud Serviceでのユーザーマッピングとプリン
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 45%
+source-wordcount: '993'
+ht-degree: 44%
 
 ---
 

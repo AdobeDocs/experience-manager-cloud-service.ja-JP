@@ -4,10 +4,10 @@ description: ユニバーサルエディターを使用して、任意の実装�
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '936'
-ht-degree: 11%
+ht-degree: 6%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
 >title="ユニバーサルエディターを使用したコンテキストでの編集"
->abstract="ヘッドレスアプリでユニバーサルエディターを活用して、作成者にスムーズなコンテキスト内編集機能を提供する方法を説明します。"
+>abstract="ヘッドレスアプリでユニバーサルエディターを使用して低摩擦を引き起こす方法を、コンテキスト編集で作成者の指先に表示します。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
 >title="ユニバーサルエディターの起動"
->abstract="このガイドでは、ユニバーサルエディターについて解説します。また、ユニバーサルエディターを使用すると、どのような実装でもコンテンツのあらゆる側面をすべてのユーザーが編集できるようになり、コンテンツの速度が向上する仕組みについても説明します。<br><br>下をクリックして、新しいタブでこのモジュールを起動し、このガイドに従ってください。"
+>abstract="このガイドでは、ユニバーサルエディターと、誰でも任意の実装でコンテンツのあらゆる側面を編集できる方法を参照し、コンテンツベロシティを強化します。<br><br>下をクリックして、新しいタブでこのモジュールを起動し、このガイドに従ってください。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
