@@ -1,8 +1,8 @@
 ---
-source-git-commit: c20f59770f4eb722d49a96952126993577bfd65e
+source-git-commit: 8bc20c66aad7bf4befdd28db2c628a1535ae375b
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 100%
+source-wordcount: '205'
+ht-degree: 98%
 
 ---
 # スニペット {#snippets}
@@ -11,15 +11,9 @@ ht-degree: 100%
 
 [![30 日間の体験版を使用してヘッドレス CMS を理解しましょう](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=ja)
 
-## Edge 配信サービス オーサリング {#edge-delivery-authoring}
+## Edge Delivery Servicesオーサリング {#edge-delivery-authoring}
 
 [!BADGE Edge 配信サービス向けの AEM コンテンツをオーサリングする場合は、こちらをクリックしてください。]{type=Positive url="/help/edge/overview.md" tooltip="Edge 配信サービス向けの AEM コンテンツのオーサリング"}
-
-## プロファイルへのグループ割り当てに対する IMS のサポート {#ims-group-profiles}
-
->[!NOTE]
->
->AEM では、現在、プロファイルへのグループの割り当てをサポートしていません。代わりに、ユーザーを個別に追加する必要があります。
 
 ## WAF 設定限定リリース {#waf-limited-release}
 
