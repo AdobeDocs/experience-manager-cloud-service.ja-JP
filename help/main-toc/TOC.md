@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ba7976c192e3696b1367a4f9a5bf0c320a5f258e
+source-git-commit: ce98053371c8a40db3935c47356213e712a4e39e
 workflow-type: tm+mt
-source-wordcount: '4420'
+source-wordcount: '4429'
 ht-degree: 93%
 
 ---
@@ -727,6 +727,8 @@ ht-degree: 93%
          + [製品エクスペリエンスの構築](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
    + 統合 {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
+      + [ライブ検索CIFコンポーネント](/help/commerce-cloud/integrating/live-search-plp.md)
+      + [ライブ検索ポップオーバーCIFコンポーネント](/help/commerce-cloud/integrating/live-search-popover.md)
       + [サードパーティのコマースソリューション](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM ストアフロント {#storefront}

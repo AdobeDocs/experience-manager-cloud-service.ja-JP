@@ -3,10 +3,10 @@ title: コマース統合フレームワークを使用した、AEM と Adobe Co
 description: AEM と Adobe Commerce は、コマース統合フレームワーク（CIF）を使用してシームレスに統合されます。CIF を使用すると、AEM は Adobe Commerce インスタンスにアクセスし、GraphQL を介して Adobe Commerce と通信できます。また、AEM オーサーは、製品とカテゴリの選択機能と製品コンソールを使用して、Adobe Commerce からオンデマンドで取得した製品とカテゴリデータを参照できます。さらに、CIF には標準搭載のストアフロントが用意されており、コマースプロジェクトの迅速化に役立ちます。
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6d63328ca17a00e0369c57714409f3f448cb311f
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 97%
+source-wordcount: '439'
+ht-degree: 87%
 
 ---
 
@@ -49,3 +49,8 @@ AEM CIF コアコンポーネントの Adobe Commerce とのビジネスロジ�
 >[AEM CIF コアコンポーネントのカスタマイズ](../customizing/customize-cif-components.md)ページには、CIF コアコンポーネントのカスタマイズ方法に関する詳細な例とベストプラクティスが記載されています。
 
 プロジェクト内では、AEM CIF コアコンポーネントとカスタムプロジェクトコンポーネントは、Sling Context-Aware 設定を使用して、AEM ページに関連付けられた Adobe Commerce ストア用に設定されたクライアントを簡単に取得できます。
+
+## 検索 {#search}
+
+CIFには標準搭載の a が用意されています。 [コアコンポーネントを検索](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) を基に、サーバーサイドでレンダリングされた検索エクスペリエンスが [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/). コマースのお客様は、 [ライブ検索](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en) 代わりに、 これに従う [リンク](/help/commerce-cloud/integrating/live-search-plp.md) を参照して、CIFとライブ検索の統合について確認してください。
+
