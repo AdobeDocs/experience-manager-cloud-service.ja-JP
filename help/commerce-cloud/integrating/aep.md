@@ -11,10 +11,10 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: d9d4ed55722920a8528056defbc0d8a411dd6807
 workflow-type: tm+mt
-source-wordcount: '1870'
-ht-degree: 95%
+source-wordcount: '1866'
+ht-degree: 90%
 
 ---
 
@@ -215,10 +215,9 @@ React ベースの Peregrine と CIF のコアコンポーネントを初期化�
            baseUrl: storeConfig.storeRootUrl
        },
        eventsCollector: {
-           // Enable the Experience Platform Connector and define the org and datastream to use
-           aep: {
-               orgId: // TODO: add your orgId
-               datastreamId: // TODO: add your datastreamId
+           eventForwarding: {
+               commerce: true,
+               aep: false,
            }
        }
    };
@@ -432,7 +431,7 @@ Experience Platform でデータストリームを作成するには、次の手
 
 ## `addToCart` イベントのトリガーとデータ収集の検証 {#event-trigger-verify}
 
-上記の手順で、AEM Commerce とExperience Platform の設定が完了します。 `addToCart` イベントをトリガーし、製品 UI の Experience Platform デバッガーとデータセットの「__指標とグラフ__」トグルを使用して、データ収集を検証できるようになりました。
+上記の手順で、AEM Commerce とExperience Platform の設定が完了します。 これで、トリガーを `addToCart` イベントを使用してデータ収集を検証します。 [Snowplow インスペクタ](https://chromewebstore.google.com/detail/snowplow-inspector/maplkdomeamdlngconidoefjpogkmljm?pli=1) とデータセット __指標とグラフ__ 製品 UI で切り替えます。
 
 イベントをトリガーするには、ローカル設定から AEM オーサーまたはパブリッシュサービスを使用します。 この例では、アカウントにログインして AEM オーサーを使用します。
 
@@ -443,9 +442,7 @@ Experience Platform でデータストリームを作成するには、次の手
 1. の任意の製品カードをクリックします。 __製品紹介ページ__&#x200B;を選択し、「 __色、サイズ__ 有効にする __買い物かごに追加__ 」ボタンをクリックします。
 
 
-1. ブラウザーの拡張パネルから __Adobe Experience Platform デバッガー__&#x200B;拡張機能を開き、左側のパネルで __Experience Platform Wed SDK__ を選択します。
-
-   ![AEP デバッガー](../assets/aep-integration/AEP-Debugger.png)
+1. を開きます。 __Snowplow インスペクタ__ ブラウザーの拡張機能パネルから「 」を選択し、 __Experience Platform水型 SDK__ をクリックします。
 
 
 1. __製品ページ__&#x200B;に戻り、「__買い物かごに追加__」ボタンをクリックします。これにより、データが Experience Platform に送信されます。 __Adobe Experience Platform デバッガー__&#x200B;拡張機能には、イベントの詳細が表示されます。
@@ -462,9 +459,9 @@ Experience Platform でデータストリームを作成するには、次の手
 
 ## 実装の詳細 {#implementation-details}
 
-[CIF Experience Platform コネクタ](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)は、[PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) プロジェクトの一部である [Adobe Commerce 用 Experience Platform コネクタ](https://marketplace.magento.com/magento-experience-platform-connector.html)に基づいて構築されています。
+The [CIFExperience Platformコネクタ](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) は [Adobe Commerceのデータ接続](https://marketplace.magento.com/magento-experience-platform-connector.html)( これは、 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) プロジェクト。
 
-PWA Studio プロジェクトを使用すると、Adobe Commerce または Magento Open Source を活用した Progressive Web Application（PWA）ストアフロントを作成できます。プロジェクトには、ビジュアルコンポーネントにロジックを追加するための [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) というコンポーネントライブラリも含まれています。[Peregrin ライブラリ](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/)には、Experience Platform とシームレスに統合するために [Experience Platform コネクタ](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)で使用されるカスタム React フックも用意されています。
+PWA Studio プロジェクトを使用すると、Adobe Commerce または Magento Open Source を活用した Progressive Web Application（PWA）ストアフロントを作成できます。プロジェクトには、ビジュアルコンポーネントにロジックを追加するための [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) というコンポーネントライブラリも含まれています。The [Peregrin ライブラリ](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) また、は、 [CIFExperience Platformコネクタ](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) とExperience Platformをシームレスに統合
 
 
 ## サポートされているイベント {#supported-events}
