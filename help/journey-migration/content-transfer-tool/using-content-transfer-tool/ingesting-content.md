@@ -2,10 +2,10 @@
 title: コンテンツの取り込みCloud Service
 description: Cloud Acceleration Manager を使用して、移行セットから宛先Cloud Serviceインスタンスにコンテンツを取り込む方法を説明します。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 250682b96e2eaa2ed872e6f626c0a13dc19720f2
 workflow-type: tm+mt
-source-wordcount: '2275'
-ht-degree: 45%
+source-wordcount: '2313'
+ht-degree: 44%
 
 ---
 
@@ -78,7 +78,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="追加取り込み"
->abstract="前回のコンテンツ転送アクティビティ以降に変更されたコンテンツを移動するには、追加取り込み機能を使用します。取り込みが完了したら、ログを調べて、エラーや警告がないか確認します。エラーが発生した場合は、報告された問題を解決するかアドビカスタマーケアに連絡して、すぐに対処してください。"
+>abstract="追加機能を使用して、前回のコンテンツ転送アクティビティ以降に変更されたコンテンツを移動します。 取り込みが完了したら、ログを調べて、エラーや警告がないか確認します。エラーが発生した場合は、報告された問題を解決するかアドビカスタマーケアに連絡して、すぐに対処してください。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ja" text="ログの表示"
 
 コンテンツ転送ツールには、 *トップアップ* 移行セットの これにより、移行セットを変更して、前の抽出以降に変更されたコンテンツのみを含めることができ、再度すべてのコンテンツを抽出する必要がなくなります。
@@ -93,6 +93,12 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
 ## トラブルシューティング {#troubleshooting}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_ingestion_troubleshooting"
+>title="コンテンツ取り込みのトラブルシューティング"
+>abstract="取り込みログとドキュメントを参照して、取り込みが失敗する一般的な原因に関する解決策を見つけ、問題を修正する方法を見つけて、取り込みを再実行します。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=ja" text="コンテンツ転送の検証"
 
 ### CAM が移行トークンを取得できない {#cam-unable-to-retrieve-the-migration-token}
 
