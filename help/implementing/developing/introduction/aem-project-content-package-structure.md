@@ -4,7 +4,7 @@ description: Adobe Experience Manager as a Cloud Service へのデプロイメ�
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: ht
-source-wordcount: '2918'
+source-wordcount: '2859'
 ht-degree: 100%
 
 ---
@@ -324,7 +324,7 @@ Maven の依存関係を追加する場合は、Maven の標準的な手法に�
 
 ## POM XML スニペット {#pom-xml-snippets}
 
-上記の推奨事項に合わせて Maven プロジェクトに追加できる Maven `pom.xml` 設定スニペットを以下に示します。
+上記のレコメンデーションに合わせて Maven プロジェクトに追加できる Maven `pom.xml` 設定スニペットを以下に示します。
 
 ### パッケージタイプ {#xml-package-types}
 

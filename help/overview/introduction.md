@@ -4,7 +4,7 @@ description: Adobe Experience Manager（AEM）as a Cloud Service の概要。
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: ht
-source-wordcount: '632'
+source-wordcount: '624'
 ht-degree: 100%
 
 ---
