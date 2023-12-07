@@ -2,9 +2,9 @@
 title: 相違点と新機能 - Adobe Experience Manager as a Cloud Service
 description: 相違点と新機能 - Adobe Experience Manager（AEM）as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: d4502c7558fca7ecee89b2ce9429fd1c749d8e92
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1883'
 ht-degree: 93%
 
 ---
