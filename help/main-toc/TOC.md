@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d3af2812e4f9e50937fbefbf9a0fb67004a460a9
+source-git-commit: 021fa3631aae7aa202c544deb3685daf4dc71aa7
 workflow-type: tm+mt
-source-wordcount: '4429'
+source-wordcount: '4434'
 ht-degree: 93%
 
 ---
@@ -543,6 +543,7 @@ ht-degree: 93%
       + [タグを管理](/help/assets/tagging-management-assets-view.md)
    + ベストプラクティス{#best-practices}
       + [検索のベストプラクティス](/help/assets/search-best-practices.md)
+      + [メタデータの管理とベストプラクティス](/help/assets/metadata-best-practices.md)
    + Adobe Workfront との統合 {#integrations}
       + [ [!DNL Adobe Workfront] との統合](/help/assets/workfront-integrations.md)
       + [アセットメタデータマッピングの設定](/help/assets/configure-asset-metadata-mapping.md)
