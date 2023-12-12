@@ -1,11 +1,11 @@
 ---
 title: アダプティブフォームの作成方法
 description: 情報の収集と処理を合理化するアダプティブフォームの作成方法を説明します。 また、フォームデータモデルに基づいてアダプティブフォームを作成する方法についても説明します。
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 90%

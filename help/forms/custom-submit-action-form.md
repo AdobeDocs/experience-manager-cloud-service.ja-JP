@@ -1,13 +1,13 @@
 ---
 title: アダプティブフォームのカスタム送信アクションの作成方法
 description: アダプティブフォームで、送信および処理データを遅らせてから REST エンドポイントに送信し、データストアに保存し、その他のカスタム機能を実行するためのカスタム送信アクションを作成する方法を説明します。
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1670'
 ht-degree: 100%
 
 ---

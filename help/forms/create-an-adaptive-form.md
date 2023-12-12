@@ -1,17 +1,17 @@
 ---
 title: アダプティブフォームの作成方法
 description: モバイルレスポンシブアダプティブFormsの作成方法については、このチュートリアルを参照してください。 これらのフォームはデバイス間でシームレスに適応し、スムーズなエクスペリエンスを実現します。
-keywords: アダプティブForms，モバイルForms，レスポンシブForms,HTML5 Forms
+keywords: アダプティブForms、レスポンシブForms、HTML5 Forms
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
-source-wordcount: '2675'
-ht-degree: 91%
+source-wordcount: '2673'
+ht-degree: 90%
 
 ---
 

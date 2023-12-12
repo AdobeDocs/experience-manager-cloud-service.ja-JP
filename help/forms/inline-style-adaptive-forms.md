@@ -1,11 +1,11 @@
 ---
 title: アダプティブフォームのコンポーネントにインラインスタイルを適用する方法
 description: アダプティブフォームにカスタムスタイルを適用する方法を学び、アダプティブフォームの個々のコンポーネントにインライン CSS プロパティを適用する方法も説明します。
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 56%

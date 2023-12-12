@@ -1,11 +1,11 @@
 ---
 title: レイアウトモードを使用してアダプティブフォームのコンポーネントのサイズを変更する方法を教えてください。
 description: AEM Formsコンポーネントの位置の定義、レイアウトモードへのアクセス、コンポーネントのサイズ変更、パネルのサイズ変更およびパネルの複数列レイアウトの定義について説明します。
-feature: Adaptive Forms
 role: User
 level: Intermediate
+feature: Adaptive Forms, Foundation Components
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 76%
