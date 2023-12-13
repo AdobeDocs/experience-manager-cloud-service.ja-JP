@@ -3,14 +3,14 @@ title: 永続的な GraphQL クエリ
 description: Adobe Experience Manager as a Cloud Service で GraphQL クエリを永続化してパフォーマンスを最適化する方法を説明します。クライアントアプリケーションで HTTP GET メソッドを使用して永続的クエリをリクエストでき、応答を Dispatcher および CDN レイヤーにキャッシュできるので、最終的にクライアントアプリケーションのパフォーマンスが向上します。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: ef6138af1735dc7aecbc4210a3fe9983d73348dd
 workflow-type: tm+mt
 source-wordcount: '1656'
 ht-degree: 97%
 
 ---
 
-# 永続的な GraphQL クエリ {#persisted-queries-caching}
+# 永続的な GraphQL クエリ {#persisted-graphql-queries}
 
 永続的なクエリは、Adobe Experience Manager（AEM）as a Cloud Service サーバーで作成および保存される GraphQL クエリです。永続的なクエリは、クライアントアプリケーションから GET リクエストでリクエストできます。GET リクエストの応答は、Dispatcher および CDN レイヤーでキャッシュできるので、最終的には、要求元のクライアントアプリケーションのパフォーマンスが向上します。これは、標準の GraphQL クエリとは異なります。標準クエリは、応答を簡単にはキャッシュできない POST リクエストを使用して実行されます。
 
