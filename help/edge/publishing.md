@@ -2,9 +2,9 @@
 title: Edge Delivery Services用コンテンツの公開
 description: コンテンツの公開がEdge Delivery Servicesと連携する仕組みと、AEMコンテンツをEdge Delivery Servicesと共に公開する方法について説明します。
 feature: Edge Delivery Services
-source-git-commit: f6e1c5de57ee0297abdf6b03faf550a266dfac32
+source-git-commit: e3bbcfa3fcef1ed1e5b6cf2da5a17c7e636b9539
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Edge Delivery Servicesを使用すれば、コンテンツソースに関係なく、コンテンツの公開がシームレスに行われます。
 
-* ドキュメントベースのコンテンツ — 詳しくは、 [セクションを公開](https://www.aem.live/docs/#publish) Edge Delivery Servicesドキュメント。
+* ドキュメントベースのコンテンツ — 詳しくは、 [セクションを公開](/help/edge/docs/authoring.md) Edge Delivery Servicesドキュメント。
 * AEMコンテンツ — 詳しくは、以下を参照してください。
 
 ## AEMからのフローの公開 {#publishing-flow}

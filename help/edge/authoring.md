@@ -2,9 +2,9 @@
 title: Edge Delivery Services用コンテンツのオーサリング
 description: コンテンツのオーサリングがEdge Delivery Servicesと連携する方法、およびEdge Delivery Servicesと共にAEMコンテンツをオーサリングする方法について説明します。
 feature: Edge Delivery Services
-source-git-commit: f6e1c5de57ee0297abdf6b03faf550a266dfac32
+source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '461'
 ht-degree: 14%
 
 ---
@@ -21,7 +21,7 @@ Edge Delivery Servicesを使用すると、オーサリングが簡単で、高�
 
 ドキュメントベースのオーサリングの場合、Microsoft Word や Google Docs など、様々なソースを使用できます。これらのソースからのドキュメントは、web サイト上のページになります。見出し、リスト、画像、フォント要素、ビデオはすべて、初期ソースから web サイトに転送できます。SEO 用にメタデータを追加したり、ブロックを使用して構造化コンテンツを操作したり、機能を追加したりできます。
 
-ドキュメントベースのオーサリングについて詳しくは、 [このドキュメントは、Edge Delivery Servicesドキュメントに記載されています。](https://www.aem.live/docs/authoring)
+ドキュメントベースのオーサリングについて詳しくは、 [このドキュメントは、Edge Delivery Servicesドキュメントに記載されています。](/help/edge/docs/authoring.md)
 
 ## ユニバーサルエディターオーサリング {#universal-editor}
 
@@ -40,7 +40,7 @@ AEM as a Cloud ServiceでEdge Delivery Servicesを使用する場合、最も基
    * コンテンツはAEMに保存されたままです。
    * AEMは、取り込みに必要なセマンティックHTMLをレンダリングします。
    * コンテンツがEdge Delivery Servicesに公開される。
-1. [Edge Delivery Services](https://www.aem.live/home) 100% Lighthouse のスコアを確認します。
+1. [Edge Delivery Services](/help/edge/developer/keeping-it-100.md) 100% Lighthouse のスコアを確認します。
 
 ブロックは、ページの基本的な構成要素で、Edge Delivery Servicesが配信します。 作成者は、Adobeが標準として提供するデフォルトブロック、または開発者がプロジェクト用にカスタマイズしたブロックから選択できます。
 
