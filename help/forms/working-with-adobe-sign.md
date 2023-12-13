@@ -6,10 +6,10 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: e81da7414335e00411942adeb41978d39f172b52
 workflow-type: tm+mt
-source-wordcount: '3131'
-ht-degree: 90%
+source-wordcount: '3242'
+ht-degree: 87%
 
 ---
 
@@ -160,7 +160,7 @@ AEM [!DNL Forms] の 1 つのインスタンスに対して、複数の [!DNL Ad
 
 Cloud Service と署名する順序を選択するには：
 
-![Cloud-service](assets/cloud-service.png)
+![Cloud-service](/help/forms/assets/adobe-sign-cloud-service.png)
 
 1. コンテンツブラウザーで、「 」を選択します。 **[!UICONTROL フォームコンテナ]**&#x200B;をクリックし、 **[!UICONTROL 設定]** ![設定](assets/Smock_Wrench_18_N.svg) アイコン。 この操作により、アダプティブフォームのコンテナプロパティを表示するプロパティブラウザーが開きます。
 1. このプロパティブラウザーで「**[!UICONTROL 電子サイン]**」アコーディオンを展開し、「**[!UICONTROL Adobe Sign を有効にする]**」オプションを選択します。この操作により、アダプティブフォームに対して [!DNL Adobe Sign] が有効になります。
@@ -170,6 +170,10 @@ Cloud Service と署名する順序を選択するには：
 
    ドロップダウンリストには、 `global` ツール/のフォルダー **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. また、ドロップダウンリストには、選択したCloud Serviceー内に存在するフォルダーが一覧表示されます。 **[!UICONTROL 設定コンテナ]** フィールドに値を入力する必要があります。
 
+1. 送信アクションを設定するオプションを選択します。 **[!UICONTROL フォームを送信]**. 次の 2 つのオプションのいずれかを選択できます。
+   * **フォームを送信する（および署名に関する契約を送信する）**：このオプションでは、フォームを直ちに送信し、受信者に署名用のフォームを送信します。
+   * **フォームを送信します（各受信者が署名式を完了した後）**：このオプションでは、すべての署名者が署名プロセスを完了した後でのみ、Adaptive Formsを送信します。 この間隔を設定して、すべての署名者の署名ステータスを確認できます。 詳しくは、  [設定 [!DNL Adobe Acrobat Sign] scheduler](/help/forms/adobe-sign-integration-adaptive-forms.md#configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status).
+
 1. 「**[!UICONTROL 受信者の署名順序]**」ドロップダウンから、署名順序を選択します。受信者は、アダプティブフォームを&#x200B;**[!UICONTROL 連続]**&#x200B;して（指定順に）署名することも、**[!UICONTROL 同時]**&#x200B;に（順不同で）署名することもできます。
 
    順に署名する場合は、Adobe Sign 契約書は一度に 1 人の受信者に送られます。割り当てられたアクションを受信者が完了すると、契約書が次の受信者に送信されます。以下、同様の処理が繰り返されます。
@@ -177,6 +181,10 @@ Cloud Service と署名する順序を選択するには：
    すべての受信者が同時にAdobe Sign契約を受け取り、相互に並行して行動できます。
 
 1. 「契約 ID」フィールドを使用して、bindref を契約 ID（agreementId）に関連付けます。これにより、スキーマベースフォームの送信データの afBoundData セクションに契約 ID が追加されます。すべての Adobe Sign 対応フォームの送信済みデータの afSubmissionInfo セクションにも契約 ID が追加されます。カスタムコードを使用して、契約ステータスのトラッキングに契約 ID を使用できます（カスタム実装が必要です）。
+
+   >[!NOTE]
+   >
+   > フォームデータモデルを使用してアダプティブフォームを作成すると、ダイアログボックスに契約 ID フィールドが表示されます。
 
 1. [アダプティブフォームに受信者を追加する](working-with-adobe-sign.md#addsignerstoanadaptiveform) をクリックし、「完了」を選択します。 ![保存](assets/save_icon.svg) アイコンをクリックして変更を保存します。
 

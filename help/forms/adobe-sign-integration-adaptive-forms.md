@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 821c243ab2d8ce1468c80c36d01b5c4c8f2bec76
 workflow-type: tm+mt
-source-wordcount: '2001'
-ht-degree: 84%
+source-wordcount: '2033'
+ht-degree: 80%
 
 ---
 
@@ -231,9 +231,12 @@ Adobe Acrobat Sign for Government Solutions チームには、AEM Forms と Adob
 
 [アダプティブフォーム](working-with-adobe-sign.md)または [AEM ワークフロー](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)に Adobe Acrobat Sign フィールドを追加できるようになりました。[!DNL Adobe Acrobat Sign] に対して有効化するすべてのアダプティブフォームに、クラウドサービス設定に使用する設定コンテナを必ず追加してください。設定コンテナは、アダプティブフォームのプロパティから指定できます。
 
-## （AEM ワークフローのみ）[!DNL Adobe Acrobat Sign]スケジューラーを設定して、署名ステータスを同期します  {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
+## [!DNL Adobe Acrobat Sign] スケジューラーを設定して署名ステータスを同期する {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
-[!DNL Adobe Acrobat Sign] ワークフローステップを使用してアダプティブフォームに署名する場合、ワークフローステップの設定に応じて、フォームを順番に署名者に渡すか、すべての署名者に同時送信することができます。[!DNL Adobe Acrobat Sign] が有効なアダプティブフォームは、すべての署名者が署名プロセスを完了した後にのみ、Experience Manager Forms サーバーに送信されます。
+AEM Formsas a Cloud Serviceのは、定義された間隔で署名者のステータスを確認するスケジューラーサービスを提供します。 スケジューラーサービスを設定するシナリオは、次のとおりです。
+
+* 次を使用する場合、 [フォームを送信します（各受信者が署名式を完了した後）](/help/forms/working-with-adobe-sign.md#select-adobe-sign-cloud-service-and-signing-order) ドキュメントに署名する場合、すべての署名者がフォームに署名した後でのみフォームが送信されます。
+* を使用する場合、 [AEM Workflow での署名ステップ](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step) ドキュメントに署名するには、署名ステップは、すべての署名者がドキュメントに署名するのを待ってから、ワークフローの次のステップに進みます。
 
 デフォルトでは、[!DNL Adobe Acrobat Sign] スケジューラーサービスは、24 時間ごとに署名者の応答を確認（ポーリング）します。現在の環境に合わせて、このデフォルト値を変更することができます。
 
