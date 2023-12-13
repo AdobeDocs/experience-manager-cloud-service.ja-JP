@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 46575e36a7037bee7c33c94748fc0fc92880ea87
+source-git-commit: 97f08d3474ad395d3228fb848a546927e6431050
 workflow-type: tm+mt
-source-wordcount: '4437'
-ht-degree: 93%
+source-wordcount: '4456'
+ht-degree: 92%
 
 ---
 
@@ -755,8 +755,12 @@ ht-degree: 93%
    + [移行](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
 + Edge 配信サービス {#edge-delivery}
-   + [Edge 配信の概要](/help/edge/overview.md)
+   + [AEMとEdge Delivery Services](/help/edge/overview.md)
    + [エッジ配信の使用](/help/edge/using.md)
+   + [エッジ配信用コンテンツのオーサリング](/help/edge/authoring.md)
+   + [エッジ配信用コンテンツの公開](/help/edge/publishing.md)
+   + [エッジ配信用の開発](/help/edge/developing.md)
+   + [既存のプロジェクトと Edge 配信](/help/edge/existing-projects.md)
 + ヘッドレス {#headless}
    + [ヘッドレス CMS とは](/help/headless/what-is-headless.md)
    + [AEM ヘッドレスの概要](/help/headless/introduction.md)
