@@ -2,10 +2,10 @@
 title: コンテンツの取り込みCloud Service
 description: Cloud Acceleration Manager を使用して、移行セットから宛先Cloud Serviceインスタンスにコンテンツを取り込む方法を説明します。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: a66724cf76e4562710e458aeeea0d54ea9efb9aa
+source-git-commit: b674b3d8cd89675ed30c1611edec2281f0f1cb05
 workflow-type: tm+mt
-source-wordcount: '2315'
-ht-degree: 42%
+source-wordcount: '2392'
+ht-degree: 40%
 
 ---
 
@@ -35,7 +35,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
       * 移行セットは、無操作状態が長時間続くと有効期限が切れるので、抽出が実行された後は、比較的早く取り込みが行われることが期待されます。詳しくは、[移行セットの有効期限](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry)を確認してください。
 
    >[!TIP]
-   > 抽出が現在実行中の場合は、ダイアログに抽出が示されます。 抽出が正常に完了すると、取り込みが自動的に開始されます。 抽出が失敗または停止した場合、取り込みジョブは取り消されます。
+   > 抽出が実行中の場合は、ダイアログに抽出が示されます。 抽出が正常に完了すると、取り込みが自動的に開始されます。 抽出が失敗または停止した場合、取り込みジョブは取り消されます。
 
    * **宛先：** 宛先環境を選択します。 この環境では、移行セットのコンテンツが取り込まれます。
       * 取り込みは、Rapid Development Environment(RDE) の宛先をサポートしていないので、ユーザーがアクセスできる場合でも、目的の宛先として表示されません。
@@ -45,17 +45,17 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
       * ソースが `Author`を使用する場合は、 `Author` ターゲット上の層。 同様に、ソースが `Publish`の場合、ターゲットは `Publish` 同様に。
 
    >[!NOTE]
-   > ターゲット層が `Author` の場合、オーサーインスタンスは取り込み期間中にシャットダウンされ、ユーザー（作成者やメンテナンスを実行中のユーザーなど）が使用できなくなります。この理由は、システムを保護し、失われたり取り込みの競合を引き起こす可能性のある変更を防ぐためです。チームがこの事実を認識していることを確認してください。また、オーサーの取り込み中は環境が休止状態と表示されることに注意してください。
+   > ターゲット層が `Author` の場合、オーサーインスタンスは取り込み期間中にシャットダウンされ、ユーザー（作成者やメンテナンスを実行中のユーザーなど）が使用できなくなります。これは、システムを保護し、取り込みの競合を引き起こす可能性のある変更を防ぐためです。 チームがこの事実を認識していることを確認してください。また、オーサーの取り込み中は環境が休止状態と表示されることに注意してください。
 
    * **ワイプ：** を選択します。 `Wipe` 値
       * The **ワイプ** 「 」オプションは、インジェストの開始点を設定します。 次の場合 **ワイプ** を有効にすると、そのすべてのコンテンツを含む宛先が、Cloud Manager で指定されたAEMのバージョンにリセットされます。 有効にしない場合、宛先は現在のコンテンツを出発点として維持します。
-      * このオプションは、 **NOT** は、コンテンツの取り込みの実行方法に影響します。 取り込みでは常にコンテンツ置換戦略を使用し、 _not_ コンテンツ結合戦略で、両方で **ワイプ** および **ワイプしない** 場合、移行セットを取り込むと、宛先上の同じパスにあるコンテンツが上書きされます。 例えば、移行セットに `/content/page1` と宛先には既に次が含まれています： `/content/page1/product1`を含めない場合、取り込みにより、 `page1` パスとそのサブページ ( `product1`をクリックし、移行セット内のコンテンツに置き換えます。 つまり、 **ワイプしない** 管理する必要のあるコンテンツを含む宛先への取り込み。
+      * このオプションは、 **NOT** は、コンテンツの取り込みの実行方法に影響します。 取り込みでは常にコンテンツ置換戦略を使用し、 _not_ コンテンツ結合戦略で、両方で **ワイプ** および **ワイプしない** 場合、移行セットを取り込むと、宛先上の同じパスにあるコンテンツが上書きされます。 例えば、移行セットに `/content/page1` と宛先には既に次が含まれています： `/content/page1/product1`を含めない場合、取り込みによって `page1` パスとそのサブページ ( `product1`をクリックし、移行セット内のコンテンツに置き換えます。 つまり、 **ワイプしない** 管理する必要のあるコンテンツを含む宛先への取り込み。
 
    >[!IMPORTANT]
    > 設定が **ワイプ** を有効にすると、ターゲットリポジトリインスタンスに対するユーザー権限を含む、既存のCloud Service全体がリセットされます。 このリセットは、管理者ユーザーが **管理者** 取り込みを開始するには、グループに追加し、そのユーザーを administrators グループに再度追加する必要があります。
 
    * **プリコピー：** を選択します。 `Pre-copy` 値
-      * オプションのプリコピー手順を実行すると、取り込みを大幅に高速化できます。 詳しくは、[AzCopy で取り込む](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy)を参照してください。
+      * オプションのプリコピー手順を実行して、取り込みを大幅に高速化できます。 詳しくは、[AzCopy で取り込む](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy)を参照してください。
       * 事前コピーを使用した取り込みを使用する場合（S3 または Azure データストアの場合）、を実行することをお勧めします `Author` 最初に単独で取り込みます。 これにより、 `Publish` 取り込み。後で実行する場合に実行します。
 
    >[!IMPORTANT]
@@ -78,7 +78,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="追加取り込み"
->abstract="追加機能を使用して、前回のコンテンツ転送アクティビティ以降に変更されたコンテンツを移動します。 取り込みが完了したら、ログを調べて、エラーや警告がないか確認します。エラーが発生した場合は、報告された問題を解決するかアドビカスタマーケアに連絡して、すぐに対処してください。"
+>abstract="追加機能を使用して、前回のコンテンツ転送アクティビティ以降に変更されたコンテンツを移動します。 取り込みが完了したら、ログでエラーや警告がないかを確認します。 エラーが発生した場合は、報告された問題を解決するかアドビカスタマーケアに連絡して、すぐに対処してください。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ja" text="ログの表示"
 
 コンテンツ転送ツールには、 *トップアップ* 移行セットの これにより、移行セットを変更して、前の抽出以降に変更されたコンテンツのみを含めることができ、再度すべてのコンテンツを抽出する必要がなくなります。
@@ -97,7 +97,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="コンテンツ取り込みのトラブルシューティング"
->abstract="取り込みログとドキュメントを参照して、取り込みが失敗する一般的な原因に関する解決策を見つけ、問題を修正する方法を見つけて、取り込みを再実行します。"
+>abstract="取り込みログとドキュメントを参照して、取り込みが失敗する一般的な理由と問題を修正する方法を見つけてください。 修正後は、取り込みを再度実行できます。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=ja" text="コンテンツ転送の検証"
 
 ### CAM が移行トークンを取得できない {#cam-unable-to-retrieve-the-migration-token}
@@ -132,14 +132,14 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 
 * AEM as a Cloud Service は環境の状態を維持し、様々な通常の理由で移行サービスの再起動が必要になる場合があります。そのサービスが再起動中の場合はサービスにアクセスできませんが、最終的には利用できるようになります。
 * インスタンス上で別のプロセスが実行されている可能性があります。例えば、 [AEMバージョンの更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=ja) 更新を適用中です。システムがビジー状態で、移行サービスが定期的に使用できない可能性があります。 その後、取り込みの開始を再試行できます。
-* Cloud Manager を使用して [IP 許可リストが適用されている](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)場合、Cloud Acceleration Manager が移行サービスに到達するのをブロックします。アドレスが動的なので、取り込み用に IP アドレスを追加することはできません。現在、唯一の解決策は、取り込みとインデックス作成プロセス中に IP許可リストを無効にすることです。
+* Cloud Manager を使用して [IP 許可リストが適用されている](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)場合、Cloud Acceleration Manager が移行サービスに到達するのをブロックします。アドレスが動的なので、取り込み用に IP アドレスを追加することはできません。現在、唯一の解決策は、取り込みとインデックス作成プロセス中に IP許可リストに加えるを無効にすることです。
 * 調査を要する他の理由がある場合があります。 取り込みまたはインデックス作成が引き続き失敗する場合は、Adobeカスタマーケアにお問い合わせください。
 
-### AEMバージョンの更新と取り込み
+### AEMバージョンの更新と取り込み {#aem-version-updates-and-ingestions}
 
 [AEMバージョンの更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html?lang=ja) は、最新のAEM as a Cloud Serviceバージョンを使用して最新の状態に保つために、環境に自動的に適用されます。 取り込みの実行時に更新がトリガーされると、環境の破損を含む予期しない結果が生じる可能性があります。
 
-「AEM Version Updates」が宛先プログラムでオンボーディングされている場合、取り込みプロセスは、キューを開始する前に無効にしようとします。 取り込みが完了すると、バージョンアップデータの状態が、取り込みが開始される前の状態に戻ります。
+「AEM Version Updates」が宛先プログラムでオンボーディングされている場合、取り込みプロセスは、キューを開始する前に無効にしようとします。 取り込みが完了すると、バージョンアップデータの状態が、取り込みが開始する前の状態に戻ります。
 
 >[!NOTE]
 >
@@ -153,7 +153,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 
 ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### 一意性制約違反による追加取り込み失敗
+### 一意性制約違反による追加取り込み失敗 {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 [追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)エラーの一般的な原因は、ノード ID の競合です。このエラーを識別するには、Cloud Acceleration Manager UI を使用して取り込みログをダウンロードし、次のようなエントリを探します。
 
@@ -165,7 +165,7 @@ AEM の各ノードには、一意の UUID が必要です。このエラーは�
 
 この競合は手動で解決する必要があります。コンテンツを参照する他のコンテンツに留意し、2 つのノードのうち、削除する必要があるノードをコンテンツに精通したユーザーが決定する必要があります。解決策として、問題のあるノードがなくても、追加抽出を再度行う必要が生じる場合があります。
 
-### 参照されているノードを削除できないことが原因で追加取り込みに失敗しました
+### 参照されているノードを削除できないことが原因で追加取り込みに失敗しました {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
 の別の一般的な原因 [追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure は、宛先インスタンス上の特定のノードに対するバージョンの競合です。 このエラーを識別するには、Cloud Acceleration Manager UI を使用して取り込みログをダウンロードし、次のようなエントリを探します。
 
@@ -175,11 +175,17 @@ AEM の各ノードには、一意の UUID が必要です。このエラーは�
 
 ソリューションでは、問題のあるノードがなくても、追加抽出を再び実行する必要が生じる場合があります。 または、問題のあるノードの小さな移行セットを作成し、「インクルードバージョン」を無効にします。
 
-ベストプラクティスは、 **ワイプしない** 取り込みは、バージョンを含む（つまり、「include versions」=true で抽出される）移行セットを使用して実行する必要があります。移行ジャーニーが完了するまで、宛先のコンテンツをできるだけ変更する必要があります。 そうしないと、これらの競合が発生する可能性があります。
+ベストプラクティスは、 **ワイプしない** 取り込みは、バージョンを含む移行セットを使用して実行する必要があります。移行ジャーニーが完了するまで、宛先のコンテンツをできる限り小さく変更することが重要です。 そうしないと、これらの競合が発生する可能性があります。
 
-### 取り込みの取り消し
+### ノードプロパティ値が大きいため取り込みに失敗しました {#ingestion-failure-due-to-large-node-property-values}
 
-実行中の抽出で作成された取り込みは、ソース移行セットとして処理され、その取り込みが成功するまで待ち、その時点で正常に開始します。 抽出が失敗または停止した場合、取り込みとそのインデックス作成ジョブは開始されませんが、取り消されます。 この場合は、抽出をチェックして失敗した理由を判断し、問題を修正して、再度抽出を開始します。 固定抽出を実行した後で、新しい取り込みをスケジュールできます。
+MongoDB に保存されるノードプロパティの値は 16 MB を超えることはできません。ノード値がサポートされているサイズを超えると、取り込みは失敗し、ログには `BSONObjectTooLarge` エラーが発生し、最大数を超えたノードを指定してください。 これは MongoDB の制限です。
+
+詳しくは、 `Node property value in MongoDB` 注意 [コンテンツ転送ツールの前提条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) すべての大きなノードを見つけるのに役立つ Oak ツールへのリンクと詳細情報。 サイズの大きいすべてのノードを修正したら、抽出と取り込みを再度実行します。
+
+### 取り込みの取り消し {#ingestion-rescinded}
+
+実行中の抽出で作成されたインジェスト。ソース移行セットは、抽出が成功するまで待ち、その時点で正常に開始します。 抽出が失敗または停止した場合、取り込みとそのインデックス作成ジョブは開始されませんが、取り消されます。 この場合は、抽出をチェックして失敗した理由を判断し、問題を修正して、再度抽出を開始します。 固定抽出を実行した後で、新しい取り込みをスケジュールできます。
 
 ## 次の手順 {#whats-next}
 
