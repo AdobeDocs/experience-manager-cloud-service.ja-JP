@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ac7af61751c3cf751a7370b454855c5361fabe02
+source-git-commit: acaf2371886b161ce5e8b9f9a9771267703bb32d
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 14%
+source-wordcount: '1278'
+ht-degree: 16%
 
 ---
 
@@ -41,12 +41,6 @@ ht-degree: 14%
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### アーリーアダプタープログラム {#sites-early-adopter}
-
-**次の条件を満たす場合に、 [Real User Monitoring(RUM) データ・サービス](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** AEMas a Cloud Serviceのクライアント側のコレクションを有効にする
-
-Real User Monitoring(RUM) データサービスは、ユーザーの操作をより正確に反映し、Web サイトのエンゲージメントを確実に測定できます。 これは、ページのパフォーマンスに関する高度なインサイトを得る絶好の機会です。 これは、Adobe管理 CDN またはAdobe管理以外の CDN のどちらを使用する場合にも便利です。 さらに、Adobeが管理していない CDN を使用するお客様の場合、自動トラフィックレポートをAdobeに対して有効にできるので、との間でトラフィックレポートを共有する必要がなくなりました。
-
-この新機能のテストとフィードバックの共有に関心がある場合は、に電子メールを送信してください。 `aemcs-rum-adopter@adobe.com`Adobe IDに関連付けられた電子メールアドレスから、実稼動、ステージ、開発環境のドメイン名と共に入力します。 Adobeの製品チームが Real User Monitoring(RUM) データサービスを有効にします。
 
 **[コンテンツフラグメント内の文字列の検索と置換](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**：コンテンツフラグメントコンソールを使用すると、複数のコンテンツフラグメントに表示される文字列を一度に置き換えて、コンテンツの速度を高めることができ、簡単で直感的な方法で置き換えることができます。
 

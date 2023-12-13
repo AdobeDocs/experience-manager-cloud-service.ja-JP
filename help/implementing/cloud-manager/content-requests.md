@@ -2,7 +2,7 @@
 title: Cloud Serviceコンテンツリクエストについて
 description: Adobeからコンテンツリクエストライセンスを購入している場合は、Adobe Experience Cloud as a Service が測定するコンテンツリクエストのタイプと、組織の Analytics レポートツールとの相違について説明します。
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 949f0ec1aa89fd05813bc9ffb02a75fb0ad84a32
+source-git-commit: e31b05f0cef6c5ca3a1c00b757eac013aa43bb90
 workflow-type: tm+mt
 source-wordcount: '2690'
 ht-degree: 4%
@@ -81,7 +81,7 @@ Cloud Serviceコンテンツリクエストは、データのサーバー側収�
 
 ## クライアント側コレクション {#cliendside-collection}
 
-## AEM as a Cloud Serviceの Real User Monitoring(RUM) {#real-user-monitoring-for-aem-as-a-cloud-service}
+### AEM as a Cloud Serviceの Real User Monitoring(RUM) {#real-user-monitoring-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >
