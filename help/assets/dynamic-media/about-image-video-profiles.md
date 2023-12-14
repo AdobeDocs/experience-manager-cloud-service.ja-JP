@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: f9f82c144e6f919ed9b82caf9e1bc0408a352fd6
+source-git-commit: 34038d954802b7f8e31441d5c5e4ea90380e7a20
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 85%
+ht-degree: 83%
 
 ---
 
@@ -44,7 +44,7 @@ Dynamic Media イメージプロファイルまたは Dynamic Media ビデオプ
 
 処理が初めて失敗したアセットに対して、再処理ワークフローを実行できます。イメージプロファイルやビデオプロファイルを編集していない場合や、イメージプロファイルやビデオプロファイルを既に適用している場合でも、アセットのフォルダーに対して再処理ワークフローをいつでも実行できます。
 
-オプションで、再処理ワークフローのバッチサイズを、デフォルトの 50 アセットから最大 1,000 アセットまで調整できます。フォルダーに対して「_Scene7：アセットを再処理_」ワークフローを実行すると、アセットは一括でグループ化された後、Dynamic Media サーバーに送信されて処理されます。処理の後、バッチセット全体の各アセットのメタデータが [!DNL Adobe Experience Manager] 上で更新されます。バッチサイズが大きい場合は、処理に遅延が生じる可能性があります。また、バッチサイズが小さすぎると、Dynamic Media サーバーへのラウンドトリップの数が多くなりすぎるおそれがあります。
+オプションで、再処理ワークフローのバッチサイズを、デフォルトの 50 アセットから最大 1,000 アセットまで調整できます。実行時に、 _Dynamic Media Reprocess_ フォルダーのワークフローでは、アセットは一括でグループ化され、Dynamic Mediaサーバーに送信されて処理されます。 処理の後、バッチセット全体の各アセットのメタデータが [!DNL Adobe Experience Manager] 上で更新されます。バッチサイズが大きい場合は、処理に遅延が生じる可能性があります。また、バッチサイズが小さすぎると、Dynamic Media サーバーへのラウンドトリップの数が多くなりすぎるおそれがあります。
 
 詳しくは、[再処理ワークフローのバッチサイズの調整](#adjusting-load)を参照してください。
 
