@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 475505fc8b5eb63c3563e8fabb28f515ff690393
+source-git-commit: a768eddbddb4b418b228839fdf5a9cdaf1488991
 workflow-type: tm+mt
-source-wordcount: '4456'
-ht-degree: 92%
+source-wordcount: '4545'
+ht-degree: 90%
 
 ---
 
@@ -761,6 +761,45 @@ ht-degree: 92%
    + [エッジ配信用コンテンツの公開](/help/edge/publishing.md)
    + [エッジ配信用の開発](/help/edge/developing.md)
    + [既存のプロジェクトと Edge 配信](/help/edge/existing-projects.md)
+   + Edge 配信アプリケーションの構築 {#build}
+      + [はじめに — 開発者向けチュートリアル](/help/edge/developer/tutorial.md)
+      + [プロジェクトの詳細な構造](/help/edge/developer/anatomy-of-a-franklin-project.md)
+      + [ブロックコレクション](/help/edge/developer/block-collection.md)
+      + [スプレッドシート](/help/edge/developer/spreadsheets.md)
+      + [Forms](/help/edge/developer/forms.md)
+      + [インデックス作成](/help/edge/developer/indexing.md)
+      + [100 を維持](/help/edge/developer/keeping-it-100.md)
+      + [マークアップ — セクション](/help/edge/developer/markup-sections-blocks.md)
+      + [Favicon](/help/edge/developer/favicon.md)
+      + [カスタムヘッダー](/help/edge/docs/custom-headers.md)
+      + [開発者向けのベストプラクティス](/help/edge/docs/dev-collab-and-good-practices.md)
+   + Edge 配信アプリケーションの公開 {#publish}
+      + [オーサリング](/help/edge/docs/authoring.md)
+      + [一括メタデータ](/help/edge/docs/bulk-metadata.md)
+      + [Slackボット](/help/edge/docs/slack.md)
+      + [プレースホルダー](/help/edge/docs/placeholders.md)
+      + [サイトマップ](/help/edge/developer/sitemap.md)
+      + [SharePoint Setup](/help/edge/docs/setup-customer-sharepoint.md)
+   + Edge 配信アプリケーションの起動 {#launch}
+      + [ライブチェックリストに移動](/help/edge/docs/go-live-checklist.md)
+      + [プッシュの無効化](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
+      + [Cloudflare Worker の設定](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
+      + [Akamai 設定](/help/edge/docs/byo-cdn-akamai-setup.md)
+      + [Fastly 設定](/help/edge/docs/byo-cdn-fastly-setup.md)
+      + [リダイレクト](/help/edge/docs/redirects.md)
+   + エッジ配信のリソース {#resources}
+      + Sidekick {#sidekick}
+         + [使用Sidekick](/help/edge/docs/sidekick.md)
+         + [拡張機能のインストール](/help/edge/docs/sidekick-extension.md)
+         + [プロジェクトコンフィギュレータ](https://www.aem.live/tools/sidekick/)
+         + [Sidekickライブラリ](/help/edge/docs/sidekick-library.md)
+      + [FAQ](/help/edge/docs/faq.md)
+      + [管理 API](https://www.aem.live/docs/admin.html)
+      + [status.hlx.live](https://status.hlx.live/history)
+      + ツール {#tools}
+         + [SidekickChrome 拡張機能](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [Github ボット](https://github.com/apps/aem-code-sync)
+         + [監査ログ](/help/edge/docs/auditlog.md)
 + ヘッドレス {#headless}
    + [ヘッドレス CMS とは](/help/headless/what-is-headless.md)
    + [AEM ヘッドレスの概要](/help/headless/introduction.md)
