@@ -4,9 +4,9 @@ description: アダプティブフォームには、複数の送信アクショ�
 keywords: アダプティブフォームの送信アクションの選択、アダプティブフォームの sharepoint リストへの接続、アダプティブフォームの sharepoint ドキュメントライブラリへの接続、アダプティブフォームのフォームデータモデルへの接続の方法
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: c2bf362a9949b3d6d427a28821056a0cc9edfa85
 workflow-type: tm+mt
-source-wordcount: '4114'
+source-wordcount: '4102'
 ht-degree: 87%
 
 ---
@@ -171,8 +171,6 @@ AEM FormsをMicrosoft® Sharepoint ドキュメントライブラリストレー
 データを保存するフォルダー構造は `/folder_name/form_name/year/month/date/submission_id/data` です。
 
 ### アダプティブフォームのMicrosoft® SharePointリストへの接続 {#connect-af-sharepoint-list}
-
-<span class="preview"> これはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja?cloud-environments). </span>
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 

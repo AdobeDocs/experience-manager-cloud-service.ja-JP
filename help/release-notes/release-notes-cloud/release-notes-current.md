@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: acaf2371886b161ce5e8b9f9a9771267703bb32d
+source-git-commit: a5121436b2e48302fcf14478764aede1495e089c
 workflow-type: tm+mt
-source-wordcount: '1278'
-ht-degree: 16%
+source-wordcount: '769'
+ht-degree: 24%
 
 ---
 
@@ -26,72 +26,53 @@ ht-degree: 16%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.11.0）のリリース日は 2023年11月30日です。次回の機能リリース（2023.12.0）は 2023年12月14日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.12.0）のリリース日は 2023年12月14日です。次回の機能リリース（2024.1.0）は 2023年1月25日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
 最新のメンテナンスリリースノートについては、[こちら](/help/release-notes/maintenance/latest.md)をご覧ください。
 
-## リリースビデオ {#release-video}
+<!-- 
 
-2023.11.0リリースで追加された機能の概要については、 2023 年 11 月リリースの概要ビデオをご覧ください。
+## Release Video {#release-video}
+
+Have a look at the December 2023 Release Overview video for a summary of the features added in the 2023.12.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### アーリーアダプタープログラム {#sites-early-adopter}
 
-**[コンテンツフラグメント内の文字列の検索と置換](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**：コンテンツフラグメントコンソールを使用すると、複数のコンテンツフラグメントに表示される文字列を一度に置き換えて、コンテンツの速度を高めることができ、簡単で直感的な方法で置き換えることができます。
+**次の条件を満たす場合に、 [Real User Monitoring(RUM) データ・サービス](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** AEMas a Cloud Serviceのクライアント側のコレクションを有効にする
 
-![検索と置換](/help/sites-cloud/administering/content-fragments/assets/cf-managing-find-replace.png)
+Real User Monitoring(RUM) データサービスは、ユーザーの操作をより正確に反映し、Web サイトのエンゲージメントを確実に測定できます。 これは、ページのパフォーマンスに関する高度なインサイトを得る絶好の機会です。 これは、Adobe管理 CDN またはAdobe管理以外の CDN のどちらを使用する場合にも便利です。 さらに、Adobeが管理していない CDN を使用するお客様の場合、自動トラフィックレポートをAdobeに対して有効にできるので、との間でトラフィックレポートを共有する必要がなくなりました。
 
-この機能を試して、フィードバックを共有したい場合は、 電子メールの送信先 **aemcs-headless-adopter@adobe.com** アーリーアダプタープログラムの詳細については、公式電子メール ID を参照してください。
+この新機能のテストとフィードバックの共有に関心がある場合は、に電子メールを送信してください。 `aemcs-rum-adopter@adobe.com`Adobe IDに関連付けられた電子メールアドレスから、実稼動、ステージ、開発環境のドメイン名と共に入力します。 Adobeの製品チームが Real User Monitoring(RUM) データサービスを有効にします。
+
+
+<!--
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### アセットビューの新機能 {#assets-view-features}
+### New Features in Admin View {#admin-view-features}
 
-* **AEM Assetsの埋め込みAdobe Expressエディター**:Express へのアクセス権を持つユーザーは、Adobe ExpressとAdobe Fireflyの画像編集および作成ツールをAEM Assets内で直接利用できるようになり、コンテンツの再利用を改善し、コンテンツ速度を向上させることができます。
 
-  ![フォルダーにメタデータフォームを割り当て](/help/assets/assets/adobe-express-aem-assets.png)
-
-<!--
 
 * **Smart tags blocklist**: Experience Manager Assets now enables you to define a list of blocked tags. These tags are automatically removed from the auto-generated smart tags when you upload assets to the repository. This capability performs tags governance and saves a lot of time as you can add a tag to the block list and AEM Assets automatically excludes it from the list of tags for any of the assets that are added to the repository.
 
   ![storage usage insights](/help/assets/assets/block-tags.png)
 
+
+**Video Preview**: AEM Assets now generates preview renditions of all supported video formats by default, without the need to configure a processing profile.
+
 -->
-
-
-* **インサイトのストレージ使用状況レポート**：管理者は、インサイトの一部として使用できるストレージ使用量レポートを表示できるようになりました。
-
-  ![ストレージ使用状況インサイト](/help/assets/assets/storage-usage-insights.png)
-
-* **最初のホームページ設定を検索**:Experience Manager Assetsでは、組織に合わせてホームページのエクスペリエンスを設定できるようになりました。 ホームページで最初に検索を選択した場合は、組織の検索バーの配置、背景画像、ロゴを設定できます。
-
-  ![最初の設定を検索](/help/assets/assets/search-first-configuration.png)
-
-### 管理ビューのプレリリースの新機能 {#admin-view-features-prerelease}
-
-**ビデオプレビュー**:AEM Assetsでは、処理プロファイルを設定する必要なく、デフォルトで、サポートされるすべてのビデオ形式のプレビューレンディションを生成するようになりました。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### の新機能[!DNL Experience Manager Forms] {#forms-features}
-
-* **[チェックボックスコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**：コアコンポーネントに基づくアダプティブFormsで、チェックボックスコンポーネントを含めることができるようになりました。 ユーザーは、特定のオプションの選択または選択解除を行い、バイナリ選択をおこなうことができます。 これは通常、小さなボックスとして表示され、クリックまたはタップすると、2 つの状態（チェック済みとオフ）を切り替えることができます。 このチェックボックスは、はい/いいえ、真/偽の選択肢を提示するために使用される一般的なフォーム要素です。
-
-* **[利用条件コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**：コアコンポーネントに基づくアダプティブFormsで、利用条件コンポーネントを含めることができるようになりました。 フォーム作成者は、フォーム内に特定のセクションを導入できます。このセクションには、サービス、製品、プラットフォームの使用に関連する利用条件、または法的契約が表示されます。 このコンポーネントは、フォームを送信することで、同意するルール、規制、義務をユーザーに通知するように設計されています。
-
-  ![チェックボックス、利用条件、および「垂直」タブのコンポーネント](/help/forms/assets/forms-components.png)
-
-* **[垂直タブコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**：コアコンポーネントに基づくアダプティブFormsで、フォームコンテンツをタブの縦並びのリストに整理でき、構造化されたナビゲーション可能なレイアウトが提供されるようになりました。 フォーム内で縦置きのタブを使用すると、ナビゲーションが簡単になり、フォームコンテンツの構成が改善され、特にフォームに複数のセクションや複雑な情報が含まれる場合に、ユーザーの操作性が向上します。
-
-
-
-### [!DNL Forms] プレリリースの新機能 {#prerelease-features-forms}
+### の新機能 [!DNL Experience Manager Forms] {#forms-features}
 
 * **[Microsoft® SharePointリストとのアダプティブFormsの接続](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**:AEM Formsは、フォームデータを直接SharePointリストに送信するための OOTB 統合機能を備えており、SharePointのリスト機能を使用できます。 Microsoft SharePoint List をフォームデータモデルのデータソースとして設定し、 **フォームデータモデルを使用して送信** アダプティブフォームをSharePointリストに接続するための送信アクション。
 
@@ -115,17 +96,9 @@ ht-degree: 16%
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
-### WAF トラフィックフィルタールールをライセンスできるようになりました。 {#cdn-waf-license}
+### CDN 設定アーリーアダプタープログラム {#cdn-config-early-adopter}
 
-トラフィックフィルタールールは 10 月にリリースされ、 Sites およびFormsのお客様が既に利用できるルールを補うために、今年後半に Web Application Firewall (WAF) ルールの特殊なカテゴリが利用可能になることに注意する必要があります。 WAF-DDoS Protection 製品のライセンスを取得できるようになりました。
-
-ライセンスを取得したら、これらの高度な WAF ルールを Cloud Manager 設定パイプラインを使用して CDN にデプロイし、Web 攻撃に対する保護をさらに強化できます。
-
-お読みください [トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)（WAF を含む） WAF-DoS 保護または拡張セキュリティのライセンスについては、AEMアカウントチームにお問い合わせください。
-
-### CDN 設定のアーリーアダプタープログラム {#cdn-config-early-adopter}
-
-最近リリースされたに加えて [トラフィックフィルタールール（WAF を含む）](/help/security/traffic-filter-rules-including-waf.md)を使用すると、設定パイプラインを使用して他のタイプの CDN 設定を宣言してデプロイする機会があります。 以下を含め、お客様の使用例についてお知らせします。
+最近リリースされたに加えて [トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)( オプションでライセンス可能な Web アプリケーションファイアウォール (WAF) ルールを含む )、設定パイプラインを使用して他のタイプの CDN 設定を宣言し、デプロイする機会があります。 以下を含め、お客様の使用例についてお知らせします。
 * 301/302クライアントサイドのリダイレクト
 * エッジでのリクエストの任意のオリジンへのプロキシ処理
 * URL 変換
@@ -143,9 +116,3 @@ Cloud Manager の月次リリースの完全なリストは、[こちら](/help/
 ## 移行ツール {#migration-tools}
 
 移行ツールのリリースの完全なリストは、[こちら](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)で確認できます
-
-## 既知の問題 {#known-issues}
-
-* コアコンポーネントに基づいたアダプティブFormsを送信できない。 この問題は、コアコンポーネントバージョン 2.0.38 ～ 2.0.60 を使用して構築されたアダプティブFormsで発生します。
-
-  問題を解決する。 アダプティブフォームのコアコンポーネントバージョン 2.0.62 以降に移行できます。 お使いの環境用にアダプティブFormsコアコンポーネントのバージョンを設定するには、次の手順を実行します。 [core.forms.components.version、core.forms.components.af.version および core.wcm.components.version コンポーネントのバージョンを設定します。](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) Formsas a Cloud ServiceリポジトリまたはAEMアーキタイプベースのプロジェクトとの依存関係 [Formsas a Cloud Service環境に変更をデプロイする](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). アダプティブFormsコアコンポーネントの依存関係の最新バージョンは、次の場所にあります。 [アダプティブFormsコアコンポーネント Git リポジトリ](https://github.com/adobe/aem-core-forms-components#system-requirements).
