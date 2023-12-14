@@ -1,15 +1,21 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセットセレクター'
 description: アセットセレクターを使用して、アプリケーション内のアセットのメタデータとレンディションを検索および取得します。
-contentOwner: Adobe
+contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
-workflow-type: ht
-source-wordcount: '2373'
-ht-degree: 100%
+source-git-commit: f18b8cf1922f05c0d7da2c58fb0a57bc5ff3d3b7
+workflow-type: tm+mt
+source-wordcount: '2371'
+ht-degree: 99%
 
 ---
+
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | この記事 |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-selector.html?lang=en) |
 
 # マイクロフロントエンドアセットセレクター {#Overview}
 
