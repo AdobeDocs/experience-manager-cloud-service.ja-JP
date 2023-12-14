@@ -2,10 +2,10 @@
 title: New Relic One
 description: AEM as a Cloud Service の New Relic One アプリケーションパフォーマンスモニタリング（APM）サービスと、そのサービスへのアクセス方法について説明します。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 3891a55ff48f48de4e55e0229e9f76e5bf500cb3
 workflow-type: tm+mt
-source-wordcount: '1726'
-ht-degree: 86%
+source-wordcount: '1843'
+ht-degree: 76%
 
 ---
 
@@ -20,7 +20,7 @@ AEM as a Cloud Service の New Relic One アプリケーションパフォーマ
 
 このドキュメントでは、AEM as a Cloud Service 環境で有効になっている New Relic One Application Performance Monitoring（APM）機能へのアクセスを管理し、パフォーマンスをサポートし、AEM as a Cloud Service を最大限に活用する方法について説明します。
 
-新しい実稼動プログラムが作成されると、AEM as a Cloud Service プログラムに関連付けられた New Relic One サブアカウントが自動的に作成されます。
+新しい実稼動プログラムを作成すると、AEM as a Cloud Serviceプログラムに関連付けられたNew Relic Oneサブアカウントが自動的に作成されます。 [このサブアカウントを有効化する必要があります](#activate-sub-account) データの取り込みを開始するために。
 
 ## 機能 {#transaction-monitoring}
 
@@ -33,6 +33,28 @@ AEM as a Cloud Service 用の New Relic One APM には、多くの機能があ�
 * インフラストラクチャレベルのモニタリングおよびアプリケーション（Adobe Experience Manager）のモニタリングからの主要指標を組み合わせることで、全体的なパフォーマンス最適化を実現
 
 * AEM as a Cloud Service の JMX Mbeans とヘルスチェックを New Relic Insights 指標内に直接公開し、アプリケーションスタックのパフォーマンスとヘルス指標を詳細に調査。
+
+## New Relic Oneサブアカウントをアクティブ化 {#activate-sub-account}
+
+新しく作成したプログラムの場合は、New Relic Oneサブアカウントが作成されます。 ただし、データを取り込むには、アクティブ化する必要があります。 これは、自動的にはおこなわれません。 サブアカウントをアクティブ化するには、次の手順に従います。
+
+>[!NOTE]
+>
+>のユーザー **ビジネスオーナー** または **デプロイメントマネージャー** New Relic Oneサブアカウントを管理するには、の役割をログインする必要があります。
+
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
+
+1. New Relic Oneユーザーを管理するプログラムをクリックします。
+
+1. の下部に **環境** 「プログラムの概要」ページのカードで、省略記号ボタンをクリックし、「 **New Relicをアクティベート**.
+
+   ![ユーザーを管理](assets/newrelic-activate-sub-account.png)
+
+   * プログラムの&#x200B;**環境**&#x200B;画面の上部にある省略記号ボタンから「**ユーザーを管理**」オプションにアクセスすることもできます。
+
+1. [パイプラインの実行](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) を有効にします。
+
+サブアカウントが無効化されると、データの取り込みはおこなわれません。
 
 ## New Relic One ユーザーの管理 {#manage-users}
 
@@ -66,7 +88,7 @@ AEM as a Cloud Service 用の New Relic One APM には、多くの機能があ�
 >
 >New Relic One ユーザーを管理している場合は、アクセスできるように自分自身もユーザーとして追加する必要があります。New Relic One にアクセスするには、**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;であるだけでは十分ではありません。自分自身もユーザーとして作成する必要があります。
 
-## New Relic One ユーザーアカウントの有効化 {#activate-account}
+## New Relic One ユーザーアカウントの有効化 {#activate-user-account}
 
 [New Relic One ユーザーの管理](#manage-users)のプレビューセクションで説明しているように、New Relic One ユーザーアカウントが作成されると、New Relic はそれらのユーザーに指定されたアドレスに確認メールを送信します。これらのアカウントを使用するには、ユーザーはまずパスワードをリセットして New Relic のアカウントを有効にする必要があります
 
@@ -118,7 +140,7 @@ New Relic One へのログイン中にご利用のメールを確認するよう
 
 詳細なヘルプについては、[AEM サポートポータル](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)を介してサポートチケットを開いてください。
 
-## New Relic One アクセスのトラブルシューティング {#troubleshooting}
+## New Relic One User Access のトラブルシューティング {#troubleshooting}
 
 の節の説明に従ってNew Relic Oneユーザーとして追加された場合 [New Relic Oneユーザーの管理](#manage-users) 元のアカウント確認メールが見つからない場合は、次の手順に従ってください。
 
@@ -152,11 +174,11 @@ New Relic One にユーザーを追加する場合は、次の制限が適用さ
 
 >[!NOTE]
 >
->New Relic Oneアカウントで 90 日以上アクティビティが検出されなかった場合、APM エージェントは停止します。
+>New Relic Oneサブアカウントで 90 日以上アクティビティが検出されなかった場合、APM エージェントは停止します。
 >
->サポートチケットを [AEM Support Portal](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) AEMaaCS 環境用に APM エージェントを再度有効にする場合。
+>同じ手順 ( [New Relic Oneサブアカウントをアクティブ化](#activate-sub-account) の節を参照して、New Relic Oneサブアカウントを再アクティブ化してください。
 
-AEM as a Cloud Service プログラムの New Relic One 製品に関する詳細なヘルプまたは追加のガイダンスについては、[AEM サポートポータル](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)からサポートチケットを開いてください。
+AEM as a Cloud Serviceプログラム向けのNew Relic One製品に関するその他のヘルプまたはガイダンスについては、 [AEMサポートポータル。](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)
 
 ## New Relic One に関するよくある質問（FAQ） {#faqs}
 
@@ -202,4 +224,4 @@ New Relic One を使用すると、ユーザーがアクセスできるすべて
 
 ### New Relic Oneアカウントの APM エージェントが停止しました。 何が起こったの？ {#deactivated}
 
-[APM エージェントが停止しています](#limitations) 90 日以上アクティビティが検出されなかった場合。 サポートチケットを [AEM Support Portal](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) AEMaaCS 環境用に APM エージェントを再度有効にする場合。
+[APM エージェントが停止しています](#limitations) 90 日以上アクティビティが検出されなかった場合。 同じ手順 ( [New Relic Oneサブアカウントをアクティブ化](#activate-sub-account) の節を参照して、New Relic Oneサブアカウントを再アクティブ化してください。

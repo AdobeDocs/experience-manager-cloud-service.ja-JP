@@ -2,10 +2,10 @@
 title: ビルド環境
 description: Cloud Manager のビルド環境と、そこでコードがどのようにビルドされテストされるかを説明します。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 93%
+source-wordcount: '1029'
+ht-degree: 90%
 
 ---
 
@@ -18,10 +18,10 @@ Cloud Manager のビルド環境と、そこでコードがどのようにビル
 
 Cloud Manager では、専用のビルド環境を使用して、コードのビルドおよびテストを行います。
 
-* ビルド環境は Linux ベースで、Ubuntu 18.04 から派生しています。
+* ビルド環境は Linux ベースで、Ubuntu 22.04 から派生しています。
 * Apache Maven 3.8.8 がインストールされています。
 * インストールされる Java バージョンは Oracle JDK 8u371 と Oracle JDK 11.0.20 です。
-* デフォルトでは、`JAVA_HOME` 環境変数は `/usr/lib/jvm/jdk1.8.0_371` に設定されています。これには、Oracle JDK 8u371 が含まれています。詳しくは、 [代替 Maven 実行 JDK バージョン](#alternate-maven-jdk-version) の節を参照してください。
+* デフォルトでは、 `JAVA_HOME` 環境変数はに設定されます。 `/usr/lib/jvm/jdk1.8.0_371` oracleJDK 8u371 を含む 詳しくは、 [代替 Maven 実行 JDK バージョン](#alternate-maven-jdk-version) の節を参照してください。
 * 必要に応じてインストールされる追加のシステムパッケージが、次のようにいくつかあります。
    * `bzip2`
    * `unzip`
@@ -35,6 +35,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven は、`settings.xml` ファイルを使用してシステムレベルで設定されます。このファイルには、`adobe-public` というプロファイルを使用したアドビの公開アーティファクトリポジトリが自動的に含まれています（詳しくは、[アドビの公開 Maven リポジトリ](https://repo1.maven.org/)を参照してください）。
+* Node.js 18 は [フロントエンドパイプラインとフルスタックパイプライン。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
 
 >[!NOTE]
 >
