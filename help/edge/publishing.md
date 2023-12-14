@@ -2,7 +2,7 @@
 title: Edge Delivery Services用コンテンツの公開
 description: コンテンツの公開がEdge Delivery Servicesと連携する仕組みと、AEMコンテンツをEdge Delivery Servicesと共に公開する方法について説明します。
 feature: Edge Delivery Services
-source-git-commit: e3bbcfa3fcef1ed1e5b6cf2da5a17c7e636b9539
+source-git-commit: 166525b6987215a64521d1ff63a222187376ba65
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Edge Delivery Servicesを使用すれば、コンテンツソースに関係な�
 1. コンテンツ作成者は、ユニバーサルエディターでAEMコンテンツを公開します。
 1. 公開イベントがAdobeパイプラインキューにプッシュされます。
 1. Edge 配信公開サービスは、関連するイベントを Edge Delivery Admin API に転送します。
-1. Edge 配信は、AEMオーサーからセマンティックHTMLを取り込みます。
+1. Edge Delivery は、AEM Author からセマンティックHTMLを取り込み、取り込みます。
 1. AEMが公開ステータスで更新されます。
 
 ## 使用の手引き {#how-to-get-started}
