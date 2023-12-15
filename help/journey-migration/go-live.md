@@ -2,10 +2,10 @@
 title: 運用開始
 description: コードとコンテンツがクラウドに対応した後に移行を実行する方法について
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 75d702cf45e38da4b7259907e7f707b6f18bd428
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 94%
+source-wordcount: '1721'
+ht-degree: 93%
 
 ---
 
@@ -152,6 +152,8 @@ ht-degree: 94%
       * TTL は、DNS レコードがキャッシュに残ってから、サーバーに更新を要求するまでの時間です。
       * TTL が非常に大きい場合、DNS レコードの更新が反映されるまでに時間がかかります。
 * ビジネス要件とビジネス目標を満たすパフォーマンステストとセキュリティテストを実行します。
+   * ステージ環境でテストを実行します。  サイズは実稼働と同じです。
+   * 開発環境は、ステージング環境と実稼動環境とは異なるサイズに設定されます。
 * カットオーバーし、新しいデプロイメントやコンテンツの更新を行わずに実際の運用開始が確実に実行されるようにします。
 * Admin Console ユーザー通知グループを作成します。詳しくは、[通知プロファイル](/help/journey-onboarding/notification-profiles.md)を参照してください
 
