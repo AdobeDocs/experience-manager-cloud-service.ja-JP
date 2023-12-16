@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2023.12.0 �
 description: AEM as a Cloud Service の Cloud Manager 2023.12.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 71ce915413cd968a78a33b7a52d02e09841e1707
+source-git-commit: c0fc4b2ced046a1e975aca99463cdfa03462f2f4
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '784'
 ht-degree: 17%
 
 ---
@@ -32,8 +32,8 @@ AEM as a Cloud Serviceの Cloud Manager リリース2023.12.0のリリース日�
 * 新しく作成した Cloud Manager プログラムの場合、 [関連するNew Relicサブアカウント](/help/implementing/cloud-manager/user-access-new-relic.md) は、デフォルトでは有効になっていません。
    * New Relicサブアカウントが 90 日以上アクセスされていない既存のプログラムの場合、非アクティブ化されます。
    * New Relicサブアカウントを使用する場合は、Cloud Manager を介してオプトインする必要があります。
-* java 8 および 11 のマイナーバージョンのロールアウトと maven の更新 [10 月の Cloud Manager リリースで発表および開始された](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) が完了しました。
-   * フロントエンドおよびフルスタックパイプラインに対して、Node 18 のサポートが追加されました。
+* 更新のロールアウト： [ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) それは [10 月の Cloud Manager リリースで発表および開始された](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) が完了しました。
+   * ノード 18 のサポートが、 [フロントエンドパイプラインとフルスタックパイプライン。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
    * Java 8 のマイナーバージョンがに更新されました。 `jdk1.8.0_371`.
    * Java 11 のマイナーバージョンがに更新されました。 `jdk-11.0.20`.
    * Maven がバージョン 3.8.8 に更新されました。
