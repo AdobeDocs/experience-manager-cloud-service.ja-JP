@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 2677e8fbdf6b21ce2d1d848000401c826bc5f289
+source-git-commit: db0f60537a65c426dae88b5440622c9034c736e2
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 42%
+source-wordcount: '355'
+ht-degree: 34%
 
 ---
 
@@ -13,20 +13,20 @@ ht-degree: 42%
 
 次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 14538 {#release-14538}
+## リリース 14697 {#release-14697}
 
-2023年12月6日（PT）に公開された、メンテナンスリリース 14538 の継続的な改善点を以下にまとめます。このメンテナンスリリースは、以前のメンテナンスリリース 14227 からのアップデートです。
+2023年12月18日（PT）に公開された、メンテナンスリリース 14697 の継続的な改善点を以下にまとめます。問題が発生したリリース14538に代わるものです。 以前のメンテナンスリリースはリリース14227でした。
 
-2023.12.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja)を参照してください。
+2023.12.0機能のアクティベーションは、このメンテナンスリリースの完全な機能セットを提供します。 詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja)を参照してください。
 
-### 機能強化 {#enhancements-14538}
+### 機能強化 {#enhancements-14697}
 
 * GRANITE-46723：ユーザー同期 — SAML Migration from default-sync to IDP-based sync.
 * OAK-10311：レプリケーション — BLOB 比較を最適化して、AEM内の大きなアセットバッチのレプリケーション時間を短縮します。
 * OAK-10511：レプリケーション — AEMでの大きなアセットのレプリケーション時間を短縮するために、ネットワークのラウンドトリップを削減します。
 * GRANITE-48334：パブリッシャー — RUM のコレクションスクリプトが見つかりません。
 
-### 修正された問題 {#fixed-issues-14538}
+### 修正された問題 {#fixed-issues-14697}
 
 * CQ-4354867: ToggleCondition 参照は、InstanceActionServlet 内の存在しないフィールドを参照します。
 * CQ-4349948：ツール→セキュリティ→ユーザーの「ユーザー設定を編集」での「プロファイルプロパティ」文字列のローカライゼーション。
@@ -40,11 +40,11 @@ ht-degree: 42%
 * ASSETS-30811:Blocktag Service のバインドに対する参照の更新。
 * GRANITE-46418: AEMでの Sling イベントの更新： GaugeSupport は registerWithSuffix で無限再帰を持っています (SLING-11918)。
 
-### 既知の問題 {#known-issues-14538}
+### 既知の問題 {#known-issues-14697}
 
 なし。
 
-### 組み込みテクノロジー {#embedded-tech-14538}
+### 組み込みテクノロジー {#embedded-tech-14697}
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
