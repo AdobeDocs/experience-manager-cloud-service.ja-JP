@@ -3,9 +3,9 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 1b93cc01c602114d2a1822bc90e0efb5a6e40d6d
+source-git-commit: 055d510f8bd3a227c2c51d7f0dea561f06f9b4fd
 workflow-type: tm+mt
-source-wordcount: '4930'
+source-wordcount: '4924'
 ht-degree: 91%
 
 ---
@@ -1047,7 +1047,6 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 * クエリに 1M(1024 * 1024) 文字を超える文字を含めることはできません
 * クエリに含めることができるトークンは15000個までです
 * クエリに含めることができるのは200000個までの空白トークンです
-* クエリの深さは 500 を超えることはできません
 
 ## FAQ {#faqs}
 
