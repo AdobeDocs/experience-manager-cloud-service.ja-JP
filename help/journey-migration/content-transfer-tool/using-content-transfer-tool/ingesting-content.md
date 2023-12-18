@@ -2,10 +2,10 @@
 title: コンテンツの取り込みCloud Service
 description: Cloud Acceleration Manager を使用して、移行セットから宛先Cloud Serviceインスタンスにコンテンツを取り込む方法を説明します。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: b674b3d8cd89675ed30c1611edec2281f0f1cb05
+source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
 workflow-type: tm+mt
-source-wordcount: '2392'
-ht-degree: 40%
+source-wordcount: '2407'
+ht-degree: 39%
 
 ---
 
@@ -97,7 +97,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="コンテンツ取り込みのトラブルシューティング"
->abstract="取り込みログとドキュメントを参照して、取り込みが失敗する一般的な理由と問題を修正する方法を見つけてください。 修正後は、取り込みを再度実行できます。"
+>abstract="取り込みログとドキュメントを参照して、取り込みが失敗する一般的な理由と問題を修正する方法を見つけてください。 修正後は、取り込みを再び実行できます。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=ja" text="コンテンツ転送の検証"
 
 ### CAM が移行トークンを取得できない {#cam-unable-to-retrieve-the-migration-token}
@@ -159,9 +159,11 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
-AEM の各ノードには、一意の UUID が必要です。このエラーは、取り込まれるノードが、宛先インスタンス上の別のパスに存在する uuid と同じ uuid を持つことを示します。
-この状況は、抽出と後続の[追加抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)の間でノードがソース上で移動された場合に発生する可能性があります。
-また、宛先のノードが取り込みとそれ以降の追加取り込みの間に移動した場合にも発生する可能性があります。
+AEM の各ノードには、一意の UUID が必要です。このエラーは、取り込まれるノードの uuid が、宛先インスタンス上の別のパスに存在する uuid と同じであることを示します。 この状況は、次の 2 つの理由で発生する可能性があります。
+
+* 抽出とそれ以降の抽出の間で、ソース上のノードが移動します。 [追加抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
+   * _記憶する_：追加抽出の場合、移行セットにノードが存在します（ソースに存在しなくなっても）。
+* 宛先のノードは、取り込みとそれ以降の追加取り込みの間に移動されます。
 
 この競合は手動で解決する必要があります。コンテンツを参照する他のコンテンツに留意し、2 つのノードのうち、削除する必要があるノードをコンテンツに精通したユーザーが決定する必要があります。解決策として、問題のあるノードがなくても、追加抽出を再度行う必要が生じる場合があります。
 
