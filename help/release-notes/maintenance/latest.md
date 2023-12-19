@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: db0f60537a65c426dae88b5440622c9034c736e2
+source-git-commit: 4fc676bd975e44234b478ba57f12cbf0f4f5ba45
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 34%
+source-wordcount: '371'
+ht-degree: 33%
 
 ---
 
@@ -39,6 +39,7 @@ ht-degree: 34%
 * ASSETS-31297:Dynamic Media からコピーしたアセットが削除されないようにします。
 * ASSETS-30811:Blocktag Service のバインドに対する参照の更新。
 * GRANITE-46418: AEMでの Sling イベントの更新： GaugeSupport は registerWithSuffix で無限再帰を持っています (SLING-11918)。
+* GRANITE-48937：オムニサーチがaem/start.htmlページで機能しないメンテナンスリリース14538の回帰を修正しました。
 
 ### 既知の問題 {#known-issues-14697}
 
