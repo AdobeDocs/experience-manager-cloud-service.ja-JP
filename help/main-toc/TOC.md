@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7734a0f476d6f5a4e8f15ee3c0e6a9d89797b2b9
+source-git-commit: c54ef4f80703497e9f26847be2fe99867b74c094
 workflow-type: tm+mt
-source-wordcount: '4557'
+source-wordcount: '4556'
 ht-degree: 90%
 
 ---
@@ -612,7 +612,7 @@ ht-degree: 90%
             + [機械翻訳または人間による翻訳を使用したアダプティブフォームの翻訳](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [リダイレクトページまたはお礼メッセージの設定](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [繰り返し可能なセクションを使用したフォームの作成](/help/forms/create-forms-repeatable-sections.md)
-            + [アダプティブフォームの送信アクションの設定](/help/forms/configure-submit-actions-core-components.md)
+            + [アダプティブフォームの送信アクションを設定](/help/forms/configure-submit-actions-core-components.md)
             + [アダプティブフォームで Google reCAPTCHA を使用](/help/forms/captcha-adaptive-forms-core-components.md)
             + [アダプティブフォームにカスタムエラーハンドラーを追加する](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [コアコンポーネントに基づくアダプティブFormsのロケールの追加](/help/forms/supporting-new-language-localization-core-components.md)
@@ -778,7 +778,6 @@ ht-degree: 90%
    + Edge 配信アプリケーションの公開 {#publish}
       + [オーサリング](/help/edge/docs/authoring.md)
       + [一括メタデータ](/help/edge/docs/bulk-metadata.md)
-      + [Slackボット](/help/edge/docs/slack.md)
       + [プレースホルダー](/help/edge/docs/placeholders.md)
       + [サイトマップ](/help/edge/developer/sitemap.md)
       + [SharePoint Setup](/help/edge/docs/setup-customer-sharepoint.md)
@@ -797,7 +796,7 @@ ht-degree: 90%
          + [Sidekickライブラリ](/help/edge/docs/sidekick-library.md)
       + [FAQ](/help/edge/docs/faq.md)
       + [管理 API](https://www.aem.live/docs/admin.html)
-      + [status.hlx.live](https://status.hlx.live/history)
+      + [AEM Status](https://www.aemstatus.net)
       + ツール {#tools}
          + [SidekickChrome 拡張機能](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Github ボット](https://github.com/apps/aem-code-sync)
