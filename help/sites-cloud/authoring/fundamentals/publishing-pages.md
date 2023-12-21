@@ -2,10 +2,10 @@
 title: ページの公開
 description: AEMの様々なメカニズムを使用して、ページを公開および非公開にする方法を説明します。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 410c585dbe9eddaab4e424eb70ce060447db1990
 workflow-type: tm+mt
-source-wordcount: '1805'
-ht-degree: 91%
+source-wordcount: '1847'
+ht-degree: 89%
 
 ---
 
@@ -49,6 +49,12 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 >* ワークフローがトリガーされて、公開リクエストの適切なユーザーに通知されます。
 >* このワークフローは、開発チームによってカスタマイズされていることがあります。
 >* ワークフローがトリガーされたことを通知するメッセージが少しの間表示されます。
+
+>[!NOTE]
+>
+>ページの順序を保持したい場合、子ページを公開する際に親ページを公開する必要があります。
+>
+>公開用に子ページのみが選択されている場合、ページの順序は保証されません（順序情報は親ページに保持されるので）。
 
 >[!NOTE]
 >
@@ -124,7 +130,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
    ![公開するページの選択](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. **公開を管理**&#x200B;ウィザードが起動します。最初のステップは **オプション**&#x200B;を使用すると、次のことができます。
+1. **公開を管理**&#x200B;ウィザードが起動します。最初の手順では、**オプション**&#x200B;を使用すると、以下のことが可能になります。
 
    * **アクション**
 
