@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: e2d79742c2097748d736bc4d2d2046711d978fc5
 workflow-type: tm+mt
-source-wordcount: '3217'
-ht-degree: 100%
+source-wordcount: '3166'
+ht-degree: 98%
 
 ---
 
@@ -198,7 +198,7 @@ Dynamic Media コンポーネントを使用して、ダイナミックビデオ
 
 >[!NOTE]
 >
->デフォルトでは、Dynamic Media ビデオコンポーネントはアダプティブです。ビデオコンポーネントを固定サイズにする場合は、そのコンポーネントで、「**[!UICONTROL 詳細]**」タブの「**[!UICONTROL 幅]**」と「**[!UICONTROL 高さ]**」を使用してサイズを設定します。
+>デフォルトでは、Dynamic Mediaビデオコンポーネントはアダプティブです。 画像コンポーネントを固定サイズにする場合は、その画像コンポーネントを **[!UICONTROL 幅]** および **[!UICONTROL 高さ]** （内） **[!UICONTROL 詳細]** タブをクリックします。
 
 * **[!UICONTROL ビューアプリセット]** - ドロップダウンリストから既存のビデオビューアプリセットを選択します。探しているビューアプリセットが表示されない場合は、表示できるように設定する必要があります。詳しくは、ビューアプリセットの管理を参照してください。
 
@@ -239,7 +239,7 @@ Dynamic Media コンポーネントを使用して、スマート切り抜き画
 
   コンポーネントの「**[!UICONTROL 編集]**」を選択して、次の詳細設定を編集できます。
 
-* **[!UICONTROL 縦横比の一致を有効にする]** - 元の画像の縦横比に最も適した縦横比のスマート切り抜きレンディションを Dynamic Media で選択する場合に選択します。
+* **[!UICONTROL 縦横比の一致を有効にする]** - Dynamic Mediaで、元の画像の縦横比に最も適した縦横比のスマート切り抜きレンディションを選択するには、このオプションを選択します。
 
 * **[!UICONTROL 高解像度デバイス向けに最適化]** - DPR（デバイスピクセル比）の最適化を許可する場合は、このチェックボックスをオン（デフォルト）にします。
 
