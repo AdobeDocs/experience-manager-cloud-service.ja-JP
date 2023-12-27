@@ -2,9 +2,9 @@
 title: ユニバーサルエディターを使用したローカルAEM開発
 description: 開発目的で、ユニバーサルエディターがローカルのAEMインスタンスでの編集をサポートする方法を説明します。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 0546f3cee8df3d7134021e32670b40030d56cd84
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -88,8 +88,8 @@ Universal Editor Service listening on port 8000 as HTTPS Server
 
 ローカルのユニバーサルエディターサービスを使用してページを編集するには、次のメタタグを設定する必要があります。
 
-```
-<meta name="urn:adobe:aem:editor:endpoint" content="https://localhost:8000">
+```html
+<meta name="urn:adobe:aue:config:service" content="https://localhost:8000">
 ```
 
 設定が完了すると、コンテンツ更新呼び出しが次の場所に移動するのを確認できます。 `https://localhost:8000` デフォルトの Universal Editor Service の代わりにを使用します。
