@@ -2,11 +2,12 @@
 title: レコードのドキュメントテンプレートを作成するために Forms Designer をダウンロードしてインストールする方法
 description: Forms Designer を使用して、レコードのドキュメントのPDFとして機能する XDP およびテンプレートフォームテンプレートを作成します。
 keywords: Designer のインストール、Forms Designer のインストール、Forms Designer のインストール要件
+feature: Forms Designer
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: b2769134c2e744f41cbb7e8a3cf08c622cdc07ca
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 62%
+source-wordcount: '409'
+ht-degree: 68%
 
 ---
 
@@ -49,7 +50,7 @@ Designer は、XDP および PDF フォームテンプレートの作成を簡�
 * ビデオハードウェアアクセラレーション（オプション）
 * Acrobat Pro DC、Acrobat Standard DC または Adobe Acrobat Reader DC。
 * Designer をインストールするための管理者権限。
-* Microsoft® Visual C++ 2019 （VC 14.28 以降） 32 ビットランタイム
+* Microsoft® Visual C++ 2019（VC 14.28 以降）32 ビットランタイム
 
 +++
 
@@ -72,7 +73,7 @@ Designer をインストールするには、以下の手順を実行します�
 ## 関連トピック {#see-also}
 
 * [カスタムフォントを使用](/help/forms/use-custom-fonts.md)
-* [スタンドアロンのコアコンポーネントベースのアダプティブフォームを作成する](/help/forms/creating-adaptive-form-core-components.md)
+* [スタンドアロンのコアコンポーネントベースのアダプティブフォームを作成](/help/forms/creating-adaptive-form-core-components.md)
 * [AEM Sites ページへのアダプティブフォームの作成または追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Forms Designer を使用して、レコードのドキュメント（DoR）のテンプレートとフォームフラグメントを作成](/help/forms/use-forms-designer.md)
 
