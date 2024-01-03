@@ -2,9 +2,9 @@
 title: ページの公開
 description: AEMの様々なメカニズムを使用して、ページを公開および非公開にする方法を説明します。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: c05cf17749f63e713e4fb3fbf2a840a9f82877b3
+source-git-commit: 00520bff0f3b0d36610d8601077198856c8b71dd
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1927'
 ht-degree: 85%
 
 ---
@@ -52,7 +52,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 >[!NOTE]
 >
->ページの順序を保持したい場合は、 [公開を管理](#manage-publication) 親ページを子ページと共に 1 回のアクションで公開する場合。
+>ページの順序を保持するには、 [公開を管理](#manage-publication) 親ページを子ページと共に 1 回のアクションで公開する場合。
 >
 >ページの順序は保証されません。
 >* （注文情報が親ページに保持されるので）公開する子ページのみが選択されている場合
@@ -128,7 +128,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 >[!NOTE]
 >
->ページの順序を保持したい場合は、 **公開を管理** ：単一のアクションで、親ページを任意の子ページと共に公開します。
+>ページの順序を保持するには、 **公開を管理** ：単一のアクションで、親ページを任意の子ページと共に公開します。
 >
 >ページの順序は保証されません。
 >* （注文情報が親ページに保持されるので）公開する子ページのみが選択されている場合
