@@ -2,10 +2,10 @@
 title: デジタルアセットの再処理
 description: デジタルアセットの再処理の様々な方法について説明します
 contentOwner: KK
-source-git-commit: 3fb72e0768c44506b0f20f99a48cea837d722387
+source-git-commit: cb8eb56d07163f46aec252c70a3ec3b0273d97cf
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 49%
+source-wordcount: '685'
+ht-degree: 43%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 49%
 * 既にアセットがアップロードされている既存のアセットフォルダーに対して、バッチセットプリセットを実行する場合。
 * アセットのフォルダーに以前適用した既存のバッチセットプリセットを後で編集する場合。
 
-## アセット再処理ワークフロー（その ） {#reprocessing-steps}
+## アセットの再処理 {#reprocessing-steps}
 
 フォルダー内のアセットを再処理するには：
 
@@ -33,21 +33,21 @@ ht-degree: 49%
 
    ![アセットの再処理オプション](assets/reprocessing-assets-options.png)
 
-* **[!UICONTROL 完全なプロセス]:** デフォルトのプロファイル、カスタムプロファイル、動的処理（設定されている場合）、後処理ワークフローを含むプロセス全体を実行する場合にこのオプションを選択します。
-* **[!UICONTROL 詳細]:** このオプションを選択すると、高度な再処理を選択できます。
+   * **[!UICONTROL 完全なプロセス]:** デフォルトのプロファイル、カスタムプロファイル、動的処理（設定されている場合）、後処理ワークフローを含むプロセス全体を実行する場合にこのオプションを選択します。
+   * **[!UICONTROL 詳細]:** このオプションを選択すると、高度な再処理を選択できます。
 
-  ![アセットの詳細再処理オプション](assets/reprocessing-assets-options-advanced.png)
+     ![アセットの詳細再処理オプション](assets/reprocessing-assets-options-advanced.png)
 
-次の詳細オプションの中から選択します。
+     次の詳細オプションの中から選択します。
 
-* **[!UICONTROL デフォルトのプレビューレンディション]:** デフォルトでプレビューされるレンディションを再処理する場合に、このオプションを選択します。
+      * **[!UICONTROL デフォルトのプレビューレンディション]:** デフォルトでプレビューされるレンディションを再処理する場合に、このオプションを選択します。
 
-* **[!UICONTROL メタデータ]:** 選択したアセットのメタデータ情報とスマートタグを抽出する場合は、このオプションを選択します。
+      * **[!UICONTROL メタデータ]:** 選択したアセットのメタデータ情報とスマートタグを抽出する場合は、このオプションを選択します。
 
-* **[!UICONTROL 処理プロファイル]:** 選択したプロファイルを再処理する場合は、このオプションを選択します。 次を選択できます。 **[!UICONTROL 完全なプロセス]** オプションを使用して、デフォルトの処理と、フォルダーレベルで割り当てられたカスタムプロファイルを含めることができます。
-  <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
+      * **[!UICONTROL 処理プロファイル]:** 選択したプロファイルを再処理する場合は、このオプションを選択します。 次を選択できます。 **[!UICONTROL 完全なプロセス]** オプションを使用して、デフォルトの処理と、フォルダーレベルで割り当てられたカスタムプロファイルを含めることができます。
+        <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
-* **[!UICONTROL 後処理ワークフロー]:** 処理プロファイルを使用して達成できない追加のアセット処理が必要な場合は、このオプションを選択します。 後処理ワークフローを設定に追加できます。 後処理では、アセットマイクロサービスを使用して、設定可能な処理の上に、完全にカスタマイズされた処理を追加できます。
+      * **[!UICONTROL 後処理ワークフロー]:** 処理プロファイルを使用して達成できない追加のアセット処理が必要な場合は、このオプションを選択します。 後処理ワークフローを設定に追加できます。 後処理では、アセットマイクロサービスを使用して、設定可能な処理の上に、完全にカスタマイズされた処理を追加できます。
 
 詳しくは、 [アセットマイクロサービスと処理プロファイルの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=ja) を参照してください。
 
@@ -71,7 +71,7 @@ ht-degree: 49%
 
 ### スマート切り抜き {#reprocessing-smart-crop}
 
-詳細を表示： [Dynamic Mediaスマート切り抜き](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=ja) 特定の切り抜き (**[!UICONTROL スマート切り抜き]** アップロードしたアセットに対する、ピクセル切り抜きやシャープの設定。
+詳細を表示： [Dynamic Mediaスマート切り抜き](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en) 特定の切り抜き (**[!UICONTROL スマート切り抜き]** アップロードしたアセットに対する、ピクセル切り抜きやシャープの設定。
 
 ### メタデータ {#reprocessing-metadata}
 
@@ -81,7 +81,7 @@ ht-degree: 49%
 
 ### フォルダー内の Dynamic Media アセットの再処理 {#reprocessing-dynamic-media}
 
-後で変更した既存の Dynamic Media イメージプロファイルまたは Dynamic Media ビデオプロファイルが存在するフォルダー内のアセットを再処理できます。詳しくは、 [フォルダー内のDynamic Mediaアセットを再処理します。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)
+後で変更した既存のDynamic MediaイメージプロファイルまたはDynamic Mediaビデオプロファイルが存在するフォルダー内のアセットを再処理できます。 詳しくは、 [フォルダー内のDynamic Mediaアセットを再処理します。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)
 
 >[!NOTE]
 >
