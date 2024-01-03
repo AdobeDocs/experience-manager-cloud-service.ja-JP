@@ -2,10 +2,10 @@
 title: アクションセンター
 description: アクションセンターを活用して、インシデントやその他の重要な情報に便利に対応
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: dca00a8913fb8fd159a69675b8f4ffa67441faa4
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 79%
+source-wordcount: '734'
+ht-degree: 73%
 
 ---
 
@@ -63,14 +63,14 @@ AEM as a Cloud Service の通知には複数のタイプがありますが、次
 |---|---|---|---|
 | 運用上のインシデント | 即時対応を求められる重大なインシデント | 「インシデント通知 - Cloud Service」製品プロファイルに割り当てられたユーザー | X |
 | プロアクティブなレコメンデーション | 予定しておくべき最適化 | 「事前通知 - Cloud Service」製品プロファイルに割り当てられたユーザー | X |
-| Cloud Manager のパイプラインステータス | パイプラインのステータスに関する情報 | ビジネスオーナー、プログラムマネージャーまたはデプロイメントマネージャーの役割を持ち、[Experience Cloud の環境設定](https://experience.adobe.com/preferences)で「その他」チェックボックスが選択されているユーザー（[こちらを参照](/help/implementing/cloud-manager/notifications.md)）。 |   |
+| Cloud Manager のパイプラインステータス | パイプラインのステータスに関する情報 | ビジネスオーナー、プログラムマネージャーまたはデプロイメントマネージャーの役割を持つユーザー（で「その他」チェックボックスを選択） [Experience Cloud環境設定](https://experience.adobe.com/preferences)、 [ここで説明](/help/implementing/cloud-manager/notifications.md). |   |
 
 ## サポートされている通知タイプ {#supported-notification-types}
 
-アクションセンターで現在サポートされている通知タイプを次の表に示します。通知は、現在、実稼動環境に限られています。
+次の表に、アクションセンターで現在サポートされている通知の種類を示します。 通知は、現在、実稼動環境に限られています。
 
 | 通知タイプ | 関連する製品プロファイル | 是正措置 |
-|---|---|---|
+|---------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ブロックされたレプリケーションキュー | インシデント | キューのブロックを解除するには、[レプリケーションドキュメント](/help/operations/replication.md#troubleshooting)の手順に従ってください。 |
+| 無効な永続化されたGraphQLクエリ | インシデント | 無効なGraphQLクエリを修正するには、 [永続的なGraphQLクエリのトラブルシューティングドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=en) |
 | S2S 証明書の有効期限が切れます | 事前対応 | [サーバーサイド API のアクセストークンの生成ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)で資格情報を更新する方法を説明します。 |
-
