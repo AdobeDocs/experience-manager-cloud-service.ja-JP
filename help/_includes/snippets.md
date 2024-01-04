@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8bc20c66aad7bf4befdd28db2c628a1535ae375b
+source-git-commit: 6a370269317621f09f0dcdc7f701d7c8a4891ea4
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 98%
+source-wordcount: '236'
+ht-degree: 78%
 
 ---
 # スニペット {#snippets}
@@ -17,7 +17,13 @@ ht-degree: 98%
 
 ## WAF 設定限定リリース {#waf-limited-release}
 
-[!BADGE WAF-DDOS 保護は、2023年末に利用可能になります。]{type=Caution tooltip="WAF-DDOS 保護は、2023年末に利用可能になります。"}
+[!BADGE WAF-DDOS 保護は、2023 年末までに提供される予定です。]{type=Caution tooltip="WAF-DDOS 保護は、2023 年末までに提供される予定です。"}
+
+## ユニバーサルエディターのステータス {#universal-editor-status}
+
+>[!NOTE]
+>
+>ユニバーサルエディターは現在も開発中で、その機能は変更される可能性があり、このドキュメントで説明する内容とは異なる場合があります。
 
 ## 関連トピック {#see-also}
 

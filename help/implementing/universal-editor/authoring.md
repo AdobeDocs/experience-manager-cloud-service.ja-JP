@@ -2,10 +2,10 @@
 title: ユニバーサルエディターを使用したコンテンツのオーサリング
 description: コンテンツ作成者がユニバーサルエディターを使用してコンテンツを作成する際に、簡単で直感的な方法を説明します。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: e33cdaf9147fc0276920fad974984d5703dba530
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
-source-wordcount: '2179'
-ht-degree: 25%
+source-wordcount: '2165'
+ht-degree: 26%
 
 ---
 
@@ -13,6 +13,8 @@ ht-degree: 25%
 # ユニバーサルエディターを使用したコンテンツのオーサリング {#authoring}
 
 コンテンツ作成者がユニバーサルエディターを使用してコンテンツを作成する際に、簡単で直感的な方法を説明します。
+
+{{universal-editor-status}}
 
 ## はじめに {#introduction}
 
@@ -23,10 +25,6 @@ ht-degree: 25%
 >[!TIP]
 >
 >ユニバーサルエディターの詳細については、[ユニバーサルエディターの概要](introduction.md)ドキュメントを参照してください。
-
->[!NOTE]
->
->ユニバーサルエディターはまだ開発中です。 現在は、すべてのコンテンツタイプを編集できません。
 
 ## アプリの準備 {#prepare-app}
 

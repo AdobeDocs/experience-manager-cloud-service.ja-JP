@@ -2,7 +2,7 @@
 title: ユニバーサルエディターを使用したローカルAEM開発
 description: 開発目的で、ユニバーサルエディターがローカルのAEMインスタンスでの編集をサポートする方法を説明します。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 0546f3cee8df3d7134021e32670b40030d56cd84
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%
@@ -14,7 +14,11 @@ ht-degree: 0%
 
 開発目的で、ユニバーサルエディターがローカルのAEMインスタンスでの編集をサポートする方法を説明します。
 
-このドキュメントでは、ユニバーサルエディターを使用してAEM上でローカルに開発できるように、ユニバーサルエディターサービスのローカルコピーと共に HTTPS でAEMを実行する方法について説明します。
+{{universal-editor-status}}
+
+## 概要 {#overview}
+
+このドキュメントでは、ユニバーサルエディターを使用してAEM上でローカルに開発できるように、ユニバーサルエディターサービスのローカルコピーと共に HTTPS でAEMを実行する方法を説明します。
 
 ## HTTPS で実行するAEMを設定 {#aem-https}
 

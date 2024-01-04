@@ -1,7 +1,7 @@
 ---
 title: AEM Developers 向けユニバーサルエディターの概要
 description: ユニバーサルエディターの動作とプロジェクトでの使用方法に興味を持つAEM開発者の方は、WKND プロジェクトをユニバーサルエディターと連携させる方法を説明し、エンドツーエンドの紹介を提供します。
-source-git-commit: 4219ce35ed353bef0592bc088c0b5df8c6c9cc6f
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '3082'
 ht-degree: 1%
@@ -12,6 +12,8 @@ ht-degree: 1%
 # AEM Developers 向けユニバーサルエディターの概要 {#developer-overview}
 
 ユニバーサルエディターの動作とプロジェクトでの使用方法に興味を持つAEM開発者の方は、WKND プロジェクトをユニバーサルエディターと連携させる方法を説明し、エンドツーエンドの紹介を提供します。
+
+{{universal-editor-status}}
 
 ## 目的 {#purpose}
 

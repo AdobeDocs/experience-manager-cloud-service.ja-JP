@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4968921cadcee7eb023d5761abfa0373a24c5ed2
+source-git-commit: cfae48067df75dae54822dc0c6f868cca75887d4
 workflow-type: tm+mt
-source-wordcount: '4560'
+source-wordcount: '4565'
 ht-degree: 90%
 
 ---
@@ -1106,11 +1106,14 @@ ht-degree: 90%
       + [WCAG 2.1 クイックガイド](/help/compliance/accessibility/quick-guide-wcag.md)
 + ユニバーサルエディター {#universal-editor}
    + [ユニバーサルエディターの概要](/help/implementing/universal-editor/introduction.md)
-   + [ユニバーサルエディターを使用したコンテンツのオーサリング](/help/implementing/universal-editor/authoring.md)
-   + [ユニバーサルエディターを使用したコンテンツの公開](/help/implementing/universal-editor/publishing.md)
-   + [AEM のユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md)
-   + [ユニバーサルエディター開発者の概要](/help/implementing/universal-editor/developer-overview.md)
    + [ユニバーサルエディターのアーキテクチャ](/help/implementing/universal-editor/architecture.md)
-   + [属性とタイプ](/help/implementing/universal-editor/attributes-types.md)
-   + [ユニバーサルエディターの認証](/help/implementing/universal-editor/authentication.md)
-   + [ユニバーサルエディターを使用したローカルAEM開発](/help/implementing/universal-editor/local-dev.md)
+   + オーサリング{#developing}
+      + [ユニバーサルエディターを使用したコンテンツのオーサリング](/help/implementing/universal-editor/authoring.md)
+      + [ユニバーサルエディターを使用したコンテンツの公開](/help/implementing/universal-editor/publishing.md)
+   + 開発 {#developing}
+      + [AEM のユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md)
+      + [ユニバーサルエディター開発者の概要](/help/implementing/universal-editor/developer-overview.md)
+      + [属性とタイプ](/help/implementing/universal-editor/attributes-types.md)
+      + [ユニバーサルエディターの認証](/help/implementing/universal-editor/authentication.md)
+      + [ユニバーサルエディターを使用したローカルAEM開発](/help/implementing/universal-editor/local-dev.md)
+      + [ユニバーサルエディター呼び出し](/help/implementing/universal-editor/calls.md)

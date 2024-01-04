@@ -2,9 +2,9 @@
 title: AEM のユニバーサルエディターの概要
 description: ユニバーサルエディターへのアクセス権を取得する方法と、これを使用するために最初の AEM アプリのインストルメントを開始する方法について説明します。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '900'
 ht-degree: 76%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 76%
 >[!TIP]
 >
 >すぐに例を確認したい場合は、[GitHub のユニバーサルエディターサンプルアプリ](https://github.com/adobe/universal-editor-sample-editable-app)を参照してください。
+
+{{universal-editor-status}}
 
 ## オンボーディング手順 {#onboarding}
 
