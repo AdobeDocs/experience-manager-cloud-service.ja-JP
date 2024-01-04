@@ -1,15 +1,15 @@
 ---
 title: コンテンツフラグメント — 設定
-description: コンテンツフラグメントとGraphQL機能でAEMヘッドレス配信機能を使用する方法を説明します。
+description: コンテンツフラグメントとGraphQL、AEMヘッドレス配信機能およびページオーサリングで使用する機能を有効にする方法について説明します。
 feature: Content Fragments
 role: Developer, Architect
-source-git-commit: 676173813b6ea4defeafe25c95be9668d32aac38
+exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 27%
+source-wordcount: '392'
+ht-degree: 39%
 
 ---
-
 
 # コンテンツフラグメント — 設定 {#content-fragments-setup}
 
@@ -23,7 +23,7 @@ Adobe Experience Manager(AEM)as a Cloud Service内のコンテンツフラグメ
   >
   >**コンテンツフラグメントモデル**&#x200B;を有効にしない場合：
   >
-  >* の **作成** オプションは、モデルの作成には使用できません。
+  >* 「**作成**」オプションは、モデルの作成には使用できません。
   >* [Sites 設定を選択して関連するエンドポイントを作成する](/help/headless/graphql-api/graphql-endpoint.md)ことはできません。
 
 * **GraphQL 永続クエリ** - オプション
@@ -43,7 +43,7 @@ Adobe Experience Manager(AEM)as a Cloud Service内のコンテンツフラグメ
 
 >[!NOTE]
 >
->[下位設定](/help/implementing/developing/introduction/configurations.md#configuration-resolution) （別の設定内にネストされた設定）は、コンテンツフラグメント、コンテンツフラグメントモデル、GraphQLクエリで使用できます。
+>[サブ設定](/help/implementing/developing/introduction/configurations.md#configuration-resolution)（別の設定内にネストされた設定）は、コンテンツフラグメント、コンテンツフラグメントモデルおよび GraphQL クエリでの使用が完全にサポートされています。
 >
 >注意：
 >
@@ -74,4 +74,4 @@ Adobe Experience Manager(AEM)as a Cloud Service内のコンテンツフラグメ
 
 他の設定（したがってグローバルを除く）を同等の Assets フォルダーで使用するには、接続を定義する必要があります。 これをおこなうには、 **設定** （内） **Cloud Service** タブ **フォルダーのプロパティ** 」と入力します。
 
-![設定の適用](assets/cf-setup-apply-conf.png)
+![設定を適用](assets/cf-setup-apply-conf.png)

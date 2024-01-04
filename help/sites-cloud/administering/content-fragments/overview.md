@@ -1,15 +1,15 @@
 ---
 title: コンテンツフラグメントの操作の概要
-description: Adobe Experience Manager(AEM) のコンテンツフラグメントを使用して、ページに依存しないコンテンツのデザイン、作成、キュレーション、使用を可能にし、ヘッドレス配信やページオーサリングに最適な方法を説明します。
+description: AEM as a Cloud Serviceのコンテンツフラグメントを使用して、コンテンツを作成および使用する方法を説明します。ヘッドレス配信やページオーサリングに最適です。
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '1823'
-ht-degree: 40%
+source-wordcount: '1792'
+ht-degree: 42%
 
 ---
-
 
 # コンテンツフラグメントの操作の概要 {#overview-working-with-content-fragments}
 
@@ -75,7 +75,7 @@ Adobe Experience Manager(AEM) をas a Cloud Serviceしたコンテンツフラ�
 >[!NOTE]
 >
 >**コンテンツフラグメント**&#x200B;と&#x200B;**[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;は、AEM 内の異なる機能です。
->* **コンテンツフラグメント**&#x200B;は、定義と構造を備えたエディトリアルコンテンツですが、視覚的なデザインやレイアウトは追加されていません。これらを使用して、テキスト、数値、日付などの構造化データにアクセスできます。
+>* **コンテンツフラグメント**&#x200B;は、定義と構造を備えたエディトリアルコンテンツですが、視覚的なデザインやレイアウトは追加されていません。テキスト、数値、日付などの構造化データにアクセスするために使用できます。
 >* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツであり、web ページのフラグメントです。
 >
 >エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
@@ -84,8 +84,8 @@ Adobe Experience Manager(AEM) をas a Cloud Serviceしたコンテンツフラ�
 
 以下のページでは、コンテンツフラグメントを作成、設定、管理、使用するためのタスクについて説明します。
 
-* [インスタンスに対するコンテンツフラグメント機能を有効化します。](/help/sites-cloud/administering/content-fragments/setup.md)
-* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)  — モデルの有効化、作成、定義
+* [インスタンスに対するコンテンツフラグメント機能を有効にする](/help/sites-cloud/administering/content-fragments/setup.md)
+* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - モデルを有効化、作成および定義します。
 * [コンテンツフラグメントを作成する](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment) （コンテンツフラグメントコンソールを使用）
 
 フラグメントを作成した後は、次の操作を実行できます。
@@ -234,7 +234,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 * **コンテンツモデル**
 
-   * [&#128279;](/help/sites-cloud/administering/content-fragments/setup.md)設定ブラウザーを使用して有効化されます。
+   * ](/help/sites-cloud/administering/content-fragments/setup.md)設定ブラウザーを使用して有効化[されます。
    * [ツールを使用して作成](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)されます。
    * [フラグメントを作成](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments)するために必要です。
    * フラグメントの構造（タイトル、コンテンツ要素、タグ定義）を定義します。
@@ -260,12 +260,12 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
    * [ページ上でフラグメントを参照](/help/sites-cloud/authoring/fundamentals/content-fragments.md)するために必要です。
    * フラグメントのレイアウトと配信（チャネルなど）を担当します。
    * フラグメントは、レイアウトを定義し、一部またはすべての要素／バリエーションと関連するコンテンツを配信するために、1 つ以上の専用コンポーネントを必要とします。
-   * 作成時にフラグメントをページにドラッグすると、必要なコンポーネントが自動的に関連付けられます。
+   * 作成時にフラグメントをページにドラッグすると、必須コンポーネントが自動的に関連付けられます。
    * 詳しくは、 [コンテンツフラグメントコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ja).
 
 ## 使用例 {#example-usage}
 
-フラグメントと、その要素およびバリエーションを一緒に使用して、複数のチャネルに対応した一貫性のあるコンテンツを作成できます。フラグメントをデザインする際は、何を使用し、どこで使用するかを考慮する必要があります。
+フラグメントと、その要素およびバリエーションを一緒に使用すると、複数のチャネルに対応した一貫性のあるコンテンツを作成できます。フラグメントをデザインする際は、何を使用し、どこで使用するかを考慮する必要があります。
 
 ### WKND サンプル {#wknd-sample}
 
