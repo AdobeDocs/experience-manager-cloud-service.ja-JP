@@ -2,7 +2,7 @@
 title: 準備段階
 description: AEM インストールをクラウドに移行する準備ができていることを確認するために、必要な手順を説明します。
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '1900'
 ht-degree: 95%
@@ -49,7 +49,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 <tbody>
   <tr>
     <td>可変フィルターと不変フィルターを対応するパッケージに分割する</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=ja">AEM as a Cloud Service の主な変更点</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=ja#mutable-vs-immutable">AEM as a Cloud Service の AEM プロジェクト構造</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html">AEM as a Cloud Service の主な変更点</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=ja#mutable-vs-immutable">AEM as a Cloud Service の AEM プロジェクト構造</a></td>
     <td>AEM as a Cloud Service にデプロイできる単一のパッケージには、サブパッケージを含めることができます。主に、独自のパッケージに分けられた可変コンテンツと不変コンテンツを含めるために使用します。</td>
   </tr>
   <tr>
@@ -119,7 +119,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
   </tr>
   <tr>
     <td>カスタムレンディション手順</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=ja">処理プロファイル</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html">処理プロファイル</a></td>
     <td>カスタムレンディション生成、画像変換、ビデオエンコーディングは、対応する処理プロファイルを作成して、アセット処理サービスにオフロードする必要があります。</td>
   </tr>
   <tr>
@@ -129,7 +129,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
   </tr>
   <tr>
     <td>すべてのメンテナンスタスクが設定可能とは限りません</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html?lang=ja">AEM as a Cloud Service メンテナンスタスク</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html">AEM as a Cloud Service メンテナンスタスク</a></td>
     <td>AEM as a Cloud Service では、特定のメンテナンスタスクのみを設定できます。</td>
   </tr>
   <tr>
@@ -144,7 +144,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
   </tr>
   <tr>
     <td>バックアップと復元</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html?lang=ja">AEM as a Cloud Service のバックアップと復元</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html">AEM as a Cloud Service のバックアップと復元</a></td>
     <td></td>
   </tr>
   <tr>

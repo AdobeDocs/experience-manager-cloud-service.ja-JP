@@ -2,7 +2,7 @@
 title: Cloud Acceleration Manager の基本を学ぶ
 description: ここでは、Cloud Acceleration Manager の使用方法と基本事項の概要を説明します。
 exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 96%
@@ -42,7 +42,7 @@ Cloud Acceleration Manager（CAM）に移動するには、次の手順に従い
 >id="aemcloud_cam_gettingstarted"
 >title="Cloud Acceleration Manager の基本を学ぶ"
 >abstract="プロジェクトを作成し、AEM as a Cloud Service へのジャーニーを開始します。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=ja" text="Cloud Acceleration Manager を使用するメリット"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/introduction-cam/benefits-cam.html" text="Cloud Acceleration Manager を使用するメリット"
 
 Cloud Acceleration Manager(CAM) のランディングページを使用すると、複数のプロジェクトを作成および編集できます。
 

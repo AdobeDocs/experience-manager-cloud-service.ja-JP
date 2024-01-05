@@ -2,10 +2,10 @@
 title: 適切な人材、適切な役割
 description: プロジェクトに適した担当者を選択し、適切な役割に割り当てる方法を説明します。
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 96%
+source-wordcount: '832'
+ht-degree: 95%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 96%
 >id="aemcloud_chooseteam"
 >title="適切なチームの選択"
 >abstract="適切な人材を適切な職に就けて、Adobe Experience Manager のデプロイメントを成功に導きます。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=ja" text="KPI の調整"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=ja" text="KPI の評価"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="KPI の調整"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html" text="KPI の評価"
 
 組織では、複数の部門がデジタルエクスペリエンスの異なる側面を担っている可能性が高いでしょう。ガバナンスが機能しなければ、いつ果てしない論争、内輪もめ、混乱に陥ってもおかしくありません。
 

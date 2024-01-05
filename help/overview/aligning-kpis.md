@@ -2,10 +2,10 @@
 title: KPI の調整
 description: AEM実装に適した KPI を選択する方法を説明します。
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 93%
+source-wordcount: '482'
+ht-degree: 92%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 93%
 >id="aemcloud_alignkpis"
 >title="KPI の調整"
 >abstract="デジタル世界では、あらゆるものを測定することができます。Adobe Experience Manager の実装に適切な主要業績評価指標（KPI）を選択すると、最も重要なことに集中することができます。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=ja" text="KPI の評価"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=ja" text="適切なチームの選択"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html" text="KPI の評価"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html" text="適切なチームの選択"
 
 デジタル世界では、あらゆるものを測定することができます。Adobe Experience Manager の実装に 3 つ主要業績評価指標（KPI）を選択することで、最も重要なことに集中することができます。
 
