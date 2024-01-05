@@ -3,9 +3,9 @@ title: ContextHub データを使用したページのプレビュー
 description: ContextHub ツールバーは、ContextHub ストアからのデータを表示し、ストアデータを変更することができ、コンテンツのプレビューに立ちます。
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ContextHub ツールバーを使用すると、ContextHub ストアからデー�
 
 このツールバーは、1 つ以上の UI モジュールを含む一連の UI モードで構成されます。
 
-* UI モードは、ツールバーの左側に表示されるアイコンです。アイコンを選択すると、そのアイコンに含まれる UI モジュールがツールバーに表示されます。
+* UI モードは、ツールバーの左側に表示されるアイコンです。アイコンを選択すると、そのモードに含まれる UI モジュールがツールバーに表示されます。
 * UI モジュールは、1 つ以上の ContextHub ストアのデータを表示します。また、一部の UI モジュールでは、ストアデータを操作することもできます。
 
 ContextHub によって、いくつかの UI モードと UI モジュールがインストールされます。管理者が、異なる UI モードと UI モジュールを表示するように [ContextHub を設定](/help/implementing/developing/personalization/configuring-contexthub.md)している場合があります。
@@ -32,7 +32,7 @@ ContextHub ツールバーは、プレビューモードで使用できます。
 
 1. ツールバーを表示するには、ContextHub アイコンを選択します。
 
-   ![ContextHub ボタン](/help/sites-cloud/authoring/assets/contexthub-button.png)
+   ![「ContextHub」ボタン](/help/sites-cloud/authoring/assets/contexthub-button.png)
 
 ## UI モジュールの機能 {#ui-module-features}
 
@@ -46,16 +46,16 @@ UI モジュールは、1 つ以上の ContextHub ストアのデータをツー
 
 ### ポップアップコンテンツ {#popup-content}
 
-一部の UI モジュールは、クリックまたはタップされるとポップアップオーバーレイを表示します。 通常、ポップアップには、ツールバーに表示される以外の追加情報が含まれます。
+一部の UI モジュールでは、クリックまたはタップするとポップアップオーバーレイが表示されます。一般的に、ポップアップには、ツールバーに表示されている以外の追加情報が含まれています。
 
 ![ContextHub プロファイル情報](/help/sites-cloud/authoring/assets/contexthub-profile.png)
 
 ### ポップアップフォーム {#popup-forms}
 
-モジュールのポップアップオーバーレイには、ContextHub ストア内のデータを変更できるフォーム要素を含めることができます。 ページのコンテンツがストアデータによって決まる場合は、このフォームを使用してページコンテンツの変更を監視できます。
+モジュールのポップアップオーバーレイには、ContextHub ストア内のデータを変更するためのフォーム要素を含めることができます。ページのコンテンツがストアデータによって決まる場合は、このフォームを使用してページコンテンツの変更を監視できます。
 
 ### 全画面表示モード {#fullscreen-mode}
 
-ポップアップオーバーレイには、ポップアップコンテンツを展開してブラウザーウィンドウまたは画面全体に表示するアイコンを含めることができます。
+ポップアップオーバーレイには、選択するとポップアップコンテンツを拡張してブラウザーウィンドウまたは画面全体に表示するアイコンを含めることができます。
 
-![全画面表示ボタン](/help/sites-cloud/authoring/assets/contexthub-fullscreen.png)
+![「全画面表示」ボタン](/help/sites-cloud/authoring/assets/contexthub-fullscreen.png)

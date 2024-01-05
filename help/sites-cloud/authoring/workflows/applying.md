@@ -1,17 +1,17 @@
 ---
 title: ページへのワークフローの適用
-description: オーサリング時に、ワークフローを呼び出してページ上で動作させることができます。複数のワークフローを適用することもできます。
+description: オーサリングでは、ワークフローを呼び出して、ページで実行できます。複数のワークフローを適用することもできます。
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '654'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-# ページへのワークフローの適用  {#applying-workflows-to-pages}
+# ページへのワークフローの適用 {#applying-workflows-to-pages}
 
-オーサリング時に、ワークフローを呼び出してページ上で動作させることができます。複数のワークフローを適用することもできます。
+オーサリングでは、ワークフローを呼び出して、ページで実行できます。複数のワークフローを適用することもできます。
 
 ワークフローを適用する際には、次の情報を指定します。
 
@@ -53,7 +53,7 @@ ht-degree: 83%
 * [サイトツールバーの「作成」オプション](#starting-a-workflow-from-the-sites-toolbar)。
 * [サイトコンソールのタイムラインレール](#starting-a-workflow-from-the-timeline)。
 
-どちらの場合も、 [ワークフローを作成ウィザードでワークフローの詳細を指定します](#specifying-workflow-details-in-the-create-workflow-wizard).
+どちらの場合も、[ワークフロー作成ウィザードでワークフローの詳細を指定する](#specifying-workflow-details-in-the-create-workflow-wizard)必要があります。
 
 ### Sites ツールバーからのワークフローの開始 {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -117,7 +117,7 @@ ht-degree: 83%
 
 1. **スコープ**&#x200B;ステップで、以下のものを選択できます。
 
-   * **コンテンツを追加** 開く [パスブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) 追加のリソースを選択します。ブラウザーで、 **選択** をクリックして、コンテンツをワークフローインスタンスに追加します。
+   * 「**コンテンツを追加**」で[パスブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)を開き、追加リソースを選択します。ブラウザーでは、「**選択**」を選択して、コンテンツをワークフローインスタンスに追加します。
 
    * 追加のアクションを表示するための既存のリソース
 
@@ -142,6 +142,6 @@ ht-degree: 83%
 
 ## ページエディターからのワークフローの開始 {#starting-a-workflow-from-the-page-editor}
 
-ページの編集時に、ツールバーから「**ページ情報**」を選択できます。ドロップダウンメニューには、「**ワークフローで開始**」オプションがあります。ダイアログが開き、必要なワークフローと必要に応じてタイトルを指定できます。
+ページの編集時に、ツールバーから「**ページ情報**」を選択できます。ドロップダウンメニューには、「**ワークフローで開始**」オプションがあります。これによりダイアログが開き、必要なワークフローと、必要な場合はタイトルを指定できます。
 
 ![ページエディターからのワークフローの開始](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)

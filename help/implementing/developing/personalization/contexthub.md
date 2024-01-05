@@ -3,15 +3,15 @@ title: ContextHub
 description: ContextHub は、コンテキストデータを保存、操作および表示するためのフレームワークです。
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '289'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # ContextHub {#contexthub}
 
-ContextHub は、コンテキストデータを保存、操作および表示するためのフレームワークです。その主な特長は、次の機能を提供することです。 [様々なペルソナをシミュレートおよび切り替えながら、コンテキストデータを表示](/help/sites-cloud/authoring/personalization/contexthub.md).
+ContextHub は、コンテキストデータを保存、操作および表示するためのフレームワークです。主な機能は、[様々なペルソナをシミュレートおよび切り替えながら、コンテキストデータを表示する](/help/sites-cloud/authoring/personalization/contexthub.md)機能を提供することです。
 
 ContextHub では、次のことができます。
 

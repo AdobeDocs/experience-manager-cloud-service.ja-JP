@@ -1,26 +1,26 @@
 ---
-title: GraphQLの永続クエリ — Dispatcher でのキャッシュの有効化
-description: Dispatcher は、Adobe Experience Manager パブリッシュ環境の前にあるキャッシュとセキュリティのレイヤーです。AEMヘッドレスの永続クエリのキャッシュを有効にできます。
+title: GraphQL の永続クエリ - Dispatcher でのキャッシュの有効化
+description: Dispatcher は、Adobe Experience Manager パブリッシュ環境の前にあるキャッシュとセキュリティのレイヤーです。AEM ヘッドレスの永続クエリのキャッシュを有効にできます。
 feature: Dispatcher, GraphQL API
 exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
 source-git-commit: ea5b404e83c11f0057342bff22ba45e6b0ead124
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '391'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
-# GraphQLの永続クエリ — Dispatcher でのキャッシュの有効化 {#graphql-persisted-queries-enabling-caching-dispatcher}
+# GraphQL の永続クエリ - Dispatcher でのキャッシュの有効化 {#graphql-persisted-queries-enabling-caching-dispatcher}
 
 >[!CAUTION]
 >
->Dispatcher でのキャッシュが有効な場合、 [CORS フィルター](/help/headless/deployment/cross-origin-resource-sharing.md) が不要なので、セクションを無視できます。
+>Dispatcher でのキャッシュが有効な場合、[CORS フィルター](/help/headless/deployment/cross-origin-resource-sharing.md)が不要なので、セクションを無視できます。
 
-永続化されたクエリのキャッシュは、Dispatcher ではデフォルトで有効になっていません。 複数のオリジンで CORS（クロスオリジンリソース共有）を使用している場合、Dispatcher 設定を確認し、場合によっては更新する必要があるので、デフォルトを有効にすることはできません。
+永続化されたクエリのキャッシュは、Dispatcher ではデフォルトで有効になっていません。複数のオリジンで CORS（クロスオリジンリソース共有）を使用している場合、Dispatcher 設定を確認し、場合によっては更新する必要があるので、デフォルトで有効にすることはできません。
 
 >[!NOTE]
 >
->Dispatcher は `Vary` ヘッダー。
+>Dispatcher では `Vary` ヘッダーはキャッシュされません。
 >
 >他の CORS 関連ヘッダーのキャッシュは、Dispatcher で有効にすることができますが、CORS オリジンが複数ある場合は不十分な可能性があります。
 
@@ -28,11 +28,11 @@ ht-degree: 8%
 >
 >Dispatcher に関する詳細なドキュメントについては、[Dispatcher ガイド](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja)を参照してください。
 
-## 永続クエリのキャッシュの有効化 {#enable-caching-persisted-queries}
+## 永続クエリのキャッシュを有効にする {#enable-caching-persisted-queries}
 
-永続化されたクエリのキャッシュを有効にするには、Dispatcher 変数を定義します `CACHE_GRAPHQL_PERSISTED_QUERIES`:
+永続クエリーのキャッシュを有効にするには、Dispatcher 変数 `CACHE_GRAPHQL_PERSISTED_QUERIES` を定義します。
 
-1. 変数を Dispatcher ファイルに追加します。 `global.vars`:
+1. 変数を Dispatcher ファイル `global.vars` に追加します。
 
    ```xml
    Define CACHE_GRAPHQL_PERSISTED_QUERIES
@@ -40,9 +40,9 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->を使用して、永続化されたクエリに対して Dispatcher のキャッシュを有効にする場合 `Define CACHE_GRAPHQL_PERSISTED_QUERIES` an `ETag` ヘッダーが Dispatcher によって応答に追加されます。
+>`Define CACHE_GRAPHQL_PERSISTED_QUERIES` を使用して永続化されたクエリに対して Dispatcher のキャッシュを有効にする場合、`ETag` ヘッダーが Dispatcher によって応答に追加されます。
 >
->デフォルトでは、 `ETag` ヘッダーは、次のディレクティブを使用して設定します。
+>デフォルトでは、`ETag` ヘッダーは、次のディレクティブを使用して設定されます。
 >
 >```
 >FileETag MTime Size 
@@ -50,7 +50,7 @@ ht-degree: 8%
 >
 >ただし、この設定は応答の小さな変更を考慮しないので、永続化されたクエリ応答で使用すると、問題が発生する可能性があります。
 >
->個人を成し遂げるには `ETag` の計算 *各* 一意の応答 `FileETag Digest` 設定は、dispatcher の設定で使用する必要があります。
+>ユニークな&#x200B;*各*&#x200B;応答での個々の `ETag` 計算を成し遂げるには、`FileETag Digest` 設定が Dispatcher 設定で使用される必要があります。
 >
 >```xml
 ><Directory />    
@@ -61,18 +61,18 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->を [キャッシュ可能なドキュメントに対する Dispatcher の要件](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)を指定しない場合、Dispatcher はサフィックスを追加します `.json` をすべての永続化されたクエリ URL に追加し、結果をキャッシュできるようにします。
+>[キャッシュ可能なドキュメントに対する Dispatcher の要件](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=ja#how-does-the-dispatcher-return-documents%3F)に適合するために、Dispatcher はすべての永続クエリ URL に接尾辞 `.json` を追加し、結果をキャッシュできるようにします。
 >
->このサフィックスは、永続化されたクエリのキャッシュが有効になると、書き換えルールによって追加されます。
+>この接尾辞は、永続クエリのキャッシュが有効になると、書き換えルールによって追加されます。
 
 ## Dispatcher での CORS の設定 {#cors-configuration-in-dispatcher}
 
 CORS リクエストを使用するお客様は、Dispatcher で CORS の設定を確認および更新する必要が生じる場合があります。
 
-* The `Origin` ヘッダーは、Dispatcher を介してAEMパブリッシュに渡さないでください。
-   * 次を確認します。 `clientheaders.any` ファイル。
-* 代わりに、許可されたオリジンに対して、Dispatcher レベルで CORS リクエストを評価する必要があります。 また、この方法では、CORS 関連のヘッダーが、どの場合でも 1 か所で正しく設定されます。
-   * このような設定は、 `vhost` ファイル。 次に設定例を示します。簡単にするために、CORS 関連の部分のみが提供されています。 特定の使用例に合わせて調整できます。
+* `Origin` ヘッダーは、Dispatcher を介して AEM パブリッシュに渡さないでください。
+   * `clientheaders.any` ファイルを確認します。
+* 代わりに、許可されたオリジンに対して、Dispatcher レベルで CORS リクエストを評価する必要があります。また、この方法では、CORS 関連のヘッダーが、どの場合でも 1 か所で正しく設定されます。
+   * このような設定は `vhost` ファイルに追加されます。次に設定例を示します。簡単にするために、CORS 関連の部分のみが提供されています。特定のユースケースに合わせて調整してください。
 
   ```xml
   <VirtualHost *:80>

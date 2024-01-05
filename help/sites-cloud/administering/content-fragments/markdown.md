@@ -5,17 +5,17 @@ feature: Content Fragments
 role: User
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '559'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
 # マークダウン {#markdown}
 
-次の場合、 [authoring](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) お使いのコンテンツフラグメント [複数行テキストフィールド](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) 次の条件で定義： **デフォルトのタイプ** / **Markdown**. コンテンツフラグメントエディターは、 *markdown* 構文を使用して、ページオーサリングとヘッドレス配信の両方でコンテンツを簡単に記述できます。
+コンテントフラグメントを[オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown)している場合、**マークダウン**&#x200B;の&#x200B;**ディフォルトタイプ**&#x200B;で定義されている[複数のラインテキストフィールド](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)がある可能性があります。コンテンツフラグメントエディターは、ページオーサリングとヘッドレス配信の両方に&#x200B;*マークダウン*&#x200B;構文を使用して、ユーザーがコンテンツを簡単に作成できるようにします。
 
-![エディター内の Markdown 複数行テキストフィールド](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
+![エディター内のマークダウン複数行テキストフィールド](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
 以下を定義できます。
 
@@ -31,7 +31,7 @@ ht-degree: 61%
 
 ## 見出し表記 {#heading-notation}
 
-ヘッダーを作成するには、見出しの前にハッシュタグ (#) を配置します。 H1 には 1 つのハッシュタグ (#) が使用され、H2 には 2 つのハッシュタグ (##) が使用されます。 最大 6 個のハッシュタグを使用できます。 次に例を示します。
+ヘッダーを作成するには、見出しの前にハッシュタグ（#）を配置します。H1 にはハッシュタグを 1 つ（#）、H2 にはハッシュタグを 2 つ（##）使用します。最大 6 個のハッシュタグを使用できます。次に例を示します。
 
     `## This is an H2`
 
@@ -39,7 +39,7 @@ ht-degree: 61%
 
     `###### This is a H6`
 
-必要に応じて、H1 を作成するには、テキストに等号で下線を付け、マイナス記号で下線を付けて H2 を作成します。 次に例を示します。
+オプションとして、テキストに等号で下線を付けて H1、マイナス記号でテキストに下線を付けて H2 を作成できます。次に例を示します。
 
     `This is an H1`
 
@@ -51,7 +51,7 @@ ht-degree: 61%
 
 ## 段落と改行 {#paragraphs-and-line-breaks}
 
-段落は、1 つ以上の空白行で区切られた、1 つ以上の連続したテキスト行です。 空白行とは、スペースやタブ以外を含まない行です。 通常の段落はスペースまたはタブでインデントされません。
+段落は、1 つ以上の空白行で区切られた、1 つ以上の連続するテキスト行です。空白行とは、スペースやタブ以外を含まない行です。通常の段落はスペースまたはタブでインデントされません。
 
 改行するには、行の末尾に 2 つ以上のスペースを付けてからリターンします。
 
@@ -105,7 +105,7 @@ ht-degree: 61%
 
 ## ブロック引用 {#block-quotes}
 
-テキストの前に > 記号を追加すると、テキストを引用できます。 次に例を示します。
+テキストの前に > 記号を追加すると、テキストを引用できます。次に例を示します。
 
     `>This is block quotes`
 
@@ -113,7 +113,7 @@ ht-degree: 61%
 
     `>asdfahsdlfasdfj`
 
-ネストされたブロック引用符を使用できます。 次に例を示します。
+ネストされたブロック引用符を使用できます。次に例を示します。
 
     `> This is the first level of quoting.`
 
@@ -137,7 +137,7 @@ ht-degree: 61%
 
     `* item in list`
 
-順序付きリストを作成するには、リスト内の各項目の前に数字とピリオドを 1 つ追加します。 次に例を示します。
+順序付きリストを作成するには、リスト内の各項目の前に数字とピリオドを 1 つ追加します。次に例を示します。
 
     `1. First item in list.`
 
@@ -165,7 +165,7 @@ ht-degree: 61%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-コードの範囲を示すには、バッククォート（&grave;）で囲みます。書式設定済みのコードブロックとは異なり、コード span は通常の段落内のコードを示します。
+コードの範囲を示すには、バッククォート（&grave;）で囲みます。事前に形式設定されたコードブロックとは異なり、コード範囲は通常の段落内のコードを示します。
 
 次に例を示します。
 
@@ -173,7 +173,7 @@ ht-degree: 61%
 
 ## コードブロック {#code-blocks}
 
-コードブロックは、通常、ソースコードを説明するために使用されます。 コードブロックを作成するには、タブを使用してコードをインデントするか、少なくとも 4 つのスペースを使用します。 次に例を示します。
+コードブロックは、通常、ソースコードを説明するために使用されます。タブを使用するかまたは少なくとも 4 つのスペースを使用して、コードをインデントすることで、コードブロックを作成できます。次に例を示します。
 
     `This is a normal paragraph.`
 

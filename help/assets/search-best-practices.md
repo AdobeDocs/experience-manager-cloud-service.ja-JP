@@ -4,13 +4,13 @@ description: アプリケーション内でアセットのメタデータを検�
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 source-git-commit: 47003c9aa0faefc01a9935c53a5a78938c37cf66
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2521'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# AEM Assets Search のベストプラクティス
+# AEM Assets 検索のベストプラクティス
 
 [!DNL Adobe Experience Manager Assets] は、コンテンツ速度の向上に役立つ堅牢なアセット検索方法を備えています。適切なアセットの検索が困難で時間がかかる場合があります。したがって、[!DNL Adobe Experience Manager Assets] におけるアセットの検索機能は、デジタルアセット管理システムの利用の中核を成します。クリエイティブ担当者によるさらなる利用、ビジネスユーザーやマーケティング担当者によるアセットの堅牢な管理、DAM 管理者による管理などの用途があります。
 

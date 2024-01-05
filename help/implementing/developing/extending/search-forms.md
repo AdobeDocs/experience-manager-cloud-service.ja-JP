@@ -3,9 +3,9 @@ title: 検索フォームの設定
 description: Adobe Experience Manager as a Cloud Service の検索フォームの設定。
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2033'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
 
 >[!NOTE]
 >
->Assets 関連の検索フォームについて詳しくは、 [Assets — 検索ファセット](/help/assets/search-facets.md).
+>アセット関連の検索フォームについて詳しくは、[アセット - 検索ファセット](/help/assets/search-facets.md)を参照してください。
 
 
 ## 述語とその設定 {#predicates-and-their-settings}
@@ -480,7 +480,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
 >一般的な検索述語は、次の場所で定義されます。
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->この情報は参照用です。 `/libs`.
+>この情報は参照用です。`/libs` には変更を加えないでください。
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
@@ -527,7 +527,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
 
 * **オプションパス**
 
-  ユーザーは、「述語の設定」タブのパスブラウザーを使用してパスを選択できます。次を選択した後： **+** アイコンを使用して、選択範囲を有効なオプションのリストに追加します ( **-** アイコンをクリックして、必要に応じて削除します )。
+  ユーザーは、「述語の設定」タブのパスブラウザーを使用してパスを選択できます。選択した後、**+** アイコンを使用して、有効なオプションのリストに選択を追加します（必要に応じて、**-** アイコンを削除します）。
 
   オプションは、ユーザーが作成したコンテンツノードで、次の構造を持ちます。
 
@@ -574,7 +574,7 @@ Sites 専用の述語の、公開およびライブコピーのチェックボ�
 
    * 新しいフィールドを追加する場合：
 
-     述語を追加すると、 **設定** 「 」タブが開き、定義可能なプロパティが表示されます。
+     述語を追加すると、「**設定**」タブが開き、定義可能なプロパティが表示されます。
 
    * 既存の述語を更新する場合：
 
@@ -633,7 +633,7 @@ Sites 専用の述語の、公開およびライブコピーのチェックボ�
 
 1. 検索対象のプロパティを定義するノードを作成します。
 
-   ユーザーが使用できる個々のオプションの定義を保持するルートノードが必要です。
+   ユーザーに提示される個々のオプションの定義を格納するルートノードが必要です。
 
    個々のオプションのノードには、次のプロパティが必要です。
 

@@ -4,9 +4,9 @@ description: AEM as a Cloud Service リリース 2023.07.0 の移行ツールの
 feature: Release Information
 exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
 source-git-commit: 3e5c35136c00f6050dda56c318104a7eb04fa271
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '156'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 46%
 
 ### リリース日 {#release-date-bpa}
 
-ベストプラクティスアナライザー v2.1.42 のリリース日は 2023年7月06日です。
+ベストプラクティスアナライザー v2.1.42 のリリース日は 2023年7月06日（PT）です。
 
 ### 新機能 {#what-is-new-bpa}
 
-* このリリースのベストプラクティスアナライザーには、複数のベストプラクティスパターンが追加されました。 次のものが含まれます。
+* ベストプラクティスアナライザーのこのリリースには、複数のベストプラクティスパターンが追加されました。次のものが含まれます。
    * 最小メンテナンスタスク設定の識別
    * 長時間実行されるクエリや処理の多いクエリの検出
    * 実行中または古い状態のオーサーワークフローの検出数が多い

@@ -1,21 +1,21 @@
 ---
-title: AEMアダプティブフォームをMicrosoft&reg; SharePointリストに接続する方法
-description: アダプティブフォームをMicrosoft&reg; SharePointリストに接続します。 Microsoft&reg; SharePointリストを設定し、設定を使用してフォームデータモデルを作成する方法を説明します。 さらに、FDM をアダプティブフォームに統合する方法も説明します。
+title: AEM アダプティブフォームを Microsoft® SharePoint リストに接続する方法
+description: アダプティブフォームを Microsoft® SharePoint リストに接続します。Microsoft® SharePoint リストを設定し、設定を使用してフォームデータモデルを作成する方法について説明します。さらに、FDM をアダプティブフォームに統合する方法も説明します。
 role: User, Developer
 keywords: AEMアダプティブフォームをMicrosoft SharePointリストに接続し、アダプティブフォームをMicrosoft SharePointリストに接続し、AEMアダプティブフォームをMicrosoft SharePointリストに統合し、アダプティブフォームをMicrosoftリストに統合し、アダプティブフォームからSharePointリストにデータを送信しAEMます。
 hide: true
 hidefromToC: true
 source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '539'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
 
 # アダプティブフォームのMicrosoft® SharePointリストへの接続
 
-<span class="preview"> これはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> これはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja?cloud-environments). </span>
 
 **Microsoft® SharePoint**:Microsoft® SharePointは、すべてのチーム、部門、部門に動的で効率的なチームサイトを提供することで、コラボレーションを可能にします。 任意の Web ブラウザー (Microsoft® Edge、Internet Explorer、Chrome、Firefox など ) を使用して、任意のデバイスから情報を保存、整理、共有、アクセスするために使用されます。 の 2 つの主要な構成要素 **Microsoft® SharePoint** は次のとおりです。
 
@@ -30,15 +30,15 @@ ht-degree: 5%
 
 アダプティブフォームをMicrosoft® SharePointリストに接続する前に、次の手順を実行します。
 
-1. [Microsoftの設定](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
-1. [Microsoftを使用してフォームデータモデルを作成する](/help/forms/create-form-data-models.md)
+1. [Microsoft の設定](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
+1. [Microsoft を使用してフォームデータモデルを作成する](/help/forms/create-form-data-models.md)
 1. [データを取得して送信するためのフォームデータモデルの設定](/help/forms/work-with-form-data-model.md#configure-services)
 1. [アダプティブフォームを作成](/help/forms/creating-adaptive-form-core-components.md)
 
 次の操作が可能になりました。
 
-* [Connect Microsoft](#connect-an-adaptive-form-to-microsoft-sharepoint-list-connect-af-sharepoint-list)
-* [Connect Microsoft](#connect-sharepoint-list-workflow)
+* [Microsoft に接続する](#connect-an-adaptive-form-to-microsoft-sharepoint-list-connect-af-sharepoint-list)
+* [Microsoft に接続する](#connect-sharepoint-list-workflow)
 
 ## アダプティブフォームのMicrosoft® SharePointリストへの接続 {#connect-af-sharepoint-list}
 
@@ -86,9 +86,9 @@ Microsoft® SharePointリストをAEMワークフローに統合するには：
 * [データソースの設定](/help/forms/configuring-submit-actions.md)
 * [フォームデータモデルの作成](/help/forms/create-form-data-models.md)
 * [Forms中心のAEM Workflows — ステップリファレンスを使用して、ビジネスプロセスを自動化します。](/help/forms/aem-forms-workflow-step-reference.md)
-* [アダプティブフォーム用のカスタム送信アクションの作成](/help/forms/custom-submit-action-form.md)
-* [アダプティブフォームを作成するかAEM Sitesページに追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [アダプティブフォームをAEM Sitesページに埋め込む](/help/forms/embed-adaptive-form-aem-sites.md)
+* [アダプティブフォーム用のカスタム送信アクションを作成する](/help/forms/custom-submit-action-form.md)
+* [AEM Sites ページへのアダプティブフォームの作成または追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [AEM Sites ページへのアダプティブフォームの埋め込み](/help/forms/embed-adaptive-form-aem-sites.md)
 * [アダプティブフォームのテーマを作成、使用、カスタマイズする](/help/forms/using-themes-in-core-components.md)
 
 

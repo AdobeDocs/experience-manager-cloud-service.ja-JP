@@ -3,9 +3,9 @@ title: ContextHub の診断
 description: ContextHub には、ContextHub フレームワークの概要を確認できる診断ページがあります
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '438'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ ContextHub の診断ページには、作成されたストアおよび UI モ�
 
 ## Clientlibs {#clientlibs}
 
-「Clientlibs」セクションには、すべての t が一覧表示されます[クライアントライブラリフォルダー](/help/implementing/developing/introduction/clientlibs.md) ContextHub が読み込まれたことを示します。 クライアントライブラリは次のように分類されます。
+Clientlibs セクションには、ContextHub によって読み込まれたすべての[クライアントライブラリフォルダー](/help/implementing/developing/introduction/clientlibs.md)が一覧表示されます。クライアントライブラリは次のように分類されます。
 
 * **kernel.js：** ContextHub フレームワーク、セグメントエンジン、ストアタイプを実装するクライアントライブラリ。
 * **ui.js：** ContextHub UI および UI モジュールタイプを実装するクライアントライブラリ。

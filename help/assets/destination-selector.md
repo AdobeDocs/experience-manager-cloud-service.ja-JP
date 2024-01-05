@@ -5,9 +5,9 @@ contentOwner: Adobe
 role: Admin,User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1904'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -212,7 +212,7 @@ interface SelectedDestination {
 
 ### 例 1：宛先セレクターでフォルダーを作成
 
-宛先セレクターを使用すると、特定の場所にアセットをアップロード、移動またはコピーするためのフォルダーを作成できます。
+宛先セレクターを使用すると、特定の場所にアセットのアップロード、移動またはコピー用のフォルダーを作成できます。
 
 ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 
@@ -261,7 +261,7 @@ interface SelectedDestination {
 
 ### フォルダーの作成 {#create-new-folder}
 
-これにより、 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の宛先フォルダーにフォルダーを作成できます。
 
 ### 表示の種類 {#types-of-view}
 

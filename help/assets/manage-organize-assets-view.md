@@ -5,9 +5,9 @@ role: User,Leader
 contentOwner: AG
 exl-id: b01e98b9-0cc2-47c5-9f5b-79b8e6bef39f
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1034'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -104,7 +104,7 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 1. アセットを選択し、ツールバーの「**[!UICONTROL 詳細]**」をクリックします。
 
-1. Adobe Analytics の **[!UICONTROL 基本]** 「 」タブで、 **[!UICONTROL ステータス]** 」ドロップダウンリストから選択できます。 可能な値は、「承認済み」、「却下」、「ステータスなし」（デフォルト）です。
+1. 「**[!UICONTROL 基本]**」タブで、**[!UICONTROL ステータス]**&#x200B;ドロップダウンリストからアセットのステータスを選択します。可能な値は、「承認済み」、「却下」、「ステータスなし」（デフォルト）です。
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
