@@ -2,16 +2,16 @@
 title: コンテンツフラグメントの構造ツリー（アセット - コンテンツフラグメント）
 description: AEM のコンテンツフラグメントエディターの構造ツリー機能を使用すると、ヘッドレスコンテンツをより深く理解できます。
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 92%
+source-wordcount: '172'
+ht-degree: 80%
 
 ---
 
 # コンテンツフラグメント構造ツリー {#content-fragment-structure-tree}
 
-AEM のコンテンツフラグメントエディターの構造ツリー機能を使用すると、ヘッドレスコンテンツをより深く理解できます。
+AEMのコンテンツフラグメントエディターの構造ツリー機能を使用すると、コンテンツの理解を深めることができます（特にヘッドレス配信の場合）。
 
 >[!NOTE]
 >

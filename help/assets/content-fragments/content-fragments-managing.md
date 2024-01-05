@@ -1,17 +1,17 @@
 ---
 title: コンテンツフラグメント（アセット — コンテンツフラグメント）の管理
-description: ヘッドレスコンテンツの基礎となる AEM コンテンツフラグメントを Assets コンソールを使用して管理する方法について説明します。
+description: アセットコンソールを使用して、ヘッドレスコンテンツの基礎として、またはページオーサリング用に、AEMコンテンツフラグメントを管理する方法について説明します。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '1873'
-ht-degree: 96%
+source-wordcount: '1885'
+ht-degree: 94%
 
 ---
 
 # コンテンツフラグメントの管理 {#managing-content-fragments}
 
-ヘッドレスコンテンツの基礎となる AEM コンテンツフラグメントを Assets コンソールを使用して管理する方法について説明します。
+アセットコンソールを使用して、ヘッドレスコンテンツの基礎として、またはページオーサリング用に、AEMコンテンツフラグメントを管理する方法について説明します。
 
 [コンテンツフラグメントモデル](#creating-a-content-model)を定義した後、それらを使用して[コンテンツフラグメントを作成](#creating-a-content-fragment)できます。
 
@@ -311,7 +311,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * フラグメント内の選択されたテキストセグメントに固有
 >
 
-次に例を示します。
+例：
 
 ![タイムライン](assets/cfm-managing-05.png)
 
@@ -333,7 +333,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * 挿入されたテキスト - 緑
    * 置き換えられたテキスト - 青
 
-* 全画面表示アイコンを使用すれば、どちらかのバージョンで開いた後で、並列表示に切り替えることができます
+* 全画面表示アイコンを使用すると、いずれかのバージョンで開いた後で、並列表示に切り替えることができます
 * 特定のバージョンに&#x200B;**戻す**&#x200B;ことができます
 * 「**完了**」を選択すると、コンソールに戻ります
 
