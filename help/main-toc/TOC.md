@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c04b9391059e66b343fe2ecab90e26179b2172ac
+source-git-commit: 7550491de94f1e2cbb28b07f8abbdaded5aa04ea
 workflow-type: tm+mt
-source-wordcount: '4567'
+source-wordcount: '4570'
 ht-degree: 90%
 
 ---
@@ -1114,7 +1114,8 @@ ht-degree: 90%
    + 開発 {#developing}
       + [AEM のユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md)
       + [ユニバーサルエディター開発者の概要](/help/implementing/universal-editor/developer-overview.md)
-      + [属性とタイプ](/help/implementing/universal-editor/attributes-types.md)
+      + [属性と品目タイプ](/help/implementing/universal-editor/attributes-types.md)
+      + [フィールドタイプ](/help/implementing/universal-editor/field-types.md)
       + [ユニバーサルエディターの認証](/help/implementing/universal-editor/authentication.md)
       + [ユニバーサルエディターを使用したローカルAEM開発](/help/implementing/universal-editor/local-dev.md)
       + [ユニバーサルエディター呼び出し](/help/implementing/universal-editor/calls.md)
