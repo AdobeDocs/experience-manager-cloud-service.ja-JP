@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 リリースのリリースノート。'
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1432'
 ht-degree: 97%
 
 ---
@@ -180,7 +180,7 @@ AEM Screens as a Cloud Service のリリース日は 2021 年 6 月 24 日です
 
 ### 新機能 {#what-is-new-ctt-latest}
 
-* CTT で使用するためのオプションの[コピー前](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja)手順のサポートが追加されました。コピー前手順を使用すると、ソース AEM インスタンスが Amazon S3 または Azure Blob Storage データストアを使用するように設定されている場合に、コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に高速化できます。
+* CTT で使用するためのオプションの[コピー前](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html)手順のサポートが追加されました。コピー前手順を使用すると、ソース AEM インスタンスが Amazon S3 または Azure Blob Storage データストアを使用するように設定されている場合に、コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に高速化できます。
 
 * CTT に追加されたガードレールは、取得の停止を防ぎ、取得段階で重要なポイントに到達したデータが破損する可能性を防ぎます。
 

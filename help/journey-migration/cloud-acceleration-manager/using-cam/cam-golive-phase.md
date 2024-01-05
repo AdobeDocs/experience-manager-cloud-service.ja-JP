@@ -2,10 +2,10 @@
 title: Cloud Acceleration Manager での運用開始フェーズ
 description: このページでは、Cloud Acceleration Manager での運用開始フェーズの概要について説明します。
 exl-id: 2ec31445-899d-40b8-b3eb-073cb07aff12
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 78%
+source-wordcount: '137'
+ht-degree: 75%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 78%
 ![画像](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
->詳しくは、[Cloud Acceleration Manager でのプロジェクトの作成と管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=ja#create-project)を参照してください。
+>詳しくは、[Cloud Acceleration Manager でのプロジェクトの作成と管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html#create-project)を参照してください。
 
 
 ## 「運用開始」アクティビティカードの使用 {#go-live}

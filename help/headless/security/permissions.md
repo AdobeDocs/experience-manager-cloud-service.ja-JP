@@ -3,9 +3,9 @@ title: ヘッドレスコンテンツの権限に関する考慮事項
 description: Adobe Experience Manager を使用したヘッドレス実装の権限や ACL に関する様々な考慮事項について説明します。オーサー環境とパブリッシュ環境の両方で必要となる様々なペルソナや考えられる権限レベルを理解します。
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '811'
 ht-degree: 96%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 96%
 
 ベストプラクティスとして、権限は AEM のグループに設定してください。これらのグループはローカルグループとも呼ばれ、AEM オーサー環境内で管理できます。
 
-グループメンバーシップを管理する最も簡単な方法は、Adobe Identity Management System（IMS）グループを使用し、[IMS グループをローカル AEM グループに割り当てる](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=ja#managing-permissions-in-aem)ことです。
+グループメンバーシップを管理する最も簡単な方法は、Adobe Identity Management System（IMS）グループを使用し、[IMS グループをローカル AEM グループに割り当てる](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#managing-permissions-in-aem)ことです。
 
 ![Admin Console の権限フロー](assets/admin-console-aem-group-permissions.png)
 

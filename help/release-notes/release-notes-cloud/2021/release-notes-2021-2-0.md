@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 リリースのリリースノート。'
 description: 「[!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 のリリースノート」
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 90%
+source-wordcount: '1185'
+ht-degree: 92%
 
 ---
 
@@ -77,9 +77,9 @@ ht-degree: 90%
 
 * 製品コンソールプロパティを拡張して、関連するコンテンツにすばやく移動するためのアクションなど、アセットやエクスペリエンスフラグメントのリンクを表示するようになりました。
 
-* 最新の CIF コアコンポーネントバージョン v1.8.0 を含む CIF Venia 参照サイト2021.02.24をリリースしました。詳しくは、 [CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) を参照してください。
+* 最新のCIFコアコンポーネントバージョン v1.8.0 を含むCIF Venia リファレンスサイト2021.02.24をリリースしました。詳しくは、 [CIF Venia リファレンスサイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) を参照してください。
 
-* CIF コアコンポーネント v1.8.0 がリリースされました。詳しくは、 [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) を参照してください。
+* CIF Core Components v1.8.0 がリリースされました。詳しくは、 [CIFコアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -90,7 +90,7 @@ AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 �
 ### 新機能 {#what-is-new-cloud-manager}
 
 
-* Assets ユーザーは、Brand Portal インスタンスをデプロイするタイミングと場所を、Cloud Manager UI を使用してセルフサービス方式で選択できるようになりました。Assets ソリューションを使用する通常の（サンドボックス以外の）プログラムの場合、Brand Portalを実稼動環境でプロビジョニングできるようになりました。 プロビジョニングは、実稼働環境で 1 回だけ行えます。
+* Assets ユーザーは、Brand Portal インスタンスをデプロイするタイミングと場所を、Cloud Manager UI を使用してセルフサービス方式で選択できるようになりました。Assets ソリューションを使用する通常の（サンドボックス以外の）プログラムの場合は、Brand Portal を実稼動環境にプロビジョニングできるようになりました。プロビジョニングは、実稼働環境で 1 回だけ行えます。
 
 * プロジェクトとサンドボックスの作成で使用される AEM プロジェクトアーキタイプがバージョン 25 に更新されました。
 
@@ -100,7 +100,7 @@ AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 �
 
 * 関連付けられた環境で、実行中のパイプラインが割り当てられているか、現在、承認ステップ待ちの状態にあるため、一時的にドメイン名を追加／更新できない可能性がある場合は、Cloud Manager UI からユーザーに通知されるようになりました。
 
-* 顧客で設定されたプロパティ `pom.xml` sonar のプレフィックスが付いたファイルが動的に削除され、ビルドおよび品質スキャンの失敗を回避できるようになりました。
+* ユーザーの `pom.xml` ファイルで設定されたプロパティのうち、先頭に sonar が付いているものは、ビルドおよび品質スキャン時のエラーを避けるために、動的に削除されるようになりました。
 
 * 現在デプロイ中のドメイン名で使用されている SSL 証明書を一時的に選択できない可能性がある場合は、Cloud Manager UI からユーザーに通知されるようになりました。
 
@@ -157,7 +157,7 @@ AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 �
 ### コードリファクタリングツールの新機能 {#what-is-new-crt}
 
 * AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンでは、Repository Modernizer のいくつかのバグが修正されています。
-詳しくは、 [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=ja#benefits) このプラグインの詳細を確認するには、を参照してください。
+詳しくは、 [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) このプラグインの詳細を確認するには、を参照してください。
 
 ### バグの修正 {#bug-fixes-crt}
 

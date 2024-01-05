@@ -2,9 +2,9 @@
 title: Adobe Target へのエクスペリエンスフラグメントの書き出し
 description: エクスペリエンスフラグメントをAdobe Targetに書き出し、エクスペリエンスをテストしてパーソナライズする方法について説明します。
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2184'
 ht-degree: 96%
 
 ---
@@ -52,7 +52,7 @@ AEM エクスペリエンスフラグメントを Adobe Target に書き出す�
 >
 >* [Adobe Target Developers](https://developers.adobetarget.com/)
 >* [コアコンポーネントの概要](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
->* [Adobe Target - Adobe Experience Manager（AEM）エクスペリエンスフラグメントの使用方法](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=ja)
+>* [Adobe Target - Adobe Experience Manager（AEM）エクスペリエンスフラグメントの使用方法](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html)
 >* [AEM 6.5 - 手動での Adobe Target との統合の設定 - Target クラウド設定の作成](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html?lang=ja#creating-a-target-cloud-configuration)
 
 ## 前提条件 {#prerequisites}

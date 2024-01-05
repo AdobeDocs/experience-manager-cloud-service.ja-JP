@@ -3,10 +3,10 @@ title: AEM as a Cloud Service リリース 2021.11.0 における移行ツール
 description: AEM as a Cloud Service リリース 2021.11.0 における移行ツールのリリースノート
 feature: Release Information
 exl-id: 668c0c66-88f5-4d74-9a2a-3bdc63b0bba7
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 100%
+source-wordcount: '149'
+ht-degree: 99%
 
 ---
 
@@ -25,6 +25,6 @@ ht-degree: 100%
 
 ### 新機能 {#what-is-new-ctt}
 
-* ソース AEM インスタンスがファイルデータストアを使用して抽出段階を大幅に高速化するように設定されている場合に、コンテンツ転送ツールで使用するために追加されたオプションの [事前コピー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja) 手順のサポート。
+* ソース AEM インスタンスがファイルデータストアを使用して抽出段階を大幅に高速化するように設定されている場合に、コンテンツ転送ツールで使用するために追加されたオプションの [事前コピー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) 手順のサポート。
 
 * コンテンツ転送ツール UI の取り込み段階に、インデックス作成と mongo の回復手順が進行中であることを示す説明メッセージが追加されました。

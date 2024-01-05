@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service でのプロジェクトの作成
 description: Screens as a Cloud Service でプロジェクトを作成する方法について説明します。
 exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 100%
+source-wordcount: '326'
+ht-degree: 93%
 
 ---
 
@@ -24,13 +24,13 @@ Screens as a Cloud Service でプロジェクトを作成するには、次の�
 1. Screens コンテンツプロバイダーに移動します。
 
    >[!NOTE]
-   >プロジェクト作成のために Screens コンテンツプロバイダーにアクセスする方法について詳しくは、[Screens コンテンツプロバイダーの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=ja)を参照してください。
+   >プロジェクト作成のために Screens コンテンツプロバイダーにアクセスする方法について詳しくは、[Screens コンテンツプロバイダーの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html)を参照してください。
 
 1. アクションバーの右上隅にある「**Screens プロジェクトを作成**」をクリックします。
 
    ![create-screens-project1](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 
-1. **スクリーンプロジェクトを作成**&#x200B;ダイアログボックスで、プロジェクトの「**タイトル**」に「*FirstDigitalExperience*」などと入力します。
+1. 次を入力します。 **タイトル** の **Screens プロジェクトを作成** ダイアログボックス。 例： *FirstDigitalExperience*.
 
    ![create-screens-project2](/help/screens-cloud/assets/create-content/create-screens-project2.png)
 

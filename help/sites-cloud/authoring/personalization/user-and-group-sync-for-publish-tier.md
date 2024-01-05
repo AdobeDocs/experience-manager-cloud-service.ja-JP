@@ -2,7 +2,7 @@
 title: 登録、ログイン、ユーザープロファイル
 description: AEM as a Cloud Service の登録、ログイン、ユーザーデータおよびグループ同期について説明します
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 90%
@@ -94,7 +94,7 @@ AEM as a Cloud Service では cookie ベースのスティッキーセッショ�
 ユーザープロファイル情報の書き込みと読み取りは、次の 2 つの方法で行うことができます。
 
 * サーバーサイドで `com.adobe.granite.security.user` インターフェイスを使用。UserPropertiesManager インターフェイスにより、`/home/users` のユーザーのノードの下にデータが配置されます。ユーザーごとに一意のページが、キャッシュされていないことを確認します。
-* [ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=ja#personalization)に説明されているように、クライアントサイドで ContextHub を使用。
+* [ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization)に説明されているように、クライアントサイドで ContextHub を使用。
 
 ### サードパーティのデータストア {#third-party-data-stores}
 
@@ -104,7 +104,7 @@ AEM as a Cloud Service では cookie ベースのスティッキーセッショ�
 
 ## 権限（クローズドユーザーグループ） {#permissions-closed-user-groups}
 
-パブリッシュ層アクセスポリシー（クローズドユーザーグループ（CUG）とも呼ばれる）は、AEM オーサーでは[ここ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=ja#applying-your-closed-user-group-to-content-pages)で説明されているとおりに定義されています。一部のユーザーから web サイトの特定のセクションまたはページを制限するには、ここで説明されているように AEM オーサーを使用して、必要に応じて CUG を適用し、パブリッシュ層に複製します。
+パブリッシュ層アクセスポリシー（クローズドユーザーグループ（CUG）とも呼ばれる）は、AEM オーサーでは[ここ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages)で説明されているとおりに定義されています。一部のユーザーから web サイトの特定のセクションまたはページを制限するには、ここで説明されているように AEM オーサーを使用して、必要に応じて CUG を適用し、パブリッシュ層に複製します。
 
 * ユーザーが SAML を使用して ID プロバイダー（IdP）の認証でログインすると、認証ハンドラーはユーザーのグループメンバーシップ（パブリッシュ層の CUG と一致する必要がある）を識別し、リポジトリーレコードを介してユーザーとグループの関連付けを保持します。
 * IdP 統合を使用せずにログインを完了した場合、カスタムコードは同じリポジトリー構造の関係を適用できます。

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.2.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.2.0 リリースのリリースノート。'
 exl-id: 671056e6-84cc-4c2c-bca3-fde68d5cc835
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 98%
+source-wordcount: '730'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 98%
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### の新機能[!DNL Experience Manager Sites]プレリリース {#prerelease-sites}
+### の新機能 [!DNL Experience Manager Sites] 予約 {#prerelease-sites}
 
 * AEM as a Cloud Service からコンテンツフラグメントを JSON オファーとして Adobe Target に書き出します。
 * 複雑な GraphQL のクエリとフィルターを使用して大きなコンテンツセットを AEM から取得する際、GraphQL のページネーションと並べ替えのサポートに加え、内部キャッシュの強化によって、切り離されたクライアントアプリケーションのパフォーマンスの向上を支援するようになりました。

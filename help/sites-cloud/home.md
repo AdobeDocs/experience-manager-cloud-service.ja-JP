@@ -3,9 +3,9 @@ title: Experience Manager as a Cloud Service サイトのサポートリソー�
 description: すべての Adobe AEM Cloud サービスサポートリソースの完全なリストを確認します。AEM Sites as Cloud Service の質問に対する回答を検索します。
 landing-page-description: AEM Sites as a Cloud Service を使用したオーサリング方法と AEM Sites as a Cloud Service の管理方法を説明します。
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
-source-git-commit: ce841a83d46dc1c4fa2edc858e4a0be0af3ac170
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '383'
 ht-degree: 98%
 
 ---

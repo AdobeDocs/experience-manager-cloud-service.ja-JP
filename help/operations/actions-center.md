@@ -2,7 +2,7 @@
 title: アクションセンター
 description: アクションセンターを活用して、インシデントやその他の重要な情報に便利に対応
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: dca00a8913fb8fd159a69675b8f4ffa67441faa4
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 73%
@@ -72,5 +72,5 @@ AEM as a Cloud Service の通知には複数のタイプがありますが、次
 | 通知タイプ | 関連する製品プロファイル | 是正措置 |
 |---------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ブロックされたレプリケーションキュー | インシデント | キューのブロックを解除するには、[レプリケーションドキュメント](/help/operations/replication.md#troubleshooting)の手順に従ってください。 |
-| 無効な永続化されたGraphQLクエリ | インシデント | 無効なGraphQLクエリを修正するには、 [永続的なGraphQLクエリのトラブルシューティングドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=en) |
+| 無効な永続化されたGraphQLクエリ | インシデント | 無効なGraphQLクエリを修正するには、 [永続的なGraphQLクエリのトラブルシューティングドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | S2S 証明書の有効期限が切れます | 事前対応 | [サーバーサイド API のアクセストークンの生成ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)で資格情報を更新する方法を説明します。 |

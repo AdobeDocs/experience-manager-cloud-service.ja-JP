@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 リリースのリリースノート。'
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 57%
+source-wordcount: '1519'
+ht-degree: 58%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 57%
 
 ## リリースビデオ {#release-video}
 
-追加された機能の概要については、 [&#128279;](https://video.tv.adobe.com/v/337381)2021年9月リリースの概要 ビデオをご覧ください。
+追加された機能の概要については、 ](https://video.tv.adobe.com/v/337381)2021年9月リリースの概要[ ビデオをご覧ください。
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -68,7 +68,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **Analytics for Adaptive Forms** - Adobe Analyticsを使用してエンドユーザーの行動をキャプチャおよび追跡し、アダプティブFormsでエンドユーザーのインサイトを収集できるようになりました。 データに基づく情報に基づく意思決定をおこない、エンドユーザーエクスペリエンスを向上させるのに役立ちます。
 
-* **Adobe Experience Manager(AEM)FormsとMicrosoft® Dynamics および Salesforce を簡単に接続**  — このサービスは、標準のデータソース設定と、Microsoft® Dynamics および Salesforce 用のデータモデルを提供します。 これで実現します [開発者がMicrosoft® Dynamics と Salesforce をアダプティブフォームのデータソースとしてより迅速かつ簡単に設定できる](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=ja).
+* **Adobe Experience Manager(AEM)FormsとMicrosoft® Dynamics および Salesforce を簡単に接続**  — このサービスは、標準のデータソース設定と、Microsoft® Dynamics および Salesforce 用のデータモデルを提供します。 これで実現します [開発者がMicrosoft® Dynamics と Salesforce をアダプティブフォームのデータソースとしてより迅速かつ簡単に設定できる](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html).
 
 * **DocuSign を使用したアダプティブフォームの電子署名** - DocuSign を使用して、アダプティブフォームに電子署名を行うことができます。 このサービスでは、アダプティブフォームで DocuSign を使用するためのカスタム送信アクションを提供します。ソフトウェア配布ポータルで入手可能なパッケージをインストールして、送信アクションをインポートすることができます。
 
@@ -93,7 +93,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
   ![関連するコマースコンテンツ](/help/assets/CIF/associated-commerce-content.png)
 
-* 製品ピッカー UI が改善され、ユーザーエクスペリエンスが向上し、効率が向上し、複雑な製品カタログのサポートが可能になりました。
+* 製品ピッカー UI の改善により、ユーザーエクスペリエンスと効率が向上し、複雑な製品カタログもサポートされるようになりました。
 
   ![新しい製品ピッカー](/help/assets/CIF/product-picker.png)
 
@@ -112,7 +112,7 @@ CQ-4328183 was not reported on CS so not documented here.
 ### 新機能 {#what-is-new-screens}
 
 * Screens as a Cloud Service で、基本的な再生モニタリングがサポートされるようになりました。各 ping で様々な再生指標がレポートされるようになりました（デフォルトは 30 秒）。 指標に基づいて、様々なエッジケース（動きのないエクスペリエンス、空白の画面、スケジュールの問題など）を検出できます。 この機能を使用すると、プレーヤーがコンテンツを適切に再生しているかどうかをチームがリモートで監視できます。 空白の画面やフィールド内の壊れたエクスペリエンスに対する反応性が向上し、壊れたエクスペリエンスがユーザーに表示されるリスクが低減します。
-詳しくは、[基本的な再生モニタリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring)を参照してください。
+詳しくは、[基本的な再生モニタリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html#playback-monitoring)を参照してください。
 
 * ビデオのサムネールが Screens as a Cloud Service でサポートされるようになりました。コンテンツ作成者は、ビデオのサムネールを定義して、その画像をプレースホルダーとして使用できるようにし、実際のビデオを担当チームが仕上げている間に、コンテンツの再生とターゲティングを適切にテストすることができます。また、ビデオの再生に失敗した場合にも、画像を使用できます。
 詳しくは、[ビデオのサムネールサポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html)を参照してください。
@@ -182,7 +182,7 @@ Cloud Acceleration Manager のリリース日は 2021年10月4日です。
 
 ### 新機能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager では、BPA レポートを印刷可能なプレビューで表示できるようになり、印刷や PDF へのエクスポートが簡単になりました。これにより、共有が容易になりました。詳しくは、 [ベストプラクティス分析カードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja#best-practices-analysis).
+* Cloud Acceleration Manager では、BPA レポートを印刷可能なプレビューで表示できるようになり、印刷や PDF へのエクスポートが簡単になりました。これにより、共有が容易になりました。詳しくは、 [ベストプラクティス分析カードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#best-practices-analysis).
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 
@@ -192,7 +192,7 @@ Cloud Acceleration Manager のリリース日は 2021年10月4日です。
 
 ### 新機能 {#what-is-new-ctt}
 
-* 以下に一覧表示されている機能を含め、ユーザーエクスペリエンスがシンプルになり、ユーザーマッピングが改善されました。詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=ja#using-user-mapping-tool)を参照してください。
+* 以下に一覧表示されている機能を含め、ユーザーエクスペリエンスがシンプルになり、ユーザーマッピングが改善されました。詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html#using-user-mapping-tool)を参照してください。
    * ユーザーマッピングを実行する前に、User Management API への接続をテストできます
    * エラーを適切にスキップし、「ユーザーマッピング」アクティビティを続行できます
    * アクセストークンの有効期限が 24 時間後に切れた場合、ユーザーマッピングが失敗しなくなりました。 最後に停止した位置からユーザーマッピングを再実行できます。

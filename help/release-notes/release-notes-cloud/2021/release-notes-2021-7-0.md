@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0 リリースのリリースノート。'
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: f956b8379b5b93bc00e25f0eec641430c5565e34
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 58%
+source-wordcount: '1292'
+ht-degree: 59%
 
 ---
 
@@ -28,11 +28,11 @@ ht-degree: 58%
 
 ## リリースビデオ {#release-video}
 
-追加された機能の概要については、[&#128279;](https://video.tv.adobe.com/v/335580)2021 年 7 月リリースの概要ビデオをご覧ください。
+追加された機能の概要については、](https://video.tv.adobe.com/v/335580)2021 年 7 月リリースの概要ビデオ[をご覧ください。
 
 ## Experience Manager Foundation as a Cloud Service {#foundation}
 
-### 新着情報 {#what-is-new-foundation}
+### 新機能 {#what-is-new-foundation}
 
 * より柔軟な Dispatcher 設定：プロジェクトをより簡単に整理できます。 例えば、サイト構造を反映した複数の書き換えルールファイルを含めることができるようになりました。[詳細](/help/implementing/dispatcher/disp-overview.md#validation-debug) この柔軟なモードには、Dispatcher 設定を構築して活用する方法などがあります。
 * レプリケーションエージェントの「配布」タブのツリーレプリケーション UI は、廃止済みと見なされ、2021 年 9 月 30 日以降に削除されました。 代替レプリケーション戦略について[ご確認](/help/operations/replication.md#tree-activation)ください。
@@ -108,7 +108,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` は、[!DNL Experience Manag
    * オーサリングモードでのステージングされた製品データの視覚的インジケーターにより、今後の変更の可視性が向上
    * コンテンツページとコマースページ用の新しいサイトマップコンポーネント
 
-* 事前定義済みのレコメンデーションまたはオンザフライで作成されたレコメンデーションを使用した、AEM Storefront の Adobe Sensei[&#128279;](https://business.adobe.com/jp/products/magento/product-recommendations.html) による Adobe Commerce Sensei 製品レコメンデーションのサポート
+* 事前定義済みのレコメンデーションまたはオンザフライで作成されたレコメンデーションを使用した、AEM Storefront の Adobe Sensei](https://business.adobe.com/jp/products/magento/product-recommendations.html) による [Adobe Commerce Sensei 製品レコメンデーションのサポート
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
@@ -188,7 +188,7 @@ Cloud Acceleration Manager のリリース日は 2021 年 7 月 15 日です。
 
 ### 新機能 {#what-is-new-cam}
 
-Cloud Acceleration Manager は、Cloud Service の計画から運用開始まで、移行プロセス全体を通じて IT チームをガイドするために設計されたクラウドベースのアプリケーションです。Adobeが推奨するベストプラクティス、ヒント、ドキュメント、ツールを使用して、AEMへのCloud Serviceとしてのジャーニーのあらゆる段階で役立つように、チームを設定して移行を成功させます。 詳細は[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en)をご覧ください。
+Cloud Acceleration Manager は、Cloud Service の計画から運用開始まで、移行プロセス全体を通じて IT チームをガイドするために設計されたクラウドベースのアプリケーションです。Adobeが推奨するベストプラクティス、ヒント、ドキュメント、ツールを使用して、AEMへのCloud Serviceとしてのジャーニーのあらゆる段階で役立つように、チームを設定して移行を成功させます。 詳細は[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=ja)をご覧ください。
 
 >[!NOTE]
 >

@@ -2,10 +2,10 @@
 title: レプリケーション
 description: AEM as a Cloud Serviceでの配布とレプリケーションのトラブルシューティングについて説明します。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 97%
+source-wordcount: '1312'
+ht-degree: 96%
 
 ---
 
@@ -57,13 +57,13 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
 元のモデルを呼び出さないでください。 代わりに、必ず最初にモデルをコピーしてから、そのコピーを呼び出してください。
 
-すべてのワークフローと同様に、API を使用して呼び出すこともできます。詳しくは、[プログラムによるワークフローの操作](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=ja#extending-aem)を参照してください。
+すべてのワークフローと同様に、API を使用して呼び出すこともできます。詳しくは、[プログラムによるワークフローの操作](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem)を参照してください。
 
 または、`Publish Content Tree` プロセスステップを使用するワークフローモデルを作成することもできます。
 
 1. AEM as a Cloud Service のホームページから、**ツール／ワークフロー／モデル**&#x200B;に移動します。
 1. ワークフローモデルページで、画面の右上隅にある「**作成**」を押します。
-1. モデルにタイトルと名前を追加します。詳しくは、「[ワークフローモデルの作成](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ja#extending-aem)」を参照してください。。
+1. モデルにタイトルと名前を追加します。詳しくは、 [ワークフローモデルの作成](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ja#extending-aem).
 1. リストから作成したモデルを選択し、を押します。 **編集**
 1. 次のウィンドウで、「プロセスステップ」を現在のモデルフローにドラッグ＆ドロップします。
 

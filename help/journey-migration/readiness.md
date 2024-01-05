@@ -2,10 +2,10 @@
 title: 準備段階
 description: AEM インストールをクラウドに移行する準備ができていることを確認するために、必要な手順を説明します。
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 98%
+source-wordcount: '1900'
+ht-degree: 95%
 
 ---
 
@@ -89,12 +89,12 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
   </tr>
   <tr>
     <td>非同期操作に切り替え</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/asynchronous-jobs.html?lang=ja#configuring-asynchronous-msm-operations">非同期操作の設定</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/asynchronous-jobs.html#configuring-asynchronous-msm-operations">非同期操作の設定</a></td>
     <td>環境の全体的なパフォーマンスを向上させるために、特定の操作が非同期モードで実行されます。システムリソースが使用可能になると、非同期ジョブはキューに入れられ、実行されます。</td>
   </tr>
   <tr>
     <td>トークンベースの認証と統合戦略</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ja#the-server-to-server-flow">サーバーサイド API 用のアクセストークンの生成</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ja#authentication">トークンベースの認証に関するチュートリアル</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow">サーバーサイド API 用のアクセストークンの生成</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication">トークンベースの認証に関するチュートリアル</a></td>
     <td>AEM 外のシステムが AEM 内で HTTP 操作を実行しようとするのは一般的です。<br>推奨されるアプローチは、AEM でのパスワードを使用したローカルユーザー名の作成に依存するのではなく、ここで説明する戦略を実装することです。</td>
   </tr>
   <tr>
@@ -109,13 +109,13 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
   </tr>
   <tr>
     <td>AEM as a Cloud Service でのアセットのアップロード方法とサポートしているワークフロープロセスの手順</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis.html?lang=ja#post-processing-workflows-steps">API 比較のアップロードとサポートされる WF プロセスステップ</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis.html#post-processing-workflows-steps">API 比較のアップロードとサポートされる WF プロセスステップ</a></td>
     <td>AEM as a Cloud Service では、アセットのアップロード中またはダウンロード中に、アセットがバイナリストレージに直接ストリーミングするか、バイナリストレージから直接ストリーミングします。<br>AEMaaCS では、すべてのワークフロープロセスの手順がサポートされているわけではありません。</td>
   </tr>
   <tr>
     <td>ワークフローランチャー</td>
     <td></td>
-    <td>標準またはカスタム DAM アセットの更新ワークフローのいずれかをトリガーしているワークフローランチャーをコードから削除します。<br>AEM as a Cloud Service にアップロードされたアセットはすべて、アセット処理サービスによって処理されます。カスタム手順については、<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=ja#post-processing-workflows">後処理ワークフロー</a>で後処理ワークフローのセットアップおよび設定方法を参照してください。</td>
+    <td>標準またはカスタム DAM アセットの更新ワークフローのいずれかをトリガーしているワークフローランチャーをコードから削除します。<br>AEM as a Cloud Service にアップロードされたアセットはすべて、アセット処理サービスによって処理されます。カスタム手順については、<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows">後処理ワークフロー</a>で後処理ワークフローのセットアップおよび設定方法を参照してください。</td>
   </tr>
   <tr>
     <td>カスタムレンディション手順</td>
@@ -216,8 +216,8 @@ AEM as a Cloud Service に移行するために必要な変更の範囲を確認
 
 ## その他のリソース {#additional-resources}
 
-* [Cloud Acceleration Manager の概要](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) - Cloud Acceleration Manager を使用してクラウドへの移行を迅速に行う方法に関する包括的なガイド。
+* [Cloud Acceleration Manager の概要](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) - Cloud Acceleration Manager を使用してクラウドへの移行をスピードアップする方法に関する包括的なガイドです。
 * [AEM as a Cloud Service：概要、アーキテクチャ、考え方の変革](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=ja#dashboard/learning)
 * [AEM a Cloud Service ホーム](/help/overview/home.md) - Experience Manager as a Cloud Service ドキュメントの概要については、まずこちらを参照してください。
 * [AEM as a Cloud Service の概要](/help/overview/home.md) - このガイドでは、基礎知識、用語、アーキテクチャなど、Experience Manager as a Cloud service の概要を説明します。
-* [オンボーディングジャーニー](/help/journey-onboarding/overview.md) - このガイドでは、アクセス方法やチームのセットアップ方法など、Experience Manager as a Cloud Service の基本について概要を説明します。。
+* [オンボーディングジャーニー](/help/journey-onboarding/overview.md) — このガイドでは、Experience Manageras a Cloud Serviceの使用を開始する方法の概要を示します。この概要には、チームへのアクセス方法や設定方法などが含まれます。

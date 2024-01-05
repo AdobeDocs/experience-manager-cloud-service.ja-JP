@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 description: Adobe Experience Manager as a Cloud Service の Image Management System のサポート
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 0074f483bffa1cd7c2cc468a74730672511f0956
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '1917'
 ht-degree: 99%
@@ -213,7 +213,7 @@ Cloud Manager または AEM as a Cloud Service の環境にアクセスするに
 Cloud Manager の特定の機能の可用性を管理するユーザーの役割について詳しくは、役割の定義を参照してください。
 
 >[!NOTE]
->Cloud Manager には、適切な権限を持つ事前設定済みの役割が用意されています。各役割に関連付けられた、特定の権限、事前設定済みのタスク、または権限を持つ各役割について詳しくは、[役割に基づく権限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=ja)を参照してください。
+>Cloud Manager には、適切な権限を持つ事前設定済みの役割が用意されています。各役割に関連付けられた、特定の権限、事前設定済みのタスク、または権限を持つ各役割について詳しくは、[役割に基づく権限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html)を参照してください。
 
 **ユーザーの追加手順**
 

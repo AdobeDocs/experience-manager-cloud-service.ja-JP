@@ -3,10 +3,10 @@ title: Dispatcher ツールを使用した検証とデバッグ
 description: ローカル検証、デバッグ、柔軟なモードのファイル構造、およびレガシーモードから柔軟なモードに移行する方法について説明します。
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '2990'
-ht-degree: 94%
+source-wordcount: '2971'
+ht-degree: 95%
 
 ---
 
@@ -299,7 +299,7 @@ Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも�
 
 >[!NOTE]
 >
->各設定を変更後に `validate.sh` を実行する代わりの効率的な方法については、[自動読み込みと検証](#automatic-loading)のセクションを参照してください。
+各設定を変更後に `validate.sh` を実行する代わりの効率的な方法については、[自動読み込みと検証](#automatic-loading)のセクションを参照してください。
 
 ### フェーズ 1 {#first-phase}
 
@@ -440,8 +440,8 @@ Cloud manager validator 2.0.xx
 
 >[!NOTE]
 >
->Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。
->アドビでは、Windows と macOS の両方で、Docker Desktop を使用することをお勧めします。
+Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。
+アドビでは、Windows と macOS の両方で、Docker Desktop を使用することをお勧めします。
 
 このフェーズは、`bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080` を使用して独立に実行することもできます。
 
@@ -510,13 +510,13 @@ Dispatcher をローカルで実行すると、ログが端末に直接出力さ
 
 >[!NOTE]
 >
->AEM as a Cloud Service 上の環境の場合、デバッグの冗長レベルは最大になります。トレースログレベルはサポートされていないので、クラウド環境で作業する場合は設定しないでください。
+AEM as a Cloud Service 上の環境の場合、デバッグの冗長レベルは最大になります。トレースログレベルはサポートされていないので、クラウド環境で作業する場合は設定しないでください。
 
 ### 自動再読み込みと検証 {#automatic-reloading}
 
 >[!NOTE]
 >
->Windows オペレーティングシステムの制限により、この機能は macOS および Linux® ユーザーのみ利用できます。
+Windows オペレーティングシステムの制限により、この機能は macOS および Linux® ユーザーのみ利用できます。
 
 設定が変更されるたびにローカル検証（`validate.sh`）を実行してドッカーコンテナ（`docker_run.sh`）を開始する代わりに、`docker_run_hot_reload.sh` スクリプトを実行することもできます。  スクリプトは、設定に対する変更を監視し、自動的に再読み込みして検証を再実行します。このオプションを使用すると、デバッグ時にかなりの時間を節約できます。
 
@@ -621,7 +621,7 @@ Cloud Manager 2021.7.0 リリースでは、新しい Cloud Manager プログラ
 
    >[!NOTE]
    >
-   >フレキシブルモードでは、絶対パスの代わりに相対パスを使用する必要があります。
+   フレキシブルモードでは、絶対パスの代わりに相対パスを使用する必要があります。
 1. **実稼動へのデプロイ：**
    * 実稼動パイプラインでクラウドのステージング環境および実稼動環境にデプロイされたファイル `opt-in/USE_SOURCES_DIRECTLY` を Git ブランチにコミットします。
    * Cloud Manager を使用してステージング環境にデプロイします。

@@ -2,10 +2,10 @@
 title: Screens コンテンツプロバイダーの使用
 description: ここでは、Screens コンテンツプロバイダーを使用してコンテンツを作成する方法について説明します。
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 85%
+source-wordcount: '377'
+ht-degree: 82%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 85%
 
 ## 目的 {#objective}
 
-次の節では、[Screens サービスプロバイダー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=ja)を設定した後に、Screens コンテンツプロバイダーを使用する方法について説明します。
+次の節では、[Screens サービスプロバイダー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html)を設定した後に、Screens コンテンツプロバイダーを使用する方法について説明します。
 
 ## Screens コンテンツプロバイダーの使用 {#screens-content-provider}
 
 >[!NOTE]
 >**前提条件**
->この節を読む前に、[Screens サービスプロバイダーの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=ja)を参照して、Screens サービスプロバイダーからこのユーザーインターフェイスに移動する方法を確認してください。
+>この節を読む前に、[Screens サービスプロバイダーの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html)を参照して、Screens サービスプロバイダーからこのユーザーインターフェイスに移動する方法を確認してください。
 
 次の手順に従って、Screens コンテンツプロバイダーにログインします。
 
@@ -40,7 +40,7 @@ ht-degree: 85%
    ![Cloud Manager の概要ページのアイコンがツールバーの左端に表示されます。](/help/screens-cloud/assets/configure/screens-cp-1.png)
 
    >[!NOTE]
-   >プログラムをまだ作成していない場合は、[Screens as a Cloud Service への初回ログイン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=ja)を参照してください。このトピックでは、Cloud Manager で Screens as a Cloud Service 用のプログラムを追加する手順を説明します。
+   >プログラムをまだ作成していない場合は、[Screens as a Cloud Service への初回ログイン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html)を参照してください。このトピックでは、Cloud Manager で Screens as a Cloud Service 用のプログラムを追加する手順を説明します。
 
 1. **環境**&#x200B;カードからリンクを選択すると、Screens コンテンツプロバイダーにアクセスできます。
 
@@ -56,4 +56,4 @@ ht-degree: 85%
 
 ## 次のステップ {#whats-next}
 
-これで、Screens コンテンツプロバイダーに移動する方法を学びました。次に、「[Screens as a Cloud Service でのプロジェクトの作成と管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=ja)」ドキュメントを参照して、Screens as a Cloud Service ジャーニーを続けてください。
+これで、Screens コンテンツプロバイダーに移動する方法を学びました。次に、「[Screens as a Cloud Service でのプロジェクトの作成と管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html)」ドキュメントを参照して、Screens as a Cloud Service ジャーニーを続けてください。

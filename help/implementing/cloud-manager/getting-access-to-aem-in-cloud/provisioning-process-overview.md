@@ -1,10 +1,10 @@
 ---
 title: プロビジョニングプロセス - 概要
 description: プロビジョニングプロセス - 概要
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '330'
-ht-degree: 100%
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 98%
 
 ---
 
@@ -39,8 +39,8 @@ ht-degree: 100%
 ### リソースとリンク
 
 * [AEM as a Cloud Service の IMS サポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ja)
-* [Cloud Manager での役割ベースの権限](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=ja#what-is-required)
-* [Adobe Experience Manager as a Cloud Service へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=ja#getting-access)
+* [Cloud Manager での役割ベースの権限](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html#what-is-required)
+* [Adobe Experience Manager as a Cloud Service へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#getting-access)
 
 
 ## Adobe Experience Manager as a Cloud Service のオンボーディングプロセス
@@ -74,4 +74,4 @@ ht-degree: 100%
 ## ヘルプとリソース
 
 * [初回ログイン - Cloud Service](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
-* [AEM as a Cloud Service へのアクセスの設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=ja#accessing)
+* [AEM as a Cloud Service へのアクセスの設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html#accessing)

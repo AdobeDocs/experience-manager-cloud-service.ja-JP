@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager での準備フェーズ
 description: このページでは、Cloud Acceleration Manager における準備フェーズの概要について説明します。
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '944'
 ht-degree: 55%
 
 ---
@@ -45,7 +45,7 @@ Cloud Acceleration Manager でプロジェクトを作成したら、準備段�
    1. 次に移動： [ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html) ポータルに移動し、ベストプラクティスアナライザーを zip ファイルとしてダウンロードします。
 
       >[!NOTE]
-      >BPA の実行方法については、 [ベストプラクティスアナライザーの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#imp-considerations) を参照してください。
+      >BPA の実行方法については、 [ベストプラクティスアナライザーの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html#imp-considerations) を参照してください。
 
    1. レポートを CSV 形式で書き出します。
 
@@ -97,7 +97,7 @@ Cloud Acceleration Manager で印刷プレビューオプションを選択し�
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. Click **...**.
+1. クリック **...**.
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
@@ -159,7 +159,7 @@ Cloud Acceleration Manager で印刷プレビューオプションを選択し�
 ![画像](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->結果カテゴリと重要度レベルについては、[ベストプラクティスアナライザーレポートの説明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=ja)を参照してください。
+>結果カテゴリと重要度レベルについては、[ベストプラクティスアナライザーレポートの説明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html)を参照してください。
 
 #### ベストプラクティス評価 {#best-practices-assessment}
 
@@ -193,7 +193,7 @@ Cloud Acceleration Manager で印刷プレビューオプションを選択し�
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
-### ベストプラクティス分析レポートの削除 トレンドラインビューから {#delete-trendline}
+### トレンドラインビューからのベストプラクティス分析レポートの削除 {#delete-trendline}
 
 >[!IMPORTANT]
 >レポートは、複数のレポートがプロジェクトにアップロードされている場合にのみ削除できます。
@@ -202,7 +202,7 @@ Cloud Acceleration Manager で印刷プレビューオプションを選択し�
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. Click **...**.
+1. クリック **...**.
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
@@ -220,4 +220,4 @@ Cloud Acceleration Manager で印刷プレビューオプションを選択し�
 
 ## 次の手順 {#whats-next}
 
-Cloud Acceleration Manager へのログイン方法とプロジェクトの作成方法を学習したら、次の手順 ( [実装フェーズ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
+Cloud Acceleration Manager へのログイン方法とプロジェクトの作成方法を学習したら、次の手順 ( [実装フェーズ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html).

@@ -3,7 +3,7 @@ title: Assets HTTP API でのAdobe Experience Manager as a Cloud Serviceコン�
 description: AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API でのコンテンツフラグメントのサポートについて学びます。
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '1749'
 ht-degree: 95%
@@ -153,8 +153,8 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
 >
 >詳しくは、次を参照してください。
 >
->* [CORS／AEM の説明](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en)
->* [ビデオ - AEM を使用した CORS 向けの開発)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=ja)
+>* [CORS／AEM の説明](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ja)
+>* [ビデオ - AEM を使用した CORS 向けの開発)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=ja)
 >
 
 特定の認証要件がある環境では、OAuth を推奨します。
@@ -358,4 +358,4 @@ Assets REST API は、フォルダーのプロパティへのアクセスを公�
 詳しくは、次を参照してください。
 
 * [Assets HTTP API ドキュメント](/help/assets/mac-api-assets.md)
-* [AEM Gem セッション：OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-search-forms-using-querybuilder.html?lang=ja)
+* [AEM Gem セッション：OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html)

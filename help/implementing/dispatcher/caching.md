@@ -3,10 +3,10 @@ title: AEM as a Cloud Service でのキャッシュ
 description: AEM as a Cloud Serviceでのキャッシュの基本について説明します。
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2873'
-ht-degree: 95%
+source-wordcount: '2775'
+ht-degree: 93%
 
 ---
 
@@ -42,7 +42,7 @@ Define DISABLE_DEFAULT_CACHING
   ```
 
   >[!NOTE]
-  >サロゲート制御ヘッダーは、アドビが管理する CDN に適用されます。[顧客が管理する CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=ja#point-to-point-CDN) を使用する場合、CDN プロバイダーに応じて異なるヘッダーが必要になる場合があります。
+  >サロゲート制御ヘッダーは、アドビが管理する CDN に適用されます。[顧客が管理する CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN) を使用する場合、CDN プロバイダーに応じて異なるヘッダーが必要になる場合があります。
 
   グローバルキャッシュコントロールヘッダーまたは広範囲の正規表現に一致するヘッダーを設定する場合は、プライベートに保つ必要があるコンテンツに適用されないように注意が必要です。複数のディレクティブを使用して、ルールをきめ細かく適用することを検討してください。とは言え、Dispatcher のドキュメントに記載されているように、AEM as a Cloud Service は Dispatcher によってキャッシュ不可であることが検出されたものに対してキャッシュヘッダーが適用されていることを検出すると、キャッシュヘッダーを削除します。AEM で常にキャッシュヘッダーを適用するように強制するには、次のように **`always`** オプションを追加できます。
 
@@ -87,7 +87,7 @@ Define DISABLE_DEFAULT_CACHING
 
 ### BLOB ストレージに格納される大きい画像とコンテンツ {#images}
 
-2022年5月中旬以降に作成されたプログラム（特に、プログラム ID が 65000 より大きい場合）のデフォルトの動作は、デフォルトでキャッシュされると同時に、リクエストの認証コンテキストも考慮されます。古いプログラム（プログラム ID が 65000 以下）は、デフォルトでは BLOB コンテンツをキャッシュしません。
+2022 年 5 月中旬以降に作成されたプログラム ( 特に、65000より大きいプログラム ID の場合 ) のデフォルトの動作は、デフォルトでキャッシュされると同時に、リクエストの認証コンテキストも考慮されます。 古いプログラム（プログラム ID が 65000 以下）は、デフォルトでは BLOB コンテンツをキャッシュしません。
 
 どちらの場合も、キャッシュヘッダーは、Apache `mod_headers` ディレクティブを使用して、Apache／Dispatcher レイヤーでより細かいレベルでオーバーライドすることができます。次に例を示します。
 
@@ -230,7 +230,7 @@ AEM レイヤーは、デフォルトでは BLOB コンテンツをキャッシ�
 
 ### マーケティングキャンペーンパラメーター {#marketing-parameters}
 
-Web サイトの URL には、キャンペーンの成功をトラックするために使用されるマーケティングキャンペーンパラメーターが含まれることがよくあります。 
+Web サイトの URL には、キャンペーンの成功を追跡するために使用されるマーケティングキャンペーンパラメーターが含まれることがよくあります。
 
 2023 年 10 月以降に作成された環境で、リクエストのキャッシュを改善するために、CDN は、一般的なマーケティング関連のクエリパラメーター（特に、次の正規表現パターンに一致するパラメーター）を削除します。
 

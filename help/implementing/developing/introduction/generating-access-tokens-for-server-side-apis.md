@@ -2,7 +2,7 @@
 title: サーバーサイド API 用のアクセストークンの生成
 description: セキュアな JWT トークンを生成してサードパーティサーバーおよび AEM as a Cloud Service の間の通信を容易にする方法について説明します。
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '2089'
 ht-degree: 98%
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## サーバー間フロー {#the-server-to-server-flow}
 
@@ -110,12 +110,12 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 1. Adobe Admin Console（[https://adminconsole.adobe.com/](https://adminconsole.adobe.com/)）に移動します。
 1. 左側の&#x200B;**製品とサービス**&#x200B;列の下にある&#x200B;**管理**&#x200B;リンクをクリックします。
-1. **AEM as a Cloud Service** を選択します。
+1. 選択 **AEMas a Cloud Service**.
 1. 「**新しいプロファイル**」ボタンを押します。
 
    ![新しいプロファイル](/help/implementing/developing/introduction/assets/s2s-newproductprofile.png)
 
-1. プロファイルに名前を付け、「**保存**」を押します。
+1. プロファイルに名前を付け、を押します。 **保存**.
 
    ![プロファイルを保存](/help/implementing/developing/introduction/assets/s2s-saveprofile.png)
 

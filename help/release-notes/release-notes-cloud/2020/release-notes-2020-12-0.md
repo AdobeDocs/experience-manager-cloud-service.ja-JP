@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.12.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.12.0 リリースのリリースノート。'
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 51%
+source-wordcount: '652'
+ht-degree: 50%
 
 ---
 
@@ -47,13 +47,13 @@ Adobe Experience Manager(AEM)as a Cloud Service 2020.12.0の Cloud Manager の�
 
 ### [!DNL Cloud Manager] の新機能 {#what-is-new-cm}
 
-* のセルフサービス管理 [SSL 証明書](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) および [カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+* [SSL 証明書](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)と[カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/introduction.md)のセルフサービス管理。
 
-* のセルフサービス管理 [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+* [IP 許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)のセルフサービス管理。
 
 * 更新済み **環境** の詳細ページで、ユーザーが環境でカスタムドメイン名と IP許可リストを管理できるようになりました。
 
-### バグ修正 {#bug-fixes-cloud-manager}
+### バグの修正 {#bug-fixes-cloud-manager}
 
 * 結果を提供せずにコードスキャンステージでエラーが発生した場合に対処します。
 
@@ -63,7 +63,7 @@ Adobe Experience Manager(AEM)as a Cloud Service 2020.12.0の Cloud Manager の�
 
 ### [!DNL Code Refactoring Tools] の新機能  {#what-is-new-crt}
 
-* AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンには、AEM Dispatcher Converter と Repository Modenizer のバグ修正が含まれ、新しいユーティリティであるインデックスコンバーターもサポートされています。 詳しくは、 [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html?lang=en#benefits) このプラグインの詳細については、ここを参照してください。
+* AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンには、AEM Dispatcher Converter と Repository Modenizer のバグ修正が含まれ、新しいユーティリティであるインデックスコンバーターもサポートされています。 詳しくは、 [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits) このプラグインの詳細については、ここを参照してください。
 
 * インデックスコンバーターは、顧客のカスタム Oak インデックス定義をAEMのas a Cloud Serviceの互換性のある Oak インデックス定義に変換するために使用できるユーティリティです。 詳しくは、 [インデックスコンバーター](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) を参照してください。
 

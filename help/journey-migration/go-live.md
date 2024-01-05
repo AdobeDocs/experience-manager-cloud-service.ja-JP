@@ -2,7 +2,7 @@
 title: 運用開始
 description: コードとコンテンツがクラウドに対応した後に移行を実行する方法について
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 75d702cf45e38da4b7259907e7f707b6f18bd428
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1721'
 ht-degree: 93%
@@ -126,7 +126,7 @@ ht-degree: 93%
 * 最終コンテンツ追加を実行します。
 * Dispatcher 設定を検証します。
    * Dispatcher のローカルでの設定、検証およびシミュレーションを容易に行えるようにするローカルの Dispatcher バリデーターを使用します。
-      * [ローカルの Dispatcher ツールを設定します。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=ja#prerequisites)
+      * [ローカルの Dispatcher ツールを設定します。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#prerequisites)
    * 仮想ホストの設定を慎重に確認します。
       * 最も簡単な（デフォルトの）解決策は、`/dispatcher/src/conf.d/available_vhostsfolder` 内の仮想ホストファイルに `ServerAlias *` を含めることです。
          * これにより、製品機能テスト、Dispatcher キャッシュの無効化、およびクローンで使用されるホストエイリアスが機能するようになります。

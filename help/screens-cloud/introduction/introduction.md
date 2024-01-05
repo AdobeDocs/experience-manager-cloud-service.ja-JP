@@ -2,10 +2,10 @@
 title: AEM Screens as a Cloud Service の概要
 description: このページは、Adobe Experience Manager Screensas a Cloud Serviceの紹介として機能します。
 exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 53%
+source-wordcount: '373'
+ht-degree: 56%
 
 ---
 
@@ -19,9 +19,9 @@ AEM Screens as a Cloud Service は、マーケターが動的なデジタルエ�
 
 Screens as a Cloud Service には、次の 2 つの主要なコンポーネントがあります。
 
-* **[コンテンツプロバイダー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en)**：AEM Cloud Service または Adobe Managed Services（AMS）上で動作する Screens アドオンです。Screens コンテンツプロバイダーを使用すると、コンテンツ作成者は、チャネルを作成および管理できます。コンテンツ作成者は、ディスプレイの作成やプレーヤーの登録の詳細を気にすることなく、新しいコンテンツを追加したり、コンテンツを編集したりできます。コンテンツプロバイダーは、コンテンツの開発、ディスプレイ、プレーヤーの登録の詳細を抽象化します。
+* **[コンテンツプロバイダー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html)**：AEM Cloud Service または Adobe Managed Services（AMS）上で動作する Screens アドオンです。Screens コンテンツプロバイダーを使用すると、コンテンツ作成者は、チャネルを作成および管理できます。コンテンツ作成者は、ディスプレイの作成やプレーヤーの登録の詳細を気にすることなく、新しいコンテンツを追加したり、コンテンツを編集したりできます。コンテンツプロバイダーは、コンテンツの開発、ディスプレイ、プレーヤーの登録の詳細を抽象化します。
 
-* **[サービスプロバイダー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)**:Adobe I/O Runtime上で動作するデジタルサイネージ管理サービス。 Screens Services Provider を使用すると、コンテンツ作成者、開発者および管理者は、コンテンツがチャネルに追加された後のコンテンツ再生のディスプレイとプレーヤーを管理できます。 また、Screens サービスプロバイダーは、コンテンツを高レベルで再生する場所とタイミングをオーケストレーターに通知します。
+* **[サービスプロバイダー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html)**:Adobe I/O Runtime上で動作するデジタルサイネージ管理サービス。 Screens Services Provider を使用すると、コンテンツ作成者、開発者および管理者は、コンテンツがチャネルに追加された後のコンテンツ再生のディスプレイとプレーヤーを管理できます。 また、Screens サービスプロバイダーは、コンテンツを高レベルで再生する場所とタイミングをオーケストレーターに通知します。
 
 
 ## アーキテクチャの概要 {#architectural-overview}

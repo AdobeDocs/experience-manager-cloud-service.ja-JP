@@ -2,10 +2,10 @@
 title: 環境の作成
 description: ここでは、Cloud Manager で Screens as a Cloud Service 用の環境を作成する方法について説明します。
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 47%
+source-wordcount: '194'
+ht-degree: 44%
 
 ---
 

@@ -2,10 +2,10 @@
 title: コンテンツ転送ツール使用のガイドラインとベストプラクティス
 description: コンテンツ転送ツールを使用する際のガイドラインとベストプラクティスについて説明します。
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1432'
-ht-degree: 64%
+source-wordcount: '1401'
+ht-degree: 62%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 64%
 
 コンテンツ転送ツールの新しいバージョンには、次のガイドラインとベストプラクティスが適用されます。
 
-* 実行 [リビジョンのクリーンアップ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=ja) および [データストアの整合性チェック](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=ja) の **ソース** リポジトリを使用して、潜在的な問題を特定し、リポジトリのサイズを小さくすることができます。
+* 実行 [リビジョンのクリーンアップ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=ja) および [データストアの整合性チェック](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html) の **ソース** リポジトリを使用して、潜在的な問題を特定し、リポジトリのサイズを小さくすることができます。
 
 * インジェスト段階では、Adobeは、 *ワイプ* モードは有効です。target Adobe Experience Manager(AEM) リポジトリ環境の既存のリポジトリ（オーサーまたはパブリッシュ）が削除される場合に有効になります。 次に、移行セットのデータでを更新します。 このモードは、現在のコンテンツの上に移行セットが適用される非ワイプモードよりも高速です。
 
@@ -74,7 +74,7 @@ ht-degree: 64%
 
 * コンテンツ転送ツール（CTT）は、ソースインスタンスからターゲットインスタンスにコンテンツを転送する前に、どのような種類のコンテンツ分析も実行しません。例えば、CTT では、コンテンツをパブリッシュ環境に取り込む際に、公開済みコンテンツと非公開コンテンツを区別しません。移行セットで指定されているコンテンツはすべて、選択したターゲットインスタンスに取り込まれます。ユーザーは、オーサーインスタンスとパブリッシュインスタンスのどちらか一方または両方に移行セットを取り込むことができます。Adobeでは、コンテンツを実稼動インスタンスに移動する際に、コンテンツをターゲットのオーサーインスタンスに移動するために、CTT をソースオーサーインスタンスにインストールすることをお勧めします。 同様に、ソースパブリッシュインスタンスに CTT をインストールして、コンテンツをターゲットパブリッシュインスタンスに移動します。詳しくは、[パブリッシュインスタンスでのコンテンツ転送ツールの実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja#running-tool)を参照してください。
 
-* コンテンツ転送ツールによって転送されるユーザーとグループは、権限を満たすためにコンテンツで必要なものに限られます。_抽出_&#x200B;プロセスは、`/home` 全体を移行セットにコピーし、各ユーザーのメールアドレスから作成されたフィールドを追加して、ユーザーマッピングを実行します。詳しくは、[ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)を参照してください。_取り込み_&#x200B;プロセスは、移行されたコンテンツ ACL で参照されているすべてのユーザーとグループをコピーします。詳しくは、 [閉じられたユーザーグループの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) 閉じられたユーザーグループ (CUG) ポリシーで使用されるグループに関するその他の考慮事項については、を参照してください。
+* コンテンツ転送ツールによって転送されるユーザーとグループは、権限を満たすためにコンテンツで必要なものに限られます。_抽出_&#x200B;プロセスは、`/home` 全体を移行セットにコピーし、各ユーザーのメールアドレスから作成されたフィールドを追加して、ユーザーマッピングを実行します。詳しくは、[ユーザーマッピングとプリンシパルの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)を参照してください。The _取得_ プロセスは、移行されたコンテンツ ACL で参照されているすべてのユーザーとグループをコピーします。 詳しくは、 [閉じられたユーザーグループの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) 閉じられたユーザーグループ (CUG) ポリシーで使用されるグループに関するその他の考慮事項については、を参照してください。
 
 * 抽出段階では、コンテンツ転送ツールはアクティブな AEM ソースインスタンスで実行されます。
 

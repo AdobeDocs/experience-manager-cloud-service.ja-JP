@@ -1,13 +1,13 @@
 ---
 title: ワークフローインスタンスの管理
-description: ワークフローインスタンスの管理方法について説明します。 ワークフローコンソールの使用
+description: ワークフローコンソールを使用したワークフローインスタンスの管理方法について説明します
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 99%
+source-wordcount: '1286'
+ht-degree: 98%
 
 ---
 
@@ -32,26 +32,22 @@ ht-degree: 99%
 1. **実行中のワークフロー**：実行中のワークフローの数とステータスを表示します。例えば、以下の画像で表示されているのは、AEMインスタンスの&#x200B;**実行中のワークフロー**&#x200B;の数と&#x200B;**ステータス**&#x200B;です。
 
    * **ステータス：正常**
-
      ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **ステータス：正常でない**
-
      ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
 1. ワークフローインスタンスの&#x200B;**ステータスの詳細**&#x200B;では、「**詳細**」をクリックすると、**実行中のワークフローインスタンス**、**完了したワークフローインスタンス**、**中止されたワークフローインスタンス**、**失敗したワークフローインスタンス**&#x200B;などの数が表示されます。例えば、以下の画像では、**ステータスの詳細**&#x200B;が表示されています。
 
    * **ステータスの詳細：正常**
-
      ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
    * **ステータスの詳細：正常でない**
-
      ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
-   > ワークフローインスタンスを正常な状態に維持するには、[ワークフローインスタンスの定期的なパージ](#regular-purging-of-workflow-instances)または[ワークフローのベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=ja)に記載されているベストプラクティスに従います。
+   > ワークフローインスタンスを正常な状態に維持するには、[ワークフローインスタンスの定期的なパージ](#regular-purging-of-workflow-instances)または[ワークフローのベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)に記載されているベストプラクティスに従います。
 
 ## ワークフローインスタンスの検索 {#search-workflow-instances}
 
@@ -114,7 +110,8 @@ ht-degree: 99%
 
 ワークフローが失敗した場合、AEM の&#x200B;**エラー**&#x200B;コンソールを使用してエラーの原因を調べ、特定された原因に応じて適切なアクションを取ることができます。
 
-* **失敗の詳細**：ウィンドウを開き、**失敗メッセージ**、**ステップ、**失敗スタック**&#x200B;を表示します。
+* **失敗の詳細**
+ウィンドウを開き、 **失敗メッセージ**、 **ステップ、 **エラースタック**.
 
 * **履歴を開く**&#x200B;ワークフローの履歴の詳細を表示します。
 

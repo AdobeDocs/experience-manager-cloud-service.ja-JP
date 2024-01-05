@@ -2,10 +2,10 @@
 title: オーサー層の保護
 description: オーサー層へのアクセスを保護するためのネットワークポリシーを設定する方法について説明します。
 exl-id: f5be90a4-266a-4d23-8e8b-94156f0264d5
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 88%
+source-wordcount: '119'
+ht-degree: 87%
 
 ---
 

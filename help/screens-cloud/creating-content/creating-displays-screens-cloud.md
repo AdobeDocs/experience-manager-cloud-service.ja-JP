@@ -2,9 +2,9 @@
 title: Screens as a Cloud Service でのディスプレイの作成と管理
 description: このページでは、Screens as a Cloud Service でディスプレイを作成および管理する方法について説明します。
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '649'
 ht-degree: 89%
 
 ---
@@ -133,4 +133,4 @@ ht-degree: 89%
 
 ## 次のステップ {#whats-next}
 
-これで、プロジェクトでのディスプレイの作成と管理の方法を学びました。次に、「[Screens as a Cloud Service へディスプレイへのチャネル割り当て](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=ja)」ドキュメントを確認し、Screens as a Cloud Service のジャーニーを続けてください。
+これで、プロジェクトでのディスプレイの作成と管理の方法を学びました。次に、「[Screens as a Cloud Service へディスプレイへのチャネル割り当て](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html)」ドキュメントを確認し、Screens as a Cloud Service のジャーニーを続けてください。

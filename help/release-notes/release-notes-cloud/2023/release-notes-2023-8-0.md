@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0 リリースのリリースノート。'
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 30%
+source-wordcount: '1691'
+ht-degree: 34%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 30%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在の機能リリース (2023.8.0) は 2023 年 8 月 31 日です。 次の機能リリース (2023.9.0) は、2023 年 9 月 28 日に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.8.0）のリリース日は 2023年8月31日です。次回の機能リリース（2023.9.0）は 2023年9月28日（PT）に予定されています。
 
 ## リリースビデオ {#release-video}
 
@@ -70,11 +70,11 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![データソースからのアセットの一括読み込み](/help/release-notes/assets/bulk-import.png)
 
-* **Adobe Express を活用した画像編集ツール**：簡単で直感的 [画像編集ツール (Adobe Express機能を利用 )](/help/assets/edit-images-assets-view.md) は、AEM Assets内で直接使用して、コンテンツの再利用を促進し、コンテンツの速度を向上できます。
+* **画像編集ツール (Adobe Express機能 )**：簡単で直感的 [画像編集ツール (Adobe Express機能を利用 )](/help/assets/edit-images-assets-view.md) は、AEM Assets内で直接使用して、コンテンツの再利用を促進し、コンテンツの速度を向上できます。
 
   ![Adobe Express を使用した画像の編集](/help/release-notes/assets/edit-adobe-express.png)
 
-* **マイワークスペースのクイックアクセス用に項目をピン留めする際の柔軟性**：組織全体またはグループのリストの項目を選択してピン留めし、それらを [My Workspace のクイックアクセスセクション](/help/assets/my-workspace-assets-view.md) 選択内容に基づいて選択します。
+* **My Workspace クイックアクセス用に項目をピン留めする際の柔軟性**：組織全体またはグループのリストの項目を選択してピン留めし、それらを [My Workspace のクイックアクセスセクション](/help/assets/my-workspace-assets-view.md) 選択内容に基づいて選択します。
 
   ![グループ用の項目のピン留め](/help/release-notes/assets/pin-items-for-groups.png)
 
@@ -82,9 +82,9 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 **検索の機能強化**
 
-* 管理者が [アセットのバッチサイズの設定](/help/assets/search-assets.md#configure-asset-batch-size) 検索を実行すると表示される アセット検索結果をさらに下にスクロールして結果を読み込むと、設定したバッチサイズの数倍の値でアセット検索結果が表示されます。 200、500、1,000 個のアセットの使用可能なバッチサイズから選択できます。 バッチサイズを小さく設定すると、検索応答時間が短縮されます。
+* 管理者が [アセットのバッチサイズの設定](/help/assets/search-assets.md#configure-asset-batch-size) 検索を実行すると表示される アセット検索結果をさらに下にスクロールして結果を読み込むと、設定したバッチサイズの倍数でアセット検索結果が表示されます。200、500、1,000 個のアセットの使用可能なバッチサイズから選択できます。バッチサイズを小さく設定すると、検索応答時間が短縮されます。
 
-  ![Assets のバッチサイズ設定](/help/release-notes/assets/assets-batch-size-configuration.png)
+  ![アセットのバッチサイズ設定](/help/release-notes/assets/assets-batch-size-configuration.png)
 
 * Experience Manager Assetsに、の新しいバージョン 9 が含まれるようになりました。 `damAssetLucene` インデックス。 `damAssetLucene-9` Oak クエリファセットの動作を次の値にカウントするように変更しました。 [ファセット数のアクセス制御を評価しなくなりました。](/help/assets/search-assets.md) 基になる検索インデックスによって返されるので、検索応答時間が短くなります。
 
@@ -110,11 +110,11 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **Forms向けのExperience Cloud設定自動化機能を備えたAdobe Analytics**：いくつかのボタンをフリップして、Experience Cloud設定の自動化でAdobe Analyticsを有効にできるようになりました。 これにより、AEM Formsas a Cloud ServiceをExperience PlatformタグとAdobe Analyticsに接続して、発行されたフォームのパフォーマンス指標を取得し、追跡できます。
 
-* **Adobe AnalyticsアダプティブFormsのレポートテンプレート**:Forms as a Cloud ServiceがAdobe Analyticsレポート OOTB を提供するようになりました。 これにより、フォームのパフォーマンスを簡単に理解できます。フォームレベルの指標を使用すると、レンディション、訪問者、送信、平均記入時間など、複数の主要業績評価指標（KPI）に対するフォームのパフォーマンスに関するインサイトを得ることができます。ユーザーの行動やフィードバックを追跡することで、フォームの混乱の原因となっている領域を特定し、フォームのデザインと機能に関するガイドを改善できます。
+* **Adobe AnalyticsアダプティブFormsのレポートテンプレート**:Forms as a Cloud ServiceがAdobe Analyticsレポート OOTB を提供するようになりました。 これにより、フォームのパフォーマンスを簡単に理解できます。フォームレベルの指標を使用すると、レンディション、訪問者、送信、平均記入時間など、複数の主要業績評価指標 (KPI) に対するフォームのパフォーマンスに関するインサイトを得ることができます。 ユーザーの行動やフィードバックを追跡することで、フォームの混乱の原因となっている領域を特定し、フォームのデザインと機能に関するガイドを改善できます。
 
   ![アダプティブフォームのユーザーエンゲージメントの Adobe Analytics レポート](/help/forms/assets/forms-analytics-report.png)
 
-* **[コアコンポーネントに基づくアダプティブFormsのフォームフラグメント](/help/forms/adaptive-form-fragments-core-components.md)**：フォームフラグメントを使用してフォーム構築のエクスペリエンスを向上させるため、複製を避け、デジタルインベントリを最適化し、コラボレーションを強化します。 これらの再利用可能なコンポーネントは複数のフォームにシームレスに統合され、一貫性のあるプロフェッショナルな外観のフォームの作成を合理化します。 フォームフラグメントは、「一度変更してすべてに反映」機能を通じて、再利用性、標準化、ブランドの一貫性を確保します。 1 か所でおこなわれた更新が、これらのフラグメントを利用するすべてのフォームに自動的に反映されるので、メンテナンス性と効率性が向上します。
+* **[コアコンポーネントに基づくアダプティブFormsのフォームフラグメント](/help/forms/adaptive-form-fragments-core-components.md)**：フォームフラグメントを使用してフォーム構築のエクスペリエンスを向上させるため、複製を避け、デジタルインベントリを最適化し、コラボレーションを強化します。 これらの再利用可能なコンポーネントは複数のフォームにシームレスに統合され、一貫性のあるプロフェッショナルな外観のフォームの作成を合理化します。 フォームフラグメントは、「一度変更すればすべてに反映」機能を通じて、再利用性、標準化、ブランドの一貫性を確保します。1 か所で行われた更新が、これらのフラグメントを利用するすべてのフォームに自動反映されるので、メンテナンス性と効率性が向上します。
 
 * **[Adobe Sign Workflow ステップの強化](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: Adobe Sign Workflow ステップが拡張され、以下が含まれるようになりました。
    * **Adobe Signの政府機関 ID ベースの認証**:Adobe Acrobat Signの政府 ID ベースの認証では、政府発行の ID（運転免許証、国民 ID、パスポート）を使用してユーザーが ID を認証できるようにすることで、さらに検証レイヤーを提供しています。 この機能強化により、信頼できる ID ドキュメントを使用することで、署名プロセスの信頼性がさらに高まり、高度なセキュリティ、コンプライアンスおよびユーザー検証を必要とするシナリオに最適になります。
@@ -123,7 +123,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
    * **署名者以外の契約受信者の新しい役割**:Adobe Acrobat Signには、署名者だけでなく、契約受信者の役割を拡張して、ワークフロー要件をより適切に満たすことができます。 有効にすると、契約の各受信者の役割を個別に設定でき、署名者がデフォルトになります。
 
-* **[Document Assurance API（通信 API の一部）を使用してドキュメントをProtect](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**:Document Assurance API を使用すると、ドキュメントに署名し、暗号化することで、機密情報を保護できます。 暗号化を通じて、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセス権を取得できるようになります。 この防護の強化された層は、不正な目から貴重なデータを守るだけでなく、心の安らぎも提供します。 署名 API を使用すると、組織が配信および受信するAdobe PDFドキュメントのセキュリティとプライバシーを保護できます。 このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
+* **[Document Assurance API（通信 API の一部）を使用してドキュメントをProtect](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**:Document Assurance API を使用すると、ドキュメントに署名し、暗号化することで、機密情報を保護できます。 暗号化を通じて、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセス権を取得できるようになります。 この防護の強化された層は、不正な目から貴重なデータを守るだけでなく、心の安らぎも提供します。 Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、電子署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
 
 * **通信 API でのページ数のサポート**：これで、通信 API を使用してドキュメントを取得すると共に、ドキュメント内に含まれるページ数に関する貴重な情報を受け取ることができます。
 
