@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: cfae48067df75dae54822dc0c6f868cca75887d4
+source-git-commit: c04b9391059e66b343fe2ecab90e26179b2172ac
 workflow-type: tm+mt
-source-wordcount: '4565'
+source-wordcount: '4567'
 ht-degree: 90%
 
 ---
@@ -781,6 +781,7 @@ ht-degree: 90%
       + [プレースホルダー](/help/edge/docs/placeholders.md)
       + [サイトマップ](/help/edge/developer/sitemap.md)
       + [SharePoint Setup](/help/edge/docs/setup-customer-sharepoint.md)
+      + [Slackボット](/help/edge/docs/slack.md)
    + Edge 配信アプリケーションの起動 {#launch}
       + [ライブチェックリストに移動](/help/edge/docs/go-live-checklist.md)
       + [プッシュの無効化](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
