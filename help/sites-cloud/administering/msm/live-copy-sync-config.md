@@ -7,14 +7,14 @@ exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2414'
-ht-degree: 90%
+ht-degree: 97%
 
 ---
 
 
 # ライブコピーの同期の設定  {#configuring-live-copy-synchronization}
 
-Adobe Experience Managerには、すぐに使用できる複数の同期設定が用意されています。 ライブコピーを使用する前に、次の事項を考慮して、ライブコピーをソースコンテンツと同期させる方法とタイミングを定義しておいてください。
+Adobe Experience Manager には、すぐに使用できる複数の同期設定が用意されています。ライブコピーを使用する前に、次の事項を考慮して、ライブコピーをソースコンテンツと同期させる方法とタイミングを定義しておいてください。
 
 1. 既存のロールアウト設定が要件を満たしているかどうかを判断します。
 1. 既存のロールアウト設定が要件を満たしていない場合は、独自のロールアウト設定を作成する必要があるかどうかを判断します。
@@ -22,7 +22,7 @@ Adobe Experience Managerには、すぐに使用できる複数の同期設定�
 
 ## インストールされるロールアウト設定とカスタムロールアウト設定 {#installed-and-custom-rollout-configurations}
 
-このセクションでは、インストールされているロールアウト設定と、それらが使用する同期アクション、および必要に応じてカスタム設定を作成する方法に関する情報を提供します。
+この節では、インストールされるロールアウト設定、それらの設定で使用する同期アクションおよびカスタム設定の作成方法（必要な場合）に関する情報を示します。
 
 >[!CAUTION]
 >
@@ -45,7 +45,7 @@ Adobe Experience Managerには、すぐに使用できる複数の同期設定�
 
 AEM に標準で用意されているロールアウト設定の一覧を次の表に示します。表には各ロールアウト設定のトリガーと同期アクションが含まれます。
 
-インストールされたロールアウト設定のアクションが要件を満たさない場合は、次の操作を実行できます。 [ロールアウト設定を作成します。](#creating-a-rollout-configuration)
+インストールされたロールアウト設定のアクションが要件を満たさない場合は、[ロールアウト設定を作成](#creating-a-rollout-configuration)できます。
 
 | 名前 | 説明 | トリガー | [同期アクション](#synchronization-actions) |
 |---|---|---|---|
@@ -58,9 +58,9 @@ AEM に標準で用意されているロールアウト設定の一覧を次の�
 
 ### 同期アクション {#synchronization-actions}
 
-AEM に標準で用意されている同期アクションの一覧を次の表に示します。
+AEM で標準として用意されている同期アクションの一覧を次の表に示します。
 
-インストールされたアクションが要件を満たさない場合は、次の操作を実行できます。 [新しい同期アクションを作成します。](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
+インストールされているアクションが要件を満たさない場合は、[新しい同期アクションを作成](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)できます。
 
 | アクション名 | 説明 | プロパティ |
 |---|---|---|
@@ -68,7 +68,7 @@ AEM に標準で用意されている同期アクションの一覧を次の表�
 | `contentDelete` | ソースに存在しないライブコピーのノードを削除します。[**CQ MSM Content Delete Action** サービスを設定](#excluding-properties-and-node-types-from-synchronization)して、除外するノードタイプ、段落項目、ページプロパティを指定してください。 |  |
 | `contentUpdate` | ソースからの変更を使用してライブコピーのコンテンツを更新します。[**CQ MSM Content Update Action** サービスを設定](#excluding-properties-and-node-types-from-synchronization)して、除外するノードタイプ、段落項目、ページプロパティを指定してください。 |  |
 | `editProperties` | ライブコピーのプロパティを編集します。編集するプロパティとその値は `editMap` プロパティで指定します。`editMap` プロパティの値は次の形式にしてください。<br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` と `new_value` は正規表現で、`n` は増分される整数です。<br>例えば、`editMap` の値が <br>`sling:resourceType#/(contentpage`‖`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br> の場合を考えてみましょう。この場合は、ライブコピーノードのプロパティは次のように編集されます。<br>`contentpage` または `homepage` に設定されている `sling:resourceType` プロパティは `mobilecontentpage` に設定されます。<br>`contentpage` に設定されている `cq:template` プロパティは `mobilecontentpage` に設定されます。 | `editMap: (String)` でプロパティ、現在の値、新しい値を指定します。詳しくは、説明を参照してください。 |
-| `notify` | ページがロールアウトされたページイベントを送信します。通知を受け取るには、まずロールアウトイベントをサブスクライブする必要があります。 |  |
+| `notify` | ページがロールアウトされたページイベントを送信します。通知を受け取るには、最初にロールアウトイベントを購読する必要があります。 |  |
 | `orderChildren` | ブループリントの順序に基づいて、子ノードの順序を決定します。 |  |
 | `referencesUpdate` | ライブコピー上の参照を更新します。<br>ライブコピーページ内のパスのうち、ブループリント内のリソースを指すものを検索します。パスが見つかったら、ライブコピー内の関連リソースを指すようにそのパスを更新します。ブループリント外のターゲットを持つ参照は変更されません。<br>[**CQ MSM References Update Action** サービスを設定](#excluding-properties-and-node-types-from-synchronization)して、除外するノードタイプ、段落項目、ページプロパティを指定してください。 |  |
 | `targetVersion` | ライブコピーのバージョンを作成します。<br>このアクションは、ロールアウト設定に含まれる唯一の同期アクションである必要があります。 |  |
@@ -84,12 +84,12 @@ AEM に標準で用意されている同期アクションの一覧を次の表�
 
 ### ロールアウト設定の作成 {#creating-a-rollout-configuration}
 
-以下が可能です。 [ロールアウト設定の作成](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) インストールされたロールアウト設定が、次の手順を実行してアプリケーションの要件を満たさない場合。
+インストールされたロールアウト設定がアプリケーションの要件を満たさない場合は、次の手順を実行して[ロールアウト設定を作成](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration)できます。
 
 1. [ロールアウト設定を作成します。](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
 1. [ロールアウト設定に同期アクションを追加します。](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
 
-新しいロールアウト設定は、ブループリントページまたはライブコピーページでロールアウト設定を行う際に使用できます。
+ブループリントまたはライブコピーページでロールアウト設定を指定すると、新しいロールアウト設定を使用できるようになります。
 
 ### プロパティとノードタイプの同期からの除外 {#excluding-properties-and-node-types-from-synchronization}
 
@@ -156,8 +156,8 @@ MSM を使用すると、通常使用するロールアウト設定のセット�
 
 例えば、ブループリントで [WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)サイトをソースコンテンツとして使用しているとします。サイトはブループリントから作成されます。次のリスト内の各項目では、ロールアウト設定の使用に関する様々なシナリオについて説明します。
 
-* ロールアウト設定を使用するようにブループリントページやライブコピーページが設定されていません。 MSM では、すべてのライブコピーページに対してシステムのデフォルトのロールアウト設定が使用されます。
-* WKND サイトのルートページが複数のロールアウト設定を使用して設定されている。MSM は、すべてのライブコピーページに対して、これらのロールアウト設定を使用します。
+* ロールアウト設定を使用するようにブループリントページやライブコピーページは設定されていません。MSM では、すべてのライブコピーページに対してシステムのデフォルトのロールアウト設定が使用されます。
+* WKND サイトのルートページが複数のロールアウト設定を使用して設定されている。MSM では、これらのロールアウト設定をすべてのライブコピーページに使用します。
 * WKND サイトのルートページが複数のロールアウト設定を使用して設定されており、ライブコピーサイトのルートページが別のロールアウト設定のセットを使用して設定されている。この場合、MSM では、ライブコピーサイトのルートページで設定されたロールアウト設定を使用します。
 
 ### ライブコピーページ用のロールアウト設定の指定 {#setting-the-rollout-configurations-for-a-live-copy-page}
@@ -174,7 +174,7 @@ MSM を使用すると、通常使用するロールアウト設定のセット�
 
    ![親ページからのライブコピーの継承](../assets/live-copy-inherit.png)
 
-1. 必要に応じて、 **ライブコピーの継承** フラグ。 オンにした場合、ライブコピー設定がすべての子で有効になります。
+1. 必要に応じて、「**ライブコピーの継承**」フラグを調整します。オンにした場合、ライブコピー設定がすべての子で有効になります。
 
 1. 「**ロールアウト設定を親から継承**」プロパティをオフにして、1 つ以上のロールアウト設定をリストから選択します。
 
@@ -188,7 +188,7 @@ MSM を使用すると、通常使用するロールアウト設定のセット�
 
 ブループリントページのロールアウト時に使用するロールアウト設定を使用して、ブループリントページを設定します。
 
-ブループリントページの子ページは設定を継承します。 使用するロールアウト設定を指定する場合は、ページがその親から継承する設定を上書きする場合があります。
+ブループリントページの子ページはその設定を継承します。使用するロールアウト設定を指定する場合は、ページがその親から継承する設定を上書きする場合があります。
 
 1. **サイト**&#x200B;コンソールを使用してブループリントのルートページを選択します。
 1. ツールバーの「**プロパティ**」を選択します。

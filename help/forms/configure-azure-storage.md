@@ -5,7 +5,7 @@ exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '583'
-ht-degree: 84%
+ht-degree: 86%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 84%
 [[!DNL Experience Manager Forms] データ統合](data-integration.md)では、フォームを [!DNL Azure] ストレージサービスと統合するための [!DNL Azure] ストレージ設定を提供します。フォームデータモデルを使用して、[!DNL Azure] サーバーと連携するアダプティブフォームを作成することにより、ビジネスワークフローを使用できるようになります。次に例を示します。
 
 * アダプティブフォームの送信時に、データを [!DNL Azure] に書き込む。
-* データを書き込む [!DNL Azure] フォームデータモデルで定義されたカスタムエンティティを使用し、逆に。
+* フォームデータモデルで定義されているカスタムエンティティを通じて、データを [!DNL Azure] に書き込みます（またはその逆の操作）。
 * [!DNL Azure] サーバーに対してデータに関するクエリを実行し、アダプティブフォームに事前入力する。
 * [!DNL Azure] サーバーからデータを読み取る。
 

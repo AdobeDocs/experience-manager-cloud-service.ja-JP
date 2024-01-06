@@ -7,13 +7,13 @@ exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '2476'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
 # アダプティブフォームのテーブル {#tables-in-adaptive-forms}
 
-[新しいアダプティブフォームを作成する](/help/forms/creating-adaptive-form-core-components.md)、または [AEM Sites ページにアダプティブフォームを追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)際には、<span class="preview"> 最新の拡張可能なデータキャプチャである[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
+[新しいアダプティブフォームを作成する](/help/forms/creating-adaptive-form-core-components.md)、または [AEM Sites ページにアダプティブフォームを追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)際には、<span class="preview"> 最新の拡張可能なデータキャプチャである[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
 
 | バージョン | 記事リンク |
@@ -77,7 +77,7 @@ AEM Forms では、サイドバーのコンポーネントブラウザーにテ�
 
 #### 列の追加または削除
 
-列を追加または削除するには、ヘッダーセクションのテキストセルをクリックすると、列を追加または削除するオプションを含むツールバーが開きます。
+列を追加または削除するには、ヘッダーセクションのテキストセルをクリックします。ツールバーが開き、列を追加または削除するオプションが表示されます。
 
 ![add-delete-move-row-column](assets/add-delet-column.png)
 
@@ -155,7 +155,7 @@ AEM Forms では、サイドバーのコンポーネントブラウザーにテ�
 1. 「設定を繰り返し」タブで、テーブルの行の数を制限する最大値と最小値を指定します。
 1. 「**完了**」をクリックします。
 
-実行時またはプレビュー時に、 **+** および ![削除ボタン](/help/forms/assets/Smock_Delete.svg) ボタンを使用して行を追加または削除します。
+実行時やプレビュー時に、行を追加または削除するための **+** ボタンと「![削除](/help/forms/assets/Smock_Delete.svg)」ボタンが表示されます。
 
 ![add-delete-rows-dynamically](assets/add-delete-layout.png)
 

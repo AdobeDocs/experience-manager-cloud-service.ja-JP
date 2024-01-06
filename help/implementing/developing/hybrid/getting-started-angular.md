@@ -1,17 +1,17 @@
 ---
 title: Angular を使用した AEM での SPA の概要
-description: この記事では、サンプルのSPAアプリケーションを紹介し、その設定方法を説明し、Angularフレームワークを使用して独自のSPAをすぐに使い始める方法を説明します。
+description: この記事では、SPA アプリケーションの例とその設定方法のほか、Angular フレームワークを使用して独自の SPA の運用をすばやく開始する方法について説明します。
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '981'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
 # Angular を使用した AEM での SPA の概要 {#getting-started-with-spas-in-aem-using-angular}
 
-単一ページアプリケーション（SPA）により、Web サイトのユーザーに魅力的なエクスペリエンスを提供することができます。開発者は SPA フレームワークを使用してサイトを構築することを望み、作成者は SPA フレームワークを使用して構築されたサイトのコンテンツを AEM 内でシームレスに編集することを望みます。
+単一ページアプリケーション（SPA）により、Web サイトのユーザーに魅力的なエクスペリエンスを提供することができます。開発者にとっては、SPA フレームワークを使用してサイトを構築できると都合がよく、作成者にとっては、SPA フレームワークを使用して構築されたサイトのコンテンツを AEM 内でシームレスに編集できると便利です。
 
 SPA オーサリング機能には、AEM 内で SPA をサポートするための包括的なソリューションが用意されています。この記事では、Angular フレームワーク上のシンプルな SPA アプリケーションを紹介し、その組み合わせ方法を説明します。これにより、独自の SPA をすぐに使い始めることができます。
 
@@ -239,7 +239,7 @@ export class ImageComponent {
 MapTo('my-angular-app/components/image')(ImageComponent, ImageEditConfig);
 ```
 
-AEMのSPAの中心概念は、SPAコンポーネントをAEMコンポーネントにマッピングし、コンテンツが変更された場合（および逆の場合）にコンポーネントを更新するという考えです。 この通信モデルの概要については、[SPA エディターの概要](editor-overview.md)のドキュメントを参照してください。
+AEM の SPA の中核概念は、SPA コンポーネントを AEM コンポーネントにマッピングし、コンテンツが変更されたときにコンポーネントも更新する（またはその逆も含む）というものです。この通信モデルの概要については、[SPA エディターの概要](editor-overview.md)のドキュメントを参照してください。
 
 `MapTo('my-angular-app/components/image')(Image, ImageEditConfig);`
 
@@ -276,4 +276,4 @@ AEMのSPAの中心概念は、SPAコンポーネントをAEMコンポーネン�
 * 「[SPA エディターの概要](editor-overview.md)」では、AEM と SPA 間の通信モデルをより深く分析しています。
 * [WKND SPA プロジェクト](wknd-tutorial.md)は、AEM で簡単な SPA プロジェクトを実装するための、手順を追ったチュートリアルです。
 * [SPA の動的モデルからコンポーネントへのマッピング](model-to-component-mapping.md)では、動的モデルとコンポーネントのマッピング、および AEM の SPA 内での動作方法について説明しています。
-* [SPA Blueprint](blueprint.md) は、React やAngular以外のフレームワーク用にAEMにSPAを実装する場合や、単に理解を深めたい場合に、AEM用SPA SDK の仕組みに関する詳細な情報を提供します。
+* [SPA ブループリント](blueprint.md)は、React や Angular 以外のフレームワーク用に、AEM に SPA を実装する場合や、単に理解を深めたい場合に、AEM 用の SPA SDK の詳しい仕組みを提供します。

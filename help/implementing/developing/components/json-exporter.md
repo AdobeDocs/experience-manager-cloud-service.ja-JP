@@ -5,7 +5,7 @@ exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 87%
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ AEM コンテンツサービスにより、あらゆるクライアントで使�
 
 ## JSON エクスポーターとコンテンツフラグメントコアコンポーネント {#json-exporter-with-content-fragment-core-components}
 
-AEM JSON エクスポーターを使用して、任意のAEMページのコンテンツを JSON データモデル形式で配信できます。 その後、独自のアプリケーションでコンテンツを使用できるようになります。
+AEM JSON エクスポーターを使用すると、任意の AEM ページのコンテンツを JSON データモデル形式で配信できます。その後、独自のアプリケーションでコンテンツを使用できるようになります。
 
 AEM 内では、セレクター `model` と `.json` 拡張機能を使用して配信をおこないます。
 
@@ -35,7 +35,7 @@ AEM 内では、セレクター `model` と `.json` 拡張機能を使用して�
    http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks.model.json
    ```
 
-1. 次のようなコンテンツを配信します。
+1. 次のようなコンテンツが配信されます。
 
    ![WKND コンテンツの JSON モデル](assets/json-model-wknd.png)
 
@@ -53,7 +53,7 @@ AEM 内では、セレクター `model` と `.json` 拡張機能を使用して�
   http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks/jcr:content/root/container/container/contentfragment.model.json
   ```
 
-* 次のようなコンテンツを配信します。
+* 次のようなコンテンツが配信されます。
 
   ![WKND コンテンツフラグメントの JSON モデル](assets/json-model-wknd-content-fragment.png)
 

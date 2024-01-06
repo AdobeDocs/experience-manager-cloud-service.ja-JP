@@ -6,7 +6,7 @@ exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '2971'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -127,7 +127,7 @@ mklink wknd.vhost ..\available_vhosts\wknd.vhost
 
 >[!NOTE]
 >
-> Windows の下でシンボリックリンクを使用する場合は、管理者権限のコマンドプロンプト、Windows Subsystem for Linux でを実行するか、 [シンボリックリンクを作成する](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) 権限が割り当てられました。
+> Windows の下でシンボリックリンクを使用する場合は、管理者権限のコマンドプロンプトを Windows Subsystem for Linux で実行するか、[シンボリックリンクを作成する](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links)権限を割り当てます。
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -165,7 +165,7 @@ mklink wknd.farm ..\available_farms\wknd.farm
 
 >[!NOTE]
 >
-> Windows の下でシンボリックリンクを使用する場合は、管理者権限のコマンドプロンプト、Windows Subsystem for Linux でを実行するか、 [シンボリックリンクを作成する](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) 権限が割り当てられました。
+> Windows の下でシンボリックリンクを使用する場合は、管理者権限のコマンドプロンプトを Windows Subsystem for Linux で実行するか、[シンボリックリンクを作成する](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links)権限を割り当てます。
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -396,7 +396,7 @@ Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも�
 | `conf.d/modsec` |
 | `conf.d/rewrites` |
 
-例えば、以下で作成したディレクトリにファイルを含めることができます。 `conf.d/includes` ディレクトリの内容は次のとおりです。
+例えば、次のように `conf.d/includes` ディレクトリの下に作成されたディレクトリにファイルを含めることができます。
 
 ```
 Include conf.d/includes/mynewdirectory/myincludefile.conf

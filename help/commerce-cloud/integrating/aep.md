@@ -14,7 +14,7 @@ exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
 source-git-commit: d9d4ed55722920a8528056defbc0d8a411dd6807
 workflow-type: tm+mt
 source-wordcount: '1866'
-ht-degree: 90%
+ht-degree: 95%
 
 ---
 
@@ -57,7 +57,7 @@ AEM Commerce as a Cloud Service 環境を稼働させるには、[ローカル�
 ![AEM Commerce プロジェクト](../assets/aep-integration/aem-project-with-commerce.png)
 
 
-作成したAEM Commerce プロジェクトをビルドし、プロジェクトのルートディレクトリから次のコマンドを実行して、ローカルのAEM SDK にデプロイします。
+プロジェクトのルートディレクトリから次のコマンドを実行して、作成した AEM Commerce プロジェクトをビルドし、ローカルの AEM SDK にデプロイします。
 
 ```bash
 $ mvn clean install -PautoInstallSinglePackage
@@ -402,11 +402,11 @@ Experience Platform でデータストリームを作成するには、次の手
 
    ![AEP でのデータストリーム作成](../assets/aep-integration/AEP-Datastream-Create.png)
 
-1. 「__名前__」必須フィールドを使用して、データストリームに名前を付けます。 の下 __イベントスキーマ__ フィールドで、作成したスキーマを選択し、 __保存__.
+1. 「__名前__」必須フィールドを使用して、データストリームに名前を付けます。 「__イベントスキーマ__」フィールドの下で、作成したスキーマを選択し、「__保存__」をクリックします。
 
    ![AEP でのデータストリーム定義](../assets/aep-integration/AEP-Datastream-Define.png)
 
-1. 作成したデータストリームを開き、 __サービスを追加__.
+1. 作成したデータストリームを開き、「__サービスを追加__」をクリックします。
 
    ![AEP でのデータストリーム作成の「サービスを追加」ボタン](../assets/aep-integration/AEP-Datastream-Add-Service.png)
 
@@ -437,9 +437,9 @@ Experience Platform でデータストリームを作成するには、次の手
 
 1. Sites ページから、 __My Demo StoreFront／us／en__ ページを選択し、上部のアクションバーの「__編集__」クリックします。
 
-1. 上部のアクションバーで、 __公開済みとして表示__&#x200B;をクリックし、ストアフロントのナビゲーションから目的のカテゴリをクリックします。
+1. 上部のアクションバーで、「__公開済みとして表示__」をクリックし、ストアフロントのナビゲーションで任意のカテゴリをクリックします。
 
-1. の任意の製品カードをクリックします。 __製品紹介ページ__&#x200B;を選択し、「 __色、サイズ__ 有効にする __買い物かごに追加__ 」ボタンをクリックします。
+1. __製品ページ__&#x200B;で任意の製品カードをクリックし、__色とサイズ__&#x200B;を選択して「__買い物かごに追加__」ボタンを有効にします。
 
 
 1. を開きます。 __Snowplow インスペクタ__ ブラウザーの拡張機能パネルから「 」を選択し、 __Experience Platform水型 SDK__ をクリックします。
@@ -499,6 +499,6 @@ __プロファイル XDM イベント：__
 詳しくは、次のリソースを参照してください。
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- [[!DNL Data Connection] 概要](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
-- [[!DNL Data Connection] イベント](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
+- [[!DNL Data Connection]  の概要](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html?lang=ja)
+- [[!DNL Data Connection]  イベント](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html?lang=ja)
 - [Adobe Experience Platform の概要](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=ja)

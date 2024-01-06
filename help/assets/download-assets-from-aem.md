@@ -8,7 +8,7 @@ exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1329'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -79,7 +79,7 @@ Experience Manager では、アセットの量とサイズに基づいてダウ�
 
    | ダウンロードオプション | 説明 |
    |---|---|
-   | **[!UICONTROL アセットごとに別のフォルダーを作成]** | このオプションを選択して、アセットのダウンロードされたレンディションをすべて含むアセットごとにフォルダーを作成します。 このオプションを選択しない場合、各アセット（ダウンロード用に選択した場合はそのレンディションも含む）は、生成されたアーカイブの親フォルダーに格納されます。 |
+   | **[!UICONTROL アセットごとに別のフォルダーを作成]** | このオプションを選択すると、アセットのダウンロード済みレンディションをすべて含むフォルダーをアセットごとに作成できます。このオプションを選択しない場合、各アセット（ダウンロード用に選択した場合はそのレンディションも含む）は、生成されたアーカイブの親フォルダーに格納されます。 |
    | **[!UICONTROL メール]** | （ダウンロードへのリンクを含む）メール通知を別のユーザーに送信する場合は、このオプションを選択します。受信者ユーザーは `dam-users` グループのメンバーである必要があります。次の場所にある標準のメールテンプレートを利用できます。<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> デプロイメント時にカスタマイズしたテンプレートは、次の場所で利用できます。 <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>テナント固有のカスタムテンプレートは、次の場所に保存できます。<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
    | **[!UICONTROL アセット]** | このオプションを選択すると、アセットを元の形式でダウンロードできます。<br>オリジナルアセットにサブアセットがある場合は、サブアセットオプションを使用できます。 |
    | **[!UICONTROL レンディション]** | レンディションは、アセットのバイナリ表現です。アセットには、アップロードされたファイルの一次表現が含まれます。アセットは任意の数の追加の表現を持つことができます。<br>このオプションを選択すると、ダウンロードするレンディションを選択できます。使用できるレンディションは、選択したアセットによって異なります。 |
@@ -116,7 +116,7 @@ Experience Manager では、アセットの量とサイズに基づいてダウ�
 
    `/apps/<your-app-name>/config.publish`
 
-1. config フォルダーに、タイプのファイルを作成します。 `nt:file` 名前付き `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
+1. config フォルダーに、`nt:file` タイプのファイル `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` を作成します。
 1. `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` に以下を入力します。ダウンロードの最大サイズ（バイト単位）を `asset.download.prezip.maxcontentsize` の値として設定します。以下のサンプルでは、100 KB を超えないように ZIP ダウンロードの最大サイズを設定しています。
 
    ```java

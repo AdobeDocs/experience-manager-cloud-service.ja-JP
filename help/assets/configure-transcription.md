@@ -12,7 +12,7 @@ exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1663'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -55,15 +55,15 @@ ht-degree: 92%
 
 ![configure-transcription-service](assets/configure-transcription-service.png)
 
-**[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL Azure Media Services の設定]**&#x200B;に移動します。左側のパネルからフォルダー（ロケーション）を選択し、 [!UICONTROL 作成] ボタンをクリックして、 [!DNL Azure] アカウント。 このフォルダーは、[!DNL Azure] クラウド設定が Experience Manager Assets に保存される場所となります。[!DNL Azure] 資格情報を入力して、「**[!UICONTROL 保存して閉じる]**」をクリックします。
+**[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL Azure Media Services の設定]**&#x200B;に移動します。左側のパネルからフォルダー（場所）を選択し、「[!UICONTROL 作成]」ボタンをクリックして、お使いの [!DNL Azure] アカウントとの接続を設定します。このフォルダーは、[!DNL Azure] クラウド設定が Experience Manager Assets に保存される場所となります。[!DNL Azure] 資格情報を入力して、「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
 ### トランスクリプションの処理プロファイルの設定 {#configure-processing-profile}
 
 [!DNL Azure Media Services] を Experience Manager Assets に設定したら、次に、オーディオおよびビデオアセットの AI ベースのトランスクリプションを生成するためのアセット処理プロファイルを作成します。AI ベースの処理プロファイルは、[サポートされているオーディオまたはビデオアセット](#supported-file-formats-for-transcription)のトランスクリプトを Experience Manager Assets にレンディションとして生成し、オリジナルアセットが存在するフォルダーにトランスクリプト（.vtt ファイル）を保存します。したがって、ユーザーはアセットとそのトランスクリプトレンディションを簡単に探して見つけることができます。
 
-に移動します。 **[!UICONTROL ツール]** > **[!UICONTROL Assets]** > **[!UICONTROL 処理プロファイル]** をクリックし、 **[!UICONTROL 作成]** ボタンをクリックして、オーディオおよびビデオファイルの転写を生成する AI ベースの処理プロファイルを作成します。 デフォルトでは、処理プロファイルページには 3 つのタブ（「画像」、「ビデオ」、「カスタム」）のみ表示されます。ただし、お使いの [!DNL Experience Manager Assets] インスタンスに [!DNL Azure Media Services] を設定してある場合は、「**[!UICONTROL コンテンツ AI]**」タブも表示されます。処理プロファイルの作成時に「**[!UICONTROL コンテンツ AI]**」タブが表示されない場合は、[!DNL Azure] 資格情報を確かめてください。
+**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL 処理プロファイル]**&#x200B;に移動し、「**[!UICONTROL 作成]**」ボタンをクリックして、オーディオとビデオのファイルのトランスクリプションを生成するための AI ベースの処理プロファイルを作成します。デフォルトでは、処理プロファイルページには 3 つのタブ（「画像」、「ビデオ」、「カスタム」）のみ表示されます。ただし、お使いの [!DNL Experience Manager Assets] インスタンスに [!DNL Azure Media Services] を設定してある場合は、「**[!UICONTROL コンテンツ AI]**」タブも表示されます。処理プロファイルの作成時に「**[!UICONTROL コンテンツ AI]**」タブが表示されない場合は、[!DNL Azure] 資格情報を確かめてください。
 
-Adobe Analytics の **[!UICONTROL コンテンツ AI]** タブで、 **[!UICONTROL 新規追加]** ボタンをクリックして、転写を設定します。 ここでは、ドロップダウンリストからファイルタイプを選択して、トランスクリプトを生成するためのファイル形式（MIME タイプ）を含めたり除外したりすることができます。 次の図では、サポートされているオーディオおよびビデオファイルがすべて含まれ、テキストファイルは除外されています。
+「**[!UICONTROL コンテンツ AI]**」タブで「**[!UICONTROL 新規追加]**」ボタンをクリックして、トランスクリプションを設定します。ここでは、ドロップダウンリストからファイルタイプを選択して、トランスクリプトを生成するためのファイル形式（MIME タイプ）を含めたり除外したりすることができます。次の図では、サポートされているオーディオおよびビデオファイルがすべて含まれ、テキストファイルは除外されています。
 
 「**[!UICONTROL 同じディレクトリに VTT トランスクリプトを作成]**」トグルを有効にして、トランスクリプトレンディション（.vtt ファイル）がオリジナルアセットが存在するフォルダーに作成、保存されるようにします。他のレンディションも、この設定に関係なく、デフォルトの DAM アセット処理ワークフローで生成されます。
 
@@ -77,7 +77,7 @@ Adobe Analytics の **[!UICONTROL コンテンツ AI]** タブで、 **[!UICONTR
 
 ![configure-transcription-service](assets/video-processing-profile2.png)
 
-それでは、このビデオプロファイルのトランスクリプションを設定しましょう。次に移動： **[!UICONTROL コンテンツ AI]** 」タブをクリックし、 **[!UICONTROL 新規追加]** 」ボタンをクリックします。 すべてのオーディオおよびビデオファイルを含め、画像およびアプリケーションファイルを除外します。「**[!UICONTROL 同じディレクトリに VTT トランスクリプトを作成]**」トグルを有効にして、設定を保存します。
+それでは、このビデオプロファイルのトランスクリプションを設定しましょう。「**[!UICONTROL コンテンツ AI]**」タブに移動し、「**[!UICONTROL 新規追加]**」ボタンをクリックします。すべてのオーディオおよびビデオファイルを含め、画像およびアプリケーションファイルを除外します。「**[!UICONTROL 同じディレクトリに VTT トランスクリプトを作成]**」トグルを有効にして、設定を保存します。
 
 ![configure-transcription-service](assets/video-processing-profile1.png)
 

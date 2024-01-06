@@ -1,23 +1,23 @@
 ---
 title: アダプティブフォームフィールドの事前入力方法
-description: 既存のデータを使用してアダプティブフォームのフィールドに事前入力します。ユーザーは、ソーシャルプロファイルでログインすることで、フォーム内の基本情報を事前入力できます。
+description: 既存のデータを使用してアダプティブフォームのフィールドに事前入力します。ユーザーは、ソーシャルプロファイルでログインすることで、フォーム内の基本情報を事前に入力できます。
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
 source-wordcount: '2007'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # アダプティブフォームフィールドに事前入力{#prefill-adaptive-form-fields}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
+<span class="preview">[アダプティブフォームの新規作成](/help/forms/creating-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 ## はじめに {#introduction}
@@ -262,7 +262,7 @@ JSON スキーマモデルを使用するフィールドの場合、以下の JS
 
 >[!NOTE]
 >
-> 連結されていないフィールドにユーザーが入力したデータ内で、連結されたフィールドと連結されていないフィールドが重なっている場合、それらのフィールドを混在させないでください。 可能な場合は、スキーマまたは XFA フォームテンプレートを変更し、連結されていないフィールドのエントリを追加します。これにより、フィールドが連結されて、そのデータを送信済みデータの他のフィールドのデータと同様に使用できます。
+> 経験則として、連結されていないフィールドでユーザーが入力したデータ上で、連結されているフィールドと連結されていないフィールドが重複する場合は、これらのフィールドを混在させないようにします。可能な場合は、スキーマまたは XFA フォームテンプレートを変更し、連結されていないフィールドのエントリを追加します。これにより、フィールドが連結されて、そのデータを送信済みデータの他のフィールドのデータと同様に使用できます。
 
 ## ユーザーデータの事前入力でサポートされるプロトコル {#supported-protocols-for-prefilling-user-data}
 

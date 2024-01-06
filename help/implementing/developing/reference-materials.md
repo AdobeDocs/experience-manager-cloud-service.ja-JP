@@ -5,13 +5,13 @@ exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 source-git-commit: 3434d51c9b0bad02b0c3f0836341f671c9405182
 workflow-type: tm+mt
 source-wordcount: '594'
-ht-degree: 87%
+ht-degree: 96%
 
 ---
 
 # API リファレンス資料 {#api-reference-materials}
 
-Adobe Experience Manager（AEM）では、アプリケーション開発および AEM 拡張用の API を多数提供しています。AEMは、複数のオープンソーステクノロジーを基盤として構築されており、これを使用することもできます。
+Adobe Experience Manager（AEM）では、アプリケーション開発および AEM 拡張用の API を多数提供しています。AEM は、いくつかのオープンソーステクノロジーを基盤として構築されており、それらのテクノロジーも利用できます。
 
 ## AEM コア API {#core-aem-apis}
 
@@ -20,7 +20,7 @@ AEM の中核を成す API は次のとおりです。
 | API | 説明 |
 |---|---|
 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 製品の抽象概念（ページ、アセット、ワークフローなど）。 |
-| [Granite UI](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Adobeのオープン Web スタックは、様々な必須コンポーネントを提供します（6.5 Granite マテリアルは AEMaaCS に適用されます）。 |
+| [Granite UI](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | アドビのオープン web スタック。様々な必須コンポーネントを提供します（6.5 Granite の資料が AEMaaCS に適用されます） |
 | [Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) | アドビのクラウド UI 用のビジュアルスタイル。ユーザーエクスペリエンスの一貫性を保つように設計されています。 |
 
 <!---
@@ -33,7 +33,7 @@ AEM の中核を成す API は次のとおりです。
 
 ## その他のフレームワーク {#additional-apis}
 
-AEMは、追加のオープンソース API を利用しています。
+AEM は、いくつかの追加オープンソース API を利用しています。
 
 | API | 説明 |
 |---|---|

@@ -8,7 +8,7 @@ exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '614'
-ht-degree: 92%
+ht-degree: 95%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 92%
 
 プライベートフォルダーを作成して共有するには：
 
-1. Adobe Analytics の [!DNL Assets] コンソールで、 **[!UICONTROL 作成]** ボタンをクリックし、 **[!UICONTROL フォルダー]** を選択します。
+1. [!DNL Assets] コンソールで、ツールバーの「**[!UICONTROL 作成]**」ボタンをクリックし、メニューから「**[!UICONTROL フォルダー]**」を選択します。
 
    ![アセットフォルダーの作成](assets/create-folder.png)
 

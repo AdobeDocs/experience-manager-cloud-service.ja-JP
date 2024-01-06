@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: f59959bc10e502d85d3f4797dcf4ad0490d233f4
 workflow-type: tm+mt
 source-wordcount: '1177'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -20,9 +20,9 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 * ビルド環境は Linux ベースで、Ubuntu 22.04 から派生しています。
 * Apache Maven 3.8.8 がインストールされています。
-   * Adobeが推奨するユーザー [HTTP の代わりに HTTPS を使用するように Maven リポジトリを更新します。](#https-maven)
+   * アドビでは、ユーザーに [HTTP ではなく HTTPS を使用するように Maven リポジトリを更新](#https-maven)することをお勧めします。
 * インストールされる Java バージョンは Oracle JDK 8u371 と Oracle JDK 11.0.20 です。
-* デフォルトでは、 `JAVA_HOME` 環境変数はに設定されます。 `/usr/lib/jvm/jdk1.8.0_371` oracleJDK 8u371 を含む 詳しくは、 [代替 Maven 実行 JDK バージョン](#alternate-maven-jdk-version) の節を参照してください。
+* デフォルトでは、`JAVA_HOME` 環境変数は `/usr/lib/jvm/jdk1.8.0_371` に設定されています。これには、Oracle JDK 8u371 が含まれています。詳しくは、[代替となる Maven 実行の JDK バージョン](#alternate-maven-jdk-version)の節を参照してください。
 * 必要に応じてインストールされる追加のシステムパッケージが、次のようにいくつかあります。
    * `bzip2`
    * `unzip`
@@ -36,7 +36,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven は、`settings.xml` ファイルを使用してシステムレベルで設定されます。このファイルには、`adobe-public` というプロファイルを使用したアドビの公開アーティファクトリポジトリが自動的に含まれています（詳しくは、[アドビの公開 Maven リポジトリ](https://repo1.maven.org/)を参照してください）。
-* Node.js 18 は [フロントエンドパイプラインとフルスタックパイプライン。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+* Node.js 18 は、[フロントエンドパイプラインとフルスタックパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)で使用できます。
 
 >[!NOTE]
 >
@@ -44,15 +44,15 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 ## HTTPS Maven リポジトリ {#https-maven}
 
-Cloud Manager [リリース2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) ビルド環境のローリングアップデートを開始しました ( リリース2023.12.0で完了 )。Maven 3.8.8 のアップデートが含まれています。Maven 3.8.1 で導入された大きな変更は、潜在的な脆弱性の軽減を目的としたセキュリティ強化です。 特に、Maven は安全でないすべてのを無効にします `http://*` デフォルトでミラー ( [Maven リリースノート。](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+Cloud Manager [リリース 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) では、Maven 3.8.8 へのアップデートを含む、ビルド環境へのローリングアップデートが開始されました（リリース 2023.12.0 で完了）。Maven 3.8.1 で導入された重要な変更は、潜在的な脆弱性を軽減することを目的としたセキュリティ強化でした。具体的には、[Maven リリースノート](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)で説明するように、Maven では安全でないすべての `http://*` ミラーをデフォルトで無効にするようになりました。
 
-このセキュリティ強化の結果、特に安全でない HTTP 接続を使用する Maven リポジトリからアーティファクトをダウンロードする場合に、ビルド手順で問題が発生する場合があります。
+このセキュリティ強化の結果、一部のユーザーには、ビルド手順で、特に安全でない HTTP 接続を使用する Maven リポジトリからアーティファクトをダウンロードする際に問題が発生する場合があります。
 
-更新バージョンでスムーズな操作を実現するために、Adobeでは、HTTP ではなく HTTPS を使用するように Maven リポジトリを更新することをお勧めします。 この調整は、業界がセキュアな通信プロトコルに移行し、安全で信頼性の高いビルドプロセスを維持するのに役立ちます。
+アップデートされたバージョンでスムーズなエクスペリエンスを実現するために、アドビでは、ユーザーが Mavenリポジトリを更新して HTTP ではなく HTTPS を使用することをお勧めします。この調整は、業界でセキュアな通信プロトコルへの移行が進むのに合わせて行われ、安全で信頼性の高いビルドプロセスを維持するのに役立ちます。
 
 ### 特定の Java バージョンの使用 {#using-java-support}
 
-デフォルトでは、プロジェクトは、Oracle 8 JDK を使用して Cloud Manager ビルドプロセスでビルドされます。代替 JDK を使用するお客様には、2 つのオプションがあります。
+デフォルトでは、プロジェクトは、Oracle 8 JDK を使用して Cloud Manager ビルドプロセスでビルドされます。代替の JDK を使用する場合は、次の 2 つの選択肢があります。
 
 * [Maven ツールチェーンを使用する](#maven-toolchains)
 * [Maven 実行プロセス全体で使用する代替 JDK バージョンを選択する](#alternate-maven-jdk-version)
@@ -168,8 +168,8 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 * 名前はすべて大文字にします。
 * 変数の数はパイプラインあたり最大 200 個までです。
 * 名前は 100 文字以下にする必要があります。
-* `string` 型変数の値は 2048 文字未満にする必要があります。
-* 各 `secretString` 変数型の値は 500 文字以下にする必要があります。
+* `string` 変数の値はそれぞれ、2048 文字未満にする必要があります。
+* `secretString` 変数型の値はそれぞれ、500 文字以下にする必要があります。
 
 Maven `pom.xml` ファイル内で使用する場合は、通常、次のような構文を使用して、これらの変数を Maven プロパティにマッピングすると便利です。
 
@@ -189,7 +189,7 @@ Maven `pom.xml` ファイル内で使用する場合は、通常、次のよう�
 
 ## 追加のシステムパッケージのインストール {#installing-additional-system-packages}
 
-すべての機能を実装するにあたり、一部のビルドでは追加のシステムパッケージをインストールする必要があります。例えば、Python や Ruby のスクリプトを呼び出すビルドには、適切な言語インタープリターがインストールされている必要があります。 その場合は、`pom.xml` で [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) を呼び出して、APT を起動します。この実行は通常、Cloud Manager 専用の Maven プロファイルにラップされます。この例では、Python をインストールしています。
+すべての機能を実装するにあたり、一部のビルドでは追加のシステムパッケージをインストールする必要があります。例えば、Python や Ruby のスクリプトが呼び出される可能性のあるビルドでは、適切な言語インタープリターのインストールが必要になります。その場合は、`pom.xml` で [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) を呼び出して、APT を起動します。この実行は通常、Cloud Manager 専用の Maven プロファイルにラップされます。この例では、Python をインストールしています。
 
 ```xml
         <profile>

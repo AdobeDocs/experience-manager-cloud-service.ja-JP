@@ -5,7 +5,7 @@ exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '1691'
-ht-degree: 34%
+ht-degree: 95%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 34%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.8.0）のリリース日は 2023年8月31日です。次回の機能リリース（2023.9.0）は 2023年9月28日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.8.0）の公開日は 2023年8月31日（PT）です。次回の機能リリース（2023.9.0）は、2023年9月28日（PT）に予定されています。
 
 ## リリースビデオ {#release-video}
 
-2023.8.0 リリースに追加された機能の概要については、 2023 年 8 月リリースの概要ビデオをご覧ください。
+2023.8.0 リリースで追加された機能の概要については、2023年8月リリースの概要ビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423535/?quality=12)
 
@@ -27,28 +27,28 @@ ht-degree: 34%
 
 ### の新機能[!DNL Experience Manager Sites] {#sites-features}
 
-* The [コンテンツフラグメントコンソール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ja) では、タグを表示し、メタデータとしてコンテンツフラグメントに適用されたタグで検索できるようになりました。 この機能で Assets UI に切り替える必要がなくなり、コンテキストの切り替えが減り、効率が向上します。
+* [コンテンツフラグメントコンソール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ja)では、タグを表示し、メタデータとしてコンテンツフラグメントに適用されたタグで検索できるようになりました。そのために Assets UI に切り替える必要がなくなり、コンテキストの切り替えも減って効率性が向上しています。
 
   ![コンテンツフラグメントコンソールでのタグ付け](/help/assets/content-fragments-console-tags.png)
-* AEM as a Cloud Serviceで新しいコンテンツフラグメントエディターを使用できるようになりました。 これにより、コンテンツ作成者は、オーサリングタスクを合理化し、コンテンツの編集中に異なるアプリを切り替える必要性を減らし、生産性を高めることができます。
+* AEM as a Cloud Service で新しいコンテンツフラグメントエディターを使用できるようになりました。これにより、コンテンツ作成者のオーサリングタスクが合理化され、コンテンツの編集中に異なるアプリを切り替える必要が減り、生産性が向上します。
   ![新しいコンテンツフラグメントエディター](/help/release-notes/assets/newCFEditor.png)
 
-新しいコンテンツフラグメントエディターには、元のエディターでは使用できない次の利点があります。
-* 自動保存によりオーサリングの効率が向上し、誤って編集内容が失われるのを防ぎます。
+新しいコンテンツフラグメントエディターには、元のエディターにはない次の利点があります。
+* 自動保存によりオーサリングの効率が向上し、誤って編集内容が失われるのが防止されます。
 * 深く構造化されたフラグメント内ですばやく移動できるように、構造ツリーを使用したコンテンツフラグメントとその参照の階層表示。
   ![コンテンツフラグメントエディターの構造ツリー](/help/release-notes/assets/newCFEditor_StructureTree.png)
 
-* 最初に Asset DAM にアップロードする必要なく、コンテンツ参照としてアセットをインラインでアップロードできる
-* コンテンツフラグメントによって提供されるレンダリングされたエクスペリエンスのアドホックプレビューを使用して、フロントエンドアプリでのコンテンツのルックアンドフィールを視覚化できます
-* エディターでコンテンツフラグメントの公開と非公開を 1 回クリックします。
-* コンテンツフラグメントの編集中に言語コピーを表示し、そこに移動する
+* 最初にアセット DAM にアップロードする必要のない、コンテンツ参照としてのアセットのインラインアップロード
+* コンテンツフラグメントによって提供されるレンダリングエクスペリエンスのアドホックプレビューを使用して、作成者がフロントエンドアプリでのコンテンツのルックアンドフィールを視覚化するのに役立てます
+* エディターでコンテンツフラグメントのワンクリック公開および非公開
+* コンテンツフラグメント編集時の言語コピーの表示と言語コピーへの移動
   ![コンテンツフラグメントエディターの言語コピー](/help/release-notes/assets/newCFEditor_LanguageCopies.PNG)
 
-* コンテンツフラグメントのタイムラインを追跡するのに役立つバージョンを表示する
+* コンテンツフラグメントのタイムラインを追跡するのに役立つバージョンの表示
 
   ![コンテンツフラグメントエディターのバージョン](/help/release-notes/assets/newCFEditor_Versionhistory.PNG)
 
-* 親参照を表示して、作成者が編集の影響を理解できるようにします
+* 作成者が自分の編集の影響を理解しやすくするための親参照の表示
 
   ![コンテンツフラグメントエディターの親参照](/help/release-notes/assets/newCFEditor_Parentreferences.PNG)
 
@@ -66,7 +66,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 -->
 
-* **データソースからのアセットの一括読み込み**：管理者は、 [多数のアセットを読み込む機能](/help/assets/bulk-import-assets-view.md) データソースからAEM Assetsへ。 管理者は、個々のアセットやフォルダーを AEM Assets にアップロードする必要がなくなりました。一括読み込みでサポートされるデータソースには、Azure、AWS、Google Cloud、Dropbox が含まれます。
+* **データソースからのアセットの一括読み込み**：管理者は、データソースから AEM Assets に[多数のアセットを読み込む機能](/help/assets/bulk-import-assets-view.md)を使用できます。管理者は、個々のアセットやフォルダーを AEM Assets にアップロードする必要がなくなりました。一括読み込みでサポートされるデータソースには、Azure、AWS、Google Cloud、Dropbox が含まれます。
 
   ![データソースからのアセットの一括読み込み](/help/release-notes/assets/bulk-import.png)
 
@@ -76,63 +76,63 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **My Workspace クイックアクセス用に項目をピン留めする際の柔軟性**：組織全体またはグループのリストの項目を選択してピン留めし、それらを [My Workspace のクイックアクセスセクション](/help/assets/my-workspace-assets-view.md) 選択内容に基づいて選択します。
 
-  ![グループ用の項目のピン留め](/help/release-notes/assets/pin-items-for-groups.png)
+  ![グループ用の項目をピン留め](/help/release-notes/assets/pin-items-for-groups.png)
 
 ### 管理ビューの新機能 {#admin-view-features}
 
 **検索の機能強化**
 
-* 管理者が [アセットのバッチサイズの設定](/help/assets/search-assets.md#configure-asset-batch-size) 検索を実行すると表示される アセット検索結果をさらに下にスクロールして結果を読み込むと、設定したバッチサイズの倍数でアセット検索結果が表示されます。200、500、1,000 個のアセットの使用可能なバッチサイズから選択できます。バッチサイズを小さく設定すると、検索応答時間が短縮されます。
+* 管理者が、検索の実行時に表示される[アセットのバッチサイズを設定](/help/assets/search-assets.md#configure-asset-batch-size)できるようになりました。アセット検索結果をさらに下にスクロールして結果を読み込むと、設定したバッチサイズの倍数でアセット検索結果が表示されます。200、500、1,000 個のアセットの使用可能なバッチサイズから選択できます。バッチサイズを小さく設定すると、検索応答時間が短縮されます。
 
   ![アセットのバッチサイズ設定](/help/release-notes/assets/assets-batch-size-configuration.png)
 
-* Experience Manager Assetsに、の新しいバージョン 9 が含まれるようになりました。 `damAssetLucene` インデックス。 `damAssetLucene-9` Oak クエリファセットの動作を次の値にカウントするように変更しました。 [ファセット数のアクセス制御を評価しなくなりました。](/help/assets/search-assets.md) 基になる検索インデックスによって返されるので、検索応答時間が短くなります。
+* Experience Manager Assets に、`damAssetLucene` インデックスの新しいバージョン 9 が含まれるようになりました。`damAssetLucene-9` が Oak クエリファセットのカウントの動作を変更し、基になる検索インデックスによって返される[ファセット数のアクセス制御を評価しなくなるため](/help/assets/search-assets.md)、検索応答時間が短縮されます。
 
-### で使用可能なリリース前機能 [!DNL Experience Manager Assets] {#prerelease-features-assets}
+### [!DNL Experience Manager Assets] で利用できるプレリリース機能 {#prerelease-features-assets}
 
-* **Dynamic Media**: [Dynamic Mediaでのビデオのマルチサブタイトルおよびマルチオーディオトラックのサポート](/help/assets/dynamic-media/video.md#about-msma) — プライマリビデオに複数のサブタイトルや複数のオーディオトラックを簡単に追加できるようになりました。 この機能により、グローバルなオーディエンスがビデオにアクセスできるようになります。1 つの公開済みプライマリビデオを複数の言語でグローバルオーディエンスに向けてカスタマイズし、様々な地理的地域のアクセシビリティガイドラインに従うことができます。また、作成者は、ユーザーインターフェイスの 1 つのタブからサブタイトルとオーディオトラックを管理することもできます。
+* **Dynamic Media**：[Dynamic Media のビデオに対するマルチサブタイトルとマルチオーディオトラックのサポート](/help/assets/dynamic-media/video.md#about-msma) - プライマリビデオに複数のサブタイトルと複数のオーディオトラックを簡単に追加できるようになりました。この機能により、グローバルなオーディエンスがビデオにアクセスできるようになります。1 つの公開済みプライマリビデオを複数の言語でグローバルオーディエンスに向けてカスタマイズし、様々な地理的地域のアクセシビリティガイドラインに従うことができます。また、作成者は、ユーザーインターフェイスの 1 つのタブからサブタイトルとオーディオトラックを管理することもできます。
 
   ![選択したビデオアセットのプロパティページの「サブタイトルとオーディオトラック」タブ。](/help/release-notes/assets/msma-aem-cs.png)*選択したビデオアセットのプロパティページの「サブタイトルとオーディオトラック」タブ。*
 
-* **Assets**:Experience Managerで管理される ZIP アーカイブおよび [ファイルを直接Experience Managerに抽出](/help/assets/manage-digital-assets.md#extract-zip-archives) ダウンロードせずに
+* **アセット**：Experience Manager で管理されている ZIP アーカイブを選択し、ファイルをダウンロードせずに [Experience Manager に直接ファイルを抽出](/help/assets/manage-digital-assets.md#extract-zip-archives)する機能。
 
-  ![グループ用の項目のピン留め](/help/release-notes/assets/extract-archive.png)
+  ![グループ用の項目をピン留め](/help/release-notes/assets/extract-archive.png)
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] で利用できる新機能 {#new-features-available-in-forms-channel}
 
-* [**Google reCAPTCHA エンタープライズサポート**](/help/forms/captcha-adaptive-forms.md)：アダプティブフォームでGoogle reCAPTCHA Enterprise を使用して、不正なアクティビティやスパムに対する保護を強化し、より安全なユーザーエクスペリエンスを提供します。 高度なリスク分析とシームレスな統合により、本物のユーザーは、ボットを効果的にブロックしながらフォームを簡単に送信できます。
+* [**Google reCAPTCHA Enterprise のサポート**](/help/forms/captcha-adaptive-forms.md)：アダプティブフォームで Google reCAPTCHA Enterprise を使用して、不正なアクティビティやスパムに対する保護を強化し、より安全なユーザーエクスペリエンスを提供します。高度なリスク分析とシームレスな統合により、ユーザーはボットを効果的にブロックしながらフォームを簡単に送信できます。
 
 
-### で使用可能なリリース前機能 [!DNL Forms] {#pre-release-features-available-in-forms-channel}
+### [!DNL Forms] で利用できるプレリリース機能 {#pre-release-features-available-in-forms-channel}
 
-* **Forms向けのExperience Cloud設定自動化機能を備えたAdobe Analytics**：いくつかのボタンをフリップして、Experience Cloud設定の自動化でAdobe Analyticsを有効にできるようになりました。 これにより、AEM Formsas a Cloud ServiceをExperience PlatformタグとAdobe Analyticsに接続して、発行されたフォームのパフォーマンス指標を取得し、追跡できます。
+* **Forms 向けの Experience Cloud 設定自動化機能を備えた Adobe Analytics**：いくつかのボタンをフリップして、Experience Cloud 設定の自動化で Adobe Analytics を有効にできるようになりました。これにより、AEM Forms as a Cloud Service を Experience Platform タグと Adobe Analytics に接続して、公開したフォームのパフォーマンス指標を取得し、追跡できます。
 
-* **Adobe AnalyticsアダプティブFormsのレポートテンプレート**:Forms as a Cloud ServiceがAdobe Analyticsレポート OOTB を提供するようになりました。 これにより、フォームのパフォーマンスを簡単に理解できます。フォームレベルの指標を使用すると、レンディション、訪問者、送信、平均記入時間など、複数の主要業績評価指標 (KPI) に対するフォームのパフォーマンスに関するインサイトを得ることができます。 ユーザーの行動やフィードバックを追跡することで、フォームの混乱の原因となっている領域を特定し、フォームのデザインと機能に関するガイドを改善できます。
+* **アダプティブフォームの Adobe Analytics レポートテンプレート**：Forms as a Cloud Service が Adobe Analytics レポート OOTB を提供するようになりました。これにより、フォームのパフォーマンスを簡単に理解できます。フォームレベルの指標を使用すると、レンディション、訪問者、送信、平均記入時間など、複数の主要業績評価指標（KPI）に対するフォームのパフォーマンスに関するインサイトを得ることができます。ユーザーの行動とフィードバックを追跡して、フォームのわかりにくい箇所を特定し、フォームのデザインと機能の改善についてガイドします。
 
   ![アダプティブフォームのユーザーエンゲージメントの Adobe Analytics レポート](/help/forms/assets/forms-analytics-report.png)
 
-* **[コアコンポーネントに基づくアダプティブFormsのフォームフラグメント](/help/forms/adaptive-form-fragments-core-components.md)**：フォームフラグメントを使用してフォーム構築のエクスペリエンスを向上させるため、複製を避け、デジタルインベントリを最適化し、コラボレーションを強化します。 これらの再利用可能なコンポーネントは複数のフォームにシームレスに統合され、一貫性のあるプロフェッショナルな外観のフォームの作成を合理化します。 フォームフラグメントは、「一度変更すればすべてに反映」機能を通じて、再利用性、標準化、ブランドの一貫性を確保します。1 か所で行われた更新が、これらのフラグメントを利用するすべてのフォームに自動反映されるので、メンテナンス性と効率性が向上します。
+* **[コアコンポーネントに基づくアダプティブフォームのフォームフラグメント](/help/forms/adaptive-form-fragments-core-components.md)**：重複を避け、デジタルインベントリを最適化し、共同作業を強化することで、フォームフラグメントを使用してフォーム構築のエクスペリエンスを向上させます。これらの再利用可能なコンポーネントは複数のフォームにシームレスに統合され、一貫性のあるプロフェッショナルな外観のフォームの作成を効率化します。フォームフラグメントは、「一度変更すればすべてに反映」機能を通じて、再利用性、標準化、ブランドの一貫性を確保します。1 か所で行われた更新が、これらのフラグメントを利用するすべてのフォームに自動反映されるので、メンテナンス性と効率性が向上します。
 
-* **[Adobe Sign Workflow ステップの強化](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: Adobe Sign Workflow ステップが拡張され、以下が含まれるようになりました。
-   * **Adobe Signの政府機関 ID ベースの認証**:Adobe Acrobat Signの政府 ID ベースの認証では、政府発行の ID（運転免許証、国民 ID、パスポート）を使用してユーザーが ID を認証できるようにすることで、さらに検証レイヤーを提供しています。 この機能強化により、信頼できる ID ドキュメントを使用することで、署名プロセスの信頼性がさらに高まり、高度なセキュリティ、コンプライアンスおよびユーザー検証を必要とするシナリオに最適になります。
+* **[Adobe Sign ワークフローステップの機能強化](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**：Adobe Sign ワークフローステップが強化機能され、次が含まれるようになりました。
+   * **Adobe Sign の行政 ID に基づいた認証**：Adobe Acrobat Sign の行政 ID に基づいた認証は、ユーザーが行政発行の ID（運転免許証、国民 ID、パスポート）を使用して身元を認証できるようにすることで、追加の検証レイヤーを提供します。この機能強化により、信頼できる ID ドキュメントを使用することで、署名プロセスの信頼性がさらに高まり、高度なセキュリティ、コンプライアンスおよびユーザー検証を必要とするシナリオに最適になります。
 
-   * **Adobe Signドキュメントの監査証跡**：監査記録機能を使用すると、Adobe Signドキュメントのライフサイクルに関する詳細なインサイトを得ることができます。 監査証跡を使用すると、ドキュメントに関連するすべてのアクションとインタラクションの包括的な記録を保持できるようになります。これには、ドキュメントを表示、編集、署名したユーザーなどの詳細と、各イベントのタイムスタンプが含まれます。この機能強化は、コンプライアンスの保持、紛争の解決、デジタル契約の整合性を確保する上で重要です。
+   * **Adobe Sign ドキュメントの監査証跡**：監査証跡機能を使用すると、Adobe Sign ドキュメントのライフサイクルに関する詳細なインサイトが得られます。監査証跡を使用すると、ドキュメントに関連するすべてのアクションとインタラクションの包括的な記録を保持できるようになります。これには、ドキュメントを表示、編集、署名したユーザーなどの詳細と、各イベントのタイムスタンプが含まれます。この機能強化は、コンプライアンスの保持、紛争の解決、デジタル契約の整合性を確保する上で重要です。
 
-   * **署名者以外の契約受信者の新しい役割**:Adobe Acrobat Signには、署名者だけでなく、契約受信者の役割を拡張して、ワークフロー要件をより適切に満たすことができます。 有効にすると、契約の各受信者の役割を個別に設定でき、署名者がデフォルトになります。
+   * **契約受信者の役割を署名者以外にも拡張**：Adobe Acrobat Sign には、契約受信者の役割を署名者以外にも拡張して、ワークフロー要件にさらに適合するオプションがあります。有効にすると、契約の各受信者の役割を個別に設定でき、署名者がデフォルトになります。
 
-* **[Document Assurance API（通信 API の一部）を使用してドキュメントをProtect](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**:Document Assurance API を使用すると、ドキュメントに署名し、暗号化することで、機密情報を保護できます。 暗号化を通じて、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセス権を取得できるようになります。 この防護の強化された層は、不正な目から貴重なデータを守るだけでなく、心の安らぎも提供します。 Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、電子署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
+* **[ドキュメント保証 API（通信 API の一部）を使用したドキュメントの保護](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：ドキュメント保証 API を使用すると、ドキュメントに署名し、暗号化することで、機密情報を保護できます。暗号化を通じて、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセス権を取得できるようになります。この強固な保護層は、不正な相手から貴重なデータを守るだけでなく、安心感も提供します。Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
 
-* **通信 API でのページ数のサポート**：これで、通信 API を使用してドキュメントを取得すると共に、ドキュメント内に含まれるページ数に関する貴重な情報を受け取ることができます。
+* **通信 API でのページ数のサポート**：通信 API を使用してドキュメントを取得すると共に、ドキュメント内に含まれるページ数に関する貴重な情報を受け取ることができます。
 
-* **[ルールエディターでのカスタムエラーハンドラーによるエラー処理](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**：外部サービスから返されたエラーに応じてカスタム関数を呼び出し、エンドユーザーに対してカスタマイズされた応答を提供できるようになりました。 例えば、特定のエラーコードに対してバックエンドでカスタムワークフローを呼び出したり、サービスが停止していることを顧客に通知したりできます。
+* **[ルールエディターでのカスタムエラーハンドラーによるエラー処理](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**：外部サービスから返されたエラーに応じて、カスタム関数を呼び出し、エンドユーザーに対してカスタマイズされた応答を提供できるようになりました。例えば、特定のエラーコードに対してバックエンドでカスタムワークフローを呼び出したり、サービスが停止していることを顧客に通知したりできます。
 
 
 ### ヘッドレスアダプティブフォーム早期導入者プログラム {#forms-early-adopter}
 
-[ヘッドレスアダプティブフォーム](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=jp)を使用すると、開発者は、従来のグラフィカルユーザーインターフェイスではなく、API を介してアクセスおよび操作できるインタラクティブなフォームを作成、公開、管理できます。ヘッドレスアダプティブフォームは以下の場合に役立ちます。
+[ヘッドレスアダプティブフォーム](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=ja)を使用すると、開発者は、従来のグラフィカルユーザーインターフェイスではなく、API を介してアクセスおよび操作できるインタラクティブなフォームを作成、公開、管理できます。ヘッドレスアダプティブフォームは以下の場合に役立ちます。
 
 * 高品質のマルチチャネルフォームを好みのプログラミング言語で作成
 * デスクトップおよびモバイルアプリ、web サイト、チャットアプリケーションにフォームをネイティブに統合
@@ -146,18 +146,18 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 ### CDN ログ {#cdn-logs}
 
-Cloud Manager から CDN ログをダウンロードします。これは、キャッシュヒット率の最適化や、コンテンツ配信フローの可視性の向上に役立ちます。 [詳細](/help/implementing/developing/introduction/logging.md#cdn-log) CDN ログの形式を設定します。 この機能は、9 月上旬に段階的に提供される予定です。
+Cloud Manager から CDN ログをダウンロードします。これは、キャッシュヒット率の最適化や、コンテンツ配信フローの可視性の向上に役立ちます。[CDN ログの形式について説明します](/help/implementing/developing/introduction/logging.md#cdn-log)。この機能は、9 月上旬に段階的にロールアウトされる予定です。
 
-### CDN および WAF ルールのアーリーアダプタープログラム {#waf-early-adopter}
+### CDN および WAF ルールの早期導入プログラム {#waf-early-adopter}
 
 CDN でのトラフィックのフィルタリング基準：
 
-* ヘッダーとプロパティのリクエスト（IP アドレスなど）
-* 悪意のあるトラフィックに関連付けられていると知られているトラフィックパターン
+* リクエストのヘッダーとプロパティ（IP アドレスなど）
+* 悪意のあるトラフィックと関連付けられていることがわかっているトラフィックパターン
 
-この機能を試して、フィードバックを共有したい場合は、 電子メールの送信先 **aemcs-waf-adopter@adobe.com** アーリーアダプタープログラムの詳細については、公式電子メール ID を参照してください。 スペースは制限されています。
+この機能を試してフィードバックを共有いただける場合早期導入プログラムについて詳しくは、ご自身の公式メール ID から **aemcs-waf-adopter@adobe.com** にメールを送信してください。参加者の数は制限されています。
 
-この機能の詳細については、この記事を参照してください。 [ここ](/help/security/traffic-filter-rules-including-waf.md).
+この機能について詳しくは、[こちら](/help/security/traffic-filter-rules-including-waf.md)の記事を参照してください。
 
 
 ## メンテナンスリリースノート {#maintenance}

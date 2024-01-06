@@ -5,7 +5,7 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '3057'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -83,9 +83,9 @@ AEM のヘッドレス機能は、いくつかの主要機能に基づいてい�
 コンテンツをヘッドレスに変更するために、AEM には 2 つの堅牢な API が用意されています。
 
 * GraphQL API を使用すると、コンテンツフラグメントにアクセスして配信するリクエストを作成できます。
-* Assets REST API を使用すると、コンテンツフラグメント（および他のアセット）を作成および変更できます。
+* アセット REST API を使用すると、コンテンツフラグメント（およびその他のアセット）を作成および変更できます。
 
-これらの API の概要と、API をAEMヘッドレスジャーニーの後半で使用する方法について説明します。 または、 [その他のリソース](#additional-resources) 詳細なドキュメントについては、以下の節を参照してください。
+これらの API とその使用方法については、AEM ヘッドレスジャーニーの後半で説明します。または、追加のドキュメントについて詳しくは、[その他のリソース](#additional-resources)の節を参照してください。
 
 ## ヘッドレス統合レベル {#integration-levels}
 
@@ -117,13 +117,13 @@ AEM は、完全なヘッドレスと、CMS の従来のフルスタックまた
 
 ### まだ、単一ページアプリケーション（SPA）などのヘッドレスコンテンツのコンシューマーはありません。  {#do-not-have-a-spa}
 
-ヘッドレスにAEMのコンテンツを使用するSPAを作成することを目的としている場合は、コンテンツフラグメントなどの機能を使用してヘッドレスコンテンツを管理し、AEM SPAエディターフレームワークを使用してSPAを構築できます。
+AEM のコンテンツをヘッドレスで使用する SPA を作成することを目標としている場合は、コンテンツフラグメントなどの機能を使用してヘッドレスコンテンツを管理し、AEM の SPA エディターフレームワークを使用して SPA を構築できます。
 
 SPA エディターを使用すると、SPA で AEM のコンテンツを使用するだけでなく、コンテンツ作成者が AEM 内で完全に編集することができるので、ヘッドレス配信の柔軟性と AEM 内でのコンテキスト内編集の両方を実現できます。
 
 ## 要件と前提条件 {#requirements-prerequisites}
 
-ヘッドレスAEMプロジェクトを開始する前に、いくつかの要件があります。
+ヘッドレス AEM プロジェクトを開始するには、いくつかの要件があります。
 
 ### 知識 {#knowledge}
 
@@ -143,7 +143,7 @@ SPA エディターを使用すると、SPA で AEM のコンテンツを使用�
 
 ### 対象範囲 {#scope}
 
-プロジェクトの対象範囲を明確に定義することが重要です。範囲は、受け入れ条件を通知し、完了の定義を確立します。
+プロジェクトの対象範囲を明確に定義することが重要です。範囲は受け入れ基準を定め、これを使用することで完了の定義を確立できます。
 
 最初に問うべき質問は、「AEM ヘッドレスで何を達成しようとしているか」です。一般的な答えは、AEM ではなく独自の開発ツールを使用して構築したエクスペリエンスアプリケーションを保有する、または将来保有するということです。このエクスペリエンスアプリケーションは、モバイルアプリや Web サイトなどのエンドユーザー顧客向けのエクスペリエンスアプリケーションである可能性があります。AEM ヘッドレスを使用する目的は、AEM ヘッドレスを呼び出してコンテンツを取得したり、エクスペリエンスアプリケーションから直接CRUD操作を実行できる最先端の API を使用して、AEM で作成、保存、管理できるコンテンツをエクスペリエンスアプリケーションに提供することです。これが目的でない場合は、[AEM のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ja)に戻り、目的により適したセクションを探してください。
 
@@ -166,7 +166,7 @@ SPA エディターを使用すると、SPA で AEM のコンテンツを使用�
 
 #### コンテンツ作成者 {#content-author}
 
-コンテンツ作成者は、AEM によってヘッドレスで配信されるコンテンツを作成および管理します。コンテンツ作成者は、コンテンツフラグメントエディターや様々なコンソールなどのAEM機能を使用して、コンテンツを管理します。
+コンテンツ作成者は、AEM によってヘッドレスで配信されるコンテンツを作成および管理します。コンテンツ作成者は、コンテンツフラグメントエディターや様々なコンソールなどの AEM 機能を使用して、コンテンツを管理します。
 
 コンテンツ作成者は、次のベストプラクティスに留意する必要があります。
 
@@ -259,12 +259,12 @@ AEM を使用した[一般的なヘッドレス実装](#level-1)の場合、デ�
 
 #### アップデート頻度 {#update-frequency}
 
-多くの場合、エクスペリエンスのセクションが異なれば、コンテンツのアップデート頻度は異なります。CDN とキャッシュの設定を微調整できるようにするには、これを理解することが重要です。 これは、コンテンツを表現するモデルを[コンテンツアーキテクト](#content-architects)が設計する際の重要な入力でもあります。次の点を考慮してください。
+多くの場合、エクスペリエンスのセクションが異なれば、コンテンツのアップデート頻度は異なります。CDN とキャッシュ設定を微調整するには、これを理解することが重要です。これは、コンテンツを表現するモデルを[コンテンツアーキテクト](#content-architects)が設計する際の重要な入力でもあります。次の点を考慮してください。
 
 * 一部のタイプのコンテンツは、一定の期間が過ぎると期限切れになりますか？
 * ユーザー固有の要素があり、そのためキャッシュできない要素はありますか？
 
-## 次のステップ {#what-is-next}
+## 次の手順 {#what-is-next}
 
 これで、ここでの AEM ヘッドレスデベロッパージャーニーは完了です。次ができるようになったはずです。
 
@@ -273,7 +273,7 @@ AEM を使用した[一般的なヘッドレス実装](#level-1)の場合、デ�
 * AEM ヘッドレスの統合レベルを把握する。
 * プロジェクトの範囲を定義する。
 
-次にドキュメントを確認して、AEMヘッドレスジャーニーを続ける必要があります [AEMヘッドレスを使用した初めてのエクスペリエンスへのパス](path-to-first-experience.md) 必要なツールの設定方法と、AEMでのデータのモデリングに関する考え方を学ぶための場所です。
+必要なツールを設定する方法と AEM でのデータのモデリングに関する考え方を説明する[AEM ヘッドレス機能を使用した初めてのエクスペリエンスへの道筋](path-to-first-experience.md)のドキュメントを確認して、AEM ヘッドレスジャーニーを続けてください。
 
 ## その他のリソース {#additional-resources}
 
@@ -281,9 +281,9 @@ AEM を使用した[一般的なヘッドレス実装](#level-1)の場合、デ�
 
 * [AEM ヘッドレス翻訳ジャーニー](/help/journey-headless/translation/overview.md) - このドキュメントジャーニーでは、ヘッドレステクノロジー、AEM によるヘッドレスコンテンツの提供方法、ヘッドレスコンテンツの翻訳方法について幅広く理解できます。
 * [Adobe Experience Manager as a Cloud Service のアーキテクチャの概要](/help/overview/architecture.md) - AEM as a Cloud Service の構造について
-* An [AEM as a Headless CMS の概要](/help/headless/introduction.md)
-* The [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
-* [AEM ヘッドレスチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja) - これらの実践チュートリアルでは、AEM を使用してヘッドレスエンドポイントにコンテンツを配信するための様々なオプションの使用方法と、適切なオプションを選択する方法を調べます。
+* [ヘッドレス CMS としての AEM の概要](/help/headless/introduction.md)
+* [AEM 開発者ポータル](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
+* [AEM ヘッドレスチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja) - これらの実践チュートリアルでは、AEM を使用してヘッドレスエンドポイントにコンテンツを配信するための様々なオプションの使用方法を確認し、最適なものを選択します。
 * [GraphQL API を使用したヘッドレスコンテンツ管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - AEM に実装されている GraphQL API の概要についてのコースです。Adobe ID を使用した認証が必要です。
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)（英語のみ）- この GitHub プロジェクトには、AEM の GraphQL API を紹介するためのサンプルアプリケーションが含まれています。
 * [オーサリングの概念](/help/sites-cloud/authoring/getting-started/concepts.md) - オーサーとパブリッシュの設定の詳細など、AEM のオーサリング環境に関する技術ドキュメント

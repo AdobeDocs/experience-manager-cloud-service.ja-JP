@@ -6,7 +6,7 @@ exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1136'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 90%
 >[!NOTE]
 >GraphiQL IDE を使用する前に、[設定ブラウザー](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)で[エンドポイントを設定](/help/headless/graphql-api/graphql-endpoint.md)しておく必要があります。
 
-The **GraphiQL** ツールを使用すると、次のことが可能になり、GraphQLクエリをテストおよびデバッグできます。
+**GraphiQL** ツールを使用すると次のことが可能になるので、GraphQL クエリをテストおよびデバッグできます。
 * クエリに使用する Sites 設定に適した&#x200B;**エンドポイント**&#x200B;を選択する
 * 新しいクエリを直接入力する
 * **[永続クエリ](/help/headless/graphql-api/persisted-queries.md)**&#x200B;を作成してアクセスする
@@ -82,12 +82,12 @@ The **GraphiQL** ツールを使用すると、次のことが可能になり、
 
 どちらの場合も、エディターパネルに表示されるクエリは、次のいずれかの場合に実行されるクエリです。
 
-* 「 」で「 」を選択します。 **クエリを実行** アイコン
+* 「**クエリを実行**」アイコンを選択します。
 * キーボードショートカット `Control-Enter` を使用する
 
 ## クエリ変数 {#query-variables}
 
-また、GraphiQL IDE を使用して、 [クエリ変数](/help/headless/graphql-api/content-fragments.md#graphql-variables).
+また、GraphiQL IDE では、[クエリ変数](/help/headless/graphql-api/content-fragments.md#graphql-variables)を管理することもできます。
 
 例：
 
@@ -99,13 +99,13 @@ The **GraphiQL** ツールを使用すると、次のことが可能になり、
 
 >[!NOTE]
 >
->詳しくは、 [永続化されたクエリのキャッシュ](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
+>[永続クエリのキャッシュ](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)について確認してください。
 
 >[!NOTE]
 >
 >Dispatcher 上のカスタム書き換えルールが、AEM パブリッシュのデフォルトを上書きする場合があります。
 >
->TTL ベースの cache-control ヘッダーを Dispatcher から送信する場合、場所の一致パターンに基づいて、必要に応じて除外できます `/graphql/execute.json/*` マッチから
+>TTL ベースのキャッシュコントロールヘッダーを Dispatcher から送信する場合は、場所の一致パターンに基づき、必要に応じてそれらの一致から `/graphql/execute.json/*` を除外できます。
 
 GraphQL を使用すると、HTTP キャッシュヘッダーを設定することにより、個々の永続クエリ用にこれらのパラメーターを制御できます。
 
@@ -113,7 +113,7 @@ GraphQL を使用すると、HTTP キャッシュヘッダーを設定するこ�
 
    ![永続クエリ HTTP キャッシュヘッダー](assets/cfm-graphqlapi-headers-01.png "永続クエリ HTTP キャッシュヘッダー")
 
-1. これを選択すると、 **キャッシュ設定** ダイアログボックス：
+1. これを選択して「**キャッシュ設定**」ダイアログボックスを開きます。
 
    ![永続クエリ HTTP キャッシュヘッダー設定](assets/cfm-graphqlapi-headers-02.png "永続クエリ HTTP キャッシュヘッダー設定")
 
@@ -154,7 +154,7 @@ max-age と同じですが、特にプロキシキャッシュに適用されま
 
 ## URL をコピーしてクエリに直接アクセスする {#copy-url}
 
-The **URL をコピー** 「 」オプションを使用すると、永続化されたクエリに直接アクセスして結果を確認するために使用する URL をコピーして、クエリをシミュレートできます。 これは、ブラウザーでアクセスするなどしてテストに使用できます。
+「**URL をコピー**」オプションを使用すると、永続クエリに直接アクセスできる URL をコピーしてクエリをシミュレートし、結果を確認することができます。これは、ブラウザーでアクセスするなどしてテストに使用できます。
 
 <!--
   >[!NOTE]

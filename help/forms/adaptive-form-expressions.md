@@ -4,7 +4,7 @@ description: アダプティブフォームの式を使用して、自動検証�
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2683'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -107,7 +107,7 @@ ht-degree: 97%
 
 **`marital_status.value == "married" ? ["1=One", "2=two"] : ["0=Zero"]`.**
 
-**marital_status** フィールドの値が変わる場合は、常に式が再トリガーされます。REST サービスからドロップダウンリストを設定することもできます。 <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
+**marital_status** フィールドの値が変わる場合は、常に式が再トリガーされます。REST サービスからドロップダウンリストに入力することもできます。<!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
 
 ### 要約式 {#summary}
 
@@ -182,7 +182,7 @@ ht-degree: 97%
 
 ### 必須 {#required}
 
-コンポーネントを必須にするには、コンポーネントの&#x200B;**編集**&#x200B;ダイアログで、**タイトルとテキスト／必須**&#x200B;オプションを選択します。また、適切な必須メッセージを追加することもできます（オプション）。
+コンポーネントを必須にするには、コンポーネントの&#x200B;**編集**&#x200B;ダイアログで、**タイトルとテキスト／必須**&#x200B;オプションを選択します。また、適切な必須メッセージも追加できます（オプション）。
 
 ### 検証パターン {#validation-patterns}
 
@@ -200,7 +200,7 @@ ht-degree: 97%
 
 ### GuideBridge - API とイベント {#guidebridge-apis-and-events}
 
-GuideBridge は、ブラウザーのメモリモデルでアダプティブFormsとやり取りする際に使用できる API のコレクションです。 Guide Bridge API、クラスメソッド、公開されたイベントについて詳しくは、「[アダプティブフォーム用 JavaScript™ ライブラリ API リファレンス](https://helpx.adobe.com/jp/aem-forms/6/javascript-api/)」を参照してください。
+GuideBridge は、ブラウザーのメモリーモデルでアダプティブフォームとやり取りするのに使用できる API のコレクションです。Guide Bridge API、クラスメソッド、公開されたイベントについて詳しくは、「[アダプティブフォーム用 JavaScript™ ライブラリ API リファレンス](https://helpx.adobe.com/jp/aem-forms/6/javascript-api/)」を参照してください。
 
 >[!NOTE]
 >

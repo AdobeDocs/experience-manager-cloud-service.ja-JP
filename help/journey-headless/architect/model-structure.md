@@ -5,7 +5,7 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -53,7 +53,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## コンテンツフラグメントモデルの定義 {#defining-content-fragment-models}
 
-最初に新しいモデルを開くと、左側に大きな空白が表示され、 **データタイプ** 右：
+初めて新しいモデルを開くと、左側に大きな空白スペースがあり、右側に長い&#x200B;**データタイプ**&#x200B;のリストが表示されます。
 
 ![空のモデル](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
 
@@ -67,7 +67,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ![データプロパティ](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
-フィールドは必要なだけ追加できます。次に例を示します。
+フィールドは必要なだけ追加できます。例：
 
 ![コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/assets/cfm-models-07.png)
 

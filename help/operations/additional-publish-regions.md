@@ -5,7 +5,7 @@ exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 78%
+ht-degree: 97%
 
 ---
 
@@ -36,9 +36,9 @@ AEM Sites で設定されたプログラムでは、追加の公開地域のラ�
 
 追加の公開地域は、ステージング環境と実稼動環境には適用されますが、RDE 環境や開発環境には適用されません。
 
-地域が利用できなくなった場合、その地域はAdobeCDN で管理されるので、利用可能な地域へのトラフィックのルーティングを顧客が管理する必要はありません。
+ある地域が利用できなくなった場合、その地域は Adobe CDN で管理されるため、利用可能な地域へのトラフィックのルーティングをお客様が管理する必要はありません。
 
-次の「高度なネットワークに関する考慮事項」の節で説明するように、高度なネットワークを使用するお客様は、追加のパブリッシュ地域ごとにその地域を設定し、その地域が使用できなくなった場合に可用性を維持することをお勧めします。
+次の「高度なネットワークに関する考慮事項」の節で説明するように、高度なネットワークを使用するお客様は、その地域が使用できなくなった場合でも可用性を維持できるように、追加の公開地域ごとにネットワークを設定することをお勧めします。
 
 
 ## 高度なネットワークに関する考慮事項 {#advanced-networking-considerations}
@@ -49,13 +49,13 @@ AEM Sites で設定されたプログラムでは、追加の公開地域のラ�
 
 ## ログ {#logging}
 
-追加のパブリッシュ領域が有効になっている場合、Cloud Manager を通じて、各地域の個別のログを利用できるようになります。 詳しくは、 [ログへのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md) および [追加の公開地域のログ](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
+追加の公開地域が有効になっている場合、Cloud Manager を通じて、各地域の個別ログを利用できるようになります。詳しくは、[ログへのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md)および[追加の公開地域のログ](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions)を参照してください。
 
 ## 制限事項 {#limitations}
 
 追加の公開地域の使用を検討する場合は、次の制限事項に注意してください。
 
-* 追加の公開地域は、AEM Sites にのみ追加できます。追加の公開領域は、同じプログラムにデプロイされる他のAEMソリューションや関連機能 (AEM FormsやAdobeラーニングマネージャーなど ) に拡張されるわけではありません。
+* 追加の公開地域は、AEM Sites にのみ追加できます。追加の公開地域は、同じプログラムでデプロイされる他の AEM ソリューションや関連機能（AEM Forms や Adobe Learning Manager など）には拡張されません。
 * 追加の地域は、関連する使用資格がテナントで使用可能かつ未使用の場合にのみ追加できます。
 * 個々の環境には、最大で 3 つの追加の公開地域を追加できます。
 * 追加の地域は、実稼動プログラムでのみ利用できます。この機能は、サンドボックスプログラムでは使用できません。

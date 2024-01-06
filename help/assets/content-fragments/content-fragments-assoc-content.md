@@ -5,7 +5,7 @@ exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 54%
+ht-degree: 59%
 
 ---
 
@@ -25,7 +25,7 @@ Adobe Experience Manager(AEM) のコンテンツフラグメントas a Cloud Ser
 >
 >[ビジュアルアセット（画像など）](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)をフラグメントやページに追加するための様々な方法があります。
 
-関連付けを作成するには、最初に [コレクションへのメディアアセットの追加](/help/assets/manage-collections.md). それが完了した後で以下を実行できます。
+関連付けを作成するには、最初に[メディアアセットをコレクションに追加](/help/assets/manage-collections.md)する必要があります。それが完了した後で以下を実行できます。
 
 1. フラグメントを開き、サイドパネルから「**関連コンテンツ**」を選択します。
 

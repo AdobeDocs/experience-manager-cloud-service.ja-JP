@@ -5,7 +5,7 @@ exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 76%
 
 ユニバーサルエディターは任意のソースからコンテンツを編集できますが、このドキュメントでは AEM アプリを例として使用します。
 
-AEMアプリをオンボーディングし、ユニバーサルエディターを使用するために実装する手順はいくつかあります。
+AEM アプリをオンボーディングし、ユニバーサルエディターを使用できるようにするには、手順がいくつかあります。
 
 1. [ユニバーサルエディターへのアクセスをリクエストします。](#request-access)
 1. [ユニバーサルエディターのコアライブラリを含めます。](#core-library)
@@ -45,13 +45,13 @@ AEMアプリをオンボーディングし、ユニバーサルエディター�
 
 ## ユニバーサルエディターコアライブラリを含める {#core-library}
 
-アプリをユニバーサルエディターで使用するために実装する前に、次の依存関係を含める必要があります。
+ユニバーサルエディターで使用できるようにアプリの実装を行う前に、次の依存関係を含める必要があります。
 
 ```javascript
 @adobe/universal-editor-cors
 ```
 
-計装を有効にするには、次のインポートを `index.js`.
+実装を有効にするには、以下の読み込みを `index.js` に追加する必要があります。
 
 ```javascript
 import "@adobe/universal-editor-cors";
@@ -105,7 +105,7 @@ X-Frame-Options: SAMEORIGIN は、iframe 内で AEM ページのレンダリン�
 
 ユニバーサルエディターサービスは、編集中のアプリのコンテンツに対して正しいバックエンドシステムを識別して利用するために、[統一リソース名（URN）](https://ja.wikipedia.org/wiki/Uniform_Resource_Name)を要求します。したがって、コンテンツをコンテンツリソースにマッピングし直すには、URN スキーマが必要です。
 
-ページに追加される計測属性は、主に [HTMLマイクロデータ、](https://developer.mozilla.org/ja/docs/Web/HTML/Microdata) HTMLをより意味的にし、HTMLドキュメントのインデックスを作成するなどの目的にも使用できる業界標準です。
+ページに追加されたインストルメンテーション属性は、ほとんどが [HTML マイクロデータ](https://developer.mozilla.org/ja/docs/Web/HTML/Microdata)で構成されており、HTML により適切な意味を持たせたり、HTML 文書をインデックス化したりなどに使用することもできる、業界標準です。
 
 ### 接続の作成 {#connections}
 
@@ -115,9 +115,9 @@ X-Frame-Options: SAMEORIGIN は、iframe 内で AEM ページのレンダリン�
 <meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
 ```
 
-* `<category>`  — これは、2 つのオプションを持つ接続の分類です。
-   * `system`  — 接続エンドポイントの場合
-   * `config`  — の場合 [オプション設定の定義](#configuration-settings)
+* `<category>` - これは、2 つのオプションを持つ接続の分類です。
+   * `system` - 接続エンドポイントの場合
+   * `config` - [オプション設定の定義](#configuration-settings)の場合
 * `<referenceName>` - 接続を識別するためにドキュメントで再利用される短い名前です。例：`aemconnection`
 * `<protocol>` - 使用するユニバーサルエディター永続化サービスの永続化プラグインを示します。例：`aem`
 * `<url>` - 変更が保持されるシステムの URL です。例：`http://localhost:4502`
@@ -171,21 +171,21 @@ itemid="urn:<referenceName>:<resource>"
 
 ### 設定 {#configuration-settings}
 
-以下を使用すると、 `config` 接続 URN のプレフィックスを使用して、必要に応じてサービスおよび拡張エンドポイントを設定します。
+接続 URN で `config` プレフィックスを使用して、必要に応じてサービスおよび拡張エンドポイントを設定します。
 
-Adobeがホストするが、独自のホストバージョンである Universal Editor Service を使用しない場合は、meta タグで設定できます。 ユニバーサルエディターが提供するデフォルトのサービスエンドポイントを上書きするには、独自のサービスエンドポイントを設定します。
+アドビがホストするユニバーサルエディターサービスを使用しない場合は、これはメタタグで設定できます。ユニバーサルエディターが提供するデフォルトのサービスエンドポイントを上書きするには、独自のサービスエンドポイントを設定します。
 
-* メタ名 — `urn:adobe:aue:config:service`
-* メタコンテンツ — `content="https://adobe.com"` （例）
+* メタ名 - `urn:adobe:aue:config:service`
+* メタコンテンツ - `content="https://adobe.com"`（例）
 
 ```html
 <meta name="urn:adobe:aue:config:service" content="<url>">
 ```
 
-ページに対して特定の拡張機能のみを有効にしたい場合は、メタタグで設定できます。 拡張機能を取得するには、拡張機能エンドポイントを設定します。
+ページに対して特定の拡張機能のみを有効にしたい場合は、メタタグで設定できます。拡張機能を取得するには、拡張機能エンドポイントを設定します。
 
-* メタ名： `urn:adobe:aue:config:extensions`
-* メタコンテンツ： `content="https://adobe.com,https://anotherone.com,https://onemore.com"` （例）
+* メタ名：`urn:adobe:aue:config:extensions`
+* メタコンテンツ：`content="https://adobe.com,https://anotherone.com,https://onemore.com"`（例）
 
 ```html
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
@@ -203,7 +203,7 @@ Adobeがホストするが、独自のホストバージョンである Universa
 
 * [ユニバーサルエディターの概要](introduction.md) - ユニバーサルエディターを使用して、優れたエクスペリエンスを提供し、コンテンツベロシティを向上させ、最新のデベロッパーエクスペリエンスを提供するために、あらゆる実装、あらゆるコンテンツ、あらゆる側面の編集を可能にする方法を説明します。
 * [ユニバーサルエディターを使用したコンテンツのオーサリング](authoring.md) - コンテンツ作成者がユニバーサルエディターを使用して、簡単かつ直感的にコンテンツを作成する方法について説明します。
-* [ユニバーサルエディターを使用したコンテンツの公開](publishing.md)  — ユニバーサルエディターでコンテンツを公開する方法と、アプリで公開されたコンテンツを処理する方法を説明します。
+* [ユニバーサルエディターを使用したコンテンツの公開](publishing.md) - ユニバーサルエディターでのコンテンツの公開方法と、アプリでの公開済みコンテンツの処理方法を説明します。
 * [ユニバーサルエディターのアーキテクチャ](architecture.md) - ユニバーサルエディターのアーキテクチャと、そのサービスとレイヤー間でのデータのフローについて説明します。
 * [属性とタイプ](attributes-types.md) - ユニバーサルエディターで必要なデータ属性とデータ型について説明します。
 * [ユニバーサルエディターの認証](authentication.md) - ユニバーサルエディターの認証方法について説明します。

@@ -5,7 +5,7 @@ exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 94%
 * 独自のコンテンツフラグメントベースのコンポーネントを実装する必要がある。
 * アドバンスドサービスを使用する必要がある。
 
-Adobeは、コアコンポーネントの使用をお勧めします。
+代わりに、コアコンポーネントを利用することをお勧めします。
 
 >[!CAUTION]
 >
@@ -47,7 +47,7 @@ Adobeは、コアコンポーネントの使用をお勧めします。
 
 ## OSGi サービス - コンテンツフラグメントコンポーネントの設定 {#osgi-service-content-fragment-component-configuration}
 
-設定は OSGi サービスにバインドする必要があります **コンテンツフラグメントコンポーネントの設定**:
+設定は、OSGi サービスの&#x200B;**コンテンツフラグメントコンポーネントの設定**&#x200B;に紐付ける必要があります。
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 

@@ -6,7 +6,7 @@ exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '3913'
-ht-degree: 88%
+ht-degree: 93%
 
 ---
 
@@ -172,23 +172,23 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## SharePoint に送信 {#submit-to-sharedrive}
 
-「**[!UICONTROL SharePoint に送信]**」送信アクションは、アダプティブフォームと Microsoft® SharePoint ストレージを接続します。接続されたMicrosoft® Sharepoint ストレージに、フォームデータファイル、添付ファイル、またはレコードのドキュメントを送信できます。
+「**[!UICONTROL SharePoint に送信]**」送信アクションは、アダプティブフォームと Microsoft® SharePoint ストレージを接続します。フォームデータファイル、添付ファイルまたはレコードのドキュメントを、接続された Microsoft® SharePoint ストレージに送信できます。
 
 「SharePointに送信」を使用して、次の操作を実行できます。
-* [アダプティブフォームのSharePointドキュメントライブラリへの接続](#connect-af-sharepoint-doc-library)
+* [アダプティブフォームの SharePoint ドキュメントライブラリへの接続](#connect-af-sharepoint-doc-library)
 * [アダプティブフォームのSharePointリストへの接続](#connect-af-sharepoint-list)
 
 
-### アダプティブフォームのSharePointドキュメントライブラリへの接続 {#connect-af-sharepoint-doc-library}
+### アダプティブフォームの SharePoint ドキュメントライブラリへの接続 {#connect-af-sharepoint-doc-library}
 
-次の手順で **[!UICONTROL SharePoint Document Library に送信]** アダプティブフォームでの送信アクション：
+アダプティブフォームで「**[!UICONTROL SharePoint ドキュメントライブラリに送信]**」送信アクションを使用するには、次の手順に従います。
 
-1. [SharePoint Document Library 設定の作成](#create-a-sharepoint-configuration-create-sharepoint-configuration):AEM FormsをMicrosoft® Sharepoint ストレージに接続します。
+1. [SharePoint ドキュメントライブラリ設定の作成](#create-a-sharepoint-configuration-create-sharepoint-configuration)：AEM フォームを Microsoft Sharepoint ストレージに接続します。
 2. [アダプティブフォームでの「SharePoint に送信」送信アクションの使用](#use-sharepoint-configuartion-in-af)：アダプティブフォームを設定済みの Microsoft® SharePoint に接続します。
 
-#### SharePoint Document Library 設定の作成 {#create-sharepoint-configuration}
+#### SharePoint ドキュメントライブラリの設定を作成 {#create-sharepoint-configuration}
 
-AEM FormsをMicrosoft® Sharepoint ドキュメントライブラリストレージに接続するには：
+AEM Forms を Microsoft® Sharepoint ドキュメントライブラリストレージに接続するには、次の手順に従います。
 
 1. **AEM Forms オーサー**&#x200B;インスタンス／**[!UICONTROL ツール]**／**[!UICONTROL Cloud Services]**／**[!UICONTROL Microsoft® SharePoint]** に移動します。
 1. **[!UICONTROL Microsoft® SharePoint]** を選択すると、**[!UICONTROL SharePoint ブラウザー]**&#x200B;にリダイレクトされます。
@@ -217,15 +217,15 @@ AEM FormsをMicrosoft® Sharepoint ドキュメントライブラリストレー
 
 アダプティブフォームの送信アクションに、この SharePoint サイト設定を使用できるようになりました。
 
-#### アダプティブフォームでのSharePointドキュメントライブラリ設定の使用 {#use-sharepoint-configuartion-in-af}
+#### アダプティブフォームでの SharePoint ドキュメントライブラリ設定の使用 {#use-sharepoint-configuartion-in-af}
 
-作成したSharePointドキュメントライブラリ設定をアダプティブフォーム内で使用して、データや生成後のレコードのドキュメントをSharePointフォルダーに保存することができます。 アダプティブフォームでSharePointドキュメントライブラリのストレージ設定を次の手順で使用します。
+作成した SharePoint ドキュメントライブラリ設定をアダプティブフォーム内で使用すると、データや生成済みレコードのドキュメントを SharePoint フォルダーに保存できます。 アダプティブフォームで SharePoint ドキュメントライブラリストレージ設定を使用するには、次の手順を実行します。
 
 1. 「[アダプティブフォーム](/help/forms/creating-adaptive-form.md)」を作成します。
 
    >[!NOTE]
    >
-   > * 同じを選択 [!UICONTROL 設定コンテナ] SharePointドキュメントライブラリストレージを作成したアダプティブフォームの場合。
+   > * SharePoint ドキュメントライブラリストレージを作成したアダプティブフォームと同じ[!UICONTROL 設定コンテナ]を選択します。
    > * [!UICONTROL 設定コンテナ]が選択されていない場合、グローバルな[!UICONTROL ストレージ設定]フォルダーが送信アクションのプロパティウィンドウに表示されます。
 
 1. 「**送信アクション**」を「**[!UICONTROL SharePoint に送信]**」として選択します。
@@ -233,7 +233,7 @@ AEM FormsをMicrosoft® Sharepoint ドキュメントライブラリストレー
 1. データを保存する場所に「**[!UICONTROL ストレージ設定]**」を選択します。
 1. 「**[!UICONTROL 保存]**」をクリックして、送信設定を保存します。
 
-フォームを送信すると、データは指定したMicrosoft® Sharepoint ドキュメントライブラリストレージに保存されます。
+フォームを送信すると、データは指定した Microsoft® Sharepoint ドキュメントライブラリストレージに保存されます。
 データを保存するフォルダー構造は `/folder_name/form_name/year/month/date/submission_id/data` です。
 
 ### アダプティブフォームのMicrosoft® SharePointリストへの接続 {#connect-af-sharepoint-list}
@@ -445,7 +445,7 @@ AEM Forms を Azure ストレージコンテナに接続するには、次の手
 
 サーバーサイド検証の有効化
 
-エンドユーザーがこれらの検証を回避してフォームを送信した場合、サーバーが再度検証を行います。サーバーサイドでの検証が失敗した場合、送信処理が中止されます。元のフォームが再びユーザーに表示されます。 取得されたデータおよび送信されたデータは、エラーとしてユーザーに表示されます。
+エンドユーザーがこれらの検証を回避してフォームを送信した場合、サーバーが再度検証を行います。サーバーサイドでの検証が失敗した場合、送信処理が中止されます。ユーザーには、元のフォームが再度表示されます。取得されたデータおよび送信されたデータは、エラーとしてユーザーに表示されます。
 
 >[!NOTE]
 >

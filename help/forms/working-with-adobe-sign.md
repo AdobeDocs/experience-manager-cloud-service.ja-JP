@@ -1,6 +1,6 @@
 ---
-title: アダプティブフォームでAdobe Signを使用するにはどうすればよいですか？
-description: アダプティブフォーム内でAdobe Signを使用すると、フォームの受信者は、デバイスや場所を選択して、E 署名を行うことができます。
+title: アダプティブフォームで Adobe Sign を使用するにはどうすればよいですか？
+description: アダプティブフォーム内で Adobe Sign を使用すると、フォームの受信者は、デバイスや場所を選択して、電子サインを行うことができます。
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
 role: User
@@ -9,18 +9,18 @@ exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
 source-git-commit: e81da7414335e00411942adeb41978d39f172b52
 workflow-type: tm+mt
 source-wordcount: '3242'
-ht-degree: 87%
+ht-degree: 91%
 
 ---
 
 # アダプティブフォームでの [!DNL Adobe Sign] の使用 {#using-adobe-sign-in-an-adaptive-form}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
+<span class="preview">[アダプティブフォームの新規作成](/help/forms/creating-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 
@@ -168,7 +168,7 @@ Cloud Service と署名する順序を選択するには：
 
    「**[!UICONTROL Adobe Sign Cloud Service]**」リストに何も表示されていない場合は、[ [!DNL Adobe Sign] の設定： [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)の記事に従い、サービスを設定してください。
 
-   ドロップダウンリストには、 `global` ツール/のフォルダー **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. また、ドロップダウンリストには、選択したCloud Serviceー内に存在するフォルダーが一覧表示されます。 **[!UICONTROL 設定コンテナ]** フィールドに値を入力する必要があります。
+   ドロップダウンは、ツール／**[!UICONTROL Cloud Services]**／**[!UICONTROL Adobe Sign]** の `global` フォルダーに存在するクラウドサービスをリストします。また、このドロップダウンリストは、アダプティブフォームの作成時に「**[!UICONTROL 設定コンテナ]**」フィールドで選択したフォルダーに存在するクラウドサービスも表示します。
 
 1. 送信アクションを設定するオプションを選択します。 **[!UICONTROL フォームを送信]**. 次の 2 つのオプションのいずれかを選択できます。
    * **フォームを送信する（および署名に関する契約を送信する）**：このオプションでは、フォームを直ちに送信し、受信者に署名用のフォームを送信します。
@@ -178,7 +178,7 @@ Cloud Service と署名する順序を選択するには：
 
    順に署名する場合は、Adobe Sign 契約書は一度に 1 人の受信者に送られます。割り当てられたアクションを受信者が完了すると、契約書が次の受信者に送信されます。以下、同様の処理が繰り返されます。
 
-   すべての受信者が同時にAdobe Sign契約を受け取り、相互に並行して行動できます。
+   同時に署名する場合は、すべての受信者が Adobe Sign 契約書を受け取り、お互いに並行してアクションを実行できます。
 
 1. 「契約 ID」フィールドを使用して、bindref を契約 ID（agreementId）に関連付けます。これにより、スキーマベースフォームの送信データの afBoundData セクションに契約 ID が追加されます。すべての Adobe Sign 対応フォームの送信済みデータの afSubmissionInfo セクションにも契約 ID が追加されます。カスタムコードを使用して、契約ステータスのトラッキングに契約 ID を使用できます（カスタム実装が必要です）。
 
@@ -330,7 +330,7 @@ Adobe Sign 契約 ID（agreementId）は、アダプティブフォームの送�
 
      >[!NOTE]
      >
-     > デジタル署名は、 [!DNL Adobe Acrobat Sign for Government] ただし、Cloud Signatures を使用して適用することはできません。
+     > デジタル署名は [!DNL Adobe Acrobat Sign for Government] にも適用できますが、クラウド署名を使用して適用することはできません。
 
    クラウド署名フィールドをアダプティブフォームに追加した後、次の手順を実行して設定プロセスを完了します。
 
@@ -368,7 +368,7 @@ Adobe Sign 契約 ID（agreementId）は、アダプティブフォームの送�
 
 >[!MORELIKETHIS]
 >
->* [統合 [!DNL Adobe Sign] 次を使用 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
+>* [ [!DNL Adobe Sign]  と  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) の統合
 >* [アダプティブフォームでの [!DNL Adobe Sign] 使用に関するベストプラクティス](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
 
 

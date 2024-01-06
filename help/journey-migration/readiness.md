@@ -5,7 +5,7 @@ exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '1900'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -80,7 +80,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
   <tr>
     <td>組み込み CDN と独自の CDN の取得</td>
     <td></td>
-    <td>AEM as a Cloud Service には、ほとんどの使用例に最適化されたすべての環境用の CDN が含まれています。<br>独自の CDN を設定する場合は、承認を求めるリクエストをAdobeサポートに送信する必要があります。<br>承認されると、CDN は環境内の AEM インスタンスではなく、Fastly を指します。</td>
+    <td>AEM as a Cloud Service には、ほとんどの使用例に最適化されたすべての環境用の CDN が含まれています。<br>独自の CDN を設定する場合、アドビサポートにリクエストを送信して承認を得る必要があります。<br>承認されると、CDN は環境内の AEM インスタンスではなく、Fastly を指します。</td>
   </tr>
   <tr>
     <td>長時間実行されているジョブ</td>

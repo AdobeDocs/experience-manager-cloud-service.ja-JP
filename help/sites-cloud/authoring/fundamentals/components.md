@@ -5,13 +5,13 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '335'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # コンポーネント {#components}
 
-コンポーネントは、Adobe Experience Manager（AEM）におけるコンテンツページの基本的なオーサリング構成要素です。画像、テキスト、タイトルなどのコンポーネントを簡単にドラッグ&amp;ドロップして、コンテンツを作成できます。
+コンポーネントは、Adobe Experience Manager（AEM）におけるコンテンツページの基本的なオーサリング構築ブロックです。画像、テキスト、タイトルなどのコンポーネントを簡単にドラッグ＆ドロップして、コンテンツを作成できます。
 
 AEM には、すぐに使用できる様々なコンポーネントが付属しており、Web サイト作成者は包括的な機能を使用できます。これらの機能は、[ページの編集時](/help/sites-cloud/authoring/fundamentals/editing-content.md)に使用でき、フィルタリングのために主な機能領域（コンポーネントグループと呼ばれます）でグループ化されています。
 

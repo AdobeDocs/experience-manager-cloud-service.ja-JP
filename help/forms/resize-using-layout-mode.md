@@ -1,6 +1,6 @@
 ---
-title: レイアウトモードを使用してアダプティブフォームのコンポーネントのサイズを変更する方法を教えてください。
-description: AEM Formsコンポーネントの位置の定義、レイアウトモードへのアクセス、コンポーネントのサイズ変更、パネルのサイズ変更およびパネルの複数列レイアウトの定義について説明します。
+title: レイアウトモードを使用したアダプティブフォームのコンポーネントのサイズ変更方法
+description: AEM Forms コンポーネントの位置の定義、レイアウトモードへのアクセス、コンポーネントのサイズ変更、パネルのサイズ変更およびパネルの複数列レイアウトの定義について説明します。
 role: User
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
@@ -8,17 +8,17 @@ exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1138'
-ht-degree: 76%
+ht-degree: 81%
 
 ---
 
-# レイアウトモードを使用して、アダプティブFormsのコンポーネントのサイズを変更する {#use-layout-mode-to-resize-components}
+# レイアウトモードを使用したアダプティブフォームのコンポーネントのサイズ変更 {#use-layout-mode-to-resize-components}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
+<span class="preview">[アダプティブフォームの新規作成](/help/forms/creating-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/resize-using-layout-mode.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/resize-using-layout-mode.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 アダプティブフォームのオーサリングインターフェイスを使用すると、レイアウトモードを使用してコンポーネントのサイズを変更できます。列内の青い点をドラッグして、コンポーネントを配置する開始点と終了点を定義します。レスポンシブグリッド内のコンポーネントをタップすると、青い点が表示されます。レスポンシブグリッドは、12 個の等しい列で構成されています。代替列の白と青色の影は、1 つの列と他の列を区別します。
@@ -109,7 +109,7 @@ ht-degree: 76%
 
 ### 新しいレスポンシブレイアウトを使用した、古いフラグメントのアダプティブフォームへの埋め込み {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
-アダプティブフォーム用の新しいレスポンシブレイアウトを使用すると、古いレスポンシブレイアウトを持つアダプティブフォームフラグメントをフォームに追加できます。 ただし、新しいレイアウトでは、フラグメントで使用するコンポーネントに対して既に定義されているレイアウトプロパティが破棄されます。レイアウトモードに切り替えて、フラグメントで使用するコンポーネントのレイアウトプロパティを定義できます。
+アダプティブフォームの新しいレスポンシブレイアウトを使用すると、古いレスポンシブレイアウトを含むアダプティブフォームのフラグメントをフォームに追加できます。ただし、新しいレイアウトでは、フラグメントで使用するコンポーネントに対して既に定義されているレイアウトプロパティが破棄されます。レイアウトモードに切り替えて、フラグメントで使用するコンポーネントのレイアウトプロパティを定義できます。
 
 ### 新しいレスポンシブレイアウトを使用した、フラグメントの古いアダプティブフォームへの埋め込み {#embed-a-fragment-with-new-responsive-layout-in-an-old-adaptive-form}
 

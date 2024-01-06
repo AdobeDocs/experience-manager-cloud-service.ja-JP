@@ -1,12 +1,12 @@
 ---
-title: AEM forms で参照用のテーマとテンプレートを取得する方法を教えてください。
-description: AEM Formsには、フォームをすばやく作成できるように、サンプルのアダプティブフォームテーマ、テンプレート、フォームデータモデルが用意されています。
+title: AEM Forms の参照テーマおよびテンプレートを取得する方法
+description: AEM Forms には、フォームをすばやく作成できるように、サンプルのアダプティブフォームテーマ、テンプレート、フォームデータモデルが用意されています。
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 94%
 | コアコンポーネントに基づくアダプティブフォーム | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ja) |
 | 基盤コンポーネントに基づくアダプティブフォーム | この記事 |
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
+<span class="preview"> [アダプティブフォームの新規作成](/help/forms/creating-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
 AEM Forms as a Cloud Service には、アダプティブフォームの作成をすぐに開始するのに役立つ、複数の参照テーマ、テンプレート、フォームデータモデルが用意されています。[ソフトウェア配布ポータルからリファレンスコンテンツパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)をダウンロードし、[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)を使用して、[リファレンスコンテンツパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)を実稼働、開発、ローカル開発環境にインストールして、これらの参照アセットをお使いの環境に取りこむことができます。
 
@@ -117,7 +117,7 @@ FSI テーマは、フォームの最小限の機能的外観を強調します�
 アダプティブフォームは Microsoft Dynamics 365 サーバーや Salesforce サーバーと連携し、ビジネスワークフローを実現できるようになります。次に例を示します。
 
 * アダプティブフォームの送信時に、データを Microsoft Dynamics 365 および Salesforce に書き込む。
-* フォームデータモデルで定義されたカスタムエンティティを使用し、逆にMicrosoft Dynamics 365 と Salesforce にデータを書き込みます。
+* フォームデータモデル内で定義されているカスタムエンティティを使用して、データを Microsoft Dynamics 365 および Salesforce に書き込むか、その逆の動作を行います。
 * Microsoft Dynamics 365 および Salesforce サーバーに対してデータのクエリを実行し、アダプティブフォームに事前設定する。
 * Microsoft Dynamics 365 および Salesforce サーバーからデータを読み取る。
 

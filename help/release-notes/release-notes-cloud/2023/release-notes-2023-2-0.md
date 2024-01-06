@@ -5,7 +5,7 @@ exl-id: 671056e6-84cc-4c2c-bca3-fde68d5cc835
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '730'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 97%
 ### の新機能[!DNL Assets] {#assets-features}
 
 * Dynamic Media ビデオ配信でアダプティブストリーミング用に開始された新しいプロトコル（DASH - Dynamic Adaptive Streaming over HTTP）のサポート（CMAF を有効にした場合）:
-   * アダプティブストリーミング (DASH/HLS) により、ビデオのユーザー視聴エクスペリエンスが向上します
+   * アダプティブストリーミング（DASH／HLS）により、ユーザーがビデオを視聴する際の操作性が向上します
    * DASH はアダプティブビデオストリーミング用の国際標準プロトコルで、業界で広く採用されています
    * NA で利用可能で、サポートチケットを介して有効にできます（APAC、EMEA で近日公開）
 

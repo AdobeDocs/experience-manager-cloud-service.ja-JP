@@ -6,7 +6,7 @@ exl-id: b1cd871d-c71e-4902-a97e-2c859f6a4da4
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 83%
+ht-degree: 99%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 83%
 ### バグの修正 {#bug-fixes-bpa}
 
 * BPA のサイズ決定ロジックがより高速かつ効率的になりました。
-* 一部のシナリオで、BPA が実行時に分析済みのカウントを増分しないことがありました。この問題が修正されました。
+* 一部のシナリオで、BPA が実行時に分析済みのカウントを増分しないことがありました。この問題は修正されました。
 
 ## コンテンツ転送ツール {#ctt-release}
 
@@ -39,8 +39,8 @@ ht-degree: 83%
 
 ### 新機能 {#what-is-new-ctt}
 
-* コンテンツの検証 — コンテンツ転送ツールで抽出されたすべてのコンテンツがターゲットインスタンスに正常に取り込まれたかどうかを確実に判断できます。 この機能を使用するには、 `System Console` ソースAEM環境の 詳しくは、[コンテンツ転送の検証 - はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html#getting-started)を参照してください。
+* コンテンツの検証 - コンテンツ転送ツールで抽出されたすべてのコンテンツがターゲットインスタンスに正常に取り込まれたかどうかを確実に判断できます。この機能を使用するには、ソース AEM 環境の `System Console` で有効にする必要があります。詳しくは、[コンテンツ転送の検証 - はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html#getting-started)を参照してください。
 
 ### バグの修正 {#bug-fixes-ctt}
 
-* ユーザーマッピングでは大文字と小文字が区別されるので、一部のユーザーがマッピングされませんでした。この問題が修正されました。ユーザーマッピングでは、大文字と小文字が区別されなくなりました。
+* ユーザーマッピングでは大文字と小文字が区別されるので、一部のユーザーがマッピングされませんでした。この問題は修正されました。ユーザーマッピングでは、大文字と小文字が区別されなくなりました。

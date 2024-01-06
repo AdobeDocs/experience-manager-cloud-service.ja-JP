@@ -8,7 +8,7 @@ discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1109'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
@@ -89,7 +89,7 @@ ht-degree: 92%
 
       >[!NOTE]
       >
-      >パネルのすべてのインスタンスがアダプティブフォームから削除された場合、削除されたパネルのインスタンスを追加するには、 _panelName 構文を使用してパネルのインスタンスマネージャーを取り込み、削除されたインスタンスを追加するにはインスタンスマネージャーの addInstance API を使用します。 例えば、_panelName.addInstance() です。削除されたパネルのインスタンスを 1 つ追加します。
+      >パネルのすべてのインスタンスがアダプティブフォームから削除されている場合、削除されたパネルのインスタンスを追加するには、_panelName 構文を使用してパネルのインスタンスマネージャーを取得し、インスタンスマネージャーの addInstance API を使用して、削除されたインスタンスを追加します。例えば、_panelName.addInstance() です。削除されたパネルのインスタンスを 1 つ追加します。
 
 ## 親パネルに対するアコーディオンレイアウトの使用  {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 

@@ -5,7 +5,7 @@ exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '551'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 91%
 1. [「参照」のローンチ（Sites コンソール）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)にアクセスして使用可能なアクションを表示します。
 1. 「**このページに移動**」を選択して、編集するページを開きます。
 
-ページの編集時に、上部のツールバーに表示され、 **終了** および **移動** options:
+ページの編集時に、上部のツールバーに、「**終了**」オプションおよび「**ナビゲート**」オプションと共に表示されます。
 
-![ページエディターからの「終了」と「ローンチをナビゲート」](/help/sites-cloud/authoring/assets/launches-edit-01.png)
+![ページエディターからの「終了」および「ナビゲート」の起動](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 
 >[!NOTE]
 >

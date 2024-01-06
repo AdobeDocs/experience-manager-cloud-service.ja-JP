@@ -6,8 +6,8 @@ seo-description: The repository browser provides a read-only view into the repos
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 source-git-commit: a7fa9ecc54bdee394852d765011df2ddd0a4950c
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 87%
+source-wordcount: '854'
+ht-degree: 88%
 
 ---
 
@@ -52,7 +52,7 @@ AEM as a Cloud Service Developer Console にアクセスするには：
    ![repobrowser1](/help/implementing/developing/tools/assets/repobrowser1.png)
 
 1. 次に、「**リポジトリーブラウザー**」タブをクリックします。
-1. 作成者、公開、またはプレビューに対応するポッドを選択するには、 **ポッド** 」ドロップダウンリストから選択できます。
+1. 「**ポッド**」ドロップダウンリストをクリックして、オーサー、パブリッシュ、プレビューに対応する任意のポッドを選択します。
 
    ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 

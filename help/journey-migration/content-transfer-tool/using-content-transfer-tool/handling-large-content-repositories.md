@@ -5,7 +5,7 @@ exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1800'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -192,7 +192,7 @@ AzCopy に問題がある場合、抽出は直ちに失敗し、抽出ログに�
 エラーの発生前にコピーされた BLOB は、その後の実行で AzCopy によって自動的にスキップされ、再度コピーされることはありません。
 
 >[!TIP]
->取り込みが成功した直後に、取り込みを自動的に開始するようにスケジュールできるようになりました。 詳しくは、 [Target へのコンテンツの取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) を参照してください。
+>抽出が成功した直後に取り込みを自動的に開始するようにスケジュールを設定できるようになりました。詳しくは、[ターゲットへのコンテンツの取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)を参照してください。
 
 #### ファイルデータストアの場合 {#file-data-store-extract}
 
@@ -201,7 +201,7 @@ AzCopy がソースファイルデータストアに対して実行されてい�
 
 ### 5. AzCopy で取り込む {#ingesting-azcopy}
 
-詳しくは、 [Target へのコンテンツの取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) Cloud Acceleration Manager(CAM) からターゲットにコンテンツを取り込む方法に関する一般的な情報 (「新規取り込み」ダイアログで AzCopy（プリコピー）を使用する方法や使用しない方法など )。
+Cloud Acceleration Manager（CAM）からターゲットへのコンテンツの取り込みに関する一般的な情報については、[ターゲットへのコンテンツの取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)を参照してください。これには、「新規取り込み」ダイアログで AzCopy（プレコピー）を使用する方法、または使用しない方法に関する説明が含まれます。
 
 取り込み中に AzCopy を利用するには、バージョン 2021.6.5561 以上の AEM as a Cloud Service バージョンを使用する必要があります。
 
@@ -234,6 +234,6 @@ Final Job Status: CompletedWithSkipped
 *************** Completed AzCopy pre-copy phase ***************
 ```
 
-## 次のステップ {#whats-next}
+## 次の手順 {#whats-next}
 
 コンテンツを AEM as a Cloud Service に移行するコンテンツ転送アクティビティの抽出段階と取り込み段階を短縮するための大規模なコンテンツリポジトリの処理について学びました。これで、コンテンツ転送ツールを使用した抽出プロセスを学ぶ準備が整いました。コンテンツ転送ツールで移行セットを抽出する方法について詳しくは、[ソースからのコンテンツの抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)を参照してください。

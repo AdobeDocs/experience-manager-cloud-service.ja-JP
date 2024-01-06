@@ -1,6 +1,6 @@
 ---
-title: 設定方法 [!DNL Microsoft Dynamics] AEM Formsの OData?
-description: で定義されたエンティティ、属性、サービスに基づいてフォームデータモデルを作成する方法を説明します。 [!DNL Microsoft Dynamics] サービス。
+title: AEM Forms の  [!DNL Microsoft Dynamics]  OData の設定方法を教えてください。
+description: ' [!DNL Microsoft Dynamics]  サービスで定義したエンティティ、属性、サービスに基づいて、フォームデータモデルを作成する方法について説明します。'
 feature: Form Data Model
 role: User, Developer
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '957'
-ht-degree: 87%
+ht-degree: 94%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 87%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 ![データ統合](assets/data-integeration.png)
@@ -25,7 +25,7 @@ ht-degree: 87%
 
 * [!DNL Microsoft Dynamics] サーバーに対してデータに関するクエリを実行し、アダプティブフォームに事前入力する
 * アダプティブフォームの送信時に、データを [!DNL Microsoft Dynamics] に書き込む
-* データを書き込む [!DNL Microsoft Dynamics] フォームデータモデルで定義されたカスタムエンティティを使用し、逆に
+* フォームデータモデルで定義されているカスタムエンティティを通じて、データを [!DNL Microsoft Dynamics] に書き込みます（またはその逆の操作）。
 
 <!--[!DNL Experience Manager Forms] add-on package also includes reference OData configuration that you can use to quickly integrate [!DNL Microsoft Dynamics] with [!DNL Experience Manager Forms].-->
 
@@ -34,7 +34,7 @@ ht-degree: 87%
 * MS Dynamics OData Cloud Service (OData Service)-->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics ODataCloud Service（OData サービス）は、すべての実行モードで使用できます。 の実行モードの設定に関する詳細 [!DNL Experience Manager] インスタンスについては、 [実行モード](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#runmodes).
+<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service（OData サービス）は、すべての実行モードで使用できます。[!DNL Experience Manager] インスタンスの実行モードの設定について詳しくは、「[実行モード](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#runmodes)」を参照してください。
 
 ## 前提条件 {#prerequisites}
 

@@ -6,7 +6,7 @@ exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 source-git-commit: 47666e87b1cb87577291304336e0219481b7b4e2
 workflow-type: tm+mt
 source-wordcount: '1749'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -261,13 +261,13 @@ Assets REST API は、フォルダーのプロパティへのアクセスを公�
 
 >[!NOTE]
 >
->詳しくは、 [API リファレンス](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). 特に、[Adobe Experience Manager Assets API - コンテンツフラグメント](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
+>[API リファレンス](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)を参照してください。特に、[Adobe Experience Manager Assets API - コンテンツフラグメント](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
 
 ## 制限事項 {#limitations}
 
 次のように、いくつかの制限があります。
 
-* **コンテンツフラグメントモデルは現在サポートされていません**：読み取りも作成もできません。既存のコンテンツフラグメントを作成または更新できるようにするには、開発者がコンテンツフラグメントモデルへの正しいパスを知っている必要があります。 現在のところ、これらの概要を取得するには、管理 UI を使用するしかありません。
+* **コンテンツフラグメントモデルは現在サポートされていません**：読み取りも作成もできません。コンテンツフラグメントの作成または既存のコンテンツフラグメントの更新を行えるようにするには、開発者はコンテンツフラグメントモデルへの正しいパスを知っている必要があります。現在のところ、これらの概要を取得するには、管理 UI を使用するしかありません。
 * **参照は無視されます**。現在、既存のコンテンツフラグメントが参照されているかどうかの確認は行われません。したがって、例えば、コンテンツフラグメントを削除すると、削除されたコンテンツフラグメントへの参照を含んでいるページで問題が発生する可能性があります。
 * **JSON データ型** *JSON データ型*&#x200B;の REST API 出力は、現在、*文字列ベースの出力*&#x200B;です。
 

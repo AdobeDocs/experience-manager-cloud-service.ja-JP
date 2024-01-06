@@ -5,7 +5,7 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '961'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -108,7 +108,7 @@ Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventA
    * ローカル設定で問題をシミュレートするには、次の手順に従います。
       1. 最新の AEM SDK JAR を使用して、オーサーインスタンスとパブリッシュインスタンスをインストールします。
       1. オーサーインスタンスにログオンします。
-      1. に移動します。 **ツール** > **導入** > **配布**.
+      1. **ツール**／**デプロイメント**／**配布**&#x200B;に移動します。
       1. コードベースの一部となるコンテンツパッケージを配布し、キューがブロックされてエラーが発生するかどうかを確認します。。
 
 ## aio コマンドを使用して変数を設定できません。どうすればいいですか？ {#set-variable}

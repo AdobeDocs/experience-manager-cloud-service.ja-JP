@@ -7,7 +7,7 @@ exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1256'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -140,7 +140,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
-> パネルのすべてのインスタンスがアダプティブフォームから削除された場合、削除されたパネルのインスタンスを追加するには、 _panelName 構文を使用してパネルのインスタンスマネージャーを取り込み、削除されたインスタンスを追加するには、 addInstance API を使用します。 例えば、_panelName.addInstance() です。削除されたパネルのインスタンスを 1 つ追加します。
+> パネルのすべてのインスタンスがアダプティブフォームから削除されている場合、削除されたパネルのインスタンスを追加するには、_panelName 構文を使用してパネルのインスタンスマネージャをキャプチャし、インスタンスマネージャーの addInstance API を使用して削除されたインスタンスを追加します。例えば、_panelName.addInstance() です。削除されたパネルのインスタンスを 1 つ追加します。
 
 <!--
 ![panel-repeatability-video](/help/adaptive-forms/assets/panel-repeatability-video.mp4)
@@ -172,7 +172,7 @@ A panel has various layouts options. The Layout for accordian design option has 
 1. サブフォームの繰り返し回数の最大値を指定する場合は、「最大値」を選択して、関連するボックスに数値を入力します。「最大値」に値を入力しなければ、サブフォームの繰り返し回数は無制限になります。
 1. サブフォームの繰り返し回数をデータ量に関係なく指定する場合は、「初期値」オプションを選択して、関連するボックスに数値を入力します。このオプションを選択した場合は、データが使用できないときやデータ項目が指定された「初期値」の値より少ないときにも、フォーム上に空のサブフォームインスタンスが配置されます。
 1. 親サブフォームにボタンを 2 つ追加します。ひとつはインスタンスの追加に、もうひとつは繰り返し可能なサブフォームのインスタンスの削除に使用します。詳しい手順については、「[アクションの作成](https://help.adobe.com/ja_JP/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2)」を参照してください。
-1. ここで、アダプティブフォームにフォームテンプレートをリンクします。詳しい手順については、[テンプレートに基づくアダプティブフォームの作成](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=ja#create-an-adaptive-form-based-on-an-xfa-form-template)を参照してください。
+1. ここで、アダプティブフォームにフォームテンプレートをリンクします。手順について詳しくは、[テンプレートに基づいてアダプティブフォームを作成](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=ja#create-an-adaptive-form-based-on-an-xfa-form-template)を参照してください。
 1. 手順 9 で作成したボタンを使用して、サブフォームを追加および削除します。
 
 添付の .zip ファイルには、繰り返し可能なサブフォーラムのサンプルが含まれています。
@@ -181,7 +181,7 @@ A panel has various layouts options. The Layout for accordian design option has 
 
 ## XML スキーマ（XSD）の繰り返し設定の使用  {#using-repeat-settings-of-an-xml-schema-xsd-br}
 
-XML スキーマ、または任意の複合タイプ要素の minOccurs および maxOccurs プロパティから、繰り返し可能なパネルを作成できます。XML スキーマについて詳しくは、[XML スキーマをフォームモデルとして使用するアダプティブフォームを作成](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html?lang=ja)を参照してください。
+XML スキーマ、または任意の複合タイプ要素の minOccurs および maxOccurs プロパティから、繰り返し可能なパネルを作成できます。XML スキーマについて詳しくは、[XML スキーマをフォームモデルとして使用してアダプティブフォームを作成](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html?lang=ja)を参照してください。
 
 以下のコードでは、`SampleType` パネルで minOccurs および maxOccurs プロパティが使用されています。
 

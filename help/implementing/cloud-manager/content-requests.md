@@ -1,15 +1,15 @@
 ---
-title: Cloud Serviceコンテンツリクエストについて
-description: Adobeからコンテンツリクエストライセンスを購入している場合は、Adobe Experience Cloud as a Service が測定するコンテンツリクエストのタイプと、組織の Analytics レポートツールとの相違について説明します。
+title: Cloud Service コンテンツリクエストについて
+description: アドビからコンテンツリクエストライセンスを購入している場合は、Adobe Experience Cloud as a Service が測定するコンテンツリクエストのタイプと、組織の分析レポートツールとの相違について説明します。
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 source-git-commit: e31b05f0cef6c5ca3a1c00b757eac013aa43bb90
 workflow-type: tm+mt
 source-wordcount: '2690'
-ht-degree: 4%
+ht-degree: 36%
 
 ---
 
-# Cloud Serviceコンテンツリクエスト
+# Cloud Service コンテンツリクエスト
 
 ## はじめに {#introduction}
 
@@ -18,7 +18,7 @@ Cloud Serviceコンテンツリクエストは、データのサーバー側収�
 >[!NOTE]
 >また、 [アーリーアダプターのお客様](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter)クライアント側のコレクションは、RUM(Real User Monitoring) 測定を通じても有効になります。 詳しくは、 [この記事](#real-user-monitoring-for-aem-as-a-cloud-service).
 
-## Cloud Serviceコンテンツリクエストについて {#understaing-cloud-service-content-requests}
+## Cloud Service コンテンツリクエストについて {#understaing-cloud-service-content-requests}
 
 コンテンツリクエストは、AEMas a Cloud Serviceの CDN から取得したログファイルを自動分析することで、Adobe Experience Manager as a Cloud Serviceの端でサーバーサイドで自動的に収集されます。 これは、リクエストの返却先HTMLを分離することでおこなわれます `(text/html)` または JSON `(application /Json)` CDN のコンテンツ、および以下に説明するいくつかのインクルージョンルールと除外ルールに基づいて作成されます。 コンテンツリクエストは、CDN キャッシュから提供される返されるコンテンツや、CDN(AEM Dispatcher) の元に戻されるコンテンツとは独立しておこなわれます。
 
@@ -28,56 +28,56 @@ Cloud Serviceコンテンツリクエストは、データのサーバー側収�
 
 ## サーバー側コレクション {#serverside-collection}
 
-よく知られているボットを除外するルールが用意されています。これには、サイトを定期的に訪問して検索インデックスやサービスを更新する、既知のサービスが含まれます。
+よく知られているボットを除外するルールが用意されています。これには、検索インデックスまたはサービスを更新するためにサイトに定期的にアクセスするよく知られているサービスも含まれます。
 
-### Cloud Serviceコンテンツリクエストの相違 {#content-requests-variances}
+### Cloud Service コンテンツリクエストの相違 {#content-requests-variances}
 
-コンテンツリクエストは、次の表に要約されるように、組織の Analytics レポートツールとの相違を持つ可能性があります。 一般に *しない* クライアント側の計測を通じてデータを収集する analytics ツールを使用して、特定のサイトのコンテンツリクエスト数を報告します。これは、多くの場合、トリガーされるユーザーの同意に依存しているので、トラフィックの大部分が欠落しているからです。 AEMas a Cloud Serviceの上に独自の CDN を追加するお客様向けに、ログファイルのサーバーサイドでデータを収集する Analytics ツール、または CDN レポートを使用すると、カウントが向上します。 ページ・ビューおよび関連するパフォーマンスのレポートでは、AdobeRUM データ・サービスがAdobe推奨オプションです。
+コンテンツリクエストには、次の表にまとめられているように、組織の分析レポートツールとは違いがあります。一般に *しない* クライアント側の計測を通じてデータを収集する analytics ツールを使用して、特定のサイトのコンテンツリクエスト数を報告します。これは、多くの場合、トリガーされるユーザーの同意に依存しているので、トラフィックの大部分が欠落しているからです。 AEM as a Cloud Service の上に独自の CDN を追加するお客様向けに、ログファイルのサーバーサイドでデータを収集する Analytics ツール、または CDN レポートを使用すると、カウントが向上します。 ページ・ビューおよび関連するパフォーマンスのレポートでは、AdobeRUM データ・サービスがAdobe推奨オプションです。
 
 | 差異の理由 | 説明 |
 |---|---|
-| エンドユーザーの同意 | クライアント側の実装に依存する Analytics ツールは、多くの場合、ユーザーの同意がトリガーされるかどうかに依存します。 これは、トラッキングされないトラフィックの大部分を表している可能性があります。 コンテンツリクエストを独自に測定する場合は、Analytics ツールに依存してサーバー側または CDN レポートのデータを収集することをお勧めします。 |
-| タグ付け | Adobe Experience Manager(AEM) コンテンツリクエストとして追跡されるすべてのページまたは API 呼び出しに対して、Analytics トラッキングでタグ付けされない場合があります。 |
-| タグ管理ルール | Tag Management のルール設定によって、ページ上の様々なデータ収集設定がおこなわれ、その結果、コンテンツリクエストの追跡との組み合わせに相違が生じる場合があります。 |
+| エンドユーザーの同意 | クライアント側の計測機能に依存する Analytics ツールは、多くの場合、ユーザーの同意がトリガーされるかどうかに依存します。これは、トラフィックの大部分がトラッキングされていないことを表している可能性があります。コンテンツリクエストを独自に測定する場合は、Analytics ツールに依存してサーバー側または CDN レポートのデータを収集することをお勧めします。 |
+| タグ付け | Adobe Experience Manager（AEM）コンテンツリクエストとして追跡されるすべてのページまたは API 呼び出しに対して、Analytics トラッキングでタグ付けされない場合があります。 |
+| タグ管理ルール | タグ管理ルールの設定により、ページ上で様々なデータ収集設定が行われ、その結果、コンテンツリクエストのトラッキングとは何らかの不一致が生じる場合があります。 |
 | ボット | AEM によって事前に識別および削除されていない不明なボットは、トラッキング不一致の原因となる場合があります。 |
 | レポートスイート | 同じ AEM インスタンスとドメインに属するページが、異なる Analytics レポートスイートにデータを送信する場合があります。 |
 | サードパーティのモニタリングツールとセキュリティツール | モニタリングツールやセキュリティスキャンツールによっては、Analytics レポートでは追跡されない AEM のコンテンツリクエストが生成される場合があります。 |
-| API アクセス | ページまたはAdobe Experience Manager API にプログラムでアクセスすると、Analytics レポートで追跡されないAEMのコンテンツリクエストが生成される場合があります。 |
+| API アクセス | ページまたは Adobe Experience Manager API にプログラムでアクセスすると、Analytics レポートで追跡されない AEM のコンテンツリクエストが生成される場合があります。 |
 | プリフェッチリクエスト | ページを事前にロードして速度を上げるプリフェッチサービスを使用すると、コンテンツリクエストのトラフィックが大幅に増加する可能性があります。 |
-| DDoS | Adobeは、DDOS 攻撃からのトラフィックを自動的に検出して除外しようとしますが、DDOS 攻撃がすべて検出される保証はありません。 |
+| DDoS | アドビでは、DDoS 攻撃からのトラフィックを自動的に検出して除外しようとしていますが、発生し得るすべての DDoS 攻撃が検出される保証はありません。 |
 | トラフィックブロッカー | ブラウザーでトラッカーブロッカーを使用すると、一部のリクエストの追跡がオプトアウトされる可能性があります。 |
-| ファイアウォール | ファイアウォールによって、Analytics のトラッキングがブロックされる可能性があります。このシナリオは、企業ファイアウォールでより頻繁に使用されます。 |
+| ファイアウォール | ファイアウォールによって、Analytics のトラッキングがブロックされる可能性があります。このシナリオは、企業のファイアウォールで発生頻度が高くなります。 |
 
-関連トピック [ライセンスダッシュボード](/help/implementing/cloud-manager/license-dashboard.md).
+[ライセンスダッシュボード](/help/implementing/cloud-manager/license-dashboard.md)も参照してください。
 
 ### 含まれるコンテンツリクエストのタイプ {#included-content-requests}
 
 | リクエストタイプ | コンテンツリクエスト | 説明 |
 | --- | --- | --- |
-| HTTP コード 100-299 | 含む | これらは、すべてのコンテンツまたは部分的なコンテンツを配信する通常のリクエストです。 |
-| 自動化用の HTTP ライブラリ | 含む | 例：<br>・ Amazon CloudFront<br>・ Apache Http Client<br>・非同期 Http クライアント<br>・ Axios<br>・アズレウス<br>・ Curl<br>・ GitHub ノードフェッチ<br>・ Guzzle<br>・ Go-http-client<br>・ヘッドレスクロム<br>・ Java™ Client<br>・ジャージー<br>・ Node Oembed<br>・ okhttp<br>・ Python リクエスト<br>・ Reactor Netty<br>・ Wget<br>・ WinHTTP |
-| 監視およびヘルスチェックツール | 含む | これらは、サイトの特定の側面を監視するために顧客が設定します。 例えば、可用性や実際のユーザーパフォーマンスなどです。 用途 `/system/probes/health` サイトからの実際のHTMLページではなく、エンドポイント。<br>例：<br>・ Amazon-Route53-Health-Check-Service<br>・ EyeMonIT_bot_version_0.1_[(https://www.eyemon.it/)](https://www.eyemon.it/)<br>・ Runvison-Site24 x 7<br>・ Mozilla/5.0 以降 ( 互換； UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>・ SoundEyes-Dragonfly-x1<br>・ OmtrBot/1.0<br>・ WebMon/2.0.0 |
-| `<link rel="prefetch">` リクエスト | 含む | 次のページの読み込み速度を上げるには、ユーザーがリンクをクリックする前にブラウザーで一連のページを読み込むように設定し、既にキャッシュに存在している必要があります。 *注意：これにより、トラフィックが大幅に増加しています* — 取得されるこれらのページの数に応じて異なります。 |
-| Adobe AnalyticsまたはGoogle Analyticsレポートをブロックするトラフィック | 含む | サイトの訪問者には、Google AnalyticsやAdobe Analyticsの正確性に影響を与えるプライバシーソフトウェア（広告ブロッカーなど）がインストールされていることは、より一般的です。 AEMas a Cloud Serviceは、クライアント側ではなく、Adobeが運用するインフラストラクチャへの最初のエントリポイントに対するリクエストをカウントします。 |
+| HTTP コード 100-299 | 次のものが含まれます。 | これらは、すべてのコンテンツまたはコンテンツの一部を配信する通常のリクエストです。 |
+| 自動化用の HTTP ライブラリ | 次のものが含まれます。 | 例：<br>・Amazon CloudFront<br>・Apache Http Client<br>・非同期 Http クライアント<br>・Axios<br>・アズレウス<br>・Curl<br>・GitHub ノードフェッチ<br>・Guzzle<br>・Go-http-client<br>・ヘッドレスクロム<br>・ Java™ Client<br>・ジャージー<br>・Node Oembed<br>・okhttp<br>・Python リクエスト<br>・Reactor Netty<br>・Wget<br>・WinHTTP |
+| 監視ツールおよびヘルスチェックツール | 次のものが含まれます。 | これらは、サイトの特定の側面を監視するために顧客が設定します。例えば、可用性や実際のユーザーパフォーマンスなどです。サイトからの実際の HTML ページではなく、`/system/probes/health` エンドポイントを使用します。<br>例：<br>・Amazon-Route53-Health-Check-Service<br>・EyeMonIT_bot_version_0.1_[（https://www.eyemon.it/）](https://www.eyemon.it/)<br>・Runvison-Site24 x 7<br>・Mozilla/5.0 以降（互換；UptimeRobot/2.0；[https://uptimerobot.com/](https://uptimerobot.com/)）<br>・SoundEyes-Dragonfly-x1<br>・OmtrBot/1.0<br>・WebMon/2.0.0 |
+| `<link rel="prefetch">` リクエスト | 次のものが含まれます。 | 次のページの読み込み速度を上げるには、ユーザーがリンクをクリックする前にブラウザーで一連のページを読み込むように設定し、既にキャッシュに存在している必要があります。*注意：これにより、取得されるこれらのページの数に応じて、トラフィックが大幅に増加します*。 |
+| Adobe Analytics または Google Analytics レポートをブロックするトラフィック | 次のものが含まれます。 | サイトの訪問者が、Google Analytics や Adobe Analytic sの正確性に影響を与えるプライバシーソフトウェア（広告ブロッカーなど）をインストールしていることがよくあります。AEM as a Cloud Service は、クライアントサイドではなく、アドビが運用するインフラストラクチャへの最初のエントリポイントに対するリクエストをカウントします。 |
 
-関連トピック [ライセンスダッシュボード](/help/implementing/cloud-manager/license-dashboard.md).
+[ライセンスダッシュボード](/help/implementing/cloud-manager/license-dashboard.md)も参照してください。
 
 ### 除外されたコンテンツリクエストのタイプ {#excluded-content-request}
 
 | リクエストタイプ | コンテンツリクエスト | 説明 |
 | --- | --- | --- |
-| HTTP コード 500 以降 | 除外済み | AEMas a Cloud Serviceまたは顧客カスタムコードで問題が発生した場合に、訪問者にエラーが返されました。 |
-| HTTP コード 400-499 | 除外済み | コンテンツが存在しない (404) 場合や、その他のコンテンツまたはリクエスト関連の問題がある場合に、訪問者に返されたエラー。 |
-| HTTP コード 300-399 | 除外済み | これらは、サーバー上で何かが変更されたかを確認する、または別のリソースにリクエストをリダイレクトする、適切なリクエストです。 コンテンツ自体が含まれていないので、課金対象になりません。 |
-| /libs/*に移動するリクエスト | 除外済み | AEMの内部 JSON リクエスト（課金対象でない CSRF トークンなど）。 |
-| DDOS 攻撃からのトラフィック | 除外済み | DDOS 保護。 AEMは一部の DDOS 攻撃を自動検出し、ブロックします。 検出された場合は、DDOS 攻撃は課金対象ではありません。 |
-| AEMas a Cloud ServiceNewRelic 監視 | 除外済み | AEMas a Cloud Service的グローバル監視。 |
-| 顧客がCloud Serviceプログラムを監視するための URL | 除外済み | 可用性を外部で監視するための推奨 URL。<br><br>`/system/probes/health` |
-| AEMas a Cloud Serviceポッドウォームアップサービス | 除外済み | ユーザーエージェント： skyline-service-warmup/1。* |
+| HTTP Code 500+ | 除外済み | AEM as a Cloud Service または顧客カスタムコードで問題が発生した場合に、訪問者にエラーが返されました。 |
+| HTTP コード 400-499 | 除外済み | コンテンツが存在しない（404）場合や、その他のコンテンツまたはリクエスト関連の問題がある場合に、訪問者にエラーが返されました。 |
+| HTTP コード 300-399 | 除外済み | これらは、サーバー上で何かが変更されたかを確認する、または別のリソースにリクエストをリダイレクトする適切なリクエストです。コンテンツ自体が含まれていないので、課金対象になりません。 |
+| /libs/* に移動するリクエスト | 除外済み | AEM の内部 JSON リクエスト（課金対象でない CSRF トークンなど）。 |
+| DDoS 攻撃からのトラフィック | 除外済み | DDoS 保護。AEM は一部の DDoS 攻撃を自動検出しブロックします。DDoS 攻撃は、検出された場合、課金対象ではありません。 |
+| AEM as a Cloud Service NewRelic 監視 | 除外済み | AEM as a Cloud Service グローバル監視。 |
+| 顧客が Cloud Service プログラムを監視するための URL | 除外済み | 可用性を外部で監視するための推奨 URL。<br><br>`/system/probes/health` |
+| AEM as a Cloud Service ポッドウォームアップサービス | 除外済み | ユーザーエージェント： skyline-service-warmup/1* |
 | よく知られている検索エンジン、ソーシャルネットワーク、HTTP ライブラリ（Fastly によってタグ付け） | 除外済み | サイトを定期的に訪問し、検索インデックスやサービスを更新するよく知られたサービス：<br><br>例：<br>・ AddSearchBot<br>・ AhrefsBot<br>・ Applebot<br>・ Ask Jeeves Corporate Spider<br>・ Bingbot<br>・ BingPreview<br>・ BLEXBot<br>・ BuiltWith<br>・ Bytespider<br>・ CrawlerKengo<br>・ Facebookexternalhit<br>・ Google AdsBot<br>・ Google AdsBot Mobile<br>・ Googlebot<br>・ Googlebot Mobile<br>・ lmspider<br>・ LucidWorks<br>・ MJ12bot<br>・ Pingdom<br>・ Pinterest<br>・ SemrushBot<br>・ SiteImprove<br>・ StashBot<br>・ StatusCakes<br>・ YandexBot |
-| 除外Commerce integration framework呼び出し | 除外済み | これらは、Commerce integration frameworkに転送されるAEMに対しておこなわれる要求です。URL はで始まります。 `/api/graphql` — 二重計数を避けるために、Cloud Serviceの請求はできません。 |
-| 除外 `manifest.json` | 除外済み | マニフェストは API 呼び出しではありません。デスクトップまたは携帯電話に Web サイトをインストールする方法に関する情報を提供するために、ここに記載されています。 Adobeは次に対する JSON リクエストをカウントしない `/etc.clientlibs/*/manifest.json` |
-| 除外 `favicon.ico` | 除外済み | 返されるコンテンツはHTMLや JSON ではありませんが、SAMLHTMLフローなどのシナリオでは、favicon が認証として返される場合があるので、カウントから明示的に除外されることがわかります。 |
+| コマース統合フレームワーク呼び出しの除外 | 除外済み | これらは、二重カウントを避けるために、AEM に対して行われたリクエストで、Commerce Integration Framework に転送されます（URL は `/api/graphql` で始まります）。これらは Cloud Service の請求対象ではありません。 |
+| `manifest.json` を除外 | 除外済み | マニフェストは API 呼び出しではなく、デスクトップまたは携帯電話に web サイトをインストールする方法に関する情報を提供するためにここに記載されています。アドビは `/etc.clientlibs/*/manifest.json` に対する JSON リクエストをカウントするべきではありません |
+| `favicon.ico` を除外 | 除外済み | 返されるコンテンツは HTML や JSON ではありませんが、SAML 認証フローなどのシナリオでは、favicon が HTML として返される場合があるので、カウントから明示的に除外されることがわかります。 |
 
 ## クライアント側コレクション {#cliendside-collection}
 

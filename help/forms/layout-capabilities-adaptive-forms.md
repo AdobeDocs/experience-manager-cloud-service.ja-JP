@@ -1,23 +1,23 @@
 ---
-title: アダプティブFormsのレイアウト機能とは
+title: アダプティブフォームのレイアウト機能とは
 description: 各種デバイスごとのアダプティブフォームのレイアウトと外観はレイアウト設定で管理できます。各種レイアウトとレイアウトの適用方法について説明します。
 feature: Adaptive Forms, Foundation Components
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '847'
-ht-degree: 81%
+ht-degree: 98%
 
 ---
 
 # アダプティブフォームのレイアウト機能 {#layout-capabilities-of-adaptive-forms}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
+<span class="preview">[アダプティブフォームの新規作成](/help/forms/creating-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=ja#) |
 | AEM as a Cloud Service | この記事 |
 
 [!DNL Adobe Experience Manager]では、簡単に使用できるアダプティブフォームを作成でき、エンドユーザーに動的なエクスペリエンスを提供します。フォームのレイアウトは、アダプティブフォームでの各項目やコンポーネントの表示方法をコントロールします。
@@ -72,11 +72,11 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 このレイアウトを使用すると、アコーディオンスタイルのナビゲーションを備えたパネルに&#x200B;**[!UICONTROL アダプティブフォームのパネル]**&#x200B;コンポーネントを配置できます。また、このレイアウトを使用すると、繰り返し可能なパネルを作成できます。繰り返し可能なパネルを使用すれば、必要に応じて動的にパネルを追加したり削除することができます。パネルの繰り返しの最小数、最大数を定義することができます。また、パネル内の項目に入力される情報に応じて動的にパネルのタイトルを決定することができます。
 
-最小化したパネルのタイトルにユーザーが提供した値を表示するために、概要式を使用できます。
+最小化したパネルのタイトルにユーザーが提供した値を表示するために、サマリ式を使用することができます。
 
 ![アコーディオンレイアウトを使用したアダプティブフォームの繰り返し可能なパネル](assets/accordion-layout.png)
 
-### [!UICONTROL タブ付きレイアウト — タブを左側に表示]{#tabbed-layout-tabs-appear-on-the-left}
+### [!UICONTROL タブ付きレイアウト - タブを左側に表示]{#tabbed-layout-tabs-appear-on-the-left}
 
 このレイアウトを使用すると、タブ付きナビゲーションのパネルに&#x200B;**[!UICONTROL アダプティブフォームのパネル]**&#x200B;コンポーネントを配置できます。タブはパネルコンテンツの左側に配置されます。
 
@@ -92,9 +92,9 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ## モバイルレイアウト {#mobile-layouts}
 
-モバイルレイアウトを使用すると、比較的小さい画面でモバイルデバイス上でわかりやすいナビゲーションが可能になります。 モバイルレイアウトでは、フォームのナビゲーションにタブ付きスタイルまたはウィザードスタイルを使用します。 モバイルレイアウトを適用すると、フォーム全体に対して 1 つのレイアウトが提供されます。
+モバイルレイアウトはモバイルデバイスの比較的小さい画面で、わかりやすいナビゲーションをできるようにします。モバイルレイアウトでは、フォームのナビゲーションにタブ付きスタイルまたはウィザードスタイルを使用します。モバイルレイアウトを適用するとフォーム全体を単一のレイアウトで表示します。
 
-このレイアウトは、ナビゲーションバーとナビゲーションメニューを使用してナビゲーションを制御します。 ナビゲーションバーで、**進む**&#x200B;と&#x200B;**戻る**&#x200B;のナビゲーションステップはそれぞれ **[!UICONTROL &lt;]** と **[!UICONTROL >]** のアイコンで示されます。
+このレイアウトでは、ナビゲーションバーとナビゲーションメニューを使用してナビゲーションをコントロールします。ナビゲーションバーで、**進む**&#x200B;と&#x200B;**戻る**&#x200B;のナビゲーションステップはそれぞれ **[!UICONTROL &lt;]** と **[!UICONTROL >]** のアイコンで示されます。
 
 モバイルレイアウトは`/libs/fd/af/layouts/mobile/`から使用できます。アダプティブフォームではデフォルトで次のモバイルレイアウトを使用できます。
 
@@ -106,13 +106,13 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ### [!UICONTROL フォームのヘッダーにパネルタイトルを表示するレイアウト] {#layout-with-panel-titles-in-the-form-header}
 
-このレイアウトは、名前が示すように、ナビゲーションメニューおよびナビゲーションバーと共にパネルタイトルを表示します。 このレイアウトでは、ナビゲーション用に「次へ」アイコンと「前へ」アイコンも表示されます。
+レイアウトの名称の通り、このレイアウトはナビゲーションメニューおよびナビゲーションバーと併せてパネルのタイトルを表示します。また、このレイアウトではナビゲーションに「進む」アイコンと「戻る」アイコンを使用します。
 
 ![フォームのヘッダー部分にパネルタイトルを表示するモバイルレイアウト](assets/mobile-layout1.png)
 
 ### [!UICONTROL フォームのヘッダー部分にパネルタイトルを表示しないレイアウト]{#layout-without-panel-titles-in-the-form-header}
 
-このレイアウトは、名前が示すように、ナビゲーションメニューとナビゲーションバーのみを表示し、パネルタイトルは表示されません。 このレイアウトでは、ナビゲーション用に「次へ」アイコンと「前へ」アイコンも表示されます。
+レイアウトの名称の通り、このレイアウトはナビゲーションメニューおよびナビゲーションバーのみ表示し、パネルのタイトルは表示しません。また、このレイアウトではナビゲーションに「進む」アイコンと「戻る」アイコンを使用します。
 
 ![フォームのヘッダー部分にパネルタイトルを表示しないモバイルレイアウト](assets/mobile-layout2.png)
 

@@ -1,22 +1,22 @@
 ---
-title: 脚注をアダプティブフォームに追加するにはどうすればよいですか？
-description: アダプティブフォーム内の脚注にリッチテキストエディター (RTE) を使用します。
+title: アダプティブフォームに脚注を追加する方法
+description: リッチテキストエディター（RTE）を使用して、アダプティブフォーム内に脚注を追加します。
 feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 89%
+ht-degree: 96%
 
 ---
 
 # 脚注コンポーネント {#footnotecomponent}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
+<span class="preview">[アダプティブフォームの新規作成](/help/forms/creating-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
 **[!UICONTROL 脚注]**&#x200B;は、ページの最後に表示される追加の情報またはメモです。[!UICONTROL 脚注]は、テキスト内で数字を上付き文字として示すメモで構成されます。
 
-脚注は、ページ上での表示順に順番に番号が付けられます。 各脚注には、ページの下部に配置される番号に対応する上付き文字として一意の番号が付きます。番号の横には、補足情報が脚注の説明として表示されます。
+脚注には、ページ上での表示順に番号が付けられます。各脚注には、ページの下部に配置される番号に対応する上付き文字として一意の番号が付きます。番号の横には、補足情報が脚注の説明として表示されます。
 
 ![脚注の説明](/help/forms/assets/footnote_description.png)
 

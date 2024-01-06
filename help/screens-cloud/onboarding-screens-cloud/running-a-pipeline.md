@@ -5,7 +5,7 @@ exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 91%
 
    ![画像](/help/screens-cloud/assets/onboarding/run-pipeline4.png)
 
-1. ビルドプロセスが完了すると、 **環境** Cloud Manager の **概要** ページに貼り付けます。
+1. ビルドプロセスが完了すると、Cloud Manager の&#x200B;**概要**&#x200B;ページの&#x200B;**環境**&#x200B;カードにオーサーリンクが表示されます。
 
    ![画像](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 

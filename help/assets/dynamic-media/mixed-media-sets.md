@@ -8,7 +8,7 @@ exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1507'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -118,7 +118,7 @@ ht-degree: 97%
 
 1. アセットを削除するには、対応するチェックボックスを選択して、「**[!UICONTROL アセットを削除]**」を選択します。
 1. プリセットを適用するには、右上隅にある「**[!UICONTROL プリセット]**」を選択し、アセットに適用するプリセットを選択します。
-1. 「**[!UICONTROL 保存]**」を選択します。作成した混在メディアセットが、作成元のフォルダーに表示されます。
+1. 「**[!UICONTROL 保存]**」を選択します。作成した混在メディアセットが、作成先のフォルダーに表示されます。
 
 ## 混在メディアセットの編集 {#editing-mixed-media-sets}
 

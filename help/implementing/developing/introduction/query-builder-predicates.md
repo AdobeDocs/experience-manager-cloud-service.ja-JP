@@ -5,7 +5,7 @@ exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2270'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
@@ -25,8 +25,8 @@ ht-degree: 89%
 * **`p.limit`** - ページのサイズを表す数値.
 * **`p.guessTotal`**  — 推奨：結果の全体を計算するのを避けます。これはコストのかかる場合があります。 最大数を示す数値（例：1000）。大まかなサイズと小さい結果を得るための正確な数値に関する十分なフィードバックをユーザーに提供する数値です。 または、 `true` 必要最小限の数まで数える `p.offset` + `p.limit`.
 * **`p.excerpt`** - `true` に設定した場合は、完全なテキストの抜粋が結果に含まれます。
-* **`p.indexTag`**  — 設定すると、クエリにインデックスタグオプションが含まれます ( [クエリオプションインデックスタグ](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)) をクリックします。
-* **`p.facetStrategy`**  — 設定されている場合は `oak`、Query Builder はファセット抽出を Oak に委任します ( [ファセット](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)) をクリックします。
+* **`p.indexTag`** - 設定すると、クエリにインデックスタグオプションが含まれます（[クエリオプションインデックスタグ](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)を参照してください）。
+* **`p.facetStrategy`** - `oak` に設定すると、Query Builder はファセット抽出を Oak に委任します（[ファセット](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)を参照してください）。
 * **`p.hits`** - （JSON サーブレット専用）ヒットを JSON として記述する方法を、次の標準的なものの中から選択します（ResultHitWriter サービスを使用して拡張可能）。
    * **`simple`** - `path`、`title`、`lastmodified`、`excerpt`（設定されている場合）などの最小限の項目。
    * **`full`**  — ノードの sling JSON レンダリング（を使用） `jcr:path` ヒットのパスを示します。 デフォルトでは、ノードの直接プロパティのリストのみが表示され、 `p.nodedepth=N`（0 はサブツリー全体を表し、無限サブツリーを表します） 追加 `p.acls=true` 指定した結果項目に対する現在のセッションの JCR 権限を含めるには ( マッピング： `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`) をクリックします。

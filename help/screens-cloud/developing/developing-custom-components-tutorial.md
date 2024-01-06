@@ -5,7 +5,7 @@ exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '2042'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -77,7 +77,7 @@ Screens プロジェクトのソースコードは、通常、マルチモジュ
    * `/content/dam/we-retail-run`
    * `/content/screens/we-retail-run`
 
-   このパッケージには、プロジェクトに必要な初期コンテンツおよび設定構造が含まれています。**`/conf/we-retail-run`** には、We.Retail Run プロジェクトのすべての設定が含まれています。**`/content/dam/we-retail-run`** には、プロジェクトの初期デジタルアセットが含まれています。**`/content/screens/we-retail-run`** には、Screens のコンテンツ構造が含まれています。これらのパスの下にあるコンテンツは、主にAEMで更新されます。 環境（ローカル、開発、ステージング、実稼動）間の一貫性を高めるために、多くの場合、ベースコンテンツ構造がソース管理下に保存されます。
+   このパッケージには、プロジェクトに必要な初期コンテンツおよび設定構造が含まれています。**`/conf/we-retail-run`** には、We.Retail Run プロジェクトのすべての設定が含まれています。**`/content/dam/we-retail-run`** には、プロジェクトの初期デジタルアセットが含まれています。**`/content/screens/we-retail-run`** には、Screens のコンテンツ構造が含まれています。これらのパスの下に含まれるコンテンツは、主に AEM で更新されます。環境（ローカル、開発、ステージング、実稼動）間の一貫性を高めるために、多くの場合、ベースコンテンツ構造がソース管理下に保存されます。
 
 1. **AEM Screens／We.Retail Run プロジェクト**&#x200B;に移動します。
 
@@ -132,7 +132,7 @@ AEM Screens には、従来の WCM Sites コンポーネントには必ずしも
    Screens コンポーネントでは、使用する[オーサリングモード](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes)に応じて、2 種類のレンダリングが必要になります。
 
    1. **実稼動**：プレビューまたはパブリッシュモード（wcmmode=disabled）
-   1. **編集**：他のすべてのオーサリングモード（編集、デザイン、基礎、開発者など）に使用されます。
+   1. **編集**：編集、デザイン、基礎モード、開発者など、他のすべてのオーサリングモードに使用されます。
 
    `helloworld.html` はスイッチとして機能し、アクティブなオーサリングモードを確認し、別の HTL スクリプトにリダイレクトします。編集モード用に `edit.html` スクリプトを用意し、実稼動モード用に `production.html` スクリプトを用意するというのが、Screens コンポーネントで一般に使用される規則です。
 
@@ -289,7 +289,7 @@ AEM Screens コンポーネントは、編集モードとプレビュー／実�
 
    categories プロパティは、クライアントライブラリを識別する文字列です。cq.screens.componentscategory は、編集モードとプレビュー／実稼動モードの両方で使用されます。したがって、sharedclientlib に定義された CSS／JS は、すべてのモードに読み込まれます。
 
-   実稼動環境では、直接 /apps にパスを公開しないことをお勧めします。allowProxy プロパティにより、クライアントライブラリの CSS と JS がof/etc.clientlibsというプレフィックスを付けて参照されるようになります。
+   実稼動環境では、直接 /apps にパスを公開しないことをお勧めします。allowProxy プロパティにより、クライアントライブラリの CSS と JS が of/etc.clientlibs. の接頭辞を付けて参照されるようになります。
 
 1. 共有フォルダーの下に `css.txt` という名前のファイルを作成します。
 
@@ -329,7 +329,7 @@ AEM Screens コンポーネントは、編集モードとプレビュー／実�
 
 1. クライアントライブラリフォルダー `shared` をコピーして貼り付けて、`production` という名前のクライアントライブラリを作成します。
 
-   ![共有クライアントライブラリをコピーして実稼動用クライアントライブラリを作成する](/help/screens-cloud/developing/assets/copy-clientlib.gif)
+   ![共有クライアントライブラリをコピーして実稼動用のクライアントライブラリを作成](/help/screens-cloud/developing/assets/copy-clientlib.gif)
 
    共有クライアントライブラリをコピーして実稼動用のクライアントライブラリを作成します。
 
@@ -423,7 +423,7 @@ Hello World コンポーネントは、シーケンスチャネルでの使用�
 
    /apps/settings/wcm/designs/we-retail-run を指しているデザイン設定
 
-1. 作成した Idle Channel を編集して、開けるようにします。
+1. 作成したアイドルチャネルを編集して開けるようにします。
 
 1. ページモードを&#x200B;**デザイン**&#x200B;モードに切り替えます。
 

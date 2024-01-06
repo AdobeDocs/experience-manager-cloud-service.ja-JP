@@ -7,7 +7,7 @@ exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 87%
+ht-degree: 95%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Analytics と AEM Sites の統合は、かつてないほどシンプル�
 
 1. Adobe Admin Console（https://adminconsole.adobe.com/）にログインします。
 1. 右上隅で適切な IMS 組織 ID が選択されていることを確認します。
-1. 「製品」ナビゲーションオプションをクリックします。
+1. 「製品ナビゲーション」オプションをクリックします。
 1. 「Adobe Experience Manager as a Cloud Service」が IMS 組織用にプロビジョニングされていることを確認します。
 1. 「Adobe Analytics」が IMS 組織用にプロビジョニングされていることを確認します。
 1. Cloud Manager（https://experience.adobe.com/cloud-manager）に移動します。
@@ -46,11 +46,11 @@ Adobe Analytics と AEM Sites の統合は、かつてないほどシンプル�
 1. **Sites** に移動して、Adobe Analytics と統合するサイトのルートを選択します。
 1. サイドレールメニューを展開し、「 」を選択します。 **Analytics を設定**.
 
-   これは、サイドレールの新しいオプションで、自動設定のコントロールとステータスを提供するパネルを開くExperience Cloudです。
+   これはサイドレールの新しいオプションであり、Experience Cloud 設定自動化のコントロールとステータスを提供するパネルが開きます。
 1. を選択します。 **Analytics の統合** 」ボタンをクリックします。
 1. 表示されたダイアログで、**レポートスイート ID** の名前を入力します。
 
-   この文字列は、 [レポートスイート ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=ja) 選択したAEMサイトの analytics データのデータストアとしてAdobe Analyticsに保存されます。 提供された文字列には、一意性を確保するために環境および層の識別子が追加されます。
+   この文字列は、選択した AEM サイトの分析データのデータストアとして、Adobe Analytics に[レポートスイート ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=ja) を作成するために使用されます。提供された文字列には、一意性を確保するために環境および層の識別子が追加されます。
 
 1. ページとパネルを更新し、「 」を選択します。 **統合ステータスの確認** 自動化のステータスを確認します。
 

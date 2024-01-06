@@ -5,7 +5,7 @@ exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -26,8 +26,8 @@ ht-degree: 89%
 
 以下の手順に従って、Screens サービスプロバイダーからディスプレイを作成します。
 
-1. AEM Cloud Service インスタンスから Screens Services Provider に移動します。
-1. 選択 **表示** 左側のナビゲーションパネルから、 **作成** 画面の右上隅から。
+1. AEM Cloud Service インスタンスから Screens サービスプロバイダーに移動します。
+1. 左側のナビゲーションパネルから「**ディスプレイ**」を選択し、画面の右上隅にある「**作成**」をクリックします。
 
    ![画像](/help/screens-cloud/assets/display/disp-1.png)
 
@@ -35,7 +35,7 @@ ht-degree: 89%
 
    ![画像](/help/screens-cloud/assets/display/disp-2.png)
 
-1. タイトルに「 」と入力します。 **LoopingChannelDisplay** in **表示名** をクリックします。 **作成**.
+1. 「**表示名**」に「**LoopingChannelDisplay**」と入力し、「**作成**」をクリックします。
 
    ![画像](/help/screens-cloud/assets/display/disp3.png)
 
@@ -47,7 +47,7 @@ ht-degree: 89%
 
 ディスプレイは、Screens サービスプロバイダーから削除できます。
 
-ディスプレイを選択し、 **削除** パネルの下部から、次の図に示すように。
+ディスプレイを選択し、パネルの下部にある「**削除**」をクリックします（下図を参照）。
 
 ![画像](/help/screens-cloud/assets/display/disp-5.png)
 
@@ -118,7 +118,7 @@ ht-degree: 89%
 
 ![画像](/help/screens-cloud/assets/display/movetofolder.png)
 
-**注意**：フォルダーのサイドパネルでフォルダーを選択する必要があります。また、パンくずナビゲーションでは、現在のフォルダー名がの横に表示されます。 **表示**.
+**注意**：フォルダーのサイドパネルでフォルダーを選択する必要があります。また、パンくずナビゲーションでは、「**ディスプレイ**」の横に現在のフォルダー名が表示されます。
 
 ## フォルダーからコンテンツを削除する方法 {#delete-folder}
 
@@ -131,6 +131,6 @@ ht-degree: 89%
 1. 選択アクションバーの「**削除**」アクションをクリックします。フォルダーが空でない場合、アクションは無効になります。
 
 
-## 次のステップ {#whats-next}
+## 次の手順 {#whats-next}
 
 これで、プロジェクトでのディスプレイの作成と管理の方法を学びました。次に、「[Screens as a Cloud Service へディスプレイへのチャネル割り当て](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html)」ドキュメントを確認し、Screens as a Cloud Service のジャーニーを続けてください。

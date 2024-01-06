@@ -5,7 +5,7 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -65,9 +65,9 @@ AEM ヘッドレスアプリケーションのローンチに備えるには、�
 
 すべてがテストされ、正しく動作していることを確認したら、[Cloud Manager に一元化されている Git リポジトリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=ja)にコードのアップデートをプッシュする準備が整います。
 
-アップデートが Cloud Manager にアップロードされたら、[Cloud Managerの CI／CD パイプライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja#how-to-use)を使用して、アップデートを AEM as a Cloud Service にデプロイできます。
+アップデートが Cloud Manager にアップロードされたら、[Cloud Manager の CI／CD パイプライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja#how-to-use)を使用して、アップデートを AEM as a Cloud Service にデプロイできます。
 
-Cloud Manager CI/CD パイプラインを使用して、コードのデプロイを開始できます。このパイプラインについては幅広く取り上げています [ここ](/help/implementing/deploying/overview.md).
+コードのデプロイを開始するには、Cloud Manager CI/CD パイプラインを使用します。このパイプラインについて詳しくは、[こちら](/help/implementing/deploying/overview.md)を参照してください。
 
 ## パフォーマンスの監視 {#performance-monitoring}
 
@@ -130,9 +130,9 @@ AEM ヘッドレスアプリケーションの使用時に最高のユーザー�
 
 ## その他のリソース {#additional-resources}
 
-* [AEM as a Headless CMS の概要](/help/headless/introduction.md)
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
-* [AEMのヘッドレスのTutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja)
+* [ヘッドレス CMS としての AEM の概要](/help/headless/introduction.md)
+* [AEM 開発者ポータル](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
+* [AEM のヘッドレスに関するチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja)
 * [AEM as a Cloud Service へのデプロイの概要](/help/implementing/deploying/overview.md)
 * [Cloud Manager を使用したコードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja#how-to-use)
 * [Cloud Manager Git リポジトリーと外部 Git リポジトリーの統合および AEM as a Cloud Service へのプロジェクトのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=ja)

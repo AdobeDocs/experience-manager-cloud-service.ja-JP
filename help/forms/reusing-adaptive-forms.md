@@ -7,18 +7,18 @@ exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
 source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
 workflow-type: tm+mt
 source-wordcount: '601'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # アダプティブフォームのメタデータプロパティの再利用 {#reusing-adaptive-forms}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
+<span class="preview">[アダプティブフォームの新規作成](/help/forms/creating-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/reusing-adaptive-forms.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=ja#) |
 | AEM as a Cloud Service | この記事 |
 
 既存のアダプティブフォームの一部のプロパティを使用して新しいアダプティブフォームを生成する場合は、単純にコピーと貼り付けの機能を使用できます。さらに、新しいアダプティブフォームを希望のフォルダーパスに貼り付けることもできます。すべてのメタデータプロパティが複製され、XFA ベースのアダプティブフォームの XFA と XSD ベースのアダプティブフォームの XSD もコピーされます。
@@ -71,7 +71,7 @@ ht-degree: 94%
 
 1. **再公開：**
 
-   貼り付けられたアセットは、コピーされたアセットとは異なります。 エンドユーザーが使用できるように、新しいアセットとして公開することができます。アセットの公開方法を理解するには、<!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) -->
+   貼り付けたアセットはコピー元のアセットとは別のものになります。エンドユーザーが使用できるように、新しいアセットとして公開することができます。アセットの公開方法を理解するには、<!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) -->
 
 
 ## 関連トピック {#see-also}

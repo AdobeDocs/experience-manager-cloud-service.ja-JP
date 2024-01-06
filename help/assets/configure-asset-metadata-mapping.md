@@ -5,7 +5,7 @@ exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1005'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ Workfront で「プロジェクト名」、「ドキュメント名」および�
 
 1. Experience Manager Assets 統合を選択し、「**[!UICONTROL 編集]**」をクリックします。
 
-1. 「**[!UICONTROL メタデータ]**」をクリックします。 「**[!UICONTROL Assets]**」タブで、[!UICONTROL プロジェクト]／[!UICONTROL 名前] Workfront フィールドを `wm:projectName`Experience Manager Assets フィールドにマッピングします。 完全一致が見つからない場合は、WorkfrontとExperience Manager Assetsのフィールドをマッピングするうえで最適な一致を探すことをAdobeにお勧めします。 様々なデータタイプのフィールドをマッピングするのを避けることができます。 例えば、Workfront の日付フィールドを Assets の説明フィールドにマッピングするとします。
+1. 「**[!UICONTROL メタデータ]**」をクリックします。 「**[!UICONTROL Assets]**」タブで、[!UICONTROL プロジェクト]／[!UICONTROL 名前] Workfront フィールドを `wm:projectName`Experience Manager Assets フィールドにマッピングします。 完全に一致するものが見つからない場合、アドビでは、一番よく一致している Workfront と Experience Manager Assets のフィールドを探してマッピングすることをお勧めします。様々なデータタイプのフィールドをマッピングするのを避けることができます。 例えば、Workfront の日付フィールドを Assets の説明フィールドにマッピングするとします。
 1. [!UICONTROL ドキュメント]／[!UICONTROL 名前] Workfront フィールドを `wm:documentName`Experience Manager Assets フィールドにマッピングします。
 
    ![Workfront でのマッピング](assets/workfront-metadata-mapping.png)
@@ -56,7 +56,7 @@ Workfront から Experience Manager Assets に画像を送信するには：
 
 1. Adobe Workfront アプリケーションの右上隅にある「メインメニュー」アイコン（![メニューを表示](assets/show-menu.svg)）をクリックし、「**[!UICONTROL プロジェクト]**」をクリックします。
 
-1. クリック **[!UICONTROL 新規プロジェクト]** をクリックして、プロジェクトを作成します。
+1. 「**[!UICONTROL 新規プロジェクト]**」をクリックして、プロジェクトを作成します。
 
 1. 左側のウィンドウに表示されている「**[!UICONTROL ドキュメント]**」オプションをクリックし、Experience Manager Assets に送信する必要のある画像をドラッグして選択します。
 
@@ -82,7 +82,7 @@ Experience Manager Assets as a Cloud Service で、新しいメタデータフ�
 
 1. スキーマフォームを選択し、「**[!UICONTROL 編集]**」をクリックします。
 
-1. （オプション）メタデータスキーマフォームエディターで、 `+` をクリックして、Workfrontフィールド用のタブを作成します。
+1. （オプション）メタデータスキーマのフォームエディターで `+` をクリックし、Workfront フィールド用のタブを作成します。
 
 1. 「**[!UICONTROL フォームを作成]**」タブをクリックし、**[!UICONTROL 1 行のテキスト]**&#x200B;コンポーネントをフォームにドラッグします。フォームのコンポーネントをクリックします。「**[!UICONTROL フォームを作成]**」タブで、次の手順に従います。
 

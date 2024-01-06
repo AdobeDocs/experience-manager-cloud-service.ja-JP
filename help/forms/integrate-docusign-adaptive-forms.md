@@ -5,7 +5,7 @@ exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1534'
-ht-degree: 87%
+ht-degree: 90%
 
 ---
 
@@ -186,7 +186,7 @@ AEM Forms as a Cloud Service には DocuSign 用のカスタム送信アクシ�
 1. 選択 **[!UICONTROL を作成します。]** 署名が有効なアダプティブフォームが作成されます。[!DNL DocuSign] フィールドをフォームに追加し、署名用に送信できます。
 1. アダプティブフォームを編集モードで開きます。Adobe Analytics の **[!UICONTROL コンテンツ]** タブで、 **[!UICONTROL フォームコンテナ]** を選択し、 ![設定](assets/configure-icon.svg).
 
-1. Adobe Analytics の **[!UICONTROL 送信]** セクション、選択 **[!UICONTROL DocuSign 電子署名を使用して送信]** から **[!UICONTROL 送信アクション]** 」ドロップダウンリストから選択できます。
+1. 「**[!UICONTROL 送信]**」セクションの「**[!UICONTROL 送信アクション]**」ドロップダウンリストで、「**[!UICONTROL DocuSign 電子署名を使用して送信]**」を選択します。
 
 1. Adobe Analytics の **[!UICONTROL アクションの設定]** セクション、選択 **[!UICONTROL 追加]** ：受信者を追加し、その受信者の e メールアドレスを指定します。 選択 **[!UICONTROL 追加]** を再度クリックして、受信者をさらに追加します。
 
@@ -211,7 +211,7 @@ AEM Forms as a Cloud Service には DocuSign 用のカスタム送信アクシ�
 
 1. アダプティブフォームを編集モードで開きます。Adobe Analytics の **[!UICONTROL コンテンツ]** タブで、 **[!UICONTROL フォームコンテナ]** を選択し、 ![設定](assets/configure-icon.svg).
 
-1. Adobe Analytics の **[!UICONTROL 送信]** セクション、選択 **[!UICONTROL DocuSign 電子署名を使用して送信]** から **[!UICONTROL 送信アクション]** 」ドロップダウンリストから選択できます。
+1. 「**[!UICONTROL 送信]**」セクションの「**[!UICONTROL 送信アクション]**」ドロップダウンリストで、「**[!UICONTROL DocuSign 電子署名を使用して送信]**」を選択します。
 
 1. Adobe Analytics の **[!UICONTROL アクションの設定]** セクション、選択 **[!UICONTROL 追加]** ：受信者を追加し、その受信者の e メールアドレスを指定します。 選択 **[!UICONTROL 追加]** を再度クリックして、受信者をさらに追加します。
 

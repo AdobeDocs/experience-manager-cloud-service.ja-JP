@@ -5,7 +5,7 @@ exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1345'
-ht-degree: 85%
+ht-degree: 97%
 
 ---
 
@@ -38,11 +38,11 @@ org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-アドビは、大規模な顧客データボリュームをサポートするために、新しい AEM as a Cloud Service 環境での汎用 Lucene インデックスの作成を終了します。また、Adobeは既存のリポジトリからインデックスを削除します。 詳しくは、このドキュメントの末尾で示されている[タイムライン](#timeline)を参照してください。
+アドビは、大規模な顧客データボリュームをサポートするために、新しい AEM as a Cloud Service 環境での汎用 Lucene インデックスの作成を終了します。さらに、既存のリポジトリからインデックスを削除します。詳しくは、このドキュメントの末尾で示されている[タイムライン](#timeline)を参照してください。
 
 アドビでは、`costPerEntry` および `costPerExecution` プロパティを使用してインデックスコストを既に調整しており、`/oak:index/pathreference` などの他のインデックスが可能な限り環境設定で使用されるようにしています。
 
-このインデックスに依存するクエリを使用する顧客アプリケーションは、他の既存のインデックスを使用するように即座に更新する必要があります。必要に応じてカスタマイズできます。 または、新しいカスタムインデックスを顧客アプリケーションに追加できます。AEM as a Cloud Service でのインデックス管理の詳しい手順については、[インデックス作成に関するドキュメント](/help/operations/indexing.md)を参照してください。
+このインデックスにまだ依存しているクエリを使用する顧客アプリケーションは、他の既存のインデックスを利用するように直ちに更新してください。既存のインデックスは、必要に応じてカスタマイズできます。または、新しいカスタムインデックスを顧客アプリケーションに追加できます。AEM as a Cloud Service でのインデックス管理の詳しい手順については、[インデックス作成に関するドキュメント](/help/operations/indexing.md)を参照してください。
 
 ## 影響を受けるユーザー {#are-you-affected}
 
@@ -74,7 +74,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 
 ## 汎用 Lucene インデックスに対する可能性のある依存関係 {#potential-dependencies}
 
-アプリケーションやAEMのインストールが、オーサーインスタンスとパブリッシュインスタンスの両方で汎用の Lucene インデックスに依存する場合がある領域がいくつかあります。
+アプリケーションや AEM インストールが、オーサーインスタンスであってもパブリッシュインスタンスであっても、汎用 Lucene インデックスに依存する可能性がある領域はいくつかあります。
 
 ### パブリッシュインスタンス {#publish-instance}
 
@@ -121,7 +121,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 
 ### オーサーインスタンス {#author-instance}
 
-顧客アプリケーションサーブレット、OSGi コンポーネント、レンダリングスクリプトのクエリに加えて、汎用 Lucene インデックスの作成者固有の使用も複数存在します。
+顧客アプリケーションサーブレット、OSGi コンポーネントおよびレンダリングスクリプトでのクエリに加えて、汎用 Lucene インデックスには作成者固有のいくつかの用途が考えられます。
 
 #### 参照検索 {#reference-search}
 
@@ -129,7 +129,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 
 #### パスフィールドピッカー検索 {#picker-search}
 
-AEM には、`granite/ui/components/coral/foundation/form/pathfield` の Sling リソースタイプを持つカスタムダイアログコンポーネントが含まれています。これは、別の AEM パスを選択するためのブラウザー／ピッカーとなります。デフォルトのパスフィールドピッカー。カスタムパスがない場合に使用されます。 `pickerSrc` プロパティはコンテンツ構造で定義され、ポップアップダイアログボックスで検索バーをレンダリングします。
+AEM には、`granite/ui/components/coral/foundation/form/pathfield` の Sling リソースタイプを持つカスタムダイアログコンポーネントが含まれています。これは、別の AEM パスを選択するためのブラウザー／ピッカーとなります。デフォルトのパスフィールドピッカーは、カスタムの `pickerSrc` プロパティがコンテンツ構造で定義されていない場合に使用されるもので、ポップアップダイアログボックスに検索バーをレンダリングします。
 
 検索対象となるノードタイプは、`nodeTypes` プロパティを使用して指定できます。
 
@@ -168,6 +168,6 @@ AEM には、`granite/ui/components/coral/foundation/form/pathfield` の Sling �
 
 アドビでは前述のログメッセージを監視し、汎用 Lucene インデックスをまだ利用しているお客様への連絡を試みます。
 
-短期的な緩和として、Adobeはカスタムインデックス定義を直接お客様のシステムに追加し、必要に応じて汎用 Lucene インデックスを削除した結果として、機能やパフォーマンスの問題を防ぎます。
+短期的な緩和策として、アドビでは、必要に応じて、カスタムインデックス定義を直接お客様のシステムに追加して、汎用 Lucene インデックスの削除に起因する機能の問題やパフォーマンスの問題を防止します。
 
-このような場合、お客様には更新されたインデックス定義が提供され、Cloud Manager を介してアプリケーションの将来のリリースにそのインデックス定義を含めるようお勧めします。
+このような場合、お客様には、更新されたインデックス定義が提供され、Cloud Manager を使用してアプリケーションの今後のリリースにそれを組み込むように助言されます。

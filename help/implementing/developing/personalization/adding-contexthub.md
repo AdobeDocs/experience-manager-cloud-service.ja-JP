@@ -5,7 +5,7 @@ exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 90%
+ht-degree: 94%
 
 ---
 
@@ -34,7 +34,7 @@ ContextHub 機能を有効にし、ContextHub JavaScript ライブラリにリ�
 * [JSONPStore](contexthub-api.md#contexthub-store-persistedjsonpstore)
 * [PersistedJSONPStore](contexthub-api.md#contexthub-store-persistedstore)
 
-すべてのストアタイプは、[`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) クラスの拡張です。ストアタイプの作成について詳しくは、 [カスタムストアの作成](extending-contexthub.md#creating-custom-store-candidates). ストアタイプのサンプルについては、[ContextHub ストア候補のサンプル](sample-stores.md)を参照してください。
+すべてのストアタイプは、[`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) クラスの拡張です。ストアタイプの作成については、[カスタムストアの作成](extending-contexthub.md#creating-custom-store-candidates)を参照してください。ストアタイプのサンプルについては、[ContextHub ストア候補のサンプル](sample-stores.md)を参照してください。
 
 ### 永続モード {#persistence-modes}
 
@@ -85,7 +85,7 @@ Object {
 
 ContextHub には、JavaScript オブジェクトを操作するための [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) クラスが用意されています。JavaScript オブジェクトをストアに追加する前またはストアから取得した後に、このクラスの関数を使用して JavaScript オブジェクトを操作します。
 
-また、 [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) クラスには、オブジェクトを文字列にシリアライズしたり、文字列をオブジェクトにデシリアライズしたりするための関数が用意されています。 `JSON.parse` 関数および `JSON.stringify` 関数をネイティブに含まないブラウザーをサポートするには、このクラスを使用して JSON データを処理します。
+さらに、[`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) クラスには、オブジェクトを文字列にシリアライズしたり、文字列をオブジェクトにデシリアライズしたりするための関数があります。`JSON.parse` 関数および `JSON.stringify` 関数をネイティブに含まないブラウザーをサポートするには、このクラスを使用して JSON データを処理します。
 
 ## ContextHub ストアとのやり取り {#interacting-with-contexthub-stores}
 
@@ -143,7 +143,7 @@ ContextHub のセグメントは、`/conf/<site>/settings/wcm/segments` ノー�
 
 ## ContextHub のデバッグ {#debugging-contexthub}
 
-ログの生成を含め、ContextHub をデバッグする場合のオプションはいくつかあります。 詳しくは、「[ContextHub の設定](configuring-contexthub.md#logging-debug-messages-for-contexthub)」を参照してください。
+ログの生成を含め、ContextHub をデバッグするためにはいくつかのオプションがあります。詳しくは、[ContextHub の設定](configuring-contexthub.md#logging-debug-messages-for-contexthub)を参照してください。
 
 ## ContextHub フレームワークの概要の確認 {#see-an-overview-of-the-contexthub-framework}
 

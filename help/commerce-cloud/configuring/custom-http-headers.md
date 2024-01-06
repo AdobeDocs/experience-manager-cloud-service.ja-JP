@@ -5,7 +5,7 @@ exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '279'
-ht-degree: 92%
+ht-degree: 95%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 92%
 HTTP ヘッダーの値は、プロジェクトのクラウドサービス設定ページで設定できます。
 
 1. ツール/Cloud Service/CIF設定で、Cloud Services設定ページに移動します。
-1. 既存の設定を開くか、作成します
+1. 既存の設定を開くか、設定を作成します。
 1. 「詳細」タブに移動し、「カスタム HTTP ヘッダー」マルチフィールドを探します。定義済みのヘッダーを選択し、それらに値を割り当てることができます。
 
 上記のクラウドサービス設定を使用するコンポーネントは、すべての GraphQL リクエストでこれらの HTTP ヘッダーを送信します。

@@ -5,7 +5,7 @@ exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1541'
-ht-degree: 79%
+ht-degree: 95%
 
 ---
 
@@ -51,7 +51,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
 >[!NOTE]
 >
->オーサリングをより簡単にするためのキーボードショートカットがいくつか用意されています。
+>オーサリング作業をより簡単にするいくつかのキーボードショートカットがあります。
 >
 >* [ページ編集時のキーボードショートカット](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
 >* [コンソールのキーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
@@ -66,7 +66,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
    ![表示選択用ドロップダウン](/help/sites-cloud/authoring/assets/views.png)
 
-1. を使用してツリーの上に移動 [ヘッダーのパンくずリスト](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)：選択した場所に戻ることができます。
+1. [ヘッダーのパンくず](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)を使用してツリーを上に移動します。これにより、選択した場所に戻ることができます。
 
    ![パンくずドロップダウン](/help/sites-cloud/authoring/assets/breadcrumb.png)
 
@@ -76,7 +76,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
 ### 新しいページの作成 {#creating-a-new-page}
 
-宛先 [ページの作成](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
+[ページを作成するには](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)：
 
 1. [新しいページを作成する場所に移動します。](#finding-your-page)
 1. 「**作成**」アイコンを使用して、リストから「**ページ**」を選択します。
@@ -87,17 +87,17 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
 ### その他のアクションを実行するページの選択 {#selecting-your-page-for-further-action}
 
-ページを選択して操作を実行できます。 ページを選択するとツールバーが自動的に更新され、そのリソースに関連するアクションが表示されます。
+ページを選択すると、そのページ上で操作を行うことができます。ページを選択するとツールバーが自動的に更新され、そのリソースに関連するアクションが表示されます。
 
 ページの選択方法は、コンソールで使用している表示によって異なります。
 
 1. 列表示：
 
-   * 必要なリソースのサムネールを選択します。サムネールが選択されていることを示すために、サムネールにチェックマークが付きます。
+   * 必要なリソースのサムネールを選択します。サムネールが選択されていることを示すために、サムネールにチェックマークが付けられます。
 
 1. リスト表示：
 
-   * 必要なリソースのサムネールを選択します。サムネールが選択されていることを示すために、サムネールにチェックマークが付きます。
+   * 必要なリソースのサムネールを選択します。サムネールが選択されていることを示すために、サムネールにチェックマークが付けられます。
 
 1. カード表示：
 
@@ -114,7 +114,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
 次のようにして、[クイックアクション](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)を使用できます。
 
-1. [ページに移動します。](#finding-your-page) 行動を起こしたいと思っている。
+1. 処理を実行する[ページに移動](#finding-your-page)します。
 1. 必要なリソースを表すカードの上にマウスポインターを置きます。クイックアクションが表示されます。
 
    ![カードのアクション](/help/sites-cloud/authoring/assets/card-actions.png)
@@ -147,7 +147,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
    * 次の操作を実行して、ページ上の[既存のコンポーネントのコンテンツを編集します](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)。
 
-      * 次のいずれかを選択してコンポーネントツールバーを開きます。 「**編集**」（鉛筆）アイコンを使用してダイアログを開きます。
+      * 選択してコンポーネントツールバーを開きます。「**編集**」（鉛筆）アイコンを使用してダイアログを開きます。
       * 選択して長押しするか、ダブルスロークリックして、コンポーネントのインプレースエディタを開きます。 使用可能なアクションが表示されます（一部のコンポーネントでは、アクションが制限されます）。
       * 実行できるすべてのアクションを表示するには、次のアイコンを使用して全画面表示モードに切り替えます。
 
@@ -155,24 +155,24 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
    * [既存のコンポーネントのプロパティを設定します。](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
-      * 次のいずれかを選択してコンポーネントツールバーを開きます。 **設定**（スパナ）アイコンを使用してダイアログを開きます。
+      * 選択してコンポーネントツールバーを開きます。**設定**（スパナ）アイコンを使用してダイアログを開きます。
 
    * 次のいずれかの方法で[コンポーネントを移動します](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component)。
 
       * 必要なコンポーネントを新しい場所にドラッグします。
-      * 次のいずれかを選択してコンポーネントツールバーを開きます。 以下を使用します。 **カット** その後 **貼り付け** 必要に応じてアイコンを使用します。
+      * 選択してコンポーネントツールバーを開きます。必要に応じて、「**切り取り**」アイコン、続いて「**ペースト**」アイコンを使用します。
 
-   * 次の操作を実行して、コンポーネントを[コピー（およびペースト）](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)します。
+   * 次の操作を実行して、コンポーネントを「[コピー（およびペースト）](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)」します。
 
-      * 次のいずれかを選択してコンポーネントツールバーを開きます。 以下を使用します。 **コピー** その後 **貼り付け** 必要に応じてアイコンを選択します。
+      * 選択してコンポーネントツールバーを開きます。必要に応じて、「**コピー**」アイコン、続いて「**ペースト**」アイコンを使用します。
 
    >[!NOTE]
    >
-   >同じページ、または別のページにコンポーネントを&#x200B;**貼り付ける**&#x200B;ことができます。切り取り/コピー操作の前に開いていた別のページに貼り付ける場合は、そのページを更新する必要があります。
+   >同じページ、または別のページにコンポーネントを&#x200B;**ペースト**&#x200B;できます。切り取り／コピー操作を実行する前に開かれていたページにペーストするには、そのページを更新する必要があります。
 
-   * コンポーネントを[削除します。](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)
+   * コンポーネントを[削除](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)します。
 
-      * を選択してコンポーネントツールバーを開き、次に **削除** アイコン。
+      * 選択してコンポーネントツールバーを開き、「**削除**」アイコンを使用します。
 
    * 次の操作を実行して、ページに[注釈を追加します](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations)。
 
@@ -258,7 +258,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
    * [移動](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page)：
 
-      * ページの移動に必要な情報を収集するためのウィザードが開きます。 画面に表示される指示に従います。
+      * ページの移動に必要な情報を収集するためのウィザードが開きます。画面に表示される指示に従います。
 
    * [削除](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page)：
 
@@ -292,7 +292,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
    ![参照表示](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. 必要な参照のタイプを選択して詳細を表示し、（必要に応じて）追加のアクションを実行します。
+1. 必要なタイプの参照を選択して詳細を表示し、（必要に応じて）その他のアクションを実行します。
 
 ### ページのバージョンの作成 {#creating-a-version-of-your-page}
 
@@ -302,7 +302,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
    ![「タイムライン」表示オプション](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. 「タイムライン」列の右下にある省略記号を選択し、その他のボタン ( **バージョンとして保存**.
+1. 「タイムライン」列の右下にある省略記号を選択すると、その他のボタン（「**バージョンを保存**」など）が表示されます。
 
    ![タイムライン表示](/help/sites-cloud/authoring/assets/timeline-view.png)
 
@@ -318,7 +318,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
    ページのバージョンが既に保存されている場合、そのバージョンがタイムラインに表示されます。
 
-1. 復元するバージョンを選択します。これには、追加のアクションボタンが表示されます。
+1. 復元するバージョンの選択 - その他のアクションボタンが表示されます。
 
    * **このバージョンに戻る**
 
@@ -326,4 +326,4 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
    * **違いを表示**
 
-      * （2 つのバージョン間の）違いが強調表示されたページが開きます。
+      * （2 つのバージョン間の）違いがハイライト表示されたページが開きます。

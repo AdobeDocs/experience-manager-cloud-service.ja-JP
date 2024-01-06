@@ -27,7 +27,7 @@ ht-degree: 99%
 
 ### バグの修正 {#bug-fixes-bpa}
 
-* BPA は、`grouprendercondition` に関して偽陽性をレポートしていました。この問題が修正されました。
+* BPA は、`grouprendercondition` に関して偽陽性をレポートしていました。この問題は修正されました。
 
 ## コンテンツ転送ツール {#ctt-release}
 

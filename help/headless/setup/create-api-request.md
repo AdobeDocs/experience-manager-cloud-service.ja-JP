@@ -5,7 +5,7 @@ exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '652'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 92%
 
 * [GraphQL](/help/headless/graphql-api/content-fragments.md) API を使用すると、コンテンツフラグメントにアクセスして配信するリクエストを作成できます。この API は、コンテンツフラグメントコンテンツのクエリと使用に最も堅牢な機能セットを提供します。
    * API を使用するには、[エンドポイントを AEM で定義して有効にし](/help/headless/graphql-api/graphql-endpoint.md)、必要に応じて [GraphiQL インターフェイスをインストール](/help/headless/graphql-api/graphiql-ide.md)します。
-* [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) では、コンテンツフラグメント（およびその他のアセット）を作成および変更できます。
+* [アセット REST API](/help/assets/content-fragments/assets-api-content-fragments.md) を使用すると、コンテンツフラグメント（およびその他のアセット）を作成および変更できます。
 
 このガイドの残りの部分では、GraphQL へのアクセスとコンテンツフラグメントの配信について説明します。
 
@@ -31,7 +31,7 @@ GraphQL API を使用する前に、GraphQL エンドポイントを作成する
 1. 「**作成**」を選択します。
 1. **新しい GraphQL エンドポイントを作成**&#x200B;ダイアログボックスが開きます。以下を指定します。
    * **名前**：エンドポイントの名前。任意のテキストを入力できます。
-   * **次から提供されるGraphQLスキーマを使用**：ドロップダウンリストを使用して、必要な設定を選択します。
+   * **使用する GraphQL スキーマの提供元**：ドロップダウンリストを使用して、必要な設定を選択します。
 1. 「**作成**」で確定します。
 1. コンソールで、前に作成した設定に基づいて、**パス**&#x200B;が表示されます。このパスを使用して、GraphQLクエリを実行します。
 
@@ -55,15 +55,15 @@ GraphiQL は IDE であり、AEM 環境に含まれています。[エンドポ�
    * 直接アクセス（例：`http://localhost:4502/aem/graphiql.html`）
 
 1. GraphiQL は、GraphQL のブラウザー内のクエリエディターです。クエリを作成して、コンテンツフラグメントを取得し、それらを JSON としてヘッドレスに配信できます。
-   * 右上のドロップダウンで、エンドポイントを選択できます。
+   * ドロップダウンの右上を使用すると、エンドポイントを選択できます。
    * 左端のパネルには、永続クエリが表示されます（使用可能な場合）。
-   * 中央の左側のパネルを使用して、クエリを作成できます。
+   * 左中央のパネルでは、クエリを作成できます。
    * 右中央のパネルには、結果が表示されます。
    * クエリエディターは、コード補完機能とホットキーを備えており、クエリを簡単に実行できます。
 
    ![GraphiQL エディター](../assets/graphiql.png)
 
-1. 作成したモデルが `person` で `firstName`、`lastName`、`position` の各フィールドを持つ場合は、単純なクエリを構築して、コンテンツフラグメントのコンテンツを取得できます。
+1. 作成したモデルが `person` で `firstName`、`lastName`、`position` の各フィールドを持つ場合は、単純なクエリーを構築して、コンテンツフラグメントのコンテンツを取得できます。
 
    ```text
    query 
@@ -79,7 +79,7 @@ GraphiQL は IDE であり、AEM 環境に含まれています。[エンドポ�
    }
    ```
 
-1. 左側のパネルにクエリを入力します。
+1. 左パネルにクエリを入力します。
    ![GraphiQL クエリ](../assets/graphiql-query.png)
 
 1. 「**クエリを実行**」ボタンをクリックするか `Ctrl-Enter` ホットキーを使用すると、結果が JSON として右側のパネルに表示されます。

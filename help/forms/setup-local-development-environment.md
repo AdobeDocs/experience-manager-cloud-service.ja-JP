@@ -1,15 +1,15 @@
 ---
-title: AEM Formsのローカル開発環境を設定する方法を教えてください。
-description: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境の設定
+title: AEM Forms のローカル開発環境を設定する方法を教えてください。
+description: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境を設定
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2682'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# AEM Formsのローカル開発環境の設定 {#overview}
+# AEM Forms 用のローカル開発環境を設定 {#overview}
 
 [!DNL  Adobe Experience Manager Forms] as a [!DNL  Cloud Service] 環境を設定する場合は、開発環境、ステージング環境および実稼動環境をクラウドに設定します。また、ローカル開発環境を設定および構成することもできます。
 
@@ -88,7 +88,7 @@ You can use the [development tools](https://experienceleague.adobe.com/docs/expe
 
 1. 「**[!UICONTROL AEM as a Cloud Service]**」タブに移動します。
 1. 公開日を降順で並べ替えます。
-1. 最新のAdobe Experience Manager as a Cloud Service SDK、Experience Manager Forms機能アーカイブ (AEM Formsアドオン )、フォームリファレンスアセット、またはForms Designer をクリックします。
+1. 最新の Adobe Experience Manager as a Cloud Service SDK、Experience Manager Forms 機能アーカイブ（AEM Forms アドオン）、Forms 参照アアセット、Forms Designer をクリックします。
 1. ソフトウェア利用許諾契約を確認し、同意します。「**[!UICONTROL ダウンロード]**」ボタンを選択します。
 
 ## AEM プロジェクト用の開発ツールの設定 {#setup-development-tools-for-AEM-projects}
@@ -268,7 +268,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
      >[!WARNING]
      >
-     * バージョン 45 でアーキタイププロジェクトを作成する場合、 [AEM Archetype プロジェクトフォルダー]/pom.xmlでは、最初にフォームコアコンポーネントのバージョンを 2.0.64 に設定します。アーキタイププロジェクトを構築またはデプロイする前に、フォームコアコンポーネントのバージョンを 2.0.62 に更新します。
+     * バージョン 45 でアーキタイププロジェクトを作成する場合、[AEM アーキタイププロジェクトフォルダー]/pom.xml では、最初にフォームコアコンポーネントのバージョンを 2.0.64 に設定します。アーキタイププロジェクトを構築またはデプロイする前に、フォームコアコンポーネントのバージョンを 2.0.62 に更新します。
 
 1. プロジェクトをローカル開発環境にデプロイします。以下のコマンドを使用して、ローカル開発環境にデプロイできます
 
@@ -286,7 +286,7 @@ Dispatcher は、CDN と AEM パブリッシュ層の間にセキュリティと
 
 ### ローカル Dispatcher の設定 {#setup-local-dispatcher}
 
-The [!DNL Experience Manager] As a Cloud Service SDK には、Dispatcher をローカルで設定、検証、シミュレーションする、推奨される Dispatcher ツールバージョンが含まれています。 Dispatcher ツールは Docker ベースで、Apache HTTP Web サーバーおよび Dispatcher 設定ファイルを互換性のある形式に変換し、Docker コンテナで実行される Dispatcher にデプロイするコマンドラインツールを提供します。
+[!DNL Experience Manager] as a Cloud Service SDK には、推奨される Dispatcher ツールのバージョンが含まれており、これにより、Dispatcher をローカルで設定、検証、シミュレーションできます。Dispatcher ツールは Docker ベースで、Apache HTTP Web サーバーおよび Dispatcher 設定ファイルを互換性のある形式に変換し、Docker コンテナで実行される Dispatcher にデプロイするコマンドラインツールを提供します。
 
 Dispatcher 上のキャッシュを使用すると、[!DNL AEM Forms] は、アダプティブフォームをクライアントで事前入力できます。キャッシュにより、事前入力されたフォームのレンダリング速度が向上します。
 
@@ -298,7 +298,7 @@ Dispatcher を設定する詳細な手順については、「[ローカル Disp
 
 1. AEM プロジェクトを開き、`\src\conf.dispatcher.d\available_farms` に移動します
 1. `default.farm` ファイルのコピーを作成します（例：`forms.farm`）。
-1. 作成した `forms.farm` ファイルを編集し、次のコードを置き換えます。
+1. 作成した `forms.farm` ファイルを開いて編集し、以下のコードを置き換えます。
 
    ```json
    #/ignoreUrlParams {

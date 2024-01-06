@@ -8,7 +8,7 @@ exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 89%
+ht-degree: 97%
 
 ---
 
@@ -62,7 +62,8 @@ PWA Studio を AEM の GraphQL エンドポイントに接続するには、[AEM
 
    ナビゲーションコンポーネントのカスタマイズについて詳しくは、[addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) と、PWA Studio の[拡張フレームワーク](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/)に関するドキュメントを参照してください。
 
-1. Apollo Client は、`<https://pwa-studio/endpoint.js>` に AEM GraphQL エンドポイントがあることを想定します。エンドポイントをこの位置にマッピングするには、PWA Studioアプリケーションの UPPOURD 設定をカスタマイズします。 a.AEM_CFM_GRAPHQL変数を pwa-root/.env に追加し、AEMコンテンツフラグメントGraphQLエンドポイントを指すように調整します。
+1. Apollo Client は、`<https://pwa-studio/endpoint.js>` に AEM GraphQL エンドポイントがあることを想定します。エンドポイントをこの場所にマッピングするには、PWA Studio アプリケーションの UPWARD 設定を次のようにカスタマイズします。
+a. AEM_CFM_GRAPHQL 変数 pwa-root/.env に追加し、AEM コンテンツフラグメントの GraphQL エンドポイントを参照するように変数を調整します。
 
    例：`AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 
@@ -117,7 +118,7 @@ GraphQLエンドポイントを紹介するために、コンテンツパッケ�
 
 * Apollo Client をカスタマイズする代わりに、AEM と Adobe Commerce GraphQL データを組み合わせて単一のフェデレーテッド GraphQL エンドポイントにすることができます。
 * PWA Studio アプリケーションでは、UPWARD 設定のプロキシを介さずに、AEM GraphQL エンドポイント URL を直接使用することもできます。プロキシは別のレイヤー（CDN など）に移動することもできます。
-* また、どのアプローチが最適かは、ユーザーにPWA Studio・アプリケーションを提供する方法によっても大きく異なります。
+* どのアプローチが最適かは、ユーザーへの PWA Studio アプリケーションの提供方法によっても大きく異なります。
 
 この拡張機能には 2 つの例が用意されています。
 

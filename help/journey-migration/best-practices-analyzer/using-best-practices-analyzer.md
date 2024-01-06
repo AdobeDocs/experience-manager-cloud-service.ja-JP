@@ -5,7 +5,7 @@ exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '2418'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 92%
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. クリック **レポートを生成** をクリックして、ベストプラクティスアナライザーを実行します。
+1. 「**レポートの生成**」をクリックして、ベストプラクティスアナライザーを実行します。
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
@@ -69,7 +69,7 @@ ht-degree: 92%
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
-1. BPA レポートが生成されると、概要と結果の数が、結果のタイプと重要度レベル別に整理された表形式で表示されます。 特定の検索結果に関する詳細を取得するには、テーブル内の検索のタイプに対応する数をクリックします。
+1. BPA レポートが生成された後は、概要と結果の数が、結果のタイプと重要度レベル別に整理された表形式で表示されます。特定の結果の詳細を取得するには、表で結果のタイプに対応する番号をクリックします。
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
 
@@ -95,7 +95,7 @@ ht-degree: 92%
 
 [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) に関連する結果を除外するには、次の手順に従います。
 
-1. ページの左側にある左側のレールアイコンをクリックします。 **ACS Commons フィルター**&#x200B;が表示されます。次をクリック： **ACS Commons フィルター** をクリックして、次の画像に示すインタラクティブチェックボックスを表示します。
+1. ページの左側にある左レールアイコンをクリックします。**ACS Commons フィルター**&#x200B;が表示されます。**ACS Commonsフィルター**&#x200B;をクリックして、下の画像に示すインタラクティブチェックボックスを表示します。
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
@@ -161,7 +161,7 @@ AEM インスタンスから「**CSV**」オプションをクリックすると
 
 キャッシュの有効期限が切れている場合、CSV ファイルが作成されダウンロードされる前にレポートが再生成されます。
 
-レポートの CSV 形式には、パターン検出の出力から生成され、カテゴリタイプ、サブタイプ、重要度レベルで並べ替え、整理された情報が含まれます。この形式は、Microsoft Excel などのアプリケーションでの表示や編集に適しています。これは、進行状況を測定するために時間の経過と共にレポートを比較する際に役立つ、繰り返し可能な形式ですべての発見情報を提供することを目的としています。
+レポートの CSV 形式には、パターン検出の出力から生成され、カテゴリタイプ、サブタイプ、重要度レベルで並べ替え、整理された情報が含まれます。この形式は、Microsoft Excel などのアプリケーションでの表示や編集に適しています。これは、進行状況を測定するために時間の経過と共にレポートを比較する際に役立つ、繰り返し可能な形式で発見情報をすべて提供することを目的としています。
 
 CSV 形式レポートの列は次のとおりです。
 

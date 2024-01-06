@@ -1,11 +1,11 @@
 ---
 title: AEM Developer Tools for Eclipse
-description: Apache Sling 用の Eclipse プラグインに基づく Eclipse プラグインであるAEM Developer Tools for Eclipse の使用方法について説明します。
+description: Apache Sling 用の Eclipse プラグインに基づく Eclipse プラグインである、AEM Developer Tools for Eclipse の使用方法について説明します。
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1138'
-ht-degree: 86%
+ht-degree: 98%
 
 ---
 
@@ -34,7 +34,7 @@ AEM Developer Tools を使用する前に、次の作業が必要です。
 
 >[!NOTE]
 >
->macOSでは、右クリックする必要があります **Eclipse.app**&#x200B;を選択し、 **パッケージコンテンツを表示** を見つける `eclipse.ini`**.**
+>macOS では、**Eclipse.app** を右クリックし、「**パッケージの内容を表示**」を選択して、`eclipse.ini`**を探します。**
 
 ## Eclipse 用 AEM 開発者ツールのインストール方法 {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -64,7 +64,7 @@ Eclipse では、パースペクティブによって、ウィンドウ内で使
 
 _Experience Manager Development Tools for Eclipse_ には、AEM プロジェクトおよびインスタンスを完全にコントロールできる AEM パースペクティブが用意されています。AEM パースペクティブを開くには、次の操作を行います。
 
-1. Eclipse メニューバーから、「 」を選択します。 **ウィンドウ** > **遠近法** > **Open Perspective** > **その他**.
+1. Eclipse メニューバーから、**ウィンドウ**／**パースペクティブ**／**パースペクティブを開く**／**その他**&#x200B;を選択します。
 1. ダイアログで「**AEM**」を選択し、「**Open**」をクリックします。
 
 ![Eclipse の AEM パースペクティブ](assets/eclipse-aem-perspective.png)
@@ -83,7 +83,7 @@ _Experience Manager Developer Tools for Eclipse_ には、Eclipse でのプロ�
 
    >[!NOTE]
    >
-   >m2eclipse はアーキタイプカタログをスキャンする必要があるので、この手順には少し時間がかかる場合があります。
+   >m2eclipse がアーキタイプカタログをスキャンする必要があるので、この手順にはしばらく時間がかかることがあります。
 
 1. メニューから「`com.adobe.granite.archetypes : sample-project-archetype : <highest-number>`」を選択し、「**Next**」をクリックします。
 
@@ -132,16 +132,16 @@ _Experience Manager Developer Tools for Eclipse_ には、Eclipse でのプロ�
 1. `PROJECT.ui.apps` プロジェクトの内容をパッケージの `apps` フォルダーと `etc` フォルダーに置き換えます。
 
    1. Project Explorer パネルで、`PROJECT.ui.apps`／`src`／`main`／`content`／`jcr_root`／`apps` を展開します。
-   1. を右クリックします。 `apps` フォルダーと選択 **表示場所** > **システムエクスプローラ**.
+   1. `apps` フォルダーを右クリックし、**表示**／**System Explorer** を選択します。
    1. 表示される `apps` フォルダーと `etc` フォルダーを削除し、その場所にコンテンツパッケージの `apps` フォルダーと `etc` フォルダーを配置します。
-   1. Eclipse で、 `PROJECT.ui.apps` プロジェクトと選択 **更新**.
+   1. Eclipse で `PROJECT.ui.apps` プロジェクトを右クリックし、「**更新**」を選択します。
 
 1. 続いて、`PROJECT.ui.content` に対して同じことを行い、そのコンテンツフォルダーを自分のパッケージの 1 つに置き換えます。
 
-   1. Project Explorer パネルで、`PROJECT.ui.content`／`src`／`main`／`content`／`jcr_root`／`content` を展開します。
-   1. より深いコンテンツフォルダーを右クリックし、「 」を選択します。 **表示場所** > **システムエクスプローラ**.
+   1. プロジェクトエクスプローラーパネルで、`PROJECT.ui.content`／`src`／`main`／`content`／`jcr_root`／`content` を展開します。
+   1. 深い階層のコンテンツフォルダーを右クリックし、**表示**／**System Explorer** を選択します。
    1. 表示されるコンテンツフォルダーを削除し、その場所にコンテンツパッケージのコンテンツフォルダーを配置します。
-   1. Eclipse で、 `PROJECT.ui.content` プロジェクトと選択 **更新**.
+   1. Eclipse で `PROJECT.ui.content` プロジェクトを右クリックし、「**更新**」を選択します。
 
 1. 次に、コンテンツパッケージの内容に対応するように、これら 2 つのプロジェクトの `filter.xml` ファイルを更新する必要があります。それには、コンテンツパッケージの `META-INF/vault/filter.xml` ファイルを別のテキスト／コードエディターで開きます。
 
@@ -190,11 +190,11 @@ _Experience Manager Developer Tools for Eclipse_ には、Eclipse でのプロ�
 1. すべての変更を保存してください。これで、新しいコンテンツが AEM インスタンスに同期するようになりました。
 
 1. Servers パネルで、接続が開始されていることを確認します。開始していない場合は開始します。
-1. 次をクリック： **クリーンと公開** アイコン。
+1. 「**削除と公開**」アイコンをクリックします。
 
-完了したら、インスタンスでパッケージが動作しており、保存時には、変更が自動的にインスタンスに同期します。
+完了すると、インスタンスでパッケージが動作しており、保存時には変更が自動的にインスタンスに同期します。
 
-プロジェクトからパッケージを再ビルドする場合は、 `PROJECT.ui.apps` または `PROJECT.ui.content` を選択します。 **実行ユーザー** > **Maven インストール**.
+プロジェクトからパッケージを再ビルドする場合は、`PROJECT.ui.apps` または `PROJECT.ui.content` を右クリックし、**次として実行**／**Maven インストール**&#x200B;を選択します。
 
 これで、パッケージを含むターゲットフォルダーが作成されました（例： ）。 `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`) をクリックします。
 
@@ -206,7 +206,7 @@ _Experience Manager Developer Tools for Eclipse_ には、Eclipse でのプロ�
 
 1. 作成したプロジェクトをすべて選択します。
 1. 右クリックします。
-1. コンテキストメニューで、「 」を選択します。 **Maven** > **プロジェクトを更新**.
+1. コンテキストメニューで、**Maven**／**プロジェクトを更新**&#x200B;を選択します。
 1. 「**Force Updates of Snapshot/Releases**」をオンにします。
 1. 「**OK**」をクリックします。
 

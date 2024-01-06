@@ -5,7 +5,7 @@ exl-id: fb887ba3-e40b-4ab1-b142-0748c6d9f18e
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 82%
+ht-degree: 89%
 
 ---
 
@@ -29,7 +29,7 @@ AEM Repo ツールは、FTP に相当するコマンドラインを使用して�
 
 [AEM Repo ツールは、このリンクの GitHub で利用できます](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo)。詳細なインストールおよび使用手順も用意されています。
 
-AEM Repo Tool のソースをダウンロードする場合は、以下にリンクされている GitHub プロジェクトを参照してください。
+AEM Repo ツールのソースをダウンロードする場合は、GitHub プロジェクト（次のリンク）を参照してください。
 
 GitHub のコード
 

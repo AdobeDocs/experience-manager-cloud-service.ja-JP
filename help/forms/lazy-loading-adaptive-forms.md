@@ -1,5 +1,5 @@
 ---
-title: 遅延読み込みを伴う大きなフォームのパフォーマンスを向上させるにはどうすればよいですか？
+title: 遅延読み込みによる大きなフォームのパフォーマンスの向上させる方法
 description: 遅延読み込みを使用して大きなフォームのパフォーマンスを向上させる方法について説明します。遅延読み込みを使用すると、フォームのフラグメントが表示されるまでそれらの初期化と読み込みを延期することにより、大きく複雑なアダプティブフォームのパフォーマンスを向上できます。
 feature: Adaptive Forms, Foundation Components
 role: User
@@ -8,23 +8,23 @@ exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1063'
-ht-degree: 91%
+ht-degree: 96%
 
 ---
 
 # 遅延読み込みによる大きなフォームのパフォーマンスの向上 {#improve-performance-of-large-forms-with-lazy-loading}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
+<span class="preview">[アダプティブフォームの新規作成](/help/forms/creating-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/lazy-loading-adaptive-forms.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/lazy-loading-adaptive-forms.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 
 ## 遅延読み込みの概要 {#introduction-to-lazy-loading}
 
-フォームが数百以上のフィールドを持ち、大きく複雑になると、エンドユーザーはフォームがレンダリングされる際に長時間待たされることになります。応答時間を最小限に抑えるために、アダプティブFormsでは、フォームを論理フラグメントに分割し、フラグメントが表示されるまでフラグメントの初期化または読み込みを遅らせるように設定できます。 これを遅延読み込みと呼びます。さらに、遅延読み込みが設定されたフラグメントは、ユーザーがフォーム内の他のセクションに移動するとアンロードされ、フラグメントは表示されなくなります。
+フォームが数百以上のフィールドを持ち、大きく複雑になると、エンドユーザーはフォームがレンダリングされる際に長時間待たされることになります。応答時間を最小にするために、アダプティブフォームでは、フォームを複数の論理的なフラグメントに分解し、これらのフラグメントを表示する必要が生じるまで、それらの初期化や読み込みを遅延するように設定できます。これを遅延読み込みと呼びます。さらに、遅延読み込みが設定されたフラグメントは、ユーザーがフォーム内の他のセクションに移動するとアンロードされ、フラグメントは表示されなくなります。
 
 まず最初に、遅延読み込みを設定する前に、要件と準備手順を説明します。
 
@@ -73,7 +73,7 @@ ht-degree: 91%
 
 遅延読み込みを使用する際に留意しておかなければならない制限事項、レコメンデーションおよび重要な点を以下に示します。
 
-* Adobeでは、大きなフォームの遅延読み込みを設定する際に、XFA ベースのアダプティブForms上で XSD スキーマベースのアダプティブFormsを使用することをお勧めします。 XFA ベースのアダプティブフォームでの遅延読み込みの実装によるパフォーマンスの向上は、XSD ベースのアダプティブフォームでの向上に比べて、相対的に小さくなります。
+* 大きなフォームに対して遅延読み込みを設定する場合は、XFA ベースのアダプティブフォームよりも XSD スキーマベースのアダプティブフォームを使用することをお勧めします。XFA ベースのアダプティブフォームでの遅延読み込みの実装によるパフォーマンスの向上は、XSD ベースのアダプティブフォームでの向上に比べて、相対的に小さくなります。
 * ルートパネルの&#x200B;**[!UICONTROL レスポンシブ - ナビゲーションを使用せず、すべてを 1 ページに集約]**&#x200B;レイアウトを使用するアダプティブフォームのフラグメントに遅延読み込みを設定しないでください。レスポンシブレイアウト設定の結果、すべてのフラグメントがアダプティブフォームに同時に読み込まれます。パフォーマンスが低下する可能性もあります。
 * アダプティブフォームの読み込み時に表示する最初のパネル内のフラグメントに対しては遅延読み込みを設定しないことをお勧めします。
 * 遅延読み込みは、フラグメント階層の最大 2 レベルまでサポートされます。

@@ -1,11 +1,11 @@
 ---
 title: ページの公開
-description: AEMの様々なメカニズムを使用して、ページを公開および非公開にする方法を説明します。
+description: AEM の様々なメカニズムを使用して、ページを公開および非公開にする方法について説明します。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: 00520bff0f3b0d36610d8601077198856c8b71dd
 workflow-type: tm+mt
 source-wordcount: '1927'
-ht-degree: 85%
+ht-degree: 93%
 
 ---
 
@@ -74,7 +74,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
    * 公開する参照がない場合、ページが直接公開されます。
    * 公開が必要な参照がページに含まれている場合は、それらのリストが&#x200B;**公開**&#x200B;ウィザードに表示され、ウィザードで次のいずれかを実行できます。
-      * ページと一緒に公開するアセットやタグなどを指定し、 **公開** をクリックしてプロセスを完了します。
+      * ページと一緒に公開するアセットやタグなどを指定し、「**公開**」を使用してプロセスを完了します。
       * 「**キャンセル**」を使用してアクションを中止します。
 
    ![ページでの参照の公開](/help/sites-cloud/authoring/assets/publishing-references.png)
@@ -93,7 +93,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 >[!NOTE]
 >
->アクセスしたページ [エイリアス](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) エディターで公開できない。 エディターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
+>エディターで[エイリアス](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)を使用してアクセスしたページは公開できません。エディターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
 
 ### コンソールからの公開 {#publishing-from-the-console}
 
@@ -108,7 +108,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 クイック公開でページを公開するには、次の手順に従います。
 
-1. サイトコンソールで 1 つ以上のページを選択し、 **クイック公開** 」ボタンをクリックします。
+1. サイトコンソールで 1 つ以上のページを選択し、「**クイック公開**」ボタンをクリックします。
 
    ![公開するページの選択](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -136,7 +136,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 公開を管理を使用してページを公開または非公開にするには、次の手順を実行します。
 
-1. サイトコンソールで 1 つ以上のページを選択し、 **公開を管理** 」ボタンをクリックします。
+1. サイトコンソールで 1 つまたは複数のページを選択し、「**公開を管理**」ボタンをクリックします。
 
    ![公開するページの選択](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -240,17 +240,17 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 ### エディターから非公開にする {#unpublishing-from-the-editor}
 
-ページの編集時に、そのページを非公開にする場合は、「 **ページを非公開にする** （内） **ページ情報** メニューは、 [ページを公開する](#publishing-from-the-editor).
+ページを編集する際に、そのページを非公開にする場合、**ページを公開**&#x200B;する際と同じように、**ページ情報**&#x200B;メニューで「[ページを非公開](#publishing-from-the-editor)」を選択します。
 
 >[!NOTE]
 >
->アクセスしたページ [エイリアス](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) エディターで非公開にすることはできません。 エディターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
+>エディターで[エイリアス](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)を使用してアクセスしたページは、非公開にすることができません。エディターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
 
 ### コンソールから非公開にする {#unpublishing-from-the-console}
 
-[「公開を管理」オプションを使用して公開する](#manage-publication)場合と同様に、「公開を管理」オプションを使用して非公開にできます。
+[「公開を管理」オプションを使用して公開する](#manage-publication)場合と同様に、「公開を管理」オプションを使用して非公開にすることもできます。
 
-1. サイトコンソールで 1 つ以上のページを選択し、 **公開を管理** 」ボタンをクリックします。
+1. サイトコンソールで 1 つまたは複数のページを選択し、「**公開を管理**」ボタンをクリックします。
 1. **公開を管理**&#x200B;ウィザードが起動します。最初の手順の&#x200B;**オプション**&#x200B;で、デフォルトオプションの&#x200B;**公開**&#x200B;の代わりに&#x200B;**非公開**&#x200B;を選択します。
 
    ![非公開 - オプション](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
@@ -274,7 +274,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 サイトコンソールにある「[公開を管理](#manage-publication)」オプションを使用すると、これを行うことができます。
 
-1. サイトコンソールで、公開または非公開にするツリーのルートページを選択し、「 」を選択します。 **公開を管理**.
+1. サイトコンソールで、公開または非公開するツリーのルートページを選択し、「**公開を管理**」を選択します。
 1. **公開を管理**&#x200B;ウィザードが起動します。公開または非公開および実行するタイミングを選択して、「**次へ**」を選択して続行します。
 1. **範囲**&#x200B;の手順で、ルートページを選択して、「**子を含める**」を選択します。
 

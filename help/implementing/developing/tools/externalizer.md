@@ -1,17 +1,17 @@
 ---
 title: URL の外部化
-description: Externalizer は、プログラムによってリソースパスを外部および絶対 URL に変換できる OSGi サービスです。
+description: Externalizer は、プログラムによってリソースパスを外部の絶対 URL に変換できる OSGi サービスです。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 83%
+ht-degree: 98%
 
 ---
 
 # URL の外部化 {#externalizing-urls}
 
-AEMで、 **Externalizer** は、リソースパス ( 例えば、 `/path/to/my/page`) を外部 URL や絶対 URL( 例えば、 `https://www.mycompany.com/path/to/my/page`) を追加する必要があります。
+AEM の **Externalizer** は、あらかじめ設定された DNS をプレフィックスとして、リソースパス（例えば `/path/to/my/page`）をプログラム的に外部の絶対 URL（例えば `https://www.mycompany.com/path/to/my/page`）に変換できる OSGi サービスです。
 
 AEM as a Cloud Service インスタンスには自分の外部向け URL がわからず、また、場合によってはリンクをリクエストスコープの範囲外で作成する必要があるので、このサービスは、そのような外部 URL を設定して作成するための一元的な場所を提供します。
 
@@ -44,7 +44,7 @@ Externalizer サービスはすぐに使用でき、いくつかのドメイン�
 
 ## Externalizer サービスの設定 {#configuring-the-externalizer-service}
 
-Externalizer サービスを使用すると、リソースパスをプログラムでプレフィックス付けする際に使用できるドメインを一元的に定義できます。 Externalizer サービスは、1 つのドメインを持つアプリケーションにのみ使用してください。
+Externalizer サービスでは、プログラムでリソースパスにプレフィックスを付けるために使用可能なドメインを一元的に定義できます。Externalizer サービスは、1 つのドメインを持つアプリケーションにのみ使用してください。
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ Externalizer サービスのドメインマッピングを定義するには：
 
    * **`scheme`** は通常、http または https ですが、別のプロトコルを指定することもできます。
 
-      * Adobeでは、https リンクを強制するために https を使用することをお勧めします。
+      * アドビでは、https を使用して https リンクを強制適用することをお勧めします。
       * URL の外部化を要求する際にクライアントコードがスキームを上書きしない場合に使用されます。
 
    * **`server`** はホスト名（ドメイン名または IP アドレス）です。
@@ -89,7 +89,7 @@ Externalizer サービスのドメインマッピングを定義するには：
 
    >[!NOTE]
    >
-   >カスタム設定を使用すると、新しいカテゴリ ( 例： `production`, `staging` または外部の非AEMシステム ( `my-internal-webservice`. このような URL をプロジェクトのコードベースの様々な場所にハードコーディングするのを防ぐのに役立ちます。
+   >カスタム設定を使用すると、`production` や `staging` などの新しいカテゴリまたは `my-internal-webservice` などの AEM 以外の外部システムを追加できます。このような URL をプロジェクトのコードベースの様々な場所にハードコーディングするのを防ぐのに役立ちます。
 
 1. 「**保存**」をクリックして変更を保存します。
 

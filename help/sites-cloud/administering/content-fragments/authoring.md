@@ -1,13 +1,13 @@
 ---
 title: コンテンツフラグメントのオーサリング
-description: コンテンツフラグメントのコンテンツを作成する方法を理解し、目的に応じてそのコンテンツのバリエーションを作成します。 これにより、ヘッドレス配信とページオーサリングの両方の柔軟性が向上します。
+description: コンテンツフラグメントのコンテンツを作成する方法を理解し、目的に応じてそのコンテンツのバリエーションを作成します。 これにより、ヘッドレス配信とページオーサリングの両方で柔軟性が向上します。
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
 source-wordcount: '2266'
-ht-degree: 5%
+ht-degree: 96%
 
 ---
 
@@ -15,419 +15,419 @@ ht-degree: 5%
 
 コンテンツフラグメントのオーサリングは、ヘッドレス配信とページオーサリングの両方に焦点を当てています。
 
-コンテンツフラグメントには 2 つのエディターを使用できます。 この節で説明するエディター：
+コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。この節で説明するエディターは、
 
-* は、ヘッドレスコンテンツ配信用に開発されています（ただし、すべてのシナリオで使用できます）。
-* は、 **コンテンツフラグメント** コンソール
+* ヘッドレスコンテンツ配信用に開発されています（ただし、すべてのシナリオで使用できます）。
+* **コンテンツフラグメント**&#x200B;コンソールから使用できます。
 
-このエディターでは、次の情報が表示されます。
+このエディターで提供する機能は次のとおりです。
 
-* [自動保存](#saving-autosaving)：誤って編集内容が失われるのを防ぎます。
-* [コンテンツ参照としてのアセットのインラインアップロード](#reference-images)を使用する必要がありますが、最初に Asset DAM にアップロードする必要はありません。
-* [プレビュー](#preview-content-fragment) コンテンツフラグメントによって配信されるレンダリングされたエクスペリエンスの
-* 次の機能を持つ [公開](#publish-content-fragment) および [非公開](#unpublish-content-fragment) をクリックします。
-* 次の機能を持つ [関連付けられた言語コピーを表示して開く](#view-language-copies) 」と入力します。
-* 次の機能を持つ [バージョンの詳細を表示](#view-version-history) 」と入力します。 選択したバージョンに戻すこともできます。
-* 次の機能を持つ [親参照を表示して開く](#view-parent-references).
-* コンテンツフラグメントの階層表示とその参照 ( [構造ツリー](#structure-tree).
+* [自動保存](#saving-autosaving)：誤って編集内容が失われることを防ぎます。
+* [コンテンツ参照としてのアセットのインラインアップロード](#reference-images)で、最初にアセット DAM にアップロードする必要はありません。
+* コンテンツフラグメントによって配信されるレンダリングされたエクスペリエンスの[プレビュー](#preview-content-fragment)。
+* エディターから[公開](#publish-content-fragment)および[非公開](#unpublish-content-fragment)する機能。
+* エディターで[関連付けられた言語コピーを表示して開く](#view-language-copies)機能。
+* エディターで[バージョンの詳細を表示](#view-version-history)する機能。選択したバージョンに戻すこともできます。
+* [親参照を表示して開く](#view-parent-references)機能。
+* [構造ツリー](#structure-tree)を使用したコンテンツフラグメントの階層表示とその参照。
 
 >[!WARNING]
 >
->この節で説明するエディターは、です。 *のみ* 次の場所で使用可能： *オンライン* Adobe Experience Manager(AEM)as a Cloud Service。
+>この節で説明するエディターは、*オンライン*&#x200B;の Adobe Experience Manager（AEM）as a Cloud Service で&#x200B;*のみ*&#x200B;使用できます。
 
 ## コンテンツフラグメントエディター {#content-fragment-editor}
 
-コンテンツフラグメントエディターを初めて開くと、次の 4 つの主な領域が表示されます。
+コンテンツフラグメントエディターを初めて開くと、次の 4 つの主なエリアが表示されます。
 
 * 上部のツールバー：主要な情報とアクション
    * コンテンツフラグメントコンソールへのリンク（ホームアイコン）
    * モデルとフォルダーに関する情報
-   * リンク先 [プレビュー（モデルにデフォルトのプレビュー URL パターンが設定されている場合）](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
-   * [公開](#publish-content-fragment)、および [非公開](#unpublish-content-fragment) アクション
-   * すべてを表示するオプション **親参照** （リンクアイコン）
-   * フラグメント **[ステータス](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**、最後に保存した情報
-   * 元の（アセットベースの）エディターに切り替える切り替え
+   * [プレビュー（モデルにデフォルトのプレビュー URL パターンが設定されている場合）](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)へのリンク
+   * [公開](#publish-content-fragment)および[非公開](#unpublish-content-fragment)アクション
+   * すべての&#x200B;**親参照**&#x200B;を表示するオプション（リンクアイコン）
+   * フラグメント&#x200B;**[ステータス](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**、および最後に保存した情報
+   * 元の（アセットベースの）エディターへの切替えスイッチ
 
      >[!WARNING]
      >
-     >元のエディターが同じタブに開きます。 両方のエディターを同時に開くことはお勧めしません。
+     >元のエディターが同じタブに開きます。両方のエディターを同時に開くことはお勧めしません。
 
-* 左側のパネル：表示 **[バリエーション](#variations)** コンテンツフラグメントとその **フィールド**:
-   * これらのリンクは、 [コンテンツフラグメント構造に移動する](#navigate-structure)
-* 右パネル：タブを表示します。 [プロパティ（メタデータ）とタグの表示](#view-properties-tags)、 [バージョン履歴](#view-version-history)、および [言語コピー](#view-language-copies)
-   * （内） **プロパティ** タブを更新するには、 **タイトル** および **説明** フラグメントの場合は、 **バリエーション**
+* 左側のパネル：コンテンツフラグメントの&#x200B;**[バリエーション](#variations)**&#x200B;およびその&#x200B;**フィールド**&#x200B;が表示されます。
+   * これらのリンクを使用して、[コンテンツフラグメント構造に移動](#navigate-structure)できます。
+* 右側のパネル：[プロパティ（メタデータ）とタグを表示](#view-properties-tags)するタブ、[バージョン履歴](#view-version-history)および[言語コピー](#view-language-copies)に関する情報を表示します。
+   * 「**プロパティ**」タブでは、フラグメントの&#x200B;**タイトル**&#x200B;および&#x200B;**説明**&#x200B;または&#x200B;**バリエーション**&#x200B;を更新できます
 * 中央パネル：選択したバリエーションの実際のフィールドとコンテンツを表示します
    * コンテンツの編集が可能
-   * if **タブプレースホルダー** フィールドは、ここに表示されるモデル内で定義され、ナビゲーションに使用できます。フィールドは、水平方向に表示されるか、ドロップダウンリストとして表示されます。
+   * 「**タブプレースホルダー**」フィールドは、ここに表示されるモデル内で定義され、ナビゲーションに使用できる場合、フィールドは、水平方向に表示されるか、ドロップダウンリストとして表示されます。
 
   >[!NOTE]
   >
   >基になるモデルの定義に応じて、フィールドは特定のタイプの [検証](/help/assets/content-fragments/content-fragments-models.md#validation).
 
-![コンテンツフラグメントエディター — 概要](assets/cf-authoring-overview.png)
+![コンテンツフラグメントエディター - 概要](assets/cf-authoring-overview.png)
 
-## コンテンツフラグメント構造に移動する {#navigate-structure}
+## コンテンツフラグメント構造のナビゲート {#navigate-structure}
 
-単一のコンテンツフラグメント
+単一のコンテンツフラグメント。
 
 * 次の 2 つのレベルで構成されます。
 
-   * **[バリエーション](#variations)** コンテンツフラグメントの
-   * **フィールド**  — コンテンツフラグメントモデルで定義され、すべてのバリエーションで使用されます。
+   * コンテンツフラグメントの&#x200B;**[バリエーション](#variations)**
+   * **フィールド** - コンテンツフラグメントモデルで定義され、すべてのバリエーションで使用されます。
 
 * 様々な参照を含めることができます。
 
-### バリエーションとフィールド {#variations-and-fields}
+### バリエーションおよびフィールド {#variations-and-fields}
 
 左側のパネルには、次の情報が表示されます。
 
-* リスト **[バリエーション](#variations)** このフラグメント用に作成された
-   * **メイン** は、コンテンツフラグメントの最初の作成時に存在するバリエーションです。後で他のバリエーションを追加できます。
-   * バリエーションを選択して開き、編集できます。
-   * また、 [バリエーションを作成](#create-variation)
-* の **フィールド** フラグメント内とそのバリエーション内：
-   * アイコンは、 [データタイプ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
-   * テキストはフィールド名です。
-   * これらを組み合わせると、（現在のバリエーションの）中央パネルのフィールドコンテンツへの直接リンクが提供されます。
+* このフラグメントに作成された&#x200B;**[バリエーション](#variations)**&#x200B;のリスト。
+   * **メイン**&#x200B;は、コンテンツフラグメントの最初の作成時に存在するバリエーションです。後で他のバリエーションを追加できます
+   * バリエーションを選択して開き、編集できます
+   * また、[バリエーションを作成](#create-variation)できます
+* フラグメント内の&#x200B;**フィールド**&#x200B;とそのバリエーションは、次のとおりです。
+   * アイコンは、[データタイプ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)を示します
+   * テキストはフィールド名です
+   * これらを組み合わせると、（現在のバリエーションの）中央パネルのフィールドコンテンツへの直接リンクが提供されます
 
-### リンク先に移動 {#follow-links}
+### リンクへの移動 {#follow-links}
 
-エディターの様々な部分で、リンクアイコンが表示されます。 これを使用して、表示される項目（コンテンツフラグメントモデル、親参照、参照されているフラグメントなど）を開くことができます。
+エディターの様々な部分で、リンクアイコンが表示されます。これを使用して、表示される項目（コンテンツフラグメントモデル、親参照、参照されているフラグメントなど）を開くことができます。
 
-![コンテンツフラグメントエディター — リンクアイコン](assets/cf-authoring-link-icon.png)
+![コンテンツフラグメントエディター - リンクアイコン](assets/cf-authoring-link-icon.png)
 
 ### 構造ツリー {#structure-tree}
 
-を開きます。 **構造ツリー** 」タブをクリックして、コンテンツフラグメントの階層構造とその参照を表示します。 リンクアイコンを使用して参照に移動します。
+エディターのツールバーから「**構造ツリー**」タブを開いて、コンテンツフラグメントの階層構造とその参照を表示します。リンクアイコンを使用して参照に移動します。
 
-![コンテンツフラグメントエディター — 構造ツリー](assets/cf-authoring-structure-tree.png)
+![コンテンツフラグメントエディター - 構造ツリー](assets/cf-authoring-structure-tree.png)
 
 >[!NOTE]
 >
->詳しくは、 [コンテンツフラグメント構造の分析 — 構造ツリー](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree) を参照してください。
+>詳しくは、[コンテンツフラグメント構造の分析 - 構造ツリー](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree)を参照してください。
 
 ## 保存と自動保存 {#saving-autosaving}
 
 <!-- CHECK: cannot be saved, no undo, redo -->
 
-更新をおこなうたびに、コンテンツフラグメントが自動的に保存されます。 最後に保存した時間が上部のツールバーに表示されます。
+更新を行うたびに、コンテンツフラグメントが自動的に保存されます。最後に保存した時間が上部のツールバーに表示されます。
 
 ## バリエーション {#variations}
 
-[バリエーション](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) は、AEMコンテンツフラグメントの重要な機能です。 これにより、 **メイン** 特定のチャネルやシナリオで使用するコンテンツ。ヘッドレスなコンテンツ配信やページオーサリングをより柔軟におこなえます。
+[バリエーション](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations)は、AEM のコンテンツフラグメントの重要な機能です。これにより、特定のチャネルやシナリオで使用する&#x200B;**メイン**&#x200B;コンテンツのコピーを作成および編集でき、ヘッドレスコンテンツ配信やページオーサリングをより柔軟に行うことができます。
 
 エディターから、次の操作を実行できます。
 
-* [バリエーションを作成](#create-variation) の **メイン** コンテンツ
+* **メイン**&#x200B;コンテンツの[バリエーションを作成](#create-variation)
 
 * コンテンツの編集に必要なバリエーションを選択
 
 * [バリエーションの名前を変更](#rename-variation)
 
-* [バリエーションの削除](#delete-variation)
+* [バリエーションを削除](#delete-variation)
 
 ### バリエーションを作成 {#create-variation}
 
-コンテンツフラグメントのバリエーションを作成するには：
+コンテンツフラグメントのバリエーションを作成するには、次の手順に従います。
 
-1. 左側のパネルで、 **プラス記号** (**バリエーションを作成**) の右側にある **バリエーション**.
+1. 左側のパネルで、**バリエーション**&#x200B;の右側にある&#x200B;**プラス記号**（**バリエーションを作成**）を選択します。
 
    >[!NOTE]
    >
    >最初のバリエーションを作成すると、既存のバリエーションが同じパネルに表示されます。
 
-   ![コンテンツフラグメントエディター — 最初のバリエーションを作成する](assets/cf-authoring-create-variation-01.png)
+   ![コンテンツフラグメントエディター - 最初のバリエーションの作成](assets/cf-authoring-create-variation-01.png)
 
-1. ダイアログで、 **タイトル** のバリエーションに対して、 **説明** 必要に応じて、
+1. ダイアログで、必要に応じて、バリエーションの&#x200B;**タイトル**&#x200B;および&#x200B;**説明**&#x200B;を入力します。
 
-   ![コンテンツフラグメントエディター — バリエーションを作成ダイアログ](assets/cf-authoring-create-variation-02.png)
+   ![コンテンツフラグメントエディター - バリエーションを作成ダイアログ](assets/cf-authoring-create-variation-02.png)
 
-1. **作成** バリエーション。 リストに表示されます。
+1. バリエーションを&#x200B;**作成**&#x200B;します。作成したバリエーションがリストに表示されます。
 
-### バリエーションの名前を変更 {#rename-variation}
+### バリエーションの名前の変更 {#rename-variation}
 
-の名前を変更するには **バリエーション**:
+**バリエーション**&#x200B;の名前を変更するには、次の手順に従います。
 
 1. 必要なバリエーションを選択します。
 
-1. を開きます。 **プロパティ** 」タブを右側のパネルに表示します。
+1. 右側のパネルの「**プロパティ**」タブをを開きます。
 
-1. バリエーションを更新 **タイトル**.
+1. バリエーション&#x200B;**タイトル**&#x200B;を更新します。
 
-1. 次のいずれかを押します。 **戻る** または、別のフィールドに移動して、変更を自動保存します。 タイトルは **バリエーション** パネルが左側に表示されます。
+1. 「**戻る**」を押すか、別のフィールドに移動して、変更を自動保存します。左側の&#x200B;**バリエーション**&#x200B;パネルでタイトルが更新されます。
 
 
-### バリエーションの削除 {#delete-variation}
+### バリエーションを削除 {#delete-variation}
 
-コンテンツフラグメントのバリエーションを削除するには：
+コンテンツフラグメントのバリエーションを削除するには、次の手順に従います。
 
 >[!NOTE]
 >
->を削除することはできません **メイン**.
+>**メイン**&#x200B;は削除できません。
 
 1. 「バリエーション」を選択します。
 
-1. Adobe Analytics の **バリエーション** パネルで、削除アイコン（ごみ箱）を選択します。
+1. **バリエーション**&#x200B;パネルで、削除アイコン（ごみ箱）を選択します。
 
-   ![コンテンツフラグメントエディター — バリエーションを削除アイコン](assets/cf-authoring-delete-variation.png)
+   ![コンテンツフラグメントエディター - バリエーションを削除アイコン](assets/cf-authoring-delete-variation.png)
 
-1. ダイアログが表示されます。選択 **削除** をクリックしてアクションを確定します。
+1. ダイアログが表示されます。「**作成**」を選択して、アクションを確定します。
 
-## 複数行テキストフィールドの編集 — プレーンテキストまたは Markdown {#edit-multi-line-text-fields-plaintext-markdown}
+## 複数行テキストフィールドの編集 - プレーンテキストまたはマークダウン {#edit-multi-line-text-fields-plaintext-markdown}
 
-**[複数行テキスト](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** フィールドは、次の 3 つの形式のいずれかを持つことができます。
+**[複数行テキスト](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**&#x200B;フィールドは、次の 3 つの形式のいずれかを持つことができます。
 
 * プレーンテキスト
 * [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
 * [リッチテキスト](#edit-multi-line-text-fields-rich-text)
 
-「プレーンテキスト」または「Markdown」として定義されたフィールドには、（画面上の）書式設定オプションのないシンプルなテキストボックスがあります。
+「プレーンテキスト」または「マークダウン」として定義されたフィールドには、（画面上の）書式設定オプションのないシンプルなテキストボックスがあります。
 
-![コンテンツフラグメントエディター — 複数行テキスト — 全画面表示](assets/cf-authoring-multilinetext-plaintext-markdown.png)
+![コンテンツフラグメントエディター - 複数行テキスト - 全画面表示](assets/cf-authoring-multilinetext-plaintext-markdown.png)
 
-## 複数行テキストフィールドを編集 — リッチテキスト {#edit-multi-line-text-fields-rich-text}
+## 複数行テキストフィールドの編集 - リッチテキスト {#edit-multi-line-text-fields-rich-text}
 
-の場合 **[複数行テキスト](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** 次のように定義されたフィールド **リッチテキスト**&#x200B;には、様々な機能を使用できます。
+**リッチテキスト**&#x200B;として定義された&#x200B;**[複数行テキスト](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**&#x200B;フィールドでは、様々な機能を使用できます。
 
 * コンテンツを編集します。
-   * 取り消し/やり直し
-   * テキストとして貼り付け/貼り付け
+   * 取り消し／やり直し
+   * ペースト／テキストとしてペースト
    * コピー
    * 段落書式を選択
-   * テーブルを作成/管理
-   * テキストの書式設定；太字、斜体、下線、色
-   * 段落の配置を設定
-   * リストの作成/管理（箇条書き、番号付き）
-   * テキストをインデント、減らす、増やす
-   * 現在の書式をクリア
+   * テーブルを作成／管理
+   * テキストの書式設定（太字、斜体、下線、色）
+   * 段落の整列を設定
+   * リスト（箇条書き、番号付き）を作成／管理
+   * テキストをインデント（減らす、増やす）
+   * 現在の書式設定をクリア
    * リンクを挿入
    * 画像アセットへの参照を選択して挿入
-   * 特殊文字を追加する
-* [全画面表示エディター](#full-screen-editor-rich-text)  — フルスクリーンとインフローを切り替える
+   * 特殊文字を追加
+* [全画面表示エディター](#full-screen-editor-rich-text) - 全画面とインフローの切り替え
 * [統計](#statistics-rich-text)
 * [比較と同期](#compare-and-synchronize-rich-text)
 
-例：
+次に例を示します。
 
-![コンテンツフラグメントエディター — 複数行テキスト — 全画面表示切り替え](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
+![コンテンツフラグメントエディター - 複数行テキスト - 全画面表示切り替え](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
 
 >[!NOTE]
 >
->複数行テキストフィールドも、適切な [アイコン](#fields-datatypes-icons) （内） **フィールド** パネル。
+>複数行テキストフィールドも、**フィールド**&#x200B;パネルに適切な[アイコン](#fields-datatypes-icons)で示されます。
 
-### 全画面表示エディター — リッチテキスト {#full-screen-editor-rich-text}
+### 全画面表示エディター - リッチテキスト {#full-screen-editor-rich-text}
 
-全画面表示エディターでは、インフロー時と同じ編集オプションを提供しますが、テキスト用のスペースが増えます。
+全画面表示エディターでは、インフロー時と同じ編集オプションを提供しますが、テキスト用のスペースがより広くなります。
 
-例：
+次に例を示します。
 
-![コンテンツフラグメントエディター — 複数行テキスト — 全画面表示](assets/cf-authoring-multilinetext-fullscreen.png)
+![コンテンツフラグメントエディター - 複数行テキスト - 全画面表示](assets/cf-authoring-multilinetext-fullscreen.png)
 
-### 統計 — リッチテキスト {#statistics-rich-text}
+### 統計 - リッチテキスト {#statistics-rich-text}
 
-アクション **統計** [ 複数行 ] フィールドに、テキストに関する情報の範囲を表示します。
+アクション&#x200B;**統計**&#x200B;は、「複数行」フィールドに、テキストに関する様々な情報を表示します。
 
-例：
+次に例を示します。
 
-![コンテンツフラグメントエディター — 統計](assets/cf-authoring-multilinetext-statistics.png)
+![コンテンツフラグメントエディター - 統計](assets/cf-authoring-multilinetext-statistics.png)
 
-### 比較と同期 — リッチテキスト {#compare-and-synchronize-rich-text}
+### 比較と同期 - リッチテキスト {#compare-and-synchronize-rich-text}
 
-アクション **比較** は、 **バリエーション** を開きます。
+アクション&#x200B;**比較**&#x200B;は、**バリエーション**&#x200B;を開いた際に「複数行」フィールドで使用できます。
 
-これにより、複数行フィールドがフルスクリーンで開き、次の操作がおこなわれます。
+これにより、「複数行」フィールドが全画面表示で開き、次のように表示されます。
 
-* 両方のコンテンツを表示 **メイン** そして現在の **バリエーション** 並行して、違いが強調されている
+* **メイン**&#x200B;と現在の&#x200B;**バリエーション**&#x200B;の両方のコンテンツを横に並べ、違いをハイライト表示する
 
-* 違いは色で示されます。
+* 次の色で違いを示す：
 
    * 緑は（バリエーションに）追加されたコンテンツを示します
    * 赤は削除されたコンテンツを示します（バリエーションからの削除）
    * 青は置換されたテキストを示します
 
-* には、 **同期** アクション：コンテンツを同期します。 **メイン** 現在のバリエーションに
+* **メイン**&#x200B;から現在のバリエーションにコンテンツを同期する&#x200B;**同期**&#x200B;アクションを提供する
 
-   * if **メイン** が更新された場合、これらの変更はバリエーションに転送されます
-   * バリエーションが更新されている場合、これらの変更は **メイン**
+   * **メイン**&#x200B;が更新された場合、これらの変更はバリエーションに転送される
+   * バリエーションが更新された場合、これらの変更は&#x200B;**メイン**&#x200B;からコンテンツによって上書きされる
 
   >[!CAUTION]
   >
-  >同期を使用できるのは、変更をコピーする場合のみです *から&#x200B;**メイン**バリエーションに*.
+  >同期を使用できるのは、***メイン**からバリエーションに*&#x200B;変更内容をコピーする場合のみです。
   >
-  >変更の転送 *～の変化から&#x200B;**メイン*** はオプションとして使用できません。
+  >*バリエーションから&#x200B;**メイン***への変更内容を転送することはオプションとして使用できません。
 
-例えば、バリエーションコンテンツが完全に書き換えられたシナリオの場合、同期によってその新しいコンテンツが、 **メイン**:
+例えば、バリエーションコンテンツが完全に書き換えられたシナリオの場合、同期によってその新しいコンテンツが&#x200B;**メイン**&#x200B;からのコンテンツに置き換わります。
 
-![コンテンツフラグメントエディター — 比較と同期](assets/cf-authoring-multilinetext-compare.png)
+![コンテンツフラグメントエディター - 比較と同期](assets/cf-authoring-multilinetext-compare.png)
 
-## 参照を管理 {#manage-references}
+## 参照の管理 {#manage-references}
 
 ### フラグメント参照 {#fragment-references}
 
-[フラグメント参照](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#fragment-reference-nested-fragments) は、次の目的で使用できます。
+[フラグメント参照](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#fragment-reference-nested-fragments)は、次の目的で使用できます。
 
 * [既存のコンテンツフラグメントへの参照を作成する](#create-reference-existing-content-fragment)
-* [コンテンツフラグメントを作成し、それを参照します。](#create-reference-content-fragment)
+* [コンテンツフラグメントを作成し、それを参照する](#create-reference-content-fragment)
 
 #### 既存のコンテンツフラグメントへの参照を作成する {#create-reference-existing-content-fragment}
 
-既存のコンテンツフラグメントへの参照を作成するには：
+既存のコンテンツフラグメントへの参照を作成するには、次の手順に従います。
 
-1. 「 」フィールドを選択します。
-1. 選択 **既存のフラグメントを追加**.
+1. フィールドを選択します。
+1. 「**既存のフラグメントを追加**」を選択します。
 1. フラグメントセレクターから必要なフラグメントを選択します。
 
    >[!NOTE]
    >
    >一度に 1 つのフラグメントのみを選択できます。
 
-#### コンテンツフラグメントを作成し、参照します。 {#create-reference-content-fragment}
+#### コンテンツフラグメントおよび参照の作成 {#create-reference-content-fragment}
 
-または、 [選択 **新しいフラグメントを作成** 開く **作成** ダイアログ](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment). 作成されたフラグメントは、参照されます。
+または、[「**新規フラグメントを作成**」を選択して、**作成**&#x200B;ダイアログを開く](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)ことができます。作成後、このフラグメントは参照されます。
 
 ### コンテンツ参照 {#content-references}
 
-[コンテンツ参照](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference) は、画像、ページ、エクスペリエンスフラグメントなど、他のAEMコンテンツタイプを参照するために使用されます。
+[コンテンツ参照](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)は、画像、ページ、エクスペリエンスフラグメントなど、他の AEM コンテンツタイプを参照するのに使用されます。
 
 #### 参照画像 {#reference-images}
 
-In **コンテンツ参照** 次の両方を実行できるフィールド：
+「**コンテンツ参照**」フィールドでは、次の両方を実行できます。
 
-* リポジトリに既に存在する参照アセット
-* フィールドに直接アップロードするので、 **Assets** アップロードするコンソール
+* リポジトリに既に存在するアセットを参照する
+* フィールドに直接アップロードするので、**アセット**&#x200B;コンソールを使用せずにアップロードする
 
   >[!NOTE]
   >
-  >画像を **コンテンツ参照** フィールド、 **必須**:
+  >画像を直接「**コンテンツ参照**」フィールドにアップロードする際&#x200B;**必須**&#x200B;事項は、次のとおりです。
   >
-  >* 持っている **ルートパス** ( [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)) をクリックします。 画像を保存する場所を指定します。
-  >* 含める **画像** （許可されたコンテンツタイプのリスト）
+  >* [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)に&#x200B;**ルートパス**&#x200B;が定義されていること画像を保存する場所を指定します。
+  >* 許可されたコンテンツタイプのリストに&#x200B;**画像**&#x200B;が含められていること
 
 アセットを追加するには、次のいずれかを実行します。
 
-* 新しいアセットファイルを（例えば、ファイルシステムから） **コンテンツ参照** フィールド
-* を使用します。 **アセットを追加** 「 」アクションを選択して、次のいずれかを選択します。 **アセットを参照** または **アップロード** をクリックして、使用する適切なセレクターを開きます。
+* 新しいアセットファイルを（例えば、ファイルシステムから）「**コンテンツ参照**」フィールドに直接ドラッグ＆ドロップします
+* **アセットを追加**&#x200B;アクションを選択して、「**アセットを参照**」または「**アップロード**」を選択して、使用する適切なセレクターを開きます。
 
-  ![コンテンツフラグメントエディター — アセットオプションを追加](assets/cf-authoring-add-asset-options.png)
+  ![コンテンツフラグメントエディター - アセットオプションの追加](assets/cf-authoring-add-asset-options.png)
 
 #### 参照ページ {#reference-pages}
 
-AEMページ、エクスペリエンスフラグメントまたはその他のコンテンツタイプへの参照を追加するには、次の手順を実行します。
+AEM ページ、エクスペリエンスフラグメントまたはその他のコンテンツタイプへの参照を追加するには、次の手順を実行します。
 
-1. 選択 **コンテンツのパスを追加**.
+1. 「**コンテンツのパスを追加**」を選択します。
 
 1. 入力フィールドに必要なパスを追加します。
 
-1. 次で確認： **追加**.
+1. 「**追加**」で確定します。
 
-### 親参照を表示 {#view-parent-references}
+### 親参照の表示 {#view-parent-references}
 
 上部のツールバーでリンクアイコンを選択すると、すべての親参照のリストが開きます。
 
-例：
+次に例を示します。
 
-![コンテンツフラグメントエディター — 参照を表示](assets/cf-authoring-show-references-link.png)
+![コンテンツフラグメントエディター - 参照の表示](assets/cf-authoring-show-references-link.png)
 
-ウィンドウが開き、関連するすべての参照が表示されます。 参照を開くには、名前、タイトル、またはリンクアイコンを選択します。
+ウィンドウが開き、関連するすべての参照が表示されます。参照を開くには、名前、タイトルまたはリンクアイコンを選択します。
 
-例：
+次に例を示します。
 
-![コンテンツフラグメントエディター — 参照を表示](assets/cf-authoring-show-references.png)
+![コンテンツフラグメントエディター - 参照の表示](assets/cf-authoring-show-references.png)
 
-## プロパティとタグを表示する {#view-properties-tags}
+## プロパティおよびタグの表示 {#view-properties-tags}
 
-右側のパネルの「プロパティ」タブでは、プロパティ（メタデータ）とタグを表示できます。 プロパティは次のいずれかになります。
+右側のパネルの「プロパティ」タブでは、プロパティ（メタデータ）とタグを表示できます。プロパティは次のいずれかになります。
 
-* （の） **コンテンツフラグメント** - if **メイン** は現在選択されています
-* 特定の **バリエーション**
+* **コンテンツフラグメント** - **メイン**&#x200B;が現在選択されている場合
+* 特定の&#x200B;**バリエーション**
 
-![コンテンツフラグメントエディター — プロパティ](assets/cf-authoring-properties.png)
+![コンテンツフラグメントエディター - プロパティ](assets/cf-authoring-properties.png)
 
-### プロパティとタグを編集 {#edit-properties-tags}
+### プロパティおよびタグの編集 {#edit-properties-tags}
 
-「プロパティ」タブ（右パネル）では、次の項目も編集できます。
+「プロパティ」タブ（右側のパネル）では、次の項目も編集できます。
 
 * **タイトル**
 * **説明**
-* **タグ**：ドロップダウンリストまたは選択ダイアログの使用
+* **タグ**：ドロップダウンリストまたは選択ダイアログを使用
 
-  ![コンテンツフラグメントエディター — タグを管理](assets/cf-authoring-edit-tags.png)
+  ![コンテンツフラグメントエディター - タグの管理](assets/cf-authoring-edit-tags.png)
 
 ### コンテンツフラグメントモデルを開く {#open-content-fragment-model}
 
-次の場合： **メイン** オンにすると、基になるコンテンツフラグメントモデルの名前が「プロパティ」セクションに表示されます。 リンクアイコンを選択すると、モデルが別のタブで開きます。
+「**メイン**」を選択した場合、基になるコンテンツフラグメントモデルの名前が「プロパティ」セクションに表示されます。リンクアイコンを選択すると、モデルが別のタブで開きます。
 
-例：
+次に例を示します。
 
-![コンテンツフラグメントエディター — コンテンツフラグメントモデルを開く](assets/cf-authoring-open-model.png)
+![コンテンツフラグメントエディター - コンテンツフラグメントモデルを開く](assets/cf-authoring-open-model.png)
 
 ## バージョン履歴の表示 {#view-version-history}
 
-Adobe Analytics の **バージョン履歴** 右のパネルの「 」タブに、現在のバージョンと以前のバージョンの詳細が表示されます。
+右側のパネルの「**バージョン履歴**」タブに、現在のバージョンと以前のバージョンの詳細が表示されます。
 
 >[!NOTE]
 >
 >コンテンツフラグメントの公開時に新しいバージョンが作成されます。
 
-![コンテンツフラグメントエディター — バージョン履歴の概要](assets/cf-authoring-version-history-overview.png)
+![コンテンツフラグメントエディター - バージョン履歴の概要](assets/cf-authoring-version-history-overview.png)
 
 ### 特定のバージョンに戻す {#revert-version}
 
 どのバージョンにも戻すことができます。
 
-特定のバージョンに戻すには：
+特定のバージョンに戻すには、次の手順に従います。
 
 1. バージョンの横にある 3 つのドットのアイコンを選択します。
 
-1. 選択 **元に戻す**.
+1. 「**元に戻す**」を選択します。
 
-![コンテンツフラグメントエディター — バージョン履歴を元に戻す](assets/cf-authoring-version-history-revert.png)
+![コンテンツフラグメントエディター - バージョン履歴を元に戻す](assets/cf-authoring-version-history-revert.png)
 
 ## 言語コピーの表示 {#view-language-copies}
 
-Adobe Analytics の **言語プロパティ** 関連する言語コピーのタブの詳細が表示されます。 リンクアイコンを選択すると、そのコピーが別のタブで開きます。
+関連する言語コピーの「**言語プロパティ**」タブの詳細が表示されます。リンクアイコンを選択すると、そのコピーが別のタブで開きます。
 
-例：
+次に例を示します。
 
-![コンテンツフラグメントエディター — 言語コピーを開く](assets/cf-authoring-open-language-copies.png)
+![コンテンツフラグメントエディター - 言語コピーを開く](assets/cf-authoring-open-language-copies.png)
 
 >[!NOTE]
 >
->コンテンツフラグメントの翻訳と言語コピーの作成について詳しくは、 [AEMヘッドレス翻訳ジャーニー](/help/journey-headless/translation/overview.md).
+>コンテンツフラグメントの翻訳と言語コピーの作成について詳しくは、[AEM ヘッドレス翻訳ジャーニー](/help/journey-headless/translation/overview.md)を参照してください。
 
 
-## フラグメントをプレビュー {#preview-content-fragment}
+## フラグメントのプレビュー {#preview-content-fragment}
 
-コンテンツフラグメントエディターを使用すると、編集内容を外部フロントエンドアプリケーションでプレビューするオプションを作成者に提供できます。
+コンテンツフラグメントエディターは、編集内容を外部フロントエンドアプリケーションでプレビューするオプションを作成者に提供します。
 
 この機能を使用するには、まず次の操作が必要です。
 
 * IT チームと協力して、JSON 出力を使用してコンテンツフラグメントをレンダリングする外部フロントエンドアプリケーションを設定します。
-* 外部フロントエンドアプリケーションが設定されると、 **デフォルトのプレビュー URL パターン** は、 [適切なコンテンツフラグメントモデルのプロパティ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
+* 外部フロントエンドアプリケーションが設定されると、**デフォルトのプレビュー URL パターン**&#x200B;は、[適切なコンテンツフラグメントモデルのプロパティ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)として定義される必要があります。
 
-URL が定義されると、 **プレビュー** ボタンがアクティブです。 このボタンを選択すると、（別のタブで）外部アプリケーションを起動して、コンテンツフラグメントをレンダリングできます。
+URL が定義されると、「**プレビュー**」ボタンがアクティブになります。このボタンを選択すると、（別のタブで）外部アプリケーションを起動して、コンテンツフラグメントをレンダリングできます。
 
-## フラグメントを公開 {#publish-content-fragment}
+## フラグメントの公開 {#publish-content-fragment}
 
-以下が可能です。 **公開** フラグメントを次のいずれかに変更します。
+フラグメントを次のいずれかに&#x200B;**公開**&#x200B;できます。
 
-* インスタンスをプレビュー
-* 発行インスタンス
+* プレビューインスタンス
+* パブリッシュインスタンス
 
-フラグメントは、エディターまたはコンソールから公開できます。 詳しくは、 [フラグメントの公開とプレビュー](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) を参照してください。
+フラグメントは、エディターまたはコンソールから公開できます。詳しくは、[フラグメントの公開とプレビュー](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)を参照してください。
 
-## フラグメントを非公開にする {#unpublish-content-fragment}
+## フラグメントを非公開 {#unpublish-content-fragment}
 
-また、 **非公開** フラグメントを次のいずれかから選択します。
+また、フラグメントを次のいずれかで&#x200B;**非公開**&#x200B;にすることができます。
 
-* インスタンスをプレビュー
-* 発行インスタンス
+* プレビューインスタンス
+* パブリッシュインスタンス
 
-フラグメントは、エディターまたはコンソールから非公開にすることができます。 詳しくは、 [フラグメントの非公開](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) を参照してください。
+フラグメントは、エディターまたはコンソールから非公開にすることができます。詳しくは、[フラグメントの非公開](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment)を参照してください。
 
 ## フィールド、データタイプおよびアイコン {#fields-datatypes-icons}
 
-The **フィールド** パネルには、コンテンツフラグメント内のすべてのフィールドがリストされます。 アイコンは、 **[データタイプ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**:
+**フィールド**&#x200B;パネルには、コンテンツフラグメント内のすべてのフィールドが一覧表示されます。アイコンは、**[データタイプ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**&#x200B;を示します。
 
 <table style="table-layout:auto">
  <tbody>
@@ -472,7 +472,7 @@ The **フィールド** パネルには、コンテンツフラグメント内�
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>タブプレースホルダー</b></p><p>実際のアイコンでは表されませんが、 <b>タブプレースホルダー</b> は左側のパネルに表示されます。 <br>中央のパネルでも、図のように水平方向に表示されるか、ドロップダウンリストで表示されます（水平方向に表示するには数が多すぎる場合）。</p> </td>
+   <td><p><b>タブプレースホルダー</b></p><p>実際のアイコンでは表されませんが、<b>タブプレースホルダー</b> は左側のパネルに表示されます。<br>中央のパネルでも、図のように水平方向に表示されるか、ドロップダウンリストで表示されます（水平方向に表示するには数が多すぎる場合）。</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>
@@ -480,14 +480,14 @@ The **フィールド** パネルには、コンテンツフラグメント内�
 
 ## 役に立つ知識 {#good-to-know}
 
-* コンテンツフラグメントを編集するには、 [適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). 問題が発生している場合は、システム管理者にお問い合わせください。
+* コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
 
-  例えば、 `edit` 権限エディターは読み取り専用になります。
+  例えば、`edit` 権限を持っていない場合、エディターは読み取り専用になります。
 
-* コンテンツフラグメントモデルでは、多くの場合、 **タイトル** および **説明**. これらのフィールドが存在する場合、それらはユーザー定義のフィールドであり、 *中央パネル* フラグメントの編集中に
+* コンテンツフラグメントモデルでは、多くの場合、**タイトル**&#x200B;および **説明**&#x200B;の名前が付けられたデータフィールドを定義できます。これらのフィールドが存在する場合、それらはユーザー定義のフィールドであり、フラグメントの編集中に&#x200B;*中央パネル*&#x200B;で更新できます。
 
-  コンテンツフラグメントとそのバリエーションには、とも呼ばれるメタデータフィールド（バリエーションのプロパティ）もあります。 **タイトル** および **説明**. これらのフィールドは、コンテンツフラグメントの不可欠な部分で、フラグメントの作成時に最初に定義されます。 これらは、 *右パネル* フラグメントの編集中に
+  コンテンツフラグメントとそのバリエーションには、**タイトル**&#x200B;および **説明**&#x200B;とも呼ばれるメタデータフィールド（バリエーションのプロパティ）もあります。これらのフィールドは、コンテンツフラグメントの不可欠な部分で、フラグメントの作成時に最初に定義されます。これらは、フラグメントの編集中に&#x200B;*右パネル*&#x200B;で更新できます。
 
-* 詳しくは、 Assets のドキュメントを参照してください [元のコンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-variations.md)  — 両方から利用できます **Assets** コンソールと **コンテンツフラグメント** コンソール。
+* [元のコンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-variations.md)の完全な情報については、Assets ドキュメントを参照してください - **Assets** コンソールと&#x200B;**コンテンツフラグメント**&#x200B;コンソールのどちらからでも利用できます。
 
-* 必要に応じて、プロジェクトチームがエディターをカスタマイズできます。 詳しくは、 [コンテンツフラグメントコンソールおよびエディターのカスタマイズ](/help/implementing/developing/extending/content-fragments-console-and-editor.md) 詳しくは、を参照してください。
+* 必要に応じて、プロジェクトチームはエディターをカスタマイズできます。詳しくは、[コンテンツフラグメントコンソールとエディターのカスタマイズ](/help/implementing/developing/extending/content-fragments-console-and-editor.md)を参照してください。

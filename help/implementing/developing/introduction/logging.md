@@ -5,7 +5,7 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '2720'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ AEM as a Cloud Service のログ設定とログレベルは、AEM プロジェ�
 
 * AEM ログ。AEM アプリケーションレベルでログを実行します。
 * Apache HTTPD Web サーバー／Dispatcher ログ。パブリッシュ層で Web サーバーと Dispatcher のログを実行します。
-* CDN ログは、その名前が示すように、CDN でログを実行します。 この機能は、9 月上旬に徐々にお客様に提供されるようになっています。
+* CDN ログは、その名前が示すように、CDN でログを実行します。この機能は、9 月上旬に徐々にお客様に提供されるようになっています。
 
 ## AEM ログ {#aem-logging}
 
@@ -279,7 +279,7 @@ AEM as a Cloud Service は、パブリッシュ上の Apache Web サーバーと
 * Apache HTTPD Web サーバーエラーログ
 * Dispatcher ログ
 
-これらのログは、パブリッシュ層でのみ使用できます。
+これらのログはパブリッシュ層でのみ使用できます。
 
 これらのログは、AEM アプリケーションに到達する前に、AEM as a Cloud Service のパブリッシュ層に対して行われた HTTP リクエストに関するインサイトを提供します。理想的には、パブリッシュ層サーバーへのほとんどの HTTP リクエストは、Apache HTTPD Web サーバーおよび AEM Dispatcher によってキャッシュされたコンテンツによって処理され、AEM アプリケーション自体には届きません。それを理解することは重要です。したがって、AEM の Java ログ、リクエストログ、アクセスログには、これらのリクエストに対するログステートメントはありません。
 
@@ -502,7 +502,7 @@ Define DISP_LOG_LEVEL debug
 
 ## CDN ログ {#cdn-log}
 
-AEM as a Cloud Serviceは CDN ログにアクセスできます。これは、キャッシュヒット率の最適化などの使用例に役立ちます。 CDN ログ形式はカスタマイズできず、情報、警告、エラーなどの様々なモードに設定する概念もありません。
+AEM as a Cloud Service では、ユーザーが CDN ログにアクセスできるようになっています。このログは、キャッシュヒット率の最適化などのユースケースに役立ちます。CDN ログ形式はカスタマイズできず、情報、警告、エラーなどの様々なモードに設定する概念もありません。
 
 Splunk 転送機能は、CDN ログをまだサポートしていません。
 
@@ -534,7 +534,7 @@ CDN ログは、json 形式に準拠しているという点で、他のログ�
 
 | **フィールド名** | **説明** |
 |---|---|
-| *timestamp* | TLS 終了後にリクエストが開始した時刻 |
+| *timestamp* | TLS 終了後のリクエストの開始時刻です。 |
 | *ttfb* | *Time To First Byte* の略称です。リクエストの開始から、応答本文のストリーミングが開始される前の時点までの時間間隔です。 |
 | *cli_ip* | クライアントの IP アドレスです。 |
 | *cli_country* | クライアント国の 2 文字の [ISO 3166-1](https://ja.wikipedia.org/wiki/ISO_3166-1) alpha-2 国コードです。 |
@@ -548,7 +548,7 @@ CDN ログは、json 形式に準拠しているという点で、他のログ�
 | *status* | 整数値としての HTTP ステータスコードです。 |
 | *res_age* | 応答が（すべてのノードで）キャッシュされた時間です（秒単位）。 |
 | *pop* | CDN キャッシュサーバーのデータセンターです。 |
-| *rules* | 一致する任意の名前 [トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md) と WAF フラグ。一致がブロックになったかどうかを示します。 一致するルールがない場合は空です。 |
+| *rules* | [トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)と WAF フラグに一致する名前。一致がブロックされたかどうかも示します。一致するルールがない場合は空です。 |
 
 
 ## ログのアクセス方法 {#how-to-access-logs}
@@ -559,9 +559,9 @@ Cloud Services の AEM as a Cloud Service のログにアクセスするには�
 
 ### 追加の公開地域のログ {#logs-for-additional-publish-regions}
 
-特定の環境で追加のパブリッシュ領域が有効になっている場合、前述のように、各地域のログを Cloud Manager からダウンロードできます。
+特定の環境で追加の公開地域が有効になっている場合、前述のように、各地域のログを Cloud Manager からダウンロードできます。
 
-追加のパブリッシュ領域のAEMログと Dispatcher ログは、次に示すように、環境 ID の後の最初の 3 文字で地域を指定します。 **nld2** 以下のサンプルでは、オランダにある追加のAEMパブリッシュインスタンスを参照しています。
+追加の公開地域の AEM ログと Dispatcher ログは、次に示すように、環境 ID の後の最初の 3 文字で地域を指定します。以下のサンプルの **nld2** では、オランダにある追加の AEM パブリッシュインスタンスを参照しています。
 
 ```
 cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"

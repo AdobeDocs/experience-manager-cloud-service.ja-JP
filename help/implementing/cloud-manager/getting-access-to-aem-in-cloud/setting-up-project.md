@@ -5,7 +5,7 @@ exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1399'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -110,7 +110,7 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
 
 >[!NOTE]
 >
->パスワードで保護された Maven リポジトリのアーティファクトは、現在、このメカニズムを通じてデプロイされるコードは経由しないので、慎重に使用する必要があります。 [コード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md) Cloud Manager の品質ゲートに実装されます。 したがって、まれなケースで、AEM に結び付けられていないコードに対してのみ使用する必要があります。バイナリと共に Java ソースおよびプロジェクトのソースコード全体もデプロイすることをお勧めします。
+>パスワードで保護された Maven リポジトリーのアーティファクトは、慎重に使用する必要があります。これは、このメカニズムを通じてデプロイされるコードが現在、Cloud Manager の品質ゲートに実装されている[コード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md)を通じて実行されないからです。したがって、まれなケースで、AEM に結び付けられていないコードに対してのみ使用する必要があります。バイナリと共に Java ソースおよびプロジェクトのソースコード全体もデプロイすることをお勧めします。
 
 パスワードで保護された Maven リポジトリを Cloud Manager 内で使用するには、次の操作を実行します。
 

@@ -1,13 +1,13 @@
 ---
 title: アダプティブフォームの送信アクションの設定方法
-description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自の送信アクションを作成できます
+description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自のアクションを作成できます。
 keywords: アダプティブフォームの送信アクションの選択、アダプティブフォームの sharepoint リストへの接続、アダプティブフォームの sharepoint ドキュメントライブラリへの接続、アダプティブフォームのフォームデータモデルへの接続の方法
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 source-git-commit: c2bf362a9949b3d6d427a28821056a0cc9edfa85
 workflow-type: tm+mt
 source-wordcount: '4102'
-ht-degree: 87%
+ht-degree: 93%
 
 ---
 
@@ -38,9 +38,9 @@ ht-degree: 87%
 フォームの送信アクションを設定するには、次の手順を実行します。
 
 1. コンテンツブラウザーを開き、「 **[!UICONTROL ガイドコンテナ]** アダプティブフォームのコンポーネント
-1. ガイドコンテナのプロパティをクリックします。 ![ガイドのプロパティ](/help/forms/assets/configure-icon.svg) アイコン。 アダプティブフォームコンテナダイアログボックスが開きます。
+1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。アダプティブフォームコンテナダイアログボックスが開きます。
 
-1. 「**[!UICONTROL グループ]**」タブをクリックします。
+1. 「**[!UICONTROL 送信]**」タブをクリックします。
 
    ![レンチアイコンをクリックしてアダプティブフォームコンテナダイアログボックスを開き、送信アクションを設定します](/help/forms/assets/adaptive-forms-submit-message.png)
 
@@ -107,22 +107,22 @@ ht-degree: 87%
 
 ## SharePoint に送信 {#submit-to-sharedrive}
 
-「**[!UICONTROL SharePoint に送信]**」送信アクションは、アダプティブフォームと Microsoft® SharePoint ストレージを接続します。接続されたMicrosoft® Sharepoint ストレージに、フォームデータファイル、添付ファイル、またはレコードのドキュメントを送信できます。
+「**[!UICONTROL SharePoint に送信]**」送信アクションは、アダプティブフォームと Microsoft® SharePoint ストレージを接続します。フォームデータファイル、添付ファイルまたはレコードのドキュメントを、接続された Microsoft® SharePoint ストレージに送信できます。
 
 「SharePointに送信」を使用して、次の操作を実行できます。
-* [アダプティブフォームのSharePointドキュメントライブラリへの接続](#connect-af-sharepoint-doc-library)
+* [アダプティブフォームの SharePoint ドキュメントライブラリへの接続](#connect-af-sharepoint-doc-library)
 * [アダプティブフォームのSharePointリストへの接続](#connect-af-sharepoint-list)
 
-### アダプティブフォームのSharePointドキュメントライブラリへの接続 {#connect-af-sharepoint-doc-library}
+### アダプティブフォームの SharePoint ドキュメントライブラリへの接続 {#connect-af-sharepoint-doc-library}
 
-次の手順で **[!UICONTROL SharePoint Document Library に送信]** アダプティブフォームでの送信アクション：
+アダプティブフォームで「**[!UICONTROL SharePoint ドキュメントライブラリに送信]**」送信アクションを使用するには、次の手順に従います。
 
-1. [SharePoint Document Library 設定の作成](#create-a-sharepoint-configuration-create-sharepoint-configuration):AEM FormsをMicrosoft® Sharepoint ストレージに接続します。
+1. [SharePoint ドキュメントライブラリ設定の作成](#create-a-sharepoint-configuration-create-sharepoint-configuration)：AEM フォームを Microsoft Sharepoint ストレージに接続します。
 2. [アダプティブフォームでの「SharePoint に送信」送信アクションの使用](#use-sharepoint-configuartion-in-af)：アダプティブフォームを設定済みの Microsoft® SharePoint に接続します。
 
-#### SharePoint Document Library 設定の作成 {#create-sharepoint-configuration}
+#### SharePoint ドキュメントライブラリの設定を作成 {#create-sharepoint-configuration}
 
-AEM FormsをMicrosoft® Sharepoint ドキュメントライブラリストレージに接続するには：
+AEM Forms を Microsoft® Sharepoint ドキュメントライブラリストレージに接続するには、次の手順に従います。
 
 1. **AEM Forms オーサー**&#x200B;インスタンス／**[!UICONTROL ツール]**／**[!UICONTROL Cloud Services]**／**[!UICONTROL Microsoft® SharePoint]** に移動します。
 1. **[!UICONTROL Microsoft® SharePoint]** を選択すると、**[!UICONTROL SharePoint ブラウザー]**&#x200B;にリダイレクトされます。
@@ -151,15 +151,15 @@ AEM FormsをMicrosoft® Sharepoint ドキュメントライブラリストレー
 
 アダプティブフォームの送信アクションに、この SharePoint サイト設定を使用できるようになりました。
 
-#### アダプティブフォームでのSharePointドキュメントライブラリ設定の使用 {#use-sharepoint-configuartion-in-af}
+#### アダプティブフォームでの SharePoint ドキュメントライブラリ設定の使用 {#use-sharepoint-configuartion-in-af}
 
-作成したSharePointドキュメントライブラリ設定をアダプティブフォーム内で使用して、データや生成後のレコードのドキュメントをSharePointフォルダーに保存することができます。 アダプティブフォームでSharePointドキュメントライブラリのストレージ設定を次の手順で使用します。
+作成した SharePoint ドキュメントライブラリ設定をアダプティブフォーム内で使用すると、データや生成済みレコードのドキュメントを SharePoint フォルダーに保存できます。 アダプティブフォームで SharePoint ドキュメントライブラリストレージ設定を使用するには、次の手順を実行します。
 
 1. 「[アダプティブフォーム](/help/forms/creating-adaptive-form-core-components.md)」を作成します。
 
    >[!NOTE]
    >
-   > * 同じを選択 [!UICONTROL 設定コンテナ] SharePointドキュメントライブラリストレージを作成したアダプティブフォームの場合。
+   > * SharePoint ドキュメントライブラリストレージを作成したアダプティブフォームと同じ[!UICONTROL 設定コンテナ]を選択します。
    > * [!UICONTROL 設定コンテナ]が選択されていない場合、グローバルな[!UICONTROL ストレージ設定]フォルダーが送信アクションのプロパティウィンドウに表示されます。
 
 1. 「**送信アクション**」を「**[!UICONTROL SharePoint に送信]**」として選択します。
@@ -167,7 +167,7 @@ AEM FormsをMicrosoft® Sharepoint ドキュメントライブラリストレー
 1. データを保存する場所に「**[!UICONTROL ストレージ設定]**」を選択します。
 1. 「**[!UICONTROL 保存]**」をクリックして、送信設定を保存します。
 
-フォームを送信すると、データは指定したMicrosoft® Sharepoint ドキュメントライブラリストレージに保存されます。
+フォームを送信すると、データは指定した Microsoft® Sharepoint ドキュメントライブラリストレージに保存されます。
 データを保存するフォルダー構造は `/folder_name/form_name/year/month/date/submission_id/data` です。
 
 ### アダプティブフォームのMicrosoft® SharePointリストへの接続 {#connect-af-sharepoint-list}
@@ -205,7 +205,7 @@ AEM FormsをMicrosoft® Sharepoint リストに接続するには：
 
 作成したSharePointリスト設定をアダプティブフォーム内で使用して、データや生成後のレコードのドキュメントをSharePointリストに保存することができます。 アダプティブフォームでSharePointリストを使用するには、以下の手順を実行します。
 
-1. [Microsoftを使用してフォームデータモデルを作成する](/help/forms/create-form-data-models.md)
+1. [Microsoft を使用してフォームデータモデルを作成する](/help/forms/create-form-data-models.md)
 1. [データを取得して送信するためのフォームデータモデルの設定](/help/forms/work-with-form-data-model.md#configure-services)
 1. [アダプティブフォームを作成](/help/forms/creating-adaptive-form-core-components.md)
 1. [フォームデータモデルを使用した送信アクションの設定](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
@@ -224,7 +224,7 @@ AEM FormsをMicrosoft® Sharepoint リストに接続するには：
 
 「**[!UICONTROL フォームデータモデルを使用して送信]**」送信アクションでは、フォームデータモデルの特定のデータモデルオブジェクトで送信したアダプティブフォームデータをデータソースに書き込みます。送信アクションの設定時に、データソースに書き戻す送信済みデータを持つデータモデルオブジェクトを選択できます。
 
-「フォームデータモデル送信」アクションを使用して、アダプティブフォームをMicrosoft SharePointリストに接続できます。
+「フォームデータモデル送信」アクションを使用して、アダプティブフォームを Microsoft SharePoint リストに接続できます。
 
 さらに、フォームデータモデルとレコードのドキュメント（DoR）を使用して、フォームの添付ファイルをデータソースに送信できます。フォームデータモデルについて詳しくは、[[!DNL AEM Forms]  のデータ統合機能](data-integration.md)を参照してください。
 
@@ -473,7 +473,7 @@ AEM Forms を Azure ストレージコンテナに接続するには、次の手
 
 サーバーサイド検証の有効化
 
-エンドユーザーがこれらの検証を回避してフォームを送信した場合、サーバーが再度検証を行います。サーバーサイドでの検証が失敗した場合、送信処理が中止されます。元のフォームが再びユーザーに表示されます。 取得されたデータおよび送信されたデータは、エラーとしてユーザーに表示されます。
+エンドユーザーがこれらの検証を回避してフォームを送信した場合、サーバーが再度検証を行います。サーバーサイドでの検証が失敗した場合、送信処理が中止されます。ユーザーには、元のフォームが再度表示されます。取得されたデータおよび送信されたデータは、エラーとしてユーザーに表示されます。
 
 >[!NOTE]
 >

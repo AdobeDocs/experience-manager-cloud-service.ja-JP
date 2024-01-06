@@ -6,7 +6,7 @@ exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1136'
-ht-degree: 76%
+ht-degree: 77%
 
 ---
 
@@ -35,8 +35,8 @@ ht-degree: 76%
 
 1. 画像を選択し、「**編集**」をクリックします。
 2. 左側のパネルにあるクイックアクションから「**[!DNL Resize Image]**&#x200B;背景を削除」をクリックします。
-3. **[!UICONTROL サイズを変更]**&#x200B;ドロップダウンリストから適切なソーシャルメディアプラットフォームを選択し、表示されるオプションから画像サイズを選択します。
-4. 必要に応じて、 **[!UICONTROL 画像の拡大・縮小]** フィールドに入力します。
+3. 「**[!UICONTROL サイズを変更]**」ドロップダウンリストから適切なソーシャルメディアプラットフォームを選択し、表示されるオプションから画像サイズを選択します。
+4. 必要に応じて、「**[!UICONTROL 画像の拡大・縮小]**」フィールドを使用して画像を拡大・縮小します。
 5. 「**[!DNL Apply]**適用」をクリックし、変更を適用します。
    ![Adobe Express を使用した画像の編集](assets/adobe-express-resize-image.png)
 

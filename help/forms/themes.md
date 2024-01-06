@@ -1,22 +1,22 @@
 ---
-title: テーマを作成して使用し、アダプティブフォームのスタイルを設定するにはどうすればよいですか？
-description: アダプティブフォームテーマを使用して、アダプティブフォームのスタイルを設定し、視覚的な ID を付けます。 任意の数のアダプティブフォームで、テーマを共有できます。
+title: テーマを作成して使用し、アダプティブフォームのスタイルを設定する方法
+description: アダプティブフォームテーマを使用して、アダプティブフォームのスタイルを設定し、視覚的な ID を付けます。任意の数のアダプティブフォームで、テーマを共有できます。
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '5558'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
 # テーマの作成および使用 {#creating-and-using-themes}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
+<span class="preview">[アダプティブフォームの新規作成](/help/forms/creating-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 アダプティブフォーム<!-- or an interactive communication-->のスタイル設定にテーマを作成して適用できます。テーマには、コンポーネントとパネルのスタイルを設定するための詳細情報が含まれています。スタイルには、背景カラー、ステートカラー、透明度、配置、サイズなどのプロパティが含まれます。テーマを適用すると、指定したスタイルが対応するコンポーネントに反映されます。テーマは、アダプティブフォーム<!-- or interactive communication -->を参照せずに、独立して管理されます。
@@ -645,7 +645,7 @@ themeOverride パラメーターを使用して、実行時にテーマを適用
     
     * **テーマエディター：**
     
-    テーマエディターを使用すると、フォームのスタイルを設定するテーマを作成できます&lt;!-- またはインタラクティブ通信 -->。テーマ内のコンポーネントのスタイル設定を指定すると、開発する複数のフォーム間でルックアンドフィールの一貫性を保つことができます。 まずテーマのスタイル設定情報を指定し、その後でテーマをフォームに適用することをお勧めします。
+    テーマエディターを使用すると、フォームのスタイルを設定するテーマを作成できます&lt;!-- またはインタラクティブ通信 -->。テーマでコンポーネントのスタイル設定を指定して、開発中の複数のフォームの外観と操作性を統一できます。まずテーマのスタイル設定情報を指定し、その後でテーマをフォームに適用することをお勧めします。
     
     * **インラインスタイル設定：**
     

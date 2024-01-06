@@ -5,7 +5,7 @@ exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1609'
-ht-degree: 85%
+ht-degree: 98%
 
 ---
 
@@ -43,10 +43,10 @@ UI モードは、ツールバーの左側に一連のアイコンとして表�
 
 UI モードを追加すると、関連する ContextHub モジュールをグループ化できます。UI モードの作成時に、ContextHub ツールバーに表示されるタイトルとアイコンを指定します。
 
-1. Experience Managerレールで、ツール/サイト/ContextHub を選択します。
+1. Experience Manager パネルで、ツール／Sites／Context Hub を選択します。
 1. デフォルトの設定コンテナを選択します。
-1. 「ContextHub 設定」を選択します。
-1. 「作成」ボタンを選択し、「ContextHub UI モード」を選択します。
+1. 「Context Hub 設定」を選択します。
+1. 「作成」ボタンを選択して「Context Hub UI モード」を選択します。
 
    ![UI モードの追加](assets/contexthub-ui-mode.png)
 
@@ -76,11 +76,11 @@ UI モジュールのプロパティには、モジュール固有のプロパ�
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | ページのタグに関する統計が表示されます | `tagcloud` |
 | [granite.profile](sample-modules.md#granite-profile-ui-module-type) | `authorizableID`、`displayName`、`familyName` など、現在のユーザーのプロファイル情報が表示されます。`displayName` と `familyName` の値は変更できます。 | `profile` |
 
-1. Experience Managerレールで、ツール/サイト/ContextHub を選択します。
+1. Experience Manager パネルで、ツール／Sites／ContextHub を選択します。
 1. UI モジュールを追加する設定コンテナを選択します。
 1. UI モジュールを追加する ContextHub 設定を選択または入力します。
 1. UI モジュールを追加する UI モードを選択します。
-1. 「作成」ボタンを選択し、「 ContextHub UI モジュール（汎用） 」を選択します。
+1. 「作成」ボタンを選択して「ContextHub UI モジュール（汎用）」を選択します。
 
    ![ContextHub UI モジュール](assets/contexthub-ui-module.png)
 
@@ -111,18 +111,18 @@ AEM には、ストアのベースにできる次のサンプルのストア候�
 |---|---|
 | [aem.segmentation](sample-stores.md#aem-segmentation-sample-store-candidate) | 解決済みおよび未解決の ContextHub セグメント用のストア。ContextHub SegmentManager からセグメントを自動的に取得します |
 | [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) | ブラウザーの場所の緯度と経度を格納します。 |
-| [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) | 複数のデバイスのプロパティと機能を定義し、現在のクライアントデバイスを検出します |
+| [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) | 多数のデバイスのプロパティと機能を定義し、現在のクライアントデバイスを検出します |
 | [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) | 現在のユーザーのプロファイルデータを格納します |
 | [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | デバイス情報、ブラウザーの種類、画面の向きなど、クライアントに関する情報を格納します |
 
-1. Experience Managerレールで、ツール/サイト/ContextHub を選択します。
+1. Experience Manager パネルで、ツール／Sites／ContextHub を選択します。
 1. デフォルトの設定コンテナを選択します。
-1. Contexthub 設定を選択
-1. ストアを追加するには、作成アイコンを選択し、「 ContextHub ストア設定」を選択します。
+1. Contexthub 設定の選択
+1. ストアを追加するには「作成」アイコンを選択し、「ContextHub ストアの設定」を選択します。
 
    ![ContextHub ストアの設定](assets/contexthub-store-configuration.png)
 
-1. 基本的な設定プロパティの値を指定し、「次へ」を選択します。
+1. 次の基本設定のプロパティの値を指定して「次へ」を選択します。
 
    * **設定タイトル：**&#x200B;ストアを識別するタイトル。
    * **ストアタイプ：**&#x200B;ストアのベースとなるストア候補の storeType プロパティの値。
@@ -203,12 +203,12 @@ ContextHub のデバッグモードを有効にして、トラブルシューテ
 
 ### 設定による有効化 {#via-the-configuration}
 
-ContextHub の設定を編集し、「**デバッグ**」オプションをオンにします。
+ContextHub の設定を編集し、「**デバッグ**」オプションをオンにします
 
-1. レールで、を選択します。 **ツール/サイト/ ContextHub**
-1. デフォルトを選択 **設定コンテナ**
-1. を選択します。 **ContextHub 設定** を選択し、 **選択した要素を編集**
-1. 選択 **デバッグ** を選択し、 **保存**
+1. パネルで&#x200B;**ツール／Sites／ContextHub** を選択します
+1. デフォルトの&#x200B;**設定コンテナ**&#x200B;を選択します
+1. 「**ContextHub の設定**」を選択し、「**選択した要素を編集**」を選択します
+1. 「**デバッグ**」、「**保存**」の順に選択します。
 
 ### CRXDE による有効化 {#via-crxde}
 
@@ -243,10 +243,10 @@ ContextHub を無効にすると、js／css の読み込みと初期化を回避
 
 * ContextHub の設定を編集し、「**ContextHub を無効にする**」チェックボックスをオンにします。
 
-   1. レールで、を選択します。 **ツール/サイト/ ContextHub**
-   1. デフォルトを選択 **設定コンテナ**
-   1. を選択します。 **ContextHub 設定** を選択し、 **選択した要素を編集**
-   1. 選択 **ContextHub を無効にする** を選択し、 **保存**
+   1. パネルで&#x200B;**ツール／Sites／ContextHub** を選択します
+   1. デフォルトの&#x200B;**設定コンテナ**&#x200B;を選択します
+   1. 「**ContextHub の設定**」を選択し、「**選択した要素を編集**」を選択します
+   1. 「**ContextHub の無効化**」を選択し、「**保存**」を選択します
 
 または
 

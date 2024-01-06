@@ -5,7 +5,7 @@ exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '854'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Target Standard API を介して AEM と Adobe Target を統合するには、Ad
 * 組織のシステム管理者は、Admin Console を使用して、組織内で必要な開発者を関連する製品プロファイルに追加する必要があります。
 
    * これにより、Adobe Developer Console 使用して統合を有効にする権限が特定の開発者に付与されます。
-   * 詳しくは、 [開発者の管理](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
+   * 詳しくは、[開発者の管理](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)を参照してください。
 
 
 ## IMS 設定の指定 - 公開鍵の生成 {#configuring-an-ims-configuration-generating-a-public-key}
@@ -42,8 +42,8 @@ Target Standard API を介して AEM と Adobe Target を統合するには、Ad
 
 1. AEM で、**ツール**&#x200B;メニューを開きます。
 1. **セキュリティ**&#x200B;セクションで、**Adobe IMS 設定**&#x200B;を選択します。
-1. **作成**&#x200B;を選択して、**Adobe IMS テクニカルアカウント設定**&#x200B;を開きます。
-1. **クラウド設定**&#x200B;の下のドロップダウンを使用して、**Adobe Target** を選択します。
+1. 「**作成**」を選択して、**Adobe IMS テクニカルアカウント設定**&#x200B;を開きます。
+1. **クラウド設定**&#x200B;の下のドロップダウンを使用して、「**Adobe Target**」を選択します。
 1. **新しい証明書の作成**&#x200B;をアクティブにして、新しいエイリアスを入力します。
 1. 「**証明書の作成**」で確認します。
 
@@ -67,9 +67,9 @@ Adobe 開発者コンソールを開いて、AEM で使用する Adobe Target �
 
 >[!CAUTION]
 >
->現在、Adobe Developer Console の **サービスアカウント (JWT)** 資格情報のタイプ。
+>現在サポートされている資格情報のタイプは、Adobe Developer Console の **サービスアカウント（JWT）**&#x200B;のみです。
 >
->次を使用しない **OAuth サーバー間通信** 秘密鍵証明書のタイプ。今後サポートされる予定です。
+>**OAuth サーバー間**&#x200B;資格情報のタイプは使用しないでください。このタイプは、今後サポートされる予定です。
 
 1. Adobe Developer Console を開いて、プロジェクトを表示します。
 
@@ -154,7 +154,7 @@ Adobe 開発者コンソールプロジェクトコンソールで、すべて�
 * API
    * 例：Adobe Target
 
-これらの一部は、IMS に基づいてAEMでAdobe Targetの統合を完了する必要があります。
+これらの一部は、IMS に基づいて AEM で Adobe Target の統合を完了する必要があります。
 
 ## AEM での IMS 設定の完了 {#completing-the-ims-configuration-in-aem}
 
@@ -187,7 +187,7 @@ AEM に戻り、Target の IMS 統合から必要な値を追加して、IMS 設
 
    * `https://localhost<port>/libs/cq/adobeims-configuration/content/configurations.html`
 
-   次に例を示します。
+   例：
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
 
@@ -196,7 +196,7 @@ AEM に戻り、Target の IMS 統合から必要な値を追加して、IMS 設
 
    ![正常性をチェック](assets/integrate-target-ims-12.png)
 
-1. 成功した場合は、確認メッセージが表示されます。
+1. 成功すると、確認メッセージが表示されます。
 
 ## Adobe Target との統合の完了 {#complete-the-integration-with-adobe-target}
 

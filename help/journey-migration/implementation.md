@@ -5,7 +5,7 @@ exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '2282'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -59,7 +59,7 @@ Cloud Service への移行の正確な手順は、購入したシステムと準
 
 コンテンツ移行は、異なるチーム間での計画、追跡、共同作業を必要とする複数の手順で構成されるプロセスです。
 
-ツールの仕組みと、Adobeでの使用を推奨する方法について詳しくは、 [コンテンツ転送ツールドキュメント](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
+ツールの仕組みと推奨される使用方法について詳しくは、[コンテンツ転送ツールのドキュメント](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)を参照してください。
 
 ## コードリファクタリング {#code-refactor}
 
@@ -75,7 +75,7 @@ Cloud Services と互換性を持たせるために、既存の機能のリフ�
 * [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ja) をダウンロードして、ローカル開発環境を設定する方法を確認してください。
 * 最後に、[AEM as a Cloud Service Java API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) について詳しく確認してください。
 
-また、次のこともできます。
+また、以下も行ってください。
 
 * このビデオを視聴すると、Dispatcher SDK をローカルにインストールする方法を理解できます。
 
@@ -112,7 +112,7 @@ AEM Maven プロジェクトをクラウドに対応させるためには、あ�
 
 ### コードの凍結のスケジュール設定 {#schedule-a-code-freeze}
 
-移行プロセスの一環として、コードリファクタリングタスクと共にアクティブなAEMで進行中のコード開発を管理する場合は、AEM as a Cloud Serviceと互換性を持たせるために、Maven プロジェクトの再構築が完了するまで、コードのフリーズ期間をスケジュールすることをお勧めします。
+移行ジャーニーの一環として、アクティブな AEM 上で進行中のコード開発と、コードリファクタリングタスクを管理するには、AEM as a Cloud Service と互換性のある Maven プロジェクトの再構築が完了するまで、コードの凍結期間をスケジュール設定しておくことをお勧めします。
 
 プロジェクトの再構築が完了したら、この新しい構造に基づいて新しいコード開発を再開できます。これにより、コードのデプロイメントおよびテスト中に発生する Cloud Manager パイプラインのエラーを減らすことができます。
 

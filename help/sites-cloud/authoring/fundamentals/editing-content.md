@@ -5,7 +5,7 @@ exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2974'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 91%
 
 * **モードセレクター**
 
-  現在の [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 「 」では、編集、レイアウト、タイムワープ、ターゲット設定など、別のモードを選択できます。
+  現在の[モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)が表示され、別のモード（編集、レイアウト、タイムワープ、ターゲット設定など）を選択できます。
 
   ![モードセレクターボタン](/help/sites-cloud/authoring/assets/mode-selector.png)
 
@@ -87,7 +87,7 @@ ht-degree: 91%
 
 * **注釈**
 
-  次の項目を追加： [注釈](/help/sites-cloud/authoring/fundamentals/annotations.md) をページに追加します。 最初の注釈を追加後、アイコンは、ページ上の注釈の数を示す数字に切り替わります。
+  ページをレビューするときに、ページに[注釈](/help/sites-cloud/authoring/fundamentals/annotations.md)を追加できます。最初の注釈を追加後、アイコンは、ページ上の注釈の数を示す数字に切り替わります。
 
   ![注釈ボタン](/help/sites-cloud/authoring/assets/annotations.png)
 
@@ -151,9 +151,9 @@ ht-degree: 91%
 
      ![コンポーネントの挿入](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
-   * デスクトップデバイスを使用している場合は、 **ここにコンポーネントをドラッグ** ボックス。
+   * デスクトップデバイスを使用している場合は、「**コンポーネントをここにドラッグ**」ボックスをダブルクリックできます。
 
-   * The **新規コンポーネントを挿入** ダイアログが開き、必要なコンポーネントを選択できます。
+   * **新規コンポーネントを挿入**&#x200B;ダイアログが表示され、必要なコンポーネントを選択できるようになります。
 
      ![新規コンポーネントを挿入ダイアログ](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
@@ -161,7 +161,7 @@ ht-degree: 91%
 
 ### アセットブラウザーを使用したコンポーネントの挿入 {#inserting-a-component-using-the-assets-browser}
 
-[アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)からアセットをドラッグして、新しいコンポーネントをページに追加することもできます。これにより、適切なタイプの（およびアセットを含む）コンポーネントが自動的に作成されます。
+[アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)からアセットをドラッグして、新しいコンポーネントをページに追加することもできます。これにより、適切なタイプのコンポーネント（アセットを含む）が自動的に作成されます。
 
 この動作は使用しているインストール環境で設定できます。詳しくは、「アセットをドラッグするとコンポーネントインスタンスが作成されるように段落システムを設定」を参照してください。<!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
 
@@ -173,7 +173,7 @@ ht-degree: 91%
 
    アセットタイプに適したコンポーネントが、必要な場所に作成されます。これには選択したアセットが含まれます。
 
-1. [編集](#edit-content) 必要に応じて、コンポーネントを選択します。
+1. 必要に応じて、コンポーネントを[編集](#edit-content)します。
 
 >[!NOTE]
 >
@@ -185,7 +185,7 @@ ht-degree: 91%
 
 ## コンポーネントツールバー {#component-toolbar}
 
-コンポーネントを選択すると、ツールバーが開きます。 これにより、コンポーネントで実行できる様々なアクションにアクセスできます。
+コンポーネントを選択すると、ツールバーが開きます。これにより、コンポーネントで実行できる様々なアクションにアクセスできます。
 
 ユーザーが使用できる実際のアクションは、必要に応じて表示されます。ここではすべてのアクションについては説明していません。
 
@@ -243,7 +243,7 @@ ht-degree: 91%
 
 * **グループ**
 
-  これにより、複数のコンポーネントを一度に選択できます。 デスクトップデバイスで同じ操作をおこなうには、**Ctrl キーを押しながらクリック**&#x200B;するか、または **Command キーを押しながらクリック**&#x200B;します。
+  複数のコンポーネントを一度に選択できます。デスクトップデバイスで同じ操作を行うには、**Control キーを押しながらクリック**&#x200B;するか、または **Command キーを押しながらクリック**&#x200B;します。
 
   ![グループボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
 
@@ -255,13 +255,13 @@ ht-degree: 91%
 
 * **レイアウト**
 
-  これにより、 [レイアウト](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) 選択したコンポーネントの。 これは選択したコンポーネントにのみ適用され、ページ全体の[レイアウトモード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)はアクティベートされません。
+  選択したコンポーネントの[レイアウト](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)を変更できます。これは選択したコンポーネントにのみ適用され、ページ全体の[レイアウトモード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)はアクティベートされません。
 
   ![レイアウトボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **エクスペリエンスフラグメントバリエーションに変換**
 
-  これにより、 [エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) 選択したコンポーネントから、または既存のエクスペリエンスフラグメントに追加します。
+  [エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)を、選択したコンポーネントから作成したり、既存のエクスペリエンスフラグメントに追加したりできます。
 
   ![エクスペリエンスフラグメントへの変換ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
@@ -276,7 +276,7 @@ ht-degree: 91%
 
 [コンポーネントツールバーの編集（鉛筆）アイコン](#component-toolbar)を使用して、コンポーネントを開いてコンテンツを編集できます。
 
-正確な編集オプションは、コンポーネントによって異なります。 一部のコンポーネントの場合 [すべてのアクションは全画面表示モードでのみ使用できます](#edit-content-full-screen-mode). 次に例を示します。
+正確な編集オプションは、コンポーネントによって異なります。 一部のコンポーネントの場合 [すべてのアクションは全画面表示モードでのみ使用できます](#edit-content-full-screen-mode). 例：
 
 * テキストコンポーネント
 
@@ -341,7 +341,7 @@ ht-degree: 91%
 
    ![ページコンポーネントのコンポーネントツールバー](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   を選択します。 **レイアウト** アクションを使用して、コンポーネントのレイアウトを調整します。
+   コンポーネントのレイアウトを調整するには、**レイアウト**&#x200B;アクションを選択します。
 
    ![コンポーネントツールバーのレイアウトボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
@@ -361,7 +361,7 @@ ht-degree: 91%
 
 >[!TIP]
 >
->レイアウトアクションは、選択したコンポーネントの範囲に限定されます。例えば、あるコンポーネントのレイアウトを編集して別のコンポーネントをクリックすると、新しく選択したコンポーネントの標準の編集ツールバー（レイアウトツールバーではなく）が表示され、サイズ変更ハンドルとエミュレーターツールバーが表示されなくなります。
+>レイアウトアクションは、選択したコンポーネントの範囲に限定されます。例えば、あるコンポーネントのレイアウトを編集してから別のコンポーネントをクリックすると、新しく選択したコンポーネントに（レイアウトツールバーではなく）標準の編集ツールバーが表示され、サイズ変更ハンドルとエミュレーターツールバーが表示されなくなります。
 >
 >複数のコンポーネントに影響するページの全体のレイアウトを編集する必要がある場合は、[レイアウトモード](/help/sites-cloud/authoring/features/responsive-layout.md)に切り替えます。
 

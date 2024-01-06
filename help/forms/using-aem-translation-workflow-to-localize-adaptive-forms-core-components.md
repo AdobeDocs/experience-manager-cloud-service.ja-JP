@@ -1,12 +1,12 @@
 ---
 title: コアコンポーネントベースのアダプティブフォームを翻訳するにはどうすればよいですか？
-description: AEM Formsでフォームデータモデルを作成し、サンプルデータとサービスを使用してモデルをテストし、モデルの様々なオプションを設定する方法を説明します。
+description: AEM Forms でフォームデータモデルを作成し、サンプルデータとサービスを使用してモデルをテストし、モデルの様々なオプションを設定する方法を説明します。
 feature: Adaptive Forms, Core Components
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '884'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 90%
    * 新しい辞書を既存の翻訳プロジェクトに追加するには、「**[!UICONTROL 既存の翻訳プロジェクトに追加]**」オプションを選択し、「**[!UICONTROL 既存の翻訳プロジェクト]**」を選択します。
 1. 「**ターゲット言語**」フィールドで、ロケール（`German(de)` など）を指定します。複数のロケールを指定できます。フォームは、「**ターゲット言語**」フィールドで指定されたすべてのロケールに翻訳されます。「**完了**」をクリックします。
 1. 辞書の追加ダイアログボックスで、「**プロジェクトを開く**」をクリックします。
-1. プロジェクト画面で、作成したプロジェクトをクリックします。 例えば、**政府リファレンスサイト - ドイツ語ロケール**&#x200B;タイルをクリックします。
+1. プロジェクト画面で、作成されたプロジェクトをクリックします。例えば、**政府リファレンスサイト - ドイツ語ロケール**&#x200B;タイルをクリックします。
 1. **翻訳ジョブ**&#x200B;タイルで ![aem62forms_downarrow](assets/aem62forms_downarrow.png) アイコンをクリックし、「**開始**」をクリックします。タイルのステータスがドラフトに変わります。翻訳を完了すると、ステータスが「**承認済み**」に変わります。数分後にページを更新し、ステータスを確認します。
 
    ![翻訳を開始](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
@@ -68,11 +68,11 @@ ht-degree: 90%
    * 新しい辞書を既存の翻訳プロジェクトに追加するには、「**[!UICONTROL 既存の翻訳プロジェクトに追加]**」オプションを選択し、「**[!UICONTROL 既存の翻訳プロジェクト]**」を選択します。
 1. 「**ターゲット言語**」フィールドで、ロケール（`German(de)` など）を指定します。複数のロケールを指定できます。フォームは、「**ターゲット言語**」フィールドで指定されたすべてのロケールに翻訳されます。「**完了**」をクリックします。
 1. 辞書の追加ダイアログボックスで、「**プロジェクトを開く**」をクリックします。
-1. プロジェクト画面で、作成したプロジェクトをクリックします。 例えば、**政府リファレンスサイト - ドイツ語ロケール**&#x200B;タイルをクリックします。
+1. プロジェクト画面で、作成されたプロジェクトをクリックします。例えば、**政府リファレンスサイト - ドイツ語ロケール**&#x200B;タイルをクリックします。
 1. **概要**&#x200B;タイルの下部にある、**省略記号**&#x200B;をクリックします。翻訳プロジェクトのプロパティ画面が開きます。
 1. **翻訳プロジェクトのプロパティ**&#x200B;画面の上部にある「**[!UICONTROL 詳細設定]**」タブを開きます。**[!UICONTROL 翻訳フィールド]**&#x200B;で、「**[!UICONTROL 人間による翻訳]**」を選択します。画面上部の「**保存して閉じる**」をクリックします。
 1. **翻訳ジョブ**&#x200B;タイルで「![aem62forms_downarrow](assets/aem62forms_downarrow.png)」アイコンをクリックし、「**書き出し**」をクリックします。書き出しダイアログで、「書き出したファイルをダウンロード」オプションをクリックします。.zip ファイルをダウンロードします。
-   ![翻訳ファイルを書き出し](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
+   ![翻訳ファイルの書き出し](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
 1. ダウンロードした .zip ファイルを解凍します。展開されたフォルダーには次の 2 つのファイルが含まれています。
    * translation_export_summary.xml
    * [form-fields-file].xml.
@@ -80,7 +80,7 @@ ht-degree: 90%
 1. ファイル translation_export_summary.xml および [form-fields-file].xml を zip 形式で圧縮します。
 1. **翻訳ジョブ**&#x200B;タイルで「![aem62forms_downarrow](assets/aem62forms_downarrow.png)」アイコンをクリックし、「**読み込み**」をクリックします。[form-fields-file].xml. を含むアーカイブを選択します。フォームフィールドのローカライズ対象の文字列とメッセージを使用します。
 
-   ![翻訳ファイルをインポート](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
+   ![翻訳ファイルの読み込み](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
 1. ローカライズされたフォームをプレビューするには、AEM Forms UI で、ローカライズされたフォームを選択します。**[!UICONTROL プレビュー]**／**[!UICONTROL HTML をプレビュー]**&#x200B;をクリックします。フォームの URL に `afAcceptLang=<locale code>` を追加した後、フォームを再度開きます。例えば、ドイツ語版のフォームを開くには、`afAcceptLang=de` を追加します。
 

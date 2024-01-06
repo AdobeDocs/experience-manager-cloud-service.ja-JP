@@ -5,7 +5,7 @@ exl-id: 2ec31445-899d-40b8-b3eb-073cb07aff12
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '137'
-ht-degree: 75%
+ht-degree: 99%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 75%
 
 運用開始カードには、AEM as a Cloud Service でスムーズに運用を開始するための準備、実行すべき特定のアクション、詳細な検討事項などのすべての関連コンテンツを提供します。
 
-プロジェクトカードをクリックしてプロジェクトランディングページを開き、 **ライブにする** を参照してください。
+プロジェクトカードをクリックしてプロジェクトのランディングページを開き、「**運用開始**」セクションに移動します（下図を参照）。
 
 ![画像](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
@@ -25,7 +25,7 @@ ht-degree: 75%
 
 この節では、「運用開始」アクティビティカードについて説明します。
 
-1. 次をクリック： **表示** ボタンを **ライブにする** カード。
+1. **運用開始**&#x200B;カードの「**表示**」ボタンをクリックします。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 

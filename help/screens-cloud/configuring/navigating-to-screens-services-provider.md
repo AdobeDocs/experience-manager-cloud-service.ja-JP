@@ -5,7 +5,7 @@ exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 84%
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ Screens サービスプロバイダーを設定するには、次の手順に従
    * **オーサー URL** - AEM のオーサー URL（例：`https://author-p12345-e12345.adobeaemcloud.com`）
 
    >[!NOTE]
-   >Screens サービスプロバイダーでAEMを設定する前に、少なくとも 1 つのAEM Screen チャネルを作成して公開してください。 チャネルを作成するには、コンテンツプロバイダーの/screens.htmlに移動します。
+   >Screens サービスプロバイダーで AEM を設定する前に、少なくとも 1 つ の AEM 画面チャネルを必ず作成して公開します。チャネルを作成するには、コンテンツプロバイダーの /screens.html に移動します。
 
    ![画像](/help/screens-cloud/assets/configure/configure-screens4.png)
 
@@ -50,7 +50,7 @@ Screens サービスプロバイダーを設定するには、次の手順に従
 
    ![画像](/help/screens-cloud/assets/configure/configure-screens1.png)
 
-6. Screens コンテンツプロバイダーが別のタブで開き、コンテンツを作成できます。
+6. Screens コンテンツプロバイダーが別のタブで開き、コンテンツを作成できるようになります。
 
    ![画像](/help/screens-cloud/assets/configure/configure-screens2.png)
 

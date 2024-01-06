@@ -8,7 +8,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2121'
-ht-degree: 83%
+ht-degree: 84%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 83%
 
 [!DNL Experience Manager Forms] のデータ統合機能により、複数の異なるデータソースを設定して接続することができます。以下のタイプがサポートされています。これらのタイプは、すぐに使用することができます。
 
-* リレーショナルデータベース — MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®]、postgreSQL および [!DNL Oracle RDBMS]
+* リレーショナルデータベース - MySQL、[!DNL Microsoft® SQL Server]、[!DNL IBM® DB2®]、postgreSQL および [!DNL Oracle RDBMS]
 * RESTful Web サービス
 * SOAP ベースの web サービス
 * OData サービス（バージョン 4.0）
@@ -284,7 +284,7 @@ OData サービスは、そのサービスのルート URL によって識別さ
 
    >[!NOTE]
    >
-   接続する OAuth 2.0 認証タイプを選択します。 [!DNL Microsoft®® Dynamics] OData エンドポイントをサービスルートとして使用するサービス。
+   OData エンドポイントをサービスルートとして使用して [!DNL Microsoft®® Dynamics] サービスに接続する場合は、OAuth 2.0 認証タイプを選択します。
 
 1. 選択 **[!UICONTROL 作成]** をクリックして、OData サービスのクラウド設定を作成します。
 

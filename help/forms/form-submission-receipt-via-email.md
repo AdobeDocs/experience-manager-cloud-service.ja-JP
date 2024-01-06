@@ -1,6 +1,6 @@
 ---
-title: AEM Formsで電子メールを使用してフォーム送信確認を送信する方法は？
-description: AEM Formsでは、フォーム送信時に確認応答をユーザーに送信する電子メール送信アクションを設定できます。
+title: AEM Formsでメールを使用してフォーム送信確認を送信する方法
+description: AEM Forms では、フォームの送信時にユーザーに受信確認を送信するメール送信アクションを設定できます。
 uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,7 +9,7 @@ docset: aem65
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '371'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 91%
 
 また、変数プレースホルダーは、「**[!UICONTROL 件名]**」および「**[!UICONTROL メールテンプレート]**」フィールドにも使用できます。
 
-次に例を示します。
+例：
 
 `Hi ${first_name} ${last_name},`
 

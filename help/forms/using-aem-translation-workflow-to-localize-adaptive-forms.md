@@ -1,5 +1,5 @@
 ---
-title: AEM翻訳ワークフローを使用してアダプティブFormsとレコードのドキュメントをローカライズするにはどうすればよいですか？
+title: AEM 翻訳ワークフローを使用したアダプティブフォームとレコードのドキュメントのローカライズ
 description: AEM 翻訳ワークフローを使用してアダプティブフォームとレコードのドキュメントをローカライズする方法について説明します。
 uuid: 6c87a283-0203-4cf7-989a-3770ddbbbd6e
 content-type: reference
@@ -9,12 +9,12 @@ noindex: true
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 90%
+ht-degree: 95%
 
 ---
 
 
-# アダプティブFormsとレコードのドキュメントのローカライズ{#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
+# アダプティブフォームとレコードのドキュメントをローカライズ{#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
 フォームのローカライズにより、様々な地域の幅広い対象者に向けてフォームを提供できるようになります。アダプティブフォームおよびレコードのドキュメントをローカライズするには、Adobe Experience Manager 翻訳ワークフローが役立ちます。アダプティブフォームのローカライズには、**機械翻訳**&#x200B;または&#x200B;**人による翻訳**&#x200B;を使用できます。
 

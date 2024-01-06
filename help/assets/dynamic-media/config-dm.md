@@ -7,7 +7,7 @@ exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '3811'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -84,7 +84,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    新しいパスワードは、**[!UICONTROL Dynamic Media 設定を作成]**&#x200B;ページの右上隅にある「**[!UICONTROL 保存]**」を選択したときに保存されます。
 
-   次を選択した場合： **[!UICONTROL キャンセル]** （内） **[!UICONTROL パスワードを変更]** ダイアログボックスで、作成したDynamic Media設定を保存する際には、新しいパスワードを入力する必要があります。
+   **[!UICONTROL パスワードを変更]**&#x200B;ダイアログボックスで「**[!UICONTROL キャンセル]**」を選択した場合でも、作成した Dynamic Media 設定を保存する際は新しいパスワードを入力する必要があります。
 
    [Dynamic Media のパスワードの変更](#change-dm-password)も参照してください。
 
@@ -288,8 +288,8 @@ Dynamic Media カラーマネジメントを使用すると、アセットをカ
 
 Dynamic Media によって処理されるアセットタイプを定義して、高度なアセット処理パラメーターをカスタマイズできます。例えば、アセット処理パラメーターを指定して次のことができます。
 
-* Adobe PDFを eCatalog アセットに変換する。
-* パーソナライズのためにAdobe Photoshopドキュメント (.PSD) をバナーテンプレートアセットに変換します。
+* Adobe PDF を eCatalog アセットに変換する。
+* Adobe Photoshop ドキュメント（.PSD）をパーソナライズ用のバナーテンプレートアセットに変換する。
 * Adobe Illustrator ファイル（.AI）または Adobe Photoshop Encapsulated PostScript® ファイル（.EPS）をラスタライズする。
 * [ビデオプロファイル](/help/assets/dynamic-media/video-profiles.md)および[イメージングプロファイル](/help/assets/dynamic-media/image-profiles.md)は、それぞれ、ビデオおよび画像の処理を定義するのに使用できます。
 

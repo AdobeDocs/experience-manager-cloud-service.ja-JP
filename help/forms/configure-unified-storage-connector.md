@@ -1,23 +1,23 @@
 ---
-title: AEM Forms用の統合ストレージコネクタ (USC) の設定方法を教えてください。
-description: AEM Formsの統合ストレージコネクタ (USC) の管理方法を説明します。 Unified Storage Connector(USC) を使用して、AEM Formsを外部データストレージに接続します。
+title: AEM Forms 用の統合ストレージコネクタ（USC）の設定方法
+description: AEM Forms 用の統合ストレージコネクタ（USC）の管理方法を説明します。統合ストレージコネクタ（USC）を使用して、AEM Forms を外部データストレージに接続します。
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '642'
-ht-degree: 76%
+ht-degree: 94%
 
 ---
 
-# AEM Formsの統合ストレージコネクタ (USC) の管理 {#manage-unified-storage-connector}
+# AEM Forms 用の統合ストレージコネクタ（USC）の管理 {#manage-unified-storage-connector}
 
-統合ストレージコネクタ (USC) を使用して、AEM Formsを外部データストレージに接続できます。
+統合ストレージコネクタ（USC）を使用すると、AEM Forms を外部データストレージに接続できます。
 
-例えば、アダプティブフォームのフィールドに値を入力し、そのアダプティブフォームを AEM ワークフローに送信することができます。さらに、Microsoft Azure ストレージサーバーなどの外部ストレージにデータを保存するように AEM ワークフローを設定することもできます。統合ストレージコネクタ (USC) を使用して、AEMワークフローと外部ストレージの間の接続を作成します。
+例えば、アダプティブフォームのフィールドに値を入力し、そのアダプティブフォームを AEM ワークフローに送信することができます。さらに、Microsoft Azure ストレージサーバーなどの外部ストレージにデータを保存するように AEM ワークフローを設定することもできます。AEM ワークフローと外部ストレージの間の接続を作成するには、統合ストレージコネクタ（USC）を使用します。
 
 ## AEM ワークフローと Microsoft Azure ストレージサーバーの接続 {#connect-workflows-with-azure}
 
-Azure ストレージ設定を作成し、統合ストレージコネクタ (USC) を使用してその設定を参照します。 そうすれば、データストレージを外部化して Azureストレージサーバーに接続するように AEM ワークフローモデルを設定することができます。
+Azure ストレージ設定を作成し、統合ストレージコネクタ（USC）を使用してその設定を参照します。そうすれば、データストレージを外部化して Azureストレージサーバーに接続するように AEM ワークフローモデルを設定することができます。
 
 ### [!DNL Azure] ストレージ設定の作成 {#create-azure-storage-configuration}
 
@@ -31,9 +31,9 @@ Azure ストレージ設定を作成し、統合ストレージコネクタ (USC
 1. 「**[!UICONTROL Azure ストレージアカウント]**」フィールドで [!DNL Azure] ストレージアカウントの名前を指定します。
 1. キーを指定して、 **[!UICONTROL Azure アクセスキー]** 「 」フィールドで「 」を選択します。 **[!UICONTROL 保存]**.
 
-### AEM Workflows 用統合ストレージコネクタ (USC) の設定 {#configure-unified-storage-connector-workflows}
+### AEM ワークフロー用の統合ストレージコネクタ（USC）の設定 {#configure-unified-storage-connector-workflows}
 
-AEM Workflows 用の統合ストレージコネクタ (USC) を設定するには、次の手順を実行します。
+AEM ワークフロー用の統合ストレージコネクタ（USC）を設定するには、次の手順を実行します。
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL Forms]**／**[!UICONTROL 統合ストレージコネクタ]**&#x200B;に移動します。
 

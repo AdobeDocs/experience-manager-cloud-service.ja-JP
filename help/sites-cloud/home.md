@@ -6,7 +6,7 @@ exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 * [AEM Sites as a Cloud Service の主な変更点](sites-cloud-changes.md)
 * [オーサリングのクイックスタートガイド](authoring/getting-started/quick-start.md)
 * [ページの公開](authoring/fundamentals/publishing-pages.md)
-* [オーサリング (Edge Delivery Services)](/help/edge/overview.md)
+* [Edge 配信サービスを使用したオーサリング](/help/edge/overview.md)
 * [レスポンシブレイアウトのオーサリング](authoring/features/responsive-layout.md)
 * [オーサリングテンプレート](authoring/features/templates.md)
 * [エクスペリエンスフラグメントの使用](authoring/fundamentals/experience-fragments.md)

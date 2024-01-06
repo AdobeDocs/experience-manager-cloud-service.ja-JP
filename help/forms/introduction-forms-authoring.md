@@ -9,17 +9,17 @@ docset: aem65
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '2465'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
 # アダプティブフォームエディター {#introduction-to-authoring-adaptive-forms}
 
-<span class="preview"> Adobeでは、最新の拡張可能なデータキャプチャを使用することをお勧めします [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja) 対象： [新しいアダプティブFormsの作成](/help/forms/creating-adaptive-form-core-components.md) または [AEM SitesページへのアダプティブFormsの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
+<span class="preview">[アダプティブフォームの新規作成](/help/forms/creating-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 ## 概要 {#overview}
@@ -52,7 +52,7 @@ XML スキーマおよび JSON スキーマは、組織内のバックエンド�
 * 標準フォームコンポーネント
 * アセットのための統合リポジトリー
 
-既存のアダプティブフォームを作成または編集する際には、次の UI 要素を使用します。
+既存のアダプティブフォームを作成または編集する場合は、次の UI 要素を使用します。
 
 * [サイドバー](#sidebar)
 * [ページツールバー](#page-toolbar)
@@ -65,7 +65,7 @@ XML スキーマおよび JSON スキーマは、組織内のバックエンド�
 
 ### サイドバー {#sidebar}
 
-サイドバーを使用すると、
+サイドバーを使用すると、次のことができるようになります。
 
 * AEM Digital Asset Management（DAM）リポジトリーのアセットを検索、表示、使用する。
 * パネル、コンポーネント、フィールド、レイアウトなどのフォームのコンテンツを表示する。
@@ -89,7 +89,7 @@ XML スキーマおよび JSON スキーマは、組織内のバックエンド�
 フォームのオブジェクト階層を表示します。作成者は、フォームオブジェクトツリーで要素をタップすることで、特定のフォームコンポーネントに移動できます。作成者は、このツリーでオブジェクトを探したり並べ替えたりできます。
 
    * **データモデルオブジェクト**
-フォームモデル階層を確認できます。これにより、フォームモデルの要素をアダプティブフォームにドラッグ&amp;ドロップできます。 追加された要素は、元のプロパティを保持したまま、自動的にフォームコンポーネントに変換されます。XML スキーマ、JSON スキーマまたは XDP テンプレートをフォームで使用している場合は、データモデルオブジェクトを表示できます。
+フォームモデル階層を確認できます。アダプティブフォームにフォームモデル要素をドラッグ＆ドロップできます。追加された要素は、元のプロパティを保持したまま、自動的にフォームコンポーネントに変換されます。XML スキーマ、JSON スキーマまたは XDP テンプレートをフォームで使用している場合は、データモデルオブジェクトを表示できます。
 
 * **プロパティブラウザー**
 
