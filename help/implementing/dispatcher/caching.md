@@ -1,12 +1,12 @@
 ---
 title: AEM as a Cloud Service でのキャッシュ
-description: AEM as a Cloud Serviceでのキャッシュの基本について説明します。
+description: AEM as a Cloud Service でのキャッシュの基本について
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 8351e5e60c7ec823a399cbbdc0f08d2704f12ccf
 workflow-type: tm+mt
-source-wordcount: '2775'
-ht-degree: 93%
+source-wordcount: '2865'
+ht-degree: 96%
 
 ---
 
@@ -87,7 +87,7 @@ Define DISABLE_DEFAULT_CACHING
 
 ### BLOB ストレージに格納される大きい画像とコンテンツ {#images}
 
-2022 年 5 月中旬以降に作成されたプログラム ( 特に、65000より大きいプログラム ID の場合 ) のデフォルトの動作は、デフォルトでキャッシュされると同時に、リクエストの認証コンテキストも考慮されます。 古いプログラム（プログラム ID が 65000 以下）は、デフォルトでは BLOB コンテンツをキャッシュしません。
+2022年5月中旬以降に作成されたプログラム（特に、プログラム ID が 65000 より大きい場合）のデフォルトの動作は、デフォルトでキャッシュされると同時に、リクエストの認証コンテキストも考慮されます。古いプログラム（プログラム ID が 65000 以下）は、デフォルトでは BLOB コンテンツをキャッシュしません。
 
 どちらの場合も、キャッシュヘッダーは、Apache `mod_headers` ディレクティブを使用して、Apache／Dispatcher レイヤーでより細かいレベルでオーバーライドすることができます。次に例を示します。
 
@@ -100,7 +100,7 @@ Define DISABLE_DEFAULT_CACHING
 
 Dispatcher レイヤーでキャッシュヘッダーを変更する場合は、広くキャッシュしすぎないように注意してください。[上記](#html-text)の「HTML/テキスト」節のディスカッションを参照してください。また、（キャッシュせずに）非公開にするアセットが、`LocationMatch` ディレクティブフィルターの一部ではないことも確認してください。
 
-BLOB ストアに格納される JCR リソース（16 KB を超える）は、通常、AEMによる 302 リダイレクトとして提供されます。 これらのリダイレクトはインターセプトされ、その後に CDN が続き、コンテンツが BLOB ストアから直接配信されます。 これらの応答でカスタマイズできるヘッダーのセットは、限られています。 例えば、をカスタマイズするには、次のようにします。 `Content-Disposition` dispatcher ディレクティブは次のように使用する必要があります。
+BLOB ストアに格納される JCR リソース（16 KB を超える）は、通常、AEM による 302 リダイレクトとして提供されます。これらのリダイレクトはインターセプトされ、その後に CDN が続き、コンテンツが BLOB ストアから直接配信されます。これらの応答でカスタマイズできるヘッダーのセットは限られています。例えば、`Content-Disposition` をカスタマイズするには、Dispatcher ディレクティブを次のように使用する必要があります。
 
 ```
 <LocationMatch "\.(?i:pdf)$">
@@ -230,9 +230,9 @@ AEM レイヤーは、デフォルトでは BLOB コンテンツをキャッシ�
 
 ### マーケティングキャンペーンパラメーター {#marketing-parameters}
 
-Web サイトの URL には、キャンペーンの成功を追跡するために使用されるマーケティングキャンペーンパラメーターが含まれることがよくあります。
+Web サイトの URL には、キャンペーンの成功をトラックするために使用されるマーケティングキャンペーンパラメーターが含まれることがよくあります。
 
-2023 年 10 月以降に作成された環境で、リクエストのキャッシュを改善するために、CDN は、一般的なマーケティング関連のクエリパラメーター（特に、次の正規表現パターンに一致するパラメーター）を削除します。
+2023年10月以降に作成された環境では、キャッシュリクエストを改善するために、CDN は、一般的なマーケティング関連のクエリパラメーター（特に、次の正規表現パターンに一致するパラメーター）を削除します。
 
 ```
 ^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
@@ -240,7 +240,29 @@ Web サイトの URL には、キャンペーンの成功を追跡するため�
 
 この動作を無効にしたい場合は、サポートチケットを送信します。
 
-2023 年 10 月より前に作成された環境の場合は、Dispatcher 設定の `ignoreUrlParams` プロパティとして [ここに記載されています](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#ignoring-url-parameters).
+2023年10月より前に作成された環境の場合は、Dispatcher 設定の `ignoreUrlParams` プロパティを[ここに記載されている](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#ignoring-url-parameters)ように設定することをお勧めします。
+
+マーケティングパラメーターを無視する方法は 2 つあります。 （最初のクエリは、クエリパラメーターを使用してキャッシュバスティングを無視する場合に推奨されます）。
+
+1. すべてのパラメータを無視し、使用するパラメータを選択的に許可します。
+次の例では、 `page` および `product` パラメーターは無視されず、要求は発行者に転送されます。
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "allow" }
+   /0002 { /glob "page" /type "deny" }
+   /0003 { /glob "product" /type "deny" }
+}
+```
+
+1. マーケティングパラメーターを除くすべてのパラメーターを許可します。 ファイル [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) は、無視する一般的に使用されるマーケティングパラメーターのリストを定義します。 Adobeはこのファイルを更新しません。 マーケティングプロバイダーに応じて、ユーザーが拡張できます。
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "deny" }
+   $include "../cache/marketing_query_parameters.any"
+}
+```
 
 
 ## Dispatcher キャッシュの無効化 {#disp}
