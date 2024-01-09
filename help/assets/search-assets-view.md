@@ -3,10 +3,10 @@ title: ' [!DNL Assets view] でのアセットの検索と検出の方法を学�
 description: 詳しくは、AEM Assets ビューでアセットを検索および検出する方法を参照してください。この強力な検索機能を使用すると、適切なアセットをすばやく発見できるので、コンテンツベロシティ（コンテンツ創出の速度）の向上に役立ちます。
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
+source-git-commit: 6fb2701fc2a4dc1cb9e8ea31134f0b3f2bb6bdf9
 workflow-type: tm+mt
-source-wordcount: '1296'
-ht-degree: 80%
+source-wordcount: '1470'
+ht-degree: 70%
 
 ---
 
@@ -29,6 +29,20 @@ ht-degree: 80%
    * キーワードを使用して検索します。オプションで、フォルダーを変更することもできます。Return キーを押します。
 
    * 最近表示されたアセットを直接検索して、操作を開始します。検索ボックス内をクリックし、最近表示されたアセットを候補から選択します。
+
+## Adobe Fireflyを使用したアセットの検索
+
+どの assets フォルダーにもないアセットを検索する場合は、 [!UICONTROL Adobe Firefly] 内のアセット検索機能 [!UICONTROL Adobe Experience Manager Assets]. 指定したフォルダーに保存されていないアセットを効率的に検索できます。 この機能には、現在、権限を持つ権限を持つユーザーのみがアクセスできます。 <br> 例えば、キーワードを使用してアセットを検索できます `Bugatti Type 57`. 検索時 `Bugatti Type 57`、結果が見つかりません。
+
+![Firefly統合](assets/firefly-integration.jpg)
+*図：アセットフォルダーの Bugatti Type 57 に対する結果が見つかりませんでした。*
+
+検索バーにアセット名を入力し、 **[!UICONTROL 生成]**.
+
+![Firefly統合](assets/bugatti-type-57.jpg)
+*図：アセット検索機能を使用して検索されたAdobe Fireflyの参照。*
+
+サンプルアセットが画面に表示されます。 これらのアセットを目的のフォルダーにアップロードして、アクセスしやすくすることができます。
 
 ## 検索結果のフィルタリング {#refine-search-results}
 
@@ -120,7 +134,6 @@ ht-degree: 80%
 
 1. 「**[!UICONTROL 確認]**」をクリックして、ユーザーインターフェイスからフィルターを削除します。
 
-
 ## 保存済みの検索 {#saved-search}
 
 [!DNL Assets view] の検索機能は非常に使いやすくなっています。検索ボックス内に、キーワードを入力し、Return キーを押せば結果を表示できるます。あるいは、最近検索したキーワードを 1 回クリックするだけですばやく再検索することができます。
@@ -146,11 +159,21 @@ When userA is searching and userB add an asset that matches search results, will
 
 検索結果に表示するアセットを選択し、次の操作を実行できます。
 
+* **類似画像を検索**：メタデータとスマートタグに基づいて、Assets UI で類似の画像アセットを見つけます。
+
 * **詳細**：アセットのプロパティを表示および編集します。
+
+* **ダウンロード**：アセットをダウンロードします。
 
 * **コレクションに追加**：選択したアセットをコレクションに追加します。
 
-* **ダウンロード**：アセットをダウンロードします。
+* **クイックアクセスにピン留め**：[アセットをピン留め](my-workspace-assets-view.md)すると、後で必要になった際に、すばやくアクセスできるようになります。ピン留めしたすべての項目は、マイワークスペースの「**クイックアクセス**」セクションに表示されます。
+
+* **「開く」Adobe Express**:Adobe Experience Manager Assets画面から統合Adobe Expressで画像を編集します。
+
+* **編集**:「 」オプションを使用して画像をAdobe Expressします。
+
+* **リンクを共有**：他のユーザーとアセットの[リンクを共有](share-links-for-assets-view.md)して、アセットにアクセスしてダウンロードできるようにします。
 
 * **削除**：アセットを削除します。
 
@@ -160,15 +183,11 @@ When userA is searching and userB add an asset that matches search results, will
 
 * **名前を変更**：アセットの名前を変更します。
 
+* **ライブラリにコピー**：アセットをライブラリに追加します。
+
 * **タスクを割り当て**：アセットのユーザーにタスクを割り当てます。
 
-* **リンクを共有**：他のユーザーとアセットの[リンクを共有](share-links-for-assets-view.md)して、アセットにアクセスしてダウンロードできるようにします。
-
 * **監視**：アセットに対して実行される[操作を監視](manage-notifications-assets-view.md)します。
-
-* **ファイルの場所を表示**：アセットフォルダーの場所に移動します。
-
-* **クイックアクセスにピン留め**：[アセットをピン留め](my-workspace-assets-view.md)すると、後で必要になった際に、すばやくアクセスできるようになります。ピン留めしたすべての項目は、マイワークスペースの「**クイックアクセス**」セクションに表示されます。
 
 ## 最初のホームページを検索する設定 {#configuring-search-first-homepage}
 
