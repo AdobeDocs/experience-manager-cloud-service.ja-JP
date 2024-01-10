@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 4fc676bd975e44234b478ba57f12cbf0f4f5ba45
+source-git-commit: 0b4c820159f918cb9b3a93d9ab36dc26b1d8da47
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 33%
+source-wordcount: '381'
+ht-degree: 35%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 33%
 
 2023年12月18日（PT）に公開された、メンテナンスリリース 14697 の継続的な改善点を以下にまとめます。問題が発生したリリース14538に代わるものです。 以前のメンテナンスリリースはリリース14227でした。
 
-2023.12.0機能のアクティベーションは、このメンテナンスリリースの完全な機能セットを提供します。 詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja)を参照してください。
+2023.12.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja)を参照してください。
 
 ### 機能強化 {#enhancements-14697}
 
@@ -43,7 +43,7 @@ ht-degree: 33%
 
 ### 既知の問題 {#known-issues-14697}
 
-なし。
+* GRANITE-49031：回帰によって生じる `@JsonIgnore` 注釈が一時的なフィールドで無視されています。
 
 ### 組み込みテクノロジー {#embedded-tech-14697}
 
