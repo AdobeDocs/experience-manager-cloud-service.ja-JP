@@ -1,16 +1,17 @@
 ---
 title: Assets as a [!DNL Cloud Service] の概要
-description: Experience Manager Assets as a の新機能とメリットについて説明します [!DNL Cloud Service]. 企業向けのクラウドネイティブな PaaS ソリューション。
+description: Adobe Experience Manager Assets as a Cloud Service の使用および管理方法について説明します。
 contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: a4601d95076d37ed5df79b7c9dabb8beab8353d0
-workflow-type: ht
-source-wordcount: '825'
+source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
+workflow-type: tm+mt
+source-wordcount: '820'
 ht-degree: 100%
 
 ---
+
 
 # Assets as a [!DNL Cloud Service] の概要  {#assets-cloud-service-introduction}
 

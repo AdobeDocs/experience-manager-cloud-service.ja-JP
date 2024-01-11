@@ -2,7 +2,7 @@
 title: 準備段階
 description: AEM インストールをクラウドに移行する準備ができていることを確認するために、必要な手順を説明します。
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
+source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
 source-wordcount: '1900'
 ht-degree: 96%
@@ -218,6 +218,6 @@ AEM as a Cloud Service に移行するために必要な変更の範囲を確認
 
 * [Cloud Acceleration Manager の概要](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) - Cloud Acceleration Manager を使用してクラウドへの移行をスピードアップする方法に関する包括的なガイドです。
 * [AEM as a Cloud Service：概要、アーキテクチャ、考え方の変革](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=ja#dashboard/learning)
-* [AEM a Cloud Service ホーム](/help/overview/home.md) - Experience Manager as a Cloud Service ドキュメントの概要については、まずこちらを参照してください。
-* [AEM as a Cloud Service の概要](/help/overview/home.md) - このガイドでは、基礎知識、用語、アーキテクチャなど、Experience Manager as a Cloud service の概要を説明します。
+* [AEM a Cloud Service ホーム](/help/overview/introduction.md) - Experience Manager as a Cloud Service ドキュメントの概要については、まずこちらを参照してください。
+* [AEM as a Cloud Service の概要](/help/overview/introduction.md) - このガイドでは、基礎知識、用語、アーキテクチャなど、Experience Manager as a Cloud service の概要を説明します。
 * [オンボーディングジャーニー](/help/journey-onboarding/overview.md) — このガイドでは、Experience Manageras a Cloud Serviceの使用を開始する方法の概要を示します。この概要には、チームへのアクセス方法や設定方法などが含まれます。

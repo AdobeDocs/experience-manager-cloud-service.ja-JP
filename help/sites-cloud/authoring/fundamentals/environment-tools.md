@@ -2,7 +2,7 @@
 title: オーサリング環境とツール
 description: AEM のオーサリング環境は、コンテンツを編成および編集するための様々なメカニズムを提供しています
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 98%
@@ -102,7 +102,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 
 ## アセットブラウザー {#assets-browser}
 
-アセットブラウザーには、現在のページ上で直接使用できるすべての[アセット](/help/assets/home.md)が表示されます。
+アセットブラウザーには、現在のページ上で直接使用できるすべての[アセット](/help/assets/overview.md)が表示されます。
 
 アセットブラウザーはサイドパネル内のタブであり、[コンポーネントブラウザー](#components-browser)と[コンテンツツリー](#content-tree)も同じ場所にあります。サイドパネルを開く（または閉じる）には、ツールバーの左上にある次のアイコンを使用します。
 

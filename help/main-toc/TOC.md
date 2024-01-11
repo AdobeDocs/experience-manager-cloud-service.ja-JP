@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 65893c0c0dee37bed8ecfbb06a12e7c093c4397c
+source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
-source-wordcount: '4573'
+source-wordcount: '4538'
 ht-degree: 96%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 96%
 
 # Experience Manager as a Cloud Service のヘルプ {#content}
 
-+ [AEMaaCS ホーム](/help/overview/home.md)
 + 概要 {#overview}
    + [AEM as a Cloud Service の概要](/help/overview/introduction.md)
    + [新機能と相違点](/help/overview/what-is-new-and-different.md)
@@ -169,9 +168,8 @@ ht-degree: 96%
    + [非推奨（廃止予定）の API](/help/release-notes/deprecated-apis.md)
    + [プレリリースチャネル](/help/release-notes/prerelease.md)
 + セキュリティ {#security}
-   + [AEM as a Cloud Service のセキュリティ](/help/security/home.md)
-   + [AEM as a Cloud Service の高度なネットワーク機能の設定](/help/security/configuring-advanced-networking.md)
    + [AEM as a Cloud Service のセキュリティの概要](/help/security/cloud-service-security-overview.md)
+   + [AEM as a Cloud Service の高度なネットワーク機能の設定](/help/security/configuring-advanced-networking.md)
    + [AEM as a Cloud Service の IMS サポート](/help/security/ims-support.md)
    + [AEM as a Cloud Service のサイト Cookie サポートポリシー](/help/security/same-site-cookie-support.md)
    + [メールサービスの OAuth2 サポート](/help/security/oauth2-support-for-mail-service.md)
@@ -261,7 +259,6 @@ ht-degree: 96%
       + [AEM Dispatcher コンバーター](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
       + [AEM Modernization Tools](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
-   + [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
    + [AEM Cloud Service の AEM Sites の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
    + オーサリング {#authoring}
       + 概要 {#getting-started}
@@ -396,7 +393,6 @@ ht-degree: 96%
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し ](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
 + アセット {#assets}
-   + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [概要と新機能](/help/assets/overview.md)
    + [ [!DNL Assets] as a [!DNL Cloud Service] の主な変更点](/help/assets/assets-cloud-changes.md)
    + [[!DNL Assets] アーキテクチャ](/help/assets/architecture.md)
@@ -681,7 +677,6 @@ ht-degree: 96%
       + [インストールと設定](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher と CDN のキャッシュ](/help/forms/troubleshooting-caching-performance.md)
 + スクリーン {#screens-as-cloud-service}
-   + [AEM Screens as a Cloud Service](/help/screens-cloud/home.md)
    + Screens as a Cloud Service の概要 {#overview}
       + [はじめに](/help/screens-cloud/introduction/introduction.md)
       + [役割の定義について](/help/screens-cloud/introduction/personas-screens-cloud.md)
@@ -718,9 +713,8 @@ ht-degree: 96%
       + [Screens as a Cloud Service 用カスタムコンポーネントの開発](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
    + [Screens as a Cloud Service の FAQ](/help/screens-cloud/screens-cloud-faqs.md)
 + コンテンツとコマース {#content-and-commerce}
-   + [AEM Content and Commerce](/help/commerce-cloud/home.md)
-   + [AEM Content and Commerce as a Cloud Service の主な変更点](/help/commerce-cloud/changes.md)
    + [概要](/help/commerce-cloud/introduction.md)
+   + [AEM Content and Commerce as a Cloud Service の主な変更点](/help/commerce-cloud/changes.md)
    + コマースジャーニー {#journeys}
       + コンテンツ作成者ジャーニー {#author}
          + [AEM Content and Commerce コンテンツ作成者ジャーニー](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
@@ -1079,7 +1073,6 @@ ht-degree: 96%
       + [AEM as a Cloud Service での CDN](/help/implementing/dispatcher/cdn.md)
       + [AEM as a Cloud Service でのキャッシュ](/help/implementing/dispatcher/caching.md)
 + コネクタ {#connectors}
-   + [AEM as a Cloud Service のコネクタの実装 ](/help/connectors/home.md)
    + [AEM コネクタの実装](/help/connectors/implement.md)
    + [AEM コネクタの登録](/help/connectors/submit.md)
    + [AEM コネクタの保守](/help/connectors/maintain.md)

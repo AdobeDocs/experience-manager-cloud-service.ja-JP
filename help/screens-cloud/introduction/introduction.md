@@ -1,13 +1,14 @@
 ---
 title: AEM Screens as a Cloud Service の概要
-description: このページは、Adobe Experience Manager Screensas a Cloud Serviceの紹介として機能します。
+description: AEM Screensの理解をas a Cloud Service。
 exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 56%
+source-wordcount: '365'
+ht-degree: 57%
 
 ---
+
 
 # AEM Screens as a Cloud Service の概要 {#introduction-screens-cloud}
 

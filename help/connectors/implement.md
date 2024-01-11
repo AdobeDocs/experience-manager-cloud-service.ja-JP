@@ -1,13 +1,14 @@
 ---
 title: AEM コネクタの実装
-description: AEM コネクタを構築、テスト、実装する方法について説明します。また、一般的な統合パターンについても学習します。
+description: コネクタとその機能、および Experience Manager にコネクタを実装する方法について説明します。
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 98%
 
 ---
+
 
 AEM コネクタの実装
 =============================

@@ -1,14 +1,15 @@
 ---
 title: 概要
-description: AEM Content and Commerce の入門と概要。Experience Manager Commerce Integration Framework（CIF）は、Adobe Commerce やその他のサードパーティ製コマースソリューションのコマースサービスを Experience Cloud に統合して拡張するためのアドビ推奨のパターンです。
+description: Experience Manager Content and Commerce as a Cloud Service の使用方法と管理方法について説明します。
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 98%
+source-wordcount: '853'
+ht-degree: 100%
 
 ---
+
 
 # コンテンツとコマース {#content-commerce}
 
@@ -31,7 +32,7 @@ Adobe Experience Manager の Content and Commerce を使用すると、ブラン
 これらのプロジェクトは、コマースソリューションの統合の複雑さに対処する必要があります。コマースソリューションは、Adobe Commerce Cloud などの商用ソリューションから一連のカスタムコマースサービスまで、何でもかまいません。この統合は、ユースケースとエコシステムに大きく依存しています。通常は、次のように、様々な場所に影響し、様々な種類があります。
 
 * 複雑で動的なエコシステムの統合（例：製品カタログ）
-* ビジネスは、効率的でオムニチャネルな方法で、製品コンテンツを独自のライフサイクルで管理する必要がある
+* 製品コンテンツを独自のライフサイクルで効率的かつオムニチャネル方式で管理する必要性
 * 様々な個人に対応する複雑でパーソナライズされたショッピングジャーニーの構築
 * バックエンドとフロントエンドで迅速に適応および革新できる能力
 * ピークパフォーマンス（フラッシュセールやブラックフライデーなど）に対応できる、拡張性と安定性に優れた E2E インフラストラクチャの稼働。これには、統合検索やキャッシュ管理などが含まれます。
