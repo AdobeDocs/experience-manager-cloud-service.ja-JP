@@ -5,7 +5,7 @@ exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: bf1260f9a49012bbcb4138e0a5498d8dda451b6a
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 53%
+ht-degree: 54%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 53%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
 >title="ユーザーの移行"
->abstract="コンテンツ転送ツールは、ユーザーとグループを既存の Adobe Experience Manager（AEM）システムから AEM as a Cloud Service に移動する際に役に立ちます。既存のユーザーが IMS ID を使用してログインできるように、マッピングする必要があります。"
+>abstract="コンテンツ転送ツールは、ユーザーとグループを既存の Adobe Experience Manager（AEM）システムから AEM as a Cloud Service に移動する際に役に立ちます。IMS ID を使用してログインできるように、既存のユーザーをマッピングする必要があります。"
 
 >[!NOTE]
 >以前のバージョンのユーザーマッピングツールについては、[レガシードキュメント](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)を参照してください。

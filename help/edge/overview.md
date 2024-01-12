@@ -1,12 +1,12 @@
 ---
 title: AEMとEdge Delivery Services
-description: AEMas a Cloud ServiceがパフォーマンスとEdge Delivery Servicesが提供する完璧な Lighthouse スコアのメリットを理解します。
+description: AEM as a Cloud Service を使用して、Edge 配信サービスで提供されるパフォーマンスと完璧な Lighthouse スコアを活用する方法について説明します。
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 source-git-commit: 9d26a4835dc331f2ff8b741a4c14847ead611874
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 40%
+ht-degree: 43%
 
 ---
 
@@ -80,7 +80,7 @@ Admin Console を使用してサポートチケットを記録する手順は次
 1. チケットのタイトルに「**Edge 配信**」を追加します。
 1. 説明に次の詳細を入力します。
 
-   * ライブ web サイトの URL。（例：`www.mydomain.com`）。
+   * ライブ web サイトの URL。例：`www.mydomain.com`。
    * 元の Web サイトの URL (`.hlx` URL) です。
 
 ## 次の手順 {#whats-next}
