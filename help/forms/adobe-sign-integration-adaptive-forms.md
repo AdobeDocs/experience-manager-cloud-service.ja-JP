@@ -1,11 +1,11 @@
 ---
 title: Adobe Acrobat Sign と AEM Forms の統合方法？
 description: ' [!DNL AEM Forms]  as a Cloud Service 用に Adobe Acrobat Sign を設定する方法？'
-feature: Adaptive Forms
-role: User
+feature: Adaptive Forms, Acrobat Sign
+role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 821c243ab2d8ce1468c80c36d01b5c4c8f2bec76
+source-git-commit: 67d8de3cda921dcaeaac47e64828abbe6abe943f
 workflow-type: tm+mt
 source-wordcount: '2033'
 ht-degree: 80%
@@ -71,14 +71,14 @@ ht-degree: 80%
 
      `https://<shard>/public/oauth/v2`
 
-     次に例を示します。
+     例：
      `https://secure.na1.echosign.com/public/oauth/v2`
 
    * の **[!UICONTROL トークン URL にアクセス]** フィールドには、Adobe Signデータベースシャードを含むデフォルトの URL が含まれます。 URL の形式は次の通りです。
 
      `https://<shard>/oauth/v2/token`
 
-     次に例を示します。
+     例：
      `https://api.na1.echosign.com/oauth/v2/token`
 
    各パラメーターの意味は次のとおりです。
@@ -195,14 +195,14 @@ Adobe Acrobat Sign for Government Solutions チームには、AEM Forms と Adob
 
      `https://<shard>/api/gateway/adobesignauthservice/api/v1/authorize`
 
-     次に例を示します。
+     例：
      `https://secure.na1.adobesign.us/api/gateway/adobesignauthservice/api/v1/authorize`
 
    * の **[!UICONTROL トークン URL にアクセス]** フィールドには、Adobe Signデータベースシャードを含むデフォルトの URL が含まれます。 URL の形式は次の通りです。
 
      `https://<shard>/api/gateway/adobesignauthservice/api/v1/token`
 
-     次に例を示します。
+     例：
      `https://secure.na1.adobesign.us/api/gateway/adobesignauthservice/api/v1/token`
 
    各パラメーターの意味は次のとおりです。

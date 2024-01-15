@@ -1,15 +1,15 @@
 ---
 title: AEM Formsas a Cloud Service環境の既知の問題と制限事項は何ですか。
-description: ' [!DNL AEM Forms] as a Cloud Service 環境の既知の問題と制限事項.'
+description: の既知の問題と制限事項  [!DNL AEM Forms] as a Cloud Service環境。
 contentOwner: khsingh
-role: User, Developer
-level: Intermediate
+role: Admin, Developer, User
+feature: Adaptive Forms
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 95%
+source-wordcount: '367'
+ht-degree: 93%
 
 ---
 

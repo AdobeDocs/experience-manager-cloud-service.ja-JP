@@ -1,11 +1,12 @@
 ---
 title: AEM Forms as a Cloud Serviceでは、どのユーザーグループを標準で使用できますか？
 description: すぐに使用できるユーザーグループと各グループに割り当てられた権限のリスト
-exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 80%
+source-wordcount: '167'
+ht-degree: 100%
 
 ---
 
@@ -32,7 +33,7 @@ ht-degree: 80%
     <ul> 
      <li>アダプティブフォームを作成、プレビュー、公開、送信する</li> 
     <!-- <li>Create, preview, and publish interactive communications and document fragments</li> -->
-     <li>アセットのAEMインスタンスへのアップロード</li> 
+     <li>AEM インスタンスにアセットをアップロード</li> 
      <li>テーマを作成</li> 
     </ul> </td> 
   </tr>
@@ -108,11 +109,11 @@ ht-degree: 80%
 
 ## 関連トピック
 
-* [Cloud Service環境へのオンボーディング](/help/forms/setup-forms-cloud-service.md)
-* [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
-* [AEM 6.5 FormsからCloud Serviceへの移行](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+* [Cloud Service 環境へのオンボード](/help/forms/setup-forms-cloud-service.md)
+* [ローカル開発環境を設定](/help/forms/setup-local-development-environment.md)
+* [AEM 6.5 Forms から Cloud Service への移行](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [スタンドアロンのアダプティブフォームを作成](/help/forms/creating-adaptive-form-core-components.md)
-* [ Sites ページへ AEM アダプティブフォームを追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [AEM Sites ページへ AEM アダプティブフォームを追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 <!--
 

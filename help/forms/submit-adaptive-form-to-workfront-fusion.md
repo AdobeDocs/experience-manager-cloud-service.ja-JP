@@ -3,13 +3,15 @@ title: Adobe Workfront Fusion とAEM Forms Submission の統合
 description: Adobe Workfront Fusion を使用すると、繰り返しのタスクに重点を置くのではなく、新しいタスクに重点を置くことができます。 フォーム送信を使用して、Adobe Workfront Fusion をアダプティブフォームに接続することができます。
 keywords: Adobe Workfront Fusion、Adobe Workfront Fusion とAEM Forms Submission の統合、Adobe Workfront Fusion とAEM Forms、Workfront Fusion とAEM Forms、Workfront Fusion とAEM Forms、AEM FormsとWorkfront Fusion の接続、WorkfrontとAEM Forms Fusion とWorkfrontの接続方法、 Fusion と Fusion をフォームに接続する
 topic-tags: author, developer
-source-git-commit: 68314ca09594d3c4c5639363326117b89b733a4d
+feature: Adaptive Forms
+role: Admin, User
+exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 4%
 
 ---
-
 
 # アダプティブフォームをAdobe Workfront Fusion に送信する
 
@@ -173,8 +175,8 @@ Workfont Fusion の送信アクションは、次の場合に設定できます�
 1. AEMインスタンスにログインします。
 1. **[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;に移動します。
 1. アダプティブフォームを選択し、編集モードでフォームを開きます。
-1. コンテンツブラウザーを開き、「 **[!UICONTROL ガイドコンテナ]** アダプティブフォームのコンポーネント
-1. ガイドコンテナのプロパティをクリックします。 ![ガイドのプロパティ](/help/forms/assets/configure-icon.svg) アイコン。 アダプティブフォームコンテナダイアログボックスが開きます。
+1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
+1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。アダプティブフォームコンテナダイアログボックスが開きます。
 
    ![Workfront Fusion の送信アクション](/help/forms/assets/workfront-scenario-existing-af.png)
 
@@ -189,5 +191,3 @@ Workfont Fusion の送信アクションは、次の場合に設定できます�
 - 1 つのシナリオに複数の Webhook リンクを含めることができますが、一度にアクティブになる Webhook リンクは 1 つだけです。 リンクされていない Webhook は、AEM Formsの送信アクションドロップダウンリストに表示されないように、削除することをお勧めします。
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
-
-

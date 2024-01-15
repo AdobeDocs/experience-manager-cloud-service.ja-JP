@@ -1,10 +1,12 @@
 ---
 title: アダプティブフォームおよび通信 API 用の AEM Forms as a Cloud Service アーキテクチャ
 description: ' [!DNL AEM Forms]  as a Cloud Service のアーキテクチャを理解し、プラットフォームの拡張性、回復性、パフォーマンスの側面について学習します。'
+role: Admin, Developer, User
+feature: Adaptive Forms
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1033'
 ht-degree: 100%
 
 ---

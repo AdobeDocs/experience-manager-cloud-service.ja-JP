@@ -1,8 +1,9 @@
 ---
 title: Forms Designer を使用して、レコードのドキュメント (DoR) テンプレートとフォームフラグメントを作成するにはどうすればよいですか？
 description: 用途 [!DNL AEM Forms] designer を使用して、レコードのドキュメントのテンプレートとフォームフラグメントを作成します。
-feature: Forms Designer
-source-git-commit: b2769134c2e744f41cbb7e8a3cf08c622cdc07ca
+feature: Adaptive Forms, Forms Designer
+role: Admin, Developer, User
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 49%

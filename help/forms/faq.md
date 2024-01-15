@@ -2,11 +2,12 @@
 title: AEM Formsas a Cloud Serviceに関するよくある質問
 description: Forms as a Cloud Service のよくある質問
 contentOwner: khsingh
-exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
+role: User
+feature: Adaptive Forms, FAQ
 index: false
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '986'
 ht-degree: 98%
 
 ---

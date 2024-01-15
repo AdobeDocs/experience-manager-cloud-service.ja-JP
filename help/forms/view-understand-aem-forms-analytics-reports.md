@@ -4,15 +4,15 @@ description: アダプティブFormsはAdobe Analyticsとシームレスに統�
 keywords: アダプティブForms分析レポート、Adobe分析レポート、Forms Analytics レポートの表示と理解
 topic-tags: develop
 feature: Adaptive Forms
-role: User
+role: Admin, User
 level: Intermediate
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+exl-id: 756dee1f-4685-4783-961d-b172a5bd0692
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 1%
+source-wordcount: '976'
+ht-degree: 2%
 
 ---
-
 
 # アダプティブForms分析レポートの表示と理解 {#viewing-and-understanding-aem-forms-analytics-reports}
 
@@ -110,5 +110,5 @@ Formsのアクセス元が表示されます。 フォームユーザーに関�
 ## 関連トピック {#see-also}
 
 * [アダプティブフォームのAdobe Analyticsを有効にする (Experience Cloud設定の自動化を使用 )](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
-* [アダプティブフォームをAEM Sitesページまたはエクスペリエンスフラグメントに追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [AEM Sites ページまたはエクスペリエンスフラグメントにアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [AEM FormsとAdobe Analyticsの統合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)

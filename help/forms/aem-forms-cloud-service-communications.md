@@ -2,7 +2,9 @@
 title: Forms as a Cloud Service を使用して、XDP や PDF のテンプレートとデータを結合したり、PCL、ZPL および PostScript 形式で出力を生成したりする方法
 description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms, APIs
+role: Admin, Developer, User
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 100%

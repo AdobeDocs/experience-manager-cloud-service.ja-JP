@@ -2,9 +2,10 @@
 title: レコードのドキュメントテンプレートを作成するために Forms Designer をダウンロードしてインストールする方法
 description: Forms Designer を使用して、レコードのドキュメントテンプレートとして機能する XDP および PDF フォームテンプレートを作成できます。
 keywords: Designer のインストール、Forms Designer のインストール、Forms Designer のインストール要件
-feature: Forms Designer
+feature: Adaptive Forms, Forms Designer
+role: Admin, Developer, User
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: b2769134c2e744f41cbb7e8a3cf08c622cdc07ca
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 100%

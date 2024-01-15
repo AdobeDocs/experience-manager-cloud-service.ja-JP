@@ -1,8 +1,9 @@
 ---
 title: AEM Forms のローカル開発環境を設定する方法を教えてください。
 description: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境を設定
-exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 58325cccf218eb2176868879842a795d1c91d8a6
 workflow-type: tm+mt
 source-wordcount: '2682'
 ht-degree: 100%
@@ -241,7 +242,7 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
 >[!NOTE]
 >
 > Microsoft® Dynamics 365 および Salesforce フォームデータモデルを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 30 以降に基づくプロジェクトをセットアップします。
->Tranquil、Urbane、Ultramarine テーマを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 32 以降に基づくプロジェクトをセットアップします。
+Tranquil、Urbane、Ultramarine テーマを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 32 以降に基づくプロジェクトをセットアップします。
 
 プロジェクトを設定するには、以下を実行します。
 
@@ -268,7 +269,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
      >[!WARNING]
      >
-     >* バージョン 45 でアーキタイププロジェクトを作成する場合、[AEM アーキタイププロジェクトフォルダー]/pom.xml では、最初にフォームコアコンポーネントのバージョンを 2.0.64 に設定します。アーキタイププロジェクトを構築またはデプロイする前に、フォームコアコンポーネントのバージョンを 2.0.62 に更新します。
+     * バージョン 45 でアーキタイププロジェクトを作成する場合、[AEM アーキタイププロジェクトフォルダー]/pom.xml では、最初にフォームコアコンポーネントのバージョンを 2.0.64 に設定します。アーキタイププロジェクトを構築またはデプロイする前に、フォームコアコンポーネントのバージョンを 2.0.62 に更新します。
 
 1. プロジェクトをローカル開発環境にデプロイします。以下のコマンドを使用して、ローカル開発環境にデプロイできます
 

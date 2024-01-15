@@ -1,11 +1,12 @@
 ---
-title: 設定方法 [!DNL AEM Forms] as a cloud service 環境の場合
-description: 設定と設定について説明します。 [!DNL AEM Forms] as a Cloud Service環境。
-exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+title: ' [!DNL AEM Forms]  as a Cloud Service 環境の設定方法'
+description: ' [!DNL AEM Forms]  as a Cloud Service 環境のセットアップと設定方法について説明します。'
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 64%
+source-wordcount: '602'
+ht-degree: 100%
 
 ---
 
@@ -19,17 +20,17 @@ ht-degree: 64%
 
 ## ペルソナの決定 {#personas-aem-forms-project}
 
-<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Adobe Experience Manager(AEM)Formsas a Cloud Service環境にオンボーディングする前に、ペルソナを決定し、プロジェクトのチームを構築します。 典型的な [!DNL AEM Forms] プロジェクトチームには次のペルソナがあります。
+<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Adobe Experience Manager (AEM) Forms as a Cloud Service 環境にオンボーディングする前に、ペルソナを決定し、プロジェクトのチームを構築します。典型的な [!DNL AEM Forms] プロジェクトチームには次のペルソナがあります。
 
-* **ユーザーエクスペリエンス (UX) デザイナー**：ユーザーエクスペリエンス (UX) デザイナーは、のスタイル、レイアウト、ブランディングを定義します。 [!DNL AEM Forms] アセット。
+* **ユーザーエクスペリエンス（UX）デザイナー**：ユーザーエクスペリエンス（UX）デザイナーは、[!DNL AEM Forms] のアセットのスタイル、レイアウト、ブランディングを定義します。
 
-* **Forms開業医**:Formsの実務者は、UX デザイナーが提供するスタイル、レイアウト、ブランディングに従って、アダプティブなForms、テーマ、テンプレートを作成します。 また、担当者はアダプティブフォームを作成して、フォームデータモデルや AEM ワークフローと統合します。Forms 担当者は、通常、フロントエンドのタスクを実行します。
+* **Forms 担当者**：Forms 担当者は、UX デザイナーが提供するスタイル、レイアウト、ブランディングに従って、アダプティブフォーム、テーマ、テンプレートを作成します。また、担当者はアダプティブフォームを作成して、フォームデータモデルや AEM ワークフローと統合します。Forms 担当者は、通常、フロントエンドのタスクを実行します。
 
-* **Forms 開発者**：Forms 開発者は、カスタムフォームソリューションを開発します。Forms開発者は、通常、カスタムコンポーネントの開発、AEMワークフロー、事前入力サービスなどのバックエンド開発をおこないます。
+* **Forms 開発者**：Forms 開発者は、カスタムフォームソリューションを開発します。Forms 開発者は、通常、カスタムコンポーネント、AEM ワークフロー、事前入力サービスなどのバックエンド開発を担当します。
 
 * **AEM 管理者**：AEM 管理者は、ユーザーの設定、環境の堅牢化、データソースの設定、メールの設定、サードパーティ製ソフトウェアなど、全体的な設定を支援します。AEM 管理者は、Adobe Analytics、Adobe Target、Adobe Sign との統合なども支援します。
 
-* **エンドユーザー**：ユーザーは、公開済みのフォームを操作して送信し、送信済みのフォームに署名し、送信済みのアプリケーションを Web ポータル経由でトラッキングして、パーソナライズされたコミュニケーションを受け取ります。
+* **エンドユーザー**：ユーザーは、公開されたフォームとやり取りして送信し、送信されたフォームに署名し、送信されたアプリケーションを web ポータル経由で確認し、パーソナライズされたコミュニケーションを受信します。
 
 <!-- While onboarding to the service, assign the following AEM groups to [!DNL AEM Forms] as a Cloud Service based on their role:
 
@@ -43,7 +44,7 @@ ht-degree: 64%
 
 * [!DNL Adobe Experience Manager] as a Cloud Service への[オンボード](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ja)。
 
-* （サンドボックスのみ）サービスにオンボードした後、[作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=en)と[実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=ja)は、実稼働用と非実稼働用の両方のパイプラインを実行します。の最新の機能を有効にし、提供します。 [!DNL AEM Forms] as a Cloud Serviceの環境に適用されます。
+* （サンドボックスのみ）サービスにオンボードした後、[作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=ja)と[実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=ja)は、実稼働用と非実稼働用の両方のパイプラインを実行します。[!DNL AEM Forms] as a Cloud Service の最新機能を有効にし、環境に提供します。
 
 Forms as a Cloud Service を使用してアダプティブフォーム（デジタル登録）を作成したり、顧客通信を生成したりできます。[!DNL Adobe Experience Manager] as a Cloud Service の[オンボーディング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ja)完了後、次のいずれかの操作を実行して、デジタル登録またはカスタマーコミュニケーション機能を有効にします。また、次の両方の機能を有効にすることもできます。
 
@@ -63,7 +64,7 @@ Forms as a Cloud Service を使用してアダプティブフォーム（デジ�
 
 >[!NOTE]
 >
-> ドキュメント操作 API を有効にして設定するには、以下のルールを [Dispatcher の設定](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+> ドキュメント操作 API を有効にし設定するには、次のルールを [Dispatcher 設定](setup-local-development-environment.md#forms-specific-rules-to-dispatcher)に追加します。
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
@@ -75,9 +76,9 @@ Forms as a Cloud Service を使用してアダプティブフォーム（デジ�
 | ユーザータイプ（ペルソナ） | ユーザーグループ | AEM インスタンス |
 |---|---|---|
 | Forms 担当者／Forms 開発者 | <ul> <li> [!DNL forms-users] </li><li> [!DNL template-author] </li><li> [!DNL workflow-users] </li><li> [!DNL workflow-editors] </li><li> [!DNL fdm-authors] </li></ul> | オーサーインスタンス |
-| ユーザーエクスペリエンス (UX) デザイナー | <ul> <li> [!DNL forms-users]</li><li> [!DNL template-author] </li></ul> | オーサーインスタンス |
+| ユーザーエクスペリエンス（UX）デザイナー | <ul> <li> [!DNL forms-users]</li><li> [!DNL template-author] </li></ul> | オーサーインスタンス |
 | AEM 管理者 | <ul> <li>[!DNL aem-administrators]、</li> <li>[!DNL fd-administrators] </li> </ul> | オーサーおよびパブリッシュインスタンス |
-| エンドユーザー | <ul> <li>アダプティブフォームを表示して送信するためにユーザーがログインしなければならない場合は、そのユーザーを [!DNL forms-users] グループ化します。 </li> <li>アダプティブフォームへのアクセスにユーザー認証が必要ない場合は、グループを割り当てません。 </li> </ul> | オーサーおよびパブリッシュインスタンス |
+| エンドユーザー | <ul> <li>ユーザーがアダプティブフォームを表示および送信するためにログインする必要がある場合は、ユーザを [!DNL forms-users] グループに追加します。 </li> <li>アダプティブフォームへのアクセスにユーザー認証が必要ない場合は、グループを割り当てません。 </li> </ul> | オーサーおよびパブリッシュインスタンス |
 
 Forms 固有の AEM グループと対応する権限について詳しくは、 [グループと権限](forms-groups-privileges-tasks.md) を参照してください。
 
@@ -85,7 +86,7 @@ Forms 固有の AEM グループと対応する権限について詳しくは、
 
 ## 次の手順 {#next-steps}
 
-[ローカル開発環境をセットアップします](setup-local-development-environment.md)。ローカル開発環境を使用して、アダプティブフォームと関連アセット（テーマ、テンプレート、カスタム送信アクション、事前入力サービスなど）を作成できます。 そして、 [PDF formsをアダプティブFormsに変換する](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ja) クラウド開発環境にログインする必要はありません。
+[ローカル開発環境をセットアップします](setup-local-development-environment.md)。ローカル開発環境を使用して、アダプティブフォームと関連アセット（テーマ、テンプレート、カスタム送信アクション、事前入力サービスなど）を作成できます。そして、クラウド開発環境にログすることなく [PDF フォームをアダプティブフォームに変換します](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ja)。
 
 <!-- ### Business unit and end-users {#business-unit-and-end-users}
 

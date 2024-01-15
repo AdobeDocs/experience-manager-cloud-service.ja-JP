@@ -2,8 +2,10 @@
 title: アダプティブフォームに対してAdobe Analyticsを有効にするにはどうすればよいですか？
 description: Experience Cloudの自動設定を使用すると、Adobe Analyticsをアダプティブフォームに接続して、訪問者のインタラクションとエンゲージメントに関するインサイトを追跡できます。
 keywords: Experience Cloud設定の自動化、FormsでのAdobe Analyticsの有効化、アダプティブFormsでのAdobe Analyticsの有効化、Forms分析の統合、FormsとAdobe Analyticsを使用したアダプティブフォームのAdobe Analyticsの有効化
+feature: Adaptive Forms
+role: Admin, User
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 6%
@@ -15,7 +17,7 @@ ht-degree: 6%
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | この記事 |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html?lang=ja) |
 
 Experience Cloudの自動設定を使用すると、Adobe AnalyticsをアダプティブFormsに連携でき、フォームとのユーザーインタラクションを追跡し、分析し、訪問者のインタラクションとエンゲージメントに関するインサイトを提供できます。 Experience Cloudのセットアップ自動化は、完了時間やドロップオフポイントなどの指標の評価を含む、フォームのパフォーマンスの監視にも役立ちます。 この分析により、フォームを最適化してユーザーエクスペリエンスを向上させると同時に、ログインステータスに基づいてユーザーの行動を区別し、一般的な傾向やパターンを特定することができます。
 
@@ -236,5 +238,5 @@ AEM Sitesページでアダプティブフォームに接続して Analytics を
 ## 関連トピック {#see-also}
 
 * [アダプティブForms分析レポートの表示と理解](/help/forms/view-understand-aem-forms-analytics-reports.md)
-* [AEM Sites ページまたはエクスペリエンスフラグメントにアダプティブフォームを追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [AEM Sites ページまたはエクスペリエンスフラグメントにアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [AEM FormsとAdobe Analyticsの統合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)

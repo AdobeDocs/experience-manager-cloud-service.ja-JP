@@ -3,11 +3,11 @@ title: AEM Forms as a Cloud Service およびローカル開発環境で、ア�
 description: 詳しくは、AEM Forms as a Cloud Service でアダプティブフォームコアコンポーネントを有効にする方法参照してください。
 contentOwner: Khushwant Singh
 docset: CloudService
-role: Admin
-exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
-workflow-type: ht
-source-wordcount: '1013'
+role: Admin, Developer, User
+feature: Adaptive Forms, Core Components
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+workflow-type: tm+mt
+source-wordcount: '985'
 ht-degree: 100%
 
 ---
