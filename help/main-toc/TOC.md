@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
+source-git-commit: 8a74f027c7fe16c3bd23a8627bc9c82e8840cb77
 workflow-type: tm+mt
-source-wordcount: '4538'
+source-wordcount: '4544'
 ht-degree: 96%
 
 ---
@@ -656,6 +656,8 @@ ht-degree: 96%
             + [アクセシブルなアダプティブフォームの作成](/help/forms/creating-accessible-adaptive-forms.md)
          + [フォームポータルの設定](/help/forms/configure-forms-portal.md)
          + [レビューの作成と管理](/help/forms/create-reviews-forms.md)
+      + [アダプティブフォームのキーワード](/help/forms/adaptive-forms-keywords.md)
+      + [フォームのプレビュー](/help/forms/previewing-forms.md)
    + Forms 中心のワークフロー {#create-form-centric-workflows}
       + [ワークフローでの Forms 中心のステップの使用 + ステップリファレンス](/help/forms/aem-forms-workflow-step-reference.md)
       + [Forms 中心のワークフローでの変数の使用](/help/forms/variable-in-aem-workflows.md)

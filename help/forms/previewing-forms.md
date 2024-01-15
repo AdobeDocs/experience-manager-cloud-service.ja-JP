@@ -1,13 +1,13 @@
 ---
 title: アダプティブフォームのプレビュー方法は？
-description: ユーザーは、発行またはアクティブ化する前にフォームをプレビューし、期待通りにフォームを使用できるようにします。 プレビューオプションは、サポートされているフォームタイプによって異なる場合があります。
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+description: ユーザーは、発行またはアクティブ化する前にフォームをプレビューし、期待通りにフォームを表示できます。 プレビューオプションは、サポートされているフォームタイプによって異なる場合があります。
 topic-tags: author
-discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 6511c4273ca3d394d98a61e8acb4d3cb03c243d5
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 45%
+source-wordcount: '336'
+ht-degree: 38%
 
 ---
 
@@ -28,28 +28,28 @@ ht-degree: 45%
    <td><strong>アセットタイプ</strong><br /> </td>
    <td><strong>使用できるプレビューオプション</strong><br /> </td>
   </tr>
+  <!--<tr>
+   <td>Document</td>
+   <td>PDF preview</td>
+  </tr>-->
   <tr>
-   <td>ドキュメント</td>
-   <td>PDFプレビュー</td>
-  </tr>
-  <tr>
-   <td>PDFフォーム</td>
+   <td>PDF フォーム</td>
    <td>PDF プレビューとデータを使用したプレビュー<br /> </td>
   </tr>
   <tr>
    <td>アダプティブフォーム</td>
    <td>HTML プレビューとデータを使用した HTML プレビュー</td>
   </tr>
-  <tr>
-   <td>フォームテンプレート</td>
-   <td>PDF プレビュー、データを使用した PDF プレビュー、HTML プレビュー、データを使用した HTML プレビュー<br /> </td>
-  </tr>
+  <!--<tr>
+   <td>Form Template</td>
+   <td>PDF preview, PDF preview with Data, HTML preview, HTML preview with Data<br /> </td>
+  </tr>-->
  </tbody>
 </table>
 
 ## フォームのプレビュー {#previewing-a-form-1}
 
-1. プレビューするアセットを選択し、アクションツールバーのプレビュー ![aem6forms_preview](assets/aem6forms_preview.png) をクリックします。
+1. プレビューするアセットを選択し、プレビューをクリックします。 ![aem6forms_preview](assets/aem6forms_preview.png) 」をクリックします。
 
    >[!NOTE]
    >
@@ -61,7 +61,7 @@ ht-degree: 45%
 
    * HTML としてプレビュー
    * データを使用したプレビュー
-   * PDF としてプレビュー（フォームテンプレートから選択可能）
+     <!--* Preview as PDF (available for form templates)-->
 
 ## データを使用してプレビュー {#preview-with-data}
 
