@@ -2,10 +2,10 @@
 title: ログへのアクセスと管理
 description: AEM as a Cloud Service での開発プロセスを支援するために、ログにアクセスして管理する方法について説明します。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 76%
+source-wordcount: '330'
+ht-degree: 97%
 
 ---
 
@@ -18,9 +18,11 @@ AEM as a Cloud Service での開発プロセスを支援するために、ログ
 
 ## ログのダウンロード {#download-logs}
 
-ログをダウンロードするには、以下の手順を実行します。
+ログをダウンロードするには、次の手順を実行します。
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
+
+1. 次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面で、プログラムを選択します。
 
 1. **概要**&#x200B;ページから&#x200B;**環境**&#x200B;カードに移動します。
 
@@ -32,11 +34,11 @@ AEM as a Cloud Service での開発プロセスを支援するために、ログ
 
    ![ログをダウンロードダイアログ](assets/download-preview.png)
 
-   ケース [その他の公開地域](/help/operations/additional-publish-regions.md) がお使いの環境で有効になっている場合は、次に示すように、各地域を選択し、ログを個別にダウンロードできます。
+   [その他の公開地域](/help/operations/additional-publish-regions.md)がお使いの環境で有効になっている場合は、次に示すように、各地域を選択し、ログを個別にダウンロードできます。
 
    ![その他の公開地域についてはログをダウンロード](assets/download-publish-region-logs.png)
 
-1. サービスを選択したら、取得するログの横にあるダウンロードアイコンをクリックします。
+1. サービスを選択したら、取得するログの隣にあるダウンロードアイコンをクリックします。
 
 **環境**&#x200B;ページからもログにアクセスできます。
 
@@ -90,7 +92,7 @@ Cloud Manager API と Adobe I/O CLI について詳しくは、次の追加の�
 * [Cloud Manager API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/)
 * [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
-AEM as a Cloud Serviceのログファイルについて詳しくは、次のその他のリソースを参照してください。
+AEM as a Cloud Service のログファイルについて詳しくは、次のその他のリソースを参照してください。
 
-* [Cloud 5 AEM ログファイル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
+* [Cloud 5 AEM ログファイル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-search-and-indexing.html?lang=ja)
 * [ログを使用した AEM as a Cloud Service のデバッグ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=ja)

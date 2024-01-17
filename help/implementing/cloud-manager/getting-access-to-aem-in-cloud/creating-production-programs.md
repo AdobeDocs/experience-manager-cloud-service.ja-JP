@@ -2,10 +2,10 @@
 title: 実稼動プログラムの作成
 description: Cloud Manager を使用して、ライブトラフィックをホストする独自の実稼動プログラムを作成する方法について説明します。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 79d3ec7f5ede84fd989b7d5440739ec9560a547f
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 73%
+source-wordcount: '599'
+ht-degree: 88%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 73%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. クリック **プログラムの追加** 画面の右上隅から。
+1. 次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面、タップまたはクリック **プログラムの追加** をクリックします。
 
    ![Cloud Manager ランディングページ](assets/log-in.png)
 
@@ -30,15 +30,13 @@ ht-degree: 73%
 
    ![プログラム作成ウィザード](assets/create-production-program.png)
 
-1. オプションとして、画像ファイルを&#x200B;**プログラム画像を追加**&#x200B;ターゲットにドラッグ＆ドロップするか、ファイルブラウザーからクリックして画像を選択することで、プログラムに画像を追加できます。「**続行**」を選択します。
+1. オプションとして、画像ファイルを&#x200B;**プログラム画像を追加**&#x200B;のターゲットにドラッグ＆ドロップするか、ファイルブラウザーからクリックして画像を選択することで、プログラムに画像を追加できます。「**続行**」を選択します。
 
-1. 必要な権限がある場合は、 **セキュリティ** タブが表示され、有効化するオプションが提供されます **HIPAA** および/または **WAF-DDOS 保護** 実稼動プログラム用に作成されます。 作成するプログラムに必要な場合は、該当するオプションをオンにしてから、 **続行**.
+1. 必要な権限がある場合は、**セキュリティ**&#x200B;タブが表示され、実稼動プログラム用に **HIPAA** および／または **WAF-DDOS 保護**&#x200B;をアクティベートするオプションが提供されます。作成するプログラムに必要な場合は、該当するオプションをオンにしてから、**続行**&#x200B;を選択します。
 
    * プログラムの作成後に HIPAA を有効または無効にすることはできません。
       * アドビの HIPAA 対応ソリューションの実装について詳しくは、[こちら](https://www.adobe.com/go/hipaa-ready)を参照してください。
-   * 有効化すると、WAF-DDOS 保護は、 [実稼動以外のパイプライン。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-
-   {{waf-limited-release}}
+   * 有効化すると、WAF-DDOS 保護は、[実稼動以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)で設定できます。
 
    ![セキュリティオプション](assets/create-production-program-security.png)
 
@@ -49,7 +47,7 @@ ht-degree: 73%
 
    ![ソリューションを選択](assets/setup-prod-select.png)
 
-1. ソリューション名の前の山形記号をクリックすると、「 **コマース** 以下のアドオンオプション **Sites**.
+1. ソリューション名の前の山形記号をクリックすると、オプションのアドオンが表示されます。例えば、**Sites** で **Commerce** アドオンオプションを選択できます。
 
    ![アドオンを選択](assets/setup-prod-commerce.png)
 
@@ -60,7 +58,7 @@ ht-degree: 73%
    ![運用開始予定日の定義](assets/setup-go-live.png)
 
    * この日付はいつでも編集できます。
-   * この日付は情報提供のみを目的としています。プログラム概要ページの運用開始ウィジェットをトリガーして、成功するスムーズな運用開始エクスペリエンスにつながるジャーニーと整合する AEM as a Cloud Service ベストプラクティスドキュメントへの製品内リンクをタイムリーに提供します。
+   * この日付は、情報提供のみを目的とし、Go Live ウィジェットを [**プログラムの概要** ページ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) AEMas a Cloud Serviceのベストプラクティスドキュメントへの製品内リンクをタイムリーに提供し、Go Live の成功とスムーズな運用を実現するジャーニーに合わせます。
 
 1. 「**作成**」をクリックします。
 
@@ -70,7 +68,7 @@ ht-degree: 73%
 
 ## プログラムへのアクセス {#accessing}
 
-1. プログラムカードがランディングページに表示されたら、省略記号ボタンを選択して、使用可能なメニューオプションを表示します。
+1. ランディングページにプログラムカードが表示されたら、省略記号（...）ボタンを選択して、使用可能なメニューオプションを表示します。
 
    ![プログラムの概要](assets/program-overview.png)
 
@@ -80,7 +78,7 @@ ht-degree: 73%
 
    ![プログラムの概要](assets/set-up-prod5.png)
 
-別のプログラムに切り替えたり、概要ページに戻って別のプログラムを作成する必要がある場合は、画面の左上にあるプログラム名をクリックすると、 **に移動します。** オプション。
+別のプログラムに切り替えたり、概要ページに戻って別のプログラムを作成したりする必要がある場合は、いつでも画面の左上のプログラム名をクリックして「**移動先**」オプションを表示します。
 
 ![](assets/create-program-a1.png) に移動します。
 

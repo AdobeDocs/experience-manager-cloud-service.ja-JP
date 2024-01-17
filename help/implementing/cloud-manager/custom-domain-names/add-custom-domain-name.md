@@ -2,10 +2,10 @@
 title: カスタムドメイン名の追加
 description: Cloud Manager を使用してカスタムドメイン名を追加する方法を説明します。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 83%
+source-wordcount: '636'
+ht-degree: 94%
 
 ---
 
@@ -18,23 +18,25 @@ Cloud Manager では、次の 2 つの場所からカスタムドメイン名を
 
 >[!NOTE]
 >
->Cloud Manager でカスタムドメイン名を追加するには、ユーザーが&#x200B;**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持っている必要がありますFastly CDN を使用している。
+>ユーザーが **ビジネスオーナー** または **デプロイメントマネージャー** ロールを使用して Cloud Manager にカスタムドメイン名を追加する必要があります。また、Fastly CDN を使用する必要があります。
 
 ## ドメイン設定ページからのカスタムドメイン名の追加 {#adding-cdn-settings}
 
-カスタムドメイン名を追加する場合、ドメインは、最も具体的で有効な証明書を使用して提供されます。 複数の証明書が同じドメインを持つ場合は、最も新しく更新されたものが選択されます。 Adobeでは、重複するドメインがないように証明書を管理することをお勧めします。
+カスタムドメイン名を追加する場合、最も具体的で有効な証明書を使用してドメインが提供されます。複数の証明書が同じドメインを持つ場合は、直近に更新されたものが選択されます。重複するドメインがないように証明書を管理することをお勧めします。
 
-**ドメイン設定**&#x200B;ページからカスタムドメイン名を追加するには、次の手順に従います。これらの手順は Fastly に基づいています。 別の CDN を使用する場合は、使用するように選択した CDN でドメインを設定する必要があります。
+**ドメイン設定**&#x200B;ページからカスタムドメイン名を追加するには、次の手順に従います。これらの手順は Fastly に基づいています。別の CDN を使用する場合は、使用するように選択した CDN でドメインを設定する必要があります。
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. **概要**&#x200B;ページの&#x200B;**環境**&#x200B;画面に移動します。
+1. 次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面で、プログラムを選択します。
 
-1. クリック **ドメイン設定** （左側のナビゲーションパネル）
+1. **概要**&#x200B;ページから&#x200B;**環境**&#x200B;画面に移動します。
+
+1. 左側のナビゲーションパネルで「**ドメイン設定**」をクリックします。
 
    ![ドメイン設定ウィンドウ](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
-1. 次をクリック： **ドメインを追加** 右上のボタンで **ドメイン名を追加** ダイアログ。
+1. 右上の「**ドメインを追加**」ボタンをクリックして「**ドメイン名を追加**」ダイアログを開きます。
 
    ![ドメインを追加ダイアログ](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
@@ -82,7 +84,7 @@ CDN デプロイメントの場合は、有効な SSL 証明書が必要で、TX
 
    1. カスタムドメイン名を入力します。
    1. この名前に関連付けられている SSL 証明書をドロップダウンリストから選択します。
-   1. クリック **+追加**.
+   1. 「**+追加**」をクリックします。
 
    ![カスタムドメイン名の追加](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 

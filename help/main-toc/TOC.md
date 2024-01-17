@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e25f3e74fa7fa18b92ffe0c40a19f20442d4c7a0
+source-git-commit: 3bc71fe59e0b0c257e6747f93b3d76bc801a39b4
 workflow-type: tm+mt
-source-wordcount: '4544'
+source-wordcount: '4549'
 ht-degree: 96%
 
 ---
@@ -878,7 +878,7 @@ ht-degree: 96%
          + [実稼働プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
          + [サンドボックスプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
          + [サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-         + [プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+         + [プログラムの管理と編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [環境の休止](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + AEM アプリケーションプロジェクトの作成 {#create-application-project}
          + [プロジェクト作成ウィザード](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
@@ -935,6 +935,7 @@ ht-degree: 96%
          + [IP 許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [ライセンスダッシュボード](/help/implementing/cloud-manager/license-dashboard.md)
       + [Cloud Service コンテンツリクエストについて](/help/implementing/cloud-manager/content-requests.md)
+      + [CDN パフォーマンスダッシュボード](/help/implementing/cloud-manager/cdn-performance.md)
       + [Cloud Manager に関する FAQ](/help/implementing/cloud-manager/faqs.md)
    + AEM as a Cloud Service 向けの開発 {#developing}
       + [AEM プロジェクトの構造](/help/implementing/developing/introduction/aem-project-content-package-structure.md)

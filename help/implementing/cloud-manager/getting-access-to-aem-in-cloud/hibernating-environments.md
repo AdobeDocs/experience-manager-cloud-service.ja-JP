@@ -2,10 +2,10 @@
 title: サンドボックス環境の休止と休止解除
 description: サンドボックスプログラムの環境が自動的に休止モードに入る仕組みと、休止状態が解除される仕組みについて説明します。
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 85%
+source-wordcount: '695'
+ht-degree: 94%
 
 ---
 
@@ -31,9 +31,9 @@ ht-degree: 85%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 休止状態にするプログラムをクリックして詳細を表示します。
+1. 次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面を表示し、休止状態にするプログラムをタップまたはクリックして詳細を表示します。
 
-1. **環境**&#x200B;カードで、省略記号ボタンをクリックし、「**開発者コンソール**」を選択します。
+1. **環境**&#x200B;カードで、省略記号ボタンをクリックし、「**Developer Console**」を選択します。
 
    * 詳しくは、[Developer Console へのアクセス](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)を参照してください。
 
@@ -47,11 +47,11 @@ ht-degree: 85%
 
    ![休止の確定](assets/hibernate-2.png)
 
-休止処理が正常に完了すると、環境の休止処理完了通知が **開発者コンソール** 画面。
+休止処理が正常に完了すると、環境の休止処理完了通知が **Developer Console** 画面に表示されます。
 
 ![休止状態の確認](assets/hibernate-4.png)
 
-開発者コンソールで、 **環境** 次の項目の上にあるパンくずリスト内のリンク **ポッド** 休止状態にする環境のリストのドロップダウンリスト。
+Developer Console で、**ポッド**&#x200B;ドロップダウンリストの上にあるパンくずリスト内の&#x200B;**環境**&#x200B;リンクをクリックして、休止状態にする環境のリストを表示することもできます。
 
 ![休止状態にする環境のリスト](assets/hibernate-1b.png)
 
@@ -65,13 +65,13 @@ ht-degree: 85%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 休止状態にするプログラムをクリックして詳細を表示します。
+1. 次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面、休止状態を解除するプログラムをタップまたはクリックして、詳細を表示します。
 
-1. **環境**&#x200B;カードで、省略記号ボタンをクリックし、「**開発者コンソール**」を選択します。
+1. **環境**&#x200B;カードで、省略記号ボタンをクリックし、「**Developer Console**」を選択します。
 
    * 詳しくは、[Developer Console へのアクセス](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)を参照してください。
 
-1. クリック **休止状態を解除**.
+1. 「**休止状態を解除**」をクリックします。
 
    ![「休止解除」ボタン](assets/de-hibernation-img1.png)
 
@@ -88,7 +88,7 @@ ht-degree: 85%
    ![休止解除の完了](assets/de-hibernation-img4.png)
 
 
-開発者コンソールで、 **環境** 次の項目の上にあるパンくずリスト内のリンク **ポッド** 休止状態を解除する環境のリストのドロップダウンリスト。
+Developer Console で、**ポッド**&#x200B;ドロップダウンリストの上にあるパンくずリスト内の&#x200B;**環境**&#x200B;リンクをクリックして、休止状態を解除する環境のリストを表示することもできます。
 
 ![休止状態のポッドのリスト](assets/de-hibernate-1b.png)
 

@@ -3,10 +3,10 @@ title: 実稼動以外のパイプラインの設定
 description: 実稼動環境にデプロイする前にコードの品質をテストするための実稼動以外のパイプラインを設定する方法を説明します。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 80%
+source-wordcount: '1290'
+ht-degree: 99%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 80%
 
 実稼動環境にデプロイする前にコードの品質をテストするための実稼動以外のパイプラインを設定する方法を説明します。
 
-ユーザーが **[デプロイメントマネージャー](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** 実稼動以外のパイプラインを設定するためのロール。
+実稼働パイプラインを設定するには、ユーザーに&#x200B;**[デプロイメントマネージャー](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**&#x200B;の役割が必要です。
 
 ## 実稼動以外のパイプライン {#non-production-pipelines}
 
@@ -34,7 +34,9 @@ ht-degree: 80%
 
 Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環境を用意したら、次の手順に従って実稼動以外のパイプラインを追加する準備が整います。
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
+
+次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面で、プログラムを選択します。
 
 1. Cloud Manager のホーム画面から&#x200B;**パイプライン**&#x200B;カードにアクセスします。「**+追加**」をクリックし、「**実稼動以外のパイプラインを追加**」を選択します。
 
@@ -67,9 +69,9 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
    * **[フルスタックコード](#full-stack-code)**
    * **[ターゲットのデプロイメント](#targeted-deployment)**
 
-詳しくは、 [CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) を参照してください。
+パイプラインのタイプについて詳しくは、[CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)を参照してください。
 
-実稼動以外のパイプラインの作成を完了する手順は、選択したソースコードのタイプによって異なります。 上記のリンクをたどって、このドキュメントの次の節に移動し、パイプラインの設定を完了します。
+実稼動以外のパイプラインの作成を完了する手順は、選択したソースコードのタイプによって変わります。上記のリンクをたどって、このドキュメントの次の節に移動し、パイプラインの設定を完了します。
 
 ### フルスタックコード {#full-stack-code}
 
@@ -98,42 +100,42 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
       * **実稼動機能テスト** - 開発環境に対して[実稼動機能テスト](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)を実行します。
       * **カスタム機能テスト** - 開発環境に対して[カスタム機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)を実行します。
       * **カスタム UI テスト** - カスタムアプリケーションに対して[カスタム UI テスト](/help/implementing/cloud-manager/ui-testing.md)を実行します。
-      * **エクスペリエンス監査**  — 実行 [エクスペリエンス監査](/help/implementing/cloud-manager/experience-audit-testing.md)
+      * **エクスペリエンス監査** - [エクスペリエンス監査](/help/implementing/cloud-manager/experience-audit-testing.md)の実行
 
    ![フルスタックパイプライン](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
 1. 「**保存**」をクリックします。
 
-パイプラインが保存され、**プログラムの概要**&#x200B;ページの&#x200B;**パイプライン**&#x200B;カードの[パイプラインを管理](managing-pipelines.md)できるようになります。
+パイプラインが保存され、**プログラムの概要**&#x200B;ページの&#x200B;**パイプライン**&#x200B;カードで[パイプラインを管理](managing-pipelines.md)できるようになりました。
 
-### ターゲットのデプロイメント {#targeted-deployment}
+### ターゲットデプロイメント {#targeted-deployment}
 
-ターゲットのデプロイメントは、AEMアプリケーションの選択した部分のコードのみをデプロイします。 このようなデプロイメントでは、次の操作を選択できます。 **次を含む** 次のいずれかのタイプのコード。
+ターゲットデプロイメントは、AEM アプリケーションの選択した部分のコードのみをデプロイします。このようなデプロイメントでは、次のいずれかのタイプのコードを&#x200B;**含む**&#x200B;よう選択できます。
 
-* **[Config](#config)** - AEM環境、メンテナンスタスク、CDN ルールなどの設定をおこないます。
-   * ドキュメントを見る [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md) トラフィックフィルタールールをリポジトリで管理し、適切にデプロイする方法を学ぶには、次の手順を実行します。
+* **[Config](#config)** - AEM環境、メンテナンスタスク、CDN ルールなどの設定を行います。
+   * リポジトリでフィックフィルタールールを管理し、適切にデプロイする方法については、[WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)を参照してください。
 * **[フロントエンドコード](#front-end-code)** - AEMアプリケーションのフロントエンド用に JavaScript と CSS を設定します。
    * フロントエンドパイプラインを使用すると、フロントエンド開発者の作業の独立性が高まるほか、開発プロセスを速めることができます。
    * このプロセスの可能性を最大限に引き出すために知っておくべきいくつかの考慮事項と、このプロセスがどのように機能するかについては、[フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)のドキュメントを参照してください。
-* **[Web 層の設定](#web-tier-config)** - Web ページをクライアントに保存、処理、配信するための Dispatcher プロパティを設定します。
+* **[Web 階層の設定](#web-tier-config)** - Web ページをクライアントに保存、処理、配信するための Dispatcher プロパティを設定します。
 
 >[!NOTE]
 >
 >* 選択した環境に web 階層コードパイプラインが存在する場合、この選択は無効になります。
 >* 環境に既にフルスタックパイプラインがデプロイされている場合、同じ環境に web 階層設定パイプラインを作成すると、フルスタックパイプライン内の既存の web 階層設定は無視されます。
-> * いつでも、環境ごとに 1 つの設定パイプラインしか使用できません。
+> * 設定パイプラインは、常に 1 つの環境に 1 つしか存在できません。
 
 実稼動以外のターゲットデプロイメントパイプラインの作成を完了する手順は、デプロイメントタイプを選択した場合と同じです。
 
-1. 必要なデプロイメントの種類を選択します。
+1. 必要なデプロイメントのタイプを選択します。
 
-![ターゲットのデプロイメントオプション](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-targeted-deployment.png)
+![ターゲットデプロイメントオプション](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-targeted-deployment.png)
 
-1. 次を定義： **適格なデプロイメント環境**.
+1. **適格なデプロイメント環境**&#x200B;を定義します。
 
-   * パイプラインがデプロイメントパイプラインの場合は、デプロイ先の環境を選択する必要があります。
+   * パイプラインがデプロイメントパイプラインの場合、デプロイ先の環境を選択する必要があります。
 
-1. の下 **ソースコード**、次のオプションを定義します。
+1. **ソースコード**&#x200B;の下で次のオプションを定義します。
 
    * **リポジトリ** - このオプションは、パイプラインがコードを取得する Git リポジトリを定義します。
 
@@ -151,7 +153,7 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
 
 パイプラインが保存され、**プログラムの概要**&#x200B;ページの&#x200B;**パイプライン**&#x200B;カードの[パイプラインを管理](managing-pipelines.md)できるようになります。
 
-ターゲットのデプロイメントパイプラインを実行する際の設定 [WAF 設定など](/help/security/traffic-filter-rules-including-waf.md) パイプラインで定義した環境、リポジトリ、ブランチに保存されている場合は、デプロイされます。
+ターゲットのデプロイメントパイプラインを実行している場合、[WAF 設定などの](/help/security/traffic-filter-rules-including-waf.md)設定は、パイプラインで定義した環境、リポジトリ、ブランチに保存されていればデプロイされます。
 
 ## Dispatcher パッケージのスキップ {#skip-dispatcher-packages}
 

@@ -2,10 +2,10 @@
 title: ドメイン名ステータスの確認
 description: Cloud Manager でカスタムドメイン名が正常に検証されたかどうかを判断する方法について説明します。
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 85%
+source-wordcount: '651'
+ht-degree: 98%
 
 ---
 
@@ -14,11 +14,13 @@ ht-degree: 85%
 
 Cloud Manager 内でカスタムドメイン名のステータスを決定できます。
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. **概要**&#x200B;ページの&#x200B;**環境**&#x200B;画面に移動します。
+1. 次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面で、プログラムを選択します。
 
-1. クリック **ドメイン設定** （左側のナビゲーションパネル）
+1. **概要**&#x200B;ページから&#x200B;**環境**&#x200B;画面に移動します。
+
+1. 左側のナビゲーションパネルで「**ドメイン設定**」をクリックします。
 
 1. ドメイン名の「**ステータス**」アイコンをクリックします。
 
@@ -60,7 +62,7 @@ Cloud Manager では、**カスタムドメイン追加**&#x200B;ウィザード
 
 #### エラーの原因 {#cause}
 
-Fastly は、ドメインを最初に登録したアカウントにロックし、他のアカウントは権限を要求することなくサブドメインを登録することができません。さらに、Fastly では、apex ドメインと関連するサブドメインを 1 つの Fastly サービスおよびアカウントに割り当てることができます。 AEM Cloud Serviceドメインで使用されるのと同じ apex およびサブドメインをリンクする既存の Fastly アカウントがある場合、このエラーが表示されます。
+Fastly は、ドメインを最初に登録したアカウントにロックし、他のアカウントは権限を要求することなくサブドメインを登録することができません。さらに、Fastly では、apex ドメインと関連するサブドメインを 1 つの Fastly サービスおよびアカウントに割り当てることができます。AEM Cloud Service ドメインで使用されるのと同じ apex およびサブドメインをリンクする既存の Fastly アカウントがある場合、このエラーが表示されます。
 
 #### エラーの解決 {#resolution}
 
@@ -82,7 +84,7 @@ Fastly は、ドメインを最初に登録したアカウントにロックし�
 
 ## カスタムドメイン名の既存の CDN 設定 {#pre-existing-cdn}
 
-カスタムドメイン名用の既存の CDN 設定がある場合は、 **カスタムドメイン名** および **環境** ページに表示され、Cloud Manager で設定できるように、UI を使用してこれらの設定を追加するよう促す。
+カスタムドメイン名の既存の CDN 設定がある場合は、UI を通じてこれらの設定を追加して Cloud Manager で表示および設定できるようにすることを促す情報メッセージが&#x200B;**カスタムドメイン名**&#x200B;ページと&#x200B;**環境**&#x200B;ページに表示されます。
 
 UI を使用して既存の環境設定をすべて移行すると、このメッセージは表示されなくなります。メッセージが表示されなくなるまでに 1～2 営業日かかる場合があります。
 

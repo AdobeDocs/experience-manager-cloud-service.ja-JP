@@ -2,10 +2,10 @@
 title: SSL 証明書の追加
 description: Cloud Manager のセルフサービスツールを使用して独自の SSL 証明書を追加する方法を説明します。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 82%
+source-wordcount: '557'
+ht-degree: 96%
 
 ---
 
@@ -19,21 +19,23 @@ Cloud Manager のセルフサービスツールを使用して独自の SSL 証�
 
 ## 証明書の要件 {#certificate-requirements}
 
-セクションを確認する **証明書の要件** ドキュメントの [SSL 証明書管理の概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) 追加する証明書がAEM as a Cloud Serviceでサポートされていることを確認するため。
+[SSL 証明書管理の概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements)ドキュメントの&#x200B;**証明書の要件**&#x200B;の節を確認して、追加する証明書が AEM as a Cloud Service でサポートされていることを確認します。
 
 ## 証明書の追加 {#adding-a-cert}
 
 Cloud Manager を使用して証明書を追加するには、次の手順に従います。
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
+1. Cloud Manager( ) にログインします。 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 適切な組織を選択します。
+
+1. 次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面で、プログラムを選択します。
 
 1. **概要**&#x200B;ページから&#x200B;**環境**&#x200B;画面に移動します。
 
-1. クリック **SSL 証明書** をクリックします。 既存の SSL 証明書の詳細を示す表がメイン画面に表示されます。
+1. 画面左側のナビゲーションパネルで「**SSL 証明書**」をクリックします。既存の SSL 証明書の詳細を示す表がメイン画面に表示されます。
 
    ![SSL 証明書の追加](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. クリック **SSL 証明書を追加** 開く **SSL 証明書を追加** ダイアログボックス。
+1. 「**SSL 証明書を追加**」をクリックすると、**SSL 証明書を追加**&#x200B;ダイアログボックスが開きます。
 
    * 「**証明書名**」に証明書の名前を入力します。
       * これは情報提供だけを目的とし、証明書を簡単に参照するのに役立つ任意の名前を指定できます。
@@ -47,7 +49,7 @@ Cloud Manager を使用して証明書を追加するには、次の手順に従
 
 1. 「**保存**」をクリックして証明書を保存します。
 
-保存すると、証明書がテーブルの新しい行として表示されます。
+保存すると、証明書が表の新しい行として表示されます。
 
 ![保存された SSL 証明書](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
 
@@ -133,7 +135,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->これらの 2 つのコマンドの出力は、完全に同じである必要があります。が `main/server` 証明書の場合は、新しい CSR を生成して証明書のキーを再設定するか、SSL ベンダーから更新済み証明書を要求する必要があります。
+>これらの 2 つのコマンドの出力は、完全に同じである必要があります。`main/server` 証明書と一致する秘密鍵が見つからない場合は、新しい CSR を生成するか、更新された証明書を SSL ベンダーに要求して、証明書を再入力する必要があります。
 
 ### 証明書の有効期限 {#certificate-validity-dates}
 

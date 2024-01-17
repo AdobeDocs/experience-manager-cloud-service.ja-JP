@@ -1,8 +1,8 @@
 ---
-source-git-commit: 6a370269317621f09f0dcdc7f701d7c8a4891ea4
+source-git-commit: 79d3ec7f5ede84fd989b7d5440739ec9560a547f
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 78%
+source-wordcount: '212'
+ht-degree: 85%
 
 ---
 # スニペット {#snippets}
@@ -14,10 +14,6 @@ ht-degree: 78%
 ## Edge Delivery Servicesオーサリング {#edge-delivery-authoring}
 
 [!BADGE Edge 配信サービス向けの AEM コンテンツをオーサリングする場合は、こちらをクリックしてください。]{type=Positive url="/help/edge/overview.md" tooltip="Edge 配信サービス向けの AEM コンテンツのオーサリング"}
-
-## WAF 設定限定リリース {#waf-limited-release}
-
-[!BADGE WAF-DDOS 保護は、2023 年末までに提供される予定です。]{type=Caution tooltip="WAF-DDOS 保護は、2023 年末までに提供される予定です。"}
 
 ## ユニバーサルエディターのステータス {#universal-editor-status}
 

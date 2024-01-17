@@ -3,10 +3,10 @@ title: パイプラインの管理
 description: 既存のパイプラインの管理方法（編集、実行、削除を含む）を説明します。
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 97%
+source-wordcount: '934'
+ht-degree: 96%
 
 ---
 
@@ -39,7 +39,9 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 **パイプライン**&#x200B;ウィンドウには、選択したプログラムのすべてのパイプラインの完全なリストが表示されます。これは、[パイプラインカード](#pipeline-card)で使用可能な情報よりも包括的な情報を表示するので便利です。
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
+
+1. 次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面で、プログラムを選択します。
 
 1. **プログラムの概要**&#x200B;ページで、「**パイプライン**」タブを選択して、**パイプライン**&#x200B;ウィンドウに切り替えます。
 

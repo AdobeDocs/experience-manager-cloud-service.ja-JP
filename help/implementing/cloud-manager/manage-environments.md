@@ -2,9 +2,9 @@
 title: 環境の管理
 description: 作成できる環境のタイプと、Cloud Manager プロジェクト用に環境を作成する方法について説明します。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '2607'
+source-wordcount: '2614'
 ht-degree: 96%
 
 ---
@@ -41,9 +41,9 @@ ht-degree: 96%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 環境を追加するプログラムをクリックします。
+1. 次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面で、環境を追加するプログラムをタップまたはクリックします。
 
-1. **プログラムの概要**&#x200B;ページで、**環境**&#x200B;カードの「**環境を追加**」をクリックして環境を追加します。
+1. **[プログラムの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview)**&#x200B;ページで、**環境**&#x200B;カードの「**環境を追加**」をクリックして環境を追加します。
 
    ![環境カード](assets/no-environments.png)
 
