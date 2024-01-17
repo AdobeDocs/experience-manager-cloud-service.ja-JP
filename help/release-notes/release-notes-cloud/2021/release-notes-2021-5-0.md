@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 リリースのリリースノート。'
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 720430af374636878b42ce346ca9c61ab089709b
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 89%
+source-wordcount: '1355'
+ht-degree: 91%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 89%
 
 * [プレリリースチャネル](/help/release-notes/prerelease.md)：本番運用開始前の 1 か月間に予定されている機能のプレビュー
 
-* [非推奨 API](/help/release-notes/deprecated-apis.md)：AEM as a Cloud Service の最新の非推奨 API リストが公開されています。
+* [非推奨 API](/help/release-notes/deprecated-removed-features.md)：AEM as a Cloud Service の最新の非推奨 API リストが公開されています。
 
 * [AEM as a Cloud Service SDK Build Analyzer Maven プラグイン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ja)：非推奨の Java API のチェックやその他の改善点を含む最新バージョンに、Maven プロジェクトを更新します。
 
@@ -104,9 +104,9 @@ AEM as a Cloud Service 2021.5.0 Cloud Manager のリリース日は 2021 年 5 �
 
 ### 新機能 {#what-is-new-may}
 
-* PackageOverlaps 品質ルールで、同じパッケージが複数回デプロイされた場合、つまり、同じデプロイ済みパッケージセット内の複数の埋め込み場所にデプロイされた場合を検出するようになりました。
+* PackageOverlaps 品質ルールは、デプロイされたパッケージセットに同じパッケージが複数回（複数の埋め込み場所に）デプロイされた場合に検出するようになりました。
 
-* パブリック API のリポジトリーエンドポイントに Git の URL が含まれるようになりました。
+* パブリック API のリポジトリエンドポイントに Git の URL が含まれるようになりました。
 
 * Cloud Manager ユーザーがダウンロードしたデプロイメントログは、より洞察力に富み、エラーと成功シナリオに関する詳細が含まれています。
 
