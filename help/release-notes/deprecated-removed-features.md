@@ -2,10 +2,10 @@
 title: 廃止される機能および削除された機能
 description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の非推奨（廃止予定）の機能と削除された機能）。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 5ae425a727aa3eedbae4bf26821d2894969f8734
+source-git-commit: cb2c883fbadc5347dbe5fc50337abc41d4f5cec3
 workflow-type: tm+mt
-source-wordcount: '2100'
-ht-degree: 98%
+source-wordcount: '2068'
+ht-degree: 96%
 
 ---
 
@@ -41,10 +41,7 @@ ht-degree: 98%
 | [!DNL Assets] | [!DNL ImageMagick] などのコマンドラインツールの呼び出しを含め、`DAM Asset Update` ワークフローの[特定のワークフローステップ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)はサポートされていません。 | [アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が多くのワークフローの代替機能となります。カスタム処理の場合は、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を使用します。 |
 | [!DNL Assets] | ビデオの FFmpeg トランスコード。 | FFmpeg サムネールの生成には、[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)を使用。FFmpeg トランスコードの場合は、[Dynamic Media](/help/assets/manage-video-assets.md) を使用。 |
 | [!DNL Foundation] | レプリケーションエージェントの「配布」タブのツリーレプリケーション UI（2021 年 9 月 30 日以降に削除） | [公開を管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow)アプローチ |
-| [!DNL Foundation] | レプリケーションエージェントの管理画面の「配布」タブも、レプリケーション API も、10 MB を超えるコンテンツパッケージのレプリケーションに使用できません（2022年9月12日（PT）以降に実施） | [パブリケーションの管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーワークフローの公開](/help/operations/replication.md#publish-content-tree-workflow)のアプローチ |
-
-
-| [!DNL Foundation] | レプリケーションエージェントの管理画面の「配布」タブも、レプリケーション API も、10 MB を超えるコンテンツパッケージのレプリケーションには使用できません。 代わりに、[パブリケーションの管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーワークフローの公開](/help/operations/replication.md#publish-content-tree-workflow)を使用します |
+| [!DNL Foundation] | レプリケーションエージェント管理画面の「配布」タブも、レプリケーション API も、10 MB を超えるコンテンツパッケージのレプリケーションに使用できません。 代わりに、次のいずれかを使用します。 [公開を管理](/help/operations/replication.md#manage-publication) または [コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow) |
 
 ## 削除された機能 {#removed-features}
 
