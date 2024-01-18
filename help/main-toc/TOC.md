@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a00eb97859f679ade3a4a6d89a427735451ebd70
+source-git-commit: 104dfd255185816983674026a84337624a851d9a
 workflow-type: tm+mt
-source-wordcount: '4554'
+source-wordcount: '4551'
 ht-degree: 96%
 
 ---
@@ -1060,7 +1060,6 @@ ht-degree: 96%
       + [AEM as a Cloud Service へのデプロイ](/help/implementing/deploying/overview.md)
       + [AEM バージョンのアップデート](/help/implementing/deploying/aem-version-updates.md)
       + [AEM as a Cloud Service の OSGi の設定](/help/implementing/deploying/configuring-osgi.md)
-      + [OSGi 設定 API](/help/implementing/deploying/osgi-configuration-api.md)
       + [リソースマッピング](/help/implementing/deploying/resource-mapping.md)
    + オーサー層 {#author-tier}
       + [オーサー層へのアクセス](/help/implementing/author-tier/accessing-the-author-tier.md)
