@@ -1,7 +1,8 @@
 ---
 title: フィールドタイプ
 description: コンポーネントレールでユニバーサルエディターが編集できる様々なタイプのフィールドについて説明し、独自のアプリの実装方法の例を示します。
-source-git-commit: 44073e27ce7eb35bc0d71cb963c1bd0f14183f00
+exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
+source-git-commit: 7ef3efa6e074778b7b3e3a8159056200b2663b30
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 7%

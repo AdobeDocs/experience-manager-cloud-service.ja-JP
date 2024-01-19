@@ -1,9 +1,10 @@
 ---
 title: AEM Developers 向けユニバーサルエディターの概要
 description: ユニバーサルエディターの動作とプロジェクトでの使用方法に興味を持つAEM開発者の方は、WKND プロジェクトをユニバーサルエディターと連携させる方法を説明し、エンドツーエンドの紹介を提供します。
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
+source-git-commit: d7154fcec9cf6e3cb00ce8e434e38544294df165
 workflow-type: tm+mt
-source-wordcount: '3082'
+source-wordcount: '3112'
 ht-degree: 1%
 
 ---
@@ -36,6 +37,7 @@ ht-degree: 1%
    * [WKND デモサイトをインストールする必要があります。](https://github.com/adobe/aem-guides-wknd)
 * [ユニバーサルエディターへのアクセス](/help/implementing/universal-editor/getting-started.md#onboarding)
 * [ローカルユニバーサルエディターサービス](/help/implementing/universal-editor/local-dev.md) 開発目的で実行する
+   * ブラウザーで [ローカルサービスの自己署名証明書を受け入れます。](/help/implementing/universal-editor/local-dev.md#editing)
 
 このドキュメントは、Web 開発に一般に精通しているだけでなく、AEM開発に関する基本的な知識を前提としています。 AEMの開発経験がない場合は、 [続行する前の WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
@@ -164,7 +166,7 @@ X-Frame オプション `sameorigin` は、フレーム内でAEMページをレ�
 
 WKND ページがユニバーサルエディターに正常に読み込まれ、JavaScript ライブラリが読み込まれてエディターがアプリに接続されるようになりました。
 
-ただし、ユニバーサルエディターではページを操作できないことにすぐに気付くかもしれません。 ユニバーサルエディターは、実際にページを編集することはできません。 ユニバーサルエディターでコンテンツを編集するには、コンテンツの書き込み先を知るために接続を定義する必要があります。 ローカル開発の場合は、ローカルのAEM開発インスタンス ( ) に書き戻す必要があります。 `https://localhost:8443`.
+ただし、ユニバーサルエディターでページを操作できないことに気付いた可能性があります。 ユニバーサルエディターは、実際にページを編集することはできません。 ユニバーサルエディターでコンテンツを編集するには、コンテンツの書き込み先を知るために接続を定義する必要があります。 ローカル開発の場合は、ローカルのAEM開発インスタンス ( ) に書き戻す必要があります。 `https://localhost:8443`.
 
 1. CRXDE Lite を開きます。
 
@@ -227,10 +229,9 @@ WKND ページがユニバーサルエディターに正常に読み込まれ、
 1. 最初の `div` 約 26 行目で、コンポーネントの計装の詳細を追加します。
 
    ```text
-   itemscope
-   itemid="urn:aem:${resource.path}"
-   itemtype="component"
-   data-editor-itemlabel="Teaser"
+   data-aue-resource="urn:aem:${resource.path}"
+   data-aue-type="component"
+   data-aue-label="Teaser"
    ```
 
 1. クリック **すべて保存** をクリックし、ユニバーサルエディタを再読み込みします。
@@ -262,9 +263,9 @@ WKND ページがユニバーサルエディターに正常に読み込まれ、
 1. の最後に次のプロパティを挿入します。 `h2` タグ（17 行目付近）に貼り付けます。
 
    ```text
-   itemprop="jcr:title"
-   itemtype="text"
-   data-editor-itemlabel="Title"
+   data-aue-prop="jcr:title"
+   data-aue-type="text"
+   data-aue-label="Title"
    ```
 
 1. クリック **すべて保存** をクリックし、ユニバーサルエディタを再読み込みします。
@@ -281,15 +282,14 @@ WKND ページがユニバーサルエディターに正常に読み込まれ、
 
 ティーザーコンポーネントは、実装することでユニバーサルエディターに識別されました。
 
-* `itemscope` は、ユニバーサルエディターの項目として識別します。
-* `itemid` 編集中のAEM内のリソースを識別します。
-* `itemtype` は、項目を（コンテナとは異なり）ページコンポーネントとして扱うことを定義します。
-* `data-editor-itemlabel` 選択したティーザーのわかりやすいラベルを UI に表示します。
+* `data-aue-resource` 編集中のAEM内のリソースを識別します。
+* `data-aue-type` は、項目を（コンテナとは異なり）ページコンポーネントとして扱うことを定義します。
+* `data-aue-label` 選択したティーザーのわかりやすいラベルを UI に表示します。
 
 また、ティーザーコンポーネント内にタイトルコンポーネントも実装されています。
 
-* `itemprop` は、書き込まれる JCR 属性です。
-* `itemtype` は、属性の編集方法です。 この場合、テキストエディターはタイトル（リッチテキストエディターとは異なり）なので、これを使用します。
+* `data-aue-prop` は、書き込まれる JCR 属性です。
+* `data-aue-type` は、属性の編集方法です。 この場合、テキストエディターはタイトル（リッチテキストエディターとは異なり）なので、これを使用します。
 
 ## 認証ヘッダーの定義 {#auth-header}
 
@@ -299,13 +299,13 @@ WKND ページがユニバーサルエディターに正常に読み込まれ、
 
 ただし、ブラウザを再読み込みすると、前のタイトルが再読み込みされます。 これは、ユニバーサルエディターはAEMインスタンスへの接続方法を知っていますが、AEMインスタンスに対してまだ認証を行って、JCR に変更を書き戻すことができないためです。
 
-ブラウザー開発者ツールの「ネットワーク」タブを表示し、 `update`を入力すると、タイトルを編集しようとしたときに 500 エラーが発生していることを確認できます。
+ブラウザー開発者ツールの「ネットワーク」タブを表示し、 `update`を入力すると、タイトルを編集しようとしたときに 401 エラーが発生していることを確認できます。
 
 ![タイトルを編集しようとした際にエラーが発生しました](assets/dev-edit-error.png)
 
 ユニバーサルエディターを使用して実稼動用AEMコンテンツを編集する場合、ユニバーサルエディターは、JCR への書き戻しを容易にするために、エディターにログオンする際に使用したのと同じ IMS トークンを使用します。
 
-ローカルで開発する場合は、AEM ID プロバイダーを使用できないので、認証ヘッダーを明示的に設定して認証する方法を手動で指定する必要があります。
+ローカルで開発している場合は、AEM ID プロバイダーを使用できません。IMS トークンはAdobeが所有するドメインにのみ渡されます。 認証ヘッダーを明示的に設定して、認証する方法を手動で指定する必要があります。
 
 1. ユニバーサルエディターインターフェイスで、 **認証ヘッダー** アイコンをクリックします。
 
@@ -323,22 +323,24 @@ WKND ページがユニバーサルエディターに正常に読み込まれ、
 
 ```json
 {
-  "op": "patch",
-  "connections": {
-    "aem": "aem:https://localhost:8443"
-  },
-  "path": {
-    "itemid": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
-    "itemtype": "text",
-    "itemprop": "jcr:title"
+  "connections": [
+    {
+      "name": "aem",
+      "protocol": "aem",
+      "uri": "https://localhost:8443"
+    }
+  ],
+  "target": {
+    "resource": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
+    "type": "text",
+    "prop": "jcr:title"
   },
   "value": "Tiny Toon Adventures"
 }
 ```
 
-* `op` は操作です。この場合、編集されたフィールドの既存のコンテンツのパッチです。
 * `connections` は、ローカルのAEMインスタンスへの接続です。
-* `path` は、JCR で更新される正確なノードおよびプロパティです
+* `target` は、JCR で更新される正確なノードおよびプロパティです
 * `value` は、お客様がおこなった更新です。
 
 JCR 内で変更が保持されているのを確認できます。
@@ -357,7 +359,7 @@ JCR 内で変更が保持されているのを確認できます。
 
 編集は、現在、ティーザーのタイトルのインライン編集に限られています。 ただし、インプレース編集では不十分な場合があります。 ティーザーのタイトルなどのテキストは、キーボード入力を使用して編集できます。 ただし、より複雑な項目は、ブラウザーでのレンダリング方法とは別に、構造化データを表示して編集できる必要があります。 プロパティパネルはこの機能を備えています。
 
-次に、プロパティパネルを使用して編集するようにアプリを更新します。 これをおこなうには、アプリのページコンポーネントのヘッダーファイルに戻ります。このファイルで、ローカルのAEM開発インスタンスおよびローカルのユニバーサルエディターサービスへの接続を既に確立しています。 ここで、アプリ内で編集可能なコンポーネントとそのデータモデルを定義する必要があります。
+プロパティレールを使用して編集するようにアプリを更新するには、アプリのページコンポーネントのヘッダーファイルに戻ります。 ローカルのAEM開発インスタンスおよびローカルのユニバーサルエディターサービスへの接続を既に確立している場所です。 ここで、アプリ内で編集可能なコンポーネントとそのデータモデルを定義する必要があります。
 
 1. CRXDE Lite を開きます。
 
@@ -369,10 +371,10 @@ JCR 内で変更が保持されているのを確認できます。
 
    ![customheaderlibs.html ファイルの編集](assets/dev-instrument-properties-rail.png)
 
-1. フィールドをファイルの末尾にマッピングするために必要なスクリプトを追加します。
+1. ファイルの最後に、コンポーネントを定義するために必要なスクリプトを追加します。
 
    ```html
-   <script type="application/vnd.adobe.aem.editor.component-definition+json">
+   <script type="application/vnd.adobe.aue.component+json">
    {
      "groups": [
        {
@@ -388,29 +390,69 @@ JCR 内で変更が保持されているのを確認できます。
                    "resourceType": "wknd/components/teaser"
                  }
                }
-             },
-             "model": {
-               "id": "teaser",
-               "fields": [
-                 {
-                   "component": "text-input",
-                   "name": "jcr:title",
-                   "label": "Title",
-                   "valueType": "string"
-                 },
-                 {
-                   "component": "text-area",
-                   "name": "jcr:description",
-                   "label": "Description",
-                   "valueType": "string"
+             }
+           },
+           {
+             "title": "Title",
+             "id": "title",
+             "plugins": {
+               "aem": {
+                 "page": {
+                   "resourceType": "wknd/components/title"
                  }
-               ]
+               }
              }
            }
          ]
        }
      ]
    }
+   </script>
+   ```
+
+1. その下に、ファイルの最後に、モデルを定義するために必要なスクリプトを追加します。
+
+   ```html
+   <script type="application/vnd.adobe.aue.model+json">
+   [
+     {
+       "id": "teaser",
+       "fields": [
+         {
+           "component": "text-input",
+           "name": "jcr:title",
+           "label": "Title",
+           "valueType": "string"
+         },
+         {
+           "component": "text-area",
+           "name": "jcr:description",
+           "label": "Description",
+           "valueType": "string"
+         }
+       ]
+     },
+     {
+       "id": "title",
+       "fields": [
+         {
+           "component": "select",
+           "name": "type",
+           "value": "h1",
+           "label": "Type",
+           "valueType": "string",
+           "options": [
+             { "name": "h1", "value": "h1" },
+             { "name": "h2", "value": "h2" },
+             { "name": "h3", "value": "h3" },
+             { "name": "h4", "value": "h4" },
+             { "name": "h5", "value": "h5" },
+             { "name": "h6", "value": "h6" }
+           ]
+         }
+       ]
+     }
+   ]
    </script>
    ```
 
@@ -457,15 +499,17 @@ JCR 内で変更が保持されているのを確認できます。
 
    ![teaser.html ファイルの編集](assets/dev-edit-teaser.png)
 
-1. 最初の `div` の約 32 行目 ( `itemscope` 前に追加したプロパティ。ティーザーコンポーネントが使用するモデルの計装の詳細を追加します。
+1. 最初の `div` 約 32 行目で、前に追加したプロパティの後に、ティーザーコンポーネントが使用するモデルの計装の詳細を追加します。
 
    ```text
-   data-editor-itemmodel="teaser"
+   data-aue-model="teaser"
    ```
 
 1. クリック **すべて保存** をクリックし、ユニバーサルエディタを再読み込みします。
 
-1. ティーザーのタイトルをクリックして、もう一度編集します。
+これで、コンポーネント用に実装されたプロパティパネルをテストする準備が整いました。
+
+1. ユニバーサルエディターで、ティーザーのタイトルをクリックして、もう一度編集します。
 
 1. プロパティレールをクリックして「プロパティ」タブを表示し、先ほど実装したフィールドを確認します。
 
@@ -489,7 +533,7 @@ JCR 内で変更が保持されているのを確認できます。
 
    ![customheaderlibs.html ファイルの編集](assets/dev-instrument-styles.png)
 
-1. に項目を追加 `fields` 「スタイル」フィールドの配列。 新しいフィールドを挿入する前に、最後のフィールドの後に必ずコンマを追加してください。
+1. モデル定義スクリプトで、 `fields` 「スタイル」フィールドの配列。 新しいフィールドを挿入する前に、最後のフィールドの後に必ずコンマを追加してください。
 
    ```json
    {

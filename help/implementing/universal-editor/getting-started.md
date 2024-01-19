@@ -2,10 +2,10 @@
 title: AEM のユニバーサルエディターの概要
 description: ユニバーサルエディターへのアクセス権を取得する方法と、これを使用するために最初の AEM アプリのインストルメントを開始する方法について説明します。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 100%
+source-wordcount: '903'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ AEM アプリをオンボーディングし、ユニバーサルエディター�
 
 ## ユニバーサルエディターへのアクセスをリクエスト {#request-access}
 
-最初にユニバーサルエディターへのアクセスをリクエストする必要があります。[https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor) に移動し、ログインしてユニバーサルエディターにアクセスできるかどうかを確認します。
+最初にユニバーサルエディターへのアクセスをリクエストする必要があります。開く [&#39;https://experience.adobe.com/#/aem/editor&quot;](https://experience.adobe.com/#/aem/editor)、ログインし、ユニバーサルエディターにアクセスできるかどうかを検証します。
 
 アクセス権がない場合は、同じページにリンクされたフォームからリクエストできます。
 
@@ -124,10 +124,10 @@ X-Frame-Options: SAMEORIGIN は、iframe 内で AEM ページのレンダリン�
 
 識別子 `urn:adobe:aue:system` は、Adobe Universal Editor の接続を表します。
 
-`itemid` は `urn` プレフィックスを使用して識別子を短縮します。
+`data-aue-resource` は `urn` プレフィックスを使用して識別子を短縮します。
 
 ```html
-itemid="urn:<referenceName>:<resource>"
+data-aue-resource="urn:<referenceName>:<resource>"
 ```
 
 * `<referenceName>` - `<meta>` タグに記載されている名前付きリファレンスです。例：`aemconnection`
