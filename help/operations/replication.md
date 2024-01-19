@@ -1,11 +1,11 @@
 ---
 title: レプリケーション
-description: AEM as a Cloud Serviceでの配布とレプリケーションのトラブルシューティングについて説明します。
+description: AEM as a Cloud Service での配布とレプリケーションのトラブルシューティングについて説明します。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 3249f17e6ecb341880597577e1f2a48653a7a88a
 workflow-type: tm+mt
 source-wordcount: '1312'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -55,7 +55,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
 ![コンテンツツリーを公開ワークフローカード](/help/operations/assets/publishcontenttreeworkflow.png)
 
-元のモデルを呼び出さないでください。 代わりに、必ず最初にモデルをコピーしてから、そのコピーを呼び出してください。
+元のモデルを呼び出さないでください。その代わりに、最初にモデルをコピーして、そのコピーを呼び出してください。
 
 すべてのワークフローと同様に、API を使用して呼び出すこともできます。詳しくは、[プログラムによるワークフローの操作](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem)を参照してください。
 
@@ -64,7 +64,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 1. AEM as a Cloud Service のホームページから、**ツール／ワークフロー／モデル**&#x200B;に移動します。
 1. ワークフローモデルページで、画面の右上隅にある「**作成**」を押します。
 1. モデルにタイトルと名前を追加します。詳しくは、 [ワークフローモデルの作成](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ja#extending-aem).
-1. リストから作成したモデルを選択し、を押します。 **編集**
+1. 作成したモデルをリストから選択し、「**編集**」を押します。
 1. 次のウィンドウで、「プロセスステップ」を現在のモデルフローにドラッグ＆ドロップします。
 
    ![プロセスステップ](/help/operations/assets/processstep.png)
@@ -89,7 +89,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
 * `includeChildren`（ブール値、デフォルト：`false`）。値 `false` では、パスのみが公開され、`true` では、子も公開されます。
 * `replicateAsParticipant`（ブール値、デフォルト：`false`）。`true` に設定した場合、レプリケーションは、参加者ステップを実行したプリンシパルの `userid` を使用します。
-* `enableVersion`（ブール値、デフォルト：`true`）。このパラメーターは、レプリケーション時に新しいバージョンが作成されるかどうかを指定します。
+* `enableVersion`（ブール値、デフォルト：`false`）。このパラメーターは、レプリケーション時に新しいバージョンが作成されるかどうかを指定します。
 * `agentId`（文字列値。デフォルトは、パブリッシュのエージェントのみが使用されることを意味します）。agentId を明確にすることをお勧めします。例えば、値「publish」を設定します。エージェントを `preview` に設定すると、プレビューサービスに公開されます。
 * `filters`（文字列値。デフォルトは、すべてのパスがアクティブ化されることを意味します）。使用できる値は次のとおりです。
    * `onlyActivated` -（既に）アクティブ化されたページのみアクティブ化します。再アクティブ化の形で動作します。
