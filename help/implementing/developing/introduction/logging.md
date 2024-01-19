@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 向けのログ
 description: AEM as a Cloud Service のログを使用して一元的なログサービスのグローバルパラメーターを設定する方法、個々のサービスに特有の設定またはデータのログ記録をリクエストする方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 3d53f81bfe9b180f19590a70d72b6bf62a7ab732
+source-git-commit: 35959a1cd47e9ea1b93aeddc3eb72cf03c44eda8
 workflow-type: tm+mt
-source-wordcount: '2755'
+source-wordcount: '2776'
 ht-degree: 96%
 
 ---
@@ -611,7 +611,7 @@ Splunk アカウントを持っている顧客は、カスタマーサポート�
 
 Splunk に送信されるログに関連付けられるネットワーク帯域幅は、お客様のネットワーク I/O 使用の一部と見なされます。
 
-Splunk 転送は、CDN ログをまだサポートしていません。
+CDN ログは、新しいサポートチケットリクエストのために Splunk に転送されます。Splunk 転送を既に有効にしているお客様は、将来 CDN ログを追加できます。
 
 ### Splunk 転送の有効化 {#enabling-splunk-forwarding}
 
