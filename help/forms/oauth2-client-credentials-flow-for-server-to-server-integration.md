@@ -5,9 +5,9 @@ Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, sale
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
+source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '484'
 ht-degree: 85%
 
 ---
@@ -75,5 +75,9 @@ OAuth 2.0 クライアント資格情報認証設定を使用してアダプテ�
 Salesforce アプリケーションを設定した後は、フォームデータモデルの作成時に設定を使用できます。 詳しくは、 [フォームデータモデルを作成する](create-form-data-models.md). [フォームデータモデル送信アクションの設定](/help/forms/using-form-data-model.md) アダプティブフォームが Salesforce アプリケーションにデータを送信する場合。
 
 ビジネスワークフローでのフォームデータモデルの作成および使用について詳しくは、「[データ統合](data-integration.md)」を参照してください。
+
+## 関連記事
+
+{{af-submit-action}}
 
 

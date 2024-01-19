@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
+source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1290'
 ht-degree: 88%
 
 ---
@@ -183,3 +183,8 @@ Edit Properties dialog for an interactive communication-->
 >1. [設定ファイルを作成](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json)します。
 >1. getContentPathPattern および getFormDataModelPathPattern のプロパティを設定します。
 >1. プロジェクトをデプロイします。
+
+## 関連記事
+
+{{af-submit-action}}
+
