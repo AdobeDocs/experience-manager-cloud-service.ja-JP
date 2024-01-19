@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.1.0 �
 description: AEM as a Cloud Service の Cloud Manager 2024.1.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a00eb97859f679ade3a4a6d89a427735451ebd70
+source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 63%
+source-wordcount: '673'
+ht-degree: 53%
 
 ---
 
@@ -21,7 +21,12 @@ ht-degree: 63%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Serviceの Cloud Manager リリース 2024.1.0 のリリース日は 2024 年 1 月 18 日です。
+AEM as a Cloud Serviceの Cloud Manager リリース 2024.1.0 のリリース日は 2024 年 1 月 18 日です。 次回のリリースは 2024 年 2 月 16 日に予定されています。
+
+## 新機能 {#what-is-new}
+
+* Cloud Manager で、メインのの有効期限だけでなく、有効期限も検証されるようになりました。 [証明書](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) 中間証明書の場合も同様です。
+* CDN [logs](/help/implementing/cloud-manager/manage-logs.md) が圧縮形式で返されるようになりました。
 
 ## 早期導入プログラム {#early-adoption}
 
@@ -61,3 +66,8 @@ GitHub を使用してリポジトリを管理している場合は、[Cloud Man
 このダッシュボードは、Web アプリの品質を向上させるためのオープンソースの自動ツールである Google Lighthouse を使用しています。公開されている web ページや認証が必要な web ページに対して実行できます。パフォーマンス、アクセシビリティ、プログレッシブ web アプリ、SEO などの監査が行われます。
 
 新しいダッシュボードのテストに興味がありますか？利用を開始するには、次の宛先に電子メールを送信します： `aem-lighthouse-pilot@adobe.com` Adobe IDに関連付けられた電子メールから。
+
+## バグの修正 {#bug-fixes}
+
+* 設定ファイルの場所が正しく設定されていない場合にエラーメッセージが表示され、ビルド手順で設定パイプラインが失敗するエラーが修正されました。 エラーメッセージが明確になり、設定ファイルの場所が正しいことをユーザーが確認する必要があることを示すようになりました。
+* ビルドステップが「 」ステータスで終了したとき `FAILED` 原因は `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`の場合、宛先ブランチとの結合の競合が原因でエラーとして適切に説明されるようになりました。
