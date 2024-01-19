@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: cb817f2ce94a1618fd8dd73834f663e8aaed2b7f
+source-git-commit: 8d9cd4c580058299eea8a391b0b341751d3f2104
 workflow-type: tm+mt
-source-wordcount: '4600'
+source-wordcount: '4609'
 ht-degree: 95%
 
 ---
@@ -1012,6 +1012,7 @@ ht-degree: 95%
          + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=ja)
          + [ローンチの統合](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA リファレンスドキュメント](/help/implementing/developing/hybrid/reference-materials.md)
+         + [Sling Model Exporter を使用した ResourceResolvers のシリアル化を許可しない](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
    + 開発者ツール {#developer-tools}
       + [開発者モード](/help/implementing/developing/tools/developer-mode.md)
       + [Eclipse 用 AEM 開発者ツール](/help/implementing/developing/tools/eclipse.md)
