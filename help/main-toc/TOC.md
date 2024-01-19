@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 104dfd255185816983674026a84337624a851d9a
+source-git-commit: cb817f2ce94a1618fd8dd73834f663e8aaed2b7f
 workflow-type: tm+mt
-source-wordcount: '4551'
-ht-degree: 96%
+source-wordcount: '4600'
+ht-degree: 95%
 
 ---
 
@@ -609,6 +609,12 @@ ht-degree: 96%
             + [リダイレクトページまたはお礼メッセージの設定](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [繰り返し可能なセクションを使用したフォームの作成](/help/forms/create-forms-repeatable-sections.md)
             + [アダプティブフォームの送信アクションの設定](/help/forms/configure-submit-actions-core-components.md)
+            + [アダプティブフォームを Azure Blob ストレージに送信する](/help/forms/configure-submit-action-azure-blob-storage.md)
+            + [Microsoft® OneDrive へのアダプティブフォームの送信](/help/forms/configure-submit-action-onedrive.md)
+            + [アダプティブフォームのSharePointストレージの設定](/help/forms/configure-submit-action-sharepoint.md)
+            + [AEMアダプティブフォームとAEMワークフローの統合](/help/forms/configure-submit-action-workflow.md)
+            + [アダプティブFormsの REST エンドポイントへの送信送信アクションを設定する](/help/forms/configure-submit-action-restpoint.md)
+            + [アダプティブフォームの電子メール送信アクションの設定](/help/forms/configure-submit-action-send-email.md)
             + [アダプティブフォームでの Google reCAPTCHA の使用](/help/forms/captcha-adaptive-forms-core-components.md)
             + [アダプティブフォームにカスタムエラーハンドラーの追加](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [コアコンポーネントに基づくアダプティブフォームのロケールの追加](/help/forms/supporting-new-language-localization-core-components.md)

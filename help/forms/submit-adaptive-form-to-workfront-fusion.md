@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 7cf7883e133d58145b5b3e1bb6ba8eb21ebad5d9
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1273'
 ht-degree: 4%
 
 ---
@@ -21,21 +21,23 @@ ht-degree: 4%
 
 例えば、Workfront Fusion を使用すると、アダプティブフォームでデータを収集し、データを処理し、データをアーカイブ用にデータストアに送信するシナリオを作成できます。 シナリオを設定すると、ユーザーがフォームに入力するたびに、Workfront Fusion は自動的にタスクを実行し、データストアをシームレスに更新します。
 
+AEM as a Cloud Serviceには、フォーム送信を処理するための標準の様々な送信アクションが用意されています。 これらのオプションについて詳しくは、 [アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)  記事。
+
 ## Adobe Workfront Fusion を使用する利点{#advatages-of-workfront-fusion}
 
 Adobe Workfront Fusion をAEM Formsと組み合わせて使用する利点の一部を次に示します。
 
-- アダプティブFormsで取得したデータをWorkfront Fusion シナリオに送信する
-- エラーが発生しにくいタスクを自動化します。
-- Workfrontに直接含まれない組織に固有の要件のカスタマイズ。
-- 単純なロジックや簡単な決定（例えば、if/then 文）の処理。
+* アダプティブFormsで取得したデータをWorkfront Fusion シナリオに送信する
+* エラーが発生しにくいタスクを自動化します。
+* Workfrontに直接含まれない組織に固有の要件のカスタマイズ。
+* 単純なロジックや簡単な決定（例えば、if/then 文）の処理。
 
 ## AEM FormsとAdobe Workfront Fusion を統合するための前提条件 {#prerequisites}
 
 Workfront Fusion をAEM Formsに接続するために必要な前提条件は次のとおりです。
 
-- 有効な [Workfront Fusion ライセンス](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
-- アクセス権を持つAEMユーザー [開発者コンソール](https://my.cloudmanager.adobe.com/) から [サービス資格情報の取得](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ja).
+* 有効な [Workfront Fusion ライセンス](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* アクセス権を持つAEMユーザー [開発者コンソール](https://my.cloudmanager.adobe.com/) から [サービス資格情報の取得](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ja).
 
 ## AEM FormsとAdobe Workfront Fusion の統合
 
@@ -100,16 +102,16 @@ Webhook を追加するには：
    > 保持する `https://` （内） **IMS エンドポイント** 追加中のテキストボックス `imsEndpoint` URL。
 
 1. 次の値を **[!UICONTROL 接続の作成]** ダイアログボックス：
-   - 指定 **クライアント ID** 価値を持って **clientId** を開発者コンソールのサービス資格情報から削除します。
-   - 指定 **クライアントの秘密鍵** 価値を持って **clientSecret** を開発者コンソールのサービス資格情報から削除します。
-   - 指定 **テクニカルアカウント ID**  価値を持って **id** を開発者コンソールのサービス資格情報から削除します。
-   - 指定 **組織 ID**  価値を持って **org** を開発者コンソールのサービス資格情報から削除します。
-   - **メタスコープ**  価値を持って **メタスコープ** を開発者コンソールのサービス資格情報から削除します。
-   - **秘密鍵**  価値を持って **privateKey** を開発者コンソールのサービス資格情報から削除します。
+   * 指定 **クライアント ID** 価値を持って **clientId** を開発者コンソールのサービス資格情報から削除します。
+   * 指定 **クライアントの秘密鍵** 価値を持って **clientSecret** を開発者コンソールのサービス資格情報から削除します。
+   * 指定 **テクニカルアカウント ID**  価値を持って **id** を開発者コンソールのサービス資格情報から削除します。
+   * 指定 **組織 ID**  価値を持って **org** を開発者コンソールのサービス資格情報から削除します。
+   * **メタスコープ**  価値を持って **メタスコープ** を開発者コンソールのサービス資格情報から削除します。
+   * **秘密鍵**  価値を持って **privateKey** を開発者コンソールのサービス資格情報から削除します。
 
    >[!NOTE]
    >
-   >- の場合 **秘密鍵**，削除 `\r\n` 値から。
+   >* の場合 **秘密鍵**，削除 `\r\n` 値から。
    >  例えば、秘密鍵の値が次のような場合、
    >`\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`を削除してから、 `\r\n` 秘密鍵から、鍵は次のようになります。両方の値が別の行に表示されます。
    >
@@ -117,7 +119,7 @@ Webhook を追加するには：
    >
    >   `My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`
    > 
-   >- また、ファイルから秘密鍵または証明書を取得するオプションもあります ( **抽出** 」ボタンをクリックします。
+   >* また、ファイルから秘密鍵または証明書を取得するオプションもあります ( **抽出** 」ボタンをクリックします。
 
 1. 「**続行**」をクリックします。
 
@@ -144,8 +146,8 @@ Webhook を追加するには：
 ### 2. Workfront Fusion 用のアダプティブフォームの送信アクションを設定する
 
 Workfont Fusion の送信アクションは、次の場合に設定できます。
-- [新しいアダプティブForms](#new-af-submit-action)
-- [既存のアダプティブフォーム](#existing-af-submit-action)
+* [新しいアダプティブForms](#new-af-submit-action)
+* [既存のアダプティブフォーム](#existing-af-submit-action)
 
 #### Workfront Fusion 用の新しいアダプティブフォームの送信アクションを設定する {#new-af-submit-action}
 
@@ -187,7 +189,11 @@ Workfont Fusion の送信アクションは、次の場合に設定できます�
 
 ## ベストプラクティス {#best-practices}
 
-- AEMインスタンスでシナリオ名を取得する方法がないので、Webhook 名は慎重に選択することをお勧めします。 後で Webhook 名を変更しても、AEM Formsの送信アクションドロップダウンリストには反映されません。
-- 1 つのシナリオに複数の Webhook リンクを含めることができますが、一度にアクティブになる Webhook リンクは 1 つだけです。 リンクされていない Webhook は、AEM Formsの送信アクションドロップダウンリストに表示されないように、削除することをお勧めします。
+* AEMインスタンスでシナリオ名を取得する方法がないので、Webhook 名は慎重に選択することをお勧めします。 後で Webhook 名を変更しても、AEM Formsの送信アクションドロップダウンリストには反映されません。
+* 1 つのシナリオに複数の Webhook リンクを含めることができますが、一度にアクティブになる Webhook リンクは 1 つだけです。 リンクされていない Webhook は、AEM Formsの送信アクションドロップダウンリストに表示されないように、削除することをお勧めします。
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
+
+## 関連記事
+
+{{af-submit-action}}

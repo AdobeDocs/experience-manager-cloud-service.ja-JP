@@ -1,8 +1,8 @@
 ---
-source-git-commit: 79d3ec7f5ede84fd989b7d5440739ec9560a547f
+source-git-commit: 2f567d45a6ba2dfb4dd3346e8510bcb04113eefb
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 85%
+source-wordcount: '264'
+ht-degree: 79%
 
 ---
 # スニペット {#snippets}
@@ -43,5 +43,16 @@ ht-degree: 85%
 * [AEM ワークフローへアダプティブフォームデータを送信](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [フォームポータルを使用して AEM web サイト上の AEM アダプティブフォームを一覧表示](/help/forms/configure-forms-portal.md)
 
+## アダプティブフォーム送信アクション {#af-submit-action}
 
-
+* [メールを送信](/help/forms/configure-submit-action-send-email.md)
+* [SharePoint に送信](/help/forms/configure-submit-action-sharepoint.md)
+* [フォームデータモデルを使用して送信](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
+* [Azure Blob Storage に送信](/help/forms/configure-submit-action-azure-blob-storage.md)
+* [REST エンドポイントへの送信](/help/forms/configure-submit-action-restpoint.md)
+* [OneDrive に送信](/help/forms/configure-submit-action-onedrive.md)
+* [AEM ワークフローを起動](/help/forms/configure-submit-action-workflow.md)
+* [Power Automate に送信](/help/forms/forms-microsoft-power-automate-integration.md)
+* [Workfront Fusion に送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+* [アダプティブフォームを Salesforce アプリケーションに接続](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [アダプティブフォームのMicrosoft® Dynamics OData への接続](/help/forms/ms-dynamics-odata-configuration.md)

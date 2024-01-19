@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 94%
+source-wordcount: '1000'
+ht-degree: 85%
 
 ---
 
@@ -35,6 +35,9 @@ ht-degree: 94%
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
 <!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service（OData サービス）は、すべての実行モードで使用できます。[!DNL Experience Manager] インスタンスの実行モードの設定について詳しくは、「[実行モード](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#runmodes)」を参照してください。
+
+AEM as a Cloud Serviceには、フォーム送信を処理するための標準の様々な送信アクションが用意されています。 これらのオプションについて詳しくは、 [アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)  記事。
+
 
 ## 前提条件 {#prerequisites}
 
@@ -70,7 +73,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->この手順は、[!DNL Experience Manager Forms] をオンプレミスの [!DNL Microsoft Dynamics] サーバーと統合する場合にのみ使用してください。
+> この手順は、[!DNL Experience Manager Forms] をオンプレミスの [!DNL Microsoft Dynamics] サーバーと統合する場合にのみ使用してください。
 
 1. 「[ [!DNL Microsoft Dynamics] の IFD 設定](https://technet.microsoft.com/ja-jp/library/dn609803.aspx)」の説明に従って、IFD の [!DNL Microsoft Dynamics] オンプレミスインスタンスを設定します。
 1. Windows PowerShell を使用して以下のコマンドを実行し、IFD が有効になっている [!DNL Microsoft Dynamics] でクレームを設定します。
@@ -158,14 +161,16 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-MS Dynamics OData Cloud Service（OData サービス）をクラウドサービスとして設定した後、フォームデータモデルの作成時にこのサービスを使用できます。詳しくは、「[フォームデータモデルの作成](create-form-data-models.md)」を参照してください。
+MS Dynamics OData クラウドサービスを設定した後、フォームデータモデルの作成時にこのサービスを使用できます。 詳しくは、[フォームデータモデルの作成](create-form-data-models.md)を参照してください。
 
-次に、フォームデータモデルに基づいてアダプティブフォームを作成し、次のような様々なアダプティブフォームの使用例で使用できます。
+次に、アダプティブフォームベースのフォームデータモデルを作成し、次のような様々なアダプティブフォームの使用例で使用できます。
 
 * [!DNL Microsoft Dynamics] のエンティティとサービスに対してクエリを実行し、取得した情報を使用してアダプティブフォームに事前入力する
 * アダプティブフォームのルールを使用して、フォームデータモデル内で定義された [!DNL Microsoft Dynamics] サーバーの操作を呼び出す。
 * 送信されたフォームデータを [!DNL Microsoft Dynamics] のエンティティに書き込む
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
+
+以下が可能です。 [フォームデータモデル送信アクションの設定](/help/forms/using-form-data-model.md) アダプティブフォームでMicrosoft Dynamics OData にデータを送信する場合。
 
 ビジネスワークフローでのフォームデータモデルの作成および使用について詳しくは、「[データ統合](data-integration.md)」を参照してください。

@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 94%
+source-wordcount: '1288'
+ht-degree: 88%
 
 ---
 
@@ -120,11 +120,25 @@ Edit Properties dialog for an interactive communication-->
 
 フォームデータモデルに基づくフォームを送信した場合、そのフォームを設定して、特定のデータモデルオブジェクトに対して送信されたデータをそのデータモデルオブジェクトのデータソースに書き込むことができます。この設定を行うために、[!DNL Experience Manager Forms] には、すぐに使用できる[フォームデータモデル送信アクション](configuring-submit-actions.md)が用意されています。これは、フォームデータモデルをベースとするアダプティブフォーム専用のアクションです。このアクションを実行すると、特定のデータモデルオブジェクトに対して送信されたデータが、そのデータモデルオブジェクトのデータソースに書き込まれます。
 
-フォームデータモデル送信アクションを設定するには、アダプティブフォームコンテナのプロパティを開き、送信アコーディオンの送信アクションドロップダウンで「**[!UICONTROL フォームデータモデルを使用して送信]**」を選択します。次に、 **[!UICONTROL 送信するデータモデルオブジェクトの名前]** ドロップダウンで、目的のデータモデルオブジェクトを探して選択します。各プロパティを保存します。
+フォームデータモデル送信アクションを設定するには：
 
-フォームを送信すると、設定されているデータモデルオブジェクトのデータが、各データソースに書き込まれます。
+1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
+1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。アダプティブフォームコンテナダイアログボックスが開きます。
+1. 「**[!UICONTROL 送信]**」タブをクリックします。
+1. 次から： **[!UICONTROL 送信アクション]** ドロップダウンリストで、「 **[!UICONTROL フォームデータモデルを使用して送信]**.
+
+   ![アクションの設定](/help/forms/assets/configure-submit-action-invoke-fdm.png)
+
+1. 次を指定します。 **[!UICONTROL 送信するデータモデル]**.
+1. クリック **[!UICONTROL 完了]**
+
+フォームの送信時に、設定済みのデータモデルオブジェクトのデータが各データソースに書き込まれます。 さらに、フォームデータモデルとレコードのドキュメント（DoR）を使用して、フォームの添付ファイルをデータソースに送信できます。フォームデータモデルについて詳しくは、[[!DNL AEM Forms]  のデータ統合機能](data-integration.md)を参照してください。
 
 <!--![data-submission](assets/data-submission.png)-->
+
+>[!NOTE]
+>
+> AEM as a Cloud Serviceには、フォーム送信を処理するための標準の様々な送信アクションが用意されています。 これらのオプションについて詳しくは、 [アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)  記事。
 
 バイナリデータモデルオブジェクトのプロパティを使用して、フォームの添付ファイルをデータソースに送信することもできます。添付ファイルを JDBC データソースに送信するには、次の手順を実行します。
 
