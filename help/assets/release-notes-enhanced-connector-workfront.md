@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 16aa0241dd954b7f66523d746827d81b956578bd
+source-git-commit: b1c5df329e45128704ae82f49673c6a755a61a73
 workflow-type: tm+mt
-source-wordcount: '1379'
-ht-degree: 95%
+source-wordcount: '1573'
+ht-degree: 86%
 
 ---
 
@@ -15,14 +15,27 @@ ht-degree: 95%
 
 ## リリース日 {#release-date}
 
-[!DNL Workfront for Experience Manager enhanced connector] の最新バージョン 1.9.15 のリリース日は 2023年17月11日（PT）です。
+[!DNL Workfront for Experience Manager enhanced connector] の最新バージョン 1.9.16 のリリース日は 2024年1月19日（PT）です。
 
 ## リリースのハイライト {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] の最新バージョンには、次のバグ修正が含まれています。
 
-* AEMフォルダーのリストを表示している間、ダイアログの読み込みに 1 分以上かかります。
-* 認証済み [!DNL Workfront] ユーザーは、常に認証失敗エラーログを受け取っています。
+* The [!DNL Workfront] の設定 [!DNL CRX DE] は現在、 `project ID`読み取り専用権限を適用するとエラーが発生する問題を修正しました。 方法の詳細 [権限の設定](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders).
+
+* 標準提供のインデックス定義にカスタムプロパティを追加する方法に関する公開ドキュメントはありません。 詳細情報： [カスタムプロパティの追加](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping).
+
+* 拡張コネクタで接続設定を削除すると、イベント購読や保存されているその他の設定に大きな影響を与え、古い URL を指すようになります。
+
+* forms アドオンパッケージをインストールしても、 **[!UICONTROL ルーターを切り替え]**&#x200B;を返し、 [!DNL WFEC AMS environment Toggle] 機能。
+
+* EWC 設定でイベントサブスクリプションを有効にすると、 `HTTP 400` 設定中にエラーが発生しました [!DNL Workfront] 初めて拡張されたコネクタです。
+
+* Workfrontでリンクされたフォルダーアセットに対するコメントを削除すると、AEM上でリンクされたフォルダーパスが見つかりません。
+
+* AEMでのサイズの大きいファイルアセットのサポートが不十分な場合、4 バイトのサイズの問題が発生します。
+
+* リンクされたフォルダー内のクリティカルフローのリクエスト時間処理、ドキュメントの更新、メモの更新は行われません。
 
 >[!NOTE]
 >
@@ -31,7 +44,7 @@ ht-degree: 95%
 
 >[!IMPORTANT]
 >
->アドビでは [ の](/help/assets/workfront-connector-install.md)最新バージョン 1.9.15 へのアップグレード[!DNL Workfront for Experience Manager enhanced connector]をお勧めします。
+>アドビでは [!DNL Workfront for Experience Manager enhanced connector] の[最新バージョン 1.9.16 へのアップグレード](/help/assets/workfront-connector-install.md)をお勧めします。
 
 ## 既知の問題 {#known-issues}
 
@@ -40,6 +53,11 @@ ht-degree: 95%
 * 従来のWorkfrontエクスペリエンスを使用している場合、 **[!UICONTROL 送信先]** オプションは **[!UICONTROL その他]** 」ドロップダウンリストでは、「Experience Manager」内でターゲットの宛先を選択できません。 「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストを使用する場合、「**[!UICONTROL 送信先]**」オプションは正常に機能します。新しい Workfront エクスペリエンスの「**[!UICONTROL 詳細]**」ドロップダウンリストと「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストでは、「**[!UICONTROL 送信先]**」オプションは正常に機能します。
 
 ## 以前のリリース {#previous-releases}
+
+### 2023年11月リリース {#november-2023-release}
+
+* AEMフォルダーのリストを表示している間、ダイアログの読み込みに 1 分以上かかります。
+* 認証済み [!DNL Workfront] ユーザーは、常に認証失敗エラーログを受け取っています。
 
 ### 2023年10月リリース {#october-2023-release}
 
