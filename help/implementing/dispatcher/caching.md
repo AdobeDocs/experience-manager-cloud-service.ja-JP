@@ -3,10 +3,10 @@ title: AEM as a Cloud Service でのキャッシュ
 description: AEM as a Cloud Service でのキャッシュの基本について
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 8351e5e60c7ec823a399cbbdc0f08d2704f12ccf
+source-git-commit: 28537409c5974ff8ade30207f16cc62b45c47616
 workflow-type: tm+mt
-source-wordcount: '2865'
-ht-degree: 96%
+source-wordcount: '2894'
+ht-degree: 95%
 
 ---
 
@@ -223,6 +223,10 @@ AEM レイヤーは、デフォルトでは BLOB コンテンツをキャッシ�
         Header set Age 0
      </LocationMatch>
      ```
+
+### CDN キャッシュヒット率の分析 {#analyze-chr}
+
+詳しくは、 [キャッシュヒット率の分析チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) ダッシュボードを使用した CDN ログのダウンロードとサイトのキャッシュサイト比の分析に関する情報を参照してください。
 
 ### HEAD リクエスト動作 {#request-behavior}
 
