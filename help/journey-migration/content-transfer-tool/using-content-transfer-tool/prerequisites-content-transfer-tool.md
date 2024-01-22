@@ -15,8 +15,8 @@ ht-degree: 100%
 >id="aemcloud_ctt_prereqs"
 >title="コンテンツ転送ツール使用時の重要な考慮事項"
 >abstract="Java™ と AEM のバージョン、サポートされるデータストアのタイプ、ユーザーグループの考慮事項など、コンテンツ転送ツールの使用に関する重要な考慮事項を確認します。"
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=ja" text="コンテンツ転送ツール使用時の重要な考慮事項"
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja#best-practices" text="ベストプラクティスとガイドライン"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=ja" text="コンテンツ転送ツール使用時の重要な考慮事項"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja#best-practices" text="ベストプラクティスとガイドライン"
 
 次の表に、コンテンツ転送ツールを使用するための前提条件を示します。
 
