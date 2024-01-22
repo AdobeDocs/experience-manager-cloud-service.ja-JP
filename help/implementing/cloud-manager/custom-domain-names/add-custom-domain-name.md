@@ -2,12 +2,13 @@
 title: カスタムドメイン名の追加
 description: Cloud Manager を使用してカスタムドメイン名を追加する方法を説明します。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 52466e091cf6e0ab1ac620e15568c04881a3b63a
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 94%
+source-wordcount: '680'
+ht-degree: 87%
 
 ---
+
 
 # カスタムドメイン名の追加 {#adding-cdn}
 
@@ -60,15 +61,19 @@ CDN デプロイメントの場合は、有効な SSL 証明書が必要で、TX
 
 様々なステータスと起こりうる問題への対処方法について詳しくは、[カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)ドキュメントを参照してください。
 
+>[!TIP]
+>
+>次の記事で、 [次に CNAME または A レコードを追加](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) を使用して、カスタムドメインに DNS レコードを追加する際の作業が 2 倍になるのを防ぎます。 TXT エントリと CNAME または A レコードを管理する DNS サーバーに同時に設定できます。
+
+>[!TIP]
+>
+>TXT レコードについて詳しくは、[TXT レコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)を参照してください。
+
 >[!NOTE]
 >
 >DNS の伝播遅延が原因で、DNS 検証の処理に数時間かかる場合があります。
 >
 >Cloud Manager が所有権を検証し、ドメイン設定テーブルに表示されるステータスを更新します。詳しくは、[カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)を参照してください。
-
->[!TIP]
->
->TXT レコードについて詳しくは、[TXT レコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)を参照してください。
 
 ## 環境ページからのカスタムドメイン名の追加 {#adding-cdn-environments}
 
