@@ -5,7 +5,7 @@ exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 99%
 >id="aemcloud_assesskpis"
 >title="KPI の評価"
 >abstract="Adobe Experience Manager をローンチする前に、プロジェクトの関係者全員が、上位 3 つの主要業績評価指標（KPI）と、それが重要な理由を理解する必要があります。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="KPI の調整"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="適切なチームの選択"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=ja" text="KPI の調整"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=ja" text="適切なチームの選択"
 
 Adobe Experience Manager をローンチする前に、プロジェクトの関係者全員が、上位 3 つの主要業績評価指標（KPI）と、それが重要な理由を理解する必要があります。
 
