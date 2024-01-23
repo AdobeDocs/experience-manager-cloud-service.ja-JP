@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service のバックアップと復元
-description: AEM as a Cloud Serviceでのバックアップと復元の詳細
+description: AEM as a Cloud Service のバックアップと復元について
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 83b5d9a3ff0e9a3c69e36a97a3f733b05f827d3b
+source-git-commit: b77ee0697e8f6f4aeaa6651336588f1c5321abd1
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 97%
+source-wordcount: '539'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->この機能は、コードまたはコンテンツに重大な問題がある場合にのみ使用してください。復元されたバックアップから現在までの最新のデータは失われます。ステージングも古いバージョンに復元されます。
+>この機能は、コードまたはコンテンツに重大な問題がある場合にのみ使用してください。復元されたバックアップから現在までの最新のデータは失われます。ステージングも古いバージョンに復元されます。 最新のデータを保持する場合は、復元する前にコンテンツパッケージを通じて書き出し、復元されたリポジトリに再インストールする必要があります。
 
 ## 使用方法 {#how-to-use}
 
