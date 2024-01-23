@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: fa57e0438a7570551785375c4e5a57fa38fd2f6f
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 98%
+source-wordcount: '1953'
+ht-degree: 90%
 
 ---
 
@@ -60,18 +60,53 @@ ht-degree: 98%
 
 ## メタデータのタイプ {#types-of-metadata}
 
-メタデータの 2 つの基本的なタイプは、テクニカルメタデータと記述メタデータです。
+メタデータは、テクニカルメタデータ、情報メタデータおよび管理メタデータに分類されます。
 
-テクニカルメタデータは、デジタルアセットを操作しているソフトウェアアプリケーションで役に立つもので、手動で管理できません。[!DNL Experience Manager Assets] と他のソフトウェアは、自動的にテクニカルメタデータを決定し、アセットが変更されるとメタデータが変更される場合があります。アセットで使用可能なテクニカルメタデータは、主にアセットのファイルタイプによって決まります。テクニカルメタデータの例を以下に示します。
+### テクニカルメタデータ
 
-* ファイルのサイズ。
-* 画像の寸法（高さと幅）。
-* オーディオまたはビデオファイルのビットレート。
-* 画像の解像度（詳細レベル）。
+テクニカルメタデータは、デジタルアセットの技術的側面に焦点を当て、以下に関する重要な情報を提供します。
 
-記述メタデータは、アセットの元となるビジネスなど、アプリケーションドメインに関係するメタデータです。記述メタデータは自動的に決定できません。手動または半自動で作成されます。例えば、GPS 対応のカメラでは、緯度と経度を自動的に追跡し、画像に地理タグを追加できます。
+* ファイルサイズ
+* 形式
+* 解決策
+* ディメンション寸法
+* カラーモード
 
-記述メタデータ情報を手動で作成する場合のコストは高くなります。そのため、ソフトウェアシステムや組織間でのメタデータの交換を容易にするための基準が確立されています。[!DNL Experience Manager Assets] は、メタデータの管理に関連するすべての規格をサポートします。
+このタイプのメタデータは、デジタルアセットを理解し、効率的に使用するのに役立ちます。
+
+### 情報メタデータ
+
+情報メタデータは、コンテンツの理解を深め、コンテンツの検出と検索を容易にするための説明情報を提供します。 キーワード、キャプション、説明が含まれます。 <br>例えば、Experience Manager Assetsでビデオを管理する場合、次の情報メタデータを含めることができます。
+
+* **キーワード**：マーケティング、製品ローンチ、プロモ
+* **キャプション**：魅力的な機能を備えた最新製品の紹介
+* **説明**：ビデオコンテンツの詳細な概要です。
+
+### 管理メタデータ
+
+管理メタデータは、デジタルアセットの管理面を扱います。 デジタルアセット管理システム内のアセットのアクセス制御、コンプライアンス、ライフサイクル全体の管理を確実におこなえます。 以下に関する情報が含まれます。
+
+* アセットの所有権
+* 使用権限
+* 権限
+* その他の管理者の詳細
+
+このメタデータタイプは、効果的なアセット管理、アクセス制御、コンプライアンスを実現します。
+
+<!-- Learn more about [metadata best practices](metadata-best-practices.md) to manage your digital assets effectively. -->
+
+<!-- The two basic types of metadata are technical metadata and descriptive metadata.
+
+Technical metadata is useful for software applications that are dealing with digital assets and should not be maintained manually. [!DNL Experience Manager Assets] and other software automatically determine technical metadata and the metadata may change when the asset is modified. The available technical metadata of an asset depends largely on the file type of the asset. Some examples of technical metadata are:
+
+* Size of a file.
+* Dimensions (height and width) of an image.
+* Bit rate of an audio or video file.
+* Resolution (level of detail) of an image.
+
+Descriptive metadata is metadata concerned with the application domain, for example, the business that an asset is coming from. Descriptive metadata cannot be determined automatically. It is created manually or semi-automatically. For example, a GPS-enabled camera can automatically track the latitude and longitude and add geotag the image.
+
+The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management. -->
 
 ## メタデータと最終変更 {#last-modification}
 
@@ -115,7 +150,7 @@ ID3 タグは、MP3 ファイル形式用に設計されています。形式に
 
 ### Exif {#exif}
 
-Exchangeable image file format（Exif）は、デジタル写真で最も一般的に使用されるメタデータフォーマットです。JPEG、TIFF、RIFF、WAV など、多くのファイル形式でメタデータプロパティの固定語彙を埋め込む方法を提供します。Exif によって、メタデータの名前と値のペアとして、メタデータが格納されます。これらのメタデータの名前と値のペアはタグとも呼ばれます。[!DNL Experience Manager] のタグと混同しないようにしてください。最新のデジタルカメラは Exif メタデータを作成し、最新のグラフィックソフトウェアでサポートされています。Exif 形式は、特に画像に関するメタデータ管理で最も一般的な共通項です。
+Exchangeable image file format（Exif）は、デジタル写真で最も一般的に使用されるメタデータフォーマットです。JPEG、TIFF、RIFF、WAV など、多くのファイル形式でメタデータプロパティの固定語彙を埋め込む方法を提供します。Exif によって、メタデータが、メタデータ名とメタデータ値のペアとして格納されます。 これらのメタデータの名前と値のペアはタグとも呼ばれます。タグと混同しないように、 [!DNL Experience Manager]. 最新のデジタルカメラは Exif メタデータを作成し、最新のグラフィックソフトウェアでサポートされています。Exif 形式は、特に画像に関するメタデータ管理で最も一般的な共通項です。
 
 Exif の主な制限は、BMP、GIF、PNG などの一般的な画像ファイル形式ではサポートされないことです。
 
@@ -135,7 +170,7 @@ Adobe Experience Manager Assets を使用すると、複数のアセットのメ
 
 1. 編集するアセットの場所に移動します。
 1. 共通のプロパティを編集するアセットを選択します。
-1. ツールバーで、「 」を選択します。 **[!UICONTROL プロパティ]** 開く [!UICONTROL プロパティ] 選択したアセットのページ。
+1. ツールバーで「**[!UICONTROL プロパティ]**」を選択して、選択したアセットの「[!UICONTROL プロパティ]」ページを開きます。
 
    >[!NOTE]
    >
@@ -149,8 +184,8 @@ Adobe Experience Manager Assets を使用すると、複数のアセットのメ
    >* [!UICONTROL プロパティ]ページで、選択をキャンセルすることでアセットリストからアセットを削除できます。アセットリストは、デフォルトではすべてのアセットが選択されています。リストから削除するアセットのメタデータは更新されていません。
    >* アセットリストの上部で、「**[!UICONTROL タイトル]**」の横にあるチェックボックスをオンにして、アセットの選択とリストの消去を切り替えます。
 
-1. アセットに別のメタデータスキーマを選択するには、「 **[!UICONTROL 設定]** ツールバーで、目的のスキーマを選択します。 変更内容を保存します。
-1. 複数の値が含まれるフィールドで、既存のメタデータに新しいメタデータを追加するには、「**[!UICONTROL 追加モード]**」を選択します。このオプションを選択しないと、フィールド内の既存のメタデータが新しいメタデータに置換されます。「**[!UICONTROL 送信]**」を選択します。
+1. アセットに別のメタデータスキーマを選択するには、ツールバーの「**[!UICONTROL 設定]**」で目的のスキーマを選択します。変更内容を保存します。
+1. 複数の値が含まれるフィールドで、既存のメタデータに新しいメタデータを追加するには、「**[!UICONTROL 追加モード]**」を選択します。このオプションを選択しないと、フィールド内の既存のメタデータが新しいメタデータに置き換えられます。「**[!UICONTROL 送信]**」を選択します。
 
    >[!CAUTION]
    >
