@@ -1,31 +1,31 @@
 ---
 title: レスポンシブデザイン
 description: レスポンシブデザインを使用すると、同じエクスペリエンスを複数のデバイスで、複数の向きで効果的に表示できます。
-source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
+source-git-commit: c9ee24e7b9f10ebbf9425dff66103e097701c8e4
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 64%
+source-wordcount: '908'
+ht-degree: 58%
 
 ---
 
 
 # レスポンシブデザイン {#responsive-design}
 
-エクスペリエンスが表示されるクライアントの表示域に適応するようにエクスペリエンスをデザインします。レスポンシブデザインでは、同じページを複数のデバイスで、両方の向きで効果的に表示できます。 次の図は、ビューポートサイズの変化に対してページが応答する方法を示しています。
+エクスペリエンスが表示されるクライアントの表示域に適応するようにエクスペリエンスをデザインします。レスポンシブデザインを使用すると、同じページを複数のデバイスで、縦、横の両方の向きで効果的に表示できます。以下の画像は、ビューポートサイズの変更に対するページの応答方法の例を示しています。
 
-* レイアウト：小さいビューポートでは 1 列のレイアウトを使用し、大きいビューポートでは複数列のレイアウトを使用します。
-* テキストサイズ：大きなビューポートでは、（見出しなどの適切な場合に）より大きなテキストサイズを使用します。
-* コンテンツ：小さいデバイスで表示する際には、最も重要なコンテンツのみを含めます。
-* ナビゲーション：他のページにアクセスするためのデバイス固有のツールが用意されています。
+* レイアウト：ビューポートが小さい場合は 1 列レイアウトを使用し、ビューポートが大きい場合は複数列レイアウトを使用します。
+* テキストサイズ：ビューポートが大きい場合は、（見出しなどの適切な箇所で）大きいテキストサイズを使用します。
+* コンテンツ：小型デバイスに表示する場合は、重要なコンテンツのみを表示します。
+* ナビゲーション：他のページにアクセスするためのデバイス専用のツールを提供します。
 * 画像：ウィンドウのサイズに応じて、クライアントの表示域に適した画像レンディションを提供します
 
 ![レスポンシブデザインの例](assets/responsive-example.png)
 
-複数のウィンドウサイズと向きに適応可能な HTML5 を生成する Adobe Experience Manager（AEM）アプリケーションを開発します。例えば、次の範囲のビューポートの幅は、様々なデバイスタイプと向きに対応しています
+複数のウィンドウサイズと向きに適応可能な HTML5 を生成する Adobe Experience Manager（AEM）アプリケーションを開発します。例えば、次のようなビューポートの幅の範囲が、様々なデバイスタイプと向きに対応します。
 
-* 最大幅 480 ピクセル（電話、縦置き）
-* 最大幅 767 ピクセル（電話、横置き）
-* 幅 768 ～ 979 ピクセル（タブレット、縦置き）
+* 幅 480 ピクセル以下（スマートフォン、縦置き）
+* 幅 767 ピクセル以下（スマートフォン、横置き）
+* 幅 768～979 ピクセル（タブレット、縦置き）
 * 幅 980 ～ 1,199 ピクセル（タブレット、横置き）
 * 幅 1,200 ピクセル以上（デスクトップ）
 
@@ -39,7 +39,7 @@ ht-degree: 64%
 
 ## 開発の前に {#before-you-develop}
 
-Web ページをサポートするAEMアプリケーションを開発する前に、デザインに関するいくつかの決定をおこなう必要があります。 例えば、次の情報が必要になります。
+Web ページをサポートする AEM アプリケーションを開発する前に、デザインについていくつかの決定を行う必要があります。例えば、次の情報が必要になります。
 
 * ターゲットとするデバイス
 * ターゲットの表示域サイズ
@@ -56,15 +56,78 @@ Web ページをサポートするAEMアプリケーションを開発する前�
 
 メディアクエリによって、ページレンダリング用の CSS スタイルを選択的に使用できます。AEM 開発ツールおよび機能を使用すれば、アプリケーションでメディアクエリを効果的かつ効率的に実装できます。
 
-W3C グループが、この CSS3 機能と構文について示した、[メディアクエリ](https://www.w3.org/TR/css3-mediaqueries/)に関する推奨事項を提供しています。
+W3C グループが、この CSS3 機能と構文について示した、[メディアクエリ](https://www.w3.org/TR/css3-mediaqueries/)に関するレコメンデーションを提供しています。
 
 ### CSS ファイルの作成 {#creating-the-css-file}
 
 CSS ファイルでは、ターゲットとしているデバイスのプロパティに基づいてメディアクエリを定義します。次の実装方法は、各メディアクエリのスタイルを管理するのに効果的です。
 
 * [クライアントライブラリフォルダー](clientlibs.md)を使用して、ページのレンダリング時に組み立てられる CSS を定義します。
-* 各メディアクエリと関連するスタイルを個別の CSS ファイルに定義します。 メディアクエリのデバイス機能を表すファイル名を使用すると便利です。
-* すべてのデバイスに共通するスタイルを、別個の CSS ファイルで定義します。
+* 各メディアクエリおよび関連するスタイルを、それぞれ個別の CSS ファイルで定義します。メディアクエリのデバイスの特徴を表したファイル名を使用すると便利です。
+* すべてのデバイスに共通するスタイルを、個別の 1 つの CSS ファイルで定義します。
 * クライアントライブラリフォルダーの css.txt ファイルで、組み立てられた CSS ファイル内で必要とされる順に CSS ファイルを並べます。
 
 [WKND チュートリアル](develop-wknd-tutorial.md)ではこの実装方法を使用して、サイトデザインのスタイルを定義しています。WKND で使用される CSS ファイルは、`/apps/wknd/clientlibs/clientlib-grid/less/grid.less` にあります。
+
+### AEM ページでのメディアクエリの使用 {#using-media-queries-with-aem-pages}
+
+[WKND サンプルプロジェクト](/help/implementing/developing/introduction/develop-wknd-tutorial.md) および [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) を使用します。 [ページコアコンポーネント、](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html) ページポリシーを介した clientlibs を含む
+
+独自のページコンポーネントがページコアコンポーネントに基づいていない場合は、クライアントライブラリフォルダーをその HTL または JSP スクリプトに含めることもできます。 これにより、レスポンシブグリッドが機能するために必要なメディアクエリを含んだ CSS ファイルが生成され、参照されます。
+
+#### HTL {#htl}
+
+```html
+<sly data-sly-use.clientlib="${'/libs/granite/sightly/templates/clientlib.html'}">
+<sly data-sly-call="${clientlib.all @ categories='apps.weretail.all'}"/>
+```
+
+#### JSP {#jsp}
+
+```xml
+<ui:includeClientLib categories="apps.weretail.all"/>
+```
+
+この JSP スクリプトにより、スタイルシートを参照する以下の HTML コードが生成されます。
+
+```xml
+<link rel="stylesheet" href="/etc/designs/weretail/clientlibs-all.css" type="text/css">
+<link href="/etc/designs/weretail.css" rel="stylesheet" type="text/css">
+```
+
+## 特定のデバイスのプレビュー {#previewing-for-specific-devices}
+
+エミュレーターを使用すると、ページを様々な表示域サイズでプレビューできるので、レスポンシブデザインの動作をテストできます。 サイトコンソールでページを編集する際に、 **エミュレーター** アイコンをクリックしてエミュレーターを表示します。
+
+![ツールバーのエミュレーターアイコン](assets/emulator-icon.png)
+
+エミュレーターツールバーで、 **デバイス** アイコンをクリックすると、デバイスを選択できるドロップダウンメニューが表示されます。 デバイスを選択すると、その表示域サイズに合わせてページが変更されます。
+
+![エミュレーターツールバー](assets/emulator.png)
+
+### デバイスグループの指定 {#specifying-device-groups}
+
+に表示されるデバイスグループを指定するには **デバイス** リストを追加する `cq:deviceGroups` プロパティを `jcr:content` サイトのテンプレートページのノードに設定します。 プロパティの値は、デバイスグループノードへのパスの配列です。
+
+例えば、WKND サイトのテンプレートページが次のような場合、 `/conf/wknd/settings/wcm/template-types/empty-page/structure`. また、 `jcr:content` ノードの下に、次のプロパティが含まれます。
+
+* 名前：`cq:deviceGroups`
+* タイプ：`String[]`
+* 値：`mobile/groups/responsive`
+
+デバイスグループノードは `/etc/mobile/groups` フォルダー内にあります。
+
+## レスポンシブ画像 {#responsive-images}
+
+レスポンシブページは、レンダリングされるデバイスに動的に適応し、ユーザーに対してより優れたエクスペリエンスを提供します。 ただし、ページ読み込み時間を最小限に抑えるために、アセットをブレークポイントとデバイスに最適化することも重要です。
+
+[コアコンポーネントの画像コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=ja) アダプティブ画像選択などの機能です。
+
+* デフォルトでは、画像コンポーネントは、 [アダプティブ画像サーブレット](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) 適切なレンディションを配信する。
+* [Web に最適化された画像配信](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=ja) は、DAM から WebP 形式で画像アセットを配信し、画像のダウンロードサイズを平均で約 25%削減できる、シンプルなチェックボックスをポリシーで選択しても利用できます。
+
+## レイアウトコンテナ {#layout-container}
+
+AEMレイアウトコンテナを使用すると、レスポンシブレイアウトを効率的かつ効果的に実装して、ページのサイズをクライアントビューポートに適応させることができます。
+
+ドキュメントを参照してください [レイアウトコンテナとレイアウトモードの設定](/help/sites-cloud/administering/responsive-layout.md) レイアウトコンテナの仕組みと、コンテンツに対してレスポンシブレイアウトを有効にする方法について詳しくは、こちらを参照してください。
