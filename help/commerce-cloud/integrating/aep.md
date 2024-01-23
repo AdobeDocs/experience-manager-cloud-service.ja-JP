@@ -11,12 +11,13 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: d9d4ed55722920a8528056defbc0d8a411dd6807
+source-git-commit: f7967c5374dd34315b2577cc9fd7606db3ef4cc7
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 95%
 
 ---
+
 
 # AEM-CIF コアコンポーネントと Adobe Experience Platform の統合 {#aem-cif-aep-integration}
 
@@ -216,7 +217,7 @@ React ベースの Peregrine と CIF のコアコンポーネントを初期化�
        },
        eventsCollector: {
            eventForwarding: {
-               commerce: true,
+               acds: true,
                aep: false,
            }
        }
@@ -225,7 +226,7 @@ React ベースの Peregrine と CIF のコアコンポーネントを初期化�
 
    >[!IMPORTANT]
    >
-   >__AEM Guides - CIF Venia Project__ の [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) ファイルについては既にご存知かもしれませんが、このファイルにはいくつかの変更が必要です。まず、__TODO__ コメントを確認します。次に、`eventsCollector` プロパティ内で `eventsCollector > aed` オブジェクトを見つけ、`orgId` および `datastreamId` プロパティを正しい値に更新します。[詳細情報](./aep.md#add-aep-values-to-aem)。
+   >__AEM Guides - CIF Venia Project__ の [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) ファイルについては既にご存知かもしれませんが、このファイルにはいくつかの変更が必要です。まず、__TODO__ コメントを確認します。次に、`eventsCollector` プロパティ内で `eventsCollector > aep` オブジェクトを見つけ、`orgId` および `datastreamId` プロパティを正しい値に更新します。[詳細情報](./aep.md#add-aep-values-to-aem)。
 
 1. 次の内容の `App.js` ファイルを作成します。このファイルは、一般的な React アプリケーションの開始点ファイルに似ており、React およびカスタムフックと、React コンテキストを使用して Experience Platform の統合を簡単にする方法が含まれています。
 
