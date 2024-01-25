@@ -5,10 +5,10 @@ topic-tags: author
 keywords: アダプティブフォームフラグメントを追加、アダプティブフォームフラグメント、フォームフラグメントを作成、アダプティブフォームにフラグメントを追加、フラグメントを管理
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 5d9cf5d4dee5122263b15cee8874975887c57219
 workflow-type: tm+mt
-source-wordcount: '1768'
-ht-degree: 94%
+source-wordcount: '1789'
+ht-degree: 93%
 
 ---
 
@@ -27,6 +27,10 @@ ht-degree: 94%
 フォームフラグメントは複数のフォームにシームレスに統合され、一貫性のあるプロフェッショナルな外観のフォームを効率的に作成できます。フォームフラグメントは、「一度変更すればすべてに反映」機能を通じて、再利用性、標準化、ブランドの一貫性を確保します。1 か所で行われた更新が、これらのフラグメントを利用するすべてのフォームに自動反映されるので、メンテナンス性と効率性が向上します。
 
 フラグメントを 1 つのドキュメントに複数回追加し、そのコンポーネントのデータ連結プロパティを使用すると、フラグメントを別のデータソースやスキーマに結び付けることができます。例えば、同じアドレスフラグメントを永続アドレス、通信アドレス、請求先アドレスに使用し、それをデータソースやスキーマの様々なフィールドに接続することができます。
+
+>[!NOTE]
+>
+> フラグメントエクスペリエンスは、 [フォームフラグメントコンポーネントの設定ダイアログとデザインダイアログ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html).
 
 ## フォームフラグメントを作成 {#create-a-fragment}
 
