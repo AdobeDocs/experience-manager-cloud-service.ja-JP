@@ -2,10 +2,10 @@
 title: プログラムの管理と編集
 description: 実稼動およびサンドボックスプログラムを編集し、作成後にオプションを調整する方法について説明します。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 0d60c19638707262dab7f290f84fa873b694bc22
+source-git-commit: 2dfae31e32d375c82c4f690624e48f7f09feb4df
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 49%
+source-wordcount: '773'
+ht-degree: 32%
 
 ---
 
@@ -99,38 +99,21 @@ The **パフォーマンス** カードには、 **[CDN ダッシュボード。
 
    ![プログラムオプションの編集](assets/edit-program-overview.png)
 
-1. 「**プログラムを編集**」ページが開きます。 「**一般**」タブで、プログラム名と説明を編集します。
-
-   * プログラムには少なくとも 1 つのソリューションを選択する必要があります。
+1. The **プログラムを編集** ページを開く **一般** タブをクリックします。
 
    ![「一般」タブ](assets/edit-program-prod1.png)
 
-1. 「**ソリューションとアドオン**」タブで、プログラムのソリューションを変更します。
-
-   ![ソリューションの選択](assets/edit-prg.png)
-
-1. ソリューション名の前にある山形アイコンをクリックすると、オプションのアドオンが表示されます（**Sites**&#x200B;の下の「**Commerce**」アドオンオプションなど）。
-
-   ![アドオンの編集](assets/edit-program-add-on.png)
-
-1. 「**運用開始日設定**」タブで、プログラムの運用開始予定日を変更します。
-
-   ![運用開始設定の編集](assets/edit-program-go-live.png)
-
-   * この日付は、情報提供のみを目的としています。プログラムの概要ページで運用開始ウィジェットをトリガーします。次に、Adobe Experience Manager（AEM）as a Cloud Service のベストプラクティスに関するドキュメントへの製品内リンクが提供され、ジャーニーに合わせて運用開始エクスペリエンスを成功に導きます。
-   * このタブは、サンドボックスプログラムでは使用できません。
-
-1. 必要な資格をプログラムで使用できる場合は、プログラムのセキュリティオプションを変更できる場所が「**セキュリティ**」タブに表示されます。
-
-   ![セキュリティ設定を編集](assets/edit-program-security.png)
-
-   * [プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)後に HIPAA を有効または無効にすることはできません。
-      * アドビの HIPAA 対応ソリューションの実装について詳しくは、[こちら](https://www.adobe.com/go/hipaa-ready)を参照してください。
-   * 有効化すると、[実稼動以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)を設定することで WAF-DDOS 保護を設定できます。
+1. プログラムの編集に使用できるオプションは、プログラムの作成時のオプションと同じです。
+   * 書類を見て下さい [実稼働プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) および [サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) 」を参照してください。
+   * [その他のオプション](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) は、組織の使用権限に応じて、実稼動プログラムで使用できる場合があります。
 
 1. 「**更新**」をクリックして、プログラムに対する変更を保存します。
 
-ソリューションやアドオンの追加または削除など、編集されたプログラムの変更内容は次回のデプロイメント後に有効になります。
+プログラムに対する変更が保存されます。
+
+>[!NOTE]
+>
+>ソリューションやアドオンの追加または削除など、編集されたプログラムの変更内容は次回のデプロイメント後に有効になります。
 
 ## サンドボックスプログラムの削除 {#delete-sandbox-program}
 
