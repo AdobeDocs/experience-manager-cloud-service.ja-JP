@@ -3,10 +3,10 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 055d510f8bd3a227c2c51d7f0dea561f06f9b4fd
+source-git-commit: fd0f0fdfc0aaf02d631b9bf909fcb1e1431f5401
 workflow-type: tm+mt
-source-wordcount: '4924'
-ht-degree: 91%
+source-wordcount: '4994'
+ht-degree: 94%
 
 ---
 
@@ -121,7 +121,7 @@ POST リクエストを使用する GraphQL クエリは、キャッシュされ
 
 GraphQLはGETリクエストもサポートしますが、これらは、永続化されたクエリを使用して回避できる制限（URL の長さなど）にヒットする可能性があります。
 
-詳しくは、 [永続クエリのキャッシュの有効化](/help/headless/deployment/dispatcher-caching.md) 詳しくは、を参照してください。
+詳しくは、[永続クエリのキャッシュの有効化](/help/headless/deployment/dispatcher-caching.md)を参照してください。
 
 >[!NOTE]
 >
@@ -160,13 +160,13 @@ Assets へのアクセスに必要な権限です。
 
 GraphQL クエリは、基になるリクエストの AEM ユーザーの権限で実行します。一部のフラグメント（Assets として保存）への読み取りアクセス権を持っていない場合、ユーザーは結果セットの一部になりません。
 
-また、GraphQLクエリを実行するには、ユーザーがGraphQLエンドポイントにアクセスできる必要があります。
+また、ユーザーが GraphQL クエリを実行するには、GraphQL エンドポイントへのアクセス権が必要です。
 
 ## スキーマ生成 {#schema-generation}
 
-GraphQLは、厳密に型指定された API で、データは型別に明確に構造化および整理される必要があります。
+GraphQL は、厳密に型指定された API です。つまり、データは型別に明確に構造化され編成される必要があります。
 
-GraphQL の仕様には、特定のインスタンス上のデータをクエリするための堅牢な API を作成する方法に関する一連のガイドラインが用意されています。これをおこなうには、クライアントが [スキーマ](#schema-generation)：クエリに必要なすべてのタイプを含みます。
+GraphQL の仕様には、特定のインスタンス上のデータをクエリするための堅牢な API を作成する方法に関する一連のガイドラインが用意されています。これを行うには、クライアントは、クエリに必要なすべての型が定義された[スキーマ](#schema-generation)を取得する必要があります。
 
 コンテンツフラグメントの場合、GraphQL スキーマ（構造とタイプ）は、**有効**&#x200B;な[コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)とそれらのデータタイプに基づいています。
 
@@ -239,7 +239,7 @@ Sites GraphQL サービスは、コンテンツフラグメントモデルに対
 
   選択された[フィールドタイプ](#Data-types)を使用して、コンテンツフラグメントモデルの設定方法に基づいてフィールドが作成されます。フィールド名は、「**データタイプ**」タブの「**プロパティ名**」フィールドから取得されます。
 
-   * ユーザーが特定のデータタイプを設定できるので、**レンダリング形式**&#x200B;設定も考慮する必要があります。例えば、1 行のテキストフィールドに複数の 1 行のテキストを含めるように設定するには、「 `multifield` 」をドロップダウンリストから選択します。
+   * ユーザーが特定のデータタイプを設定できるので、**レンダリング形式**&#x200B;設定も考慮する必要があります。例えば、1 行のテキストフィールドに複数の 1 行のテキストを含めるように設定するには、ドロップダウンリストから「`multifield`」を選択します。
 
 * AEM の GraphQL も、複数の[ヘルパーフィールド](#helper-fields)を生成します。
 
@@ -249,7 +249,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 | コンテンツフラグメントモデル - データ型 | GraphQL の型 | 説明 |
 |--- |--- |--- |
-| 1 行のテキスト | `String`、`[String]` | 作成者名、場所名など、単純な文字列に使用されます。 |
+| 1 行のテキスト | `String`、`[String]` | 作成者名、場所名などの単純な文字列に使用します。 |
 | 複数行テキスト | `String`、`[String]` | 記事の本文などのテキストを出力するために使用します |
 | 数値 | `Float`、`[Float]` | 浮動小数点数と整数を表示するために使用します |
 | ブール値 | `Boolean` | チェックボックスを表示するために使用します（単純な真／偽のステートメント） |
@@ -263,7 +263,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 ### ヘルパーフィールド {#helper-fields}
 
-ユーザー生成フィールドのデータタイプに加えて、GraphQL for AEMでは複数のデータタイプも生成されます *ヘルパー* コンテンツフラグメントの識別に役立つフィールド、またはコンテンツフラグメントに関する追加情報の提供に役立つフィールドです。
+ユーザー生成フィールドのデータ型に加えて、AEM 用 GraphQL では、コンテンツフラグメントの識別やコンテンツフラグメントに関する追加情報の提供に役立つ多数の&#x200B;*ヘルパー*&#x200B;フィールドも生成されます。
 
 これらの[ヘルパーフィールド](#helper-fields)は、ユーザーが定義したものと自動生成されたものを区別するために、先頭に `_` が付きます。
 
@@ -519,7 +519,7 @@ GraphQL クエリでフィルタリングを使用して、特定のデータを
 
 フィルター定義（`filter` 引数としてクエリに渡される）には次が含まれます。
 
-* 各フィールドのサブ定義 ( フィールド名を使用してアクセスできます。例えば、 `lastName` フィールドの `lastName` データ（フィールド）タイプのフィールド
+* 各フィールドのサブ定義（フィールド名を使用してアクセスできます。例えば、データ（フィールド）タイプの `lastName` フィールドのフィルターには `lastName` フィールドがあります）
 * 各サブ定義には、式セットを提供する `_expressions` 配列と、式を組み合わせる必要がある論理演算子を定義する `_logOp` フィールドが含まれます
 * 各式は、値（`value` フィールド）と演算子（`_operator` フィールド）によって定義され、フィールドの内容を比較する必要があります
 
@@ -575,8 +575,8 @@ GraphQL クエリでフィルタリングを使用して、特定のデータを
 並び替え条件：
 
 * フィールドパスを表すコンマ区切りの値のリストにする
-   * リストの最初のフィールドでは主な並べ替え順が定義され、2 番目のフィールドは主な並べ替え条件の 2 つの値が等しい場合に使用され、3 番目のフィールドは最初の 2 つの条件が等しい場合に使用されます。
-   * ドット表記、つまり field1.subfield.subfield など。
+   * リストの最初のフィールドではプライマリの並び替え順を定義し、2 番目のフィールドではプライマリの並び替え条件の 2 つの値が等しい場合に使用し、3 番目のフィールドでは最初の 2 つの条件が等しい場合などに使用されます。
+   * ドット表記（field1.subfield.subfield など）
 * （オプション）並べ替えの方向
    * ASC（昇順）または DESC（降順）。デフォルトでは ASC が適用されます
    * 並べ替えの方向は、フィールドごとに指定できます。つまり、あるフィールドを昇順で、別のフィールドを降順（name、firstName DESC）で並べ替えることができます
@@ -637,7 +637,7 @@ query {
 >
 >最高のパフォーマンスを得るには、[GraphQL フィルタリングでページングと並べ替えのためにコンテンツフラグメントを更新すること](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)を検討してください。
 
-この機能を使用すると、リストを返すクエリタイプに対してページングを実行できます。 次の 2 つの方法があります。
+この機能を使用すると、リストを返すクエリタイプに対してページングを実行できます。次の 2 つの方法があります。
 
 * `List` クエリの `offset` と `limit`
 * `Paginated` クエリの `first` と `after`
@@ -713,9 +713,9 @@ query {
 
 ## GraphQL クエリでの Web に最適化された画像配信 {#web-optimized-image-delivery-in-graphql-queries}
 
-Web に最適化された画像配信では、Graphql クエリを使用して次のことをおこなえます。
+Web に最適化された画像配信を使用すると、GraphQL クエリを使用して次のことができます。
 
-* AEM Asset 画像に URL をリクエストする
+* DAM アセット画像 ( **コンテンツ参照**)
 
 * 画像の特定のレンディションが自動的に生成されて返されるように、クエリでパラメーターを渡す
 
@@ -735,9 +735,19 @@ AEM を使用して、次のことができます。
 
 GraphQL のソリューションでは、次のことが可能です。
 
-* `ImageRef` 参照で `_dynamicUrl` を使用する
+* URL のリクエスト：を使用します。 `_dynamicUrl` の `ImageRef` 参照
 
-* フィルターが定義されているリストヘッダーに `_assetTransform` を追加する
+* パスパラメーター：追加 `_assetTransform` を、フィルターが定義されているリストヘッダーに追加します。
+
+<!-- 
+>[!NOTE]
+>
+>A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>* `_dynamicUrl` : a DAM asset
+>* `_dmS7Url` : a Dynamic Media asset
+> 
+>If the image referenced is a DAM asset then the value for `_dmS7Url` will be `null`. See [Dynamic Media asset delivery by URL in GraphQL queries](#dynamic-media-asset-delivery-by-url).
+-->
 
 ### 変換リクエストの構造 {#structure-transformation-request}
 
@@ -902,7 +912,7 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
      >
      >末尾の `;` は、パラメーターのリストを明確に終了するために必須です。
 
-### 画像配信の制限 {#image-delivery-limitations}
+### Web に最適化された画像配信の制限 {#web-optimized-image-delivery-limitations}
 
 次の制限があります。
 
@@ -912,6 +922,58 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
    * オーサーにキャッシュされない
    * パブリッシュのキャッシュ - 10 分の最大経過時間（クライアントは変更できません）
+
+<!--
+## Dynamic Media asset delivery by URL in GraphQL queries{#dynamic-media-asset-delivery-by-url}
+
+GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media (Scene7) asset (referenced by a **Content Reference**).
+
+The solution in GraphQL means you can:
+
+* use `_dmS7Url` on the `ImageRef` reference
+
+>[!NOTE]
+>
+>For this you need to have a [Dynamic Media Cloud Configuration](/help/assets/dynamic-media/config-dm.md). 
+>
+>This adds the `dam:scene7File` and `dam:scene7Domain` attributes on the asset's metadata when it is created.
+
+>[!NOTE]
+>
+>A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>
+>* `_dmS7Url` : a Dynamic Media asset
+>* `_dynamicUrl` : a DAM asset
+> 
+>If the image referenced is a Dynamic Media asset then the value for `_dynamicURL` will be `null`. See [web-optimized image delivery in GraphQL queries](#web-optimized-image-delivery-in-graphql-queries).
+
+### Sample query for Dynamic Media asset delivery by URL {#sample-query-dynamic-media-asset-delivery-by-url}
+
+The following is a sample query:
+* for multiple Content Fragments of type `team` and `person`
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      _path
+      title
+      teamMembers {
+        fullName
+        profilePicture {
+          __typename
+          ... on ImageRef{
+            _dmS7Url
+            height
+            width
+          }
+        }
+      }
+    }
+  }
+} 
+```
+-->
 
 ## AEM 用の GraphQL - 拡張機能の概要 {#graphql-extensions}
 
@@ -985,19 +1047,28 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
          * [サンプルクエリ - 名前付きバリエーションを持つすべての都市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)を参照してください
 
-   * [画像配信](#image-delivery)の場合：
+   * 画像配信の場合：
 
-      * `_dynamicUrl`：`ImageRef` 参照で
+      * `_authorURL`:AEMオーサー上の画像アセットの完全な URL
+      * `_publishURL`:AEM Publish 上の画像アセットの完全な URL
 
-      * `_assetTransform`：フィルターを定義するリストヘッダーで
+      * の場合 [web に最適化された画像配信](#web-optimized-image-delivery-in-graphql-queries) （DAM アセットの） :
 
-      * 以下を参照してください。
+         * `_dynamicUrl`:Web に最適化された DAM アセットの完全な URL( `ImageRef` 参照
 
-         * [すべてのパラメーターを使用した画像配信用サンプルクエリ](#image-delivery-full-parameters)
+           >[!NOTE]
+           >
+           >`_dynamicUrl` は、Web に最適化された DAM アセットに使用する推奨 URL で、 `_path`, `_authorUrl`、および `_publishUrl` 可能な限り
 
-         * [単一の指定パラメーターを使用した画像配信用サンプルクエリ](#image-delivery-single-specified-parameter)
+         * `_assetTransform`：フィルターが定義されているリストヘッダーのパラメーターを渡します。
 
-   * `_tags`：タグを含むコンテンツフラグメントまたはバリエーションの ID を表示する `cq:tags` 識別子の配列です。
+         * 以下を参照してください。
+
+            * [完全なパラメーターを持つ Web 最適化された画像配信用のサンプルクエリ](#web-optimized-image-delivery-full-parameters)
+
+            * [単一の指定パラメーターを持つ、Web に最適化された画像配信のサンプルクエリ](#web-optimized-image-delivery-single-query-variable)
+
+   * `_tags`：タグを含むコンテンツフラグメントまたはバリエーションの ID を表示します。これは、 `cq:tags` 識別子。
 
       * [サンプルクエリ - 市区町村の区切り文字としてタグ付けされた、すべての都市の名前](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)を参照してください。
       * 詳しくは、[特定のタグが添付された、任意のモデルのコンテンツフラグメントバリエーションのサンプルクエリ](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)を参照してください。
@@ -1028,6 +1099,13 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 * ネストされたフラグメントに対するクエリ時のフォールバック：
 
    * 任意のバリエーションがネストされたフラグメントに存在しない場合、**マスター**&#x200B;バリエーションが返されます。
+
+<!-- between dynamicURL and tags -->
+<!--
+    * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
+
+      * See [Sample query for Dynamic Media asset delivery by URL](#sample-query-dynamic-media-asset-delivery-by-url)
+-->
 
 ## 外部 web サイトからの GraphQL エンドポイントのクエリ {#query-graphql-endpoint-from-external-website}
 

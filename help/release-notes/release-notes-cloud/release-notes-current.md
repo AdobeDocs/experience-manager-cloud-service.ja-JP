@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 17903c6e44afd1742d21b7fc7dbe4d7c63fe8b6b
+source-git-commit: fa106c2e3fec70971e2c54572199e35c24db0aa7
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 22%
+source-wordcount: '751'
+ht-degree: 38%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 22%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.12.0）のリリース日は 2023年12月14日です。次回の機能リリース（2024.1.0）は 2023年1月25日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2024.1.0）の公開日は 2024年1月25日（PT）です。次回の機能リリース（2024.2.0）は、2024年2月29日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -44,45 +44,41 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### アーリーアダプタープログラム {#sites-early-adopter}
+### AEM SitesでのExtension Manager {#sites-extension-manager}
 
-**次の条件を満たす場合に、 [Real User Monitoring(RUM) データ・サービス](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** AEMas a Cloud Serviceのクライアント側のコレクションを有効にする
+**新しい [AEM SitesでのExtension Manager](https://developer.adobe.com/uix/docs/extension-manager/)** UI 拡張機能を設定してAEM設定をパーソナライズする。
 
-Real User Monitoring(RUM) データサービスは、ユーザーの操作をより正確に反映し、Web サイトのエンゲージメントを確実に測定できます。 これは、ページのパフォーマンスに関する高度なインサイトを得る絶好の機会です。 これは、Adobe管理 CDN またはAdobe管理以外の CDN のどちらを使用する場合にも便利です。 さらに、Adobeが管理していない CDN を使用するお客様の場合、自動トラフィックレポートをAdobeに対して有効にできるので、との間でトラフィックレポートを共有する必要がなくなりました。
+![AEM SitesでのExtension Manager](/help/assets/sites/extension-manager/homepage.png)
 
-この新機能のテストとフィードバックの共有に関心がある場合は、に電子メールを送信してください。 `aemcs-rum-adopter@adobe.com`Adobe IDに関連付けられた電子メールアドレスから、実稼動、ステージ、開発環境のドメイン名と共に入力します。 Adobeの製品チームが Real User Monitoring(RUM) データサービスを有効にします。
+AEM SitesのExtension Managerを使用すると、開発者や実践者は、AEM Sitesの機能を強化するために構築された UI 拡張機能にアクセスし、管理およびカスタマイズできます。
+Extension Managerを使用すると、次のことができます。
 
+* インスタンス単位で拡張機能を有効または無効にする。
+* 拡張パラメーターを設定する。
+* 拡張機能をプレビューし、共有可能なプレビューリンクを生成する。
+* インタラクティブデモを介して UI の拡張機能を確認する
+* ファーストパーティの拡張機能を使用して、Adobeの実験機能にアクセスします。
+
+アドビでは、UI 拡張機能に関するフィードバックと新しい使用例を積極的に求めています。 連携を希望される場合は、次の宛先にメールを送信してください： `uix@adobe.com`.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### アセット表示の新機能 {#assets-view-features}
+### 管理ビューのプレリリース機能 {#admin-view-prerelease}
 
-**Adobe Fireflyを含む GenAI 画像の作成**
+**サポートされるすべてのビデオタイプのレンディションをプレビュー**
 
-Adobe Fireflyのテキスト/画像間機能を統合し、検索クエリに基づいて新しい画像を作成します (Adobe Fireflyライセンスが必要です )。
+Experience Manager Assetsでは、処理プロファイルの設定が不要で、サポートされるすべてのビデオタイプのプレビューレンディションがデフォルトで生成されるようになりました
 
-![AssetsFireflyの統合](/help/assets/assets/assets-firefly-integration.png)
+### Assets ビュー {#assets-view-features}
 
-**類似画像の検索**
+**スマートタグのブロックリスト**
 
-画像を選択し、Experience Manager Assetsリポジトリで類似した画像を表示すると、コンテンツを簡単に見つけることができるようになりました。
+Assets Essentials では、ブロックリストを定義できるようになりました。このリストは、リポジトリにアップロードする際に、アセットにスマートタグとして追加する必要がない単語で構成されます。この機能は、ブランドのコンプライアンスを保持し、スマートタグのモデレートにかかる作業を軽減するのに役立ちます。
 
-<!--
+![スマートタグのブロックリストに加える](/help/assets/assets/block-tags.png)
 
-* **Smart tags blocklist**: Experience Manager Assets now enables you to define a list of blocked tags. These tags are automatically removed from the auto-generated smart tags when you upload assets to the repository. This capability performs tags governance and saves a lot of time as you can add a tag to the block list and AEM Assets automatically excludes it from the list of tags for any of the assets that are added to the repository.
-
-  ![storage usage insights](/help/assets/assets/block-tags.png)
-
-
-**Video Preview**: AEM Assets now generates preview renditions of all supported video formats by default, without the need to configure a processing profile.
-
--->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
-
-### の新機能 [!DNL Experience Manager Forms] {#forms-features}
-
-* **[Microsoft® SharePointリストとのアダプティブFormsの接続](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**:AEM Formsは、フォームデータを直接SharePointリストに送信するための OOTB 統合機能を備えており、SharePointのリスト機能を使用できます。 Microsoft SharePoint List をフォームデータモデルのデータソースとして設定し、 **フォームデータモデルを使用して送信** アダプティブフォームをSharePointリストに接続するための送信アクション。
 
 <!-- 
 
@@ -98,24 +94,19 @@ Adobe Fireflyのテキスト/画像間機能を統合し、検索クエリに基
 
   ![右から左への言語サポート](/help/forms/assets/right-to-left-language-support.png)
 
-* **[DocAssurance API（通信 API の一部）を使用してドキュメントをProtect](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**:DocAssurance API を使用すると、ドキュメントに署名し、暗号化することで、機密情報を保護できます。 暗号化を通じて、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセス権を取得できるようになります。 この防護の強化された層は、不正な目から貴重なデータを守るだけでなく、心の安らぎも提供します。 Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、電子署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
+* **[DocAssurance API（通信 API の一部）を使用してドキュメントをProtect](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**:DocAssurance API を使用すると、ドキュメントに署名し、暗号化することで、機密情報を保護できます。 暗号化を通じて、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセス権を取得できるようになります。この強固な保護層は、不正な相手から貴重なデータを守るだけでなく、安心感も提供します。Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
 
   次に書き込むことができます： `aem-forms-early-adopter-program@adobe.com` アーリーアダプタープログラムに参加し、機能へのアクセスをリクエストするために、公式の電子メール id から。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
-### CDN 設定アーリーアダプタープログラム {#cdn-config-early-adopter}
+### Dynatrace のサポート {#dynatrace}
 
-最近リリースされたに加えて [トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)( オプションでライセンス可能な Web アプリケーションファイアウォール (WAF) ルールを含む )、設定パイプラインを使用して他のタイプの CDN 設定を宣言し、デプロイする機会があります。 以下を含め、お客様の使用例についてお知らせします。
-* 301/302クライアントサイドのリダイレクト
-* エッジでのリクエストの任意のオリジンへのプロキシ処理
-* URL 変換
-* 要求または応答ヘッダーの設定または変更
-* CDN がAEMに到達できない場合のカスタムエラーページ
-* ユーザー名/パスワードによる認証
-* その他の役に立つ CDN 設定
+Dynater のお客様は、AEMの使用状況を監視できます。 [読み方](/help/implementing/cloud-manager/dynatrace.md) をクリックして、アプリケーションのパフォーマンス監視用に Dynaterace 環境との接続をリクエストします。 すべてのお客様が利用できるNew Relic APM は、Dynatrace が有効になっている場合、データの収集を停止します。
 
-電子メールの送信先 **aemcs-cdn-config-adopter@adobe.com** を公式の電子メール ID から取得し、フィードバックを入力します。
+### サイトテーマとサイトテンプレートを使用したフロントエンドコードの RDE サポート：アーリーアダプタープログラム {#rde-frontend-early-adopter}
+
+[急速な開発環境 (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 次の基づくフロントエンドコードをサポートするようになりました。 [サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md) および [サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)早期採用者向け。 RDE を使用すると、これは、 [フロントエンドパイプライン](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). 次の場所に連絡してください： **aemcs-rde-support@adobe.com** 試してみて、フィードバックを提供してください。
 
 ## Cloud Manager {#cloud-manager}
 

@@ -1,17 +1,17 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.10.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.10.0 リリースのリリースノート。'
-source-git-commit: d79335bde72a2517939e9bfc07a75ab7a8b6b0b9
+exl-id: 81a6cbd2-7101-429b-8572-2650c5bea963
+source-git-commit: 811a8f4d83a1034737c23b1707a24b52742fef55
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 38%
+source-wordcount: '918'
+ht-degree: 57%
 
 ---
 
-
 # [!DNL Adobe Experience Manager] as a Cloud Service の 2023.10.0 リリースノート {#release-notes}
 
-以下のセクションでは、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンの機能リリースノートの概要について説明します。
+以下の節では、[!DNL Experience Manager] as a Cloud Service の 2023.10.0 バージョンの機能リリースノートの概要について説明します。
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ ht-degree: 38%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在の機能リリース (2023.10.0) は 2023 年 10 月 26 日です。 次回の機能リリース (2023.11.0) は、2023 年 11 月 30 日に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.10.0）の公開日は 2023年10月26日（PT）です。次回の機能リリース（2023.11.0）は、2023年11月30日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -53,13 +53,13 @@ ht-degree: 38%
 
 * **OneDrive データソースからのアセットの一括読み込み**：管理者は、次の操作を実行できるようになりました。 [多数のアセットを OneDrive からAEM Assetsに読み込む](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). 一括インポートでサポートされるデータソースの更新リストには、Azure、AWS、Google Cloud、Dropbox、OneDrive が含まれます。
 
-  ![フォルダーにメタデータフォームを割り当て](/help/assets/assets/bulk-import-source-details-onedrive.png)
+  ![フォルダーにメタデータフォームを割り当てる](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
-* **組織間のライブラリの権限付与のサポート**:Experience Manager Assetsで、別の IMS 組織のCreative Cloudライブラリへのアクセスを設定できるようになりました。 これにより、Creative CloudとExperience Managerの間の最新のクロス製品ワークフローに容易にアクセスでき、クリエイティブの時間と労力を削減できます。
+* **組織間のライブラリの権限付与のサポート**:Experience Manager Assetsで、別の IMS 組織のCreative Cloudライブラリへのアクセスを設定できるようになりました。 これにより、Creative Cloud と Experience Manager の間で、製品をまたいだ最新ワークフローに容易にアクセスできるようになり、クリエイティブの時間と労力を削減できます。
 
-### で使用可能なリリース前機能 [!DNL Experience Manager Assets] {#prerelease-features-assets}
+### [!DNL Experience Manager Assets] で利用できるプレリリース機能 {#prerelease-features-assets}
 
-* **Dynamic Media**: [Dynamic Mediaでのビデオのマルチサブタイトルおよびマルチオーディオトラックのサポート](/help/assets/dynamic-media/video.md#about-msma) — プライマリビデオに複数のサブタイトルや複数のオーディオトラックを簡単に追加できるようになりました。 この機能により、グローバルなオーディエンスがビデオにアクセスできるようになります。1 つの公開済みプライマリビデオを複数の言語でグローバルオーディエンスに向けてカスタマイズし、様々な地理的地域のアクセシビリティガイドラインに従うことができます。また、作成者は、ユーザーインターフェイスの 1 つのタブからサブタイトルとオーディオトラックを管理することもできます。
+* **Dynamic Media**：[Dynamic Media のビデオに対するマルチサブタイトルとマルチオーディオトラックのサポート](/help/assets/dynamic-media/video.md#about-msma) - プライマリビデオに複数のサブタイトルと複数のオーディオトラックを簡単に追加できるようになりました。この機能により、グローバルなオーディエンスがビデオにアクセスできるようになります。1 つの公開済みプライマリビデオを複数の言語でグローバルオーディエンスに向けてカスタマイズし、様々な地理的地域のアクセシビリティガイドラインに従うことができます。また、作成者は、ユーザーインターフェイスの 1 つのタブからサブタイトルとオーディオトラックを管理することもできます。
 
   ![選択したビデオアセットのプロパティページの「サブタイトルとオーディオトラック」タブ。](/help/release-notes/assets/msma-aem-cs.png)*選択したビデオアセットのプロパティページの「サブタイトルとオーディオトラック」タブ。*
 
@@ -69,14 +69,14 @@ ht-degree: 38%
 
 * **[アダプティブFormsのカスタムプロパティ](/help/forms/template-editor-core-components.md#add-a-custom-group-name-in-the-policy-of-template-editor)**：カスタム属性（キーと値のペア）をフォームテンプレートまたはアダプティブフォームコンポーネントに関連付けることで、フォーム開発者は、これらのカスタム属性の値に基づいて適応する動的なフォーム動作を配信できます。 例えば、開発者は、カスタム属性の値に基づいて、モバイル、デスクトップ、Web プラットフォーム上にヘッドレスFormsコンポーネントの様々なレンディションを作成でき、様々なデバイスでのユーザーエクスペリエンスを大幅に強化できます。
 
-* **テーマとテンプレート**：経験豊富な専門家と新しいフォーム作成者の両方に力を貸すようにカスタマイズされた新しいテーマとテンプレートを使用して、フォーム作成プロセスを開始します。 アダプティブFormsのコアコンポーネントを使用してシームレスに構築され、細心の注意を払って厳選されたテーマとテンプレートを使用すれば、一般的な使用例に合わせてすばやくフォームの作成を開始できます。
+* **テーマとテンプレート**：経験豊富な専門家と新しいフォーム作成者の両方に力を貸すようにカスタマイズされた新しいテーマとテンプレートを使用して、フォーム作成プロセスを開始します。 アダプティブフォームのコアコンポーネントを使用してシームレスに構築され、細心の注意を払って厳選されたテーマとテンプレートを使用すれば、一般的なユースケースのフォームをすばやく作成できます。
 
   ![標準テンプレート](/help/forms/assets/form-templates-ootb.png)
 
 
 ### アーリーアダプタープログラム {#forms-early-adopter}
 
-* **[DocAssurance API（通信 API の一部）を使用してドキュメントをProtect](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**:DocAssurance API を使用すると、ドキュメントに署名し、暗号化することで、機密情報を保護できます。 暗号化を通じて、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセス権を取得できるようになります。 この防護の強化された層は、不正な目から貴重なデータを守るだけでなく、心の安らぎも提供します。 Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
+* **[DocAssurance API（通信 API の一部）を使用してドキュメントをProtect](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**:DocAssurance API を使用すると、ドキュメントに署名し、暗号化することで、機密情報を保護できます。 暗号化を通じて、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセス権を取得できるようになります。この強固な保護層は、不正な相手から貴重なデータを守るだけでなく、安心感も提供します。Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
 
   次に書き込むことができます： `aem-forms-early-adopter-program@adobe.com` アーリーアダプタープログラムに参加し、機能へのアクセスをリクエストするために、公式の電子メール id から。
 

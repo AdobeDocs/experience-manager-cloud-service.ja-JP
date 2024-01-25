@@ -1,17 +1,17 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.11.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.11.0 リリースのリリースノート。'
-source-git-commit: c33874869bccae1e9837b30827a655e70636dd56
+exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
+source-git-commit: 07a799cf374bbd1ce0fe5d85433bf12d1d5ee648
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 15%
+ht-degree: 23%
 
 ---
 
-
 # [!DNL Adobe Experience Manager] as a Cloud Service の 2023.11.0 リリースノート {#release-notes}
 
-以下のセクションでは、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンの機能リリースノートの概要について説明します。
+以下の節では、[!DNL Experience Manager] as a Cloud Service の 2023.11.0 バージョンの機能リリースノートの概要について説明します。
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ ht-degree: 15%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.11.0）のリリース日は 2023年11月30日です。次回の機能リリース（2023.12.0）は 2023年12月14日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.11.0）の公開日は 2023年11月30日（PT）です。次回の機能リリース（2023.12.0）は、2023年12月14日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -45,7 +45,7 @@ ht-degree: 15%
 
 ![検索と置換](/help/sites-cloud/administering/content-fragments/assets/cf-managing-find-replace.png)
 
-この機能を試して、フィードバックを共有したい場合は、 電子メールの送信先 **aemcs-headless-adopter@adobe.com** アーリーアダプタープログラムの詳細については、公式電子メール ID を参照してください。
+この機能を試してフィードバックを共有いただける場合電子メールの送信先 **aemcs-headless-adopter@adobe.com** アーリーアダプタープログラムの詳細については、公式電子メール ID を参照してください。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -53,7 +53,7 @@ ht-degree: 15%
 
 * **AEM Assetsの埋め込みAdobe Expressエディター**:Express へのアクセス権を持つユーザーは、Adobe ExpressとAdobe Fireflyの画像編集および作成ツールをAEM Assets内で直接利用できるようになり、コンテンツの再利用を改善し、コンテンツ速度を向上させることができます。
 
-  ![フォルダーにメタデータフォームを割り当て](/help/assets/assets/adobe-express-aem-assets.png)
+  ![フォルダーにメタデータフォームを割り当てる](/help/assets/assets/adobe-express-aem-assets.png)
 
 <!--
 
@@ -68,9 +68,9 @@ ht-degree: 15%
 
   ![ストレージ使用状況インサイト](/help/assets/assets/storage-usage-insights.png)
 
-* **最初のホームページ設定を検索**:Experience Manager Assetsでは、組織に合わせてホームページのエクスペリエンスを設定できるようになりました。 ホームページで最初に検索を選択した場合は、組織の検索バーの配置、背景画像、ロゴを設定できます。
+* **最初のホームページ設定を検索**:Experience Manager Assetsでは、組織に合わせてホームページのエクスペリエンスを設定できるようになりました。 ホームページとして検索ファーストを選択した場合は、組織の検索バーの位置、背景画像、ロゴを設定できます。
 
-  ![最初の設定を検索](/help/assets/assets/search-first-configuration.png)
+  ![検索ファーストの設定](/help/assets/assets/search-first-configuration.png)
 
 ### 管理ビューのプレリリースの新機能 {#admin-view-features-prerelease}
 
@@ -108,7 +108,7 @@ ht-degree: 15%
 
   ![右から左への言語サポート](/help/forms/assets/right-to-left-language-support.png)
 
-* **[DocAssurance API（通信 API の一部）を使用してドキュメントをProtect](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**:DocAssurance API を使用すると、ドキュメントに署名し、暗号化することで、機密情報を保護できます。 暗号化を通じて、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセス権を取得できるようになります。 この防護の強化された層は、不正な目から貴重なデータを守るだけでなく、心の安らぎも提供します。 Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、電子署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
+* **[DocAssurance API（通信 API の一部）を使用してドキュメントをProtect](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**:DocAssurance API を使用すると、ドキュメントに署名し、暗号化することで、機密情報を保護できます。 暗号化を通じて、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセス権を取得できるようになります。この強固な保護層は、不正な相手から貴重なデータを守るだけでなく、安心感も提供します。Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
 
   次に書き込むことができます： `aem-forms-early-adopter-program@adobe.com` アーリーアダプタープログラムに参加し、機能へのアクセスをリクエストするために、公式の電子メール id から。
 
