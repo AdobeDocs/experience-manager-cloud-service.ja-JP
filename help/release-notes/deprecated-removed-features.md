@@ -9,7 +9,7 @@ ht-degree: 96%
 
 ---
 
-# 非推奨（廃止予定）の機能および削除された API {#deprecated-and-removed-features-apis}
+# 非推奨（廃止予定）および削除された機能と API {#deprecated-and-removed-features-apis}
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
