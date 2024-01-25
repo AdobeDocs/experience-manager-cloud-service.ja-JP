@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9a15711c6352f35bcf21cd080b65552f94b46f48
+source-git-commit: 6b147f69ee877f75ff74bd044a2a02ff5a14d72c
 workflow-type: tm+mt
-source-wordcount: '4611'
-ht-degree: 94%
+source-wordcount: '4610'
+ht-degree: 95%
 
 ---
 
@@ -165,7 +165,7 @@ ht-degree: 94%
       + [Workfront for Experience Manager 拡張コネクタの最新リリースノート](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [新機能](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service の主要な変更点](/help/release-notes/aem-cloud-changes.md)
-   + [非推奨（廃止予定）の機能および削除された API](/help/release-notes/deprecated-removed-features.md)
+   + [非推奨（廃止予定）および削除された機能と API](/help/release-notes/deprecated-removed-features.md)
    + [プレリリースチャネル](/help/release-notes/prerelease.md)
 + セキュリティ {#security}
    + [AEM as a Cloud Service のセキュリティの概要](/help/security/cloud-service-security-overview.md)
@@ -922,7 +922,7 @@ ht-degree: 94%
       + [カスタム権限](/help/implementing/cloud-manager/custom-permissions.md)
       + [SLA レポート](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
-      + [Dynatrace OneAgent](/help/implementing/cloud-manager/dynatrace-oneagent.md)
+      + [ダイナトレース](/help/implementing/cloud-manager/dynatrace.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)
       + SSL 証明書 {#manage-ssl-certificates}
          + [はじめに](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
