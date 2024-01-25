@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8d9cd4c580058299eea8a391b0b341751d3f2104
+source-git-commit: 9a15711c6352f35bcf21cd080b65552f94b46f48
 workflow-type: tm+mt
-source-wordcount: '4609'
-ht-degree: 95%
+source-wordcount: '4611'
+ht-degree: 94%
 
 ---
 
@@ -403,6 +403,7 @@ ht-degree: 95%
       + [マイクロフロントエンドアセットセレクター](/help/assets/asset-selector.md)
       + [マイクロフロントエンドの宛先セレクター](/help/assets/destination-selector.md)
       + [アセットの共有](/help/assets/share-assets.md)
+      + [アセットの再処理](/help/assets/reprocessing.md)
       + [アクティビティと DAM タスクの監視](/help/assets/assets-activity-history.md)
       + [アセットマイクロサービスの基本](/help/assets/asset-microservices-configure-and-use.md)
       + [アセットの追加とアップロード](/help/assets/add-assets.md)
