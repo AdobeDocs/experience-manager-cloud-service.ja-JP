@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: fd1c3d1e524e5882ae04ca784b618ddba123bdd6
+source-git-commit: 4b05e8f8ae554e7c0881134ef24ca8ce35e3e2bf
 workflow-type: tm+mt
-source-wordcount: '4975'
+source-wordcount: '4976'
 ht-degree: 94%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 94%
 
 ### ビデオアセットをプレビュー
 
-MP4 レンディションは、 [!DNL Assets] ユーザーインターフェイス。 ビデオアセットをプレビューするには、次の手順に従います。
+サポートされるレンディションのビデオは、 [!DNL Assets] ユーザーインターフェイス。 ビデオアセットをプレビューするには、次の手順に従います。
 
 1. サポートされている形式のビデオアセットのアップロード先 [!DNL Experience Manager Assets]. 詳しくは、 [サポートされるビデオ形式](file-format-support.md#video-formats). <br>アップロードされると、ビデオアセットが処理され、プレビューレンディションが生成されます。
 1. アセットをクリックし、「 」を選択します。 ![詳細オプション](assets/do-not-localize/details_icon.svg) **[!UICONTROL 詳細]**  をクリックします。 ビデオアセットがビデオビューアで開きます。
