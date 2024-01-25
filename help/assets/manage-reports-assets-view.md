@@ -2,25 +2,34 @@
 title: アセットビューでのレポートの管理
 description: アセットビューの「レポート」セクションのデータにアクセスして、製品と機能の使用状況を評価し、主要な成功指標に関するインサイトを導き出します。
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
-source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
+source-git-commit: c9ec348d7e65f4bb69b93a39b9ad7192485d8db4
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 97%
+source-wordcount: '814'
+ht-degree: 92%
 
 ---
 
 # レポートの管理 {#manage-reports}
 
->[!CONTEXTUALHELP]
->id="assets_reports"
->title="レポート"
->abstract="アセットレポートを使用すると、管理者は Adobe Experience Manager Assets 表示環境のアクティビティを視覚的に確認できます。このデータは、ユーザーがコンテンツや製品とどのようにやり取りするかについての有用な情報を提供します。管理者製品プロファイルに割り当てられているユーザーはすべて、インサイトダッシュボードにアクセスしたり、ユーザー定義のレポートを作成したりできます。"
-
-アセットレポートを使用すると、管理者は Adobe Experience Manager Assets 表示環境のアクティビティを視覚的に確認できます。このデータは、ユーザーがコンテンツや製品とどのようにやり取りするかについての有用な情報を提供します。
+アセットレポートを使用すると、管理者は Adobe Experience Manager Assets 表示環境のアクティビティを視覚的に確認できます。このデータは、ユーザーがコンテンツや製品とどのようにやり取りするかについての有用な情報を提供します。すべてのユーザーが Insights ダッシュボードにアクセスでき、管理者の製品プロファイルに割り当てられたユーザーはユーザー定義レポートを作成できます。
 
 ## レポートへのアクセス {#access-reports}
 
 アセットビューの管理者の製品プロファイルに割り当てられているユーザーはすべて、アセットビューでインサイトダッシュボードにアクセスしたり、ユーザー定義のレポートを作成したりできます。
+
+レポートにアクセスするには、**[!UICONTROL 設定]**&#x200B;の&#x200B;**[!UICONTROL レポート]**&#x200B;に移動します。
+
+![レポート](assets/reports.png)
+<!--
+In the **[!UICONTROL Reports]** screen, various components are shown in the tabular format which includes the following:
+
+* **Title**: Title of the report
+* **Type**: Determines whether the report is uploaded or downloaded to the repository
+* **Description**: Provide details of the report that was given during uploading/downloading the report
+* **Status**: Determines whether the report is completed, under progress, or deleted.
+* **Author**: Provides email of the author who has uploaded/downloaded the report.
+* **Created**: Gives information of the date when the report was generated.
+-->
 
 ## インサイトの表示 {#view-live-statistics}
 
@@ -32,9 +41,9 @@ ht-degree: 97%
 
 ![インサイト](assets/insights.png)
 
-* **ダウンロード**：過去 30 日間または 12 か月間にアセットビュー環境からダウンロードされたアセットの数が、折れ線グラフで表されます。
+* **ダウンロード**：過去 30 日間または 12 ヶ月間に Assets ビュー環境からダウンロードされたアセットの数。折れ線グラフを使用して表されます。
 
-* **アップロード**：過去 30 日間または 12 か月間にアセットビュー環境にアップロードされたアセットの数が、折れ線グラフで表されます。
+* **アップロード**：過去 30 日間または 12 ヶ月間に Assets ビュー環境にアップロードされたアセットの数。折れ線グラフで表されます。
 
 <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
@@ -46,11 +55,10 @@ ht-degree: 97%
 
 * **上位の検索**：過去 30 日間または 12 ヶ月間にアセットビュー環境で検索された上位の検索用語と共に検索回数が、表形式で表されます。
 
-<!--
-
-* **Storage usage**: The storage usage, in gigabytes (GB), for the Assets view environment, for the last 30 days or 12 months represented using a bar chart.
-
--->
+  <!--
+   ![Insights](assets/insights1.png)
+   ![Insights](assets/insights2.png)
+   -->
 
 ## ダウンロードレポートの作成 {#create-download-report}
 
