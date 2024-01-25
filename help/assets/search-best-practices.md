@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] のベス�
 description: アプリケーション内でアセットのメタデータを検索および取得するためのベストプラクティス。
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 47003c9aa0faefc01a9935c53a5a78938c37cf66
-workflow-type: ht
-source-wordcount: '2521'
-ht-degree: 100%
+source-git-commit: 6397a300de13c5e4f6ee5828de1ba76a1677c227
+workflow-type: tm+mt
+source-wordcount: '2527'
+ht-degree: 97%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 [!DNL Adobe Experience Manager Assets] は、コンテンツ速度の向上に役立つ堅牢なアセット検索方法を備えています。適切なアセットの検索が困難で時間がかかる場合があります。したがって、[!DNL Adobe Experience Manager Assets] におけるアセットの検索機能は、デジタルアセット管理システムの利用の中核を成します。クリエイティブ担当者によるさらなる利用、ビジネスユーザーやマーケティング担当者によるアセットの堅牢な管理、DAM 管理者による管理などの用途があります。
 
-このヘルプドキュメントには、AEM ユーザーが基本レベルから高度なレベルの検索を実行するのに役立つ様々なシナリオを支援する、AEM 検索のベストプラクティスが含まれています。
+このヘルプドキュメントには、AEMユーザーが基本レベルから高度なレベルの検索を実行するのに役立つ様々なシナリオの助けを借りたAEM検索のベストプラクティスが含まれています。
 
 ## Experience Manager 検索へアクセス {#access-experience-manager-search}
 
@@ -258,7 +258,11 @@ AEM で検索を実行する際に、選択したアセットに類似したア�
 
 1. 検索バーを見ると、選択したアセットのサムネールが、検索要件を示す検索バーに表示されます。その結果、類似したスマートタグを持つアセットが返されます。
 
-**[!UICONTROL Assets ビュー]**&#x200B;は「[!UICONTROL 類似検索]」オプションをサポートしていません。
+**[!UICONTROL Assets ビュー]**&#x200B;で次の手順を実行します。
+
+1. 必要に応じてアセットを検索します。
+1. 画像を選択し、に移動します。 [!UICONTROL 類似画像を検索] オプションを選択します。
+同様の色とメタデータを持つアセットのコレクションに移動します。
 
 ## カスタム検索ファセット {#custom-search-facets}
 
@@ -418,11 +422,6 @@ The newly added assets are not indexed.
             <li> コンテンツフラグメントモデル
             </ul> 
         </td>
-        <td> サポート対象外 </td>
-    </tr>
-     <tr>
-        <td> 類似検索 </td>
-        <td> サポート対象 </td>
         <td> サポート対象外 </td>
     </tr>
 </table>
