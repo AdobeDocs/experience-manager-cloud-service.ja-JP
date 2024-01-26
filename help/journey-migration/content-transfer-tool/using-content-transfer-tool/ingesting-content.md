@@ -2,10 +2,10 @@
 title: コンテンツの Cloud Service への取り込み
 description: Cloud Acceleration Manager を使用して、移行セットから移行先の Cloud Service インスタンスにコンテンツを取り込む方法について説明します。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
+source-git-commit: 281523183cecf1e74c33f58ca9ad038bba1a6363
 workflow-type: tm+mt
-source-wordcount: '2407'
-ht-degree: 80%
+source-wordcount: '2410'
+ht-degree: 79%
 
 ---
 
@@ -38,7 +38,7 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
    > 抽出が実行中の場合は、ダイアログに抽出が示されます。 抽出が正常に完了すると、取り込みが自動的に開始されます。 抽出が失敗または停止した場合、取り込みジョブは取り消されます。
 
    * **移行先：**&#x200B;移行先の環境を選択します。この環境では、移行セットのコンテンツが取り込まれます。
-      * 取り込みでは、迅速な開発環境（RDE）が宛先としてサポートされておらず、ユーザーがアクセスできる場合でも宛先の選択肢として表示されません。
+      * 取り込みは、タイプが Rapid Development Environment(RDE) または Preview の宛先をサポートしていないので、ユーザーがアクセスできる場合でも、使用可能な宛先として表示されません。
       * 移行セットは複数の宛先に同時に取り込むことができますが、宛先は一度に 1 つの実行中または待機中の取り込みのターゲットになります。
 
    * **層：** 層を選択します。（オーサー／パブリッシュ）。
