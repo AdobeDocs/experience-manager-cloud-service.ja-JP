@@ -2,9 +2,9 @@
 title: Cloud Service コンテンツリクエストについて
 description: アドビからコンテンツリクエストライセンスを購入している場合は、Adobe Experience Cloud as a Service が測定するコンテンツリクエストのタイプと、組織の分析レポートツールとの相違について説明します。
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: e31b05f0cef6c5ca3a1c00b757eac013aa43bb90
+source-git-commit: 6212ad20cb427d6b2ccd4c467d571832f923ed2a
 workflow-type: tm+mt
-source-wordcount: '2690'
+source-wordcount: '2683'
 ht-degree: 36%
 
 ---
@@ -96,9 +96,13 @@ Real User Monitoring(RUM) は、URL の開始からリクエストがブラウ�
 
 ### RUM データ監視サービスのメリットを受けられるのは誰ですか？ {#who-can-benefit-from-rum-data-monitoring-service}
 
-RUM Data Service は、Adobeの CDN を利用する人にとって有益です。ユーザーの操作をより正確に反映し、既存のサーバー側 CDN ログページビューと比較できるクライアント側のページビュー数を反映して、Web サイトのエンゲージメントを確実に測定できます。 さらに、独自の CDN を使用するお客様は、Adobeにより、自動トラフィックレポートを合理化できるようになりました。これにより、Adobeとトラフィックレポートを共有する必要がなくなりました。
+RUM データサービスは、Adobeの CDN を利用するか、独自の CDN を利用するかに関わらず、すべてのお客様にとって有益です。 ユーザーのインタラクションをより正確に反映させ、クライアントサイドでのページビュー数を反映することで、Web サイトのエンゲージメントを確実に測定できます。
 
-また、Adobeの CDN を使用しているお客様と、独自の CDN を使用しているお客様の両方について、ページのパフォーマンスに関する高度なインサイトを得る絶好の機会です。
+特に、AdobeCDN ユーザーの場合、サーバー側 CDN ログを使用してクライアント側のページビュー数を直接比較するために、ユーザーのインタラクションを正確に追跡します。
+
+独自の CDN を採用しているお客様は、トラフィックレポートの簡素化からメリットを得ることができます。Adobeは、これらのページビューを直接統合し、個別のレポートを作成する必要がなくなったからです。
+
+さらに、すべてのお客様は、ページのパフォーマンスに関する深いインサイトを得て、デジタルエクスペリエンスを効果的に最適化します。
 
 ### RUM(Real User Monitoring) データ・サービスの仕組みの理解 {#understand-how-the-rum-data-service-works}
 
