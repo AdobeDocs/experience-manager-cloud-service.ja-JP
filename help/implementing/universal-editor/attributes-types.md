@@ -2,7 +2,7 @@
 title: 属性と品目タイプ
 description: ユニバーサルエディターで必要なデータ属性と項目タイプについて説明します。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
+source-git-commit: 453cbaeabd28223cac5e732a551aa71f5a425839
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 94%
@@ -38,7 +38,7 @@ ht-degree: 94%
 
 ## 項目のタイプ {#item-types}
 
-| `itemtype` | 説明 | `itemid` | `itemprop` | `data-editor-itemfilter` | `data-editor-itemlabel` | `data-editor-itemmodel` | `data-editor-behvior` |
+| `data-aue-type` | 説明 | `data-aue-resource` | `data-aue-prop` | `data-aue-filter` | `data-aue-label` | `data-aue-model` | `data-aue-behavior` |
 |---|---|---|---|---|---|---|---|
 | `text` | テキストは HTML タグ内で編集できますが、単純なテキスト形式でのみ編集でき、リッチテキスト書式は使用できません。これは、タイトルコンポーネントなどで一般的に使用されます。 | オプション | 必須 | n/a | オプション | n/a | オプション |
 | `richtext` | テキストは、完全なリッチテキスト機能で編集できます。RTE が右側のパネルに表示されます。 | オプション | 必須 | n/a | オプション | n/a | オプション |

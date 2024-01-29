@@ -2,7 +2,7 @@
 title: AEM のユニバーサルエディターの概要
 description: ユニバーサルエディターへのアクセス権を取得する方法と、これを使用するために最初の AEM アプリのインストルメントを開始する方法について説明します。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
+source-git-commit: 453cbaeabd28223cac5e732a551aa71f5a425839
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 95%
@@ -149,19 +149,19 @@ data-aue-resource="urn:<referenceName>:<resource>"
 </head>
 <body>
         <aside>
-          <ul itemscope itemid="urn:aemconnection:/content/example/list" itemtype="container">
-            <li itemscope itemid="urn:aemconnection/content/example/listitem" itemtype="component">
-              <p itemprop="name" itemtype="text">Jane Doe</p>
-              <p itemprop="title" itemtype="text">Journalist</p>
-              <img itemprop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" itemtype="image" alt="avatar"/>
+          <ul data-aue-resource="urn:aemconnection:/content/example/list" data-aue-type="container">
+            <li data-aue-resource="urn:aemconnection/content/example/listitem" data-aue-type="component">
+              <p data-aue-prop="name" data-aue-type="text">Jane Doe</p>
+              <p data-aue-prop="title" data-aue-type="text">Journalist</p>
+              <img data-aue-prop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" data-aue-type="image" alt="avatar"/>
             </li>
 
 ...
 
-            <li itemscope itemid="urn:fcsconnection:/documents/mytext" itemtype="component">
-              <p itemprop="name" itemtype="text">John Smith</p>
-              <p itemid="urn:aemconnection/content/example/another-source" itemprop="title" itemtype="text">Photographer</p>
-              <img itemprop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" itemtype="image" alt="avatar"/>
+            <li data-aue-resource="urn:fcsconnection:/documents/mytext" data-aue-type="component">
+              <p data-aue-prop="name" data-aue-type="text">John Smith</p>
+              <p data-aue-resource="urn:aemconnection/content/example/another-source" data-aue-prop="title" data-aue-type="text">Photographer</p>
+              <img data-aue-prop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" data-aue-type="image" alt="avatar"/>
             </li>
           </ul>
         </aside>
