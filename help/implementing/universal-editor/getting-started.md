@@ -2,9 +2,9 @@
 title: AEM のユニバーサルエディターの概要
 description: ユニバーサルエディターへのアクセス権を取得する方法と、これを使用するために最初の AEM アプリのインストルメントを開始する方法について説明します。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 453cbaeabd28223cac5e732a551aa71f5a425839
+source-git-commit: f9d584d7b117c24224079f581802f5f126890304
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '871'
 ht-degree: 95%
 
 ---
@@ -104,8 +104,6 @@ X-Frame-Options: SAMEORIGIN は、iframe 内で AEM ページのレンダリン�
 ## ページの実装 {#instrument-page}
 
 ユニバーサルエディターサービスは、編集中のアプリのコンテンツに対して正しいバックエンドシステムを識別して利用するために、[統一リソース名（URN）](https://ja.wikipedia.org/wiki/Uniform_Resource_Name)を要求します。したがって、コンテンツをコンテンツリソースにマッピングし直すには、URN スキーマが必要です。
-
-ページに追加されたインストルメンテーション属性は、ほとんどが [HTML マイクロデータ](https://developer.mozilla.org/ja/docs/Web/HTML/Microdata)で構成されており、HTML により適切な意味を持たせたり、HTML 文書をインデックス化したりなどに使用することもできる、業界標準です。
 
 ### 接続の作成 {#connections}
 
