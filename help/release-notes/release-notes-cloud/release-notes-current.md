@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8c33426c38b087c83b945572374089ad9cb44daf
+source-git-commit: 77d38f03f18eb6b0fdc2f2eec5b2dc4b608b8057
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 40%
+source-wordcount: '781'
+ht-degree: 46%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 40%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2024.1.0）の公開日は 2024年1月25日（PT）です。次回の機能リリース（2024.2.0）は、2024年2月29日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2024.1.0）のリリース日は、2024年1月25日（PT）です。次回の機能リリース（2024.2.0）は 2024年2月29日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -46,7 +46,7 @@ ht-degree: 40%
 
 ![AEM SitesでのExtension Manager](/help/assets/sites/extension-manager/homepage.png)
 
-AEM SitesのExtension Managerを使用すると、開発者や実践者は、AEM Sitesの機能を強化するために構築された UI 拡張機能にアクセスし、管理およびカスタマイズできます。
+AEM SitesのExtension Managerを使用すると、開発者や実務担当者は、デベロッパーがアクセス、管理およびカスタマイズできます [UI 拡張機能](https://developer.adobe.com/uix/docs/) で作成済み [AdobeApp Builder](https://developer.adobe.com/app-builder/) AEM Sitesの機能を強化する。
 Extension Managerを使用すると、次のことができます。
 
 * インスタンス単位で拡張機能を有効または無効にする。
@@ -90,9 +90,9 @@ Assets Essentials では、ブロックリストを定義できるようにな�
 
   ![右から左への言語サポート](/help/forms/assets/right-to-left-language-support.png)
 
-* **[DocAssurance API（通信 API の一部）を使用してドキュメントをProtect](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**:DocAssurance API を使用すると、ドキュメントに署名し、暗号化することで、機密情報を保護できます。 暗号化を通じて、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセス権を取得できるようになります。この強固な保護層は、不正な相手から貴重なデータを守るだけでなく、安心感も提供します。Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
+* **[DocAssurance API（通信 API の一部）を使用したドキュメントの保護](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API を使用すると、ドキュメントに署名および暗号化して、機密情報を保護できます。暗号化により、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセスできるようになります。この強化された保護層は、貴重なデータを信頼できない環境にさらすことなく、安心感ももたらします。Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
 
-  次に書き込むことができます： `aem-forms-early-adopter-program@adobe.com` アーリーアダプタープログラムに参加し、機能へのアクセスをリクエストするために、公式の電子メール id から。
+  公式メール ID から `aem-forms-early-adopter-program@adobe.com` に送信して早期導入プログラムに参加し、機能へのアクセスをリクエストできます。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
