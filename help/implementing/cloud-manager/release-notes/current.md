@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 53%
+ht-degree: 58%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 53%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Serviceの Cloud Manager リリース 2024.1.0 のリリース日は 2024 年 1 月 18 日です。 次回のリリースは 2024 年 2 月 16 日に予定されています。
+AEM as a Cloud Serviceの Cloud Manager リリース 2024.1.0 のリリース日は 2024 年 1 月 18 日です。 次回のリリースは 2024年2月16日（PT）の予定です。
 
 ## 新機能 {#what-is-new}
 
@@ -70,4 +70,4 @@ GitHub を使用してリポジトリを管理している場合は、[Cloud Man
 ## バグの修正 {#bug-fixes}
 
 * 設定ファイルの場所が正しく設定されていない場合にエラーメッセージが表示され、ビルド手順で設定パイプラインが失敗するエラーが修正されました。 エラーメッセージが明確になり、設定ファイルの場所が正しいことをユーザーが確認する必要があることを示すようになりました。
-* ビルドステップが「 」ステータスで終了したとき `FAILED` 原因は `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`の場合、宛先ブランチとの結合の競合が原因でエラーとして適切に説明されるようになりました。
+* `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR` によりビルドステップが `FAILED` ステータスで終了した場合、宛先分岐との結合の競合によるエラーとして、適切に記述されるようになりました。

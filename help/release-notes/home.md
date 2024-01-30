@@ -5,7 +5,7 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: c937269684d3d621da1bade33c0b7e261d23ee5c
 workflow-type: tm+mt
 source-wordcount: '345'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 90%
 * [機能リリースは、予測可能な月次の頻度で行われ、新機能と製品の革新に重点を置いています。](/help/release-notes/release-notes-cloud/release-notes-current.md)
 * [メンテナンスリリースは頻繁に行われ、セキュリティアップデート、バグ修正、パフォーマンスの強化に重点を置いています。](/help/release-notes/maintenance/latest.md)これにより、[!DNL Adobe Experience Manager] as a Cloud Service は常に最新で、重要な修正が加えられます。
 
-イノベーションのスピードに加えて、[!DNL Adobe Experience Manager] as a Cloud Service は、実稼動にリリースされる 1 か月前に今後の機能を予めプレビューできる柔軟性を備えています。これにより、今後のリリースが組織に与える影響を評価できます。そのためには、独自のカスタム環境で機能をテストし、内部ユーザーを事前にトレーニング/準備します。 Fomrs などの AEM アドオンがある場合、[プログラム設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)でソリューションを選択することで、更新することができます。
+イノベーションのスピードに加えて、[!DNL Adobe Experience Manager] as a Cloud Service は、実稼動にリリースされる 1 か月前に今後の機能を予めプレビューできる柔軟性を備えています。独自のカスタム環境で機能をテストし、事前に内部ユーザーのトレーニング／準備を行うことで、今後のリリースが組織に与える影響を評価できます。Fomrs などの AEM アドオンがある場合、[プログラム設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)でソリューションを選択することで、更新することができます。
 
 >[!NOTE]
 >

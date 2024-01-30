@@ -5,7 +5,7 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 46e48b6bb8d2b926b55330024e145d608fcf3609
 workflow-type: tm+mt
 source-wordcount: '3350'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 91%
 
 トラフィックフィルタールールは、Cloud Manager 設定パイプラインを通じて、実稼動（サンドボックス以外の）プログラムで、開発環境、ステージ環境および実稼動環境のタイプにデプロイできます。RDE のサポートは今後提供される予定です。
 
-[チュートリアルに従う](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=ja) この機能に関する具体的な専門知識を迅速に構築する。
+[チュートリアルに従って](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=ja)、この機能に関する具体的な専門知識をすばやく構築します。
 
 ## この記事の編成方法 {#how-organized}
 
@@ -227,7 +227,7 @@ when:
 
 ### アクション構造 {#action-structure}
 
-An `action` は、アクション (allow、block、log) を指定する文字列か、アクションタイプ (allow、block、log) と wafFlags や status などのオプションの両方で構成されるオブジェクトのいずれかです。
+`action` は、アクション（allow、block、log）を指定する文字列や、アクションタイプ（allow、block、log）と wafFlags や status などのオプションの両方で構成されるオブジェクトのいずれかです。
 
 **アクションタイプ**
 
