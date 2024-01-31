@@ -2,13 +2,13 @@
 title: Edge Delivery Services用コンテンツのオーサリング
 description: コンテンツのオーサリングがEdge Delivery Servicesと連携する方法、およびEdge Delivery Servicesと共にAEMコンテンツをオーサリングする方法について説明します。
 feature: Edge Delivery Services
-source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
+exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
+source-git-commit: 7d28a3a8304d79ecc3143bdc9373134d312af49d
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 14%
+source-wordcount: '491'
+ht-degree: 13%
 
 ---
-
 
 # Edge Delivery Services用コンテンツのオーサリング {#authoring-edge}
 
@@ -53,6 +53,8 @@ AEM as a Cloud ServiceでEdge Delivery Servicesを使用する場合、最も基
 ![ブロックプロパティの設定](assets/block-properties.png)
 
 ユニバーサルエディターを使用したオーサリング方法の詳細については、ドキュメントを参照してください。 [ユニバーサルエディターを使用したコンテンツのオーサリング。](/help/implementing/universal-editor/authoring.md)
+
+詳しくは、 [Edge Delivery Servicesを使用したAEMオーサリングのための Developer Getting Guide](/help/edge/edge-dev-getting-started.md) AEMとEdge Delivery Servicesを使用して作成する独自のプロジェクトを開始する方法を説明します。
 
 ## 使用の手引き {#how-to-get-started}
 

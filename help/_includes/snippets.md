@@ -1,8 +1,8 @@
 ---
-source-git-commit: 2f567d45a6ba2dfb4dd3346e8510bcb04113eefb
+source-git-commit: 45b263651f6139b1c7f83ff3485186b272ba1a4f
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 79%
+source-wordcount: '302'
+ht-degree: 69%
 
 ---
 # スニペット {#snippets}
@@ -56,3 +56,7 @@ ht-degree: 79%
 * [Workfront Fusion に送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [アダプティブフォームを Salesforce アプリケーションに接続](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
 * [アダプティブフォームのMicrosoft® Dynamics OData への接続](/help/forms/ms-dynamics-odata-configuration.md)
+
+## AEM Authoring(Edge Delivery Servicesの早期アクセス ) {#aem-authoring-edge-early-access}
+
+[!BADGE 先行アクセステクノロジー —SlackチャネルのAEM Sitesラボから、この機能についてお問い合わせください。]{type=Informative url="/help/edge/docs/slack.md" tooltip="AEMを使用したEdge Delivery Servicesのオーサリングは、アーリーアクセステクノロジーです。"}
