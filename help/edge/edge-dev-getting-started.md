@@ -2,9 +2,9 @@
 title: Edge Delivery Servicesを使用したAEMオーサリングのための Developer Getting Guide
 description: このガイドでは、Edge Delivery Servicesとコンテンツオーサリング用のユニバーサルエディターを使用して、新しいAdobe Experience Managerサイトを導入および導入する方法を説明します
 feature: Edge Delivery Services
-source-git-commit: eae751441435949296eb76a7e9b4103393860a8d
+source-git-commit: 5967bd78b9c23cf3451ac3b0ec2118da5200ddc1
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -48,8 +48,6 @@ AEMは、2 種類の異なるコンテンツエディターを提供し、状況
    ![リポジトリプロジェクトをコピー](assets/edge-dev-getting-started/use-template-project.png)
 
 1. デフォルトでは、リポジトリが割り当てられます。 必要に応じて変更し、リポジトリの名前と説明を入力して、 **リポジトリを作成**.
-
-   * リポジトリは、 **公開**.
 
    ![リポジトリの作成](assets/edge-dev-getting-started/create-repo.png)
 
