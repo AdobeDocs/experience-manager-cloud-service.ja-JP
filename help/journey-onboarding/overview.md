@@ -2,10 +2,11 @@
 title: AEM as a Cloud Service オンボーディングジャーニーの概要
 description: AEM as a Cloud Service のオンボーディングプロセスのガイド付きジャーニーの概要については、ここから始めてください。
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: bba8310b9ba560ab9b6c2f9bea3e5c3cbec9228b
+recommendations: noDisplay
+source-git-commit: 98618765b405316b18110182c221ddd968c70e96
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 93%
+source-wordcount: '1290'
+ht-degree: 92%
 
 ---
 
@@ -16,7 +17,7 @@ AEM as a Cloud Service を選択していただき、ありがとうございま
 
 ## はじめに {#introduction}
 
-Adobe Experience Managerは、あらゆるチャネルにわたって、効果が高く、パーソナライズされたエクスペリエンスを迅速に提供し、すべてのチャネルからコンテンツを解放する、合成可能なコンテンツサービスの強力なスイートです。 **エッジ配信サービス** は、極端なコンテンツ速度を実現し、優れたエクスペリエンスを提供するAdobe Experience Managerの最新の革新です。 次のページで、Edge Delivery Servicesの使用を開始する方法を説明します。 [このページ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). Edge Delivery Servicesの使用方法については、 [開発者向けチュートリアル](https://www.hlx.live/developer/tutorial) ページに貼り付けます。
+Adobe Experience Managerは、あらゆるチャネルにわたって、効果が高く、パーソナライズされたエクスペリエンスを迅速に提供し、すべてのチャネルからコンテンツを解放する、合成可能なコンテンツサービスの強力なスイートです。 **Edge Delivery Services** は、極端なコンテンツ速度を実現し、優れたエクスペリエンスを提供するAdobe Experience Managerの最新の革新です。 次のページで、Edge Delivery Servicesの使用を開始する方法を説明します。 [このページ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=ja). Edge Delivery Servicesの使用方法については、 [開発者向けチュートリアル](https://www.hlx.live/developer/tutorial) ページに貼り付けます。
 
 オンボーディングとは、指定されたシステム管理者が AEM as a Cloud Service を組織用に設定するプロセスです。このプロセスには、クラウドリソースの初期プロビジョニングや、ユーザーを職務に基づいて役割に割り当てる作業が含まれます。これにより、各メンバーが AEM as a Cloud Service にログオンしてリソースにアクセスできるようになります。
 
@@ -98,11 +99,8 @@ AEM as a Cloud Service を使い始めると、学ぶべきことがたくさん
 
 新しい AEM as a Cloud Service アプリケーションにチームをオンボーディングする方法について、アドビの推奨事項を理解するには、ここが出発点になります。
 
-<!-- ERROR: Not Found (HTTP error 404)
-## Additional Resources {#additional-resources}
+## その他のリソース {#additional-resources}
 
-The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
+オンボーディングジャーニーのコンテンツの範囲を超えてさらに詳しく知りたい場合に役立つ、追加のオプションリソースを次に示します。
 
-* [AEM Champion Tips and Tricks - Cloud Manager Onboarding Playbook](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/onboarding-playbook.md) - Watch this video to learn Cloud Manager onboarding tips and trick from an AEM champion. -->
-
-
+* [AEM as a Cloud Serviceのオンボーディング](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html)  — この短いビデオでは、AEMのCloud Serviceオンボーディングプロセスの概要を説明します。
