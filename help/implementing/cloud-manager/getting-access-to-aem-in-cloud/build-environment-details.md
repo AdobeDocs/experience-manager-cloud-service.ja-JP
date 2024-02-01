@@ -2,9 +2,9 @@
 title: ビルド環境
 description: Cloud Manager のビルド環境と、そこでコードがどのようにビルドされテストされるかを説明します。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: f59959bc10e502d85d3f4797dcf4ad0490d233f4
+source-git-commit: 30f2eaf4d2edba13e875cd1bfe767e83a2b7f1a5
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1166'
 ht-degree: 100%
 
 ---
@@ -36,7 +36,6 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven は、`settings.xml` ファイルを使用してシステムレベルで設定されます。このファイルには、`adobe-public` というプロファイルを使用したアドビの公開アーティファクトリポジトリが自動的に含まれています（詳しくは、[アドビの公開 Maven リポジトリ](https://repo1.maven.org/)を参照してください）。
-* Node.js 18 は、[フロントエンドパイプラインとフルスタックパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)で使用できます。
 
 >[!NOTE]
 >
