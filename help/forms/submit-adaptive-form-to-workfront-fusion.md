@@ -6,22 +6,23 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 7cf7883e133d58145b5b3e1bb6ba8eb21ebad5d9
+source-git-commit: 52e1f57b82aec25ad61024f357016dbb5498ca1b
 workflow-type: tm+mt
 source-wordcount: '1273'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
-# アダプティブフォームをAdobe Workfront Fusion に送信する
+# Adobe Workfront Fusion へのアダプティブフォームの送信
 
-<span class="preview"> この機能は、アーリーアダプタープログラムで利用できます。 アーリーアダプタープログラムに参加し、機能へのアクセス権をリクエストするには、公式のメール ID からaem-forms-early-adopter-program@adobe.comに書き込むことができます。 </span>
+<span class="preview"> この機能は、アーリーアダプタープログラムで利用できます。 早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID から aem-forms-early-adopter-program@adobe.com までメールをお送りください。</span>
 
 [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) ドキュメント承認ワークフロー、E メールのフィルタリングや並べ替えなど、同じタスクを繰り返すプロセスを自動化し、繰り返しタスクではなく新しいタスクに焦点を当てることができます。 Adobe Workfront Fusion には、複数のシナリオが含まれています。 シナリオは、アプリケーションと Web サービス間のデータ転送を実行する一連のモジュールで構成されます。 シナリオでは、様々な手順（モジュール）を追加してタスクを自動化します。
 
 例えば、Workfront Fusion を使用すると、アダプティブフォームでデータを収集し、データを処理し、データをアーカイブ用にデータストアに送信するシナリオを作成できます。 シナリオを設定すると、ユーザーがフォームに入力するたびに、Workfront Fusion は自動的にタスクを実行し、データストアをシームレスに更新します。
 
 AEM as a Cloud Serviceには、フォーム送信を処理するための標準の様々な送信アクションが用意されています。 これらのオプションについて詳しくは、 [アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)  記事。
+
 
 ## Adobe Workfront Fusion を使用する利点{#advatages-of-workfront-fusion}
 
