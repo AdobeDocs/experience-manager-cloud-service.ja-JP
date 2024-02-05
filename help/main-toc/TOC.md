@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: deed2af943290bfab0a20b50083e2a741e7e8dfe
+source-git-commit: a1a87a27d73d7472ec02de37621123bbdd3876b4
 workflow-type: tm+mt
-source-wordcount: '4623'
-ht-degree: 94%
+source-wordcount: '4635'
+ht-degree: 95%
 
 ---
 
@@ -678,6 +678,9 @@ ht-degree: 94%
       + [Forms Designer を使用したテンプレートの作成](/help/forms/use-forms-designer.md)
       + [PDF ドキュメントでのカスタムフォントの使用](/help/forms/use-custom-fonts.md)
       + [既知の問題、ベストプラクティス、よくある質問](/help/forms/communications-known-issues-limitations.md)
+   + トランザクションレポート {#using-communications}
+      + [トランザクションレポート請求可能 API](/help/forms/transaction-reports-billable-apis.md)
+      + [カスタム実装のトランザクションの記録](/help/forms/record-transaction-custom-implementation.md)
    + 開発者 API リファレンス {#aem-forms-developer-api-reference}
       + [アダプティブフォーム API リファレンス](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms Cloud Service 通信 API リファレンス](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -761,7 +764,7 @@ ht-degree: 94%
    + [移行](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
 + Edge 配信サービス {#edge-delivery}
-   + [AEMとEdge Delivery Services](/help/edge/overview.md)
+   + [AEM と Edge 配信サービス](/help/edge/overview.md)
    + [Edge 配信の使用](/help/edge/using.md)
    + [エッジ配信用コンテンツのオーサリング](/help/edge/authoring.md)
    + [エッジ配信用コンテンツの公開](/help/edge/publishing.md)
