@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a1a87a27d73d7472ec02de37621123bbdd3876b4
+source-git-commit: d2090fd8bee3ec3d25eb3a00925a61404d2f8b8d
 workflow-type: tm+mt
-source-wordcount: '4635'
-ht-degree: 95%
+source-wordcount: '4630'
+ht-degree: 98%
 
 ---
 
@@ -307,7 +307,7 @@ ht-degree: 95%
          + [ローンチの操作](/help/sites-cloud/authoring/launches/overview.md)
          + [ローンチの作成](/help/sites-cloud/authoring/launches/creating.md)
          + [ローンチでのページの管理](/help/sites-cloud/authoring/launches/managing-pages.md)
-         + [ローンチの編集](/help/sites-cloud/authoring/launches/editing.md)
+         + [ローンチの編集 ](/help/sites-cloud/authoring/launches/editing.md)
          + [タイムワープでのローンチのプレビュー](/help/sites-cloud/authoring/launches/preview.md)
          + [ローンチの昇格](/help/sites-cloud/authoring/launches/promoting.md)
       + ワークフロー {#workflows}
@@ -385,7 +385,7 @@ ht-degree: 95%
       + [ワークフローの管理](/help/sites-cloud/administering/workflows-administering.md)
    + AEM as a Cloud Service との統合 {#integrations}
       + [Adobe Analytics との統合](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
-      + [Adobe Analytics Automated Setup との統合](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
+      + [Adobe Analytics 自動設定との統合](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [Adobe Analytics との統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Adobe Learning Manager との統合](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Adobe Target との統合](/help/sites-cloud/integrating/integrating-adobe-target.md)
@@ -466,7 +466,7 @@ ht-degree: 95%
       + [コンテンツフラグメントを関連付けられたコンテンツ](/help/assets/content-fragments/content-fragments-assoc-content.md)
       + [メタデータ - フラグメントのプロパティ](/help/assets/content-fragments/content-fragments-metadata.md)
       + [コンテンツフラグメント - 削除に関する考慮事項](/help/assets/content-fragments/content-fragments-delete.md)
-      + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
+      + [マークダウン](/help/assets/content-fragments/content-fragments-markdown.md)
       + [構造ツリー](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [プレビュー - JSON 表現](/help/assets/content-fragments/content-fragments-json-preview.md)
       + [MSM for Assets を使用したコンテンツフラグメントの再利用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=ja)
@@ -581,7 +581,7 @@ ht-degree: 95%
          + [AEM Forms as a Cloud Service と Adobe Analytics の統合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [アダプティブフォームと Adobe Analytics の統合](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
          + [アダプティブフォーム分析レポートの表示と理解](/help/forms/view-understand-aem-forms-analytics-reports.md)
-         + [アダプティブフォームをAdobe Workfront Fusion に送信する](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+         + [Adobe Workfront Fusion へのアダプティブフォームの送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [アダプティブフォームと Microsoft Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)
          + [AEM Sites ページへのアダプティブフォームの埋め込み](/help/forms/embed-adaptive-form-aem-sites.md)
          + [コアコンポーネントに基づくアダプティブフォームを外部 web ページに埋め込む](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
@@ -737,8 +737,8 @@ ht-degree: 95%
          + [製品エクスペリエンスの構築](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
    + 統合 {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
-      + [ライブ検索CIFコンポーネント](/help/commerce-cloud/integrating/live-search-plp.md)
-      + [ライブ検索ポップオーバーCIFコンポーネント](/help/commerce-cloud/integrating/live-search-popover.md)
+      + [ライブ検索 CIF コンポーネント](/help/commerce-cloud/integrating/live-search-plp.md)
+      + [ライブ検索ポップオーバー CIF コンポーネント](/help/commerce-cloud/integrating/live-search-popover.md)
       + [サードパーティのコマースソリューション](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM ストアフロント {#storefront}
@@ -766,48 +766,48 @@ ht-degree: 95%
 + Edge 配信サービス {#edge-delivery}
    + [AEM と Edge 配信サービス](/help/edge/overview.md)
    + [Edge 配信の使用](/help/edge/using.md)
-   + [エッジ配信用コンテンツのオーサリング](/help/edge/authoring.md)
-   + [エッジ配信用コンテンツの公開](/help/edge/publishing.md)
-   + [エッジ配信用の開発](/help/edge/developing.md)
+   + [Edge 配信向けのコンテンツのオーサリング](/help/edge/authoring.md)
+   + [Edge 配信向けのコンテンツの公開](/help/edge/publishing.md)
+   + [Edge 配信向けの開発](/help/edge/developing.md)
    + [既存のプロジェクトと Edge 配信](/help/edge/existing-projects.md)
    + [開発者向け入門ガイド](/help/edge/edge-dev-getting-started.md)
-   + Edge 配信アプリケーションの構築 {#build}
-      + [はじめに — 開発者向けチュートリアル](/help/edge/developer/tutorial.md)
-      + [プロジェクトの詳細な構造](/help/edge/developer/anatomy-of-a-franklin-project.md)
+   + Edge 配信アプリケーションの作成 {#build}
+      + [はじめに - 開発者向けチュートリアル](/help/edge/developer/tutorial.md)
+      + [プロジェクトの分析](/help/edge/developer/anatomy-of-a-franklin-project.md)
       + [ブロックコレクション](/help/edge/developer/block-collection.md)
       + [スプレッドシート](/help/edge/developer/spreadsheets.md)
       + [Forms](/help/edge/developer/forms.md)
       + [インデックス作成](/help/edge/developer/indexing.md)
-      + [100 を維持](/help/edge/developer/keeping-it-100.md)
-      + [マークアップ — セクション](/help/edge/developer/markup-sections-blocks.md)
+      + [理想的な状態の維持](/help/edge/developer/keeping-it-100.md)
+      + [マークアップ - セクション](/help/edge/developer/markup-sections-blocks.md)
       + [Favicon](/help/edge/developer/favicon.md)
       + [カスタムヘッダー](/help/edge/docs/custom-headers.md)
-      + [開発者向けのベストプラクティス](/help/edge/docs/dev-collab-and-good-practices.md)
+      + [開発者向けベストプラクティス](/help/edge/docs/dev-collab-and-good-practices.md)
    + Edge 配信アプリケーションの公開 {#publish}
       + [オーサリング](/help/edge/docs/authoring.md)
       + [一括メタデータ](/help/edge/docs/bulk-metadata.md)
       + [プレースホルダー](/help/edge/docs/placeholders.md)
       + [サイトマップ](/help/edge/developer/sitemap.md)
-      + [SharePoint Setup](/help/edge/docs/setup-customer-sharepoint.md)
-      + [Slackボット](/help/edge/docs/slack.md)
+      + [SharePoint の設定](/help/edge/docs/setup-customer-sharepoint.md)
+      + [Slack ボット](/help/edge/docs/slack.md)
    + Edge 配信アプリケーションの起動 {#launch}
-      + [ライブチェックリストに移動](/help/edge/docs/go-live-checklist.md)
-      + [プッシュの無効化](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
+      + [公開チェックリスト](/help/edge/docs/go-live-checklist.md)
+      + [プッシュ無効化](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
       + [Cloudflare Worker の設定](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
-      + [Akamai 設定](/help/edge/docs/byo-cdn-akamai-setup.md)
-      + [Fastly 設定](/help/edge/docs/byo-cdn-fastly-setup.md)
+      + [Akamai の設定](/help/edge/docs/byo-cdn-akamai-setup.md)
+      + [Fastly の設定](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [リダイレクト](/help/edge/docs/redirects.md)
-   + エッジ配信のリソース {#resources}
+   + Edge 配信のリソース {#resources}
       + Sidekick {#sidekick}
-         + [使用Sidekick](/help/edge/docs/sidekick.md)
+         + [Sidekick の使用](/help/edge/docs/sidekick.md)
          + [拡張機能のインストール](/help/edge/docs/sidekick-extension.md)
-         + [プロジェクトコンフィギュレータ](https://www.aem.live/tools/sidekick/)
-         + [Sidekickライブラリ](/help/edge/docs/sidekick-library.md)
+         + [プロジェクト設定](https://www.aem.live/tools/sidekick/)
+         + [Sidekick ライブラリ](/help/edge/docs/sidekick-library.md)
       + [FAQ](/help/edge/docs/faq.md)
-      + [管理 API](https://www.aem.live/docs/admin.html)
-      + [AEM Status](https://www.aemstatus.net)
+      + [Admin API](https://www.aem.live/docs/admin.html)
+      + [AEM ステータス](https://www.aemstatus.net)
       + ツール {#tools}
-         + [SidekickChrome 拡張機能](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [Sidekick Chrome 拡張機能](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Github ボット](https://github.com/apps/aem-code-sync)
          + [監査ログ](/help/edge/docs/auditlog.md)
 + ヘッドレス {#headless}
@@ -839,14 +839,14 @@ ht-degree: 95%
       + [GraphQLクエリの最適化](/help/headless/graphql-api/graphql-optimization.md)
       + [最適化された GraphQL フィルタリング用コンテンツフラグメントの更新](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [GraphQL クエリの例](/help/headless/graphql-api/sample-queries.md)
-      + [GraphQLクエリのトラブルシューティング](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
+      + [GraphQL クエリのトラブルシューティング](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
    + [コンテンツフラグメント REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=ja)
    + セキュリティ {#security}
       + [権限](/help/headless/security/permissions.md)
       + [認証](/help/headless/security/authentication.md)
    + デプロイメント {#deployment}
       + [アーキテクチャ](/help/headless/deployment/architecture.md)
-      + [Dispatcher — エンドポイント](/help/headless/deployment/dispatcher.md)
+      + [Dispatcher - エンドポイント](/help/headless/deployment/dispatcher.md)
       + [Dispatcher - 永続化されたクエリのキャッシュを有効にする](/help/headless/deployment/dispatcher-caching.md)
       + [CORS 設定](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [リファラーフィルター](/help/headless/deployment/referrer-filter.md)
@@ -1056,7 +1056,6 @@ ht-degree: 95%
       + [エクスペリエンスフラグメントの拡張](/help/implementing/developing/extending/experience-fragments.md)
       + [コンテンツフラグメントのカスタマイズと拡張](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [レンダリングコンポーネントのコンテンツフラグメントの設定](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-      + [コンテンツフラグメントコンソールのカスタマイズ](/help/implementing/developing/extending/content-fragment-console-customizing.md)
       + [コンテンツフラグメントコンソールおよびエディターのカスタマイズ](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
       + 検索フォームの管理 {#manage-search-forms}
          + [検索フォームの設定](/help/implementing/developing/extending/search-forms.md)
@@ -1122,9 +1121,9 @@ ht-degree: 95%
    + 開発 {#developing}
       + [AEM のユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md)
       + [ユニバーサルエディター開発者の概要](/help/implementing/universal-editor/developer-overview.md)
-      + [属性と品目タイプ](/help/implementing/universal-editor/attributes-types.md)
+      + [属性と項目タイプ](/help/implementing/universal-editor/attributes-types.md)
       + [モデル定義、フィールド、およびコンポーネントタイプ](/help/implementing/universal-editor/field-types.md)
       + [ユニバーサルエディターの認証](/help/implementing/universal-editor/authentication.md)
       + [ユニバーサルエディターを使用したローカル AEM 開発](/help/implementing/universal-editor/local-dev.md)
-      + [ユニバーサルエディター呼び出し](/help/implementing/universal-editor/calls.md)
+      + [ユニバーサルエディターの呼び出し](/help/implementing/universal-editor/calls.md)
       + [UI のカスタマイズ](/help/implementing/universal-editor/customizing.md)
