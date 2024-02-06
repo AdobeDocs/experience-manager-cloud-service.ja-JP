@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 77d38f03f18eb6b0fdc2f2eec5b2dc4b608b8057
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 46%
+ht-degree: 96%
 
 ---
 
@@ -34,44 +34,44 @@ ht-degree: 46%
 
 ## リリースビデオ {#release-video}
 
-2024.1.0 リリースで追加された機能の概要については、2024年1月 のリリースに関する概要ビデオをご覧ください。
+2024.1.0 リリースで追加された機能の概要については、2024年1月のリリースに関する概要ビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427041?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### AEM SitesでのExtension Manager {#sites-extension-manager}
+### AEM Sites での Extension Manager {#sites-extension-manager}
 
-**新しい [AEM SitesでのExtension Manager](https://developer.adobe.com/uix/docs/extension-manager/)** UI 拡張機能を設定してAEM設定をパーソナライズする。
+**新しい [AEM Sites での Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)** を探索して、UI 拡張機能を設定して AEM 設定をパーソナライズします。
 
-![AEM SitesでのExtension Manager](/help/assets/sites/extension-manager/homepage.png)
+![AEM Sites での Extension Manager](/help/assets/sites/extension-manager/homepage.png)
 
 AEM SitesのExtension Managerを使用すると、開発者や実務担当者は、デベロッパーがアクセス、管理およびカスタマイズできます [UI 拡張機能](https://developer.adobe.com/uix/docs/) で作成済み [AdobeApp Builder](https://developer.adobe.com/app-builder/) AEM Sitesの機能を強化する。
-Extension Managerを使用すると、次のことができます。
+Extension Manager で以下を実行できます。
 
-* インスタンス単位で拡張機能を有効または無効にする。
-* 拡張パラメーターを設定する。
-* 拡張機能をプレビューし、共有可能なプレビューリンクを生成する。
-* インタラクティブデモを介して UI の拡張機能を確認する
-* ファーストパーティの拡張機能を使用して、Adobeの実験機能にアクセスします。
+* インスタンス単位で拡張機能を有効または無効にする
+* 拡張パラメーターの設定
+* 拡張機能のプレビューと、共有可能なプレビューリンクの生成
+* インタラクティブデモを介した UI 拡張機能の確認
+* ファーストパーティの拡張機能を使用した、アドビの実験機能へのアクセス
 
-アドビでは、UI 拡張機能に関するフィードバックと新しい使用例を積極的に求めています。 連携を希望される場合は、次の宛先にメールを送信してください： `uix@adobe.com`.
+アドビでは、UI 拡張機能に関するフィードバックと新しいユースケースを積極的に求めています。連絡を希望される場合は、`uix@adobe.com` にメールを送信してください。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### 管理ビューのプレリリース機能 {#admin-view-prerelease}
 
-**サポートされるすべてのビデオタイプのレンディションをプレビュー**
+**サポートされるすべてのビデオタイプのレンディションのプレビュー**
 
-Experience Manager Assetsでは、処理プロファイルの設定が不要で、サポートされるすべてのビデオタイプのプレビューレンディションがデフォルトで生成されるようになりました
+Experience Manager Assets では、処理プロファイル設定を行わなくても、サポートされるすべてのビデオタイプのプレビューレンディションをデフォルトで生成するようになりました。
 
-### Assets ビュー {#assets-view-features}
+### アセットビュー {#assets-view-features}
 
 **スマートタグのブロックリスト**
 
 Assets Essentials では、ブロックリストを定義できるようになりました。このリストは、リポジトリにアップロードする際に、アセットにスマートタグとして追加する必要がない単語で構成されます。この機能は、ブランドのコンプライアンスを保持し、スマートタグのモデレートにかかる作業を軽減するのに役立ちます。
 
-![スマートタグのブロックリストに加える](/help/assets/assets/block-tags.png)
+![スマートタグのブロックリスト](/help/assets/assets/block-tags.png)
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -82,13 +82,13 @@ Assets Essentials では、ブロックリストを定義できるようにな�
 
 -->
 
-### アーリーアダプタープログラム {#forms-early-adopter}
+### 早期導入プログラム {#forms-early-adopter}
 
-* **[アダプティブフォームをAdobe Workfront Fusion に送信するシナリオ](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**:Forms as a Cloud Serviceには、アダプティブフォームをAdobe Workfrontに簡単に接続するための既製のオプションが用意されています。 これにより、アダプティブフォームをAdobe Workfrontシナリオに送信するプロセスが簡単になり、アダプティブフォームの送信時にWorkfront Fusion シナリオをトリガーできます。
+* **[Adobe Workfront Fusion シナリオへのアダプティブフォームの送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**：Forms as a Cloud Service には、アダプティブフォームを Adobe Workfront に簡単に接続するための標準オプションが用意されています。これにより、Adobe Workfront シナリオにアダプティブフォームを送信するプロセスが簡単になり、アダプティブフォームの送信時に Workfront Fusion シナリオをトリガーできます。
 
-* **[右から左への言語のサポート](/help/forms/supporting-new-language-localization-core-components.md)**：コアコンポーネントに基づいて構築されたアダプティブFormsは、アラビア語、ペルシャ語、ウルドゥー語などの右から左 (RTL) 言語で表示できるようになりました。 RTL 言語は世界で 20 億人以上の人々が話しています RTL 言語のフォームを使用すると、アダプティブフォームのリーチを拡大して、これらの多様なオーディエンスに対応し、RTL 市場へと選択することができます。 地域によっては、現地の言語でフォームを提供することが法的義務でもあります。 現地の言語に対応することで、より広いオーディエンスへの扉を開くだけでなく、関連する法令への準拠も確保できます。
+* **[右横書き言語のサポート](/help/forms/supporting-new-language-localization-core-components.md)**：コアコンポーネントに基づいて作成されたアダプティブフォームを、アラビア語、ペルシア語、ウルドゥー語などの右横書き（RTL）言語で表示できるようになりました。RTL 言語は、世界中で 20 億人以上の人々が話しています。RTL 言語のフォームを使用すると、アダプティブフォームのリーチを拡大して、これらの多様なオーディエンスに対応し、RTL マーケットを選択できます。また、特定の地域では、現地の言語でフォームを提供することは法的義務として定められています。現地の言語に対応することで、より幅広いオーディエンスに扉を開くだけでなく、関連する法律や規制を確実に遵守できます。
 
-  ![右から左への言語サポート](/help/forms/assets/right-to-left-language-support.png)
+  ![右横書き言語のサポート](/help/forms/assets/right-to-left-language-support.png)
 
 * **[DocAssurance API（通信 API の一部）を使用したドキュメントの保護](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API を使用すると、ドキュメントに署名および暗号化して、機密情報を保護できます。暗号化により、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセスできるようになります。この強化された保護層は、貴重なデータを信頼できない環境にさらすことなく、安心感ももたらします。Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
 
@@ -98,11 +98,11 @@ Assets Essentials では、ブロックリストを定義できるようにな�
 
 ### Dynatrace のサポート {#dynatrace}
 
-Dynater のお客様は、AEMの使用状況を監視できます。 [読み方](/help/implementing/cloud-manager/dynatrace.md) をクリックして、アプリケーションのパフォーマンス監視用に Dynaterace 環境との接続をリクエストします。 すべてのお客様が利用できるNew Relic APM は、Dynatrace が有効になっている場合、データの収集を停止します。
+Dynatrace のお客様は、AEM の使用状況を監視できます。アプリケーションのパフォーマンスをモニタリングするために Dynatrace 環境との接続をリクエストする方法については、[こちら](/help/implementing/cloud-manager/dynatrace.md)を参照してください。Dynatrace が有効になっている場合、すべてのお客様が利用できる New Relic APM は、データの収集を停止します。
 
-### サイトテーマとサイトテンプレートを使用したフロントエンドコードの RDE サポート：アーリーアダプタープログラム {#rde-frontend-early-adopter}
+### サイトテーマとサイトテンプレートを使用したフロントエンドコードの RDE サポート：早期導入プログラム {#rde-frontend-early-adopter}
 
-[急速な開発環境 (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 次の基づくフロントエンドコードをサポートするようになりました。 [サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md) および [サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)早期採用者向け。 RDE を使用すると、これは、 [フロントエンドパイプライン](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). 次の場所に連絡してください： **aemcs-rde-support@adobe.com** 試してみて、フィードバックを提供してください。
+[迅速な開発環境（RDE）](/help/implementing/developing/introduction/rapid-development-environments.md)は、早期導入者向けに、[サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md)と[サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)に基づいたフロントエンドコードをサポートするようになりました。RDE では、[フロントエンドパイプライン](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)ではなくコマンドラインディレクティブを使用して行われます。試してフィードバックを提供するには、**aemcs-rde-support@adobe.com** までご連絡ください。
 
 ## Cloud Manager {#cloud-manager}
 

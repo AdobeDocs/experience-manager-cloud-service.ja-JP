@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: dfeeaca8341abec5d4fd518957baf6936a21aea3
 workflow-type: tm+mt
 source-wordcount: '3540'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service には、複数のタイプの高度なネットワーク
 
 ## フレキシブルポートエグレス {#flexible-port-egress}
 
-この高度なネットワーク機能を使用すると、AEM as a Cloud Serviceを設定して、HTTP（ポート 80）および HTTPS（ポート 443）以外のポート（デフォルトで開いている）を介してトラフィックを出力することができます。
+高度なネットワーク機能を使用すると、デフォルトで開いている HTTP（ポート 80）と HTTPS（ポート 443）以外のポートからトラフィックを送信するように、AEM as a Cloud Service を設定することができます。
 
 ### 検討事項 {#flexible-port-egress-considerations}
 
@@ -54,7 +54,8 @@ AEM as a Cloud Service には、複数のタイプの高度なネットワーク
 
 プログラムスコープのフレキシブルポートエグレス設定の準備ができている場合は、環境ごとに `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントを呼び出して、環境レベルでネットワーク機能を有効にすると共に、ポート転送ルールを必要に応じて宣言する必要があります。柔軟性を持たせるために、パラメーターは環境ごとに設定できます。
 
-ポート転送ルールは、80／443 以外の宛先ポートに対して宣言する必要がありますが、http または https プロトコルを使用しない場合にのみ、宛先ホストのセット（名前または IP、およびポート）を指定します。 HTTP/HTTPS 経由のポート80/443を使用するクライアント接続では、接続でプロキシ設定を使用して、高度なネットワークのプロパティを接続に適用する必要があります。 宛先ホストごとに、宛先ポートを 30000～30999 のポートにマッピングする必要があります。
+ポート転送ルールは、80／443 以外の宛先ポートに対して宣言する必要がありますが、http または https プロトコルを使用しない場合にのみ、
+宛先ホストのセット（名前または IP、およびポート）を指定します。http／https 経由のポート80／443を使用するクライアント接続でも、接続でプロキシ設定を使用して、高度なネットワークのプロパティを接続に適用する必要があります。宛先ホストごとに、宛先ポートを 30000～30999 のポートにマッピングする必要があります。
 
 API が数秒以内に応答して「更新中」のステータスを返し、約 10 分後に、高度なネットワーク機能が有効であることがエンドポイントの `GET` メソッドで示されます。
 
@@ -195,9 +196,9 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 専用エグレス IP アドレスの設定は、[フレキシブルポートエグレス](#configuring-flexible-port-egress-provision)の場合と同じです。
 
-フレキシブルポートエグレスとの主な違いは、トラフィックが常に専用 の一意の IP アドレスから出ていくことです。その IP を確認するには、DNS リゾルバーを使用して、`p{PROGRAM_ID}.external.adobeaemcloud.com` に関連付けられている IP アドレスを特定します。IP アドレスは変更されるとは限りませんが、将来変更する必要がある場合は、詳細な通知が表示されます。
+フレキシブルポートエグレスとの主な違いは、トラフィックが常に専用 の一意の IP アドレスから出ていくことです。その IP を確認するには、DNS リゾルバーを使用して、`p{PROGRAM_ID}.external.adobeaemcloud.com` に関連付けられている IP アドレスを特定します。この IP アドレスが変わることはありませんが、将来変更する必要がある場合は、事前に通知されます。
 
-`PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントのフレキシブルポートエグレスでサポートされているルーティングルールに加えて、専用エグレス IP アドレスでは `nonProxyHosts` パラメーターもサポートしています。これにより、専用 IP ではなく、共有 IP アドレス範囲を経由してルーティングするホストのセットを宣言できます。これは、共有 IP を介したトラフィックの出力をさらに最適化する場合に役立ちます。 `nonProxyHost` URL は `example.com` または `*.example.com` のパターンに従う場合があります（このパターンでは、ワイルドカードはドメインの先頭でのみ使用できます）。
+`PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントのフレキシブルポートエグレスでサポートされているルーティングルールに加えて、専用エグレス IP アドレスでは `nonProxyHosts` パラメーターもサポートしています。これにより、専用 IP ではなく共有 IP アドレス範囲を経由してルーティングされる一連のホストを宣言できます。これは、共有 IP から出ていくトラフィックがさらに最適化される可能性があるので、役に立つことがあります。`nonProxyHost` URL は `example.com` または `*.example.com` のパターンに従う場合があります（このパターンでは、ワイルドカードはドメインの先頭でのみ使用できます）。
 
 フレキシブルポートエグレス IP アドレスと専用エグレス IP アドレスのどちらかを選択する場合は、特定の IP アドレスが必要なければ、フレキシブルポートエグレスを選択してください。アドビ側でフレキシブルポートエグレストラフィックのパフォーマンスを最適化できるからです。
 
@@ -333,7 +334,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ## 従来の専用エグレスアドレスを使用する場合 {#legacy-dedicated-egress-address-customers}
 
-2021年9月30日以前に専用エグレス IP がプロビジョニングされている場合、専用エグレス IP 機能は HTTP ポートと HTTPS ポートのみをサポートします。これには、HTTP/1.1 と HTTP/2（暗号化時）が含まれます。また、1 つの専用の出力エンドポイントは、それぞれポート80/443の HTTP/HTTPS 経由でのみ任意のターゲットと通信できます。
+2021年9月30日以前に専用エグレス IP がプロビジョニングされている場合、専用エグレス IP 機能は HTTP ポートと HTTPS ポートのみをサポートします。これには、HTTP/1.1 と HTTP/2（暗号化時）が含まれます。また、1 つの専用の出力エンドポイントは、それぞれポート 80／443 の HTTP／HTTPS 経由でのみ任意のターゲットと通信できます。
 
 ## 仮想プライベートネットワーク（VPN） {#vpn}
 
@@ -363,13 +364,13 @@ VPN 経由でのルーティングが必要な HTTP またはHTTPS プロトコ�
 
 API が数秒以内に応答して「`updating`」のステータスを返し、約 10 分後に、Cloud Manager の環境 GET エンドポイントの呼び出しで「`ready`」のステータスが返されます。これは、環境のアップデートが適用されたことを示します。
 
-環境トラフィックルーティングルール（ホストまたはバイパス）がない場合でも、 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` は、空のペイロードと同じように、引き続き呼び出す必要があります。
+環境のトラフィックルーティングルール（ホストまたはバイパス）がない場合でも、空のペイロードを渡して `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` を呼び出す必要があります。
 
 ### VPN の更新 {#updating-the-vpn}
 
 プログラムレベルの VPN 設定は、`PUT /api/program/<program_id>/network/<network_id>` エンドポイントを呼び出して更新することができます。
 
-最初の VPN プロビジョニングの後は、アドレス空間を変更できません。 アドレス空間の変更が必要な場合は、カスタマーサポートに問い合わせてください。また、`kind` パラメーターの値（`flexiblePortEgress`、`dedicatedEgressIP`、`VPN` のいずれか）も変更できません。サポートが必要な場合は、作成済みの内容と変更の理由を明記して、カスタマーサポートに問い合わせてください。
+最初の VPN プロビジョニングの後は、アドレス空間は変更できません。アドレス空間の変更が必要な場合は、カスタマーサポートに問い合わせてください。また、`kind` パラメーターの値（`flexiblePortEgress`、`dedicatedEgressIP`、`VPN` のいずれか）も変更できません。サポートが必要な場合は、作成済みの内容と変更の理由を明記して、カスタマーサポートに問い合わせてください。
 
 環境ごとのルーティングルールを更新するには、`PUT /program/{programId}/environment/{environmentId}/advancedNetworking` エンドポイントを再度呼び出します。その際に、設定パラメーターは一部ではなく、必ず全部を含めてください。環境のアップデートは適用されるまでに通常 5～10 分かかります。
 
@@ -541,7 +542,7 @@ Header always set Cache-Control private
 
 ## 追加の公開地域の詳細なネットワーク設定 {#advanced-networking-configuration-for-additional-publish-regions}
 
-高度なネットワークが既に設定されている環境にさらに地域が追加されると、高度なネットワークルールに一致する追加の公開地域からのトラフィックは、デフォルトでプライマリ地域を経由します。ただし、プライマリ地域が使用できなくなった場合、その他の地域で詳細ネットワークが有効になっていないと、高度なネットワークトラフィックは破棄されます。いずれかの地域で停止が発生した場合に、待ち時間を最適化して可用性を高めるには、追加のパブリッシュ地域の高度なネットワークを有効にする必要があります。 次の節では、2 つの異なるシナリオについて説明します。
+高度なネットワークが既に設定されている環境にさらに地域が追加されると、高度なネットワークルールに一致する追加の公開地域からのトラフィックは、デフォルトでプライマリ地域を経由します。ただし、プライマリ地域が使用できなくなった場合、その他の地域で詳細ネットワークが有効になっていないと、高度なネットワークトラフィックは破棄されます。いずれかの地域で障害が発生した場合に、待ち時間を最適化して可用性を高めるには、追加の公開地域の高度なネットワークを有効にする必要があります。次の節では、2 つの異なるシナリオについて説明します。
 
 >[!NOTE]
 >
@@ -553,9 +554,9 @@ Header always set Cache-Control private
 
 プライマリ地域で既に高度なネットワーク設定が有効になっている場合は、次の手順に従います。
 
-1. 専用の AEM IP アドレスが許可リストに表示されるようにインフラストラクチャをロックダウンした場合は、そのインフラストラクチャ内の拒否ルールを一時的に無効にすることをお勧めします。これが行われない場合、新しい地域の IP アドレスからのリクエストが、使用するインフラストラクチャによって拒否される短い期間があります。完全修飾ドメイン名 (FQDN) (`p1234.external.adobeaemcloud.com`例えば、すべてのAEM地域は同じ FQDN からの高度なネットワークトラフィックを引き出すので、
+1. 専用の AEM IP アドレスが許可リストに表示されるようにインフラストラクチャをロックダウンした場合は、そのインフラストラクチャ内の拒否ルールを一時的に無効にすることをお勧めします。これが行われない場合、新しい地域の IP アドレスからのリクエストが、使用するインフラストラクチャによって拒否される短い期間があります。すべての AEM 地域は同じ完全修飾ドメイン名（FQDN）からの高度なネットワークトラフィックを引き出すので、FQDN を介してインフラストラクチャをロックダウンしている場合（例えば、`p1234.external.adobeaemcloud.com`）、これは必要ありません
 1. 高度なネットワークのドキュメントに記載されるように、Cloud Manager Create Network Infrastructure API への POST 呼び出しを通じて、セカンダリ地域のプログラム範囲のネットワークインフラストラクチャを作成します。ペイロードの JSON 設定のプライマリ地域に対する唯一の違いは、地域プロパティです
-1. AEMトラフィックを許可するために、インフラストラクチャを IP でロックダウンする必要がある場合は、 `p1234.external.adobeaemcloud.com`. 地域ごとに 1 つ必要です。
+1. AEM トラフィックを許可するために、インフラストラクチャを IP でロックダウンする必要がある場合は、`p1234.external.adobeaemcloud.com` に一致する IP を追加します。地域ごとに 1 つ必要です。
 
 #### どの地域にもまだ設定されていない高度なネットワーク {#not-yet-configured}
 
@@ -563,7 +564,7 @@ Header always set Cache-Control private
 
 1. [Cloud Manager Create Network Infrastructure API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure) への POST 呼び出しを通して、すべての地域のネットワークインフラストラクチャを作成します。ペイロードの JSON 設定のプライマリ地域に対する唯一の違いは、地域プロパティです。
 1. ステージング環境の場合は、`PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` を実行して、環境範囲を指定した高度なネットワークを有効にし、設定します。詳しくは、[こちら](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)の API ドキュメントを参照してください。
-1. 必要に応じて、外部インフラストラクチャをロックダウンします。FQDN（例： ）でロックダウンします。 `p1234.external.adobeaemcloud.com`) をクリックします。 それ以外の場合は、IP アドレスで行うことができます
+1. 必要に応じて、できれば FQDN（例えば `p1234.external.adobeaemcloud.com`）で、外部インフラストラクチャをロックダウンします。それ以外の場合は、IP アドレスで行うことができます
 1. ステージング環境が期待どおりに動作する場合は、実稼動環境用に環境範囲を定めた高度なネットワーク設定を有効にして設定します。
 
 #### VPN {#vpn-regions}
