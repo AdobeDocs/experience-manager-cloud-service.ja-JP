@@ -2,9 +2,9 @@
 title: ダイナトレース
 description: AEM as a Cloud Serviceでの Dynatrace の使用方法を説明します。
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
-source-git-commit: a234f2a00c51bcb23b0c52feac9971259d26b8c3
+source-git-commit: fec3aa6debec49014406ab241c3ce0338ec5a1d2
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,13 @@ Dynater のお客様は、カスタマーサポートチケットを通じて接
 
 | **フィールド** | **説明** |
 |---|---|
-| 動的環境 URL | Dynatrace 環境の URL。<br><br>Dynatrace SaaS のお客様の場合、形式は次のようになります。 `https://<your-environment-id>.live.dynatrace.com`.<br><br>Dynatrace が管理するお客様の場合、形式は次のようになります。 `https://<your-managed-url>/e/<environmentId>` |
-| 動的環境 ID | 動的環境 ID。 詳しくは、 [Dynaterace 環境情報の取得](#get-dynatrace-env-info) これを手に入れる方法を |
-| 動的環境トークン | Dynaterace 環境トークンです。 詳しくは、 [Dynaterace 環境情報の取得](#get-dynatrace-env-info) これを手に入れる方法を<br><br>これは秘密と見なす必要があるので、適切なセキュリティプラクティスを使用します。 例えば、Web サイト ( 例： **zerobin.net**：カスタマーサポートチケットで参照できる、パスワードと共に。 |
-| Dynatrace API アクセストークン | Dynatrace 環境の API アクセストークン。  詳しくは、 [Dynaterce API アクセストークンの作成](#create-dynatrace-access-token) を参照してください。<br><br>これは秘密と見なす必要があるので、適切なセキュリティプラクティスを使用します。 例えば、Web サイト ( 例： **zerobin.net**：カスタマーサポートチケットで参照できる、パスワードと共に。<br><br>注意：これは、Dynatrace Managed でのみ必要です。 |
-| Dynatrace ActiveGate ポート | AEM統合の接続先となる Dynace ActiveGate ポート。<br><br>注意：これは、Dynatrace Managed でのみ必要です。 |
-| Dynatrace ActiveGate ネットワークゾーン | お使いの [Dynatrace ActiveGate ネットワークゾーン](https://docs.dynatrace.com/docs/manage/network-zones) データセンターとネットワーク地域をまたいでAEM監視データを効率的にルーティングする。<br><br>注意： Dynatrace ActiveGate ネットワークゾーンはオプションです。 |
-| AEM環境 ID | Dynace が監視するAEM環境 ID。 |
+| [!DNL Dynatrace Environment URL] | Dynatrace 環境の URL。<br><br>Dynatrace SaaS のお客様の場合、形式は次のようになります。 `https://<your-environment-id>.live.dynatrace.com`.<br><br>Dynatrace が管理するお客様の場合、形式は次のようになります。 `https://<your-managed-url>/e/<environmentId>` |
+| [!DNL Dynatrace Environment ID] | 動的環境 ID。 詳しくは、 [Dynaterace 環境情報の取得](#get-dynatrace-env-info) これを手に入れる方法を |
+| [!DNL Dynatrace Environment Token] | Dynaterace 環境トークンです。 詳しくは、 [Dynaterace 環境情報の取得](#get-dynatrace-env-info) これを手に入れる方法を<br><br>これは秘密と見なす必要があるので、適切なセキュリティプラクティスを使用します。 例えば、Web サイト ( 例： **zerobin.net**：カスタマーサポートチケットで参照できる、パスワードと共に。 |
+| [!DNL Dynatrace API access token] | Dynatrace 環境の API アクセストークン。  詳しくは、 [Dynaterce API アクセストークンの作成](#create-dynatrace-access-token) を参照してください。<br><br>これは秘密と見なす必要があるので、適切なセキュリティプラクティスを使用します。 例えば、Web サイト ( 例： **zerobin.net**：カスタマーサポートチケットで参照できる、パスワードと共に。<br><br>注意：これは、Dynatrace Managed でのみ必要です。 |
+| [!DNL Dynatrace ActiveGate Port] | AEM統合の接続先となる Dynace ActiveGate ポート。<br><br>注意：これは、Dynatrace Managed でのみ必要です。 |
+| [!DNL Dynatrace ActiveGate Network Zone] | お使いの [Dynatrace ActiveGate ネットワークゾーン](https://docs.dynatrace.com/docs/manage/network-zones) データセンターとネットワーク地域をまたいでAEM監視データを効率的にルーティングする。<br><br>注意： Dynatrace ActiveGate ネットワークゾーンはオプションです。 |
+| [!DNL AEM Environment ID(s)] | Dynace が監視するAEM環境 ID。 |
 
 >[!NOTE]
 >
@@ -43,13 +43,13 @@ Dynater のお客様は、カスタマーサポートチケットを通じて接
 ## Dynaterce API アクセストークンの作成 {#create-dynatrace-access-token}
 
 1. Dynaterace 環境にログインします。
-1. 動的メニューで、管理/アクセストークンに移動します。
-1. 「新規トークンを生成」を選択します。
-1. トークン名を定義します。
+1. Adobe Analytics の [!DNL Dynatrace] メニュー、移動 [!DNL Manage] > [!DNL Access tokens].
+1. 選択 [!DNL Generate new token].
+1. を定義 [!DNL token name].
 
-1. オプション：有効期限を設定します。 有効期限が切れる前に、新しいトークンを必ず生成してください。
-1. トークンの範囲を PaaS 統合に設定する — インストーラーのダウンロード
-1. 「トークンを生成」を選択します。
+1. オプション： [!DNL expiration date]. 有効期限が切れる前に、新しいトークンを必ず生成してください。
+1. を設定します。 [!DNL token scope] から [!DNL PaaS integration - Installer download]
+1. 選択 [!DNL Generate token].
 1. 生成されたアクセストークンをコピーし、安全な場所に保存します。
 
 
