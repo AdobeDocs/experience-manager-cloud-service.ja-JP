@@ -1,24 +1,24 @@
 ---
-title: UI のカスタマイズ
-description: コンテンツ作成者のニーズに合わせてユニバーサルエディターの UI をカスタマイズできる様々な拡張ポイントについて説明します。
+title: ユニバーサルエディターオーサリングエクスペリエンスのカスタマイズ
+description: コンテンツ作成者のニーズに合わせてユニバーサルエディターの UI をカスタマイズできる、様々な拡張ポイントやその他の機能について説明します。
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
-source-git-commit: 1bc65e65e6ce074a050e21137ce538b5c086665f
+source-git-commit: f04ab32093371ff425c4e196872738867d9ed528
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
 
 
-# UI のカスタマイズ {#customizing-ui}
+# ユニバーサルエディターオーサリングエクスペリエンスのカスタマイズ {#customizing-ue}
 
-コンテンツ作成者のニーズに合わせてユニバーサルエディターの UI をカスタマイズできる様々な拡張ポイントについて説明します。
+コンテンツ作成者のニーズに合わせてユニバーサルエディターのオーサリングエクスペリエンスをカスタマイズできる様々な拡張ポイントおよびその他の機能について説明します。
 
 ## 公開の無効化 {#disable-publish}
 
 特定のオーサリングワークフローでは、コンテンツを公開する前に確認する必要があります。 このような場合、どの作成者も公開オプションを使用できません。
 
-The **公開** 次のメタデータを追加することで、アプリ内でボタンを完全に抑制できます。
+The **公開** 次のメタデータを追加することで、ボタンを完全にアプリ内で抑制できます。
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish"/>
@@ -59,3 +59,40 @@ data-aue-filter="container-filter"
    }
 ]
 ```
+
+## プロパティパネルでのコンポーネントの条件付き表示と非表示 {#conditionally-hide}
+
+コンポーネントまたはコンポーネントは、作成者が一般に利用できる場合がありますが、意味のない状況が発生する場合もあります。 このような場合、プロパティパネルで `condition` 属性 [コンポーネントモデルのフィールド。](/help/implementing/universal-editor/field-types.md#fields)
+
+条件は、 [JsonLogic スキーマ。](https://jsonlogic.com/) 条件が true の場合、フィールドが表示されます。 条件が false の場合、フィールドは非表示になります。
+
+### サンプルモデル {#sample-model}
+
+```json
+ {
+    "id": "conditionally-revealed-component",
+    "fields": [
+      {
+        "component": "boolean",
+        "label": "Shall the text field be revealed?",
+        "name": "reveal",
+        "valueType": "boolean"
+      },
+      {
+        "component": "text-input",
+        "label": "Hidden text field",
+        "name": "hidden-text",
+        "valueType": "string",
+        "condition": { "===": [{"var" : "reveal"}, true] }
+      }
+    ]
+ }
+```
+
+#### 条件 False {#false}
+
+![非表示のテキストフィールド](assets/hidden.png)
+
+#### 条件 True {#true}
+
+![表示されたテキストフィールド](assets/shown.png)
