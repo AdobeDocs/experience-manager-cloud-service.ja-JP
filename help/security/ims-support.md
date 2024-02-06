@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service に対する IMS のサポー
 description: Adobe Experience Manager as a Cloud Service の Image Management System のサポート
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1917'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ AEM のお客様は、既に組織がプロビジョニングされています�
 ![IMS のオンボーディング](/help/security/assets/ims2.png)
 
 1. 指定されたシステム管理者が、Cloud Manager へのログインの招待を受け取ります。Cloud Manager にログインした後、システム管理者は AEM のプログラムと環境のプロビジョニングを選択するか、Admin Console に移動して管理タスクを実行することができます。
-1. システム管理者がドメインを要求して、それぞれのドメイン (acme.comなど ) の所有権を確認します
+1. システム管理者がドメインを要求して、それぞれのドメイン（例：acme.com）の所有権を確認します。
 1. システム管理者がユーザーディレクトリを設定します。
 1. システム管理者は、シングルサインオンを設定するために Admin Console で IDP 設定を行います。
 1. AEM 管理者が、通常どおりローカルグループと権限および特権を管理します。
@@ -98,17 +98,17 @@ Enterprise Administration と Admin Console の使用方法については、[�
 
 このリリースの主な機能は、Admin Console でユーザーのメンバーシップに合わせて新しい LDAP グループを動的にマッピングする機能と、動的なユーザーグループ作成です。
 
-新しいグループ機能の詳細については、[こちら](https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options)を参照してください。
+新しいグループ機能の詳細については、[こちら](https://adobe-apiplatform.github.io/user-sync.py/jp/user-manual/advanced_configuration.html#additional-group-options)を参照してください。
 
 **ユーザー同期に関するドキュメント**
 
-詳しくは、[UST のドキュメント](https://adobe-apiplatform.github.io/user-sync.py/en/)を参照してください。
+詳しくは、[UST のドキュメント](https://adobe-apiplatform.github.io/user-sync.py/jp/)を参照してください。
 
 ユーザー同期ツールは、[こちら](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)で説明されている手順に従って、Adobe Developer クライアント UMAPI として登録する必要があります。
 
 Adobe Developer Console のドキュメントについては、[こちら](https://developer.adobe.com/developer-console/)を参照してください。
 
-ユーザー同期ツールで使用される User Management API については、[こちら](https://adobe-apiplatform.github.io/user-sync.py/en/)を参照してください。
+ユーザー同期ツールで使用される User Management API については、[こちら](https://adobe-apiplatform.github.io/user-sync.py/jp/)を参照してください。
 
 ## Adobe Experience Manager as a Cloud Service の設定 {#aem-configuration}
 
@@ -213,7 +213,7 @@ Cloud Manager または AEM as a Cloud Service の環境にアクセスするに
 Cloud Manager の特定の機能の可用性を管理するユーザーの役割について詳しくは、役割の定義を参照してください。
 
 >[!NOTE]
->Cloud Manager には、適切な権限を持つ事前設定済みの役割が用意されています。各役割に関連付けられた、特定の権限、事前設定済みのタスク、または権限を持つ各役割について詳しくは、[役割に基づく権限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html)を参照してください。
+>Cloud Manager には、適切な権限を持つ事前設定済みの役割が用意されています。各役割に関連付けられた、特定の権限、事前設定済みのタスク、または権限を持つ各役割について詳しくは、[役割に基づく権限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=ja)を参照してください。
 
 **ユーザーの追加手順**
 

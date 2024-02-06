@@ -3,9 +3,9 @@ title: Adobe Experience Manager（AEM）as a Cloud Service のリリースノー
 description: Adobe Experience Manager（AEM）as a Cloud Service のリリースノート。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: c937269684d3d621da1bade33c0b7e261d23ee5c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '345'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

@@ -3,9 +3,9 @@ title: 相違点と新機能 - Adobe Experience Manager as a Cloud Service
 description: 相違点と新機能 - Adobe Experience Manager（AEM）as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: d4502c7558fca7ecee89b2ce9429fd1c749d8e92
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1883'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -36,13 +36,13 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->オンプレミス版と Managed Services 版について詳しくは、 [AEM 6.5 ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ja) .
+>オンプレミス版と Managed Services 版について詳しくは、[AEM 6.5 ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ja)を参照してください。
 
 ## アーキテクチャ {#architecture}
 
 >[!NOTE]
 >
->詳しくは、 [アーキテクチャ](/help/overview/architecture.md).
+>詳しくは、[アーキテクチャ](/help/overview/architecture.md)を参照してください。
 
 AEM as a Cloud Service には次の機能が追加されました。
 
@@ -87,7 +87,7 @@ AEMバージョンのアップデートは、次の 2 種類があります。
 
 >[!TIP]
 >
->詳しくは、 [AEMバージョンの更新](/help/implementing/deploying/aem-version-updates.md).
+>詳しくは、[AEM バージョンのアップデート](/help/implementing/deploying/aem-version-updates.md)を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -144,7 +144,7 @@ AEM as a Cloud Service を使用すると、次のように作業の多くの側
 
 * デプロイメント要件：
 
-   * コードのアップデート。以前のバージョンのAEM用に開発された顧客アプリケーションをレビューし、場合によっては更新する必要があります。
+   * コードのアップデート。旧バージョンの AEM 用に開発された顧客アプリケーションをレビューし、場合によっては更新する必要があります。
 
    * コンテンツの移行
 
@@ -156,7 +156,7 @@ AEM as a Cloud Service を使用すると、次のように作業の多くの側
 
 >[!NOTE]
 >
->詳しくは、以下のドキュメントから始めてください。 [開発ガイドライン](/help/implementing/developing/introduction/development-guidelines.md) および [開発 — WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+>詳しくは、まず[開発ガイドライン](/help/implementing/developing/introduction/development-guidelines.md)と [開発 - WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)を参照してください。
 
 AEM as a Cloud Service をサポートする新しいアーキテクチャには、開発者のエクスペリエンス全体に対するいくつかの重要な変更が含まれています。AEM as a Cloud Service の主要な目標の 1 つは、（AEM をオンプレミスまたは Adobe Managed Services のコンテキストで使用したことがある）経験豊富な顧客が、カスタマイズしたコードの大部分を書き直さずに、できるだけ迅速に AEM as a Cloud Service に移行できるようにすることです。ただし、若干の調整が必要になる可能性はあります。
 
@@ -182,7 +182,7 @@ OSGi バンドルとその関連設定を管理する web コンソール（以�
 
 コードとコンテンツが明確に分離されているので、開発者は、特定のプロセスを使用して、デプロイメントの一環としてコンテンツを更新できます。可変コンテンツの典型的なユースケースは次のとおりです。
 
-* 標準 *デフォルト* 顧客プロジェクトの一部となるコンテンツ（フォルダー、テンプレート、ワークフローなど）
+* 顧客プロジェクトの一部となる標準的な&#x200B;*デフォルト*&#x200B;コンテンツ（フォルダー、テンプレート、ワークフローなど）
 
 * 検索インデックスの定義
 
@@ -206,7 +206,7 @@ OSGi バンドルとその関連設定を管理する web コンソール（以�
 
 >[!NOTE]
 >
->詳しくは、まず [コンテンツの復元](/help/operations/backup.md), [インデックス作成](/help/operations/indexing.md)、および [その他のメンテナンスタスク](/help/operations/maintenance.md).
+>詳しくは、まず[コンテンツの復元](/help/operations/backup.md)、[インデックス作成](/help/operations/indexing.md)、[その他のメンテナンスタスク](/help/operations/maintenance.md)を参照してください。
 
 AEM as a Cloud Service では、サービスの中断が不要になるように、このような操作は自動化されています。
 
@@ -224,7 +224,7 @@ AEM as a Cloud Service の運用も、監視、レポート、警告用の新し
 
 >[!NOTE]
 >
->詳しくは、 [セキュリティ — IMS のサポート](/help/security/ims-support.md).
+>詳しくは、[セキュリティ - IMS サポート](/help/security/ims-support.md)を参照してください。
 
 AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用したオーサー層へのアクセスが完全に統合されていることです。
 
@@ -240,7 +240,7 @@ AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用した
 
 >[!NOTE]
 >
->詳しくは、 [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md) は出発点として適切です。
+>詳しくは、まず[基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)を参照してください。
 
 AEM Sites についても AEM Assets についても、オーサリングユーザーインターフェイス（UI）の基本原則は、これまでに AEM を使用したことがある人にとってはなじみ深いものです。
 
@@ -274,6 +274,6 @@ Assets が提供する機能には、クラウドでの次世代アセット処�
 
 >[!TIP]
 >
->AEM as a Cloud Serviceの概要を確認したら、 [オンボーディングジャーニー](/help/journey-onboarding/overview.md).
+>AEM as a Cloud Service の概要を把握したら、[オンボーディングジャーニー](/help/journey-onboarding/overview.md)を確認することで、素早くオンボーディングできます。
 >
 >すでにオンボード済み、または AEM の機能のテストに取り掛かる準備できている場合[AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) をインストールし、豊富な例を使用して AEM の強力な機能を調べてみましょう。

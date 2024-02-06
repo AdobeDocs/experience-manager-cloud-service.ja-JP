@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメン�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 0b4c820159f918cb9b3a93d9ab36dc26b1d8da47
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '381'
-ht-degree: 35%
+ht-degree: 100%
 
 ---
 
@@ -15,35 +15,35 @@ ht-degree: 35%
 
 ## リリース 14697 {#release-14697}
 
-2023年12月18日（PT）に公開された、メンテナンスリリース 14697 の継続的な改善点を以下にまとめます。問題が発生したリリース14538に代わるものです。 以前のメンテナンスリリースはリリース14227でした。
+2023年12月18日（PT）に公開された、メンテナンスリリース 14697 の継続的な改善点を以下にまとめます。問題が発生したリリース 14538 に代わるものです。以前のメンテナンスリリースは、リリース 14227 でした。
 
 2023.12.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja)を参照してください。
 
 ### 機能強化 {#enhancements-14697}
 
-* GRANITE-46723：ユーザー同期 — SAML Migration from default-sync to IDP-based sync.
-* OAK-10311：レプリケーション — BLOB 比較を最適化して、AEM内の大きなアセットバッチのレプリケーション時間を短縮します。
-* OAK-10511：レプリケーション — AEMでの大きなアセットのレプリケーション時間を短縮するために、ネットワークのラウンドトリップを削減します。
-* GRANITE-48334：パブリッシャー — RUM のコレクションスクリプトが見つかりません。
+* GRANITE-46723：ユーザー同期 - デフォルト同期から IDP ベースの同期への SAML の移行。
+* OAK-10311：レプリケーション - BLOB 比較を最適化して、AEM での大規模なバッチのアセットのレプリケーション時間を短縮します。
+* OAK-10511：レプリケーション - ネットワークのラウンドトリップを削減して、AEM での大規模なアセットのレプリケーション時間を短縮します。
+* GRANITE-48334：パブリッシャー - RUM のコレクションスクリプトがありません。
 
 ### 修正された問題 {#fixed-issues-14697}
 
-* CQ-4354867: ToggleCondition 参照は、InstanceActionServlet 内の存在しないフィールドを参照します。
-* CQ-4349948：ツール→セキュリティ→ユーザーの「ユーザー設定を編集」での「プロファイルプロパティ」文字列のローカライゼーション。
-* GRANITE-44541：ツール→セキュリティ→ユーザーの下のユーザーを編集/キーストアの秘密鍵ファイルを追加する際のエラーダイアログのローカライゼーション。
-* GRANITE-45341:Tools → Security → Users の下で、ユーザーアクションのアクティベート/アクティベート解除の成功/失敗文字列のローカライズ。
-* GRANITE-46650：エラーメッセージ「UserId/Password mismatch」のローカリゼーション。 文字列を「ツール」→「セキュリティ→ユーザー作成ダイアログ」の下に表示します。
-* GRANITE-47764:Sling Models API 1.5.0 への更新：Sling Model 内の静的変数にインジェクションすると、コンパイルエラーが発生します (SLING-11507)。
-* GRANITE-48452：ステータスコード 200 の空の clientlibs を送信しています。
-* GRANITE-48410: ResourceResolver が閉じられていません。
-* ASSETS-31297:Dynamic Media からコピーしたアセットが削除されないようにします。
-* ASSETS-30811:Blocktag Service のバインドに対する参照の更新。
-* GRANITE-46418: AEMでの Sling イベントの更新： GaugeSupport は registerWithSuffix で無限再帰を持っています (SLING-11918)。
-* GRANITE-48937：オムニサーチがaem/start.htmlページで機能しないメンテナンスリリース14538の回帰を修正しました。
+* CQ-4354867：ToggleCondition 参照が、InstanceActionServlet に存在しないフィールドを参照します。
+* CQ-4349948：ツール／セキュリティ／ユーザーでのユーザー設定を編集の「プロファイルのプロパティ」文字列のローカライゼーション。
+* GRANITE-44541：ツール／セキュリティ／ユーザーでのユーザーを編集／キーストアの秘密鍵ファイルの追加画面のエラーダイアログのローカライゼーション。
+* GRANITE-45341：ツール／セキュリティ／ユーザーでのユーザーアクションのアクティベート／アクティベート解除の成功／失敗文字列のローカライゼーション。
+* GRANITE-46650：ツール／セキュリティ／ユーザー作成ダイアログでのエラーメッセージ「ユーザー ID／パスワードの不一致」文字列のローカライゼーション。
+* GRANITE-47764：Sling モデル API 1.5.0 への更新：Sling モデル内の静的変数へのインジェクションにより、コンパイルエラーが発生します（SLING-11507）。
+* GRANITE-48452：空の clientlib をステータスコード 200 で送信しています。
+* GRANITE-48410：ResourceResolver が閉じられていません。
+* ASSETS-31297：Dynamic Media からコピーしたアセットを削除できません。
+* ASSETS-30811：連結された Blocktag サービスに対する参照の更新。
+* GRANITE-46418：AEM での Sling イベントの更新：GaugeSupport で registerWithSuffix に無限再帰があります（SLING-11918）。
+* GRANITE-48937：オムニサーチが aem/start.html ページで機能しないメンテナンスリリース 14538 からの回帰を修正します。
 
 ### 既知の問題 {#known-issues-14697}
 
-* GRANITE-49031：回帰によって生じる `@JsonIgnore` 注釈が一時的なフィールドで無視されています。
+* GRANITE-49031：一時的なフィールドで `@JsonIgnore` 注釈が無視される回帰が発生しています。
 
 ### 組み込みテクノロジー {#embedded-tech-14697}
 

@@ -3,9 +3,9 @@ title: メールサービスの OAuth2 サポート
 description: Adobe Experience Manager as a Mail Service の Oauth2 サポート
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '680'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -27,13 +27,13 @@ AEM as a Cloud Service のメールサービスの詳細については、[メ�
    ![アプリ登録プロセスを開始](assets/oauth-outlook1.png)
 
 1. 必要に応じて情報を入力し、「**登録**」をクリックします。
-1. 作成したアプリに移動し、「 」を選択します。 **API 権限**.
+1. 作成されたアプリに移動し、「**API 権限**」を選択します。
 1. **権限を追加**／**グラフ権限**／**委任権限**&#x200B;に移動します。
 1. アプリに対して以下の権限を選択し、「**権限を追加**」をクリックします。
 
    >[!NOTE]
    >
-   >権限の設定は、時間の経過と共に進化する可能性があります。 これらが期待どおりに動作しない場合は、Microsoftを使用します。
+   >権限の設定は、時間の経過と共に進化することがあります。これらが期待どおりに動作しない場合は、Microsoft にお問い合わせください。
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -140,15 +140,15 @@ AEM 側で Oauth を設定する前に、次の手順で accessToken と refresh
 
    >[!NOTE]
    >
-   >スコープは時間の経過と共に進化する可能性があります。 これらが期待どおりに動作しない場合は、Microsoftを使用します。
+   >スコープは、時間の経過と共に進化することがあります。これらが期待どおりに動作しない場合は、Microsoft にお問い合わせください。
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
    * `offline_access`
    * `email`
    * `profile`
-1. OSGI プロパティファイルの作成 `called com.day.cq.mailer.DefaultMailService.cfg.json`
-under `/apps/<my-project>/osgiconfig/config` を次の構文で置き換えます。 `smtp.host` および `smtp.port` の値は、[メールサービスのチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=ja)で説明するように、高度なネットワーク設定を反映します。
+1. 以下の構文を使用して、OSGI プロパティファイル `called com.day.cq.mailer.DefaultMailService.cfg.json`
+を `/apps/<my-project>/osgiconfig/config` の下に作成します。`smtp.host` および `smtp.port` の値は、[メールサービスのチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=ja)で説明するように、高度なネットワーク設定を反映します。
 
    ```
    {
@@ -166,7 +166,7 @@ under `/apps/<my-project>/osgiconfig/config` を次の構文で置き換えま�
    ```
 
 1. Outlook の場合、`smtp.host` 設定値は `smtp.office365.com` です
-1. 実行時に、 `refreshToken values` および `clientSecret` Cloud Manager 変数 API を使用するシークレット（説明を参照） [ここ](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) または [Cloud Manager で変数を追加できます。](/help/implementing/cloud-manager/environment-variables.md) 変数の値 `SECRET_SMTP_OAUTH_REFRESH_TOKEN`  および `SECRET_SMTP_OAUTH_CLIENT_SECRET` を定義する必要があります。
+1. 実行時に、`refreshToken values` および `clientSecret` シークレットを渡すには、[こちら](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api)で説明しているように Cloud Manager 変数 API を使用するか、[Cloud Manager を使用して変数を追加します。](/help/implementing/cloud-manager/environment-variables.md) 変数 `SECRET_SMTP_OAUTH_REFRESH_TOKEN` と `SECRET_SMTP_OAUTH_CLIENT_SECRET` の値を定義する必要があります。
 
 ### トラブルシューティング {#troubleshooting}
 

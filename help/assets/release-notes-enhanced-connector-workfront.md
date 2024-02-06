@@ -3,9 +3,9 @@ title: ' [!DNL Workfront for Experience Manager enhanced connector] のリリー
 description: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: b1c5df329e45128704ae82f49673c6a755a61a73
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1573'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -21,25 +21,25 @@ ht-degree: 86%
 
 [!DNL Workfront for Experience Manager enhanced connector] の最新バージョンには、次のバグ修正が含まれています。
 
-* The [!DNL Workfront] の設定 [!DNL CRX DE] は現在、 `project ID`読み取り専用権限を適用するとエラーが発生する問題を修正しました。 方法の詳細 [権限の設定](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders).
+* 現在、[!DNL CRX DE] の [!DNL Workfront] 設定には `project ID` が保存されていないので、読み取り専用権限を適用する際にエラーが発生します。方法について詳しくは、[権限の設定](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=ja#linked-folders)を参照してください。
 
-* 標準提供のインデックス定義にカスタムプロパティを追加する方法に関する公開ドキュメントはありません。 詳細情報： [カスタムプロパティの追加](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping).
+* カスタムプロパティを標準インデックス定義に追加する方法に関する公開ドキュメントはありません。詳しくは、[カスタムプロパティの追加](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=ja#metadata-schema-mapping)を参照してください。
 
-* 拡張コネクタで接続設定を削除すると、イベント購読や保存されているその他の設定に大きな影響を与え、古い URL を指すようになります。
+* 拡張コネクタの接続設定を削除すると、イベント購読やその他の保存された設定に大きな影響を与え、古い URL を指すようになります。
 
-* forms アドオンパッケージをインストールしても、 **[!UICONTROL ルーターを切り替え]**&#x200B;を返し、 [!DNL WFEC AMS environment Toggle] 機能。
+* Forms アドオンパッケージをインストールしても&#x200B;**[!UICONTROL ルーターの切り替え機能]**&#x200B;がインストールされないので、[!DNL WFEC AMS environment Toggle] 機能にエラーが発生します。
 
-* EWC 設定でイベントサブスクリプションを有効にすると、 `HTTP 400` 設定中にエラーが発生しました [!DNL Workfront] 初めて拡張されたコネクタです。
+* EWC 設定でイベント購読を有効にすると、[!DNL Workfront] 拡張コネクタを初めて設定する際に、API 呼び出しが繰り返し失敗し、`HTTP 400` エラーが発生します。
 
-* Workfrontでリンクされたフォルダーアセットに対するコメントを削除すると、AEM上でリンクされたフォルダーパスが見つかりません。
+* Workfront でリンクされたフォルダーアセットのコメントを削除すると、AEM でリンクされたフォルダーのパスが見つかりません。
 
-* AEMでのサイズの大きいファイルアセットのサポートが不十分な場合、4 バイトのサイズの問題が発生します。
+* AEM での大きなファイルアセットのサポートが不十分な場合、4 バイトサイズの問題が発生します。
 
-* リンクされたフォルダー内のクリティカルフローのリクエスト時間処理、ドキュメントの更新、メモの更新は行われません。
+* リンクされたフォルダー内の重要なフロー、ドキュメントの更新およびメモの更新に対するリクエスト時間の処理はありません。
 
 >[!NOTE]
 >
->AEM 6.4 は、拡張サポートの終了に達しました。詳しくは、 [技術サポート期間](https://helpx.adobe.com/jp/support/programs/eol-matrix.html). サポートされているバージョンについては、[ここ](https://experienceleague.adobe.com/docs/?lang=ja)をご覧ください。
+>AEM 6.4 は、拡張サポートの終了に達しました。詳しくは、[技術サポート期間](https://helpx.adobe.com/jp/support/programs/eol-matrix.html)を参照してください。サポートされているバージョンについては、[ここ](https://experienceleague.adobe.com/docs/?lang=ja)をご覧ください。
 
 
 >[!IMPORTANT]
@@ -50,14 +50,14 @@ ht-degree: 86%
 
 * AEM 6.4 でプロジェクトにリンクしたフォルダーを設定する際に、Experience Manager は「**[!UICONTROL sub-folders]**」フィールドと「**[!UICONTROL Create linked folder in projects with portfolio]**」フィールドの値を保存しません。設定を保存すると、「**[!UICONTROL sub-folders]**」フィールドの値が **[!UICONTROL undefined]** に、「**[!UICONTROL Create linked folder in projects with portfolio]**」フィールドの値が **[!UICONTROL Default Portfolio]** に、それぞれ自動的に更新されます。
 
-* 従来のWorkfrontエクスペリエンスを使用している場合、 **[!UICONTROL 送信先]** オプションは **[!UICONTROL その他]** 」ドロップダウンリストでは、「Experience Manager」内でターゲットの宛先を選択できません。 「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストを使用する場合、「**[!UICONTROL 送信先]**」オプションは正常に機能します。新しい Workfront エクスペリエンスの「**[!UICONTROL 詳細]**」ドロップダウンリストと「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストでは、「**[!UICONTROL 送信先]**」オプションは正常に機能します。
+* 従来の Workfront エクスペリエンスを使用している場合、**[!UICONTROL 詳細]**&#x200B;ドロップダウンリストで選択できる「**[!UICONTROL 送信先]**」オプションでは、Experience Manager 内のターゲット宛先を選択できません。「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストを使用する場合、「**[!UICONTROL 送信先]**」オプションは正常に機能します。新しい Workfront エクスペリエンスの「**[!UICONTROL 詳細]**」ドロップダウンリストと「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストでは、「**[!UICONTROL 送信先]**」オプションは正常に機能します。
 
 ## 以前のリリース {#previous-releases}
 
 ### 2023年11月リリース {#november-2023-release}
 
-* AEMフォルダーのリストを表示している間、ダイアログの読み込みに 1 分以上かかります。
-* 認証済み [!DNL Workfront] ユーザーは、常に認証失敗エラーログを受け取っています。
+* AEM フォルダーのリストを表示している間、ダイアログの読み込みに 1 分以上かかります。
+* 承認済み [!DNL Workfront] ユーザーは、常に認証失敗エラーログを受信しています。
 
 ### 2023年10月リリース {#october-2023-release}
 

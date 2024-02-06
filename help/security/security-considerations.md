@@ -5,9 +5,9 @@ hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '217'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 88%
 
 ### トラストストアの特性 {#truststore-characteristics}
 
-* トラストストアは、`/etc/truststore` の下にあり、Java キーストアファイル、キーストアパスワード、リポジトリメタデータで構成されます。含まれる証明書はデフォルトで API を通じてすべてのユーザーがアクセスできる場合でも、パスワードとキーストア自体は技術的な理由により暗号化されます
+* トラストストアは、`/etc/truststore` の下にあり、Java キーストアファイル、キーストアパスワード、リポジトリメタデータで構成されます。含まれる証明書にはデフォルトで API を通じてすべてのユーザーがアクセスできる場合でも、技術的な理由によりパスワードとキーストア自体は暗号化されます
 * 標準では、証明書は HTTPS および SAML のサポートにのみ使用され、最初にストアを手動で作成する必要があります
 * お客様は、[キーストア API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-) を通じて独自のコードでこれを使用できます。
 * トラストストアは、UI（**ツール** - **セキュリティ** - **トラストストア**）を通じて管理するか、以下に示すように *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`* にアクセスして管理できます。

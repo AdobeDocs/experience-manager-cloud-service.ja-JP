@@ -3,16 +3,16 @@ title: AEM Cloud Service の AEM Sites の主な変更点
 description: AEM Sites as a Cloud Service を使用して作成および管理する方法と、AEM Cloud Service の AEM Sites に対する重要な変更点について説明します。
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '527'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
 # AEM Sites as a Cloud Service の主な変更点 {#notable-changes}
 
-AEM Sites as a Cloud Service は、クラウドネイティブな AEM as a Cloud Service プラットフォームの一部として、エクスペリエンス管理機能を提供します。AEM Sites as a Cloud Serviceは、クラウドネイティブな拡張性、稼動時間、常に最新状態といったAEMas a Cloud Serviceの主なメリットに加えて、Sites 固有の変更や追加も提供します。
+AEM Sites as a Cloud Service は、クラウドネイティブな AEM as a Cloud Service プラットフォームの一部として、エクスペリエンス管理機能を提供します。AEM Sites as a Cloud Service には、AEM as a Cloud Service の主なメリット（クラウドネイティブの拡張性、稼動時間、最新状態の維持など）に加え、Sites 固有の変更や追加もいくつか含まれています。
 
 >[!NOTE]
 >このドキュメントでは、AEM Sites の主な変更点について重点的に説明します。AEM as a Cloud Service およびその他のモジュールに関する一般的な変更点については、以下を参照してください。
@@ -41,7 +41,7 @@ AEM Cloud Service では、従来 UI をブロックしていた操作は、バ�
 
 >[!NOTE]
 >
->この新機能を使用するためにシステムのユーザーが必要とする変更はありません。 ここでは、以前のオンプレミスバージョンの AEM から動作が変更された点としてのみ記載しておきます。
+>この新機能を利用するためにシステムのユーザーに必要な変更はありません。ここでは、以前のオンプレミスバージョンの AEM から動作が変更された点としてのみ記載しておきます。
 
 ## 新しい参照サイトおよびチュートリアル {#new-reference-site-and-tutorial}
 
