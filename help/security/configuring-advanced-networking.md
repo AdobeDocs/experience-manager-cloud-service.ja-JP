@@ -3,9 +3,9 @@ title: AEM as a Cloud Service の高度なネットワーク機能の設定
 description: AEM as a Cloud Service の高度なネットワーク機能（VPN やフレキシブルエグレス IP アドレスまたは専用エグレス IP アドレスなど）を設定する方法を説明します
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: dfeeaca8341abec5d4fd518957baf6936a21aea3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3540'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -348,7 +348,7 @@ IPSec 技術を搭載したほとんどの VPN デバイスがサポートされ
 
 * サポートは 1 つの VPN 接続に制限されています。
 * Splunk 転送機能は VPN 接続では使用できません。
-* プライベートホスト名を解決するには、DNS リゾルバを Gateway Address スペースにリストする必要があります。
+* プライベートホスト名を解決するには、DNS リゾルバーをゲートウェイアドレス空間にリストする必要があります。
 
 ### 作成 {#vpn-creation}
 

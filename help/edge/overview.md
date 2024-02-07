@@ -4,9 +4,9 @@ description: AEM as a Cloud Service を使用して、Edge 配信サービスで
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 source-git-commit: 7d28a3a8304d79ecc3143bdc9373134d312af49d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '868'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Edge 配信サービスでは GitHub を利用しているので、ユーザー�
 
 Edge 配信サービスは Adobe Experience Manager の構成要素なので、Edge 配信サービスサイトと AEM Sites は同じドメイン上に共存できます。これは、大規模な web サイトの場合に一般的なユースケースです。さらに、Edge 配信サービスのコンテンツは AEM Sites ページで簡単に使用でき、その逆もまた可能です。
 
-詳しくは、 [Edge Delivery Servicesを使用したAEMオーサリングのための Developer Getting Guide](/help/edge/edge-dev-getting-started.md) AEMとEdge Delivery Servicesを使用して作成する独自のプロジェクトを開始する方法を説明します。
+AEM と Edge 配信サービスを使用してオーサリングする独自のプロジェクトを開始する方法については、[Edge 配信サービスを使用した AEM オーサリングの開発者向け入門ガイド](/help/edge/edge-dev-getting-started.md)を参照してください。
 
 また、Edge 配信サービスを Adobe Target、Analytics および Launch と共に使用することもできます。
 

@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新の�
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 77d38f03f18eb6b0fdc2f2eec5b2dc4b608b8057
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '781'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 96%
 
 ![AEM Sites での Extension Manager](/help/assets/sites/extension-manager/homepage.png)
 
-AEM SitesのExtension Managerを使用すると、開発者や実務担当者は、デベロッパーがアクセス、管理およびカスタマイズできます [UI 拡張機能](https://developer.adobe.com/uix/docs/) で作成済み [AdobeApp Builder](https://developer.adobe.com/app-builder/) AEM Sitesの機能を強化する。
+AEM Sites での Extension Manager を使用すると、開発者や実務担当者は、AEM Sites の機能を強化するために [Adobe App Builder](https://developer.adobe.com/app-builder/) で作成された [UI 拡張機能](https://developer.adobe.com/uix/docs/)にアクセスしたり、このような拡張機能を管理およびカスタマイズしたりできます。
 Extension Manager で以下を実行できます。
 
 * インスタンス単位で拡張機能を有効または無効にする
