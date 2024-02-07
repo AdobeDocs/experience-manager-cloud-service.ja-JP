@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: b1c5df329e45128704ae82f49673c6a755a61a73
-workflow-type: ht
-source-wordcount: '1573'
-ht-degree: 100%
+source-git-commit: 439ae08bb606d6d335fa189e99c1b483f636683e
+workflow-type: tm+mt
+source-wordcount: '1624'
+ht-degree: 97%
 
 ---
 
@@ -15,11 +15,34 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!DNL Workfront for Experience Manager enhanced connector] の最新バージョン 1.9.16 のリリース日は 2024年1月19日（PT）です。
+[!DNL Workfront for Experience Manager enhanced connector] の最新バージョン 1.9.17 のリリース日は 2024年2月7日（PT）です。
 
 ## リリースのハイライト {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] の最新バージョンには、次のバグ修正が含まれています。
+
+* 切り替え機能を有効にして、AEM Cloud のお客様がコネクタを設定および設定できるようにします。
+
+* を閉じる `resourceResolver` 基になるセッションを明示的に閉じないと、AEMインスタンスでセッションリークが発生します。 Resource Resolver を自動閉じると、セッションが暗黙的に閉じられないので、セッションを明示的に閉じることが重要です。
+
+>[!NOTE]
+>
+>AEM 6.4 は、拡張サポートの終了に達しました。詳しくは、[技術サポート期間](https://helpx.adobe.com/jp/support/programs/eol-matrix.html)を参照してください。サポートされているバージョンについては、[ここ](https://experienceleague.adobe.com/docs/?lang=ja)をご覧ください。
+
+
+>[!IMPORTANT]
+>
+>アドビでは [!DNL Workfront for Experience Manager enhanced connector] の[最新バージョン 1.9.17 へのアップグレード](/help/assets/workfront-connector-install.md)をお勧めします。
+
+## 既知の問題 {#known-issues}
+
+* AEM 6.4 でプロジェクトにリンクしたフォルダーを設定する際に、Experience Manager は「**[!UICONTROL sub-folders]**」フィールドと「**[!UICONTROL Create linked folder in projects with portfolio]**」フィールドの値を保存しません。設定を保存すると、「**[!UICONTROL sub-folders]**」フィールドの値が **[!UICONTROL undefined]** に、「**[!UICONTROL Create linked folder in projects with portfolio]**」フィールドの値が **[!UICONTROL Default Portfolio]** に、それぞれ自動的に更新されます。
+
+* 従来の Workfront エクスペリエンスを使用している場合、**[!UICONTROL 詳細]**&#x200B;ドロップダウンリストで選択できる「**[!UICONTROL 送信先]**」オプションでは、Experience Manager 内のターゲット宛先を選択できません。「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストを使用する場合、「**[!UICONTROL 送信先]**」オプションは正常に機能します。新しい Workfront エクスペリエンスの「**[!UICONTROL 詳細]**」ドロップダウンリストと「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストでは、「**[!UICONTROL 送信先]**」オプションは正常に機能します。
+
+## 以前のリリース {#previous-releases}
+
+### 2024年1月リリース {#january-2023-release}
 
 * 現在、[!DNL CRX DE] の [!DNL Workfront] 設定には `project ID` が保存されていないので、読み取り専用権限を適用する際にエラーが発生します。方法について詳しくは、[権限の設定](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=ja#linked-folders)を参照してください。
 
@@ -36,23 +59,6 @@ ht-degree: 100%
 * AEM での大きなファイルアセットのサポートが不十分な場合、4 バイトサイズの問題が発生します。
 
 * リンクされたフォルダー内の重要なフロー、ドキュメントの更新およびメモの更新に対するリクエスト時間の処理はありません。
-
->[!NOTE]
->
->AEM 6.4 は、拡張サポートの終了に達しました。詳しくは、[技術サポート期間](https://helpx.adobe.com/jp/support/programs/eol-matrix.html)を参照してください。サポートされているバージョンについては、[ここ](https://experienceleague.adobe.com/docs/?lang=ja)をご覧ください。
-
-
->[!IMPORTANT]
->
->アドビでは [!DNL Workfront for Experience Manager enhanced connector] の[最新バージョン 1.9.16 へのアップグレード](/help/assets/workfront-connector-install.md)をお勧めします。
-
-## 既知の問題 {#known-issues}
-
-* AEM 6.4 でプロジェクトにリンクしたフォルダーを設定する際に、Experience Manager は「**[!UICONTROL sub-folders]**」フィールドと「**[!UICONTROL Create linked folder in projects with portfolio]**」フィールドの値を保存しません。設定を保存すると、「**[!UICONTROL sub-folders]**」フィールドの値が **[!UICONTROL undefined]** に、「**[!UICONTROL Create linked folder in projects with portfolio]**」フィールドの値が **[!UICONTROL Default Portfolio]** に、それぞれ自動的に更新されます。
-
-* 従来の Workfront エクスペリエンスを使用している場合、**[!UICONTROL 詳細]**&#x200B;ドロップダウンリストで選択できる「**[!UICONTROL 送信先]**」オプションでは、Experience Manager 内のターゲット宛先を選択できません。「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストを使用する場合、「**[!UICONTROL 送信先]**」オプションは正常に機能します。新しい Workfront エクスペリエンスの「**[!UICONTROL 詳細]**」ドロップダウンリストと「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストでは、「**[!UICONTROL 送信先]**」オプションは正常に機能します。
-
-## 以前のリリース {#previous-releases}
 
 ### 2023年11月リリース {#november-2023-release}
 
