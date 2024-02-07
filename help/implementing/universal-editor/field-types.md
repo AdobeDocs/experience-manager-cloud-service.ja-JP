@@ -2,9 +2,9 @@
 title: モデル定義、フィールド、およびコンポーネントタイプ
 description: プロパティパネルで編集できるフィールドとコンポーネントタイプの例について説明します。 モデル定義を作成し、コンポーネントにリンクすることで、独自のアプリを実装する方法を理解します。
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: c721e2f5f14e9d1c069e1dd0a00609980db6bd9d
+source-git-commit: 550d26cde3d6b7be419bc9df70db8894851361c6
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1004'
 ht-degree: 11%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 11%
 | `required` | `boolean` | 必須フィールドです | いいえ |
 | `readOnly` | `boolean` | フィールドは読み取り専用です | いいえ |
 | `hidden` | `boolean` | デフォルトで非表示になっているフィールドですか？ | いいえ |
-| `condition` | `RulesLogic` | フィールドの表示/非表示を切り替えるルール | いいえ |
+| `condition` | `RulesLogic` | 次に基づいてフィールドの表示/非表示を切り替えるルール [条件](/help/implementing/universal-editor/customizing.md#conditionally-hide) | いいえ |
 | `multi` | `boolean` | フィールドが複数フィールドである | いいえ |
 | `validation` | `ValidationType` | フィールドの検証ルールまたはルール | いいえ |
 | `raw` | `unknown` | コンポーネントで使用できる生データ | いいえ |
