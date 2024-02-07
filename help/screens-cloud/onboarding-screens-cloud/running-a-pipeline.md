@@ -3,9 +3,9 @@ title: パイプラインの実行
 description: ここでは、Cloud Manager で Screens as Cloud Service プロジェクトのパイプラインを実行する方法について説明します。
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '271'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 99%
 ここでは、パイプラインを実行し、Cloud Manager でプログラムのコードをデプロイする方法について説明します。
 
 >[!NOTE]
->Cloud Manager でプログラムのパイプラインを実行する方法については、[CI-CD パイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html)および[コードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=ja)を参照してください。
+>Cloud Manager でプログラムのパイプラインを実行する方法については、[CI-CD パイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=ja)および[コードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=ja)を参照してください。
 
 ## 目的 {#objective}
 
@@ -35,7 +35,7 @@ ht-degree: 99%
 1. **パイプラインを設定**&#x200B;ウィザードのオプションを選択します。「**保存**」をクリックします。
 
    >[!NOTE]
-   >パイプラインを設定ウィザードのオプションについて詳しくは、[Cloud Manager からのパイプライン設定の指定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html)を参照してください。
+   >パイプラインを設定ウィザードのオプションについて詳しくは、[Cloud Manager からのパイプライン設定の指定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=ja)を参照してください。
 
    ![画像](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 

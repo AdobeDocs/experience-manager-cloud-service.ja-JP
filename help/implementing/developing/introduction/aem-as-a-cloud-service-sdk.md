@@ -3,9 +3,9 @@ title: AEM as a Cloud Service の SDK
 description: AEM as a Cloud Service ソフトウェア開発キットの概要
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1213'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ AEM as a Cloud Service SDK は、次のアーティファクトで構成され�
 
 ## SDK を使用する場合のビルド {#building-for-the-sdk}
 
-AEM as a Cloud Service SDK は、カスタムコードのビルドとデプロイに使用されます。詳しくは、 [AEM Project Archetype ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja). 実行する手順の概要は次のとおりです。
+AEM as a Cloud Service SDK は、カスタムコードのビルドとデプロイに使用されます。[AEM プロジェクトアーキタイプドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja)を参照してください。実行する手順の概要は次のとおりです。
 
 * **コードのコンパイル**：ソースコードがコンパイルされ、その結果としてコンテンツパッケージが生成されます。
 * **アーティファクトのビルド**：アーティファクトがビルドされます。
@@ -36,7 +36,7 @@ AEM as a Cloud Service SDK は、カスタムコードのビルドとデプロ�
 
 >[!NOTE]
 >
->AEMas a Cloud ServiceSDK は、 [Cloud Manager のビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). AEMのas a Cloud Serviceのお客様は、次の URL からOracleJDK をダウンロードできます。 [ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html) また、Adobe Experience Managerプロジェクトで使用する際のAdobeの JavaOracleのライセンスおよびサポート条件が原因で、2026 年 9 月まで Java 11 拡張サポートを受けています。
+>AEM as a Cloud Service SDK は、[Cloud Manager のビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)によりサポートされている Java の配布とバージョンで構築する必要があります。AEM as a Cloud Service のお客様は、[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)から Oracle JDK をダウンロードできます。また、Adobe Experience Manager プロジェクトで使用する際の Oracle Java テクノロジーに対して、アドビのライセンスとサポート条件により 2026年9月まで Java 11 の延長サポートを受けられます。
 
 ## AEM as a Cloud Service の SDK へのアクセス {#accessing-the-aem-as-a-cloud-service-sdk}
 
@@ -69,7 +69,7 @@ AEM as a Cloud Service SDK は、カスタムコードのビルドとデプロ�
 
 ローカル環境を更新するお勧めの手順を以下に示します。
 
-1. 役に立つコンテンツがソース管理下のプロジェクトにコミットされているか、可変コンテンツパッケージ内で後で読み込めるように使用できることを確認します。
+1. 有用なコンテンツがソース管理下のプロジェクトにコミットされているか、可変コンテンツパッケージ内にあり後の読み込みに使用できることを確認します。
 1. ローカル開発のテストコンテンツは、Cloud Manager パイプラインのビルドの一環としてデプロイされないように、別個に保存する必要があります。理由は、これはローカル開発にのみ使用されるためです。
 1. 現在実行中のクイックスタートを停止します。
 1. `crx-quickstart` フォルダーを安全に保管するために別のフォルダーに移動します。
@@ -78,14 +78,14 @@ AEM as a Cloud Service SDK は、カスタムコードのビルドとデプロ�
 1. 新しいフォルダーを作成し、その中に新しいクイックスタート JAR を格納します。
 1. 目的の実行モードで新しいクイックスタートを起動します（ファイル名を変更するか、`-r` を使用して実行モードを渡します）。
    * 古いクイックスタートの残存物がフォルダーにないことを確認します。
-1. AEMアプリケーションを構築します。
+1. AEM アプリケーションをビルドします。
 1. パッケージマネージャーを使用して AEM アプリケーションをローカル AEM にデプロイします。
 1. ローカル環境でのテストに必要な可変コンテンツパッケージがあれば、パッケージマネージャーを使用してインストールします。
 1. 必要に応じて、開発を続け変更をデプロイします。
 
 新しい AEM クイックスタートバージョンごとにインストールが必要なコンテンツがある場合は、それをコンテンツパッケージに含めると共にプロジェクトのソース管理下に置きます。その後、毎回そのコンテンツをインストールします。
 
-SDK を頻繁に（例えば、隔週など）更新し、完全なローカル状態を毎日破棄して、アプリケーション内のステートフルデータに誤って依存しないようにすることをお勧めします。
+アプリケーション内のステートフルデータに誤って依存しないように、SDK を頻繁に（例えば、隔週など）更新し、完全なローカル状態を毎日破棄することをお勧めします。
 
 （[AEM のクラウドサービスまたは SMTP メールサービスの資格情報を設定するか、アプリケーションで CryptoSupport API を使用することで](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html)）CryptoSupport を使用する場合、暗号化されたプロパティは鍵によって暗号化されます。この鍵は、AEM 環境の初回起動時に自動生成されます。クラウド設定では環境固有の暗号鍵の自動的な再利用に対応できますが、ローカル開発環境に暗号鍵を組み込む必要があります。
 

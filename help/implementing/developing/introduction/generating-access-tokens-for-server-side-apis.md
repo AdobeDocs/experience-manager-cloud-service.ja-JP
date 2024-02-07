@@ -3,9 +3,9 @@ title: サーバーサイド API 用のアクセストークンの生成
 description: セキュアな JWT トークンを生成してサードパーティサーバーおよび AEM as a Cloud Service の間の通信を容易にする方法について説明します。
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2089'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -110,12 +110,12 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 1. Adobe Admin Console（[https://adminconsole.adobe.com/](https://adminconsole.adobe.com/)）に移動します。
 1. 左側の&#x200B;**製品とサービス**&#x200B;列の下にある&#x200B;**管理**&#x200B;リンクをクリックします。
-1. 選択 **AEMas a Cloud Service**.
+1. **AEM as a Cloud Service** を選択します。
 1. 「**新しいプロファイル**」ボタンを押します。
 
    ![新しいプロファイル](/help/implementing/developing/introduction/assets/s2s-newproductprofile.png)
 
-1. プロファイルに名前を付け、を押します。 **保存**.
+1. プロファイルに名前を付け、「**保存**」を押します。
 
    ![プロファイルを保存](/help/implementing/developing/introduction/assets/s2s-saveprofile.png)
 

@@ -6,9 +6,9 @@ feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1956'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -144,7 +144,7 @@ ht-degree: 99%
 
    * スピンセットエディターページの左上隅にある「**[!UICONTROL アセットを追加]**」を選択します。
 
-   * スピンセットエディターページの中央付近にある「 」を選択します。 **[!UICONTROL 選択してアセットセレクターを開きます。]**.
+   * スピンセットエディターページの中央付近にある「**[!UICONTROL 選択してアセットセレクターを開く]**」を選択します。
 
    スピンセットに含めるアセットを選択しします。選択済みのアセットにはチェックマークアイコンが付いています。作業が完了したら、ページの右上隅付近にある「**[!UICONTROL 選択]**」を選択します。
 

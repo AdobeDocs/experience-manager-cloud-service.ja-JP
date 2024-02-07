@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2414'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ AEM で標準として用意されている同期アクションの一覧を次�
 
 対応する同期アクションをサポートする複数の OSGi サービスを設定して、特定のノードタイプやプロパティに影響を与えないようにすることができます。例えば、AEM の内部機能に関連する多くのプロパティとサブノードは、ライブコピーに含めるべきではありません。コピーする必要があるのは、ページのユーザーに関連するコンテンツだけです。
 
-AEMを操作する場合、このようなサービスの設定を管理する方法はいくつかあります。 詳しくは、 [OSGi の設定](/help/implementing/deploying/configuring-osgi.md) を参照してください。
+AEM と連携する場合は、いくつかの方法でこのようなサービスの設定を管理できます。詳細と推奨プラクティスについては、[OSGi の設定](/help/implementing/deploying/configuring-osgi.md)を参照してください。
 
 次の表に、除外するノードを指定できる同期アクションを示します。この表には、Web コンソールを使用して設定する場合のサービスの名前とリポジトリーノードを使用して設定する場合の PID が示されています。
 
@@ -134,7 +134,7 @@ AEMを操作する場合、このようなサービスの設定を管理する�
 
 参照の更新に関連する、対応する同期アクションをサポートする複数の OSGi サービスを設定できます。
 
-AEMを操作する場合、このようなサービスの設定を管理する方法はいくつかあります。 詳しくは、 [OSGi の設定](/help/implementing/deploying/configuring-osgi.md) を参照してください。
+AEM と連携する場合は、いくつかの方法でこのようなサービスの設定を管理できます。詳細と推奨プラクティスについては、[OSGi の設定](/help/implementing/deploying/configuring-osgi.md)を参照してください。
 
 次の表は、参照の更新を指定できる同期アクションを示します。この表には、Web コンソールを使用して設定する場合のサービスの名前とリポジトリーノードを使用して設定する場合の PID が示されています。
 

@@ -1,35 +1,35 @@
 ---
 title: コンテンツフラグメントの分析
-description: コンテンツフラグメントの構造を理解します。 これにより、ヘッドレス配信とページオーサリングの両方に関連する情報が提供されます。
+description: コンテンツフラグメントの構造を理解します。ヘッドレス配信とページオーサリングの両方に関連する情報について説明します。
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
 source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '128'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # コンテンツフラグメント構造の分析 {#analyzing-content-fragments-structure}
 
-コンテンツフラグメントは [GraphQLを使用したヘッドレス配信](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md). これは、多層構造を持つことができることを意味します。
+コンテンツフラグメントは、[GraphQL を使用したヘッドレス配信](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)用に設計されています。つまり、多層構造にすることができます。
 
-Experience Manager(AEM) には、フラグメントの構造を表示および分析する方法がいくつか用意されています。
+Experience Manager（AEM）には、フラグメントの構造を表示および分析する方法がいくつか用意されています。
 
 ## 参照 {#references}
 
-複数レイヤー構造は、「参照」(References) を使用して構築されます。
+多層構造は、参照を使用して作成します。
 
 * [参照のデータタイプはコンテンツフラグメントモデルで定義されます](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#using-references-to-form-nested-content)
-* オーサリング時に、次の操作を実行できます。
-   * [これらの参照を管理](/help/sites-cloud/administering/content-fragments/authoring.md##manage-references)
-   * [フラグメントの親参照を検索](/help/sites-cloud/administering/content-fragments/managing.md#parent-references-fragment)
+* オーサリング時には、次の操作を実行できます。
+   * [これらの参照の管理](/help/sites-cloud/administering/content-fragments/authoring.md##manage-references)
+   * [フラグメントの親参照の検索](/help/sites-cloud/administering/content-fragments/managing.md#parent-references-fragment)
 
 ## 構造ツリー {#structure-tree}
 
-を開きます。 **構造ツリー** 」タブをクリックして、コンテンツフラグメントの階層構造とその参照を表示します。 リンクアイコンを使用して参照を開きます。
+エディターのツールバーから「**構造ツリー**」タブを開いて、コンテンツフラグメントの階層構造とその参照を表示します。リンクアイコンを使用して参照を開きます。
 
-例：
+次に例を示します。
 
-![コンテンツフラグメントエディター — 構造ツリー](assets/cf-authoring-structure-tree.png)
+![コンテンツフラグメントエディター - 構造ツリー](assets/cf-authoring-structure-tree.png)

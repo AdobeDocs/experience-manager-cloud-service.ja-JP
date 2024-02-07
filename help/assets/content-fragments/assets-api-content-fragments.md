@@ -1,22 +1,22 @@
 ---
-title: Assets HTTP API でのAdobe Experience Manager as a Cloud Serviceコンテンツフラグメントのサポート
+title: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポート
 description: AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API でのコンテンツフラグメントのサポートについて学びます。
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 source-git-commit: 47666e87b1cb87577291304336e0219481b7b4e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1749'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# AEM Assets HTTP API でのコンテンツフラグメントのサポート {#content-fragments-support-in-aem-assets-http-api}
+# AEM Assets HTTP API での コンテンツフラグメントのサポート {#content-fragments-support-in-aem-assets-http-api}
 
 ## 概要 {#overview}
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API でのコンテンツフラグメントのサポートについて学びます。
@@ -32,7 +32,7 @@ AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API で
 
 >[!NOTE]
 >
->Experience ManagerAPI の最新情報については、 [Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>Experience Manager API の最新情報については、[Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/) も参照してください。
 
 [Assets REST API](/help/assets/mac-api-assets.md) を使用すると、Adobe Experience Manager as a Cloud Service の開発者は、HTTP API 経由で CRUD 操作（作成、読み取り、更新、削除）を介して、（AEM に保存された）コンテンツに直接アクセスできます。
 
@@ -358,4 +358,4 @@ Assets REST API は、フォルダーのプロパティへのアクセスを公�
 詳しくは、次を参照してください。
 
 * [Assets HTTP API ドキュメント](/help/assets/mac-api-assets.md)
-* [AEM Gem セッション：OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html)
+* [AEM Gem セッション：OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html?lang=ja)

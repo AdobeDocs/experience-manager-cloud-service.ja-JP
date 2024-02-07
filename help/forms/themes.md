@@ -4,9 +4,9 @@ description: アダプティブフォームテーマを使用して、アダプ�
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5558'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 99%
 
 アダプティブフォーム<!-- or an interactive communication-->のスタイル設定にテーマを作成して適用できます。テーマには、コンポーネントとパネルのスタイルを設定するための詳細情報が含まれています。スタイルには、背景カラー、ステートカラー、透明度、配置、サイズなどのプロパティが含まれます。テーマを適用すると、指定したスタイルが対応するコンポーネントに反映されます。テーマは、アダプティブフォーム<!-- or interactive communication -->を参照せずに、独立して管理されます。
 
-[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)ポータルから [!DNL AEM Forms] リファレンスコンテンツパッケージをダウンロードしてインストールし、参照テーマとテンプレートを環境に読み込むことができます。
+[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)ポータルから [!DNL AEM Forms] リファレンスコンテンツパッケージをダウンロードしてインストールし、参照テーマとテンプレートを環境に読み込むことができます。
 
 ## テーマの作成、ダウンロード、アップロード {#creating-downloading-or-uploading-a-theme}
 
@@ -360,7 +360,7 @@ Cloud Service インスタンスで作成されたテーマ：
 * **[!UICONTROL 数値ボックスウィジェット]**：サイドバーで外観をカスタマイズするコンポーネントを選択できます。
 * **[!UICONTROL フィールドウィジェット]**：スタイル設定の汎用コンポーネントを選択できます。この例では、スタイル設定にすべてのテキスト入力コンポーネント（テキストボックス／数値ボックス／数値ステッパー／日付入力）が選択されています。
 
-* ![field-level](assets/select_parent_icon.svg)：親コンポーネントを選択してスタイル設定できます。数値ボックスを選択してこのアイコンを選択すると、フィールドコンポーネントが選択されます。 フィールドコンポーネントを選択してこのアイコンを選択すると、パネルが選択されます。 このアイコンをタップし続けると、最終的にスタイル設定用のレイアウトが選択されます。
+* ![field-level](assets/select_parent_icon.svg)：親コンポーネントを選択してスタイル設定できます。数値ボックスを選択してこのアイコンを選択すると、フィールドコンポーネントが選択されます。フィールドコンポーネントを選択してこのアイコンをクリックすると、パネルが選択されます。このアイコンをタップし続けると、最終的にスタイル設定用のレイアウトが選択されます。
 
 >[!NOTE]
 >
@@ -387,7 +387,7 @@ Cloud Service インスタンスで作成されたテーマ：
 <table>
  <tbody>
   <tr>
-   <td><strong>プロパティ</strong></td>
+   <td><strong>Property</strong></td>
    <td><strong>使用方法</strong></td>
   </tr>
   <tr>
@@ -582,7 +582,7 @@ themeOverride パラメーターを使用して、実行時にテーマを適用
 
 1. オーサーインスタンスで、**[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL テーマ]**&#x200B;に移動します。
 1. テーマライブラリフォルダーを開きます。
-1. Theme Library フォルダーで、対応する標準のテーマの上にマウスポインターを置いて、「 」を選択します。 **[!UICONTROL コピー]**.
+1. テーマライブラリフォルダーで、対応するすぐに使用可能なテーマにポインタを合わせ、「**[!UICONTROL コピー]**」を選択します。
 1. コピーしたテーマをテーマライブラリフォルダーの外部に貼り付けます。
 1. コピーしたテーマをカスタマイズします。
 

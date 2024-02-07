@@ -6,9 +6,9 @@ hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1391'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ Sites コンソールでは、コンテンツ内を移動できるほか、構�
 
    ![編集するページの選択](assets/sites-editor-select-page.png)
 
-1. を選択します。 **編集** 」オプションを使用します。
+1. ツールバーの&#x200B;**編集**&#x200B;オプションを選択します。
 1. サイトエディターが開き、選択したページが新しいブラウザータブに編集用に読み込まれます。
 1. コンテンツにマウスポインターを置くかコンテンツをタップすると、個々のコンポーネントのセレクターが表示されます。コンポーネントは、ドラッグ＆ドロップ可能なページを構成する構築ブロックです。
 

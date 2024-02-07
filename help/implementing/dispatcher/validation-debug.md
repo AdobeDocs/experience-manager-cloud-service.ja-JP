@@ -4,7 +4,7 @@ description: ローカル検証、デバッグ、柔軟なモードのファイ�
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2971'
 ht-degree: 100%
 
@@ -441,7 +441,7 @@ Cloud manager validator 2.0.xx
 >[!NOTE]
 >
 >Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。
->アドビでは、Windows と macOS の両方で、Docker Desktop を使用することをお勧めします。
+アドビでは、Windows と macOS の両方で、Docker Desktop を使用することをお勧めします。
 
 このフェーズは、`bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080` を使用して独立に実行することもできます。
 

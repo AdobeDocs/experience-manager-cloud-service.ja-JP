@@ -1,11 +1,11 @@
 ---
 title: 適切な人材、適切な役割
-description: プロジェクトに適した担当者を選択し、適切な役割に割り当てる方法を説明します。
+description: プロジェクトに適切な人材を選択し、適切な役割を割り当てる方法について説明します。
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '832'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ Adobe Experience Manager Assets の導入を成功させるために必要な人
 
 <br>
 
-![AEM Assetsチームでの大きな役割と関与レベルを示す横棒グラフ。](/help/overview/assets/team_involvement2.png)
+![AEM Assets チームでの架空の役割と関与のレベルを示す横棒グラフ。](/help/overview/assets/team_involvement2.png)
 
 >[!TIP]
 >

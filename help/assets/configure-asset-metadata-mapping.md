@@ -3,9 +3,9 @@ title: Workfront と Experience Manager Assets 間のアセットメタデータ
 description: Adobe Workfront と Experience Manager as a Cloud Service のアプリケーション間で、アセットメタデータのフィールドをマッピングします。 メタデータフィールドをマッピングした結果、アセットを Workfront から Experience Manager Assets に送信すると、マッピングされたアセットメタデータを Experience Manager Assets で表示できます。
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1005'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -89,7 +89,7 @@ Experience Manager Assets as a Cloud Service で、新しいメタデータフ�
    1. `Project Name` を&#x200B;**[!UICONTROL フィールドラベル]**&#x200B;フィールドに入力します。
 
    1. `./jcr:content/metadata/wm:projectName` を&#x200B;**[!UICONTROL プロパティにマッピング]**フィールドに入力します。ガイドラインとして、次のテンプレートを使用して Experience Manager Assets のフィールドマッピングを定義します。
-      `./jcr:content/metadata/<mapping defined for the field in workfront>`。
+      `./jcr:content/metadata/<mapping defined for the field in workfront>`
 
       Workfront でマッピングを設定する際に、`wm:projectName` Experience Manager Assets フィールドをプロジェクト／名前 Workfront フィールドにマッピングしました。
 
@@ -123,7 +123,7 @@ Experience Manager as a Cloud Service アプリケーションでメタデータ
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL Assets]**／**[!UICONTROL メタデータスキーマ]**&#x200B;に移動します。
 
-1. 使用可能なリストからメタデータスキーマを選択し、「 **[!UICONTROL フォルダーに適用]**.
+1. 使用可能なリストからメタデータスキーマを選択し、「**[!UICONTROL フォルダーに適用]**」をクリックします。
 
 1. [Adobe Workfront アプリケーションから画像が送信される](#send-image-workfront-assets)宛先フォルダーを選択し、「**[!UICONTROL 適用]**」をクリックします。
 

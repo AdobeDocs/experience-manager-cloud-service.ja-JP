@@ -4,9 +4,9 @@ description: アドビのベストプラクティスガイドラインに基づ�
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3088'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -268,7 +268,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
    * インデックス定義（および関連するクエリ）での index タグと `selectionPolicy = tag` を使用して、インデックスが意図されたクエリに対してのみ使用されるようにします。
    * `queryPaths` および `includedPaths` の両方が指定されるのを確認します（通常、同じ値を持ちます）。
    * `excludedPaths` を使用して、役に立つ結果を含まないパスを除外します。
-   * 用途 `analyzed` プロパティは、必要な場合にのみ使用します。例えば、そのプロパティに対してフルテキストクエリ制限を使用する必要がある場合などです。
+   * `analyzed` プロパティは、必要な場合にのみ使用します。例えば、そのプロパティに対してフルテキストクエリ制限を使用する必要がある場合などです。
    * 常に `async = [ async, nrt ] `、`compatVersion = 2` および `evaluatePathRestrictions = true` を指定します。
    * ノードスコープのフルテキストインデックスが必要な場合にのみ `nodeScopeIndex = true` を指定します。
 

@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.6.0 リリー�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.6.0 リリースのリリースノート。'
 exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1357'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -39,9 +39,9 @@ ht-degree: 97%
 
 * コンテンツフラグメントとその参照を、[コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)を使用して [AEM プレビューサービス](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) にパブリッシュできるようになりました。これにより、ユーザーは実稼動環境に移行する前に、切り離されたプレビューアプリケーションで最終的なエクスペリエンスをプレビューできます。
 
-![コンテンツフラグメントコンソールでプレビュー](/help/assets/content-fragments-console-preview.png)
+![コンテンツフラグメントコンソールでのプレビュー](/help/assets/content-fragments-console-preview.png)
 
-* AEM GraphQL を使用したヘッドレスシナリオで、web 配信用に画像を動的に最適化できるようになりました。GraphQL クエリで[クエリ変数](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html#query-variables)を定義できるようになり、切り離されたクライアントアプリケーションが、適切に最適化された画像を AEM からリクエストできるようになりました。
+* AEM GraphQL を使用したヘッドレスシナリオで、web 配信用に画像を動的に最適化できるようになりました。GraphQL クエリで[クエリ変数](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=ja#query-variables)を定義できるようになり、切り離されたクライアントアプリケーションが、適切に最適化された画像を AEM からリクエストできるようになりました。
 * [コンテンツフラグメントのバリエーション](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=ja)のタグを、AEM GraphQL コンテンツ配信 API を使用して JSON に出力できるようになりました。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -58,9 +58,9 @@ ht-degree: 97%
 
 Experience Manager Assets では、検索結果のユーザーインターフェイスからさらに多くの作業を行えるようになり、次の操作が可能になりました。
 
-* [現在のリポジトリの場所内で検索を実行します](/help/assets/search-assets.md) デフォルトでは、リポジトリ全体でキーワードを検索する代わりに使用されます。
+* デフォルトで、リポジトリ全体でキーワードを検索するのではなく、[現在のリポジトリの場所内で検索を実行できます](/help/assets/search-assets.md)。
 
-* [フォルダーの場所に移動します。](/help/assets/search-assets.md#aftersearch) 検索結果に表示されるアセットの場合。
+* 検索結果に表示されるアセットの、[フォルダーの場所へと移動できます](/help/assets/search-assets.md#aftersearch)。
 
 **3D アセットのサムネールプレビュー**
 
@@ -74,7 +74,7 @@ Experience Manager Assets では、検索結果のユーザーインターフェ
 
 **Dynamic Media：イメージプロファイルのスマート切り抜き関連のフィールドを更新**
 
-イメージプロファイルのスマート切り抜き関連のフィールドの一部でユーザーインターフェイスが更新され、スマート切り抜きを定義するための最新のガイドラインが反映されました。詳しくは、[切り抜きオプション](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options)を参照してください。
+イメージプロファイルのスマート切り抜き関連のフィールドの一部でユーザーインターフェイスが更新され、スマート切り抜きを定義するための最新のガイドラインが反映されました。詳しくは、[切り抜きオプション](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=ja#crop-options)を参照してください。
 
 ### アセットビューの新機能 {#assets-view-features}
 

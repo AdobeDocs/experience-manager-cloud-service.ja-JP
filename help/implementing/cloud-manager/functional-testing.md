@@ -3,9 +3,9 @@ title: 機能テスト
 description: コードの品質と信頼性を確保するために、AEM as a Cloud Service デプロイメントプロセスに組み込まれている 3 種類の機能テストについて説明します。
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1354'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Adobeには、いくつかの組み込みの品質ゲートが用意されてい
 
 すべてのテスト戦略の基盤となる、AEM アプリケーションの単体テストを実施することをお勧めします。このテストは、高速かつ頻繁な実行と早期の迅速なフィードバックの提供を目的としており、開発者ワークフロー、独自の CI/CD、AEM Cloud Service デプロイメントパイプラインに緊密に統合されています。
 
-また、JUnit を使用して実装され、Maven で実行されます。詳しくは、 [AEMプロジェクトアーキタイプのコアモジュール](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html?lang=ja#unit-tests) AEMの単体テストの例と導入方法を参照してください。
+また、JUnit を使用して実装され、Maven で実行されます。AEM の単体テストの例と導入方法については、[AEM プロジェクトアーキタイプのコアモジュール](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html?lang=ja#unit-tests)を参照してください。
 
 ### コード品質
 
@@ -67,7 +67,7 @@ Adobeには、いくつかの組み込みの品質ゲートが用意されてい
 
 製品機能テストは、オーサリングタスクやレプリケーションタスクなど、AEM のコア機能の安定した HTTP 統合テスト（IT）のセットです。アドビでは、これらを標準で提供、保守しています。これは、カスタムアプリケーションコードが AEM 製品のコア機能を破壊した場合に、カスタムアプリケーションコードに対する変更がデプロイされるのを防ぐためのものです。
 
-これらは Junit を使用して実装され、Maven を使用して実行され、公式の [AEM Testing Clients](https://github.com/adobe/aem-testing-clients). 製品テストスイートは
+Junit を使用して実装され、Maven を使用して実行されます（公式の [AEM テストクライアント](https://github.com/adobe/aem-testing-clients)を使用します）。製品テストスイートは
 [オープンソースプロジェクト](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)として維持され、ベストプラクティスに従っているため、テスト実装の出発点として適しています。
 
 ### カスタム機能テスト
@@ -76,11 +76,11 @@ Adobeには、いくつかの組み込みの品質ゲートが用意されてい
 
 >[!NOTE]
 >
->カスタム機能テストは、AEMアプリケーションのデプロイメント変更やAEM製品プッシュアップデートで使用される実稼動および非実稼動（オプトイン）パイプラインで実行されるので、アプリケーションの適切な機能を確保し、リリースの安全性を高める重要な役割を果たします。 顧客機能テストはそれぞれの内部プレリリース検証パイプラインで実行され、早期にフィードバックを得ることができます。
+>カスタム機能テストは、AEM アプリケーションの変更デプロイメントと AEM 製品プッシュ更新によって使用される実稼動パイプラインおよび非実稼動（オプトイン）パイプラインで実行されるため、アプリケーションの適切な機能を確保し、リリースの安全性を高める重要な役割を果たします。顧客機能テストはそれぞれの内部プレリリース検証パイプラインで実行され、早期にフィードバックを得ることができます。
 
-パイプラインの実行を効率的に保つために、主な機能と主なユーザーインタラクションフローに焦点を当てることをお勧めします。 機能テストの実行時間は、15 分以下にすることをお勧めします。 この品質ゲートに収まらない完全な機能テストスイートは、顧客の開発フロー中に、一般的な顧客検証パイプラインの一部として実行することをお勧めします。
+パイプラインの実行を効率化するために、主な機能とユーザーのインタラクションフローに注力することをお勧めします。機能テストの実行時間は 15 分以下にすることをお勧めします。この品質ゲートに適合しない完全な機能テストスイートは、お客様の開発フローで一般的な検証パイプラインの一部として実行することをお勧めします。
 
-詳しくは、 [オープンソース製品テスト](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) または [AEM Projects アーキタイプの it.tests モジュール](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) 例：
+例については、[オープンソースの製品テスト](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)または [AEM プロジェクトアーキタイプの it.tests モジュール](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)を参照してください。
 
 詳しくは、[Java 機能テスト](/help/implementing/cloud-manager/java-functional-testing.md)を参照してください。
 
@@ -88,7 +88,7 @@ Adobeには、いくつかの組み込みの品質ゲートが用意されてい
 
 顧客固有の開発に対するリスク制御を最大限に高めるために、重要な UI テストを AEMCS に取り込むことが強く推奨されます。これらは数をかなり制限して保持することを目的としていますが、顧客体験に大きな影響を与えます。
 
-テストは Docker イメージでパッケージ化され、可能な限り揮発性が高く設計されています（Cypress、Selenium、Java、JavaScript をサポート）。 カスタム機能テストと同様に、同じ特性と目的に従います。
+テストは Docker イメージでパッケージ化され、可能な限り変動するように設計されています（Cypress、Selenium、Java および JavaScript のサポートを含む）。カスタム機能テストと同様に、同じ特性と目的に従います。
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Adobeには、いくつかの組み込みの品質ゲートが用意されてい
 
 パイプラインの実行を効率的に行うために、主要機能と主要ユーザーインタラクションフローに注力することをお勧めします。この品質ゲートに収まらない完全な UI テストスイートは、顧客の開発フロー中に、一般的な顧客検証パイプラインの一部として実行することをお勧めします。
 
-詳しくは、 [オープンソースのサンプルテスト](https://github.com/adobe/aem-test-samples/tree/aem-cloud/) または [AEMプロジェクトアーキタイプの ui.tests モジュール](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) 例：
+例として、[オープンソースのサンプルテスト](https://github.com/adobe/aem-test-samples/tree/aem-cloud/)または [AEMプロジェクトアーキタイプの ui.tests モジュール](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)を参照してください。
 
 詳しくは、[カスタム UI テスト](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)を参照してください。
 
@@ -112,7 +112,7 @@ Adobeには、いくつかの組み込みの品質ゲートが用意されてい
 
 顧客検証の品質ゲートは、顧客独自のテスト戦略と作業のプレースホルダーです。このテスト戦略と作業は、顧客のアプリケーションの変更が AEM クラウドデプロイメントパイプラインに到達する前に実行されます。
 
-ここで、好みのツールとフレームワークを選択できます。 顧客機能テストやカスタム UI テストとは異なり、AEM as a Cloud Service に関連する制限はないので、長時間実行される機能および UI テストをここで実行することをお勧めします。
+ここでは、好みのツールとフレームワークを選択できます。顧客機能テストやカスタム UI テストとは異なり、AEM as a Cloud Service に関連する制限はないので、長時間実行される機能および UI テストをここで実行することをお勧めします。
 
 任意のツールとフレームワークを自由に選択できますが、HTTP ベースの統合テストと UI テストを、カスタム機能テストおよびカスタム UI テスト品質ゲートで利用可能なツールとフレームワークと連携させることをお勧めします。ローカルテスト戦略で[迅速な開発環境（RDE）](/help/implementing/developing/introduction/rapid-development-environments.md)を統合し、AEM クラウド環境にできる限り近い環境でテストすることをお勧めします。
 

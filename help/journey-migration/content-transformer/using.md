@@ -3,9 +3,9 @@ title: コンテンツ変換サービスの使用
 description: AEM as a Cloud Service への移行に備えて、コンテンツ構造を変換する方法を説明します。
 exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '630'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 88%
 1. すべての問題または特定の問題を選択し、移動、削除または名前変更して解決できます。また、カスタムパスは右上隅にある「**パスを追加**」ボタンを使用して追加できます。
 
    >[!NOTE]
-   > 移動操作を使用する場合は、すべてのパスを 1 つのフォルダー ( 例： `/etc/packages/content-transformation/paths`) の場合は、バックアップパッケージがインストールされてインスタンスが元の状態に戻るときに、フォルダー (`/etc/packages/content-transformation/paths`) は、削除操作を使用して削除し、リポジトリのサイズを小さくすることができます。
+   > 移動操作を使用する場合は、すべてのパスを 1 つのフォルダーにのみ移動することをお勧めします（`/etc/packages/content-transformation/paths` 下など）。そうすると、バックアップパッケージがインストールされてインスタンスが元の状態に戻る際に、フォルダー（`/etc/packages/content-transformation/paths`）は、削除操作を使用して削除され、リポジトリのサイズを縮小できます。
 
    ![画像](/help/journey-migration/content-transformer/assets/ct-5.png)
    ![画像](/help/journey-migration/content-transformer/assets/ct-6.png)
@@ -63,7 +63,7 @@ ht-degree: 88%
    >[!NOTE]
    > ソースコンテンツ（`move`／`remove`／`rename`）を変更できる操作は、デフォルトで変換前にソースパスのバックアップパッケージを `/etc/packages/content-transformation` 下に作成します。各操作ダイアログには、バックアップパッケージの作成を無効または有効にするオプションがありますが、常に有効パッケージの作成を選択することを強くお勧めします。
 
-1. パスの移動操作で作成されたバックアップパッケージの例を以下に示します。「インストール」をクリックして、ソースパスを戻します。インストールによって元の場所に戻されるのはソースパスのみであり、変換中に移動されたパスは削除されません。移動した場所のパスを削除するには、 **パスを追加** 場所を追加するボタン ( 例： `/etc/packages/content-transformation/paths`)、場所を選択して、 **削除**.
+1. パスの移動操作で作成されたバックアップパッケージの例を以下に示します。「インストール」をクリックして、ソースパスを戻します。インストールによって元の場所に戻されるのはソースパスのみであり、変換中に移動されたパスは削除されません。移動した場所のパスを削除するには、「**パスを追加**」ボタンをクリックして場所を追加し（`/etc/packages/content-transformation/paths` など）、場所を選択して「**削除**」をクリックします。
 
    >[!CAUTION]
    > `/etc/packages/content-transformation` は削除しないでください。ここには、バックアップパッケージが格納されています。これらのパッケージが確実に不要になった場合にのみ、この場所を削除してリポジトリのサイズを縮小できます。

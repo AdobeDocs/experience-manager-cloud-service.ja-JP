@@ -3,9 +3,9 @@ title: ページへの ContextHub の追加とストアへのアクセス
 description: ContextHub 機能を有効にし、ContextHub JavaScript ライブラリにリンクするには、ContextHub をページに追加します。
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '897'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ContextHub 機能を有効にし、ContextHub JavaScript ライブラリにリ�
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
 ```
 
-また、ContextHub ツールバーをプレビューモードで表示するかどうかを設定する必要があります。 [ContextHub UI の表示／非表示](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui)を参照してください。
+ContextHub ツールバーをプレビューモードで表示するかどうかも設定する必要があります。[ContextHub UI の表示／非表示](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui)を参照してください。
 
 ## ContextHub ストアについて {#about-contexthub-stores}
 
@@ -139,7 +139,7 @@ ContextHub のセグメントは、`/conf/<site>/settings/wcm/segments` ノー�
 
 >[!WARNING]
 >
->インストールされたセグメントは、プロジェクト用に独自の専用設定を構築するのに役立つリファレンス設定として提供されます。 直接使用しないでください。
+>インストールされたセグメントは、プロジェクト用に独自の専用設定を作成するのに役立つ参照設定として提供されます。直接使用しないでください。
 
 ## ContextHub のデバッグ {#debugging-contexthub}
 

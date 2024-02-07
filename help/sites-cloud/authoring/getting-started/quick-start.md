@@ -3,9 +3,9 @@ title: ページのオーサリングのクイックスタートガイド
 description: ページコンテンツのオーサリングに初めて取り組む際に役立つ概要レベルのクイックガイドです。
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1541'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
       * [プレビューモード](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [公開済みとして表示](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 
-* バージョンは、ページエディターから開始または作成されません。 これは、 **Sites** コンソール ( **作成** または [タイムライン](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) （選択したリソース）。
+* バージョンはページエディターから開始／作成されません。**Sites** コンソールから（選択したリソースの「**作成**」または「[タイムライン](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)経由で）実行できるようになりました。
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
 1. （[グローバルナビゲーション](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)の「**サイト**」オプションを使用して）**サイト**&#x200B;コンソールを開きます。これは、Adobe Experience Manager リンク（左上）を選択するとトリガー（ドロップダウン）されます。
 
-1. 適切なページをタップまたはクリックしてツリーの下に移動します。 ページリソースがどのように表されるかは、使用している表示によって異なります。 [カード、リスト、列](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources):
+1. 適切なページをタップまたはクリックしてツリーの下方向に移動します。ページリソースがどのように示されるかは、使用している表示（[カード、リスト、列](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)）によって異なります。
 
    ![表示選択用ドロップダウン](/help/sites-cloud/authoring/assets/views.png)
 
@@ -103,7 +103,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
    * [必要なリソースを選択](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)して選択モードに入ります。その方法は、次のようにデバイスによって異なります。
 
-      * モバイルデバイスの場合：カードを選択して長押しする
+      * モバイルデバイス：カードを選択＆ホールドする
       * デスクトップデバイス：チェックマークアイコンで表される[クイックアクション](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)を使用する
 
    * ページが選択されていることを示すために、カードにチェックマークが付けられます。
@@ -148,7 +148,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
    * 次の操作を実行して、ページ上の[既存のコンポーネントのコンテンツを編集します](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)。
 
       * 選択してコンポーネントツールバーを開きます。「**編集**」（鉛筆）アイコンを使用してダイアログを開きます。
-      * 選択して長押しするか、ダブルスロークリックして、コンポーネントのインプレースエディタを開きます。 使用可能なアクションが表示されます（一部のコンポーネントでは、アクションが制限されます）。
+      * 選択＆ホールドするか、ゆっくりダブルクリックして、コンポーネント用のインプレースエディターを開きます。使用可能なアクションが表示されます（一部のコンポーネントでは、アクションが制限されます）。
       * 実行できるすべてのアクションを表示するには、次のアイコンを使用して全画面表示モードに切り替えます。
 
         ![全画面表示ボタン](/help/sites-cloud/authoring/assets/full-screen.png)

@@ -3,9 +3,9 @@ title: Query Builder API
 description: アセット共有の Query Builder の機能は、Java API と REST API を通して公開されます。
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1830'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -27,9 +27,9 @@ REST API は、JSON で送信される応答を使用して、HTTP 経由で同�
 
 ## Gem セッション {#gem-session}
 
-[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html) は、Adobe Experience Manager を技術的に深く掘り下げるための、アドビのエキスパートによる各種セッションです。
+[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=ja) は、Adobe Experience Manager を技術的に深く掘り下げるための、アドビのエキスパートによる各種セッションです。
 
-[Query Builder 専用のセッションを確認](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html)し、ツールの概要と使用方法を確認できます。
+[Query Builder 専用のセッションを確認](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html?lang=ja)し、ツールの概要と使用方法を確認できます。
 
 ## サンプルクエリ {#sample-queries}
 

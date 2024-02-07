@@ -3,9 +3,9 @@ title: レンダリングコンポーネントのコンテンツフラグメン�
 description: レンダリングコンポーネントのコンテンツフラグメントの設定
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '519'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 この情報は、次の場合に必要です。
 
 * 独自のコンテンツフラグメントベースのコンポーネントを実装する必要がある。
-* アドバンスドサービスを使用する必要がある。
+* アドバンスドサービスを利用する必要がある。
 
 代わりに、コアコンポーネントを利用することをお勧めします。
 

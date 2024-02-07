@@ -4,9 +4,9 @@ description: アダプティブフォームには、複数の送信アクショ�
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3913'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -174,12 +174,12 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 「**[!UICONTROL SharePoint に送信]**」送信アクションは、アダプティブフォームと Microsoft® SharePoint ストレージを接続します。フォームデータファイル、添付ファイルまたはレコードのドキュメントを、接続された Microsoft® SharePoint ストレージに送信できます。
 
-「SharePointに送信」を使用して、次の操作を実行できます。
-* [アダプティブフォームの SharePoint ドキュメントライブラリへの接続](#connect-af-sharepoint-doc-library)
-* [アダプティブフォームのSharePointリストへの接続](#connect-af-sharepoint-list)
+「SharePoint に送信」を使用して、次の操作を実行できます。
+* [アダプティブフォームを SharePoint ドキュメントライブラリに接続](#connect-af-sharepoint-doc-library)
+* [アダプティブフォームを SharePoint リストに接続](#connect-af-sharepoint-list)
 
 
-### アダプティブフォームの SharePoint ドキュメントライブラリへの接続 {#connect-af-sharepoint-doc-library}
+### アダプティブフォームを SharePoint ドキュメントライブラリに接続 {#connect-af-sharepoint-doc-library}
 
 アダプティブフォームで「**[!UICONTROL SharePoint ドキュメントライブラリに送信]**」送信アクションを使用するには、次の手順に従います。
 
@@ -236,22 +236,22 @@ AEM Forms を Microsoft® Sharepoint ドキュメントライブラリストレ�
 フォームを送信すると、データは指定した Microsoft® Sharepoint ドキュメントライブラリストレージに保存されます。
 データを保存するフォルダー構造は `/folder_name/form_name/year/month/date/submission_id/data` です。
 
-### アダプティブフォームのMicrosoft® SharePointリストへの接続 {#connect-af-sharepoint-list}
+### アダプティブフォームを Microsoft® SharePoint リストに接続 {#connect-af-sharepoint-list}
 
 <span class="preview"> これはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja?cloud-environments). </span>
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
-次の手順で [!UICONTROL SharePointリストに送信] アダプティブフォームでの送信アクション：
+アダプティブフォームで「[!UICONTROL SharePoint リストに送信]」送信アクションを使用するには、次の手順に従います。
 
-1. [SharePoint List 設定の作成](#create-sharepoint-list-configuration):AEM FormsをMicrosoft® Sharepoint リストストレージに接続します。
-1. [アダプティブフォーム内でのフォームデータモデルを使用した送信の使用](#use-submit-using-fdm)：アダプティブフォームを設定済みのMicrosoft® SharePointに接続します。
+1. [SharePoint リスト設定を作成](#create-sharepoint-list-configuration)：AEM Forms を Microsoft® Sharepoint リストストレージに接続します。
+1. [アダプティブフォームで「フォームデータモデルを使用して送信」を使用](#use-submit-using-fdm)：アダプティブフォームを設定済みの Microsoft® SharePoint に接続します。
 
-#### SharePoint List 設定の作成 {#create-sharepoint-list-configuration}
+#### SharePoint リスト設定を作成 {#create-sharepoint-list-configuration}
 
-AEM FormsをMicrosoft® Sharepoint リストに接続するには：
+AEM Forms を Microsoft® Sharepoint リストに接続するには、次の手順に従います。
 
-1. に移動します。 **[!UICONTROL ツール]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. **[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL Microsoft® SharePoint]** に移動します。
 1. **設定コンテナ**&#x200B;を選択します。設定は、選択した設定コンテナに保存されます。
 1. クリック **[!UICONTROL 作成]** > **[!UICONTROL SharePoint List]** 」をドロップダウンリストから選択します。 SharePoint 設定ウィザードが表示されます。
 1. 「**[!UICONTROL タイトル]**」、「**[!UICONTROL クライアント ID]**」、「**[!UICONTROL クライアント秘密鍵]**」および「**[!UICONTROL OAuth URL]**」を指定します。OAuth URL のクライアント ID、クライアントの秘密鍵、テナント ID を取得する方法について詳しくは、[Microsoft® のドキュメント](https://learn.microsoft.com/ja-jp/graph/auth-register-app-v2)を参照してください。
@@ -266,19 +266,19 @@ AEM FormsをMicrosoft® Sharepoint リストに接続するには：
 
 1. 「**[!UICONTROL 接続]**」をクリックします。接続に成功した場合、`Connection Successful` のメッセージが表示されます。
 1. 選択 **[!UICONTROL SharePoint Site]** および **[!UICONTROL SharePoint List]** 」をドロップダウンリストから選択します。
-1. 選択 **[!UICONTROL 作成]** Microsoft® SharePointList のクラウド設定を作成する場合。
+1. 「**[!UICONTROL 作成]**」を選択して、Microsoft® SharePointList 用のクラウド設定を作成します。
 
 
-#### アダプティブフォーム内でのフォームデータモデルを使用した送信の使用 {#use-submit-using-fdm}
+#### アダプティブフォームで「フォームデータモデルを使用して送信」を使用 {#use-submit-using-fdm}
 
-作成したSharePointリスト設定をアダプティブフォーム内で使用して、データや生成後のレコードのドキュメントをSharePointリストに保存することができます。 アダプティブフォームでSharePointリストストレージ設定を使用するには、以下の手順を実行します。
+作成した SharePoint リスト設定をアダプティブフォーム内で使用すると、データや生成済みのレコードのドキュメントを SharePoint リストに保存できます。アダプティブフォームで SharePoint リストストレージ設定を使用するには、次の手順を実行します。
 
 1. [Microsoft® SharePointリスト設定を使用したフォームデータモデルの作成](/help/forms/create-form-data-models.md)
 1. [データを取得して送信するためのフォームデータモデルの設定](/help/forms/work-with-form-data-model.md#configure-services)
 1. [アダプティブフォームを作成](/help/forms/creating-adaptive-form.md)
 1. [フォームデータモデルを使用した送信アクションの設定](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
 
-フォームを送信すると、データは指定したMicrosoft® Sharepoint リストストレージに保存されます。
+フォームを送信すると、データは指定した Microsoft® Sharepoint リストストレージに保存されます。
 
 >[!NOTE]
 >
@@ -409,9 +409,9 @@ AEM Forms を Azure ストレージコンテナに接続するには、次の手
 
 ## Workfront Fusion に送信 {#workfront-fusion}
 
-アダプティブフォームを設定して、送信時にWorkfront Fusion にデータを送信することができます。 Workfront Fusion を使用すると、プロセスを自動化できるので、同じタスクを何度も繰り返す代わりに、新しいタスクに集中できます。 シンプルなタスクと複雑なタスクの両方を自動化し、時間を節約し、プロセスの一貫した実行を実現します。
+アダプティブフォームを設定して、送信時に Workfront Fusion にデータを送信できます。Workfront Fusion を使用すると、プロセスを自動化できるので、同じタスクを何度も繰り返す代わりに、新しいタスクに集中できます。シンプルなタスクと複雑なタスクの両方を自動化し、時間を節約し、プロセスの一貫した実行を実現します。
 
-アダプティブFormsエディターでは、 **Workfront Fusion シナリオを呼び出す** 送信アクションを使用して、Adaptive Formsのデータまたは添付ファイルをWorkfront Fusion シナリオに送信します。 送信アクションを使用して取得したデータをWorkfront Fusion シナリオに送信する方法については、 [アダプティブフォームをAdobe Workfront Fusion に送信する](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
+アダプティブフォームエディターでは、**Workfront Fusion シナリオを呼び出す**&#x200B;送信アクションを使用して、アダプティブフォームのデータまたは添付ファイルを Workfront Fusion シナリオに送信します。送信アクションを使用して取得したデータを Workfront Fusion シナリオに送信する方法について詳しくは、[Adobe Workfront Fusion へのアダプティブフォームの送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)を参照してください。
 
 ## 同期または非同期送信の使用 {#use-synchronous-or-asynchronous-submission}
 

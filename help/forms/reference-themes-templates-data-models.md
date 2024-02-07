@@ -4,7 +4,7 @@ description: AEM Forms には、フォームをすばやく作成できるよう
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '772'
 ht-degree: 100%
 

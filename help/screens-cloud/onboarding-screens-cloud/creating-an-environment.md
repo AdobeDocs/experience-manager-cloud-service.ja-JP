@@ -3,9 +3,9 @@ title: 環境の作成
 description: ここでは、Cloud Manager で Screens as a Cloud Service 用の環境を作成する方法について説明します。
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '194'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
@@ -22,22 +22,22 @@ ht-degree: 44%
 
 ## Cloud Manager で Screens プロジェクトの環境を作成する手順 {#steps-branch-creation}
 
-プロジェクトの作成が正常に完了したら、 Cloud Manager の概要ページで、コールトゥアクションカードの更新を確認できます。
+プロジェクトの作成が正常に完了したら、Cloud Manager の概要ページのコールトゥアクションカードが更新されます。
 
-1. Cloud Manager に移動し、 Cloud Manager の **概要** ページに貼り付けます。
+1. Cloud Manager に移動し、アイコンを選択して Cloud Manager の&#x200B;**概要**&#x200B;ページに移動します。
 
-1. クリック **環境を追加** Cloud Manager の **概要** ページに貼り付けます。
+1. Cloud Manager の&#x200B;**概要**&#x200B;ページで「**環境を追加**」をクリックします。
 
    ![画像](/help/screens-cloud/assets/onboarding/add-environ1.png)
 
-1. 環境の詳細を **環境を追加** ダイアログボックスを開き、 **保存**.
+1. **環境を追加**&#x200B;ダイアログボックスで環境の詳細を選択し、「**保存**」をクリックします。
 
    ![画像](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
-1. 環境の追加が完了すると、コールトゥアクションカードが更新されます（下図を参照）。
+1. 環境の追加が完了したら、コールトゥアクションカードが更新されます（下図を参照）。
 
    ![画像](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
 ## 次の手順 {#whats-next}
 
-Cloud Manager でプログラムの環境を設定する方法を学習したら、次に進む準備が整いました。 オンボーディングプロセスの次の手順は次のとおりです。 [パイプラインの実行](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
+Cloud Manager でプログラムの環境を設定する方法を理解したら、次の手順に進みます。オンボーディングプロセスの次の手順は[パイプラインの実行](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md)です。

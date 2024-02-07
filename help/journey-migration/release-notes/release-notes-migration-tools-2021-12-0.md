@@ -4,9 +4,9 @@ description: AEM as a Cloud Service リリース 2021.12.0 における移行ツ
 feature: Release Information
 exl-id: 4155e1c0-cd40-4cbc-9d6c-b106d68a2db5
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '251'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -43,5 +43,5 @@ ht-degree: 99%
 
 ### 新機能 {#what-is-new-ctt}
 
-* コンテンツ転送ツールの取り込み段階に切替スイッチが追加され、ユーザーが取り込み中に [事前コピー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) を無効にできるようになりました。最適な取り込み速度を得るには、小さな移行セットの場合、または最後の取り込み以降に追加された BLOB が数個しかない場合は、取り込み中の事前コピーを無効にする必要があります。
+* コンテンツ転送ツールの取り込み段階に切替スイッチが追加され、ユーザーが取り込み中に [事前コピー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja) を無効にできるようになりました。最適な取り込み速度を得るには、小さな移行セットの場合、または最後の取り込み以降に追加された BLOB が数個しかない場合は、取り込み中の事前コピーを無効にする必要があります。
 * ユーザーマッピングが更新され、2,000 人のユーザーを一度に取得できる改善された User Management API を使用するようになり、パフォーマンスが大幅に向上しました。

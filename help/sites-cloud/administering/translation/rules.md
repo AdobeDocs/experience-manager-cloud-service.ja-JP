@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1288'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -214,7 +214,7 @@ UI では、「**プロパティ**」タブで「**翻訳**」をチェックま
 
 ### updateDestinationLanguage {#updatedestinationlanguage}
 
-**`updateDestinationLanguage`** は、テキストを持たないが言語コードを持つプロパティに使用されます。例： `jcr:language`. ユーザーはテキストを翻訳するのではなく、言語ロケールをソースから宛先に翻訳します。そのようなプロパティは、翻訳用に送信されません。
+**`updateDestinationLanguage`** は、テキストがなく言語コード（`jcr:language` など）はあるプロパティに使用されます。ユーザーはテキストを翻訳するのではなく、言語ロケールをソースから宛先に翻訳します。そのようなプロパティは、翻訳用に送信されません。
 
 UI では、言語コードを値として持つ特定のプロパティについてのみ、「**プロパティ**」タブで「**翻訳**」をチェックまたはチェック解除してこの値を変更できます。
 

@@ -5,9 +5,9 @@ contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
 source-git-commit: e882e89afa213f3423efe497585994eb91186fd7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2371'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 99%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-selector.html?lang=en) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/asset-selector.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 マイクロフロントエンドアセットセレクターは、[!DNL Experience Manager Assets as a Cloud Service] リポジトリと簡単に統合できるユーザーインターフェイスを提供します。ユーザーはこれにより、リポジトリで使用可能なデジタルアセットを参照または検索し、アプリケーションのオーサリングエクスペリエンスで使用できるようになります。
@@ -169,7 +169,7 @@ interface SelectedAsset {
 
 次の表に、選択されたアセットのオブジェクトの重要なプロパティの一部を示します。
 
-| プロパティ | タイプ | 説明 |
+| Property | タイプ | 説明 |
 |---|---|---|
 | *repo:repositoryId* | 文字列 | アセットが保存されるリポジトリの一意の ID。 |
 | *repo:id* | 文字列 | アセットの一意の ID。 |
@@ -365,7 +365,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 
 アセットセレクターのプロパティを使用して、アセットセレクターのレンダリング方法をカスタマイズできます。次の表に、アセットセレクターをカスタマイズして使用するために利用できるプロパティを示します。
 
-| プロパティ | タイプ | 必須 | デフォルト | 説明 |
+| Property | タイプ | 必須 | デフォルト | 説明 |
 |---|---|---|---|---|
 | *rail* | ブーリアン | いいえ | false | `true` とマークされている場合、アセットセレクターは左側のパネルビューにレンダリングされます。`false` とマークされている場合、アセットセレクターはモーダルビューにレンダリングされます。 |
 | *imsOrg* | 文字列 | はい | | [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] を組織にプロビジョニングする場合に割り当てられる Adobe Identity Management System（IMS）の ID です。`imsOrg` キーは、アクセスしようとしている組織が Adobe IMS 内にあるかどうかを認証するために必要です。 |

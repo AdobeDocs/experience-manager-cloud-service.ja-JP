@@ -3,9 +3,9 @@ title: ページテンプレート
 description: ページテンプレートは、新しいページのベースとして使用するページを作成する際に使用します
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3267'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 98%
 編集可能テンプレートを作成する場合は、次の操作を実行します。
 
 1. [テンプレート用フォルダー](#template-folders)を作成します。これは必須ではありませんが、ベストプラクティスとして推奨されます。
-1. [テンプレートタイプ](#template-type)を選択します。これは、 [テンプレート定義](#template-definitions).
+1. [テンプレートタイプ](#template-type)を選択します。これをコピーして、[テンプレート定義](#template-definitions)を作成します。
 
    >[!NOTE]
    >
@@ -320,7 +320,7 @@ ht-degree: 98%
 
 * `/apps/settings/wcm/template-types`
 
-カスタマイズしたテンプレートタイプの定義は、ユーザー定義フォルダー（推奨）または `global` フォルダーに保存してください。例：
+カスタマイズしたテンプレートタイプの定義は、ユーザー定義フォルダー（推奨）または `global` フォルダーに保存してください。次に例を示します。
 
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/template-types`
 * `/conf/<my-folder>/settings/wcm/template-types`
@@ -371,7 +371,7 @@ GitHub のコード
 
 ## テンプレート定義 {#template-definitions}
 
-編集可能テンプレートの定義は、[ユーザー定義フォルダー](#template-folders)（推奨）または `global` フォルダーに格納されます。例：
+編集可能テンプレートの定義は、[ユーザー定義フォルダー](#template-folders)（推奨）または `global` フォルダーに格納されます。次に例を示します。
 
 * `/conf/<my-folder>/settings/wcm/templates`
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/templates`
@@ -502,7 +502,7 @@ GitHub のコード
    * [適切なページまたはサブブランチのルートページの&#x200B;**ページプロパティ**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author)&#x200B;に対して許可されたテンプレートのパスを定義します。
    * プロパティを設定します。
      `cq:allowedTemplates`
-次の日： `jcr:content` 必要なブランチのノードに設定します。
+必要なブランチの `jcr:content` ノードに設定します。
 
    例えば、次の値を使用します。
 
@@ -593,7 +593,7 @@ GitHub のコード
 
 #### 子ページで使用するテンプレートの制限 {#limiting-templates-used-in-child-pages}
 
-特定のページの下に子ページを作成するために使用できるテンプレートを制限するには、ページの `jcr:content` ノードの `cq:allowedTemplates` プロパティを使用して、子ページとして許可するテンプレートのリストを指定します。例えば、リストの各値は、許可されている子ページのテンプレートへの絶対パスである必要があります。 `/apps/wknd/templates/page-content`.
+特定のページの下に子ページを作成するために使用できるテンプレートを制限するには、ページの `jcr:content` ノードの `cq:allowedTemplates` プロパティを使用して、子ページとして許可するテンプレートのリストを指定します。リストの各値は、許可されている子ページのテンプレートへの絶対パスである必要があります（`/apps/wknd/templates/page-content` など）。
 
 テンプレートの `jcr:content` ノードの `cq:allowedTemplates` プロパティを使用すると、このテンプレートを使用するすべての作成されたページにこの設定を適用できます。
 

@@ -3,9 +3,9 @@ title: タグの管理
 description: AEM でタグを管理してコンテンツを整理する方法を説明します。
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2200'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Adobe Experience Manager（AEM）では、タグが以下のプロパティと�
 タグ付けコンソールにアクセスするには：
 
 1. 管理者権限を使用してオーサリング環境にログインします。
-1. グローバルナビゲーションメニューで、 **`Tools`** > **`General`** >
+1. グローバルナビゲーションメニューで、**`Tools`**／**`General`** を選択します。
    **`Tagging`**。
 
 ![AEM のタグ付けコンソール](/help/sites-cloud/administering/assets/tagging-console.png)
@@ -91,7 +91,7 @@ Adobe Experience Manager（AEM）では、タグが以下のプロパティと�
 
 1. 必要な情報を入力したら、「**作成**」を選択します。
 
-名前空間が作成されます。タグ付けコンソールでは、名前空間は最も低いレベル（コンソールの左端の列）にあり、フォルダーアイコンで表され、その特性が「コンテナ」や他のタグのグループ化として反映されます。
+名前空間が作成されます。タグ付けコンソールでは、名前空間は最下位（コンソールの左端の列）にあり、フォルダーアイコンで表され、その特性が他のタグの「コンテナ」すなわちグループの形で反映されます。
 
 この名前空間で[新しいタグを作成](#creating-tags)したり、[既存のタグを管理](#managing-tags)したりできるようになりました。
 
@@ -163,7 +163,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 * [結合](#merging-tags)
 * [削除](#deleting-tags)
 
-ツールバーに十分なスペースがあるというメモが表示された場合は、省略記号アイコンの後ろに追加のオプションが表示されます。
+なお、ツールバーに十分なスペースがない場合は、省略記号アイコンの後ろに追加のオプションが表示されます。
 
 ### タグプロパティの表示 {#viewing-tag-properties}
 
@@ -243,7 +243,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
    ![タグの参照の詳細の表示](assets/tag-references-detail.png)
 
-リスト内の参照コンテンツにマウスポインターを置くか選択すると、コンテンツのフルパスが表示されます。
+リスト内の参照先のコンテンツにマウスポインターを置くか選択すると、コンテンツのフルパスが表示されます。
 
 表示モードとパネルの選択について詳しくは、[基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)を参照してください。
 
@@ -359,7 +359,7 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 1. 翻訳するタグを選択し、ツールバーで「**編集**」を選択します。
 
-1. Adobe Analytics の **タグを編集** ダイアログ、 **ローカリゼーション** 列で、ターゲット言語（例：ドイツ語）を選択します。
+1. **タグを編集**&#x200B;ダイアログ、**ローカリゼーション**&#x200B;列で、ターゲット言語（例：ドイツ語）を選択します。
 
 1. 表示される「**ドイツ語**」フィールドに、翻訳されたタイトルを入力します。
 

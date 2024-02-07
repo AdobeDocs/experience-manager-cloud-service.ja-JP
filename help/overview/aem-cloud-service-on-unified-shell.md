@@ -1,11 +1,11 @@
 ---
 title: 統合シェルでの AEM as a Cloud Service
-description: 統合シェルでのAEMas a Cloud Serviceのメリットについて説明します。
+description: 統合シェルでの AEM as a Cloud Service のメリットについて説明します。
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '390'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 

@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0 リリー�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0 リリースのリリースノート。'
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1691'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -70,11 +70,11 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![データソースからのアセットの一括読み込み](/help/release-notes/assets/bulk-import.png)
 
-* **画像編集ツール (Adobe Express機能 )**：簡単で直感的 [画像編集ツール (Adobe Express機能を利用 )](/help/assets/edit-images-assets-view.md) は、AEM Assets内で直接使用して、コンテンツの再利用を促進し、コンテンツの速度を向上できます。
+* **Adobe Express を活用した画像編集ツール**：AEM Assets 内で直接使用できる、簡単で直感的な [Adobe Express を活用した画像編集ツール](/help/assets/edit-images-assets-view.md)により、コンテンツの再利用性を高め、コンテンツの処理速度を向上させます。
 
   ![Adobe Express を使用した画像の編集](/help/release-notes/assets/edit-adobe-express.png)
 
-* **My Workspace クイックアクセス用に項目をピン留めする際の柔軟性**：組織全体またはグループのリストの項目を選択してピン留めし、それらを [My Workspace のクイックアクセスセクション](/help/assets/my-workspace-assets-view.md) 選択内容に基づいて選択します。
+* **マイワークスペースのクイックアクセス用に項目をピン留めする際の柔軟性**：自分用、組織全体用またはグループのリスト用の項目を選択してピン留めし、選択に基づいて[マイワークスペースのクイックアクセスセクション](/help/assets/my-workspace-assets-view.md)に項目が表示されるようにする機能です。
 
   ![グループ用の項目をピン留め](/help/release-notes/assets/pin-items-for-groups.png)
 

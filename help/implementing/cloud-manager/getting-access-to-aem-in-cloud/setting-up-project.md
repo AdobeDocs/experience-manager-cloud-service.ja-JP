@@ -3,9 +3,9 @@ title: プロジェクトのセットアップ
 description: Maven を使用して AEM プロジェクトをビルドする方法と、独自のプロジェクトを作成する際に遵守する必要のある標準規格について説明します。
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1399'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -120,7 +120,7 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
 Cloud Manager のビルドプロセスが開始したとき、以下が行われます。
 
 * このファイル内の `<servers>` 要素が、Cloud Manager から提供されるデフォルトの `settings.xml` ファイルに結合されます。
-   * で始まるサーバー ID `adobe` および `cloud-manager` は予約済みと見なされます。 カスタムサーバーでは使用しないでください。
+   * `adobe` と `cloud-manager` で始まるサーバー ID は予約済みと見なされます。カスタムサーバーでは使用しないでください。
    * サーバー ID がこれらのプレフィックスのいずれかに一致しない場合、デフォルトの ID `central` は Cloud Manager でミラーリングされません。
 * このファイルを配置すると、サーバー ID は `<repository>` 内や `pom.xml` ファイル内の `<pluginRepository>` 要素から参照されます。
 * 一般に、これらの `<repository>` や `<pluginRepository>` 要素は、[Cloud Manager 固有のプロファイル](#activating-maven-profiles-in-cloud-manager)に含まれますが、厳密に必要とは限りません。

@@ -1,12 +1,12 @@
 ---
 title: AEM as a Cloud Service へのデプロイ
-description: AEM as a Cloud Serviceへのデプロイの基本とベストプラクティスについて説明します。
+description: AEM as a Cloud Service へのデプロイの基本とベストプラクティスについて説明します。
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3429'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -69,9 +69,9 @@ AEM as a Cloud Service 上のアプリケーション用に作成されたコン
 
 デプロイメントパターンによるアプリケーション変更はスイッチで有効になるので、サービスユーザー、ACL、ノードタイプ、インデックス定義の変更を除き、可変リポジトリ内の変更に依存することはできません。
 
-コードベースが既にある場合は、AEM ドキュメントに記載されているリポジトリー再構築の演習を完了して、以前 /etc の配下にあったコンテンツが適切な場所に確実に移動されるようにすることが重要です。
+既存のコードベースをお持ちのお客様は、AEM ドキュメントに記載されているリポジトリー再構築の演習を完了して、以前 /etc の配下にあったコンテンツが適切な場所に確実に移動されるようにすることが重要です。
 
-これらのコードパッケージには、以下のような追加の制限が適用されます。 [フックを取り付ける](https://jackrabbit.apache.org/filevault/installhooks.html) はサポートされていません。
+これらのコードパッケージには、いくつかの追加の制限が適用されます。例えば、[インストールフック](https://jackrabbit.apache.org/filevault/installhooks.html)はサポートされません。
 
 ## OSGi 設定 {#osgi-configuration}
 
@@ -108,7 +108,7 @@ Cloud Manager で可変リポジトリにデプロイされるコンテンツ、
    * フォルダー（追加、変更、削除）
    * 編集可能なテンプレート（追加、変更、削除）
    * コンテキスト対応の設定（`/conf` 配下のあらゆるもの）（追加、変更、削除）
-   * スクリプト ( パッケージは、トリガーパッケージのインストールプロセスの様々な段階でインストールフックをインストールできます。 インストールフックについては、[Jackrabbit FileVault のドキュメント](https://jackrabbit.apache.org/filevault/installhooks.html)を参照してください。AEM as a Cloud Service では現在、FileVault バージョン 3.4.0 を使用しています（インストールフックの使用は管理者ユーザー、システムユーザー、管理者グループのメンバーに限定されています）。
+   * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）インストールフックについては、[Jackrabbit FileVault のドキュメント](https://jackrabbit.apache.org/filevault/installhooks.html)を参照してください。AEM as a Cloud Service では現在、FileVault バージョン 3.4.0 を使用しています（インストールフックの使用は管理者ユーザー、システムユーザー、管理者グループのメンバーに限定されています）。
 
 `/apps` 配下の install.author フォルダーまたは install.publish フォルダーにパッケージを埋め込むことで、可変コンテンツのインストールをオーサーまたはパブリッシュのみに制限することができます。この分離を反映した再構築は AEM 6.5 で行われました。推奨されるプロジェクト再構築の詳細については、 [AEM 6.5 のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja) を参照してください。
 
@@ -134,7 +134,7 @@ Cloud Manager で可変リポジトリにデプロイされるコンテンツ、
   >
   >ACL の定義では、ノード構造が既に存在する必要があります。そのため、先行するパス作成ステートメントが必要になる場合があります。
 
-* パスを追加（例えば、ルートフォルダー構造用）
+* パスの追加（例えば、ルートフォルダー構造用）
 * CND の追加（ノードタイプ定義）
 
 次の利点があるので、サポートされているこれらのコンテンツ変更使用例には、repoinit の使用をお勧めします。
@@ -295,7 +295,7 @@ Cloud Manager パイプラインを使用してコードをデプロイする通
 
 一方、AEM as a Cloud Service は、使用可能な実行モードと、それらへの OSGi バンドルおよび OSGi 設定のマッピング方法について、より保守的です。
 
-* OSGi 設定の実行モードでは、環境については RDE（迅速な開発環境）、開発、ステージ、実稼動のいずれかを、サービスについてはオーサーまたはパブリッシュを参照する必要があります。組み合わせ `<service>.<environment_type>` はサポートされていますが、これらの環境はこの特定の順序で使用する必要があります（例： ）。 `author.dev` または `publish.prod`) をクリックします。 OSGi トークンは、`getRunModes` メソッドを使用するのではなく、コードから直接参照する必要があります。このメソッドは、実行時に `environment_type` を組み込まなくなりました。詳しくは、[AEM as a Cloud Service の OSGi の設定](/help/implementing/deploying/configuring-osgi.md)を参照してください。
+* OSGi 設定の実行モードでは、環境については RDE（迅速な開発環境）、開発、ステージ、実稼動のいずれかを、サービスについてはオーサーまたはパブリッシュを参照する必要があります。`<service>.<environment_type>` の組み合わせはサポートされていますが、これらの環境は、この特定の順序で使用する必要があります（例えば、`author.dev` や `publish.prod` など）。OSGi トークンは、`getRunModes` メソッドを使用するのではなく、コードから直接参照する必要があります。このメソッドは、実行時に `environment_type` を組み込まなくなりました。詳しくは、[AEM as a Cloud Service の OSGi の設定](/help/implementing/deploying/configuring-osgi.md)を参照してください。
 * OSGi バンドルの実行モードは、サービス（author、publish）のみに制限されます。実行モードごとに、OSGi バンドルを `install.author` または `install.publish` の配下のコンテンツパッケージにインストールする必要があります。
 
 AEM as a Cloud Service では、実行モードを使用して特定の環境やサービスのコンテンツをインストールすることはできません。開発環境で、ステージング環境または実稼動環境にないデータや HTML を使用して開発環境をシードする必要がある場合は、パッケージマネージャーを使用できます。

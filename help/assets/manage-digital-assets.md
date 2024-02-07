@@ -7,9 +7,9 @@ feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4270'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ ZIP ファイルを抽出するには、次の手順を実行します。
 
    アセットを拡大するには、`+` を選択（またはアセット上の虫眼鏡を選択）します。縮小するには、`-` を選択します。ズームインすると、パンニングによって画像の任意の場所を詳細に確認できます。「ズームをリセット」矢印をクリックすると、元の表示に戻ります。
 
-   選択 **[!UICONTROL リセット]** をクリックして、表示を元のサイズに戻します。
+   「**[!UICONTROL リセット]**」を選択すると、表示を元のサイズに戻すことができます。
 
 ## プロパティの編集 {#editing-properties}
 
@@ -270,7 +270,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    * **[!UICONTROL 削除]**：アクションの実行を確定します。
 
       * アセットに参照がない場合は、アセットが削除されます。
-      * アセットに参照がある場合は、次のようなエラーメッセージが表示されます。 **[!UICONTROL 1 つ以上のアセットが参照されています]**. 次の項目を選択できます。 **[!UICONTROL 削除を強制]** または **[!UICONTROL キャンセル]**.
+      * アセットに参照がある場合は、「**[!UICONTROL 1 つ以上のアセットが参照されています]**」というエラーメッセージが表示されます。「**[!UICONTROL 削除を強制]**」または「**[!UICONTROL キャンセル]**」を選択できます。
 
    >[!NOTE]
    >
@@ -340,7 +340,7 @@ CUG は、アセットへのアクセスを制限する追加の方法です。�
 
 クイックアクションのアイコンは、一度に 1 つのアセットに対してのみ利用できます。デバイスに応じて、次の操作を実行してクイックアクションアイコンを表示します。
 
-* タッチデバイス：タッチ＆ホールド。例えば、iPadでは、アセットを選択したままにしてクイックアクションを表示できます。
+* タッチデバイス：タッチ＆ホールド。例えば iPad では、アセットを選択＆ホールドするとクイックアクションが表示されます。
 * 非タッチデバイス：マウスポインターで指す。例えばデスクトップデバイスでは、アセットのサムネールをマウスポインターで指すとクイックアクションバーが表示されます。
 
 <!-- Hiding this topic via cqdoc-18707
@@ -543,7 +543,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    <!--![chlimage_1-247](assets/chlimage_1-247.png)-->
 
-   レンダリングされたPDFファイルの外観を変更するには、コメントとステータスのフォントカラー、サイズ、スタイル、背景色などを変更するには、 **[!UICONTROL 注釈PDFの設定]** Configuration Manager から、必要なオプションを変更します。 例えば、承認済みステータスの表示色を変更するには、対応するフィールドのカラーコードを変更します。注釈のフォントカラーの変更について詳しくは、[注釈](/help/assets/manage-digital-assets.md#annotating)を参照してください。
+   レンダリングされた PDF ファイルの外観を変更するには、Configuration Manager から&#x200B;**[!UICONTROL 注釈 PDF の設定]**&#x200B;を開き、必要なオプションを変更します。例えば、コメントとステータスのフォントカラー、サイズ、スタイル、背景色を変更できます。例えば、承認済みステータスの表示色を変更するには、対応するフィールドのカラーコードを変更します。注釈のフォントカラーの変更について詳しくは、[注釈](/help/assets/manage-digital-assets.md#annotating)を参照してください。
 
    レンダリングされた PDF ファイルに戻り、更新します。更新された PDF に、変更が反映されています。
 

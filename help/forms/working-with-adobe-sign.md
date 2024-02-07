@@ -7,9 +7,9 @@ role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
 source-git-commit: e81da7414335e00411942adeb41978d39f172b52
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3242'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 91%
 署名が有効なアダプティブフォームを作成するには：
 
 1. **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;に移動します。
-1. 選択 **[!UICONTROL 作成]** を選択し、 **[!UICONTROL アダプティブフォーム]**. テンプレートのリストが表示されます。テンプレートを選択し、「 」を選択します。 **[!UICONTROL 次へ]**.
+1. 「**[!UICONTROL 作成]**」を選択して、「**[!UICONTROL アダプティブフォーム]**」をクリックします。テンプレートのリストが表示されます。テンプレートを選択して、「**[!UICONTROL 次へ]**」をクリックします。
 1. 「**[!UICONTROL 基本]**」タブで次の操作を行います。
 
    1. アダプティブフォームの&#x200B;**[!UICONTROL 名前]**&#x200B;と&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定します。
@@ -91,14 +91,14 @@ ht-degree: 91%
 
    * カスタムフォームテンプレートがない場合は、「**[!UICONTROL レコードのドキュメントを生成]**」オプションを選択します。このオプションを使用すると、署名用に送信されたドキュメントにアダプティブフォームのすべてのフィールドが表示されます。
 
-1. 選択 **[!UICONTROL を作成します。]** 署名が有効なアダプティブフォームが作成されます。[!DNL Adobe Sign] フィールドをフォームに追加し、署名用に送信できます。
+1. 「**[!UICONTROL 作成」を選択します。]** 署名が有効なアダプティブフォームが作成されます。[!DNL Adobe Sign] フィールドをフォームに追加し、署名用に送信できます。
 
 #### アダプティブフォームで [!DNL Adobe Sign] を有効にする {#editafsign}
 
 既存のアダプティブフォームで [!DNL Adobe Sign] を使用するには：
 
 1. **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;に移動します。
-1. アダプティブフォームを選択し、 **[!UICONTROL プロパティ]**.
+1. アダプティブフォームを選択し、「**[!UICONTROL プロパティ]**」をクリックします。
 1. 「**[!UICONTROL 基本]**」タブで、[!DNL Adobe Sign] を [!DNL AEM Forms] と統合するときに作成した [設定コンテナ](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) を選択します。
 1. 「**[!UICONTROL フォームモード]**」タブで、次のいずれかのオプションを選択します。
 
@@ -106,7 +106,7 @@ ht-degree: 91%
 
    * カスタムフォームテンプレートがない場合は、「**[!UICONTROL レコードのドキュメントを生成]**」オプションを選択します。このオプションを使用すると、署名用に送信されたドキュメントにアダプティブフォームのすべてのフィールドが表示されます。
 
-1. 選択 **[!UICONTROL 保存して閉じる]**. アダプティブフォームは [!DNL Adobe Sign] に対して有効になっています。これで、[!DNL Adobe Sign] フィールドをフォームに追加し、署名用に送信できます。
+1. 「**[!UICONTROL 保存して閉じる]**」を選択します。アダプティブフォームは [!DNL Adobe Sign] に対して有効になっています。これで、[!DNL Adobe Sign] フィールドをフォームに追加し、署名用に送信できます。
 
 ### アダプティブフォームに [!DNL Adobe Sign] フィールドを追加する {#addadobesignfieldstoanadaptiveform}
 
@@ -126,15 +126,15 @@ ht-degree: 91%
    >  * レコードのドキュメントが自動的に生成されるアダプティブフォームの場合のみ、[!DNL Adobe Sign] ブロックを使用してください。カスタムの XDP を使用して、レコードのドキュメントやフォームテンプレートベースのアダプティブフォームを生成する場合は、[!DNL Adobe Sign] ブロックはサポートされていません。
 
 
-1. を選択します。 **[!UICONTROL Adobe Sign Block]** コンポーネントを選択し、 **[!UICONTROL 編集]** ![編集](assets/Smock_Edit_18_N.svg) アイコン。 フィールドを追加するためのオプションと、フィールドの外観を設定するためのオプションが表示されます。
+1. **[!UICONTROL Adobe Sign ブロック]**&#x200B;コンポーネントを選択し、「**[!UICONTROL 編集]**」![編集](assets/Smock_Edit_18_N.svg) アイコンをクリックします。フィールドを追加するためのオプションと、フィールドの外観を設定するためのオプションが表示されます。
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
    **A.** [!DNL Adobe Sign] フィールドを選択して追加。**B.** [!DNL Adobe Sign] ブロックを展開して全画面表示。
 
-1. を選択します。 **[!UICONTROL Adobe Sign]** フィールド ![Adobe Sign](assets/adobesign.png) アイコン。 [!DNL Adobe Sign] フィールドの選択オプションと追加オプションが表示されます。
+1. 「**[!UICONTROL Adobe Sign]**」フィールド ![Adobe Sign](assets/adobesign.png) アイコンを選択します。[!DNL Adobe Sign] フィールドの選択オプションと追加オプションが表示されます。
 
-   を展開します。 **[!UICONTROL タイプ]** 次を選択するためのドロップダウンフィールド： [!DNL Adobe Sign] フィールドで「完了」を選択します。 ![保存](assets/save_icon.svg) 選択したフィールドを追加するアイコン [!DNL Adobe Sign] ブロック。 「**[!UICONTROL タイプ]**」ドロップダウンフィールドには、「署名」タイプ、「受信者の情報」タイプ、「データフィールド」タイプが表示されます。[!DNL Adobe Sign] が AEM に統合されている場合、[!DNL Forms] は「[!UICONTROL タイプ]」ドロップダウンボックスに表示されているフィールドのみサポートします。[!DNL Adobe Sign] フィールドについて詳しくは、 [Adobe Sign のドキュメント](https://helpx.adobe.com/jp/sign/using/field-types.html) を参照してください。
+   **[!UICONTROL タイプ]**&#x200B;ドロップダウンフィールドを展開して「[!DNL Adobe Sign]」フィールドを選択し、「完了」![保存](assets/save_icon.svg) アイコンを選択して、選択したフィールドを [!DNL Adobe Sign] ブロックに追加します。「**[!UICONTROL タイプ]**」ドロップダウンフィールドには、「署名」タイプ、「受信者の情報」タイプ、「データフィールド」タイプが表示されます。[!DNL Adobe Sign] が AEM に統合されている場合、[!DNL Forms] は「[!UICONTROL タイプ]」ドロップダウンボックスに表示されているフィールドのみサポートします。[!DNL Adobe Sign] フィールドについて詳しくは、 [Adobe Sign のドキュメント](https://helpx.adobe.com/jp/sign/using/field-types.html) を参照してください。
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -149,7 +149,7 @@ ht-degree: 91%
 
 初期状態の [!DNL Adobe Sign] は、アダプティブフォームに対して有効になっていません。有効にするには：
 
-1. コンテンツブラウザーで、「 」を選択します。 **[!UICONTROL フォームコンテナ]**&#x200B;をクリックし、 **[!UICONTROL 設定]** ![設定](assets/Smock_Wrench_18_N.svg) アイコン。 この操作により、アダプティブフォームのコンテナプロパティを表示するプロパティブラウザーが開きます。
+1. コンテンツブラウザーで「**[!UICONTROL フォームコンテナ]**」を選択し、「**[!UICONTROL 設定]**」![設定](assets/Smock_Wrench_18_N.svg) アイコンをクリックします。この操作により、アダプティブフォームのコンテナプロパティを表示するプロパティブラウザーが開きます。
 1. このプロパティブラウザーで「**[!UICONTROL 電子サイン]**」アコーディオンを展開し、「**[!UICONTROL Adobe Sign を有効にする]**」オプションを選択します。この操作により、アダプティブフォームに対して [!DNL Adobe Sign] が有効になります。
 
 ### [!DNL Adobe Sign] Cloud Service と署名順序を選択する {#select-adobe-sign-cloud-service-and-signing-order}
@@ -162,7 +162,7 @@ Cloud Service と署名する順序を選択するには：
 
 ![Cloud-service](/help/forms/assets/adobe-sign-cloud-service.png)
 
-1. コンテンツブラウザーで、「 」を選択します。 **[!UICONTROL フォームコンテナ]**&#x200B;をクリックし、 **[!UICONTROL 設定]** ![設定](assets/Smock_Wrench_18_N.svg) アイコン。 この操作により、アダプティブフォームのコンテナプロパティを表示するプロパティブラウザーが開きます。
+1. コンテンツブラウザーで「**[!UICONTROL フォームコンテナ]**」を選択し、「**[!UICONTROL 設定]**」![設定](assets/Smock_Wrench_18_N.svg) アイコンをクリックします。この操作により、アダプティブフォームのコンテナプロパティを表示するプロパティブラウザーが開きます。
 1. このプロパティブラウザーで「**[!UICONTROL 電子サイン]**」アコーディオンを展開し、「**[!UICONTROL Adobe Sign を有効にする]**」オプションを選択します。この操作により、アダプティブフォームに対して [!DNL Adobe Sign] が有効になります。
 1. 既に設定されている [!DNL Adobe Sign] Cloud Service のリストから、任意の Cloud Service を選択します。
 
@@ -170,9 +170,9 @@ Cloud Service と署名する順序を選択するには：
 
    ドロップダウンは、ツール／**[!UICONTROL Cloud Services]**／**[!UICONTROL Adobe Sign]** の `global` フォルダーに存在するクラウドサービスをリストします。また、このドロップダウンリストは、アダプティブフォームの作成時に「**[!UICONTROL 設定コンテナ]**」フィールドで選択したフォルダーに存在するクラウドサービスも表示します。
 
-1. 送信アクションを設定するオプションを選択します。 **[!UICONTROL フォームを送信]**. 次の 2 つのオプションのいずれかを選択できます。
-   * **フォームを送信する（および署名に関する契約を送信する）**：このオプションでは、フォームを直ちに送信し、受信者に署名用のフォームを送信します。
-   * **フォームを送信します（各受信者が署名式を完了した後）**：このオプションでは、すべての署名者が署名プロセスを完了した後でのみ、Adaptive Formsを送信します。 この間隔を設定して、すべての署名者の署名ステータスを確認できます。 詳しくは、  [設定 [!DNL Adobe Acrobat Sign] scheduler](/help/forms/adobe-sign-integration-adaptive-forms.md#configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status).
+1. **[!UICONTROL フォームを送信]**&#x200B;を使用して送信アクションを設定するオプションを選択します。次の 2 つのオプションのいずれかを選択できます。
+   * **フォームを送信（および署名に関する契約書を送信）**：このオプションでは、フォームを直ちに送信し、受信者に署名用のフォームを送信します。
+   * **フォームを送信（すべての受信者が署名行為を完了した後）**：このオプションでは、すべての署名者が署名プロセスを完了した後でのみ、アダプティブフォームを送信します。すべての署名者の署名ステータスを確認する間隔を設定できます。詳しくは、[ [!DNL Adobe Acrobat Sign]  スケジューラーの設定](/help/forms/adobe-sign-integration-adaptive-forms.md#configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status)を参照してください。
 
 1. 「**[!UICONTROL 受信者の署名順序]**」ドロップダウンから、署名順序を選択します。受信者は、アダプティブフォームを&#x200B;**[!UICONTROL 連続]**&#x200B;して（指定順に）署名することも、**[!UICONTROL 同時]**&#x200B;に（順不同で）署名することもできます。
 
@@ -184,17 +184,17 @@ Cloud Service と署名する順序を選択するには：
 
    >[!NOTE]
    >
-   > フォームデータモデルを使用してアダプティブフォームを作成すると、ダイアログボックスに契約 ID フィールドが表示されます。
+   > フォームデータモデルを使用してアダプティブフォームを作成している場合、ダイアログボックスに「契約 ID」フィールドが表示されます。
 
-1. [アダプティブフォームに受信者を追加する](working-with-adobe-sign.md#addsignerstoanadaptiveform) をクリックし、「完了」を選択します。 ![保存](assets/save_icon.svg) アイコンをクリックして変更を保存します。
+1. [アダプティブフォームに受信者を追加](working-with-adobe-sign.md#addsignerstoanadaptiveform)し、「完了」![保存](assets/save_icon.svg) アイコンを選択して変更内容を保存します。
 
 ### アダプティブフォームに受信者を追加する {#addsignerstoanadaptiveform}
 
 1 つの Adobe Sign 契約書に 1 人または複数の受信者を設定できます。受信者を追加する際に、受信者の認証の詳細を設定し、フォームの入力者と受信者が同一人物かどうかを選択することもできます。受信者に関する各種詳細情報の追加と指定を行うには、次の手順を実行します。
 
-1. コンテンツブラウザーで、「 」を選択します。 **[!UICONTROL フォームコンテナ]**&#x200B;をクリックし、 **[!UICONTROL 設定]** ![設定](assets/Smock_Wrench_18_N.svg) アイコン。 この操作により、アダプティブフォームのコンテナプロパティを表示するプロパティブラウザーが開きます。
+1. コンテンツブラウザーで「**[!UICONTROL フォームコンテナ]**」を選択し、「**[!UICONTROL 設定]**」![設定](assets/Smock_Wrench_18_N.svg) アイコンを選択します。この操作により、アダプティブフォームのコンテナプロパティを表示するプロパティブラウザーが開きます。
 1. このプロパティブラウザーで「**[!UICONTROL 電子サイン]**」アコーディオンを展開し、「**[!UICONTROL Adobe Sign を有効にする]**」オプションを選択します。この操作により、アダプティブフォームに対して [!DNL Adobe Sign] が有効になります。
-1. 選択 **[!UICONTROL 受信者を追加]**. この操作により、アダプティブフォームに受信者が追加されます。1 つのアダプティブフォームに複数の受信者を追加できます。すべての受信者は、アダプティブフォームの送信時に Adobe Sign 契約書を受け取ります。
+1. 「**[!UICONTROL 受信者を追加]**」を選択します。この操作により、アダプティブフォームに受信者が追加されます。1 つのアダプティブフォームに複数の受信者を追加できます。すべての受信者は、アダプティブフォームの送信時に Adobe Sign 契約書を受け取ります。
    ![phone-details](assets/recipient-settings.png)
 
 1. **[!UICONTROL 編集]**&#x200B;アイコン（![編集](assets/Smock_Edit_18_N.svg)）をクリックして、受信者に関する以下の情報を指定します。
@@ -224,7 +224,7 @@ Cloud Service と署名する順序を選択するには：
 
    上の画像には、Personal-Information と Office-details という 2 つのサンプルの [!DNL Adobe Sign] ブロックが表示されています。
 
-   を選択します。 ![保存](assets/save_icon.svg) アイコン。 受信者が追加されます。
+   ![保存](assets/save_icon.svg) アイコンを選択します。受信者が追加されます。
 
 ### アダプティブフォームの送信アクションを選択する {#selectsubmitactionforanadaptiveform}
 
@@ -309,15 +309,15 @@ Adobe Sign 契約 ID（agreementId）は、アダプティブフォームの送�
 
    ![署名ブロック](assets/sign-block-new.png)
 
-1. を選択します。 **[!UICONTROL Adobe Sign Block]** コンポーネントを選択し、 **[!UICONTROL 編集]** ![編集](assets/Smock_Edit_18_N.svg) アイコン。 フィールドを追加するためのオプションと、フィールドの外観を設定するためのオプションが表示されます。
+1. **[!UICONTROL Adobe Sign ブロック]**&#x200B;コンポーネントを選択し、「**[!UICONTROL 編集]**」![編集t](assets/Smock_Edit_18_N.svg) アイコンをクリックします。フィールドを追加するためのオプションと、フィールドの外観を設定するためのオプションが表示されます。
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
    **A.** [!DNL Adobe Sign] フィールドを選択して追加。**B.** [!DNL Adobe Sign] ブロックを展開して全画面表示。
 
-1. を選択します。 **[!UICONTROL Adobe Sign Field]** ![Adobe Sign](assets/adobesign.png) アイコン。 [!DNL Adobe Sign] フィールドの選択オプションと追加オプションが表示されます。
+1. **[!UICONTROL Adobe Sign フィールド]** ![Adobe Sign](assets/adobesign.png) アイコンを選択します。[!DNL Adobe Sign] フィールドの選択オプションと追加オプションが表示されます。
 
-   を展開します。 **[!UICONTROL タイプ]** 選択するドロップダウンフィールド **[!UICONTROL 電子署名]** をクリックし、 **[!UICONTROL 完了]** 選択したフィールドを追加するアイコン [!DNL Adobe Sign] ブロック。
+   **[!UICONTROL タイプ]**&#x200B;ドロップダウンフィールドを展開して「**[!UICONTROL デジタル署名]**」を選択し、**[!UICONTROL 完了]**&#x200B;アイコンを選択して、選択したフィールドを [!DNL Adobe Sign] ブロックに追加します。
 
    ![電子署名](assets/digital_signatures_new.png)
 

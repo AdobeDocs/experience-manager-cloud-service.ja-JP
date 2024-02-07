@@ -3,9 +3,9 @@ title: 実装段階
 description: クラウドに移行するためのコードとコンテンツの準備が整っていることの確認
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2282'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Cloud Services と互換性を持たせるために、既存の機能のリフ�
 
 
 * 計画中は、AEM as a Cloud Service との互換性を保つためにリファクタリングが必要な領域のリストを用意しておくことをお勧めします。Cloud Service のコードをリファクタリングして最適化する方法について詳しくは、 [開発ガイドライン](/help/implementing/developing/introduction/development-guidelines.md) を確認してください。
-* AEM as a Cloud Service で [設定を管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration) する方法を確認してください。
+* AEM as a Cloud Service で [設定を管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=ja#what-is-a-configuration) する方法を確認してください。
 * [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ja) をダウンロードして、ローカル開発環境を設定する方法を確認してください。
 * 最後に、[AEM as a Cloud Service Java API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) について詳しく確認してください。
 
@@ -104,8 +104,8 @@ AEM Maven プロジェクトをクラウドに対応させるためには、あ�
 
 * [アセットワークフロー移行](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)：アセット処理ワークフローを自動的に移行するためのツール
 * [Dispatcher コンバーター](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)： 既存の Dispatcher 設定を、AEM as a Cloud Service に対応する形式に変換するツール。
-* [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html)：AEM Multimode プロジェクトを入力として取り、AEM as a Cloud Service プロジェクトに変換するツール
-* [インデックスコンバーター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html)：インデックスを AEM as a Cloud Service 互換のフォームに変換するツール
+* [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=ja)：AEM Multimode プロジェクトを入力として取り、AEM as a Cloud Service プロジェクトに変換するツール
+* [インデックスコンバーター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=ja)：インデックスを AEM as a Cloud Service 互換のフォームに変換するツール
 * [最新化ツール](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)： 従来の AEM 機能を、サポートされている最新の AEM as a Cloud Service 機能に変換するためのユーティリティスイート。
 
 ローカル開発環境を設定したら、AEM as a Cloud Service SDK に精通するために、 [ドキュメント](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) を参照してください。

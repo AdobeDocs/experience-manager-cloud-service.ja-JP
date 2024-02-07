@@ -4,9 +4,9 @@ description: Adobe Experience Manager を使用したヘッドレス実装の権
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '811'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 99%
 
 ベストプラクティスとして、権限は AEM のグループに設定してください。これらのグループはローカルグループとも呼ばれ、AEM オーサー環境内で管理できます。
 
-グループメンバーシップを管理する最も簡単な方法は、Adobe Identity Management System（IMS）グループを使用し、[IMS グループをローカル AEM グループに割り当てる](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#managing-permissions-in-aem)ことです。
+グループメンバーシップを管理する最も簡単な方法は、Adobe Identity Management System（IMS）グループを使用し、[IMS グループをローカル AEM グループに割り当てる](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=ja#managing-permissions-in-aem)ことです。
 
 ![Admin Console の権限フロー](assets/admin-console-aem-group-permissions.png)
 

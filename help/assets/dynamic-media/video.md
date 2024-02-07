@@ -6,9 +6,9 @@ feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 source-git-commit: 0d5f95cc2e7378f09c8f6c4bc3858e7b42c07924
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '9350'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 99%
 
 1. 次の手順を実行して、**Dynamic Media ビデオをアップロード**&#x200B;します。
 
-   * 独自のビデオエンコーディングプロファイルを作成します。 または、次のように定義済み _アダプティブビデオエンコーディング_ Dynamic Mediaに付属するプロファイル。
+   * 独自のビデオエンコーディングプロファイルを作成します。または、Dynamic Media に付属する、事前定義済みの「_アダプティブビデオエンコーディング_」プロファイルを使用します。
 
       * [ビデオエンコーディングプロファイルを作成します](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)。
       * 詳しくは、[ビデオエンコーディングのベストプラクティス](#best-practices-for-encoding-videos)を参照してください。
@@ -712,7 +712,7 @@ Dynamic Media では、URL 修飾子を使用して、ビデオにキャプシ�
 >デフォルトのオーディオの再生は、次のブラウザーで設定されている内容によっても異なります。
 >
 >* Chrome - ビデオに設定されているデフォルトのオーディオが再生されます。
-* Safari - Safari でデフォルト言語が設定されている場合、オーディオは設定されたデフォルト言語で再生されます（ビデオのマニフェストで使用できる場合）。それ以外の場合は、ビデオのプロパティの一部として設定されたデフォルトのオーディオが再生されます。
+>* Safari - Safari でデフォルト言語が設定されている場合、オーディオは設定されたデフォルト言語で再生されます（ビデオのマニフェストで使用できる場合）。それ以外の場合は、ビデオのプロパティの一部として設定されたデフォルトのオーディオが再生されます。
 
 **複数のオーディオトラックがあるビデオのデフォルトオーディオを設定するには：**
 
@@ -739,7 +739,7 @@ Dynamic Media では、URL 修飾子を使用して、ビデオにキャプシ�
 
 >[!NOTE]
 >
-Experience Manager のデフォルトの「プレビュー」タブには、複数のサブタイトルとオーディオトラックは表示されません。これは、これらのトラックが Dynamic Media に関連付けられており、Dynamic Media ビューアーのプレビューでのみ表示できるからです。
+>Experience Manager のデフォルトの「プレビュー」タブには、複数のサブタイトルとオーディオトラックは表示されません。これは、これらのトラックが Dynamic Media に関連付けられており、Dynamic Media ビューアーのプレビューでのみ表示できるからです。
 
 **複数のサブタイトルとオーディオトラックを持つビデオをプレビューするには：**
 
@@ -818,7 +818,7 @@ Experience Manager のデフォルトの「プレビュー」タブには、複�
 
 >[!IMPORTANT]
 >
-Dynamic Media アカウントで[マルチサブタイトルおよびマルチオーディオトラック機を有効にする](#enable-dash)ことをお勧めします。そうすることで、最新の Dynamic Media バックエンドアーキテクチャと、キャプション、サブタイトル、オーディオトラックをビデオに追加するための簡素化されたワークフローを利用できるようになります。
+>Dynamic Media アカウントで[マルチサブタイトルおよびマルチオーディオトラック機を有効にする](#enable-dash)ことをお勧めします。そうすることで、最新の Dynamic Media バックエンドアーキテクチャと、キャプション、サブタイトル、オーディオトラックをビデオに追加するための簡素化されたワークフローを利用できるようになります。
 
 1 つのビデオまたはアダプティブビデオセットにクローズドキャプションを追加すると、ビデオの配信先をグローバルマーケットまで拡大できます。クローズドキャプションを追加すると、音声をダビングする必要も、異なる言語ごとにネイティブスピーカーの音声を使って再録音する必要もなくなります。ビデオは、録画された言語で再生されます。外国語の字幕が表示されるので、違う言語の視聴者もオーディオ部分を理解できます。
 
@@ -826,7 +826,7 @@ Dynamic Media アカウントで[マルチサブタイトルおよびマルチ�
 
 >[!NOTE]
 >
-使用するビデオプレーヤーがクローズドキャプションの表示に対応する必要があります。
+>使用するビデオプレーヤーがクローズドキャプションの表示に対応する必要があります。
 
 詳しくは、[Dynamic Media のアクセシビリティ](/help/assets/dynamic-media/accessibility-dm.md)を参照してください。
 
@@ -842,7 +842,7 @@ URL での JSON 機能の使用について詳しくは、[静的な（画像以
 
    [WebVTT：Web Video Text Tracks 形式（英語）](https://w3c.github.io/webvtt/)を参照してください。
 
-   Dynamic Mediaの外部で WebVTT キャプション/サブタイトルファイルを作成する際に使用できる、無料およびプレミアムのツールとサービスの両方を提供する Web サイトが多数あります。 <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
+   Dynamic Media 以外で WebVTT キャプションやサブタイトルのファイルの作成に使用できる、無料と有料のツールやサービスを提供している web サイトが多数あります。<!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
    <!-- [WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
@@ -850,11 +850,11 @@ URL での JSON 機能の使用について詳しくは、[静的な（画像以
 
    In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.-->
 
-サイトの画面に表示される指示に従って、WebVTT ファイルを作成し、保存します。 終了したら、キャプションファイルの内容をコピーし、空のテキストエディターに貼り付けて、ファイル拡張子 VTT を付けて保存します。
+サイトの画面に表示される指示に従って、WebVTT ファイルを作成して保存します。終了したら、キャプションファイルの内容をコピーし、空のテキストエディターに貼り付けて、ファイル拡張子 VTT を付けて保存します。
 
 >[!NOTE]
 >
-複数言語のビデオサブタイトルを用意してグローバル対応する場合、WebVTT 標準の規定により、サポート対象の言語ごとに個別の .vtt ファイルを作成して呼び出す必要があります。
+>複数言語のビデオサブタイトルを用意してグローバル対応する場合、WebVTT 標準の規定により、サポート対象の言語ごとに個別の .vtt ファイルを作成して呼び出す必要があります。
 
 一般に、VTT キャプションファイルの名前には、ビデオファイルと同じ名前を付けて、名前の末尾に言語ロケール（-EN、-FR、-DE など）を追加します。そうしておくと、既存の web コンテンツ管理システムを使用してビデオの URL を自動的に生成する際に役立ちます。
 
@@ -867,7 +867,7 @@ URL での JSON 機能の使用について詳しくは、[静的な（画像以
 
 1. 次のいずれかの操作を行います。
 
-   * ポップアップビデオビューアエクスペリエンスの場合は、 **[!UICONTROL URL]**. URL ダイアログボックスで、URL を選択してクリップボードにコピーし、その URL を単純なテキストエディターに貼り付けます。コピーしたビデオの URL を次の構文で追加します。
+   * ポップアップビデオビューアエクスペリエンスの場合、「**[!UICONTROL URL]**」を選択します。URL ダイアログボックスで、URL を選択してクリップボードにコピーし、その URL を単純なテキストエディターに貼り付けます。コピーしたビデオの URL を次の構文で追加します。
 
      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
@@ -885,7 +885,7 @@ URL での JSON 機能の使用について詳しくは、[静的な（画像以
 
 >[!NOTE]
 >
-ビデオプレーヤーが、チャプターマーカーの使用をサポートしている必要があります。Dynamic Media ビデオプレーヤーは、チャプターマーカーをサポートしていますが、サードパーティのビデオプレーヤーは、チャプターマーカーをサポートしているとは限りません。
+>ビデオプレーヤーが、チャプターマーカーの使用をサポートしている必要があります。Dynamic Media ビデオプレーヤーは、チャプターマーカーをサポートしていますが、サードパーティのビデオプレーヤーは、チャプターマーカーをサポートしているとは限りません。
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 

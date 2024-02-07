@@ -6,15 +6,15 @@ role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1333'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # アダプティブフォームの JSON スキーマをデザイン {#creating-adaptive-forms-using-json-schema}
 
-[新しいアダプティブフォームを作成する](/help/forms/creating-adaptive-form-core-components.md)、または [AEM Sites ページにアダプティブフォームを追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)際には、<span class="preview"> 最新の拡張可能なデータキャプチャである[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を示すものであり、優れたユーザーエクスペリエンスを実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成するより従来的な方法について説明します。</span>
+[新しいアダプティブフォームを作成する](/help/forms/creating-adaptive-form-core-components.md)、または [AEM Sites ページにアダプティブフォームを追加する](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)際には、<span class="preview"> 最新の拡張可能なデータキャプチャである[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -732,14 +732,14 @@ JSON スキーマの要素に以下の制限を追加して、アダプティブ
 </table>
 
 
-## スキーマ準拠データを有効にする {#enablig-schema-compliant-data}
+## スキーマ準拠データの有効化 {#enablig-schema-compliant-data}
 
-フォーム送信時に、すべての JSON スキーマベースのアダプティブFormsでスキーマに準拠したデータを生成するには、次の手順に従います。
+フォーム送信時にすべての JSON スキーマベースのアダプティブフォームでスキーマに準拠したデータを生成できるようにするには、次の手順に従います。
 
-1. Experience ManagerWeb コンソール ( ) に移動します。 `https://server:host/system/console/configMgr`.
-1. **[!UICONTROL アダプティブフォームおよびインタラクティブ通信 web チャネルの設定]**
-1. 「 」を選択して、設定を編集モードで開きます。
-1. を選択します。 **[!UICONTROL スキーマ準拠データを生成]** チェックボックス。
+1. `https://server:host/system/console/configMgr` で Experience Manager web コンソールに移動します。
+1. **[!UICONTROL アダプティブフォームおよびインタラクティブ通信 web チャネルの設定]**&#x200B;を見つけます。
+1. その設定を選択して編集モードで開きます。
+1. **[!UICONTROL スキーマ準拠データを生成]**&#x200B;チェックボックスをオンにします。
 1. 設定を保存します。
 
 ![アダプティブフォームおよびインタラクティブ通信 web チャネルの設定](/help/forms/assets/af-ic-web-channel-configuration.png)

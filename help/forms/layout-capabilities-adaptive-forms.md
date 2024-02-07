@@ -4,9 +4,9 @@ description: 各種デバイスごとのアダプティブフォームのレイ�
 feature: Adaptive Forms, Foundation Components
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '847'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Before learning about the different layout capabilities of Adaptive Forms, read 
 
 フォーム作成者は、ルートパネルを含めたアダプティブフォームの各パネルにレイアウトを関連付けることができます。
 
-パネルレイアウトは`/libs/fd/af/layouts/panel`から利用できます。パネルを選択し、「 」を選択します。 ![cmppr1](assets/configure-icon.svg) をクリックして、パネルのプロパティを表示します。
+パネルレイアウトは`/libs/fd/af/layouts/panel`から利用できます。パネルを選択し、![cmppr1](assets/configure-icon.svg) を選択して、パネルのプロパティを表示します。
 
 ![アダプティブフォームのルートパネルに使用できるパネルレイアウトのリスト](assets/layouts.png)
 

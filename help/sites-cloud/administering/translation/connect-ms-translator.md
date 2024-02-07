@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '487'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,10 +23,10 @@ AEM ページのコンテンツまたはアセットの翻訳に Microsoft Trans
 >
 >AEM には、毎月最大 2,000,000 文字の無料翻訳を利用できる体験版の Microsoft Translation アカウントが用意されています。実稼動システムに適したアカウントサブスクリプションを取得するには、[Microsoft Translator 体験版ライセンス設定のアップグレード](#upgrading-the-microsoft-translator-trial-license-configuration)を参照してください。
 
-| プロパティ | 説明 |
+| Property | 説明 |
 |---|---|
 | 翻訳ラベル | 翻訳サービスの表示名 |
-| 翻訳の帰属 | （オプション）ユーザー生成コンテンツの場合、翻訳されたテキストの横に表示されるアトリビューション。例： `Translations by Microsoft` |
+| 翻訳の帰属 | （オプション）ユーザー生成コンテンツの場合に、翻訳済みのテキストの横に表示される帰属情報（例：「`Translations by Microsoft`」） |
 | ワークスペース ID | （オプション）使用するカスタム Microsoft Translator エンジンの ID |
 | サブスクリプションキー | Microsoft Translator の Microsoft サブスクリプションキー |
 

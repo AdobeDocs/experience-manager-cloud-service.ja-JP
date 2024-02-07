@@ -3,9 +3,9 @@ title: URL の外部化
 description: Externalizer は、プログラムによってリソースパスを外部の絶対 URL に変換できる OSGi サービスです。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '630'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -99,7 +99,7 @@ Externalizer サービスのドメインマッピングを定義するには：
 
 >[!NOTE]
 >
->HTML のコンテキストでは絶対リンクを作成しないでください。したがって、このユーティリティはこの場合には使用しないでください。
+>HTML のコンテキストでは絶対リンクを作成しないでください。したがって、この場合には、このユーティリティは使用しないでください。
 
 * **「publish」ドメインを付与してパスを外部化するには：**
 

@@ -3,7 +3,7 @@ title: AEM コネクタの登録
 description: Adobe Experience Manager（AEM）as a Cloud Service でコネクタを正しく参照およびデプロイする方法を説明します。
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '296'
 ht-degree: 100%
 

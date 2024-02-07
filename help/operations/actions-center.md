@@ -3,9 +3,9 @@ title: アクションセンター
 description: アクションセンターを活用して、インシデントやその他の重要な情報への処理を効果的に行います。
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '734'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ AEM as a Cloud Service の通知には複数のタイプがありますが、次
 |---|---|---|---|
 | 運用上のインシデント | 即時対応を求められる重大なインシデント | 「インシデント通知 - Cloud Service」製品プロファイルに割り当てられたユーザー | X |
 | プロアクティブなレコメンデーション | 予定しておくべき最適化 | 「事前通知 - Cloud Service」製品プロファイルに割り当てられたユーザー | X |
-| Cloud Manager のパイプラインステータス | パイプラインのステータスに関する情報 | ビジネスオーナー、プログラムマネージャーまたはデプロイメントマネージャーの役割を持つユーザー（で「その他」チェックボックスを選択） [Experience Cloud環境設定](https://experience.adobe.com/preferences)、 [ここで説明](/help/implementing/cloud-manager/notifications.md). |   |
+| Cloud Manager のパイプラインステータス | パイプラインのステータスに関する情報 | [ここで説明](/help/implementing/cloud-manager/notifications.md)するように、ビジネスオーナー、プログラムマネージャーまたはデプロイメントマネージャーの役割を持ち、[Experience Cloud の環境設定](https://experience.adobe.com/preferences)で「その他」チェックボックスがオンになっているユーザー。 |   |
 
 ## サポートされている通知タイプ {#supported-notification-types}
 
@@ -72,5 +72,5 @@ AEM as a Cloud Service の通知には複数のタイプがありますが、次
 | 通知タイプ | 関連する製品プロファイル | 是正措置 |
 |---------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ブロックされたレプリケーションキュー | インシデント | キューのブロックを解除するには、[レプリケーションドキュメント](/help/operations/replication.md#troubleshooting)の手順に従ってください。 |
-| 無効な永続化されたGraphQLクエリ | インシデント | 無効なGraphQLクエリを修正するには、 [永続的なGraphQLクエリのトラブルシューティングドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
+| 無効な永続 GraphQL クエリ | インシデント | [永続 GraphQL クエリのトラブルシューティングドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=ja)を参照して、無効な GraphQL クエリを修正する |
 | S2S 証明書の有効期限が切れます | 事前対応 | [サーバーサイド API のアクセストークンの生成ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)で資格情報を更新する方法を説明します。 |

@@ -5,9 +5,9 @@ contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4303'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 98%
 
 プラグインをアクティベートしたら、次のガイドラインに従って `features` プロパティを設定します。
 
-| | すべての機能を有効化 | いくつかの特定の機能を有効にします。 | すべての機能を無効化。 |
+| | すべての機能を有効化 | 一部の特定の機能を有効化。 | すべての機能を無効化。 |
 |---|---|---|---|
 | 名前 | features | features | features |
 | 型 | String | `String`（複数文字列。CRXDE Lite で型を `String` に設定し、`Multi` をクリック） | String |
@@ -95,7 +95,7 @@ RTE では、次の 3 つのいずれかのモードで、コンテンツを貼�
 
 必須アイコンを表示するように RTE を設定するには、以下の手順に従います。
 
-1. 例えば、コンポーネントに移動します。 `/apps/<myProject>/components/text`.
+1. 例えば、`/apps/<myProject>/components/text` などのコンポーネントに移動します。
 1. `rtePlugins/edit` ノードに移動します。このノードが存在しない場合は、[プラグインのアクティベート](#activateplugin)を参照してください。
 1. `features` ノードの `edit` プロパティを作成し、1 つ以上の機能を追加します。すべての変更を保存します。
 
@@ -158,7 +158,7 @@ Microsoft Word として貼り付け（`paste-wordhtml`）モードをさらに�
 
 1. その他の様々なプロパティやノードを使用して、その他の書式も定義でき、`htmlPasteRules` ノードに適用できます。
 
-| プロパティ | 型 | 説明 |
+| Property | 型 | 説明 |
 |--- |--- |--- |
 | `allowBlockTags` | `String` | 使用可能なブロックタグのリストを定義します。ヘッドライン（h1、h2、h3）、段落（p）、リスト（ol、ul）、テーブル（table）など、使用できるブロックタグがいくつかあります。 |
 | `fallbackBlockTag` | `String` | `allowBlockTags` に含まれていないブロックタグを含むブロックに使用されるブロックタグを定義します。通常は `p` で十分です。 |
@@ -228,7 +228,7 @@ Microsoft Word として貼り付け（`paste-wordhtml`）モードをさらに�
 
 次に、参照するスタイルシートの場所を指定します。
 
-1. テキストコンポーネントのルートノードに移動します（例： ）。 `/apps/<myProject>/components/text`.
+1. テキストコンポーネントのルートノードに移動します（例：`/apps/<myProject>/components/text`）。
 1. `externalStyleSheets` の親ノードに、`<rtePlugins-node>` プロパティを追加します。
 
    * **名前** `externalStyleSheets`
@@ -302,8 +302,8 @@ RTE をダイアログ（クラシック UI）で使用する場合は、リッ�
    * 値：`jpn-word-wrap`（先行の `.` なし）
 
 1. プロパティテキストを同じノードに追加します。値は、スタイルを選択するときに作成者に表示されるスタイルの名前です。
-   * 名前： `text`
-*タイプ： `String`
+   * 名前：`text`
+*型：`String`
    * 値：`Japanese word-wrap`
 
 1. スタイルシートを作成してそのパスを指定します。[スタイルシートの場所を指定](#locationofstylesheet)を参照してください。スタイルシートに次のコンテンツを追加します。必要に応じて背景色を変更してください。
@@ -329,7 +329,7 @@ RTE で作成したテキストは、ブロックタグ（デフォルトでは 
 
 >[!NOTE]
 >
->ブロックタグ ( 例： `<hr>` タグを使用する場合は、段落に割り当てることはできません。これは、 `paraformat` プラグインを使用します。
+>ブロックタグ（`<hr>` タグなど）を段落に割り当てることができない場合は、`paraformat` プラグインの有効なユースケースではありません。
 
 段落書式プラグインを初めて有効にした場合、デフォルトの段落書式は使用できません。ポップアップリストは空です。段落書式を使用できるようにするには、次の操作をおこないます。
 

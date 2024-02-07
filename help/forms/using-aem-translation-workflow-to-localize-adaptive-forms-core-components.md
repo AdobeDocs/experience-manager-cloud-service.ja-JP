@@ -4,9 +4,9 @@ description: AEM Forms でフォームデータモデルを作成し、サンプ
 feature: Adaptive Forms, Core Components
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '884'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 96%
 
 機械翻訳サービスを使用すると、アダプティブフォームおよび[レコードのドキュメント](/help/forms/generate-document-of-record-core-components.md)を即座に翻訳できます。AEM Forms as a Cloud Service では、機械翻訳に Microsoft Translator の体験版を使用することが事前に定義されています。アダプティブフォームおよびレコードのドキュメントの機械翻訳を有効にするには、以下の手順を実行します。
 
-1. AEM Forms UI で、フォームを選択し、 **[!UICONTROL 辞書を追加]** オプション。
+1. AEM Forms UI 上でフォームを選択し、「**[!UICONTROL 辞書を追加]**」オプションをクリックします。
 1. 辞書を翻訳プロジェクトに追加画面の、「**[!UICONTROL プロジェクト]**」オプション
 
    * 翻訳プロジェクトを作成するには、「**[!UICONTROL 新しい翻訳プロジェクトを作成]**」オプションを選択し、「**プロジェクトタイトル**」フィールドでタイトルを指定します。例：`Government Reference Site - German locale.`
@@ -61,7 +61,7 @@ ht-degree: 96%
 
 人間による翻訳を使用してフォームとレコードのドキュメントをローカライズするには、次の手順を実行します。
 
-1. AEM Forms UI で、フォームを選択し、 **[!UICONTROL 辞書を追加]** オプション。
+1. AEM Forms UI 上でフォームを選択し、「**[!UICONTROL 辞書を追加]**」オプションをクリックします。
 1. 辞書を翻訳プロジェクトに追加画面の、「**[!UICONTROL プロジェクト]**」オプション
 
    * 翻訳プロジェクトを作成するには、「**[!UICONTROL 新しい翻訳プロジェクトを作成]**」オプションを選択し、「**プロジェクトタイトル**」フィールドでタイトルを指定します。例：`Government Reference Site - German locale.`

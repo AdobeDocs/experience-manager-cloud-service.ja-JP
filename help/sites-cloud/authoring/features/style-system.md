@@ -3,9 +3,9 @@ title: スタイルシステム
 description: スタイルシステムを使用すると、テンプレート作成者がコンポーネントのコンテンツポリシーのスタイルクラスを定義し、コンテンツ作成者がページでのコンポーネントの編集時にそのスタイルクラスを選択できます。これらのスタイルは、1 つのコンポーネントの別の視覚的バリエーションとして使用することができるので、コンポーネントがより柔軟で扱いやすいものになります。
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1305'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 99%
 
 1. 次に AEM ページ作成者は、ページエディターでコンポーネントのツールバーのスタイルメニューからデザイン済みのスタイルを選択できます。
 
-AEMでは、実際には最後の 3 つの手順のみが実行されます。 つまり、必要な CSS と JavaScript のすべての開発は AEM なしで行うことができます。
+AEM では、実際には最後の 3 つの手順のみが実行されます。つまり、必要な CSS と JavaScript のすべての開発は AEM なしで行うことができます。
 
 実際にスタイルを実装するには、AEM にデプロイし、目的のテンプレートのコンポーネント内で選択する必要があるだけです。
 
@@ -120,43 +120,43 @@ AEMでは、実際には最後の 3 つの手順のみが実行されます。 �
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
-これには、[Sling Resource Merger](/help/implementing/developing/introduction/overlays.md) を介して[オーバーレイ](/help/implementing/developing/introduction/sling-resource-merger.md)を使用します。
+これには、[Sling Resource Merger](/help/implementing/developing/introduction/overlays.md) を介して[オーバーレイ](/help/implementing/developing/introduction/sling-resource-merger.md)を使用します。>コンポーネントが設定されると、すべての編集可能なコンポーネントを自動的にラップする装飾要素に、ページ作成者が設定したスタイルが AEM により自動的に挿入されます。コンポーネント自体で必要な操作はこれで終わりです。
 
-コンポーネントが設定されると、すべての編集可能なコンポーネントを自動的にラップする装飾要素に、ページ作成者が設定したスタイルが AEM により自動的に挿入されます。コンポーネント自体で必要な操作はこれで終わりです。
+編集ダイアログの「スタイル」タブを有効にする
 
-### 編集ダイアログの「スタイル」タブを有効にする {#enable-styles-tab-edit}
-
-編集ダイアログの「スタイル」タブもオプションで使用できます。「デザインダイアログ」タブとは異なり、編集ダイアログのタブは、スタイルシステムが機能するのに必須ではなく、コンテンツ作成者がスタイルを設定するためのオプションの代替インターフェイスです。
+### 編集ダイアログの「スタイル」タブもオプションで使用できます。「デザインダイアログ」タブとは異なり、編集ダイアログのタブは、スタイルシステムが機能するのに必須ではなく、コンテンツ作成者がスタイルを設定するためのオプションの代替インターフェイスです。 {#enable-styles-tab-edit}
 
 編集ダイアログのタブは、デザインダイアログのタブと同様の方法で組み込むことができます。
 
+`path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
+
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
-
->[!NOTE]
 これには、[Sling Resource Merger](/help/implementing/developing/introduction/overlays.md) を介して[オーバーレイ](/help/implementing/developing/introduction/sling-resource-merger.md)を使用します。
 
->[!NOTE]
+>[!NOTE]>編集ダイアログの「スタイル」タブは、デフォルトでは有効になっていません。
+
+>要素名を持つスタイル
 >
-編集ダイアログの「スタイル」タブは、デフォルトでは有効になっていません。
+>開発者は `cq:styleElements` 文字列配列プロパティを使用して、コンポーネントのスタイルに使用できる要素名のリストを設定することもできます。その後、テンプレート作成者はデザインダイアログのポリシーの「スタイル」タブで、各スタイルに設定する要素名を選択することもできます。これにより、ラッパー要素の要素名が設定されます。
 
-### 要素名を持つスタイル {#styles-with-element-names}
+### このプロパティは `cq:Component` ノードに設定されます。次に例を示します。 {#styles-with-element-names}
 
-開発者は `cq:styleElements` 文字列配列プロパティを使用して、コンポーネントのスタイルに使用できる要素名のリストを設定することもできます。その後、テンプレート作成者はデザインダイアログのポリシーの「スタイル」タブで、各スタイルに設定する要素名を選択することもできます。これにより、ラッパー要素の要素名が設定されます。
+`cq:styleElements`
 
-このプロパティは `cq:Component` ノードに設定されます。次に例を示します。
+`cq:Component`
 
-* `/apps/<yoursite>/components/content/list@cq:styleElements=[div,section,span]`
+* 組み合わせ可能なスタイルには要素名を定義しないでください。 複数の要素名を定義する場合の、優先順位は次のようになります。
 
->[!CAUTION]
+>HTL（[!CAUTION]）が他のすべての要素よりも優先されます。
 >
-組み合わせ可能なスタイルには要素名を定義しないでください。 複数の要素名を定義する場合の、優先順位は次のようになります。
+>次に、複数のアクティブなスタイルの中で、コンポーネントのポリシーで設定されたスタイルのリストの最初のスタイルが優先されます。
 >
-1. HTL（`data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`）が他のすべての要素よりも優先されます。
-1. 次に、複数のアクティブなスタイルの中で、コンポーネントのポリシーで設定されたスタイルのリストの最初のスタイルが優先されます。
-1. 最後に、コンポーネントの `cq:htmlTag` または `cq:tagName` がフォールバック値と見なされます。
+>1. 最後に、コンポーネントの `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}` または `cq:tagName` がフォールバック値と見なされます。
+>1. スタイル名を定義するこの機能は、レイアウトコンテナやコンテンツフラグメントコンポーネントなどの一般的なコンポーネントに意味を追加できます。
+>1. 例えば、レイアウトコンテナに `cq:htmlTag`、`cq:tagName`、`<nav>` などのセマンティクスを指定できます。
 >
 
-スタイル名を定義するこの機能は、レイアウトコンテナやコンテンツフラグメントコンポーネントなどの一般的なコンポーネントに意味を追加できます。
+This ability to define style names is useful for generic components, like the Layout Container, or the Content Fragment component, to provide them with additional meaning.
 
-例えば、レイアウトコンテナに `<main>`、`<aside>`、`<nav>` などのセマンティクスを指定できます。
+For instance it allows a Layout Container to be given semantics like `<main>`, `<aside>`, `<nav>`, and so on.

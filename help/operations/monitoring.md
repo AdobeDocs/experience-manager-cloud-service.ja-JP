@@ -3,9 +3,9 @@ title: AEM as a Cloud Service のインフラストラクチャとサービス�
 description: AEM as a Cloud Service のインフラストラクチャとサービスモニタリング
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
 source-git-commit: 484a9a133b2f3d873d725542fc66652134c5e4d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '562'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Cloud Manager を使用したログや監視など、他の種類の監視に関
 
 >[!NOTE]
 >
-> この機能は、実稼動環境および [高度なクラウドサポート。](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html?lang=ja#support-add-ons) ご質問がある場合は、担当のアドビのアカウントチームにお問い合わせください。
+> この機能は、[高度なクラウドサポートを利用している実稼動環境および顧客にのみ提供されます。](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html?lang=ja#support-add-ons) ご質問がある場合は、担当のアドビのアカウントチームにお問い合わせください。
 
 ## 内部モジュールの監視 {#module-monitoring}
 

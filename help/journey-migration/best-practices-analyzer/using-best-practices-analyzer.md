@@ -3,9 +3,9 @@ title: ベストプラクティスアナライザーの使用
 description: ベストプラクティスアナライザーを使用してアップグレードの準備状況を理解する方法について説明します。
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2418'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,15 +49,15 @@ ht-degree: 98%
 ベストプラクティスアナライザーは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) を使用して、このパッケージを AEM（Adobe Experience Manager）ソースインスタンスにインストールできます。
 
 >[!NOTE]
->[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)ポータルからベストプラクティスアナライザーをダウンロードします。
+>[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)ポータルからベストプラクティスアナライザーをダウンロードします。
 
 ## ベストプラクティスアナライザーレポートの表示 {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 以降 {#aem-later-versions}
 
-ベストプラクティスアナライザーレポートを表示するには、次のようにします。
+ベストプラクティスアナライザーレポートを表示するには、このセクションの手順に従います。
 
-1. Adobe Experience Managerを選択し、ツール/に移動します。 **運用** > **ベストプラクティスアナライザー**.
+1. Adobe Experience Manager を選択し、ツール／**操作**／**ベストプラクティスアナライザー**&#x200B;に移動します。
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 

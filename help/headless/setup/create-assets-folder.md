@@ -3,9 +3,9 @@ title: アセットフォルダーの作成 - ヘッドレスセットアップ
 description: AEM コンテンツフラグメントモデルを使用すると、ヘッドレスコンテンツの基盤となるコンテンツフラグメントの構造を定義できます。
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '375'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ AEM コンテンツフラグメントモデルを使用すると、ヘッドレ�
       * 必要に応じて調整できます。
 
    ![フォルダーを作成](../assets/assets-folder-create.png)
-1. チェックマークにカーソルを合わせてタップし、作成したフォルダーを選択します。 次に、ツールバーの「**プロパティ**」を選択します（または `p` [キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)を使用します）。
+1. 作成したフォルダーにポインタを合わせてチェックマークをタップして選択します。次に、ツールバーの「**プロパティ**」を選択します（または `p` [キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)を使用します）。
 1. **プロパティ**&#x200B;ウィンドウで、「**Cloud Services**」タブを選択します。
 1. **クラウド設定**&#x200B;で、[以前に作成した設定](create-configuration.md)を選択します。
    ![アセットフォルダーの設定](../assets/assets-folder-configure.png)
@@ -43,7 +43,7 @@ AEM コンテンツフラグメントモデルを使用すると、ヘッドレ�
 
    ![確認ウィンドウ](../assets/assets-folder-confirmation.png)
 
-作成したフォルダ内にサブフォルダを追加で作成できます。 サブフォルダーは、親フォルダーの&#x200B;**クラウド設定**&#x200B;を継承します。別の設定モデルを使用する場合は、この設定を上書きできます。
+作成したフォルダー内に追加のサブフォルダーを作成できます。サブフォルダーは、親フォルダーの&#x200B;**クラウド設定**&#x200B;を継承します。別の設定モデルを使用する場合は、この設定を上書きできます。
 
 ローカライズされたサイト構造を使用している場合は、新しいフォルダーの下に[言語ルートを作成](/help/assets/translate-assets.md)できます。
 

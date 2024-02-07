@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.7.0 リリー�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.7.0 リリースのリリースノート。'
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '896'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Assets Essentials では、デフォルトで、関連性に基づいて検索�
 
 * [**標準のテーマ**](/help/forms/using-themes-in-core-components.md)**およびテンプレート**：経験豊富な専門家や新しいフォーム作成者の皆様に役立つようにカスタマイズされたすぐに使える OOTB のテーマとテンプレートを使用して、フォームの作成を開始できます。アダプティブフォームのコアコンポーネントを使用してシームレスに構築され、細心の注意を払って厳選されたテーマとテンプレートを使用すれば、一般的なユースケースのフォームをすばやく作成できます。
 
-* **[ヘッドレスフォームのための React コンポーネント](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**：すぐに使用できる React コンポーネントを使用して、ヘッドレスアダプティブフォームのレンディションをプレビューしてカスタマイズできるようになりました。これらのコンポーネントは、アダプティブFormsコアコンポーネントの BEM クラスをスタイル設定に使用するので、特定の要件に従って外観を簡単にカスタマイズできます。
+* **[ヘッドレスフォームのための React コンポーネント](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**：すぐに使用できる React コンポーネントを使用して、ヘッドレスアダプティブフォームのレンディションをプレビューしてカスタマイズできるようになりました。これらのコンポーネントでは、アダプティブフォームコアコンポーネントの BEM クラスがスタイル設定に使用されるため、特定の要件に従って外観を簡単にカスタマイズできます。
 
 * [**繰り返し可能なセクションでのアダプティブフォームの作成**](/help/forms/create-forms-repeatable-sections.md)：[アコーディオン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=ja)、[ウィザード](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=ja)、[パネル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=ja)、および[水平タブ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=ja)のコンポーネントベースのアダプティブフォームを繰り返し可能にすることで、複数のデータレコードをキャプチャできるようになりました。これらの繰り返し可能なセクションを使用すると、複数のデータエントリを簡単に指定できます。これは、必要なデータインスタンスがあらかじめ不明な場合に役立ちます。フォームの入力者は、セクションを簡単に追加または削除できるので、フォームを様々なデータ入力シナリオに適合させて、複数発生した同じデータを簡単に収集できます。
 

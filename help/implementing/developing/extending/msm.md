@@ -3,9 +3,9 @@ title: マルチサイトマネージャーの拡張
 description: マルチサイトマネージャーの機能を拡張する方法について説明します。
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2337'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 98%
 
    * `getName` - アクションの名前を返します
 
-      * この名前は、アクションを参照するために使用されます（例えば、ロールアウト設定）。
+      * この名前は、（例えば、ロールアウト設定で）アクションの参照に使用されます。
 
    * `execute` - アクションのタスクを実行します
 
@@ -175,7 +175,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. この場所の下に、次のプロパティを持つノードを作成します。
 
-   * **名前**：ロールアウト設定のノード名（例： ） `contentCopy` または `workflow`
+   * **名前**：ロールアウト設定のノード名（`contentCopy` や `workflow` など）
    * **タイプ**：`cq:RolloutConfig`
 
 1. このノードに次のプロパティを追加します。
@@ -204,7 +204,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 タイプ `cq:LiveSyncAction` の子ノードを追加して、同期アクションをロールアウト設定に追加します。同期アクションノードの順序によって、アクションが実行される順序が決まります。
 
-1. CRXDE Liteで、 [ロールアウト設定](#create-the-rollout-configuration) ノード、例： `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
+1. CRXDE Lite で、[ロールアウト設定](#create-the-rollout-configuration)ノード（`/apps/msm/myproject/rolloutconfigs/myrolloutconfig` など）を選択します。
 
 1. 次のノードプロパティを持つノードを作成します。
 

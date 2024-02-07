@@ -3,9 +3,9 @@ title: AEM Headless as a Cloud Service - はじめに
 description: ここでは、AEM ヘッドレスデベロッパージャーニーのこの部分では、AEM ヘッドレスの前提条件について説明します。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3057'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -181,7 +181,7 @@ SPA エディターを使用すると、SPA で AEM のコンテンツを使用�
 
 コンテンツ更新ワークフローを明確にしてください。システムがサポートする必要がある承認プロセスは何ですか？AEM ワークフローを使用してこのプロセスを自動化できますか？
 
-お使いの [コンテンツ階層](#content-hierarchy) を使用すると、翻訳が容易になります。
+[コンテンツ階層](#content-hierarchy)を使用すると、翻訳が容易になります。
 
 [その他のリソース](#additional-resources)の節を参照して、AEM ヘッドレス翻訳ジャーニーへのリンクなど、AEM ワークフローと翻訳ツールに関する追加ドキュメントを確認してください。
 

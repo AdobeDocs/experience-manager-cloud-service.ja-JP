@@ -3,15 +3,15 @@ title: AEM as a Cloud Service への移行ジャーニーの概要
 description: AEM as a Cloud Service への移行の基本事項を把握して、移行ジャーニーを開始します。
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
-workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 94%
+workflow-type: ht
+source-wordcount: '560'
+ht-degree: 100%
 
 ---
 
 # AEM as a Cloud Service への移行ジャーニーの概要 {#getting-started}
 
-AEMas a Cloud Service移行ジャーニーのこの部分では、AEMのオンプレミスまたはAdobeManaged Servicesインストールをクラウドに移行する際の基本について説明します。
+AEM as a Cloud Service 移行ジャーニーのこの部分では、AEM のオンプレミスまたは Adobe Managed Services インストールをクラウドに移行する際の基本事項を説明します。
 
 ## 目的 {#objective}
 
@@ -30,7 +30,7 @@ AEM as a Cloud Service を使用すると、チームは製品アップグレー
 
 Cloud Service への移行ジャーニーには、次の段階が含まれます。
 
-* [準備段階](/help/journey-migration/readiness.md) で、デプロイメントを AEM as a Cloud Service に移行する準備ができているかどうかを判断することから始めます。この段階では、AEM as a Cloud Service で導入された変更点についても理解しておく必要があります。。
+* [準備段階](/help/journey-migration/readiness.md) で、デプロイメントを AEM as a Cloud Service に移行する準備ができているかどうかを判断することから始めます。この段階では、AEM as a Cloud Service で導入された変更点についても理解しておく必要があります。
 * 次に、[実装段階](/help/journey-migration/implementation.md)でコードとコンテンツクラウドの準備を整えます。この段階では、クラウドへの移行を容易にするためにアドビが提供しているツールについて詳しく調べます。
 * すべてが整ったら、[公開フェーズ](/help/journey-migration/go-live.md)で移行を実行できます。
 * 最後に、[公開フェーズ](/help/journey-migration/post-go-live.md)で、問題を監視し、パフォーマンスを向上させます。

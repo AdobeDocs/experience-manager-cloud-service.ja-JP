@@ -1,11 +1,11 @@
 ---
-title: コンテンツフラグメントの操作（アセット — コンテンツフラグメント）
+title: コンテンツフラグメントの操作（Assets - コンテンツフラグメント）
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントで、ページオーサリングやヘッドレス配信に最適な、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。また、MSM と共に使用する方法も説明します。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2222'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -212,7 +212,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
      >[!NOTE]
      >
-     >ページでフラグメントを使用する場合は、アセットを追加の（中間）コンテンツとして追加することもできます。その場合は、次のいずれかを使用します。 [関連コンテンツ](/help/assets/content-fragments/content-fragments-assoc-content.md) またはアセットを Assets ブラウザーから取得した場合。
+     >ページでフラグメントを使用する場合は、アセットを追加の（中間）コンテンツとして追加することもできます。その場合は、[関連コンテンツ](/help/assets/content-fragments/content-fragments-assoc-content.md)、またはアセットブラウザー内のアセットを使用します。
 
 * **関連コンテンツ**
 
@@ -302,7 +302,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 フラグメントと、その要素およびバリエーションを一緒に使用すると、複数のチャネルに対応した一貫性のあるコンテンツを作成できます。フラグメントをデザインする際は、何をどこで使用するかを考慮します。
 
-### WKND サンプル {#wknd-sample}
+### WKND のサンプル {#wknd-sample}
 
 AEM as a Cloud Service の習得に役立つ [WKND サイト](/help/implementing/developing/introduction/develop-wknd-tutorial.md)サンプルが用意されています。
 

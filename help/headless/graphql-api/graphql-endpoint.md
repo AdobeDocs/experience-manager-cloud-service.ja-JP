@@ -4,9 +4,9 @@ description: ヘッドレスコンテンツ配信用に Adobe Experience Manager
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '512'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -91,4 +91,4 @@ GraphQL エンドポイントを有効にするには、まず適切な設定が
 >
 >GraphQL クエリがサーバーに大きな負荷をかける可能性があるので、パブリッシュインスタンスでは、セキュリティ上の問題が発生する恐れがあります。
 >
->設定 [ユースケースに適した ACL](/help/headless/security/permissions.md) を設定します。
+>[ユースケースに適した ACL](/help/headless/security/permissions.md) をエンドポイントに設定します。

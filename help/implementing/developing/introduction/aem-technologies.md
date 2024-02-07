@@ -3,9 +3,9 @@ title: AEM 技術基盤
 description: AEM の構造化および JCR、Sling、OSGi などの基本的なテクノロジーを含む、AEM の技術基盤の概要です。
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2130'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -248,7 +248,7 @@ Sling API パッケージ、`org.apache.sling.*` およびタグライブラリ�
 
 最後の考慮事項は、スクリプト内にある既存の要素の参照の必要性です。
 
-より複雑なスクリプト（集計スクリプト）では、複数のリソース（ナビゲーション、サイドバー、フッター、リストの要素など）にアクセスし、 *リソース*.
+より複雑なスクリプト（集計スクリプト）は、*リソース*&#x200B;を含めることによって、複数のリソース（ナビゲーション、サイドバー、フッター、リストの要素など）にアクセスします。
 
 この場合、`sling:include("/<path>/<resource>")` コマンドを使用します。参照されるリソースの定義が効果的に含まれます。
 

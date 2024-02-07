@@ -3,9 +3,9 @@ title: レスポンシブレイアウト
 description: AEM では、ページにレスポンシブレイアウトを作成できます
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1737'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ AEM は、次のメカニズムを組み合わせて使用することにより�
 
 >[!TIP]
 >
->Adobe提供 [GitHub ドキュメント](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) フロントエンド開発者がAEMの外部でAEMグリッドを使用できるようにする参照として、レスポンシブレイアウトを使用します。例えば、将来のAEMサイト用に静的HTMLモックアップを作成する場合などです。
+>アドビはフロントエンド開発者用にレスポンシブレイアウトの [GitHub ドキュメント](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)をリファレンスとして提供しており、フロントエンド開発者は AEM の外部で AEM グリッドを使用できます（例えば、今後の AEM サイトの静的 HTML モックアップを作成する場合）。
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ AEM では、デバイスの幅に応じたレイアウトを定義できます�
 
 ## エミュレートするデバイスの選択 {#selecting-a-device-to-emulate}
 
-1. 必要なページを編集用に開きます。例：
+1. 必要なページを編集用に開きます。次に例を示します。
 
    `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -96,7 +96,7 @@ AEM では、デバイスの幅に応じたレイアウトを定義できます�
 
    エミュレーターツールバーに追加のレイアウトオプションが表示されます。
 
-   * **デバイスを回転**  — デバイスを垂直方向（縦置き）から水平方向（横置き）に、逆に回転できます。
+   * **デバイスを回転** - 垂直方向（縦）から水平方向（横）およびその逆に、デバイスを回転できます。
 
    ![デバイスの回転（横置き）ボタン](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
    ![デバイスの回転（縦置き）ボタン](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
@@ -149,7 +149,7 @@ AEM では、デバイスの幅に応じたレイアウトを定義できます�
 >
 >レイアウトコンテナは段落システムです。コンポーネントを削除すると、レイアウトグリッドと、コンテナ内に保持されているすべてのコンポーネント（およびそのコンテンツ）の両方が削除されます。
 
-1. グリッドプレースホルダーにマウスを移動するか選択すると、アクションメニューが表示されます。
+1. グリッドのプレースホルダーにマウスを置くか、グリッドのプレースホルダーを選択すると、アクションメニューが表示されます。
 
    ![レイアウトコンテナへの追加](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 
@@ -204,13 +204,13 @@ AEM では、デバイスの幅に応じたレイアウトを定義できます�
 
 * **レイアウト**&#x200B;モードでは、「**コンポーネントをここにドラッグ**」を選択すると、コンポーネント全体を選択できます。このモードでは、ツールバーが表示されます。
 
-  ツールバーには、レイアウトコンポーネントの状態やそれに属するコンポーネントに応じて異なるオプションが表示されます。例：
+  ツールバーには、レイアウトコンポーネントの状態やそれに属するコンポーネントに応じて異なるオプションが表示されます。次に例を示します。
 
    * **親** - 親コンポーネントを-選択します。
 
      ![親ボタン](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-   * **非表示のコンポーネントを表示** - すべてのコンポーネントまたは個々のコンポーネントを表示します。数字は、現在非表示のコンポーネントの数を示します。 カウンターは非表示のコンポーネントの数を示します。
+   * **非表示のコンポーネントを表示** - すべてのコンポーネントまたは個々のコンポーネントを表示します。数値は、現在非表示になっているコンポーネントの個数を示します。カウンターは非表示のコンポーネントの数を示します。
 
      ![「非表示のコンポーネントを表示」ボタン](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 

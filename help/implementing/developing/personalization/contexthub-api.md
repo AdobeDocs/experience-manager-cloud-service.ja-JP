@@ -3,9 +3,9 @@ title: ContextHub JavaScript API リファレンス
 description: ContextHub コンポーネントをページに追加すると、ContextHub JavaScript API がスクリプトで使用できるようになります。
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4602'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -162,7 +162,7 @@ ContextHub ストアのベースクラス。
 * **オブジェクト：**&#x200B;キーはプロパティ名です。
 * **配列：**&#x200B;キーは配列のインデックスです。
 
-値はオブジェクトにすることができます。
+値にオブジェクトを使用できます。
 
 ##### パラメーター {#parameters-addallitems}
 

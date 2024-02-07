@@ -4,9 +4,9 @@ description: GraphQL を AEM と共に使用し、サンプルコンテンツと
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 667cac9153947d1c236ff1117fc7200883416d8d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1754'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ GraphQL クエリの基本と、AEM コンテンツフラグメントとの連�
 >
 >クエリエディターには、次のいずれかの方法でアクセスできます。
 >
->* **ツール** > **一般** > **GraphQL Query Editor**
+>* **ツール**／**一般**／**GraphQL クエリエディター**
 >* 直接アクセス（例：`http://localhost:4502/aem/graphiql.html`）
 
 >[!NOTE]
@@ -362,7 +362,7 @@ query {
 }
 ```
 
-### サンプルクエリ — 区切り文字としてタグ付けされたすべての都市の名前 {#sample-names-all-cities-tagged-city-breaks}
+### サンプルクエリ - 市区町村の区切り文字としてタグ付けされた、すべての都市の名前 {#sample-names-all-cities-tagged-city-breaks}
 
 次の場合：
 
@@ -1258,7 +1258,7 @@ query {
 * 特定のパスにある `article` タイプの 1 つのコンテンツフラグメントについて
    * そのフラグメントの中の、次のすべてのコンテンツ形式
       * HTML
-      * Markdown
+      * マークダウン
       * プレーンテキスト
       * JSON
 

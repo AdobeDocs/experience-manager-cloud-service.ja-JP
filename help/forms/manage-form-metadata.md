@@ -4,7 +4,7 @@ description: メタデータを使用すると、アセットの分類および�
 feature: Adaptive Forms, Foundation Components
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1733'
 ht-degree: 100%
 

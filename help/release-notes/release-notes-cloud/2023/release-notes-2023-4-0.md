@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.4.0 リリー�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.4.0 リリースのリリースノート。'
 exl-id: c34aedee-e45a-4e2a-ae7f-930bc0cc026f
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1122'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -42,8 +42,8 @@ ht-degree: 99%
 
 ### [!DNL Experience Manager Sites] プレリリースの新機能 {#prerelease-sites}
 
-* コンテンツフラグメントとその参照を、[コンテンツフラグメントコンソール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ja)を使用して [AEM プレビューサービス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html#access-preview-service) に公開できるようになりました。これにより、ユーザーは実稼働環境に移行する前に、切り離されたプレビューアプリケーションで最終的なエクスペリエンスをプレビューできます。
-* AEM GraphQL を使用したヘッドレスシナリオで、web 配信用に画像を動的に最適化できるようになりました。GraphQL クエリで[クエリ変数](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html#query-variables)を定義できるようになり、切り離されたクライアントアプリケーションが、適切に最適化された画像を AEM からリクエストできるようになりました。
+* コンテンツフラグメントとその参照を、[コンテンツフラグメントコンソール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=ja)を使用して [AEM プレビューサービス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=ja#access-preview-service) に公開できるようになりました。これにより、ユーザーは実稼働環境に移行する前に、切り離されたプレビューアプリケーションで最終的なエクスペリエンスをプレビューできます。
+* AEM GraphQL を使用したヘッドレスシナリオで、web 配信用に画像を動的に最適化できるようになりました。GraphQL クエリで[クエリ変数](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=ja#query-variables)を定義できるようになり、切り離されたクライアントアプリケーションが、適切に最適化された画像を AEM からリクエストできるようになりました。
 * [コンテンツフラグメントのバリエーション](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=ja)のタグを、AEM GraphQL コンテンツ配信 API を使用して JSON に出力できるようになりました。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -71,7 +71,7 @@ ht-degree: 99%
 
 ### [!DNL Assets] プレリリースの機能 {#prerelease-feature-assets}
 
-* Dynamic Media - 画像プロファイルのスマート切り抜き関連のフィールドの一部でユーザーインターフェイスが更新され、スマート切り抜きを定義するための最新のガイドラインが反映されました。詳しくは、[切り抜きオプション](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options)を参照してください。
+* Dynamic Media - 画像プロファイルのスマート切り抜き関連のフィールドの一部でユーザーインターフェイスが更新され、スマート切り抜きを定義するための最新のガイドラインが反映されました。詳しくは、[切り抜きオプション](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=ja#crop-options)を参照してください。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

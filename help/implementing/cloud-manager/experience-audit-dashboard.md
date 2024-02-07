@@ -3,9 +3,9 @@ title: エクスペリエンス監査ダッシュボード
 description: エクスペリエンス監査でデプロイメントプロセスを検証し、デプロイされた変更が、明確な情報ダッシュボードインターフェイスを通じて、パフォーマンス、アクセシビリティ、ベストプラクティス、SEO のベースライン標準を満たしていることを確認する方法について説明します。
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '824'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

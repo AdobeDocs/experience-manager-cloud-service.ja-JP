@@ -4,9 +4,9 @@ description: アダプティブフォームに新しいロケールを追加す�
 feature: Adaptive Forms, Core Components
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1333'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 92%
 | 基盤コンポーネント | [ここをクリックしてください](supporting-new-language-localization.md) |
 | コアコンポーネント | この記事 |
 
-<span class="preview"> 右から左への言語サポート機能は、アーリーアダプタープログラムで利用できます。 アーリーアダプタープログラムに参加し、機能へのアクセス権をリクエストするには、公式のメール ID からaem-forms-early-adopter-program@adobe.comに書き込むことができます。 </span>
+<span class="preview"> 右から左へ記述する言語サポート機能は、早期導入プログラムで利用できます。早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID から aem-forms-early-adopter-program@adobe.com までメールをお送りください。</span>
 
-AEM Forms が標準でサポートしているロケールは、英語（en）、スペイン語（es）、フランス語（fr）、イタリア語（it）、ドイツ語（de）、日本語（ja）、ブラジルポルトガル語（pt-br）、中国語（zh-tn）、台湾中国語（zh-tw）、韓国語（ko-kr）です。Hindi(hi_IN) のように、より多くのロケールのサポートを追加することもできます。 また、次のロケールを追加することで、アダプティブFormsを右から左 (RTL) 言語（アラビア語、ペルシャ語、ウルドゥー語など）で表示することもできます。
+AEM Forms が標準でサポートしているロケールは、英語（en）、スペイン語（es）、フランス語（fr）、イタリア語（it）、ドイツ語（de）、日本語（ja）、ブラジルポルトガル語（pt-br）、中国語（zh-tn）、台湾中国語（zh-tw）、韓国語（ko-kr）です。その他のロケール（ヒンディー語（hi_IN）など）のサポートを追加することもできます。また、これらのロケールを追加すると、右横書き（RTL）言語（アラビア語、ペルシア語、ウルドゥー語など）でアダプティブフォームを表示することもできます。
 
 ## アダプティブフォームのロケールはどのように選択されますか？
 
@@ -75,7 +75,7 @@ AEM Forms が標準でサポートしているロケールは、英語（en）�
    git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/
    ```
 
-   上記の URL の `<my-org>` と `<my-program>` を、組織名とプログラム名に置き換えます。組織名、プログラム名、または Git リポジトリの完全パスと、リポジトリのクローンに必要な資格情報を取得する方法について詳しくは、 [Git へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#accessing-git) 記事。
+   上記の URL の `<my-org>` と `<my-program>` を、組織名とプログラム名に置き換えます。組織名、プログラム名、または Git リポジトリの完全パスや、リポジトリの複製に必要な資格情報を取得する詳しい手順については、[Git へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#accessing-git)の記事を参照してください。
 
    コマンドが正常に完了した後、フォルダー `<my-program>` が作成されます。Git リポジトリから複製されたコンテンツが含まれます。記事の残りの部分では、このフォルダーを `[AEM Forms as a Cloud Service Git repository]` と呼びます。
 

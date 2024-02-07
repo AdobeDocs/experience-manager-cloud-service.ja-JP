@@ -4,9 +4,9 @@ description: このページでは、Screens as a Cloud Service にビデオの�
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '548'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 99%
 1. 既存の Screens チャネルに移動するか、チャネルを作成します。
 
    >[!NOTE]
-   >チャネルを作成しチャネルにコンテンツを追加する方法については、[Screens as a Cloud Service でのチャネルの作成と管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html)を参照してください。
+   >チャネルを作成しチャネルにコンテンツを追加する方法については、[Screens as a Cloud Service でのチャネルの作成と管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=ja)を参照してください。
 
 1. チャネルを選択します。アクションバーで、「**編集**」をクリックしてエディターを開きます。
 

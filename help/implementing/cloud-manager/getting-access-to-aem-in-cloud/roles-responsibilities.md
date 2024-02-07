@@ -2,9 +2,9 @@
 title: 役割と責務
 description: 役割と責務
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '484'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 90%
 >id="aemcloud_raci"
 >title="役割と責務"
 >abstract="アドビでは、Adobe Experience Manager as a Cloud Service のプロビジョニング、開発、ステージング、実稼働に関する一連のサービスを提供しています。ソリューションの開発とデプロイメントをできるだけ効率的に進めるには、顧客とカスタマイズ担当者が、次の役割を理解し果たすことが重要です。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=ja" text="適切な人材の選択、適切な役割"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=ja" text="適切な人材、適切な役割の選択"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=ja" text="KPI の調整"
 
 <br></br>
@@ -60,6 +60,6 @@ ht-degree: 90%
 
 >[!NOTE]
 >
-> 上記では、Premier Support が含まれていると仮定しています。この表は、顧客とカスタマイズ担当者との合意に基づいて変更される可能性があります。Adobeは、上記の説明を明確にする必要がある場合は、Adobeのセールスチームやカスタマイズチームと協力することをお勧めします。
-> カスタマイズを自分で処理しないお客様は、Adobeの Professional Services チームまたはExperience Managerパートナーのサービスを入手する必要があります。
->高いレベルの品質を維持するため、アドビでは、Adobe Experience Manager as a Cloud Service 開発プロジェクトに携わるパートナーに、Adobe Experience Manager ソフトウェアの上級開発者認定を取得したスタッフが少なくとも 1 人いることを求めています。
+> 上記では、Premier Support が含まれていると仮定しています。この表は、顧客とカスタマイズ担当者との合意に基づいて変更される可能性があります。上記の内容にご不明な点がある場合は、アドビのセールスチームやカスタマイズチームに相談することをお勧めします。
+> カスタマイズを自分で扱いたくない場合は、アドビの Professional Services チームまたは Adobe Experience Manager パートナーのサービスを受けてください。
+>高いレベルの品質を維持するため、アドビでは、Adobe Experience Manager as a Cloud Service 開発プロジェクトに携わるパートナーに、Adobe Experience Manager ソフトウェアの上級開発者認定を取得したスタッフを 1 人以上配置することを求めています。

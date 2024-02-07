@@ -3,9 +3,9 @@ title: コンテンツ転送ツールの基本を学ぶ
 description: コンテンツ転送ツールの基本を学ぶ
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 source-git-commit: 0161477e5248267224fe6d637a192f409161f6d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1362'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 84%
 >title="ダウンロード"
 >abstract="コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=ja" text="リリースノート"
->additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="ソフトウェア配布ポータル"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html" text="ソフトウェア配布ポータル"
 
-コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。パッケージは、次の方法でインストールできます： [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) をソースAdobe Experience Manager(AEM) インスタンス上に置きます。 最新バージョンをダウンロードしてください。最新バージョンについて詳しくは、[リリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=ja)を参照してください。
+コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)を使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。最新バージョンについて詳しくは、[リリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=ja)を参照してください。
 
 サポートされるのはバージョン 2.0.0 以降のみで、最新バージョンを使用することをお勧めします。
 
@@ -45,7 +45,7 @@ ht-degree: 84%
 
 SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プロセス中に接続の問題をトラブルシューティングするには、次の手順に従って、ソース AEM 環境のシステムコンソールで SSL ログを有効にします。
 
-1. ソースインスタンス上のAdobe Experience Manager Web コンソールに移動するには、次の手順に従います。 **ツール/操作/ Web コンソール** または URL( ) に直接アクセスします。 *https://serveraddress:serverport/system/console/configMgr*
+1. **ツール／操作／Web コンソール**&#x200B;に移動するか、*https://serveraddress:serverport/system/console/configMgr* の URL に直接アクセスして、ソースインスタンスの Adobe Experience Manager web コンソールに移動します。
 1. **Content Transfer Tool Extraction Service Configuration** を検索します。
 1. 鉛筆アイコンボタンを使用して、設定値を編集します。
 1. を有効にします。 **抽出用の SSL ログを有効にする** 設定してから、 **保存**:
@@ -78,19 +78,19 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 
 1. Cloud Acceleration Manager（CAM）にログインし、以前に作成した CAM プロジェクトをクリックして、AEM as a Cloud Service への移行に対する準備状況を評価します。CAM プロジェクトをまだ作成していない場合は、CAM でのプロジェクトの作成と管理を参照してください。
 
-1. 次をクリック： **コンテンツ転送** カードをクリックして、移行セットのリストビューを開きます。
+1. **コンテンツ転送**&#x200B;カードをクリックして、移行セットリスト表示を開きます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
-1. 「 」をクリックして移行セットを作成 **移行セットを作成**.
+1. 「**移行セットを作成**」をクリックして移行セットを作成します。
 
    >[!NOTE]
    >
-   >Cloud Acceleration Manager では、プロジェクトごとに最大 20 個の移行セット（有効期限切れのセットを含む）を作成できます。
+   >Cloud Acceleration Manager で、プロジェクトごとに最大 20 個（期限切れセットを含む）の移行セットを作成できます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-   次のダイアログボックスが表示されます。移行セットは、無操作状態が長時間続くと有効期限が切れます。警告がプロジェクトカードおよび移行ジョブテーブル行に一定期間表示された後、移行セットは期限切れになり、そのデータは使用できなくなります。 詳しくは、[移行セットの有効期限](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry)を参照してください。
+   次のダイアログボックスが表示されます。移行セットは、無操作状態が長時間続くと有効期限が切れます。警告がプロジェクトカードおよび移行ジョブテーブルの行に一定期間表示された後、移行セットは期限切れになり、そのデータは使用できなくなります。詳しくは、[移行セットの有効期限](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry)を参照してください。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
@@ -114,11 +114,11 @@ SSL/TLS 接続の問題の理解は困難な場合があります。 抽出プ�
 >abstract="移行セットを作成したら、AEM as a Cloud Service 環境に移行する必要がある、ソースインスタンスのコンテンツを入力する必要があります。これを行うには、ソースインスタンスにコンテンツ転送ツールをインストールする必要があります。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=ja" text="コンテンツの抽出"
 
-Cloud Acceleration Manager で作成した移行セットを入力するには、最新バージョンのコンテンツ転送ツールをソースAdobe Experience Manager(AEM) インスタンスにインストールします。 移行セットの入力方法を学ぶには、この節に従ってください。
+Cloud Acceleration Manager で作成した移行セットを設定するには、最新バージョンのコンテンツ転送ツールをソースの Adobe Experience Manager（AEM）インスタンスにインストールします。移行セットの設定方法については、この節に従ってください。
 
 1. 移行元の Adobe Experience Manager インスタンスに最新バージョンのコンテンツ転送ツールをインストールしたら、**運用 - コンテンツ移行**&#x200B;に移動します。
 
-1. クリック **移行セットを作成**.
+1. 「**移行セットを作成**」をクリックします。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
@@ -126,7 +126,7 @@ Cloud Acceleration Manager で作成した移行セットを入力するには�
 
    >[!NOTE]
    >
-   >抽出キーが有効で、有効期限に近いものでないことを確認します。 抽出キーを貼り付けた後、この情報は、**移行セットを作成**&#x200B;ダイアログに表示されます。接続エラーが発生した場合は、[ソース環境の接続性](#source-environment-connectivity)を参照してください。
+   >抽出キーが有効で、有効期限に近づいていないことを確認します。抽出キーを貼り付けた後、この情報は、**移行セットを作成**&#x200B;ダイアログに表示されます。接続エラーが発生した場合は、[ソース環境の接続性](#source-environment-connectivity)を参照してください。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 
@@ -202,4 +202,4 @@ Cloud Acceleration Manager で作成した移行セットを入力するには�
 
 ## 次の手順 {#whats-next}
 
-移行セットの作成方法を理解したら、コンテンツ転送ツールでの抽出プロセスと取り込みプロセスについて学ぶ準備が整います。これらのプロセスを学ぶ前に、 [大きなコンテンツリポジトリーの処理](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に高速化し、コンテンツをAEM as a Cloud Serviceに移動する。
+移行セットの作成方法を理解したら、コンテンツ転送ツールでの抽出プロセスと取り込みプロセスについて学ぶ準備が整います。これらのプロセスを学ぶ前に、コンテンツを AEM as a Cloud Service に移行するコンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮する[大規模なコンテンツリポジトリの処理](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)を参照する必要があります。

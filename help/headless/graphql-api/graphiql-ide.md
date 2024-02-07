@@ -4,9 +4,9 @@ description: Adobe Experience Manager で GraphiQL IDE を使用する方法に�
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1136'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 99%
 
 クエリエディターには、次のいずれかの方法でアクセスできます。
 
-* **ツール** > **一般** > **GraphQL Query Editor**
+* **ツール**／**一般**／**GraphQL クエリエディター**
 * 直接アクセス（例：`http://localhost:4502/aem/graphiql.html`）
 
 ![GraphiQL インターフェイス](assets/cfm-graphiql-interface.png "GraphiQL インターフェイス")
@@ -89,7 +89,7 @@ ht-degree: 99%
 
 また、GraphiQL IDE では、[クエリ変数](/help/headless/graphql-api/content-fragments.md#graphql-variables)を管理することもできます。
 
-例：
+次に例を示します。
 
 ![GraphQL 変数](assets/cfm-graphqlapi-03.png "GraphQL 変数")
 
@@ -164,7 +164,7 @@ max-age と同じですが、特にプロキシキャッシュに適用されま
   >The target environment might need adjusting, depending on your requirements.
 -->
 
-例：
+次に例を示します。
 
 `http://localhost:4502/graphql/execute.json/global/article-list-01`
 

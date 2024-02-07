@@ -3,7 +3,7 @@ title: ユニバーサルエディターの概要
 description: ユニバーサルエディターを使用して、ヘッドレスおよびヘッドフルエクスペリエンスを見たとおりに編集できる（WYSIWYG）仕組みを説明します。コンテンツ作成者がどのように優れたエクスペリエンスを提供し、コンテンツベロシティを向上し、最新のデベロッパーエクスペリエンスを提供できるのかを理解します。
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '925'
 ht-degree: 100%
 

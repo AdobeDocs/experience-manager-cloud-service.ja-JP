@@ -1,19 +1,19 @@
 ---
-title: コンテンツフラグメント — 設定
-description: コンテンツフラグメントとGraphQL、AEMヘッドレス配信機能およびページオーサリングで使用する機能を有効にする方法について説明します。
+title: コンテンツフラグメント - 設定
+description: コンテンツフラグメントと GraphQL、AEM ヘッドレス配信機能およびページオーサリングで使用する機能を有効にする方法について説明します。
 feature: Content Fragments
 role: Developer, Architect
 exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
 source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '392'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
-# コンテンツフラグメント — 設定 {#content-fragments-setup}
+# コンテンツフラグメント - 設定 {#content-fragments-setup}
 
-Adobe Experience Manager(AEM)as a Cloud Service内のコンテンツフラグメントを使用すると、複数の場所や複数のチャネルで使用できるようにコンテンツを準備できます。 これは、ヘッドレス配信やページオーサリングに最適です。
+Adobe Experience Manager（AEM）as a Cloud Service 内のコンテンツフラグメントを使用すると、複数の場所や複数のチャネルで使用できるコンテンツを準備できます。これは、ヘッドレス配信やページオーサリングに最適です。
 
 コンテンツフラグメント機能用のインスタンスを有効にするには、次を有効にする必要があります。
 
@@ -28,18 +28,18 @@ Adobe Experience Manager(AEM)as a Cloud Service内のコンテンツフラグメ
 
 * **GraphQL 永続クエリ** - オプション
 
-インスタンスの設定が完了しました。
+インスタンスの設定を完了させるには、次の操作を実行します。
 
-* 作成者 [設定ブラウザーでの機能の有効化](#enable-content-fragment-functionality-configuration-browser)
-* その後 [個々の Assets フォルダーへの設定の適用](#apply-the-configuration-to-your-folder)
+* [設定ブラウザーで機能を有効にする](#enable-content-fragment-functionality-configuration-browser)
+* [個々の Assets フォルダーに設定を適用する](#apply-the-configuration-to-your-folder)
 
 ## 設定ブラウザーでコンテンツフラグメント機能を有効にする {#enable-content-fragment-functionality-configuration-browser}
 
-コンテンツフラグメントモデルとGraphQL永続化クエリのコンテンツフラグメント機能を使用するには、次の手順を実行します。 **必須** 最初に、 **設定ブラウザー**:
+コンテンツフラグメントモデルと GraphQL 永続クエリのコンテンツフラグメント機能を使用するには、まず&#x200B;**設定ブラウザー**&#x200B;で有効にする&#x200B;**必要**&#x200B;があります。
 
 >[!NOTE]
 >
->詳しくは、 [設定ブラウザー](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>詳しくは、[設定ブラウザー](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)を参照してください。
 
 >[!NOTE]
 >
@@ -58,8 +58,8 @@ Adobe Experience Manager(AEM)as a Cloud Service内のコンテンツフラグメ
 1. 「**作成**」を使用してダイアログを開き、次の操作を行います。
 
    1. 「**タイトル**」を指定します。
-   1. 作成時に、 **名前** はリポジトリ内のノード名になります。
-名前を入力できます。 このフィールドを空白のままにすると、タイトルに基づいて自動的に生成され、 [AEM命名規則](/help/implementing/developing/introduction/naming-conventions.md)必要に応じて、結果を調整できます。
+   1. 作成時に、**名前**はリポジトリ内のノード名になります。
+名前を入力できます。フィールドを空白のままにすると、タイトルに基づいて自動的に名前が生成された後、[AEM 命名規則](/help/implementing/developing/introduction/naming-conventions.md)に従って調整されます。必要に応じて結果を調整できます。
    1. 使用できるようにするには、以下を選択します。
       * **コンテンツフラグメントモデル**
       * **GraphQL 永続クエリ**
@@ -70,8 +70,8 @@ Adobe Experience Manager(AEM)as a Cloud Service内のコンテンツフラグメ
 
 ## フォルダーへの設定の適用 {#apply-the-configuration-to-your-folder}
 
-設定時 **global** がコンテンツフラグメント機能に対して有効になっている場合は、この機能が適用されます。この機能は、 **Assets** コンソール。
+**グローバル**&#x200B;設定がコンテンツフラグメント機能に対して有効になっている場合、これは任意のアセットフォルダー（**Assets** コンソールからアクセス可）に適用されます。
 
-他の設定（したがってグローバルを除く）を同等の Assets フォルダーで使用するには、接続を定義する必要があります。 これをおこなうには、 **設定** （内） **Cloud Service** タブ **フォルダーのプロパティ** 」と入力します。
+他の設定（グローバル以外）を同等のアセットフォルダーで使用するには、接続を定義する必要があります。そのためには、適切なフォルダーの「**フォルダーのプロパティ**」の「**クラウドサービス**」タブで、適切な&#x200B;**設定**&#x200B;を選択します。
 
 ![設定を適用](assets/cf-setup-apply-conf.png)

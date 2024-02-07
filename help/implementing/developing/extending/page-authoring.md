@@ -3,9 +3,9 @@ title: ページオーサリングのカスタマイズ
 description: ページオーサリング機能をカスタマイズするために AEM as a Cloud Service が提供するメカニズムについて説明します。
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '937'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -158,7 +158,7 @@ MSM レイヤーの定義（参照用）は、次のファイルにあります�
 
 ## 新しいページアクションを追加する {#add-a-new-page-action}
 
-新しいページアクションをページツールバーに追加するには、次のようにします。 **サイトに戻る** （コンソール）アクションを使用します。
+新しいページアクション（**サイトに戻る**（コンソール）アクションなど）を、ページツールバーに追加します。
 
 ### コードサンプル {#code-sample-3}
 

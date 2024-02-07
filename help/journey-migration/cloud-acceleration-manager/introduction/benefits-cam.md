@@ -3,7 +3,7 @@ title: Cloud Acceleration Manager を使用するメリット
 description: ここでは、Cloud Acceleration Manager を使用する主なメリットについて説明します。
 exl-id: d7a6c4f6-0f50-4f44-8a62-4a5769c76bd5
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '245'
 ht-degree: 100%
 

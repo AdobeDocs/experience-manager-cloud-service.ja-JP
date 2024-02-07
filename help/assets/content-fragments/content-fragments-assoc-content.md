@@ -1,23 +1,23 @@
 ---
 title: 関連コンテンツ（アセット - コンテンツフラグメント）
-description: AEMコンテンツフラグメントの関連コンテンツ機能が接続を提供する方法を理解し、アセットをフラグメントと共にオプションで使用できるようにします。
+description: オプションとしてアセットをフラグメントと共に使用できるよう、AEM コンテンツフラグメントの関連コンテンツ機能で接続を提供する方法を説明します。
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '281'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
 # 関連コンテンツ{#associated-content}
 
-Adobe Experience Manager(AEM) のコンテンツフラグメントas a Cloud Serviceの場合、関連するコンテンツ機能（元のエディターで使用可能）が接続を提供し、アセットをフラグメントと共に使用する場合もあります。 これにより、次のような柔軟性が得られます。 [コンテンツフラグメントを使用する際にアクセスできる様々なアセットの提供](/help/assets/content-fragments/content-fragments.md#using-associated-content)を使用すると、適切なアセットの検索に必要な時間を短縮できます。 この機能は、ヘッドレスコンテンツ配信とページオーサリングの両方に使用できます。
+Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントの関連コンテンツ機能（元のエディターで使用可能）では、オプションとしてアセットをフラグメントと共に使用できるよう、接続を提供します。これにより、[コンテンツフラグメントを使用する際に広範なアセットにアクセスでき](/help/assets/content-fragments/content-fragments.md#using-associated-content)、同時に適切なアセットの検索に必要な時間も短縮されて柔軟性がもたらされます。この機能は、ヘッドレスコンテンツ配信とページオーサリングの両方に使用できます。
 
 >[!NOTE]
 >
 >コンテンツフラグメントは Sites 機能ですが、 **Assets**.
 >
->コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。この節では、主に **Assets** コンソール。
+>コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。この節では、主に **Assets** コンソールから主にアクセスされるエディターについて説明します。
 
 ## 関連コンテンツの追加 {#adding-associated-content}
 

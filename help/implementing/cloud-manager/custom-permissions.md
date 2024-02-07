@@ -3,9 +3,9 @@ title: カスタム権限
 description: カスタム権限を使用して、Cloud Manager ユーザーのプログラム、パイプライン、環境へのアクセスを制限するための設定可能な権限を持つカスタム権限プロファイルを作成する方法について説明します。
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
 source-git-commit: 3891a55ff48f48de4e55e0229e9f76e5bf500cb3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1515'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Cloud Manager には、様々な機能へのアクセスを制御するための
 1. [製品プロファイルにカスタム権限を割り当てます。](#assign-permissions)
 1. [製品プロファイルにユーザーを割り当てます。](#assign-users)
 
-このセクションでは、これらの手順について詳しく説明します。見ると役に立つかもしれません [キーワード](#terms) および [設定可能な権限](#configurable-permissions) セクションを開き、独自のカスタム権限を作成します。
+このセクションでは、これらの手順について詳しく説明します。独自のカスタム権限を作成する際には、[用語](#terms)および[設定可能な権限](#configurable-permissions)の節を参照すると役立つ場合があります。
 
 >[!NOTE]
 >

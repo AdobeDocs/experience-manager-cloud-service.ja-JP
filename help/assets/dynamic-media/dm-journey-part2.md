@@ -12,9 +12,9 @@ hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2677'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -123,7 +123,7 @@ _「詳細」タブのオプションを選択して画像プリセットを作�
 
 画像プリセットは、画像のレシピと考えることができます。プリセットを使用する画像は、常に、一貫性のある同じ方法で配信されます。また、パラメーター `&op_brightness=+10` が、明るさを少し増やすために追加されました。
 
-完了したら、プリセットを保存すると、既存のすべての画像で使用できるようになります。この場合、 _中_ 液体チョコレートのボウルの画像にプリセットされる画像。
+完了したら、プリセットを保存すると、既存のすべての画像で使用できるようになります。この例では、_Medium_ 画像プリセットを、液体チョコレートが入ったボウルの画像に適用します。
 
 ![画像プリセット *Medium* を適用して、画像のレンディションを生成](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _画像プリセット Medium を適用して、画像のレンディションを生成。_

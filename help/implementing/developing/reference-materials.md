@@ -3,9 +3,9 @@ title: API リファレンス資料
 description: AEM には、デジタルエクスペリエンスプロジェクトに使用できる広範で強力な API が用意されています。
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 source-git-commit: 3434d51c9b0bad02b0c3f0836341f671c9405182
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '594'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ AEM の中核を成す API は次のとおりです。
 
 >[!NOTE]
 >
->Experience ManagerAPI の最新情報については、 [Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>Experience Manager API の最新情報については、[Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/) も参照してください。
 
 ## その他のフレームワーク {#additional-apis}
 

@@ -3,9 +3,9 @@ title: AEM Repo ツール
 description: AEM Repo ツールは、FTP に相当するコマンドラインを使用してローカルファイルシステムと AEM サーバーの間で JCR コンテンツを転送するためのシンプルなソリューションです。
 exl-id: fb887ba3-e40b-4ab1-b142-0748c6d9f18e
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '245'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 89%
 
 AEM Repo ツールは、FTP に相当するコマンドラインを使用してローカルファイルシステムと AEM サーバーの間で JCR コンテンツを転送するためのシンプルなソリューションです。AEM Repo ツールは、[Jackrabbit FileVault Maven プラグイン](https://jackrabbit.apache.org/filevault-package-maven-plugin)に似ていますが、より高速で依存関係が最小限であり、シンプルな bash スクリプトです。
 
-このツールは、開発者向けのファイルの転送を簡素化し、Eclipse と IntelliJ に統合して開発をより効率的にすることもできます。
+このツールは、開発者によるファイルの転送をシンプルにします。また、Eclipse および IntelliJ と統合して開発をより効率的にできます。
 
 ## 概要 {#overview}
 

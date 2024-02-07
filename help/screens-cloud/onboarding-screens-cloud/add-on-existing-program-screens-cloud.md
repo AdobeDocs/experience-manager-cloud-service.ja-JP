@@ -1,11 +1,11 @@
 ---
 title: Cloud Manager での既存プログラムに対する Screens アドオンの追加
-description: Cloud Manager for Screens as a Cloud Serviceで既存のプログラムに Screens アドオンを追加する方法を説明します。
+description: Cloud Manager for Screens as a Cloud Service で既存のプログラムに Screens アドオンを追加する方法について説明します。
 exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '244'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 53%
 
 ## 目的 {#objective}
 
-次の手順は、Cloud Manager で既存のプログラムに Screens アドオンを追加する方法を学ぶのに役立ちます。
+次の手順では、Cloud Manager で既存のプログラムに Screens アドオンを追加する方法について説明します。
 
 ## Cloud Manager で既存のプログラムに Screens アドオンを追加する手順 {#edit-programs-screens-cloud}
 
@@ -29,7 +29,7 @@ ht-degree: 53%
    >[!NOTE]
    >Cloud Manager について詳しくは、[Cloud Manager の概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=ja)を参照してください。
 
-1. プロジェクトに移動し、 **プログラムを編集** Cloud Manager の **概要** ページに貼り付けます。
+1. プロジェクトに移動し、Cloud Manager の&#x200B;**概要**&#x200B;ページで「**プログラムを編集**」オプションをクリックします。
 
    ![画像](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
 
@@ -40,8 +40,8 @@ ht-degree: 53%
 
    ![画像](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
 
-1. クリック **更新**」をクリックします。
+1. オプションを選択したら、「**更新**」をクリックします。
 
 ## 次の手順 {#whats-next}
 
-既存の Cloud Manager プログラムに Screens をアドオンとして追加する方法を学習し、Cloud Manager のプログラムと製品の下にプログラムが表示されたら、次に進む準備が整いました。 オンボーディングプロセスの次の手順は次のとおりです。 [Cloud Manager でのプロジェクト用ブランチの作成](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
+既存の Cloud Manager プログラムに Screens をアドオンとして追加する方法を理解し、Cloud Manager のプログラムと製品の下に自分のプログラムが表示されたら、次に進みます。オンボーディングプロセスの次の手順は、[Cloud Manager でのプロジェクト用ブランチの作成](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)です。

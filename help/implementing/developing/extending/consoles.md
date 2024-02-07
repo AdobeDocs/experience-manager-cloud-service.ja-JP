@@ -3,9 +3,9 @@ title: コンソールのカスタマイズ
 description: オーサーインスタンスのコンソールをカスタマイズするために AEM が提供する様々なオプションについて説明します。
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '516'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ AEM は、オーサリングインスタンスのコンソール（および[ペ
 
 ## Clientlibs {#clientlibs}
 
-Clientlibs を使用すると、デフォルトの実装を拡張して新しい機能を提供しながら、標準の関数、オブジェクトおよびメソッドを再利用できます。clientlibs を使用してカスタマイズする場合、独自の clientlib を `/apps.` 例えば、カスタムコンポーネントに必要なコードを保持できます。
+Clientlibs を使用すると、デフォルトの実装を拡張して新しい機能を提供しながら、標準の関数、オブジェクトおよびメソッドを再利用できます。Clientlibs をカスタマイズする場合、独自の clientlib を `/apps.` 下に作成できます。例えば、カスタムコンポーネントに必要なコードを保持できます。
 
 詳しくは、[AEM as a Cloud Service でのクライアントサイドライブラリの使用](/help/implementing/developing/introduction/clientlibs.md)を参照してください。
 
@@ -111,7 +111,7 @@ Clientlibs を使用すると、デフォルトの実装を拡張して新しい
 
 >[!NOTE]
 >
->この機能は、テキストフィールドの列に対して最適化されています。 他のデータタイプの場合は、 `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
+>この機能は、テキストフィールドの列に対して最適化されています。他のデータタイプの場合は、`/apps` で `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` をオーバーレイできます。
 
 ### リソースのフィルタリング {#filtering-resources}
 

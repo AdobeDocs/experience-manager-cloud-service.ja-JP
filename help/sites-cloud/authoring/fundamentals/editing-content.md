@@ -3,9 +3,9 @@ title: ページのコンテンツの編集
 description: ページを作成したら、必要な変更を行うためにコンテンツを編集できます
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2974'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -276,7 +276,7 @@ ht-degree: 98%
 
 [コンポーネントツールバーの編集（鉛筆）アイコン](#component-toolbar)を使用して、コンポーネントを開いてコンテンツを編集できます。
 
-正確な編集オプションは、コンポーネントによって異なります。 一部のコンポーネントの場合 [すべてのアクションは全画面表示モードでのみ使用できます](#edit-content-full-screen-mode). 例：
+実際に使用できる編集オプションはコンポーネントによって異なります。一部のコンポーネントでは、[すべてのアクションが全画面モードでのみ使用できます](#edit-content-full-screen-mode)。次に例を示します。
 
 * テキストコンポーネント
 
@@ -322,7 +322,7 @@ ht-degree: 98%
 
 段落コンポーネントを移動するには：
 
-1. 移動する段落を、選択して保持するか、クリックして保持するかのどちらかで選択します。
+1. 選択＆ホールドまたはクリック＆ホールドによって移動する段落を選択します。
 1. 段落を新しい場所にドラッグします。段落を配置できる場所が示されます。目的の場所にドロップします。
 
    ![コンポーネントの移動](/help/sites-cloud/authoring/assets/editing-moving-component.png)
@@ -541,5 +541,5 @@ AEM では、ユーザーが実行するアクションの履歴と、それら�
 >
 >* ファイルと画像に対する変更の取り消しおよびやり直しには、特別な権限が必要になります。
 >* ファイルや画像への変更の履歴は、少なくとも 10 時間維持されます。この時間を経過すると、変更の取り消しは保証されません。管理者はデフォルトの 10 時間を変更できます。
->* システム管理者は、インスタンスの要件に応じて、取り消し/やり直し機能の様々な側面を設定できます。
+>* システム管理者は、インスタンスの要件に応じて、取り消しとやり直し機能の様々な側面を設定できます。
 <!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->

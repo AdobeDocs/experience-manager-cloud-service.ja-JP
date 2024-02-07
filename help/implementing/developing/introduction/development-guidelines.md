@@ -3,9 +3,9 @@ title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスでの AEM および AMS での AEM との重要な違いについて説明します。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2745'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ AEM as a Cloud Service を更新する間、古いコードと新しいコード
 
 ## ファイルシステムの状態 {#state-on-the-filesystem}
 
-AEM as a Cloud Serviceでインスタンスのファイルシステムを使用しないでください。 ディスクはエフェメラルで、インスタンスが再利用されると破棄されます。単一の要求の処理に関する一時的なストレージのために、ファイルシステムの使用を制限することは可能ですが、大量のファイルに対して濫用しないでください。リソースの使用割り当てに悪影響を与え、ディスクの制限が生じる可能性があるためです。
+AEM as a Cloud Service でインスタンスのファイルシステムを使用しないでください。ディスクはエフェメラルで、インスタンスが再利用されると破棄されます。単一の要求の処理に関する一時的なストレージのために、ファイルシステムの使用を制限することは可能ですが、大量のファイルに対して濫用しないでください。リソースの使用割り当てに悪影響を与え、ディスクの制限が生じる可能性があるためです。
 
 ファイルシステムの使用がサポートされていない例として、パブリッシュ層では、永続化する必要のあるデータが、長期ストレージのために外部サービスに送り出されることを確認する必要があります。
 
@@ -47,7 +47,7 @@ AEM as a Cloud Serviceでインスタンスのファイルシステムを使用�
 
 トラブルを最小限に抑えるために、長時間実行ジョブは可能な限り避け、少なくとも再開可能な状態になっている必要があります。このようなジョブを実行するには、少なくとも 1 回は実行されることが保証されている Sling ジョブを使用します。したがって、ジョブが中断された場合、ジョブはできるだけ早く再実行されます。ただし、最初からやり直すべきではないでしょう。このようなジョブをスケジュールする場合は、 [Sling ジョブ](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) スケジューラーを使用することをお勧めします。やはり、少なくとも 1 回は実行されることが保証されているからです。
 
-実行を保証できないので、スケジュール設定に Sling Commons Scheduler を使用しないでください。 スケジュール設定されている可能性が高いです。
+Sling Commons Scheduler は実行を保証できないので、スケジュール設定には使用しないでください。スケジュール設定されている可能性が高いです。
 
 同様に、監視イベント（例：JCR イベントや Sling リソースイベント）に対する動作など、非同期的に発生するあらゆる動作は、必ずしも実行が保証されないので、慎重に使用する必要があります。これは、現在の AEM デプロイメントに既に当てはまります。
 
@@ -166,29 +166,29 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 クラウド環境のスレッドダンプは継続的に収集されますが、現時点ではセルフサービス方式でダウンロードすることはできません。その間、問題のデバッグ用にスレッドダンプが必要な場合は、AEM サポートに問い合わせ、正確な時間枠を指定してください。
 
-## CRX/DE Lite とAEM as a Cloud Service Developer Console {#crxde-lite-and-developer-console}
+## CRX/DE Lite と AEM as a Cloud Service Developer Console {#crxde-lite-and-developer-console}
 
 ### ローカル開発 {#local-development}
 
 ローカル開発の場合、開発者は CRXDE Lite（`/crx/de`）と AEM Web コンソール（`/system/console`）に完全にアクセスできます。
 
-ローカル開発時（SDK を使用）、 `/apps` および `/libs` は、直接に書き込むことができます。これは、最上位フォルダーが不変なクラウド環境とは異なります。
+（SDK を使用する）ローカル開発では、`/apps` と `/libs` に直接書き込むことができます。この点が、最上位フォルダーが不変なクラウド環境とは異なります。
 
 ### AEM as a Cloud Service の開発ツール {#aem-as-a-cloud-service-development-tools}
 
 >[!NOTE]
->AEMas a Cloud Serviceの開発者コンソールは、同じ名前の [*Adobe Developer Console*](https://developer.adobe.com/developer-console/).
+>AEM as a Cloud Service Developer Console を、同様の名前の [*Adobe Developer Console*](https://developer.adobe.com/developer-console/) と混同しないでください。
 >
 
 ユーザーはオーサー層の開発環境では CRXDE Lite にアクセスできますが、ステージ環境や実稼動環境ではアクセスできません。不変リポジトリー（`/libs`、`/apps`）に実行時に書き込むことはできないので、書き込もうとするとエラーが発生します。
 
-代わりに、AEMas a Cloud Service開発者コンソールからリポジトリブラウザーを起動して、オーサー層、パブリッシュ層、プレビュー層のすべての環境のリポジトリに対する読み取り専用ビューを提供できます。 リポジトリーブラウザーについて詳しくは、[こちら](/help/implementing/developing/tools/repository-browser.md)を参照してください。
+代わりに、AEM as a Cloud Service Developer Console からリポジトリブラウザーを起動して、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対してリポジトリへの読み取り専用ビューを提供できます。リポジトリブラウザーについて詳しくは、[こちら](/help/implementing/developing/tools/repository-browser.md)を参照してください。
 
-RDE、開発、ステージ、実稼動環境用のAEM as a Cloud Service開発者コンソールで、AEMの開発者環境をデバッグするための一連のツールを使用できます。 URL は、次のようにオーサーサービス URL またはパブリッシュサービス URL を調整して決定できます。
+AEM as a Cloud Service 開発者環境をデバッグするための一連のツールは、RDE 環境、開発環境、ステージ環境、実稼動環境の AEM as a Cloud Service Developer Console で利用できます。URL は、次のようにオーサーサービス URL またはパブリッシュサービス URL を調整して決定できます。
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-ショートカットとして、次の Cloud Manager CLI コマンドを使用し、以下に説明する環境パラメーターに基づいてAEMas a Cloud Service開発者コンソールを起動できます。
+ショートカットとして、次の Cloud Manager CLI コマンドを使用して、下記の環境パラメーターに基づいて AEM as a Cloud Service Developer Console を起動できます。
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
@@ -206,11 +206,11 @@ RDE、開発、ステージ、実稼動環境用のAEM as a Cloud Service開発�
 
 ![開発者コンソール 3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-また、デバッグにも便利です。AEMas a Cloud Service開発者コンソールには、次のように「クエリの説明を実行」ツールへのリンクがあります。
+また、デバッグにも便利な、AEM as a Cloud Service Developer Console には、次のようにクエリの説明を実行ツールへのリンクがあります。
 
 ![開発者コンソール 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-実稼動プログラムの場合、AEMas a Cloud Serviceの開発者コンソールへのアクセスはAdobe Admin Consoleの「Cloud Manager - Developer Role」で定義されます。サンドボックスプログラムの場合、AEM as a Cloud Serviceへのアクセス権を持つ製品プロファイルを持つ任意のユーザーがAEMas a Cloud Serviceの開発者コンソールを使用できます。 すべてのプログラムで、ステータスダンプとリポジトリブラウザーには「Cloud Manager - デベロッパーの役割」が必要です。また、オーサーサービスとパブリッシュサービスの両方のサービスからデータを表示するには、両方のサービスで AEM ユーザーまたはAEM 管理者製品プロファイルでもユーザーが定義されている必要があります。ユーザー権限の設定について詳しくは、 [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ja) を参照してください。
+実稼働プログラムの場合、AEM as a Cloud Service Developer Console へのアクセスは Adobe Admin Console の「Cloud Manager - 開発者の役割」で定義されます。一方、サンドボックスプログラムの場合、AEM as a Cloud Service Developer Console は、AEM as a Cloud Service へのアクセス権を付与する製品プロファイルを持つすべてのユーザーが利用できます。すべてのプログラムで、ステータスダンプとリポジトリブラウザーには「Cloud Manager - デベロッパーの役割」が必要です。また、オーサーサービスとパブリッシュサービスの両方のサービスからデータを表示するには、両方のサービスで AEM ユーザーまたはAEM 管理者製品プロファイルでもユーザーが定義されている必要があります。ユーザー権限の設定について詳しくは、 [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ja) を参照してください。
 
 ### パフォーマンスの監視 {#performance-monitoring}
 

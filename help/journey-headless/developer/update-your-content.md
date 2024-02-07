@@ -3,9 +3,9 @@ title: AEM Assets API を使用してコンテンツをアップデートする�
 description: AEM ヘッドレスデベロッパージャーニーのこの部分では、REST API を使用してコンテンツフラグメントのコンテンツにアクセスし、アップデートする方法について説明します。
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 source-git-commit: 31b0eecd01ee319aaf700505293530fec129b00f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1061'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -262,7 +262,7 @@ Assets REST API は `/api/assets` エンドポイントを使用しており、�
 
 `GET /{cfParentPath}/{cfName}.json`
 
-例：
+次に例を示します。
 
 `http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
 

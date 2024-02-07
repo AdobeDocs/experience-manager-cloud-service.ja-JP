@@ -3,9 +3,9 @@ title: ContextHub の拡張
 description: 提供されている ContextHub ストアやモジュールのタイプがソリューションの要件を満たさない場合は、新しいタイプを定義できます。
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '625'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ contexthub.store.[storeType]
 * [`ContextHub.Store.JSONPStore`](contexthub-api.md#contexthub-store-jsonpstore)
 * [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore)
 
-各ベースストアは、 [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) ストア。
+各ベースストアは、[`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) ストアを拡張したものです。
 
 次の例では、`ContextHub.Store.PersistedStore` ストア候補の最もシンプルな拡張を作成しています。
 

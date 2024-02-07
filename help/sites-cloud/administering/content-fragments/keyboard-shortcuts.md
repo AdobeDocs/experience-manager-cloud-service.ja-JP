@@ -1,13 +1,13 @@
 ---
 title: コンテンツフラグメントコンソールのキーボードショートカット
-description: コンテンツフラグメントを管理するための選択など、AEM全体で様々なキーボードショートカットを利用できます。
+description: AEM 全体を通して、コンテンツフラグメント管理用の選択を始めとして、様々なキーボードショートカットを使用できます。
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
 source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '223'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 88%
 
 様々なキーボードショートカットを、コンテンツフラグメントコンソールで使用することができます。
 
-AEM 全体で様々なキーボードショートカットを利用できます。一部は次の場合に適用されます。 [ページの編集](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)その他の [コンソールの一般的な使用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+AEM 全体で様々なキーボードショートカットを利用できます。キーボードショートカットの中には、[ページの編集](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)時に適用されるものもあれば、[一般的なコンソール使用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)に適用されるものもあります。
 
 >[!NOTE]
 >

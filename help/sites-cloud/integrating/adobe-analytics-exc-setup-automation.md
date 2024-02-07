@@ -1,17 +1,17 @@
 ---
-title: Adobe Analytics と Experience Cloud 設定自動化の統合
+title: Adobe Analytics と Experience Cloud 設定自動化を統合する
 description: Experience Cloud 設定自動化を使用すると、シンプルな UI ウィザードインターフェイスを介して、わかりやすく自動化された方法で、Experience Manager Sites を Experience Platform タグおよび Adobe Analytics と統合してツール化することができます。ご利用のサイトで自動設定を使用する方法を説明します。
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '719'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Adobe Analytics と Experience Cloud 設定自動化の統合 {#integrate-adobe-analytics-automation-setup}
+# Adobe Analytics と Experience Cloud 設定自動化を統合する {#integrate-adobe-analytics-automation-setup}
 
 Experience Cloud 設定自動化を使用すると、シンプルな UI ウィザードインターフェイスを介して、わかりやすく自動化された方法で、Experience Manager Sites を Experience Platform タグおよび Adobe Analytics と統合してツール化することができます。
 
@@ -44,15 +44,15 @@ Adobe Analytics と AEM Sites の統合は、かつてないほどシンプル�
 ## 設定方法
 
 1. **Sites** に移動して、Adobe Analytics と統合するサイトのルートを選択します。
-1. サイドレールメニューを展開し、「 」を選択します。 **Analytics を設定**.
+1. サイドパネルメニューを展開して、「**Analytics を設定**」を選択します。
 
    これはサイドレールの新しいオプションであり、Experience Cloud 設定自動化のコントロールとステータスを提供するパネルが開きます。
-1. を選択します。 **Analytics の統合** 」ボタンをクリックします。
+1. 「**Analytics を統合**」ボタンを選択します。
 1. 表示されたダイアログで、**レポートスイート ID** の名前を入力します。
 
    この文字列は、選択した AEM サイトの分析データのデータストアとして、Adobe Analytics に[レポートスイート ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=ja) を作成するために使用されます。提供された文字列には、一意性を確保するために環境および層の識別子が追加されます。
 
-1. ページとパネルを更新し、「 」を選択します。 **統合ステータスの確認** 自動化のステータスを確認します。
+1. ページとパネルを更新し、「**統合ステータスを確認**」を選択して、自動化のステータスを確認します。
 
    自動化の設定は非同期で実行されます。**統合ステータスの確認** には、統合の現在のステータスが表示されます。
 
@@ -75,7 +75,7 @@ Adobe Analytics と AEM Sites の統合は、かつてないほどシンプル�
 
 1. AEM サイトと同じ IMS 組織の Adobe Analytics に移動します。
 1. **レポート**／**エンゲージメント**／**Adobe Experience Manager**／**サイトのパフォーマンスの概要** に移動して、AEM Sites の新しい概要レポートを作成します。
-1. 選択 **レポートを開く**.
+1. 「**レポートを開く**」を選択します。
 1. 前の演習で使用したレポートスイート名と一致する **レポートスイート ID** を選択します。
 1. 新しいテンプレートに流入する分析データを経時的に表示します。
 

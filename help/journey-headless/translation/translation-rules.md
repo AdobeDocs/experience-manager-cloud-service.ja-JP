@@ -3,9 +3,9 @@ title: ヘッドレスコンテンツの翻訳ルールの設定
 description: 翻訳するコンテンツを特定するための翻訳ルールを定義する方法を説明します。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '912'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ AEM ヘッドレス翻訳ジャーニーの以前のドキュメント、[翻訳
    ![コンテキストの追加](assets/add-translation-context.png)
 1. パスブラウザーを使用して必要なパスを選択し、「**確認**」をクリックして保存します。なお、ヘッドレスコンテンツを保持するコンテンツフラグメントは、通常、`/content/dam/<your-project>` の配下に配置されます。
    ![パスの選択](assets/select-context.png)
-1. 作成したコンテキストを選択し、「 」を選択します。 **編集**. これにより、プロパティを設定するための&#x200B;**翻訳ルールエディター**が開きます。
+1. 作成したコンテキスト、「**編集**」の順に選択します。これにより、プロパティを設定するための&#x200B;**翻訳ルールエディター**が開きます。
    ![翻訳ルールエディター](assets/translation-rules-editor.png)
 1. デフォルトでは、すべての設定が親パス（この例では `/content/dam`）から継承されます。設定にフィールドを追加するには、「**継承元`/content/dam`**」オプションをオフにします。
 1. オフにしたら、コンテンツフラグメントモデルのプロパティ名のうち、[翻訳対象のフィールドとして既に特定されている](getting-started.md#content-models)ものを、リストの「**一般**」セクションに追加します。

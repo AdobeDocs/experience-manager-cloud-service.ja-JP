@@ -4,9 +4,9 @@ description: テーマとコアコンポーネントを使用して、アダプ�
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2610'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -168,7 +168,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ##### コンポーネントレベルのスタイルの設定 {#component-based-customization}
 
-また、アダプティブフォームの特定のコアコンポーネントのフォント、色、サイズ、およびその他の CSS プロパティを変更することもできます（ボタン、チェックボックス、コンテナ、フッターなど）。 特定のコンポーネントの CSS ファイルを編集して、組織に合わせてボタンやチェックボックスのスタイルを設定できます。コンポーネントのスタイルをカスタマイズするには：
+また、アダプティブフォームの特定のコアコンポーネントのフォント、色、サイズ、およびその他の CSS プロパティを変更することもできます（ボタン、チェックボックス、コンテナ、フッターなど）。特定のコンポーネントの CSS ファイルを編集して、組織に合わせてボタンやチェックボックスのスタイルを設定できます。コンポーネントのスタイルをカスタマイズするには：
 
 1. 編集するために `<your-theme-sources>/src/components/<component>/<component.scss>` ファイルを開きます。例えば、ボタンコンポーネントのフォントの色を変更するには、`<your-theme-sources>/src/components/button/button.scss` ファイルを開きます。
 1. 必要に応じて値を変更します。例えば、マウスポインターを置いたときのボタンコンポーネントの色を `green` に変更するには、`cmp-adaptiveform-button__widget:hover` クラスの `color: $white` プロパティの値を 16 進数コードコードの `#12B453`、またはその他の `green` の色に変更します。最終的なコードは次のようになります。
@@ -379,7 +379,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 1. AEM Forms オーサーインスタンスにログインします。
 
-1. 選択 **Adobe Experience Manager** > **Forms** > **Forms &amp; Documents**.
+1. **Adobe Experience Manager**／**Forms**／**フォームとドキュメント**&#x200B;を選択します。
 
 1. **作成**／**アダプティブフォーム**&#x200B;の順にクリックします。アダプティブフォームを作成するためのウィザードが開きます。
 

@@ -6,9 +6,9 @@ feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1059'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -141,7 +141,7 @@ ht-degree: 99%
 
 1. [!DNL Experience Manager] のロゴを選択し、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL フォルダーメタデータスキーマ]**&#x200B;に移動します。
 1. フォルダーメタデータスキーマフォームページから、フォルダーに適用するスキーマフォームを選択します。
-1. ツールバーで、「 」を選択します。 **[!UICONTROL フォルダーに適用]**.
+1. ツールバーの「**[!UICONTROL フォルダーに適用]**」を選択します。
 
 1. スキーマを適用するフォルダーを選択し、「**[!UICONTROL 適用]**」を選択します。既にフォルダーにメタデータスキーマが適用されている場合は、既存のメタデータスキーマを上書きするかどうかを確認する警告メッセージが表示されます。「**[!UICONTROL 上書き]**」を選択します。
 1. メタデータスキーマを適用したフォルダーのメタデータプロパティを開きます。

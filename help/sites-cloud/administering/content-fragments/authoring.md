@@ -1,13 +1,13 @@
 ---
 title: コンテンツフラグメントのオーサリング
-description: コンテンツフラグメントのコンテンツを作成する方法を理解し、目的に応じてそのコンテンツのバリエーションを作成します。 これにより、ヘッドレス配信とページオーサリングの両方で柔軟性が向上します。
+description: コンテンツフラグメントのコンテンツの作成し、目的に応じてそのコンテンツのバリエーションを作成する方法を説明します。これにより、ヘッドレス配信とページオーサリングの両方で柔軟性が向上します。
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2266'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 96%
 
   >[!NOTE]
   >
-  >基になるモデルの定義に応じて、フィールドは特定のタイプの [検証](/help/assets/content-fragments/content-fragments-models.md#validation).
+  >基になるモデルの定義に応じて、フィールドは特定のタイプの[検証](/help/assets/content-fragments/content-fragments-models.md#validation)の対象となる場合があります。
 
 ![コンテンツフラグメントエディター - 概要](assets/cf-authoring-overview.png)
 
@@ -92,7 +92,7 @@ ht-degree: 96%
 
 ### リンクへの移動 {#follow-links}
 
-エディターの様々な部分で、リンクアイコンが表示されます。これを使用して、表示される項目（コンテンツフラグメントモデル、親参照、参照されているフラグメントなど）を開くことができます。
+エディターの様々な部分で、リンクアイコンが表示されます。これを使用して、コンテンツフラグメントモデル、親参照または参照されているフラグメントなど表示されている項目を開くことができます。
 
 ![コンテンツフラグメントエディター - リンクアイコン](assets/cf-authoring-link-icon.png)
 
@@ -178,7 +178,7 @@ ht-degree: 96%
 **[複数行テキスト](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**&#x200B;フィールドは、次の 3 つの形式のいずれかを持つことができます。
 
 * プレーンテキスト
-* [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
+* [マークダウン](/help/sites-cloud/administering/content-fragments/markdown.md)
 * [リッチテキスト](#edit-multi-line-text-fields-rich-text)
 
 「プレーンテキスト」または「マークダウン」として定義されたフィールドには、（画面上の）書式設定オプションのないシンプルなテキストボックスがあります。

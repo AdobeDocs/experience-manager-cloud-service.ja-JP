@@ -3,9 +3,9 @@ title: 非同期ジョブ
 description: Adobe Experience Manager では、リソースを集中的に消費する一部のタスクをバックグラウンド操作として非同期に処理することでパフォーマンスを最適化します。
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '856'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ AEM が操作を非同期で処理する場合は常に、[インボックス](/
 
    ![stop_icon](assets/async-stop-icon.png)
 
-1. 説明やログなど、その他の詳細を表示するには、操作を選択し、 **[!UICONTROL 開く]** をクリックします。
+1. 説明やログなど、その他の詳細を表示するには、操作を選択し、ツールバーの「**[!UICONTROL 開く]**」をクリックします。
 
    ![open_icon](assets/async-open-icon.png)
 

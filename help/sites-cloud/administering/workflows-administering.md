@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1286'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 98%
 
    >[!NOTE]
    >
-   > ワークフローインスタンスを正常な状態に維持するには、[ワークフローインスタンスの定期的なパージ](#regular-purging-of-workflow-instances)または[ワークフローのベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)に記載されているベストプラクティスに従います。
+   > ワークフローインスタンスを正常な状態に維持するには、[ワークフローインスタンスの定期的なパージ](#regular-purging-of-workflow-instances)または[ワークフローのベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=ja)に記載されているベストプラクティスに従います。
 
 ## ワークフローインスタンスの検索 {#search-workflow-instances}
 
@@ -110,8 +110,8 @@ ht-degree: 98%
 
 ワークフローが失敗した場合、AEM の&#x200B;**エラー**&#x200B;コンソールを使用してエラーの原因を調べ、特定された原因に応じて適切なアクションを取ることができます。
 
-* **失敗の詳細**
-ウィンドウを開き、 **失敗メッセージ**、 **ステップ、 **エラースタック**.
+* **エラーの詳細**
+ウィンドウが開き、**エラーメッセージ**、**ステップ、**エラースタック**&#x200B;が表示されます。
 
 * **履歴を開く**&#x200B;ワークフローの履歴の詳細を表示します。
 

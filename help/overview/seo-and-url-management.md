@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service の SEO および URL 管理�
 description: Adobe Experience Manager as a Cloud Service の SEO および URL 管理のベストプラクティス
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3539'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -188,7 +188,7 @@ AEM では、すべての Web ページが `/content/my-brand/my-content` に保
   `www.mydomain.com/es/home.html`
 
 * この場合、URL を次のように表示した方が効果的です。
-  `www.mydomain.com/es/casa.html`。
+  `www.mydomain.com/es/casa.html`
 
 ページ名をローカライズする際の課題は、AEM プラットフォームで利用できるローカライズツールの多くが、コンテンツの同期を保つためにロケール間でページ名を一致させる必要があることです。
 
@@ -250,7 +250,7 @@ AEM で受信要求のマッピングまたはページ上の URL の書き換�
    Web コンソール（localhost:4502/system/console/configMgr など）を使用して、Sling Resource Resolver を設定できます。
 
    * **Apache Sling Resource Resolver Factory**
-     `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`。
+     `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`
 
    URL を短縮するために必要なマッピングを正規表現として構築した後、ビルドに含まれている OsgiConfignode の `config.publish` でこれらの設定を定義することをお勧めします。
 
@@ -459,7 +459,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-さらに、XML サイトマップ用に実装された機能は、例えば、正規リンクや代替言語をページの先頭に追加する場合など、様々な使用例で使用できます。 詳しくは、[SEO タグ](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html)のインターフェイスを参照してください。
+さらに、XML サイトマップ用に実装された機能は、例えば、正規リンクや代替言語をページの先頭に追加する場合など、様々なユースケースでも使用できます。詳しくは、[SEO タグ](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html)のインターフェイスを参照してください。
 
 ### レガシー URL の 301 リダイレクトの作成 {#creating-redirects-for-legacy-urls}
 
