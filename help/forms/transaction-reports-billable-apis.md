@@ -4,10 +4,10 @@ description: トランザクションとして計上されるすべての API �
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: a1a87a27d73d7472ec02de37621123bbdd3876b4
+source-git-commit: 7318c5e65fc03bfebbf5fb43e4edc30ffbb53909
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 60%
+source-wordcount: '1598'
+ht-degree: 50%
 
 ---
 
@@ -31,44 +31,42 @@ AEM Forms には、フォームの送信、ドキュメントの処理、ドキ�
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_submission_graph_en"
 >title="フォーム送信トラッカー"
->abstract="合計カウント数を統合したビューで、フォーム送信を容易に追跡したり、インスタンス固有の詳細を表示したりできます。 直感的な棒グラフを使用して、トレンドの特定、インスタンスの比較、情報に基づく意思決定を一目でおこないます。"
+>abstract="アドビの直感的なトラッキングダッシュボードを使用して、AEM Formsパブリッシュインスタンス上のフォーム送信を容易に監視できます。 グラフには、現在のインスタンスに固有のデータが表示され、トレンドを迅速に分析し、十分な情報に基づいた決定を下すことができます。 他のインスタンスの送信データの場合は、各インスタンスのダッシュボードにアクセスするだけです。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_conversions_graph_en"
 >title="フォーム変換トラッカー"
->abstract="フォームの変換に関するタブを容易に保持し、合計数の概要を確認したり、各AEM Formsインスタンスの詳細を調べたりできます。 読みやすい棒グラフを使用すると、傾向を見分け、インスタンスを比較し、情報に基づいた迅速な意思決定をおこなうことができます。"
+>abstract="フォームの変換に関する情報を常に把握し、変換の総数をまとめます。 グラフには、現在のAEM Formsパブリッシュインスタンスに固有のデータが表示され、トレンドを迅速に分析し、十分な情報に基づいた決定をおこなうことができます。 他のインスタンスのコンバージョンデータを表示するには、それぞれのインスタンスのダッシュボードにアクセスします。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
 >title="フォーム生成の平均期間"
->abstract="グラフは、フォームの作成に要した平均時間を示します。 グラフの各棒は特定のフォームを表し、棒の高さはその期間中のフォーム作成に要した平均時間を示します。 このグラフを分析すると、ユーザーは、様々な期間や様々なコンテキストでのフォーム作成の効率と速度を把握でき、潜在的な改善点についてのインサイトが得られます。"
+>abstract="グラフは、フォームの作成に要した平均時間を示します。 グラフの各棒は特定のフォームを表し、棒の高さはその期間中のフォーム作成に要した平均時間を示します。 このグラフを分析すると、ユーザーは、様々な期間や様々なコンテキストでのフォーム作成の効率と速度を把握でき、潜在的な改善点についてのインサイトが得られます。 グラフは、現在のAEM Formsオーサーインスタンスに固有のデータを提供します。 他のインスタンスのデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="フォーム作成の平均期間"
->abstract="グラフには、フォームの作成と公開にかかった平均時間が表示されます。この時間は、フォームが編集用に開かれた最初の日から測定されます。 各バーは、フォームの特定の期間に対応します。バーの高さは、フォーム開発の開始から最終的なフォーム作成および公開までの平均時間を示します。"
+>abstract="グラフには、フォームの作成と公開にかかった平均時間が表示されます。この時間は、フォームが編集用に開かれた最初の日から測定されます。 各バーは、フォームの特定の期間に対応します。バーの高さは、フォーム開発の開始から最終的なフォーム作成および公開までの平均時間を示します。 グラフは、現在のAEM Formsオーサーインスタンスに固有のデータを提供します。 他のインスタンスのデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
 >title="新しいFormsトラッカー"
->abstract="グラフには、特定の期間に新しく作成されたフォームの数や頻度に関する情報が表示されます。 グラフの各棒は、日、週、月などの個別の測定単位を表します。 各バーの高さは、その特定の間隔で作成された新しいフォームの数量または頻度を示します。"
+>abstract="グラフには、特定の期間に新しく作成されたフォームの数や頻度に関する情報が表示されます。 グラフの各棒は、日、週、月などの個別の測定単位を表します。 各バーの高さは、その特定の間隔で作成された新しいフォームの数量または頻度を示します。 グラフは、現在のAEM Formsオーサーインスタンスに固有のデータを提供します。 他のインスタンスのデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="公開済みForms Tracker"
->abstract="グラフには、特定の期間に正常に発行されたフォームの数や頻度に関する情報が表示されます。 これにより、フォームの公開の経時的な傾向、パターン、または変化を把握し、生産性の監視、ピーク発行期間の特定、フォームの公開プロセスでの変更の成功の評価に役立ちます。"
+>abstract="グラフには、特定の期間に正常に発行されたフォームの数や頻度に関する情報が表示されます。 これにより、フォームの公開の経時的な傾向、パターン、または変化を把握し、生産性の監視、ピーク発行期間の特定、フォームの公開プロセスでの変更の成功の評価に役立ちます。 グラフは、現在のAEM Formsパブリッシュインスタンスに固有のデータを提供します。 他のインスタンスのコンバージョンデータを表示するには、それぞれのインスタンスのダッシュボードにアクセスします。"
 
-<!-- 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
->title="Form Fragments Tracker"
->abstract="This graph helps you see how many form fragments people use in their forms. It gives you a sense of how popular or common these reusable parts are in form building."
+>title="公開済みForms Tracker"
+>abstract="このグラフを使用すると、ユーザーがフォームで使用するフォームフラグメントの数を確認できます。 これらの再利用可能なパーツがフォーム構築でどれほど頻繁に使用されているかを把握できます。 グラフは、現在のAEM Formsパブリッシュインスタンスに固有のデータを提供します。 他のインスタンスのコンバージョンデータを表示するには、それぞれのインスタンスのダッシュボードにアクセスします。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
->title="Average Duration for Form Fragments Creation"
->abstract= "The graph displays the average time taken to create a form fragment, measured from the initial day the form fragment was opened for editing. Each bar corresponds to a specific time frame for a form fragment, with the bar height indicating the average time taken from the start of form fragment development to its finalization and publication."
-
+>title="公開済みForms Tracker"
+>abstract="グラフには、フォームフラグメントの作成に要した平均時間が表示されます。この時間は、フォームフラグメントが編集用に開かれた最初の日から測定されます。 各バーは、フォームフラグメントの特定の期間に対応します。バーの高さは、フォームフラグメントの開発の開始から最終化および公開までの平均時間を示します。 グラフは、現在のAEM Formsパブリッシュインスタンスに固有のデータを提供します。 他のインスタンスのコンバージョンデータを表示するには、それぞれのインスタンスのダッシュボードにアクセスします。"
 
 <!-- 
 
