@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c986f817b2dc81e03b9c6f725d8754f017a585dd
+source-git-commit: dc89843609e54ddb93e09776f9eff64d13069bf7
 workflow-type: tm+mt
-source-wordcount: '4633'
+source-wordcount: '4635'
 ht-degree: 98%
 
 ---
@@ -771,6 +771,7 @@ ht-degree: 98%
    + [Edge 配信向けのコンテンツの公開](/help/edge/publishing.md)
    + [Edge 配信向けの開発](/help/edge/developing.md)
    + [コンテンツモデリング](/help/edge/content-modeling.md)
+   + [ブロックを作成する](/help/edge/create-block.md)
    + [既存のプロジェクトと Edge 配信](/help/edge/existing-projects.md)
    + Edge 配信アプリケーションの作成 {#build}
       + [はじめに - 開発者向けチュートリアル](/help/edge/developer/tutorial.md)

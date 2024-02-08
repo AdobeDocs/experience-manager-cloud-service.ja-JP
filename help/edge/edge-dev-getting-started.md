@@ -2,9 +2,9 @@
 title: Edge Delivery Servicesを使用したAEMオーサリングのための Developer Getting Guide
 description: このガイドでは、Edge Delivery Servicesとコンテンツオーサリング用のユニバーサルエディターを使用して、新しいAdobe Experience Managerサイトを導入および導入する方法を説明します
 feature: Edge Delivery Services
-source-git-commit: 5967bd78b9c23cf3451ac3b0ec2118da5200ddc1
+source-git-commit: 224cfe9853e8974c33b0e53e961a02d54f875a35
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -162,3 +162,9 @@ GitHub プロジェクトが完成したら、プロジェクトで使用でき�
 1. 公開されたコンテンツを確認します。
 
    ![公開済みコンテンツ](assets/edge-dev-getting-started/published-site.png)
+
+## 次の手順 {#next-steps}
+
+これで、Edge Delivery Servicesプロジェクトを使用したAEMの作業が完了し、独自のブロックの作成とスタイル設定を開始できます。
+
+ガイドを参照してください [ユニバーサルエディタで使用するためのブロックの作成](/help/edge/create-block.md) を参照してください。
