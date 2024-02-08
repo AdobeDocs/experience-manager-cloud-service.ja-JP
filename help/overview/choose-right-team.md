@@ -3,7 +3,7 @@ title: 適切な人材、適切な役割
 description: プロジェクトに適切な人材を選択し、適切な役割を割り当てる方法について説明します。
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 100%
 

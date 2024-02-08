@@ -4,8 +4,8 @@ description: 問題を監視し、パフォーマンスを向上させる方法�
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 76%
+source-wordcount: '459'
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 76%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=ja" text="ログへのアクセスと管理"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=ja#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service の開発ツール"
 
-このジャーニーは最後の部分なので、問題を監視し、移行完了後にパフォーマンスを向上させる方法を学びます。 一時ファイルを確実にクリーンアップし、継続的な開発のベストプラクティスを確認し、ログを管理する必要があります。
+このジャーニーは最後の部分です。移行が完了した後で、イシューを監視してパフォーマンスを向上させる方法を確認します。一時ファイルを確実にクリーンアップし、継続的な開発のベストプラクティスを確認し、ログを管理する必要があります。
 
 ## これまでの説明内容 {#story-so-far}
 
@@ -43,15 +43,15 @@ AEM as a Cloud Service 開発者環境でのデバッグは、開発環境、ス
 ユーザーは開発環境では CRXDE Lite にアクセスできますが、ステージング環境や実稼動環境ではアクセスできません。
 
 >[!IMPORTANT]
->実行時に `/libs` や `/apps` などの不変リポジトリに書き込むと、エラーが発生します。また、ステージング環境と実稼動環境用の開発者ツールにアクセスすることはできません。
+>実行時に `/libs` や `/apps` などの不変リポジトリに書き込むと、エラーが発生します。ユーザーは、ステージング環境と実稼動環境用の開発者ツールにもアクセスできません。
 
-詳しくは、 [開発とCRXDE Lite](/help/implementing/developing/tools/crxde.md) を参照してください。
+CRXDE Lite を使用して AEM アプリケーションを開発する方法について詳しくは、[CRXDE Lite による開発](/help/implementing/developing/tools/crxde.md)を参照してください。
 
 ## ログの管理 {#managing-logs}
 
 ユーザーは、選択した環境の使用可能なログファイルのリストにアクセスできます。
 
-詳しくは、 [ログへのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md) ユーザーインターフェイスを通じて、または Cloud Manager を使用して API からログにアクセスしログを管理する方法について説明します。
+ユーザーインターフェイスを通じて、または Cloud Manager を使用して API からログにアクセスしログを管理する方法について詳しくは、[ログへのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md)を参照してください。
 
 ## サポートへの問い合わせ {#contacting-support}
 
@@ -65,13 +65,13 @@ Cloud Service へのアクセスに関するご質問については、アドビ
 
 ## 習得事項の文書化 {#document-learnings}
 
-移行が完了したら、このプロセスで得られた知識を文書化します。 文書化には次の質問が役立つでしょう。
+移行が完了したら、このプロセスで得られた知識を文書化してください。文書化には次の質問が役立つでしょう。
 
 * 何がうまくいき、何がうまくいかなかったのか？
 * 主な問題点は何でしたか？
-* Recommendations（将来の移行がある場合）
+* 推奨事項（今後の移行がある場合）。
 
-移行後の学習内容を、組織内の関係者やチームと共有します。
+移行後に得られたこれらの気づきを組織内の関係者やチームと共有してください。
 
 ## ジャーニーの完了  {#journey-ends}
 

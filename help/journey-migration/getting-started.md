@@ -3,7 +3,7 @@ title: AEM as a Cloud Service への移行ジャーニーの概要
 description: AEM as a Cloud Service への移行の基本事項を把握して、移行ジャーニーを開始します。
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 100%
 

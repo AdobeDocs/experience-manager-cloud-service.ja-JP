@@ -3,7 +3,7 @@ title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Serviceのメンテナンスタスクと、その設定方法について説明します。
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: 35223fba365cf55fca51eb8420b7217ec3e95ccc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 100%
 
