@@ -120,7 +120,7 @@ AEM では、実際には最後の 3 つの手順のみが実行されます。�
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
-これには、[Sling Resource Merger](/help/implementing/developing/introduction/overlays.md) を介して[オーバーレイ](/help/implementing/developing/introduction/sling-resource-merger.md)を使用します。>コンポーネントが設定されると、すべての編集可能なコンポーネントを自動的にラップする装飾要素に、ページ作成者が設定したスタイルが AEM により自動的に挿入されます。コンポーネント自体で必要な操作はこれで終わりです。
+>これには、[Sling Resource Merger](/help/implementing/developing/introduction/overlays.md) を介して[オーバーレイ](/help/implementing/developing/introduction/sling-resource-merger.md)を使用します。>コンポーネントが設定されると、すべての編集可能なコンポーネントを自動的にラップする装飾要素に、ページ作成者が設定したスタイルが AEM により自動的に挿入されます。コンポーネント自体で必要な操作はこれで終わりです。
 
 編集ダイアログの「スタイル」タブを有効にする
 
@@ -134,8 +134,8 @@ AEM では、実際には最後の 3 つの手順のみが実行されます。�
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 これには、[Sling Resource Merger](/help/implementing/developing/introduction/overlays.md) を介して[オーバーレイ](/help/implementing/developing/introduction/sling-resource-merger.md)を使用します。
 
->[!NOTE]>編集ダイアログの「スタイル」タブは、デフォルトでは有効になっていません。
-
+>[!NOTE]
+>>編集ダイアログの「スタイル」タブは、デフォルトでは有効になっていません。
 >要素名を持つスタイル
 >
 >開発者は `cq:styleElements` 文字列配列プロパティを使用して、コンポーネントのスタイルに使用できる要素名のリストを設定することもできます。その後、テンプレート作成者はデザインダイアログのポリシーの「スタイル」タブで、各スタイルに設定する要素名を選択することもできます。これにより、ラッパー要素の要素名が設定されます。

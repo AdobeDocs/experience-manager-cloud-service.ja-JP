@@ -441,7 +441,7 @@ Cloud manager validator 2.0.xx
 >[!NOTE]
 >
 >Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。
-アドビでは、Windows と macOS の両方で、Docker Desktop を使用することをお勧めします。
+>アドビでは、Windows と macOS の両方で、Docker Desktop を使用することをお勧めします。
 
 このフェーズは、`bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080` を使用して独立に実行することもできます。
 
