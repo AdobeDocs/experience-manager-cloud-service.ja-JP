@@ -2,13 +2,13 @@
 title: Edge Delivery Services用コンテンツの公開
 description: コンテンツの公開がEdge Delivery Servicesと連携する仕組みと、AEMコンテンツをEdge Delivery Servicesと共に公開する方法について説明します。
 feature: Edge Delivery Services
-source-git-commit: 166525b6987215a64521d1ff63a222187376ba65
+exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
+source-git-commit: daad30dd74d389c631131a77655c9fabf4ff2967
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
-
 
 # Edge Delivery Services用コンテンツの公開 {#publishing-edge}
 
@@ -22,6 +22,10 @@ Edge Delivery Servicesを使用すれば、コンテンツソースに関係な�
 ユニバーサルエディターを使用してAEMコンテンツをオーサリングする場合、公開は、 **公開** 」ボタンをクリックします。 ドキュメントを参照してください [ユニバーサルエディターを使用したコンテンツの公開。](/help/implementing/universal-editor/publishing.md)
 
 公開時の情報の流れは次のとおりです。 作成者が公開を開始すると、このフローは自動的に適用され、ここで説明します。
+
+>[!NOTE]
+>
+>オーサリング UI またはワークフローから公開されるパスは、1 日に最大 5,000 個まで許可されます。 一括公開作業読み込みを作成する統合はサポートされていません。
 
 ![AEMからEdge Delivery Servicesに公開する際の情報のフロー](assets/publishing-flow.png)
 
