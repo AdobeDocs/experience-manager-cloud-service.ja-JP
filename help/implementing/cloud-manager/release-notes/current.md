@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2024.1.0 �
 description: AEM as a Cloud Service の Cloud Manager 2024.1.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
-workflow-type: ht
-source-wordcount: '673'
-ht-degree: 100%
+source-git-commit: b81c2bd5c339bce97fe5774572bf1532fc8e04df
+workflow-type: tm+mt
+source-wordcount: '687'
+ht-degree: 94%
 
 ---
 
@@ -42,7 +42,7 @@ AEM as a Cloud Service の Cloud Manager 2024.1.0 のリリース日は 2024年1
 
 ### 独自の GitHub の導入 {#byo-github}
 
-GitHub を使用してリポジトリを管理している場合は、[Cloud Manager を通じて GitHub リポジトリ内でコードを直接検証できるようになりました。](/help/implementing/cloud-manager/managing-code/byo-github.md)ここの統合により、コードを Adobe リポジトリと一貫して同期する必要がなくなり、プルリクエストをメインブランチに結合する前に検証できるようになります。
+GitHub を使用してリポジトリを管理している場合は、[Cloud Manager を通じて GitHub リポジトリ内でコードを直接検証できるようになりました。](/help/implementing/cloud-manager/managing-code/byo-github.md) この統合により、コードをAdobeリポジトリと一貫して同期する必要がなくなり、プルリクエストを確認してからメインブランチにマージできます。 この機能は、パブリック GitHub 専用です。 自己ホスト型 GitHub はサポートされていません。
 
 この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから `Grp-CloudManager_BYOG@adobe.com` にメールを送信します。
 
