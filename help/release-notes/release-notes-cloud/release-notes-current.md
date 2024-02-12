@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 77d38f03f18eb6b0fdc2f2eec5b2dc4b608b8057
-workflow-type: ht
-source-wordcount: '781'
-ht-degree: 100%
+source-git-commit: 03293f49e583d8b40bafd95bbc89c9ba5c024da8
+workflow-type: tm+mt
+source-wordcount: '937'
+ht-degree: 88%
 
 ---
 
@@ -93,6 +93,11 @@ Assets Essentials では、ブロックリストを定義できるようにな�
 * **[DocAssurance API（通信 API の一部）を使用したドキュメントの保護](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API を使用すると、ドキュメントに署名および暗号化して、機密情報を保護できます。暗号化により、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセスできるようになります。この強化された保護層は、貴重なデータを信頼できない環境にさらすことなく、安心感ももたらします。Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
 
   公式メール ID から `aem-forms-early-adopter-program@adobe.com` に送信して早期導入プログラムに参加し、機能へのアクセスをリクエストできます。
+
+* **[Real User Monitoring(RUM) データ・サービスを利用できます。](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** AEMas a Cloud Serviceのクライアント側のコレクションを有効にする
+実ユーザーモニタリング（RUM）データサービスは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントの信頼性の高い測定を保証します。ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。これは、Adobe管理 CDN またはAdobe管理以外の CDN のどちらを使用する場合にも便利です。 さらに、Adobeが管理していない CDN を使用するお客様の場合、自動トラフィックレポートをAdobeに対して有効にできるので、との間でトラフィックレポートを共有する必要がなくなりました。
+
+  この新機能のテストとフィードバックの共有に関心がある場合は、に電子メールを送信してください。 `aemcs-rum-adopter@adobe.com`Adobe IDに関連付けられた電子メールアドレスから、RUM を有効にする各環境のドメイン名と共に使用します。 その後、アドビの製品チームが、リアルユーザーモニタリング（RUM）データサービスを有効にします。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
