@@ -2,9 +2,9 @@
 title: AEM Developers 向けユニバーサルエディターの概要
 description: ユニバーサルエディターの動作とプロジェクトでの使用方法に興味を持つAEM開発者の方は、WKND プロジェクトをユニバーサルエディターと連携させる方法を説明し、エンドツーエンドの紹介を提供します。
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: d7154fcec9cf6e3cb00ce8e434e38544294df165
+source-git-commit: 3dff6fa71c29da70daba80176d2fe51ef1e05200
 workflow-type: tm+mt
-source-wordcount: '3112'
+source-wordcount: '3139'
 ht-degree: 1%
 
 ---
@@ -150,7 +150,7 @@ X-Frame オプション `sameorigin` は、フレーム内でAEMページをレ�
 1. ファイルの最後に JavaScript ライブラリを追加します。
 
    ```html
-   <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js"></script>
+   <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>
    ```
 
 1. クリック **すべて保存** その後、ユニバーサルエディタを再読み込みします。
@@ -183,6 +183,8 @@ WKND ページがユニバーサルエディターに正常に読み込まれ、
    ```html
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
    ```
+
+   * ライブラリの最新バージョンを常にお勧めします。 以前のバージョンが必要な場合は、ドキュメントを参照してください。 [AEMのユニバーサルエディターの概要。](/help/implementing/universal-editor/getting-started.md#alternative)
 
 1. ローカルユニバーサルエディターサービスへの接続に必要なメタデータをファイルの末尾に追加します。
 

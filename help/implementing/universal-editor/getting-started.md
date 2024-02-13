@@ -2,10 +2,10 @@
 title: AEM のユニバーサルエディターの概要
 description: ユニバーサルエディターへのアクセス権を取得する方法と、これを使用するために最初の AEM アプリのインストルメントを開始する方法について説明します。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: f9d584d7b117c24224079f581802f5f126890304
+source-git-commit: 3dff6fa71c29da70daba80176d2fe51ef1e05200
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 95%
+source-wordcount: '921'
+ht-degree: 90%
 
 ---
 
@@ -62,8 +62,15 @@ import "@adobe/universal-editor-cors";
 React アプリを実装していない場合や、サーバーサイドでのレンダリングが必要な場合は、ドキュメント本文に次のものを含める方法もあります。
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
+<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST" async></script>
 ```
+
+常に最新バージョンをお勧めしますが、変更が壊れた場合は、以前のバージョンのサービスを参照できます。
+
+* `https://universal-editor-service.experiencecloud.live/corslib/LATEST`  — 最新の UE CORS ライブラリ
+* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST`  — バージョン 2.x 下の最新の UE CORS ライブラリ
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST`  — バージョン 2.1.x 下の最新の UE CORS ライブラリ
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1` — 正確な UE CORS ライブラリバージョン 2.1.1
 
 ## 必要な OSGi 設定を追加 {#osgi-configurations}
 
