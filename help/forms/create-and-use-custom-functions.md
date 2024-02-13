@@ -5,9 +5,9 @@ keywords: カスタム関数の追加、カスタム関数の使用、カスタ�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: 94a290964a92f8c6ed353d9c77f3dd3b8a5598a4
+source-git-commit: 28020b05e4aaaa3f066943e0504f05e307c7020b
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '763'
 ht-degree: 21%
 
 ---
@@ -64,11 +64,11 @@ function ValidateEmail(inputText)
             // code to be executed
         }
 ```
+<!--
 
-* **必須の jsdoc コメントを含む矢印関数**
+* **Arrow function with mandatory jsdoc comment**
 
-矢印関数を作成する例を次に示します。
-
+Some of the examples to create Arrow functions are:
 ```javascript
     /**
     * test function
@@ -82,7 +82,6 @@ function ValidateEmail(inputText)
     };
 ```
 
-<!-- 
     * @param {string=} b another parameter description
       /** */
     testFunction1=(a) => (return a)
