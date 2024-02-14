@@ -3,10 +3,10 @@ title: Dispatcher ツールを使用した検証とデバッグ
 description: ローカル検証、デバッグ、柔軟なモードのファイル構造、およびレガシーモードから柔軟なモードに移行する方法について説明します。
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
-source-wordcount: '2971'
-ht-degree: 100%
+source-git-commit: 2cb57347856568da979b34832ce12cce295841dd
+workflow-type: tm+mt
+source-wordcount: '3028'
+ht-degree: 98%
 
 ---
 
@@ -546,6 +546,25 @@ Cloud manager validator 2.0.43
 2022/07/04 09:53:55 No issues found
 INFO Mon Jul  4 09:53:55 UTC 2022: Testing with fresh base configuration files.
 INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apache/2.4.54 (Unix)
+```
+
+### カスタム環境変数の挿入 {#environment-variables}
+
+カスタム環境変数は、Dispatcher SDK と共に使用できます。そのためには、別のファイルで設定し、 `ENV_FILE` 環境変数を使用して、ローカルの dispatcher を起動する必要があります。
+
+カスタム環境変数を含むファイルは次のようになります。
+
+```
+COMMERCE_ENDPOINT=commerce-host
+AEM_HTTP_PROXY_HOST=host.docker.internal
+AEM_HTTP_PROXY_PORT=8000
+```
+
+また、次のコマンドを使用して、ローカルの Dispatcher SDK で使用できます。
+
+```
+export ENV_FILE=custom.env
+./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080
 ```
 
 ## 環境ごとに異なる Dispatcher 設定 {#different-dispatcher-configurations-per-environment}
