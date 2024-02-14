@@ -1,9 +1,9 @@
 ---
 title: コンテンツプロジェクトを使用したAEMオーサリング用のコンテンツモデリングEdge Delivery Services
 description: コンテンツモデリングがEdge Delivery Servicesプロジェクトを使用したAEMオーサリングでどのように機能するか、および独自のコンテンツをモデル化する方法について説明します。
-source-git-commit: 8f3c7524ae8ee642a9aee5989e03e6584a664eba
+source-git-commit: e9c882926baee001170bad2265a1085e03cdbedf
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '2097'
 ht-degree: 1%
 
 ---
@@ -109,16 +109,19 @@ The [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk
 
 * を使用する必要があります `core/franklin/components/block/v1/block` リソースタイプ。AEMのブロックロジックの汎用実装です。
 * ブロック名を定義する必要があります。ブロック名は、ブロックのテーブルヘッダーにレンダリングされます。
+   * ブロック名は、ブロックを修飾する適切なスタイルとスクリプトを取得するために使用されます。
 * 次を定義できます： [モデル ID。](/help/implementing/universal-editor/field-types.md#model-structure)
+   * モデル ID は、コンポーネントのモデルへの参照で、作成者がプロパティレールで使用できるフィールドを定義します。
 * 次を定義できます： [フィルター ID。](/help/implementing/universal-editor/customizing.md#filtering-components)
+   * フィルター ID はコンポーネントのフィルターへの参照です。このフィルターを使用すると、例えば、ブロックやセクションに追加できる子や、有効にする RTE 機能を制限するなどして、オーサリング動作を変更できます。
 
-ブロックがページに追加されると、これらの情報はすべてAEMに保存されます。
+ブロックがページに追加されると、これらの情報はすべてAEMに保存されます。 リソースタイプまたはブロック名が見つからない場合、そのブロックはページ上でレンダリングされません。
 
 >[!WARNING]
 >
->可能な限り、カスタムAEMコンポーネントを実装する必要はありません。 AEMが提供するEdge Delivery Servicesのコンポーネントで十分で、開発を容易にするために特定のガードレールを提供します。
+>可能な限り、カスタムAEMコンポーネントを実装する必要もお勧めもありません。 AEMが提供するEdge Delivery Servicesのコンポーネントで十分で、開発を容易にするために特定のガードレールを提供します。
 >
->このため、Adobeでは、カスタムのAEMリソースタイプを使用しないことをお勧めします。
+>AEMが提供するコンポーネントは、 [helix-html2md](https://github.com/adobe/helix-html2md) Edge Delivery Servicesおよびで公開する場合 [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) （ユニバーサルエディターでページを読み込む場合） マークアップはAEMとシステムの他の部分との間の安定した契約であり、カスタマイズはできません。 このため、プロジェクトではコンポーネントを変更しないでください。また、カスタムコンポーネントを使用しないでください。
 
 ### ブロック構造 {#block-structure}
 
@@ -130,7 +133,9 @@ The [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk
 
 次の例では、モデル内の最初のイメージと、2 番目のテキストを定義します。 したがって、最初の画像と 2 番目のテキストでレンダリングされます。
 
-##### データ {#data-simple}
+>[!BEGINTABS]
+
+>[!TAB データ]
 
 ```json
 {
@@ -142,7 +147,7 @@ The [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk
 }
 ```
 
-##### マークアップ {#markup-simple}
+>[!TAB Markup]
 
 ```html
 <div class="hero">
@@ -161,6 +166,20 @@ The [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk
 </div>
 ```
 
+>[!TAB テーブル]
+
+```text
++---------------------------------------------+
+| Hero                                        |
++=============================================+
+| ![Helix - a shape like a corkscrew][image0] |
++---------------------------------------------+
+| # Welcome to AEM                            |
++---------------------------------------------+
+```
+
+>[!ENDTABS]
+
 一部のタイプの値はマークアップ内のセマンティクスを推定でき、プロパティは単一のセルに結合されます。 この動作については、の節で説明します。 [Inference と入力します。](#type-inference)
 
 #### キーと値のブロック {#key-value}
@@ -171,7 +190,9 @@ The [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk
 
 例えば、 [セクションのメタデータ。](/help/edge/developer/markup-sections-blocks.md#sections) この使用例では、ブロックをキー値ペアテーブルとしてレンダリングするように設定できます。 の節を参照してください。 [セクションとセクションのメタデータ](#sections-metadata) を参照してください。
 
-##### データ {#data-key-value}
+>[!BEGINTABS]
+
+>[!TAB データ]
 
 ```json
 {
@@ -184,7 +205,7 @@ The [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk
 }
 ```
 
-##### マークアップ {#markup-key-value}
+>[!TAB Markup]
 
 ```html
 <div class="featured-articles">
@@ -203,13 +224,31 @@ The [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk
 </div>
 ```
 
+>[!TAB テーブル]
+
+```text
++-----------------------------------------------------------------------+
+| Featured Articles                                                     |
++=======================================================================+
+| source   | [/content/site/articles.json](/content/site/articles.json) |
++-----------------------------------------------------------------------+
+| keywords | Developer,Courses                                          |
++-----------------------------------------------------------------------+
+| limit    | 4                                                          |
++-----------------------------------------------------------------------+
+```
+
+>[!ENDTABS]
+
 #### コンテナブロック {#container}
 
 前の構造は両方とも、単一のディメンション、つまりプロパティのリストを持ちます。 コンテナブロックを使用すると、（通常は同じタイプまたはモデルの）子を追加できます。したがって、2 次元になります。 これらのブロックは、1 つの列を先に持つ行としてレンダリングされる独自のプロパティを引き続きサポートします。 また、子も追加できます。この場合、各項目は行としてレンダリングされ、各プロパティはその行内の列としてレンダリングされます。
 
 次の例では、ブロックは、リンクされたアイコンのリストを子として受け入れます。各リンクされたアイコンには、画像とリンクが含まれています。 次の点に注意してください。 [フィルター ID](/help/implementing/universal-editor/customizing.md#filtering-components) フィルター設定を参照するために、ブロックのデータに設定されます。
 
-##### データ {#data-container}
+>[!BEGINTABS]
+
+>[!TAB データ]
 
 ```json
 {
@@ -232,7 +271,7 @@ The [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk
 }
 ```
 
-##### マークアップ {#markup-container}
+>[!TAB Markup]
 
 ```html
 <div class="our-partners">
@@ -263,6 +302,22 @@ The [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk
   </div>
 </div>
 ```
+
+>[!TAB テーブル]
+
+```text
++------------------------------------------------------------ +
+| Our Partners                                                |
++=============================================================+
+| Our community of partners is ...                            |
++-------------------------------------------------------------+
+| ![Icon of Foo][image0] | [https://foo.com](https://foo.com) |
++-------------------------------------------------------------+
+| ![Icon of Bar][image1] | [https://bar.com](https://bar.com) |
++-------------------------------------------------------------+
+```
+
+>[!ENDTABS]
 
 ### ブロックのセマンティックコンテンツモデルの作成 {#creating-content-models}
 
@@ -300,7 +355,9 @@ Edge Delivery Servicesを使用したAEMオーサリングの場合、コンテ�
 
 ##### 画像 {#image-collapse}
 
-###### データ {#data-image}
+>[!BEGINTABS]
+
+>[!TAB データ]
 
 ```json
 {
@@ -309,7 +366,7 @@ Edge Delivery Servicesを使用したAEMオーサリングの場合、コンテ�
 }
 ```
 
-###### マークアップ {#markup-image}
+>[!TAB Markup]
 
 ```html
 <picture>
@@ -317,9 +374,19 @@ Edge Delivery Servicesを使用したAEMオーサリングの場合、コンテ�
 </picture>
 ```
 
+>[!TAB テーブル]
+
+```text
+![A red car on a road][image0]
+```
+
+>[!ENDTABS]
+
 ##### リンクとボタン {#links-buttons-collapse}
 
-###### データ {#data-links-buttons}
+>[!BEGINTABS]
+
+>[!TAB データ]
 
 ```json
 {
@@ -330,7 +397,7 @@ Edge Delivery Servicesを使用したAEMオーサリングの場合、コンテ�
 }
 ```
 
-###### マークアップ {#markup-links-buttons}
+>[!TAB Markup]
 
 いいえ `linkType`または `linkType=default`
 
@@ -354,9 +421,21 @@ Edge Delivery Servicesを使用したAEMオーサリングの場合、コンテ�
 </em>
 ```
 
+>[!TAB テーブル]
+
+```text
+[adobe.com](https://www.adobe.com "Navigate to adobe.com")
+**[adobe.com](https://www.adobe.com "Navigate to adobe.com")**
+_[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
+```
+
+>[!ENDTABS]
+
 ##### 見出し {#headings-collapse}
 
-###### データ {#data-headings}
+>[!BEGINTABS]
+
+>[!TAB データ]
 
 ```json
 {
@@ -365,19 +444,31 @@ Edge Delivery Servicesを使用したAEMオーサリングの場合、コンテ�
 }
 ```
 
-###### マークアップ {#markup-headings}
+>[!TAB Markup]
 
 ```html
 <h2>Getting started</h2>
 ```
 
+>[!TAB テーブル]
+
+```text
+## Getting started
+```
+
+>[!ENDTABS]
+
 #### 要素のグループ化 {#element-grouping}
 
 While [フィールド折りたたみ](#field-collapse) は、複数のプロパティを単一のセマンティック要素に組み合わせることです。要素のグループ化とは、複数のセマンティック要素を 1 つのセルに連結することです。 これは、作成者が作成できる要素のタイプと数を制限する必要がある使用例で特に役立ちます。
 
-例えば、作成者は、サブタイトル、タイトルおよび 1 つの段落の説明と、最大 2 つのコールトゥアクションボタンを組み合わせて作成する必要があります。 これらの要素をグループ化すると、セマンティックマークアップが生成され、追加の操作をおこなわずにスタイルを設定できます。
+例えば、ティーザーコンポーネントを使用すると、作成者は、サブタイトル、タイトルおよび 1 つの段落の説明のみを作成でき、最大 2 つのコールトゥアクションボタンを組み合わせることができます。 これらの要素をグループ化すると、セマンティックマークアップが生成され、追加の操作をおこなわずにスタイルを設定できます。
 
-##### データ {#data-grouping}
+要素のグループ化では、命名規則を使用します。グループ名は、グループ内の各プロパティとアンダースコアで区切られます。 グループ内のプロパティのフィールド折りたたみは、前述のように機能します。
+
+>[!BEGINTABS]
+
+>[!TAB データ]
 
 ```json
 {
@@ -397,7 +488,7 @@ While [フィールド折りたたみ](#field-collapse) は、複数のプロパ
 }
 ```
 
-##### マークアップ {#markup-grouping}
+>[!TAB Markup]
 
 ```html
 <div class="teaser">
@@ -419,6 +510,24 @@ While [フィールド折りたたみ](#field-collapse) は、複数のプロパ
   </div>
 </div>
 ```
+
+>[!TAB テーブル]
+
+```text
++-------------------------------------------------+
+| Teaser                                          |
++=================================================+
+| ![A group of people sitting on a stage][image0] |
++-------------------------------------------------+
+| Adobe Experience Cloud                          |
+| ## Welcome to AEM                               |
+| Join us in this ask me everything session ...   |
+| [More Details](https://link.to/more-details)    |
+| [RSVP](https://link.to/sign-up)                 |
++-------------------------------------------------+
+```
+
+>[!ENDTABS]
 
 ## セクションとセクションのメタデータ {#sections-metadata}
 
@@ -500,18 +609,17 @@ AEM as a Cloud Serviceでは、テーブルのような方法で、パスごと�
 
 このようなテーブルを作成するには、ページを作成し、サイトコンソールのメタデータテンプレートを使用します。
 
->[!NOTE]
->
->メタデータスプレッドシートを編集する際は、必ず **プレビュー** モードとは異なり、オーサリングはページ自体でおこなわれ、エディター内では発生しない。
-
-スプレッドシートのページプロパティで、必要なメタデータフィールドと URL を定義します。 次に、ページパスまたはページパスパターンごとにメタデータを追加します。URL フィールドは、AEMのコンテンツパスではなく、マッピングされたパブリックパスに関連します。
+スプレッドシートのページプロパティで、必要なメタデータフィールドと URL を定義します。 次に、ページパスまたはページパスパターンごとにメタデータを追加します。
 
 パスマッピングにスプレッドシートも必ず追加してから、パスマッピングを公開してください。
 
-```text
-mappings:
-  - /content/site/:/
-  - /content/site/metadata:/metadata.json
+```json
+{
+  "mappings": [
+    "/content/site/:/",
+    "/content/site/metadata:/metadata.json"
+  ]
+}
 ```
 
 ### ページプロパティ {#page-properties}
