@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 8546e6286bea5f603b1e011a76c206b178337ab7
+source-git-commit: 3e1e1eba822bf3156ef563b88269cdef2298e951
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1241'
 ht-degree: 6%
 
 ---
@@ -21,28 +21,24 @@ ht-degree: 6%
 
 例えば、Workfront Fusion を使用すると、アダプティブフォームでデータを収集し、データを処理し、データをアーカイブ用にデータストアに送信するシナリオを作成できます。 シナリオを設定すると、ユーザーがフォームに入力するたびに、Workfront Fusion は自動的にタスクを実行し、データストアをシームレスに更新します。
 
-AEM as a Cloud Serviceには、フォーム送信を処理するための標準の様々な送信アクションが用意されています。 これらのオプションについて詳しくは、 [アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)  記事。
+AEM Forms as a Cloud Serviceには、アダプティブフォームをAdobe Workfront Fusion に接続して送信するための OOTB コネクタが用意されています。 フォームをAdobe Workfront Fusion に送信すると、次のような利点があります。
+* これにより、フォーム送信データをWorkfront Fusion ワークフローにシームレスに転送できるようになりました。
+* これにより、フォーム送信によってトリガーされる様々なタスクを自動化できます。 これには、手動の介入なしに、プロジェクトの開始、特定のチームメンバーへのタスクの割り当て、通知の送信、プロジェクトステータスの更新などが含まれます。
+* Workfront Fusion で取り込まれたすべてのフォーム送信は、プロジェクト関連の情報の単一の情報源となります。
 
 
-## Adobe Workfront Fusion を使用する利点{#advatages-of-workfront-fusion}
+<!--  AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.-->
 
-Adobe Workfront Fusion をAEM Formsと組み合わせて使用する利点の一部を次に示します。
-
-* アダプティブFormsで取得したデータをWorkfront Fusion シナリオに送信する
-* エラーが発生しにくいタスクを自動化します。
-* Workfrontに直接含まれない組織に固有の要件のカスタマイズ。
-* 単純なロジックや簡単な決定（例えば、if/then 文）の処理。
+>[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 ## AEM FormsとAdobe Workfront Fusion を統合するための前提条件 {#prerequisites}
 
-Workfront Fusion をAEM Formsに接続するために必要な前提条件は次のとおりです。
+Workfront Fusion とAEM Formsの間の接続を確立するには、次が必要です。
 
-* 有効な [Workfront Fusion ライセンス](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* 有効な [Workfront およびWorkfront Fusion ライセンス](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
 * アクセス権を持つAEMユーザー [開発者コンソール](https://my.cloudmanager.adobe.com/) から [サービス資格情報の取得](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ja).
 
 ## AEM FormsとAdobe Workfront Fusion の統合
-
->[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 接続するには [Workfront fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) フォームに対して、次の手順を実行します。
 
