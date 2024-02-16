@@ -6,7 +6,7 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 3e1e1eba822bf3156ef563b88269cdef2298e951
+source-git-commit: 94519d3c7d2f927f046628d9ce057209556e847d
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 6%
@@ -35,7 +35,7 @@ AEM Forms as a Cloud Serviceには、アダプティブフォームをAdobe Work
 
 Workfront Fusion とAEM Formsの間の接続を確立するには、次が必要です。
 
-* 有効な [Workfront およびWorkfront Fusion ライセンス](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* 有効な [WorkfrontとWorkfront Fusion ライセンス](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
 * アクセス権を持つAEMユーザー [開発者コンソール](https://my.cloudmanager.adobe.com/) から [サービス資格情報の取得](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ja).
 
 ## AEM FormsとAdobe Workfront Fusion の統合
@@ -135,7 +135,7 @@ Webhook を追加するには：
 
 ### 2. Workfront Fusion 用のアダプティブフォームの送信アクションを設定する
 
-Workfont Fusion の送信アクションは、次の場合に設定できます。
+Workfront Fusion の送信アクションは、次の目的で設定できます。
 * [新しいアダプティブForms](#new-af-submit-action)
 * [既存のアダプティブフォーム](#existing-af-submit-action)
 
