@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 52e1f57b82aec25ad61024f357016dbb5498ca1b
+source-git-commit: 8546e6286bea5f603b1e011a76c206b178337ab7
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1238'
 ht-degree: 6%
 
 ---
@@ -41,6 +41,8 @@ Workfront Fusion をAEM Formsに接続するために必要な前提条件は次
 * アクセス権を持つAEMユーザー [開発者コンソール](https://my.cloudmanager.adobe.com/) から [サービス資格情報の取得](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ja).
 
 ## AEM FormsとAdobe Workfront Fusion の統合
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 接続するには [Workfront fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) フォームに対して、次の手順を実行します。
 
@@ -129,16 +131,7 @@ Webhook を追加するには：
 1. 作成した接続を選択 **[!UICONTROL 接続]** 」をドロップダウンリストから選択します。
 1. 「**[!UICONTROL 保存]**」をクリックします。
 1. クリック **[!UICONTROL OK]** をクリックし、シナリオの変更を保存します。
-
-#### 1.3 Workfrontシナリオの有効化 {#activate-scenario}
-
-シナリオを有効にするには：
-
-1. クリック **[!UICONTROL シナリオ]** ![共有アイコン](/help/forms/assets/Smock_ShareAndroid_18_N.svg) をクリックします。
-1. 次をクリック： **[!UICONTROL 非アクティブなシナリオ]** タブをクリックします。
-1. 次をクリック： **オン/オフ** 「切り替え」ボタンを使用してAEM Formsシナリオを切り替えることができます。
-
-切り替えボタンをクリックすると、Workfrontシナリオが **[!UICONTROL アクティブなシナリオ]** タブをクリックします。
+1. シナリオを有効にするには、シナリオエディターでオン/オフ切り替えボタンをクリックします。
 
 >[!NOTE]
 >
