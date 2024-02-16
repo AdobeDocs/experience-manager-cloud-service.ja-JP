@@ -2,10 +2,10 @@
 title: ログへのアクセスと管理
 description: AEM as a Cloud Service での開発プロセスを支援するために、ログにアクセスして管理する方法について説明します。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 178af74512e74ff401588b68c73fa4661acec704
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 97%
+source-wordcount: '346'
+ht-degree: 93%
 
 ---
 
@@ -43,8 +43,6 @@ AEM as a Cloud Service での開発プロセスを支援するために、ログ
 **環境**&#x200B;ページからもログにアクセスできます。
 
 ![環境画面からのログ](assets/download-logs.png)
-
-
 
 ## API を介したログ {#logs-through-api}
 
@@ -86,6 +84,10 @@ Environment Id Service    Name
 ```
 
 ### その他のリソース {#resources}
+
+>[!TIP]
+>
+>チェックアウト [このビデオリソース](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) を参照して、AEM as a Cloud Serviceのデバッグの詳細を確認してください。
 
 Cloud Manager API と Adobe I/O CLI について詳しくは、次の追加のリソースを参照してください。
 
