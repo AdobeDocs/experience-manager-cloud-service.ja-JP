@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6966486b9bf919fecb8d625ddb92ce1bb1a98291
+source-git-commit: d76273ddcbcf5013713e515e39dde8f42bbbf425
 workflow-type: tm+mt
-source-wordcount: '4640'
+source-wordcount: '4648'
 ht-degree: 98%
 
 ---
@@ -89,6 +89,8 @@ ht-degree: 98%
          + [メンテナンスリリースノート（2023.1.0）](/help/release-notes/maintenance/2023/2023-1-0.md)
    + Cloud Manager のリリースノート {#cloud-manager}
       + [最新のリリースノート](/help/implementing/cloud-manager/release-notes/current.md)
+      + 2024 年 {#2024}
+         + [2024.1.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-1-0.md)
       + 2023年度 {#2023}
          + [2023.12.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md)
          + [リリースノート（2023.11.0）](/help/implementing/cloud-manager/release-notes/2023/2023-11-0.md)
@@ -915,6 +917,7 @@ ht-degree: 98%
          + [実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [パイプラインの管理](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
+         + [パイプライン変数](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [コードのデプロイ](/help/implementing/cloud-manager/deploy-code.md)
       + テスト結果について {#test-results}
          + [概要](/help/implementing/cloud-manager/overview-test-results.md)

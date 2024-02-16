@@ -2,10 +2,10 @@
 title: ビルド環境
 description: Cloud Manager のビルド環境と、そこでコードがどのようにビルドされテストされるかを説明します。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 30f2eaf4d2edba13e875cd1bfe767e83a2b7f1a5
+source-git-commit: cb4c9711fc9c57546244b5b362027c255e5abc35
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 100%
+source-wordcount: '1023'
+ht-degree: 96%
 
 ---
 
@@ -19,10 +19,10 @@ Cloud Manager のビルド環境と、そこでコードがどのようにビル
 Cloud Manager では、専用のビルド環境を使用して、コードのビルドおよびテストを行います。
 
 * ビルド環境は Linux ベースで、Ubuntu 22.04 から派生しています。
-* Apache Maven 3.8.8 がインストールされています。
+* Apache Maven 3.9.4 がインストールされています。
    * アドビでは、ユーザーに [HTTP ではなく HTTPS を使用するように Maven リポジトリを更新](#https-maven)することをお勧めします。
-* インストールされる Java バージョンは Oracle JDK 8u371 と Oracle JDK 11.0.20 です。
-* デフォルトでは、`JAVA_HOME` 環境変数は `/usr/lib/jvm/jdk1.8.0_371` に設定されています。これには、Oracle JDK 8u371 が含まれています。詳しくは、[代替となる Maven 実行の JDK バージョン](#alternate-maven-jdk-version)の節を参照してください。
+* インストールされる Java のバージョンは、OracleJDK 8u401 およびOracleJDK 11.0.22 です。
+* デフォルトでは、 `JAVA_HOME` 環境変数はに設定されます。 `/usr/lib/jvm/jdk1.8.0_401` oracleJDK 8u401 を含む 詳しくは、[代替となる Maven 実行の JDK バージョン](#alternate-maven-jdk-version)の節を参照してください。
 * 必要に応じてインストールされる追加のシステムパッケージが、次のようにいくつかあります。
    * `bzip2`
    * `unzip`
@@ -39,7 +39,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 >[!NOTE]
 >
->Cloud Manager では、`jacoco-maven-plugin` の特定のバージョンは定義されませんが、`0.7.5.201505241946` 異常のバージョンを使用する必要があります。
+>Cloud Manager では、`jacoco-maven-plugin` の特定のバージョンは定義されませんが、使用するバージョンは `0.7.5.201505241946` 以上である必要があります。
 
 ## HTTPS Maven リポジトリ {#https-maven}
 
@@ -120,7 +120,7 @@ Cloud Manager [リリース 2023.10.0](/help/implementing/cloud-manager/release-
 
 また、Maven 実行全体の JDK として Java 8 または Java 11 を選択することもできます。この場合は、ツールチェーンオプションとは異なり、ツールチェーン設定も指定される場合を除き、すべてのプラグインに使用される JDK が変更されます。ツールチェーン設定が指定される場合は、そのツールチェーン設定が引き続きツールチェーン対応 Maven プラグインに適用されます。その結果、[Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) を使用して Java バージョンを確認および強制することができます。
 
-それには、パイプラインで使用される Git リポジトリーブランチに `.cloudmanager/java-version` というファイルを作成します。このファイルの内容は 11 か 8 のどちらかにすることができます。その他の値は無視されます。11 を指定した場合は、Oracle 11 が使用され、`JAVA_HOME` 環境変数が `/usr/lib/jvm/jdk-11.0.2` に設定されます。8 を指定した場合は、Oracle 8 が使用され、`JAVA_HOME` 環境変数が `/usr/lib/jvm/jdk1.8.0_202` に設定されます。
+それには、パイプラインで使用される Git リポジトリーブランチに `.cloudmanager/java-version` というファイルを作成します。このファイルの内容は 11 か 8 のどちらかにすることができます。その他の値は無視されます。11 を指定した場合は、Oracle 11 が使用され、`JAVA_HOME` 環境変数が `/usr/lib/jvm/jdk-11.0.22` に設定されます。8 を指定した場合は、Oracle 8 が使用され、`JAVA_HOME` 環境変数が `/usr/lib/jvm/jdk1.8.0_401` に設定されます。
 
 ## 環境変数 {#environment-variables}
 
@@ -147,44 +147,7 @@ Cloud Manager [リリース 2023.10.0](/help/implementing/cloud-manager/release-
 
 お使いのビルドプロセスが、Git リポジトリに配置するのに適さない特定の設定変数に基づいている場合や、同じブランチを使用するパイプライン実行間で環境変数を変えることが必要になる場合があります。
 
-Cloud Manager では、これらの変数を Cloud Manager API または Cloud Manager CLI を介してパイプラインごとに設定できます。変数は、プレーンテキストとして保存することも、保存時に暗号化することもできます。どちらの場合も、変数はビルド環境内で環境変数として使用可能になり、変数は `pom.xml` ファイル内または他のビルドスクリプト内から参照できます。
-
-この CLI コマンドは変数を設定します。
-
-```shell
-$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test
-```
-
-このコマンドは、変数を一覧表示します。
-
-```shell
-$ aio cloudmanager:list-pipeline-variables PIPELINEID
-```
-
-変数名は、次の規則に従う必要があります。
-
-* 変数には、英数字とアンダースコア（`_`）のみ使用できます。
-* 名前はすべて大文字にします。
-* 変数の数はパイプラインあたり最大 200 個までです。
-* 名前は 100 文字以下にする必要があります。
-* `string` 変数の値はそれぞれ、2048 文字未満にする必要があります。
-* `secretString` 変数型の値はそれぞれ、500 文字以下にする必要があります。
-
-Maven `pom.xml` ファイル内で使用する場合は、通常、次のような構文を使用して、これらの変数を Maven プロパティにマッピングすると便利です。
-
-```xml
-        <profile>
-            <id>cmBuild</id>
-            <activation>
-                <property>
-                    <name>env.CM_BUILD</name>
-                </property>
-            </activation>
-            <properties>
-                <my.custom.property>${env.MY_CUSTOM_VARIABLE}</my.custom.property> 
-            </properties>
-        </profile>
-```
+ドキュメントを参照してください [パイプライン変数の設定](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) 詳細情報
 
 ## 追加のシステムパッケージのインストール {#installing-additional-system-packages}
 
