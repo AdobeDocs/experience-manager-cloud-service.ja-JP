@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 94519d3c7d2f927f046628d9ce057209556e847d
+source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1255'
 ht-degree: 6%
 
 ---
@@ -40,11 +40,17 @@ Workfront Fusion とAEM Formsの間の接続を確立するには、次が必要
 
 ## AEM FormsとAdobe Workfront Fusion の統合
 
-接続するには [Workfront fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) フォームに対して、次の手順を実行します。
-
 ### 1. Workfrontシナリオの作成 {#workflow-scenario}
 
-Workfrontシナリオを作成するには：
+Workfrontシナリオを作成するには、次の手順を実行します。
+
+1. [シナリオの作成](#create-scenario)
+1. [シナリオへの Web フックの追加](#add-webhook)
+1. [Web フックに接続を追加する](#add-connection)
+
+#### シナリオの作成 {#create-scenario}
+
+シナリオを作成するには、次の手順に従います。
 1. ログイン [Workfront Fusion アカウント](https://app-qa.workfrontfusion.com/).
 1. クリック **[!UICONTROL シナリオ]** ![共有アイコン](/help/forms/assets/Smock_ShareAndroid_18_N.svg) をクリックします。
 1. クリック **[!UICONTROL 新しいシナリオの作成]** をクリックします。 新しいシナリオを作成するページが画面に表示されます。
@@ -61,7 +67,7 @@ Workfrontシナリオを作成するには：
 
 1. を選択します。 **[!UICONTROL フォームイベントの監視]** ダイアログボックスと、ウェブフックを追加するウィンドウが表示されます。
 
-#### 1.1 ウェブフックの追加 {#add-webhook}
+#### ウェブフックの追加 {#add-webhook}
 
 ![ウェブフックの追加](/help/forms/assets/workfront-add-webhook.png)
 
@@ -76,7 +82,7 @@ Webhook を追加するには：
 
 1. クリック **[!UICONTROL 追加]** 新しい接続を追加するには、をクリックします。 The **[!UICONTROL 接続の作成]** ダイアログボックスが表示されます。
 
-#### 1.2 ウェブフックへの接続の追加 {#add-connection}
+#### Webhook への接続の追加 {#add-connection}
 
 ![接続を追加](/help/forms/assets/workfront-add-connection.png)
 

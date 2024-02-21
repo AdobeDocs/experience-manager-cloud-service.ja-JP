@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d76273ddcbcf5013713e515e39dde8f42bbbf425
+source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
 workflow-type: tm+mt
-source-wordcount: '4648'
-ht-degree: 98%
+source-wordcount: '4711'
+ht-degree: 96%
 
 ---
 
@@ -614,8 +614,8 @@ ht-degree: 98%
             + [繰り返し可能なセクションを使用したフォームの作成](/help/forms/create-forms-repeatable-sections.md)
             + [アダプティブフォームの送信アクションの設定](/help/forms/configure-submit-actions-core-components.md)
             + [アダプティブフォームを Azure Blob ストレージに送信する](/help/forms/configure-submit-action-azure-blob-storage.md)
-            + [Microsoft® OneDrive へのアダプティブフォームの送信](/help/forms/configure-submit-action-onedrive.md)
-            + [アダプティブフォームのSharePointストレージの設定](/help/forms/configure-submit-action-sharepoint.md)
+            + [アダプティブフォームをMicrosoftに送信する](/help/forms/configure-submit-action-onedrive.md)
+            + [アダプティブフォームのMicrosoftへの接続](/help/forms/configure-submit-action-sharepoint.md)
             + [AEMアダプティブフォームとAEMワークフローの統合](/help/forms/configure-submit-action-workflow.md)
             + [アダプティブFormsの REST エンドポイントへの送信送信アクションを設定する](/help/forms/configure-submit-action-restpoint.md)
             + [アダプティブフォームの電子メール送信アクションの設定](/help/forms/configure-submit-action-send-email.md)
@@ -802,6 +802,21 @@ ht-degree: 98%
       + [Akamai の設定](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Fastly の設定](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [リダイレクト](/help/edge/docs/redirects.md)
+   + Building Edge Delivery Forms {#build-forms}
+      + [概要](/help/edge/docs/forms/overview.md)
+      + はじめに {#getting-started-eds-forms}
+         + [フォームの作成とプレビュー](/help/edge/docs/forms/create-forms.md)
+         + [フォームからデータを送信できるようにする](/help/edge/docs/forms/submit-forms.md)
+         + [サイトページにフォームを発行する](/help/edge/docs/forms/publish-eds-forms.md)
+         + [フォームフィールドに検証機能を追加する](/help/edge/docs/forms/validate-forms.md)
+         + [フォームのテーマとスタイルを変更する](/help/edge/docs/forms/style-theme-forms.md)
+      + 高度な機能 {#advanced-features-eds-forms}
+         + [フォームフラグメントを作成してフォームに追加する](/help/edge/docs/forms/form-fragments.md)
+         + [フォームの翻訳](/help/edge/docs/forms/translate-forms.md)
+         + [フォームに繰り返し可能なセクションを追加する](/help/edge/docs/forms/repeatable-forms.md)
+         + [フォームに reCAPTCHA を適用する](/help/edge/docs/forms/recaptacha-forms.md)
+         + [カスタムコンポーネントの作成](/help/edge/docs/forms/custom-components-forms.md)
+         + [「ありがとうございます」ページを追加](/help/edge/docs/forms/thank-you-page-form.md)
    + Edge 配信のリソース {#resources}
       + Sidekick {#sidekick}
          + [Sidekick の使用](/help/edge/docs/sidekick.md)

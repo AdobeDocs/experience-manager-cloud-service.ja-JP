@@ -3,9 +3,9 @@ title: アダプティブフォームの送信アクションの設定方法
 description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自のアクションを作成できます。
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
-source-wordcount: '3913'
+source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
+workflow-type: tm+mt
+source-wordcount: '3901'
 ht-degree: 100%
 
 ---
@@ -237,8 +237,6 @@ AEM Forms を Microsoft® Sharepoint ドキュメントライブラリストレ�
 データを保存するフォルダー構造は `/folder_name/form_name/year/month/date/submission_id/data` です。
 
 ### アダプティブフォームを Microsoft® SharePoint リストに接続 {#connect-af-sharepoint-list}
-
-<span class="preview"> これはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja?cloud-environments). </span>
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
