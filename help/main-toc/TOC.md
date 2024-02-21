@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '4711'
-ht-degree: 96%
+source-wordcount: '4692'
+ht-degree: 97%
 
 ---
 
@@ -810,13 +810,13 @@ ht-degree: 96%
          + [サイトページにフォームを発行する](/help/edge/docs/forms/publish-eds-forms.md)
          + [フォームフィールドに検証機能を追加する](/help/edge/docs/forms/validate-forms.md)
          + [フォームのテーマとスタイルを変更する](/help/edge/docs/forms/style-theme-forms.md)
-      + 高度な機能 {#advanced-features-eds-forms}
-         + [フォームフラグメントを作成してフォームに追加する](/help/edge/docs/forms/form-fragments.md)
-         + [フォームの翻訳](/help/edge/docs/forms/translate-forms.md)
-         + [フォームに繰り返し可能なセクションを追加する](/help/edge/docs/forms/repeatable-forms.md)
-         + [フォームに reCAPTCHA を適用する](/help/edge/docs/forms/recaptacha-forms.md)
-         + [カスタムコンポーネントの作成](/help/edge/docs/forms/custom-components-forms.md)
-         + [「ありがとうございます」ページを追加](/help/edge/docs/forms/thank-you-page-form.md)
+      + 機能 {#advanced-features-eds-forms}
+         + [フォームフラグメント](/help/edge/docs/forms/form-fragments.md)
+         + [繰り返し可能なセクション](/help/edge/docs/forms/repeatable-forms.md)
+         + [翻訳](/help/edge/docs/forms/translate-forms.md)
+         + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
+         + [「ありがとうございます」ページ](/help/edge/docs/forms/thank-you-page-form.md)
+         + [カスタムコンポーネント](/help/edge/docs/forms/custom-components-forms.md)
    + Edge 配信のリソース {#resources}
       + Sidekick {#sidekick}
          + [Sidekick の使用](/help/edge/docs/sidekick.md)

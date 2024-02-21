@@ -4,9 +4,9 @@ description: クラフトパーフェクトフォーム、高速！ ⚡ AEM Form
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: b94bd6cd70af541444fda1d03f502b4588fd879b
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '932'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,8 @@ ht-degree: 1%
 
 ![Edge Delivery Formsの概要](/help/edge/assets/getting-started-with-eds-forms.png)
 
-## Edge Delivery Service(EDS) プロジェクトにフォームブロックを追加する {#add-forms-block-to-an-eds-project}
+
+## 手順 1:Edge Delivery Service(EDS) プロジェクトにフォームブロックを追加する {#add-forms-block-to-an-eds-project}
 
 AEM Forms Edge Delivery には、取り込んだデータを取り込んで保存するフォームを簡単に作成できるフォームブロックが含まれています。 フォームブロックを Edge Delivery Service プロジェクトに含めるには：
 
@@ -81,7 +82,7 @@ AEM Forms Edge Delivery には、取り込んだデータを取り込んで保�
    > * 「モジュール「../../scripts/lib-franklin.js」へのパスを解決できません」というエラーが発生した場合は、 `[EDS Project]/blocks/forms/form.js` ファイル。 import 文で、 `franklin-lib.js` ファイルに `aem.js` ファイル。
    > * リントエラーが発生した場合は、それらを無視してください。 リンクチェックを回避するには、 `[EDS Project]\package.json` ファイルを作成し、次の「lint」スクリプトを更新します： `"lint": "npm run lint:js && npm run lint:css"` から `"lint": "echo 'skipping linting for now'"`. ファイルを保存し、GitHub プロジェクトにコミットします。
 
-## Microsoft Excel またはGoogleシートを使用したフォームの作成 {#create-a-form-for-an-eds-project}
+## 手順 2:Microsoft Excel またはGoogleシートを使用してフォームを作成する
 
 複雑なプロセスの代わりに、スプレッドシートを使用して簡単にフォームを作成できます。 まず、行と列のヘッダーをスプレッドシートに追加します。各行でフォームフィールドが定義され、各列ヘッダーで対応するフォームフィールドのプロパティが定義されます。
 
@@ -123,7 +124,7 @@ AEM Forms Edge Delivery には、取り込んだデータを取り込んで保�
 
 
 
-## Edge Delivery Service(EDS) ページを使用してフォームをプレビューする {#add-a-form-to-your-eds-page}
+## 手順 3:Edge Delivery Service(EDS) ページを使用してフォームをプレビューする
 
 これまで、EDS プロジェクトのフォームブロックを有効にし、フォームの構造を準備しました。 次に、フォームをプレビューします。
 
@@ -153,8 +154,9 @@ AEM Forms Edge Delivery には、取り込んだデータを取り込んで保�
 
    ![フォーム送信エラー](/help/edge/assets/form-error.png)
 
+## 次の手順
 
-   次の手順は、 [データを受け入れるためのスプレッドシートの準備](/help/edge/docs/forms/submit-forms.md).
+次の手順は、 [データを受け入れるためのスプレッドシートの準備](/help/edge/docs/forms/submit-forms.md).
 
 
 

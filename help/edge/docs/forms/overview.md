@@ -4,9 +4,9 @@ description: AEM Forms Edge Delivery Service は、効率化されたデータ�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: b94bd6cd70af541444fda1d03f502b4588fd879b
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ AEM Forms Edge Delivery Service は、次のような場合に役立ちます。
 
 * **オーサリングと送信を簡素化**：従来のオーサリング環境ではなく、Microsoft Excel やGoogleシートなどの使い慣れたツールを使用してフォームを作成します。 フォームをMicrosoft Excel またはGoogleシートに直接送信し、そのエコシステムを使用して送信されたデータを簡単に処理できます。
 
-## AEM Forms Edge Delivery Service の概要
+## 基本事項から始めます
 
 <div>
 
