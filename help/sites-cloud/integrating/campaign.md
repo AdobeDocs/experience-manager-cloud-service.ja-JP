@@ -4,10 +4,10 @@ description: Adobe Campaign との統合に対する AEM as a Cloud Service の�
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: c4daf04d5520da1e646f35ba72c9f53cb1d97d36
+source-git-commit: a9296bba5d1ad3f6eb2190de9c15a1083f2ac6d5
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 91%
+source-wordcount: '148'
+ht-degree: 64%
 
 ---
 
@@ -22,17 +22,16 @@ Adobe Campaignとの統合に対するAEMas a Cloud Serviceのサポートにつ
 >
 >Adobe Campaign とオンプレミスまたは AMS でホストされている AEM ソリューションである AEM 6.5 との統合について詳しくは、[このドキュメントを参照してください](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html?lang=ja)。
 
-## Adobe Campaign Classic との統合 {#acc}
+## Adobe Campaign v7/v8 との統合 {#acc}
 
-Adobe Campaign Classic（ACC）には複数のバージョンがあります。AEM as a Cloud Service との統合に対するサポートは、実装した ACC バージョンによって異なります。
+AEM as a Cloud Serviceとの統合のサポートは、実装した Campaign のバージョンによって異なります。
 
-| ACC バージョン | AEMaCS との統合 |
+| キャンペーンのバージョン | AEMaCS との統合 |
 |---|---|
-| [v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=ja) | サポート対象外 |
-| [v8](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=ja) | サポート対象外 |
-| Web UI* | サポート対象 |
+| [CAMPAIGN CLASSICv7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=ja) | サポート対象外 |
+| [Campaign v8 （クライアントコンソール）](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=ja) | サポート対象外 |
+| Campaign Web ユーザーインターフェイス | サポート対象[詳細情報](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-assets.html) |
 
-*Adobe Campaign Classic の web UI は、2023 年末までに提供される予定です。
 
 ## Adobe Campaign Standard との統合 {#acs}
 
