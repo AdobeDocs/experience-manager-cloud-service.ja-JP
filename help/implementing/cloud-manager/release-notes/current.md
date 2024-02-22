@@ -4,9 +4,9 @@ description: AEM as a Cloud Service の Cloud Manager 2024.2.0 のリリース�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 4a41de9da557be562bb2ff5773c7954f76a9acc7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '725'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -21,16 +21,16 @@ ht-degree: 76%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Serviceの Cloud Manager リリース 2024.2.0 のリリース日は 2024 年 2 月 15 日です。 次回のリリースは 2024 年 3 月 16 日に予定されています。
+AEM as a Cloud Service の Cloud Manager リリース 2024.2.0 のリリース日は 2024年2月15日（PT）です。次回のリリースは 2024年3月16日（PT）の予定です。
 
 ## 新機能 {#what-is-new}
 
-* Cloud Manager で、 [パイプライン変数](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) Cloud Manager UI を使用する。
-* [プレビューサービス](/help/implementing/cloud-manager/manage-environments.md#access-preview-sevice) は、プレビューサービス機能がロールアウトされる前に作成された環境で有効になります。
-* [Cloud Manager のカスタム権限](/help/implementing/cloud-manager/custom-permissions.md) を使用すると、設定可能な権限を持つカスタム権限プロファイルを作成して、Cloud Manager ユーザーのプログラム、パイプライン、環境へのアクセスを制限できます。
-   * この機能は、 [2023 年 12 月リリース](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md) およびは、2024 年 2 月 20 日に完了します。
-* すべての新しい環境で、 [環境製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md) 名前は、プロファイルの説明、環境のタイプ、数値、プログラム番号の組み合わせに基づいて、より使いやすい形式になります。
-* [ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) は、Maven バージョン 3.9.4 および JDK バージョン jdk-11.0.22 および jdk1.8.0_401 に更新されました。
+* Cloud Manager では、Cloud Manager UI を通じて[パイプライン変数](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)のセルフサービス管理をサポートするようになりました。
+* [プレビューサービス](/help/implementing/cloud-manager/manage-environments.md#access-preview-sevice)は、プレビューサービス機能がロールアウトされる前に作成した環境で有効になります。
+* [Cloud Manager のカスタム権限](/help/implementing/cloud-manager/custom-permissions.md)を使用すると、Cloud Manager ユーザーのプログラム、パイプライン、環境へのアクセスを制限する設定可能な権限を持つカスタム権限プロファイルを作成できます。
+   * この機能は、[2023年12月リリース](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md)から段階的にロールアウトが開始され、2024年2月20日（PT）に完了する予定です。
+* すべての新しい環境では、[環境製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md)名は、プロファイルの説明、環境タイプ、数字、プログラム番号の組み合わせに基づいた、より使いやすい形式になります。
+* [ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)は、Maven バージョン 3.9.4、JDK バージョン jdk-11.0.22 および jdk1.8.0_401 に更新されました。
 
 ## 早期導入プログラム {#early-adoption}
 
@@ -73,4 +73,4 @@ GitHub を使用してリポジトリを管理している場合は、[Cloud Man
 
 ## バグの修正 {#bug-fixes}
 
-* ビルドコンテナの JDK が、解決するバージョンに更新されました。 [JDK-8313765。](https://bugs.openjdk.org/browse/JDK-8313765)
+* ビルドコンテナの JDK は、[JDK-8313765](https://bugs.openjdk.org/browse/JDK-8313765) を解決するバージョンに更新されました。
