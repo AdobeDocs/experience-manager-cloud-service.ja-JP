@@ -4,10 +4,10 @@ description: クラフトパーフェクトフォーム、高速！ ⚡ AEM Form
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
+source-git-commit: 7b497791c70fd588b7e8c9a94caa218189d3153a
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 1%
+source-wordcount: '891'
+ht-degree: 2%
 
 ---
 
@@ -28,43 +28,21 @@ ht-degree: 1%
 ## 事前準備
 
 * Edge Delivery Service(EDS) プロジェクトをセットアップして複製します。 詳しくは、 [開発者向けチュートリアル](https://www.aem.live/developer/tutorial) 」を参照してください。
-* のクローン [Forms Block リポジトリ](https://github.com/adobe/afb). これには、フォームのレンダリングに必要な Form ブロックが含まれます。
+* のクローン [Forms Block リポジトリ](https://github.com/adobe/afb).
 
-![Edge Delivery Formsの概要](/help/edge/assets/getting-started-with-eds-forms.png)
+  ![Edge Delivery Formsの概要](/help/edge/assets/getting-started-with-eds-forms.png)
 
 
-## 手順 1:Edge Delivery Service(EDS) プロジェクトにフォームブロックを追加する {#add-forms-block-to-an-eds-project}
+## フォームの作成
+
+
++++ 手順 1:Edge Delivery Service(EDS) プロジェクトにフォームブロックを追加します。
 
 AEM Forms Edge Delivery には、取り込んだデータを取り込んで保存するフォームを簡単に作成できるフォームブロックが含まれています。 フォームブロックを Edge Delivery Service プロジェクトに含めるには：
 
-1. 次に移動： `blocks` フォルダーを Edge Delivery Service(EDS) プロジェクトフォルダーに保存します。ローカル開発環境で使用します。
+1. に移動します。 `[cloned Forms Block repository folder]`/blocks/.
 
-
-   ```Shell
-   cd [EDS Project folder]/blocks
-   ```
-
-1. という名前のフォルダーを作成します。 `form` の下に `blocks` ディレクトリ。 例えば、EDS プロジェクトのディレクトリの下に、 `Portal`、という名前のフォルダーを作成します。 `form`.
-
-   ```Shell
-   mkdir form
-   ```
-
-
-1. 次を追加： [Forms Block](https://github.com/adobe/afb/tree/main/blocks/form) ファイルを「form」フォルダーに保存します。
-
-   ```shell
-   cp -R <source:path of the form block> <destination: path of the form folder created in the previous step>
-   ```
-
-   **例：**
-
-
-   ```shell
-   cp -R ../../afb/blocks/form ../../fantastic-computing-machine/blocks 
-   ```
-
-
+1. をコピーします。 `forms` フォルダー `[Cloned EDS Project repository folder]\blocks` フォルダー。
 
 1. 「form」フォルダーとその下にあるファイルを、GitHub の Edge Delivery Service プロジェクトにチェックインします。
 
@@ -79,10 +57,13 @@ AEM Forms Edge Delivery には、取り込んだデータを取り込んで保�
 
    >[!NOTE]
    >
-   > * 「モジュール「../../scripts/lib-franklin.js」へのパスを解決できません」というエラーが発生した場合は、 `[EDS Project]/blocks/forms/form.js` ファイル。 import 文で、 `franklin-lib.js` ファイルに `aem.js` ファイル。
+   > * 「モジュール「../../scripts/lib-franklin.js」へのパスを解決できません」というエラーが発生した場合は、 `[EDS Project]/blocks/forms/form.js` ファイル。 import 文で、 `lib-franklin.js` ファイルに `aem.js` ファイル。
    > * リントエラーが発生した場合は、それらを無視してください。 リンクチェックを回避するには、 `[EDS Project]\package.json` ファイルを作成し、次の「lint」スクリプトを更新します： `"lint": "npm run lint:js && npm run lint:css"` から `"lint": "echo 'skipping linting for now'"`. ファイルを保存し、GitHub プロジェクトにコミットします。
 
-## 手順 2:Microsoft Excel またはGoogleシートを使用してフォームを作成する
++++
+
++++ 手順 2:Microsoft Excel またはGoogleシートを使用してフォームを作成する
+
 
 複雑なプロセスの代わりに、スプレッドシートを使用して簡単にフォームを作成できます。 まず、行と列のヘッダーをスプレッドシートに追加します。各行でフォームフィールドが定義され、各列ヘッダーで対応するフォームフィールドのプロパティが定義されます。
 
@@ -122,15 +103,16 @@ AEM Forms Edge Delivery には、取り込んだデータを取り込んで保�
    For example, https://main--portal--wkndforms.hlx.live/contact-us.json
    ```
 
++++
 
++++ 手順 3:Edge Delivery Service(EDS) ページを使用してフォームをプレビューする
 
-## 手順 3:Edge Delivery Service(EDS) ページを使用してフォームをプレビューする
 
 これまで、EDS プロジェクトのフォームブロックを有効にし、フォームの構造を準備しました。 次に、フォームをプレビューします。
 
-1. Microsoft SharePointまたはGoogle Drive のAEM Edge Delivery プロジェクトディレクトリに移動します。
+1. Microsoft SharePointまたはGoogle Drive アカウントに移動し、AEM Edge Delivery プロジェクトディレクトリを開きます。
 
-1. フォームをホストするドキュメントファイルを作成するか、開きます。 例えば、インデックスファイルを開きます。
+1. ドキュメントファイルを開き、フォームを埋め込みます。 例えば、インデックスファイルを開きます。 新しいファイルを作成することもできます。
 
 1. フォームを追加するドキュメント内の目的の場所に移動します。
 
@@ -153,6 +135,9 @@ AEM Forms Edge Delivery には、取り込んだデータを取り込んで保�
    次に、フォームに入力して送信ボタンをクリックすると、スプレッドシートがまだデータを受け入れるように設定されていないので、次のようなエラーが発生します。
 
    ![フォーム送信エラー](/help/edge/assets/form-error.png)
+
++++
+
 
 ## 次の手順
 
