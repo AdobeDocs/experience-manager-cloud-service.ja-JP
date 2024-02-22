@@ -4,10 +4,10 @@ description: クラフトパーフェクトフォーム、高速！ ⚡ AEM Form
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 7b497791c70fd588b7e8c9a94caa218189d3153a
+source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 2%
+source-wordcount: '889'
+ht-degree: 1%
 
 ---
 
@@ -18,33 +18,31 @@ ht-degree: 2%
 
 これらのフォームは、Microsoft Excel またはGoogleシートファイルに直接データを送信します。Googleシート、Microsoft Excel、Microsoft Sharepoint の活発なエコシステムと堅牢な API を使用して、送信されたデータを簡単に処理したり、既存のビジネスワークフローを開始したりできます。
 
+![Edge Delivery Formsの概要](/help/edge/assets/getting-started-with-eds-forms.png)
+
+
 ## 前提条件
 
-* 既に GitHub アカウントを持っています。
-* Google Sheet またはMicrosoft SharePointにアクセスできます。
-* Git、HTML、CSS および JavaScript の基本を理解します。
-* ローカル開発用に Node と NPM がインストールされている。
-
-## 事前準備
+開始する前に、次の手順が完了していることを確認します。
 
 * Edge Delivery Service(EDS) プロジェクトをセットアップして複製します。 詳しくは、 [開発者向けチュートリアル](https://www.aem.live/developer/tutorial) 」を参照してください。
-* のクローン [Forms Block リポジトリ](https://github.com/adobe/afb).
-
-  ![Edge Delivery Formsの概要](/help/edge/assets/getting-started-with-eds-forms.png)
+* のクローン [Forms Block リポジトリ](https://github.com/adobe/afb). EDS サイトページ上のフォームをレンダリングするコードを含みます。
+* Google Sheet またはMicrosoft SharePointへのアクセス権があることを確認します。
 
 
 ## フォームの作成
-
 
 +++ 手順 1:Edge Delivery Service(EDS) プロジェクトにフォームブロックを追加します。
 
 AEM Forms Edge Delivery には、取り込んだデータを取り込んで保存するフォームを簡単に作成できるフォームブロックが含まれています。 フォームブロックを Edge Delivery Service プロジェクトに含めるには：
 
-1. に移動します。 `[cloned Forms Block repository folder]`/blocks/.
+1. `[cloned Forms Block repository folder]/blocks/` に移動します。
 
-1. をコピーします。 `forms` フォルダー `[Cloned EDS Project repository folder]\blocks` フォルダー。
+1. をコピーします。 `forms` フォルダー `[Cloned EDS Project repository folder]/blocks` フォルダー。
 
-1. 「form」フォルダーとその下にあるファイルを、GitHub の Edge Delivery Service プロジェクトにチェックインします。
+   >[!VIDEO](https://video.tv.adobe.com/v/3427487?quality=12&learn=on)
+
+1. チェックイン： `form` フォルダーおよび基になるファイルを、GitHub の Edge Delivery Service プロジェクトに追加します。
 
    ```Shell
    cd ..
@@ -112,7 +110,7 @@ AEM Forms Edge Delivery には、取り込んだデータを取り込んで保�
 
 1. Microsoft SharePointまたはGoogle Drive アカウントに移動し、AEM Edge Delivery プロジェクトディレクトリを開きます。
 
-1. ドキュメントファイルを開き、フォームを埋め込みます。 例えば、インデックスファイルを開きます。 新しいファイルを作成することもできます。
+1. ドキュメントファイルを開き、フォームを埋め込みます。 例えば、インデックスファイルを開きます。 また、新しいドキュメントファイルを作成することもできます。
 
 1. フォームを追加するドキュメント内の目的の場所に移動します。
 
