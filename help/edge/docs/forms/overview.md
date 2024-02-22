@@ -4,25 +4,35 @@ description: AEM Forms Edge Delivery Service は、効率化されたデータ�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 0%
+source-wordcount: '468'
+ht-degree: 1%
 
 ---
 
 
 # AEM Forms Edge Delivery Service {#aem-forms-edge-delivery-service-overview}
 
-AEM Forms Edge Delivery Service は、Adobeが提供する合成可能なサービスで、影響が大きく、パフォーマンスの高い Web フォームを作成して配信できます。 この合成可能なサービスはAdobe Experience Manager(AEM) とシームレスに統合され、直感的で効率的なワークフローで、インパクトの大きい高速な Web フォームの設計、構築、デプロイを実現します。
-
-AEM Forms Edge Delivery Service は、次のような場合に役立ちます。
+AEM Forms Edge Delivery Service は、Adobeが提供する合成可能なサービスで、影響が大きく、パフォーマンスの高い Web フォームを作成して配信できます。 サービスを使用して以下のことが行えます。
 
 * **視覚的に美しいフォームを作成**：ブランドアイデンティティを反映したダイナミックで最新のフォームを使用して、ブランド、cookie-cutter のデザインを見捨て、ユーザーを魅了します。 事前に作成されたコンポーネントを活用するか、独自のカスタムコンポーネントを作成して、ビジョンを迅速かつ簡単に実現します。
 
 * **完璧な Lighthouse スコアを持つフォームの作成**：低速なインターネット接続でも、すばやく読み込んでレンダリングするフォームを構築します。 読み込み時間の短縮と最適化されたユーザーエクスペリエンスは、フォームの完了率の向上とコンバージョン率の向上に貢献します。
 
 * **オーサリングと送信を簡素化**：従来のオーサリング環境ではなく、Microsoft Excel やGoogleシートなどの使い慣れたツールを使用してフォームを作成します。 フォームをMicrosoft Excel またはGoogleシートに直接送信し、そのエコシステムを使用して送信されたデータを簡単に処理できます。
+
+
+この合成可能なサービスはコンテンツソースから切り離され、ユーザーが好みのオーサリングツールを使用できるようにすることで、柔軟にコンテンツを作成できます。
+
+![Edge 配信フォームオーサリングツール](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+
+コンテンツ作成者は、Microsoft Excel やGoogleシート（ドキュメントベースのオーサリング）、JSON エディター、AEM Forms Adaptive Forms editor for WYSIWYG editing (AEM Formsプロジェクト ) など、使い慣れたツールを活用して、フォームをデザインおよび作成できます。
+
+>[!NOTE]
+>
+>
+> WYSIWYG 編集機能とクロスウォークは、アーリーアダプタープログラムの下で利用可能です。 アーリーアダプタープログラムに参加し、機能へのアクセス権をリクエストするには、公式のメール ID からaem-forms-early-adopter-program@adobe.comに書き込むことができます。
 
 ## 基本事項から始めます
 
@@ -47,7 +57,7 @@ AEM Forms Edge Delivery Service は、次のような場合に役立ちます。
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
             <img src="/help/edge/assets/smock_devices_18_n.svg" alt="eds フォームを使用したフォームの作成" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">フォームの作成</b>
+            <br><b style="margin-top: 5px;">Google Sheet またはMicrosoft Excel を使用したフォームの作成</b>
         </a>
         <p>モバイルデバイスで読み込んで自動的にレンダリングするフォームを作成します。</p>
     </div>

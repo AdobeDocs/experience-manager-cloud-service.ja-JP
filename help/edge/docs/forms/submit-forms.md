@@ -1,18 +1,18 @@
 ---
-title: スプレッドシートからFormsへ — フォームブロックのフィールド検証のマスタリング
-description: スプレッドシートとフォームブロックフィールドを使用して、強力なフォームをより迅速に作成できます。 このガイドは、EDS Forms Block フィールドのカスタム検証を構築する場合に役立ちます。
+title: データを受け入れるスプレッドシートを準備する
+description: スプレッドシートとフォームブロックフィールドを使用して、強力なフォームをより迅速に作成できます。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
 
 
-# フォームを有効にしてデータを送信
+# データを受け入れるスプレッドシートを準備する
 
 一度 [フォームの作成とプレビュー](/help/edge/docs/forms/create-forms.md)をクリックした場合、対応するスプレッドシートがデータの受信を開始できるようにします。
 
@@ -20,15 +20,15 @@ ht-degree: 1%
 
 スプレッドシートを有効にするには：
 
-1. フォームが含まれているスプレッドシートを開き、シートを追加して、シートの名前をに変更します。 `incoming`.
+1. フォームのあるスプレッドシートを開き、新しいシートを追加して、名前をに変更します。 `incoming`.
 
    >[!WARNING]
    >
-   > 次の場合、 `incoming` シートが存在しないので、AEMはこのブックにデータを送信しません。
+   > 次の場合、 `incoming` シートが存在しない場合、AEMはスプレッドシートにデータを送信しません。
 
-1. Adobe Analytics の `incoming` シート、すべての列ヘッダーを次の場所にミラーリング `Name` 列（フォームフィールド名）を `shared-default` シート。
+1. フォームフィールド名、値を `Name` 列の`shared-default` シートを `incoming` シート。
 
-   次の例では、「contact-us」フォームのヘッダーを表示します。
+   各値 `Name` 列 `shared-default` シート（送信ボタンを除く）は、 `incoming` シート。 例えば、次の画像は「contact-us」フォームのヘッダーを示しています。
 
    ![連絡先 —Us フォームのフィールド](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
@@ -77,9 +77,9 @@ Admin API を使用してスプレッドシートでのデータ受け取りを�
    >
    >前にシートをプレビューした場合でも、作成後に再度プレビューする必要があります。 `incoming` シートを初めて取り出しました。
 
-1. POSTリクエストを送信し、 `incoming` シートを作成し、 `shared-default` シートをスプレッドシートに貼り付けます（まだ存在しない場合）。
+1. POSTリクエストを送信し、 `incoming` シートを作成し、 `shared-default` シートをスプレッドシートに追加します（まだ存在しない場合）。
 
-   シートを設定するPOSTリクエストの形式を設定する方法については、 [管理 API ドキュメント](https://www.hlx.live/docs/admin.html#tag/form). 以下の例を確認できます。
+   シートを設定するPOSTリクエストの形式を設定する方法については、 [管理 API ドキュメント](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). 以下の例を確認できます。
 
    **リクエスト**
 
