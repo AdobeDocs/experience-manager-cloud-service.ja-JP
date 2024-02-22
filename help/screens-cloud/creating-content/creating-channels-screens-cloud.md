@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service でのチャネルの作成と管理
 description: ここでは、Screens as a Cloud Service でチャネルを作成および管理する方法について説明します。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: f7ed7c63fd141c6a9817e4718edb31425b14a761
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 88%
+source-wordcount: '1103'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 
 * Screens コンテンツプロバイダーへのチャネルを作成する方法を理解する
 * チャネル内のコンテンツを管理し編集する
-* チャネルのアクティベーションスケジュール
+* でチャネルの割り当てと有効化のスケジュールを管理します [Screens Service Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=ja)
 
 ## Screens as a Cloud Service で新しいシーケンスチャネルを作成する手順 {#create-new-channel}
 
@@ -28,24 +28,24 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 >**前提条件**
 >ガイドのこの節を開始する前に、[Screens as a Cloud Service でのプロジェクトの作成と管理](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)を確認してください。
 
-以下の手順に従って、Screens チャネルでシーケンスチャネルをas a Cloud Serviceします。
+以下の手順に従って、Screens as a Cloud Service でシーケンスチャネルを作成します。
 
 1. Screens コンテンツプロバイダーに移動します。
 
 1. *FirstDigitalExperience*&#x200B;など、AEM Screens プロジェクトに移動します。
 
-1. を選択します。 **チャネル** 次のようなフォルダーをプロジェクトから作成します。 **FirstDigitalExperience** —> **チャネル** をクリックします。 **作成** をクリックします。
+1. プロジェクトから&#x200B;**チャネル**&#x200B;フォルダーを選択（例：**FirstDigitalExperience**／**チャネル**）し、アクションバーの「**作成**」をクリックします。
 
    ![channel-create1](/help/screens-cloud/assets/create-content/channel-create1.png)
 
-1. テンプレートを選択します。例： **シーケンスチャネル** から **作成** ウィザードとクリック **次へ**.
+1. 「**作成**」ウィザードで「**シーケンスチャネル**」などのテンプレートを選択し、「**次へ**」をクリックします。
 
    ![channel-create2](/help/screens-cloud/assets/create-content/channel-create2.png)
 
    >[!NOTE]
    > **作成**&#x200B;ウィザードは、チャネルの作成時に様々なタイプのテンプレートを提供します。詳しくは、作成ウィザードの[使用可能なテンプレート](#available-templates)を参照してください。
 
-1. シーケンスチャネルの名前を入力します（例： ）。 **LoopingChannelOne** をクリックします。 **作成**.
+1. シーケンスチャネルの名前（例：**LoopingChannelOne**）を入力し、「**作成**」をクリックします。
 
    ![channel-create3](/help/screens-cloud/assets/create-content/channel-create3.png)
 
@@ -65,18 +65,18 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 
 チャネルにコンテンツを追加するには、下の手順に従います。
 
-1. 編集するチャネルを選択します（下の図を参照）。クリック **編集** アクションバーの左上隅から、エディターを開きます。
+1. 編集するチャネルを選択します（下の図を参照）。アクションバーの左上の「**編集**」をクリックして、エディターを開きます。
 
    ![edit-channel1](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
-1. エディターを使用して、公開するチャネルにアセットやコンポーネントを追加できます。
+1. エディターでは、公開するチャネルにアセットやコンポーネントを追加できます。
 
 1. 左側のパネルからアセットをドラッグ＆ドロップし、エディターに追加します。
 
    ![edit-channel2](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
-   >クリック **プレビュー** をクリックして、チャネルのコンテンツをプレビューします。
+   >「**プレビュー**」をクリックして、チャネルのコンテンツをプレビューします。
    >![edit-channelpreview](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## 作成ウィザードで使用可能なテンプレート {#available-templates}
@@ -91,7 +91,9 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 
 ## チャネルのデフォルトの割り当ての詳細を使用 {#default-channels}
 
-この機能を使用すると、チャネルのデフォルトのアクティベーションスケジュールを定義し、デフォルトで、ディスプレイのすべての割り当てに使用できます。 これにより、煩雑なスケジュール定義を繰り返す必要がなくなります。
+この機能を使用すると、チャネルのデフォルトのアクティブ化スケジュールを定義し、ディスプレイのすべての割り当てにデフォルトとして使用できるようになります。これにより、煩雑なスケジュール定義を繰り返す必要がなくなります。
+
+1. [ここ](https://experience.adobe.com/screens)から Screens サービスプロバイダーに移動します。
 
 ### チャネルのデフォルトの割り当ての詳細を作成 {#create-default}
 
@@ -119,7 +121,7 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 デフォルトの割り当て詳細があるチャネルは、通常のチャネルと同じ方法で表示でき、カスタムチャネルを毎回手動で定義する代わりに、デフォルトの割り当て詳細を使用するオプションが追加されます。
 
 1. チャネルを割り当てるディスプレイの詳細ページに移動し、「**チャネルを割り当て**」をクリックします。
-または、在庫表示で目的の表示を選択し、「**チャネルを割り当て**」をクリックします。
+または、 [在庫](https://experience.adobe.com/screens/displays) を表示し、 **チャネルを割り当て**.
 1. チャネル割り当てダイアログが開きます。
 
    ![画像](/help/screens-cloud/assets/display/Assignments4.png)
@@ -173,6 +175,6 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 **注意：**チャネルからデフォルトの割り当ての詳細を削除すると、それを使用していたすべてのディスプレイの一致する割り当てが削除されます。
 その結果、代替コンテンツがディスプレイに再生されない場合は、空白の画面が表示される可能性があります。
 
-## 次のステップ {#whats-next}
+## 次の手順 {#whats-next}
 
 プロジェクトで AEM Screens チャネルを設定したら、チャネルを公開する必要があります。Screens サービスプロバイダーからプレーヤーを管理する前に、[Screens as a Cloud Service でのチャネルの公開](manage-publish.md)を参照してください。
