@@ -2,10 +2,10 @@
 title: WAF ルールを含むトラフィックフィルタールール
 description: Web アプリケーションファイアウォール（WAF）ルールを含むトラフィックフィルタールールの設定
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 46e48b6bb8d2b926b55330024e145d608fcf3609
-workflow-type: ht
-source-wordcount: '3350'
-ht-degree: 100%
+source-git-commit: 86a7815a1055b8ffaf57b802f3232f2c03ec06dc
+workflow-type: tm+mt
+source-wordcount: '3376'
+ht-degree: 99%
 
 ---
 
@@ -253,6 +253,7 @@ when:
 | USERAGENT | 攻撃ツール | 攻撃ツールでは、自動化されたソフトウェアを使用して、セキュリティの脆弱性を特定したり、発見された脆弱性の悪用を試みたりします。 |
 | LOG4J-JNDI | Log4J JNDI | Log4J JNDI 攻撃では、Log4J バージョン 2.16.0 より前の [Log4Shell 脆弱性](https://ja.wikipedia.org/wiki/Log4Shell)を悪用しようと試みます |
 | BHH | 不正なホップヘッダー | 不正なホップヘッダーは、不正な形式の Transfer-Encoding（TE）ヘッダーまたは Content-Length（CL）ヘッダー、適切な形式の TE および CL ヘッダーを介した HTTP スマグリングの試みを示します |
+| CODEINJECTION | コード挿入 | コードインジェクションとは、ユーザの入力を介して任意のアプリケーションコードコマンドを通じて、ターゲットシステムを制御または損傷させる試みです。 |
 | ABNORMALPATH | 異常なパス | 異常なパスは、元のパスが正規化されたパスと異なることを示します（例えば、`/foo/./bar` は `/foo/bar` に正規化されます） |
 | DOUBLEENCODING | 二重エンコーディング | 二重エンコーディングでは、HTML 文字の二重エンコーディングを回避する方法を確認します |
 | NOTUTF8 | 無効なエンコーディング | 無効なエンコーディングでは、サーバーがリクエストの悪意のある文字をレスポンスに変換し、サービス拒否または XSS を引き起こす可能性があります。 |
