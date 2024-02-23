@@ -4,9 +4,9 @@ description: クラフトパーフェクトフォーム、高速！ ⚡ AEM Form
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
+source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '913'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 1%
 
 開始する前に、次の手順が完了していることを確認します。
 
-* Edge Delivery Service(EDS) プロジェクトをセットアップして複製します。 詳しくは、 [開発者向けチュートリアル](https://www.aem.live/developer/tutorial) 」を参照してください。 Edge Delivery Service(EDS) プロジェクトのローカルフォルダーが、 `[EDS Project repository]` 」を参照してください。
-* のクローン [Forms Block リポジトリ](https://github.com/adobe/afb). EDS Web ページ上でフォームをレンダリングするコードを含みます。 Forms Block リポジトリのローカルフォルダーは、 `[Forms Block repository]` 」を参照してください。
+* Edge Delivery Service(EDS) プロジェクトをセットアップして複製します。 詳しくは、 [開発者向けチュートリアル](https://www.aem.live/developer/tutorial) 」を参照してください。 このドキュメントでは、Edge Delivery Service(EDS) プロジェクトのローカルフォルダーを `[EDS Project repository]` .
+* のクローン [Forms Block リポジトリ](https://github.com/adobe/afb). EDS Web ページ上でフォームをレンダリングするコードを含みます。 このドキュメントでは、Formsブロックリポジトリのローカルフォルダーを `[Forms Block repository]` 」を参照してください。
 * Google Sheet またはMicrosoft SharePointへのアクセス権があることを確認します。
 
 
@@ -42,7 +42,7 @@ AEM Forms Edge Delivery には、取り込んだデータを取り込んで保�
 
 1. チェックイン： `form` フォルダーおよび基になるファイルを、GitHub の Edge Delivery Service プロジェクトに追加します。
 
-   Form ブロックが GitHub の EDS プロジェクトリポジトリに追加されます。 GitHub のビルドが失敗しないことを確認します。
+   Form ブロックが GitHub の EDS プロジェクトリポジトリに追加されます。 GitHub のビルドに失敗しないことを確認します。
 
    * 「モジュール「../../scripts/lib-franklin.js」へのパスを解決できません」というエラーが発生した場合は、 `[EDS Project]/blocks/forms/form.js` ファイル。 import 文で、 `lib-franklin.js` ファイルに `aem.js` ファイル。
 

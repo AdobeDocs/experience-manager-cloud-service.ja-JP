@@ -4,9 +4,9 @@ description: AEM Forms Edge Delivery Service は、効率化されたデータ�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
+source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '463'
 ht-degree: 1%
 
 ---
@@ -27,12 +27,12 @@ AEM Forms Edge Delivery Service は、Adobeが提供する合成可能なサー�
 
 ![Edge 配信フォームオーサリングツール](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-コンテンツ作成者は、Microsoft Excel やGoogleシート（ドキュメントベースのオーサリング）、JSON エディター、AEM Forms Adaptive Forms editor for WYSIWYG editing (AEM Formsプロジェクト ) など、使い慣れたツールを活用して、フォームをデザインおよび作成できます。
+コンテンツ作成者は、Microsoft Excel やGoogleシート（ドキュメントベースのオーサリング）、JSON ファイル（ヘッドレスオーサリング）、AEM Forms Adaptive Formsエディター（WYSIWYG オーサリング）などの使い慣れたツールを活用して、フォームをデザインおよび作成できます。
 
 >[!NOTE]
 >
 >
-> WYSIWYG 編集機能とクロスウォークは、アーリーアダプタープログラムの下で利用可能です。 アーリーアダプタープログラムに参加し、機能へのアクセス権をリクエストするには、公式のメール ID からaem-forms-early-adopter-program@adobe.comに書き込むことができます。
+> WYSIWYG オーサリング機能は、アーリーアダプタープログラムで利用できます。 アーリーアダプタープログラムに参加し、機能へのアクセス権をリクエストするには、公式のメール ID からaem-forms-early-adopter-program@adobe.comに書き込むことができます。
 
 ## 基本事項から始めます
 
@@ -67,13 +67,12 @@ AEM Forms Edge Delivery Service は、Adobeが提供する合成可能なサー�
             <br><b style="margin-top: 5px;">フィールド検証を適用</b>
         </a>
         <p>フォーム入力で適切な形式を確認することで、エラーと不満を減らすことができます。</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/form-fragments.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="EDS フォームでのフォームフラグメントの使用" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">フォームフラグメントの作成</b>
+    </div>    <div class="card-container">
+        <a href="/help/edge/docs/forms/style-theme-forms.md">
+            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="スタイルまたはテーマを eds フォームに適用する" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">テーマのカスタマイズ</b>
         </a>
-        <p>複数のフォーム間で事前設定済みのフラグメントを再利用する。</p>
+        <p>同じテーマを複数のフォームに適用して、一貫したブランドイメージを作成します。</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
@@ -83,11 +82,11 @@ AEM Forms Edge Delivery Service は、Adobeが提供する合成可能なサー�
         <p>コストを抑えながら、フォームのリーチを拡大します。</p>
     </div>
     <div class="card-container">
-        <a href="/help/edge/docs/forms/style-theme-forms.md">
-            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="スタイルまたはテーマを eds フォームに適用する" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">テーマのカスタマイズ</b>
+        <a href="/help/edge/docs/forms/form-fragments.md">
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="EDS フォームでのフォームフラグメントの使用" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">フォームフラグメントの作成</b>
         </a>
-        <p>同じテーマを複数のフォームに適用して、一貫したブランドイメージを作成します。</p>
+        <p>複数のフォーム間で事前設定済みのフラグメントを再利用する。</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/repeatable-forms.md">  
