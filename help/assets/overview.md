@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
+source-git-commit: b3bfc841f0609e1e529c97dd1f11d16de561701c
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 100%
+source-wordcount: '892'
+ht-degree: 92%
 
 ---
 
@@ -59,6 +59,10 @@ DAM ライブラリ担当者、開発者およびスーパーユーザーは、�
 Edge 配信を使用すると、作成者がコンテンツをすばやく更新および公開でき、新しいサイトを迅速に起動できる、魅力的な迅速な Web サイトを作成できます。
 
 AEM Assetsをドキュメントベースのオーサリングと統合して、Edge Delivery Services向けに Web サイト作成者がMicrosoft Word またはGoogleドキュメントでドキュメントを作成する際に、AEM Assetsリポジトリで使用可能な画像を使用できるようにします。 詳しくは、 [AEM Assetsとドキュメントベースのオーサリングの統合](/help/edge/using.md#integrate-assets-edge).
+
+## Adobe Journey Optimizerとの統合 {#integration-with-ajo}
+
+[Adobe Journey Optimizer](https://business.adobe.com/jp/products/journey-optimizer/adobe-journey-optimizer.html) は、インテリジェントな判定とインサイトを提供するオムニチャネルキャンペーンを提供するため、ジャーニー管理を簡素化します。 Journey Optimizerを使用してメッセージをデザインする場合、Journey Optimizerインターフェイス内から直接 Assetsas a Cloud Serviceリポジトリにアクセスできます。 ユーザーは、Experience Manager Assetsの埋め込みユーザーインターフェイスを使用してアセットにアクセスできます。 詳しくは、 [Experience Manager Assetsでのアセットの作成と管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html).
 
 ## 新しい Assets の機能 {#whats-new-assets}
 
