@@ -1,7 +1,7 @@
 ---
 title: レイアウトコンテナとレイアウトモードの設定
 description: レスポンシブレイアウトをコンテンツ作成者に対して有効にするためのレイアウトコンテナおよびレイアウトモードの設定方法について説明します。
-source-git-commit: 4ae0ae4fbf8f6a97434628f5f6049720c6c43118
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 50%
@@ -11,11 +11,11 @@ ht-degree: 50%
 
 # レイアウトコンテナとレイアウトモードの設定 {#configuring-layout-container-and-layout-mode}
 
-[レスポンシブレイアウト](/help/sites-cloud/authoring/features/responsive-layout.md) ～を実現するメカニズムである [レスポンシブ web デザイン。](https://ja.wikipedia.org/wiki/Responsive_web_design) これにより、コンテンツ作成者は、ユーザーが使用するデバイスに応じたレイアウトとサイズの Web ページを作成できます。
+[レスポンシブレイアウト](/help/sites-cloud/authoring/page-editor/responsive-layout.md) ～を実現するメカニズムである [レスポンシブ web デザイン。](https://ja.wikipedia.org/wiki/Responsive_web_design) これにより、コンテンツ作成者は、ユーザーが使用するデバイスに応じたレイアウトとサイズの Web ページを作成できます。
 
 AEM は、次のメカニズムを組み合わせて使用することにより、ページのレスポンシブレイアウトを実現します。
 
-* **[レイアウトコンテナ](/help/sites-cloud/authoring/features/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)**  — このコンポーネントは、レスポンシブグリッド内にコンポーネントを追加および配置できるグリッド段落システムを提供します。
+* **[レイアウトコンテナ](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)**  — このコンポーネントは、レスポンシブグリッド内にコンポーネントを追加および配置できるグリッド段落システムを提供します。
    * ページのデフォルトの parsys として使用したり、コンポーネントブラウザーで作成者が使用できるようにしたりできます。
    * デフォルト **レイアウトコンテナ** コンポーネントは以下で定義されます。 `/libs/wcm/foundation/components/responsivegrid`.
    * レイアウトコンテナは次のように定義できます。
@@ -23,8 +23,8 @@ AEM は、次のメカニズムを組み合わせて使用することにより�
       * ページのデフォルトの parsys として。
       * コンポーネントとデフォルトの parsys の両方として。
          * レイアウトコンテナをページの標準とし、この中でユーザーがレイアウトコンテナをさらに追加できるようにすることができます。例えば、列を制御する場合などです。
-* **[レイアウトモード](/help/sites-cloud/authoring/fundamentals/environment-tools.md)**  — レイアウトコンテナをページに配置したら、 **レイアウト** モード：レスポンシブグリッド内にコンテンツを配置します。
-* **[エミュレーター](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate)**  — コンポーネントのサイズをインタラクティブに変更することで、デバイスやウィンドウのサイズに従ってレイアウトを並べ替えるレスポンシブ Web サイトを作成および編集できます。 その後、ユーザーはエミュレーターを使用してコンテンツがどのようにレンダリングされるかを確認できます。
+* **[レイアウトモード](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)**  — レイアウトコンテナをページに配置したら、 **レイアウト** モード：レスポンシブグリッド内にコンテンツを配置します。
+* **[エミュレーター](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)**  — コンポーネントのサイズをインタラクティブに変更することで、デバイスやウィンドウのサイズに従ってレイアウトを並べ替えるレスポンシブ Web サイトを作成および編集できます。 その後、ユーザーはエミュレーターを使用してコンテンツがどのようにレンダリングされるかを確認できます。
 
 これらのレスポンシブグリッドのメカニズムを使用すると、次のことができます。
 
@@ -220,9 +220,9 @@ AEM では、必要な CSS の一部の生成に LESS を使用するため、�
 
 作成者がさらに多くのレスポンシブグリッドをコンテンツページに追加できるようにするには、ページのレイアウトコンテナコンポーネントを有効にする必要があります。これは、次のいずれかを使用して行います。
 
-* **オーサー環境を使用する** - [ページテンプレートの編集](/help/sites-cloud/authoring/features/templates.md) をクリックして、ページのレイアウトコンテナを有効にします。
+* **オーサー環境を使用する** - [ページテンプレートの編集](/help/sites-cloud/authoring/sites-console/templates.md) をクリックして、ページのレイアウトコンテナを有効にします。
 * **コンポーネント定義**  — 用途 `allowedComponent` または静的インクルードを使用してコンポーネントを定義します。
 
 ### レイアウトコンテナのグリッドの設定 {#configure-the-grid-of-the-layout-container}
 
-レイアウトコンテナの特定のインスタンスごとに使用できる列数を設定できます [ページテンプレートを編集して、](/help/sites-cloud/authoring/features/templates.md)
+レイアウトコンテナの特定のインスタンスごとに使用できる列数を設定できます [ページテンプレートを編集して、](/help/sites-cloud/authoring/sites-console/templates.md)

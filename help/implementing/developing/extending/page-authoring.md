@@ -2,8 +2,8 @@
 title: ページオーサリングのカスタマイズ
 description: ページオーサリング機能をカスタマイズするために AEM as a Cloud Service が提供するメカニズムについて説明します。
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ Adobe Experience Manager as a Cloud Service には、オーサーインスタン
 
 ## 新しいレイヤー（モード）の追加 {#add-new-layer-mode}
 
-ページを編集するときに、さまざまな[モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)を使用できます。これらのモードは、[レイヤー](/help/implementing/developing/introduction/ui-structure.md#layer)を使用して実装されます。これらにより、同じページコンテンツの異なるタイプの機能にアクセスできます。標準の AEM モードには、編集、レイアウト、開発者、タイムワープ、ライブコピーのステータス、およびターゲティングが含まれます。
+ページを編集するときに、さまざまな[モード](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes)を使用できます。これらのモードは、[レイヤー](/help/implementing/developing/introduction/ui-structure.md#layer)を使用して実装されます。これらにより、同じページコンテンツの異なるタイプの機能にアクセスできます。標準の AEM モードには、編集、レイアウト、開発者、タイムワープ、ライブコピーのステータス、およびターゲティングが含まれます。
 
 ### レイヤーの例：ライブコピーステータス {#layer-example-live-copy-status}
 

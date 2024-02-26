@@ -1,11 +1,11 @@
 ---
 title: コンテンツフラグメントのカスタマイズと拡張
-description: コンテンツフラグメントは、標準アセットを拡張します。カスタマイズ方法を学びます。
+description: コンテンツフラグメントは、標準アセットを拡張します。カスタマイズ方法について説明します。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 56%
+source-wordcount: '1689'
+ht-degree: 60%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 56%
 
 Adobe Experience Manager as a Cloud Service 内で、コンテンツフラグメントは標準アセットを拡張します。
 
-* コンテンツフラグメントについて詳しくは、[コンテンツフラグメントの作成と管理](/help/sites-cloud/administering/content-fragments/overview.md)および[コンテンツフラグメントを使用したページオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)を参照してください。
+* コンテンツフラグメントについて詳しくは、[コンテンツフラグメントの作成と管理](/help/sites-cloud/administering/content-fragments/overview.md)および[コンテンツフラグメントを使用したページオーサリング](/help/sites-cloud/authoring/fragments/content-fragments.md)を参照してください。
 
 * 「[アセットの管理](/help/assets/manage-digital-assets.md)」を参照してください。
 
@@ -44,7 +44,7 @@ Adobe Experience Manager as a Cloud Service 内で、コンテンツフラグメ
 
 コンテンツフラグメント管理 (CFM) は、Adobe Experience Manager(AEM)Assets の一部で、次の機能を持ちます。
 
-* コンテンツフラグメントはアセットです。
+* コンテンツフラグメントはアセットである。
 * 既存のアセット機能を使用します。
 * Assets と完全に統合されています（管理コンソールなど）。
 
@@ -61,7 +61,6 @@ Adobe Experience Manager as a Cloud Service 内で、コンテンツフラグメ
 * すべてのコンテンツはアセットの `jcr:content/data` ノードに格納されます。
 
    * 要素のデータは次のマスターサブノードに格納されます。
-
      `jcr:content/data/master`
 
    * バリエーションは、そのバリエーションの名前を持つサブノードに格納されます（例： ）。 `jcr:content/data/myvariation`
@@ -97,11 +96,11 @@ Assets コアと統合するには：
 >
 >[コンテンツフラグメントコンポーネントは、コアコンポーネントの一部です](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ja)。詳しくは、[コアコンポーネントの開発](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ja)を参照してください。
 
-コンテンツフラグメントは、他のアセットタイプと同様に、AEM ページから参照できます。AEMが **[コンテンツフラグメントコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ja)** - a [ページにコンテンツフラグメントを組み込むためのコンポーネント](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). この&#x200B;**[コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ja)**&#x200B;コアコンポーネントを拡張することもできます。
+コンテンツフラグメントは、他のアセットタイプと同様に、AEM ページから参照できます。AEMが **[コンテンツフラグメントコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ja)** - a [ページにコンテンツフラグメントを組み込むためのコンポーネント](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). この&#x200B;**[コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ja)**&#x200B;コアコンポーネントを拡張することもできます。
 
 * このコンポーネントは、`fragmentPath` プロパティを使用して、実際のコンテンツフラグメントを参照します。`fragmentPath` プロパティは、その他のアセットタイプの類似プロパティと同じ方法で処理されます。例えば、コンテンツフラグメントが別の場所に移動された場合などです。
 
-* コンポーネントを使用すると、表示するバリエーションを選択できます。
+* このコンポーネントを使用して、表示するバリエーションを選択できます。
 
 * また、段落の範囲を選択して出力を制限することもできます。例えば、複数列の出力に使用できます。
 
@@ -125,7 +124,7 @@ Assets コアと統合するには：
 
 ### その他のフレームワークとの統合 {#integration-with-other-frameworks}
 
-コンテンツフラグメントは、次のものと統合できます。
+コンテンツフラグメントは、次と統合できます。
 
 * **翻訳**
 
@@ -177,25 +176,25 @@ Assets コアと統合するには：
 
 * **コンテンツフラグメント**（[ContentFragment](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)）
 
-  このインターフェイスを使用すると、コンテンツフラグメントを抽象的に操作できます。
+  このインターフェイスでは、コンテンツフラグメントを抽象化して使用できます。
 
   このインターフェイスでは、次のことを実行できます。
 
    * 基本データを管理する（名前の取得、タイトルまたは説明の取得／設定など）
-   * メタデータへのアクセス
-   * 要素にアクセスするには、次の操作を実行します。
+   * メタデータにアクセスする
+   * 要素にアクセスする
 
-      * 要素を一覧表示する
-      * 名前で要素を取得する
+      * 要素をリスト表示する
+      * 要素を名前で取得する
       * 要素を作成します ( [注意事項](#caveats))
 
       * 要素データにアクセスする（`ContentElement` を参照）
 
-   * フラグメントに定義されたバリエーションを一覧表示する
+   * そのフラグメントに対して定義されているバリエーションをリスト表示する
    * バリエーションをグローバルに作成
-   * 関連コンテンツを管理するには、次の操作を実行します。
+   * 関連コンテンツを管理する
 
-      * コレクションを一覧表示する
+      * コレクションをリスト表示する
       * コレクションを追加する
       * コレクションを削除する
 
@@ -207,10 +206,10 @@ Assets コアと統合するには：
 
       * 基本データ（名前、タイトル、説明）を取得
       * コンテンツを取得／設定する
-      * 要素のバリエーションにアクセスするには、次の操作を実行します。
+      * 要素のバリエーションにアクセスする
 
-         * バリエーションを一覧表示する
-         * 名前でバリエーションを取得する
+         * バリエーションをリスト表示する
+         * バリエーションを名前で取得する
          * バリエーションを作成します ( [注意事項](#caveats))
          * バリエーションを削除する（[注意事項](#caveats)を参照）
          * バリエーションデータにアクセスする（`ContentVariation` を参照）
@@ -226,8 +225,8 @@ Assets コアと統合するには：
   3 つのインターフェイス（`ContentVariation`、`ContentFragment`、`ContentElement`、）すべてによって `Versionable` インターフェイスを拡張し、コンテンツフラグメントに必要な次のバージョン管理機能を追加します。
 
    * 要素のバージョンを作成する
-   * 要素のバージョンを一覧表示する
-   * バージョン管理された要素の特定のバージョンのコンテンツを取得する
+   * 要素のバージョンをリスト表示する
+   * バージョン管理されている要素の特定のバージョンのコンテンツを取得する
 
 ### 適応 - adaptTo() の使用  {#adapting-using-adaptto}
 
@@ -314,7 +313,7 @@ if (fragmentResource != null) {
 
 コンテンツフラグメントをプログラムで作成するには、 `FragmentTemplate` モデルリソースから適応させたもの。
 
-次に例を示します。
+例：
 
 ```java
 Resource modelRsc = resourceResolver.getResource("...");

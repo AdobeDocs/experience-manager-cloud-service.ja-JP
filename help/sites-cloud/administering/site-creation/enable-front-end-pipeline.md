@@ -4,10 +4,10 @@ description: サイトテーマを使用してサイトをより迅速にカス�
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 98%
+source-wordcount: '554'
+ht-degree: 100%
 
 ---
 
@@ -50,8 +50,8 @@ AEM では、フロントエンドパイプラインを使用するように既�
 サイトのフロントエンドパイプラインを有効にするには、Sites コンソールで[サイトパネル](site-rail.md)を使用します。
 
 1. AEM にログインし、**グローバルナビゲーション**／**サイト**&#x200B;を使用して Sites コンソールに移動します。
-1. サイトをコンソールで選択します。子ページではなく、サイトのルートを選択します。
-1. サイトが選択された状態で、左側の[パネルセレクター](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)を開き、「**サイト**」を選択します。
+1. サイトをコンソールで選択します。サイトの子ページではなくルートを選択します。
+1. サイトが選択された状態で、左側の[パネルセレクター](/help/sites-cloud/authoring/basic-handling.md#rail-selector)を開き、「**サイト**」を選択します。
 1. **サイト**&#x200B;パネルで「**フロントエンドパイプラインを有効化**」ボタンをクリックします。
 
    ![フロントエンドパイプラインの有効化](/help/sites-cloud/administering/assets/enable-front-end-pipeline.png)

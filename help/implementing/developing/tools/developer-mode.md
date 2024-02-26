@@ -4,7 +4,7 @@ seo-title: Developer Mode
 description: 開発者モードで開かれるサイドパネルのタブには、現在のページに関する開発者向けの情報が表示されます
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 97%
@@ -13,7 +13,7 @@ ht-degree: 97%
 
 # 開発者モード {#developer-mode}
 
-AEM でページを編集する場合、複数の[モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)は、開発者モードを含めて使用できます。開発者モードで開くサイドパネルのタブには、現在のページに関する開発者向けの技術情報が表示されます。
+AEM でページを編集する場合、複数の[モード](/help/sites-cloud/authoring/sites-console/introduction.md#page-modes)は、開発者モードを含めて使用できます。開発者モードで開くサイドパネルのタブには、現在のページに関する開発者向けの技術情報が表示されます。
 
 次の 2 つのタブがあります。
 
@@ -41,7 +41,7 @@ AEM でページを編集する場合、複数の[モード](/help/sites-cloud/a
 
 パネルは、次の 2 つのタブで構成されています。
 
-* **[コンポーネント](#components)** - コンポーネントツリーが表示されます。これは、作成者向けの[コンテンツツリー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree)に似ています。
+* **[コンポーネント](#components)** - コンポーネントツリーが表示されます。これは、作成者向けの[コンテンツツリー](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#content-tree)に似ています。
 * **[エラー](#errors)** - 問題が発生すると、各コンポーネントの詳細が表示されます。
 
 ### コンポーネントタブ {#components}
@@ -55,7 +55,7 @@ AEM でページを編集する場合、複数の[モード](/help/sites-cloud/a
 * ツリーを展開し、ツリー内の特定のコンポーネントを選択できます。 コンポーネントを選択すると、次のようなコンポーネント詳細にアクセスできます。
    * リポジトリーパス
    * スクリプトへのリンク（CRXDE Lite でアクセス）
-   * コンポーネントの詳細（[コンポーネントコンソール](/help/sites-cloud/authoring/features/components-console.md)に表示）
+   * コンポーネントの詳細（[コンポーネントコンソール](/help/sites-cloud/authoring/components-console.md)に表示）
 * ツリーで選択されたコンポーネントは、エディターでは青い境界線で示されます。
 
 このコンポーネントタブは以下に役立ちます。
@@ -76,7 +76,7 @@ AEM でページを編集する場合、複数の[モード](/help/sites-cloud/a
 
 * **スクリプトを編集**：CRXDE Lite にコンポーネントスクリプトを開くためのリンクです。
 
-* **コンポーネント詳細を表示**：[コンポーネントコンソール](/help/sites-cloud/authoring/features/components-console.md)内のコンポーネントの詳細を開きます。
+* **コンポーネント詳細を表示**：[コンポーネントコンソール](/help/sites-cloud/authoring/components-console.md)内のコンポーネントの詳細を開きます。
 
 山形アイコンをタップまたはクリックしてコンポーネントエントリを展開すると、次の項目も表示されます。
 

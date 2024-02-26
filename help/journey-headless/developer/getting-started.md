@@ -2,8 +2,8 @@
 title: AEM Headless as a Cloud Service - はじめに
 description: ここでは、AEM ヘッドレスデベロッパージャーニーのこの部分では、AEM ヘッドレスの前提条件について説明します。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '3057'
 ht-degree: 100%
 
@@ -286,8 +286,8 @@ AEM を使用した[一般的なヘッドレス実装](#level-1)の場合、デ�
 * [AEM ヘッドレスチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja) - これらの実践チュートリアルでは、AEM を使用してヘッドレスエンドポイントにコンテンツを配信するための様々なオプションの使用方法を確認し、最適なものを選択します。
 * [GraphQL API を使用したヘッドレスコンテンツ管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - AEM に実装されている GraphQL API の概要についてのコースです。Adobe ID を使用した認証が必要です。
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)（英語のみ）- この GitHub プロジェクトには、AEM の GraphQL API を紹介するためのサンプルアプリケーションが含まれています。
-* [オーサリングの概念](/help/sites-cloud/authoring/getting-started/concepts.md) - オーサーとパブリッシュの設定の詳細など、AEM のオーサリング環境に関する技術ドキュメント
-* [ページの公開](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) - AEM でのコンテンツの公開に関する技術ドキュメント
+* [オーサリングの概念](/help/sites-cloud/authoring/author-publish.md) - オーサーとパブリッシュの設定の詳細など、AEM のオーサリング環境に関する技術ドキュメント
+* [ページの公開](/help/sites-cloud/authoring/sites-console/publishing-pages.md) - AEM でのコンテンツの公開に関する技術ドキュメント
 * [命名規則](/help/implementing/developing/introduction/naming-conventions.md) - AEM のページ命名の制限に関する技術ドキュメント
 * [マルチサイトマネージャーと翻訳](/help/sites-cloud/administering/msm-and-translation.md) - AEM の強力な翻訳機能に関する技術ドキュメント
 * [AEM ワークフロー](/help/sites-cloud/authoring/workflows/overview.md) - AEM でワークフローを自動化する方法に関する技術ドキュメント

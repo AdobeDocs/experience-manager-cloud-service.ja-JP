@@ -5,8 +5,8 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '2526'
 ht-degree: 100%
 
@@ -285,4 +285,4 @@ AEM の翻訳フレームワークは、翻訳コネクタから翻訳を受け�
 [翻訳済みコンテンツの公開](publish-content.md)のドキュメントを確認して、翻訳ジャーニーの次のステップに進むことをお勧めします。ジャーニーの続行に必須ではありませんが、この記事で取り上げたいくつかの概念について詳しく説明している追加のオプションリソースを以下に挙げておきます。
 
 * [翻訳プロジェクトの管理](/help/sites-cloud/administering/translation/managing-projects.md) - 翻訳プロジェクトの詳細と、人間による翻訳のワークフローや多言語プロジェクトなどの追加機能について説明します。
-* [オーサリング環境とツール](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - AEM には、堅牢なパスブラウザーなど、コンテンツを整理および編集するための様々なメカニズムが用意されています。このドキュメントでは、それらについて説明します。
+* [オーサリング環境とツール](/help/sites-cloud/authoring/path-selection.md#path-selection) - AEM には、堅牢なパスブラウザーなど、コンテンツを整理および編集するための様々なメカニズムが用意されています。このドキュメントでは、それらについて説明します。

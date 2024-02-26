@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 4b05e8f8ae554e7c0881134ef24ca8ce35e3e2bf
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '4976'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -83,7 +83,7 @@ YouTube は独自のエンコーディングを行います。そのため、Dyn
 
 ### Google Cloud の設定 {#configuring-google-cloud-settings}
 
-YouTubeに公開するには、Googleアカウントが必要です。GMAIL アカウントをお持ちの場合は、既にGoogleアカウントをお持ちです。Googleアカウントをお持ちでない場合は、簡単に作成できます。 ビデオアセットをYouTubeに公開するための資格情報が必要なので、アカウントが必要です。 <!-- hidden March 3 2022 If you have an account already created, then skip this task and proceed directly to [Create a YouTube channel](#creating-a-youtube-channel). -->
+YouTube に公開するには、Google アカウントが必要です。GMAIL のアカウントを持っている場合は、既に Google アカウントも所有しています。Google アカウントがない場合も、簡単に作成できます。ビデオアセットを YouTube に公開するには資格情報が必要なので、アカウントが必要です。<!-- hidden March 3 2022 If you have an account already created, then skip this task and proceed directly to [Create a YouTube channel](#creating-a-youtube-channel). -->
 
 Google Cloud で使用するアカウントと YouTube に使用する Google アカウントは、必ずしも同じである必要はありません。
 
@@ -197,7 +197,7 @@ YouTube にビデオを公開するには、1 つ以上のチャンネルが必�
 
 ### 公開用タグの追加 {#adding-tags-for-publishing}
 
-Experience Manager で、YouTube にビデオを公開するには、1 つ以上の YouTube チャンネルにタグを関連付けます。公開用タグの追加については、[タグの管理](/help/sites-cloud/authoring/features/tags.md)を参照してください。
+Experience Manager で、YouTube にビデオを公開するには、1 つ以上の YouTube チャンネルにタグを関連付けます。公開用タグの追加については、[タグの管理](/help/sites-cloud/authoring/sites-console/tags.md)を参照してください。
 
 また、Experience Manager のデフォルトのタグを使用する場合は、このタスクをスキップして、次の [Experience Manager での YouTube のセットアップ](#setting-up-youtube-in-aem)に進んでください。
 
@@ -384,11 +384,11 @@ Experience Manager 6.4 以降では、Experience Manager で YouTube への公�
 
 >[!NOTE]
 >
-Experience Manager では、YouTube からのコンテンツの公開に **[!UICONTROL YouTube に公開]**&#x200B;ワークフローを使用します。このワークフローでは、進行状況を監視して、エラー情報を表示できます。
+>Experience Manager では、YouTube からのコンテンツの公開に **[!UICONTROL YouTube に公開]**&#x200B;ワークフローを使用します。このワークフローでは、進行状況を監視して、エラー情報を表示できます。
 >
-詳しくは、[ビデオエンコーディングと YouTube への公開の進行状況の監視](#monitoring-video-encoding-and-youtube-publishing-progress)を参照してください。
+>詳しくは、[ビデオエンコーディングと YouTube への公開の進行状況の監視](#monitoring-video-encoding-and-youtube-publishing-progress)を参照してください。
 >
-詳細な進行状況については、レプリケーション下の YouTube ログを監視できます。ただし、このような監視には管理者アクセスが必要です。
+>詳細な進行状況については、レプリケーション下の YouTube ログを監視できます。ただし、このような監視には管理者アクセスが必要です。
 
 **YouTube チャンネルにビデオを公開するには：**
 
@@ -424,7 +424,7 @@ Experience Manager では、YouTube からのコンテンツの公開に **[!UIC
 
 >[!NOTE]
 >
-YouTube URL は、ビデオアセットを YouTube に公開するまではコピーできません。
+>YouTube URL は、ビデオアセットを YouTube に公開するまではコピーできません。
 
 Web アプリケーションに YouTube URL をリンクするには：
 
@@ -442,13 +442,13 @@ Experience Manager のビデオアセットを非公開にすると、そのビ�
 
 >[!CAUTION]
 >
-YouTube 内からビデオを直接削除すると、Experience Manager はそのことを認識できないので、そのビデオがまだ YouTube に公開されているかのように動作を続けます。ビデオアセットを YouTube で非公開にするときは、必ず Experience Manager から行ってください。
+>YouTube 内からビデオを直接削除すると、Experience Manager はそのことを認識できないので、そのビデオがまだ YouTube に公開されているかのように動作を続けます。ビデオアセットを YouTube で非公開にするときは、必ず Experience Manager から行ってください。
 
 >[!NOTE]
 >
-Experience Manager では、YouTube からのコンテンツの削除に **[!UICONTROL YouTube で非公開]**&#x200B;ワークフローを使用します。このワークフローでは、進行状況を監視して、エラー情報を表示できます。
+>Experience Manager では、YouTube からのコンテンツの削除に **[!UICONTROL YouTube で非公開]**&#x200B;ワークフローを使用します。このワークフローでは、進行状況を監視して、エラー情報を表示できます。
 >
-詳しくは、[ビデオエンコーディングと YouTube への公開の進行状況の監視](#monitoring-video-encoding-and-youtube-publishing-progress)を参照してください。
+>詳しくは、[ビデオエンコーディングと YouTube への公開の進行状況の監視](#monitoring-video-encoding-and-youtube-publishing-progress)を参照してください。
 
 **ビデオを非公開にして YouTube から削除するには：**
 
@@ -489,19 +489,19 @@ Experience Manager では、YouTube からのコンテンツの削除に **[!UIC
 
    >[!NOTE]
    >
-   [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) からの&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**&#x200B;および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;に関する複数のワークフロー設定があるので、失敗／エラーメッセージが最終的に記録されるまでには時間がかかる可能性があります。例えば、次の設定です。
+   >[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) からの&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**&#x200B;および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;に関する複数のワークフロー設定があるので、失敗／エラーメッセージが最終的に記録されるまでには時間がかかる可能性があります。例えば、次の設定です。
    >
-   * Apache Sling ジョブキューの設定
-   * Adobe Granite ワークフロー外部プロセスジョブハンドラー
-   * Granite ワークフロータイムアウトキュー
+   >* Apache Sling ジョブキューの設定
+   >* Adobe Granite ワークフロー外部プロセスジョブハンドラー
+   >* Granite ワークフロータイムアウトキュー
    >
-   これらの設定の&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**&#x200B;および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;プロパティは調整できます。
+   >これらの設定の&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**&#x200B;および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;プロパティは調整できます。
 
 1. 進行中のワークフローについては、**[!UICONTROL ツール]**／**[!UICONTROL ワークフロー]**／**[!UICONTROL インスタンス]**&#x200B;からワークフローインスタンスを表示します。
 
    >[!NOTE]
    >
-   **[!UICONTROL ツール]**&#x200B;メニューにアクセスするには、管理者権限が必要です。
+   >**[!UICONTROL ツール]**&#x200B;メニューにアクセスするには、管理者権限が必要です。
 
    ![chlimage_1-433](/help/assets/dynamic-media/assets/chlimage_1-433.png)
 
@@ -515,25 +515,25 @@ Experience Manager では、YouTube からのコンテンツの削除に **[!UIC
 
    >[!NOTE]
    >
-   **[!UICONTROL ツール]**&#x200B;メニューにアクセスするには、管理者権限が必要です。
+   >**[!UICONTROL ツール]**&#x200B;メニューにアクセスするには、管理者権限が必要です。
 
    ![chlimage_1-435](/help/assets/dynamic-media/assets/chlimage_1-435.png)
 
    >[!NOTE]
    >
-   [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) からの&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**、および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;に関する複数のワークフロー設定があるので、エラーメッセージが最終的に記録されるまでには時間がかかる可能性があります。例えば、次の設定です。
+   >[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) からの&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**、および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;に関する複数のワークフロー設定があるので、エラーメッセージが最終的に記録されるまでには時間がかかる可能性があります。例えば、次の設定です。
    >
-   * Apache Sling ジョブキューの設定
-   * Adobe Granite ワークフロー外部プロセスジョブハンドラー
-   * Granite ワークフロータイムアウトキュー
+   >* Apache Sling ジョブキューの設定
+   >* Adobe Granite ワークフロー外部プロセスジョブハンドラー
+   >* Granite ワークフロータイムアウトキュー
    >
-   これらの設定の&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**&#x200B;および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;プロパティは調整できます。
+   >これらの設定の&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**&#x200B;および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;プロパティは調整できます。
 
 1. 完了したワークフローについては、**[!UICONTROL ツール]**／**[!UICONTROL ワークフロー]**／**[!UICONTROL アーカイブ]**&#x200B;からワークフローアーカイブを表示します。**[!UICONTROL ワークフローアーカイブ]**&#x200B;に、完了したすべてのワークフローアクティビティが表示されます。
 
    >[!NOTE]
    >
-   **[!UICONTROL ツール]**&#x200B;メニューにアクセスするには、管理者権限が必要です。
+   >**[!UICONTROL ツール]**&#x200B;メニューにアクセスするには、管理者権限が必要です。
 
    ![chlimage_1-436](/help/assets/dynamic-media/assets/chlimage_1-436.png)
 
@@ -603,7 +603,7 @@ For YouTube publishing jobs, do the following:
 
 >[!NOTE]
 >
-MXF ビデオ形式は、ビデオアセットの注釈では、まだサポートされていません。
+>MXF ビデオ形式は、ビデオアセットの注釈では、まだサポートされていません。
 
 1. [!DNL Assets] コンソールから、アセットカードの「**[!UICONTROL 編集]**」を選択して、アセット詳細ページを表示します。
 1. ビデオを再生するには、「**[!UICONTROL プレビュー]**」をクリックします。
@@ -643,5 +643,5 @@ MXF ビデオ形式は、ビデオアセットの注釈では、まだサポー�
 
 >[!MORELIKETHIS]
 >
-* [Dynamic Media ビデオドキュメント。](/help/assets/dynamic-media/video.md)
-* [処理プロファイルの使用、タイプ、設定について詳しく知る](/help/assets/asset-microservices-configure-and-use.md)。
+>* [Dynamic Media ビデオドキュメント。](/help/assets/dynamic-media/video.md)
+>* [処理プロファイルの使用、タイプ、設定について詳しく知る](/help/assets/asset-microservices-configure-and-use.md)。

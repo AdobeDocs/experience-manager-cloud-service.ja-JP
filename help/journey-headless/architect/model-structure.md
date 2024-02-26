@@ -2,8 +2,8 @@
 title: AEM でのコンテンツフラグメントモデルの作成について
 description: コンテンツフラグメントモデルを使用したヘッドレス CMS のコンテンツモデリングの概念と仕組みについて説明します。
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 100%
 
@@ -108,9 +108,9 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## その他のリソース {#additional-resources}
 
-* [オーサリングに関する概念](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [オーサリングに関する概念](/help/sites-cloud/authoring/author-publish.md)
 
-* [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md) - このページは主に **Sites** コンソールに基づいていますが、ほとんどの機能は&#x200B;**一般**&#x200B;コンソールでの&#x200B;**コンテンツフラグメントモデル**&#x200B;への移動やアクションの実行にも関連しています。
+* [基本操作](/help/sites-cloud/authoring/basic-handling.md) - このページは主に **Sites** コンソールに基づいていますが、ほとんどの機能は&#x200B;**一般**&#x200B;コンソールでの&#x200B;**コンテンツフラグメントモデル**&#x200B;への移動やアクションの実行にも関連しています。
 
 * [コンテンツフラグメントの使用方法](/help/sites-cloud/administering/content-fragments/overview.md)
 

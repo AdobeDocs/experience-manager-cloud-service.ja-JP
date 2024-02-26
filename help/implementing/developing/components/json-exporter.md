@@ -2,8 +2,8 @@
 title: コンテンツサービス用の JSON エクスポーター
 description: AEM コンテンツサービスは、web ページだけに焦点を置かずに AEM のコンテンツの記述と配信を一般化するように設計されています。AEM コンテンツサービスにより、あらゆるクライアントで使用できる標準化された方法で、従来の AEM web ページとは異なるチャネルにコンテンツを配信できます。
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 100%
 
@@ -78,5 +78,5 @@ AEM 内では、セレクター `model` と `.json` 拡張機能を使用して�
 
 * [コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)
 * [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-* [コンテンツフラグメントを使用したオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+* [コンテンツフラグメントを使用したオーサリング](/help/sites-cloud/authoring/fragments/content-fragments.md)
 * [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)および[コンテンツフラグメントコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ja)

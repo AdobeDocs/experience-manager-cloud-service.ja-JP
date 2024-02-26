@@ -2,8 +2,8 @@
 title: Adobe Target へのエクスペリエンスフラグメントの書き出し
 description: エクスペリエンスフラグメントを Adobe Target に書き出し、エクスペリエンスをテストしてパーソナライズする方法について説明します。
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 >* AEM エクスペリエンスフラグメントは、Adobe Target のデフォルトのワークスペースに書き出されます。
 >* [Adobe Target との統合](/help/sites-cloud/integrating/integrating-adobe-target.md)で説明されている手順に従って、AEM と Adobe Target を統合する必要があります。
 
-Adobe Experience Manager as a Cloud Service（AEM）で作成された[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)を Adobe Target（Target）に書き出すことができます。書き出したエクスペリエンスフラグメントは、Target アクティビティのオファーとして使用し、幅広くエクスペリエンスをテストおよびパーソナライズできます。
+Adobe Experience Manager as a Cloud Service（AEM）で作成された[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fragments/content-fragments.md)を Adobe Target（Target）に書き出すことができます。書き出したエクスペリエンスフラグメントは、Target アクティビティのオファーとして使用し、幅広くエクスペリエンスをテストおよびパーソナライズできます。
 
 エクスペリエンスフラグメントを Adobe Target に書き出す際に使用できるオプションは 3 つあります。
 
@@ -287,7 +287,7 @@ After you create a Target framework in AEM, associate your web pages with the fr
 When you associate a page with the framework, the child pages inherit the association.
 
 1. In the **Sites** console, navigate to the site that you want to configure.
-1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
+1. Using either [quick actions](/help/sites-cloud/authoring/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
 1. Select **Edit**.
 1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
@@ -301,7 +301,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
 1. Select **Done**.
-1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
+1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md).)
 
    >[!NOTE]
    >
@@ -343,7 +343,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >書き出しについての[様々な詳細](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#details-of-your-experience-fragment)は、コンソールの&#x200B;**リスト表示**&#x200B;と&#x200B;**プロパティ**&#x200B;で参照できます。
+   >書き出しについての[様々な詳細](/help/sites-cloud/authoring/fragments/content-fragments.md#details-of-your-experience-fragment)は、コンソールの&#x200B;**リスト表示**&#x200B;と&#x200B;**プロパティ**&#x200B;で参照できます。
 
    >[!NOTE]
    >
@@ -351,7 +351,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 >[!NOTE]
 >
->あるいは、[ページ情報](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)メニューの同等のコマンドを使用して、ページエディターから書き出しを実行することもできます。
+>あるいは、[ページ情報](/help/sites-cloud/authoring/page-editor/introduction.md#page-information)メニューの同等のコマンドを使用して、ページエディターから書き出しを実行することもできます。
 
 ## Adobe Target でのエクスペリエンスフラグメントの使用 {#using-your-experience-fragments-in-adobe-target}
 

@@ -2,8 +2,8 @@
 title: ページへのワークフローの適用
 description: オーサリングでは、ワークフローを呼び出して、ページで実行できます。複数のワークフローを適用することもできます。
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 100%
 
@@ -71,7 +71,7 @@ ht-degree: 100%
 
 **タイムライン**&#x200B;から、選択したリソースに適用されるワークフローを開始できます。
 
-1. [リソースを選択](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)し、[タイムライン](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)を開きます（またはタイムラインを開いてからリソースを選択します）。
+1. [リソースを選択](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)し、[タイムライン](/help/sites-cloud/authoring/basic-handling.md#timeline)を開きます（またはタイムラインを開いてからリソースを選択します）。
 1. コメントフィールドの横にある矢印を使用すると、「**ワークフローを開始**」が表示されます。
 
    ![タイムラインからのワークフローの作成](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
@@ -117,7 +117,7 @@ ht-degree: 100%
 
 1. **スコープ**&#x200B;ステップで、以下のものを選択できます。
 
-   * 「**コンテンツを追加**」で[パスブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)を開き、追加リソースを選択します。ブラウザーでは、「**選択**」を選択して、コンテンツをワークフローインスタンスに追加します。
+   * 「**コンテンツを追加**」で[パスブラウザー](/help/sites-cloud/authoring/path-selection.md)を開き、追加リソースを選択します。ブラウザーでは、「**選択**」を選択して、コンテンツをワークフローインスタンスに追加します。
 
    * 追加のアクションを表示するための既存のリソース
 

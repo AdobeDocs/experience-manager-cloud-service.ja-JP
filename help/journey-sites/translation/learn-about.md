@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -47,9 +47,9 @@ AEM を使用すると、コンテンツの作成と管理が簡単になるだ�
 1. 翻訳済みコンテンツをレビューして公開します。
 
 
-さらに、ジャーニーでは、AEMによるコンテンツの翻訳方法に関する詳細を段階的に学びます。
+さらに、このジャーニーでは、AEM によるコンテンツの翻訳方法の詳細を順を追って説明します。
 
-## 次のステップ {#what-is-next}
+## 次の手順 {#what-is-next}
 
 AEM Sites 翻訳ジャーニーを開始していただきありがとうございます。ドキュメントを読んだので、次を理解しているはずです。
 
@@ -62,5 +62,5 @@ AEM Sites 翻訳ジャーニーを開始していただきありがとうござ�
 
 [AEM Sites 翻訳の基本を学ぶ](getting-started.md)のドキュメントを確認して、サイト翻訳ジャーニーの次のステップに進むことをお勧めします。ジャーニーの続行に必須ではありませんが、この記事で取り上げたいくつかの概念について詳しく説明している追加のオプションリソースを以下に挙げておきます。
 
-* [ページのオーサリングのクイックスタートガイド](/help/sites-cloud/authoring/getting-started/quick-start.md) - AEM Sites を使用してコンテンツを作成するうえで最も重要な概念の概要です。
+* [ページのオーサリングのクイックスタートガイド](/help/sites-cloud/authoring/quick-start.md) - AEM Sites を使用してコンテンツを作成するうえで最も重要な概念の概要です。
 * [MSM と翻訳](/help/sites-cloud/administering/msm-and-translation.md) - AEM のマルチサイトマネージャーの詳細と翻訳ツールとの連携方法について説明します。

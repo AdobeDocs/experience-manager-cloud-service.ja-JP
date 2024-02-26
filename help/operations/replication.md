@@ -2,10 +2,10 @@
 title: レプリケーション
 description: AEM as a Cloud Service での配布とレプリケーションのトラブルシューティングについて説明します。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 3249f17e6ecb341880597577e1f2a48653a7a88a
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1312'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -31,11 +31,11 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
 この機能を使用すると、「公開を管理」のアプローチで可能な追加オプションを使用せずに、選択したページを直ちに公開できます。
 
-詳しくは、「[公開を管理](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication)」を参照してください。
+詳しくは、「[公開を管理](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)」を参照してください。
 
 ### オンタイムとオフタイム - トリガー設定 {#on-and-off-times-trigger-configuration}
 
-**オンタイム**&#x200B;と&#x200B;**オフタイム**&#x200B;の追加設定を[ページのプロパティの「基本」タブ](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)で行えます。
+**オンタイム**&#x200B;と&#x200B;**オフタイム**&#x200B;の追加設定を[ページのプロパティの「基本」タブ](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)で行えます。
 
 この機能の自動レプリケーションを実現するには、[OSGi 設定](/help/implementing/deploying/configuring-osgi.md)の「**オン／オフトリガー設定**」で「**自動レプリケーション**」を有効にします。
 
@@ -47,7 +47,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
 「後で公開する」オプションの対象にフォルダーの子を含めると、コンテンツツリーを公開ワークフローが呼び出されます（この記事で説明）。
 
-「公開を管理」について詳しくは、 [公開の基本に関するドキュメント](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication) を参照してください。
+「公開を管理」について詳しくは、 [公開の基本に関するドキュメント](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) を参照してください。
 
 ### コンテンツツリーの公開ワークフロー {#publish-content-tree-workflow}
 
@@ -57,13 +57,13 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
 元のモデルを呼び出さないでください。その代わりに、最初にモデルをコピーして、そのコピーを呼び出してください。
 
-すべてのワークフローと同様に、API を使用して呼び出すこともできます。詳しくは、[プログラムによるワークフローの操作](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem)を参照してください。
+すべてのワークフローと同様に、API を使用して呼び出すこともできます。詳しくは、[プログラムによるワークフローの操作](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=ja#extending-aem)を参照してください。
 
 または、`Publish Content Tree` プロセスステップを使用するワークフローモデルを作成することもできます。
 
 1. AEM as a Cloud Service のホームページから、**ツール／ワークフロー／モデル**&#x200B;に移動します。
 1. ワークフローモデルページで、画面の右上隅にある「**作成**」を押します。
-1. モデルにタイトルと名前を追加します。詳しくは、 [ワークフローモデルの作成](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ja#extending-aem).
+1. モデルにタイトルと名前を追加します。詳しくは、[ワークフローモデルの作成](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ja#extending-aem)を参照してください。
 1. 作成したモデルをリストから選択し、「**編集**」を押します。
 1. 次のウィンドウで、「プロセスステップ」を現在のモデルフローにドラッグ＆ドロップします。
 

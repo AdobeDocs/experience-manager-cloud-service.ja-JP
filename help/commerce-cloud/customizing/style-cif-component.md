@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
-source-wordcount: '2535'
-ht-degree: 99%
+source-wordcount: '2342'
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 99%
    $ mvn clean install -PautoInstallPackage,cloud
    ```
 
-1. 必要な OSGi 設定を追加して、AEMインスタンスをAdobe Commerceインスタンスに接続したり、作成したプロジェクトに設定を追加したりできます。
+1. 必要な OSGi 設定を追加すると、AEM インスタンスを Adobe Commerce インスタンスに接続したり、作成したプロジェクトに設定を追加したりできます。
 
 1. この時点で、Adobe Commerce インスタンスに接続されたストアフロントの作業用のバージョンが必要です。`US`／`Home` ページ（[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)）にアクセスします。
 
@@ -182,7 +182,7 @@ ht-degree: 99%
 
    **clientlib-cif** - [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)から必要な依存関係を単純に埋め込んだ空のクライアントライブラリ。カテゴリは `venia.cif` です。
 
-   **clientlib-grid** - AEM レスポンシブグリッド機能を有効にする CSS が含まれます。AEM グリッドを使用すると、AEM エディターで[レイアウトモード](/help/sites-cloud/authoring/features/responsive-layout.md)が有効になり、コンテンツ作成者はコンポーネントのサイズを変更できます。カテゴリは `venia.grid` で、 `venia.base` ライブラリに埋め込まれます。
+   **clientlib-grid** - AEM レスポンシブグリッド機能を有効にする CSS が含まれます。AEM グリッドを使用すると、AEM エディターで[レイアウトモード](/help/sites-cloud/authoring/page-editor/responsive-layout.md)が有効になり、コンテンツ作成者はコンポーネントのサイズを変更できます。カテゴリは `venia.grid` で、 `venia.base` ライブラリに埋め込まれます。
 
 1. `ui.apps/src/main/content/jcr_root/apps/venia/components/page` の `customheaderlibs.html` ファイルと `customfooterlibs.html` ファイルを検査します。
 
@@ -215,7 +215,7 @@ ht-degree: 99%
 
    ![製品ティーザー（ピンクの枠線付き）](../assets/style-cif-component/pink-border-product-teaser.png)
 
-   以前に作成した CSS ルールの変更に基づき、製品ティーザーの枠線が明るいピンク色になりました。
+   先ほど作成した CSS ルールの変更に基づき、製品ティーザーの枠線が明るいピンク色になりました。
 
 ## ページ上でのクライアントライブラリの検証 {#verify-client-libraries}
 
@@ -227,7 +227,7 @@ ht-degree: 99%
 
    ![公開済みとして表示](../assets/style-cif-component/view-as-published.png)
 
-   AEM オーサーの JavaScript を読み込むことなく、公開されたサイトに表示されるようにこのページが開きます。URL に `?wcmmode=disabled` クエリパラメーターが追加されていることに注意してください。CSS と JavaScript を開発する場合は、このパラメーターを使用して、AEM オーサーからのコンテンツを含めずに、ページを簡略化することをお勧めします。
+   AEM オーサーの JavaScript を読み込むことなく、公開されたサイトに表示されるようにこのページが開きます。URL に `?wcmmode=disabled` クエリパラメーターが追加されていることに注意してください。CSS や JavaScript を開発する場合は、このパラメーターを使用して、AEM オーサーからのコンテンツを含めずに、ページを簡略化することをお勧めします。
 
 1. ページソースを表示し、次のクライアントライブラリをいくつか識別できるようにします。
 
@@ -344,7 +344,7 @@ webpack-dev-server は、AEM のローカルインスタンスから画像と一
 
 IDE と生成されたプロジェクトに戻ります。
 
-1. **ui.frontend** モジュールで、`ui.frontend/src/main/styles/commerce/_productteaser.scss` の `_productteaser.scss` ファイルを再度開きます。
+1. **ui.frontend** モジュールで、`_productteaser.scss` ファイルを再度開きます（`ui.frontend/src/main/styles/commerce/_productteaser.scss`）。
 
 1. 製品ティーザーの枠線に次の変更を加えます。
 
@@ -437,7 +437,7 @@ IDE と生成されたプロジェクトに戻ります。
 
    ただし、変更は AEM にまだデプロイされていません。ソリューションファイルは、[こちら](../assets/style-cif-component/_productteaser.scss)からダウンロードできます。
 
-1. コマンドラインターミナルから、Maven スキルを使用して AEM にアップデートを展開します。
+1. コマンドラインターミナルから、Maven スキルを使用して AEM にアップデートをデプロイします。
 
    ```shell
    $ cd aem-cif-guides-venia/
@@ -455,7 +455,7 @@ IDE と生成されたプロジェクトに戻ります。
 
    ![製品ティーザースタイルのアップデート](../assets/style-cif-component/product-teaser-new-style.png)
 
-1. 製品ティーザーを追加してテストします。複数のティーザーを一列に表示するには、レイアウトモードを使用して、コンポーネントの幅とオフセットを変更します。
+1. 製品ティーザーを追加してテストします。複数のティーザーを一列に表示するためには、レイアウトモードを使用して、コンポーネントの幅とオフセットを変更します。
 
    ![複数の製品ティーザー](../assets/style-cif-component/multiple-teasers-final.png)
 
@@ -473,7 +473,7 @@ IDE と生成されたプロジェクトに戻ります。
 
 ## ボーナスチャレンジ {#bonus-challenge}
 
-[AEM スタイルシステム](/help/sites-cloud/authoring/features/style-system.md)を使用して、コンテンツ作成者がオン／オフを切り替えることのできる 2 つのスタイルを作成します。[スタイルシステムを使用した開発](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=ja)では、このタスクを行う方法に関する詳細な手順と情報が説明されています。
+[AEM スタイルシステム](/help/sites-cloud/authoring/page-editor/style-system.md)を使用して、コンテンツ作成者がオン／オフを切り替えることのできる 2 つのスタイルを作成します。[スタイルシステムを使用した開発](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=ja)では、このタスクを行う方法に関する詳細な手順と情報が説明されています。
 
 ![ボーナスチャレンジ - スタイルシステム](../assets/style-cif-component/bonus-challenge.png)
 

@@ -2,8 +2,8 @@
 title: ページテンプレート
 description: ページテンプレートは、新しいページのベースとして使用するページを作成する際に使用します
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+workflow-type: tm+mt
 source-wordcount: '3267'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 ページを作成する場合は、テンプレートを選択する必要があります。ページテンプレートは、新しいページのベースとして使用されます。テンプレートによって、結果ページの構造、すべての初期コンテンツ、使用可能なコンポーネント（設計プロパティ）が定義されます。これには、次のようないくつかの利点があります。
 
-* ページテンプレートによって、専門的な作成者が[テンプレートを作成および編集](/help/sites-cloud/authoring/features/templates.md)できます。
+* ページテンプレートによって、専門的な作成者が[テンプレートを作成および編集](/help/sites-cloud/authoring/sites-console/templates.md)できます。
    * このような専門的な作成者は、**テンプレート作成者**&#x200B;と呼ばれます。
    * テンプレート作成者は、`template-authors` グループのメンバーである必要があります。
 * ページテンプレートから作成されたすべてのページとページテンプレートとの動的な接続が保持されます。これにより、テンプレートに対するあらゆる変更がページに反映されます。
@@ -30,7 +30,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->このドキュメントでは、テンプレートの作成と編集について既に理解していることを前提としています。オーサリングに関するドキュメント[ページテンプレートの作成](/help/sites-cloud/authoring/features/templates.md)を参照してください。ここでは、テンプレート作成者に公開されている編集可能テンプレートの機能について詳しく説明されています。
+>このドキュメントでは、テンプレートの作成と編集について既に理解していることを前提としています。オーサリングに関するドキュメント[ページテンプレートの作成](/help/sites-cloud/authoring/sites-console/templates.md)を参照してください。ここでは、テンプレート作成者に公開されている編集可能テンプレートの機能について詳しく説明されています。
 
 >[!TIP]
 >
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 ## 新しいテンプレートの作成 {#creating-a-new-template}
 
-ページテンプレートの作成は、主にテンプレート作成者が、[テンプレートコンソールおよびテンプレートエディター](/help/sites-cloud/authoring/features/templates.md)を使用して行います。ここでは、そのプロセスの概要を示し、技術的なレベルでどのような処理が行われるかを説明します。
+ページテンプレートの作成は、主にテンプレート作成者が、[テンプレートコンソールおよびテンプレートエディター](/help/sites-cloud/authoring/sites-console/templates.md)を使用して行います。ここでは、そのプロセスの概要を示し、技術的なレベルでどのような処理が行われるかを説明します。
 
 編集可能テンプレートを作成する場合は、次の操作を実行します。
 
@@ -58,7 +58,7 @@ ht-degree: 100%
    * ページ作成者がコンポーネントを追加または削除するには、テンプレートに段落システムを追加する必要があります。
    * コンポーネントのロックを解除（再度ロックできます）して、初期コンテンツを定義できます。
 
-   テンプレート作成者が構造を定義する方法について詳しくは、[ページテンプレートの作成](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author)を参照してください。
+   テンプレート作成者が構造を定義する方法について詳しくは、[ページテンプレートの作成](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-structure-template-author)を参照してください。
 
    構造の技術的な詳細については、このドキュメントの[構造](#structure)を参照してください。
 
@@ -70,7 +70,7 @@ ht-degree: 100%
 
    * これらのポリシーは、テンプレート（および、そのテンプレートを使用して作成されるページ）に適用されます。
 
-   テンプレート作成者がポリシーを定義する方法について詳しくは、[ページテンプレートの作成](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author)を参照してください。
+   テンプレート作成者がポリシーを定義する方法について詳しくは、[ページテンプレートの作成](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-structure-template-author)を参照してください。
 
    ポリシーの技術的な詳細については、このドキュメントの[コンテンツポリシー](#content-policies)を参照してください。
 
@@ -79,7 +79,7 @@ ht-degree: 100%
    * 初期コンテンツは、テンプレートに基づいてページが最初に作成される際に表示されるコンテンツを定義します。
    * その後、ページ作成者が初期コンテンツを編集できます。
 
-   テンプレート作成者が構造を定義する方法について詳しくは、[ページテンプレートの作成](/help/sites-cloud/authoring/features/templates.md#editing-a-template-initial-content-author)を参照してください。
+   テンプレート作成者が構造を定義する方法について詳しくは、[ページテンプレートの作成](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-initial-content-author)を参照してください。
 
    初期コンテンツの技術的な詳細については、このドキュメントの[初期コンテンツ](#initial-content)を参照してください。
 
@@ -88,7 +88,7 @@ ht-degree: 100%
    * デバイスの形式に合わせてテンプレートのレイアウトを定義できます。
    * テンプレートがページオーサリングと同じように動作するには、レスポンシブレイアウトを使用します。
 
-   テンプレート作成者がテンプレートレイアウトを定義する方法について詳しくは、[ページテンプレートの作成](/help/sites-cloud/authoring/features/templates.md#editing-a-template-layout-template-author)を参照してください。
+   テンプレート作成者がテンプレートレイアウトを定義する方法について詳しくは、[ページテンプレートの作成](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-layout-template-author)を参照してください。
 
    テンプレートレイアウトの技術的な詳細については、このドキュメントの[レイアウト](#layout)を参照してください。
 
@@ -97,7 +97,7 @@ ht-degree: 100%
    * テンプレートを有効または無効にして、ページ作成者が使用できるようにしたり、使用できなくしたりできます。
    * テンプレートは、特定のページブランチに対して使用可能または使用不可にすることができます。
 
-   テンプレート作成者がテンプレートを有効にする方法について詳しくは、[ページテンプレートの作成](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author)を参照してください。
+   テンプレート作成者がテンプレートを有効にする方法について詳しくは、[ページテンプレートの作成](/help/sites-cloud/authoring/sites-console/templates.md#enabling-and-allowing-a-template-template-author)を参照してください。
 
    テンプレートの有効化の技術的な詳細については、このドキュメントの[使用するテンプレートの有効化と許可](#enabling-and-allowing-a-template-for-use)を参照してください。
 
@@ -106,7 +106,7 @@ ht-degree: 100%
    * テンプレートを使用してページを作成した場合、静的テンプレートと編集可能テンプレートの見た目に違いはなく、どちらが使用されたかはわかりません。
    * ページの作成者にとって、この処理は透過的です。
 
-   ページ作成者がテンプレートを使用してページを作成する方法について詳しくは、[ページの作成と整理](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates)を参照してください。
+   ページ作成者がテンプレートを使用してページを作成する方法について詳しくは、[ページの作成と整理](/help/sites-cloud/authoring/sites-console/organizing-pages.md#templates)を参照してください。
 
    編集可能テンプレートを使用したページ作成の技術的な詳細については、このドキュメントの[作成されるコンテンツページ](#resultant-content-pages)を参照してください。
 
@@ -355,7 +355,7 @@ When creating an editable template, the value is copied from the template type t
 
 他のテンプレートの基盤となるテンプレートを作成した場合、このテンプレートをテンプレートタイプとしてコピーできます。
 
-1. [こちらのドキュメント](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author)で説明されているページテンプレートと同じようにテンプレートを作成します。これは、テンプレートタイプの基盤となります。
+1. [こちらのドキュメント](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author)で説明されているページテンプレートと同じようにテンプレートを作成します。これは、テンプレートタイプの基盤となります。
 1. CRXDE Lite を使用して、[テンプレートフォルダー](#template-folders)の `templates` ノードから `template-types` ノードに、作成したテンプレートをコピーします。
 1. このテンプレートを[テンプレートフォルダー](#template-folders)の下の `templates` ノードから削除します。
 1. `template-types` ノードの下にあるテンプレートのコピーで、すべての `jcr:content` ノードから `cq:template` および `cq:templateType` プロパティをすべて削除します。
@@ -453,7 +453,7 @@ GitHub のコード
 
 ### レイアウト {#layout}
 
-[テンプレートを編集する際に、レイアウトを定義できます](/help/sites-cloud/authoring/features/templates.md)。これには、[標準のレスポンシブレイアウト](/help/sites-cloud/authoring/features/responsive-layout.md)が使用されます。
+[テンプレートを編集する際に、レイアウトを定義できます](/help/sites-cloud/authoring/sites-console/templates.md)。これには、[標準のレスポンシブレイアウト](/help/sites-cloud/authoring/page-editor/responsive-layout.md)が使用されます。
 
 <!-- that can also be [configured](/help/sites-administering/configuring-responsive-layout.md). -->
 
@@ -484,7 +484,7 @@ GitHub のコード
 
    テンプレートを使用する前に、次のいずれかの方法で有効にする必要があります。
 
-   * **テンプレート**&#x200B;コンソールから[テンプレートを有効に](/help/sites-cloud/authoring/features/templates.md)します。
+   * **テンプレート**&#x200B;コンソールから[テンプレートを有効に](/help/sites-cloud/authoring/sites-console/templates.md)します。
 
    * `jcr:content` ノードの status プロパティを設定する。
 
@@ -499,7 +499,7 @@ GitHub のコード
 
 1. **許可されたテンプレート**
 
-   * [適切なページまたはサブブランチのルートページの&#x200B;**ページプロパティ**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author)&#x200B;に対して許可されたテンプレートのパスを定義します。
+   * [適切なページまたはサブブランチのルートページの&#x200B;**ページプロパティ**](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author)&#x200B;に対して許可されたテンプレートのパスを定義します。
    * プロパティを設定します。
      `cq:allowedTemplates`
 必要なブランチの `jcr:content` ノードに設定します。

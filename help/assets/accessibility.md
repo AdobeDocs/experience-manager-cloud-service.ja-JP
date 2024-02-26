@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1943'
-ht-degree: 99%
+source-wordcount: '1916'
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 
 ### [!DNL Assets] のキーボードショートカット  {#keyboard-shortcuts}
 
-[!DNL Assets] の下記のアクションは、一覧に示したキーボードショートカットで動作します。[!DNL Experience Manager] コンソールに適用されるほとんどのキーボードショートカットは、[!DNL Assets] にも適用されます。詳しくは、[コンソールのキーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)を参照してください。キーボードショートカットを[有効または無効にする方法](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)を参照してください。
+[!DNL Assets] の下記のアクションは、一覧に示したキーボードショートカットで動作します。[!DNL Experience Manager] コンソールに適用されるほとんどのキーボードショートカットは、[!DNL Assets] にも適用されます。詳しくは、[コンソールのキーボードショートカット](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)を参照してください。キーボードショートカットを[有効または無効にする方法](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)を参照してください。
 
 | ユーザーインターフェイスまたはシナリオ | キーボードショートカット | アクション |
 |---|---|---|
@@ -171,7 +171,7 @@ CRUD 操作、アセットのダウンロード、メタデータの追加など
 
 * アセットの[!UICONTROL プロパティ]ページの「[!UICONTROL 保存して閉じる]」オプションが、キーボードを使用してアクセスできるようになりました。
 * アセットの[!UICONTROL プロパティ]の「[!UICONTROL 基本]」タブで選択したタグを削除するオプションをスクリーンリーダーが読み上げます。
-* ユーザーは、キーボードと共に日付選択ポップアップダイアログを使用できます。 日付選択ユーザーインターフェイス要素は、オン時刻とオフ時刻の設定や日付の選択に使用します。
+* ユーザーは、日付選択ポップアップダイアログでキーボードを使用できます。日付選択ユーザーインターフェイス要素は、オン時刻とオフ時刻の設定や日付の選択に使用します。
 * キーボードを使用したドラッグ機能は、スクリーンリーダーの参照モードの[!UICONTROL メタデータスキーマエディター]で正しく機能します。
 * キーボードを使用して、フォルダーの[!UICONTROL プロパティ]の「[!UICONTROL 権限]」タブにある「[!UICONTROL 閉じられたユーザーグループ]」の下の「ユーザーまたはグループを追加」フィールドにフォーカスを移動できます。
 

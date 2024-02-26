@@ -2,7 +2,7 @@
 title: コンテンツフラグメントのメタデータとタグの定義について
 description: コンテンツフラグメントのメタデータとタグの定義について
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 92%
@@ -38,6 +38,6 @@ ht-degree: 92%
 
 * [メタデータ - フラグメントのプロパティ](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags)
 
-* [タグの使用](/help/sites-cloud/authoring/features/tags.md)
+* [タグの使用](/help/sites-cloud/authoring/sites-console/tags.md)
 
 * [コンテンツフラグメントモデル - アセットフォルダーでのコンテンツフラグメントモデルの許可](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)

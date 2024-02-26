@@ -4,8 +4,8 @@ description: AEM を Microsoft Translator に接続して翻訳ワークフロ�
 feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 100%
 
@@ -34,7 +34,7 @@ AEM ページのコンテンツまたはアセットの翻訳に Microsoft Trans
 
 Microsoft Translator 設定を作成するには、次の手順に従います。
 
-1. [ナビゲーションパネル](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps)で、**ツール**／**クラウドサービス**／**翻訳クラウドサービス**&#x200B;を選択します。
+1. [ナビゲーションパネル](/help/sites-cloud/authoring/basic-handling.md#first-steps)で、**ツール**／**クラウドサービス**／**翻訳クラウドサービス**&#x200B;を選択します。
 1. 設定を作成する場所に移動します。通常は、これはサイトのルートにあります。また、グローバルなデフォルト設定にすることもできます。
 1. 「**作成**」ボタンを選択します。
 1. 設定を定義します。
@@ -56,7 +56,7 @@ Microsoft Translator 設定を作成するには、次の手順に従います�
 
 Microsoft Translation 設定ページには、実稼動システムに適したアカウントのサブスクリプションを取得する場合に役立つ、Microsoft web サイトへのリンクが表示されます。
 
-1. [ナビゲーションパネル](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps)で、**ツール**／**クラウドサービス**／**翻訳クラウドサービス**&#x200B;を選択します。
+1. [ナビゲーションパネル](/help/sites-cloud/authoring/basic-handling.md#first-steps)で、**ツール**／**クラウドサービス**／**翻訳クラウドサービス**&#x200B;を選択します。
 1. 既存の Microsoft Translator 設定を選択します。
 1. 「**編集**」を選択します。
 1. 「**設定を編集**」ウィンドウで **サブスクリプションをアップグレード**&#x200B;を選択します。サービスの詳細を表示する Microsoft Web ページが開きます。
@@ -65,13 +65,13 @@ Microsoft Translation 設定ページには、実稼動システムに適した�
 
 Microsoft Translation 設定ページには、Microsoft Translator エンジンをカスタマイズする場合に役立つ、Microsoft Web サイトへのリンクが表示されます
 
-1. [ナビゲーションパネル](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps)で、**ツール**／**クラウドサービス**／**翻訳クラウドサービス**&#x200B;を選択します。
+1. [ナビゲーションパネル](/help/sites-cloud/authoring/basic-handling.md#first-steps)で、**ツール**／**クラウドサービス**／**翻訳クラウドサービス**&#x200B;を選択します。
 1. 既存の Microsoft Translator 設定を選択します。
 1. 「**編集**」を選択します。
 1. 「**設定を編集**」ウィンドウで「**トランスレーターをカスタマイズ**」を選択します。表示された Microsoft の web ページを使用して、サービスをカスタマイズします。
 
 ## Translator サービス設定のアクティベート {#activating-the-translator-service-configurations}
 
-パブリッシュインスタンスでレプリケートされる翻訳コンテンツをサポートするには、クラウドサービス設定をアクティベートする必要があります。[ツリーの公開](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-and-unpublishing-a-tree)方法を使用して、Microsoft Translator 設定を格納するリポジトリーノードをアクティベートします。このノードは以下に示す親ノードの下にあります。
+パブリッシュインスタンスでレプリケートされる翻訳コンテンツをサポートするには、クラウドサービス設定をアクティベートする必要があります。[ツリーの公開](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-and-unpublishing-a-tree)方法を使用して、Microsoft Translator 設定を格納するリポジトリーノードをアクティベートします。このノードは以下に示す親ノードの下にあります。
 
 * `/libs/settings/cloudconfigs/translation/msft-translation`

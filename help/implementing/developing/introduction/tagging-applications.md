@@ -2,10 +2,10 @@
 title: AEM アプリケーションへのタグ付けの構築
 description: カスタム AEM アプリケーション内のタグまたは拡張タグをプログラムで操作します
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 95%
+source-wordcount: '717'
+ht-degree: 100%
 
 ---
 
@@ -21,14 +21,14 @@ ht-degree: 95%
 
 タグ付けに関する関連情報については、次を参照してください。
 
-* コンテンツ作成者としてのタグ付けについて詳しくは、「[タグの使用](/help/sites-cloud/authoring/features/tags.md)」を参照してください。
+* コンテンツ作成者としてのタグ付けについて詳しくは、「[タグの使用](/help/sites-cloud/authoring/sites-console/tags.md)」を参照してください。
 * タグの作成と管理や、タグが適用されているコンテンツについての管理者の観点については、タグの管理を参照してください。
 
 ## タグ付け API の概要 {#overview-of-the-tagging-api}
 
 AEM の[タグ付けフレームワーク](tagging-framework.md)の実装により、JCR API を使用してタグおよびタグコンテンツを管理できます。`TagManager` は、`cq:tags` 文字列配列プロパティに値として入力されたタグが重複しないように、存在しないタグを指している `TagID` を削除し、移動または結合されたタグの `TagID` を更新します。`TagManager` は、間違った変更を元に戻す JCR 監視リスナーを使用します。メインクラスは [com.day.cq.tagging](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html) パッケージ内にあります。
 
-* `JcrTagManagerFactory` `TagManager` の JCR ベースの実装を返します。タグ付け API のリファレンス実装です。
+* `JcrTagManagerFactory``TagManager` の JCR ベースの実装を返します。タグ付け API のリファレンス実装です。
 * `TagManager` - パスと名前を使用して、タグを解決して作成できます。
 * `Tag` - タグオブジェクトを定義します。
 
@@ -51,7 +51,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### Tag オブジェクトの取得 {#retrieving-a-tag-object}
 
-A `Tag` ～を通じて取り出すことができる `TagManager`（既存のタグを解決するか作成する）:
+`Tag` は、既存のタグを解決するか新しいタグを作成することにより、`TagManager` を介して取得できます。
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags
@@ -168,4 +168,4 @@ AEM では、言語はページ言語またはユーザー言語のどちらか�
 
 >[!NOTE]
 >
->新しい言語は、AEMで認識される言語の 1 つである必要があります。 つまり、以下のノードとして使用できる必要があります。 `/libs/wcm/core/resources/languages`.
+>新しい言語は、AEM で認識される言語のいずれかである必要があります。つまり、`/libs/wcm/core/resources/languages` の下のノードとして使用できる必要があります。

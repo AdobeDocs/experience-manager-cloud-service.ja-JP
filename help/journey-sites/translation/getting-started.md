@@ -5,8 +5,8 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ AEM コンテンツの翻訳を開始するには、いくつかの要件があ�
 
 >[!TIP]
 >
->AEM のような大規模 CMS を使い慣れていない場合は、先に進む前に[基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)のドキュメントを確認することをお勧めします。基本操作に関するドキュメントは、このジャーニーには含まれません。したがって、完了したらこのページに戻ります。
+>AEM のような大規模 CMS を使い慣れていない場合は、先に進む前に[基本操作](/help/sites-cloud/authoring/basic-handling.md)のドキュメントを確認することをお勧めします。基本操作に関するドキュメントは、このジャーニーには含まれません。したがって、完了したらこのページに戻ります。
 
 ### ツール {#tools}
 
@@ -207,7 +207,7 @@ AEM のコンテンツは、その構造によって決まります。AEM では
 
 [翻訳コネクタの設定](configure-connector.md)のドキュメントを確認して、翻訳ジャーニーの次のステップに進むことをお勧めします。ジャーニーに必須ではありませんが、この記事で取り上げたいくつかの概念について詳しく説明している追加のオプションリソースを以下に挙げます。
 
-* [AEM の基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md) - コンテンツの快適なナビゲーションのほか、検索などの重要なタスクを実行できるように、AEM UI の基本について説明します。
+* [AEM の基本操作](/help/sites-cloud/authoring/basic-handling.md) - コンテンツの快適なナビゲーションのほか、検索などの重要なタスクを実行できるように、AEM UI の基本について説明します。
 * [翻訳対象コンテンツの特定](/help/sites-cloud/administering/translation/rules.md) - 翻訳が必要なコンテンツを翻訳ルールで特定する方法について説明します。
 * [翻訳統合フレームワークの設定](/help/sites-cloud/administering/translation/integration-framework.md) - サードパーティの翻訳サービスと統合できるように翻訳統合フレームワークを設定する方法について説明します。
 * [翻訳プロジェクトの管理](/help/sites-cloud/administering/translation/managing-projects.md) - AEM で機械翻訳と人間による翻訳の両方のプロジェクトを作成および管理する方法について説明します。

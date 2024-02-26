@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 リリースのリリースノート。'
 description: 「[!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 のリリースノート」
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 87%
@@ -26,7 +26,7 @@ ht-degree: 87%
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-* 簡単な設定で、[プログレッシブ web アプリ（PWA）版のサイト](/help/sites-cloud/authoring/features/enable-pwa.md)がプロジェクトレベルで有効化できるようになりました。
+* 簡単な設定で、[プログレッシブ web アプリ（PWA）版のサイト](/help/sites-cloud/authoring/sites-console/enable-pwa.md)がプロジェクトレベルで有効化できるようになりました。
 * コンテンツフラグメントモデルの拡張 - 複数行テキストデータタイプを複数フィールドリストとして定義できるようになりました。
 * コンテンツフラグメントエディターの UX の強化 - パンくずリストにネストされた子フラグメントが表示され、公開、保存、保存および終了のアクションの表示が改善されました。
 

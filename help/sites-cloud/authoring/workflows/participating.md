@@ -2,8 +2,8 @@
 title: ワークフローへの参加
 description: ワークフローには通常、ページまたはアセットでユーザーがアクティビティを実行する必要があるステップが含まれています。
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 100%
 
@@ -24,11 +24,11 @@ ht-degree: 100%
 
 作業項目（**コンテンツを承認**&#x200B;など）が割り当てられると、様々なアラートや通知が表示されます。
 
-* [通知](/help/sites-cloud/authoring/getting-started/inbox.md)インジケーター（ツールバー）が増分されます。
+* [通知](/help/sites-cloud/authoring/inbox.md)インジケーター（ツールバー）が増分されます。
 
   ![通知ツールバー](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* 通知[インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)に項目がリストされます。
+* 通知[インボックス](/help/sites-cloud/authoring/inbox.md)に項目がリストされます。
 
   ![インボックス内の通知](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
@@ -72,7 +72,7 @@ ht-degree: 100%
 
 作業項目を完了するには、次の手順を実行します。
 
-1. **[AEM インボックスx](/help/sites-cloud/authoring/getting-started/inbox.md)**&#x200B;を開きます。
+1. **[AEM インボックスx](/help/sites-cloud/authoring/inbox.md)**&#x200B;を開きます。
 1. 処理を実行するワークフロー項目を選択します（サムネールを選択）。
 1. ツールバーの「**完了**」を選択します。
 1. **作業項目を完了**&#x200B;ダイアログボックスが開きます。ドロップダウンセレクターで「**次の手順**」を選択し、必要に応じて&#x200B;**コメント**&#x200B;を追加します。
@@ -82,7 +82,7 @@ ht-degree: 100%
 
 作業項目を完了するには、次の手順を実行します。
 
-1. [編集するページ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).を開きます。
+1. [編集するページ](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).を開きます。
 1. 上部のステータスバーの「**完了**」を選択します。
 1. **作業項目を完了**&#x200B;ダイアログが開きます。ドロップダウンセレクターで「**次の手順**」を選択し、必要に応じて&#x200B;**コメント**&#x200B;を追加します。
 1. 「**OK**」を使用してステップを完了します（または「**キャンセル**」を使用してアクションを中止します）。
@@ -131,7 +131,7 @@ ht-degree: 100%
 
 作業項目を委任するには、次の手順を実行します。
 
-1. **[AEM インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)**&#x200B;を開きます。
+1. **[AEM インボックス](/help/sites-cloud/authoring/inbox.md)**&#x200B;を開きます。
 1. 処理を実行するワークフロー項目を選択します（サムネールを選択）。
 1. ツールバーの「**委任**」を選択します。
 1. ダイアログが表示されます。ドロップダウンセレクターから「**ユーザー**」（グループも可）を指定し、必要に応じて&#x200B;**コメント**&#x200B;を追加します。
@@ -141,7 +141,7 @@ ht-degree: 100%
 
 作業項目を委任するには、次の手順を実行します。
 
-1. [編集するページ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)を開きます。
+1. [編集するページ](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing)を開きます。
 1. 上部のステータスバーの「**委任**」を選択します。
 1. ダイアログが表示されます。ドロップダウンセレクターから「**ユーザー**」（グループも可）を指定し、必要に応じて&#x200B;**コメント**&#x200B;を追加します。
 1. 「**OK**」を使用して手順を完了します（または「**キャンセル**」を使用してアクションを中止します）。
@@ -181,7 +181,7 @@ ht-degree: 100%
 
 次の手順を使用して、前のステップに戻ります。
 
-1. **[AEM インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)**&#x200B;を開きます。
+1. **[AEM インボックス](/help/sites-cloud/authoring/inbox.md)**&#x200B;を開きます。
 1. 処理を実行するワークフロー項目を選択します（サムネールを選択）。
 1. 「**ステップバック**」を選択して、ダイアログを開きます。
 1. 「**前のステップ**」を指定し、必要に応じて&#x200B;**コメント**&#x200B;を追加します。
@@ -191,7 +191,7 @@ ht-degree: 100%
 
 次の手順を使用して、前のステップに戻ります。
 
-1. [編集するページ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)を開きます。
+1. [編集するページ](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing)を開きます。
 1. 上部のステータスバーの「**前のステップ**」を選択します。
 1. 「**前のステップ**」を指定し、必要に応じて&#x200B;**コメント**&#x200B;を追加します。
 1. 「**OK**」を使用して手順を完了します（または「**キャンセル**」を使用してアクションを中止します）。
@@ -242,7 +242,7 @@ ht-degree: 100%
 
 ワークフロー項目を開いて詳細を表示するには：
 
-1. **[AEM インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)**&#x200B;を開きます。
+1. **[AEM インボックス](/help/sites-cloud/authoring/inbox.md)**&#x200B;を開きます。
 1. 処理を実行するワークフロー項目を選択します（サムネールを選択）。
 1. 「**開く**」を選択して、「情報」タブを開きます。
 1. 必要に応じて、適切なアクションを選択し、詳細を入力して「**OK**」（または「**キャンセル**」）で確認します。
@@ -252,7 +252,7 @@ ht-degree: 100%
 
 ワークフロー項目を開いて詳細を表示するには：
 
-1. [編集するページ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)を開きます。
+1. [編集するページ](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing)を開きます。
 1. ステータスバーの「**詳細の表示**」を選択して、「情報」タブを開きます。
 1. 必要に応じて、適切なアクションを選択し、詳細を入力して「**OK**」（または「**キャンセル**」）で確認します。
 1. 「**保存**」または「**キャンセル**」を使用して終了します。
@@ -263,7 +263,7 @@ ht-degree: 100%
 
 ワークフローインスタンスのペイロードおよびリソースを表示するには：
 
-1. **[AEM インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)**&#x200B;を開きます。
+1. **[AEM インボックス](/help/sites-cloud/authoring/inbox.md)**&#x200B;を開きます。
 1. 処理を実行するワークフロー項目を選択します（サムネールを選択）。
 1. ツールバーの「**ペイロードを表示**」を選択して、ダイアログを開きます。
    * ワークフローパッケージは単にリポジトリー内のパスへのポインターのコレクションなので、ここでエントリを追加／削除／変更して、ワークフローパッケージから参照されるものを調整できます。**リソース定義**&#x200B;コンポーネントを使用して、新しいエントリを追加します。

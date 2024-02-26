@@ -2,10 +2,10 @@
 title: SPA の複合コンポーネント
 description: AEM 単一ページアプリケーション（SPA）エディターで動作する独自の複合コンポーネント（他のコンポーネントで構成されるコンポーネント）を作成する方法を説明します。
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 94%
+source-wordcount: '782'
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 94%
 
 複合コンポーネントは、複数のベースコンポーネントを 1 つのコンポーネントに組み合わせることで、AEM コンポーネントのモジュラー性を活用します。一般的な複合コンポーネントの使用例は、画像コンポーネントとテキストコンポーネントの組み合わせで構成されるカードコンポーネントです。
 
-AEM Single Page Application(SPA)Editor フレームワーク内で複合コンポーネントが適切に実装されている場合、コンテンツ作成者は、そのようなコンポーネントを他のコンポーネントと同様にドラッグ&amp;ドロップできますが、複合コンポーネントを構成する各コンポーネントは個別に編集できます。
+複合コンポーネントが AEM 単一ページアプリケーション（SPA）エディターフレームワーク内で適切に実装されている場合、コンテンツ作成者は、そのようなコンポーネントを他のコンポーネントと同様にドラッグ＆ドロップできる一方で、複合コンポーネントを構成する各コンポーネントを個別に編集することもできます。
 
 この記事では、AEM SPA エディターとシームレスに連携する複合コンポーネントを、単一ページアプリケーションに追加する方法について説明します。
 
@@ -156,7 +156,7 @@ function Home() {
     itemPath='root/responsivegrid' />
    ```
 
-1. 作成した `wknd-spa/components/imagecard` コンポーネントを、[ページテンプレート](/help/sites-cloud/authoring/features/templates.md)内のコンテナコンポーネントに使用できるコンポーネントに追加します。
+1. 作成した `wknd-spa/components/imagecard` コンポーネントを、[ページテンプレート](/help/sites-cloud/authoring/sites-console/templates.md)内のコンテナコンポーネントに使用できるコンポーネントに追加します。
 
 これで、`imagecard` コンポーネントを AEM エディターでコンテナに直接追加できます。
 

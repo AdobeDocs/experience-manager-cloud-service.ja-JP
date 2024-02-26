@@ -4,8 +4,8 @@ description: アダプティブフォームを容易に作成または AEM Sites
 feature: Adaptive Forms, Foundation Components, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+workflow-type: tm+mt
 source-wordcount: '3177'
 ht-degree: 100%
 
@@ -32,13 +32,13 @@ AEM Forms にはアダプティブフォームコンテナおよびアダプテ�
 
 過去に Sites 用にアダプティブForms基盤コンポーネントまたはプレーンHTMLベースのフォームを作成している場合、Adobeでは、アダプティブFormsコアコンポーネントを使用してAEM Sitesページまたはエクスペリエンスフラグメントでアダプティブフォームを作成することをお勧めします。 また、バージョン管理、ターゲティング、翻訳、マルチサイトマネージャーなど、AEM Sites ページの様々な機能を使用して、フォームの全体的な作成と管理のエクスペリエンスを強化できます。次の機能の一部を見てみましょう。
 
-* **バージョン管理：** AEM Sites ページは、[堅牢なバージョン管理機能](/help/sites-cloud/authoring/features/page-versions.md)を提供し、フォームの様々なバージョンを追跡および管理できます。これにより、必要に応じて以前のバージョンにロールバックする機能を維持しながら、フォームに変更や機能強化を加えることができます。バージョン管理により、フォームの開発と進化に対する制御可能で体系的なアプローチが実現します。
+* **バージョン管理：** AEM Sites ページは、[堅牢なバージョン管理機能](/help/sites-cloud/authoring/sites-console/page-versions.md)を提供し、フォームの様々なバージョンを追跡および管理できます。これにより、必要に応じて以前のバージョンにロールバックする機能を維持しながら、フォームに変更や機能強化を加えることができます。バージョン管理により、フォームの開発と進化に対する制御可能で体系的なアプローチが実現します。
 * **ターゲティング（Adobe Target との統合）：** AEM Sites ページのターゲティング機能を使用して、[様々なオーディエンス向けにフォームエクスペリエンスをパーソナライズします](/help/sites-cloud/integrating/integration-adobe-target-ims.md)。ユーザーセグメントおよびターゲティング条件を使用することで、特定のユーザーグループに合わせてフォームのコンテンツ、デザインまたは動作を調整できます。これにより、パーソナライズされた関連性の高いフォームエクスペリエンスを提供し、エンゲージメント率とコンバージョン率を高めることができます。
 * **翻訳：** AEM Sites [翻訳サービスとのシームレスな統合](/help/sites-cloud/administering/translation/overview.md)を使用すると、フォームを複数の言語に簡単に翻訳できます。この機能により、ローカライゼーションプロセスが簡素化され、グローバルなオーディエンスがフォームに確実にアクセスできるようになります。AEM 翻訳プロジェクト内で翻訳を効率的に管理できるので、多言語フォームのサポートに必要な時間と労力を削減できます。翻訳について詳しくは、考慮事項の節を参照してください。
 * **マルチサイト管理とライブコピー：** AEM Sites [マルチサイト管理およびライブコピー機能](/help/sites-cloud/administering/msm/overview.md)を使用すると、1 つの環境内で複数の web サイトを作成および管理できます。この機能を使用すると、異なるサイト間でフォームを再利用できるようになり、一貫性を確保し、重複作業を減らすことができます。一元化された制御と管理により、複数の web サイトにわたってフォームの管理と更新を効率的に行うことができます。
 * **テーマ：** AEM Sites ページには、複数の web ページをまたいで一貫したビジュアルスタイルをデザインし、維持するためのフレームワークが用意されています。これらは、web サイトの全体的なルックアンドフィールに貢献するカラー、フォント、スタイルシートおよびその他のビジュアル要素を定義します。[アダプティブフォームで AEM Sites ページ用に設計されたテーマを使用することで、時間と労力を節約できます](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes)。
 * **タグ付け：** AEM Sites ページでは、[ページ、アセットまたは他のコンテンツへのタグやラベルの割り当て](/help/implementing/developing/introduction/tagging-framework.md)の操作を実行できます。タグは、特定の条件に基づいてコンテンツを分類および整理する方法を提供するキーワードまたはメタデータラベルです。AEM 内のページやアセットまたはその他のコンテンツ項目にタグを 1 つ以上割り当てて、検索を改善し、アセットを分類できるようにします。
-* **コンテンツのロックとロック解除：** AEM Sites でユーザーは[ページへのアクセスと変更の制御](/help/sites-cloud/authoring/fundamentals/editing-content.md)を AEM Sites 環境内で実行できます。ページがロックされている場合、他のユーザーによる不正な変更や編集から保護されています。コンテンツをロックしたユーザーまたは指定された管理者のみが、ロックを解除して変更を許可できます。
+* **コンテンツのロックとロック解除：** AEM Sites でユーザーは[ページへのアクセスと変更の制御](/help/sites-cloud/authoring/page-editor/edit-content.md)を AEM Sites 環境内で実行できます。ページがロックされている場合、他のユーザーによる不正な変更や編集から保護されています。コンテンツをロックしたユーザーまたは指定された管理者のみが、ロックを解除して変更を許可できます。
 
 また、AEM ページエディターのアダプティブフォームは、[アダプティブフォームコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja#features)を使用します。これらのコアコンポーネントは、[AEM Sites WCM コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)と同じで、コンポーネントを標準的でより簡単にスタイルおよびカスタマイズする方法を提供します。
 
@@ -261,7 +261,7 @@ AEM Sites ページ内のアダプティブフォームをエクスペリエン�
 
 * [Create style or themes for your forms](using-themes-in-core-components.md)
 * [Add dynamic behavior to forms using the rule editor](rule-editor.md)
-* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 
 -->
 
@@ -269,6 +269,6 @@ AEM Sites ページ内のアダプティブフォームをエクスペリエン�
 
 {{see-also}}
 * [ルールエディターを使用してフォームに動的な動作を追加](rule-editor.md)
-* [画面サイズやデバイスタイプに応じてフォームのレイアウトを設定](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [画面サイズやデバイスタイプに応じてフォームのレイアウトを設定](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 
 

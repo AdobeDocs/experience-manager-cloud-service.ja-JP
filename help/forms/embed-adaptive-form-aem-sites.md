@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '3145'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -36,13 +36,13 @@ AEM Forms にはア&#x200B;**[!UICONTROL ダプティブフォームコンテナ
 
 Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you create seamless data capture experiences within a Sites page using the power of Adaptive Forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. It also lets you use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager, enhancing the overall form creation and management experience. Let's explore some of these features:
 
-* **Versioning:** AEM Sites pages offer [robust versioning capabilities](/help/sites-cloud/authoring/features/page-versions.md), allowing you to track and manage different versions of your forms. This enables you to make changes and enhancements to forms while maintaining the ability to roll back to previous versions if needed. Versioning ensures a controlled and organized approach to form development and evolution.
+* **Versioning:** AEM Sites pages offer [robust versioning capabilities](/help/sites-cloud/authoring/sites-console/page-versions.md), allowing you to track and manage different versions of your forms. This enables you to make changes and enhancements to forms while maintaining the ability to roll back to previous versions if needed. Versioning ensures a controlled and organized approach to form development and evolution.
 * **Targeting (Integration with Adobe Target):** With AEM Sites pages targeting capabilities, you can also [personalize the form experience for different audiences](/help/sites-cloud/integrating/integration-adobe-target-ims.md). By using user segments and targeting criteria, you can tailor the form's content, design, or behavior to specific groups of users. This enables you to provide a personalized and relevant form experience, increasing engagement and conversion rates.
 * **Translation:** AEM Sites [seamless integration with translation services](/help/sites-cloud/administering/translation/overview.md), allowing you to translate forms into multiple languages easily. This feature simplifies the localization process, ensuring that your forms are accessible to a global audience. You can manage translations efficiently within AEM translation projects, reducing time and effort required for multilingual form support. See considerations section for more information on translation.  
 * **Multi-site Management and Live Copy:** AEM Sites provide robust [Multi-site Management and Live Copy capabilities](/help/sites-cloud/administering/msm/overview.md), enabling you to create and manage multiple websites within a single environment. This feature now lets you reuse forms across different sites, ensuring consistency and reducing duplication efforts. With centralized control and management, you can efficiently maintain and update forms across multiple websites.
 * **Themes:** AEM Sites pages provide a framework for designing and maintaining consistent visual styles across multiple web pages. These define colors, fonts, style sheets, and other visual elements that contribute to the overall look and feel of the website. [You can use the themes designed for an AEM Sites page for an Adaptive Form, saving time and effort](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes). 
 * **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
-* **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/fundamentals/editing-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
+* **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/page-editor/edit-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
 
 In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
 
@@ -52,7 +52,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 次のオプションを使用すると、この機能を最大限に活用できます。
 
-* **[承認済みのテンプレートを使用してアダプティブフォームを作成し、AEM Sitesページに埋め込む](#embed-form-using-adaptive-form-wizzard-aem-sites):** 事前に承認されたテンプレートを使用すると、組織のブランディングガイドラインやデザイン標準に合わせたアダプティブFormsをすばやく作成して埋め込むことができます。
+* **[承認済みのテンプレートを使用してアダプティブフォームを作成し、AEM Sites ページに埋め込む](#embed-form-using-adaptive-form-wizzard-aem-sites)：**&#x200B;事前に承認されたテンプレートを使用して、組織のブランディングガイドラインやデザイン標準に合ったアダプティブフォームをすばやく作成し、埋め込むことができます。
 
 * **[既存のフォームを AEM Sites ページに追加：](#embed-an-adaptive-form-in-sites-editor)**&#x200B;作成済みのフォームを web サイトに簡単に統合し、訪問者が直接操作できるようにします。
 
@@ -202,7 +202,7 @@ Sites ページでアダプティブフォームを作成するには、次の�
 
 1. AEM Sites ページを編集モードで開きます。
 1. **[!UICONTROL アダプティブフォームコンテナ]**&#x200B;コンポーネントをコンポーネントブラウザーから Sites ページにラッグ＆ドロップします。
-1. を選択します。 **[!UICONTROL アダプティブForms — 埋め込み]** サイトページのコンポーネントを選択し、 ![アダプティブフォームコンテナのプロパティ](/help/forms/assets/configure-icon.svg) をクリックします。 **[!UICONTROL アダプティブフォーム - 埋め込みを編集]**&#x200B;ダイアログが開きます。
+1. Sites ページに埋め込まれた&#x200B;**[!UICONTROL アダプティブフォーム - 埋め込み]**&#x200B;コンポーネントを選択し、アクションバーの ![アダプティブフォームコンテナのプロパティ](/help/forms/assets/configure-icon.svg) を選択します。**[!UICONTROL アダプティブフォーム - 埋め込みを編集]**&#x200B;ダイアログが開きます。
 1. **[!UICONTROL アセットパス]**&#x200B;に埋め込むアダプティブ フォームを参照して選択します。
 1. 設定を保存します。これで、アダプティブフォームがページに埋め込まれました。
 
@@ -216,7 +216,7 @@ Sites ページでアダプティブフォームを作成するには、次の�
 
 1. エクスペリエンスフラグメントを編集モードで開きます。
 1. **[!UICONTROL アダプティブフォームコンテナ]**&#x200B;コンポーネントを、コンポーネントブラウザーからエクスペリエンスフラグメントにドラッグ＆ドロップします。
-1. を選択します。 **[!UICONTROL アダプティブForms — 埋め込み]** エクスペリエンスフラグメント内のコンポーネントを選択し、 ![アダプティブフォームコンテナのプロパティ](/help/forms/assets/configure-icon.svg) をクリックします。 **[!UICONTROL アダプティブフォーム - 埋め込みを編集]**&#x200B;ダイアログが開きます。
+1. エクスペリエンスフラグメントに埋め込まれた&#x200B;**[!UICONTROL アダプティブフォーム - 埋め込み]**&#x200B;コンポーネントを選択し、アクションバーの ![アダプティブフォームコンテナのプロパティ](/help/forms/assets/configure-icon.svg) を選択します。**[!UICONTROL アダプティブフォーム - 埋め込みを編集]**&#x200B;ダイアログが開きます。
 1. **[!UICONTROL アセットパス]**&#x200B;に埋め込むアダプティブ フォームを参照して選択します。
 1. 設定を保存します。アダプティブフォームがエクスペリエンスフラグメントに埋め込まれました。
 
@@ -357,7 +357,7 @@ AEM site also lets you create an Adaptive Form on the fly using the Adaptive For
 埋め込まれたアダプティブフォームの設定やプロパティを変更するには、次のいずれかの操作を行います。
 
 * それぞれのエディターのアダプティブフォームで元のフォームを開いて、変更します。
-* 編集モードでサイトページ内からアダプティブフォームを選択し、 **[!UICONTROL 新しいウィンドウで編集]**. 元のフォームは、修正可能な編集モードで開きます。
+* 編集モードで開いた Site ページ内からアダプティブフォームを選択し、「**[!UICONTROL 新しいウィンドウで編集]**」をクリックします。元のフォームは、修正可能な編集モードで開きます。
 
 >[!NOTE]
 >

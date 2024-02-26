@@ -4,8 +4,8 @@ description: 多言語 web サイトを開発するときに翻訳するコン�
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 100%
 
@@ -92,7 +92,7 @@ AEM には&#x200B;**参照**&#x200B;パネルがあります。このパネル�
 
 ![言語ルート](../assets/language-roots.png)
 
-次の手順に従い、[パネルセレクター](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)を使用して、ページの言語コピーを表示します。
+次の手順に従い、[パネルセレクター](/help/sites-cloud/authoring/basic-handling.md#rail-selector)を使用して、ページの言語コピーを表示します。
 
 1. Sites コンソールで、サイトのページを選択し、「**参照**」を選択します。
 

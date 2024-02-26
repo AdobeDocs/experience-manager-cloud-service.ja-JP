@@ -4,8 +4,8 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: AEM Forms Workflow を使用して、ビジネスプロセスワークフローを自動化し、迅速に構築します。 例えば、レビューと承認、PDF生成、Adobe Signワークフローなどです。
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 100%
 
@@ -197,7 +197,7 @@ Forms 中心のワークフローは、次のように起動またはトリガ�
 
 ### AEM インボックスからのアプリケーションの送信 {#inbox}
 
-作成したワークフローアプリケーションは、インボックスでアプリケーションとして使用できます。[!DNL workflow-users] グループのメンバーであるユーザーは、関連するワークフローをトリガーするアプリケーションを入力して送信できます。AEM インボックスを使用してアプリケーションを送信し、タスクを管理する方法について詳しくは、[AEM インボックスでの Forms アプリケーションとタスクの管理](manage-applications-inbox.md)を参照してください。
+作成したワークフローアプリケーションは、インボックスでアプリケーションとして使用できます。[!DNL workflow-users] グループのメンバーであるユーザーは、関連するワークフローをトリガーするアプリケーションを入力して送信できます。AEM インボックスを使用してアプリケーションを送信し、タスクを管理する方法について詳しくは、[AEM インボックスでの Forms アプリケーションとタスクの管理](manage-applications-/help/sites-cloud/authoring/inbox.md)を参照してください。
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 

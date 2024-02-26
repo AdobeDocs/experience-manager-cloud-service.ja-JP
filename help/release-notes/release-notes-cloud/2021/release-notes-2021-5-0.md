@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 リリースのリリースノート。'
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 720430af374636878b42ce346ca9c61ab089709b
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 91%
 
 ### [!DNL Sites] の新機能  {#what-is-new-sites}
 
-* 近日中に、新しい[プレビュー層](/help/sites-cloud/authoring/fundamentals/previewing-content.md)でコンテンツを検証し、最終的なエクスペリエンスのルックアンドフィールをパブリッシュ層と同じようにシミュレートできるようになります。これは、AEM Sites Managed Publishion ウィザードで、公開先を公開またはプレビューから選択できるようになったことによるものです。プレビュー時のエクスペリエンスには、専用の URL からアクセスできます。プレビューで検証した後は、通常どおり作成者がコンテンツを公開できます。AEM as a Cloud Service 環境でのプレビューサービスの有効化は、今後数週間で徐々に展開される予定です。
+* 近日中に、新しい[プレビュー層](/help/sites-cloud/authoring/sites-console/previewing-content.md)でコンテンツを検証し、最終的なエクスペリエンスのルックアンドフィールをパブリッシュ層と同じようにシミュレートできるようになります。これは、AEM Sites Managed Publishion ウィザードで、公開先を公開またはプレビューから選択できるようになったことによるものです。プレビュー時のエクスペリエンスには、専用の URL からアクセスできます。プレビューで検証した後は、通常どおり作成者がコンテンツを公開できます。AEM as a Cloud Service 環境でのプレビューサービスの有効化は、今後数週間で徐々に展開される予定です。
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -79,7 +79,7 @@ ht-degree: 91%
 
 ### [!DNL Forms] の今後のベータ版機能 {#what-is-new-forms-prerelease}
 
-Output as a Cloud service：出力サービスを使用すると、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期バッチモードと非同期バッチモードでドキュメントを生成できます。 出力サービスを使用すると、次のことを可能にするアプリケーションを作成できます。
+Output as a Cloud service：出力サービスを使用すると、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期および非同期の一括モードでドキュメントを生成できます。出力サービスにより、以下のような機能を備えたアプリケーションを作成することができます。
 
 * テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成する。
 * 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。

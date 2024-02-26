@@ -2,16 +2,16 @@
 title: コンポーネントの概要
 description: コンポーネントは、特定の機能を実現し、Web サイトにコンテンツを提供するためのモジュールユニットです。
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 57%
+source-wordcount: '376'
+ht-degree: 56%
 
 ---
 
 # コンポーネントの概要 {#components-overview}
 
-このページでは、[ページオーサリングで使用される](/help/sites-cloud/authoring/fundamentals/components.md)コンポーネントなど、Adobe Experience Manager（AEM）のコンポーネントの概要を示します。
+このページでは、[ページオーサリングで使用される](/help/sites-cloud/authoring/page-editor/components.md)コンポーネントなど、Adobe Experience Manager（AEM）のコンポーネントの概要を示します。
 
 ## コンポーネントとは {#what-are-components}
 
@@ -48,7 +48,7 @@ ht-degree: 57%
 
 ### 利用可能なコンポーネントの表示 {#viewing-available-components}
 
-AEMインスタンスで使用可能なすべてのコンポーネントの概要については、 [コンポーネントコンソール](/help/sites-cloud/authoring/features/components-console.md).
+AEMインスタンスで使用可能なすべてのコンポーネントの概要については、 [コンポーネントコンソール](/help/sites-cloud/authoring/components-console.md).
 
 または、CRXDE Liteを使用して、リポジトリで使用可能なすべてのコンポーネントのリストを取得することもできます。
 

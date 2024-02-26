@@ -1,7 +1,7 @@
 ---
 title: ユニバーサルエディタで使用するためのブロックの作成
 description: Edge Delivery Servicesプロジェクトを使用したAEMオーサリングで、ユニバーサルエディターで使用するために実装されたブロックを作成する方法について説明します。
-source-git-commit: 40e404c743102f1de8b3d959597836f04f0c0fef
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 0%
@@ -130,7 +130,7 @@ Adobeでは、次の 3 段階の方法でブロックを作成することをお
 
 基本的な見積もりブロックが定義され、サンプルプロジェクトにコミットされたので、既存のページに見積もりブロックを追加できます。
 
-1. ブラウザーで、AEM as a Cloud Serviceにログインします。 [サイトコンソールの使用](/help/sites-cloud/authoring/getting-started/basic-handling.md) で作成したサイトに移動します。 [Edge Delivery Servicesを使用したAEMオーサリングのための Developer Getting Guide](/help/edge/edge-dev-getting-started.md) ガイドを参照し、ページを選択します。
+1. ブラウザーで、AEM as a Cloud Serviceにログインします。 [サイトコンソールの使用](/help/sites-cloud/authoring/basic-handling.md) で作成したサイトに移動します。 [Edge Delivery Servicesを使用したAEMオーサリングのための Developer Getting Guide](/help/edge/edge-dev-getting-started.md) ガイドを参照し、ページを選択します。
 
    * この場合、 `index` は、例として使用されます。
 

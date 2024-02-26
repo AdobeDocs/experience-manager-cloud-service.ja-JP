@@ -2,10 +2,10 @@
 title: ローンチの作成
 description: 今後のアクティベーションのために既存の web ページの新しいバージョンを更新できるように、ローンチを作成できます。
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1042'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 99%
 
 ローンチを作成し、既存の web ページの新しいバージョンを更新して後でアクティブ化できるようにします。ローンチを作成する際は、タイトルとソースページを指定します。
 
-* タイトルは[参照](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)レールに表示されます。作成者はそこからローンチにアクセスして作業できます。
+* タイトルは[参照](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references)レールに表示されます。作成者はそこからローンチにアクセスして作業できます。
 * デフォルトでは、ソースページの子ページがローンチに含まれています。必要に応じて、ソースページのみを使用することもできます。
 * デフォルトでは、ソースページが変更されると、[ライブコピー](/help/sites-cloud/administering/msm/overview.md)によってローンチページが自動的に更新されます。静的なコピーを作成して自動更新をおこなわないように指定できます。
 
@@ -27,7 +27,7 @@ ht-degree: 99%
 >
 >これらのページは編集できません。次のメッセージが表示されます。
 >
->* **このページはローンチに含まれていません。実稼動ページに移動**
+>* **このページはローンチに含まれていません。 実稼動ページに移動**
 
 ## ローンチの作成 {#creating-a-launch}
 
@@ -48,7 +48,7 @@ ht-degree: 99%
 
    >[!NOTE]
    >
-   >**Sites** コンソールで、「[選択モード](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)」を使用して、「**作成**」を選択する前にページを選択できます。
+   >**Sites** コンソールで、「[選択モード](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)」を使用して、「**作成**」を選択する前にページを選択できます。
    >
    >こうすることで、最初のソースページとして選択されたページが使用されます。
 
@@ -114,7 +114,7 @@ ht-degree: 99%
 >
 >別のテンプレートが使用されているので、新しいページは空になります。ページ構造が異なるので、コンテンツはコピーされません。
 >
->このメカニズムは、[既存ページ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)のテンプレートを変更するために使用できますが、コンテンツの損失を考慮する必要があります。
+>このメカニズムは、[既存ページ](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page)のテンプレートを変更するために使用できますが、コンテンツの損失を考慮する必要があります。
 
 ### ネストされたローンチの作成 {#creating-a-nested-launch}
 

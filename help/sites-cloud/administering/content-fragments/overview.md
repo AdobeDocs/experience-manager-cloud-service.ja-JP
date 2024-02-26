@@ -4,8 +4,8 @@ description: AEM as a Cloud Service のコンテンツフラグメントを使�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
-workflow-type: ht
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+workflow-type: tm+mt
 source-wordcount: '1792'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # コンテンツフラグメントの操作の概要 {#overview-working-with-content-fragments}
 
-Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを使用すると、[ページに依存しないコンテンツの設計、作成、キュレーション、公開](/help/sites-cloud/authoring/fundamentals/content-fragments.md)が可能になります。ヘッドレス配信やページオーサリングに最適とされる複数の場所、複数のチャネル上で使用可能なコンテンツを用意できるようになります。
+Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを使用すると、[ページに依存しないコンテンツの設計、作成、キュレーション、公開](/help/sites-cloud/authoring/fragments/content-fragments.md)が可能になります。ヘッドレス配信やページオーサリングに最適とされる複数の場所、複数のチャネル上で使用可能なコンテンツを用意できるようになります。
 
 >[!IMPORTANT]
 >
@@ -27,7 +27,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 >
 >* [コンテンツフラグメントの管理](/help/assets/content-fragments/content-fragments-managing.md)のための **Assets** コンソールの使用
 >* [*元の*&#x200B;コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-variations.md)の使用
->* [ページオーサリング用のコンテンツフラグメント](/help/sites-cloud/authoring/fundamentals/content-fragments.md)の使用
+>* [ページオーサリング用のコンテンツフラグメント](/help/sites-cloud/authoring/fragments/content-fragments.md)の使用
 
 
 コンテンツフラグメントには、構造化されたコンテンツが含まれます。
@@ -74,7 +74,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 >[!NOTE]
 >
->**コンテンツフラグメント**&#x200B;と&#x200B;**[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;は、AEM 内の異なる機能です。
+>**コンテンツフラグメント**&#x200B;と&#x200B;**[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fragments/content-fragments.md)**&#x200B;は、AEM 内の異なる機能です。
 >* **コンテンツフラグメント**&#x200B;は、定義と構造を備えたエディトリアルコンテンツですが、視覚的なデザインやレイアウトは追加されていません。テキスト、数値、日付などの構造化データにアクセスするために使用できます。
 >* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツであり、web ページのフラグメントです。
 >
@@ -94,7 +94,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 * [コンテンツフラグメントエディターを使用](/help/sites-cloud/administering/content-fragments/authoring.md) - フラグメントを編集、公開（プレビューまたは実稼動へ）し、参照する
 * [分析](/help/sites-cloud/administering/content-fragments/analysis.md)  エディターを使用したコンテンツフラグメントの構造
 * [GraphQL を使用してフラグメントにアクセスし、アプリケーションへのヘッドレス配信を実現します](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)。
-* [または、フラグメントをページオーサリングに使用します。](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+* [または、フラグメントをページオーサリングに使用します。](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 >* [レンダリングコンポーネントのコンテンツフラグメントの設定](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [AEM Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [コンテンツフラグメントと共に使用する AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
->* [コンテンツフラグメントを使用したページのオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+>* [コンテンツフラグメントを使用したページのオーサリング](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 ## メインとバリエーション {#main-and-variations}
 
@@ -172,7 +172,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 * [AEM GraphQL API](/help/headless/graphql-api/content-fragments.md) を使用したコンテンツ配信用にアクセスできます。
 
-* [コンテンツフラグメントコンポーネント（参照コンポーネント）を使用することで、ページエディター内で](/help/sites-cloud/authoring/fundamentals/content-fragments.md)使用できます。
+* [コンテンツフラグメントコンポーネント（参照コンポーネント）を使用することで、ページエディター内で](/help/sites-cloud/authoring/fragments/content-fragments.md)使用できます。
 
    * [コンテンツフラグメントのコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=ja)は、ページの作成者が使用できます。作成者は、必要なコンテンツフラグメントを HTML または JSON 形式で参照し、配信できます。
 
@@ -257,7 +257,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 * **コンテンツフラグメントコンポーネント**
 
    * フラグメントを HTML 形式や JSON 形式で配信するのに役立ちます。
-   * [ページ上でフラグメントを参照](/help/sites-cloud/authoring/fundamentals/content-fragments.md)するために必要です。
+   * [ページ上でフラグメントを参照](/help/sites-cloud/authoring/fragments/content-fragments.md)するために必要です。
    * フラグメントのレイアウトと配信（チャネルなど）に対応します。
    * フラグメントは、レイアウトを定義し、一部またはすべての要素／バリエーションと関連するコンテンツを配信するために、1 つ以上の専用コンポーネントを必要とします。
    * 作成時にフラグメントをページにドラッグすると、必須コンポーネントが自動的に関連付けられます。

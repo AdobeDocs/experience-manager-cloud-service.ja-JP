@@ -2,10 +2,10 @@
 title: AEM ヘッドレス翻訳の基本を学ぶ
 description: ヘッドレスコンテンツを整理する方法と AEM の翻訳ツールの仕組みについて説明します。
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 93%
+source-wordcount: '1409'
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ AEM ヘッドレス翻訳ジャーニーの以前のドキュメント（[ヘッ
 
 ## 要件と前提条件 {#requirements-prerequisites}
 
-ヘッドレスAEMコンテンツの翻訳を開始する前に、いくつかの要件があります。
+ヘッドレス AEM コンテンツの翻訳を開始するには、いくつかの要件があります。
 
 ### 知識 {#knowledge}
 
@@ -44,7 +44,7 @@ AEM ヘッドレス翻訳ジャーニーの以前のドキュメント（[ヘッ
 
 >[!TIP]
 >
->AEM のような大規模 CMS を使い慣れていない場合は、先に進む前に[基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)のドキュメントを確認することをお勧めします。基本操作に関するドキュメントは、このジャーニーには含まれません。したがって、完了したらこのページに戻ります。
+>AEM のような大規模 CMS を使い慣れていない場合は、先に進む前に[基本操作](/help/sites-cloud/authoring/basic-handling.md)のドキュメントを確認することをお勧めします。基本操作に関するドキュメントは、このジャーニーには含まれません。したがって、完了したらこのページに戻ります。
 
 ### ツール {#tools}
 
@@ -78,18 +78,17 @@ AEM のコンテンツは、ヘッドレスであろうと従来の web ペー�
 
 コンテンツモデルはコンテンツの構造を定義するものなので、モデルのどのフィールドを翻訳する必要があるかを把握しておく必要があります。翻訳担当者は通常、コンテンツアーキテクトと協力してこれを定義します。コンテンツモデルのフィールドを参照するには、次の手順に従います。
 
-1. **ツール**／**一般l**／**コンテンツフラグメントモデル**&#x200B;に移動します。
+1. **ツール**／**一般**／**コンテンツフラグメントモデル**&#x200B;に移動します。
 1. コンテンツフラグメントモデルは通常、フォルダー構造で保存されます。プロジェクトのフォルダーを選択します。
 1. モデルが一覧表示されます。詳細を表示するモデルを選択します。
    ![コンテンツフラグメントモデル](assets/content-fragment-models.png)
 1. **コンテンツフラグメントモデルエディター**&#x200B;が開きます。
    1. 左側の列には、モデルのフィールドが含まれています。重要なのはこの列です。
    1. 右側の列には、モデルに追加できるフィールドが含まれています。この列は無視できます。
-
       ![コンテンツフラグメントモデルエディター](assets/content-fragment-model-editor.png)
-1. モデルのフィールドの 1 つを選択します。 そのフィールドが選択され、フィールドの詳細が右側の列に表示されます。
+1. モデルのフィールドの 1 つを選択します。そのフィールドが選択され、フィールドの詳細が右側の列に表示されます。
    ![コンテンツフラグメントモデルエディター（詳細表示）](assets/content-fragment-model-editor-detail.png)
-1. コンテンツアーキテクトは、 **翻訳可能** 翻訳が必要なすべてのコンテンツモデルフィールドのフィールド。
+1. コンテンツアーキテクトは、翻訳が必要なすべてのコンテンツモデルフィールドで、**翻訳可能**&#x200B;フィールドを有効にします。
 
 >[!TIP]
 >
@@ -179,15 +178,15 @@ AEM のコンテンツは、ヘッドレスであろうと従来の web ペー�
 * AEM のヘッドレスコンテンツの保存方法を理解する
 * AEM の翻訳ツールに詳しくなる
 
-この知識に基づいてドキュメントを次に確認し、AEMヘッドレス翻訳ジャーニーを継続します。 [翻訳統合の設定](configure-connector.md) AEMを翻訳サービスに接続する方法を学ぶ場所です。|
+この知識を踏まえて、[翻訳統合の設定](configure-connector.md)のドキュメントを次に参照しながら、AEM ヘッドレス翻訳ジャーニーを続けてください。このドキュメントでは、AEM を翻訳サービスに接続する方法について説明します。
 
 ## その他のリソース {#additional-resources}
 
 [翻訳コネクタの設定](configure-connector.md)のドキュメントを確認して、ヘッドレス翻訳ジャーニーの次のステップに進むことをお勧めします。ヘッドレスジャーニーの続行に必須ではありませんが、この記事で取り上げたいくつかの概念について詳しく説明している追加のオプションリソースを以下に挙げておきます。
 
-* [AEM の基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md) - コンテンツの快適なナビゲーションのほか、検索などの重要なタスクを実行できるように、AEM UI の基本について説明します。
+* [AEM の基本操作](/help/sites-cloud/authoring/basic-handling.md) - コンテンツの快適なナビゲーションのほか、検索などの重要なタスクを実行できるように、AEM UI の基本について説明します。
 * [翻訳対象コンテンツの特定](/help/sites-cloud/administering/translation/rules.md) - 翻訳が必要なコンテンツを翻訳ルールで特定する方法について説明します。
 * [翻訳統合フレームワークの設定](/help/sites-cloud/administering/translation/integration-framework.md) - サードパーティの翻訳サービスと統合できるように翻訳統合フレームワークを設定する方法について説明します。
 * [翻訳プロジェクトの管理](/help/sites-cloud/administering/translation/managing-projects.md) - AEM で機械翻訳と人間による翻訳の両方のプロジェクトを作成および管理する方法について説明します。
-* [AEM as a Headless CMS の概要](/help/headless/introduction.md)
+* [ヘッドレス CMS としての AEM の概要](/help/headless/introduction.md)
 * [AEM のヘッドレスに関するチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja)

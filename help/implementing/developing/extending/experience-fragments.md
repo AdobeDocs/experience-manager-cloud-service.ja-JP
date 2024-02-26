@@ -1,10 +1,10 @@
 ---
-title: エクスペリエンスフラグメント 概要
+title: エクスペリエンスフラグメントの概要
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントの拡張
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 29d8d08899bb60b2bf3027ed32dbcdca3a73e671
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1642'
 ht-degree: 98%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 ## 基本知識 {#the-basics}
 
-[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)は、ページ内で参照できるコンテンツおよびレイアウトを含む 1 つ以上のコンポーネントのグループです。
+[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fragments/content-fragments.md)は、ページ内で参照できるコンテンツおよびレイアウトを含む 1 つ以上のコンポーネントのグループです。
 
 エクスペリエンスフラグメントのプライマリ、バリアント、またはその両方で、次のものが使用されます。
 
@@ -35,7 +35,7 @@ URL で `.plain.` セレクターを使用すると、プレーン HTML レン�
 
 * または、`-src` か `-href` で終わる
 
-次に例を示します。
+例：
 
 `.../brooklyn-coat/master.plain.html`
 
@@ -43,11 +43,11 @@ URL で `.plain.` セレクターを使用すると、プレーン HTML レン�
 >
 >リンクは、常にパブリッシュインスタンスを参照します。リンクは、サードパーティによって使用されることを意図しているので、オーサリングインスタンスではなく、常にパブリッシュインスタンスから呼び出されます。
 >
->詳しくは、 [URL の外部化](/help/implementing/developing/tools/externalizer.md).
+>詳しくは、[URL の外部化](/help/implementing/developing/tools/externalizer.md)を参照してください。
 
 ![プレーン HTML レンディション](assets/xf-14.png)
 
-プレーンレンディションセレクターでは、追加スクリプトとは異なり、トランスフォーマーを使用します。[Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) がトランスフォーマーとして使用されます。このトランスフォーマーは、次の場所で設定します。
+プレーンレンディションセレクターでは、追加のスクリプトとは異なり、トランスフォーマーを使用します。 The [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) は変換サービスとして使用されます。 このトランスフォーマーは、次の場所で設定します。
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
@@ -83,15 +83,13 @@ HTML レンディションは、Sling Rewriter パイプラインを使用して
 1. 次の両方：
 
    1. テンプレート（初期ノード）のリソースタイプは、次のものから継承する必要があります。
-
       `cq/experience-fragments/components/xfpage`
 
    1. テンプレートの名前は次の文字列で始まる必要があります。
-
       `experience-fragments`
 これにより、ユーザーは /content/experience-fragments にエクスペリエンスフラグメントを作成できます。このフォルダーの `cq:allowedTemplates` プロパティには、`experience-fragment` で始まる名前の付いたすべてのテンプレートが含まれています。ユーザーは、このプロパティを更新して、独自の命名方式やテンプレート場所を取り入れることができます。
 
-1. [使用可能なテンプレート](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder)はエクスペリエンスフラグメントコンソールで設定できます。
+1. [使用可能なテンプレート](/help/sites-cloud/authoring/fragments/content-fragments.md#configure-allowed-templates-folder)はエクスペリエンスフラグメントコンソールで設定できます。
 
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
@@ -174,7 +172,7 @@ HTML ページを生成すると、Sling Rewriter パイプラインが次の出
 
 ### Link Rewriter Provider インターフェイス {#link-rewriter-provider-interface}
 
-（[デフォルトのリンク書き換え](#default-link-rewriting)では対応していない）より複雑な場合のために、AEM では Link Rewriter Provider フェイスを提供しています。このインターフェイスは、バンドルにサービスとして実装できる `ConsumerType` インターフェイスです。このインターフェイスは、エクスペリエンスフラグメントからレンダリングされる HTML オファーの内部リンクに対して AEM で実行される変更をバイパスします。このインターフェイスを使用すると、内部HTMLのリンクを書き換えるプロセスを、ビジネスニーズに合わせてカスタマイズできます。
+（[デフォルトのリンク書き換え](#default-link-rewriting)では対応していない）より複雑な場合のために、AEM では Link Rewriter Provider フェイスを提供しています。このインターフェイスは、バンドルにサービスとして実装できる `ConsumerType` インターフェイスです。このインターフェイスは、エクスペリエンスフラグメントからレンダリングされる HTML オファーの内部リンクに対して AEM で実行される変更をバイパスします。このインターフェイスを使用すると、内部 HTML リンクの書き換えプロセスをビジネスニーズに合わせてカスタマイズできます。
 
 このインターフェイスをサービスとして実装する使用例としては、例えば次のものがあります。
 
@@ -287,7 +285,7 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 * `tag`：
 処理中の HTML 要素の名前です。
 
-* `attribute`：
+* `attribute`
 正確な属性名です。
 
 例えば、Target システムに書き出しがこの要素を処理している場合は、`CSSInclude` を次のように定義できます。

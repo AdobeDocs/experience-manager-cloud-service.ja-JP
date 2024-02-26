@@ -2,10 +2,10 @@
 title: デモサイトを作成
 description: 事前設定済みのテンプレートのライブラリに基づいて、AEM にデモサイトを作成します。
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 72%
+source-wordcount: '809'
+ht-degree: 99%
 
 ---
 
@@ -17,37 +17,37 @@ ht-degree: 72%
 
 AEM Reference Demo Add-On ジャーニーの前のドキュメントである[プログラムを作成](create-program.md)では、最初の設定手順で、テスト用のプログラムを作成し、パイプラインを使用してアドオンコンテンツをデプロイしました。その結果、以下を習得しました。
 
-* Cloud Manager を使用してプログラムを作成する方法を説明します。
+* Cloud Manager を使用してプログラムを作成する方法を理解します。
 * 新しいプログラムの Reference Demos Add-On を有効にする方法。
 * パイプラインを実行してアドオンコンテンツをデプロイ。
 
-この記事では、参照デモアドオンのテンプレートに基づいてAEMでサイトまたはAEM Screensプロジェクトを作成し、プロセスの次の手順について説明します。
+この記事では、参照デモのアドオンのテンプレートに基づいて AEM でサイトまたは AEM Screens プロジェクトを作成することで、プロセスの次の手順を説明します。
 
 ## 目的 {#objective}
 
-このドキュメントでは、参照デモアドオンのテンプレートに基づいてサイトを作成する方法を説明します。 読み終えると、次のことが習得できます。
+このドキュメントは、参照デモのアドオンのテンプレートに基づいてサイトを作成する方法を理解するのに役立ちます。読み終えると、次のことが習得できます。
 
 * AEM オーサリング環境へのアクセス方法の理解。
 * テンプレートに基づくサイトの作成方法の理解。
 * サイト構造内を移動し、ページを編集する際の基本事項の理解。
 
-## デモサイトの作成または Screens プロジェクトの作成 {#create-site}
+## デモサイトまたは Screens プロジェクトの作成 {#create-site}
 
-パイプラインが Reference Demo Add-On をデプロイしたら、AEM オーサリング環境にアクセスして、アドオンコンテンツに基づくデモサイトを作成できます。
+パイプラインが参照デモのアドオンをデプロイすると、AEM オーサリング環境にアクセスして、アドオンコンテンツに基づくデモサイトを作成できます。
 
-1. Cloud Manager のプログラムの概要ページから、AEMオーサリング環境へのリンクを選択します。
+1. Cloud Manager のプログラムの概要ページで、AEM オーサリング環境へのリンクを選択します。
 
    ![オーサリング環境へのアクセス](assets/access-author.png)
 
-1. AEMのメインメニューから、「 」を選択します。 **Sites**.
+1. AEM のメインメニューから、「**Sites**」を選択します。
 
    ![Sites へのアクセス](assets/access-sites.png)
 
-1. サイトコンソールで、「 」を選択します。 **作成** 画面の右上にある「 」をクリックし、 **テンプレートからのサイト** 」と入力します。
+1. Sites コンソールから、画面の右上にある「**作成**」を選択し、ドロップダウンで「**テンプレートからサイト**」を選択します。
 
    ![テンプレートからサイトを作成](assets/create-site-from-template.png)
 
-1. サイト作成ウィザードが開始されます。左側の列には、パイプラインがオーサリングインスタンスにデプロイしたデモテンプレートが表示されます。1 つを選択して選択し、右の列に詳細を表示します。 AEM Screensのテストやデモを行う場合は、必ず **We.Cafe サイトテンプレート**. 「**次へ**」を選択します。
+1. サイト作成ウィザードが開始されます。左側の列には、パイプラインがオーサリングインスタンスにデプロイしたデモテンプレートが表示されます。1 つを選択すると、右側の列に詳細が表示されます。AEM Screens のテストやデモを行う場合は、必ず「**We.Cafe サイトテンプレート**」を選択します。「**次へ**」を選択します。
 
    ![サイトの作成ウィザード](assets/site-creation-wizard.png)
 
@@ -77,11 +77,11 @@ AEM Reference Demo Add-On ジャーニーの前のドキュメントである[�
 
    ![列表示](assets/column-view.png)
 
-1. 構造とコンテンツを参照するサイトを選択します。 デモサイトのコンテンツツリーを移動すると、列表示が継続的に展開します。
+1. 構造とコンテンツを参照するサイトを選択します。デモサイトのコンテンツツリーを移動すると、列表示が継続的に展開します。
 
    ![サイト構造](assets/site-structure.png)
 
-1. ページを選択して選択し、「 」を選択します。 **編集** 」と入力します。
+1. ページを選択し、ツールバーの「**編集**」を選択します。
 
    ![ページを選択](assets/select-page.png)
 
@@ -103,12 +103,12 @@ AEM Reference Demo Add-On ジャーニーの前のドキュメントである[�
 
 アドオンコンテンツを使用して AEM の機能をテストできるようになりました。ジャーニーを続行するには、次の 2 つのオプションがあります。
 
-* AEM Screensのコンテンツを完全にデモおよびテストする場合は、 **We.Cafe サイトテンプレート** 前に説明したように、引き続き [デモサイトにAEM Screensを有効にします。](screens.md)
-* を使用して Sites コンテンツのデモをおこなう場合は、次に進みます。 [デモサイトの管理、](manage.md) ここでは、デモサイトの管理と削除方法に役立つツールについて説明します。
+* AEM Screens のコンテンツの完全なデモとテストを行う場合は、前に説明したように、**We.Cafe サイトテンプレート**&#x200B;に基づいてサイトをデプロイし、続いて[デモサイトに対して AEM Screens を有効にします](screens.md)。
+* Sites コンテンツのデモのみの場合は、続いて[デモサイトを管理](manage.md)に進んで、デモサイトの管理に役立つツールと、デモサイトを削除する方法を学びます。
 
 ## その他のリソース {#additional-resources}
 
 * [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=ja) - Cloud Manager の機能について詳しくは、詳細な技術ドキュメントを直接参照してください。
 * [サイトを作成](/help/sites-cloud/administering/site-creation/create-site.md) - AEM を使用して、サイトテンプレートを使用してサイトを作成し、サイトのスタイルと構造を定義する方法を説明します。
-* [AEM のページ命名規則](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)。AEM ページを整理する際の規則を理解するには、このページを参照してください。
-* [AEM の基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md) - AEM を初めて使用する場合は、ナビゲーションやコンソールの構成などの基本的な概念を理解するために、このドキュメントを参照してください。
+* [AEM のページ命名規則](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices)。AEM ページを整理する際の規則を理解するには、このページを参照してください。
+* [AEM の基本操作](/help/sites-cloud/authoring/basic-handling.md) - AEM を初めて使用する場合は、ナビゲーションやコンソールの構成などの基本的な概念を理解するために、このドキュメントを参照してください。

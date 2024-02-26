@@ -2,8 +2,8 @@
 title: ローンチの編集
 description: ページ（またはページのセット）のローンチを作成した後で、ページのローンチコピーのコンテンツを編集できます。
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 100%
 
@@ -48,15 +48,15 @@ ht-degree: 100%
 
 行った変更を追跡するために、ローンチを&#x200B;**参照**&#x200B;で表示して、ローンチページをそのソースページと比較することができます。
 
-1. **Sites** コンソールで、[ローンチのソースページに移動してそれを選択します](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。
-1. **[参照](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;パネルを開いて、「**ローンチ**」を選択します。
+1. **Sites** コンソールで、[ローンチのソースページに移動してそれを選択します](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)。
+1. **[参照](/help/sites-cloud/authoring/basic-handling.md#references)**&#x200B;パネルを開いて、「**ローンチ**」を選択します。
 1. 特定のローンチを選択してから、次のように&#x200B;**ソースと比較します**。
 
    ![ローンチとソースの比較](/help/sites-cloud/authoring/assets/launches-compare.png)
 
 1. 2 つのページ（ローンチとソース）が左右に並んで開きます。
 
-   この機能の使用方法について詳しくは、[ページの差分](/help/sites-cloud/authoring/features/page-diff.md)を参照してください。
+   この機能の使用方法について詳しくは、[ページの差分](/help/sites-cloud/authoring/sites-console/page-diff.md)を参照してください。
 
 ## 使用するソースページの変更 {#changing-the-source-pages-used}
 

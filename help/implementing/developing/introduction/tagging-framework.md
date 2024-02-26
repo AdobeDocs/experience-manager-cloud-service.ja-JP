@@ -2,8 +2,8 @@
 title: AEM タグ付けフレームワーク
 description: コンテンツにタグを付け、AEM タグ付けインフラストラクチャを使用して分類や整理を行います。
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 タグ付けにより、コンテンツを分類および整理できますタグの分類には、名前空間と分類を使用できます。タグの使用について詳しくは、以下を参照してください。
 
-* コンテンツ作成者としてのコンテンツのタグ付けについては、[タグの使用](/help/sites-cloud/authoring/features/tags.md)を参照してください。
+* コンテンツ作成者としてのコンテンツのタグ付けについては、[タグの使用](/help/sites-cloud/authoring/sites-console/tags.md)を参照してください。
 * タグの作成と管理や、タグが適用されているコンテンツについての管理者の観点については、タグの管理を参照してください。
 
 この記事では、AEM でのタグ付けをサポートしている基盤フレームワークと、それをデベロッパーとして使用する方法を重点的に取り上げます。

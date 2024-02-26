@@ -4,8 +4,8 @@ description: Adobe Experience Manager as a Cloud Service で Dynamic Media を�
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '3811'
 ht-degree: 100%
 
@@ -115,7 +115,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >新しい Dynamic Media 設定が完了すると、Experience Manager as a Cloud Service のインボックス内にステータス通知が届きます。
    >
    >このインボックス通知は、設定が成功したかどうかを知らせるものです。
-   > 詳しくは、[新しい Dynamic Media 設定のトラブルシューティング](#troubleshoot-dm-config)と[インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)を参照してください。
+   > 詳しくは、[新しい Dynamic Media 設定のトラブルシューティング](#troubleshoot-dm-config)と[インボックス](/help/sites-cloud/authoring/inbox.md)を参照してください。
 
 1. 公開前に Dynamic Media コンテンツを安全にプレビューするには、Experience Manager as a Cloud Service ではトークンベースの検証が使用されるので、Experience Manager オーサーは、Dynamic Media コンテンツをデフォルトでプレビューできます。IP を&#x200B;*許可リスト*&#x200B;に登録して、ユーザーがコンテンツを安全にプレビューできるようにすることができます。このアクションを Experience Manager as a Cloud Service で設定するには、[Image Server 用の Dynamic Media 公開設定 -「セキュリティ」タブ](/help/assets/dynamic-media/dm-publish-settings.md#security-tab)を参照してください。<!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
@@ -139,7 +139,7 @@ ACL（アクセス制御リスト）権限など、さらに設定をカスタ�
 
 ![Experience Manager インボックス失敗](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
 
-[インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)も参照してください。
+[インボックス](/help/sites-cloud/authoring/inbox.md)も参照してください。
 
 **新しい Dynamic Media 設定のトラブルシューティングを行うには：**
 

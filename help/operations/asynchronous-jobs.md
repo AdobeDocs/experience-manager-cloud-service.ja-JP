@@ -2,10 +2,10 @@
 title: 非同期ジョブ
 description: Adobe Experience Manager では、リソースを集中的に消費する一部のタスクをバックグラウンド操作として非同期に処理することでパフォーマンスを最適化します。
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
-source-wordcount: '856'
-ht-degree: 100%
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
+source-wordcount: '854'
+ht-degree: 99%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Experience Manager では、パフォーマンスを悪化させないた�
 
 ## 非同期操作のステータスの監視 {#monitor-the-status-of-asynchronous-operations}
 
-AEM が操作を非同期で処理する場合は常に、[インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)とメール（有効になっている場合）で通知を受信します。
+AEM が操作を非同期で処理する場合は常に、[インボックス](/help/sites-cloud/authoring/inbox.md)とメール（有効になっている場合）で通知を受信します。
 
 非同期操作のステータスの詳細を表示するには、**[!UICONTROL バックグラウンド操作]**&#x200B;ページに移動します。
 
@@ -136,6 +136,6 @@ AEM は、毎日午前 1 時にパージジョブを実行して、1 日以上�
 
 >[!MORELIKETHIS]
 >
->* [ページの作成と整理](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
+>* [ページの管理](/help/sites-cloud/authoring/sites-console/managing-pages.md)
 >* [アセットメタデータの一括読み込みおよび書き出し](/help/assets/metadata-import-export.md)
 >* [Connected Assets を使用したリモートデプロイメントからの DAM アセットの共有](/help/assets/use-assets-across-connected-assets-instances.md)

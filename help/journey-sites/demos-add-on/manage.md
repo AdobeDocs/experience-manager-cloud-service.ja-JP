@@ -2,10 +2,10 @@
 title: デモサイトを管理
 description: デモサイトの管理に役立つツールと、デモサイトを削除する方法について説明します。
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 89%
+source-wordcount: '927'
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ AEM Reference Demo Add-On ジャーニーの前のドキュメントである[�
 
 独自のデモサイトができたので、それらの管理方法を知りたいと思われるかもしれません。パイプラインは、デモサイトのコンテンツを提供するためにサイトテンプレートをデプロイしただけでなく、これらのサイトを管理するための一連のユーティリティもデプロイしました。
 
-1. AEMグローバルナビゲーションバーで、「 **ツール** > **参照デモ** > **参照デモユーティリティ**.
+1. AEM グローバルナビゲーションバーで、**ツール**／**Reference Demos**／**Reference Demos Utilities** を選択します。
 
    ![Self-Service Demo Utilities](assets/demo-utilities.png)
 
@@ -49,10 +49,10 @@ AEM Reference Demo Add-On ジャーニーの前のドキュメントである[�
 
    ![ダッシュボード](assets/dashboard.png)
 
-セルフサービスデモユーティリティには、いくつかのツールが用意されています。
+Self-Service Demo Utilities には、いくつかのツールが用意されています。
 
-* **サイトを削除** - この Adobe Experience Manager インスタンスで削除するサイトを選択します。これは破壊的なアクションであり、開始後に元に戻すことはできません。
-* **サイトテンプレートを削除** - この Adobe Experience Manager インスタンスで削除するサイトテンプレートを選択します。サイトテンプレートを削除する前に、そのテンプレートを参照するすべてのサイトも削除されていることを確認してください。これは破壊的なアクションであり、開始後に元に戻すことはできません。
+* **サイトを削除** - この Adobe Experience Manager インスタンスで削除するサイトを選択します。これは破壊的なアクションであり、一度開始すると元に戻すことはできません。
+* **サイトテンプレートを削除** - この Adobe Experience Manager インスタンスで削除するサイトテンプレートを選択します。サイトテンプレートを削除する前に、そのテンプレートを参照するすべてのサイトも削除されていることを確認してください。これは破壊的なアクションであり、一度開始すると元に戻すことはできません。
 * **Prime Author Cache** - Adobe Experience Manager インスタンス内の複数のリソースを取得し、取得時間を高速化します。数秒かかる場合があります。
 * **Android アプリ** - デモ Android アプリをインストールして起動するためのツール。**WKND 単一ページアプリ**&#x200B;に基づいてサイトを作成し、このページに入力します。Android デバイス、エミュレーター、または Bluestacks から使用します。
 * **ユーザーの環境設定** - チュートリアルポップアップダイアログをオフにします。
@@ -62,15 +62,15 @@ AEM Reference Demo Add-On ジャーニーの前のドキュメントである[�
 
 一連の AEM 機能をテストすると、デモサイトや基になるテンプレートさえも不要になる場合があります。デモサイトとサイトテンプレートの両方を簡単に削除できます。
 
-1. 次にアクセス： **参照デモユーティリティ** を選択し、 **サイトを削除**.
+1. 「**Reference Demo Utilities**」にアクセスし、「**サイトを削除**」を選択します。
 
    ![サイトを削除](assets/delete-sites.png)
 
-1. 使用可能なサイトはリストに表示されます。削除するサイトを選択し、 **削除**.
+1. 使用可能なサイトはリストに表示されます。削除するサイト（複数可）を選択し、「**削除**」を選択します。
 
    >[!CAUTION]
    >
-   >サイトとテンプレートの削除は、完全な操作であり、開始後に元に戻すことはできません。
+   >サイトとテンプレートの削除は破壊的なアクションであり、開始後に元に戻すことはできません。
 
 1. ダイアログでサイトの削除を確認します。
 
@@ -93,7 +93,7 @@ AEM Reference Demo Add-On ジャーニーの前のドキュメントである[�
 おめでとうございます。AEM Reference Demos Add-On のジャーニーが完了しました。その結果、以下を習得しました。
 
 * Cloud Manager の基本を理解し、パイプラインがコンテンツと設定を AEM に配信する方法を理解します。
-* Cloud Manager を使用してプログラムを作成する方法を説明します。
+* Cloud Manager を使用してプログラムを作成する方法を理解します。
 * 新しいプログラムの Reference Demos Add-On をアクティブ化する方法を理解し、パイプラインを実行してアドオンコンテンツをデプロイできるようにします。
 * AEM オーサリング環境にアクセスし、テンプレートに基づいてサイトを作成する方法を理解します。
 * Self-Service Demo Utilities へアクセスする方法を理解します。
@@ -105,7 +105,7 @@ AEM Reference Demo Add-On ジャーニーの前のドキュメントである[�
 
 * [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=ja) - Cloud Manager の機能について詳しくは、詳細な技術ドキュメントを直接参照してください。
 * [サイトを作成](/help/sites-cloud/administering/site-creation/create-site.md) - AEM を使用して、サイトテンプレートを使用してサイトを作成し、サイトのスタイルと構造を定義する方法を説明します。
-* [AEM のページ命名規則](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)。AEM ページを整理する際の規則を理解するには、このページを参照してください。
-* [AEM の基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md) - AEM を初めて使用する場合は、ナビゲーションやコンソールの構成などの基本的な概念を理解するために、このドキュメントを参照してください。
+* [AEM のページ命名規則](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices)。AEM ページを整理する際の規則を理解するには、このページを参照してください。
+* [AEM の基本操作](/help/sites-cloud/authoring/basic-handling.md) - AEM を初めて使用する場合は、ナビゲーションやコンソールの構成などの基本的な概念を理解するために、このドキュメントを参照してください。
 * [AEM as a Cloud Service 技術ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ja) - AEM を既にしっかり理解している場合は、詳細な技術ドキュメントを直接参照してください。
 * [サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md) - サイトテンプレートの構造とサイト作成への使用方法について詳しくは、このドキュメントを参照してください。

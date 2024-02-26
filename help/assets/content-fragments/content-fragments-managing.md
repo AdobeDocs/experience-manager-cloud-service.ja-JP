@@ -2,8 +2,8 @@
 title: コンテンツフラグメントの管理（Assets - コンテンツフラグメント）
 description: ヘッドレスコンテンツの基礎として、またはページオーサリング用として AEM コンテンツフラグメントを Assets コンソールを使用して管理する方法について説明します。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 >
 >コンテンツフラグメントは次に使用できます。
 >
->* ページのオーサリング時 -「[コンテンツフラグメントを使用したページオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)」を参照してください。
+>* ページのオーサリング時 -「[コンテンツフラグメントを使用したページオーサリング](/help/sites-cloud/authoring/fragments/content-fragments.md)」を参照してください。
 >* [GraphQL でコンテンツフラグメントを使用するヘッドレスコンテンツ配信用。](/help/assets/content-fragments/content-fragments-graphql.md)
 
 >[!NOTE]
@@ -94,7 +94,7 @@ ht-degree: 100%
 **Assets** コンソールでは、次のいずれかからコンテンツフラグメントに対して様々なアクションを使用できます。
 
 * ツールバーから。フラグメントを選択すると、該当するすべてのアクションを使用できるようになります。
-* [クイックアクション](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)として。個別のフラグメントカードに使用可能なアクションのサブセット。
+* [クイックアクション](/help/sites-cloud/authoring/basic-handling.md#quick-actions)として。個別のフラグメントカードに使用可能なアクションのサブセット。
 
 ![ツールバーのアクション](assets/cfm-managing-02.png)
 
@@ -371,7 +371,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * 作成後、[Assets コンソールで使用可能なアクション](#actions-for-a-content-fragment-assets-console)を使用して。
 * [コンテンツフラグメントエディター](#toolbar-actions-in-the-content-fragment-editor)から。
 
-さらに、[フラグメントを使用するページを公開](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)するとき。フラグメントはページ参照にリスト表示されます。
+さらに、[フラグメントを使用するページを公開](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing)するとき。フラグメントはページ参照にリスト表示されます。
 
 >[!CAUTION]
 >

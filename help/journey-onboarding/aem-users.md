@@ -4,17 +4,17 @@ description: システム管理者が必要なクラウドリソースを設定�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 93%
+source-wordcount: '576'
+ht-degree: 100%
 
 ---
 
 
 # AEM ユーザータスク {#aem-user-tasks}
 
-このオプションの部分は、 [オンボーディングジャーニー](overview.md) AEMユーザーがコンテンツを作成するためにAEMas a Cloud Serviceにアクセスする方法を学びます。
+[オンボーディングジャーニー](overview.md)のこのオプションの部分では、AEM ユーザーが AEM as a Cloud Service にアクセスしてコンテンツを作成する方法を説明します。
 
 ## これまでの説明内容 {#story-so-far}
 
@@ -52,7 +52,7 @@ AEM のオーサーは、AEM にログインしてコンテンツの作成を開
 
 1. Cloud Manager の&#x200B;**プログラムと製品**&#x200B;ページで該当のプログラムを選択して、**概要**&#x200B;ページを起動します。アクセスするプログラムが不明な場合は、システム管理者に問い合わせてください。
 
-1. 次から： **概要** Cloud Manager のページで、 **環境** カード。
+1. Cloud Manager の&#x200B;**概要**&#x200B;ページで、**環境**&#x200B;カードのオーサーリンクをクリックします。
 
    ![環境カード](/help/journey-onboarding/assets/author-environ.png)
 
@@ -64,7 +64,7 @@ AEM のオーサーは、AEM にログインしてコンテンツの作成を開
 >
 >AEM オーサーインスタンスへのリンクをブックマークしておくと、Cloud Manager で毎回同じ処理をすることなく、直接開けるようになります。
 
-## 次のステップ {#whats-next}
+## 次の手順 {#whats-next}
 
 このドキュメントを読み、次の方法を理解することができました。
 
@@ -83,5 +83,5 @@ AEM as a Cloud Service で開発者とデプロイメントマネージャーが
 
 オンボーディングジャーニーのコンテンツの範囲を超えてさらに詳しく知りたい場合に役立つ、追加のオプションリソースを次に示します。
 
-[ページのオーサリングのクイックスタートガイド](/help/sites-cloud/authoring/getting-started/quick-start.md) - AEM におけるオーサリングの基本事項の概要を参照するには、ここから始めてください。
+[ページのオーサリングのクイックスタートガイド](/help/sites-cloud/authoring/quick-start.md) - AEM におけるオーサリングの基本事項の概要を参照するには、ここから始めてください。
 [ヘッドレスオーサリングジャーニー](/help/journey-headless/author/overview.md) - ヘッドレスコンテンツを作成する場合は、このガイド付きの説明に従ってください。

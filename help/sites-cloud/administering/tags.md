@@ -2,8 +2,8 @@
 title: タグの管理
 description: AEM でタグを管理してコンテンツを整理する方法を説明します。
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '2200'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 Adobe Experience Manager（AEM）では、タグが以下のプロパティとなる場合があります。
 
 * ページのコンテンツノード
-   * 詳しくは、[タグの使用](/help/sites-cloud/authoring/features/tags.md)のドキュメントを参照してください。
+   * 詳しくは、[タグの使用](/help/sites-cloud/authoring/sites-console/tags.md)のドキュメントを参照してください。
 * アセットのメタデータノード
    * 詳しくは、[デジタルアセットのメタデータの管理](/help/assets/manage-metadata.md)のドキュメントを参照してください。
 
@@ -183,7 +183,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
    ![タグプロパティの表示](assets/tag-properties.png)
 
-表示モードとパネルの選択について詳しくは、[基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)を参照してください。
+表示モードとパネルの選択について詳しくは、[基本操作](/help/sites-cloud/authoring/basic-handling.md#rail-selector)を参照してください。
 
 ### タグの編集 {#editing-tags}
 
@@ -245,7 +245,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 リスト内の参照先のコンテンツにマウスポインターを置くか選択すると、コンテンツのフルパスが表示されます。
 
-表示モードとパネルの選択について詳しくは、[基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)を参照してください。
+表示モードとパネルの選択について詳しくは、[基本操作](/help/sites-cloud/authoring/basic-handling.md#rail-selector)を参照してください。
 
 ### タグの移動 {#moving-tags}
 

@@ -2,16 +2,16 @@
 title: 検索フォームの設定
 description: Adobe Experience Manager as a Cloud Service の検索フォームの設定。
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: ht
-source-wordcount: '2033'
-ht-degree: 100%
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
+source-wordcount: '2036'
+ht-degree: 96%
 
 ---
 
 # 検索フォームの設定 {#configuring-search-forms}
 
-Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sites-cloud/authoring/getting-started/search.md)メカニズムが付属しています。
+Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sites-cloud/authoring/search.md)メカニズムが付属しています。
 
 これと組み合わせて、コンテンツのフィルタリングに役立つ定義済みのオプションセットもあります。オプションには、**変更日**、**公開ステータス**、**ライブコピーのステータス**&#x200B;などの事前定義されたファセットが含まれており、必要なリソースをすばやく掘り下げることができます。
 
@@ -19,9 +19,9 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
 
 これらを組み合わせることで、次の場所からすばやく簡単にコンテンツを見つけることができます。
 
-* [検索とフィルター](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
-* [パネルセレクター](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
-* [アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)（ページ編集時）
+* [検索とフィルター](/help/sites-cloud/authoring/search.md#search-and-filter)
+* [パネルセレクター](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
+* [アセットブラウザー](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)（ページ編集時）
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
 
 ### 述語 {#predicates}
 
-設定に応じて、次の述語が使用可能です。
+設定に応じて、次の述語を使用できます。
 
 <table>
  <tbody>
@@ -135,7 +135,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
   </tr>
   <tr>
    <td>コンポーネント</td>
-   <td>作成者は、特定のコンポーネント（例：画像ギャラリー）を持つページを検索／フィルタリングできます。<br /> </td>
+   <td>作成者が、特定のコンポーネントを持つページを検索/フィルタリングできます。 例えば、画像ギャラリーなどです。<br /> </td>
    <td>
     <ul>
      <li>プレースホルダー</li>
@@ -145,7 +145,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
     </ul> </td>
   </tr>
   <tr>
-   <td>日付範囲</td>
+   <td>日付の範囲</td>
    <td>指定した範囲内で作成されたリソースの日付プロパティを検索します。検索パネルで、開始日と終了日を指定できます。</td>
    <td>
     <ul>
@@ -210,7 +210,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
     </ul> </td>
   </tr>
   <tr>
-   <td>非表示フィルター</td>
+   <td>非表示のフィルター</td>
    <td>プロパティおよび値のフィルターで、ユーザーには表示されません。</td>
    <td>
     <ul>
@@ -268,7 +268,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
     </ul> </td>
   </tr>
   <tr>
-   <td>オプションプロパティ</td>
+   <td>Options プロパティ</td>
    <td>オプションの 1 つ以上のプロパティで検索します。</td>
    <td>
     <ul>
@@ -380,7 +380,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
   </tr>
   <tr>
    <td>スライダー範囲</td>
-   <td>スライダー機能を使用して範囲の述語を拡張する、共通の検索用述語です。検索対象のプロパティの値は、スライダー制限の範囲内に収まっている必要があります。</td>
+   <td>スライダー機能を使用して範囲の述語を拡張する、共通の検索用述語です。検索対象のプロパティの値は、スライダー制限の範囲内である必要があります。</td>
    <td>
     <ul>
      <li>フィールドラベル</li>
@@ -550,8 +550,8 @@ Sites 専用の述語の、公開およびライブコピーのチェックボ�
 1. **ツール**／**一般**／**検索フォーム**&#x200B;に移動します。
 
 1. カスタマイズする設定を選択します。
-1. **編集**&#x200B;アイコンを使用して、更新用に設定を開きます。
-1. 新規のカスタマイズの場合は、必要に応じて[新しい述語フィールドを追加して設定を定義](#add-edit-a-predicate-field-and-define-field-settings)します。既存のカスタマイズの場合は、既存のフィールドを選択して[設定を更新](#add-edit-a-predicate-field-and-define-field-settings)できます。
+1. 「**編集**」アイコンを使用して、更新する設定を開きます。
+1. 新しいカスタマイズが必要な場合は、 [新しい述語フィールドの追加と設定の定義](#add-edit-a-predicate-field-and-define-field-settings) 必要に応じて。 既存のカスタマイズの場合は、既存のフィールドを選択し、 [設定を更新](#add-edit-a-predicate-field-and-define-field-settings).
 1. 「**完了**」を選択して設定を保存します。変更は、次回設定を使用したときに表示されます。
 
    >[!NOTE]
@@ -654,14 +654,14 @@ Sites 専用の述語の、公開およびライブコピーのチェックボ�
    >1. `/libs/cq/gui/content/common/options/predicates`
    >1. `/apps.` 内で変更作業をおこないます。
 
-1. **検索フォーム**&#x200B;コンソールを開いて、更新する設定を選択します。例えば、「**Sites 管理者の検索パネル**」を選択します。「**編集**」を選択します。
+1. を開きます。 **Formsを検索** コンソールに移動し、更新する設定を選択します。 例： **サイト管理者の検索レール**. 「**編集**」を選択します。
 
 1. 設定により、**オプション**&#x200B;または&#x200B;**オプションプロパティ**&#x200B;を設定に追加します。
 1. フィールドを更新します。具体的には次のフィールドです。
 
    * **プロパティ名**
 
-     ターゲットノードで検索するノードプロパティを指定します。次に例を示します。
+     ターゲットノードで検索するノードプロパティを指定します。例：
 
      `jcr:content/cq:template`
 

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の 2020.8.0 リリースのリリースノート。'
 description: "[!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 のリリースノート。"
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 90%
+source-wordcount: '1031'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 ### [!DNL Sites] の新機能  {#what-is-new-sites}
 
-* [ページとサブページ（ページツリー）を以前のバージョンに戻す](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions)機能。
+* [ページとサブページ（ページツリー）を以前のバージョンに戻す](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions)機能。
 
 * 次の機能を持つ [ローンチを作成](/help/sites-cloud/authoring/launches/overview.md) AEM内 [SPA Editor](/help/implementing/developing/hybrid/introduction.md).
 
@@ -84,7 +84,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
   詳しくは、[エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md)を参照してください。
 
-* アセットプログラムで新しく作成した環境は、スマートコンテンツサービスを使用して自動的に設定されるようになりました。
+* Assets プログラムで新しく作成された環境が、スマートコンテンツサービスで自動的に設定されるようになりました。
 
 * 休止状態の環境を Cloud Manager の&#x200B;**概要**&#x200B;ページで休止解除できます。
 

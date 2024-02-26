@@ -2,8 +2,8 @@
 title: Enterprise DevOps
 description: デプロイメントやコラボレーションを簡単にするために必要なプロセス、メソッドおよびコミュニケーションについて説明します。
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ Adobe Experience Manager（AEM）as a Cloud Service は通常、次のような�
 
 ### 実稼動 - オーサーとパブリッシュ {#production-author-and-publish}
 
-実稼動環境は、実装を[オーサリングおよび公開](/help/sites-cloud/authoring/getting-started/concepts.md)する環境で構成されます。
+実稼動環境は、実装を[オーサリングおよび公開](/help/sites-cloud/authoring/author-publish.md)する環境で構成されます。
 
 実稼動環境は、少なくとも 1 つのオーサーインスタンスと 1 つのパブリッシュインスタンスで構成されます。
 

@@ -5,8 +5,8 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+workflow-type: tm+mt
 source-wordcount: '4072'
 ht-degree: 100%
 
@@ -210,7 +210,7 @@ Experience Manager Assets に含まれる、デフォルトの標準提供イン
 
 ホットスポットを追加する際に、クイックビューのポップアップ表示、ハイパーリンク、またはエクスペリエンスフラグメントとして定義することができます。
 
-[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)を参照してください。
+[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fragments/content-fragments.md)を参照してください。
 
 >[!NOTE]
 >
@@ -277,7 +277,7 @@ Experience Manager Assets に含まれる、デフォルトの標準提供イン
    * 「**[!UICONTROL エクスペリエンスフラグメント]**」を選択します。
 
       * Adobe Experience Manager Sites のユーザーである場合は、検索アイコン（虫眼鏡）を選択してエクスペリエンスフラグメントページを開きます。使用するエクスペリエンスフラグメントを選択します。次に、ページの右上隅にある「**[!UICONTROL 選択]**」を選択します。「ホットスポット管理」ページに戻ります。
-[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)を参照してください。
+[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fragments/content-fragments.md)を参照してください。
 
       * エクスペリエンスフラグメントがバナーに表示されるときの幅と高さを指定します。
 

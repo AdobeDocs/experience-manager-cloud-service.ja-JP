@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
+source-git-commit: 3896dd657acdfc9feca1d3f624512dc23da084d4
 workflow-type: tm+mt
-source-wordcount: '4692'
-ht-degree: 97%
+source-wordcount: '4713'
+ht-degree: 96%
 
 ---
 
@@ -89,7 +89,7 @@ ht-degree: 97%
          + [メンテナンスリリースノート（2023.1.0）](/help/release-notes/maintenance/2023/2023-1-0.md)
    + Cloud Manager のリリースノート {#cloud-manager}
       + [最新のリリースノート](/help/implementing/cloud-manager/release-notes/current.md)
-      + 2024 年 {#2024}
+      + 2024年度 {#2024}
          + [2024.1.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2024/2024-1-0.md)
       + 2023年度 {#2023}
          + [2023.12.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md)
@@ -263,43 +263,51 @@ ht-degree: 97%
       + [AEM Modernization Tools](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
    + [AEM Cloud Service の AEM Sites の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
-   + オーサリング {#authoring}
-      + 概要 {#getting-started}
-         + [ページのオーサリングのクイックスタートガイド](/help/sites-cloud/authoring/getting-started/quick-start.md)
-         + [オーサリングに関する概念](/help/sites-cloud/authoring/getting-started/concepts.md)
-         + [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)
-         + [検索](/help/sites-cloud/authoring/getting-started/search.md)
-         + [アカウント環境の設定 ](/help/sites-cloud/authoring/getting-started/account-environment.md)
-         + [インボックス ](/help/sites-cloud/authoring/getting-started/inbox.md)
-         + [キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-      + [ヘッドレスコンテンツ作成者ジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html?lang=ja)
-      + オーサリングの基本事項 {#fundamentals}
-         + [環境とツール](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
-         + [ページ注釈の追加](/help/sites-cloud/authoring/fundamentals/annotations.md)
-         + [新しいサイトの作成](/help/sites-cloud/authoring/fundamentals/create-site.md)
-         + [ページの作成と整理 ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
-         + [ページのコンテンツの編集](/help/sites-cloud/authoring/fundamentals/editing-content.md)
-         + [リッチテキストエディター](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
-         + [ページプロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md)
-         + [コンテンツのプレビュー](/help/sites-cloud/authoring/fundamentals/previewing-content.md)
-         + [ページの公開](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
-         + [コンテンツフラグメント](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-         + [エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)
-         + [CSV ファイルへの書き出し](/help/sites-cloud/authoring/fundamentals/csv-export.md)
-         + [コンポーネント](/help/sites-cloud/authoring/fundamentals/components.md)
-         + [モバイルデバイス向けのオーサリング](/help/sites-cloud/authoring/fundamentals/mobile.md)
-         + [アクセシブルなコンテンツ（WCAG 2.1 適合）の作成](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
-         + [トラブルシューティング](/help/sites-cloud/authoring/fundamentals/troubleshooting.md)
-         + [キーボードショートカット](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-      + オーサリング機能 {#features}
-         + [ページテンプレート](/help/sites-cloud/authoring/features/templates.md)
-         + [スタイルシステム](/help/sites-cloud/authoring/features/style-system.md)
-         + [ページのバージョン](/help/sites-cloud/authoring/features/page-versions.md)
-         + [ページの差分](/help/sites-cloud/authoring/features/page-diff.md)
-         + [コンポーネントコンソール](/help/sites-cloud/authoring/features/components-console.md)
-         + [レスポンシブレイアウト](/help/sites-cloud/authoring/features/responsive-layout.md)
-         + [タグの使用](/help/sites-cloud/authoring/features/tags.md)
-         + [プログレッシブ web アプリケーション機能の有効化](/help/sites-cloud/authoring/features/enable-pwa.md)
+   + オーサリング{#authoring}
+      + [ページのオーサリングのクイックスタートガイド](/help/sites-cloud/authoring/quick-start.md)
+      + [基本操作](/help/sites-cloud/authoring/basic-handling.md)
+      + [オーサリングと公開](/help/sites-cloud/authoring/author-publish.md)
+      + [オーサリング方法](/help/sites-cloud/authoring/authoring-methods.md)
+      + [検索](/help/sites-cloud/authoring/search.md)
+      + [アカウント環境の設定 ](/help/sites-cloud/authoring/account-environment.md)
+      + [インボックス ](/help/sites-cloud/authoring/inbox.md)
+      + [コンポーネントコンソール](/help/sites-cloud/authoring/components-console.md)
+      + [パスの選択](/help/sites-cloud/authoring/path-selection.md)
+      + [トラブルシューティング](/help/sites-cloud/authoring/troubleshooting.md)
+      + サイトコンソール {#sites-console}
+         + [サイトコンソール](/help/sites-cloud/authoring/sites-console/introduction.md)
+         + [コンソールサイドパネル](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
+         + [新しいサイトの作成](/help/sites-cloud/authoring/sites-console/create-site.md)
+         + [ページの整理](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+         + [ページの作成](/help/sites-cloud/authoring/sites-console/creating-pages.md)
+         + [ページの管理](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+         + [ページプロパティ](/help/sites-cloud/authoring/sites-console/page-properties.md)
+         + [ページのプレビュー](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+         + [ページの公開](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
+         + [ページテンプレート](/help/sites-cloud/authoring/sites-console/templates.md)
+         + [ページのバージョン](/help/sites-cloud/authoring/sites-console/page-versions.md)
+         + [ページの差分](/help/sites-cloud/authoring/sites-console/page-diff.md)
+         + [タグの使用](/help/sites-cloud/authoring/sites-console/tags.md)
+         + [プログレッシブ web アプリケーション機能の有効化](/help/sites-cloud/authoring/sites-console/enable-pwa.md)
+         + [キーボードショートカット](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)
+         + [CSV ファイルへの書き出し ](/help/sites-cloud/authoring/sites-console/csv-export.md)
+      + ページエディター {#page-editor}
+         + [ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)
+         + [エディターサイドパネル](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
+         + [ページの編集](/help/sites-cloud/authoring/page-editor/edit-content.md)
+         + [ページ注釈の追加](/help/sites-cloud/authoring/page-editor/annotations.md)
+         + [リッチテキストエディター](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
+         + [レスポンシブレイアウト](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+         + [コンポーネント](/help/sites-cloud/authoring/page-editor/components.md)
+         + [モバイルデバイス向けのオーサリング](/help/sites-cloud/authoring/page-editor/mobile.md)
+         + [アクセシブルなコンテンツ（WCAG 2.1 適合）の作成](/help/sites-cloud/authoring/page-editor/accessible-content.md)
+         + [キーボードショートカット](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
+         + [スタイルシステム](/help/sites-cloud/authoring/page-editor/style-system.md)
+         + [取り消し/やり直しの制限](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+      + フラグメント {#fragments}
+         + [コンテンツフラグメント](/help/sites-cloud/authoring/fragments/content-fragments.md)
+         + [エクスペリエンスフラグメント](/help/sites-cloud/authoring/fragments/experience-fragments.md)
+         + [ヘッドレスコンテンツ作成者ジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html?lang=ja)
       + プロジェクト {#projects}
          + [プロジェクトの操作](/help/sites-cloud/authoring/projects/overview.md)
          + [プロジェクトの管理](/help/sites-cloud/authoring/projects/managing.md)
@@ -345,6 +353,7 @@ ht-degree: 97%
          + [フロントエンドパイプラインの有効化](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
          + [サイトパネルの使用](/help/sites-cloud/administering/site-creation/site-rail.md)
          + [サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)
+         + [レスポンシブレイアウト](/help/sites-cloud/administering/responsive-layout.md)
          + [サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md)
          + AEM クイックサイト作成ジャーニー {#quick-site}
             + [AEM クイックサイト作成について](/help/journey-sites/quick-site/overview.md)
@@ -998,6 +1007,7 @@ ht-degree: 97%
          + [ページの差分](/help/implementing/developing/introduction/page-diff.md)
          + [エディターの制限事項](/help/implementing/developing/introduction/editor-limitations.md)
          + [命名規則](/help/implementing/developing/introduction/naming-conventions.md)
+         + [レスポンシブデザイン](/help/implementing/developing/introduction/responsive-design.md)
          + コンポーネントとテンプレート {#components-templates}
             + [コンポーネントの概要](/help/implementing/developing/components/overview.md)
             + [テンプレート](/help/implementing/developing/components/templates.md)

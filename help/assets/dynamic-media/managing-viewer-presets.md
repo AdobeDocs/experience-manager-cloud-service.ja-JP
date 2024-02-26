@@ -5,8 +5,8 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+workflow-type: tm+mt
 source-wordcount: '4326'
 ht-degree: 100%
 
@@ -114,7 +114,7 @@ Dynamic Media に付属するすべての標準提供のビューアのプリセ
    <td><p>パノラマ画像およびパノラマ VR ビューアでは球状のパノラマ画像をレンダリングして、部屋、プロパティ、場所、風景などの 360° の視聴エクスペリエンスにユーザーを没入させます。</p> <p>アップロードした画像が球パノラマと見なされるには、次のいずれかまたは両方を満たす必要があります。</p>
     <ul>
      <li>アスペクト比が 2:1 です。</li>
-     <li>キーワード <code>equirectangular</code>、または <code>spherical</code> と <code>panorama</code>、または <code>spherical </code> と <code>panoramic</code> でタグ付けされている必要があります。<a href="/help/sites-cloud/authoring/features/tags.md">タグの使用</a>を参照してください。</li>
+     <li>キーワード <code>equirectangular</code>、または <code>spherical</code> と <code>panorama</code>、または <code>spherical </code> と <code>panoramic</code> でタグ付けされている必要があります。<a href="/help/sites-cloud/authoring/sites-console/tags.md">タグの使用</a>を参照してください。</li>
     </ul> <p>アスペクト比とキーワードの両方の条件が、アセットの詳細ページと「パノラマメディア」WCM コンポーネントのパノラマアセットに適用されます。</p></td>
   </tr>
     <tr>

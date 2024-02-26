@@ -2,10 +2,10 @@
 title: コンポーネントリファレンスガイド
 description: コンポーネントとその構造の詳細に関するデベロッパー向けリファレンスガイド
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '3642'
-ht-degree: 96%
+source-wordcount: '3481'
+ht-degree: 100%
 
 ---
 
@@ -55,16 +55,16 @@ Sling Resource Merger を使用し、`sling:resourceSuperType` プロパティ�
 
 ### コンテンツのロジックとマークアップのレンダリング  {#content-logic-and-rendering-markup}
 
-コンポーネントは [HTML](https://www.w3schools.com/htmL/html_intro.asp) を使用してレンダリングされます。コンポーネントは、必要なコンテンツを取得し、必要に応じてオーサー環境とパブリッシュ環境の両方でレンダリングするために必要なHTMLを定義する必要があります。
+コンポーネントは [HTML](https://www.w3schools.com/htmL/html_intro.asp) を使用してレンダリングされます。コンポーネントでは、必要なコンテンツを取得して、オーサー環境とパブリッシュ環境の両方で必要に応じてレンダリングするために必要な HTML を定義しなければなりません。
 
 マークアップおよびレンダリングを行うコードと、コンポーネントのコンテンツ選択に関するロジックを制御するコードは、分離しておくことをお勧めします。
 
-この方法をサポートするテンプレート言語が [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ja) です。HTL では、基盤となるビジネスロジックを定義するときにのみプログラミング言語を使用します。このメカニズムは、特定のビューに対して呼び出されるコードを強調表示し、必要に応じて、同じコンポーネントの異なるビューに対して特定のロジックを許可します。
+この方法をサポートするテンプレート言語が [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ja) です。HTL では、基盤となるビジネスロジックを定義するときにのみプログラミング言語を使用します。このメカニズムは、特定のビューに対して呼び出されるコードを強調表示し、必要に応じて、同じコンポーネントの異なるビューに対して特定のロジックを使用できるようにします。
 
 この（オプション）ロジックは様々な方法で実装でき、特定のコマンドを使用して HTL から呼び出します。
 
 * Java の使用 - [HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=ja) を使用すると、HTL ファイルからカスタム Java クラスのヘルパーメソッドへのアクセスが可能になります。そのため、Java コードを使用して、コンポーネントのコンテンツを選択および設定するためのロジックを実装できます。
-* JavaScript の使用- [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=ja) を使用すると、HTL ファイルから JavaScript で書かれたヘルパーコードへのアクセスが可能になります。これにより、JavaScript コードを使用して、コンポーネントコンテンツの選択と設定のロジックを実装できます。
+* JavaScript の使用 - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=ja) を使用すると、HTL ファイルから JavaScript で書かれたヘルパーコードへのアクセスが可能になります。この結果、JavaScript コードを使用して、コンポーネントのコンテンツを選択および設定するためのロジックを実装できます。
 * クライアントサイドライブラリの使用 - 最近の Web サイトは、複雑な JavaScript や CSS コードを利用したクライアントサイド処理に大きく依存しています。詳しくは、「[AEM as a Cloud Service でのクライアントサイドライブラリの使用](/help/implementing/developing/introduction/clientlibs.md)」ドキュメントを参照してください。
 
 ## コンポーネント構造 {#structure}
@@ -103,7 +103,7 @@ AEM コンポーネントの構造は強力で柔軟性があります。以下�
 * **ルートノード**：
    * `<mycomponent> (cq:Component)` - コンポーネントの階層ノード
 * **重要なプロパティ**：
-   * `jcr:title` - コンポーネントのタイトル。コンポーネントが[コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)または[コンポーネントコンソール](/help/sites-cloud/authoring/features/components-console.md)リストされているときにラベルとして使用されます
+   * `jcr:title` - コンポーネントのタイトル。コンポーネントが[コンポーネントブラウザー](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)または[コンポーネントコンソール](/help/sites-cloud/authoring/components-console.md)リストされているときにラベルとして使用されます
    * `jcr:description` - コンポーネントの説明。コンポーネントブラウザーおよびコンポーネントコンソールでマウスオーバーヒントとして使用
    * 詳しくは、「[コンポーネントアイコン](#component-icon)」の節を参照してください。
 * **重要な子ノード**：
@@ -141,7 +141,7 @@ AEM コンポーネントの構造は強力で柔軟性があります。以下�
 
 スーパーコンポーネントからアイコンの継承をキャンセルするために、コンポーネントで空の `abbreviation` プロパティを設定すると、デフォルトの動作に戻ります。
 
-[コンポーネントコンソール](/help/sites-cloud/authoring/features/components-console.md#component-details)には、特定のコンポーネントのアイコンの定義方法が表示されます。
+[コンポーネントコンソール](/help/sites-cloud/authoring/components-console.md#component-details)には、特定のコンポーネントのアイコンの定義方法が表示されます。
 
 #### SVG アイコンの例 {#svg-icon-example}
 
@@ -166,7 +166,7 @@ AEM コンポーネントの構造は強力で柔軟性があります。以下�
 | 名前 | 種類 | 説明 |
 |---|---|---|
 | `.` | `cq:Component` | これは現在のコンポーネントを表します。ノードタイプ `cq:Component` のコンポーネント。 |
-| `componentGroup` | `String` | これは、[コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)でコンポーネントを選択できるグループを表します。「`.`」で始まる値は、他のコンポーネントが継承する基本コンポーネントなど、UI から選択できないコンポーネントに使用されます。 |
+| `componentGroup` | `String` | これは、[コンポーネントブラウザー](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)でコンポーネントを選択できるグループを表します。「`.`」で始まる値は、他のコンポーネントが継承する基本コンポーネントなど、UI から選択できないコンポーネントに使用されます。 |
 | `cq:isContainer` | `Boolean` | コンポーネントがコンテナコンポーネントかどうか、したがって段落システムなど他のコンポーネントを格納できるかどうかを示します。 |
 | `cq:dialog` | `nt:unstructured` | これは、コンポーネントの編集ダイアログの定義です。 |
 | `cq:design_dialog` | `nt:unstructured` | これは、コンポーネントのデザインダイアログの定義です。 |
@@ -179,9 +179,9 @@ AEM コンポーネントの構造は強力で柔軟性があります。以下�
 | `jcr:title` | `String` | コンポーネントのタイトルです。 |
 | `sling:resourceSuperType` | `String` | 設定した場合、コンポーネントの継承元がこのコンポーネントになります。 |
 | `component.html` | `nt:file` | コンポーネントの HTL スクリプトファイルです。 |
-| `cq:icon` | `String` | この値は、[&#128279;](#component-icon)コンポーネントのアイコンを指し、コンポーネントブラウザーに表示されます。 |
+| `cq:icon` | `String` | この値は、](#component-icon)コンポーネントのアイコン[を指し、コンポーネントブラウザーに表示されます。 |
 
-を見ると、 **テキスト** コンポーネントには、次の要素のいくつかが表示されます。
+**テキスト**&#x200B;コンポーネントを見ると、次のいくつかの要素が表示されます。
 
 ![テキストコンポーネントの構造](assets/components-text.png)
 
@@ -199,7 +199,7 @@ AEM コンポーネントの構造は強力で柔軟性があります。以下�
 
 ### ダイアログ {#dialogs}
 
-ダイアログは、コンポーネントの主要な要素の 1 つです。作成者がコンテントページでコンポーネントを設定し、必要情報を提供するためのインターフェイスをダイアログが備えているからです。コンテンツ作成者がコンポーネントとやり取りする方法の詳細については、[オーサリングドキュメント](/help/sites-cloud/authoring/fundamentals/editing-content.md)を参照してください。
+ダイアログは、コンポーネントの主要な要素の 1 つです。作成者がコンテントページでコンポーネントを設定し、必要情報を提供するためのインターフェイスをダイアログが備えているからです。コンテンツ作成者がコンポーネントとやり取りする方法の詳細については、[オーサリングドキュメント](/help/sites-cloud/authoring/page-editor/edit-content.md)を参照してください。
 
 コンポーネントの複雑さに応じて、ダイアログに 1 つ以上のタブが必要になる場合があります。
 
@@ -221,9 +221,9 @@ AEM コンポーネントのダイアログ：
 
 ### デザインダイアログ {#design-dialogs}
 
-デザインダイアログは、コンテンツの編集と構成に使用されるダイアログに似ていますが、テンプレート作成者がページテンプレート上のそのコンポーネントのデザインの詳細をプロ構成および提供するためのインターフェイスを提供します。次に、コンテンツ作成者がページテンプレートを使用してコンテンツページを作成します。テンプレートの作成方法の詳細については、[テンプレートドキュメント](/help/sites-cloud/authoring/features/templates.md)を参照してください。
+デザインダイアログは、コンテンツの編集と構成に使用されるダイアログに似ていますが、テンプレート作成者がページテンプレート上のそのコンポーネントのデザインの詳細をプロ構成および提供するためのインターフェイスを提供します。次に、コンテンツ作成者がページテンプレートを使用してコンテンツページを作成します。テンプレートの作成方法の詳細については、[テンプレートドキュメント](/help/sites-cloud/authoring/sites-console/templates.md)を参照してください。
 
-[ページテンプレートの編集時にはデザインダイアログが使用されます](/help/sites-cloud/authoring/features/templates.md)。ただし、すべてのコンポーネントで必要とされるわけではありません。例えば、**タイトル**&#x200B;と&#x200B;**画像コンポーネント**&#x200B;の両方にデザインのダイアログがありますが、**ソーシャルメディア共有コンポーネント**&#x200B;はありません。
+[ページテンプレートの編集時にはデザインダイアログが使用されます](/help/sites-cloud/authoring/sites-console/templates.md)。ただし、すべてのコンポーネントで必要とされるわけではありません。例えば、**タイトル**&#x200B;と&#x200B;**画像コンポーネント**&#x200B;の両方にデザインのダイアログがありますが、**ソーシャルメディア共有コンポーネント**&#x200B;はありません。
 
 ### Coral UI と Granite UI {#coral-and-granite}
 
@@ -250,7 +250,7 @@ Content not found
 
 コンポーネントダイアログで使用するウィジェットを作成するには、Granite UI フィールドコンポーネントを作成する必要があります。
 
-ダイアログをフォーム要素の単純なコンテナと見なす場合、ダイアログコンテンツの主なコンテンツをフォームフィールドとして表示することもできます。新しいフォームフィールドを作成するには、リソースタイプを作成する必要があります。これは、コンポーネントの作成と同じです。 この作業を容易にするために、Granite UI は、`sling:resourceSuperType` を使用して以下を継承する汎用フィールドコンポーネントを提供しています。
+ダイアログをフォーム要素の単純なコンテナと見なす場合、ダイアログコンテンツの主なコンテンツをフォームフィールドとして表示することもできます。新しいフォームフィールドを作成するには、リソースタイプを作成する必要があります。これは、コンポーネントの作成と同じです。この作業を容易にするために、Granite UI は、`sling:resourceSuperType` を使用して以下を継承する汎用フィールドコンポーネントを提供しています。
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -278,7 +278,7 @@ Content not found
 
 コンポーネントを定義した上で、使用可能にする必要があります。コンポーネントをテンプレートで使用できるようにするには、テンプレートのレイアウトコンテナのポリシーでそのコンポーネントを有効にする必要があります。
 
-テンプレートの作成方法の詳細については、[テンプレートドキュメント](/help/sites-cloud/authoring/features/templates.md)を参照してください。
+テンプレートの作成方法の詳細については、[テンプレートドキュメント](/help/sites-cloud/authoring/sites-console/templates.md)を参照してください。
 
 ### コンポーネントおよびコンポーネントによって作成されるコンテンツ {#components-and-the-content-they-create}
 
@@ -441,7 +441,7 @@ Granite UI および Granite UI ウィジェットでのフィールド検証は
 
 ### ダイアログの可用性の検出 {#dialog-ready}
 
-ダイアログが使用可能で準備が整ったときにのみ実行する必要があるカスタム JavaScript がある場合は、 `dialog-ready` イベント。
+ダイアログが使用可能で準備が整っている場合にのみ実行する必要があるカスタム JavaScript がある場合は、`dialog-ready` イベントをリッスンする必要があります。
 
 このイベントは、ダイアログが読み込まれて（または再度読み込まれて）、使用の準備ができたときにトリガーされます。つまり、ダイアログの DOM に変更（作成／更新）がある場合に必ずトリガーされます。
 
@@ -469,7 +469,7 @@ Granite UI および Granite UI ウィジェットでのフィールド検証は
 
 ![README.md （コンポーネント構造内）](assets/components-documentation.png)
 
-その後、このマークダウンは[コンポーネントコンソール](/help/sites-cloud/authoring/features/components-console.md)に表示されるようになります。
+その後、このマークダウンは[コンポーネントコンソール](/help/sites-cloud/authoring/components-console.md)に表示されるようになります。
 
 ![コンポーネントコンソールに表示される README.md](assets/components-documentation-console.png)
 

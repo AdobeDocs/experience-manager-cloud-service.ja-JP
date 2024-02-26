@@ -2,16 +2,16 @@
 title: ページプロパティのビューのカスタマイズ
 description: 作成者がページのプロパティを表示および編集する方法について説明します。
 exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '361'
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
+workflow-type: tm+mt
+source-wordcount: '352'
 ht-degree: 100%
 
 ---
 
 # ページプロパティのビューのカスタマイズ{#customizing-views-of-page-properties}
 
-どのページにも、ユーザーが表示および編集できる一連の[プロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md)があります。ページ作成時に使用されるプロパティもあれば（作成ビュー）、後の段階で表示および編集できるプロパティもあります（編集ビュー）。これらのページプロパティは、適切なページコンポーネントのダイアログ（`cq:dialog`）で定義し、使用できるようにします。
+どのページにも、ユーザーが表示および編集できる一連の[プロパティ](/help/sites-cloud/authoring/sites-console/page-properties.md)があります。ページ作成時に使用されるプロパティもあれば（作成ビュー）、後の段階で表示および編集できるプロパティもあります（編集ビュー）。これらのページプロパティは、適切なページコンポーネントのダイアログ（`cq:dialog`）で定義し、使用できるようにします。
 
 各ページプロパティのデフォルトステートは次のとおりです。
 
@@ -39,7 +39,7 @@ ht-degree: 100%
 
 ページコンポーネントのダイアログを設定し、適切なノードプロパティを適用することによって、使用可能なフィールドを設定することもできます。
 
-例えば、デフォルトでは、[**ページを作成**&#x200B;ウィザード](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)には「**その他のタイトルと説明**」の下にグループ化されたフィールドが表示されます。これらのフィールドを非表示にするには、次のように設定します。
+例えば、デフォルトでは、[**ページを作成**&#x200B;ウィザード](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page)には「**その他のタイトルと説明**」の下にグループ化されたフィールドが表示されます。これらのフィールドを非表示にするには、次のように設定します。
 
 1. `/apps` の下にページコンポーネントを作成します。
 1. ページコンポーネントの`basic`セクションにオーバーライドを作成します（[Sling リソースマネージャー](/help/implementing/developing/introduction/sling-resource-merger.md) が提供する *ダイアログの差分* を使用）。例を以下に示します。

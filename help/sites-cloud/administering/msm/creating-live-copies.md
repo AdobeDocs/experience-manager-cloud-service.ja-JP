@@ -4,10 +4,10 @@ description: ライブコピーを作成および同期して、サイト全体�
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '4270'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 94%
 
 ブループリント設定を作成するには、以下を実行します。
 
-1. [&#128279;](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)**ツール**&#x200B;メニューに移動し、**Sites** メニューを選択します。
+1. [](/help/sites-cloud/authoring/basic-handling.md#global-navigation)**ツール**&#x200B;メニューに移動し、**Sites** メニューを選択します。
 1. 「**ブループリント**」を選択し、**ブループリント設定**&#x200B;コンソールを開きます。
 
    ![ブループリント設定](../assets/blueprint-configurations.png)
@@ -72,7 +72,7 @@ ht-degree: 94%
 
 以下の手順で、既存のブループリント設定を編集または削除できます。
 
-1. [&#128279;](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)**ツール**&#x200B;メニューに移動し、**Sites** メニューを選択します。
+1. [](/help/sites-cloud/authoring/basic-handling.md#global-navigation)**ツール**&#x200B;メニューに移動し、**Sites** メニューを選択します。
 1. 「**ブループリント**」を選択し、**ブループリント設定**&#x200B;コンソールを開きます。
 
    ![ブループリント設定](../assets/blueprint-configurations.png)
@@ -84,7 +84,7 @@ ht-degree: 94%
 
 ## ライブコピーの作成 {#creating-a-live-copy}
 
-ライブコピーを作成する方法はいくつかあります。
+ライブコピーを作成するいくつかの方法があります。
 
 ### ページのライブコピーの作成 {#creating-a-live-copy-of-a-page}
 
@@ -110,11 +110,11 @@ ht-degree: 94%
 
    ![ライブコピーを作成](../assets/create-live-copy.png)
 
-1. ソースページを選択し、「 **次へ**. 次に例を示します。
+1. ソースページを選択し、「**次へ**」を選択します。次に例を示します。
 
    ![ライブコピーソースの選択](../assets/live-copy-from.png)
 
-1. ライブコピーの宛先パスを指定し（ライブコピーの親フォルダーまたはページを開く）、「 」を選択します。 **次へ**.
+1. （ライブコピーの親フォルダーまたはページを開いて）ライブコピーの宛先のパスを指定し、「**次へ**」を選択します。
 
    ![ライブコピーの宛先の選択](../assets/live-copy-to.png)
 
@@ -160,7 +160,7 @@ ht-degree: 94%
 * **名前**：（オプション）ライブコピーのルートページを格納する JCR ノードの名前。デフォルト値はタイトルに基づいて指定されます。
 * **サイト所有者**：（オプション）ライブコピーの責任者に関する情報
 * **ライブコピー**：ソースサイトとのライブ関係を確立するには、このオプションを選択します。このオプションを選択しない場合、ブループリントのコピーは作成されますが、その後ソースと同期されません。
-* **ロールアウトの設定**：（オプション）ライブコピーの同期に使用するロールアウト設定を 1 つ以上選択します。デフォルトでは、ロールアウト設定はブループリントから継承されます。詳しくは、[使用するロールアウト設定の指定](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)を参照してください。
+* **ロールアウトの設定**：（オプション）ライブコピーの同期に使用するロールアウト設定を 1 つ以上選択します。デフォルトでは、ロールアウト設定はブループリントから継承されます。 詳しくは、 [使用するロールアウト設定の指定](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) を参照してください。
 
 ブループリント設定からサイトのライブコピーを作成するには：
 
@@ -169,9 +169,9 @@ ht-degree: 94%
 
    ![ブループリントからサイトを作成する](../assets/create-site-from-blueprint.png)
 
-1. 以下を使用します。 **初期言語** セレクター：ライブコピーに使用するブループリントサイトの言語を指定します。
+1. **初期言語**&#x200B;セレクターを使用して、ライブコピーに使用するブループリントサイトの言語を選択します。
 
-   デフォルトでは、使用可能なすべての言語が選択されます。言語を削除するには、 **X** 言語の横に表示されます。
+   デフォルトでは、使用可能なすべての言語が選択されます。言語を削除するには、言語の横に表示される **X** を選択します。
 
    次に例を示します。
 
@@ -207,17 +207,17 @@ ht-degree: 94%
 
    ![ページプロパティの「ライブコピー」タブ](../assets/live-copy-inherit.png)
 
-   詳しくは、「ライブコピーの概要コンソール」の記事の、[&#128279;](live-copy-overview.md#using-the-live-copy-overview)ライブコピーの概要の使用を参照してください。
+   詳しくは、「ライブコピーの概要コンソール」の記事の、](live-copy-overview.md#using-the-live-copy-overview)ライブコピーの概要の使用[を参照してください。
 
 ### ブループリントページのライブコピーの確認 {#seeing-the-live-copies-of-a-blueprint-page}
 
-（ブループリント設定で参照される）ブループリントのページには、現在の（ブループリント）ページをソースとして使用するライブコピーページのリストが表示されます。このリストを使用してライブコピーを追跡します。このリストは[ページプロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md)の「**ブループリント**」タブに表示されます。
+（ブループリント設定で参照される）ブループリントのページには、現在の（ブループリント）ページをソースとして使用するライブコピーページのリストが表示されます。このリストを使用してライブコピーを追跡します。このリストは[ページプロパティ](/help/sites-cloud/authoring/sites-console/page-properties.md)の「**ブループリント**」タブに表示されます。
 
 ![ページプロパティの「ブループリント」タブ](../assets/live-copy-blueprint-tab.png)
 
 ## ライブコピーの同期 {#synchronizing-your-live-copy}
 
-ライブコピーを同期する方法はいくつかあります。
+ライブコピーを同期するいくつかの方法があります。
 
 ### ブループリントのロールアウト {#rolling-out-a-blueprint}
 
@@ -249,7 +249,7 @@ ht-degree: 94%
 
 #### 参照レールからのブループリントのロールアウト {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. **Sites** コンソールで、ライブコピー内のページを選択して（ツールバーの）**[参照](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;パネルを開きます。
+1. **Sites** コンソールで、ライブコピー内のページを選択して（ツールバーの）**[参照](/help/sites-cloud/authoring/basic-handling.md#references)**&#x200B;パネルを開きます。
 1. リストから「**ブループリント**」オプションを選択し、このページに関連付けられているブループリントを表示します。
 1. リストから必要なブループリントを選択します。
 1. 「**ロールアウト**」を選択します。
@@ -305,7 +305,7 @@ ht-degree: 94%
 
 1. **Sites** コンソールで、ライブコピーページを選択してプロパティを開きます。
 1. 「**ライブコピー**」タブを開きます。
-1. 選択 **同期**.
+1. 「**同期**」を選択します。
 
    ![同期ボタン](../assets/synchronize.png)
 
@@ -333,7 +333,7 @@ ht-degree: 94%
 
 >[!TIP]
 >
->ライブコピー内にページを手動で作成した場合、新しいページはライブコピーに対してローカルに作成されます。つまり、新しいページには、関連付けられている対応するソースページがありません。
+>ライブコピー内にページを手動で作成すると、その新しいページはライブコピーのローカルになります。つまり、関連付けられた対応のソースページがありません。
 >
 >関連付けられたローカルページを作成する場合のベストプラクティスは、ソース内にローカルページを作成し、ディープロールアウトを実行することです。これにより、ページがライブコピーとしてローカルに作成されます。
 
@@ -417,7 +417,7 @@ ht-degree: 94%
 
 ![再開ボタン](../assets/resume.png)
 
-選択すると、ダイアログボックスが表示されます。必要に応じて同期を選択し、アクションを確定できます。
+選択すると、ダイアログボックスが表示されます。必要に応じて、同期を選択し、アクションを確定できます。
 
 #### ライブコピーの概要からのライブコピーページの再開 {#resume-a-live-copy-page-from-the-live-copy-overview}
 
@@ -463,11 +463,11 @@ ht-degree: 94%
    >
    >詳しくは、[ライブコピー - 構成](overview.md#live-copies-composition)を参照してください。
 
-1. 選択 **保存** をクリックして更新を保持します。
+1. 「**保存**」を選択して、更新内容を保持します。
 
 ### コンポーネントの継承のキャンセル {#cancelling-inheritance-for-a-component}
 
-コンポーネントについてライブコピーの継承をキャンセルして、コンポーネントがソースコンポーネントと同期されないようにします。必要に応じて、後から継承を有効にすることができます。
+コンポーネントについてライブコピーの継承をキャンセルして、コンポーネントがソースコンポーネントと同期されないようにします。必要に応じて、後で継承を有効にすることができます。
 
 >[!NOTE]
 >
@@ -479,7 +479,7 @@ ht-degree: 94%
 
    ![コンポーネントツールバーの継承](../assets/inheritance-toolbar.png)
 
-1. コンポーネントツールバーで、 **継承をキャンセル** アイコン。
+1. コンポーネントツールバーで、**継承をキャンセル**&#x200B;アイコンを選択します。
 
    ![継承のキャンセルアイコン](../assets/cancel-inheritance-icon.png)
 
@@ -489,7 +489,7 @@ ht-degree: 94%
 
 ### コンポーネントの継承の再有効化 {#re-enabling-inheritance-for-a-component}
 
-コンポーネントの継承を有効にするには、 **継承を再度有効にする** アイコンをクリックします。
+コンポーネントの継承を有効にするには、コンポーネントツールバーの&#x200B;**継承を再度有効にする**&#x200B;アイコンを選択します。
 
 ![継承アイコンを再度有効化する](../assets/re-enable-inheritance-icon.png)
 
@@ -523,7 +523,7 @@ ht-degree: 94%
 
 ![継承されないプロパティ](../assets/properties-not-inherited.png)
 
-必要に応じて、後でプロパティの継承を再度有効にすることができます。
+必要に応じて、プロパティの継承を後から再度有効にすることができます。
 
 >[!NOTE]
 >
@@ -534,11 +534,11 @@ ht-degree: 94%
 
    ![継承のキャンセルボタン](../assets/cancel-inheritance-button.png)
 
-1. Adobe Analytics の **継承をキャンセル** 確認ダイアログ、「 」を選択 **はい**.
+1. **継承をキャンセル**&#x200B;確認ダイアログで、「**はい**」を選択します。
 
 ### ライブコピーページのプロパティの復帰 {#revert-properties-of-a-live-copy-page}
 
-プロパティの継承を有効にするには、 **継承を元に戻す** プロパティの横に表示されるアイコン。
+プロパティの継承を有効にするには、プロパティの横に表示される&#x200B;**継承を元に戻す**&#x200B;アイコンを選択します。
 
 ![継承を元に戻すボタン](../assets/revert-inheritance-button.png)
 
@@ -575,8 +575,8 @@ ht-degree: 94%
 
 加えた変更をトラックするには、**参照**&#x200B;でブループリントページを確認し、ライブコピーページと比較します。
 
-1. **Sites** コンソールで、[ブループリントページまたはライブコピーページに移動し、ページを選択します](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。
-1. 「**[参照](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**」パネルを開き、状況に応じて次のいずれかを選択します。
+1. **Sites** コンソールで、[ブループリントページまたはライブコピーページに移動し、ページを選択します](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)。
+1. 「**[参照](/help/sites-cloud/authoring/basic-handling.md#references)**」パネルを開き、状況に応じて次のいずれかを選択します。
 
    * **ブループリント**
    * **ライブコピー**
@@ -592,7 +592,7 @@ ht-degree: 94%
 
 1. ライブコピーページとブループリントページが横に並んで表示されます。
 
-   比較機能の使用方法について詳しくは、[ページの差分](/help/sites-cloud/authoring/features/page-diff.md)を参照してください。
+   比較機能の使用方法について詳しくは、[ページの差分](/help/sites-cloud/authoring/sites-console/page-diff.md)を参照してください。
 
 ## ライブコピーの分離 {#detaching-a-live-copy}
 

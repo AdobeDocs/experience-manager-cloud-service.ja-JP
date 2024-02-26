@@ -5,8 +5,8 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: e2d79742c2097748d736bc4d2d2046711d978fc5
-workflow-type: ht
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+workflow-type: tm+mt
 source-wordcount: '3166'
 ht-degree: 100%
 
@@ -309,7 +309,7 @@ Dynamic Media コンポーネントを使用して、スマート切り抜き画
 パノラマメディアコンポーネントは、球状のパノラマ画像のアセット用です。このような画像は、部屋、不動産、場所、または風景の 360 度の視聴エクスペリエンスを提供します。画像が球状のパノラマとして認定されるには、以下の一方または両方の条件を満たしている必要があります。
 
 * アスペクト比が 2:1 です。
-* キーワード `equirectangular` または（`spherical` + `panorama`）または（`spherical` + `panoramic`）でタグ付けされている必要があります。[タグの使用](/help/sites-cloud/authoring/features/tags.md)を参照してください。
+* キーワード `equirectangular` または（`spherical` + `panorama`）または（`spherical` + `panoramic`）でタグ付けされている必要があります。[タグの使用](/help/sites-cloud/authoring/sites-console/tags.md)を参照してください。
 
 縦横比とキーワードの両方の条件が、アセットの詳細ページと「**[!UICONTROL パノラマメディア]**」WCM コンポーネントのパノラマアセットに適用されます。
 

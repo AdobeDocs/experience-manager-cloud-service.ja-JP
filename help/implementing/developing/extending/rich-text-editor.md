@@ -3,16 +3,16 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service のコンテンツ�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service のコンテンツを作成するためにリッチテキストエディターを設定します。'
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1876'
-ht-degree: 100%
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+workflow-type: tm+mt
+source-wordcount: '1858'
+ht-degree: 99%
 
 ---
 
 # リッチテキストエディターの設定 {#configure-the-rich-text-editor}
 
-リッチテキストエディター（RTE）には、テキストコンテンツの編集に使用できる幅広い機能が用意されています。アイコン、選択ボックス、ツールバーおよびメニューを使用して、テキストを WYSIWYG で編集できます。管理者は RTE の設定をおこなって、オーサリングコンポーネント内で使用可能な機能を有効化、無効化および拡張できます。作成者が Web コンテンツの[オーサリングに RTE を使用する](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)方法を参照してください。
+リッチテキストエディター（RTE）には、テキストコンテンツの編集に使用できる幅広い機能が用意されています。アイコン、選択ボックス、ツールバーおよびメニューを使用して、テキストを WYSIWYG で編集できます。管理者は RTE の設定をおこなって、オーサリングコンポーネント内で使用可能な機能を有効化、無効化および拡張できます。作成者が Web コンテンツの[オーサリングに RTE を使用する](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)方法を参照してください。
 
 RTE の概念と設定に必要な手順を以下に示します。
 
@@ -24,7 +24,7 @@ RTE の概念と設定に必要な手順を以下に示します。
 
 ## 作成者が使用できるユーザーインターフェイスを理解します。 {#understand-rte-ui}
 
-RTE インターフェイスは、オーサリング環境に[レスポンシブデザイン](/help/sites-cloud/authoring/features/responsive-layout.md)を提供します。このインターフェイスは、タッチデバイスとデスクトップデバイスで使用できるように設計されています。
+RTE インターフェイスは、オーサリング環境に[レスポンシブデザイン](/help/sites-cloud/authoring/page-editor/responsive-layout.md)を提供します。このインターフェイスは、タッチデバイスとデスクトップデバイスで使用できるように設計されています。
 
 ![リッチテキストエディターのツールバー](assets/rte-toolbar-full-screen-mode.png)
 
@@ -39,9 +39,9 @@ RTE インターフェイスは、オーサリング環境に[レスポンシブ
 | 編集モード | 編集領域 | 有効化が推奨される機能 |
 |--- |--- |--- |
 | インライン | 小規模な編集をすばやく行うのに適したインプレース編集で、ダイアログボックスを開かずに書式設定を行います。 | 最小限の RTE 機能。 |
-| RTE フルスクリーン | ページ全体に広がる。 | 必要なすべての RTE 機能。 |
+| RTE フルスクリーン | ページ全体に広がります。 | 必要なすべての RTE 機能。 |
 | ダイアログ | ダイアログボックスがページコンテンツの上部に表示されますが、ページ全体には広がりません。 | 慎重に有効化された機能。 |
-| ダイアログフルスクリーン | フルスクリーンモードと同じ。RTE の横にダイアログのフィールドを含む。 | 必要なすべての RTE 機能。 |
+| ダイアログフルスクリーン | フルスクリーンモードと同じ。RTE の横にダイアログのフィールドが含まれます。 | 必要なすべての RTE 機能。 |
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ RTE インターフェイスは、オーサリング環境に[レスポンシブ
 
 ### ダイアログ編集 {#dialog-editing}
 
-コンポーネントをダブルクリックすると、コンテンツ編集用のダイアログボックスが開きます。ダイアログボックスは、既存のページの上部に開きます。場合によっては、ダイアログがポップアップウィンドウとして開くこともあります。例えば、複数列から成るページレイアウト内の列の一部がテキストコンポーネントで、ダイアログに使用できる領域が少ない場合などです。
+コンポーネントをダブルクリックすると、コンテンツ編集用のダイアログボックスが開きます。既存のページの上面に開きます。場合によっては、ダイアログがポップアップウィンドウとして開くこともあります。例えば、複数列から成るページレイアウト内の列の一部がテキストコンポーネントで、ダイアログに使用できる領域が少ない場合などです。
 
 ![ダイアログ編集モード](assets/dialog_editing_modetouchui.png)
 
@@ -86,7 +86,7 @@ RTE インターフェイスは、オーサリング環境に[レスポンシブ
 
 RTE の基本機能は、該当するプラグインのノードにある `features` プロパティの値によって、アクティベートまたはアクティベート解除されます。
 
-以下の表に、現在のプラグインを示します。
+以下の表に最新のプラグインを示します。
 
 * API ドキュメントへのリンクを含むプラグイン ID。ID は、[プラグインをアクティベート](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin)するときにノード名として使用されます。
 * `features` プロパティの許可されている値。
@@ -103,7 +103,7 @@ RTE の基本機能は、該当するプラグインのノードにある `featu
 | links | `modifylink`、`unlink`、`anchor` | [ハイパーリンクおよびアンカー](configure-rich-text-editor-plug-ins.md#linkstyles)。 |
 | lists | `ordered`、`unordered`、`indent`、`outdent` | このプラグインは、[インデントとリスト](configure-rich-text-editor-plug-ins.md#indentmargin)（ネストされたリストを含む）の両方を制御します。 |
 | misctools | `specialchars`、`sourceedit` | 各種ツールを使用して、[特殊文字](configure-rich-text-editor-plug-ins.md#spchar)の入力や HTML ソースの編集をおこなえます。また、独自のリストを定義する場合は、[特殊文字の範囲](configure-rich-text-editor-plug-ins.md#definerangechar)を追加できます。 |
-| Paraformat | `paraformat` | `<h2>`デフォルトの段落形式は、段落、見出し 1、見出し 2 および見出し 3（`<p>`、`<h1>`、`<h3>`）です。[他の段落形式を追加](configure-rich-text-editor-plug-ins.md#paraformats)したり、リストを拡張したりできます。 |
+| Paraformat | `paraformat` | `<h2>`デフォルトの段落形式は、段落、見出し 1、見出し 2 および見出し 3（`<p>`、`<h1>`、`<h3>`）です。[他の段落フォーマットを追加](configure-rich-text-editor-plug-ins.md#paraformats)したり、リストを拡張したりできます。 |
 | spellcheck | `checktext` | [言語ごとのスペルチェッカー](configure-rich-text-editor-plug-ins.md#adddict)。 |
 | styles | `styles` | CSS クラスを使用したスタイル設定のサポート。テキストで使用するスタイルの範囲を独自に追加（または拡張）する場合は、[新しいテキストスタイルを追加](configure-rich-text-editor-plug-ins.md#textstyles)します。 |
 | subsuperscript | `subscript`、`superscript` | 下付き文字や上付き文字を追加して基本的なフォーマットを拡張。 |
@@ -145,14 +145,14 @@ RTE の基本機能は、該当するプラグインのノードにある `featu
 
 ## プラグインのアクティベートによる RTE 機能の有効化 {#enable-rte-functionalities-by-activating-plug-ins}
 
-リッチテキストエディター（RTE）の各機能は一連のプラグインから使用でき、それぞれに features プロパティがあります。features プロパティを設定することで、各プラグインの様々な機能を有効化または無効化できます。
+リッチテキストエディター（RTE）の各機能は一連のプラグインから使用でき、それぞれに features プロパティがあります。features プロパティを設定することで、各プラグインの各種機能を有効にすることも無効にすることもできます。
 
 RTE プラグインの設定について詳しくは、[RTE プラグインをアクティベートして設定する方法](configure-rich-text-editor-plug-ins.md)を参照してください。
 
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-[コアコンポーネントのテキストコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=ja#the-text-component-and-the-rich-text-editor)を使用すると、テンプレートエディターのユーザーインターフェイスを使用して多数の RTE プラグインをコンテンツポリシーとして設定でき、技術的な設定が不要になります。コンテンツポリシーは、このドキュメントで説明するように RTE UI 設定と連携させることができます。詳しくは、[ページテンプレートの作成](/help/sites-cloud/authoring/features/templates.md)および[コアコンポーネント開発者向けドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ja)を参照してください。
+[コアコンポーネントのテキストコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=ja#the-text-component-and-the-rich-text-editor)を使用すると、テンプレートエディターのユーザーインターフェイスを使用して多数の RTE プラグインをコンテンツポリシーとして設定でき、技術的な設定が不要になります。コンテンツポリシーは、このドキュメントで説明するように RTE UI 設定と連携させることができます。詳しくは、[ページテンプレートの作成](/help/sites-cloud/authoring/sites-console/templates.md)および[コアコンポーネント開発者向けドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ja)を参照してください。
 
 >参照用として、デフォルトのテキストコンポーネント（標準インストールの一環として提供）が次の場所に用意されています。
 >
@@ -218,7 +218,7 @@ RTE プラグインの設定について詳しくは、[RTE プラグインを�
 
 ## RTE ユーザーインターフェイス設定とコンテンツポリシー {#rtecontentpolicies}
 
-管理者は、上述のような設定を行わなくても、コンテンツポリシーを使用して RTE オプションを制御することができます。コンテンツポリシーでは、[編集可能テンプレート](/help/sites-cloud/authoring/features/templates.md)の一部として使用されるコンポーネントのデザインプロパティが定義されています。例えば、RTE を使用するテキストコンポーネントを編集可能テンプレートで使用する場合は、コンテンツポリシーの定義によって、太字オプションやいくつかの段落書式オプションが使用できるようになります。コンテンツポリシーは再利用可能であり、複数のテンプレートに対して適用できます。
+管理者は、上述のような設定を行わなくても、コンテンツポリシーを使用して RTE オプションを制御できます。コンテンツポリシーでは、[編集可能テンプレート](/help/sites-cloud/authoring/sites-console/templates.md)の一部として使用されるコンポーネントのデザインプロパティが定義されます。例えば、RTE を使用するテキストコンポーネントが編集可能テンプレートで使用される場合は、コンテンツポリシーの定義によって、太字オプションやいくつかの段落フォーマットオプションを使用可能にできます。コンテンツポリシーは再利用が可能であり、複数のテンプレートに対して適用できます。
 
 RTE フローで使用可能なオプションに関するユーザーインターフェイス設定がコンテンツポリシーに影響します。
 
@@ -280,5 +280,5 @@ RTE ツールバーに表示される Coral アイコンと使用可能なコマ
 >[!MORELIKETHIS]
 >
 >* [RTE プラグインの設定](configure-rich-text-editor-plug-ins.md)
->* [リッチテキストエディターをオーサリングに使用](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
+>* [リッチテキストエディターをオーサリングに使用](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
 >* [RTE をアクセス可能なサイト用に設定](rte-accessible-content.md)

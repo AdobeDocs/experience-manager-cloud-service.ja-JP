@@ -2,10 +2,10 @@
 title: ローンチでのページの管理
 description: ローンチ内に新しいページを作成できます。また、不要なページを削除することもできます。
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,6 @@ ht-degree: 89%
 * ページエディター：
 
    * 「**ナビゲーション**」を選択して、コンソールでローンチの構造を開きます。
-
      ![ページエディターからローンチをナビゲーション](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
      >[!NOTE]
@@ -46,27 +45,27 @@ ht-degree: 89%
   >
   >また、「**ローンチコンソール**」を選択して、「**コンテンツを管理**」（およびその他のアクション）にアクセスすることもできます。
 
-これらのエントリポイントすべてを使用すると、サイトコンソールにローンチが開き、次の操作を実行できます。
+これらのエントリポイントのすべてで Sites コンソールのローンチが開き、次の操作を行えます。
 
 * ナビゲーションする
 * 新しいページを&#x200B;**作成**&#x200B;する
-* 既存のページを選択し、アクション（例： ）を実行します。 **編集**，開く **プロパティ**, **ロック**, **コピー**, **貼り付け** および **削除**
+* 既存のページを選択し、処理（例：「**編集**」、「**プロパティ**」、「**ロック**」、「**コピー**」、「**ペースト**」、「**削除**」）を実行します
   ![「コンテンツの管理」から Sites コンソールでローンチをナビゲーション](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * **参照**&#x200B;パネルを使用して、**ローンチソース**ページに戻る
   ![Sites コンソール - ローンチソース](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
-## ローンチにページを追加する {#add-pages-to-launch}
+## ローンチへのページの追加 {#add-pages-to-launch}
 
 ローンチに新しいページを追加するには、以下を行います。
 
 1. [ローンチの目的の場所に移動します](#navigate-structure-of-launch)。
 
-1. 「**作成**」を選択して、いつも通り[ページを作成](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)します。
+1. 「**作成**」を選択して、いつも通り[ページを作成](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page)します。
 
-## ローンチからページを削除する {#remove-pages-from-launch}
+## ローンチからページの削除 {#remove-pages-from-launch}
 
 ローンチからページを削除するには、以下を行います。
 
 1. [ローンチの目的の場所に移動します](#navigate-structure-of-launch)。
 
-1. **削除**&#x200B;を選択して、いつも通り[ページを削除](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page)します。
+1. **削除**&#x200B;を選択して、いつも通り[ページを削除](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page)します。

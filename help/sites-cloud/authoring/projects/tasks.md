@@ -2,10 +2,10 @@
 title: タスクの操作
 description: タスクは、コンテンツで実行するべき作業項目を表し、プロジェクトで現在のタスクの完了レベルを判断するために使用されます。
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 95%
 
 #### タスクの詳細 {#task-details}
 
-特定のタスクの詳細については、[ タスク一覧 ] でタスクを選択し、 **開く**.
+特定のタスクの詳細を表示するには、タスクリストでタスクを選択し、「**開く**」を選択します。
 
 ![タスクの詳細](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -63,7 +63,7 @@ ht-degree: 95%
 
 タスクを追加するには：
 
-1. プロジェクト内の **タスク** タイルで、 +アイコンを選択します。 **タスクを追加**&#x200B;ウィンドウが開きます。
+1. プロジェクトの&#x200B;**タスク**&#x200B;タイルで、「+」アイコンを選択します。**タスクを追加**&#x200B;ウィンドウが開きます。
 1. タスクに関する情報を入力します。タスクのタイトルと、そのタスクを割り当てるグループは必須です。コンテンツのパス、説明、タスクの優先度、期限などの追加情報はオプションです。さらに、「**詳細**」タブを選択して、URL の命名に使用するタスク名を入力できます。
 
    ![タスクの追加](/help/sites-cloud/authoring/assets/projects-add-task.png)
@@ -76,6 +76,6 @@ ht-degree: 95%
 
 ![インボックス内のタスク](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
 
-タスクを完了するには、タスクを選択して「**完了**」をクリックします。タスクに情報を追加して、「**完了**」をクリックします。詳しくは、[インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)を参照してください。
+タスクを完了するには、タスクを選択して「**完了**」をクリックします。タスクに情報を追加して、「**完了**」をクリックします。詳しくは、[インボックス](/help/sites-cloud/authoring/inbox.md)を参照してください。
 
 ![タスク通知](/help/sites-cloud/authoring/assets/projects-task-notifications.png)

@@ -4,8 +4,8 @@ description: ワークフローコンソールを使用したワークフロー�
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ワークフローコンソールには、ワークフローインスタンスを管理し、それらが想定どおりに実行されていることを確認するための複数のツールが用意されています。
 
-ワークフローの管理用に、次の各種コンソールが用意されています。[グローバルナビゲーション](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)を使用して&#x200B;**ツール**&#x200B;パネルを開き、その後「**ワークフロー**」を選択します。
+ワークフローの管理用に、次の各種コンソールが用意されています。[グローバルナビゲーション](/help/sites-cloud/authoring/basic-handling.md#global-navigation)を使用して&#x200B;**ツール**&#x200B;パネルを開き、その後「**ワークフロー**」を選択します。
 
 * **モデル**：ワークフローの定義を管理します
 * **インスタンス**：実行中のワークフローインスタンスを表示および管理します

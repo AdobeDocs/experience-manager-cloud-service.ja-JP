@@ -4,8 +4,8 @@ description: AEM で機械翻訳と人間による翻訳の両方のプロジェ
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '3960'
 ht-degree: 100%
 
@@ -196,7 +196,7 @@ AEM は、設定済みの TMS の翻訳メモリ内の既存の文字列の翻�
 
 ページが翻訳済みである、翻訳中である、またはまだ翻訳されていないことを示すプロパティを、サイトコンソールのリスト表示で選択できます。
 
-1. サイトコンソールで、[リスト表示](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)に切り替えます。
+1. サイトコンソールで、[リスト表示](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)に切り替えます。
 1. ビュードロップダウンで「**設定を表示**」を選択します。
 1. ダイアログで、「**翻訳済み**」プロパティをオンにし、「**更新**」を選択します。
 
@@ -437,18 +437,18 @@ AEM の翻訳プロジェクトでは、標準の [AEM プロジェクトコン�
 言語コピーを言語マスターと比較するには：
 
 1. サイトコンソールで、比較する言語コピーに移動します。
-1. [参照パネル](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)を開きます。
+1. [参照パネル](/help/sites-cloud/authoring/basic-handling.md#references)を開きます。
 1. **コピー**&#x200B;見出しの下で、「**言語コピー**」を選択します。
 1. 特定の言語コピーを選択し、「**マスターと比較**」または「**前と比較**」（該当する場合）をクリックできます。
 
    ![言語コピーの比較](../assets/language-copy-compare.png)
 
 1. 2 つのページ（ローンチとソース）が左右に並んで開きます。
-   * この機能の使用方法について詳しくは、[ページの差分](/help/sites-cloud/authoring/features/page-diff.md)を参照してください。
+   * この機能の使用方法について詳しくは、[ページの差分](/help/sites-cloud/authoring/sites-console/page-diff.md)を参照してください。
 
 ## ソースページの移動または名前の変更 {#move-source}
 
-翻訳済みのソースページの[名前変更または移動](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page)が必要な場合、移動後にページを再度翻訳すると、新しいページ名／場所に基づいて新しい言語コピーが作成されます。以前の名前／場所にもとづく古い言語コピーは、引き続き存在します。
+翻訳済みのソースページの[名前変更または移動](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page)が必要な場合、移動後にページを再度翻訳すると、新しいページ名／場所に基づいて新しい言語コピーが作成されます。以前の名前／場所にもとづく古い言語コピーは、引き続き存在します。
 
 このシナリオでのベストプラクティスは、次の手順に従うことです。
 

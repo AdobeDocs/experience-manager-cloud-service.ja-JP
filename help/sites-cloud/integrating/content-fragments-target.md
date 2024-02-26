@@ -1,11 +1,11 @@
 ---
 title: Adobe Target へのコンテンツフラグメントの書き出し
-description: コンテンツフラグメントをAdobe Targetに書き出し、エクスペリエンスをテストしてパーソナライズする方法について説明します。
+description: コンテンツフラグメントを Adobe Target に書き出し、エクスペリエンスをテストしてパーソナライズする方法について説明します。
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '2223'
-ht-degree: 96%
+source-wordcount: '2159'
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 >* AEM コンテンツフラグメントは、Adobe Target のデフォルトのワークスペースに書き出されます。
 >* [Adobe Target との統合](/help/sites-cloud/integrating/integrating-adobe-target.md)で説明されている手順に従って、AEM と Adobe Target を統合する必要があります。
 
-Adobe Experience Manager as a Cloud Service（AEM）で作成された[コンテンツフラグメント](/help/sites-cloud/authoring/fundamentals/content-fragments.md)を Adobe Target（Target）に書き出すことができます。書き出したエクスペリエンスフラグメントは、Target アクティビティのオファーとして使用し、幅広くエクスペリエンスをテストおよびパーソナライズできます。
+Adobe Experience Manager as a Cloud Service（AEM）で作成された[コンテンツフラグメント](/help/sites-cloud/authoring/fragments/content-fragments.md)を Adobe Target（Target）に書き出すことができます。書き出したエクスペリエンスフラグメントは、Target アクティビティのオファーとして使用し、幅広くエクスペリエンスをテストおよびパーソナライズできます。
 
 コンテンツフラグメントを Adobe Target に書き出すには、次のオプションを使用できます。
 
@@ -98,7 +98,7 @@ AEM コンテンツフラグメントを Adobe Target に書き出すための�
    * 適切な設定
    * 必要な形式オプション
    * Adobe Target ワークスペース
-   * 必要に応じて、externalizer ドメインを設定します。
+   * Externalizer ドメイン（必要な場合）
 
    >[!CAUTION]
    >
@@ -186,7 +186,7 @@ AEMで Target クラウド設定を作成するには、以下の手順を実行
 
    * **正確なターゲット設定を使用**：デフォルトでは、このチェックボックスはオンになっています。選択した場合、クラウドサービス設定は、コンテキストの読み込みを待ってからコンテンツを読み込みます。次のメモを参照してください。
 
-   * **Adobe Target からセグメントを同期**：Target で定義されているセグメントをダウンロードして AEM で使用するには、このオプションをオンにします。インラインセグメントはサポートされておらず、常に Target のセグメントを使用する必要があるので、API Type プロパティが REST の場合は、このオプションを選択します。 （AEM の用語「セグメント」は、Target の「オーディエンス」と同じです。）
+   * **Adobe Target からセグメントを同期**：Target で定義されているセグメントをダウンロードして AEM で使用するには、このオプションをオンにします。API Type プロパティが REST の場合は、このオプションを選択する必要があります。インラインセグメントはサポートされず、常に Target のセグメントを使用する必要があるからです。（AEM の用語「セグメント」は、Target の「オーディエンス」と同じです。）
 
    * **クライアントライブラリ**：デフォルトは AT.js です（mbox.js は非推奨／廃止予定です）。
 
@@ -285,7 +285,7 @@ After you create a Target framework in AEM, associate your web pages with the fr
 When you associate a page with the framework, the child pages inherit the association.
 
 1. In the **Sites** console, navigate to the site that you want to configure.
-1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
+1. Using either [quick actions](/help/sites-cloud/authoring/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
 1. Select **Edit**.
 1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
@@ -299,7 +299,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
 1. Select **Done**.
-1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
+1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md).)
 
    >[!NOTE]
    >
@@ -312,14 +312,14 @@ When you associate a page with the framework, the child pages inherit the associ
 >
 >画像などのメディアアセットの場合、参照のみが Target に書き出されます。アセット自体は AEM Assets に保存されたままで、AEM パブリッシュインスタンスから配信されます。
 >
->このため、Target に書き出す前に、関連するすべてのアセットを含むコンテンツフラグメントを公開する必要があります。
+>このため、Target に書き出す前に、コンテンツフラグメントとすべての関連アセットを公開する必要があります。
 
 （クラウド設定を指定した後に）コンテンツフラグメントを AEM から Target に書き出すには、次の手順を実行します。
 
 1. **Assets** コンソールのコンテンツフラグメントに移動します。
 1. Target に書き出すコンテンツフラグメントを選択します。
 
-1. 選択 **Adobe Targetオファーに書き出し**.
+1. 「**Adobe Target オファーに書き出し**」を選択します。
 
    ![Adobe Target に書き出し](assets/cfm-export-target-01.png)
 
@@ -333,7 +333,7 @@ When you associate a page with the framework, the child pages inherit the associ
    
    -->
 
-1. 選択 **公開せずに書き出し** または **公開** 必要に応じて。
+1. 必要に応じて、「**公開せずに書き出し**」または「**公開**」を選択します。
 
    >[!NOTE]
    >
@@ -345,13 +345,13 @@ When you associate a page with the framework, the child pages inherit the associ
    >
    >「**公開**」を選択すると、コンテンツフラグメントはすぐに公開され、Target に送信されます。
 
-1. 選択 **OK** をクリックします。
+1. 確認ダイアログで「**OK**」を選択します。
 
    コンテンツフラグメントは Target に送信されているはずです。
 
    >[!NOTE]
    >
-   >書き出しについての[様々な詳細](/help/sites-cloud/authoring/fundamentals/content-fragments.md#details-of-your-content-fragment)は、コンソールの&#x200B;**リスト表示**&#x200B;と&#x200B;**プロパティ**&#x200B;で参照できます。
+   >書き出しについての[様々な詳細](/help/sites-cloud/authoring/fragments/content-fragments.md#details-of-your-content-fragment)は、コンソールの&#x200B;**リスト表示**&#x200B;と&#x200B;**プロパティ**&#x200B;で参照できます。
 
    >[!NOTE]
    >
@@ -359,7 +359,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 >[!NOTE]
 >
->あるいは、[ページ情報](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)メニューの同等のコマンドを使用して、ページエディターから書き出しを実行することもできます。
+>あるいは、[ページ情報](/help/sites-cloud/authoring/page-editor/introduction.md#page-information)メニューの同等のコマンドを使用して、ページエディターから書き出しを実行することもできます。
 
 ## Adobe Target でのコンテンツフラグメントの使用 {#using-your-content-fragments-in-adobe-target}
 

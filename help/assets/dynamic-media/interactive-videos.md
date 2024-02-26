@@ -5,8 +5,8 @@ contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+workflow-type: tm+mt
 source-wordcount: '5863'
 ht-degree: 100%
 
@@ -253,7 +253,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 タイムラインセグメントを追加した後、各セグメント内にサムネイル画像を追加します。 追加したサムネイルごとに、アクションを適用します。例えば、サムネイルにクイックビューを適用したり、サムネイルにハイパーリンクやエクスペリエンスフラグメントを割り当てたりすることができます。
 
-[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)を参照してください。
+[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fragments/content-fragments.md)を参照してください。
 
 >[!NOTE]
 >
@@ -423,7 +423,7 @@ There was a link here that showed the video frame of an interactive video and wh
       <td>選択したサムネイル画像のエクスペリエンスフラグメントへの関連付け</td> 
       <td><p>「アクションタイプ」の下の「<strong>エクスペリエンスフラグメント</strong>」を選択し、次のいずれかを実行します。<p> 
        <ul> 
-       <li>Adobe Experience Manager Sites のユーザーである場合は、検索アイコン（虫眼鏡）を選択してエクスペリエンスフラグメントページを開きます。使用するエクスペリエンスフラグメントを選択したあと、前のページのアクションパネルに戻りるには、ページの右上隅にある「<strong>選択</strong>」を選択します。<br /><a href="/help/sites-cloud/authoring/fundamentals/experience-fragments.md">エクスペリエンスフラグメント</a>を参照してください。</li> 
+       <li>Adobe Experience Manager Sites のユーザーである場合は、検索アイコン（虫眼鏡）を選択してエクスペリエンスフラグメントページを開きます。使用するエクスペリエンスフラグメントを選択したあと、前のページのアクションパネルに戻りるには、ページの右上隅にある「<strong>選択</strong>」を選択します。<br /><a href="/help/sites-cloud/authoring/fragments/content-fragments.md">エクスペリエンスフラグメント</a>を参照してください。</li> 
       </ul> 
        <ul> 
        <li>エクスペリエンスフラグメントがビデオに表示されるときの幅と高さを指定します。</li>
@@ -645,27 +645,27 @@ Adobe Experience Manager によって返される埋め込みコードには、�
   <tbody>
   <tr>
     <td><p>単一の SKU（クエリ文字列内）</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td>単一の SKU（URL パス内）</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td><p>SKU とカテゴリ ID（クエリ文字列内）</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   </tbody>
 </table>

@@ -4,8 +4,8 @@ description: AEM 全体を通して、コンテンツフラグメント管理用
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 様々なキーボードショートカットを、コンテンツフラグメントコンソールで使用することができます。
 
-AEM 全体で様々なキーボードショートカットを利用できます。キーボードショートカットの中には、[ページの編集](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)時に適用されるものもあれば、[一般的なコンソール使用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)に適用されるものもあります。
+AEM 全体で様々なキーボードショートカットを利用できます。キーボードショートカットの中には、[ページの編集](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)時に適用されるものもあれば、[一般的なコンソール使用](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)に適用されるものもあります。
 
 >[!NOTE]
 >
@@ -38,11 +38,11 @@ AEM 全体で様々なキーボードショートカットを利用できます�
 | 1 つ以上のコンテンツフラグメントを選択 | `u` | 今すぐ非公開ダイアログを開きます |
 | 開いている任意のダイアログ | `esc` | ダイアログが閉じます |
 
-デスクトップユーザー向けの様々なキーボードショートカットも利用できます。 キーボードショートカットの中には、[ページの編集](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)時に適用されるものもあれば、一般的な[コンソール使用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)に適用されるものもあります。
+デスクトップユーザー向けの様々なキーボードショートカットも利用できます。 キーボードショートカットの中には、[ページの編集](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)時に適用されるものもあれば、一般的な[コンソール使用](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)に適用されるものもあります。
 
 >[!NOTE]
 >
->[コンソールのショートカットが非アクティブになっている](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)かどうかにかかわらず、エディターのキーボードショートカットは常にアクティブです。
+>[コンソールのショートカットが非アクティブになっている](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)かどうかにかかわらず、エディターのキーボードショートカットは常にアクティブです。
 
 ## OS 特有の修飾子キー {#os-specific-modifier-keys}
 
