@@ -4,9 +4,9 @@ description: AEM Forms Edge Delivery Service フォームのテーマとスタ�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
+source-git-commit: 59ed012f10a20939c846c8fff088534c5638f3db
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Formsは、Web サイトでのユーザーのインタラクションに不可�
 * 入力： `input` element は、入力するデータのタイプを定義します。 例：テキスト、数値、電子メール。
 * 説明（オプション）: `div` クラスで `field-description` には、ユーザーに関する追加情報や手順が記載されています。
 
-**例**
+**HTML構造の例**
 
 ```HTML
 <div class="form-text-wrapper form-first-name field-wrapper" data-required="true">
@@ -99,7 +99,7 @@ Formsは、Web サイトでのユーザーのインタラクションに不可�
 </div>
 ```
 
-#### 一般的なコンポーネントの CSS セレクター
+**一般的なコンポーネントの CSS セレクター**
 
 ```CSS
 .form-{Type}-wrapper input {
@@ -121,7 +121,7 @@ Formsは、Web サイトでのユーザーのインタラクションに不可�
 * `.form-{Type}-wrapper`：外側の `div` 要素を選択します。 例： `.form-text-wrapper` は、すべてのテキスト入力フィールドをターゲットにします。
 * `.form-{Name}`：さらに、特定のフィールド名に基づいて要素を選択します。 例： `.form-first-name` 「名」テキストフィールドをターゲットに設定します。
 
-**例：**
+**一般的なコンポーネントの CSS セレクターの例**
 
 ```CSS
 /*Target all text input fields */
@@ -159,7 +159,7 @@ Formsは、Web サイトでのユーザーのインタラクションに不可�
 </div>
 ```
 
-**例**
+**HTML構造の例**
 
 ```HTML
     <div class="form-drop-down-wrapper form-country field-wrapper" data-required="true">
@@ -173,7 +173,7 @@ Formsは、Web サイトでのユーザーのインタラクションに不可�
    </div>
 ```
 
-#### ドロップダウンコンポーネントの CSS セレクター
+#### ドロップダウンコンポーネントの CSS セレクターの例
 
 ```CSS
 /* Target the outer wrapper */
@@ -265,98 +265,95 @@ Formsは、Web サイトでのユーザーのインタラクションに不可�
 </div>
 ```
 
-#### ラジオおよびチェックボックスグループの CSS セレクター
+**ラジオおよびチェックボックスグループの CSS セレクターの例**
 
-**外部ラッパーのターゲティング**
-
-
-```CSS
-   /* Targets all radio group wrappers */
-.form-radio-group-wrapper {
-  margin-bottom: 20px; /* Adds space between radio groups */
-}
-
-/* Targets all checkbox group wrappers */
-.form-checkbox-group-wrapper {
-  margin-bottom: 20px; /* Adds space between checkbox groups */
-}
-```
-
-これらのセレクターは、ラジオグループとチェックボックスグループの両方の最も外側にあるコンテナをターゲットにし、グループ構造全体に一般的なスタイルを適用できます。 これは、間隔、整列、またはその他のレイアウト関連のプロパティを設定する場合に便利です。
-
-**ターゲティンググループラベル**
-
-```CSS
-.form-radio-group-wrapper .field-label,
-.form-checkbox-group-wrapper .field-label {
- font-weight: bold; /* Makes the group label bold */
-}
-```
-
-このセレクターは、 `.field-label` 要素をラジオとチェックボックスの両方のグループラッパーに含めます。 これにより、これらのグループ専用のラベルのスタイルを設定でき、場合によっては、ラベルがより目立つようになります。
-
-**個々の入力およびラベルのターゲティング**
-
-```CSS
-/* Styling radio buttons */
-.form-radio-group-wrapper input[type="radio"] {
-  margin-right: 5px; /* Adds space between the input and its label */
-} 
-
-/* Styling radio button labels */
-.form-radio-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
-}
-
-/* Styling checkboxes */
-.form-checkbox-group-wrapper input[type="checkbox"] {
-  margin-right: 5px;  /* Adds space between the input and its label */ 
-}
-
-/* Styling checkbox labels */
-.form-checkbox-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
-}
-```
-
-これらのセレクターは、個々のラジオボタン、チェックボックスおよび関連するラベルをより詳細に制御できます。 これらを使用して、サイズ調整や間隔の調整を行ったり、より明確な表示スタイルを適用したりできます。
+* 外側のラッパーのターゲティング：これらのセレクターは、ラジオグループとチェックボックスグループの両方の最も外側にあるコンテナをターゲットにし、グループ構造全体に一般的なスタイルを適用できます。 これは、間隔、整列、またはその他のレイアウト関連のプロパティを設定する場合に便利です。
 
 
-**ラジオボタンおよびチェックボックスの外観のカスタマイズ**
-
-```CSS
-/* Hide the default radio button or checkbox */
-.form-radio-group-wrapper input[type="radio"],
-.form-checkbox-group-wrapper input[type="checkbox"] {
-  opacity: 0; 
-  position: absolute; 
-}
-
-/* Create a custom radio button */
-.form-radio-group-wrapper input[type="radio"] + label::before { 
-  content: "";
-  display: inline-block;
-  width: 16px; 
-  height: 16px; 
-  border: 2px solid #ccc; 
-  border-radius: 50%;
-  margin-right: 5px;
-}
-
-.form-radio-group-wrapper input[type="radio"]:checked + label::before {
-  background-color: #007bff; 
-}
-
-/* Create a custom checkbox */
-/* Similar styling as above, with adjustments for a square shape */
-```
-
-この方法では、デフォルトの入力を非表示にし、:before および：after 疑似要素を使用して、「checked」状態に基づいて外観を変更するカスタムビジュアルを作成します。
+  ```CSS
+     /* Targets all radio group wrappers */
+  .form-radio-group-wrapper {
+    margin-bottom: 20px; /* Adds space between radio groups */
+  }
+  
+  /* Targets all checkbox group wrappers */
+  .form-checkbox-group-wrapper {
+    margin-bottom: 20px; /* Adds space between checkbox groups */
+  }
+  ```
 
 
-## フィールドのスタイル設定
+* ターゲットグループラベル：このセレクターは、 `.field-label` 要素をラジオとチェックボックスの両方のグループラッパーに含めます。 これにより、これらのグループ専用のラベルのスタイルを設定でき、場合によっては、ラベルがより目立つようになります。
 
-前述の一般的なスタイル設定手法に加えて、特定のタイプや個々の名前に基づいてフォームフィールドのスタイルを設定することもできます。 これにより、フォームの外観をより詳細に制御し、カスタマイズできます。
+  ```CSS
+  .form-radio-group-wrapper .field-label,
+  .form-checkbox-group-wrapper .field-label {
+   font-weight: bold; /* Makes the group label bold */
+  }
+  ```
+
+
+
+* 個々の入力およびラベルのターゲティング：これらのセレクターは、個々のラジオボタン、チェックボックスおよび関連するラベルをより詳細に制御できます。 これらを使用して、サイズ調整や間隔の調整を行ったり、より明確な表示スタイルを適用したりできます。
+
+  ```CSS
+  /* Styling radio buttons */
+  .form-radio-group-wrapper input[type="radio"] {
+    margin-right: 5px; /* Adds space between the input and its   label */
+  } 
+  
+  /* Styling radio button labels */
+  .form-radio-group-wrapper label {
+    font-size: 15px; /* Changes the label font size */
+  }
+  
+  /* Styling checkboxes */
+  .form-checkbox-group-wrapper input[type="checkbox"] {
+    margin-right: 5px;  /* Adds space between the input and its  label */ 
+  }
+  
+  /* Styling checkbox labels */
+  .form-checkbox-group-wrapper label {
+    font-size: 15px; /* Changes the label font size */
+  }
+  ```
+
+
+
+
+* ラジオボタンとチェックボックスの外観のカスタマイズ：この方法では、デフォルトの入力を非表示にし、:before と：after 疑似要素を使用して、「checked」状態に基づいて外観を変更するカスタムビジュアルを作成します。
+
+  ```CSS
+  /* Hide the default radio button or checkbox */
+  .form-radio-group-wrapper input[type="radio"],
+  .form-checkbox-group-wrapper input[type="checkbox"] {
+    opacity: 0; 
+    position: absolute; 
+  }
+  
+  /* Create a custom radio button */
+  .form-radio-group-wrapper input[type="radio"] + label::before { 
+    content: "";
+    display: inline-block;
+    width: 16px; 
+    height: 16px; 
+    border: 2px solid #ccc; 
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .form-radio-group-wrapper input[type="radio"]:checked +  label::before {
+    background-color: #007bff; 
+  }
+  
+  /* Create a custom checkbox */
+  /* Similar styling as above, with adjustments for a square shape  */
+  ```
+
+
+## コンポーネントのスタイル設定
+
+また、特定のタイプや個々の名前に基づいてフォームフィールドのスタイルを設定することもできます。 これにより、フォームの外観をより詳細に制御し、カスタマイズできます。
 
 ### フィールドタイプに基づくスタイル設定
 
@@ -388,7 +385,7 @@ CSS セレクターを使用して、特定のフィールドタイプをター�
 * The `data-required` 属性は、フィールドが必須かオプションかを示します。
 * 各フィールドには、対応するラベル、入力要素、およびプレースホルダーや説明などの追加要素の可能性があります。
 
-次に例を示します。
+**CSS セレクターの例**
 
 ```CSS
 /* Target all text input fields */
@@ -403,7 +400,7 @@ CSS セレクターを使用して、特定のフィールドタイプをター�
 }
 ```
 
-### 特定のフィールドタイプのスタイル設定
+### フィールド名に基づくスタイル設定
 
 また、個々のフィールドを名前でターゲット設定して、一意のスタイルを適用することもできます。
 
@@ -416,7 +413,7 @@ CSS セレクターを使用して、特定のフィールドタイプをター�
 </div>
 ```
 
-**CSS セレクター**
+**CSS セレクターの例**
 
 ```CSS
 .form-otp input {
@@ -424,6 +421,6 @@ CSS セレクターを使用して、特定のフィールドタイプをター�
 }
 ```
 
-* セレクター：この CSS は、クラスを持つ要素内にあるすべての入力要素をターゲットにします。 `form-otp`. HTML構造は、フォームブロックの規則に従います。これは、「form-otp」というクラスでマークされたコンテナが、「otp」という名前のフィールドを保持していることを意味します。
+この CSS は、クラスを持つ要素内にあるすべての入力要素をターゲットに設定します `form-otp`. フォームのHTML構造は、フォームブロックの規則に従います。これは、「form-otp」というクラスでマークされたコンテナが、「otp」という名前のフィールドを保持していることを意味します。
 
-* プロパティおよび値：コードが適用されます `letter-spacing: 2px`. この CSS プロパティは、入力フィールドのテキストコンテンツ内の個々の文字間の間隔を制御します。
+
