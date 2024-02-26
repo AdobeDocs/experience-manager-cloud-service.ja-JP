@@ -4,9 +4,9 @@ description: AEM Forms Edge Delivery Service は、効率化されたデータ�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
+source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '422'
 ht-degree: 1%
 
 ---
@@ -20,19 +20,14 @@ AEM Forms Edge Delivery Service は、Adobeが提供する合成可能なサー�
 
 * **完璧な Lighthouse スコアを持つフォームの作成**：低速なインターネット接続でも、すばやく読み込んでレンダリングするフォームを構築します。 読み込み時間の短縮と最適化されたユーザーエクスペリエンスは、フォームの完了率の向上とコンバージョン率の向上に貢献します。
 
-* **オーサリングと送信を簡素化**：従来のオーサリング環境ではなく、Microsoft Excel やGoogleシートなどの使い慣れたツールを使用してフォームを作成します。 フォームをMicrosoft Excel またはGoogleシートに直接送信し、そのエコシステムを使用して送信されたデータを簡単に処理できます。
+* **オーサリングと送信を簡素化**:Microsoft Excel やGoogleシート（ドキュメントベースのオーサリング）、JSON ファイル（ヘッドレスオーサリング）、アダプティブFormsエディター（WYSIWYG オーサリング）など、使い慣れたオーサリングツールを活用して、フォームをデザインおよび作成します。 このサービスはコンテンツソースから切り離されており、好みのオーサリングツールを使用できるので、柔軟にコンテンツを作成できます。
 
+  ![Edge 配信フォームオーサリングツール](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-この合成可能なサービスはコンテンツソースから切り離され、ユーザーが好みのオーサリングツールを使用できるようにすることで、柔軟にコンテンツを作成できます。
-
-![Edge 配信フォームオーサリングツール](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
-
-コンテンツ作成者は、Microsoft Excel やGoogleシート（ドキュメントベースのオーサリング）、JSON ファイル（ヘッドレスオーサリング）、AEM Forms Adaptive Formsエディター（WYSIWYG オーサリング）などの使い慣れたツールを活用して、フォームをデザインおよび作成できます。
-
->[!NOTE]
->
->
-> WYSIWYG オーサリング機能は、アーリーアダプタープログラムで利用できます。 アーリーアダプタープログラムに参加し、機能へのアクセス権をリクエストするには、公式のメール ID からaem-forms-early-adopter-program@adobe.comに書き込むことができます。
+  >[!NOTE]
+  >
+  >
+  > WYSIWYG オーサリング機能は、アーリーアダプタープログラムで利用できます。 アーリーアダプタープログラムに参加し、機能へのアクセス権をリクエストするには、公式のメール ID からaem-forms-early-adopter-program@adobe.comに書き込むことができます。
 
 ## 基本事項から始めます
 

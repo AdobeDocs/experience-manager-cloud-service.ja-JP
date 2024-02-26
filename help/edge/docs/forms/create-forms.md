@@ -4,9 +4,9 @@ description: クラフトパーフェクトフォーム、高速！ ⚡ AEM Form
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
+source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '980'
 ht-degree: 1%
 
 ---
@@ -18,13 +18,15 @@ ht-degree: 1%
 
 これらのフォームは、Microsoft Excel またはGoogleシートファイルに直接データを送信します。Googleシート、Microsoft Excel、Microsoft Sharepoint の活発なエコシステムと堅牢な API を使用して、送信されたデータを簡単に処理したり、既存のビジネスワークフローを開始したりできます。
 
+AEM Forms Edge Delivery は、フォームを簡単に作成して、取り込んだデータを取り込み、保存するのに役立つフォームブロックを提供します。 AEM EDS プロジェクトにフォームブロックを含めて、フォームの作成を開始できます。 では、開始しましょう。
+
 
 ## 前提条件
 
 開始する前に、次の手順が完了していることを確認します。
 
-* Edge Delivery Service(EDS) プロジェクトをセットアップして複製します。 詳しくは、 [開発者向けチュートリアル](https://www.aem.live/developer/tutorial) 」を参照してください。 このドキュメントでは、Edge Delivery Service(EDS) プロジェクトのローカルフォルダーを `[EDS Project repository]` .
-* のクローン [Forms Block リポジトリ](https://github.com/adobe/afb). EDS Web ページ上でフォームをレンダリングするコードを含みます。 このドキュメントでは、Formsブロックリポジトリのローカルフォルダーを `[Forms Block repository]` 」を参照してください。
+* AEMボイラープレートを使用して Edge Delivery Service(EDS)GitHub プロジェクトを設定し、対応する GitHub リポジトリのクローンをローカルマシンに作成します。 詳しくは、 [開発者向けチュートリアル](https://www.aem.live/developer/tutorial) 」を参照してください。 このドキュメントでは、Edge Delivery Service(EDS) プロジェクトのローカルフォルダーを `[EDS Project repository]` .
+* のクローン [Forms Block リポジトリ](https://github.com/adobe/afb) ローカルマシン上にある。 EDS Web ページ上でフォームをレンダリングするコードを含みます。 このドキュメントでは、Formsブロックリポジトリのローカルフォルダーを `[Forms Block repository]`.
 * Google Sheet またはMicrosoft SharePointへのアクセス権があることを確認します。
 
 
@@ -32,13 +34,11 @@ ht-degree: 1%
 
 +++ 手順 1:Edge Delivery Service(EDS) プロジェクトにフォームブロックを追加します。
 
-AEM Forms Edge Delivery には、取り込んだデータを取り込んで保存するフォームを簡単に作成できるフォームブロックが含まれています。 フォームブロックを Edge Delivery Service プロジェクトに含めるには：
+The `Form block` には、EDS サイトにフォームを追加する機能が含まれています。 このブロックは、AEMボイラープレートを使用して作成されたプロジェクトに含まれていません。 フォームブロックを Edge Delivery Service プロジェクトに含めるには：
 
-1. に移動します。 `[Forms Block repository]/blocks` をクリックし、 `forms` フォルダー。
+1. 次に移動： `[Forms Block repository]/blocks` ローカルマシン上のフォルダーにコピーし、 `form` フォルダー。
 
-1. に移動します。 `[EDS Project repository]/blocks/` をクリックし、 `forms` フォルダー。
-
-   >[!VIDEO](https://video.tv.adobe.com/v/3427487?quality=12&learn=on)
+1. 次に移動： `[EDS Project repository]/blocks/` ローカルマシン上のフォルダーにコピーし、 `form` フォルダー。
 
 1. チェックイン： `form` フォルダーおよび基になるファイルを、GitHub の Edge Delivery Service プロジェクトに追加します。
 
