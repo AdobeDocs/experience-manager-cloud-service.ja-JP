@@ -4,10 +4,10 @@ description: AEM Forms Edge Delivery Service は、効率化されたデータ�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
+source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 1%
+source-wordcount: '413'
+ht-degree: 4%
 
 ---
 
@@ -16,18 +16,30 @@ ht-degree: 1%
 
 AEM Forms Edge Delivery Service は、Adobeが提供する合成可能なサービスで、影響が大きく、パフォーマンスの高い Web フォームを作成して配信できます。 サービスを使用して以下のことが行えます。
 
-* **視覚的に美しいフォームを作成**：ブランドアイデンティティを反映したダイナミックで最新のフォームを使用して、ブランド、cookie-cutter のデザインを見捨て、ユーザーを魅了します。 事前に作成されたコンポーネントを活用するか、独自のカスタムコンポーネントを作成して、ビジョンを迅速かつ簡単に実現します。
+* **見事なフォームを持つCaptivateユーザー**：事前に作成されたコンポーネントのライブラリを使用して、複雑で魅力的なフォームを簡単に作成できます。 reCAPTCHA の統合、電子メールへの直接の送信、シームレスなファイルアップロードを可能にし、SharePoint、Azure Storage、Amazon S3 などのセキュリティで保護されたストレージソリューションを実現します。 独自のカスタムフォームコンポーネントを作成して、独自のビジョンを生み出すこともできます。
+
+  ![登録フォーム](/help/edge/assets/enrollment-form.png)
 
 * **完璧な Lighthouse スコアを持つフォームの作成**：低速なインターネット接続でも、すばやく読み込んでレンダリングするフォームを構築します。 読み込み時間の短縮と最適化されたユーザーエクスペリエンスは、フォームの完了率の向上とコンバージョン率の向上に貢献します。
 
-* **オーサリングと送信を簡素化**:Microsoft Excel やGoogleシート（ドキュメントベースのオーサリング）、JSON ファイル（ヘッドレスオーサリング）、アダプティブFormsエディター（WYSIWYG オーサリング）など、使い慣れたオーサリングツールを活用して、フォームをデザインおよび作成します。 このサービスはコンテンツソースから切り離されており、好みのオーサリングツールを使用できるので、柔軟にコンテンツを作成できます。
+  ![フォームに最適な Lighthouse スコア](/help/edge/assets/lighthouse-forms.png)
+
+* **お好みのツールでデジタル登録エクスペリエンスを作成**：コンテンツソースを分離することで、オーサリングの効率を向上させます。 標準では、AEM オーサリングとドキュメントベースのオーサリングの両方を使用できます。そのため、同じ Web サイト上で複数のコンテンツソースを操作し、Microsoft Excel、Googleシート、AEMエディターなどの好みのオーサリングツールを使用できます。
 
   ![Edge 配信フォームオーサリングツール](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-  >[!NOTE]
-  >
-  >
-  > WYSIWYG オーサリング機能は、アーリーアダプタープログラムで利用できます。 アーリーアダプタープログラムに参加し、機能へのアクセス権をリクエストするには、公式のメール ID からaem-forms-early-adopter-program@adobe.comに書き込むことができます。
+<!--
+* **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
+
+* **Use Integrated services:** Use integrated services to streamline and empowers your users with a one-stop shop for managing their digital enrollment journeys. Use e-signatures, automated workflows, document of record (DoR), and seamless data integration, simplify the entire digital enrollment process, accelerate approvals, and optimizes your business workflows. 
+
+    
+>[!NOTE]
+    >
+    >
+    > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
+
+    -->
 
 ## 基本事項から始めます
 
@@ -57,18 +69,26 @@ AEM Forms Edge Delivery Service は、Adobeが提供する合成可能なサー�
         <p>モバイルデバイスで読み込んで自動的にレンダリングするフォームを作成します。</p>
     </div>
     <div class="card-container">
-        <a href="/help/edge/docs/forms/validate-forms.md">
-            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="フォームフィールドに検証機能を追加する" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">フィールド検証を適用</b>
+        <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
+            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="フォームを送信" alt="EDS フォームでのフォームフラグメントの使用" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">フォームをスプレッドシートに送信</b>
         </a>
-        <p>フォーム入力で適切な形式を確認することで、エラーと不満を減らすことができます。</p>
-    </div>    <div class="card-container">
+        <p>フォームをMicrosoft Excel またはGoogleシートに直接送信する。</p>
+    </div>
+     <div class="card-container">
         <a href="/help/edge/docs/forms/style-theme-forms.md">
             <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="スタイルまたはテーマを eds フォームに適用する" style="border-radius: 5px;"> </b>
             <br><b style="margin-top: 5px;">テーマのカスタマイズ</b>
         </a>
         <p>同じテーマを複数のフォームに適用して、一貫したブランドイメージを作成します。</p>
     </div>
+      <div class="card-container">
+        <a href="/help/edge/docs/forms/validate-forms.md">
+            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="フォームフィールドに検証機能を追加する" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">フィールド検証を適用</b>
+        </a>
+        <p>フォーム入力で適切な形式を確認することで、エラーと不満を減らすことができます。</p>
+    </div> 
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
             <img src="/help/edge/assets/smock_abc_18_n.svg" alt="EDS フォームの翻訳" style="border-radius: 5px;"> </b>
@@ -104,13 +124,7 @@ AEM Forms Edge Delivery Service は、Adobeが提供する合成可能なサー�
         </a>
         <p>堅牢なスパムとボット保護に、OOTB reCAPTCHA 統合を使用します。</p>
     </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
-            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="フォームを送信" alt="EDS フォームでのフォームフラグメントの使用" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">フォームをスプレッドシートに送信</b>
-        </a>
-        <p>フォームをMicrosoft Excel またはGoogleシートに直接送信する。</p>
-    </div>
+
 </div>
 
 
