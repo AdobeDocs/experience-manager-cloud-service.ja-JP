@@ -3,7 +3,7 @@ title: Edge Delivery Services用コンテンツのオーサリング
 description: コンテンツのオーサリングがEdge Delivery Servicesと連携する方法、およびEdge Delivery Servicesと共にAEMコンテンツをオーサリングする方法について説明します。
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 21%
@@ -31,7 +31,7 @@ AEM as a Cloud ServiceでEdge Delivery Servicesを使用する場合、最も基
 
 1. [AEMオーサリング環境](/help/sites-cloud/authoring/quick-start.md) は、新しいページ、エクスペリエンスフラグメント、コンテンツフラグメントの作成など、コンテンツ管理に使用されます。
    * AEMのすべての機能（ワークフロー、MSM、翻訳、起動など）を使用できます。
-1. [ユニバーサルエディター](/help/implementing/universal-editor/authoring.md) は、AEMで管理されるコンテンツの作成に使用されます。
+1. [ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/authoring.md) は、AEMで管理されるコンテンツの作成に使用されます。
    * ユニバーサルエディターは、コンテンツオーサリング用の新しい最新の UI を提供します。
    * オーサリング時に、AEMはHTMLをレンダリングしますが、Edge Delivery Servicesのスクリプト、スタイル、アイコン、その他のリソースが含まれます。
    * ユニバーサルエディターが使用されますが、すべての変更がAEMに保持されます。
@@ -52,7 +52,7 @@ AEM as a Cloud ServiceでEdge Delivery Servicesを使用する場合、最も基
 
 ![ブロックプロパティの設定](assets/block-properties.png)
 
-ユニバーサルエディターを使用したオーサリング方法の詳細については、ドキュメントを参照してください。 [ユニバーサルエディターを使用したコンテンツのオーサリング。](/help/implementing/universal-editor/authoring.md)
+ユニバーサルエディターを使用したオーサリング方法の詳細については、ドキュメントを参照してください。 [ユニバーサルエディターを使用したコンテンツのオーサリング。](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 AEM と Edge 配信サービスを使用してオーサリングする独自のプロジェクトを開始する方法については、[Edge 配信サービスを使用した AEM オーサリングの開発者向け入門ガイド](/help/edge/edge-dev-getting-started.md)を参照してください。
 

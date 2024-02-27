@@ -2,10 +2,10 @@
 title: ページの公開
 description: AEM の様々なメカニズムを使用して、ページを公開および非公開にする方法について説明します。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
-source-wordcount: '1927'
-ht-degree: 100%
+source-wordcount: '1936'
+ht-degree: 96%
 
 ---
 
@@ -39,8 +39,9 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 場所に応じて、次から公開できます。
 
-* [ページエディターから](#publishing-from-the-editor)
-* [サイトコンソールから](#publishing-from-the-console)
+* [ページエディターから](#publishing-from-the-page-editor)
+* [次から： ](#publishing-from-the-sites-console)
+* [ユニバーサルエディターから](/help/sites-cloud/authoring/universal-editor/publishing.md)
 
 >[!NOTE]
 >
@@ -62,9 +63,9 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 >
 > その他の可能性については、[ページプロパティの「基本」タブ](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)の「**オンタイム**」および「**オフタイム**」を参照してください。
 
-### エディターからの公開 {#publishing-from-the-editor}
+### ページエディターからの公開 {#publishing-from-the-page-editor}
 
-ページを編集している場合、エディターから直接公開できます。
+ページを編集する際に、 [ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md) エディターから直接公開できます。
 
 1. **ページ情報**&#x200B;アイコンを選択してメニューを開き、「**ページを公開**」オプションを選択します。
 
@@ -89,15 +90,15 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 >[!NOTE]
 >
->エディターからの公開は、浅い公開です。つまり、選択したページ（複数可）だけが公開され、子ページは公開されません。
+>ページエディターからの公開は、浅い公開です。つまり、選択したページ（複数可）のみが公開され、子ページは公開されません。
 
 >[!NOTE]
 >
 >エディターで[エイリアス](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced)を使用してアクセスしたページは公開できません。エディターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
 
-### コンソールからの公開 {#publishing-from-the-console}
+### サイトコンソールからの公開 {#publishing-from-the-sites-console}
 
-サイトコンソールには、2 つの公開オプションがあります。
+Adobe Analytics の **Sites** コンソールでは、次の 2 つの公開オプションがあります。
 
 * [クイック公開](#quick-publish)
 * [公開を管理](#manage-publication)

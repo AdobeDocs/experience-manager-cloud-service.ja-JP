@@ -1,10 +1,10 @@
 ---
 title: サイトコンソール
 description: サイトコンソールを使用してAEMページを管理および整理する方法について説明します。
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 51%
+source-wordcount: '1628'
+ht-degree: 50%
 
 ---
 
@@ -231,16 +231,18 @@ The **表示** AEMツールバーの右端にあるアイコンは、現在選�
 
 アクションツールバーは、コンソールでリソースが選択されている場合にのみ表示されます。 アクションツールバーで使用できるアクションは、選択した特定の項目に対して実行できるアクションを反映して変化します。 最も一般的なアクションは次のとおりです。
 
-* [作成](#create-action)  — 新しいコンテンツまたはコンテンツ関連のアクションを作成します
-* [編集](/help/sites-cloud/authoring/page-editor/introduction.md)  — ページを編集します
-* [プロパティ](/help/sites-cloud/authoring/sites-console/page-properties.md)  — ページのプロパティウィンドウを開きます。
-* [ロック](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)  — 他のユーザーがページを変更できないようにページをロックします
-* [コピー](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page)  — ページをコピーする
-* [移動](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page)  — ページの移動または名前変更
-* [クイック公開](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish)  — ページを直ちに公開する
-* [公開を管理](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - 1 つ以上のページを公開するようにスケジュールを設定する
-* [復元](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version)  — ページまたはページツリーのバージョンを復元します
-* [削除](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page)  — ページまたはページの削除
+* [**作成**](#create-action)  — 新しいコンテンツまたはコンテンツ関連のアクションを作成します
+* **編集**  — 選択したページの作成方法に応じて、 **編集** アクションを実行すると、該当するエディターが開きます。
+   * [ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md) - AEM Page Editor で作成されたページの場合
+   * [ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/authoring.md)  — ユニバーサルエディターで作成されたページの場合
+* [**プロパティ**](/help/sites-cloud/authoring/sites-console/page-properties.md)  — ページのプロパティウィンドウを開きます。
+* [**ロック**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)  — 他のユーザーがページを変更できないようにページをロックします
+* [**コピー**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page)  — ページをコピーする
+* [**移動**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page)  — ページの移動または名前変更
+* [**クイック公開**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish)  — ページを直ちに公開する
+* [**公開を管理**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - 1 つ以上のページを公開するようにスケジュールを設定する
+* [**復元**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version)  — ページまたはページツリーのバージョンを復元します
+* [**削除**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page)  — ページまたはページの削除
 
 一部のウィンドウではスペースが制限されるので、使用可能なスペースよりもツールバーのほうが長くなることがよくあります。この場合は、追加のオプションが表示されます。省略記号 (3 つのドットまたは **...**) をクリックすると、その他のすべてのアクションを含むドロップダウンセレクターが開きます。
 
@@ -248,13 +250,13 @@ The **表示** AEMツールバーの右端にあるアイコンは、現在選�
 
 ### アクションを作成 {#create-action}
 
-「作成」アクションでは、新しいページや類似した項目を作成するためのツールバー作成ボタンと同様のオプションを使用できます。
+作成アクションは、 [**作成** ツールバーボタン](#create-button) 新しいページや類似の項目を作成する場合。
 
 また、ページ関連のアクションを作成する機能も提供します。
 
-* [ワークフロー](/help/sites-cloud/authoring/workflows/overview.md)  — ページへのワークフローの適用
-* [バージョン](/help/sites-cloud/authoring/sites-console/page-versions.md)  — ページのバージョンを作成します
+* [**ワークフロー**](/help/sites-cloud/authoring/workflows/overview.md)  — ページへのワークフローの適用
+* [**バージョン**](/help/sites-cloud/authoring/sites-console/page-versions.md)  — ページのバージョンを作成します
 
 ## テンプレート
 
-[列表示](/help/sites-cloud/authoring/basic-handling.md#column-view)または[リスト表示](/help/sites-cloud/authoring/basic-handling.md#list-view)でページを選択するときに、ページが基にしているテンプレートを簡単に確認できます。
+[**列表示**](/help/sites-cloud/authoring/basic-handling.md#column-view)&#x200B;または&#x200B;[**リスト表示**](/help/sites-cloud/authoring/basic-handling.md#list-view)&#x200B;でページを選択するときに、ページが基にしているテンプレートを簡単に確認できます。

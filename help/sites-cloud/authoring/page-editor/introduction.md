@@ -1,17 +1,21 @@
 ---
 title: AEM Page Editor
 description: AEMページエディターは、コンテンツをオーサリングするための強力なツールです。
-source-git-commit: f11635b799a9154ff3fcaac5faca429a12f7a62b
+source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 43%
+source-wordcount: '1431'
+ht-degree: 42%
 
 ---
 
 
 # AEM Page Editor {#editing-page-content}
 
-ページが **Sites** コンソールを使用すると、AEMページエディターを使用してページのコンテンツを編集できます。これは、コンテンツをオーサリングするための強力なツールです。
+ページが [**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md) AEMページエディターを使用してページのコンテンツを編集できます。これは、コンテンツをオーサリングするための強力なツールです。
+
+>[!NOTE]
+>
+>ページの編集時 ( [**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md) コンソールで、ページの [テンプレート：](/help/sites-cloud/authoring/sites-console/templates.md) このドキュメントで説明するページエディター、または [ユニバーサルエディター。](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 >[!NOTE]
 >

@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5786283b75f28d594aea923a6d3490a9582a73a9
+source-git-commit: 87552743ef13d122864a676637138f72f87d8500
 workflow-type: tm+mt
 source-wordcount: '4721'
 ht-degree: 96%
@@ -305,6 +305,9 @@ ht-degree: 96%
          + [キーボードショートカット](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [スタイルシステム](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [取り消し/やり直しの制限](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+      + ユニバーサルエディター {#universal-editor}
+         + [ユニバーサルエディターを使用したコンテンツのオーサリング](/help/sites-cloud/authoring/universal-editor/authoring.md)
+         + [ユニバーサルエディターを使用したコンテンツの公開](/help/sites-cloud/authoring/universal-editor/publishing.md)
       + フラグメント {#fragments}
          + [コンテンツフラグメント](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [エクスペリエンスフラグメント](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -1028,6 +1031,18 @@ ht-degree: 96%
             + [カスタム述語評価基準の実装](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [カスタムエラーページ](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM ノードタイプ](/help/implementing/developing/introduction/node-types.md)
+      + ユニバーサルエディター {#universal-editor}
+         + [ユニバーサルエディターの概要](/help/implementing/universal-editor/introduction.md)
+         + [ユニバーサルエディターのアーキテクチャ](/help/implementing/universal-editor/architecture.md)
+         + [AEM のユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md)
+         + [ユニバーサルエディター開発者の概要](/help/implementing/universal-editor/developer-overview.md)
+         + [属性と項目タイプ](/help/implementing/universal-editor/attributes-types.md)
+         + [モデル定義、フィールド、およびコンポーネントタイプ](/help/implementing/universal-editor/field-types.md)
+         + [ユニバーサルエディターの認証](/help/implementing/universal-editor/authentication.md)
+         + [ユニバーサルエディターを使用したローカル AEM 開発](/help/implementing/universal-editor/local-dev.md)
+         + [ユニバーサルエディターの呼び出し](/help/implementing/universal-editor/calls.md)
+         + [イベント](/help/implementing/universal-editor/events.md)
+         + [ユニバーサルエディターのカスタマイズ](/help/implementing/universal-editor/customizing.md)
       + [ヘッドレスエクスペリエンス管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=ja)
       + ハイブリッドおよび SPA 開発 {#hybrid}
          + [AEM でのハイブリッドと SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
@@ -1144,19 +1159,3 @@ ht-degree: 96%
    + アクセシビリティ {#accessibility}
       + [AEM as a Cloud Service と web アクセシビリティのガイドライン](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1 クイックガイド](/help/compliance/accessibility/quick-guide-wcag.md)
-+ ユニバーサルエディター {#universal-editor}
-   + [ユニバーサルエディターの概要](/help/implementing/universal-editor/introduction.md)
-   + [ユニバーサルエディターのアーキテクチャ](/help/implementing/universal-editor/architecture.md)
-   + オーサリング{#developing}
-      + [ユニバーサルエディターを使用したコンテンツのオーサリング](/help/implementing/universal-editor/authoring.md)
-      + [ユニバーサルエディターを使用したコンテンツの公開](/help/implementing/universal-editor/publishing.md)
-   + 開発 {#developing}
-      + [AEM のユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md)
-      + [ユニバーサルエディター開発者の概要](/help/implementing/universal-editor/developer-overview.md)
-      + [属性と項目タイプ](/help/implementing/universal-editor/attributes-types.md)
-      + [モデル定義、フィールド、およびコンポーネントタイプ](/help/implementing/universal-editor/field-types.md)
-      + [ユニバーサルエディターの認証](/help/implementing/universal-editor/authentication.md)
-      + [ユニバーサルエディターを使用したローカル AEM 開発](/help/implementing/universal-editor/local-dev.md)
-      + [ユニバーサルエディターの呼び出し](/help/implementing/universal-editor/calls.md)
-      + [ユニバーサルエディターのカスタマイズ](/help/implementing/universal-editor/customizing.md)
-      + [イベント](/help/implementing/universal-editor/events.md)

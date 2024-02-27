@@ -2,7 +2,7 @@
 title: AEMでコンテンツをオーサリングする方法
 description: AEMでコンテンツをオーサリングする様々な方法とその違いについて説明します。
 feature: Authoring
-source-git-commit: 85b99fc0b0eb20b24f27d06159a52d4339a3c962
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
@@ -49,7 +49,7 @@ AEMコンテンツフラグメントエディターの詳細については、�
 
 >[!NOTE]
 >
->The *新規* この節で強調表示されているエディターは、オンラインAdobe Experience Manager(AEM)as a Cloud Serviceでのみ使用できます。
+>The *新規* AEM as a Cloud Service用にローカルで開発する場合は、この節で強調表示されているエディターは使用できません。
 >
 >The [*オリジナル* コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-variations.md) はも利用できます。
 
@@ -61,11 +61,11 @@ AEMコンテンツフラグメントエディターの詳細については、�
 
 ユニバーサルエディターはAEM内の Sites コンソールからアクセスしますが、AEMコンテンツだけでなく、適切に実装された外部コンテンツも作成できる、コンテンツに依存しない優れた柔軟性を備えています。
 
-ユニバーサルエディターの詳細については、ドキュメントを参照してください [ユニバーサルエディターを使用したコンテンツのオーサリング。](/help/implementing/universal-editor/authoring.md)
+ユニバーサルエディターの詳細については、ドキュメントを参照してください [ユニバーサルエディターを使用したコンテンツのオーサリング。](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 ## ドキュメントベースのオーサリング {#document-based}
 
-Edge 配信サービスを使用する場合、Microsoft Word やGoogle Docs などの従来のドキュメントとして、AEMコンソール以外でコンテンツを作成するように選択できます。
+Edge 配信サービスを使用する場合、Microsoft Word やGoogle Docs などの従来のドキュメントとは全く別のドキュメントとして、コンテンツを作成することもできます。 [AEM **Sites** コンソール。](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 ![ドキュメントベースのコンテンツの編集](assets/authoring-methods-document.jpg)
 

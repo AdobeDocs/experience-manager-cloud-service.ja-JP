@@ -1,10 +1,10 @@
 ---
 title: ページの管理
 description: AEMで Web サイトのページを管理する方法（移動、コピー、削除を含む）について説明します。
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
-source-wordcount: '1236'
-ht-degree: 78%
+source-wordcount: '1271'
+ht-degree: 75%
 
 ---
 
@@ -42,7 +42,9 @@ AEMで Web サイトのページを管理する方法（移動、コピー、削
 
    ![「編集」ボタン](/help/sites-cloud/authoring/assets/edit.png)
 
-1. ページが開き、必要に応じて[ページを編集](/help/sites-cloud/authoring/page-editor/edit-content.md)できます。
+1. ページが開き、必要に応じてページを編集できます。 選択したページの作成方法に応じて、 **編集** アクションを実行すると、該当するエディターが開きます。
+   * [ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md) - AEM Page Editor で作成されたページの場合
+   * [ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/authoring.md)  — ユニバーサルエディターで作成されたページの場合
 
 ## ページのコピーと貼り付け {#copying-and-pasting-a-page}
 
