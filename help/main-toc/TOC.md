@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 87552743ef13d122864a676637138f72f87d8500
+source-git-commit: 784cf3600cec4f0bde72e6a1e491095f56d5e5b3
 workflow-type: tm+mt
-source-wordcount: '4721'
+source-wordcount: '4730'
 ht-degree: 96%
 
 ---
@@ -723,6 +723,7 @@ ht-degree: 96%
       + [Screens コンテンツプロバイダーの使用](/help/screens-cloud/configuring/using-screens-content-provider.md)
       + [Screens ビデオレンディションの作成](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
       + [Screens as a Cloud Service の Dispatcher の設定](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
+      + [Screens のタイムラインビューの設定as a Cloud Service](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
    + コンテンツの作成 {#create-content}
       + [Screens コンテンツプロバイダーでのプロジェクトの作成と管理](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
       + [Screens コンテンツプロバイダーでのチャネルの作成と管理](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
