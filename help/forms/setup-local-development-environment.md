@@ -3,10 +3,11 @@ title: AEM Forms のローカル開発環境を設定する方法を教えてく
 description: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境を設定
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 58325cccf218eb2176868879842a795d1c91d8a6
+exl-id: 12877a77-094f-492a-af58-cffafecf79ae
+source-git-commit: 1ec17aebe4eb003b24f5036288a8836aabddb77a
 workflow-type: tm+mt
-source-wordcount: '2682'
-ht-degree: 100%
+source-wordcount: '2724'
+ht-degree: 97%
 
 ---
 
@@ -79,7 +80,7 @@ You can use the [development tools](https://experienceleague.adobe.com/docs/expe
 
 ### ソフトウェア配布から最新バージョンのソフトウェアをダウンロード {#software-distribution}
 
-最新バージョンの Adobe Experience Manager as a Cloud Service SDK、Experience Manager Forms 機能アーカイブ（AEM Forms アドオン）、Forms 参照アセット、Forms Designer を[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)からダウンロードするには：
+最新バージョンの Adobe Experience Manager as a Cloud Service SDK、Experience Manager Forms 機能アーカイブ（AEM Forms アドオン）、Forms 参照アセット、Forms Designer を[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)からダウンロードするには：
 
 1. Adobe ID を使用して、<https://experience.adobe.com/#/downloads> にログイン
 
@@ -113,7 +114,7 @@ QuickStart はローカル開発経験を提供しますが、[!DNL Adobe Experi
 
 ローカル Experience Manager 環境をインストールおよび設定するには、以下の手順を実行します。
 
-* [!DNL Adobe Experience Manager] as a Cloud Service SDK を[ダウンロードおよび抽出する](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
+* [!DNL Adobe Experience Manager] as a Cloud Service SDK を[ダウンロードおよび抽出する](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)
 * [オーサーインスタンスを設定する](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=ja#set-up-local-aem-author-service)
 * [パブリッシュインスタンスを設定する](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=ja#set-up-local-aem-publish-service)
 
@@ -125,11 +126,16 @@ QuickStart はローカル開発経験を提供しますが、[!DNL Adobe Experi
 
 Adobe Experience Manager Forms as a Cloud Service 機能アーカイブは、ローカル開発環境でアダプティブフォームを作成、スタイル設定、最適化するためのツールを提供します。パッケージをインストールしてアダプティブフォームを作成し、[!DNL AEM Forms] のその他の様々な機能を使用します。パッケージをインストールするには、以下を実行します。
 
-1. [ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)から、お使いのオペレーティングシステム用の最新の [!DNL AEM Forms] アーカイブをダウンロードして抽出します。
+1. [ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)から、お使いのオペレーティングシステム用の最新の [!DNL AEM Forms] アーカイブをダウンロードして抽出します。
 
 1. crx-quickstart/install ディレクトリに移動します。フォルダーが存在しない場合は作成します。
 
-1. AEM インスタンスを停止し、[!DNL AEM Forms] アドオン機能アーカイブ、`aem-forms-addon-<version>.far` をインストールフォルダーに配置して、インスタンスを再起動します。
+1. AEMインスタンスを停止し、 [!DNL AEM Forms] アドオン機能のアーカイブ `aem-forms-addon-<version>.far`をインストールフォルダーに追加します。
+1. アクティブなコマンドウィンドウに移動し、を押します。 `Ctrl + C` コマンドを使用して SDK を再起動します。
+
+   >[!NOTE]
+   >
+   > 「Ctrl + C」コマンドを使用して SDK を再起動することをお勧めします。 別の方法（Java プロセスの停止など）を使用してAEM SDK を再起動すると、AEM開発環境で不整合が生じる場合があります。
 
 ### ユーザーと権限の設定 {#configure-users-and-permissions}
 
@@ -242,7 +248,7 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
 >[!NOTE]
 >
 > Microsoft® Dynamics 365 および Salesforce フォームデータモデルを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 30 以降に基づくプロジェクトをセットアップします。
->Tranquil、Urbane、Ultramarine テーマを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 32 以降に基づくプロジェクトをセットアップします。
+> Tranquil、Urbane、Ultramarine テーマを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 32 以降に基づくプロジェクトをセットアップします。
 
 プロジェクトを設定するには、以下を実行します。
 
