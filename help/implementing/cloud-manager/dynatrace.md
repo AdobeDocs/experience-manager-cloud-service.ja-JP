@@ -1,77 +1,85 @@
 ---
 title: ダイナトレース
-description: AEM as a Cloud Serviceでの Dynatrace の使用方法を説明します。
+description: AEM as a Cloud ServiceでDynatraceを使用する方法を学ぶ
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
-source-git-commit: fec3aa6debec49014406ab241c3ce0338ec5a1d2
+source-git-commit: d6f5a365a48a8b20b69db6895f895c9d172d58a7
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
 
 # ダイナトレース {#dynatrace}
 
-Adobeでは、AEM as a Cloud Serviceを企業のデプロイメントの一環として監視し、潜在的な問題の原因を特定し、必要に応じて修正を行うことができます。
+Adobeでは、Dynatraceを使用して、エンタープライズデプロイメントの一環としてAEM as a Cloud Serviceを監視し、潜在的な問題の原因を特定し、必要に応じて修正をおこなうことができます。
 
-Dynatrace を使用すると、すべてのAEMアプリケーションをシームレスに監視できます。 AEMアプリケーションを自動的に検出し、Web サイトからコンテナ、クラウドサービスへの依存関係を視覚化することで、エンドユーザーエクスペリエンスを包括的に表示できます。 あらゆる層のエンドツーエンドのトレースと Real User Monitoring が組み合わされ、AEMのコンテンツ主導のエクスペリエンスを、隙間や盲点のない次のレベルに引き上げます。 異常が発生した場合、Dynatrace は Davis AI エンジンを使用してそれらをリアルタイムに診断し、顧客が影響を受ける前に、根本原因を破損したコードに突き止め、平均修復時間を最小限に抑えます。
+Dynatraceを使用すると、すべてのAEMアプリケーションをシームレスに監視できます。 Dynatraceは、AEMアプリケーションを自動的に検出し、Web サイトからコンテナ、クラウドサービスへの依存関係を視覚化することで、エンドユーザーエクスペリエンスを包括的に表示します。 あらゆる層のエンドツーエンドのトレースと Real User Monitoring が組み合わされ、AEMのコンテンツ主導のエクスペリエンスを、隙間や盲点のない次のレベルに引き上げます。 異常が発生した場合、Dynatraceは Davis AI エンジンを使用してリアルタイムに診断し、顧客が影響を受ける前に根本原因を破損したコードに突き止め、平均修復時間を最小限に抑えます。
 
-Dynatrace について詳しくは、 [AdobeAEM Cloud Serviceの統合](https://www.dynatrace.com/hub/detail/adobe-experience-manager-1/).
+Dynatraceについて詳しくは、 [AdobeAEM Cloud Serviceの統合](https://www.dynatrace.com/hub/detail/adobe-experience-manager-1/).
 
 ![AEMオーサーとパブリッシャーのパフォーマンス指標](/help/implementing/cloud-manager/assets/dynatrace-performance-metrics.png)
 
-## Dynatrace とAEM as a Cloud Serviceの統合 {#integrating-dynatrace-with-aem-as-a-cloud-service}
+## DynatraceとAEM as a Cloud Serviceの統合 {#integrating-dynatrace-with-aem-as-a-cloud-service}
 
-Dynater のお客様は、カスタマーサポートチケットを通じて接続をリクエストすることで、AEM環境を監視できます。
+Dynatraceのお客様は、カスタマーサポートチケットを通じて接続をリクエストすることで、AEM環境を監視できます。
 
 接続要求に必要な詳細を以下に示します。
 
 | **フィールド** | **説明** |
 |---|---|
-| [!DNL Dynatrace Environment URL] | Dynatrace 環境の URL。<br><br>Dynatrace SaaS のお客様の場合、形式は次のようになります。 `https://<your-environment-id>.live.dynatrace.com`.<br><br>Dynatrace が管理するお客様の場合、形式は次のようになります。 `https://<your-managed-url>/e/<environmentId>` |
-| [!DNL Dynatrace Environment ID] | 動的環境 ID。 詳しくは、 [Dynaterace 環境情報の取得](#get-dynatrace-env-info) これを手に入れる方法を |
-| [!DNL Dynatrace Environment Token] | Dynaterace 環境トークンです。 詳しくは、 [Dynaterace 環境情報の取得](#get-dynatrace-env-info) これを手に入れる方法を<br><br>これは秘密と見なす必要があるので、適切なセキュリティプラクティスを使用します。 例えば、Web サイト ( 例： **zerobin.net**：カスタマーサポートチケットで参照できる、パスワードと共に。 |
-| [!DNL Dynatrace API access token] | Dynatrace 環境の API アクセストークン。  詳しくは、 [Dynaterce API アクセストークンの作成](#create-dynatrace-access-token) を参照してください。<br><br>これは秘密と見なす必要があるので、適切なセキュリティプラクティスを使用します。 例えば、Web サイト ( 例： **zerobin.net**：カスタマーサポートチケットで参照できる、パスワードと共に。<br><br>注意：これは、Dynatrace Managed でのみ必要です。 |
-| [!DNL Dynatrace ActiveGate Port] | AEM統合の接続先となる Dynace ActiveGate ポート。<br><br>注意：これは、Dynatrace Managed でのみ必要です。 |
+| [!DNL Dynatrace Environment URL] | Dynatrace環境 URL。<br><br>Dynatrace SaaS のお客様の場合、形式は次のようになります。 `https://<your-environment-id>.live.dynatrace.com`.<br><br>Dynatraceが管理するお客様の場合、形式は次のようになります。 `https://<your-managed-url>/e/<environmentId>` |
+| [!DNL Dynatrace Environment ID] | Dynatrace環境 ID。 詳しくは、 [Dynatrace Connection Details を取得するにはどうすればよいですか？](#how-do-i-get-my-dynatrace-connection-details) これを手に入れる方法を |
+| [!DNL Dynatrace Environment Token] | Dynatrace環境トークン。 詳しくは、 [Dynatrace Connection Details を取得するにはどうすればよいですか？](#how-do-i-get-my-dynatrace-connection-details) これを手に入れる方法を<br><br>これは秘密と見なす必要があるので、適切なセキュリティプラクティスを使用します。 例えば、Web サイト ( 例： **zerobin.net**：カスタマーサポートチケットで参照できる、パスワードと共に。 |
+| [!DNL Dynatrace API access token] | Dynatrace環境の API アクセストークン。  詳しくは、 [Dynatrace API アクセストークンの作成](#create-dynatrace-access-token) を参照してください。<br><br>これは秘密と見なす必要があるので、適切なセキュリティプラクティスを使用します。 例えば、Web サイト ( 例： **zerobin.net**：カスタマーサポートチケットで参照できる、パスワードと共に。<br><br>注意：これは、Dynatrace Managed でのみ必要です。 |
+| [!DNL Dynatrace ActiveGate Port] | AEM統合の接続先となるDynatrace ActiveGate ポート。<br><br>注意：これは、Dynatrace Managed でのみ必要です。 |
 | [!DNL Dynatrace ActiveGate Network Zone] | お使いの [Dynatrace ActiveGate ネットワークゾーン](https://docs.dynatrace.com/docs/manage/network-zones) データセンターとネットワーク地域をまたいでAEM監視データを効率的にルーティングする。<br><br>注意： Dynatrace ActiveGate ネットワークゾーンはオプションです。 |
-| [!DNL AEM Environment ID(s)] | Dynace が監視するAEM環境 ID。 |
+| [!DNL AEM Environment ID(s)] | Dynatraceが監視するAEM環境 ID。 |
 
 >[!NOTE]
 >
->統合された Dynatrace は、以前に有効になっていた場合、New Relicなどの他の APM ツールにデータを送信しなくなります。
+>Dynatraceが統合されると、以前に有効になっていた場合、データはNew Relicなどの他の APM ツールに送られなくなります。
 
+## FAQ {#faq}
 
-## Dynaterce API アクセストークンの作成 {#create-dynatrace-access-token}
+### Dynatrace AEM Monitoring に必要なライセンス {#which-license-do-i-need-for-AEM-monitoring}
 
-1. Dynaterace 環境にログインします。
-1. Adobe Analytics の [!DNL Dynatrace] メニュー、移動 [!DNL Manage] > [!DNL Access tokens].
-1. 選択 [!DNL Generate new token].
-1. を定義 [!DNL token name].
+Dynatrace AEMの監視には、Dynatraceライセンスが必要です。 Dynatrace AEMのライセンスは、 [Kubernetes コンテナのフルスタック監視](https://docs.dynatrace.com/docs/shortlink/dps-hosts#gib-hour-calculation-for-containers-and-application-only-monitoring). 監視対象のAEMコンテナ（オーサーサービスおよびパブリッシャーサービス）のメモリサイズが自動的に検出されます。
 
-1. オプション： [!DNL expiration date]. 有効期限が切れる前に、新しいトークンを必ず生成してください。
-1. を設定します。 [!DNL token scope] から [!DNL PaaS integration - Installer download]
-1. 選択 [!DNL Generate token].
-1. 生成されたアクセストークンをコピーし、安全な場所に保存します。
+各AEM環境のAdobeデプロイメント仕様は、次のとおりです。
 
+* 実稼働：平均で 4 つのコンテナ、それぞれ 16 GB のメモリ
+* 非実稼動：平均で 4 つのコンテナ、それぞれ 8 GB のメモリ
 
-## Dynaterace 環境情報の取得 {#get-dynatrace-env-info}
+Dynatraceライセンスについて詳しくは、 [Dynatrace Platform Subscription](https://docs.dynatrace.com/docs/shortlink/dynatrace-platform-subscription).
 
-1. Dynace 環境に対して、次の API リクエストを実行します。
+### Dynatrace Connection Details を取得するにはどうすればよいですか？ {#how-do-i-get-my-dynatrace-connection-details}
+
+1. Dynatrace環境に対して、次の API リクエストを実行します。
 
 `curl -X GET "<environmentUrl>/api/v1/deployment/installer/agent/connectioninfo" -H "accept: application/json" -H "Authorization: Api-Token <accessToken>"`
 
-\を置換&lt;environmenturl> を、Dynatrace 環境 URL と\&lt;accesstoken> 作成した API アクセストークンを使用して、
+置換 `<environmentUrl>` Dynatrace環境 URL と `<accessToken>` 作成した API アクセストークンを使用して、
 
-1. \&lt;environmentid> と\&lt;environmenttoken> 応答ペイロードから取得し、保護された場所に保存します。
+1. をコピーします。 `<environmentId>` および `<environmentToken>` 応答ペイロードから取得し、保護された場所に保存します。
 
 ```
 {
    "tenantUUID": "<environmentId>",
    "tenantToken": "<environmentToken>",
-   "communicationEndpoints": [
-   ... 
-   ],
-   "formattedCommunicationEndpoints": "<endpoints>" 
+   "communicationEndpoints": [...]
 }
 ```
+
+### Dynatrace API アクセストークンの作成 {#create-dynatrace-access-token}
+
+1. Dynatrace環境にログインします。
+1. に移動します。 **[!DNL Access tokens]** を選択し、 **[!DNL Generate new token]**.
+1. を定義 [!DNL token name].
+1. トークンのスコープをに設定します。 **[!DNL PaaS integration - Installer download]**.
+1. 選択 **[!DNL Generate token]**.
+1. 生成されたアクセストークンをコピーし、安全な場所に保存します。
+
+
+
 
 
