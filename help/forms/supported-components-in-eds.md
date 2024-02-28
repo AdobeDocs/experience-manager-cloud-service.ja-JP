@@ -1,13 +1,17 @@
 ---
-description: このチュートリアルでは、EDS のコンポーネントに関するすべての情報を説明します。
-title: フォームブロックでサポートされるフォームコンポーネント — 開発者向けチュートリアル
+title: AEM Forms Edge Delivery Service のフォームコンポーネント
+description: AEM Forms Edge Delivery Service は、効率化されたデータ収集とユーザーエンゲージメントの将来を想定できるように、最高のパフォーマンス向けに構築されています。 この記事では、EDD フォームですぐに使用できるすべてのフォームコンポーネントの一覧を示します。
 feature: Edge Delivery Services
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+hide: true
+hidefromtoc: true
+source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 6%
+source-wordcount: '871'
+ht-degree: 5%
 
 ---
+
+
 
 
 # フォームブロックエッジ配信でサポートされるHTMLコンポーネント
