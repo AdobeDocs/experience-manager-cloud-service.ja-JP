@@ -4,9 +4,9 @@ description: AEM Forms Edge Delivery Service は、効率化されたデータ�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '872'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 AEM Forms Edge Delivery には、フォームブロックが含まれます。 フォームブロックを使用すると、取り込んだデータを簡単に取り込んで保存するためのフォームを簡単に作成できます。
 
-フォームブロックは、HTML5 のコンポーネント（テキスト、電子メール、数値、日付など）をサポートします。 また、テキスト領域、選択要素、フィールドセット要素もサポートし、HTML5 に固有の入力検証機能が含まれます。 フォームブロックは、すべてのフィールドタイプとHTMLの一貫性を確保するために、統一されたコンテナ構造を作成します。 また、 [フィールドタイプのスタイル設定](https://adobe-rnd.github.io/form-block/customization/styling_form) の使用 `form.css` ファイル。
+フォームブロックは、テキスト、電子メール、数値、日付など、OOTBHTML5 のコンポーネントをサポートしています。 また、テキスト領域、選択要素、フィールドセット要素もサポートし、HTML5 に固有の入力検証機能が含まれます。 フォームブロックは、すべてのフィールドタイプとHTMLの一貫性を確保するために、統一されたコンテナ構造を作成します。 また、 [フィールドタイプのスタイル設定](https://adobe-rnd.github.io/form-block/customization/styling_form) の使用 `form.css` ファイル。
 
 ## フォームブロックでサポートされるHTML5 の入力タイプ
 

@@ -1,18 +1,18 @@
 ---
-title: AEM Forms Edge Delivery Service の概要
+title: AEM Forms Edge Delivery Service の概要。 フォームを作成します。
 description: クラフトパーフェクトフォーム、高速！ ⚡ AEM Forms Edge Delivery ドキュメントベースのオーサリング=超高速で SEO に対応したフォームで、より幸せなユーザーと検索エンジンを実現。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1118'
 ht-degree: 1%
 
 ---
 
 
-# AEM Forms Edge Delivery Service でのフォームの作成
+# Edge Delivery Service(EDS) サイトのフォームを作成します
 
 今日のデジタル時代では、どの組織でも、使いやすいフォームを作成することが不可欠です。 AEM Forms Edge Delivery を使用すると、Word やGoogle Docs などの使い慣れたツールを使用してフォームを作成できます。
 
@@ -35,63 +35,76 @@ AEM Forms Edge Delivery は、フォームを簡単に作成して、取り込�
 
 +++ 手順 1:Edge Delivery Service(EDS) プロジェクトにフォームブロックを追加します。
 
-The `Form block` には、EDS サイトにフォームを追加する機能が含まれています。 このブロックは、AEMボイラープレートを使用して作成されたプロジェクトに含まれていません。 フォームブロックを Edge Delivery Service プロジェクトに含めるには：
+フォームブロックを使用すると、Edge 配信サービスサイト用のフォームをユーザーが作成できるようになります。 ただし、このブロックは、デフォルトのAEMボイラープレート（Edge Delivery Service プロジェクトの作成に使用）には含まれていません。 フォームブロックを Edge 配信サービスプロジェクトにシームレスに統合するには、次の手順を実行します。
 
-1. 次に移動： `[Forms Block repository]/blocks` ローカルマシン上のフォルダーにコピーし、 `form` フォルダー。
+1. **フォームブロックリポジトリを探します。** 次にアクセス： [Forms Block リポジトリ]/blocks フォルダーをローカルマシン上に置き、 `form` フォルダー。
+1. **フォームブロックを EDS プロジェクトに貼り付けます。**
+次に移動： [EDS プロジェクトリポジトリ]/blocks/フォルダーをローカルマシンに貼り付け、フォームフォルダーを貼り付けます。
+1. **変更を GitHub にコミット：** フォームフォルダーとその基になるファイルを、GitHub の Edge Delivery Service プロジェクトにチェックインします。
 
-1. 次に移動： `[EDS Project repository]/blocks/` ローカルマシン上のフォルダーにコピーし、 `form` フォルダー。
+これらの手順を完了すると、Form ブロックは GitHub の Edge Delivery Service(EDS) プロジェクトリポジトリーに正常に統合されます。
 
-1. チェックイン： `form` フォルダーおよび基になるファイルを、GitHub の Edge Delivery Service プロジェクトに追加します。
 
-   Form ブロックが GitHub の EDS プロジェクトリポジトリに追加されます。 GitHub のビルドに失敗しないことを確認します。
+**GitHub ビルドの問題のトラブルシューティング**
 
-   * 「モジュール「../../scripts/lib-franklin.js」へのパスを解決できません」というエラーが発生した場合は、 `[EDS Project]/blocks/forms/form.js` ファイル。 import 文で、 `lib-franklin.js` ファイルに `aem.js` ファイル。
+潜在的な問題に対処し、GitHub のビルドプロセスをスムーズに進めます。
 
-   * リントエラーが発生した場合は、それらを無視してください。 リンクチェックを回避するには、 `[EDS Project]\package.json` ファイルを作成し、次の「lint」スクリプトを更新します： `"lint": "npm run lint:js && npm run lint:css"` から `"lint": "echo 'skipping linting for now'"`. ファイルを保存し、GitHub プロジェクトにコミットします。
+* **モジュールパスの解決エラー：**
+「モジュール「../../scripts/lib-franklin.js」へのパスを解決できません」というエラーが発生した場合は、 [EDS プロジェクト]/blocks/forms/form.jsファイルを参照してください。 lib-franklin.js ファイルを aem.js ファイルに置き換えて、import 文を更新します。
 
-これで、フォームを作成して、サイトに追加できます。
+* **リントエラーを処理：**
+リントエラーが発生した場合は、それらを回避できます。 を開きます。 [EDS プロジェクト]/package.jsonファイルを編集し、&quot;lint&quot;スクリプトを&quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot;から&quot;lint&quot;: &quot;echo &#39;今すぐのリントをスキップ&#39;&quot;に変更します。 ファイルを保存し、変更を GitHub プロジェクトにコミットします。
+
+
 
 +++
 
 +++ 手順 2:Microsoft Excel またはGoogleシートを使用してフォームを作成する。
 
-複雑なプロセスの代わりに、スプレッドシートを使用して簡単にフォームを作成できます。 まず、行と列のヘッダーをスプレッドシートに追加します。各行でフォームフィールドが定義され、各列ヘッダーで対応するフォームフィールドのプロパティが定義されます。
+複雑なプロセスを進める代わりに、スプレッドシートを使用してフォームを簡単に作成できます。 まず、行と列のヘッダーをスプレッドシートに追加します。スプレッドシートの各行はフォームフィールドを表し、各列ヘッダーは対応するフィールドのプロパティを定義します。
 
-例えば、次のスプレッドシートでは、行が `contact us` フォームおよび列ヘッダーは、対応するフィールドのプロパティを定義します。
+例えば、行が `enquiry` フォームヘッダーと列ヘッダーは、プロパティを定義します。
 
-![お問い合わせスプレッドシート](/help/edge/assets/contact-us-form-spreadsheet.png)
+![照会スプレッドシート](/help/edge/assets/enquiry-form-spreadsheet.png)
 
-フォームを作成するには：
+フォームの作成を続行するには：
 
-1. Microsoft SharePointまたはGoogle Drive のAEM Edge Delivery プロジェクトフォルダーを開きます。
+1. Microsoft SharePointまたはGoogle Drive のAEM Edge Delivery プロジェクトフォルダーにアクセスします。
 
-1. AEM Edge Delivery プロジェクトディレクトリの下の任意の場所で、Microsoft Excel ワークブックまたはGoogleシートを作成します。 例えば、 `contact-us` (Google Drive のAEM Edge Delivery プロジェクトディレクトリ )
+1. AEM Edge Delivery プロジェクトディレクトリ内の任意の場所で、Microsoft Excel ワークブックまたはGoogleシートを作成します。 例えば、 `enquiry` (Google Drive のAEM Edge Delivery プロジェクトディレクトリ )
 
-1. シートがAEMユーザーと共有されていることを確認します ( 例： `helix@adobe.com`) [プロジェクト用に設定](https://www.aem.live/docs/setup-customer-sharepoint) およびユーザーはシートの編集権限を持っています。
+1. シートが適切なAEMユーザー ( 例： `helix@adobe.com`) [プロジェクトに指定された設定に従って](https://www.aem.live/docs/setup-customer-sharepoint). ユーザにシートの編集権限を付与します。
 
 1. 作成したスプレッドシートを開き、デフォルトのシートの名前を「shared-default」に変更します。
 
    ![既定のシートの名前を&quot;shared-default&quot;に変更](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. フォームのフィールドを追加するには、行と列のヘッダーを `shared-default` シート。各行でフォームフィールドが定義され、各列ヘッダーで [プロパティ](/help/edge/docs/forms/eds-form-field-properties)) をクリックします。
+1. フォームフィールドを追加するには、行と列のヘッダーを「shared-default」シートに挿入します。 各行は、フォームフィールドを表し、対応するフィールドを定義する列ヘッダーを持つ必要があります [プロパティ](/help/edge/docs/forms/eds-form-field-properties).
 
-   すばやく開始するには、 [お問い合わせスプレッドシート](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link) をスプレッドシートに追加します。
+   すぐに開始するには、 [照会スプレッドシート](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) をスプレッドシートに追加します。 内容をコピーした後、スプレッドシートを保存します。
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427468?quality=12&learn=on)
 
-1. 用途 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) をクリックして、シートをプレビューおよびパブリッシュします。
 
-   ![AEM Sidekickを使用してシートをプレビューおよびパブリッシュします。](/help/edge/assets/preview-form.png)
+1. 用途 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) をクリックして、シートをプレビューします。
 
-   プレビューと公開時に、ブラウザーが新しいタブを開き、シートの内容が JSON 形式で表示されます。 後でフォームをレンダリングする際に必要になるので、ライブ URL を必ずメモしておきます。
+   ![AEM Sidekickを使用してシートをプレビュー](/help/edge/assets/preview-form.png)
 
-   URL の形式は次の通りです。
+   プレビューおよび公開時に、新しいブラウザータブにシートのコンテンツが JSON 形式で表示されます。 次のセクションでフォームをレンダリングする際に必要なので、プレビュー URL を取り込む必要があります。 URL 形式は次のとおりです。
+
 
    ```JSON
-   https://<branch>--<repository>--<owner>.hlx.live/<form>.json
-   
-   For example, https://main--portal--wkndforms.hlx.live/contact-us.json
+       https://<branch>--<repository>--<owner>.hlx.live/<form>.json
    ```
+
+   * `<branch>` は、GitHub リポジトリのブランチを参照します。
+   * `<repository>` は GitHub リポジトリを示します。
+   * `<owner>` は、GitHub リポジトリをホストする GitHub アカウントのユーザー名を指します。
+
+   例えば、プロジェクトのリポジトリの名前が「portal」の場合、リポジトリは「wkndforms」アカウントの下に配置され、「main」ブランチを使用している場合、URL は次のようになります。
+
+   `https://main--portal--wkndforms.hlx.page/enquiry.json`
+
 
 +++
 
@@ -100,30 +113,30 @@ The `Form block` には、EDS サイトにフォームを追加する機能が�
 
 これまで、フォームブロックを EDS プロジェクトに追加し、フォームの構造を準備しました。 次に、フォームをプレビューします。
 
-1. Microsoft SharePointまたはGoogle Drive アカウントに移動し、AEM Edge Delivery プロジェクトディレクトリを開きます。
+1. **プロジェクトディレクトリにアクセスする：** Microsoft SharePointまたはGoogle Drive アカウントを開き、 AEM Edge Delivery プロジェクトディレクトリに移動します。
 
-1. ドキュメントファイルを開き、フォームを埋め込みます。 例えば、インデックスファイルを開きます。 また、新しいドキュメントファイルを作成することもできます。
+1. **フォームをドキュメントに埋め込む：** フォームを埋め込むドキュメントファイル（インデックスファイルなど）を開きます。 または、新しいドキュメントを作成できます。
 
-1. フォームを追加するドキュメント内の目的の場所に移動します。
+1. **目的の場所に移動します。** フォームを追加するドキュメント内の目的の場所に移動します。
 
-1. 以下に示すように、「Form」という名前のブロックをファイルに追加します。
+1. **フォームブロックを追加します。** 次の図に示すように、ファイルに「Form」という名前のブロックを挿入します。
 
-   ![](/help/edge/assets/form-block-in-sites-page-example.png)
+   | フォーム |
+   |---|
+   | [https://main—portal—wkndforms.hlx.live/inquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json) |
 
-   2 番目の行に、前の節で記録した URL をハイパーリンクとして含めます。 開発やテストの目的ではプレビュー URL(.page URL) を、実稼動環境では公開 URL(.live) を使用します。
+   このブロックは、フォームが埋め込まれるプレースホルダーとして機能します。 ブロックの 2 行目に、 `<form>.json` ファイルをハイパーリンクとして保存します。
 
    >[!IMPORTANT]
    >
    >
-   > URL がプレーンテキストとして表示されるのではなく、ハイパーリンクされていることを確認します。
+   > URL がプレーンテキストで表示されるのではなく、ハイパーリンクとしてフォーマットされていることを確認します。
 
 
-1. 用途 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) をクリックして、ページをプレビューします。 これで、ページにフォームが表示されます。
-
-   例えば、次に、 [お問い合わせスプレッドシート](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link):
+1. 用途 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) をクリックしてドキュメントをプレビューします。 これで、ページにフォームが表示されます。 例えば、次に、 [照会スプレッドシート](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
 
 
-   ![EDS フォームのサンプル](/help/edge/assets/eds-form.png)
+   [![EDS フォームのサンプル](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
 
    次に、フォームに入力して送信ボタンをクリックすると、スプレッドシートがまだデータを受け入れるように設定されていないので、次のようなエラーが発生します。
 

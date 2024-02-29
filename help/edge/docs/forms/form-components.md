@@ -4,9 +4,9 @@ description: AEM Forms Edge Delivery Service は、効率化されたデータ�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '275'
 ht-degree: 5%
 
 ---
@@ -57,8 +57,8 @@ ht-degree: 5%
    </td>
   </tr>
       <tr>
-   <td>プレースホルダー</td>
-   <td>テキスト、検索、URL、電話番号、メール、パスワード、および番号</td>
+   <td>説明</td>
+   <td>すべてのフィールドに適用可能</td>
    <td> プレースホルダー属性は、フィールドに必要な情報の種類に関する簡単なヒントをユーザーに提供します。
    </td>
   </tr>
