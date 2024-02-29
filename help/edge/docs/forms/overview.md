@@ -4,7 +4,7 @@ description: AEM Forms Edge Delivery Service は、効率化されたデータ�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e21b681b12e90110436c7319797809c8d6b75eea
+source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 1%
@@ -16,8 +16,6 @@ ht-degree: 1%
 
 AdobeのAEM Forms Edge Delivery Service を使用して、フォームの作成を合理化し、完了率を高めます。 この強力で合成可能なサービスにより、優れたパフォーマンスと視覚的な魅力を備えたエンタープライズクラスのフォームを構築できます。 AEMは、ユーザーエクスペリエンスとビジネス目標の両方を優先し、超高速読み込み時間とフォームの完了を確保します。
 
-![EDS Formsの主な機能](/help/edge/assets/eds-forms-key-features.png){width="70%"}
-
 サービスを使用して以下のことが行えます。
 
 * **見事なフォームを持つCaptivateユーザー**：事前に作成されたコンポーネントのライブラリを使用して、複雑で魅力的なフォームを簡単に作成できます。 reCAPTCHA の統合、電子メールへの直接の送信、シームレスなファイルアップロードを可能にし、SharePoint、Azure Storage、Amazon S3 などのセキュリティで保護されたストレージソリューションを実現します。 独自のカスタムフォームコンポーネントを作成して、独自のビジョンを生み出すこともできます。
@@ -26,6 +24,7 @@ AdobeのAEM Forms Edge Delivery Service を使用して、フォームの作成�
 
 * **完璧な Lighthouse スコアを持つフォームの作成**：低速なインターネット接続でも、すばやく読み込んでレンダリングするフォームを構築します。 読み込み時間の短縮と最適化されたユーザーエクスペリエンスは、フォームの完了率の向上とコンバージョン率の向上に貢献します。
 
+  <img src="/help/edge/assets/eds-forms-key-features.png" alt="EDS Formsの主な機能" style = "width=`80%`; align=`center`; border: 1px solid;padding: 15px;">
 
 <!-- >
 * **Captivate users with stunning forms**: 

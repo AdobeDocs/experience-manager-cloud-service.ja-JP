@@ -4,7 +4,7 @@ description: AEM FormsEdge Delivery Servicesフォームの公開
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 1%

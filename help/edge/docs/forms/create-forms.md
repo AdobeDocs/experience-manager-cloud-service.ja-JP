@@ -4,10 +4,10 @@ description: クラフトパーフェクトフォーム、高速！ ⚡ AEM Form
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 1%
+source-wordcount: '1120'
+ht-degree: 2%
 
 ---
 
@@ -79,7 +79,7 @@ AEM Forms Edge Delivery は、フォームを簡単に作成して、取り込�
 
    ![既定のシートの名前を&quot;shared-default&quot;に変更](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. フォームフィールドを追加するには、行と列のヘッダーを「shared-default」シートに挿入します。 各行は、フォームフィールドを表し、対応するフィールドを定義する列ヘッダーを持つ必要があります [プロパティ](/help/edge/docs/forms/eds-form-field-properties).
+1. フォームフィールドを追加するには、行と列のヘッダーを「shared-default」シートに挿入します。 各行は、 [フォームフィールド](/help/edge/docs/forms/form-components.md)を作成し、対応するフィールドを定義する列ヘッダーを含めます。 [プロパティ](/help/edge/docs/forms/eds-form-field-properties).
 
    すぐに開始するには、 [照会スプレッドシート](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) をスプレッドシートに追加します。 内容をコピーした後、スプレッドシートを保存します。
 
@@ -153,6 +153,7 @@ AEM Forms Edge Delivery は、フォームを簡単に作成して、取り込�
 
 ## 詳細を表示する
 
+* [フォームコンポーネント](/help/edge/docs/forms/form-components.md)
 * [フォームフィールドのプロパティ](/help/edge/docs/forms/eds-form-field-properties)
 * [フォームの作成とプレビュー](/help/edge/docs/forms/create-forms.md)
 * [フォームからデータを送信できるようにする](/help/edge/docs/forms/submit-forms.md)
