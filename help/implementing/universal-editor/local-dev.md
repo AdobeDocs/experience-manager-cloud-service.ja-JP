@@ -2,10 +2,10 @@
 title: ユニバーサルエディターを使用したローカル AEM 開発
 description: ユニバーサルエディターが開発目的でローカルの AEM インスタンスでの編集に対応する方法を説明します。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
-workflow-type: ht
-source-wordcount: '576'
-ht-degree: 100%
+source-git-commit: bbb7e7d9023f8326980196923bfab77c3968ead4
+workflow-type: tm+mt
+source-wordcount: '699'
+ht-degree: 68%
 
 ---
 
@@ -18,7 +18,13 @@ ht-degree: 100%
 
 ## 概要 {#overview}
 
-このドキュメントでは、ユニバーサルエディターを使用して AEM でローカルに開発を行えるよう、ユニバーサルエディターサービスのローカルコピーと共に HTTPS で AEM を実行する方法について説明します。
+ユニバーサルエディターサービスは、ユニバーサルエディターとバックエンドシステムを結び付けるものです。ユニバーサルエディター用にローカルで開発するには、ユニバーサルエディターサービスのローカルコピーを実行する必要があります。 これは、次の理由からです。
+
+* Adobeの公式のユニバーサルエディターサービスはグローバルにホストされており、ローカルのAEMインスタンスはインターネットに公開する必要があります。
+* ローカルのAEM SDK を使用して開発中は、Adobeの Universal Editor Service にインターネットからアクセスできません。
+* AEMインスタンスに IP 制限があり、Adobeの Universal Editor Service が定義された IP 範囲にない場合は、自分でホストできます。
+
+このドキュメントでは、Universal Editor Service のローカルコピーと共に HTTPS でAEMを実行し、ユニバーサルエディターで使用するAEM上でローカルに開発できるようにする方法を説明します。
 
 ## HTTPS で実行する AEM の設定 {#aem-https}
 
@@ -26,13 +32,13 @@ HTTPS で保護された外側のフレーム内で、保護されていない H
 
 これを行うには、HTTPS で実行する AEM を設定する必要があります。開発目的で、自己署名証明書を使用できます。
 
-使用できる自己署名付き証明書を含め、HTTPS で実行する AEM を設定する方法については、このドキュメントを参照してください。
+[このドキュメントを参照](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=ja) を参照してください。また、AEMを HTTPS で実行し、自己署名証明書を含めて使用する方法についても説明します。
 
 ## ユニバーサルエディターサービスのインストール {#install-ue-service}
 
-ユニバーサルエディターサービスは、ユニバーサルエディターとバックエンドシステムを結び付けるものです。公式のユニバーサルエディターサービスはグローバルにホストされているので、ローカルの AEM インスタンスはインターネットに公開する必要があります。これを回避するには、ユニバーサルエディターサービスのローカルコピーを実行します。
+ユニバーサルエディターサービスは、ユニバーサルエディターのコピー全体ではなく、ローカルAEM環境からの呼び出しがインターネット経由ではなく、制御する定義済みのエンドポイントからの呼び出しを確実にルーティングする機能のサブセットです。
 
-そのためには、[NodeJS バージョン 16](https://nodejs.org/en/download/releases) が必要です。
+[NodeJS バージョン 16](https://nodejs.org/en/download/releases) Universal Editor Service のローカルコピーを実行するには、が必要です。
 
 ユニバーサルエディターサービスは、AEM Engineering によって直接配布されます。ローカルコピーを入手するには、VIP プログラムのエンジニアにお問い合わせください。
 
@@ -98,6 +104,12 @@ Universal Editor Service listening on port 8000 as HTTPS Server
 
 設定が完了すると、コンテンツ更新呼び出しがデフォルトのデフォルトのではなく、`https://localhost:8000` に移動するのを確認できます。
 
+>[!NOTE]
+>
+>直接にアクセスしようとしています `https://localhost:8000` 結果は `404` エラー。 これは期待された動作です。
+>
+>ローカルのユニバーサルエディターサービスへのアクセスをテストするには、 `https://localhost:8000/corslib/LATEST`. 詳しくは、 [次のセクション](#editing) 」を参照してください。
+
 >[!TIP]
 >
 >グローバルユニバーサルエディターサービスを使用するためのページの実装方法について詳しくは、[AEM でのユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md#instrument-page)を参照してください。
@@ -106,6 +118,6 @@ Universal Editor Service listening on port 8000 as HTTPS Server
 
 [ローカルで実行されるユニバーサルエディターサービス](#running-ue)と[ローカルサービスを使用するために実装されたコンテンツページ](#using-loca-ue)を使用して、エディターを起動できるようになりました。
 
-1. ブラウザーを `https://localhost:8000/` で開きます。
+1. ブラウザーを `https://localhost:8000/corslib/LATEST` で開きます。
 1. [自己署名証明書](#ue-https)に同意するようダイレクトされます。
 1. 自己署名証明書が信頼されると、ローカルのユニバーサルエディターサービスを使用してページを編集できるようになります。
