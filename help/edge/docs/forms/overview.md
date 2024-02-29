@@ -4,9 +4,9 @@ description: AEM Forms Edge Delivery Service は、効率化されたデータ�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 6fbeb94d3547d50e93ab80aee5d6458e51edb1da
+source-git-commit: e21b681b12e90110436c7319797809c8d6b75eea
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '445'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 1%
 
 # AEM Forms Edge Delivery Service
 
-AEM Forms Edge Delivery Service は、Adobeが提供する合成可能なサービスで、影響が大きく、パフォーマンスの高い Web フォームを作成して配信できます。
+AdobeのAEM Forms Edge Delivery Service を使用して、フォームの作成を合理化し、完了率を高めます。 この強力で合成可能なサービスにより、優れたパフォーマンスと視覚的な魅力を備えたエンタープライズクラスのフォームを構築できます。 AEMは、ユーザーエクスペリエンスとビジネス目標の両方を優先し、超高速読み込み時間とフォームの完了を確保します。
 
-![EDS Formsの主な機能](/help/edge/assets/eds-forms-key-features.png)
+![EDS Formsの主な機能](/help/edge/assets/eds-forms-key-features.png){width="70%"}
 
 サービスを使用して以下のことが行えます。
 
