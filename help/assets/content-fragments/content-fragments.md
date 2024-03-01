@@ -2,10 +2,10 @@
 title: コンテンツフラグメントの操作（Assets - コンテンツフラグメント）
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントで、ページオーサリングやヘッドレス配信に最適な、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。また、MSM と共に使用する方法も説明します。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
 workflow-type: tm+mt
-source-wordcount: '2222'
-ht-degree: 100%
+source-wordcount: '2228'
+ht-degree: 98%
 
 ---
 
@@ -113,16 +113,6 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 >[!NOTE]
 >
 >AEM はフラグメントコンテンツの翻訳もサポートしています。詳しくは、「[アセットの翻訳](/help/assets/translate-assets.md)」を参照してください。
-
-## MSM for Assets でのコンテンツフラグメントの再利用 {#reusing-content-fragments-with-msm-assets}
-
-**Assets** コンソールからアクセスする場合、MSM を使用してフラグメントのライブコピーを作成できます。
-
-詳しくは、[MSM for Assets を使用したコンテンツフラグメントの再利用](/help/assets/reuse-assets-using-msm.md)を参照してください。これにより、フラグメントのバリエーションおよび個々のフィールドの両方に対する[継承](/help/assets/content-fragments/content-fragments-variations.md#inheritance)が有効になります。
-
->[!CAUTION]
->
->（コンテンツフラグメントのコピーを作成する）MSM を使用する場合は、それぞれの[コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)で使用されているすべてのデータタイプから&#x200B;**一意**&#x200B;の制約を削除する必要があります。
 
 ## コンテンツタイプ {#content-type}
 
@@ -297,6 +287,21 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
    * フラグメントのレイアウトと配信（チャネル）を行います。
    * フラグメントは、レイアウトを定義し、一部またはすべての要素／バリエーションと関連するコンテンツを配信するために、1 つ以上の専用コンポーネントを必要とします。
    * 作成時にフラグメントをページにドラッグすると、必須コンポーネントが自動的に関連付けられます。
+
+## MSM でのコンテンツフラグメントの再利用（アセット用） {#reusing-content-fragments-with-msm-assets}
+
+**Assets** コンソールからアクセスする場合、MSM を使用してフラグメントのライブコピーを作成できます。
+
+詳しくは、以下を参照してください。
+
+* [MSM を使用したコンテンツフラグメントの再利用（アセット用）](/help/assets/content-fragments/content-fragments-msm.md)
+* [MSM for Assets を使用したアセットの再利用](/help/assets/reuse-assets-using-msm.md).
+
+これらを有効にする [継承](/help/assets/content-fragments/content-fragments-variations.md#inheritance) フラグメントのバリエーションと個々のフィールドの両方に対して
+
+>[!CAUTION]
+>
+>（コンテンツフラグメントのコピーを作成する）MSM を使用する場合は、それぞれの[コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)で使用されているすべてのデータタイプから&#x200B;**一意**&#x200B;の制約を削除する必要があります。
 
 ## 使用例 {#example-usage}
 
