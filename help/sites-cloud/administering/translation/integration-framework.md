@@ -4,10 +4,10 @@ description: サードパーティの翻訳サービスと統合するための 
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 05e4adb0d7ada0f7cea98858229484bf8cca0d16
 workflow-type: tm+mt
-source-wordcount: '1465'
-ht-degree: 98%
+source-wordcount: '1466'
+ht-degree: 82%
 
 ---
 
@@ -27,11 +27,11 @@ AEM のコンテンツ翻訳機能の概要については、[多言語サイト
 
 ## 翻訳サービスプロバイダーへの接続 {#connecting-to-a-translation-service-provider}
 
-AEM を翻訳サービスプロバイダーに接続するためのクラウド設定を作成します。AEM には、[Microsoft Translator にデフォルトで接続する](connect-ms-translator.md)機能が用意されています。
+AEM を翻訳サービスプロバイダーに接続するためのクラウド設定を作成します。AEMには次の機能が含まれています。 [Microsoft® Translator に接続](connect-ms-translator.md) デフォルトでは。
 
 次の翻訳ベンダーは翻訳プロジェクト用の AEM API の実装を提供します。
 
-* [Microsoft Translator](connect-ms-translator.md)
+* [Microsoft](connect-ms-translator.md)
 * [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)（Adobe Exchange プレミアパートナー）
 * [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
@@ -39,11 +39,11 @@ AEM を翻訳サービスプロバイダーに接続するためのクラウド�
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
 * [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
-* [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html)
+<!-- THIS URL IS 404 * [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html) -->
 * [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 
-コネクタパッケージをインストールしたら、コネクタ用のクラウド設定を作成できます。通常は、翻訳サービスで認証を行うための資格情報を指定する必要があります。Microsft Translator コネクタ用のクラウド設定の追加については、[Microsoft Translator との統合](connect-ms-translator.md)を参照してください。
+コネクタパッケージをインストールしたら、コネクタ用のクラウド設定を作成できます。通常は、翻訳サービスでの認証用の資格情報を指定する必要があります。 Microsoft® Translator コネクタのクラウド設定の追加について詳しくは、 [Microsoft® Translator との統合](connect-ms-translator.md).
 
 必要に応じて、同じコネクタに対して複数のクラウド設定を作成できます。例えば、同じベンダーを使用するアカウントまたはプロジェクトごとに設定を 1 つずつ作成します。
 
@@ -51,7 +51,7 @@ AEM を翻訳サービスプロバイダーに接続するためのクラウド�
 
 ## 翻訳統合フレームワーク設定の作成 {#creating-a-translation-integration-configuration}
 
-翻訳統合フレームワーク設定を作成して、コンテンツの翻訳方法を指定します。この設定には以下の情報が含まれます。
+翻訳統合フレームワーク設定を作成して、コンテンツの翻訳方法を指定できます。 この設定には以下の情報が含まれます。
 
 * 使用する翻訳サービスプロバイダー
 * 人間による翻訳と機械翻訳のどちらを実行するか
@@ -91,7 +91,7 @@ Web サイトのセクションごとに翻訳要件が異なる場合は、そ�
 | タグを翻訳 | このオプションを選択すると、ページに関連付けられているタグを翻訳できます。 |
 | ページのアセットを翻訳 | このプロパティは、ファイルシステムからコンポーネントに追加されたアセットや、アセットから参照されたアセットを変換する方法を定義します。<br>- 変換しない：ページアセットは翻訳されません。<br>- サイト翻訳ワークフローの使用：「**Sites**」タブの設定プロパティに従ってアセットが処理されます。<br>- アセット翻訳ワークフローの使用：「**Assets**」タブのプロパティの設定に従ってアセットが処理されます。 |
 | 翻訳を自動実行 | 翻訳プロジェクトの作成後に翻訳ジョブを自動的に実行する場合、このプロパティを有効にします。このオプションを選択すると、翻訳ジョブのレビューやスコーピングを行う機会はなくなります。 |
-| 更新のみの翻訳を無効にする | このオプションをオンにすると、翻訳プロジェクトを更新すると、前回の翻訳以降に変更されたフィールドだけでなく、翻訳用のすべての翻訳可能なフィールドが送信されます。 |
+| 更新のみの翻訳を無効にする | このオプションをオンにすると、翻訳プロジェクトを更新すると、最後の翻訳以降に変更されたフィールドだけでなく、翻訳用のすべての翻訳可能なフィールドが送信されます。 |
 
 ### アセットの設定プロパティ {#assets-configuration-properties}
 
@@ -105,11 +105,11 @@ Web サイトのセクションごとに翻訳要件が異なる場合は、そ�
 | 翻訳プロバイダー | このプロパティは、翻訳を実行する翻訳プロバイダーを定義します。対応するコネクタがインストールされている場合は、プロバイダーがリストに表示されます。 |
 | コンテンツのカテゴリ | （機械翻訳の場合のみ）翻訳するコンテンツを示すプロパティです。カテゴリは、コンテンツを翻訳する際の用語や言葉遣いの選択を左右します。 |
 | アセットを翻訳 | 翻訳プロジェクトにアセットを含めるには、このプロパティをアクティブにします。 |
-| メタデータを翻訳 | アセットのメタデータを変換するには、このプロパティをアクティブにします。 |
-| タグを翻訳 | アセットに関連付けられているタグを翻訳する場合は、このプロパティをアクティブにします。 |
-| 翻訳を自動実行 | 翻訳プロジェクトの作成後に翻訳ジョブを自動的に実行する場合、このプロパティを選択します。このオプションを選択すると、翻訳ジョブのレビューやスコーピングを行う機会はなくなります。 |
-| 更新のみの翻訳を無効にする | このオプションをオンにすると、翻訳プロジェクトを更新すると、前回の翻訳以降に変更されたフィールドだけでなく、翻訳用のすべての翻訳可能なフィールドが送信されます。 |
-| 翻訳用にコンテンツモデルフィールドを有効にする | このオプションを有効にすると、[コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)の&#x200B;**翻訳可能**&#x200B;フィールドを使用して、そのフィールドが翻訳されるかどうかを判断し、それに応じて自動的に[翻訳ルール](rules.md)を作成します。このオプションは、作成済みの翻訳ルールより優先されます。 |
+| メタデータを翻訳 | このプロパティをアクティベートして、アセットのメタデータを翻訳できるようにします。 |
+| タグを翻訳 | このプロパティをアクティブにして、アセットに関連付けられているタグを翻訳できるようにします。 |
+| 翻訳を自動実行 | このプロパティを選択すると、翻訳プロジェクトの作成後に翻訳ジョブを自動的に実行できます。 このオプションを選択すると、翻訳ジョブのレビューやスコーピングを行う機会はなくなります。 |
+| 更新のみの翻訳を無効にする | このオプションをオンにすると、翻訳プロジェクトを更新すると、最後の翻訳以降に変更されたフィールドだけでなく、翻訳用のすべての翻訳可能なフィールドが送信されます。 |
+| 翻訳用にコンテンツモデルフィールドを有効にする | このオプションを有効にする場合、 **翻訳可能** ～に関するフィールド [コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) フィールドが翻訳され、自動的にが作成されるかどうかを判断するには、次の手順を実行します。 [翻訳ルール](rules.md) 従って このオプションは、作成済みの翻訳ルールより優先されます。 |
 
 ## 翻訳するページの設定 {#configuring-pages-for-translation}
 
@@ -120,9 +120,9 @@ Web サイトのセクションごとに翻訳要件が異なる場合は、そ�
 
 翻訳統合フレームワークのクラウド設定によって、サービスプロバイダーへの接続に使用するクラウド設定が特定されます。ソースページをフレームワークのクラウド設定に関連付ける場合は、フレームワークのクラウド設定が使用するサービスプロバイダーのクラウド設定にページを関連付ける必要があります。
 
-ページをクラウド設定に関連付ける場合は、そのページの子ページが関連付けを継承します。例えば、`/content/wknd/language-masters/en/magazine` ページを翻訳統合フレームワークに関連付けると、`magazine` ページとその下にある子のページがフレームワークに従って翻訳されます。
+ページをクラウド設定に関連付ける場合は、そのページの子ページが関連付けを継承します。例えば、 `/content/wknd/language-masters/en/magazine` 翻訳統合フレームワークを含むページ、 `magazine` その下のページと子ページは、フレームワークに従って翻訳されます。
 
-必要に応じて、子ページの関連付けを上書きできます。例えば、Web サイトのコンテンツがほとんど旅行とライフスタイルに関するものだとします。しかし、ページの 1 つのブランチには企業の説明が記述されています。この場合、サイトのルートページは、ライフスタイルカテゴリを使用して機械翻訳を指定する翻訳統合フレームワークと関連付けられ、会社を説明する分岐は、一般カテゴリを使用して機械翻訳を実行するフレームワークを使用します。
+必要に応じて、子ページの関連付けを上書きできます。例えば、Web サイトのコンテンツがほとんど旅行とライフスタイルに関するものだとします。しかし、ページの 1 つのブランチには企業の説明が記述されています。この場合、サイトのルートページは、「ライフスタイル」カテゴリを使用して機械翻訳を指定する翻訳統合フレームワークに関連付けられている可能性があります。 会社を説明するブランチは、「一般」カテゴリを使用して機械翻訳を実行するフレームワークを使用します。
 
 ### 翻訳プロバイダーへのページの関連付け {#associating-a-page-with-a-translation-provider}
 

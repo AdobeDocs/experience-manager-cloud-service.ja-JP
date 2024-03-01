@@ -11,10 +11,10 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: f7967c5374dd34315b2577cc9fd7606db3ef4cc7
+source-git-commit: 05e4adb0d7ada0f7cea98858229484bf8cca0d16
 workflow-type: tm+mt
 source-wordcount: '1866'
-ht-degree: 95%
+ht-degree: 85%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 95%
 
 ## 前提条件 {#prerequisites}
 
-このデモを完了するには、ローカル開発環境を使用する必要があります。 これには、Adobe Commerce に設定および接続された AEM の実行インスタンスが含まれます。[AEM as Cloud Service SDK を使用してローカル開発をセットアップする](../develop.md)ための要件と手順を確認します。
+ローカルの開発環境を使用して、このデモを完了します。 これには、Adobe Commerce に設定および接続された AEM の実行インスタンスが含まれます。[AEM as Cloud Service SDK を使用してローカル開発をセットアップする](../develop.md)ための要件と手順を確認します。
 
 [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html?lang=ja) へのアクセスと、データ収集用のスキーマ、データセットおよびデータストリームを作成するための権限も必要です。詳しくは、[権限の管理](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html?lang=ja)を参照してください。
 
@@ -45,11 +45,11 @@ ht-degree: 95%
 
 ### ローカル設定
 
-AEM Commerce as a Cloud Service 環境を稼働させるには、[ローカル設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?lang=ja#ローカル設定)の手順に従います。
+ローカル設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?lang=ja#ローカル設定)の[手順に従って、AEMコマースをCloud Service 環境として機能させることができます。
 
-### プロジェクト設定
+### プロジェクトセットアップ
 
-新しい AEM Commerce（CIF）プロジェクトを作成するには、[AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?lang=ja#project)の手順に従います。
+[AEM プロジェクト アーキタイプの](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?lang=ja#project)手順に従って、ブランド新しいAEMコマース (CIF) プロジェクトを作成できます。
 
 >[!TIP]
 >
@@ -70,7 +70,7 @@ $ mvn clean install -PautoInstallSinglePackage
 
 ### Peregrine および CIF-AEP コネクタ依存関係のインストール
 
-この AEM Commerce サイトのカテゴリおよび製品ページからイベントデータを収集して送信するには、主要な `npm` パッケージを AEM Commerce プロジェクトの `ui.frontend` モジュールにインストールする必要があります。
+この AEM Commerce サイトのカテゴリおよび製品ページからイベントデータを収集して送信するには、AEM Commerce プロジェクトのモジュールにキー `npm` パッケージ `ui.frontend` をインストールします。
 
 `ui.frontend` モジュールに移動し、コマンドラインから次のコマンドを実行して、必要なパッケージをインストールします。
 
@@ -94,7 +94,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 Maven ビルドプロセスの一環として、npm クリーンインストール（`npm ci` を使用）がトリガーされます。これには、`--force` 引数も必要です。
 
-プロジェクトのルート POM ファイル `pom.xml` に移動し、`<id>npm ci</id>` 実行ブロックを見つけます。次のようにブロックを更新します。
+プロジェクトのルート POM ファイル `pom.xml` に移動し、`<id>npm ci</id>` 実行ブロックを見つけます。ブロックを次のように更新します。
 
 ```xml
 <execution>
@@ -133,9 +133,9 @@ Maven ビルドプロセスの一環として、npm クリーンインストー�
 
 ### Babel を使用するための webpack の設定
 
-Babel ローダー（`babel-loader`）と webpack を使用して JavaScript ファイルをトランスパイルするには、`webpack.common.js` ファイルを変更する必要があります。
+Babelローダー(`babel-loader`)とwebpackを使用してJavaScriptファイルをトランスパイルするには、ファイルを編集します `webpack.common.js` 。
 
-`ui.frontend` モジュールに移動し、`webpack.common.js` ファイルを更新して `module` プロパティ値内に次のルールを含めます。
+モジュールに移動して `ui.frontend` ファイルを更新 `webpack.common.js` し、プロパティ値内に `module` 次のルールを含めることができるようにします。
 
 ```javascript
 {
@@ -154,7 +154,7 @@ Babel ローダー（`babel-loader`）と webpack を使用して JavaScript フ
 
 1. `ui.frontend` モジュールに移動し、ファイルを `./src/main/possibleTypes.js` として保存します。
 
-1. `webpack.common.js` ファイルの `DefinePlugin` セクションを更新して、ビルド時に必要な静的変数を置き換えます。
+1. `webpack.common.js`ファイルの`DefinePlugin`セクションを更新して、ビルド中に必要な静的変数を置き換えられるようにします。
 
    ```javascript
    const { DefinePlugin } = require('webpack');
@@ -226,7 +226,7 @@ React ベースの Peregrine と CIF のコアコンポーネントを初期化�
 
    >[!IMPORTANT]
    >
-   >__AEM Guides - CIF Venia Project__ の [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) ファイルについては既にご存知かもしれませんが、このファイルにはいくつかの変更が必要です。まず、__TODO__ コメントを確認します。次に、`eventsCollector` プロパティ内で `eventsCollector > aep` オブジェクトを見つけ、`orgId` および `datastreamId` プロパティを正しい値に更新します。[詳細情報](./aep.md#add-aep-values-to-aem)。
+   >AEMガイド - CIF Venia プロジェクト&#x200B;__で__&#x200B;このファイルに精通[`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js)しているかもしれませんが、このファイルに加える必要のある変更がいくつかあります。まず、__TODO__ コメントを確認します。次に、`eventsCollector` プロパティ内で `eventsCollector > aep` オブジェクトを見つけ、`orgId` および `datastreamId` プロパティを正しい値に更新します。[詳細情報](./aep.md#add-aep-values-to-aem)。
 
 1. 次の内容の `App.js` ファイルを作成します。このファイルは、一般的な React アプリケーションの開始点ファイルに似ており、React およびカスタムフックと、React コンテキストを使用して Experience Platform の統合を簡単にする方法が含まれています。
 
@@ -333,7 +333,7 @@ React ベースの Peregrine と CIF のコアコンポーネントを初期化�
 
 ### 更新された AEM プロジェクトのビルドとデプロイ
 
-上記のパッケージのインストール、コードおよび設定変更が正しいことを確認するには、Maven コマンド `$ mvn clean install -PautoInstallSinglePackage` を使用して、更新された AEM Commerce プロジェクトを再ビルドしてデプロイします。
+上記のパッケージのインストール、コード、および設定の変更が正しいことを確認するには、次の Maven コマンドを使用して、更新された AEM Commerce プロジェクトを再構築し、デプロイします。 `$ mvn clean install -PautoInstallSinglePackage`
 
 ## Experience Platform の設定 {#aep-setup}
 
@@ -368,9 +368,9 @@ React ベースの Peregrine と CIF のコアコンポーネントを初期化�
 
 ### データセットの作成
 
-イベントデータを保存するには、スキーマ定義に準拠するデータセットを作成する必要があります。 データセットは、スキーマ（列）とフィールド（行）を含んだデータコレクション（通常はテーブル）の格納および管理用の構成要素です。
+イベントデータを保存するには、スキーマ定義に準拠するデータセットを作成する必要があります。 データセットは、スキーマ (列) とフィールド (行) を含むデータのコレクション (通常はテーブル) のストレージおよび管理構造です。
 
-1. ブラウザーで、__Adobe Experience Platform__ 製品ホームページに移動します。 例：<https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>
+1. ブラウザーで、__Adobe Experience Platform__ 製品ホームページに移動します。例：<https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>
 
 1. 左側のナビゲーション セクションで __データセット__&#x200B;メニューを見つけ、右上のセクションから「__データセットを作成__」ボタンをクリックします。
 
@@ -380,9 +380,9 @@ React ベースの Peregrine と CIF のコアコンポーネントを初期化�
 
    ![AEP の「スキーマからデータセットを作成」オプション](../assets/aep-integration/AEP-Datasets-Schema-Option.png)
 
-- 新しいページで、前の手順で作成したスキーマを&#x200B;__検索して選択__&#x200B;し、「__次へ__」ボタンをクリックします。
+   新しいページで、前の手順で作成したスキーマを&#x200B;__検索して選択__&#x200B;し、「__次へ__」ボタンをクリックします。
 
-  ![AEP のデータセット作成での「スキーマを選択」セクション](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
+   ![AEP のデータセット作成での「スキーマを選択」セクション](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
 
 1. __データセットを設定／名前__&#x200B;フィールドを使用してデータセットに名前を付け、「__終了__」ボタンをクリックします。
 
@@ -395,9 +395,9 @@ React ベースの Peregrine と CIF のコアコンポーネントを初期化�
 
 ### データストリームの作成
 
-Experience Platform でデータストリームを作成するには、次の手順に従います。
+Experience Platformでデータストリームを作成できるように、次の手順コンプリートプラン。
 
-1. ブラウザーで、 __Adobe Experience Platform__ 製品ホームページに移動します。 例：<https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>
+1. ブラウザーで、__Adobe Experience Platform__ 製品ホームページに移動します。例：<https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>
 
 1. 左側のナビゲーション セクションで&#x200B;__データストリーム__&#x200B;メニューを見つけ、右上のセクションから「__新しいデータストリーム__」ボタンをクリックします。
 
@@ -417,7 +417,7 @@ Experience Platform でデータストリームを作成するには、次の手
 
 >[!TIP]
 >
->詳しくは、[データストリームの概要](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=ja)を参照してください。
+>詳しくは、[データストリームの概要](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)を参照してください。
 
 ## AEM Commerce 設定へのデータストリーム値の追加 {#add-aep-values-to-aem}
 
@@ -432,7 +432,7 @@ Experience Platform でデータストリームを作成するには、次の手
 
 ## `addToCart` イベントのトリガーとデータ収集の検証 {#event-trigger-verify}
 
-上記の手順で、AEM Commerce とExperience Platform の設定が完了します。 これで、トリガーを `addToCart` イベントを使用してデータ収集を検証します。 [Snowplow インスペクタ](https://chromewebstore.google.com/detail/snowplow-inspector/maplkdomeamdlngconidoefjpogkmljm?pli=1) とデータセット __指標とグラフ__ 製品 UI で切り替えます。
+上記の手順で、AEM Commerce とExperience Platform の設定が完了します。 Google クロム&#x200B;_拡張機能、除雪車インスペクター_、製品UIでデータセット&#x200B;__指標とグラフ__&#x200B;の切り替えを使用して、イベントをトリガー`addToCart`してデータ収集を確認できるようになりました。
 
 イベントをトリガーするには、ローカル設定から AEM オーサーまたはパブリッシュサービスを使用します。 この例では、アカウントにログインして AEM オーサーを使用します。
 
@@ -443,7 +443,7 @@ Experience Platform でデータストリームを作成するには、次の手
 1. __製品ページ__&#x200B;で任意の製品カードをクリックし、__色とサイズ__&#x200B;を選択して「__買い物かごに追加__」ボタンを有効にします。
 
 
-1. を開きます。 __Snowplow インスペクタ__ ブラウザーの拡張機能パネルから「 」を選択し、 __Experience Platform水型 SDK__ をクリックします。
+1. ブラウザーの拡張機能パネルから __Snowplow Inspector__ 拡張機能を開き、左側のパネルで __Experience Platform Wed SDK__ を選択します。
 
 
 1. __製品ページ__&#x200B;に戻り、「__買い物かごに追加__」ボタンをクリックします。これにより、データが Experience Platform に送信されます。 __Adobe Experience Platform デバッガー__&#x200B;拡張機能には、イベントの詳細が表示されます。
@@ -452,7 +452,7 @@ Experience Platform でデータストリームを作成するには、次の手
 
 
 
-1. Experience Platform 製品 UI 内で、「__データセットアクティビティ__」タブ下の&#x200B;__データセット／My Demo StoreFront__ に移動します。「__指標とグラフ__」トグルが有効になっている場合は、イベントデータ統計が表示されます。
+1. 製品Experience Platform UI内で、[__データセットアクティビティ__&#x200B;タブの下&#x200B;__にある My Demo StoreFront__ > [データセット] に移動します。[メトリックとグラフ&#x200B;__] が有効になっている場合は__、イベントデータの統計が表示されます。
 
    ![Experience Platform でのデータセットのデータ統計](../assets/aep-integration/AEP-Dataset-AddToCart-EventData.png)
 
@@ -460,9 +460,9 @@ Experience Platform でデータストリームを作成するには、次の手
 
 ## 実装の詳細 {#implementation-details}
 
-The [CIFExperience Platformコネクタ](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) は [Adobe Commerceのデータ接続](https://marketplace.magento.com/magento-experience-platform-connector.html)( これは、 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) プロジェクト。
+[CIF Experience Platform コネクタ](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)は、[PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) プロジェクトの一部である [Adobe Commerce 用データ接続](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)上に構築されています。
 
-PWA Studio プロジェクトを使用すると、Adobe Commerce または Magento Open Source を活用した Progressive Web Application（PWA）ストアフロントを作成できます。プロジェクトには、ビジュアルコンポーネントにロジックを追加するための [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) というコンポーネントライブラリも含まれています。The [Peregrin ライブラリ](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) また、は、 [CIFExperience Platformコネクタ](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) とExperience Platformをシームレスに統合
+PWA Studio プロジェクトを使用すると、Adobe Commerce または Magento Open Source を活用した Progressive Web Application（PWA）ストアフロントを作成できます。プロジェクトには、ビジュアルコンポーネントにロジックを追加するための [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) というコンポーネントライブラリも含まれています。[Peregrin ライブラリ](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/)には、Experience Platform とシームレスに統合するために [Experience Platform コネクタ](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)で使用されるカスタム React フックも用意されています。
 
 
 ## サポートされているイベント {#supported-events}
@@ -492,7 +492,7 @@ __プロファイル XDM イベント：__
 
 1. サインイン
 1. アカウントを作成
-1. アカウントを編集
+1. 編集アカウント
 
 
 ## その他のリソース {#additional-resources}
