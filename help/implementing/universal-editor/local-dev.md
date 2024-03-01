@@ -2,10 +2,10 @@
 title: ユニバーサルエディターを使用したローカル AEM 開発
 description: ユニバーサルエディターが開発目的でローカルの AEM インスタンスでの編集に対応する方法を説明します。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: bbb7e7d9023f8326980196923bfab77c3968ead4
+source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 68%
+source-wordcount: '698'
+ht-degree: 63%
 
 ---
 
@@ -40,9 +40,9 @@ HTTPS で保護された外側のフレーム内で、保護されていない H
 
 [NodeJS バージョン 16](https://nodejs.org/en/download/releases) Universal Editor Service のローカルコピーを実行するには、が必要です。
 
-ユニバーサルエディターサービスは、AEM Engineering によって直接配布されます。ローカルコピーを入手するには、VIP プログラムのエンジニアにお問い合わせください。
+Universal Editor Service は、ソフトウェア配布から使用できます。 詳しくは、 [ソフトウェア配布ドキュメント](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ja) 」を参照してください。
 
-Engineering から `universal-editor-service.cjs` ファイルが提供されますので、ローカルの開発環境に保存してください。
+を保存します。 `universal-editor-service.cjs` ファイルを「ソフトウェア配布」からローカル開発環境に
 
 ## HTTPS を使用してユニバーサルエディターサービスを実行するための証明書の作成 {#ue-https}
 
