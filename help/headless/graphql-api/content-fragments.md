@@ -3,9 +3,9 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: fd0f0fdfc0aaf02d631b9bf909fcb1e1431f5401
+source-git-commit: a8fbf0a9a1f7e12b6a668544b1a67d8551abf1b7
 workflow-type: tm+mt
-source-wordcount: '4994'
+source-wordcount: '5135'
 ht-degree: 94%
 
 ---
@@ -32,7 +32,7 @@ AEM の GraphQL API を使用すると、ヘッドレス CMS 実装の JavaScrip
 
 >[!NOTE]
 >
->Experience ManagerAPI の最新情報については、 [Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>Experience Manager API の最新情報については、[Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/) も参照してください。
 
 ## GraphQL API {#graphql-api}
 
@@ -119,7 +119,7 @@ AEM は、クエリ（両方のタイプ）を Dispatcher と CDN によって[�
 
 POST リクエストを使用する GraphQL クエリは、キャッシュされないのでお勧めしません。そのため、デフォルトのインスタンスでは、Dispatcher はそれらのクエリをブロックするように設定されています。
 
-GraphQLはGETリクエストもサポートしますが、これらは、永続化されたクエリを使用して回避できる制限（URL の長さなど）にヒットする可能性があります。
+GraphQL は GET リクエストもサポートしていますが、これらは制限（URL の長さなど）に達する可能性があり、永続クエリを使用することで回避できます。
 
 詳しくは、[永続クエリのキャッシュの有効化](/help/headless/deployment/dispatcher-caching.md)を参照してください。
 
@@ -257,7 +257,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 | 定義済みリスト | `String` | モデルの作成時に定義されたオプションのリストに含まれるオプションを表示するために使用します |
 | タグ | `[String]` | AEM で使用されているタグを表す文字列のリストを表示するために使用します |
 | コンテンツ参照 | `String`、`[String]` | AEM 内の別のアセットへのパスを表示するために使用します |
-| フラグメント参照 |  *モデルタイプ* <br><br>単一のフィールド： `Model`  — 直接参照されるモデルタイプ <br><br>複数フィールド（1 つの参照タイプ）: `[Model]`  — 型の配列 `Model`（配列から直接参照） <br><br>複数の参照型を持つマルチフィールド： `[AllFragmentModels]`  — 和集合型を持つ配列から参照される、すべてのモデル型の配列 | モデルの作成時に定義された、特定のモデル型の 1 つ以上のコンテンツフラグメントの参照に使用します |
+| フラグメント参照 | *モデル型* <br><br>単一のフィールド：`Model` - 直接参照されるモデル型 <br><br>マルチフィールド（参照タイプが 1 つ）：`[Model]` - 型の配列 `Model`（配列から直接参照）<br><br>複数の参照型を持つマルチフィールド：`[AllFragmentModels]` - 和集合型を持つ配列から参照される、すべてのモデル型の配列 | モデルの作成時に定義された、特定のモデル型の 1 つ以上のコンテンツフラグメントの参照に使用します |
 
 {style="table-layout:auto"}
 
@@ -355,7 +355,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 #### バリエーション {#variations}
 
-コンテンツフラグメントのバリエーションに対するクエリを簡略化するために、`_variations` フィールドが実装されています。例：
+コンテンツフラグメントのバリエーションに対するクエリを簡略化するために、`_variations` フィールドが実装されています。次に例を示します。
 
 ```graphql
 {
@@ -523,7 +523,7 @@ GraphQL クエリでフィルタリングを使用して、特定のデータを
 * 各サブ定義には、式セットを提供する `_expressions` 配列と、式を組み合わせる必要がある論理演算子を定義する `_logOp` フィールドが含まれます
 * 各式は、値（`value` フィールド）と演算子（`_operator` フィールド）によって定義され、フィールドの内容を比較する必要があります
 
-省略できます `_logOp` 項目を `AND` および `_operator` 等価を確認する場合は、これらがデフォルト値になるので、等価を確認します。
+項目を `AND` で組み合わせたい場合は `_logOp` を省略できます。また、等価性を確認したい場合は、これらがデフォルト値になるので、`_operator` を省略できます。
 
 次の例は、大文字と小文字を区別せずに、`Provo` が `lastName` である、または `sjö` を含むすべてのユーザーをフィルタリングする完全なクエリを示しています。
 
@@ -1079,9 +1079,9 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
      >
      >また、コンテンツフラグメントのメタデータを一覧表示して、タグをクエリできます。
 
-   * 操作の場合：
+   * 操作は次のようになります。
 
-      * `_operator` ：特定の演算子を適用します。 `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
+      * `_operator`：特定の演算子（`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`、`STARTS_WITH`）を適用します
          * [サンプルクエリ - 「Jobs」という名前を持たないすべての人物](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)を参照してください
          * [サンプルクエリ - `_path` が特定のプレフィックスで始まるすべてのアドベンチャーを参照してください](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)
 
@@ -1122,9 +1122,34 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
 潜在的な問題から保護するために、クエリにはデフォルトの制限が課されています。
 
-* クエリに 1M(1024 * 1024) 文字を超える文字を含めることはできません
-* クエリに含めることができるトークンは15000個までです
-* クエリに含めることができるのは200000個までの空白トークンです
+* クエリには 100 万（1024 * 1024）文字を超える文字を含めることはできません
+* クエリには、15,000 個を超えるトークンを含めることはできません
+* クエリには、200,000 個を超える空白トークンを含めることはできません
+
+また、次の事項にも注意する必要があります。
+
+* GraphQLクエリに 2 つ以上のモデルで同じ名前のフィールドが含まれている場合、フィールドの競合エラーが返されます。
+
+   * そこで、
+
+      * 2 つ（または複数のモデル）が可能な参照として使用されます。使用可能なときは、2 つ以上のモデルが許可されています **モデルタイプ** 」と入力します。
+
+     および
+
+      * この 2 つのモデルには、共通の名前を持つフィールドがあります。つまり、両方のモデルで同じ名前が使用されます。
+
+     および
+
+      * これらのフィールドは異なるデータタイプです。
+
+   * 次に例を示します。
+
+      * 異なるモデル ( 例えば、 `M1`, `M2`) は、別のフラグメントの可能な参照（コンテンツ参照またはフラグメント参照）として使用されます。例えば、 `Fragment1` `MultiField/List`
+      * この 2 つのフラグメントは、異なるモデル (`M1`, `M2`) には、同じ名前でタイプが異なるフィールドがあります。
+この処理は次のようになります。
+         * `M1.Title` as `Text`
+         * `M2.Title` as `Text/MultiField`
+      * その場合、GraphQLクエリに `Title` フィールドに入力します。
 
 ## FAQ {#faqs}
 
