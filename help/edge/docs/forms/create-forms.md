@@ -4,21 +4,21 @@ description: クラフトパーフェクトフォーム、高速！ ⚡ AEM Form
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1147'
 ht-degree: 2%
 
 ---
 
 
-# Edge Delivery Service(EDS) サイトのフォームを作成します
+# アダプティブフォームブロックを使用したフォームの作成
 
 今日のデジタル時代では、どの組織でも、使いやすいフォームを作成することが不可欠です。 AEM Forms Edge Delivery を使用すると、Word やGoogle Docs などの使い慣れたツールを使用してフォームを作成できます。
 
 これらのフォームは、Microsoft Excel またはGoogleシートファイルに直接データを送信します。Googleシート、Microsoft Excel、Microsoft Sharepoint の活発なエコシステムと堅牢な API を使用して、送信されたデータを簡単に処理したり、既存のビジネスワークフローを開始したりできます。
 
-AEM Forms Edge Delivery は、フォームを簡単に作成して、取り込んだデータを取り込み、保存するのに役立つフォームブロックを提供します。 AEM EDS プロジェクトにフォームブロックを含めて、フォームの作成を開始できます。 では、開始しましょう。
+AEM Forms Edge Delivery には、アダプティブフォームブロックと呼ばれるブロックが用意されており、これを使用すると、キャプチャしたデータを取得して保存するためのフォームを簡単に作成することができます。 アダプティブフォームブロックをAEM EDS プロジェクトに含めて、フォームの作成を開始できます。 では、開始しましょう。
 
 
 ## 前提条件
@@ -26,23 +26,23 @@ AEM Forms Edge Delivery は、フォームを簡単に作成して、取り込�
 開始する前に、次の手順が完了していることを確認します。
 
 * AEMボイラープレートを使用して Edge Delivery Service(EDS)GitHub プロジェクトを設定し、対応する GitHub リポジトリのクローンをローカルマシンに作成します。 詳しくは、 [開発者向けチュートリアル](https://www.aem.live/developer/tutorial) 」を参照してください。 このドキュメントでは、Edge Delivery Service(EDS) プロジェクトのローカルフォルダーを `[EDS Project repository]` .
-* のクローン [Forms Block リポジトリ](https://github.com/adobe/afb) ローカルマシン上にある。 EDS Web ページ上でフォームをレンダリングするコードを含みます。 このドキュメントでは、Formsブロックリポジトリのローカルフォルダーを `[Forms Block repository]`.
 * Google Sheet またはMicrosoft SharePointへのアクセス権があることを確認します。 Microsoft SharePointをコンテンツソースとして設定するには、 [SharePoint の使用方法](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
 ## フォームの作成
 
-+++ 手順 1:Edge Delivery Service(EDS) プロジェクトにフォームブロックを追加します。
++++ 手順 1：アダプティブフォームブロックを Edge Delivery Service(EDS) プロジェクトに追加します。
 
-フォームブロックを使用すると、Edge 配信サービスサイト用のフォームをユーザーが作成できるようになります。 ただし、このブロックは、デフォルトのAEMボイラープレート（Edge Delivery Service プロジェクトの作成に使用）には含まれていません。 フォームブロックを Edge 配信サービスプロジェクトにシームレスに統合するには、次の手順を実行します。
+アダプティブを使用すると、ユーザーはエッジ配信サービスサイトのフォームを作成できます。 ただし、このブロックは、デフォルトのAEMボイラープレート（Edge Delivery Service プロジェクトの作成に使用）には含まれていません。 アダプティブフォームブロックを Edge 配信サービスプロジェクトにシームレスに統合するには、次の手順を実行します。
 
-1. **フォームブロックリポジトリを探します。** 次にアクセス： [Forms Block リポジトリ]/blocks フォルダーをローカルマシン上に置き、 `form` フォルダー。
-1. **フォームブロックを EDS プロジェクトに貼り付けます。**
+1. **アダプティブフォームブロックリポジトリの複製**：を複製します。 [アダプティブフォームブロックリポジトリ](https://github.com/adobe/afb) ローカルマシン上にある。 EDS Web ページ上でフォームをレンダリングするコードを含みます。 このドキュメントでは、Formsブロックリポジトリのローカルフォルダーを `[Adaptive Form block repository]`.
+1. **アダプティブフォームブロックリポジトリを探します。** 次にアクセス： [アダプティブフォームブロックリポジトリ]/blocks フォルダーをローカルマシン上に置き、 `form` フォルダー。
+1. **アダプティブフォームブロックを EDS プロジェクトに貼り付けます。**
 次に移動： [EDS プロジェクトリポジトリ]/blocks/フォルダーをローカルマシンに貼り付け、フォームフォルダーを貼り付けます。
 1. **変更を GitHub にコミット：** フォームフォルダーとその基になるファイルを、GitHub の Edge Delivery Service プロジェクトにチェックインします。
 
-これらの手順を完了すると、Form ブロックは GitHub の Edge Delivery Service(EDS) プロジェクトリポジトリーに正常に統合されます。
+これらの手順を完了すると、アダプティブフォームブロックが GitHub の Edge Delivery Service(EDS) プロジェクトリポジトリに正常に追加されます。 EDS サイトページにフォームを作成し、追加できるようになりました。
 
 
 **GitHub ビルドの問題のトラブルシューティング**
@@ -90,7 +90,7 @@ AEM Forms Edge Delivery は、フォームを簡単に作成して、取り込�
 
    ![AEM Sidekickを使用してシートをプレビュー](/help/edge/assets/preview-form.png)
 
-   プレビューおよび公開時に、新しいブラウザータブにシートのコンテンツが JSON 形式で表示されます。 次のセクションでフォームをレンダリングする際に必要なので、プレビュー URL を取り込む必要があります。 URL 形式は次のとおりです。
+   プレビュー時に、新しいブラウザタブにシートのコンテンツが JSON 形式で表示されます。 プレビュー URL を取り込む必要があります。これは、次のセクションでフォームをレンダリングする際に必要なものです。 URL 形式は次のとおりです。
 
 
    ```JSON
@@ -111,7 +111,7 @@ AEM Forms Edge Delivery は、フォームを簡単に作成して、取り込�
 +++ 手順 3:Edge Delivery Service(EDS) ページを使用してフォームをプレビューします。
 
 
-これまで、フォームブロックを EDS プロジェクトに追加し、フォームの構造を準備しました。 次に、フォームをプレビューします。
+これまで、アダプティブフォームブロックを EDS プロジェクトに追加し、フォームの構造を準備しました。 次に、フォームをプレビューします。
 
 1. **プロジェクトディレクトリにアクセスする：** Microsoft SharePointまたはGoogle Drive アカウントを開き、 AEM Edge Delivery プロジェクトディレクトリに移動します。
 
@@ -119,7 +119,7 @@ AEM Forms Edge Delivery は、フォームを簡単に作成して、取り込�
 
 1. **目的の場所に移動します。** フォームを追加するドキュメント内の目的の場所に移動します。
 
-1. **フォームブロックを追加します。** 次の図に示すように、ファイルに「Form」という名前のブロックを挿入します。
+1. **アダプティブフォームブロックを追加します。** 次の図に示すように、ファイルに「Form」という名前のブロックを挿入します。
 
    | フォーム |
    |---|

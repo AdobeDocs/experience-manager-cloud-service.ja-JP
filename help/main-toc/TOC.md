@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b7b9dbfa7f939828d66a785daecf84c917923c37
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
 source-wordcount: '4751'
 ht-degree: 95%
@@ -178,7 +178,7 @@ ht-degree: 95%
    + [メールサービスの OAuth2 サポート](/help/security/oauth2-support-for-mail-service.md)
    + [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service のセキュリティに関する考慮事項](/help/security/security-considerations.md)
-   + [Adobe Developerコンソールでの JWT 資格情報の廃止](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [Adobe Developer Console での JWT 資格情報の非推奨（廃止予定）](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + オンボーディング {#onboarding}
    + [ここから開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ja)
    + オンボーディングジャーニー {#journey}
@@ -826,12 +826,12 @@ ht-degree: 95%
          + [フォームフィールドに検証機能を追加する](/help/edge/docs/forms/validate-forms.md)
          + [フォームのテーマとスタイルを変更する](/help/edge/docs/forms/style-theme-forms.md)
          + [ルールを使用してフォームに動的な動作を追加する](/help/edge/docs/forms/rules-forms.md)
+         + [「ありがとうございます」ページ](/help/edge/docs/forms/thank-you-page-form.md)
       + 機能 {#advanced-features-eds-forms}
          + [フォームフラグメント](/help/edge/docs/forms/form-fragments.md)
          + [繰り返し可能なセクション](/help/edge/docs/forms/repeatable-forms.md)
          + [翻訳](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
-         + [「ありがとうございます」ページ](/help/edge/docs/forms/thank-you-page-form.md)
          + [カスタムコンポーネント](/help/edge/docs/forms/custom-components-forms.md)
       + 参照 {#forms-references}
          + [フォームブロックコンポーネントのリスト](/help/edge/docs/forms/form-components.md)
