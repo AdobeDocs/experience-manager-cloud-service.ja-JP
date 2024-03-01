@@ -4,10 +4,10 @@ description: AEM で機械翻訳と人間による翻訳の両方のプロジェ
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: ae500923bac34689a28b9ff0bc78586f725829de
 workflow-type: tm+mt
-source-wordcount: '3960'
-ht-degree: 100%
+source-wordcount: '4011'
+ht-degree: 98%
 
 ---
 
@@ -448,14 +448,26 @@ AEM の翻訳プロジェクトでは、標準の [AEM プロジェクトコン�
 
 ## ソースページの移動または名前の変更 {#move-source}
 
-翻訳済みのソースページの[名前変更または移動](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page)が必要な場合、移動後にページを再度翻訳すると、新しいページ名／場所に基づいて新しい言語コピーが作成されます。以前の名前／場所にもとづく古い言語コピーは、引き続き存在します。
+翻訳済みのソースページを [名前が変更されたか、移動されました](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page)移動後に再度ページを翻訳すると、新しいページ名と場所に基づいて言語コピーが作成されます。 以前の名前/場所に基づく古い言語コピーは、まだ存在します。 これを回避するには、移行後に言語コピーを更新機能を使用できます。
 
-このシナリオでのベストプラクティスは、次の手順に従うことです。
+1. 言語コピーが含まれるページを移動します。
+1. 言語コピーのルートを選択します。
+1. **参照**&#x200B;パネルを開きます。
+1. 「**言語コピー**」を選択します。
+1. 更新するターゲット言語を選択します。
+1. 「**言語コピーを更新**」を選択します。
 
-1. 移動するソースページに関連付けられている言語コピーを非公開にします。
-1. それらを削除します。
-1. 新しく移動したソースページから新しい言語コピーを作成します。
-1. 作成された言語コピーを公開します。
+   ![updating-language-copies](../assets/translation-move-to.png)
+
+1. 「**更新**」をクリックします。[ローンチ](/help/sites-cloud/authoring/launches/promoting.md)が作成されます。
+1. 必要な言語ルートに移動して選択します。
+1. **参照**&#x200B;パネルを開いて、「**ローンチ**」を選択します。
+
+   ![promote-launch-translation](../assets/promote-launch-translation.png)
+
+1. 作成したローンチをクリックし、「 **ローンチを昇格**.
+
+これで、ソースページが移動され、関連する言語コピーが移動されました。
 
 ## 翻訳ジョブの読み込みと書き出し {#import-export}
 
