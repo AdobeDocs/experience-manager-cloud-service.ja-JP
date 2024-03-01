@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Serviceのメンテナンスタスクと、その設定方法について説明します。
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 4b6f1233b8b21c511b9495151d812e4ededfce11
+source-git-commit: af690ee4c1c0c13bffa179c68423993361385a45
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 97%
+source-wordcount: '1123'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 97%
 
 ## メンテナンスタスクの設定 {#maintenance-tasks-configuring}
 
-以前のバージョンの AEM では、メンテナンスカード（ツール／操作／メンテナンス）を使用してメンテナンスタスクを設定できました。AEM as a Cloud Service を使用する場合、メンテナンスカードは使用できなくなったので、Cloud Manager を使用して設定をソース管理にコミットし、デプロイする必要があります。顧客側で行えない設定（データストアのガベージコレクション、監査ログのパージ、バージョンのパージなど）があるメンテナンスタスクはアドビが管理します。その他のメンテナンスタスクは顧客側で設定できます（下表を参照）。
+以前のバージョンの AEM では、メンテナンスカード（ツール／操作／メンテナンス）を使用してメンテナンスタスクを設定できました。AEM as a Cloud Service を使用する場合、メンテナンスカードは使用できなくなったので、Cloud Manager を使用して設定をソース管理にコミットし、デプロイする必要があります。Adobeは、顧客が設定できない設定（データストアのガベージコレクションなど）を持つメンテナンスタスクを管理します。 その他のメンテナンスタスクは顧客側で設定できます（下表を参照）。
 
 >[!CAUTION]
 >
