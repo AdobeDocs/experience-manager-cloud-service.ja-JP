@@ -2,16 +2,16 @@
 title: コンテンツフラグメントの操作（Assets - コンテンツフラグメント）
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントで、ページオーサリングやヘッドレス配信に最適な、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。また、MSM と共に使用する方法も説明します。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
+source-git-commit: 02b96c27f985492396cfbd262b9fec450ec8d2c8
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2222'
 ht-degree: 98%
 
 ---
 
 # コンテンツフラグメントの操作 {#working-with-content-fragments}
 
-Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを使用すると、[ページに依存しないコンテンツの設計、作成、キュレーション、公開](/help/sites-cloud/authoring/fragments/content-fragments.md)が可能になります。ヘッドレ配信に最適とされる複数の場所、複数のチャネル上で使用可能なコンテンツを用意できるようになります。また、[マルチサイト管理と併用してコンテンツを再利用](#reusing-content-fragments-with-msm-assets)することもできます。
+Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを使用すると、[ページに依存しないコンテンツの設計、作成、キュレーション、公開](/help/sites-cloud/authoring/fragments/content-fragments.md)が可能になります。ヘッドレ配信に最適とされる複数の場所、複数のチャネル上で使用可能なコンテンツを用意できるようになります。また、[マルチサイト管理と併用してコンテンツを再利用](#reusing-content-fragments-with-msm)することもできます。
 
 コンテンツフラグメントには、構造化されたコンテンツが含まれます。
 
@@ -50,7 +50,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 * [関連コンテンツの使用](/help/assets/content-fragments/content-fragments-assoc-content.md) - 関連コンテンツを追加します。
 * [メタデータ - フラグメントのプロパティ](/help/assets/content-fragments/content-fragments-metadata.md) - フラグメントのプロパティを表示および編集します。
 * [コンテンツフラグメントと GraphQL を併用すると、アプリケーション用コンテンツを配信](/help/assets/content-fragments/content-fragments-graphql.md)できます。その一助として、[JSON 出力](/help/assets/content-fragments/content-fragments-json-preview.md)をプレビューできます。
-* [MSM for Assets を使用したコンテンツフラグメントの再利用](#reusing-content-fragments-with-msm-assets)
+* [MSM を使用したコンテンツフラグメントの再利用](#reusing-content-fragments-with-msm)
 
 >[!NOTE]
 >
@@ -288,13 +288,13 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
    * フラグメントは、レイアウトを定義し、一部またはすべての要素／バリエーションと関連するコンテンツを配信するために、1 つ以上の専用コンポーネントを必要とします。
    * 作成時にフラグメントをページにドラッグすると、必須コンポーネントが自動的に関連付けられます。
 
-## MSM でのコンテンツフラグメントの再利用（アセット用） {#reusing-content-fragments-with-msm-assets}
+## MSM でのコンテンツフラグメントの再利用 {#reusing-content-fragments-with-msm}
 
 **Assets** コンソールからアクセスする場合、MSM を使用してフラグメントのライブコピーを作成できます。
 
 詳しくは、以下を参照してください。
 
-* [MSM を使用したコンテンツフラグメントの再利用（アセット用）](/help/assets/content-fragments/content-fragments-msm.md)
+* [MSM を使用したコンテンツフラグメントの再利用](/help/assets/content-fragments/content-fragments-msm.md)
 * [MSM for Assets を使用したアセットの再利用](/help/assets/reuse-assets-using-msm.md).
 
 これらを有効にする [継承](/help/assets/content-fragments/content-fragments-variations.md#inheritance) フラグメントのバリエーションと個々のフィールドの両方に対して
