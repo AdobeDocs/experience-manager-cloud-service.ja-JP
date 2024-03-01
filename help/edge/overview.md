@@ -1,17 +1,17 @@
 ---
-title: AEM と Edge 配信サービス
+title: AEMおよびEdge Delivery Servicesの概要
 description: AEM as a Cloud Service を使用して、Edge 配信サービスで提供されるパフォーマンスと完璧な Lighthouse スコアを活用する方法について説明します。
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 7d28a3a8304d79ecc3143bdc9373134d312af49d
-workflow-type: ht
-source-wordcount: '868'
-ht-degree: 100%
+source-git-commit: b7b9dbfa7f939828d66a785daecf84c917923c37
+workflow-type: tm+mt
+source-wordcount: '874'
+ht-degree: 98%
 
 ---
 
 
-# AEM と Edge 配信サービス {#aem-edge}
+# AEMおよびEdge Delivery Servicesの概要 {#aem-edge}
 
 Edge Delivery により、AEM はエンゲージメントとコンバージョンを促進する優れたエクスペリエンスを提供します。そのために AEM では、迅速に作成および開発できるインパクトの強いエクスペリエンスを提供します。これは、作成者がサイトをすばやく更新および公開できて、新しいサイトが迅速にローンチされる迅速な開発環境を可能にする、構成可能なサービスセットです。したがって、Edge Delivery を使用すると、コンバージョンを向上させ、コストを削減し、コンテンツベロシティを最大限に高めることができます。
 

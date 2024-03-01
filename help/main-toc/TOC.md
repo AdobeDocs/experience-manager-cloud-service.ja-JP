@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 974650c0f268de8ecff7fdb693cdd1e32efb2e1c
+source-git-commit: b7b9dbfa7f939828d66a785daecf84c917923c37
 workflow-type: tm+mt
-source-wordcount: '4748'
+source-wordcount: '4751'
 ht-degree: 95%
 
 ---
@@ -781,8 +781,8 @@ ht-degree: 95%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [移行](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
-+ Edge 配信サービス {#edge-delivery}
-   + [AEM と Edge 配信サービス](/help/edge/overview.md)
++ AEMとEdge Delivery Services {#edge-delivery}
+   + [Edge Delivery Servicesの概要](/help/edge/overview.md)
    + [Edge 配信の使用](/help/edge/using.md)
    + [開発者向け入門ガイド](/help/edge/edge-dev-getting-started.md)
    + [Edge 配信向けのコンテンツのオーサリング](/help/edge/authoring.md)
