@@ -1,12 +1,12 @@
 ---
 title: データを受け入れるスプレッドシートを準備する
-description: スプレッドシートとフォームブロックフィールドを使用して、強力なフォームをより迅速に作成できます。
+description: スプレッドシートとアダプティブフォームブロックフィールドを使用して、強力なフォームをより迅速に作成できます。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '997'
 ht-degree: 1%
 
 ---
@@ -160,7 +160,7 @@ Excel ブックまたはGoogleシートに「Slack」という名前のシート
 1. 必要なタイトルを入力し、「フィールド」に、Slack通知に表示するフィールドの名前を入力します。 各見出しはコンマで区切る必要があります（例：名前、E メール）。
 
 
-これで、シートがデータを受け取るように設定され、次の操作が可能になります。 [アダプティブフォームブロックを使用してフォームをプレビューする](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) または [POST要求の使用](#use-admin-apis-to-send-data-to-your-sheet) をクリックして、シートへのデータの送信を開始します。
+これで、シートがデータを受け取るように設定され、次の操作が可能になります。 [アダプティブフォームブロックを使用したフォームのプレビュー](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) または [POST要求の使用](#use-admin-apis-to-send-data-to-your-sheet) をクリックして、シートへのデータの送信を開始します。
 
 >[!WARNING]
 >
@@ -168,7 +168,7 @@ Excel ブックまたはGoogleシートに「Slack」という名前のシート
 
 ## シートにデータを送信 {#send-data-to-your-sheet}
 
-シートがデータを受け取るように設定された後、次の操作を実行できます。 [アダプティブフォームブロックを使用してフォームをプレビューする](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) または [管理 API の使用](#use-admin-apis-to-send-data-to-your-sheet) をクリックして、シートへのデータの送信を開始します。
+シートがデータを受け取るように設定された後、次の操作を実行できます。 [アダプティブフォームブロックを使用したフォームのプレビュー](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) または [管理 API の使用](#use-admin-apis-to-send-data-to-your-sheet) をクリックして、シートへのデータの送信を開始します。
 
 ### Admin API を使用してシートにデータを送信する
 

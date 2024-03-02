@@ -4,7 +4,7 @@ description: AEM FormsEdge Delivery Servicesフォームの公開
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## 前提条件
 
-* The [アダプティブフォームブロックが GitHub の EDS プロジェクトで有効になっています](/help/edge/docs/forms/create-forms.md).
+* The [アダプティブフォームブロックが GitHub の EDS プロジェクトで有効になっている](/help/edge/docs/forms/create-forms.md).
 * フォームは完全にテスト済みで、使用する準備が整っています。
 * お使いの [スプレッドシートが設定されました](/help/edge/docs/forms/submit-forms.md) をクリックしてデータを受け入れます。
 

@@ -1,77 +1,74 @@
 ---
-title: AEM Forms Edge Delivery Service
-description: AEM Forms Edge Delivery Service は、効率化されたデータ収集とユーザーエンゲージメントの将来を想定できるように、最高のパフォーマンス向けに構築されています。 この記事では、EDD フォームですぐに使用できるすべてのフォームコンポーネントの一覧を示します。
+title: フォームのコンポーネントとプロパティ
+description: このドキュメントでは、AEM Forms Edge Delivery Service で使用できるフォームコンポーネントとそのプロパティの概要を説明します。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 5%
+source-wordcount: '865'
+ht-degree: 3%
 
 ---
 
 
-
-
 # フォームコンポーネント
 
-フォームブロックを使用すると、取り込んだデータを簡単に取り込んで保存するためのフォームを簡単に作成できます。 すべてのHTML5 に基づくコンポーネントをサポートします。 [input-types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) （テキスト、電子メール、数値、日付など）。 また、 [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), [選択](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)、および [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) 要素を含み、HTML5 に固有の入力検証機能を含む。
+AEM Forms Edge Delivery Service を使用すると、様々なコンポーネントを使用して、使いやすくインタラクティブなフォームを作成できます。 これらのコンポーネントは、様々なタイプのデータ収集に対応し、特定のニーズに合わせて容易にカスタマイズできます。
 
-フォームブロックは、すべてのフィールドタイプとコンテナ（パネル）に対して統一されたHTML構造を生成し、一貫性を保ちます。 この一貫した構造により、 [フォームのスタイルを設定する](/help/edge/docs/forms/style-theme-forms.md).
+アダプティブフォームブロックは、 [均一HTML構造](/help/edge/docs/forms/style-theme-forms.md) の一貫性を確保するために、すべてのフィールドタイプおよびコンテナ（パネル）に対して使用できます。 この一貫した構造により、 [フォームのスタイルを設定する](/help/edge/docs/forms/style-theme-forms.md).
+
+
+## 使用可能なコンポーネント
+
+使用可能なコンポーネントの概要を次に示します。
+
+### 入力フィールド
+
+- すべての有効なHTML5 [入力タイプ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) および [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea). 例えば、button、checkbox、color、datetime-local、email、file、hidden、image、month、number、password、radio、range、reset、submit、tel、text、time、url、および week などです。
+
+### 選択コントロール
+
+- [チェックボックスグループ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)：複数のオプションを選択する場合。
+- [ラジオグループ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio)：グループから 1 つのオプションを選択する場合。
+- [ドロップダウンメニュー](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)：オプションのメニューを表示します。 例えば、ドロップダウンボックスを使用します。
+
+### コンテナ
+
+- パネル/コンテナ：関連するフォーム要素をグループ化し、整理を改善します。 これは、 [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) および [凡例](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
 
 
 ## コンポーネントのプロパティ
 
-フォームブロックのフォームコンポーネントでは、次のプロパティがサポートされます。
+各フォームコンポーネントには、動作と外観を制御できる様々なプロパティが用意されています。 アダプティブフォームブロックコンポーネントでサポートされるプロパティを次に示します。
 
-<table>
- <tbody>
-  <tr>
-   <td><b>プロパティ</b> </td>
-   <td><b>フォームコンポーネント（入力タイプ）</b> </td>
-   <td><b>詳細</b></td>
-  </tr>
-  <tr>
-   <td>名前</td>
-   <td>すべてのコンポーネント</td>
-   <td> コンポーネントの名前を指定する文字列。 コンポーネントのデータは、この名前に対して送信されます。
-   </td>
-  </tr>
-  <tr>
-   <td>ラベル</td>
-   <td>すべてのコンポーネント</td>
-   <td> ラベルはフィールドのキャプションとして機能します。
-   </td>
-  </tr>
-  <tr>
-   <td>値</td>
-   <td>すべてのコンポーネント</td>
-   <td> コントロールの初期値。 ラジオおよびチェックボックスコンポーネントの場合、これは選択時に送信される値/データです。 value 属性は常にオプションです。ただし、チェックボックスおよびラジオでは必須と見なす必要があります。
-   </td>
-  </tr>
-    <tr>
-   <td>プレースホルダー</td>
-   <td>テキスト、検索、URL、電話番号、メール、パスワード、および番号</td>
-   <td> プレースホルダー属性は、フィールドに必要な情報の種類に関する簡単なヒントをユーザーに提供します。
-   </td>
-  </tr>
-      <tr>
-   <td>説明</td>
-   <td>すべてのフィールドに適用可能</td>
-   <td> プレースホルダー属性は、フィールドに必要な情報の種類に関する簡単なヒントをユーザーに提供します。
-   </td>
-  </tr>
-  </tbody>
-</table>
 
-<!-- 
-## Supported HTML 5 input types in Form Block
+| Property | 適用可能なコンポーネント | 詳細 |
+|--------------|------------------------------|----------------------------------------------------------------------|
+| タイプ | すべて | コンポーネントのタイプを指定します。 このプロパティは、入力フィールドの動作と外観を決定します。 例えば、テキスト入力の場合、タイプは「テキスト」、「電子メール」（電子メール入力）、「パスワード」（パスワード入力）のようになります。 アダプティブフォームブロックは、すべての有効なHTML5 をサポートしています <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">入力タイプ</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選択</a>、および <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> をタイプとして使用します。 |
+| 名前 | すべて | フォーム送信用のコンポーネントを識別します。 name 属性は、フォームデータがサーバーに送信される際に使用され、ユーザー入力が特定のフィールドに関連付けられます。 |
+| ラベル | すべて | ユーザーにコンテキスト情報を提供します。 ラベルは、コンポーネントの横に表示されるテキストで、ユーザーが入力する情報に関するガイダンスを提供します。 |
+| 値 | テキスト、パスワード、電子メール、数値、範囲、日付およびそのバリエーション (datetime-local、month、week、time)、チェックボックス、ラジオ、非表示、送信、ボタン | コンポーネントの初期値を指定します。 テキスト入力、テキスト領域、および要素の選択の場合、これはデフォルトのテキストまたはオプションとして表示されます。 ラジオおよびチェックボックスコンポーネントの場合、これは選択時に送信される値/データです。 value 属性はオプションですが、チェックボックスとラジオの入力に必須と見なす必要があります。 |
+| プレースホルダー | テキスト、Tel、Email、パスワード、日付（および月、週、時間、日時 — ローカルなどのそのバリアント）、数値、範囲 | 期待される入力のヒントを提供します。 placeholder 属性には、入力フィールドの期待値を示す簡単なヒントが表示されます。 ユーザーが入力を開始すると、この属性は消えます。 |
+| 説明 | すべて | コンポーネントに関する追加情報を提供し、ヘルプテキストとして機能します。 「説明」フィールドでは、コンポーネントの入力の目的や手順をさらに詳しく説明できます。 これは、ユーザーが入力フィールドのコンテキストを理解するのに役立ちます。 |
+| 表示 | すべて | 初期表示を制御します。 visible 属性は、フォームの読み込み時にコンポーネントが最初に表示されるか非表示になるかを決定するブール型プロパティです。 true に設定した場合、フィールドが表示されます。それ以外の場合は非表示になります。 |
+| 必須 | テキスト、Tel、Email、パスワード、日付およびそのバリエーション（日時 — ローカル、月、週、時間）、数値、チェックボックス、ラジオ、ファイル、選択（ドロップダウン）、テキスト領域 | 送信前にフィールドに入力する必要があるかどうかを示します。 mandatory 属性は、フォームを送信する前にユーザーがフィールドの入力を提供する必要があるかどうかを指定するために使用される boolean プロパティです。 |
+| 最小 | 日付（および月、週、時間、日時 — ローカルなどのバリアント）、数値、範囲 | 最小許容値を指定します。 min 属性は、ユーザーがフィールドに入力できる最小値を設定します。 例えば、数値入力の場合は、許容される最小の数値を定義します。 |
+| Max | 日付（および月、週、時間、日時 — ローカルなどのバリアント）、数値、範囲 | 許容される最大値を指定します。 max 属性は、ユーザーがフィールドに入力できる最大値を設定します。 例えば、日付入力の場合は、許容できる最も高い日付を定義します。 |
+| 確定 | File | 許可されるファイルタイプを定義します。 accept 属性は、一意のファイルタイプ指定子のコンマ区切りリストで、ユーザーがファイル入力フィールドで選択できるファイルのタイプを制限します。 |
+| 複数 | File | 複数の選択を許可します。 multiple 属性は、ファイル入力フィールドで使用されるブール型プロパティです。 true に設定すると、ユーザーは複数のファイルを選択できます。 |
+| オプション | ドロップダウン | ドロップダウンメニューの選択肢を指定します。 options プロパティは、ドロップダウンメニューの選択肢のコンマ区切りリストで、ユーザーに表示される選択可能なオプションを定義します。 |
+| チェック済み | チェックボックス、ラジオ | フィールドがデフォルトで選択されているかどうかを指定します。 checked 属性は、チェックボックスとラジオの入力で使用されるブール型プロパティです。 true に設定した場合は、フォームの読み込み時に、フィールドがデフォルトで選択されていることを示します。 |
+| Fieldset | すべて | フォーム内に視覚的に異なるセクションを作成するためにフィールドをグループ化します。 fieldset 要素は、フォーム内の関連するフィールドを視覚的に分けてグループ化し、組織やユーザーエクスペリエンスを向上させます。 </br> フィールドセット内の一連のフィールドを整理するには、 `fieldset` プロパティを選択し、その名前属性を指定します。 次の例では、組織を改善するために、ラジオボタンを 1 つのフィールドセット内にカプセル化する方法を示します。 ![フィールドセットの例](/help/edge/assets/fieldset-example.png) |
 
-The Form Block supports a range of HTML 5 input types, and it also seamlessly renders forms created with AEM core components.
 
+
+<!--
+
+## Supported HTML 5 input types in Adaptive Form Block
+
+The Adaptive Form Block supports a range of HTML 5 input types, and it also seamlessly renders forms created with AEM core components.
 Here is the table which outlines how core components correspond to their HTML-5 input types in Edge Delivery:
-
 <table>
  <tbody>
   <tr>
@@ -172,26 +169,26 @@ Here is the table which outlines how core components correspond to their HTML-5 
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html">Accordion<a></td>
-   <td><i>Not yet supported in Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Form Block</i></td>
    <td> Allows user to create expandable and collapsible sections in a form. </td>
   </tr>
   <tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html">Horizontal tabs</a></td>
-   <td><i>Not yet supported in Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Form Block</i></td>
    <td>Organizes multiple sections of a form into separate tabs which are displayed horizontally.</td>
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/image.html">Image</a></td>
-   <td><i>Not yet supported in Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Form Block</i></td>
    <td> Allows user to include images in a form.</td>
   </tr><tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/title.html">Title</a></td>
-   <td><i>Not yet supported in Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Form Block</i></td>
    <td> Refers to the text that appears at the top of the form. </td>
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/submit-button.html">Switch</td>
-   <td><i>Not yet supported in Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Form Block</i></td>
    <td> A two-state toggle that allows user to select between two states such as enabling or disabling a feature, setting, or functionality.</td>
   </tr>
  </tbody>

@@ -1,12 +1,12 @@
 ---
-title: スプレッドシートからFormsへ — フォームブロックのフィールド検証のマスタリング
-description: スプレッドシートとフォームブロックフィールドを使用して、強力なフォームをより迅速に作成できます。 このガイドは、EDS Forms Block フィールドのカスタム検証を構築する場合に役立ちます。
+title: スプレッドシートからFormsへ — アダプティブフォームのブロックフィールド検証のマスタリング
+description: スプレッドシートとアダプティブフォームブロックフィールドを使用して、強力なフォームをより迅速に作成できます。 このガイドは、EDS Forms Block フィールドのカスタム検証を構築する場合に役立ちます。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # フォームフィールドに検証機能を追加する
 
-フォームブロックには、組み込みの検証機能があります。 最新のブラウザーでは、選択されたフィールドタイプと指定した追加のプロパティに基づいて、これらの検証が自動的に適用されます。
+アダプティブフォームブロックには、組み込みの検証機能があります。 最新のブラウザーでは、選択されたフィールドタイプと指定した追加のプロパティに基づいて、これらの検証が自動的に適用されます。
 
 ## フィールドの種類と検証について
 
-フォームブロックは、 [HTML5 の入力タイプ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)（テキスト、電子メール、数値、日付など）。 また、対応しています [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)、選択、フィールドセット、およびHTML5 に備わっている包括的な入力検証機能。
+アダプティブフォームブロックは、様々な [HTML5 の入力タイプ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)（テキスト、電子メール、数値、日付など）。 また、対応しています [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)、選択、フィールドセット、およびHTML5 に備わっている包括的な入力検証機能。
 
 では、HTMLフィールドタイプを使用して、ユーザーが入力できるデータの種類を定義します。 フィールドの種類によって、組み込みの検証ルールが異なります。
 

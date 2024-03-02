@@ -4,7 +4,7 @@ description: クラフトパーフェクトフォーム、高速！ ⚡ AEM Form
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 68b60d33e6ccfe27452cfea76603e4d7d29f0c6e
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 これらのフォームは、Microsoft Excel またはGoogleシートファイルに直接データを送信します。Googleシート、Microsoft Excel、Microsoft Sharepoint の活発なエコシステムと堅牢な API を使用して、送信されたデータを簡単に処理したり、既存のビジネスワークフローを開始したりできます。
 
-![ドキュメントベースのオーサリングエコシステム](/help/edge/assets/document-based-authoring.png)
+![ドキュメントベースのオーサリングエコシステム](/help/edge/assets/document-based-authoring-workflow.png)
 
 AEM Forms Edge Delivery には、アダプティブフォームブロックと呼ばれるブロックが用意されており、これを使用すると、キャプチャしたデータを取得して保存するためのフォームを簡単に作成することができます。 アダプティブフォームブロックをAEM EDS プロジェクトに含めて、フォームの作成を開始できます。 では、開始しましょう。
 
@@ -38,7 +38,7 @@ AEM Forms Edge Delivery には、アダプティブフォームブロックと�
 
 アダプティブを使用すると、ユーザーはエッジ配信サービスサイトのフォームを作成できます。 ただし、このブロックは、デフォルトのAEMボイラープレート（Edge Delivery Service プロジェクトの作成に使用）には含まれていません。 アダプティブフォームブロックを Edge 配信サービスプロジェクトにシームレスに統合するには、次の手順を実行します。
 
-1. **アダプティブフォームブロックリポジトリの複製**：を複製します。 [アダプティブフォームブロックリポジトリ](https://github.com/adobe/afb) ローカルマシン上にある。 EDS Web ページ上でフォームをレンダリングするコードを含みます。 このドキュメントでは、Formsブロックリポジトリのローカルフォルダーを `[Adaptive Form block repository]`.
+1. **アダプティブフォームブロックリポジトリの複製**：を複製します。 [アダプティブフォームブロックリポジトリ](https://github.com/adobe/afb) ローカルマシン上にある。 EDS Web ページ上でフォームをレンダリングするコードを含みます。 このドキュメントでは、Formsブロックリポジトリのローカルフォルダーを `[Adaptive Form Block repository]`.
 1. **アダプティブフォームブロックリポジトリを探します。** 次にアクセス： [アダプティブフォームブロックリポジトリ]/blocks フォルダーをローカルマシン上に置き、 `form` フォルダー。
 1. **アダプティブフォームブロックを EDS プロジェクトに貼り付けます。**
 次に移動： [EDS プロジェクトリポジトリ]/blocks/フォルダーをローカルマシンに貼り付け、フォームフォルダーを貼り付けます。
