@@ -2,9 +2,9 @@
 description: このチュートリアルでは、フォームのセクションを繰り返し可能にする手順を説明します
 title: 繰り返し可能なセクション (Edge Delivery Services)
 feature: Edge Delivery Services
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---

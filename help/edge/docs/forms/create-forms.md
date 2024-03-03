@@ -4,7 +4,7 @@ description: クラフトパーフェクトフォーム、高速！ ⚡ AEM Form
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 これらのフォームは、Microsoft Excel またはGoogleシートファイルに直接データを送信します。Googleシート、Microsoft Excel、Microsoft Sharepoint の活発なエコシステムと堅牢な API を使用して、送信されたデータを簡単に処理したり、既存のビジネスワークフローを開始したりできます。
 
-![ドキュメントベースのオーサリングエコシステム](/help/edge/assets/document-based-authoring-workflow.png)
+![ドキュメントベースのオーサリングエコシステム](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
 AEM Forms Edge Delivery には、アダプティブフォームブロックと呼ばれるブロックが用意されており、これを使用すると、キャプチャしたデータを取得して保存するためのフォームを簡単に作成することができます。 アダプティブフォームブロックをAEM EDS プロジェクトに含めて、フォームの作成を開始できます。 では、開始しましょう。
 
@@ -81,7 +81,7 @@ AEM Forms Edge Delivery には、アダプティブフォームブロックと�
 
    ![既定のシートの名前を&quot;shared-default&quot;に変更](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. フォームフィールドを追加するには、行と列のヘッダーを「shared-default」シートに挿入します。 各行は、 [フォームフィールド](/help/edge/docs/forms/form-components.md)を作成し、対応するフィールドを定義する列ヘッダーを含めます。 [プロパティ](/help/edge/docs/forms/eds-form-field-properties).
+1. フォームフィールドを追加するには、行と列のヘッダーを「shared-default」シートに挿入します。 各行は、 [フォームフィールド](/help/edge/docs/forms/form-components.md#available-components)を作成し、対応するフィールドを定義する列ヘッダーを含めます。 [プロパティ](/help/edge/docs/forms/form-components.md#components-properties).
 
    すぐに開始するには、 [照会スプレッドシート](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) をスプレッドシートに追加します。 内容をコピーした後、スプレッドシートを保存します。
 
@@ -159,6 +159,6 @@ AEM Forms Edge Delivery には、アダプティブフォームブロックと�
 * [フォームフィールドのプロパティ](/help/edge/docs/forms/eds-form-field-properties)
 * [フォームの作成とプレビュー](/help/edge/docs/forms/create-forms.md)
 * [フォームからデータを送信できるようにする](/help/edge/docs/forms/submit-forms.md)
-* [サイトページにフォームを発行する](/help/edge/docs/forms/publish-eds-forms.md)
+* [サイトページにフォームを発行する](/help/edge/docs/forms/publish-forms.md)
 * [フォームフィールドに検証機能を追加する](/help/edge/docs/forms/validate-forms.md)
 * [フォームのテーマとスタイルを変更する](/help/edge/docs/forms/style-theme-forms.md)

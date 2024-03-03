@@ -4,10 +4,10 @@ description: AEM Forms Edge Delivery Service は、効率化されたデータ�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 2%
+source-wordcount: '814'
+ht-degree: 1%
 
 ---
 
@@ -27,13 +27,10 @@ AdobeのAEM Forms Edge Delivery Service を使用して、フォームの作成�
   <div>
     <style>
     .image-container {
-    width: 80%;
     text-align: center; 
     }
     .image-container img {
-        width: 70%; /* Set image width to 70% of the container */
-        border: .5px solid; /* Maintain the border style */
-        padding: 15px; /* Maintain the padding */
+        width: 100%; /* Set image width to 100% of the container 
     }
 </style>
     <div class="image-container">
@@ -42,25 +39,29 @@ AdobeのAEM Forms Edge Delivery Service を使用して、フォームの作成�
 
 
 </div>
-&lt;!— &gt; * **見事なフォームを使用したCaptivateユーザー**：事前にビルドされたコンポーネントのライブラリを使用して、複雑で魅力的なフォームを簡単に構築できます。 reCAPTCHA の統合、電子メールへの直接の送信、シームレスなファイルアップロードを可能にし、SharePoint、Azure Storage、Amazon S3 などのセキュリティで保護されたストレージソリューションを実現します。 独自のカスタムフォームコンポーネントを作成して、独自のビジョンを生み出すこともできます。
 
-    ![ 登録フォーム ](/help/edge/assets/enrollment-form.png)
+<!--
 
-* **完璧な Lighthouse スコアを持つフォームの作成**：低速なインターネット接続でも、すばやく読み込んでレンダリングするフォームを構築します。 読み込み時間の短縮と最適化されたユーザーエクスペリエンスは、フォームの完了率の向上とコンバージョン率の向上に貢献します。
+<!--
 
-  ![フォームに最適な Lighthouse スコア](/help/edge/assets/lighthouse-forms.png)
+    ![Enrollment forms](/help/edge/assets/enrollment-form.png)
 
-* **お好みのツールでデジタル登録エクスペリエンスを作成**：コンテンツソースを分離することで、オーサリングの効率を向上させます。 標準では、AEM オーサリングとドキュメントベースのオーサリングの両方を使用できます。そのため、同じ Web サイト上で複数のコンテンツソースを操作し、Microsoft Excel、Googleシート、AEMエディターなどの好みのオーサリングツールを使用できます。
+* **Build forms with perfect lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
 
-  ![Edge 配信フォームオーサリングツール](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+    ![perfect lighthouse score for your forms](/help/edge/assets/lighthouse-forms.png)
 
+* **Create digital enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or AEM Editors.
+
+    ![Edge Delivery forms authoring tools](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+    
 <!--
 * **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
 
 * **Use Integrated services:** Use integrated services to streamline and empowers your users with a one-stop shop for managing their digital enrollment journeys. Use e-signatures, automated workflows, document of record (DoR), and seamless data integration, simplify the entire digital enrollment process, accelerate approvals, and optimizes your business workflows. 
 
     
->[!NOTE]
+    >[!NOTE]
+    >[!NOTE]
     >
     >
     > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
@@ -69,18 +70,28 @@ AdobeのAEM Forms Edge Delivery Service を使用して、フォームの作成�
 
 ## 主な機能
 
-* **HTML5 ベースのフォームフィールドコンポーネント**:AEM Forms Edge Delivery Service を使用すると、有効なHTML5 に基づいたフォームフィールドを使用して、使いやすくインタラクティブなフォームを作成できます。 [入力タイプ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選択</a>、および <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  コンポーネント。 これらのコンポーネントは、様々なタイプのデータ収集に対応し、特定のニーズに合わせて容易にカスタマイズできます。
+* **HTML5 ベースのフォームフィールドコンポーネント**:AEM Forms Edge Delivery Service を使用すると、HTML5 に基づくフォームコンポーネントを使用して、使いやすくインタラクティブなフォームを作成できます [入力タイプ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選択</a>、および <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  要素。 これらのコンポーネントは、様々なタイプのデータ収集に対応し、特定のニーズに合わせて容易にカスタマイズできます。
 
 * **アクセシビリティ**：フォームブロック内のフィールドにアクセスできます。 各ラベルはそれぞれの入力要素にリンクされ、ID はリンク用に自動生成されます。 フィールドに関連付けられている説明は、 aria-describbedby 属性でリンクされます。 標準の Tab/Shift + Tab キーを使用したキーボードナビゲーションがサポートされています。
 
-* **フォームルール**：ユーザー入力または事前定義された条件に基づいてフィールドの表示、検証および動作を調整するロジックを作成します。 ルールは、フォームにインテリジェンスを追加する柔軟で直感的な方法を提供し、ユーザーの入力に基づいてシームレスに適応させます。
+* **スタイル設定**：各フォームフィールドは固定のHTML構造を持ち、カスタム CSS または JavaScript ファイルを使用して簡単に装飾できます。 CSS および JS のターゲティングフィールドのセレクターは、タイプと名前に基づいて提供されます。 標準化された構造により、新しいセレクターを簡単に作成できます。
 
-* **ファイルのアップロード**：シームレスなファイル添付機能でフォームを拡張します。 ユーザーからドキュメント、画像、その他のファイルを収集する必要がある場合でも、アダプティブフォームブロックを使用すれば、ファイルのアップロード機能を簡単に統合できます。 カスタム処理オプションを使用できるので、特定の要件に合わせてファイルのアップロードプロセスを調整できます。
+* **ルール**：ユーザー入力または事前定義された条件に基づいてフィールドの表示、検証および動作を調整するロジックを簡単に作成できます。 ルールは、フォームにインテリジェンスを追加する柔軟で直感的な方法を提供し、ユーザーの入力に基づいてシームレスに適応させます。
 
-* **フォームの検証**：送信前にフォームは検証され、無効なフィールドにはユーザーに表示されるエラーメッセージが適切にマークされます。 これらのエラーの表示には、様々なパターンを使用できます。
+* **検証**：送信前にフォームは検証され、無効なフィールドにはユーザーに表示されるエラーメッセージが適切にマークされます。 これらのエラーの表示には、様々なパターンを使用できます。
 
-* **スタイル設定Forms**：各フォームフィールドは固定のHTML構造を持ち、カスタム CSS または JavaScript ファイルを使用してさらに装飾できます。 CSS/JS のターゲティングフィールドのセレクターは、タイプと名前に基づいて提供されます。
+リクエストに応じて使用できる高度な機能がいくつかあります。
 
+* **ファイルのアップロード**：フォームにファイル添付機能を追加できます。 ユーザーからドキュメント、画像、その他のファイルを収集する必要がある場合でも、ファイルのアップロード機能を使用すると簡単にできます。 カスタム処理オプションを使用できるので、特定の要件に合わせてファイルのアップロードプロセスを調整できます。
+
+* **reCAPTCHA**：標準 (OOTB) のサポートにより、Google reCAPTCHA をフォームにシームレスに統合できるメリットが得られます。 スムーズで中断のないユーザーエクスペリエンスを維持しながら、フォームを不正なアクティビティ、スパム、不正使用から保護します。
+
+* **フォーム送信時に電子メール通知を送信する**：手動でのフォローアップの手間を省き、組み込みの電子メール自動化機能とのタイムリーな通信を確保して、フォーム送信を可能にします。 この統合ソリューションを使用すると、誰かが Web サイト上のフォームに入力したときに、フォームデータの送信を含む関係者に簡単に通知できます。 複雑な設定や追加のツールは不要で、すぐに使用できます。
+
+
+## ワークフロー
+
+![ドキュメントベースのオーサリングエコシステム](/help/edge/assets/document-based-authoring-workflow.png)
 
 ## フォームの作成を開始
 

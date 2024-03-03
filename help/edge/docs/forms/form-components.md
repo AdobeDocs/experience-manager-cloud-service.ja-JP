@@ -4,20 +4,22 @@ description: このドキュメントでは、AEM Forms Edge Delivery Service �
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '965'
 ht-degree: 3%
 
 ---
 
 
-# フォームコンポーネント
+# フォームのコンポーネントとプロパティ：AEM Forms Edge Delivery Service
 
 AEM Forms Edge Delivery Service を使用すると、様々なコンポーネントを使用して、使いやすくインタラクティブなフォームを作成できます。 これらのコンポーネントは、様々なタイプのデータ収集に対応し、特定のニーズに合わせて容易にカスタマイズできます。
 
-アダプティブフォームブロックは、 [均一HTML構造](/help/edge/docs/forms/style-theme-forms.md) の一貫性を確保するために、すべてのフィールドタイプおよびコンテナ（パネル）に対して使用できます。 この一貫した構造により、 [フォームのスタイルを設定する](/help/edge/docs/forms/style-theme-forms.md).
 
+![一部のコンポーネントとプロパティを含むサンプルスプレッドシート](/help/edge/assets/sample-form-in-spreadsheet.png)
+
+アダプティブフォームブロックは、 [均一HTML構造](/help/edge/docs/forms/style-theme-forms.md) の一貫性を確保するために、すべてのフィールドタイプおよびコンテナ（パネル）に対して使用できます。 この一貫した構造により、 [フォームのスタイルを設定する](/help/edge/docs/forms/style-theme-forms.md).
 
 ## 使用可能なコンポーネント
 
@@ -38,6 +40,10 @@ AEM Forms Edge Delivery Service を使用すると、様々なコンポーネン
 - パネル/コンテナ：関連するフォーム要素をグループ化し、整理を改善します。 これは、 [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) および [凡例](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
 
 
+
+
+
+
 ## コンポーネントのプロパティ
 
 各フォームコンポーネントには、動作と外観を制御できる様々なプロパティが用意されています。 アダプティブフォームブロックコンポーネントでサポートされるプロパティを次に示します。
@@ -45,7 +51,8 @@ AEM Forms Edge Delivery Service を使用すると、様々なコンポーネン
 
 | Property | 適用可能なコンポーネント | 詳細 |
 |--------------|------------------------------|----------------------------------------------------------------------|
-| タイプ | すべて | コンポーネントのタイプを指定します。 このプロパティは、入力フィールドの動作と外観を決定します。 例えば、テキスト入力の場合、タイプは「テキスト」、「電子メール」（電子メール入力）、「パスワード」（パスワード入力）のようになります。 アダプティブフォームブロックは、すべての有効なHTML5 をサポートしています <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">入力タイプ</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選択</a>、および <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> をタイプとして使用します。 |
+| タイプ | すべて | コンポーネントのタイプを指定します。 このプロパティは、入力フィールドの動作と外観を決定します。 例えば、テキスト入力の場合、タイプは「テキスト」、「電子メール」（電子メール入力）、「パスワード」（パスワード入力）のようになります。 アダプティブフォームブロックのサポート  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">すべての有効なHTML5 入力タイプ</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選択</a>、および <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> をタイプとして使用します。 |
+| タイプ | すべて | コンポーネントのタイプを指定します。 このプロパティは、入力フィールドの動作と外観を決定します。 例えば、テキスト入力の場合、タイプは「テキスト」、「電子メール」（電子メール入力）、「パスワード」（パスワード入力）のようになります。 アダプティブフォームブロックのサポート  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">すべての有効なHTML5 入力タイプ</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選択</a>、および <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> をタイプとして使用します。 |
 | 名前 | すべて | フォーム送信用のコンポーネントを識別します。 name 属性は、フォームデータがサーバーに送信される際に使用され、ユーザー入力が特定のフィールドに関連付けられます。 |
 | ラベル | すべて | ユーザーにコンテキスト情報を提供します。 ラベルは、コンポーネントの横に表示されるテキストで、ユーザーが入力する情報に関するガイダンスを提供します。 |
 | 値 | テキスト、パスワード、電子メール、数値、範囲、日付およびそのバリエーション (datetime-local、month、week、time)、チェックボックス、ラジオ、非表示、送信、ボタン | コンポーネントの初期値を指定します。 テキスト入力、テキスト領域、および要素の選択の場合、これはデフォルトのテキストまたはオプションとして表示されます。 ラジオおよびチェックボックスコンポーネントの場合、これは選択時に送信される値/データです。 value 属性はオプションですが、チェックボックスとラジオの入力に必須と見なす必要があります。 |
@@ -192,4 +199,12 @@ Here is the table which outlines how core components correspond to their HTML-5 
    <td> A two-state toggle that allows user to select between two states such as enabling or disabling a feature, setting, or functionality.</td>
   </tr>
  </tbody>
-</table>
+</table> -->
+
+## 詳細を表示する
+
+- [フォームの作成とプレビュー](/help/edge/docs/forms/create-forms.md)
+- [フォームからデータを送信できるようにする](/help/edge/docs/forms/submit-forms.md)
+- [サイトページにフォームを発行する](/help/edge/docs/forms/publish-forms.md)
+- [フォームフィールドに検証機能を追加する](/help/edge/docs/forms/validate-forms.md)
+- [フォームのテーマとスタイルを変更する](/help/edge/docs/forms/style-theme-forms.md)

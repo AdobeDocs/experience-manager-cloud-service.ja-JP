@@ -4,9 +4,9 @@ description: スプレッドシートとアダプティブフォームブロッ�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1003'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,11 @@ ht-degree: 1%
 
 # データを受け入れるスプレッドシートを準備する
 
+![ドキュメントベースのオーサリングエコシステム](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
+
 一度 [フォームの作成とプレビュー](/help/edge/docs/forms/create-forms.md)をクリックした場合、対応するスプレッドシートがデータの受信を開始できるようにします。
+
+![ドキュメントベースのオーサリングエコシステム](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -43,6 +47,8 @@ ht-degree: 1%
 
 
 フィールド名を `incoming` シートが作成され、フォームが送信を受け入れる準備が整います。 フォームをプレビューし、それを使用してデータをシートに送信することができます。
+
+
 
 また、スプレッドシートには次の変更があります。
 
@@ -286,6 +292,6 @@ POST本文のフォームデータを書式設定する方法はいくつかあ�
 
 * [フォームの作成とプレビュー](/help/edge/docs/forms/create-forms.md)
 * [フォームからデータを送信できるようにする](/help/edge/docs/forms/submit-forms.md)
-* [サイトページにフォームを発行する](/help/edge/docs/forms/publish-eds-forms.md)
+* [サイトページにフォームを発行する](/help/edge/docs/forms/publish-forms.md)
 * [フォームフィールドに検証機能を追加する](/help/edge/docs/forms/validate-forms.md)
 * [フォームのテーマとスタイルを変更する](/help/edge/docs/forms/style-theme-forms.md)
