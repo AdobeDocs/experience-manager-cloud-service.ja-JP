@@ -2,7 +2,7 @@
 title: ダイナトレース
 description: AEM as a Cloud ServiceでDynatraceを使用する方法を学ぶ
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
-source-git-commit: d6f5a365a48a8b20b69db6895f895c9d172d58a7
+source-git-commit: 4fe8ed9c3f7b6589878da3317d15fede819bad54
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -56,19 +56,22 @@ Dynatraceライセンスについて詳しくは、 [Dynatrace Platform Subscrip
 
 1. Dynatrace環境に対して、次の API リクエストを実行します。
 
-`curl -X GET "<environmentUrl>/api/v1/deployment/installer/agent/connectioninfo" -H "accept: application/json" -H "Authorization: Api-Token <accessToken>"`
+   ```
+   curl -X GET "<environmentUrl>/api/v1/deployment/installer/agent/connectioninfo" -H "accept: application/json" -H "Authorization: Api-Token <accessToken>"
+   ```
 
-置換 `<environmentUrl>` Dynatrace環境 URL と `<accessToken>` 作成した API アクセストークンを使用して、
+
+   置換 `<environmentUrl>` Dynatrace環境 URL と `<accessToken>` 作成した API アクセストークンを使用して、
 
 1. をコピーします。 `<environmentId>` および `<environmentToken>` 応答ペイロードから取得し、保護された場所に保存します。
 
-```
-{
-   "tenantUUID": "<environmentId>",
-   "tenantToken": "<environmentToken>",
-   "communicationEndpoints": [...]
-}
-```
+   ```
+   {
+      "tenantUUID": "<environmentId>",
+      "tenantToken": "<environmentToken>",
+      "communicationEndpoints": [...]
+   }
+   ```
 
 ### Dynatrace API アクセストークンの作成 {#create-dynatrace-access-token}
 
