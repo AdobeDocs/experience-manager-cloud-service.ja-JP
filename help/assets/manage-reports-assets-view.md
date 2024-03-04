@@ -1,11 +1,10 @@
 ---
 title: アセットビューでのレポートの管理
 description: アセットビューの「レポート」セクションのデータにアクセスして、製品と機能の使用状況を評価し、主要な成功指標に関するインサイトを導き出します。
-exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
-source-git-commit: c9ec348d7e65f4bb69b93a39b9ad7192485d8db4
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '814'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -47,7 +46,7 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
 
 <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
-* **ストレージ使用量**：棒グラフで表される Assets ビュー環境のストレージ使用量（バイト単位）。
+* **ストレージ使用量**：アセットビュー環境のストレージ使用量（バイト）は、棒グラフで表されます。
 
 <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 

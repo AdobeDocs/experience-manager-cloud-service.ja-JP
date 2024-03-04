@@ -3,8 +3,7 @@ title: アセットビューでメタデータを管理する方法
 description: アセットビューでメタデータを管理する方法を説明します。メタデータ管理が改善され、アセットへのアクセス性が向上し、アセットを完全かつ容易に管理できるようになりました。
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
-exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
-source-git-commit: ef2a883e99823b1109eba598e89ea25a661e389b
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '1667'
 ht-degree: 96%

@@ -1,8 +1,7 @@
 ---
 title: アセットビューのマイワークスペース
 description: マイワークスペースは、カスタマイズ可能なビジュアルモジュールを提供するページで、Assets ユーザーインターフェイスの主要な領域と、ユーザーに最も関連性の高い情報に簡単にアクセスできます。
-exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
-source-git-commit: 2500322c5565314e84ee7989399b9130f5cd6f74
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 91%

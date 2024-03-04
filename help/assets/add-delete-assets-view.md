@@ -2,10 +2,9 @@
 title: リポジトリへのアセットのアップロード
 description: ' [!DNL Assets view] へのアセットのアップロード、アップロードステータスの表示、アップロードの問題の解決について説明します。'
 role: User
-exl-id: a85a4455-4456-48af-aee9-f05300677605
-source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
-workflow-type: ht
-source-wordcount: '835'
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+workflow-type: tm+mt
+source-wordcount: '825'
 ht-degree: 100%
 
 ---

@@ -2,8 +2,7 @@
 title: 画像の編集
 description: ' [!DNL Adobe Photoshop Express]  を利用したオプションを使用して画像を編集し、更新した画像をバージョンとして保存します。'
 role: User
-exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: e9092054062f01eac51bd79c680f4012653f88e7
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '1251'
 ht-degree: 80%

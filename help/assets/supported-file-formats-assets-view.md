@@ -3,11 +3,10 @@ title: サポートされているファイル形式
 description: ' [!DNL Assets view] の様々なユースケースでサポートされているファイル形式'
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
-exl-id: bc44e98d-446e-41ff-b5b4-9dc324834630
-source-git-commit: 6cb30ffda6c0de04e5cb3d01341b59c9ee75b335
-workflow-type: ht
-source-wordcount: '363'
-ht-degree: 100%
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+workflow-type: tm+mt
+source-wordcount: '515'
+ht-degree: 98%
 
 ---
 
@@ -41,7 +40,7 @@ ht-degree: 100%
 | アセットタイプ | [参照](/help/assets/navigate-assets-view.md) | コピー | [アップロード](/help/assets/add-delete-assets-view.md) | 作成 | [削除](/help/assets/add-delete-assets-view.md#delete-assets) | 詳細 | 画像のズーム | [最近表示された項目](/help/assets/navigate-assets-view.md) |
 |-------------------|----------|----------|----------|----------|----------|-------------------|------------|-----------------|
 | ラスター画像 | ✓ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
-| RAWファイル | ✓ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
+| RAW ファイル | ✓ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | フォルダー | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | − |
 | MP4 ビデオ | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | PDF | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
@@ -57,7 +56,7 @@ ht-degree: 100%
 | アセットタイプ | [ダウンロード](/help/assets/manage-organize-assets-view.md#download) | ドラッグ＆ドロップ | [画像エディター](/help/assets/edit-images-assets-view.md) | [検索](/help/assets/search-assets-view.md) | [スマートタグ](/help/assets/metadata-assets-view.md#tags) | [名前の変更](/help/assets/manage-organize-assets-view.md) | [バージョン](/help/assets/manage-organize-assets-view.md#versions-of-assets) |
 |---------------|----------|---------------|--------------|----------|------------|----------|----------|
 | ラスター画像 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RAWファイル | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | ✓ |
+| RAW ファイル | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | ✓ |
 | フォルダー | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 | ビデオ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | CC ライブラリ | − | − | − | − | − | ✓ | ✓ |
@@ -72,7 +71,7 @@ ht-degree: 100%
 | アセットタイプ | 注釈 | コメント | タスクの作成と確認 |
 |---------------|----------|----------|-------------------------|
 | ラスター画像 | ✓ | ✓ | ✓ |
-| RAWファイル | ✓ | ✓ | ✓ |
+| RAW ファイル | ✓ | ✓ | ✓ |
 | フォルダー | − | − | − |
 | ビデオ | − | ✓ | ✓ |
 | CC ライブラリ | − | − | − |
@@ -93,7 +92,7 @@ ht-degree: 100%
 | アセットタイプ | [メタデータ](/help/assets/metadata-assets-view.md) | [レンディション](/help/assets/add-delete-assets-view.md#renditions) | [ごみ箱](/help/assets/add-delete-assets-view.md#delete-assets) | コピー | 移動 |
 |---------------|-------------------|------------|----------|----------|----------|
 | ラスター画像 | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RAWファイル | ✓ | ✓ | ✓ | ✓ | ✓ |
+| RAW ファイル | ✓ | ✓ | ✓ | ✓ | ✓ |
 | フォルダー | ✓ | − | ✓ | ✓ | ✓ |
 | ビデオ | ✓ | − | ✓ | ✓ | ✓ |
 | CC ライブラリ | ✓ | − | − | − | − |
@@ -122,7 +121,7 @@ ht-degree: 100%
 
 ## 次の手順 {#next-steps}
 
-* アセットビューのユーザーインターフェイスの「[!UICONTROL フィードバック]」オプションを使用して製品に関するフィードバックを提供する
+* アセットビューユーザーインターフェイスの「[!UICONTROL フィードバック]」オプションを使用して、製品に関するフィードバックを提供する
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 

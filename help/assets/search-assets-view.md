@@ -2,11 +2,10 @@
 title: ' [!DNL Assets view] でのアセットの検索と検出の方法を学ぶ'
 description: 詳しくは、AEM Assets ビューでアセットを検索および検出する方法を参照してください。この強力な検索機能を使用すると、適切なアセットをすばやく発見できるので、コンテンツベロシティ（コンテンツ創出の速度）の向上に役立ちます。
 role: User
-exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 7b815a83e4e93c024403fab02f9a9b4ba8685007
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '1543'
-ht-degree: 67%
+ht-degree: 99%
 
 ---
 
@@ -120,37 +119,37 @@ ht-degree: 67%
 
 1. 「**[!UICONTROL 確認]**」をクリックして、ユーザーインターフェイスからフィルターを削除します。
 
-## 次を使用したアセットの検索 [!DNL Adobe Firefly] {#search-firefly}
+## [!DNL Adobe Firefly] を使用したアセット検索 {#search-firefly}
 
-どのアセットフォルダーにもないアセットを検索するには、 [!DNL Adobe Firefly] 内のアセット検索機能 [!DNL Experience Manager Assets]. これにより、アセットフォルダーに保存されていないアセットをリアルタイムで効率的に生成できます。
+[!DNL Experience Manager Assets] 内の [!DNL Adobe Firefly] アセット検索機能を利用して、どのアセットフォルダーにもないアセットを検索できます。これにより、アセットフォルダーに保存されていないアセットをリアルタイムで効率的に生成できます。
 
 ### 事前準備
 
-アクティブなが必要です [!DNL Adobe Express] 購読。
+アクティブな [!DNL Adobe Express] サブスクリプションが必要です。
 
-### アセットを生成
+### アセットの生成
 
-を使用して新しいアセットを生成するには [!DNL Adobe Firefly]:
+[!DNL Adobe Firefly] を使用して新しいアセットを生成するには、次の手順に従います。
 
-1. 次に移動： [!DNL AEM Assets] ワークスペース。
+1. [!DNL AEM Assets] ワークスペースに移動します。
 1. ページ上部の検索バーにアセット名を入力します。<br>
-例えば、キーワードを使用してアセットを検索できます `Bugatti Type 57`. アセットを検索する際に、どのアセットフォルダーにもアセットが存在しないので、結果は見つかりません。
-1. ページの中央にある検索バーにアセット名を入力し、 **[!UICONTROL 生成]**.
-   ![Firefly統合](assets/firefly-integration.jpg)
-   *図：アセットフォルダーの Bugatti Type 57 に対する結果が見つかりませんでした。* <br>
+例えば、キーワード `Bugatti Type 57` を使用してアセットを検索できます。アセットを検索する際に、どのアセットフォルダーにもアセットが存在しないので、結果は見つかりません。
+1. ページ中央の検索バーにアセット名を入力し、「**[!UICONTROL 生成]**」をクリックします。
+   ![Firefly の統合](assets/firefly-integration.jpg)
+   *図：アセットフォルダー内に Bugatti Type 57 に関する結果が見つかりませんでした。* <br>
 新しいアセットが正常に生成されました。
-   ![Firefly統合](assets/bugatti-type-57.jpg)
-   *図：を使用して検索された参照アセット [!DNL Adobe Firefly] アセット検索機能。* <br>
-これらのアセットを目的のフォルダーにアップロードして、アクセスしやすくすることができます。
+   ![Firefly の統合](assets/bugatti-type-57.jpg)
+   *図：[!DNL Adobe Firefly] アセット検索機能を使用して、参照アセットが検索されました。* <br>
+これらのアセットを適切なフォルダーにアップロードすると、簡単にアクセスできます。
 
 ### アセットのアップロード
 
-生成したアセットをアセットリポジトリーにアップロードするには：
+生成したアセットをアセットリポジトリにアップロードするには、次の手順に従います。
 
 1. 「**[!UICONTROL アップロード]**」をクリックします。
-1. アセットのアップロード先のアセットフォルダーを選択し、「 **[!UICONTROL フォルダーを選択]**.
+1. アセットをアップロードする必要があるアセットフォルダーを選択し、「**[!UICONTROL フォルダーを選択]**」をクリックします。
    ![アセットをアップロード](assets/upload-asset-firefly.jpg)
-   *図：アセットをアップロードするフォルダーを選択します。*
+   *図：アセットのアップロード先となるフォルダーを選択します。*
 
 ## 保存済みの検索 {#saved-search}
 
@@ -177,7 +176,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 検索結果に表示するアセットを選択し、次の操作を実行できます。
 
-* **類似画像を検索**：メタデータとスマートタグに基づいて、Assets UI で類似の画像アセットを見つけます。
+* **類似検索画像**：Assets UI で、メタデータとスマートタグに基づいて類似の画像アセットを検索します。
 
 * **詳細**：アセットのプロパティを表示および編集します。
 
@@ -187,9 +186,9 @@ When userA is searching and userB add an asset that matches search results, will
 
 * **クイックアクセスにピン留め**：[アセットをピン留め](my-workspace-assets-view.md)すると、後で必要になった際に、すばやくアクセスできるようになります。ピン留めしたすべての項目は、マイワークスペースの「**クイックアクセス**」セクションに表示されます。
 
-* **「開く」Adobe Express**:Experience Manager Assets画面から統合Adobe Expressで画像を編集します。
+* **Adobe Express で開く**：Experience Manager Assets 画面から統合された Adobe Express で画像を編集します。
 
-* **編集**:「 」オプションを使用して画像をAdobe Expressします。
+* **編集**：Adobe Express を使用して画像を編集します。
 
 * **リンクを共有**：他のユーザーとアセットの[リンクを共有](share-links-for-assets-view.md)して、アセットにアクセスしてダウンロードできるようにします。
 
@@ -207,38 +206,38 @@ When userA is searching and userB add an asset that matches search results, will
 
 * **監視**：アセットに対して実行される[操作を監視](manage-notifications-assets-view.md)します。
 
-## 最初のホームページを検索する設定 {#configuring-search-first-homepage}
+## 最初に検索するホームページの設定 {#configuring-search-first-homepage}
 
-Experience Manager Assetsを使用すると、組織のデフォルトのランディングページを選択できます。 「最初に検索」をホームページとして使用する場合、ブランドに合わせて背景画像とロゴ画像を設定し、ページのブランディングをカスタマイズするオプションもあります。
+Experience Manager Assets を使用すると、組織のデフォルトのランディングページを選択できます。最初に検索をホームページとして使用する場合、ブランドに合わせて背景画像とロゴ画像を設定し、ページのブランディングを調整するオプションもあります。
 
-検索用の最初のホームページを設定するには、次の手順を実行します。
+最初に検索するホームページを設定するには、次の手順を実行します。
 
-1. に移動します。 **[!UICONTROL 設定]** > **[!UICONTROL 一般設定]**.
-1. 選択 **[!UICONTROL 最初に検索]**. さらに、検索に関連する最初の設定が開きます。 次の設定が可能です。 [整列](#setting-alignment-search-bar) または [背景とロゴの画像を設定](#setting-background-image-and-logo) 」をクリックします。
+1. **[!UICONTROL 設定]**／**[!UICONTROL 一般設定]**&#x200B;に移動します。
+1. 「**[!UICONTROL 最初に検索]**」を選択します。これにより、最初の検索に関連する設定が開きます。ホームページの[位置](#setting-alignment-search-bar)または[背景画像とロゴ画像の設定](#setting-background-image-and-logo)を設定できます。
 
-### 検索バーの配置を設定しています {#setting-alignment-search-bar}
+### 検索バーの位置の設定 {#setting-alignment-search-bar}
 
-[!DNL Assets view] 検索バーの配置を変更できます。 検索バーは中央または上部に表示できます。 適切な位置揃えを選択し、 **[!UICONTROL 保存]**.
+[!DNL Assets view] を使用すると、検索バーの位置を変更できます。検索バーは中央または上部に表示できます。適切な位置を選択し、「**[!UICONTROL 保存]**」をクリックします。
 
-![最初のホームページの配置を検索](assets/search-first-alignment.png)
+![最初に検索するホームページの位置](assets/search-first-alignment.png)
 
-### ホームページの背景とロゴイメージを設定しています {#setting-background-image-and-logo}
+### ホームページの背景画像とロゴ画像の設定 {#setting-background-image-and-logo}
 
-検索最初のホームページにブランドのロゴと背景画像を追加できます。 以下の手順を実行します。
+最初に検索するホームページにブランドのロゴ画像と背景画像を追加できます。以下の手順を実行します。
 
-1. に移動します。 **[!UICONTROL 背景とロゴの画像]** の下のセクション **[!UICONTROL ホームページ]**.
-1. クリック **[!UICONTROL 置換]** 既存のアセットリポジトリーから画像を参照する場合。
-1. 「**[!UICONTROL 保存]**」をクリックします。[プレビュー](#preview-configured-homepage) 変更をレビューします。
+1. **[!UICONTROL ホームページ]**&#x200B;の「**[!UICONTROL 背景画像とロゴ画像]**」セクションに移動します。
+1. 「**[!UICONTROL 置換]**」をクリックして、既存のアセットリポジトリから画像を参照します。
+1. 「**[!UICONTROL 保存]**」をクリックします。変更を[プレビュー](#preview-configured-homepage)して、変更内容を確認します。
 
-### 設定済みのホームページをプレビュー {#preview-configured-homepage}
+### 設定済みのホームページのプレビュー {#preview-configured-homepage}
 
-プレビューを使用して、検索最初のホームページのレイアウトや書式を確認できます。 使用 **[!UICONTROL プレビュー]**&#x200B;を使用すると、レイアウトを修正したり、必要に応じて変更したりできます。 設定済みのホームページをプレビューするには、次の手順を実行します。
+最初に検索するホームページのレイアウトと書式設定をプレビューして確認できます。**[!UICONTROL プレビュー]**&#x200B;を使用すると、レイアウトを修正したり、要件に応じて変更を加えたりできます。設定済みのホームページをプレビューするには、次の手順を実行します。
 
-1. クリック **[!UICONTROL 一般設定]** を選択し、 **[!UICONTROL 最初に検索]**.
-1. に移動します。 **[!UICONTROL 最初のホームページで検索をカスタマイズ]** をクリックします。 **[!UICONTROL プレビュー]**. 切り替え **[!UICONTROL ダークテーマ]** ボタンをクリックして、ホームページを暗いテーマまたは明るいテーマでプレビューします。
-1. クリック **[!UICONTROL 閉じる]** をクリックして、プレビュー画面を閉じます。
+1. 「**[!UICONTROL 一般設定]**」をクリックし、「**[!UICONTROL 最初に検索]**」を選択します。
+1. **[!UICONTROL 最初に検索するホームページをカスタマイズ]**&#x200B;に移動し、「**[!UICONTROL プレビュー]**」をクリックします。「**[!UICONTROL ダークテーマ]**」ボタンを切り替えて、ダークテーマまたはライトテーマでホームページをプレビューします。
+1. 「**[!UICONTROL 閉じる]**」をクリックし、プレビュー画面を閉じます。
 
-   ![最初のホームページのプレビューを検索](assets/search-first-preview.gif)
+   ![最初に検索するホームページのプレビュー](assets/search-first-preview.gif)
 
 ## 次の手順 {#next-steps}
 
