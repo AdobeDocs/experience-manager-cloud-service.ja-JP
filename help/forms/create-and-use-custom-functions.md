@@ -5,10 +5,10 @@ keywords: カスタム関数の追加、カスタム関数の使用、カスタ�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: 1fb7fece71eec28219ce36c72d628867a222b618
+source-git-commit: 46fbed98a806f62dd1882eb0085d4338c5cd51a7
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 15%
+source-wordcount: '1108'
+ht-degree: 26%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 15%
 ## はじめに
 
 AEM Formsはカスタム関数をサポートし、複雑なビジネスルールを実装するための JavaScript 関数を定義できます。 これらのカスタム関数は、入力されたデータを指定された要件を満たすように操作および処理することで、フォームの機能を拡張します。 また、事前定義された条件に基づいて、フォームの動作を動的に変更することもできます。
-アダプティブFormsでは、 [アダプティブフォームのルールエディター](/help/forms/rule-editor.md#custom-functions) をクリックして、フォームフィールドに対する特定の検証ルールを作成します。
+アダプティブFormsでは、 [アダプティブフォームのルールエディター](/help/forms/rule-editor-core-components.md) をクリックして、フォームフィールドに対する特定の検証ルールを作成します。
 
 ユーザーが電子メールアドレスを入力するカスタム機能の使用方法を理解し、入力した電子メールアドレスが特定の形式（「@」記号とドメイン名を含む）に従うようにしたい場合。 電子メールアドレスを入力として取り、有効な場合は true を返し、それ以外の場合は false を返す「ValidateEmail」というカスタム関数を作成します。
 
@@ -49,6 +49,72 @@ function ValidateEmail(inputText)
 * **データの検証**：カスタム関数を使用すると、フォーム入力に対してカスタムチェックを実行し、指定したエラーメッセージを指定できます。
 * **動的動作**：カスタム関数を使用すると、特定の条件に基づいてフォームの動的動作を制御できます。 例えば、フィールドの表示/非表示、フィールド値の変更、フォームロジックの動的な調整を行うことができます。
 * **統合**：カスタム関数を使用して、外部の API やサービスと統合できます。 外部ソースからデータを取得したり、外部の Rest エンドポイントにデータを送信したり、外部イベントに基づいてカスタムアクションを実行したりするのに役立ちます。
+
+## サポートされる JS 注釈
+
+記述するカスタム関数に、 `jsdoc` その上に
+
+サポートされる`jsdoc`タグ：
+
+* **プライベート**
+構文：`@private`
+プライベート関数は、カスタム関数として含まれていません。
+
+* **名前**
+構文：`@name funcName <Function Name>`
+或いは`,` `@function funcName <Function Name>` **または** `@func` `funcName <Function Name>` を使用できます。
+  `funcName` ：関数の名前です（スペースは使用不可）。
+  `<Function Name>`：関数の表示名です。
+
+* **パラメーター**
+構文：`@param {type} name <Parameter Description>`
+或いは、`@argument` `{type} name <Parameter Description>` **または** `@arg` `{type}` `name <Parameter Description>` を使用できます。
+関数で使用されるパラメーターを表示します。関数には、複数のパラメータタグを設けることができます。各パラメーターは、実行順序に応じて 1 個のタグを設けることができます。
+  `{type}` は、パラメータータイプを表します。許可されているパラメータータイプは、以下のとおりです。
+
+   1. 文字列
+   2. 数値
+   3. ブール値
+   4. 対象範囲
+   5. 文字列[]
+   6. 数値[]
+   7. ブール型[]
+   8. date
+   9. 日付[]
+   10. 配列
+   11. オブジェクト
+
+  `scope` は、forms runtime が提供する特別な globals オブジェクトを指します。 これは最後のパラメーターである必要があり、ルールエディターでユーザーに表示されません。 スコープを使用して、読み取り可能なフォームおよびフィールドプロキシオブジェクトにアクセスし、プロパティ、ルールをトリガーしたイベント、およびフォームを操作するための一連の関数を読み取ることができます。
+
+  `object` type は、値を渡す代わりに、パラメーターの読み取り可能なフィールドオブジェクトをカスタム関数に渡すために使用されます。
+
+  すべてのパラメーターのタイプは、上記のいずれかに分類されます。「なし」はサポートされていません。上記のタイプのいずれかを選択していることを確認してください。タイプでは大文字と小文字が区別されません。パラメータ名ではスペースは使用できません。  パラメーターの説明には複数の単語を含めることができます。
+
+* **オプションのパラメーター**
+構文： `@param {type=} name <Parameter Description>`
+または、次を使用できます。 `@param {type} [name] <Parameter Description>`
+デフォルトでは、すべてのパラメーターが必須です。 パラメーターをオプションとしてマークするには、 `=` パラメーターの型で、またはパラメーター名を角括弧で囲んで指定します。
+例えば、 `Input1` をオプションのパラメーターとして指定します。
+   * `@param {type=} Input1`
+   * `@param {type} [Input1]`
+
+* **戻り値のタイプ**
+構文：`@return {type}`
+または、`@returns {type}` を使用できます。
+目的などの、関数に関する情報を追加します。{type} は、関数の戻り値のタイプを表します。許可されている戻り値のタイプは次のとおりです。
+
+   1. 文字列
+   2. 数値
+   3. ブール値
+   4. 文字列[]
+   5. 数値[]
+   6. ブール型[]
+   7. date
+   8. 日付[]
+   9. 配列
+   10. オブジェクト
+
+他のすべての戻り値のタイプは、上記のいずれかに分類されます。「なし」はサポートされていません。上記のタイプのいずれかを選択していることを確認してください。戻り値のタイプでは大文字と小文字が区別されません。
 
 ## カスタム関数を作成する際の考慮事項 {#considerations}
 
@@ -137,15 +203,15 @@ The functions that are not supported in the custom function list are:
 
 1. [AEM Forms as a Cloud Service リポジトリを複製](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=jp#accessing-git).
 1. `[AEM Forms as a Cloud Service repository folder]/apps/` フォルダーの下にフォルダーを作成します。例えば、`experience-league` という名前のフォルダーを作成します。
-1. に移動します。 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` をクリックし、 `ClientLibraryFolder`. 例えば、クライアントライブラリフォルダーを次のように作成します。 `es6clientlibs`.
-1. プロパティを追加する `categories` 文字列型の値を持つ 例えば、 `es6customfunctions` から `categories` プロパティ `es6clientlibs` フォルダー。
+1. に移動します。 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` をクリックし、 `ClientLibraryFolder`. 例えば、クライアントライブラリフォルダーを次のように作成します。 `customclientlibs`.
+1. プロパティを追加する `categories` 文字列型の値を持つ 例えば、 `customfunctionscategory` から `categories` プロパティ `customclientlibs` フォルダー。
 
    >[!NOTE]
    >
    > 任意の名前を `client library folder` および `categories` プロパティ。
 
 1. `js` という名前のフォルダーを作成します。
-1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/es6clientlibs/js` フォルダーに移動します。
+1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` フォルダーに移動します。
 1. JavaScript ファイル（例：`function.js`）を追加します。このファイルは、カスタム関数のコードで構成されます。
 
    >[!NOTE]
@@ -156,7 +222,7 @@ The functions that are not supported in the custom function list are:
     >* AEM Adaptive Form supports the caching of custom functions. If the JavaScript is modified, the caching becomes invalidated, and it is parsed. You can see a message as `Fetched following custom functions list from cache` in the `error.log` file.  -->
 
 1. `function.js` ファイルを保存します。
-1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/es6clientlibs/js` フォルダーに移動します。
+1. `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` フォルダーに移動します。
 1. `js.txt` というテキストファイルを追加します。ファイルには次が含まれます。
 
    ```javascript
@@ -175,7 +241,7 @@ The functions that are not supported in the custom function list are:
 
 1. [パイプラインを実行します。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)
 
-パイプラインが正常に実行されると、クライアントライブラリに追加されたカスタム関数が [アダプティブフォームのルールエディター](/help/forms/rule-editor.md).
+パイプラインが正常に実行されると、クライアントライブラリに追加されたカスタム関数が [アダプティブフォームのルールエディター](/help/forms/rule-editor-core-components.md).
 
 ### アダプティブフォームにクライアントライブラリを追加する{#use-custom-function}
 
@@ -184,7 +250,7 @@ The functions that are not supported in the custom function list are:
 1. フォームを編集モードで開きます。フォームを編集モードで開くには、フォームを選択し、 **[!UICONTROL 編集]**.
 1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
 1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。アダプティブフォームコンテナダイアログボックスが開きます。
-1. を開きます。 **[!UICONTROL 基本]** 」タブで、 **[!UICONTROL クライアントライブラリカテゴリ]** ドロップダウンリストから ( この場合、 `es6customfunctions`) をクリックします。
+1. を開きます。 **[!UICONTROL 基本]** 」タブで、 **[!UICONTROL クライアントライブラリカテゴリ]** ドロップダウンリストから ( この場合、 `customfunctionscategory`) をクリックします。
 
    ![カスタム関数をクライアントライブラリを追加する](/help/forms/assets/clientlib-custom-function.png)
 

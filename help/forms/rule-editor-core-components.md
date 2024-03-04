@@ -1,27 +1,17 @@
 ---
-title: ルールエディターを使用してルールをフォームフィールドに追加し、動的な動作を追加し、アダプティブフォームに複雑なロジックを構築する方法を教えてください。
+title: ルールエディターを使用してフォームフィールドにルールを追加し、コアコンポーネントに基づいて動的な動作を追加し、アダプティブフォームに複雑なロジックを構築する方法を教えてください。
 description: アダプティブフォームルールエディターを使用すると、コーディングやスクリプトの作成を行わずに、動的な動作を追加し、複雑なロジックをフォームに組み込むことができます。
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: bbb5e4caef2cb8c44d10a92647401ee86a9326c0
+source-git-commit: 78b3b11caf143ed147079ef2b3b3ebe5c1beafd7
 workflow-type: tm+mt
-source-wordcount: '6457'
-ht-degree: 100%
+source-wordcount: '5755'
+ht-degree: 88%
 
 ---
 
-# アダプティブフォームへのルールの追加 {#adaptive-forms-rule-editor}
-
-<span class="preview">[アダプティブフォームの新規作成](/help/forms/creating-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
-
-| バージョン | 記事リンク |
-| -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=ja) |
-| AEM as a Cloud Service | この記事 |
-
-## 概要 {#overview}
+# アダプティブフォームにルールを追加する（コアコンポーネント） {#adaptive-forms-rule-editor}
 
 ルール編集機能により、フォームのビジネスユーザーや開発者がアダプティブフォームオブジェクトにルールを追加できるようになります。これらのルールは、フォームオブジェクト上でトリガーできるアクションを定義します。それらのアクションは、プリセットされた条件、ユーザー入力、およびフォーム上のユーザーアクションに基づいてトリガーされます。これにより、フォームへの入力を正確かつ迅速に行うことができます。
 
@@ -57,7 +47,7 @@ forms-power-users グループに追加されたユーザーは、スクリプ�
 
 >[!NOTE]
 >
->利用可能なルールタイプ（ルールエディターで定義した条件やアクションを含む）は、ルールを作成しているフォームオブジェクトの種類によっても異なります。ルールエディターには、特定のフォームオブジェクトタイプに対して条件およびアクションステートメントを記述するための、有効なルールタイプとオプションのみが表示されます。例えば、パネルオブジェクトでは、「Validate」、「Set Value Of」、「Enable」や「Disable」の各ルールは表示されません。
+>利用可能なルールタイプ（ルールエディターで定義した条件やアクションを含む）は、ルールを作成しているフォームオブジェクトの種類によっても異なります。ルールエディターには、特定のフォームオブジェクトタイプに対して条件およびアクションステートメントを記述するための、有効なルールタイプとオプションのみが表示されます。たとえば、パネルオブジェクトには Validate 型と Set Value Of 型は表示されません。
 
 ルールエディターで使用可能なルールタイプの詳細については、「[ルールエディターで利用できるルールタイプ](rule-editor.md#p-available-rule-types-in-rule-editor-p)」を参照してください。
 
@@ -88,15 +78,18 @@ forms-power-users グループに追加されたユーザーは、スクリプ�
 * **Starts With（次の値で始まる）**
 * **Ends With（次の値で終わる）**
 * **Contains（次を含む）**
+* **次を含まない**
 * **Is Empty（空である）**
 * **Is Not Empty（空ではない）**
 * **Has Selected（選択済み）：**&#x200B;チェックボックス、ドロップダウン、ラジオボタンの特定のオプションをユーザーが選択した場合に true を返します。
 * **Is Initialized (event)（初期化（イベント型））：**&#x200B;フォームオブジェクトがブラウザーでレンダリングされたときに true を返します。
 * **Is Changed (event)（変更（イベント型））：**&#x200B;フォームオブジェクトに入力された値または選択したオプションをユーザーが変更したときに true を返します。
-* **ナビゲーション（イベント）：**&#x200B;ナビゲーションオブジェクトをクリックすると、true を返します。ナビゲーションオブジェクトは、パネル間の移動に使用します。
-* **手順完了（イベント）**：ルールの手順が完了すると、true を返します。
-* **送信成功（イベント）：**&#x200B;フォームデータモデルへのデータの送信に成功すると、true を返します。
-* **送信エラー（イベント）**：フォームデータモデルへのデータの送信に失敗すると、true を返します。
+
+<!--
+* **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
+* **Step Completion(event):** Returns true when a step of a rule completes.
+* **Successful Submission(event):** Returns true on successful submission of data to a form data model.
+* **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model. -->
 
 ## ルールエディターで利用可能なルールタイプ {#available-rule-types-in-rule-editor}
 
@@ -120,17 +113,23 @@ Action 2 on Object B;
 AND
 Action 3 on Object C;
 
-_
+`Else, do the following:`
+
+Action 2 on Object C; _
 
 ラジオボタンやリストなどの複数値コンポーネントに対してルールを作成する場合、オプションが自動的に取得され、それらのオプションを使用してルールを作成できるようになりました。これらのオプションの値を再入力する必要はありません。
 
 例えばリストの場合、赤、青、緑、黄という 4 つのオプションがあります。ルールを作成する場合、オプション（ラジオボタン）が自動的に取得され、これらのオプションを使用してルールを作成することができます。以下に例を示します。
 
-![複数値表示オプション](assets/multivaluefcdisplaysoptions1.png)
+![複数値表示オプション](assets/multivaluefcdisplaysoptions.png)
 
-「When」ルールを記述するときに、「Clear Value Of」アクションをトリガーできます。「Clear Value Of」アクションは、指定したオブジェクトの値をクリアします。When ステートメントに「Clear Value Of」をオプションとして含めると、複数フィールドで複雑な条件を作成できます。
+「When」ルールを記述するときに、「Clear Value Of」アクションをトリガーできます。「Clear Value Of」アクションは、指定したオブジェクトの値をクリアします。When ステートメントで「 Clear Value 」をオプションとして指定すると、複数のフィールドを含む複雑な条件を作成できます。 Else 文を追加して、さらに条件を追加できます
 
-![値をクリア](assets/clearvalueof1.png)
+![値をクリア](assets/clearvalueof.png)
+
+>[!NOTE]
+>
+> ルールタイプが単一レベルの then-else ステートメントのみをサポートする場合。
 
 **[!UICONTROL Hide （非表示）]**：指定したオブジェクトを非表示にします。
 
@@ -152,49 +151,53 @@ _
 
 **[!UICONTROL プロパティを設定]**&#x200B;のルールタイプを使用すると、条件アクションに基づいて、指定したオブジェクトのプロパティの値を設定できます。プロパティは、次のいずれかに設定できます。
 * visible（ブーリアン）
-* dorExclusion（ブーリアン）
-* chartType（文字列）
-* title（文字列）
+* label.value (String)
+* label.visible (Boolean)
+* description (String)
 * enabled（ブーリアン）
-* mandatory（ブーリアン）
-* validationsDisabled（ブーリアン）
-* validateExpMessage（文字列）
-* Value（数値、文字列、日付）
-* items（リスト）
+* readOnly (Boolean)
+* required (Boolean)
+* screenReaderText（文字列）
 * valid（ブーリアン）
 * errorMessage（文字列）
+* default （数値，文字列，日付）
+* enumNames (String)[])
+* chartType（文字列）
 
-例えば、ルールを定義して、アダプティブフォームにチェックボックスを動的に追加することができます。カスタム関数、フォームオブジェクト、またはオブジェクトプロパティを使用して、ルールを定義できます。
+例えば、ボタンをクリックしたときにテキストボックスを表示するルールを定義できます。 カスタム関数、フォームオブジェクト、オブジェクトプロパティ、またはサービス出力を使用して、ルールを定義できます。
 
-![プロパティを設定](assets/set_property_rule_new1.png)
+![プロパティを設定](assets/set_property_rule_new.png)
 
-カスタム関数に基づいてルールを定義するには、ドロップダウンリストから「**[!UICONTROL 関数の出力]**」を選択し、「**[!UICONTROL 関数]**」タブからカスタム関数をドラッグアンドドロップします。条件アクションが満たされると、カスタム関数で定義されているチェックボックスの数がアダプティブフォームに追加されます。
+カスタム関数に基づいてルールを定義するには、ドロップダウンリストから「**[!UICONTROL 関数の出力]**」を選択し、「**[!UICONTROL 関数]**」タブからカスタム関数をドラッグアンドドロップします。条件アクションが満たされると、テキスト入力ボックスが表示されます。
 
-フォームオブジェクトに基づいてルールを定義するには、ドロップダウンリストから「**[!UICONTROL フォームオブジェクト]**」を選択し、「**[!UICONTROL フォームオブジェクト]**」タブからフォームオブジェクトをドラッグアンドドロップします。条件アクションが満たされると、フォームオブジェクトで定義されているチェックボックスの数がアダプティブフォームに追加されます。
+フォームオブジェクトに基づいてルールを定義するには、ドロップダウンリストから「**[!UICONTROL フォームオブジェクト]**」を選択し、「**[!UICONTROL フォームオブジェクト]**」タブからフォームオブジェクトをドラッグ＆ドロップします。条件アクションが満たされると、テキスト入力ボックスがアダプティブフォームに表示されます。
 
-オブジェクトプロパティに基づくプロパティの設定ルールを使用すると、アダプティブフォームに含まれる別のオブジェクトプロパティに基づいて、アダプティブフォーム内のチェックボックスの数を追加できます。
+オブジェクトプロパティに基づくプロパティの設定ルールを使用すると、アダプティブフォームに含まれる別のオブジェクトプロパティに基づいて、テキスト入力ボックスをアダプティブフォームに表示することができます。
 
-次の図は、アダプティブフォーム内のドロップダウンリスト数に基づいて、チェックボックスを動的に追加する例を示しています。
+次の図は、アダプティブフォーム内のテキストボックスの非表示または表示に基づいて、このチェックボックスを動的に有効にする例を示しています。
 
-![オブジェクトプロパティ](assets/object_property_set_property_new1.png)
+![オブジェクトプロパティ](assets/object_property_set_property_new.png)
 
 **[!UICONTROL Clear value of （値のクリア）]**：指定したオブジェの値をクリアします。
 
 **[!UICONTROL Set Focus （フォーカスの設定）]**：指定したオブジェクトにフォーカスを設定します。
 
-**[!UICONTROL Save Form （フォームの保存）]**：フォームを保存します。
+**[!UICONTROL フォームを送信]** フォームを送信します。
 
-**[!UICONTROL Submit Forms （フォームの送信）]**：フォームを送信します。
+**[!UICONTROL リセット]** フォームまたは指定したオブジェクトをリセットします。
 
-**[!UICONTROL Reset Form （フォームのリセット）]**：フォームをリセットします。
-
-**[!UICONTROL Validate Form （フォームの検証）]**：フォームを検証します。
+**[!UICONTROL 検証]** フォームまたは指定したオブジェクトを検証します。
 
 **[!UICONTROL Add Instance （インスタンスの追加）]**：指定した繰り返し可能なパネルまたは表の行のインスタンスを追加します。
 
 **[!UICONTROL Remove Instance （インスタンスの削除）]**：指定した繰り返し可能なパネルまたは表の行のインスタンスを削除します。
 
+**[!UICONTROL 関数の出力]** 定義済みの関数またはカスタム関数に基づいてルールを定義します。
+
 **[!UICONTROL Navigate to （移動先）]** ：他の<!--Interactive Communications,-->アダプティブフォーム、画像やドキュメントフラグメントなどの他のアセット、または外部 URL に移動します。<!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+
+**[!UICONTROL ディスパッチイベント]** トリガーは、事前定義された条件またはイベントに基づく特定のアクションまたは動作です。
+
 
 ### [!UICONTROL Set Value of] {#set-value-of}
 
@@ -204,25 +207,17 @@ _
 
 Set value of Object A to:
 
-（文字列 ABC） OR
-（オブジェクト C のオブジェクトプロパティ X） OR
-（関数からの値） OR
-（数式表現からの値） OR
-（データモデルサービスまたは Web サービスの出力値）;
+（ABC 文字列） OR （Object C のオブジェクトプロパティ X） OR （関数の値） OR （数式の値） OR （データモデルサービスの出力値）;
 
 When （オプション）：
 
 (Condition 1 AND Condition 2 AND Condition 3) is TRUE;
 
-次の例では、`dependentid` フィールドの値を入力とし、`Relation` フィールドの値を `Relation` フォームデータモデルサービスの `getDependent` 引数の出力に設定します。
+次の例では、 `Question2` as `True` とは、 `Result` as `correct`.
 
-![Set-value-web-service](assets/set-value-web-service1.png)
+![Set-value-web-service](assets/set-value-web-service.png)
 
-フォームデータモデルサービスを使用した Set Value Of ルールの例
-
->[!NOTE]
->
->さらに、Set Value Of ルールを使用して、フォームデータモデルサービスまたは Web サービスの出力からドロップダウンリストのコンポーネントのすべての値を計算できます。ただし、選択する出力引数が配列型であることを確認してください。配列で返されたすべての値を、指定したドロップダウンリストで使用できるようになります。
+フォームデータモデルサービスを使用した Set Value ルールの例。
 
 ### [!UICONTROL Show（表示）] {#show}
 
@@ -306,24 +301,25 @@ When （オプション）：
 
 ![スクリプトの検証](assets/script-validation.png)
 
-### [!UICONTROL オプションを設定] {#setoptionsof}
+<!--
+### [!UICONTROL Set Options Of] {#setoptionsof}
 
-「ルールタイプの&#x200B;**[!UICONTROL オプションの設定]**」を使用すると、アダプティブフォームにチェックボックスを動的に追加するルールを定義できます。フォームデータモデルまたはカスタム関数を使用して、ルールを定義できます。
+The **[!UICONTROL Set Options Of]** rule type enables you to define rules to add check boxes dynamically to the Adaptive Form. You can use a Form Data Model or a custom function to define the rule.
 
-カスタム関数に基づいてルールを定義するには、ドロップダウンリストから「**[!UICONTROL 関数の出力]**」を選択し、「**[!UICONTROL 関数]**」タブからカスタム関数をドラッグアンドドロップします。カスタム関数で定義されているチェックボックスの数が、アダプティブフォームに追加されます。
+To define a rule based on a custom function, select **[!UICONTROL Function Output]** from the drop-down list, and drag-and-drop a custom function from the **[!UICONTROL Functions]** tab. The number of checkboxes defined in the custom function are added to the Adaptive Form.
 
-![カスタム関数](assets/custom_functions_set_options_new.png)
+![Custom Functions](assets/custom_functions_set_options_new.png)
 
-カスタム関数を作成するには、「[ルールエディターのカスタム関数](#custom-functions)」を参照してください。
+To create a custom function, see [custom functions in rule editor](#custom-functions).
 
-フォームデータモデルに基づいてルールを定義するには：
+To define a rule based on a form data model:
 
-1. ドロップダウンリストから「**[!UICONTROL サービス出力]**」を選択します。
-1. データモデルオブジェクトを選択します。
-1. 「**[!UICONTROL 値を表示]**」ドロップダウンリストからデータモデルオブジェクトプロパティを選択します。アダプティブフォーム内のチェックボックスの数は、データベース内のそのプロパティに対して定義されたインスタンスの数から得られます。
-1. 「**[!UICONTROL 値を保存]**」ドロップダウンリストからデータモデルオブジェクトプロパティを選択します。
+1. Select **[!UICONTROL Service Output]** from the drop-down list.
+1. Select the data model object.
+1. Select a data model object property from the **[!UICONTROL Display Value]** drop-down list. The number of checkboxes in the Adaptive Form is derived from the number of instances defined for that property in the database.
+1. Select a data model object property from the **[!UICONTROL Save Value]** drop-down list.
 
-![FDM 設定オプション](assets/fdm_set_options_new.png)
+![FDM set options](assets/fdm_set_options_new.png) -->
 
 ## ルールエディターのユーザーインターフェイスを理解する {#understanding-the-rule-editor-user-interface}
 
@@ -334,19 +330,19 @@ When （オプション）：
 1. アダプティブフォームをオーサリングモードで開きます。
 1. ルールを記述するフォームオブジェクトを選択し、コンポーネントツールバーで ![edit-rules](assets/edit-rules-icon.svg) をクリックします。ルールエディターのユーザーインターフェイスが表示されます。
 
-   ![create-rules](assets/create-rules1.png)
+   ![create-rules](assets/create-rules.png)
 
    選択したフォームオブジェクトの既存のルールが、このビューに一覧表示されます。既存ルールの詳細な管理方法については、[ルール管理](rule-editor.md#p-manage-rules-p)を参照してください。
 
 1. 「**[!UICONTROL 作成]**」を選択して、新しいルールを記述します。ルールエディターの初回起動時は、ルールエディターの UI がビジュアルエディターモード（デフォルト）で表示されます。
 
-   ![ルールエディターのユーザーインターフェイス](assets/rule-editor-ui1.png)
+   ![ルールエディターのユーザーインターフェイス](assets/rule-editor-ui.png)
 
 ここからは、ルールエディターのユーザーインターフェイスに含まれる各要素について説明します。
 
 ### A. コンポーネントルールの表示 {#a-component-rule-display}
 
-ルールエディターを起動したアダプティブフォームオブジェクトのタイトルと、現在選択されているルールタイプを表示します。上記の例では、ルールエディターは「Salary（給与）」と名付けられたアダプティブフォームオブジェクトから起動されており、「When」のルールタイプが選択されています。
+ルールエディターを起動したアダプティブフォームオブジェクトのタイトルと、現在選択されているルールタイプを表示します。上記の例では、ルールエディターは「質問 1」というタイトルのアダプティブフォームオブジェクトから起動され、ルールタイプは「When」を選択しています。
 
 ### B. フォームオブジェクトと関数 {#b-form-objects-and-functions-br}
 
@@ -356,9 +352,11 @@ When （オプション）：
 
 1 つ以上の有効なルールが適用されているフォームオブジェクトには、緑のドットが付いています。フォームオブジェクトに適用されているルールのいずれかが無効な場合、フォームオブジェクトには黄色のドットが付きます。
 
-「関数」タブには、「合計」、「最小」、「最大」、「平均」、「回数」や「フォームを検査」などの組み込み関数のセットが含まれています。これらの関数をルールに記述することで、繰り返しパネルや表の行の値を計算し、計算結果をアクションや条件文の中で使用することができます。また、[カスタム関数](#custom-functions)を作成することもできます。
+「関数」タブには、「合計」、「最小」、「最大」、「平均」、「回数」や「フォームを検査」などの組み込み関数のセットが含まれています。これらの関数をルールに記述することで、繰り返しパネルや表の行の値を計算し、計算結果をアクションや条件文の中で使用することができます。ただし、カスタム関数を作成することもできます。
 
-![関数タブ](assets/functions1.png)
+次の図に、関数の一部のリストを示します。
+
+![関数タブ](assets/functions.png)
 
 >[!NOTE]
 >
@@ -397,7 +395,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ## ルールを記述 {#write-rules}
 
-ルールを記述するには、ビジュアルルールエディターまたはコードエディターを使用します。ルールエディターの初回起動時は、ビジュアルエディターモードで開きます。コードエディターモードに切り替えて、ルールを作成することができます。ただし、コードエディターからルールを変更や記述した場合は、コードエディターをクリアしない限り、同じルールをビジュアルエディターから表示することはできません。次回ルールエディターを起動すると、前回ルールを作成した際に使用したモードで開きます。
+ビジュアルルールエディターを使用してルールを記述できます <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
 
 最初に、ビジュアルエディターを使用してルールを作成する方法を説明します。
 
@@ -418,7 +416,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    融資申請フォームをオーサリングモードで開きます。「**[!UICONTROL 配偶者の有無]**」コンポーネントを選択し、![edit-rules](assets/edit-rules-icon.svg) をクリックします。次に、「**[!UICONTROL 作成]**」を選択し、ルールエディターを起動します。
 
-   ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1.png)
+   ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1-cc.png)
 
    ルールエディターを起動すると、「When」ルールがデフォルトで選択されます。また、ルールエディターを起動したフォームオブジェクト（この場合は「Marital Status（配偶者の有無）」）は、「When」文に入力されています。
 
@@ -426,41 +424,56 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. **[!UICONTROL 状態の選択]**&#x200B;ドロップダウンを選択し、「**[!UICONTROL 次の値と等しい]**」をクリックします。「**[!UICONTROL 文字列を入力]**」フィールドが表示されます。
 
-   ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2.png)
+   ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2-cc.png)
 
-   「Marital Status（配偶者の有無）」のラジオボタンでは、「**[!UICONTROL Married （既婚）]**」と「**[!UICONTROL Single （独身）]**」のオプションに対して、それぞれ **0** と **1** の値が割り当てられています。以下に示すように、割り当てられた値は、「編集」ラジオボタンダイアログの「タイトル」タブから確認することができます。
+<!--  In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
 
-   ![ルールエディターから割り当てたラジオボタンの値](assets/radio-button-values.png)
+   ![Radio button values from rule editor](assets/radio-button-values.png)-->
 
-1. ルール内の「**[!UICONTROL 文字列を入力]**」フィールドで、**0** を指定します。
+1. Adobe Analytics の **[!UICONTROL 文字列を入力]** ルールの「 」フィールドで、「 」を選択します。 **既婚** 」ドロップダウンメニューから。
 
-   ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4.png)
+   ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4-cc.png)
 
    条件を`When Marital Status is equal to Married`と定義しました。次に、この条件が True の場合に実行するアクションを定義します。
 
 1. Then ステートメントで、**[!UICONTROL アクションを選択]**&#x200B;ドロップダウンリストから「**[!UICONTROL 表示]**」を選択します。
 
-   ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
+   ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5-cc.png)
 
 1. 「**[!UICONTROL オブジェクトをドロップするか、または次から選択]**」フィールドの「フォームオブジェクト」タブから「**[!UICONTROL Spouse Salary （配偶者の給与）]**」フィールドをドラッグ・ドロップします。目的のフォームオブジェクトから再度起動します。あるいは、「**[!UICONTROL オブジェクトをドロップするか、または次から選択]**」フィールドを選択し、ポップアップメニューから「**[!UICONTROL 配偶者の給与]**」フィールドを選択します。この中には、フォーム内のすべてのフォームオブジェクトが一覧表示されます。
 
-   ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
+   ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6-cc.png)
+
+   次に、この条件が False の場合に実行するアクションを定義します。
+1. クリック **[!UICONTROL Else セクションを追加]** 別の条件を追加するには **[!UICONTROL 配偶者の給与]** 「配偶者の有無」を「独身」に選択した場合は、「婚姻状況」フィールドを選択します。
+
+   ![when-else](assets/when-else.png)
+
+
+1. Else 文で、「 **[!UICONTROL 非表示]** から **[!UICONTROL アクションを選択]** 」ドロップダウンリストから選択できます。
+   ![when-else](assets/when-else-1.png)
+
+1. 「**[!UICONTROL オブジェクトをドロップするか、または次から選択]**」フィールドの「フォームオブジェクト」タブから「**[!UICONTROL Spouse Salary （配偶者の給与）]**」フィールドをドラッグ・ドロップします。目的のフォームオブジェクトから再度起動します。あるいは、「**[!UICONTROL オブジェクトをドロップするか、または次から選択]**」フィールドを選択し、ポップアップメニューから「**[!UICONTROL 配偶者の給与]**」フィールドを選択します。この中には、フォーム内のすべてのフォームオブジェクトが一覧表示されます。
+   ![when-else](assets/when-else-2.png)
 
    ルールエディターでは、ルールが次のように表示されます。
 
-   ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7.png)
+   ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7-cc.png)
+
+
 
 1. 「**[!UICONTROL 完了]**」を選択して、ルールを保存します。
 
-1. 配偶者の有無が「Single（独身）」の場合は「Spouse Salary（配偶者の給与）」フィールドを非表示にするため、手順 1～5 を繰り返して別のルールを定義します。ルールエディターでは、ルールが次のように表示されます。
+<!--
+1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
 
-   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8.png)
+   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png) -->
 
-   >[!NOTE]
-   >
-   >また、同じ動作を実装する場合は、「Marital Status（配偶者の有無）」フィールドに 2 つの「いつ」ルールを記述する代わりに、「Spouse Salary（配偶者の給与）」フィールド上に 1 つの「表示」ルールを設けることもできます。
+>[!NOTE]
+>
+> また、「配偶者の有無」フィールドに「When」ルールを入力する代わりに、「Spouse Salary」フィールドに「Show」ルールを入力して、同じ動作を実装することもできます。
 
-   ![write-rules-visual-editor-9](assets/write-rules-visual-editor-9.png)
+![write-rules-visual-editor-9](assets/write-rules-visual-editor-9-cc.png)
 
 1. 次に、融資適格金額を算出するためのルールを記述します。ここでは、総給与の 50% として計算され、「Loan Eligibility（貸付資格）」フィールドに表示されます。この結果を得るには、「Loan Eligibility （貸付資格）」フィールド上に「**[!UICONTROL 設定値]**」ルールを作成します。
 
@@ -468,11 +481,11 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. ルールのドロップダウンから「**[!UICONTROL 指定値]**」ルールを選択します。
 
-   ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
+   ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10-cc.png)
 
 1. 「**[!UICONTROL オプションの選択]**」を選択し、「**[!UICONTROL 数式]**」をクリックします。数式記述用のフィールドが表示されます。
 
-   ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
+   ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11-cc.png)
 
 1. 数式記述用のフィールドでは、次のように行います。
 
@@ -486,11 +499,11 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. 次に、式フィールドの周りのハイライト表示された領域を選択し、「**[!UICONTROL 拡張式]**」を選択します。
 
-   ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13.png)
+   ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13-cc.png)
 
    拡張式フィールドでは、「**[!UICONTROL 演算子を選択]**」フィールドから「**[!UICONTROL ÷]**」を選択し、「**[!UICONTROL オプションを選択]**」フィールドから「**[!UICONTROL 数字]**」を選択します。次に、数字フィールドに「**[!UICONTROL 2]**」を入力します。
 
-   ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14.png)
+   ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14-cc.png)
 
    >[!NOTE]
    >
@@ -500,7 +513,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. 「**[!UICONTROL 条件の追加]**」を選択し、When ステートメントを追加します。
 
-   ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15.png)
+   ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
 
    When ステートメント内で、以下の操作を行います。
 
@@ -510,21 +523,22 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    * 他の「**[!UICONTROL オブジェクトをドロップまたは次から選択]**」フィールドから「文字列」を選択し、「**[!UICONTROL 文字列を入力]**」フィールドに「**[!UICONTROL Married （既婚）]**」を入力します。
 
-   ルールは、ルールエディターで最終的には次のように表示されます。![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
+   ルールは、ルールエディターで最終的には次のように表示されます。![write-rules-visual-editor-16](assets/write-rules-visual-editor-16-cc.png)
 
 1. 「**[!UICONTROL 完了]**」を選択します。ルールが保存されます。
 
 1. ステップ 7～14 を繰り返し、配偶者の有無が「Single（独身）」であれば融資適格額を計算する別のルールを定義します。ルールエディターでは、ルールが次のように表示されます。
 
-   ![write-rules-visual-editor-17](assets/write-rules-visual-editor-17.png)
+   ![write-rules-visual-editor-17](assets/write-rules-visual-editor-17-cc.png)
 
->[!NOTE]
->
->代わりに、「When」ルール内で貸付資格を計算するために「Set Value Of」ルールを使用することもできます。このルールは、「Spouse Salary（配偶者の給与）」フィールドの表示／非表示を切り替えるために作成したものです。「Marital Status （配偶者の有無）」が「Single （独身）」の場合、ルールエディターでは組み合わせルールが次のように表示されます。
->
->同様に、「Spouse Salary （配偶者の給与）」フィールドの表示・非表示を切り替えるための別の組み合わせルールを記述することで、「Marital Status （配偶者の有無）」が「Married （既婚）」の場合にも融資適格性を計算することができます。
+代わりに、「When」ルール内で貸付資格を計算するために「Set Value Of」ルールを使用することもできます。このルールは、「Spouse Salary（配偶者の給与）」フィールドの表示／非表示を切り替えるために作成したものです。「Marital Status （配偶者の有無）」が「Single （独身）」の場合、ルールエディターでは組み合わせルールが次のように表示されます。
 
-![write-rules-visual-editor-18](assets/write-rules-visual-editor-18.png)
+![write-rules-visual-editor-18](assets/write-rules-visual-editor-18-cc.png)
+
+「配偶者の給与」フィールドの表示を制御し、「Else」条件を使用して「配偶者の有無」が「既婚」の場合にローンの適格要件を計算する、組み合わせルールを記述できます。
+
+![write-rules-visual-editor-19](assets/write-rules-visual-editor-19-cc.png)
+
 
 <!-- ### Using code editor {#using-code-editor}
 
@@ -549,6 +563,8 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### ルールエディターでのカスタム関数 {#custom-functions}
 
+また、ルールエディターでカスタム関数を使用することもできます。 カスタム関数の作成手順については、この記事を参照してください。 [アダプティブFormsのカスタム関数](/help/forms/create-and-use-custom-functions.md).
+
 「関数出力」の下にリストされている「*合計*」のような既存の関数に加え頻繁に使用するカスタム関数を記述することもできます。記述した関数は、その上に `jsdoc` が付記されていることを確認してください。
 
 この `jsdoc` は、
@@ -571,10 +587,6 @@ While writing JavaScript code in the rule editor, the following visual cues help
   `funcName` ：関数の名前です（スペースは使用不可）。
   `<Function Name>`：関数の表示名です。
 
-* **メンバー**
-構文：`@memberof namespace`
-関数に名前空間を追加します。
-
 * **パラメーター**
 構文：`@param {type} name <Parameter Description>`
 或いは、`@argument` `{type} name <Parameter Description>` **または** `@arg` `{type}` `name <Parameter Description>` を使用できます。
@@ -585,10 +597,28 @@ While writing JavaScript code in the rule editor, the following visual cues help
    1. 数値
    1. ブール値
    1. 対象範囲
+   1. 文字列[]
+   1. 数値[]
+   1. ブール型[]
+   1. date
+   1. 日付[]
+   1. 配列
+   1. オブジェクト
 
-  範囲は、アダプティブフォームのフィールドを参照します。フォームが遅延読み込みを使用している場合は、`scope`を使用してフィールドにアクセスできます。フィールドは、フィールドが読み込まれたときか、フィールドがグローバルとしてマークされているときにアクセスできます。
+  `scope` は、forms runtime が提供する特別な globals オブジェクトを指します。 これは最後のパラメーターである必要があり、ルールエディターでユーザーに表示されません。 スコープを使用して、読み取り可能なフォームおよびフィールドプロキシオブジェクトにアクセスし、プロパティ、ルールをトリガーしたイベント、およびフォームを操作するための一連の関数を読み取ることができます。
 
-  すべてのパラメーターのタイプは、上記のいずれかに分類されます。「なし」はサポートされていません。上記のタイプのいずれかを選択していることを確認してください。タイプでは大文字と小文字が区別されません。パラメーター `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>` では、スペースは使用できません。
+  `object` type は、値を渡す代わりに、パラメーターの読み取り可能なフィールドオブジェクトをカスタム関数に渡すために使用されます。
+
+  すべてのパラメーターのタイプは、上記のいずれかに分類されます。「なし」はサポートされていません。上記のタイプのいずれかを選択していることを確認してください。タイプでは大文字と小文字が区別されません。パラメータ名ではスペースは使用できません。  パラメーターの説明には複数の単語を含めることができます。
+
+* **オプションのパラメーター**
+構文： `@param {type=} name <Parameter Description>`
+または、次を使用できます。 `@param {type} [name] <Parameter Description>`
+デフォルトでは、すべてのパラメーターが必須です。 パラメーターをオプションとしてマークするには、 `=` パラメーターの型で、またはパラメーター名を角括弧で囲んで指定します。
+
+  例えば、 `Input1` をオプションのパラメーターとして指定します。
+   * `@param {type=} Input1`
+   * `@param {type} [Input1]`
 
 * **戻り値のタイプ**
 構文：`@return {type}`
@@ -596,73 +626,55 @@ While writing JavaScript code in the rule editor, the following visual cues help
 目的などの、関数に関する情報を追加します。{type} は、関数の戻り値のタイプを表します。許可されている戻り値のタイプは次のとおりです。
 
    1. 文字列
-   1. 数値
-   1. ブール値
+   2. 数値
+   3. ブール値
+   4. 文字列[]
+   5. 数値[]
+   6. ブール型[]
+   7. date
+   8. 日付[]
+   9. 配列
+   10. オブジェクト
 
   他のすべての戻り値のタイプは、上記のいずれかに分類されます。「なし」はサポートされていません。上記のタイプのいずれかを選択していることを確認してください。戻り値のタイプでは大文字と小文字が区別されません。
 
-   * **This**
-構文：`@this currentComponent`
+<!--
+**Adding a custom function**
 
-  ルールが記述されているアダプティブフォームコンポーネントを参照するには、@this を使用します。
+For example, you want to add a custom function which calculates area of a square. Side length is the user input to the custom function, which is accepted using a numeric box in your form. The calculated output is displayed in another numeric box in your form. To add a custom function, you have to first create a client library, and then add it to the CRX repository.
 
-  次の例は、フィールド値に基づいています。次の例では、ルールによりフォーム内のフィールドが非表示になります。`this.value`の`this`部分は、ルールが記述されている基になるアダプティブフォームコンポーネントを参照します。
+To create a client library and add it in the CRX repository, perform the following steps:
 
-  ```
-     /**
-     * @function myTestFunction
-     * @this currentComponent
-     * @param {scope} scope in which code inside function is run.
-     */
-     myTestFunction = function (scope) {
-        if(this.value == "O"){
-              scope.age.visible = true;
-        } else {
-           scope.age.visible = false;
-        }
-     }
-  ```
-
-  >[!NOTE]
-  >
-  >カスタム関数の前のコメントは、概要で使用されます。概要は複数の行に拡張することができます。終端にはタグを使用します。説明を簡潔にするため、ルールビルダーでは 1 行以内に抑えるように心がけてください。
-
-**カスタム関数の追加**
-
-例えば、正方形の面積を計算するカスタム関数を追加するとします。横の長さは、ユーザーの入力を使用します。ユーザー入力は、フォーム内の数値ボックスを通して受け取ります。計算された出力は、フォーム内の別の数値ボックスに表示されます。カスタム機能を追加するには、最初にクライアントライブラリを作成し、次に CRX リポジトリーに追加する必要があります。
-
-クライアントライブラリを作成して CRX リポジトリーに追加するには、次のステップを実行します。
-
-1. クライアントライブラリを作成します。詳しくは、「[クライアント側ライブラリの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=ja#developing)」を参照してください。
-1. CRXDE 上で、`categories`文字列タイプの値を持つプロパティを`customfunction`として`clientlib`フォルダーに追加します。
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
+1. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
    >
-   >`customfunction`はカテゴリの例です。`clientlib` フォルダーで作成したカテゴリには、任意の名前を付けることができます。
+   >`customfunction`is an example category. You can choose any name for the category you create in the `clientlib`folder.
 
-CRX リポジトリーにクライアントライブラリを追加した後は、アダプティブフォームでそれを使用します。これにより、カスタム関数をルールとしてフォーム内で使用することができます。アダプティブフォームにクライアントライブラリを追加するには、次の手順を実行します。
+After you have added your client library in the CRX repository, use it in your Adaptive Form. It lets you use your custom function as a rule in your form. To add the client library in your Adaptive Form, perform the following steps:
 
-1. フォームを編集モードで開きます。
-フォームを編集モードで開くには、フォームを選択し、「**[!UICONTROL 開く]**」を選択します。
-1. 編集モードで、コンポーネントを選択し、![field-level](assets/select_parent_icon.svg)／**[!UICONTROL アダプティブフォームコンテナ]**、![cmppr](assets/configure-icon.svg) の順にクリックします。
-1. サイドバーの「クライアントライブラリの名前」の下から、クライアントライブラリを追加します。（この例では、「`customfunction`」）。
+1. Open your form in edit mode.
+   To open a form in edit mode, select a form and select **[!UICONTROL Open]**.
+1. In the edit mode, select a component, then select ![field-level](assets/select_parent_icon.svg) &gt; **[!UICONTROL Adaptive Form Container]**, and then select ![cmppr](assets/configure-icon.svg).
+1. In the sidebar, under Name of Client Library, add your client library. ( `customfunction` in the example.)
 
-   ![カスタム関数をクライアントライブラリを追加する](assets/clientlib.png)
+   ![Adding the custom function client library](assets/clientlib.png)
 
-1. 入力数値ボックスを選択し、![edit-rules](assets/edit-rules-icon.svg) を選択してルールエディターを開きます。
-1. 「**[!UICONTROL ルールを作成]**」を選択します。フォームの出力フィールドに入力の自乗値を保存するルールを、次のオプションを使用して作成します。
+1. Select the input numeric box, and select ![edit-rules](assets/edit-rules-icon.svg) to open the rule editor.
+1. Select **[!UICONTROL Create Rule]**. Using options shown below, create a rule to save the squared value of the input in the Output field of your form.
 
-   [![カスタム関数を利用したルールの作成](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
-
-1. 「**[!UICONTROL 完了]**」を選択します。これでカスタム関数が追加されました。
+   [![Using custom functions to create a rule](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
+  
+1. Select **[!UICONTROL Done]**. Your custom function is added.
 
    >[!NOTE]
    >
-   > カスタム関数を使用してルールエディターからフォームデータモデルを呼び出すには、[こちらを参照してください](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services)。
+   > To invoke a form data model from rule editor using custom functions, [see here](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services). 
 
-#### 関数の宣言でサポートされるタイプ {#function-declaration-supported-types}
+#### Function declaration supported types {#function-declaration-supported-types}
 
-**文関数**
+**Function Statement**
 
 ```javascript
 function area(len) {
@@ -670,9 +682,9 @@ function area(len) {
 }
 ```
 
-この関数は、`jsdoc` コメント無しで追加されています。
+This function is included without `jsdoc` comments.
 
-**関数式**
+**Function Expression**
 
 ```javascript
 var area;
@@ -683,7 +695,7 @@ area = function(len) {
 };
 ```
 
-**関数式と文関数**
+**Function Expression and Statement**
 
 ```javascript
 var b={};
@@ -693,7 +705,7 @@ b.area = function(len) {
 }
 ```
 
-**変数としての関数宣言**
+**Function Declaration as Variable**
 
 ```javascript
 /** */
@@ -704,9 +716,9 @@ var x1,
     x2 =5, x3 =true;
 ```
 
-制限事項：カスタム関数は、変数リストから最初の関数宣言のみを選択します（共に使用する場合）。関数式は、すべての関数宣言に使用することができます。
+Limitation: custom function picks only the first function declaration from the variable list, if together. You can use function expression for every function declared.
 
-**オブジェクトとしての関数宣言**
+**Function Declaration as Object**
 
 ```javascript
 var c = {
@@ -721,13 +733,14 @@ var c = {
 
 >[!NOTE]
 >
->カスタム関数では、必ず `jsdoc` を使用します。`jsdoc` 型のコメントが奨励されていますが、カスタム関数として区別できるよう、空の `jsdoc` 型コメントを含めてください。これにより、カスタム関数のデフォルト処理が可能になります。
+>Ensure that you use `jsdoc` for every custom function. Although `jsdoc`comments are encouraged, include an empty `jsdoc`comment to mark your function as custom function. It enables default handling of your custom function.
+-->
 
 ## ルール管理 {#manage-rules}
 
 フォームオブジェクトを選択し、続けて ![edit-rules1](assets/edit-rules-icon.svg) を選択すると、オブジェクト上に既存のルールが一覧表示されます。タイトルを表示し、ルール概要をプレビューできます。さらに、UI を使用すると、ルールの概要の展開および表示、ルールの順序変更、ルールの編集、ルールの削除を行えます。
 
-![リストルール](assets/list-rules.png)
+![リストルール](assets/list-rules-cc.png)
 
 ルールに対して、次の操作を実行できます。
 
@@ -741,7 +754,7 @@ var c = {
 
 * **有効／無効**：ルールの使用を一時的に停止する必要がある場合、1 つ以上のルールを選択し、アクションツールバーの「**[!UICONTROL 無効]**」を選択して無効にすることができます。ルールが無効化されている場合は、ランタイムには実行されません。無効になっているルールを有効にするには、そのルールを選択してから、アクションツールバーの「有効にする」をクリックします。ルールの「ステータス」列には、ルールが有効か無効かが表示されます。
 
-![ルールを無効にする](assets/disablerule.png)
+![ルールを無効にする](assets/disablerule-cc.png)
 
 ## ルールのコピー＆ペースト {#copy-paste-rules}
 

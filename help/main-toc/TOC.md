@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+source-git-commit: 2359f66c961d7678d07af12aa8173ad9169dff9c
 workflow-type: tm+mt
-source-wordcount: '4751'
+source-wordcount: '4761'
 ht-degree: 95%
 
 ---
@@ -636,6 +636,7 @@ ht-degree: 95%
             + [アダプティブフォームにカスタムエラーハンドラーの追加](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [コアコンポーネントに基づくアダプティブフォームのロケールの追加](/help/forms/supporting-new-language-localization-core-components.md)
             + [カスタム関数の作成と使用](/help/forms/create-and-use-custom-functions.md)
+            + [コアコンポーネントに基づいてアダプティブフォームにルールを追加する](/help/forms/rule-editor-core-components.md)
       + 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
          + PDF フォームのアダプティブフォームへの変換 {#afcs}
             + [自動フォーム変換サービスの概要](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ja)
