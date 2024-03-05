@@ -4,9 +4,9 @@ description: EDS フォームに繰り返し可能なセクションを追加す
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+source-git-commit: d63d0f1152d0a23623c197924a44bc6b1e69fb42
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '565'
 ht-degree: 13%
 
 ---
@@ -14,9 +14,7 @@ ht-degree: 13%
 
 # フォームへの繰り返し可能なセクションの追加
 
-アダプティブフォームブロックには、フォームのセクションやコンポーネントを追加または作成する機能が用意されています。
-
-繰り返し可能なセクションとは、同様のデータが複数回繰り返し発生した場合に情報を収集するために、複製または複製されたフォームのコンポーネントです。
+アダプティブフォームブロックには、フォームのセクションやコンポーネントを追加または作成する機能が用意されています。 これにより、ユーザーは同じタイプのデータに対して複数回情報を入力でき、職歴や教育的背景などの情報を簡単に収集できます。
 
 例えば、ある人物の職歴に関する情報を収集するために使用するフォームについて考えてみましょう。前の各職務の詳細を取得するための繰り返し可能なセクションがある場合があります。繰り返し可能なセクションには、通常、会社名、役職、雇用日、職務責任などのフィールドが含まれます。繰り返し可能なセクションの複数のインスタンスを追加して、保持している各ジョブに関する情報を入力できます。
 
@@ -27,42 +25,47 @@ ht-degree: 13%
 * [フォーム内に繰り返し可能なセクションを作成する](#add-repeatable-sections-to-a-form)
 * [フォーム内の繰り返しの最小数または最大数を設定する](#set-minimum-or-maximum-number-of-repetitions-for-a-repeatable-section)
 
-## フォーム内に繰り返し可能なセクションを作成する
+## 繰り返し可能なセクションの作成
 
 フォーム内に繰り返し可能なセクションを作成すると、ユーザーは同じデータセットの複数のインスタンスを入力でき、繰り返し情報を効率的に収集できます。 フォーム内に繰り返し可能なセクションを作成するには：
 
-1. Microsoft SharePointまたはGoogle Workspace の Edge Deliver プロジェクトフォルダーに移動し、スプレッドシートを開きます。 例えば、 `job-application.xlsx`.
+1. Microsoft SharePointまたはGoogle Workspace の Edge Deliver プロジェクトフォルダーに移動し、スプレッドシートを開きます。
 
-1. フォームフィールドを追加し、 `type` プロパティをに設定 `fieldset` を設定してリピータビリティを有効にします。 `repeatable` から `true`. さらに、 `label` フィールドの場合は、繰り返し可能なセクションの見出しとして機能します。
+1. フォームフィールドを追加し、 `type` プロパティをに設定 `fieldset`
+1. 指定 `Name` 」と入力します。 name プロパティは、繰り返し可能なセクションの作成に使用されます。
+1. 次の設定で再現性を有効にする `repeatable` から `true`.
+1. 説明的な `label` フィールドの。 繰り返し可能なセクションの見出しとして機能します。
 
    以下の画像は、求人申込フォーム内の雇用履歴の節の図を参照してください。
 
    ![](/help/edge/assets/repeatable-section-example-job-application-form.png)
 
-1. Adobe Analytics の `Fieldset` 繰り返し可能なセクションに含めるためのすべてのフィールドのプロパティを指定するには、 `Name` 対応するフィールドセットの。
+1. セクションに含める各フィールドに対して、 `Fieldset` プロパティを手順 3 で選択したのと同じ名前に設定します。
 
    例えば、 `experience` （すべての関連フィールドの Fieldset プロパティ）を選択し、 `employment history` 」セクションに入力します。
 
-   ![](/help/edge/assets/repeatable-section--mention-fieldset-name-example-job-application-form.png)
+   ![繰り返し可能なセクションフィールドとそのプロパティの例](/help/edge/assets/repeatable-section--mention-fieldset-name-example-job-application-form.png)
 
 1. 用途 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) をクリックして、シートをプレビューおよびパブリッシュします。 繰り返し可能なセクションがフォームに追加されます。
 
    繰り返し可能なセクションの下では、ユーザーは直感的な **追加** 複数のセクションを簡単に追加できるボタン。
 
-   ![繰り返し可能なセクション、直感的なセクションを検索 **追加** ボタン、複数のセクションを追加 ](/help/edge/assets/repeatable-section-example.png)
+   ![繰り返し可能なセクション、追加ボタン、複数のセクションを追加 ](/help/edge/assets/repeatable-section-example.png)
 
 
-## 繰り返し可能なセクションの繰り返し回数の最小値または最大値を設定する
+## 繰り返しの最小値と最大値の設定
 
 フォームデザインでは、繰り返し可能なセクションの繰り返しの最小値と最大値を設定すると便利です。 これにより、ユーザーを効果的に導きながら、制御と一貫性を確立できます。 繰り返しの最小数または最大数を設定する手順は、次のとおりです。
 
 1. Microsoft SharePointまたはGoogle Workspace の Edge Deliver プロジェクトフォルダーに移動し、スプレッドシートを開きます。
 
-1. を設定します。 `min` プロパティを使用して、セクションを繰り返し可能な最小回数を指定します。
+1. 次のフィールド： `type` `fieldset` および `repeatable` プロパティをに設定 `true`:
+
+   * を設定します。 `min` プロパティを使用して、セクションを繰り返し可能な最小回数を指定します。
+
+   * を設定します。 `max` プロパティを使用して、セクションを繰り返し可能な最大回数を指定します。
 
    ![min プロパティと max プロパティを設定して、セクションを繰り返す回数を指定します。](/help/edge/assets/repeatable-section-set-min-max.png)
-
-1. を設定します。 `max` プロパティを使用して、セクションを繰り返し可能な最大回数を指定します。
 
 1. 用途 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) をクリックして、シートをプレビューおよびパブリッシュします。
 
