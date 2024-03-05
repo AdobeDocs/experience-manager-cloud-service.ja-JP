@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 0b4c820159f918cb9b3a93d9ab36dc26b1d8da47
-workflow-type: ht
-source-wordcount: '381'
-ht-degree: 100%
+source-git-commit: 77a4b445d9117959ed8855aef445c02529178800
+workflow-type: tm+mt
+source-wordcount: '1097'
+ht-degree: 13%
 
 ---
 
@@ -13,43 +13,122 @@ ht-degree: 100%
 
 次の節では、Experience Manager as a Cloud Service の最新のメンテナンスリリースに関する技術リリースノートの概要を説明します。
 
-## リリース 14697 {#release-14697}
+## リリース 15262 {#release-15262}
 
-2023年12月18日（PT）に公開された、メンテナンスリリース 14697 の継続的な改善点を以下にまとめます。問題が発生したリリース 14538 に代わるものです。以前のメンテナンスリリースは、リリース 14227 でした。
+2024年3月5日に公開された、メンテナンスリリース 15262 の継続的な改善点を以下にまとめます。以前のメンテナンスリリースは、リリース 14697 でした。
 
-2023.12.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja)を参照してください。
+2024.3.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja)を参照してください。
 
-### 機能強化 {#enhancements-14697}
+### 機能強化 {#enhancements-15262}
 
-* GRANITE-46723：ユーザー同期 - デフォルト同期から IDP ベースの同期への SAML の移行。
-* OAK-10311：レプリケーション - BLOB 比較を最適化して、AEM での大規模なバッチのアセットのレプリケーション時間を短縮します。
-* OAK-10511：レプリケーション - ネットワークのラウンドトリップを削減して、AEM での大規模なアセットのレプリケーション時間を短縮します。
-* GRANITE-48334：パブリッシャー - RUM のコレクションスクリプトがありません。
+* ASSETS-30632：リスト表示にBrand Portal公開ステータス列を別に追加しました。
+* ASSETS-30934：のサポートが追加されました。 `Iptc4xmpCore:AltTextAccessibility` および `Iptc4xmpCore:ExtDescrAccessibility` プロパティをアセットメタデータエディターに追加します。
+* ASSETS-31297:Dynamic Media からコピーされたアセットが削除されないよう、チェックが改善されました。
+* ASSETS-33246：リリースインデックス定義 `damAssetLucene-10`.
+* ASSETS-33590：処理プロファイルでのビデオの Web レンディションのサポートが追加されました。
+* GRANITE-36205:oak のバージョンを 1.60-T20240131102219-0cde853 に更新します。
+* SITES-19326: Assets UI のリンクを更新して、新しい CF エディターで CF を開きます。
+* GUIDES-12945: AI を利用したスマートサーチクエリで、コンテンツのオーサリング中にコンテンツ参照を追加
+* GUIDES-12706: Web エディターの改良されたバージョン履歴機能
+* GUIDES-14948：翻訳パネルでのユーザーエクスペリエンスの向上
+* GUIDES-8782：要素を挿入ダイアログボックスの検索ロジックが改善されました。
+* GUIDES-14681：動的ベースラインを使用した複数の出力プリセットの公開機能
+* AEMガイドの機能強化の完全なリストについては、次を参照してください。 [AEMガイドの新機能](https://experienceleague.adobe.com/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2402-release/whats-new-2024-2-0.html?lang=en#release-info)
 
-### 修正された問題 {#fixed-issues-14697}
+### 修正された問題 {#fixed-issues-15262}
 
-* CQ-4354867：ToggleCondition 参照が、InstanceActionServlet に存在しないフィールドを参照します。
-* CQ-4349948：ツール／セキュリティ／ユーザーでのユーザー設定を編集の「プロファイルのプロパティ」文字列のローカライゼーション。
-* GRANITE-44541：ツール／セキュリティ／ユーザーでのユーザーを編集／キーストアの秘密鍵ファイルの追加画面のエラーダイアログのローカライゼーション。
-* GRANITE-45341：ツール／セキュリティ／ユーザーでのユーザーアクションのアクティベート／アクティベート解除の成功／失敗文字列のローカライゼーション。
-* GRANITE-46650：ツール／セキュリティ／ユーザー作成ダイアログでのエラーメッセージ「ユーザー ID／パスワードの不一致」文字列のローカライゼーション。
-* GRANITE-47764：Sling モデル API 1.5.0 への更新：Sling モデル内の静的変数へのインジェクションにより、コンパイルエラーが発生します（SLING-11507）。
-* GRANITE-48452：空の clientlib をステータスコード 200 で送信しています。
-* GRANITE-48410：ResourceResolver が閉じられていません。
-* ASSETS-31297：Dynamic Media からコピーしたアセットを削除できません。
-* ASSETS-30811：連結された Blocktag サービスに対する参照の更新。
-* GRANITE-46418：AEM での Sling イベントの更新：GaugeSupport で registerWithSuffix に無限再帰があります（SLING-11918）。
-* GRANITE-48937：オムニサーチが aem/start.html ページで機能しないメンテナンスリリース 14538 からの回帰を修正します。
+* ASSETS-15977：非推奨（廃止予定）の v1 検索イベントとパイプラインプロデューサーを削除します。
+* ASSETS-18088：バティックライブラリの依存関係を 1.17 にアップグレードします。
+* ASSETS-21965：メタデータの書き戻しワークフローは、アセットメタデータの変更時にのみ起動する必要があります。
+* ASSETS-26368：ジョブ設定が存在しない場合、スケジュールされた一括読み込みジョブは削除されません。
+* ASSETS-26549:「jcr:lastModifiedBy」:「workflow-process-service」を含むアセット/ノードは、リスト表示で「外部ユーザー」として表示されます。
+* ASSETS-26842:「Firefly」テキストを更新して、処理プロファイルの「App Builder」を読み上げました。
+* ASSETS-28708：一部の IMS トークンリクエストの応答が非常に遅くなっています。
+* ASSETS-28767：フォルダーに大きいが含まれている場合、アセットの公開状態が一貫しない。 公開されたアセットの数。
+* ASSETS-29011：読み取り専用ユーザーにはスマート切り抜きが表示されます。
+* ASSETS-29348: AssetMoveEventHandler はメモリを消費しすぎる可能性があります。
+* ASSETS-29738:WOFF ファイルの NullPointerException で、アセットのアップロード制限が失敗する。
+* ASSETS-30068: Asset Essentials の一括読み込みで、「ジョブは完了しましたが、エラーが発生しました」のステータス COMPLETED_WITH_ERROR が含まれます。
+* ASSETS-30261：アセットイベントのパイプラインに送信された imsUserId が正しくありません。
+* ASSETS-30538：ページファイルの移動後に「ページを表示」オプションが表示されないPDF。
+* ASSETS-30626：空の assetId を持つアセットに関して報告された配信リクエストの作成に失敗しました。
+* ASSETS-30756：フォルダー名が「html」で終わると、アセットの移動ウィザードアクションが失敗します。
+* ASSETS-30810：従来の youtube 設定をレンダリングする前に、タグの不要部分を削除します。
+* ASSETS-31015：ファイル名拡張子が.msg のアセットをアップロードできません。
+* ASSETS-31038：通知サービスで受信したタスクイベントは処理されていません。
+* ASSETS-31097：トラバーサルクエリの警告を避けるために、WCM コンテンツの非同期コピーを無効にします。
+* ASSETS-31256:「jcr:lastModifiedBy」:「workflow-process-service」を含むアセット/ノードは、リスト表示で「外部ユーザー」として表示されます。
+* ASSETS-31260：ドロップダウン JSON に大きなリストがある場合、アセットメタデータフォームドロップダウンフィールドが正しく機能しません。
+* ASSETS-31280：コレクションに追加する際に、統合された構造でアセットをダウンロードする。
+* ASSETS-31301: `dynamicmedia_sly.js` は、Use API で正しくインスタンス化できません。
+* ASSETS-31330:ko_KR：字幕およびオーディオトラック内の非ローカライズの文字列。
+* ASSETS-31405：大きなInDesignレイアウトでは、InDesignサーバーの処理が失敗する。
+* ASSETS-31570：統合シェル — アセットの詳細「保存して閉じる」、「キャンセル」ボタンを複数回押して機能させる必要があります。
+* ASSETS-31673：大きなアセットファイルの一括読み込みに失敗しましたDropbox。
+* ASSETS-32108:AEM Assetsが表示設定でユーザー定義のカードサイズを保存しない。
+* ASSETS-32230:com.adobe.aem.repoapi バンドルの最小ランタイムバージョンをアップグレードします。
+* ASSETS-32544：メタデータの書き出しジョブが断続的に失敗する。
+* ASSETS-32679：アセット (PDF) プレビューでのキャッシュの問題。
+* ASSETS-32754：以前にログインしていないユーザーにタスクを割り当てることはできません。
+* ASSETS-32755: com/adobe/cq/dam/assetmove ジョブトピックを、順序付きキューを使用するように設定します。
+* ASSETS-32899：コレクション内の検索が非常に遅い。
+* ASSETS-33098:AEM Assets検索ファセット「タグの述語」が期待どおりに動作しない。
+* ASSETS-33454：レビュータスクアクティビティとコメントがタイムラインに表示されない。
+* ASSETS-34088:PDFのプレビューがAEM Assetsで動作しない。
+* ASSETS-34155:Dynamic Media - AEMビューア/2024.1.0 を更新しました。
+* ASSETS-34684：コンテンツツリーで複数値の dc:title を処理します。
+* ASSETS-34789：ファイル名の競合チェックでの正規化の問題を修正しました。
+* DXML-13276: AEM Guides - GraniteContent のインデックスを統合し、ライブラリから削除します。
+* GRANITE-47995:「cq:isDelivered」プロパティとの競合が原因で削除操作が失敗する場合があります。
+* GRANITE-48079:OAuth オンライントークン検証のPOSTリクエストを有効にします。
+* GRANITE-48143: org.apache.sling.resource を 1.4.4 にアップグレードします。
+* GRANITE-49031: Jackson 2.16.1にアップデート。
+* SCRNS-3961: Screens - Sequence channel：フェードトランジションで使用される Jquery アニメーションは黒い画面になります。
+* SITES-15868：フラグメントを一覧表示する際のパフォーマンスを向上させます。
+* SITES-16079: `/fragments/{id}/references` 重複の返却を開始しました。
+* SITES-16118：フラグメントにパッチが適用され、モデルにフラグメントフィールドがない場合、例外が発生します。
+* SITES-16121：モデル日付フィールドの取得で例外がスローされる。
+* SITES-16207:POST/adobe/sites/cf/models 操作は、2 つの異なる OK ステータスコードを返します。
+* SITES-17361: Jsup を sites-headless バンドルに再埋め込みします。
+* SITES-17768：コンテンツフラグメントで参照されているアセットのDynamic Media URL を出力するGraphQL。
+* SKYOPS-66622: buildTransform が有効なパイプラインの実行後にオーサーデプロイメントがループするとクラッシュする問題を修正しました。
+* SKYOPS-69977：アダプティブ画像サーブレットが最新の更新後に画像を読み込まない。
+* GUIDES-15045：エディターでのスペルチェックで、候補を選択できません。
+* GUIDES-14968：グローバルナビゲーションボタンが機能せず、ダッシュボードの読み込みに失敗する。
+* GUIDES-14943：ネイティブPDFの公開で、条件プリセット内のカスタム属性がネイティブPDFの公開で機能しない。
+* GUIDES-15085：ネイティブPDFの公開で、2023 年 12 月のAdobe Experience Managerガイドのリリースで主要な参照が解決されません。
+* GUIDES-13486: **ベースラインフィルター** ファイルが Web エディタでファイル名で動作しない。
+* 修正された問題の完全なリストについては、 AEMガイドを参照してください。 [AEMガイドの修正された問題](https://experienceleague.adobe.com/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2402-release/fixed-issues-2024-2-0.html?lang=en#release-info)
 
-### 既知の問題 {#known-issues-14697}
+### 既知の問題 {#known-issues-15262}
 
-* GRANITE-49031：一時的なフィールドで `@JsonIgnore` 注釈が無視される回帰が発生しています。
+なし。
 
-### 組み込みテクノロジー {#embedded-tech-14697}
+### 変更通知 {#change-notice-15262}
+
+**アクションが必要です**
+
+今後の変更にはライブラリが必要になります [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) カスタム機能テストで使用され、少なくともバージョンに更新されます **1.2.1**
+
+依存関係を `it.tests/pom.xml` が更新されました。
+
+```xml
+<dependency>
+   <groupId>com.adobe.cq</groupId>
+   <artifactId>aem-cloud-testing-clients</artifactId>
+   <version>1.2.1</version>
+</dependency>
+```
+
+この変更は 2024 年 4 月 7 日以降に必要になります。
+
+依存関係ライブラリの更新に失敗すると、「カスタム機能テスト」手順でパイプラインにエラーが発生します。
+
+### 組み込みテクノロジー {#embedded-tech-15262}
 
 | テクノロジー | バージョン | リンク |
 |---|---|---|
-| AEM OAK | 1.58-T20231123092841-619e1bd | [Oak API 1.58.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.58.0/index.html) |
+| AEM OAK | 1.60-T20240131102219-0cde853 | [Oak API 1.60.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.60.0/index.html) |
 | AEM SLING API | バージョン 2.27.2 | [Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | Version 1.4.20-1.4.0 | [HTML テンプレート言語仕様](https://github.com/adobe/htl-spec) |
 | AEM コアコンポーネント | バージョン 2.23.4 | [AEM WCM コアコンポーネント](https://github.com/adobe/aem-core-wcm-components) |
