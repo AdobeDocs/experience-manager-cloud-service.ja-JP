@@ -3,10 +3,10 @@ title: アダプティブフォーム向けのレコードのドキュメント�
 description: アダプティブフォームコアコンポーネント用のレコードのドキュメント（DoR）のテンプレートを生成する方法を説明します。
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
-source-wordcount: '3108'
-ht-degree: 100%
+source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
+workflow-type: tm+mt
+source-wordcount: '3131'
+ht-degree: 99%
 
 ---
 
@@ -327,6 +327,10 @@ When you select a form model, configure Document of Record using options availab
       * **テンプレート**：カスタムテンプレートを選択する場合は、[!DNL AEM Forms] サーバーで XDP を参照して選択します。お使いの [!DNL AEM Forms] サーバーで利用できないテンプレートを使用する場合は、まず XDP を [!DNL AEM Forms] サーバーにアップロードする必要があります。
       * **アクセントカラー**：レコードのドキュメントの PDF でヘッダーテキストおよび区切り線がレンダリングされる色。
       * **フォントファミリー**：レコードのドキュメントの PDF にあるテキストのフォントファミリー。
+
+        >[!NOTE]
+        >
+        > AEM Formsは、PDFファイルとシームレスに統合できる様々な組み込みフォントを備えています。 サポートされているフォントの一覧を確認するには、 [ここをクリック](/help/forms/supported-out-of-the-box-fonts.md).
 
       * **データモデルにバインドしていないフォームオブジェクトを含める**：このプロパティを設定すると、レコードのドキュメント内のスキーマベースのアダプティブフォームからバインドされていないフィールドが、レコードのドキュメントに追加されます。
 

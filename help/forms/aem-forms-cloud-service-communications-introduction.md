@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
 workflow-type: tm+mt
-source-wordcount: '1429'
-ht-degree: 100%
+source-wordcount: '1452'
+ht-degree: 98%
 
 ---
 
@@ -134,6 +134,10 @@ When such an interactive PDF document is flattened using the Communications APIs
 ### PDF/A 準拠ドキュメントへの変換と PDF/A 準拠ドキュメントの検証
 
 ドキュメント操作 API を使用して、PDF ドキュメントを PDF/A 準拠のドキュメントに変換したり、PDF ドキュメントが PDF/A に準拠しているかどうかを判断したりできます。PDF/A は、ドキュメントのコンテンツを長期保存するためのアーカイブ形式です。フォントはドキュメントに埋め込まれ、ファイルは非圧縮になります。その結果、通常、PDF/A ドキュメントは標準の PDF ドキュメントよりも大きくなります。なお、PDF/A ドキュメントには、オーディオおよびビデオのコンテンツは含まれません。
+
+>[!NOTE]
+>
+> AEM Formsは、PDFファイルとシームレスに統合できる様々な組み込みフォントを備えています。 サポートされているフォントの一覧を確認するには、 [ここをクリック](/help/forms/supported-out-of-the-box-fonts.md).
 
 <!-- 
 

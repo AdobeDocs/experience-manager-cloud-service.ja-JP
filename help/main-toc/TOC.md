@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b2bd6fc61b0d8b79d03ebf9eca7d994a622cc6f2
+source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
 workflow-type: tm+mt
-source-wordcount: '4761'
+source-wordcount: '4768'
 ht-degree: 95%
 
 ---
@@ -694,6 +694,7 @@ ht-degree: 95%
       + [Forms Designer のインストールと設定](/help/forms/installing-configuring-designer.md)
       + [Forms Designer を使用したテンプレートの作成](/help/forms/use-forms-designer.md)
       + [PDF ドキュメントでのカスタムフォントの使用](/help/forms/use-custom-fonts.md)
+      + [サポートされているフォントの一覧 (PDFドキュメント )](/help/forms/supported-out-of-the-box-fonts.md)
       + [既知の問題、ベストプラクティス、よくある質問](/help/forms/communications-known-issues-limitations.md)
    + トランザクションレポート {#using-communications}
       + [トランザクションレポート請求可能 API](/help/forms/transaction-reports-billable-apis.md)
