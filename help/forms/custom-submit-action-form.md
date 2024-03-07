@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
-workflow-type: ht
-source-wordcount: '1670'
-ht-degree: 100%
+source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
+workflow-type: tm+mt
+source-wordcount: '1669'
+ht-degree: 98%
 
 ---
 
@@ -97,7 +97,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 * **addfields.jsp**：このスクリプトは、レンディション中に HTML ファイルに追加されるアクションフィールドを指定します。post.POST.jsp スクリプトでの送信中に必要な非表示の入力パラメーターの追加には、このスクリプトを使用します。
 * **dialog.xml**：このスクリプトは、CQ コンポーネントダイアログに似ています。作成者がカスタマイズする設定情報を提供します。フィールドは、送信アクションを選択するときに、アダプティブフォーム編集ダイアログの送信アクションタブに表示されます。
-* **post.POST.jsp**：送信サーブレットは、送信されたデータおよび前のセクションからの追加データで、このスクリプトを呼び出します。このページで言及されるアクションの実行は、post.POST.jsp スクリプトの実行を意味します。送信アクションをアダプティブフォームに登録し、アダプティブフォーム編集ダイアログに表示するには、次のプロパティを sling:Folder: に追加します。
+* **post.POST.jsp**：送信サーブレットは、送信されたデータおよび前のセクションからの追加データで、このスクリプトを呼び出します。このページで言及されるアクションの実行は、post.POST.jsp スクリプトの実行を意味します。送信アクションをアダプティブFormsに登録してアダプティブフォーム編集ダイアログに表示するには、以下のプロパティを `sling:Folder`:
 
    * 文字列型の **guideComponentType** および値 **fd/af/components/guidesubmittype**
    * 送信アクションが適用されるアダプティブフォームのタイプを指定する文字列型の **guideDataModel**。<!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsdi** は、XSD ベースのアダプティブフォームでサポートされています。**basic** は、XDP または XSD を使用しないアダプティブフォームでサポートされています。複数のタイプのアダプティブフォームでのアクションを表示するには、対応する文字列を追加します。各文字列はカンマで区切ります。例えば、<!--XFA- and -->XSD ベースのアダプティブフォームでアクションを表示するには、値を <!--**xfa** and--> **xsd** に指定します。
