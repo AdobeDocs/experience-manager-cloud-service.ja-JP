@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '652'
 ht-degree: 17%
 
 ---
@@ -31,7 +31,7 @@ AdobeのAEM FormsEdge Delivery Servicesを使用して、フォームの作成�
 
 ![Edge Delivery のアーキテクチャ](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-Edge 配信サービスは、web サイト上のコンテンツの非常に柔軟なオーサリングを可能にする、構成可能なサービスセットです。前述のように、 [AEM content management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=ja) 次を使用 [AEM authoring](/help/implementing/universal-editor/introduction.md) 同様に [ドキュメントベースのオーサリング](https://www.aem.live/docs/authoring)
+Edge 配信サービスは、web サイト上のコンテンツの非常に柔軟なオーサリングを可能にする、構成可能なサービスセットです。AEMコンテンツ管理を [AEM authoring](/help/forms/creating-adaptive-form-core-components.md) 同様に [ドキュメントベースのオーサリング](/help/edge/docs/forms/create-forms.md)
 
 例えば、Microsoft Excel やGoogleシートから直接コンテンツを使用できます。 つまり、これらのソースのコンテンツを Web サイト上のフォームにすることができます。 新しいコンテンツは、再作成プロセスなしで即座に追加されます。
 

@@ -4,10 +4,10 @@ description: このチュートリアルでは、新しいAdobe Experience Manag
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 30dfe0cfd7f845ba7a27699db22f8c4e61a0f7ed
+source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
 workflow-type: tm+mt
-source-wordcount: '1803'
-ht-degree: 0%
+source-wordcount: '1786'
+ht-degree: 1%
 
 ---
 
@@ -65,7 +65,7 @@ AEM Forms Boilerplate テンプレートを使用すると、アダプティブF
    >[!NOTE]
    >
    >
-   > IP フィルタリングで Github Enterprise を使用している場合は、許可リストに次の IP を追加できます。 3.227.118.73
+   > GitHub Enterprise で IP フィルタリングを使用している場合は、に次の IP を追加できま許可リストに加えるす。 3.227.118.73
 
    これですべて完了です。新しい Web サイトがで実行されています `https://<branch>--<repo>--<owner>.hlx.page/`.
 
@@ -79,11 +79,11 @@ AEM Forms Boilerplate テンプレートを使用すると、アダプティブF
 
 ### 独自のコンテンツソースをリンク
 
-新しく作成された GitHub リポジトリがを指している場所は、 [Google Drive フォルダーに保存されたサンプルコンテンツ](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). この読み取り専用コンテンツは、フォームの出発点として最適です。 必要に応じて、自由に独自のGoogle Drive にコピーし、カスタマイズしてください。
+新しく作成した GitHub リポジトリがを指している場所は、 [Google Drive フォルダーに保存されたサンプルコンテンツ](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). この読み取り専用コンテンツは、フォームの出発点として最適です。 必要に応じて、自由に独自のGoogle Drive にコピーし、カスタマイズしてください。
 
 ![Google Drive のサンプルコンテンツ](/help/edge/assets/folder-with-sample-content.png)
 
-サンプルコンテンツを独自のコンテンツフォルダーにコピーし、GitHub リポジトリを独自のコンテンツフォルダーに指すようにするには、次の手順を実行します。
+サンプルコンテンツを独自のコンテンツフォルダーにコピーし、GitHub リポジトリを独自のコンテンツフォルダーに指すには、次の手順を実行します。
 
 1. Google Drive またはMicrosoft SharePointで、AEMコンテンツ専用の新しいフォルダーを作成します。 このドキュメントでは、Microsoft SharePointで作成されたフォルダーを使用します。
 
@@ -106,7 +106,7 @@ AEM Forms Boilerplate テンプレートを使用すると、アダプティブF
 
       ![サンプルコンテンツをダウンロード](/help/edge/assets/download-sample-content.png)
 
-      The `index`, `nav`、および `footer` ファイルはページの基本レイアウトを定義し、プロジェクト全体で変更されることはほとんどありません。 また、他のほとんどのコンテンツファイルとは異なる特定の構造を持っています。 これらのファイルを調べると、AEMプロジェクトでのコンテンツの編成方法を確認できます。
+      The `index`, `nav`、および `footer` ファイルはページの基本レイアウトを定義し、プロジェクト全体で変更されることはほとんどありません。 また、他のほとんどのコンテンツファイルとは異なる特定の構造を持っています。 これらのファイルを調べると、AEM Projects でのコンテンツの編成方法を確認できます。
 
 
    1. これらのファイルをMicrosoft SharePointまたはGoogle Drive フォルダーにアップロードします。
@@ -168,7 +168,7 @@ AEM Forms Boilerplate テンプレートを使用すると、アダプティブF
 
    ![AEM Sidekick — プロジェクトを追加](/help/edge/assets/aem-sidekick-add-a-project.png)
 
-   拡張機能がインストールされ、プロジェクトが追加され次第、Google Drive からコンテンツをプレビューして公開する準備が整います。
+   拡張機能がインストールされ、プロジェクトが追加されたら、Google Drive でコンテンツをプレビューして公開する準備が整いました。
 
 1. Microsoft SharePointまたはGoogle Drive フォルダー内のすべてのドキュメントを選択します。 Ctrl キー (Windows/Linux) または Cmd キー (Mac) を押しながらクリックすると、複数のドキュメントを選択できます。
 
@@ -281,7 +281,7 @@ AEM Forms Boilerplate テンプレートを使用すると、アダプティブF
 「モジュール「../../scripts/lib-franklin.js」へのパスを解決できません」というエラーが発生した場合は、 [EDS プロジェクト]/blocks/forms/form.jsファイルを参照してください。 lib-franklin.js ファイルを aem.js ファイルに置き換えて、import 文を更新します。
 
 * **リントエラーを処理：**
-リントエラーが発生した場合は、それらを回避できます。 を開きます。 [EDS プロジェクト]/package.jsonファイルを編集し、&quot;lint&quot;スクリプトを&quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot;から&quot;lint&quot;: &quot;echo &#39;今すぐのリントをスキップ&#39;&quot;に変更します。 ファイルを保存し、変更を GitHub プロジェクトにコミットします。
+リントエラーが発生した場合は、それらを回避できます。 を開きます。 [EDS プロジェクト]/package.jsonファイルを編集し、次の「lint」スクリプトを変更します。 `"lint": "npm run lint:js && npm run lint:css"` から `"lint": "echo 'skipping linting for now'"`. ファイルを保存し、変更を GitHub プロジェクトにコミットします。
 
 
 ## 関連トピック
@@ -289,9 +289,4 @@ AEM Forms Boilerplate テンプレートを使用すると、アダプティブF
 * [Google Sheet またはMicrosoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
 * [Microsoft Excel またはGoogleシートに直接フォームを送信する](/help/edge/docs/forms/submit-forms.md)
 * [フォームの外観を変更する](/help/edge/docs/forms/style-theme-forms.md)
-
-
-
-
-
 
