@@ -4,10 +4,10 @@ description: このチュートリアルでは、新しいAdobe Experience Manag
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 30dfe0cfd7f845ba7a27699db22f8c4e61a0f7ed
 workflow-type: tm+mt
-source-wordcount: '1770'
-ht-degree: 1%
+source-wordcount: '1803'
+ht-degree: 0%
 
 ---
 
@@ -198,31 +198,29 @@ AEM Forms Boilerplate テンプレートを使用すると、アダプティブF
 
    [https://main—wefinance—wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
 
-### フォームを更新
+### フォームの作成
 
-1. Microsoft SharePointまたはGoogle Drive フォルダーに移動します。
+サンプルコンテンツには、「問い合わせ」フォームのテンプレートとして機能する「問い合わせ」シートが含まれています。 シートの各行は、 [フォームフィールド](/help/edge/docs/forms/form-components.md#available-components)を定義し、列ヘッダーによって [フィールドプロパティ](/help/edge/docs/forms/form-components.md#available-components). このサンプルフォームを使用すると、フォームの作成を簡単に開始できます。
 
-1. `enquiry.xlsx` を開いて編集します。
+![問い合わせフォーム](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-   ![問い合わせフォーム](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+まず、フィールドラベルを更新します。 「問い合わせ」シートを編集用に開き、送信ボタンのラベルをに変更します。 `Let's Chat`をクリックし、サイドキックを使用してパブリッシュします。
 
-1. 送信ボタンのラベルをに変更します。 `Let's Chat`.
+![問い合わせフォーム](/help/edge/assets/enquiry-form-preview-publish.png)
 
-   ![問い合わせフォーム](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
-
-1. AEM Sidekickを使用した `enquiry.xlsx` ファイル。
-
-   ![問い合わせフォーム](/help/edge/assets/enquiry-form-preview-publish.png)
-
-1. 問い合わせフォームをプレビューするには、次の URL に移動します。
+更新された問い合わせフォームをプレビューするには、次の URL に移動します。
 
 
-   ```HTML
-   https://<branch>--<repository>--<owner>.hlx.page/enquiry
-   ```
+```HTML
+    https://<branch>--<repository>--<owner>.hlx.page/enquiry
+       
+```
 
-   送信ボタンのラベルが更新されます。 次に、フォームに入力して送信ボタンをクリックすると、スプレッドシートが次のようなエラーが発生します。これは、スプレッドシートが [まだデータを受け入れるように設定する](/help/edge/docs/forms/submit-forms.md).
+送信ボタンのラベルがに更新されます。 `Let's Chat`.
 
+![問い合わせフォーム](/help/edge/assets/updated-form.png)
+
+新しいフォームの作成と公開について詳しくは、 [フォームの作成](/help/edge/docs/forms/create-forms.md) ガイド。
 
 ### スタイルと機能の開発を開始する
 
