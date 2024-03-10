@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ca65bb637c70e35ff7d7749ed7e1e66e11cdb315
+source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
 workflow-type: tm+mt
-source-wordcount: '4774'
+source-wordcount: '4776'
 ht-degree: 95%
 
 ---
@@ -823,6 +823,7 @@ ht-degree: 95%
    + Building Edge Delivery Forms {#build-forms}
       + [概要](/help/edge/docs/forms/overview.md)
       + はじめに {#getting-started-eds-forms}
+         + [はじめに](/help/edge/docs/forms/tutorial.md)
          + [フォームの作成とプレビュー](/help/edge/docs/forms/create-forms.md)
          + [フォームからデータを送信できるようにする](/help/edge/docs/forms/submit-forms.md)
          + [サイトページにフォームを発行する](/help/edge/docs/forms/publish-forms.md)

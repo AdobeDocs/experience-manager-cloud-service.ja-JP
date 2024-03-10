@@ -4,13 +4,13 @@ description: クラフトパーフェクトフォーム、高速！ ⚡ AEM Form
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
+source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 2%
+source-wordcount: '845'
+ht-degree: 1%
 
 ---
-
 
 # アダプティブフォームブロックを使用したフォームの作成
 
@@ -27,43 +27,48 @@ AEM Forms Edge Delivery には、アダプティブフォームブロックと�
 
 開始する前に、次の手順が完了していることを確認します。
 
-* AEMボイラープレートを使用して Edge Delivery Service(EDS)GitHub プロジェクトを設定し、対応する GitHub リポジトリのクローンをローカルマシンに作成します。 詳しくは、 [開発者向けチュートリアル](https://www.aem.live/developer/tutorial) 」を参照してください。 このドキュメントでは、Edge Delivery Service(EDS) プロジェクトのローカルフォルダーを `[EDS Project repository]` .
+* を設定します。 [AEM Forms BoilerPlate を使用したAEMプロジェクト](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) または [アダプティブフォームブロックを既存のAEMプロジェクトに追加する](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 対応する GitHub リポジトリをローカルマシンに複製します。
+このドキュメントでは、Edge Delivery Services(EDS) プロジェクトのローカルフォルダーを `[EDS Project repository]` .
 * Google Sheet またはMicrosoft SharePointへのアクセス権があることを確認します。 Microsoft SharePointをコンテンツソースとして設定するには、 [SharePoint の使用方法](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
 ## フォームの作成
 
-+++ 手順 1：アダプティブフォームブロックを Edge Delivery Service(EDS) プロジェクトに追加します。
+<!-- 
 
-アダプティブを使用すると、ユーザーはエッジ配信サービスサイトのフォームを作成できます。 ただし、このブロックは、デフォルトのAEMボイラープレート（Edge Delivery Service プロジェクトの作成に使用）には含まれていません。 アダプティブフォームブロックを Edge 配信サービスプロジェクトにシームレスに統合するには、次の手順を実行します。
++++ Step 1: Add the Adaptive Form Block to your Edge Delivery Services (EDS) project.
 
-1. **アダプティブフォームブロックリポジトリの複製**：を複製します。 [アダプティブフォームブロックリポジトリ](https://github.com/adobe/afb) ローカルマシン上にある。 EDS Web ページ上でフォームをレンダリングするコードを含みます。 このドキュメントでは、Formsブロックリポジトリのローカルフォルダーを `[Adaptive Form Block repository]`.
-1. **アダプティブフォームブロックリポジトリを探します。** 次にアクセス： [アダプティブフォームブロックリポジトリ]/blocks フォルダーをローカルマシン上に置き、 `form` フォルダー。
-1. **アダプティブフォームブロックを EDS プロジェクトに貼り付けます。**
-次に移動： [EDS プロジェクトリポジトリ]/blocks/フォルダーをローカルマシンに貼り付け、フォームフォルダーを貼り付けます。
-1. **変更を GitHub にコミット：** フォームフォルダーとその基になるファイルを、GitHub の Edge Delivery Service プロジェクトにチェックインします。
+The Adaptive  empowers users to create forms for an Edge Delivery ServicesSite. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Services project). To seamlessly integrate the Adaptive Form Block into your Edge Delivery Services project:
 
-これらの手順を完了すると、アダプティブフォームブロックが GitHub の Edge Delivery Service(EDS) プロジェクトリポジトリに正常に追加されます。 EDS サイトページにフォームを作成し、追加できるようになりました。
+1. **Clone the Adaptive Form Block repository**: Clone the [Adaptive Form Block repository](https://github.com/adobe-rnd/form-block) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Form Block repository]`.
+1. **Locate the Adaptive Form Block Repository:** Access the [Adaptive Form Block repository]/blocks/src folder and copy its content. 
 
+1. on your local machine and copy the `form` folder. 
+1. **Paste the Adaptive Form Block's code into your EDS Project:**
+Navigate to the [EDS Project repository]/blocks/ folder on your local machine and create a 'form' folder. Paste the `[Adaptive Form Block repository]/blocks/src content`, copied in perevious step to the `[EDS Project repository]/blocks/form` folder.
+1. **Commit Changes to GitHub:** Check in the `[EDS Project repository]/blocks/form` folder and its underlying files to your Edge Delivery Services project on GitHub.
 
-**GitHub ビルドの問題のトラブルシューティング**
+After completing these steps, the Adaptive Form Block is successfully added to your Edge Delivery Services (EDS) project repository on GitHub. You can now create and add forms to a EDS Sites page.
+ 
 
-潜在的な問題に対処し、GitHub のビルドプロセスをスムーズに進めます。
+**Troubleshooting GitHub build issues**
 
-* **モジュールパスの解決エラー：**
-「モジュール「../../scripts/lib-franklin.js」へのパスを解決できません」というエラーが発生した場合は、 [EDS プロジェクト]/blocks/forms/form.jsファイルを参照してください。 lib-franklin.js ファイルを aem.js ファイルに置き換えて、import 文を更新します。
+Ensure a smooth GitHub build process by addressing potential issues:
 
-* **リントエラーを処理：**
-リントエラーが発生した場合は、それらを回避できます。 を開きます。 [EDS プロジェクト]/package.jsonファイルを編集し、&quot;lint&quot;スクリプトを&quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot;から&quot;lint&quot;: &quot;echo &#39;今すぐのリントをスキップ&#39;&quot;に変更します。 ファイルを保存し、変更を GitHub プロジェクトにコミットします。
+* **Resolve Module Path Error:**
+    If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
-
+* **Handle Linting Errors:**
+    Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project.
 
 +++
 
-+++ 手順 2:Microsoft Excel またはGoogleシートを使用してフォームを作成する。
+-->
 
-複雑なプロセスを進める代わりに、スプレッドシートを使用してフォームを簡単に作成できます。 まず、行と列のヘッダーをスプレッドシートに追加します。スプレッドシートの各行はフォームフィールドを表し、各列ヘッダーは対応するフィールドのプロパティを定義します。
++++ 手順 1:Microsoft Excel またはGoogleシートを使用してフォームを作成する。
+
+複雑なプロセスを進める代わりに、スプレッドシートを使用してフォームを簡単に作成できます。 フォーム構造を構成する行と列を定義できます。 各行は、個々の [フォームフィールド](/help/edge/docs/forms/form-components.md#available-components) 列ヘッダーは、対応する [フィールドプロパティ](/help/edge/docs/forms/form-components.md#components-properties).
 
 例えば、行が `enquiry` フォームヘッダーと列ヘッダーは、プロパティを定義します。
 
@@ -96,7 +101,7 @@ AEM Forms Edge Delivery には、アダプティブフォームブロックと�
 
 
    ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form>.json
+       https://<branch>--<repository>--<owner>.hlx.live/<form-path>/<form-file-name>.json
    ```
 
    * `<branch>` は、GitHub リポジトリのブランチを参照します。
@@ -110,7 +115,7 @@ AEM Forms Edge Delivery には、アダプティブフォームブロックと�
 
 +++
 
-+++ 手順 3:Edge Delivery Service(EDS) ページを使用してフォームをプレビューします。
++++ 手順 2:Edge Delivery Services(EDS) ページを使用してフォームをプレビューする。
 
 
 これまで、アダプティブフォームブロックを EDS プロジェクトに追加し、フォームの構造を準備しました。 次に、フォームをプレビューします。
@@ -121,7 +126,7 @@ AEM Forms Edge Delivery には、アダプティブフォームブロックと�
 
 1. **目的の場所に移動します。** フォームを追加するドキュメント内の目的の場所に移動します。
 
-1. **アダプティブフォームブロックを追加します。** 次の図に示すように、ファイルに「Form」という名前のブロックを挿入します。
+1. **アダプティブフォームブロックを追加します。** フォームをレンダリングするフォームブロックを作成する場合。 挿入/テーブルを選択し、1 列 2 行のテーブルを作成します。 テーブルに「Form」という名前を付け、2 行目にプレビュー URL を貼り付けます。 URL がプレーンテキストではなく、ハイパーリンクとしてフォーマットされていることを確認します（下図を参照）。
 
    | フォーム |
    |---|
@@ -153,12 +158,3 @@ AEM Forms Edge Delivery には、アダプティブフォームブロックと�
 
 
 
-## 詳細を表示する
-
-* [フォームコンポーネント](/help/edge/docs/forms/form-components.md)
-* [フォームフィールドのプロパティ](/help/edge/docs/forms/eds-form-field-properties)
-* [フォームの作成とプレビュー](/help/edge/docs/forms/create-forms.md)
-* [フォームからデータを送信できるようにする](/help/edge/docs/forms/submit-forms.md)
-* [サイトページにフォームを発行する](/help/edge/docs/forms/publish-forms.md)
-* [フォームフィールドに検証機能を追加する](/help/edge/docs/forms/validate-forms.md)
-* [フォームのテーマとスタイルを変更する](/help/edge/docs/forms/style-theme-forms.md)

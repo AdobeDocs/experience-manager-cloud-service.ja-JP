@@ -1,130 +1,134 @@
 ---
-title: AEM Forms Edge Delivery Service の概要
-description: AEM Forms Edge Delivery Service は、効率化されたデータ収集とユーザーエンゲージメントの将来を想定できるように、最高のパフォーマンス向けに構築されています。
+title: AEM FormsEdge Delivery Servicesの概要
+description: AEM FormsEdge Delivery Servicesは、効率的なデータ収集とユーザーエンゲージメントの将来を想像できるように、ピークパフォーマンスを実現するために構築されています。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d63d0f1152d0a23623c197924a44bc6b1e69fb42
+exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
+source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 0%
+source-wordcount: '662'
+ht-degree: 17%
 
 ---
 
+# AEM FormsEdge Delivery Services
 
-# AEM Forms Edge Delivery Service
-
-AdobeのAEM Forms Edge Delivery Service を使用して、フォームの作成を合理化し、完了率を高めます。 この強力で合成可能なサービスにより、優れたパフォーマンスと視覚的な魅力を備えたエンタープライズクラスのフォームを構築できます。 AEMは、ユーザーエクスペリエンスとビジネス目標の両方を優先し、超高速読み込み時間とフォームの完了を確保します。
+AdobeのAEM FormsEdge Delivery Servicesを使用して、フォームの作成を合理化し、完了率を高めます。 これらの強力で合成可能なサービスにより、優れたパフォーマンスと視覚的な魅力を備えたエンタープライズクラスのフォームを構築できます。 AEMは、ユーザーエクスペリエンスとビジネス目標の両方を優先し、超高速読み込み時間とフォームのコンバージョンの向上を保証します。
 
 サービスを使用して以下のことが行えます。
 
-* **見事なフォームを持つCaptivateユーザー**：事前に作成されたコンポーネントのライブラリを使用して、複雑で魅力的なフォームを簡単に作成できます。 reCAPTCHA の統合、電子メールへの直接の送信、シームレスなファイルアップロードを可能にし、SharePoint、Azure Storage、Amazon S3 などのセキュリティで保護されたストレージソリューションを実現します。 独自のカスタムフォームコンポーネントを作成して、独自のビジョンを生み出すこともできます。
+* **優れた登録エクスペリエンスの構築**：低速なインターネット接続でも、すばやく読み込んでレンダリングする登録エクスペリエンスを構築します。 読み込み時間の短縮と最適化されたユーザーエクスペリエンスは、フォームの完了率の向上とコンバージョン率の向上に貢献します。
 
-* **お好みのツールでデジタル登録エクスペリエンスを作成**：コンテンツソースを分離することで、オーサリングの効率を向上させます。 標準では、ドキュメントベースのオーサリング (Microsoft 365 およびGoogle Workspace) とAEMのオーサリング (AEMエディター ) の両方を使用できます。 そのため、同じ Web サイト上で複数のコンテンツソースを操作し、Microsoft Excel、Googleシート、アダプティブFormsエディターなどの好みのオーサリングツールを使用できます。
+* **任意のツールを使用して登録エクスペリエンスを作成**：コンテンツソースを分離することで、オーサリングの効率を向上させます。 標準では、 **ドキュメントベースのオーサリング** (Microsoft SharePointまたはGoogle Drive) および **AEM authoring** ( アダプティブFormsエディター )。 そのため、同じフォーム上で複数のコンテンツソースを操作し、Microsoft Excel、Googleシート、アダプティブFormsエディターなどの好みのオーサリングツールを使用できます。
 
-* **完璧な Lighthouse スコアを持つフォームの作成**：低速なインターネット接続でも、すばやく読み込んでレンダリングするフォームを構築します。 読み込み時間の短縮と最適化されたユーザーエクスペリエンスは、フォームの完了率の向上とコンバージョン率の向上に貢献します。
-
-  <div>
-    <style>
-    .image-container {
-    text-align: center; 
-    }
-    .image-container img {
-        width: 100%; /* Set image width to 100% of the container 
-    }
-</style>
-    <div class="image-container">
-    <img src="/help/edge/assets/eds-forms-key-features.png" alt="EDS Formsの主な機能">
-    </div>
+* **開発者向けのツールセットを使用：** AEM Formsは、プレーンHTML、最新の CSS、Vanilla JavaScript を使用して、通常のオーバーヘッドなしで例外的なエクスペリエンスを作成します。 HTML、CSS および JS の基本的な知識を持つ開発者は、独自のコンポーネントを構築でき、特定の言語やフレームワークを学ぶ必要はありません。 パイプラインや待機は不要です。コードを GitHub にチェックインすると、変更は有効になります。 さらに、パイプラインや待機は必要ありません。コードを GitHub にチェックインすると、変更が反映されます。
 
 
-</div>
+## AEM FormsEdge Delivery Servicesの概要 {#edge-overview}
 
-<!--
+次の図は、Microsoft Excel またはGoogleシート（ドキュメントベースの編集）でコンテンツを編集し、Edge Delivery Servicesに公開する方法を示しています。 また、アダプティブFormsエディターを使用したAEMの公開方法も表示されます。
 
-<!--
+![Edge Delivery のアーキテクチャ](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-    ![Enrollment forms](/help/edge/assets/enrollment-form.png)
+Edge 配信サービスは、web サイト上のコンテンツの非常に柔軟なオーサリングを可能にする、構成可能なサービスセットです。前述のように、 [AEM content management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=ja) 次を使用 [AEM authoring](/help/implementing/universal-editor/introduction.md) 同様に [ドキュメントベースのオーサリング](https://www.aem.live/docs/authoring)
 
-* **Build forms with perfect lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
+例えば、Microsoft Excel やGoogleシートから直接コンテンツを使用できます。 つまり、これらのソースのコンテンツを Web サイト上のフォームにすることができます。 新しいコンテンツは、再作成プロセスなしで即座に追加されます。
 
-    ![perfect lighthouse score for your forms](/help/edge/assets/lighthouse-forms.png)
+Edge 配信サービスでは GitHub を利用しているので、ユーザーは自分の GitHub リポジトリから直接コードを管理およびデプロイできます。例えば、GoogleシートまたはMicrosoft Excel でフォームを作成し、GitHub で CSS と JavaScript を使用してフォームのコンポーネントを開発することができます。 準備が整ったら、Sidekick ブラウザー拡張機能を使用して、コンテンツの更新をプレビューおよび公開できます。
 
-* **Create digital enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or AEM Editors.
+AEM FormsEdge Delivery Servicesは、 [アダプティブFormsブロック](/help/edge/docs/forms/create-forms.md) をクリックして、フォームをEdge Delivery Servicesサイトに追加します。
 
-    ![Edge Delivery forms authoring tools](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
-    
-<!--
-* **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
+### AEM FormsEdge Delivery Servicesの主な機能
 
-* **Use Integrated services:** Use integrated services to streamline and empowers your users with a one-stop shop for managing their digital enrollment journeys. Use e-signatures, automated workflows, document of record (DoR), and seamless data integration, simplify the entire digital enrollment process, accelerate approvals, and optimizes your business workflows. 
+ドキュメントベースのオーサリング基本的な一連の機能とAEMのオーサリングでは、ドキュメントベースのオーサリング以外の追加機能がロック解除され、より複雑でインタラクティブなフォームを構築できます。 次の表は、両方の主な機能を示しています。
 
-    
-    >[!NOTE]
-    >[!NOTE]
-    >
-    >
-    > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
+<!-- 
 
-    -->
+>[!BEGINTABS]
 
-## 主な機能
+>[!TAB Document-based authoring]
 
-* **HTML5 ベースのフォームフィールドコンポーネント**:AEM Forms Edge Delivery Service を使用すると、HTML5 に基づくフォームコンポーネントを使用して、使いやすくインタラクティブなフォームを作成できます [入力タイプ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選択</a>、および <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  要素。 これらのコンポーネントは、様々なタイプのデータ収集に対応し、特定のニーズに合わせて容易にカスタマイズできます。
+Document-based authoring is a versatile option suitable for creating simple forms with essential functionalities. It allows you to integrate various input types like text fields, dropdown menus, and radio buttons, enabling you to collect user data effectively. It offers a basic version of rules to add dynamic behaviour to forms. Key features of Document-based authoring are: 
 
-* **アクセシビリティ**：フォームブロック内のフィールドにアクセスできます。 各ラベルはそれぞれの入力要素にリンクされ、ID はリンク用に自動生成されます。 フィールドに関連付けられている説明は、 aria-describbedby 属性でリンクされます。 標準の Tab/Shift + Tab キーを使用したキーボードナビゲーションがサポートされています。
+* **[HTML5-based Form Field components](/help/edge/docs/forms/form-components.md)**: AEM Forms Edge Delivery Services allow you to create user-friendly and interactive forms using form components based on HTML5 [input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  elements. These components cater to different types of data collection and can be easily customized to fit your specific needs.  
 
-* **スタイル設定**：各フォームフィールドは固定のHTML構造を持ち、カスタム CSS または JavaScript ファイルを使用して簡単に装飾できます。 CSS および JS のターゲティングフィールドのセレクターは、タイプと名前に基づいて提供されます。 標準化された構造により、新しいセレクターを簡単に作成できます。
+* **Accessibility**: The fields in the form block are accessible. Each label is linked with its respective input element, and IDs are auto-generated for linking. Descriptions associated with fields are linked via the aria-describedby attribute. Keyboard navigation using the standard Tab/Shift + Tab keys is supported.
 
-* **ルール**：ユーザー入力または事前定義された条件に基づいてフィールドの表示、検証および動作を調整するロジックを簡単に作成できます。 ルールは、フォームにインテリジェンスを追加する柔軟で直感的な方法を提供し、ユーザーの入力に基づいてシームレスに適応させます。
+* **[Styling](/help/edge/docs/forms/style-theme-forms.md)**: Each form field has a fixed HTML structure that can be easily decorated using custom CSS or JavaScript files. Selectors for targeting fields in CSS and JS are provided based on type and name. You can easily create new selectors due to the standradized structure and style your form. 
 
-* **検証**：送信前にフォームは検証され、無効なフィールドにはユーザーに表示されるエラーメッセージが適切にマークされます。 これらのエラーの表示には、様々なパターンを使用できます。
+* **Basic Rules**: Easily create logic that adjusts field visibility, validation, and behavior based on user input or predefined conditions. Rules offer a flexible and intuitive way to add intelligence to your forms, ensuring they adapt seamlessly based on user inputs.
 
-リクエストに応じて使用できる高度な機能がいくつかあります。
+* **Validations**: Before submission, the form is validated, and invalid fields are appropriately marked with error messages displayed to the user. Adaptive Forms block support all the HTML form validation, supported by modern browsers, and provide additional validation mechanism like validation script, file size, file type, overall file size, and more. 
 
-* **ファイルのアップロード**：フォームにファイル添付機能を追加できます。 ユーザーからドキュメント、画像、その他のファイルを収集する必要がある場合でも、ファイルのアップロード機能を使用すると簡単にできます。 カスタム処理オプションを使用できるので、特定の要件に合わせてファイルのアップロードプロセスを調整できます。
+* **File Uploads**: You can add file attachment capabilities to your forms. Whether you need to gather documents, images, or other files from your users, file upload functionality serves you effortlessly. With custom handling options available, you can tailor the file upload process to suit your specific requirements.
 
-* **reCAPTCHA**：標準 (OOTB) のサポートにより、Google reCAPTCHA をフォームにシームレスに統合できるメリットが得られます。 スムーズで中断のないユーザーエクスペリエンスを維持しながら、フォームを不正なアクティビティ、スパム、不正使用から保護します。
+* **reCAPTCHA**: Benefit from seamless integration of Google reCAPTCHA into your forms with our out-of-the-box (OOTB) support. Safeguard your forms against fraudulent activities, spam, and abuse, while maintaining a smooth and uninterrupted user experience. Adaptive Forms block supports reCaptcha V3 and reCaptcha Enterprise. 
 
-* **フォーム送信時に電子メール通知を送信する**：手動でのフォローアップの手間を省き、組み込みの電子メール自動化機能とのタイムリーな通信を確保して、フォーム送信を可能にします。 この統合ソリューションを使用すると、誰かが Web サイト上のフォームに入力したときに、フォームデータの送信を含む関係者に簡単に通知できます。 複雑な設定や追加のツールは不要で、すぐに使用できます。
+* **Send email notification on form submission**: Eliminate the hassle of manual follow-ups and ensure timely communication with our built-in email automation for form submissions. This integrated solution lets you effortlessly notify relevant parties, including sending form data, whenever someone fills out a form on your website. No need for complex configurations or additional tools – it's ready to use out of the box.
+
+>[!TAB AEM Authoring]
+
+AEM Authoring unlocks additional capabilities beyond the document-based authoring, empowering you to build more complex and interactive forms. In additon to the features of Document-based authoring, AEM authoring offers the following additional features:  
+
+* Advanced Rules: Define logic-based actions within your forms. You can use rules to conditionally show or hide form sections, pre-populate fields based on user input, and perform various validations to ensure data integrity.
+
+* Server-side extensibility: Extend the functionalities of your forms by integrating them with server-side logic. This allows you to perform complex calculations, interact with external systems, and automate specific tasks based on user actions within the form.
+* Streamline workflows and data management: Leverage the power of AEM to:
+    * Design user-friendly forms using AEM editors.
+    * Generate a "Document of Record" for secure and tamper-proof archiving of submitted data.
+    * Facilitate e-signing with Adobe Sign for a smooth and secure signing experience.
+    * Automate business processes through AEM workflows, triggering actions based on form submissions.
+    * Effortlessly integrate with various data sources, enabling seamless data flow and exchange.
+
+>[!ENDTABS]
 
 
-## 使用可能なFormsブロック
 
-AEM Forms Edge Delivery Service は、様々なニーズに対応する 2 種類のフォームブロックを提供します。
+## Start creating forms
 
-* **基本Formsブロック**：これは、基本的な機能を持つシンプルなフォームを作成するのに適した、汎用性の高いオプションです。 テキストフィールド、ドロップダウンメニュー、ラジオボタンなど、様々な入力タイプを統合し、ユーザーデータを効果的に収集できます。
+-->
 
-* **アダプティブFormsブロック**：この高度なブロックを使用すると、基本のFormsブロック以外の追加機能のロックを解除でき、より複雑でインタラクティブなフォームを作成できます。 主な機能の分類を次に示します。
-
-   * ルール：フォーム内で論理ベースのアクションを定義します。 ルールを使用して、条件付きでフォームセクションの表示/非表示を切り替えたり、ユーザー入力に基づくフィールドの事前入力を行ったり、様々な検証を実行してデータの整合性を確保したりできます。
-
-   * サーバー側の拡張：フォームをサーバー側のロジックと統合して、フォームの機能を拡張します。 これにより、複雑な計算の実行、外部システムとのやり取り、およびフォーム内のユーザーアクションに基づく特定のタスクの自動化が可能になります。
-
-   * クロスウォーク：ワークフローとデータ管理を合理化： AEMの機能を活用して、以下を実現します。
-
-      * AEMエディターを使用して、使いやすいフォームをデザインします。
-
-      * 送信されたデータを安全かつ改ざん防止でアーカイブするための「レコードのドキュメント」を生成します。
-
-      * Adobe Signでの電子署名を容易にし、スムーズで安全な署名を実現します。
-
-      * AEMワークフローを通じてビジネスプロセスを自動化し、フォーム送信に基づいてアクションをトリガーします。
-
-      * 様々なデータソースと容易に統合でき、シームレスなデータフローと交換が可能です。
-
-  アダプティブFormsブロックを使用するには、追加のライセンスが必要です。
-
-### 適切なFormsブロックの選択
-
-「基本」ブロックと「アダプティブFormsブロック」ブロックの選択は、具体的な要件に応じて異なります。 基本的なユーザー情報を収集するための簡単なソリューションが必要な場合、Basic Forms Block は最適です。 ただし、フォームで複雑なロジック、データ操作、外部システムとの統合、AEMの機能を使用した合理化されたワークフローが必要な場合は、 **必要なライセンスを持っています**&#x200B;アダプティブFormsブロックは、目標を達成するために必要な能力と柔軟性を提供します。
+|                                           | ドキュメントベースのオーサリング | AEMオーサリング ( アダプティブFormsエディター ) |
+| ----------------------------------------- | ------------------------ | ------------------------------------ |
+| **フォーム機能** |                          |                                      |
+| アクセシブルなコンポーネント | ✓ | ✓ |
+| 標準化されたHTML構造 | ✓ | ✓ |
+| ルールと検証 | ✓ | ✓ |
+| 添付ファイル（ファイルのアップロード） | ✓ | ✓ |
+| Google reCAPTCHA | ✓ | ✓ |
+| カスタムコンポーネント | ✓ | ✓ |
+| 電子メールに送信 | ✓ | ✓ |
+| **高度な機能** |                          |                                      |
+| ビジュアルルールエディターを使用した高度なルール |                          | ✓ |
+| サーバー側の拡張機能 |                          | ✓ |
+| 複数の送信アクション |                          | ✓ |
+| **フォームデザインと管理** |                          |                                      |
+| WYSIWYG 編集用のアダプティブFormsエディター |                          | ✓ |
+| **統合** |                          |                                      |
+| レコードのドキュメント |                          | ✓ |
+| Adobe Sign との統合 |                          | ✓ |
+| Adobe Analyticsとの統合 |                          | ✓ |
+| Marketoとの統合 |                          | ✓ |
+| 複数のデータソースとの統合 |                          | ✓ |
+| 複数の送信アクション |                          | ✓ |
 
 
 ## フォームの作成を開始
 
+* [はじめに — 開発者向けチュートリアル](/help/edge/docs/forms/tutorial.md)
+* [Google Sheet またはMicrosoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
+* [Microsoft Excel またはGoogleシートに直接フォームを送信する](/help/edge/docs/forms/submit-forms.md)
+* [フォームの外観を強化：スタイル設定のガイド](/help/edge/docs/forms/style-theme-forms.md)
+
+
+<!-- 
+
+## Start creating forms
+
 <div>
 
-<style>
+  <style>
     .card-container {
         width: calc(33.33% - 10px);;
         margin: 5px;
@@ -142,66 +146,66 @@ AEM Forms Edge Delivery Service は、様々なニーズに対応する 2 種類
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
-            <img src="/help/edge/assets/smock_devices_18_n.svg" alt="eds フォームを使用したフォームの作成" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Google Sheet またはMicrosoft Excel を使用したフォームの作成</b>
+            <img src="/help/edge/assets/smock_devices_18_n.svg" alt="Create a form using eds forms" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Create a form using Google Sheets or Microsoft Excel</b>
         </a>
-        <p>モバイルデバイスで読み込んで自動的にレンダリングするフォームを作成します。</p>
+        <p>Create forms that load and render quickly and automatically reflows on mobile devices.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
-            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="フォームを送信" alt="EDS フォームでのフォームフラグメントの使用" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">フォームをスプレッドシートに送信</b>
+            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Submit form" alt="Use Form Fragments in an EDS Form" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Submit form to spreadsheet</b>
         </a>
-        <p>フォームをMicrosoft Excel またはGoogleシートに直接送信する。</p>
+        <p>Submit forms directly to your Microsoft Excel or Google Sheets.</p>
     </div>
      <div class="card-container">
         <a href="/help/edge/docs/forms/style-theme-forms.md">
-            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="スタイルまたはテーマを eds フォームに適用する" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">テーマのカスタマイズ</b>
+            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Apply styles or themes to an eds form" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Customize a theme</b>
         </a>
-        <p>同じテーマを複数のフォームに適用して、一貫したブランドイメージを作成します。</p>
+        <p>Create a consistent brand image by applying the same theme across forms.</p>
     </div>
       <div class="card-container">
         <a href="/help/edge/docs/forms/validate-forms.md">
-            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="フォームフィールドに検証機能を追加する" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">フィールド検証を適用</b>
+            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="Add validations to form fields" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Apply field validations</b>
         </a>
-        <p>フォーム入力で適切な形式を確認することで、エラーと不満を減らすことができます。</p>
+        <p>Reduce errors and frustration by checking form inputs for proper formatting.</p>
     </div> 
             <div class="card-container">
         <a href="/help/edge/docs/forms/rules-forms.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="ルールを使用してフォームに動的な動作を追加する" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">ルールを使用してフォームに動的な動作を追加する</b>
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Use rules to add dynamic behaviour to a form" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Use rules to add dynamic behaviour to a form</b>
         </a>
-        <p>複数のフォーム間で事前設定済みのフラグメントを再利用する。</p>
+        <p>Reuse preconfigured fragments across multiple forms.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
-            <img src="/help/edge/assets/smock_abc_18_n.svg" alt="EDS フォームの翻訳" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">フォームの翻訳</b>
+            <img src="/help/edge/assets/smock_abc_18_n.svg" alt="Translate an EDS Form" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Translate a form</b>
         </a>
-        <p>コストを抑えながら、フォームのリーチを拡大します。</p>
+        <p>Extend the reach of your forms while keeping costs in check.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/repeatable-forms.md">  
-            <img src="/help/edge/assets/smock_addto_18_n.svg" alt="EDS フォームに繰り返し可能なセクションを追加" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">繰り返し可能なセクションの追加</b>
+            <img src="/help/edge/assets/smock_addto_18_n.svg" alt="Add repeatable sections to an EDS Form" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Add repeatable sections</b>
         </a>
-        <p>繰り返し可能なセクションを容易に作成し、フォームに追加できます。</p>
+        <p>Effortlessly create and add repeatable sections to a form.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/custom-components-forms.md"> 
-            <img src="/help/edge/assets/smock_userdeveloper_18_n.svg" alt="標準の JavaScript と CSS を使用したカスタムフォームコンポーネントの作成"  style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">カスタムコンポーネントの作成</b>
+            <img src="/help/edge/assets/smock_userdeveloper_18_n.svg" alt="Create custom forms components using standard JavaScript and CSS"  style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Create custom components</b>
         </a>
-        <p>標準の JavaScript と CSS を使用して、コンポーネントとテーマを作成します。</p>
+        <p>Use standard JavaScript and CSS to create components and themes.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/recaptacha-forms.md">  
-            <img src="/help//edge/assets/smock_keyclock_18_n.svg" alt="EDS フォームでの reCAPTCHA の使用" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">reCAPTCHA を使用</b>
+            <img src="/help//edge/assets/smock_keyclock_18_n.svg" alt="Use reCAPTCHA in an EDS Form" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Use reCAPTCHA</b>
         </a>
-        <p>堅牢なスパムとボット保護に、OOTB reCAPTCHA 統合を使用します。</p>
+        <p>Use OOTB reCAPTCHA integration for robust spam and bot protection.</p>
     </div>
 
 
@@ -211,10 +215,4 @@ AEM Forms Edge Delivery Service は、様々なニーズに対応する 2 種類
 </br>
 
 
-
-
-
-
-
-
-
+-->
