@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: ea61a794788ee2a59e05727fa3c4fd4fc1ca9956
+source-git-commit: 320967ee4cd5a92639b60b00750343222b307aef
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1415'
 ht-degree: 99%
 
 ---
@@ -228,17 +228,17 @@ ht-degree: 99%
 
 | 形式 | アップロード（入力形式） | 画像プリセットの作成（出力形式） | 動的レンディションのプレビュー | 動的レンディションの配信 | 動的レンディションのダウンロード | この形式をサポートするタイプを設定 |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
-| AVIF | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| AVIF | − | − | − | ✓ | − | − |
 | BMP | ✓ | − | − | − | − | [画像](/help/assets/dynamic-media/image-sets.md), [混在メディア](/help/assets/dynamic-media/mixed-media-sets.md)および [スピン](/help/assets/dynamic-media/spin-sets.md) |
-| [EPS](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript&reg;-eps-and-pdf-file-formats-adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| [EPS](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − |
-| HEIC | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| HEIC | − | − | − | ✓ | − | − |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [画像](/help/assets/dynamic-media/image-sets.md)、 [混在メディア](/help/assets/dynamic-media/mixed-media-sets.md) および [スピン](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | − | − | − | − | − |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [画像](/help/assets/dynamic-media/image-sets.md)、[混在メディア](/help/assets/dynamic-media/mixed-media-sets.md)および [スピン](/help/assets/dynamic-media/spin-sets.md) |
 | PSD ‡ | ✓ | − | − | − | − | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [画像](/help/assets/dynamic-media/image-sets.md)、[混在メディア](/help/assets/dynamic-media/mixed-media-sets.md)および [スピン](/help/assets/dynamic-media/spin-sets.md) |
-| WEBP | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| WEBP | − | − | − | ✓ | − | − |
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡ 結合された画像は PSD ファイルから抽出されます。この画像は [!DNL Adobe Photoshop] によって生成され、PSD ファイルに含まれます。設定によって、結合された画像は実際の画像である場合とそうでない場合があります。
