@@ -4,17 +4,17 @@ description: EDS フォームに繰り返し可能なセクションを追加す
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d63d0f1152d0a23623c197924a44bc6b1e69fb42
+exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 13%
 
 ---
 
-
 # フォームへの繰り返し可能なセクションの追加
 
-アダプティブフォームブロックには、フォームのセクションやコンポーネントを追加または作成する機能が用意されています。 これにより、ユーザーは同じタイプのデータに対して複数回情報を入力でき、職歴や教育的背景などの情報を簡単に収集できます。
+アダプティブFormsブロックには、フォームのセクションやコンポーネントを追加または作成する機能が用意されています。 これにより、ユーザーは同じタイプのデータに対して複数回情報を入力でき、職歴や教育的背景などの情報を簡単に収集できます。
 
 例えば、ある人物の職歴に関する情報を収集するために使用するフォームについて考えてみましょう。前の各職務の詳細を取得するための繰り返し可能なセクションがある場合があります。繰り返し可能なセクションには、通常、会社名、役職、雇用日、職務責任などのフィールドが含まれます。繰り返し可能なセクションの複数のインスタンスを追加して、保持している各ジョブに関する情報を入力できます。
 
@@ -81,7 +81,7 @@ The form allows users to provide personal information, including details of the 
 
 ## Prerequisites
 
-The [Adaptive Form block is enabled](/help/edge/docs/forms/create-forms.md) for your Edge Delivery Service project. 
+The [Adaptive Forms Block is enabled](/help/edge/docs/forms/create-forms.md) for your Edge Delivery Services project. 
 
 ## Add a repeatable section to a form 
 

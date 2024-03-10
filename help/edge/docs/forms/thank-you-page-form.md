@@ -4,13 +4,13 @@ description: Forms Block の「ありがとうございます」ページとリ�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 1%
 
 ---
-
 
 # 送信後に「ありがとうございます」ページまたはリダイレクトフォームを表示
 
@@ -20,14 +20,14 @@ ht-degree: 1%
 
 * **リダイレクト**：リダイレクトは、ユーザーを関連する宛先に導き、エンゲージメントを最適化し、最終的にコンバージョン率を高めるのに重要な役割を果たします。 ユーザーをジャーニーの次のステップにシームレスに導くことで、リダイレクトによってスムーズなナビゲーションが実現します。 例えば、初期の詳細を収集した後で、ユーザーを支払いページにリダイレクトします。
 
-「アダプティブForms」ブロックでは、デフォルトの動作で「ありがとうございます」ページが表示されます。 ただし、このエクスペリエンスは、特定のニーズに合わせて柔軟に調整できます。 オプションは次のとおりです。
+アダプティブFormsブロックでは、デフォルトの動作で「ありがとうございます」ページが表示されます。 ただし、このエクスペリエンスは、特定のニーズに合わせて柔軟に調整できます。 オプションは次のとおりです。
 
 * [ブランドやコミュニケーションの目標に合わせて「ありがとうございます」ページとメッセージを設定する](#configuring-the-thank-you-page-and-message)
 * [ユーザーを別のページにリダイレクトして投稿を送信し、さらにアクションを実行する](#redirect-users-to-another-page-post-submission)
 
 ## 「ありがとうございます」ページとメッセージの設定
 
-アダプティブFormsブロックのデフォルトの動作では、送信時に「thankyou」ページが表示されます。 アダプティブFormsブロックの「thankyou」ページを設定するには、次の手順に従います。
+アダプティブFormsブロックのデフォルトの動作では、送信時に「感謝」ページを表示します。 アダプティブFormsブロックの「thankyou」ページを設定するには、次の手順に従います。
 
 1. Microsoft SharePointまたはGoogle Workspace のAEM Edge Delivery プロジェクトフォルダーにアクセスします。
 1. プロジェクトディレクトリ内に、「thankyou」という名前のMicrosoft Word またはGoogle Docs ファイルを作成します。
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 1. AEM Sidekickを使用して、「thankyou」ファイルをプレビューし、公開します。
 
-アダプティブFormsブロックには、フォーム送信時に「感謝状」ページが表示されます。
+アダプティブFormsブロックには、フォーム送信時に「thankyou」ページが表示されます。
 
 ## ユーザーを送信後に別のページにリダイレクト
 
@@ -63,9 +63,9 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   > Microsoft SharePointまたはGoogle Workspace の Edge Delivery Service プロジェクトフォルダーに同じ名前のページが存在することを確認します。 ページが存在しない場合は、作成して公開します。
+   > Microsoft SharePointまたはGoogle Workspace のEdge Delivery Servicesプロジェクトフォルダーに同じ名前のページが存在することを確認します。 ページが存在しない場合は、作成して公開します。
 
-1. 更新された「form.js」フォルダーとその基になるファイルを、GitHub の Edge 配信サービスプロジェクトにチェックインします。 この更新により、フォームは、指定したとおりに更新されたページにリダイレクトされるようになります。
+1. 更新された「form.js」フォルダーとその基になるファイルを、GitHub のEdge Delivery Servicesプロジェクトにチェックインします。 この更新により、フォームは、指定したとおりに更新されたページにリダイレクトされるようになります。
 
 1. EDS プロジェクトフォルダーにページが存在することを確認し、公開します。
 

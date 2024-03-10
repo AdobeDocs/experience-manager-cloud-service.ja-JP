@@ -4,9 +4,9 @@ description: このチュートリアルでは、新しいAdobe Experience Manag
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1770'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 これらのフォームは、Microsoft Excel またはGoogleシートファイルに直接データを送信します。Googleシート、Microsoft Excel、Microsoft Sharepoint の活発なエコシステムと堅牢な API を使用して、送信されたデータを簡単に処理したり、既存のビジネスワークフローを開始したりできます。
 
-AEM Formsには、アダプティブフォームブロックと呼ばれるブロックが用意されており、これを使用すると、キャプチャしたデータを取得して保存するためのフォームを簡単に作成することができます。
+AEM Formsには、アダプティブFormsブロックと呼ばれるブロックが用意されており、これを使用すると、キャプチャしたデータを取得して保存するためのフォームを簡単に作成することができます。 アダプティブFormsブロックが事前に装備された新しいAEMプロジェクトを作成したり、既存のAEMプロジェクトにアダプティブFormsブロックを追加したりできます。
 
 このAEM Formsチュートリアルでは、新しいAdobe Experience Manager(AEM)Formsプロジェクトを使用して独自のカスタムフォームを作成、プレビュー、公開する手順を説明します。 また、アダプティブFormsブロックを既存のAEMプロジェクトに追加する方法についても説明します。
 
@@ -39,18 +39,19 @@ AEM Formsには、アダプティブフォームブロックと呼ばれるブ�
 
 ## アダプティブFormsブロックが事前に装備された新しいAEMプロジェクトを作成する
 
-AEM Forms Boilerplate テンプレートを使用すると、アダプティブフォームブロックが事前に設定されたAEMプロジェクトをすばやく開始できます。 AEMのベストプラクティスに従って、すぐにフォームを作成する方法です。
+AEM Forms Boilerplate テンプレートを使用すると、アダプティブFormsブロックが事前に設定されたAEMプロジェクトをすばやく開始できます。 AEMのベストプラクティスに従って、すぐにフォームを作成する方法です。
 
 ### AEM Formsテンプレートリポジトリテンプレートの概要
 
-1. Github アカウントにログインします。
-1. に移動します。 [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
+1. AEMプロジェクト用の GitHub リポジトリを作成します。 リポジトリを作成するには：
+   1. に移動します。 [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
 
-   ![AEM Forms Boilerplate](/help/edge/assets/aem-forms-boilerplate.png)
-1. クリック **このテンプレートを使用** をクリックし、 **新しいリポジトリを作成** 」オプションを選択し、このリポジトリを作成する場所を選択します。
-   ![AEM Forms Boilerplate を使用して新しいリポジトリを作成](/help/edge/assets/create-new-repository-using-aem-forms-boilerplate.png)
+      ![AEM Forms Boilerplate](/help/edge/assets/aem-forms-boilerplate.png)
+   1. 次をクリック： **このテンプレートを使用** オプションを選択し、 **新しいリポジトリを作成** オプション。 「新しいリポジトリを作成」画面が開きます。
 
-   Adobeでは、リポジトリをパブリックに設定することをお勧めします。 新しいリポジトリを作成画面で、 **公開** オプション。
+      ![AEM Forms Boilerplate を使用して新しいリポジトリを作成](/help/edge/assets/create-new-repository-using-aem-forms-boilerplate.png)
+
+   1. 新しいリポジトリを作成画面で、「 **所有者**、を指定します。 **リポジトリ名** . Adobeでは、リポジトリを **公開**. そのため、 **公開** オプションを選択し、をクリックします。 **リポジトリを作成**.
 
    ![リポジトリをパブリックに設定](/help/edge/assets/create-a-new-repo-keep-it-public.png)
 
@@ -61,35 +62,43 @@ AEM Forms Boilerplate テンプレートを使用すると、アダプティブ�
 
    ![リポジトリをパブリックに設定](/help/edge/assets/install-aem-code-sync-app-for-your-repo.png)
 
-       >[！注意 ]
-       >
-       >
-       > IP フィルタリングで Github Enterprise を使用している場合は、許可リストに次の IP を追加できます。 3.227.118.73
-   
-   これですべて完了です。新しい Web サイトがで実行されています `https://<branch>--<repo>--<owner>.hlx.page/`. 上記の例では、 [https://main—wefinance—wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/).
+   >[!NOTE]
+   >
+   >
+   > IP フィルタリングで Github Enterprise を使用している場合は、許可リストに次の IP を追加できます。 3.227.118.73
+
+   これですべて完了です。新しい Web サイトがで実行されています `https://<branch>--<repo>--<owner>.hlx.page/`.
 
    * `<branch>` は、GitHub リポジトリのブランチを参照します。
    * `<repository>` は GitHub リポジトリを示します。
    * `<owner>` は、GitHub リポジトリをホストする GitHub アカウントのユーザー名を指します。
 
+   例えば、ブランチ名が `main`、リポジトリは `wefinance`、および所有者は `wkndforms`を使用する場合、Web サイトは次の場所で起動および実行されます： [https://main—wefinance—wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/).
 
-### Google Drive を使用して独自のコンテンツソースをリンクする
 
-GitHub のフォークされた Boilerplate リポジトリが [Google Drive フォルダーに保存されたサンプルコンテンツ](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). この読み取り専用コンテンツは、フォームの出発点として最適です。 必要に応じて、自由に独自のGoogle Drive にコピーし、カスタマイズしてください。
+
+### 独自のコンテンツソースをリンク
+
+新しく作成された GitHub リポジトリがを指している場所は、 [Google Drive フォルダーに保存されたサンプルコンテンツ](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). この読み取り専用コンテンツは、フォームの出発点として最適です。 必要に応じて、自由に独自のGoogle Drive にコピーし、カスタマイズしてください。
 
 ![Google Drive のサンプルコンテンツ](/help/edge/assets/folder-with-sample-content.png)
 
-独自のコンテンツをリンクするには、
+サンプルコンテンツを独自のコンテンツフォルダーにコピーし、GitHub リポジトリを独自のコンテンツフォルダーに指すようにするには、次の手順を実行します。
 
 1. Google Drive またはMicrosoft SharePointで、AEMコンテンツ専用の新しいフォルダーを作成します。 このドキュメントでは、Microsoft SharePointで作成されたフォルダーを使用します。
 
 1. フォルダーをAdobe Experience Managerユーザー (helix@adobe.com) と共有します。
 
-   ![「アクセスを管理」オプションを使用して、フォルダーをAEMユーザーと共有します](/help/edge/assets/share-folder-with-aem-user.png)
+   ![「アクセスを管理」オプションを使用して、AEM User とフォルダーを共有します — SharePoint](/help/edge/assets/share-folder-with-aem-user.png)
+
+   ![「アクセスを管理」オプションを使用して、AEM User - Google Drive とフォルダーを共有します。](/help/edge/assets/share-google-drive-folder.png)
+
 
    フォルダーに対する編集権限がAdobe Experience Managerユーザーに付与されていることを確認します。
 
-   ![フォルダーをAEMユーザーと共有し、編集権限を付与します](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+   ![フォルダーをAEM User と共有し、編集権限を付与します。SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+
+   ![フォルダーをAEM User と共有し、編集権限を付与します (Google Drive)。](/help/edge/assets/add-aem-user-google-folder.png)
 
 1. をコピーします。 [Google Drive フォルダーに保存されたサンプルコンテンツ](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_) をフォルダーに追加します。 コピーする手順は、次のとおりです。
 
@@ -108,7 +117,6 @@ GitHub のフォークされた Boilerplate リポジトリが [Google Drive フ
 
 1. コンテンツフォルダーを設定したら、次に、以前にAEM Forms Boilerplate を使用して作成した GitHub 上のプロジェクトにリンクします。 接続するには：
 
-   1. Github アカウントにログインします。
    1. AEM Forms Boilerplate を使用して以前に作成した GitHub リポジトリに移動します。
    1. `fstab.yaml` を開いて編集します。
    1. 既存の参照を、AEMユーザー (helix@adobe.com) と共有したフォルダーのパスに置き換えます。
@@ -132,17 +140,15 @@ GitHub のフォークされた Boilerplate リポジトリが [Google Drive フ
 
 
 
-   1. 参照を更新したら、更新された&#39;fsatb.yaml ファイルをコミットします。 作業内容が保存され、コンテンツフォルダが Web サイトに接続されます。
+   1. 更新をコミット `fsatb.yaml` ファイルを編集した後、参照を更新すると、すべて正しく表示されます。 ビルドの問題が発生した場合は、 [GitHub ビルドの問題のトラブルシューティング](#troubleshooting-github-build-issues).
+
+
 
       ![更新された fsatab.yaml ファイルをコミット](/help/edge/assets/commit-updated-fstab-yaml.png)
 
+      これにより、コンテンツフォルダーが Web サイトに接続されます。 参照を更新した後、最初に「404 Not Found」というエラーが発生する場合があります。 これは、コンテンツがまだプレビューされていないためです。 次の節では、コンテンツのオーサリングとプレビューを開始する方法について説明します。
 
-      >[!NOTE]
-      >
-      >
-      >参照を更新した後、最初に「404 Not Found」というエラーが発生する場合があります。 これは、コンテンツがまだプレビューされていないためです。 次の節では、コンテンツのオーサリングとプレビューを開始する方法について説明します。
-
-
+      ![更新された fsatab.yaml ファイルをコミット](/help/edge/assets/aem-forms-project-folder-error.png)
 
 ### コンテンツのプレビューと公開
 
@@ -175,8 +181,8 @@ GitHub のフォークされた Boilerplate リポジトリが [Google Drive フ
    ファイルをプレビューすると、新しいブラウザータブにドキュメントが表示されます。 サンプルフォームをプレビューするには、次の URL に移動します。
 
 
-   ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form-path>/<form-file-name>.json
+   ```HTML
+   https://<branch>--<repository>--<owner>.hlx.live
    ```
 
    * `<branch>` は、GitHub リポジトリのブランチを参照します。
@@ -190,7 +196,32 @@ GitHub のフォークされた Boilerplate リポジトリが [Google Drive フ
 
 
 
-   [https://main—wefinance—wkndforms.hlx.page/inquiry](https://main--wefinance--wkndforms.hlx.page/enquiry).
+   [https://main—wefinance—wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
+
+### フォームを更新
+
+1. Microsoft SharePointまたはGoogle Drive フォルダーに移動します。
+
+1. `enquiry.xlsx` を開いて編集します。
+
+   ![問い合わせフォーム](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+
+1. 送信ボタンのラベルをに変更します。 `Let's Chat`.
+
+   ![問い合わせフォーム](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+
+1. AEM Sidekickを使用した `enquiry.xlsx` ファイル。
+
+   ![問い合わせフォーム](/help/edge/assets/enquiry-form-preview-publish.png)
+
+1. 問い合わせフォームをプレビューするには、次の URL に移動します。
+
+
+   ```HTML
+   https://<branch>--<repository>--<owner>.hlx.page/enquiry
+   ```
+
+   送信ボタンのラベルが更新されます。 次に、フォームに入力して送信ボタンをクリックすると、スプレッドシートが次のようなエラーが発生します。これは、スプレッドシートが [まだデータを受け入れるように設定する](/help/edge/docs/forms/submit-forms.md).
 
 
 ### スタイルと機能の開発を開始する
@@ -232,9 +263,9 @@ GitHub のフォークされた Boilerplate リポジトリが [Google Drive フ
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)
 
-既存のAEMプロジェクトがある場合は、アダプティブフォームブロックを現在のプロジェクトに統合して、フォームの作成を開始できます。 統合する手順は次のとおりです。
+既存のAEMプロジェクトがある場合は、アダプティブFormsブロックを現在のプロジェクトに統合して、フォームの作成を開始できます。 統合する手順は次のとおりです。
 
-1. アダプティブフォームブロックリポジトリhttps://github.com/adobe-rnd/aem-boilerplate-formsをコンピューターに複製します。
+1. アダプティブFormsブロックリポジトリ ( https://github.com/adobe-rnd/aem-boilerplate-forms ) をコンピューターに複製します。
 
 1. ダウンロードしたフォルダー内で、 `blocks/form` フォルダー。 このフォルダーをコピーします。 次に、AEMプロジェクトのローカルに移動します `blocks` フォルダーにコピーしたフォームフォルダーをここに貼り付けます。
 
@@ -244,7 +275,7 @@ GitHub のフォークされた Boilerplate リポジトリが [Google Drive フ
 これで作業は完了です。アダプティブFormsブロックがAEMプロジェクトに含まれます。 フォームの作成とAEMページへの追加を開始できます。
 
 
-### GitHub ビルドの問題のトラブルシューティング
+## GitHub ビルドの問題のトラブルシューティング
 
 潜在的な問題に対処し、GitHub のビルドプロセスをスムーズに進めます。
 
@@ -253,6 +284,14 @@ GitHub のフォークされた Boilerplate リポジトリが [Google Drive フ
 
 * **リントエラーを処理：**
 リントエラーが発生した場合は、それらを回避できます。 を開きます。 [EDS プロジェクト]/package.jsonファイルを編集し、&quot;lint&quot;スクリプトを&quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot;から&quot;lint&quot;: &quot;echo &#39;今すぐのリントをスキップ&#39;&quot;に変更します。 ファイルを保存し、変更を GitHub プロジェクトにコミットします。
+
+
+## 関連トピック
+
+* [Google Sheet またはMicrosoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
+* [Microsoft Excel またはGoogleシートに直接フォームを送信する](/help/edge/docs/forms/submit-forms.md)
+* [フォームの外観を変更する](/help/edge/docs/forms/style-theme-forms.md)
+
 
 
 

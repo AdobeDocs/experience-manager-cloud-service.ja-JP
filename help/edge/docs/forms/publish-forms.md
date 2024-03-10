@@ -4,13 +4,13 @@ description: AEM FormsEdge Delivery Servicesフォームの公開
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 1%
+source-wordcount: '530'
+ht-degree: 2%
 
 ---
-
 
 # フォームを発行する
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## 前提条件
 
-* The [アダプティブフォームブロックが GitHub の EDS プロジェクトで有効になっている](/help/edge/docs/forms/create-forms.md).
+* The [アダプティブFormsブロックが GitHub の EDS プロジェクトで有効になっています](/help/edge/docs/forms/create-forms.md).
 * フォームは完全にテスト済みで、使用する準備が整っています。
 * お使いの [スプレッドシートが設定されました](/help/edge/docs/forms/submit-forms.md) をクリックしてデータを受け入れます。
 
@@ -112,10 +112,6 @@ ht-degree: 1%
 +++
 
 
-## 詳細を表示する
 
-* [フォームの作成とプレビュー](/help/edge/docs/forms/create-forms.md)
-* [フォームからデータを送信できるようにする](/help/edge/docs/forms/submit-forms.md)
-* [サイトページにフォームを発行する](/help/edge/docs/forms/publish-forms.md)
-* [フォームフィールドに検証機能を追加する](/help/edge/docs/forms/validate-forms.md)
-* [フォームのテーマとスタイルを変更する](/help/edge/docs/forms/style-theme-forms.md)
+
+## 詳細を表示する

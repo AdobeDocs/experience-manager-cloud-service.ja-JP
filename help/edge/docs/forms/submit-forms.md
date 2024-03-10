@@ -1,20 +1,19 @@
 ---
 title: データを受け入れるスプレッドシートを準備する
-description: スプレッドシートとアダプティブフォームブロックフィールドを使用して、強力なフォームをより迅速に作成できます。
+description: スプレッドシートとアダプティブFormsブロックフィールドを使用して、強力なフォームをより迅速に作成できます。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '971'
 ht-degree: 1%
 
 ---
 
-
 # データを受け入れるスプレッドシートを準備する
 
-![ドキュメントベースのオーサリングエコシステム](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 一度 [フォームの作成とプレビュー](/help/edge/docs/forms/create-forms.md)をクリックした場合、対応するスプレッドシートがデータの受信を開始できるようにします。
 
@@ -33,13 +32,21 @@ ht-degree: 1%
    >
    > 次の場合、 `incoming` シートが存在しない場合、AEMはスプレッドシートにデータを送信しません。
 
-1. フォームフィールド名、値を `Name` 列の`shared-default` シートを `incoming` シート。
+1. このシートに、「intake_form」という名前のテーブルを挿入します。 フォームフィールド名と一致させる列数を選択します。 次に、ツールバーで挿入/テーブルに移動し、「OK」をクリックします。
+
+1. テーブルの名前を「intake_form」に変更します。 Microsoft Excel で、テーブルの名前を変更するには、テーブルを選択し、「テーブルデザイン」をクリックします。
+
+1. 次に、フォームフィールド名をテーブルヘッダーとして追加します。 フィールドが完全に同じであることを確認するには、「共有のデフォルト」シートからコピーして貼り付けます。  「共有のデフォルト」シートで、「名前」列の下に表示されるフォーム ID（送信フィールドを除く）を選択してコピーします。
+
+1. 「incoming」シートで、「Paste Special」>「Transpose Rows to Columns」を選択し、この新しいシートの列ヘッダーとしてフィールド ID をコピーします。 その他のデータを取り込む必要があるフィールドのみを無視できます。
 
    各値 `Name` 列 `shared-default` シート（送信ボタンを除く）は、 `incoming` シート。 例えば、次の画像は「contact-us」フォームのヘッダーを示しています。
 
    ![連絡先 —Us フォームのフィールド](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. サイドキックを使用して、シートをプレビューします。
+
+
+1. AEM Sidekick拡張機能を使用して、フォームの更新をプレビューします。 これで、シートは受信フォーム送信を受け入れる準備が整いました。
 
    >[!NOTE]
    >
@@ -48,23 +55,11 @@ ht-degree: 1%
 
 フィールド名を `incoming` シートが作成され、フォームが送信を受け入れる準備が整います。 フォームをプレビューし、それを使用してデータをシートに送信することができます。
 
+シートがデータを受け取るように設定されたら、次の操作を実行できます。 [アダプティブFormsブロックを使用したフォームのプレビュー](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) または [POST要求の使用](#use-admin-apis-to-send-data-to-your-sheet) をクリックして、シートへのデータの送信を開始します。
 
-
-また、スプレッドシートには次の変更があります。
-
-Excel ブックまたはGoogleシートに「Slack」という名前のシートが追加されます。 このシートでは、新しいデータがスプレッドシートに取り込まれるたびに、指定したSlackチャネルの自動通知を設定できます。 現在、AEMは、AEMエンジニアリングSlack組織およびAdobeエンタープライズサポート組織にのみ通知をサポートしています。
-
-1. Slack通知を設定するには、Slackワークスペースの「teamId」と「チャネル名」または「ID」を入力します。 「teamId」と「channel ID」に対して（debug コマンドを使用して）slack-bot に問い合わせることもできます。 チャネルの名前を変更しても存続するので、「チャネル名」の代わりに「チャネル ID」を使用することをお勧めします。
-
-   >[!NOTE]
-   >
-   > 古いフォームには「teamId」列がありませんでした。 「teamId」が「#」または「/」で区切られたチャネル列に含まれていました。
-
-1. 必要なタイトルを入力し、「フィールド」に、Slack通知に表示するフィールドの名前を入力します。 各見出しはコンマで区切る必要があります（例：名前、E メール）。
-
-   >[!WARNING]
-   >
-   >  「共有のデフォルト」シートに、公開アクセスに不安な個人を特定できる情報や機密データを含めないでください。
+>[!WARNING]
+>
+>  「共有のデフォルト」シートに、公開アクセスに不安な個人を特定できる情報や機密データを含めないでください。
 
 
 ## （オプション） Admin API を使用して、スプレッドシートでのデータ受け取りを有効にします
@@ -155,6 +150,11 @@ Admin API を使用してスプレッドシートでのデータ受け取りを�
 
    これで、フォームがデータの受け入れを有効にしました。 また、スプレッドシートには次の変更があります。
 
+## データの受け入れが有効になった後のシートへの自動変更。
+
+
+データを受け取るようにシートを設定すると、スプレッドシートに次の変更が表示されます。
+
 Excel ブックまたはGoogleシートに「Slack」という名前のシートが追加されます。 このシートでは、新しいデータがスプレッドシートに取り込まれるたびに、指定したSlackチャネルの自動通知を設定できます。 現在、AEMは、AEMエンジニアリングSlack組織およびAdobeエンタープライズサポート組織にのみ通知をサポートしています。
 
 1. Slack通知を設定するには、Slackワークスペースの「teamId」と「チャネル名」または「ID」を入力します。 「teamId」と「channel ID」に対して（debug コマンドを使用して）slack-bot に問い合わせることもできます。 チャネルの名前を変更しても存続するので、「チャネル名」の代わりに「チャネル ID」を使用することをお勧めします。
@@ -165,16 +165,14 @@ Excel ブックまたはGoogleシートに「Slack」という名前のシート
 
 1. 必要なタイトルを入力し、「フィールド」に、Slack通知に表示するフィールドの名前を入力します。 各見出しはコンマで区切る必要があります（例：名前、E メール）。
 
+   >[!WARNING]
+   >
+   >  「共有のデフォルト」シートに、公開アクセスに不安な個人を特定できる情報や機密データを含めないでください。
 
-これで、シートがデータを受け取るように設定され、次の操作が可能になります。 [アダプティブフォームブロックを使用したフォームのプレビュー](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) または [POST要求の使用](#use-admin-apis-to-send-data-to-your-sheet) をクリックして、シートへのデータの送信を開始します。
-
->[!WARNING]
->
->  「共有のデフォルト」シートに、公開アクセスに不安な個人を特定できる情報や機密データを含めないでください。
 
 ## シートにデータを送信 {#send-data-to-your-sheet}
 
-シートがデータを受け取るように設定された後、次の操作を実行できます。 [アダプティブフォームブロックを使用したフォームのプレビュー](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) または [管理 API の使用](#use-admin-apis-to-send-data-to-your-sheet) をクリックして、シートへのデータの送信を開始します。
+シートがデータを受け取るように設定された後、次の操作を実行できます。 [アダプティブFormsブロックを使用したフォームのプレビュー](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) または [管理 API の使用](#use-admin-apis-to-send-data-to-your-sheet) をクリックして、シートへのデータの送信を開始します。
 
 ### Admin API を使用してシートにデータを送信する
 
@@ -288,10 +286,3 @@ POST本文のフォームデータを書式設定する方法はいくつかあ�
 
 次に、「ありがとうございます」メッセージをカスタマイズできます。 [「ありがとうございます」ページの設定](/help/edge/docs/forms/thank-you-page-form.md)または [リダイレクトの設定](/help/edge/docs/forms/thank-you-page-form.md).
 
-## 詳細を表示する
-
-* [フォームの作成とプレビュー](/help/edge/docs/forms/create-forms.md)
-* [フォームからデータを送信できるようにする](/help/edge/docs/forms/submit-forms.md)
-* [サイトページにフォームを発行する](/help/edge/docs/forms/publish-forms.md)
-* [フォームフィールドに検証機能を追加する](/help/edge/docs/forms/validate-forms.md)
-* [フォームのテーマとスタイルを変更する](/help/edge/docs/forms/style-theme-forms.md)

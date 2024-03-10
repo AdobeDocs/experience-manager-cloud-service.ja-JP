@@ -4,22 +4,22 @@ description: このドキュメントでは、AEM Forms Edge Delivery Service �
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 7d087d41-9313-482a-a905-8955b0999781
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '964'
 ht-degree: 3%
 
 ---
 
-
 # フォームのコンポーネントとプロパティ：AEM Forms Edge Delivery Service
 
-AEM Forms Edge Delivery Service を使用すると、様々なコンポーネントを使用して、使いやすくインタラクティブなフォームを作成できます。 これらのコンポーネントは、様々なタイプのデータ収集に対応し、特定のニーズに合わせて容易にカスタマイズできます。
+AEM Forms Edge Delivery Services を使用すると、様々なコンポーネントを使用して、使いやすくインタラクティブなフォームを作成できます。 これらのコンポーネントは、様々なタイプのデータ収集に対応し、特定のニーズに合わせて容易にカスタマイズできます。
 
 
 ![一部のコンポーネントとプロパティを含むサンプルスプレッドシート](/help/edge/assets/sample-form-in-spreadsheet.png)
 
-アダプティブフォームブロックは、 [均一HTML構造](/help/edge/docs/forms/style-theme-forms.md) の一貫性を確保するために、すべてのフィールドタイプおよびコンテナ（パネル）に対して使用できます。 この一貫した構造により、 [フォームのスタイルを設定する](/help/edge/docs/forms/style-theme-forms.md).
+アダプティブFormsブロックは、 [均一HTML構造](/help/edge/docs/forms/style-theme-forms.md) の一貫性を確保するために、すべてのフィールドタイプおよびコンテナ（パネル）に対して使用できます。 この一貫した構造により、 [フォームのスタイルを設定する](/help/edge/docs/forms/style-theme-forms.md).
 
 ## 使用可能なコンポーネント
 
@@ -46,13 +46,13 @@ AEM Forms Edge Delivery Service を使用すると、様々なコンポーネン
 
 ## コンポーネントのプロパティ
 
-各フォームコンポーネントには、動作と外観を制御できる様々なプロパティが用意されています。 アダプティブフォームブロックコンポーネントでサポートされるプロパティを次に示します。
+各フォームコンポーネントには、動作と外観を制御できる様々なプロパティが用意されています。 アダプティブFormsブロックコンポーネントでサポートされるプロパティを次に示します。
 
 
-| Property | 適用可能なコンポーネント | 詳細 |
+| プロパティ | 適用可能なコンポーネント | 詳細 |
 |--------------|------------------------------|----------------------------------------------------------------------|
-| タイプ | すべて | コンポーネントのタイプを指定します。 このプロパティは、入力フィールドの動作と外観を決定します。 例えば、テキスト入力の場合、タイプは「テキスト」、「電子メール」（電子メール入力）、「パスワード」（パスワード入力）のようになります。 アダプティブフォームブロックのサポート  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">すべての有効なHTML5 入力タイプ</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選択</a>、および <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> をタイプとして使用します。 |
-| タイプ | すべて | コンポーネントのタイプを指定します。 このプロパティは、入力フィールドの動作と外観を決定します。 例えば、テキスト入力の場合、タイプは「テキスト」、「電子メール」（電子メール入力）、「パスワード」（パスワード入力）のようになります。 アダプティブフォームブロックのサポート  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">すべての有効なHTML5 入力タイプ</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選択</a>、および <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> をタイプとして使用します。 |
+| タイプ | すべて | コンポーネントのタイプを指定します。 このプロパティは、入力フィールドの動作と外観を決定します。 例えば、テキスト入力の場合、タイプは「テキスト」、「電子メール」（電子メール入力）、「パスワード」（パスワード入力）のようになります。 アダプティブFormsブロックのサポート  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">すべての有効なHTML5 入力タイプ</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選択</a>、および <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> をタイプとして使用します。 |
+| タイプ | すべて | コンポーネントのタイプを指定します。 このプロパティは、入力フィールドの動作と外観を決定します。 例えば、テキスト入力の場合、タイプは「テキスト」、「電子メール」（電子メール入力）、「パスワード」（パスワード入力）のようになります。 アダプティブFormsブロックのサポート  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">すべての有効なHTML5 入力タイプ</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選択</a>、および <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> をタイプとして使用します。 |
 | 名前 | すべて | フォーム送信用のコンポーネントを識別します。 name 属性は、フォームデータがサーバーに送信される際に使用され、ユーザー入力が特定のフィールドに関連付けられます。 |
 | ラベル | すべて | ユーザーにコンテキスト情報を提供します。 ラベルは、コンポーネントの横に表示されるテキストで、ユーザーが入力する情報に関するガイダンスを提供します。 |
 | 値 | テキスト、パスワード、電子メール、数値、範囲、日付およびそのバリエーション (datetime-local、month、week、time)、チェックボックス、ラジオ、非表示、送信、ボタン | コンポーネントの初期値を指定します。 テキスト入力、テキスト領域、および要素の選択の場合、これはデフォルトのテキストまたはオプションとして表示されます。 ラジオおよびチェックボックスコンポーネントの場合、これは選択時に送信される値/データです。 value 属性はオプションですが、チェックボックスとラジオの入力に必須と見なす必要があります。 |
@@ -72,9 +72,9 @@ AEM Forms Edge Delivery Service を使用すると、様々なコンポーネン
 
 <!--
 
-## Supported HTML 5 input types in Adaptive Form Block
+## Supported HTML 5 input types in Adaptive Forms Block
 
-The Adaptive Form Block supports a range of HTML 5 input types, and it also seamlessly renders forms created with AEM core components.
+The Adaptive Forms Block supports a range of HTML 5 input types, and it also seamlessly renders forms created with AEM core components.
 Here is the table which outlines how core components correspond to their HTML-5 input types in Edge Delivery:
 <table>
  <tbody>
@@ -176,26 +176,26 @@ Here is the table which outlines how core components correspond to their HTML-5 
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html">Accordion<a></td>
-   <td><i>Not yet supported in Adaptive Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Forms Block</i></td>
    <td> Allows user to create expandable and collapsible sections in a form. </td>
   </tr>
   <tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html">Horizontal tabs</a></td>
-   <td><i>Not yet supported in Adaptive Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Forms Block</i></td>
    <td>Organizes multiple sections of a form into separate tabs which are displayed horizontally.</td>
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/image.html">Image</a></td>
-   <td><i>Not yet supported in Adaptive Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Forms Block</i></td>
    <td> Allows user to include images in a form.</td>
   </tr><tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/title.html">Title</a></td>
-   <td><i>Not yet supported in Adaptive Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Forms Block</i></td>
    <td> Refers to the text that appears at the top of the form. </td>
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/submit-button.html">Switch</td>
-   <td><i>Not yet supported in Adaptive Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Forms Block</i></td>
    <td> A two-state toggle that allows user to select between two states such as enabling or disabling a feature, setting, or functionality.</td>
   </tr>
  </tbody>
