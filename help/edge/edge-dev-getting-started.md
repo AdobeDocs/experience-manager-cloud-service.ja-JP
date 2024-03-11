@@ -3,7 +3,7 @@ title: Edge Delivery Servicesを使用したAEMオーサリングのための De
 description: このガイドでは、Edge Delivery Servicesとコンテンツオーサリング用のユニバーサルエディターを使用して、新しいAdobe Experience Managerサイトを導入および導入する方法を説明します
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: d29e1c588937d18dea2fe851df3818b6438d41c4
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 1%
