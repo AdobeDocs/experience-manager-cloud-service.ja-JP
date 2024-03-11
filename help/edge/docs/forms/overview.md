@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
+source-git-commit: 67d9eaaf18725403f6a152b04e022cdca6902de0
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '932'
 ht-degree: 2%
 
 ---
@@ -41,6 +41,13 @@ Edge 配信サービスでは GitHub を利用しているので、ユーザー�
 ![インストールAEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
 
 AEM FormsEdge Delivery Servicesは、 [アダプティブFormsブロック](/help/edge/docs/forms/create-forms.md) をクリックして、フォームをEdge Delivery Servicesサイトに追加します。
+
+次の中から選択： [ドキュメントベースのオーサリング](#document-based-authoring-features) および [AEM authoring](#aem-authoring-features) は、具体的な要件に応じて異なります。
+
+名前や電子メールなどの基本情報を収集するだけの簡単なフォーム（お問い合わせください。フォーム、リードジェネレーションフォーム、またはサービスリクエストフォーム）の場合、データをスプレッドシートに送るだけでよい場合、 [ドキュメントベースのオーサリング](/help/edge/docs/forms/create-forms.md) 完璧なフィットです。 これらのフォームは、Google Docs のドキュメントと同様に作成できます。
+
+複数のパネルの必要性、複雑なルールとビジネスロジック、データの操作、外部システムとの統合、AEM機能を使用したワークフローの合理化など、フォームがより複雑になった場合は、 [AEM Authoring](/help/forms/creating-adaptive-form-core-components.md) はより良い選択肢です。
+
 
 ### ドキュメントベースのオーサリングとAEMオーサリングの主な機能
 
@@ -119,6 +126,13 @@ AEMオーサリング ( アダプティブFormsエディターを使用 ) には
 * データをMicrosoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics、その他多くのデータソースに送信するなど、フォーム送信を処理するための複数の送信アクションを設定できる機能。
 
 基本的に、AEM Authoring はドキュメントベースのオーサリングの基盤を基に構築され、複雑なフォームを作成および管理するためのより高度なツールキットを提供します。
+
+### オーサリングワークフロー
+
+![ドキュメントベースのオーサリング](/help/edge/assets/document-based-authoring-workflow.png)
+
+![AEM authoring](/help/edge/assets/aem-authoring-workflow.png)
+
 
 ## フォームの作成を開始
 
