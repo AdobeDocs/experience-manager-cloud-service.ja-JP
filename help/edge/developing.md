@@ -2,17 +2,17 @@
 title: Edge Delivery Services向け開発
 description: ブロックを開発し、Edge Delivery Servicesと連携するようにAEMプロジェクトをカスタマイズする方法を説明します。
 feature: Edge Delivery Services
-source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
+exl-id: c356c03c-af43-43a1-a14e-45f94ccb3970
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 14%
+ht-degree: 29%
 
 ---
 
-
 # Edge Delivery Services向け開発 {#developing-edge}
 
-Edge Delivery Servicesは、ブロックの概念に基づいています。 AEMには、事前定義済みのブロックの包括的なライブラリが付属しており、プロジェクトのニーズに合わせて拡張できます。 Edge Delivery Servicesプロジェクトのコードは GitHub で管理されます。
+Edge 配信サービスは、ブロックの概念に基づいています。AEM には、プロジェクトのニーズに合わせて拡張できる事前定義済みのブロックの包括的なライブラリが付属しています。Edge 配信サービスプロジェクトのコードは、GitHub で管理されます。
 
 ## ブロック {#blocks}
 

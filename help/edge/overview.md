@@ -3,10 +3,10 @@ title: AEM および Edge 配信サービスの基本を学ぶ
 description: AEM as a Cloud Service を使用して、Edge Delivery Services で提供されるパフォーマンスと完璧な Lighthouse スコアを活用する方法について説明します。
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: b7b9dbfa7f939828d66a785daecf84c917923c37
-workflow-type: ht
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+workflow-type: tm+mt
 source-wordcount: '874'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ Edge Delivery により、AEM はエンゲージメントとコンバージョ�
 Edge 配信サービスを使用すると、次の操作を実行できます。
 
 * 申し分ない Lighthouse スコアの高速サイトを作成し、実ユーザーモニタリング（RUM）を通じてサイトのパフォーマンスを継続的に監視します。
-* コンテンツソースを分離することでオーサリング効率を向上させます。標準では、AEM オーサリングとドキュメントベースのオーサリングの両方を使用できます。したがって、同じ web サイト上で複数のコンテンツソースを操作できます。
+* コンテンツソースを分離することでオーサリング効率を向上させます。標準では、 AEMオーサリングとドキュメントベースのオーサリングの両方を使用できます。 したがって、同じ web サイト上で複数のコンテンツソースを操作できます。
 * 迅速なテスト作成、パフォーマンスに影響を与えない実行およびテスト勝者の実稼動環境への迅速なリリースが可能になる組み込みの実験フレームワークを使用します。
 
 ## Edge 配信サービスの概要 {#edge-overview}
@@ -27,7 +27,7 @@ Microsoft Word でコンテンツを編集して（ドキュメントベース�
 
 ![Edge Delivery のアーキテクチャ](assets/AEM-with-EDS-publishing-simple2.png)
 
-Edge 配信サービスは、web サイト上のコンテンツの非常に柔軟なオーサリングを可能にする、構成可能なサービスセットです。前述のように、[AEM コンテンツ管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=ja)と[ユニバーサルエディターオーサリング](/help/implementing/universal-editor/introduction.md)および[ドキュメントベースのオーサリング](https://www.aem.live/docs/authoring)の両方を使用できます。
+Edge 配信サービスは、web サイト上のコンテンツの非常に柔軟なオーサリングを可能にする、構成可能なサービスセットです。前述のように、 [AEM content management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=ja) 次を使用 [ユニバーサルエディターオーサリング](/help/implementing/universal-editor/introduction.md) 同様に [ドキュメントベースのオーサリングを参照してください。](https://www.aem.live/docs/authoring)
 
 例えば、Microsoft Word や Google Docs のコンテンツを直接使用できます。つまり、これらのソースのドキュメントを web サイト上のページにすることができます。さらに、見出し、リスト、画像、フォント要素などはすべて、当初のソースから web サイトに転送できます。新しいコンテンツは、再作成プロセスなしで即座に追加されます。
 
@@ -63,7 +63,7 @@ Edge 配信サービスの使用を開始するのは簡単です。[はじめ�
 
 ### コミュニティリソースへのアクセス {#community-resource}
 
-アドビは、コミュニティに対して最高のエンゲージメントとサポートを提供し、Edge 配信サービスおよびドキュメントベースのオーサリングに取り組んでいます。
+Adobeは、コミュニティに対する最高のエンゲージメントとサポート、およびEdge Delivery Servicesとドキュメントベースのオーサリングに対するお客様の強化に取り組んでいます。
 
 * [Experience League コミュニティ](https://adobe.ly/3Q6kTKl)に参加して、質問をしたり、意見を共有したり、ディスカッションを始めたり、アドビの専門家や AEM アドバイザー／チャンプにサポートを求めたり、同じ意見を持つユーザーとリアルタイムでつながりを持つことができます。
 * リアルタイムのインタラクションと迅速なアイデア交換を実現する一層カジュアルなプラットフォーム、[ディスコードチャネル](https://discord.gg/aem-live)に参加してください。

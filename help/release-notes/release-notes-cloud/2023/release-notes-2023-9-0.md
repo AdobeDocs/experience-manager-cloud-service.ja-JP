@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0 リリースのリリースノート。'
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: 3bec7e0387a5e04a7748a3b7341c17a993c6feb9
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 76%
+ht-degree: 79%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 76%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.9.0）の公開日は 2023年9月28日（PT）です。次回の機能リリース（2023.10.0）は、2023年10月26日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.9.0）のリリース日は、2023年9月28日（PT）です。次回の機能リリース（2023.10.0）は 2023年10月26日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -56,7 +56,7 @@ ht-degree: 76%
 
 ### 管理ビューの新機能 {#admin-view-features}
 
-* **AEM Assetsas a Cloud ServiceとドキュメントベースのオーサリングをEdge Delivery Servicesに統合**: AEM Assetsをドキュメントベースのオーサリングと統合して、Edge Delivery Servicesが Web サイト作成者が [Microsoft Word またはGoogleドキュメントでドキュメントを作成する際に、AEM Assetsリポジトリで使用できる画像を使用します。](/help/edge/using.md#integrate-assets-edge).
+* **AEM Assetsas a Cloud ServiceとドキュメントベースのオーサリングのEdge Delivery Services**: AEM Assetsをドキュメントベースのオーサリングと統合して、Web サイト作成者が次のことを実行できるようにEdge Delivery Services [Microsoft Word またはGoogleドキュメントでドキュメントを作成する際に、AEM Assetsリポジトリで使用できる画像を使用します。](/help/edge/using.md#integrate-assets-edge).
 
 * **ZIP アーカイブの抽出**:Experience Managerで管理される ZIP アーカイブおよび [ファイルを直接Experience Managerに抽出](/help/assets/manage-digital-assets.md#extract-zip-archives) ダウンロードせずに
 
@@ -97,11 +97,11 @@ ht-degree: 76%
 
 * **[64 ビット版のAEM Forms Designer](/help/forms/installing-configuring-designer.md)**: 64 ビット版のAEM Forms Designer では、パフォーマンス、拡張性、メモリ管理の機能が強化され、フォーム作成エクスペリエンスが強化されます。 64 ビットアーキテクチャを使用すると、より大規模で複雑なプロジェクトに簡単に取り組むことができ、シームレスな設計ワークフローと最適化された効率を確保できます。 フォームデザインの機能を向上させ、この最先端リリースでAEM Forms Designer の将来を受け入れます。
 
-### アーリーアダプタープログラム {#forms-early-adopter}
+### 早期導入プログラム {#forms-early-adopter}
 
-* **[DocAssurance API（通信 API の一部）を使用してドキュメントをProtect](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**:DocAssurance API を使用すると、ドキュメントに署名し、暗号化することで、機密情報を保護できます。 暗号化を通じて、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセス権を取得できるようになります。この強固な保護層は、不正な相手から貴重なデータを守るだけでなく、安心感も提供します。Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
+* **[DocAssurance API（通信 API の一部）を使用したドキュメントの保護](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API を使用すると、ドキュメントに署名および暗号化して、機密情報を保護できます。暗号化により、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセスできるようになります。この強化された保護層は、貴重なデータを信頼できない環境にさらすことなく、安心感ももたらします。Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
 
-  次に書き込むことができます： `aem-forms-early-adopter-program@adobe.com` アーリーアダプタープログラムに参加し、機能へのアクセスをリクエストするために、公式の電子メール id から。
+  公式メール ID から `aem-forms-early-adopter-program@adobe.com` に送信して早期導入プログラムに参加し、機能へのアクセスをリクエストできます。
 
 * **[ヘッドレスアダプティブForms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=ja)**：ヘッドレスアダプティブFormsを使用すると、開発者は、従来のグラフィカルユーザーインターフェイスを使用するのではなく、API を使用してアクセスし、操作できるインタラクティブフォームを作成、公開、管理できます。 ヘッドレスアダプティブフォームは以下の場合に役立ちます。
 

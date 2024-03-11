@@ -4,7 +4,7 @@ description: クラフトパーフェクトフォーム、高速！ ⚡ AEM Form
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: f2752673dcaa0762bb55719cee23765aa8ecde96
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # AEM Forms Edge Delivery Service 用のドキュメントベースのオーサリングを使用したフォームの作成
 
-今日のデジタル時代では、どの組織でも、使いやすいフォームを作成することが不可欠です。 AEM Forms Edge Delivery のドキュメントベースのオーサリングでは、Word やGoogle Docs などの使い慣れたツールを使用してフォームを作成できます。これらのフォームはMicrosoft Excel やGoogle Sheets ファイルに直接送信され、Googleシート、Microsoft Excel、Microsoft Sharepoint の活発なエコシステムと堅牢な API を使用できます。
+今日のデジタル時代では、どの組織でも、使いやすいフォームを作成することが不可欠です。 AEM Forms Edge Delivery のドキュメントベースオーサリングでは、Word やGoogle Docs などの使い慣れたツールを使用してフォームを作成できます。これらのフォームはMicrosoft Excel やGoogleシートファイルに直接送信され、Googleシート、Microsoft Excel、Microsoft Sharepoint の活発なエコシステムと堅牢な API を使用できます。
 
 このガイドでは、以下の手順について説明します。
 

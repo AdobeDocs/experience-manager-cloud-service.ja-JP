@@ -4,7 +4,7 @@ description: このチュートリアルでは、新しいAdobe Experience Manag
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 14171647dce7d2f6ce985616035eefa62c6955db
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 0%
@@ -18,11 +18,11 @@ ht-degree: 0%
 
 これらのフォームは、Microsoft Excel またはGoogleシートファイルに直接データを送信します。Googleシート、Microsoft Excel、Microsoft Sharepoint の活発なエコシステムと堅牢な API を使用して、送信されたデータを簡単に処理したり、既存のビジネスワークフローを開始したりできます。
 
-AEM Formsには、アダプティブFormsブロックと呼ばれるブロックが用意されており、これを使用すると、キャプチャしたデータを取得して保存するためのフォームを簡単に作成することができます。 アダプティブFormsブロックが事前に装備された新しいAEMプロジェクトを作成したり、既存のAEMプロジェクトにアダプティブFormsブロックを追加したりできます。
+AEM Formsには、アダプティブFormsブロックと呼ばれるブロックが用意されており、これを使用すると、キャプチャしたデータを取得して保存するためのフォームを簡単に作成することができます。 アダプティブFormsブロックで事前設定された新しいAEMプロジェクトを作成したり、既存のAEMプロジェクトにアダプティブFormsブロックを追加したりできます。
 
 このAEM Formsチュートリアルでは、新しいAdobe Experience Manager(AEM)Formsプロジェクトを使用して独自のカスタムフォームを作成、プレビュー、公開する手順を説明します。 また、アダプティブFormsブロックを既存のAEMプロジェクトに追加する方法についても説明します。
 
-* **[アダプティブFormsブロックが事前に装備された新しいAEMプロジェクトを作成する](#create-a-new-eds-project-pre-equipped-with-adaptive-forms-block)**
+* **[アダプティブFormsブロックで事前設定された新しいAEMプロジェクトを作成します。](#create-a-new-eds-project-pre-configured-with-adaptive-forms-block)**
 * **[アダプティブFormsブロックを既存のAEMプロジェクトに追加する](#add-adaptive-forms-block-to-an-existing-eds-project)**
 
 
@@ -37,7 +37,7 @@ AEM Formsには、アダプティブFormsブロックと呼ばれるブロック
 **上がれ！** このチュートリアルでは、macOS、Chrome および Visual Studio Code を使用します。 この手順は他の設定にも適応できますが、スクリーンショットと特定の UI 要素は、選択したオペレーティングシステム、ブラウザー、コードエディターに応じて異なる場合があります。
 
 
-## アダプティブFormsブロックが事前に装備された新しいAEMプロジェクトを作成する
+## アダプティブFormsブロックで事前設定された新しいAEMプロジェクトを作成します。
 
 AEM Forms Boilerplate テンプレートを使用すると、アダプティブFormsブロックが事前に設定されたAEMプロジェクトをすばやく開始できます。 AEMのベストプラクティスに従って、すぐにフォームを作成する方法です。
 

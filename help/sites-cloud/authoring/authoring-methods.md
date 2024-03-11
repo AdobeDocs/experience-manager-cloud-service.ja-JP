@@ -2,13 +2,13 @@
 title: AEMでコンテンツをオーサリングする方法
 description: AEMでコンテンツをオーサリングする様々な方法とその違いについて説明します。
 feature: Authoring
-source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
+exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
 
 ---
-
 
 # AEMでコンテンツをオーサリングする方法 {#authoring-methods}
 
@@ -63,12 +63,12 @@ AEMコンテンツフラグメントエディターの詳細については、�
 
 ユニバーサルエディターの詳細については、ドキュメントを参照してください [ユニバーサルエディターを使用したコンテンツのオーサリング。](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-## ドキュメントベースのオーサリング {#document-based}
+## ドキュメントベースのオーサリング  {#document-based}
 
 Edge 配信サービスを使用する場合、Microsoft Word やGoogle Docs などの従来のドキュメントとは全く別のドキュメントとして、コンテンツを作成することもできます。 [AEM **Sites** コンソール。](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 ![ドキュメントベースのコンテンツの編集](assets/authoring-methods-document.jpg)
 
-ドキュメントベースのオーサリングでは、作成者は既に知っているツールを使用でき、AEMEdge Delivery Servicesの速度とパフォーマンスのメリットを活用して、コンテンツを公開できます。 ドキュメントベースのオーサリングでは、AEMコンソールを使用する必要はありません。
+ドキュメントベースのオーサリングでは、作成者は既に把握しているツールを使用し、AEMEdge Delivery Servicesの速度とパフォーマンスのメリットを活用して、コンテンツを公開できます。 ドキュメントベースのオーサリングでは、AEMコンソールを使用する必要はありません。
 
-ドキュメントベースのオーサリングについて詳しくは、ドキュメントを参照してください [Edge Delivery Services用コンテンツのオーサリング](/help/edge/authoring.md)
+ドキュメントベースのオーサリングについて詳しくは、ドキュメントを参照してください。 [Edge Delivery Services用コンテンツのオーサリング](/help/edge/authoring.md)

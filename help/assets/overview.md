@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: b3bfc841f0609e1e529c97dd1f11d16de561701c
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '892'
-ht-degree: 92%
+ht-degree: 86%
 
 ---
 
@@ -58,7 +58,7 @@ DAM ライブラリ担当者、開発者およびスーパーユーザーは、�
 
 Edge 配信を使用すると、作成者がコンテンツをすばやく更新および公開でき、新しいサイトを迅速に起動できる、魅力的な迅速な Web サイトを作成できます。
 
-AEM Assetsをドキュメントベースのオーサリングと統合して、Edge Delivery Services向けに Web サイト作成者がMicrosoft Word またはGoogleドキュメントでドキュメントを作成する際に、AEM Assetsリポジトリで使用可能な画像を使用できるようにします。 詳しくは、 [AEM Assetsとドキュメントベースのオーサリングの統合](/help/edge/using.md#integrate-assets-edge).
+Edge Delivery Services向けAEM Assetsとドキュメントベースのオーサリングを統合し、Web サイト作成者がMicrosoft Word またはGoogle Docs でドキュメントを作成する際に、AEM Assetsリポジトリで使用可能な画像を使用できるようにします。 詳しくは、 [AEM Assetsとドキュメントベースのオーサリングの統合](/help/edge/using.md#integrate-assets-edge).
 
 ## Adobe Journey Optimizerとの統合 {#integration-with-ajo}
 

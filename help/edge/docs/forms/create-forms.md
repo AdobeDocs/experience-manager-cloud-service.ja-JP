@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # アダプティブFormsブロックを使用したフォームの作成
 
-AEM Forms Edge Delivery には、アダプティブFormsブロックと呼ばれるブロックが用意されており、これを使用すると、フォームを簡単に作成して、取り込んだデータを取り込み、保存することができます。 以下が可能です。 [アダプティブFormsブロックが事前に装備された新しいAEMプロジェクトを作成する](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) または [アダプティブFormsブロックを既存のAEMプロジェクトに追加する](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
+AEM Forms Edge Delivery には、アダプティブFormsブロックと呼ばれるブロックが用意されており、これを使用すると、フォームを簡単に作成して、取り込んだデータを取り込み、保存することができます。 以下が可能です。 [アダプティブFormsブロックで事前設定された新しいAEMプロジェクトを作成する](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) または [アダプティブFormsブロックを既存のAEMプロジェクトに追加する](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
 これらのフォームは、Microsoft Excel またはGoogleシートファイルに直接データを送信します。Googleシート、Microsoft Excel、Microsoft Sharepoint の活発なエコシステムと堅牢な API を使用して、送信されたデータを簡単に処理したり、既存のビジネスワークフローを開始したりできます。
 
@@ -27,7 +27,7 @@ AEM Forms Edge Delivery には、アダプティブFormsブロックと呼ばれ
 
 開始する前に、次の手順が完了していることを確認します。
 
-* を設定します。 [AEM Forms BoilerPlate を使用したAEMプロジェクト](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) または [アダプティブFormsブロックを既存のAEMプロジェクトに追加しました](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 対応する GitHub リポジトリをローカルマシンに複製します。
+* を設定します。 [AEM Forms BoilerPlate を使用したAEMプロジェクト](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) または [アダプティブFormsブロックを既存のAEMプロジェクトに追加しました](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 対応する GitHub リポジトリをローカルマシンに複製します。
 このドキュメントでは、Edge Delivery Services(EDS) プロジェクトのローカルフォルダーを `[EDS Project repository]`.
 * Google Sheet またはMicrosoft SharePointへのアクセス権があることを確認します。 Microsoft SharePointをコンテンツソースとして設定するには、 [SharePoint の使用方法](https://www.aem.live/docs/setup-customer-sharepoint).
 
