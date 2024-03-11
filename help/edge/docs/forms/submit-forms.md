@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '973'
 ht-degree: 1%
 
 ---
@@ -286,3 +286,6 @@ POST本文のフォームデータを書式設定する方法はいくつかあ�
 
 次に、「ありがとうございます」メッセージをカスタマイズできます。 [「ありがとうございます」ページの設定](/help/edge/docs/forms/thank-you-page-form.md)または [リダイレクトの設定](/help/edge/docs/forms/thank-you-page-form.md).
 
+## 関連トピック
+
+{{see-more-forms-eds}}

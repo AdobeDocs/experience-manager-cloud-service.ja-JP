@@ -1,5 +1,5 @@
 ---
-source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 67%
@@ -61,7 +61,7 @@ ht-degree: 67%
 
 [!BADGE 先行アクセステクノロジー —SlackチャネルのAEM Sitesラボから、この機能についてお問い合わせください。]{type=Informative url="/help/edge/docs/slack.md" tooltip="AEMを使用したEdge Delivery Servicesのオーサリングは、アーリーアクセステクノロジーです。"}
 
-## 詳細を表示する {#see-more-forms-eds}
+## 関連トピック {#see-more-forms-eds}
 
 * [AEM FormsEdge Delivery Servicesの概要](/help/edge/docs/forms/tutorial.md)
 * [Google Sheet またはMicrosoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)

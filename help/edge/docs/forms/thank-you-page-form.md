@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '576'
 ht-degree: 1%
 
 ---
@@ -80,12 +80,6 @@ ht-degree: 1%
 「感謝状」ページを別のページにリダイレクトするには、 [web サイトのリダイレクト](https://www.aem.live/docs/redirects) スプレッドシート。
 
 
-## 詳細を表示する
+## 関連トピック
 
-* [フォームコンポーネント](/help/edge/docs/forms/form-components.md)
-* [フォームフィールドのプロパティ](/help/edge/docs/forms/eds-form-field-properties)
-* [フォームの作成とプレビュー](/help/edge/docs/forms/create-forms.md)
-* [フォームからデータを送信できるようにする](/help/edge/docs/forms/submit-forms.md)
-* [サイトページにフォームを発行する](/help/edge/docs/forms/publish-forms.md)
-* [フォームフィールドに検証機能を追加する](/help/edge/docs/forms/validate-forms.md)
-* [フォームのテーマとスタイルを変更する](/help/edge/docs/forms/style-theme-forms.md)
+{{see-more-forms-eds}}

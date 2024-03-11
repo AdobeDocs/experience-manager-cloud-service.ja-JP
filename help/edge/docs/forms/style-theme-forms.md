@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '1819'
+source-wordcount: '1821'
 ht-degree: 0%
 
 ---
@@ -823,3 +823,6 @@ CSS セレクターを使用して、特定のフィールドタイプをター�
 
 この CSS は、クラスを持つ要素内にあるすべての入力要素をターゲットに設定します `field-otp`. フォームのHTML構造は、アダプティブFormsブロックの規則に従います。これは、「field-otp」というクラスでマークされたコンテナが、「otp」という名前のフィールドを保持していることを意味します。
 
+## 関連トピック
+
+{{see-more-forms-eds}}

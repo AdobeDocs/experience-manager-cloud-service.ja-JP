@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -27,21 +27,20 @@ AEM FormsEdge Delivery Servicesは、作成者が新しいフォームをすば�
 
 ## AEM FormsEdge Delivery Servicesの概要 {#edge-overview}
 
-次の図は、 Microsoft Excel またはGoogleシート（ドキュメントベースのオーサリング）でフォームを編集し、Edge Delivery Servicesに公開する方法を示しています。 また、アダプティブFormsエディター (AEMオーサリング ) を使用したAEMの公開方法も表示されます。
+AEM Forms Edge Delivery Services は、Web サイト上でフォームを作成する際の柔軟性を高める、合成可能な一連のサービスです。 AEMコンテンツ管理を [AEM authoring](/help/forms/creating-adaptive-form-core-components.md) 同様に [ドキュメントベースのオーサリング](/help/edge/docs/forms/create-forms.md). AEM FormsEdge Delivery Servicesには、 [アダプティブFormsブロック](/help/edge/docs/forms/create-forms.md) をクリックして、フォームをEdge Delivery Servicesサイトに追加します。
+
+例えば、Microsoft Excel やGoogleシートで直接フォームを作成し、これらのスプレッドシートを Web サイト用のフォームに変換したとします。 新しいフォームやフォームコンテンツ（新しいフォームフィールドなど）は、再構築プロセスを必要とせずに、Web サイト上で即座に使用できます。
+
+次の図は、Microsoft Excel またはGoogleシート（ドキュメントベースのオーサリング）でフォームを編集し、Edge Delivery Servicesに公開する方法を示しています。 また、アダプティブFormsエディター (AEMオーサリング ) を使用したAEMの公開方法も表示されます。
 
 ![Edge Delivery のアーキテクチャ](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-AEM Forms Edge Delivery Services は、Web サイト上でフォームを作成する際の柔軟性を高める、合成可能な一連のサービスです。 AEMコンテンツ管理を [AEM authoring](/help/forms/creating-adaptive-form-core-components.md) 同様に [ドキュメントベースのオーサリング](/help/edge/docs/forms/create-forms.md).
-
-例えば、Microsoft Excel やGoogleシートで直接フォームを作成し、これらのスプレッドシートを Web サイト用のフォームに変換したとします。 新しいフォームやフォームコンテンツ（新しいフォームフィールドなど）は、再構築プロセスを必要とせずに、Web サイト上で即座に使用できます。
 
 AEM FormsEdge Delivery Servicesでは GitHub を使用するので、ユーザーは GitHub リポジトリから直接コードを管理およびデプロイできます。 例えば、次のいずれかの方法でフォームを書き込むことができます。 [Google Sheet またはMicrosoft Excel](/help/edge/docs/forms/create-forms.md) また、フォームのコンポーネントは、GitHub で CSS と JavaScript を使用して開発できます。
 
 準備が整ったら、 [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content):chrome ブラウザー拡張機能。コンテンツの更新をプレビューおよび公開します。
 
 ![インストールAEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
-
-AEM FormsEdge Delivery Servicesは、 [アダプティブFormsブロック](/help/edge/docs/forms/create-forms.md) をクリックして、フォームをEdge Delivery Servicesサイトに追加します。
 
 次の中から選択： [ドキュメントベースのオーサリング](#document-based-authoring-features) および [AEM authoring](#aem-authoring-features) は、具体的な要件に応じて異なります。
 

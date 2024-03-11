@@ -4,9 +4,9 @@ description: このチュートリアルでは、新しいAdobe Experience Manag
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1854'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 今日のデジタル時代では、どの組織でも、使いやすいフォームを作成することが不可欠です。 AEM FormsEdge Delivery Services(EDS) を使用すると、Google Docs やMicrosoft Office などの使い慣れたツールを使用してフォームを作成できます。
 
-これらのフォームは、Microsoft Excel またはGoogleシートファイルに直接データを送信します。Googleシート、Microsoft Excel、Microsoft Sharepoint の活発なエコシステムと堅牢な API を使用して、送信されたデータを簡単に処理したり、既存のビジネスワークフローを開始したりできます。
+これらのフォームは、Microsoft Excel またはGoogleシートファイルに直接データを送信します。これにより、Googleシート、Microsoft Excel、Microsoft SharePointの活発なエコシステムと堅牢な API を使用して、送信されたデータを簡単に処理したり、既存のビジネスワークフローを開始したりできます。
 
 AEM Formsには、アダプティブFormsブロックと呼ばれるブロックが用意されており、これを使用すると、キャプチャしたデータを取得して保存するためのフォームを簡単に作成することができます。 アダプティブFormsブロックで事前設定された新しいAEMプロジェクトを作成したり、既存のAEMプロジェクトにアダプティブFormsブロックを追加したりできます。
 
@@ -127,16 +127,16 @@ AEM Forms Boilerplate テンプレートを使用すると、アダプティブF
       Microsoft SharePointを使用する場合、フォルダーパスは次の形式を使用します。
 
       ```HTML
-      https://<tenant>.sharepoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+      https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
       ```
 
       例：
 
       ```HTML
-      https://adobe.sharepoint.com/sites/wkndforms/Shared%20Documents/wefinance
+      https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      Microsoft SharePoint内でのファイル管理について詳しくは、 [AdobeSharePoint の使用方法](https://www.aem.live/docs/setup-customer-sharepoint).
+      Microsoft SharePoint内でのファイル管理について詳しくは、 [AdobeSharePointの使用方法](https://www.aem.live/docs/setup-customer-SharePoint).
 
 
 
@@ -299,7 +299,5 @@ AEM Sidekickを使用して、問い合わせドキュメントをプレビュ�
 
 ## 関連トピック
 
-* [Google Sheet またはMicrosoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
-* [Microsoft Excel またはGoogleシートに直接フォームを送信する](/help/edge/docs/forms/submit-forms.md)
-* [フォームの外観を変更する](/help/edge/docs/forms/style-theme-forms.md)
+{{see-more-forms-eds}}
 
