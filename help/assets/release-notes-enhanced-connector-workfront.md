@@ -2,9 +2,9 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 439ae08bb606d6d335fa189e99c1b483f636683e
+source-git-commit: 411793f140a2a9cf482d820382d41de843a97e87
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1648'
 ht-degree: 97%
 
 ---
@@ -13,17 +13,14 @@ ht-degree: 97%
 
 以下の節では、[!DNL Workfront for Experience Manager enhanced connector] の一般リリースノートの概要を説明します。
 
-## リリース日 {#release-date}
-
-[!DNL Workfront for Experience Manager enhanced connector] の最新バージョン 1.9.17 のリリース日は 2024年2月7日（PT）です。
+[!DNL Workfront for Experience Manager enhanced connector] の最新バージョン 1.9.18 のリリース日は 2024年3月8日（PT）です。
 
 ## リリースのハイライト {#release-highlights}
 
-[!DNL Workfront for Experience Manager enhanced connector] の最新バージョンには、次のバグ修正が含まれています。
+の最新バージョン [!DNL Workfront for Experience Manager enhanced connector] には、次のバグ修正が含まれています。
 
-* 切り替え機能を有効にして、AEM Cloud のお客様がコネクタを設定および設定できるようにします。
-
-* を閉じる `resourceResolver` 基になるセッションを明示的に閉じないと、AEMインスタンスでセッションリークが発生します。 Resource Resolver を自動閉じると、セッションが暗黙的に閉じられないので、セッションを明示的に閉じることが重要です。
+* Workfrontからの複数アセットのアップロードを処理する際に問題が発生します。
+* Workfrontを使用してExperience Manager結果内のフォルダーを検索する場合に、閉じ引用符を追加しない `SERVER_ERROR`.
 
 >[!NOTE]
 >
@@ -32,7 +29,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->アドビでは [!DNL Workfront for Experience Manager enhanced connector] の[最新バージョン 1.9.17 へのアップグレード](/help/assets/workfront-connector-install.md)をお勧めします。
+>アドビでは [!DNL Workfront for Experience Manager enhanced connector] の[最新バージョン 1.9.18 へのアップグレード](/help/assets/workfront-connector-install.md)をお勧めします。
 
 ## 既知の問題 {#known-issues}
 
@@ -41,6 +38,12 @@ ht-degree: 97%
 * 従来の Workfront エクスペリエンスを使用している場合、**[!UICONTROL 詳細]**&#x200B;ドロップダウンリストで選択できる「**[!UICONTROL 送信先]**」オプションでは、Experience Manager 内のターゲット宛先を選択できません。「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストを使用する場合、「**[!UICONTROL 送信先]**」オプションは正常に機能します。新しい Workfront エクスペリエンスの「**[!UICONTROL 詳細]**」ドロップダウンリストと「**[!UICONTROL ドキュメントアクション]**」ドロップダウンリストでは、「**[!UICONTROL 送信先]**」オプションは正常に機能します。
 
 ## 以前のリリース {#previous-releases}
+
+### 2024年2月リリース {#february-2023-release}
+
+* 切替スイッチ機能を有効にすると、AEM Cloud のお客様がコネクタを設定およびセットアップできるようになる。
+
+* 基になるセッションを明示的に閉じずに `resourceResolver` を閉じると、AEM インスタンスでセッションリークが発生する。リソースリゾルバーを自動終了してもセッションは暗黙的に閉じられないので、セッションを明示的に閉じることが重要です。
 
 ### 2024年1月リリース {#january-2023-release}
 
