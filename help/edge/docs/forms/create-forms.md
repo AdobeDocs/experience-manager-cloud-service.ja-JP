@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '803'
 ht-degree: 1%
 
 ---
@@ -28,8 +28,8 @@ AEM Forms Edge Delivery には、アダプティブFormsブロックと呼ばれ
 開始する前に、次の手順が完了していることを確認します。
 
 * を設定します。 [AEM Forms BoilerPlate を使用したAEMプロジェクト](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) または [アダプティブFormsブロックを既存のAEMプロジェクトに追加しました](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 対応する GitHub リポジトリをローカルマシンに複製します。
-このドキュメントでは、Edge Delivery Services(EDS) プロジェクトのローカルフォルダーを `[EDS Project repository]` .
-* Google Sheet またはMicrosoft SharePointへのアクセス権があることを確認します。 Microsoft SharePointをコンテンツソースとして設定するには、 [SharePoint の使用方法](https://www.aem.live/docs/setup-customer-sharepoint)
+このドキュメントでは、Edge Delivery Services(EDS) プロジェクトのローカルフォルダーを `[EDS Project repository]`.
+* Google Sheet またはMicrosoft SharePointへのアクセス権があることを確認します。 Microsoft SharePointをコンテンツソースとして設定するには、 [SharePoint の使用方法](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
 
@@ -80,6 +80,8 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 1. AEM Edge Delivery プロジェクトディレクトリ内の任意の場所で、Microsoft Excel ワークブックまたはGoogleシートを作成します。 例えば、 `enquiry` (Google Drive のAEM Edge Delivery プロジェクトディレクトリ )
 
+   ![Google Drive のサンプルコンテンツ](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
+
 1. シートが適切なAEMユーザー ( 例： `helix@adobe.com`) [プロジェクトに指定された設定に従って](https://www.aem.live/docs/setup-customer-sharepoint). ユーザにシートの編集権限を付与します。
 
 1. 作成したスプレッドシートを開き、デフォルトのシートの名前を「shared-default」に変更します。
@@ -87,6 +89,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
    ![既定のシートの名前を&quot;shared-default&quot;に変更](/help/edge/assets/rename-sheet-to-shared-default.png)
 
 1. フォームフィールドを追加するには、行と列のヘッダーを「shared-default」シートに挿入します。 各行は、 [フォームフィールド](/help/edge/docs/forms/form-components.md#available-components)を作成し、対応するフィールドを定義する列ヘッダーを含めます。 [プロパティ](/help/edge/docs/forms/form-components.md#components-properties).
+
 
    すぐに開始するには、 [照会スプレッドシート](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) をスプレッドシートに追加します。 内容をコピーした後、スプレッドシートを保存します。
 
@@ -118,19 +121,24 @@ Ensure a smooth GitHub build process by addressing potential issues:
 +++ 手順 2:Edge Delivery Services(EDS) ページを使用してフォームをプレビューする。
 
 
-これまで、アダプティブFormsブロックを EDS プロジェクトに追加し、フォームの構造を準備しました。 次に、フォームをプレビューします。
+これまでは、フォームの構造を準備しています。 次に、フォームをプレビューします。
 
-1. **プロジェクトディレクトリにアクセスする：** Microsoft SharePointまたはGoogle Drive アカウントを開き、 AEM Edge Delivery プロジェクトディレクトリに移動します。
+1. Microsoft SharePointまたはGoogle Drive アカウントを開き、 AEM Edge Delivery プロジェクトディレクトリに移動します。
 
-1. **フォームをドキュメントに埋め込む：** フォームを埋め込むドキュメントファイル（インデックスファイルなど）を開きます。 または、新しいドキュメントを作成できます。
 
-1. **目的の場所に移動します。** フォームを追加するドキュメント内の目的の場所に移動します。
 
-1. **アダプティブFormsブロックを追加します。** フォームをレンダリングするフォームブロックを作成する場合。 挿入/テーブルを選択し、1 列 2 行のテーブルを作成します。 テーブルに「Form」という名前を付け、2 行目にプレビュー URL を貼り付けます。 URL がプレーンテキストではなく、ハイパーリンクとしてフォーマットされていることを確認します（下図を参照）。
+1. フォームを埋め込むドキュメントファイル（インデックスファイルなど）を開きます。 または、新しいドキュメントを作成できます。
+
+1. フォームを追加するドキュメント内の目的の場所に移動します。
+
+1. フォームをレンダリングするフォームブロックを作成する場合。 挿入/テーブルを選択し、1 列 2 行のテーブルを作成します。 テーブルに「Form」という名前を付け、2 行目にプレビュー URL を貼り付けます。 URL がプレーンテキストではなく、ハイパーリンクとしてフォーマットされていることを確認します（下図を参照）。
 
    | フォーム |
    |---|
-   | [https://main—portal—wkndforms.hlx.live/inquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json) |
+   | [https://main—wefinance—wkndforms.hlx.live/inquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+
+
+   ![アダプティブFormsブロックを Web ページに追加する](/help/edge/assets/add-adaptive-forms-block.png)
 
    このブロックは、フォームが埋め込まれるプレースホルダーとして機能します。 ブロックの 2 行目に、 `<form>.json` ファイルをハイパーリンクとして保存します。
 

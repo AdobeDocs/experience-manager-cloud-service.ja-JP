@@ -1,8 +1,8 @@
 ---
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 75%
+source-wordcount: '367'
+ht-degree: 67%
 
 ---
 # スニペット {#snippets}
@@ -61,11 +61,13 @@ ht-degree: 75%
 
 [!BADGE 先行アクセステクノロジー —SlackチャネルのAEM Sitesラボから、この機能についてお問い合わせください。]{type=Informative url="/help/edge/docs/slack.md" tooltip="AEMを使用したEdge Delivery Servicesのオーサリングは、アーリーアクセステクノロジーです。"}
 
-## 関連トピック {#see-also-forms-eds}
+## 詳細を表示する {#see-more-forms-eds}
 
-* [フォームコンポーネント](/help/edge/docs/forms/form-components.md)
-* [フォームの作成とプレビュー](/help/edge/docs/forms/create-forms.md)
-* [フォームからデータを送信できるようにする](/help/edge/docs/forms/submit-forms.md)
-* [サイトページにフォームを発行する](/help/edge/docs/forms/publish-forms.md)
-* [フォームフィールドに検証機能を追加する](/help/edge/docs/forms/validate-forms.md)
-* [フォームのテーマとスタイルを変更する](/help/edge/docs/forms/style-theme-forms.md)
+* [AEM FormsEdge Delivery Servicesの概要](/help/edge/docs/forms/tutorial.md)
+* [Google Sheet またはMicrosoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
+* [データの受け入れを開始するためのGoogleシートまたはMicrosoft Excel ファイルのセットア&#x200B;ップ](/help/edge/docs/forms/submit-forms.md)
+* [フォームを発行してデータの収集を開始する](/help/edge/docs/forms/publish-forms.md)
+* [フォームの外観をカスタマイズす&#x200B;る](/help/edge/docs/forms/style-theme-forms.md)
+* [フォームに繰り返し可能なセクションを&#x200B;追加](/help/edge/docs/forms/repeatable-forms.md)
+* [フォーム送信後にカスタムの「ありがとうございます」メッセージを&#x200B;表示](/help/edge/docs/forms/thank-you-page-form.md)
+* [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)

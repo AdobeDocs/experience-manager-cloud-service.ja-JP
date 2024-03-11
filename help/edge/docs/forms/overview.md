@@ -5,43 +5,46 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
+source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 17%
+source-wordcount: '823'
+ht-degree: 2%
 
 ---
 
 # AEM FormsEdge Delivery Services
 
-AdobeのAEM FormsEdge Delivery Servicesを使用して、フォームの作成を合理化し、完了率を高めます。 これらの強力で合成可能なサービスにより、優れたパフォーマンスと視覚的な魅力を備えたエンタープライズクラスのフォームを構築できます。 AEMは、ユーザーエクスペリエンスとビジネス目標の両方を優先し、超高速読み込み時間とフォームのコンバージョンの向上を保証します。
+AEM FormsEdge Delivery Servicesは、作成者がすばやく更新および公開でき、新しいフォームが迅速に起動される、迅速な開発環境を可能にする、合成可能なサービスのセットです。
 
-サービスを使用して以下のことが行えます。
+AEM FormsEdge Delivery Servicesは、エンゲージメントとコンバージョンを促進する優れたフォームエクスペリエンスを提供し、オーサリングと開発が容易なインパクトの大きいエクスペリエンスを実現します。
 
-* **優れた登録エクスペリエンスの構築**：低速なインターネット接続でも、すばやく読み込んでレンダリングする登録エクスペリエンスを構築します。 読み込み時間の短縮と最適化されたユーザーエクスペリエンスは、フォームの完了率の向上とコンバージョン率の向上に貢献します。
+これらのサービスを使用すると、次のことができます。
 
-* **任意のツールを使用して登録エクスペリエンスを作成**：コンテンツソースを分離することで、オーサリングの効率を向上させます。 標準では、 **ドキュメントベースのオーサリング** (Microsoft SharePointまたはGoogle Drive) および **AEM authoring** ( アダプティブFormsエディター )。 そのため、同じフォーム上で複数のコンテンツソースを操作し、Microsoft Excel、Googleシート、アダプティブFormsエディターなどの好みのオーサリングツールを使用できます。
+* **任意のツールを使用して、登録エクスペリエンスを作成します。** コンテンツソースを分離してオーサリング効率を向上させます。 標準では、ドキュメントベースのオーサリング (Microsoft SharePointまたはGoogle Drive) とAEMのオーサリング ( アダプティブFormsエディター ) の両方を使用できます。 そのため、同じフォーム上で複数のコンテンツソースを操作し、Microsoft Excel、Googleシート、アダプティブFormsエディターなどの好みのオーサリングツールを使用できます。
 
-* **開発者向けのツールセットを使用：** AEM Formsは、プレーンHTML、最新の CSS、Vanilla JavaScript を使用して、通常のオーバーヘッドなしで例外的なエクスペリエンスを作成します。 HTML、CSS および JS の基本的な知識を持つ開発者は、独自のコンポーネントを構築でき、特定の言語やフレームワークを学ぶ必要はありません。 パイプラインや待機は不要です。コードを GitHub にチェックインすると、変更は有効になります。 さらに、パイプラインや待機は必要ありません。コードを GitHub にチェックインすると、変更が反映されます。
+* **優れたデジタル登録エクスペリエンスを提供：** すばやく読み込んでレンダリングするデジタル登録エクスペリエンスを配信します。 読み込み時間の短縮と最適化されたユーザーエクスペリエンスにより、フォームの完成率とコンバージョン率が向上します。
 
+* **開発者向けのツールセットを使用：** AEM Formsは、プレーンHTML、最新の CSS、バニラ JavaScript を使用して、例外的なエクスペリエンスを作成し、特定のフレームワークの急激な学習曲線を回避します。 基本的な Web 開発スキルを持つ開発者は、フォームのコンポーネントやエクスペリエンスをカスタマイズし、容易に構築できます。 パイプラインの実行を待つ必要はありません。コードを Github にチェックインするだけで、変更は有効になります。
 
 ## AEM FormsEdge Delivery Servicesの概要 {#edge-overview}
 
-次の図は、Microsoft Excel またはGoogleシート（ドキュメントベースの編集）でコンテンツを編集し、Edge Delivery Servicesに公開する方法を示しています。 また、アダプティブFormsエディターを使用したAEMの公開方法も表示されます。
+次の図は、Microsoft Excel またはGoogleシート（ドキュメントベースの編集）でフォームを編集し、Edge Delivery Servicesに公開する方法を示しています。 また、アダプティブFormsエディターを使用したAEMの公開方法も表示されます。
 
 ![Edge Delivery のアーキテクチャ](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-Edge 配信サービスは、web サイト上のコンテンツの非常に柔軟なオーサリングを可能にする、構成可能なサービスセットです。AEMコンテンツ管理を [AEM authoring](/help/forms/creating-adaptive-form-core-components.md) 同様に [ドキュメントベースのオーサリング](/help/edge/docs/forms/create-forms.md)
+AEM Forms Edge Delivery Services は、Web サイト上でフォームを作成する際の柔軟性を高める、合成可能な一連のサービスです。 AEMコンテンツ管理を [AEM authoring](/help/forms/creating-adaptive-form-core-components.md) 同様に [ドキュメントベースのオーサリング](/help/edge/docs/forms/create-forms.md).
 
-例えば、Microsoft Excel やGoogleシートから直接コンテンツを使用できます。 つまり、これらのソースのコンテンツを Web サイト上のフォームにすることができます。 新しいコンテンツは、再作成プロセスなしで即座に追加されます。
+例えば、Microsoft Excel やGoogleシートで直接フォームを作成し、これらのスプレッドシートを Web サイト用のフォームに変換したとします。 新しいフォームフィールドなどの新しいフォームコンテンツは、再構築プロセスを必要とせずに、Web サイト上で即座に使用できます。
 
-Edge 配信サービスでは GitHub を利用しているので、ユーザーは自分の GitHub リポジトリから直接コードを管理およびデプロイできます。例えば、GoogleシートまたはMicrosoft Excel でフォームを作成し、GitHub で CSS と JavaScript を使用してフォームのコンポーネントを開発することができます。 準備が整ったら、Sidekick ブラウザー拡張機能を使用して、コンテンツの更新をプレビューおよび公開できます。
+Edge 配信サービスでは GitHub を利用しているので、ユーザーは自分の GitHub リポジトリから直接コードを管理およびデプロイできます。例えば、次のいずれかの方法でフォームを書き込むことができます。 [Google Sheet またはMicrosoft Excel](/help/edge/docs/forms/create-forms.md) また、フォームのコンポーネントは、GitHub で CSS と JavaScript を使用して開発できます。 準備が整ったら、 [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content) コンテンツの更新をプレビューおよび公開するためのブラウザー拡張機能。
+
+![インストールAEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
 
 AEM FormsEdge Delivery Servicesは、 [アダプティブFormsブロック](/help/edge/docs/forms/create-forms.md) をクリックして、フォームをEdge Delivery Servicesサイトに追加します。
 
-### AEM FormsEdge Delivery Servicesの主な機能
+### ドキュメントベースのオーサリングとAEMオーサリングの主な機能
 
-ドキュメントベースのオーサリング基本的な一連の機能とAEMのオーサリングでは、ドキュメントベースのオーサリング以外の追加機能がロック解除され、より複雑でインタラクティブなフォームを構築できます。 次の表は、両方の主な機能を示しています。
+ドキュメントベースのオーサリングには、基本的な機能のセットが用意されています。AEMオーサリングでは、ドキュメントベースのオーサリング以外の追加機能をロック解除し、より複雑でインタラクティブなフォームを作成できます。 ドキュメントベースのオーサリングとAEMオーサリングの両方の主な機能は次のとおりです。
 
 <!-- 
 
@@ -89,37 +92,45 @@ AEM Authoring unlocks additional capabilities beyond the document-based authorin
 
 -->
 
-|                                           | ドキュメントベースのオーサリング | AEMオーサリング ( アダプティブFormsエディター ) |
-| ----------------------------------------- | ------------------------ | ------------------------------------ |
-| **フォーム機能** |                          |                                      |
-| アクセシブルなコンポーネント | ✓ | ✓ |
-| 標準化されたHTML構造 | ✓ | ✓ |
-| ルールと検証 | ✓ | ✓ |
-| 添付ファイル（ファイルのアップロード） | ✓ | ✓ |
-| Google reCAPTCHA | ✓ | ✓ |
-| カスタムコンポーネント | ✓ | ✓ |
-| 電子メールに送信 | ✓ | ✓ |
-| **高度な機能** |                          |                                      |
-| ビジュアルルールエディターを使用した高度なルール |                          | ✓ |
-| サーバー側の拡張機能 |                          | ✓ |
-| 複数の送信アクション |                          | ✓ |
-| **フォームデザインと管理** |                          |                                      |
-| WYSIWYG 編集用のアダプティブFormsエディター |                          | ✓ |
-| **統合** |                          |                                      |
-| レコードのドキュメント |                          | ✓ |
-| Adobe Sign との統合 |                          | ✓ |
-| Adobe Analyticsとの統合 |                          | ✓ |
-| Marketoとの統合 |                          | ✓ |
-| 複数のデータソースとの統合 |                          | ✓ |
-| 複数の送信アクション |                          | ✓ |
+#### ドキュメントベースのオーサリング機能
 
+ドキュメントベースのオーサリングを使用すると、Microsoft Excel やGoogle Sheet などの使い慣れたツールを使用してフォームを作成できます。 これらのフォームは、次の機能を提供します。
+
+* 使いやすいエクスペリエンスのためのアクセシブルなコンポーネント。
+* 一貫性のあるレンダリングのための標準化されたHTML構造。
+* ルールと検証を使用して、データの正確性を確保します。
+* 追加情報を収集するためのファイル添付オプション。
+* スパム保護のためのGoogle reCAPTCHA 統合。
+* 特定のニーズに合わせてカスタムフォームコンポーネントを作成する機能。
+* フォームデータをMicrosoft Excel、Googleシート、電子メールアドレスに直接送信する。
+
+#### AEMオーサリング機能
+
+AEMオーサリング ( アダプティブFormsエディターを使用 ) には、フォームを作成するための WYSIWYG インターフェイスが用意されており、ドキュメントベースオーサリングのすべての機能に加えて、様々な機能を提供しています。
+
+* 複雑なロジックを作成するための高度なルールエディター。
+* カスタム機能用のサーバー側の拡張機能。
+* WYSIWYG で編集操作を実行して、フォームの作成と視覚化を容易にします。
+* 送信されたデータの改ざん防止アーカイブを作成するレコードのドキュメント機能。
+* 電子署名用のAdobe Signとの統合。
+* フォーム送信時にAdobe Workfront Fusion シナリオをトリガーするAdobe Workfront Fusion との統合。
+* フォームの事前入力やデータの送信を行うための様々なデータソースとの統合。
+* データ構造と様々なデータソースとのやり取りを定義するフォームデータモデル。
+* データをMicrosoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics、その他多くのデータソースに送信するなど、フォーム送信を処理するための複数の送信アクションを設定できる機能。
+
+基本的に、AEM Authoring はドキュメントベースのオーサリングの基盤を基に構築され、複雑なフォームを作成および管理するためのより高度なツールキットを提供します。
 
 ## フォームの作成を開始
 
-* [はじめに — 開発者向けチュートリアル](/help/edge/docs/forms/tutorial.md)
+* [AEM FormsEdge Delivery Servicesの概要](/help/edge/docs/forms/tutorial.md)
 * [Google Sheet またはMicrosoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
-* [Microsoft Excel またはGoogleシートに直接フォームを送信する](/help/edge/docs/forms/submit-forms.md)
-* [フォームの外観を変更する](/help/edge/docs/forms/style-theme-forms.md)
+* [データの受け入れを開始するためのGoogleシートまたはMicrosoft Excel ファイルのセットア&#x200B;ップ](/help/edge/docs/forms/submit-forms.md)
+* [フォームを発行してデータの収集を開始する](/help/edge/docs/forms/publish-forms.md)
+* [フォームの外観をカスタマイズす&#x200B;る](/help/edge/docs/forms/style-theme-forms.md)
+* [フォームに繰り返し可能なセクションを&#x200B;追加](/help/edge/docs/forms/repeatable-forms.md)
+* [フォーム送信後にカスタムの「ありがとうございます」メッセージを&#x200B;表示](/help/edge/docs/forms/thank-you-page-form.md)
+* [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
+
 
 
 <!-- 
