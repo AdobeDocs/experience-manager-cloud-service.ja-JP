@@ -1,13 +1,13 @@
 ---
 title: ユニバーサルエディタで使用するためのブロックの作成
 description: Edge Delivery Servicesプロジェクトを使用したAEMオーサリングで、ユニバーサルエディターで使用するために実装されたブロックを作成する方法について説明します。
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1204'
 ht-degree: 0%
 
 ---
-
 
 # ユニバーサルエディタで使用するためのブロックの作成 {#create-block}
 
@@ -21,7 +21,7 @@ Edge Delivery Servicesプロジェクトを使用したAEMオーサリングで�
 
 このガイドでは、必ずユニバーサルエディターと同様に、Edge Delivery Servicesプロジェクトを使用したAEMのオーサリングに関する既存の知識が必要です。 このガイドを始める前に、既にEdge Delivery Servicesにアクセスし、次のような基本事項を理解しておく必要があります。
 
-* これで [エッジ配信サービスのチュートリアル](/help/edge/developer/tutorial.md)
+* これで [エッジ配信サービスの口座です。](/help/edge/developer/tutorial.md)
 * 次に対するアクセス権があります： [AEM Cloud Serviceサンドボックス。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * お持ちの [は、同じサンドボックス環境でユニバーサルエディターを有効にしました。](/help/implementing/universal-editor/getting-started.md)
 * これで [Edge Delivery Servicesを使用したAEMオーサリングのための Developer Getting Guide](/help/edge/edge-dev-getting-started.md) ガイド。
@@ -237,7 +237,7 @@ Adobeでは、次の 3 段階の方法でブロックを作成することをお
 
    ![公開およびスタイル設定された見積もりブロック](assets/create-block/quote-styled-published.png)
 
-これで完了です。これで、完全に機能し、スタイル設定された見積もりブロックが作成されました。 この例を基に、独自のプロジェクト固有のブロックを設計できます。
+これですべて完了です。これで、完全に機能し、スタイル設定された見積もりブロックが作成されました。 この例を基に、独自のプロジェクト固有のブロックを設計できます。
 
 ## 他の作業ブランチの使用 {#other-branches}
 

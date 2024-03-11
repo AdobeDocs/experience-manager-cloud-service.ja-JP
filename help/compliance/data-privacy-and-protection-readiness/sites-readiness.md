@@ -2,10 +2,10 @@
 title: データ保護およびデータプライバシーに関する規制 - Adobe Experience Manager as a Cloud Service Sites の対応
 description: EU 一般データ保護規則（GDPR）やカリフォルニア州消費者プライバシー法など、データ保護およびデータプライバシーに関する様々な規制に対する Adobe Experience Manager as a Cloud Service Sites のサポートと、新しい AEM as a Cloud Service プロジェクトを実装する際にこれらの規制に準拠する方法について説明します。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 96%
+source-wordcount: '1001'
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Adobe Experience Manager には、ユーザーのオプトイン／オプトア�
 
    * このサイトへのユーザーの訪問に関するデータ集計および解析をオプトアウトするには、ブラウザーに cookie をインストールする必要があります。この cookie はユーザーがオプトアウトしたことを識別します。
 
-     オプトアウト Cookie を削除した場合、またはコンピューターや Web ブラウザーを変更した場合は、再度オプトアウトする必要があります。
+     オプトアウト cookie を削除する場合、またはコンピューターや web ブラウザーを変更する場合は、再度オプトアウトする必要があります。
 
      オプトアプト - ユーザーを訪問者セッション集計や解析から除外 (`amcglobal.sc.omtrdc.net` オプトアウト cookie をインストール) - ここをクリック
 
@@ -96,7 +96,7 @@ AEM には、ContextHub を使用するオプションのデータレイヤー�
 
 ### オプトイン／オプトアウトの実装 {#implementing-opt-in-opt-out}
 
-サイトの所有者は、次のガイドラインに従ってオプトアウトコンポーネントを実装する必要があります。
+サイト所有者は、次のガイドラインに従ってオプトアウトコンポーネントを実装する必要があります。
 
 以下のガイドラインでは、デフォルトでオプトインが実装されています。そのため、Web サイトの訪問者は、個人データがブラウザーの（クライアントサイド）永続ストレージに格納される前に、明確に同意する必要があります。
 
@@ -223,10 +223,10 @@ ContextHub の永続性を削除するには、以下を実行します。
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
   
   // following call asks all currently loaded stores to clear their data
-  ContextHub.cleanAllStores();
+  ContextHub.cleanAllStores ();
   
   // following call asks all currently loaded stores to set back default values (provided in their configs)
-  ContextHub.resetAllStores();
+  ContextHub.resetAllStores ();
   ```
 
 * 特定の永続性レイヤーを削除するには、例えば、sessionStorage は次のようになります。

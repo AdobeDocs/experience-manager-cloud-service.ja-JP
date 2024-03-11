@@ -1,8 +1,8 @@
 ---
-source-git-commit: 45b263651f6139b1c7f83ff3485186b272ba1a4f
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 69%
+source-wordcount: '331'
+ht-degree: 75%
 
 ---
 # スニペット {#snippets}
@@ -11,7 +11,7 @@ ht-degree: 69%
 
 [![30 日間の体験版を使用してヘッドレス CMS を理解しましょう](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=ja)
 
-## Edge Delivery Servicesオーサリング {#edge-delivery-authoring}
+## Edge 配信サービスのオーサリング {#edge-delivery-authoring}
 
 [!BADGE Edge 配信サービス向けの AEM コンテンツをオーサリングする場合は、こちらをクリックしてください。]{type=Positive url="/help/edge/overview.md" tooltip="Edge 配信サービス向けの AEM コンテンツのオーサリング"}
 
@@ -55,8 +55,17 @@ ht-degree: 69%
 * [Power Automate に送信](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Workfront Fusion に送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [アダプティブフォームを Salesforce アプリケーションに接続](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
-* [アダプティブフォームのMicrosoft® Dynamics OData への接続](/help/forms/ms-dynamics-odata-configuration.md)
+* [アダプティブフォームのMicrosoftへの接続](/help/forms/ms-dynamics-odata-configuration.md)
 
 ## AEM Authoring(Edge Delivery Servicesの早期アクセス ) {#aem-authoring-edge-early-access}
 
 [!BADGE 先行アクセステクノロジー —SlackチャネルのAEM Sitesラボから、この機能についてお問い合わせください。]{type=Informative url="/help/edge/docs/slack.md" tooltip="AEMを使用したEdge Delivery Servicesのオーサリングは、アーリーアクセステクノロジーです。"}
+
+## 関連トピック {#see-also-forms-eds}
+
+* [フォームコンポーネント](/help/edge/docs/forms/form-components.md)
+* [フォームの作成とプレビュー](/help/edge/docs/forms/create-forms.md)
+* [フォームからデータを送信できるようにする](/help/edge/docs/forms/submit-forms.md)
+* [サイトページにフォームを発行する](/help/edge/docs/forms/publish-forms.md)
+* [フォームフィールドに検証機能を追加する](/help/edge/docs/forms/validate-forms.md)
+* [フォームのテーマとスタイルを変更する](/help/edge/docs/forms/style-theme-forms.md)

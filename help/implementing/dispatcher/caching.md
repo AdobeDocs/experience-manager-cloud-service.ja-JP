@@ -3,7 +3,7 @@ title: AEM as a Cloud Service でのキャッシュ
 description: AEM as a Cloud Service でのキャッシュの基本について
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 28537409c5974ff8ade30207f16cc62b45c47616
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 95%
@@ -42,7 +42,7 @@ Define DISABLE_DEFAULT_CACHING
   ```
 
   >[!NOTE]
-  >サロゲート制御ヘッダーは、アドビが管理する CDN に適用されます。[顧客が管理する CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN) を使用する場合、CDN プロバイダーに応じて異なるヘッダーが必要になる場合があります。
+  >サロゲート制御ヘッダーは、アドビが管理する CDN に適用されます。[顧客が管理する CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=ja#point-to-point-CDN) を使用する場合、CDN プロバイダーに応じて異なるヘッダーが必要になる場合があります。
 
   グローバルキャッシュコントロールヘッダーまたは広範囲の正規表現に一致するヘッダーを設定する場合は、プライベートに保つ必要があるコンテンツに適用されないように注意が必要です。複数のディレクティブを使用して、ルールをきめ細かく適用することを検討してください。とは言え、Dispatcher のドキュメントに記載されているように、AEM as a Cloud Service は Dispatcher によってキャッシュ不可であることが検出されたものに対してキャッシュヘッダーが適用されていることを検出すると、キャッシュヘッダーを削除します。AEM で常にキャッシュヘッダーを適用するように強制するには、次のように **`always`** オプションを追加できます。
 
@@ -434,7 +434,7 @@ public class InvalidatedHandler implements EventHandler {
 
         String distributionType = (String) event.getProperty(DISTRIBUTION_TYPE);
 
-        if (INVALIDATE.name().equals(distributionType)) {
+        if (INVALIDATE.name().equals (distributionType)) {
             boolean isLeader = discoveryService.getTopology().getLocalInstance().isLeader();
             // process the OSGi event on the leader author instance
             if (isLeader) {
@@ -472,11 +472,11 @@ public class InvalidatedHandler implements EventHandler {
 
 ```
 String[] paths = …
-ReplicationOptions options = new ReplicationOptions();
-options.setSynchronous(true);
+ReplicationOptions options = new ReplicationOptions ();
+options.setSynchronous (true);
 options.setFilter( new AgentFilter {
   public boolean isIncluded (Agent agent) {
-   return agent.getId().equals("flush");
+   return agent.getId().equals ("flush");
   }
 });
 

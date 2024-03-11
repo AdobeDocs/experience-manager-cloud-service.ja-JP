@@ -1,12 +1,12 @@
 ---
-title: AEM Forms Edge Delivery Service のフォームコンポーネント
-description: AEM Forms Edge Delivery Service は、効率化されたデータ収集とユーザーエンゲージメントの将来を想定できるように、最高のパフォーマンス向けに構築されています。 この記事では、EDD フォームですぐに使用できるすべてのフォームコンポーネントの一覧を示します。
+title: AEM Forms Edge Delivery ServicesForm コンポーネント
+description: AEM Forms Edge Delivery Services は、効率化されたデータ収集とユーザーエンゲージメントの将来を想定できるように、ピークパフォーマンス向けに構築されています。 この記事では、EDD フォームですぐに使用できるすべてのフォームコンポーネントの一覧を示します。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '870'
 ht-degree: 5%
 
 ---
@@ -61,7 +61,7 @@ AEM Forms Edge Delivery には、フォームブロックが含まれます。 �
   </tr>
   <tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/drop-down.html"> ドロップダウンリスト</a></td>
-   <td><a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選択</a></td>
+   <td><a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a></td>
    <td> 定義済みオプションのリストから 1 つ以上のオプションを選択できます。 オプションのタイプは、文字列、数値またはブール値です。</td>
   </tr>
   <tr>
@@ -96,7 +96,7 @@ AEM Forms Edge Delivery には、フォームブロックが含まれます。 �
   </tr>
      <tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/submit-button.html">送信ボタン</td>
-   <td><a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit">送信</a></td>
+   <td><a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit">submit</a></td>
    <td> クリック時にユーザーがフォームをサーバーに送信できる UI 要素。 ユーザーがボタンに送信ルールを追加した場合、そのルールは送信ボタンとして機能します。 </td>
   </tr>
      <tr>

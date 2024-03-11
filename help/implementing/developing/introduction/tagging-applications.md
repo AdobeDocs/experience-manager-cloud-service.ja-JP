@@ -2,7 +2,7 @@
 title: AEM アプリケーションへのタグ付けの構築
 description: カスタム AEM アプリケーション内のタグまたは拡張タグをプログラムで操作します
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 100%
@@ -80,10 +80,10 @@ Resource node = tag.adaptTo(Resource.class);
 
 ```java
 // Getting the tags of a Resource:
-Tag[] tags = tagManager.getTags(resource);
+Tag[] tags = tagManager.getTags (resource);
 
 // Setting tags to a Resource:
-tagManager.setTags(resource, tags);
+tagManager.setTags (resource, tags);
 ```
 
 ### タグの検索 {#searching-for-tags}
@@ -144,8 +144,8 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 * [`com.day.cq.tagging.Tag`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/Tag.html)
    * `getLocalizedTitle(Locale locale)`
-   * `getLocalizedTitlePaths()`
-   * `getLocalizedTitles()`
+   * `getLocalizedTitlePaths ()`
+   * `getLocalizedTitles ()`
    * `getTitle(Locale locale)`
    * `getTitlePath(Locale locale)`
 * [`com.day.cq.tagging.TagManager`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/TagManager.html)

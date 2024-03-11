@@ -5,8 +5,8 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 5acbd7a56f18ee4c3d8b8f04ab17ad44fe6f0647
-workflow-type: ht
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+workflow-type: tm+mt
 source-wordcount: '1931'
 ht-degree: 100%
 
@@ -215,7 +215,7 @@ function debug() {
 }
 
 # Function to check if a file exists
-function file_exists() {
+function file_exists () {
     [ -e "$1" ]
 }
 

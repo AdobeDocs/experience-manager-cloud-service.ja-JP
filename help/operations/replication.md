@@ -2,7 +2,7 @@
 title: レプリケーション
 description: AEM as a Cloud Service での配布とレプリケーションのトラブルシューティングについて説明します。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 100%
@@ -146,7 +146,7 @@ Resource enResource = resourceResolver.getResource("/content/we-retail/en");
 Resource deResource = resourceResolver.getResource("/content/we-retail/de");
 ReplicationStatus enStatus = enResource.adaptTo(ReplicationStatus.class);
 // if you need to get the status for more more than 1 resource at once, this approach is more performant
-Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchReplicationStatus(enResource,deResource);
+Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchReplicationStatus (enResource,deResource);
 ```
 
 **特定のエージェントを使用したレプリケーション**
@@ -162,11 +162,11 @@ private static final String PREVIEW_AGENT = "preview";
 
 ReplicationStatus beforeStatus = enResource.adaptTo(ReplicationStatus.class); // beforeStatus.isActivated == false
 
-ReplicationOptions options = new ReplicationOptions();
+ReplicationOptions options = new ReplicationOptions ();
 options.setFilter(new AgentFilter() {
   @Override
   public boolean isIncluded (Agent agent) {
-    return agent.getId().equals(PREVIEW_AGENT);
+    return agent.getId().equals (PREVIEW_AGENT);
   }
 });
 // will replicate only to preview

@@ -3,9 +3,9 @@ title: AEM Workflow でユーザーを選択する方法は？
 description: 実行時に  [!DNL AEM Forms]  ワークフローのユーザーまたはグループを選択する方法について説明します。
 content-type: troubleshooting
 topic-tags: publish
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '853'
 ht-degree: 100%
 
 ---
@@ -76,7 +76,7 @@ var path = workflowData.getPayload().toString();
 >[!DNL Adobe Sign] で ECMAScript を使用する場合、スクリプトは /apps/fd/workflow/scripts/adobesign/ にある必要があります。また、ユーザーのリストを返す getAdobeSignRecipients という名前の関数が含まれている必要があります。
 
 ```javascript
-function getAdobeSignRecipients() {
+function getAdobeSignRecipients () {
 
     var recipientSetInfos = new Packages.java.util.ArrayList();
 
@@ -99,10 +99,10 @@ function getAdobeSignRecipients() {
     email = "example@example.com";
     
     recipientInfo.setEmail(email);
-    recipientInfo.setSecurityOptions(securityOptions);
+    recipientInfo.setSecurityOptions (securityOptions);
     
     recipientInfoList.add(recipientInfo);
-    recipientInfoSet.setMemberInfos(recipientInfoList);
+    recipientInfoSet.setMemberInfos (recipientInfoList);
     recipientSetInfos.add(recipientInfoSet);
 
     return recipientSetInfos;
@@ -279,7 +279,7 @@ import org.apache.felix.scr.annotations.Service;
 
 @Component(metatype = false)
 public class DummyRecipientChoser implements RecipientInfoSpecifier {
-    public List<RecipientSetInfo> getAdobeSignRecipients(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap args) throws WorkflowException {
+    public List<RecipientSetInfo> getAdobeSignRecipients (WorkItem workItem, WorkflowSession workflowSession, MetaDataMap args) throws WorkflowException {
 
         List<RecipientSetInfo> recipientSetInfos = new ArrayList<RecipientSetInfo>();
 
@@ -303,11 +303,11 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
                 email = "example@example.com";
 
                 recipientInfo1.setEmail(email);
-                recipientInfo1.setSecurityOptions(securityOptions);
+                recipientInfo1.setSecurityOptions (securityOptions);
 
                 recipientInfoList.add(recipientInfo1);  //Add member
 
-                recipientInfoSet1.setMemberInfos(recipientInfoList);
+                recipientInfoSet1.setMemberInfos (recipientInfoList);
 
                 //Second Recipient
 
@@ -328,11 +328,11 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
 
                 RecipientInfo recipientInfo2  = new RecipientInfo();
                 recipientInfo2.setEmail(email);
-                recipientInfo2.setSecurityOptions(securityOptions);
+                recipientInfo2.setSecurityOptions (securityOptions);
 
                 recipientInfoList2.add(recipientInfo2);  //Add member
 
-                recipientInfoSet2.setMemberInfos(recipientInfoList2);
+                recipientInfoSet2.setMemberInfos (recipientInfoList2);
 
                 //*********************************
 

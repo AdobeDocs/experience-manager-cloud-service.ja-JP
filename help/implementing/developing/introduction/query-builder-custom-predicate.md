@@ -2,10 +2,10 @@
 title: Query Builder 用のカスタム述語エバリュエーターの実装
 description: AEM の Query Builder を使用すると、コンテンツリポジトリーへのクエリをカスタマイズして簡単に実行できます
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 97%
+source-wordcount: '627'
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ replic.action=Activate
 >
 >Maven の使用など、新しい AEM プロジェクトのセットアップについて詳しくは、[WKND チュートリアル](develop-wknd-tutorial.md)を参照してください。
 
-まず、プロジェクトの Maven 依存関係を更新する必要があります。The `PredicateEvaluator` は、 `cq-search` アーティファクトなので、Maven の pom ファイルに追加する必要があります。
+まず、プロジェクトの Maven 依存関係を更新する必要があります。`PredicateEvaluator` は `cq-search` アーティファクトの一部なので、Maven の pom ファイルに追加する必要があります。
 
 >[!NOTE]
 >
@@ -216,7 +216,7 @@ public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
     static final String PREDICATE_SINCE_OP = " >= ";
     static final String PREDICATE_ACTION = "action";
 
-    Logger log = LoggerFactory.getLogger(getClass());
+    Logger log = LoggerFactory.getLogger(getClass ());
 
     /**
      * Returns a XPath expression filtering by replication metadata.

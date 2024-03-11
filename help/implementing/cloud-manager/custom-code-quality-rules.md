@@ -2,10 +2,10 @@
 title: カスタムコード品質ルール
 description: このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。これらは、Adobe Experience Manager Engineering のベストプラクティスに基づいています。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '4095'
-ht-degree: 87%
+source-wordcount: '4167'
+ht-degree: 99%
 
 ---
 
@@ -101,7 +101,7 @@ public class DoThis implements Runnable {
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
   String messageFormat = request.getParameter("messageFormat");
   request.getResource().getValueMap().put("some property", String.format(messageFormat, "some text"));
-  response.sendStatus(HttpServletResponse.SC_OK);
+  response.sendStatus (HttpServletResponse.SC_OK);
 }
 ```
 
@@ -120,7 +120,7 @@ Experience Manager アプリケーション内から HTTP 要求を実行する�
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
  
-public void dontDoThis() {
+public void dontDoThis () {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   HttpClient httpClient = builder.build();
 
@@ -149,7 +149,7 @@ public void dontDoThisEither() {
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
  
-public void doThis() {
+public void doThis () {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   RequestConfig requestConfig = RequestConfig.custom()
     .setConnectTimeout(5000)
@@ -162,7 +162,7 @@ public void doThis() {
   // do something with the client
 }
 
-public void orDoThis() {
+public void orDoThis () {
   URL url = new URL("http://www.google.com");
   URLConnection urlConnection = url.openConnection();
   urlConnection.setConnectTimeout(5000);
@@ -194,7 +194,7 @@ public void orDoThis() {
 #### 非準拠コード {#non-compliant-code-4}
 
 ```java
-public void dontDoThis(Session session) throws Exception {
+public void dontDoThis (Session session) throws Exception {
   ResourceResolver resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object)session));
   // do some stuff with the resolver
 }
@@ -203,7 +203,7 @@ public void dontDoThis(Session session) throws Exception {
 #### 準拠コード {#compliant-code-2}
 
 ```java
-public void doThis(Session session) throws Exception {
+public void doThis (Session session) throws Exception {
   ResourceResolver resolver = null;
   try {
     resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object)session));
@@ -215,7 +215,7 @@ public void doThis(Session session) throws Exception {
   }
 }
 
-public void orDoThis(Session session) throws Exception {
+public void orDoThis (Session session) throws Exception {
   try (ResourceResolver resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object) session))){
     // do something with the resolver
   }
@@ -254,7 +254,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 #### 非準拠コード {#non-compliant-code-6}
 
 ```java
-public void dontDoThis() throws Exception {
+public void dontDoThis () throws Exception {
   try {
     someOperation();
   } catch (Exception e) {
@@ -267,7 +267,7 @@ public void dontDoThis() throws Exception {
 #### 準拠コード {#compliant-code-3}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someOperation();
   } catch (Exception e) {
@@ -275,7 +275,7 @@ public void doThis() {
   }
 }
 
-public void orDoThis() throws MyCustomException {
+public void orDoThis () throws MyCustomException {
   try {
     someOperation();
   } catch (Exception e) {
@@ -296,7 +296,7 @@ public void orDoThis() throws MyCustomException {
 #### 非準拠コード {#non-compliant-code-7}
 
 ```java
-public void dontDoThis() throws Exception {
+public void dontDoThis () throws Exception {
   logger.error("something went wrong");
   throw new RuntimeException("something went wrong");
 }
@@ -305,7 +305,7 @@ public void dontDoThis() throws Exception {
 #### 準拠コード {#compliant-code-4}
 
 ```java
-public void doThis() throws Exception {
+public void doThis () throws Exception {
   throw new RuntimeException("something went wrong");
 }
 ```
@@ -350,7 +350,7 @@ public void doGet() throws Exception {
 #### 非準拠コード {#non-compliant-code-9}
 
 ```java
-public void dontDoThis() {
+public void dontDoThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -362,7 +362,7 @@ public void dontDoThis() {
 #### 準拠コード {#compliant-code-6}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -383,7 +383,7 @@ public void doThis() {
 #### 非準拠コード {#non-compliant-code-10}
 
 ```java
-public void dontDoThis() {
+public void dontDoThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -395,7 +395,7 @@ public void dontDoThis() {
 #### 準拠コード {#compliant-code-7}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -416,7 +416,7 @@ public void doThis() {
 #### 非準拠コード {#non-compliant-code-11}
 
 ```java
-public void dontDoThis() {
+public void dontDoThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -428,7 +428,7 @@ public void dontDoThis() {
 #### 準拠コード {#compliant-code-8}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -449,7 +449,7 @@ Experience Manager にログインする場合は、常にログフレームワ�
 #### 非準拠コード {#non-compliant-code-12}
 
 ```java
-public void dontDoThis() {
+public void dontDoThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -461,7 +461,7 @@ public void dontDoThis() {
 #### 準拠コード {#compliant-code-9}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -482,7 +482,7 @@ public void doThis() {
 #### 非準拠コード {#non-compliant-code-13}
 
 ```java
-public boolean dontDoThis(Resource resource) {
+public boolean dontDoThis (Resource resource) {
   return resource.isResourceType("/libs/foundation/components/text");
 }
 ```
@@ -490,7 +490,7 @@ public boolean dontDoThis(Resource resource) {
 #### 準拠コード {#compliant-code-10}
 
 ```java
-public void doThis(Resource resource) {
+public void doThis (Resource resource) {
   return resource.isResourceType("foundation/components/text");
 }
 ```
@@ -519,30 +519,30 @@ Experience Manager API のサーフェスは、使用が勧められず、非推
 
 ただし、API が Experience Manager のコンテキストで非推奨となるものの、他のコンテキストでは非推奨とならない場合があります。このルールは、この 2 番目のクラスを識別します。
 
-### Sling モデルで@Inject注釈を@Optionalと共に使用しない {#sonarqube-slingmodels-inject-optional}
+### Sling モデルで @Inject 注釈を @Optional と共に使用しない {#sonarqube-slingmodels-inject-optional}
 
-* **キー**: InjectAnnotationWithOptionalInjectionCheck
+* **キー**：InjectAnnotationWithOptionalInjectionCheck
 * **タイプ**：ソフトウェアの品質
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2023.11
 
-Apache Sling プロジェクトでは、 `@Inject` Sling モデルのコンテキストでの注釈。 `DefaultInjectionStrategy.OPTIONAL` （フィールドまたはクラスレベルで）。 代わりに、より具体的な注射 ( `@ValueMapValue` または `@OsgiInjector` 注釈 ) を使用する必要があります。
+Apache Sling プロジェクトでは、Sling モデルのコンテキストでの `@Inject` 注釈の使用を推薦しません。`DefaultInjectionStrategy.OPTIONAL` と組み合わされた場合（フィールドまたはクラスレベルで）、パフォーマンスが悪くなるからです。代わりに、より具体的なインジェクション（`@ValueMapValue` または `@OsgiInjector` 注釈など）を使用する必要があります。
 
-次を確認します。 [Apache Sling ドキュメント](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) を参照してください。
+推薦される注釈に関して、そして、そもそもなぜこのような推薦がされたのかに関しての詳細は、[Apache Sling ドキュメント](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1)を参照してください。
 
 
-### HTTPClient のインスタンスの再利用 {#sonarqube-reuse-httpclient}
+### HTTPClient のインスタンスを再利用 {#sonarqube-reuse-httpclient}
 
-* **キー**:AEMSRE-870
+* **キー**：AEMSRE-870
 * **タイプ**：ソフトウェアの品質
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2023.11
 
-AEMアプリケーションは HTTP プロトコルを使用して他のアプリケーションに接続することが多く、Apache HttpClient はこれを実現するためによく使用されるライブラリです。 しかし、このような HttpClient オブジェクトを作成する際にはオーバーヘッドが発生するので、これらのオブジェクトはできる限り再利用する必要があります。
+AEM アプリケーションは 、HTTP プロトコルを使用している他のアプリケーションに接続することが多く、Apache HttpClient はこれを実現するためによく使用されるライブラリです。しかし、このような HttpClient オブジェクトを作成する際にはオーバーヘッドが発生するので、これらのオブジェクトはできる限り再利用する必要があります。
 
-このルールは、HttpClient オブジェクトがメソッド内でプライベートではなく、クラスレベルでグローバルであることを確認するので、再利用できます。 この場合、httpClient フィールドは、クラスのコンストラクターで設定するか、 `activate()` メソッド（このクラスが OSGi コンポーネント/サービスの場合）
+このルールは、HttpClient オブジェクトがメソッド内でプライベートではなく、クラスレベルでグローバルであることを確認するので、再利用できます。この場合、httpClient フィールドは、クラスのコンストラクターか `activate()` メソッド（このクラスが OSGi コンポーネント／サービスの場合）で設定される必要があります。
 
-次を確認します。 [最適化ガイド](https://hc.apache.org/httpclient-legacy/performance.html) HttpClient の使用に関するベストプラクティスを参照してください。
+HttpClient の使用に関するベストプラクティスに関しては、HttpClient の[最適化ガイド](https://hc.apache.org/httpclient-legacy/performance.html)を確認してください。
 
 #### 非準拠コード {#non-compliant-code-14}
 
@@ -731,7 +731,7 @@ Experience Manager コンテンツリポジトリ内の `/libs` コンテンツ�
 >
 >例えば、ビルドで `com.myco:com.myco.ui.apps` と `com.myco:com.myco.all` というパッケージが生成され、`com.myco:com.myco.all` に `com.myco:com.myco.ui.apps` が組み込まれている場合、`com.myco:com.myco.ui.apps` 内のすべての設定が重複としてレポートされます。
 >
->これは一般に、[コンテンツパッケージ構造ガイドライン](/help/implementing/developing/introduction/aem-project-content-package-structure.md)に従っていない場合に発生します。この例では、パッケージ `com.myco:com.myco.ui.apps` に `<cloudManagerTarget>none</cloudManagerTarget>` プロパティがありません。
+>これは、通常、 [コンテンツパッケージ構造のガイドライン](/help/implementing/developing/introduction/aem-project-content-package-structure.md). この例では、パッケージ `com.myco:com.myco.ui.apps` に `<cloudManagerTarget>none</cloudManagerTarget>` プロパティがありません。
 
 #### 非準拠コード {#non-compliant-code-osgi}
 
@@ -986,7 +986,8 @@ Experience Manager as a Cloud Service では、カスタム検索インデック
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-Experience Manager as a Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に `reindex` という名前のプロパティを含めることが禁止されています。Experience Manager as a Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](/help/operations/indexing.md#how-to-use)のドキュメントを参照してください。
+Experience Manager as a Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に `reindex` という名前のプロパティを含めることが禁止されています。Experience Manager as a
+Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](/help/operations/indexing.md#how-to-use)のドキュメントを参照してください。
 
 ### カスタム DAM Asset Lucene ノードで「queryPaths」を指定することはできません {#oakpal-damAssetLucene-queryPaths}
 
@@ -1033,22 +1034,22 @@ Experience Manager as a Cloud Service では、カスタム検索インデック
 
 ### 「includedPaths」を指定するインデックスノードでは、同じ値を持つ「queryPaths」も指定する必要があります {#oakpal-included-paths-without-query-paths}
 
-* **キー**: IndexIncludedPathsWithoutQueryPaths
+* **キー**：IndexIncludedPathsWithoutQueryPaths
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2023.1.0
 
-カスタムインデックスの場合、 `includedPaths` および `queryPaths` は同じ値で設定する必要があります。 いずれかを指定した場合は、もう 1 つが一致する必要があります。 ただし、インデックスには特別なケースがあります。 `damAssetLucene`（カスタムバージョンを含む） これらの場合、 `includedPaths`.
+カスタムインデックスの場合、`includedPaths` および `queryPaths` は同じ値で設定する必要があります。いずれかを指定した場合は、もう 1 つが一致する必要があります。ただし、`damAssetLucene` のインデックスには特別なケースがあります（カスタムバージョンを含む）。これらの場合、`includedPaths` のみを提供する必要があります。
 
 ### 汎用ノードタイプの nodeScopeIndex を指定するインデックスノードでも includedPaths と queryPaths を指定する必要があります。 {#oakpal-full-text-on-generic-node-type}
 
-* **キー**: IndexFulltextOnGenericType
+* **キー**：IndexFulltextOnGenericType
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2023.1.0
 
-設定時に、 `nodeScopeIndex` プロパティを、次のような「汎用」ノードタイプに設定します。 `nt:unstructured` または `nt:base`を指定しない場合は、 `includedPaths` および `queryPaths` プロパティ。
-`nt:base` は「汎用」と見なすことができます。これは、すべてのノードタイプがそのタイプを継承するからです。 したがって、 `nodeScopeIndex` オン `nt:base` は、リポジトリ内のすべてのノードのインデックスを作成します。 同様に、 `nt:unstructured` また、このタイプのリポジトリには多数のノードがあるので、は「汎用」と見なされます。
+`nt:unstructured` または `nt:base` のような「汎用」ノードタイプで `nodeScopeIndex` プロパティを設定する場合、`includedPaths` および `queryPaths` プロパティも指定する必要があります。
+`nt:base` は「汎用」と見なすことができます。これは、すべてのノードタイプがそのタイプを継承するからです。したがって、`nt:base` に `nodeScopeIndex` を設定すると、リポジトリ内のすべてのノードのインデックスが作成されます。同様に、このタイプのリポジトリには多数のノードがあるので、`nt:unstructured` も「汎用」と見なされます。
 
 #### 非準拠コード {#non-compliant-code-full-text-on-generic-node-type}
 
@@ -1088,7 +1089,7 @@ Experience Manager as a Cloud Service では、カスタム検索インデック
 
 ### クエリエンジンの queryLimitReads プロパティは上書きしないでください {#oakpal-query-limit-reads}
 
-* **キー**: OverrideOfQueryLimitReads
+* **キー**：OverrideOfQueryLimitReads
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2023.1.0
@@ -1097,7 +1098,7 @@ Experience Manager as a Cloud Service では、カスタム検索インデック
 
 ### 同じインデックスの複数のアクティブバージョン {#oakpal-multiple-active-versions}
 
-* **キー**: IndexDetectMultipleActiveVersionsOfSameIndex
+* **キー**：IndexDetectMultipleActiveVersionsOfSameIndex
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2023.1.0
@@ -1124,15 +1125,15 @@ Experience Manager as a Cloud Service では、カスタム検索インデック
 
 ### 完全なカスタムインデックス定義の名前は、公式のガイドラインに従う必要があります {#oakpal-fully-custom-index-name}
 
-* **キー**: IndexValidFullyCustomName
+* **キー**：IndexValidFullyCustomName
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2023.1.0
 
-完全なカスタムインデックス名に必要なパターンは次のとおりです。 `[prefix].[indexName]-custom-[version]`. 詳しくは、ドキュメントを参照してください [コンテンツの検索とインデックス作成](/help/operations/indexing.md).
+完全なカスタムインデックス名に必要なパターンは `[prefix].[indexName]-custom-[version]` です。詳しくは、[コンテンツの検索とインデックス作成](/help/operations/indexing.md)のドキュメントを参照してください。
 
 
-### 同じインデックス定義内の異なる解析値を持つ同じプロパティ {#oakpal-same-property-different-analyzed-values}
+### 同じインデックス定義内で異なる分析値を持つ同じプロパティ {#oakpal-same-property-different-analyzed-values}
 
 #### 非準拠コード {#non-compliant-code-same-property-different-analyzed-values}
 
@@ -1186,9 +1187,9 @@ Experience Manager as a Cloud Service では、カスタム検索インデック
 
 ### タグプロパティ
 
-* **キー**: IndexHasValidTagsProperty
+* **キー**：IndexHasValidTagsProperty
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2023.1.0
 
-特定のインデックスの場合、tags プロパティとその現在の値を必ず保持します。 tags プロパティに新しい値を追加することもできますが、既存の値を削除（またはプロパティを完全に削除）すると、予期しない結果が生じる場合があります。
+個別のインデックスでは、タグプロパティとその現在の値を必ず保持してください。タグプロパティに新しい値を追加することもできますが、既存の値を削除（またはプロパティを完全に削除）すると、予期しない結果が生じる場合があります。

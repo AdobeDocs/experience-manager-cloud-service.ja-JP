@@ -5,8 +5,8 @@ uuid: b3408aee-ac24-43af-a380-a5892abf0248
 content-type: reference
 topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ ht-degree: 100%
    ```java
    @Component(metatype = false)
    @Service(value = Servlet.class)
-   @Properties({
+   @Properties ({
            @Property(name = "sling.servlet.resourceTypes", value = "/apps/populatedropdown"),
            @Property(name = "sling.servlet.methods", value = {"GET", "POST"}),
            @Property(name = "service.description", value = "Populate states drop-down based on country value")

@@ -2,7 +2,7 @@
 title: エクスペリエンスフラグメントの概要
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントの拡張
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '1642'
 ht-degree: 98%
@@ -254,7 +254,7 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 ```java
 @Override
 public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
-    return experienceFragment.getPath().equals("/content/experience-fragment/master");
+    return experienceFragment.getPath().equals ("/content/experience-fragment/master");
 }
 ```
 
