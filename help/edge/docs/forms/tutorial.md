@@ -4,10 +4,10 @@ description: このチュートリアルでは、新しいAdobe Experience Manag
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
+source-git-commit: 14171647dce7d2f6ce985616035eefa62c6955db
 workflow-type: tm+mt
-source-wordcount: '1786'
-ht-degree: 1%
+source-wordcount: '1878'
+ht-degree: 0%
 
 ---
 
@@ -106,7 +106,7 @@ AEM Forms Boilerplate テンプレートを使用すると、アダプティブF
 
       ![サンプルコンテンツをダウンロード](/help/edge/assets/download-sample-content.png)
 
-      The `index`, `nav`、および `footer` ファイルはページの基本レイアウトを定義し、プロジェクト全体で変更されることはほとんどありません。 また、他のほとんどのコンテンツファイルとは異なる特定の構造を持っています。 これらのファイルを調べると、AEM Projects でのコンテンツの編成方法を確認できます。
+      The `nav` および `footer` ファイルはページの基本レイアウトを定義し、プロジェクト全体で変更されることはほとんどありません。 また、他のほとんどのコンテンツファイルとは異なる特定の構造を持っています。 これらのファイルを調べると、AEM Projects でのコンテンツの編成方法を確認できます。
 
 
    1. これらのファイルをMicrosoft SharePointまたはGoogle Drive フォルダーにアップロードします。
@@ -148,7 +148,7 @@ AEM Forms Boilerplate テンプレートを使用すると、アダプティブF
 
       これにより、コンテンツフォルダーが Web サイトに接続されます。 参照を更新した後、最初に「404 Not Found」というエラーが発生する場合があります。 これは、コンテンツがまだプレビューされていないためです。 次の節では、コンテンツのオーサリングとプレビューを開始する方法について説明します。
 
-      ![更新された fsatab.yaml ファイルをコミット](/help/edge/assets/aem-forms-project-folder-error.png)
+
 
 ### コンテンツのプレビューと公開
 
@@ -204,9 +204,22 @@ AEM Forms Boilerplate テンプレートを使用すると、アダプティブF
 
 ![問い合わせフォーム](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-まず、フィールドラベルを更新します。 「問い合わせ」シートを編集用に開き、送信ボタンのラベルをに変更します。 `Let's Chat`をクリックし、サイドキックを使用してパブリッシュします。
+まず、フィールドラベルを更新します。 「問い合わせ」シートを編集用に開き、送信ボタンのラベルをに変更します。 `Let's Chat` AEM Sidekickを使用して、ファイルをプレビューおよび公開します。
 
 ![問い合わせフォーム](/help/edge/assets/enquiry-form-preview-publish.png)
+
+ファイルをプレビューまたは公開すると、新しいタブにそのファイルの JSON バージョンが表示されます。 ファイルのプレビュー (.hlx.page) またはパブリッシュ (.hlx.live) の URL をコピーします。
+
+![フォームスプレッドシートの JSON](/help/edge/assets//preview-and-publish-enquiry-form.png)
+
+を開きます。 `enquiry` ファイルをコピーし、フォームブロック内の URL を前の手順でコピーしたファイルの URL に置き換えます。 URL がハイパーリンクであることを確認します。
+
+![スプレッドシートの URLの.json URL を使用した問い合わせファイル](/help/edge/assets/enquiry-doc-to-embed-form.png)
+
+AEM Sidekickを使用して、問い合わせドキュメントをプレビューおよびパブリッシュします。
+
+![スプレッドシートの URLの.json URL を使用した問い合わせファイル](/help/edge/assets/preview-and-publish-enquiry-document.png)
+
 
 更新された問い合わせフォームをプレビューするには、次の URL に移動します。
 
