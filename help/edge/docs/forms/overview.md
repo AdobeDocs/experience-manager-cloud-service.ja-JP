@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 0%
@@ -84,7 +84,7 @@ AEMオーサリングには、フォームを作成するための WYSIWYG イ�
 >
 > AEMオーサリング機能は、アーリーアダプタープログラムで使用できます。 ご興味がある場合は、aem-forms-ea@adobe.com宛に、ご自身の仕事用アドレスからクイックメールを送信して、機能へのアクセスをリクエストしてください。
 
-### AEM FormsEdge Delivery Services：オーサリング Formsの公開と提出
+### AEM FormsEdge Delivery Services:Formsのオーサリング、公開、送信
 
 次の図は、ドキュメントベースのオーサリングとAEMオーサリングを使用してフォームを作成、公開、送信するプロセスを示しています。
 

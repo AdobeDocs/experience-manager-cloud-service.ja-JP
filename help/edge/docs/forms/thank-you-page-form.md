@@ -1,18 +1,18 @@
 ---
-title: 「ありがとうございます」ページまたはリダイレクトフォームを送信後に設定
+title: フォーム送信後にカスタムの「ありがとうございます」メッセージを表示
 description: Forms Block の「ありがとうございます」ページとリダイレクトを設定して、ユーザーエクスペリエンスを最適化し、ユーザージャーニーを合理化する方法について説明します。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '195'
 ht-degree: 4%
 
 ---
 
-# 送信後に「ありがとうございます」ページまたはリダイレクトフォームを表示
+# フォーム送信後にカスタムの「ありがとうございます」メッセージを表示
 
 ユーザーがフォームを送信した後、「ありがとうございました」メッセージを通じてシームレスなエクスペリエンスを提供することが重要です。 これにより、送信が成功したことを確認するだけでなく、ユーザーの満足度を高め、さらにジャーニーに導くことができます。
 

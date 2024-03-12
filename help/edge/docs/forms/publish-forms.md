@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '545'
 ht-degree: 2%
 
 ---
@@ -20,9 +20,10 @@ ht-degree: 2%
 
 ## 前提条件
 
-* The [アダプティブFormsブロックが GitHub の EDS プロジェクトで有効になっています](/help/edge/docs/forms/create-forms.md).
+* 次を基にAEMプロジェクトがあります： [AEM Forms Boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) または [アダプティブFormsブロックを既存のAEMプロジェクトに追加しました。](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
 * フォームは完全にテスト済みで、使用する準備が整っています。
 * お使いの [スプレッドシートが設定されました](/help/edge/docs/forms/submit-forms.md) をクリックしてデータを受け入れます。
+
 
 ## フォームを発行する
 
@@ -74,7 +75,9 @@ ht-degree: 2%
 
    | フォーム |
    |---|
-   | [https://main—portal—wkndforms.hlx.live/inquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json) |
+   | [https://main—wefinance—wkndforms.hlx.live/inquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+
+   ![「Form」という名前のブロックをファイルに追加します](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
    このブロックは、フォームが埋め込まれるプレースホルダーとして機能します。 ブロックの 2 行目に、 `<form>.json` ファイルをハイパーリンクとして保存します。
 
@@ -86,16 +89,16 @@ ht-degree: 2%
    開発やテストの目的ではプレビュー URL(.page URL) を、実稼動環境では公開 URL(.live) を使用します。 プレビューおよび公開 URL の例を次に示します。
 
    **プレビュー URL**
-| フォーム | |—| | [https://main—portal—wkndforms.hlx.page/inquiry.json](https://main--portal--wkndforms.hlx.page/enquiry.json)  |
+| フォーム | |—| | [https://main—wefinance—wkndforms.hlx.page/inquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json)  |
 
 
    **公開 URL**
-| フォーム | |—| | [https://main—portal—wkndforms.hlx.live/inquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json)  |
+| フォーム | |—| | [https://main—wefinance—wkndforms.hlx.live/inquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
 
 1. 用途 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) :web ページをプレビューします。 これで、ページにフォームが表示されます。 例えば、次に、 [照会スプレッドシート](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
 
 
-   [![EDS フォームのサンプル](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
+   ![EDS フォームのサンプル](/help/edge/assets/eds-form.png)
 
 1. 「AEM Sidekick」を使用して、フォームを発行します。 これで、顧客はフォームに入力して送信できます。
 

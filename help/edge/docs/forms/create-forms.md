@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 1%
@@ -27,7 +27,7 @@ AEM Forms Edge Delivery には、アダプティブFormsブロックと呼ばれ
 
 開始する前に、次の手順が完了していることを確認します。
 
-* を設定します。 [AEM Forms BoilerPlate を使用したAEMプロジェクト](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) または [アダプティブFormsブロックを既存のAEMプロジェクトに追加しました](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 対応する GitHub リポジトリをローカルマシンに複製します。
+* を設定します。 [AEM Forms BoilerPlate を使用したAEMプロジェクト](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) または [アダプティブFormsブロックを既存のAEMプロジェクトに追加しました。](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 対応する GitHub リポジトリをローカルマシンに複製します。
 このドキュメントでは、Edge Delivery Services(EDS) プロジェクトのローカルフォルダーを `[EDS Project repository]`.
 * Google Sheet またはMicrosoft SharePointへのアクセス権があることを確認します。 Microsoft SharePointをコンテンツソースとして設定するには、 [SharePointの使用方法](https://www.aem.live/docs/setup-customer-SharePoint).
 

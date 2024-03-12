@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 # データを受け入れるスプレッドシートを準備する
 
 
-一度 [フォームの作成とプレビュー](/help/edge/docs/forms/create-forms.md)をクリックした場合、対応するスプレッドシートがデータの受信を開始できるようにします。
+一度 [フォームの作成とプレビュー](/help/edge/docs/forms/create-forms.md)をクリックした場合、対応するスプレッドシートがデータの受信を開始できるようにします。 スプレッドシートでデータを受け入れるように手動で有効にするか、Admin API を使用してスプレッドシートでデータを受け入れるように設定できます。
 
 ![ドキュメントベースのオーサリングエコシステム](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -24,7 +24,10 @@ ht-degree: 1%
 
 -->
 
-スプレッドシートを有効にするには：
+
+## スプレッドシートでデータを受け入れるように手動で有効化
+
+スプレッドシートでデータを受け取れるようにするには
 
 1. フォームのあるスプレッドシートを開き、新しいシートを追加して、名前をに変更します。 `incoming`.
 
@@ -61,8 +64,7 @@ ht-degree: 1%
 >
 >  「共有のデフォルト」シートに、公開アクセスに不安な個人を特定できる情報や機密データを含めないでください。
 
-
-## （オプション） Admin API を使用して、スプレッドシートでのデータ受け取りを有効にします
+### Admin API を使用して、スプレッドシートでのデータ受け取りを有効にします
 
 また、フォームにPOSTリクエストを送信して、フォームがデータを受け入れ、 `incoming` シート。 サービスは、POST要求を受け取ると、要求の本文を分析し、データ取り込みに必要な必須ヘッダーとシートを自律的に生成します。
 
@@ -151,7 +153,6 @@ Admin API を使用してスプレッドシートでのデータ受け取りを�
    これで、フォームがデータの受け入れを有効にしました。 また、スプレッドシートには次の変更があります。
 
 ## データの受け入れが有効になった後のシートへの自動変更。
-
 
 データを受け取るようにシートを設定すると、スプレッドシートに次の変更が表示されます。
 
@@ -284,7 +285,7 @@ POST本文のフォームデータを書式設定する方法はいくつかあ�
     https://main--portal--wkndforms.hlx.live/contact-us
   ```
 
-次に、「ありがとうございます」メッセージをカスタマイズできます。 [「ありがとうございます」ページの設定](/help/edge/docs/forms/thank-you-page-form.md)または [リダイレクトの設定](/help/edge/docs/forms/thank-you-page-form.md).
+次に、次の操作を行います。 [「ありがとうございます」メッセージをカスタマイズします](/help/edge/docs/forms/thank-you-page-form.md).
 
 ## 関連トピック
 

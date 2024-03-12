@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 2%
+source-wordcount: '937'
+ht-degree: 3%
 
 ---
 
@@ -64,3 +64,6 @@ AEM Forms Edge Delivery Services を使用すると、様々なコンポーネ�
 | チェック済み | チェックボックス、ラジオ | フィールドがデフォルトで選択されているかどうかを指定します。 checked 属性は、チェックボックスとラジオの入力で使用されるブール型プロパティです。 true に設定した場合は、フォームの読み込み時に、フィールドがデフォルトで選択されていることを示します。 |
 | Fieldset | すべて | フォーム内に視覚的に異なるセクションを作成するためにフィールドをグループ化します。 fieldset 要素は、フォーム内の関連するフィールドを視覚的に分けてグループ化し、組織やユーザーエクスペリエンスを向上させます。 </br> フィールドセット内の一連のフィールドを整理するには、 `fieldset` プロパティを選択し、その名前属性を指定します。 次の例では、組織を改善するために、ラジオボタンを 1 つのフィールドセット内にカプセル化する方法を示します。 ![フィールドセットの例](/help/edge/assets/fieldset-example.png) |
 
+## 関連トピック
+
+{{see-more-forms-eds}}
