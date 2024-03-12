@@ -11,7 +11,7 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 85%
@@ -249,7 +249,7 @@ React ベースの Peregrine と CIF のコアコンポーネントを初期化�
    import { enhancer, reducers } from '@magento/peregrine/lib/store';
    
    const storage = new BrowserPersistence();
-   const store = createStore(combineReducers (reducers), enhancer);
+   const store = createStore(combineReducers(reducers), enhancer);
    
    storage.setItem('store_view_code', config.storeView);
    
@@ -263,7 +263,7 @@ React ベースの Peregrine と CIF のコアコンポーネントを初期化�
        // listen for add-to-cart events and enable forwarding to the magento storefront events sdk
        useAddToCartEvent(({ mse }));
        // enable CIF specific event forwarding to the Adobe Client Data Layer
-       useDataLayerEvents ();
+       useDataLayerEvents();
    
        useEffect(() => {
            // implement a proper marketing opt-in, for demo purpose you hard-set the consent cookie

@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 8ff0363fbb97aac85733fc9444819fa4d6f12805
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -79,16 +79,20 @@ AEMオーサリングには、フォームを作成するための WYSIWYG イ�
 
 要するに [AEM Authoring](/help/forms/creating-adaptive-form-core-components.md) ～の基盤を基に構築される [ドキュメントベースのオーサリング](/help/edge/docs/forms/create-forms.md)は、複雑なフォームを作成および管理するためのより高度なツールキットを提供します。
 
+>[!NOTE]
+>
+>
+> AEMオーサリング機能は、アーリーアダプタープログラムで使用できます。 ご興味がある場合は、aem-forms-ea@adobe.com宛に、ご自身の仕事用アドレスからクイックメールを送信して、機能へのアクセスをリクエストしてください。
+
 ### AEM FormsEdge Delivery Services：オーサリング Formsの公開と提出
 
 次の図は、ドキュメントベースのオーサリングとAEMオーサリングを使用してフォームを作成、公開、送信するプロセスを示しています。
 
-
-
-
 ![ドキュメントベースのオーサリング ](/help/edge/assets/document-based-authoring-workflow.png)
 
 ![AEM Authoring](/help/edge/assets/aem-authoring-workflow.png)
+
+
 
 
 ## フォームの作成を開始
@@ -101,6 +105,17 @@ AEMオーサリングには、フォームを作成するための WYSIWYG イ�
 * [フォームに繰り返し可能なセクションを&#x200B;追加](/help/edge/docs/forms/repeatable-forms.md)
 * [フォーム送信後にカスタムの「ありがとうございます」メッセージを&#x200B;表示](/help/edge/docs/forms/thank-you-page-form.md)
 * [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
+
+
+
+
+
+
+
+
+
+
+
 
 
 

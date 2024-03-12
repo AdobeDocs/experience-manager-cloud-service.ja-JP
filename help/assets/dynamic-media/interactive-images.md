@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '4072'
 ht-degree: 100%
@@ -389,7 +389,7 @@ Experience Manager Assets によって返される埋め込みコードには、
                 "asset" : "/content/dam/mac/aodmarketingna/shoppable-banner/shoppable-banner.jpg" }
         })
         /* // Example of interactive image event for Quickview.
-             s7interactiveimageviewer.setHandlers ({
+             s7interactiveimageviewer.setHandlers({
                 "quickViewActivate": function(inData) {
                     var sku=inData.sku; //SKU for product ID
                     //To pass other parameter from the hotspot, add custom parameter during the hotspot setup as parameterName=value
@@ -413,7 +413,7 @@ Experience Manager Assets によって返される埋め込みコードには、
  <tbody>
   <tr>
    <td><p>単一の SKU（クエリ文字列内）</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers ({
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;amp;source=100";
       },
@@ -421,7 +421,7 @@ Experience Manager Assets によって返される埋め込みコードには、
   </tr>
   <tr>
    <td><p>単一の SKU（URL パス内）</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers ({
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
       },
@@ -429,7 +429,7 @@ Experience Manager Assets によって返される埋め込みコードには、
   </tr>
   <tr>
    <td><p>SKU とカテゴリ ID（クエリ文字列内）</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers ({
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;amp;prodId=" + inData.sku;
       },
@@ -471,7 +471,7 @@ loadQuickView(quickViewUrl);
    "config" : "/etc/dam/presets/viewer/Shoppable_Media",
    "asset" : "/content/dam/mac/aodmarketingna/shoppable-banner/shoppable-banner.jpg" }
  })
-   s7interactiveimageviewer.setHandlers ({
+   s7interactiveimageviewer.setHandlers({
    "quickViewActivate": function(inData) {
      var sku=inData.sku;
      var categoryId=inData.categoryId;

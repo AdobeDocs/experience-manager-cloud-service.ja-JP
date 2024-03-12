@@ -4,10 +4,10 @@ description: このチュートリアルでは、新しいAdobe Experience Manag
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '1854'
-ht-degree: 0%
+source-wordcount: '1850'
+ht-degree: 1%
 
 ---
 
@@ -18,12 +18,9 @@ ht-degree: 0%
 
 これらのフォームは、Microsoft Excel またはGoogleシートファイルに直接データを送信します。これにより、Googleシート、Microsoft Excel、Microsoft SharePointの活発なエコシステムと堅牢な API を使用して、送信されたデータを簡単に処理したり、既存のビジネスワークフローを開始したりできます。
 
-AEM Formsには、アダプティブFormsブロックと呼ばれるブロックが用意されており、これを使用すると、キャプチャしたデータを取得して保存するためのフォームを簡単に作成することができます。 アダプティブFormsブロックで事前設定された新しいAEMプロジェクトを作成したり、既存のAEMプロジェクトにアダプティブFormsブロックを追加したりできます。
+AEM Formsには、アダプティブFormsブロックと呼ばれるブロックが用意されており、これを使用すると、キャプチャしたデータを取得して保存するためのフォームを簡単に作成することができます。 以下が可能です。 [アダプティブFormsブロックで事前設定された新しいAEMプロジェクトを作成する](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) または [アダプティブFormsブロックを既存のAEMプロジェクトに追加する](#add-adaptive-forms-block-to-your-existing-aem-project).
 
-このAEM Formsチュートリアルでは、新しいAdobe Experience Manager(AEM)Formsプロジェクトを使用して独自のカスタムフォームを作成、プレビュー、公開する手順を説明します。 また、アダプティブFormsブロックを既存のAEMプロジェクトに追加する方法についても説明します。
-
-* **[アダプティブFormsブロックで事前設定された新しいAEMプロジェクトを作成します。](#create-a-new-eds-project-pre-configured-with-adaptive-forms-block)**
-* **[アダプティブFormsブロックを既存のAEMプロジェクトに追加する](#add-adaptive-forms-block-to-an-existing-eds-project)**
+このAEM Formsチュートリアルでは、新しいAdobe Experience Manager(AEM)Formsプロジェクトを使用して独自のカスタムフォームを作成、プレビュー、公開する手順を説明します。
 
 
 
@@ -79,7 +76,7 @@ AEM Forms Boilerplate テンプレートを使用すると、アダプティブF
 
 ### 独自のコンテンツソースをリンク
 
-新しく作成した GitHub リポジトリがを指している場所は、 [Google Drive フォルダーに保存されたサンプルコンテンツ](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). この読み取り専用コンテンツは、フォームの出発点として最適です。 必要に応じて、自由に独自のGoogle Drive にコピーし、カスタマイズしてください。
+新しく作成した GitHub リポジトリがを指している場所は、 [Google Drive フォルダーに保存されたサンプルコンテンツ](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). この読み取り専用コンテンツは、フォームの出発点として最適です。 必要に応じて、自由に独自のGoogle Drive にコピーし、カスタマイズしてください。
 
 ![Google Drive のサンプルコンテンツ](/help/edge/assets/folder-with-sample-content.png)
 
@@ -194,8 +191,6 @@ AEM Forms Boilerplate テンプレートを使用すると、アダプティブF
 
    例えば、プロジェクトのリポジトリの名前が「wefinance」で、アカウント所有者「wkndforms」の下にあり、「main」ブランチを使用している場合、URL は次のようになります。
 
-
-
    [https://main—wefinance—wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
 
 ### フォームの作成
@@ -274,9 +269,16 @@ AEM Sidekickを使用して、問い合わせドキュメントをプレビュ�
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)
 
-既存のAEMプロジェクトがある場合は、アダプティブFormsブロックを現在のプロジェクトに統合して、フォームの作成を開始できます。 統合する手順は次のとおりです。
+既存のAEMプロジェクトがある場合は、アダプティブFormsブロックを現在のプロジェクトに統合して、フォームの作成を開始できます。
 
-1. アダプティブFormsブロックリポジトリ ( https://github.com/adobe-rnd/aem-boilerplate-forms ) をコンピューターに複製します。
+>
+>
+>
+> この手順は、 [AEM Boilerplate](https://github.com/adobe/aem-boilerplate). AEMプロジェクトを作成した場合は、 [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms)を使用する場合は、この手順をスキップできます。
+
+統合する手順は次のとおりです。
+
+1. アダプティブFormsブロックリポジトリのクローンを作成します。 [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) をコンピューターに追加します。
 
 1. ダウンロードしたフォルダー内で、 `blocks/form` フォルダー。 このフォルダーをコピーします。 次に、AEMプロジェクトのローカルに移動します `blocks` フォルダーにコピーしたフォームフォルダーをここに貼り付けます。
 

@@ -2,10 +2,10 @@
 title: 最適化された GraphQL フィルタリング用コンテンツフラグメントの更新
 description: ヘッドレスコンテンツ配信のために、Adobe Experience Manager as a Cloud Service で最適化された GraphQL フィルタリング用にコンテンツフラグメントを更新する方法について説明します。
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 58%
+ht-degree: 59%
 
 ---
 
@@ -57,7 +57,7 @@ GraphQLフィルターのパフォーマンスを最適化するには、コン�
       <td>すべて </td>
       <td> </td>
       <td>変数 </td>
-      <td>有効 (!=0) または (0) コンテンツフラグメント移行ジョブのトリガーを無効 (0) にします。 </td>
+      <td>コンテンツ移行ジョブのトリガーを有効（!=0）または無効（0）にします。 </td>
      </tr>
      <tr>
       <td>2</td>
@@ -211,7 +211,7 @@ GraphQLフィルターのパフォーマンスを最適化するには、コン�
       <td>すべて </td>
       <td> </td>
       <td>変数 </td>
-      <td>無効 (0)( または有効 (!)=0））にします。 </td>
+      <td>コンテンツフラグメント移行ジョブの移行のトリガーを無効（0）（または有効（!=0））にします。 </td>
      </tr>
     </tbody>
    </table>

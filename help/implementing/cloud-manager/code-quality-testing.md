@@ -2,7 +2,7 @@
 title: コード品質テスト
 description: パイプラインのコード品質テストの仕組みと、デプロイメントの品質を向上させる方法について説明します。
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 100%
@@ -87,7 +87,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 この場合、SonarQube は致命的脆弱性を報告します。コードを見直した後、これが脆弱性でないことを確認し、適切なルール ID でこれに注釈を付けることができます。
 
 ```java
-@SuppressWarnings ("squid:S2068")
+@SuppressWarnings("squid:S2068")
 @Property(label = "Service Password")
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```

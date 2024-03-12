@@ -2,10 +2,10 @@
 title: Query Builder API
 description: アセット共有の Query Builder の機能は、Java API と REST API を通して公開されます。
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '1830'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Query Builder を使用すると、AEM のコンテンツリポジトリへの�
 
 サーバーサイド Query Builder（[`QueryBuilder`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html)）はクエリの記述を受け入れ、XPath クエリを作成して実行します。必要に応じて、結果セットのフィルタリングや、ファセットの抽出も実行できます。
 
-クエリの記述は、単に述語（[`Predicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html)）のセットです。例としては、XPath の `jcr:contains ()` 関数に対応するフルテキスト述語などがあります。
+クエリの記述は、単に述語（[`Predicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html)）のセットです。例としては、XPath の `jcr:contains()` 関数に対応するフルテキスト述語などがあります。
 
 各述語タイプに、1 つのエバリュエーターコンポーネント（[`PredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)）があります。これらのコンポーネントは、XPath、フィルタリングおよびファセットの抽出に対してその特定の述語を処理する方法を理解しています。OSGi コンポーネントのランタイムによってプラグインされる、カスタムのエバリュエーターを作成するのは簡単です。
 
@@ -125,7 +125,7 @@ orderby=path
 
 例えば、この UI は以下の手法に適応できます。
 
-* 合計ヒット数の正確なカウント ([SearchResult.getTotalMatches ()](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) またはの合計 `querybuilder.json` （応答）が 100 以下である。
+* 100 以下の合計ヒット数の正確な数（[SearchResult.getTotalMatches()](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) または `querybuilder.json` 応答の合計）を取得して表示します。
 * `guessTotal` を、100 で Query Builder を呼び出すように設定します。
 
 * 応答は、以下のような結果になります。
@@ -381,8 +381,8 @@ p.nodedepth=5
     SearchResult result = query.getResult();
 
     // paging metadata
-    int hitsPerPage = result.getHits ().size(); // 20 (set above) or lower
-    long totalMatches = result.getTotalMatches ();
+    int hitsPerPage = result.getHits().size(); // 20 (set above) or lower
+    long totalMatches = result.getTotalMatches();
     long offset = result.getStartIndex();
     long numberOfPages = totalMatches / 20;
 
@@ -396,7 +396,7 @@ p.nodedepth=5
     doc.appendChild( root );
 
     // iterating over the results
-    for (Hit hit : result.getHits ()) {
+for (Hit hit : result.getHits()) {
        String path = hit.getPath();
 
       //Create a result element
@@ -461,7 +461,7 @@ Query Builder のクエリを試してみたり、デバッグしたりする場
    * `https://<host>:<port>/system/console/slinglog` に移動します。**DEBUG** に、`com.day.cq.search.impl.builder.QueryImpl` の新しいロガーを作成します。
 1. 上述のクラスで DEBUG を有効にすると、Query Builder で生成された XPath がログに表示されます。
 1. 関連する Query Builder クエリのログエントリから XPath クエリをコピーします。以下に例を示します。
-   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains (jcr:content, "WKND") or jcr:contains (jcr:content/@cq:tags, "WKND"))]`
+   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]`
 1. クエリ計画を取得するための XPath として、XPath クエリをクエリの説明に貼り付けます。
 
 ### Query Builder Debugger を使用して説明可能な XPath を取得する {#obtain-explain-able-xpath-via-the-query-builder-debugger}
@@ -497,7 +497,7 @@ null=group: limit=20, offset=0[
     {path=path: path=/content}
     {type=type: type=cq:Page}
 ]
-com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains (jcr:content, "WKND") or jcr:contains (jcr:content/@cq:tags, "WKND"))]
+com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]
 com.day.cq.search.impl.builder.QueryImpl no filtering predicates
 com.day.cq.search.impl.builder.QueryImpl query execution took 69 ms
 ```

@@ -2,10 +2,10 @@
 title: ContextHub JavaScript API リファレンス
 description: ContextHub コンポーネントをページに追加すると、ContextHub JavaScript API がスクリプトで使用できるようになります。
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '4602'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ ContextHub オブジェクトを使用して、すべてのストアにアクセ
 
 ### 関数（ContextHub） {#functions-contexthub}
 
-#### getAllStores () {#getallstores}
+#### getAllStores() {#getallstores}
 
 登録されている ContextHub ストアをすべて返します。
 
@@ -83,7 +83,7 @@ ContextHub オブジェクトを使用して、すべてのストアにアクセ
 次の例では、すべてのストアを取得してから、geolocation ストアを取得しています。
 
 ```javascript
-var allStores = ContextHub.getAllStores ();
+var allStores = ContextHub.getAllStores();
 var geoloc = allStores.geolocation
 ```
 
@@ -127,7 +127,7 @@ ContextHub セグメントへのアクセスを提供します。
 
 ### 関数（ContextHub.SegmentEngine.SegmentManager） {#functions-contexthub-segmentengine-segmentmanager}
 
-#### getResolvedSegments () {#getresolvedsegments}
+#### getResolvedSegments() {#getresolvedsegments}
 
 現在のコンテキストで解決されたセグメントを返します。この関数にパラメーターはありません。
 
@@ -155,7 +155,7 @@ ContextHub ストアのベースクラス。
 
 ### 関数（ContextHub.Store.Core） {#functions-contexthub-store-core}
 
-#### addAllItems (tree, options) {#addallitems-tree-options}
+#### addAllItems(tree, options) {#addallitems-tree-options}
 
 データオブジェクトまたは配列とストアデータを結合します。オブジェクトのキーと値の各ペアまたは配列が（`setItem` 関数を使用して）ストアに追加されます。
 
@@ -193,7 +193,7 @@ ContextHub ストアのベースクラス。
 * `true` 値は、参照が追加されたことを示します。
 * `false` 値は、参照が追加されなかったことを示します。
 
-#### announceReadiness () {#announcereadiness}
+#### announceReadiness() {#announcereadiness}
 
 このストアに対する `ready` イベントを発生させます。この関数にパラメーターはなく、値を返しません。
 
@@ -213,7 +213,7 @@ ContextHub ストアのベースクラス。
 
 キーの値を表すオブジェクト。
 
-#### getKeys (includeInternals) {#getkeys-includeinternals}
+#### getKeys(includeInternals) {#getkeys-includeinternals}
 
 ストアからキーを取得します。オプションで、ContextHub フレームワークが内部的に使用するキーを取得できます。
 
@@ -225,7 +225,7 @@ ContextHub ストアのベースクラス。
 
 キー名（`string` 値）の配列。
 
-#### getReferences () {#getreferences}
+#### getReferences() {#getreferences}
 
 ストアから参照を取得します。
 
@@ -401,7 +401,7 @@ JSONP サービスへの最後の呼び出し以降キャッシュされてい�
 
 未加工の応答を表すオブジェクト。
 
-#### getServiceDetails () {#getservicedetails}
+#### getServiceDetails() {#getservicedetails}
 
 この ContextHub.Store.JSONPStore オブジェクトのサービスオブジェクトを取得します。サービスオブジェクトには、サービス URL を作成するのに必要な情報が格納されています。
 
@@ -521,7 +521,7 @@ Cookie とやり取りするためのユーティリティクラス。
 
 ### 関数（ContextHub.Utils.Cookie） {#functions-contexthub-utils-cookie}
 
-#### が存在する（キー） {#exists-key}
+#### exists(key) {#exists-key}
 
 cookie が存在するかどうかを判断します。
 
@@ -536,12 +536,12 @@ cookie が存在するかどうかを判断します。
 ##### 例 {#example-exists}
 
 ```javascript
-if (ContextHub.Utils.Cookie.exists ("name")) {
+if (ContextHub.Utils.Cookie.exists("name")) {
    // conditionally-executed code
 }
 ```
 
-#### getAllItems (filter) {#getallitems-filter}
+#### getAllItems(filter) {#getallitems-filter}
 
 フィルターに一致するキーを持つすべての cookie を返します。
 
@@ -560,7 +560,7 @@ Cookie のオブジェクト。オブジェクトプロパティは Cookie の�
 ##### 例 {#example-getallitems}
 
 ```javascript
-ContextHub.Utils.Cookie.getAllItems ([/^cq-authoring/, /^cq-editor/])
+ContextHub.Utils.Cookie.getAllItems([/^cq-authoring/, /^cq-editor/])
 ```
 
 #### getItem(key) {#getitem-key-1}
@@ -581,7 +581,7 @@ cookie の値、またはそのキーの cookie が見つからなかった場�
 ContextHub.Utils.Cookie.getItem("name");
 ```
 
-#### getKeys (filter) {#getkeys-filter}
+#### getKeys(filter) {#getkeys-filter}
 
 フィルターに一致する既存の cookie のキーからなる配列を返します。
 
@@ -600,7 +600,7 @@ ContextHub.Utils.Cookie.getItem("name");
 ##### 例 {#example-getkeys-1}
 
 ```javascript
-ContextHub.Utils.Cookie.getKeys ([/^cq-authoring/, /^cq-editor/])
+ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
 ```
 
 #### removeItem(key, options) {#removeitem-key-options-1}
@@ -829,7 +829,7 @@ ContextHub.Utils.JSON.stringify({
 
 ### 関数（ContextHub.Utils.JSON.tree） {#functions-contexthub-utils-json-tree}
 
-#### addAllItems () {#addallitems}
+#### addAllItems() {#addallitems}
 
 データオブジェクトのコピーを作成し、2 つ目のオブジェクトのデータツリーに追加します。この関数はコピーを返し、元のオブジェクトは変更しません。2 つのオブジェクトのデータツリーに同じキーが含まれている場合、2 つ目のオブジェクトの値は、最初のオブジェクトの値を上書きします。
 
@@ -911,7 +911,7 @@ Object {
 }
 ```
 
-#### getKeys () {#getkeys}
+#### getKeys() {#getkeys}
 
 オブジェクトのデータツリーからすべてのキーを取得します。オプションで、特定のキーの子のキーのみを取得できます。オプションで、取得したキーのソート順を指定することもできます。
 
@@ -946,7 +946,7 @@ myObject {
 }
 ```
 
-`ContextHub.Utils.JSON.tree.getKeys (myObject);` スクリプトは、次の配列を返します。
+`ContextHub.Utils.JSON.tree.getKeys(myObject);` スクリプトは、次の配列を返します。
 
 ```javascript
 ["/location", "/location/city", "/location/country", "/location/latitude", "/location/longitude", "/location/weather", "/location/weather/humidity", "/location/weather/precipitation", "/location/weather/temperature", "/location/weather/wind"]
@@ -1072,7 +1072,7 @@ myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 
 ### 関数（ContextHub.Utils.storeCandidates） {#functions-contexthub-utils-storecandidates}
 
-#### getRegisteredCandidates (storeType) {#getregisteredcandidates-storetype}
+#### getRegisteredCandidates(storeType) {#getregisteredcandidates-storetype}
 
 ストア候補として登録されているストアタイプを返します。特定のストアタイプまたはすべてのストアタイプの登録されている候補を取得します。
 
@@ -1084,7 +1084,7 @@ myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 
 ストアタイプのオブジェクト。オブジェクトプロパティはストアタイプ名で、プロパティ値は登録済みのストア候補の配列です。
 
-#### getStoreFromCandidates (storeType) {#getstorefromcandidates-storetype}
+#### getStoreFromCandidates(storeType) {#getstorefromcandidates-storetype}
 
 登録されている候補からストアタイプを返します。複数のストアタイプが同じ名前で登録されている場合、この関数は最も優先度が高いストアタイプを返します。
 
@@ -1096,7 +1096,7 @@ myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 
 登録済みのストア候補を表すオブジェクト。要求されたストアタイプが登録されていない場合は、エラーが発生します。
 
-#### getSupportedStoreTypes () {#getsupportedstoretypes}
+#### getSupportedStoreTypes() {#getsupportedstoretypes}
 
 ストア候補として登録されているストアタイプの名前を返します。この関数はパラメーターを必要としません。
 

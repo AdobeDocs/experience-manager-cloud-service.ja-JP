@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '5863'
 ht-degree: 100%
@@ -614,7 +614,7 @@ Adobe Experience Manager によって返される埋め込みコードには、�
    "asset" : "/content/dam/marketing/shoppable-video/john-lewis/shoppable-video-john-lewis-2014.mp4" }
  })
  /* // Example of interactive video event for quickview.
-   s7interactivevideoviewer.setHandlers ({
+   s7interactivevideoviewer.setHandlers({
    "quickViewActivate": function(inData) {
      var sku=inData.sku; //SKU for product ID
     //To pass other parameter from the hotspot, you need to add custom parameter during the hotspot setup as parameterName=value
@@ -645,7 +645,7 @@ Adobe Experience Manager によって返される埋め込みコードには、�
   <tbody>
   <tr>
     <td><p>単一の SKU（クエリ文字列内）</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers ({
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
       },
@@ -653,7 +653,7 @@ Adobe Experience Manager によって返される埋め込みコードには、�
   </tr>
   <tr>
     <td>単一の SKU（URL パス内）</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers ({
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
       },
@@ -661,7 +661,7 @@ Adobe Experience Manager によって返される埋め込みコードには、�
   </tr>
   <tr>
     <td><p>SKU とカテゴリ ID（クエリ文字列内）</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers ({
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
       },
@@ -736,7 +736,7 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
    "asset" : "/content/dam/marketing/shoppable-video/john-lewis/shoppable-video-john-lewis-2014.mp4" }
  })
  // Example of interactive video event for quickview.
-   s7interactivevideoviewer.setHandlers ({
+   s7interactivevideoviewer.setHandlers({
    "quickViewActivate": function(inData) {
      var sku=inData.sku; //SKU for product ID
      var categoryId=inData.categoryId; //categoryId

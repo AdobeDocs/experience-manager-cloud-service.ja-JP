@@ -1,12 +1,12 @@
 ---
-title: AEM Forms Edge Delivery ServicesForm コンポーネント
-description: AEM Forms Edge Delivery Services は、効率化されたデータ収集とユーザーエンゲージメントの将来を想定できるように、ピークパフォーマンス向けに構築されています。 この記事では、EDD フォームですぐに使用できるすべてのフォームコンポーネントの一覧を示します。
+title: AEM FormsEdge Delivery Servicesフォームコンポーネント
+description: AEM FormsEdge Delivery Servicesは、効率的なデータ収集とユーザーエンゲージメントの将来を想像できるように、ピークパフォーマンスを実現するために構築されています。 この記事では、EDD フォームですぐに使用できるすべてのフォームコンポーネントの一覧を示します。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '872'
 ht-degree: 5%
 
 ---

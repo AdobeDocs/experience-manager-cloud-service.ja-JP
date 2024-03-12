@@ -5,7 +5,7 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '4087'
 ht-degree: 100%
@@ -432,7 +432,7 @@ OData サービスでは、ナビゲーションプロパティを使用して�
 以下に、検証フラグを&#x200B;**完全**&#x200B;に設定する例を示します。
 
 ```java
-operationOptions.setValidationOptions (ValidationOptions.FULL);
+operationOptions.setValidationOptions(ValidationOptions.FULL);
 ```
 
 >[!NOTE]

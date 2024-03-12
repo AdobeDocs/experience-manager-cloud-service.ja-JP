@@ -2,9 +2,9 @@
 title: ユニバーサルエディタで使用するためのブロックの作成
 description: Edge Delivery Servicesプロジェクトを使用したAEMオーサリングで、ユニバーサルエディターで使用するために実装されたブロックを作成する方法について説明します。
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1205'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Edge Delivery Servicesプロジェクトを使用したAEMオーサリングで�
 
 このガイドでは、必ずユニバーサルエディターと同様に、Edge Delivery Servicesプロジェクトを使用したAEMのオーサリングに関する既存の知識が必要です。 このガイドを始める前に、既にEdge Delivery Servicesにアクセスし、次のような基本事項を理解しておく必要があります。
 
-* これで [エッジ配信サービスの口座です。](/help/edge/developer/tutorial.md)
+これで [エッジ配信サービスのチュートリアル](/help/edge/developer/tutorial.md)
 * 次に対するアクセス権があります： [AEM Cloud Serviceサンドボックス。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * お持ちの [は、同じサンドボックス環境でユニバーサルエディターを有効にしました。](/help/implementing/universal-editor/getting-started.md)
 * これで [Edge Delivery Servicesを使用したAEMオーサリングのための Developer Getting Guide](/help/edge/edge-dev-getting-started.md) ガイド。
