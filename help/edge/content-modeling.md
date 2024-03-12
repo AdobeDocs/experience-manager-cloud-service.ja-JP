@@ -1,13 +1,13 @@
 ---
 title: コンテンツプロジェクトを使用したAEMオーサリング用のコンテンツモデリングEdge Delivery Services
 description: コンテンツモデリングがEdge Delivery Servicesプロジェクトを使用したAEMオーサリングでどのように機能するか、および独自のコンテンツをモデル化する方法について説明します。
-source-git-commit: e9c882926baee001170bad2265a1085e03cdbedf
+exl-id: e68b09c5-4778-4932-8c40-84693db892fd
+source-git-commit: 22a631d394de1c0fb934d9703e966c8287aef391
 workflow-type: tm+mt
-source-wordcount: '2097'
+source-wordcount: '2095'
 ht-degree: 1%
 
 ---
-
 
 # コンテンツプロジェクトを使用したAEMオーサリング用のコンテンツモデリングEdge Delivery Services {#content-modeling}
 
@@ -351,7 +351,7 @@ Edge Delivery Servicesを使用したAEMオーサリングの場合、コンテ�
 
 #### フィールドの折りたたみ {#field-collapse}
 
-フィールドの折りたたみは、サフィックスを使用する命名規則に基づいて、複数のフィールド値を 1 つのセマンティック要素に組み合わせるメカニズムです `Title`, `Type`, `Alt`、および `Text` （すべて大文字と小文字を区別）。 これらのサフィックスで終わるプロパティは、値と見なされず、別のプロパティの属性と見なされます。
+フィールドの折りたたみは、サフィックスを使用する命名規則に基づいて、複数のフィールド値を 1 つのセマンティック要素に組み合わせるメカニズムです `Title`, `Type`, `MimeType`, `Alt`、および `Text` （すべて大文字と小文字を区別）。 これらのサフィックスで終わるプロパティは、値と見なされず、別のプロパティの属性と見なされます。
 
 ##### 画像 {#image-collapse}
 
@@ -624,7 +624,13 @@ AEM as a Cloud Serviceでは、テーブルのような方法で、パスごと�
 
 ### ページプロパティ {#page-properties}
 
-また、ページメタデータのコンポーネントモデルを定義することもできます。このモデルは、AEM Sitesのページのプロパティダイアログの「 」タブとして作成者が使用できます。
+AEMで使用できるデフォルトのページプロパティの多くは、ドキュメント内の各ページメタデータにマッピングされます。 例えば、を含む場合 `title`, `description`, `robots`, `canonical url` または `keywords`. 一部のAEM固有のプロパティも使用できます。
+
+* `cq:lastModified` as `modified-time` （ISO8601 形式）
+* ドキュメントが最後に `published-time` （ISO8601 形式）
+* `cq:tags` as `cq-tags` タグ ID のコンマ区切りリストとして。
+
+また、カスタムページメタデータのコンポーネントモデルを定義し、AEM Sitesのページのプロパティダイアログの「 」タブとして作成者が使用できるようにします。
 
 これをおこなうには、ID を持つコンポーネントモデルを作成します `page-metadata`.
 
@@ -633,15 +639,10 @@ AEM as a Cloud Serviceでは、テーブルのような方法で、パスごと�
   "id": "page-metadata",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "theme",
       "label": "Theme"
     }
   ]
 }
 ```
-
-特別な意味を持つフィールド名がいくつかあり、オーサリングダイアログ UI の提供時にスキップされます。
-
-* **`cq:tags`**  — デフォルトでは、 `cq:tags` はメタデータに追加されません。 これらを `page-metadata` モデルは、タグ ID をコンマ区切りリストとして追加します。 `tags` メタタグを先頭に追加します。
-* **`cq:lastModified`** - `cq:lastModified` はデータを `last-modified` 先頭に
