@@ -4,7 +4,7 @@ description: このチュートリアルでは、新しいAdobe Experience Manag
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: d0298f3c15264bfa7421ccf0cde752f164829c02
 workflow-type: tm+mt
 source-wordcount: '1850'
 ht-degree: 1%
@@ -124,7 +124,7 @@ AEM Forms Boilerplate テンプレートを使用すると、アダプティブF
       Microsoft SharePointを使用する場合、フォルダーパスは次の形式を使用します。
 
       ```HTML
-      https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+      https://<tenant>.SharePoint.com/sites/<sp-site>/Shared%20Documents/<folder-name>
       ```
 
       例：
@@ -271,7 +271,7 @@ AEM Sidekickを使用して、問い合わせドキュメントをプレビュ�
 
 既存のAEMプロジェクトがある場合は、アダプティブFormsブロックを現在のプロジェクトに統合して、フォームの作成を開始できます。
 
->
+>[!NOTE]
 >
 >
 > この手順は、 [AEM Boilerplate](https://github.com/adobe/aem-boilerplate). AEMプロジェクトを作成した場合は、 [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms)を使用する場合は、この手順をスキップできます。
