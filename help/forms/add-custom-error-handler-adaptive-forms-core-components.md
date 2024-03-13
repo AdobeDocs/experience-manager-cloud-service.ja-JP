@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: e0607ff37572a586f5a83f2974054ebfb4b7d98f
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 100%
@@ -246,14 +246,14 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
        * @errorHandler
        */
        function customErrorHandler(response, headers, globals)
-       {
-           console.log("Custom Error Handler processing start...");
-           console.log("response:"+JSON.stringify(response));
-           console.log("headers:"+JSON.stringify(headers));
-           alert("CustomErrorHandler - Enter valid PetId.")
-           globals.invoke('defaultErrorHandler',response, headers) 
-           console.log("Custom Error Handler processing end...");
-       }
+   {
+       console.log("Custom Error Handler processing start...");
+       console.log("response:"+JSON.stringify(response));
+       console.log("headers:"+JSON.stringify(headers));
+       alert("CustomErrorHandler - Enter valid PetId.")
+       console.log("Custom Error Handler processing end...");
+       return true; // true - call default error handler, false - don't call default error handler.
+   }
    ```
 
    >[!NOTE]
