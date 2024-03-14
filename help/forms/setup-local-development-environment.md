@@ -4,9 +4,9 @@ description: Adobe Experience Manager Forms as a Cloud Service 用のローカ�
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 1ec17aebe4eb003b24f5036288a8836aabddb77a
+source-git-commit: e84d3ad2d7b549092ab7c616bead2f14f59be8c9
 workflow-type: tm+mt
-source-wordcount: '2724'
+source-wordcount: '2723'
 ht-degree: 97%
 
 ---
@@ -220,10 +220,21 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
 
 1. コマンドプロンプトを開き、`aem-forms-addon-native-<version>` フォルダーに移動します。
 
-1. ローカルの AEM オーサーインスタンスが稼働中であることを確認します。次のコマンドを実行して SDK を開始します。
+1. ローカルの AEM オーサーインスタンスが稼働中であることを確認します。次のコマンドを実行して SDK を起動します。
 
-   * （Microsoft® Windows の場合）`sdk.bat start`
-   * （Linux®または Apple macOS の場合）`AEM_HOME=[local AEM Author installation] ./sdk.sh start`
+   * Microsoft® Windows の場合
+
+     ```shell
+     sdk.bat start
+     ```
+
+
+   * Linux®またはApple macOS
+
+   ```Shell
+       export AEM_HOME=[local AEM Author installation]
+       ./sdk.sh start
+   ```
 
    >[!NOTE]
    >
