@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: d16d908d39df3c7d72dc48ac877c1543d2442416
 workflow-type: tm+mt
 source-wordcount: '1240'
-ht-degree: 11%
+ht-degree: 88%
 
 ---
 
@@ -15,90 +15,90 @@ ht-degree: 11%
 
 ## リリース 15262 {#release-15262}
 
-2024年3月6日に公開された、メンテナンスリリース 15262 の継続的な改善点を以下にまとめます。以前のメンテナンスリリースは、リリース 14697 でした。
+2024年3月6日（PT）に公開された、メンテナンスリリース 15262 の継続的な改善点を以下にまとめます。以前のメンテナンスリリースは、リリース 14697 でした。
 
 2024.3.0 機能のアクティベーションでは、このメンテナンスリリースの機能がすべて提供されます。詳しくは、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja)を参照してください。
 
 ### 機能強化 {#enhancements-15262}
 
-* ASSETS-30632：リスト表示にBrand Portal公開ステータス列を別に追加しました。
-* ASSETS-30934：のサポートが追加されました。 `Iptc4xmpCore:AltTextAccessibility` および `Iptc4xmpCore:ExtDescrAccessibility` プロパティをアセットメタデータエディターに追加します。
-* ASSETS-31297:Dynamic Media からコピーされたアセットが削除されないよう、チェックが改善されました。
-* ASSETS-33246：リリースインデックス定義 `damAssetLucene-10`.
-* ASSETS-33590：処理プロファイルでのビデオの Web レンディションのサポートが追加されました。
-* GRANITE-36205:oak のバージョンを 1.60-T20240131102219-0cde853 に更新します。
-* SITES-19326: Assets UI のリンクを更新して、新しい CF エディターで CF を開きます。
-* GUIDES-12945: AI を利用したスマートサーチクエリで、コンテンツのオーサリング中にコンテンツ参照を追加
-* GUIDES-12706: Web エディターの改良されたバージョン履歴機能
-* GUIDES-14948：翻訳パネルでのユーザーエクスペリエンスの向上
-* GUIDES-8782：要素を挿入ダイアログボックスの検索ロジックが改善されました。
+* ASSETS-30632：リスト表示に Brand Portal 公開ステータス列を別に追加しました。
+* ASSETS-30934：`Iptc4xmpCore:AltTextAccessibility` および `Iptc4xmpCore:ExtDescrAccessibility` プロパティのサポートをアセットメタデータエディターに追加しました。
+* ASSETS-31297：Dynamic Media からコピーされたアセットが削除されないようにチェックを改善します。
+* ASSETS-33246：リリースインデックス定義 `damAssetLucene-10`。
+* ASSETS-33590：処理プロファイルでのビデオの webm レンディションのサポートを追加します。
+* GRANITE-36205：Oak バージョンを 1.60-T20240131102219-0cde853 に更新します。
+* SITES-19326：Assets UI のリンクを更新して、新しい CF エディターで CF を開きます。
+* GUIDES-12945：コンテンツのオーサリング中にコンテンツ参照を追加する AI を利用したスマート候補
+* GUIDES-12706：web エディターのバージョン履歴機能を改善しました
+* GUIDES-14948：翻訳パネルでのユーザーエクスペリエンスを改善しました
+* GUIDES-8782：要素を挿入ダイアログボックスの検索ロジックを改善しました
 * GUIDES-14681：動的ベースラインを使用した複数の出力プリセットの公開機能
-* AEMガイドの機能強化の完全なリストについては、次を参照してください。 [AEMガイドの新機能](https://experienceleague.adobe.com/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2402-release/whats-new-2024-2-0.html?lang=en#release-info)
+* AEM Guides の機能強化の完全なリストについて詳しくは、[AEM Guides の新機能](https://experienceleague.adobe.com/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2402-release/whats-new-2024-2-0.html?lang=ja#release-info)を参照してください。
 
 ### 修正された問題 {#fixed-issues-15262}
 
 * ASSETS-15977：非推奨（廃止予定）の v1 検索イベントとパイプラインプロデューサーを削除します。
-* ASSETS-18088：バティックライブラリの依存関係を 1.17 にアップグレードします。
+* ASSETS-18088：Batik ライブラリの依存関係を 1.17 にアップグレードします。
 * ASSETS-21965：メタデータの書き戻しワークフローは、アセットメタデータの変更時にのみ起動する必要があります。
-* ASSETS-26368：ジョブ設定が存在しない場合、スケジュールされた一括読み込みジョブは削除されません。
-* ASSETS-26549:「jcr:lastModifiedBy」:「workflow-process-service」を含むアセット/ノードは、リスト表示で「外部ユーザー」として表示されます。
-* ASSETS-26842:「Firefly」テキストを更新して、処理プロファイルの「App Builder」を読み上げました。
-* ASSETS-28708：一部の IMS トークンリクエストの応答が非常に遅くなっています。
-* ASSETS-28767：フォルダーに大きいが含まれている場合、アセットの公開状態が一貫しない。 公開されたアセットの数。
+* ASSETS-26368：ジョブ設定が存在しない場合、スケジュールされた一括読み込みジョブが削除されません。
+* ASSETS-26549：「jcr:lastModifiedBy」、「workflow-process-service」を含むアセット／ノードが、リスト表示で「外部ユーザー」として表示されます。
+* ASSETS-26842：処理プロファイルの「App Builder」を読み取るために、「Firefly」テキストを更新します。
+* ASSETS-28708：一部の IMS トークンリクエストの遅い応答。
+* ASSETS-28767：フォルダーに多数のアセットが公開されている場合、アセットの公開状態が一貫しません。
 * ASSETS-29011：読み取り専用ユーザーにはスマート切り抜きが表示されます。
-* ASSETS-29348: AssetMoveEventHandler はメモリを消費しすぎる可能性があります。
-* ASSETS-29738:WOFF ファイルの NullPointerException で、アセットのアップロード制限が失敗する。
-* ASSETS-30068: Asset Essentials の一括読み込みで、「ジョブは完了しましたが、エラーが発生しました」のステータス COMPLETED_WITH_ERROR が含まれます。
+* ASSETS-29348：AssetMoveEventHandler はメモリを消費しすぎる可能性があります。
+* ASSETS-29738：WOFF ファイルの NullPointerException で、アセットのアップロード制限が失敗します。
+* ASSETS-30068：Asset Essentials を一括読み込みして、「ジョブは完了しましたが、エラーが発生しました」というステータス COMPLETED_WITH_ERROR を含めます。
 * ASSETS-30261：アセットイベントのパイプラインに送信された imsUserId が正しくありません。
-* ASSETS-30538：ページファイルの移動後に「ページを表示」オプションが表示されないPDF。
-* ASSETS-30626：空の assetId を持つアセットに関して報告された配信リクエストの作成に失敗しました。
-* ASSETS-30756：フォルダー名が「html」で終わると、アセットの移動ウィザードアクションが失敗します。
-* ASSETS-30810：従来の youtube 設定をレンダリングする前に、タグの不要部分を削除します。
+* ASSETS-30538：PDF ファイルを移動すると、「ページを表示」オプションが表示されなくなります。
+* ASSETS-30626：空の assetId を持つアセットに関して報告された配信リクエストの作成に失敗します。
+* ASSETS-30756：フォルダー名が「html」で終わる場合、アセットを移動ウィザードのアクションが失敗します。
+* ASSETS-30810：従来の YouTube 設定をレンダリングする前に、タグの不要部分を削除します。
 * ASSETS-31015：ファイル名拡張子が.msg のアセットをアップロードできません。
-* ASSETS-31038：通知サービスで受信したタスクイベントは処理されていません。
+* ASSETS-31038：通知サービスで受信したタスクイベントが処理されていません。
 * ASSETS-31097：トラバーサルクエリの警告を避けるために、WCM コンテンツの非同期コピーを無効にします。
-* ASSETS-31256:「jcr:lastModifiedBy」:「workflow-process-service」を含むアセット/ノードは、リスト表示で「外部ユーザー」として表示されます。
-* ASSETS-31260：ドロップダウン JSON に大きなリストがある場合、アセットメタデータフォームドロップダウンフィールドが正しく機能しません。
-* ASSETS-31280：コレクションに追加する際に、統合された構造でアセットをダウンロードする。
-* ASSETS-31301: `dynamicmedia_sly.js` は、Use API で正しくインスタンス化できません。
-* ASSETS-31330:ko_KR：字幕およびオーディオトラック内の非ローカライズの文字列。
-* ASSETS-31405：大きなInDesignレイアウトでは、InDesignサーバーの処理が失敗する。
-* ASSETS-31570：統合シェル — アセットの詳細「保存して閉じる」、「キャンセル」ボタンを複数回押して機能させる必要があります。
-* ASSETS-31673：大きなアセットファイルの一括読み込みに失敗しましたDropbox。
-* ASSETS-32108:AEM Assetsが表示設定でユーザー定義のカードサイズを保存しない。
-* ASSETS-32230:com.adobe.aem.repoapi バンドルの最小ランタイムバージョンをアップグレードします。
+* ASSETS-31256：「jcr:lastModifiedBy」、「workflow-process-service」を含むアセット／ノードが、リスト表示で「外部ユーザー」として表示されます。
+* ASSETS-31260：ドロップダウン JSON に大きなリストがある場合、アセットメタデータフォームのドロップダウンフィールドが正しく機能しません。
+* ASSETS-31280：アセットをコレクションに追加する際に、フラット化された構造でダウンロードされるようにします。
+* ASSETS-31301：`dynamicmedia_sly.js` は、Use API で正しくインスタンス化できません。
+* ASSETS-31330：ko_KR：字幕およびオーディオトラック内のローカライズされていない文字列。
+* ASSETS-31405：大きな InDesign レイアウトの InDesign Server の処理が失敗します。
+* ASSETS-31570：統合シェル - アセットの詳細「保存して閉じる」、「キャンセル」ボタンを複数回押さないと機能しません。
+* ASSETS-31673：大きな Dropbox ファイルの一括読み込みに失敗しました。
+* ASSETS-32108：AEM Assets が表示設定でユーザー定義のカードサイズを保存しません。
+* ASSETS-32230：com.adobe.aem.repoapi バンドルの最小ランタイムバージョンをアップグレードします。
 * ASSETS-32544：メタデータの書き出しジョブが断続的に失敗する。
-* ASSETS-32679：アセット (PDF) プレビューでのキャッシュの問題。
-* ASSETS-32754：以前にログインしていないユーザーにタスクを割り当てることはできません。
-* ASSETS-32755: com/adobe/cq/dam/assetmove ジョブトピックを、順序付きキューを使用するように設定します。
+* ASSETS-32679：アセット（PDF）プレビューでのキャッシュの問題。
+* ASSETS-32754：以前にログインしたことがないユーザーにタスクを割り当てることができない。
+* ASSETS-32755：com/adobe/cq/dam/assetmove ジョブトピックを設定して、順序付きキューを使用します。
 * ASSETS-32899：コレクション内の検索が非常に遅い。
-* ASSETS-33098:AEM Assets検索ファセット「タグの述語」が期待どおりに動作しない。
-* ASSETS-33454：レビュータスクアクティビティとコメントがタイムラインに表示されない。
-* ASSETS-34088:PDFのプレビューがAEM Assetsで動作しない。
-* ASSETS-34155:Dynamic Media - AEMビューア/2024.1.0 を更新しました。
+* ASSETS-33098：AEM Assets 検索ファセットの「タグの述語」が期待どおりに動作しない。
+* ASSETS-33454：タスクのアクティビティとコメントがタイムラインに表示されないことを確認します。
+* ASSETS-34088：PDF プレビューが AEM Assets で動作しない。
+* ASSETS-34155：Dynamic Media - AEM ビューア／2024.1.0 を更新しました。
 * ASSETS-34684：コンテンツツリーで複数値の dc:title を処理します。
-* ASSETS-34789：ファイル名の競合チェックでの正規化の問題を修正しました。
-* DXML-13276: AEM Guides - GraniteContent のインデックスを統合し、ライブラリから削除します。
-* GRANITE-47995:「cq:isDelivered」プロパティとの競合が原因で削除操作が失敗する場合があります。
-* GRANITE-48079:OAuth オンライントークン検証のPOSTリクエストを有効にします。
-* GRANITE-48143: org.apache.sling.resource を 1.4.4 にアップグレードします。
-* GRANITE-49031: Jackson 2.16.1にアップデート。
-* SCRNS-3961: Screens - Sequence channel：フェードトランジションで使用される Jquery アニメーションは黒い画面になります。
+* ASSETS-34789：ファイル名の競合チェックでの正規化の問題を修正します。
+* DXML-13276：AEM Guides - GraniteContent のインデックスを統合し、ライブラリから削除します。
+* GRANITE-47995：「cq:isDelivered」プロパティとの競合が原因で削除操作が失敗する場合がある。
+* GRANITE-48079：OAuth オンライントークン検証の POST リクエストを有効化。
+* GRANITE-48143：org.apache.sling.resourcemerger を 1.4.4 にアップグレード。
+* GRANITE-49031：Jackson 2.16.1 へのアップグレード。
+* SCRNS-3961：Screens - シーケンスチャネル：フェードトランジションで使用される Jquery アニメーションが黒い画面になる。
 * SITES-15868：フラグメントを一覧表示する際のパフォーマンスを向上させます。
-* SITES-16079: `/fragments/{id}/references` 重複の返却を開始しました。
-* SITES-16118：フラグメントにパッチが適用され、モデルにフラグメントフィールドがない場合、例外が発生します。
-* SITES-16121：モデル日付フィールドの取得で例外がスローされる。
-* SITES-16207:POST/adobe/sites/cf/models 操作は、2 つの異なる OK ステータスコードを返します。
-* SITES-17361: Jsup を sites-headless バンドルに再埋め込みします。
-* SITES-17768：コンテンツフラグメントで参照されているアセットのDynamic Media URL を出力するGraphQL。
-* SKYOPS-66622: buildTransform が有効なパイプラインの実行後にオーサーデプロイメントがループするとクラッシュする問題を修正しました。
+* SITES-16079：`/fragments/{id}/references` が重複を返し始めた。
+* SITES-16118：フラグメントにパッチが適用され、モデルにフラグメントフィールドがない場合、例外がスローされる。
+* SITES-16121：モデル日付フィールドを取得すると、例外がスローされる。
+* SITES-16207：POST/adobe/sites/cf/models 操作は、2 つの異なる OK ステータスコードを返す。
+* SITES-17361：Jsup を sites-headless バンドルに再埋め込み。
+* SITES-17768：コンテンツフラグメントで参照されているアセットの Dynamic Media URL を出力する GraphQL。
+* SKYOPS-66622：buildTransform が有効なパイプラインの実行後に、オーサーデプロイメントがループしてクラッシュする。
 * SKYOPS-69977：アダプティブ画像サーブレットが最新の更新後に画像を読み込まない。
-* GUIDES-15045：エディターでのスペルチェックで、候補を選択できません。
+* GUIDES-15045：エディターでのスペルチェックで、候補を選択できない。
 * GUIDES-14968：グローバルナビゲーションボタンが機能せず、ダッシュボードの読み込みに失敗する。
-* GUIDES-14943：ネイティブPDFの公開で、条件プリセット内のカスタム属性がネイティブPDFの公開で機能しない。
-* GUIDES-15085：ネイティブPDFの公開で、2023 年 12 月のAdobe Experience Managerガイドのリリースで主要な参照が解決されません。
-* GUIDES-13486: **ベースラインフィルター** ファイルが Web エディタでファイル名で動作しない。
-* 修正された問題の完全なリストについては、 AEMガイドを参照してください。 [AEMガイドの修正された問題](https://experienceleague.adobe.com/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2402-release/fixed-issues-2024-2-0.html?lang=en#release-info)
+* GUIDES-14943：ネイティブ PDF の公開で、条件プリセット内のカスタム属性が機能しない。
+* GUIDES-15085：ネイティブ PDF の公開で、2023年12月の Adobe Experience Manager Guides のリリースで主要な参照が解決されない。
+* GUIDES-13486：**ベースラインフィルター**&#x200B;ファイルが web エディターのファイル名で機能しない。
+* AEM Guides で修正された問題の完全なリストについては、[AEM Guides の修正された問題](https://experienceleague.adobe.com/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2402-release/fixed-issues-2024-2-0.html?lang=ja#release-info)を参照してください。
 
 ### 既知の問題 {#known-issues-15262}
 
@@ -119,9 +119,9 @@ ht-degree: 11%
 
 #### aem-cloud-testing-clients を 1.2.1 に更新しました。 {#update-aem-cloud-testing-clients}
 
-今後の変更にはライブラリが必要になります [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) カスタム機能テストで使用され、少なくともバージョンに更新されます **1.2.1**
+今後の変更では、カスタム機能テストで使用されるライブラリ [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) を少なくともバージョン **1.2.1** に更新する必要があります
 
-依存関係を `it.tests/pom.xml` が更新されました。
+`it.tests/pom.xml` の依存関係が更新されていることを確認してください。
 
 ```xml
 <dependency>
@@ -131,7 +131,7 @@ ht-degree: 11%
 </dependency>
 ```
 
-この変更は 2024 年 4 月 7 日以降に必要になります。
+この変更は 2024年4月6日（PT）以降に必要になります。
 
 依存関係ライブラリの更新に失敗すると、「カスタム機能テスト」手順でパイプラインにエラーが発生します。
 
