@@ -2,9 +2,7 @@
 title: AEM FormsEdge Delivery Servicesの概要 — 開発者向けチュートリアル
 description: このチュートリアルでは、新しいAdobe Experience Manager Forms(AEM) プロジェクトを導入する方法について説明します。 10～20 分で、独自のフォームが作成されます。
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
-source-git-commit: d0298f3c15264bfa7421ccf0cde752f164829c02
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '1850'
 ht-degree: 1%

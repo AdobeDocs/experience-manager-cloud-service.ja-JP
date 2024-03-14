@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d29e1c588937d18dea2fe851df3818b6438d41c4
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
-source-wordcount: '4780'
+source-wordcount: '4786'
 ht-degree: 95%
 
 ---
@@ -831,7 +831,7 @@ ht-degree: 95%
          + [フォームフィールドに検証機能を追加する](/help/edge/docs/forms/validate-forms.md)
          + [フォームのテーマとスタイルを変更する](/help/edge/docs/forms/style-theme-forms.md)
          + [ルールを使用してフォームに動的な動作を追加する](/help/edge/docs/forms/rules-forms.md)
-         + [「ありがとうございます」ページ](/help/edge/docs/forms/thank-you-page-form.md)
+         + [フォーム送信後にカスタムの「ありがとうございます」メッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
       + 機能 {#advanced-features-eds-forms}
          + [フォームフラグメント](/help/edge/docs/forms/form-fragments.md)
          + [繰り返し可能なセクション](/help/edge/docs/forms/repeatable-forms.md)

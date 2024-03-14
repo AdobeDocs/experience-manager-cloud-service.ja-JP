@@ -2,12 +2,10 @@
 title: AEM FormsEdge Delivery Servicesの概要
 description: AEM FormsEdge Delivery Servicesは、効率的なデータ収集とユーザーエンゲージメントの将来を想像できるように、ピークパフォーマンスを実現するために構築されています。
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1017'
 ht-degree: 0%
 
 ---
@@ -20,7 +18,7 @@ AEM FormsEdge Delivery Servicesは、作成者が新しいフォームをすば�
 
 * **任意のツールを使用して、登録エクスペリエンスを作成します。** コンテンツソースを分離してオーサリング効率を向上させます。 標準では、ドキュメントベースのオーサリング (Microsoft SharePointまたはGoogle Drive) とAEMオーサリング ( アダプティブFormsエディター ) の両方を使用できます。 同じフォームサイト上で複数のコンテンツソースを操作し、Microsoft Excel、Googleシート、アダプティブFormsエディターなどの好みのオーサリングツールを使用できます。
 
-* **優れたデジタル登録エクスペリエンスを提供：** すばやく読み込んでレンダリングするデジタル登録エクスペリエンスを配信します。 読み込み時間の短縮と最適化されたユーザーエクスペリエンスにより、フォームの完成率とコンバージョン率が向上します。
+* **優れたデジタル登録エクスペリエンスを提供：** 実際のユーザー監視 (RUM) を通じて、フォームのパフォーマンスを迅速かつ継続的に監視する読み込みとレンダリングを行うデジタル登録エクスペリエンスを提供します。 読み込み時間の短縮と最適化されたユーザーエクスペリエンスにより、フォームの完成率とコンバージョン率が向上します。
 
 * **開発者向けのツールセットを使用：** AEM FormsEdge Delivery Servicesは、プレーンHTML、最新の CSS、バニラ JavaScript を使用して、例外的なエクスペリエンスを作成し、特定のフレームワークの急激な学習曲線を避けます。 基本的な Web 開発スキルを持つ開発者は、フォームのコンポーネントやエクスペリエンスをカスタマイズし、容易に構築できます。 パイプラインの実行を待つ必要はありません。コードを GitHub にチェックインするだけで、変更が反映されます。
 
@@ -62,6 +60,7 @@ AEM FormsEdge Delivery Servicesでは GitHub を使用するので、ユーザ�
 * スパム保護のためのGoogle reCAPTCHA 統合。
 * 特定のニーズに合わせてカスタムフォームコンポーネントを作成する機能。
 * フォームデータをMicrosoft Excel、Googleシート、電子メールアドレスに直接送信する。
+* 実際のユーザー監視 (RUM) を通じたフォームのパフォーマンスの監視
 
 #### AEMオーサリング機能
 
@@ -92,9 +91,6 @@ AEMオーサリングには、フォームを作成するための WYSIWYG イ�
 
 ![AEM Authoring](/help/edge/assets/aem-authoring-workflow.png)
 
-
-
-
 ## フォームの作成を開始
 
 * [AEM FormsEdge Delivery Servicesの概要](/help/edge/docs/forms/tutorial.md)
@@ -105,20 +101,7 @@ AEMオーサリングには、フォームを作成するための WYSIWYG イ�
 * [フォームに繰り返し可能なセクションを&#x200B;追加](/help/edge/docs/forms/repeatable-forms.md)
 * [フォーム送信後にカスタムの「ありがとうございます」メッセージを&#x200B;表示](/help/edge/docs/forms/thank-you-page-form.md)
 * [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* [リアルタイムユーザー監視](https://www.aem.live/developer/rum#authentication)
 
 <!-- 
 

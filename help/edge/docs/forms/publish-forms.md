@@ -2,10 +2,8 @@
 title: AEM FormsEdge Delivery Servicesフォームの公開
 description: AEM FormsEdge Delivery Servicesフォームの公開
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 2%
