@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 87f76de41074debb2acc8ef4f71baf174d0d01ad
+source-git-commit: d16d908d39df3c7d72dc48ac877c1543d2442416
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 12%
+source-wordcount: '1240'
+ht-degree: 11%
 
 ---
 
@@ -102,15 +102,22 @@ ht-degree: 12%
 
 ### 既知の問題 {#known-issues-15262}
 
-#### `UnsupportedClassVersionError` CM パイプラインビルドのステップ（アップグレード後） `aem-sdk-api` バージョン： `2024.2.15262.20240224T002940Z-231200`
+* ASSETS-35923: `UnsupportedClassVersionError` CM パイプラインビルドのステップ（アップグレード後） `aem-sdk-api` バージョン： `2024.2.15262.20240224T002940Z-231200`. **CM Java バージョンを 11 に設定するには、顧客のアクションが必要です**&#x200B;を参照してください。 [ビルド環境/ Maven JDK バージョンの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=en#alternate-maven-jdk-version)
+* ASSETS-35860: AEM Assets列表示のタイムゾーン変換が正しくありません。
+* SCRNS-4171: Windows Screens にアップグレードしてチャネルを公開すると、Windows Screens が空白になり、機能しなくな15262る。
+* GRANITE-50774: GraniteContent は、初期時にプロパティ値の決定論的順序を使用する必要があります。
+
+### 変更通知 {#change-notice-15262}
+
+**必要なアクション**
+
+#### CM Java バージョンを 11 に設定 {#set-java-version-11}
 
 新しいバージョンの aem-sdk-api には、Java 11 ターゲットでコンパイルされたクラスが含まれていますが、Cloud Manager ビルド環境のデフォルト JDK バージョン 1.8 とは互換性がありません。この更新では、Maven が JDK 11 を使用して実行されている必要があります。
 
 お客様は、 `.cloudmanager/java-version` ファイルを git リポジトリのルートに、次の内容で保存します。 `11`. [ビルド環境/ Maven JDK バージョンの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=en#alternate-maven-jdk-version)
 
-### 変更通知 {#change-notice-15262}
-
-**アクションが必要です**
+#### aem-cloud-testing-clients を 1.2.1 に更新しました。 {#update-aem-cloud-testing-clients}
 
 今後の変更にはライブラリが必要になります [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) カスタム機能テストで使用され、少なくともバージョンに更新されます **1.2.1**
 
