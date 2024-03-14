@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 80896cd5e4bbdb04754b249e6002b057b7375b03
+source-git-commit: 1104afb8a990c04e7d6bc2f5690a887218598f4b
 workflow-type: tm+mt
-source-wordcount: '4791'
+source-wordcount: '4794'
 ht-degree: 95%
 
 ---
@@ -974,6 +974,7 @@ ht-degree: 95%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [ダイナトレース](/help/implementing/cloud-manager/dynatrace.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)
+      + [高度なネットワーク機能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
       + SSL 証明書 {#manage-ssl-certificates}
          + [はじめに](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
