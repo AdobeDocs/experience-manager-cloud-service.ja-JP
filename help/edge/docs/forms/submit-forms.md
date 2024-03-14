@@ -3,14 +3,14 @@ title: データを受け入れるスプレッドシートを準備する
 description: スプレッドシートとアダプティブFormsブロックフィールドを使用して、強力なフォームをより迅速に作成できます。
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1001'
 ht-degree: 1%
 
 ---
 
-# データを受け入れるスプレッドシートを準備する
+# データの受け入れを開始するためのGoogleシートまたはMicrosoft Excel ファイルの設定
 
 
 一度 [フォームの作成とプレビュー](/help/edge/docs/forms/create-forms.md)をクリックした場合、対応するスプレッドシートがデータの受信を開始できるようにします。 スプレッドシートでデータを受け入れるように手動で有効にするか、Admin API を使用してスプレッドシートでデータを受け入れるように設定できます。

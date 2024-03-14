@@ -1,16 +1,16 @@
 ---
-title: フォームのコンポーネントとプロパティ
+title: アダプティブフォームブロックのコンポーネントとそのプロパティ
 description: このドキュメントでは、AEM Forms Edge Delivery Service で使用できるフォームコンポーネントとそのプロパティの概要を説明します。
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '938'
 ht-degree: 3%
 
 ---
 
-# フォームのコンポーネントとプロパティ：AEM Forms Edge Delivery Service
+# アダプティブフォームブロックのコンポーネントとそのプロパティ
 
 AEM Forms Edge Delivery Services を使用すると、様々なコンポーネントを使用して、使いやすくインタラクティブなフォームを作成できます。 これらのコンポーネントは、様々なタイプのデータ収集に対応し、特定のニーズに合わせて容易にカスタマイズできます。
 

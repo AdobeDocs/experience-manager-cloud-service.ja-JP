@@ -3,18 +3,19 @@ title: AEM Forms Edge Delivery ServicesForm のテーマとスタイルのカス
 description: AEM Forms Edge Delivery ServicesForm のテーマとスタイルのカスタマイズ
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '2012'
+source-wordcount: '2014'
 ht-degree: 0%
 
 ---
 
-# フォームフィールドのスタイル設定
+
+# フォームの外観をカスタマイズする
 
 Formsは、Web サイトでのユーザーのインタラクションに不可欠で、データを入力できるようにします。 カスケーディングスタイルシート (CSS) を使用すると、フォームのフィールドのスタイル設定、フォームの表示の質の向上、ユーザーエクスペリエンスの向上を行うことができます。
 
-アダプティブFormsブロックを使用すると、すべてのフォームフィールドで一貫した構造が作成されます。 一貫性のある構造により、CSS セレクターを開発し、フィールドタイプとフィールド名に基づいてフォームフィールドの選択とスタイル設定を容易に行うことができます。
+アダプティブFormsブロックを使用すると、すべてのフォームフィールドで一貫した構造が作成されます。 一貫性のある構造により、CSS セレクターを開発し、フィールドタイプとフィールド名に基づいてフォームフィールドの選択とスタイル設定を容易におこなうことができます。
 
 このドキュメントでは、様々なフォームコンポーネントのHTML構造の概要を説明し、アダプティブFormsブロックのフォームフィールドのスタイルを設定する、様々なフォームフィールドの CSS セレクターの作成方法を説明します。
 
@@ -262,7 +263,7 @@ first-name input {
 
 ドロップダウンコンポーネントと同様に、ラジオグループにも独自のHTML構造と CSS 構造があります。
 
-+++ ラジオグループHTML構造
++++ HTML群の構造
 
 ```HTML
 <fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -300,7 +301,7 @@ first-name input {
 
 +++
 
-+++ ドロップダウンコンポーネントの CSS セレクター
++++ ラジオグループの CSS セレクター
 
 * フィールドセットのターゲティング
 
@@ -334,7 +335,7 @@ first-name input {
 
 ### チェックボックスグループ
 
-+++ チェックボックスグループのHTML構造
++++ HTMLグループのチェックボックス構造
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -370,7 +371,7 @@ first-name input {
 
 +++
 
-+++ ラジオおよびチェックボックスグループの CSS セレクターの例**
++++ チェックボックスグループの CSS セレクター
 
 * 外側のラッパーのターゲティング：これらのセレクターは、ラジオグループとチェックボックスグループの両方の最も外側にあるコンテナをターゲットにし、グループ構造全体に一般的なスタイルを適用できます。 これは、間隔、整列、またはその他のレイアウト関連のプロパティを設定する場合に便利です。
 
@@ -796,9 +797,9 @@ first-name input {
 
 ### フィールドタイプに基づくスタイル設定
 
-CSS セレクターを使用して、特定のフィールドタイプをターゲットにし、スタイルの一貫性を保つことができます。
+CSS セレクターを使用して、特定のフィールドタイプをターゲットにしたり、スタイルの一貫性を保って適用したりできます。
 
-**HTML構造**
++++ HTML 構造
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -837,8 +838,10 @@ CSS セレクターを使用して、特定のフィールドタイプをター�
 * 各フィールドには、対応するラベル、入力要素、およびプレースホルダーや説明などの追加要素の可能性があります。
 
 
++++
 
-**CSS セレクターの例**
+
++++ CSS セレクターの例
 
 ```CSS
 /* Target all text input fields */
@@ -853,13 +856,13 @@ CSS セレクターを使用して、特定のフィールドタイプをター�
 }
 ```
 
-
++++
 
 ### フィールド名に基づくスタイル設定
 
 また、個々のフィールドを名前でターゲット設定して、一意のスタイルを適用することもできます。
 
-**HTML構造**
++++ HTML 構造
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -883,7 +886,9 @@ CSS セレクターを使用して、特定のフィールドタイプをター�
 </div>
 ```
 
-**CSS セレクターの例**
++++
+
++++ CSS セレクターの例
 
 ```CSS
 .field-otp input {
@@ -891,7 +896,11 @@ CSS セレクターを使用して、特定のフィールドタイプをター�
 }
 ```
 
+
+
 この CSS は、クラスを持つ要素内にあるすべての入力要素をターゲットに設定します `field-otp`. フォームのHTML構造は、アダプティブFormsブロックの規則に従います。これは、「field-otp」というクラスでマークされたコンテナが、「otp」という名前のフィールドを保持していることを意味します。
+
++++
 
 ## 関連トピック
 

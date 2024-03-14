@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1104afb8a990c04e7d6bc2f5690a887218598f4b
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '4794'
-ht-degree: 95%
+source-wordcount: '4813'
+ht-degree: 94%
 
 ---
 
@@ -826,21 +826,21 @@ ht-degree: 95%
       + [概要](/help/edge/docs/forms/overview.md)
       + はじめに {#getting-started-eds-forms}
          + [はじめに](/help/edge/docs/forms/tutorial.md)
-         + [フォームの作成とプレビュー](/help/edge/docs/forms/create-forms.md)
-         + [フォームからデータを送信できるようにする](/help/edge/docs/forms/submit-forms.md)
-         + [サイトページにフォームを発行する](/help/edge/docs/forms/publish-forms.md)
+         + [Google Sheet またはMicrosoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
+         + [データの受け入れを開始するためのGoogleシートまたはMicrosoft Excel ファイルのセットア&#x200B;ップ](/help/edge/docs/forms/submit-forms.md)
+         + [フォームを発行してデータの収集を開始する](/help/edge/docs/forms/publish-forms.md)
          + [フォームフィールドに検証機能を追加する](/help/edge/docs/forms/validate-forms.md)
-         + [フォームのテーマとスタイルを変更する](/help/edge/docs/forms/style-theme-forms.md)
+         + [フォームの外観をカスタマイズす&#x200B;る](/help/edge/docs/forms/style-theme-forms.md)
          + [ルールを使用してフォームに動的な動作を追加する](/help/edge/docs/forms/rules-forms.md)
          + [フォーム送信後にカスタムの「ありがとうございます」メッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
       + 機能 {#advanced-features-eds-forms}
          + [フォームフラグメント](/help/edge/docs/forms/form-fragments.md)
-         + [繰り返し可能なセクション](/help/edge/docs/forms/repeatable-forms.md)
+         + [フォームに繰り返し可能なセクションを&#x200B;追加](/help/edge/docs/forms/repeatable-forms.md)
          + [翻訳](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [カスタムコンポーネント](/help/edge/docs/forms/custom-components-forms.md)
       + 参照 {#forms-references}
-         + [フォームブロックコンポーネントのリスト](/help/edge/docs/forms/form-components.md)
+         + [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
    + Edge 配信のリソース {#resources}
       + Sidekick {#sidekick}
          + [Sidekick の使用](/help/edge/docs/sidekick.md)
