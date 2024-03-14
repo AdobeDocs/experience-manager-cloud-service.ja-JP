@@ -5,24 +5,22 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: d0298f3c15264bfa7421ccf0cde752f164829c02
+source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '805'
 ht-degree: 1%
 
 ---
 
 # アダプティブFormsブロックを使用したフォームの作成
 
+>[!VIDEO](https://video.tv.adobe.com/v/3427881?quality=12&learn=on)
+
 AEM Forms Edge Delivery には、アダプティブFormsブロックと呼ばれるブロックが用意されており、これを使用すると、フォームを簡単に作成して、取り込んだデータを取り込み、保存することができます。 以下が可能です。 [アダプティブFormsブロックで事前設定された新しいAEMプロジェクトを作成する](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) または [アダプティブFormsブロックを既存のAEMプロジェクトに追加する](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
 これらのフォームは、Microsoft Excel またはGoogleシートファイルに直接データを送信します。これにより、Googleシート、Microsoft Excel、Microsoft SharePointの活発なエコシステムと堅牢な API を使用して、送信されたデータを簡単に処理したり、既存のビジネスワークフローを開始したりできます。
 
 ![ドキュメントベースのオーサリングエコシステム](/help/edge/assets/document-based-authoring-workflow-create-form.png)
-
-
-![ビデオ](https://video.tv.adobe.com/v/3427881?quality=12&learn=on)
-
 
 
 ## 前提条件

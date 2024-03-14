@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
+source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ AEM Forms Edge Delivery Services を使用すると、Web サイト上でフォ�
 
 次の図は、Microsoft Excel またはGoogleシート（ドキュメントベースのオーサリング）でフォームを編集し、Edge Delivery Servicesに公開する方法を示しています。 また、アダプティブFormsエディター (AEMオーサリング ) を使用したAEMの公開方法も表示されます。
 
-![Edge Delivery のアーキテクチャ](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
+![Edge Delivery ServicesとAEMに公開](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
 AEM FormsEdge Delivery Servicesでは GitHub を使用するので、ユーザーは GitHub リポジトリから直接コードを管理およびデプロイできます。 例えば、次のいずれかの方法でフォームを書き込むことができます。 [Google Sheets](/help/edge/docs/forms/create-forms.md) または [Microsoft Excel](/help/edge/docs/forms/create-forms.md) また、フォームのコンポーネントは、GitHub リポジトリで CSS と JavaScript を使用して開発できます。
 
