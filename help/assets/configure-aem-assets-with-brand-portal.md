@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 0411da1113c6bddfa1adcc583b4e53c5daa9bd41
 workflow-type: tm+mt
-source-wordcount: '2584'
-ht-degree: 95%
+source-wordcount: '2568'
+ht-degree: 98%
 
 ---
 
@@ -48,7 +48,7 @@ Brand Portal のライセンス認証は、Experience Manager Assets as a [!DNL 
 
    Brand Portal には利用可能な環境のうちいずれかの権利が付与され、**[!UICONTROL 環境情報]**&#x200B;に反映されます。
 
-   Brand Portalに関連付けられている環境が見つかったら、 **[!UICONTROL Brand Portalをアクティベート]** ボタンをクリックして、アクティベーションワークフローを開始します。
+   Brand Portal に関連付けられている環境を見つけたら、「**[!UICONTROL Brand Portal のライセンス認証]**」ボタンをクリックして、アクティベーションワークフローを開始します。
 
    ![Brand Portal のライセンス認証](assets/create-environment4.png)
 
@@ -86,7 +86,7 @@ Brand Portal テナントのデフォルト URL は `https://<tenant-id>.brand-p
 
 1. [Admin Console](https://adminconsole.adobe.com/) にログインし、**[!UICONTROL 製品]**&#x200B;に移動します。
 1. 左パネルの「**[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**」を選択します。
-1. クリック **[!UICONTROL Brand Portalに移動]** をクリックして、ブラウザーでBrand Portalを直接開きます。
+1. 「**[!UICONTROL Brand Portal に移動]**」をクリックして、ブラウザーで直接 Brand Portal を開きます。
 
    または、**[!UICONTROL Brand Portal へ移動]**&#x200B;リンクから Brand Portal テナント URL をコピーし、ブラウザーに貼り付けて Brand Portal インターフェイスを開きます。
 
@@ -122,7 +122,7 @@ Experience Manager Assets as a [!DNL Cloud Service] インスタンスと Brand 
 
    ![アセット配布用の処理キュー](assets/test-bpconfig3.png)
 
-1. Experience Manager Assets as a 間の接続を検証するには、以下を実行します。 [!DNL Cloud Service] Brand Portal、 **[!UICONTROL 接続をテスト]** アイコン。
+1. Experience Manager Assets as a [!DNL Cloud Service] と Brand Portal との接続を確認するには、「**[!UICONTROL 接続をテスト]**」アイコンをクリックします。
 
    ![AEM と Brand Portal 間の接続を検証](assets/test-bpconfig4.png)
 
@@ -237,7 +237,7 @@ IMS 設定には、次の 2 つの手順が含まれます。
 1. Experience Manager Assets にログインします。
 1. **ツール**&#x200B;パネルで、**[!UICONTROL セキュリティ]**／**[!UICONTROL Adobe IMS 設定]**&#x200B;に移動します。
 1. Adobe IMS 設定ページで、「**[!UICONTROL 作成]**」をクリックします。**[!UICONTROL Adobe IMS 技術アカウント設定]**&#x200B;ページにリダイレクトされます。デフォルトでは、「**証明書**」タブが開きます。
-1. 選択 **[!UICONTROL AdobeBrand Portal]** （内） **[!UICONTROL クラウドソリューション]** 」ドロップダウンリストから選択できます。
+1. 「**[!UICONTROL クラウドソリューション]**」ドロップダウンリストで「**[!UICONTROL Adobe Brand Portal]**」を選択します。
 1. 「**[!UICONTROL 新しい証明書を作成]**」チェックボックスをオンにして、公開鍵の **エイリアス** を指定します。ここで入力したエイリアスが、公開鍵になります。
 1. 「**[!UICONTROL 証明書を作成]**」をクリックします。「**[!UICONTROL OK]**」をクリックして公開証明書を生成します。
 
@@ -266,7 +266,7 @@ Adobe 開発者コンソールで、プロジェクトと API を Brand Portal �
 
    >[!NOTE]
    >
-   >右上隅にあるドロップダウン（組織）リストから正しい IMS 組織 (Brand Portalテナント ) が選択されていることを確認します。
+   >右上隅にあるドロップダウン（組織）リストから正しい IMS 組織（Brand Portal テナント）が選択されていることを確認します。
 
 1. 「**[!UICONTROL 新規プロジェクトを作成]**」をクリックします。システムで生成された名前を持つ空のプロジェクトが組織に対して作成されます。
 
@@ -290,11 +290,12 @@ Adobe 開発者コンソールで、プロジェクトと API を Brand Portal �
 
    ![製品プロファイルを選択](assets/service-account4.png)
 
-1. API が設定されると、API の概要ページにリダイレクトされます。左側のナビゲーションから、 **[!UICONTROL 資格情報]**&#x200B;をクリックし、 **[!UICONTROL サービスアカウント (JWT)]** オプション。
+1. API が設定されると、API の概要ページにリダイレクトされます。「**[!UICONTROL 資格情報]**」の下の左側のナビゲーションで「**[!UICONTROL サービスアカウント（JWT）]**」オプションをクリックします。
 
    >[!NOTE]
    >
-   >資格情報を確認し、必要に応じて、JWT トークンの生成、資格情報の詳細のコピー、クライアントの秘密鍵の取得などのアクションを実行できます。
+   >* 資格情報を確認し、必要に応じて、JWT トークンの生成、資格情報の詳細のコピー、クライアントの秘密鍵の取得などのアクションを実行できます。
+   >* 現在、Adobeの開発者コンソールサービスアカウント (JWT) 秘密鍵証明書の種類のみがサポートされています。 4 月中旬にサポートされるまで、OAuth Server-to-Server 秘密鍵証明書の種類を使用しないでください。 詳しくは、 [Adobe Developerコンソールでの JWT 資格情報の廃止](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
 
 1. 「**[!UICONTROL クライアント資格情報]**」タブから、**[!UICONTROL クライアント ID]** をコピーします。
 
@@ -377,7 +378,7 @@ IMS アカウントを設定するには、次の手順を実行します。
 >
 >IMS 設定は 1 つだけにする必要があります。
 >
->IMS 設定がヘルスチェックに合格していることを確認します。設定がヘルスチェックに合格しない場合は無効です。この設定を削除して、別の有効な設定を作成する必要があります。
+>IMS 設定がヘルスチェックに合格していることを確認します。設定がヘルスチェックに合格しない場合は無効です。削除して、別の有効な設定を作成する必要があります。
 
 ### Cloud Service の設定 {#configure-the-cloud-service}
 
