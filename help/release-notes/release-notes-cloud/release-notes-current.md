@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3a86639d9203fff3c72e63baa8d1499b18a4539f
-workflow-type: ht
-source-wordcount: '937'
-ht-degree: 100%
+source-git-commit: 4fdca70b3a711f747e44ac2a6c1d117ac990d49b
+workflow-type: tm+mt
+source-wordcount: '1020'
+ht-degree: 91%
 
 ---
 
@@ -108,6 +108,15 @@ Dynatrace のお客様は、AEM の使用状況を監視できます。アプリ
 ### サイトテーマとサイトテンプレートを使用したフロントエンドコードの RDE サポート：早期導入プログラム {#rde-frontend-early-adopter}
 
 [迅速な開発環境（RDE）](/help/implementing/developing/introduction/rapid-development-environments.md)は、早期導入者向けに、[サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md)と[サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)に基づいたフロントエンドコードをサポートするようになりました。RDE では、[フロントエンドパイプライン](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)ではなくコマンドラインディレクティブを使用して行われます。試してフィードバックを提供するには、**aemcs-rde-support@adobe.com** までご連絡ください。
+
+### CDN 設定アーリーアダプタープログラム {#cdn-config-early-adopter}
+
+最近リリースされたに加えて [トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)( オプションでライセンス可能な Web アプリケーションファイアウォール (WAF) ルールを含む )、設定パイプラインを使用して他のタイプの CDN 設定を宣言し、デプロイする機会があります。 早期採用プログラムにメールで参加 **aemcs-cdn-config-adopter@adobe.com** にアクセスするには：
+* 301/302クライアントサイドのリダイレクト
+* エッジでのリクエストの任意のオリジンへのプロキシ処理
+* URL 変換
+* 要求または応答ヘッダーの設定または変更
+* CDN がAEMに到達できない場合のカスタムエラーページ
 
 ## Cloud Manager {#cloud-manager}
 
