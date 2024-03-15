@@ -3,9 +3,9 @@ title: アダプティブフォームブロックのコンポーネントとそ�
 description: このドキュメントでは、AEM Forms Edge Delivery Service で使用できるフォームコンポーネントとそのプロパティの概要を説明します。
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
+source-git-commit: 703a48903c44678f6fe311de740b7c767c886ba5
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '1006'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,6 @@ AEM Forms Edge Delivery Services を使用すると、様々なコンポーネ�
 | プロパティ | 適用可能なコンポーネント | 詳細 |
 |--------------|------------------------------|----------------------------------------------------------------------|
 | タイプ | すべて | コンポーネントのタイプを指定します。 このプロパティは、入力フィールドの動作と外観を決定します。 例えば、テキスト入力の場合、タイプは「テキスト」、「電子メール」（電子メール入力）、「パスワード」（パスワード入力）のようになります。 アダプティブFormsブロックのサポート  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">すべての有効なHTML5 入力タイプ</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選択</a>、および <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> をタイプとして使用します。 |
-| タイプ | すべて | コンポーネントのタイプを指定します。 このプロパティは、入力フィールドの動作と外観を決定します。 例えば、テキスト入力の場合、タイプは「テキスト」、「電子メール」（電子メール入力）、「パスワード」（パスワード入力）のようになります。 アダプティブFormsブロックのサポート  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">すべての有効なHTML5 入力タイプ</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">選択</a>、および <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> をタイプとして使用します。 |
 | 名前 | すべて | フォーム送信用のコンポーネントを識別します。 name 属性は、フォームデータがサーバーに送信される際に使用され、ユーザー入力が特定のフィールドに関連付けられます。 |
 | ラベル | すべて | ユーザーにコンテキスト情報を提供します。 ラベルは、コンポーネントの横に表示されるテキストで、ユーザーが入力する情報に関するガイダンスを提供します。 |
 | 値 | テキスト、パスワード、電子メール、数値、範囲、日付およびそのバリエーション (datetime-local、month、week、time)、チェックボックス、ラジオ、非表示、送信、ボタン | コンポーネントの初期値を指定します。 テキスト入力、テキスト領域、および要素の選択の場合、これはデフォルトのテキストまたはオプションとして表示されます。 ラジオおよびチェックボックスコンポーネントの場合、これは選択時に送信される値/データです。 value 属性はオプションですが、チェックボックスとラジオの入力に必須と見なす必要があります。 |
@@ -61,6 +60,10 @@ AEM Forms Edge Delivery Services を使用すると、様々なコンポーネ�
 | オプション | ドロップダウン | ドロップダウンメニューの選択肢を指定します。 options プロパティは、ドロップダウンメニューの選択肢のコンマ区切りリストで、ユーザーに表示される選択可能なオプションを定義します。 |
 | チェック済み | チェックボックス、ラジオ | フィールドがデフォルトで選択されているかどうかを指定します。 checked 属性は、チェックボックスとラジオの入力で使用されるブール型プロパティです。 true に設定した場合は、フォームの読み込み時に、フィールドがデフォルトで選択されていることを示します。 |
 | Fieldset | すべて | フォーム内に視覚的に異なるセクションを作成するためにフィールドをグループ化します。 fieldset 要素は、フォーム内の関連するフィールドを視覚的に分けてグループ化し、組織やユーザーエクスペリエンスを向上させます。 </br> フィールドセット内の一連のフィールドを整理するには、 `fieldset` プロパティを選択し、その名前属性を指定します。 次の例では、組織を改善するために、ラジオボタンを 1 つのフィールドセット内にカプセル化する方法を示します。 ![フィールドセットの例](/help/edge/assets/fieldset-example.png) |
+| 繰り返し可能 | すべて | のブール型プロパティ `fieldset` 特定のフィールドセットが指定のフィールドに対して繰り返し可能であることを示すさま `Min` および `Max` 回数。 The `Min` プロパティは 1 以上に設定する必要があります。 `Min` プロパティを 0 に設定します。 |
+| 表示式 | すべて | 表示可能な式は、「=」タグで示されるスプレッドシートの数式を参照し、フィールドの表示/非表示を制御します。 この式では、他のフィールドの値プロパティのみを使用でき、システム内のフィールド表示を簡単に管理できます。 |
+| 値の式 | すべて | 値式は、フィールドの値の制御に使用される「=」タグで示されるスプレッドシートの数式を指します。 この式では、他のフィールドの value プロパティのみを使用でき、システム内のフィールド値を簡単に管理できます。 |
+
 
 ## 関連トピック
 
