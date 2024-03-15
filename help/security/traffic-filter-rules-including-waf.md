@@ -2,10 +2,10 @@
 title: WAF ルールを含むトラフィックフィルタールール
 description: Web アプリケーションファイアウォール（WAF）ルールを含むトラフィックフィルタールールの設定
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 86a7815a1055b8ffaf57b802f3232f2c03ec06dc
-workflow-type: ht
-source-wordcount: '3376'
-ht-degree: 100%
+source-git-commit: 043c87330bca37529c0cc614596599bea1e41def
+workflow-type: tm+mt
+source-wordcount: '3382'
+ht-degree: 98%
 
 ---
 
@@ -287,7 +287,7 @@ when:
 
 **例 1**
 
-このルールは、IP 192.168.1.1 からのリクエストをブロックします。
+このルールは、 **IP 192.168.1.1**:
 
 ```
 kind: "CDN"
@@ -426,7 +426,7 @@ data:
 
 **例 1**
 
-このルールは、最後の 60 秒間に 100 リクエスト/秒（CDN POP あたり）を超えると、クライアントを 5 分間ブロックします。
+このルールでは、過去 10 秒間に（CDN POP ごとの）平均 60 req/sec を超えた場合、5m のクライアントをブロックします。
 
 ```
 kind: "CDN"
@@ -451,7 +451,7 @@ data:
 
 **例 2**
 
-最後の 60 秒間に 100 リクエスト/秒（CDN POP あたり）を超えると、パス /critical/resource 上のリクエストを 60 秒間ブロックします。
+過去 60 秒で平均 100 req/sec （CDN POP ごと）を超えた場合、60 秒のパス/critical/resource に対するリクエストをブロックします。
 
 ```
 kind: "CDN"
