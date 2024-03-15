@@ -3,10 +3,10 @@ title: 実稼動以外のパイプラインの設定
 description: 実稼動環境にデプロイする前にコードの品質をテストするための実稼動以外のパイプラインを設定する方法を説明します。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 97%
+source-wordcount: '1371'
+ht-degree: 92%
 
 ---
 
@@ -145,10 +145,16 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
    * **Git ブランチ** - このオプションは、選択したパイプラインのどのブランチからコードを取得するかを定義します。
       * ブランチ名の最初の数文字と、このフィールドのオートコンプリート機能を入力します。これにより、選択可能な一致するブランチが検索されます。
    * **コードの場所** - このオプションは、パイプラインがコードを取得する必要がある、選択したリポジトリーのブランチ内のパスを定義します。
+   * **パイプライン**  — フロントエンドの非実稼動パイプラインの場合、を有効にするオプションがあります。 **[エクスペリエンス監査。](/help/implementing/cloud-manager/experience-audit-testing.md)**
 
-   ![設定パイプライン](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
+   ![設定パイプライン](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. 「**保存**」をクリックします。
+1. エクスペリエンス監査を有効にした場合は、をタップまたはクリックします。 **続行** 先に進む **エクスペリエンス監査** タブを使用して、エクスペリエンス監査に常に含めるパスを定義できます。
+
+   * を有効にした場合 **エクスペリエンス監査**&#x200B;詳しくは、ドキュメントを参照してください。 [エクスペリエンス監査](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) を参照してください。
+   * そうでない場合は、この手順をスキップします。
+
+1. タップまたはクリック **保存** をクリックしてパイプラインを保存します。
 
 パイプラインが保存され、**プログラムの概要**&#x200B;ページの&#x200B;**パイプライン**&#x200B;カードで[パイプラインを管理](managing-pipelines.md)できるようになりました。
 

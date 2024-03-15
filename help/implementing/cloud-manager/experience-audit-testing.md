@@ -2,10 +2,10 @@
 title: エクスペリエンス監査テスト
 description: エクスペリエンス監査でデプロイメントプロセスを検証し、デプロイされた変更がパフォーマンス、アクセシビリティ、ベストプラクティス、SEO のベースライン標準を満たしていることを確認する方法について説明します。
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
-source-wordcount: '585'
-ht-degree: 100%
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
+workflow-type: tm+mt
+source-wordcount: '890'
+ht-degree: 68%
 
 ---
 
@@ -31,15 +31,57 @@ Cloud Manager のエクスペリエンス監査を使用すると、サイト上
 
 監査結果は参考情報であり、デプロイメントマネージャーはスコアと、現在および以前のスコアとの間の変化を確認できます。このインサイトは、現在のデプロイメントで前のバージョンになかった不具合が導入されたかどうかを判断するのに役立ちます。
 
-エクスペリエンス監査は、Google のオープンソースツールである Google Lighthouse を活用し、すべての Cloud Manager 実稼動パイプラインで有効になります。
+エクスペリエンス監査は、GoogleのオープンソースツールであるGoogle Lighthouse を活用しています。
 
 >[!INFO]
 >
 >2023年8月31日（PT）より、エクスペリエンス監査は、モバイルプラットフォーム固有の結果を表示するように移行します。通常、モバイルのパフォーマンス指標はデスクトップのパフォーマンス指標よりも低く登録されるので、この変更に伴い報告されるパフォーマンスの変化を予測する必要があります。
 
->[!TIP]
->
->[パイプラインを設定するときに](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)、エクスペリエンス監査に含めるページを設定します。
+## 入手方法 {#availability}
+
+Cloud Manager で Experience Audit を使用できます。
+
+* サイト実稼動パイプライン（デフォルト）。
+* フロントエンド開発パイプライン（オプション）。
+
+詳しくは、 [設定セクション](#configuration) を参照してください。
+
+## 設定 {#configuration}
+
+実稼動パイプラインでは、エクスペリエンス監査がデフォルトで使用できます。 フロントエンド開発パイプラインに対して、オプションで有効にすることができます。 どのような場合でも、パイプラインの実行中に評価されるコンテンツパスを定義する必要があります。
+
+パイプラインを設定する際に、エクスペリエンス監査に含めるページを設定します。
+
+1. 設定するパイプラインのタイプに応じて、次の手順に従います。
+
+   * 新しい [実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 監査で評価されるパスを定義する場合。
+   * 新しい [非実稼動パイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) フロントエンドまたは開発のフルスタックパイプラインで監査を有効にする場合。
+   * または、 [既存のパイプラインの編集](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 既存のオプションを更新します。
+
+1. エクスペリエンス監査を使用する非実稼動パイプラインを追加または編集する場合は、 **エクスペリエンス監査** チェックボックスをオンにします。 **ソースコード** タブをクリックします。
+
+   ![エクスペリエンス監査の有効化](assets/experience-audit-enable.jpg)
+
+   * これは、実稼動以外のパイプラインに対してのみ必要です。
+   * The **エクスペリエンス監査** タブは、チェックボックスが選択されているときに表示されます。
+
+1. 実稼動と非実稼動の両方のパイプラインの場合、次の場所でエクスペリエンス監査に含めるパスを定義します： **エクスペリエンス監査** タブをクリックします。
+
+   * ページのパスはで始める必要があります `/` とは、サイトに対する相対パスです。
+   * 例えば、サイトが `wknd.site` を含めます。 `https://wknd.site/us/en/about-us.html` 「エクスペリエンス監査」に、パスを入力します。 `/us/en/about-us.html`.
+
+   ![エクスペリエンス監査に含めるパスの定義](assets/experience-audit-add-page.png)
+
+1. タップまたはクリック **ページを追加** パスは、環境のアドレスで自動入力され、パスのテーブルに追加されます。
+
+   ![テーブルへのパスの保存](assets/experience-audit-page-added.png)
+
+1. 上記の 2 つの手順を繰り返して、必要なパスを追加します。
+
+   * 最大 25 個のパスを追加できます。
+   * パスを定義しない場合は、デフォルトでサイトのホームページがエクスペリエンス監査に含められます。
+
+1. 「**保存**」をクリックしてパイプラインを保存します。
 
 ## エクスペリエンス監査結果について {#understanding-experience-audit-results}
 

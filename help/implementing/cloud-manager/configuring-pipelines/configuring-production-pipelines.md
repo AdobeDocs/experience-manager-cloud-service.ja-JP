@@ -3,10 +3,10 @@ title: 実稼動パイプラインの設定
 description: 実稼動パイプラインを設定し、コードをビルドして実稼働環境にデプロイする方法について説明します。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 95%
+source-wordcount: '1338'
+ht-degree: 92%
 
 ---
 
@@ -93,25 +93,13 @@ ht-degree: 95%
 
    ![フルスタックコード](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-1. 「**続行**」をクリックして「**エクスペリエンス監査**」タブに進みます。ここでは、エクスペリエンス監査に常に含めるパスを定義できます。
+1. タップまたはクリック **続行** 先に進む **エクスペリエンス監査** タブを使用して、エクスペリエンス監査に常に含めるパスを定義できます。
 
    ![エクスペリエンス監査の追加](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
 1. エクスペリエンス監査に含めるパスを指定します。
 
-   * ページパスは `/` で始める必要があります。
-   * 例えば、エクスペリエンス監査に `https://wknd.site/us/en/about-us.html` を含める場合は、`/us/en/about-us.html` というパスを入力します。
-
-   ![エクスペリエンス監査に含めるパスの定義](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
-
-1. 「**ページを追加**」をクリックすると、パスが使用中の環境のアドレスで自動的に補完され、パスのテーブルに追加されます。
-
-   ![テーブルへのパスの保存](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
-
-1. 上記の 2 つの手順を繰り返して、必要なパスを追加します。
-
-   * 最大 25 個のパスを追加できます。
-   * パスを定義しない場合は、デフォルトでサイトのホームページがエクスペリエンス監査に含められます。
+   * ドキュメントを見る [エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) 」を参照してください。
 
 1. 「**保存**」をクリックしてパイプラインを保存します。
 
