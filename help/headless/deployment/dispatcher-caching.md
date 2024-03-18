@@ -3,10 +3,10 @@ title: GraphQL の永続クエリ - Dispatcher でのキャッシュの有効化
 description: Dispatcher は、Adobe Experience Manager パブリッシュ環境の前にあるキャッシュとセキュリティのレイヤーです。AEM ヘッドレスの永続クエリのキャッシュを有効にできます。
 feature: Dispatcher, GraphQL API
 exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
-source-git-commit: 6bcbef1695b291c36e19e70db203a114a7e40e67
+source-git-commit: 859ea382cce6822da1da7d11213c3f44a25edef3
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 90%
+source-wordcount: '339'
+ht-degree: 89%
 
 ---
 
@@ -39,8 +39,6 @@ ht-degree: 90%
    ```
 
 >[!NOTE]
->
->`Define CACHE_GRAPHQL_PERSISTED_QUERIES` を使用して永続化されたクエリに対して Dispatcher のキャッシュを有効にする場合、`ETag` ヘッダーが Dispatcher によって応答に追加されます。
 >
 >個人を成し遂げるには `ETag` キャッシュされた永続クエリ ( *各* 一意の応答 ) `FileETag Digest` dispatcher 設定の仮想ホスト設定で設定を使用する必要があります（まだ存在しない場合）。
 >
