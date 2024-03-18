@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 向けのログ
 description: AEM as a Cloud Service のログを使用して一元的なログサービスのグローバルパラメーターを設定する方法、個々のサービスに特有の設定またはデータのログ記録をリクエストする方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 35959a1cd47e9ea1b93aeddc3eb72cf03c44eda8
+source-git-commit: 97a1781f0a2d59d2bed7b03c7d4f045c81784f60
 workflow-type: tm+mt
-source-wordcount: '2776'
+source-wordcount: '2797'
 ht-degree: 96%
 
 ---
@@ -190,7 +190,7 @@ Sling LogManager ファクトリの OSGi 設定を使用して、カスタム Ja
 
 AEM as a Cloud Service の HTTP リクエストログは、AEM に対して行われた HTTP リクエストと、それに対する HTTP レスポンスに関する情報を時系列で提供します。このログは、AEM に対して行われる HTTP リクエストと、それらの要求が処理され応答される順序を理解するのに役立ちます。
 
-このログを理解するための鍵は、HTTP リクエストとレスポンスのペアを、括弧内の数値で示される ID でマッピングすることです。多くの場合、リクエストと対応する応答には、他の HTTP リクエストと応答がログ内に差し込まれています。
+このログを理解するための鍵は、HTTP リクエストとレスポンスのペアを、括弧内の数値で示される ID でマッピングすることです。多くの場合、リクエストと対応するレスポンスのログでは、その他の HTTP リクエストとレスポンスが間に挿入されています。
 
 **サンプルログ**
 
@@ -285,7 +285,7 @@ AEM as a Cloud Service は、パブリッシュ上の Apache Web サーバーと
 
 ### Apache HTTPD Web サーバーアクセスログ {#apache-httpd-web-server-access-log}
 
-Apache HTTP Web Server アクセスログは、パブリッシュ層の Web サーバー／Dispatcher に到達する各 HTTP リクエストのステートメントを提供します。アップストリーム CDN から提供されるリクエストは、これらのログに反映されません。
+Apache HTTP Web Server アクセスログは、パブリッシュ層の Web サーバー／Dispatcher に到達する各 HTTP リクエストのステートメントを提供します。アップストリーム CDN から提供されるリクエストは、これらのログには反映されません。
 
 エラーログの形式に関する情報については、[公式の Apache ドキュメント](https://httpd.apache.org/docs/2.4/logs.html#accesslog)を参照してください。
 
@@ -504,7 +504,7 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service では、ユーザーが CDN ログにアクセスできるようになっています。このログは、キャッシュヒット率の最適化などのユースケースに役立ちます。CDN ログ形式はカスタマイズできず、情報、警告、エラーなどの様々なモードに設定する概念もありません。
 
-Splunk 転送機能は、CDN ログをまだサポートしていません。
+CDN ログは、新しい Splunk 転送のサポートチケットリクエストに対して Splunk に転送されます。Splunk 転送を既に有効にしているお客様は、将来 CDN ログを追加できます。
 
 **例**
 
