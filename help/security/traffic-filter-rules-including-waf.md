@@ -2,10 +2,10 @@
 title: WAF ルールを含むトラフィックフィルタールール
 description: Web アプリケーションファイアウォール（WAF）ルールを含むトラフィックフィルタールールの設定
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 043c87330bca37529c0cc614596599bea1e41def
+source-git-commit: 9a535f7fa0a1e7b6f508e887787dd421bfffe8df
 workflow-type: tm+mt
-source-wordcount: '3382'
-ht-degree: 98%
+source-wordcount: '3634'
+ht-degree: 90%
 
 ---
 
@@ -235,9 +235,9 @@ when:
 
 | **名前** | **許可されたプロパティ** | **意味** |
 |---|---|---|
-| **許可** | `wafFlags`（オプション） | wafFlags が存在しない場合、それ以上のルール処理を停止し、サービング応答に進みます。wafFlags が存在する場合、指定された WAF 保護が無効になり、追加のルール処理に進みます。 |
-| **block** | `status, wafFlags`（任意、相互に排他的） | wafFlags が存在しない場合、他のすべてのプロパティをバイパスする HTTP エラーを返します。エラーコードは status プロパティによって定義されるか、デフォルトの 406 となります。wafFlags が存在する場合は、指定された WAF 保護を有効にし、さらにルール処理を続行します。 |
-| **log** | `wafFlags`（オプション） | ルールがトリガーされたことをログに記録します。トリガーされていない場合、処理に影響は及びません。wafFlags は影響を受けません |
+| **許可** | `wafFlags` （オプション）、 `alert` （オプション、未リリース） | wafFlags が存在しない場合、それ以上のルール処理を停止し、サービング応答に進みます。wafFlags が存在する場合、指定された WAF 保護が無効になり、追加のルール処理に進みます。 <br>アラートを指定した場合、5 分間でルールが 10 回トリガーされた場合、アクションセンター通知が送信されます。 この機能はまだリリースされていません。詳しくは、 [トラフィックフィルタールールアラート](#traffic-filter-rules-alerts) arley adopter プログラムへの参加方法に関する情報は、こちらを参照してください。 |
+| **block** | `status, wafFlags` （オプションで、相互に排他的）。 `alert` （オプション、未リリース） | wafFlags が存在しない場合、他のすべてのプロパティをバイパスする HTTP エラーを返します。エラーコードは status プロパティによって定義されるか、デフォルトの 406 となります。wafFlags が存在する場合は、指定された WAF 保護を有効にし、さらにルール処理を続行します。 <br>アラートを指定した場合、5 分間でルールが 10 回トリガーされた場合、アクションセンター通知が送信されます。 この機能はまだリリースされていません。詳しくは、 [トラフィックフィルタールールアラート](#traffic-filter-rules-alerts) arley adopter プログラムへの参加方法に関する情報は、こちらを参照してください。 |
+| **log** | `wafFlags` （オプション）、 `alert` （オプション、未リリース） | ルールがトリガーされたことをログに記録します。トリガーされていない場合、処理に影響は及びません。wafFlags は無効です。 <br>アラートを指定した場合、5 分間でルールが 10 回トリガーされた場合、アクションセンター通知が送信されます。 この機能はまだリリースされていません。詳しくは、 [トラフィックフィルタールールアラート](#traffic-filter-rules-alerts) arley adopter プログラムへの参加方法に関する情報は、こちらを参照してください。 |
 
 ### WAF フラグリスト {#waf-flags-list}
 
@@ -466,6 +466,34 @@ data:
         action:
           type: block
         rateLimit: { limit: 100, window: 60, penalty: 60 }
+```
+
+## トラフィックフィルタールールアラート {#traffic-filter-rules-alerts}
+
+>[!NOTE]
+>
+>この機能はまだリリースされていません。 アーリーアダプタープログラムを通じてアクセスを得るには、E メールをお送りください。 **aemcs-waf-adopter@adobe.com**.
+
+5 分間で 10 回トリガーされた場合にアクションセンターの通知を送信するルールを設定して、特定のトラフィックパターンが発生した場合に警告を出し、必要な対策を講じることができます。 詳細情報： [アクションセンター](/help/operations/actions-center.md):E メールを受信するために必要な通知プロファイルの設定方法を含みます。
+
+![アクションセンターの通知](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
+
+
+alert プロパティ ( 現在、「 *実験* 機能はまだリリースされていないので、すべてのアクションタイプ (allow、block、log) のアクションノードに適用できます。
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action:
+          type: block
+          experimental_alert: true
 ```
 
 ## CDN ログ {#cdn-logs}
