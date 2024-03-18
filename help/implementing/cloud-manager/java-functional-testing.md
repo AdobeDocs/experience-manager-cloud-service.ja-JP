@@ -2,10 +2,10 @@
 title: Java™ 機能テスト
 description: AEM as a Cloud Service 用の Java™ 機能テストの作成方法を説明します
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
-source-git-commit: e463979df1f705283f29d954f9869d85f0a96465
+source-git-commit: 641690f2eca17bbfb47360282e818b6902a36144
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 92%
+source-wordcount: '878'
+ht-degree: 94%
 
 ---
 
@@ -128,7 +128,7 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 
 >[!NOTE]
 >
->この変更は 2024 年 4 月 7 日以降に必要になります。
+>この変更は、2024 年 4 月 7 日より前に実行する必要があります。
 >依存関係ライブラリの更新に失敗すると、「カスタム機能テスト」手順でパイプラインにエラーが発生します。
 
 ### ローカルテストの実行 {#local-test-execution}

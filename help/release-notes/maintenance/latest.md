@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: d16d908d39df3c7d72dc48ac877c1543d2442416
+source-git-commit: b0198fee3fb8c2f02f50819bea5757e5b8373ac1
 workflow-type: tm+mt
-source-wordcount: '1240'
-ht-degree: 88%
+source-wordcount: '1241'
+ht-degree: 87%
 
 ---
 
@@ -131,7 +131,7 @@ ht-degree: 88%
 </dependency>
 ```
 
-この変更は 2024年4月6日（PT）以降に必要になります。
+この変更は、2024 年 4 月 7 日より前に実行する必要があります。
 
 依存関係ライブラリの更新に失敗すると、「カスタム機能テスト」手順でパイプラインにエラーが発生します。
 
