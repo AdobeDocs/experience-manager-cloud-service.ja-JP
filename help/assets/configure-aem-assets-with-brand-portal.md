@@ -5,9 +5,9 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 0411da1113c6bddfa1adcc583b4e53c5daa9bd41
+source-git-commit: 2cb630203b818ae338fe6b7c2ff341c76e3a3958
 workflow-type: tm+mt
-source-wordcount: '2568'
+source-wordcount: '2566'
 ht-degree: 98%
 
 ---
@@ -295,7 +295,7 @@ Adobe 開発者コンソールで、プロジェクトと API を Brand Portal �
    >[!NOTE]
    >
    >* 資格情報を確認し、必要に応じて、JWT トークンの生成、資格情報の詳細のコピー、クライアントの秘密鍵の取得などのアクションを実行できます。
-   >* 現在、Adobeの開発者コンソールサービスアカウント (JWT) 秘密鍵証明書の種類のみがサポートされています。 4 月中旬にサポートされるまで、OAuth Server-to-Server 秘密鍵証明書の種類を使用しないでください。 詳しくは、 [Adobe Developerコンソールでの JWT 資格情報の廃止](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
+   >* 現在、Adobeの開発者コンソールサービスアカウント (JWT) 秘密鍵証明書の種類のみがサポートされています。 次を使用しない `OAuth Server-to-Server` 4 月中旬にサポートされるまでの資格情報タイプ。 詳しくは、 [Adobe Developerコンソールでの JWT 資格情報の廃止](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
 
 1. 「**[!UICONTROL クライアント資格情報]**」タブから、**[!UICONTROL クライアント ID]** をコピーします。
 
