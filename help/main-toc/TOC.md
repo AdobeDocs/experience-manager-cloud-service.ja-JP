@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
+source-git-commit: 43fdf17ab09fd7a974c32cfd716f65072b678726
 workflow-type: tm+mt
-source-wordcount: '4813'
+source-wordcount: '4822'
 ht-degree: 94%
 
 ---
@@ -1144,6 +1144,8 @@ ht-degree: 94%
       + [AMS から AEM as a Cloud Service への Dispatcher 設定の移行](/help/implementing/dispatcher/ams-aem.md)
       + [Dispatcher ツールを使用した検証とデバッグ（レガシー）](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [AEM as a Cloud Service での CDN](/help/implementing/dispatcher/cdn.md)
+      + [CDN でのトラフィックの設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)
+      + [CDN エラーページの設定](/help/implementing/dispatcher/cdn-error-pages.md)
       + [AEM as a Cloud Service でのキャッシュ](/help/implementing/dispatcher/caching.md)
 + コネクタ {#connectors}
    + [AEM コネクタの実装](/help/connectors/implement.md)

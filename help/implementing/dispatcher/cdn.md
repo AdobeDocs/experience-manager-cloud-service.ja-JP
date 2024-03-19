@@ -3,10 +3,10 @@ title: AEM as a Cloud Service での CDN
 description: AEM の管理による CDN を使用する方法と、独自の CDN を AEM の管理による CDN にポイントする方法について説明します。
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
-workflow-type: ht
-source-wordcount: '1031'
-ht-degree: 100%
+source-git-commit: 43fdf17ab09fd7a974c32cfd716f65072b678726
+workflow-type: tm+mt
+source-wordcount: '1118'
+ht-degree: 92%
 
 ---
 
@@ -39,6 +39,14 @@ Cloud Manager セルフサービス UI を使用して、AEM の標準搭載 CDN
 >[!CAUTION]
 >
 >許可されている IP からのリクエストのみが、AEM の管理による CDN で処理されます。独自の CDN に AEM の管理による CDN を参照させる場合は、CDN の IP が許可リストに含まれていることを確認してください。
+
+### CDN でのトラフィックの設定 {#cdn-configuring-cloud}
+
+CDN トラフィックとフィルターを設定するルールは、設定ファイルで宣言し、CDN にデプロイする際に、 [Cloud Manager の設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). 詳しくは、 [CDN でのトラフィックの設定](/help/implementing/dispatcher/cdn-configuring-traffic.md) および [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md).
+
+### CDN エラーページの設定 {#cdn-error-pages}
+
+CDN エラーページは、AEMに到達できない稀なイベントでブラウザーに提供される、デフォルトのブランド化されていないページを上書きするように設定できます。 詳しくは、 [CDN エラーページの設定](/help/implementing/dispatcher/cdn-error-pages.md).
 
 ## 顧客 CDN で AEM の管理による CDN を参照する {#point-to-point-CDN}
 
