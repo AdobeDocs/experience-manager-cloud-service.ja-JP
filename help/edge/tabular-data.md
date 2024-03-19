@@ -2,9 +2,9 @@
 title: スプレッドシートを使用した表形式データの管理
 description: スプレッドシートを使用して、Edge Delivery ServicesサイトでのAEMのメタデータやリダイレクトなど、様々な値の表形式データを管理する方法を説明します。
 feature: Edge Delivery Services
-source-git-commit: 0fa88453a7d7c58a3ccb2a4baf7d2b143acf7ad5
+source-git-commit: f872ab4eb891ab4aa634e88c76eedeb0f13cb285
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '958'
 ht-degree: 2%
 
 ---
@@ -81,25 +81,9 @@ AEM with プロジェクトのスプレッドシートを使用してマッピ�
    * 必要に応じて、新しい行がスプレッドシートに追加されます。
    * 行を削除または移動するには、 **削除** 各行の末尾にあるアイコンと、各行の先頭にあるドラッグハンドル。
 
-1. リダイレクトの定義が完了したら、「 」タブを閉じて、 **Sites** コンソール。
+## Spreadsheet paths.json の公開 {#paths-json}
 
-1. コンソールで作成したリダイレクトスプレッドシートをタップまたはクリックして選択し、をタップまたはクリックします。 **クイック公開** をクリックして、スプレッドシートを公開します。
-
-   ![サイトコンソールでスプレッドシートを選択します。](assets/tabular-data/tabular-data-select-publish.png)
-
-1. Adobe Analytics の **クイック公開** ダイアログ、タップまたはクリック **公開**.
-
-   ![公開を確認](assets/tabular-data/tabular-data-quick-publish.png)
-
-1. バナーで公開を確認します。
-
-   ![公開のバナー確認](assets/tabular-data/tabular-data-publish-banner.png)
-
-リダイレクトスプレッドシートが公開され、公開されてアクセスできるようになりました。
-
-## paths.json を更新しました。 {#paths-json}
-
-AEMがスプレッドシートのデータを使用できるようにするには、さらに `paths.json` ファイルに含める必要があります。
+AEMでスプレッドシートのデータを公開するには、さらに `paths.json` ファイルに含める必要があります。
 
 1. GitHub でプロジェクトのルートを開きます。
 
@@ -122,7 +106,21 @@ AEMがスプレッドシートのデータを使用できるようにするに�
 
    * 次のいずれかにコミット `main` または、プロセスに従ってプル要求を作成します。
 
-次に変更した後： `paths.json` が結合された場合、リダイレクトはサイトに対して有効になります。
+1. リダイレクトの定義が完了し、パスマッピングを更新したら、 **Sites** コンソール。
+
+1. コンソールで作成したリダイレクトスプレッドシートをタップまたはクリックして選択し、をタップまたはクリックします。 **クイック公開** をクリックして、スプレッドシートを公開します。
+
+   ![サイトコンソールでスプレッドシートを選択します。](assets/tabular-data/tabular-data-select-publish.png)
+
+1. Adobe Analytics の **クイック公開** ダイアログ、タップまたはクリック **公開**.
+
+   ![公開を確認](assets/tabular-data/tabular-data-quick-publish.png)
+
+1. バナーで公開を確認します。
+
+   ![公開のバナー確認](assets/tabular-data/tabular-data-publish-banner.png)
+
+リダイレクトスプレッドシートが公開され、公開されてアクセスできるようになりました。
 
 ## その他のスプレッドシートタイプ {#other}
 
@@ -134,6 +132,12 @@ AEMがスプレッドシートのデータを使用できるようにするに�
 * 設定
 
 セクションで同じ手順に従うだけです [スプレッドシートを作成](#spreadsheet) および [paths.json を更新しました。](#paths-json) 適切なテンプレートを選択し、 `paths.json` ファイルに適切に書き込む。
+
+の場合 [設定](https://www.aem.live/docs/configuration), [ヘッダー](https://www.aem.live/docs/custom-headers) および [メタデータ](https://www.aem.live/docs/bulk-metadata) マッピングを追加して、デフォルトの場所に公開してください。
+
+* 設定： `/.helix/config.json`
+* ヘッダー： `/.helix/headers.json`
+* メタデータ： `/metadata.json`
 
 また、 [独自のスプレッドシートを作成する](#own-spreadsheet) 任意の列を使用して、独自で使用できます。
 
