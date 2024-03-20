@@ -2,10 +2,10 @@
 title: 基本操作
 description: AEM の操作とその基本的な使用方法の習得
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 7e0ca5dad5cd53c2304e2eba48a5131d587967ef
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 71%
+source-wordcount: '926'
+ht-degree: 70%
 
 ---
 
@@ -36,7 +36,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
 ユーザーが初めてコンソールにアクセスすると、必ず製品ナビゲーションチュートリアルが開始されます。ここで時間を割いて、ひととおり選択し、AEM の基本操作の概要を把握してください。
 
-![ナビゲーションチュートリアル](assets/tutorial.png)
+![ナビゲーションチュートリアル](assets/basic-handling-tutorial.png)
 
 「**次へ**」を選択して、概要の次のページに進みます。「**閉じる**」を選択するか、概要ダイアログの外側を選択して閉じます。
 
@@ -48,7 +48,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
 「**閉じる**」をクリックまたはタップすると、グローバルナビゲーションパネルが閉じて、前の場所に戻ることができます。
 
-![ナビゲーションパネルの上部バー](assets/basic-handling-navigation-bar.png)
+![ナビゲーションパネルの上部バー](assets/basic-handling-navigation-options.png)
 
 グローバルナビゲーションには、2 つのパネルがあり、画面の左余白にアイコンで表示されます。
 
@@ -86,31 +86,37 @@ Adobe Analytics の **ツール** パネルには、様々なカテゴリを含�
 
 ヘッダーは、常に画面の上部に表示されます。ヘッダーのほとんどのオプションは、システム内のどこにいても同じですが、コンテキストに固有のオプションもあります。
 
-![ナビゲーションヘッダー](/help/sites-cloud/authoring/assets/navigation-bar.png)
+![ナビゲーションヘッダー](/help/sites-cloud/authoring/assets/basic-handling-navigation-bar.png)
 
 * [グローバルナビゲーション](#global-navigation)  — を選択します。 **Adobe Experience Manager** コンソール間を移動するためのリンク。
 
-  ![グローバルナビゲーション](/help/sites-cloud/authoring/assets/global-navigation.png)
+  ![グローバルナビゲーション](/help/sites-cloud/authoring/assets/basic-handling-global-navigation.png)
 
-* [検索](/help/sites-cloud/authoring/search.md)  — また、 [ショートカットキー](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` （スラッシュ）を使用して、任意のコンソールから検索を呼び出します。
+* フィードバック
 
-  ![検索アイコン](/help/sites-cloud/authoring/assets/search-icon.png)
+  ![フィードバックボタン](/help/sites-cloud/authoring/assets/basic-handling-feedback.png)
+
+* IMS 組織 — 必要に応じて変更する場合に選択します。
 
 * [ソリューション](https://www.adobe.com/jp/experience-cloud.html)  — これを選択して、他のAdobeソリューションにアクセスします。
 
-  ![ソリューションボタン](/help/sites-cloud/authoring/assets/solutions.png)
+  ![ソリューションボタン](/help/sites-cloud/authoring/assets/basic-handling-solutions.png)
+
+* [検索](/help/sites-cloud/authoring/search.md)  — また、 [ショートカットキー](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` （スラッシュ）を使用して、任意のコンソールから検索を呼び出します。
+
+  ![検索アイコン](/help/sites-cloud/authoring/assets/basic-handling-search-icon.png)
 
 * [ヘルプ](#accessing-help)
 
-  ![ヘルプボタン](/help/sites-cloud/authoring/assets/help.png)
+  ![ヘルプボタン](/help/sites-cloud/authoring/assets/basic-handling-help-icon.png)
 
 * [通知](/help/sites-cloud/authoring/inbox.md)  — このアイコンには、現在割り当てられている未完了の通知の数を示すバッジが付きます。
 
-  ![通知ボタン](/help/sites-cloud/authoring/assets/notifications.png)
+  ![通知ボタン](/help/sites-cloud/authoring/assets/basic-handling-notifications.png)
 
 * [ユーザープロパティ](/help/sites-cloud/authoring/account-environment.md)  — ユーザー設定を変更するには、これを選択します。
 
-  ![ユーザープロパティボタン](/help/sites-cloud/authoring/assets/user-properties.png)
+  ![ユーザープロパティボタン](/help/sites-cloud/authoring/assets/basic-handling-user-properties.png)
 
 ## ヘルプへのアクセス {#accessing-help}
 
