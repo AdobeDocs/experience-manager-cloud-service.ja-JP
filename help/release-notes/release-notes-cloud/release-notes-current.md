@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5f780f5e8fa9289b35eefbbd4c3a71d37a7f465a
+source-git-commit: 8a64e2ca1dc3987558c36346422ee43d202d9ecc
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 91%
@@ -111,7 +111,7 @@ Dynatrace のお客様は、AEM の使用状況を監視できます。アプリ
 
 ### CDN 設定アーリーアダプタープログラム {#cdn-config-early-adopter}
 
-最近リリースされたに加えて [トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)( オプションでライセンス可能な Web アプリケーションファイアウォール (WAF) ルールを含む )、設定パイプラインを使用して他のタイプの CDN 設定を宣言し、デプロイする機会があります。 早期採用プログラムにメールで参加 **aemcs-cdn-config-adopter@adobe.com** にアクセスするには：
+最近リリースされたに加えて [トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)( オプションでライセンス可能な Web アプリケーションファイアウォール (WAF) ルールを含む )、設定パイプラインを使用して、を宣言し、デプロイする機会があります。 [その他のタイプの CDN 設定](/help/implementing/dispatcher/cdn-configuring-traffic.md). 早期採用プログラムにメールで参加 **aemcs-cdn-config-adopter@adobe.com** にアクセスするには：
 * 301/302クライアントサイドのリダイレクト
 * エッジでのリクエストの任意のオリジンへのプロキシ処理
 * URL 変換
