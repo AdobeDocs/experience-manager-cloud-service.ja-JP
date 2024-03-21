@@ -3,10 +3,10 @@ title: AEM as a Cloud Service でのキャッシュ
 description: AEM as a Cloud Service でのキャッシュの基本について
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: d6e522cc18441a642e3434b6e5eff893d8f69952
+source-git-commit: 8215686031de1bc37ce37bfdce252b3997646042
 workflow-type: tm+mt
 source-wordcount: '2894'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -226,7 +226,7 @@ AEM レイヤーは、デフォルトでは BLOB コンテンツをキャッシ�
 
 ### CDN キャッシュヒット率の分析 {#analyze-chr}
 
-詳しくは、 [キャッシュヒット率の分析チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) ダッシュボードを使用した CDN ログのダウンロードとサイトのキャッシュサイト比の分析に関する情報を参照してください。
+ダッシュボードを使用した CDN ログのダウンロードとサイトのキャッシュサイト比の分析に関する情報は、[キャッシュヒット率の分析チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html?lang=ja)を参照してください。
 
 ### HEAD リクエスト動作 {#request-behavior}
 
@@ -246,10 +246,10 @@ Web サイトの URL には、キャンペーンの成功をトラックする�
 
 2023年10月より前に作成された環境の場合は、Dispatcher 設定の `ignoreUrlParams` プロパティを[ここに記載されている](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#ignoring-url-parameters)ように設定することをお勧めします。
 
-マーケティングパラメーターを無視する方法は 2 つあります。 （最初のクエリは、クエリパラメーターを使用してキャッシュバスティングを無視する場合に推奨されます）。
+マーケティングパラメーターを無視する方法は 2 つあります。（最初のクエリは、クエリパラメーターを使用してキャッシュバスティングを無視する場合に推奨されます）。
 
-1. すべてのパラメータを無視し、使用するパラメータを選択的に許可します。
-次の例では、 `page` および `product` パラメーターは無視されず、要求は発行者に転送されます。
+1. すべてのパラメーターを無視し、使用するパラメータを選択的に許可します。
+次の例では、`page` および `product` パラメーターのみが無視されず、リクエストは発行者に転送されます。
 
 ```
 /ignoreUrlParams {
@@ -259,7 +259,7 @@ Web サイトの URL には、キャンペーンの成功をトラックする�
 }
 ```
 
-1. マーケティングパラメーターを除くすべてのパラメーターを許可します。 ファイル [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) は、無視する一般的に使用されるマーケティングパラメーターのリストを定義します。 Adobeはこのファイルを更新しません。 マーケティングプロバイダーに応じて、ユーザーが拡張できます。
+1. マーケティングパラメーターを除くすべてのパラメーターを許可します。ファイル [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) は、無視される一般的マーケティングパラメーターのリストを定義します。アドビはこのファイルを更新しません。マーケティングプロバイダーに応じて、ユーザーが拡張できます。
 
 ```
 /ignoreUrlParams {
@@ -278,7 +278,7 @@ Web サイトの URL には、キャンペーンの成功をトラックする�
 以前のバージョンの AEM と同様に、ページを公開または非公開にすると、Dispatcher のキャッシュからコンテンツがクリアされます。キャッシュに問題があると疑われる場合は、該当するページを再度公開し、`ServerAlias` localhost に一致する仮想ホスト（Dispatcher キャッシュの無効化に必要）が使用可能であることを確認する必要があります。
 
 >[!NOTE]
->Dispatcher を適切に無効化するには、「127.0.0.1」、「localhost」、「.local」、「\*.adobeaemcloud.com」および「\*.adobeaemcloud.net」からの要求がすべて vhost 設定で一致し、処理されて、要求を処理できることを確認します。 この作業を行うには、[AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) の参照パターンに従って、キャッチオール vhost 設定で「*」をグローバルに一致させます。または、前述のリストがいずれかの vhost にキャッチされるようにすることもできます。
+>Dispatcher を適切に無効化するには、「127.0.0.1」、「localhost」、「\*.local」、「\*.adobeaemcloud.com」および「\*.adobeaemcloud.net」からの要求がすべて vhost 設定で照合および処理され、要求を処理できるようにします。 この作業を行うには、[AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) の参照パターンに従って、キャッチオール vhost 設定で「*」をグローバルに一致させます。または、前述のリストがいずれかの vhost にキャッチされるようにすることもできます。
 
 パブリッシュインスタンスは、オーサーから新しいバージョンのページまたはアセットを受け取ると、フラッシュエージェントを使用して Dispatcher 上の該当するパスを無効にします。更新されたパスは、親と共に、Dispatcher キャッシュから削除されます（削除されるレベルは [statfilelevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#invalidating-files-by-folder-level) で設定できます）。
 
@@ -338,7 +338,7 @@ Web サイトの URL には、キャンペーンの成功をトラックする�
   </tr>
   <tr>
     <td>レプリケーション API</td>
-    <td>パブリッシュ</td>
+    <td>公開</td>
     <td>不可です。すべてのパブリッシュインスタンスで発生するイベントです。</td>
     <td>ベストエフォート。</td>
     <td>
