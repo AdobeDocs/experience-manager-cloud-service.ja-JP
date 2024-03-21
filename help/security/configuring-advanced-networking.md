@@ -2,64 +2,64 @@
 title: AEM as a Cloud Service の高度なネットワーク機能の設定
 description: AEM as a Cloud Service の高度なネットワーク機能（VPN やフレキシブルエグレス IP アドレスまたは専用エグレス IP アドレスなど）を設定する方法を説明します
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: a284c0139b45e618749866385cdcc81d1ceb61e7
+source-git-commit: 01b55f2ff06d3886724dbb2c25d0c109a5ab6aec
 workflow-type: tm+mt
-source-wordcount: '5145'
-ht-degree: 44%
+source-wordcount: '5142'
+ht-degree: 94%
 
 ---
 
 
 # AEM as a Cloud Service の高度なネットワーク機能の設定 {#configuring-advanced-networking}
 
-この記事では、AEMas a Cloud Serviceの様々な高度なネットワーク機能（VPN のセルフサービスと API プロビジョニング、非標準ポート、専用の出力 IP アドレスなど）を紹介します。
+この記事では、AEM as a Cloud Service の様々な高度なネットワーク機能（VPN のセルフサービスおよび API プロビジョニング、非標準ポート、専用エグレス IP アドレスなど）を紹介します。
 
 >[!TIP]
 >
->このドキュメントに加えて、このドキュメントの各高度なネットワークオプションについて順を追って説明するための一連のチュートリアルも用意されています [場所。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
+>このドキュメントに加えて、この[場所](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/networking/advanced-networking)には、高度なネットワークオプションのそれぞれを説明する一連のチュートリアルも用意されています。
 
 ## 概要 {#overview}
 
-AEM as a Cloud Serviceでは、次の高度なネットワークオプションを提供しています。
+AEM as a Cloud Service では、次の高度なネットワークオプションを提供します。
 
-* [柔軟なポートエグレス](#flexible-port-egress)  — 非標準ポートからの送信トラフィックを許可するようにAEMをas a Cloud Service的に設定します。
-* [出力専用 IP アドレス](#dedicated-egress-ip-address)  — 固有の IP から発信されるようにAEM as a Cloud Serviceからのトラフィックを設定します。
-* [仮想プライベートネットワーク (VPN)](#vpn) - VPN を使用している場合、インフラストラクチャとAEMas a Cloud Service間のトラフィックを保護します。
+* [フレキシブルポートエグレス](#flexible-port-egress) - AEM as a Cloud Service を設定して、非標準ポートからの送信トラフィックを許可します。
+* [専用エグレス IP アドレス](#dedicated-egress-ip-address) - 一意の IP アドレスから送信されるように AEM as a Cloud Service からのトラフィックを設定します。
+* [仮想プライベートネットワーク（VPN）](#vpn) - VPN を使用している場合は、インフラストラクチャと AEM as a Cloud Service の間のトラフィックを保護します。
 
-この記事では、まず、これらの各オプションの詳細と使用理由を説明し、Cloud Manager UI を使用した設定方法と API を使用した設定方法を説明し、高度な使用例で締めくくります。
+この記事では、まずこれらの各オプションを詳しく説明し、使用する理由を説明してから、Cloud Manager UI および API を使用してオプションを設定する方法を説明し、最後にいくつかの高度なユースケースを紹介します。
 
 >[!CAUTION]
 >
->既にレガシー専用の出力テクノロジーがプロビジョニングされていて、次の高度なネットワークオプションのいずれかを設定したい場合は、 [まず、AdobeClientCare にお問い合わせください。](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=ja#home)
+>従来の専用エグレステクノロジーを既にプロビジョニングしていて、これらの高度なネットワークオプションのいずれかを設定する場合は、[まずアドビクライアントケアにお問い合わせください。](https://experienceleague.adobe.com/ja?support-solution=Experience+Manager#home)
 >
->レガシーエグレステクノロジーを使用した高度なネットワークを設定しようとすると、サイトの接続に影響を与える可能性があります。
+>従来のエグレステクノロジーを使用して高度なネットワークを設定しようとすると、サイトの接続に影響を与える場合があります。
 
 ### 要件と制限事項 {#requirements}
 
 高度なネットワーク機能を設定する場合、次の制限が適用されます。
 
-* プログラムは、単一の高度なネットワークオプション（柔軟なポートエグレス、専用のエグレス IP アドレス、または VPN）をプロビジョニングできます。
-* には高度なネットワーク機能がありません [サンドボックスプログラム。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
-* のユーザーは、 **管理者** の役割を追加し、プログラムにネットワークインフラストラクチャを設定します。
-* 実稼動環境は、ネットワークインフラストラクチャをプログラムに追加する前に作成する必要があります。
-* ネットワークインフラストラクチャは、実稼動環境のプライマリ領域と同じ領域に存在する必要があります。
-   * 実稼動環境に [その他の公開地域](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) 追加の地域ごとに、ネットワークインフラストラクチャのミラーリングを追加で作成できます。
-   * 実稼動環境で設定された最大地域数を超えるネットワークインフラストラクチャを作成することはできません。
-   * ネットワークインフラストラクチャは、実稼動環境で利用可能な地域と同じ数だけ定義できますが、新しいインフラストラクチャは、以前に作成したインフラストラクチャと同じタイプである必要があります。
-   * 複数のインフラストラクチャを作成する場合、高度なネットワークインフラストラクチャが作成されていない地域のみから選択できます。
+* プログラムは、単一の高度なネットワークオプション（柔軟なポートエグレス、専用エグレス IP アドレスまたは VPN）をプロビジョニングできます。
+* 高度なネットワーク機能は、[サンドボックスプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)では使用できません。
+* プログラムにネットワークインフラストラクチャを追加して設定するには、ユーザーが&#x200B;**管理者**&#x200B;の役割を持っている必要があります。
+* プログラムにネットワークインフラストラクチャを追加する前に、実稼動環境を作成する必要があります。
+* ネットワークインフラストラクチャは、実稼動環境のプライマリ地域と同じ地域に存在する必要があります。
+   * 実稼動環境に[追加の公開地域](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)がある場合は、追加の各地域をミラーリングする追加のネットワークインフラストラクチャを作成できます。
+   * 実稼動環境で設定された最大地域数を超えるネットワークインフラストラクチャは作成できません。
+   * 実稼動環境で使用可能な地域と同じ数のネットワークインフラストラクチャを定義できますが、新しいインフラストラクチャは以前に作成したインフラストラクチャと同じタイプにする必要があります。
+   * 複数のインフラストラクチャを作成する場合は、高度なネットワークインフラストラクチャが作成されていない地域のみから選択できます。
 
-### アドバンスネットワークの構成と有効化 {#configuring-enabling}
+### 高度なネットワーク機能の設定と有効化 {#configuring-enabling}
 
 高度なネットワーク機能を使用するには、次の 2 つの手順が必要です。
 
-1. アドバンスドネットワークオプションの設定 ( [柔軟なポートエグレス](#flexible-port-egress) [出力専用 IP アドレス](#dedicated-egress-ip-address) または [VPN](#vpn) は、まずプログラムレベルでおこなう必要があります。
-1. 使用するには、環境レベルで [ 詳細ネットワーク ] オプションを有効にする必要があります。
+1. 高度なネットワークオプションの設定（[フレキシブルポートエグレス](#flexible-port-egress)、[専用エグレス IP アドレス](#dedicated-egress-ip-address)または [VPN](#vpn)）は、まずプログラムレベルで行う必要があります。
+1. 使用するには、[ 詳細ネットワーク ] オプションを次に指定する必要があります。 [環境レベルで有効になっています。](#enabling)
 
-両方の手順は、Cloud Manager UI または Cloud Manager API を使用して実行できます。
+どちらの手順も、Cloud Manager UI または Cloud Manager API を使用して実行できます。
 
-* Cloud Manager UI を使用する場合、プログラムレベルのウィザードを使用して高度なネットワーク設定を作成し、設定を有効にする各環境を編集します。
+* Cloud Manager UI を使用する場合、つまり、プログラムレベルでウィザードを使用して高度なネットワーク設定を作成し、その設定を有効にする各環境を編集することです。
 
-* Cloud Manager API を使用する場合、 `/networkInfrastructures` API エンドポイントは、プログラムレベルで呼び出され、必要な種類の高度なネットワークを宣言した後、 `/advancedNetworking` エンドポイントを使用して、インフラストラクチャを有効にし、環境固有のパラメーターを設定します。
+* Cloud Manager API を使用する場合、`/networkInfrastructures` API エンドポイントをプログラムレベルで呼び出して、必要なタイプの高度なネットワーク機能を宣言したあと、環境ごとに `/advancedNetworking` エンドポイントを呼び出して、インフラストラクチャを有効にし、環境固有のパラメーターを設定します。
 
 ## フレキシブルポートエグレス {#flexible-port-egress}
 
@@ -67,47 +67,47 @@ AEM as a Cloud Serviceでは、次の高度なネットワークオプション�
 
 >[!TIP]
 >
->フレキシブルポートエグレス IP アドレスと専用エグレス IP アドレスのどちらを選択する場合は、特定の IP アドレスが必要なければ、フレキシブルポートエグレスを選択することをお勧めします。アドビ側でフレキシブルポートエグレストラフィックのパフォーマンスを最適化できるからです。
+>フレキシブルポートエグレス IP アドレスと専用エグレス IP アドレスのどちらを使用するか決定する場合、特定の IP アドレスが必要なければ、フレキシブルポートエグレスを選択することをお勧めします。フレキシブルポートエグレスはアドビ側でフレキシブルポートエグレストラフィックのパフォーマンスを最適化できるからです。
 
 >[!NOTE]
 >
->作成後は、柔軟なポートエグレスインフラストラクチャタイプは編集できません。 設定値を変更する唯一の方法は、設定値を削除して再作成することです。
+>フレキシブルポートエグレスのインフラストラクチャタイプは、作成後に編集することはできません。設定値を変更する唯一の方法は、設定値を削除して再作成することです。
 
 ### UI 設定 {#configuring-flexible-port-egress-provision-ui}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面で、プログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;画面で、プログラムを選択します。
 
-1. 次から： **プログラムの概要** ページで、 **環境** 「 」タブで「 」を選択します。 **ネットワークインフラストラクチャ** をクリックします。
+1. **プログラム概要**&#x200B;ページから、「**環境**」タブに移動し、左側のパネルの「**ネットワークインフラストラクチャ**」を選択します。
 
-   ![ネットワークインフラストラクチャの追加](assets/advanced-networking-ui-network-infrastructure.png)
+   ![ネットワークインフラストラクチャを追加](assets/advanced-networking-ui-network-infrastructure.png)
 
-1. Adobe Analytics の **ネットワークインフラストラクチャの追加** ウィザードを開始し、「 」を選択します。 **柔軟なポートエグレス** また、 **地域** ドロップダウンメニューでタップまたはクリック **続行**.
+1. 開始される&#x200B;**ネットワークインフラストラクチャを追加**&#x200B;ウィザードで、「**フレキシブルポートエグレス**」と、それを作成する地域を&#x200B;**地域**&#x200B;ドロップダウンメニューから選択し、「**続行**」をタップまたはクリックします。
 
    ![フレキシブルポートエグレスの設定](assets/advanced-networking-ui-flexible-port-egress.png)
 
-1. The **確認** 「 」タブに、選択内容と次の手順の概要が表示されます。 タップまたはクリック **保存** インフラストラクチャを作成する。
+1. 「**確認**」タブには、選択内容と次の手順がまとめられています。「**保存**」をタップまたはクリックして、インフラストラクチャを作成します。
 
-   ![フレキシブルポートエグレスの設定の確認](assets/advanced-networking-ui-flexible-port-egress-confirmation.png)
+   ![フレキシブルポートエグレス設定の確認](assets/advanced-networking-ui-flexible-port-egress-confirmation.png)
 
-新しいレコードが **ネットワークインフラストラクチャ** サイドパネルの見出し（インフラストラクチャのタイプ、ステータス、地域、有効にされた環境の詳細を含む）。
+サイドパネルの&#x200B;**ネットワークインフラストラクチャ**&#x200B;見出しの下に、インフラストラクチャの種類、ステータス、地域、有効になっている環境の詳細を含む新しいレコードが表示されます。
 
-![ネットワークインフラストラクチャの新しいエントリ](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
+![ネットワークインフラストラクチャの下の新しいエントリ](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
 >[!NOTE]
 >
->柔軟なポートエグレス用のインフラストラクチャの作成には、環境レベルで構成できるようになるまで、最大 1 時間かかる場合があります。
+>フレキシブルポートエグレス用のインフラストラクチャの作成には最大 1 時間かかる場合があり、その後、環境レベルで設定できるようになります。
 
 ### API 設定 {#configuring-flexible-port-egress-provision-api}
 
-プログラムごとに 1 回、POST `/program/<programId>/networkInfrastructures` エンドポイントが呼び出され、`kind` パラメーターの `flexiblePortEgress` の値とリージョンが渡されます。エンドポイントは、 `network_id`、およびステータスを含むその他の情報。
+プログラムごとに 1 回、POST `/program/<programId>/networkInfrastructures` エンドポイントが呼び出され、`kind` パラメーターの `flexiblePortEgress` の値と地域が渡されます。エンドポイントは、応答として `network_id` の他に、ステータスなどの他の情報も返します。
 
-呼び出しの後、ネットワークインフラストラクチャがプロビジョニングされるまで、通常は 15 分ほどかかります。Cloud Manager の [ネットワークインフラストラクチャGETエンドポイント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 次のステータスを示す **準備完了**.
+呼び出しの後、ネットワークインフラストラクチャがプロビジョニングされるまで、通常は 15 分ほどかかります。Cloud Manager の[ネットワークインフラストラクチャ GET エンドポイント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure)の呼び出しで「**準備完了**」のステータスが表示されます。
 
 >[!TIP]
 >
->パラメーターの完全なセット、正確な構文、および後で変更できないパラメーターなどの重要な情報。 [は API ドキュメントで参照できます。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+>パラメーターの完全なセット、正確な構文および後で変更できないパラメーターなどの重要な情報は、[API ドキュメントで参照できます。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 ### トラフィックルーティング {#flexible-port-egress-traffic-routing}
 
@@ -192,7 +192,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 </tbody>
 </table>
 
-#### Apache/Dispatcher 設定 {#apache-dispatcher}
+#### Apache／Dispatcher 設定 {#apache-dispatcher}
 
 AEM Cloud Service の Apache／Dispatcher 層の `mod_proxy` ディレクティブは、上記のプロパティを使用して設定できます。
 
@@ -212,27 +212,27 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ## 出力専用 IP アドレス {#dedicated-egress-ip-address}
 
-専用 IP アドレスを使用すると、SaaS ベンダー（CRM ベンダーなど）との統合や、IP アドレスのAEMを提供するas a Cloud Service以外との統合により、セキュリティを強化できま許可リストに加えるす。 専用 IP アドレスを許可リストに追加することで、顧客の AEM Cloud Service からのトラフィックのみが外部サービスに送信されるようになります。これは、その他の許可されている IP からのトラフィックに加えられるものです。
+専用 IP アドレスは、SaaS ベンダー（CRM ベンダーなど）との統合や、IP アドレスの許可リストを提供する AEM as a Cloud Service 外部のソリューションと統合する場合のセキュリティを強化します。専用 IP アドレスをに追加す許可リストに加えるることで、AEM Cloud Serviceからのトラフィックのみが外部サービスに送られるようになります。 これは、その他の許可されている IP からのトラフィックに加えられるものです。
 
-同じ専用 IP が、Adobe組織内のすべてのプログラムと、各プログラム内のすべての環境に適用されます。 オーサーサービスとパブリッシュサービスの両方に適用されます。
+同じ専用 IP が、アドビ組織内のすべてのプログラムと、各プログラム内のすべての環境に適用されます。オーサーサービスとパブリッシュサービスの両方に適用されます。
 
-専用 IP アドレス機能を有効にしない場合、AEMから出てくるトラフィックは、他のAEMas a Cloud Serviceのお客様と共有される一連の IP を流れます。
+専用 IP アドレス機能を有効にしない場合、AEM as a Cloud Service から出ていくトラフィックは、他の AEM as a Cloud Service の顧客と共有する一連の IP を流れていきます。
 
-専用の出力 IP アドレスの設定は、 [フレキシブルポートエグレス。](#flexible-port-egress) 主な違いは、設定後、トラフィックは常に専用の一意の IP から出てくるという点です。 その IP を確認するには、DNS リゾルバーを使用して、`p{PROGRAM_ID}.external.adobeaemcloud.com` に関連付けられている IP アドレスを特定します。IP アドレスは変更されるとは想定されていませんが、変更が必要な場合は、詳細な通知が表示されます。
+専用エグレス IP アドレスの設定は、[フレキシブルポートエグレスと似ています。](#flexible-port-egress) 主な違いとして、設定後は、トラフィックが常に一意の専用 IP アドレスから発信されます。その IP を確認するには、DNS リゾルバーを使用して、`p{PROGRAM_ID}.external.adobeaemcloud.com` に関連付けられている IP アドレスを特定します。この IP アドレスは固定ですが、変更する必要がある場合は、事前に通知されます。
 
 >[!TIP]
 >
->フレキシブルポートエグレス IP アドレスと専用エグレス IP アドレスのどちらを選択する場合は、特定の IP アドレスが必要なければ、フレキシブルポートエグレスを選択することをお勧めします。アドビ側でフレキシブルポートエグレストラフィックのパフォーマンスを最適化できるからです。
+>フレキシブルポートエグレス IP アドレスと専用エグレス IP アドレスのどちらを使用するか決定する場合、特定の IP アドレスが必要なければ、フレキシブルポートエグレスを選択することをお勧めします。フレキシブルポートエグレスはアドビ側でフレキシブルポートエグレストラフィックのパフォーマンスを最適化できるからです。
 
 >[!NOTE]
 >
->2021.09.30より前（2021 年 9 月リリースより前）に、専用のエグレス IP がプロビジョニングされていた場合、専用のエグレス IP 機能は HTTP ポートと HTTPS ポートのみをサポートします。
+>2021年9月30日（PT）以前（つまり、2021年9月リリースより前）に専用エグレス IP がプロビジョニングされていた場合、専用エグレス IP 機能は HTTP ポートと HTTPS ポートのみをサポートします。
 >
 >これには、HTTP/1.1 と HTTP/2（暗号化時）が含まれます。また、1 つの専用の出力エンドポイントは、それぞれポート 80／443 の HTTP／HTTPS 経由でのみ任意のターゲットと通信できます。
 
 >[!NOTE]
 >
->作成後は、専用の出力 IP アドレスインフラストラクチャタイプは編集できません。 設定値を変更する唯一の方法は、設定値を削除して再作成することです。
+>専用のエングレス IP アドレスインフラストラクチャタイプは、作成後に編集することはできません。設定値を変更する唯一の方法は、設定値を削除して再作成することです。
 
 >[!INFO]
 >
@@ -242,37 +242,37 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面で、プログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;画面で、プログラムを選択します。
 
-1. 次から： **プログラムの概要** ページで、 **環境** 「 」タブで「 」を選択します。 **ネットワークインフラストラクチャ** をクリックします。
+1. **プログラム概要**&#x200B;ページから、「**環境**」タブに移動し、左側のパネルの「**ネットワークインフラストラクチャ**」を選択します。
 
-   ![ネットワークインフラストラクチャの追加](assets/advanced-networking-ui-network-infrastructure.png)
+   ![ネットワークインフラストラクチャを追加](assets/advanced-networking-ui-network-infrastructure.png)
 
-1. Adobe Analytics の **ネットワークインフラストラクチャの追加** ウィザードを開始し、「 」を選択します。 **出力専用 IP アドレス** また、 **地域** ドロップダウンメニューでタップまたはクリック **続行**.
+1. 開始される&#x200B;**ネットワークインフラストラクチャを追加**&#x200B;ウィザードで、「**専用のエングレス IP アドレス**」およびそれを作成する地域を&#x200B;**地域**&#x200B;ドロップダウンメニューから選択し、「**続行**」をタップまたはクリックします。
 
-   ![出力専用 IP アドレスの設定](assets/advanced-networking-ui-dedicated-egress.png)
+   ![専用エグレス IP アドレスの設定](assets/advanced-networking-ui-dedicated-egress.png)
 
-1. The **確認** 「 」タブに、選択内容と次の手順の概要が表示されます。 タップまたはクリック **保存** インフラストラクチャを作成する。
+1. 「**確認**」タブには、選択内容と次の手順がまとめられています。「**保存**」をタップまたはクリックして、インフラストラクチャを作成します。
 
-   ![フレキシブルポートエグレスの設定の確認](assets/advanced-networking-ui-dedicated-egress-confirmation.png)
+   ![フレキシブルポートエグレス設定の確認](assets/advanced-networking-ui-dedicated-egress-confirmation.png)
 
-新しいレコードが **ネットワークインフラストラクチャ** サイドパネルの見出し（インフラストラクチャのタイプ、ステータス、地域、有効にされた環境の詳細を含む）。
+サイドパネルの&#x200B;**ネットワークインフラストラクチャ**&#x200B;見出しの下に、インフラストラクチャの種類、ステータス、地域、有効になっている環境の詳細を含む新しいレコードが表示されます。
 
-![ネットワークインフラストラクチャの新しいエントリ](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
+![ネットワークインフラストラクチャの下の新しいエントリ](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
 >[!NOTE]
 >
->柔軟なポートエグレス用のインフラストラクチャの作成には、環境レベルで構成できるようになるまで、最大 1 時間かかる場合があります。
+>フレキシブルポートエグレス用のインフラストラクチャの作成には最大 1 時間かかる場合があり、その後、環境レベルで設定できるようになります。
 
 ### API 設定 {#configuring-dedicated-egress-provision-api}
 
-プログラムごとに 1 回、POST `/program/<programId>/networkInfrastructures` エンドポイントが呼び出され、`kind` パラメーターの `dedicatedEgressIp` の値とリージョンが渡されます。エンドポイントは、 `network_id`、およびステータスを含むその他の情報。
+プログラムごとに 1 回、POST `/program/<programId>/networkInfrastructures` エンドポイントが呼び出され、`kind` パラメーターの `dedicatedEgressIp` の値と地域が渡されます。エンドポイントは、応答として `network_id` の他に、ステータスなどの他の情報も返します。
 
-呼び出しの後、ネットワークインフラストラクチャがプロビジョニングされるまで、通常は 15 分ほどかかります。Cloud Manager の [ネットワークインフラストラクチャGETエンドポイント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 次のステータスを示す **準備完了**.
+呼び出しの後、ネットワークインフラストラクチャがプロビジョニングされるまで、通常は 15 分ほどかかります。Cloud Manager の[ネットワークインフラストラクチャ GET エンドポイント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure)の呼び出しで「**準備完了**」のステータスが表示されます。
 
 >[!TIP]
 >
->パラメーターの完全なセット、正確な構文、および後で変更できないパラメーターなどの重要な情報。 [は API ドキュメントで参照できます。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+>パラメーターの完全なセット、正確な構文および後で変更できないパラメーターなどの重要な情報は、[API ドキュメントで参照できます。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 ### トラフィックルーティング {#dedicated-egress-ip-traffic-routing}
 
@@ -398,9 +398,9 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ## 仮想プライベートネットワーク（VPN） {#vpn}
 
-VPN を使用すると、オーサーインスタンス、パブリッシュインスタンス、プレビューインスタンスからオンプレミスのインフラストラクチャまたはデータセンターに接続できます。 これは、例えば、データベースへの安全なアクセスに役立ちます。 また、VPN をサポートする CRM ベンダーや、企業ネットワークからAEMas a Cloud Serviceの作成者、プレビュー、パブリッシュインスタンスに接続する CRM ベンダーなど、SaaS ベンダーへの接続も可能です。
+VPN を使用すると、作成者、公開、またはプレビューインスタンスからオンプレミスインフラストラクチャまたはデータセンターに接続できます。これは、データベースへのアクセスを保護する場合などに役立ちます。また、VPN をサポートしている CRM ベンダーなどの SaaS ベンダーへの接続や、企業ネットワークから AEM as a Cloud Service のオーサー、プレビューまたはパブリッシュインスタンスへの接続も可能になります。
 
-IPSec 技術を搭載したほとんどの VPN デバイスがサポートされています。詳しくは、 **RouteBased 設定手順** 列 [このデバイスのリスト。](https://docs.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) 表の説明に従って、デバイスを設定します。
+IPSec 技術を搭載したほとんどの VPN デバイスがサポートされています。[このデバイスのリストの **RouteBase の設定手順**&#x200B;の列にある情報を参照してください。](https://docs.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) 表の説明に従って、デバイスを設定します。
 
 >[!NOTE]
 >
@@ -408,65 +408,65 @@ IPSec 技術を搭載したほとんどの VPN デバイスがサポートされ
 >
 >* サポートは 1 つの VPN 接続に制限されています。
 >* Splunk 転送機能は VPN 接続では使用できません。
->* プライベートホスト名を解決するには、DNS リゾルバをゲートウェイアドレス空間にリストする必要があります。
+>* プライベートホスト名を解決するには、DNS リゾルバーをゲートウェイアドレス空間にリストする必要があります。
 
 ### UI 設定 {#configuring-vpn-ui}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面で、プログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;画面で、プログラムを選択します。
 
-1. 次から： **プログラムの概要** ページで、 **環境** 「 」タブで「 」を選択します。 **ネットワークインフラストラクチャ** をクリックします。
+1. **プログラム概要**&#x200B;ページから、「**環境**」タブに移動し、左側のパネルの「**ネットワークインフラストラクチャ**」を選択します。
 
-   ![ネットワークインフラストラクチャの追加](assets/advanced-networking-ui-network-infrastructure.png)
+   ![ネットワークインフラストラクチャを追加](assets/advanced-networking-ui-network-infrastructure.png)
 
-1. Adobe Analytics の **ネットワークインフラストラクチャの追加** ウィザードを開始し、「 」を選択します。 **仮想プライベートネットワーク** をタップまたはクリックする前に、必要な情報を入力します。 **続行**.
+1. 開始される&#x200B;**ネットワークインフラストラクチャを追加**&#x200B;ウィザードで、「**仮想プライベートネットワーク**」を選択し、必要な情報を入力してから、「**続行**」をタップまたはクリックします。
 
-   * **地域**  — インフラストラクチャを作成する必要がある地域です。
-   * **アドレス空間**  — アドレス空間は、顧客空間の IP 範囲の 1/26 CIDR（64 IP アドレス）以上にする必要があります。
-      * この値は後から変更できません。
-   * **DNS 情報**  — これはリモート DNS リゾルバのリストです。
-      * 押す `Enter` DNS サーバーアドレスを入力して別のアドレスを追加した後。
-      * をタップまたはクリックします。 `X` 削除するアドレスの後に。
-   * **共有キー**  — これは VPN の事前共有キーです。
-      * 選択 **共有キーを表示** をクリックして、値を再確認するためのキーを表示します。
+   * **地域** - これはインフラストラクチャを作成する必要がある地域です。
+   * **アドレス空間**  — アドレス空間は、1 /26 CIDR（64 IP アドレス）または独自のスペース内のより大きな IP 範囲のみです。
+      * この値を後で変更することはできません。
+   * **DNS情報** - これはリモート DNS リゾルバーのリストです。
+      * DNS サーバーのアドレスを入力した後、`Enter` を押して別のアドレスを追加します。
+      * アドレスの後の `X` をタップまたはクリックして削除します。
+   * **共有キー** - これは VPN 事前共有キーです。
+      * 「**共有キーを表示**」を を選択してキーを表示し、その値を再確認します。
 
-   ![vpn の設定](assets/advanced-networking-ui-vpn.png)
+   ![VPN の設定](assets/advanced-networking-ui-vpn.png)
 
-1. 次の日： **接続** ウィザードの「 」タブで、 **接続名** VPN 接続を識別するには、をタップまたはクリックします。 **接続を追加**.
+1. ウィザードの「**接続**」タブで、VPN 接続を特定するための「**接続名**」を入力し、「**接続を追加**」をタップまたはクリックします。
 
    ![接続を追加](assets/advanced-networking-ui-vpn-add-connection.png)
 
-1. Adobe Analytics の **接続を追加** ダイアログで、VPN 接続を定義し、をタップまたはクリックします。 **保存**.
+1. **接続を追加**&#x200B;ダイアログで、VPN 接続を定義し、「**保存**」をタップまたはクリックします。
 
-   * **接続名**  — これは、前の手順で指定した VPN 接続のわかりやすい名前で、ここで更新できます。
-   * **住所**  — これは VPN デバイスの IP アドレスです。
+   * **接続名** - 前の手順で指定した VPN 接続のわかりやすい名前です。ここで更新できます。
+   * **アドレス** - VPN デバイスの IP アドレスです。
    * **アドレス空間** - VPN 経由でルーティングする IP アドレス範囲です。
-      * 押す `Enter` 範囲を入力して別の範囲を追加した後。
-      * をタップまたはクリックします。 `X` 範囲の後に削除します。
-   * **IP セキュリティポリシー**  — 必要に応じてデフォルト値から調整
+      * 範囲を入力した後、`Enter` を押して別の範囲を追加します。
+      * 範囲の後の `X` をタップまたはクリックして削除します。
+   * **IP セキュリティポリシー** - 必要に応じてデフォルト値から調整します
 
    ![VPN 接続の追加](assets/advanced-networking-ui-vpn-adding-connection.png)
 
-1. ダイアログが閉じ、 **接続** 」タブをクリックします。 「**続行**」をタップまたはクリックします。
+1. ダイアログが閉じて、ウィザードの「**接続**」タブに戻ります。「**続行**」をタップまたはクリックします。
 
-   ![VPN 接続が追加されます](assets/advanced-networking-ui-vpn-connection-added.png)
+   ![VPN 接続が追加されました](assets/advanced-networking-ui-vpn-connection-added.png)
 
-1. The **確認** 「 」タブに、選択内容と次の手順の概要が表示されます。 タップまたはクリック **保存** インフラストラクチャを作成する。
+1. 「**確認**」タブには、選択内容と次の手順がまとめられています。「**保存**」をタップまたはクリックして、インフラストラクチャを作成します。
 
-   ![フレキシブルポートエグレスの設定の確認](assets/advanced-networking-ui-vpn-confirm.png)
+   ![フレキシブルポートエグレス設定の確認](assets/advanced-networking-ui-vpn-confirm.png)
 
-新しいレコードが **ネットワークインフラストラクチャ** サイドパネルの見出し（インフラストラクチャのタイプ、ステータス、地域、有効にされた環境の詳細を含む）。
+サイドパネルの&#x200B;**ネットワークインフラストラクチャ**&#x200B;見出しに、インフラストラクチャのタイプ、ステータス、地域、有効になっている環境の詳細を含む新しいレコードが表示されます。
 
 ### API 設定 {#configuring-vpn-api}
 
-プログラムごとに 1 回、POST `/program/<programId>/networkInfrastructures` エンドポイントが呼び出され、次の値を含む設定情報のペイロードを渡します。 **vpn** （の） `kind` パラメーター、地域、アドレス空間（CIDR のリスト — 後で変更することはできません）、DNS リゾルバー（顧客のネットワーク内の名前を解決するため）、VPN 接続情報（ゲートウェイ設定、共有 VPN キー、IP セキュリティポリシーなど）。 エンドポイントは、 `network_id`、およびステータスを含むその他の情報。
+プログラムごとに 1 回、POST `/program/<programId>/networkInfrastructures` エンドポイントが呼び出され、次の値を含む設定情報のペイロードを渡します。 **vpn** （の） `kind` パラメーター、地域、アドレス空間（CIDR のリスト — 後で変更することはできません）、DNS リゾルバー（ネットワーク内の名前を解決するため）、VPN 接続情報（ゲートウェイ設定、共有 VPN キー、IP セキュリティポリシーなど）。 エンドポイントは、応答として `network_id` の他に、ステータスなどの他の情報も返します。
 
 この呼び出しの後、ネットワークインフラストラクチャがプロビジョニングされるまで、通常は 45～60 分かかります。API の GET メソッドを呼び出して、現在のステータスを返すことができます。このステータスは、最終的に `creating` から `ready` に変わります。すべてのステータスについては、 API ドキュメントを参照してください。
 
 >[!TIP]
 >
->パラメーターの完全なセット、正確な構文、および後で変更できないパラメーターなどの重要な情報。 [は API ドキュメントで参照できます。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+>パラメーターの完全なセットと正確な構文および後で変更できないパラメーターなどの重要な情報は、[API ドキュメントで参照できます。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 ### トラフィックルーティング {#vpn-traffic-routing}
 
@@ -580,12 +580,12 @@ IPSec 技術を搭載したほとんどの VPN デバイスがサポートされ
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
     <td>該当なし</td>
-    <td>AEM 側の VPN ゲートウェイの IP。顧客のネットワークエンジニアリングチームでは、これを使用して、特定の IP アドレスから VPN ゲートウェイへの VPN 接続のみを許可することができます。 </td>
+    <td>AEM 側の VPN ゲートウェイの IP。ネットワークエンジニアリングチームは、この機能を使用して、特定の IP アドレスから VPN ゲートウェイへの VPN 接続のみを許可できます。 </td>
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}.inner.adobeaemcloud.net</code></td>
-    <td>VPN の AEM 側から顧客側に送信されるトラフィックの IP。これを顧客の設定で許可リストに登録して、AEM からのみ接続できるようにすることが可能です。</td>
-    <td>AEM への VPN アクセスを許可する場合は、CNAME DNS エントリを設定して、これにカスタムドメインや <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> や <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> をマッピングする必要があります。</td>
+    <td>VPN のAEM側からサイドに送られるトラフィックの IP。 これを設定に許可リストに加えるして、接続をAEMからのみ行えるようにすることができます。</td>
+    <td>AEMへの VPN アクセスを許可する場合は、カスタムドメインをマッピングするように CNAME DNS エントリを設定する必要があります。 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> および/または <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> をこの値に設定します。</td>
   </tr>
 </tbody>
 </table>
@@ -596,7 +596,7 @@ AEM への VPN アクセスのみを許可する場合は、`p{PROGRAM_ID}.exter
 
 パスベースのルールにする必要がある場合は、標準の http ディレクティブを Dispatcher レベルで使用して、特定の IP を拒否または許可します。リクエストが常にオリジンに到達するように、目的のパスを CDN でキャッシュできないようにする必要もあります。
 
-#### Httpd 設定の例 {#httpd-example}
+#### httpd 設定の例 {#httpd-example}
 
 ```
 Order deny,allow
@@ -605,155 +605,155 @@ Allow from 192.168.0.1
 Header always set Cache-Control private
 ```
 
-## 環境での高度なネットワーク構成の有効化 {#enabling}
+## 環境での高度なネットワーク設定の有効化 {#enabling}
 
-プログラムの高度なネットワークオプションを設定したら、 [柔軟なポートエグレス](#flexible-port-egress) [出力専用 IP アドレス](#dedicated-egress-ip-address) または [VPN](#vpn) 使用するには、環境レベルで有効にする必要があります。
+プログラムの高度なネットワークオプションを設定したら、[フレキシブルポートエグレス](#flexible-port-egress)、[専用エグレス IP アドレス](#dedicated-egress-ip-address)または [VPN](#vpn) を使用するには、環境レベルで有効にする必要があります。
 
-環境の高度なネットワーク設定を有効にすると、オプションのポート転送と非プロキシホストを有効にできます。 柔軟性を持たせるために、パラメーターは環境ごとに設定できます。
+環境の高度なネットワーク設定を有効にすると、オプションのポート転送と非プロキシホストを有効にすることができます。柔軟性を持たせるために、パラメーターは環境ごとに設定できます。
 
-* **ポート転送**  — ポート転送規則は、80/443以外の宛先ポートに対して宣言する必要がありますが、http または https プロトコルを使用しない場合にのみ宣言します。
-   * ポート転送規則は、宛先ホスト（名前または IP、ポート）のセットを指定することで定義されます。
-   * HTTP/HTTPS 経由のポート80/443を使用するクライアント接続では、接続でプロキシ設定を使用して、高度なネットワークのプロパティを接続に適用する必要があります。
-   * 宛先ホストごとに、宛先ポートを 30000～30999 のポートにマッピングする必要があります。
-   * ポート転送規則は、すべての高度なネットワークタイプで使用できます。
+* **ポート転送** - ポート転送ルールは、http または https プロトコルを使用しない場合に限り、80／443 以外の宛先ポートに対して宣言する必要があります。
+   * ポート転送規則は、宛先ホスト（名前または IP とポート）のセットを指定することで定義されます。
+   * http／https 経由のポート80／443を使用するクライアント接続でも、接続でプロキシ設定を使用して、高度なネットワークのプロパティを接続に適用する必要があります。
+   * 各宛先ホストに対して、目的の宛先ポートを30000 ～ 30999のポートにマッピングする必要があります。
+   * ポート転送ルールは、すべての高度なネットワークタイプで使用できます。
 
-* **非プロキシホスト**  — 非プロキシホストでは、専用 IP ではなく、共有 IP アドレス範囲を経由してルーティングするホストのセットを宣言できます。
-   * 共有 IP を介したトラフィックのエグレス化をさらに最適化できるので、これは便利です。
-   * 非プロキシホストは、専用の出力 IP アドレスと VPN の詳細ネットワークタイプに対してのみ使用できます。
+* **非プロキシホスト** - 非プロキシホストを使用すると、専用 IP ではなく共有 IP アドレス範囲を通じてルーティングするホストのセットを宣言できます。
+   * 共有 IP を介して送信されたトラフィックが最適化される場合に役立ちます。
+   * 非プロキシホストは、専用エグレス IP アドレスおよび VPN の高度なネットワークタイプでのみ使用できます。
 
 >[!NOTE]
 >
->環境が **更新中** ステータス。
+>環境が&#x200B;**更新中**&#x200B;ステータスにある場合、環境の高度なネットワーク設定を有効にすることはできません。
 
-### UI の使用の有効化 {#enabling-ui}
+### UI を使用した有効化 {#enabling-ui}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面で、プログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;画面でプログラムを選択します。
 
-1. 次から： **プログラムの概要** ページで、 **環境** 」タブをクリックし、「 **環境** 見出しを左側のパネルに表示します。 次に、 **高度なネットワーク設定** 選択した環境の「 」タブをタップまたはクリックし、 **ネットワークインフラストラクチャの有効化**.
+1. **プログラムの概要**&#x200B;ページから「**環境**」タブに移動し、左側のパネルの&#x200B;**環境**&#x200B;見出しで高度なネットワーク設定を有効にする環境を選択します。次に、選択した環境の「**高度なネットワーク設定**」タブを選択し、「**ネットワークインフラストラクチャを有効にする**」をタップまたはクリックします。
 
-   ![高度なネットワークを有効にする環境を選択しています](assets/advanced-networking-ui-enable-environments.png)
+   ![高度なネットワーク機能を有効にする環境の選択](assets/advanced-networking-ui-enable-environments.png)
 
-1. The **高度なネットワークの構成** ダイアログが開きます。
+1. **高度なネットワーク機能を設定**&#x200B;ダイアログが開きます。
 
-1. 次の日： **非プロキシホスト** 専用の出力 IP アドレスと VPN に対して、オプションでホストのセットを定義できます。このホストは、専用 IP ではなく、共有 IP アドレスの範囲を通じてルーティングされる必要があります。 **非プロキシホスト** フィールドとタップまたはクリック **追加**.
+1. 「**非プロキシホスト**」タブで、専用エグレス IP アドレスと VPN の場合、オプションで、「**非プロキシホスト**」フィールドにホスト名を入力し、「**追加**」をタップまたはクリックすることで、専用 IP ではなく共有 IP アドレス範囲を通じてルーティングされるホストのセットを定義できます。
 
-   * ホストが「 」タブのホストのリストに追加されます。
+   * ホストがタブ上のホストのリストに追加されます。
    * 複数のホストを追加するには、この手順を繰り返します。
-   * ホストを削除するには、行の右側の「 X 」をタップまたはクリックします。
-   * このタブは、柔軟なポートエグレス設定には使用できません。
+   * ホストを削除するには、行の右側にある「X」をタップまたはクリックします。
+   * このタブは、フレキシブルポートエグレス設定では使用できません。
 
    ![非プロキシホストの追加](assets/advanced-networking-ui-enable-non-proxy-hosts.png)
 
-1. 次の日： **ポート転送数** 「 」タブでは、HTTP または HTTPS を使用しない場合、80/443以外の任意の宛先ポートに対してポート転送規則を任意で定義できます。 次を提供： **名前**, **ポートオリグ**、および **ポートの宛先** をタップまたはクリックします。 **追加**.
+1. 次の日： **ポート転送数** 「 」タブでは、HTTP または HTTPS を使用しない場合は、80/443以外の任意の宛先ポートに対してポート転送規則を任意で定義できます。 **名前**、**送信元ポート**、**宛先ポート**&#x200B;を入力し、「**追加**」をタップまたはクリックします。
 
-   * ルールが「 」タブのルールのリストに追加されます。
+   * ルールがタブ上のルールのリストに追加されます。
    * 複数のルールを追加するには、この手順を繰り返します。
-   * ルールを削除するには、行の右側にある X をタップまたはクリックします。
+   * ルールを削除するには、行の右側にある「X」をタップまたはクリックします。
 
    ![オプションのポート転送の定義](assets/advanced-networking-ui-port-forwards.png)
 
-1. タップまたはクリック **保存** 環境に設定を適用するためのダイアログ。
+1. ダイアログで「**保存**」をタップまたはクリックして、設定を環境に適用します。
 
-詳細なネットワーク構成が、選択した環境に適用されます。 次に戻る **環境** 「 」タブには、選択した環境に適用された設定とそのステータスの詳細が表示されます。
+高度なネットワーク構成が、選択した環境に適用されます。「**環境**」タブに戻ると、選択した環境に適用された設定の詳細とステータスが表示されます。
 
-![高度なネットワークで構成された環境](assets/advanced-networking-ui-configured-environment.png)
+![高度なネットワーク機能で設定された環境](assets/advanced-networking-ui-configured-environment.png)
 
-### API の使用を有効にする {#enabling-api}
+### API を使用した有効化 {#enabling-api}
 
-環境の高度なネットワーク構成を有効にするには、 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントは、環境ごとに呼び出す必要があります。
+環境の高度なネットワーク設定を有効にするには、環境ごとに `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントを呼び出す必要があります。
 
 API が数秒以内に応答して「`updating`」のステータスを返し、約 10 分後に、Cloud Manager の環境 GET エンドポイントの呼び出しで「`ready`」のステータスが返されます。これは、環境のアップデートが適用されたことを示します。
 
-環境ごとにポート転送ルールを更新するには、 `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` エンドポイントに含まれ、サブセットではなく設定パラメーターの完全なセットが含まれます。
+環境ごとのポート転送ルールは、`PUT /program/{programId}/environment/{environmentId}/advancedNetworking` エンドポイントを呼び出し、設定パラメーターのサブセットではなく完全なセットを含めることによって更新できます。
 
-専用の出力 IP アドレスと VPN の高度なネットワークタイプは、 `nonProxyHosts` パラメーター。 これにより、専用 IP ではなく共有 IP アドレス範囲を経由してルーティングするホストのセットを宣言できます。 `nonProxyHost` URL は `example.com` または `*.example.com` のパターンに従う場合があります（このパターンでは、ワイルドカードはドメインの先頭でのみ使用できます）。
+専用エグレス IP アドレスと VPN の高度なネットワークタイプは、`nonProxyHosts` パラメーターをサポートします。これにより、専用 IP ではなく共有 IP アドレス範囲を通じてルーティングするホストのセットを宣言できます。`nonProxyHost` URL は `example.com` または `*.example.com` のパターンに従う場合があります（このパターンでは、ワイルドカードはドメインの先頭でのみ使用できます）。
 
 環境のトラフィックルーティングルール（ホストまたはバイパス）がない場合でも、空のペイロードを渡して `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` を呼び出す必要があります。
 
 >[!TIP]
 >
->パラメーターの完全なセット、正確な構文、および後で変更できないパラメーターなどの重要な情報。 [は API ドキュメントで参照できます。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+>パラメーターの完全なセットと正確な構文および後で変更できないパラメーターなどの重要な情報は、[API ドキュメントで参照できます。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
-## 環境での高度なネットワーク構成の編集と削除 {#editing-deleting-environments}
+## 環境での高度なネットワーク設定の編集と削除 {#editing-deleting-environments}
 
-後 [環境に対する高度なネットワーク設定の有効化](#enabling) これらの設定の詳細を更新したり、削除したりできます。
+[環境に対して高度なネットワーク設定を有効](#enabling)にした後、設定の詳細を更新または削除できます。
 
 >[!NOTE]
 >
->ステータスが「 」の場合、ネットワークインフラストラクチャは編集できません **作成中**, **更新中**&#x200B;または **削除中**.
+>ネットワークインフラストラクチャのステータスが&#x200B;**作成中**、**更新中**&#x200B;または&#x200B;**削除中**&#x200B;の場合は編集できません。
 
 ### UI を使用した編集または削除 {#editing-ui}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面で、プログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;画面でプログラムを選択します。
 
-1. 次から： **プログラムの概要** ページで、 **環境** 」タブをクリックし、「 **環境** 見出しを左側のパネルに表示します。 次に、 **高度なネットワーク設定** 選択した環境の「 」タブに移動し、省略記号ボタンをタップまたはクリックします。
+1. **プログラムの概要**&#x200B;ページから「**環境**」タブに移動し、左側のパネルの&#x200B;**環境**&#x200B;見出しの下から、高度なネットワーク設定を有効にする環境を選択します。次に、選択した環境の「**高度なネットワーク設定**」タブを選択し、省略記号（...）ボタンをタップまたはクリックします。
 
-   ![プログラムレベルでの高度なネットワークの編集または削除の選択](assets/advanced-networking-ui-edit-delete.png)
+   ![プログラムレベルでの高度なネットワーク機能の編集または削除の選択](assets/advanced-networking-ui-edit-delete.png)
 
-1. 省略記号メニューで、 **編集** または **削除**.
+1. 省略記号（...）メニューで「**編集**」または「**削除**」を選択します。
 
-   * 次を選択した場合： **編集**&#x200B;で、前の節で説明した手順に従って情報を更新します。 [UI の使用の有効化，](#enabling-ui) をタップまたはクリックします。 **保存**.
-   * 次を選択した場合： **削除**」をクリックし、 **ネットワーク設定を削除** ～との対話 **削除** または中止 **キャンセル**.
+   * 「**編集**」を選択した場合は、前の [UI を使用した有効化](#enabling-ui)の節で説明した手順に従って情報を更新し、「**保存**」をタップまたはクリックします。
+   * 「**削除**」を選択した場合は、**ネットワーク設定を削除**&#x200B;ダイアログで「**削除**」を選択して削除を確認するか、「**キャンセル**」を選択して中止します。
 
-変更は、 **環境** タブをクリックします。
+変更は「**環境**」タブに反映されます。
 
 ### API を使用した編集または削除 {#editing-api}
 
-特定の環境の高度なネットワークを削除するには、を呼び出します。 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+特定の環境で高度なネットワーク機能を削除するには、`DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()` を呼び出します。
 
 >[!TIP]
 >
->パラメーターの完全なセット、正確な構文、および後で変更できないパラメーターなどの重要な情報。 [は API ドキュメントで参照できます。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+>パラメーターの完全なセットと正確な構文および後で変更できないパラメーターなどの重要な情報は、[API ドキュメントで参照できます。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
-## プログラムのネットワークインフラストラクチャの編集と削除 {#editing-deleting-program}
+## プログラムのネットワークインフラストラクチャの編集および削除 {#editing-deleting-program}
 
-プログラムに対してネットワークインフラストラクチャを作成した後は、限られたプロパティのみを編集できます。 不要になった場合は、プログラム全体の高度なネットワークインフラストラクチャを削除できます。
+プログラムのネットワークインフラストラクチャを作成すると、編集できるプロパティは制限されます。必要がなくなった場合は、プログラム全体の高度なネットワークインフラストラクチャを削除できます。
 
 >[!NOTE]
 >
->ネットワークインフラストラクチャの編集と削除に関する次の制限事項に注意してください。
+>ネットワークインフラストラクチャの編集および削除には次の制限があります。
 >
 >* 削除では、すべての環境の高度なネットワークが無効になっている場合にのみ、インフラストラクチャが削除されます。
->* ステータスが「 」の場合、ネットワークインフラストラクチャは編集できません **作成中**, **更新中**&#x200B;または **削除中**.
->* 作成後は、VPN の高度なネットワークインフラストラクチャタイプのみを編集でき、その後は限られたフィールドのみを編集できます。
->* セキュリティ上の理由から、 **共有キー** キー自体を編集していない場合でも、VPN の高度なネットワークインフラストラクチャを編集する際には、必ず指定する必要があります。
+>* ネットワークインフラストラクチャのステータスが&#x200B;**作成中**、**更新中**&#x200B;または&#x200B;**削除中**&#x200B;の場合は編集できません。
+>* 作成後に編集できるのは、VPN の高度なネットワークインフラストラクチャタイプのみであり、その後は制限されたフィールドのみ編集できます。
+>* セキュリティ上の理由から、VPN の高度なネットワークインフラストラクチャを編集する際は、キー自体を編集していない場合でも、常に&#x200B;**共有キー**&#x200B;を指定する必要があります。
 
 ### UI を使用した編集と削除 {#delete-ui}
 
-1. Cloud Manager( ) にログインします。 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 適切な組織を選択します。
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面で、プログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;画面でプログラムを選択します。
 
-1. 次から： **プログラムの概要** ページで、 **環境** 「 」タブで「 」を選択します。 **ネットワークインフラストラクチャ** 見出しを左側のパネルに表示します。 次に、削除するインフラストラクチャの横にある省略記号ボタンをタップまたはクリックします。
+1. **プログラムの概要**&#x200B;ページから「**環境**」タブに移動し、左側のパネルの「**ネットワークインフラストラクチャ**」見出しを選択します。次に、削除するインフラストラクチャの横にある省略記号ボタンをタップまたはクリックします。
 
-   ![プログラムレベルでの高度なネットワークの編集または削除の選択](assets/advanced-networking-ui-delete-infrastructure.png)
+   ![プログラムレベルでの高度なネットワーク機能の編集または削除の選択](assets/advanced-networking-ui-delete-infrastructure.png)
 
-1. 省略記号メニューで、 **編集** または **削除**.
+1. 省略記号メニューで「**編集**」または「**削除**」を選択します。
 
-1. 次を選択した場合： **編集**、 **ネットワークインフラストラクチャの編集** ウィザードが開きます。 必要に応じて、インフラストラクチャを作成する際に説明した手順に従って編集します。
+1. 「**編集**」を選択すると、**ネットワークインフラストラクチャを編集**&#x200B;ウィザードが開きます。インフラストラクチャの作成時に説明した手順に従って、必要に応じて編集します。
 
-1. 次を選択した場合： **削除**」をクリックし、 **ネットワーク設定を削除** ～との対話 **削除** または中止 **キャンセル**.
+1. 「**削除**」を選択した場合は、**ネットワーク設定を削除**&#x200B;ダイアログで「**削除**」を選択して削除を確認するか、「**キャンセル**」を選択して中止します。
 
-変更は、 **環境** タブをクリックします。
+変更は「**環境**」タブに反映されます。
 
 ### API を使用した編集と削除 {#delete-api}
 
-プログラムのネットワークインフラストラクチャを&#x200B;**削除**&#x200B;するには、`DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`.を呼び出します。
+プログラムのネットワークインフラストラクチャを&#x200B;**削除**&#x200B;するには、`DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}` を呼び出します。
 
 ## プログラムの高度なネットワークインフラストラクチャタイプの変更 {#changing-program}
 
-プログラムに対して一度に 1 種類の高度なネットワークインフラストラクチャを設定できるのは、フレキシブルポートエグレス、専用エグレス IP アドレス、VPN のいずれかのみです。
+プログラムに対して一度に設定できる高度なネットワークインフラストラクチャは、フレキシブルポートエグレス、専用エグレス IP アドレスまたは VPN のいずれか 1 つのタイプのみです。
 
-既に構成したものとは異なる、別の高度なネットワークインフラストラクチャタイプが必要と判断した場合は、既存のインフラストラクチャを削除し、新しく作成する必要があります。 次の手順に従います。
+既に設定したネットワークインフラストラクチャタイプとは別の高度なネットワークインフラストラクチャタイプが必要な場合は、既存のネットワークインフラストラクチャタイプを削除して、新しいネットワークインフラストラクチャタイプを作成する必要があります。次の手順に従います。
 
-1. [すべての環境で高度なネットワークを削除します。](#editing-deleting-environments)
+1. [すべての環境で高度なネットワーク機能を削除します。](#editing-deleting-environments)
 1. [高度なネットワークインフラストラクチャを削除します。](#editing-deleting-program)
-1. 必要な高度なネットワークインフラストラクチャタイプを作成します。 [柔軟なポートエグレス](#flexible-port-egress) [出力専用 IP アドレス](#dedicated-egress-ip-address) または [VPN。](#vpn)
-1. [環境レベルで高度なネットワークを再度有効にします。](#enabling)
+1. 現在必要な、高度なネットワークインフラストラクチャタイプ（[フレキシブルポートエグレス](#flexible-port-egress)、[専用エグレス IP アドレス](#dedicated-egress-ip-address)または [VPN](#vpn)）を作成します。
+1. [環境レベルで高度なネットワーク機能を再度有効にします。](#enabling)
 
 >[!WARNING]
 >
