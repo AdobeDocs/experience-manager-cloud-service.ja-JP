@@ -1,43 +1,43 @@
 ---
-title: ダイナトレース
-description: AEM as a Cloud ServiceでDynatraceを使用する方法を学ぶ
+title: Dynatrace
+description: Dynatrace を AEM as a Cloud Service で使用する方法を説明します。
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 source-git-commit: 4fe8ed9c3f7b6589878da3317d15fede819bad54
 workflow-type: tm+mt
 source-wordcount: '589'
-ht-degree: 0%
+ht-degree: 73%
 
 ---
 
-# ダイナトレース {#dynatrace}
+# Dynatrace {#dynatrace}
 
-Adobeでは、Dynatraceを使用して、エンタープライズデプロイメントの一環としてAEM as a Cloud Serviceを監視し、潜在的な問題の原因を特定し、必要に応じて修正をおこなうことができます。
+アドビは、Dynatrace を使用して、エンタープライズ展開の一環として AEM as a Cloud Service を監視し、潜在的な問題の原因を特定し、必要に応じて問題を修復するための措置を講じる機能を提供します。
 
-Dynatraceを使用すると、すべてのAEMアプリケーションをシームレスに監視できます。 Dynatraceは、AEMアプリケーションを自動的に検出し、Web サイトからコンテナ、クラウドサービスへの依存関係を視覚化することで、エンドユーザーエクスペリエンスを包括的に表示します。 あらゆる層のエンドツーエンドのトレースと Real User Monitoring が組み合わされ、AEMのコンテンツ主導のエクスペリエンスを、隙間や盲点のない次のレベルに引き上げます。 異常が発生した場合、Dynatraceは Davis AI エンジンを使用してリアルタイムに診断し、顧客が影響を受ける前に根本原因を破損したコードに突き止め、平均修復時間を最小限に抑えます。
+Dynatrace を使用すると、すべての AEM アプリケーションのシームレスな可観測性を実現できます。Dynatrace は、AEM アプリケーションを自動的に検出し、web サイトからコンテナ、クラウドサービスに至る依存関係を表示することで、エンドユーザーエクスペリエンスを包括的に可視化します。すべての層にわたるエンドツーエンドのトレースとリアルユーザーモニタリングを組み合わせることで、ギャップや盲点のない AEM コンテンツ主導のエクスペリエンスを次のレベルに引き上げます。異常が発生した場合、Dynatrace は Davis AI エンジンを使用してリアルタイムで異常を診断し、顧客が影響を受ける前に壊れたコードに至るまで根本原因を特定することで、平均修復時間を最小限に抑えます。
 
-Dynatraceについて詳しくは、 [AdobeAEM Cloud Serviceの統合](https://www.dynatrace.com/hub/detail/adobe-experience-manager-1/).
+Dynatrace について詳しくは、[Adobe AEM Cloud Service の統合](https://www.dynatrace.com/hub/detail/adobe-experience-manager-1/)を参照してください。
 
-![AEMオーサーとパブリッシャーのパフォーマンス指標](/help/implementing/cloud-manager/assets/dynatrace-performance-metrics.png)
+![AEM オーサーとパブリッシャーのパフォーマンス指標](/help/implementing/cloud-manager/assets/dynatrace-performance-metrics.png)
 
-## DynatraceとAEM as a Cloud Serviceの統合 {#integrating-dynatrace-with-aem-as-a-cloud-service}
+## Dynatrace と AEM as a Cloud Service の統合 {#integrating-dynatrace-with-aem-as-a-cloud-service}
 
-Dynatraceのお客様は、カスタマーサポートチケットを通じて接続をリクエストすることで、AEM環境を監視できます。
+Dynatrace のお客様は、カスタマーサポートチケットを通じて接続をリクエストすることで、AEM 環境を監視できます。
 
 接続要求に必要な詳細を以下に示します。
 
 | **フィールド** | **説明** |
 |---|---|
-| [!DNL Dynatrace Environment URL] | Dynatrace環境 URL。<br><br>Dynatrace SaaS のお客様の場合、形式は次のようになります。 `https://<your-environment-id>.live.dynatrace.com`.<br><br>Dynatraceが管理するお客様の場合、形式は次のようになります。 `https://<your-managed-url>/e/<environmentId>` |
-| [!DNL Dynatrace Environment ID] | Dynatrace環境 ID。 詳しくは、 [Dynatrace Connection Details を取得するにはどうすればよいですか？](#how-do-i-get-my-dynatrace-connection-details) これを手に入れる方法を |
-| [!DNL Dynatrace Environment Token] | Dynatrace環境トークン。 詳しくは、 [Dynatrace Connection Details を取得するにはどうすればよいですか？](#how-do-i-get-my-dynatrace-connection-details) これを手に入れる方法を<br><br>これは秘密と見なす必要があるので、適切なセキュリティプラクティスを使用します。 例えば、Web サイト ( 例： **zerobin.net**：カスタマーサポートチケットで参照できる、パスワードと共に。 |
-| [!DNL Dynatrace API access token] | Dynatrace環境の API アクセストークン。  詳しくは、 [Dynatrace API アクセストークンの作成](#create-dynatrace-access-token) を参照してください。<br><br>これは秘密と見なす必要があるので、適切なセキュリティプラクティスを使用します。 例えば、Web サイト ( 例： **zerobin.net**：カスタマーサポートチケットで参照できる、パスワードと共に。<br><br>注意：これは、Dynatrace Managed でのみ必要です。 |
-| [!DNL Dynatrace ActiveGate Port] | AEM統合の接続先となるDynatrace ActiveGate ポート。<br><br>注意：これは、Dynatrace Managed でのみ必要です。 |
-| [!DNL Dynatrace ActiveGate Network Zone] | お使いの [Dynatrace ActiveGate ネットワークゾーン](https://docs.dynatrace.com/docs/manage/network-zones) データセンターとネットワーク地域をまたいでAEM監視データを効率的にルーティングする。<br><br>注意： Dynatrace ActiveGate ネットワークゾーンはオプションです。 |
-| [!DNL AEM Environment ID(s)] | Dynatraceが監視するAEM環境 ID。 |
+| [!DNL Dynatrace Environment URL] | Dynatrace 環境の URL。<br><br>Dynatrace SaaS のお客様の場合、形式は `https://<your-environment-id>.live.dynatrace.com` です。<br><br>Dynatrace Managed のお客様の場合、形式は `https://<your-managed-url>/e/<environmentId>` です。 |
+| [!DNL Dynatrace Environment ID] | Dynatrace 環境 ID。詳しくは、 [Dynatrace Connection Details を取得するにはどうすればよいですか？](#how-do-i-get-my-dynatrace-connection-details) これを手に入れる方法を |
+| [!DNL Dynatrace Environment Token] | Dynatrace 環境トークン。詳しくは、 [Dynatrace Connection Details を取得するにはどうすればよいですか？](#how-do-i-get-my-dynatrace-connection-details) これを手に入れる方法を<br><br>これはシークレットと見なす必要があるので、適切なセキュリティプラクティスを使用してください。例えば、**zerobin.net** などの web サイトでパスワードで保護します。カスタマーサポートチケットはパスワードとともに参照できます。 |
+| [!DNL Dynatrace API access token] | Dynatrace 環境の API アクセストークン。これを作成する方法について詳しくは、[Dynatrace API アクセストークンを作成](#create-dynatrace-access-token)を参照してください。<br><br>これはシークレットと見なす必要があるので、適切なセキュリティプラクティスを使用してください。例えば、**zerobin.net** などの web サイトでパスワードで保護します。カスタマーサポートチケットはパスワードとともに参照できます。<br><br>メモ：これは、Dynatrace Managed でのみ必要です。 |
+| [!DNL Dynatrace ActiveGate Port] | AEM 統合の接続先となる Dynatrace ActiveGate ポート。<br><br>メモ：これは、Dynatrace Managed でのみ必要です。 |
+| [!DNL Dynatrace ActiveGate Network Zone] | [Dynatrace ActiveGate ネットワークゾーン](https://docs.dynatrace.com/docs/manage/network-zones)を使用して、データセンターとネットワークリージョン間で AEM 監視データを効率的にルーティングします。<br><br>メモ：Dynatrace ActiveGate ネットワークゾーンはオプションです。 |
+| [!DNL AEM Environment ID(s)] | Dynatrace が監視する AEM 環境 ID。 |
 
 >[!NOTE]
 >
->Dynatraceが統合されると、以前に有効になっていた場合、データはNew Relicなどの他の APM ツールに送られなくなります。
+>Dynatrace が統合されると、以前に有効になっていた場合、データは New Relic などの他の APM ツールに流れなくなります。
 
 ## FAQ {#faq}
 
@@ -54,7 +54,7 @@ Dynatraceライセンスについて詳しくは、 [Dynatrace Platform Subscrip
 
 ### Dynatrace Connection Details を取得するにはどうすればよいですか？ {#how-do-i-get-my-dynatrace-connection-details}
 
-1. Dynatrace環境に対して、次の API リクエストを実行します。
+1. Dynatrace 環境に対して次の API リクエストを実行します。
 
    ```
    curl -X GET "<environmentUrl>/api/v1/deployment/installer/agent/connectioninfo" -H "accept: application/json" -H "Authorization: Api-Token <accessToken>"
@@ -73,13 +73,13 @@ Dynatraceライセンスについて詳しくは、 [Dynatrace Platform Subscrip
    }
    ```
 
-### Dynatrace API アクセストークンの作成 {#create-dynatrace-access-token}
+### Dynatrace API アクセス トークンを作成する {#create-dynatrace-access-token}
 
-1. Dynatrace環境にログインします。
+1. Dynatrace 環境にログインします。
 1. に移動します。 **[!DNL Access tokens]** を選択し、 **[!DNL Generate new token]**.
-1. を定義 [!DNL token name].
+1. [!DNL token name] を定義します。
 1. トークンのスコープをに設定します。 **[!DNL PaaS integration - Installer download]**.
-1. 選択 **[!DNL Generate token]**.
+1. **[!DNL Generate token]** を選択します。
 1. 生成されたアクセストークンをコピーし、安全な場所に保存します。
 
 

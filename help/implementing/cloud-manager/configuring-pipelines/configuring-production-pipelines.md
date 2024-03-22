@@ -6,7 +6,7 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
 source-wordcount: '1338'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
@@ -35,9 +35,9 @@ ht-degree: 92%
 >
 >フロントエンドパイプラインを設定する前に、[AEM クイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md)を参照して、使いやすい AEM クイックサイト作成ツールによる包括的ガイドを確認してください。このジャーニーは AEM サイトのフロントエンド開発の効率化に役立ち、AEM のバックエンドに関する知識がなくても、このジャーニーを参考にサイトをすばやくカスタマイズできるようになります。
 
-1. Cloud Manager( ) にログインします。 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 適切な組織を選択します。
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面で、プログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;画面でプログラムを選択します。
 
 1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動し、「**追加**」をクリックして「**実稼動パイプラインを追加**」を選択します。
 
@@ -111,15 +111,15 @@ ht-degree: 92%
 
 ターゲットデプロイメントは、AEM アプリケーションの選択した部分のコードのみをデプロイします。このようなデプロイメントでは、次のいずれかのタイプのコードを&#x200B;**含む**&#x200B;よう選択できます。
 
-* **Config** - AEM環境のトラフィックフィルタールールの設定を構成します。
+* **設定** - AEM 環境のトラフィックフィルタールールの設定を行います。
    * [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)ドキュメントを参照して、リポジトリの設定を管理し、適切にデプロイする方法を確認してください。
-   * ターゲットのデプロイメントパイプラインを実行する場合、 [WAF 設定](/help/security/traffic-filter-rules-including-waf.md) パイプラインで定義した環境、リポジトリ、ブランチに保存されている場合は、デプロイされます。
+   * ターゲットのデプロイメントパイプラインを実行している場合、[WAF 設定](/help/security/traffic-filter-rules-including-waf.md)などの設定は、パイプラインで定義した環境、リポジトリ、分岐に保存されていれば、デプロイされます。
    * 設定パイプラインは、常に 1 つの環境に 1 つしか存在できません。
 * **フロントエンドコード** - AEM アプリケーションのフロントエンド用に JavaScript と CSS を設定します。
    * フロントエンドパイプラインを使用すると、フロントエンド開発者の作業の独立性が高まるほか、開発プロセスを速めることができます。
    * このプロセスの可能性を最大限に引き出すために知っておくべきいくつかの考慮事項と、このプロセスがどのように機能するかについては、[フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)のドキュメントを参照してください。
 * **Web 階層の設定** - Web ページをクライアントに保存、処理、配信するための Dispatcher プロパティを設定します。
-   * ドキュメントを見る [CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) を参照してください。
+   * 詳しくは、[CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines)のドキュメントを参照してください。
    * 選択した環境に web 階層コードパイプラインが存在する場合、この選択は無効になります。
    * 環境に既にフルスタックパイプラインがデプロイされている場合、同じ環境に web 階層設定パイプラインを作成すると、フルスタックパイプライン内の既存の web 階層設定は無視されます。
 

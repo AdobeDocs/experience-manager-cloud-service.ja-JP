@@ -8,7 +8,7 @@ exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '4976'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,34 +25,34 @@ ht-degree: 95%
 
 ## ビデオアセットのアップロードとプレビュー {#upload-and-preview-video-assets}
 
-次の形式のビデオアセットをアップロードしてプレビューできます。 [!DNL Experience Manager Assets].
+サポートされている形式のビデオアセットを [!DNL Experience Manager Assets] にアップロードしてプレビューできます。
 <!-- It generates previews for video assets with the extension MP4. -->
 
-### ビデオアセットのアップロード
+### ビデオアセットをアップロードする
 
 ビデオアセットをアップロードするには、次の手順に従います。
 
-1. デジタルアセットフォルダー（またはサブフォルダー）で、アセットを追加する場所に移動します。
-1. クリック **[!UICONTROL 作成]** ツールバーで、「 」を選択します。 **[!UICONTROL ファイル]**. <br>または、ユーザーインターフェイス上でファイルをドラッグします。
-詳細情報： [アセットのアップロード](manage-digital-assets.md#uploading-assets) in [!DNL Experience Manager Assets].
+1. デジタルアセットフォルダー（またはサブフォルダー）で、アセットを追加する必要がある場所に移動します。
+1. ツールバーから「**[!UICONTROL 作成]**」をクリックし、「**[!UICONTROL ファイル]**」を選択します。<br>または、ユーザーインターフェイス上でファイルをドラッグします。
+詳しくは、[!DNL Experience Manager Assets] の [アセットのアップロード](manage-digital-assets.md#uploading-assets)を参照してください。
 
 <!-- 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
 1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen. -->
 
-### ビデオアセットをプレビュー
+### ビデオアセットをプレビューする
 
-サポートされるレンディションのビデオは、 [!DNL Assets] ユーザーインターフェイス。 ビデオアセットをプレビューするには、次の手順に従います。
+[!DNL Assets] ユーザーインターフェイスでは、サポートされているレンディションでビデオをプレビューすることができます。ビデオアセットをプレビューするには、次の手順に従います。
 
-1. サポートされている形式のビデオアセットのアップロード先 [!DNL Experience Manager Assets]. 詳しくは、 [サポートされるビデオ形式](file-format-support.md#video-formats). <br>アップロードされると、ビデオアセットが処理され、プレビューレンディションが生成されます。
-1. アセットをクリックし、「 」を選択します。 ![詳細オプション](assets/do-not-localize/details_icon.svg) **[!UICONTROL 詳細]**  をクリックします。 ビデオアセットがビデオビューアで開きます。
-1. 次をクリック： ![再生オプション](assets/do-not-localize/play.png) アイコンをクリックします。 <br>再生、一時停止、音量の制御、およびビデオの全画面表示を行うことができます。
+1. サポートされている形式のビデオアセットを [!DNL Experience Manager Assets] にアップロードします。詳しくは、[サポートされるビデオ形式](file-format-support.md#video-formats)を参照してください。<br>アップロードすると、ビデオアセットが処理され、プレビューレンディションが生成されます。
+1. アセットをクリックし、上部のツールバーから ![ 詳細オプション](assets/do-not-localize/details_icon.svg) **[!UICONTROL 詳細]** を選択します。ビデオアセットがビデオビューアで開きます。
+1. 動画サムネイルの ![ 再生オプション ](assets/do-not-localize/play.png) アイコンをクリックします。<br>再生、一時停止、音量の制御、およびビデオの全画面表示を行うことができます。
 
-での既存のビデオアセットの場合 [!DNL Experience Manager Assets]、次の操作が必要です。 **[!UICONTROL 再処理]** 内のアセット [!DNL Experience Manager] をクリックして、ビデオプレビュー機能を有効にします。 方法を学ぶ [デジタルアセットの再処理](reprocessing.md) in [!DNL Experience Manager].
+[!DNL Experience Manager Assets] の既存の動画アセットの場合、動画プレビュー機能を有効にするには、[!DNL Experience Manager] のアセットを&#x200B;**[!UICONTROL 再処理]**&#x200B;する必要があります。[!DNL Experience Manager] で[デジタルアセットを再処理](reprocessing.md)する方法を説明します。
 
 ### ビデオプレビューの制限事項
 
 * MXF ファイルでは、レンディションが生成されても、ビデオのプレビューが表示されません。
-* WebM ファイルは Web ブラウザーでネイティブに再生できるので、プレビューレンディションは生成されません。
+* WebM ファイルは web ブラウザーでネイティブに再生できるので、プレビューレンディションは生成されません。
 
 ## ビデオアセットを公開する {#publish-video-assets}
 

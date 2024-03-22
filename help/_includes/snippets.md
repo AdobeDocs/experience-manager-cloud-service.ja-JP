@@ -2,7 +2,7 @@
 source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
 source-wordcount: '367'
-ht-degree: 67%
+ht-degree: 80%
 
 ---
 # スニペット {#snippets}
@@ -54,12 +54,12 @@ ht-degree: 67%
 * [AEM ワークフローを起動](/help/forms/configure-submit-action-workflow.md)
 * [Power Automate に送信](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Workfront Fusion に送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [アダプティブフォームを Salesforce アプリケーションに接続](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Salesforce アプリケーションにアダプティブフォームを接続](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
 * [アダプティブフォームのMicrosoftへの接続](/help/forms/ms-dynamics-odata-configuration.md)
 
-## AEM Authoring(Edge Delivery Servicesの早期アクセス ) {#aem-authoring-edge-early-access}
+## Edge Delivery Services を使用した AEM オーサリングの早期アクセス {#aem-authoring-edge-early-access}
 
-[!BADGE 先行アクセステクノロジー —SlackチャネルのAEM Sitesラボから、この機能についてお問い合わせください。]{type=Informative url="/help/edge/docs/slack.md" tooltip="AEMを使用したEdge Delivery Servicesのオーサリングは、アーリーアクセステクノロジーです。"}
+[!BADGE 早期アクセステクノロジー - この機能については、Slack チャネルの AEM Sites ラボからお問い合わせください。]{type=Informative url="/help/edge/docs/slack.md" tooltip="Edge Delivery Services を使用した AEM オーサリングは、早期アクセステクノロジーです。"}
 
 ## 関連トピック {#see-more-forms-eds}
 

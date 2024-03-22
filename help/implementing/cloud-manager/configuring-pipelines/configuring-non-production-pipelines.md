@@ -6,7 +6,7 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
 source-wordcount: '1371'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -36,7 +36,7 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面で、プログラムを選択します。
+**[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;画面でプログラムを選択します。
 
 1. Cloud Manager のホーム画面から&#x200B;**パイプライン**&#x200B;カードにアクセスします。「**+追加**」をクリックし、「**実稼動以外のパイプラインを追加**」を選択します。
 
@@ -112,7 +112,7 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
 
 ターゲットデプロイメントは、AEM アプリケーションの選択した部分のコードのみをデプロイします。このようなデプロイメントでは、次のいずれかのタイプのコードを&#x200B;**含む**&#x200B;よう選択できます。
 
-* **Config** - AEM環境のトラフィックフィルタールールの設定を構成します。
+* **設定** - AEM 環境のトラフィックフィルタールールの設定を行います。
    * リポジトリでフィックフィルタールールを管理し、適切にデプロイする方法については、[WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)を参照してください。
    * ターゲットのデプロイメントパイプラインを実行している場合、[WAF 設定などの](/help/security/traffic-filter-rules-including-waf.md)設定は、パイプラインで定義した環境、リポジトリ、ブランチに保存されていればデプロイされます。
    * 設定パイプラインは、常に 1 つの環境に 1 つしか存在できません。
@@ -120,7 +120,7 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
    * フロントエンドパイプラインを使用すると、フロントエンド開発者の作業の独立性が高まるほか、開発プロセスを速めることができます。
    * このプロセスの可能性を最大限に引き出すために知っておくべきいくつかの考慮事項と、このプロセスがどのように機能するかについては、[フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)のドキュメントを参照してください。
 * **Web 階層の設定** - Web ページをクライアントに保存、処理、配信するための Dispatcher プロパティを設定します。
-   * ドキュメントを見る [CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) を参照してください。
+   * 詳しくは、[CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines)のドキュメントを参照してください。
    * 選択した環境に web 階層コードパイプラインが存在する場合、この選択は無効になります。
    * 環境に既にフルスタックパイプラインがデプロイされている場合、同じ環境に web 階層設定パイプラインを作成すると、フルスタックパイプライン内の既存の web 階層設定は無視されます。
 

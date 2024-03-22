@@ -2,18 +2,19 @@
 title: 画像の編集
 description: ' [!DNL Adobe Photoshop Express]  を利用したオプションを使用して画像を編集し、更新した画像をバージョンとして保存します。'
 role: User
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
 workflow-type: tm+mt
 source-wordcount: '1251'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 # [!DNL Assets view] での画像の編集  {#edit-images}
 
-[!DNL Assets view] には、[!DNL Adobe Express] と [!DNL Adobe Photoshop Express] を利用した使いやすい編集オプションが用意されています。次を使用して使用可能な編集アクション： [!DNL Adobe Express] は、画像のサイズ変更、背景の削除、画像の切り抜き、JPEGの PNG への変換（またはその逆）です。
+[!DNL Assets view] には、[!DNL Adobe Express] と [!DNL Adobe Photoshop Express] を利用した使いやすい編集オプションが用意されています。[!DNL Adobe Express] を使用すると、画像のサイズ変更、背景の削除、画像の切り抜き、JPEG から PNG への変換、またはその逆といった編集アクションを使用できます。
 
-画像の編集後、新しい画像を新しいバージョンとして保存できます。バージョン管理を使用すると、必要に応じて後で元のアセットに戻すことができます。また、バージョン管理は、PNG ファイルタイプでのみ使用できます。つまり、JPGファイルタイプから背景を削除しようとすると、JPGは自動的に PNG に変換されます。 画像を編集するには、[プレビューを開き](navigate-assets-view.md)、「**[!UICONTROL 画像を編集]**」をクリックします。
+画像の編集後、新しい画像を新しいバージョンとして保存できます。バージョン管理を使用すると、必要に応じて後で元のアセットに戻すことができます。また、バージョン管理は、PNG ファイルタイプでのみ使用できます。つまり、JPG ファイルファイルタイプから背景を削除しようとすると、JPG は自動的に PNG に変換されます。画像を編集するには、[プレビューを開き](navigate-assets-view.md)、「**[!UICONTROL 画像を編集]**」をクリックします。
 
 >[!NOTE]
 >
@@ -32,7 +33,7 @@ ht-degree: 80%
 
 画像を特定のサイズに変更するのが一般的なユースケースです。[!DNL Assets view] では、特定の写真サイズに対応する新しい解像度を事前に計算しておくことで、一般的な写真サイズに合わせて画像のサイズをすばやく変更できます。[!DNL Assets view] を使用して画像のサイズを変更するには、次の手順に従います。
 
-1. 次の場所から画像を選択： [!DNL Experience Manager] Assets リポジトリを開き、 **編集**.
+1. [!DNL Experience Manager] アセットリポジトリから画像を選択し、「**編集**」をクリックします。
 2. 左側のパネルにあるクイックアクションから「**[!UICONTROL 画像のサイズを変更]**」をクリックします。
 3. **[!UICONTROL サイズを変更]**&#x200B;ドロップダウンリストから適切なソーシャルメディアプラットフォームを選択し、表示されるオプションから画像サイズを選択します。
 4. 必要に応じて、「**[!UICONTROL 画像の拡大・縮小]**」フィールドを使用して画像を拡大・縮小します。
@@ -46,7 +47,7 @@ ht-degree: 80%
 
 以下に示すように、いくつかの簡単な手順で画像から背景を削除できます。
 
-1. 次の場所から画像を選択： [!DNL Experience Manager] Assets リポジトリを開き、 **編集**.
+1. [!DNL Experience Manager] アセットリポジトリから画像を選択し、「**編集**」をクリックします。
 2. 左側のパネルにあるクイックアクションから「**[!UICONTROL 背景を削除]**」をクリックします。Experience Manager Assets では、背景のない画像が表示されます。
 3. 「**[!UICONTROL 適用]**」をクリックし、変更を適用します。
    ![Adobe Express を使用した画像の保存](assets/adobe-express-remove-background.png)
@@ -55,7 +56,7 @@ ht-degree: 80%
 
 埋め込まれた [!DNL Adobe Express] クイックアクションを使用すると、画像を完璧なサイズに簡単に変換できます。
 
-1. 次の場所から画像を選択： [!DNL Experience Manager] Assets リポジトリを開き、 **編集**.
+1. [!DNL Experience Manager] アセットリポジトリから画像を選択し、「**編集**」をクリックします。
 2. 左側のパネルにあるクイックアクションから「**[!UICONTROL 画像を切り抜き]**」をクリックします。
 3. 画像の隅にあるハンドルをドラッグして、目的の切り抜きを作成します。
 4. 「**[!UICONTROL 適用]**」をクリックします。
@@ -66,20 +67,20 @@ ht-degree: 80%
 
 Adobe Express を使用すると、JPEG 画像を PNG 形式にすばやく変換できます。以下の手順を実行します。
 
-1. 次の場所から画像を選択： [!DNL Experience Manager] Assets リポジトリを開き、 **編集**.
-2. クリック **[!UICONTROL PNG に変換]** 左側のウィンドウで使用できるクイックアクションから。
+1. [!DNL Experience Manager] アセットリポジトリから画像を選択し、「**編集**」をクリックします。
+2. 左側のパネルにあるクイックアクションから「**[!UICONTROL JPEG を PNG に変換]**」をクリックします。
    <!--![Convert to PNG with Adobe Express](/help/using/assets/adobe-express-convert-image.png)-->
 3. 「**[!UICONTROL 適用]**」をクリックします。
-4. に移動します。 **[!UICONTROL 右上の「名前を付けて保存」]** をクリックします。 **[!UICONTROL 新しいアセットとして保存]**.
+4. **[!UICONTROL 右上の「名前を付けて保存」]**&#x200B;に移動し、「**[!UICONTROL 新しいアセットとして保存]**」をクリックします。
 
-### PNG をJPEGに変換 {#convert-png-to-jpeg-using-express}
+### PNG を JPEG に変換する {#convert-png-to-jpeg-using-express}
 
-Adobe Expressを使用すると、PNG 画像をJPEG形式にすばやく変換できます。 以下の手順を実行します。
+Adobe Express を使用すると、JPEG 画像を PNG 形式にすばやく変換できます。以下の手順を実行します。
 
-1. 次の場所から画像を選択： [!DNL Experience Manager] Assets リポジトリを開き、 **編集**.
-2. クリック **[!UICONTROL 変換JPEG]** 左側のウィンドウで使用できるクイックアクションから。
+1. [!DNL Experience Manager] アセットリポジトリから画像を選択し、「**編集**」をクリックします。
+2. 左側のパネルにあるクイックアクションから「**[!UICONTROL JPEG に変換]**」をクリックします。
 3. 「**[!UICONTROL 適用]**」をクリックします。
-4. に移動します。 **[!UICONTROL 右上の「名前を付けて保存」]** をクリックします。 **[!UICONTROL 新しいアセットとして保存]**.
+4. **[!UICONTROL 右上の「名前を付けて保存」]**&#x200B;に移動し、「**[!UICONTROL 新しいアセットとして保存]**」をクリックします。
 
 ### 制限事項 {#limitations-adobe-express}
 
@@ -89,7 +90,7 @@ Adobe Expressを使用すると、PNG 画像をJPEG形式にすばやく変換�
 
 ## Adobe Express 埋め込みエディターを使用した画像の編集 {#edit-using-embedded-editor}
 
-Adobe Expressにアクセスできる組織は、Assets ビュー内で直接利用できるAdobe ExpressやAdobe Fireflyの統合画像編集および作成ツールを使用して、コンテンツの再利用を改善し、コンテンツの速度を向上させることができます。 また、定義済みの要素を使用して、アセットの見栄えを良くしたり、数回クリックするだけで画像を編集するクイックアクションを実行したりすることもできます。
+Adobe Express へのアクセス権を持つ組織は、Adobe Express と Adobe Firefly の統合された画像編集および作成ツールを Assets ビュー内で直接利用できるようになり、コンテンツの再利用を改善し、コンテンツの速度を向上させることができます。また、定義済みの要素を使用して、アセットの見栄えを良くしたり、数回クリックするだけで画像を編集するクイックアクションを実行したりすることもできます。
 
 [!DNL Adobe Express] 埋め込みエディターを使用して画像を編集するには、次の手順に従います。
 
@@ -106,7 +107,7 @@ Adobe Expressにアクセスできる組織は、Assets ビュー内で直接利
 
 [!DNL Assets view] では、[!DNL Adobe Express] 埋め込みエディターを使用して、新しいテンプレートを最初から作成できます。[!DNL Adobe Express] を使用して新しいアセットを作成するには、次の手順を実行します。
 
-1. に移動します。 **[!UICONTROL マイワークスペース]** をクリックします。 **[!UICONTROL 作成]** 」をクリックします。 [!DNL Adobe Express] の空白のキャンバスが [!DNL Assets view] ユーザーインターフェイス内に表示されます。
+1. **[!UICONTROL マイワークスペース]**&#x200B;に移動し、上部に表示される Adobe Express バナー内の「**[!UICONTROL 作成]**」をクリックします。[!DNL Adobe Express] の空白のキャンバスが [!DNL Assets view] ユーザーインターフェイス内に表示されます。
 1. [テンプレート](https://helpx.adobe.com/jp/express/using/work-with-templates.html)を使用してコンテンツを作成します。それ以外の場合は、**[!UICONTROL 自分のアイテム]**&#x200B;に移動して既存のコンテンツを変更します。
 1. 編集が完了したら、「**[!UICONTROL 新しいアセットとして保存]**」をクリックします。
 1. 作成したアセットの宛先パスを指定し、「**[!UICONTROL 保存]**」をクリックします。
@@ -115,9 +116,9 @@ Adobe Expressにアクセスできる組織は、Assets ビュー内で直接利
 >
 >* 変更できるのは、`JPEG` および `PNG` 形式タイプの画像のみです。
 >* アセットサイズは 17 MB 未満にする必要があります。
->* 画像を `PDF`, `JPEG`または `PNG` 書式。複数のページがある場合は、 `PDF`.
+>* `PDF`、`JPEG` または `PNG` 形式の画像を保存できます。つまり、複数のページがある場合は、それらを `PDF` として保存できます。
 
-## [!DNL Adobe Photoshop Express] を使用した画像の編集 {#edit-using-photoshop-express}
+## [!DNL Adobe Photoshop Express] を使用して画像を編集する {#edit-using-photoshop-express}
 
 <!--
 After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. To edit an image, [open its preview](navigate-assets-view.md#preview-assets) and click **[!UICONTROL Edit Image]** ![edit icon](assets/do-not-localize/edit-icon.png) from the rail on the right.
@@ -127,7 +128,7 @@ After editing an image, you can save the new image as a new version. Versioning 
 *Figure: The options to edit images are powered by [!DNL Adobe Photoshop Express].*
 -->
 
-### 画像のタッチアップ {#spot-heal-images-using-photoshop-express}
+### 画像をタッチアップする {#spot-heal-images-using-photoshop-express}
 
 画像に小さな欠点や小さなオブジェクトがある場合は、Adobe Photoshop のスポット修復機能を利用して、その欠点を編集および削除できます。
 
@@ -184,5 +185,5 @@ TBD: Insert a video of the available social media options.
 
 >[!MORELIKETHIS]
 >
->* [クイックアクションのAdobe Express](https://helpx.adobe.com/jp/express/using/resize-image.html)
->* [アセットのバージョン履歴の表示](navigate-assets-view.md)
+>* [Adobe Express のクイックアクション](https://helpx.adobe.com/jp/express/using/resize-image.html)
+>* [アセットのバージョン履歴を表示](navigate-assets-view.md)

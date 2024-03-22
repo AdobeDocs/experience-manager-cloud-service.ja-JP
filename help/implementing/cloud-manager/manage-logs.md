@@ -5,7 +5,7 @@ exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 source-git-commit: 178af74512e74ff401588b68c73fa4661acec704
 workflow-type: tm+mt
 source-wordcount: '346'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ AEM as a Cloud Service での開発プロセスを支援するために、ログ
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面で、プログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;画面でプログラムを選択します。
 
 1. **概要**&#x200B;ページから&#x200B;**環境**&#x200B;カードに移動します。
 

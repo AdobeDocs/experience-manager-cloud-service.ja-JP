@@ -1,26 +1,26 @@
 ---
-title: '[!DNL Live Search] ポップオーバーCIFコンポーネント'
-description: CIFコンポーネントを使用した有効化 [!DNL Live Search] AEMサイトのポップオーバーコンポーネント
+title: '[!DNL Live Search] ポップオーバー CIF コンポーネント'
+description: CIF コンポーネントを使用して AEM サイトで  [!DNL Live Search]  ポップオーバーコンポーネントを有効にする
 exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '175'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# [!DNL Live Search] ポップオーバーCIFコンポーネント {#live-search-popover}
+# [!DNL Live Search] ポップオーバー CIF コンポーネント {#live-search-popover}
 
-The [!DNL Live Search] ポップオーバーは、 [!DNL Live Search] 検索フィールドに入力した結果。
-ここでは、このコンポーネントをAEMサイトに統合する方法について説明します。
+[!DNL Live Search] ポップオーバーは、検索フィールドに入力したときの [!DNL Live Search] の結果を含む要素です。
+このトピックでは、このコンポーネントを AEM サイトに統合する方法について説明します。
 
 ## ファイル構造 {#file-strucure}
 
-CIFコンポーネントを有効にするには、ファイルを編集して作成する必要があります。
+CIF コンポーネントを有効にするには、ファイルを編集して作成する必要があります。
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/.content.xml
 
-  を作成します。 `.content.xml` ファイル：
+  `.content.xml` ファイルを作成します。
 
   ```xml
   <?xml version="1.0" encoding="UTF-8"?>
@@ -33,7 +33,7 @@ CIFコンポーネントを有効にするには、ファイルを編集して�
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/css.txt
 
-  を作成します。 `css.txt` ファイル：
+  `css.txt` ファイルを作成します。
 
   ```text
   #base=css
@@ -43,7 +43,7 @@ CIFコンポーネントを有効にするには、ファイルを編集して�
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/css/searchbar.css
 
-  を作成します。 `searchbar.css` ファイル：
+  `searchbar.css` ファイルを作成します。
 
 
   ```css
@@ -138,7 +138,7 @@ CIFコンポーネントを有効にするには、ファイルを編集して�
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/js.txt
 
-  を作成します。 `js.txt` ファイル：
+  `js.txt` ファイルを作成します。
 
   ```text
   js/searchbar.js
@@ -146,7 +146,7 @@ CIFコンポーネントを有効にするには、ファイルを編集して�
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/js/searchbar.js
 
-  を作成します。 `searchbar.js` ファイル：
+  `searchbar.js` ファイルを作成します。
 
   ```javascript
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -492,7 +492,7 @@ CIFコンポーネントを有効にするには、ファイルを編集して�
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/searchbar.html
 
-  を作成します。 `searchbar.html` ファイル：
+  `searchbar.html` ファイルを作成します。
 
   ```html
   <!-- Livesearch popover -->
@@ -554,7 +554,7 @@ CIFコンポーネントを有効にするには、ファイルを編集して�
 
 * ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json
 
-  を作成します。 `com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json` ファイル：
+  `com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json` ファイルを作成します。
 
   ```json
   {
@@ -568,7 +568,7 @@ CIFコンポーネントを有効にするには、ファイルを編集して�
 
    * ui.tests/test-module/specs/venia/searchbar.js
 
-     を編集します。 `searchbar.js` ファイル、19～20 行目、変更 `describe` から `describe.skip`:
+     `searchbar.js` ファイルの 19～20 行目を編集して、`describe` を `describe.skip` に変更します。
 
      ```javascript
      describe.skip('Venia Searchbar Component', () => {

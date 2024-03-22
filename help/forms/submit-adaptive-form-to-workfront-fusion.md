@@ -1,7 +1,7 @@
 ---
 title: Adobe Workfront Fusion とAEM Forms Submission の統合
-description: Adobe Workfront Fusion を使用すると、繰り返しのタスクに重点を置くのではなく、新しいタスクに重点を置くことができます。 フォーム送信を使用して、Adobe Workfront Fusion をアダプティブフォームに接続することができます。
-keywords: Adobe Workfront Fusion、Adobe Workfront Fusion とAEM Forms Submission の統合、Adobe Workfront Fusion とAEM Forms、Workfront Fusion とAEM Forms、Workfront Fusion とAEM Forms、AEM FormsとWorkfront Fusion の接続、WorkfrontとAEM Forms Fusion とWorkfrontの接続方法、 Fusion と Fusion をフォームに接続する
+description: Adobe Workfront Fusion を使用すると、繰り返しのタスクに重点を置くのではなく、新しいタスクに重点を置くことができます。フォーム送信を使用して、Adobe Workfront Fusion をアダプティブフォームに接続できます。
+keywords: Adobe Workfront Fusion へのアダプティブフォームの送信、Adobe Workfront Fusion と AEM Forms Submission の統合、Adobe Workfront Fusion と AEM Forms の統合、Workfront Fusion と AEM Forms の統合、AEM Forms への Workfront Fusion の接続、AEM Forms Fusion への Workfront Fusion の接続 、AEM Forms への Workfront Fusion の接続方法?、フォームへの Workfront Fusion の接続
 topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
@@ -9,17 +9,17 @@ exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
 workflow-type: tm+mt
 source-wordcount: '1255'
-ht-degree: 6%
+ht-degree: 85%
 
 ---
 
 # Adobe Workfront Fusion へのアダプティブフォームの送信
 
-<span class="preview"> この機能は、アーリーアダプタープログラムで利用できます。 早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID から aem-forms-early-adopter-program@adobe.com までメールをお送りください。</span>
+<span class="preview">機能は、早期導入プログラムで利用できます。早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID で aem-forms-early-adopter-program@adobe.com までメールをお送りください。</span>
 
-[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) ドキュメント承認ワークフロー、E メールのフィルタリングや並べ替えなど、同じタスクを繰り返すプロセスを自動化し、繰り返しタスクではなく新しいタスクに焦点を当てることができます。 Adobe Workfront Fusion には、複数のシナリオが含まれています。 シナリオは、アプリケーションと Web サービス間のデータ転送を実行する一連のモジュールで構成されます。 シナリオでは、様々な手順（モジュール）を追加してタスクを自動化します。
+[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=ja) は、ドキュメント承認ワークフロー、メールのフィルタリングや並べ替えなど、同じタスクを繰り返すプロセスを自動化し、繰り返しタスクではなく新しいタスクに焦点を当てることができます。Adobe Workfront Fusion には、複数のシナリオが含まれています。シナリオは、アプリケーションと web サービス間のデータ転送を実行する一連のモジュールで構成されます。シナリオでは、様々な手順（モジュール）を追加してタスクを自動化します。
 
-例えば、Workfront Fusion を使用すると、アダプティブフォームでデータを収集し、データを処理し、データをアーカイブ用にデータストアに送信するシナリオを作成できます。 シナリオを設定すると、ユーザーがフォームに入力するたびに、Workfront Fusion は自動的にタスクを実行し、データストアをシームレスに更新します。
+例えば、Workfront Fusion を使用すると、シナリオを作成して、アダプティブフォームでデータを収集し、データを処理し、データをアーカイブ用にデータストアに送信できます。シナリオを設定すると、ユーザーがフォームに入力するたびに、Workfront Fusion は自動的にタスクを実行し、データストアをシームレスに更新します。
 
 AEM Forms as a Cloud Serviceには、アダプティブフォームをAdobe Workfront Fusion に接続して送信するための OOTB コネクタが用意されています。 フォームをAdobe Workfront Fusion に送信すると、次のような利点があります。
 * これにより、フォーム送信データをWorkfront Fusion ワークフローにシームレスに転送できるようになりました。
@@ -31,16 +31,16 @@ AEM Forms as a Cloud Serviceには、アダプティブフォームをAdobe Work
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
-## AEM FormsとAdobe Workfront Fusion を統合するための前提条件 {#prerequisites}
+## AEM Forms と Adobe Workfront Fusion を統合する前提条件 {#prerequisites}
 
 Workfront Fusion とAEM Formsの間の接続を確立するには、次が必要です。
 
-* 有効な [WorkfrontとWorkfront Fusion ライセンス](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
-* アクセス権を持つAEMユーザー [開発者コンソール](https://my.cloudmanager.adobe.com/) から [サービス資格情報の取得](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ja).
+* 有効な [WorkfrontとWorkfront Fusion ライセンス](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=ja).
+* [サービス資格情報を取得する](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ja)ために[開発者コンソール](https://my.cloudmanager.adobe.com/)へのアクセス権を持つ AEM ユーザー。
 
-## AEM FormsとAdobe Workfront Fusion の統合
+## AEM Forms と Adobe Workfront Fusion の統合
 
-### 1. Workfrontシナリオの作成 {#workflow-scenario}
+### 1. Workfront シナリオの作成 {#workflow-scenario}
 
 Workfrontシナリオを作成するには、次の手順を実行します。
 
@@ -51,126 +51,126 @@ Workfrontシナリオを作成するには、次の手順を実行します。
 #### シナリオの作成 {#create-scenario}
 
 シナリオを作成するには、次の手順に従います。
-1. ログイン [Workfront Fusion アカウント](https://app-qa.workfrontfusion.com/).
-1. クリック **[!UICONTROL シナリオ]** ![共有アイコン](/help/forms/assets/Smock_ShareAndroid_18_N.svg) をクリックします。
-1. クリック **[!UICONTROL 新しいシナリオの作成]** をクリックします。 新しいシナリオを作成するページが画面に表示されます。
-1. 選択 **[!UICONTROL 新しいシナリオ]** ページの左上隅に、シナリオの適切な名前を入力します。
-1. 疑問符をクリックし、最初のモジュールを **[!UICONTROL AEM Forms]**.
+1. [Workfront Fusion アカウント](https://app-qa.workfrontfusion.com/)にログインします。
+1. 左側のパネルの「**[!UICONTROL シナリオ]**」![共有アイコン](/help/forms/assets/Smock_ShareAndroid_18_N.svg)をクリックします。
+1. ページの右上隅にある「**[!UICONTROL 新規シナリオを作成]**」をクリックします。新しいシナリオを作成するページが画面に表示されます。
+1. ページの左上隅にある「**[!UICONTROL 新規シナリオ]**」を選択し、シナリオの適切な名前を入力します。
+1. 疑問符をクリックし、**[!UICONTROL AEM Forms]** として最初のモジュールを追加することを確認します。
 
-   ![AEM Formsモジュールの追加](/help/forms/assets/workfront-aemforms.png)
+   ![AEM Forms モジュールの追加](/help/forms/assets/workfront-aemforms.png)
 
-   The **[!UICONTROL フォームイベントの監視]** ダイアログボックスが表示されます。
+   **[!UICONTROL フォームイベントの監視]**&#x200B;ダイアログボックスが表示されます。
 
    >[!NOTE]
    >
-   > 最初のモジュールを **[!UICONTROL AEM Forms]**.
+   > 最初のモジュールを **[!UICONTROL AEM Forms]** として追加することは必須です。
 
-1. を選択します。 **[!UICONTROL フォームイベントの監視]** ダイアログボックスと、ウェブフックを追加するウィンドウが表示されます。
+1. **[!UICONTROL フォームイベントの監視]**&#x200B;ダイアログボックスを選択します。Web フックを追加するウィンドウが表示されます。
 
 #### ウェブフックの追加 {#add-webhook}
 
-![ウェブフックの追加](/help/forms/assets/workfront-add-webhook.png)
+![Web フックの追加](/help/forms/assets/workfront-add-webhook.png)
 
-Webhook を追加するには：
+Web フックを追加するには、次の手順に従います。
 
-1. クリック **[!UICONTROL 追加]** および **[!UICONTROL ウェブフックの追加]** ダイアログボックスが表示されます。
-1. ウェブフック名を指定します。
+1. 「**[!UICONTROL 追加]**」をクリックします。**[!UICONTROL Web フックを追加]**&#x200B;ダイアログボックスが表示されます。
+1. Web フック名を指定します。
 
    >[!NOTE]
    >
-   > 指定した Webhook 名がAEMインスタンスに表示されるので、Webhook 名は慎重に選択することをお勧めします。
+   > 指定した Web フック名が AEM インスタンスに表示されるので、Web フック名は慎重に選択することをお勧めします。
 
-1. クリック **[!UICONTROL 追加]** 新しい接続を追加するには、をクリックします。 The **[!UICONTROL 接続の作成]** ダイアログボックスが表示されます。
+1. 「**[!UICONTROL 追加]**」をクリックして、新しい接続を追加します。**[!UICONTROL 接続を作成]**&#x200B;ダイアログボックスが表示されます。
 
 #### Webhook への接続の追加 {#add-connection}
 
-![接続を追加](/help/forms/assets/workfront-add-connection.png)
+![接続の追加](/help/forms/assets/workfront-add-connection.png)
 
-接続を追加するには：
+接続を追加するには、次の手順に従います。
 
-1. を指定します。 **[!UICONTROL 接続名]** （内） **[!UICONTROL 接続の作成]** ダイアログボックス。
+1. **[!UICONTROL 接続を作成]**&#x200B;ダイアログボックスで&#x200B;**[!UICONTROL 接続名]**&#x200B;を指定します。
 
-1. 選択 **環境** および **タイプ** 」をドロップダウンリストから選択します。
+1. ドロップダウンリストから「**環境**」と「**タイプ**」を選択します。
 
-1. 次を入力します。 **インスタンス URL**.
-
-   >[!NOTE]
-   >
-   > インスタンス URL は、特定のAEM Formsインスタンスを指す一意の Web アドレスです。
-
-   次を取得： [開発者コンソールからのサービス資格情報](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ja) 接続を作成するために必要です。
-
-1. 置換 `ims-na1.adobelogin.com` （内） **IMS エンドポイント** ～の価値を持つ **imsEndpoint** を開発者コンソールのサービス資格情報から削除します。
+1. **インスタンス URL** を入力します。
 
    >[!NOTE]
    >
-   > 保持する `https://` （内） **IMS エンドポイント** 追加中のテキストボックス `imsEndpoint` URL。
+   > インスタンス URL は、特定の AEM Forms インスタンスを指す一意の web アドレスです。
 
-1. 次の値を **[!UICONTROL 接続の作成]** ダイアログボックス：
-   * 指定 **クライアント ID** 価値を持って **clientId** を開発者コンソールのサービス資格情報から削除します。
-   * 指定 **クライアントの秘密鍵** 価値を持って **clientSecret** を開発者コンソールのサービス資格情報から削除します。
-   * 指定 **テクニカルアカウント ID**  価値を持って **id** を開発者コンソールのサービス資格情報から削除します。
-   * 指定 **組織 ID**  価値を持って **org** を開発者コンソールのサービス資格情報から削除します。
-   * **メタスコープ**  価値を持って **メタスコープ** を開発者コンソールのサービス資格情報から削除します。
-   * **秘密鍵**  価値を持って **privateKey** を開発者コンソールのサービス資格情報から削除します。
+   接続の作成に必要な[サービス資格情報は Developer Console から](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ja)取得できます。
+
+1. **IMS エンドポイント**&#x200B;の `ims-na1.adobelogin.com` を、Developer Console のサービス資格情報の **imsEndpoint** の値に置き換えます。
 
    >[!NOTE]
    >
-   >* の場合 **秘密鍵**，削除 `\r\n` 値から。
-   >  例えば、秘密鍵の値が次のような場合、
-   >`\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`を削除してから、 `\r\n` 秘密鍵から、鍵は次のようになります。両方の値が別の行に表示されます。
+   > `imsEndpoint` URL の追加中、**IMS エンドポイント**&#x200B;テキストボックスの `https://` を保持します。
+
+1. **[!UICONTROL 接続を作成]**&#x200B;ダイアログボックスで、次の値を指定します。
+   * Developer Console のサービス資格情報から **clientId** の値を使用して&#x200B;**クライアント ID** を指定します。
+   * Developer Console のサービス資格情報から **clientSecret** の値を使用して&#x200B;**クライアント秘密鍵**&#x200B;を指定します。
+   * Developer Console のサービス資格情報から **id** の値を使用して&#x200B;**テクニカルアカウント ID** を指定します。
+   * Developer Console のサービス資格情報から **org** の値を使用して&#x200B;**組織 ID** を指定します。
+   * Developer Console のサービス資格情報から **metascopes** の値を使用して&#x200B;**メタスコープ**&#x200B;を指定します。
+   * Developer Console のサービス資格情報から **privateKey** の値を使用して&#x200B;**秘密鍵**&#x200B;を指定します。
+
+   >[!NOTE]
+   >
+   >* **秘密鍵**&#x200B;の場合は、値から `\r\n` を削除します。
+   >  例えば、秘密鍵が次のような場合があります。
+   >`\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw` の場合、秘密鍵から `\r\n` を削除すると、鍵は次のようになり、両方の値が別の行に表示されます。
    >
    >   `IJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL`
    >
    >   `My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`
    > 
-   >* また、ファイルから秘密鍵または証明書を取得するオプションもあります ( **抽出** 」ボタンをクリックします。
+   >* また、「**抽出**」ボタンを選択して、ファイルから秘密鍵または証明書を取得するオプションもあります。
 
 1. 「**続行**」をクリックします。
 
-   作成した接続が **[!UICONTROL 接続]** （内） **[!UICONTROL ウェブフックの追加]** ダイアログボックス。
+   作成した接続は、**[!UICONTROL Web フックを追加]**&#x200B;ダイアログボックスの&#x200B;**[!UICONTROL 接続]**&#x200B;のドロップダウンリストに表示され始めます。
 
-1. 作成した接続を選択 **[!UICONTROL 接続]** 」をドロップダウンリストから選択します。
+1. 作成した接続の&#x200B;**[!UICONTROL 接続]**&#x200B;をドロップダウンリストから選択します。
 1. 「**[!UICONTROL 保存]**」をクリックします。
-1. クリック **[!UICONTROL OK]** をクリックし、シナリオの変更を保存します。
+1. 「**[!UICONTROL OK]**」をクリックして、シナリオの変更を保存します。
 1. シナリオを有効にするには、シナリオエディターでオン/オフ切り替えボタンをクリックします。
 
 >[!NOTE]
 >
-> Workfrontシナリオを有効にしない場合、フォームの送信は検出されず、Workfrontに送信アクションを設定すると、送信が失敗します。
+> Workfront シナリオをアクティブ化しない場合、フォームの送信は検出されず、送信アクションを Workfront に設定すると送信が失敗します。
 
-### 2. Workfront Fusion 用のアダプティブフォームの送信アクションを設定する
+### 2. Workfront Fusion 用のアダプティブフォームの送信アクションの設定
 
 Workfront Fusion の送信アクションは、次の目的で設定できます。
-* [新しいアダプティブForms](#new-af-submit-action)
+* [新規のアダプティブフォーム](#new-af-submit-action)
 * [既存のアダプティブフォーム](#existing-af-submit-action)
 
-#### Workfront Fusion 用の新しいアダプティブフォームの送信アクションを設定する {#new-af-submit-action}
+#### Workfront Fusion 用の新しいアダプティブフォームの送信アクションの設定 {#new-af-submit-action}
 
-新しいアダプティブフォームの送信アクションをWorkfront Fusion 用に設定するには：
+Workfront Fusion 用に新しいアダプティブフォームの送信アクションを設定するには、次の手順に従います。
 
-1. AEMインスタンスにログインします。
-1. に移動します。 **[!UICONTROL Forms]** > **[!UICONTROL Formsとドキュメント]** > **[!UICONTROL 作成]** > **[!UICONTROL アダプティブフォーム]**. The **[!UICONTROL フォームを作成]** ウィザードが表示されます。
-1. アダプティブフォームテンプレートを **[!UICONTROL ソース]** タブをクリックします。
-1. 次からテーマを選択： **[!UICONTROL スタイル]** タブをクリックします。
+1. AEM インスタンスにログインします。
+1. **[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**／**[!UICONTROL 作成]**／**[!UICONTROL アダプティブフォーム]**&#x200B;に移動します。**[!UICONTROL フォームを作成]**&#x200B;ウィザードが表示されます。
+1. 「**[!UICONTROL ソース]**」タブからアダプティブフォームテンプレートを選択します。
+1. 「**[!UICONTROL スタイル]**」タブからテーマを選択します。
 
-   ![Workfront Fusion の送信アクション](/help/forms/assets/workfront-scenario-new-af.png)
+   ![Workfront Fusion 用の送信アクション](/help/forms/assets/workfront-scenario-new-af.png)
 
-1. を選択します。 **[!UICONTROL Workfront Fusion シナリオを呼び出す]** から **[!UICONTROL 送信]** タブをクリックします。
-1. 作成した Webhook を **[!UICONTROL オプション]** 」タブをクリックします。 **[!UICONTROL プロパティ]** ウィンドウ
+1. 「**[!UICONTROL 送信]**」タブから「**[!UICONTROL WorkFront Fusion シナリオを呼び出し]**」を選択します。
+1. **[!UICONTROL プロパティ]**&#x200B;ウィンドウの「**[!UICONTROL オプション]**」タブから、作成した Web フックを選択します。　
 
    >[!NOTE]
    >
-   > Workfrontシナリオの Webhook 名は、 **オプション** 」ドロップダウンリストから選択できます。
+   > Workfront シナリオの Web フック名は、**オプション**&#x200B;ドロップダウンリストに表示されます。
 
 1. 「**[!UICONTROL 作成]**」をクリックします。
-1. 新しいアダプティブフォームの名前を指定し、 **[!UICONTROL 作成]**.
+1. 新しいアダプティブフォームの名前を指定し、「**[!UICONTROL 作成]**」をクリックします。
 
-#### 既存のアダプティブフォームの送信アクションをWorkfront Fusion 用に設定する {#existing-af-submit-action}
+#### Workfront Fusion 用に既存アダプティブフォームの送信アクションの設定 {#existing-af-submit-action}
 
-既存のアダプティブフォームの送信アクションをWorkfront Fusion 用に設定するには：
+既存のアダプティブフォームの送信アクションを Workfront Fusion 用に設定するには、次の手順に従います。
 
-1. AEMインスタンスにログインします。
+1. AEM インスタンスにログインします。
 1. **[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;に移動します。
 1. アダプティブフォームを選択し、編集モードでフォームを開きます。
 1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
@@ -179,14 +179,14 @@ Workfront Fusion の送信アクションは、次の目的で設定できます
    ![Workfront Fusion の送信アクション](/help/forms/assets/workfront-scenario-existing-af.png)
 
 1. 「**[!UICONTROL 送信]**」タブを開きます。
-1. を選択します。 **[!UICONTROL 送信アクション]** as **[!UICONTROL Workfront Fusion シナリオを呼び出す]**
-1. 選択 **[!UICONTROL Workfront Fusion のシナリオ]** 」をドロップダウンリストから選択します。
+1. **[!UICONTROL Workfront Fusion シナリオの呼び出し]**&#x200B;として、**[!UICONTROL 送信アクション]**&#x200B;を選択します。
+1. ドロップダウンリストから「**[!UICONTROL Workfront Fusion のシナリオ]**」を選択します。
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
 ## ベストプラクティス {#best-practices}
 
-* AEMインスタンスでシナリオ名を取得する方法がないので、Webhook 名は慎重に選択することをお勧めします。 後で Webhook 名を変更しても、AEM Formsの送信アクションドロップダウンリストには反映されません。
-* 1 つのシナリオに複数の Webhook リンクを含めることができますが、一度にアクティブになる Webhook リンクは 1 つだけです。 リンクされていない Webhook は、AEM Formsの送信アクションドロップダウンリストに表示されないように、削除することをお勧めします。
+* AEM インスタンスでシナリオ名を取得する方法がないので、Web フック名は慎重に選択することをお勧めします。後で Web フック名を変更しても、AEM Forms の送信アクションドロップダウンリストには反映されません。
+* 1 つのシナリオに複数の Web フックリンクを含めることができますが、一度にアクティブになる Web フックリンクは 1 つだけです。リンクされていない Web フックは、AEM Forms の送信アクションドロップダウンリストに表示されないように削除することをお勧めします。
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
 

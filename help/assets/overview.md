@@ -1,5 +1,5 @@
 ---
-title: Assets as a [!DNL Cloud Service] の概要
+title: Assets as a  [!DNL Cloud Service] の概要
 description: Adobe Experience Manager Assets as a Cloud Service の使用および管理方法について説明します。
 contentOwner: AK
 feature: Asset Management

@@ -5,7 +5,7 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 97a1781f0a2d59d2bed7b03c7d4f045c81784f60
 workflow-type: tm+mt
 source-wordcount: '2797'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -397,7 +397,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 mod_rewrite ログレベルは、`conf.d/variables/global.var` ファイル内の変数 REWRITE_LOG_LEVEL によって定義されます。
 
-Error、Warn、Info、Debug および Trace1～Trace8 に設定でき、デフォルト値は Warn です。RewriteRules をデバッグするには、ログレベルを trace2 に上げることをお勧めします。 書き換えルールのデバッグには、 [Dispatcher SDK](../../dispatcher/validation-debug.md). AEM as a Cloud Serviceの最大ログレベルは次のとおりです。 `debug`. したがって、現在のところ、クラウド内の書き換えルールを効果的にデバッグすることはできません。
+Error、Warn、Info、Debug および Trace1～Trace8 に設定でき、デフォルト値は Warn です。RewriteRules をデバッグするには、ログレベルを Trace2 に上げることをお勧めします。書き換えルールのデバッグには、[Dispatcher SDK](../../dispatcher/validation-debug.md) の使用をお勧めします。AEM as a Cloud Service の最大ログレベルは `debug` です。したがって、現在のところ、クラウド内の書き換えルールを効果的にデバッグすることはできません。
 
 詳細は、[mod_rewrite モジュールのドキュメント](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging)を参照してください。
 
@@ -611,7 +611,7 @@ Splunk アカウントを持っている顧客は、カスタマーサポート�
 
 Splunk に送信されるログに関連付けられるネットワーク帯域幅は、お客様のネットワーク I/O 使用の一部と見なされます。
 
-CDN ログは、新しいサポートチケットリクエストのために Splunk に転送されます。Splunk 転送を既に有効にしているお客様は、将来 CDN ログを追加できます。
+CDN ログは、新しいサポートチケットリクエストの Splunk に転送されます。Splunk 転送を既に有効にしているお客様は、将来 CDN ログを追加できます。
 
 ### Splunk 転送の有効化 {#enabling-splunk-forwarding}
 

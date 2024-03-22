@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: a8fbf0a9a1f7e12b6a668544b1a67d8551abf1b7
 workflow-type: tm+mt
 source-wordcount: '5135'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -252,12 +252,12 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 | 1 行のテキスト | `String`、`[String]` | 作成者名、場所名などの単純な文字列に使用します。 |
 | 複数行テキスト | `String`、`[String]` | 記事の本文などのテキストを出力するために使用します |
 | 数値 | `Float`、`[Float]` | 浮動小数点数と整数を表示するために使用します |
-| ブール値 | `Boolean` | チェックボックスを表示するために使用します（単純な真／偽のステートメント） |
+| ブーリアン | `Boolean` | チェックボックスを表示するために使用します（単純な真／偽のステートメント） |
 | 日時 | `Calendar` | 日時を ISO 8601 形式で表示するために使用します. 選択したタイプに応じて、AEM GraphQL で使用できるフレーバーは、`onlyDate`、`onlyTime`、`dateTime` の 3 つです。 |
 | 定義済みリスト | `String` | モデルの作成時に定義されたオプションのリストに含まれるオプションを表示するために使用します |
 | タグ | `[String]` | AEM で使用されているタグを表す文字列のリストを表示するために使用します |
 | コンテンツ参照 | `String`、`[String]` | AEM 内の別のアセットへのパスを表示するために使用します |
-| フラグメント参照 | *モデル型* <br><br>単一のフィールド：`Model` - 直接参照されるモデル型 <br><br>マルチフィールド（参照タイプが 1 つ）：`[Model]` - 型の配列 `Model`（配列から直接参照）<br><br>複数の参照型を持つマルチフィールド：`[AllFragmentModels]` - 和集合型を持つ配列から参照される、すべてのモデル型の配列 | モデルの作成時に定義された、特定のモデル型の 1 つ以上のコンテンツフラグメントの参照に使用します |
+| フラグメント参照 | *モデル型の*<br><br>単一のフィールド：`Model` - 直接参照されるモデル型 <br><br>マルチフィールド（1 つの参照タイプ）：`[Model]` - 型の配列 `Model`（配列から直接参照）<br><br>複数の参照型を持つマルチフィールド：`[AllFragmentModels]` - 和集合型を持つ配列から参照される、すべてのモデル型の配列 | モデルの作成時に定義された、特定のモデル型の 1 つ以上のコンテンツフラグメントの参照に使用します |
 
 {style="table-layout:auto"}
 
@@ -715,7 +715,7 @@ query {
 
 Web に最適化された画像配信を使用すると、GraphQL クエリを使用して次のことができます。
 
-* DAM アセット画像 ( **コンテンツ参照**)
+* DAM アセット画像への URL をリクエストします（**コンテンツリファレンス**&#x200B;によって参照）
 
 * 画像の特定のレンディションが自動的に生成されて返されるように、クエリでパラメーターを渡す
 
@@ -735,9 +735,9 @@ AEM を使用して、次のことができます。
 
 GraphQL のソリューションでは、次のことが可能です。
 
-* URL のリクエスト：を使用します。 `_dynamicUrl` の `ImageRef` 参照
+* URL のリクエスト：`ImageRef` の参照で `_dynamicUrl` を使用
 
-* パスパラメーター：追加 `_assetTransform` を、フィルターが定義されているリストヘッダーに追加します。
+* パラメーターを渡す：フィルターが定義されているリストヘッダーに `_assetTransform` を追加
 
 <!-- 
 >[!NOTE]
@@ -912,7 +912,7 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
      >
      >末尾の `;` は、パラメーターのリストを明確に終了するために必須です。
 
-### Web に最適化された画像配信の制限 {#web-optimized-image-delivery-limitations}
+### Web に最適化された画像配信に関する制限事項 {#web-optimized-image-delivery-limitations}
 
 次の制限があります。
 
@@ -1049,26 +1049,26 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
    * 画像配信の場合：
 
-      * `_authorURL`:AEMオーサー上の画像アセットの完全な URL
-      * `_publishURL`:AEM Publish 上の画像アセットの完全な URL
+      * `_authorURL`：AEM オーサー上の画像アセットへの完全な URL
+      * `_publishURL`：AEM パブリッシュ上の画像アセットへの完全な URL
 
-      * の場合 [web に最適化された画像配信](#web-optimized-image-delivery-in-graphql-queries) （DAM アセットの） :
+      * [Web に最適化された画像配信](#web-optimized-image-delivery-in-graphql-queries)（DAM アセット）の場合：
 
-         * `_dynamicUrl`:Web に最適化された DAM アセットの完全な URL( `ImageRef` 参照
+         * `_dynamicUrl`：`ImageRef` 参照で web に最適化された DAM アセットの完全な URL
 
            >[!NOTE]
            >
-           >`_dynamicUrl` は、Web に最適化された DAM アセットに使用する推奨 URL で、 `_path`, `_authorUrl`、および `_publishUrl` 可能な限り
+           >`_dynamicUrl` は、画像アセットに使用する推奨 URL であり、可能な限り `_path`、`_authorUrl` および `_publishUrl` の代わりに使用してください。
 
-         * `_assetTransform`：フィルターが定義されているリストヘッダーのパラメーターを渡します。
+         * `_assetTransform`：フィルターを定義するリストヘッダーにパラメーターを渡す
 
          * 以下を参照してください。
 
-            * [完全なパラメーターを持つ Web 最適化された画像配信用のサンプルクエリ](#web-optimized-image-delivery-full-parameters)
+            * [すべてのパラメーターを使用した web に最適化された画像配信用サンプルクエリ](#web-optimized-image-delivery-full-parameters)
 
-            * [単一の指定パラメーターを持つ、Web に最適化された画像配信のサンプルクエリ](#web-optimized-image-delivery-single-query-variable)
+            * [単一の指定パラメーターを使用した web に最適化された画像配信用サンプルクエリ](#web-optimized-image-delivery-single-query-variable)
 
-   * `_tags`：タグを含むコンテンツフラグメントまたはバリエーションの ID を表示します。これは、 `cq:tags` 識別子。
+   * `_tags`：タグを含むコンテンツフラグメントまたはバリエーションの ID を表示する `cq:tags` 識別子の配列です。
 
       * [サンプルクエリ - 市区町村の区切り文字としてタグ付けされた、すべての都市の名前](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)を参照してください。
       * 詳しくは、[特定のタグが添付された、任意のモデルのコンテンツフラグメントバリエーションのサンプルクエリ](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)を参照してください。
@@ -1079,7 +1079,7 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
      >
      >また、コンテンツフラグメントのメタデータを一覧表示して、タグをクエリできます。
 
-   * 操作は次のようになります。
+   * 操作の場合：
 
       * `_operator`：特定の演算子（`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`、`STARTS_WITH`）を適用します
          * [サンプルクエリ - 「Jobs」という名前を持たないすべての人物](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)を参照してください

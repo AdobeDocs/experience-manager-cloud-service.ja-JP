@@ -1,30 +1,30 @@
 ---
-title: レイアウトコンテナとレイアウトモードの設定
-description: レスポンシブレイアウトをコンテンツ作成者に対して有効にするためのレイアウトコンテナおよびレイアウトモードの設定方法について説明します。
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+title: レイアウトコンテナおよびレイアウトモードの設定
+description: コンテンツ作成者がレスポンシブレイアウトを使用できるように、レイアウトコンテナとレイアウトモードを設定する方法について説明します。
+exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
 workflow-type: tm+mt
 source-wordcount: '1250'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
+# レイアウトコンテナおよびレイアウトモードの設定 {#configuring-layout-container-and-layout-mode}
 
-# レイアウトコンテナとレイアウトモードの設定 {#configuring-layout-container-and-layout-mode}
-
-[レスポンシブレイアウト](/help/sites-cloud/authoring/page-editor/responsive-layout.md) ～を実現するメカニズムである [レスポンシブ web デザイン。](https://ja.wikipedia.org/wiki/Responsive_web_design) これにより、コンテンツ作成者は、ユーザーが使用するデバイスに応じたレイアウトとサイズの Web ページを作成できます。
+[レスポンシブレイアウト](/help/sites-cloud/authoring/page-editor/responsive-layout.md)は、[レスポンシブ web デザインを実現するためのメカニズムです。](https://en.wikipedia.org/wiki/Responsive_web_design)レスポンシブレイアウトを使用すると、コンテンツ作成者は、ユーザーが使用するデバイスのレイアウトとサイズに応じて web ページを作成できます。
 
 AEM は、次のメカニズムを組み合わせて使用することにより、ページのレスポンシブレイアウトを実現します。
 
-* **[レイアウトコンテナ](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)**  — このコンポーネントは、レスポンシブグリッド内にコンポーネントを追加および配置できるグリッド段落システムを提供します。
+* **[レイアウトコンテナ](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - このコンポーネントは、レスポンシブグリッド内にコンポーネントを追加および配置できるグリッド段落システムを提供します。
    * ページのデフォルトの parsys として使用したり、コンポーネントブラウザーで作成者が使用できるようにしたりできます。
-   * デフォルト **レイアウトコンテナ** コンポーネントは以下で定義されます。 `/libs/wcm/foundation/components/responsivegrid`.
+   * デフォルトの&#x200B;**レイアウトコンテナ**&#x200B;コンポーネントは `/libs/wcm/foundation/components/responsivegrid` で定義します。
    * レイアウトコンテナは次のように定義できます。
       * ユーザーがページに追加できるコンポーネントとして。
       * ページのデフォルトの parsys として。
-      * コンポーネントとデフォルトの parsys の両方として。
-         * レイアウトコンテナをページの標準とし、この中でユーザーがレイアウトコンテナをさらに追加できるようにすることができます。例えば、列を制御する場合などです。
-* **[レイアウトモード](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)**  — レイアウトコンテナをページに配置したら、 **レイアウト** モード：レスポンシブグリッド内にコンテンツを配置します。
-* **[エミュレーター](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)**  — コンポーネントのサイズをインタラクティブに変更することで、デバイスやウィンドウのサイズに従ってレイアウトを並べ替えるレスポンシブ Web サイトを作成および編集できます。 その後、ユーザーはエミュレーターを使用してコンテンツがどのようにレンダリングされるかを確認できます。
+      * コンポーネントとデフォルトの両方の parsys として。
+         * レイアウトコンテナをページの標準として使用し、その中にユーザーがレイアウトコンテナをさらに追加できるようにすることができます。例えば、列を制御する場合などです。
+* **[レイアウトモード](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)** - レイアウトコンテナをページに配置したら、**レイアウト**&#x200B;モードを使用して、レスポンシブグリッド内にコンテンツを配置できます。
+* **[エミュレーター](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)** - これにより、コンポーネントのサイズをインタラクティブに変更することで、デバイスやウィンドウのサイズに従ってレイアウトを並べ替えるレスポンシブ web サイトを作成および編集できます。その後、ユーザーはエミュレーターを使用してコンテンツがどのようにレンダリングされるかを確認できます。
 
 これらのレスポンシブグリッドのメカニズムを使用すると、次のことができます。
 
@@ -35,45 +35,45 @@ AEM は、次のメカニズムを組み合わせて使用することにより�
 
 >[!NOTE]
 >
->サイトを [プロジェクトアーキタイプ](#addlink) または [標準サイトテンプレート](#addlink)の場合、レスポンシブレイアウトは通常設定されます。 それ以外の場合は、 [レイアウトコンテナコンポーネントをアクティブにします。](#enable-the-layout-container-component-for-page) 」を設定します。
+>[プロジェクトアーキタイプ](#addlink)または[標準サイトテンプレート](#addlink)からサイトを作成する場合、通常はレスポンシブレイアウトが設定されます。それ以外の場合は、ページの[レイアウトコンテナコンポーネントをアクティベート](#enable-the-layout-container-component-for-page)する必要があります。
 
 ## エミュレーターの有効化 {#enabling-emulator}
 
-The [プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) そして [標準サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) は、既にエミュレーターの使用を有効にしています。 コアコンポーネントやアーキタイプに基づかない独自のコンテンツを開発した場合は、このドキュメントを参照してください [レスポンシブデザイン](/help/implementing/developing/introduction/responsive-design.md) を参照してください。
+[プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)と[標準サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template)は、エミュレーターを使用するために既に有効になっています。コアコンポーネントやアーキタイプに基づいていない独自のコンテンツを開発した場合、これらの機能を活用しながらコンポーネントを開発することができます。この方法について詳しくは、[レスポンシブデザイン](/help/implementing/developing/introduction/responsive-design.md)のドキュメントを参照してください。
 
 ## サイトのレイアウトモードのアクティベート {#activate-layout-mode-for-your-site}
 
-**レイアウト** モードでは、エミュレーターを使用して、様々なデバイス向けにコンテンツのレイアウトを調整できます。 WKND サンプルサイトは、既に **レイアウト** モード。 次の手順に従って、独自のサイトを有効にします。
+**レイアウト**&#x200B;モードでは、エミュレーターを使用して、様々なデバイスに合わせてコンテンツのレイアウトを調整できます。WKND サンプルサイトでは、**レイアウト**&#x200B;モードが既に有効になっています。独自のサイトを有効にするには、次の手順に従います。
 
-### ブレークポイントの設定 {#configure-breakpoints}
+### ブレークポイントを設定 {#configure-breakpoints}
 
-ブレークポイントは、レスポンシブデザインに不可欠で、コンテンツをターゲットデバイスに合わせて調整する方法とタイミングを定義するのに役立ちます。 ただし、導入するブレークポイントごとに、コンテンツに対応するための作成者向けの追加作業が生じるので、注意が必要です。 常に存在するデフォルトのブレークポイントを含め、2 つのブレークポイントで十分な場合が多くあります。 Adobeでは、デフォルトを含む 3 つ以上のブレークポイントを作成しないことをお勧めします（つまり、以下の 2 つ以下のノード）。 `cq:responsive/breakpoint`.
+ブレークポイントは、レスポンシブデザインに不可欠で、コンテンツをターゲットデバイスに合わせて調整する方法とタイミングを定義します。ただし、導入するブレークポイントが増えると、作成者がコンテンツを調整するために行う作業が増えるため、注意してください。多くの場合、常に存在するデフォルトのブレークポイントを含め、2 つのブレークポイントで十分です。アドビでは、デフォルトを含めて 3 つ以上のブレークポイントを作成しないこと、つまり `cq:responsive/breakpoint` の下に 2 つ以上のノードを作成しないことをお勧めします。
 
-* ブレークポイントにはタイトルと幅があります。
-   * タイトルは、必要に応じて向きと共に、一般的なデバイスのグループ化を表します。
+* 次のように、ブレークポイントにはタイトルと幅があります。
+   * タイトルは、一般的なデバイスグループを示し、必要に応じてデバイスの向きも含まれます。
       * 例：`phone`、`tablet`
-   * 幅は、その汎用デバイスのグループ化の最大幅をピクセル単位で定義します。
+   * 幅は、一般的なデバイスグループの最大幅をピクセル単位で定義します。
       * 例えば、電話のブレークポイントの幅が 768 である場合、これが電話デバイスに使用されるレイアウトの最大幅になります。
-* ブレークポイントは次のように定義できます。
+* 次のように、ブレークポイントを定義できます。
    * ページテンプレートでは、設定は該当するテンプレートで作成されたすべてのページにコピーされます。
    * ページノードでは、設定は子ページに継承されます。
-* ブレークポイントは、エミュレーターを使用しているときに、ページエディターの上部にマーカーとして表示されます。
-* ブレークポイントは親ノード階層から継承され、自由に上書きできます。
-* デフォルト（標準）のブレークポイントがあり、最後に設定したブレークポイントより上の部分をすべてカバーします。
-* ブレークポイントは、CRXDE Liteまたは XML を使用して定義できます。
+* ブレークポイントは、エミュレーターの使用中に、ページエディターの上部にマーカーとして表示されます。
+* ブレークポイントは、親ノード階層から継承され、自由に上書きできます。
+* 最後に設定されたブレークポイントより上のすべてに対応するデフォルト（標準）のブレークポイントがあります。
+* ブレークポイントは、CRXDE Lite または XML を使用して定義できます。
 
-新規プロジェクトと既存プロジェクトの両方でブレークポイントを考慮する必要があります。
+ブレークポイントは、新しいプロジェクトと既存のプロジェクトの両方で考慮する必要があります。
 
 * 新しいプロジェクトを設定する場合は、テンプレートにブレークポイントを追加する必要があります。
 * 既存のプロジェクト（既存のコンテンツを含む）を移行する場合は、次の操作を行います。
    * テンプレートにブレークポイントを追加します。
    * 既存のページに同じブレークポイントを追加します。
 
-継承のため、これはコンテンツのルートページに対してのみおこなう必要があります。
+継承のため、コンテンツのルートページに対してのみ行う必要があります。
 
 #### CRXDE Lite を使用したブレークポイントの設定 {#configuring-breakpoints-using-crxde-lite}
 
-1. CRXDE Liteを使用して、次のいずれかに移動します。
+1. CRXDE Lite を使用して、次のいずれかに移動します。
 
    * テンプレート定義。
    * ページの `jcr:content` ノード。
@@ -93,7 +93,7 @@ The [プロジェクトアーキタイプ](https://experienceleague.adobe.com/do
    * 名前：`<descriptive name>`
    * 型：`nt:unstructured`
    * タイトル：`String <descriptive title seen in Emulator>`
-   * 幅： `Decimal <value of breakpoint>`
+   * 幅：`Decimal <value of breakpoint>`
 
 #### XML を使用したブレークポイントの設定 {#configuring-breakpoints-using-xml}
 
@@ -110,9 +110,9 @@ The [プロジェクトアーキタイプ](https://experienceleague.adobe.com/do
 </cq:responsive>
 ```
 
-## ページのコンポーネントサイズ変更の有効化 {#enable-component-resizing-for-the-page}
+## ページのコンポーネントサイズ変更を有効にする {#enable-component-resizing-for-the-page}
 
-内のコンポーネントのサイズ変更 **レイアウト** モードは、レスポンシブデザインの重要な部分で、WKND サンプルサイトで使用できます。 次の手順に従って、独自のサイトを有効にします。
+**レイアウト**&#x200B;モードでのコンポーネントのサイズ変更は、レスポンシブデザインの重要な部分で、WKND サンプルサイトで使用できます。独自のサイトを有効にするには、次の手順に従います。
 
 ### レイアウトコンテナをメインの parsys として設定する {#set-layout-container-as-main-parsys}
 
@@ -145,7 +145,7 @@ The [プロジェクトアーキタイプ](https://experienceleague.adobe.com/do
 
 AEM では、必要な CSS の一部の生成に LESS を使用するため、これらをプロジェクトに含める必要があります。
 
-次を作成する必要があります： [クライアントライブラリ](/help/implementing/developing/introduction/clientlibs.md) 追加の設定および関数呼び出しを提供する。 次の LESS エクストラクトは、プロジェクトに追加する必要がある最小限の例です。
+追加の設定と関数呼び出しを提供するには、[クライアントライブラリ](/help/implementing/developing/introduction/clientlibs.md)を作成する必要があります。次の LESS エクストラクトは、プロジェクトに追加する必要がある最小限の例です。
 
 ```java
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -181,7 +181,7 @@ AEM では、必要な CSS の一部の生成に LESS を使用するため、�
 
 レスポンシブコンテナ内に保持されるコンポーネントは、レスポンシブグリッドのサイズに従って（それぞれの HTML DOM 要素と共に）サイズ変更されます。したがって、このような状況では、（含まれている）固定幅の DOM 要素の定義を回避（または更新）することをお勧めします。
 
-例：
+次に例を示します。
 
 * 前：
 
@@ -202,7 +202,7 @@ AEM では、必要な CSS の一部の生成に LESS を使用するため、�
 
 レスポンシブグリッドに含まれているアダプティブ画像のコンテンツを適切にサイズ変更および更新するには、`REFRESH_PAGE` リスナーに設定されている `afterEdit` を、含まれているすべてのコンポーネントの `EditConfig` ファイルに追加する必要があります。
 
-例：
+次に例を示します。
 
 `<cq:listeners jcr:primaryType="cq:EditListenersConfig" afteredit="REFRESH_PAGE" />`
 
@@ -214,15 +214,15 @@ AEM では、必要な CSS の一部の生成に LESS を使用するため、�
 
 ## ページ用のレイアウトコンテナコンポーネントの有効化 {#enable-the-layout-container-component-for-page}
 
-効果的なレスポンシブレイアウトを実現するには、コンテンツ作成者がレイアウトコンテナコンポーネントのインスタンスをページにドラッグできる必要があります。 これは、WKND サンプルサイトで既に有効になっています。 次の手順に従って、独自のサイトを有効にします。
+効果的なレスポンシブレイアウトを実現するには、コンテンツ作成者がレイアウトコンテナコンポーネントのインスタンスをページにドラッグできる必要があります。これは、WKND サンプルサイトで既に有効になっています。独自のサイトを有効にするには、次の手順に従います。
 
 ### ページ編集用のレイアウトコンテナコンポーネントの有効化 {#enable-the-layout-container-component-for-page-editing}
 
 作成者がさらに多くのレスポンシブグリッドをコンテンツページに追加できるようにするには、ページのレイアウトコンテナコンポーネントを有効にする必要があります。これは、次のいずれかを使用して行います。
 
-* **オーサー環境を使用する** - [ページテンプレートの編集](/help/sites-cloud/authoring/sites-console/templates.md) をクリックして、ページのレイアウトコンテナを有効にします。
-* **コンポーネント定義**  — 用途 `allowedComponent` または静的インクルードを使用してコンポーネントを定義します。
+* **オーサー環境経由** - [ページテンプレートを編集](/help/sites-cloud/authoring/sites-console/templates.md)して、ページのレイアウトコンテナを有効にします。
+* **コンポーネント定義** - コンポーネントを定義するときに、`allowedComponent` または静的インクルードを使用します。
 
-### レイアウトコンテナのグリッドの設定 {#configure-the-grid-of-the-layout-container}
+### レイアウトコンテナのグリッドを設定する {#configure-the-grid-of-the-layout-container}
 
-レイアウトコンテナの特定のインスタンスごとに使用できる列数を設定できます [ページテンプレートを編集して、](/help/sites-cloud/authoring/sites-console/templates.md)
+[ページテンプレートを編集することで](/help/sites-cloud/authoring/sites-console/templates.md)、レイアウトコンテナの特定のインスタンスごとに、使用可能な列の数を設定できます。

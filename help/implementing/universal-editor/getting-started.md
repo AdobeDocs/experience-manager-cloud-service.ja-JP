@@ -5,7 +5,7 @@ exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 source-git-commit: 799ca20f8787afffd783c93a2480e096fffb1566
 workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 90%
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,7 @@ AEM アプリをオンボーディングし、ユニバーサルエディター�
 
 ## ユニバーサルエディターへのアクセスをリクエスト {#request-access}
 
-最初にユニバーサルエディターへのアクセスをリクエストする必要があります。開く [&#39;https://experience.adobe.com/#/aem/editor&quot;](https://experience.adobe.com/#/aem/editor)、ログインし、ユニバーサルエディターにアクセスできるかどうかを検証します。
+最初にユニバーサルエディターへのアクセスをリクエストする必要があります。[`https://experience.adobe.com/#/aem/editor``](https://experience.adobe.com/#/aem/editor) を開いてサインインし、ユニバーサルエディターにアクセスできるかどうか検証します。
 
 アクセス権がない場合は、同じページにリンクされたフォームからリクエストできます。
 

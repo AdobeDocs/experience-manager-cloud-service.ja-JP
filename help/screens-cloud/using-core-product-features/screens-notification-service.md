@@ -1,12 +1,12 @@
 ---
-title: Screens の Screens 通知サービス (as a Cloud Service)
-description: ここでは、Screens で通知サービスを設定するas a Cloud Service方法について説明します。
+title: Screens as a Cloud Service の Screens 通知サービス
+description: このページでは、Screens as a Cloud Service で通知サービスを設定する方法について説明します。
 index: true
 exl-id: 74215a70-45c8-4b7f-ba30-60c332de07e9
 source-git-commit: 69798b1ac3758d37c4e2f480ccc23bae24d6a814
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 5%
+ht-degree: 42%
 
 ---
 
@@ -24,9 +24,9 @@ AEM Screens Cloud では、お客様は次の情報を含むサポートチケ�
 
 * 顧客名
 * IMS OrgID
-* スケジュールの頻度：このモニターが電子メールを送信する時間または頻度を時間単位（1 など）で指定します。
-* ping タイムアウト：デバイスが到達不能と見なされるまでの時間を分単位で指定します。
-* 電子メール ID ：レポートの送信先の電子メール ID
+* スケジュールの頻度：このモニターがメールを送信する時刻または頻度（例：1）を指定します。
+* ping タイムアウト：デバイスが到達不能と見なされるまでの経過時間を分単位で指定します。
+* メール ID ：レポートの送信先のメール ID
 
 >[!NOTE]
 >E メールの生成時に、指定された ping タイムアウトに対して ping が送信されていないデバイスの場合にのみ、E メールでプレーヤーがレポートされます。

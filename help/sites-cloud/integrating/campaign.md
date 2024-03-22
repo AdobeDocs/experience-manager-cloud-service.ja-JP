@@ -7,14 +7,14 @@ exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
 source-git-commit: a9296bba5d1ad3f6eb2190de9c15a1083f2ac6d5
 workflow-type: tm+mt
 source-wordcount: '148'
-ht-degree: 64%
+ht-degree: 75%
 
 ---
 
 
 # AEM as a Cloud Service と Adobe Campaign の統合 {#integrating-campaign}
 
-Adobe Campaignとの統合に対するAEMas a Cloud Serviceのサポートについて説明します。
+Adobe Campaign との統合に対する AEM as a Cloud Service のサポートについて説明します。
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ AEM as a Cloud Serviceとの統合のサポートは、実装した Campaign の
 |---|---|
 | [CAMPAIGN CLASSICv7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=ja) | サポート対象外 |
 | [Campaign v8 （クライアントコンソール）](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=ja) | サポート対象外 |
-| Campaign Web ユーザーインターフェイス | サポート対象[詳細情報](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-assets.html) |
+| Campaign web ユーザーインターフェイス | サポート対象[詳細情報](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-assets.html) |
 
 
 ## Adobe Campaign Standard との統合 {#acs}

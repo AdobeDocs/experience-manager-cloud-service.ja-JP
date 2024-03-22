@@ -228,7 +228,7 @@ AEM as a Cloud Service の最新のアーキテクチャでは、以前の世代
 
 * プログラム設定
    * [オンボーディングジャーニー](/help/journey-onboarding/overview.md)
-   * [プログラムとプログラムのタイプ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+   * [プログラムとプログラムタイプ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 * 開発アーキテクチャ
    * [Cloud Manager リポジトリ](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
    * [CI／CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)

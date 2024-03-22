@@ -5,7 +5,7 @@ exl-id: 02795a31-244a-42b4-8297-2649125d7777
 source-git-commit: 5ddd4bbcce10c5cda97e3ea3f6750b209b5743f0
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -30,11 +30,11 @@ ht-degree: 94%
 |---|---|
 | `data-aue-resource` | リソースに対する URN。[AEM のユニバーサルエディターを使用した概要ドキュメントページのインストルメント](getting-started.md#instrument-thepage)の節を参照してください。 |
 | `data-aue-prop` | リソースの属性。[AEM のユニバーサルエディターを使用した概要ドキュメントページのインストルメント](getting-started.md#instrument-thepage)の節を参照してください。 |
-| `data-aue-type` | [編集可能な項目のタイプ](#item-types) （例：テキスト、画像、参照） |
+| `data-aue-type` | [編集可能な項目のタイプ](#item-types)（テキスト、画像、参照など） |
 | `data-aue-filter` | どの参照が使用できるかをを定義します |
 | `data-aue-label` | エディターに表示される選択可能な項目のカスタムラベルを定義します。<br>`data-aue-model` が設定されている場合、ラベルはモデルを使用して取得されます |
 | `data-aue-model` | プロパティパネルでフォームベースの編集に使用するモデルを定義します |
-| `data-aue-behavior` | を定義します。 [計装の挙動](#behaviors) 例えば、スタンドアロンのテキストや画像では、コンポーネントを模倣して、移動や削除が可能なコンポーネントを作成することもできます。 |
+| `data-aue-behavior` | [実装の動作](#behaviors)を定義します。例えば、スタンドアロンのテキストや画像を、コンポーネントを模倣して移動または削除可能にすることもできます。 |
 
 ## 項目のタイプ {#item-types}
 

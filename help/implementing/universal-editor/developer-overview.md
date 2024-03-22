@@ -1,57 +1,57 @@
 ---
-title: AEM Developers 向けユニバーサルエディターの概要
-description: ユニバーサルエディターの動作とプロジェクトでの使用方法に興味を持つAEM開発者の方は、WKND プロジェクトをユニバーサルエディターと連携させる方法を説明し、エンドツーエンドの紹介を提供します。
+title: AEM 開発者向けのユニバーサルエディターの概要
+description: ユニバーサルエディターの動作およびプロジェクトでのユニバーサルエディターの使用方法について興味がある AEM 開発者向けに、このドキュメントでは、WKND プロジェクトをユニバーサルエディターと連携させる方法を説明することで、エンドツーエンドの導入について説明します。
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 source-git-commit: 3dff6fa71c29da70daba80176d2fe51ef1e05200
 workflow-type: tm+mt
 source-wordcount: '3139'
-ht-degree: 1%
+ht-degree: 99%
 
 ---
 
 
-# AEM Developers 向けユニバーサルエディターの概要 {#developer-overview}
+# AEM 開発者向けのユニバーサルエディターの概要 {#developer-overview}
 
-ユニバーサルエディターの動作とプロジェクトでの使用方法に興味を持つAEM開発者の方は、WKND プロジェクトをユニバーサルエディターと連携させる方法を説明し、エンドツーエンドの紹介を提供します。
+ユニバーサルエディターの動作およびプロジェクトでのユニバーサルエディターの使用方法について興味がある AEM 開発者向けに、このドキュメントでは、WKND プロジェクトをユニバーサルエディターと連携させる方法を説明することで、エンドツーエンドの導入について説明します。
 
 {{universal-editor-status}}
 
 ## 目的 {#purpose}
 
-このドキュメントは、ユニバーサルエディターの機能と、アプリケーションを使用するための実装方法の両方に関する開発者の紹介として機能します。
+このドキュメントは、ユニバーサルエディターの機能およびアプリケーションを使用するための実装方法の両方について、開発者向けに説明します。
 
-これをおこなうには、ほとんどのAEM開発者がなじみのある標準的な例、コアコンポーネントと WKND サイト、およびユニバーサルエディターを使用して編集可能ないくつかのサンプルコンポーネントを実装します。
+この説明には、ほとんどの AEM 開発者が精通している標準的な例、コアコンポーネントと WKND サイトを参照し、そして、ユニバーサルエディターを使用して編集可能ないくつかのサンプルコンポーネントを実装します。
 
 >[!TIP]
 >
->このドキュメントでは、ユニバーサルエディターの仕組みを説明する追加の手順を実行し、開発者がエディターに対する理解を深めるためのものです。 したがって、アプリを実装するための最も直接的なルートは必要ありませんが、ユニバーサルエディターの最も示唆的なものと、その動作の仕組みを取り上げます。
+>このドキュメントでは、ユニバーサルエディターの仕組みを追加の手順を説明し、開発者がエディターに対する理解を深めることを目的としています。したがって、アプリを実装するための最も直接的なルートではありませんが、ユニバーサルエディターとその仕組みを最もわかりやすく説明します。
 >
->できるだけ早く導入したい場合は、 [AEMでのユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md) 文書。
+>できるだけすぐに使い始めるには場合は、[AEM のユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md)ドキュメントを参照してください。
 
 ## 前提条件 {#prerequisites}
 
-この概要に従うには、以下を利用できる必要があります。
+この概要に従うには、次が必要になります。
 
-* [AEM as a Cloud Serviceのローカル開発インスタンス](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ja)
-   * ローカル開発インスタンスは、 [で開発用に HTTPS で設定 `localhost`.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=ja)
+* [AEM as a Cloud Service のローカル開発インスタンス](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ja)
+   * ローカル開発インスタンスは、[開発用に HTTPS を使用して `localhost` で設定する必要があります。](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=ja)
    * [WKND デモサイトをインストールする必要があります。](https://github.com/adobe/aem-guides-wknd)
 * [ユニバーサルエディターへのアクセス](/help/implementing/universal-editor/getting-started.md#onboarding)
-* [ローカルユニバーサルエディターサービス](/help/implementing/universal-editor/local-dev.md) 開発目的で実行する
-   * ブラウザーで [ローカルサービスの自己署名証明書を受け入れます。](/help/implementing/universal-editor/local-dev.md#editing)
+* 開発目的で実行している[ローカルユニバーサルエディターサービス](/help/implementing/universal-editor/local-dev.md)
+   * [ローカルサービスの自己署名証明書を受け入れるように](/help/implementing/universal-editor/local-dev.md#editing)ブラウザーが設定されていることを確認します。
 
-このドキュメントは、Web 開発に一般に精通しているだけでなく、AEM開発に関する基本的な知識を前提としています。 AEMの開発経験がない場合は、 [続行する前の WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+このドキュメントは、web 開発に一般的に精通しているだけでなく、AEM 開発に関する基本的な知識を前提としています。AEM の開発経験がない場合は、[続行する前に WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)を確認することを考慮してください。
 
-## AEMを起動し、ユニバーサルエディターにログイン {#sign-in}
+## AEM の起動およびユニバーサルエディターへのログイン {#sign-in}
 
-まだ実行していない場合は、WKND をインストールし、HTTPS を有効にしてローカルのAEM開発インスタンスを実行しておく必要があります。 [前提条件で詳しく説明しています。](#prerequisites) この概要は、インスタンスがで実行されていることを前提としています。 `https://localhost:8443`.
+まだ実行していない場合は、[前提条件で詳しく説明されるように、WKND をインストールし、HTTPS を有効にしてローカルの AEM 開発インスタンスを実行する必要があります。](#prerequisites)この概要は、インスタンスが `https://localhost:8443` で実行されていることを前提としています。
 
-1. AEM Editor で WKND 英語のメインマスターページを開きます。
+1. AEM エディターで WKND 英語メインページを開きます。
 
    ```text
    https://localhost:8443/editor.html/content/wknd/language-masters/en.html
    ```
 
-1. Adobe Analytics の **ページ情報** エディターのメニューで、「 」を選択します。 **公開済みとして表示**. 新しいタブで同じページが開き、AEMエディターが無効になります。
+1. エディターの&#x200B;**ページ情報**&#x200B;メニューで、「**公開済みとして表示**」を選択します。新しいタブで同じページが開き、AEM エディターが無効になります。
 
    ```text
    https://localhost:8443/content/wknd/language-masters/en.html?wcmmode=disabled
@@ -65,17 +65,17 @@ ht-degree: 1%
    https://experience.adobe.com/#/aem/editor
    ```
 
-1. 以前に WKND コンテンツをコピーしたリンクを、 **サイトの URL** ユニバーサルエディターのフィールドをクリックし、 **開く**.
+1. 以前に、WKND コンテンツをコピーしたリンクをユニバーサルエディターの「**サイトの URL**」フィールドに貼り付け、「**開く**」をクリックします。
 
-   ![ユニバーサルエディターで WKND ページを開きます。](assets/dev-ue-open.png)
+   ![ユニバーサルエディターで WKND ページを開く](assets/dev-ue-open.png)
 
-## ユニバーサルエディターがコンテンツの読み込みを試みる {#sameorigin}
+## ユニバーサルエディターによるコンテンツの読み込みの試行 {#sameorigin}
 
-ユニバーサルエディタは、フレーム内で編集するコンテンツを読み込みます。 AEMの X-Frame オプションのデフォルト設定により、この問題が回避されます。これは、WKND のローカルコピーを読み込もうとすると、ブラウザーでエラーとして表示され、コンソール出力で詳しく説明されます。
+ユニバーサルエディターは、フレーム内で編集するコンテンツを読み込みます。AEM の X-Frame オプションのデフォルト設定により、この問題が回避されます。これは、WKND のローカルコピーを読み込もうとすると、ブラウザーでエラーとして表示され、コンソール出力で詳しく説明されます。
 
 ![SAMEORIGIN オプションが原因のブラウザーエラー](assets/dev-sameorigin.png)
 
-X-Frame オプション `sameorigin` は、フレーム内でAEMページをレンダリングできません。 このヘッダーを削除して、ユニバーサルエディターでページを読み込めるようにする必要があります。
+X-Frame オプションの `sameorigin` は、フレーム内での AEM ページのレンダリングを防ぎます。このヘッダーを削除して、ユニバーサルエディターでページを読み込めるようにする必要があります。
 
 1. Configuration Manager を開きます。
 
@@ -83,30 +83,30 @@ X-Frame オプション `sameorigin` は、フレーム内でAEMページをレ�
    https://localhost:8443/system/console/configMgr
    ```
 
-1. OSGi 設定の編集 `org.apache.sling.engine.impl.SlingMainServlet`
+1. OSGi 設定 `org.apache.sling.engine.impl.SlingMainServlet` の編集
 
    ![SAMEORIGIN の OSGi プロパティ](assets/dev-sameorigin-osgi.png)
 
-1. プロパティを削除します。 `X-Frame-Options=SAMEORIGIN` プロパティの **追加の応答ヘッダー**.
+1. **追加の応答ヘッダー**&#x200B;プロパティの `X-Frame-Options=SAMEORIGIN` プロパティを削除します。
 
-1. 変更を保存します。
+1. 変更内容を保存します。
 
-次に、ユニバーサルエディターを再読み込みすると、AEMページが読み込まれます。
+次に、ユニバーサルエディターを再読み込みすると、AEM ページが読み込まれます。
 
 >[!TIP]
 >
->* ドキュメントを見る [AEMでのユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md#sameorigin) を参照してください。
->* ドキュメントを見る [Adobe Experience Manager as a Cloud Service用の OSGi の設定](/help/implementing/deploying/configuring-osgi.md) を参照してください。
+>* この OSGi 設定について詳しくは、[AEM のユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md#sameorigin)のドキュメントを参照してください。
+>* AEM の OSGi について詳しくは、[Adobe Experience Manager as a Cloud Service の OSGi の設定](/help/implementing/deploying/configuring-osgi.md)に関するドキュメントを参照してください。
 
-## 同じサイト cookie の処理 {#samesite-cookies}
+## 同じサイトの Cookie の処理 {#samesite-cookies}
 
-ページが読み込まれると、ユニバーサルエディターがAEMのログインページに読み込まれ、変更を加えるための認証が行われていることを確認します。
+ユニバーサルエディターがページを読み込むと、そのページは AEM のログインページに読み込まれ、変更を加えるための認証が行われていることを確認します。
 
-ただし、正常にサインインできません。 ブラウザーコンソールを表示すると、フレーム上の入力がブロックされていることがわかります。
+ただし、正常にログインできません。ブラウザーコンソールを表示すると、ブラウザがフレーム上の入力をブロックしていることがわかります。
 
 ![入力がブロックされました](assets/dev-cross-origin.png)
 
-ログイントークン cookie は、サードパーティドメインとしてAEMに送信されます。 したがって、AEMで同じサイトの Cookie を許可する必要があります。
+ログイントークン cookie は、サードパーティドメインとして AEM に送信されます。したがって、AEM では SameSite cookie を許可する必要があります。
 
 1. Configuration Manager を開きます。
 
@@ -114,24 +114,24 @@ X-Frame オプション `sameorigin` は、フレーム内でAEMページをレ�
    https://localhost:8443/system/console/configMgr
    ```
 
-1. OSGi 設定の編集 `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
+1. OSGi 設定を編集します`com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
 
-   ![同じサイトの cookie の OSGi プロパティ](assets/dev-cross-origin-osgi.png)
+   ![SameSite cookie の OSGi プロパティ](assets/dev-cross-origin-osgi.png)
 
-1. プロパティを変更します。 **login-token cookie の SameSite 属性** から `None`.
+1. **login-token cookie の SameSite 属性**&#x200B;プロパティを `None` に変更します。
 
-1. 変更を保存します。
+1. 変更内容を保存します。
 
-ユニバーサルエディターを再読み込みすると、AEMに正常にログインし、ターゲットページが読み込まれます。
+ユニバーサルエディターを再読み込みすると、AEM に正常にログインでき、ターゲットページが読み込まれます。
 
 >[!TIP]
 >
->* ドキュメントを見る [AEMでのユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md#samesite-cookies) を参照してください。
->* ドキュメントを見る [Adobe Experience Manager as a Cloud Service用の OSGi の設定](/help/implementing/deploying/configuring-osgi.md) を参照してください。
+>* OSGi 設定について詳しくは、[AEM のユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md#samesite-cookies)ドキュメントを参照してください。
+>* AEM の OSGi について詳しくは、[Adobe Experience Manager as a Cloud Service の OSGi の設定](/help/implementing/deploying/configuring-osgi.md)ドキュメントを参照してください。
 
-## リモートフレームに接続するユニバーサルエディタ {#ue-connect-remote-frame}
+## ユニバーサルエディターをリモートフレームに接続 {#ue-connect-remote-frame}
 
-ユニバーサルエディターにページが読み込まれ、AEMにサインインすると、ユニバーサルエディターはリモートフレームへの接続を試みます。 これは、リモートフレームに読み込む必要がある JavaScript ライブラリを介しておこなわれます。 JavaScript ライブラリが存在しない場合、最終的にページはコンソールでタイムアウトエラーを作成します。
+ユニバーサルエディターにページが読み込まれ、AEM にサインインすると、ユニバーサルエディターはリモートフレームへの接続を試みます。これは、リモートフレームに読み込む必要がある JavaScript ライブラリを介して行われます。JavaScript ライブラリが存在しない場合、ページは最終的にコンソールでタイムアウトエラーを生成します。
 
 ![タイムアウトエラー](assets/dev-timeout.png)
 
@@ -143,7 +143,7 @@ X-Frame オプション `sameorigin` は、フレーム内でAEMページをレ�
    https://localhost:8443/crx/de
    ```
 
-1. の下 `/apps/wknd/components/page`、ファイルを編集 `customheaderlibs.html`.
+1. `/apps/wknd/components/page` の下で、ファイル `customheaderlibs.html` を編集します。
 
    ![customheaderlibs.html ファイルの編集](assets/dev-customheaderlibs.png)
 
@@ -153,20 +153,20 @@ X-Frame オプション `sameorigin` は、フレーム内でAEMページをレ�
    <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>
    ```
 
-1. クリック **すべて保存** その後、ユニバーサルエディタを再読み込みします。
+1. 「**すべて保存**」をクリックして、次にユニバーサルエディターを再読み込みします。
 
-これで、ページが適切な JavaScript ライブラリと共に読み込まれて、ユニバーサルエディターがページに接続できるようになり、タイムアウトエラーがコンソールに表示されなくなりました。
+これで、ページが適切な JavaScript ライブラリで読み込まれて、ユニバーサルエディターがページに接続できるようになり、タイムアウトエラーがコンソールに表示されなくなりました。
 
 >[!TIP]
 >
 >* ライブラリは、ヘッダーまたはフッターに読み込むことができます。
->* The `universal-editor-embedded.js` ライブラリ [は NPM で使用できます。](https://www.npmjs.com/package/@adobe/universal-editor-cors) 必要に応じて自分でホストしたり、アプリケーションに直接配置したりできます。
+>* `universal-editor-embedded.js` ライブラリ[は NPM ](https://www.npmjs.com/package/@adobe/universal-editor-cors) で使用でき、必要に応じて自分でホストしたり、アプリケーションに直接配置したりできます。
 
 ## 変更を保持する接続の定義 {#connection}
 
-WKND ページがユニバーサルエディターに正常に読み込まれ、JavaScript ライブラリが読み込まれてエディターがアプリに接続されるようになりました。
+WKND ページがユニバーサルエディターに正常に読み込まれ、JavaScript ライブラリが読み込まれて、エディターがアプリに接続されるようになりました。
 
-ただし、ユニバーサルエディターでページを操作できないことに気付いた可能性があります。 ユニバーサルエディターは、実際にページを編集することはできません。 ユニバーサルエディターでコンテンツを編集するには、コンテンツの書き込み先を知るために接続を定義する必要があります。 ローカル開発の場合は、ローカルのAEM開発インスタンス ( ) に書き戻す必要があります。 `https://localhost:8443`.
+ただし、ユニバーサルエディターではページを操作できないはずです。実際に、ユニバーサルエディターでページを編集することはできません。ユニバーサルエディターでコンテンツを編集するには、コンテンツの書き込み先を認識できるように接続を定義する必要があります。ローカル開発の場合は、`https://localhost:8443` のローカル AEM 開発インスタンスに書き戻す必要があります。
 
 1. CRXDE Lite を開きます。
 
@@ -174,11 +174,11 @@ WKND ページがユニバーサルエディターに正常に読み込まれ、
    https://localhost:8443/crx/de
    ```
 
-1. の下 `/apps/wknd/components/page`、ファイルを編集 `customheaderlibs.html`.
+1. `/apps/wknd/components/page` の下で、ファイル `customheaderlibs.html` を編集します。
 
    ![customheaderlibs.html ファイルの編集](assets/dev-instrument-app.png)
 
-1. ローカルのAEMインスタンスに接続するために必要なメタデータをファイルの末尾に追加します。
+1. ローカル AEM インスタンスへの接続に必要なメタデータをファイルの最後に追加します。
 
    ```html
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
@@ -186,27 +186,27 @@ WKND ページがユニバーサルエディターに正常に読み込まれ、
 
    * ライブラリの最新バージョンを常にお勧めします。 以前のバージョンが必要な場合は、ドキュメントを参照してください。 [AEMのユニバーサルエディターの概要。](/help/implementing/universal-editor/getting-started.md#alternative)
 
-1. ローカルユニバーサルエディターサービスへの接続に必要なメタデータをファイルの末尾に追加します。
+1. ローカルユニバーサルエディターサービスへの接続に必要なメタデータをファイルの最後に追加します。
 
    ```html
    <meta name="urn:adobe:aue:config:service" content="https://localhost:8000">
    ```
 
-1. クリック **すべて保存** その後、ユニバーサルエディタを再読み込みします。
+1. 「**すべて保存**」をクリックして、次にユニバーサルエディターを再読み込みします。
 
-ユニバーサルエディターは、ローカルのAEM開発インスタンスからコンテンツを正常に読み込むだけでなく、ローカルのユニバーサルエディターサービスを使用して行った変更を保持する場所も把握できるようになりました。 これは、ユニバーサルエディターで編集可能なアプリを実装する最初の手順です。
+ユニバーサルエディターは、ローカル AEM 開発インスタンスからコンテンツを正常に読み込むだけでなく、ローカルユニバーサルエディターサービスを使用して行った変更を保持する場所を認識することもできるようになりました。これは、アプリをユニバーサルエディターで編集できるようにするための最初の手順です。
 
 >[!TIP]
 >
->* ドキュメントを見る [AEMでのユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md#connection) を参照してください。
->* ドキュメントを見る [ユニバーサルエディターのアーキテクチャ](/help/implementing/universal-editor/architecture.md#service) を参照してください。
->* ドキュメントを見る [ユニバーサルエディターを使用したローカルAEM開発](/help/implementing/universal-editor/local-dev.md) を参照してください。
+>* 接続メタデータについて詳しくは、[AEM のユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md#connection)ドキュメントを参照してください。
+>* ユニバーサルエディターの構造について詳しくは、[ユニバーサルエディターのアーキテクチャ](/help/implementing/universal-editor/architecture.md#service)ドキュメントを参照してください。
+>* ユニバーサルエディターのセルフホスティングングバージョンに接続する方法について詳しくは、[ユニバーサルエディターを使用したローカル AEM 開発](/help/implementing/universal-editor/local-dev.md)ドキュメントを参照してください。
 
-## 実装コンポーネント {#instrumenting-components}
+## コンポーネントの実装 {#instrumenting-components}
 
-しかし、ユニバーサルエディタでは、まだ少しで済むことに気付くかもしれません。 ユニバーサルエディターで WKND ページの上部にあるティーザーをクリックしようとした場合、実際には選択できません（またはページ上のその他の要素）。
+しかし、ユニバーサルエディターで実行できる操作はまだほとんどありません。ユニバーサルエディターで WKND ページの上部にあるティーザーをクリックしようとしても、実際にそのティーザー（またはページ上のその他の要素）を選択することはできません。
 
-ユニバーサルエディターで編集できるようにするには、コンポーネントも実装する必要があります。 そのためには、ティーザーコンポーネントを編集する必要があります。 そのため、コアコンポーネントはの配下にあるので、コアコンポーネントをオーバーレイする必要があります `/libs`：不変。
+ユニバーサルエディターで編集できるようにするには、コンポーネントも実装する必要があります。これを行うには、ティーザーコンポーネントを編集する必要があります。そのためには、コアコンポーネントが不変の `/libs` の配下に存在しているので、コアコンポーネントをオーバーレイする必要があります。
 
 1. CRXDE Lite を開きます。
 
@@ -214,21 +214,21 @@ WKND ページがユニバーサルエディターに正常に読み込まれ、
    https://localhost:8443/crx/de
    ```
 
-1. ノードを選択します。 `/libs/core/wcm/components` をクリックします。 **ノードをオーバーレイ** をクリックします。
+1. ノード `/libs/core/wcm/components` を選択し、ツールバーで「**ノードをオーバーレイ**」をクリックします。
 
-1. を使用 `/apps/` 次として選択： **オーバーレイの場所**&#x200B;をクリックし、 **OK**.
+1. 「**オーバーレイの場所**」として `/apps/` を選択し、「**OK**」をクリックします。
 
    ![ティーザーをオーバーレイ](assets/dev-overlay-teaser.png)
 
-1. を選択します。 `teaser` の下のノード `/libs/core/wcm/components` をクリックします。 **コピー** 」と入力します。
+1. `/libs/core/wcm/components` の下の `teaser` ノードを選択し、ツールバーの「**コピー**」をクリックします。
 
-1. オーバーレイされたノードを次の場所で選択します。 `/apps/core/wcm/components` をクリックします。 **貼り付け** 」と入力します。
+1. `/apps/core/wcm/components` でオーバーレイされたノードを選択し、ツールバーの「**貼り付け**」をクリックします。
 
-1. ファイルをダブルクリックします。 `/apps/core/wcm/components/teaser/v2/teaser/teaser.html` をクリックして編集します。
+1. `/apps/core/wcm/components/teaser/v2/teaser/teaser.html` ファイルをダブルクリックして編集します。
 
    ![teaser.html ファイルの編集](assets/dev-edit-teaser.png)
 
-1. 最初の `div` 約 26 行目で、コンポーネントの計装の詳細を追加します。
+1. 最初の `div` の終わり付近、おおよそ 26 行目に、コンポーネントの実装の詳細を追加します。
 
    ```text
    data-aue-resource="urn:aem:${resource.path}"
@@ -236,21 +236,21 @@ WKND ページがユニバーサルエディターに正常に読み込まれ、
    data-aue-label="Teaser"
    ```
 
-1. クリック **すべて保存** をクリックし、ユニバーサルエディタを再読み込みします。
+1. ツールバーの「**すべて保存**」をクリックして、ユニバーサルエディターを再読み込みします。
 
 1. ユニバーサルエディターで、ページ上部のティーザーコンポーネントをクリックし、選択できることを確認します。
 
-1. 次の項目をクリックした場合、 **コンテンツツリー** アイコンが表示されます。 選択したティーザーがハイライト表示されたティーザーになります。
+1. ユニバーサルエディターのプロパティパネルで&#x200B;**コンテンツツリー**&#x200B;アイコンをクリックすると、エディターがページのあらゆるティーザーを認識しており、エディターの実装が完了したことがわかります。選択したティーザーがハイライト表示されています。
 
-   ![インストルメント化されたティーザーコンポーネントの選択](assets/dev-select-teaser.png)
+   ![インストルメント済みティーザーコンポーネントの選択](assets/dev-select-teaser.png)
 
 >[!TIP]
 >
->ドキュメントを見る [Adobe Experience Manager as a Cloud Serviceでの Sling Resource Merger の使用](/help/implementing/developing/introduction/sling-resource-merger.md) ノードのオーバーレイの詳細は、を参照してください。
+>ノードのオーバーレイについて詳しくは、[Adobe Experience Manager as a Cloud Service での Sling Resource Merger の使用](/help/implementing/developing/introduction/sling-resource-merger.md)ドキュメントを参照してください。
 
-## ティーザーのインストゥルメントサブコンポーネント {#subcomponents}
+## ティーザーのインストルメントサブコンポーネント {#subcomponents}
 
-これで、ティーザーを選択できますが、編集はできません。 これは、ティーザーが画像やタイトルコンポーネントなど、様々なコンポーネントの複合であるためです。 これらのサブコンポーネントを編集するには、それらのサブコンポーネントを実装する必要があります。
+これで、ティーザーを選択できるようになりましたが、まだ編集はできません。これは、ティーザーが画像やタイトルのコンポーネントなど、様々なコンポーネントの複合体であるためです。このようなサブコンポーネントを編集するには、対象のサブコンポーネントを実装する必要があります。
 
 1. CRXDE Lite を開きます。
 
@@ -258,11 +258,11 @@ WKND ページがユニバーサルエディターに正常に読み込まれ、
    https://localhost:8443/crx/de
    ```
 
-1. ノードを選択します。 `/apps/core/wcm/components/teaser/v2/teaser/` をクリックし、 `title.html` ファイル。
+1. ノード `/apps/core/wcm/components/teaser/v2/teaser/` を選択し、`title.html` ファイルをダブルクリックします。
 
-   ![title.html ファイルの編集](assets/dev-edit-title.png)
+   ![title.html ファイルを編集する](assets/dev-edit-title.png)
 
-1. の最後に次のプロパティを挿入します。 `h2` タグ（17 行目付近）に貼り付けます。
+1. `h2` タグの最後（17 行目付近）に、次のプロパティを挿入します。
 
    ```text
    data-aue-prop="jcr:title"
@@ -270,56 +270,56 @@ WKND ページがユニバーサルエディターに正常に読み込まれ、
    data-aue-label="Title"
    ```
 
-1. クリック **すべて保存** をクリックし、ユニバーサルエディタを再読み込みします。
+1. ツールバーの「**すべて保存**」をクリックして、ユニバーサルエディターを再読み込みします。
 
-1. ページ上部の同じティーザーコンポーネントのタイトルをクリックし、選択できることを確認します。 コンテンツツリーには、選択したティーザーコンポーネントの一部としてタイトルも表示されます。
+1. ページ上部の同じティーザーコンポーネントのタイトルをクリックし、選択できることを確認します。コンテンツツリーには、選択したティーザーコンポーネントの一部としてタイトルも表示されます。
 
-   ![ティーザー内でタイトルを選択](assets/dev-select-title.png)
+   ![ティーザー内でタイトルを選択する](assets/dev-select-title.png)
 
 これで、ティーザーコンポーネントのタイトルを編集できます。
 
-## これは何を意味するのでしょうか？ {#what-does-it-mean}
+## 内容の確認？ {#what-does-it-mean}
 
-ティーザーのタイトルを編集できたので、ここでは、達成した操作と方法を確認します。
+ティーザーのタイトルを編集できるようになったところで、行った操作と達成方法について確認してみましょう。
 
-ティーザーコンポーネントは、実装することでユニバーサルエディターに識別されました。
+ティーザーコンポーネントを実装することで、ティーザーコンポーネントをユニバーサルエディターで識別できるようになりました。
 
-* `data-aue-resource` 編集中のAEM内のリソースを識別します。
-* `data-aue-type` は、項目を（コンテナとは異なり）ページコンポーネントとして扱うことを定義します。
-* `data-aue-label` 選択したティーザーのわかりやすいラベルを UI に表示します。
+* `data-aue-resource` は編集中の AEM 内のリソースを識別します。
+* `data-aue-type` は、項目が（コンテナとは異なり）ページコンポーネントとして扱われることを定義します。
+* `data-aue-label` は、選択したティーザーのわかりやすいラベルを UI に表示します。
 
-また、ティーザーコンポーネント内にタイトルコンポーネントも実装されています。
+また、ティーザーコンポーネント内にタイトルコンポーネントも実装しました。
 
 * `data-aue-prop` は、書き込まれる JCR 属性です。
-* `data-aue-type` は、属性の編集方法です。 この場合、テキストエディターはタイトル（リッチテキストエディターとは異なり）なので、これを使用します。
+* `data-aue-type` は、属性の編集方法です。この場合、タイトルなので、テキストエディター（リッチテキストエディターとは異なる）を使用します。
 
 ## 認証ヘッダーの定義 {#auth-header}
 
 これで、ティーザーのタイトルをインラインで編集でき、変更がブラウザーに保持されます。
 
-![ティーザーのタイトルを編集しました](assets/dev-edited-title.png)
+![ティーザーの編集済みタイトル](assets/dev-edited-title.png)
 
-ただし、ブラウザを再読み込みすると、前のタイトルが再読み込みされます。 これは、ユニバーサルエディターはAEMインスタンスへの接続方法を知っていますが、AEMインスタンスに対してまだ認証を行って、JCR に変更を書き戻すことができないためです。
+ただし、ブラウザーを再読み込みすると、前のタイトルが再読み込みされます。これは、ユニバーサルエディターが AEM インスタンスへの接続方法を理解していても、まだ AEM インスタンスに対して認証を行い、JCR に変更を書き戻すことができないためです。
 
-ブラウザー開発者ツールの「ネットワーク」タブを表示し、 `update`を入力すると、タイトルを編集しようとしたときに 401 エラーが発生していることを確認できます。
+ブラウザー開発者ツールの「ネットワーク」タブを表示し、`update` を検索すると、タイトルを編集しようとしたときに 401 エラーが発生することがわかります。
 
-![タイトルを編集しようとした際にエラーが発生しました](assets/dev-edit-error.png)
+![タイトルを編集しようするとエラーが発生する](assets/dev-edit-error.png)
 
-ユニバーサルエディターを使用して実稼動用AEMコンテンツを編集する場合、ユニバーサルエディターは、JCR への書き戻しを容易にするために、エディターにログオンする際に使用したのと同じ IMS トークンを使用します。
+ユニバーサルエディターを使用して実稼動用 AEM コンテンツを編集する場合、ユニバーサルエディターは、JCR への書き戻しを容易にするために、エディターにログオンする際に使用したのと同じ IMS トークンを使用して AEM への認証を行います。
 
-ローカルで開発している場合は、AEM ID プロバイダーを使用できません。IMS トークンはAdobeが所有するドメインにのみ渡されます。 認証ヘッダーを明示的に設定して、認証する方法を手動で指定する必要があります。
+ローカルで開発している場合、IMS トークンはアドビが所有するドメインにのみ渡されるため、AEM ID プロバイダーを使用できません。認証ヘッダーを明示的に設定して、認証する方法を手動で指定する必要があります。
 
-1. ユニバーサルエディターインターフェイスで、 **認証ヘッダー** アイコンをクリックします。
+1. ユニバーサルエディターインターフェイスで、ツールバーの&#x200B;**認証ヘッダー**&#x200B;アイコンをクリックします。
 
-1. 必要な認証ヘッダーをコピーして、ローカルのAEMインスタンスに認証し、「 **保存**.
+1. ローカル AEM インスタンスへの認証に必要な認証ヘッダーをコピーし、「**保存**」をクリックします。
 
    ![認証ヘッダーの設定](assets/dev-authentication-headers.png)
 
-1. ユニバーサルエディターをリロードし、ティーザーのタイトルを編集します。
+1. ユニバーサルエディターを再読み込みして、ティーザーのタイトルを編集します。
 
-ブラウザーコンソールで報告されるエラーはなくなり、変更内容はローカルのAEM開発インスタンスに保持されます。
+ブラウザーコンソールにエラーが表示されなくなり、変更内容はローカルの AEM 開発インスタンスに保持されます。
 
-ブラウザーの開発者ツールでトラフィックを調査し、 `update` イベントを編集すると、更新の詳細を確認できます。
+ブラウザーの開発者ツールでトラフィックを調査し、`update` イベントを探すと、更新の詳細を確認できます。
 
 ![ティーザータイトルの編集に成功しました](assets/dev-edit-title-successfully.png)
 
@@ -341,27 +341,27 @@ WKND ページがユニバーサルエディターに正常に読み込まれ、
 }
 ```
 
-* `connections` は、ローカルのAEMインスタンスへの接続です。
-* `target` は、JCR で更新される正確なノードおよびプロパティです
-* `value` は、お客様がおこなった更新です。
+* `connections` は、ローカルの AEM インスタンスへの接続です。
+* `target` は、JCR で更新される正確なノードおよびプロパティです。
+* `value` は自分が行った更新です。
 
-JCR 内で変更が保持されているのを確認できます。
+変更が JCR に保持されていることがわかります。
 
 ![JCR での更新](assets/dev-write-back-jcr.png)
 
 >[!TIP]
 >
->オンラインで使用できるツールは多数あり、テストおよび開発目的で必要な認証ヘッダーを生成できます。
+>テストや開発の目的で必要な認証ヘッダーを生成するオンラインツールが多数あります。
 >
->基本的な認証ヘッダーの例 `Basic YWRtaW46YWRtaW4=` は、次のユーザーとパスワードの組み合わせ用です： `admin:admin` は、ローカルAEM開発で一般的です。
+>基本的な認証ヘッダーの例 `Basic YWRtaW46YWRtaW4=` は、`admin:admin` のユーザーとパスワードの組み合わせに対するもので、ローカル AEM 開発では一般的です。
 
 ## プロパティパネル用のアプリの実装 {#properties-rail}
 
-これで、ユニバーサルエディターを使用して編集できる機能が実装されたアプリが作成されました。
+これで、ユニバーサルエディターを使用して編集できるように実装されたアプリが完成しました。
 
-編集は、現在、ティーザーのタイトルのインライン編集に限られています。 ただし、インプレース編集では不十分な場合があります。 ティーザーのタイトルなどのテキストは、キーボード入力を使用して編集できます。 ただし、より複雑な項目は、ブラウザーでのレンダリング方法とは別に、構造化データを表示して編集できる必要があります。 プロパティパネルはこの機能を備えています。
+編集は、現在、ティーザーのタイトルのインライン編集に限られています。ただし、インプレース編集では不十分な場合があります。ティーザーのタイトルなどのテキストは、キーボード入力を使用して編集できます。ただし、より複雑な項目は、ブラウザーでのレンダリング方法とは別に、構造化データを表示して編集できる必要があります。プロパティパネルはこの機能を備えています。
 
-プロパティレールを使用して編集するようにアプリを更新するには、アプリのページコンポーネントのヘッダーファイルに戻ります。 ローカルのAEM開発インスタンスおよびローカルのユニバーサルエディターサービスへの接続を既に確立している場所です。 ここで、アプリ内で編集可能なコンポーネントとそのデータモデルを定義する必要があります。
+プロパティレールを使用して編集するようにアプリを更新するには、アプリのページコンポーネントのヘッダーファイルに戻ります。この場所では、ローカルの AEM 開発インスタンスおよびローカルのユニバーサルエディターサービスへの接続が既に確立されています。ここで、アプリ内で編集可能なコンポーネントとそのデータモデルを定義する必要があります。
 
 1. CRXDE Lite を開きます。
 
@@ -369,7 +369,7 @@ JCR 内で変更が保持されているのを確認できます。
    https://localhost:8443/crx/de
    ```
 
-1. の下 `/apps/wknd/components/page`、ファイルを編集 `customheaderlibs.html`.
+1. `/apps/wknd/components/page` の下で、ファイル `customheaderlibs.html` を編集します。
 
    ![customheaderlibs.html ファイルの編集](assets/dev-instrument-properties-rail.png)
 
@@ -412,7 +412,7 @@ JCR 内で変更が保持されているのを確認できます。
    </script>
    ```
 
-1. その下に、ファイルの最後に、モデルを定義するために必要なスクリプトを追加します。
+1. その下で、モデルを定義するために必要なスクリプトをファイルの最後に追加します。
 
    ```html
    <script type="application/vnd.adobe.aue.model+json">
@@ -458,36 +458,36 @@ JCR 内で変更が保持されているのを確認できます。
    </script>
    ```
 
-1. クリック **すべて保存** 」と入力します。
+1. ツールバーで「**すべて保存**」をクリックします。
 
-## これは何を意味するのでしょうか？ {#what-does-it-mean-2}
+## 内容の確認？ {#what-does-it-mean-2}
 
-プロパティパネルを使用して編集するには、コンポーネントをに割り当てる必要があります。 `groups`各定義は、コンポーネントを含むグループのリストとして開始されます。
+プロパティパネルを使用して編集するには、コンポーネントを `groups` に割り当てる必要があるため、各定義は、コンポーネントを含むグループのリストとして開始します。
 
 * `title` はグループの名前です。
-* `id` は、グループの一意の識別子です。この場合、ページレイアウトの高度なコンポーネントなどとは異なり、ページコンテンツを構成する一般的なコンポーネントです。
+* `id` はグループの一意の識別子です。この場合、例えば、ページレイアウトの高度なコンポーネントなどとは異なり、ページコンテンツを構成する一般的なコンポーネントです。
 
-各グループには、 `components`.
+各グループには `components` の配列があります。
 
-* `title` は、コンポーネントの名前です。
-* `id` は、コンポーネントの一意の識別子です。この場合はティーザーです。
+* `title` はコンポーネントの名前です。
+* `id` はコンポーネントの一意の識別子です。この場合はティーザーです。
 
-次に、各コンポーネントには、コンポーネントをAEMにマッピングする方法を定義するプラグイン定義が含まれます。
+各コンポーネントには、コンポーネントを AEM にマッピングする方法を定義するプラグイン定義が含まれます。
 
-* `aem` は、編集を処理するプラグインです。 これは、コンポーネントを処理するサービスと考えることができます。
-* `page` は、どのようなコンポーネントかを定義します。この場合は標準ページコンポーネントです。
-* `resourceType` は、実際のAEMコンポーネントへのマッピングです。
+* `aem` は編集を処理するプラグインです。これは、コンポーネントを処理するサービスと考えることができます。
+* `page` はコンポーネントの種類を定義します。この場合は標準ページコンポーネントです。
+* `resourceType` は実際の AEM コンポーネントへのマッピングです。
 
-その後、各コンポーネントを `model` 個々の編集可能フィールドを定義します。
+次に、各コンポーネントを `model` にマッピングして、個々の編集可能フィールドを定義する必要があります。
 
-* `id` は、モデルの一意の識別子です。この識別子は、コンポーネントの ID と一致する必要があります。
-* `fields` は、個々のフィールドの配列です。
-* `component` は、テキストやテキスト領域などの入力の種類です。
-* `name` は、フィールドのマッピング先の JCR 内のフィールド名です。
-* `label` は、エディター UI に表示されるフィールドの説明です。
+* `id` はモデルの一意の識別子です。この識別子は、コンポーネントの ID と一致する必要があります。
+* `fields` は個々のフィールドの配列です。
+* `component` はテキストやテキスト領域などの入力のタイプです。
+* `name` はフィールドのマッピング先の JCR 内のフィールド名です。
+* `label` はエディター UI に表示されるフィールドの説明です。
 * `valueType` はデータのタイプです。
 
-## プロパティレール用のコンポーネントの実装 {#properties-rail-component}
+## プロパティパネル用のコンポーネントの実装 {#properties-rail-component}
 
 また、コンポーネントで使用するモデルをコンポーネントレベルで定義する必要があります。
 
@@ -497,33 +497,33 @@ JCR 内で変更が保持されているのを確認できます。
    https://localhost:8443/crx/de
    ```
 
-1. ファイルをダブルクリックします。 `/apps/core/wcm/components/teaser/v2/teaser/teaser.html` をクリックして編集します。
+1. `/apps/core/wcm/components/teaser/v2/teaser/teaser.html` ファイルをダブルクリックして編集します。
 
    ![teaser.html ファイルの編集](assets/dev-edit-teaser.png)
 
-1. 最初の `div` 約 32 行目で、前に追加したプロパティの後に、ティーザーコンポーネントが使用するモデルの計装の詳細を追加します。
+1. 最初の `div` の終わり付近、おおよそ 32 行目で、前に追加したプロパティの後に、ティーザーコンポーネントで使用するモデルの実装の詳細を追加します。
 
    ```text
    data-aue-model="teaser"
    ```
 
-1. クリック **すべて保存** をクリックし、ユニバーサルエディタを再読み込みします。
+1. ツールバーの「**すべて保存**」をクリックして、ユニバーサルエディターを再読み込みします。
 
 これで、コンポーネント用に実装されたプロパティパネルをテストする準備が整いました。
 
 1. ユニバーサルエディターで、ティーザーのタイトルをクリックして、もう一度編集します。
 
-1. プロパティレールをクリックして「プロパティ」タブを表示し、先ほど実装したフィールドを確認します。
+1. プロパティパネルをクリックして「プロパティ」タブを表示し、実装したフィールドを確認します。
 
-   ![計測されたプロパティレール](assets/dev-properties-rail-instrumented.png)
+   ![実装したプロパティパネル](assets/dev-properties-rail-instrumented.png)
 
-ティーザーのタイトルを、以前と同じようにインラインで編集したり、プロパティレールで編集したりできるようになりました。 どちらの場合も、変更はローカルのAEM開発インスタンスに保持されます。
+ティーザーのタイトルを以前のようにインラインで編集することも、プロパティパネルで編集することもできるようになりました。どちらの場合も、変更はローカル AEM 開発インスタンスに保持されます。
 
-## プロパティパネルへの追加フィールドの追加 {#add-fields}
+## プロパティパネルに追加フィールドを追加 {#add-fields}
 
-実装済みのコンポーネントのデータモデルの基本構造を使用して、同じモデルに従ってフィールドを追加できます。
+既に実装したコンポーネントのデータモデルの基本構造を使用して、同じモデルに従って、フィールドを追加できます。
 
-例えば、コンポーネントのスタイルを調整するフィールドを追加できます。
+例えば、フィールドを追加して、コンポーネントのスタイルを調整できます。
 
 1. CRXDE Lite を開きます。
 
@@ -531,11 +531,11 @@ JCR 内で変更が保持されているのを確認できます。
    https://localhost:8443/crx/de
    ```
 
-1. の下 `/apps/wknd/components/page`、ファイルを編集 `customheaderlibs.html`.
+1. `/apps/wknd/components/page` の下で、ファイル `customheaderlibs.html` を編集します。
 
    ![customheaderlibs.html ファイルの編集](assets/dev-instrument-styles.png)
 
-1. モデル定義スクリプトで、 `fields` 「スタイル」フィールドの配列。 新しいフィールドを挿入する前に、最後のフィールドの後に必ずコンマを追加してください。
+1. モデル定義スクリプトで、スタイルフィールドの `fields` 配列に項目を追加します。新しいフィールドを挿入する前に、最後のフィールドの後にコンマを追加します。
 
    ```json
    {
@@ -551,47 +551,47 @@ JCR 内で変更が保持されているのを確認できます。
    }
    ```
 
-1. クリック **すべて保存** をクリックし、ユニバーサルエディタを再読み込みします。
+1. ツールバーの「**すべて保存**」をクリックして、ユニバーサルエディターを再読み込みします。
 
 1. ティーザーのタイトルをクリックして、もう一度編集します。
 
-1. プロパティレールをクリックし、コンポーネントのスタイルを調整する新しいフィールドがあることを確認します。
+1. プロパティパネルをクリックして、コンポーネントのスタイルを調整するための新しいフィールドがあることを確認します。
 
-   ![スタイルフィールドを含む実装済みのプロパティレール](assets/dev-style-instrumented.png)
+   ![スタイルフィールドを含む実装したプロパティパネル](assets/dev-style-instrumented.png)
 
-この方法で、コンポーネントの JCR の任意のフィールドをユニバーサルエディターに表示できます。
+この方法で、コンポーネントの JCR 内の任意のフィールドをユニバーサルエディターで公開できます。
 
 ## 概要 {#summary}
 
-これで完了です。独自のAEMアプリを実装して、ユニバーサルエディターを操作できるようになりました。
+これで完了です。独自の AEM アプリを実装して、ユニバーサルエディターを操作できるようになりました。
 
 独自のアプリの実装を開始する際は、この例で実行した基本的な手順に注意してください。
 
 1. [開発環境を設定します。](#prerequisites)
-   * WKND がインストールされた HTTPS でローカルで実行するAEM
-   * HTTPS 上でローカルに動作するユニバーサルエディターサービス
-1. AEM OSGi 設定を更新し、そのコンテンツをリモートで読み込めるようにしました。
-   * [&#39;org.apache.sling.engine.impl.SlingMainServlet&#39;](#sameorigin)
-   * [&#39;com.day.crx.security.token.impl.impl.impl.TokenAuthenticationHandler&#39;](#samesite-cookies)
-1. [次の項目を追加しました： ](#ue-connect-remote-frame)
-1. [接続を定義して、 ](#connection)
-   * ローカルのAEM開発インスタンスへの接続を定義しました。
+   * WKND がインストールされた HTTPS 上でローカルに実行される AEM
+   * HTTPS 上でローカルに実行されるユニバーサルエディターサービス
+1. AEM の OSGi 設定を更新して、そのコンテンツをリモートで読み込めるようにしました。
+   * [`org.apache.sling.engine.impl.SlingMainServlet`](#sameorigin)
+   * [`com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`](#samesite-cookies)
+1. [次の項目を追加しました。 ](#ue-connect-remote-frame)
+1. [次の項目の変更を保持するための接続を定義しました。 ](#connection)
+   * ローカル AEM 開発インスタンスへの接続を定義しました。
    * また、ローカルのユニバーサルエディターサービスへの接続も定義しました。
-1. [ティーザーコンポーネントが実装されている。](#instrumenting-components)
+1. [ティーザーコンポーネントを実装しました。](#instrumenting-components)
 1. [ティーザーのサブコンポーネントを実装しました。](#subcomponents)
 1. [ローカルのユニバーサルエディターサービスを使用して変更を保存できるように、カスタム認証ヘッダーを定義しました。](#auth-header)
 1. [プロパティパネルを使用するアプリを実装しました。](#properties-rail)
-1. [ティーザーコンポーネントを実装し、プロパティレールを使用しています。](#properties-rail-component)
+1. [プロパティパネルを使用するティーザーコンポーネントを実装しました。](#properties-rail-component)
 
-次の同じ手順に従って、ユニバーサルエディターで使用する独自のアプリを実装できます。 JCR 内のプロパティは、ユニバーサルエディターに公開できます。
+これらと同じ手順に従って、ユニバーサルエディターで使用するために独自のアプリを実装できます。JCR 内の任意のプロパティをユニバーサルエディターに公開できます。
 
 ## その他のリソース {#additional-resources}
 
-ユニバーサルエディタの機能の詳細と詳細については、次のドキュメントを参照してください。
+ユニバーサルエディターの機能について詳しくは、次のドキュメントを参照してください。
 
-* できるだけ早く導入したい場合は、 [AEMでのユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md) 文書。
-* ドキュメントを見る [AEMでのユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md#sameorigin) 必要な OSGi 設定の詳細を参照してください。
-* ドキュメントを見る [AEMでのユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md#connection) を参照してください。
-* ドキュメントを見る [ユニバーサルエディターのアーキテクチャ](/help/implementing/universal-editor/architecture.md#service) を参照してください。
-* ドキュメントを見る [ユニバーサルエディターを使用したローカルAEM開発](/help/implementing/universal-editor/local-dev.md) を参照してください。
-* ドキュメントを見る [Adobe Experience Manager as a Cloud Serviceでの Sling Resource Merger の使用](/help/implementing/developing/introduction/sling-resource-merger.md) ノードのオーバーレイの詳細は、を参照してください。
+* できるだけ早く使い始める場合は、[AEM のユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md)ドキュメントを参照してください。
+* 必要な OSGi 設定について詳しくは、[AEM のユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md#sameorigin)ドキュメントを参照してください。
+* 接続メタデータについて詳しくは、[AEM のユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md#connection)ドキュメントを参照してください。
+* ユニバーサルエディターの構造について詳しくは、[ユニバーサルエディターのアーキテクチャ](/help/implementing/universal-editor/architecture.md#service)ドキュメントを参照してください。
+* ユニバーサルエディターのセルフホストバージョンに接続する方法について詳しくは、[ユニバーサルエディターを使用したローカル AEM 開発](/help/implementing/universal-editor/local-dev.md)ドキュメントを参照してください。
+* ノードのオーバーレイについて詳しくは、[Adobe Experience Manager as a Cloud Service での Sling Resource Merger の使用](/help/implementing/developing/introduction/sling-resource-merger.md)ドキュメントを参照してください。

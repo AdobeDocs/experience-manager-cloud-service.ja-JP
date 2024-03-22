@@ -3,13 +3,13 @@ cloud: Experience Cloud
 product: Adobe Experience Manager
 sub-product: Adobe Experience Manager as a Cloud Service
 solution-title: Experience Cloud
-user-guide-description: Experience Manager as a Cloud Service の仕組みと機能を説明します。
+user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 2c3be4b60396c5cf57c327fd5b858a3af65397f2
 workflow-type: tm+mt
 source-wordcount: '4829'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -422,7 +422,7 @@ ht-degree: 94%
    + デジタルアセットの管理 {#manage}
       + [マイクロフロントエンドアセットセレクター](/help/assets/asset-selector.md)
       + [マイクロフロントエンドの宛先セレクター](/help/assets/destination-selector.md)
-      + [アセットの共有](/help/assets/share-assets.md)
+      + [アセットを共有する](/help/assets/share-assets.md)
       + [アセットの再処理](/help/assets/reprocessing.md)
       + [アクティビティと DAM タスクの監視](/help/assets/assets-activity-history.md)
       + [アセットマイクロサービスの基本](/help/assets/asset-microservices-configure-and-use.md)
@@ -555,7 +555,7 @@ ht-degree: 94%
       + [アセット管理タスク](/help/assets/manage-organize-assets-view.md)
       + [画像の編集](/help/assets/edit-images-assets-view.md)
       + [アセットメタデータの管理](/help/assets/metadata-assets-view.md)
-      + [アセットの共有](/help/assets/share-links-for-assets-view.md)
+      + [アセットを共有する](/help/assets/share-links-for-assets-view.md)
       + [コレクションの管理](/help/assets/manage-collections-assets-view.md)
       + [アセット、フォルダー、コレクションの監視](/help/assets/manage-notifications-assets-view.md)
       + [レポートの管理](/help/assets/manage-reports-assets-view.md)
@@ -624,18 +624,18 @@ ht-degree: 94%
             + [アダプティブフォームを作成](/help/forms/creating-adaptive-form-core-components.md)
             + [アダプティブフォームフラグメントの作成](/help/forms/adaptive-form-fragments-core-components.md)
             + [アダプティブフォームのテーマの作成 - コアコンポーネント](/help/forms/using-themes-in-core-components.md)
-            + [コアコンポーネントに基づいてアダプティブフォームテンプレートの作成](/help/forms/template-editor-core-components.md)
+            + [コアコンポーネントに基づくアダプティブフォームテンプレートの作成](/help/forms/template-editor-core-components.md)
             + [アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-core-components.md)
             + [機械翻訳または人間による翻訳を使用したアダプティブフォームの翻訳](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [リダイレクトページまたはお礼メッセージの設定](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [繰り返し可能なセクションを使用したフォームの作成](/help/forms/create-forms-repeatable-sections.md)
             + [アダプティブフォームの送信アクションの設定](/help/forms/configure-submit-actions-core-components.md)
-            + [アダプティブフォームを Azure Blob ストレージに送信する](/help/forms/configure-submit-action-azure-blob-storage.md)
+            + [Azure Blob Storage にアダプティブフォームを送信する](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [アダプティブフォームをMicrosoftに送信する](/help/forms/configure-submit-action-onedrive.md)
             + [アダプティブフォームのMicrosoftへの接続](/help/forms/configure-submit-action-sharepoint.md)
-            + [AEMアダプティブフォームとAEMワークフローの統合](/help/forms/configure-submit-action-workflow.md)
-            + [アダプティブFormsの REST エンドポイントへの送信送信アクションを設定する](/help/forms/configure-submit-action-restpoint.md)
-            + [アダプティブフォームの電子メール送信アクションの設定](/help/forms/configure-submit-action-send-email.md)
+            + [AEM アダプティブフォームと AEM ワークフローを統合する](/help/forms/configure-submit-action-workflow.md)
+            + [アダプティブフォームの REST エンドポイント送信アクションへの送信を設定する](/help/forms/configure-submit-action-restpoint.md)
+            + [アダプティブフォームのメール送信アクションの送信を設定する](/help/forms/configure-submit-action-send-email.md)
             + [アダプティブフォームでの Google reCAPTCHA の使用](/help/forms/captcha-adaptive-forms-core-components.md)
             + [アダプティブフォームにカスタムエラーハンドラーの追加](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [コアコンポーネントに基づくアダプティブフォームのロケールの追加](/help/forms/supporting-new-language-localization-core-components.md)
@@ -790,7 +790,7 @@ ht-degree: 94%
 + AEMとEdge Delivery Services {#edge-delivery}
    + [Edge Delivery Services の概要](/help/edge/overview.md)
    + [Edge 配信の使用](/help/edge/using.md)
-   + [開発者向け入門ガイド](/help/edge/edge-dev-getting-started.md)
+   + [開発者用入門ガイド](/help/edge/edge-dev-getting-started.md)
    + [Edge 配信向けのコンテンツのオーサリング](/help/edge/authoring.md)
    + [Edge 配信向けのコンテンツの公開](/help/edge/publishing.md)
    + [Edge 配信向けの開発](/help/edge/developing.md)
@@ -932,7 +932,7 @@ ht-degree: 94%
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
    + Cloud Manager の使用 {#using-cloud-manager}
       + プログラム {#programs}
-         + [プログラムとプログラムのタイプ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+         + [プログラムとプログラムタイプ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [実稼動プログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
          + [実稼働プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
          + [サンドボックスプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
@@ -974,7 +974,7 @@ ht-degree: 94%
       + [カスタム権限](/help/implementing/cloud-manager/custom-permissions.md)
       + [SLA レポート](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
-      + [ダイナトレース](/help/implementing/cloud-manager/dynatrace.md)
+      + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)
       + [高度なネットワーク機能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
       + SSL 証明書 {#manage-ssl-certificates}
@@ -1051,7 +1051,7 @@ ht-degree: 94%
          + [AEM のユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md)
          + [ユニバーサルエディター開発者の概要](/help/implementing/universal-editor/developer-overview.md)
          + [属性と項目タイプ](/help/implementing/universal-editor/attributes-types.md)
-         + [モデル定義、フィールド、およびコンポーネントタイプ](/help/implementing/universal-editor/field-types.md)
+         + [モデル定義、フィールドおよびコンポーネントタイプ](/help/implementing/universal-editor/field-types.md)
          + [ユニバーサルエディターの認証](/help/implementing/universal-editor/authentication.md)
          + [ユニバーサルエディターを使用したローカル AEM 開発](/help/implementing/universal-editor/local-dev.md)
          + [ユニバーサルエディターの呼び出し](/help/implementing/universal-editor/calls.md)
@@ -1079,7 +1079,7 @@ ht-degree: 94%
          + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=ja)
          + [ローンチの統合](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA リファレンスドキュメント](/help/implementing/developing/hybrid/reference-materials.md)
-         + [Sling Model Exporter を使用した ResourceResolvers のシリアル化を許可しない](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
+         + [Sling Model Exporter による ResourceResolvers のシリアル化を許可しない](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
    + 開発者ツール {#developer-tools}
       + [開発者モード](/help/implementing/developing/tools/developer-mode.md)
       + [Eclipse 用 AEM 開発者ツール](/help/implementing/developing/tools/eclipse.md)

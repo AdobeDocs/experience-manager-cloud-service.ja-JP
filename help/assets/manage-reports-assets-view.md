@@ -1,10 +1,11 @@
 ---
 title: アセットビューでのレポートの管理
 description: アセットビューの「レポート」セクションのデータにアクセスして、製品と機能の使用状況を評価し、主要な成功指標に関するインサイトを導き出します。
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
 workflow-type: tm+mt
 source-wordcount: '814'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -40,9 +41,9 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
 
 ![インサイト](assets/insights.png)
 
-* **ダウンロード**：過去 30 日間または 12 ヶ月間に Assets ビュー環境からダウンロードされたアセットの数。折れ線グラフを使用して表されます。
+* **ダウンロード**：過去 30 日間または 12 か月間にアセットビュー環境からダウンロードされたアセットの数が、折れ線グラフで表されます。
 
-* **アップロード**：過去 30 日間または 12 ヶ月間に Assets ビュー環境にアップロードされたアセットの数。折れ線グラフで表されます。
+* **アップロード**：過去 30 日間または 12 か月間にアセットビュー環境にアップロードされたアセットの数が、折れ線グラフで表されます。
 
 <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
