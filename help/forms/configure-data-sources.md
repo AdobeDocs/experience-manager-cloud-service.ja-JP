@@ -125,7 +125,7 @@ RESTful サービス、SOAP サービス、OData サービスのクラウドサ�
 
 RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式または YAML 形式で [ in JSON or YAML forSwagger 定義ファイル](https://swagger.io/specification/v2/) in JSON or YAML format in a 内に記述できます。[!DNL Experience Manager] as a Cloud Service で RESTful web サービスを設定するには、ファイルシステムまたはファイルがホストされている URL に [!DNL Swagger] ファイル（[Swagger Version 2.0](https://swagger.io/specification/v2/)）[!DNL Swagger] ファイル（[Swagger Version 3.0](https://swagger.io/specification/v3/)）が存在しているか、Swagger ファイルがホストされる URL を指定する必要があります。
 
-### Open API 仕様バージョン 2.0 {#configure-restful-services-open-api-2.0} 用の RESTful サービスの設定
+### Open API 仕様バージョン 2.0 用の RESTful サービスの設定 {#configure-restful-services-open-api-2.0}
 
 1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーを選択します。
 
@@ -150,7 +150,7 @@ RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式ま
 
 1. 「**[!UICONTROL 作成]**」を選択して、RESTful サービス用のクラウド設定を作成します。
 
-### Open API 仕様バージョン 3.0 {#configure-restful-services-open-api-3.0} 用の RESTful サービスの設定
+### Open API 仕様バージョン 3.0 用の RESTful サービスの設定 {#configure-restful-services-open-api-3.0}
 
 1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーを選択します。
 
