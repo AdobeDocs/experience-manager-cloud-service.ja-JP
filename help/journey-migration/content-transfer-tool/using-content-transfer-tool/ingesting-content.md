@@ -2,10 +2,10 @@
 title: コンテンツの Cloud Service への取り込み
 description: Cloud Acceleration Manager を使用して、移行セットから移行先の Cloud Service インスタンスにコンテンツを取り込む方法について説明します。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 281523183cecf1e74c33f58ca9ad038bba1a6363
-workflow-type: ht
-source-wordcount: '2410'
-ht-degree: 100%
+source-git-commit: 8795d9d2078d9f49699ffa77b1661dbe5451a4a2
+workflow-type: tm+mt
+source-wordcount: '2534'
+ht-degree: 95%
 
 ---
 
@@ -155,6 +155,12 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 
 ### 一意性制約違反による追加取り込みのエラー {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_uuid"
+>title="一意性制約違反"
+>abstract="非ワイプ取り込みエラーの一般的な原因は、ノード ID が競合していることです。 競合するノードは 1 つだけです。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="追加取り込み"
+
 [追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)エラーの一般的な原因は、ノード ID の競合です。このエラーを識別するには、Cloud Acceleration Manager UI を使用して取り込みログをダウンロードし、次のようなエントリを探します。
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
@@ -169,6 +175,12 @@ AEM の各ノードには、一意の UUID が必要です。このエラーは�
 
 ### 参照されているノードを削除できないことによる追加取り込みの失敗 {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
+>title="参照されているノードを削除できません"
+>abstract="ワイプしない取り込みエラーの一般的な原因は、宛先インスタンス上の特定のノードのバージョンの競合です。 ノードのバージョンを修正する必要があります。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="追加取り込み"
+
 [追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)が失敗するもう一つの一般的な原因は、移行先インスタンスの特定のノードに対するバージョンの競合です。このエラーを識別するには、Cloud Acceleration Manager UI を使用して取り込みログをダウンロードし、次のようなエントリを探します。
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Unable to delete referenced node: 8a2289f4-b904-4bd0-8410-15e41e0976a8
@@ -181,11 +193,22 @@ AEM の各ノードには、一意の UUID が必要です。このエラーは�
 
 ### ノードプロパティの大きな値による取り込みエラー {#ingestion-failure-due-to-large-node-property-values}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_bson"
+>title="Large Node プロパティ"
+>abstract="取り込み失敗の一般的な原因は、ノードプロパティの値の最大サイズを超えていることです。 この状況を修正するには、BPA レポートに関連するものを含むドキュメントに従います。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=ja" text="移行の前提条件"
+
 MongoDB に保存されるノードプロパティの値は 16 MB を超えることはできません。ノード値がサポートされているサイズを超えると、取り込みに失敗し、ログには `BSONObjectTooLarge` エラーが含まれ、最大値を超えたノードが指定されます。これは MongoDB の制限です。
 
 大きなノードすべてを見つけるのに役立つ Oak ツールへのリンクと詳細情報については、[コンテンツ転送ツールの前提条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)の `Node property value in MongoDB` メモを参照してください。サイズの大きいすべてのノードを修正したら、抽出と取り込みを再度実行します。
 
 ### 取り込みの取り消し {#ingestion-rescinded}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_rescinded"
+>title="取り込みの取り消し"
+>abstract="取り込みを待機していた抽出が正常に完了しませんでした。 実行できなかったので、取り込みが取り消されました。"
 
 ソース移行セットとして、実行中の抽出で作成された取り込みは、その取り込みが成功するまで待機し、その時点で正常に開始されます。抽出が失敗または停止した場合、取り込みおよびそのインデックス作成ジョブは開始されず、取り消されます。この場合は、抽出をチェックして失敗した理由を判断し、問題を修正して、再度抽出を開始します。固定抽出を実行した後で、新しい取り込みをスケジュールできます。
 
