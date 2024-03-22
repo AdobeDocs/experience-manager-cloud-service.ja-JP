@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2c3be4b60396c5cf57c327fd5b858a3af65397f2
+source-git-commit: 96ec736b5774fc48d006264b316e390bf022c0e9
 workflow-type: tm+mt
-source-wordcount: '4829'
+source-wordcount: '4828'
 ht-degree: 96%
 
 ---
@@ -572,7 +572,7 @@ ht-degree: 96%
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
    + Adobe Express との統合 {#integration-adobe-express}
-      + [Adobe Express 向けの AEM Assets アドオン](/help/assets/addon-adobe-express.md)
+      + [Adobe Expressとのネイティブ統合](/help/assets/native-integration-adobe-express.md)
 
    + Creative Cloudとの統合 {#integration-creative-cloud}
       + [AEM Assets を Creative Cloud に接続](/help/assets/connect-assets-with-creative-cloud.md)
