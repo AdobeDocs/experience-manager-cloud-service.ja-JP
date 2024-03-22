@@ -3,9 +3,9 @@ title: フロントエンドパイプラインを使用したサイトの開発
 description: フロントエンドパイプラインを使用すると、フロントエンド開発者の自主性が高まり、開発プロセスを大幅に加速できます。このドキュメントでは、フロントエンドビルドプロセスで考慮すべき特定の考慮事項について説明します。
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 source-git-commit: 74e4c4cc57dbdc78b6c93efe78c856bdafbae477
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1169'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 90%
 
 ## フロントエンドビルドコントラクト {#front-end-build-contract}
 
-[フルスタックビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)と同様に、フロントエンドパイプラインには独自の環境があります。次のフロントエンドビルド契約が確認されている限り、開発者はこのパイプラインを使用するのにある程度の柔軟性があります。
+[フルスタックビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)と同様に、フロントエンドパイプラインには独自の環境があります。次のフロントエンドビルドコントラクトが守られている限り、開発者はこのパイプラインをある程度柔軟に使用できます。
 
-フロントエンドパイプラインでは、 `build` デプロイするビルドを生成するスクリプトディレクティブ。 これは、Cloud Manager がコマンドを使用するためです `npm run build` ：フロントエンドビルド用のデプロイ可能なプロジェクトを生成する場合。
+フロントエンドパイプラインでは、フロントエンド Node.js プロジェクトでデプロイするビルドを生成するために、`build` スクリプトディレクティブを使用する必要があります。これは、Cloud Manager がコマンド `npm run build` を使用して、フロントエンドビルドに対してデプロイ可能なプロジェクトを生成するためです。
 
-の結果のコンテンツ `dist` フォルダーは、最終的には Cloud Manager によってデプロイされ、静的ファイルとして提供されます。 これらのファイルはAEMの外部でホストされますが、 `/content/...` デプロイ済み環境の URL。
+`dist` フォルダーの結果のコンテンツは、最終的には Cloud Manager によってデプロイされ、静的ファイルとして提供されます。これらのファイルは AEM の外部でホストされますが、デプロイ済み環境の `/content/...` URL 経由で使用可能になります。
 
 ## ノードのバージョン {#node-versions}
 
@@ -35,7 +35,7 @@ ht-degree: 90%
 * 16
 * 18
 
-以下を使用すると、 `NODE_VERSION` [環境変数](/help/implementing/cloud-manager/environment-variables.md) をクリックして、目的のバージョンを設定します。
+`NODE_VERSION` [環境変数](/help/implementing/cloud-manager/environment-variables.md)を使用して、目的のバージョンを設定できます。
 
 ## 唯一の情報源 {#single-source-of-truth}
 

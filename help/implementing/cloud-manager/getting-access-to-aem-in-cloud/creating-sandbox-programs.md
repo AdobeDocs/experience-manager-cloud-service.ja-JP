@@ -3,9 +3,9 @@ title: サンドボックスプログラムの作成
 description: Cloud Manager を使用して、トレーニング、デモ、POC などの実稼動以外の用途に使用する独自のサンドボックスプログラムを作成する方法を説明します。
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '443'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 96%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログオンし、適切な組織を選択します。
 
-1. 次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面、タップまたはクリック **プログラムの追加** 画面の右上隅付近に表示されます。
+1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;画面で、画面の右上隅付近に表示される「**プログラムの追加**」をタップまたはクリックします。
 
    ![Cloud Manager ランディングページ](assets/cloud-manager-my-programs.png)
 

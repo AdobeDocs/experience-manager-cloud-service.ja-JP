@@ -3,9 +3,9 @@ title: ドメイン名ステータスの確認
 description: Cloud Manager でカスタムドメイン名が正常に検証されたかどうかを判断する方法について説明します。
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '651'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Cloud Manager 内でカスタムドメイン名のステータスを決定でき
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面で、プログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;の画面で、プログラムを選択します。
 
 1. **概要**&#x200B;ページから&#x200B;**環境**&#x200B;画面に移動します。
 

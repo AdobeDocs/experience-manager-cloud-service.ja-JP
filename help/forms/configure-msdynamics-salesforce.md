@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '952'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -50,20 +50,20 @@ ht-degree: 90%
 [!DNL Salesforce] クラウドサービスを設定するには、次の手順を実行します。
 
 1. [!DNL AEM Forms] オーサーインスタンスで、**[!UICONTROL ツール]** ![ハンマーアイコン](assets/hammer.png)／**[!UICONTROL クラウドサービス]**／**[!UICONTROL データソース]**&#x200B;に移動します。使用可能なラッパーフォルダーのリストには、[AEM アーキタイププロジェクトの生成](setup-local-development-environment.md#forms-cloud-service-local-development-environment)時に `DappTitle` のタイトルを指定したフォルダーが含まれています。
-1. フォルダー名を選択し、「 」を選択します。 **[!UICONTROL Salesforce クラウド設定]**&#x200B;をクリックし、次を選択します。 **[!UICONTROL プロパティ]**.
+1. フォルダー名を選択し、「**[!UICONTROL Salesforce クラウド設定]**」を選択して「**[!UICONTROL プロパティ]**」を選択します。
 1. 「**[!UICONTROL 認証設定]**」タブで、次のように設定します。
    1. 「**[!UICONTROL ホスト]**」フィールドに [!DNL Salesforce] ドメイン URL を指定します。例えば、[Domain-name].my.salesforce.com のように指定します。
    1. 接続アプリケーションのクライアント ID（「コンシューマーキー」とも呼ばれます）とクライアントの秘密鍵（「コンシューマーシークレット」とも呼ばれます）を指定します。
    1. 「**[!UICONTROL 認証範囲]**」フィールドに **full offline_access** を指定します（`full` と `offine_access` の値をスペースで区切る）。
-   1. 選択 **[!UICONTROL OAuth に接続]**. [!DNL Microsoft® Dynamics] のログインページにリダイレクトされます。
+   1. 「**[!UICONTROL OAuth に接続]**」を選択します。[!DNL Microsoft® Dynamics] のログインページにリダイレクトされます。
    1. [!DNL Salesforce] の資格情報を使用してログインし、クラウドサービス設定を使用して [!DNL Salesforce] サービスに接続することに同意します。接続に成功すると、[!DNL Salesforce] クラウドサービス設定ページにリダイレクトされ、成功メッセージが表示されます。
-1. 選択 **[!UICONTROL 保存して閉じる]** をクリックして、設定を完了します。
+1. 「**[!UICONTROL 保存して閉じる]**」を選択して、設定を完了します。
 
 ### 標準の [!DNL Salesforce] フォームデータモデルへのアクセス
 
 ](setup-local-development-environment.md#forms-cloud-service-local-development-environment)Experience Manager アーキタイプに基づいて Forms の開発プロジェクトをセットアップ[すると、[!DNL Salesforce] フォームデータモデルを [!DNL AEM Forms] サーバー上ですぐに使用できるようになります。
 
-フォームデータモデルにアクセスするには、**[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL データ統合]**&#x200B;に移動します。使用可能なフォルダーのリストには、[AEM アーキタイププロジェクトの生成](setup-local-development-environment.md#forms-cloud-service-local-development-environment)時に `DappTitle` のタイトルを指定したフォルダーが含まれています。フォルダー名を選択し、 **[!UICONTROL Salesforce データモデル]**&#x200B;をクリックし、「編集」を選択します。 ![編集](assets/edit.png) アイコンをクリックして、フォームデータモデルを表示します。
+フォームデータモデルにアクセスするには、**[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL データ統合]**&#x200B;に移動します。使用可能なフォルダーのリストには、[AEM アーキタイププロジェクトの生成](setup-local-development-environment.md#forms-cloud-service-local-development-environment)時に `DappTitle` のタイトルを指定したフォルダーが含まれています。フォルダー名を選択して「**[!UICONTROL Salesforce データモデル]**」を選択し、「編集」![編集](assets/edit.png) アイコンを選択してフォームデータモデルを表示します。
 
 [[!DNL Salesforce] クラウド設定サービス](#configure-salesforce-cloud-service)を設定したら、アダプティブフォームと標準の [!DNL Salesforce] データモデルを統合できます。
 
@@ -84,7 +84,7 @@ ht-degree: 90%
 [!DNL Microsoft® Dynamics 365] クラウドサービスを設定するには、次の手順を実行します。
 
 1. [!DNL AEM Forms] オーサーインスタンスで、**[!UICONTROL ツール]** ![ハンマーアイコン](assets/hammer.png)／**[!UICONTROL クラウドサービス]**／**[!UICONTROL データソース]**&#x200B;に移動します。使用可能なラッパーフォルダーのリストには、[AEM アーキタイププロジェクトの生成](setup-local-development-environment.md#forms-cloud-service-local-development-environment)時に `DappTitle` のタイトルを指定したフォルダーが含まれています。
-1. フォルダー名を選択し、「 」を選択します。 **[!UICONTROL Microsoft® Dynamics 365 クラウド設定]**&#x200B;をクリックし、次を選択します。 **[!UICONTROL プロパティ]**.
+1. フォルダー名を選択し、「**[!UICONTROL Microsoft® Dynamics 365 クラウド設定]**」を選択して「**[!UICONTROL プロパティ]**」を選択します。
 1. 「**[!UICONTROL 認証設定]**」タブで、次のように設定します。
    1. 「**[!UICONTROL サービスルート]**」フィールドの値を入力します。Dynamics インスタンスの「[開発者向けリソース](https://docs.microsoft.com/ja-jp/powerapps/developer/data-platform/view-download-developer-resources)」に移動し、「サービスルート」フィールドの値を表示します。例：`https://<tenant-name>.dynamics.com/api/data/v9.1/`
    1. 接続アプリケーションのクライアント ID（「アプリケーション ID」とも呼ばれます）とクライアントの秘密鍵を指定します。
@@ -93,18 +93,18 @@ ht-degree: 90%
 
    1. `openid` の認証プロセス用の「**[!UICONTROL 認証範囲」フィールドで]**、「[!DNL Microsoft® Dynamics 365]」を指定します。
    1. [!DNL Microsoft® Dynamics 365] の資格情報を使用してログインし、クラウドサービス設定を使用して [!DNL Microsoft® Dynamics 365] サービスに接続することに同意します。接続に成功すると、[!DNL Microsoft® Dynamics 365] クラウドサービス設定ページにリダイレクトされ、成功メッセージが表示されます。
-1. 選択 **[!UICONTROL 保存して閉じる]** をクリックして、設定を完了します。
+1. 「**[!UICONTROL 保存して閉じる]**」を選択して、設定を完了します。
 
 ### 標準の [!DNL Microsoft® Dynamics 365] フォームデータモデルへのアクセス
 
 ](setup-local-development-environment.md##forms-cloud-service-local-development-environment)Experience Manager アーキタイプに基づいて Forms の開発プロジェクトをセットアップ[すると、[!DNL Microsoft® Dynamics 365] フォームデータモデルを [!DNL AEM Forms] サーバー上ですぐに使用できるようになります。
 
-フォームデータモデルにアクセスするには、**[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL データ統合]**&#x200B;に移動します。使用可能なフォルダーのリストには、[AEM アーキタイププロジェクトの生成](setup-local-development-environment.md#forms-cloud-service-local-development-environment)時に `DappTitle` のタイトルを指定したフォルダーが含まれています。フォルダー名を選択し、 **[!UICONTROL Microsoft® Dynamics 365 データモデル]**&#x200B;をクリックし、「編集」を選択します。 ![編集](assets/edit.png) アイコンをクリックして、フォームデータモデルを表示します。
+フォームデータモデルにアクセスするには、**[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL データ統合]**&#x200B;に移動します。使用可能なフォルダーのリストには、[AEM アーキタイププロジェクトの生成](setup-local-development-environment.md#forms-cloud-service-local-development-environment)時に `DappTitle` のタイトルを指定したフォルダーが含まれています。フォルダー名を選択して「**[!UICONTROL Microsoft® Dynamics 365 データモデル]**」を選択し、「編集」![編集](assets/edit.png) アイコンを選択してフォームデータモデルを表示します。
 
 [[!DNL Microsoft® Dynamics 365] クラウド設定サービス](#configure-dynamics-cloud-service)を設定したら、アダプティブフォームと標準の [!DNL Microsoft® Dynamics 365] データモデルを統合できます。
 
 >[!MORELIKETHIS]
 >
-* [AEM Forms 用のデータソースの設定](/help/forms/configure-data-sources.md)
-* [AEM Forms 用の Azure ストレージの設定](/help/forms/configure-azure-storage.md)
-[AEM Sites ページへのフォームポータルの追加](/help/forms/configure-forms-portal.md)
+>* [AEM Forms 用のデータソースの設定](/help/forms/configure-data-sources.md)
+>* [AEM Forms の Azure ストレージを設定](/help/forms/configure-azure-storage.md)
+>  [AEM Sites ページへのフォームポータルの追加](/help/forms/configure-forms-portal.md)

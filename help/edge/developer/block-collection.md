@@ -1,11 +1,12 @@
 ---
-description: これはAEM製品の一部と見なされるブロックのコレクションで、プロジェクト内のブロックのブループリントとして推奨されます。
+description: これは、AEM 製品の一部と見なされるブロックのコレクションで、プロジェクト内のブロックのブループリントとして推奨されます。
 title: ブロックコレクション
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: ea7c071a-1ce9-4af0-a6dc-a2ba9bdbbef0
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '27'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 

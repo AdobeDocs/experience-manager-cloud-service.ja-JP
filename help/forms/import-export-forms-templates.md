@@ -4,10 +4,11 @@ description: アダプティブフォーム、PDF フォーム、テーマおよ
 topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '1193'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -22,15 +23,15 @@ ht-degree: 88%
 フォームや関連アセットをダウンロードするには、以下の手順を実行します。
 
 1. [!DNL AEM Forms] インスタンスにログインします。
-1. 選択 **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) アイコン/ **[!UICONTROL ナビゲーション]** ![コンパス](assets/Smock_Compass_18_N.svg) アイコン/ **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**.
-1. アセットを選択し、 **[!UICONTROL ダウンロード]** アイコン。
-1. 「アセットをダウンロード」で、次のいずれかのオプションを選択し、「 」を選択します。 **[!UICONTROL ダウンロード]**.
+1. 「**[!UICONTROL Adobe Experience Manager]**」![adobeexperiencemanager](assets/adobeexperiencemanager.png) アイコン／「**[!UICONTROL ナビゲーション]**」![コンパス](assets/Smock_Compass_18_N.svg) アイコン／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
+1. アセットを選択し、「**[!UICONTROL ダウンロード]**」アイコンを選択します。
+1. 「アセットをダウンロード」で、以下のいずれかのオプションを選択し、「**[!UICONTROL ダウンロード]**」を選択します。
 
    * 「**CRX パッケージとしてダウンロード**」：選択したすべてのアセットおよび関連する依存関係を [!DNL AEM Forms] インスタンスからダウンロードして、別のインスタンスに移動するオプションを使用します。AEM（アダプティブフォームおよびアダプティブフォームフラグメント）、フォームセット、フォームデータモデル、フォームテンプレート、PDF ドキュメント、参照リソース（XSD および画像）で作成されたフォームを含む、すべてのアセットとフォルダーを CRX パッケージとしてダウンロードします。
 アセットをパッケージとしてダウンロードすることのメリットは、選択したアセットから参照されるアセットもダウンロードできる点です。例えば、フォームテンプレート、XSD および画像を使用するアダプティブフォームがあるとします。このアダプティブフォームを選択してパッケージとしてダウンロードする場合、ダウンロードされたパッケージには、フォームテンプレート、XSD および画像も含まれています。そのアセットに関連付けられているすべてのメタデータプロパティ（カスタムプロパティを含む）も同様にダウンロードされます。
 
    * 「**アセットをバイナリファイルとしてダウンロード**」：フォームテンプレート（XDP）、PDF フォーム（PDF）、ドキュメント（PDF）、リソース（画像、スキーマ、スタイルシート）のみをダウンロードするオプションを使用します。これらのアセットは、外部アプリケーションで編集できます。バイナリ（画像、PDF、その他のサポートされている形式など）を持つアセットを .zip ファイルとしてダウンロードします。
-アダプティブForms、アダプティブフォームフラグメント、テーマ、フォームセットは、 **[!UICONTROL アセットをバイナリファイルとしてダウンロード]** オプション。 これらのアセットをダウンロードするには、「**[!UICONTROL CRX パッケージとしてダウンロード]**」オプションを使用する必要があります。
+「**[!UICONTROL アセットをバイナリファイルとしてダウンロード]**」オプションを使用して、アダプティブフォーム、アダプティブフォームフラグメント、テーマおよびフォームセットをダウンロードすることはできません。これらのアセットをダウンロードするには、「**[!UICONTROL CRX パッケージとしてダウンロード]**」オプションを使用する必要があります。
 
    選択したアセットはアーカイブ（.zip ファイル）としてダウンロードされます。
 
@@ -43,11 +44,11 @@ ht-degree: 88%
 サポートされているアセットタイプを個別にまたは ZIP アーカイブとしてアップロードできます。ZIP ファイルの場合は、サポートされているすべてのアセットの相対パスが表示されます。ZIP 内の未サポートアセットは無視され、一覧には表示されません。ただし、ZIP アーカイブに未サポートアセットのみが含まれている場合は、エラーメッセージが表示され、ポップアップダイアログは表示されません。フォームや関連アセットをアップロードするには、以下の手順を実行します。
 
 1. [!DNL AEM Forms] インスタンスにログインします。
-1. 選択 **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) アイコン/ **[!UICONTROL ナビゲーション]** ![コンパス](assets/Smock_Compass_18_N.svg) アイコン/ **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**.
-1. 選択 **[!UICONTROL 作成]** > **[!UICONTROL ファイルのアップロード]**. ダイアログボックスが表示されます。
-1. ダイアログボックスで、読み込むパッケージまたはアーカイブを参照し、選択します。サポートされる他のファイルタイプを選択することもできます。選択 **[!UICONTROL 開く]**. 選択するフォルダーまたはファイル名に特殊文字を含めないでください。
+1. 「**[!UICONTROL Adobe Experience Manager]**」![adobeexperiencemanager](assets/adobeexperiencemanager.png) アイコン／「**[!UICONTROL ナビゲーション]**」![コンパス](assets/Smock_Compass_18_N.svg) アイコン／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
+1. **[!UICONTROL 作成]**／**[!UICONTROL ファイルのアップロード]**&#x200B;を選択します。ダイアログボックスが表示されます。
+1. ダイアログボックスで、読み込むパッケージまたはアーカイブを参照し、選択します。サポートされる他のファイルタイプを選択することもできます。「**[!UICONTROL 開く]**」を選択します。選択するフォルダーまたはファイル名に特殊文字を含めないでください。
 
-   ダイアログボックスで、アップロードするアセットの詳細を確認し、「 」を選択します。 **[!UICONTROL アップロード]**.
+   ダイアログボックスで、アップロードするアセットの詳細を確認し、「**[!UICONTROL アップロード]**」を選択します。
 
    既存のフォームアセットをアップロードすると、そのアセットが更新されます。
 
@@ -64,8 +65,8 @@ ht-degree: 88%
 テーマをダウンロードするには、以下の手順を実行します。
 
 1. [!DNL AEM Forms] インスタンスにログインします。
-1. 選択 **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) アイコン/ **[!UICONTROL ナビゲーション]** ![コンパス](assets/Smock_Compass_18_N.svg) アイコン/ **[!UICONTROL Forms]** > **[!UICONTROL テーマ]**.
-1. テーマを選択し、「 」を選択します。 **[!UICONTROL ダウンロード]**. テーマはアーカイブ（.zip ファイル）としてダウンロードされます。
+1. 「**[!UICONTROL Adobe Experience Manager]**」![adobeexperiencemanager](assets/adobeexperiencemanager.png) アイコン／「**[!UICONTROL ナビゲーション]**」![コンパス](assets/Smock_Compass_18_N.svg) アイコン／**[!UICONTROL Forms]**／**[!UICONTROL テーマ]**&#x200B;を選択します。
+1. テーマを選択し、「**[!UICONTROL ダウンロード]**」を選択します。テーマはアーカイブ（.zip ファイル）としてダウンロードされます。
 
 ## テーマのアップロード {#uploading-a-theme}
 
@@ -170,8 +171,8 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 ### フォルダーの作成 {#create-a-folder}
 
 1. [!DNL AEM Forms] インスタンスにログインします。
-1. 選択Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) アイコン/ナビゲーション ![コンパス](assets/Smock_Compass_18_N.svg) アイコン > **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**.
-1. 選択 **[!UICONTROL 作成]** > **[!UICONTROL フォルダー]**.
+1. 「Experience Manager」![adobeexperiencemanager](assets/adobeexperiencemanager.png) アイコン／「ナビゲーション」![コンパス](assets/Smock_Compass_18_N.svg) アイコン／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;を選択します。
+1. **[!UICONTROL 作成]**／**[!UICONTROL フォルダー]**&#x200B;を選択します。
 1. 以下の詳細を入力します。
 
    * **[!UICONTROL タイトル]**：フォルダーの表示名
@@ -185,7 +186,7 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
    指定した名前を持つフォルダーが既に存在する場合は、送信はエラーになり失敗します。名前フィールドの横に表示されるエラー ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) アイコンの上にマウスポインターを置くと、エラーメッセージを見ることができます。
 
-   作成したフォルダーを選択してフォルダー内に移動し、そのフォルダー内にアセットやフォルダーを作成できます。 さらに、フォルダーを選択し、ダウンロード、削除、名前の編集用にそのフォルダーをキューに入れることができます。
+   作成されたフォルダーを選択してフォルダー内に移動し、フォルダー内でアセットまたはフォルダーを作成できます。さらに、フォルダーを選択し、ダウンロード、削除、名前の編集用にそのフォルダーをキューに入れることができます。
 
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}

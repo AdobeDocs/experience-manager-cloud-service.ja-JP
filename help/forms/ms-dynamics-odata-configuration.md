@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1002'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 85%
 
 <!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service（OData サービス）は、すべての実行モードで使用できます。[!DNL Experience Manager] インスタンスの実行モードの設定について詳しくは、「[実行モード](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#runmodes)」を参照してください。
 
-AEM as a Cloud Serviceには、フォーム送信を処理するための標準の様々な送信アクションが用意されています。 これらのオプションについて詳しくは、 [アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)  記事。
+AEM as a Cloud Service では、フォーム送信を処理するための様々な送信アクションが標準で提供されます。これらのオプションについて詳しくは、 [アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)の記事を参照してください。
 
 
 ## 前提条件 {#prerequisites}
@@ -125,11 +125,11 @@ OData サービスは、そのサービスのルート URL によって識別さ
 >
 >オンライン環境またはオンプレミス環境で [!DNL Microsoft Dynamics 365] を設定する詳しい手順については、[[!DNL Microsoft Dynamics] OData 設定](ms-dynamics-odata-configuration.md)を参照してください。
 
-1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定を作成するフォルダーを選択します。
+1. **[!UICONTROL ツール／クラウドサービス／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーを選択します。
 
    クラウドサービス設定用フォルダーの作成方法と構成方法については、「[クラウドサービス設定用フォルダーの構成](#cloud-folder)」を参照してください。
 
-1. 選択 **[!UICONTROL 作成]** 開く **[!UICONTROL データソース設定の作成ウィザード]**. 設定の名前を指定し、必要に応じて設定のタイトルを指定して、「 」を選択します。 **[!UICONTROL OData サービス]** から **[!UICONTROL サービスタイプ]** ドロップダウンで、必要に応じて設定のサムネール画像を参照して選択し、 **[!UICONTROL 次へ]**.
+1. 「**[!UICONTROL 作成]**」を選択して、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、**[!UICONTROL サービスタイプ]**&#x200B;ドロップダウンで「**[!UICONTROL OData サービス]**」を選択します。必要な場合は、設定のサムネール画像を参照および選択して「**[!UICONTROL 次へ]**」を選択します。
 「**[!UICONTROL 認証設定]**」タブで、次のように設定します。
 
    1. 「**[!UICONTROL サービスルート]**」フィールドの値を入力します。Dynamics インスタンスの「**[!UICONTROL 開発者向けリソース]**」に移動し、「サービスルート」フィールドの値を表示します。例えば、https://&lt;tenant-name>/api/data/v9.1/ です。
@@ -161,9 +161,9 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-MS Dynamics OData クラウドサービスを設定した後、フォームデータモデルの作成時にこのサービスを使用できます。 詳しくは、[フォームデータモデルの作成](create-form-data-models.md)を参照してください。
+MS Dynamics OData クラウドサービスを設定した後、フォームデータモデルの作成時にこのサービスを使用できます。詳しくは、[フォームデータモデルを作成](create-form-data-models.md)を参照してください。
 
-次に、アダプティブフォームベースのフォームデータモデルを作成し、次のような様々なアダプティブフォームの使用例で使用できます。
+次に、フォームデータモデルに基づいてアダプティブフォームを作成し、次のような様々なアダプティブフォームの使用例で使用できます。
 
 * [!DNL Microsoft Dynamics] のエンティティとサービスに対してクエリを実行し、取得した情報を使用してアダプティブフォームに事前入力する
 * アダプティブフォームのルールを使用して、フォームデータモデル内で定義された [!DNL Microsoft Dynamics] サーバーの操作を呼び出す。
@@ -171,9 +171,9 @@ MS Dynamics OData クラウドサービスを設定した後、フォームデ�
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
 
-以下が可能です。 [フォームデータモデル送信アクションの設定](/help/forms/using-form-data-model.md) アダプティブフォームでMicrosoft Dynamics OData にデータを送信する場合。
+アダプティブフォームの[フォームデータモデル送信アクションを設定](/help/forms/using-form-data-model.md)すると、Microsoft Dynamics OData にデータを送信できます。
 
-ビジネスワークフローでのフォームデータモデルの作成および使用について詳しくは、「[データ統合](data-integration.md)」を参照してください。
+ビジネスワークフローでのフォームデータモデルの作成および使用について詳しくは、[データ統合](data-integration.md)を参照してください。
 
 ## 関連記事
 

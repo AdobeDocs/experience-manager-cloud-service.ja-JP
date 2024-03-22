@@ -6,9 +6,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
 source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '484'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ OAuth 2.0 クライアント資格情報を使用して、AEM Forms を Salesfor
 
 AEM Forms が、Salesforce 接続アプリケーションで定義されたクライアント資格情報（Consumer key と Consumer secret）を交換して、アクセストークンを取得します。
 
-AEM as a Cloud Serviceには、フォーム送信を処理するための標準の様々な送信アクションが用意されています。 これらのオプションについて詳しくは、 [アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md) 記事。
+AEM as a Cloud Service では、フォーム送信を処理するための様々な送信アクションが標準で提供されます。これらのオプションについて詳しくは、[アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)の記事を参照してください。
 
 認証コードフロー認証を使用した認証に OAuth 2.0 クライアント資格情報を使用すると、次のような複数のメリットがあります。
 
@@ -72,7 +72,7 @@ OAuth 2.0 クライアント資格情報認証設定を使用してアダプテ�
 1. 接続に成功した場合は、「**[!UICONTROL 作成]**」ボタンをクリックします。
 
 
-Salesforce アプリケーションを設定した後は、フォームデータモデルの作成時に設定を使用できます。 詳しくは、 [フォームデータモデルを作成する](create-form-data-models.md). [フォームデータモデル送信アクションの設定](/help/forms/using-form-data-model.md) アダプティブフォームが Salesforce アプリケーションにデータを送信する場合。
+Salesforce アプリケーションを設定した後は、フォームデータモデルの作成中にこの設定を使用できます。詳しくは、[フォームデータモデルを作成](create-form-data-models.md)を参照してください。アダプティブフォームの[フォームデータモデルの送信アクションを設定](/help/forms/using-form-data-model.md)を行って、Salesforce アプリケーションにデータを送信します。
 
 ビジネスワークフローでのフォームデータモデルの作成および使用について詳しくは、「[データ統合](data-integration.md)」を参照してください。
 

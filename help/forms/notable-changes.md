@@ -6,9 +6,9 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 contentOwner: khsingh
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1317'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Adobe Experience Manager Forms as a Cloud Service では、Adobe Experience Mana
 
 <!--* **Prefill Service:** By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server.-->
 
-* **事前入力サービス：** 事前入力サービスはサーバーからデータを取得し、クライアント側でアダプティブFormsを事前入力するために結合します。 この機能により、アダプティブフォームの入力に要する時間が短縮されます。 いつでも [事前入力サービス](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html) をクリックして、Adobe Experience Manager Forms Server で結合アクションを実行します。
+* **事前入力サービス：**&#x200B;事前入力サービスはサーバーからデータを取得して結合し、クライアントサイドでアダプティブフォームを事前入力します。この機能により、アダプティブフォームの入力に必要な時間を短縮するのに役立ちます。Adobe Experience Manager Forms Server では、[事前入力サービス](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html?lang=ja)を常に設定して、結合アクションを実行するようにできます。
 
 * **メールの送信アクション**：添付ファイルを送信し、**メール**&#x200B;にレコードのドキュメント（DoR）を添付するオプションが提供されます。AEM 6.5 Forms で利用できる、**PDF としてメールで送信**&#x200B;アクションの代わりに使用できます。
 

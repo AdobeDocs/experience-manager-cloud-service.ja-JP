@@ -1,32 +1,32 @@
 ---
 Title: How to connect AEM Adaptive Forms with Azure Blob Storage?
 Description: Learn how to create an Azure Blob Storage Configuration in AEM Forms and use it within your Adaptive Forms for efficient data storage.
-keywords: AEM Formsとの Azure Blob ストレージ統合、Azure ストレージへのデータの送信、AEM Formsでの Azure ストレージ設定の作成、アダプティブForms送信アクションでの Azure Blob ストレージの使用
+keywords: AEM Forms との Azure Blob Storage の統合、Azure ストレージへのデータの送信、AEM Forms での Azure ストレージ設定の作成、アダプティブフォーム送信アクションでの Azure Blob Storage の使用
 feature: Adaptive Forms, Core Components
 source-git-commit: 8784c0bcd05eeae41a472faa5ecad03cbdd8a9b6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '451'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 
-# アダプティブフォームを Azure Blob ストレージに送信する
+# Azure Blob Storage にアダプティブフォームを送信する
 
-「**[!UICONTROL Azure Blob Storage に送信]**」送信アクションは、アダプティブフォームを Microsoft Azure Portal に接続します。フォームデータ、ファイル、添付ファイル、またはレコードのドキュメントを、接続された Azure Storage コンテナに送信できます。
+**[!UICONTROL Azure Blob Storage に送信]**&#x200B;の送信アクションは、アダプティブフォームを Microsoft® Azure Portal に接続します。フォームデータ、ファイル、添付ファイルまたはレコードのドキュメントを、接続された Azure ストレージコンテナに送信できます。
 
-AEM as a Cloud Serviceには、フォーム送信を処理するための標準の様々な送信アクションが用意されています。 これらのオプションについて詳しくは、 [アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md) 記事。
+AEM as a Cloud Service では、フォーム送信を処理するための様々な送信アクションが標準で提供されます。これらのオプションについて詳しくは、[アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)の記事を参照してください。
 
 ## メリット
 
-AEM Formsとの Azure Blob Storage 統合の利点の一部を次に示します。
+AEM Forms との Azure Blob Storage の統合のメリットの一部を次に示します。
 
-* これにより、アダプティブフォームのデータ、ファイル、添付ファイル、レコードのドキュメントを Azure Storage コンテナに送信するプロセスを合理化できます。
-* アダプティブフォーム送信の一元化された整理されたストレージに Azure Blob ストレージを使用します。
+* アダプティブフォームのデータ、ファイル、添付ファイルおよびレコードのドキュメントを Azure ストレージコンテナに送信するプロセスを効率化するのに役立ちます。
+* アダプティブフォーム送信の一元化された、整理されたストレージに Azure Blob Storage を使用します。
 
-## AEM FormsとMicrosoft® Azure Blob Storage の接続
+## Microsoft® Azure Blob Storage との AEM Forms の接続
 
-アダプティブForms送信アクションで Azure Blob ストレージを使用するには：
+アダプティブフォーム送信アクションで Azure Blob Storage を使用するには、次の手順に従います。
 
 1. [Azure Blob Storage コンテナの作成](#create-a-azure-blob-storage-container-create-azure-configuration)：AEM Forms を Azure Storage コンテナに接続します。
 2. [アダプティブフォームでの Azure ストレージ設定の使用](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af)：アダプティブフォームを、設定済みの Azure ストレージコンテナに接続します。

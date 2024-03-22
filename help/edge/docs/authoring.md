@@ -1,14 +1,15 @@
 ---
-description: Microsoft Word またはGoogle Docs を使用する場合は、コンテンツの作成方法が既にわかっています。
-title: コンテンツのオーサリングと公開
+description: Microsoft Word または Google Docs を使用している場合は、コンテンツの作成方法を既に把握しています。
+title: コンテンツのオーサリングとパブリッシング
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 3fd37d7d-e8ce-48c7-8c2d-a564b24e2f4f
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '24'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# コンテンツのオーサリングと公開
+# コンテンツのオーサリングとパブリッシング
 
 {{$include dcf898ec-5170-492c-a30e-3085211b12df}}

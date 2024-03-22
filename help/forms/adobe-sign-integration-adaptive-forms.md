@@ -6,9 +6,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
 source-git-commit: 67d8de3cda921dcaeaac47e64828abbe6abe943f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2033'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -44,16 +44,16 @@ ht-degree: 80%
 上記の前提条件の準備が完了したら、以下の手順により、オーサーインスタンス上の [!DNL AEM Forms] を使用して [!DNL Adobe Acrobat Sign] を設定します。
 
 1. AEM Forms のオーサーインスタンスで、**[!UICONTROL ツール]** ![ハンマー](assets/hammer.png)／**[!UICONTROL 一般]**／**[!UICONTROL 設定ブラウザー]**&#x200B;に移動します。
-1. 次の日： **[!UICONTROL 設定ブラウザー]** ページ、選択 **[!UICONTROL 作成]**.
-1. Adobe Analytics の **[!UICONTROL 設定を作成]** ダイアログ、指定する **[!UICONTROL タイトル]** 設定の場合は、を有効にします。 **[!UICONTROL クラウド設定]**&#x200B;をクリックし、次を選択します。 **[!UICONTROL 作成]**. これにより、Cloud Services 用の設定コンテナが作成されます。フォルダー名にスペースが含まれていないことを確認します。
+1. **[!UICONTROL 設定ブラウザー]**&#x200B;ページで「**[!UICONTROL 作成]**」を選択します。
+1. **[!UICONTROL 設定を作成]**&#x200B;ダイアログで、設定の&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定し、「**[!UICONTROL クラウド設定]**」を有効にして「**[!UICONTROL 作成]**」を選択します。これにより、Cloud Services 用の設定コンテナが作成されます。フォルダー名にスペースが含まれていないことを確認します。
 1. **[!UICONTROL ツール]**![ハンマー](assets/hammer.png)／**[!UICONTROL Cloud Services]**／**[!UICONTROL Adobe Acrobat Sign]** に移動し、上記の手順で作成した設定コンテナを開きます。
 
    >[!NOTE]
    >
    >アダプティブフォームを作成する際に、**[!UICONTROL 設定コンテナ]**&#x200B;フィールドにコンテナ名を指定します。
 
-1. 設定ページで、「 」を選択します。 **[!UICONTROL 作成]** を作成します。 [!DNL Adobe Acrobat Sign] AEM Formsでの設定
-1. Adobe Analytics の **[!UICONTROL 一般]** タブ **[!UICONTROL Adobe Acrobat Sign設定を作成]** ページで、 **[!UICONTROL 名前]** を選択します。 **[!UICONTROL 次へ]**. 必要に応じて&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定し、設定の&#x200B;**[!UICONTROL サムネ―ル]**&#x200B;を参照して選択することもできます。
+1. 設定ページで「**[!UICONTROL 作成]**」を選択して、AEM Forms 内に [!DNL Adobe Acrobat Sign] の設定を作成します。
+1. **[!UICONTROL Adobe Acrobat Sign 設定を作成]**&#x200B;ページの「**[!UICONTROL 一般]**」タブで、設定の&#x200B;**[!UICONTROL 名前]**&#x200B;を指定して「**[!UICONTROL 次へ]**」を選択します。必要に応じて&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定し、設定の&#x200B;**[!UICONTROL サムネ―ル]**&#x200B;を参照して選択することもできます。
 
 1. これで、**[!UICONTROL ソリューションを選択]**&#x200B;して、[!DNL Adobe Acrobat Sign] を選択できます。
 
@@ -66,19 +66,19 @@ ht-degree: 80%
 
 1. 現在のブラウザーウィンドウに存在する URL をメモ帳にコピーし、URL から `/ui#/aem` の部分を削除します。この修正した URL は、後の手順で [!DNL Adobe Acrobat Sign] アプリケーションと [!DNL AEM Forms] を設定する際に必要です。「**[!UICONTROL 次へ]**」を選択します。
 
-1. Adobe Analytics の **[!UICONTROL 設定]** タブ、
-   * の **[!UICONTROL OAuth URL]** フィールドには、Adobe Signデータベースシャードを含むデフォルトの URL が含まれます。 URL の形式は次の通りです。
+1. 「**[!UICONTROL 設定]**」タブで、
+   * 「**[!UICONTROL OAuth URL]**」フィールドには、Adobe Sign データベースシャードを含むデフォルトの URL が含まれます。URL の形式は次の通りです。
 
      `https://<shard>/public/oauth/v2`
 
-     例：
+     次に例を示します。
      `https://secure.na1.echosign.com/public/oauth/v2`
 
-   * の **[!UICONTROL トークン URL にアクセス]** フィールドには、Adobe Signデータベースシャードを含むデフォルトの URL が含まれます。 URL の形式は次の通りです。
+   * 「**[!UICONTROL アクセストークン URL]**」フィールドには、Adobe Sign データベースシャードを含むデフォルトの URL が含まれます。URL の形式は次の通りです。
 
      `https://<shard>/oauth/v2/token`
 
-     例：
+     次に例を示します。
      `https://api.na1.echosign.com/oauth/v2/token`
 
    各パラメーターの意味は次のとおりです。
@@ -88,12 +88,12 @@ ht-degree: 80%
    >[!NOTE]
    >
    >* **Adobe Acrobat Sign 設定を作成**&#x200B;ページを開いたままにします。閉じないでください。 **クライアント ID** および&#x200B;**クライアント秘密鍵**&#x200B;は、以降の手順で説明するように、[!DNL Adobe Acrobat Sign] アプリケーションの OAuth 設定を行った後に取得できます。
-   > * Adobe Signアカウントにログインした後、に移動します。 **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API 情報]** > **[!UICONTROL REST API メソッドのドキュメント]** > **[!UICONTROL OAuth アクセストークン]** Adobe Sign OAuth URL およびアクセストークン URL に関連する情報にアクセスする。
+   > * Adobe Sign アカウントにログインした後、**[!UICONTROL Acrobat Sign API]**／**[!UICONTROL API 情報]**／**[!UICONTROL REST API メソッドのドキュメント]**／**[!UICONTROL OAuth アクセストークン]**&#x200B;に移動して、Adobe Sign OAuth URL とアクセストークン URL に関連する情報にアクセスします。
 
 1. 以下の手順により、[!DNL Adobe Acrobat Sign] アプリケーション用に OAuth 設定を構成します。
 
    1. ブラウザーウィンドウを開き、[!DNL Adobe Acrobat Sign] 開発者アカウントにログインします。
-   1. 設定するアプリケーションを選択 [!DNL AEM Forms]をクリックし、次を選択します。 **[!UICONTROL アプリケーションの OAuth を設定]**.
+   1. [!DNL AEM Forms] 用に設定されているアプリケーションを選択し、「**[!UICONTROL アプリケーションの OAuth を設定]**」を選択します。
    1. 前述の手順（手順 8）でコピーした URL を「**[!UICONTROL リダイレクト URL]**」ボックスに追加して「**[!UICONTROL 保存]**」をクリックします。
    1. [!DNL Adobe Acrobat Sign] アプリケーションに対して以下の範囲を有効にして、「**[!UICONTROL 保存]**」をクリックします。
 
@@ -112,11 +112,11 @@ ht-degree: 80%
 
 1. 「**[!UICONTROL 添付ファイルの Adobe Acrobat Sign を有効にする]**」オプションを選択すると、アダプティブフォームに添付されているファイルが、署名用に送信された対応する [!DNL Adobe Acrobat Sign] ドキュメントに添付されます。
 
-1. 選択 **[!UICONTROL Adobe Acrobat Signに接続]**. 資格情報の入力画面が表示されたら、[!DNL Adobe Acrobat Sign] アプリケーションの作成時に使用した&#x200B;**ユーザー名**&#x200B;と&#x200B;**パスワード**&#x200B;を入力します。`your developer account` へのアクセスを確認するメッセージが表示されたら、「**[!UICONTROL アクセスを許可]**」をクリックします。資格情報が正しく、[!DNL AEM Forms] が [!DNL Adobe Acrobat Sign] 開発者アカウントにアクセスできるようにした場合は、次のような成功メッセージが表示されます。
+1. 「**[!UICONTROL Adobe Acrobat Sign に接続]**」を選択します。資格情報の入力画面が表示されたら、[!DNL Adobe Acrobat Sign] アプリケーションの作成時に使用した&#x200B;**ユーザー名**&#x200B;と&#x200B;**パスワード**&#x200B;を入力します。`your developer account` へのアクセスを確認するメッセージが表示されたら、「**[!UICONTROL アクセスを許可]**」をクリックします。資格情報が正しく、[!DNL AEM Forms] が [!DNL Adobe Acrobat Sign] 開発者アカウントにアクセスできるようにした場合は、次のような成功メッセージが表示されます。
 
    ![Adobe Acrobat Sign クラウド設定成功](assets/adobe-sign-cloud-configuration-success.png)
 
-1. 選択 **[!UICONTROL 作成]** を作成します。 [!DNL Adobe Acrobat Sign] 設定。
+1. 「**[!UICONTROL 作成]**」を選択して、[!DNL Adobe Acrobat Sign] 設定を作成します。
 
 1. 設定を選択し、「**[!UICONTROL 公開]**」をクリックします&#x200B;**[!UICONTROL 。]**&#x200B;これにより、対応するパブリッシュ環境に設定が複製されます。
 
@@ -126,7 +126,7 @@ ht-degree: 80%
 
 >[!NOTE]
 >
-> Adobe Sign Sandbox を設定するには、 [Adobe Sign](#adobe-sign).
+> Adobe Sign サンドボックスを設定するには、[Adobe Sign](#adobe-sign) で説明した手順と同じ設定手順に従います。
 
 ## AEM Forms と Adobe Acrobat Sign Solutions for Government を接続 {#adobe-acrobat-sign-for-government}
 
@@ -152,11 +152,11 @@ AEM Forms と Adobe Acrobat Sign Solution の接続を開始する前に、[Adob
 #### AEM インスタンスのリダイレクト URL を作成
 
 1. Forms as a Cloud Service のオーサーインスタンスで、**[!UICONTROL ツール]**![ハンマー](assets/hammer.png)／**[!UICONTROL 一般]**／**[!UICONTROL 設定ブラウザー]**&#x200B;に移動します。
-1. 次の日： **[!UICONTROL 設定ブラウザー]** ページ、選択 **[!UICONTROL 作成]**.
-1. Adobe Analytics の **[!UICONTROL 設定を作成]** ダイアログ、指定する **[!UICONTROL タイトル]** 設定の場合は、を有効にします。 **[!UICONTROL クラウド設定]**&#x200B;をクリックし、次を選択します。 **[!UICONTROL 作成]**. これにより、Cloud Services 用の設定コンテナが作成されます。フォルダー名にスペースが含まれていないことを確認します。
+1. **[!UICONTROL 設定ブラウザー]**&#x200B;ページで「**[!UICONTROL 作成]**」を選択します。
+1. **[!UICONTROL 設定を作成]**&#x200B;ダイアログで、設定の&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定し、「**[!UICONTROL クラウド設定]**」を有効にして「**[!UICONTROL 作成]**」を選択します。これにより、Cloud Services 用の設定コンテナが作成されます。フォルダー名にスペースが含まれていないことを確認します。
 1. **[!UICONTROL ツール]**![ハンマー](assets/hammer.png)／**[!UICONTROL Cloud Services]**／**[!UICONTROL Adobe Acrobat Sign]** に移動し、上記の手順で作成した設定コンテナを開きます。アダプティブフォームを作成する際に、**[!UICONTROL 設定コンテナ]**&#x200B;フィールドにコンテナ名を指定します。
-1. 設定ページで、「 」を選択します。 **[!UICONTROL 作成]** を作成します。 [!DNL Adobe Acrobat Sign] AEM Formsでの設定
-1. 現在のブラウザーウィンドウの URL をメモ帳にコピーし、URL から `/ui#/aem` を削除します。この URL は `re-direct URL`.
+1. 設定ページで「**[!UICONTROL 作成]**」を選択して、AEM Forms 内に [!DNL Adobe Acrobat Sign] の設定を作成します。
+1. 現在のブラウザーウィンドウの URL をメモ帳にコピーし、URL から `/ui#/aem` を削除します。この URL は `re-direct URL` と呼ばれます。
 次のセクションでは、`re-direct URL` と `Scopes` を Adobe Sign チームと共有し、認証情報（クライアント ID とクライアントシークレット）を要求します。
 
 #### リダイレクト URL とスコープを Adobe Sign チームと共有し、資格情報を受け取る
@@ -181,7 +181,7 @@ Adobe Acrobat Sign for Government Solutions チームには、AEM Forms と Adob
 
 1. ブラウザーで `re-direct URL` を開きます。「[AEM インスタンスにリダイレクト URL を作成](#create-a-redirect-url-for-your-aem-instance)」セクションの最後の手順で `re-direct URL` を作成し、書き留めました。
 
-1. Adobe Analytics の **[!UICONTROL 一般]** タブ **[!UICONTROL Adobe Sign設定を作成]** ページで、 **[!UICONTROL 名前]** を選択します。 **[!UICONTROL 次へ]**. 必要に応じて&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定し、設定の&#x200B;**[!UICONTROL サムネ―ル]**&#x200B;を参照して選択することもできます。「**[!UICONTROL 次へ]**」をクリックします。
+1. **[!UICONTROL Adobe Sign 設定を作成]**&#x200B;ページの「**[!UICONTROL 一般]**」タブで、設定の&#x200B;**[!UICONTROL 名前]**&#x200B;を指定して「**[!UICONTROL 次へ]**」を選択します。必要に応じて&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定し、設定の&#x200B;**[!UICONTROL サムネ―ル]**&#x200B;を参照して選択することもできます。「**[!UICONTROL 次へ]**」をクリックします。
 
 1. **[!UICONTROL Adobe Sign 設定を作成]**&#x200B;ページの「**[!UICONTROL 設定]**」タブの、「**[!UICONTROL ソリューションを選択]**」オプションで、[!DNL Adobe Acrobat Sign Solutions for Government] を選択します。
 
@@ -190,19 +190,19 @@ Adobe Acrobat Sign for Government Solutions チームには、AEM Forms と Adob
 
 1. 「**[!UICONTROL メール]**」フィールドで、Adobe Acrobat Sign Solutions for Government アカウントに関連付けられたメールアドレスを指定します。
 
-1. Adobe Analytics の **[!UICONTROL 設定]** タブ、
-   * の **[!UICONTROL OAuth URL]** フィールドには、Adobe Signデータベースシャードを含むデフォルトの URL が含まれます。 URL の形式は次の通りです。
+1. 「**[!UICONTROL 設定]**」タブで、
+   * 「**[!UICONTROL OAuth URL]**」フィールドには、Adobe Sign データベースシャードを含むデフォルトの URL が含まれます。URL の形式は次の通りです。
 
      `https://<shard>/api/gateway/adobesignauthservice/api/v1/authorize`
 
-     例：
+     次に例を示します。
      `https://secure.na1.adobesign.us/api/gateway/adobesignauthservice/api/v1/authorize`
 
-   * の **[!UICONTROL トークン URL にアクセス]** フィールドには、Adobe Signデータベースシャードを含むデフォルトの URL が含まれます。 URL の形式は次の通りです。
+   * 「**[!UICONTROL アクセストークン URL]**」フィールドには、Adobe Sign データベースシャードを含むデフォルトの URL が含まれます。URL の形式は次の通りです。
 
      `https://<shard>/api/gateway/adobesignauthservice/api/v1/token`
 
-     例：
+     次に例を示します。
      `https://secure.na1.adobesign.us/api/gateway/adobesignauthservice/api/v1/token`
 
    各パラメーターの意味は次のとおりです。
@@ -211,19 +211,19 @@ Adobe Acrobat Sign for Government Solutions チームには、AEM Forms と Adob
 
    >[!NOTE]
    >
-   > * Adobe Signアカウントにログインした後、に移動します。 **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API 情報]** > **[!UICONTROL REST API メソッドのドキュメント]** > **[!UICONTROL OAuth アクセストークン]** Adobe Sign oAuth URL およびアクセストークン URL に関連する情報にアクセスする。
+   > * Adobe Sign アカウントにログインした後、**[!UICONTROL Acrobat Sign API]**／**[!UICONTROL API 情報]**／**[!UICONTROL REST API メソッドのドキュメント]**／**[!UICONTROL OAuth アクセストークン]**&#x200B;に移動して、Adobe Sign oAuth URL とアクセス トークン URL に関連する情報にアクセスします。
 
 1. 前の節で、Adobe Acrobat Sign for Government Solution 担当者（[Adobe Professional Services チームメンバー]）が共有した資格情報を [**[!UICONTROL クライアント ID]** と&#x200B;**[!UICONTROL クライアントの秘密鍵]**] として使用します。
 
 1. 「**[!UICONTROL 添付ファイルの Adobe Acrobat Sign を有効にする]**」オプションを選択すると、アダプティブフォームに添付されているファイルが、署名用に送信された対応する [!DNL Adobe Acrobat Sign] ドキュメントに添付されます。
 
-1. 選択 **[!UICONTROL Adobe Signに接続]**. 資格情報の入力画面が表示されたら、[!DNL Adobe Acrobat Sign] アプリケーションの作成時に使用したユーザー名とパスワードを入力します。`your developer account` へのアクセスを確認するメッセージが表示されたら、「**[!UICONTROL アクセスを許可]**」をクリックします。資格情報が正しく、[!DNL AEM Forms] が [!DNL Adobe Acrobat Sign] 開発者アカウントにアクセスできるようにした場合は、次のような成功メッセージが表示されます。
+1. 「**[!UICONTROL Adobe Sign に接続]**」を選択します。資格情報の入力画面が表示されたら、[!DNL Adobe Acrobat Sign] アプリケーションの作成時に使用したユーザー名とパスワードを入力します。`your developer account` へのアクセスを確認するメッセージが表示されたら、「**[!UICONTROL アクセスを許可]**」をクリックします。資格情報が正しく、[!DNL AEM Forms] が [!DNL Adobe Acrobat Sign] 開発者アカウントにアクセスできるようにした場合は、次のような成功メッセージが表示されます。
 
    ![Adobe Acrobat Sign クラウド設定成功](assets/adobe-sign-cloud-configuration-success.png)
 
    <!-- > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. -->
 
-1. 選択 **[!UICONTROL 作成]** をクリックして設定を作成します。
+1. 「**[!UICONTROL 作成]**」を選択して、設定を作成します。
 
 1. 設定を選択し、「**[!UICONTROL 公開]**」をクリックします&#x200B;**[!UICONTROL 。]**&#x200B;これにより、対応するパブリッシュ環境に設定が複製されます。
 
@@ -233,10 +233,10 @@ Adobe Acrobat Sign for Government Solutions チームには、AEM Forms と Adob
 
 ## [!DNL Adobe Acrobat Sign] スケジューラーを設定して署名ステータスを同期する {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
-AEM Formsas a Cloud Serviceのは、定義された間隔で署名者のステータスを確認するスケジューラーサービスを提供します。 スケジューラーサービスを設定するシナリオは、次のとおりです。
+AEM Forms as a Cloud Service では、定義された間隔で署名者のステータスを確認するスケジューラーサービスを提供します。スケジューラーサービスを設定するシナリオを以下に示します。
 
-* 次を使用する場合、 [フォームを送信します（各受信者が署名式を完了した後）](/help/forms/working-with-adobe-sign.md#select-adobe-sign-cloud-service-and-signing-order) ドキュメントに署名する場合、すべての署名者がフォームに署名した後でのみフォームが送信されます。
-* を使用する場合、 [AEM Workflow での署名ステップ](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step) ドキュメントに署名するには、署名ステップは、すべての署名者がドキュメントに署名するのを待ってから、ワークフローの次のステップに進みます。
+* 「[フォームを送信（すべての受信者が署名行為を完了した後）](/help/forms/working-with-adobe-sign.md#select-adobe-sign-cloud-service-and-signing-order)」を使用してドキュメントに署名した場合、フォームはすべての署名者がフォームに署名した後にのみ送信されます。
+* 「[AEM ワークフローの署名ステップ](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step)」を使用してドキュメントに署名した場合、署名ステップは、すべての署名者がドキュメントに署名するのを待ってから、ワークフローの次のステップに進みます。
 
 デフォルトでは、[!DNL Adobe Acrobat Sign] スケジューラーサービスは、24 時間ごとに署名者の応答を確認（ポーリング）します。現在の環境に合わせて、このデフォルト値を変更することができます。
 

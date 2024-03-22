@@ -1,29 +1,29 @@
 ---
-title: '''[!DNL Live Search] 製品リストページのCIFコンポーネント'
-description: CIFコンポーネントを使用した有効化 [!DNL Live Search] AEMサイト上の製品リストページコンポーネント
-source-git-commit: eaec541c191fc8f68d78662f2b6ab9140460aa9f
-workflow-type: tm+mt
+title: '[!DNL Live Search]製品リストページの CIF コンポーネント'
+description: CIF コンポーネントを使用して AEM サイトで [!DNL Live Search] 製品リストページコンポーネントを有効にします
+exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
+source-git-commit: 6da9ade59139b3eb6c103635ae72b8d71ef9a7fc
+workflow-type: ht
 source-wordcount: '433'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# [!DNL Live Search] CIF コンポーネント {#live-search-cif-component}
 
-# [!DNL Live Search] CIF Component {#live-search-cif-component}
+Adobe Commerce の Live Search では、追加費用なしで、高速で関連性の高い直感的な検索エクスペリエンスを実現します。Adobe Sensei を活用した Live Search では、人工知能と機械学習アルゴリズムを使用して、集計された訪問者データの詳細な分析を実行します。このデータを Adobe Commerce カタログと組み合わせると、関連性の高いパーソナライズされたショッピングエクスペリエンスが実現します。
 
-Adobe Commerceのライブ検索は、迅速で関連性が高く、直感的な検索操作を、追加費用なしで実現します。 Adobe Senseiを活用したライブ検索では、人工知能と機械学習アルゴリズムを使用して、集計された訪問者データを深く分析します。 このデータをAdobe Commerceカタログと組み合わせると、関連性の高いパーソナライズされたショッピングエクスペリエンスが得られます。
-
-ここでは、AEM CIFコンポーネントを使用して [!DNL Live Search] 製品リストページ (PLP) ウィジェットをAEMサイトに貼り付けます。
+このトピックでは、AEM CIF コンポーネントを使用して[!DNL Live Search]製品リストページ（PLP）ウィジェットを AEM サイトに実装する方法について説明します。
 
 ## 前提条件 {#prerequisites}
 
-このトピックでは、 [AEM環境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=ja) を設定します。
+このトピックでは、ローカル [AEM 環境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=ja)が設定されていることを前提としています。
 
-PLP コンポーネントには、 [[!DNL Live Search] ポップオーバーCIFコンポーネント](live-search-popover.md) をインストールします。 PLP ウィジェットには、ポップオーバーによって生成されるブラウザセッション変数が必要です。
+PLP コンポーネントには、[[!DNL Live Search]  ポップオーバー CIF コンポーネント](live-search-popover.md)をインストールする必要があります。PLP ウィジェットには、ポップオーバーによって生成されるブラウザーセッション変数が必要です。
 
 ## コンポーザーを更新 {#update-composer}
 
-イベンティングモジュールの追加先 `ui.frontend/package.json`.
+イベントモジュールを `ui.frontend/package.json` に追加します。
 
 27 行目で、次の内容を変更します。
 
@@ -37,7 +37,7 @@ PLP コンポーネントには、 [[!DNL Live Search] ポップオーバーCIF�
 ...
 ```
 
-リダイレクト先は次のとおりです。
+変更後は次のとおりです。
 
 ```json
 ...
@@ -52,11 +52,11 @@ PLP コンポーネントには、 [[!DNL Live Search] ポップオーバーCIF�
 
 ## ファイルの変更 {#files-changes}
 
-有効にするには複数のファイルを更新する必要があります [!DNL Live Search] 機能。 次のファイルを編集します。 行番号は、次に示すように少し異なる場合があります。
+[!DNL Live Search] 機能を有効にするには、複数のファイルを更新する必要があります。次のファイルを編集します。行番号は、次に示されているものと少し異なる場合があります。
 
 * ui.apps/src/main/content/jcr_root/apps/venia/clientlibs/clientlib-cif/.content.xml
 
-  追加 `core.cif.productlist.v1` から `embed` 行。
+  `core.cif.productlist.v1` を `embed` 行に追加します。
 
   ```
   embed="[core.cif.components.common,core.cif.components.product.v3,core.cif.components.productcarousel.v1,core.cif.components.productcollection.v2,core.cif.components.productteaser.v1,core.cif.components.searchbar.v2,core.cif.components.header.v1,core.cif.components.carousel.v1,core.cif.components.categorycarousel.v1,core.cif.components.featuredcategorylist.v1,core.cif.components.storefront-events.v1,core.cif.components.extensions.product-recs.storefront-events-collector.v1,core.wcm.components.commons.site.link,core.cif.productlist.v1]"
@@ -64,7 +64,7 @@ PLP コンポーネントには、 [[!DNL Live Search] ポップオーバーCIF�
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/.content.xml
 
-  ファイルの作成 `.content.xml`:
+  `.content.xml` ファイルを作成します。
 
   ```xml
   <?xml version="1.0" encoding="UTF-8"?>
@@ -77,7 +77,7 @@ PLP コンポーネントには、 [[!DNL Live Search] ポップオーバーCIF�
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/css.txt
 
-  ファイルを作成します。 `css.txt`:
+  `css.txt` ファイルを作成します。
 
   ```text
   #base=css
@@ -87,7 +87,7 @@ PLP コンポーネントには、 [[!DNL Live Search] ポップオーバーCIF�
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/css/productlist.css
 
-  ファイルを作成します。 `productlist.css`
+  `productlist.css` ファイルを作成します。
 
   ```css
     /* #search-plp-root */
@@ -116,7 +116,7 @@ PLP コンポーネントには、 [[!DNL Live Search] ポップオーバーCIF�
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/js.txt
 
-  ファイルを作成します。 `js.txt`:
+  `js.txt` ファイルを作成します。
 
   ```text
   js/productlist.js
@@ -124,7 +124,7 @@ PLP コンポーネントには、 [[!DNL Live Search] ポップオーバーCIF�
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/js/productlist.js
 
-  ファイルを作成します。 `productlist.js`:
+  `productlist.js` ファイルを作成します。
 
   ```javascript
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -279,7 +279,7 @@ PLP コンポーネントには、 [[!DNL Live Search] ポップオーバーCIF�
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/productlist.html
 
-  ファイルを作成 `productlist.html`:
+  `productlist.html` ファイルを作成します。
 
   ```html
   <div
@@ -293,7 +293,7 @@ PLP コンポーネントには、 [[!DNL Live Search] ポップオーバーCIF�
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchresults/.content.xml
 
-  編集 `.content.xml` 6 行目：
+  `.content.xml` の 6 行目を編集します。
 
   ```xml
   sling:resourceSuperType="venia/components/commerce/productlist"
@@ -301,7 +301,7 @@ PLP コンポーネントには、 [[!DNL Live Search] ポップオーバーCIF�
 
 * ui.content/src/main/content/jcr_root/content/venia/language-masters/en/search/.content.xml
 
-  編集 `.content.xml` 21-22 行目：
+  `.content.xml` の 21～22 行目を編集します。
 
   ```xml
   sling:resourceType="venia/components/commerce/productlist"
@@ -309,7 +309,7 @@ PLP コンポーネントには、 [[!DNL Live Search] ポップオーバーCIF�
 
 * ui.content/src/main/content/jcr_root/content/venia/us/en/search/.content.xml
 
-  編集 `.content.xml` 26 行目：
+  `.content.xml` の 26 行目を編集します。
 
   ```xml
   sling:resourceType="venia/components/commerce/productlist"
@@ -317,7 +317,7 @@ PLP コンポーネントには、 [[!DNL Live Search] ポップオーバーCIF�
 
 * ui.frontend/src/main/components/App/App.js
 
-  編集 `App.js` 47 行目、 `../../site/main.scss`:
+  `../../site/main.scss` のすぐ上にある、`App.js` の 47 行目を編集します。
 
   ```javascript
   import '@adobe/magento-storefront-event-collector';
@@ -325,7 +325,7 @@ PLP コンポーネントには、 [[!DNL Live Search] ポップオーバーCIF�
 
 * ui.tests/test-module/specs/venia/productlist-dialog.js
 
-  編集 `productlist-dialog.js` および変更 `describe` から `describe.skip` 20 行目：
+  `productlist-dialog.js` の 20 行目を編集し、`describe` を `describe.skip` に変更します。
 
   ```javascript
   describe.skip('Product List Component Dialog', function () {
@@ -333,16 +333,16 @@ PLP コンポーネントには、 [[!DNL Live Search] ポップオーバーCIF�
 
 ## 非 PLP ページ {#non-plp-pages}
 
-PLP ウィジェットを使用するのではなく、デフォルトのカテゴリまたはカタログページが必要なカテゴリが存在する場合があります。 AEMでは、これらのカテゴリページを手動で設定する必要があります。
+カテゴリによっては、PLP ウィジェットを使用するのではなく、デフォルトのカテゴリまたはカタログページが必要な場合があります。AEM では、これらのカテゴリページを手動で設定する必要があります。
 
-1. 作成者ページで、カテゴリページテンプレートを選択します。 _ヴェニアストア — ホーム_ > _カタログページ_ > _Venia ストア — カテゴリページ_ 「外観をショッピング」を選択するか、新しいページテンプレートを作成します。
+1. 作成者ページから、カテゴリページテンプレートを選択します。_Venia ストア - ホーム_／_カタログページ_／_Venia ストア - カテゴリページ_&#x200B;に移動し、「商品の陳列」を選択するか、新しいページテンプレートを作成します。
 
-![テンプレートを選択](../assets/cif-widget-1.jpg)
+![テンプレートの選択](../assets/cif-widget-1.jpg)
 
-1. 次をクリック： _プロパティ_ 」セクションで、 _コマース_ タブをクリックします。
+1. 「_プロパティ_」セクションをクリックし、「_コマース_」タブを選択します。
 
-![プロパティを選択](../assets/cif-widget-2.jpg)
+![プロパティの選択](../assets/cif-widget-2.jpg)
 
 1. 選択したカテゴリページテンプレートで表示するカテゴリを選択します。
 
-![カテゴリを選択](../assets/cif-widget-3.jpg)
+![カテゴリの選択](../assets/cif-widget-3.jpg)

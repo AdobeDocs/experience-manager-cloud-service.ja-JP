@@ -5,9 +5,9 @@ keywords: アダプティブフォームの送信アクションの選択、ア�
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 source-git-commit: 2f567d45a6ba2dfb4dd3346e8510bcb04113eefb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '673'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -25,19 +25,19 @@ ht-degree: 66%
 送信アクションを使用すると、アダプティブフォーム経由で取り込んだデータの送信先を選択できます。送信アクションは、ユーザーがアダプティブフォームの「**[!UICONTROL 送信]** button on an Adaptive Form. 」ボタンをクリックするとトリガーされます。Formsas a Cloud Serviceのは、コアコンポーネントに基づくアダプティブFormsの場合、事前に作成された送信アクションの配列を提供します。 標準のこれらの送信アクションを使用すると、次のことができます。
 
 * フォームデータを E メールで簡単に送信できます。
-* データの送信中に、Microsoft® Power Automate のフローまたはAEMのワークフローを開始します。
-* フォームデータをMicrosoft® SharePoint Server、Microsoft® Azure Blob Storage、またはMicrosoft® OneDrive に直接送信します。
+* データの送信中に、Microsoft® Power Automate のフローまたは AEM ワークフローを開始します。
+* フォームデータを Microsoft® SharePoint Server、Microsoft® Azure Blob Storage、または Microsoft® OneDrive に直接送信します。
 * フォームデータモデルを使用して、設定済みのデータソースにデータをシームレスに送信します。
 * データを REST エンドポイントに送信すると便利です。
 
-以下が可能です。 [デフォルトの送信アクションの拡張](custom-submit-action-form.md). また、組織固有の要件に合わせて送信アクションをカスタマイズすることもできます。
+[デフォルトの送信アクションを拡張](custom-submit-action-form.md)することができます。また、組織固有の要件に合わせて送信アクションをカスタマイズすることもできます。
 
-アダプティブフォームの送信アクションを定義するには、 **アダプティブフォームコンテナ** コンポーネント。 の設定ダイアログ **アダプティブフォームコンテナ** コンポーネントには次が含まれます。
+アダプティブの送信アクションを定義するには、**アダプティブフォームコンテナ**&#x200B;コンポーネントの設定ダイアログを使用します。**アダプティブフォームコンテナ**&#x200B;コンポーネントの設定ダイアログには次が含まれます。
 * 「基本」タブ
 * 「フォームデータモデル」タブ
 * 「送信」タブ
 
-設定ダイアログを使用して、フォームコンテナのプロパティを定義できます。 フォームコンテナコンポーネントの設定ダイアログの詳細については、次の手順を実行します。 [ここをクリックします。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)
+設定ダイアログを使用して、フォームコンテナのプロパティを定義できます。フォームコンテナコンポーネントの設定ダイアログについて詳しくは、[ここをクリック](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)します。
 
 ## アダプティブフォームの送信アクションの設定方法 {#select-and-configure-submit-action}
 
@@ -50,13 +50,13 @@ ht-degree: 66%
 
    ![レンチアイコンをクリックしてアダプティブフォームコンテナダイアログボックスを開き、送信アクションを設定します](/help/forms/assets/adaptive-forms-submit-message.png)
 
-1. を選択して設定します。 **[!UICONTROL 送信アクション]**、要件に応じて。
+1. 必要に応じて、「**[!UICONTROL 送信アクション]**」を選択して設定します。
 
-アダプティブフォームの送信に対して、様々なアクションを設定することもできます。
-* **リダイレクト URL/パス**  — このオプションを使用すると、ユーザーはアダプティブフォームの送信後にフォームユーザーがリダイレクトされるページを各フォームに設定できます。
+ユーザーは、アダプティブフォームの送信に対して様々なアクションを設定できます。
+* **リダイレクト URL／パス** - このオプションを使用すると、ユーザーはアダプティブフォームの送信後にユーザーがリダイレクトされる各フォームのページを設定できます。
 * **メッセージを表示** - このオプションを使用すると、ユーザーはアダプティブフォームが正常に送信されたときに表示されるメッセージを追加できます。定義済みのテキストはダイアログボックスに含まれ、ユーザーが変更できます。
 
-次の送信アクションの詳細については、次を参照してください。
+次の送信アクションの詳細については、以下をご覧ください。
 
 * [メールを送信](/help/forms/configure-submit-action-send-email.md)
 * [Power Automate フローを呼び出す](/help/forms/forms-microsoft-power-automate-integration.md)
@@ -70,10 +70,10 @@ ht-degree: 66%
 
 アダプティブフォームを他のストレージ設定に送信することもできます。
 
-* [アダプティブフォームを Salesforce アプリケーションに接続](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
-* [アダプティブフォームのMicrosoft® Dynamics OData への接続](/help/forms/ms-dynamics-odata-configuration.md)
+* [Salesforce アプリケーションにアダプティブフォームを接続](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Microsoft® Dynamics OData にアダプティブフォームを接続](/help/forms/ms-dynamics-odata-configuration.md)
 
-以下が可能です。 [デフォルトの送信アクションのカスタマイズ](custom-submit-action-form.md). さらに、送信アクションをカスタマイズして、特定の組織要件に合わせることができます。
+[デフォルトの送信アクションをカスタマイズ](custom-submit-action-form.md)できます。さらに、送信アクションをカスタマイズして、特定の組織要件に合わせることができます。
 
 
 <!--

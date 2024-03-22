@@ -4,13 +4,13 @@ description: アダプティブフォームで識別子として使用できな�
 topic-tags: author
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 6511c4273ca3d394d98a61e8acb4d3cb03c243d5
-workflow-type: tm+mt
+exl-id: 2cd3c322-9c38-42be-9877-a03c9ffc02ae
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '205'
 ht-degree: 100%
 
 ---
-
 
 # アダプティブフォームのキーワード {#adaptive-forms-keywords}
 

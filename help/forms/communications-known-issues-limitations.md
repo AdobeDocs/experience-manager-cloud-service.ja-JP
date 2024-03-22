@@ -5,9 +5,9 @@ exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 feature: Adaptive Forms
 role: Admin, Developer, User
 source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1733'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ XFA ストリームを含んでいない PDF ドキュメントは、PostScript�
 
 必ず、プリンターに合った XDC ファイルを使用してください。例えば、ドキュメントを 200 dpi のプリンターに送信する場合は 300 dpi のプリンター用の XDC ファイルを選択しないようにします。
 
-### XFA フォーム (XDP/PDF) 専用のスクリプト {#scripts}
+### XFA フォーム（XDP／PDF）のみのスクリプト {#scripts}
 
 通信 API で使用されるフォームデザインには、サーバー上で実行されるスクリプトを含めることができます。フォームデザインに、クライアント上で実行されるスクリプトが含まれていないことを確認します。フォームデザインスクリプトの作成について詳しくは、[Designer のヘルプ](use-forms-designer.md)を参照してください。
 

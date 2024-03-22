@@ -1,11 +1,12 @@
 ---
-description: 管理操作とインデックス作成操作は、監査ログに記録されます。監査ログは、管理者エンドポイントを介して照会できます。
+description: 管理操作とインデックス作成操作は、管理エンドポイント経由でクエリを実行できる監査ログに記録されます。
 title: 監査ログ
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 18751843-d2c9-44d7-b354-4c551a1a634c
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '22'
-ht-degree: 18%
+ht-degree: 100%
 
 ---
 

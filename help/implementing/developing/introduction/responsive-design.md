@@ -2,9 +2,9 @@
 title: レスポンシブデザイン
 description: レスポンシブデザインを使用すると、同じエクスペリエンスを複数のデバイスで、複数の向きで効果的に表示できます。
 source-git-commit: c9ee24e7b9f10ebbf9425dff66103e097701c8e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '908'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -71,9 +71,9 @@ CSS ファイルでは、ターゲットとしているデバイスのプロパ�
 
 ### AEM ページでのメディアクエリの使用 {#using-media-queries-with-aem-pages}
 
-[WKND サンプルプロジェクト](/help/implementing/developing/introduction/develop-wknd-tutorial.md) および [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) を使用します。 [ページコアコンポーネント、](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html) ページポリシーを介した clientlibs を含む
+[WKND サンプルプロジェクト](/help/implementing/developing/introduction/develop-wknd-tutorial.md)と [AEM Project アーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)は、ページポリシーを介した clientlibs を含む[ページコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=ja)を使用します。
 
-独自のページコンポーネントがページコアコンポーネントに基づいていない場合は、クライアントライブラリフォルダーをその HTL または JSP スクリプトに含めることもできます。 これにより、レスポンシブグリッドが機能するために必要なメディアクエリを含んだ CSS ファイルが生成され、参照されます。
+独自のページコンポーネントがページコアコンポーネントに基づいていない場合は、クライアントライブラリフォルダーをその HTL または JSP スクリプトに含めることもできます。これにより、レスポンシブグリッドが機能するために必要なメディアクエリを含む CSS ファイルが生成され、参照されます。
 
 #### HTL {#htl}
 
@@ -97,19 +97,19 @@ CSS ファイルでは、ターゲットとしているデバイスのプロパ�
 
 ## 特定のデバイスのプレビュー {#previewing-for-specific-devices}
 
-エミュレーターを使用すると、ページを様々な表示域サイズでプレビューできるので、レスポンシブデザインの動作をテストできます。 サイトコンソールでページを編集する際に、 **エミュレーター** アイコンをクリックしてエミュレーターを表示します。
+エミュレーターを起動すると、異なるビューポートサイズでページをプレビューできるようになり、レスポンシブデザインの動作をテストできます。サイトコンソールでページを編集する際に、**エミュレーター**&#x200B;アイコンをクリックしてエミュレーターを表示します。
 
 ![ツールバーのエミュレーターアイコン](assets/emulator-icon.png)
 
-エミュレーターツールバーで、 **デバイス** アイコンをクリックすると、デバイスを選択できるドロップダウンメニューが表示されます。 デバイスを選択すると、その表示域サイズに合わせてページが変更されます。
+エミュレーターツールバーで、**デバイス**&#x200B;アイコンをクリックすると、デバイスを選択できるドロップダウンメニューが表示されます。デバイスを選択すると、その表示域サイズに合わせてページが変更されます。
 
 ![エミュレーターツールバー](assets/emulator.png)
 
 ### デバイスグループの指定 {#specifying-device-groups}
 
-に表示されるデバイスグループを指定するには **デバイス** リストを追加する `cq:deviceGroups` プロパティを `jcr:content` サイトのテンプレートページのノードに設定します。 プロパティの値は、デバイスグループノードへのパスの配列です。
+**デバイス**&#x200B;リストに表示されるデバイスグループを指定するには、`cq:deviceGroups` プロパティをサイトのテンプレートページの `jcr:content` ノードに追加します。プロパティの値は、デバイスグループノードへのパスの配列です。
 
-例えば、WKND サイトのテンプレートページが次のような場合、 `/conf/wknd/settings/wcm/template-types/empty-page/structure`. また、 `jcr:content` ノードの下に、次のプロパティが含まれます。
+例えば、WKND サイトのテンプレートページは `/conf/wknd/settings/wcm/template-types/empty-page/structure` です。また、その下の `jcr:content` ノードには次のプロパティが含まれています。
 
 * 名前：`cq:deviceGroups`
 * タイプ：`String[]`
@@ -119,15 +119,15 @@ CSS ファイルでは、ターゲットとしているデバイスのプロパ�
 
 ## レスポンシブ画像 {#responsive-images}
 
-レスポンシブページは、レンダリングされるデバイスに動的に適応し、ユーザーに対してより優れたエクスペリエンスを提供します。 ただし、ページ読み込み時間を最小限に抑えるために、アセットをブレークポイントとデバイスに最適化することも重要です。
+レスポンシブページは、レンダリングされるデバイスに動的に適応するため、ユーザーのエクスペリエンスが向上します。ただし、ページ読み込み時間を最小限に抑えるために、アセットをブレークポイントとデバイスに最適化することも重要です。
 
-[コアコンポーネントの画像コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=ja) アダプティブ画像選択などの機能です。
+[コアコンポーネントの画像コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=ja)には、アダプティブ画像選択などの機能があります。
 
-* デフォルトでは、画像コンポーネントは、 [アダプティブ画像サーブレット](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) 適切なレンディションを配信する。
-* [Web に最適化された画像配信](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=ja) は、DAM から WebP 形式で画像アセットを配信し、画像のダウンロードサイズを平均で約 25%削減できる、シンプルなチェックボックスをポリシーで選択しても利用できます。
+* デフォルトで画像コンポーネントは、[アダプティブ画像サーブレット](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html?lang=ja)を使用して、適切なレンディションを配信します。
+* [Web に最適化された画像配信](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=ja)は、DAM から WebP 形式で画像アセットを配信し、画像のダウンロードサイズを平均で約 25%削減できる、シンプルなチェックボックスをポリシーで選択しても利用できます。
 
 ## レイアウトコンテナ {#layout-container}
 
-AEMレイアウトコンテナを使用すると、レスポンシブレイアウトを効率的かつ効果的に実装して、ページのサイズをクライアントビューポートに適応させることができます。
+AEM レイアウトコンテナを使用すると、レスポンシブレイアウトを効率的かつ効果的に実装して、ページのサイズをクライアントビューポートに適応させることができます。
 
-ドキュメントを参照してください [レイアウトコンテナとレイアウトモードの設定](/help/sites-cloud/administering/responsive-layout.md) レイアウトコンテナの仕組みと、コンテンツに対してレスポンシブレイアウトを有効にする方法について詳しくは、こちらを参照してください。
+レイアウトコンテナの仕組みと、コンテンツに対してレスポンシブレイアウトを有効にする方法について詳しくは、[レイアウトコンテナとレイアウトモードの設定](/help/sites-cloud/administering/responsive-layout.md)のドキュメントをご覧ください。

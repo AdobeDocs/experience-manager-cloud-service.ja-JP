@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
 source-git-commit: 4bda798113d85b800cb088d150f8c9d453c9ec3e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1767'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -63,13 +63,13 @@ ht-degree: 99%
 1. クラウドサービスの「プロジェクトにリンクされたフォルダー」タブに移動します。
 1. リンクされたフォルダーの親パス：DAM 内で、リンクされたフォルダーを作成するフォルダーを選択します。空のままにすると、デフォルトで /content/dam に設定されます。Workfront ツールのメタデータスキーマと Workfront リンクフォルダーのメタデータスキーマが、選択したフォルダーに適用されていることを確認します。
 1. リンクされたフォルダー構造：コンマ区切り値を入力します。各値は `DE:<some-project-custom-form-field>`、Portfolio、プログラム、年、名前または「リテラル文字列値」（最後の 1 つには引用符がいります）のいずれかです。現在は、Portfolio、プログラム、年、DE:プロジェクトの種類、名前に設定されています。
-1. 権限の設定：追加 `jcr:all permissions` に対する権限 `/conf/workfront-tools/settings/cloudconfigs` 対象： `wf-workfront-users` グループ化します。
+1. 権限の設定：`wf-workfront-users` グループに、`/conf/workfront-tools/settings/cloudconfigs` に対する `jcr:all permissions` 権限を追加します。
 1. Workfront のフォルダーのタイトルに構造内のすべてのフォルダーを含める必要がある場合は、「フォルダー構造名を使用して Workfront でリンクされたフォルダーのタイトルを作成」チェックボックスをオンにする必要があります。それ以外の場合は、最後のフォルダーのタイトルになります。
 1. サブフォルダーのマルチフィールドでは、リンクされたフォルダーの子フォルダーとして作成するフォルダーのリストを指定できます。
 1. プロジェクトのステータス：プロジェクトを設定する必要があるステータスを選択して、リンクされたフォルダーを作成します。
 1. ポートフォリオを使用してプロジェクトにリンクされたフォルダーを作成する：プロジェクトが属する必要のあるポートフォリオのリストで、リンクされたフォルダーを作成できます。この一覧を空のままにして、すべてのプロジェクトポートフォリオのリンクフォルダーを作成します。
 1. カスタムフォームフィールドを使用してプロジェクトにリンクされたフォルダーを作成する：プロジェクトに必要なカスタムフォームフィールドおよびそれに対応する値で、リンクされたフォルダーを作成できます。この設定は、空である場合は無視されます。フィールドに `CUSTOM FORMS: Create DAM Linked Folder` を選択して、値に `Yes` を入力します。
-1. 権限の設定：これらの権限を設定します。 `jcr:all permissions for /conf/workfront-tools/settings/cloudconfigs` （の） `wf-workfront-users group`.
+1. 権限の設定：`wf-workfront-users group` に、`jcr:all permissions for /conf/workfront-tools/settings/cloudconfigs` の権限を設定します。
 1. 「リンクされたフォルダーの自動作成を有効にする」をクリックします。「イベントの購読」タブに戻ると、作成イベントが 1 つ表示されます。
 
 ![リンクされたフォルダー設定](/help/assets/assets/wf-linked-folder-config.png)

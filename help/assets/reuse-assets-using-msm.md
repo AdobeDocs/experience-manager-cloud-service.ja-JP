@@ -7,7 +7,7 @@ role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
 source-git-commit: 9e0aefa096a493df22860d0194a0a76f3eaf2390
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3400'
 ht-degree: 100%
 

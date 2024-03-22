@@ -5,9 +5,9 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Workflow
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '642'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -28,10 +28,10 @@ Azure ストレージ設定を作成し、統合ストレージコネクタ（US
 [!DNL Azure] ストレージ設定を作成するには、次の手順を実行します。
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL Azure ストレージ]**&#x200B;に移動します。
-1. 設定を作成するフォルダーを選択し、「 」を選択します。 **[!UICONTROL 作成]**.
+1. 設定を作成するフォルダーを選択して、「**[!UICONTROL 作成]**」を選択します。
 1. 「**[!UICONTROL タイトル]**」フィールドで設定のタイトルを指定します。
 1. 「**[!UICONTROL Azure ストレージアカウント]**」フィールドで [!DNL Azure] ストレージアカウントの名前を指定します。
-1. キーを指定して、 **[!UICONTROL Azure アクセスキー]** 「 」フィールドで「 」を選択します。 **[!UICONTROL 保存]**.
+1. Azure ストレージアカウントにアクセスするためのキーを「**[!UICONTROL Azure アクセスキー]**」フィールドで指定し、「**[!UICONTROL 保存]**」を選択します。
 
 ### AEM ワークフロー用の統合ストレージコネクタ（USC）の設定 {#configure-unified-storage-connector-workflows}
 
@@ -41,7 +41,7 @@ AEM ワークフロー用の統合ストレージコネクタ（USC）を設定�
 
 1. 「**[!UICONTROL ワークフロー]**」セクションで、「ストレージ」ドロップダウンリストから「**[!UICONTROL Azure]**」を選択します。
 1. 「**[!UICONTROL ストレージ設定パス]**」フィールドで、[Azure ストレージ設定の設定パス](#create-azure-storage-configuration)を指定します。
-1. 選択 **[!UICONTROL 公開]** 次に、「 **[!UICONTROL 保存]** をクリックして設定を保存します。
+1. 「**[!UICONTROL 公開]**」を選択してから、「**[!UICONTROL 保存]**」を選択して設定を保存します。
 
 ### 外部データストレージを使用するための AEM ワークフローモデルの設定 {#configure-workflow-external-data-storage}
 

@@ -1,39 +1,39 @@
 ---
 Title: How to configure submit to Rest Endpoint submit action for an Adaptive Form?
 Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
-keywords: AEM Forms REST エンドポイント、REST エンドポイントへの送信、REST URL へのデータの投稿、REST エンドポイントアクションの設定
+keywords: AEM Forms REST エンドポイント、REST エンドポイントへの送信、REST URL へのデータの POST、REST エンドポイントアクションの設定
 feature: Adaptive Forms, Core Components
 source-git-commit: 8784c0bcd05eeae41a472faa5ecad03cbdd8a9b6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '550'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 
-# 送信アクション「REST エンドポイント用のアダプティブフォームの設定」
+# REST エンドポイントへの送信アクションのアダプティブフォームを設定する
 
-以下を使用します。 **[!UICONTROL REST エンドポイントに送信]** 送信されたデータを REST URL に投稿するアクション。 URL は、内部（フォームがレンダリングされるサーバー）または外部サーバーのどちらのものでも使用できます。
+**[!UICONTROL REST エンドポイントへの送信]**&#x200B;アクションを使用して、送信されたデータを REST URL に POST できます。URL は、内部（フォームがレンダリングされるサーバー）または外部サーバーのどちらのものでも使用できます。
 
-AEM as a Cloud Serviceには、フォーム送信を処理するための標準の様々な送信アクションが用意されています。 これらのオプションについて詳しくは、 [アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)  記事。
+AEM as a Cloud Service では、フォーム送信を処理するための様々な送信アクションが標準で提供されます。これらのオプションについて詳しくは、[アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)の記事をご覧ください。
 
 ## メリット
 
-の設定の利点の一部 **[!UICONTROL REST エンドポイントに送信]** アダプティブFormsの送信アクションは次のとおりです。
+アダプティブフォームの **[!UICONTROL REST エンドポイントへの送信]**&#x200B;の送信アクションを設定するメリットは次のとおりです。
 
-* これにより、RESTful API を使用して、フォームデータを外部のシステムやサービスとシームレスに統合できます。
-* アダプティブFormsからのデータ送信を柔軟に処理でき、動的で複雑なデータ構造をサポートできます。
-* フォームフィールドの動的マッピングを REST エンドポイント URL 内のパラメーターに対してサポートしており、適応可能でカスタマイズ可能なデータ送信が可能です。
+* RESTful API を通じて、フォームデータと外部システムおよびサービスをシームレスに統合できます。
+* アダプティブフォームからのデータ送信を柔軟に処理し、動的で複雑なデータ構造をサポートできます。
+* REST エンドポイント URL のパラメーターへのフォームフィールドの動的マッピングをサポートし、適応可能でカスタマイズ可能なデータ送信を行うことができます。
 
 
-## 送信アクション「REST エンドポイントへの送信」の設定 {#steps-to-configure-submit-to-restendpoint-submit-action}
+## REST エンドポイントへの送信の送信アクションを設定する {#steps-to-configure-submit-to-restendpoint-submit-action}
 
 送信アクションを設定するには：
 
 1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
 1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。アダプティブフォームコンテナダイアログボックスが開きます。
 1. 「**[!UICONTROL 送信]**」タブをクリックします。
-1. 次から： **[!UICONTROL 送信アクション]** ドロップダウンリストで、「 **[!UICONTROL Rest エンドポイントに送信]**.
+1. **[!UICONTROL 送信アクション]**&#x200B;ドロップダウンリストから、「**[!UICONTROL REST エンドポイントへの送信]**」を選択します。
    ![REST エンドポイントへの送信のアクション設定](/help/forms/assets/submit-action-restendpoint.png)
 
    内部サーバーにデータを POST 送信するには、リソースのパスを指定します。データは、リソースのパスに POST されます。例えば、`/content/restEndPoint` のようになります。このような POST リクエストには、送信リクエストの認証情報が使用されます。
@@ -55,7 +55,7 @@ AEM as a Cloud Serviceには、フォーム送信を処理するための標準�
 
    この例では、`data` が XML データを格納し、`att` が添付ファイルデータを格納します。
 
-   **[!UICONTROL REST エンドポイントへの送信]**&#x200B;送信アクションでは、フォームに入力されたデータを HTTP GET リクエストの一部として設定済みの確認ページに送信します。リクエストするフィールドの名前を追加できます。 リクエストのフォーマットを以下に示します。
+   **[!UICONTROL REST エンドポイントへの送信]**&#x200B;送信アクションでは、フォームに入力されたデータを HTTP GET リクエストの一部として設定済みの確認ページに送信します。リクエストにフィールド名を追加できます。リクエストのフォーマットを以下に示します。
 
    `{fieldName}={request parameter name}`
 
@@ -69,7 +69,7 @@ AEM as a Cloud Serviceには、フォーム送信を処理するための標準�
 
 ## ベストプラクティス
 
-* 外部サーバーにデータを投稿する場合は、URL がセキュリティで保護されていることを確認し、機密情報を保護するために、匿名でPOSTリクエストを処理するようにパスを設定します。
+* 外部サーバーにデータを POST する場合は、URL がセキュリティで保護されていることを確認し、POST リクエストを匿名で処理して機密情報を保護するパスを設定します。
 * フィールドを REST URL 内のパラメーターとして渡すには、すべてのフィールドが異なる要素名を持っている必要があります。これは、異なるパネルに置かれているフィールドにも適用されます。
 
 ## 関連記事

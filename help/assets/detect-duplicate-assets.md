@@ -1,15 +1,15 @@
 ---
-title: 重複アセットの検出 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
-description: 重複アセットを検出する方法を説明します
+title: ' [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] の重複アセットの検出'
+description: 重複アセットの検出方法について説明します
 contentOwner: KK
 mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 40f63933-4f4e-4318-8d42-4b5c9b01f7cd
 source-git-commit: e882e89afa213f3423efe497585994eb91186fd7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '201'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 93%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=en) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
 DAM ユーザーがリポジトリーに既に存在する 1 つ以上のアセットをアップロードした場合、[!DNL Experience Manager] は重複を検出し、ユーザーに通知します。重複の検出は、リポジトリーのサイズとアップロードされたアセットの数に応じてパフォーマンスに影響を与える可能性があるので、デフォルトで無効になっています。

@@ -3,9 +3,9 @@ title: SSL 証明書の管理
 description: Cloud Manager を使用して SSL 証明書のステータスを確認する方法と、SSL 証明書を編集、置換、更新および削除する方法について説明します。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 source-git-commit: 7143ea8d36e26aa1674608ff7bd8ba22e2030b3c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '644'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -30,8 +30,8 @@ SSL 証明書のステータスは、SSL 証明書ページから一目で確認
 
 証明書の有効期限が切れると、有効期限切れの証明書で使用されているドメインは機能しなくなります。次の手順で証明書を更新すると、お使いのドメインが引き続き希望どおりに動作します。
 
-1. Cloud Manager( ) にログインします。 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 適切な組織を選択します。
-1. 次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面で、プログラムを選択します。
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;画面でプログラムを選択します。
 1. **概要**&#x200B;ページから&#x200B;**環境**&#x200B;画面に移動します。
 1. **環境**&#x200B;画面から **SSL 証明書**&#x200B;画面に移動します。
 1. プログラムに正常にインストールされた各 SSL 証明書の行が記載された表が表示されます。更新する証明書の行の右端にある省略記号ボタンをクリックし、「**表示と更新**」を選択します。

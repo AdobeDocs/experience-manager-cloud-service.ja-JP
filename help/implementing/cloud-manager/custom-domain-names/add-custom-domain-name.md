@@ -3,9 +3,9 @@ title: カスタムドメイン名の追加
 description: Cloud Manager を使用してカスタムドメイン名を追加する方法を説明します。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 52466e091cf6e0ab1ac620e15568c04881a3b63a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '680'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager では、次の 2 つの場所からカスタムドメイン名を
 
 >[!NOTE]
 >
->ユーザーが **ビジネスオーナー** または **デプロイメントマネージャー** ロールを使用して Cloud Manager にカスタムドメイン名を追加する必要があります。また、Fastly CDN を使用する必要があります。
+>Cloud Manager でカスタムドメイン名を追加するには、ユーザーが&#x200B;**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持ち、Fastly CDN を使用している必要があります。
 
 ## ドメイン設定ページからのカスタムドメイン名の追加 {#adding-cdn-settings}
 
@@ -29,7 +29,7 @@ Cloud Manager では、次の 2 つの場所からカスタムドメイン名を
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 次の日： **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面で、プログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;画面でプログラムを選択します。
 
 1. **概要**&#x200B;ページから&#x200B;**環境**&#x200B;画面に移動します。
 
@@ -63,11 +63,11 @@ CDN デプロイメントの場合は、有効な SSL 証明書が必要で、TX
 
 >[!TIP]
 >
->次の記事で、 [次に CNAME または A レコードを追加](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) を使用して、カスタムドメインに DNS レコードを追加する際の作業が 2 倍になるのを防ぎます。 TXT エントリと CNAME または A レコードを管理する DNS サーバーに同時に設定できます。
+>カスタムドメインに DNS レコードを追加する際の作業が 2 倍になるのを防ぐため、[次に CNAME または A レコードを追加](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)する必要性について次の記事を参照してください。TXT エントリと CNAME または A レコードは、管理する DNS サーバーで同時に設定できます。
 
 >[!TIP]
 >
->TXT レコードについて詳しくは、[TXT レコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)を参照してください。
+>TXT レコードついて詳しくは、[TXT レコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)を参照してください。
 
 >[!NOTE]
 >

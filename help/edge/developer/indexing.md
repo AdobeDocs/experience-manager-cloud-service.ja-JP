@@ -1,11 +1,12 @@
 ---
-description: Adobe Experience Managerでは、Web サイトの特定のセクションで公開されたすべてのページのインデックスを保持する方法が用意されています。 これは、リストやフィードを作成し、ページやコンテンツフラグメントの検索およびフィルタリングのユースケースを有効にするために一般的に使用されます。
+description: Adobe Experience Manager は、web サイトの特定のセクションにある、公開されたすべてのページのインデックスを保持する方法を提供します。これは通常、リストやフィードを構築し、ページやコンテンツフラグメントの検索やフィルタリングのユースケースを有効にするために使用されます。
 title: インデックス作成
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 8ca968fd-73af-4082-bfc5-0737fdd8a5be
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '45'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 

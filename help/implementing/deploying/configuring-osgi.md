@@ -4,9 +4,9 @@ description: シークレット値と環境固有の値を使用する OSGi 設�
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3269'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ AEM コードプロジェクトに含まれる設定ファイルを使用して�
 
 >[!TIP]
 >
->Cloud Manager を使用して環境変数を設定できます。 詳しくは、ドキュメントを参照してください。 [ここ。](/help/implementing/cloud-manager/environment-variables.md)
+>Cloud Manager を使用して環境変数を設定できます。詳しくは、[こちら](/help/implementing/cloud-manager/environment-variables.md)のドキュメントを参照してください。
 
 ## OSGi の設定ファイル {#osgi-configuration-files}
 
@@ -177,7 +177,7 @@ JSON 形式の OSGi 設定ファイルは、AEM プロジェクト内から直�
 1. IDE で `ui.apps` プロジェクトを開き、新しい OSGi 設定が有効となる実行モードをターゲットに設定する config フォルダー（`/apps/.../config.<runmode>`）を探すか作成します。
 1. この config フォルダーで、`<PID>.cfg.json` ファイルを作成します。PID は OSGi コンポーネントの永続 ID です。通常は、OSGi コンポーネント実装の完全なクラス名になります。次に例を示します。
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-OSGi 設定ファクトリのファイル名には、 `<factoryPID>-<name>.cfg.json` 命名規則
+OSGi 設定ファクトリのファイル名には `<factoryPID>-<name>.cfg.json` 命名規則を使用します。
 1. 新しい `.cfg.json` ファイルを開き、[JSON OSGi 設定形式](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)に従って、OSGi プロパティと値のペアのキー／値の組み合わせを定義します。
 1. 変更を新しい `.cfg.json` ファイルに保存します。
 1. 新しい追加 OSGi 構成ファイルを Git にコミットします。
@@ -192,14 +192,14 @@ AEM SDK Quickstart Jar の AEM Web コンソールは、OSGi コンポーネン�
 
 1. AEM SDK Quickstart Jar の AEM webコンソール（`https://<host>:<port>/system/console`）にadmin ユーザーでログインする。
 1. **OSGi**／**設定**&#x200B;に移動する。
-1. 設定するには、OSGi コンポーネントを探し、編集するタイトルを選択します
+1. 設定するには、OSGi コンポーネントを見つけて、編集するタイトルを選択します。
    ![OSGi 設定](./assets/configuring-osgi/configuration.png)
 1. 必要に応じて Web UI を使用して OSGi 設定プロパティの値を編集します。
 1. 永続 ID（PID）を安全な場所に記録します。これは後で OSGi 設定 JSON の生成に使用します。
 1. 「保存」を選択します。
 1. OSGi／OSGi インストーラー設定プリンターに移動します。
 1. 手順 5 でコピーした PID に貼り付け、シリアル化形式が「OSGi Configurator JSON」に設定されていることを確認します。
-1. 印刷を選択
+1. 「印刷」を選択します。
 1. JSON 形式の OSGi 設定は、「シリアライズされた設定プロパティ」セクションに表示されます。
    ![OSGi インストーラー設定プリンター](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. IDE で `ui.apps` プロジェクトを開き、新しい OSGi 設定が有効となる実行モードをターゲットに設定する config フォルダー（`/apps/.../config.<runmode>`）を探すか作成します。
@@ -517,7 +517,7 @@ API の設定方法については、[こちらのページ](https://developer.a
 
 >[!TIP]
 >
->Cloud Manager を使用して環境変数を設定することもできます。 詳しくは、ドキュメントを参照してください。 [ここ。](/help/implementing/cloud-manager/environment-variables.md)
+>また、Cloud Manager を使用して環境変数を設定できます。詳しくは、[こちら](/help/implementing/cloud-manager/environment-variables.md)のドキュメントを参照してください。
 
 ### API を使用した値の設定 {#setting-values-via-api}
 

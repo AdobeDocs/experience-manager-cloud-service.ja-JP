@@ -4,9 +4,9 @@ description: AEM as a Cloud Service のオンボーディングプロセスの�
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 source-git-commit: 98618765b405316b18110182c221ddd968c70e96
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1290'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ AEM as a Cloud Service を選択していただき、ありがとうございま
 
 ## はじめに {#introduction}
 
-Adobe Experience Managerは、あらゆるチャネルにわたって、効果が高く、パーソナライズされたエクスペリエンスを迅速に提供し、すべてのチャネルからコンテンツを解放する、合成可能なコンテンツサービスの強力なスイートです。 **Edge Delivery Services** は、極端なコンテンツ速度を実現し、優れたエクスペリエンスを提供するAdobe Experience Managerの最新の革新です。 次のページで、Edge Delivery Servicesの使用を開始する方法を説明します。 [このページ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=ja). Edge Delivery Servicesの使用方法については、 [開発者向けチュートリアル](https://www.hlx.live/developer/tutorial) ページに貼り付けます。
+Adobe Experience Manager は、あらゆるチャネルにわたって非常にインパクトのあるパーソナライズされたエクスペリエンスを迅速に提供し、すべてのチャネルにコンテンツを解放する、構成可能なコンテンツサービスの強力なスイートです。**Edge 配信サービス**&#x200B;は、Adobe Experience Manager の最新のイノベーションで、優れたコンテンツベロシティを実現し、卓越したエクスペリエンスを提供します。Edge Delivery Services の基本を学ぶ方法については、[このページ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=ja)を参照してください。Edge 配信サービスの使用方法については、[開発者向けチュートリアル](https://www.hlx.live/developer/tutorial)ページを参照してください。
 
 オンボーディングとは、指定されたシステム管理者が AEM as a Cloud Service を組織用に設定するプロセスです。このプロセスには、クラウドリソースの初期プロビジョニングや、ユーザーを職務に基づいて役割に割り当てる作業が含まれます。これにより、各メンバーが AEM as a Cloud Service にログオンしてリソースにアクセスできるようになります。
 
@@ -87,7 +87,7 @@ AEM as a Cloud Service を使い始めると、学ぶべきことがたくさん
 | 9 | [開発者およびデプロイメントマネージャーのタスク](developers.md) | オプション - デベロッパーとして Cloud Manager Git にアクセスして管理する方法と、デプロイメントマネージャーとして Cloud Manager でパイプラインを設定してコードをデプロイする方法について説明します。 | 開発者およびデプロイメントマネージャー |
 | 10 | [AEM ユーザーのタスク](aem-users.md) | オプション - AEM オーサーとして AEM as a Cloud Service インスタンスにアクセスする方法と、AEM as a Cloud Service 用コンテンツのオーサリング方法について説明します。 | AEM ユーザー |
 
-## 次のステップ {#what-is-next}
+## 次の手順 {#what-is-next}
 
 これで、AEM as a Cloud Service のオンボーディングジャーニーを開始する準備が整いました。このジャーニーの次の手順に進み、[オンボーディングの準備](preparation.md)の記事を読むことをお勧めします。
 
@@ -103,4 +103,4 @@ AEM as a Cloud Service を使い始めると、学ぶべきことがたくさん
 
 オンボーディングジャーニーのコンテンツの範囲を超えてさらに詳しく知りたい場合に役立つ、追加のオプションリソースを次に示します。
 
-* [AEM as a Cloud Serviceのオンボーディング](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html)  — この短いビデオでは、AEMのCloud Serviceオンボーディングプロセスの概要を説明します。
+* [AEM as a Cloud Service のオンボーディング](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html?lang=ja) - この短いビデオでは、AEM の Cloud Service オンボーディングプロセスの概要を説明します。

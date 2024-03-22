@@ -4,7 +4,7 @@ description: Experience Manager Content and Commerce as a Cloud Service の使�
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
 source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '853'
 ht-degree: 100%
 

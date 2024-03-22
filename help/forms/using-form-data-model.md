@@ -6,9 +6,9 @@ role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
 source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1290'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ JSON スキーマの拡張機能であるフォームデータモデルを使用
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. 選択して展開 **[!UICONTROL フォームデータモデルを選択]**. すべての有効なフォームデータモデルが一覧表示されます。
+1. 「**[!UICONTROL フォームデータモデルを選択]**」を選択して展開します。すべての有効なフォームデータモデルが一覧表示されます。
 
    フォームデータモデルを選択します。
 
@@ -100,7 +100,7 @@ The interactive communication opens with prefilled sample data.
 
 ![web-preview](assets/web-preview.png)-->
 
-サンプルデータを含むアダプティブフォームをプレビューするには、アダプティブフォームをオーサリングモードで開き、「 **[!UICONTROL プレビュー]**.
+サンプルデータが取り込まれた状態のアダプティブフォームをプレビューするには、オーサーモードでアダプティブフォームを開いて「**[!UICONTROL プレビュー]**」を選択します。
 
 ## フォームデータモデルサービスを使用したデータの事前入力 {#prefill}
 
@@ -125,29 +125,29 @@ Edit Properties dialog for an interactive communication-->
 1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
 1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。アダプティブフォームコンテナダイアログボックスが開きます。
 1. 「**[!UICONTROL 送信]**」タブをクリックします。
-1. 次から： **[!UICONTROL 送信アクション]** ドロップダウンリストで、「 **[!UICONTROL フォームデータモデルを使用して送信]**.
+1. **[!UICONTROL 送信アクション]**&#x200B;ドロップダウンリストから、「**[!UICONTROL フォームデータモデルを使用して送信]**」を選択します。
 
    ![アクションの設定](/help/forms/assets/configure-submit-action-invoke-fdm.png)
 
-1. 次を指定します。 **[!UICONTROL 送信するデータモデル]**.
-1. クリック **[!UICONTROL 完了]**
+1. **[!UICONTROL 送信するデータモデル]**&#x200B;を指定します。
+1. 「**[!UICONTROL 完了]**」をクリックします。
 
-フォームの送信時に、設定済みのデータモデルオブジェクトのデータが各データソースに書き込まれます。 さらに、フォームデータモデルとレコードのドキュメント（DoR）を使用して、フォームの添付ファイルをデータソースに送信できます。フォームデータモデルについて詳しくは、[[!DNL AEM Forms]  のデータ統合機能](data-integration.md)を参照してください。
+フォームを送信すると、設定されているデータモデルオブジェクトのデータが、各データソースに書き込まれます。さらに、フォームデータモデルとレコードのドキュメント（DoR）を使用して、フォームの添付ファイルをデータソースに送信できます。フォームデータモデルについて詳しくは、[[!DNL AEM Forms]  のデータ統合機能](data-integration.md)を参照してください。
 
 <!--![data-submission](assets/data-submission.png)-->
 
 >[!NOTE]
 >
-> AEM as a Cloud Serviceには、フォーム送信を処理するための標準の様々な送信アクションが用意されています。 これらのオプションについて詳しくは、 [アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)  記事。
+> AEM as a Cloud Service では、フォーム送信を処理するための様々な送信アクションが標準で提供されます。これらのオプションについて詳しくは、[アダプティブフォームの送信アクション](/help/forms/configure-submit-actions-core-components.md)の記事をご覧ください。
 
 バイナリデータモデルオブジェクトのプロパティを使用して、フォームの添付ファイルをデータソースに送信することもできます。添付ファイルを JDBC データソースに送信するには、次の手順を実行します。
 
 1. バイナリプロパティを含むデータモデルオブジェクトをフォームデータモデルに追加します。
 1. コンポーネントブラウザーの「**[!UICONTROL 添付ファイル]**」コンポーネントを、アダプティブフォームにドラッグ＆ドロップします。
-1. 「 」を選択して追加したコンポーネントを選択し、「 」を選択します。 ![settings_icon](assets/configure-icon.svg) をクリックして、コンポーネントのプロパティブラウザーを開きます。
-1. 「バインド参照」フィールドで、「 ![foldersearch_18](assets/folder-search-icon.svg) フォームデータモデルに追加したバイナリプロパティに移動して選択します。 必要に応じて、他のプロパティを設定します。
+1. 追加されたコンポーネント、![settings_icon](assets/configure-icon.svg) の順に選択して、そのコンポーネントのプロパティブラウザーを開きます。
+1. 「バインド参照」フィールドで ![foldersearch_18](assets/folder-search-icon.svg) を選択し、フォームデータモデルに追加したバイナリプロパティに移動してそのプロパティを選択します。必要に応じて、他のプロパティを設定します。
 
-   選択 ![check-button](assets/save_icon.svg) をクリックしてプロパティを保存します。 これで、添付ファイルフィールドがフォームデータモデルのバイナリプロパティに連結されます。
+   ![check-button](assets/save_icon.svg) を選択して、プロパティを保存します。これで、添付ファイルフィールドがフォームデータモデルのバイナリプロパティに連結されます。
 
 1. アダプティブフォームコンテナプロパティの「送信」セクションで、「**[!UICONTROL フォームの添付ファイルを送信]**」を有効にします。これで、フォーム送信時に、バイナリプロパティフィールド内の添付ファイルがデータソースに送信されます。
 

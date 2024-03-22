@@ -1,11 +1,12 @@
 ---
-description: 場合によっては、カスタム HTTP 応答ヘッダーをリソースに適用すると便利です（例えば、CORS を許可する場合など）。 ヘッダーを指定する場合は、SharePoint またはGoogle Drive 内の Web サイトの「/.helix」フォルダーに、SharePointの「headers.xlsx」またはGoogle Drive の「headers」という名前の Excel ブックまたはGoogle Sheets ワークブックを作成します。
+description: 場合によっては、CORS を許可するなど、カスタム HTTP 応答ヘッダーをリソースに適用すると便利です。ヘッダーを指定する場合は、Sharepoint または Google ドライブの web サイトの「/.helix」フォルダーに、SharePoint では「headers.xlsx」、Google ドライブでは「headers」という名前の Excel ブックまたは Google Sheets ブックを作成します。
 title: カスタム HTTP 応答ヘッダー
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: ae386f02-05fd-4a6a-8285-58f207fed7bc
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '65'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 

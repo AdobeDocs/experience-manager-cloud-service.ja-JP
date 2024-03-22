@@ -1,13 +1,13 @@
 ---
-title: AEM Formsでカスタムフォントを使用するにはどうすればよいですか？
-description: Formsas a Cloud Service環境にカスタムフォントを追加する方法を説明します。
+title: AEM Forms でカスタムフォントを使用するにはどうすればよいですか？
+description: Forms as a Cloud Service 環境へカスタムフォントを追加する方法を説明します。
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
 feature: Adaptive Forms
 role: Admin, User
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '467'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 

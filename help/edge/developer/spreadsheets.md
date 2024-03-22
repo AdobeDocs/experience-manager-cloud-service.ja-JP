@@ -1,11 +1,12 @@
 ---
-description: AEMでは、Googleドキュメントと Word ドキュメントを Markdown やHTMLマークアップに翻訳するほか、スプレッドシート (Microsoft Excel ワークブックやGoogleシート ) を JSON ファイルに変換して、Web サイトや Web アプリケーションで簡単に利用できます。
+description: AEM では、Google ドキュメントや Word ドキュメントをマークダウンや HTML マークアップに変換するだけでなく、スプレッドシート（Microsoft Excel ブックや Google スプレッドシート）を、web サイトや web アプリケーションで簡単に使用できる JSON ファイルに変換します。
 title: スプレッドシートと JSON
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 032ae9aa-577c-44b1-8f5f-fb3d2885013e
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '44'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 

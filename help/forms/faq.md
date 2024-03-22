@@ -1,14 +1,15 @@
 ---
-title: AEM Formsas a Cloud Serviceに関するよくある質問
+title: AEM Forms as a Cloud Service に関するよくある質問
 description: Forms as a Cloud Service のよくある質問
 contentOwner: khsingh
 role: User
 feature: Adaptive Forms, FAQ
 index: false
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '986'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -123,5 +124,3 @@ Experience Manager 6.5 Forms 環境で JSON スキーマに基づいたアダプ
     A sample Service Credential JSON file fields mapped to Adobe Experience Manager connector for Microsoft Power Automate.
 
     -->
-
-

@@ -3,9 +3,9 @@ title: 迅速な開発環境
 description: クラウド環境で迅速な開発反復処理を行うために、迅速な開発環境を活用する方法について説明します。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 source-git-commit: 43f76a3f1e0bb52ca9d44982b2bb2b37064edf9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3414'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -310,19 +310,19 @@ The analyser found the following errors for publish :
 
 上記のコード例は、バンドルが解決されない場合の動作を示しています。この場合、バンドルは「ステージング済み」で、他のコードのインストールを通じて要件（この場合、読み込み不足）が満たされた場合にのみインストールされます。
 
-<u>サイトのテーマとサイトテンプレートに基づくフロントエンドコードの展開</u>
+<u>サイトのテーマとサイトテンプレートに基づくフロントエンドコードのデプロイ</u>
 
 >[!NOTE]
 >
->この機能はまだ GA ではありませんが、アーリーアダプターが使用できます。 次の場所に連絡してください： **aemcs-rde-support@adobe.com** 試してみて、フィードバックを提供してください。
+>この機能はまだ GA ではありませんが、早期導入者が使用できます。試してフィードバックを提供するには、**aemcs-rde-support@adobe.com** までご連絡ください。
 
-RDE は、 [サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md) および [サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md). RDE を使用する場合、これは、Cloud Manager ではなく、フロントエンドパッケージをデプロイするためのコマンドラインディレクティブを使用しておこなわれます [フロントエンドパイプライン](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) 他の環境タイプに使用されます。
+RDE は、[サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md)および[サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)に基づいてフロントエンドコードをサポートします。RDE を使用する場合、これは、他の環境タイプに使用される Cloud Manager [フロントエンドパイプライン](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)ではなく、コマンドラインのディレクティブを使用してフロンエンドパッケージをデプロイします。
 
 通常どおり、npm を使用してフロントエンドパッケージを構築します。
 
 `npm run build`
 
-これにより、 `dist/` を使用する場合は、フロントエンドパッケージフォルダーに `package.json` ファイルと `dist` フォルダー：
+`dist/` フォルダーが生成され、フロントエンドパッケージフォルダーには、`package.json` ファイルと `dist` フォルダーが含められます。
 
 ```
 ls ./path-to-frontend-pkg-folder/
@@ -341,7 +341,7 @@ Logs:
 > with workspace hash 692021864642a20d6d298044a927d66c0d9cf2adf42d4cca0c800a378ac3f8d3
 ```
 
-または、zip 形式で `package.json` ファイルと `dist` フォルダーに保存し、その zip ファイルをデプロイします。
+または、zip 形式で `package.json` ファイルと `dist` フォルダーを保存し、その zip ファイルをデプロイします。
 
 `zip -r frontend-pkg.zip ./path-to-frontend-pkg-folder/dist ./path-to-frontend-pkg-folder/package.json`
 
@@ -356,9 +356,9 @@ Logs:
 
 >[!NOTE]
 >
->フロントエンドパッケージでのファイルの命名は、次の命名規則に従う必要があります。
-> * &quot;dist&quot;フォルダー（npm build 出力パッケージフォルダー）
-> * npm dependencies パッケージ用の「package.json」ファイル
+>フロントエンドパッケージのファイルの命名は、次の命名規則に従う必要があります。
+> * npm ビルド出力パッケージフォルダー用の「dist」フォルダー
+> * npm 依存関係パッケージ用の「package.json」ファイル
 
 ### RDE のステータス確認 {#checking-rde-status}
 
@@ -521,7 +521,7 @@ RDE は多くの点でクラウド開発環境に似ていますが、コード�
 
 * RDE にプレビュー層は含まれない
 * RDE は現在、プレリリースチャネルをサポートしていません。
-* RDE で、に基づくフロントエンドコードの表示とデバッグがサポートされる場合 [サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md) および [サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md) デプロイ済みはまだ GA に対応しておらず、早期導入者が使用できます。 次の場所に連絡してください： **aemcs-rde-support@adobe.com** 試してみて、フィードバックを提供してください。
+* デプロイされた[サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md)および[サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)に基づいたフロントエンドコードの表示とデバッグの RDE サポートがまだ GA 対応でない場合でも、早期導入者は使用できます。試してフィードバックを提供するには、**aemcs-rde-support@adobe.com** までご連絡ください。
 
 
 

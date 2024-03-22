@@ -1,11 +1,12 @@
 ---
-description: Web サイトをデザインし機能を作成するには、開発者は、コンテンツから動的にレンダリングされるマークアップと DOM を使用します。 マークアップと DOM は、柔軟な操作とスタイル設定が可能な方法で構築されます。 同時に、標準搭載の機能を提供するので、開発者は最新の Web サイトの側面を気にする必要がありません。
+description: 開発者は、web サイトをデザインし、機能を作成するために、コンテンツから動的にレンダリングされるマークアップと DOM を使用します。マークアップと DOM は、柔軟な操作とスタイル設定が可能な方法で構築されています。同時に、標準搭載の機能を提供するので、開発者は最新の web サイトの要素について気にする必要がありません。
 title: マークアップ、セクション、ブロック、自動ブロック
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 3f4ae9e9-e5c8-4873-a3d0-591c4d8683dd
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '70'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 

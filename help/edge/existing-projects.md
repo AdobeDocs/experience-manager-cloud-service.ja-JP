@@ -1,44 +1,44 @@
 ---
-title: 既存のAEMプロジェクトでのEdge Delivery Servicesの使用
-description: 既存のAEMプロジェクトでEdge Delivery Servicesのメリットを活用する方法を説明します
+title: 既存の AEM プロジェクトでの Edge Delivery Services の使用
+description: 既存の AEM プロジェクトで Edge Delivery Services のメリットを活用する方法を学ぶ
 feature: Edge Delivery Services
-source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
-workflow-type: tm+mt
+exl-id: f54aac3a-1d0c-4be0-9aa6-616217e0e458
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '339'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# 既存の AEM プロジェクトでの Edge Delivery Services の使用 {#existing-projects}
 
-# 既存のAEMプロジェクトでのEdge Delivery Servicesの使用 {#existing-projects}
+新しい AEM プロジェクトで Edge 配信サービスのメリットを活用できるようになるまで待つ必要はありません。Edge 配信サービスは既存の AEM プロジェクトに統合できるので、パフォーマンスの向上をすぐに活用できます。
 
-Edge Delivery Servicesの恩恵を受けるために、新しいAEMプロジェクトを待つ必要はありません。 Edge Delivery Servicesを既存のAEMプロジェクトに統合して、そのパフォーマンスの向上をすぐに活用できます。
+## AEM ページエディターの制限事項 {#page-editor}
 
-## AEM Page Editor の制限事項 {#page-editor}
+Edge Delivery Services が登場する前は、AEM で管理されるコンテンツは、AEM ページエディターを使用して編集されていました。Edge Delivery Services の導入前にプロジェクトが開始されていた場合、ページエディターを使用していることはほぼ確実です。
 
-Edge Delivery Servicesが登場する前は、AEMで管理されるコンテンツは、AEMページエディターを使用して編集されていました。 プロジェクトがEdge Delivery Servicesの導入前に開始した場合、ページエディターを使用していることはほぼ確実です。
+AEM ページエディターは、[コアコンポーネントなどの [AEM コンポーネント](/help/implementing/developing/components/overview.md)でのみ機能します。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)これらのコンポーネントは、Edge Delivery Services とは互換性がありません。このため、既存の AEM プロジェクトに Edge Delivery Services を導入するには、次の 2 つの段階が必要です。
 
-AEM Page Editor は、 [AEMコンポーネント](/help/implementing/developing/components/overview.md) 例： [コアコンポーネント。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja) これらのコンポーネントは、Edge Delivery Servicesとは互換性がありません。 このため、既存のAEMプロジェクトにEdge Delivery Servicesを導入するには、次の 2 つの段階が必要です。
+* [フェーズ 1 - フロントエンドの置換](#replace-front-end)
+* [フェーズ 2 - ユニバーサルエディターに切り替える](#switch-ue)
 
-* [フェーズ 1 — フロントエンドの交換](#replace-front-end)
-* [フェーズ 2 — ユニバーサルエディタに切り替え](#switch-ue)
+## フェーズ 1 - フロントエンドの置換 {#replace-front-end}
 
-## フェーズ 1 — フロントエンドの交換 {#replace-front-end}
+フェーズ 1 では、既存の AEM サイト構造、コンポーネント、オーサリングツールを引き続き使用できます。Web サイトのレンダリングは、JavaScript と CSS のブロックを使用して再構築され、Edge Delivery Services 経由で配信されます。
 
-フェーズ 1 では、既存のAEMサイト構造、コンポーネント、オーサリングツールを引き続き使用できます。 Web サイトのレンダリングは、JavaScript と CSS を使用するブロックを使用して再構築され、Edge Delivery Services経由で配信されます。
+ブロックの詳細と、Edge Delivery Services 向けの開発方法について詳しくは、Edge Delivery Services に関するドキュメントの[ビルドセクション](/help/edge/developer/block-collection.md)を参照してください。
 
-詳しくは、 [ビルドセクション](/help/edge/developer/block-collection.md) Edge Delivery Servicesに関するドキュメントを参照して、ブロックの詳細と、Edge 配信サービス向けの開発方法を確認してください。
-
-AEMでレンダリングされたHTML出力を変換してEdge Delivery Servicesに送信するには、App Builder 上のコンバーターが必要です。
+AEM でレンダリングされた HTML 出力を変換して Edge Delivery Services に送信するには、App Builder 上のコンバーターが必要です。
 
 ![公開フローのコンテンツコンバーター](assets/content-converter.png)
 
-フェーズ 2 では、AEMオーサー環境での HTL と Java を備えたAEMコアコンポーネント、Edge 配信環境での JS ベースのブロック、NodeJS ベースのコンバーターというテクノロジーの重複を排除して、プロセスを完了します。
+フェーズ 2 では、AEM オーサー環境での HTL と Java を備えた AEM コアコンポーネント、Edge 配信環境での JS ベースのブロック、NodeJS ベースのコンバーターというテクノロジーの重複を排除して、プロセスを完了します。
 
-## フェーズ 2 — ユニバーサルエディタに切り替え {#switch-ue}
+## フェーズ 2 - ユニバーサルエディターに切り替える {#switch-ue}
 
-このフェーズでは、AEMページエディターがユニバーサルエディターに置き換えられます。 ユニバーサルエディターはブロックを直接操作できるので、AEMコアコンポーネントとコンバーターは不要になりました。
+このフェーズでは、AEM ページエディターがユニバーサルエディターに置き換えられます。ユニバーサルエディターではブロックを直接操作できるので、AEM コアコンポーネントとコンバーターは不要になりました。
 
-## 使用の手引き {#how-to-get-started}
+## 使い始める方法 {#how-to-get-started}
 
-この機能にアクセスするには、Adobe担当者にお問い合わせください。
+この機能にアクセスするには、アドビ担当者にお問い合わせください。
