@@ -3,9 +3,9 @@ title: ' [!DNL Workfront for Experience Manager enhanced connector] のリリー
 description: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 411793f140a2a9cf482d820382d41de843a97e87
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1648'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,10 +17,10 @@ ht-degree: 97%
 
 ## リリースのハイライト {#release-highlights}
 
-の最新バージョン [!DNL Workfront for Experience Manager enhanced connector] には、次のバグ修正が含まれています。
+[!DNL Workfront for Experience Manager enhanced connector] の最新バージョンには、次のバグ修正が含まれています。
 
-* Workfrontからの複数アセットのアップロードを処理する際に問題が発生します。
-* Workfrontを使用してExperience Manager結果内のフォルダーを検索する場合に、閉じ引用符を追加しない `SERVER_ERROR`.
+* Workfront からの複数アセットのアップロードを処理すると問題が発生する。
+* Workfront を使用して Experience Manager でフォルダーを検索する際に終了引用符を追加しないと、`SERVER_ERROR` が発生する。
 
 >[!NOTE]
 >

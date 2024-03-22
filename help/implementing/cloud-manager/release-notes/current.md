@@ -4,9 +4,9 @@ description: AEM as a Cloud Service の Cloud Manager 2024.3.0 のリリース�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 4bae300f653ae6b84cf798f4fe9e8c9326963718
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '648'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 85%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Serviceの Cloud Manager リリース 2024.3.0 のリリース日は 2024 年 3 月 14 日です。 次回のリリースは 2024 年 4 月 11 日に予定されています。
+AEM as a Cloud Service の Cloud Manager リリース 2024.3.0 のリリース日は 2024年3月14日（PT）です。次回のリリースは 2024年4月11日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* [高度なネットワークインフラストラクチャを作成できるようになりました。](/help/security/configuring-advanced-networking.md) Cloud Manager プログラムのを参照し、Cloud Manager UI を使用してセルフサービス方式で環境を設定します。
-* [パイプライン実行ステップの詳細](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) には、現在のデプロイメントの手順と、それに従うべき内容が含まれます。
+* Cloud Manager プログラムで[高度なネットワークインフラストラクチャを作成](/help/security/configuring-advanced-networking.md)し、Cloud Manager UI を使用してセルフサービス方式で環境を設定できるようになりました。
+* [パイプライン実行ステップの詳細](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)には、デプロイメントの現在のステップと、その後に予想されるステップが含まれます。
 
 ## 早期導入プログラム {#early-adoption}
 
@@ -69,4 +69,4 @@ GitHub を使用してリポジトリを管理している場合は、[Cloud Man
 
 ## バグの修正 {#bug-fixes}
 
-* ユーザーが `COMMERCE_ENDPOINT` 変数の末尾にスペースがある場合、dispatcher の読み込みに失敗します。
+* ユーザーが末尾にスペースを含む `COMMERCE_ENDPOINT` 変数を定義する際、Dispatcher の読み込みに失敗するバグが修正されました。
