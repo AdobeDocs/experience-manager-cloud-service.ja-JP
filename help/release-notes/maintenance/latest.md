@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメン�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: dbdc63db9a9ac954ce6359d3643231d6e195fd53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '302'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 92%
 
 新しいバージョンの aem-sdk-api には、Java 11 ターゲットでコンパイルされたクラスが含まれていますが、Cloud Manager ビルド環境のデフォルトの JDK バージョン 1.8 と互換性がありません。この更新では、JDK 11 を使用して Maven を実行する必要があります。
 
-お客様には、`11` の内容を含む `.cloudmanager/java-version` ファイルを Git リポジトリのルートに追加することをお勧めします。詳しくは、 [ビルド環境/ Maven JDK バージョンの設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#alternate-maven-jdk-version).
+お客様には、`11` の内容を含む `.cloudmanager/java-version` ファイルを Git リポジトリのルートに追加することをお勧めします。[ビルド環境／Maven JDK バージョンの設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#alternate-maven-jdk-version)を参照してください。
 
 #### aem-cloud-testing-clients を 1.2.1 に更新 {#update-aem-cloud-testing-clients}
 
@@ -56,7 +56,7 @@ ht-degree: 92%
 </dependency>
 ```
 
-この変更は、2024 年 4 月 7 日より前に実行する必要があります。
+この変更は、2024年4月6日（PT）より前に実行する必要があります。
 
 依存関係ライブラリの更新に失敗すると、「カスタム機能テスト」手順でパイプラインにエラーが発生します。
 

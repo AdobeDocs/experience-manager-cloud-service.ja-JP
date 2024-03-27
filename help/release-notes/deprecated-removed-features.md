@@ -3,9 +3,9 @@ title: 廃止される機能および削除された機能
 description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の非推奨（廃止予定）の機能と削除された機能）。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: b675ff42eeaeb124e8789480a51684d359429d15
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2146'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 96%
 | [!DNL Assets] | ビデオの FFmpeg トランスコード。 | FFmpeg サムネールの生成には、[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)を使用。FFmpeg トランスコードの場合は、[Dynamic Media](/help/assets/manage-video-assets.md) を使用。 |
 | [!DNL Foundation] | レプリケーションエージェントの「配布」タブのツリーレプリケーション UI（2021 年 9 月 30 日以降に削除） | [公開を管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow)アプローチ |
 | [!DNL Foundation] | レプリケーションエージェントの管理画面の「配布」タブも、レプリケーション API も、10 MB を超えるコンテンツパッケージのレプリケーションには使用できません。代わりに、[パブリケーションの管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーワークフローの公開](/help/operations/replication.md#publish-content-tree-workflow)を使用します |
-| [!DNL Foundation] | Adobe Developerコンソールプロジェクトから生成された資格情報を使用した統合では、次第にサービスアカウント (JWT) 資格情報のサポートが失われます。 2024 年 5 月 1 日以降、Adobe Developerコンソールで新しいサービスアカウント (JWT) 資格情報は作成できません。ただし、既存のサービスアカウント (JWT) 資格情報は 2025 年 1 月 1 日までは設定済みの統合に引き続き使用できます。uth サーバー間資格情報。 [詳細情報](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [移行](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) を OAuth サーバー間資格情報に追加します。 |
+| [!DNL Foundation] | Adobe Developer Console プロジェクトから生成された資格情報を使用した統合では、サービスアカウント（JWT）資格情報のサポートが段階的に失われます。2024 年5月1日（PT）以降、Adobe Developer Console で新しいサービスアカウント（JWT）資格情報を作成できなくなります。ただし、既存のサービスアカウント（JWT）資格情報は、2025年1月1日（PT）までは設定済みの統合に引き続き使用できます。この時点で、既存のサービスアカウント（JWT）資格情報は機能しなくなり、お客様は OAuth サーバー間の資格情報に移行する必要があります。[詳細情報](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | OAuth サーバー間の資格情報に[移行](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)します。 |
 
 ## 削除された機能 {#removed-features}
 
