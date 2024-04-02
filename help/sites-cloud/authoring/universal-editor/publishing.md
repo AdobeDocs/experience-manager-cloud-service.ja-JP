@@ -2,7 +2,7 @@
 title: ユニバーサルエディターを使用したコンテンツの公開
 description: ユニバーサルエディターでのコンテンツの公開方法と、アプリでの公開済みコンテンツの処理方法を説明します。
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 94%
@@ -13,8 +13,6 @@ ht-degree: 94%
 # ユニバーサルエディターを使用したコンテンツの公開 {#publishing}
 
 ユニバーサルエディターでのコンテンツの公開方法と、アプリでの公開済みコンテンツの処理方法を説明します。
-
-{{universal-editor-status}}
 
 ## AEM との類似点 {#similarities}
 

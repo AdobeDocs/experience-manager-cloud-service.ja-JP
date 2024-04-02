@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 80%
+source-wordcount: '340'
+ht-degree: 79%
 
 ---
 # スニペット {#snippets}
@@ -14,12 +14,6 @@ ht-degree: 80%
 ## Edge 配信サービスのオーサリング {#edge-delivery-authoring}
 
 [!BADGE Edge 配信サービス向けの AEM コンテンツをオーサリングする場合は、こちらをクリックしてください。]{type=Positive url="/help/edge/overview.md" tooltip="Edge 配信サービス向けの AEM コンテンツのオーサリング"}
-
-## ユニバーサルエディターのステータス {#universal-editor-status}
-
->[!NOTE]
->
->ユニバーサルエディターは現在も開発中で、その機能は変更される可能性があり、このドキュメントで説明する内容とは異なる場合があります。
 
 ## 関連トピック {#see-also}
 

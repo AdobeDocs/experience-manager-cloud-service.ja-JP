@@ -2,7 +2,7 @@
 title: 属性と項目タイプ
 description: ユニバーサルエディターに必要なデータ属性と項目タイプについて説明します。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 5ddd4bbcce10c5cda97e3ea3f6750b209b5743f0
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 100%
@@ -13,8 +13,6 @@ ht-degree: 100%
 # 属性とタイプ {#attributes-types}
 
 ユニバーサルエディターに必要なデータ属性と項目タイプについて説明します。
-
-{{universal-editor-status}}
 
 ## はじめに {#introduction}
 
