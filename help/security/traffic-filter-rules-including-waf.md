@@ -3,9 +3,9 @@ title: WAF ルールを含むトラフィックフィルタールール
 description: Web アプリケーションファイアウォール（WAF）ルールを含むトラフィックフィルタールールの設定
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 38a16251372ee6ba77687f524e5057e00f16f58e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3669'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 99%
 
 トラフィックフィルタールールは、Cloud Manager 設定パイプラインを通じて、実稼動（サンドボックス以外の）プログラムで、開発環境、ステージ環境および実稼動環境のタイプにデプロイできます。RDE のサポートは今後提供される予定です。
 
-[チュートリアルに従って](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)、この機能に関する具体的な専門知識をすばやく構築します。
+[チュートリアルに従って](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)、この機能に関する具体的な専門知識をすばやく構築します。
 
 >[!NOTE]
 >リクエスト／応答の変更、リダイレクトの宣言、AEM 以外の接触チャネルへのプロキシ処理など、CDN でトラフィックを設定する他のオプションに興味がありますか？早期導入プログラムに参加して、[その方法を学び、試してみましょう](/help/implementing/dispatcher/cdn-configuring-traffic.md)。
