@@ -1,11 +1,11 @@
 ---
 title: AEM Developer Tools for Eclipse
-description: Apache Sling 用の Eclipse プラグインに基づく Eclipse プラグインである、AEM Developer Tools for Eclipse の使用方法について説明します。
+description: Apache Sling 用の Eclipse プラグインに基づく Eclipse プラグインであるAEM Developer Tools for Eclipse の使用方法について説明します。
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+workflow-type: tm+mt
 source-wordcount: '1138'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -222,6 +222,6 @@ Apache Sling IDE tooling for Eclipse の公式 web サイトでは、次の有�
 
 次の公式の [Eclipse](https://www.eclipse.org/) ドキュメントは、環境の設定に役立ちます。
 
-* [Eclipse 使用の手引き](https://www.eclipse.org/getting-started/)
+* [Eclipse 使用の手引き](https://eclipseide.org/getting-started/)
 * [Eclipse Luna ヘルプシステム](https://help.eclipse.org/latest/index.jsp)
 * [Maven 統合（m2eclipse）](https://www.eclipse.org/m2e/)

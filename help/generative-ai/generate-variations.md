@@ -1,15 +1,15 @@
 ---
-title: バリエーションを生成
+title: バリエーションの生成
 description: バリエーションを生成する方法を説明します。Edge Delivery ServicesのSidekickからアクセスできます。
-source-git-commit: 88d0b0a6dc2dacdf907ab46c804087772ab2e030
+exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
 source-wordcount: '3338'
 ht-degree: 1%
 
 ---
 
-
-# バリエーションを生成 {#generate-variations}
+# バリエーションの生成 {#generate-variations}
 
 デジタルチャネルを最適化し、コンテンツ作成を高速化する方法を探している場合は、「バリエーションを生成」を使用できます。 バリエーションの生成では、生成人工知能 (AI) を使用して、プロンプトに基づいてコンテンツのバリエーションを作成します。これらのプロンプトは、Adobeが提供するか、ユーザーが作成して管理します。 バリエーションを作成した後、Web サイト上でコンテンツを使用し、 [実験](https://www.aem.live/docs/experimentation) 機能 [Edge Delivery Services](/help/edge/overview.md).
 
@@ -343,7 +343,7 @@ UI での書式設定を保持し、文書ベースのオーサリングフロ�
 
    >[!NOTE]
    >
-   >を使用するには **Adobe Target** オーディエンスの説明フィールドに入力する必要があります。 そうでない場合、オーディエンスはドロップダウンリストに使用不可と表示されます。 説明を追加するには、 Target に移動し、 [オーディエンスの説明を追加](https://experienceleague.adobe.com/docs/target-learn/tutorials/audiences/create-audiences).
+   >を使用するには **Adobe Target** オーディエンスの説明フィールドに入力する必要があります。 そうでない場合、オーディエンスはドロップダウンリストに使用不可と表示されます。 説明を追加するには、 Target に移動し、 [オーディエンスの説明を追加](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences).
 
    ![バリエーションを生成 — オーディエンスソース — Adobe Target](assets/generate-variations-audiences-adobe-target.png)
 
@@ -458,7 +458,7 @@ v2.0.0 リリースに移行すると、カスタムプロンプトテンプレ�
 
 使用状況の管理は、実行されるアクションによって異なります。
 
-* バリエーションを生成
+* バリエーションの生成
 
   1 つのコピー変種の 1 つの世代は、1 つの生成動作と同じです。 お客様は、AEMライセンスに付属する一定数の生成アクションを持っています。 基本権限が消費されると、追加のアクションを購入できます。
 

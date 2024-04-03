@@ -3,7 +3,7 @@ title: AEM Forms Edge Delivery Service の概要。 フォームを作成しま�
 description: クラフトパーフェクトフォーム、高速！ ⚡ AEM Forms Edge Delivery ドキュメントベースのオーサリング=超高速で SEO に対応したフォームで、より幸せなユーザーと検索エンジンを実現。
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 1%
@@ -27,7 +27,7 @@ AEM Forms Edge Delivery には、アダプティブFormsブロックと呼ばれ
 
 * を設定します。 [AEM Forms BoilerPlate を使用したAEMプロジェクト](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) または [アダプティブFormsブロックを既存のAEMプロジェクトに追加しました。](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 対応する GitHub リポジトリをローカルマシンに複製します。
 このドキュメントでは、Edge Delivery Services(EDS) プロジェクトのローカルフォルダーを `[EDS Project repository]`.
-* Google Sheet またはMicrosoft SharePointへのアクセス権があることを確認します。 Microsoft SharePointをコンテンツソースとして設定するには、 [SharePointの使用方法](https://www.aem.live/docs/setup-customer-SharePoint).
+* Google Sheet またはMicrosoft SharePointへのアクセス権があることを確認します。 Microsoft SharePointをコンテンツソースとして設定するには、 [SharePointの使用方法](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
 
@@ -80,7 +80,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
    ![Google Drive のサンプルコンテンツ](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
 
-1. シートが適切なAEMユーザー ( 例： `helix@adobe.com`) [プロジェクトに指定された設定に従って](https://www.aem.live/docs/setup-customer-SharePoint). ユーザにシートの編集権限を付与します。
+1. シートが適切なAEMユーザー ( 例： `helix@adobe.com`) [プロジェクトに指定された設定に従って](https://www.aem.live/docs/setup-customer-sharepoint). ユーザにシートの編集権限を付与します。
 
 1. 作成したスプレッドシートを開き、デフォルトのシートの名前を「shared-default」に変更します。
 

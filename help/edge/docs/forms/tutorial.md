@@ -2,13 +2,13 @@
 title: AEM FormsEdge Delivery Servicesの概要 — 開発者向けチュートリアル
 description: このチュートリアルでは、新しいAdobe Experience Manager Forms(AEM) プロジェクトを導入する方法について説明します。 10～20 分で、独自のフォームが作成されます。
 feature: Edge Delivery Services
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
-source-wordcount: '1850'
+source-wordcount: '1848'
 ht-degree: 1%
 
 ---
-
 
 # はじめに - 開発者向けチュートリアル
 
@@ -19,8 +19,6 @@ ht-degree: 1%
 AEM Formsには、アダプティブFormsブロックと呼ばれるブロックが用意されており、これを使用すると、キャプチャしたデータを取得して保存するためのフォームを簡単に作成することができます。 以下が可能です。 [アダプティブFormsブロックで事前設定された新しいAEMプロジェクトを作成する](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) または [アダプティブFormsブロックを既存のAEMプロジェクトに追加する](#add-adaptive-forms-block-to-your-existing-aem-project).
 
 このAEM Formsチュートリアルでは、新しいAdobe Experience Manager(AEM)Formsプロジェクトを使用して独自のカスタムフォームを作成、プレビュー、公開する手順を説明します。
-
-
 
 ## 前提条件
 
@@ -62,7 +60,7 @@ AEM Forms Boilerplate テンプレートを使用すると、アダプティブF
    >
    > GitHub Enterprise で IP フィルタリングを使用している場合は、に次の IP を追加できま許可リストに加えるす。 3.227.118.73
 
-   これですべて完了です。新しい Web サイトがで実行されています `https://<branch>--<repo>--<owner>.hlx.page/`.
+   これで完了です。新しい Web サイトがで実行されています `https://<branch>--<repo>--<owner>.hlx.page/`.
 
    * `<branch>` は、GitHub リポジトリのブランチを参照します。
    * `<repository>` は GitHub リポジトリを示します。
@@ -131,8 +129,7 @@ AEM Forms Boilerplate テンプレートを使用すると、アダプティブF
       https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      Microsoft SharePoint内でのファイル管理について詳しくは、 [AdobeSharePointの使用方法](https://www.aem.live/docs/setup-customer-SharePoint).
-
+      Microsoft SharePointを使用したファイル管理について詳しくは、 [AdobeSharePointの使用方法](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
    1. 更新をコミット `fsatb.yaml` ファイルを編集した後、参照を更新すると、すべて正しく表示されます。 ビルドの問題が発生した場合は、 [GitHub ビルドの問題のトラブルシューティング](#troubleshooting-github-build-issues).
@@ -300,4 +297,3 @@ AEM Sidekickを使用して、問い合わせドキュメントをプレビュ�
 ## 関連トピック
 
 {{see-more-forms-eds}}
-
