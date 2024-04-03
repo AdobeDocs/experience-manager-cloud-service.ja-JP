@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: de05abac3620b254343196a283cef198f434cfca
 workflow-type: tm+mt
 source-wordcount: '2752'
-ht-degree: 87%
+ht-degree: 92%
 
 ---
 
@@ -158,8 +158,8 @@ Cloud Acceleration Manager を使用して移行セットを取り込むには�
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
 >title="一意性制約違反"
->abstract="非ワイプ取り込みエラーの一般的な原因は、ノード ID が競合していることです。 競合するノードは 1 つだけです。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="追加取り込み"
+>abstract="非ワイプ取り込みエラーの一般的な原因は、ノード ID の競合です。競合するノードは 1 つのみ存在できます。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=ja#top-up-ingestion-process" text="追加取り込み"
 
 [追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)エラーの一般的な原因は、ノード ID の競合です。このエラーを識別するには、Cloud Acceleration Manager UI を使用して取り込みログをダウンロードし、次のようなエントリを探します。
 
@@ -178,8 +178,8 @@ AEM の各ノードには、一意の UUID が必要です。このエラーは�
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="参照されているノードを削除できません"
->abstract="ワイプしない取り込みエラーの一般的な原因は、宛先インスタンス上の特定のノードのバージョンの競合です。 ノードのバージョンを修正する必要があります。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="追加取り込み"
+>abstract="非ワイプ取り込みエラーの一般的な原因は、移行先インスタンスの特定のノードに対するバージョンの競合です。ノードのバージョンを修正する必要があります。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=ja#top-up-ingestion-process" text="追加取り込み"
 
 [追加取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)が失敗するもう一つの一般的な原因は、移行先インスタンスの特定のノードに対するバージョンの競合です。このエラーを識別するには、Cloud Acceleration Manager UI を使用して取り込みログをダウンロードし、次のようなエントリを探します。
 
@@ -195,8 +195,8 @@ AEM の各ノードには、一意の UUID が必要です。このエラーは�
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
->title="Large Node プロパティ"
->abstract="取り込み失敗の一般的な原因は、ノードプロパティの値の最大サイズを超えていることです。 この状況を修正するには、BPA レポートに関連するものを含むドキュメントに従います。"
+>title="大きなノードプロパティ"
+>abstract="取り込みエラーの一般的な原因は、ノードプロパティの値の最大サイズを超えていることです。この状況を修正するには、ドキュメント（BPA レポートに関連するものを含む）に従います。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=ja" text="移行の前提条件"
 
 MongoDB に保存されるノードプロパティの値は 16 MB を超えることはできません。ノード値がサポートされているサイズを超えると、取り込みに失敗し、ログには `BSONObjectTooLarge` エラーが含まれ、最大値を超えたノードが指定されます。これは MongoDB の制限です。
@@ -208,7 +208,7 @@ MongoDB に保存されるノードプロパティの値は 16 MB を超える�
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_rescinded"
 >title="取り込みの取り消し"
->abstract="取り込みを待機していた抽出が正常に完了しませんでした。 実行できなかったので、取り込みが取り消されました。"
+>abstract="取り込みを待機していた抽出が正常に終了しませんでした。実行できなかったので、取り込みが取り消されました。"
 
 ソース移行セットとして、実行中の抽出で作成された取り込みは、その取り込みが成功するまで待機し、その時点で正常に開始されます。抽出が失敗または停止した場合、取り込みおよびそのインデックス作成ジョブは開始されず、取り消されます。この場合は、抽出をチェックして失敗した理由を判断し、問題を修正して、再度抽出を開始します。固定抽出を実行した後で、新しい取り込みをスケジュールできます。
 
