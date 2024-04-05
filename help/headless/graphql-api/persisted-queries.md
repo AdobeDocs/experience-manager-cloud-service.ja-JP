@@ -3,10 +3,10 @@ title: 永続的な GraphQL クエリ
 description: Adobe Experience Manager as a Cloud Service で GraphQL クエリを永続化してパフォーマンスを最適化する方法を説明します。クライアントアプリケーションで HTTP GET メソッドを使用して永続的クエリをリクエストでき、応答を Dispatcher および CDN レイヤーにキャッシュできるので、最終的にクライアントアプリケーションのパフォーマンスが向上します。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: ef6138af1735dc7aecbc4210a3fe9983d73348dd
-workflow-type: ht
-source-wordcount: '1656'
-ht-degree: 100%
+source-git-commit: 2fa76dbe93bcf31901ec0422470b05dadfe4f43f
+workflow-type: tm+mt
+source-wordcount: '1870'
+ht-degree: 88%
 
 ---
 
@@ -257,6 +257,28 @@ query getAdventuresByActivity($activity: String!) {
 ```
 
 UTF-8 エンコーディング `%3B` は `;` に使用されます。また、`%3D` は `=` のエンコーディングです。永続クエリを実行するには、クエリ変数と特殊文字を[適切にエンコード](#encoding-query-url)する必要があります。
+
+### クエリ変数の使用 — ベストプラクティス {#query-variables-best-practices}
+
+クエリで変数を使用する場合は、次のベストプラクティスに従う必要があります。
+
+* エンコーディング一般的なアプローチとして、すべての特殊文字をエンコードすることを常にお勧めします。例： `;`, `=`, `?`, `&`（その他）
+* （セミコロンで区切られた）複数の変数を使用するセミコロンで永続化されたクエリは、次のいずれかを持つ必要があります。
+   * エンコードされたセミコロン (`%3B`) と呼ばれ、URL のエンコードでもこれを実現します。
+   * またはクエリの最後に追加する末尾のセミコロン
+* `CACHE_GRAPHQL_PERSISTED_QUERIES`
+条件 `CACHE_GRAPHQL_PERSISTED_QUERIES` が Dispatcher に対して有効になっている場合、 `/` または `\` の文字は、Dispatcher レベルで 2 回エンコードされます。
+この状況を回避するには、次の手順を実行します。
+   * 有効にする `DispatcherNoCanonURL` を Dispatcher に送信します。
+これにより、元の URL をAEMに転送するよう Dispatcher に指示するので、エンコーディングの重複を防ぎます。
+ただし、現在、この設定は、 `vhost` レベルにする必要があるので、既に URL を書き換える Dispatcher 設定がある場合（例：短縮 URL の使用時）は、個別の `vhost` を参照してください。
+   * 送信 `/` または `\` 文字がエンコード解除されました。
+永続クエリ URL を呼び出す場合は、 `/` または `\` 文字は、永続化されたクエリ変数の値でエンコード解除されたままになります。
+     >[!NOTE]
+     >
+     >このオプションは、 `DispatcherNoCanonURL` 何らかの理由でソリューションを実装することはできません。
+* `CACHE_GRAPHQL_PERSISTED_QUERIES`
+条件 `CACHE_GRAPHQL_PERSISTED_QUERIES` が Dispatcher に対して有効になっている場合、 `;` 文字は変数の値で使用できません。
 
 ## 永続クエリのキャッシュ {#caching-persisted-queries}
 
