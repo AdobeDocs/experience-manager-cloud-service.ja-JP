@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
+source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
 workflow-type: tm+mt
-source-wordcount: '4844'
+source-wordcount: '4842'
 ht-degree: 95%
 
 ---
@@ -803,7 +803,6 @@ ht-degree: 95%
    + Edge 配信アプリケーションの作成 {#build}
       + [はじめに - 開発者向けチュートリアル](/help/edge/developer/tutorial.md)
       + [プロジェクトの分析](/help/edge/developer/anatomy-of-a-franklin-project.md)
-      + [ブロックコレクション](/help/edge/developer/block-collection.md)
       + [スプレッドシート](/help/edge/developer/spreadsheets.md)
       + [Forms](/help/edge/developer/forms.md)
       + [インデックス作成](/help/edge/developer/indexing.md)
@@ -931,7 +930,7 @@ ht-degree: 95%
          + [コンテンツフラグメントでの参照の使用について](/help/journey-headless/author/references.md)
          + [コンテンツフラグメントのメタデータとタグの定義について](/help/journey-headless/author/metadata-tagging.md)
 + 生成 AI {#generative-ai}
-   + [バリエーションを生成](/help/generative-ai/generate-variations.md)
+   + [バリエーションの生成](/help/generative-ai/generate-variations.md)
 + 実装 {#implementing}
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
    + Cloud Manager の使用 {#using-cloud-manager}
@@ -1179,3 +1178,9 @@ ht-degree: 95%
    + アクセシビリティ {#accessibility}
       + [AEM as a Cloud Service と web アクセシビリティのガイドライン](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1 クイックガイド](/help/compliance/accessibility/quick-guide-wcag.md)
+
+
+<!--
+Temporarily remove:
+    + [Block Collection](/help/edge/developer/block-collection.md)
+-->

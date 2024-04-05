@@ -2,10 +2,10 @@
 title: Edge Delivery Services プロジェクトを使用した AEM オーサリング用のコンテンツモデリング
 description: Edge Delivery Services プロジェクトを使用した AEM オーサリングにおけるコンテンツモデリングの仕組みと独自のコンテンツをモデル化する方法について説明します。
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: 22a631d394de1c0fb934d9703e966c8287aef391
+source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
 workflow-type: tm+mt
-source-wordcount: '2095'
-ht-degree: 81%
+source-wordcount: '2072'
+ht-degree: 80%
 
 ---
 
@@ -23,7 +23,7 @@ Edge Delivery Services で AEM オーサリングを行うプロジェクトは�
 
 * [はじめに - 開発者向けチュートリアル](/help/edge/developer/tutorial.md)
 * [マークアップ、セクション、ブロック、自動ブロック](/help/edge/developer/markup-sections-blocks.md)
-* [ブロックコレクション](/help/edge/developer/block-collection.md)
+  <!--* [Block Collection](/help/edge/developer/block-collection.md)-->
 
 コンテンツのソースに依存しない方法で機能するような、説得力のあるコンテンツモデルを考え出すには、これらの概念を理解することが不可欠です。このドキュメントでは、AEM オーサリング用に特化して実装されている仕組みについて詳細を説明します。
 
@@ -323,7 +323,7 @@ Edge Delivery Servicesで AEM オーサリングを使用する場合、作成�
 
 [ブロック構造の仕組みがわかれば、](#block-structure)AEMで 1 対 1 で保持されるコンテンツを配信層にマッピングするコンテンツモデルを作成できます。
 
-どのプロジェクトでも初期段階で、すべてのブロックについて、コンテンツモデルを慎重に検討する必要があります。作成者がブロックの実装やスタイルを再利用しながら、切り替えたり組み合わせたりできるようにするには、コンテンツソースやオーサリングエクスペリエンスに依存しないようにする必要があります。詳細と一般的なガイダンスについては、[David のモデル（テイク 2）にあります。](https://www.aem.live/docs/davidsmodel)具体的には、[ブロックコレクション](/help/edge/developer/block-collection.md)は、一般的なユーザーインターフェイスのパターンにおける特定の使用例に対応する、広範なコンテンツモデルのセットを含んでいます。
+どのプロジェクトでも初期段階で、すべてのブロックについて、コンテンツモデルを慎重に検討する必要があります。作成者がブロックの実装やスタイルを再利用しながら、切り替えたり組み合わせたりできるようにするには、コンテンツソースやオーサリングエクスペリエンスに依存しないようにする必要があります。詳細と一般的なガイダンスについては、 [David&#39;s Model (take 2).](https://www.aem.live/docs/davidsmodel) <!--More specifically, the [block collection](/help/edge/developer/block-collection.md) contains a extensive set of content models for specific use cases of common user interface patterns.-->
 
 Edge Delivery Services を使用した AEM オーサリングでは、リッチテキストのようにコンテキスト内でセマンティックマークアップを編集するのではなく、複数のフィールドで構成されるフォームを使用して情報がオーサリングされる場合に、魅力的なセマンティックコンテンツモデルをどのように提供するかという問題が生じます。
 

@@ -3,10 +3,10 @@ title: Edge Delivery Services 向けの開発
 description: Edge Delivery Services を操作するために、ブロックを開発し、AEM プロジェクトをカスタマイズする方法について説明します。
 feature: Edge Delivery Services
 exl-id: c356c03c-af43-43a1-a14e-45f94ccb3970
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 93%
+source-wordcount: '209'
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,7 @@ Edge 配信サービスは、ブロックの概念に基づいています。AEM
 
 AEM では、プロジェクトのボイラープレート内の製品の一部として標準ブロックが用意されています。このようなブロックには、見出し、テキスト、画像、リンク、リストなどが含まれます。
 
-ブロックの詳細と Edge Delivery Services 向けの開発方法については、Edge Delivery Services ドキュメントの[ビルド](/help/edge/developer/block-collection.md)の節を参照してください。
+<!--Please see the [Build section](/help/edge/developer/block-collection.md) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.-->
 
 ## Edge Delivery Services と GitHub {#github-edge}
 
@@ -30,4 +30,4 @@ Edge Delivery Services では GitHub を活用しているので、GitHub リポ
 
 コンテンツのプレビューから実稼動環境まで、ブランチごとに web サイトが自動的に作成されます。GitHub リポジトリに配置したすべてのリソースは、ビルドプロセスなしで web サイト上で使用できます。
 
-ブロックの詳細と Edge Delivery Services 向けの開発方法については、Edge Delivery Services ドキュメントの[ビルド](/help/edge/developer/block-collection.md)の節を参照してください。
+<!--Please see the [Build section](/help/edge/developer/block-collection.md) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.-->

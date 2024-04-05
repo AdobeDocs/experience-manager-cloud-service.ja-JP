@@ -3,9 +3,9 @@ title: 既存の AEM プロジェクトでの Edge Delivery Services の使用
 description: 既存の AEM プロジェクトで Edge Delivery Services のメリットを活用する方法を学ぶ
 feature: Edge Delivery Services
 exl-id: f54aac3a-1d0c-4be0-9aa6-616217e0e458
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
-source-wordcount: '339'
+source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
+workflow-type: tm+mt
+source-wordcount: '315'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,7 @@ AEM ページエディターは、[コアコンポーネントなどの [AEM コ
 
 フェーズ 1 では、既存の AEM サイト構造、コンポーネント、オーサリングツールを引き続き使用できます。Web サイトのレンダリングは、JavaScript と CSS のブロックを使用して再構築され、Edge Delivery Services 経由で配信されます。
 
-ブロックの詳細と、Edge Delivery Services 向けの開発方法について詳しくは、Edge Delivery Services に関するドキュメントの[ビルドセクション](/help/edge/developer/block-collection.md)を参照してください。
+<!--Please see the [Build section](/help/edge/developer/block-collection.md) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.-->
 
 AEM でレンダリングされた HTML 出力を変換して Edge Delivery Services に送信するには、App Builder 上のコンバーターが必要です。
 
