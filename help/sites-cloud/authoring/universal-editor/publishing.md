@@ -2,10 +2,10 @@
 title: ユニバーサルエディターを使用したコンテンツの公開
 description: ユニバーサルエディターでのコンテンツの公開方法と、アプリでの公開済みコンテンツの処理方法を説明します。
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: 785a0db1ba302b8730480651802f98e802abc6d4
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ AEM のユーザーにとって、ユニバーサルエディターを使用し�
 
 ## その他のリソース {#additional-resources}
 
-ユニバーサルエディターを使用してコンテンツを作成する方法については、このドキュメントを参照してください。
+ユニバーサルエディターを使用してコンテンツをオーサリングする方法について詳しくは、このドキュメントを参照してください。
 
 * [ユニバーサルエディターを使用したコンテンツのオーサリング](authoring.md) - コンテンツ作成者がユニバーサルエディターを使用して、簡単かつ直感的にコンテンツを作成する方法について説明します。
 
@@ -49,4 +49,3 @@ AEM のユーザーにとって、ユニバーサルエディターを使用し�
 * [ユニバーサルエディターのアーキテクチャ](/help/implementing/universal-editor/architecture.md) - ユニバーサルエディターのアーキテクチャと、そのサービスとレイヤー間でのデータのフローについて説明します。
 * [属性とタイプ](/help/implementing/universal-editor/attributes-types.md) - ユニバーサルエディターで必要なデータ属性とデータ型について説明します。
 * [ユニバーサルエディターの認証](/help/implementing/universal-editor/authentication.md) - ユニバーサルエディターの認証方法について説明します。
-
