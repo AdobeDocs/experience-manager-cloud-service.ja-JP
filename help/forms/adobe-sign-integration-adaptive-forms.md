@@ -5,10 +5,10 @@ feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 67d8de3cda921dcaeaac47e64828abbe6abe943f
-workflow-type: ht
-source-wordcount: '2033'
-ht-degree: 100%
+source-git-commit: 2128dac489c270d296f86b56ae811556fb5fe87e
+workflow-type: tm+mt
+source-wordcount: '2117'
+ht-degree: 95%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 100%
 上記の前提条件の準備が完了したら、以下の手順により、オーサーインスタンス上の [!DNL AEM Forms] を使用して [!DNL Adobe Acrobat Sign] を設定します。
 
 1. AEM Forms のオーサーインスタンスで、**[!UICONTROL ツール]** ![ハンマー](assets/hammer.png)／**[!UICONTROL 一般]**／**[!UICONTROL 設定ブラウザー]**&#x200B;に移動します。
-1. **[!UICONTROL 設定ブラウザー]**&#x200B;ページで「**[!UICONTROL 作成]**」を選択します。
+1. **[!UICONTROL 設定ブラウザー]**&#x200B;ページで「**[!UICONTROL 作成]**」を設定します。
 1. **[!UICONTROL 設定を作成]**&#x200B;ダイアログで、設定の&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定し、「**[!UICONTROL クラウド設定]**」を有効にして「**[!UICONTROL 作成]**」を選択します。これにより、Cloud Services 用の設定コンテナが作成されます。フォルダー名にスペースが含まれていないことを確認します。
 1. **[!UICONTROL ツール]**![ハンマー](assets/hammer.png)／**[!UICONTROL Cloud Services]**／**[!UICONTROL Adobe Acrobat Sign]** に移動し、上記の手順で作成した設定コンテナを開きます。
 
@@ -74,7 +74,7 @@ ht-degree: 100%
      次に例を示します。
      `https://secure.na1.echosign.com/public/oauth/v2`
 
-   * 「**[!UICONTROL アクセストークン URL]**」フィールドには、Adobe Sign データベースシャードを含むデフォルトの URL が含まれます。URL の形式は次の通りです。
+   * **[!UICONTROL トークン URL にアクセス]** フィールドには、Adobe Sign データベースシャードを含むデフォルトの URL が含まれます。URL の形式は次の通りです。
 
      `https://<shard>/oauth/v2/token`
 
@@ -88,7 +88,7 @@ ht-degree: 100%
    >[!NOTE]
    >
    >* **Adobe Acrobat Sign 設定を作成**&#x200B;ページを開いたままにします。閉じないでください。 **クライアント ID** および&#x200B;**クライアント秘密鍵**&#x200B;は、以降の手順で説明するように、[!DNL Adobe Acrobat Sign] アプリケーションの OAuth 設定を行った後に取得できます。
-   > * Adobe Sign アカウントにログインした後、**[!UICONTROL Acrobat Sign API]**／**[!UICONTROL API 情報]**／**[!UICONTROL REST API メソッドのドキュメント]**／**[!UICONTROL OAuth アクセストークン]**&#x200B;に移動して、Adobe Sign OAuth URL とアクセストークン URL に関連する情報にアクセスします。
+   > * Adobe Sign アカウントにログインした後、**[!UICONTROL Acrobat Sign API]**／**[!UICONTROL API 情報]**／**[!UICONTROL REST API メソッドのドキュメント]**／**[!UICONTROL OAuth アクセストークン]**&#x200B;に移動して、Adobe Sign OAuth URL およびアクセストークン URL に関連する情報にアクセスします。
 
 1. 以下の手順により、[!DNL Adobe Acrobat Sign] アプリケーション用に OAuth 設定を構成します。
 
@@ -128,6 +128,17 @@ ht-degree: 100%
 >
 > Adobe Sign サンドボックスを設定するには、[Adobe Sign](#adobe-sign) で説明した手順と同じ設定手順に従います。
 
+#### トラブルシューティング {#resolve-config-error}
+
+接続時 [!DNL Adobe Acrobat Sign] 次を使用 [!DNL AEM Forms] エラーを見つける `Unable to authorize access because the client configuration is invalid: invalid_request` 次の画像に示すように。 これを解決するには、次の手順に従います。
+
+![設定エラー](/help/forms/assets/config_error_sign.png)
+
+1. 現在のブラウザウィンドウに存在する URL をメモ帳にコピーし、パーツを削除します。 `/ui#/aem` を URL から取得します。
+1. ブラウザーウィンドウを開き、[!DNL Adobe Acrobat Sign] 開発者アカウントにログインします。
+1. [!DNL AEM Forms] 用に設定されているアプリケーションを選択し、「**[!UICONTROL アプリケーションの OAuth を設定]**」を選択します。
+1. Adobe Analytics の **[!UICONTROL リダイレクト URL]** ボックスに、前の手順でコピーした URL を追加し、 **[!UICONTROL 保存]**.
+
 ## AEM Forms と Adobe Acrobat Sign Solutions for Government を接続 {#adobe-acrobat-sign-for-government}
 
 AEM Forms と Adobe Acrobat Sign Solutions for Government の接続は、複数の手順で構成されます。以下が含まれます。
@@ -154,7 +165,7 @@ AEM Forms と Adobe Acrobat Sign Solution の接続を開始する前に、[Adob
 1. Forms as a Cloud Service のオーサーインスタンスで、**[!UICONTROL ツール]**![ハンマー](assets/hammer.png)／**[!UICONTROL 一般]**／**[!UICONTROL 設定ブラウザー]**&#x200B;に移動します。
 1. **[!UICONTROL 設定ブラウザー]**&#x200B;ページで「**[!UICONTROL 作成]**」を選択します。
 1. **[!UICONTROL 設定を作成]**&#x200B;ダイアログで、設定の&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定し、「**[!UICONTROL クラウド設定]**」を有効にして「**[!UICONTROL 作成]**」を選択します。これにより、Cloud Services 用の設定コンテナが作成されます。フォルダー名にスペースが含まれていないことを確認します。
-1. **[!UICONTROL ツール]**![ハンマー](assets/hammer.png)／**[!UICONTROL Cloud Services]**／**[!UICONTROL Adobe Acrobat Sign]** に移動し、上記の手順で作成した設定コンテナを開きます。アダプティブフォームを作成する際に、**[!UICONTROL 設定コンテナ]**&#x200B;フィールドにコンテナ名を指定します。
+1. **[!UICONTROL ツール]**![ハンマー](assets/hammer.png)／**[!UICONTROL Cloud Services]**／**[!UICONTROL Adobe Acrobat Sign]** に移動し、上記の手順で作成した設定コンテナを開きます。アダプティブフォームを作成する際に、「**[!UICONTROL 設定コンテナ]**」フィールドにコンテナ名を指定します。
 1. 設定ページで「**[!UICONTROL 作成]**」を選択して、AEM Forms 内に [!DNL Adobe Acrobat Sign] の設定を作成します。
 1. 現在のブラウザーウィンドウの URL をメモ帳にコピーし、URL から `/ui#/aem` を削除します。この URL は `re-direct URL` と呼ばれます。
 次のセクションでは、`re-direct URL` と `Scopes` を Adobe Sign チームと共有し、認証情報（クライアント ID とクライアントシークレット）を要求します。
@@ -198,7 +209,7 @@ Adobe Acrobat Sign for Government Solutions チームには、AEM Forms と Adob
      次に例を示します。
      `https://secure.na1.adobesign.us/api/gateway/adobesignauthservice/api/v1/authorize`
 
-   * 「**[!UICONTROL アクセストークン URL]**」フィールドには、Adobe Sign データベースシャードを含むデフォルトの URL が含まれます。URL の形式は次の通りです。
+   * **[!UICONTROL トークン URL にアクセス]** フィールドには、Adobe Sign データベースシャードを含むデフォルトの URL が含まれます。URL の形式は次の通りです。
 
      `https://<shard>/api/gateway/adobesignauthservice/api/v1/token`
 
@@ -211,7 +222,7 @@ Adobe Acrobat Sign for Government Solutions チームには、AEM Forms と Adob
 
    >[!NOTE]
    >
-   > * Adobe Sign アカウントにログインした後、**[!UICONTROL Acrobat Sign API]**／**[!UICONTROL API 情報]**／**[!UICONTROL REST API メソッドのドキュメント]**／**[!UICONTROL OAuth アクセストークン]**&#x200B;に移動して、Adobe Sign oAuth URL とアクセス トークン URL に関連する情報にアクセスします。
+   > * Adobe Signアカウントにログインした後、に移動します。 **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API 情報]** > **[!UICONTROL REST API メソッドのドキュメント]** > **[!UICONTROL OAuth アクセストークン]** Adobe Sign oAuth URL およびアクセストークン URL に関連する情報にアクセスする。
 
 1. 前の節で、Adobe Acrobat Sign for Government Solution 担当者（[Adobe Professional Services チームメンバー]）が共有した資格情報を [**[!UICONTROL クライアント ID]** と&#x200B;**[!UICONTROL クライアントの秘密鍵]**] として使用します。
 
