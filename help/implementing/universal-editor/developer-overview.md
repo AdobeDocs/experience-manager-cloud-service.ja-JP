@@ -2,7 +2,7 @@
 title: AEM 開発者向けのユニバーサルエディターの概要
 description: ユニバーサルエディターの動作およびプロジェクトでのユニバーサルエディターの使用方法について興味がある AEM 開発者向けに、このドキュメントでは、WKND プロジェクトをユニバーサルエディターと連携させる方法を説明することで、エンドツーエンドの導入について説明します。
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 99%
@@ -593,3 +593,4 @@ WKND ページがユニバーサルエディターに正常に読み込まれ、
 * ユニバーサルエディターの構造について詳しくは、[ユニバーサルエディターのアーキテクチャ](/help/implementing/universal-editor/architecture.md#service)ドキュメントを参照してください。
 * ユニバーサルエディターのセルフホストバージョンに接続する方法について詳しくは、[ユニバーサルエディターを使用したローカル AEM 開発](/help/implementing/universal-editor/local-dev.md)ドキュメントを参照してください。
 * ノードのオーバーレイについて詳しくは、[Adobe Experience Manager as a Cloud Service での Sling Resource Merger の使用](/help/implementing/developing/introduction/sling-resource-merger.md)ドキュメントを参照してください。
+

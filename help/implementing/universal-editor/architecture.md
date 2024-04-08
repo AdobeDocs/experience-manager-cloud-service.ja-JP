@@ -2,7 +2,7 @@
 title: ユニバーサルエディターのアーキテクチャ
 description: ユニバーサルエディターのアーキテクチャと、そのサービスとレイヤー間でのデータのフローについて説明します。
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 100%
@@ -84,3 +84,4 @@ ht-degree: 100%
 * [AEM のユニバーサルエディターの概要](getting-started.md) - ユニバーサルエディターへのアクセス権を取得する方法と、それを使用する最初の AEM アプリの実装を開始する方法を説明します。
 * [属性とタイプ](attributes-types.md) - ユニバーサルエディターで必要なデータ属性とデータ型について説明します。
 * [ユニバーサルエディターの認証](authentication.md) - ユニバーサルエディターの認証方法について説明します。
+

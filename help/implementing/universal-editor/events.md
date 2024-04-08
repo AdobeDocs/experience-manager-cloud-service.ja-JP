@@ -1,13 +1,13 @@
 ---
 title: ユニバーサルエディターイベント
 description: リモートアプリ内のコンテンツや UI の変更に応じて使用できる、ユニバーサルエディターが送信する様々なイベントについて説明します。
-source-git-commit: e92a0be2213e3d5793fd077bd1968852336cc98b
+exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%
 
 ---
-
 
 # ユニバーサルエディターイベント {#events}
 
@@ -279,3 +279,4 @@ The `aue:initialized` イベントがトリガーされ、リモートページ�
 ## その他のリソース {#additional-resources}
 
 * [ユニバーサルエディターの呼び出し](/help/implementing/universal-editor/calls.md)
+

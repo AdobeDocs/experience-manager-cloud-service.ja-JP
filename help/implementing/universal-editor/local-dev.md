@@ -2,7 +2,7 @@
 title: ユニバーサルエディターを使用したローカル AEM 開発
 description: ユニバーサルエディターが開発目的でローカルの AEM インスタンスでの編集に対応する方法を説明します。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 63%
@@ -119,3 +119,4 @@ Universal Editor Service listening on port 8000 as HTTPS Server
 1. ブラウザーを `https://localhost:8000/corslib/LATEST` で開きます。
 1. [自己署名証明書](#ue-https)に同意するようダイレクトされます。
 1. 自己署名証明書が信頼されると、ローカルのユニバーサルエディターサービスを使用してページを編集できるようになります。
+
