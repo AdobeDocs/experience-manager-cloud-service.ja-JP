@@ -2,41 +2,41 @@
 title: CDN でのトラフィックの設定
 description: 設定ファイルでルールとフィルターを宣言し、Cloud Manager 設定パイプラインを使用して CDN にデプロイすることで、CDN トラフィックを設定する方法について説明します。
 feature: Dispatcher
-source-git-commit: 0a0c9aa68b192e8e2a612f50a58ba5f9057c862d
+exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
+source-git-commit: 1e2d147aec53fc0f5be53571078ccebdda63c819
 workflow-type: tm+mt
-source-wordcount: '974'
-ht-degree: 2%
+source-wordcount: '1109'
+ht-degree: 81%
 
 ---
-
 
 # CDN でのトラフィックの設定 {#cdn-configuring-cloud}
 
 >[!NOTE]
->この機能は、まだ一般には利用できません。 早期採用プログラムに参加するには、E メールを送信します。 `aemcs-cdn-config-adopter@adobe.com` および使用例を説明します。
+>この機能はまだ一般提供されていません。早期導入プログラムに参加するには、`aemcs-cdn-config-adopter@adobe.com` にメールを送信し、ユースケースを説明します。
 
-AEMas a Cloud Serviceオファーでは、 [Adobeが管理する CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) 受信要求または送信応答の特性を変更するレイヤー。 このページで詳しく説明する次のルールは、次の動作を実現するように宣言できます。
+AEM as a Cloud Service では、受信リクエストまたは送信応答の特性を変更する、[アドビが管理する CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) レイヤーで設定可能な機能のコレクションを提供します。このページで詳しく説明する次のルールは、次の動作を実現するために宣言できます。
 
-* [リクエスト変換](#request-transformations)  — ヘッダー、パス、パラメーターなど、受信リクエストの側面を変更します。
-* [応答変換](#response-transformations)  — クライアントに戻る途中のヘッダー（Web ブラウザーなど）を変更します。
-* [クライアント側リダイレクター](#client-side-redirectors)  — ブラウザーのリダイレクトのトリガー。
-* [接触チャネルセレクター](#origin-selectors)  — 別の接触チャネルバックエンドへのプロキシ。
+* [リクエスト変換](#request-transformations) - ヘッダー、パスおよびパラメーターなど、受信リクエストの側面を変更します。
+* [応答変換](#response-transformations) - クライアント（web ブラウザーなど）に戻る途中のヘッダーを変更します。
+* [クライアントサイドリダイレクター](#client-side-redirectors) - ブラウザーのリダイレクトをトリガーします。
+* [接触チャネルセレクター](#origin-selectors) - 別の接触チャネルバックエンドにプロキシ処理します。
 
-また、CDN で設定できるのはトラフィックフィルタールール（WAF を含む）で、CDN で許可または拒否されるトラフィックを制御します。 この機能は既にリリースされており、詳しくは、 [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md) ページに貼り付けます。
+また、CDN で許可または拒否するトラフィックを制御するトラフィックフィルタールール（WAF を含む）も CDN で設定できます。この機能は既にリリースされています。詳しくは、[WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)ページを参照してください。
 
-さらに、CDN が接触チャネルと通信できない場合は、自己ホスト型カスタムエラーページ（その後レンダリングされる）を参照するルールを記述できます。 詳しくは、 [CDN エラーページの設定](/help/implementing/dispatcher/cdn-error-pages.md) 記事。
+さらに、CDN でその接触チャネルに接続できない場合は、自己ホスト型のカスタムエラーページ（その後レンダリングされる）を参照するルールを書き込むことができます。詳しくは、[CDN エラーページの設定](/help/implementing/dispatcher/cdn-error-pages.md)の記事を参照してください。
 
-ソース管理下の設定ファイルで宣言されているこれらのルールはすべて、 [Cloud Manager の設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). 設定ファイルの累積サイズは 100 KB を超えないことに注意してください。
+すべてのルールは、ソース管理の設定ファイルで宣言され、[Cloud Manager の設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)を使用してデプロイされます。設定ファイルの累積サイズが 100KB を超えることはできません。
 
 ## 評価の順序 {#order-of-evaluation}
 
-機能的には、前述の様々な機能は次の順序で評価されます。
+機能的には、前述の様々な機能が次のシーケンスで評価されます。
 
 ![画像](/help/implementing/dispatcher/assets/order.png)
 
 ## 設定 {#initial-setup}
 
-CDN でトラフィックを設定する前に、次の手順を実行する必要があります。
+CDN でトラフィックを設定する前に、次のことを行う必要があります。
 
 * まず、Git プロジェクトの最上位フォルダーに次のフォルダーとファイル構造を作成します。
 
@@ -45,15 +45,25 @@ config/
      cdn.yaml
 ```
 
-* 次に、 `cdn.yaml` 設定ファイルには、メタデータと以下の例で説明するルールの両方を含める必要があります。
+* 次に、`cdn.yaml` 設定ファイルには、メタデータと以下の例で説明するルールの両方を含める必要があります。
+
+## 構文 {#configuration-syntax}
+
+以下のセクションのルールタイプは、共通の構文を共有します。
+
+ルールは、名前、条件付きの「when 句」、アクションで参照されます。
+
+when 句は、ドメイン、パス、クエリ文字列、ヘッダー、cookie などのプロパティに基づいてルールを評価するかどうかを決定します。 構文はルールタイプ間で同じです。詳しくは、 [「条件構造」セクション](/help/security/traffic-filter-rules-including-waf.md#condition-structure) （トラフィックフィルタールールの記事）
+
+アクションノードの詳細は、ルールタイプによって異なります。概要については、以下の個々の節で説明します。
 
 ## リクエスト変換 {#request-transformations}
 
-リクエスト変換ルールを使用すると、受信リクエストを変更できます。 このルールは、正規表現を含む様々な一致条件に基づく、パス、クエリパラメーター、ヘッダー（Cookie を含む）の設定、設定解除および変更をサポートします。 また、変数を設定し、後で評価順序で参照することもできます。
+リクエスト変換ルールを使用すると、受信リクエストを変更できます。このルールは、正規表現を含む様々な一致条件に基づいて、パス、クエリパラメーターおよびヘッダー（Cookie を含む）の設定、設定解除および変更をサポートします。また、変数を設定して、後の評価シーケンスで参照することもできます。
 
-使用例は様々で、アプリケーションを簡素化またはレガシー URL をマッピングするために、URL の書き換えが含まれます。
+ユースケースは多様で、アプリケーションの簡素化やレガシー URL のマッピング用の URL の書き換えが含まれます。
 
-前述のように、サイズは設定ファイルに制限があるので、より大きな要件を持つ組織では、 `apache/dispatcher` レイヤー。
+前述したように、設定ファイルにはサイズ制限があるので、より大きな要件を持つ組織では `apache/dispatcher` レイヤーでルールを定義する必要があります。
 
 設定例：
 
@@ -61,7 +71,7 @@ config/
 kind: "CDN"
 version: "1"
 metadata:
-  envTypes: ["prod", "dev"]
+  envTypes: ["dev", "stage", "prod"]
 data:  
   experimental_requestTransformations:
     removeMarketingParams: true
@@ -74,7 +84,7 @@ data:
           - type: set
             reqHeader: x-some-header
             value: some value
- 
+            
       - name: unset-header-rule
         when:
           reqProperty: path
@@ -82,24 +92,7 @@ data:
         actions:
           - type: unset
             reqHeader: x-some-header
- 
-      - name: set-query-param-rule
-        when:
-          reqProperty: path
-          equals: /set-query-param
-        actions:
-          - type: set
-            queryParam: someParam
-            value: someValue
- 
-      - name: unset-query-param-rule
-        when:
-          reqProperty: path
-          equals: /unset-query-param
-        actions:
-          - type: unset
-            queryParam: someParam
- 
+            
       - name: unset-matching-query-params-rule
         when:
           reqProperty: path
@@ -107,7 +100,7 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^removeMe_.*$
- 
+            
       - name: unset-all-query-params-except-exact-two-rule
         when:
           reqProperty: path
@@ -115,61 +108,7 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^(?!leaveMe$|leaveMeToo$).*$
- 
-      - name: set-req-cookie-rule
-        when:
-          reqProperty: path
-          equals: /set-req-cookie
-        actions:
-          - type: set
-            reqCookie: someParam
-            value: someValue
- 
-      - name: unset-req-cookie-rule
-        when:
-          reqProperty: path
-          equals: /unset-req-cookie
-        actions:
-          - type: unset
-            reqCookie: someParam
- 
-      - name: set-variable-rule
-        when:
-          reqProperty: path
-          equals: /set-variable
-        actions:
-          - type: set
-            var: some_var_name
-            value: some value
- 
-      - name: unset-variable-rule
-        when:
-          reqProperty: path
-          equals: /unset-variable
-        actions:
-          - type: unset
-            var: some_var_name
- 
-      - name: replace-segment
-        when:
-          reqProperty: path
-          like: /replace-segment/*
-        actions:
-          - type: replace
-            reqProperty: path
-            match: /replace-segment/
-            value: /segment-was-replaced/
- 
-      - name: replace-extension
-        when:
-          reqProperty: path
-          like: /replace-extension/*.html
-        actions:
-          - type: replace
-            reqProperty: path
-            match: \.html
-            value: ''
- 
+            
       - name: multi-action
         when:
           reqProperty: path
@@ -181,6 +120,17 @@ data:
           - type: set
             reqHeader: x-header2
             value: '201'
+            
+      - name: replace-html
+        when:
+          reqProperty: path
+          like: /mypath
+        actions:
+          - type: transform
+           reqProperty: path
+           op: replace
+           match: \.html$
+           replacement: ""
 ```
 
 **アクション**
@@ -189,20 +139,31 @@ data:
 
 | 名前 | プロパティ | 意味 |
 |-----------|--------------------------|-------------|
-| **設定** | reqHeader, value | 指定したヘッダーに指定した値を設定します。 |
-|     | queryParam、value | 指定されたクエリパラメーターに指定された値を設定します。 |
-|     | reqCookie、値 | 指定された cookie に指定された値を設定します。 |
-|     | var, value | 指定した変数に指定した値を設定します。 |
-| **未設定** | reqHeader | 指定したヘッダーを削除します。 |
-|         | queryParam | 指定したクエリパラメーターを削除します。 |
-|         | reqCookie | 指定した Cookie を削除します。 |
+| **set** | （reqProperty、reqHeader、queryParam または reqCookie）、値 | 指定されたリクエストパラメーター（「path」プロパティのみサポート）またはリクエストヘッダー、クエリパラメーター、cookie を指定された値に設定します。 |
+|     | var、値 | 指定されたリクエストプロパティに指定された値を設定します。 |
+| **unset** | reqProperty | 指定されたリクエストパラメーター（「path」プロパティのみサポート）またはリクエストヘッダー、クエリパラメーター、cookie を指定された値に削除します。 |
 |         | var | 指定した変数を削除します。 |
 |         | queryParamMatch | 指定した正規表現に一致するすべてのクエリパラメーターを削除します。 |
-| **置換** | reqProperty, match, value | リクエストプロパティの一部を新しい値に置き換えます。 現在、「path」プロパティのみがサポートされています。 |
+| **変換** | op:replace,（reqProperty または reqHeader または queryParam または reqCookie）, match, replacement | リクエストパラメーターの一部（「path」プロパティのみサポート）、またはリクエストヘッダー、クエリパラメーター、cookie を新しい値に置き換えます。 |
+|              | op:tolower、（reqProperty または reqHeader、queryParam または reqCookie） | リクエストパラメーター（「path」プロパティのみサポート）またはリクエストヘッダー、クエリパラメーター、cookie を小文字の値に設定します。 |
+
+アクションは連結できます。 次に例を示します。
+
+```
+actions:
+    - type: transform
+      reqProperty: path
+      op: replace
+      match: \.html$
+      replacement: ""
+    - type: transform
+      reqProperty: path
+      op: tolower
+```
 
 ### 変数 {#variables}
 
-変数は、リクエストの変換時に設定し、後で評価シーケンスで参照することができます。 詳しくは、 [評価順序](#order-of-evaluation) 図を参照してください。
+変数は、リクエストの変換時に設定し、後で評価シーケンスで参照することができます。詳しくは、[評価の順序](#order-of-evaluation)を参照してください。
 
 設定例：
 
@@ -237,7 +198,7 @@ data:
 
 ## 応答変換 {#response-transformations}
 
-応答変換ルールを使用すると、CDN の送信応答のヘッダーを設定および設定解除できます。 また、リクエスト変換ルールで以前に設定された変数を参照するには、上記の例を参照してください。
+応答変換ルールを使用すると、CDN の送信応答のヘッダーを設定および設定解除できます。また、リクエスト変換ルールで以前に設定された変数を参照するには、上記の例を参照してください。
 
 設定例：
 
@@ -286,12 +247,12 @@ data:
 
 | 名前 | プロパティ | 意味 |
 |-----------|--------------------------|-------------|
-| **設定** | reqHeader, value | 指定されたヘッダーに応答内の指定された値を設定します。 |
-| **未設定** | respHeader | 指定したヘッダーを応答から削除します。 |
+| **set** | reqHeader、値 | 指定されたヘッダーを応答内の指定された値に設定します。 |
+| **設定解除** | respHeader | 指定したヘッダーを応答から削除します。 |
 
 ## 接触チャネルセレクター {#origin-selectors}
 
-AEM CDN を利用して、Adobe以外のアプリケーション（おそらくパスごとまたはサブドメインごと）を含む様々なバックエンドにトラフィックをルーティングできます。
+AEM CDN を利用して、アドビ以外のアプリケーション（おそらくパスごとまたはサブドメインごと）を含む様々なバックエンドにトラフィックをルーティングできます。
 
 設定例：
 
@@ -325,28 +286,28 @@ data:
 
 | 名前 | プロパティ | 意味 |
 |-----------|--------------------------|-------------|
-| **selectOrigin** | originName | 定義された起源の 1 つの名前。 |
-|     | useCache （オプション、デフォルトは true） | このルールに一致する要求にキャッシュを使用するかどうかを示すフラグ。 |
+| **selectOrigin** | originName | 定義された接触チャネルの 1 つの名前。 |
+|     | useCache（オプション、デフォルトは true） | このルールに一致するリクエストにキャッシュを使用するかどうかを示すフラグ。 |
 
-**起源**
+**接触チャネル**
 
-オリジンへの接続は SSL のみで、ポート 443 を使用します。
+接触チャネルへの接続は SSL のみで、ポート 443 を使用します。
 
 | プロパティ | 意味 |
 |------------------|--------------------------------------|
 | **name** | 「action.originName」で参照できる名前。 |
-| **ドメイン** | カスタムバックエンドへの接続に使用するドメイン名。 また、SSL SNI および検証にも使用されます。 |
-| **ip** （オプション、サポートされる iv4 および ipv6） | 指定した場合、「domain」ではなくバックエンドへの接続に使用されます。 SSL SNI および検証には、「ドメイン」が引き続き使用されます。 |
-| **forwardHost** （オプション、デフォルトは false） | true に設定した場合、クライアントリクエストの「Host」ヘッダーがバックエンドに渡されます。それ以外の場合は、「domain」値が「Host」ヘッダーに渡されます。 |
-| **forwardCookie** （オプション、デフォルトは false） | true に設定した場合、クライアントリクエストの「Cookie」ヘッダーがバックエンドに渡されます。それ以外の場合は、Cookie ヘッダーが削除されます。 |
-| **forwardAuthorization** （オプション、デフォルトは false） | true に設定した場合、クライアントリクエストの「Authorization」ヘッダーがバックエンドに渡されます。それ以外の場合は、Authorization ヘッダーが削除されます。 |
-| **timeout** （オプション、秒単位、デフォルトは 60） | バックエンドサーバーが HTTP 応答本文の最初のバイトを配信するのを CDN が待機する秒数。 また、この値は、バックエンドサーバーに対するバイトのタイムアウト間隔としても使用されます。 |
+| **ドメイン** | カスタムバックエンドへの接続に使用するドメイン名。また、SSL SNI および検証にも使用されます。 |
+| **ip**（オプション、iv4 および ipv6 でサポート） | 指定した場合、「domain」ではなくバックエンドへの接続に使用されます。SSL SNI および検証には、「domain」が引き続き使用されます。 |
+| **forwardHost**（オプション、デフォルトは false） | true に設定した場合、クライアントリクエストの「Host」ヘッダーがバックエンドに渡されます。それ以外の場合は、「domain」値が「Host」ヘッダーに渡されます。 |
+| **forwardCookie**（オプション、デフォルトは false） | true に設定した場合、クライアントリクエストの「cookie」ヘッダーがバックエンドに渡されます。それ以外の場合は、cookie ヘッダーが削除されます。 |
+| **forwardAuthorization**（オプション、デフォルトは false） | true に設定した場合、クライアントリクエストの「Authorization」ヘッダーがバックエンドに渡されます。それ以外の場合は、Authorization ヘッダーが削除されます。 |
+| **timeout**（オプション、秒単位、デフォルトは 60） | バックエンドサーバーが HTTP 応答本文の最初のバイトを配信することを CDN が待機する秒数。また、この値は、バックエンドサーバーに対するバイトのタイムアウト間隔としても使用されます。 |
 
-## クライアント側リダイレクター {#client-side-redirectors}
+## クライアントサイドリダイレクター {#client-side-redirectors}
 
-301、302 および同様のクライアント側リダイレクトに対して、クライアント側のリダイレクトルールを使用できます。 ルールが一致する場合、CDN は応答として、ステータスコードとメッセージ（例：HTTP/1.1 301 Moved Permanently）、およびロケーションヘッダーセットを含むステータス行を使用して応答します。
+301、302 および同様のクライアントサイドリダイレクトに対して、クライアントサイドのリダイレクトルールを使用できます。ルールが一致する場合、CDN は応答として、ステータスコードとメッセージ（例：HTTP/1.1 301 Moved Permanently）、および場所ヘッダーセットを含むステータス行で応答します。
 
-絶対位置と固定値を持つ相対位置の両方が許可されます。
+絶対位置と固定値を持つ相対位置の両方が使用されます。
 
 設定例：
 
@@ -373,5 +334,5 @@ data:
 
 | 名前 | プロパティ | 意味 |
 |-----------|--------------------------|-------------|
-| **redirect** | location | 「Location」ヘッダーの値。 |
-|     | status （オプション、デフォルトは 301） | リダイレクトメッセージで使用される HTTP ステータス（デフォルトでは 301）。許可されている値は 301、302、303、307、308 です。 |
+| **リダイレクト** | location | 「Location」ヘッダーの値。 |
+|     | ステータス（オプション、デフォルトは 301） | リダイレクトメッセージで使用される HTTP ステータス（デフォルトでは 301）で、許可されている値は 301、302、303、307、308 です。 |
