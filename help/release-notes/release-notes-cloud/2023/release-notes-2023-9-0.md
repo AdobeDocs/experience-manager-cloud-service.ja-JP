@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0 リリースのリリースノート。'
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 79%
+ht-degree: 82%
 
 ---
 
@@ -34,15 +34,15 @@ ht-degree: 79%
 
 ## リリースビデオ {#release-video}
 
-2023.9.0 リリースに追加された機能の概要については、 2023 年 9 月リリースの概要ビデオをご覧ください。
+2023.9.0 リリースで追加された機能の概要については、2023 年 9 月リリースの概要ビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
 
-## AEMEdge Delivery Services {#edge-delivery}
+## AEM Edge Delivery Services {#edge-delivery}
 
-エッジ配信は、コンテンツの影響を最大限に高め、顧客とのインタラクションの時点でのビジネス成果を測定できるようにする、合成可能な一連の新しいサービスです。
+エッジ配信は、コンテンツの影響を最大化し、顧客インタラクションの時点で測定可能なビジネス成果を促進することに重点を置いた、構成可能な新しいサービスセットです。
 
-記事のEdge Delivery Servicesの詳細 [ここ](/help/edge/overview.md).
+Edge Delivery Servicesについて詳しくは、記事を参照してください [こちら](/help/edge/overview.md).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -50,15 +50,15 @@ ht-degree: 79%
 
 **フォルダーにメタデータフォームの割り当て**
 
-これで、デプロイメント内の特定のフォルダーにメタデータフォームを割り当てることができるようになりました。 サブフォルダー内のアセットを含むフォルダー内のすべてのアセットには、割り当てられたメタデータフォームで定義されたプロパティが表示されます。
+デプロイメント内の特定のフォルダーにメタデータフォームを割り当てることができるようになりました。 サブフォルダー内のアセットを含むフォルダー内のすべてのアセットには、割り当てられたメタデータフォームで定義されたプロパティが表示されます。
 
 ![フォルダーにメタデータフォームの割り当て](/help/release-notes/assets/assign-to-folder.png)
 
 ### 管理ビューの新機能 {#admin-view-features}
 
-* **AEM Assetsas a Cloud ServiceとドキュメントベースのオーサリングのEdge Delivery Services**: AEM Assetsをドキュメントベースのオーサリングと統合して、Web サイト作成者が次のことを実行できるようにEdge Delivery Services [Microsoft Word またはGoogleドキュメントでドキュメントを作成する際に、AEM Assetsリポジトリで使用できる画像を使用します。](/help/edge/using.md#integrate-assets-edge).
+* **AEM Assetsas a Cloud ServiceとEdge Delivery Services向けのドキュメントベースのオーサリングの統合**:AEM AssetsをEdge Delivery Services向けのドキュメントベースのオーサリングと統合して、web サイト作成者が以下を行えるようにします [AEM Assets Word またはGoogle ドキュメントでドキュメントをオーサリングする際に、Microsoft リポジトリで使用できる画像を使用します](/help/edge/using.md#integrate-assets-edge).
 
-* **ZIP アーカイブの抽出**:Experience Managerで管理される ZIP アーカイブおよび [ファイルを直接Experience Managerに抽出](/help/assets/manage-digital-assets.md#extract-zip-archives) ダウンロードせずに
+* **ZIP アーカイブの抽出**:Experience Managerで管理される ZIP アーカイブを選択する機能。 [ファイルのExperience Managerへの直接抽出](/help/assets/manage-digital-assets.md#extract-zip-archives) ダウンロードせずに。
 
   ![グループ用の項目をピン留め](/help/release-notes/assets/extract-archive.png)
 
@@ -95,15 +95,15 @@ ht-degree: 79%
 
 * **[ルールエディターでのカスタムエラーハンドラーによるエラー処理](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**：外部サービスから返されたエラーに応じて、カスタム関数を呼び出し、エンドユーザーに対してカスタマイズされた応答を提供できるようになりました。例えば、特定のエラーコードに対してバックエンドでカスタムワークフローを呼び出したり、サービスが停止していることを顧客に通知したりできます。
 
-* **[64 ビット版のAEM Forms Designer](/help/forms/installing-configuring-designer.md)**: 64 ビット版のAEM Forms Designer では、パフォーマンス、拡張性、メモリ管理の機能が強化され、フォーム作成エクスペリエンスが強化されます。 64 ビットアーキテクチャを使用すると、より大規模で複雑なプロジェクトに簡単に取り組むことができ、シームレスな設計ワークフローと最適化された効率を確保できます。 フォームデザインの機能を向上させ、この最先端リリースでAEM Forms Designer の将来を受け入れます。
+* **[64 ビット版のAEM Forms Designer](/help/forms/installing-configuring-designer.md)**:64 ビットバージョンのAEM Forms Designer では、パフォーマンス、スケーラビリティ、メモリ管理が強化され、フォーム作成のエクスペリエンスが強化されます。 64 ビットアーキテクチャを使用すると、さらに大規模で複雑なプロジェクトに簡単に取り組むことができ、シームレスな設計ワークフローと最適化された効率が保証されます。この最先端のリリースでフォームデザイン機能を強化し、AEM Forms Designer の未来を体現します。
 
 ### 早期導入プログラム {#forms-early-adopter}
 
 * **[DocAssurance API（通信 API の一部）を使用したドキュメントの保護](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API を使用すると、ドキュメントに署名および暗号化して、機密情報を保護できます。暗号化により、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセスできるようになります。この強化された保護層は、貴重なデータを信頼できない環境にさらすことなく、安心感ももたらします。Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
 
-  公式メール ID から `aem-forms-early-adopter-program@adobe.com` に送信して早期導入プログラムに参加し、機能へのアクセスをリクエストできます。
+  公式メール ID から `aem-forms-ea@adobe.com` に送信して早期導入プログラムに参加し、機能へのアクセスをリクエストできます。
 
-* **[ヘッドレスアダプティブForms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=ja)**：ヘッドレスアダプティブFormsを使用すると、開発者は、従来のグラフィカルユーザーインターフェイスを使用するのではなく、API を使用してアクセスし、操作できるインタラクティブフォームを作成、公開、管理できます。 ヘッドレスアダプティブフォームは以下の場合に役立ちます。
+* **[ヘッドレスアダプティブForms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=ja)**：ヘッドレスアダプティブ Formsを使用すると、開発者は、従来のグラフィカルユーザーインターフェイスではなく、API を介してアクセスおよび操作できるインタラクティブなフォームを作成、公開、管理できます。 ヘッドレスアダプティブフォームは以下の場合に役立ちます。
 
    * 高品質のマルチチャネルフォームを好みのプログラミング言語で作成
    * デスクトップおよびモバイルアプリ、web サイト、チャットアプリケーションにフォームをネイティブに統合
@@ -114,11 +114,11 @@ ht-degree: 79%
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
-### キャンペーン関連の URL パラメーターに対する新しい CDN キャッシュ動作 {#cache-url-params}
+### キャンペーン関連の URL パラメーターの新しい CDN キャッシュ動作 {#cache-url-params}
 
-新しい環境の場合、CDN は、マーケティングキャンペーンのパフォーマンスとキャッシュヒット率を高めるために、デフォルトでマーケティング関連のクエリパラメーターを削除します。 既存の環境は影響を受けません。 [詳細情報。](/help/implementing/dispatcher/caching.md#marketing-parameters)
+新規環境の場合、CDN は、マーケティングキャンペーンのパフォーマンスとキャッシュヒット率を高めるために、マーケティング関連のクエリパラメーターをデフォルトで削除します。 既存の環境は影響を受けません。 [詳細情報。](/help/implementing/dispatcher/caching.md#marketing-parameters)
 
-### トラフィックフィルタルール（WAF ルールを含む）アーリーアダプタプログラム {#waf-early-adopter}
+### トラフィックフィルタールール（WAF ルールを含む）早期導入プログラム {#waf-early-adopter}
 
 CDN でのトラフィックのフィルタリング基準：
 
