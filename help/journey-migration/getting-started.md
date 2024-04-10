@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service への移行ジャーニーの概要
 description: AEM as a Cloud Service への移行の基本事項を把握して、移行ジャーニーを開始します。
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: a4e02b64fba591ff6bd4f24e37e01dbbaa7f91cf
 workflow-type: tm+mt
 source-wordcount: '560'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ Cloud Service への移行ジャーニーには、次の段階が含まれます
 >id="aemcloud_cam_overview"
 >title="Cloud Acceleration Manager について"
 >abstract="Cloud Acceleration Manager は、Cloud Serviceの計画から運用開始まで、移行プロセス全体を通じて IT チームを導くように設計されたクラウドベースのアプリケーションです。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html?lang=ja#aem-moving-to-aem-guide" text="AEM as a Cloud Service への移行"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/getting-started#aem-moving-to-aem-guide" text="AEM as a Cloud Service への移行"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html?lang=ja" text="AEM Sites as a Cloud Service の主な変更点"
 
 このジャーニーで概要を説明する手順に加えて、アドビは、Cloud Service の計画から運用開始までの移行プロセスを通じて IT チームをガイドするクラウドベースのアプリケーションである Cloud Acceleration Manager を提供します。AEM as a Cloud Service への移行プロセスの各段階で役に立つアドビ推奨のベストプラクティス、ヒント、ドキュメントおよびツールを利用して移行を成功へ導くよう、チームをセットアップします。
