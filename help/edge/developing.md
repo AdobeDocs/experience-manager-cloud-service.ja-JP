@@ -3,10 +3,10 @@ title: Edge Delivery Services 向けの開発
 description: Edge Delivery Services を操作するために、ブロックを開発し、AEM プロジェクトをカスタマイズする方法について説明します。
 feature: Edge Delivery Services
 exl-id: c356c03c-af43-43a1-a14e-45f94ccb3970
-source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
+source-git-commit: eef58b59cd528743702e3d436acec02dbba58211
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 91%
+source-wordcount: '257'
+ht-degree: 100%
 
 ---
 
@@ -20,14 +20,14 @@ Edge 配信サービスは、ブロックの概念に基づいています。AEM
 
 AEM では、プロジェクトのボイラープレート内の製品の一部として標準ブロックが用意されています。このようなブロックには、見出し、テキスト、画像、リンク、リストなどが含まれます。
 
-<!--Please see the [Build section](/help/edge/developer/block-collection.md) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.-->
+ブロックの詳細と Edge Delivery Services 向けの開発方法については、Edge Delivery Services ドキュメントの[ビルド](/help/edge/developer/block-collection.md)の節を参照してください。
 
 ## Edge Delivery Services と GitHub {#github-edge}
 
 Edge Delivery Services では GitHub を活用しているので、GitHub リポジトリから直接コードを管理およびデプロイできます。
 
-作成者は、ドキュメントベースのオーサリングまたはユニバーサルエディターを使用したAEMでのコンテンツを使用してコンテンツを作成できます。 開発者は、作成者がコンテンツをどのように作成したかに関係なく、GitHub で CSS と JavaScript を使用してサイトの機能をカスタマイズできます。
+作成者は、ドキュメントベースのオーサリングを使用するか、ユニバーサルエディターを使用して AEM のコンテンツを作成できます。開発者は、作成者がコンテンツをどのように作成したかに関係なく、GitHub で CSS と JavaScript を使用してサイトの機能をカスタマイズできます。
 
 コンテンツのプレビューから実稼動環境まで、ブランチごとに web サイトが自動的に作成されます。GitHub リポジトリに配置したすべてのリソースは、ビルドプロセスなしで web サイト上で使用できます。
 
-<!--Please see the [Build section](/help/edge/developer/block-collection.md) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.-->
+ブロックの詳細と Edge Delivery Services 向けの開発方法については、Edge Delivery Services ドキュメントの[ビルド](/help/edge/developer/block-collection.md)の節を参照してください。

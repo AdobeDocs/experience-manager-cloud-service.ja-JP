@@ -2,10 +2,10 @@
 title: Edge Delivery Services プロジェクトを使用した AEM オーサリング用のコンテンツモデリング
 description: Edge Delivery Services プロジェクトを使用した AEM オーサリングにおけるコンテンツモデリングの仕組みと独自のコンテンツをモデル化する方法について説明します。
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
+source-git-commit: eef58b59cd528743702e3d436acec02dbba58211
 workflow-type: tm+mt
-source-wordcount: '2072'
-ht-degree: 80%
+source-wordcount: '2095'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Edge Delivery Services で AEM オーサリングを行うプロジェクトは�
 
 * [はじめに - 開発者向けチュートリアル](/help/edge/developer/tutorial.md)
 * [マークアップ、セクション、ブロック、自動ブロック](/help/edge/developer/markup-sections-blocks.md)
-  <!--* [Block Collection](/help/edge/developer/block-collection.md)-->
+* [ブロックコレクション](/help/edge/developer/block-collection.md)
 
 コンテンツのソースに依存しない方法で機能するような、説得力のあるコンテンツモデルを考え出すには、これらの概念を理解することが不可欠です。このドキュメントでは、AEM オーサリング用に特化して実装されている仕組みについて詳細を説明します。
 
@@ -109,19 +109,19 @@ Edge Delivery Servicesで AEM オーサリングを使用する場合、作成�
 
 * `core/franklin/components/block/v1/block` リソースタイプを使用する必要があります。これは、AEM のブロックロジックの汎用実装です。
 * ブロック名を定義する必要があります。ブロック名は、ブロックのテーブルヘッダーにレンダリングされます。
-   * ブロック名は、ブロックを修飾する適切なスタイルとスクリプトを取得するために使用されます。
+   * ブロック名は、ブロックを修飾する適切なスタイルとスクリプトを取得するために使用します。
 * [モデル ID](/help/implementing/universal-editor/field-types.md#model-structure) を定義できます。
-   * モデル ID は、コンポーネントのモデルへの参照で、作成者がプロパティレールで使用できるフィールドを定義します。
+   * モデル ID は、コンポーネントのモデルへの参照です。作成者がプロパティパネルで使用できるフィールドを定義します。
 * [フィルター ID](/help/implementing/universal-editor/customizing.md#filtering-components) を定義できます。
-   * フィルター ID はコンポーネントのフィルターへの参照です。このフィルターを使用すると、例えば、ブロックやセクションに追加できる子や、有効にする RTE 機能を制限するなどして、オーサリング動作を変更できます。
+   * フィルター ID はコンポーネントのフィルターへの参照です。これにより、ブロックやセクションに追加できる子を制限したり、有効にする RTE 機能を制限したりするなど、オーサリング動作を変更できます。
 
-ブロックがページに追加されると、これらの情報はすべてAEMに保存されます。 リソースタイプまたはブロック名が見つからない場合、そのブロックはページ上でレンダリングされません。
+ブロックがページに追加されると、この情報はすべて AEM に保存されます。リソースタイプまたはブロック名のいずれかが見つからない場合、そのブロックはページ上にレンダリングされません。
 
 >[!WARNING]
 >
->可能な限り、カスタムAEMコンポーネントを実装する必要もお勧めもありません。 AEM による Edge Delivery Services コンポーネントは十分であり、開発を容易にするために一定のガードレールを提供しています。
+>カスタム AEM コンポーネントを実装することは、可能ですが、必須ではなく、推奨もされません。AEM により提供される Edge Delivery Services 用コンポーネントは十分であり、開発を容易にするために一定のガードレールを提供しています。
 >
->AEMが提供するコンポーネントは、 [helix-html2md](https://github.com/adobe/helix-html2md) Edge Delivery Servicesおよびで公開する場合 [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) （ユニバーサルエディターでページを読み込む場合） マークアップはAEMとシステムの他の部分との間の安定した契約であり、カスタマイズはできません。 このため、プロジェクトではコンポーネントを変更しないでください。また、カスタムコンポーネントを使用しないでください。
+>AEM が提供するコンポーネントは、Edge Delivery Services に公開時に [helix-html2md](https://github.com/adobe/helix-html2md) によって、ユニバーサルエディターでページ読み込み時に [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) によって使用できるマークアップをレンダリングします。マークアップは、AEM とシステムの他の部分との間の安定した契約であり、カスタマイズはできません。このため、プロジェクトではコンポーネントを変更したり、カスタムコンポーネントを使用したりしないでください。
 
 ### ブロック構造 {#block-structure}
 
@@ -147,7 +147,7 @@ Edge Delivery Servicesで AEM オーサリングを使用する場合、作成�
 }
 ```
 
->[!TAB Markup]
+>[!TAB マークアップ]
 
 ```html
 <div class="hero">
@@ -205,7 +205,7 @@ Edge Delivery Servicesで AEM オーサリングを使用する場合、作成�
 }
 ```
 
->[!TAB Markup]
+>[!TAB マークアップ]
 
 ```html
 <div class="featured-articles">
@@ -271,7 +271,7 @@ Edge Delivery Servicesで AEM オーサリングを使用する場合、作成�
 }
 ```
 
->[!TAB Markup]
+>[!TAB マークアップ]
 
 ```html
 <div class="our-partners">
@@ -323,7 +323,7 @@ Edge Delivery Servicesで AEM オーサリングを使用する場合、作成�
 
 [ブロック構造の仕組みがわかれば、](#block-structure)AEMで 1 対 1 で保持されるコンテンツを配信層にマッピングするコンテンツモデルを作成できます。
 
-どのプロジェクトでも初期段階で、すべてのブロックについて、コンテンツモデルを慎重に検討する必要があります。作成者がブロックの実装やスタイルを再利用しながら、切り替えたり組み合わせたりできるようにするには、コンテンツソースやオーサリングエクスペリエンスに依存しないようにする必要があります。詳細と一般的なガイダンスについては、 [David&#39;s Model (take 2).](https://www.aem.live/docs/davidsmodel) <!--More specifically, the [block collection](/help/edge/developer/block-collection.md) contains a extensive set of content models for specific use cases of common user interface patterns.-->
+どのプロジェクトでも初期段階で、すべてのブロックについて、コンテンツモデルを慎重に検討する必要があります。作成者がブロックの実装やスタイルを再利用しながら、切り替えたり組み合わせたりできるようにするには、コンテンツソースやオーサリングエクスペリエンスに依存しないようにする必要があります。詳細と一般的なガイダンスについては、[David のモデル（テイク 2）にあります。](https://www.aem.live/docs/davidsmodel)具体的には、[ブロックコレクション](/help/edge/developer/block-collection.md)は、一般的なユーザーインターフェイスのパターンにおける特定の使用例に対応する、広範なコンテンツモデルのセットを含んでいます。
 
 Edge Delivery Services を使用した AEM オーサリングでは、リッチテキストのようにコンテキスト内でセマンティックマークアップを編集するのではなく、複数のフィールドで構成されるフォームを使用して情報がオーサリングされる場合に、魅力的なセマンティックコンテンツモデルをどのように提供するかという問題が生じます。
 
@@ -351,7 +351,7 @@ Edge Delivery Services を使用した AEM オーサリングでは、リッチ�
 
 #### フィールドの折りたたみ {#field-collapse}
 
-フィールドの折りたたみは、サフィックスを使用する命名規則に基づいて、複数のフィールド値を 1 つのセマンティック要素に組み合わせるメカニズムです `Title`, `Type`, `MimeType`, `Alt`、および `Text` （すべて大文字と小文字を区別）。 これらのサフィックスで終わるプロパティは、値と見なされず、別のプロパティの属性と見なされます。
+フィールドの折りたたみは、サフィックスの `Title`、`Type`、`MimeType`、`Alt`、`Text`（すべて大文字と小文字を区別）を使用する命名規則に基づいて、複数のフィールド値を 1 つのセマンティック要素に組み合わせるメカニズムです。これらのサフィックスで終わるプロパティは、値と見なされず、別のプロパティの属性と見なされます。
 
 ##### 画像 {#image-collapse}
 
@@ -366,7 +366,7 @@ Edge Delivery Services を使用した AEM オーサリングでは、リッチ�
 }
 ```
 
->[!TAB Markup]
+>[!TAB マークアップ]
 
 ```html
 <picture>
@@ -397,9 +397,9 @@ Edge Delivery Services を使用した AEM オーサリングでは、リッチ�
 }
 ```
 
->[!TAB Markup]
+>[!TAB マークアップ]
 
-No `linkType`、または `linkType=default`
+`linkType` なし、または `linkType=default`
 
 ```html
 <a href="https://www.adobe.com" title="Navigate to adobe.com">adobe.com</a>
@@ -444,7 +444,7 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 }
 ```
 
->[!TAB Markup]
+>[!TAB マークアップ]
 
 ```html
 <h2>Getting started</h2>
@@ -462,9 +462,9 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 [フィールドの折りたたみ](#field-collapse)は、複数のプロパティを単一のセマンティック要素に組み合わせることですが、要素のグループ化とは、複数のセマンティック要素を 1 つのセルに連結することです。これは、作成者が作成できる要素のタイプと数を制限する必要がある使用例で特に役立ちます。
 
-例えば、ティーザーコンポーネントを使用すると、作成者は、サブタイトル、タイトルおよび 1 つの段落の説明のみを作成でき、最大 2 つのコールトゥアクションボタンを組み合わせることができます。 これらの要素をグループ化すると、セマンティックマークアップが生成され、追加の操作を行わずにスタイルを設定できます。
+例えば、ティーザーコンポーネントを使用すると、作成者は、サブタイトル、タイトル、最大 2 つのコールトゥアクションボタンと組み合わせた 1 つの段落の説明のみを作成できます。これらの要素をグループ化すると、セマンティックマークアップが生成され、追加の操作を行わずにスタイルを設定できます。
 
-要素のグループ化では、命名規則を使用します。グループ名は、グループ内の各プロパティとアンダースコアで区切られます。 グループ内のプロパティのフィールド折りたたみは、前述のように機能します。
+要素のグループ化では、グループ名がグループ内の各プロパティからアンダースコアで区切られる命名規則が使用されます。グループ内のプロパティのフィールドの折りたたみは、前述のように機能します。
 
 >[!BEGINTABS]
 
@@ -488,7 +488,7 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 }
 ```
 
->[!TAB Markup]
+>[!TAB マークアップ]
 
 ```html
 <div class="teaser">
@@ -624,13 +624,13 @@ AEM as a Cloud Service では、パスごとまたはパスパターンごとに
 
 ### ページプロパティ {#page-properties}
 
-AEMで使用できるデフォルトのページプロパティの多くは、ドキュメント内の各ページメタデータにマッピングされます。 例えば、を含む場合 `title`, `description`, `robots`, `canonical url` または `keywords`. 一部のAEM固有のプロパティも使用できます。
+AEM で使用できるデフォルトのページプロパティの多くは、ドキュメント内の各ページのメタデータにマッピングされます。これには、`title`、`description`、`robots`、`canonical url` または `keywords` などが含まれます。次の AEM 固有のプロパティもいくつか使用できます。
 
-* `cq:lastModified` as `modified-time` （ISO8601 形式）
-* ドキュメントが最後に `published-time` （ISO8601 形式）
-* `cq:tags` as `cq-tags` タグ ID のコンマ区切りリストとして。
+* ISO8601 形式の `modified-time` としての `cq:lastModified`
+* ISO8601 形式の `published-time` としてドキュメントが最後に公開された時刻
+* `cq-tags` としての `cq:tags`、タグ ID のコンマ区切りリスト。
 
-また、カスタムページメタデータのコンポーネントモデルを定義し、AEM Sitesのページのプロパティダイアログの「 」タブとして作成者が使用できるようにします。
+また、カスタムページメタデータのコンポーネントモデルを定義することもできます。このモデルは、AEM Sites のページのプロパティダイアログのタブとして作成者が使用できます。
 
 これを行うには、ID `page-metadata` を持つコンポーネントモデルを作成します。
 

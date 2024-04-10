@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
+source-git-commit: eef58b59cd528743702e3d436acec02dbba58211
 workflow-type: tm+mt
-source-wordcount: '4842'
-ht-degree: 95%
+source-wordcount: '4857'
+ht-degree: 99%
 
 ---
 
@@ -224,7 +224,7 @@ ht-degree: 95%
    + [運用開始後](/help/journey-migration/post-go-live.md)
    + [Experience Manager as a Cloud Service への移行ガイド（パートナー向け）](/help/journey-migration/getting-started-partners.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
-      + Cloud Acceleration Manager{#introduction-cam} の概要
+      + Cloud Acceleration Manager {#introduction-cam} の概要
          + [概要](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
          + [メリット](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)
       + Cloud Acceleration Manager の使用 {#using-cam}
@@ -268,10 +268,10 @@ ht-degree: 95%
       + [AEM Modernization Tools](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
    + [AEM Cloud Service の AEM Sites の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
-   + オーサリング{#authoring}
+   + オーサリング {#authoring}
       + [ページのオーサリングのクイックスタートガイド](/help/sites-cloud/authoring/quick-start.md)
       + [基本操作](/help/sites-cloud/authoring/basic-handling.md)
-      + [オーサリングと公開](/help/sites-cloud/authoring/author-publish.md)
+      + [オーサリングとパブリッシング](/help/sites-cloud/authoring/author-publish.md)
       + [オーサリング方法](/help/sites-cloud/authoring/authoring-methods.md)
       + [検索](/help/sites-cloud/authoring/search.md)
       + [アカウント環境の設定 ](/help/sites-cloud/authoring/account-environment.md)
@@ -279,8 +279,8 @@ ht-degree: 95%
       + [コンポーネントコンソール](/help/sites-cloud/authoring/components-console.md)
       + [パスの選択](/help/sites-cloud/authoring/path-selection.md)
       + [トラブルシューティング](/help/sites-cloud/authoring/troubleshooting.md)
-      + サイトコンソール {#sites-console}
-         + [サイトコンソール](/help/sites-cloud/authoring/sites-console/introduction.md)
+      + Sites コンソール {#sites-console}
+         + [Sites コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)
          + [コンソールサイドパネル](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
          + [新しいサイトの作成](/help/sites-cloud/authoring/sites-console/create-site.md)
          + [ページの整理](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
@@ -295,7 +295,7 @@ ht-degree: 95%
          + [タグの使用](/help/sites-cloud/authoring/sites-console/tags.md)
          + [プログレッシブ web アプリケーション機能の有効化](/help/sites-cloud/authoring/sites-console/enable-pwa.md)
          + [キーボードショートカット](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)
-         + [CSV ファイルへの書き出し ](/help/sites-cloud/authoring/sites-console/csv-export.md)
+         + [CSV ファイルへの書き出し](/help/sites-cloud/authoring/sites-console/csv-export.md)
       + ページエディター {#page-editor}
          + [ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)
          + [エディターサイドパネル](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
@@ -308,7 +308,7 @@ ht-degree: 95%
          + [アクセシブルなコンテンツ（WCAG 2.1 適合）の作成](/help/sites-cloud/authoring/page-editor/accessible-content.md)
          + [キーボードショートカット](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [スタイルシステム](/help/sites-cloud/authoring/page-editor/style-system.md)
-         + [取り消し/やり直しの制限](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+         + [取り消し／やり直しの制限事項](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + ユニバーサルエディター {#universal-editor}
          + [ユニバーサルエディターを使用したコンテンツのオーサリング](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [ユニバーサルエディターを使用したコンテンツの公開](/help/sites-cloud/authoring/universal-editor/publishing.md)
@@ -488,7 +488,7 @@ ht-degree: 95%
       + [マークダウン](/help/assets/content-fragments/content-fragments-markdown.md)
       + [構造ツリー](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [プレビュー - JSON 表現](/help/assets/content-fragments/content-fragments-json-preview.md)
-      + [MSM を使用したコンテンツフラグメントの再利用（アセット用）](/help/assets/content-fragments/content-fragments-msm.md)
+      + [MSM（for Assets）を使用したコンテンツフラグメントの再利用](/help/assets/content-fragments/content-fragments-msm.md)
    + Dynamic Media {#dynamicmedia}
       + Dynamic Media ジャーニー：基本知識 {#dm-journey}
          + [第 1 部：Dynamic Media とは - ユースケース - システム内でのアセットのフロー](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -631,8 +631,8 @@ ht-degree: 95%
             + [繰り返し可能なセクションを使用したフォームの作成](/help/forms/create-forms-repeatable-sections.md)
             + [アダプティブフォームの送信アクションの設定](/help/forms/configure-submit-actions-core-components.md)
             + [Azure Blob Storage にアダプティブフォームを送信する](/help/forms/configure-submit-action-azure-blob-storage.md)
-            + [アダプティブフォームをMicrosoftに送信する](/help/forms/configure-submit-action-onedrive.md)
-            + [アダプティブフォームのMicrosoftへの接続](/help/forms/configure-submit-action-sharepoint.md)
+            + [Microsoft へのアダプティブフォームの送信](/help/forms/configure-submit-action-onedrive.md)
+            + [Microsoft へのアダプティブフォームの接続](/help/forms/configure-submit-action-sharepoint.md)
             + [AEM アダプティブフォームと AEM ワークフローを統合する](/help/forms/configure-submit-action-workflow.md)
             + [アダプティブフォームの REST エンドポイント送信アクションへの送信を設定する](/help/forms/configure-submit-action-restpoint.md)
             + [アダプティブフォームのメール送信アクションの送信を設定する](/help/forms/configure-submit-action-send-email.md)
@@ -640,9 +640,9 @@ ht-degree: 95%
             + [アダプティブフォームにカスタムエラーハンドラーの追加](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [コアコンポーネントに基づくアダプティブフォームのロケールの追加](/help/forms/supporting-new-language-localization-core-components.md)
             + [カスタム関数の作成と使用](/help/forms/create-and-use-custom-functions.md)
-            + [コアコンポーネントに基づいてアダプティブフォームにルールを追加する](/help/forms/rule-editor-core-components.md)
-            + [アダプティブフォームにバージョン、コメント、注釈を追加する](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-            + [アダプティブFormsを比較](/help/forms/compare-forms.md)
+            + [コアコンポーネントに基づくアダプティブフォームへのルールの追加](/help/forms/rule-editor-core-components.md)
+            + [アダプティブフォームへのバージョン、コメント、注釈の追加](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+            + [アダプティブFormsの比較](/help/forms/compare-forms.md)
       + 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
          + PDF フォームのアダプティブフォームへの変換 {#afcs}
             + [自動フォーム変換サービスの概要](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ja)
@@ -700,7 +700,7 @@ ht-degree: 95%
       + [Forms Designer のインストールと設定](/help/forms/installing-configuring-designer.md)
       + [Forms Designer を使用したテンプレートの作成](/help/forms/use-forms-designer.md)
       + [PDF ドキュメントでのカスタムフォントの使用](/help/forms/use-custom-fonts.md)
-      + [サポートされているフォントの一覧 (PDFドキュメント )](/help/forms/supported-out-of-the-box-fonts.md)
+      + [PDF ドキュメントでサポートされるフォントのリスト](/help/forms/supported-out-of-the-box-fonts.md)
       + [既知の問題、ベストプラクティス、よくある質問](/help/forms/communications-known-issues-limitations.md)
    + トランザクションレポート {#using-communications}
       + [トランザクションレポート請求可能 API](/help/forms/transaction-reports-billable-apis.md)
@@ -732,7 +732,7 @@ ht-degree: 95%
       + [Screens コンテンツプロバイダーの使用](/help/screens-cloud/configuring/using-screens-content-provider.md)
       + [Screens ビデオレンディションの作成](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
       + [Screens as a Cloud Service の Dispatcher の設定](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
-      + [Screens のタイムラインビューの設定as a Cloud Service](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
+      + [Screens as a Cloud Service のタイムライン表示の設定](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
    + コンテンツの作成 {#create-content}
       + [Screens コンテンツプロバイダーでのプロジェクトの作成と管理](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
       + [Screens コンテンツプロバイダーでのチャネルの作成と管理](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
@@ -789,7 +789,7 @@ ht-degree: 95%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [移行](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
-+ AEMとEdge Delivery Services {#edge-delivery}
++ Edge Delivery Services {#edge-delivery} を使用した AEM
    + [Edge Delivery Services の概要](/help/edge/overview.md)
    + [Edge 配信の使用](/help/edge/using.md)
    + [開発者用入門ガイド](/help/edge/edge-dev-getting-started.md)
@@ -797,12 +797,13 @@ ht-degree: 95%
    + [Edge 配信向けのコンテンツの公開](/help/edge/publishing.md)
    + [Edge 配信向けの開発](/help/edge/developing.md)
    + [コンテンツモデリング](/help/edge/content-modeling.md)
-   + [ブロックを作成する](/help/edge/create-block.md)
+   + [ブロックの作成](/help/edge/create-block.md)
    + [表形式のデータとスプレッドシート](/help/edge/tabular-data.md)
    + [既存のプロジェクトと Edge 配信](/help/edge/existing-projects.md)
    + Edge 配信アプリケーションの作成 {#build}
       + [はじめに - 開発者向けチュートリアル](/help/edge/developer/tutorial.md)
       + [プロジェクトの分析](/help/edge/developer/anatomy-of-a-franklin-project.md)
+      + [ブロックコレクション](/help/edge/developer/block-collection.md)
       + [スプレッドシート](/help/edge/developer/spreadsheets.md)
       + [Forms](/help/edge/developer/forms.md)
       + [インデックス作成](/help/edge/developer/indexing.md)
@@ -825,23 +826,25 @@ ht-degree: 95%
       + [Akamai の設定](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Fastly の設定](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [リダイレクト](/help/edge/docs/redirects.md)
-   + Building Edge Delivery Forms {#build-forms}
+   + Edge Delivery Forms {#build-forms} の作成
       + [概要](/help/edge/docs/forms/overview.md)
       + はじめに {#getting-started-eds-forms}
          + [はじめに](/help/edge/docs/forms/tutorial.md)
-         + [Google Sheet またはMicrosoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
-         + [データの受け入れを開始するためのGoogleシートまたはMicrosoft Excel ファイルのセットア&#x200B;ップ](/help/edge/docs/forms/submit-forms.md)
-         + [フォームを発行してデータの収集を開始する](/help/edge/docs/forms/publish-forms.md)
-         + [フォームフィールドに検証機能を追加する](/help/edge/docs/forms/validate-forms.md)
-         + [フォームの外観をカスタマイズす&#x200B;る](/help/edge/docs/forms/style-theme-forms.md)
-         + [ルールを使用してフォームに動的な動作を追加する](/help/edge/docs/forms/rules-forms.md)
-         + [フォーム送信後にカスタムの「ありがとうございます」メッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
+         + [Google Sheet または Microsoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
+         + [データの受け入れを開始するための Google Sheets または Microsoft Excel ファイルの設定](/help/edge/docs/forms/submit-forms.md)
+         + [フォームを公開してデータの収集を開始](/help/edge/docs/forms/publish-forms.md)
+         + [フォームフィールドへの検証機能の追加](/help/edge/docs/forms/validate-forms.md)
+         + [URL からフォームへのオプションの読み込み](/help/edge/docs/forms/load-options-from-url.md)
+         + [フォームの外観のカスタマイズ](/help/edge/docs/forms/style-theme-forms.md)
+         + [ルールを使用してフォームに動的な動作を追加](/help/edge/docs/forms/rules-forms.md)
+         + [フォーム送信後にカスタムのお礼のメッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
       + 機能 {#advanced-features-eds-forms}
          + [フォームフラグメント](/help/edge/docs/forms/form-fragments.md)
-         + [フォームに繰り返し可能なセクションを&#x200B;追加](/help/edge/docs/forms/repeatable-forms.md)
+         + [フォームへの繰り返し可能なセクションの追加](/help/edge/docs/forms/repeatable-forms.md)
          + [翻訳](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [カスタムコンポーネント](/help/edge/docs/forms/custom-components-forms.md)
+         + [フォームのリアルタイムユーザー監視](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + 参照 {#forms-references}
          + [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
    + Edge 配信のリソース {#resources}
@@ -854,7 +857,7 @@ ht-degree: 95%
       + [Admin API](https://www.aem.live/docs/admin.html)
       + [AEM ステータス](https://www.aemstatus.net)
       + ツール {#tools}
-         + [AEM SidekickChrome 拡張機能](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [AEM Sidekick Chrome 拡張機能](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Github ボット](https://github.com/apps/aem-code-sync)
          + [監査ログ](/help/edge/docs/auditlog.md)
 + ヘッドレス {#headless}
@@ -979,7 +982,7 @@ ht-degree: 95%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)
-      + [高度なネットワーク機能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
+      + [高度なネットワーク機能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=ja)
       + SSL 証明書 {#manage-ssl-certificates}
          + [はじめに](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
@@ -1104,7 +1107,7 @@ ht-degree: 95%
       + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
       + [ContextHub でのセグメント化の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=ja)
    + AEM as a Cloud Service の設定と拡張 {#configuring-and-extending}
-      + App Builder を使用した AEM の拡張 {#app-builder}
+      + App Builder を使用した AEM の拡張{#app-builder}
          + [Adobe Developer App Builder を使用した AEM の拡張](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [App Builder の概要](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe 開発者コンソール](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
@@ -1178,9 +1181,3 @@ ht-degree: 95%
    + アクセシビリティ {#accessibility}
       + [AEM as a Cloud Service と web アクセシビリティのガイドライン](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1 クイックガイド](/help/compliance/accessibility/quick-guide-wcag.md)
-
-
-<!--
-Temporarily remove:
-    + [Block Collection](/help/edge/developer/block-collection.md)
--->
