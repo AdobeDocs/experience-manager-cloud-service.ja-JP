@@ -6,25 +6,25 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
+source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
 workflow-type: tm+mt
 source-wordcount: '1255'
-ht-degree: 85%
+ht-degree: 98%
 
 ---
 
 # Adobe Workfront Fusion へのアダプティブフォームの送信
 
-<span class="preview">機能は、早期導入プログラムで利用できます。早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID で aem-forms-early-adopter-program@adobe.com までメールをお送りください。</span>
+<span class="preview">機能は、早期導入プログラムで利用できます。公式メール ID からaem-forms-ea@adobe.comに書き込んで、早期導入プログラムに参加し、機能へのアクセスをリクエストできます。 </span>
 
 [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=ja) は、ドキュメント承認ワークフロー、メールのフィルタリングや並べ替えなど、同じタスクを繰り返すプロセスを自動化し、繰り返しタスクではなく新しいタスクに焦点を当てることができます。Adobe Workfront Fusion には、複数のシナリオが含まれています。シナリオは、アプリケーションと web サービス間のデータ転送を実行する一連のモジュールで構成されます。シナリオでは、様々な手順（モジュール）を追加してタスクを自動化します。
 
 例えば、Workfront Fusion を使用すると、シナリオを作成して、アダプティブフォームでデータを収集し、データを処理し、データをアーカイブ用にデータストアに送信できます。シナリオを設定すると、ユーザーがフォームに入力するたびに、Workfront Fusion は自動的にタスクを実行し、データストアをシームレスに更新します。
 
-AEM Forms as a Cloud Serviceには、アダプティブフォームをAdobe Workfront Fusion に接続して送信するための OOTB コネクタが用意されています。 フォームをAdobe Workfront Fusion に送信すると、次のような利点があります。
-* これにより、フォーム送信データをWorkfront Fusion ワークフローにシームレスに転送できるようになりました。
-* これにより、フォーム送信によってトリガーされる様々なタスクを自動化できます。 これには、手動の介入なしに、プロジェクトの開始、特定のチームメンバーへのタスクの割り当て、通知の送信、プロジェクトステータスの更新などが含まれます。
-* Workfront Fusion で取り込まれたすべてのフォーム送信は、プロジェクト関連の情報の単一の情報源となります。
+AEM Forms as a Cloud Service には、アダプティブフォームを Adobe Workfront Fusion に接続して送信するための OOTB コネクタが用意されています。フォームを Adobe Workfront Fusion に送信すると、次のようなメリットがあります。
+* フォーム送信データを Workfront Fusion ワークフローへとシームレスに転送できるようになりました。
+* フォーム送信によってトリガーされる様々なタスクを自動化するのに役立ちます。これには、プロジェクトの開始、特定のチームメンバーへのタスクの割り当て、通知の送信、プロジェクトステータスの更新などが含まれます。これらはすべて手動介入なしで実行できます。
+* Workfront Fusion 内で取り込まれたすべてのフォーム送信では、プロジェクト関連情報の信頼できる単一の情報源を提供します。
 
 
 <!--  AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.-->
@@ -33,24 +33,24 @@ AEM Forms as a Cloud Serviceには、アダプティブフォームをAdobe Work
 
 ## AEM Forms と Adobe Workfront Fusion を統合する前提条件 {#prerequisites}
 
-Workfront Fusion とAEM Formsの間の接続を確立するには、次が必要です。
+Workfront Fusion と AEM Forms の間の接続を確立するには、以下が必要です。
 
-* 有効な [WorkfrontとWorkfront Fusion ライセンス](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=ja).
+* 有効な [Workfront および Workfront Fusion ライセンス](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=ja)。
 * [サービス資格情報を取得する](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ja)ために[開発者コンソール](https://my.cloudmanager.adobe.com/)へのアクセス権を持つ AEM ユーザー。
 
 ## AEM Forms と Adobe Workfront Fusion の統合
 
 ### 1. Workfront シナリオの作成 {#workflow-scenario}
 
-Workfrontシナリオを作成するには、次の手順を実行します。
+Workfront シナリオを作成するには、次の手順に従います。
 
-1. [シナリオの作成](#create-scenario)
-1. [シナリオへの Web フックの追加](#add-webhook)
-1. [Web フックに接続を追加する](#add-connection)
+1. [シナリオを作成](#create-scenario)
+1. [シナリオに web フックを追加](#add-webhook)
+1. [Web フックに接続を追加](#add-connection)
 
-#### シナリオの作成 {#create-scenario}
+#### シナリオを作成 {#create-scenario}
 
-シナリオを作成するには、次の手順に従います。
+シナリオを作成するには：
 1. [Workfront Fusion アカウント](https://app-qa.workfrontfusion.com/)にログインします。
 1. 左側のパネルの「**[!UICONTROL シナリオ]**」![共有アイコン](/help/forms/assets/Smock_ShareAndroid_18_N.svg)をクリックします。
 1. ページの右上隅にある「**[!UICONTROL 新規シナリオを作成]**」をクリックします。新しいシナリオを作成するページが画面に表示されます。
@@ -67,7 +67,7 @@ Workfrontシナリオを作成するには、次の手順を実行します。
 
 1. **[!UICONTROL フォームイベントの監視]**&#x200B;ダイアログボックスを選択します。Web フックを追加するウィンドウが表示されます。
 
-#### ウェブフックの追加 {#add-webhook}
+#### Web フックを追加 {#add-webhook}
 
 ![Web フックの追加](/help/forms/assets/workfront-add-webhook.png)
 
@@ -82,7 +82,7 @@ Web フックを追加するには、次の手順に従います。
 
 1. 「**[!UICONTROL 追加]**」をクリックして、新しい接続を追加します。**[!UICONTROL 接続を作成]**&#x200B;ダイアログボックスが表示されます。
 
-#### Webhook への接続の追加 {#add-connection}
+#### Web フックに接続を追加 {#add-connection}
 
 ![接続の追加](/help/forms/assets/workfront-add-connection.png)
 
@@ -133,7 +133,7 @@ Web フックを追加するには、次の手順に従います。
 1. 作成した接続の&#x200B;**[!UICONTROL 接続]**&#x200B;をドロップダウンリストから選択します。
 1. 「**[!UICONTROL 保存]**」をクリックします。
 1. 「**[!UICONTROL OK]**」をクリックして、シナリオの変更を保存します。
-1. シナリオを有効にするには、シナリオエディターでオン/オフ切り替えボタンをクリックします。
+1. シナリオをアクティブ化するには、シナリオエディターのオン／オフ切替スイッチボタンをクリックします。
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ Web フックを追加するには、次の手順に従います。
 
 ### 2. Workfront Fusion 用のアダプティブフォームの送信アクションの設定
 
-Workfront Fusion の送信アクションは、次の目的で設定できます。
+Workfront Fusion 用の送信アクションを、次に対して設定できます。
 * [新規のアダプティブフォーム](#new-af-submit-action)
 * [既存のアダプティブフォーム](#existing-af-submit-action)
 
