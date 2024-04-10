@@ -3,10 +3,10 @@ title: コアコンポーネントに基づいてアダプティブフォーム�
 description: アダプティブフォームに新しいロケールを追加する方法を説明します。
 feature: Adaptive Forms, Core Components
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
+source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
+workflow-type: tm+mt
 source-wordcount: '1333'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 | 基盤コンポーネント | [ここをクリックしてください](supporting-new-language-localization.md) |
 | コアコンポーネント | この記事 |
 
-<span class="preview"> 右から左へ記述する言語サポート機能は、早期導入プログラムで利用できます。早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID から aem-forms-early-adopter-program@adobe.com までメールをお送りください。</span>
+<span class="preview"> 右から左へ記述する言語サポート機能は、早期導入プログラムで利用できます。公式メール ID からaem-forms-ea@adobe.comに書き込んで、早期導入プログラムに参加し、機能へのアクセスをリクエストできます。 </span>
 
 AEM Forms が標準でサポートしているロケールは、英語（en）、スペイン語（es）、フランス語（fr）、イタリア語（it）、ドイツ語（de）、日本語（ja）、ブラジルポルトガル語（pt-br）、中国語（zh-tn）、台湾中国語（zh-tw）、韓国語（ko-kr）です。その他のロケール（ヒンディー語（hi_IN）など）のサポートを追加することもできます。また、これらのロケールを追加すると、右横書き（RTL）言語（アラビア語、ペルシア語、ウルドゥー語など）でアダプティブフォームを表示することもできます。
 
