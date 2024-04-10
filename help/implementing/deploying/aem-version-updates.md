@@ -1,90 +1,103 @@
 ---
 title: AEM バージョンのアップデート
-description: Adobe Experience Manager(AEM)as a Cloud Serviceで継続的な統合および配信 (CI/CD) を使用して、プロジェクトを最新バージョンに保つ方法を説明します。
+description: Adobe Experience Manager (AEM) as a Cloud Service で継続的統合および継続的配信（CI／CD）を使用して、プロジェクトを最新バージョンに保つ方法について説明します。
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 9bfea65c07da5da044df8f698e409eab5c4320fb
+source-git-commit: 72fc611e006f80fdda672f08b0b795432f5899e2
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 16%
+source-wordcount: '970'
+ht-degree: 77%
 
 ---
 
 
 # AEM バージョンのアップデート {#aem-version-updates}
 
-Adobe Experience Manager(AEM)as a Cloud Serviceで継続的な統合および配信 (CI/CD) を使用して、プロジェクトを最新バージョンに保つ方法を説明します。
+Adobe Experience Manager (AEM) as a Cloud Service で継続的統合および継続的配信（CI／CD）を使用して、プロジェクトを最新バージョンに保つ方法について説明します。
 
 ## CI／CD {#ci-cd}
 
 AEM as a Cloud Service では、継続的統合および継続的配信（CI／CD）を使用して、プロジェクトを確実に最新の AEM バージョンで稼働できます。このプロセスは、ユーザーに混乱を与えることなく、実稼動、ステージング、開発の各インスタンスをシームレスに更新します。
 
-インスタンスが自動的に更新される前に、新しいAEMメンテナンスリリースが 3 ～ 5 日前に公開されています。 この期間中は、オプションで [トリガーインスタンスの開発用の手動更新](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). この期間が経過すると、バージョンの更新が最初に開発環境に自動的に適用されます。 更新が成功すると、更新プロセスはステージインスタンスと実稼動インスタンスに進みます。 開発インスタンスとステージングインスタンスは、自動品質ゲートとして機能し、カスタムで作成されたテストは、実稼動環境にアップデートが適用される前に実行されます。
+>[!NOTE]
+> 開発インスタンスは既に自動的に更新されているので、で開発インスタンスの手動更新を利用できない場合があります _一部_ /件のプログラム。 この機能は自動更新に切り替えられています。
+
+インスタンスが自動的に更新される前に、新しい AEM メンテナンスリリースが 3 ～ 5 日前に公開されています。この間、開発インスタンスは自動的に更新される場合があります。利用できる場合は、オプションで更新することもできます。 [開発インスタンス用のアップデートのトリガー](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). バージョンのアップデートは、最初に自動的に開発環境に適用されます。 更新が成功すると、更新プロセスはステージングインスタンスと実稼動インスタンスに進みます。開発インスタンスとステージングインスタンスは、自動品質ゲートとして機能し、カスタムで作成されたテストは、実稼動環境に更新が適用される前に実行されます。
+
+### NIMU （非割り込みメンテナンスアップデート） {#nimu}
+
+非割り込み型のメンテナンスアップデートは、顧客のパイプラインを使用せずに適用される自動更新です。
+NIMU を通じて、AEM バージョンの更新がスケジュールされている場合や進行中の場合でも、お客様はいつでもパイプラインを使用できます。また、メンテナンスアップデートはカスタマーパイプライン実行履歴に表示されなくなるので、コードのデプロイメント履歴を追跡しやすくなります。
+
+#### アクティビティの更新
+
+以前と同様に、Cloud Manager の UI 環境パネルを使用して、環境ごとに現在のAEMのバージョンを確認できます。 パイプラインで使用される品質ゲートと同じ品質ゲートは、顧客側で作成したテストを含め、メンテナンス更新を妨げることなく使用されます。
+Cloud Manager UI 通知は、プログラムの環境に非破壊的なメンテナンス更新が適用されるたびに送信されます。 メールに送信するように設定することもできます。
 
 >[!NOTE]
 >
-> 注意：開発環境の自動更新は、2023 年にすべてのお客様に対して段階的に有効になります。 開発環境が自動的に更新されない場合は、手動更新を使用して、ステージ環境および実稼動環境との同期を維持できます。
+> メモ：2024 年には、すべてのお客様に対して、割り込まないメンテナンスアップデートが段階的に有効になる予定です。
 
 
 ## 更新のタイプ {#update-types}
 
-AEMバージョンのアップデートは、次の 2 種類があります。
+AEM バージョンの更新には、次の 2 種類があります。
 
 * [**AEM メンテナンスアップデート**](/help/release-notes/maintenance/latest.md)
 
-   * 最新のバグ修正やセキュリティ更新など、主にメンテナンス目的です。
+   * この更新は主にメンテナンスを目的としており、最新のバグ修正やセキュリティ更新などを含みます。
    * 変更は定期的に適用されるので、影響は最小限に抑えられます。
 
-* [**新機能アップデート**](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [**AEM機能のアクティベーション**](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-   * 予測可能な月次スケジュールでリリースされます。
+   * この更新は予測可能な月次スケジュールでリリースされます。
 
 >[!NOTE]
 >
-> の毎月のリリースの主な日付を確認します。 [Experience Managerリリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja#aem-as-cloud-service) リリースの準備を整えるために、主要なアクティビティの準備をするために、カレンダーにマークを付けます。
+> [Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja#aem-as-cloud-service)の月次リリースの主な日付を確認し、リリースの準備に関する主要なアクティビティに備えるためにカレンダーをマークします。
 
 ## 更新の失敗 {#update-failure}
 
-AEM のアップデートは、複数のステップを含む集中的かつ完全に自動化された製品検証パイプラインを経て行われるため、実稼働環境にあるシステムへのサービスが中断されることはありません。ヘルスチェックは、アプリケーションのヘルスを監視するために使用されます。AEMのas a Cloud Serviceアップデート中にこれらのチェックが失敗した場合、リリースは続行されず、アップデートがこの予期しない動作を引き起こした原因をAdobeが調べます。
+AEM のアップデートは、複数のステップを含む集中的かつ完全に自動化された製品検証パイプラインを経て行われるため、実稼働環境にあるシステムへのサービスが中断されることはありません。ヘルスチェックは、アプリケーションのヘルスを監視するために使用されます。AEM as a Cloud Service のアップデート中にこれらのチェックが失敗した場合、リリースは続行されず、アップデートがこの予期しない動作を引き起こした原因をアドビが調査します。
 
-環境に新しいバージョンのカスタムコードをデプロイする場合、 [製品およびカスタム機能テスト](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) 重要な役割を果たす。 これにより、変更を加えた後でも、本番システムの安定性と機能性が確保されます。 これらのテストは、AEM Version Update プロセスでも適用されます。
+環境に新しいバージョンのカスタムコードをデプロイする場合、[製品機能テストとカスタム機能テスト](/help/implementing/cloud-manager/overview-test-results.md#functional-testing)が重要な役割を果たします。変更を加えた後でも、実稼働システムの安定性と機能性が確保されます。これらのテストは、AEM バージョンアップデートプロセスでも適用されます。
 
-実稼動環境への更新が失敗した場合、Cloud Manager はステージング環境を自動的にロールバックします。 これは、更新が完了した後で、ステージング環境と実稼動環境の両方が同じAEMバージョンであることを確認するために、自動的におこなわれます。
+実稼働環境へのアップデートに失敗した場合、Cloud Manager はステージング環境を自動的にロールバックします。これは、アップデート完了後、ステージング環境と実稼働環境の両方が必ず同じ AEM バージョンであるようにするために、自動的に行われます。
 同様に、開発環境の自動更新が失敗した場合、ステージング環境と実稼動環境は更新されません。
 
 >[!NOTE]
 >
->カスタムコードがステージング環境にプッシュされ、実稼動環境にプッシュされなかった場合、次回のAEM更新でこれらの変更が削除され、顧客が前回実稼動環境に正常にリリースした際の git タグが反映されます。 したがって、ステージングでのみ使用可能なカスタムコードを再度デプロイする必要があります。
+>カスタムコードが実稼動環境ではなくステージング環境にプッシュされた場合、次回の AEM アップデートでは、それらの変更が削除され、実稼動環境に対して正常に行われた最後の顧客リリースの Git タグが反映されます。したがって、ステージング環境でのみ使用可能なカスタムコードを再度デプロイする必要があります。
 
 ## ベストプラクティス {#best-practices}
 
-* **ステージ環境の使用状況**
-   * 長い QA/UAT サイクルに対しては、異なる環境（ステージではなく）を使用します。
-   * ステージでサニティテストが完了したら、実稼動環境での検証に移行します。
+* **ステージング環境の使用**
+   * 長い QA/UAT サイクルに対しては、異なる環境（ステージング環境以外）を使用します。
+   * ステージング環境で健全性テストが完了したら、実稼動環境での検証に移行します。
 
 * **実稼動パイプライン**
-   * 実稼動環境にデプロイする前に一時停止.
-   * ステージデプロイ後にパイプラインをキャンセルすると、コードが「スローウェイ」で実稼動用の有効な候補ではないことが示されます。を参照してください。 [実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * 実稼動環境にデプロイする前に一時停止します。
+   * ステージング環境にデプロイした後でパイプラインをキャンセルすると、コードが「使い捨て」であり、実稼動用の有効な候補ではないことが示されます。[実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)を参照してください。
 
 * **実稼動以外のパイプライン**
-   * の設定 [実稼動以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
-   * 実稼動パイプラインの障害に対する配信速度/頻度を高速化します。 製品機能テスト、カスタム機能テスト、カスタム UI テストを有効にして、実稼動以外のパイプラインの問題を特定します。
+   * [実稼動以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)を設定します。
+   * 実稼動パイプラインの障害に対する配信速度と頻度を向上します。製品機能テスト、カスタム機能テスト、カスタム UI テストを有効にして、実稼動以外のパイプラインのイシューを特定します。
 
 * **コンテンツのコピー**
-   * 用途 [コンテンツのコピー](/help/implementing/developing/tools/content-copy.md) 類似のコンテンツセットを実稼動以外の環境に移動する場合。
+   * [コンテンツのコピー](/help/implementing/developing/tools/content-copy.md)を使用し、類似のコンテンツセットを実稼動以外の環境に移動します。
 
 * **自動機能テスト**
    * 重要な機能をテストできるよう、パイプラインに自動テストを含めます。
-   * [顧客機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) および [カスタム UI テスト](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) AEMのリリースに失敗した場合、がブロックされていても、ロールアウトはおこなわれません。
+   * [顧客機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)と[カスタム UI テスト](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)がブロックしており、失敗すると AEM リリースはロールアウトされません。
 
 ## 回帰 {#regression}
 
-回帰に関する問題が発生した場合は、Admin Consoleでサポートケースを送信します。 問題が致命的で、その影響が実稼動に及ぶ場合は、P1 を発生させる必要があります。 回帰の問題の再現に必要なすべての詳細を指定します。
+回帰に関するイシューが発生した場合は、Admin Console からサポートケースを送信します。イシューが致命的で、その影響が実稼動に及ぶ場合は、P1 を発生させる必要があります。回帰のイシューを再現するために必要なすべての詳細を提供します。
 
 ## 複合ノードストア {#composite-node-store}
 
-通常、ノードのクラスターであるオーサリングインスタンスを含め、更新でダウンタイムは発生しません。 [Oak の複合ノードストア機能](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)により、ローリングアップデートが可能です。
+ノードのクラスターであるオーサリングインスタンスの場合も含め、通常、アップデートでダウンタイムは発生しません。[Oak の複合ノードストア機能](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)により、ローリングアップデートが可能です。
 
-この機能を利用すると、AEM で複数のリポジトリを同時に参照できます。内 [ローリングデプロイメント](/help/implementing/deploying/overview.md#how-rolling-deployments-work)の場合、新しいAEMバージョンには独自の `/libs` （TarMK ベースの不変リポジトリ）。 古いAEMとは異なりますが、どちらも、次のような領域を含む共有 DocumentMK ベースの可変リポジトリを参照します `/content` , `/conf` , `/etc` その他
+この機能を利用すると、AEM で複数のリポジトリを同時に参照できます。[ローリングデプロイメント](/help/implementing/deploying/overview.md#how-rolling-deployments-work)の場合、新しい AEM バージョンには独自の `/libs` （TarMK ベースの不変リポジトリ）が含まれます。古い AEM バージョンとは異なりますが、どちらも、`/content`、`/conf`、`/etc` などのエリアを含む共有 DocumentMK ベースの可変リポジトリを参照します。
 
-古いバージョンと新しいバージョンの両方には、 `/libs`に値を指定しない場合、両方をローリング更新時にアクティブにできます。また、古いが新しいに完全に置き換えられるまで、両方ともトラフィックを引き継ぐことができます。
+古いバージョンにも新しいバージョンにも独自の `/libs` のバージョンがあるので、ローリングアップデート中に両方ともアクティブにできます。そして、古いバージョンが新しいバージョンに完全に置き換えられるまで両方がトラフィックを処理できます。
