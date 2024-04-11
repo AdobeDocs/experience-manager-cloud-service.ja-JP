@@ -2,7 +2,7 @@
 title: Edge Delivery Services プロジェクトを使用した AEM オーサリング用のコンテンツモデリング
 description: Edge Delivery Services プロジェクトを使用した AEM オーサリングにおけるコンテンツモデリングの仕組みと独自のコンテンツをモデル化する方法について説明します。
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: bf6d0ff2f4aebb6620be46704072743578b096d2
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '2233'
 ht-degree: 93%
@@ -657,3 +657,4 @@ AEM で使用できるデフォルトのページプロパティの多くは、�
 >[!TIP]
 >
 >AEM as a Cloud Service as a コンテンツソースを使用したAEM オーサリングが可能な新しいEdge Delivery Servicesプロジェクトの作成に関するエンドツーエンドのチュートリアルについては、次を参照してください。 [このAEM GEMs ウェビナー](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+

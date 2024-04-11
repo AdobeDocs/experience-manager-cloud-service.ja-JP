@@ -3,7 +3,7 @@ title: Edge 配信サービス向けのコンテンツの公開
 description: コンテンツの公開が Edge 配信サービスと連携する仕組みと、AEM コンテンツを Edge 配信サービスと共に公開する方法について説明します。
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
-source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 100%
@@ -39,3 +39,4 @@ Edge 配信サービスを使用すると、コンテンツソースに関係な
 >[!NOTE]
 >
 >デフォルトでは、Edge Delivery Services Admin API は、保護されていないので、認証なしでドキュメントを公開または非公開にするために使用できます。[Configuring Authentication for Authors](https://www.aem.live/docs/authentication-setup-authoring) に記載されているように Admin API の認証を設定するには、公開サービスへのアクセス権を付与する API_KEY を使用してプロジェクトをプロビジョニングする必要があります。ガイダンスについては、[Slack でアドビチームにお問い合わせください](/help/edge/docs/slack.md)。
+

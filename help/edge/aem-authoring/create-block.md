@@ -2,7 +2,7 @@
 title: ユニバーサルエディターで使用するために実装されたブロックの作成
 description: Edge Delivery Services プロジェクトを使用した AEM オーサリングで、ユニバーサルエディターで使用するために実装されたブロックを作成する方法について説明します。
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
-source-git-commit: cc41ff626f6fc6d72785401e3ba38b189945bf74
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 93%
@@ -255,3 +255,4 @@ Edge Delivery Services プロジェクトを使用した AEM オーサリング�
 >[!TIP]
 >
 >AEM as a Cloud Service as a コンテンツソースを使用したAEM オーサリングが可能な新しいEdge Delivery Servicesプロジェクトの作成に関するエンドツーエンドのチュートリアルについては、次を参照してください。 [このAEM GEMs ウェビナー](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+

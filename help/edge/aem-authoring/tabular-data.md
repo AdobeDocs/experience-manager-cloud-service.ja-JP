@@ -3,7 +3,7 @@ title: スプレッドシートを使用した表形式データの管理
 description: スプレッドシートを使用して、Edge Delivery Services を使用した AEM のサイトのメタデータやリダイレクトなど、様々な値の表形式データを管理する方法を説明します。
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
-source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 100%
@@ -163,3 +163,4 @@ AEM でスプレッドシートのデータを公開するには、さらにプ�
 1. リダイレクトスプレッドシートの指示に従って、スプレッドシートを作成し、公開します。
 
 1. リダイレクトスプレッドシートの指示に従って、マッピングを `paths.json` ファイルに追加します。
+

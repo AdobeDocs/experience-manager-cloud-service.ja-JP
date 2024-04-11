@@ -3,7 +3,7 @@ title: Edge Delivery Services 向けのコンテンツのオーサリング
 description: コンテンツのオーサリングと Edge Delivery Services を連携する方法、および Edge Delivery Services で AEM コンテンツをオーサリングする方法について説明します。
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 93%
@@ -56,3 +56,4 @@ AEM と Edge Delivery Services を使用してオーサリングする独自の�
 文書ベースのオーサリングを使用する場合は、Microsoft Word やGoogle ドキュメントなど様々なソースを使用できます。 これらのソースからのドキュメントは、web サイト上のページになります。見出し、リスト、画像、フォント要素、ビデオはすべて、初期ソースから web サイトに転送できます。SEO 用にメタデータを追加したり、ブロックを使用して構造化コンテンツを操作したり、機能を追加したりできます。
 
 ドキュメントベースのオーサリングについて詳しくは、[Edge Delivery Services ドキュメントに記載されているこのドキュメント](/help/edge/docs/authoring.md)を参照してください。
+
