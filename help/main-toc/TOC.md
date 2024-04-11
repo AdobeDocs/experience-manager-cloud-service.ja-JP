@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: aaae2986d0b807b34055a48c810c32167d3715d0
+source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
 workflow-type: tm+mt
-source-wordcount: '4862'
-ht-degree: 99%
+source-wordcount: '4850'
+ht-degree: 98%
 
 ---
 
@@ -790,18 +790,25 @@ ht-degree: 99%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [移行](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
-+ Edge Delivery Services {#edge-delivery} を使用した AEM
-   + [Edge Delivery Services の概要](/help/edge/overview.md)
-   + [Edge 配信の使用](/help/edge/using.md)
-   + [開発者用入門ガイド](/help/edge/edge-dev-getting-started.md)
-   + [Edge 配信向けのコンテンツのオーサリング](/help/edge/authoring.md)
-   + [Edge 配信向けのコンテンツの公開](/help/edge/publishing.md)
-   + [Edge 配信向けの開発](/help/edge/developing.md)
-   + [コンテンツモデリング](/help/edge/content-modeling.md)
-   + [ブロックの作成](/help/edge/create-block.md)
-   + [表形式のデータとスプレッドシート](/help/edge/tabular-data.md)
-   + [既存のプロジェクトと Edge 配信](/help/edge/existing-projects.md)
-   + Edge 配信アプリケーションの作成 {#build}
++ Edge 配信サービス {#edge-delivery}
+   + [Edge 配信サービスの概要](/help/edge/overview.md)
+   + [AEMでのEdge Delivery Servicesの使用](/help/edge/using.md)
+   + AEM ベースのオーサリング {#aem-authoring}
+      + [Edge 配信向けのコンテンツのオーサリング](/help/edge/aem-authoring/authoring.md)
+      + [Edge 配信向けのコンテンツの公開](/help/edge/aem-authoring/publishing.md)
+      + [開発者用入門ガイド](/help/edge/aem-authoring/edge-dev-getting-started.md)
+      + [ブロックの作成](/help/edge/aem-authoring/create-block.md)
+      + [コンテンツモデリング](/help/edge/aem-authoring/content-modeling.md)
+      + [表形式のデータとスプレッドシート](/help/edge/aem-authoring/tabular-data.md)
+      + [既存のプロジェクトと Edge 配信](/help/edge/aem-authoring/existing-projects.md)
+   + ドキュメントベースのオーサリング {#document-authoring}
+      + [オーサリング](/help/edge/docs/authoring.md)
+      + [一括メタデータ](/help/edge/docs/bulk-metadata.md)
+      + [プレースホルダー](/help/edge/docs/placeholders.md)
+      + [サイトマップ](/help/edge/developer/sitemap.md)
+      + [SharePoint の設定](/help/edge/docs/setup-customer-sharepoint.md)
+      + [Slack ボット](/help/edge/docs/slack.md)
+   + アプリケーションの構築 {#build}
       + [はじめに - 開発者向けチュートリアル](/help/edge/developer/tutorial.md)
       + [プロジェクトの分析](/help/edge/developer/anatomy-of-a-franklin-project.md)
       + [ブロックコレクション](/help/edge/developer/block-collection.md)
@@ -813,21 +820,14 @@ ht-degree: 99%
       + [Favicon](/help/edge/developer/favicon.md)
       + [カスタムヘッダー](/help/edge/docs/custom-headers.md)
       + [開発者向けベストプラクティス](/help/edge/docs/dev-collab-and-good-practices.md)
-   + Edge 配信アプリケーションの公開 {#publish}
-      + [オーサリング](/help/edge/docs/authoring.md)
-      + [一括メタデータ](/help/edge/docs/bulk-metadata.md)
-      + [プレースホルダー](/help/edge/docs/placeholders.md)
-      + [サイトマップ](/help/edge/developer/sitemap.md)
-      + [SharePoint の設定](/help/edge/docs/setup-customer-sharepoint.md)
-      + [Slack ボット](/help/edge/docs/slack.md)
-   + Edge 配信アプリケーションの起動 {#launch}
+   + アプリケーションの起動 {#launch}
       + [公開チェックリスト](/help/edge/docs/go-live-checklist.md)
       + [プッシュ無効化](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
       + [Cloudflare Worker の設定](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
       + [Akamai の設定](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Fastly の設定](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [リダイレクト](/help/edge/docs/redirects.md)
-   + Edge Delivery Forms {#build-forms} の作成
+   + Formsの構築 {#build-forms}
       + [概要](/help/edge/docs/forms/overview.md)
       + はじめに {#getting-started-eds-forms}
          + [はじめに](/help/edge/docs/forms/tutorial.md)
@@ -848,7 +848,7 @@ ht-degree: 99%
          + [フォームのリアルタイムユーザー監視](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + 参照 {#forms-references}
          + [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
-   + Edge 配信のリソース {#resources}
+   + エッジ配信リソース {#resources}
       + Sidekick {#sidekick}
          + [Sidekick の使用](/help/edge/docs/sidekick.md)
          + [拡張機能のインストール](/help/edge/docs/sidekick-extension.md)

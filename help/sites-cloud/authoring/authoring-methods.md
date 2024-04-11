@@ -1,74 +1,74 @@
 ---
-title: AEMでコンテンツをオーサリングする方法
-description: AEMでコンテンツをオーサリングする様々な方法とその違いについて説明します。
+title: AEM でコンテンツをオーサリングする方法
+description: AEM でコンテンツをオーサリングする様々な方法とその違いについて説明します。
 feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 9aba0fb61d7496cd1ae1860e22c3e7374be69148
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 0%
+source-wordcount: '570'
+ht-degree: 73%
 
 ---
 
-# AEMでコンテンツをオーサリングする方法 {#authoring-methods}
+# AEM でコンテンツをオーサリングする方法 {#authoring-methods}
 
-AEMでコンテンツを作成する様々な方法、コンテンツの違い、およびコンテンツを重ね合わせて使用するタイミングについて説明します。
+AEM でコンテンツを作成する様々な方法、その違い、どのような場合にそれぞれの方法を使用するかについて説明します。
 
-## AEM Authoring の柔軟性 {#authoring-flexibility}
+## AEM オーサリングの柔軟性 {#authoring-flexibility}
 
-AEM as a Cloud Serviceには、様々なタイプのコンテンツを編集するための様々なエディターが用意されており、様々なオーサリングの使用例をサポートしています。
+AEM as a Cloud Service には、各種コンテンツを編集するための様々なエディターが用意されており、様々なオーサリングの使用例もサポートしています。
 
-* [AEM Page Editor](#page-editor)  — これは、AEMでコンテンツをオーサリングするための従来のエディターで、数千の Web サイトにわたって何千もの人々が試み、信頼できました。
-* [AEM Content Fragment Editor](#cf-editor)  — ヘッドレスコンテンツを作成する場合に選択できるエディターです。
-* [ユニバーサルエディター](#universal-editor)  — この最新の UI を使用すると、コンテンツに依存しない方法でAEMコンテンツを作成でき、Edge Delivery Servicesを活用するAEMプロジェクトの最初の選択肢です。
-* [ドキュメントベースのオーサリング](#document-based) - Edge 配信サービスを使用する場合、Microsoft Word やGoogleドキュメントなど、従来のドキュメントとして、AEMコンソール以外のコンテンツを作成するように選択できます。
+* [ページエディターを使用したAEM ベースのオーサリング](#page-editor) - ページエディターは、何千もの web サイトで試され、信頼されているAEMのコンテンツをオーサリングするための従来のエディターです。
+* [ユニバーサルエディターを使用したAEM ベースのオーサリング](#universal-editor) - ユニバーサルエディターは、コンテンツに依存しない方法でAEM コンテンツを作成できる最新の UI で、Edge Delivery Servicesを活用するAEM プロジェクトで使用できます。
+* [ドキュメントベースのオーサリング](#document-based) - エッジ配信サービスを使用する場合は、AEM コンソールの外部で、Microsoft Word やGoogle ドキュメントなどの従来のドキュメントとしてコンテンツを作成することもできます。
+* [AEM コンテンツフラグメントエディタ - ](#cf-editor) - ヘッドレスコンテンツを作成する場合に最適なエディターです。
 
-AEMの統合された拡張性のある特性により、これらのメソッドは、排他的に、またはプロジェクトのニーズに応じて、互いに組み合わせて使用できます。
+AEM の統合された拡張性のある特性により、プロジェクトのニーズに応じて、これらの方法を単独で使用することも、相互に組み合わせて使用することもできます。
 
 使用可能なオーサリングオプションが不明な場合や、コンテンツのオーサリング用の新しいオプションを検討したい場合は、システム管理者またはプロジェクトマネージャーにお問い合わせください。
 
-## AEM Page Editor {#page-editor}
+## ページエディターを使用したAEM ベースのオーサリング {#page-editor}
 
-これは、AEMでコンテンツをオーサリングするための従来のエディターで、数千の Web サイトで何千もの人々に対して試され、信頼されています。
+これは、AEM でコンテンツをオーサリングするための従来のエディターです。何千もの web サイトで実証され、信頼されています。
 
-![AEMページエディター](assets/authoring-methods-page-editor.png)
+![AEM ページエディター](assets/authoring-methods-page-editor.png)
 
-AEMのページエディターは、what-you-see-is-what-you-get(WYSIWYG) インターフェイスを使用してコンテンツをオーサリングするための統合環境を表示します。 定義済みのコンポーネントをドラッグ&amp;ドロップしてページを作成し、コンテンツをインプレースで編集します。
+AEM ページエディターは、WYSIWYG（見た通りの）インターフェイスを使用して、コンテンツをオーサリングするための統合環境を提供します。事前定義されたコンポーネントをドラッグ＆ドロップしてページを作成し、コンテンツをインプレースで編集します。
 
-AEMページエディターの詳細については、ドキュメントを参照してください。 [AEM Page Editor。](/help/sites-cloud/authoring/page-editor/introduction.md)
+AEM ページエディターについて詳しくは、[AEM ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)のドキュメントを参照してください。
 
-## AEM Content Fragment Editor {#cf-editor}
+## ユニバーサルエディターを使用したAEM ベースのオーサリング {#universal-editor}
 
-AEMコンテンツフラグメントエディターは、ヘッドレスコンテンツを作成する際に選択するエディターです。
-
-![AEM Content Fragment Editor](assets/authoring-methods-cf-editor.png)
-
-AEMコンテンツフラグメントエディターは、ヘッドレス配信に最適な、構造化コンテンツを作成および管理するための明確なインターフェイスを提供します。
-
-AEMコンテンツフラグメントエディターの詳細については、ドキュメントを参照してください。 [コンテンツフラグメントの管理](/help/sites-cloud/administering/content-fragments/managing.md) および [コンテンツフラグメントのオーサリング](/help/sites-cloud/administering/content-fragments/managing.md).
-
->[!NOTE]
->
->The *新規* AEM as a Cloud Service用にローカルで開発する場合は、この節で強調表示されているエディターは使用できません。
->
->The [*オリジナル* コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-variations.md) はも利用できます。
-
-## ユニバーサルエディター {#universal-editor}
-
-ユニバーサルエディターは、コンテンツに依存しない方法でAEMコンテンツを作成できる最新の UI で、Edge Delivery Servicesを活用したAEMプロジェクトの最初の選択肢です。
+ユニバーサルエディターは、コンテンツに依存しない方法で AEM コンテンツを作成できる最新の UI です。Edge Delivery Services を活用する AEM プロジェクトの最初の選択肢になります。
 
 ![ユニバーサルエディター](assets/authoring-methods-ue.png)
 
-ユニバーサルエディターはAEM内の Sites コンソールからアクセスしますが、AEMコンテンツだけでなく、適切に実装された外部コンテンツも作成できる、コンテンツに依存しない優れた柔軟性を備えています。
+ユニバーサルエディターには AEM 内の Sites コンソールからアクセスしますが、そのパワーやコンテンツに依存しない柔軟性により、AEM コンテンツだけでなく、適切にインストルメント化された外部コンテンツも作成することができます。
 
-ユニバーサルエディターの詳細については、ドキュメントを参照してください [ユニバーサルエディターを使用したコンテンツのオーサリング。](/help/sites-cloud/authoring/universal-editor/authoring.md)
+ユニバーサルエディターについて詳しくは、[ユニバーサルエディターを使用したコンテンツのオーサリング](/help/sites-cloud/authoring/universal-editor/authoring.md)のドキュメントを参照してください。
 
 ## ドキュメントベースのオーサリング  {#document-based}
 
-Edge 配信サービスを使用する場合、Microsoft Word やGoogle Docs などの従来のドキュメントとは全く別のドキュメントとして、コンテンツを作成することもできます。 [AEM **Sites** コンソール。](/help/sites-cloud/authoring/sites-console/introduction.md)
+Edge Delivery Services を使用する場合は、[AEM **Sites** コンソールの完全な外部で、Microsoft Word や Google Docs などの従来のドキュメントとして、コンテンツを作成することができます。](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 ![ドキュメントベースのコンテンツの編集](assets/authoring-methods-document.jpg)
 
-ドキュメントベースのオーサリングでは、作成者は既に把握しているツールを使用し、AEMEdge Delivery Servicesの速度とパフォーマンスのメリットを活用して、コンテンツを公開できます。 ドキュメントベースのオーサリングでは、AEMコンソールを使用する必要はありません。
+ドキュメントベースのオーサリングを使用すると、作成者は既知のツールを使用できますが、AEM Edge Delivery Servicesの速度とパフォーマンスからメリットを得て、コンテンツを公開できます。 ドキュメントベースのオーサリングでは、AEM コンソールを使用する必要はありません。
 
-ドキュメントベースのオーサリングについて詳しくは、ドキュメントを参照してください。 [Edge Delivery Services用コンテンツのオーサリング](/help/edge/authoring.md)
+ドキュメントベースのオーサリングについて詳しくは、ドキュメントを参照してください。 [コンテンツのオーサリングと公開。](/help/edge/docs/authoring.md)
+
+## AEM コンテンツフラグメントエディター {#cf-editor}
+
+AEM コンテンツフラグメントエディターは、ヘッドレスコンテンツを作成する場合に最適なエディターです。
+
+![AEM コンテンツフラグメントエディター](assets/authoring-methods-cf-editor.png)
+
+AEM コンテンツフラグメントエディターは、ヘッドレス配信に最適な、構造化コンテンツを作成および管理するための明確なインターフェイスを提供します。
+
+AEM コンテンツフラグメントエディターについて詳しくは、[コンテンツフラグメントの管理](/help/sites-cloud/administering/content-fragments/managing.md)および[コンテンツフラグメントのオーサリング](/help/sites-cloud/administering/content-fragments/managing.md)のドキュメントを参照してください。
+
+>[!NOTE]
+>
+>この節でハイライト表示されている&#x200B;*新しい*&#x200B;エディターは、AEM as a Cloud Service をローカルで開発する場合には使用できません。
+>
+>[*オリジナル*&#x200B;コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-variations.md)も利用できます。

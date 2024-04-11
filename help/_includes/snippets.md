@@ -1,8 +1,8 @@
 ---
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 79%
+source-wordcount: '302'
+ht-degree: 100%
 
 ---
 # スニペット {#snippets}
@@ -49,20 +49,16 @@ ht-degree: 79%
 * [Power Automate に送信](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Workfront Fusion に送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Salesforce アプリケーションにアダプティブフォームを接続](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
-* [アダプティブフォームのMicrosoftへの接続](/help/forms/ms-dynamics-odata-configuration.md)
-
-## Edge Delivery Services を使用した AEM オーサリングの早期アクセス {#aem-authoring-edge-early-access}
-
-[!BADGE 早期アクセステクノロジー - この機能については、Slack チャネルの AEM Sites ラボからお問い合わせください。]{type=Informative url="/help/edge/docs/slack.md" tooltip="Edge Delivery Services を使用した AEM オーサリングは、早期アクセステクノロジーです。"}
+* [Microsoft へのアダプティブフォームの接続](/help/forms/ms-dynamics-odata-configuration.md)
 
 ## 関連トピック {#see-more-forms-eds}
 
-* [AEM FormsEdge Delivery Servicesの概要](/help/edge/docs/forms/tutorial.md)
-* [Google Sheet またはMicrosoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
-* [データの受け入れを開始するためのGoogleシートまたはMicrosoft Excel ファイルのセットア&#x200B;ップ](/help/edge/docs/forms/submit-forms.md)
-* [フォームを発行してデータの収集を開始する](/help/edge/docs/forms/publish-forms.md)
-* [フォームの外観をカスタマイズす&#x200B;る](/help/edge/docs/forms/style-theme-forms.md)
-* [フォームに繰り返し可能なセクションを&#x200B;追加](/help/edge/docs/forms/repeatable-forms.md)
-* [フォーム送信後にカスタムの「ありがとうございます」メッセージを&#x200B;表示](/help/edge/docs/forms/thank-you-page-form.md)
+* [AEM Forms Edge Delivery Services の基本を学ぶ](/help/edge/docs/forms/tutorial.md)
+* [Google Sheet または Microsoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
+* [データの受け入れを開始するための Google Sheets または Microsoft Excel ファイルの設定](/help/edge/docs/forms/submit-forms.md)
+* [フォームを公開してデータの収集を開始](/help/edge/docs/forms/publish-forms.md)
+* [フォームの外観のカスタマイズ](/help/edge/docs/forms/style-theme-forms.md)
+* [フォームへの繰り返し可能なセクションの追加](/help/edge/docs/forms/repeatable-forms.md)
+* [フォーム送信後にカスタムのお礼のメッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
 * [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
 
