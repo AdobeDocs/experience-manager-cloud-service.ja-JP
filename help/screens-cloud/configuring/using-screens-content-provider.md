@@ -3,9 +3,9 @@ title: Screens コンテンツプロバイダーの使用
 description: ここでは、Screens コンテンツプロバイダーを使用してコンテンツを作成する方法について説明します。
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
 source-git-commit: f7ed7c63fd141c6a9817e4718edb31425b14a761
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '383'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 89%
 
 ## 目的 {#objective}
 
-以下では、設定後に Screens コンテンツプロバイダーでチャネルを作成する方法について説明します [Screens Services Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=ja).
+次の節では、[Screens サービスプロバイダー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=ja)を設定した後に、Screens コンテンツプロバイダーでチャンネルを作成する方法について説明します。
 
 ## Screens コンテンツプロバイダーの使用 {#screens-content-provider}
 
@@ -46,7 +46,7 @@ ht-degree: 89%
 
    ![Screens コンテンツプロバイダーにアクセスできる環境カードからハイライト表示されたリンク。](/help/screens-cloud/assets/configure/screens-cp-2.png)
 
-   Screens コンテンツプロバイダーにログインした後、 Screens/コンテンツプロバイダーに移動します。これで、コンテンツ再生用のコンテンツを作成する準備が整いました。
+   Screens コンテンツプロバイダーにログインしたら、Screens、コンテンツプロバイダーに移動します。これで、コンテンツ再生用のコンテンツを作成する準備が整いました。
 
    Screens コンテンツプロバイダーを使用して、以下を作成して管理します。
 

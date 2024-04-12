@@ -3,7 +3,7 @@ title: モバイルデバイス用のページのオーサリング
 description: モバイル用にオーサリングするときは、複数のエミュレーターを切り替えて、エンドユーザー向けの表示を確認できます。
 exl-id: fabd4468-3304-402f-9522-342da3bbae94
 source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
 ht-degree: 100%
 

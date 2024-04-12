@@ -3,7 +3,7 @@ title: 設定と設定ブラウザー
 description: Adobe Experience Manager（AEM）設定と、AEM でのワークスペース設定の管理方法について確認します。
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1482'
 ht-degree: 100%
 

@@ -3,9 +3,9 @@ title: Dynatrace
 description: Dynatrace を AEM as a Cloud Service で使用する方法を説明します。
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 source-git-commit: 4fe8ed9c3f7b6589878da3317d15fede819bad54
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '589'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -28,8 +28,8 @@ Dynatrace のお客様は、カスタマーサポートチケットを通じて�
 | **フィールド** | **説明** |
 |---|---|
 | [!DNL Dynatrace Environment URL] | Dynatrace 環境の URL。<br><br>Dynatrace SaaS のお客様の場合、形式は `https://<your-environment-id>.live.dynatrace.com` です。<br><br>Dynatrace Managed のお客様の場合、形式は `https://<your-managed-url>/e/<environmentId>` です。 |
-| [!DNL Dynatrace Environment ID] | Dynatrace 環境 ID。詳しくは、 [Dynatrace Connection Details を取得するにはどうすればよいですか？](#how-do-i-get-my-dynatrace-connection-details) これを手に入れる方法を |
-| [!DNL Dynatrace Environment Token] | Dynatrace 環境トークン。詳しくは、 [Dynatrace Connection Details を取得するにはどうすればよいですか？](#how-do-i-get-my-dynatrace-connection-details) これを手に入れる方法を<br><br>これはシークレットと見なす必要があるので、適切なセキュリティプラクティスを使用してください。例えば、**zerobin.net** などの web サイトでパスワードで保護します。カスタマーサポートチケットはパスワードとともに参照できます。 |
+| [!DNL Dynatrace Environment ID] | Dynatrace 環境 ID。詳しくは、[Dynatrace Connection Details を取得するにはどうすればよいですか](#how-do-i-get-my-dynatrace-connection-details)を参照してください。 |
+| [!DNL Dynatrace Environment Token] | Dynatrace 環境トークン。詳しくは、[Dynatrace Connection Details を取得するにはどうすればよいですか](#how-do-i-get-my-dynatrace-connection-details)を参照してください。<br><br>これはシークレットと見なす必要があるので、適切なセキュリティプラクティスを使用してください。例えば、**zerobin.net** などの web サイトでパスワードで保護します。カスタマーサポートチケットはパスワードとともに参照できます。 |
 | [!DNL Dynatrace API access token] | Dynatrace 環境の API アクセストークン。これを作成する方法について詳しくは、[Dynatrace API アクセストークンを作成](#create-dynatrace-access-token)を参照してください。<br><br>これはシークレットと見なす必要があるので、適切なセキュリティプラクティスを使用してください。例えば、**zerobin.net** などの web サイトでパスワードで保護します。カスタマーサポートチケットはパスワードとともに参照できます。<br><br>メモ：これは、Dynatrace Managed でのみ必要です。 |
 | [!DNL Dynatrace ActiveGate Port] | AEM 統合の接続先となる Dynatrace ActiveGate ポート。<br><br>メモ：これは、Dynatrace Managed でのみ必要です。 |
 | [!DNL Dynatrace ActiveGate Network Zone] | [Dynatrace ActiveGate ネットワークゾーン](https://docs.dynatrace.com/docs/manage/network-zones)を使用して、データセンターとネットワークリージョン間で AEM 監視データを効率的にルーティングします。<br><br>メモ：Dynatrace ActiveGate ネットワークゾーンはオプションです。 |
@@ -41,18 +41,18 @@ Dynatrace のお客様は、カスタマーサポートチケットを通じて�
 
 ## FAQ {#faq}
 
-### Dynatrace AEM Monitoring に必要なライセンス {#which-license-do-i-need-for-AEM-monitoring}
+### Dynatrace AEM Monitoring にはどのライセンスが必要ですか。 {#which-license-do-i-need-for-AEM-monitoring}
 
-Dynatrace AEMの監視には、Dynatraceライセンスが必要です。 Dynatrace AEMのライセンスは、 [Kubernetes コンテナのフルスタック監視](https://docs.dynatrace.com/docs/shortlink/dps-hosts#gib-hour-calculation-for-containers-and-application-only-monitoring). 監視対象のAEMコンテナ（オーサーサービスおよびパブリッシャーサービス）のメモリサイズが自動的に検出されます。
+Dynatrace AEM Monitoring には Dynatrace ライセンスが必要です。Dynatrace AEM ライセンスは、[Kubernetes コンテナのフルスタック監視](https://docs.dynatrace.com/docs/shortlink/dps-hosts#gib-hour-calculation-for-containers-and-application-only-monitoring)に基づいています。監視対象の AEM コンテナ（オーサーサービスおよびパブリッシャーサービス）のメモリサイズは自動的に検出されます。
 
-各AEM環境のAdobeデプロイメント仕様は、次のとおりです。
+AEM 環境別のアドビデプロイメント仕様は、次のとおりです。
 
-* 実稼働：平均で 4 つのコンテナ、それぞれ 16 GB のメモリ
-* 非実稼動：平均で 4 つのコンテナ、それぞれ 8 GB のメモリ
+* 実稼動：平均で 4 つのコンテナ、それぞれ 16 GB のメモリ
+* 実稼動以外：平均で 4 つのコンテナ、それぞれ 8 GB のメモリ
 
-Dynatraceライセンスについて詳しくは、 [Dynatrace Platform Subscription](https://docs.dynatrace.com/docs/shortlink/dynatrace-platform-subscription).
+Dynatrace ライセンスについて詳しくは、[Dynatrace プラットフォームのサブスクリプション](https://docs.dynatrace.com/docs/shortlink/dynatrace-platform-subscription)を参照してください。
 
-### Dynatrace Connection Details を取得するにはどうすればよいですか？ {#how-do-i-get-my-dynatrace-connection-details}
+### Dynatrace 接続の詳細を取得するにはどうすればよいですか。 {#how-do-i-get-my-dynatrace-connection-details}
 
 1. Dynatrace 環境に対して次の API リクエストを実行します。
 
@@ -61,9 +61,9 @@ Dynatraceライセンスについて詳しくは、 [Dynatrace Platform Subscrip
    ```
 
 
-   置換 `<environmentUrl>` Dynatrace環境 URL と `<accessToken>` 作成した API アクセストークンを使用して、
+   `<environmentUrl>` を Dynatrace 環境 URL に置き換え、`<accessToken>` を作成した API アクセストークンに置き換えます。
 
-1. をコピーします。 `<environmentId>` および `<environmentToken>` 応答ペイロードから取得し、保護された場所に保存します。
+1. レスポンスペイロードから `<environmentId>` と `<environmentToken>` をコピーし、保護された場所に保存します。
 
    ```
    {
@@ -76,9 +76,9 @@ Dynatraceライセンスについて詳しくは、 [Dynatrace Platform Subscrip
 ### Dynatrace API アクセス トークンを作成する {#create-dynatrace-access-token}
 
 1. Dynatrace 環境にログインします。
-1. に移動します。 **[!DNL Access tokens]** を選択し、 **[!DNL Generate new token]**.
+1. **[!DNL Access tokens]** に移動し、**[!DNL Generate new token]** を選択します。
 1. [!DNL token name] を定義します。
-1. トークンのスコープをに設定します。 **[!DNL PaaS integration - Installer download]**.
+1. トークンの範囲を **[!DNL PaaS integration - Installer download]** に設定します。
 1. **[!DNL Generate token]** を選択します。
 1. 生成されたアクセストークンをコピーし、安全な場所に保存します。
 

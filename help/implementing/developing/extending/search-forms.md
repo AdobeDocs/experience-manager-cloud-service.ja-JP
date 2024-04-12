@@ -3,9 +3,9 @@ title: 検索フォームの設定
 description: Adobe Experience Manager as a Cloud Service の検索フォームの設定。
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2036'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -105,7 +105,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
    <td>作成者に従って検索します。</td>
    <td>
     <ul>
-     <li>プレースホルダー</li>
+     <li>Placeholder</li>
      <li>プロパティ名*</li>
      <li>説明</li>
     </ul> 
@@ -117,7 +117,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
    <td>
     <ul>
      <li>フィールドラベル</li>
-     <li>プレースホルダー</li>
+     <li>Placeholder</li>
      <li>説明</li>
     </ul> 
    </td>
@@ -135,10 +135,10 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
   </tr>
   <tr>
    <td>コンポーネント</td>
-   <td>作成者が、特定のコンポーネントを持つページを検索/フィルタリングできます。 例えば、画像ギャラリーなどです。<br /> </td>
+   <td>作成者が、特定のコンポーネントを持つページを検索／フィルターできます。例えば、画像ギャラリーなどです。<br /> </td>
    <td>
     <ul>
-     <li>プレースホルダー</li>
+     <li>Placeholder</li>
      <li>プロパティ名*</li>
      <li>プロパティの深さ</li>
      <li>説明</li>
@@ -150,7 +150,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
    <td>
     <ul>
      <li>フィールドラベル</li>
-     <li>プレースホルダー</li>
+     <li>Placeholder</li>
      <li>プロパティ名*</li>
      <li>範囲テキスト（開始）*</li>
      <li>範囲テキスト（終了）*</li>
@@ -195,7 +195,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
    <td>フルテキスト検索用の検索述語。これは「jcr:contains」演算子と共にマッピングされます。</td>
    <td>
     <ul>
-     <li>プレースホルダー</li>
+     <li>Placeholder</li>
      <li>プロパティ名</li>
      <li>説明</li>
     </ul> </td>
@@ -226,7 +226,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
     <ul>
      <li>グループ</li>
      <li>範囲</li>
-     <li>オプション</li>
+     <li>Options</li>
     </ul> 
    </td>
   </tr>
@@ -245,7 +245,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
    <td>
     <ul>
      <li>フィールドラベル</li>
-     <li>プレースホルダー</li>
+     <li>Placeholder</li>
      <li>プロパティ名*</li>
      <li>区切り文字のサポート</li>
      <li>入力区切り文字</li>
@@ -255,7 +255,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
    </td>
   </tr>
   <tr>
-   <td>オプション</td>
+   <td>Options</td>
    <td><p>オプションは、ユーザーが作成したコンテンツノードです。</p> <p>詳しくは、<a href="#addinganoptionspredicate">オプションの述語の追加</a>を参照してください。</p> </td>
    <td>
     <ul>
@@ -268,7 +268,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
     </ul> </td>
   </tr>
   <tr>
-   <td>Options プロパティ</td>
+   <td>オプションプロパティ</td>
    <td>オプションの 1 つ以上のプロパティで検索します。</td>
    <td>
     <ul>
@@ -306,14 +306,14 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
    <td>事前に定義されたルートパスの下で検索するパスブラウザーを提供します。</td>
    <td>
     <ul>
-     <li>プレースホルダー</li>
+     <li>Placeholder</li>
      <li>ルートパス</li>
      <li>説明</li>
     </ul> 
    </td>
   </tr>
   <tr>
-   <td>パス非表示</td>
+   <td>非表示のパス</td>
    <td>パスに対するフィルター（ユーザーには表示されません）。</td>
    <td>
     <ul>
@@ -328,7 +328,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
    <td>
     <ul>
      <li>フィールドラベル</li>
-     <li>プレースホルダー</li>
+     <li>Placeholder</li>
      <li>プロパティ名</li>
      <li>部分検索</li>
      <li>大文字と小文字を区別しない</li>
@@ -405,7 +405,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
    <td>
     <ul>
      <li>フィールドラベル</li>
-     <li>プレースホルダー</li>
+     <li>Placeholder</li>
      <li>プロパティ名*</li>
      <li>すべてのタグに一致オプションを表示</li>
      <li>ルートタグのパス</li>
@@ -417,7 +417,7 @@ Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sit
    <td>選択したテンプレートに従って検索します。</td>
    <td>
     <ul>
-     <li>プレースホルダー</li>
+     <li>Placeholder</li>
      <li>プロパティ名*</li>
      <li>説明</li>
     </ul> 
@@ -551,7 +551,7 @@ Sites 専用の述語の、公開およびライブコピーのチェックボ�
 
 1. カスタマイズする設定を選択します。
 1. 「**編集**」アイコンを使用して、更新する設定を開きます。
-1. 新しいカスタマイズが必要な場合は、 [新しい述語フィールドの追加と設定の定義](#add-edit-a-predicate-field-and-define-field-settings) 必要に応じて。 既存のカスタマイズの場合は、既存のフィールドを選択し、 [設定を更新](#add-edit-a-predicate-field-and-define-field-settings).
+1. 新規のカスタマイズの場合は、必要に応じて[新しい述語フィールドを追加して設定を定義](#add-edit-a-predicate-field-and-define-field-settings)します。既存のカスタマイズの場合は、既存のフィールドを選択して[設定を更新](#add-edit-a-predicate-field-and-define-field-settings)できます。
 1. 「**完了**」を選択して設定を保存します。変更は、次回設定を使用したときに表示されます。
 
    >[!NOTE]
@@ -654,14 +654,14 @@ Sites 専用の述語の、公開およびライブコピーのチェックボ�
    >1. `/libs/cq/gui/content/common/options/predicates`
    >1. `/apps.` 内で変更作業をおこないます。
 
-1. を開きます。 **Formsを検索** コンソールに移動し、更新する設定を選択します。 例： **サイト管理者の検索レール**. 「**編集**」を選択します。
+1. **検索フォーム**&#x200B;コンソールを開いて、更新する設定を選択します。例えば、「**Sites 管理者の検索パネル**」を選択します。「**編集**」を選択します。
 
 1. 設定により、**オプション**&#x200B;または&#x200B;**オプションプロパティ**&#x200B;を設定に追加します。
 1. フィールドを更新します。具体的には次のフィールドです。
 
    * **プロパティ名**
 
-     ターゲットノードで検索するノードプロパティを指定します。例：
+     ターゲットノードで検索するノードプロパティを指定します。次に例を示します。
 
      `jcr:content/cq:template`
 

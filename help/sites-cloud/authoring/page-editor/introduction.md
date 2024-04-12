@@ -1,33 +1,33 @@
 ---
-title: AEM Page Editor
-description: AEMページエディターは、コンテンツをオーサリングするための強力なツールです。
-source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
-workflow-type: tm+mt
+title: AEM ページエディター
+description: AEM ページエディターは、コンテンツをオーサリングするための強力なツールです。
+exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
+workflow-type: ht
 source-wordcount: '1431'
-ht-degree: 42%
+ht-degree: 100%
 
 ---
 
+# AEM ページエディター {#editing-page-content}
 
-# AEM Page Editor {#editing-page-content}
-
-ページが [**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md) AEMページエディターを使用してページのコンテンツを編集できます。これは、コンテンツをオーサリングするための強力なツールです。
-
->[!NOTE]
->
->ページの編集時 ( [**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md) コンソールで、ページの [テンプレート：](/help/sites-cloud/authoring/sites-console/templates.md) このドキュメントで説明するページエディター、または [ユニバーサルエディター。](/help/sites-cloud/authoring/universal-editor/authoring.md)
+[**Sites** コンソールでページを作成したら、](/help/sites-cloud/authoring/sites-console/introduction.md)AEM ページエディターを使用してページのコンテンツを編集できます。これは、コンテンツをオーサリングするための強力なツールです。
 
 >[!NOTE]
 >
->ページを編集するための適切なアクセス権と権限がアカウントに必要です。 権限がない場合は、システム管理者に問い合わせてください。
+>[**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)でページを編集すると、コンソールはページの[テンプレート](/help/sites-cloud/authoring/sites-console/templates.md)に適したエディター（このドキュメントで説明するページエディターや、[ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/authoring.md)）を開きます。
 
-## 向き {#orientation}
+>[!NOTE]
+>
+>アカウントには、ページを編集するための適切なアクセス権と権限が必要です。権限がない場合は、システム管理者にお問い合わせください。
 
-AEMのページエディターは、主に次の 3 つのセクションで構成されます。
+## オリエンテーション {#orientation}
 
-1. [ツールバー](#toolbar)  — ツールバーを使用すると、ページモードをすばやく変更したり、追加のページ設定にアクセスしたりできます。
-1. [サイドパネル](#side-panel)  — サイドパネルでは、ページコンポーネントやアセット、その他のオーサリングツールにアクセスできます。
-1. [エディター](#editor)  — エディターでは、コンテンツを変更してプレビューできます。
+AEM ページエディターは、主に次の 3 つのセクションで構成されます。
+
+1. [ツールバー](#toolbar) - ツールバーを使用すると、ページ モードの変更や、追加のページ設定へのアクセスが素早くできます。
+1. [サイドパネル](#side-panel) - サイドパネルでは、ページコンポーネントやアセット、その他のオーサリングツールにアクセスできます。
+1. [エディター](#editor) - エディターでは、コンテンツを変更してプレビューできます。
 
 ![ページエディターのレイアウト](assets/page-editor-layout.png)
 
@@ -35,23 +35,23 @@ AEMのページエディターは、主に次の 3 つのセクションで構�
 
 ### ツールバー {#page-toolbar}
 
-ページツールバーを使用すると、ページ設定に応じて、コンテキストに応じた機能にアクセスできます。
+ページツールバーを使用すると、ページ設定に応じて、コンテキストに適切な機能にアクセスできます。
 
 ![ページエディターのツールバー](assets/page-editor-toolbar.png)
 
 #### サイドパネル {#side-panel-button}
 
-これにより、 [サイドパネル](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) このツリーには、アセットブラウザ、コンポーネントブラウザ、コンテンツツリーが含まれます。
+[サイドパネル](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)が開きます（または閉じます）。このパネルには、アセットブラウザー、コンポーネントブラウザー、コンテンツツリーが含まれています。
 
 ![サイドパネルの切り替え](assets/page-editor-side-panel-toggle.png)
 
 #### ページ情報 {#page-information}
 
-これにより、ページの詳細や、ページ情報の表示および編集、ページプロパティの表示、ページの公開/非公開など、ページで実行できるアクションを含む詳細なページ情報にアクセスできます。
+ページの詳細およびページに対して実行できるアクション（ページ情報の表示と編集、ページのプロパティの表示、ページの公開／非公開など）を含む詳細なページ情報にアクセスできます。
 
 ![ページ情報ボタン](assets/page-editor-page-information-icon.png)
 
-**ページ情報** ドロップダウンメニューを開き、選択したページの最後の編集および最後の公開に関する詳細を表示します。 ページ、そのページのサイト、インスタンスの特性に応じて、追加のアクションを使用できます。
+**ページ情報**&#x200B;をクリックするとドロップダウンメニューが開き、選択したページの最後の編集および最後の公開に関する詳細が表示されます。ページ、ページのサイト、インスタンスの特性に応じて、追加のアクションを使用できます。
 
 * [プロパティを開く](/help/sites-cloud/authoring/sites-console/page-properties.md)
 * [ページをロールアウト](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
@@ -69,38 +69,38 @@ AEMのページエディターは、主に次の 3 つのセクションで構�
 
 #### エミュレーター {#emulator}
 
-これにより、 [エミュレーターツールバー](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)：別のデバイスでのページのルックアンドフィールをエミュレートするために使用されます。 これは、レイアウトモードで自動的に有効になります。
+別のデバイスでのページのルックアンドフィールをエミュレートするために使用する[エミュレーターツールバー](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)を切り替えます。レイアウトモードでは自動的に切り替わります。
 
 ![エミュレーターボタン](assets/page-editor-emulator.png)
 
 #### ContextHub {#context-hub}
 
-これにより、 [ContextHub です。](/help/sites-cloud/authoring/personalization/contexthub.md) 次でのみ使用できます。 **プレビュー** モード。
+これにより、[ContextHub が開きます。](/help/sites-cloud/authoring/personalization/contexthub.md) **プレビュー**&#x200B;モードでのみ使用できます。
 
-![ContextHub ボタン](assets/page-editor-context-hub.png)
+![Context Hub ボタン](assets/page-editor-context-hub.png)
 
 #### ページタイトル {#page-title}
 
-これはページのタイトルで、大文字で情報としてレンダリングされます。
+これは、情報として大文字でレンダリングされたページのタイトルです。
 
 ![ページタイトル](assets/page-editor-page-title.png)
 
 #### モードセレクター {#mode-selector}
 
-モードセレクターに現在の [mode](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) 「 」では、編集、レイアウト、タイムワープ、ターゲット設定など、別のモードを選択できます。
+モードセレクターには現在の[モード](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)が表示され、別のモード（編集、レイアウト、タイムワープ、ターゲティングなど）を選択できます。
 
 ![モードセレクターボタン](assets/page-editor-mode-selector.png)
 
-ページの編集時には様々なモードがあり、異なるアクションを行うことができます。
+ページの編集時には様々なモードがあり、異なる操作を行うことができます。
 
-* [編集](/help/sites-cloud/authoring/page-editor/edit-content.md)  — ページコンテンツの編集時に使用するモード
-* [レイアウト](/help/sites-cloud/authoring/page-editor/responsive-layout.md)  — デバイスに応じたレスポンシブレイアウトを作成および編集できます（ページがレイアウトコンテナに基づいている場合）
-* [ターゲット設定](/help/sites-cloud/authoring/personalization/targeted-content.md)  — すべてのチャネルでのターゲティングと測定を通じてコンテンツの関連性を高めます
-* [タイムワープ](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp)  — 特定の時点でのページの状態の表示
-* [ライブコピーステータス](/help/sites-cloud/authoring/page-editor/introduction.md#live-copy-status)  — ライブコピーのステータスと継承される（または継承されない）コンポーネントの概要をすばやく確認できます
+* [編集](/help/sites-cloud/authoring/page-editor/edit-content.md) - ページコンテンツの編集時に使用するモード
+* [レイアウト](/help/sites-cloud/authoring/page-editor/responsive-layout.md) - デバイスに応じたレスポンシブレイアウトを作成および編集できます（ページがレイアウトコンテナに基づいている場合）
+* [ターゲティング](/help/sites-cloud/authoring/personalization/targeted-content.md) - すべてのチャネルにわたるターゲティングと測定で、コンテンツの関連性を高めます
+* [タイムワープ](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) - 特定の時点のページの状態を表示します
+* [ライブコピーステータス](/help/sites-cloud/authoring/page-editor/introduction.md#live-copy-status) - ライブコピーのステータスと継承される（または継承されない）コンポーネントの概要を素早く確認できます
 * [開発者モード](/help/implementing/developing/tools/developer-mode.md)
-* [プレビュー](/help/sites-cloud/authoring/page-editor/introduction.md#previewing-pages)  — パブリッシュ環境で表示されるようにページを表示する、またはコンテンツ内のリンクを使用して移動する
-* [注釈](/help/sites-cloud/authoring/page-editor/annotations.md)  — ページで注釈を追加または表示する
+* [プレビュー](/help/sites-cloud/authoring/page-editor/introduction.md#previewing-pages) - パブリッシュ環境とまったく同じ形式でページを表示するか、コンテンツ内のリンクを使って移動します
+* [注釈](/help/sites-cloud/authoring/page-editor/annotations.md) - ページに注釈を追加または表示します。
 
 >[!NOTE]
 >
@@ -111,43 +111,43 @@ AEMのページエディターは、主に次の 3 つのセクションで構�
 
 #### プレビュー {#preview}
 
-The **プレビュー** ボタンを有効にする [プレビューモード。](#preview-mode)：公開時に表示されるページを表示します。
+「**プレビュー**」ボタンを使用すると、[プレビューモード](#preview-mode)が有効になり、公開時に表示されるとおりにページが表示されます。
 
 ![「プレビュー」ボタン](assets/page-editor-preview.png)
 
 #### 注釈 {#annotate}
 
-**注釈** モードを使用すると、 [注釈](/help/sites-cloud/authoring/page-editor/annotations.md) をページに追加します。 最初の注釈を追加後、アイコンは、ページ上の注釈の数を示す数字に切り替わります。
+**注釈**&#x200B;モードを使用すると、ページをレビューするときに、ページに[注釈](/help/sites-cloud/authoring/page-editor/annotations.md)を追加できます。最初の注釈を追加後、アイコンは、ページ上の注釈の数を示す数字に切り替わります。
 
 ![注釈ボタン](assets/page-editor-annotations.png)
 
 ### サイドパネル {#side-panel}
 
-サイドパネルから、3 つの異なるタブにアクセスできます。
+サイドパネルから 3 つの異なるタブにアクセスできます。
 
-* ページに新しいコンテンツを追加するためのコンポーネントブラウザー
-* ページに新しいアセットを追加するためのアセットブラウザー
+* ページに新しいコンテンツを追加するコンポーネントブラウザー
+* ページに新しいアセットを追加するアセットブラウザー
 * ページの構造を参照するコンテンツツリー
 
 ![ページエディターのサイドパネル](assets/page-editor-side-panel.png)
 
-ドキュメントを参照してください [ページエディターのサイドパネル](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) を参照してください。
+詳しくは、[ページエディターのサイドパネル](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)ドキュメントを参照してください。
 
-### 編集者 {#editor}
+### エディター {#editor}
 
-エディターでは、ページコンテンツを直接変更できます。 ページは表示されるとおりにレンダリングされ、サイドパネルのアセットまたはコンポーネントブラウザーを使用して新しいコンテンツをドラッグ&amp;ドロップし、コンテンツをインプレースで編集できます。
+エディターで、ページコンテンツに直接変更を行います。ページは表示されるとおりにレンダリングされ、サイドパネルのアセットブラウザーまたはコンポーネントブラウザーを使用して新しいコンテンツをドラッグ＆ドロップしたり、コンテンツをインプレースで編集したりできます。
 
 ![ページエディターのエディター](assets/page-editor-editor.png)
 
 ## コンテンツの編集 {#editing-content}
 
-これで、ページエディターを理解したので、コンテンツを編集する準備が整いました。
+ページエディターについて理解したので、コンテンツを編集する準備が整いました。
 
-ドキュメントを参照してください [AEM Page Editor を使用したコンテンツの編集](/help/sites-cloud/authoring/page-editor/edit-content.md) を参照してください。
+詳しくは、[AEM ページエディターを使用したコンテンツの編集](/help/sites-cloud/authoring/page-editor/edit-content.md)ドキュメントを参照してください。
 
 ## ステータスの通知 {#status-notification}
 
-ページが [workflow](/help/sites-cloud/authoring/workflows/overview.md) 複数のワークフローに関しては、この情報は、ページの編集時にツールバーの下の通知バーに表示されます。
+ページが 1 つまたは複数の[ワークフロー](/help/sites-cloud/authoring/workflows/overview.md)の一部である場合、この情報はページの編集時にツールバーの下部にある通知バーに表示されます。
 
 ![ワークフロー通知](assets/page-editor-editing-workflow-notification.png)
 
@@ -169,7 +169,7 @@ The **プレビュー** ボタンを有効にする [プレビューモード。
 
 ## ライブコピーステータス {#live-copy-status}
 
-The **ライブコピーステータス** ページモードでは、ライブコピーのステータスと継承される（または継承されない）コンポーネントの概要をすばやく確認できます。
+**ライブコピーステータス**&#x200B;ページモードでは、ライブコピーのステータスの簡単な概要、および継承される（または継承されない）コンポーネントを示すことができます。
 
 * 緑のボーダー：継承
 * ピンクのボーダー：継承がキャンセルされている
@@ -182,12 +182,12 @@ The **ライブコピーステータス** ページモードでは、ライブ�
 
 ページをプレビューするには、以下の 2 つの方法があります。
 
-* [プレビューモード](#preview-mode)  — その場ですばやく確認できるプレビュー
-* [公開済みとして表示](#view-as-published)  — 新しいタブでページを開く完全なプレビュー
+* [プレビューモード](#preview-mode) - その場で素早く確認できるプレビュー
+* [公開済みとして表示](#view-as-published) - ページを新しいタブに開くフルプレビュー
 
 >[!TIP]
 >
->* コンテンツ内のリンクは表示されますが、次の場所ではアクセスできません： **編集** モード。
+>* コンテンツ内のリンクは表示されますが、**編集**&#x200B;モードでアクセスすることはできません。
 >* リンクを使用して移動する場合には、いずれかのプレビューオプションを使用してください。
 >* プレビューと最後に選択したモードを切り替えるには、[キーボードショートカット](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `Ctrl-Shift-M` を使用します。
 
@@ -197,13 +197,13 @@ The **ライブコピーステータス** ページモードでは、ライブ�
 
 ### プレビューモード {#preview-mode}
 
-コンテンツの編集時に、プレビューモードを使用してページをプレビューできます。 このモードでは、次の操作を実行できます。
+コンテンツの編集時に、プレビューモードを使用してページをプレビューすることができます。このモードでは、次の操作を実行できます。
 
 * 各種編集メカニズムを非表示にして公開時にページがどのように表示されるかをすばやく確認できます。
 * リンクを使用して移動できます。
 * ページコンテンツは更新&#x200B;**されません**。
 
-オーサリング時に、ページエディターの右上にある次のアイコンを使用してプレビューモードを使用できます。
+オーサリング時に、ページエディターの右上にある次のアイコンを使用して、プレビューモードに切り替えることができます。
 
 ![「プレビュー」ボタン](assets/page-editor-preview.png)
 
@@ -213,7 +213,7 @@ The **ライブコピーステータス** ページモードでは、ライブ�
 
 ## ページのロックとロック解除 {#locking-unlocking}
 
-AEMを使用すると、他のユーザーがコンテンツを編集できないようにページをロックできます。 ロックは、1 つの特定のページに多数の編集を加える場合や、短時間ページを固定する必要がある場合に便利です。
+AEM では、他のユーザーによるコンテンツの編集を防ぐためにページをロックできます。ロックは、1 つの特定のページで大量の編集作業を行う場合や、短期間ページを凍結する必要がある場合に便利です。
 
 1. **ページ情報**&#x200B;アイコンを選択して、メニューを開きます。
 1. 「**ページをロック**」オプションを選択します。
@@ -222,7 +222,7 @@ AEMを使用すると、他のユーザーがコンテンツを編集できな�
 
 ![ロックされたページの例](assets/page-editor-editing-locked-page.png)
 
-ページのロック解除は、 [ページのロック](#locking-a-page). ページがロックされると、ロックオプションはロック解除アクションに置き換えられます。
+ページのロック解除は、[ページのロック](#locking-a-page)と非常に似ています。ページをロックすると、ロックオプションはロック解除アクションに置き換わります。
 
 >[!CAUTION]
 >
@@ -243,4 +243,4 @@ AEMを使用すると、他のユーザーがコンテンツを編集できな�
 
 >[!NOTE]
 >
->ドキュメントを参照してください [取り消しとやり直しの制限](/help/sites-cloud/authoring/page-editor/undo-redo.md) ページ編集の取り消しとやり直しによって実行できることの詳細。
+>ページ編集の取り消しとやり直しで実行できることについて詳しくは、[取り消しとやり直しの制限](/help/sites-cloud/authoring/page-editor/undo-redo.md)ドキュメントを参照してください。

@@ -3,9 +3,9 @@ title: カスタムコード品質ルール
 description: このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。これらは、Adobe Experience Manager Engineering のベストプラクティスに基づいています。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4167'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -731,7 +731,7 @@ Experience Manager コンテンツリポジトリ内の `/libs` コンテンツ�
 >
 >例えば、ビルドで `com.myco:com.myco.ui.apps` と `com.myco:com.myco.all` というパッケージが生成され、`com.myco:com.myco.all` に `com.myco:com.myco.ui.apps` が組み込まれている場合、`com.myco:com.myco.ui.apps` 内のすべての設定が重複としてレポートされます。
 >
->これは、通常、 [コンテンツパッケージ構造のガイドライン](/help/implementing/developing/introduction/aem-project-content-package-structure.md). この例では、パッケージ `com.myco:com.myco.ui.apps` に `<cloudManagerTarget>none</cloudManagerTarget>` プロパティがありません。
+>これは一般に、[コンテンツパッケージ構造ガイドライン](/help/implementing/developing/introduction/aem-project-content-package-structure.md)に従っていない場合です。この例では、パッケージ `com.myco:com.myco.ui.apps` に `<cloudManagerTarget>none</cloudManagerTarget>` プロパティがありません。
 
 #### 非準拠コード {#non-compliant-code-osgi}
 

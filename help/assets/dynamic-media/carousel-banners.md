@@ -6,9 +6,9 @@ feature: Carousel Banners
 role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4492'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ Web サイトではカルーセルバナーは次のように表示されます�
 
 1. 次のいずれかの操作を行います。
 
-   * [Web サイトへのカルーセルバナーの追加](#adding-a-carousel-banner-to-your-website-page)Web サイトページにカルーセルバナーの URL またはコピーした埋め込みコードを追加できます。
+   * [Web サイトページにカルーセルバナーを追加します](#adding-a-carousel-banner-to-your-website-page)。コピーしておいたカルーセルバナーの URL または埋め込みコードを web サイトページに追加できます。
 
       * [カルーセルバナーを既存のクイックビューに統合します](#integrating-the-carousel-banner-with-an-existing-quickview)。サードパーティの Web コンテンツ管理システムを使用している場合は、新しいカルーセルバナーを、Web サイト上の既存のクイックビュー実装に統合する必要があります。
 

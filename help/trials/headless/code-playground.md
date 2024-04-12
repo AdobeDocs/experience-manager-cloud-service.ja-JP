@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '971'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ CodePen は、フロントエンド web 開発用のオンラインコードエ�
           ...
 ```
 
-代わりにエラーが発生した場合は、ブラウザーコンソールで詳細を確認するか、詳しくは [E メール別](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request).
+代わりにエラーが表示された場合は、ブラウザーコンソールで詳細を確認するか、[メール](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request)でお問い合わせください。
 
 CodePen について少し理解できたので、次に、前のモジュールで作成した永続クエリからデータを取得するようにアプリを設定します。
 
@@ -92,7 +92,7 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
    persistedQueryName = 'your-project/adventure-list';
    ```
 
-1. この変更が行われると、アプリが自動的に更新され、永続クエリからの生の JSON 応答が `#output` div に出力されます。エラーメッセージが表示された場合は、コンソールで詳細を確認してください。詳細を表示 [E メール別](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request) この手順でまだ問題が発生している場合は、をクリックします。
+1. この変更が行われると、アプリが自動的に更新され、永続クエリからの生の JSON 応答が `#output` div に出力されます。エラーメッセージが表示された場合は、コンソールで詳細を確認してください。この手順で問題が解決しない場合は、[メール](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request)でお問い合わせください。
 
 1. この JSON には、アプリで必要な正確なプロパティが含まれていますか？含まれていない場合は、[GraphQL API を使用したコンテンツの抽出](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql)学習ガイドに戻って変更を加えてください。完了したら、必ずクエリを保存して公開してください。
 

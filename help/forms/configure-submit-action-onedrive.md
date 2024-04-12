@@ -5,9 +5,9 @@ keywords: AEM Forms OneDrive との統合、Microsoft OneDrive への接続、AE
 feature: Adaptive Forms, Core Components
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '587'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ AEM Forms と Microsoft® OneDrive のシームレスな統合の利点の一部
 * OneDrive のクロスデバイスアクセシビリティにより、保存されたフォームデータを様々なプラットフォームで容易に使用できるようになります。ユーザーは、デスクトップ、ノートパソコン、タブレットおよびモバイルデバイスから送信されたデータ、添付ファイル、ドキュメントにアクセスし、アクセシビリティと柔軟性を高めることができます。
 * AEM Forms と OneDrive を統合すると、信頼性と拡張性に優れたソリューションで効率的なデータストレージを実現できます。ファイル、添付ファイル、レコードのドキュメントなど、すべてのアダプティブフォーム送信を OneDrive に簡単に保存し、整理されたアクセス可能なデータを確保できます。
 
-## OneDrive をアダプティブフォームに接続する
+## アダプティブフォームへの OneDrive の接続
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 

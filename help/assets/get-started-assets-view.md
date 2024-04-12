@@ -2,8 +2,9 @@
 title: ' [!DNL Assets View] の基本'
 description: ' [!DNL Assets View] のアクセス方法、ログイン操作、サポートされているユースケース、既知の問題について説明します。'
 role: User, Leader
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
-workflow-type: tm+mt
+exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
+workflow-type: ht
 source-wordcount: '334'
 ht-degree: 100%
 

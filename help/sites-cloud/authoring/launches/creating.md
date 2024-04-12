@@ -3,9 +3,9 @@ title: ローンチの作成
 description: 今後のアクティベーションのために既存の web ページの新しいバージョンを更新できるように、ローンチを作成できます。
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1042'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 98%
 >
 >これらのページは編集できません。次のメッセージが表示されます。
 >
->* **このページはローンチに含まれていません。 実稼動ページに移動**
+>* **このページはローンチに含まれていません。実稼動ページへ**
 
 ## ローンチの作成 {#creating-a-launch}
 

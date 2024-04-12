@@ -4,9 +4,9 @@ description: ローカル検証、デバッグ、柔軟なモードのファイ�
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: 2cb57347856568da979b34832ce12cce295841dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3028'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -550,7 +550,7 @@ INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apach
 
 ### カスタム環境変数の挿入 {#environment-variables}
 
-カスタム環境変数は、Dispatcher SDK と共に使用できます。そのためには、別のファイルで設定し、 `ENV_FILE` 環境変数を使用して、ローカルの dispatcher を起動する必要があります。
+カスタム環境変数を Dispatcher SDK で使用するには、ローカルの Dispatcher を起動する前に、カスタム環境変数を別のファイルに設定し、`ENV_FILE` 環境変数で参照します。
 
 カスタム環境変数を含むファイルは次のようになります。
 

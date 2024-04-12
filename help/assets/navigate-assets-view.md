@@ -2,10 +2,11 @@
 title: 「[!DNL Assets view] ユーザーインターフェイス」
 description: ' [!DNL Assets view] のユーザーインターフェイスとナビゲーションについて説明します。'
 role: User
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
-workflow-type: tm+mt
+exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
+workflow-type: ht
 source-wordcount: '912'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +39,7 @@ ht-degree: 98%
 * [コレクション](/help/assets/manage-collections-assets-view.md)：コレクションとは、Adobe Experience Manager アセットビュー内のアセット、フォルダーまたはその他のコレクションのセットです。コレクションを使用して、ユーザー間でアセットを共有します。フォルダーとは異なり、1 つのコレクションに異なる複数の場所のアセットを含めることができます。1 人のユーザーと複数のコレクションを共有できます。各コレクションには、アセットへの参照が含まれます。アセットの参照整合性はコレクション間で維持されます。
 
 * [インサイト](/help/assets/manage-reports-assets-view.md#view-live-statistics)：[!DNL Assets view] では、ダッシュボードでリアルタイムのインサイトを表示できます。アセットビューを使用すると、アセットビュー環境のリアルタイムデータをインサイトダッシュボードで表示できます。過去 30 日間または過去 12 か月間のリアルタイムイベント指標を表示できます。
-* **ごみ箱**：ルートの **[!UICONTROL Assets]** フォルダーから削除されたアセットをリストします。ごみ箱フォルダー内のアセットを選択して、元の場所に復元したり、完全に削除したりできます。キーワードの指定、アセットステータス、ファイルタイプ、MIME タイプ、画像サイズ、アセットの作成、変更、有効期限などのフィルターの適用を行えるほか、現在のユーザーが破棄したアセットによるフィルタリングを適用できます。また、カスタムフィルターを適用して、ごみ箱フォルダー内の適切なアセットを検索することもできます。標準フィルターとカスタムフィルターの使用について詳しくは、 [Assets ビューでのアセットの検索](/help/assets/search-assets-view.md).
+* **ごみ箱**：ルートの **[!UICONTROL Assets]** フォルダーから削除されたアセットをリストします。ごみ箱フォルダー内のアセットを選択して、元の場所に復元したり、完全に削除したりできます。キーワードの指定、アセットステータス、ファイルタイプ、MIME タイプ、画像サイズ、アセットの作成、変更、有効期限などのフィルターの適用を行えるほか、現在のユーザーが破棄したアセットによるフィルタリングを適用できます。また、カスタムフィルターを適用して、ごみ箱フォルダー内の適切なアセットを検索することもできます。標準フィルターとカスタムフィルターの使用について詳しくは、[アセットビューでのアセットを検索する](/help/assets/search-assets-view.md)方法を参照してください。
 * **設定**：メタデータフォーム、レポート、分類管理など、**設定**&#x200B;を使用してアセットビューの様々なオプションを設定できます。
 
 <!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
@@ -93,7 +94,7 @@ Other use cases after previewing.
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
-* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&amp;lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General#support)に問い合わせる
 
 >[!MORELIKETHIS]
 >

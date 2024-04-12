@@ -4,9 +4,9 @@ description: Dispatcher は、Adobe Experience Manager パブリッシュ環境�
 feature: Dispatcher, GraphQL API
 exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
 source-git-commit: 859ea382cce6822da1da7d11213c3f44a25edef3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '339'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->個人を成し遂げるには `ETag` キャッシュされた永続クエリ ( *各* 一意の応答 ) `FileETag Digest` dispatcher 設定の仮想ホスト設定で設定を使用する必要があります（まだ存在しない場合）。
+>キャッシュされた永続クエリ（*各*&#x200B;一意の応答）で個々の `ETag` ヘッダーの計算を実行するには、Dispatcher 設定の仮想ホスト設定で `FileETag Digest` 設定を使用する必要があります（既に存在しない場合）。
 >
 >```xml
 ><Directory />    

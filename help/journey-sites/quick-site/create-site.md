@@ -3,9 +3,9 @@ title: テンプレートからサイトを作成
 description: サイトテンプレートを使用して新しい AEM サイトをすばやく作成する方法を説明します。
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1485'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -181,9 +181,9 @@ AEM クイックサイト作成ジャーニーの前のドキュメントであ�
 [パイプラインの設定](pipeline-setup.md) のドキュメントを確認して、クイックサイト作成ジャーニーの次のパートに進むことをお勧めしますが、以下のリソースではこのドキュメントで取り上げた概念についてより詳しく説明しています。追加的なオプションであり、ジャーニーを続ける上で必須のリソースではありません。
 
 * [AEM 標準サイトテンプレート](https://github.com/adobe/aem-site-template-standard) - これは AEM 標準サイトのテンプレートの GitHub リポジトリです。
-* [ページの整理](/help/sites-cloud/authoring/sites-console/organizing-pages.md)  — このガイドでは、AEMサイトのページを整理する方法について詳しく説明します。
-* [ページの作成](/help/sites-cloud/authoring/sites-console/creating-pages.md)  — このガイドでは、サイトに新しいページを追加する方法について詳しく説明します。
-* [ページの管理](/help/sites-cloud/authoring/sites-console/managing-pages.md)  — このガイドでは、移動、コピー、削除など、サイトのページを管理する方法について詳しく説明します。
+* [ページの整理](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - このガイドでは、AEM サイトのページを整理する方法について詳しく説明します。
+* [ページの作成](/help/sites-cloud/authoring/sites-console/creating-pages.md) - このガイドでは、サイトに新しいページを追加する方法について詳しく説明します。
+* [ページの管理](/help/sites-cloud/authoring/sites-console/managing-pages.md) - このガイドでは、移動、コピー、削除など、サイトのページを管理する方法について詳しく説明します。
 * [パッケージの操作方法](/help/implementing/developing/tools/package-manager.md) - パッケージを使用すると、リポジトリコンテンツの読み込みと書き出しが可能になります。このドキュメントでは、AEM 6.5 でのパッケージの操作方法を説明します（AEMaaCS にも適用）。
 * [サイト管理ドキュメント](/help/sites-cloud/administering/site-creation/create-site.md) - クイックサイト作成ツールの機能について詳しくは、サイト作成に関する技術ドキュメントを参照してください。
 * [AEM Sites ページへのフォームの作成または追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) - フォームを web サイトに統合し、デジタルエクスペリエンスを最適化して最大限の効果を得るための手順とベストプラクティスについて説明します。

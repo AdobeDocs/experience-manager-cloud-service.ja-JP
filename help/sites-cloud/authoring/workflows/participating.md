@@ -3,7 +3,7 @@ title: ワークフローへの参加
 description: ワークフローには通常、ページまたはアセットでユーザーがアクティビティを実行する必要があるステップが含まれています。
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1507'
 ht-degree: 100%
 

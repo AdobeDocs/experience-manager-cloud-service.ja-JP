@@ -3,9 +3,9 @@ title: Screens as a Cloud Service でのチャネルの作成と管理
 description: ここでは、Screens as a Cloud Service でチャネルを作成および管理する方法について説明します。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 source-git-commit: f7ed7c63fd141c6a9817e4718edb31425b14a761
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1103'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 
 * Screens コンテンツプロバイダーへのチャネルを作成する方法を理解する
 * チャネル内のコンテンツを管理し編集する
-* でチャネルの割り当てと有効化のスケジュールを管理します [Screens Service Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=ja)
+* [Screens サービスプロバイダー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=ja)でチャネルの割り当てとアクティブ化スケジュールを管理する
 
 ## Screens as a Cloud Service で新しいシーケンスチャネルを作成する手順 {#create-new-channel}
 
@@ -121,7 +121,7 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 デフォルトの割り当て詳細があるチャネルは、通常のチャネルと同じ方法で表示でき、カスタムチャネルを毎回手動で定義する代わりに、デフォルトの割り当て詳細を使用するオプションが追加されます。
 
 1. チャネルを割り当てるディスプレイの詳細ページに移動し、「**チャネルを割り当て**」をクリックします。
-または、 [在庫](https://experience.adobe.com/screens/displays) を表示し、 **チャネルを割り当て**.
+または、[在庫](https://experience.adobe.com/screens/displays)表示で目的のディスプレイを選択し、「**チャネルを割り当て**」をクリックします。
 1. チャネル割り当てダイアログが開きます。
 
    ![画像](/help/screens-cloud/assets/display/Assignments4.png)

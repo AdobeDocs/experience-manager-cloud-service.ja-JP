@@ -3,9 +3,9 @@ title: デモサイトを作成
 description: 事前設定済みのテンプレートのライブラリに基づいて、AEM にデモサイトを作成します。
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -89,7 +89,7 @@ AEM Reference Demo Add-On ジャーニーの前のドキュメントである[�
 
    ![ページを編集](assets/edit-page.png)
 
-おめでとうございます。これで、デモサイトのコンテンツをさらに詳しく調べ、Reference Demo Add-On のベストプラクティスコンテンツを通じて AEM が提供するすべてを見つけることができます。
+これで完了です。これで、デモサイトのコンテンツをさらに詳しく調べ、Reference Demo Add-On のベストプラクティスコンテンツを通じて AEM が提供するすべてを見つけることができます。
 
 他のテンプレートに基づいて追加のサイトを作成し、より多くの AEM 機能を調べます。
 

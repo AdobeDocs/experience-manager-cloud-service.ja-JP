@@ -3,7 +3,7 @@ title: ContextHub JavaScript API リファレンス
 description: ContextHub コンポーネントをページに追加すると、ContextHub JavaScript API がスクリプトで使用できるようになります。
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4602'
 ht-degree: 100%
 

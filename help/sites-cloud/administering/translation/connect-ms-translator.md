@@ -5,7 +5,7 @@ feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '487'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ AEM ページのコンテンツまたはアセットの翻訳に Microsoft Trans
 | Property | 説明 |
 |---|---|
 | 翻訳ラベル | 翻訳サービスの表示名 |
-| 翻訳の帰属 | （オプション）ユーザー生成コンテンツの場合に、翻訳済みのテキストの横に表示される帰属情報（例：「`Translations by Microsoft`」） |
+| 翻訳の帰属 | （オプション）ユーザー生成コンテンツの場合に、翻訳済みのテキストの横に表示される帰属情報（例：`Translations by Microsoft`） |
 | ワークスペース ID | （オプション）使用するカスタム Microsoft Translator エンジンの ID |
 | サブスクリプションキー | Microsoft Translator の Microsoft サブスクリプションキー |
 

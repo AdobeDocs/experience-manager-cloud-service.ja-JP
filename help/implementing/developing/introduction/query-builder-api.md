@@ -3,7 +3,7 @@ title: Query Builder API
 description: アセット共有の Query Builder の機能は、Java API と REST API を通して公開されます。
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1830'
 ht-degree: 100%
 

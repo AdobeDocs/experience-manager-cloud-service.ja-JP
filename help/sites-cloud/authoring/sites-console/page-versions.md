@@ -3,7 +3,7 @@ title: ページバージョンの処理
 description: AEM でページのバージョンを作成、比較および復元する方法について説明します。
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1516'
 ht-degree: 100%
 
@@ -167,7 +167,7 @@ ht-degree: 100%
 
    ![バージョンのプレビュー](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. **プレビュー**&#x200B;を選択します。ページが新しいタブに表示されます。
+1. 「**プレビュー**」を選択します。ページが新しいタブに表示されます。
 
    >[!CAUTION]
    >

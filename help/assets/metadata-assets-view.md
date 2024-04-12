@@ -5,7 +5,7 @@ role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1667'
 ht-degree: 100%
 

@@ -5,9 +5,9 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 source-git-commit: 7fe779602f52081dc785074bdc0f374665b908e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '609'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -47,24 +47,24 @@ ht-degree: 86%
 
 * （サンドボックスのみ）サービスにオンボードした後、[作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=ja)と[実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=ja)は、実稼働用と非実稼働用の両方のパイプラインを実行します。[!DNL AEM Forms] as a Cloud Service の最新機能を有効にし、環境に提供します。
 
-Forms as a Cloud Service を使用してアダプティブフォーム（デジタル登録）を作成したり、顧客通信を生成したりできます。完了後 [オンボーディング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ja) から [!DNL Adobe Experience Manager] as a Cloud Serviceの場合は、次の操作を実行して、Forms — デジタル登録または顧客コミュニケーションの機能を有効にします。 <!--You can also enable both the features-->:
+Forms as a Cloud Service を使用してアダプティブフォーム（デジタル登録）を作成したり、顧客通信を生成したりできます。[!DNL Adobe Experience Manager] as a Cloud Service の[オンボーディング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ja)完了後、次のいずれかの操作を実行して、デジタル登録またはカスタマーコミュニケーション機能を有効にします。<!--You can also enable both the features-->
 
 1. Cloud Manager にログインし、AEM Forms as a Cloud Service インスタンスを開きます。
 1. 「プログラムを編集」オプションを開き、「ソリューションとアドオン」タブに移動します。
 
-   * 実稼動環境がある場合は、「 **[!UICONTROL Forms — コミュニケーション]** Forms — デジタル登録とForms — コミュニケーションアドオンを有効にするオプションです。
+   * 本番環境がある場合は、「**[!UICONTROL Forms - コミュニケーション]**」オプションを選択して、Forms - デジタル登録および Forms - コミュニケーションアドオンを有効にします。
 
      ![通信](assets/communications.png)
 
    <!-- If you have already enabled the **[!UICONTROL Forms - Digital Enrollment]** option, then select the **[!UICONTROL Forms - Communications Add-On]** option. ![Addon](assets/add-on.png) -->
 
-   * サンドボックス環境がある場合は、「 **[!UICONTROL Forms]** : Forms — デジタル登録とForms — コミュニケーションアドオンを有効にします。
+   * サンドボックス環境がある場合は、「**[!UICONTROL Forms]**」を選択して、Forms - デジタル登録と Forms - コミュニケーションアドオンを有効にします。
 
      ![フォームデジタル登録の選択](assets/forms-digital-enrollment1.png)
 
 
 1. 「**[!UICONTROL 更新]**」をクリックします。
-1. ビルドパイプラインを実行します。ビルドパイプラインが成功したら、選択したソリューションがお使いの環境で有効になります。
+1. ビルドパイプラインを実行します。ビルドパイプラインが正常に完了すると、お使いの環境で選択したソリューションが有効になります。
 
 >[!NOTE]
 >

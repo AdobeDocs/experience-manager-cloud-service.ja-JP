@@ -6,9 +6,9 @@ feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '892'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -54,15 +54,15 @@ DAM ライブラリ担当者、開発者およびスーパーユーザーは、�
 
 アセットビューへのアクセス方法および管理ビューで提供される簡略化について詳しくは、[アセットビューの概要](/help/assets/assets-view-introduction.md)を参照してください。
 
-## Edge Delivery Services向けのドキュメントベースオーサリングとの統合 {#integrate-doc-authoring-edge-and-assets}
+## Edge Delivery Services 向けのドキュメントベースのオーサリングとの統合 {#integrate-doc-authoring-edge-and-assets}
 
-Edge 配信を使用すると、作成者がコンテンツをすばやく更新および公開でき、新しいサイトを迅速に起動できる、魅力的な迅速な Web サイトを作成できます。
+Edge 配信を使用すると、作成者がコンテンツをすばやく更新および公開でき、新しいサイトを迅速に起動できる、魅力的な迅速な web サイトを作成できます。
 
-Edge Delivery Services向けAEM Assetsとドキュメントベースのオーサリングを統合し、Web サイト作成者がMicrosoft Word またはGoogle Docs でドキュメントを作成する際に、AEM Assetsリポジトリで使用可能な画像を使用できるようにします。 詳しくは、 [AEM Assetsとドキュメントベースのオーサリングの統合](/help/edge/using.md#integrate-assets-edge).
+AEM Assets を Edge Delivery Services のドキュメントベースのオーサリングと統合すると、web サイト作成者は Microsoft Word または Google Docs でドキュメントをオーサリングしながら、AEM Assets リポジトリで使用可能な画像を使用できます。詳しくは、[AEM Assets とドキュメントベースのオーサリングの統合](/help/edge/using.md#integrate-assets-edge)を参照してください。
 
-## Adobe Journey Optimizerとの統合 {#integration-with-ajo}
+## Adobe Journey Optimizer との統合 {#integration-with-ajo}
 
-[Adobe Journey Optimizer](https://business.adobe.com/jp/products/journey-optimizer/adobe-journey-optimizer.html) は、インテリジェントな判定とインサイトを提供するオムニチャネルキャンペーンを提供するため、ジャーニー管理を簡素化します。 Journey Optimizerを使用してメッセージをデザインする場合、Journey Optimizerインターフェイス内から直接 Assetsas a Cloud Serviceリポジトリにアクセスできます。 ユーザーは、Experience Manager Assetsの埋め込みユーザーインターフェイスを使用してアセットにアクセスできます。 詳しくは、 [Experience Manager Assetsでのアセットの作成と管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html).
+[Adobe Journey Optimizer](https://business.adobe.com/jp/products/journey-optimizer/adobe-journey-optimizer.html) では、お客様のジャーニー管理を簡素化し、オムニチャネルキャンペーンにインテリジェントな意思決定とインサイトを提供します。Journey Optimizer を使用してメッセージをデザインする際、Journey Optimizer インターフェイス内から Assets as a Cloud Service リポジトリに直接アクセスできます。ユーザーは、Experience Manager Assets の組み込みユーザーインターフェイスを使用して、アセットにアクセスできます。詳しくは、[Experience Manager Assets を使用したアセットの作成と管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html?lang=ja)を参照してください。
 
 ## 新しい Assets の機能 {#whats-new-assets}
 

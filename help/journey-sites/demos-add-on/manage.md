@@ -3,7 +3,7 @@ title: デモサイトを管理
 description: デモサイトの管理に役立つツールと、デモサイトを削除する方法について説明します。
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '927'
 ht-degree: 100%
 

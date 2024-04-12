@@ -3,9 +3,9 @@ title: コンポーネントの概要
 description: コンポーネントは、特定の機能を実現し、Web サイトにコンテンツを提供するためのモジュールユニットです。
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '376'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 56%
 
 ## コンポーネントとは {#what-are-components}
 
-* 特定の機能を実現し、Web サイトにコンテンツを提供するためのモジュールユニットです。
+* 特定の機能を実現し、web サイトにコンテンツを提供するためのモジュールユニットです。
 * 再利用可能。
 * リポジトリーの 1 つのフォルダー内の自己完結型ユニットとして開発されます。
-* 非表示の設定ファイルはありません。
+* 非表示の設定ファイルを持ちません。
 * 他のコンポーネントを含めることができます。
-* AEMシステム内の任意の場所で実行でき、特定のコンポーネントでの実行に制限することもできます。
+* AEM システム内ならどこでも実行でき、また、特定のコンポーネントで実行できるように制限することもできます。
 * 標準化されたユーザーインターフェイスがあります。
 * 設定可能な編集動作があります。
 * Granite UI コンポーネントに基づくサブ要素を使用して構築されたダイアログボックスを使用します。
-* これらはを使用して開発されています。 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ja).
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ja) を使用して開発されています。
 * デフォルトの機能を拡張するカスタマイズされたコンポーネントを作成するために開発できます。
 
-コンポーネントはモジュラーなので、次のことが可能です。
+コンポーネントはモジュールなので、次のことができます。
 
 * ローカルインスタンス上で新しいコンポーネントを開発します。
 * テスト環境にデプロイします。
@@ -42,21 +42,21 @@ ht-degree: 56%
 
 ## AEM コアコンポーネント {#aem-core-components}
 
-[AEMコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja) は、AEMの開発時間を短縮し、Web サイトのメンテナンスコストを削減するための、標準化された Web コンテンツ管理 (WCM) コンポーネントのセットです。
+[AEM コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)は、web サイト開発時間の短縮とメンテナンスコストの削減を実現する、AEM の標準化された web コンテンツ管理（WCM）コンポーネントのセットです。
 
 コアコンポーネントは、Cloud Service として AEM と共に提供され、[WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)では、コンポーネントの実装方法と使用方法を説明します。コンポーネントは、すべてのソースコードと共に提供されており、そのまま使用することも、コンポーネントを変更または拡張する出発点として使用することもできます。
 
 ### 利用可能なコンポーネントの表示 {#viewing-available-components}
 
-AEMインスタンスで使用可能なすべてのコンポーネントの概要については、 [コンポーネントコンソール](/help/sites-cloud/authoring/components-console.md).
+AEM インスタンスで利用可能なすべてのコンポーネントの概要を確認するには、[コンポーネントコンソール](/help/sites-cloud/authoring/components-console.md)を使用します。
 
-または、CRXDE Liteを使用して、リポジトリで使用可能なすべてのコンポーネントのリストを取得することもできます。
+または、CRXDE Lite を使用して、リポジトリで利用可能なすべてのコンポーネントのリストを取得することもできます。
 
 1. **[!UICONTROL CRXDE Lite]** で、ツールバーから「**[!UICONTROL ツール]**」を選択し、「**[!UICONTROL クエリ]**」を選択して、「**[!UICONTROL クエリ]**」タブを開きます。
 
 1. 「**[!UICONTROL クエリ]**」タブで、「**[!UICONTROL タイプ]**」として「`XPath`」を選択します。
 
-1. Adobe Analytics の **[!UICONTROL クエリ]** 入力フィールドに、次の文字列を入力します。
+1. 「**[!UICONTROL クエリ]**」入力フィールドに次の文字列を入力します。
 
    `//element(*, cq:Component)`
 

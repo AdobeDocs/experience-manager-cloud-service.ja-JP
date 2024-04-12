@@ -3,7 +3,7 @@ title: Adobe Target へのエクスペリエンスフラグメントの書き出
 description: エクスペリエンスフラグメントを Adobe Target に書き出し、エクスペリエンスをテストしてパーソナライズする方法について説明します。
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2184'
 ht-degree: 100%
 

@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 向けのログ
 description: AEM as a Cloud Service のログを使用して一元的なログサービスのグローバルパラメーターを設定する方法、個々のサービスに特有の設定またはデータのログ記録をリクエストする方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 97a1781f0a2d59d2bed7b03c7d4f045c81784f60
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2797'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -504,7 +504,7 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service では、ユーザーが CDN ログにアクセスできるようになっています。このログは、キャッシュヒット率の最適化などのユースケースに役立ちます。CDN ログ形式はカスタマイズできず、情報、警告、エラーなどの様々なモードに設定する概念もありません。
 
-CDN ログは、新しい Splunk 転送のサポートチケットリクエストに対して Splunk に転送されます。Splunk 転送を既に有効にしているお客様は、将来 CDN ログを追加できます。
+CDN ログは、新しい Splunk 転送サポートチケットリクエストの Splunk に転送されます。Splunk 転送を既に有効にしているお客様は、将来 CDN ログを追加できます。
 
 **例**
 

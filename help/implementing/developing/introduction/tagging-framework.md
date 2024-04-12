@@ -3,7 +3,7 @@ title: AEM タグ付けフレームワーク
 description: コンテンツにタグを付け、AEM タグ付けインフラストラクチャを使用して分類や整理を行います。
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1562'
 ht-degree: 100%
 
@@ -58,7 +58,7 @@ ht-degree: 100%
 
 ### 分類のルートノード {#taxonomy-root-node}
 
-分類のルートノードは、リポジトリー内にあるすべてのタグの基本パスです。分類のルートノードは、`cq:Tag` タイプのノードにすることが&#x200B;*できません*。
+分類のルートノードは、リポジトリ内にあるすべてのタグの基本パスです。分類のルートノードは、`cq:Tag` タイプのノードにすることが&#x200B;*できません*。
 
 AEM の基本パスは `/content/cq:tags` であり、ルートノードのタイプは `cq:Folder` です。
 

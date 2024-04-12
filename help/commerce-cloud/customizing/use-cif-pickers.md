@@ -9,9 +9,9 @@ audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
 source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '560'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ AEM Content &amp; Commerce Authoring には、AEM の作成者やマーケター
 
 ## 製品ピッカー {#product-picker}
 
-プロジェクトコンポーネントで製品ピッカーを使用するには、開発者がコンポーネントダイアログに `commerce/gui/components/common/cifproductfield` を追加する必要があります。例えば、 `cq:dialog`:
+プロジェクトコンポーネントで製品ピッカーを使用するには、開発者がコンポーネントダイアログに `commerce/gui/components/common/cifproductfield` を追加する必要があります。例えば、`cq:dialog` には以下を使用します。
 
 ```xml
 <product jcr:primaryType="nt:unstructured"

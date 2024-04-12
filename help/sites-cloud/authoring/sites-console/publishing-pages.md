@@ -3,13 +3,13 @@ title: ページの公開
 description: AEM の様々なメカニズムを使用して、ページを公開および非公開にする方法について説明します。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1936'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# ページの公開  {#publishing-pages}
+# ページの公開 {#publishing-pages}
 
 オーサー環境でコンテンツを作成およびレビューした後は、[公開 web サイト（パブリッシュ環境）でコンテンツを利用できるようにする](/help/sites-cloud/authoring/author-publish.md)ことが目標となります。
 
@@ -61,11 +61,11 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 >[!NOTE]
 >
-> その他の可能性については、[ページプロパティの「基本」タブ](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)の「**オンタイム**」および「**オフタイム**」を参照してください。
+> その他の可能性については、[ページプロパティの「基本」タブ](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)にある「**オンタイム**」および「**オフタイム**」を参照してください。
 
 ### ページエディターからの公開 {#publishing-from-the-page-editor}
 
-ページを編集する際に、 [ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md) エディターから直接公開できます。
+[ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)でページを編集している場合、エディターから直接ページを公開できます。
 
 1. **ページ情報**&#x200B;アイコンを選択してメニューを開き、「**ページを公開**」オプションを選択します。
 
@@ -90,7 +90,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 >[!NOTE]
 >
->ページエディターからの公開は、浅い公開です。つまり、選択したページ（複数可）のみが公開され、子ページは公開されません。
+>ページエディターからの公開は、浅い公開です。つまり、選択したページ（1 ページまたは複数ページ）だけが公開され、子ページ（1 ページまたは複数ページ）は公開されません。
 
 >[!NOTE]
 >
@@ -98,7 +98,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 ### サイトコンソールからの公開 {#publishing-from-the-sites-console}
 
-Adobe Analytics の **Sites** コンソールでは、次の 2 つの公開オプションがあります。
+**サイト**&#x200B;コンソールには、2 つの公開オプションがあります。
 
 * [クイック公開](#quick-publish)
 * [公開を管理](#manage-publication)
@@ -249,9 +249,9 @@ Adobe Analytics の **Sites** コンソールでは、次の 2 つの公開オ�
 
 ### コンソールから非公開にする {#unpublishing-from-the-console}
 
-[「公開を管理」オプションを使用して公開する](#manage-publication)場合と同様に、「公開を管理」オプションを使用して非公開にすることもできます。
+[「公開を管理」オプションを使用して公開する](#manage-publication)場合と同様に、「公開を管理」オプションを使用して非公開にできます。
 
-1. サイトコンソールで 1 つまたは複数のページを選択し、「**公開を管理**」ボタンをクリックします。
+1. Sites コンソールで 1 つまたは複数のページを選択し、「**公開を管理**」ボタンをクリックします。
 1. **公開を管理**&#x200B;ウィザードが起動します。最初の手順の&#x200B;**オプション**&#x200B;で、デフォルトオプションの&#x200B;**公開**&#x200B;の代わりに&#x200B;**非公開**&#x200B;を選択します。
 
    ![非公開 - オプション](/help/sites-cloud/authoring/assets/publishing-unpublish.png)

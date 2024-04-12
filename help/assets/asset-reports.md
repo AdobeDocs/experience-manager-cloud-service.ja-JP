@@ -6,9 +6,9 @@ feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
 source-git-commit: 22fc488cd507a3504c472eab3dea8daa7e63b81c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '935'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

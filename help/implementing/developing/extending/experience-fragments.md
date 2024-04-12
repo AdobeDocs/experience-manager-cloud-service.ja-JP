@@ -3,9 +3,9 @@ title: エクスペリエンスフラグメントの概要
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントの拡張
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1642'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ URL で `.plain.` セレクターを使用すると、プレーン HTML レン�
 
 * または、`-src` か `-href` で終わる
 
-例：
+次に例を示します。
 
 `.../brooklyn-coat/master.plain.html`
 
@@ -47,7 +47,7 @@ URL で `.plain.` セレクターを使用すると、プレーン HTML レン�
 
 ![プレーン HTML レンディション](assets/xf-14.png)
 
-プレーンレンディションセレクターでは、追加のスクリプトとは異なり、トランスフォーマーを使用します。 The [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) は変換サービスとして使用されます。 このトランスフォーマーは、次の場所で設定します。
+プレーンレンディションセレクターでは、追加スクリプトとは異なり、トランスフォーマーを使用します。[Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) がトランスフォーマーとして使用されます。このトランスフォーマーは、次の場所で設定します。
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 

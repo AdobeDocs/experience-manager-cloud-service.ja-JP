@@ -3,7 +3,7 @@ title: スタイルシステム
 description: スタイルシステムを使用すると、テンプレート作成者がコンポーネントのコンテンツポリシーのスタイルクラスを定義し、コンテンツ作成者がページでのコンポーネントの編集時にそのスタイルクラスを選択できます。これらのスタイルは、1 つのコンポーネントの別の視覚的バリエーションとして使用することができるので、コンポーネントがより柔軟で扱いやすいものになります。
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1305'
 ht-degree: 100%
 
@@ -83,7 +83,7 @@ AEM では、実際には最後の 3 つの手順のみが実行されます。�
 
 ### テンプレート作成者として {#as-a-template-author}
 
-1. WKND の英語のマスターホームページ（`http://<host>:<port>/sites.html/content/wknd/language-masters/en`）の編集時に、**ページ情報／テンプレートの編集**&#x200B;でページのテンプレートを編集します。
+1. WKND の英語版マスターホームページ（`http://<host>:<port>/sites.html/content/wknd/language-masters/en`）の編集時に、**ページ情報／テンプレートの編集**&#x200B;でページのテンプレートを編集します。
 
    ![テンプレートを編集](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 

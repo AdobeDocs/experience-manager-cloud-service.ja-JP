@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
 source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3769'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -97,7 +97,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 パッケージマネージャーには次の 3 つの方法でアクセスできます。
 
-1. AEM のメインメニュー／**ツール**／**デプロイメント**／**パッケージ**
+1. AEM のメインメニューから&#x200B;**ツール**／**デプロイメント**／**パッケージ**&#x200B;を選択
 1. [CRXDE Lite](crxde.md) から上部のスイッチャーバーを使用
 1. `http://<host>:<port>/crx/packmgr/` に直接アクセス 
 
@@ -149,7 +149,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 ## パッケージ設定 {#package-settings}
 
-パッケージとは基本的に、一連のフィルターと、これらのフィルターに基づくリポジトリデータです。パッケージマネージャー UI では、パッケージをクリックしてから&#x200B;**編集**&#x200B;ボタンを押すと、次の設定を含むパッケージの詳細が表示されます。
+パッケージとは基本的に、一連のフィルターと、これらのフィルターに基づくリポジトリデータです。パッケージマネージャーの UI を使用して、パッケージをクリックし、「**編集**」ボタンをクリックすると、次の設定を含むパッケージの詳細が表示されます。
 
 * [一般設定](#general-settings)
 * [パッケージフィルター](#package-filters)
@@ -175,7 +175,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 ### パッケージフィルター {#package-filters}
 
-フィルターは、パッケージに含めるリポジトリノードを特定します。 A **フィルター定義** 次の情報を指定します。
+フィルターは、パッケージに含めるリポジトリノードを識別します。**フィルター定義**&#x200B;によって、以下の情報が指定されます。
 
 * 含めるコンテンツの&#x200B;**ルートパス**。
 * ルートパスの下で特定のノードを含める、または除外する&#x200B;**ルール**。
@@ -304,7 +304,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 ### パッケージを再度含める {#rewrapping-a-package}
 
-パッケージは、ビルド後に再度含めることができます。再度含めると、パッケージのコンテンツは変更されずに、サムネールや説明などを含まないパッケージの情報が変更されます。
+パッケージは、ビルド後に再度含めることができます。再度含めると、パッケージのコンテンツを変更せずに、サムネール、説明などを含まないパッケージ情報を変更します。
 
 1. [パッケージマネージャーにアクセスします。](#accessing)
 
@@ -338,7 +338,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
    ![パッケージコンテンツ](assets/package-contents.png)
 
-1. インストールのドライランを実行するには、**その他**／**インストールのテスト**&#x200B;をクリックします。インストールが実行されたかのように、パッケージマネージャーによって結果がアクティビティログにレポートされます。
+1. インストールのドライランを実行するには、**その他**／**インストールをテスト**&#x200B;をクリックします。パッケージマネージャーは、インストールが実行されたかのように結果をアクティビティログにレポートします。
 
    ![インストールをテスト](assets/test-install.png)
 
@@ -516,7 +516,7 @@ POST リクエストを介して検証する場合、応答は JSON オブジェ
 
 1. パッケージ名をクリックして、パッケージリストからパッケージの詳細を開きます。
 
-1. **その他**／**範囲**&#x200B;をクリックします。
+1. **その他**／**対象範囲**&#x200B;をクリックします。
 
 1. 有効範囲の詳細は、アクティビティログにリストされます。
 
@@ -612,4 +612,4 @@ AEM パッケージを使用すると、コンテンツを作成して AEMaaCS �
 
 [ソフトウェア配布](https://downloads.experiencecloud.adobe.com) は、ローカル開発の AEM SDK で使用するための AEM パッケージを提供します。ソフトウェア配布で提供される AEM パッケージは、アドビサポートが明示的に承認しない限り、AEMaaCS クラウド環境にインストールできません。
 
-詳しくは、 [ソフトウェア配布に関するドキュメント。](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ja)
+詳しくは、[ソフトウェア配布ドキュメント](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ja)を参照してください。

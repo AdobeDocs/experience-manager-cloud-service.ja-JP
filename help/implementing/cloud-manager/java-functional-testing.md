@@ -3,9 +3,9 @@ title: Java™ 機能テスト
 description: AEM as a Cloud Service 用の Java™ 機能テストの作成方法を説明します
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 source-git-commit: 641690f2eca17bbfb47360282e818b6902a36144
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '878'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -113,10 +113,10 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 
 #### 依存関係
 
-* aem-cloud-testing-clients:
+* aem-cloud-testing-clients：
 
-機能テストの実行に使用されるコンテナ化されたインフラストラクチャの変更に備えて、ライブラリが必要になります [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) カスタム機能テストで少なくともバージョンに更新するために使用されます **1.2.1**
-依存関係を `it.tests/pom.xml` が更新されました。
+機能テストの実行に使用するコンテナ化されたインフラストラクチャの今後の変更では、カスタム機能テストで使用する [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) ライブラリをバージョン **1.2.1** 以上に更新する必要があります 
+`it.tests/pom.xml` 内の依存関係が更新されていることを確認します。
 
 ```
 <dependency>
@@ -128,7 +128,7 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 
 >[!NOTE]
 >
->この変更は、2024 年 4 月 7 日より前に実行する必要があります。
+>この変更は、2024年4月6日（PT）より前に実行する必要があります。
 >依存関係ライブラリの更新に失敗すると、「カスタム機能テスト」手順でパイプラインにエラーが発生します。
 
 ### ローカルテストの実行 {#local-test-execution}
@@ -143,7 +143,7 @@ Cloud Manager パイプラインで機能テストをアクティブ化する前
 
 これらのシステムプロパティは次のとおりです。
 
-| Property | 説明 | 例 |
+| プロパティ | 説明 | 例 |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
 | `sling.it.instances` | インスタンスの数は、クラウドサービスに合わせて `2` に設定する必要があります | `2` |
 | `sling.it.instance.url.1` | オーサー URL に設定する必要があります。 | `http://localhost:4502` |

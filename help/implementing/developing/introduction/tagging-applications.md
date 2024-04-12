@@ -3,7 +3,7 @@ title: AEM アプリケーションへのタグ付けの構築
 description: カスタム AEM アプリケーション内のタグまたは拡張タグをプログラムで操作します
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '717'
 ht-degree: 100%
 

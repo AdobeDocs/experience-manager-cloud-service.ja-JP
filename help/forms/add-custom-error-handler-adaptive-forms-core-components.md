@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
 source-git-commit: d75d448d631da7af3a37192f0890a38c760ab09b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2331'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -255,7 +255,7 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
        return true; // true - call default error handler, false - don't call default error handler.
    }
    ```
-   上記のコードでは、 `return true` デフォルトのエラーハンドラーを自動的に呼び出します。 デフォルトのエラーハンドラーがデフォルトで呼び出されないようにするには、次のコマンドを使用します。 `return false`.
+   上記のコードでは、`return true` を指定すると、デフォルトのエラーハンドラーが自動的に呼び出されます。デフォルトのエラーハンドラーがデフォルトで呼び出されないようにするには、`return false` を含めます。
 
    >[!NOTE]
    >

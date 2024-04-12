@@ -3,7 +3,7 @@ title: ページプロパティのビューのカスタマイズ
 description: 作成者がページのプロパティを表示および編集する方法について説明します。
 exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
 source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '352'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 変更が必要な場合は、フィールドを明確に設定する必要があります。それには適切なノードプロパティを使用します。
 
-* 作成ビューで利用できるページプロパティ（例：**ページを作成**&#x200B;ウィザード）：
+* 作成ビューで利用できるページプロパティ（例：**ページを作成**&#x200B;ウィザード）
 
    * 名前：`cq:showOnCreate`
    * 型：`Boolean`

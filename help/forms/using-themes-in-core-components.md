@@ -4,7 +4,7 @@ description: テーマとコアコンポーネントを使用して、アダプ�
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2610'
 ht-degree: 100%
 

@@ -1,8 +1,9 @@
 ---
 title: アセットへのリンクの共有方法
 description: リンクを生成し、 [!DNL Assets view]  アプリケーションへのアクセス権を持たない他のユーザーとアセットを共有します。
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
-workflow-type: tm+mt
+exl-id: 7d7d488b-410b-4e90-bd10-4ffbb5fcec49
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
+workflow-type: ht
 source-wordcount: '397'
 ht-degree: 100%
 

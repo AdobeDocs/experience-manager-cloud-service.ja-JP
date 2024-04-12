@@ -3,8 +3,9 @@ title: デジタルアセットの管理
 description: ' [!DNL Assets view] 内のアセットを移動、削除、コピー、名前変更、更新、バージョン管理について説明します。'
 role: User,Leader
 contentOwner: AG
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
-workflow-type: tm+mt
+exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
+workflow-type: ht
 source-wordcount: '1024'
 ht-degree: 100%
 

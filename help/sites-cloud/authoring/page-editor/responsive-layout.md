@@ -3,9 +3,9 @@ title: レスポンシブレイアウト
 description: AEM では、ページにレスポンシブレイアウトを作成できます
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1740'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ AEM は、次のメカニズムを組み合わせて使用することにより�
 
 >[!NOTE]
 >
->前述のメカニズムの使用は、テンプレートでの設定によって有効になります。ドキュメントを参照してください [レスポンシブレイアウトの設定](/help/sites-cloud/administering/responsive-layout.md) を参照してください。
+>前述のメカニズムの使用は、テンプレートでの設定によって有効になります。詳しくは、[レスポンシブレイアウトの設定](/help/sites-cloud/administering/responsive-layout.md)のドキュメントを参照してください。
 
 ## レイアウトの定義、デバイスのエミュレーションおよびブレークポイント {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -134,7 +134,7 @@ AEM では、デバイスの幅に応じたレイアウトを定義できます�
 
 >[!NOTE]
 >
->まだ利用できない場合は、 **レイアウトコンテナ** は、明示的に [段落システムまたはページ用に有効化されます。](/help/sites-cloud/administering/responsive-layout.md)
+>まだ使用可能になっていない場合は、**レイアウトコンテナ**&#x200B;を明示的に[段落システムまたはページ用にアクティベート](/help/sites-cloud/administering/responsive-layout.md)する必要があります。
 
 1. **レイアウトコンテナ**&#x200B;は、[コンポーネントブラウザー](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)で標準コンポーネントとして使用できます。ここから、ページ上の必要な場所へドラッグできます。そうすると、「**コンポーネントをここにドラッグ**」プレースホルダーが表示されます。
 1. その後、レイアウトコンテナにコンポーネントを追加できます。これらのコンポーネントには、実際のコンテンツが格納されます。

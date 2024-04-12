@@ -5,9 +5,9 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 source-git-commit: a86e68f9dd195512a689943b303225a48b5f8a23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2723'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -130,12 +130,12 @@ Adobe Experience Manager Forms as a Cloud Service 機能アーカイブは、ロ
 
 1. crx-quickstart/install ディレクトリに移動します。フォルダーが存在しない場合は作成します。
 
-1. AEMインスタンスを停止し、 [!DNL AEM Forms] アドオン機能のアーカイブ `aem-forms-addon-<version>.far`をインストールフォルダーに追加します。
-1. アクティブなコマンドウィンドウに移動し、を押します。 `Ctrl + C` コマンドを使用して SDK を再起動します。
+1. AEM インスタンスを停止し、[!DNL AEM Forms] アドオン機能アーカイブ `aem-forms-addon-<version>.far` をインストールフォルダーに配置します。
+1. アクティブなコマンドウィンドウに移動し、`Ctrl + C` キーコマンドを押して SDK を再起動します。
 
    >[!NOTE]
    >
-   > 「Ctrl + C」コマンドを使用して SDK を再起動することをお勧めします。 別の方法（Java プロセスの停止など）を使用してAEM SDK を再起動すると、AEM開発環境で不整合が生じる場合があります。
+   > SDK を再起動するには、「Ctrl + C」コマンドを使用することをお勧めします。Java プロセスの停止など、別の方法を使用して AEM SDK を再起動すると、AEM 開発環境で不整合が生じる場合があります。
 
 ### ユーザーと権限の設定 {#configure-users-and-permissions}
 
@@ -222,14 +222,14 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
 
 1. ローカルの AEM オーサーインスタンスが稼働中であることを確認します。次のコマンドを実行して SDK を起動します。
 
-   * Microsoft® Windows の場合
+   * Microsoft® Windows
 
      ```shell
      sdk.bat start
      ```
 
 
-   * Linux®またはApple macOS
+   * Linux® または Apple macOS
 
      ```Shell
      % export AEM_HOME=[local AEM Author installation]

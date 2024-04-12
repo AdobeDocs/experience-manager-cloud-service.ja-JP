@@ -3,9 +3,9 @@ title: コンテンツフラグメント
 description: Adobe Experience Manager as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、使用が可能になります。
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1273'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,14 +19,14 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 >[!NOTE]
 >
->コンテンツフラグメントは、 **Sites** 機能を含むが、 **Assets**.
+>コンテンツフラグメントは **Sites** 機能ですが、**Assets** として保存されます。
 >
->主に **[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** コンソールでは管理できますが、 **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** コンソール。
+>引き続き **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** コンソールから管理できますが、現在は主に&#x200B;**[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**&#x200B;コンソールで管理されています。
 >
->コンテンツフラグメントをオーサリングするためのエディターは 2 つあります。
+>コンテンツフラグメントをオーサリングするエディターは 2 つあります。
 >
->* の新しいエディター [コンテンツフラグメント — オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)( 主に、 **コンテンツフラグメント** コンソール。
->* The [オリジナルエディター](/help/assets/content-fragments/content-fragments-variations.md) は主に次の場所からアクセスします： **Assets** コンソール。
+>* [コンテンツフラグメント - オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)の新しいエディターには、主に&#x200B;**コンテンツフラグメント**&#x200B;コンソールからアクセスします。
+>* [オリジナルエディター](/help/assets/content-fragments/content-fragments-variations.md)には、主に **Assets** コンソールからアクセスします。
 
 >[!NOTE]
 >
@@ -130,8 +130,8 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
 中間コンテンツの場合は、次のことができます。
 
-* からコンポーネントを追加する [コンポーネントブラウザー。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
-* からのアセットの追加 [アセットブラウザー。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
+* [コンポーネントブラウザー](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)からコンポーネントを追加する。
+* [Assets ブラウザー](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)からアセットを追加する。
 * [関連コンテンツ](#using-associated-content)を中間コンテンツのソースとして使用する。
 
 >[!CAUTION]

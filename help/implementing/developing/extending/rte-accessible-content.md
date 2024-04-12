@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] でアクセシブルなサイト
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '509'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: CSV ファイルへの書き出し
 description: ページの情報をローカルシステムの CSV ファイルに書き出す
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '197'
 ht-degree: 100%
 

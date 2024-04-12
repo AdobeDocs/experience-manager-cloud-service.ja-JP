@@ -3,9 +3,9 @@ title: 運用開始
 description: コードとコンテンツがクラウドに対応した後に移行を実行する方法について
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 source-git-commit: 8baea95d57ce1e92e0e7083c161c9fee395fcb8e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1771'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -156,9 +156,9 @@ ht-degree: 97%
    * 開発環境は、ステージング環境や実稼動環境とは異なるサイズに設定されます。
 * カットオーバーし、新しいデプロイメントやコンテンツの更新を行わずに実際の運用開始が確実に実行されるようにします。
 * Admin Console ユーザー通知グループを作成します。詳しくは、[通知プロファイル](/help/journey-onboarding/notification-profiles.md)を参照してください
-* Web サイトで許可しないトラフィックを制御するために、トラフィックフィルタールールを設定することを検討します。
-   * レート制限トラフィックフィルタールールは、DDoS 攻撃に対する効果的なツールになる場合があります。 WAF ルールと呼ばれる特別なカテゴリのトラフィックフィルタールールには、別のライセンスが必要です。
-   * 詳しくは、ドキュメントを参照してください [推奨スタータールール](/help/security/traffic-filter-rules-including-waf.md#recommended-starter-rules).
+* トラフィックフィルタールールを設定して、web サイト上で許可されないトラフィックを制御することを検討します。
+   * レート制限トラフィックフィルタールールは、DDoS 攻撃に対する効果的なツールになる場合があります。WAF ルールと呼ばれる特別なカテゴリのトラフィックフィルタールールには、別のライセンスが必要です。
+   * いくつかの[推奨スタータールール](/help/security/traffic-filter-rules-including-waf.md#recommended-starter-rules)については、ドキュメントを参照してください。
 
 移行の実行中にタスクを再調整する必要がある場合は、いつでもリストを参照できます。
 

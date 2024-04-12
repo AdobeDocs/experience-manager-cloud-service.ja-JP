@@ -3,9 +3,9 @@ title: リポジトリへのアクセス
 description: Cloud Manager でセルフサービスの Git アカウント管理を使用して、Git リポジトリにアクセスして管理する方法について説明します。
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 source-git-commit: 1b24fa084577f2ba0dc718ee35d12e42ac9d609c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '270'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -42,8 +42,8 @@ Cloud Manager では、パイプラインカードの目立つ位置にある「
 >
 >「**リポジトリ情報にアクセス**」オプションは、**開発者**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持つユーザーに表示されます。
 
-## アクセスパスワードの取り消し {#revoke-password}
+## アクセスパスワードの失効 {#revoke-password}
 
-アクセスパスワードはいつでも失効させることができます。 それには、 [このリクエストのサポートチケットを作成します。](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)
+アクセスパスワードはいつでも失効できます。これを行うには、[このリクエストに対するサポートチケットを作成](https://experienceleague.adobe.com/ja?support-solution=Experience+Manager&amp;support-tab=home#support)してください。
 
-チケットは優先度が高く処理され、1 日以内に取り消される必要があります。
+チケットは高い優先度で処理され、1 日以内に失効されます。

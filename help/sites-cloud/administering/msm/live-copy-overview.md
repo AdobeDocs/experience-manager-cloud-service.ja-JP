@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '729'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ ht-degree: 97%
 * **[同期](overview.md#rollout-and-synchronize)**：ライブコピーを同期して、ソースからライブコピー同期に変更をプルします。
 * **[リセット](creating-live-copies.md#resetting-a-live-copy-page)**：ライブコピーページをリセットしてすべての継承のキャンセルを削除し、ソースページと同じ状態に戻します。
 * **[休止](overview.md#suspending-and-cancelling-inheritance-and-synchronization)**：ライブコピーとそのブループリントページの間のライブ関係を一時的にアクティベート解除します。
-* **[再開](creating-live-copies.md#resuming-inheritance-for-a-page)**  — 再開：休止した関係を回復できます。
+* **[再開](creating-live-copies.md#resuming-inheritance-for-a-page)** - 再開すると、休止状態の関係を復帰できます。
 * **[分離](overview.md#detaching-a-live-copy)**：ライブコピーとブループリントページのライブ関係を完全に削除します。
 
 ## 関係ステータス {#relationship-status}
@@ -112,6 +112,6 @@ ht-degree: 97%
 
 ### ライブコピー {#live-copy-tab}
 
-このタブでは、ライブコピーの設定を表示および編集できます。
+このタブでは、ライブコピー設定を表示および編集できます。
 
 ![「ライブコピー」タブ](../assets/live-copy-relationship-status-live-copy.png)

@@ -3,7 +3,7 @@ title: ContextHub の拡張
 description: 提供されている ContextHub ストアやモジュールのタイプがソリューションの要件を満たさない場合は、新しいタイプを定義できます。
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '625'
 ht-degree: 100%
 

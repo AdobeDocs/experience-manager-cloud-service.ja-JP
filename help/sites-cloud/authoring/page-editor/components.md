@@ -3,9 +3,9 @@ title: コンポーネント
 description: コンポーネントは、AEM におけるコンテンツページの基本的なオーサリング構成要素です。
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '335'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ AEM には、すぐに使用できる様々なコンポーネントが付属し�
 
 ## 一般的な使用方法 {#general-usage}
 
-コンポーネントは、 **コンポーネント** タブをクリックします。 [ページの編集中。](/help/sites-cloud/authoring/page-editor/edit-content.md)
+コンポーネントは、[ページの編集](/help/sites-cloud/authoring/page-editor/edit-content.md)時に、ページエディターのサイドパネルにある「**コンポーネント**」タブで使用できます。
 
 コンポーネントを選択し、ページ上の必要な場所にドラッグできます。その後、次の機能を使用して編集できます。
 
@@ -31,7 +31,7 @@ AEM には、すぐに使用できる様々なコンポーネントが付属し�
 * [コンテンツの編集](/help/sites-cloud/authoring/page-editor/edit-content.md)
 * [コンテンツの編集 - 全画面表示モード](/help/sites-cloud/authoring/page-editor/edit-content.md#edit-content-full-screen-mode)
 
-ページへのコンポーネントの追加について詳しくは、 [ページのコンテンツの編集。](/help/sites-cloud/authoring/page-editor/edit-content.md)
+ページへのコンポーネントの追加について詳しくは、[ページコンテンツの編集](/help/sites-cloud/authoring/page-editor/edit-content.md)を参照してください。
 
 ## 全コンポーネントの概要 {#overview-of-all-components}
 

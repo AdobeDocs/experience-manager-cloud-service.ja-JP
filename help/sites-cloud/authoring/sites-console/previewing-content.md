@@ -3,7 +3,7 @@ title: コンテンツのプレビュー
 description: AEM プレビューサービスを使用して、運用を開始する前にコンテンツをプレビューする方法を説明します。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '315'
 ht-degree: 100%
 

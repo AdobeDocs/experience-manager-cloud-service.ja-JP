@@ -7,7 +7,7 @@ content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2377'
 ht-degree: 100%
 

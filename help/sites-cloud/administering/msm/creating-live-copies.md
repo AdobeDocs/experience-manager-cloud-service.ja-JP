@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4270'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -160,7 +160,7 @@ ht-degree: 99%
 * **名前**：（オプション）ライブコピーのルートページを格納する JCR ノードの名前。デフォルト値はタイトルに基づいて指定されます。
 * **サイト所有者**：（オプション）ライブコピーの責任者に関する情報
 * **ライブコピー**：ソースサイトとのライブ関係を確立するには、このオプションを選択します。このオプションを選択しない場合、ブループリントのコピーは作成されますが、その後ソースと同期されません。
-* **ロールアウトの設定**：（オプション）ライブコピーの同期に使用するロールアウト設定を 1 つ以上選択します。デフォルトでは、ロールアウト設定はブループリントから継承されます。 詳しくは、 [使用するロールアウト設定の指定](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) を参照してください。
+* **ロールアウトの設定**：（オプション）ライブコピーの同期に使用するロールアウト設定を 1 つ以上選択します。デフォルトでは、ロールアウト設定はブループリントから継承されます。詳しくは、[使用するロールアウト設定の指定](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)を参照してください。
 
 ブループリント設定からサイトのライブコピーを作成するには：
 

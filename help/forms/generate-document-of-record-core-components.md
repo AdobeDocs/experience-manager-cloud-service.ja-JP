@@ -4,9 +4,9 @@ description: アダプティブフォームコアコンポーネント用のレ�
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3131'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -330,7 +330,7 @@ When you select a form model, configure Document of Record using options availab
 
         >[!NOTE]
         >
-        > AEM Formsは、PDFファイルとシームレスに統合できる様々な組み込みフォントを備えています。 サポートされているフォントの一覧を確認するには、 [ここをクリック](/help/forms/supported-out-of-the-box-fonts.md).
+        > AEM Forms には、PDF ファイルとシームレスに統合できる様々な組み込みフォントが用意されています。サポートされているフォントのリストを表示するには、[こちらをクリック](/help/forms/supported-out-of-the-box-fonts.md)してください。
 
       * **データモデルにバインドしていないフォームオブジェクトを含める**：このプロパティを設定すると、レコードのドキュメント内のスキーマベースのアダプティブフォームからバインドされていないフィールドが、レコードのドキュメントに追加されます。
 

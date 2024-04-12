@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service と Web アクセシビリテ
 description: Adobe Experience Manager as a Cloud Service と Web アクセシビリティガイドラインの概要
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '369'
 ht-degree: 100%
 

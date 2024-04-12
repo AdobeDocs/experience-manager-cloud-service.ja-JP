@@ -3,7 +3,7 @@ title: インボックス
 description: インボックスに届いた通知を使用してタスクを管理する方法を説明します。
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '910'
 ht-degree: 100%
 

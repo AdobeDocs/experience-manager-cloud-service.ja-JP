@@ -1,8 +1,9 @@
 ---
 title: 通知の管理
 description: アセットビュー通知を使用して、リポジトリで使用可能なアセットやフォルダーで実行した操作を監視します。
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
-workflow-type: tm+mt
+exl-id: 1fe6a845-37d5-43c2-bb96-c5b149c238ab
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
+workflow-type: ht
 source-wordcount: '617'
 ht-degree: 100%
 

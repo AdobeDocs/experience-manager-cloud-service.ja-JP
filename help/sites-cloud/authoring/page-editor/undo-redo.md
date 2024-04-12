@@ -1,15 +1,15 @@
 ---
-title: 取り消しとやり直しの制限
-description: AEMページエディターの取り消しおよびやり直しオプションの制限事項について説明します。
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+title: 取り消しとやり直しの制限事項
+description: AEM ページエディターの取り消しとやり直しオプションの制限事項について説明します。
+exl-id: 87773f47-5116-4966-9ba4-5deedb7c4fa6
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
+workflow-type: ht
 source-wordcount: '307'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-
-# 取り消しとやり直しの制限 {#undo-redo}
+# 取り消しとやり直しの制限事項 {#undo-redo}
 
 AEM では、ユーザーが実行するアクションの履歴と、それらのアクションを実行した順序が保存されます。そのため、複数のアクションの取り消しは、ユーザーが実行した順序で行うことができます。その後、必要に応じて、やり直しを使用して 1 つ以上のアクションを再適用することもできます。
 

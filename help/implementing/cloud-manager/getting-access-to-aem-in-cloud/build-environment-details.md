@@ -3,9 +3,9 @@ title: ビルド環境
 description: Cloud Manager のビルド環境と、そこでコードがどのようにビルドされテストされるかを説明します。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: 54135244d7b33ba3682633b455a5538474d3146e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '788'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -21,8 +21,8 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 * ビルド環境は Linux ベースで、Ubuntu 22.04 から派生しています。
 * Apache Maven 3.9.4 がインストールされています。
    * アドビでは、ユーザーに [HTTP ではなく HTTPS を使用するように Maven リポジトリを更新](#https-maven)することをお勧めします。
-* インストールされる Java のバージョンは、OracleJDK 11.0.22 およびOracleJDK 8u401 です。
-* **重要**：デフォルトでは、 `JAVA_HOME` 環境変数はに設定されます。 `/usr/lib/jvm/jdk1.8.0_401` oracleJDK 8u401 を含む *_JDK 11 を使用するには、このデフォルト設定をAEM Cloud Projects で上書きする必要があります。_*. 詳しくは、 [Maven JDK バージョンの設定](#alternate-maven-jdk-version) の節を参照してください。
+* インストールされる Java バージョンは、Oracle JDK 11.0.22 と Oracle JDK 8u401 です。
+* **重要**：デフォルトでは、`JAVA_HOME` 環境変数は `/usr/lib/jvm/jdk1.8.0_401` に設定されています。これには、Oracle JDK 8u401 が含まれています。*_AEM Cloud プロジェクトで JDK 11 を使用するには、このデフォルトを上書きする必要があります。_*&#x200B;詳しくは、[Maven JDK バージョンの設定](#alternate-maven-jdk-version)の節を参照してください。
 * 必要に応じてインストールされる追加のシステムパッケージが、次のようにいくつかあります。
    * `bzip2`
    * `unzip`
@@ -51,13 +51,13 @@ Cloud Manager [リリース 2023.10.0](/help/implementing/cloud-manager/release-
 
 ### 特定の Java バージョンの使用 {#using-java-support}
 
-デフォルトでは、プロジェクトはOracle8 JDK を使用して Cloud Manager ビルドプロセスで構築されますが、AEM Cloud Serviceのお客様は、Maven を実行するために使用する JDK バージョンをに設定することを強くお勧めします。 `11`.
+デフォルトでは、プロジェクトは Oracle 8 JDK を使用して Cloud Manager ビルドプロセスで作成されますが、AEM Cloud Service のお客様は、Maven の実行に使用する JDK バージョンを `11` に設定することを強くお勧めします。
 
 #### Maven JDK バージョンの設定 {#alternate-maven-jdk-version}
 
-Maven の実行全体の JDK バージョンをに設定することをお勧めします。 `11` 内 `.cloudmanager/java-version` ファイル。
+`.cloudmanager/java-version` ファイルで、Maven 実行全体の JDK バージョンを `11` に設定することをお勧めします。
 
-それには、パイプラインで使用される Git リポジトリーブランチに `.cloudmanager/java-version` というファイルを作成します。ファイルを編集して、テキストのみが含まれるようにします。 `11`. Cloud Manager は `8`の場合、このバージョンはAEM Cloud Serviceプロジェクトでサポートされなくなりました。 その他の値は無視されます。条件 `11` が指定されている場合、Oracle11 が使用され、 `JAVA_HOME` 環境変数はに設定されます。 `/usr/lib/jvm/jdk-11.0.22`.
+それには、パイプラインで使用される Git リポジトリブランチに `.cloudmanager/java-version` というファイルを作成します。`11` というテキストのみが含まれるようにファイルを編集します。Cloud Manager は値 `8` も受け入れますが、このバージョンは AEM Cloud Service プロジェクトではサポートされなくなりました。その他の値は無視されます。`11` を指定した場合は、Oracle 11 が使用され、`JAVA_HOME` 環境変数が `/usr/lib/jvm/jdk-11.0.22` に設定されます。
 
 ## 環境変数 {#environment-variables}
 
@@ -84,7 +84,7 @@ Maven の実行全体の JDK バージョンをに設定することをお勧め
 
 お使いのビルドプロセスが、Git リポジトリに配置するのに適さない特定の設定変数に基づいている場合や、同じブランチを使用するパイプライン実行間で環境変数を変えることが必要になる場合があります。
 
-ドキュメントを参照してください [パイプライン変数の設定](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) 詳細情報
+詳しくは、[パイプライン変数の設定](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)ドキュメントを参照してください。
 
 ## 追加のシステムパッケージのインストール {#installing-additional-system-packages}
 

@@ -3,7 +3,7 @@ title: 登録、ログイン、ユーザープロファイル
 description: AEM as a Cloud Service の登録、ログイン、ユーザーデータおよびグループ同期について説明します
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1132'
 ht-degree: 100%
 

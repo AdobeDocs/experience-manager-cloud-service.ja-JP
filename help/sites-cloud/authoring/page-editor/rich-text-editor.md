@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager]  のリッチテキストエディタ�
 description: ' [!DNL Experience Manager]  リッチテキストエディターを使用したコンテンツのオーサリング'
 exl-id: 15c175f8-11de-4475-87a9-920219a4c004
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 91%
 
 ## インプレース編集 {#in-place-editing}
 
-テキストベースのコンポーネントを 1 回クリックして選択すると、 [コンポーネントツールバー。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+シングルクリックでテキストベースのコンポーネントを選択すると、[コンポーネントツールバー](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)が表示されます。
 
 ![コンポーネントツールバー](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 

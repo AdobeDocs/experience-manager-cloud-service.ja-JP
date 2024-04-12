@@ -3,7 +3,7 @@ title: SPA の複合コンポーネント
 description: AEM 単一ページアプリケーション（SPA）エディターで動作する独自の複合コンポーネント（他のコンポーネントで構成されるコンポーネント）を作成する方法を説明します。
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '782'
 ht-degree: 100%
 

@@ -1,15 +1,15 @@
 ---
-title: スプレッドシートからFormsへ — Edge Delivery 用フォームフラグメントのマスターForms
+title: スプレッドシートからフォームへ - Edge Delivery フォームのフォームフラグメントのマスター
 description: フォームフラグメントを使用した強力なフォームの迅速な作成
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: f2752673dcaa0762bb55719cee23765aa8ecde96
-workflow-type: tm+mt
+exl-id: ba8c7220-55b3-4731-9e40-ce0c360c508d
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
+workflow-type: ht
 source-wordcount: '27'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
-
 
 # AEM Forms Edge Delivery Service のフォームフラグメントのマスター

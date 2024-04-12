@@ -3,7 +3,7 @@ title: ローンチを使用した未来のプレビュー
 description: タイムワープを使用すると、ローンチに基づいてコンテンツを表示できます。
 exl-id: 3e19f11c-53cc-491b-8d9b-1e82745caebc
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '97'
 ht-degree: 100%
 

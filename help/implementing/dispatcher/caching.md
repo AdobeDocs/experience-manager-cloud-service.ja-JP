@@ -4,9 +4,9 @@ description: AEM as a Cloud Service でのキャッシュの基本について
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 source-git-commit: 8215686031de1bc37ce37bfdce252b3997646042
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2894'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -278,7 +278,7 @@ Web サイトの URL には、キャンペーンの成功をトラックする�
 以前のバージョンの AEM と同様に、ページを公開または非公開にすると、Dispatcher のキャッシュからコンテンツがクリアされます。キャッシュに問題があると疑われる場合は、該当するページを再度公開し、`ServerAlias` localhost に一致する仮想ホスト（Dispatcher キャッシュの無効化に必要）が使用可能であることを確認する必要があります。
 
 >[!NOTE]
->Dispatcher を適切に無効化するには、「127.0.0.1」、「localhost」、「\*.local」、「\*.adobeaemcloud.com」および「\*.adobeaemcloud.net」からの要求がすべて vhost 設定で照合および処理され、要求を処理できるようにします。 この作業を行うには、[AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) の参照パターンに従って、キャッチオール vhost 設定で「*」をグローバルに一致させます。または、前述のリストがいずれかの vhost にキャッチされるようにすることもできます。
+>Dispatcher を適切に無効化するには、「127.0.0.1」「localhost」「\*.local」「\*.adobeaemcloud.com」「\*.adobeaemcloud.net」からのリクエストがすべて vhost 設定で一致し、処理されることを確認してください。この作業を行うには、[AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) の参照パターンに従って、キャッチオール vhost 設定で「*」をグローバルに一致させます。または、前述のリストがいずれかの vhost にキャッチされるようにすることもできます。
 
 パブリッシュインスタンスは、オーサーから新しいバージョンのページまたはアセットを受け取ると、フラッシュエージェントを使用して Dispatcher 上の該当するパスを無効にします。更新されたパスは、親と共に、Dispatcher キャッシュから削除されます（削除されるレベルは [statfilelevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#invalidating-files-by-folder-level) で設定できます）。
 

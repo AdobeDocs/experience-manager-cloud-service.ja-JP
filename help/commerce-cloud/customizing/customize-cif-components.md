@@ -12,9 +12,9 @@ kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2298'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Venia ブランドは最近、持続可能な資材を使用して一部の製�
 
 ## 前提条件 {#prerequisites}
 
-このチュートリアルを完了するには、ローカルの開発環境が必要です。この環境には、Adobe Commerce インスタンスに設定および接続された AEM の実行インスタンスが含まれます。[AEM as a Cloud Service SDK を使用してローカル開発をセットアップする](../develop.md)ための要件と手順を確認します。このチュートリアルを完全に実行するには、を追加する権限が必要です。 [製品の属性](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) Adobe Commerceで
+このチュートリアルを完了するには、ローカルの開発環境が必要です。この環境には、Adobe Commerce インスタンスに設定および接続された AEM の実行インスタンスが含まれます。[AEM as a Cloud Service SDK を使用してローカル開発をセットアップする](../develop.md)ための要件と手順を確認します。このチュートリアルを完全に実行するには、[属性を Adobe Commerce 内の製品に追加](https://docs.magento.com/user-guide/catalog/product-attributes-add.html)する権限が必要になります。
 
 また、コード例やチュートリアルを実行するには、[GraphiQL](https://github.com/graphql/graphiql) またはブラウザー拡張機能などの GraphQL IDE が必要です。ブラウザー拡張機能をインストールする場合は、その拡張機能にリクエストヘッダーを設定できることを確認してください。Google Chrome の _Altair GraphQL Client_ は、ジョブを実行できる拡張機能の 1 つです。
 
@@ -139,7 +139,7 @@ AEM に表示された製品と製品データは Adobe Commerce に格納され
 
 AEM コードに立ち入る前に、GraphQL IDE を使用して [GraphQL の概要](https://devdocs.magento.com/guides/v2.4/graphql/)を調べてみると役に立ちます。AEM との Adobe Commerce 統合は、主に一連の GraphQL クエリを介して実行されます。GraphQL クエリを理解し変更することは、CIF コアコンポーネントを拡張するのに重要なことの 1 つです。
 
-次に、GraphQL IDE を使用して、`eco_friendly` 属性が製品属性セットに追加されたことを確認します。このチュートリアルのスクリーンショットは、 _Altair GraphQL Client_ Google Chrome 拡張機能。
+次に、GraphQL IDE を使用して、`eco_friendly` 属性が製品属性セットに追加されたことを確認します。このチュートリアルのスクリーンショットには、_Altair GraphQL クライアント_&#x200B;の Google Chrome 拡張機能を使用しています。
 
 1. GraphQL IDE を開き、IDE または拡張機能の URL バーに URL `http://<commerce-server>/graphql` を入力します。
 2. 次の[製品クエリ](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html)を追加します。ここで、`YOUR_SKU` は、前の演習で使用した製品の **SKU** です。
@@ -186,7 +186,7 @@ AEM コードに立ち入る前に、GraphQL IDE を使用して [GraphQL の概
 
 ## 製品ティーザーの Sling モデルのアップデート {#updating-sling-model-product-teaser}
 
-次に、Sling モデルを実装して、製品ティーザーのビジネスロジックを拡張します。[Sling モデル](https://sling.apache.org/documentation/bundles/models.html) は、コンポーネントで必要なビジネスロジックを実装する注釈駆動型の「POJO」(Plain Old Java™ Objects) です。 Sling モデルは、コンポーネントの一部として HTL スクリプトと組み合わせて使用されます。既存の製品ティーザーモデルの一部を拡張できるように、[Sling モデルの委任パターン](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models)に従います。
+次に、Sling モデルを実装して、製品ティーザーのビジネスロジックを拡張します。[Sling モデル](https://sling.apache.org/documentation/bundles/models.html)は、コンポーネントで必要なビジネスロジックを実装する注釈駆動型の「POJO」（Plain Old Java™ Objects）です。Sling モデルは、コンポーネントの一部として HTL スクリプトと組み合わせて使用されます。既存の製品ティーザーモデルの一部を拡張できるように、[Sling モデルの委任パターン](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models)に従います。
 
 Sling モデルは Java として実装され、生成されたプロジェクトの&#x200B;**コア**&#x200B;モジュールにあります。
 

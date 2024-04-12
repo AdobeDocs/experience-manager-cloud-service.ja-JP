@@ -4,9 +4,9 @@ description: ここでは、アダプティブフォーム向けのレコード�
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 source-git-commit: 51d72edcde18503e9e4d83eaf51e28658d9ee5e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4170'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -347,7 +347,7 @@ When you select a form model, configure Document of Record using options availab
 
         >[!NOTE]
         >
-        > AEM Formsは、PDFファイルとシームレスに統合できる様々な組み込みフォントを備えています。 サポートされているフォントの一覧を確認するには、 [ここをクリック](/help/forms/supported-out-of-the-box-fonts.md).
+        > AEM Forms には、PDF ファイルとシームレスに統合できる様々な組み込みフォントが用意されています。サポートされているフォントのリストを表示するには、[こちらをクリック](/help/forms/supported-out-of-the-box-fonts.md)してください。
 
       * **データモデルにバインドしていないフォームオブジェクトを含める**：このプロパティを設定すると、レコードのドキュメント内のスキーマベースのアダプティブフォームからバインドされていないフィールドが、レコードのドキュメントに追加されます。
       * **レコードのドキュメントから非表示フィールドを除外**：このプロパティを設定すると、レコードのドキュメントから除外する非表示フィールドが識別されます。
@@ -483,7 +483,7 @@ XCI ファイルは、ドキュメントの様々なプロパティを設定す�
 
 >[!NOTE]
 >
-> AEM Formsは、PDFファイルとシームレスに統合できる様々な組み込みフォントを備えています。 サポートされているフォントの一覧を確認するには、 [ここをクリック](/help/forms/supported-out-of-the-box-fonts.md).
+> AEM Forms には、PDF ファイルとシームレスに統合できる様々な組み込みフォントが用意されています。サポートされているフォントのリストを表示するには、[こちらをクリック](/help/forms/supported-out-of-the-box-fonts.md)してください。
 
 
 ### Forms as a Cloud Service 環境でのカスタム XCI ファイルの使用

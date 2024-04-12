@@ -3,7 +3,7 @@ title: マルチサイトマネージャーの拡張
 description: マルチサイトマネージャーの機能を拡張する方法について説明します。
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2337'
 ht-degree: 100%
 

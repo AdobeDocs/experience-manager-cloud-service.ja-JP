@@ -6,7 +6,7 @@ feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4326'
 ht-degree: 100%
 
@@ -384,7 +384,7 @@ iOS、Android™ 2.x および Android™ 3.x デバイスでサポートされ�
 
    ![chlimage_1-222](/help/assets/dynamic-media/assets/chlimage_1-222.png)
 
-1. 「limit」プロパティの数を、目的の数（例：`{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`）に変更します
+1. 「limit」プロパティの数を、目的の数（例：`{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`）に変更します。
 1. 「**[!UICONTROL すべて保存]**」を選択します。
 
 ## ビューアプリセットの作成 {#creating-a-new-viewer-preset}

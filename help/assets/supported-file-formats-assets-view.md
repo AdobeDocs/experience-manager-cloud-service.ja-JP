@@ -3,10 +3,11 @@ title: サポートされているファイル形式
 description: ' [!DNL Assets view] の様々なユースケースでサポートされているファイル形式'
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
-workflow-type: tm+mt
+exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
+workflow-type: ht
 source-wordcount: '515'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -125,4 +126,4 @@ ht-degree: 98%
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
-* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&amp;lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General#support)に問い合わせる

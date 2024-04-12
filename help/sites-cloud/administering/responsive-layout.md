@@ -3,7 +3,7 @@ title: レイアウトコンテナおよびレイアウトモードの設定
 description: コンテンツ作成者がレスポンシブレイアウトを使用できるように、レイアウトコンテナとレイアウトモードを設定する方法について説明します。
 exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1250'
 ht-degree: 100%
 

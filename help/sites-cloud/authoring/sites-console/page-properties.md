@@ -3,7 +3,7 @@ title: ページプロパティの編集
 description: AEM でページを管理するために必要なプロパティを定義する方法について説明します。
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2268'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: パーソナライゼーションとコンテンツのターゲティン�
 description: パーソナライズされたターゲットコンテンツを AEM で作成する方法について説明します。
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1054'
 ht-degree: 100%
 

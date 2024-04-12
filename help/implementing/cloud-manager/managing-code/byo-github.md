@@ -4,7 +4,7 @@ description: 独自の GitHub リポジトリを操作するために Cloud Mana
 feature: Release Information
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
 source-git-commit: b81c2bd5c339bce97fe5774572bf1532fc8e04df
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '734'
 ht-degree: 100%
 

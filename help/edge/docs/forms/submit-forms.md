@@ -1,19 +1,19 @@
 ---
-title: データを受け入れるスプレッドシートを準備する
-description: スプレッドシートとアダプティブFormsブロックフィールドを使用して、強力なフォームをより迅速に作成できます。
+title: データを受け入れるスプレッドシートの準備
+description: スプレッドシートとアダプティブフォームブロックフィールドを使用して、強力なフォームをより迅速に作成します。
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1001'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# データの受け入れを開始するためのGoogleシートまたはMicrosoft Excel ファイルの設定
+# データの受け入れを開始するための Google Sheets または Microsoft Excel ファイルの設定
 
 
-一度 [フォームの作成とプレビュー](/help/edge/docs/forms/create-forms.md)をクリックした場合、対応するスプレッドシートがデータの受信を開始できるようにします。 スプレッドシートでデータを受け入れるように手動で有効にするか、Admin API を使用してスプレッドシートでデータを受け入れるように設定できます。
+[フォームを作成してプレビュー](/help/edge/docs/forms/create-forms.md)したら、対応するスプレッドシートでデータの受信を開始できるようにします。スプレッドシートでデータを受け入れるように手動で有効にすることも、スプレッドシートでデータを受け入れるように Admin API を使用して有効にすることもできます。
 
 ![ドキュメントベースのオーサリングエコシステム](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -23,67 +23,67 @@ ht-degree: 1%
 -->
 
 
-## スプレッドシートでデータを受け入れるように手動で有効化
+## スプレッドシートでデータを受け入れるように手動で有効にする
 
-スプレッドシートでデータを受け取れるようにするには
+スプレッドシートでデータを受け入れるようにするには
 
-1. フォームのあるスプレッドシートを開き、新しいシートを追加して、名前をに変更します。 `incoming`.
+1. フォームが含まれているスプレッドシートを開き、新しいシートを追加し、名前を `incoming` に変更します。
 
    >[!WARNING]
    >
-   > 次の場合、 `incoming` シートが存在しない場合、AEMはスプレッドシートにデータを送信しません。
+   > `incoming` シートが存在しない場合、AEM ではスプレッドシートにデータを送信しません。
 
-1. このシートに、「intake_form」という名前のテーブルを挿入します。 フォームフィールド名と一致させる列数を選択します。 次に、ツールバーで挿入/テーブルに移動し、「OK」をクリックします。
+1. このシートに、「intake_form」という名前のテーブルを挿入します。フォームフィールド名と一致させるために必要な列の数を選択します。次に、ツールバーで挿入／表に移動し、「OK」をクリックします。
 
-1. テーブルの名前を「intake_form」に変更します。 Microsoft Excel で、テーブルの名前を変更するには、テーブルを選択し、「テーブルデザイン」をクリックします。
+1. 表の名前を「intake_form」に変更します。Microsoft Excel で表の名前を変更するには、表を選択し、「表書式」をクリックします。
 
-1. 次に、フォームフィールド名をテーブルヘッダーとして追加します。 フィールドが完全に同じであることを確認するには、「共有のデフォルト」シートからコピーして貼り付けます。  「共有のデフォルト」シートで、「名前」列の下に表示されるフォーム ID（送信フィールドを除く）を選択してコピーします。
+1. 次に、フォームフィールド名を表ヘッダーとして追加します。フィールドが完全に同じであることを確認するには、「shared-default」シートからフィールドをコピー＆ペーストします。「shared-default」シートで、送信フィールドを除く「Name」列の下にリストされるフォーム ID を選択してコピーします。
 
-1. 「incoming」シートで、「Paste Special」>「Transpose Rows to Columns」を選択し、この新しいシートの列ヘッダーとしてフィールド ID をコピーします。 その他のデータを取り込む必要があるフィールドのみを無視できます。
+1. 「incoming」シートで、形式を選択して貼り付け／行/列の入れ替えを選択して、フィールド ID をこの新しいシートの列ヘッダーとしてコピーします。データを取得する必要があるフィールドのみを保持し、他のフィールドは無視できます。
 
-   各値 `Name` 列 `shared-default` シート（送信ボタンを除く）は、 `incoming` シート。 例えば、次の画像は「contact-us」フォームのヘッダーを示しています。
+   `shared-default` の `Name` 列の各値は、送信ボタンを除き、`incoming` シートのヘッダーとして機能します。例えば、「お問い合わせ」フォームのヘッダーを示す次の画像を考慮してみましょう。
 
-   ![連絡先 —Us フォームのフィールド](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
+   ![「お問い合わせ」フォームのフィールド](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
 
 
-1. AEM Sidekick拡張機能を使用して、フォームの更新をプレビューします。 これで、シートは受信フォーム送信を受け入れる準備が整いました。
+1. AEM Sidekick 拡張機能を使用して、フォームの更新をプレビューします。これで、シートはフォームの送信を受け入れる準備が整いました。
 
    >[!NOTE]
    >
-   >前にシートをプレビューした場合でも、作成後に再度プレビューする必要があります。 `incoming` シートを初めて取り出しました。
+   >以前にシートをプレビューしたことがある場合でも、`incoming` シートを初めて作成した後に再度プレビューする必要があります。
 
 
-フィールド名を `incoming` シートが作成され、フォームが送信を受け入れる準備が整います。 フォームをプレビューし、それを使用してデータをシートに送信することができます。
+フィールド名が `incoming` シートに追加されると、フォームは送信を受け入れる準備が整います。フォームをプレビューし、これを使用してデータをシートに送信できます。
 
-シートがデータを受け取るように設定されたら、次の操作を実行できます。 [アダプティブFormsブロックを使用したフォームのプレビュー](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) または [POST要求の使用](#use-admin-apis-to-send-data-to-your-sheet) をクリックして、シートへのデータの送信を開始します。
+データを受信するようにシートを設定したら、[アダプティブフォームブロックを使用してフォームをプレビュー](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page)したり、[POST リクエストを使用](#use-admin-apis-to-send-data-to-your-sheet)してシートへのデータの送信を開始したりできます。
 
 >[!WARNING]
 >
->  「共有のデフォルト」シートに、公開アクセスに不安な個人を特定できる情報や機密データを含めないでください。
+>  「shared-default」シートには、一般にアクセスされることに抵抗のある個人を特定できる情報や機密データを決して含めないでください。
 
-### Admin API を使用して、スプレッドシートでのデータ受け取りを有効にします
+### スプレッドシートでデータを受け入れるように Admin API を使用して有効にする
 
-また、フォームにPOSTリクエストを送信して、フォームがデータを受け入れ、 `incoming` シート。 サービスは、POST要求を受け取ると、要求の本文を分析し、データ取り込みに必要な必須ヘッダーとシートを自律的に生成します。
+また、POST リクエストをフォームに送信して、データを受け入れ、`incoming` シートのヘッダーを設定するように有効にすることもできます。POST リクエストを受信すると、サービスではリクエストの本文を分析し、データの取り込みに必要な必須のヘッダーとシートを自律的に生成します。
 
-Admin API を使用してスプレッドシートでのデータ受け取りを有効にするには：
+スプレッドシートでデータを受け入れるように Admin API を使用して有効にするには：
 
 
-1. 作成したワークブックを開き、デフォルトのシートの名前をに変更します。 `incoming`.
+1. 作成したワークブックを開き、デフォルトのシートの名前を `incoming` に変更します。
 
    >[!WARNING]
    >
-   > 次の場合、 `incoming` シートが存在しないので、AEMはこのブックにデータを送信しません。
+   > `incoming` シートが存在しない場合、AEM ではこのワークブックにデータを送信しません。
 
-1. サイドキックでシートをプレビューします。
+1. Sidekick でシートをプレビューします。
 
    >[!NOTE]
    >
-   >前にシートをプレビューした場合でも、作成後に再度プレビューする必要があります。 `incoming` シートを初めて取り出しました。
+   >以前にシートをプレビューしたことがある場合でも、`incoming` シートを初めて作成した後に再度プレビューする必要があります。
 
-1. POSTリクエストを送信し、 `incoming` シートを作成し、 `shared-default` シートをスプレッドシートに追加します（まだ存在しない場合）。
+1. POST リクエストを送信して `incoming` シートに適切なヘッダーを生成し、`shared-default` シートがまだ存在しない場合はスプレッドシートに追加します。
 
-   シートを設定するPOSTリクエストの形式を設定する方法については、 [管理 API ドキュメント](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). 以下の例を確認できます。
+   シートを設定する POST リクエストの形式については、[Admin API ドキュメント](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile)を参照してください。以下に例を示します。
 
    **リクエスト**
 
@@ -126,7 +126,7 @@ Admin API を使用してスプレッドシートでのデータ受け取りを�
    {"rowCount":2,"columns":["Email","Name","Subject","Message","Phone","Company","Country",      "PreferredContactMethod","SubscribeToNewsletter"]}%
    ```
 
-   以下に示すように、curl やPostmanなどのツールを使用して、このPOSTリクエストを実行できます。
+   以下に示すように、cURL や Postman などのツールを使用して、この POST リクエストを実行できます。
 
    ```JSON
    curl -s -i -X POST 'https://admin.hlx.page/form/wkndforms/portal/main/contact-us.json' \
@@ -146,36 +146,36 @@ Admin API を使用してスプレッドシートでのデータ受け取りを�
    }'
    ```
 
-   上記のPOSTリクエストでは、フォームフィールドとそれぞれのサンプル値を含むサンプルデータが提供されます。 このデータは、Admin サービスでフォームを設定するために使用されます。
+   上記の POST リクエストでは、フォームフィールドとそれぞれのサンプル値の両方を含むサンプルデータを提供します。このデータは、フォームを設定するために Admin サービスによって使用されます。
 
-   これで、フォームがデータの受け入れを有効にしました。 また、スプレッドシートには次の変更があります。
+   これで、フォームでデータを受け入れるように有効にしました。また、スプレッドシートに次の変更が見られることもわかります。
 
-## データの受け入れが有効になった後のシートへの自動変更。
+## データを受け入れるように有効になると、シートが自動的に変更される。
 
-データを受け取るようにシートを設定すると、スプレッドシートに次の変更が表示されます。
+データを受信するようにシートを設定すると、スプレッドシートに次の変更が見られます。
 
-Excel ブックまたはGoogleシートに「Slack」という名前のシートが追加されます。 このシートでは、新しいデータがスプレッドシートに取り込まれるたびに、指定したSlackチャネルの自動通知を設定できます。 現在、AEMは、AEMエンジニアリングSlack組織およびAdobeエンタープライズサポート組織にのみ通知をサポートしています。
+「Slack」という名前のシートが Excel ワークブックまたは Google Sheets に追加されます。このシートでは、新しいデータがスプレッドシートに取り込まれるたびに、指定した Slack チャネルに対する自動通知を設定できます。現在、AEM では、AEM エンジニアリング Slack 組織とアドビエンタープライズサポート組織への通知のみをサポートします。
 
-1. Slack通知を設定するには、Slackワークスペースの「teamId」と「チャネル名」または「ID」を入力します。 「teamId」と「channel ID」に対して（debug コマンドを使用して）slack-bot に問い合わせることもできます。 チャネルの名前を変更しても存続するので、「チャネル名」の代わりに「チャネル ID」を使用することをお勧めします。
+1. Slack 通知を設定するには、Slack ワークスペースの「teamId」と、「チャネル名」または「ID」を入力します。また、slack ボットに（debug コマンドを使用して）「teamId」と「チャネル ID」を問い合わせることもできます。チャネル名を変更しても残り続けるので、「チャネル名」の代わりに「チャネル ID」を使用することをお勧めします。
 
    >[!NOTE]
    >
-   > 古いフォームには「teamId」列がありませんでした。 「teamId」が「#」または「/」で区切られたチャネル列に含まれていました。
+   > 古いフォームには「teamId」列がありませんでした。「teamId」は「#」または「/」で区切られてチャネル列に含まれていました。
 
-1. 必要なタイトルを入力し、「フィールド」に、Slack通知に表示するフィールドの名前を入力します。 各見出しはコンマで区切る必要があります（例：名前、E メール）。
+1. 必要なタイトルを入力し、フィールドの下に Slack 通知に表示するフィールドの名前を入力します。各見出しはコンマで区切る必要があります（名前、メールなど）。
 
    >[!WARNING]
    >
-   >  「共有のデフォルト」シートに、公開アクセスに不安な個人を特定できる情報や機密データを含めないでください。
+   >  「shared-default」シートには、一般にアクセスされることに抵抗のある個人を特定できる情報や機密データを決して含めないでください。
 
 
-## シートにデータを送信 {#send-data-to-your-sheet}
+## シートへのデータの送信 {#send-data-to-your-sheet}
 
-シートがデータを受け取るように設定された後、次の操作を実行できます。 [アダプティブFormsブロックを使用したフォームのプレビュー](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) または [管理 API の使用](#use-admin-apis-to-send-data-to-your-sheet) をクリックして、シートへのデータの送信を開始します。
+データを受信するようにシートを設定したら、[アダプティブフォームブロックを使用してフォームをプレビュー](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page)するか、[Admin API を使用](#use-admin-apis-to-send-data-to-your-sheet)してシートへのデータの送信を開始できます。
 
-### Admin API を使用してシートにデータを送信する
+### Admin API を使用してシートにデータを送信
 
-hlx.page、hlx.live、または実稼動ドメインを使用して、フォームに直接POSTリクエストを送信し、データを送信できます。
+hlx.page、hlx.live、または実稼動ドメインを使用して、POST リクエストをフォームに直接送信し、データを送信できます。
 
 
 ```JSON
@@ -185,13 +185,13 @@ POST https://my-domain.com/email-form
 
 >[!NOTE]
 >
-> URL には.json 拡張子を使用できません。 POST操作が機能するには、シートをパブリッシュする必要があります `.live` または実稼動ドメインの。
+> URL には、.json 拡張子を付けることはできません。POST 操作が `.live` または実稼動ドメインで機能するには、シートを公開する必要があります。
 
-#### フォームデータの形式設定
+#### フォームデータの書式設定
 
-POST本文のフォームデータを書式設定する方法はいくつかあります。 以下を使用できます。
+POST 本文のフォームデータを書式設定するには、いくつかの方法があります。以下を使用できます。
 
-* 配列 `name:value` ペア：
+* `name:value` のペアの配列：
 
   ```JSON
   {
@@ -231,7 +231,7 @@ POST本文のフォームデータを書式設定する方法はいくつかあ�
 
 
 
-* ～を持つ物 `key:value` ペア：
+* `key:value` のペアを持つオブジェクト：
 
   ```JSON
       {
@@ -269,7 +269,7 @@ POST本文のフォームデータを書式設定する方法はいくつかあ�
   }'
   ```
 
-* URL エンコード (`x-www-form-urlencoded`) 本文 ( `content-type` ヘッダーをに設定 `application/x-www-form-urlencoded`)
+* URL エンコードされた（`x-www-form-urlencoded`）本文（`content-type` ヘッダーが `application/x-www-form-urlencoded` に設定されている）
 
   ```Shell
   'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&Message=I   +have+some+questions+about+your+products.&Phone=123-456-7890&Company=Adobe+Inc.&   Country=United+States&PreferredContactMethod=Email&SubscribeToNewsletter=true'
@@ -283,7 +283,7 @@ POST本文のフォームデータを書式設定する方法はいくつかあ�
     https://main--portal--wkndforms.hlx.live/contact-us
   ```
 
-次に、次の操作を行います。 [「ありがとうございます」メッセージをカスタマイズします](/help/edge/docs/forms/thank-you-page-form.md).
+次に、[「ありがとうございます」メッセージをカスタマイズ](/help/edge/docs/forms/thank-you-page-form.md)できます。
 
 ## 関連トピック
 

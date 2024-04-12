@@ -3,7 +3,7 @@ title: ページテンプレート
 description: ページテンプレートは、新しいページのベースとして使用するページを作成する際に使用します
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3267'
 ht-degree: 100%
 

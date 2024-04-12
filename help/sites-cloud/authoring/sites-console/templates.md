@@ -3,9 +3,9 @@ title: ページテンプレートの作成
 description: テンプレートは、作成されるページの構造を定義します。テンプレートエディターを使用すると、テンプレートの作成および維持は、もはや開発者だけのタスクではなくなります。
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4524'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -280,7 +280,7 @@ ht-degree: 99%
 
 スタイルシステムを使用すると、テンプレート作成者がコンポーネントのコンテンツポリシーのスタイルクラスを定義し、コンテンツ作成者がページでのコンポーネントの編集時にそのスタイルクラスを選択できます。これらのスタイルは、1 つのコンポーネントの別の視覚的バリエーションとして使用することができるので、コンポーネントがより柔軟で扱いやすいものになります。
 
-詳しくは、 [スタイルシステムのドキュメント](/help/sites-cloud/authoring/page-editor/style-system.md) を参照してください。
+詳しくは、[スタイルシステムのドキュメント](/help/sites-cloud/authoring/page-editor/style-system.md)を参照してください。
 
 ### テンプレートの編集 - 構造 - テンプレート作成者 {#editing-a-template-structure-template-author}
 
@@ -319,7 +319,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->まったく同じではありませんが、テンプレートにコンポーネントやアセットを追加する操作は、 [ページのオーサリング。](/help/sites-cloud/authoring/page-editor/edit-content.md)
+>まったく同じではありませんが、テンプレートにコンポーネントやアセットを追加する操作は、[ページをオーサリングする](/help/sites-cloud/authoring/page-editor/edit-content.md)ときのアクションと数多くの類似点があります。
 
 #### コンポーネントのアクション {#component-actions}
 

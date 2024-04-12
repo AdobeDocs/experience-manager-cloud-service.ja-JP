@@ -4,7 +4,7 @@ description: 詳しくは、AEM Assets ビューでアセットを検索およ�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1543'
 ht-degree: 100%
 

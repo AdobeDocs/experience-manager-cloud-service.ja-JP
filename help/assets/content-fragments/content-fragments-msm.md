@@ -1,37 +1,38 @@
 ---
 title: MSM およびライブコピーを使用したコンテンツフラグメントの再利用
-description: MSM のライブコピー機能を使用して、ソースコンテンツと同期しながら、同じ（または類似した）コンテンツフラグメントコンテンツを複数の場所で使用する方法について説明します。
-source-git-commit: 3ce1a982055c2f9c900edbd88e079deb6d3a036a
-workflow-type: tm+mt
+description: MSM のライブコピー機能を使用して、ソースコンテンツと同期しながら、同じまたは類似のコンテンツフラグメントコンテンツを複数の場所で使用する方法について説明します。
+exl-id: f050b2d1-856c-4cdb-ac74-bc78016f144a
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
+workflow-type: ht
 source-wordcount: '432'
-ht-degree: 20%
+ht-degree: 100%
 
 ---
 
 # MSM を使用したコンテンツフラグメントの再利用 {#reuse-content-fragments-using-msm}
 
-マルチサイトマネージャー (MSM) とライブコピー機能を使用すると、同じコンテンツを複数の場所で使用しながら、ソースコンテンツと同期することができます。
+マルチサイトマネージャー（MSM）とライブコピー機能を使用すると、ソースコンテンツと同期しながら、複数の場所で同じコンテンツを使用できます。
 
-* MSM ライブコピーを使用すると、次のことが可能になります。
-   * コンテンツを 1 回作成し、
-   * 同じサイト、他のサイト、またはアプリケーションの他の領域で、このコンテンツを再利用します。
+* MSM ライブコピーを使用すると、次のことができます。
+   * コンテンツを 1 回作成してから
+   * このコンテンツを、同じサイトまたは他のサイトの他の領域か、同じアプリケーションまたは他のアプリケーションの他の領域で再利用する。
 * その後、MSM は次の目的でソースコンテンツとライブコピーの間のライブ関係を維持します。
    * ソースコンテンツを変更すると、ソースコピーとライブコピーが同期されます。
-   * 個々のサブページやコンポーネントのライブ関係を解除することで、ライブコピーを微調整できます。
+   * 個々のサブページやコンポーネントのライブ関係を解除して、ライブコピーのコンテンツのみを調整できます。
 
-MSM の概念について詳しくは、 [コンテンツの再利用：マルチサイトマネージャーとライブコピー](/help/sites-cloud/administering/msm/overview.md).
+MSM の概念の詳細な概要については、[コンテンツの再利用：マルチサイトマネージャーとライブコピー](/help/sites-cloud/administering/msm/overview.md)を参照してください。
 
 >[!NOTE]
 >
->[マルチサイトマネージャ (MSM)](/help/sites-cloud/administering/msm/overview.md) Adobe Experience Managerの機能を使用すると、一度作成して複数の Web サイトで再利用したコンテンツを再利用できます。
+>Adobe Experience Manager の[マルチサイトマネージャー（MSM）](/help/sites-cloud/administering/msm/overview.md)機能を使用すると、一度作成したコンテンツを複数の Web サイトで再利用できます。
 
-MSM for Content Fragments を使用すると、次のことが可能になります。
+MSM for Content Fragments を使用すると、次のことができます。
 
-* コンテンツフラグメントを 1 回作成してから、それらのフラグメントの（リンクされた）コピーを作成し、サイトやアプリケーションの他の領域で再利用します。
-* 複数のコピーを同期したままにするには、ソースコピーを 1 回更新してから、変更を（ライブ）コピーにプッシュします。
-* 親フラグメントと子フラグメントの間のリンクを一時的に、または恒久的に休止して、ローカルに変更を加えます。完全に休止するか、バリエーションやフィールドに変更を加えます。
+* コンテンツフラグメントを 1 回作成してから、これらのフラグメントの（リンクされた）コピーを作成して、サイトまたはアプリケーションの他の領域で再利用する。
+* ソースコピーを 1 回更新してから、変更を（ライブ）コピーにプッシュして、複数のコピーの同期を維持する。
+* 親フラグメントと子フラグメントの間のリンクを完全に、またはそのバリエーションやフィールドに関して、一時的または永続的に休止し、ローカルに変更を行う。
 
-MSM for Content Fragments とコンテンツフラグメントエディター内の機能を組み合わせると、フィールドレベルで継承を解除および復元できます。
+MSM for Content Fragments をコンテンツフラグメントエディター内の機能と組み合わせると、フィールドレベルで継承を解除および復元できます。
 
 >[!CAUTION]
 >
@@ -39,26 +40,26 @@ MSM for Content Fragments とコンテンツフラグメントエディター内
 >
 >MSM の機能は、**コンテンツフラグメント**&#x200B;コンソールを使用している際は&#x200B;*使用できません*。
 
-## 使い方 {#how-to}
+## 方法 {#how-to}
 
-MSM for Content Fragments(MSM for Content) の使用方法について詳しくは、次のドキュメントを参照してください (MSM for Content Fragments（AEM Assets にも適用可能）。
+MSM for Content Fragments の使用方法について詳しくは、次のドキュメントを参照してください（Assets にも適用可能）。
 
-* 使用方法 [MSM for Content Fragments（および Assets）](/help/assets/reuse-assets-using-msm.md)
+* [MSM for Content Fragments（および Assets）](/help/assets/reuse-assets-using-msm.md)の使用方法
 
 * [ライブコピーの作成](/help/assets/reuse-assets-using-msm.md)
 
   >[!CAUTION]
   >
-  >MSM を使用してコンテンツフラグメントのコピーを作成する場合は、 **ユニーク** 制約は、それぞれの [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md).
+  >コンテンツフラグメントのコピーを作成する MSM を使用する場合は、それぞれの[コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)で使用されているすべてのデータタイプから&#x200B;**一意**&#x200B;の制約を削除する必要があります。
 
-* [ソースとライブコピーのプロパティとステータスの表示](/help/assets/reuse-assets-using-msm.md#properties)
-* [ソースからライブコピーに変更を反映](/help/assets/reuse-assets-using-msm.md#rollout-sync)
+* [ソースおよびライブコピーのプロパティとステータスの表示](/help/assets/reuse-assets-using-msm.md#properties)
+* [ソースからライブコピーへの変更の伝達](/help/assets/reuse-assets-using-msm.md#rollout-sync)
 * 次の継承のキャンセルと復元：
-   * フィールドとバリエーション [コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
+   * [コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-variations.md#inheritance)のフィールドとバリエーション
    * [関連アセットのメタデータ](/help/assets/content-fragments/content-fragments-variations.md#canceling-reenabling-inheritance-individual-items)
-* [関係を休止して再開する](/help/assets/reuse-assets-using-msm.md#suspend-resume)
-* [ライブ関係を削除](/help/assets/reuse-assets-using-msm.md#detach)
-* [MSM for Content Fragments （および Assets）と MSM for Sites の比較](/help/assets/reuse-assets-using-msm.md#comparison)
+* [関係の休止と再開](/help/assets/reuse-assets-using-msm.md#suspend-resume)
+* [ライブ関係の削除](/help/assets/reuse-assets-using-msm.md#detach)
+* [MSM for Content Fragments（および Assets）と MSM for Sites の比較](/help/assets/reuse-assets-using-msm.md#comparison)
 
 ## 制限事項 {#limitations}
 

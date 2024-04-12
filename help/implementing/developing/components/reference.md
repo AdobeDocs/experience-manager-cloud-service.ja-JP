@@ -3,7 +3,7 @@ title: コンポーネントリファレンスガイド
 description: コンポーネントとその構造の詳細に関するデベロッパー向けリファレンスガイド
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3481'
 ht-degree: 100%
 

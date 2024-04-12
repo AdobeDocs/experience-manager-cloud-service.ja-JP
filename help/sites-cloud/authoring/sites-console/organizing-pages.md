@@ -1,24 +1,24 @@
 ---
 title: ページの整理
-description: AEMで Web サイトを整理する方法を説明します。
+description: AEM で web サイトを整理する方法について説明します。
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '799'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
 
 # ページの整理 {#creating-and-organizing-pages}
 
-AEMで Web サイトを整理する方法を説明します。 ページの整理方法を理解したら、次の操作を実行できます。 [新しいページを作成](/help/sites-cloud/authoring/sites-console/creating-pages.md) および [既存のページを管理します。](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+AEM で web サイトを整理する方法について説明します。ページをどのように整理する必要があるかを理解したら、[新しいページを作成](/help/sites-cloud/authoring/sites-console/creating-pages.md)し、[既存のページを管理](/help/sites-cloud/authoring/sites-console/managing-pages.md)できます。
 
 {{edge-delivery-authoring}}
 
-## サイトの整理 {#organizing-your-site}
+## サイトの管理 {#organizing-your-site}
 
-作成者は、AEM内でサイトを整理する必要があります。 この作業中に、次の目的でコンテンツページを作成して名前を付けます。
+作成者は、AEM 内でサイトを整理する必要があります。この作業中に、次の目的でコンテンツページを作成して名前を付けます。
 
 * 作成者がオーサー環境でコンテンツページを容易に検索できるようにする
 * サイトへの訪問者がパブリッシュ環境でコンテンツページを容易に閲覧できるようにする
@@ -27,7 +27,7 @@ AEMで Web サイトを整理する方法を説明します。 ページの整�
 
 Web サイトの構造は、コンテンツページを保持するツリーと見なすことができます。これらのコンテンツページの名前は、URL の作成に使用されます。一方、タイトルは、ページコンテンツを表示したときに表示されます。
 
-次に、 [WKND チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja) スケートパーク (`la-skateparks`) にアクセスします。
+以下に、スケートパーク（`la-skateparks`）に関する記事にアクセスする [WKND チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja)サイトの例を示します。
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -48,7 +48,7 @@ Web サイトの構造は、コンテンツページを保持するツリーと�
    /...
 ```
 
-この構造は、 [**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md) Web サイトのページ間を移動し、ページ上でアクションを実行できる場所です。
+この構造は [**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)から表示でき、web サイトのページ間を移動したり、ページ上でアクションを実行したりできます。
 
 ## ページ命名規則 {#page-naming-conventions}
 
@@ -94,7 +94,7 @@ Web サイトの構造は、コンテンツページを保持するツリーと�
 
 ページを作成するときにページの&#x200B;**タイトル**&#x200B;のみを指定した場合、AEM ではページの&#x200B;**名前**&#x200B;がこの文字列から派生され、AEM と JCR によって課された[規則に基づいてページ名が検証](/help/implementing/developing/introduction/naming-conventions.md)されます。
 
-「**タイトル**」フィールドに無効な文字が含まれていてもエラーにはなりませんが、派生された名前では、無効な文字が別の文字に置き換えられます。例：
+「**タイトル**」フィールドに無効な文字が含まれていてもエラーにはなりませんが、派生された名前では、無効な文字が別の文字に置き換えられます。次に例を示します。
 
 | タイトル | 派生した名前 |
 |---|---|
@@ -115,19 +115,19 @@ Web サイトの構造は、コンテンツページを保持するツリーと�
 
 ## テンプレート {#templates}
 
-AEMでは、 [テンプレート](/help/sites-cloud/authoring/sites-console/templates.md) は、作成される新しいページの基礎として使用される、特殊なタイプのページです。
+AEM では、[テンプレート](/help/sites-cloud/authoring/sites-console/templates.md)は、作成中のあらゆる新規ページの基礎として使用される特殊なタイプのページです。
 
-テンプレートは、サムネール画像やその他のプロパティを含むページの構造を定義します。例えば、製品ページ、サイトマップ、連絡先情報用に別々のテンプレートを用意することができます。 テンプレートは、 [コンポーネント](#components).
+テンプレートによって、サムネール画像やその他のプロパティなど、ページの構造が定義されます。例えば、商品ページ、サイトマップおよび問い合わせ先に、それぞれ別のテンプレートを使用することができます。テンプレートは、[コンポーネント](#components)で構成されています。
 
 AEM では、複数のテンプレートが標準提供されています。使用できるテンプレートは、個々の web サイトによって異なります。主なフィールドは次のとおりです。
 
-* **タイトル**  — 生成される Web ページに表示されるタイトル
-* **名前**  — ページに名前を付ける際に使用されます
-* **テンプレート**  — 新しいページを生成する際に使用できるテンプレートのリスト
+* **タイトル** - 生成される web ページに表示されるタイトルです。
+* **名前** - ページに名前を付ける際に使用されます。
+* **テンプレート** - 新しいページを生成する際に使用できるテンプレートのリストです。
 
 ## コンポーネント {#components}
 
-[コンポーネント](/help/implementing/developing/components/overview.md) は、特定のタイプのコンテンツを追加できるようにAEMが提供する要素です。 AEMには、すぐに使用できる様々なコンポーネント ( [コアコンポーネント](/help/implementing/developing/components/overview.md#core-components) は包括的な機能を提供します。 コンポーネントの例を以下に示します。
+[コンポーネント](/help/implementing/developing/components/overview.md)は、AEM で提供される、特定のタイプのコンテンツを追加できる要素です。AEM には、包括的な機能を提供する[コアコンポーネント](/help/implementing/developing/components/overview.md#core-components)と呼ばれる、一連のコンポーネントが標準提供されています。コンポーネントの例を以下に示します。
 
 * テキスト
 * 画像

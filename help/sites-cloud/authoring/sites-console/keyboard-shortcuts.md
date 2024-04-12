@@ -3,9 +3,9 @@ title: コンソールのキーボードショートカット
 description: これらのキーボードショートカットを使用して、オーサリング時に時間を節約
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '378'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ AEM には、一部の一般的に使用される機能（編集、プロパテ�
 
 ## ページエディターのキーボードショートカット {#keyboard-shortcuts-for-the-page-editor}
 
-AEM 全体で様々なキーボードショートカットを利用できます。コンソールの使用に適用されるものと、適用されるものがあります。 [ページ編集](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
+AEM 全体で様々なキーボードショートカットを利用できます。コンソール使用に適用されるものや、[ページ編集](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)に適用されるものなどがあります。
 
 ## コンテンツフラグメントコンソールのキーボードショートカット {#keyboard-shortcuts-for-the-content-fragments-console}
 

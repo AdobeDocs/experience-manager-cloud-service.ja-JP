@@ -1,40 +1,40 @@
 ---
-title: サイトコンソール
-description: サイトコンソールを使用してAEMページを管理および整理する方法について説明します。
-source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
-workflow-type: tm+mt
+title: Sites コンソール
+description: Sites コンソールを使用して AEM ページを管理および整理する方法について説明します。
+exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
+workflow-type: ht
 source-wordcount: '1628'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
+# Sites コンソール {#sites-console}
 
-# サイトコンソール {#sites-console}
+**Sites** コンソールを使用して AEM ページを管理および整理する方法について説明します。
 
-の使用方法を学ぶ **Sites** コンソールを使用して、AEMページを管理および整理します。
+## オリエンテーション {#orientation}
 
-## 向き {#orientation}
+**Sites** コンソールでは、ページ階層を表示できます。
 
-The **Sites** コンソールでは、ページ階層を表示できます。
-
-![項目が選択された状態でのサイトコンソールの列表示](assets/sites-console-column-view-selected.png)
+![項目が選択された Sites コンソールの列表示](assets/sites-console-column-view-selected.png)
 
 ページの管理と整理に役立つ様々なビューとツールバーが用意されています。
 
-* [コンソールツールバー](#toolbar) が常に存在し、操作に役立ちます。
-* [3 つの異なるビュー](#views) を使用すると、ページを簡単に見つけて選択できます。
-* [アクションツールバー](#action-toolbar) アクションを実行する項目を選択したときに表示されます。
-* [サイドパネル](#side-panel) には、選択したページに関する詳細情報を表示するための複数のオプションがあります。
+* [コンソールツールバー](#toolbar)は、移動に役立つように常に表示されます。
+* [3 つの異なる表示](#views)では、ページを簡単に見つけて選択できます。
+* [アクションツールバー](#action-toolbar)は、アクションを実行する項目を選択すると表示されます。
+* [サイドパネル](#side-panel)には、選択したページの詳細情報を表示する複数のオプションがあります。
 
 ## コンソールツールバー {#console-toolbar}
 
-コンソールツールバーは常にコンソールに表示され、コンテンツの向きを変更したり、コンテンツを移動したりするのに役立ちます。
+コンソールツールバーは常にコンソール上に表示され、コンテンツ内の位置を確認したり、コンテンツ内を移動したりするのに役立ちます。
 
-![サイトコンソールのツールバー](assets/sites-console-toolbar.png)
+![Sites コンソールのツールバー](assets/sites-console-toolbar.png)
 
 ### サイドパネルセレクター {#side-panel-selector}
 
-サイドパネルセレクターを使用すると、選択した項目に関する追加情報をコンソールに表示できます。
+サイドパネルセレクターを使用すると、コンソールで選択した項目に関する追加情報を表示できます。
 
 ![サイドパネルセレクターボタン](assets/sites-console-side-panel-button.png)
 
@@ -42,62 +42,62 @@ The **Sites** コンソールでは、ページ階層を表示できます。
 
 ![サイドパネルセレクターの例](assets/sites-console-side-panel-selector.png)
 
-サイドパネルの詳細については、ドキュメントを参照してください。 [サイトコンソールのサイドパネル。](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
+サイドパネルについて詳しくは、[Sites コンソールのサイドパネル](/help/sites-cloud/authoring/sites-console/console-side-panel.md)ドキュメントを参照してください。
 
 ### パンくずリスト {#breadcrumbs}
 
-パネルの中央に位置し、常に現在選択されている項目の説明を表示するパンくずリストを使用すると、Web サイトのレベル間を移動できます。
+パネルの中央に位置し、現在選択している項目の説明を常に表示するパンくずリストを使用すると、web サイトのレベル間を移動できます。
 
 ![ナビゲーションバーのパンくずリスト](assets/sites-console-breadcrumbs-navigation.png)
 
 
-パンくずテキストをタップまたはクリックすると、現在選択されている項目の階層レベルをリストするドロップダウンが表示されます。 エントリをタップまたはクリックすると、その場所にジャンプできます。
+パンくずリストのテキストをタップまたはクリックすると、現在選択している項目の階層レベルをリストするドロップダウンが表示されます。エントリをタップまたはクリックすると、その場所にジャンプします。
 
 ![展開したパンくずリストの例](assets/sites-console-breadcrumbs-example.png)
 
 ### すべてを選択 {#select-all}
 
-をタップまたはクリックして、 **すべてを選択** ボタンは、コンソールの現在のビュー内のすべての項目を選択します。
+「**すべてを選択**」ボタンをタップまたはクリックすると、コンソールの現在の表示にあるすべての項目が選択されます。
 
-![「すべて選択」ボタン](assets/sites-console-select-all.png)
+![「すべてを選択」ボタン](assets/sites-console-select-all.png)
 
-すべての項目を選択した場合、選択した項目の数がツールバーの右上に表示されます。この場合、 **すべてを選択** ボタンが表示されました。
+すべての項目を選択すると、選択した項目の数が、「**すべてを選択**」ボタンが表示されたツールバーの右上に表示されます。
 
 すべての項目の選択を解除して選択モードを終了するには、次の操作を行います。
 
-* をクリックまたはタップする **X** 数の横にある
-* の使用 **逃げ出す** キー。
+* カウントの横にある「**X**」をクリックまたはタップする。
+* **Esc** キーを使用する。
 
 ![すべてを選択解除](assets/sites-console-deselect-all.png)
 
 ### 「作成」ボタン {#create-button}
 
-The **作成** ボタンを使用すると、サイトに新しいページを追加したり、ライブコピーやローンチなどの追加の Sites オブジェクトを作成したりできます。
+「**作成**」ボタンを使用すると、サイトに新しいページを追加したり、ライブコピーやローンチなどの追加の Sites オブジェクトを作成したりできます。
 
 ![「作成」ボタン](assets/sites-console-create.png)
 
-クリックすると、表示されるオプションはコンソール/コンテキストに適しています。 最も一般的なものは次のとおりです。
+クリックすると、コンソール／コンテキストに適したオプションが表示されます。最も一般的なものは次のとおりです。
 
-* [Page](/help/sites-cloud/authoring/sites-console/creating-pages.md)
+* [ページ](/help/sites-cloud/authoring/sites-console/creating-pages.md)
 * [サイト](/help/sites-cloud/administering/site-creation/create-site.md)
 * [ライブコピー](/help/sites-cloud/administering/msm/overview.md)
 * [Experience Platform Launch](/help/sites-cloud/authoring/launches/overview.md)
 * [言語コピー](/help/sites-cloud/administering/translation/overview.md)
 * [CSV レポート](/help/sites-cloud/authoring/sites-console/csv-export.md)
 
-機能の詳細については、これらの機能へのリンクを参照してください。
+機能について詳しくは、これらの機能へのリンクを参照してください。
 
 ## ページの表示と選択 {#views}
 
-The **Sites** コンソールは、コンテンツ階層の 3 つの異なるビューを提供します。 使用可能な任意の表示で、リソースを表示、ナビゲーション、および（追加のアクションをおこなうために）選択できます。
+**Sites** コンソールには、コンテンツ階層の 3 つの異なる表示が用意されています。使用可能な任意の表示方法で、リソースを表示、ナビゲート、選択（追加のアクションのために）できます。
 
 * [列表示](#column-view)
 * [カード表示](#card-view)
 * [リスト表示](#list-view)
 
-The **表示** AEMツールバーの右端にあるアイコンは、現在選択されているビューを示します。
+AEM ツールバーの右端にある&#x200B;**表示**&#x200B;アイコンは、現在選択されている表示を示します。
 
-タップまたはクリックすると、別のビューを選択できます。
+タップまたはクリックすると、別の表示を選択できます。
 
 ![表示ボタン](assets/sites-console-views-button.png)
 
@@ -137,7 +137,7 @@ The **表示** AEMツールバーの右端にあるアイコンは、現在選�
 
 ### 列表示 {#column-view}
 
-列表示では、一連のカスケード列を通じて、コンテンツツリーを視覚的にナビゲーションできます。 この表示では、web サイトのツリー構造を視覚化して移動できます。
+列表示を使用すると、一連のカスケード表示された列を通じて、コンテンツツリーの視覚的なナビゲーションができます。この表示では、web サイトのツリー構造を視覚化して移動できます。
 
 ![列表示](assets/sites-console-column-view.png)
 
@@ -166,32 +166,32 @@ The **表示** AEMツールバーの右端にあるアイコンは、現在選�
 
 ### カード表示 {#card-view}
 
-カード表示では、階層の現在のレベルの各項目が大きなカードとして表示されます。
+カード表示では、階層内の現在のレベルにある各項目が大きなカードとして表示されます。
 
-![カードビュー](assets/sites-console-card-view.png)
+![カード表示](assets/sites-console-card-view.png)
 
-* カードは次のような情報を提供します。
+* カードには次のような情報が含まれています。
 
    * ページの内容を視覚的に表現したもの。
    * ページのタイトル。
    * 重要な日付（最終編集日、最終公開日など）。
-   * ページがロックされているか、非表示になっているか、ライブコピーの一部であるか。
-   * ワークフローの一部として項目に対する操作が必要な場合は、「指標」を使用します。
+   * ページがロックされている、非表示、またはライブコピーの一部であるかどうか。
+   * ワークフローの一部として項目に対応する必要があるかどうかを示すインジケーター。
 
-カード表示もオファー [クイックアクション](#quick-actions) 項目（選択など）と、編集などの一般的なアクション。
+また、カード表示では、項目の選択などの[クイックアクション](#quick-actions)や、編集などの一般的なアクションも用意されています。
 
 ![クイックアクション](assets/sites-console-quick-actions.png)
 
-カードを（クイックアクションをタップしないように慎重に）タップまたはクリックしてツリーの下に移動したり、 [ヘッダーのパンくずリスト](#the-header).
+カードを（クイックアクションのタップを回避するために慎重に）タップまたはクリックしてツリーの下位に移動したり、[ヘッダーのパンくずリスト](#the-header)を使用して再度上位に移動したりできます。
 
 ### リスト表示 {#list-view}
 
-リスト表示では、リストの現在のレベルの各リソースの情報が表示されます。
+リスト表示では、各リソースの情報がリスト内の現在のレベルで表示されます。
 
 ![リスト表示](assets/sites-console-list-view.png)
 
-* リソース名をタップまたはクリックしてツリーの下に移動したり、[ヘッダーのパンくずリスト](#the-header)を使用して上に戻ったりできます。
-* リスト内のすべての項目を簡単に選択するには、 [**すべてを選択** 」チェックボックスをオンにします。](#select-all)
+* リソース名をタップまたはクリックしてツリーの下位に移動したり、[ヘッダーのパンくずリスト](#the-header)を使用して再度上位に移動したりできます。
+* リスト内のすべての項目を簡単に選択するには、ツールバーの「[**すべてを選択**」チェックボックスを使用します。](#select-all)
 
 * 表示ボタンの下にある「**設定を表示**」オプションを使用して、表示する列を選択します。次の列を表示できます。
 
@@ -203,8 +203,8 @@ The **表示** AEMツールバーの右端にあるアイコンは、現在選�
    * **操作**
    * **ワークフロー** - 現在ページに適用されているワークフロー。ポインタを合わせたり、タイムラインを開いたりすると、詳細情報が表示されます。
    * **翻訳済み**
-   * **ページビュー数**
-   * **実訪問者数**
+   * **ページ表示**
+   * **ユニーク訪問者**
    * **ページ滞在時間**
 
 ![列を設定](assets/sites-console-select-columns.png)
@@ -225,37 +225,37 @@ The **表示** AEMツールバーの右端にあるアイコンは、現在選�
 
 ## アクションツールバー {#actions-toolbar}
 
-リソースが選択されている場合は、選択したアイテムに対して様々なアクションを実行できます。 これらのアクションは、アクションツールバーに表示されます。
+リソースが選択されている場合は、選択した項目に対して様々なアクションを実行できます。これらのアクションは、アクションツールバーに表示されます。
 
 ![アクションツールバー](assets/introduction-actions-toolbar.png)
 
-アクションツールバーは、コンソールでリソースが選択されている場合にのみ表示されます。 アクションツールバーで使用できるアクションは、選択した特定の項目に対して実行できるアクションを反映して変化します。 最も一般的なアクションは次のとおりです。
+アクションツールバーは、コンソールでリソースが選択されている場合にのみ表示されます。アクションツールバーで使用できるアクションは、選択した特定の項目に対して取ることのできるアクションを反映して変化します。最も一般的なアクションは次のとおりです。
 
-* [**作成**](#create-action)  — 新しいコンテンツまたはコンテンツ関連のアクションを作成します
-* **編集**  — 選択したページの作成方法に応じて、 **編集** アクションを実行すると、該当するエディターが開きます。
-   * [ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md) - AEM Page Editor で作成されたページの場合
-   * [ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/authoring.md)  — ユニバーサルエディターで作成されたページの場合
-* [**プロパティ**](/help/sites-cloud/authoring/sites-console/page-properties.md)  — ページのプロパティウィンドウを開きます。
-* [**ロック**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)  — 他のユーザーがページを変更できないようにページをロックします
-* [**コピー**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page)  — ページをコピーする
-* [**移動**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page)  — ページの移動または名前変更
-* [**クイック公開**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish)  — ページを直ちに公開する
-* [**公開を管理**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - 1 つ以上のページを公開するようにスケジュールを設定する
-* [**復元**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version)  — ページまたはページツリーのバージョンを復元します
-* [**削除**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page)  — ページまたはページの削除
+* [**作成**](#create-action) - 新しいコンテンツまたはコンテンツ関連のアクションを作成します
+* **編集** - 選択したページの作成方法に応じて、**編集**&#x200B;アクションを実行すると、該当するエディターが開きます
+   * [ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md) - AEM ページエディターで作成されたページの場合
+   * [ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/authoring.md) - ユニバーサルエディターで作成されたページの場合
+* [**プロパティ**](/help/sites-cloud/authoring/sites-console/page-properties.md) - ページのプロパティウィンドウを開きます
+* [**ロック**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - 他のユーザーがページを変更できないようにページをロックします
+* [**コピー**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - ページをコピーします
+* [**移動**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - ページの移動や名前変更を行います
+* [**クイック公開**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - 1 ページまたは複数のページを直ちに公開します
+* [**公開を管理**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - 1 ページまたは複数のページを公開するようにスケジュール設定します
+* [**復元**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - ページまたはページツリーのバージョンを復元します
+* [**削除**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - 1 ページまたは複数のページを削除します
 
-一部のウィンドウではスペースが制限されるので、使用可能なスペースよりもツールバーのほうが長くなることがよくあります。この場合は、追加のオプションが表示されます。省略記号 (3 つのドットまたは **...**) をクリックすると、その他のすべてのアクションを含むドロップダウンセレクターが開きます。
+一部のウィンドウではスペースが制限されるので、使用可能なスペースよりもツールバーのほうが長くなることがよくあります。この場合は、追加のオプションが表示されます。省略記号（三点リーダーまたは **...**）をクリックまたはタップすると、その他のすべてのアクションを含むドロップダウンセレクターが開きます。
 
 ![その他のオプション](assets/sites-console-additional-options.png)
 
 ### アクションを作成 {#create-action}
 
-作成アクションは、 [**作成** ツールバーボタン](#create-button) 新しいページや類似の項目を作成する場合。
+作成アクションでは、新しいページや類似のアイテムを作成するための&#x200B;[**作成**&#x200B;ツールバーボタン](#create-button)と同様のオプションが提供されます。
 
 また、ページ関連のアクションを作成する機能も提供します。
 
-* [**ワークフロー**](/help/sites-cloud/authoring/workflows/overview.md)  — ページへのワークフローの適用
-* [**バージョン**](/help/sites-cloud/authoring/sites-console/page-versions.md)  — ページのバージョンを作成します
+* [**ワークフロー**](/help/sites-cloud/authoring/workflows/overview.md) - ページにワークフローを適用
+* [**バージョン**](/help/sites-cloud/authoring/sites-console/page-versions.md) - ページのバージョンを作成
 
 ## テンプレート
 

@@ -3,13 +3,13 @@ title: アカウント環境の設定
 description: Adobe Experience Manager（AEM）では、アカウントとオーサー環境の特定項目を設定できます。
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '501'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
-# アカウント環境の設定  {#configuring-your-account-environment}
+# アカウント環境の設定 {#configuring-your-account-environment}
 
 Adobe Experience Manager（AEM）では、アカウントとオーサー環境の特定項目を設定できます。
 
@@ -24,7 +24,7 @@ Adobe Experience Manager（AEM）では、アカウントとオーサー環境�
 * 次のユーザーとして操作
    * 「次のユーザーとして操作」機能を使用すると、ユーザーは別のユーザーに成り代わって作業をおこなうことができます。<!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
 * プロファイル
-   * ユーザー設定への便利なリンクを提供します。 <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
+   * ユーザー設定への便利なリンクを提供します。<!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
 * [環境設定](#my-preferences)
    * ユーザー独自の様々な環境設定を指定します。
 
@@ -32,7 +32,7 @@ Adobe Experience Manager（AEM）では、アカウントとオーサー環境�
 
 ### 環境設定 {#my-preferences}
 
-The **環境設定** ダイアログボックスには、 [ユーザー](#user-settings) 」オプションを使用して、
+**環境設定**&#x200B;ダイアログボックスには、ヘッダーの「[ユーザー](#user-settings)」オプションを使用してアクセスします。
 
 各ユーザーは、独自の優先プロパティを設定できます。
 
@@ -56,13 +56,13 @@ The **環境設定** ダイアログボックスには、 [ユーザー](#user-s
 
 * **アセットのデスクトップアクションを表示**
 
-  このオプションを使用するには、AEMデスクトップアプリケーションが必要です。
+  このオプションを使用するには、AEM デスクトップアプリケーションが必要です。
 
 * **注釈カラー**
 
   注釈を作成する際のデフォルトのカラーを定義します。
 
-   * カラーブロックをクリックして、スウォッチセレクターを開き、色を選択します。
+   * カラーブロックをクリックすると、スウォッチセレクターが開き、色を選択できます。
    * または、フィールドに目的のカラーの 16 進コードを入力します。
 
 * **相対的な日付の表示**
@@ -80,7 +80,7 @@ The **環境設定** ダイアログボックスには、 [ユーザー](#user-s
 
 * **ショートカットを有効にする**
 
-  AEMでは、オーサリングの効率を高める様々なキーボードショートカットがサポートされています。
+  AEM には、オーサリングをより効率的にする様々なキーボードショートカットがあります。
 
    * [ページ編集時のキーボードショートカット](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
    * [コンソールのキーボードショートカット](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)

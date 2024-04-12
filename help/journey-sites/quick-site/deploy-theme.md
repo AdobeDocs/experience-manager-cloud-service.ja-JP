@@ -3,9 +3,9 @@ title: カスタマイズしたテーマのデプロイ
 description: パイプラインを使用してサイトテーマをデプロイする方法を説明します。
 exl-id: fe065972-39db-4074-a802-85895c701efd
 source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1002'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ AEM クイックサイト作成ジャーニーの以前のドキュメントで�
 
 ## ジャーニーの終了 {#end-of-journey}
 
-おめでとうございます。AEM クイックサイト作成ジャーニーを完了しました。その結果、以下を達成できました。
+これで完了です。AEM クイックサイト作成ジャーニーを完了しました。その結果、以下を達成できました。
 
 * Cloud Manager とフロントエンドパイプラインがフロントエンドカスタマイズの管理とデプロイのためにどのように機能するかを理解する。
 * テンプレートに基づいて AEM サイトを作成する方法と、サイトテーマをダウンロードする方法を理解する。
@@ -112,9 +112,9 @@ AEM は強力なツールであり、その他にも使用可能なオプショ�
 * [AEM サイトテーマ](https://github.com/adobe/aem-site-template-standard-theme-e2e) - これは AEM サイトテーマの GitHub リポジトリです。
 * [npm](https://www.npmjs.com) - サイトをすばやく作成するために使用される AEM テーマが npm に基づいている場合。
 * [webpack](https://webpack.js.org) - サイトをすばやく作成するために使用される AEM テーマが webpack に基づいている場合。
-* [ページの整理](/help/sites-cloud/authoring/sites-console/organizing-pages.md)  — このガイドでは、AEMサイトのページを整理する方法について詳しく説明します。
-* [ページの作成](/help/sites-cloud/authoring/sites-console/creating-pages.md)  — このガイドでは、サイトに新しいページを追加する方法について詳しく説明します。
-* [ページの管理](/help/sites-cloud/authoring/sites-console/managing-pages.md)  — このガイドでは、移動、コピー、削除など、サイトのページを管理する方法について詳しく説明します。
+* [ページの整理](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - このガイドでは、AEM のサイトのページを整理する方法について詳しく説明します。
+* [ページの作成](/help/sites-cloud/authoring/sites-console/creating-pages.md) - このガイドでは、サイトに新しいページを追加する方法について詳しく説明します。
+* [ページの管理](/help/sites-cloud/authoring/sites-console/managing-pages.md) - このガイドでは、移動、コピー、削除など、サイトのページを管理する方法について詳しく説明します。
 * [パッケージの操作方法](/help/implementing/developing/tools/package-manager.md) - パッケージを使用すると、リポジトリコンテンツの読み込みと書き出しが可能になります。このドキュメントでは、AEM 6.5 でのパッケージの操作方法を説明します（AEMaaCS にも適用）。
 * [オンボーディングジャーニー](/help/journey-onboarding/overview.md) - このガイドは、チームが確実に設定され、AEM as a Cloud Service にアクセスできるようにするための出発点となります。
 * [Adobe Experience Manager Cloud Manager ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja) - Cloud Manager の機能について詳しくは、Cloud Manager のドキュメントを参照してください。
