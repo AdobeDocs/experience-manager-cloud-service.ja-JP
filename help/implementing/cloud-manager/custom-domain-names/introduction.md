@@ -2,10 +2,10 @@
 title: カスタムドメイン名の概要
 description: Cloud Manager の UI では、セルフサービス方式でカスタムドメインを追加して、サイトを独自のブランド名で識別することができます。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d9cd10772252d80487f578ee73f40ec334600029
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 86%
+source-wordcount: '741'
+ht-degree: 99%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 86%
 >id="aemcloud_golive_domains"
 >title="カスタムドメイン名の管理"
 >abstract="Cloud Manager の UI では、セルフサービス方式でカスタムドメインを追加して、サイトを独自のブランド名で識別することができます。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html?lang=ja" text="カスタムドメイン名の追加"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html?lang=ja" text="カスタムドメイン名の表示と更新"
+>additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="カスタムドメイン名の追加"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="カスタムドメイン名の表示と更新"
 
 Cloud Manager の UI では、セルフサービス方式でカスタムドメインを追加して、サイトを独自のブランド名で識別することができます。Adobe Experience Manager as a Cloud Service には、`*.adobeaemcloud.com` で終わるデフォルトのドメイン名がプロビジョニングされます。このデフォルトのドメイン名は、web サイトにカスタムドメイン名を関連付けた後でも、そのまま残ります。
 
 ## カスタムドメイン名とは {#what-are-custom-domain-names}
 
-各 web サイトには、`184.33.123.64` のような、機械で読み取り可能な一意の数値アドレスが関連付けられています。ドメインネームシステム (DNS) を使用すると、数値アドレスを次のような覚えやすいアドレスに変換することで、Web サイトにカスタムのブランドドメインを付加できます。 `wknd.com`.
+各 web サイトには、`184.33.123.64` のような、機械で読み取り可能な一意の数値アドレスが関連付けられています。ドメインネームシステム（DNS）を使用すると、数値アドレスを、`wknd.com` のような覚えやすいアドレスに変換することで、web サイトにカスタムのブランドドメインを付加できます。
 
 顧客が覚えやすく、ブランドを反映したサイトのドメイン名を付けることをお勧めします。
 
@@ -35,7 +35,7 @@ Cloud Manager の UI では、セルフサービス方式でカスタムドメ�
 
 ## カスタムドメイン名と BYO CDN {#byo-cdn}
 
-AEM as a Cloud Serviceは、組み込みのコンテンツ配信ネットワーク (CDN) サービスを提供しますが、独自の (BYO)CDN をAEMと共に使用することもできます。 カスタムドメインは、AEM が管理する CDN か、自分が管理している CDN のいずれかにインストールできます。
+AEM as a Cloud Service にはビルトインのコンテンツ配信ネットワーク（CDN）サービスが用意されていますが、独自の（BYO）CDN を AEM とともに使用することもできます。カスタムドメインは、AEM が管理する CDN か、自分が管理している CDN のいずれかにインストールできます。
 
 * AEM が管理する CDN にインストールされるカスタムドメイン名（および証明書）は、Cloud Manager で管理されます。
 * 独自の CDN にインストールされているカスタムドメイン名（および証明書）は、その特定の CDN で管理されます。
@@ -46,7 +46,7 @@ AEM as a Cloud Serviceは、組み込みのコンテンツ配信ネットワー�
 
 ## ワークフロー {#workflow}
 
-カスタムドメイン名を追加するには、DNS サービスと Cloud Manager 間のやり取りが必要です。このため、カスタムドメイン名のインストール、設定、検証には、いくつかの手順が必要です。 次の表に、一般的なエラーが発生した場合の対処方法など、必要な手順の概要を示します。
+カスタムドメイン名を追加するには、DNS サービスと Cloud Manager 間のやり取りが必要です。このため、カスタムドメイン名のインストール、設定、および検証には、いくつかの手順が必要です。次の表に、一般的なエラーが発生した場合の対処方法など、必要な手順の概要を示します。
 
 | 手順 | 説明 | 担当 | 詳細情報 |
 |--- |--- |--- |---|
@@ -66,11 +66,11 @@ AEM as a Cloud Serviceは、組み込みのコンテンツ配信ネットワー�
 
 ## 制限事項 {#limitations}
 
-AEMaaCS でカスタムドメイン名を使用する場合、いくつかの制限があります。
+AEMaaCS でカスタムドメイン名を使用する場合は、いくつかの制限があります。
 
 * Cloud Manager では、Sites プログラムの公開サービスおよびプレビューサービスの両方でカスタムドメイン名がサポートされています。オーサーサービスでは、カスタムドメインがサポートされていません。
 * 各 Cloud Manager 環境は、1 つの環境につき最大 500 個のカスタムドメインをホストできます。
-* 現在実行中のパイプラインが環境に添付されている間は、ドメイン名を環境に追加できません。
+* 現在実行中のパイプラインが環境に接続されている間は、その環境にドメイン名を追加することはできません。
 * 同じドメイン名を複数の環境で使用することはできません。
 * 一度に追加できるドメイン名は 1 つだけです。
 * AEM as a Cloud Service では、`*.example.com` のようなワイルドカードドメインをサポートしていません。
