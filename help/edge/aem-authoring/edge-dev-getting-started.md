@@ -3,10 +3,10 @@ title: Edge Delivery Services を使用した AEM オーサリングの開発者
 description: このガイドでは、Edge Delivery Services とコンテンツオーサリング用のユニバーサルエディターを使用して、新しい Adobe Experience Manager サイトを導入および実行する方法について説明します。
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
+source-git-commit: 7cd19f674d3eae2bcbe2b40402e135d4db6e3035
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 90%
+source-wordcount: '1297'
+ht-degree: 88%
 
 ---
 
@@ -130,7 +130,7 @@ GitHub プロジェクトが完成したら、プロジェクトで使用でき�
 >
 >ユニバーサルエディターを使用してサイトを編集するには、Chromium ベースのブラウザーを使用する必要があります。
 
-1. [プロジェクトの Slack チャネル](/help/edge/docs/slack.md)経由で、アドビのエンジニアリングからの最新の Edge Delivery Services を使用した AEM オーサリングサイトテンプレートをリクエストします。
+1. GitHub から最新のAEM オーサリングとEdge Delivery Servicesのサイトテンプレートを次の場所でダウンロードします。 [`https://github.com/adobe-rnd/aem-boilerplate-xwalk`](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
 
 1. AEM as a Cloud Service オーサリングインスタンスにログインし、サイトコンソールに移動して、**作成**／**テンプレートからサイト**&#x200B;をタップまたはクリックします。
 
@@ -141,6 +141,8 @@ GitHub プロジェクトが完成したら、プロジェクトで使用でき�
    ![テンプレートの読み込み](assets/edge-dev-getting-started/site-templates.png)
 
 1. アドビのエンジニアリングから提供される Edge Delivery Services を使用した AEM オーサリングサイトテンプレートをアップロードします。
+
+   * テンプレートは 1 回だけアップロードする必要があります。 アップロードした後は、再利用して追加のサイトを作成できます。
 
 1. テンプレートが読み込まれると、ウィザードに表示されます。タップまたはクリックして選択し、「**次へ**」をタップまたはクリックします。
 
