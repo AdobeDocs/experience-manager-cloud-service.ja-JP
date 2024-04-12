@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
+source-git-commit: 0ef1e1915f2fdbe44cff209851eb43cc9d69958e
 workflow-type: tm+mt
-source-wordcount: '2285'
+source-wordcount: '2261'
 ht-degree: 34%
 
 ---
@@ -32,11 +32,13 @@ ht-degree: 34%
 
 最新のメンテナンスリリースノートについては、[こちら](/help/release-notes/maintenance/latest.md)をご覧ください。
 
-## リリースビデオ {#release-video}
+<!-- ## Release Video {#release-video}
 
-2024.3.0 リリースで追加された機能の概要については、2024 年 3 月リリースの概要ビデオをご覧ください。
+Have a look at the March 2024 Release Overview video for a summary of the features added in the 2024.3.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -170,8 +172,6 @@ Assets Essentialsを使用すると、管理者は、リポジトリで使用可
    * 署名を入力すると、スクリーンリーダーのユーザーは、署名の作成に使用されるテキストを聞くことができます。
 
 このアップデートにより、手書き署名コンポーネントのナビゲーション、明確さ、フィードバックが改善され、障害のあるユーザーのエクスペリエンスがより包括的になります。
-
-
 
 ### 早期導入プログラム {#forms-early-adopter}
 
