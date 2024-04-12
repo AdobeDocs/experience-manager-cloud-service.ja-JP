@@ -3,10 +3,10 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: a8fbf0a9a1f7e12b6a668544b1a67d8551abf1b7
+source-git-commit: 5771a6afedeb85188e89700d439a9bac18e01fdc
 workflow-type: tm+mt
-source-wordcount: '5135'
-ht-degree: 97%
+source-wordcount: '5359'
+ht-degree: 96%
 
 ---
 
@@ -739,15 +739,13 @@ GraphQL のソリューションでは、次のことが可能です。
 
 * パラメーターを渡す：フィルターが定義されているリストヘッダーに `_assetTransform` を追加
 
-<!-- 
 >[!NOTE]
 >
->A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
->* `_dynamicUrl` : a DAM asset
->* `_dmS7Url` : a Dynamic Media asset
+>A **コンテンツ参照** は、DAM アセットとDynamic Media アセットの両方に使用できます。 適切な URL の取得には、様々なパラメーターを使用します。
+>* `_dynamicUrl` :DAM アセット
+>* `_dmS7Url` :Dynamic Media アセット
 > 
->If the image referenced is a DAM asset then the value for `_dmS7Url` will be `null`. See [Dynamic Media asset delivery by URL in GraphQL queries](#dynamic-media-asset-delivery-by-url).
--->
+>参照される画像が DAM アセットの場合、の値 `_dmS7Url` はになります `null`. 参照： [GraphQL クエリの URL によるDynamic Media アセット配信](#dynamic-media-asset-delivery-by-url).
 
 ### 変換リクエストの構造 {#structure-transformation-request}
 
@@ -923,34 +921,37 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
    * オーサーにキャッシュされない
    * パブリッシュのキャッシュ - 10 分の最大経過時間（クライアントは変更できません）
 
-<!--
-## Dynamic Media asset delivery by URL in GraphQL queries{#dynamic-media-asset-delivery-by-url}
+## GraphQL クエリの URL によるDynamic Media アセット配信{#dynamic-media-asset-delivery-by-url}
 
-GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media (Scene7) asset (referenced by a **Content Reference**).
+AEM コンテンツフラグメント用のGraphQLを使用すると、AEM Dynamic Media（Scene7）アセット（が参照）への URL を **コンテンツ参照**）に設定します。
 
-The solution in GraphQL means you can:
+>[!CAUTION]
+>
+>のみ *画像* Dynamic Media内のアセットは参照できます。
 
-* use `_dmS7Url` on the `ImageRef` reference
+GraphQL のソリューションでは、次のことが可能です。
+
+* `ImageRef` 参照で `_dmS7Url` を使用する
 
 >[!NOTE]
 >
->For this you need to have a [Dynamic Media Cloud Configuration](/help/assets/dynamic-media/config-dm.md). 
+>このためには、 [Dynamic Media クラウド設定](/help/assets/dynamic-media/config-dm.md).
 >
->This adds the `dam:scene7File` and `dam:scene7Domain` attributes on the asset's metadata when it is created.
+>これにより、 `dam:scene7File` および `dam:scene7Domain` アセットの作成時にアセットのメタデータに対して属性を指定します。
 
 >[!NOTE]
 >
->A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>A **コンテンツ参照** は、DAM アセットとDynamic Media アセットの両方に使用できます。 適切な URL の取得には、様々なパラメーターを使用します。
 >
->* `_dmS7Url` : a Dynamic Media asset
->* `_dynamicUrl` : a DAM asset
+>* `_dmS7Url` :Dynamic Media アセット
+>* `_dynamicUrl` :DAM アセット
 > 
->If the image referenced is a Dynamic Media asset then the value for `_dynamicURL` will be `null`. See [web-optimized image delivery in GraphQL queries](#web-optimized-image-delivery-in-graphql-queries).
+>参照される画像がDynamic Media アセットの場合、の値 `_dynamicURL` はになります `null`. 参照： [GraphQL クエリでの web に最適化された画像配信](#web-optimized-image-delivery-in-graphql-queries).
 
-### Sample query for Dynamic Media asset delivery by URL {#sample-query-dynamic-media-asset-delivery-by-url}
+### URL によるDynamic Media アセット配信のサンプルクエリ {#sample-query-dynamic-media-asset-delivery-by-url}
 
-The following is a sample query:
-* for multiple Content Fragments of type `team` and `person`
+以下にクエリの例を示します。
+* タイプの複数のコンテンツフラグメントの場合 `team` および `person`
 
 ```graphql
 query allTeams {
@@ -973,7 +974,6 @@ query allTeams {
   }
 } 
 ```
--->
 
 ## AEM 用の GraphQL - 拡張機能の概要 {#graphql-extensions}
 
@@ -1068,6 +1068,10 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
             * [単一の指定パラメーターを使用した web に最適化された画像配信用サンプルクエリ](#web-optimized-image-delivery-single-query-variable)
 
+      * `_dmS7Url`：の `ImageRef` への URL の配信の参照 [Dynamic Media アセット](#dynamic-media-asset-delivery-by-url)
+
+         * 参照： [URL によるDynamic Media アセット配信のサンプルクエリ](#sample-query-dynamic-media-asset-delivery-by-url)
+
    * `_tags`：タグを含むコンテンツフラグメントまたはバリエーションの ID を表示する `cq:tags` 識別子の配列です。
 
       * [サンプルクエリ - 市区町村の区切り文字としてタグ付けされた、すべての都市の名前](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)を参照してください。
@@ -1100,13 +1104,6 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
    * 任意のバリエーションがネストされたフラグメントに存在しない場合、**マスター**&#x200B;バリエーションが返されます。
 
-<!-- between dynamicURL and tags -->
-<!--
-    * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
-
-      * See [Sample query for Dynamic Media asset delivery by URL](#sample-query-dynamic-media-asset-delivery-by-url)
--->
-
 ## 外部 web サイトからの GraphQL エンドポイントのクエリ {#query-graphql-endpoint-from-external-website}
 
 外部 web サイトから GraphQL エンドポイントにアクセスするには、次の項目を設定する必要があります。
@@ -1128,28 +1125,28 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
 また、次の事項にも注意する必要があります。
 
-* GraphQLクエリに 2 つ以上のモデルで同じ名前のフィールドが含まれている場合、フィールドの競合エラーが返されます。
+* GraphQL クエリに 2 つ（またはそれ以上）のモデルで同じ名前のフィールドが含まれている場合、フィールド競合エラーが返されます。
 
-   * そこで、
+   * したがって
 
-      * 2 つ（または複数のモデル）が可能な参照として使用されます。使用可能なときは、2 つ以上のモデルが許可されています **モデルタイプ** 」と入力します。
+      * 2 つ（またはそれ以上のモデル）が可能な参照として使用されます（コンテンツフラグメント参照で許可された&#x200B;**モデルタイプ**&#x200B;として定義されている場合）。
 
-     および
+     また
 
-      * この 2 つのモデルには、共通の名前を持つフィールドがあります。つまり、両方のモデルで同じ名前が使用されます。
+      * これら 2 つのモデルには共通の名前を持つフィールドがあります。つまり、両方のモデルに同じ名前が存在します。
 
-     および
+     また
 
       * これらのフィールドは異なるデータタイプです。
 
    * 次に例を示します。
 
-      * 異なるモデル ( 例えば、 `M1`, `M2`) は、別のフラグメントの可能な参照（コンテンツ参照またはフラグメント参照）として使用されます。例えば、 `Fragment1` `MultiField/List`
-      * この 2 つのフラグメントは、異なるモデル (`M1`, `M2`) には、同じ名前でタイプが異なるフィールドがあります。
-この処理は次のようになります。
-         * `M1.Title` as `Text`
-         * `M2.Title` as `Text/MultiField`
-      * その場合、GraphQLクエリに `Title` フィールドに入力します。
+      * 異なるモデルを持つ 2 つ（またはそれ以上）のフラグメント（`M1`、`M2` など）が、別のフラグメントからの参照（コンテンツ参照またはフラグメント参照）として使用される場合。例：`Fragment1` `MultiField/List`
+      * 異なるモデルを持つこれら 2 つのフラグメント（`M1`、`M2`）には、同じ名前のフィールドがありますが、タイプが異なります。
+次に例を示します。
+         * `M1.Title` は `Text`
+         * `M2.Title` は `Text/MultiField`
+      * GraphQL クエリに `Title` フィールドが含まれる場合、フィールド競合エラーが発生します。
 
 ## FAQ {#faqs}
 

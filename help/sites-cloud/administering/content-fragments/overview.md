@@ -4,10 +4,10 @@ description: AEM as a Cloud Service のコンテンツフラグメントを使�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: 46a6f5ace7aa3def8021dd16ea394b780afce2e6
 workflow-type: tm+mt
-source-wordcount: '1792'
-ht-degree: 100%
+source-wordcount: '1803'
+ht-degree: 99%
 
 ---
 
@@ -105,6 +105,8 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 >* [AEM Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [コンテンツフラグメントと共に使用する AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 >* [コンテンツフラグメントを使用したページのオーサリング](/help/sites-cloud/authoring/fragments/content-fragments.md)
+>* この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
+
 
 ## メインとバリエーション {#main-and-variations}
 

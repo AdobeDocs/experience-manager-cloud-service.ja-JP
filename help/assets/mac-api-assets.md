@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
-source-wordcount: '1587'
-ht-degree: 100%
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+workflow-type: tm+mt
+source-wordcount: '1631'
+ht-degree: 97%
 
 ---
 
@@ -22,6 +22,10 @@ ht-degree: 100%
 ## 概要 {#overview}
 
 [!DNL Assets] HTTP API を使用すれば、デジタルアセット（メタデータ、レンディション、コメントのほか、[!DNL Experience Manager] コンテンツフラグメントを使用した構造化コンテンツも含む）に対して作成、読み取り、更新、削除（CRUD）操作を実行できます。この API は `/api/assets` で公開されており、REST API として実装されています。[コンテンツフラグメントをサポート](/help/assets/content-fragments/assets-api-content-fragments.md)しています。
+
+>[!NOTE]
+>
+>この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
 API にアクセスするには、次の手順を実行します。
 
@@ -40,9 +44,17 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 詳しくは、[ [!DNL Experience Manager Assets]  HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)を参照してください。
 
+>[!NOTE]
+>
+>この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
+
 ## データモデル {#data-model}
 
 [!DNL Assets] HTTP API は、フォルダーとアセット（標準アセット用）という 2 つの主要要素を公開します。さらに、コンテンツフラグメント内の構造化コンテンツを記述するカスタムデータモデルに対する詳細な要素が公開されます。詳しくは、[コンテンツフラグメントのデータモデル](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments)を参照してください。
+
+>[!NOTE]
+>
+>この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
 ### フォルダー {#folders}
 
@@ -75,6 +87,10 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 * コメント（オプション）
 
 コンテンツフラグメントの要素については、[AEM Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)を参照してください。
+
+>[!NOTE]
+>
+>この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
 [!DNL Experience Manager] では、フォルダーには次のコンポーネントが含まれています。
 
@@ -125,7 +141,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 **応答**：返されるエンティティのクラスはアセットまたはフォルダーです。含まれるエンティティのプロパティは、各エンティティの完全なプロパティセットのサブセットです。エンティティのすべての表現を取得するために、クライアントはリンクで参照される URL のコンテンツを `self` の `rel` で取得する必要があります。
 
-## フォルダーの作成 {#create-a-folder}
+## フォルダーを作成する {#create-a-folder}
 
 指定されたパスに `sling`:`OrderedFolder` を作成します。ノード名の代わりに「`*`」が指定されている場合、サーブレットパラメーター名がノード名として使用されます。リクエストでは、次のいずれかを受け付けます。
 

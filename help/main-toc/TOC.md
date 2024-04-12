@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
+source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
 workflow-type: tm+mt
-source-wordcount: '4850'
+source-wordcount: '4881'
 ht-degree: 98%
 
 ---
@@ -31,6 +31,8 @@ ht-degree: 98%
    + [リリース情報](/help/release-notes/home.md)
    + AEMaaCS 機能のリリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
+      + 2024年度 {#2024}
+         + [2024.1.0 のリリースノート](/help/release-notes/release-notes-cloud/2024/release-notes-2024-1-0.md)
       + 2023年度 {#2023}
          + [2023.12.0 のリリースノート](/help/release-notes/release-notes-cloud/2023/release-notes-2023-12-0.md)
          + [リリースノート（2023.11.0）](/help/release-notes/release-notes-cloud/2023/release-notes-2023-11-0.md)
@@ -171,6 +173,8 @@ ht-degree: 98%
          + [リリースノート（2021.10.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Workfront for Experience Manager 拡張コネクタのリリースノート{#workfront}
       + [Workfront for Experience Manager 拡張コネクタの最新リリースノート](/help/assets/release-notes-enhanced-connector-workfront.md)
+   + バリエーションを生成するためのリリースノート {#generate-variations}
+      + [バリエーションを生成するための最新のリリースノート](/help/generative-ai/release-notes-generate-variations.md)
    + [新機能](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service の主要な変更点](/help/release-notes/aem-cloud-changes.md)
    + [非推奨（廃止予定）および削除された機能と API](/help/release-notes/deprecated-removed-features.md)
@@ -356,6 +360,7 @@ ht-degree: 98%
          + [マークダウン](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [削除に関する考慮事項](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [構造の分析](/help/sites-cloud/administering/content-fragments/analysis.md)
+         + [コンテンツフラグメントコンソールのアセット](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [キーボードショートカット](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + サイト作成 {#site-creation}
          + [新しいサイトの作成](/help/sites-cloud/administering/site-creation/create-site.md)
@@ -891,7 +896,8 @@ ht-degree: 98%
       + [最適化された GraphQL フィルタリング用コンテンツフラグメントの更新](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [GraphQL クエリの例](/help/headless/graphql-api/sample-queries.md)
       + [GraphQL クエリのトラブルシューティング](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [コンテンツフラグメント REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=ja)
+   + [コンテンツフラグメントとモデルの OpenAPI](/help/headless/content-fragment-openapis.md)
+   + [Assets HTTP API でのコンテンツフラグメントのサポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=ja)
    + セキュリティ {#security}
       + [権限](/help/headless/security/permissions.md)
       + [認証](/help/headless/security/authentication.md)

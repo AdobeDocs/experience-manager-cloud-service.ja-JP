@@ -3,10 +3,10 @@ title: Assets HTTP API での Adobe Experience Manager as a Cloud Service コン
 description: AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API でのコンテンツフラグメントのサポートについて学びます。
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 47666e87b1cb87577291304336e0219481b7b4e2
-workflow-type: ht
-source-wordcount: '1749'
-ht-degree: 100%
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+workflow-type: tm+mt
+source-wordcount: '1804'
+ht-degree: 96%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 100%
 | AEM as a Cloud Service | この記事 |
 
 AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API でのコンテンツフラグメントのサポートについて学びます。
+
+>[!NOTE]
+>
+>この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
 >[!NOTE]
 >
@@ -91,6 +95,10 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
 >リクエスト本文または URL パラメーターは、これらの操作の一部を設定するために使用できます。例えば、フォルダーまたはアセットを **POST** リクエストで作成するように定義できます。
 
 サポートされているリクエストの正確な形式は、[API リファレンス](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)ドキュメントで定義されています。
+
+>[!NOTE]
+>
+>この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
 ### トランザクション動作 {#transactional-behavior}
 
@@ -167,6 +175,10 @@ API を通じて使用できる機能について詳しくは、以下を参照�
 
 * [Assets REST API](/help/assets/mac-api-assets.md)
 * [エンティティタイプ](/help/assets/content-fragments/assets-api-content-fragments.md#entity-types)。（コンテンツフラグメントに関連した）サポートされる各タイプに固有の機能について説明します。
+
+>[!NOTE]
+>
+>この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
 ### ページング {#paging}
 
@@ -262,6 +274,8 @@ Assets REST API は、フォルダーのプロパティへのアクセスを公�
 >[!NOTE]
 >
 >[API リファレンス](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)を参照してください。特に、[Adobe Experience Manager Assets API - コンテンツフラグメント](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
+>
+>この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
 ## 制限事項 {#limitations}
 
@@ -352,6 +366,8 @@ Assets REST API は、フォルダーのプロパティへのアクセスを公�
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
    * [使用可能な機能](/help/assets/mac-api-assets.md#available-features)
+
+* この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
 ## その他のリソース {#additional-resources}
 

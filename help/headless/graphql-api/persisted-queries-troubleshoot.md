@@ -3,10 +3,10 @@ title: 永続化された GraphQL クエリをトラブルシューティング�
 description: Adobe Experience Manager as a Cloud Service での永続的な GraphQL クエリの問題をトラブルシューティングする方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
-source-wordcount: '353'
-ht-degree: 100%
+source-git-commit: 220e86f18e4a61304764753d8daecb68503e9fd0
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 87%
 
 ---
 
@@ -34,13 +34,13 @@ GraphQL で永続化されたクエリは、古い GraphQL タイプに基づい
 
 ## GraphQL エンドポイントが設定されていません {#graphql-endpoint-not-configured}
 
-永続化されたクエリが `400` または `500` のエラーコードを返し、情報 `No suitable endpoint found` が表示される場合、AEM 環境に GraphQL エンドポイントが設定されていません。
+永続クエリが `404` エラーコードと情報 `No suitable endpoint found`つまり、AEM環境にGraphQL エンドポイントが設定されていません。
 
 これを修正するには、[AEM の GraphQL エンドポイントを管理](/help/headless/graphql-api/graphql-endpoint.md)でエンドポイントを有効にして公開する手順に従います。
 
 ## GraphQL の永続クエリ URL にパスがありません {#missing-path-query-url}
 
-永続化されたクエリが `400` または `500` のエラーコードと情報 `Suffix: '/' does not contain a path` を返す場合、GraphQL サーブレットは、パスのサフィックスなしで呼び出されています。
+永続クエリが `400` 情報を含むエラーコード `Suffix: '/' does not contain a path`は、パスサフィックスを付けずにGraphQL サーブレットが呼び出されます。
 
 このパターンは `/graphql/execute.json/thePath` です。
 

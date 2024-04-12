@@ -2,10 +2,10 @@
 title: API リクエストの作成 - ヘッドレス設定
 description: コンテンツフラグメントコンテンツと AEM Assets REST API のヘッドレス配信に GraphQL API を使用して、コンテンツフラグメントを管理する方法を説明します。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
-source-wordcount: '652'
-ht-degree: 100%
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+workflow-type: tm+mt
+source-wordcount: '674'
+ht-degree: 96%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 100%
 * [GraphQL](/help/headless/graphql-api/content-fragments.md) API を使用すると、コンテンツフラグメントにアクセスして配信するリクエストを作成できます。この API は、コンテンツフラグメントコンテンツのクエリと使用に最も堅牢な機能セットを提供します。
    * API を使用するには、[エンドポイントを AEM で定義して有効にし](/help/headless/graphql-api/graphql-endpoint.md)、必要に応じて [GraphiQL インターフェイスをインストール](/help/headless/graphql-api/graphiql-ide.md)します。
 * [アセット REST API](/help/assets/content-fragments/assets-api-content-fragments.md) を使用すると、コンテンツフラグメント（およびその他のアセット）を作成および変更できます。
+
+>[!NOTE]
+>
+>この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
 このガイドの残りの部分では、GraphQL へのアクセスとコンテンツフラグメントの配信について説明します。
 
@@ -99,3 +103,7 @@ GraphQL では、反復的な API リクエストと過剰な配信を回避で�
 * **[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/managing.md)** - コンテンツフラグメントの作成と管理に関する詳細
 * **[AEM Assets HTTP API でサポートされるコンテンツフラグメント](/help/assets/content-fragments/assets-api-content-fragments.md)** - CRUD 操作（作成、読み取り、更新、削除）を介して HTTP API 経由で直接 AEM コンテンツにアクセスする方法の詳細
 * **[GraphQL API](/help/headless/graphql-api/content-fragments.md)** - コンテンツフラグメントをヘッドレスで配信する方法の詳細
+
+>[!NOTE]
+>
+>この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。

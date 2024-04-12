@@ -2,10 +2,10 @@
 title: エクスペリエンスフラグメント
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントを使用すると、エクスペリエンスの再利用性と柔軟性を高めることができます。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 0784bfc2928b218a566fdd252fee045ca5ae6b9c
 workflow-type: tm+mt
-source-wordcount: '2035'
-ht-degree: 100%
+source-wordcount: '2083'
+ht-degree: 97%
 
 ---
 
@@ -38,6 +38,7 @@ Adobe Experience Manager as a Cloud Service 内では、エクスペリエンス
 エクスペリエンスフラグメントは、コピー／貼り付けを不要にします。
 * ヘッドレス CMS の使用例をサポートする場合。
 作成者は AEM をオーサリングにのみ使用し、顧客への配信には使用しないようにします。サードパーティシステム／タッチポイントは、そのエクスペリエンスを使用してユーザーに配信します。
+* （を使用） [マルチサイト管理（MSM）](/help/sites-cloud/administering/msm/overview.md); エクスペリエンスフラグメントとして、はページの一部です。 これは、個々のフラグメントと、それらが存在するフォルダーの両方に適用されます。
 
 >[!NOTE]
 >
@@ -236,6 +237,10 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 
    * **バリエーション**
    * **バリエーションをライブコピーとして**。
+
+     >[!NOTE]
+     >
+     >初期バリエーションをライブコピーとして作成すると、ライブコピーソースをマスターバリエーションとして使用してタイトルが継承されます。
 
 1. 必要なプロパティを定義します。
 

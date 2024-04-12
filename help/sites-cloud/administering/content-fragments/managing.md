@@ -4,10 +4,10 @@ description: コンソールやエディターから AEM コンテンツフラ�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: 3c550a08983ce198a6718d0c2120f1f5001fb28d
 workflow-type: tm+mt
-source-wordcount: '2620'
-ht-degree: 100%
+source-wordcount: '2629'
+ht-degree: 99%
 
 ---
 
@@ -72,6 +72,8 @@ ht-degree: 100%
 
 **コンテンツフラグメント**&#x200B;を選択すると、コンソールが新しいタブで開きます。
 
+<!-- CQDOC-21349: screenshot -->
+
 ![コンテンツフラグメントコンソール - 概要](assets/cf-managing-console-overview.png)
 
 主な領域が 3 つあります。
@@ -84,6 +86,7 @@ ht-degree: 100%
    * フォルダーツリーを表示したり非表示にしたりできます
    * ツリーの特定のブランチを選択できます
    * これは、ネストされたフォルダーを表示するようにサイズ変更できます
+   * コンテンツフラグメントの表示または非表示を選択できます [アセット](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 * 右側のメインパネル
    * 選択したツリーのブランチにあるすべてのコンテンツフラグメントのリストを表示します。
       * 選択したフォルダーのコンテンツフラグメントと、すべての子フォルダーが表示されます:
@@ -132,6 +135,8 @@ ht-degree: 100%
 #### （選択された）コンテンツフラグメントのアクション {#actions-selected-content-fragment}
 
 特定のフラグメントを選択するとツールバーが開き、そのフラグメントで使用可能なアクションが表示されます。複数のフラグメントを選択することもできます。それに応じて、焦点が当たるアクションも変化します。
+
+<!-- CQDOC-21349: screenshot -->
 
 ![コンテンツフラグメントコンソール - 選択したフラグメントのツールバー](assets/cf-managing-console-fragment-toolbar.png)
 
@@ -373,6 +378,8 @@ ht-degree: 100%
 
 ## 検索と置換 {#find-and-replace}
 
+<!-- CQDOC-21349: screenshot -->
+
 **置換**&#x200B;アクション（上部のツールバーにある）を使用すると、選択したコンテンツフラグメント内の指定したテキストを検索して置換できます。
 
 ![検索と置換](assets/cf-managing-find-replace.png)
@@ -385,8 +392,9 @@ ht-degree: 100%
 >
 >20 個を超えるコンテンツフラグメントを選択すると、**検索と置換を実行できません**&#x200B;というメッセージが表示されます。
 
-![置換の確認](assets/cf-managing-confirm-replace.png)
+<!-- CQDOC-21349: screenshot -->
 
+![置換の確認](assets/cf-managing-confirm-replace.png)
 
 ## フラグメントの削除 {#deleting-a-fragment}
 
@@ -451,6 +459,8 @@ ht-degree: 100%
 
 選択した後、「検索」ボックスの下に「**フィルター条件**」オプションが表示され、そこから選択を解除できます。次に例を示します。
 
+<!-- CQDOC-21349: screenshot -->
+
 ![コンテンツフラグメントコンソール - フィルタリング](assets/cf-managing-console-filter.png)
 
 ### 高速フィルタリング {#fast-filtering}
@@ -473,9 +483,13 @@ ht-degree: 100%
 
 検索ボックスは全文検索をサポートします。 検索ボックスに検索語句を入力します。
 
+<!-- CQDOC-21349: screenshot -->
+
 ![コンテンツフラグメントコンソール - 検索](assets/cf-managing-console-search-specification.png)
 
 選択した結果が表示されます。
+
+<!-- CQDOC-21349: screenshot -->
 
 ![コンテンツフラグメントコンソール - 検索結果](assets/cf-managing-console-search-results.png)
 

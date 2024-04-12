@@ -2,9 +2,9 @@
 title: AEM Headless as a Cloud Service - はじめに
 description: ここでは、AEM ヘッドレスデベロッパージャーニーのこの部分では、AEM ヘッドレスの前提条件について説明します。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 998651bf0529d6a8aab0cd340a1c171974c405f6
+source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
 workflow-type: tm+mt
-source-wordcount: '3057'
+source-wordcount: '3068'
 ht-degree: 99%
 
 ---
@@ -95,7 +95,7 @@ AEM は、完全なヘッドレスと、CMS の従来のフルスタックまた
 
 ただし、AEM ヘッドレス機能を理解する一方で、ハイブリッドの可能性もあることも覚えておいてください。これらのケースについて認識しておくため、以下で説明します。プロジェクトに柔軟性が必要な場合に備えて、ジャーニーの最後にこれらの概念を詳しく紹介します。
 
-### シングルページアプリケーション (SPA) などのヘッドレスコンテンツを既に外部で使用しています。 {#already-have-a-spa}
+### シングルページアプリケーション（SPA）などのヘッドレスコンテンツが既に存在する。 {#already-have-a-spa}
 
 基本的な要件として、AEM から既存の外部サービスにコンテンツを配信する場合を考えてみましょう。
 
@@ -298,3 +298,4 @@ AEM を使用した[一般的なヘッドレス実装](#level-1)の場合、デ�
 * [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) - コンテンツフラグメント（およびその他のアセット）を作成および変更する方法を説明する技術ドキュメント
 * [永続クエリ](/help/headless/graphql-api/persisted-queries.md) - AEM での永続クエリに関する技術ドキュメント
 * [AEM のヘッドフルとヘッドレス](/help/implementing/developing/headful-headless.md) - AEM で使用可能なヘッドレス統合レベルの完全な説明
+* この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。

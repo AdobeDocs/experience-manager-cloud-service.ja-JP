@@ -2,10 +2,10 @@
 title: API リファレンス資料
 description: AEM には、デジタルエクスペリエンスプロジェクトに使用できる広範で強力な API が用意されています。
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: 3434d51c9b0bad02b0c3f0836341f671c9405182
-workflow-type: ht
-source-wordcount: '594'
-ht-degree: 100%
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+workflow-type: tm+mt
+source-wordcount: '608'
+ht-degree: 97%
 
 ---
 
@@ -72,6 +72,7 @@ AEM では、カスタマイズ可能なコンポーネントとコンテンツ�
 | [コンテンツフラグメント HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) | CRUD 操作を使用して HTTP API でコンテンツフラグメントのコンテンツに直接アクセスします |
 | [コンテンツフラグメント GraphQL API](/help/headless/graphql-api/content-fragments.md) | ヘッドレス CMS 実装の JavaScript クライアントにコンテンツフラグメントを効率的に配信できるようになります |
 | [コンテンツフラグメントアセット HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ja) | サポートされている HTTP アセットリクエストの厳密な形式 |
+| [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) | コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI |
 
 ## SPA 固有の API {#spa-apis}
 
