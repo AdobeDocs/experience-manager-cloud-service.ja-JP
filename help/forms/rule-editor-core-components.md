@@ -1,17 +1,25 @@
 ---
-title: ルールエディターを使用してフォームフィールドにルールを追加し、コアコンポーネントに基づいて動的な動作を追加し、アダプティブフォームに複雑なロジックを構築する方法を教えてください。
+title: ルールエディターを使用してフォームフィールドにルールを追加し、動的な動作を追加し、コアコンポーネントに基づいてアダプティブフォームに複雑なロジックを構築する方法
 description: アダプティブフォームルールエディターを使用すると、コーディングやスクリプトの作成を行わずに、動的な動作を追加し、複雑なロジックをフォームに組み込むことができます。
 feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-source-git-commit: 78b3b11caf143ed147079ef2b3b3ebe5c1beafd7
+exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
+source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
 workflow-type: tm+mt
-source-wordcount: '5755'
+source-wordcount: '5444'
 ht-degree: 88%
 
 ---
 
-# アダプティブフォームにルールを追加する（コアコンポーネント） {#adaptive-forms-rule-editor}
+
+<span class="preview"> この記事には、一部のプレリリース機能に関するコンテンツが含まれています。 これらのプレリリース機能には、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja?cloud-environments). プレリリースプログラムの機能は次のとおりです。
+* ネストされた条件を When-then-else 機能で実装する機能のサポート
+* パネルやフォーム（フィールドを含む）の検証またはリセット
+* カスタム関数内の let 関数や arrow 関数などの最新の JavaScript 機能のサポート（ES10 サポート）。
+</span>
+
+# アダプティブフォーム（コアコンポーネント）へのルールの追加 {#adaptive-forms-rule-editor}
 
 ルール編集機能により、フォームのビジネスユーザーや開発者がアダプティブフォームオブジェクトにルールを追加できるようになります。これらのルールは、フォームオブジェクト上でトリガーできるアクションを定義します。それらのアクションは、プリセットされた条件、ユーザー入力、およびフォーム上のユーザーアクションに基づいてトリガーされます。これにより、フォームへの入力を正確かつ迅速に行うことができます。
 
@@ -47,7 +55,7 @@ forms-power-users グループに追加されたユーザーは、スクリプ�
 
 >[!NOTE]
 >
->利用可能なルールタイプ（ルールエディターで定義した条件やアクションを含む）は、ルールを作成しているフォームオブジェクトの種類によっても異なります。ルールエディターには、特定のフォームオブジェクトタイプに対して条件およびアクションステートメントを記述するための、有効なルールタイプとオプションのみが表示されます。たとえば、パネルオブジェクトには Validate 型と Set Value Of 型は表示されません。
+>利用可能なルールタイプ（ルールエディターで定義した条件やアクションを含む）は、ルールを作成しているフォームオブジェクトの種類によっても異なります。ルールエディターには、特定のフォームオブジェクトタイプに対して条件およびアクションステートメントを記述するための、有効なルールタイプとオプションのみが表示されます。例えば、パネルオブジェクトでは、「Validate」や「Set Value Of」は表示されません。
 
 ルールエディターで使用可能なルールタイプの詳細については、「[ルールエディターで利用できるルールタイプ](rule-editor.md#p-available-rule-types-in-rule-editor-p)」を参照してください。
 
@@ -115,7 +123,7 @@ Action 3 on Object C;
 
 `Else, do the following:`
 
-Action 2 on Object C; _
+アクション 2 （オブジェクト C; _）
 
 ラジオボタンやリストなどの複数値コンポーネントに対してルールを作成する場合、オプションが自動的に取得され、それらのオプションを使用してルールを作成できるようになりました。これらのオプションの値を再入力する必要はありません。
 
@@ -123,7 +131,7 @@ Action 2 on Object C; _
 
 ![複数値表示オプション](assets/multivaluefcdisplaysoptions.png)
 
-「When」ルールを記述するときに、「Clear Value Of」アクションをトリガーできます。「Clear Value Of」アクションは、指定したオブジェクトの値をクリアします。When ステートメントで「 Clear Value 」をオプションとして指定すると、複数のフィールドを含む複雑な条件を作成できます。 Else 文を追加して、さらに条件を追加できます
+「When」ルールを記述するときに、「Clear Value Of」アクションをトリガーできます。「Clear Value Of」アクションは、指定したオブジェクトの値をクリアします。「When」ステートメントに「Clear Value Of」をオプションとして含めると、複数フィールドで複雑な条件を作成できます。 Else ステートメントを追加して、さらに条件を追加できます
 
 ![値をクリア](assets/clearvalueof.png)
 
@@ -151,20 +159,20 @@ Action 2 on Object C; _
 
 **[!UICONTROL プロパティを設定]**&#x200B;のルールタイプを使用すると、条件アクションに基づいて、指定したオブジェクトのプロパティの値を設定できます。プロパティは、次のいずれかに設定できます。
 * visible（ブーリアン）
-* label.value (String)
-* label.visible (Boolean)
-* description (String)
+* label.value （文字列）
+* label.visible （ブール値）
+* 説明（文字列）
 * enabled（ブーリアン）
-* readOnly (Boolean)
-* required (Boolean)
-* screenReaderText（文字列）
+* readOnly （ブール値）
+* 必須（ブール値）
+* screenReaderText （String）
 * valid（ブーリアン）
 * errorMessage（文字列）
-* default （数値，文字列，日付）
-* enumNames (String)[])
+* デフォルト（数値、文字列、日付）
+* enumNames （文字列[]）
 * chartType（文字列）
 
-例えば、ボタンをクリックしたときにテキストボックスを表示するルールを定義できます。 カスタム関数、フォームオブジェクト、オブジェクトプロパティ、またはサービス出力を使用して、ルールを定義できます。
+例えば、ボタンがクリックされたときにテキストボックスを表示するルールを定義できます。 カスタム関数、フォームオブジェクト、オブジェクトプロパティ、またはサービス出力を使用して、ルールを定義できます。
 
 ![プロパティを設定](assets/set_property_rule_new.png)
 
@@ -172,9 +180,9 @@ Action 2 on Object C; _
 
 フォームオブジェクトに基づいてルールを定義するには、ドロップダウンリストから「**[!UICONTROL フォームオブジェクト]**」を選択し、「**[!UICONTROL フォームオブジェクト]**」タブからフォームオブジェクトをドラッグ＆ドロップします。条件アクションが満たされると、テキスト入力ボックスがアダプティブフォームに表示されます。
 
-オブジェクトプロパティに基づくプロパティの設定ルールを使用すると、アダプティブフォームに含まれる別のオブジェクトプロパティに基づいて、テキスト入力ボックスをアダプティブフォームに表示することができます。
+オブジェクトプロパティに基づくプロパティの設定ルールを使用すると、アダプティブフォームに含まれる別のオブジェクトプロパティに基づいて、アダプティブフォーム内でテキスト入力ボックスを表示できます。
 
-次の図は、アダプティブフォーム内のテキストボックスの非表示または表示に基づいて、このチェックボックスを動的に有効にする例を示しています。
+次の図は、アダプティブフォーム内のテキストボックスの非表示または表示に基づいて、チェックボックスを動的に有効にする例を示しています。
 
 ![オブジェクトプロパティ](assets/object_property_set_property_new.png)
 
@@ -182,21 +190,21 @@ Action 2 on Object C; _
 
 **[!UICONTROL Set Focus （フォーカスの設定）]**：指定したオブジェクトにフォーカスを設定します。
 
-**[!UICONTROL フォームを送信]** フォームを送信します。
+**[!UICONTROL 送信フォーム]** フォームを送信します。
 
-**[!UICONTROL リセット]** フォームまたは指定したオブジェクトをリセットします。
+**[!UICONTROL Reset]** フォームまたは指定したオブジェクトをリセットします。
 
-**[!UICONTROL 検証]** フォームまたは指定したオブジェクトを検証します。
+**[!UICONTROL Validate]** フォームまたは指定したオブジェクトを検証します。
 
 **[!UICONTROL Add Instance （インスタンスの追加）]**：指定した繰り返し可能なパネルまたは表の行のインスタンスを追加します。
 
 **[!UICONTROL Remove Instance （インスタンスの削除）]**：指定した繰り返し可能なパネルまたは表の行のインスタンスを削除します。
 
-**[!UICONTROL 関数の出力]** 定義済みの関数またはカスタム関数に基づいてルールを定義します。
+**[!UICONTROL 関数出力]** 事前定義済みの関数またはカスタム関数に基づいてルールを定義します。
 
 **[!UICONTROL Navigate to （移動先）]** ：他の<!--Interactive Communications,-->アダプティブフォーム、画像やドキュメントフラグメントなどの他のアセット、または外部 URL に移動します。<!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
-**[!UICONTROL ディスパッチイベント]** トリガーは、事前定義された条件またはイベントに基づく特定のアクションまたは動作です。
+**[!UICONTROL イベントのディスパッチ]** 定義済みの条件またはイベントに基づいて、特定のアクションまたはビヘイビアーをトリガー設定します。
 
 
 ### [!UICONTROL Set Value of] {#set-value-of}
@@ -207,13 +215,13 @@ Action 2 on Object C; _
 
 Set value of Object A to:
 
-（ABC 文字列） OR （Object C のオブジェクトプロパティ X） OR （関数の値） OR （数式の値） OR （データモデルサービスの出力値）;
+（文字列 ABC） OR （オブジェクト C のオブジェクトプロパティ X） OR （関数からの値） OR （数式表現からの値） OR （データモデルサービスの出力値）:
 
 When （オプション）：
 
 (Condition 1 AND Condition 2 AND Condition 3) is TRUE;
 
-次の例では、 `Question2` as `True` とは、 `Result` as `correct`.
+次の例では、の値を選択します `Question2` as `True` およびは、次の値を設定します `Result` as `correct`.
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
@@ -342,7 +350,7 @@ To define a rule based on a form data model:
 
 ### A. コンポーネントルールの表示 {#a-component-rule-display}
 
-ルールエディターを起動したアダプティブフォームオブジェクトのタイトルと、現在選択されているルールタイプを表示します。上記の例では、ルールエディターは「質問 1」というタイトルのアダプティブフォームオブジェクトから起動され、ルールタイプは「When」を選択しています。
+ルールエディターを起動したアダプティブフォームオブジェクトのタイトルと、現在選択されているルールタイプを表示します。上記の例では、ルールエディターは「質問 1」と名付けられたアダプティブフォームオブジェクトから起動されており、「When」のルールタイプが選択されています。
 
 ### B. フォームオブジェクトと関数 {#b-form-objects-and-functions-br}
 
@@ -352,9 +360,9 @@ To define a rule based on a form data model:
 
 1 つ以上の有効なルールが適用されているフォームオブジェクトには、緑のドットが付いています。フォームオブジェクトに適用されているルールのいずれかが無効な場合、フォームオブジェクトには黄色のドットが付きます。
 
-「関数」タブには、「合計」、「最小」、「最大」、「平均」、「回数」や「フォームを検査」などの組み込み関数のセットが含まれています。これらの関数をルールに記述することで、繰り返しパネルや表の行の値を計算し、計算結果をアクションや条件文の中で使用することができます。ただし、カスタム関数を作成することもできます。
+「関数」タブには、「合計」、「最小」、「最大」、「平均」、「回数」や「フォームを検査」などの組み込み関数のセットが含まれています。これらの関数をルールに記述することで、繰り返しパネルや表の行の値を計算し、計算結果をアクションや条件文の中で使用することができます。また、カスタム関数を作成することもできます。
 
-次の図に、関数の一部のリストを示します。
+関数のリストの一部を図に示します。
 
 ![関数タブ](assets/functions.png)
 
@@ -414,7 +422,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. まず、「Marital Status（配偶者の有無）」のラジオボタンの選択内容に応じて「Spouse Salary（配偶者の給与）」フィールドの表示・非表示を制御するためのルールを記述します。
 
-   融資申請フォームをオーサリングモードで開きます。「**[!UICONTROL 配偶者の有無]**」コンポーネントを選択し、![edit-rules](assets/edit-rules-icon.svg) をクリックします。次に、「**[!UICONTROL 作成]**」を選択し、ルールエディターを起動します。
+   融資申請フォームをオーサリングモードで開きます。「**[!UICONTROL 配偶者の有無]**」コンポーネントを選択し、「![edit-rules](assets/edit-rules-icon.svg)」を選択します。次に、「**[!UICONTROL 作成]**」を選択し、ルールエディターを起動します。
 
    ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1-cc.png)
 
@@ -422,7 +430,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    選択したオブジェクトを変更または修正できませんが、以下に示すように、ルールドロップダウンを使用して別のルールタイプを選択できます。別のオブジェクトにルールを作成する場合は、「キャンセル」を選択してルールエディターを終了し、目的のフォームオブジェクトから再度起動します。
 
-1. **[!UICONTROL 状態の選択]**&#x200B;ドロップダウンを選択し、「**[!UICONTROL 次の値と等しい]**」をクリックします。「**[!UICONTROL 文字列を入力]**」フィールドが表示されます。
+1. 「**[!UICONTROL 状態の選択]**」ドロップダウンを選択し、「**[!UICONTROL 次の値と等しい]**」を選択します。「**[!UICONTROL 文字列を入力]**」フィールドが表示されます。
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2-cc.png)
 
@@ -430,7 +438,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![Radio button values from rule editor](assets/radio-button-values.png)-->
 
-1. Adobe Analytics の **[!UICONTROL 文字列を入力]** ルールの「 」フィールドで、「 」を選択します。 **既婚** 」ドロップダウンメニューから。
+1. が含まれる **[!UICONTROL 文字列を入力]** ルールのフィールドで、 **既婚** ドロップダウンメニューから。
 
    ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4-cc.png)
 
@@ -445,12 +453,12 @@ Users in the forms-power-users group can access code editor. For other users, co
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6-cc.png)
 
    次に、この条件が False の場合に実行するアクションを定義します。
-1. クリック **[!UICONTROL Else セクションを追加]** 別の条件を追加するには **[!UICONTROL 配偶者の給与]** 「配偶者の有無」を「独身」に選択した場合は、「婚姻状況」フィールドを選択します。
+1. クリック **[!UICONTROL Else セクションの追加]** に別の条件を追加するには **[!UICONTROL 配偶者の給与]** 「配偶者の有無」を「独身」として選択した場合のフィールド。
 
    ![when-else](assets/when-else.png)
 
 
-1. Else 文で、「 **[!UICONTROL 非表示]** から **[!UICONTROL アクションを選択]** 」ドロップダウンリストから選択できます。
+1. Else ステートメントで、 **[!UICONTROL Hide]** から **[!UICONTROL アクションを選択]** ドロップダウン。
    ![when-else](assets/when-else-1.png)
 
 1. 「**[!UICONTROL オブジェクトをドロップするか、または次から選択]**」フィールドの「フォームオブジェクト」タブから「**[!UICONTROL Spouse Salary （配偶者の給与）]**」フィールドをドラッグ・ドロップします。目的のフォームオブジェクトから再度起動します。あるいは、「**[!UICONTROL オブジェクトをドロップするか、または次から選択]**」フィールドを選択し、ポップアップメニューから「**[!UICONTROL 配偶者の給与]**」フィールドを選択します。この中には、フォーム内のすべてのフォームオブジェクトが一覧表示されます。
@@ -462,7 +470,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 
 
-1. 「**[!UICONTROL 完了]**」を選択して、ルールを保存します。
+1. 「**[!UICONTROL 完了]**」を選択し、ルールを保存します。
 
 <!--
 1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
@@ -471,7 +479,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 >[!NOTE]
 >
-> また、「配偶者の有無」フィールドに「When」ルールを入力する代わりに、「Spouse Salary」フィールドに「Show」ルールを入力して、同じ動作を実装することもできます。
+> また、同じ動作を実装する場合は、「Marital Status （配偶者の有無）」フィールドに「When」ルールを記述する代わりに、「Spouse Salary （配偶者の給与）」フィールドに「Show」ルールを記述することもできます。
 
 ![write-rules-visual-editor-9](assets/write-rules-visual-editor-9-cc.png)
 
@@ -483,7 +491,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10-cc.png)
 
-1. 「**[!UICONTROL オプションの選択]**」を選択し、「**[!UICONTROL 数式]**」をクリックします。数式記述用のフィールドが表示されます。
+1. 「**[!UICONTROL オプションの選択]**」を選択し、「**[!UICONTROL 数式]**」を選択します。数式記述用のフィールドが表示されます。
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11-cc.png)
 
@@ -511,7 +519,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    次に、True が返された場合に式を実行する条件を作成します。
 
-1. 「**[!UICONTROL 条件の追加]**」を選択し、When ステートメントを追加します。
+1. 「**[!UICONTROL 条件の追加]**」を選択し、「When」文を追加します。
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
 
@@ -535,7 +543,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ![write-rules-visual-editor-18](assets/write-rules-visual-editor-18-cc.png)
 
-「配偶者の給与」フィールドの表示を制御し、「Else」条件を使用して「配偶者の有無」が「既婚」の場合にローンの適格要件を計算する、組み合わせルールを記述できます。
+「Spouse Salary （配偶者の給与）」フィールドの表示・非表示を切り替えるための組み合わせルールを作成し、「Else （その他）」条件を使用して「Marital Status （配偶者の有無）」が「Married （既婚）」の場合に融資適格性を計算することができます。
 
 ![write-rules-visual-editor-19](assets/write-rules-visual-editor-19-cc.png)
 
@@ -563,82 +571,83 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### ルールエディターでのカスタム関数 {#custom-functions}
 
-また、ルールエディターでカスタム関数を使用することもできます。 カスタム関数の作成手順については、この記事を参照してください。 [アダプティブFormsのカスタム関数](/help/forms/create-and-use-custom-functions.md).
-
-「関数出力」の下にリストされている「*合計*」のような既存の関数に加え頻繁に使用するカスタム関数を記述することもできます。記述した関数は、その上に `jsdoc` が付記されていることを確認してください。
-
-この `jsdoc` は、
-
-* カスタムの設定や説明を使用する場合に必須です
-* `JavaScript,`では関数を宣言する方法が複数存在するためコメントを活用して関数を区別することが大切です。
-
-ルールエディターでは、スクリプトおよびカスタム関数の JavaScript ES2015 構文がサポートされています。
-詳しくは、[jsdoc.app](https://jsdoc.app/) を参照してください。
-
-サポートされる`jsdoc`タグ：
-
-* **プライベート**
-構文：`@private`
-プライベート関数は、カスタム関数として含まれていません。
-
-* **名前**
-構文：`@name funcName <Function Name>`
-或いは`,` `@function funcName <Function Name>` **または** `@func` `funcName <Function Name>` を使用できます。
-  `funcName` ：関数の名前です（スペースは使用不可）。
-  `<Function Name>`：関数の表示名です。
-
-* **パラメーター**
-構文：`@param {type} name <Parameter Description>`
-或いは、`@argument` `{type} name <Parameter Description>` **または** `@arg` `{type}` `name <Parameter Description>` を使用できます。
-関数で使用されるパラメーターを表示します。関数には、複数のパラメータタグを設けることができます。各パラメーターは、実行順序に応じて 1 個のタグを設けることができます。
-  `{type}` は、パラメータータイプを表します。許可されているパラメータータイプは、以下のとおりです。
-
-   1. 文字列
-   1. 数値
-   1. ブール値
-   1. 対象範囲
-   1. 文字列[]
-   1. 数値[]
-   1. ブール型[]
-   1. date
-   1. 日付[]
-   1. 配列
-   1. オブジェクト
-
-  `scope` は、forms runtime が提供する特別な globals オブジェクトを指します。 これは最後のパラメーターである必要があり、ルールエディターでユーザーに表示されません。 スコープを使用して、読み取り可能なフォームおよびフィールドプロキシオブジェクトにアクセスし、プロパティ、ルールをトリガーしたイベント、およびフォームを操作するための一連の関数を読み取ることができます。
-
-  `object` type は、値を渡す代わりに、パラメーターの読み取り可能なフィールドオブジェクトをカスタム関数に渡すために使用されます。
-
-  すべてのパラメーターのタイプは、上記のいずれかに分類されます。「なし」はサポートされていません。上記のタイプのいずれかを選択していることを確認してください。タイプでは大文字と小文字が区別されません。パラメータ名ではスペースは使用できません。  パラメーターの説明には複数の単語を含めることができます。
-
-* **オプションのパラメーター**
-構文： `@param {type=} name <Parameter Description>`
-または、次を使用できます。 `@param {type} [name] <Parameter Description>`
-デフォルトでは、すべてのパラメーターが必須です。 パラメーターをオプションとしてマークするには、 `=` パラメーターの型で、またはパラメーター名を角括弧で囲んで指定します。
-
-  例えば、 `Input1` をオプションのパラメーターとして指定します。
-   * `@param {type=} Input1`
-   * `@param {type} [Input1]`
-
-* **戻り値のタイプ**
-構文：`@return {type}`
-または、`@returns {type}` を使用できます。
-目的などの、関数に関する情報を追加します。{type} は、関数の戻り値のタイプを表します。許可されている戻り値のタイプは次のとおりです。
-
-   1. 文字列
-   2. 数値
-   3. ブール値
-   4. 文字列[]
-   5. 数値[]
-   6. ブール型[]
-   7. date
-   8. 日付[]
-   9. 配列
-   10. オブジェクト
-
-  他のすべての戻り値のタイプは、上記のいずれかに分類されます。「なし」はサポートされていません。上記のタイプのいずれかを選択していることを確認してください。戻り値のタイプでは大文字と小文字が区別されません。
+のような標準搭載の機能とは別に、 *合計* の下にリストされているもの **関数の出力**&#x200B;また、ルールエディターでカスタム関数を使用することもできます。 ルールエディターでは、スクリプトおよびカスタム関数の JavaScript ECMAScript 2019 構文がサポートされています。 カスタム関数の作成方法については、記事を参照してください [アダプティブFormsのカスタム関数](/help/forms/create-and-use-custom-functions.md).
 
 <!--
+
+Ensure that the function you write is accompanied by the `jsdoc` above it. Adaptive Form supports the various [JavaScript annotations for custom functions](/help/forms/create-and-use-custom-functions.md#js-annotations).
+
+For more information, see [jsdoc.app](https://jsdoc.app/).
+
+Accompanying `jsdoc` is required:
+
+* If you want custom configuration and description
+* Because there are multiple ways to declare a function in `JavaScript,` and comments let you keep a track of the functions.
+
+Supported `jsdoc` tags:
+
+* **Private**
+  Syntax: `@private`
+  A private function is not included as a custom function.
+
+* **Name**
+  Syntax: `@name funcName <Function Name>`
+  Alternatively `,` you can use: `@function funcName <Function Name>` **or** `@func` `funcName <Function Name>`.
+  `funcName` is the name of the function (no spaces allowed).
+  `<Function Name>` is the display name of the function.
+
+* **Parameter**
+  Syntax: `@param {type} name <Parameter Description>`
+  Alternatively, you can use: `@argument` `{type} name <Parameter Description>` **or** `@arg` `{type}` `name <Parameter Description>`.
+  Shows parameters used by the function. A function can have multiple parameter tags, one tag for each parameter in the order of occurrence.
+  `{type}` represents parameter type. Allowed parameter types are:
+
+    1. string
+    2. number
+    3. boolean
+    4. scope
+    5. string[]
+    6. number[]
+    7. boolean[]
+    8. date
+    9. date[]
+    10. array
+    11. object
+
+   `scope` refers to a special globals object which is provided by forms runtime. It must be the last parameter and is not be visible to the user in the rule editor. You can use scope to access readable form and field proxy object to read properties, event which triggered the rule and a set of functions to manipulate the form.
+
+   `object` type is used to pass readable field object in parameter to a custom function instead of passing the value.
+
+   All parameter types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Types are not case-sensitive. Spaces are not allowed in the parameter name.  Parameter description can have multiple words.
+
+* **Optional Parameter**
+Syntax: `@param {type=} name <Parameter Description>` 
+Alternatively, you can use: `@param {type} [name] <Parameter Description>`
+By default all parameters are mandatory. You can mark a parameter optional by adding `=` in type of the parameter or by putting param name in square brackets.
+   
+   For example, let us declare `Input1` as optional parameter:
+    * `@param {type=} Input1`
+    * `@param {type} [Input1]`
+
+* **Return Type**
+  Syntax: `@return {type}`
+  Alternatively, you can use `@returns {type}`.
+  Adds information about the function, such as its objective.
+  {type} represents the return type of the function. Allowed return types are:
+
+    1. string
+    2. number
+    3. boolean
+    4. string[]
+    5. number[]
+    6. boolean[]
+    7. date
+    8. date[]
+    9. array
+    10. object
+
+  All other return types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Return types are not case-sensitive.
+
 **Adding a custom function**
 
 For example, you want to add a custom function which calculates area of a square. Side length is the user input to the custom function, which is accepted using a numeric box in your form. The calculated output is displayed in another numeric box in your form. To add a custom function, you have to first create a client library, and then add it to the CRX repository.
@@ -646,7 +655,7 @@ For example, you want to add a custom function which calculates area of a square
 To create a client library and add it in the CRX repository, perform the following steps:
 
 1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
-1. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
+2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
    >
@@ -738,13 +747,13 @@ var c = {
 
 ## ルール管理 {#manage-rules}
 
-フォームオブジェクトを選択し、続けて ![edit-rules1](assets/edit-rules-icon.svg) を選択すると、オブジェクト上に既存のルールが一覧表示されます。タイトルを表示し、ルール概要をプレビューできます。さらに、UI を使用すると、ルールの概要の展開および表示、ルールの順序変更、ルールの編集、ルールの削除を行えます。
+フォームオブジェクトを選択し、続けて￥![edit-rules1](assets/edit-rules-icon.svg)」を選択すると、オブジェクト上に既存のルールが一覧表示されます。タイトルを表示し、ルール概要をプレビューできます。さらに、UI を使用すると、ルールの概要の展開および表示、ルールの順序変更、ルールの編集、ルールの削除を行えます。
 
 ![リストルール](assets/list-rules-cc.png)
 
 ルールに対して、次の操作を実行できます。
 
-* **展開／折りたたみ**：ルールリスト内の「コンテンツ」の列には、ルールの内容が表示されます。デフォルトビューにルール内容の全体が表示されていない場合は、![expand-rule-content](assets/Smock_ChevronDown.svg) を選択してビューを展開します。
+* **展開／折りたたみ**：ルールリスト内の「コンテンツ」の列には、ルールの内容が表示されます。デフォルトビューにルール内容の全体が表示されていない場合は、「![expand-rule-content](assets/Smock_ChevronDown.svg)」を選択してビューを展開します。
 
 * **並べ替え**：新しく作成したルールはすべて、ルールリストの一番下に追加されます。ルールは上から下に順に実行されます。一番上のルールが最初に実行され、続けて同じタイプの他のルールが実行されます。例えば、「When」、「Show」、「Enable」、および「When」の各ルールが、リストの 1～4 番目にある場合、一番上にある「When」ルールが最初に実行され、次に 4 番目の「When」ルールが実行されます。そして、「Show」ルールおよび「Enable」ルールが実行されます。ルールの順序を変更するには、![sort-rules](assets/sort-rules.svg) をタップするか、リスト内の目的の位置にドラッグアンドドロップします。
 
@@ -752,7 +761,7 @@ var c = {
 
 * **削除**：ルールを削除するには、ルールを選択してから「**[!UICONTROL 削除]**」をクリックします。
 
-* **有効／無効**：ルールの使用を一時的に停止する必要がある場合、1 つ以上のルールを選択し、アクションツールバーの「**[!UICONTROL 無効]**」を選択して無効にすることができます。ルールが無効化されている場合は、ランタイムには実行されません。無効になっているルールを有効にするには、そのルールを選択してから、アクションツールバーの「有効にする」をクリックします。ルールの「ステータス」列には、ルールが有効か無効かが表示されます。
+* **有効／無効**：ルールの使用を一時的に停止する必要がある場合、1 つ以上のルールを選択し、アクションツールバーの「**[!UICONTROL 無効]**」を選択して無効にすることができます。ルールが無効化されている場合は、ランタイムには実行されません。無効になっているルールを有効にするには、そのルールを選択して、アクションツールバーの「有効にする」を選択します。ルールの「ステータス」列には、ルールが有効か無効かが表示されます。
 
 ![ルールを無効にする](assets/disablerule-cc.png)
 
@@ -772,13 +781,13 @@ var c = {
 
    ![copyrule2](assets/copyrule2.png)
 
-1. ルールをペーストする別のフォームオブジェクトを選択し、「**[!UICONTROL ペースト]**」をクリックします。さらに、ルールを編集して、変更を加えることができます。
+1. ルールをペーストする別のフォームオブジェクトを選択し、「**[!UICONTROL ペースト]**」を選択します。さらに、ルールを編集して、変更を加えることができます。
 
    >[!NOTE]
    >
    >ルールを別のフォームオブジェクトに貼り付けることができるのは、そのフォームオブジェクトがコピーしたルールのイベントをサポートしている場合に限られます。例えば、ボタンはクリックイベントをサポートします。クリックイベントを含むルールをボタンに貼り付けることはできますが、チェックボックスに貼り付けることはできません。
 
-1. 「**[!UICONTROL 完了]**」を選択して、ルールを保存します。
+1. 「**[!UICONTROL 完了]**」を選択し、ルールを保存します。
 
 ## ネスト式 {#nestedexpressions}
 

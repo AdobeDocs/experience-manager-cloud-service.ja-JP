@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
+source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
 workflow-type: tm+mt
-source-wordcount: '1452'
-ht-degree: 98%
+source-wordcount: '1409'
+ht-degree: 93%
 
 ---
 
@@ -137,7 +137,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 >[!NOTE]
 >
-> AEM Formsは、PDFファイルとシームレスに統合できる様々な組み込みフォントを備えています。 サポートされているフォントの一覧を確認するには、 [ここをクリック](/help/forms/supported-out-of-the-box-fonts.md).
+> AEM Forms には、PDF ファイルとシームレスに統合できる様々な組み込みフォントが用意されています。サポートされているフォントのリストを表示するには、[ここをクリック](/help/forms/supported-out-of-the-box-fonts.md)してください。
 
 <!-- 
 
@@ -171,21 +171,22 @@ DocAssurance サービスには、以下の Signature API と Encyption API が�
 
 ### Signature API
 
-Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。セキュリティ機能がドキュメント自体に適用されるので、ドキュメントは安全で、ライフサイクル全体にわたって制御されます。オフラインでダウンロードされる場合や組織に送り返される場合にファイアウォールを超えても、ドキュメントを安全な状態に維持します。Signature API を使用して、次のタスクを実行できます。
+Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。<!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. --> セキュリティ機能はドキュメント自体に適用され、ドキュメントは安全で、ライフサイクル全体にわたって制御されます。 ドキュメントは、ファイアウォール外でも、オフラインでダウンロードされた場合でも、組織に送り返される場合でも、安全なままです。 Signature API を使用して、次のタスクを実行できます。
 
-* PDF ドキュメントに署名フィールドを追加します。
+* PDFドキュメントに表示可能な署名フィールドを追加します。
+* PDFドキュメントに非表示の署名フィールドを追加します。
 * PDF ドキュメント内の指定した署名フィールドに署名します。
 * PDF ドキュメントの証明
 
 ### 暗号化 API
 
-暗号化 API を使用すると、ドキュメントの暗号化および復号が可能になります。ドキュメントが暗号化されると、その内容が読み取れなくなります。許可されたユーザーは、ドキュメントを復号化して、コンテンツにアクセスできます。PDF ドキュメントがパスワードで暗号化されている場合、Adobe Reader または Adobe Acrobat でドキュメントを表示するには、ユーザーはオープンパスワードを指定する必要があります。同様に、PDF ドキュメントが証明書で暗号化されている場合は、、PDF ドキュメントの暗号化に使用された証明書 (秘密鍵) に対応する公開鍵で PDF ドキュメントを復号する必要があります。
+暗号化 API を使用すると、ドキュメントの暗号化および復号が可能になります。ドキュメントが暗号化されると、その内容が読み取れなくなります。許可されたユーザーは、ドキュメントを復号化して、コンテンツにアクセスできます。PDFドキュメントをパスワードで暗号化する場合、ドキュメントをAdobe ReaderまたはAdobe Acrobatで表示するには、開いているパスワードを指定する必要があります。 <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
 
 暗号化 API を使用して、次のタスクを実行できます。
 
 * パスワードで PDF ドキュメントを暗号化します。
 * PDF ドキュメントからパスワードベースの暗号化を削除します。
-* PDF ドキュメントに適用されるセキュリティのタイプを取得します。
+* PDFドキュメントに適用されるセキュリティタイプを返します。
 
 Signature API と Encryption API は両方とも [同期 API](#types-of-communications-apis-types) です。
 
