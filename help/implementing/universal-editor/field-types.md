@@ -5,7 +5,7 @@ exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '1144'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -90,9 +90,9 @@ ht-degree: 86%
 
 | 説明 | コンポーネントのタイプ |
 |---|---|
-| [AEMタグ](#aem-tag) | `aem-tag` |
-| [AEM Content](#aem-content) | `aem-content` |
-| [ブール型](#boolean) | `boolean` |
+| [AEM タグ](#aem-tag) | `aem-tag` |
+| [AEM コンテンツ](#aem-content) | `aem-content` |
+| [ブーリアン](#boolean) | `boolean` |
 | [チェックボックスグループ](#checkbox-group) | `checkbox-group` |
 | [コンテナ](#container) | `container` |
 | [日時](#date-time) | `date-time` |
@@ -292,11 +292,11 @@ AEM コンテンツコンポーネントタイプでは、AEM コンテンツピ
 
 #### コンテンツフラグメント {#content-fragment}
 
-コンテンツフラグメントピッカーを使用して、 [コンテンツフラグメント](/help/sites-cloud/authoring/fragments/content-fragments.md) とそのバリエーション（必要に応じて） 追加の設定を提供します。
+コンテンツフラグメントピッカーを使用すると、[コンテンツフラグメント](/help/sites-cloud/authoring/fragments/content-fragments.md)と（必要に応じて）そのバリエーションを選択できます。追加の設定を提供します。
 
 | 設定 | 値タイプ | 説明 | 必須 |
 |---|---|---|---|
-| `variationName` | `string` | 選択したバリエーションを保存する変数名。 未定義の場合、バリエーションピッカーは表示されません | いいえ |
+| `variationName` | `string` | 選択したバリエーションを保存する変数名。未定義の場合、バリエーションピッカーは表示されません | いいえ |
 
 >[!BEGINTABS]
 
@@ -418,11 +418,11 @@ AEM コンテンツコンポーネントタイプでは、AEM コンテンツピ
 
 #### エクスペリエンスフラグメント {#experience-fragment}
 
-エクスペリエンスフラグメントピッカーを使用して、 [エクスペリエンスフラグメント](/help/sites-cloud/authoring/fragments/experience-fragments.md) とそのバリエーション（必要に応じて） 追加の設定を提供します。
+エクスペリエンスフラグメントピッカーを使用すると、[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fragments/experience-fragments.md)と（必要に応じて）そのバリエーションを選択できます。追加の設定を提供します。
 
 | 設定 | 値タイプ | 説明 | 必須 |
 |---|---|---|---|
-| `variationName` | `string` | 選択したバリエーションを保存する変数名。 未定義の場合、バリエーションピッカーは表示されません | いいえ |
+| `variationName` | `string` | 選択したバリエーションを保存する変数名。未定義の場合、バリエーションピッカーは表示されません | いいえ |
 
 >[!BEGINTABS]
 
@@ -641,7 +641,7 @@ AEM コンテンツコンポーネントタイプでは、AEM コンテンツピ
 
 #### リッチテキスト {#rich-text}
 
-リッチテキストを使用すると、複数行のリッチテキスト入力が可能です。 追加の検証タイプを提供します。
+リッチテキストを使用すると、複数行のリッチテキスト入力が可能になります。追加の検証タイプを提供します。
 
 | 検証タイプ | 値タイプ | 説明 | 必須 |
 |---|---|---|---|
@@ -688,7 +688,7 @@ AEM コンテンツコンポーネントタイプでは、AEM コンテンツピ
 
 >[!TAB スクリーンショット]
 
-![テキスト領域コンポーネントタイプのスクリーンショット](assets/component-types/richtext.png)
+![テキストエリアコンポーネントタイプのスクリーンショット](assets/component-types/richtext.png)
 
 >[!ENDTABS]
 
@@ -774,7 +774,7 @@ AEM コンテンツコンポーネントタイプでは、AEM コンテンツピ
 
 #### テキスト {#text}
 
-テキストを使用すると、1 行のテキスト入力が可能です。  追加の検証タイプも含まれます。
+テキストを使用すると、1 行のテキスト入力が可能になります。追加の検証タイプも含まれます。
 
 | 検証タイプ | 値タイプ | 説明 | 必須 |
 |---|---|---|---|

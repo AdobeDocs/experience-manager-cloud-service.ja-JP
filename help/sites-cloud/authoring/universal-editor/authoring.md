@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '2313'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -34,22 +34,22 @@ ht-degree: 93%
 
 ## ユニバーサルエディターへのアクセス {#accessing}
 
-アプリがユニバーサルエディターと連携するように実装されると、ユニバーサルエディターはAEMの内部とAEMにアクセスしなくても直接アクセスできます。
+アプリをユニバーサルエディターと連携するように実装すると、ユニバーサルエディターでは、AEM as a Cloud Service 内からアクセスすることも、AEM にアクセスせずに直接アクセスすることもできます。
 
-### AEM内でのアクセスにas a Cloud Service {#accessing-aem}
+### AEM as a Cloud Service 内でのアクセス {#accessing-aem}
 
-1. AEM as a Cloud Service Authoring インスタンスにサインインします。
-1. 以下を使用します。 [**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md) をクリックして、編集するユニバーサルエディターで使用するために作成されたページに移動します。
+1. AEM as a Cloud Service オーサリングインスタンスにログインします。
+1. [**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)を使用して、ユニバーサルエディターで使用するために作成された、編集対象のページに移動します。
 1. ページを編集します。
 1. ユニバーサルエディターが開き、選択したページを編集します。
 
 >[!NOTE]
 >
->ページの編集時 ( [**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md) コンソールで、ページの [テンプレート：](/help/sites-cloud/authoring/sites-console/templates.md) このドキュメントで説明されているユニバーサルエディター、または [ページエディター。](/help/sites-cloud/authoring/page-editor/introduction.md)
+>[**Sites** コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)でページを編集する際、コンソールはページの[テンプレート](/help/sites-cloud/authoring/sites-console/templates.md)に適したエディター（このドキュメントで説明するユニバーサルエディターや[ページエディター](/help/sites-cloud/authoring/page-editor/introduction.md)）を開きます。
 
-### 直接へのアクセス {#accessing-directly}
+### 直接アクセス {#accessing-directly}
 
-1. ユニバーサルエディターにサインインします。 ログインして[ユニバーサルエディターにアクセスする](/help/implementing/universal-editor/getting-started.md#request-access)には、Adobe ID が必要です。
+1. ユニバーサルエディターにログインします。ログインして[ユニバーサルエディターにアクセスする](/help/implementing/universal-editor/getting-started.md#request-access)には、Adobe ID が必要です。
 
 1. ログインしたら、編集するページの URL を[ロケーションバーに入力します。](#location-bar)次のようなコンテンツの編集を開始できます。[テキストコンテンツ](#text-mode)または[メディアコンテンツ。](#media-mode)
 

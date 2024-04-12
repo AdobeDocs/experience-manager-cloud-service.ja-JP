@@ -5,7 +5,7 @@ exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '698'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 63%
 
 ## 概要 {#overview}
 
-ユニバーサルエディターサービスは、ユニバーサルエディターとバックエンドシステムを結び付けるものです。ユニバーサルエディター用にローカルで開発するには、ユニバーサルエディターサービスのローカルコピーを実行する必要があります。 これは、次の理由からです。
+ユニバーサルエディターサービスは、ユニバーサルエディターとバックエンドシステムを結び付けるものです。ユニバーサルエディター用にローカルで開発できるようにするには、ユニバーサルエディターサービスのローカルコピーを実行する必要があります。理由は、次のとおりです。
 
-* Adobeの公式のユニバーサルエディターサービスはグローバルにホストされており、ローカルのAEMインスタンスはインターネットに公開する必要があります。
-* ローカルのAEM SDK を使用して開発中は、Adobeの Universal Editor Service にインターネットからアクセスできません。
-* AEMインスタンスに IP 制限があり、Adobeの Universal Editor Service が定義された IP 範囲にない場合は、自分でホストできます。
+* アドビ公式のユニバーサルエディターサービスはグローバルにホストされているので、ローカルの AEM インスタンスをインターネットに公開する必要があります。
+* ローカルの AEM SDK を使用して開発している間は、アドビのユニバーサルエディターサービスにインターネットからアクセスできません。
+* AEM インスタンスに IP 制限があり、アドビのユニバーサルエディターサービスが定義された IP 範囲にない場合は、自分でホストできます。
 
-このドキュメントでは、Universal Editor Service のローカルコピーと共に HTTPS でAEMを実行し、ユニバーサルエディターで使用するAEM上でローカルに開発できるようにする方法を説明します。
+このドキュメントでは、ユニバーサルエディターを使用して AEM でローカルに開発を行えるよう、ユニバーサルエディターサービスのローカルコピーと共に HTTPS で AEM を実行する方法について説明します。
 
 ## HTTPS で実行する AEM の設定 {#aem-https}
 
@@ -30,17 +30,17 @@ HTTPS で保護された外側のフレーム内で、保護されていない H
 
 これを行うには、HTTPS で実行する AEM を設定する必要があります。開発目的で、自己署名証明書を使用できます。
 
-[このドキュメントを参照](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=ja) を参照してください。また、AEMを HTTPS で実行し、自己署名証明書を含めて使用する方法についても説明します。
+使用できる自己署名付き証明書を含め、HTTPS で実行する AEM を設定する方法について詳しくは、[このドキュメント](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=ja)を参照してください。
 
 ## ユニバーサルエディターサービスのインストール {#install-ue-service}
 
-ユニバーサルエディターサービスは、ユニバーサルエディターのコピー全体ではなく、ローカルAEM環境からの呼び出しがインターネット経由ではなく、制御する定義済みのエンドポイントからの呼び出しを確実にルーティングする機能のサブセットです。
+ユニバーサルエディターサービスは、ユニバーサルエディターの完全なコピーではなく、ローカル AEM 環境からの呼び出しがインターネット経由ではなく、制御する定義済みのエンドポイントからルーティングされることを保証する機能のサブセットにすぎません。
 
-[NodeJS バージョン 16](https://nodejs.org/en/download/releases) Universal Editor Service のローカルコピーを実行するには、が必要です。
+ユニバーサルエディターサービスのローカルコピーを実行するには、[NodeJS バージョン 16](https://nodejs.org/en/download/releases) が必要です。
 
-Universal Editor Service は、ソフトウェア配布から使用できます。 詳しくは、 [ソフトウェア配布ドキュメント](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ja) 」を参照してください。
+ユニバーサルエディターサービスは、ソフトウェア配布から使用できます。アクセス方法について詳しくは、[ソフトウェア配布のドキュメント](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ja)を参照してください。
 
-を保存します。 `universal-editor-service.cjs` ファイルを「ソフトウェア配布」からローカル開発環境に
+`universal-editor-service.cjs` ファイルをソフトウェア配布からローカル開発環境に保存します。
 
 ## HTTPS を使用してユニバーサルエディターサービスを実行するための証明書の作成 {#ue-https}
 
@@ -104,9 +104,9 @@ Universal Editor Service listening on port 8000 as HTTPS Server
 
 >[!NOTE]
 >
->直接にアクセスしようとしています `https://localhost:8000` 結果は `404` エラー。 これは期待された動作です。
+>`https://localhost:8000` に直接アクセスしようとすると、`404` エラーが発生します。これは予期された動作です。
 >
->ローカルのユニバーサルエディターサービスへのアクセスをテストするには、 `https://localhost:8000/corslib/LATEST`. 詳しくは、 [次のセクション](#editing) 」を参照してください。
+>ローカルのユニバーサルエディターサービスへのアクセスをテストするには、`https://localhost:8000/corslib/LATEST` を使用します。詳しくは、[次の節](#editing)を参照してください。
 
 >[!TIP]
 >

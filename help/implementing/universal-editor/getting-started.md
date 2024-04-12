@@ -5,7 +5,7 @@ exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -63,12 +63,12 @@ React アプリを実装していない場合や、サーバーサイドでの�
 <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST" async></script>
 ```
 
-常に最新バージョンをお勧めしますが、変更が壊れた場合は、以前のバージョンのサービスを参照できます。
+常に最新バージョンをお勧めしますが、重大な変更があった場合には以前のバージョンのサービスを参照できます。
 
-* `https://universal-editor-service.experiencecloud.live/corslib/LATEST`  — 最新の UE CORS ライブラリ
-* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST`  — バージョン 2.x 下の最新の UE CORS ライブラリ
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST`  — バージョン 2.1.x 下の最新の UE CORS ライブラリ
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1` — 正確な UE CORS ライブラリバージョン 2.1.1
+* `https://universal-editor-service.experiencecloud.live/corslib/LATEST` - 最新の UE CORS ライブラリ
+* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` - バージョン 2.x の最新の UE CORS ライブラリ
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - バージョン 2.1.x の最新の UE CORS ライブラリ
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1` - バージョン 2.1.1 の正確な UE CORS ライブラリ
 
 ## 必要な OSGi 設定を追加 {#osgi-configurations}
 

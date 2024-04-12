@@ -5,7 +5,7 @@ exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '3139'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -182,7 +182,7 @@ WKND ページがユニバーサルエディターに正常に読み込まれ、
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
    ```
 
-   * ライブラリの最新バージョンを常にお勧めします。 以前のバージョンが必要な場合は、ドキュメントを参照してください。 [AEMのユニバーサルエディターの概要。](/help/implementing/universal-editor/getting-started.md#alternative)
+   * ライブラリの最新バージョンを常にお勧めします。以前のバージョンが必要な場合は、[AEM のユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md#alternative)ドキュメントを参照してください。
 
 1. ローカルユニバーサルエディターサービスへの接続に必要なメタデータをファイルの最後に追加します。
 
