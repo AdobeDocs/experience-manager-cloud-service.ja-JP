@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
-source-wordcount: '1290'
-ht-degree: 100%
+source-git-commit: 0ccca6194cfcd6e834b2e63337230f83cba96dcd
+workflow-type: tm+mt
+source-wordcount: '1640'
+ht-degree: 94%
 
 ---
 
@@ -21,11 +21,39 @@ ht-degree: 100%
 
 [!DNL Adobe Experience Manager Assets] では、アセット、フォルダー、コレクションを組織内や外部（パートナーやベンダーなど）のメンバーと共有できます。Adobe [!DNL Experience Manager Assets] as a [!DNL Cloud Service] のアセットを共有するには、次の方法を使用します。
 
-* [リンクとして共有](#sharelink)
+* [リンクとして共有](#sharelink).
 * [アセットをダウンロードし、個別に共有します。](/help/assets/download-assets-from-aem.md)
 * [[!DNL Experience Manager]  デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)を使用して共有します。
 * [[!DNL Adobe Asset Link] を使用して共有します](https://www.adobe.com/jp/creativecloud/business/enterprise/adobe-asset-link.html)。
 * [[!DNL Brand Portal] を使用して共有します](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=ja)。
+
+## 前提条件 {#prerequisites}
+
+[アセットをリンクとして共有するための設定](#config-link-share-settings)を行うには、管理者権限が必要です。
+
+## リンク共有設定の指定 {#config-link-share-settings}
+
+[!DNL Experience Manager Assets] では、デフォルトのリンク共有設定を指定できます。
+
+1. [!DNL Experience Manager] ロゴをクリックし、**[!UICONTROL ツール]**／**[!UICONTROL Assets]**／**[!UICONTROL Assets 設定]**／**[!UICONTROL リンク共有]**&#x200B;に移動します。
+1. 初期設定：
+
+   * **オリジナルを含める：**
+
+      * `Select Include Originals` を選択し、デフォルトでリンク共有ダイアログに表示される `Include Originals` オプションを選択します。
+      * 方法を選択 `Include Originals` オプションはリンク共有ダイアログに表示されます。 [!UICONTROL 編集可能] ここで定義した設定をユーザーが初期設定で変更できるようにします。 （を使用） `Read-only` 設定は表示されますが、変更できません。 `Hidden` 設定を非表示にし、ここで初期設定で設定した値を使用します。
+   * **レンディションを含める：**
+      * `Select Include Renditions` オプションを選択して、デフォルトでリンク共有ダイアログに表示される `Include Renditions` オプションを選択します。
+      * 方法を選択 `Include Renditions` オプションはリンク共有ダイアログに表示されます。 [!UICONTROL 編集可能] ここで定義した設定をユーザーが初期設定で変更できるようにします。 （を使用） `Read-only` 設定は表示されますが、変更できません。 `Hidden` 設定を非表示にし、ここで初期設定で設定した値を使用します。
+
+1. 「`Expiration date`」セクションの `Validity Period` フィールドに、リンクのデフォルトの有効期間を指定します。
+
+1. アクションバーの&#x200B;**[!UICONTROL リンク共有]**&#x200B;ボタン：
+   * `jcr:modifyAccessControl` 権限を持つすべてのユーザーは、[!UICONTROL リンク共有]オプションを表示できます。デフォルトでは、すべての管理者に表示されます。[!UICONTROL リンク共有]ボタンは、デフォルトでは全員に表示されます。このオプションを定義済みのグループに対してのみ表示するようにを設定することも、特定のグループからこのオプションを拒否することもできます。特定のグループに対して `Share Link` オプションを表示する場合は、`Allow only for groups` を選択します。`Deny from groups` を選択して、特定のグループから `Share Link` オプションを拒否します。これらのオプションのいずれかを選択したら、`Select Groups` フィールドを使用してグループ名を指定し、許可または拒否するグループ名を追加します。
+
+メール設定に関する設定について詳しくは、[メールサービスドキュメント](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=ja)を参照してください
+
+![メールサービスを設定](/help/assets/assets/config-email-service.png)
 
 ## アセットをリンクとして共有 {#sharelink}
 
@@ -42,11 +70,12 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 リンク共有機能を使用してアセットを共有するには、次の 2 つの方法があります。
 
-1. 共有リンクを生成し、 [コピーして、他のユーザーとアセットリンク](#copy-and-share-assets-link) を共有します。リンクのデフォルトの有効期間は 1 日です。コピーしたリンクを他のユーザーと共有する場合、有効期間は変更できません。
+1. 共有リンクを生成し、[コピーして、他のユーザーとアセットリンク](#copy-and-share-assets-link) を共有します。
+1. 共有リンクを生成し、[メールでアセットリンクを共有します](#share-assets-link-through-email)。有効期限の日時などのデフォルト値を変更し、元のアセットとそのレンディションをダウンロードできます。メールアドレスを追加することで、複数のユーザーにメールを送信できます。
 
-1. 共有リンクを生成し、 [メールでアセットリンクを共有します](#share-assets-link-through-email)。この場合、有効期限の日時などのデフォルト値を変更し、元のアセットとそのレンディションをダウンロードできます。 メールアドレスを追加することで、複数のユーザーにメールを送信できます。
+   ![リンク共有ダイアログ](assets/share-link.png)
 
-   ![リンク共有ダイアログ](assets/link-sharing-dialog.png)
+どちらの場合も、有効期限の日時などのデフォルト値を変更し、元のアセットとそのレンディションをダウンロードできます。
 
 ### アセットリンクをコピーして共有{#copy-and-share-asset-link}
 
@@ -55,6 +84,9 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 1. [!DNL Experience Manager Assets] にログインし、「**[!UICONTROL ファイル]**」に移動します。
 1. アセットまたはアセットを含むフォルダーを選択します。ツールバーで「**[!UICONTROL リンクを共有]**」をクリックします。
 1. **[!UICONTROL リンク共有]** ダイアログが表示され、 **[!UICONTROL 共有リンク]** フィールドに自動生成されたアセットリンクが含まれます。
+1. 必要に応じて、共有リンクの有効期限を設定します。
+1. **[!UICONTROL リンク設定]**&#x200B;で、`Include Originals` または `Include Renditions` をチェックまたはチェック解除して、2 つのいずれかを含めるか除外します。少なくともオプションの選択は必須です。
+1. 選択したアセットの名前は [!DNL Share Link] ダイアログボックスの右行に表示されます。
 1. アセットリンクをコピーしてユーザーと共有します。
 
 ### メール通知によるアセットリンクの共有 {#share-assets-link-through-email}
@@ -64,7 +96,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 1. アセットまたはアセットを含むフォルダーを選択します。ツールバーで「**[!UICONTROL リンクを共有]**」をクリックします。
 1. **[!UICONTROL リンク共有]** ダイアログが表示され、 **[!UICONTROL 共有リンク]** フィールドに自動生成されたアセットリンクが含まれます。
 
-   * 「メールアドレス」ボックスに、リンクを共有するユーザーのメール ID を入力します。リンクを複数のユーザーと共有できます。ユーザーが組織のメンバーの場合は、ドロップダウンリストに表示される候補の中からメール ID を選択します。外部ユーザーの場合は、メール ID を入力し、**[!UICONTROL Enter]** キーを押します。メール ID がユーザーの一覧に追加されます。
+   * 「メールアドレス」ボックスに、リンクを共有するユーザーのメールアドレスを入力します。リンクは複数のユーザーと共有できます。ユーザーが組織のメンバーの場合は、ドロップダウンリストに表示される候補の中からメールアドレスを選択します。メールアドレスのテキストフィールドに、リンクを共有するユーザーのメールアドレスを入力し、[!UICONTROL Enter] をクリックします。リンクは複数のユーザーと共有できます。
 
    * **[!UICONTROL 件名]** ボックスに、共有するアセットの目的を指定する件名を入力します。
    * 「**[!UICONTROL メッセージ]**」ボックスに、必要に応じてメッセージを入力します。
@@ -115,7 +147,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 >* Before you share a link with users, ensure that Day CQ Mail Service is configured. Otherwise, an error occurs.
 
 1. In the Assets user interface, select the asset to share as a link.
-1. From the toolbar, select the **[!UICONTROL Share Link]**.
+1. From the toolbar, click/tap the **[!UICONTROL Share Link]**.
 
    An asset link is auto-created in the **[!UICONTROL Share Link]** field. Copy this link and share it with the users. The default expiration time for the link is one day.
 
@@ -153,20 +185,20 @@ To generate the URL for assets you want to share with users, use the Link Sharin
    >By default, users can only download the renditions of the asset that you share as a link.
 
 1. Click **[!UICONTROL Share]**. A message confirms that the link is shared with the users through an email.
-1. To view the shared asset, select the link in the email that is sent to the user. The shared asset is displayed in the **[!UICONTROL Adobe Marketing Cloud]** page.
+1. To view the shared asset, click/tap the link in the email that is sent to the user. The shared asset is displayed in the **[!UICONTROL Adobe Marketing Cloud]** page.
 
-   To toggle to the list view, select the layout icon in the toolbar.
+   To toggle to the list view, click/tap the layout icon in the toolbar.
 
-1. To generate a preview of the asset, select the shared asset. To close the preview and return to the **[!UICONTROL Marketing Cloud]** page, select **[!UICONTROL Back]** in the toolbar. If you have shared a folder, select **[!UICONTROL Parent Folder]** to return to the parent folder.
+1. To generate a preview of the asset, click/tap the shared asset. To close the preview and return to the **[!UICONTROL Marketing Cloud]** page, click/tap **[!UICONTROL Back]** in the toolbar. If you have shared a folder, click/tap **[!UICONTROL Parent Folder]** to return to the parent folder.
 
    >[!NOTE]
    >
    >Experience Manager supports generating the preview of assets of these MIME types: JPG, PNG, GIF, BMP, INDD, PDF, and PPT. You can only download the assets of the other MIME types.
 
-1. To download the shared asset, select **[!UICONTROL Select]** from the toolbar, select the asset, and then select **[!UICONTROL Download]** from the toolbar.
-1. To view the assets you shared as links, go to the Assets user interface and select the GlobalNav icon. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
+1. To download the shared asset, click/tap **[!UICONTROL Select]** from the toolbar, click/tap the asset, and then click/tap **[!UICONTROL Download]** from the toolbar.
+1. To view the assets you shared as links, go to the Assets user interface and click/tap the GlobalNav icon. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
 1. From the Navigation pane, choose **[!UICONTROL Shared Links]** to display a list of shared assets.
-1. To un-share an asset, select it and select **[!UICONTROL Unshare]** from the toolbar.
+1. To un-share an asset, select it and tap/click **[!UICONTROL Unshare]** from the toolbar.
 
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 -->
@@ -202,20 +234,13 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 >* `[aem_server]:[port]/linkexpired.html`
 
 <!--
-## Configure Day CQ mail service {#configmailservice}
-
-Before you can share assets as links, configure the email service.
-
-1. Select the Experience Manager logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
-1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service]** with the details mentioned against their names:
+1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service** with the details mentioned against their names:
 
     * SMTP server host name: email server host name
     * SMTP server port: email server port
     * SMTP user: email server user name
     * SMTP password: email server password
-
-1. Select **[!UICONTROL Save]**.
 -->
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -223,14 +248,14 @@ Before you can share assets as links, configure the email service.
 
 When you download assets from the link shared using the Link Sharing feature, Experience Manager compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, you can configure the maximum size of the downloaded files. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
 
-1. Select the Experience Manager logo and then go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Click/Tap the Experience Manager logo and then go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the web console, locate the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration.
 1. Open the configuration in edit mode, and modify the value of the **[!UICONTROL Max Content Size (uncompressed)]** parameter.
 1. Save the changes.
 -->
 
 <!--
-Add content or link about how to configure sharing by way of BP, DA, AAL, and so on.
+Add content or link about how to configure sharing via BP, DA, AAL, etc.
 -->
 
 ### デスクトップアクションのデスクトップアプリでの有効化 {#desktop-actions}
