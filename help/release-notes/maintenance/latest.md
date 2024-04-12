@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 1dd2eae9201c86d2cdac78ff99634eff8ca57a05
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 83%
+ht-degree: 94%
 
 ---
 
@@ -31,11 +31,11 @@ ht-degree: 83%
 
 なし。
 
-### 非推奨（廃止予定）の機能と API {#deprecated-15860}
+### 廃止された機能と API {#deprecated-15860}
 
-* [Adobe Developer Console での JWT 資格情報の非推奨（廃止予定）](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+* [Adobe Developer Console での JWT 資格情報の廃止](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
-～を見る [非推奨（廃止予定）の機能および削除された API](/help/release-notes/deprecated-removed-features.md) AEMのas a Cloud Serviceで非推奨（廃止予定）または削除された機能を確認します。
+AEM as a Cloud Serviceで廃止または削除された機能については、[廃止または削除された機能と API](/help/release-notes/deprecated-removed-features.md) を参照してください。
 
 ### 変更通知 {#change-notice-15860}
 
