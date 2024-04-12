@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: af9e30ffb585619d1581db94d3961f561e12df2b
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
 source-wordcount: '2261'
 ht-degree: 34%
@@ -134,22 +134,22 @@ Assets Essentialsを使用すると、管理者は、リポジトリで使用可
 
   次の方法で、カスタム関数のインタラクションを効率化できるようになりました。
 
-   * 新しい注釈を活用して、より明確な機能定義を提供する。
-   * カスタム関数のキャッシュメカニズムを使用すると、フォームのパフォーマンスが向上します。
-   * カスタム関数内のグローバルオブジェクトをシームレスに操作する。
-   * カスタム関数内でのオプションのパラメーターの定義と利用。
+   * [新しい注釈を活用して、より明確な機能定義を提供](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function).
+   * [カスタム関数のキャッシュメカニズムの使用によるフォームのパフォーマンスの向上](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
+   * [カスタム関数内のグローバルオブジェクトのシームレスな操作](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
+   * [カスタム関数内でのオプション・パラメータの定義と使用](/help/forms/create-and-use-custom-functions.md#parameter).
 
   この更新により、ルールエディター機能が次のように強化されました。 以下の操作を実行できます。
 
-   * 条件付き実行のための強力な「when-then-else」ロジックを実装します。
+   * 強力な機能の実装 [「when-then-else」](/help/forms/rule-editor-core-components.md#when) 条件実行のロジック。
    * let 関数や arrow 関数などの最新の JavaScript 機能を活用します（ES10 のサポート）。
    * フィールドだけでなく、パネルやフォーム全体を検証またはリセットすることで、ユーザーの操作に対するコントロールを拡張できます。
 
   これらの機能強化により、ビジュアルルールエディター内でルールやカスタム関数を直感的かつ強力に作成できるようになりました。
 
-* **アダプティブフォームの複数バージョンの作成**：既存のフォームのバリエーションを簡単に管理できるようになりました。 これにより、バージョン管理が簡素化され、フォームの最適化の比較が、合理化された単一のワークフロー内で容易になります。
+* **[アダプティブフォームの複数バージョンの作成](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**：既存のフォームのバリエーションを簡単に管理できるようになりました。 これにより、バージョン管理が簡素化され、フォームの最適化の比較が、合理化された単一のワークフロー内で容易になります。
 
-* **アダプティブフォームの比較**:2 つのフォームを簡単に比較して、2 つのフォームの違いを特定できるようになりました。 チームメンバーがリビジョンを比較し、変更を効率的に議論できるので、共同作業がスムーズになります。
+* **[アダプティブフォームの比較](/help/forms/compare-forms.md)**:2 つのフォームを簡単に比較して、2 つのフォームの違いを特定できるようになりました。 チームメンバーがリビジョンを比較し、変更を効率的に議論できるので、共同作業がスムーズになります。
 
 * **手書き署名コンポーネントのアクセシビリティの強化**：この更新により、手書き署名コンポーネントのアクセシビリティが大幅に向上しました。
 
@@ -179,7 +179,7 @@ Assets Essentialsを使用すると、管理者は、リポジトリで使用可
 
   <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Adobe Workfront Fusion コネクタを使用すると、アダプティブフォームの送信時に自動的にトリガーされるワークフローを設計できます。例えば、送信されたデータを確認するタスクを特定の個人に割り当てるワークフローが開始され、アダプティブフォームから取り込まれた情報に基づいて、申し込みの承認または拒否ができるようになるシナリオを想定します。この合理化された統合により、効率が向上し、ワークフロープロセスに新しいレベルの自動化が実現します。|
 
-* **Reader拡張サービス**:AEM Forms Communication API は、通常のユーザーにフォーム入力やコメントなどの機能を追加できるReader拡張サービスを導入しました。これにより、無料のAdobe Readerを使用してPDFにとってインタラクティブなコミュニケーションを実現できます。
+* **[Reader拡張サービス](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**:AEM Forms Communication API は、通常のユーザーにフォーム入力やコメントなどの機能を追加できるReader拡張サービスを導入しました。これにより、無料のAdobe Readerを使用してPDFにとってインタラクティブなコミュニケーションを実現できます。
 
 * [右横書き言語のサポート](/help/forms/supporting-new-language-localization-core-components.md)：コアコンポーネントに基づいて作成されたアダプティブフォームを、アラビア語、ペルシア語、ウルドゥー語などの右横書き（RTL）言語で表示できるようになりました。RTL 言語は、世界中で 20 億人以上の人々が話しています。RTL 言語のフォームを使用すると、アダプティブフォームのリーチを拡大して、これらの多様なオーディエンスに対応し、RTL マーケットを選択できます。また、特定の地域では、現地の言語でフォームを提供することは法的義務として定められています。現地の言語に対応することで、より幅広いオーディエンスに扉を開くだけでなく、関連する法律や規制を確実に遵守できます。
 

@@ -1,8 +1,8 @@
 ---
-source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 100%
+source-wordcount: '314'
+ht-degree: 96%
 
 ---
 # スニペット {#snippets}
@@ -36,6 +36,9 @@ ht-degree: 100%
 * [REST エンドポイントへアダプティブフォームデータを送信](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [AEM ワークフローへアダプティブフォームデータを送信](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [フォームポータルを使用して AEM web サイト上の AEM アダプティブフォームを一覧表示](/help/forms/configure-forms-portal.md)
+* [アダプティブフォームへのバージョン、コメント、注釈の追加](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+* [アダプティブFormsの比較](/help/forms/compare-forms.md)
+
 
 ## アダプティブフォーム送信アクション {#af-submit-action}
 
