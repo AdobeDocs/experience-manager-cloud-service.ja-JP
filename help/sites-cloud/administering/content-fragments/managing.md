@@ -4,9 +4,9 @@ description: コンソールやエディターから AEM コンテンツフラ�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 3c550a08983ce198a6718d0c2120f1f5001fb28d
+source-git-commit: 404eb317562f974f72820c6e3aa019fbe043d7f7
 workflow-type: tm+mt
-source-wordcount: '2629'
+source-wordcount: '2643'
 ht-degree: 99%
 
 ---
@@ -454,6 +454,7 @@ ht-degree: 99%
 * 一連の述語
    * コンテンツフラグメントモデル、ローカライゼーション、タグ、ステータスフィールドなど
    * 1 つ以上の述語を選択して組み合わせ、フィルターを作成できます
+* **サブフォルダー項目を除外**&#x200B;を使用すると、サブフォルダーに保存されたコンテンツフラグメントを除外できます
 * 設定した内容の&#x200B;**保存**
 * 再利用のために保存した検索条件フィルターを取得するオプション
 

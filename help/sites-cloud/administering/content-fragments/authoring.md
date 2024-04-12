@@ -4,10 +4,10 @@ description: コンテンツフラグメントのコンテンツの作成し、�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
-workflow-type: ht
-source-wordcount: '2266'
-ht-degree: 100%
+source-git-commit: 6353bd50c1df43d9ce11616f71a69d8bfb5ab338
+workflow-type: tm+mt
+source-wordcount: '2381'
+ht-degree: 95%
 
 ---
 
@@ -370,6 +370,27 @@ AEM ページ、エクスペリエンスフラグメントまたはその他の�
 >コンテンツフラグメントの公開時に新しいバージョンが作成されます。
 
 ![コンテンツフラグメントエディター - バージョン履歴の概要](assets/cf-authoring-version-history-overview.png)
+
+### バージョンを比較 {#compare-version}
+
+コンテンツフラグメントの場合は、以前のバージョンを現在のバージョンと比較できます。
+
+以前のバージョンを現在のバージョンと比較するには：
+
+1. バージョンの横にある 3 つのドットのアイコンを選択します。
+
+1. を選択 **を比較**.
+
+![コンテンツフラグメントエディター – バージョン履歴比較](assets/cf-authoring-version-history-compare.png)
+
+これにより、コンテンツの現在のバージョンとコンテンツフラグメントの選択された以前のバージョンとの違いを表示するビューが開きます。 から **変更のあるバリエーション** ドロップダウンで、「メインコンテンツ」や「バリエーションのコンテンツ」との違いを確認できます。
+
+違いは色で示されます。
+
+* 緑：（現在のバージョンに）コンテンツが追加されたことを示します
+* 赤：削除されたコンテンツ（現在のバージョンから）を示します
+
+![コンテンツフラグメントエディター – バージョン履歴比較バージョン](assets/cf-authoring-version-history-compare-versions.png)
 
 ### 特定のバージョンに戻す {#revert-version}
 
