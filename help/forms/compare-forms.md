@@ -3,16 +3,14 @@ title: 2 つの異なるアダプティブフォームの比較
 description: フィールド、コンテンツ、フォームコンポーネントに基づいて、2 つの異なるフォームを比較します。
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
-hidefromtoc: true
-exl-id: ce4ad231-a766-4ab0-8649-20cf16bf54ce
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 9%
 
 ---
 
-## アダプティブFormsの比較 {#compare-two-forms}
+# アダプティブFormsの比較 {#compare-two-forms}
 
 <span class="preview"> これはプレリリース機能で、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja?cloud-environments). </span>
 

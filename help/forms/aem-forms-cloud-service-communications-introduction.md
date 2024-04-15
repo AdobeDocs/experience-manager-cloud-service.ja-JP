@@ -2,13 +2,12 @@
 title: Forms as a Cloud Service 通信 API とは
 description: 通信 API を使用して、ドキュメントの署名、認証、保護、PDF 生成プロセスの自動化、PDFドキュメントの別の形式への変換を行います。
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
-exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
 workflow-type: tm+mt
-source-wordcount: '1964'
-ht-degree: 72%
+source-wordcount: '1982'
+ht-degree: 73%
 
 ---
 
@@ -193,10 +192,12 @@ Signature API と Encryption API は両方とも [同期 API](#types-of-communic
 
 ### Reader Extension サービス
 
-<span class="preview"> Reader拡張サービスは、早期導入プログラムの対象です。 次に書き込むことができます。 `aem-forms-ea@adobe.com` 公式メール id から早期導入プログラムに参加し、機能へのアクセスをリクエストします。 </span>
+<span class="preview"> Reader拡張サービスは、早期導入プログラムの対象です。 公式メール ID からaem-forms-ea@adobe.comに書き込んで、早期導入プログラムに参加し、機能へのアクセスをリクエストできます。 </span>
 
-Reader拡張機能サービスを使用すると、使用権限を追加してAdobe Readerの機能を拡張することで、組織内でインタラクティブなPDFドキュメントを簡単に共有できます。 Reader拡張機能サービスは、Adobe Readerで動作します。 このサービスは、使用権限を PDF ドキュメントに追加します。このアクションにより、ドキュメントへのコメントの追加、フォームへの入力、ドキュメントの保存など、Adobe Readerを使用してPDFドキュメントを開いた場合には通常使用できない機能が有効になります。
+Reader拡張機能サービスを使用すると、使用権限を追加してAdobe Readerの機能を拡張することで、組織内でインタラクティブなPDFドキュメントを簡単に共有できます。 Reader Extensions サービスは、Adobe Reader 7.0 以降で使用できます。このサービスは、使用権限を PDF ドキュメントに追加します。このアクションにより、ドキュメントへのコメントの追加、フォームへの入力、ドキュメントの保存など、Adobe Readerを使用してPDFドキュメントを開いた場合には通常使用できない機能が有効になります。
 
+>[!NOTE]
+>サードパーティユーザーは、使用権限を付与されたドキュメントを扱うためにソフトウェアまたはプラグインを追加する必要はありません。
 
 PDF ドキュメントに適切な使用権限が追加されている場合、受信者は Adobe Reader 内で次の作業を行うことができます。
 
@@ -242,7 +243,7 @@ Reader拡張サービスの様々な使用権限の機能は次のとおりで�
 * **メッセージ**:1 つ以上の使用権限が適用されたPDFドキュメントを開いたときにAdobe Acrobat Reader内に表示されるメッセージ。
 * **パスワードのロック解除**：暗号化されたPDFドキュメントを開くために必要なパスワード。 通常、これはドキュメントを開くパスワードですが、PDFドキュメントが権限パスワードでさらに保護されている場合は、いずれかを使用して開くことができます。
 
-API から提供されるすべてのパラメーター、認証方法および各種サービスの詳細については、[API リファレンスドキュメント](https://adobe-aem-document-experimental.redoc.ly/)を参照してください。API リファレンスドキュメントは、.yaml 形式でも入手できます。.yaml をダウンロードし、postman にアップロードして API の機能を確認できます。
+API から提供されるすべてのパラメーター、認証方法および各種サービスの詳細については、[API リファレンスドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)を参照してください。API リファレンスドキュメントは、.yaml 形式でも入手できます。.yaml をダウンロードし、postman にアップロードして API の機能を確認できます。
 
 ## 通信 API のタイプ {#types}
 
