@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 3ed500d0c7a9a445e3417043da3d52632760ccdb
 workflow-type: tm+mt
-source-wordcount: '3108'
+source-wordcount: '3104'
 ht-degree: 4%
 
 ---
@@ -72,59 +72,61 @@ JavaScript アノテーションは、JavaScript コードのメタデータを�
    * 日付[]：日付値の配列を表します。
    * 配列：様々なタイプの値を含む汎用の配列を表します。
    * オブジェクト：値を直接渡す代わりに、カスタム関数に渡されるフォームオブジェクトを表します。
-   * scope：実行時にカスタム関数で使用されるグローバルオブジェクトを表します。 これは JavaScript 注釈の最後のパラメーターとして宣言され、アダプティブフォームのルールエディターには表示されません。 scope パラメーターは、フォームまたはコンポーネントのオブジェクトにアクセスして、フォームの処理に必要なルールまたはイベントをトリガーします。
+   * scope: globals オブジェクトを表します。このオブジェクトには、フォームインスタンス、ターゲットフィールドインスタンス、カスタム関数内でフォームの変更を実行するためのメソッドなどの読み取り専用変数が含まれています。 これは JavaScript 注釈の最後のパラメーターとして宣言され、アダプティブフォームのルールエディターには表示されません。 scope パラメーターは、フォームまたはコンポーネントのオブジェクトにアクセスして、フォームの処理に必要なルールまたはイベントをトリガーします。 Globals オブジェクトの詳細と使用方法については、を参照してください。 [ここをクリック](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
 
-    パラメータータイプでは大文字と小文字が区別されず、パラメーター名にはスペースを使用できません。
-    
-    &#39;&lt;parameter description=&quot;&quot;>「」には、パラメーターの目的に関する詳細が含まれます。 複数の単語を含めることができます。
-    
-    デフォルトでは、すべてのパラメーターが必須です。 パラメータータイプの後に「=」を追加するか、「[]」にパラメーター名を含めることで、パラメーターをオプションとして定義できます。 JavaScript 注釈でオプションとして定義されたパラメーターは、ルールエディターでオプションとして表示されます。
-    変数をオプションのパラメーターとして定義するには、次の構文のいずれかを使用できます。
-    
-    * &#39;@param {type=} Input1&#39;
-    
-    上記のコード行では、「Input1」はオプションのパラメーターで、デフォルト値はありません。 デフォルト値を使用してオプションのパラメーターを宣言するには：
-    &#39;@param {string=&lt;value>} input1&#39;
-    
-    デフォルト値が「value」に設定されたオプションパラメーターとして「input1」を使用します。
-    
-    * &#39;@param {type} [ 入力 1]&#39;
-    
-    上記のコード行では、「Input1」はオプションのパラメーターで、デフォルト値はありません。 デフォルト値を使用してオプションのパラメーターを宣言するには：
-    &#39;@param {array} [ 入力 1=&lt;value>]&#39;
-    「input1」は、デフォルト値を「value」に設定した配列型のオプションのパラメーターです。
-    パラメータータイプが中括弧で囲まれていることを確認します {} また、パラメータ名は角括弧 [] で囲まれています。
-    
-    次のコードスニペットについて考えてみます。input2 はオプションのパラメーターとして定義されています。
-    
-    ```javascript
-    
-    /**
-    * オプションのパラメーター関数
-    * @name OptionalParameterFunction
-    * @param {string} input1
-    * @param {string=} 入力 2
-    * @return {string}
-    */
-    関数 OptionalParameterFunction （input1, input2） {
-    result = &quot;Result: &quot;;
-    input1+=結果。
-    if （input2 !== null） {
-    結果+=「」 +入力 2;
-    }
-    結果を返します。
-    }
-    ``
-    
-    次の図は、ルールエディターで「OptionalParameterFunction」カスタム関数を使用した例を示しています。
-    
-    &lt;!>— ![ オプションまたは必須のパラメーター ] （/help/forms/assets/optional-default-params.png） —>
-    
-    必須パラメーターの値を指定せずにルールを保存できますが、ルールは実行されず、次のような警告メッセージが表示されます。
-    
-    &lt;!>— ![ 不完全なルールの警告 ] （/help/forms/assets/incomplete-rule.png） —>
-    
-    ユーザーがオプションパラメーターを空のままにすると、「未定義」の値がオプションパラメーターのカスタム関数に渡されます。
+パラメータータイプでは大文字と小文字が区別されず、パラメーター名にはスペースを使用できません。
+
+`<Parameter Description>` パラメーターの目的に関する詳細が含まれます。 複数の単語を含めることができます。
+
+**オプションのパラメーター**
+デフォルトでは、すべてのパラメーターが必須です。 次のいずれかを追加して、パラメーターをオプションとして定義できます `=` パラメーターの後にまたはを含むパラメーター名  `[]`. JavaScript 注釈でオプションとして定義されたパラメーターは、ルールエディターでオプションとして表示されます。
+変数をオプションのパラメーターとして定義するには、次の構文のいずれかを使用できます。
+
+* `@param {type=} Input1`
+
+上記のコード行では、 `Input1` は、デフォルト値を持たないオプションのパラメーターです。 デフォルト値を使用してオプションのパラメーターを宣言するには：
+`@param {string=<value>} input1`
+
+`input1` デフォルト値がに設定されたオプションパラメーターとして `value`.
+
+* `@param {type} [Input1]`
+
+上記のコード行では、 `Input1` は、デフォルト値を持たないオプションのパラメーターです。 デフォルト値を使用してオプションのパラメーターを宣言するには：
+`@param {array} [input1=<value>]`
+`input1` は、デフォルト値がに設定された配列型のオプションのパラメーターです `value`.
+パラメータータイプが中括弧で囲まれていることを確認します {} また、パラメーター名は角括弧で囲まれています [].
+
+次のコードスニペットについて考えてみます。input2 はオプションのパラメーターとして定義されています。
+
+```javascript
+        /**
+         * optional parameter function
+         * @name OptionalParameterFunction
+         * @param {string} input1 
+         * @param {string=} input2 
+         * @return {string}
+        */
+        function OptionalParameterFunction(input1, input2) {
+        let result = "Result: ";
+        result += input1;
+        if (input2 !== null) {
+            result += " " + input2;
+        }
+        return result;
+        }
+```
+
+次の図は、を使用した場合を示しています `OptionalParameterFunction` ルールエディターのカスタム関数：
+
+![オプションまたは必須のパラメーター ](/help/forms/assets/optional-default-params.png)
+
+必須パラメーターの値を指定せずにルールを保存できますが、ルールは実行されず、次のような警告メッセージが表示されます。
+
+![不完全なルールの警告](/help/forms/assets/incomplete-rule.png)
+
+ユーザーがオプションパラメーターを空のままにすると、「未定義」の値がオプションパラメーターのカスタム関数に渡されます。
+
+JSDocs でオプションのパラメータを定義する方法の詳細については、 [ここをクリック](https://jsdoc.app/tags-param).
 
 #### 戻り値タイプ
 
@@ -150,7 +152,6 @@ JavaScript アノテーションは、JavaScript コードのメタデータを�
 
 プライベートとして宣言されたカスタム関数は、アダプティブフォームのルールエディターのカスタム関数のリストには表示されません。 デフォルトでは、カスタム関数はパブリックです。 カスタム関数をプライベートとして宣言する構文を以下に示します。 `@private`.
 
-JSDocs でオプションのパラメータを定義する方法の詳細については、 [ここをクリック](https://jsdoc.app/tags-param).
 
 ## カスタム関数の作成時のガイドライン {#considerations}
 
@@ -190,6 +191,8 @@ JSDocs でオプションのパラメータを定義する方法の詳細につ�
     
 ```
 
+ユーザーがカスタム関数に JavaScript 注釈を追加しない場合、カスタム関数はアダプティブフォームのルールエディターに表示されません。
+
 * **必須の JavaScript 注釈またはコメントを含む関数式**
 
 アダプティブフォームのルールエディターにカスタム関数をリストするには、次の形式でカスタム関数を作成します。
@@ -207,6 +210,8 @@ JSDocs でオプションのパラメータを定義する方法の詳細につ�
             // code to be executed
         }
 ```
+
+ユーザーがカスタム関数に JavaScript 注釈を追加しない場合、カスタム関数はアダプティブフォームのルールエディターに表示されません。
 
 ## カスタム関数の作成 {#create-custom-function}
 
@@ -365,30 +370,33 @@ JSDocs でオプションのパラメータを定義する方法の詳細につ�
 
 ### カスタム関数のフィールド オブジェクトとグローバル スコープ オブジェクト {#support-field-and-global-objects}
 
-フィールドオブジェクトとは、テキストフィールド、チェックボックスなど、フォーム内の個々のコンポーネントまたは要素を指します。 グローバルスコープオブジェクトとは、フォーム全体でアクセス可能なグローバル変数または設定を指します。 次のコードスニペットを見てみましょう。
+フィールドオブジェクトとは、テキストフィールド、チェックボックスなど、フォーム内の個々のコンポーネントまたは要素を指します。 Globals オブジェクトには、フォームインスタンス、ターゲットフィールドインスタンス、カスタム関数内でフォームの変更を実行するメソッドなどの読み取り専用変数が含まれています。
+
+>[!NOTE]
+>
+> この `param {scope} globals` が最後のパラメーターである必要があり、アダプティブフォームのルールエディターに表示されません。
+
+<!-- Let us look at the following code snippet:
 
 ```JavaScript
+   
     /**
     * updateDateTime
     * @name updateDateTime
     * @param {object} field
-    * @param {scope} globals 
+    * @param {scope} globals
     */
     function updateDateTime(field, globals) {
     // Accessing the Date object from the global scope
     var currentDate = new Date();
     // Formatting the date and time
     var formattedDateTime = currentDate.toLocaleString();
-    // Updating the field value with the formatted date and time
-    field.value = formattedDateTime;
+    // Updating the field value with the formatted date and time using setProperty.
+    globals.functions.setProperty(field, {value: formattedDateTime});
     }
 ```
 
->[!NOTE]
->
-> この `param {scope} globals` が最後のパラメーターである必要があり、アダプティブフォームのルールエディターに表示されません。
-
-上記のコードスニペットでは、という名前のカスタム関数 `updateDateTime` フィールドオブジェクトやグローバルオブジェクトなどのパラメーターを受け取ります。 日付および時刻オブジェクトには、グローバルスコープを使用してアクセスします。 フィールドは、書式設定された日付と時刻の値がフォーム内に表示される textbox オブジェクトを表します。
+In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
 
 カスタム関数でフィールドおよびグローバルオブジェクトを使用する方法を、 `Contact Us` 異なるユースケースを使用したフォーム
 
@@ -419,7 +427,8 @@ JSDocs でオプションのパラメータを定義する方法の詳細につ�
 
 >[!NOTE]
 >
-> にある使用可能なプロパティを使用して、フィールドのプロパティを設定できます。 `[form-path]/jcr:content/guideContainer.model.json`.
+> * にある使用可能なプロパティを使用して、フィールドのプロパティを設定できます。 `[form-path]/jcr:content/guideContainer.model.json`.
+> * を使用してフォームに加えた変更 `setProperty` globals オブジェクトのメソッドは、本質的に非同期であり、カスタム関数の実行中には反映されません。
 
 この例では、 `personaldetails` パネルは、ボタンをクリックすると発生します。 パネルでエラーが検出されなかった場合、別のパネルでは、 `feedback` ボタンをクリックするとパネルが表示されます。
 
@@ -554,7 +563,7 @@ JSDocs でオプションのパラメータを定義する方法の詳細につ�
 `globals.functions.submitForm(globals.functions.exportData(), false);` を使用して、操作後にフォームデータを送信します。
 * 最初の引数は、送信するデータです。
 * 2 番目の引数は、送信前にフォームを検証するかどうかを表します。 このプロパティは `optional` およびをに設定しました `true` デフォルトでは。
-* 3 番目の引数は `contentType` （送信の場合） `optional` デフォルト値はです。 `multipart/form-data`.
+* 3 番目の引数は `contentType` 送信の（デフォルト値を使用する場合もオプション） `multipart/form-data`. その他の値は以下のとおりです。 `application/json` および `application/x-www-form-urlencoded`.
 
 の説明に従って、カスタム関数に次のコードを追加します。 [create-custom-function](#create-custom-function) セクションで、サーバーで操作されたデータを送信するには：
 
@@ -565,7 +574,6 @@ JSDocs でオプションのパラメータを定義する方法の詳細につ�
     * @param {object} field
     * @param {scope} globals 
     */
-
     function submitData(globals)
     {
     
