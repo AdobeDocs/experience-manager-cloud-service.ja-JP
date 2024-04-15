@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 593a2b2930093d29a22f6c1ff391c11db9bda7dc
+source-git-commit: 9582cd8c7777544fde5d13fcd79cfec318e3f780
 workflow-type: tm+mt
 source-wordcount: '3104'
 ht-degree: 4%
@@ -50,8 +50,7 @@ JavaScript アノテーションは、JavaScript コードのメタデータを�
 * `@func [functionName] <Function Name>`。
   `functionName` は、関数の名前です。 スペースは使用できません。
   `<Function Name>` は、アダプティブフォームのルールエディターにある関数の表示名です。
-関数名が関数自体の名前と同じ場合は、を省略できます `[functionName]` 構文から変更します。 <!-- For example,  in the `calculateAge` custom function, the name is defined as:
-`* @name calculateAge` -->
+関数名が関数自体の名前と同じ場合は、を省略できます `[functionName]` 構文から変更します。
 
 #### パラメーター
 
