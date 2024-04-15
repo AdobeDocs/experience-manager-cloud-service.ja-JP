@@ -4,10 +4,10 @@ description: ' [!DNL Assets view] 内のアセットを移動、削除、コピ�
 role: User,Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
-source-wordcount: '1024'
-ht-degree: 100%
+source-git-commit: e2a0e93a4ff01d9a180fcf1ad097ccbfb354fc0f
+workflow-type: tm+mt
+source-wordcount: '1062'
+ht-degree: 95%
 
 ---
 
@@ -28,7 +28,8 @@ ht-degree: 100%
 * ![チェックアウトアイコン](assets/do-not-localize/checkout-icon.png) 選択したアセットをチェックアウトします。
 * ![コピーアイコン](assets/do-not-localize/copy-icon.png) 選択したファイルまたはフォルダーをコピーします。
 * ![移動アイコン](assets/do-not-localize/move-icon.png) 選択したアセットまたはフォルダーをリポジトリ階層内の別の場所に移動します。
-* ![名前変更アイコン](assets/do-not-localize/rename-icon.png) 選択したアセットまたはフォルダーの名前を変更します。一意の名前を使用しないと、名前を変更しても警告が表示されて失敗します。その場合は、新しい名前でもう一度やり直すことができます。
+* ![名前変更アイコン](assets/do-not-localize/rename-icon.png) 選択したアセットまたはフォルダーの名前を変更します。一意の名前を使用しないと、名前を変更しても警告が表示されて失敗します。新しい名前でもう一度試すことができます。
+さらに、アセットまたはフォルダーのタイトルをクリックして名前を変更することもできます。 で新しいテキストに言及します **アセット名の変更** テキストボックスでクリック **保存**. この機能は、グリッド表示、ギャラリー表示、ウォーターフォール表示、リスト表示で使用できます。 <!--in-place rename-->
 * ![タスクを割り当てアイコン](assets/do-not-localize/review-delegate-icon.png) 他のユーザーにタスクを割り当てて、アセットに関する作業を共同で行えるようにします。
 
 アセットのサムネールにも同じオプションが表示されます。
