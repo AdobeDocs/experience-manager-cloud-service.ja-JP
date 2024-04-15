@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: bc040f29a8912c5901ddb71bd32ee2d2a97d3eec
+source-git-commit: ee6072b3fc6786905a6610081acb22c708f1eae4
 workflow-type: tm+mt
 source-wordcount: '3104'
 ht-degree: 4%
@@ -155,7 +155,7 @@ JSDocs でオプションのパラメータを定義する方法の詳細につ�
 
 ルールエディターにカスタム関数を一覧表示するには、次のいずれかの形式を使用できます。
 
-### **Jsdoc コメント付きまたは付きでない Function ステートメント**
+### Jsdoc コメント付きまたは付きでない Function ステートメント
 
 カスタム関数を作成する際に、jsdoc コメントを含めることも、含めないこともできます。
 
@@ -167,7 +167,7 @@ JSDocs でオプションのパラメータを定義する方法の詳細につ�
 ```
 ユーザーがカスタム関数に JavaScript 注釈を追加しない場合は、ルールエディターの関数名で表示されます。 ただし、カスタム関数を読みやすくするために、JavaScript 注釈を含めることをお勧めします。
 
-### **必須の JavaScript 注釈またはコメントを含む矢印関数**
+### 必須の JavaScript 注釈またはコメントを含む矢印関数
 
 矢印関数の構文を使用して、カスタム関数を作成できます。
 
@@ -191,7 +191,7 @@ JSDocs でオプションのパラメータを定義する方法の詳細につ�
 
 ユーザーがカスタム関数に JavaScript 注釈を追加しない場合、カスタム関数はアダプティブフォームのルールエディターに表示されません。
 
-### **必須の JavaScript 注釈またはコメントを含む関数式**
+### 必須の JavaScript 注釈またはコメントを含む関数式
 
 アダプティブフォームのルールエディターにカスタム関数をリストするには、次の形式でカスタム関数を作成します。
 
