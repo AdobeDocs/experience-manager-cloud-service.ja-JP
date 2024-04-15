@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 3ed500d0c7a9a445e3417043da3d52632760ccdb
+source-git-commit: 593a2b2930093d29a22f6c1ff391c11db9bda7dc
 workflow-type: tm+mt
 source-wordcount: '3104'
 ht-degree: 4%
@@ -30,7 +30,6 @@ AEM Formsでは、複雑なビジネスルールを実装するための JavaScr
 ### カスタム関数の使用 {#uses-of-custom-function}
 
 アダプティブFormsでカスタム関数を使用するメリットは次のとおりです。
-
 * **データの処理**：カスタム関数は、フォームフィールドに入力されたデータの処理に役立ちます。
 * **データの検証**：カスタム関数を使用すると、フォームの入力に対してカスタムチェックを実行し、指定したエラーメッセージを提供できます。
 * **動的動作**：カスタム関数を使用すると、特定の条件に基づいてフォームの動的な動作を制御できます。 例えば、フィールドの表示/非表示、フィールド値の変更、フォームロジックの調整を動的に行うことができます。
