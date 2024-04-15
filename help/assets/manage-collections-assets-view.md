@@ -2,10 +2,10 @@
 title: コレクションを管理
 description: コレクションとは、Experience Manager Assets ビュー内の一連のアセットのことです。コレクションを使用して、ユーザー間でアセットを共有します。
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
-source-wordcount: '789'
-ht-degree: 100%
+source-git-commit: 24c92e3a8ea20696cd39a5070f161d45d09d6f69
+workflow-type: tm+mt
+source-wordcount: '919'
+ht-degree: 86%
 
 ---
 
@@ -47,6 +47,8 @@ You can share collections with various users that are assigned different levels 
 * [コレクションのダウンロード](#download-collection)
 
 * [コレクションの削除](#delete-collection)
+
+* [非公開コレクションに対する権限の管理](#manage-permissions-to-a-private-collection)
 
 ## コレクションの作成 {#create-collection}
 
@@ -185,6 +187,18 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 1. 削除するコレクションを選択します。
 
 1. 「**[!UICONTROL 削除]**」をクリックします。
+
+## 非公開コレクションの権限の管理{#manage-permissions-private-collection}
+
+管理者に対し、の管理を許可できます。 [アクセスレベル](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) （リポジトリで使用できる非公開コレクション用）。 次のような権限を割り当てることができます `Can View` および `Can Edit` をユーザー・グループまたはユーザーに送信します。 また、ユーザーグループに権限管理権限をデリゲートすることもできます。 非公開コレクションを作成するユーザーは、それらのコレクションの所有者です。 このコンソールは [!UICONTROL 権限の管理] 他のユーザーにアクセス権を付与するアクション。 また、管理者は以下でプライベートコレクションの権限を表示および管理することができます。 [!DNL Experience Manager] リポジトリ。
+
+>[!NOTE]
+>
+>ユーザーに権限を割り当てることはお勧めしません。
+
+使用可能な権限をユーザーグループに割り当てる方法については、を参照してください。 [ユーザーグループへの権限の追加](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+
+エンドツーエンドのワークフローについて詳しくは、を参照してください。 [権限の管理](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## 次の手順 {#next-steps}
 
