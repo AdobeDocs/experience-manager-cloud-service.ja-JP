@@ -4,9 +4,9 @@ description: ' [!DNL Assets view] 内のアセットを移動、削除、コピ�
 role: User,Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
-source-git-commit: f7d3e356e4e43d5838a6319f5ead750c149a9b3b
+source-git-commit: 3912f52112b3d9dcb568e477c33d3f4b28064b66
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1177'
 ht-degree: 95%
 
 ---
@@ -22,15 +22,39 @@ ht-degree: 95%
 *図：選択した画像に対してツールバーで使用できるオプション*
 
 * ![選択解除アイコン](assets/do-not-localize/close-icon.png) 選択を解除します。
+
+* ![類似検索アイコン](assets/do-not-localize/find-similar.svg) Assets UI で、メタデータとスマートタグに基づいて類似の画像アセットを検索します。
+
 * ![詳細アイコン](assets/do-not-localize/edit-in-icon.png) アセットをプレビューし、詳細なメタデータを表示します。プレビュー時に、バージョンを表示して画像を編集できます。
+
 * ![ダウンロードアイコン](assets/do-not-localize/download-icon.png) 選択したアセットをローカルファイルシステムにダウンロードします。
+
+* ![コレクションを追加アイコン](assets/do-not-localize/add-collection.svg) 選択したアセットをコレクションに追加します。
+
+* ![アセットをピン留めアイコン](assets/do-not-localize/pin-quick-access.svg) アセットをピン留めすると、後で必要になった際に、すばやくアクセスできるようになります。ピン留めしたすべての項目は、マイワークスペースの「**クイックアクセス**」セクションに表示されます。
+
+* ![Express で編集アイコン](assets/do-not-localize/edit-e.svg) Adobe Experience Manager Assets 内に統合された Adobe Express で画像を編集します。
+
+* ![アセットを編集アイコン](assets/do-not-localize/edit-e.svg) Adobe Express を使用して画像を編集します。
+
+* ![アセットのリンクを共有アイコン](assets/do-not-localize/share-link.svg) 他のユーザーとアセットのリンクを共有して、アセットにアクセスしてダウンロードできるようにします。
+
 * ![削除アイコン](assets/do-not-localize/delete-icon.png) 選択したアセットまたはフォルダーを削除します。
-* ![チェックアウトアイコン](assets/do-not-localize/checkout-icon.png) 選択したアセットをチェックアウトします。
+
 * ![コピーアイコン](assets/do-not-localize/copy-icon.png) 選択したファイルまたはフォルダーをコピーします。
+
 * ![移動アイコン](assets/do-not-localize/move-icon.png) 選択したアセットまたはフォルダーをリポジトリ階層内の別の場所に移動します。
+
 * ![名前変更アイコン](assets/do-not-localize/rename-icon.png) 選択したアセットまたはフォルダーの名前を変更します。一意の名前を使用しないと、名前を変更しても警告が表示されて失敗します。新しい名前でもう一度試すことができます。
-さらに、アセットまたはフォルダーのタイトルをクリックして名前を変更することもできます。 で新しいテキストに言及します **アセット名の変更** テキストボックスでクリック **保存**. この機能は、グリッド表示、ギャラリー表示、ウォーターフォール表示、リスト表示で使用できます。 <!--in-place rename-->
+さらに、アセットまたはフォルダーのタイトルをクリックして名前を変更することもできます。 で新しいテキストに言及します **アセット名の変更** テキストボックスでクリック **保存**. この機能は、グリッド表示、ギャラリー表示、ウォーターフォール表示、リスト表示で使用できます。
+
+* ![ウォーターフォール表示アイコン](assets/do-not-localize/waterfall-view.png) [!UICONTROL ウォーターフォール表示].
+
+* ![ライブラリをコピーアイコン](assets/do-not-localize/copy-icon.png) アセットをライブラリに追加します。
+
 * ![タスクを割り当てアイコン](assets/do-not-localize/review-delegate-icon.png) 他のユーザーにタスクを割り当てて、アセットに関する作業を共同で行えるようにします。
+
+* ![タスクを割り当てアイコン](assets/do-not-localize/watch-asset.svg) アセットに対して実行される操作を監視します。
 
 アセットのサムネールにも同じオプションが表示されます。
 
