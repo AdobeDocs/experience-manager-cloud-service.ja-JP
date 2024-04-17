@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 5e216e45a1400299efcc418007ddbe93f0c571a1
+source-git-commit: 36fefbf74a288d60a9529f0c7273dd6b0557177b
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '424'
 ht-degree: 39%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 39%
 * GRANITE-49638:RUM トランスファーファクトリの間違ったコンテンツタイプ設定を修正します。
 * GRANITE-50141:IMSProviderImpl がログをスパム化している。
 * SITES-20949:Youtube に referrerpolicy=&quot;strict-origin-when-cross-origin&quot;が追加された後、ComponentsIT.testEmbed が失敗する。
-* SITES-21233：コアコンポーネントの更新 – 15860 へのアップグレード後に、GS1 US のアコーディオンを修正しました。
+* SITES-21233：コアコンポーネントの更新 – 15860 へのアップグレード後にアコーディオンを修正。
 * SKYOPS-74819:Apache Commons の重複したキーに対する後方互換性が損なわれました。
 * SKYOPS-67087：特定のケースで Clientlib の集計が機能しない。
 * CQ-4355415:6.5 SP18 でAEM通知のリンクが機能しない。
