@@ -1,21 +1,21 @@
 ---
-title: AEMでのEdge Delivery Servicesの使用
-description: AEM as a Cloud Service を Edge 配信サービスで使用する方法について説明します。
+title: AEM での Edge Delivery Services の使用
+description: AEM as a Cloud Service を Edge Delivery Services と併用する方法について説明します。
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 source-git-commit: e98ddd8169ffbd407fdd4ff713bda57f693abaf9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '389'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 
-# AEMでのEdge Delivery Servicesの使用 {#using-edge}
+# AEM での Edge Delivery Services の使用 {#using-edge}
 
-Edge Delivery Servicesはコンテンツソースから切り離され、様々なコンテンツソースからコンテンツを取り込むことができます。 つまり、選択したソースに関係なく、シームレスで合理化された公開で、同じ web サイト上で複数のコンテンツソースを操作できます。
+Edge Delivery Services はコンテンツソースから切り離されており、様々なコンテンツソースからコンテンツを取り込むことができます。つまり、選択したソースに関係なく、同じ web サイト上で複数のコンテンツソースをシームレスかつ効率的に公開できるようになります。
 
-Edge Delivery Servicesを使用すると、作成者がコンテンツをすばやく更新して公開したり、新しいサイトをすばやく開始したりできる、迅速な開発環境を構築できます。 編集からインターネット上でのコンテンツのライブ表示まで、数秒で完了します。
+Edge Delivery Services を使用すると、作成者がコンテンツをすばやく更新して公開したり、新しいサイトを迅速に立ち上げたりできる、迅速な開発環境を作成できます。編集したコンテンツを、ほんの数秒でインターネット上に表示できます。
 
 ![Edge 配信のコンテンツソース](assets/content-sources.png)
 
@@ -23,13 +23,13 @@ Edge Delivery Servicesを使用すると、作成者がコンテンツをすば�
 
 コンテンツソースが事前定義されている場合や、柔軟性がない場合があります（例: プロジェクトで Sharepoint や Google ドライブを使用できない）。ただし、多くの場合、ツールは事前に定められておらず、ツールの選択に明確な区別はありません。
 
-アドビの指針はシンプルさです。ドキュメントベースのオーサリングから始めて、必要に応じて複雑さを増やす ツールの変更が必要な場合は、AEM の Edge 配信サービスの統合によってコンテンツの移行がカバーされます。
+アドビの指針はシンプルさです。ドキュメントベースのオーサリングから開始し、必要に応じて複雑さを高めます。ツールの変更が必要な場合は、AEM の Edge 配信サービスの統合によってコンテンツの移行がカバーされます。
 
 ![コンテンツソースの柔軟性](assets/content-source-flexiblity.png)
 
 ## オーサリング {#authoring-edge}
 
-Edge 配信サービスを使用すると、オーサリングが簡単、迅速、柔軟に行えます。ドキュメントベースのオーサリングを使用してオーサリングすることも、ユニバーサルエディターを使用したAEM ベースのオーサリングを使用してオーサリングすることもできます。
+Edge 配信サービスを使用すると、オーサリングが簡単、迅速、柔軟に行えます。ドキュメントベースのオーサリングを使用してオーサリングを行うか、ユニバーサルエディターを使用して AEM ベースのオーサリングを行うかを選択できます。
 
 詳しくは、[Edge 配信サービス向けのコンテンツのオーサリング](/help/edge/aem-authoring/authoring.md)を参照してください。
 

@@ -4,9 +4,9 @@ description: AEM as a Cloud Service の Cloud Manager 2024.4.0 のリリース�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: f1d8778f3cfb6868740141d008fd0217839e9103
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '706'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -21,16 +21,16 @@ ht-degree: 78%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Serviceの Cloud Manager リリース 2024.4.0 のリリース日は 2024 年 4 月 10 日（PT）です。 次回のリリースは 2024 年 5 月 9 日（PT）に予定されています。
+AEM as a Cloud Service の Cloud Manager リリース 2024.4.0 のリリース日は 2024年4月10日（PT）です。次回のリリースは 2024年5月9日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* 削除操作が改善されました。 [エッジ配信](/help/edge/overview.md) そのサイトに関連するプログラムからドメインマッピングを更新することで、web サイトを管理する。
-   * マッピングされるサイトがこれ以上ない場合、マッピングは削除されます。
-* デプロイメントトラッキングが強化され、AEM インスタンスの重要な起動フェーズでリアルタイムのステータス更新が可能になりました。
+* [Edge Delivery](/help/edge/overview.md) web サイトの削除操作は、そのサイトに関連するプログラムからドメインマッピングを更新することで改善されました。
+   * マッピングされる Sites がこれ以上ない場合、マッピングは削除されます。
+* AEM インスタンスの重要な起動フェーズ中にリアルタイムのステータス更新を提供することで、デプロイメントのトラッキングが強化されました。
    * この機能により、デプロイメントの進行状況を完全に把握できるので、意思決定と運用効率が向上します。
-* この [ネットワークインフラストラクチャ](/help/security/configuring-advanced-networking.md) リスト機能が強化され、地域ベースのフィルタリングを使用せずに接続されたすべての環境を表示できるようになり、より包括的な表示が提供されるようになりました。
-* コード構築の問題に関するエラーメッセージが強化され、根本原因と次に実行可能な手順の特定が容易になりました。
+* [ネットワークインフラストラクチャ](/help/security/configuring-advanced-networking.md)リストが強化され、地域ベースのフィルタリングを行わずに接続されたすべての環境を表示し、より包括的な表示を提供できるようになりました。
+* コード構築の問題に関するエラーメッセージが強化され、根本的な原因と次に実行可能な手順の特定が容易になりました。
 
 ## 早期導入プログラム {#early-adoption}
 

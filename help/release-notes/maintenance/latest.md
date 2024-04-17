@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメン�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 1dd2eae9201c86d2cdac78ff99634eff8ca57a05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '272'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 94%
 
 ### 修正された問題 {#fixed-issues-15860}
 
-* ローンチが削除または移動されたページを参照する場合にローンチコンソールを表示する際の問題を修正しました。
+* ローンチが削除または移動されたページを参照する場合の、ローンチコンソールを表示する際のリグレッションを修正しました。
 
 ### 既知の問題 {#known-issues-15860}
 
