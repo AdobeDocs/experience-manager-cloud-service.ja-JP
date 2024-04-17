@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.6.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.6.0 リリースのリリースノート。'
 exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: ht
-source-wordcount: '1357'
+source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
+workflow-type: tm+mt
+source-wordcount: '1322'
 ht-degree: 100%
 
 ---
@@ -65,12 +65,6 @@ Experience Manager Assets では、検索結果のユーザーインターフェ
 **3D アセットのサムネールプレビュー**
 
 [!DNL Experience Manager Assets] では、gLB、USDz、FBX、3DS、OBJ、SBSAR など、[一般的な 3D ファイル形式のサムネールプレビュー](/help/assets/file-format-support.md)を生成するようになりました。これらのファイルをアップロードすると、デフォルトでサムネールが自動的に生成されます。
-
-**リンク共有設定**
-
-[リンク共有の作成](/help/assets/share-assets.md)で新しい改善されたユーザーエクスペリエンスが実現し、さらにユーザーに対するこの機能のデフォルトの動作を管理者がカスタマイズできる、まったく新しい設定セットが追加されました。
-
-![タグ付けの管理](/help/assets/assets/config-email-service.png)
 
 **Dynamic Media：イメージプロファイルのスマート切り抜き関連のフィールドを更新**
 

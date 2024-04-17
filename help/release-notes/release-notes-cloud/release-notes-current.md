@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f3d3bc92eb47bf5008167f660f26dfede2700540
+source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
 workflow-type: tm+mt
-source-wordcount: '2285'
+source-wordcount: '2321'
 ht-degree: 97%
 
 ---
@@ -97,6 +97,12 @@ AEM Assets は Adobe Express とネイティブに統合されているので、
 **サポートされるすべてのビデオタイプのレンディションのプレビュー**
 
 Experience Manager Assets では、処理プロファイル設定を行わなくても、サポートされるすべてのビデオタイプのプレビューレンディションをデフォルトで生成するようになりました。
+
+**リンク共有設定**
+
+[リンク共有の作成](/help/assets/share-assets.md)で新しい改善されたユーザーエクスペリエンスが実現し、さらにユーザーに対するこの機能のデフォルトの動作を管理者がカスタマイズできる、まったく新しい設定セットが追加されました。
+
+![メールサービスを設定](/help/assets/assets/config-email-service.png)
 
 ### アセットビューの新機能 {#assets-view}
 
