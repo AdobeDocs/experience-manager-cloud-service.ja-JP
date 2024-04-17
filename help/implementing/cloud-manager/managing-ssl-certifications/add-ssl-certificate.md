@@ -2,10 +2,10 @@
 title: SSL 証明書の追加
 description: Cloud Manager のセルフサービスツールを使用して独自の SSL 証明書を追加する方法を説明します。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
-workflow-type: ht
-source-wordcount: '557'
-ht-degree: 100%
+source-git-commit: 65aaa732d08cee541153f1b2fb4ea7b44f1f3029
+workflow-type: tm+mt
+source-wordcount: '612'
+ht-degree: 91%
 
 ---
 
@@ -40,6 +40,7 @@ Cloud Manager を使用して証明書を追加するには、次の手順に従
    * 「**証明書名**」に証明書の名前を入力します。
       * これは情報提供だけを目的とし、証明書を簡単に参照するのに役立つ任意の名前を指定できます。
    * **証明書**、**秘密鍵**、**証明書チェーン**&#x200B;の値をそれぞれのフィールドに貼り付けます。3 つのフィールドはすべて必須です。
+   * 場合によっては、エンドユーザー証明書がチェーンに含まれている可能性があり、チェーンをフィールドに貼り付ける前に、チェーンを削除する必要があります。
 
    ![SSL 証明書を追加ダイアログ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -56,6 +57,10 @@ Cloud Manager を使用して証明書を追加するには、次の手順に従
 >[!NOTE]
 >
 >Cloud Manager で SSL 証明書をインストールするには、ユーザーが&#x200B;**ビジネスオーナー**&#x200B;のメンバーまたは&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持っている必要があります。
+
+>[!NOTE]
+>
+>次のようなエラーが表示された場合： `The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.`。クライアント証明書を証明書チェーンに含めた可能性があります。 チェーンにクライアント証明書が含まれていないことを確認し、もう一度試してください。
 
 ## 証明書エラー {#certificate-errors}
 

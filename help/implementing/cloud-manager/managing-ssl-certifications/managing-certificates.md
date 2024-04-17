@@ -2,9 +2,9 @@
 title: SSL 証明書の管理
 description: Cloud Manager を使用して SSL 証明書のステータスを確認する方法と、SSL 証明書を編集、置換、更新および削除する方法について説明します。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 7143ea8d36e26aa1674608ff7bd8ba22e2030b3c
-workflow-type: ht
-source-wordcount: '644'
+source-git-commit: 65aaa732d08cee541153f1b2fb4ea7b44f1f3029
+workflow-type: tm+mt
+source-wordcount: '645'
 ht-degree: 100%
 
 ---
