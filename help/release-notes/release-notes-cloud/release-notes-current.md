@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: f3d3bc92eb47bf5008167f660f26dfede2700540
 workflow-type: tm+mt
 source-wordcount: '2285'
-ht-degree: 34%
+ht-degree: 97%
 
 ---
 
@@ -42,67 +42,67 @@ ht-degree: 34%
 
 ### の新機能[!DNL Experience Manager Sites] {#sites-features}
 
-**Edge Delivery Services向けのAEM オーサリング**
+**Edge Delivery Services 用の AEM オーサリング**
 
-AEM SitesをEdge Delivery Servicesのコンテンツソースとして使用できるようになりました。 作成者は、コンテキスト内 wysiwyg オーサリングを備えた新しいユニバーサルエディターを使用して、AEMで web サイトを管理します。 これにより、企業はEdge Delivery Servicesを使用して高速でパフォーマンスの高い web ページを構築できるだけでなく、コンテンツ管理にAEMの強力な機能を活用できます。
+AEM Sites を Edge Delivery Services のコンテンツソースとして使用できるようになりました。作成者は、コンテキスト依存 wysiwyg オーサリングを備えた新しいユニバーサルエディターを使用して、AEM で web サイトを管理します。これにより、企業は Edge Delivery Services を使用して高速でパフォーマンスの高い web ページを構築できるだけでなく、コンテンツ管理に AEM の強力な機能を活用できます。
 
 ![AEM オーサリング](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-詳しくは、 [詳細を見る](/help/edge/overview.md) およびウォッチ [AEM Gems - AEM オーサリングとEdge Delivery Servicesの概要](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
+詳しくは、[ドキュメント](/help/edge/overview.md)および [AEM Gems - AEM オーサリングと Edge Delivery Services の概要](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)を参照してください。
 
 **ヘッドレス実装用のユニバーサルエディター**
 
-また、ユニバーサルエディターを使用すると、分離された web アプリケーションで、従来のサイト専用のそれと同じ直感的なコンテキスト内 WYSIWYG オーサリングを利用できます。 コンテンツ作成者は、ページ内のコンポーネントと同じ容易さで、コンテンツフラグメントを使用してレイアウトを視覚的に作成できるようになりました。
+また、ユニバーサルエディターを使用すると、分離された web アプリケーションでも、従来の Sites 専用のそれと同じ直感的なコンテキスト依存の WYSIWYG オーサリングを利用できます。コンテンツ作成者は、コンテンツフラグメントを使用して、ページ内のコンポーネントと同じ容易さで、レイアウトを視覚的に作成できるようになりました。
 
-ユニバーサルエディターの最大の特徴は、様々な web アーキテクチャへの適応性、サーバーサイドとクライアントサイドの両方のレンダリングへの対応、フレームワークに依存しない、AEM ホスティングの必要性の排除です。 既存の web アプリケーションとコンテンツ編集用のユニバーサルエディターの統合は簡単です。主に、開発者がマークアップに特定のデータ属性を組み込む必要があります。
+ユニバーサルエディターの最大の特徴は、様々な web アーキテクチャへの適応性、サーバーサイドとクライアントサイドの両方のレンダリングへの対応、フレームワークに依存しない、AEM ホスティングの必要性を排除していることです。既存の web アプリケーションとコンテンツ編集用のユニバーサルエディターの統合は簡単です。主に、開発者が特定のデータ属性をマークアップに組み込む必要があります。
 
-これにより、ユニバーサルエディターは、コンテンツ構造や基盤となるテクノロジースタックに関係なく、一貫した編集エクスペリエンスを保証します。 詳しくは、 [ユニバーサルエディターの概要](/help/implementing/universal-editor/introduction.md).
+これにより、ユニバーサルエディターは、コンテンツ構造や基盤となるテクノロジースタックに関係なく、一貫した編集エクスペリエンスを提供します。詳しくは、[ユニバーサルエディターの概要](/help/implementing/universal-editor/introduction.md)を参照してください。
 
-**コンテンツフラグメントおよびモデルのコンテンツ管理 OpenAPI**
+**コンテンツフラグメントとモデルのコンテンツ管理 OpenAPI**
 
-開発者は、コンテンツフラグメントおよびコンテンツフラグメントモデルをプログラムで操作し、コンテンツ管理の OpenAPI を使用して CruD 操作を実行できるようになりました。 詳しくは、を参照してください [API ドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
+開発者は、コンテンツフラグメントとコンテンツフラグメントモデルをプログラムで操作し、コンテンツ管理 OpenAPI を使用して、CruD 操作を実行できるようになりました。詳しくは、[API のドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)を参照してください
 
 **エクスペリエンスフラグメントのマルチサイト管理のサポート**
 
-マルチサイト管理のサポートがエクスペリエンスフラグメントを保存するフォルダー構造に対して拡張され、ユーザーがエクスペリエンスフラグメントを使用して完全なコンテンツ構造をロールアウトできるようになりました。
+マルチサイト管理のサポートがエクスペリエンスフラグメントを保存するフォルダー構造に対して拡張されたので、ユーザーがエクスペリエンスフラグメントを含む完全なコンテンツ構造をロールアウトできるようになりました。
 
 **コンテンツフラグメントのバージョンの比較**
 
-新しいコンテンツフラグメントエディターでは、コンテンツ作成者がコンテンツフラグメントの現在のバージョンと以前のバージョンの違いを比較および表示できるようになりました。
+新しいコンテンツフラグメントエディターでは、コンテンツ作成者は、コンテンツフラグメントの現在のバージョンと以前のバージョンの違いを比較して表示できるようになりました。
 
 ### 早期導入プログラム {#sites-early-adopter}
 
 **バリエーションを生成**
 
-AEMの新機能による GenAI の活用 [バリエーションを生成](/help/generative-ai/generate-variations.md)、Cloud Serviceからアクセスできるようになりました。 バリエーションを生成は、生成 AI を使用してコンテンツの作成を生成および拡張するのに役立ちます。 プログラムでの検討については、Adobeアカウントチームにお問い合わせください。
+AEM の新機能を通じて GenAI を活用し、[バリエーションを生成](/help/generative-ai/generate-variations.md)し、クラウドサービスでアクセスできるようになりました。バリエーションを生成は、生成 AI を使用してコンテンツの作成を生成し拡張するのに役立ちます。プログラムでの検討については、アドビのアカウントチームにお問い合わせください。
 
-**コンテンツフラグメントコンソールでのアセットの参照**
+**コンテンツフラグメントコンソールでのアセットのブラウジング**
 
-コンテンツ作成者は、コンテンツフラグメントコンソールを離れることなく、画像およびその他のアセットを参照、表示およびアクションを実行できるようになりました。
+コンテンツ作成者は、コンテンツフラグメントコンソールを離れることなく、画像やその他のアセットを参照、表示およびアクションを実行できるようになりました。
 
-![アセットの参照](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
+![アセットブラウジング](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
 
-この機能を試してフィードバックを共有いただける場合公式メール ID からaemcs-headless-adopter@adobe.comにメールを送信して、早期導入プログラムの詳細を確認します。
+この機能を試してフィードバックを共有いただける場合早期導入プログラムの詳細をご案内いたしますので、ご自身の正式なメール ID から aemcs-headless-adopter@adobe.com までご連絡ください。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### 管理ビューの新機能 {#admin-view}
 
-**Adobe Expressとのネイティブ統合**
+**Adobe Express とのネイティブ統合**
 
-AEM Assetsは、Adobe Expressとネイティブに統合されており、AEM Assetsに保存されているアセットにAdobe Expressユーザーインターフェイス内から直接アクセスできます。 AEM Assetsで管理されているコンテンツを Express キャンバスに配置してから、新しいコンテンツや編集したコンテンツをAEM Assets リポジトリに保存することができます。
+AEM Assets は Adobe Express とネイティブに統合されているので、Adobe Express ユーザーインターフェイス内から AEM Assets に保存されているアセットに直接アクセスできます。AEM Assets で管理されているコンテンツを Express キャンバスに配置し、新しいコンテンツや編集したコンテンツを AEM Assets リポジトリに保存できます。
 
 ![Assets アドオンのアセットを含める](/help/assets/assets/adobe-express-native-integration.png)
 
 **サポートされるすべてのビデオタイプのレンディションのプレビュー**
 
-Experience Manager Assetsは、処理プロファイルの設定を必要とせずに、サポートされるすべてのビデオタイプのプレビューレンディションをデフォルトで生成するようになりました。
+Experience Manager Assets では、処理プロファイル設定を行わなくても、サポートされるすべてのビデオタイプのプレビューレンディションをデフォルトで生成するようになりました。
 
 ### アセットビューの新機能 {#assets-view}
 
 **コレクションの権限の管理**
 
-Assets Essentialsを使用すると、管理者は、リポジトリで使用可能な非公開コレクションのアクセスレベルを管理できます。 管理者は、ユーザーグループを作成し、それらのグループに権限を割り当てて、アクセスレベルを管理できます。ユーザーグループに権限管理の権限をデリゲートすることもできます。
+Assets Essentials では、管理者は、リポジトリで使用可能なプライベートコレクションのアクセスレベルを管理できます。管理者は、ユーザーグループを作成し、それらのグループに権限を割り当てて、アクセスレベルを管理できます。また、ユーザーグループに権限管理の権限をデリゲートすることもできます。
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -113,71 +113,71 @@ Assets Essentialsを使用すると、管理者は、リポジトリで使用可
 
 -->
 
-### AEM Formsの新機能 {#forms-new-features}
+### AEM Forms の新機能 {#forms-new-features}
 
-* **[Adobe Experience Manager FormsEdge Delivery Services](/help/edge/docs/forms/overview.md)**:AEM Forms Edge Delivery Servicesは、作成者が新しいフォームを迅速に更新、公開、ローンチできる、迅速な開発環境を可能にする構成可能なサービスセットです。 これらのサービスは、エンゲージメントとコンバージョンを促進する、優れた効果の高いフォームエクスペリエンスを提供します。これらのフォームエクスペリエンスは、簡単に作成および開発できます。
+* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**：AEM Forms Edge Delivery Services は、作成者が新しいフォームを迅速にアップデート、公開、起動できる迅速な開発環境を可能にする、構成可能なサービスセットです。これらのサービスは、エンゲージメントとコンバージョンを促進する、優れた効果の高いフォームエクスペリエンスを提供します。これらのフォームエクスペリエンスは、簡単に作成および開発できます。
 
-  ![EDS Formsの機能](/help/edge/assets/eds-forms-features.png)
+  ![EDS Forms の機能](/help/edge/assets/eds-forms-features.png)
 
 これらのサービスにより、次のことが可能になります。
 
-* 同じフォームサイト上で複数のコンテンツソースを操作し、好みのオーサリングツール（Microsoft Excel、Google Sheets、アダプティブFormsエディターなど）を使用する。
-* Real User Monitoring （RUM）を通じて、フォームのパフォーマンスを迅速かつ継続的に読み込み、レンダリングするデジタル登録エクスペリエンスを提供します。
-* プレーンなHTML、最新の CSS、vanilla JavaScript を使用して、特別なエクスペリエンスを作成し、特定のフレームワークの急な学習曲線を避けます。
+* 同じフォームサイト上で複数のコンテンツソースを操作し、Microsoft Excel、Google Sheets、アダプティブフォームエディターなどの推奨オーサリングツールを使用します。
+* 迅速な読み込みとレンダリングを行うデジタル登録エクスペリエンスを提供し、リアルユーザーモニタリング（RUM）を通じてフォームのパフォーマンスを継続的に監視します。
+* プレーン HTML、最新の CSS、Vanilla JavaScript を使用して優れたエクスペリエンスを作成し、特定のフレームワークの急な学習曲線を回避します。
 
 
-### AEM Formsのプレリリースの新機能 {#forms-pre-release}
+### AEM Forms のプレリリースでの新機能 {#forms-pre-release}
 
-* **コアコンポーネントベースのアダプティブFormsの強化されたビジュアルルールエディター**：このリリースでは、コアコンポーネントに基づくアダプティブフォームのビジュアルルールエディターが大幅にアップグレードされました。 このリリースでは、コアコンポーネントをベースとするアダプティブフォームのビジュアルルールエディターが大幅にアップグレードされました。 この更新では、カスタム関数とのインタラクションを効率化し、より堅牢で効率的なフォームを作成できるようにすることに重点を置いています。
+* **コアコンポーネントベースのアダプティブフォーム向けビジュアルルールエディターの機能強化**：このリリースでは、コアコンポーネントベースのアダプティブフォームのビジュアルルールエディターが大幅にアップグレードされました。このリリースでは、コアコンポーネントベースのアダプティブフォームのビジュアルルールエディターが大幅にアップグレードされました。この更新では、より堅牢で効率的なフォームを作成できるように、カスタム関数とのインタラクションを効率化することに焦点を当ています。
 
-  次の方法で、カスタム関数のインタラクションを効率化できるようになりました。
+  次の方法で、カスタム関数とのインタラクションを効率化できるようになりました。
 
    * [新しい注釈を活用して、より明確な機能定義を提供](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function).
    * [カスタム関数のキャッシュメカニズムの使用によるフォームのパフォーマンスの向上](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
    * [カスタム関数内のグローバルオブジェクトのシームレスな操作](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
    * [カスタム関数内でのオプション・パラメータの定義と使用](/help/forms/create-and-use-custom-functions.md#parameter).
 
-  この更新により、ルールエディター機能が次のように強化されました。 以下の操作を実行できます。
+  このアップデートでは、ルールエディターの機能にも次の機能強化が追加されています。次の操作を実行できます。
 
    * 強力な機能の実装 [「when-then-else」](/help/forms/rule-editor-core-components.md#when) 条件実行のロジック。
-   * let 関数や arrow 関数などの最新の JavaScript 機能を活用します（ES10 のサポート）。
-   * フィールドだけでなく、パネルやフォーム全体を検証またはリセットすることで、ユーザーの操作に対するコントロールを拡張できます。
+   * let 関数や arrow 関数などの最新の JavaScript 機能を活用します（ES10 サポート）。
+   * フィールドだけでなく、パネルやフォーム全体を検証またはリセットして、ユーザー操作のコントロールを拡大します。
 
-  これらの機能強化により、ビジュアルルールエディター内でルールやカスタム関数を直感的かつ強力に作成できるようになりました。
+  これらの機能強化により、ビジュアルルールエディター内でルールやカスタム関数を作成する際のエクスペリエンスが、より直感的かつ強力になります。
 
-* **[アダプティブフォームの複数バージョンの作成](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**：既存のフォームのバリエーションを簡単に管理できるようになりました。 これにより、バージョン管理が簡素化され、フォームの最適化の比較が、合理化された単一のワークフロー内で容易になります。
+* **[アダプティブフォームの複数バージョンの作成](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**：既存フォームのバリエーションを簡単に管理できるようになりました。これにより、合理化された単一のワークフロー内で、バージョン管理をシンプルに、フォーム最適化の比較を容易に行えるようになります。
 
-* **[アダプティブフォームの比較](/help/forms/compare-forms.md)**:2 つのフォームを簡単に比較して、2 つのフォームの違いを特定できるようになりました。 チームメンバーがリビジョンを比較し、変更を効率的に議論できるので、共同作業がスムーズになります。
+* **[アダプティブフォームの比較](/help/forms/compare-forms.md)**：2 つのフォームを簡単に比較して、その違いを特定できるようになりました。チームメンバーがリビジョンを比較し、変更を効率的に議論できるので、共同作業がスムーズになります。
 
-* **手書き署名コンポーネントのアクセシビリティの強化**：この更新により、手書き署名コンポーネントのアクセシビリティが大幅に向上しました。
+* **手書き署名コンポーネントのアクセシビリティの強化**：このアップデートにより、手書き署名コンポーネントのアクセシビリティが大幅に向上しました。
 
-  **キーボードナビゲーションの改善：**
+  **キーボードナビゲーションの向上：**
    * Tab キーを押すと、署名ダイアログボックス内のすべてのインタラクティブ要素間を移動できます。
    * ブラシまたはキーボードで署名して Enter キーを押すと、ダイアログが閉じます。
-   * 署名して「OK」をクリックした後も、署名コントロールにフォーカスが移動したままになります。
+   * 署名して「OK」をクリックした後も、フォーカスは署名コントロールに残ります。
 
   **署名のクリア機能：**
 
-   * Tab キーを使用すると、署名を消去するための明確なクロスアイコンにアクセスできます。
-   * 「署名確認をクリア」ダイアログには、タブナビゲーションからもアクセスできます。
+   * Tab キーを使用すると、署名を消去するための消去クロスアイコンにアクセスできます。
+   * 「署名のクリアを確認」ダイアログには、タブナビゲーションからもアクセスできます。
 
   **ラベルとコントロールの機能強化：**
-   * キーボード署名ボタンのラベルが、「aria-label」を使用して機能（「aria-label=&#39;キーボードを使用して署名」など）をアナウンスする方が明確になりました。
+   * キーボード署名ボタンのラベルがよりわかりやすくなり、「aria-label」を使用して機能を通知します（「aria-label=キーボードを使用して署名」など）。
    * コントラストが向上し、手書き署名内のすべてのコントロールを簡単に区別できるようになりました。
-   * OK/チェックマークボタンが、非アクティブの場合に視覚的に示されるようになりました。
+   * OK／チェックマークボタンが、非アクティブの場合でも視覚的に示されるようになりました。
 
-  **スクリーンReaderのシグネチャーフィードバック：**
+  **スクリーンリーダーの署名フィードバック：**
    * 署名を入力すると、スクリーンリーダーのユーザーは、署名の作成に使用されるテキストを聞くことができます。
 
-このアップデートにより、手書き署名コンポーネントのナビゲーション、明確さ、フィードバックが改善され、障害のあるユーザーのエクスペリエンスがより包括的になります。
+このアップデートにより、手書き署名コンポーネントのナビゲーション、明確さ、フィードバックを向上し、障がいのあるユーザーにとってより包括的なエクスペリエンスになります。
 
 ### 早期導入プログラム {#forms-early-adopter}
 
-* **[アダプティブフォームをAdobe Workfront Fusion シナリオに送信する](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**:Forms as a Cloud Serviceは、アダプティブフォームをAdobe Workfrontと簡単に接続するための標準のオプションを提供します。 これにより、Adobe Workfront シナリオにアダプティブフォームを送信するプロセスが簡単になり、アダプティブフォームの送信時に Workfront Fusion シナリオをトリガーできます。
+* **[Adobe Workfront Fusion シナリオへのアダプティブフォームの送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**：Forms as a Cloud Service には、アダプティブフォームを Adobe Workfront に簡単に接続するための標準オプションが用意されています。これにより、Adobe Workfront シナリオにアダプティブフォームを送信するプロセスが簡単になり、アダプティブフォームの送信時に Workfront Fusion シナリオをトリガーできます。
 
-  <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Adobe Workfront Fusion コネクタを使用すると、アダプティブフォームの送信時に自動的にトリガーされるワークフローを設計できます。例えば、送信されたデータを確認するタスクを特定の個人に割り当てるワークフローが開始され、アダプティブフォームから取り込まれた情報に基づいて、申し込みの承認または拒否ができるようになるシナリオを想定します。この合理化された統合により、効率が向上し、ワークフロープロセスに新しいレベルの自動化が実現します。|
+  <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Adobe Workfront Fusion コネクタを使用すると、アダプティブフォームの送信時に自動的にトリガーされるワークフローを設計できます。例えば、送信されたデータを確認するタスクを特定の個人に割り当てるワークフローが開始され、アダプティブフォームから取り込まれた情報に基づいて、申し込みの承認または拒否ができるようになるシナリオを想定します。この合理化された統合によって効率が上がり、ワークフロープロセスの自動化が新たな段階に引き上げられます。
 
-* **[Reader拡張サービス](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**:AEM Forms Communication API は、通常のユーザーにフォーム入力やコメントなどの機能を追加できるReader拡張サービスを導入しました。これにより、無料のAdobe Readerを使用してPDFにとってインタラクティブなコミュニケーションを実現できます。
+* **[Reader Extension サービス](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**：AEM Forms Communication API では Reader Extension サービスを導入しました。通常の PDF にフォーム入力やコメントなどの機能を追加できるので、無料の Adobe Reader を使ってユーザーが PDF をインタラクティブに使用できるようになります。
 
 * [右横書き言語のサポート](/help/forms/supporting-new-language-localization-core-components.md)：コアコンポーネントに基づいて作成されたアダプティブフォームを、アラビア語、ペルシア語、ウルドゥー語などの右横書き（RTL）言語で表示できるようになりました。RTL 言語は、世界中で 20 億人以上の人々が話しています。RTL 言語のフォームを使用すると、アダプティブフォームのリーチを拡大して、これらの多様なオーディエンスに対応し、RTL マーケットを選択できます。また、特定の地域では、現地の言語でフォームを提供することは法的義務として定められています。現地の言語に対応することで、より幅広いオーディエンスに扉を開くだけでなく、関連する法律や規制を確実に遵守できます。
 
@@ -196,41 +196,41 @@ Assets Essentialsを使用すると、管理者は、リポジトリで使用可
 
 #### トラフィックフィルタールールアラート（早期導入プログラム） {#traffic-filter-rules-alerts-early-adopter}
 
-最近リリースされたもの [トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)には、オプションでライセンス可能な web アプリケーションファイアウォール（WAF）ルールが含まれており、許可または拒否するトラフィックを設定できます。
+最近リリースされた[トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)には、オプションでライセンス可能な web アプリケーションファイアウォール（WAF）ルールが含まれており、許可または拒否するトラフィックを設定できます。
 
-メールを送信できるようになりました **<aemcs-cdn-config-adopter@adobe.com>** トラフィックフィルタールールがトリガーされるたびにアラートを受け取れるように、早期導入プログラムに参加します。 特定のトラフィック状況が発生した場合にアクションセンターのメール通知が送信されるので、適切な対策を講じることができます。
+**<aemcs-cdn-config-adopter@adobe.com>** にメールを送信して早期導入プログラムに参加すると、トラフィックフィルタールールがトリガーされるたびにアラートを受け取ることができます。特定のトラフィック状況が発生するとアクションセンターのメール通知が送信されるので、適切な対策を講じることができます。
 
 #### CDN 設定（早期導入プログラム） {#cdn-config-early-adopter}
 
-最近リリースされたに加えて [トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)（オプションでライセンス可能な Web アプリケーションファイアウォール（WAF）ルールが含まれる）場合は、設定パイプラインを使用して、他のタイプの CDN 設定を宣言およびデプロイできます。 [詳細情報](/help/implementing/dispatcher/cdn-configuring-traffic.md) 電子メールで早期導入プログラムに参加 **<aemcs-cdn-config-adopter@adobe.com>** アクセス権を取得するには：
+オプションでライセンス可能な web アプリケーションファイアウォール（WAF）ルールを含む、最近リリースされた[トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)の他に、設定パイプラインを使用して、他のタイプの CDN 設定を宣言およびデプロイすることもできます。[詳細情報](/help/implementing/dispatcher/cdn-configuring-traffic.md)を確認し、**<aemcs-cdn-config-adopter@adobe.com>** にメールを送信して早期導入プログラムに参加し、次の情報にアクセスしてください。
 
 * 301/302 クライアントサイドのリダイレクト
-* エッジにあるリクエストを任意のオリジンにプロキシ化（AEM以外のアプリケーションなど）
+* 任意の接触チャネルに対するエッジでのリクエストのプロキシ処理（AEM 以外のアプリケーションなど）
 * URL 変換
 * リクエストヘッダーまたは応答ヘッダーの設定または変更
 * CDN が AEM に到達できない場合のカスタムエラーページ
 
-#### 書き換えマップの Apache/Dispatcher ランタイム取り込み（早期導入プログラム） {#apache-rewritemaps-early-adopter}
+#### Apache／Dispatcher ランタイムによる書き換えマップの取り込み（早期導入プログラム） {#apache-rewritemaps-early-adopter}
 
-AEM 6.5 と同様に、Apache/Dispatcher は、web 階層パイプラインの実行を必要とせずに、パブリッシュリポジトリー内の特定の場所に配置された書き換えマップを取り込んで読み込みます。 これにより、ビジネスユーザーが UI を使用してリダイレクトを宣言する機会が生まれます（ACS Commons リダイレクトマップマネージャーで提供されるなど）。 にご連絡ください。 **<aemcs-cdn-config-adopter@adobe.com>** を参照してください。
+AEM 6.5 と同様に、Apache／Dispatcher は、web 階層パイプラインの実行を必要とせずに、公開リポジトリ内の特定の場所に配置された書き換えマップを取り込んで読み込みます。これにより、ビジネスユーザーが、ACS Commons リダイレクトマップマネージャーが提供するような UI を使用して、リダイレクトを宣言する機会が広がります。詳しくは **<aemcs-cdn-config-adopter@adobe.com>** までご連絡ください。
 
 #### 動的コンテンツを読み込むためのエッジサイドインクルード（ESI）（早期導入プログラム） {#esi-early-adopter}
 
-Adobeが管理する CDN で、エッジレベルの動的 web コンテンツアセンブリ用のマークアップ言語であるエッジサイドインクルード（ESI）がサポートされるようになりました。 ESI スニペットを含めることで、より高い TTL で CDN のHTMLページ全体をキャッシュしながら、より高いケイデンスの更新（低い TTL）を必要とする小さなセクションをオリジンから頻繁に取得できます。 にご連絡ください。 **<aemcs-cdn-config-adopter@adobe.com>** を参照してください。
+アドビが管理する CDN で、エッジレベルの動的 web コンテンツアセンブリ用のマークアップ言語であるエッジサイドインクルード（ESI）がサポートされるようになりました。ESI スニペットを含めることで、より大きい TTL で HTML ページ全体を CDN にキャッシュしながら、より頻繁なアップデート（小さい TTL）を必要とする小さなセクションを、接触チャネルから頻繁に取得できます。詳しくは **<aemcs-cdn-config-adopter@adobe.com>** までご連絡ください。
 
 #### サイトテーマとサイトテンプレートを使用したフロントエンドコードの RDE サポート（早期導入プログラム） {#rde-frontend-early-adopter}
 
-[迅速な開発環境（RDE）](/help/implementing/developing/introduction/rapid-development-environments.md)は、早期導入者向けに、[サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md)と[サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)に基づいたフロントエンドコードをサポートするようになりました。RDE では、[フロントエンドパイプライン](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)ではなくコマンドラインディレクティブを使用して行われます。にご連絡ください。 **<aemcs-rde-support@adobe.com>** 試してみて、フィードバックを提供する。
+[迅速な開発環境（RDE）](/help/implementing/developing/introduction/rapid-development-environments.md)は、早期導入者向けに、[サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md)と[サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)に基づいたフロントエンドコードをサポートするようになりました。RDE では、[フロントエンドパイプライン](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)ではなくコマンドラインディレクティブを使用して行われます。試用してフィードバックを提供するには、**<aemcs-rde-support@adobe.com>** までご連絡ください。
 
-#### RDE のロギングの強化（早期導入プログラム） {#rde-logging-early-adopter}
+#### RDE ロギングの強化（早期導入プログラム） {#rde-logging-early-adopter}
 
-でコードをデバッグする場合 [迅速な開発環境（RDE）](/help/implementing/developing/introduction/rapid-development-environments.md)のバージョン管理で OSGi プロパティを変更することなく、コマンドラインを使用して、開発者がより効率的にログを設定し、ストリーミングできるようになりました。 次のような機能があります。
+[迅速な開発環境（RDE）](/help/implementing/developing/introduction/rapid-development-environments.md)でコードをデバッグする際、バージョン管理で OSGI プロパティを変更することなく、コマンドラインを使用して、開発者がより効率的にログを設定し、ストリーミングできるようになりました。次のような機能があります。
 
 * パッケージまたはクラスレベルごとのログレベルの宣言
 * ログ出力形式のカスタマイズ
 * 複数のログを並行してストリーミング
 
-にご連絡ください。 **<aemcs-rde-support@adobe.com>** 試してみて、フィードバックを提供する。
+試してフィードバックを提供するには、**<aemcs-rde-support@adobe.com>** までご連絡ください。
 
 ## Cloud Manager {#cloud-manager}
 
