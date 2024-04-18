@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: ff4f8416284c8491a252b725dfa5224e0c0d9fd5
+source-git-commit: c1c170e1cae148c53662cd49850e2a33754fbafc
 workflow-type: tm+mt
 source-wordcount: '3119'
 ht-degree: 4%
@@ -65,6 +65,7 @@ JavaScript アノテーションは、JavaScript コードのメタデータを�
 * `@argument` `{type} name <Parameter Description>`
 * `@arg` `{type}` `name <Parameter Description>`.
   `{type}` は、パラメータータイプを表します。  使用できるパラメーターのタイプは次のとおりです。
+
    * string：単一の文字列値を表します。
    * 数値：1 つの数値を表します。
    * ブール値：単一のブール値（true または false）を表します。
