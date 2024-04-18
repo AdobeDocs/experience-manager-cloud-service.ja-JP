@@ -3,9 +3,9 @@ title: ' [!DNL Workfront for Experience Manager enhanced connector] のリリー
 description: ' [!DNL Workfront for Experience Manager enhanced connector] のリリースノート'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: fdac9b4152c61f775769d7ed30be1097db119e2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1660'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 99%
 
 [!DNL Workfront for Experience Manager enhanced connector] の最新バージョンには、次のバグ修正が含まれています。
 
-* HTTP クライアントを閉じないと、メモリ不足の問題が発生します。
+* HTTP クライアントを閉じることに失敗すると、メモリ不足の問題が発生する。
 
 >[!NOTE]
 >
