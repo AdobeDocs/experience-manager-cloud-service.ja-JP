@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
 workflow-type: tm+mt
 source-wordcount: '2321'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 97%
 
 ## リリースビデオ {#release-video}
 
-2024.3.0 リリースで追加された機能の概要については、2024 年 3 月リリースの概要ビデオをご覧ください。
+2024.3.0 リリースで追加された機能の概要については、2024年3月のリリースに関する概要ビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
 
@@ -138,14 +138,14 @@ Assets Essentials では、管理者は、リポジトリで使用可能なプ�
 
   次の方法で、カスタム関数とのインタラクションを効率化できるようになりました。
 
-   * [新しい注釈を活用して、より明確な機能定義を提供](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function).
-   * [カスタム関数のキャッシュメカニズムの使用によるフォームのパフォーマンスの向上](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
-   * [カスタム関数内のグローバルオブジェクトのシームレスな操作](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
-   * [カスタム関数内でのオプション・パラメータの定義と使用](/help/forms/create-and-use-custom-functions.md#parameter).
+   * [新しい注釈を活用すると、より明確な機能定義を行えます](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function)。
+   * [カスタム関数にキャッシュメカニズムを使用すると、フォームのパフォーマンスが向上します](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function)。
+   * [カスタム関数内のグローバルオブジェクトをシームレスに操作できます](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions)。
+   * [カスタム関数内でのオプションのパラメーターを定義して利用します](/help/forms/create-and-use-custom-functions.md#parameter)。
 
   このアップデートでは、ルールエディターの機能にも次の機能強化が追加されています。次の操作を実行できます。
 
-   * 強力な機能の実装 [「when-then-else」](/help/forms/rule-editor-core-components.md#when) 条件実行のロジック。
+   * 条件付き実行に強力な[「when-then-else」](/help/forms/rule-editor-core-components.md#when)ロジックを実装します。
    * let 関数や arrow 関数などの最新の JavaScript 機能を活用します（ES10 サポート）。
    * フィールドだけでなく、パネルやフォーム全体を検証またはリセットして、ユーザー操作のコントロールを拡大します。
 
