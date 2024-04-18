@@ -1,13 +1,14 @@
 ---
 title: Forms as a Cloud Service 通信 API とは
 description: 通信 API を使用して、ドキュメントの署名、認証、保護、PDF 生成プロセスの自動化、PDFドキュメントの別の形式への変換を行います。
-Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
+Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs.
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
+exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+source-git-commit: 126af719cfd2c9361d0e7768b3b65e1149b6a989
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 73%
+source-wordcount: '1988'
+ht-degree: 71%
 
 ---
 
@@ -190,14 +191,11 @@ Signature API を使用すると、組織は配布および受信する Adobe PD
 
 Signature API と Encryption API は両方とも [同期 API](#types-of-communications-apis-types) です。
 
-### Reader Extension サービス
+### 使用権限 API
 
-<span class="preview"> Reader拡張サービスは、早期導入プログラムの対象です。 公式メール ID からaem-forms-ea@adobe.comに書き込んで、早期導入プログラムに参加し、機能へのアクセスをリクエストできます。 </span>
+<span class="preview"> 使用権限の機能は、早期導入プログラムの下にあります。 公式メール ID からaem-forms-ea@adobe.comに書き込んで、早期導入プログラムに参加し、機能へのアクセスをリクエストできます。 </span>
 
-Reader拡張機能サービスを使用すると、使用権限を追加してAdobe Readerの機能を拡張することで、組織内でインタラクティブなPDFドキュメントを簡単に共有できます。 Reader Extensions サービスは、Adobe Reader 7.0 以降で使用できます。このサービスは、使用権限を PDF ドキュメントに追加します。このアクションにより、ドキュメントへのコメントの追加、フォームへの入力、ドキュメントの保存など、Adobe Readerを使用してPDFドキュメントを開いた場合には通常使用できない機能が有効になります。
-
->[!NOTE]
->サードパーティユーザーは、使用権限を付与されたドキュメントを扱うためにソフトウェアまたはプラグインを追加する必要はありません。
+使用権限を追加すると、Adobe Readerの機能を拡張して使用権限を追加することで、インタラクティブなPDFドキュメントを簡単に共有できます。 このサービスはAdobe Reader 7.0 以降で動作し、PDFドキュメントに使用権限を追加します。 このアクションにより、ドキュメントへのコメントの追加、フォームへの入力、ドキュメントの保存など、Adobe Readerを使用してPDFドキュメントを開いた場合には通常使用できない機能が有効になります。
 
 PDF ドキュメントに適切な使用権限が追加されている場合、受信者は Adobe Reader 内で次の作業を行うことができます。
 
@@ -208,11 +206,13 @@ PDF ドキュメントに適切な使用権限が追加されている場合、�
 * 完了または注釈が付いたPDF文書を電子的に送信します。
 * 内部データベースおよび web サービスに対する直感的なPDFフロントエンドとして、開発ドキュメントおよびフォームを使用します。
 * レビュー担当者は直観的なマークアップツールを使用してドキュメントにコメントを追加できるよう、PDF ドキュメントを他のユーザーと共有する。使用できるツールには、電子付箋、スタンプ、ハイライト、および取り消し線が含まれます。これらと同じ機能は Acrobat でも利用できます。
-* バーコードフォームのデコードをサポートする。
+* バーコード化されたFormsのデコードをサポートします。
 
 これらの特別な使用権限の機能は、権限を付与されたPDFドキュメントをAdobe Reader内で開いたときに自動的にアクティブ化されます。 権限を付与されたドキュメントの操作が完了すると、Adobe Readerでこれらの機能が再び無効になります。 ユーザーが権限を付与された別のドキュメントを受け取るまで、これらの機能は無効のままです。
 
-Reader拡張サービスの様々な使用権限の機能は次のとおりです。
+#### 使用権限を有効または無効にする
+
+PDFReaderサービスを拡張するための様々な使用権限の機能を次に示します。
 
 * **バーコードのデコード**:PDFドキュメント内のバーコードをデコードします。
 
@@ -238,7 +238,11 @@ Reader拡張サービスの様々な使用権限の機能は次のとおりで�
 
 * **スタンドアロンで送信**:PDFドキュメントからフォームデータをオフラインで送信します。
 
-**Reader拡張サービスのその他の機能**
+#### 使用権限を抽出
+
+Adobe Acrobat Reader拡張機能のために、PDFドキュメントに対して有効または無効にされた使用権限を取得するのに役立ちます。
+
+#### その他の機能
 
 * **メッセージ**:1 つ以上の使用権限が適用されたPDFドキュメントを開いたときにAdobe Acrobat Reader内に表示されるメッセージ。
 * **パスワードのロック解除**：暗号化されたPDFドキュメントを開くために必要なパスワード。 通常、これはドキュメントを開くパスワードですが、PDFドキュメントが権限パスワードでさらに保護されている場合は、いずれかを使用して開くことができます。
