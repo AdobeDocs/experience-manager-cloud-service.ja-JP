@@ -2,10 +2,8 @@
 title: ルールを使用したフォームへの動的動作の追加
 description: AEM Forms Edge Delivery Servicesは最高のパフォーマンスを実現するために構築されており、合理化されたデータ収集とユーザーエンゲージメントの将来を思い描くことができます。 ルールを使用すると、フォームに動的な動作を追加できます。
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
-source-git-commit: 61c8d08a21ad81a74e1093838b38f22af94751c3
+source-git-commit: 2affe155b285986128487043fcc4f2938fc15842
 workflow-type: tm+mt
 source-wordcount: '2216'
 ht-degree: 0%
@@ -125,7 +123,7 @@ Excel の数式（= タグを含む）を使用して、スプレッドシート
    この `TRUE()` 関数。論理値を返します。 `Checked` プロパティ（の場合） `checked = false` false を返します。 次の場合 `checked=true`を返します。 `true`. これにより、メールフィールドがデフォルトで非表示になります。
 
 
-1. を `Visible Expression` チェックボックスフィールドのプロパティを `=FORMULATEXT ((address of Visible property of the checkbox field))`. 例えば、`=FORMULATEXT((G12))` のようになります。FORMULATEXT （）関数は数式を入力として受け取り、数式自体を文字列として返します。 これは、フォーム内で式を使用するのに役立ちます。
+1. を `Visible Expression` チェックボックスフィールドのプロパティを `=FORMULATEXT ((address of Visible property of the checkbox field))`. 例えば、`=FORMULATEXT((G12))` のようになります。 FORMULATEXT （）関数は数式を入力として受け取り、数式自体を文字列として返します。 これは、フォーム内で式を使用するのに役立ちます。
 
    ![条件付きメールフィールド](/help/edge/assets/aem-forms-visible-expression-formula-text.png)
 
@@ -146,7 +144,7 @@ Excel の数式（= タグを含む）を使用して、スプレッドシート
 
 1. を `Value` のプロパティ `amount` フィールド先 `=F6*DAYS(F3,F2)`. この式は、次の式から日数を計算します `Start Date`  および `End Date`、部屋予算と日数を乗算し、結果を次の形式で表示 `Estimated Trip Cost` フィールド。
 
-1. を `Value Expression` のプロパティ `Estimated Trip Cost` フィールド先 `=FORMULATEXT ((address of value property of the amount field))`. 例えば、`=FORMULATEXT(F7)` のようになります。FORMULATEXT （）関数は数式を入力として受け取り、数式自体を文字列として返します。 これは、フォーム内で式を使用するのに役立ちます。
+1. を `Value Expression` のプロパティ `Estimated Trip Cost` フィールド先 `=FORMULATEXT ((address of value property of the amount field))`. 例えば、`=FORMULATEXT(F7)` のようになります。 FORMULATEXT （）関数は数式を入力として受け取り、数式自体を文字列として返します。 これは、フォーム内で式を使用するのに役立ちます。
 
 1. フォームをプレビューして公開します。 ここで、を指定すると、 `Start Date`, `End Date`、および部屋の予算。 この `Estimated Trip Cost` が自動計算されます。
 

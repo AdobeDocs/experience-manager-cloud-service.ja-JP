@@ -2,14 +2,14 @@
 title: Edge Delivery Services Formsのリアルタイムユーザー監視
 description: Edge Delivery Servicesのリアルタイムユーザー監視Formsには、フォームに対するユーザー操作の継続的なトラッキングと分析が含まれます。
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
-source-git-commit: eadfc3d448bd2fadce08864ab65da273103a6212
+exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
+source-git-commit: 2affe155b285986128487043fcc4f2938fc15842
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 0%
 
 ---
+
 
 # Edge Delivery Services Formsのリアルタイムユーザー監視
 
@@ -62,4 +62,3 @@ Edge Delivery Services Formsのリアルタイムユーザーモニタリング�
    * **良**：ユーザーアクション間の時間が 200 ミリ秒（ms）以下の場合。
    * **分かった**：期間が 200 ミリ秒を超え 500 ミリ秒以下の場合。
    * **悪い**：期間が 500 ミリ秒を超える場合。
-
