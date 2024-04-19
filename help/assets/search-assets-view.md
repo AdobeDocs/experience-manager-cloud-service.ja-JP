@@ -3,10 +3,10 @@ title: ' [!DNL Assets view] でのアセットの検索と検出の方法を学�
 description: 詳しくは、AEM Assets ビューでアセットを検索および検出する方法を参照してください。この強力な検索機能を使用すると、適切なアセットをすばやく発見できるので、コンテンツベロシティ（コンテンツ創出の速度）の向上に役立ちます。
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
-source-wordcount: '1543'
-ht-degree: 100%
+source-git-commit: bd3835980fcada20fbfe2551a5c15cc7c69a5c37
+workflow-type: tm+mt
+source-wordcount: '1908'
+ht-degree: 81%
 
 ---
 
@@ -239,6 +239,91 @@ Experience Manager Assets を使用すると、組織のデフォルトのラン
 1. 「**[!UICONTROL 閉じる]**」をクリックし、プレビュー画面を閉じます。
 
    ![最初に検索するホームページのプレビュー](assets/search-first-preview.gif)
+
+## コンテキスト検索 {#contextual-search}
+
+また、テキストプロンプトを定義して、リポジトリで使用可能なアセットを検索することもできます。 Experience Manager Assetsは、これらのテキストプロンプトを検索フィルターに自動変換し、検索結果を表示します。 フィルターペインを使用して自動フィルターを表示および変更し、検索結果をさらに絞り込むことができます。
+
+### コンテキスト検索へのアクセス {#access-contextual-search}
+
+Experience Manager Assetsでコンテキスト検索にアクセスするには：
+
+1. クリック **[!UICONTROL 検索]** 左側のウィンドウで確認します。
+
+   ![コンテキスト検索](assets/access-contextual-search.png)
+
+1. 検索テキストボックスでテキストプロンプトを定義し、をクリックします **[!UICONTROL コンテキスト検索]**.
+
+   ![コンテキスト検索のテキストプロンプト](assets/contextual-search-text-prompt.png)
+
+   [!DNL Experience Manager Assets] 検索結果を表示します。
+
+
+### サポートされるフィルター {#supported-filters}
+
+コンテキスト検索では、すぐに使用できる次のフィルターをサポートしています。 これらのフィルターに基づいてテキストプロンプトを作成し、適切な検索結果を表示します。
+
+* 画像の高さ
+
+* 画像の幅
+
+* ファイルタイプ：画像、ドキュメント、ビデオ、フォルダー。
+
+* MIME タイプ：JPG、PNG、TIFF、GIF、MP4、PDF、PPTX、DOCX または XLSX
+
+* 作成日
+
+* 変更日
+
+* 有効期限
+
+* アセットステータス：承認済み、却下またはすべて
+
+* 期限切れのアセット
+
+### テキストプロンプトの例 {#text-prompts-examples}
+
+**例 1**
+
+**テキストプロンプト**：今月作成された画像。
+
+[!DNL Experience Manager Assets] では、以下のフィルターが自動的に適用され、検索結果が表示されます。
+
+![コンテキスト検索の例 1](assets/contextual-search-example1.png)
+
+**例 2**
+
+**テキストプロンプト**：高さ 200 ピクセル、幅 100 ピクセル以上で、ビーチと澄んだ空が見えます。
+
+[!DNL Experience Manager Assets] では、以下のフィルターが自動的に適用され、検索結果が表示されます。
+
+![コンテキスト検索の例 2](assets/contextual-search-example2.png)
+
+**例 3**
+
+**テキストプロンプト**：高さが 1500 および 2500 ピクセルで、過去 1 か月に作成された、有効期限が切れて承認されていない青空の画像が必要です。
+
+[!DNL Experience Manager Assets] では、以下のフィルターが自動的に適用され、検索結果が表示されます。
+
+![コンテキスト検索の例 3](assets/contextual-search-example3.png)
+
+次のビデオでは、コンテキスト検索ユーザーインターフェイスへのアクセスから、テキストプロンプトの定義、検索結果の表示に至るまでのエンドツーエンドのプロセスを説明します。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3428407)
+
+### コンテキスト検索を無効にする {#disable-contextual-search}
+
+管理者は、組織内のユーザーのコンテキスト検索を無効にするオプションもあります。 これを行うには、次の手順を実行します。
+
+1. **[!UICONTROL 設定]**／**[!UICONTROL 一般設定]**&#x200B;に移動します。
+
+1. が含まれる [!UICONTROL コンテキスト検索] セクションで、 **[!UICONTROL 組織のコンテキスト検索を有効にする]** を切り替えて、組織内のすべてのユーザーに対してコンテキスト検索機能を無効にします。
+
+### コンテキスト検索のフィードバック {#contextual-search-feedback}
+
+コンテキスト検索機能に関するフィードバックを提供する必要がある場合は、 ![コンテキスト検索アイコン](assets/do-not-localize/contextual-search-icon.png)  「フィードバック」アイコンをクリックします。 フィードバックの種類を選択し、件名と説明を指定して、をクリックします **[!UICONTROL Submit]**.
+
+![コンテキスト検索のフィードバック](assets/contextual-search-feedback.png)
 
 ## 次の手順 {#next-steps}
 
