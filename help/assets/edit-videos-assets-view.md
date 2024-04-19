@@ -2,9 +2,9 @@
 title: ビデオを編集
 description: を使用したビデオの編集 [!DNL Adobe Express] を利用したオプションと、更新したビデオをバージョンとして保存します。
 role: User
-source-git-commit: dd67ce6fd8d0626db5518a39dd5ed472ddfeff93
+source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '753'
 ht-degree: 19%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 19%
 埋め込みを使用すると、ビデオを最適なサイズに簡単に変換できます [!DNL Adobe Express] クイックアクション。 でのクイックアクション [!DNL Assets Essentials] powered by [!DNL Adobe Express] には、ビデオの切り抜き、ビデオのサイズ変更、ビデオのトリミング、ビデオのGIFへの変換など、使いやすいビデオ編集オプションが用意されています。
 
 ビデオの編集後、新しいビデオを新しいバージョンとして保存できます。 バージョン管理を使用すると、必要に応じて後で元のアセットに戻すことができます。ビデオを編集するには、ビデオの詳細に移動して、 **[!UICONTROL ビデオを編集]**. または、アセットを選択して「詳細」をクリックし、をクリックします ![はさみ](assets/do-not-localize/cut.svg) アイコンは右側のパネルに表示されます。
-
-の詳細 [プレビューインターフェイス](navigate-assets-view.md).
 
 ## 前提条件 {#prerequisites}
 
