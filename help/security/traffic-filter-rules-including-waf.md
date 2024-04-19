@@ -2,10 +2,10 @@
 title: WAF ルールを含むトラフィックフィルタールール
 description: Web アプリケーションファイアウォール（WAF）ルールを含むトラフィックフィルタールールの設定
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 3a79de1cccdec1de4902b234dac3120efefdbce8
-workflow-type: ht
-source-wordcount: '3669'
-ht-degree: 100%
+source-git-commit: d210fed56667b307a7a816fcc4e52781dc3a792d
+workflow-type: tm+mt
+source-wordcount: '3788'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 トラフィックフィルタールールは、Cloud Manager 設定パイプラインを通じて、実稼動（サンドボックス以外の）プログラムで、開発環境、ステージ環境および実稼動環境のタイプにデプロイできます。RDE のサポートは今後提供される予定です。
 
-[チュートリアルに従って](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)、この機能に関する具体的な専門知識をすばやく構築します。
+[チュートリアルに従って](#tutorial)、この機能に関する具体的な専門知識をすばやく構築します。
 
 >[!NOTE]
 >リクエスト／応答の変更、リダイレクトの宣言、AEM 以外の接触チャネルへのプロキシ処理など、CDN でトラフィックを設定する他のオプションに興味がありますか？早期導入プログラムに参加して、[その方法を学び、試してみましょう](/help/implementing/dispatcher/cdn-configuring-traffic.md)。
@@ -416,6 +416,8 @@ data:
 
 レート制限は、CDN POP ごとに計算されます。例えば、モントリオール、マイアミ、ダブリンの POP のトラフィックレートがそれぞれ 1 秒あたり 80、90、120 リクエストであり、レート制限ルールが上限 100 に設定されているとします。その場合、ダブリンへのトラフィックのみがレート制限されます。
 
+レート制限は、エッジに到達するトラフィック、エッジに到達するトラフィック、またはエラー数に基づいて評価されます。
+
 ### rateLimit の構造 {#ratelimit-structure}
 
 | **プロパティ** | **タイプ** | **デフォルト** | **意味** |
@@ -423,6 +425,7 @@ data:
 | limit | 10～10000 の整数 | 必須 | ルールがトリガーされる、1 秒あたりのリクエスト数のリクエストレート（CDN POP あたり）です。 |
 | window | 整数列挙：1、10 または 60 | 10 | リクエストレートが計算されるサンプリングウィンドウ（秒単位）です。カウンターの精度は、ウィンドウのサイズによって異なります（ウィンドウが大きいほど精度が高くなります）。例えば、1 秒のウィンドウでは 50％の精度、60 秒のウィンドウでは 90％の精度が期待できます。 |
 | penalty | 60～3600 の整数 | 300（5 分） | 一致するリクエストがブロックされる期間（秒単位）です（最も近い分に四捨五入）。 |
+| 回数 | all, fetch, error | all | エッジトラフィック（すべて）、オリジントラフィック（フェッチ）、またはエラー数に基づいて評価されます。 |
 | groupBy | 配列[ゲッター] | なし | レートリミッターカウンターは、一連のリクエストプロパティ（clientIp など）によって集計されます。 |
 
 
@@ -448,6 +451,7 @@ data:
         limit: 60
         window: 10
         penalty: 300
+        count: all
         groupBy:
           - reqProperty: clientIp
       action: block
@@ -469,7 +473,7 @@ data:
         when: { reqProperty: path, equals: /critical/resource }
         action:
           type: block
-        rateLimit: { limit: 100, window: 60, penalty: 60 }
+        rateLimit: { limit: 100, window: 60, penalty: 60, count: all }
 ```
 
 ## トラフィックフィルタールールアラート {#traffic-filter-rules-alerts}
@@ -616,7 +620,7 @@ CDN ログで使用されるフィールド名と、それらの簡単な説明�
 
 ダッシュボードツールでは、[AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Github リポジトリから直接クローンを作成できます。
 
-ダッシュボードツールの具体的な使用方法については、[チュートリアル](#tutorial)を参照してください。
+[Tutorials](#tutorial) ダッシュボードツールの使用方法に関する具体的な手順について説明しています。
 
 ## 推奨されるスタータールール {#recommended-starter-rules}
 
@@ -703,7 +707,11 @@ data:
 
 ## チュートリアル {#tutorial}
 
-トラフィックフィルタールールに関する実用的な知識とエクスペリエンスの取得については、[チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=ja)を参照してください。
+2 つのチュートリアルを利用できます。
+
+### トラフィックフィルタールール（WAF ルールを含む）による web サイトの保護
+
+[チュートリアルの手順](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=ja) waf ルールを含むトラフィックフィルタールールに関する一般的で実践的な知識および経験を得ること。
 
 チュートリアルでは、次の方法について説明します。
 
@@ -712,3 +720,16 @@ data:
 * WAF ルールを含むトラフィックフィルタールールの宣言
 * ダッシュボードツールを使用した結果の分析
 * ベストプラクティス
+
+### トラフィックフィルタールールを使用した DoS および DDoS 攻撃のブロック
+
+[ブロック方法の詳細](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) レート制限トラフィック フィルタ ルールおよびその他の戦略を使用した Denial of Service （DoS; サービス拒否）攻撃および Distributed Denial of Service （DDoS; サービス拒否）攻撃。
+
+チュートリアルでは、次の方法について説明します。
+
+* 保護について
+* レート制限を超えた場合にアラートを受信
+* ダッシュボードツールを使用したトラフィックパターンの分析によるレート制限トラフィックフィルタールールのしきい値の設定
+
+
+
