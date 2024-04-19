@@ -7,15 +7,15 @@ feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1255'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Adobe Workfront Fusion へのアダプティブフォームの送信
 
-<span class="preview">機能は、早期導入プログラムで利用できます。公式メール ID からaem-forms-ea@adobe.comに書き込んで、早期導入プログラムに参加し、機能へのアクセスをリクエストできます。 </span>
+<span class="preview">機能は、早期導入プログラムで利用できます。早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID で aem-forms-ea@adobe.com までメールを送信してください。</span>
 
 [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=ja) は、ドキュメント承認ワークフロー、メールのフィルタリングや並べ替えなど、同じタスクを繰り返すプロセスを自動化し、繰り返しタスクではなく新しいタスクに焦点を当てることができます。Adobe Workfront Fusion には、複数のシナリオが含まれています。シナリオは、アプリケーションと web サービス間のデータ転送を実行する一連のモジュールで構成されます。シナリオでは、様々な手順（モジュール）を追加してタスクを自動化します。
 

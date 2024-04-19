@@ -4,9 +4,9 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のコンテン
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 5771a6afedeb85188e89700d439a9bac18e01fdc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5359'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -741,11 +741,11 @@ GraphQL のソリューションでは、次のことが可能です。
 
 >[!NOTE]
 >
->A **コンテンツ参照** は、DAM アセットとDynamic Media アセットの両方に使用できます。 適切な URL の取得には、様々なパラメーターを使用します。
->* `_dynamicUrl` :DAM アセット
->* `_dmS7Url` :Dynamic Media アセット
+>**コンテンツ参照**&#x200B;は、DAM アセットと Dynamic Media アセットの両方に使用できます。適切な URL の取得には、様々なパラメーターを使用します。
+>* `_dynamicUrl`：DAM アセット
+>* `_dmS7Url`：Dynamic Media アセット
 > 
->参照される画像が DAM アセットの場合、の値 `_dmS7Url` はになります `null`. 参照： [GraphQL クエリの URL によるDynamic Media アセット配信](#dynamic-media-asset-delivery-by-url).
+>参照される画像が DAM アセットの場合、`_dmS7Url` の値は `null` になります。[GraphQL クエリでの URL による Dynamic Media アセット配信](#dynamic-media-asset-delivery-by-url)を参照してください。
 
 ### 変換リクエストの構造 {#structure-transformation-request}
 
@@ -921,13 +921,13 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
    * オーサーにキャッシュされない
    * パブリッシュのキャッシュ - 10 分の最大経過時間（クライアントは変更できません）
 
-## GraphQL クエリの URL によるDynamic Media アセット配信{#dynamic-media-asset-delivery-by-url}
+## GraphQL クエリでの URL による Dynamic Media アセット配信{#dynamic-media-asset-delivery-by-url}
 
-AEM コンテンツフラグメント用のGraphQLを使用すると、AEM Dynamic Media（Scene7）アセット（が参照）への URL を **コンテンツ参照**）に設定します。
+AEM コンテンツフラグメント用の GraphQL を使用すると、AEM Dynamic Media（Scene7）アセット（**コンテンツ参照**&#x200B;で参照される）への URL をリクエストできます。
 
 >[!CAUTION]
 >
->のみ *画像* Dynamic Media内のアセットは参照できます。
+>参照できるのは、Dynamic Media の&#x200B;*画像*&#x200B;アセットのみです。
 
 GraphQL のソリューションでは、次のことが可能です。
 
@@ -935,23 +935,23 @@ GraphQL のソリューションでは、次のことが可能です。
 
 >[!NOTE]
 >
->このためには、 [Dynamic Media クラウド設定](/help/assets/dynamic-media/config-dm.md).
+>このためには、[Dynamic Media クラウド設定](/help/assets/dynamic-media/config-dm.md)が必要です。
 >
->これにより、 `dam:scene7File` および `dam:scene7Domain` アセットの作成時にアセットのメタデータに対して属性を指定します。
+>これにより、アセットの作成時に、`dam:scene7File` 属性と `dam:scene7Domain` 属性がアセットのメタデータに追加されます。
 
 >[!NOTE]
 >
->A **コンテンツ参照** は、DAM アセットとDynamic Media アセットの両方に使用できます。 適切な URL の取得には、様々なパラメーターを使用します。
+>**コンテンツ参照**&#x200B;は、DAM アセットと Dynamic Media アセットの両方に使用できます。適切な URL の取得には、様々なパラメーターを使用します。
 >
->* `_dmS7Url` :Dynamic Media アセット
->* `_dynamicUrl` :DAM アセット
+>* `_dmS7Url`：Dynamic Media アセット
+>* `_dynamicUrl`：DAM アセット
 > 
->参照される画像がDynamic Media アセットの場合、の値 `_dynamicURL` はになります `null`. 参照： [GraphQL クエリでの web に最適化された画像配信](#web-optimized-image-delivery-in-graphql-queries).
+>参照される画像が Dynamic Media アセットの場合、`_dynamicURL` の値は `null` になります。[GraphQL クエリでの web に最適化された画像配信](#web-optimized-image-delivery-in-graphql-queries)を参照してください。
 
-### URL によるDynamic Media アセット配信のサンプルクエリ {#sample-query-dynamic-media-asset-delivery-by-url}
+### URL による Dynamic Media アセット配信のサンプルクエリ {#sample-query-dynamic-media-asset-delivery-by-url}
 
-以下にクエリの例を示します。
-* タイプの複数のコンテンツフラグメントの場合 `team` および `person`
+サンプルクエリを以下に示します。
+* `team` および `person` タイプの複数のコンテンツフラグメントの場合
 
 ```graphql
 query allTeams {
@@ -1068,9 +1068,9 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
             * [単一の指定パラメーターを使用した web に最適化された画像配信用サンプルクエリ](#web-optimized-image-delivery-single-query-variable)
 
-      * `_dmS7Url`：の `ImageRef` への URL の配信の参照 [Dynamic Media アセット](#dynamic-media-asset-delivery-by-url)
+      * `_dmS7Url`：[Dynamic Media アセット](#dynamic-media-asset-delivery-by-url)への URL 配信に関する `ImageRef` 参照について
 
-         * 参照： [URL によるDynamic Media アセット配信のサンプルクエリ](#sample-query-dynamic-media-asset-delivery-by-url)
+         * [URL による Dynamic Media アセット配信のサンプルクエリ](#sample-query-dynamic-media-asset-delivery-by-url)を参照してください。
 
    * `_tags`：タグを含むコンテンツフラグメントまたはバリエーションの ID を表示する `cq:tags` 識別子の配列です。
 

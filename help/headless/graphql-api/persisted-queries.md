@@ -4,9 +4,9 @@ description: Adobe Experience Manager as a Cloud Service で GraphQL クエリ�
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1952'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -258,33 +258,35 @@ query getAdventuresByActivity($activity: String!) {
 
 UTF-8 エンコーディング `%3B` は `;` に使用されます。また、`%3D` は `=` のエンコーディングです。永続クエリを実行するには、クエリ変数と特殊文字を[適切にエンコード](#encoding-query-url)する必要があります。
 
-### クエリ変数の使用 – ベストプラクティス {#query-variables-best-practices}
+### クエリ変数の使用：ベストプラクティス {#query-variables-best-practices}
 
 クエリで変数を使用する場合、次のベストプラクティスに従う必要があります。
 
-* エンコード一般的なアプローチとして、すべての特殊文字を常にエンコードすることをお勧めします。以下に例を示します。 `;`, `=`, `?`, `&`、その他。
+* エンコーディング：
+一般的なアプローチとして、すべての特殊文字（例：`;`、`=`、`?`、`&` など）を常にエンコードすることをお勧めします。
 
-* セミコロン複数の変数（セミコロンで区切る）を使用する永続クエリでは、次のいずれかを設定する必要があります。
-   * エンコードされたセミコロン（`%3B`）。URL をエンコードすると、次の項目も実現されます
-   * または、クエリの末尾に追加されたセミコロン
+* セミコロン：
+（セミコロンで区切られた）複数の変数を使用する永続クエリには、次のいずれかが必要です。
+   * エンコードされたセミコロン（`%3B`）：URL をエンコードすると、これも実現されます
+   * クエリの終わりに追加された末尾のセミコロン
 
-* `CACHE_GRAPHQL_PERSISTED_QUERIES`
-条件 `CACHE_GRAPHQL_PERSISTED_QUERIES` は、Dispatcher に対して有効であり、その後 `/` または `\` 値に含まれる文字は、Dispatcher レベルで 2 回エンコードされます。
+* `CACHE_GRAPHQL_PERSISTED_QUERIES`：
+Dispatcher の `CACHE_GRAPHQL_PERSISTED_QUERIES` が有効な場合、値に `/` または `\` 文字が含まれるパラメーターが Dispatcher レベルで 2 回エンコードされます。
 この状況を回避するには、次の手順に従います。
 
-   * Enable （有効） `DispatcherNoCanonURL` Dispatcher で。
-これにより、元の URL をAEMに転送するように Dispatcher に指示され、エンコードの重複が防がれます。
-ただし、この設定は、現在、 `vhost` レベルに応じて、URL を書き換える Dispatcher 設定が既にある場合（例えば、短縮 URL を使用する場合）は、別のが必要になることがあります `vhost` （永続クエリ URL 用）。
+   * Dispatcher で `DispatcherNoCanonURL` を有効にします。
+この結果、Dispatcher は元の URL を AEM に転送するように指示されるので、エンコーディングが重複しないようになります。
+ただし、この設定は、現在、`vhost` レベルでのみ機能するので、URL を書き換える Dispatcher 設定が既にある場合（例えば、短縮 URL を使用する場合など）は、永続クエリ URL 用に別個の `vhost` が必要になることがあります。
 
-   * 送信 `/` または `\` エンコードされていない文字。
-永続クエリ URL を呼び出す場合は、次をすべて確認します `/` または `\` 文字は、永続クエリ変数の値ではエンコードされずに残ります。
+   * `/` 文字または `\` 文字をエンコードせずに送信します。
+永続クエリ URL を呼び出す場合は、永続クエリ変数の値の中ですべての `/` 文字または `\` 文字がエンコードされないままになっていることを確認します。
      >[!NOTE]
      >
-     >このオプションは、 `DispatcherNoCanonURL` ソリューションは、いかなる理由でも実装できません。
+     >このオプションは、何らかの理由で `DispatcherNoCanonURL` による解決策を実装できない場合にのみお勧めします。
 
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
 
-  条件 `CACHE_GRAPHQL_PERSISTED_QUERIES` は Dispatcher に対して有効になっており、次に `;` 変数の値に文字を使用することはできません。
+  `CACHE_GRAPHQL_PERSISTED_QUERIES` が Dispatcher に対して有効になっている場合は、`;` 文字は変数の値に使用できません。
 
 ## 永続クエリのキャッシュ {#caching-persisted-queries}
 
@@ -407,7 +409,7 @@ curl -u admin:admin -X POST \
 
 デフォルトでは、`PersistedQueryServlet` はクエリの実行時に、（実際の結果に関係なく）`200` 応答を返します。
 
-次のことができます [osgi 設定の指定](/help/implementing/deploying/configuring-osgi.md) の場合 **永続的なクエリサービス設定** より詳細なステータス コードが返されるかどうかを制御するには `/execute.json/persisted-query` エンドポイント（永続クエリにエラーがある場合）。
+**永続クエリサービス設定**&#x200B;の [OSGi 設定を指定](/help/implementing/deploying/configuring-osgi.md)して、永続クエリにエラーがある場合に、`/execute.json/persisted-query` エンドポイントで詳細なステータスコードが返されるかどうかを制御できます。
 
 >[!NOTE]
 >
@@ -416,20 +418,21 @@ curl -u admin:admin -X POST \
 フィールド `Respond with application/graphql-response+json`（`responseContentTypeGraphQLResponseJson`）は必要に応じて次のように定義できます。
 
 * `false`（デフォルト値）：
-永続クエリが成功したかどうかは関係ありません。この `Content-Type` 返されるヘッダーはです `application/json`、および `/execute.json/persisted-query` *常に* ステータスコードを返します `200`.
+永続クエリが成功したかどうかは関係ありません。返される `Content-Type` ヘッダーは `application/json` であり、`/execute.json/persisted-query` は&#x200B;*常に*&#x200B;ステータスコード `200` を返します。
 
-* `true`：が返します `Content-Type` 等しい `application/graphql-response+json`を指定すると、永続クエリの実行時にエラーが発生した場合、エンドポイントは適切な応答コードを返します。
+* `true`：
+返される `Content-Type` は `application/graphql-response+json` であり、永続クエリの実行時に何らかの形式のエラーが発生した場合、エンドポイントは適切な応答コードを返します。
 
   | コード | 説明 |
   |--- |--- |
   | 200 | 成功した応答 |
-  | 400 | ヘッダーがないか、永続クエリパスに問題があることを示します。 例えば、設定名が指定されていない、サフィックスが指定されていない、などです。<br>参照： [トラブルシューティング - GraphQL エンドポイントが設定されていない](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
-  | 404 | リクエストされたリソースが見つかりません。 例えば、Graphql エンドポイントはサーバーで使用できません。<br>参照： [トラブルシューティング - GraphQL永続クエリ URL にパスがない](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
-  | 500 | 内部サーバーエラー。 例えば、検証エラー、永続性エラーなどです。 |
+  | 400 | ヘッダーがないか、永続クエリパスに問題があることを示します。例えば、設定名が指定されていない、サフィックスが指定されていないなどです。<br>[トラブルシューティング：GraphQL エンドポイントが設定されていない](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url)を参照してください。 |
+  | 404 | リクエストされたリソースが見つかりません。例えば、Graphql エンドポイントはサーバーで使用できません。<br>[トラブルシューティング：GraphQL の永続クエリ URL にパスがない](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured)を参照してください。 |
+  | 500 | 内部サーバーエラー例えば、検証エラー、永続性エラーなどです。 |
 
   >[!NOTE]
   >
-  >https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codesを参照
+  >https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes も参照してください。
 
 ## アプリで使用するクエリ URL のエンコード {#encoding-query-url}
 

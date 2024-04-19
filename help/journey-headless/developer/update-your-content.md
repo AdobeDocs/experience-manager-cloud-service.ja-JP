@@ -3,9 +3,9 @@ title: AEM Assets API を使用してコンテンツをアップデートする�
 description: AEM ヘッドレスデベロッパージャーニーのこの部分では、REST API を使用してコンテンツフラグメントのコンテンツにアクセスし、アップデートする方法について説明します。
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1083'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -256,7 +256,7 @@ Assets REST API は `/api/assets` エンドポイントを使用しており、�
 >
 >API リファレンス [Adobe Experience Manager Assets API - コンテンツフラグメント](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)を参照してください。
 >
->この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
+>[コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
 ### 読み取り／配信 {#read-delivery}
 
@@ -335,4 +335,4 @@ AEM ヘッドレスジャーニーを続けるには、[すべてをまとめる
 * [ヘッドレス CMS としての AEM の概要](/help/headless/introduction.md)
 * [AEM 開発者ポータル](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
 * [AEM のヘッドレスに関するチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja)
-* この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
+* [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。

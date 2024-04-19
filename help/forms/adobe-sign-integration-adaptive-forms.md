@@ -6,9 +6,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
 source-git-commit: 2128dac489c270d296f86b56ae811556fb5fe87e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2117'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -130,14 +130,14 @@ ht-degree: 95%
 
 #### トラブルシューティング {#resolve-config-error}
 
-接続時 [!DNL Adobe Acrobat Sign] 次を使用 [!DNL AEM Forms] エラーを見つける `Unable to authorize access because the client configuration is invalid: invalid_request` 次の画像に示すように。 これを解決するには、次の手順に従います。
+[!DNL Adobe Acrobat Sign] を [!DNL AEM Forms] と接続すると、次の画像に示すように、「`Unable to authorize access because the client configuration is invalid: invalid_request`」というエラーが発生します。これを解決するには、下記の手順に従います。
 
 ![設定エラー](/help/forms/assets/config_error_sign.png)
 
-1. 現在のブラウザウィンドウに存在する URL をメモ帳にコピーし、パーツを削除します。 `/ui#/aem` を URL から取得します。
+1. 現在のブラウザーウィンドウに存在する URL をメモ帳にコピーし、URL から `/ui#/aem` の部分を削除します。
 1. ブラウザーウィンドウを開き、[!DNL Adobe Acrobat Sign] 開発者アカウントにログインします。
 1. [!DNL AEM Forms] 用に設定されているアプリケーションを選択し、「**[!UICONTROL アプリケーションの OAuth を設定]**」を選択します。
-1. Adobe Analytics の **[!UICONTROL リダイレクト URL]** ボックスに、前の手順でコピーした URL を追加し、 **[!UICONTROL 保存]**.
+1. 上記の手順でコピーした URL を「**[!UICONTROL リダイレクト URL]**」ボックスに追加して「**[!UICONTROL 保存]**」をクリックします。
 
 ## AEM Forms と Adobe Acrobat Sign Solutions for Government を接続 {#adobe-acrobat-sign-for-government}
 
@@ -222,7 +222,7 @@ Adobe Acrobat Sign for Government Solutions チームには、AEM Forms と Adob
 
    >[!NOTE]
    >
-   > * Adobe Signアカウントにログインした後、に移動します。 **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API 情報]** > **[!UICONTROL REST API メソッドのドキュメント]** > **[!UICONTROL OAuth アクセストークン]** Adobe Sign oAuth URL およびアクセストークン URL に関連する情報にアクセスする。
+   > * Adobe Sign アカウントにログインした後、**[!UICONTROL Acrobat Sign API]**／**[!UICONTROL API 情報]**／**[!UICONTROL REST API メソッドのドキュメント]**／**[!UICONTROL OAuth アクセストークン]**&#x200B;に移動して、Adobe Sign oAuth URL とアクセストークン URL に関連する情報にアクセスします。
 
 1. 前の節で、Adobe Acrobat Sign for Government Solution 担当者（[Adobe Professional Services チームメンバー]）が共有した資格情報を [**[!UICONTROL クライアント ID]** と&#x200B;**[!UICONTROL クライアントの秘密鍵]**] として使用します。
 

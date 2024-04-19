@@ -7,7 +7,7 @@ feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
 source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1937'
 ht-degree: 100%
 
@@ -264,7 +264,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 
 ### 印刷固有のメタデータ {#print-specific-metadata}
 
-* PDF および PDF/X - Adobe PDF およびサードパーティのアプリケーション。
+* PDF および PDF/X：Adobe PDF およびサードパーティのアプリケーション
 <!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
 * XMP - [!DNL Extensible Metadata Platform]。
 * `xmpPG` - ページテキストの XMP メタデータ。

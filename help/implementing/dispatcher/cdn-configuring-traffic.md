@@ -4,9 +4,9 @@ description: 設定ファイルでルールとフィルターを宣言し、Clou
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 source-git-commit: 1e2d147aec53fc0f5be53571078ccebdda63c819
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1109'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -49,11 +49,11 @@ config/
 
 ## 構文 {#configuration-syntax}
 
-以下のセクションのルールタイプは、共通の構文を共有します。
+以下の節で説明するルールタイプは、共通の構文を共有しています。
 
-ルールは、名前、条件付きの「when 句」、アクションで参照されます。
+ルールは、名前、条件付きの「when 句」およびアクションで参照されます。
 
-when 句は、ドメイン、パス、クエリ文字列、ヘッダー、cookie などのプロパティに基づいてルールを評価するかどうかを決定します。 構文はルールタイプ間で同じです。詳しくは、 [「条件構造」セクション](/help/security/traffic-filter-rules-including-waf.md#condition-structure) （トラフィックフィルタールールの記事）
+when 句は、ドメイン、パス、クエリ文字列、ヘッダー、Cookie などのプロパティに基づいて、ルールを評価するかどうかを決定します。構文は、すべてのルールタイプで共通です。詳しくは、「トラフィックフィルタールール」記事の[条件の構造](/help/security/traffic-filter-rules-including-waf.md#condition-structure)の節を参照してください。
 
 アクションノードの詳細は、ルールタイプによって異なります。概要については、以下の個々の節で説明します。
 
@@ -139,15 +139,15 @@ data:
 
 | 名前 | プロパティ | 意味 |
 |-----------|--------------------------|-------------|
-| **set** | （reqProperty、reqHeader、queryParam または reqCookie）、値 | 指定されたリクエストパラメーター（「path」プロパティのみサポート）またはリクエストヘッダー、クエリパラメーター、cookie を指定された値に設定します。 |
-|     | var、値 | 指定されたリクエストプロパティに指定された値を設定します。 |
-| **unset** | reqProperty | 指定されたリクエストパラメーター（「path」プロパティのみサポート）またはリクエストヘッダー、クエリパラメーター、cookie を指定された値に削除します。 |
+| **set** | （reqProperty、reqHeader、queryParam、reqCookie のいずれか）、value | 指定されたリクエストパラメーター（「path」プロパティのみサポートされています）またはリクエストヘッダー、クエリパラメーター、Cookie のいずれかを特定の値に設定します。 |
+|     | var、value | 指定されたリクエストプロパティを特定の値に設定します。 |
+| **unset** | reqProperty | 指定されたリクエストパラメーター（「path」プロパティのみサポートされています）またはリクエストヘッダー、クエリパラメーター、Cookie のいずれかを、特定の値に変えます。 |
 |         | var | 指定した変数を削除します。 |
 |         | queryParamMatch | 指定した正規表現に一致するすべてのクエリパラメーターを削除します。 |
-| **変換** | op:replace,（reqProperty または reqHeader または queryParam または reqCookie）, match, replacement | リクエストパラメーターの一部（「path」プロパティのみサポート）、またはリクエストヘッダー、クエリパラメーター、cookie を新しい値に置き換えます。 |
-|              | op:tolower、（reqProperty または reqHeader、queryParam または reqCookie） | リクエストパラメーター（「path」プロパティのみサポート）またはリクエストヘッダー、クエリパラメーター、cookie を小文字の値に設定します。 |
+| **transform** | op:replace、（reqProperty、reqHeader、queryParam、reqCookie のいずれか）、match、replacement | リクエストパラメーターの一部（「path」プロパティのみサポートされています）、またはリクエストヘッダー、クエリパラメーター、Cookie のいずれかを新しい値に置き換えます。 |
+|              | op:tolower、（reqProperty、reqHeader、queryParam、reqCookie のいずれか） | リクエストパラメーター（「path」プロパティのみサポートされています）またはリクエストヘッダー、クエリパラメーター、Cookie のいずれかを小文字の値に設定します。 |
 
-アクションは連結できます。 次に例を示します。
+アクションは連結できます。次に例を示します。
 
 ```
 actions:

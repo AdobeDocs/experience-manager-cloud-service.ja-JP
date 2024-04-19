@@ -4,7 +4,7 @@ description: スプレッドシートを使用して、Edge Delivery Services �
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '958'
 ht-degree: 100%
 

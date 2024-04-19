@@ -3,9 +3,9 @@ title: レプリケーション
 description: AEM as a Cloud Service での配布とレプリケーションのトラブルシューティングについて説明します。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 source-git-commit: 9ab6ac5588b6ca5135e3635cc886ec51207e89d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1312'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -196,7 +196,7 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 レプリケーションのトラブルシューティングを行うには、AEM オーサーサービス Web UI のレプリケーションキューに移動します。
 
-1. AEMのスタートメニューで、に移動します。 **ツール** > **デプロイメント** > **配分**
+1. AEM 開始メニューで&#x200B;**ツール**／**デプロイメント**／**配布**&#x200B;に移動します。
 1. **公開**&#x200B;カードを選択します。
 
    ![ステータス](assets/publish-status.png "ステータス")
@@ -207,6 +207,6 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 ![ログ](assets/publish-logs.png "ログ")
 
-コンテンツを公開できなかった場合は、公開全体がAEM パブリッシュサービスから元に戻されます。
+コンテンツを公開できなかった場合は、パブリケーション全体が AEM パブリッシュサービスから元に戻されます。
 
 その場合は、メインの編集可能なキューのステータスが赤く表示され、公開のキャンセル原因となった項目を特定するために、そのキューを確認する必要があります。そのキューをクリックすると、保留中の項目が表示されるので、その中から 1 つの項目またはすべての項目を必要に応じてクリアできます。

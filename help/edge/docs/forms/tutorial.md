@@ -4,9 +4,9 @@ description: このチュートリアルは、新しい Adobe Experience Manager
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1848'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -129,7 +129,7 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
       https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      Microsoft SharePointを使用したファイルの管理について詳しくは、 [AdobeSharePointの使用方法](https://www.aem.live/docs/setup-customer-sharepoint).
+      Microsoft SharePoint でのファイル管理について詳しくは、[Adobe SharePoint の使用方法](https://www.aem.live/docs/setup-customer-sharepoint)を参照してください。
 
 
    1. 参照を更新し、すべてが正しく表示されたら、更新された `fsatb.yaml` ファイルをコミットします。ビルドの問題が発生した場合は、[GitHub ビルド問題のトラブルシューティング](#troubleshooting-github-build-issues)を参照してください。
@@ -253,8 +253,8 @@ AEM Sidekick を使用して、お問い合わせドキュメントをプレビ�
 
 成果を公開る準備は整いましたか？Git を使用して変更をコミットし、プッシュします。これにより、次の URL からアクセスできるプレビュー環境と実稼動環境が更新されます（プレースホルダーをプロジェクトの詳細に置き換えます）。
 
-プレビュー： `https://<branch>--<repo>--<owner>.hlx.page/`
-実稼動： `https://<branch>--<repo>--<owner>.hlx.live/`
+プレビュー環境：`https://<branch>--<repo>--<owner>.hlx.page/`
+実稼動環境：`https://<branch>--<repo>--<owner>.hlx.live/`
 
 これで完了です。ローカル開発環境が正常に設定され、変更がデプロイされました。
 

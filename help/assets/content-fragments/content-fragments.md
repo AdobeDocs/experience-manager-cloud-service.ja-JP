@@ -3,9 +3,9 @@ title: コンテンツフラグメントの操作（Assets - コンテンツフ�
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントで、ページオーサリングやヘッドレス配信に最適な、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。また、MSM と共に使用する方法も説明します。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 source-git-commit: 930eca968807eaa9b322010d582973d431b9fa01
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2230'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 >* [レンダリングコンポーネントのコンテンツフラグメントの設定](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [AEM Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [コンテンツフラグメントと共に使用する AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
->* この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md)
+>* [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md)
 
 通信チャネルの数は年々増加しています。通常、チャネルとは配信メカニズムのことであり、次のどちらも指します。
 

@@ -4,9 +4,9 @@ description: AEM ヘッドレス配信機能の重要な部分である、Assets
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1804'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API で
 
 >[!NOTE]
 >
->この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
+>この[コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
 >[!NOTE]
 >
@@ -98,7 +98,7 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
 
 >[!NOTE]
 >
->この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
+>この[コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
 ### トランザクション動作 {#transactional-behavior}
 
@@ -178,7 +178,7 @@ API を通じて使用できる機能について詳しくは、以下を参照�
 
 >[!NOTE]
 >
->この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
+>この[コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
 ### ページング {#paging}
 
@@ -275,7 +275,7 @@ Assets REST API は、フォルダーのプロパティへのアクセスを公�
 >
 >[API リファレンス](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)を参照してください。特に、[Adobe Experience Manager Assets API - コンテンツフラグメント](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
 >
->この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
+>この[コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
 ## 制限事項 {#limitations}
 
@@ -367,7 +367,7 @@ Assets REST API は、フォルダーのプロパティへのアクセスを公�
 
    * [使用可能な機能](/help/assets/mac-api-assets.md#available-features)
 
-* この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
+* この[コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
 ## その他のリソース {#additional-resources}
 

@@ -3,7 +3,7 @@ title: ユニバーサルエディターの呼び出し
 description: デバッグ時に役立つユニバーサルエディターによってアプリに対して行われる様々なタイプの呼び出しについて説明します。
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '615'
 ht-degree: 100%
 

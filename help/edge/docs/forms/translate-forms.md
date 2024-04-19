@@ -6,88 +6,90 @@ hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 source-git-commit: eadfc3d448bd2fadce08864ab65da273103a6212
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '543'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
 
 # AEM Forms Edge Delivery ServicesForm の翻訳とローカライズ
 
-Edge Delivery Servicesでは、フォーム翻訳において、正確性、明確さ、一貫性に重点を置いて、フォームコンテンツを別の言語に変換します。 翻訳またはローカライズされたフォームを使用すると、異なる地理的な場所をまたいで幅広いオーディエンスにリーチできます。これにより、ユーザーエクスペリエンスが向上し、様々な言語の環境設定をまたいでコミュニケーションを容易にすることができます。
+Edge Delivery では、フォーム翻訳の際に、正確さ、明確さおよび一貫性に重点を置いてフォームコンテンツを別の言語に変換する必要があります。フォームを翻訳またはローカライズすると、様々な地域の幅広いオーディエンスにリーチできるので、ユーザーエクスペリエンスが向上し、多様な言語設定でより良いコミュニケーションを促進することができます。
 
 
-この記事を読むことで、次の内容を学ぶことができます。
+この記事を最後まで読むと、以下を行えるようになります。
 
-* [Google Drive 内のフォームの翻訳](#translate-form-google-drive)
+* [Google ドライブ内のフォームの翻訳](#translate-form-google-drive)
 * [SharePoint サイト内のフォームの翻訳](#translate-form-sharepoint)
 
-## Google Drive 内のフォームの翻訳 {#translate-form-google-drive}
+## Google ドライブ内のフォームの翻訳 {#translate-form-google-drive}
 
-この `GOOGLETRANSLATE` Google シートの機能では、組み込みの翻訳ツールをタップしてフォームを翻訳し、Google シート内でテキストを別の言語に直接変更します。 Google Drive 内でフォームを翻訳するには：
+Google シートの `GOOGLETRANSLATE` 関数では、組み込みの翻訳ツールを利用してフォームを翻訳し、Google シート内でテキストを別の言語に直接変更します。Google ドライブ内でフォームを翻訳するには、次の手順に従います。
 
-1. Google ドライブのAEM プロジェクトフォルダーに移動し、Google シートを開きます。
-2. 既存のシートの名前を変更します（`shared-default`） ～ `shared-en`.
-3. という名前のシートを追加します `shared-default`. この `shared-default` シートには、特定の言語にローカライズするコンテンツが含まれています。
-4. ローカライズされたコンテンツの追加： `shared-default` を使用したシート `GOOGLETRANSLATE` 関数。
-数式を使用して、セル D2 の内容を `shared-en` 内でフランス語にシート `shared-default` シート。 使用する式を次に示します。
+1. Google ドライブの AEM プロジェクトフォルダーに移動し、Google シートを開きます。
+2. 既存のシート（`shared-default`）の名前を `shared-en` に変更します。
+3. `shared-default` という名前のシートを追加します。`shared-default` シートには、特定の言語にローカライズしたコンテンツが含まれています。
+4. `GOOGLETRANSLATE` 関数を使用して、ローカライズされたコンテンツを `shared-default` シートに追加します。
+`shared-default` シート内で数式を使用して、`shared-en` シートのセル D2 の内容をフランス語に翻訳することができます。使用する式は次のとおりです。
    `=GOOGLETRANSLATE('shared-en'!D2,"en","fr")`
 
-   ![Inquiry Translate スプレッドシート](/help/forms/assets/translate-enquiry-spreadsheet.png)
+   ![お問い合わせフォーム翻訳スプレッドシート](/help/forms/assets/translate-enquiry-spreadsheet.png)
 
-5. を使用したシートのプレビューとパブリッシュ [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+5. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) を使用して、シートをプレビューおよび公開します。
 
-以下を参照してください [spreadsheet](/help/forms/assets/enquirytranslate.xlsx) のフォーム定義を含む `enquiry` フォームは英語からフランス語に翻訳されています。
+英語からフランス語に翻訳された `enquiry` フォームのフォーム定義を含んだ[スプレッドシート](/help/forms/assets/enquirytranslate.xlsx)を参照できます。
 
-![お問い合わせ翻訳済みフォーム](/help/forms/assets/translate-form-french.png)
+![翻訳済みのお問い合わせフォーム](/help/forms/assets/translate-form-french.png)
 
-以下の URL を参照すると、フランス語翻訳でフォームを表示できます（https://main--portal--wkndforms.hlx.live/enquirytranslate）。
+URL（https://main--portal--wkndforms.hlx.live/enquirytranslate）を参照すると、フランス語翻訳でフォームを表示できます。
+
 
 ## SharePoint サイト内のフォームの翻訳{#translate-form-sharepoint}
 
-Microsoft® SharePoint サイトのフォームを翻訳するには、翻訳サービスを使用してフィールドのラベルを手動で変更する必要があります。 SharePoint サイト内のフォームを翻訳するには：
+Microsoft® SharePoint サイトのフォームを翻訳するには、任意の翻訳サービスを使用してフィールドのラベルを手動で変更する必要があります。SharePoint サイト内のフォームを翻訳するには、次の手順に従います。
 
-1. Microsoft®SharePointのAEM プロジェクトフォルダーに移動し、スプレッドシートを開きます。
-2. 既存のシートの名前を変更します（`shared-default`） ～ `shared-en`.
-3. という名前のシートを追加します `shared-default`. この `shared-default` シートには、特定の言語にローカライズするコンテンツが含まれています。
-4. ローカライズされたコンテンツの追加： `shared-default` 手動でシート化する。
+1. Microsoft® SharePoint の AEM プロジェクトフォルダーに移動し、スプレッドシートを開きます。
+2. 既存のシート（`shared-default`）の名前を `shared-en` に変更します。
+3. `shared-default` という名前のシートを追加します。`shared-default` シートには、特定の言語にローカライズしたコンテンツが含まれています。
+4. ローカライズされたコンテンツを手動で `shared-default` シートに追加します。
 
-   ![Inquiry Translate スプレッドシート](/help/forms/assets/translate-enquiry-sp-spreadsheet.png)
+   ![お問い合わせフォーム翻訳スプレッドシート](/help/forms/assets/translate-enquiry-sp-spreadsheet.png)
 
-5. を使用したシートのプレビューとパブリッシュ [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+5. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) を使用して、シートをプレビューおよび公開します。
 
-を参照してください。 [spreadsheet](/help/forms/assets/enquirytranslate-sp.xlsx) のフォーム定義を含む `enquiry` フォームは英語からフランス語に翻訳されています。
+英語からフランス語に翻訳された `enquiry` フォームのフォーム定義を含んだ[スプレッドシート](/help/forms/assets/enquirytranslate-sp.xlsx)を参照してください。
 
-![お問い合わせ翻訳済みフォーム](/help/forms/assets/translate-form-french.png)
+![翻訳済みのお問い合わせフォーム](/help/forms/assets/translate-form-french.png)
 
-以下の URL を参照すると、フランス語翻訳でフォームを表示できます（https://main--wefinance--wkndforms.hlx.live/enquirytranslate）。
+URL（https://main--wefinance--wkndforms.hlx.live/enquirytranslate）を参照すると、フランス語翻訳でフォームを表示できます。
+
 
 ## 既知の問題 {#known-issues}
 
-* フォームのラベルは、で指定されたローカライズされた言語に翻訳されます。 `shared-default` シートに表示されますが、エラーメッセージはブラウザーのデフォルト言語で表示されます。
+* `shared-default` シートで、フォームのラベルは指定のローカライズ先言語に翻訳されますが、エラーメッセージはブラウザーのデフォルト言語で表示されます。
 
   ![エラーメッセージ](/help/forms/assets/translate-error-message.png)
 
-* カレンダーを開くと、ブラウザーのデフォルト言語でカレンダードロップダウンが表示されます。
+* カレンダーを開くと、カレンダードロップダウンがブラウザーのデフォルト言語で表示されます。
 
   ![エラーメッセージ](/help/forms/assets/translate-calender-display.png)
 
 
 ## よくある質問 {#faq}
 
-**第四半期**：フォーム内で指定されたローカライズされた言語で入力を入力するにはどうすればよいですか？
+**Q**：指定のローカライズ先言語でフォームに入力するにはどうすればよいですか？
 
-**A**：特定のローカライズされた言語でテキストを入力するには、デバイスのキーボード設定を調整します。 その方法については、次のリンクを参照してください。
+**A**：特定のローカライズ先言語でテキストを入力するには、お使いのデバイスのキーボード設定を調整します。方法については、次のリンクを参照してください。
 
-* [他の言語で入力できるようにMacを設定する](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
-* [別の言語で入力できるように Windows をセットアップします](https://support.microsoft.com/en-us/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
-* [別の言語で入力できるように Android または iPhone/iPad を設定します](https://support.google.com/gboard/answer/7068494?hl=en&amp;co=GENIE.Platform%3DAndroid)
+* [別の言語で入力できるように Mac を設定する](https://support.apple.com/ja-in/guide/mac-help/mchlp1406/mac)
+* [別の言語で入力できるように Windows を設定する](https://support.microsoft.com/ja-jp/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
+* [別の言語で入力できるように Android または iPhone／iPad を設定する](https://support.google.com/gboard/answer/7068494?hl=ja&amp;co=GENIE.Platform%3DAndroid)
 
 
-**第四半期**：で使用されているロケールのリストを取得する方法 `GOOGLETRANSLATE` 機能？
+**Q**：`GOOGLETRANSLATE` 関数で使用されるロケールのリストを取得するにはどうすればよいですか？
 
-**A**：次を参照してください [Googleの公式ドキュメント](https://cloud.google.com/translate/docs/languages) GOOGLETRANSLATE で使用されるロケールの包括的なリスト。
+**A**：GOOGLETRANSLATE で使用されるロケールの包括的なリストについては、[Google の公式ドキュメント](https://cloud.google.com/translate/docs/languages)を参照してください。
 
 ## 関連トピック
 

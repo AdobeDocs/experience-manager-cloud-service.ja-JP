@@ -3,7 +3,7 @@ title: ユニバーサルエディターオーサリングエクスペリエン�
 description: コンテンツ作成者のニーズに合わせてユニバーサルエディターの UI をカスタマイズできる、様々な拡張ポイントやその他の機能について説明します。
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '302'
 ht-degree: 100%
 

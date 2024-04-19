@@ -3,7 +3,7 @@ title: モデル定義、フィールドおよびコンポーネントタイプ
 description: ユニバーサルエディターがプロパティパネルで編集できるフィールドとコンポーネントタイプの例について説明します。モデル定義を作成し、コンポーネントにリンクすることで、独自のアプリを実装する方法を理解します。
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1144'
 ht-degree: 100%
 

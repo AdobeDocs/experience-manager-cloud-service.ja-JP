@@ -4,9 +4,9 @@ description: Adobe Experience Manager as a Cloud Service での永続的な Grap
 feature: Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
 source-git-commit: 220e86f18e4a61304764753d8daecb68503e9fd0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '351'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -34,13 +34,13 @@ GraphQL で永続化されたクエリは、古い GraphQL タイプに基づい
 
 ## GraphQL エンドポイントが設定されていません {#graphql-endpoint-not-configured}
 
-永続クエリが `404` エラーコードと情報 `No suitable endpoint found`つまり、AEM環境にGraphQL エンドポイントが設定されていません。
+永続クエリが情報 `No suitable endpoint found` と共に `404` のエラーコードを返す場合は、AEM 環境に GraphQL エンドポイントが設定されていません。
 
 これを修正するには、[AEM の GraphQL エンドポイントを管理](/help/headless/graphql-api/graphql-endpoint.md)でエンドポイントを有効にして公開する手順に従います。
 
 ## GraphQL の永続クエリ URL にパスがありません {#missing-path-query-url}
 
-永続クエリが `400` 情報を含むエラーコード `Suffix: '/' does not contain a path`は、パスサフィックスを付けずにGraphQL サーブレットが呼び出されます。
+永続クエリが情報 `Suffix: '/' does not contain a path` と共に `400` のエラーコードを返す場合は、GraphQL サーブレットがパスのサフィックスなしで呼び出されています。
 
 このパターンは `/graphql/execute.json/thePath` です。
 

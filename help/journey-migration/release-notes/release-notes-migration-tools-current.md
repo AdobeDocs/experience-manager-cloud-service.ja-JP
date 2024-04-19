@@ -2,10 +2,11 @@
 title: AEM as a Cloud Service リリース 2024.01.0 の移行ツールのリリースノート
 description: AEM as a Cloud Service リリース 2024.01.0 の移行ツールのリリースノート
 feature: Release Information
-source-git-commit: 0c2dca09a1d0070765e89de833fdd1c7607010c6
-workflow-type: tm+mt
+exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
+source-git-commit: b40f2b9c40c5b198dd708d3c703329356d7d0540
+workflow-type: ht
 source-wordcount: '98'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -17,10 +18,8 @@ ht-degree: 67%
 
 ### リリース日 {#release-date-ctt}
 
-コンテンツ転送ツール v3.0.10 のリリース日は 2024 年 1 月 15 日です。
+コンテンツ転送ツール v3.0.10 のリリース日は 2024年1月15日（PT）です。
 
 ### 新機能 {#what-is-new-ctt}
 
-* コンテンツ転送ツールで、コレクションの移行がサポートされるようになりました。 ユーザーは、パスピッカーを使用してコレクションフォルダーを選択し、抽出を実行できます。
-
-
+* コンテンツ転送ツールでコレクションの移行がサポートされるようになりました。ユーザーはパスピッカーを使用してコレクションフォルダーを選択し、抽出を実行できます。

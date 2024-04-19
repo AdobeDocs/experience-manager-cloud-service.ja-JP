@@ -6,9 +6,9 @@ feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1631'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
+>この[コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
 API にアクセスするには、次の手順を実行します。
 
@@ -46,7 +46,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 >[!NOTE]
 >
->この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
+>この[コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
 ## データモデル {#data-model}
 
@@ -54,7 +54,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 >[!NOTE]
 >
->この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
+>この[コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
 ### フォルダー {#folders}
 
@@ -90,7 +90,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 >[!NOTE]
 >
->この [コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
+>この[コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
 [!DNL Experience Manager] では、フォルダーには次のコンポーネントが含まれています。
 

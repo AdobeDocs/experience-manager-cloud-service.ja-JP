@@ -6,9 +6,9 @@ feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
 source-git-commit: 9e09dc7a5226a2b8da7c796a8a8c4480b99eeb3b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1280'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 95%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/brandportal/brand-portal-publish-assets) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/brandportal/brand-portal-publish-assets) |
 | AEM as a Cloud Service | この記事 |
 
 Adobe Experience Manager（AEM）Assets 管理者の場合、アセット、フォルダー、およびコレクションを AEM Assets Brand Portal インスタンスに公開できます。また、アセットまたはフォルダーの公開ワークフローを後の日時にスケジューリングすることもできます。公開すると、Brand Portal ユーザーはアセット、フォルダーおよびコレクションにアクセスでき、さらに他のユーザーに配布できます。
@@ -77,7 +77,7 @@ AEM Assets から Brand Portal にアセットを公開する手順を次に示�
 
    <!--![publishlaterbp-1](assets/publishlaterbp-1.png)-->
 
-   ![後で公開](assets/publish-later.png)
+   ![後で公開する](assets/publish-later.png)
 
 1. 「**[!UICONTROL アクティベート日]**」を選択して時刻を指定します。「**[!UICONTROL 次へ]**」をクリックします。
 
@@ -130,8 +130,8 @@ AEM Assets から Brand Portal にアセットを公開する手順を次に示�
 
    フォルダーが Brand Portal への公開用のキューに入れられたことを示すメッセージが表示されます。Brand Portal のインターフェイスにログインして、公開されたフォルダーを確認します。
 
-1. **フォルダーを後で公開**
-アセットフォルダーを後で公開するようにスケジュールを設定するには、次の手順を実行します。
+1. **フォルダーを後で公開**：
+アセットフォルダーの公開を後の日時にスケジュールするには、次の手順に従います。
 
    1. 公開のスケジュールを設定するフォルダーを選択し、上部のツールバーから「**[!UICONTROL 公開を管理]**」を選択します。
    1. 「**[!UICONTROL アクション]**」から「**[!UICONTROL Brand Portal に公開]**」を選択します。
@@ -142,7 +142,7 @@ AEM Assets から Brand Portal にアセットを公開する手順を次に示�
 
       <!--![publishlaterbp](assets/publishlaterbp.png)-->
 
-   ![後で公開フォルダー](assets/publish-later-folder.png)
+   ![フォルダーを後で公開](assets/publish-later-folder.png)
 
    1. 「**[!UICONTROL 範囲]**」で選択内容を確認します。「**[!UICONTROL 次へ]**」をクリックします。
 
@@ -150,15 +150,15 @@ AEM Assets から Brand Portal にアセットを公開する手順を次に示�
 
       <!--![manageschedulepub](assets/manageschedulepub.png)-->
 
-   ![公開ワークフロー](assets/publish-workflow.png)
+   ![ワークフローの公開](assets/publish-workflow.png)
 
-### Brand Portalに公開されたファイルまたはフォルダーを表示 {#view-published-file-folder}
+### Brand Portal に公開されたファイルまたはフォルダーの表示 {#view-published-file-folder}
 
-1. Brand Portal インターフェイスにログインして、公開されたアセットを確認します（スケジュールを設定した日時に応じて異なります）。
+1. Brand Portal インターフェイスにログインして、公開されたアセットを確認します（スケジュールされた日時に応じて異なります）。
 
    ![bp_landingpage](assets/bp_landingpage.png)
 
-1. リスト表示に切り替え ![リスト表示](assets/list-view.svg) をクリックして、アセットの現在の公開ステータスを確認します。
+1. リスト表示 ![リスト表示](assets/list-view.svg) に切り替えて、アセットの現在の公開ステータスを確認します。
 
 <!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 

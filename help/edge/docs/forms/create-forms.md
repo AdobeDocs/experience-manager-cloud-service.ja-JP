@@ -4,9 +4,9 @@ description: 完璧なフォームを素早く作成しましょう。⚡ AEM Fo
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '805'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

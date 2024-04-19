@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 source-git-commit: 0a4f9edba00e65439a306024c604e6935c8bac47
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2721'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -144,7 +144,7 @@ MSM は、該当するコンソールの UI から各種オプションを使用
 
 >[!NOTE]
 >
->MSM は、との両方のページで使用できます。 [エクスペリエンスフラグメント](/help/sites-cloud/authoring/fragments/experience-fragments.md) これらのフラグメントはエクスペリエンス（ページ）の一部なので、
+>MSM はページと[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fragments/experience-fragments.md)の両方で使用できます。これらのフラグメントがエクスペリエンス（ページ）の一部だからです。
 
 >[!NOTE]
 >

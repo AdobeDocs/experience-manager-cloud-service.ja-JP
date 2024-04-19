@@ -6,9 +6,9 @@ feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 source-git-commit: 0ccca6194cfcd6e834b2e63337230f83cba96dcd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1640'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -41,10 +41,10 @@ ht-degree: 94%
    * **オリジナルを含める：**
 
       * `Select Include Originals` を選択し、デフォルトでリンク共有ダイアログに表示される `Include Originals` オプションを選択します。
-      * 方法を選択 `Include Originals` オプションはリンク共有ダイアログに表示されます。 [!UICONTROL 編集可能] ここで定義した設定をユーザーが初期設定で変更できるようにします。 （を使用） `Read-only` 設定は表示されますが、変更できません。 `Hidden` 設定を非表示にし、ここで初期設定で設定した値を使用します。
+      * リンク共有ダイアログで「`Include Originals`」オプションがどのように表示されるかを選択します。「[!UICONTROL 編集可能]」の場合は、「初期設定」で定義した設定をユーザーが変更できます。「`Read-only`」の場合は、設定は表示されますが、変更できません。「`Hidden`」の場合は、設定が非表示になり、「初期設定」で設定した値が使用されます。
    * **レンディションを含める：**
       * `Select Include Renditions` オプションを選択して、デフォルトでリンク共有ダイアログに表示される `Include Renditions` オプションを選択します。
-      * 方法を選択 `Include Renditions` オプションはリンク共有ダイアログに表示されます。 [!UICONTROL 編集可能] ここで定義した設定をユーザーが初期設定で変更できるようにします。 （を使用） `Read-only` 設定は表示されますが、変更できません。 `Hidden` 設定を非表示にし、ここで初期設定で設定した値を使用します。
+      * リンク共有ダイアログで「`Include Renditions`」オプションがどのように表示されるかを選択します。「[!UICONTROL 編集可能]」の場合は、「初期設定」で定義した設定をユーザーが変更できます。「`Read-only`」の場合は、設定は表示されますが、変更できません。「`Hidden`」の場合は、設定が非表示になり、「初期設定」で設定した値が使用されます。
 
 1. 「`Expiration date`」セクションの `Validity Period` フィールドに、リンクのデフォルトの有効期間を指定します。
 

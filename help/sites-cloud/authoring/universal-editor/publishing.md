@@ -3,7 +3,7 @@ title: ユニバーサルエディターを使用したコンテンツの公開
 description: ユニバーサルエディターでのコンテンツの公開方法と、アプリでの公開済みコンテンツの処理方法を説明します。
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
 source-git-commit: 785a0db1ba302b8730480651802f98e802abc6d4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '521'
 ht-degree: 100%
 

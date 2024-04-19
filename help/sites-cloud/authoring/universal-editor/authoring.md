@@ -3,7 +3,7 @@ title: ユニバーサルエディターを使用したコンテンツのオー�
 description: コンテンツ作成者がユニバーサルエディターを使用してコンテンツを作成する際に、簡単で直感的な方法を説明します。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2313'
 ht-degree: 100%
 

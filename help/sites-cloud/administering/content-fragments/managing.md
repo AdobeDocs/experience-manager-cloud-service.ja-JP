@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 source-git-commit: 404eb317562f974f72820c6e3aa019fbe043d7f7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2643'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 99%
    * フォルダーツリーを表示したり非表示にしたりできます
    * ツリーの特定のブランチを選択できます
    * これは、ネストされたフォルダーを表示するようにサイズ変更できます
-   * コンテンツフラグメントの表示または非表示を選択できます [アセット](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+   * コンテンツフラグメントまたは[アセット](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)の表示を選択できます
 * 右側のメインパネル
    * 選択したツリーのブランチにあるすべてのコンテンツフラグメントのリストを表示します。
       * 選択したフォルダーのコンテンツフラグメントと、すべての子フォルダーが表示されます:
@@ -454,7 +454,7 @@ ht-degree: 99%
 * 一連の述語
    * コンテンツフラグメントモデル、ローカライゼーション、タグ、ステータスフィールドなど
    * 1 つ以上の述語を選択して組み合わせ、フィルターを作成できます
-* **サブフォルダー項目を除外**&#x200B;を使用すると、サブフォルダーに保存されたコンテンツフラグメントを除外できます
+* **サブフォルダー項目を除外**&#x200B;を使用すると、サブフォルダーに保存されているコンテンツフラグメントを除外できます
 * 設定した内容の&#x200B;**保存**
 * 再利用のために保存した検索条件フィルターを取得するオプション
 

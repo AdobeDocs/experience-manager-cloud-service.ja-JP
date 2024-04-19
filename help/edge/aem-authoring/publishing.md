@@ -4,7 +4,7 @@ description: コンテンツの公開が Edge 配信サービスと連携する�
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
 source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
 ht-degree: 100%
 

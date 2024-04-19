@@ -1,14 +1,14 @@
 ---
 title: Dynamic Media ニュースレターアーカイブ
-description: このニュースレターは、Dynamic MediaとDynamic Media Classicをすばやく習得して、すぐに価値を実現できるようにすることを目的としています。
+description: このニュースレターは、Dynamic Media および Dynamic Media Classic の使い方を理解して、すぐに価値を実感できるように設計されています。
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
 source-git-commit: 23de1969691cb6669df049581c053823a80f4922
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '941'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
