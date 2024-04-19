@@ -1,19 +1,19 @@
 ---
 title: Edge Delivery Services を使用した AEM オーサリングの開発者向け入門ガイド
-description: このガイドでは、Edge Delivery Services とコンテンツオーサリング用のユニバーサルエディターを使用して、新しい Adobe Experience Manager サイトを導入および実行する方法について説明します。
+description: このガイドでは、Edge Delivery Services とコンテンツオーサリング用のユニバーサルエディターを使用して、新しい Adobe Experience Manager サイトを稼動させる方法について説明します。
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 source-git-commit: 8bdca5357666841c4471170ab3b97476b6be63b6
 workflow-type: tm+mt
 source-wordcount: '1296'
-ht-degree: 87%
+ht-degree: 98%
 
 ---
 
 
 # Edge Delivery Services を使用した AEM オーサリングの開発者向け入門ガイド {#edge-dev-getting-started}
 
-このガイドでは、Edge Delivery Services とコンテンツオーサリング用のユニバーサルエディターを使用して、新しい Adobe Experience Manager サイトを導入および実行する方法について説明します。
+このガイドでは、Edge Delivery Services とコンテンツオーサリング用のユニバーサルエディターを使用して、新しい Adobe Experience Manager サイトを稼動させる方法について説明します。
 
 ## 前提条件 {#prerequisites}
 
@@ -30,9 +30,9 @@ AEM には 2 種類の異なるコンテンツエディターが用意されて�
 * **ユニバーサルエディター** - 新しいサイトのデフォルトの選択肢です。
 * **AEM ページエディター** - 既存の AEM Sites から Edge Delivery Services に移行する場合に選択します。　
 
-このガイドでは、ユニバーサルエディターを活用して、Edge Delivery Services を使用した AEM プロジェクトに焦点を当てます。ドキュメントを参照 [AEMでのEdge Delivery Servicesの使用](/help/edge/using.md) 適切なエディターの選択と、既存のAEM サイトのEdge Delivery Servicesへの移行に関する詳細を説明します。
+このガイドでは、ユニバーサルエディターを活用して、Edge Delivery Services を使用した AEM プロジェクトに焦点を当てます。適切なエディターの選択および既存の AEM サイトの Edge Delivery Services への移行について詳しくは、[AEM での Edge Delivery Services の使用](/help/edge/using.md)ドキュメントを参照してください。
 
-## Edge Delivery Services用に開発する際の中心概念 {#core-concepts}
+## Edge Delivery Services 向けに開発する場合の中心概念 {#core-concepts}
 
 Edge 配信サービスは、ブロックの概念に基づいています。AEM には、プロジェクトのニーズに合わせて拡張できる事前定義済みのブロックの包括的なライブラリが付属しています。Edge 配信サービスプロジェクトのコードは、GitHub で管理されます。
 
@@ -111,7 +111,7 @@ Edge Delivery Services では GitHub を活用しているので、GitHub リポ
 
    ![paths.json](assets/edge-dev-getting-started/paths.png)
 
-1. デフォルトのマッピングには、リポジトリの名前が使用されます。 プロジェクトに必要に応じて、以下を使用してデフォルトのマッピングを更新します `/content/<site-name>/:/` をクリックして、 **変更をコミット…**.
+1. デフォルトのマッピングでは、リポジトリの名前が使用されます。プロジェクトの必要に応じて、デフォルトのマッピングを `/content/<site-name>/:/` に更新し、「**変更をコミット...**」をクリックします。
 
    * 独自の `<site-name>` を入力します。後の手順で必要になります。
    * マッピングは、Edge Delivery Services に対して、AEM リポジトリ内のコンテンツをサイトの URL にマッピングする方法を指示します。
@@ -130,7 +130,7 @@ GitHub プロジェクトが完成したら、プロジェクトで使用でき�
 >
 >ユニバーサルエディターを使用してサイトを編集するには、Chromium ベースのブラウザーを使用する必要があります。
 
-1. GitHub から最新のAEM オーサリングとEdge Delivery Servicesのサイトテンプレートを次の場所でダウンロードします。 [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+1. GitHub（[`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)）から最新の AEM オーサリングと Edge Delivery Services サイトテンプレートをダウンロードします。
 
 1. AEM as a Cloud Service オーサリングインスタンスにログインし、サイトコンソールに移動して、**作成**／**テンプレートからサイト**&#x200B;をタップまたはクリックします。
 
@@ -142,7 +142,7 @@ GitHub プロジェクトが完成したら、プロジェクトで使用でき�
 
 1. GitHub からダウンロードしたAEM オーサリングとEdge Delivery Servicesのサイトテンプレートをアップロードします。
 
-   * テンプレートは 1 回だけアップロードする必要があります。 アップロードした後は、再利用して追加のサイトを作成できます。
+   * テンプレートは 1 回だけアップロードする必要があります。アップロードした後は、追加サイトの作成に再利用できます。
 
 1. テンプレートが読み込まれると、ウィザードに表示されます。タップまたはクリックして選択し、「**次へ**」をタップまたはクリックします。
 
@@ -192,11 +192,11 @@ GitHub プロジェクトが完成したら、プロジェクトで使用でき�
 
 ## 次の手順 {#next-steps}
 
-これで、Edge Delivery Services プロジェクトを使用したAEMのオーサリングが完了したので、独自のブロックの作成とスタイル設定を開始できます。
+これで Edge Delivery Services プロジェクトを使用した AEM オーサリングが動作するようになったので、独自のブロックの作成とスタイル設定を開始できます。
 
 詳細については、[ユニバーサルエディターで使用するために実装されたブロックの作成](/help/edge/aem-authoring/create-block.md)ガイドを参照してください。
 
 >[!TIP]
 >
->AEM as a Cloud Service as a コンテンツソースを使用したAEM オーサリングが可能な新しいEdge Delivery Servicesプロジェクトの作成に関するエンドツーエンドのチュートリアルについては、次を参照してください。 [このAEM GEMs ウェビナー](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>AEM as a Cloud Service をコンテンツソースとする AEM オーサリングに有効な新しい Edge Delivery Services プロジェクトの作成に関するエンドツーエンドのチュートリアルについては、[この AEM GEM ウェビナー](https://experienceleague.adobe.com/ja/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)をご覧ください。
 

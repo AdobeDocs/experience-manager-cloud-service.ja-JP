@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
+source-git-commit: f2a3dd21edc2a3b3f4689c1c09184b3cd4268af1
 workflow-type: tm+mt
-source-wordcount: '4881'
-ht-degree: 98%
+source-wordcount: '4885'
+ht-degree: 99%
 
 ---
 
@@ -173,8 +173,8 @@ ht-degree: 98%
          + [リリースノート（2021.10.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Workfront for Experience Manager 拡張コネクタのリリースノート{#workfront}
       + [Workfront for Experience Manager 拡張コネクタの最新リリースノート](/help/assets/release-notes-enhanced-connector-workfront.md)
-   + バリエーションを生成するためのリリースノート {#generate-variations}
-      + [バリエーションを生成するための最新のリリースノート](/help/generative-ai/release-notes-generate-variations.md)
+   + 「バリエーションを生成」のリリースノート {#generate-variations}
+      + [「バリエーションを生成」の最新リリースノート](/help/generative-ai/release-notes-generate-variations.md)
    + [新機能](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service の主要な変更点](/help/release-notes/aem-cloud-changes.md)
    + [非推奨（廃止予定）および削除された機能と API](/help/release-notes/deprecated-removed-features.md)
@@ -560,6 +560,7 @@ ht-degree: 98%
       + [アセットの検索と検出](/help/assets/search-assets-view.md)
       + [アセット管理タスク](/help/assets/manage-organize-assets-view.md)
       + [画像の編集](/help/assets/edit-images-assets-view.md)
+      + [レンディションの表示と管理](/help/assets/renditions.md)
       + [アセットメタデータの管理](/help/assets/metadata-assets-view.md)
       + [アセットを共有する](/help/assets/share-links-for-assets-view.md)
       + [コレクションの管理](/help/assets/manage-collections-assets-view.md)
@@ -578,7 +579,7 @@ ht-degree: 98%
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
    + Adobe Express との統合 {#integration-adobe-express}
-      + [Adobe Expressとのネイティブ統合](/help/assets/native-integration-adobe-express.md)
+      + [Adobe Express とのネイティブ統合](/help/assets/native-integration-adobe-express.md)
 
    + Creative Cloudとの統合 {#integration-creative-cloud}
       + [AEM Assets を Creative Cloud に接続](/help/assets/connect-assets-with-creative-cloud.md)
@@ -647,8 +648,8 @@ ht-degree: 98%
             + [コアコンポーネントに基づくアダプティブフォームのロケールの追加](/help/forms/supporting-new-language-localization-core-components.md)
             + [カスタム関数の作成と使用](/help/forms/create-and-use-custom-functions.md)
             + [コアコンポーネントに基づくアダプティブフォームへのルールの追加](/help/forms/rule-editor-core-components.md)
-            + [アダプティブフォームへのバージョン、コメント、注釈の追加](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-            + [アダプティブFormsの比較](/help/forms/compare-forms.md)
+            + [アダプティブフォームへのバージョン管理、コメントおよび注釈の追加](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+            + [アダプティブフォームの比較](/help/forms/compare-forms.md)
       + 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
          + PDF フォームのアダプティブフォームへの変換 {#afcs}
             + [自動フォーム変換サービスの概要](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ja)
@@ -775,7 +776,7 @@ ht-degree: 98%
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM ストアフロント {#storefront}
       + [はじめに](/help/commerce-cloud/getting-started.md)
-      + オーサリング{#authoring}
+      + オーサリング {#authoring}
          + [コマースエクスペリエンス](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
          + [製品コックピット](/help/commerce-cloud/authoring/product-cockpit.md)
          + [マルチテンプレートの使用](/help/commerce-cloud/authoring/multi-template-usage.md)
@@ -797,7 +798,7 @@ ht-degree: 98%
    + [FAQ](/help/commerce-cloud/faq.md)
 + Edge 配信サービス {#edge-delivery}
    + [Edge 配信サービスの概要](/help/edge/overview.md)
-   + [AEMでのEdge Delivery Servicesの使用](/help/edge/using.md)
+   + [AEM での Edge Delivery の使用](/help/edge/using.md)
    + AEM ベースのオーサリング {#aem-authoring}
       + [Edge 配信向けのコンテンツのオーサリング](/help/edge/aem-authoring/authoring.md)
       + [Edge 配信向けのコンテンツの公開](/help/edge/aem-authoring/publishing.md)
@@ -832,7 +833,7 @@ ht-degree: 98%
       + [Akamai の設定](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Fastly の設定](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [リダイレクト](/help/edge/docs/redirects.md)
-   + Formsの構築 {#build-forms}
+   + フォームの作成 {#build-forms}
       + [概要](/help/edge/docs/forms/overview.md)
       + はじめに {#getting-started-eds-forms}
          + [はじめに](/help/edge/docs/forms/tutorial.md)
@@ -850,10 +851,10 @@ ht-degree: 98%
          + [翻訳](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [カスタムコンポーネント](/help/edge/docs/forms/custom-components-forms.md)
-         + [フォームのリアルタイムユーザー監視](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
+         + [フォームのリアルタイムユーザーモニタリング](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + 参照 {#forms-references}
          + [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
-   + エッジ配信リソース {#resources}
+   + Edge Delivery リソース {#resources}
       + Sidekick {#sidekick}
          + [Sidekick の使用](/help/edge/docs/sidekick.md)
          + [拡張機能のインストール](/help/edge/docs/sidekick-extension.md)
@@ -896,7 +897,7 @@ ht-degree: 98%
       + [最適化された GraphQL フィルタリング用コンテンツフラグメントの更新](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [GraphQL クエリの例](/help/headless/graphql-api/sample-queries.md)
       + [GraphQL クエリのトラブルシューティング](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [コンテンツフラグメントとモデルの OpenAPI](/help/headless/content-fragment-openapis.md)
+   + [コンテンツフラグメントとコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md)
    + [Assets HTTP API でのコンテンツフラグメントのサポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=ja)
    + セキュリティ {#security}
       + [権限](/help/headless/security/permissions.md)
@@ -940,7 +941,7 @@ ht-degree: 98%
          + [コンテンツフラグメントでの参照の使用について](/help/journey-headless/author/references.md)
          + [コンテンツフラグメントのメタデータとタグの定義について](/help/journey-headless/author/metadata-tagging.md)
 + 生成 AI {#generative-ai}
-   + [バリエーションの生成](/help/generative-ai/generate-variations.md)
+   + [バリエーションを生成](/help/generative-ai/generate-variations.md)
 + 実装 {#implementing}
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
    + Cloud Manager の使用 {#using-cloud-manager}

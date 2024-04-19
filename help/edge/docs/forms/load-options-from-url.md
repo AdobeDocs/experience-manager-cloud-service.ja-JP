@@ -1,16 +1,16 @@
 ---
-title: URL からドロップダウン リスト オプションを読み込む
-description: ドロップダウンリストのオプションは個別のスプレッドシートに含まれ、指定された URL を介してプライマリスプレッドシートに読み込まれます。
+title: URL からのドロップダウンリストオプションの読み込み
+description: ドロップダウンリストオプションは別個のスプレッドシートに含まれており、指定された URL を介してプライマリスプレッドシートに読み込まれます。
 feature: Edge Delivery Services
-source-git-commit: 2affe155b285986128487043fcc4f2938fc15842
+exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
+source-git-commit: e61ef529dc562862bd02d7767e45de3e2ec4983b
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 3%
+ht-degree: 59%
 
 ---
 
-
-# URL からドロップダウンリストのオプションを読み込む
+# URL からのドロップダウンリストオプションの読み込み
 
 Formsには多くの場合、ユーザーが事前定義済みのオプションから選択するためのドロップダウンメニューが含まれています。 これらのオプションは通常、フォーム内で定義されますが、長いリストの管理は面倒な場合があります。 このガイドでは、URL を使用して別のスプレッドシートからドロップダウンオプションを読み込み、フォームのオーサリングを改善する方法について説明します。
 
@@ -28,10 +28,10 @@ Formsには多くの場合、ユーザーが事前定義済みのオプション
 
 この記事を最後まで読むと、以下の操作を実行できるようになります。
 
-* [別のスプレッドシートでオプションを定義する](#define-options)
-* [ドロップダウンリストのオプションを読み込む URL を追加](#add-url)
+* [別個のスプレッドシートでオプションを定義する](#define-options)
+* [ドロップダウンリストのオプションを読み込む URL を追加する](#add-url)
 
-## 別のシートでオプションを定義する {#define-options}
+## 別個のシートでオプションを定義する {#define-options}
 
 別のスプレッドシートでのオプションの定義
 
@@ -52,38 +52,37 @@ Formsには多くの場合、ユーザーが事前定義済みのオプション
 
    ![国のドロップダウン](/help/forms/assets/drop-down-country-options.png)
 
-1. のプレビューと公開 `shared-country` を使用したシート [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) を使用して、`shared-country` シートをプレビューし公開します。
 
-   を表示する URL を参照してください。 `shared-country` シート : https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country
+   `shared-country` シートを表示する URL https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country を参照してください。
+
 
 >[!NOTE]
 >
-> `?sheet=country` は、URL に追加されるクエリパラメーターです。 このパラメーターは、に基づいてフィルタリングされた JSON を示します `shared-country` シート。 様々な国に関連する情報を含む JSON ファイルにリダイレクトされます。
+> `?sheet=country` は、URL に追加されたクエリパラメーターです。このパラメーターは、`shared-country` シートに基づいてフィルタリングされた JSON を示します。様々な国に関連する情報を含んだ JSON ファイルにリダイレクトされます。
 
-## ドロップダウンリストのオプションを読み込む URL を追加{#add-url}
+## ドロップダウンリストのオプションを読み込む URL を追加する{#add-url}
 
-この `Options` のプロパティ `select` フィールドには URL を指定できます。 URL は、のオプションとして使用される JSON 配列を返します。 `Destination` ドロップダウンリスト。 ドロップダウンリストのオプションを読み込む URL を追加するには：
+`select` フィールドの `Options` プロパティには URL を指定できます。その URL は、`Destination` ドロップダウンリストのオプションとして使用される JSON 配列を返します。ドロップダウンリストのオプションを読み込む URL を追加するには、次の手順に従います。
 
-1. Microsoft、SharePoint®Google ドライブのAEM プロジェクトフォルダーに移動し、スプレッドシートを開きます。 また、フォームの新しいスプレッドシートを作成することもできます。
-1. 次の URL をコピー `shared-country` シートを作成して、に貼り付ける `Options` 列： `Destination` フィールド。
+1. Microsoft® SharePoint または Google ドライブ上の AEM プロジェクトフォルダーに移動し、スプレッドシートを開きます。また、フォーム用の新しいスプレッドシートを作成することもできます。
+1. `shared-country` シートの URL をコピーして、`Destination` フィールドの `Options` 列にペーストします。
 
    ![照会スプレッドシート](/help/forms/assets/drop-down-enquiry.png)
 
-1. を使用したシートのプレビューとパブリッシュ [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) を使用して、シートをプレビューし公開します。
 
 
    ![国のドロップダウン](/help/forms/assets/load-dropdown-options-form.png)
 
-以下を参照してください [問い合わせスプレッドシート](/help/forms/assets/enquiry-options.xlsx) 読み込む URL を追加するドロップダウンリストオプション。
+[照会スプレッドシート](/help/forms/assets/enquiry-options.xlsx)を参照して、ドロップダウンリストのオプションを読み込む URL を追加できます。
 
-URL を読み込むフォーム定義に統合した後、ドロップダウンリストのオプションに `Destination` ドロップダウンが URL から表示されるようになります。
+ドロップダウンリストのオプションを読み込む URL をフォーム定義に統合したら、`Destination` ドロップダウンのオプションが URL から表示されるようになります。
 
-以下の URL を参照してください。この URL には、 `enquiry` 個別のシートに保存されたオプションを表示するフォーム：
+以下の URL を参照してください。別個のシートに保存されたオプションを表示する `enquiry` フォームが表示されます。
 
 https://main--wefinance--wkndforms.hlx.live/enquiry-form
 
 ## 関連トピック
 
 {{see-more-forms-eds}}
-
-
