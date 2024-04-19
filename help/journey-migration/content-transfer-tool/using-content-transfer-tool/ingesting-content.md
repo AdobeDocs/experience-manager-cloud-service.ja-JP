@@ -3,7 +3,7 @@ title: コンテンツの Cloud Service への取り込み
 description: Cloud Acceleration Manager を使用して、移行セットから移行先の Cloud Service インスタンスにコンテンツを取り込む方法について説明します。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2876'
 ht-degree: 100%
 
