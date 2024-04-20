@@ -2,18 +2,19 @@
 title: ビデオを編集
 description: を使用したビデオの編集 [!DNL Adobe Express] を利用したオプションと、更新したビデオをバージョンとして保存します。
 role: User
-source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
+exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
+source-git-commit: 6eb9cfbb463fc976c9101acb434b3b39131c8067
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 19%
+source-wordcount: '779'
+ht-degree: 16%
 
 ---
 
 # でビデオを編集する [!DNL Assets Essentials] {#edit-videos}
 
-埋め込みを使用すると、ビデオを最適なサイズに簡単に変換できます [!DNL Adobe Express] クイックアクション。 でのクイックアクション [!DNL Assets Essentials] powered by [!DNL Adobe Express] には、ビデオの切り抜き、ビデオのサイズ変更、ビデオのトリミング、ビデオのGIFへの変換など、使いやすいビデオ編集オプションが用意されています。
+を組み込んだ Assets ユーザーは、ビデオコンテンツのバリエーションを簡単に作成できます [!DNL Adobe Express] ビデオのクイックアクション。 でのクイックアクション [!DNL Assets Essentials] powered by [!DNL Adobe Express] には、ビデオの切り抜き、ビデオのサイズ変更、ビデオのトリミング、ビデオのGIFへの変換など、使いやすいビデオ編集オプションが用意されています。
 
-ビデオの編集後、新しいビデオを新しいバージョンとして保存できます。 バージョン管理を使用すると、必要に応じて後で元のアセットに戻すことができます。ビデオを編集するには、ビデオの詳細に移動して、 **[!UICONTROL ビデオを編集]**. または、アセットを選択して「詳細」をクリックし、をクリックします ![はさみ](assets/do-not-localize/cut.svg) アイコンは右側のパネルに表示されます。
+ビデオを編集するには、ビデオの詳細に移動して、 [!UICONTROL ビデオを編集]. または、アセットを選択して「詳細」をクリックし、をクリックします ![はさみ](assets/do-not-localize/cut.svg) アイコンは右側のパネルに表示されます。 ビデオの編集後、新しいビデオを新しいバージョンまたは新しいアセットとして保存できます。
 
 ## 前提条件 {#prerequisites}
 
@@ -38,7 +39,7 @@ ht-degree: 19%
 
 ### ビデオのサイズ変更 {#resize-video-using-express}
 
-ビデオを特定のサイズに変更するのが一般的なユースケースです。 [!DNL Assets Essentials] では、特定のサイズに対応する新しい解像度を事前に計算しておくことで、一般的なサイズに合わせてビデオのサイズをすばやく変更できます。 次を使用してビデオのサイズを変更します [!DNL Assets Essentials]は、次の手順に従います。
+特定のチャネルに配信するために、DAM の最終的なビデオコンテンツのサイズを変更する必要が出ることがよくあります。 [!DNL Assets Essentials] では、一般的なソーシャルチャネルで必要とされるサイズに合わせてビデオのサイズを簡単に変更できます。また、カスタム解像度に合わせてサイズを変更することもできます。 次を使用してビデオのサイズを変更します [!DNL Assets Essentials]を設定するには、次の手順を実行します。
 
 1. ビデオを選択し、 **[!UICONTROL 編集]**.
 2. クリック **[!UICONTROL ビデオのサイズ変更]** 左側のペインで使用可能なクイックアクションから。
@@ -52,7 +53,7 @@ ht-degree: 19%
 
 ### ビデオをトリミング {#trim-video-using-express}
 
-のクイックビデオトリマー [!DNL Assets Essentials] powered by [!DNL Adobe Express] ビデオを簡単にトリミングできます。 以下の手順を実行します。
+大きなビデオのクリップを使用する必要がある場合は、 **[!UICONTROL ビデオをトリミング]** ビデオのセクションを選択してトリミングする機能。 以下の手順を実行します。
 
 1. ビデオを選択し、 **[!UICONTROL 編集]**.
 2. クリック **[!UICONTROL ビデオをトリミング]** 左側のペインで使用可能なクイックアクションから。
@@ -80,13 +81,13 @@ Adobe Expressを使用して、MP4 ビデオをGIF形式にすばやく変換で
 
 ## 制限事項 {#limitations-video-adobe-express}
 
-* MP4 ビデオタイプのみがサポートされます。
+* 編集には MP4 形式のビデオのみがサポートされます。
 
-* サポートされる最大ファイルサイズ：200 MB
+* サポートされるソースファイルの最大サイズは 200 MB です。
 
-* ビデオの最小サイズは 46 ピクセル、最大サイズは 3840 ピクセルです。
+* サポートされるビデオは、どの側も 46 ピクセルを超え、3840 ピクセル未満です。
 
-* サポートされている web ブラウザーは、Google Chrome、Firefox、Safari、Edge です。
+* サポートされている web ブラウザーは、Google Chrome、Firefox、Safari および Edge です。
 
 * 機能は、web ブラウザーの匿名モードでは開けません。
 
