@@ -2,10 +2,10 @@
 title: ログへのアクセスと管理
 description: AEM as a Cloud Service での開発プロセスを支援するために、ログにアクセスして管理する方法について説明します。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 178af74512e74ff401588b68c73fa4661acec704
-workflow-type: ht
-source-wordcount: '346'
-ht-degree: 100%
+source-git-commit: fa28d2fa83fb35fe80692c5f94661fa4c32a02a9
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 98%
 
 ---
 
@@ -15,6 +15,8 @@ ht-degree: 100%
 AEM as a Cloud Service での開発プロセスを支援するために、ログにアクセスして管理する方法について説明します。
 
 **概要**&#x200B;ページまたは環境の詳細ページの&#x200B;**環境**&#x200B;カードを使用して、選択した環境で使用可能なログファイルのリストにアクセスできます。
+
+ログは 7 日間保持されます。
 
 ## ログのダウンロード {#download-logs}
 
