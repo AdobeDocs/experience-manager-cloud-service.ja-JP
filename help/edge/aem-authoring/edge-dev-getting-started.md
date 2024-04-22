@@ -3,10 +3,10 @@ title: Edge Delivery Services を使用した AEM オーサリングの開発者
 description: このガイドでは、Edge Delivery Services とコンテンツオーサリング用のユニバーサルエディターを使用して、新しい Adobe Experience Manager サイトを稼動させる方法について説明します。
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 8bdca5357666841c4471170ab3b97476b6be63b6
+source-git-commit: fc5ffe334873b7b98565f38d5664313b26d5f635
 workflow-type: tm+mt
-source-wordcount: '1296'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -184,7 +184,7 @@ GitHub プロジェクトが完成したら、プロジェクトで使用でき�
 
 1. 同じブラウザーで新しいタブを開き、新しいサイトの URL に移動します。
 
-   * `https://main--<site-name>--<owner>.hlx.page`
+   * `https://main--<repository-name>--<owner>.hlx.page`
 
 1. 公開されたコンテンツを確認します。
 
