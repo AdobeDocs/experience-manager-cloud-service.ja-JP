@@ -3,10 +3,10 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 5771a6afedeb85188e89700d439a9bac18e01fdc
-workflow-type: ht
-source-wordcount: '5359'
-ht-degree: 100%
+source-git-commit: d0814d3feb9ad14ddd3372851a7b2df4b0c81125
+workflow-type: tm+mt
+source-wordcount: '5365'
+ht-degree: 99%
 
 ---
 
@@ -1125,7 +1125,7 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
 また、次の事項にも注意する必要があります。
 
-* GraphQL クエリに 2 つ（またはそれ以上）のモデルで同じ名前のフィールドが含まれている場合、フィールド競合エラーが返されます。
+* GraphQL クエリに 2 つ（または複数）のモデルに同じ名前のフィールドが含まれ、次の条件を満たす場合、フィールド競合エラーが返されます。
 
    * したがって
 
