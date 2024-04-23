@@ -2,10 +2,10 @@
 title: WAF ルールを含むトラフィックフィルタールール
 description: Web アプリケーションファイアウォール（WAF）ルールを含むトラフィックフィルタールールの設定
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: d210fed56667b307a7a816fcc4e52781dc3a792d
+source-git-commit: d118cd57370a472dfe752c6ce7e332338606b898
 workflow-type: tm+mt
-source-wordcount: '3788'
-ht-degree: 96%
+source-wordcount: '3817'
+ht-degree: 94%
 
 ---
 
@@ -143,7 +143,10 @@ data:
   trafficFilters:
     rules:
       - name: "path-rule"
-        when: { reqProperty: path, equals: /block-me }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /block-me }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
@@ -252,6 +255,7 @@ when:
 | SQLI | SQL インジェクション | SQL インジェクションとは、任意のデータベースクエリを実行して、アプリケーションへのアクセス権や権限情報を取得したりしようとする試みです。 |
 | バックドア | バックドア | バックドア信号は、共通のバックドアファイルがシステム上に存在するかどうかの判断を試みるリクエストです。 |
 | CMDEXE | コマンドの実行 | コマンドの実行とは、ユーザー入力による任意のシステムコマンドを通じて、ターゲットシステムを制御したり損傷したりしようとする試みです。 |
+| CMDEXE-NO-BIN | コマンドの実行（を除く） `/bin/` | と同じレベルの保護を提供 `CMDEXE` で偽陽性を無効にしている間 `/bin` これは、AEMのアーキテクチャが原因です。 |
 | XSS | クロスサイトスクリプティング | クロスサイトスクリプティングとは、悪意のある JavaScript コードを通じてユーザーのアカウントまたは web ブラウジングセッションをハイジャックしようとする試みです。 |
 | トラバーサル | ディレクトリトラバーサル | ディレクトリトラバーサルとは、機密情報を取得することを目的として、システム全体の権限フォルダーを移動しようとする試みです。 |
 | USERAGENT | 攻撃ツール | 攻撃ツールでは、自動化されたソフトウェアを使用して、セキュリティの脆弱性を特定したり、発見された脆弱性の悪用を試みたりします。 |
@@ -331,7 +335,7 @@ data:
 
 **例 3**
 
-このルールは、クエリパラメーター `foo` を含んだリクエストをブロックしますが、IP 192.168.1.1 からのリクエストをすべて許可します。
+このルールは、クエリパラメーターを含むパブリッシュ上のリクエストをブロックします `foo`ただし、IP 192.168.1.1 からのすべてのリクエストは許可されます。
 
 ```
 kind: "CDN"
@@ -342,7 +346,10 @@ data:
   trafficFilters:
     rules:
       - name: "block-request-that-contains-query-parameter-foo"
-        when: { queryParam: url-param, equals: foo }
+        when:
+          allOf:
+            - { queryParam: url-param, equals: foo }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
       - name: "allow-all-requests-from-ip"
@@ -353,7 +360,7 @@ data:
 
 **例 4**
 
-このルールは、パス `/block-me` へのリクエストをブロックし、`SQLI` または `XSS` パターンに一致するすべてのリクエストをブロックします。この例には、`SQLI` および `XSS` [WAF フラグ](#waf-flags-list)を参照する WAF トラフィックフィルタールールが含まれているので、別途ライセンスが必要になります。
+このルールはパスへのリクエストをブロックします `/block-me` パブリッシュ時に、に一致するすべてのリクエストをブロックします。 `SQLI` または `XSS` パターン。 この例には、`SQLI` および `XSS` [WAF フラグ](#waf-flags-list)を参照する WAF トラフィックフィルタールールが含まれているので、別途ライセンスが必要になります。
 
 ```
 kind: "CDN"
@@ -364,7 +371,10 @@ data:
   trafficFilters:
     rules:
       - name: "path-rule"
-        when: { reqProperty: path, equals: /block-me }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /block-me }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
@@ -416,7 +426,7 @@ data:
 
 レート制限は、CDN POP ごとに計算されます。例えば、モントリオール、マイアミ、ダブリンの POP のトラフィックレートがそれぞれ 1 秒あたり 80、90、120 リクエストであり、レート制限ルールが上限 100 に設定されているとします。その場合、ダブリンへのトラフィックのみがレート制限されます。
 
-レート制限は、エッジに到達するトラフィック、エッジに到達するトラフィック、またはエラー数に基づいて評価されます。
+レート制限は、エッジに到達するトラフィック、接触チャネルに到達するトラフィック、またはエラー数に基づいて評価されます。
 
 ### rateLimit の構造 {#ratelimit-structure}
 
@@ -425,7 +435,7 @@ data:
 | limit | 10～10000 の整数 | 必須 | ルールがトリガーされる、1 秒あたりのリクエスト数のリクエストレート（CDN POP あたり）です。 |
 | window | 整数列挙：1、10 または 60 | 10 | リクエストレートが計算されるサンプリングウィンドウ（秒単位）です。カウンターの精度は、ウィンドウのサイズによって異なります（ウィンドウが大きいほど精度が高くなります）。例えば、1 秒のウィンドウでは 50％の精度、60 秒のウィンドウでは 90％の精度が期待できます。 |
 | penalty | 60～3600 の整数 | 300（5 分） | 一致するリクエストがブロックされる期間（秒単位）です（最も近い分に四捨五入）。 |
-| 回数 | all, fetch, error | all | エッジトラフィック（すべて）、オリジントラフィック（フェッチ）、またはエラー数に基づいて評価されます。 |
+| 回数 | all, fetches, errors | all | エッジトラフィック（すべて）、オリジントラフィック（フェッチ）、またはエラー数（エラー）に基づいて評価されます。 |
 | groupBy | 配列[ゲッター] | なし | レートリミッターカウンターは、一連のリクエストプロパティ（clientIp など）によって集計されます。 |
 
 
@@ -459,7 +469,7 @@ data:
 
 **例 2**
 
-最後の 60 秒間に平均 100 リクエスト/秒（CDN POP あたり）を超えると、パス /critical/resource 上のリクエストを 60 秒間ブロックします。
+10 秒の時間枠で（CDN POP ごとに）オリジンに対するリクエストの平均が秒あたり 100 件を超えた場合、パス /critical/resource のリクエストを 60 秒間ブロックします。
 
 ```
 kind: "CDN"
@@ -470,10 +480,13 @@ data:
   trafficFilters:
     rules:
       - name: rate-limit-example
-        when: { reqProperty: path, equals: /critical/resource }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /critical/resource }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
-        rateLimit: { limit: 100, window: 60, penalty: 60, count: all }
+        rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
 
 ## トラフィックフィルタールールアラート {#traffic-filter-rules-alerts}
@@ -498,7 +511,10 @@ data:
   trafficFilters:
     rules:
       - name: "path-rule"
-        when: { reqProperty: path, equals: /block-me }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /block-me }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
           experimental_alert: true
@@ -634,14 +650,28 @@ metadata:
 data:
   trafficFilters:
     rules:
-    #  Block client for 5m when it exceeds 100 req/sec on a time window of 1sec
-    - name: limit-requests-client-ip
+    #  Block client for 5m when it exceeds an average of 100 req/sec to origin on a time window of 10sec
+    - name: limit-origin-requests-client-ip
       when:
-        reqProperty: path
-        like: '*'
+        reqProperty: tier
+        equals: 'publish'
       rateLimit:
         limit: 100
-        window: 1
+        window: 10
+        count: fetches
+        penalty: 300
+        groupBy:
+          - reqProperty: clientIp
+      action: log
+    #  Block client for 5m when it exceeds an average of 500 req/sec on a time window of 10sec
+    - name: limit-requests-client-ip
+      when:
+        reqProperty: tier
+        equals: 'publish'
+      rateLimit:
+        limit: 500
+        window: 10
+        count: all
         penalty: 300
         groupBy:
           - reqProperty: clientIp
@@ -650,7 +680,7 @@ data:
     - name: block-ofac-countries
       when:
         allOf:
-          - { reqProperty: tier, equals: publish }
+          - { reqProperty: tier, in: ["author", "publish"] }
           - reqProperty: clientCountry
             in:
               - SY
@@ -670,39 +700,23 @@ data:
     - name: block-waf-flags-globally
       when:
         reqProperty: tier
-        matches: "author|publish"
+        in: ["author", "publish"]
       action:
         type: log
         wafFlags:
+          - TRAVERSAL
+          - CMDEXE-NO-BIN
+          - XSS
+          - LOG4J-JNDI
+          - BACKDOOR
+          - USERAGENT
+          - SQLI
           - SANS
           - TORNODE
           - NOUA
           - SCANNER
-          - USERAGENT
           - PRIVATEFILE
-          - ABNORMALPATH
-          - TRAVERSAL
           - NULLBYTE
-          - BACKDOOR
-          - LOG4J-JNDI
-          - SQLI
-          - XSS
-          - CODEINJECTION
-          - CMDEXE
-          - NO-CONTENT-TYPE
-          - UTF8
-    # Disable protection against CMDEXE on /bin (only works if WAF is licensed enabled for your environment)
-    - name: allow-cdmexe-on-root-bin
-      when:
-        allOf:
-          - reqProperty: tier
-            matches: "author|publish"
-          - reqProperty: path
-            matches: "^/bin/.*"
-      action:
-        type: allow
-        wafFlags:
-          - CMDEXE
 ```
 
 ## チュートリアル {#tutorial}
