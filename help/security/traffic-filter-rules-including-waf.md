@@ -5,7 +5,7 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: d118cd57370a472dfe752c6ce7e332338606b898
 workflow-type: tm+mt
 source-wordcount: '3817'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -435,7 +435,7 @@ data:
 | limit | 10～10000 の整数 | 必須 | ルールがトリガーされる、1 秒あたりのリクエスト数のリクエストレート（CDN POP あたり）です。 |
 | window | 整数列挙：1、10 または 60 | 10 | リクエストレートが計算されるサンプリングウィンドウ（秒単位）です。カウンターの精度は、ウィンドウのサイズによって異なります（ウィンドウが大きいほど精度が高くなります）。例えば、1 秒のウィンドウでは 50％の精度、60 秒のウィンドウでは 90％の精度が期待できます。 |
 | penalty | 60～3600 の整数 | 300（5 分） | 一致するリクエストがブロックされる期間（秒単位）です（最も近い分に四捨五入）。 |
-| 回数 | all, fetches, errors | all | エッジトラフィック（すべて）、オリジントラフィック（フェッチ）、またはエラー数（エラー）に基づいて評価されます。 |
+| 回数 | all, fetches, errors | すべて | エッジトラフィック（すべて）、オリジントラフィック（フェッチ）、またはエラー数（エラー）に基づいて評価されます。 |
 | groupBy | 配列[ゲッター] | なし | レートリミッターカウンターは、一連のリクエストプロパティ（clientIp など）によって集計されます。 |
 
 
@@ -636,7 +636,7 @@ CDN ログで使用されるフィールド名と、それらの簡単な説明�
 
 ダッシュボードツールでは、[AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Github リポジトリから直接クローンを作成できます。
 
-[Tutorials](#tutorial) ダッシュボードツールの使用方法に関する具体的な手順について説明しています。
+ダッシュボードツールの具体的な使用方法については、[チュートリアル](#tutorial)を参照してください。
 
 ## 推奨されるスタータールール {#recommended-starter-rules}
 
@@ -721,11 +721,11 @@ data:
 
 ## チュートリアル {#tutorial}
 
-2 つのチュートリアルを利用できます。
+2 つのチュートリアルが利用可能です。
 
 ### トラフィックフィルタールール（WAF ルールを含む）による web サイトの保護
 
-[チュートリアルの手順](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=ja) waf ルールを含むトラフィックフィルタールールに関する一般的で実践的な知識および経験を得ること。
+WAF ルールを含むトラフィックフィルタールールに関する一般的で実用的な知識とエクスペリエンスの取得については、[チュートリアルを参照](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=ja)してください。
 
 チュートリアルでは、次の方法について説明します。
 
@@ -735,15 +735,15 @@ data:
 * ダッシュボードツールを使用した結果の分析
 * ベストプラクティス
 
-### トラフィックフィルタールールを使用した DoS および DDoS 攻撃のブロック
+### トラフィックフィルタールールを使用した DoS 攻撃と DDoS 攻撃のブロック
 
-[ブロック方法の詳細](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) レート制限トラフィック フィルタ ルールおよびその他の戦略を使用した Denial of Service （DoS; サービス拒否）攻撃および Distributed Denial of Service （DDoS; サービス拒否）攻撃。
+レート制限トラフィックフィルタールールやその他の戦略を使用して、サービス拒否（DoS）および分散型サービス拒否（DDoS）攻撃を[ブロックする方法について詳しく説明します](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules)。
 
 チュートリアルでは、次の方法について説明します。
 
 * 保護について
-* レート制限を超えた場合にアラートを受信
-* ダッシュボードツールを使用したトラフィックパターンの分析によるレート制限トラフィックフィルタールールのしきい値の設定
+* レート制限を超えた場合のアラートの受信
+* ダッシュボードツールを使用したトラフィックパターンの分析し、レート制限トラフィックフィルタールールのしきい値を設定する
 
 
 
