@@ -2,29 +2,35 @@
 title: トランザクションレポート請求可能 API
 description: トランザクションとして計上されるすべての API のリスト
 feature: Adaptive Forms, Foundation Components
-hide: true
-hidefromtoc: true
-source-git-commit: 7318c5e65fc03bfebbf5fb43e4edc30ffbb53909
+exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
+source-git-commit: 539f4bf86f0e32057b2228dc44c86120d6e8457b
 workflow-type: tm+mt
-source-wordcount: '1598'
-ht-degree: 86%
+source-wordcount: '1411'
+ht-degree: 81%
 
 ---
 
+
 # トランザクションレポート請求可能 API {#transaction-reports-billable-apis}
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-billable-apis) |
+| AEM as a Cloud Service | この記事 |
+
 
 AEM Forms には、フォームの送信、ドキュメントの処理、ドキュメントのレンダリングをおこなうための API がいくつか用意されています。一部の API はトランザクションとして計上され、それ以外は自由に使用できます。このドキュメントでは、トランザクションレポートでトランザクションとして計上されるすべての API のリストを示します。課金対象の API が使用される一般的なシナリオを次に示します。
 
 * アダプティブフォームの送信
 * ある形式から別の形式へのドキュメントの変換
 * ダイナミック PDF ドキュメントの統合
-* レコードのドキュメントの生成 (Forms Service または Output Service を使用 )
+* レコードのドキュメントの生成（Forms サービスまたは Output サービスを使用）
 * インタラクティブ PDF ドキュメントと別の PDF ドキュメントの結合
-* AEM Workflows のタスクの割り当て手順と通信 API 手順の使用
+* AEM Workflows のタスク割り当て手順と通信 API 手順の使用
 
-請求 API は、ページ数、ドキュメントまたはフォームの長さ、レンダリング済みドキュメントの最終的な形式を考慮しません。トランザクションレポートでは、トランザクションを「Forms送信済み」と「レンダリングされたドキュメント」の 2 つのカテゴリに分けます。
+請求 API は、ページ数、ドキュメントまたはフォームの長さ、レンダリング済みドキュメントの最終的な形式を考慮しません。トランザクションレポートは、トランザクションを、送信済みFormsとレンダリング済みドキュメントの 2 つのカテゴリに分類します。
 
-* **送信済みフォーム：** AEM Forms で作成された任意のタイプのフォームからデータが送信され、そのデータが任意のデータストレージリポジトリーまたはデータベースに送信された場合、そのデータはフォーム送信と見なされます。例えば、アダプティブフォームやフォームセットの送信は、送信されたフォームと見なされます。 フォームセットに 5 つのフォームが含まれ、フォームセットが送信されると、トランザクションレポートサービスはそのフォームセットを 5 回の送信としてカウントします。
+* **送信済みフォーム：** AEM Forms で作成された任意のタイプのフォームからデータが送信され、そのデータが任意のデータストレージリポジトリーまたはデータベースに送信された場合、そのデータはフォーム送信と見なされます。例えば、アダプティブフォームやフォームセットは、送信済みフォームと見なされます。 フォームセットに 5 つのフォームがあり、フォームセットが送信されると、トランザクションレポートサービスはそのフォームセットを 5 件の送信としてカウントします。
 
 * **レンダリング済みドキュメント：** テンプレートとデータを組み合わせたドキュメントの生成、ドキュメントの電子署名または認証、ドキュメントサービスの課金可能なドキュメントサービス API の使用、ある形式から別の形式へのドキュメントの変換は、レンダリング済みドキュメントとして計上されます。
 
@@ -41,32 +47,32 @@ AEM Forms には、フォームの送信、ドキュメントの処理、ドキ�
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
 >title="フォーム生成の平均期間"
->abstract="グラフは、フォームの作成に要した平均時間を示します。グラフの各棒は特定のフォームを表し、棒の高さはその時間枠内でフォームの作成に要した平均時間を示します。このグラフを分析すると、ユーザーは、様々な期間や様々なコンテキストでのフォーム作成の効率と速度を把握でき、潜在的な改善点に関するインサイトが得られます。グラフには、現在の AEM Forms オーサーインスタンスに固有のデータが表示されます。他のインスタンスのデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
+>abstract="グラフは、フォームの作成に要した平均時間を示します。グラフの各棒グラフは特定のフォームを表し、棒の高さはその期間内のフォーム作成に要した平均時間を示します。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="フォーム作成の平均期間"
->abstract="グラフには、フォームが編集用に開かれた最初の日から測定された、フォームの作成と公開にかかった平均時間が表示されます。各棒は、フォームの特定の時間枠に対応します。棒の高さは、フォーム開発の開始から最終的なフォーム作成および公開までにかかった平均時間を示します。グラフには、現在の AEM Forms オーサーインスタンスに固有のデータが表示されます。他のインスタンスのデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
+>abstract="このグラフには、フォームの作成と公開にかかった平均時間が、フォームを編集用に開いた初日から測定されて表示されます。グラフには、現在のAEM Forms オーサーインスタンスに固有のデータが表示されます。 他のインスタンスのデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
 >title="新しい Forms トラッカー"
->abstract="グラフには、特定の期間に新しく作成されたフォームの数や頻度に関する情報が表示されます。グラフの各棒は、日、週、月などの個別の測定単位を表します。各棒の高さは、その特定の間隔で作成された新しいフォームの数量または頻度を示します。グラフには、現在の AEM Forms オーサーインスタンスに固有のデータが表示されます。他のインスタンスのデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
+>abstract="グラフには、特定の期間に新しく作成されたフォームの数や頻度に関する情報が表示されます。グラフには、現在の AEM Forms オーサーインスタンスに固有のデータが表示されます。他のインスタンスのデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="公開済み Forms トラッカー"
->abstract="グラフには、特定の期間に正常に公開されたフォームの数や頻度に関する情報が表示されます。これにより、フォームの公開での経時的な傾向、パターン、変化を把握できるため、生産性の監視、ピーク公開期間の特定、フォームの公開プロセスでの変更が成功したかどうかを評価するのに役立ちます。グラフには、現在の AEM Forms パブリッシュインスタンスに固有のデータが表示されます。他のインスタンスのコンバージョンデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
+>abstract="グラフには、特定の期間に正常に公開されたフォームの数や頻度に関する情報が表示されます。グラフには、現在の AEM Forms パブリッシュインスタンスに固有のデータが表示されます。他のインスタンスのコンバージョンデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
 >title="公開済み Forms トラッカー"
->abstract="このグラフを使用すると、ユーザーがフォームで使用するフォームフラグメントの数を確認できます。これらの再利用可能なパーツがフォーム構築でどれほど頻繁に使用されているかを把握できます。グラフには、現在の AEM Forms パブリッシュインスタンスに固有のデータが表示されます。他のインスタンスのコンバージョンデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
+>abstract="このグラフを使用すると、ユーザーがフォームで使用するフォームフラグメントの数を確認できます。グラフには、現在の AEM Forms パブリッシュインスタンスに固有のデータが表示されます。他のインスタンスのコンバージョンデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
 >title="公開済み Forms トラッカー"
->abstract="グラフには、フォームフラグメントが編集用に開かれた最初の日から測定された、フォームフラグメントの作成にかかった平均時間が表示されます。各棒は、フォームフラグメントの特定の時間枠に対応します。棒の高さは、フォームフラグメント開発の開始から最終的なフォーム作成および公開までにかかった平均時間を示します。グラフには、現在の AEM Forms パブリッシュインスタンスに固有のデータが表示されます。他のインスタンスのコンバージョンデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
+>abstract="グラフには、フォームフラグメントが編集用に開かれた最初の日から測定された、フォームフラグメントの作成にかかった平均時間が表示されます。グラフには、現在の AEM Forms パブリッシュインスタンスに固有のデータが表示されます。他のインスタンスのコンバージョンデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
 
 <!-- 
 
@@ -197,7 +203,7 @@ AEM Forms には、フォームの送信、ドキュメントの処理、ドキ�
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generatePrintedOutput/post" target="_blank">exportPDF</a></td>
-   <td>XDP ファイルまたはPDFドキュメントをサポートされるファイルタイプに変換します。</td>
+   <td>XDP ファイルまたはPDFドキュメントを、サポートされているファイルタイプに変換します。</td>
    <td>処理済みドキュメント</td>
    <td> </td>
   </tr>
@@ -263,7 +269,7 @@ AEM Forms には、フォームの送信、ドキュメントの処理、ドキ�
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PDFOutputOptions" target="_blank">generatePDFOutput (PDFOutputOptions)</a></td>
+   <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PDFOutputOptions" target="_blank">generatePDFOutput （PDFOutputOptions）</a></td>
    <td>データとテンプレートを結合して、PDF ドキュメントを作成します。</td>
    <td>処理済みドキュメント</td>
    <td> </td>
@@ -281,7 +287,7 @@ AEM Forms には、フォームの送信、ドキュメントの処理、ドキ�
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutputOptions" target="_blank">generatePrintedOutput (PrintedOutputOptions)</a></td>
+   <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutputOptions" target="_blank">generatePrintedOutput （PrintedOutputOptions）</a></td>
    <td>XDP および PDF ドキュメントを PostScript（PS）、Printer Command Language（PCL）および ZPL ファイル形式に変換します。 </td>
    <td>処理済みドキュメント</td>
    <td> </td>
@@ -314,7 +320,7 @@ AEM Forms には、フォームの送信、ドキュメントの処理、ドキ�
  </tbody>
 </table>
 
-### レコードのドキュメント (DOR) サービス {#document-of-record-dor-forms-service-and-output-service}
+### レコードのドキュメント（DOR）サービス {#document-of-record-dor-forms-service-and-output-service}
 
 <table>
  <tbody>
@@ -327,7 +333,7 @@ AEM Forms には、フォームの送信、ドキュメントの処理、ドキ�
   <tr>
    <td><a href="https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Generate-DoR/operation/generateDoR" target="_blank">render</a></td>
    <td>指定されたレンダリングメソッドを呼び出して、設定されたパラメーターを使用してレコードのドキュメントを生成します。</td>
-   <td>Forms Service を使用して処理されたドキュメント</td>
+   <td>Forms サービスを使用して処理されたドキュメント</td>
    <td> </td>
   </tr>
   <!--<tr>
@@ -427,7 +433,7 @@ AEM Forms には、フォームの送信、ドキュメントの処理、ドキ�
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/#tag/DDX-execution/operation/InvokeDDX">呼び出し</a></td>
-   <td>指定された入力ドキュメントに対して DDX を実行し、結果のドキュメントを含むオブジェクトを返します</td>
+   <td>指定された入力ドキュメントで DDX を実行し、結果のドキュメントを含むオブジェクトを返します</td>
    <td>処理済みドキュメント</td>
    <td>次の操作はトランザクションとして計上されません。
     <ul>
@@ -437,7 +443,7 @@ AEM Forms には、フォームの送信、ドキュメントの処理、ドキ�
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/#tag/DDX-execution/operation/InvokeDDX" target="_blank">呼び出し</a></td>
-   <td>指定された入力ドキュメントに対して DDX を実行し、結果のドキュメントを含むオブジェクトを返します</td>
+   <td>指定された入力ドキュメントで DDX を実行し、結果のドキュメントを含むオブジェクトを返します</td>
    <td>処理済みドキュメント</td>
    <td>Assembler サービスは、PDF Generator、Forms、Output サービスがサポートするすべての入力ファイル形式を、出力ファイル形式としてサポートします。 </td>
   </tr>
@@ -450,9 +456,9 @@ AEM Forms には、フォームの送信、ドキュメントの処理、ドキ�
  </tbody>
 </table>
 
-呼び出し API の使用状況は、次の操作を 1 つ以上実行すると、トランザクションとしてカウントされます。
+次の操作を 1 つ以上実行すると、呼び出し API の使用がトランザクションとしてカウントされます。
 
-1. 非PDF形式からPDF形式への変換 <!--For instance, the conversion from XDP format to PDF format, catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
+1. 非PDF形式からPDF形式への変換。 <!--For instance, the conversion from XDP format to PDF format, catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
 1. PDF 形式から PDF/A 形式への変換。
 1. PDF 形式から非 PDF 形式への変換。例としては、PDF 形式から画像形式への変換、または PDF 形式からテキスト形式への変換があります。
 
@@ -486,7 +492,7 @@ AEM Forms には、フォームの送信、ドキュメントの処理、ドキ�
 
 ## 課金対象のデータキャプチャ API {#billable-data-capture-apis}
 
-アダプティブフォームのすべての送信イベントは、トランザクションとして扱われます。 デフォルトでは、トランザクションフォームの PDF はトランザクションとして計上されません。提供した[トランザクションレコーダー API](record-transaction-custom-implementation.md) を使用して、PDF フォームの送信をトランザクションとして記録します。
+アダプティブフォームのすべての送信イベントは、トランザクションとして計上されます。 デフォルトでは、トランザクションフォームの PDF はトランザクションとして計上されません。提供した[トランザクションレコーダー API](record-transaction-custom-implementation.md) を使用して、PDF フォームの送信をトランザクションとして記録します。
 
 ### アダプティブフォーム {#adaptive-forms}
 
@@ -557,9 +563,9 @@ AEM Forms には、フォームの送信、ドキュメントの処理、ドキ�
 
 -->
 
-## 課金対象のフォーム中心のAEMワークフロー {#billable--form-centric-aem-workflows}
+## 課金対象のフォーム中心のAEM ワークフロー {#billable--form-centric-aem-workflows}
 
-Form 中心のAEM Workflow のタスクの割り当て手順とドキュメントサービスの手順は、トランザクションと見なされます。 ワークフローステップがトランザクションとして考慮され、ワークフローの完了に失敗した場合、トランザクション数は元に戻されません。
+Form 中心のAEM Workflows のタスクの割り当てステップおよびドキュメントサービスの割り当てステップは、トランザクションとして計上されます。 ワークフローステップがトランザクションとして考慮され、ワークフローの完了に失敗した場合、トランザクション数は元に戻されません。
 
 <!--
 Assign task and document services steps of Form-centric AEM Workflows on OSGi and all the renditions of interactive communication and are accounted as transactions. Previewing an interactive communication on the author instance and previewing on the publish instance using Agent UI are not accounted as transactions. If a workflow step accounts a transaction and the workflow fails to complete, the transaction count is not reversed.
@@ -612,7 +618,7 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
 
 -->
 
-### フォーム中心のAEMワークフロー {#form-centric-aem-workflows}
+### フォーム中心のAEM ワークフロー {#form-centric-aem-workflows}
 
 <table>
  <tbody>

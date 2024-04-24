@@ -2,20 +2,24 @@
 title: カスタム実装のトランザクションの記録
 description: トランザクションとして自動的に計上されないアクションを記録するには、TransactionRecorder API を使用します
 feature: Adaptive Forms, Foundation Components
-hide: true
-hidefromtoc: true
-source-git-commit: a1a87a27d73d7472ec02de37621123bbdd3876b4
+exl-id: cb584f78-30af-4a58-be99-843352e8249c
+source-git-commit: 539f4bf86f0e32057b2228dc44c86120d6e8457b
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 85%
+source-wordcount: '193'
+ht-degree: 86%
 
 ---
 
 # カスタム実装のトランザクションの記録 {#record-a-transaction-for-custom-implementations}
 
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-osgi/record-transaction-custom-implementation) |
+| AEM as a Cloud Service | この記事 |
+
 トランザクションとして自動的に計上されないアクションを記録するには、TransactionRecorder API を使用します。
 
-カスタムコードを使用して、PDFフォームを送信できます。 または、AEM Forms で提供される送信メソッドを使用する代わりに、カスタムメソッドを使用してフォームを送信することもできます。前述の AEM Forms API のすべてのアクションとカスタム実装は、トランザクションとはみなされません。AEM Forms には [TransactionRecorder](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/com/adobe/aem/transaction/core/ITransactionRecorder.html) という API があり、トランザクションなどのアクションを記録することができます。
+カスタムコードを使用してPDFフォームを送信できます。 または、AEM Forms で提供される送信メソッドを使用する代わりに、カスタムメソッドを使用してフォームを送信することもできます。前述の AEM Forms API のすべてのアクションとカスタム実装は、トランザクションとはみなされません。AEM Forms には [TransactionRecorder](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/com/adobe/aem/transaction/core/ITransactionRecorder.html) という API があり、トランザクションなどのアクションを記録することができます。
 
 トランザクションを記録するには、 [標準 Sling サーブレット](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/store-and-retrieve-af-with-2fa/create-servlet.html?lang=ja) を書き込み、サーブレットをクライアントから呼び出してトランザクションを記録します。AJAX またはその以外の標準的な方法を使用して、サーブレットを呼び出すことができます。
 
@@ -88,4 +92,3 @@ $.ajax({
 ## 関連記事 {#related-articles}
 
 * [トランザクションレポート請求可能 API](/help/forms/transaction-reports-billable-apis.md)
-
