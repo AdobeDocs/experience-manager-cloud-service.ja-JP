@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメン�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: f15b42e4012385c461b5440b92f53c4e58fb8ac2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '213'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 84%
 
 ### 機能強化 {#enhancements-15977}
 
-* GRANITE-51335:AEM ヘルスチェックを最適化して、インスタンスの安定性を高めます。
+* GRANITE-51335：AEM ヘルスチェックを最適化して、インスタンスの安定性を向上。
 
 ### 修正された問題 {#fixed-issues-15977}
 
-* CQ-4357226:OAuth 認証情報をサポートする IMS 設定のリグレッションを修正しました。
-* GRANITE-51335:5.0.4 にアップグレードされた Ratelimit で Felix ヘルスチェックの登録が修正されました。
+* CQ-4357226：OAuth 資格情報の IMS 設定サポートにおける回帰を修正。
+* GRANITE-51335：レート制限を 5.0.4 にアップグレードして、Felix ヘルスチェックの登録を修正
 
 ### 既知の問題 {#known-issues-15977}
 
