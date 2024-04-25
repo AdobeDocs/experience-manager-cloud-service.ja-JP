@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 61a3d334e7187dcbf047d1b464d918ddf2cf9444
+source-git-commit: b7e7bc7546b836667fff9db0ea5419e751f492cb
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 79%
+source-wordcount: '269'
+ht-degree: 78%
 
 ---
 
@@ -30,7 +30,8 @@ ht-degree: 79%
 
 ### 既知の問題 {#known-issues-15977}
 
-* **（AEM Formsのみ）** AEM Cloud Foundation メンテナンスリリース 15977 をインストールした後、アダプティブフォームのフィールドが、フォームのオーサリング中および公開済みフォームで誤った順序でレンダリングされます。 AEM Formsを使用している場合、ご不便をおかけしないよう、今後のメンテナンスリリースで問題が解決されるまで、このリリースにアップグレードしないことをお勧めします。
+* **（AEM Formsのみ）** AEM Cloud Foundation メンテナンスリリース 15977 をインストールした後、アダプティブフォームのフィールドが、フォームのオーサリング中および公開済みフォームで誤った順序でレンダリングされます。 AEM Formsを使用している場合、ご不便をおかけしないよう、今後のメンテナンスリリースで問題が解決されるまで、15977 リリースにはアップグレードしないことをお勧めします。
+
 
 ### 廃止された機能と API {#deprecated-15977}
 
