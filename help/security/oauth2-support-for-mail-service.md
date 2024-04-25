@@ -1,11 +1,11 @@
 ---
 title: メールサービスの OAuth2 サポート
-description: Adobe Experience Manager as a Mail Service の Oauth2 サポート
+description: Adobe Experience Manager as a Cloud.Service のメールサービスの OAuth2 サポート。
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
-workflow-type: ht
-source-wordcount: '680'
-ht-degree: 100%
+source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
+workflow-type: tm+mt
+source-wordcount: '679'
+ht-degree: 94%
 
 ---
 
@@ -33,7 +33,7 @@ AEM as a Cloud Service のメールサービスの詳細については、[メ�
 
    >[!NOTE]
    >
-   >権限の設定は、時間の経過と共に進化することがあります。これらが期待どおりに動作しない場合は、Microsoft にお問い合わせください。
+   >権限の設定は、時間の経過と共に進化することがあります。これらが期待ど® りに機能しない場合は、Microsoftを操作します。
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -111,7 +111,7 @@ AEM 側で Oauth を設定する前に、次の手順で accessToken と refresh
 
 >[!NOTE]
 >
-> [この場所](https://learn.microsoft.com/ja-jp/azure/active-directory/develop/v2-oauth2-auth-code-flow)から Postman API コレクションを取得できます。
+> [この場所](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow)から Postman API コレクションを取得できます。
 >
 > 詳しくは、[こちら](https://learn.microsoft.com/ja-jp/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth)から MSFT OAuth のドキュメントを参照してください。
 
@@ -140,7 +140,7 @@ AEM 側で Oauth を設定する前に、次の手順で accessToken と refresh
 
    >[!NOTE]
    >
-   >スコープは、時間の経過と共に進化することがあります。これらが期待どおりに動作しない場合は、Microsoft にお問い合わせください。
+   >スコープは、時間の経過と共に進化することがあります。これらが期待ど® りに機能しない場合は、Microsoftを操作します。
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -148,7 +148,7 @@ AEM 側で Oauth を設定する前に、次の手順で accessToken と refresh
    * `email`
    * `profile`
 1. 以下の構文を使用して、OSGI プロパティファイル `called com.day.cq.mailer.DefaultMailService.cfg.json`
-を `/apps/<my-project>/osgiconfig/config` の下に作成します。`smtp.host` および `smtp.port` の値は、[メールサービスのチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=ja)で説明するように、高度なネットワーク設定を反映します。
+を `/apps/<my-project>/osgiconfig/config` の下に作成します。`smtp.host` および `smtp.port` の値は、[メールサービスのチュートリアル](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/email-service)で説明するように、高度なネットワーク設定を反映します。
 
    ```
    {
