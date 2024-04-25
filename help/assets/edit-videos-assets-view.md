@@ -1,24 +1,24 @@
 ---
-title: ビデオを編集
+title: ビデオの編集
 description: を使用したビデオの編集 [!DNL Adobe Express] を利用したオプションと、更新したビデオをバージョンとして保存します。
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
-source-git-commit: 6eb9cfbb463fc976c9101acb434b3b39131c8067
+source-git-commit: 4f3c15d3a103d15c51ddfe4b0c5dbb5e7e18e8b7
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
-# でビデオを編集する [!DNL Assets Essentials] {#edit-videos}
+# でビデオを編集する [!DNL Assets view] {#edit-videos}
 
-を組み込んだ Assets ユーザーは、ビデオコンテンツのバリエーションを簡単に作成できます [!DNL Adobe Express] ビデオのクイックアクション。 でのクイックアクション [!DNL Assets Essentials] powered by [!DNL Adobe Express] には、ビデオの切り抜き、ビデオのサイズ変更、ビデオのトリミング、ビデオのGIFへの変換など、使いやすいビデオ編集オプションが用意されています。
+を組み込んだ Assets ユーザーは、ビデオコンテンツのバリエーションを簡単に作成できます [!DNL Adobe Express] ビデオのクイックアクション。 でのクイックアクション [!DNL Assets view] powered by [!DNL Adobe Express] には、ビデオの切り抜き、ビデオのサイズ変更、ビデオのトリミング、ビデオのGIFへの変換など、使いやすいビデオ編集オプションが用意されています。
 
 ビデオを編集するには、ビデオの詳細に移動して、 [!UICONTROL ビデオを編集]. または、アセットを選択して「詳細」をクリックし、をクリックします ![はさみ](assets/do-not-localize/cut.svg) アイコンは右側のパネルに表示されます。 ビデオの編集後、新しいビデオを新しいバージョンまたは新しいアセットとして保存できます。
 
 ## 前提条件 {#prerequisites}
 
-アクセスする権限 [!DNL Adobe Express] およびAEM Assets内の少なくとも 1 つの環境が対象となります。 内の任意のリポジトリを環境にすることができます [!DNL Assets as a Cloud Service] または [!DNL Assets Essentials].
+アクセスする権限 [!DNL Adobe Express] およびAEM Assets内の少なくとも 1 つの環境が対象となります。 内の任意のリポジトリを環境にすることができます [!DNL Assets as a Cloud Service] または [!DNL Assets view].
 
 ## Adobe Expressを使用したビデオの編集 {#edit-video-using-express}
 
@@ -39,7 +39,7 @@ ht-degree: 16%
 
 ### ビデオのサイズ変更 {#resize-video-using-express}
 
-特定のチャネルに配信するために、DAM の最終的なビデオコンテンツのサイズを変更する必要が出ることがよくあります。 [!DNL Assets Essentials] では、一般的なソーシャルチャネルで必要とされるサイズに合わせてビデオのサイズを簡単に変更できます。また、カスタム解像度に合わせてサイズを変更することもできます。 次を使用してビデオのサイズを変更します [!DNL Assets Essentials]を設定するには、次の手順を実行します。
+特定のチャネルに配信するために、DAM の最終的なビデオコンテンツのサイズを変更する必要が出ることがよくあります。 [!DNL Assets view] では、一般的なソーシャルチャネルで必要とされるサイズに合わせてビデオのサイズを簡単に変更できます。また、カスタム解像度に合わせてサイズを変更することもできます。 次を使用してビデオのサイズを変更します [!DNL Assets view]を設定するには、次の手順を実行します。
 
 1. ビデオを選択し、 **[!UICONTROL 編集]**.
 2. クリック **[!UICONTROL ビデオのサイズ変更]** 左側のペインで使用可能なクイックアクションから。
@@ -93,7 +93,7 @@ Adobe Expressを使用して、MP4 ビデオをGIF形式にすばやく変換で
 
 ### 次の手順 {#next-steps}
 
-* Assets Essentials ユーザーインターフェイスの「[!UICONTROL フィードバック]」オプションを使用して製品に関するフィードバックを提供する
+* アセットビューユーザーインターフェイスの「[!UICONTROL フィードバック]」オプションを使用して、製品に関するフィードバックを提供する
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
@@ -101,5 +101,5 @@ Adobe Expressを使用して、MP4 ビデオをGIF形式にすばやく変換で
 
 >[!MORELIKETHIS]
 >
->* [Assets Essentialsでの画像の編集](edit-images-assets-view.md)
+>* [アセットビューでの画像の編集](edit-images-assets-view.md)
 >* [アセットのプレビュー](navigate-assets-view.md)
