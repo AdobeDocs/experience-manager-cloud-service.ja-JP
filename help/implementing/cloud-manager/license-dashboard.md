@@ -2,10 +2,10 @@
 title: ライセンスダッシュボード
 description: Cloud Manager には、組織またはテナントが使用できる AEMaaCS 製品の使用権限を簡単に表示できるダッシュボードが用意されています。
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
-workflow-type: ht
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
+workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ Cloud Manager ライセンスダッシュボードを使用すると、次の情
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;画面で、「**ライセンス**」タブに切り替えます。
+1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソール、に切り替える **ライセンス** タブ。
 
 ![ライセンスダッシュボード](assets/license-dashboard.png)
 

@@ -1,10 +1,10 @@
 ---
 title: プロビジョニングプロセス - 概要
 description: プロビジョニングプロセス - 概要
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: ht
-source-wordcount: '291'
-ht-degree: 100%
+source-git-commit: eec64a5dc211dc72712989bf6dc81de8004e2a85
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 95%
 
 ---
 
@@ -26,13 +26,10 @@ ht-degree: 100%
 
 自動プロビジョニングが完了すると、次のようになります。
 
-* アクセス権が付与され、アドビは、Adobe Identity Management System（IMS）内に組織を作成する
+* アクセス権が付与されました – Adobeは、AdobeIdentity Management System （IMS）内に組織を作成します
 * 指定された管理者は、デフォルトで管理者権限を持つ
 * 管理者は、Admin Console を使用して、追加のチームメンバーにユーザーと役割を追加できる
 * 役割に基づいたユーザーの権限を確認し、Cloud Manager で権限の割り当てを決定する
-
-![processoverview.jpg](assets/processOverview.jpg)
-
 
 詳しくは、[Experience Leagueue の Experience Manager as a Cloud Service へのオンボーディング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=ja)を参照してください。
 
@@ -49,8 +46,6 @@ ht-degree: 100%
 
 ### 2. Adobe Admin Console への組織がオンボーディングされます。
 
-![processoverview2.jpg](assets/processOverview2.jpg)
-
 * システム管理者：
    * AEM プログラムと環境をプロビジョニングします。
    * Admin Console に移動して管理タスクを実行します。
@@ -61,8 +56,6 @@ ht-degree: 100%
    * ローカルグループ、許可および権限を管理します。
 
 ### 3. Admin Console でユーザーをオンボーディングし、アクセスを管理します。
-
-![processoverview3.jpg](assets/processOverview3.jpg)
 
 サイズと環境に応じて、3 つの方法でユーザーをオンボードします。
 * Admin Console から手動でユーザーを作成する

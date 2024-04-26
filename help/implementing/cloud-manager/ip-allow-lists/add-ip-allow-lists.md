@@ -2,10 +2,10 @@
 title: IP 許可リストの追加
 description: Cloud Manager を使用して独自の IP許可リストを追加する方法を説明します。
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
-workflow-type: ht
-source-wordcount: '198'
-ht-degree: 100%
+source-git-commit: fa6d0670a011276facc561f62f52c6e69147a49e
+workflow-type: tm+mt
+source-wordcount: '194'
+ht-degree: 87%
 
 ---
 
@@ -18,11 +18,9 @@ Cloud Manager を使用して独自の IP許可リストを追加する方法を
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;画面でプログラムを選択します。
+1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、プログラムを選択します。
 
-1. **概要**&#x200B;ページから、**環境**&#x200B;画面に移動します。
-
-1. **環境**&#x200B;画面から、**IP 許可リスト**&#x200B;ページに移動します。
+1. から **概要** ページで、に移動します **IP許可リスト** 「サイドナビゲーション」タブを使用してページします。
 
    ![サイドパネルの「IP 許可リスト」オプション](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 

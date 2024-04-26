@@ -2,10 +2,10 @@
 title: Cloud Manager リポジトリ
 description: Cloud Manager で Git リポジトリを作成、表示および削除する方法について説明します。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 4bf1d961705ce07c5ae5d33a546a276192f10178
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 85%
+source-wordcount: '575'
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ Cloud Manager でリポジトリを表示および管理するには、次の手
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. 次から： **プログラムの概要** ページで、 **リポジトリ** タブをクリックして、 **リポジトリ** ページに貼り付けます。
+1. **プログラムの概要**&#x200B;ページで、「**リポジトリ**」タブをクリックして「**リポジトリ**」ページに切り替えます。
 
-1. クリック **リポジトリを追加**.
+1. 「**リポジトリを追加**」をクリックします。
 
    ![「リポジトリーを追加」ボタン](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
 
@@ -36,7 +36,7 @@ Cloud Manager でリポジトリを表示および管理するには、次の手
 
 ウィザードが閉じると、新しいリポジトリがテーブルに表示されます。
 
-テーブル内のリポジトリーを選択し、省略記号ボタンをクリックして、「 」を選択します。 **リポジトリ URL をコピー**, **表示と更新**&#x200B;または **削除**.
+テーブルでリポジトリを選択して省略記号ボタンをクリックし、「**リポジトリ URL をコピー**」、「**表示と更新**」または「**削除**」を選択できます。
 
 ![リポジトリ関連オプション](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
@@ -58,11 +58,9 @@ Cloud Manager で作成されたリポジトリは、パイプラインの追加
 
 Cloud Manager でリポジトリを削除するには、次の手順に従います。
 
-1. 次から： **プログラムの概要** ページで、 **リポジトリ** 」タブに移動し、 **リポジトリ** ページに貼り付けます。
+1. **プログラムの概要**&#x200B;ページで、「**リポジトリ**」タブをクリックして「**リポジトリ**」ページに移動します。
 
-1. リポジトリを選択し、省略記号ボタンをクリックして、「 」を選択します。 **削除** をクリックして、リポジトリを削除します。
-
-   ![リポジトリの削除](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
+1. リポジトリを選択して省略記号ボタンをクリックし、「**削除**」を選択してリポジトリを削除します。
 
 ## Git サブモジュールのサポート {#git-submodule-support}
 
@@ -130,5 +128,5 @@ Git サブモジュールを使用する場合は、次の制限事項に注意�
 * セキュリティ上の理由から、Git の URL に資格情報を埋め込まないでください。
 * 特に必要がない限り、シャローサブモジュールを使用することを強くお勧めします。
    * それには、サブモジュールごとに `git config -f .gitmodules submodule.<submodule path>.shallow true` を実行します。
-* Git サブモジュール参照は、特定の Git コミットに保存されます。その結果、サブモジュールリポジトリを変更する場合は、参照されるコミットを更新する必要があります。
-   * 使用するコマンドの例：`git submodule update --remote`
+* Git サブモジュール参照は、特定の Git コミットに保存されます。その結果、サブモジュールリポジトリに対して変更を加えた場合は、参照されるコミットを更新する必要があります。
+   * `git submodule update --remote` を使用する例は、次のとおりです。

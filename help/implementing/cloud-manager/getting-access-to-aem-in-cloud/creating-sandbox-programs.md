@@ -2,10 +2,10 @@
 title: サンドボックスプログラムの作成
 description: Cloud Manager を使用して、トレーニング、デモ、POC などの実稼動以外の用途に使用する独自のサンドボックスプログラムを作成する方法を説明します。
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
-workflow-type: ht
-source-wordcount: '443'
-ht-degree: 100%
+source-git-commit: 558b46f58491dbd6845003827dcf2a0ae1b1d074
+workflow-type: tm+mt
+source-wordcount: '434'
+ht-degree: 83%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 100%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログオンし、適切な組織を選択します。
 
-1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;画面で、画面の右上隅付近に表示される「**プログラムの追加**」をタップまたはクリックします。
+1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソール、タップまたはクリック **プログラムを追加** 画面の右上隅付近。
 
-   ![Cloud Manager ランディングページ](assets/cloud-manager-my-programs.png)
+   ![Cloud Manager ランディングページ](assets/log-in.png)
 
 1. プログラムの作成ウィザードで、「**サンドボックスを設定**」を選択し、プログラム名を入力します。
 
@@ -63,12 +63,12 @@ ht-degree: 100%
 
 1. 開発環境が作成されたら、「**AEM にアクセス**」リンクをクリックして、AEM にログインします。
 
-   ![「AEM にアクセス」リンク](assets/create-program-5.png)
+   ![「AEM にアクセス」リンク](assets/create-program5.png)
 
-1. 実稼動以外のパイプラインによる開発環境へのデプロイメントが完了したら、ウィザードに従って、AEM 開発環境にアクセスしたり、開発環境にコードをデプロイしたりできます。
+1. 実稼動以外のパイプラインによる開発環境へのデプロイが完了したら、コールトゥアクションのウィザードに従って、AEM開発環境にアクセスしたり、開発環境にコードをデプロイしたりできます。
 
    ![サンドボックスのデプロイ](assets/create-program-setup-deploy.png)
 
-別のプログラムに切り替えたり、概要ページに戻って別のプログラムを作成したりする必要がある場合は、画面の左上のプログラム名をクリックして「**移動先**」オプションを表示します。
-
-![](assets/create-program-a1.png) に移動します。
+>[!TIP]
+>
+>ドキュメントを参照してください [Cloud Manager UI の操作](/help/implementing/cloud-manager/navigation.md) cloud Manager の操作方法と機能について詳しくは、こちらを参照してください。 **マイプログラム** コンソール。

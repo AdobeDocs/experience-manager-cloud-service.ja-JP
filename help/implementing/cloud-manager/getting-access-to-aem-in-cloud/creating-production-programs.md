@@ -2,10 +2,10 @@
 title: 実稼動プログラムの作成
 description: Cloud Manager を使用して、ライブトラフィックをホストする独自の実稼動プログラムを作成する方法について説明します。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: a25f1c674534792353cb9b34d4f88a5e32230bc1
-workflow-type: ht
-source-wordcount: '1047'
-ht-degree: 100%
+source-git-commit: 418aff3f8519bba4bf5e2459175983633eb664b8
+workflow-type: tm+mt
+source-wordcount: '1031'
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 画面で、画面の右上隅にある&#x200B;**プログラムの追加**&#x200B;をタップまたはクリックします。
+1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソール、タップまたはクリック **プログラムを追加** 画面の右上隅に表示されます。
 
    ![Cloud Manager ランディングページ](assets/log-in.png)
 
@@ -48,7 +48,7 @@ ht-degree: 100%
 
 1. 「**開始日**」タブで、実稼動プログラムの運用開始予定日を入力します。
 
-   ![運用開始予定日の定義](assets/setup-go-live.png)
+   ![運用開始予定日の定義](assets/set-up-go-live.png)
 
    * この日付はいつでも編集できます。
    * この日付は情報提供のみを目的とし、[**プログラム概要**&#x200B;ページ ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) の運用開始ウィジェットをトリガーし、AEM as a Cloud Service のベストプラクティスドキュメントへの製品内リンクをタイムリーに提供して、運用開始エクスペリエンスの成功とスムーズ化を実現します。
@@ -117,9 +117,9 @@ AEM Sitesは、標準の 99.9％のサービスレベル契約（SLA）を提供
 
    ![プログラムの概要](assets/set-up-prod5.png)
 
-別のプログラムに切り替えたり、概要ページに戻って別のプログラムを作成したりする必要がある場合は、いつでも画面の左上のプログラム名をクリックして「**移動先**」オプションを表示します。
-
-![](assets/create-program-a1.png) に移動します。
+>[!TIP]
+>
+>ドキュメントを参照してください [Cloud Manager UI の操作](/help/implementing/cloud-manager/navigation.md) cloud Manager の操作方法と機能について詳しくは、こちらを参照してください。 **マイプログラム** コンソール。
 
 >[!NOTE]
 >

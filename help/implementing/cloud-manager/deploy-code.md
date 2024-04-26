@@ -2,10 +2,10 @@
 title: コードのデプロイ
 description: AEM as a Cloud Service の Cloud Manager パイプラインを使用してコードをデプロイする方法を説明します。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
-workflow-type: ht
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
+workflow-type: tm+mt
 source-wordcount: '1197'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ _コードスキャン、機能テスト、UI テスト、エクスペリエン�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;画面で、コードをデプロイするプログラムをタップまたはクリックします。
+1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、コードをデプロイするプログラムをタップまたはクリックします。
 
 1. **概要**&#x200B;画面でコールトゥアクションの「**デプロイ**」をクリックして、デプロイメントプロセスを開始します。
 

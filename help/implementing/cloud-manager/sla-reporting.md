@@ -2,10 +2,10 @@
 title: SLA レポート
 description: 契約されたサービスレベル契約（SLA）に対する AEM の実稼動環境のパフォーマンスを確認する方法について説明します。
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: f037f47f0b131c87301faf4458658224d1d62a43
-workflow-type: ht
-source-wordcount: '400'
-ht-degree: 100%
+source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
+workflow-type: tm+mt
+source-wordcount: '405'
+ht-degree: 94%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 100%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;画面でプログラムを選択します。
+1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、プログラムを選択します。
 
-1. 「**概要**」ページから「**レポート**」タブに移動します。
+1. サイドナビゲーションパネルを使用して、に移動します **報告書** tab キーを押して **概要** ページ。
 
 1. 目的の年をクリックして、グラフ化された SLA データを表示します。
 

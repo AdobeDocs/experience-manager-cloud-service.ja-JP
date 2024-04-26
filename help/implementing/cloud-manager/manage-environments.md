@@ -2,10 +2,10 @@
 title: 環境の管理
 description: 作成できる環境のタイプと、Cloud Manager プロジェクト用に環境を作成する方法について説明します。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 8f7ddeea27df8e765a7c83c74af25961748ee26d
-workflow-type: ht
-source-wordcount: '2660'
-ht-degree: 100%
+source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
+workflow-type: tm+mt
+source-wordcount: '2365'
+ht-degree: 94%
 
 ---
 
@@ -41,9 +41,9 @@ ht-degree: 100%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;の画面で、環境を追加するプログラムをタップまたはクリックします。
+1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、環境を追加するプログラムをタップまたはクリックします。
 
-1. **[プログラムの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview)**&#x200B;ページで、**環境**&#x200B;カードの「**環境を追加**」をクリックして環境を追加します。
+1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソール、クリック **環境を追加** 日 **環境** 環境を追加するカード。
 
    ![環境カード](assets/no-environments.png)
 
@@ -123,9 +123,9 @@ ht-degree: 100%
 
 ## 環境の詳細 {#viewing-environment}
 
-概要ページの&#x200B;**環境**&#x200B;カードを使用して、２ 通りの方法で環境の詳細にアクセスできます。
+から **概要** ページから、2 つの方法で環境の詳細にアクセスできます。
 
-1. **概要**&#x200B;ページで、画面上部の「**環境**」タブをクリックします。
+1. から **概要** ページで、 **環境** サイドナビゲーションパネルの「」タブ。
 
    ![「環境」タブ](assets/environments-tab2.png)
 
@@ -135,9 +135,9 @@ ht-degree: 100%
 
 1. **環境**&#x200B;が開いて、プログラムのすべての環境が一覧表示されます。
 
-   ![「環境」タブ](assets/environment-view-2.png)
+   ![「環境」タブ](assets/environments-tab2.png)
 
-1. リスト内の環境をクリックすると、その環境の詳細が表示されます。
+1. リスト内の環境をタップまたはクリックすると、その環境の詳細が表示されます。
 
    ![環境の詳細](assets/environ-preview1.png)
 
@@ -302,24 +302,11 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 
 ## カスタムドメイン名の管理 {#manage-cdn}
 
-Cloud Manager では、Sites プログラムのパブリッシュサービスとプレビューサービスの両方に対してカスタムドメイン名がサポートされています。各 Cloud Manager 環境は、最大 250 個のカスタムドメインをホストできます。
+Cloud Manager では、Sites プログラムのパブリッシュサービスとプレビューサービスの両方に対してカスタムドメイン名がサポートされています。
 
-カスタムドメイン名を設定するには、「**環境**」タブに移動し、環境をクリックして環境の詳細を表示します。
-
-Cloud Manager でカスタムドメイン名を追加するには、ユーザーが&#x200B;**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持っている必要があります
-
-![環境の詳細](assets/domain-names.png)
-
-使用している環境のパブリッシュサービスに対して、次のアクションを実行できます。
-
-* [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-
-* [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-
-* [カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)または [SSL 証明書のステータスの確認](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn)
-
-* [IP 許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)
-
+>[!TIP]
+>
+>詳しくは、ドキュメントを参照してください。 [カスタムドメイン名の概要。](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 ## IP 許可リストの管理 {#manage-ip-allow-lists}
 
@@ -329,23 +316,8 @@ IP 許可リストを管理するには、プログラムの&#x200B;**概要**&#
 
 ### IP 許可リストの適用 {#apply-ip-allow-list}
 
-IP 許可リストを適用すると、許可リストの定義に含まれているすべての IP 範囲が、環境のオーサリングサービスまたはパブリッシュサービスに関連付けられます。IP 許可リストを適用するには、**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持つユーザーがログインしている必要があります。
+IP許可リスト許可リストに加えるを適用すると、その IP 定義に含まれているすべての IP 範囲が環境内のオーサーサービスまたはパブリッシュサービスに関連付けられます。
 
-IP 許可リストを環境に適用するには、その IP 許可リストが Cloud Manager に存在する必要があります。Cloud Manager での IP 許可リストについて詳しくは、[概要 - Could Manager での IP 許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)を参照してください。
-
-**IP 許可リストを適用するには：**
-
-1. プログラムの&#x200B;**概要**&#x200B;画面の「**環境**」タブから特定の環境に移動し、**IP 許可リスト**&#x200B;表に移動します。
-1. IP 許可リストの表の上部にある入力フィールドを使用すると、IP 許可リストと、その適用先となるオーサーサービスまたはパブリッシュサービスを選択できます。
-1. 「**適用**」をクリックし、送信を確認します。
-
-### IP 許可リストの適用解除 {#unapply-ip-allow-list}
-
-IP 許可リストの適用を解除すると、許可リストの定義に含まれているすべての IP 範囲と、環境のオーサリングサービスまたはパブリッシュサービスとの関連付けが解除されます。IP 許可リストの適用を解除するには、**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持つユーザーがログインしている必要があります。
-
-**IP 許可リストの適用を解除するには：**
-
-1. プログラムの&#x200B;**概要**&#x200B;画面の「**環境**」タブから特定の環境に移動し、**IP 許可リスト**&#x200B;表に移動します。
-1. 適用を解除する IP 許可リスト規則がリストされている行を特定します。
-1. その行の末尾の省略記号ボタンをクリックします。
-1. 「**適用解除**」を選択し、送信を確認します。
+>[!TIP]
+>
+>詳しくは、ドキュメントを参照してください。 [IP許可リストの概要。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)

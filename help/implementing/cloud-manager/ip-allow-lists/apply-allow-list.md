@@ -2,10 +2,10 @@
 title: IP 許可リストの適用と適用解除
 description: IP 許可リストを環境に適用および適用解除する方法を説明します。
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
-workflow-type: ht
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
+workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ IP 許可リストを適用すると、リストの定義に含まれている�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;画面でプログラムを選択します。
+1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、プログラムを選択します。
 1. **概要**&#x200B;ページから&#x200B;**環境**&#x200B;画面に移動します。
 1. **環境**&#x200B;画面で特定の環境の詳細ページに移動し、**IP 許可リスト**&#x200B;テーブルに移動します。
 1. テーブルの上部にある入力フィールドを使用すると、IP 許可リストと、その適用先となるオーサーサービスまたはパブリッシュサービスを選択できます。

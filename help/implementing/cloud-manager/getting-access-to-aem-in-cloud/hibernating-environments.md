@@ -2,10 +2,10 @@
 title: サンドボックス環境の休止と休止解除
 description: サンドボックスプログラムの環境が自動的に休止モードに入る仕組みと、休止状態が解除される仕組みについて説明します。
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
-workflow-type: ht
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
+workflow-type: tm+mt
 source-wordcount: '695'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;画面で、休止状態にするプログラムをタップまたはクリックして、詳細を表示します。
+1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、休止状態にするプログラムをタップまたはクリックして、その詳細を表示します。
 
 1. **環境**&#x200B;カードで、省略記号ボタンをクリックし、「**Developer Console**」を選択します。
 
@@ -65,7 +65,7 @@ Developer Console で、**ポッド**&#x200B;ドロップダウンリストの�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;画面で、休止状態を解除するプログラムをタップまたはクリックして、詳細を表示します。
+1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、休止状態を解除するプログラムをタップまたはクリックして、その詳細を表示します。
 
 1. **環境**&#x200B;カードで、省略記号ボタンをクリックし、「**Developer Console**」を選択します。
 

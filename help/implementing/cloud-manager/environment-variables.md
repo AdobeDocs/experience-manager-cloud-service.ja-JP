@@ -2,10 +2,10 @@
 title: Cloud Manager 環境変数
 description: 標準環境変数は、Cloud Manager を介して設定および管理でき、ランタイム環境に提供され、OSGi 設定で使用できます。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
-workflow-type: ht
-source-wordcount: '992'
-ht-degree: 100%
+source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
+workflow-type: tm+mt
+source-wordcount: '986'
+ht-degree: 93%
 
 ---
 
@@ -37,8 +37,8 @@ ht-degree: 100%
 >環境変数を追加または変更するには、[**デプロイメントマネージャー**&#x200B;の役割を持つ](/help/onboarding/cloud-manager-introduction.md#role-based-premissions)メンバーである必要があります。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Adobe Cloud Manager にログインします。
-1. **[マイプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;画面で、管理する項目を選択します。
-1. 選択したプログラムの「**環境**」タブを選択し、左側のナビゲーションパネルで環境変数を作成する環境を選択します。
+1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、管理するものを選択します。
+1. サイド・ナビゲーション・バーから、 **環境** 選択したプログラムのウィンドウで、環境変数を作成する環境を選択します。
 1. 環境の詳細で「**設定**」タブを選択し、「**追加**」を選択して **環境設定** ダイアログを開きます。
    * 初めて環境変数を追加する場合、ページの中央に「**設定を追加**」ボタンが表示されます。このボタンまたは「**追加**」を使用して、**環境設定**&#x200B;ダイアログを開くことができます。
 
@@ -73,11 +73,8 @@ ht-degree: 100%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Adobe Cloud Manager にログインします。
 1. Cloud Manager に、使用可能な様々なプログラムのリストが表示されます。管理するものを選択します。
-1. 選択したプログラムの「**環境**」タブを選択し、左側のナビゲーションパネルで環境変数を作成する環境を選択します。
+1. ナビゲーションパネルで、 **環境** 選択したプログラムのウィンドウで、環境変数を変更する環境を選択します。
 1. 環境の詳細で「**設定**」タブを選択し、右上の「**追加／更新**」を選択して **環境設定** ダイアログを開きます。
-
-   ![変数の「追加／更新」ボタン](assets/add-update-variables.png)
-
 1. 変更する変数の行の最後の列にある省略記号ボタンを使用して、「**編集**」または「**削除**」を選択します。
 
    ![変数を編集または削除](assets/edit-delete-variable.png)
