@@ -2,18 +2,15 @@
 title: CDN エラーページの設定
 description: Amazon S3 や Azure Blob Storage などの自己ホスト型ストレージで静的ファイルをホストし、Cloud Manager 設定パイプラインを使用してデプロイされた設定ファイルで静的ファイルを参照することで、デフォルトのエラーページを上書きする方法について説明します。
 feature: Dispatcher
-source-git-commit: 11036c3e95f0444fc5d865232a7dccab5b7f26ae
-workflow-type: ht
-source-wordcount: '335'
-ht-degree: 100%
+exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
+source-git-commit: 8489b40f45e6cbeb98288969bc9f6bd42815e2a6
+workflow-type: tm+mt
+source-wordcount: '318'
+ht-degree: 93%
 
 ---
 
-
 # CDN エラーページの設定 {#cdn-error-pages}
-
->[!NOTE]
->この機能はまだ一般提供されていません。早期導入プログラムに参加するには、`aemcs-cdn-config-adopter@adobe.com` にメールを送信し、ユースケースを説明します。
 
 万が一、[アドビが管理する CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) が AEM の接触チャネルに到達できない場合、CDN はデフォルトで、サーバーに到達できないことを示す、ブランド化されていない汎用のエラーページを表示します。Amazon S3 や Azure Blob Storage などの自己ホスト型ストレージで静的ファイルをホストし、[Cloud Manager 設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)を使用してデプロイされた設定ファイルで静的ファイルを参照することで、デフォルトのエラーページを上書きできます。
 
@@ -88,4 +85,4 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 
 サポートされているコードは、403、404、406、500 および 503 です。
 
-この方法で、CDN のエラーハンドラーを直接トリガーして、特定のエラーコードに対する合成応答をテストします。
+このようにして、特定のエラーコードの合成応答をテストするために、CDN のエラーハンドラーを直接トリガーします。

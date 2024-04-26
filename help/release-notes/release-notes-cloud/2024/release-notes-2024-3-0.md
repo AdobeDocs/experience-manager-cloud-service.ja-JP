@@ -1,46 +1,74 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5817cc38aab00380256537c9d4a6fe3d431c7591
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.3.0 リリースのリリースノート。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.3.0 リリースのリリースノート。'
+source-git-commit: 5b7ae48ad9f11bb43ab32569dd3e5243f2abfb8e
 workflow-type: tm+mt
-source-wordcount: '1989'
-ht-degree: 85%
+source-wordcount: '2268'
+ht-degree: 100%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート  {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の 2024.3.0 リリースノート {#release-notes}
 
-以下のセクションでは、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンの機能リリースノートの概要について説明します。
+以下の節では、[!DNL Experience Manager] as a Cloud Service の 2024.3.0 バージョンの機能リリースノートの概要について説明します。
 
 >[!NOTE]
 >
 >ここから、以前のバージョン（例えば、2021年、2022年）のリリースノートに移動できます。
 >
->[!DNL Experience Manager] as a Cloud Service の今後の機能のアクティベーションについての詳細は、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)をご覧ください。
+>[!DNL Experience Manager] as a Cloud Service の今後の機能のアクティベーションについての詳細は、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja)をご覧ください。
 
 >[!NOTE]
 >
->リリースに直接関連しないドキュメント更新の詳細については、[最近のドキュメントの更新](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates)を参照してください。
+>リリースに直接関連しないドキュメント更新の詳細については、[最近のドキュメントの更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ja)を参照してください。
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2024.4.0）のリリース日は、2024年4月25日（PT）です。次回の機能リリース（2024.5.0）は 2024年5月30日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2024.3.0）のリリース日は、2024年4月11日（PT）です。次回の機能リリース（2024.4.0）は 2024年4月25日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
 最新のメンテナンスリリースノートについては、[こちら](/help/release-notes/maintenance/latest.md)をご覧ください。
 
-&lt;— ## リリースビデオ {#release-video}
+<!-- ## Release Video {#release-video}
 
-2024.4.0 リリースで追加された機能の概要については、2024年4月リリースの概要ビデオをご覧ください。
+Have a look at the March 2024 Release Overview video for a summary of the features added in the 2024.3.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
 
 -->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### の新機能[!DNL Experience Manager Sites] {#sites-features}
+
+**Edge Delivery Services 用の AEM オーサリング**
+
+AEM Sites を Edge Delivery Services のコンテンツソースとして使用できるようになりました。作成者は、コンテキスト依存 wysiwyg オーサリングを備えた新しいユニバーサルエディターを使用して、AEM で web サイトを管理します。これにより、企業は Edge Delivery Services を使用して高速でパフォーマンスの高い web ページを構築できるだけでなく、コンテンツ管理に AEM の強力な機能を活用できます。
+
+![AEM オーサリング](/help/edge/assets/universal_editor_edge_delivery_services.png)
+
+詳しくは、[ドキュメント](/help/edge/overview.md)および [AEM Gems - AEM オーサリングと Edge Delivery Services の概要](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)を参照してください。
+
+**ヘッドレス実装用のユニバーサルエディター**
+
+また、ユニバーサルエディターを使用すると、分離された web アプリケーションでも、従来の Sites 専用のそれと同じ直感的なコンテキスト依存の WYSIWYG オーサリングを利用できます。コンテンツ作成者は、コンテンツフラグメントを使用して、ページ内のコンポーネントと同じ容易さで、レイアウトを視覚的に作成できるようになりました。
+
+ユニバーサルエディターの最大の特徴は、様々な web アーキテクチャへの適応性、サーバーサイドとクライアントサイドの両方のレンダリングへの対応、フレームワークに依存しない、AEM ホスティングの必要性を排除していることです。既存の web アプリケーションとコンテンツ編集用のユニバーサルエディターの統合は簡単です。主に、開発者が特定のデータ属性をマークアップに組み込む必要があります。
+
+これにより、ユニバーサルエディターは、コンテンツ構造や基盤となるテクノロジースタックに関係なく、一貫した編集エクスペリエンスを提供します。詳しくは、[ユニバーサルエディターの概要](/help/implementing/universal-editor/introduction.md)を参照してください。
+
+**コンテンツフラグメントとモデルのコンテンツ管理 OpenAPI**
+
+開発者は、コンテンツフラグメントとコンテンツフラグメントモデルをプログラムで操作し、コンテンツ管理 OpenAPI を使用して、CruD 操作を実行できるようになりました。詳しくは、[API のドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)を参照してください
+
+**エクスペリエンスフラグメントのマルチサイト管理のサポート**
+
+マルチサイト管理のサポートがエクスペリエンスフラグメントを保存するフォルダー構造に対して拡張されたので、ユーザーがエクスペリエンスフラグメントを含む完全なコンテンツ構造をロールアウトできるようになりました。
+
+**コンテンツフラグメントのバージョンの比較**
+
+新しいコンテンツフラグメントエディターでは、コンテンツ作成者は、コンテンツフラグメントの現在のバージョンと以前のバージョンの違いを比較して表示できるようになりました。
 
 ### 早期導入プログラム {#sites-early-adopter}
 
@@ -58,35 +86,23 @@ AEM の新機能を通じて GenAI を活用し、[バリエーションを生�
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### アセットビューの新機能 {#assets-view-new-features}
+### 管理ビューの新機能 {#admin-view}
 
+**Adobe Express とのネイティブ統合**
 
-**コンテキスト検索**
+AEM Assets は Adobe Express とネイティブに統合されているので、Adobe Express ユーザーインターフェイス内から AEM Assets に保存されているアセットに直接アクセスできます。AEM Assets で管理されているコンテンツを Express キャンバスに配置し、新しいコンテンツや編集したコンテンツを AEM Assets リポジトリに保存できます。
 
-また、次のこともできます [テキストプロンプトを定義して、リポジトリで使用可能なアセットを検索します。](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets は、これらのテキストプロンプトを検索フィルターに自動変換し、検索結果を表示します。フィルターペインを使用して自動フィルターを表示および変更すると、検索結果をさらに絞り込むことができます。
+![Assets アドオンのアセットを含める](/help/assets/assets/adobe-express-native-integration.png)
 
-![コンテキスト検索](/help/assets/assets/contextual-search-text-prompt1.png)
+**サポートされるすべてのビデオタイプのレンディションのプレビュー**
 
-**ビデオのクイックアクションの高速化**
+Experience Manager Assets では、処理プロファイル設定を行わなくても、サポートされるすべてのビデオタイプのプレビューレンディションをデフォルトで生成するようになりました。
 
-Experience Manager Assetsに含まれる [Adobe Expressを活用した、簡単で直感的なビデオ編集ツール](/help/assets/edit-videos-assets-view.md) コンテンツの再利用を促進し、コンテンツベロシティを向上させる。 編集オプションには、ビデオのトリミング、切り抜き、サイズ変更、MP4 から GIF ファイルへの変換などが含まれます。
+### アセットビューの新機能 {#assets-view}
 
-![Adobe Express を使用したビデオの切り抜き](/help/assets/assets/adobe-express-crop-video.png)
+**コレクションの権限の管理**
 
-**動的レンディション**
-
-これで、 [動的レンディション（スマート切り抜きを含む）の表示とダウンロード](/help/assets/renditions.md) Experience Manager Assetsで。 動的レンディションは、特定のニーズを満たすためにリアルタイムで作成される画像アセットのカスタマイズバージョンです。例えば、デバイスの解像度に基づく画像のサイズ変更や、異なる縦横比に合わせた切り抜きなどです。 これらのレンディションにより、組織は、パーソナライズされ最適化されたエクスペリエンスを、様々なオーディエンスのニーズに提供できます。
-
-![動的レンディション](/help/assets/assets/preset_smart_crop.png)
-
-**アセットおよびフォルダーのインプレース名前変更**
-
-Experience Manager Assetsでは、次の機能を提供することで、ユーザーエクスペリエンスをシンプル化しました [シングルクリックでアセットまたはフォルダーの名前を変更する機能](/help/assets/manage-organize-assets-view.md).
-
-**複数のフォルダーへのメタデータフォームの割り当てまたは削除**
-
-これで、 [複数のフォルダーへのメタデータフォームの割り当てまたは削除](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
-
+Assets Essentials では、管理者は、リポジトリで使用可能なプライベートコレクションのアクセスレベルを管理できます。管理者は、ユーザーグループを作成し、それらのグループに権限を割り当てて、アクセスレベルを管理できます。また、ユーザーグループに権限管理の権限をデリゲートすることもできます。
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -97,28 +113,41 @@ Experience Manager Assetsでは、次の機能を提供することで、ユー�
 
 -->
 
+### AEM Forms の新機能 {#forms-new-features}
+
+* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**：AEM Forms Edge Delivery Services は、作成者が新しいフォームを迅速にアップデート、公開、起動できる迅速な開発環境を可能にする、構成可能なサービスセットです。これらのサービスは、エンゲージメントとコンバージョンを促進する、優れた効果の高いフォームエクスペリエンスを提供します。これらのフォームエクスペリエンスは、簡単に作成および開発できます。
+
+  ![EDS Forms の機能](/help/edge/assets/eds-forms-features.png)
+
+これらのサービスにより、次のことが可能になります。
+
+* 同じフォームサイト上で複数のコンテンツソースを操作し、Microsoft Excel、Google Sheets、アダプティブフォームエディターなどの推奨オーサリングツールを使用します。
+* 迅速な読み込みとレンダリングを行うデジタル登録エクスペリエンスを提供し、リアルユーザーモニタリング（RUM）を通じてフォームのパフォーマンスを継続的に監視します。
+* プレーン HTML、最新の CSS、Vanilla JavaScript を使用して優れたエクスペリエンスを作成し、特定のフレームワークの急な学習曲線を回避します。
+
+
 ### AEM Forms のプレリリースでの新機能 {#forms-pre-release}
 
 * **コアコンポーネントベースのアダプティブフォーム向けビジュアルルールエディターの機能強化**：このリリースでは、コアコンポーネントベースのアダプティブフォームのビジュアルルールエディターが大幅にアップグレードされました。このリリースでは、コアコンポーネントベースのアダプティブフォームのビジュアルルールエディターが大幅にアップグレードされました。この更新では、より堅牢で効率的なフォームを作成できるように、カスタム関数とのインタラクションを効率化することに焦点を当ています。
 
   次の方法で、カスタム関数とのインタラクションを効率化できるようになりました。
 
-   * [新しい注釈を活用すると、より明確な機能定義を行えます](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function)。
-   * [カスタム関数にキャッシュメカニズムを使用すると、フォームのパフォーマンスが向上します](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function)。
-   * [カスタム関数内のグローバルオブジェクトをシームレスに操作できます](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions)。
-   * [カスタム関数内でのオプションのパラメーターを定義して利用します](/help/forms/create-and-use-custom-functions.md#parameter)。
+   * 新しい注釈を活用すると、より明確な機能定義を行えます。
+   * カスタム関数にキャッシュメカニズムを使用すると、フォームのパフォーマンスが向上します。
+   * カスタム関数内のグローバルオブジェクトをシームレスに操作できます。
+   * カスタム関数内でのオプションのパラメーターを定義して利用します。
 
   このアップデートでは、ルールエディターの機能にも次の機能強化が追加されています。次の操作を実行できます。
 
-   * 条件付き実行に強力な[「when-then-else」](/help/forms/rule-editor-core-components.md#when)ロジックを実装します。
+   * 条件付き実行に強力な「when-then-else」ロジックを実装します。
    * let 関数や arrow 関数などの最新の JavaScript 機能を活用します（ES10 サポート）。
    * フィールドだけでなく、パネルやフォーム全体を検証またはリセットして、ユーザー操作のコントロールを拡大します。
 
   これらの機能強化により、ビジュアルルールエディター内でルールやカスタム関数を作成する際のエクスペリエンスが、より直感的かつ強力になります。
 
-* **[アダプティブフォームの複数バージョンの作成](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**：既存フォームのバリエーションを簡単に管理できるようになりました。これにより、合理化された単一のワークフロー内で、バージョン管理をシンプルに、フォーム最適化の比較を容易に行えるようになります。
+* **アダプティブフォームの複数バージョンの作成**：既存フォームのバリエーションを簡単に管理できるようになりました。これにより、合理化された単一のワークフロー内で、バージョン管理をシンプルに、フォーム最適化の比較を容易に行えるようになります。
 
-* **[アダプティブフォームの比較](/help/forms/compare-forms.md)**：2 つのフォームを簡単に比較して、その違いを特定できるようになりました。チームメンバーがリビジョンを比較し、変更を効率的に議論できるので、共同作業がスムーズになります。
+* **アダプティブフォームの比較**：2 つのフォームを簡単に比較して、その違いを特定できるようになりました。チームメンバーがリビジョンを比較し、変更を効率的に議論できるので、共同作業がスムーズになります。
 
 * **手書き署名コンポーネントのアクセシビリティの強化**：このアップデートにより、手書き署名コンポーネントのアクセシビリティが大幅に向上しました。
 
@@ -148,7 +177,7 @@ Experience Manager Assetsでは、次の機能を提供することで、ユー�
 
   <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Adobe Workfront Fusion コネクタを使用すると、アダプティブフォームの送信時に自動的にトリガーされるワークフローを設計できます。例えば、送信されたデータを確認するタスクを特定の個人に割り当てるワークフローが開始され、アダプティブフォームから取り込まれた情報に基づいて、申し込みの承認または拒否ができるようになるシナリオを想定します。この合理化された統合によって効率が上がり、ワークフロープロセスの自動化が新たな段階に引き上げられます。
 
-* **[Reader Extension サービス](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**：AEM Forms Communication API では Reader Extension サービスを導入しました。通常の PDF にフォーム入力やコメントなどの機能を追加できるので、無料の Adobe Reader を使ってユーザーが PDF をインタラクティブに使用できるようになります。
+* **Reader Extension サービス**：AEM Forms Communication API では Reader Extension サービスを導入しました。通常の PDF にフォーム入力やコメントなどの機能を追加できるので、無料の Adobe Reader を使ってユーザーが PDF をインタラクティブに使用できるようになります。
 
 * [右横書き言語のサポート](/help/forms/supporting-new-language-localization-core-components.md)：コアコンポーネントに基づいて作成されたアダプティブフォームを、アラビア語、ペルシア語、ウルドゥー語などの右横書き（RTL）言語で表示できるようになりました。RTL 言語は、世界中で 20 億人以上の人々が話しています。RTL 言語のフォームを使用すると、アダプティブフォームのリーチを拡大して、これらの多様なオーディエンスに対応し、RTL マーケットを選択できます。また、特定の地域では、現地の言語でフォームを提供することは法的義務として定められています。現地の言語に対応することで、より幅広いオーディエンスに扉を開くだけでなく、関連する法律や規制を確実に遵守できます。
 
@@ -163,31 +192,23 @@ Experience Manager Assetsでは、次の機能を提供することで、ユー�
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
-### CDN 設定 {#cdn-config}
-
-次の方法で、Adobe CDN でトラフィックを設定します。
-
-* [リクエスト変換](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) - AEMにルーティングされる前に、受信リクエストの側面（パス、クエリパラメーター、HTTP ヘッダーなど）を変更します。
-* [応答変換](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations)  – 送信する応答の HTTP ヘッダーを、ブラウザーに提供される前に変更する。
-* [接触チャネルセレクター](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors) - CDN を経由してAEM外のサイトやアプリケーションにトラフィックをルーティングします。
-
-これらのルールがソース管理（Git）で宣言されたら、Cloud Manager 設定パイプラインを使用して CDN にデプロイできます。 後述の早期導入者の節にあるクライアントサイドのリダイレクト機能も参照してください。
-
-### カスタム CDN エラーページ {#cdn-error-pages}
-
-万一、CDN がAEM オリジンへのトラフィックをルーティングできない場合は、汎用バージョンに代わって、カスタムエラーページを宣言できます。 [詳細情報](/help/implementing/dispatcher/cdn-error-pages.md) ブランドエラーページの提供方法について。
-
 ### 早期導入プログラム {#foundation-early-adopter}
-
-#### クライアントサイドのリダイレクト（早期導入プログラム） {#client-side-redirects-early-adopter}
-
-ソース管理で 301/302 クライアントサイドのリダイレクトを設定し、CDN にデプロイします。 [詳細情報](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) 電子メールで早期導入プログラムに参加 **<aemcs-cdn-config-adopter@adobe.com>**.
 
 #### トラフィックフィルタールールアラート（早期導入プログラム） {#traffic-filter-rules-alerts-early-adopter}
 
 最近リリースされた[トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)には、オプションでライセンス可能な web アプリケーションファイアウォール（WAF）ルールが含まれており、許可または拒否するトラフィックを設定できます。
 
 **<aemcs-cdn-config-adopter@adobe.com>** にメールを送信して早期導入プログラムに参加すると、トラフィックフィルタールールがトリガーされるたびにアラートを受け取ることができます。特定のトラフィック状況が発生するとアクションセンターのメール通知が送信されるので、適切な対策を講じることができます。
+
+#### CDN 設定（早期導入プログラム） {#cdn-config-early-adopter}
+
+オプションでライセンス可能な web アプリケーションファイアウォール（WAF）ルールを含む、最近リリースされた[トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)の他に、設定パイプラインを使用して、他のタイプの CDN 設定を宣言およびデプロイすることもできます。[詳細情報](/help/implementing/dispatcher/cdn-configuring-traffic.md)を確認し、**<aemcs-cdn-config-adopter@adobe.com>** にメールを送信して早期導入プログラムに参加し、次の情報にアクセスしてください。
+
+* 301/302 クライアントサイドのリダイレクト
+* 任意の接触チャネルに対するエッジでのリクエストのプロキシ処理（AEM 以外のアプリケーションなど）
+* URL 変換
+* リクエストヘッダーまたは応答ヘッダーの設定または変更
+* CDN が AEM に到達できない場合のカスタムエラーページ
 
 #### Apache／Dispatcher ランタイムによる書き換えマップの取り込み（早期導入プログラム） {#apache-rewritemaps-early-adopter}
 
