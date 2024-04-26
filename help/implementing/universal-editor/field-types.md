@@ -2,8 +2,8 @@
 title: モデル定義、フィールドおよびコンポーネントタイプ
 description: ユニバーサルエディターがプロパティパネルで編集できるフィールドとコンポーネントタイプの例について説明します。モデル定義を作成し、コンポーネントにリンクすることで、独自のアプリを実装する方法を理解します。
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
-workflow-type: ht
+source-git-commit: 9f0a3bf5c8d839fa2ab6744c6fa7f97cc5fe8684
+workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 100%
 
@@ -830,4 +830,3 @@ AEM コンテンツコンポーネントタイプでは、AEM コンテンツピ
 ![テキストコンポーネントタイプのスクリーンショット](assets/component-types/simpletext.png)
 
 >[!ENDTABS]
-
