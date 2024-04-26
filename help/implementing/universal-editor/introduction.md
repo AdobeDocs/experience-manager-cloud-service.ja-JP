@@ -2,8 +2,8 @@
 title: ユニバーサルエディターの概要
 description: ユニバーサルエディターを使用して、ヘッドレスおよびヘッドフルエクスペリエンスを見たとおりに編集できる（WYSIWYG）仕組みを説明します。コンテンツ作成者がどのように優れたエクスペリエンスを提供し、コンテンツベロシティを向上し、最新のデベロッパーエクスペリエンスを提供できるのかを理解します。
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 24496f81313bd58f60aa6d251c46f11fb24d1dbd
-workflow-type: ht
+source-git-commit: bbcf44c585e98f75c558d06edc3c1c030adad2cf
+workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 100%
 
@@ -90,4 +90,3 @@ ht-degree: 100%
 * [ユニバーサルエディターのアーキテクチャ](architecture.md) - ユニバーサルエディターのアーキテクチャと、そのサービスとレイヤー間でのデータのフローについて説明します。
 * [属性とタイプ](attributes-types.md) - ユニバーサルエディターで必要なデータ属性とデータ型について説明します。
 * [ユニバーサルエディターの認証](authentication.md) - ユニバーサルエディターの認証方法について説明します。
-
