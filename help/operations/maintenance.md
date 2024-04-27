@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Serviceのメンテナンスタスクと、その設定方法について説明します。
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 4ac5ec2a2b8da90820734e4fc06c084c810c0724
-workflow-type: ht
-source-wordcount: '1129'
-ht-degree: 100%
+source-git-commit: 07676903a0270bfee5bfcffa2617e08e0a4ebbaf
+workflow-type: tm+mt
+source-wordcount: '1144'
+ht-degree: 87%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 100%
   <tr>
     <td>バージョンのパージ</td>
     <td>アドビ</td>
-    <td>既存の環境（2024年4月15日（PT）より前に作成された環境）の場合、パージは無効になっており、今後はデフォルトを 7年間として有効になる予定です。顧客は、より低いカスタム値（30 日など）で設定できるようになります。<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->新しい環境（2024年4月15日（PT）以降に作成された環境）では、デフォルトで以下の値でパージが有効になり、顧客はカスタム値を使用して設定できます。
+    <td>既存の環境（2024 年の未定の日付より前に作成された環境）の場合、パージは無効になり、今後 7 年間でデフォルトで有効になります。お客様は、より低いカスタム値（30 日など）で設定できます。<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->新しい環境（2024 年の未定の日付から作成された環境）では、デフォルトで以下の値でパージが有効になり、お客様はカスタム値を使用して設定できます。
      <ol>
        <li>31 日以上前のバージョンは削除されます</li>
        <li>過去 30 日間の最新の 5 つのバージョンが保持されます</li>
@@ -56,7 +56,7 @@ ht-degree: 100%
   <tr>
     <td>監査ログの削除</td>
     <td>アドビ</td>
-    <td>既存の環境（2024年4月15日（PT）より前に作成された環境）の場合、パージは無効になっており、今後はデフォルトを 7年間として有効になる予定です。顧客は、より低いカスタム値（30 日など）で設定できるようになります。<br><br> <!-- See above for the two line breaks -->新しい環境（2023年4月1日（PT）以降に作成された環境）では、次の動作に従って、リポジトリの <code>/content</code> ノードでデフォルトでパージが有効になります。
+    <td>既存の環境（2024 年の未定の日付より前に作成された環境）の場合、パージは無効になり、今後 7 年間でデフォルトで有効になります。お客様は、より低いカスタム値（30 日など）で設定できます。<br><br> <!-- See above for the two line breaks -->新しい環境（2024 年の未定の日付から作成された環境）では、デフォルトでパージが有効になります。 <code>/content</code> 次の動作に従った、リポジトリのノード。
      <ol>
        <li>レプリケーション監査の場合、4 日以上前の監査ログは削除されます</li>
        <li>DAM（アセット）監査の場合、31 日以上前の監査ログは削除されます</li>
