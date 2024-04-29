@@ -5,8 +5,8 @@ feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 source-git-commit: fc5ffe334873b7b98565f38d5664313b26d5f635
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1296'
+ht-degree: 100%
 
 ---
 
@@ -140,7 +140,7 @@ GitHub プロジェクトが完成したら、プロジェクトで使用でき�
 
    ![テンプレートの読み込み](assets/edge-dev-getting-started/site-templates.png)
 
-1. GitHub からダウンロードしたAEM オーサリングとEdge Delivery Servicesのサイトテンプレートをアップロードします。
+1. GitHub からダウンロードした Edge Delivery Services サイトテンプレートを使用した AEM オーサリングをアップロードします。
 
    * テンプレートは 1 回だけアップロードする必要があります。アップロードした後は、追加サイトの作成に再利用できます。
 

@@ -651,7 +651,7 @@ ht-degree: 99%
             + [コアコンポーネントに基づくアダプティブフォームのロケールの追加](/help/forms/supporting-new-language-localization-core-components.md)
             + [カスタム関数の作成と使用](/help/forms/create-and-use-custom-functions.md)
             + [コアコンポーネントに基づくアダプティブフォームへのルールの追加](/help/forms/rule-editor-core-components.md)
-            + [アダプティブフォームへのバージョン管理、コメントおよび注釈の追加](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+            + [アダプティブフォームへのバージョン管理、コメント、注釈の追加](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [アダプティブフォームの比較](/help/forms/compare-forms.md)
       + 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
          + PDF フォームのアダプティブフォームへの変換 {#afcs}
