@@ -3,7 +3,7 @@ title: レスポンシブレイアウト
 description: AEM では、ページにレスポンシブレイアウトを作成できます
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1737'
 ht-degree: 100%
 

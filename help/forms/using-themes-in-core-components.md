@@ -4,9 +4,9 @@ description: テーマとコアコンポーネントを使用して、アダプ�
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 source-git-commit: 159407dfaa5d17caddca2953a5732f0e91eb474c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2754'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -143,15 +143,15 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
    >[!NOTE]
    >
-   > * name 属性は、テーマを一意に識別するために使用され、指定された名前がに表示されます。 **スタイル** タブ **フォーム作成ウィザード**.
-   > * 選択に応じてテーマの名前を選択できます（例：）。 `mytheme` または `customtheme`. ただし、この場合は、名前をに指定します `aem-forms-wknd-theme`.
+   > * name 属性は、テーマを一意に識別するのに使用され、指定した名前が&#x200B;**フォーム作成ウィザード**&#x200B;の「**スタイル**」タブに表示されます。
+   > * 選択に応じて、テーマの名前を選択できます（`mytheme` または `customtheme` など）。ここでは、名前を `aem-forms-wknd-theme` に指定します。
 
 1. `package-lock.json` ファイルを編集用に開きます。
-1. の値を設定 `name` および `version` 属性。 の値を `name` および `version` の属性 `Package-lock`.json ファイルは、 `Package.json` ファイル。
+1. `name` および `version` の属性の値を設定します。`Package-lock`.json ファイルの `name` および `version` の属性の値は、`Package.json` ファイルの値と一致する必要があります。
 
    ![キャンバステーマ名の変更画像](/help/forms/assets/changename_canvastheme-package-lock.png)
 
-1. （オプション）を開きます `ReadMe` 編集するためのファイルで、テーマの名前を編集および更新します。
+1. （オプション）`ReadMe` ファイルを編集用に開いて、テーマの名前を更新します。
 
    ![キャンバステーマ名の変更画像](/help/forms/assets/changename_canvastheme-readme-file.png)
 
@@ -159,9 +159,9 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 **テーマの名前を設定する際の考慮事項**
 
-* を削除する必要があります `@aemforms` のテーマ名から `Package.json` ファイルと `Package-lock.json` ファイル。 を削除できない場合は、 `@aemforms` カスタマイズしたテーマ名から実行すると、テーマのデプロイメント中にフロントエンドパイプラインが失敗します。
-* テーマを更新することをお勧めします `version` 。対象： `Package.json` ファイルと `Package-lock.json` ファイル：テーマに対する時間の経過に伴う変更や機能強化を正確に反映します。
-* の使用方法、インストール手順、その他の関連する詳細についての重要な情報は、テーマ名を `ReadMe` ファイル。
+* `Package.json` ファイルと `Package-lock.json` ファイルのテーマの名前から `@aemforms` を削除する必要があります。カスタマイズしたテーマの名前から `@aemforms` を削除できない場合は、テーマのデプロイメント中にフロントエンドパイプラインが失敗します。
+* テーマに対する時間の経過に伴う変更や機能強化が正確に反映されるよう、`Package.json` ファイルと `Package-lock.json` ファイルのテーマ `version` を更新することをお勧めします。
+* 使用方法、インストール手順、その他の関連する詳細についての重要な情報は、`ReadMe` ファイルでテーマ名を更新することをお勧めします。
 
 #### 3. テーマのカスタマイズ {#customize-the-theme}
 

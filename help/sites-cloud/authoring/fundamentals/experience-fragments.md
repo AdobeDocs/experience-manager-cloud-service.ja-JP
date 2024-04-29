@@ -3,7 +3,7 @@ title: エクスペリエンスフラグメント
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントを使用すると、エクスペリエンスの再利用性と柔軟性を高めることができます。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2035'
 ht-degree: 100%
 

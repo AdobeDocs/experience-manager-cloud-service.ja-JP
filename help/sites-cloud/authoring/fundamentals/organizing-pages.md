@@ -3,7 +3,7 @@ title: ページの作成と整理
 description: AEM でページを作成および管理して、web サイトを整理する方法について説明します。
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2424'
 ht-degree: 100%
 

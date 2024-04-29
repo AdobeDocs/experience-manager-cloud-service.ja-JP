@@ -3,13 +3,13 @@ title: コレクションを管理
 description: コレクションとは、Experience Manager Assets ビュー内の一連のアセットのことです。コレクションを使用して、ユーザー間でアセットを共有します。
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 source-git-commit: b2144820ad549332e8a921744717a77824f9e099
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '910'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
-# コレクションの管理 {#manage-collections}
+# コレクションを管理 {#manage-collections}
 
 >[!CONTEXTUALHELP]
 >id="assets_collections"
@@ -188,17 +188,17 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 1. 「**[!UICONTROL 削除]**」をクリックします。
 
-## 非公開コレクションの権限の管理{#manage-permissions-private-collection}
+## 非公開コレクションに対する権限の管理{#manage-permissions-private-collection}
 
-管理者に対し、の管理を許可できます。 [アクセスレベル](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) （リポジトリで使用できる非公開コレクション用）。 次のような権限を割り当てることができます `Can View` および `Can Edit` をユーザー・グループまたはユーザーに送信します。 また、ユーザーグループに権限管理権限をデリゲートすることもできます。 非公開コレクションを作成するユーザーは、それらのコレクションの所有者です。 このコンソールは [!UICONTROL 権限の管理] 他のユーザーにアクセス権を付与するアクション。 また、管理者は以下でプライベートコレクションの権限を表示および管理することができます。 [!DNL Experience Manager] リポジトリ。
+管理者は、リポジトリで使用可能な非公開コレクションの[アクセスレベル](https://experienceleague.adobe.com/ja/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)を管理できます。`Can View` や `Can Edit` などの権限をユーザーグループまたはユーザーに割り当てることができます。また、ユーザーグループに権限管理の権限をデリゲートすることもできます。非公開コレクションを作成するユーザーは、それらのコレクションの所有者です。[!UICONTROL 権限を管理]アクションを使用すると、他のユーザーにアクセス権を付与できます。さらに、管理者は、[!DNL Experience Manager] リポジトリ内の非公開コレクションの権限を表示および管理できます。
 <!--
 >[!NOTE]
 >
 >Adobe does not recommend to assign permissions to users.
 -->
-使用可能な権限をユーザーグループに割り当てる方法については、を参照してください。 [ユーザーグループへの権限の追加](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+使用可能な権限をユーザーグループに割り当てる方法については、[ユーザーグループへの権限の追加](https://experienceleague.adobe.com/ja/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)を参照してください。
 
-エンドツーエンドのワークフローについて詳しくは、を参照してください。 [権限の管理](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+エンドツーエンドのワークフローについて詳しくは、[権限の管理](https://experienceleague.adobe.com/ja/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)を参照してください。
 
 ## 次の手順 {#next-steps}
 
@@ -206,4 +206,4 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
-* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&amp;lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General#support)に問い合わせる

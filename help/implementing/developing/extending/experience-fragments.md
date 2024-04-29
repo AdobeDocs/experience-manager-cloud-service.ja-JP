@@ -1,11 +1,11 @@
 ---
 title: エクスペリエンスフラグメントの概要
-description: Adobe Experience Manager as a Cloud Service用のエクスペリエンスフラグメントの拡張
+description: Adobe Experience Manager as a Cloud Service に対するエクスペリエンスフラグメントの拡張
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 source-git-commit: 433e95366a8cc0baebb1ccd02a64603ab26dfb86
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1657'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

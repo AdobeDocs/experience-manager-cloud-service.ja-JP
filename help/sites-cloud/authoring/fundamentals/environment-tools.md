@@ -3,7 +3,7 @@ title: オーサリング環境とツール
 description: AEM のオーサリング環境は、コンテンツを編成および編集するための様々なメカニズムを提供しています
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2161'
 ht-degree: 100%
 

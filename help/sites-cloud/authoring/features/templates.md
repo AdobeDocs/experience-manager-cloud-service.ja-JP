@@ -3,7 +3,7 @@ title: ページテンプレートの作成
 description: テンプレートは、作成されるページの構造を定義します。テンプレートエディターを使用すると、テンプレートの作成および維持は、もはや開発者だけのタスクではなくなります。
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4523'
 ht-degree: 100%
 

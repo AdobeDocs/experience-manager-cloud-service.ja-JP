@@ -3,7 +3,7 @@ title: ページの公開
 description: AEM の様々なメカニズムを使用して、ページを公開および非公開にする方法について説明します。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1927'
 ht-degree: 100%
 

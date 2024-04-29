@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '125'
 ht-degree: 100%
 

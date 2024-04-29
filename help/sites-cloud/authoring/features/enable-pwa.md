@@ -3,7 +3,7 @@ title: プログレッシブ web アプリケーション機能の有効化
 description: AEM Sites では、コンテンツ作成者がコーディングの代わりにシンプルな設定で、任意のサイトに対してプログレッシブ web アプリケーション機能を有効にすることができます。
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1896'
 ht-degree: 100%
 

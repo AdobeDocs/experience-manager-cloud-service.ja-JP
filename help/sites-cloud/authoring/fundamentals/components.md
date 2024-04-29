@@ -3,7 +3,7 @@ title: コンポーネント
 description: コンポーネントは、AEM におけるコンテンツページの基本的なオーサリング構成要素です。
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '335'
 ht-degree: 100%
 
