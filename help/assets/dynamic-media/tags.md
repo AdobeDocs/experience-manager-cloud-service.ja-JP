@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
-source-wordcount: '6701'
+source-git-commit: 3312aa270c05e506d12ed8a5c1360154bb02b350
+workflow-type: tm+mt
+source-wordcount: '6700'
 ht-degree: 100%
 
 ---
@@ -694,7 +694,7 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
 
 1. 新しいブラウザータブで、「[Adobe Developer Console](https://developer.adobe.com/console/integrations)」に移動します。
 
-1. **[!UICONTROL Adobe I/O コンソール統合]**&#x200B;ページの右上隅近くにある「**[!UICONTROL 新規の統合]**」を選択します。
+1. **[!UICONTROL Adobe Developer Console 統合]**&#x200B;ページの右上隅近くにある「**[!UICONTROL 新規の統合]**」を選択します。
 1. **[!UICONTROL 統合の新規作成]**&#x200B;ダイアログボックスで、「**[!UICONTROL API へのアクセス]**」ラジオボタンが選択されていることを確認し、「**[!UICONTROL 続行]**」を選択します。
 
 ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
