@@ -4,10 +4,10 @@ description: コンソールやエディターから AEM コンテンツフラ�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 404eb317562f974f72820c6e3aa019fbe043d7f7
-workflow-type: ht
-source-wordcount: '2643'
-ht-degree: 100%
+source-git-commit: a9a2362903e8eec25393e2ceb307814e1a21f142
+workflow-type: tm+mt
+source-wordcount: '2628'
+ht-degree: 99%
 
 ---
 
@@ -307,11 +307,7 @@ ht-degree: 100%
 
   >[!NOTE]
   >
-  >プレビュー環境について詳しくは、以下を参照してください。
-  >
-  >* [環境を管理](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
-  >* [プレビュー層の OSGi 設定の指定](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-  >* [開発者コンソールを使用したプレビューのデバッグ](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
+  >プレビュー環境について詳しくは、を参照してください。 [環境の管理](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 >[!CAUTION]
 >

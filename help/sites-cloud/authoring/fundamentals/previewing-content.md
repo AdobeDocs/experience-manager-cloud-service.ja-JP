@@ -2,9 +2,9 @@
 title: コンテンツのプレビュー
 description: AEM プレビューサービスを使用して、運用を開始する前にコンテンツをプレビューする方法を説明します。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: ht
-source-wordcount: '315'
+source-git-commit: a9a2362903e8eec25393e2ceb307814e1a21f142
+workflow-type: tm+mt
+source-wordcount: '298'
 ht-degree: 100%
 
 ---
@@ -54,11 +54,3 @@ https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.htm
 **プレビュー**&#x200B;環境からコンテンツを非公開にする方法は、**公開**&#x200B;環境から[ページを非公開にする](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)場合と基本的に同じプロセスです。
 
 唯一の違いは、**プレビュー**&#x200B;する&#x200B;**宛先**&#x200B;を選択できることです。
-
-## その他の情報 {#further-information}
-
-関連トピック：
-
-* [プレビュー層の OSGi 設定の指定](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-
-* [開発者コンソールを使用したプレビューのデバッグ](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)

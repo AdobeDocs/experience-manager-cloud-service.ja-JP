@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3c0185c1a108f16ce3230aa8e949de3cf436d427
+source-git-commit: a5fc1f7e42edc8d41cac687a348dad7fc98742c1
 workflow-type: tm+mt
-source-wordcount: '4901'
+source-wordcount: '4892'
 ht-degree: 99%
 
 ---
@@ -282,7 +282,7 @@ ht-degree: 99%
       + [オーサリング方法](/help/sites-cloud/authoring/authoring-methods.md)
       + [検索](/help/sites-cloud/authoring/search.md)
       + [アカウント環境の設定 ](/help/sites-cloud/authoring/account-environment.md)
-      + [インボックス ](/help/sites-cloud/authoring/inbox.md)
+      + [インボックス](/help/sites-cloud/authoring/inbox.md)
       + [コンポーネントコンソール](/help/sites-cloud/authoring/components-console.md)
       + [パスの選択](/help/sites-cloud/authoring/path-selection.md)
       + [トラブルシューティング](/help/sites-cloud/authoring/troubleshooting.md)
@@ -1156,8 +1156,6 @@ ht-degree: 99%
    + オーサー層 {#author-tier}
       + [オーサー層へのアクセス](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [オーサー層の保護](/help/implementing/author-tier/securing-the-author-tier.md)
-   + プレビュー層 {#preview-tier}
-      + [プレビュー層の OSGi 設定の指定](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
    + コンテンツ配信の概要 {#content-delivery}
       + [コンテンツ配信フロー](/help/implementing/dispatcher/overview.md)
       + [クラウド内の Dispatcher](/help/implementing/dispatcher/disp-overview.md)
