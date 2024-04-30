@@ -3,22 +3,18 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] のアセッ�
 description: アセットセレクターを使用して、アプリケーション内のアセットのメタデータとレンディションを検索および取得します。
 contentOwner: KK
 role: Admin,User
-exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: e882e89afa213f3423efe497585994eb91186fd7
-workflow-type: ht
-source-wordcount: '2371'
-ht-degree: 100%
+exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
+source-git-commit: b9fe6f4c2f74d5725575f225f8d9eb2e5fbfceb7
+workflow-type: tm+mt
+source-wordcount: '3908'
+ht-degree: 50%
 
 ---
 
+
 # マイクロフロントエンドアセットセレクター {#Overview}
 
-| バージョン | 記事リンク |
-| -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/asset-selector.html?lang=ja) |
-| AEM as a Cloud Service | この記事 |
-
-マイクロフロントエンドアセットセレクターは、[!DNL Experience Manager Assets as a Cloud Service] リポジトリと簡単に統合できるユーザーインターフェイスを提供します。ユーザーはこれにより、リポジトリで使用可能なデジタルアセットを参照または検索し、アプリケーションのオーサリングエクスペリエンスで使用できるようになります。
+マイクロフロントエンドアセットセレクターは、[!DNL Experience Manager Assets] リポジトリと簡単に統合できるユーザーインターフェイスを提供します。ユーザーはこれにより、リポジトリで使用可能なデジタルアセットを参照または検索し、アプリケーションのオーサリングエクスペリエンスで使用できるようになります。
 
 アセットセレクターパッケージを使用すると、マイクロフロントエンドのユーザーインターフェイスをアプリケーションエクスペリエンスで利用できるようになります。パッケージのアップデートはすべて自動的に読み込まれ、デプロイされた最新のアセットセレクターがアプリケーション内に自動的に読み込まれます。
 
@@ -26,88 +22,46 @@ ht-degree: 100%
 
 アセットセレクターには、次のような多くの利点があります。
 
-* Vanilla JavaScript ライブラリを使用して、あらゆるアドビアプリケーションまたはアドビ以外のアプリケーションと簡単に統合できます。
+* 任意のとの統合が容易 [Adobe](#asset-selector-ims) または [非Adobe](#asset-selector-non-ims) vanilla JavaScript ライブラリを使用するアプリケーション。
 * アセットセレクターパッケージのアップデートがアプリケーションで使用可能なアセットセレクターに自動的にデプロイされるため、管理が簡単です。最新の修正内容を読み込むために、アプリケーション内でアップデートを行う必要がありません。
 * アプリケーション内のアセットセレクターの表示を制御するプロパティを利用できるため、カスタマイズが容易です。
-
 * フルテキスト検索、標準のフィルターおよびカスタマイズされたフィルターを使用して、オーサリングエクスペリエンス内で使用するアセットにすばやく移動できます。
-
 * IMS 組織内のリポジトリを切り替えて、アセットを選択できます。
-
 * 名前、寸法、サイズでアセットを並べ替えたり、リスト、グリッド、ギャラリー、ウォーターフォールの各レイアウトでアセットを表示したりできます。
 
-この記事では、統合シェルの下で [!DNL Adobe] アプリケーションと連携してアセットセレクターを使用する方法、または認証用に生成された imsToken が既にある場合にアセットセレクターを使用する方法について説明します。この記事では、これらのワークフローを非 SUSI フローと呼びます。
+<!--Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
 
-次のタスクを実行してアセットセレクターを [!DNL Experience Manager Assets as a Cloud Service] リポジトリと統合し、連携して使用します。
-
-* [Vanilla JS を使用したアセットセレクターの統合](#integration-with-vanilla-js)
-* [アセットセレクターの表示プロパティの定義](#asset-selector-properties)
-* [アセットセレクターの使用](#using-asset-selector)
-
-## Vanilla JS を使用したアセットセレクターの統合 {#integration-with-vanilla-js}
-
-あらゆる [!DNL Adobe] アプリケーションまたはアドビ以外のアプリケーションを [!DNL Experience Manager Assets] as a [!DNL Cloud Service] リポジトリと統合し、アプリケーション内からアセットを選択できます。
-
-統合は、アセットセレクターパッケージを読み込み、Vanilla JavaScript ライブラリを使用して Assets as a Cloud Service に接続することで行われます。アプリケーション内の `index.html` または適切なファイルを、次の目的で編集する必要があります。
-
-* 認証の詳細を定義する
-* Assets as a Cloud Service リポジトリにアクセスする
-* アセットセレクターの表示プロパティを設定する
-
-<!--
-Asset Selector supports authentication to the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID`. Authentication using these IMS properties is referred to as SUSI (Sign Up Sign In) flow in this article.
-
-You can perform authentication without defining some of the IMS properties, such as `imsScope` or `imsClientID`, if:
-
-*   You are integrating an [!DNL Adobe] application on [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
-*   You already have an IMS token generated for authentication.
-
-Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository without defining `imsScope` or `imsClientID` IMS properties is referred to as a non-SUSI flow in this article.
+1. [Install Asset Selector](#installation)
+2. [Integrate Asset Selector using Vanilla JS](#integration-using-vanilla-js)
+3. [Use Asset Selector](#using-asset-selector)
 -->
 
-次の場合は、一部の IMS プロパティを定義せずに認証を実行できます。
-
-* [統合シェル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=ja)の [!DNL Adobe] アプリケーションを統合している場合。
-* 認証用に既に IMS トークンが生成されている場合。
-
-## 前提条件 {#prerequisites}
-
 <!--
-If your application requires user based authentication, out-of-the-box Asset Selector also supports a flow for authentication to the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository using Identity Management System (IMS.)
+## Setting up Asset Selector {#asset-selector-setup}
 
-You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken` automatically. You can use SUSI (Sign Up Sign In) flow and IMS properties. Also, you can obtain your own imsToken and pass it to Asset Selector by integrating within [!DNL Adobe] application on Unified Shell or if you already have an imsToken obtained via other methods (for example, using technical account). Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository without defining IMS properties (For example, `imsScope` and `imsClientID`) is referred to as a non-SUSI flow.
+![Asset Selector set up](assets/asset-selector-prereqs.png)
 -->
 
-アプリケーション実装内の `index.html` ファイルまたは同様のファイルで前提条件を定義して、[!DNL Experience Manager Assets] as a [!DNL Cloud Service] リポジトリにアクセスするための認証の詳細を定義します。前提条件は次のとおりです。
+## 前提条件{#prereqs}
 
-* imsOrg
-* imsToken
-* apikey
-<!--
-The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI flow.
+次の通信方法を確認する必要があります。
 
-**Non-SUSI flow**
+* アプリケーションは HTTPS で実行されています。
+* アプリケーションの URL は、IMS クライアントのリダイレクト URL の許可リストーにあります。
+* IMS ログインフローは、web ブラウザーのポップアップを使用して設定およびレンダリングされます。 そのため、ターゲットブラウザーでポップアップを有効または許可する必要があります。
 
-*   imsOrg
-*   imsToken
-*   apikey
+アセットセレクターの IMS 認証ワークフローが必要な場合は、上記の前提条件を使用します。 または、IMS ワークフローで既に認証されている場合は、代わりに IMS 情報を追加できます。
 
-For more information on these properties, see [Asset Selector Properties](#asset-selector-properties).
-
-**SUSI flow**
-
-*   imsClientId
-*   imsScope
-*   redirectUrl
-*   imsOrg
-*   apikey
-
-For more information on these properties, see [Example for the SUSI flow](#susi-vanilla) and [Asset Selector Properties](#asset-selector-properties).
--->
+>[!IMPORTANT]
+>
+> このリポジトリは、アセットセレクターを統合するために利用可能な API と使用例について説明した補足ドキュメントとして機能することを目的としています。 アセットセレクターをインストールまたは使用する前に、Experience Manager Assetsas a Cloud Serviceプロファイルの一部としてアセットセレクターへのアクセスがプロビジョニングされていることを確認してください。 プロビジョニングされていない場合、これらのコンポーネントを統合または使用することはできません。 プロビジョニングをリクエストするには、プログラム管理者がAdmin Consoleから P2 とマークされたサポートチケットを発行し、次の情報を含める必要があります。
+>
+>* 統合アプリケーションがホストされるドメイン名。
+>* プロビジョニング後、組織には次の情報が提供されます `imsClientId`, `imsScope`、および `redirectUrl` アセットセレクターの設定に不可欠なリクエストされた環境に対応します。 これらの有効なプロパティがないと、インストール手順を実行できません。
 
 ## インストール {#installation}
 
-アセットセレクターは、ESM CDN 経由（例：[esm.sh](https://esm.sh/)／[skypack](https://www.skypack.dev/)）および [UMD](https://github.com/umdjs/umd) バージョン経由のいずれでも使用できます。
+アセットセレクターは、両方の ESM CDN から使用できます（例：） [esm.sh](https://esm.sh/)/[脱字](https://www.skypack.dev/)）および [UMD](https://github.com/umdjs/umd) バージョン。
 
 **UMD バージョン**&#x200B;を使用しているブラウザー（推奨）：
 
@@ -133,106 +87,50 @@ For more information on these properties, see [Example for the SUSI flow](#susi-
 import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 ```
 
-### 選択されたアセットタイプ {#selected-asset-type}
+## Vanilla JS を使用したアセットセレクターの統合 {#integration-using-vanilla-js}
 
-選択されたアセットタイプは、`handleSelection`、`handleAssetSelection`、および `onDrop` 関数を使用している場合、アセット情報を含むオブジェクトの配列です。
+以下のいずれかを統合できます [!DNL Adobe] または以外のAdobeとのアプリケーション [!DNL Experience Manager Assets] リポジトリを開き、アプリケーション内からアセットを選択します。 参照： [アセットセレクターと様々なアプリケーションの統合](#asset-selector-integration-with-apps).
 
-**スキーマ構文**
+統合は、アセットセレクターパッケージを読み込み、Vanilla JavaScript ライブラリを使用して Assets as a Cloud Service に接続することで行われます。を編集 `index.html` またはアプリケーション内の適切なファイルで、次の操作を行います。
 
-```
-interface SelectedAsset {
-    'repo:id': string;
-    'repo:name': string;
-    'repo:path': string;
-    'repo:size': number;
-    'repo:createdBy': string;
-    'repo:createDate': string;
-    'repo:modifiedBy': string; 
-    'repo:modifyDate': string; 
-    'dc:format': string; 
-    'tiff:imageWidth': number;
-    'tiff:imageLength': number;
-    'repo:state': string;
-    computedMetadata: Record<string, any>;
-    _links: {
-        'http://ns.adobe.com/adobecloud/rel/rendition': Array<{
-            href: string;
-            type: string;
-            'repo:size': number;
-            width: number;
-            height: number;
-            [others: string]: any;
-        }>;
-    };
-}
-```
+* 認証の詳細を定義する
+* Assets as a Cloud Service リポジトリにアクセスする
+* アセットセレクターの表示プロパティを設定する
 
-次の表に、選択されたアセットのオブジェクトの重要なプロパティの一部を示します。
+次の場合は、一部の IMS プロパティを定義せずに認証を実行できます。
 
-| Property | タイプ | 説明 |
-|---|---|---|
-| *repo:repositoryId* | 文字列 | アセットが保存されるリポジトリの一意の ID。 |
-| *repo:id* | 文字列 | アセットの一意の ID。 |
-| *repo:assetClass* | 文字列 | アセットの分類（例：画像、ビデオ、ドキュメント）。 |
-| *repo:name* | 文字列 | ファイル拡張子を含むアセットの名前。 |
-| *repo:size* | 数値 | アセットのサイズ（バイト単位）。 |
-| *repo:path* | 文字列 | リポジトリ内のアセットの場所。 |
-| *repo:ancestors* | `Array<string>` | リポジトリ内のアセットの上位項目の配列。 |
-| *repo:state* | 文字列 | リポジトリ内のアセットの現在のステータス（例：アクティブ、削除済みなど）。 |
-| *repo:createdBy* | 文字列 | アセットを作成したユーザーまたはシステム。 |
-| *repo:createDate* | 文字列 | アセットが作成された日時。 |
-| *repo:modifiedBy* | 文字列 | アセットを最後に変更したユーザーまたはシステム。 |
-| *repo:modifyDate* | 文字列 | アセットが最後に変更された日時。 |
-| *dc:format* | 文字列 | ファイルタイプなどのアセットの形式（例：JPEG、PNG）。 |
-| *tiff:imageWidth* | 数値 | アセットの幅。 |
-| *tiff:imageLength* | 数値 | アセットの高さ。 |
-| *computedMetadata* | `Record<string, any>` | あらゆる種類（リポジトリ、アプリケーション、埋め込みメタデータ）のすべてのアセットのメタデータのバケットを表すオブジェクト。 |
-| *_links* | `Record<string, any>` | 関連付けられたアセットのハイパーメディアリンク。メタデータやレンディションなどのリソースへのリンクが含まれます。 |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition* | `Array<Object>` | アセットのレンディションに関する情報を含むオブジェクトの配列。 |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].href* | 文字列 | レンディションの URI。 |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].type* | 文字列 | レンディションの MIME タイプ。 |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].&#39;repo:size&#39;* | 数値 | レンディションのサイズ（バイト単位）。 |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].width* | 数値 | レンディションの幅。 |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].height* | 数値 | レンディションの高さ。 |
+* [統合シェル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=ja)の [!DNL Adobe] アプリケーションを統合している場合。
+* 認証用に既に IMS トークンが生成されている場合。
 
-プロパティの完全なリストと詳細な例については、[アセットセレクターのコード例](https://github.com/adobe/aem-assets-selectors-mfe-examples)を参照してください。
+## アセットセレクターと様々なアプリケーションの統合 {#asset-selector-integration-with-apps}
 
-<!--
-### ImsAuthProps {#ims-auth-props}
+アセットセレクターは、次のような様々なアプリケーションと統合できます。
 
-The `ImsAuthProps` properties define the authentication information and flow that the Asset Selector uses to obtain an `imsToken`. By setting these properties, you can control how the authentication flow should behave and register listeners for various authentication events.
+* [アセットセレクターとの統合 [!DNL Adobe] 適用](#adobe-app-integration-vanilla)
+* [アセットセレクターと非Adobeアプリケーションの統合](#adobe-non-app-integration)
 
-| Property Name | Description|
-|---|---|
-| `imsClientId`| A string value representing the IMS client ID used for authentication purposes. This value is provided by Adobe and is specific to your Adobe AEM CS organization.|
-| `imsScope`| Describes the scopes used in authentication. The scopes determine the level of access that the application has to your organization resources. Multiple scopes can be separated by commas.|
-| `redirectUrl` | Represents the URL where the user is redirected after authentication. This value is typically set to the current URL of the application. If a `redirectUrl` is not supplied, `ImsAuthService` will use the redirectUrl used to register the `imsClientId`|
-| `modalMode`| A boolean indicating whether the authentication flow should be displayed in a modal (pop-up) or not. If set to `true`, the authentication flow is displayed in a pop-up. If set to `false`, the authentication flow is displayed in a full page reload. _Note:_ for better UX, you can dynamically control this value if the user has browser pop-up disabled. |
-| `onImsServiceInitialized`| A callback function that is called when the Adobe IMS authentication service is initialized. This function takes one parameter, `service`, which is an object representing the Adobe IMS service. See [`ImsAuthService`](#imsauthservice-ims-auth-service) for more details.|
-| `onAccessTokenReceived`| A callback function that is called when an `imsToken` is received from the Adobe IMS authentication service. This function takes one parameter, `imsToken`, which is a string representing the access token. |
-| `onAccessTokenExpired`| A callback function that is called when an access token has expired. This function is typically used to trigger a new authentication flow to obtain a new access token. |
-| `onErrorReceived`| A callback function that is called when an error occurs during authentication. This function takes two parameters: the error type and error message. The error type is a string representing the type of error and the error message is a string representing the error message. |
+>[!BEGINTABS]
 
-### ImsAuthService {#ims-auth-service}
+<!--Integration with an Adobe application content starts here-->
 
-`ImsAuthService` class handles the authentication flow for the Asset Selector. It is responsible for obtaining an `imsToken` from the Adobe IMS authentication service. The `imsToken` is used to authenticate the user and authorize access to the Adobe Experience Manager (AEM) CS Assets repository. ImsAuthService uses the `ImsAuthProps` properties to control the authentication flow and register listeners for various authentication events. You can use the convenient [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) function to register the _ImsAuthService_ instance with the Asset Selector. The following functions are available on the `ImsAuthService` class. However, if you are using the _registerAssetsSelectorsAuthService_ function, you do not need to call these functions directly.
+>[!TAB Adobeアプリケーションとの統合]
 
-| Function Name | Description |
-|---|---|
-| `isSignedInUser` | Determines whether the user is currently signed in to the service and returns a boolean value accordingly.|
-| `getImsToken`    | Retrieves the authentication `imsToken` for the currently signed-in user, which can be used to authenticate requests to other services such as generating asset _rendition.|
-| `signIn`| Initiates the sign-in process for the user. This function uses the `ImsAuthProps` to show authentication in either a pop-up or a full page reload |
-| `signOut`| Signs the user out of the service, invalidating their authentication token and requiring them to sign in again to access protected resources. Invoking this function will reload the current page.|
-| `refreshToken`| Refreshes the authentication token for the currently signed-in user, preventing it from expiring and ensuring uninterrupted access to protected resources. Returns a new authentication token that can be used for subsequent requests. |
--->
+### 前提条件{#prereqs-adobe-app}
 
-### 非 SUSI フローの例 {#non-susi-vanilla}
+アセットセレクターをに統合する場合は、次の前提条件を使用してください [!DNL Adobe] アプリケーション：
 
-この例では、統合シェルの下で [!DNL Adobe] アプリケーションを実行している場合、または認証用に生成された `imsToken` が既にある場合に、アセットセレクターを非 SUSI フローと連携して使用する方法を示します。
+* [通信方法](#prereqs)
+* imsOrg
+* imsToken
+* apikey
 
-以下の例の _6～15 行目_&#x200B;に示されているように、`script` タグを使用してアセットセレクターパッケージをコードに含めます。スクリプトが読み込まれると、`PureJSSelectors` グローバル変数を使用できるようになります。_16～23 行目_&#x200B;に示されているように、アセットセレクターの[プロパティ](#asset-selector-properties)を定義します。`imsOrg` プロパティと `imsToken` プロパティは、いずれも非 SUSI フローでの認証に必要です。`handleSelection` プロパティは、選択したアセットを処理するために使用されます。_17 行目_&#x200B;で示されているように、アセットセレクターをレンダリングするには `renderAssetSelector` 関数を呼び出します。_21～22 行目_&#x200B;に示されているように、アセットセレクターが `<div>` コンテナ要素に表示されます。
+### アセットセレクターとの統合 [!DNL Adobe] 適用 {#adobe-app-integration-vanilla}
 
-これらの手順に従うと、[!DNL Adobe] アプリケーションでアセットセレクターを非 SUSI フローと連携して使用できます。
+次の例は、を実行する際のアセットセレクターの使用方法を示しています。 [!DNL Adobe] 統合シェルの下でアプリケーションを使用する、または既にがある場合 `imsToken` 認証用に生成されました。
+
+以下の例の _6～15 行目_&#x200B;に示されているように、`script` タグを使用してアセットセレクターパッケージをコードに含めます。スクリプトが読み込まれると、`PureJSSelectors` グローバル変数を使用できるようになります。_16～23 行目_&#x200B;に示されているように、アセットセレクターの[プロパティ](#asset-selector-properties)を定義します。この `imsOrg` および `imsToken` プロパティは、いずれもAdobeアプリケーションでの認証に必要です。 `handleSelection` プロパティは、選択したアセットを処理するために使用されます。_17 行目_&#x200B;で示されているように、アセットセレクターをレンダリングするには `renderAssetSelector` 関数を呼び出します。_21～22 行目_&#x200B;に示されているように、アセットセレクターが `<div>` コンテナ要素に表示されます。
+
+これらの手順に従うと、アセットセレクターをと一緒に使用できます [!DNL Adobe] アプリケーション。
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
@@ -243,7 +141,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
     <script>
         // get the container element in which we want to render the AssetSelector component
         const container = document.getElementById('asset-selector-container');
-        // imsOrg and imsToken are required for authentication in non-SUSI flow
+        // imsOrg and imsToken are required for authentication in Adobe application
         const assetSelectorProps = {
             imsOrg: 'example-ims@AdobeOrg',
             imsToken: "example-imsToken",
@@ -263,24 +161,146 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 </html>
 ```
 
-詳細な例は、[アセットセレクターのコード例](https://github.com/adobe/aem-assets-selectors-mfe-examples)を参照してください。
+<!--For detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).-->
 
-<!--
-### Example for the SUSI flow {#susi-vanilla}
++++**ImsAuthProps**
+この `ImsAuthProps` プロパティは、アセットセレクターがを取得するために使用する認証情報およびフローを定義します。 `imsToken`. これらのプロパティを設定すると、認証フローの動作を制御し、様々な認証イベントのリスナーを登録できます。
 
-Use this example `index.html` file for authentication if you are integrating your application using SUSI flow.
+| プロパティ名 | 説明 |
+|---|---|
+| `imsClientId` | 認証目的で使用される IMS クライアント ID を表す文字列値。 この値は、Adobeが指定し、AdobeのAEM CS 組織に固有です。 |
+| `imsScope` | 認証で使用されるスコープについて説明します。 スコープは、組織のリソースに対するアプリケーションのアクセス レベルを決定します。 複数の範囲を指定する場合は、コンマで区切ります。 |
+| `redirectUrl` | 認証後にユーザーがリダイレクトされる URL を表します。 この値は、通常、アプリケーションの現在の URL に設定されます。 If a `redirectUrl` が指定されていない場合、 `ImsAuthService` は、の登録に使用される redirectUrl を使用します `imsClientId` |
+| `modalMode` | 認証フローをモーダル（ポップアップ）に表示するかどうかを示すブール値。 に設定されている場合 `true`が開くと、認証フローがポップアップで表示されます。 に設定されている場合 `false`を選択すると、認証フローがページ全体の再読み込みで表示されます。 _注意：_ ユーザーがブラウザーポップアップを無効にしている場合、UX を向上させるために、この値を動的に制御できます。 |
+| `onImsServiceInitialized` | Adobe IMS認証サービスが初期化されるときに呼び出されるコールバック関数。 この関数は、1 つのパラメーターを受け取ります。 `service`（Adobe IMSサービスを表すオブジェクト）。 参照： [`ImsAuthService`](#imsauthservice-ims-auth-service) を参照してください。 |
+| `onAccessTokenReceived` | 以下の場合に呼び出されるコールバック関数 `imsToken` は、Adobe IMS認証サービスから受信されます。 この関数は、1 つのパラメーターを受け取ります。 `imsToken`アクセストークンを表す文字列。 |
+| `onAccessTokenExpired` | アクセストークンの有効期限が切れたときに呼び出されるコールバック関数。 この関数は、通常、新しいアクセストークンを取得するための新しい認証フローをトリガーするために使用されます。 |
+| `onErrorReceived` | 認証中にエラーが発生したときに呼び出されるコールバック関数。 この関数は、エラータイプとエラーメッセージの 2 つのパラメーターを取ります。 エラータイプはエラーのタイプを表す文字列で、エラーメッセージはエラーメッセージを表す文字列です。 |
 
-Access the Asset Selector package using the `Script` Tag, as shown in *line 9* to *line 11* of the example `index.html` file.
++++
 
-*Line 14* to *line 38* of the example describes the IMS flow properties, such as `imsClientId`, `imsScope`, and `redirectURL`. The function requires that you define at least one of the `imsClientId` and `imsScope` properties. If you do not define a value for `redirectURL`, the registered redirect URL for the client ID is used.
++++**ImsAuthService**
+`ImsAuthService` クラスは、アセットセレクターの認証フローを処理します。 次のものを取得する必要があります `imsToken` Adobe IMS認証サービスから。 この `imsToken` を使用してユーザーを認証し、へのアクセスを認証します [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] アセットリポジトリ。 ImsAuthService は、 `ImsAuthProps` 認証フローを制御し、様々な認証イベントのリスナーを登録するためのプロパティ。 あなたは、便利なを使用することができます [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) を登録する機能 _ImsAuthService_ アセットセレクターを使用したインスタンス。 で次の関数を使用できます。 `ImsAuthService` クラス。 ただし、を使用している場合は _registerAssetsSelectorsAuthService_ 関数を使用すると、これらの関数を直接呼び出す必要がなくなります。
 
-As you do not have an `imsToken` generated, use the `registerAssetsSelectorsAuthService` and `renderAssetSelectorWithAuthFlow` functions, as shown in line 40 to line 50 of the example `index.html` file. Use the `registerAssetsSelectorsAuthService` function before `renderAssetSelectorWithAuthFlow` to register the `imsToken` with the Asset Selector. [!DNL Adobe] recommends to call `registerAssetsSelectorsAuthService` when you instantiate the component.
+| 関数名 | 説明 |
+|---|---|
+| `isSignedInUser` | ユーザーが現在サービスにログインしているかどうかを判断し、それに応じてブール値を返します。 |
+| `getImsToken` | 認証を取得します。 `imsToken` 現在ログインしているユーザー用。アセット _rendition の生成など、他のサービスへのリクエストの認証に使用できます。 |
+| `signIn` | ユーザーのログインプロセスを開始します。 この関数は、 `ImsAuthProps` ポップアップまたはページ全体のリロードで認証を表示するには |
+| `signOut` | サービスからユーザーに署名して認証トークンを無効にし、保護されたリソースにアクセスするために再度ログインする必要があります。 この関数を呼び出すと、現在のページがリロードされます。 |
+| `refreshToken` | 現在サインインしているユーザーの認証トークンを更新します。これにより、認証トークンの有効期限が切れなくなり、保護されたリソースに中断なくアクセスできるようになります。 後続のリクエストで使用できる新しい認証トークンを返します。 |
 
-Define the authentication and other Assets as a Cloud Service access-related properties in the `const props` section, as shown in *line 54* to *line 60* of the example `index.html` file.
++++
 
-The `PureJSSelectors` global variable, mentioned in *line 65*, is used to render the Asset Selector in the web browser.
++++**提供された IMS トークンによる検証**
 
-Asset Selector is rendered on the `<div>` container element, as mentioned in *line 74* to *line 81*. The example uses a dialog to display the Asset Selector.
+```
+<script>
+    const apiToken="<valid IMS token>";
+    function handleSelection(selection) {
+    console.log("Selected asset: ", selection);
+    };
+    function renderAssetSelectorInline() {
+    console.log("initializing Asset Selector");
+    const props = {
+    "repositoryId": "delivery-p64502-e544757.adobeaemcloud.com",
+    "apiKey": "ngdm_test_client",
+    "imsOrg": "<IMS org>",
+    "imsToken": apiToken,
+    handleSelection,
+    hideTreeNav: true
+    }
+    const container = document.getElementById('asset-selector-container');
+    PureJSSelectors.renderAssetSelector(container, props);
+    }
+    $(document).ready(function() {
+    renderAssetSelectorInline();
+    });
+</script>
+```
+
++++
+
++++**IMS サービスへのコールバックの登録**
+
+```
+// object `imsProps` to be defined as below 
+let imsProps = {
+    imsClientId: <IMS Client Id>,
+        imsScope: "openid",
+        redirectUrl: window.location.href,
+        modalMode: true,
+        adobeImsOptions: {
+            modalSettings: {
+            allowOrigin: window.location.origin,
+},
+        useLocalStorage: true,
+},
+onImsServiceInitialized: (service) => {
+            console.log("onImsServiceInitialized", service);
+},
+onAccessTokenReceived: (token) => {
+            console.log("onAccessTokenReceived", token);
+},
+onAccessTokenExpired: () => {
+            console.log("onAccessTokenError");
+// re-trigger sign-in flow
+},
+onErrorReceived: (type, msg) => {
+            console.log("onErrorReceived", type, msg);
+},
+}
+```
+
++++
+
+<!--Integration with non-Adobe application content starts here-->
+
+>[!TAB Adobe以外のアプリケーションとの統合]
+
+<!--### Integrate Asset Selector with a [!DNL non-Adobe] application {#adobe-non-app-integration}-->
+
+### 前提条件 {#prereqs-non-adobe-app}
+
+Adobe以外のアプリケーションとアセットセレクターを統合する場合は、次の前提条件を使用してください。
+
+* [通信方法](#prereqs)
+* imsClientId
+* imsScope
+* redirectUrl
+* imsOrg
+* apikey
+
+アセットセレクターは、への認証をサポートします [!DNL Experience Manager Assets] 次のようなIdentity Management System （IMS）プロパティを使用しているリポジトリ `imsScope` または `imsClientID` Adobe以外のアプリケーションと統合する場合。
+
++++**Adobe以外のアプリケーション用のアセットセレクターを設定する**
+Adobe以外のアプリケーションにアセットセレクターを設定するには、プロビジョニングのサポートチケットをログに記録してから、統合手順を実行する必要があります。
+
+**サポートチケットのログ**
+Admin Consoleを使用してサポートチケットを記録する手順：
+
+1. 追加 **AEM Assetsを使用したアセットセレクター** チケットのタイトル。
+
+1. 説明には、次の詳細を入力します。
+
+   * [!DNL Experience Manager Assets] as a [!DNL Cloud Service] URL （プログラム ID および環境 ID）。
+   * Adobe以外の Web アプリケーションがホストされているドメイン名。
++++
+
++++**統合手順**
+この例を使用 `index.html` アセットセレクターをAdobe以外のアプリケーションと統合する際の認証用ファイル。
+
+を使用して、アセットセレクターパッケージにアクセスします。 `Script` タグ（を参照） *ライン 9* 対象： *行 11* 例の `index.html` ファイル。
+
+*ライン 14* 対象： *行 38* 例の例では、次のような IMS フロープロパティについて説明します `imsClientId`, `imsScope`、および `redirectURL`. 関数では、次のうち少なくとも 1 つを定義する必要があります `imsClientId` および `imsScope` プロパティ。 の値を定義しない場合： `redirectURL`を指定すると、クライアント ID に対して登録されているリダイレクト URL が使用されます。
+
+持っていないので `imsToken` 生成済み、を使用する `registerAssetsSelectorsAuthService` および `renderAssetSelectorWithAuthFlow` 関数（例の 40 行目から 50 行目まで） `index.html` ファイル。 の使用 `registerAssetsSelectorsAuthService` 関数の前 `renderAssetSelectorWithAuthFlow` を登録します `imsToken` アセットセレクターを使用して調整します。 [!DNL Adobe] では、の呼び出しを推奨しています `registerAssetsSelectorsAuthService` コンポーネントのインスタンス化時。
+
+での認証およびその他の Assetsas a Cloud Serviceのアクセス関連プロパティの定義 `const props` セクション（を参照） *行 54* 対象： *行 60* 例の `index.html` ファイル。
+
+この `PureJSSelectors` グローバル変数（に記載） *行 65*&#x200B;を使用して、web ブラウザーでアセットセレクターをレンダリングします。
+
+アセットセレクターはでレンダリングされます。 `<div>` コンテナ要素（「」を参照） *行 74* 対象： *行 81*. この例では、ダイアログを使用してアセットセレクターを表示します。
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
@@ -357,11 +377,19 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 </body>
 
 </html>
-
 ```
--->
 
-## アセットセレクターのプロパティを使用する {#asset-selector-properties}
++++
+
++++**配信リポジトリにアクセスできません**
+
+>[!TIP]
+>
+>新規登録サインインワークフローを使用してアセットセレクターを統合しても、配信リポジトリにアクセスできない場合は、ブラウザーの Cookie がクリーンアップされていることを確認します。 それ以外の場合は、次のようになります `invalid_credentials All session cookies are empty` コンソールにエラーが表示されます。
+
+>[!ENDTABS]
+
+## アセットセレクターのプロパティ {#asset-selector-properties}
 
 アセットセレクターのプロパティを使用して、アセットセレクターのレンダリング方法をカスタマイズできます。次の表に、アセットセレクターをカスタマイズして使用するために利用できるプロパティを示します。
 
@@ -369,16 +397,16 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 |---|---|---|---|---|
 | *rail* | ブーリアン | いいえ | false | `true` とマークされている場合、アセットセレクターは左側のパネルビューにレンダリングされます。`false` とマークされている場合、アセットセレクターはモーダルビューにレンダリングされます。 |
 | *imsOrg* | 文字列 | はい | | [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] を組織にプロビジョニングする場合に割り当てられる Adobe Identity Management System（IMS）の ID です。`imsOrg` キーは、アクセスしようとしている組織が Adobe IMS 内にあるかどうかを認証するために必要です。 |
-| *imsToken* | 文字列 | いいえ | | 認証に使用される IMS ベアラートークンです。非 SUSI フローを使用している場合、`imsToken` は必須です。 |
-| *apiKey* | 文字列 | いいえ | | AEM Discovery サービスへのアクセスに使用する API キーです。非 SUSI フローを使用している場合、`apiKey` は必須です。 |
+| *imsToken* | 文字列 | いいえ | | 認証に使用される IMS ベアラートークンです。`imsToken` を使用している場合、は必須です [!DNL Adobe] 統合のアプリケーション。 |
+| *apiKey* | 文字列 | いいえ | | AEM Discovery サービスへのアクセスに使用する API キーです。`apiKey` を使用している場合、は必須です [!DNL Adobe] アプリケーション統合。 |
 | *rootPath* | 文字列 | いいえ | /content/dam/ | アセットセレクターがアセットを表示する元のフォルダーパスです。`rootPath` はカプセル化の形式でも使用できます。例えば、次のパス `/content/dam/marketing/subfolder/` を指定すると、アセットセレクターでは親フォルダーをトラバースできず、子フォルダーのみが表示されます。 |
 | *path* | 文字列 | いいえ | | アセットセレクターがレンダリングされる際に、アセットの特定のディレクトリに移動するために使用されるパスです。 |
 | *filterSchema* | 配列 | いいえ | | フィルタープロパティの設定に使用するモデルです。これは、アセットセレクターで特定のフィルターオプションを制限する場合に便利です。 |
 | *filterFormProps* | オブジェクト | いいえ | | 検索を絞り込むために使用する必要があるフィルタープロパティを指定します。（例：MIME タイプの JPG、PNG、GIF） |
 | *selectedAssets* | 配列 `<Object>` | いいえ |                 | アセットセレクターがレンダリングされる際に、選択したアセットを指定します。アセットの ID プロパティを含むオブジェクトの配列が必要です。（例：`[{id: 'urn:234}, {id: 'urn:555'}]`）アセットは、現在のディレクトリで使用できる必要があります。別のディレクトリを使用する必要がある場合は、`path` プロパティの値も指定します。 |
-| *acvConfig* | オブジェクト | いいえ | | デフォルトを上書きするカスタム設定が含まれているオブジェクトを含むアセットコレクション表示プロパティです。 |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | いいえ |                 | OOTB 翻訳がアプリケーションのニーズを満たさない場合は、独自のローカライズされたカスタム値を `i18nSymbols` プロップ経由で渡すことができるインターフェイスを表示できます。このインターフェイスを介して値を渡すと、提供されたデフォルトの翻訳が上書きされ、代わりに独自の翻訳が使用されます。上書きを実行するには、上書きしたい `i18nSymbols` のキーに有効な[メッセージ記述子](https://formatjs.io/docs/react-intl/api/#message-descriptor)オブジェクトを渡す必要があります。 |
-| *intl* | オブジェクト | いいえ | | アセットセレクターはデフォルトの OOTB 翻訳を提供します。`intl.locale` プロップを介して有効なロケール文字列を指定することで、翻訳言語を選択できます。（例：`intl={{ locale: "es-es" }}` </br></br>）サポートされているロケール文字列は、言語名の標準規格を表す [ISO 639 - コード](https://www.iso.org/iso-639-language-codes.html)に従います。</br></br> サポートされているロケールの一覧：英語 - &#39;en-us&#39;（デフォルト）スペイン語 - &#39;es-es&#39; ドイツ語 - &#39;de-de&#39; フランス語 - &#39;fr-fr&#39; イタリア語 - &#39;it-it&#39; 日本語 - &#39;ja-jp&#39; 韓国語 - &#39;ko-kr&#39; ポルトガル語 - &#39;pt-br&#39; 中国語（簡体字） - &#39;zh-cn&#39; 中国語（繁体字） - &#39;zh-tw&#39; |
+| *acvConfig* | オブジェクト | いいえ | | デフォルトを上書きするカスタム設定が含まれているオブジェクトを含むアセットコレクション表示プロパティです。 また、このプロパティはで使用されます `rail` アセットビューアのパネルビューを有効にするプロパティ。 |
+| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | いいえ |                 | OOTB 翻訳がアプリケーションのニーズを満たさない場合は、独自のカスタムローカライズされた値を経由して渡すことができるインターフェイスを表示できます。 `i18nSymbols` prop このインターフェイスを介して値を渡すと、提供されたデフォルトの翻訳が上書きされ、代わりに独自の翻訳が使用されます。 上書きを実行するには、上書きしたい `i18nSymbols` のキーに有効な[メッセージ記述子](https://formatjs.io/docs/react-intl/api/#message-descriptor)オブジェクトを渡す必要があります。 |
+| *intl* | オブジェクト | いいえ | | アセットセレクターはデフォルトの OOTB 翻訳を提供します。 `intl.locale` プロップを介して有効なロケール文字列を指定することで、翻訳言語を選択できます。（例：`intl={{ locale: "es-es" }}` </br></br>）サポートされているロケール文字列は、言語名の標準規格を表す [ISO 639 - コード](https://www.iso.org/iso-639-language-codes.html)に従います。</br></br> サポートされているロケールの一覧：英語 - &#39;en-us&#39;（デフォルト）スペイン語 - &#39;es-es&#39; ドイツ語 - &#39;de-de&#39; フランス語 - &#39;fr-fr&#39; イタリア語 - &#39;it-it&#39; 日本語 - &#39;ja-jp&#39; 韓国語 - &#39;ko-kr&#39; ポルトガル語 - &#39;pt-br&#39; 中国語（簡体字） - &#39;zh-cn&#39; 中国語（繁体字） - &#39;zh-tw&#39; |
 | *repositoryId* | 文字列 | いいえ | &#39;&#39; | アセットセレクターがコンテンツを読み込む元のリポジトリです。 |
 | *additionalAemSolutions* | `Array<string>` | いいえ | [ ] | 追加の AEM リポジトリのリストを追加できます。このプロパティで情報が指定されない場合、メディアライブラリまたは AEM Assets リポジトリのみが考慮されます。 |
 | *hideTreeNav* | ブーリアン | いいえ |  | アセットツリーのナビゲーションサイドバーを表示するか非表示にするかを指定します。このプロパティはモーダルビューでのみ使用されるので、パネルビューではこのプロパティの影響はありません。 |
@@ -390,6 +418,13 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 | *onClose* | 関数 | いいえ | | モーダルビューで `Close` ボタンが押された際に呼び出されます。これは、`modal` ビューでのみ呼び出され、`rail` ビューでは無視されます。 |
 | *onFilterSubmit* | 関数 | いいえ | | ユーザーが別のフィルター条件を変更したときに、フィルター項目と一緒に呼び出されます。 |
 | *selectionType* | 文字列 | いいえ | single | 一度にアセットを `single` 選択または `multiple` 選択するための設定です。 |
+| *dragOptions.許可リスト* | ブーリアン | いいえ | | プロパティは、選択できないアセットのドラッグを許可または拒否するために使用されます。 |
+| *aemTierType* | 文字列 | いいえ | | 配信層、オーサー層またはその両方からアセットを表示するかどうかを選択できます。 <br><br> 構文： `aemTierType:[0: "author" 1: "delivery"` <br><br> 例えば、次の両方の場合： `["author","delivery"]` を使用すると、リポジトリスイッチャーに作成者と配信の両方のオプションが表示されます。 |
+| *handleNavigateToAsset* | 関数 | いいえ | | これは、アセットの選択を処理するコールバック関数です。 |
+| *noWrap* | ブーリアン | いいえ | | この *noWrap* プロパティを設定すると、サイドパネルパネルでアセットセレクターをレンダリングしやすくなります。 このプロパティが指定されていない場合は、レンダリングされます。 *ダイアログビュー* デフォルトでは。 |
+| *dialogSize* | 小、中、大、フルスクリーンまたはフルスクリーンのテイクオーバー | String | オプション | 指定したオプションを使用してサイズを指定することで、レイアウトを制御できます。 |
+| *colorScheme* | 明るい、または暗い | いいえ | | このプロパティは、アセットセレクターアプリケーションのテーマを設定するために使用されます。 テーマは、明るいテーマと暗いテーマから選択できます。 |
+| *filterRepoList* | 関数 | いいえ |  | 次を使用できます `filterRepoList` Experience Managerリポジトリを呼び出し、フィルターされたリポジトリのリストを返すコールバック関数。 |
 
 ## アセットセレクターのプロパティの使用例 {#usage-examples}
 
@@ -399,7 +434,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 
 ![rail-view-example](assets/rail-view-example-vanilla.png)
 
-アセットセレクターの `rail` の値が `false` に設定されている、またはプロパティで示されていない場合、アセットセレクターはデフォルトでモーダルビューに表示されます。
+アセットセレクターの値 `rail` はに設定されています。 `false` プロパティでとは指定されておらず、デフォルトではアセットセレクターはモーダルビューに表示されます。 この `acvConfig` プロパティを使用すると、ドラッグ&amp;ドロップなど、いくつかの詳細な設定が可能になります。 訪問 [ドラッグ アンド ドロップを有効または無効にする](#enable-disable-drag-and-drop) 使い方を理解する `acvConfig` プロパティ。
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
@@ -415,10 +450,9 @@ Use the `path` property to define the folder name that displays automatically wh
 
 ![metadata-popover-example](assets/metadata-popover.png)
 
-
 ### 例 3：パネルビューのカスタムフィルタープロパティ
 
-ファセット検索に加えて、アセットセレクターを使用すると、様々な属性をカスタマイズし、[!DNL Cloud Service] アプリケーションとして [!DNL Adobe Experience Manager] からの検索を絞り込むことができます。カスタマイズした検索フィルターをアプリケーションに追加するには、次のコードを追加する必要があります。次の例では、画像、ドキュメント、ビデオの中からアセットタイプをフィルタリングする `Type Filter` 検索、または検索用に追加したフィルタータイプを使用します。
+ファセット検索に加えて、アセットセレクターを使用すると、様々な属性をカスタマイズし、[!DNL Cloud Service] アプリケーションとして [!DNL Adobe Experience Manager] からの検索を絞り込むことができます。次のコードを追加して、カスタマイズした検索フィルターをアプリケーションに追加します。 次の例では、画像、ドキュメント、ビデオの中からアセットタイプをフィルタリングする `Type Filter` 検索、または検索用に追加したフィルタータイプを使用します。
 
 ![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
 
@@ -431,15 +465,125 @@ Use the `path` property to define the folder name that displays automatically wh
 Assets display panel shows the out of the box metadata that can be displayed in the info of the asset. In addition to this, [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application allows configuration of the asset selector by adding custom metadata that is shown in info panel of the asset.
 -->
 
-<!-- Property details to be added here. Referred the ticket https://jira.corp.adobe.com/browse/ASSETS-19023-->
+## 機能設定コードスニペット{#code-snippets}
 
-<!--
-## Asset Selector Object Schema {#object-schema}
+の前提条件を定義する `index.html` アプリケーション実装内のファイルまたは同様のファイルで、にアクセスするための認証の詳細を定義します [!DNL Experience Manager Assets] リポジトリ。 完了したら、要件に応じてコードスニペットを追加できます。
 
-Schema describes the object properties associated with an asset selected using Asset Selector. It uses the combination of data types and their values to validate the object describing the selected Asset using an Asset Selector.
+### フィルターパネルをカスタマイズ {#customize-filter-panel}
 
-**Schema Syntax**
-````
+次のコードスニペットをに追加できます。 `assetSelectorProps` フィルターパネルをカスタマイズするオブジェクト :
+
+```
+filterSchema: [
+    {
+    header: 'File Type',
+    groupKey: 'TopGroup',
+    fields: [
+    {
+    element: 'checkbox',
+    name: 'type',
+    options: [
+    {
+    label: 'Images',
+    value: '<comma separated mimetypes, without space, that denote all images, for e.g., image/>',
+    },
+    {
+    label: 'Videos',
+    value: '<comma separated mimetypes, without space, that denote all videos for e.g., video/,model/vnd.mts,application/mxf>'
+    }
+    ]
+    }
+    ]
+    },
+    {
+    fields: [
+    {
+    element: 'checkbox',
+    name: 'type',
+    options: [
+    { label: 'JPG', value: 'image/jpeg' },
+    { label: 'PNG', value: 'image/png' },
+    { label: 'TIFF', value: 'image/tiff' },
+    { label: 'GIF', value: 'image/gif' },
+    { label: 'MP4', value: 'video/mp4' }
+    ],
+    columns: 3,
+    },
+    ],
+    header: 'Mime Types',
+    groupKey: 'MimeTypeGroup',
+    }},
+    {
+    fields: [
+    {
+    element: 'checkbox',
+    name: 'property=metadata.application.xcm:keywords.value',
+    options: [
+    { label: 'Fruits', value: 'fruits' },
+    { label: 'Vegetables', value: 'vegetables'}
+    ],
+    columns: 3,
+    },
+    ],
+    header: 'Food Category',
+    groupKey: 'FoodCategoryGroup',
+    }
+],
+```
+
+### モーダルビューでの情報のカスタマイズ {#customize-info-in-modal-view}
+
+をクリックすると、アセットの詳細表示をカスタマイズできます ![情報アイコン](assets/info-icon.svg) アイコン。 以下のコードを実行します。
+
+```
+// Create an object infoPopoverMap and set the property `infoPopoverMap` with it in assetSelectorProps
+const infoPopoverMap = (map) => {
+// for example, to skip `path` from the info popover view
+let defaultPopoverData = PureJSSelectors.getDefaultInfoPopoverData(map);
+return defaultPopoverData.filter((i) => i.label !== 'Path'
+};
+assetSelectorProps.infoPopoverMap = infoPopoverMap;
+```
+
+### ドラッグ&amp;ドロップモードを有効または無効にする {#enable-disable-drag-and-drop}
+
+次のプロパティをに追加します `assetSelectorProp` ドラッグ&amp;ドロップモードを有効にします。 ドラッグ&amp;ドロップを無効にするには、 `true` パラメーター： `false`.
+
+```
+rail: true,
+acvConfig: {
+dragOptions: {
+allowList: {
+'*': true,
+},
+},
+selectionType: 'multiple'
+}
+
+// the drop handler to be implemented
+function drop(e) {
+e.preventDefault();
+// following helps you get the selected assets – an array of objects.
+const data = JSON.parse(e.dataTransfer.getData('collectionviewdata'));
+}
+```
+
+### アセットの選択 {#selection-of-assets}
+
+選択されたアセットタイプは、`handleSelection`、`handleAssetSelection`、および `onDrop` 関数を使用している場合、アセット情報を含むオブジェクトの配列です。
+
+次の手順を実行して、1 つまたは複数のアセットの選択を設定します。
+
+```
+acvConfig: {
+selectionType: 'multiple' // 'single' for single selection
+}
+// the `handleSelection` callback, always gets you the array of selected assets
+```
+
+**スキーマ構文**
+
+```
 interface SelectedAsset {
     'repo:id': string;
     'repo:name': string;
@@ -465,35 +609,72 @@ interface SelectedAsset {
         }>;
     };
 }
-````
+```
 
-**Query Parameters**
+次の表に、選択されたアセットのオブジェクトの重要なプロパティの一部を示します。
 
-| Parameter | Type | Description |
+| Property | 型 | 説明 |
 |---|---|---|
-| repo:id | string | ID of an Asset |
-| repo:name | string | The name of an Asset |
-| repo:path | string | The path of an Asset |
-| repo:size | number | Size of an Asset (in bytes) |
-| repo:createdBy | string | ID of a user who created an Asset |
-| repo: createdDate | string | The timestamp when an asset was created |
-| repo:modifiedBy | string | ID of a user who modified the asset recently |
-| repo:modifyDate | string | The timestamp when the asset was last modified |
-| dc:format | string | MIME type of an Asset |
-| tiff:imageWidth | number | The width of an image type of Asset |
-| tiff:imageLength | number | The height of an image type of Asset |
-| repo:state | string | The `Approved`, `Rejected`, or `Expired`state of an Asset |
-| computedMetadata | string | It is an object that represents a bucket for all the Asset's metadata of all kinds (repository, application or embedded metadata) |
-| _links | string | It represents the collection of links used in the Asset Selector. The links are represented in the form of an array. The parameters of an array include: `href`, `type`, `repo:size`, `width`, `height`, and so on  |
+| *repo:repositoryId* | 文字列 | アセットが保存されるリポジトリの一意の ID。 |
+| *repo:id* | 文字列 | アセットの一意の ID。 |
+| *repo:assetClass* | 文字列 | アセットの分類（例：画像、ビデオ、ドキュメント）。 |
+| *repo:name* | 文字列 | ファイル拡張子を含むアセットの名前。 |
+| *repo:size* | 数値 | アセットのサイズ（バイト単位）。 |
+| *repo:path* | 文字列 | リポジトリ内のアセットの場所。 |
+| *repo:ancestors* | `Array<string>` | リポジトリ内のアセットの上位項目の配列。 |
+| *repo:state* | 文字列 | リポジトリ内のアセットの現在のステータス（例：アクティブ、削除済みなど）。 |
+| *repo:createdBy* | 文字列 | アセットを作成したユーザーまたはシステム。 |
+| *repo:createDate* | 文字列 | アセットが作成された日時。 |
+| *repo:modifiedBy* | 文字列 | アセットを最後に変更したユーザーまたはシステム。 |
+| *repo:modifyDate* | 文字列 | アセットが最後に変更された日時。 |
+| *dc:format* | 文字列 | ファイルタイプなどのアセットの形式（例：JPEG、PNG）。 |
+| *tiff:imageWidth* | 数値 | アセットの幅。 |
+| *tiff:imageLength* | 数値 | アセットの高さ。 |
+| *computedMetadata* | `Record<string, any>` | あらゆる種類（リポジトリ、アプリケーション、埋め込みメタデータ）のすべてのアセットのメタデータのバケットを表すオブジェクト。 |
+| *_links* | `Record<string, any>` | 関連付けられたアセットのハイパーメディアリンク。メタデータやレンディションなどのリソースへのリンクが含まれます。 |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | アセットのレンディションに関する情報を含むオブジェクトの配列。 |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].href>* | 文字列 | レンディションの URI。 |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].type>* | 文字列 | レンディションの MIME タイプ。 |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>&#39;* | 数値 | レンディションのサイズ（バイト単位）。 |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].width>* | 数値 | レンディションの幅。 |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | 数値 | レンディションの高さ。 |
 
-For the detailed example of Object Schema, click 
--->
+プロパティの完全なリストと詳細な例については、[アセットセレクターのコード例](https://github.com/adobe/aem-assets-selectors-mfe-examples)を参照してください。
 
 ## オブジェクトスキーマを使用したアセット選択の処理 {#handling-selection}
 
 `handleSelection` プロパティを使用して、アセットセレクターでの 1 つまたは複数のアセットの選択を処理します。次の例に、`handleSelection` を使用した構文を示します。
 
 ![handle-selection](assets/handling-selection.png)
+
+## アセットの選択の無効化 {#disable-selection}
+
+「選択を無効にする」は、アセットやフォルダーが選択可能かどうかを非表示または無効にするために使用します。 選択チェックボックスがカードまたはアセットに対して非表示になり、カードまたはアセットは選択できなくなります。 この機能を使用するには、無効にするアセットまたはフォルダーの位置を配列で宣言します。 例えば、最初の位置に表示されるフォルダーの選択を無効にする場合は、次のコードを追加します。
+`disableSelection: [0]:folder`
+
+無効にする MIME タイプ（画像、フォルダー、ファイル、その他の MIME タイプなど）のリストを配列に指定することができます。 宣言する MIME タイプは、にマッピングされます `data-card-type` および `data-card-mimetype` アセットの属性。
+
+また、選択が無効なアセットはドラッグできます。 特定のアセットタイプのドラッグ&amp;ドロップを無効にするには、次を使用します `dragOptions.allowList` プロパティ。
+
+disable selection の構文を次に示します。
+
+```
+(args)=> {
+    return(
+        <ASDialogWrapper
+            {...args}
+            disableSelection={args.disableSelection}
+            handleAssetSelection={action('handleAssetSelection')}
+            handleSelection={action('handleSelection')}
+            selectionType={args.selectionType}
+        />
+    );
+}
+```
+
+>[!NOTE]
+>
+> アセットの場合、「選択」チェックボックスは非表示になります。フォルダーの場合は選択できませんが、指定したフォルダーのナビゲーションは表示されます。
 
 ## アセットセレクターの使用 {#using-asset-selector}
 
@@ -516,7 +697,7 @@ For the detailed example of Object Schema, click
 
 ### リポジトリスイッチャー {#repository-switcher}
 
-アセットセレクターを使用すると、アセットを選択するためにリポジトリを切り替えることもできます。左側のパネルにあるドロップダウンから、目的のリポジトリを選択できます。ドロップダウンリストで使用できるリポジトリオプションは、`index.html` ファイルで定義されている `repositoryId` プロパティに基づいています。これは、ログインしているユーザーがアクセスする、選択された IMS 組織の環境に基づいています。消費者は優先する `repositoryID` を渡すことができ、その場合、アセットセレクターはリポジトリスイッチャーのレンダリングを停止し、指定されたリポジトリからのみアセットをレンダリングします。
+アセットセレクターを使用すると、アセットを選択するためにリポジトリを切り替えることもできます。左側のパネルにあるドロップダウンから、目的のリポジトリを選択できます。ドロップダウンリストで使用できるリポジトリオプションは、`index.html` ファイルで定義されている `repositoryId` プロパティに基づいています。これは、ログインしているユーザーがアクセスする、選択された IMS 組織の環境に基づいています。 消費者は優先する `repositoryID` を渡すことができ、その場合、アセットセレクターはリポジトリスイッチャーのレンダリングを停止し、指定されたリポジトリからのみアセットをレンダリングします。
 <!--
 It is based on the `imsOrg` that is provided in the application. If you want to see the list of repositories, then `repositoryId` is required to view those specific repositories in your application.
 -->
@@ -539,7 +720,7 @@ It is based on the `imsOrg` that is provided in the application. If you want to 
 
 フルテキスト検索の他に、アセットセレクターでは、カスタマイズされた検索を使用してファイル内のアセットを検索できます。カスタム検索フィルターは、モーダル表示モードとパネル表示モードの両方で使用できます。
 
-![custom-search](assets/custom-search.png)
+![custom-search](assets/custom-search1.png)
 
 また、デフォルトの検索フィルターを作成して、頻繁に検索するフィールドを保存し、後で使用することもできます。アセットのカスタム検索を作成するには、`filterSchema` プロパティを使用できます。
 
@@ -618,4 +799,26 @@ Asset Selector lets you know the status of your uploaded assets. The status can 
 ### Localization
 
 The integration of Asset Selector with [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] allows localized content appear in your application.
+-->
+
+
+
+<!--Best Practice-->
+<!--
++++**Control default selection of the filter**
+You can make the selection of filter default by implementing the following code snippet:
+
+```
+"defaultValue": [
+    "image/*",
+    "application/*"
+],
+
+{
+    "label": "Documents",
+    "value": "application/*"
+}
+```
+
++++
 -->
