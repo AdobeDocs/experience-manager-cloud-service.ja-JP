@@ -3,10 +3,10 @@ title: ' [!DNL Assets view] でのアセットの検索と検出の方法を学�
 description: 詳しくは、AEM Assets ビューでアセットを検索および検出する方法を参照してください。この強力な検索機能を使用すると、適切なアセットをすばやく発見できるので、コンテンツベロシティ（コンテンツ創出の速度）の向上に役立ちます。
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
-source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
+source-git-commit: e706ee7228aeb08c99567f607a3435d9f687ef34
 workflow-type: tm+mt
-source-wordcount: '1908'
-ht-degree: 99%
+source-wordcount: '1852'
+ht-degree: 98%
 
 ---
 
@@ -311,17 +311,19 @@ Experience Manager Assets でコンテキスト検索にアクセスするには
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428407)
 
-### コンテキスト検索を無効にする {#disable-contextual-search}
+<!--
+### Disable Contextual Search {#disable-contextual-search}
 
-管理者には、組織内のユーザーのコンテキスト検索を無効にするオプションも用意しています。これを行うには、次の手順を実行します。
+Administrators also have the option to disable Contextual Search for users in your organization. To do so, execute the following steps:
 
-1. **[!UICONTROL 設定]**／**[!UICONTROL 一般設定]**&#x200B;に移動します。
+1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
 
-1. 「[!UICONTROL コンテキスト検索]」セクションで、**[!UICONTROL 組織のコンテキスト検索を有効にする]**&#x200B;切替スイッチをオフにして、組織内のすべてのユーザーに対してコンテキスト検索機能を無効にします。
+1. In the [!UICONTROL Contextual Search] section, turn off the **[!UICONTROL Enable Contextual Search for your organization]** toggle to disable the Contextual Search feature for all users in your organization.  
+-->
 
 ### コンテキスト検索のフィードバック {#contextual-search-feedback}
 
-コンテキスト検索機能に関するフィードバックを提供する必要がある場合は、![コンテキスト検索アイコン](assets/do-not-localize/contextual-search-icon.png)、フィードバックアイコンの順にクリックします。フィードバックの種類を選択し、件名と説明を指定して、「**[!UICONTROL 送信]**」をクリックします。
+コンテキスト検索機能に関するフィードバックを提供する必要がある場合は、 ![コンテキスト検索アイコン](assets/do-not-localize/Smock_Help_18_N.svg) 「フィードバック」アイコンをクリックします。 フィードバックの種類を選択し、件名と説明を指定して、「**[!UICONTROL 送信]**」をクリックします。
 
 ![コンテキスト検索のフィードバック](assets/contextual-search-feedback.png)
 
