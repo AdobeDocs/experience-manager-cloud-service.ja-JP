@@ -3,10 +3,10 @@ title: CDN エラーページの設定
 description: Amazon S3 や Azure Blob Storage などの自己ホスト型ストレージで静的ファイルをホストし、Cloud Manager 設定パイプラインを使用してデプロイされた設定ファイルで静的ファイルを参照することで、デフォルトのエラーページを上書きする方法について説明します。
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
-source-git-commit: 8489b40f45e6cbeb98288969bc9f6bd42815e2a6
+source-git-commit: 69ffcccae150a5e49c6344973890733f3e5b74ae
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 93%
+source-wordcount: '376'
+ht-degree: 75%
 
 ---
 
@@ -18,14 +18,21 @@ ht-degree: 93%
 
 デフォルトのエラーページを上書きする前に、次の作業を行う必要があります。
 
-* まず、Git プロジェクトの最上位フォルダーに次のフォルダーとファイル構造を作成します。
+* Git プロジェクトの最上位フォルダーに、次のフォルダーとファイル構造を作成します。
 
 ```
 config/
      cdn.yaml
 ```
 
-* 次に、`cdn.yaml` 設定ファイルには、以下で説明するメタデータとエラーページ参照を含める必要があります。
+* この `cdn.yaml` 設定ファイルには、メタデータと、以下の例で説明するルールの両方が含まれている必要があります。 この `kind` パラメーターをに設定する必要があります `CDN` およびのバージョンは、現在のスキーマバージョンに設定する必要があります `1`.
+
+* Cloud Manager でターゲット設定パイプラインを作成します。 参照： [実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) および [実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+
+**備考**
+
+* RDE は現在、設定パイプラインをサポートしていません。
+* `yq` を使用すると、設定ファイル（例：`yq cdn.yaml`）の YAML 形式をローカルで検証できます。
 
 ### 設定 {#configuration}
 
