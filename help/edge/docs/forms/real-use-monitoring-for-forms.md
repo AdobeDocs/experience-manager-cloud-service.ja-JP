@@ -1,19 +1,19 @@
 ---
-title: AEM Formsas a Cloud Service用Edge Delivery Servicesの実際の使用状況の監視
-description: AEM Formsas a Cloud Service機能のEdge Delivery Servicesの実際の使用状況のモニタリングには、フォームに対するユーザーのインタラクションの継続的なトラッキングと分析が含まれます。
+title: AEM Formsas a Cloud Service用Edge Delivery Servicesの Real Use Monitoring （RUM）
+description: AEM Formsas a Cloud Service用Edge Delivery Servicesの実際の使用状況のモニタリング（RUM）には、フォームとのユーザーインタラクションの継続的なトラッキングと分析が含まれます。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 6f78b43e857ca496465c315e8812bb67aff8c627
+source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '792'
 ht-degree: 45%
 
 ---
 
 
-# AEM Formsas a Cloud Service用Edge Delivery Servicesの実際の使用状況のモニタリング
+# AEM Formsas a Cloud Service用Edge Delivery Servicesの Real Use Monitoring （RUM）
 
 Real Use Monitoring （RUM）を使用すると、訪問者がAdobe Experience Manager（AEM）の web サイトとやり取りする方法に関する実際のインサイトを得ることができます。 この組み込みツールは、ユーザーの行動を理解し、パフォーマンスの問題を診断し、web サイト実験の有効性を測定するための貴重なデータを提供します。 RUM は、実際の使用インタラクションをキャプチャすることで、合成テストを超え、サイトのパフォーマンスをより正確に把握できます。
 
@@ -75,3 +75,7 @@ AEM Formsas a Cloud ServiceEdge Delivery Servicesのモニタリングダッシ�
 * フォームの読み込みを遅らせる技術的な問題に対処します。
 
 これらの領域に焦点を当てることで、より使いやすいフォームを作成し、訪問者にそれらを完了させるように促すことができ、最終的にはコンバージョン率の向上につながります。
+
+## 関連トピック
+
+{{see-more-forms-eds}}

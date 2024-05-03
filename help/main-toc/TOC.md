@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6f78b43e857ca496465c315e8812bb67aff8c627
+source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
 workflow-type: tm+mt
-source-wordcount: '4907'
+source-wordcount: '4915'
 ht-degree: 99%
 
 ---
@@ -851,10 +851,10 @@ ht-degree: 99%
          + [ルールを使用してフォームに動的な動作を追加](/help/edge/docs/forms/rules-forms.md)
          + [フォーム送信後にカスタムのお礼のメッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
       + 機能 {#advanced-features-edge-delivery-services-forms}
-         + [フォームフラグメント](/help/edge/docs/forms/form-fragments.md)
+         + [フォームフラグメントの使用](/help/edge/docs/forms/form-fragments.md)
          + [フォームへの繰り返し可能なセクションの追加](/help/edge/docs/forms/repeatable-forms.md)
-         + [翻訳](/help/edge/docs/forms/translate-forms.md)
-         + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
+         + [フォームを翻訳](/help/edge/docs/forms/translate-forms.md)
+         + [reCAPTCHA を使用したフォームの保護](/help/edge/docs/forms/recaptacha-forms.md)
          + [カスタムコンポーネント](/help/edge/docs/forms/custom-components-forms.md)
          + [フォームの実際の使用状況の監視](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
       + 参照 {#forms-references}
