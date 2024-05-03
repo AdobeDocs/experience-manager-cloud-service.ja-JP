@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 00d91be618cd7ce1fb9e78115fbe3d431b20cd34
 workflow-type: tm+mt
 source-wordcount: '1965'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -63,29 +63,29 @@ AEM の新機能を通じて GenAI を活用し、[バリエーションを生�
 
 **コンテキスト検索**
 
-また、次のこともできます [テキストプロンプトを定義して、リポジトリで使用可能なアセットを検索します。](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets は、これらのテキストプロンプトを検索フィルターに自動変換し、検索結果を表示します。フィルターペインを使用して自動フィルターを表示および変更すると、検索結果をさらに絞り込むことができます。
+また、[テキストプロンプトを定義して、リポジトリで使用可能なアセットを検索](/help/assets/search-assets-view.md#contextual-search)することもできるようになりました。Experience Manager Assets は、これらのテキストプロンプトを検索フィルターに自動変換し、検索結果を表示します。フィルターペインを使用して自動フィルターを表示および変更すると、検索結果をさらに絞り込むことができます。
 
 ![コンテキスト検索](/help/assets/assets/contextual-search-text-prompt1.png)
 
 **ビデオのクイックアクションの高速化**
 
-Experience Manager Assetsに含まれる [Adobe Expressを活用した、簡単で直感的なビデオ編集ツール](/help/assets/edit-videos-assets-view.md) コンテンツの再利用を促進し、コンテンツベロシティを向上させる。 編集オプションには、ビデオのトリミング、切り抜き、サイズ変更、MP4 から GIF ファイルへの変換などが含まれます。
+Experience Manager Assets には、[Adobe Express を活用した簡単で直感的なビデオ編集ツール](/help/assets/edit-videos-assets-view.md)が含まれており、コンテンツの再利用を増やし、コンテンツの速度を高速化します。編集オプションには、ビデオのトリミング、切り抜き、サイズ変更、MP4 から GIF ファイルへの変換などが含まれます。
 
 ![Adobe Express を使用したビデオの切り抜き](/help/assets/assets/adobe-express-crop-video.png)
 
 **動的レンディション**
 
-これで、 [動的レンディション（スマート切り抜きを含む）の表示とダウンロード](/help/assets/renditions.md) Experience Manager Assetsで。 動的レンディションは、特定のニーズを満たすためにリアルタイムで作成される画像アセットのカスタマイズバージョンです。例えば、デバイスの解像度に基づく画像のサイズ変更や、異なる縦横比に合わせた切り抜きなどです。 これらのレンディションにより、組織は、パーソナライズされ最適化されたエクスペリエンスを、様々なオーディエンスのニーズに提供できます。
+Experience Manager Assets で、[動的レンディション（スマート切り抜きを含む）の表示とダウンロード](/help/assets/renditions.md)が可能になりました。動的レンディションは、特定のニーズに合うようにリアルタイムで作成される、カスタマイズされた画像アセットバージョンです。例えば、デバイスの解像度に基づく画像のサイズ変更や、様々な縦横比に合わせた切り抜きなどです。これらのレンディションにより、組織は、様々なオーディエンスニーズに合わせて、パーソナライズされ最適化されたエクスペリエンスを提供できます。
 
 ![動的レンディション](/help/assets/assets/preset_smart_crop.png)
 
 **アセットおよびフォルダーのインプレース名前変更**
 
-Experience Manager Assetsでは、次の機能を提供することで、ユーザーエクスペリエンスをシンプル化しました [シングルクリックでアセットまたはフォルダーの名前を変更する機能](/help/assets/manage-organize-assets-view.md).
+Experience Manager Assets では、[シングルクリックでアセットまたはフォルダーの名前を変更できる機能](/help/assets/manage-organize-assets-view.md)を提供して、簡素化されたユーザーエクスペリエンスを提供するようになりました。
 
 **複数のフォルダーへのメタデータフォームの割り当てまたは削除**
 
-これで、 [複数のフォルダーへのメタデータフォームの割り当てまたは削除](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
+[複数のフォルダーにメタデータフォームを割り当てる、または削除](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder)できるようになりました。
 
 
 
@@ -165,23 +165,23 @@ Experience Manager Assetsでは、次の機能を提供することで、ユー�
 
 ### CDN 設定 {#cdn-config}
 
-次の方法で、Adobe CDN でトラフィックを設定します。
+次の方法で、アドビの CDN でのトラフィックを設定します。
 
-* [リクエスト変換](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) - AEMにルーティングされる前に、受信リクエストの側面（パス、クエリパラメーター、HTTP ヘッダーなど）を変更します。
-* [応答変換](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations)  – 送信する応答の HTTP ヘッダーを、ブラウザーに提供される前に変更する。
-* [接触チャネルセレクター](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors) - CDN を経由してAEM外のサイトやアプリケーションにトラフィックをルーティングします。
+* [リクエスト変換](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) - 受信リクエストが AEM にルーティングされる前に、パス、クエリパラメーターおよび HTTP ヘッダーなど、受信リクエストの側面を変更します。
+* [応答変換](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) - 送信応答がブラウザーに提供される前に、送信応答の HTTP ヘッダーを変更します。
+* [接触チャネルセレクター](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors) - CDN 経由でトラフィックを AEM 以外のサイトやアプリケーションにルーティングします。
 
-これらのルールがソース管理（Git）で宣言されたら、Cloud Manager 設定パイプラインを使用して CDN にデプロイできます。 後述の早期導入者の節にあるクライアントサイドのリダイレクト機能も参照してください。
+これらのルールをソース管理（Git）で宣言すると、Cloud Manager 設定パイプラインを使用して CDN にデプロイできます。また、以下の早期導入に関する節のクライアントサイドのリダイレクト機能も参照してください。
 
 ### カスタム CDN エラーページ {#cdn-error-pages}
 
-万一、CDN がAEM オリジンへのトラフィックをルーティングできない場合は、汎用バージョンに代わって、カスタムエラーページを宣言できます。 [詳細情報](/help/implementing/dispatcher/cdn-error-pages.md) ブランドエラーページの提供方法について。
+万が一、CDN が AEM 接触チャネルにトラフィックをルーティングできない場合は、カスタムエラーページを宣言して、汎用バージョンを置き換えることができます。ブランドのエラーページを提供する方法について詳しくは、[こちら](/help/implementing/dispatcher/cdn-error-pages.md)を参照してください。
 
 ### 早期導入プログラム {#foundation-early-adopter}
 
 #### クライアントサイドのリダイレクト（早期導入プログラム） {#client-side-redirects-early-adopter}
 
-ソース管理で 301/302 クライアントサイドのリダイレクトを設定し、CDN にデプロイします。 [詳細情報](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) 電子メールで早期導入プログラムに参加 **<aemcs-cdn-config-adopter@adobe.com>**.
+ソース管理で 301/302 クライアントサイドのリダイレクトを設定し、CDN にデプロイします。[詳細情報](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)を確認し、早期導入プログラムに参加するには、**<aemcs-cdn-config-adopter@adobe.com>** にメールを送信してください。
 
 #### トラフィックフィルタールールアラート（早期導入プログラム） {#traffic-filter-rules-alerts-early-adopter}
 

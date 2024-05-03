@@ -1,11 +1,11 @@
 ---
 title: Adobe Developer Console での JWT 資格情報の廃止
-description: AEMのAdobe Developer コンソールでの JWT 資格情報の非推奨（廃止予定）の影響について説明します。
+description: AEM の Adobe Developer Console での JWT 資格情報の廃止の影響について説明します。
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 source-git-commit: 802e29017d3f1e59ee1676b4172292cb3453648a
 workflow-type: tm+mt
 source-wordcount: '557'
-ht-degree: 56%
+ht-degree: 74%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 56%
 
 この記事では、AEM as a Cloud Service で非推奨（廃止予定）にどのように対処する必要があるかに関する追加のコンテキストを提供します。
 
-現在、主な留意点は、AEM機能が新しい OAuth サーバー間資格情報をまだサポートしていないことです。 AEM as a Cloud Service版のAEM リリースを通じて、2024 年 5 月中旬を予定しているサポートが近日中に提供されます。 JWT 格情報を移行する手順が記載されたメールが届いている可能性がありますが、AEM で新しい OAuth サーバー間資格情報タイプがサポートされるまで、資格情報の移行を保留しても問題ありません。
+現在のところ、主な留意点は、AEM の機能で新しい OAuth サーバー間資格情報がまだサポートされていないことです。AEM as a Cloud Service版のAEM リリースを通じて、2024 年 5 月中旬を予定しているサポートが近日中に提供されます。 JWT 資格情報を移行する手順が記載されたメールが届いているかもしれませんが、AEM で新しい OAuth サーバー間資格情報タイプがサポートされるまで、資格情報の移行を保留してください。
 
 以下では、AEMが 5 月中旬にサービスアカウント（JWT）資格情報をサポートした後に、お客様が OAuth サーバー間資格情報に置き換える必要がある（または置き換えない場合がある）シナリオを示します。 今後、資格情報を置き換える方法については、[こちら](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)を参照してください。
 
@@ -50,10 +50,10 @@ AEM のお客様は、AEM オーサー UI を使用すると、他のすべて�
 
 ## 自動生成されたプロジェクト {#autogen-projects}
 
-**アクション**：ユーザーに代わってAdobeが移行されるので、移行しないでください。
+**アクション**：アドビがお客様に代わって移行するので、お客様側では移行しないでください。
 
 **関連する AEM バージョン**：AEM as a Cloud Service。
 
-Cloud Manager がAEMas a Cloud Service環境をプロビジョニングすると、JWT 資格情報を使用してAdobe Developer コンソールプロジェクトが自動生成されます。 以下のスクリーンショットに示すように、このプロジェクトは読み取り専用としてマークされます。お客様がこれらのプロジェクトを OAuth サーバー間資格情報に移行することはできず、移行しないでください。代わりに、資格情報が使用できなくなる前に、Adobeがこれらのプロジェクトを単独で移行します。
+Cloud Manager で AEM as a Cloud Service 環境をプロビジョニングすると、JWT 資格情報を使用して Adobe Developer Console プロジェクトが自動生成されます。以下のスクリーンショットに示すように、このプロジェクトは読み取り専用としてマークされます。お客様は、これらのプロジェクトを OAuth サーバー間資格情報に移行できません。試さないでください。代わりに、資格情報が使用できなくなる前に、アドビがこれらのプロジェクトを独自に移行します。
 
 ![自動生成されたプロジェクト](/help/security/assets/jwt-deprecation-autogen-projects.png)
