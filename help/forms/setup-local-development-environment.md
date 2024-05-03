@@ -4,10 +4,10 @@ description: Adobe Experience Manager Forms as a Cloud Service 用のローカ�
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a86e68f9dd195512a689943b303225a48b5f8a23
-workflow-type: ht
-source-wordcount: '2723'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '2726'
+ht-degree: 98%
 
 ---
 
@@ -249,7 +249,7 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
 
 このプロジェクトを使用して、アダプティブフォームの作成、設定の更新、オーバーレイのデプロイ、カスタムアダプティブフォームコンポーネントの作成、テスト、ローカル [!DNL Experience Manager Forms] SDK へのカスタムコードの導入を行います。ローカルでテストした後、プロジェクトを [!DNL Experience Manager Forms] as a Cloud Service の実稼動環境および非実稼動環境にデプロイできます。プロジェクトをデプロイすると、次の AEM Forms アセットもデプロイされます。
 
-| テーマ | テンプレート | フォームデータモデル |
+| テーマ | テンプレート | フォームデータモデル（FDM） |
 ---------|----------|---------
 | Canvas 3.0 | 基本 | Microsoft® Dynamics 365 |
 | Tranquil | 空白 | Salesforce |
@@ -259,7 +259,7 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
 
 >[!NOTE]
 >
-> Microsoft® Dynamics 365 および Salesforce フォームデータモデルを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 30 以降に基づくプロジェクトをセットアップします。
+> Microsoft® Dynamics 365 および Salesforce フォームデータモデル（FDM）をAEM Forms as a Cloud Serviceと連携して取得および使用するには、AEM アーキタイプバージョン 30 以降に基づくプロジェクトをセットアップします。
 > Tranquil、Urbane、Ultramarine テーマを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 32 以降に基づくプロジェクトをセットアップします。
 
 プロジェクトを設定するには、以下を実行します。
@@ -399,7 +399,7 @@ For information about troubleshooting, stopping local AEM environment, run modes
 
 ### 既存のコンテンツのバックアップの作成 {#create-backup-of-your-existing-content}
 
-アダプティブフォーム、テンプレート、フォームデータモデル、テーマ、設定およびカスタムコードをバックアップします。以下の操作を実行して、バックアップを作成できます。
+アダプティブForms、テンプレート、フォームデータモデル（FDM）、テーマ、設定およびカスタムコードをバックアップします。 以下の操作を実行して、バックアップを作成できます。
 
 1. アダプティブフォーム、テーマ、PDF forms を[ダウンロード](import-export-forms-templates.md#manage-forms-and-related-assets)します。
 1. アダプティブフォームテンプレートの書き出します。

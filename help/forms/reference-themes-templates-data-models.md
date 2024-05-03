@@ -3,10 +3,10 @@ title: AEM Forms の参照テーマおよびテンプレートを取得する方
 description: AEM Forms には、フォームをすばやく作成できるように、サンプルのアダプティブフォームテーマ、テンプレート、フォームデータモデルが用意されています。
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
-workflow-type: ht
-source-wordcount: '772'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '778'
+ht-degree: 89%
 
 ---
 
@@ -20,12 +20,12 @@ ht-degree: 100%
 
 <span class="preview"> [アダプティブフォームの新規作成](/help/forms/creating-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
 
-AEM Forms as a Cloud Service には、アダプティブフォームの作成をすぐに開始するのに役立つ、複数の参照テーマ、テンプレート、フォームデータモデルが用意されています。[ソフトウェア配布ポータルからリファレンスコンテンツパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)をダウンロードし、[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)を使用して、[リファレンスコンテンツパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)を実稼働、開発、ローカル開発環境にインストールして、これらの参照アセットをお使いの環境に取りこむことができます。
+AEM Formsas a Cloud Serviceは、アダプティブFormsの作成をすぐに開始するのに役立つ、複数の参照テーマ、テンプレート、フォームデータモデル（FDM）を提供します。 [ソフトウェア配布ポータルからリファレンスコンテンツパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)をダウンロードし、[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)を使用して、[リファレンスコンテンツパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)を実稼働、開発、ローカル開発環境にインストールして、これらの参照アセットをお使いの環境に取りこむことができます。
 
-参照コンテンツパッケージに含まれるテーマ、テンプレート、フォームデータモデルは次のとおりです。
+参照コンテンツパッケージに含まれるテーマ、テンプレート、フォームデータモデル（FDM）は次のとおりです。
 
 
-| テーマ | テンプレート | フォームデータモデル |
+| テーマ | テンプレート | フォームデータモデル（FDM） |
 ---------|----------|---------
 | Canvas 3.0 | 基本 | Microsoft Dynamics 365 |
 | Tranquil | 空白 | Salesforce |
@@ -112,16 +112,16 @@ FSI テーマは、フォームの最小限の機能的外観を強調します�
 基本テンプレートを使用すると、登録フォームを素早く作成できます。また、アダプティブフォームの基盤コンポーネントの機能をプレビューする場合にも使用できます。データをセクションごとに表示するウィザードレイアウトが提供されます。空のキャンバス上からアダプティブフォームの作成を開始するには、空のテンプレートを使用します。
 
 
-## 参照フォームデータモデル {#reference-models}
+## 参照フォームデータモデル（FDM） {#reference-models}
 
 アダプティブフォームは Microsoft Dynamics 365 サーバーや Salesforce サーバーと連携し、ビジネスワークフローを実現できるようになります。次に例を示します。
 
 * アダプティブフォームの送信時に、データを Microsoft Dynamics 365 および Salesforce に書き込む。
-* フォームデータモデル内で定義されているカスタムエンティティを使用して、データを Microsoft Dynamics 365 および Salesforce に書き込むか、その逆の動作を行います。
+* フォームデータモデル（FDM）で定義したカスタムエンティティを使用して、Microsoft Dynamics 365 および Salesforce にデータを書き込む（その逆の動作）。
 * Microsoft Dynamics 365 および Salesforce サーバーに対してデータのクエリを実行し、アダプティブフォームに事前設定する。
 * Microsoft Dynamics 365 および Salesforce サーバーからデータを読み取る。
 
-[参照コンテンツパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)をインストールすると、次のフォームデータモデルを取得できます。
+をインストールすると、次のフォームデータモデル（FDM）を取得できます [参照コンテンツパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
 
 * Microsoft® Dynamics 365
 * Salesforce

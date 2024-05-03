@@ -4,10 +4,10 @@ description: テンプレートエディターを使用して、コアコンポ�
 feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
-source-wordcount: '1961'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '1962'
+ht-degree: 99%
 
 ---
 
@@ -164,7 +164,7 @@ Header and footer are added in the Initial Content layer.
 1. 左側にある&#x200B;**[!UICONTROL コンテンツブラウザー]**&#x200B;を選択します。
 1. フォームコンテナの「**[!UICONTROL 設定]**」に移動します。
 1. **[!UICONTROL データモデル]**&#x200B;を選択します。
-1. **[!UICONTROL フォームデータモデルを選択]**&#x200B;からフォームデータモデルを選択し、設定を保存します。
+1. からフォームデータモデル（FDM）を選択する **[!UICONTROL フォームデータモデルを選択]** 設定を保存します。
 
 ![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img-core-component.png)
 

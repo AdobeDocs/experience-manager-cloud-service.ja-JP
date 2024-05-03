@@ -4,10 +4,10 @@ description: アダプティブフォームを容易に作成または AEM Sites
 feature: Adaptive Forms, Foundation Components, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
-workflow-type: ht
-source-wordcount: '3177'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '3184'
+ht-degree: 96%
 
 ---
 
@@ -204,22 +204,22 @@ AEM Sites ページ内のアダプティブフォームをエクスペリエン�
 1. 必要に応じて、送信アクションを選択して設定します。送信アクションについて詳しくは、[アダプティブフォーム送信アクション](/help/forms/configuring-submit-actions.md)を参照してください。
 
 
-## AEM Sites ページまたはエクスペリエンスフラグメント内のフォームに対して、スキーマまたはフォームデータモデルを設定する {#configure-schema-or-data-model-for-form}
+## AEM Sitesページまたはエクスペリエンスフラグメントのフォームに対して、スキーマまたはフォームデータモデル（FDM）を設定します {#configure-schema-or-data-model-for-form}
 
-フォームデータモデルを使用してフォームをデータソースに接続し、ユーザーのアクションに基づいてデータを送受信することができます。また、フォームを JSON スキーマに接続して、送信されたデータを事前定義済みの形式で受信することもできます。要件に基づいて、次のようにフォームを JSON スキーマまたはフォームデータモデルに接続します。
+フォームデータモデル（FDM）を使用すると、フォームをデータソースに接続し、ユーザーのアクションに基づいてデータを送受信できます。 また、フォームを JSON スキーマに接続して、送信されたデータを事前定義済みの形式で受信することもできます。要件に基づいて、フォームを JSON スキーマまたはフォームデータモデル（FDM）に接続します。
 
 * [JSON スキーマを作成し、環境にアップロードする](/help/forms/adaptive-form-json-schema-form-model.md)、または
-* [フォームデータモデルを作成](/help/forms/create-form-data-models.md)
+* [フォームデータモデル（FDM）の作成](/help/forms/create-form-data-models.md)
 
-フォームの JSON スキーマまたはフォームデータモデルを設定するには、次の手順を実行します。
+フォームに JSON スキーマまたはフォームデータモデル（FDM）を設定するには：
 
 1. アダプティブフォームを含む、AEM ページエディターまたはエクスペリエンスフラグメントを開きます。
 1. コンテンツツリーを開き、アダプティブフォームをホストする&#x200B;**[!UICONTROL アダプティブフォームコンテナ]**&#x200B;を選択します。1 つの AEM Sites ページで複数のアダプティブフォームをホストできます。したがって、適切なアダプティブフォームコンテナを慎重に選択してください。
 1. アダプティブフォームコンテナプロパティ（![アダプティブフォームコンテナプロパティ](/help/forms/assets/configure-icon.svg)アイコン）をクリックします。データモデルを設定するためのアダプティブフォームコンテナダイアログボックスが開きます。
    ![レンチアイコンをクリックして、アダプティブフォームのデータモデルを設定します](/help/forms/assets/form-data-model-adaptive-forms-container.png)
-1. 必要に応じて、JSON スキーマまたはフォームデータモデルを選択し、設定します。 送信アクションについて詳しくは、[アダプティブフォーム送信アクション](/help/forms/configuring-submit-actions.md)を参照してください。
+1. 要件に基づいて、JSON スキーマまたはフォームデータモデル（FDM）を選択して設定します。 送信アクションについて詳しくは、[アダプティブフォーム送信アクション](/help/forms/configuring-submit-actions.md)を参照してください。
 
-   * 「**[!UICONTROL フォームモデル]**」オプションを選択する場合は、「**[!UICONTROL フォームデータモデルを選択]**」オプションを使用して、事前設定済みのフォームデータモデルを選択します。
+   * 選択した場合 **[!UICONTROL フォームモデル]** オプションで、 **[!UICONTROL フォームデータモデルを選択]** 事前設定済みのフォームデータモデル（FDM）を選択するためのオプション。
    * 「**[!UICONTROL スキーマ]**」オプションを選択する場合は、「**[!UICONTROL スキーマ]**」オプションを使用して、フォームの JSON スキーマを選択します。
 
 1. 「**[!UICONTROL 完了]**」をクリックします。

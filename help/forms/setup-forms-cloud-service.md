@@ -4,10 +4,10 @@ description: ' [!DNL AEM Forms]  as a Cloud Service 環境のセットアップ�
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 7fe779602f52081dc785074bdc0f374665b908e6
-workflow-type: ht
-source-wordcount: '609'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '610'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 * **ユーザーエクスペリエンス（UX）デザイナー**：ユーザーエクスペリエンス（UX）デザイナーは、[!DNL AEM Forms] のアセットのスタイル、レイアウト、ブランディングを定義します。
 
-* **Forms 担当者**：Forms 担当者は、UX デザイナーが提供するスタイル、レイアウト、ブランディングに従って、アダプティブフォーム、テーマ、テンプレートを作成します。また、担当者はアダプティブフォームを作成して、フォームデータモデルや AEM ワークフローと統合します。Forms 担当者は、通常、フロントエンドのタスクを実行します。
+* **Forms 担当者**：Forms 担当者は、UX デザイナーが提供するスタイル、レイアウト、ブランディングに従って、アダプティブフォーム、テーマ、テンプレートを作成します。また、担当者はアダプティブフォームを作成して、フォームデータモデル（FDM）やAEM ワークフローと統合します。 Forms 担当者は、通常、フロントエンドのタスクを実行します。
 
 * **Forms 開発者**：Forms 開発者は、カスタムフォームソリューションを開発します。Forms 開発者は、通常、カスタムコンポーネント、AEM ワークフロー、事前入力サービスなどのバックエンド開発を担当します。
 

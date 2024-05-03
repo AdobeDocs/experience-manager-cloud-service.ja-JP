@@ -6,10 +6,10 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: e81da7414335e00411942adeb41978d39f172b52
-workflow-type: ht
-source-wordcount: '3242'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '3243'
+ht-degree: 99%
 
 ---
 
@@ -98,7 +98,7 @@ ht-degree: 100%
 既存のアダプティブフォームで [!DNL Adobe Sign] を使用するには：
 
 1. **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;に移動します。
-1. アダプティブフォームを選択し、「**[!UICONTROL プロパティ]**」をクリックします。
+1. アダプティブフォームを選択し、「**[!UICONTROL プロパティ]**」を選択します。
 1. 「**[!UICONTROL 基本]**」タブで、[!DNL Adobe Sign] を [!DNL AEM Forms] と統合するときに作成した [設定コンテナ](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) を選択します。
 1. 「**[!UICONTROL フォームモード]**」タブで、次のいずれかのオプションを選択します。
 
@@ -184,7 +184,7 @@ Cloud Service と署名する順序を選択するには：
 
    >[!NOTE]
    >
-   > フォームデータモデルを使用してアダプティブフォームを作成している場合、ダイアログボックスに「契約 ID」フィールドが表示されます。
+   > フォームデータモデル（FDM）を使用してアダプティブフォームを作成すると、ダイアログボックスに「契約 ID」フィールドが表示されます。
 
 1. [アダプティブフォームに受信者を追加](working-with-adobe-sign.md#addsignerstoanadaptiveform)し、「完了」![保存](assets/save_icon.svg) アイコンを選択して変更内容を保存します。
 
@@ -317,7 +317,7 @@ Adobe Sign 契約 ID（agreementId）は、アダプティブフォームの送�
 
 1. **[!UICONTROL Adobe Sign フィールド]** ![Adobe Sign](assets/adobesign.png) アイコンを選択します。[!DNL Adobe Sign] フィールドの選択オプションと追加オプションが表示されます。
 
-   **[!UICONTROL タイプ]**&#x200B;ドロップダウンフィールドを展開して「**[!UICONTROL デジタル署名]**」を選択し、**[!UICONTROL 完了]**&#x200B;アイコンを選択して、選択したフィールドを [!DNL Adobe Sign] ブロックに追加します。
+   **[!UICONTROL タイプ]**&#x200B;ドロップダウンフィールドを展開して「**[!UICONTROL デジタル署名]**」を選択し、「**[!UICONTROL 完了]**」アイコンを選択して、選択したフィールドを [!DNL Adobe Sign] ブロックに追加します。
 
    ![電子署名](assets/digital_signatures_new.png)
 

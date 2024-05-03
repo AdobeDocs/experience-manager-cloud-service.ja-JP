@@ -4,10 +4,10 @@ description: Microsoft Dynamics 365 と Salesforce をアダプティブフォ�
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: ht
-source-wordcount: '952'
-ht-degree: 100%
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+workflow-type: tm+mt
+source-wordcount: '965'
+ht-degree: 72%
 
 ---
 
@@ -18,18 +18,18 @@ ht-degree: 100%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
 | AEM as a Cloud Service | この記事 |
 
-[[!DNL Experience Manager Forms] データ統合](data-integration.md)では、アダプティブフォームを [!DNL Microsoft® Dynamics 365] および [!DNL Salesforce] の標準のフォームデータモデルに統合するためのクラウドサービスを提供しています。その結果、アダプティブフォームは、[!DNL Microsoft® Dynamics 365] および [!DNL Salesforce] サーバーとやり取りして、ビジネスワークフローを有効にすることができます。次に例を示します。
+[[!DNL Experience Manager Forms] データ統合](data-integration.md) 提供する [!DNL Microsoft® Dynamics 365] および [!DNL Salesforce] アダプティブフォームを標準のフォームデータモデル（FDM）に統合するためのクラウドサービス。 その結果、アダプティブフォームは、[!DNL Microsoft® Dynamics 365] および [!DNL Salesforce] サーバーとやり取りして、ビジネスワークフローを有効にすることができます。次に例を示します。
 
 * アダプティブフォームの送信時にデータを [!DNL Microsoft® Dynamics 365].および [!DNL Salesforce] に書き込む。
-* フォームデータモデルで定義されているカスタムエンティティを通じて、データを [!DNL Microsoft® Dynamics 365] および [!DNL Salesforce] に書き込みます (またはその逆の操作)。
+* データをに書き込む [!DNL Microsoft® Dynamics 365] および [!DNL Salesforce] フォームデータモデル（FDM）で定義したカスタムエンティティを使用する（またはその逆の方法）。
 * [!DNL Microsoft® Dynamics 365] および [!DNL Salesforce] サーバーに対してデータに関するクエリを実行し、アダプティブフォームにデータを事前入力する。
 * [!DNL Microsoft® Dynamics 365] および [!DNL Salesforce] サーバーからデータを読み取る。
 
-[Experience Manager アーキタイプに基づいて Forms の開発プロジェクトをセットアップ](setup-local-development-environment.md#forms-cloud-service-local-development-environment)すると、[!DNL Microsoft® Dynamics 365] および [!DNL Salesforce] のクラウドサービスとフォームデータモデルを [!DNL AEM Forms] サーバー上ですぐに使用できるようになります。
+[!DNL Microsoft® Dynamics 365] および [!DNL Salesforce] クラウドサービスおよびフォームデータモデル（FDM）は、 [!DNL AEM Forms] 導入後のサーバ [Experience Managerアーキタイプに基づいたFormsの開発プロジェクトの設定](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
 >[!NOTE]
 >
->Microsoft® Dynamics 365、[!DNL Salesforce] クラウドサービス、フォームデータモデルを標準で使用できるのは、[AEM アーキタイプ 30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) 以降に基づいて [!DNL Experience Manager Forms] を [!DNL Cloud Service] プロジェクトとしてセットアップした場合のみです。
+>Microsoft® Dynamics 365 および [!DNL Salesforce] クラウドサービスとフォームデータモデル（FDM）は、以下を設定した場合にのみ、すぐに使用できます [!DNL Experience Manager Forms] as a [!DNL Cloud Service] 基づいたプロジェクト [AEM アーキタイプ 30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) またはそれ以降。
 
 ## [!DNL Salesforce] クラウドサービスの設定 {#configure-salesforce-cloud-service}
 
@@ -59,11 +59,11 @@ ht-degree: 100%
    1. [!DNL Salesforce] の資格情報を使用してログインし、クラウドサービス設定を使用して [!DNL Salesforce] サービスに接続することに同意します。接続に成功すると、[!DNL Salesforce] クラウドサービス設定ページにリダイレクトされ、成功メッセージが表示されます。
 1. 「**[!UICONTROL 保存して閉じる]**」を選択して、設定を完了します。
 
-### 標準の [!DNL Salesforce] フォームデータモデルへのアクセス
+### 標準アクセス [!DNL Salesforce] フォームデータモデル（FDM）
 
-](setup-local-development-environment.md#forms-cloud-service-local-development-environment)Experience Manager アーキタイプに基づいて Forms の開発プロジェクトをセットアップ[すると、[!DNL Salesforce] フォームデータモデルを [!DNL AEM Forms] サーバー上ですぐに使用できるようになります。
+A [!DNL Salesforce] フォームデータモデル（FDM）は、に標準で用意されています [!DNL AEM Forms] 導入後のサーバ [Experience Managerアーキタイプに基づいたFormsの開発プロジェクトの設定](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
-フォームデータモデルにアクセスするには、**[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL データ統合]**&#x200B;に移動します。使用可能なフォルダーのリストには、[AEM アーキタイププロジェクトの生成](setup-local-development-environment.md#forms-cloud-service-local-development-environment)時に `DappTitle` のタイトルを指定したフォルダーが含まれています。フォルダー名を選択して「**[!UICONTROL Salesforce データモデル]**」を選択し、「編集」![編集](assets/edit.png) アイコンを選択してフォームデータモデルを表示します。
+フォームデータモデル（FDM）にアクセスするには、次に移動します **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL データ統合]**. 使用可能なフォルダーのリストには、[AEM アーキタイププロジェクトの生成](setup-local-development-environment.md#forms-cloud-service-local-development-environment)時に `DappTitle` のタイトルを指定したフォルダーが含まれています。フォルダー名を選択し、 **[!UICONTROL Salesforce データモデル]**&#x200B;を選択し、「編集」を選択します ![編集](assets/edit.png) アイコンをクリックして、フォームデータモデル（FDM）を表示します。
 
 [[!DNL Salesforce] クラウド設定サービス](#configure-salesforce-cloud-service)を設定したら、アダプティブフォームと標準の [!DNL Salesforce] データモデルを統合できます。
 
@@ -89,17 +89,17 @@ ht-degree: 100%
    1. 「**[!UICONTROL サービスルート]**」フィールドの値を入力します。Dynamics インスタンスの「[開発者向けリソース](https://docs.microsoft.com/ja-jp/powerapps/developer/data-platform/view-download-developer-resources)」に移動し、「サービスルート」フィールドの値を表示します。例：`https://<tenant-name>.dynamics.com/api/data/v9.1/`
    1. 接続アプリケーションのクライアント ID（「アプリケーション ID」とも呼ばれます）とクライアントの秘密鍵を指定します。
    1. 「**[!UICONTROL OAuth URL]**」、「**[!UICONTROL 更新トークン URL]**」、「**[!UICONTROL アクセストークン URL]**」の各フィールドの `{tenant}` をテナント ID に置き換えます。
-   1. 「**[!UICONTROL リソース]**」フィールドに Dynamics インスタンスの URL を指定して、フォームデータモデルで [!UICONTROL Microsoft® Dynamics] を設定します。サービスルート URL を使用して、Dynamics インスタンスの URL を取得します。（例：`https://<tenant-name>.dynamics.com`）。
+   1. 次で Dynamics インスタンスの URL を指定 **[!UICONTROL Resource]** 設定するフィールド [!UICONTROL Microsoft® Dynamics] フォームデータモデル（FDM）を使用する。 サービスルート URL を使用して、Dynamics インスタンスの URL を取得します。（例：`https://<tenant-name>.dynamics.com`）。
 
    1. `openid` の認証プロセス用の「**[!UICONTROL 認証範囲」フィールドで]**、「[!DNL Microsoft® Dynamics 365]」を指定します。
    1. [!DNL Microsoft® Dynamics 365] の資格情報を使用してログインし、クラウドサービス設定を使用して [!DNL Microsoft® Dynamics 365] サービスに接続することに同意します。接続に成功すると、[!DNL Microsoft® Dynamics 365] クラウドサービス設定ページにリダイレクトされ、成功メッセージが表示されます。
 1. 「**[!UICONTROL 保存して閉じる]**」を選択して、設定を完了します。
 
-### 標準の [!DNL Microsoft® Dynamics 365] フォームデータモデルへのアクセス
+### 標準アクセス [!DNL Microsoft® Dynamics 365] フォームデータモデル（FDM）
 
-](setup-local-development-environment.md##forms-cloud-service-local-development-environment)Experience Manager アーキタイプに基づいて Forms の開発プロジェクトをセットアップ[すると、[!DNL Microsoft® Dynamics 365] フォームデータモデルを [!DNL AEM Forms] サーバー上ですぐに使用できるようになります。
+A [!DNL Microsoft® Dynamics 365] フォームデータモデル（FDM）は、に標準で用意されています [!DNL AEM Forms] 導入後のサーバ [Experience Managerアーキタイプに基づいたFormsの開発プロジェクトの設定](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
 
-フォームデータモデルにアクセスするには、**[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL データ統合]**&#x200B;に移動します。使用可能なフォルダーのリストには、[AEM アーキタイププロジェクトの生成](setup-local-development-environment.md#forms-cloud-service-local-development-environment)時に `DappTitle` のタイトルを指定したフォルダーが含まれています。フォルダー名を選択して「**[!UICONTROL Microsoft® Dynamics 365 データモデル]**」を選択し、「編集」![編集](assets/edit.png) アイコンを選択してフォームデータモデルを表示します。
+フォームデータモデル（FDM）にアクセスするには、次に移動します **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL データ統合]**. 使用可能なフォルダーのリストには、[AEM アーキタイププロジェクトの生成](setup-local-development-environment.md#forms-cloud-service-local-development-environment)時に `DappTitle` のタイトルを指定したフォルダーが含まれています。フォルダー名を選択し、 **[!UICONTROL Microsoft® Dynamics 365 データモデル]**&#x200B;を選択し、「編集」を選択します ![編集](assets/edit.png) アイコンをクリックして、フォームデータモデル（FDM）を表示します。
 
 [[!DNL Microsoft® Dynamics 365] クラウド設定サービス](#configure-dynamics-cloud-service)を設定したら、アダプティブフォームと標準の [!DNL Microsoft® Dynamics 365] データモデルを統合できます。
 

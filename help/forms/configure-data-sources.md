@@ -1,14 +1,14 @@
 ---
 title: データソースの設定方法
-description: RESTful Web サービス、SOAP ベースの Web サービスおよび OData サービスをデータソースとして設定し、それらを使用してフォームデータモデルを作成する方法について説明します。
+description: RESTful Web サービス、SOAP ベースの Web サービスおよび OData サービスを、フォームデータモデル（FDM）のデータソースとして設定する方法について説明します。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: ht
-source-wordcount: '2121'
-ht-degree: 100%
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+workflow-type: tm+mt
+source-wordcount: '2129'
+ht-degree: 93%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 100%
 
 1. 「**[!UICONTROL 保存]**」をクリックして、設定を保存します。
 
-これで、設定済みのリレーショナルデータベースをフォームデータモデルと共に使用できます。
+これで、設定済みのリレーショナルデータベースをフォームデータモデル（FDM）と共に使用できます。
 
 <!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
@@ -84,7 +84,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 1. Go to [!DNL Experience Manager] web console at `https://[server]:[port]/system/console/configMgr`.
 1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and select to open the configuration in edit mode.
-1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model. Use the following format to specify user profile properties:
+1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model (FDM). Use the following format to specify user profile properties:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -95,7 +95,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
    >[!NOTE]
    >
-   >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
+   >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model (FDM) can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
 
 1. Select **[!UICONTROL Save]** to save the configuration. -->
 
@@ -111,7 +111,7 @@ RESTful サービス、SOAP サービス、OData サービスのクラウドサ�
    * 詳しくは、[設定ブラウザー](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=ja)のドキュメントを参照してください。
 1. 以下の手順を実行して、global フォルダーをクラウド設定用に有効にします。クラウドサービス設定用に別のフォルダーを作成する場合は、この手順をスキップしてください。
 
-   1. **[!UICONTROL 設定ブラウザー]**&#x200B;で、`global` フォルダーを選択し、「**[!UICONTROL プロパティ]**」をクリックします。
+   1. **[!UICONTROL 設定ブラウザー]**&#x200B;で、`global` フォルダーを選択し、「**[!UICONTROL プロパティ]**」を選択します。
 
    1. **[!UICONTROL 設定プロパティ]**&#x200B;ダイアログで、「**[!UICONTROL クラウド設定]**」を有効にします。
 
@@ -131,7 +131,7 @@ RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式ま
 
    クラウドサービス設定用フォルダーの作成方法と構成方法については、「[クラウドサービス設定用フォルダーの構成](configure-data-sources.md#cloud-folder)」を参照してください。
 
-1. 「**[!UICONTROL 作成]**」を選択して、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、**[!UICONTROL サービスタイプ]**&#x200B;ドロップダウンで「**[!UICONTROL RESTful サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」をクリックします。
+1. 「**[!UICONTROL 作成]**」を選択して、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL RESTful サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」を選択します。
 1. RESTful サービスの次の詳細を指定します。
 
    * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL  Swagger] 定義ファイルに対する [!DNL Swagger URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
@@ -150,13 +150,13 @@ RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式ま
 
 1. 「**[!UICONTROL 作成]**」を選択して、RESTful サービス用のクラウド設定を作成します。
 
-### Open API 仕様バージョン 3.0 用の RESTful サービスの設定 {#configure-restful-services-open-api-3.0}
+### Open API 仕様バージョン 3.0 {#configure-restful-services-open-api-3.0} 用の RESTful サービスの設定
 
 1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーを選択します。
 
    クラウドサービス設定用フォルダーの作成方法と構成方法については、「[クラウドサービス設定用フォルダーの構成](configure-data-sources.md#cloud-folder)」を参照してください。
 
-1. 「**[!UICONTROL 作成]**」を選択して、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、**[!UICONTROL サービスタイプ]**&#x200B;ドロップダウンで「**[!UICONTROL RESTful サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」をクリックします。
+1. 「**[!UICONTROL 作成]**」を選択して、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL RESTful サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」を選択します。
 1. RESTful サービスの次の詳細を指定します。
 
    * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL  Swagger] 定義ファイルに対する [!DNL Swagger 3.0 URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
@@ -178,14 +178,14 @@ RESTful サービス Open API 仕様バージョン 3.0 でサポートされて
 
 詳しくは、[OpenAPI 3.0 仕様](https://swagger.io/specification/v3/)を参照してください。
 
-### パフォーマンスを最適化するためのフォームデータモデル HTTP クライアント設定 {#fdm-http-client-configuration}
+### パフォーマンスを最適化するためのフォームデータモデル（FDM） HTTP クライアント設定 {#fdm-http-client-configuration}
 
 データソースとして RESTful web サービスと統合する場合の [!DNL Experience Manager Forms] フォームデータモデルには、パフォーマンス最適化のための HTTP クライアント設定が含まれています。
 
 
 **[!UICONTROL REST データソース設定のフォームデータモデル HTTP クライアント設定]**&#x200B;の次のプロパティを設定し、正規表現を指定します。
 
-* `http.connection.max.per.route` プロパティを使用して、フォームデータモデルと RESTful web サービス間で許可される最大接続数を設定します。デフォルト値は 20 接続です。
+* の使用 `http.connection.max.per.route` フォームデータモデル（FDM）と RESTful web サービス間で許可される最大接続数を設定するプロパティ。 デフォルト値は 20 接続です。
 
 * `http.connection.max` プロパティを使用して、各ルートに許可される最大接続数を指定します。デフォルト値は 40 接続です。
 
@@ -213,7 +213,7 @@ RESTful サービス Open API 仕様バージョン 3.0 でサポートされて
 
 1. [!UICONTROL REST データソース用フォームデータモデル HTTP クライアント設定]ダイアログで、
 
-   * **[!UICONTROL 接続制限（合計）]**&#x200B;フィールドに、フォームデータモデルと RESTful web サービス間の接続許可数の上限を指定します。デフォルト値は 20 接続です。
+   * でのフォームデータモデル（FDM）と RESTful web サービス間の最大接続数の指定 **[!UICONTROL 接続制限（合計）]** フィールド。 デフォルト値は 20 接続です。
 
    * **[!UICONTROL ルートごとの接続制限]**&#x200B;フィールドで、各ルートに許可される最大接続数を指定します。デフォルト値は 2 つの接続です。
 
@@ -233,7 +233,7 @@ SOAP ベースの web サービスは、[Web Services Description Language（WSD
 
    クラウドサービス設定用フォルダーの作成方法と構成方法については、「[クラウドサービス設定用フォルダーの構成](configure-data-sources.md#cloud-folder)」を参照してください。
 
-1. 「**[!UICONTROL 作成]**」を選択して、**[!UICONTROL データソース設定を作成ウィザード]**&#x200B;を開きます。設定の名前と、必要に応じて設定のタイトルを指定し、**[!UICONTROL サービスタイプ]**&#x200B;ドロップダウンで「**[!UICONTROL SOAP web サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」を選択します。
+1. 「**[!UICONTROL 作成]**」を選択して、**[!UICONTROL データソース設定を作成ウィザード]**&#x200B;を開きます。設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL SOAP Web サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」を選択します。
 1. SOAP web サービスに対して次の情報を指定します。
 
    * Web サービスの WSDL URL。
@@ -267,14 +267,14 @@ OData サービスは、そのサービスのルート URL によって識別さ
 
 >[!NOTE]
 >
-> フォームデータモデルは [OData バージョン 4](https://www.odata.org/documentation/) をサポートします。
+> フォームデータモデル（FDM）のサポート [OData バージョン 4](https://www.odata.org/documentation/).
 >オンライン環境またはオンプレミス環境で [!DNL Microsoft®® Dynamics 365] を設定する詳しい手順については、[[!DNL Microsoft® Dynamics] OData 設定](ms-dynamics-odata-configuration.md)を参照してください。
 
 1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーを選択します。
 
    クラウドサービス設定用フォルダーの作成方法と構成方法については、「[クラウドサービス設定用フォルダーの構成](#cloud-folder)」を参照してください。
 
-1. 「**[!UICONTROL 作成]**」を選択して、**[!UICONTROL データソース設定を作成ウィザード]**&#x200B;を開きます。設定の名前と、必要に応じて設定のタイトルを指定し、**[!UICONTROL サービスタイプ]**&#x200B;ドロップダウンで「**[!UICONTROL OData サービス]**」を選択します。必要な場合は、設定のサムネール画像を参照および選択して「**[!UICONTROL 次へ]**」をクリックします。
+1. 「**[!UICONTROL 作成]**」を選択して、**[!UICONTROL データソース設定作成ウィザード]**&#x200B;を開きます。設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL OData サービス]**」を選択します。必要な場合は、設定のサムネール画像を参照および選択して「**[!UICONTROL 次へ]**」を選択します。
 1. OData サービスの次の詳細を指定します。
 
    * 設定する OData サービスのサービスルート URL。
@@ -316,7 +316,7 @@ To save data in a tabular form use, Microsoft® SharePoint List. To configure a 
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
-When you enable mutual authentication for form data model, both the data source and [!DNL Experience Manager] Server running Form Data Model authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model on your [!DNL Experience Manager Forms] environment:
+When you enable mutual authentication for form data model (FDM), both the data source and [!DNL Experience Manager] Server running Form Data Model (FDM) authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model (FDM) on your [!DNL Experience Manager Forms] environment:
 
 1. Upload the private key (certificate) to [!DNL Experience Manager Forms] server. To upload the private key:
    1. Log in to your [!DNL Experience Manager Forms] server as an administrator.
@@ -329,7 +329,7 @@ When you enable mutual authentication for form data model, both the data source 
 
 ## 次の手順 {#next-steps}
 
-上記の手順により、データソースが設定されました。次に、フォームデータモデルを作成できます。データソースのないフォームデータモデルが既に作成されている場合は、設定したデータソースにそのフォームデータモデルを関連付けることができます。詳しくは、[フォームデータモデルの作成](create-form-data-models.md)を参照してください。
+上記の手順により、データソースが設定されました。次に、フォームデータモデル（FDM）を作成できます。データソースが設定されていないフォームデータモデル（FDM）が既に作成されている場合は、設定したデータソースに関連付けることができます。 詳しくは、[フォームデータモデルの作成](create-form-data-models.md)を参照してください。
 
 
 <!--

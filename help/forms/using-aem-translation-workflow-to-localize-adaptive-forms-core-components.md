@@ -1,12 +1,12 @@
 ---
 title: コアコンポーネントベースのアダプティブフォームを翻訳するにはどうすればよいですか？
-description: AEM Forms でフォームデータモデルを作成し、サンプルデータとサービスを使用してモデルをテストし、モデルの様々なオプションを設定する方法を説明します。
+description: AEM Formsでフォームデータモデル（FDM）を作成し、サンプルデータとサービスを使用してモデルをテストし、モデルの様々なオプションを設定する方法について説明します。
 feature: Adaptive Forms, Core Components
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
-source-wordcount: '884'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '885'
+ht-degree: 97%
 
 ---
 

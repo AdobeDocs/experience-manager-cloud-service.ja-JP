@@ -1,14 +1,14 @@
 ---
 title: AEM アダプティブフォームを Microsoft® SharePoint リストに接続する方法
-description: アダプティブフォームを Microsoft® SharePoint リストに接続します。Microsoft® SharePoint リストを設定し、設定を使用してフォームデータモデルを作成する方法について説明します。さらに、FDM をアダプティブフォームに統合する方法も説明します。
+description: アダプティブフォームを Microsoft® SharePoint リストに接続します。Microsoft&reg; SharePoint リストを設定し、設定を使用してフォームデータモデル（FDM）を作成する方法について説明します。 さらに、FDM をアダプティブフォームに統合する方法も説明します。
 role: User, Developer
 keywords: AEMアダプティブフォームをMicrosoft SharePointリストに接続し、アダプティブフォームをMicrosoft SharePointリストに接続し、AEMアダプティブフォームをMicrosoft SharePointリストに統合し、アダプティブフォームをMicrosoftリストに統合し、アダプティブフォームからSharePointリストにデータを送信しAEMます。
 hide: true
 hidefromToC: true
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
-workflow-type: ht
-source-wordcount: '539'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '525'
+ht-degree: 79%
 
 ---
 
@@ -31,8 +31,8 @@ ht-degree: 100%
 アダプティブフォームをMicrosoft® SharePointリストに接続する前に、次の手順を実行します。
 
 1. [Microsoft の設定](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
-1. [Microsoft を使用してフォームデータモデルを作成する](/help/forms/create-form-data-models.md)
-1. [データを取得して送信するためのフォームデータモデルの設定](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Microsoftを使用してフォームデータモデル（FDM）を作成する](/help/forms/create-form-data-models.md)
+1. [データを取得して送信するためのフォームデータモデル（FDM）の設定](/help/forms/work-with-form-data-model.md#configure-services)
 1. [アダプティブフォームを作成](/help/forms/creating-adaptive-form-core-components.md)
 
 次の操作が可能になりました。
@@ -40,20 +40,20 @@ ht-degree: 100%
 * [Microsoft に接続する](#connect-an-adaptive-form-to-microsoft-sharepoint-list-connect-af-sharepoint-list)
 * [Microsoft に接続する](#connect-sharepoint-list-workflow)
 
-## アダプティブフォームのMicrosoft® SharePointリストへの接続 {#connect-af-sharepoint-list}
+## アダプティブフォームを Microsoft® SharePoint リストに接続 {#connect-af-sharepoint-list}
 
-Microsoft® SharePointリストをアダプティブフォームに統合するには [フォームデータモデルを使用するためのアダプティブフォームの設定](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
+Microsoft®SharePointリストをアダプティブフォームに統合するには [フォームデータモデル（FDM）を使用するようにアダプティブフォームを設定する](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
 
-フォームデータモデルを使用するようアダプティブフォームを設定すると、次のことが可能になります。
+フォームデータモデル（FDM）を使用するようにアダプティブフォームを設定すると、次の操作を実行できます。
 
-* [フォームデータモデルを使用した送信アクションの設定](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
-* [フォームデータモデルを呼び出すためのルールエディターの設定](/help/forms/rule-editor.md#invoke-form-data-model-service-invoke)
+* [フォームデータモデル（FDM）を使用して送信アクションを設定する](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+* [フォームデータモデル（FDM）を呼び出すためのルールエディターの設定](/help/forms/rule-editor.md#invoke-form-data-model-service-invoke)
 
 ## Microsoft® SharePointリストをAEMワークフローに接続 {#connect-sharepoint-list-workflow}
 
 Microsoft® SharePointリストをAEMワークフローに統合するには：
 
-1. [フォームデータモデルを呼び出すためのワークフローを作成する](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ja#extending-aem)
+1. [フォームデータモデル（FDM）を呼び出すためのワークフローの作成](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=ja#extending-aem)
 
    <!--
     To create a workflow with the editor:
@@ -84,7 +84,7 @@ Microsoft® SharePointリストをAEMワークフローに統合するには：
 
 * [コアコンポーネントベースのアダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
 * [データソースの設定](/help/forms/configuring-submit-actions.md)
-* [フォームデータモデルの作成](/help/forms/create-form-data-models.md)
+* [フォームデータモデル（FDM）の作成](/help/forms/create-form-data-models.md)
 * [Forms中心のAEM Workflows — ステップリファレンスを使用して、ビジネスプロセスを自動化します。](/help/forms/aem-forms-workflow-step-reference.md)
 * [アダプティブフォーム用のカスタム送信アクションを作成する](/help/forms/custom-submit-action-form.md)
 * [AEM Sites ページへのアダプティブフォームの作成または追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

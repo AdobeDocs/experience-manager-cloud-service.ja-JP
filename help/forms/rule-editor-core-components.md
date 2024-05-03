@@ -5,15 +5,15 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '5444'
-ht-degree: 88%
+source-wordcount: '5453'
+ht-degree: 86%
 
 ---
 
 
-<span class="preview"> この記事には、一部のプレリリース機能に関するコンテンツが含まれています。 これらのプレリリース機能には、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja?cloud-environments). プレリリースプログラムの機能は次のとおりです。
+<span class="preview"> この記事には、一部のプレリリース機能に関するコンテンツが含まれています。 これらのプレリリース機能には、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features). プレリリースプログラムの機能は次のとおりです。
 * ネストされた条件を When-then-else 機能で実装する機能のサポート
 * パネルやフォーム（フィールドを含む）の検証またはリセット
 * カスタム関数内の let 関数や arrow 関数などの最新の JavaScript 機能のサポート（ES10 サポート）。
@@ -30,7 +30,7 @@ ht-degree: 88%
 * オブジェクトの値を設定する
 * オブジェクトの値を検証する
 * 関数を実行することにより、オブジェクトの値を計算する
-* フォームデータモデルサービスを呼び出し操作を実行する
+* フォームデータモデル（FDM）サービスを呼び出し、操作を実行する
 * オブジェクトのプロパティを設定する
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
@@ -147,15 +147,15 @@ Action 3 on Object C;
 
 **[!UICONTROL Disable （無効）]**：指定したオブジェクトを無効にします。
 
-**[!UICONTROL Invoke service （サービスを起動）]**&#x200B;フォームデータモデルで設定されたサービスを起動します。「サービスを起動」オプションを選択すると、フィールドが表示されます。このフィールドをタップすると、[!DNL Experience Manager] インスタンス上のすべてのフォームデータモデルで設定されたすべてのサービスが表示されます。フォームデータモデルサービスを選択すると、さらにフィールドが表示され、指定したサービスに対する入力パラメーターと出力パラメーターを使用して、ここでフォームオブジェクトをマップすることができます。フォームデータモデルサービスの起動については、「ルール例」を参照してください。
+**[!UICONTROL サービスを起動]** フォームデータモデル（FDM）で設定されたサービスを呼び出します。 「サービスを起動」オプションを選択すると、フィールドが表示されます。このフィールドをタップすると、フォームのすべてのフォームデータモデル（FDM）で設定されたすべてのサービスが表示されます [!DNL Experience Manager] インスタンス。 フォームデータモデルサービスを選択すると、さらにフィールドが表示され、指定したサービスに対する入力パラメーターと出力パラメーターを使用して、ここでフォームオブジェクトをマップすることができます。フォームデータモデル（FDM）サービスの呼び出しについては、ルール例を参照してください。
 
 フォームデータモデルサービスに加えて、ダイレクト WSDL URL を指定して Web サービスを起動することができます。ただし、フォームデータモデルサービスには数多くの利点があるので、この方法でサービスを起動することをお勧めします。
 
-フォームデータモデルでのサービス設定について詳しくは、「[[!DNL Experience Manager Forms] データ統合](data-integration.md)」を参照してください。
+フォームデータモデル（FDM）でのサービス設定について詳しくは、以下を参照してください。 [[!DNL Experience Manager Forms] データ統合](data-integration.md).
 
-**[!UICONTROL Set value of （設定値）]**：指定したオブジェクトの値を計算し、設定します。オブジェクト値には、文字列、他のオブジェクトの値、数式や関数を使用して計算された値、オブジェクトのプロパティの値、または設定されたフォームデータモデルサービスからの出力値を設定することができます。Web サービスオプションを選択すると、 [!DNL Experience Manager]インスタンス上のすべてのフォームデータモデルで設定されたすべてのサービスが表示されます。フォームデータモデルサービスを選択すると、さらにフィールドが表示され、指定したサービスに対する入力パラメーターと出力パラメーターを使用して、ここでフォームオブジェクトをマップすることができます。
+**[!UICONTROL Set value of （設定値）]**：指定したオブジェクトの値を計算し、設定します。オブジェクト値には、文字列、他のオブジェクトの値、数式や関数を使用して計算された値、オブジェクトのプロパティの値、または設定されたフォームデータモデルサービスからの出力値を設定することができます。Web サービスオプションを選択すると、 [!DNL Experience Manager] インスタンス。 フォームデータモデルサービスを選択すると、さらにフィールドが表示され、指定したサービスに対する入力パラメーターと出力パラメーターを使用して、ここでフォームオブジェクトをマップすることができます。
 
-フォームデータモデルでのサービス設定について詳しくは、「[[!DNL Experience Manager Forms] データ統合](data-integration.md)」を参照してください。
+フォームデータモデル（FDM）でのサービス設定について詳しくは、以下を参照してください。 [[!DNL Experience Manager Forms] データ統合](data-integration.md).
 
 **[!UICONTROL プロパティを設定]**&#x200B;のルールタイプを使用すると、条件アクションに基づいて、指定したオブジェクトのプロパティの値を設定できます。プロパティは、次のいずれかに設定できます。
 * visible（ブーリアン）
@@ -571,7 +571,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### ルールエディターでのカスタム関数 {#custom-functions}
 
-のような標準搭載の機能とは別に、 *合計* の下にリストされているもの **関数の出力**&#x200B;また、ルールエディターでカスタム関数を使用することもできます。 ルールエディターでは、スクリプトおよびカスタム関数の JavaScript ECMAScript 2019 構文がサポートされています。 カスタム関数の作成方法については、記事を参照してください [アダプティブFormsのカスタム関数](/help/forms/create-and-use-custom-functions.md).
+のような標準搭載の機能とは別に、 *合計* の下にリストされているもの **関数の出力**&#x200B;また、ルールエディターでカスタム関数を使用することもできます。 ルールエディターでは、スクリプトおよびカスタム関数の JavaScript ECMAScript 2019 構文がサポートされています。 カスタム関数の作成手順について詳しくは、[アダプティブフォームのカスタム関数](/help/forms/create-and-use-custom-functions.md)の記事を参照してください。
 
 <!--
 
@@ -837,7 +837,7 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 ### フォームデータモデルサービスを起動 {#invoke}
 
-Web サービス `GetInterestRates` で、ローン総額、加入年数、申込者の信用度を入力内容から取得し、EMI 総額および年利などのローン計画を返すものとします。Web サービスをデータソースとして使用し、フォームデータモデルを作成します。データモデルオブジェクトと `get` サービスをフォームモデルに追加します。フォームデータモデルの「サービス」タブにサービスが表示されます。その後、データモデルオブジェクトのフィールドを含むアダプティブフォームを作成し、ローン総額、加入年数、申込者の信用度についてユーザーの入力を取得します。計画の詳細を取得するために Web サービスをトリガーするボタンを追加します。適切なフィールドで出力が算出されます。
+ローン額、加入年数、申請者の信用度スコアを入力として、EMI 額と利率を含むローンプランを返す、web サービス `GetInterestRates` を考えます。Web サービスをデータソースとして使用し、フォームデータモデル（FDM）を作成します。 データモデルオブジェクトと `get` サービスをフォームモデルに追加します。フォームデータモデル（FDM）の「サービス」タブにサービスが表示されます。 その後、データモデルオブジェクトのフィールドを含むアダプティブフォームを作成し、ローン総額、加入年数、申込者の信用度についてユーザーの入力を取得します。計画の詳細を取得するために Web サービスをトリガーするボタンを追加します。適切なフィールドで出力が算出されます。
 
 次のルールは、「サービスを起動」アクションを設定してシナリオ例を実行する方法を示しています。
 

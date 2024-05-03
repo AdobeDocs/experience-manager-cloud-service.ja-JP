@@ -1,14 +1,14 @@
 ---
 title: AEM Forms の  [!DNL Microsoft Dynamics]  OData の設定方法を教えてください。
-description: ' [!DNL Microsoft Dynamics]  サービスで定義したエンティティ、属性、サービスに基づいて、フォームデータモデルを作成する方法について説明します。'
+description: で定義したエンティティ、属性、サービスに基づいて、フォームデータモデル（FDM）を作成する方法について説明します [!DNL Microsoft Dynamics] サービス。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
-workflow-type: ht
-source-wordcount: '1002'
-ht-degree: 100%
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+workflow-type: tm+mt
+source-wordcount: '1012'
+ht-degree: 79%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 100%
 
 ![データ統合](assets/data-integeration.png)
 
-[!DNL Microsoft Dynamics] は、顧客関係管理（CRM）および企業資源計画（ERP）用のソフトウェアで、顧客の口座や連絡先、潜在顧客、顧客機会、顧客事例を作成して管理する企業ソリューションを提供します。[[!DNL Experience Manager Forms] データ統合](data-integration.md)は、Forms をオンラインサーバーとオンプレミス[!DNL Microsoft Dynamics]サーバーの両方と統合するための OData クラウドサービス設定を提供します。これにより、[!DNL Microsoft Dynamics] サービスで定義されているエンティティ、属性、サービスに基づいて、フォームデータモデルを作成できるようになります。フォームデータモデルを使用して、[!DNL Microsoft Dynamics] サーバーと連携するアダプティブフォームを作成することにより、ビジネスワークフローを使用できるようになります。次に例を示します。
+[!DNL Microsoft Dynamics] は、顧客関係管理（CRM）および企業資源計画（ERP）用のソフトウェアで、顧客の口座や連絡先、潜在顧客、顧客機会、顧客事例を作成して管理する企業ソリューションを提供します。[[!DNL Experience Manager Forms] データ統合](data-integration.md)は、Forms をオンラインサーバーとオンプレミス[!DNL Microsoft Dynamics]サーバーの両方と統合するための OData クラウドサービス設定を提供します。これにより、で定義されているエンティティ、属性、サービスに基づいて、フォームデータモデル（FDM）を作成できます [!DNL Microsoft Dynamics] サービス。 フォームデータモデル（FDM）を使用して、と連携するアダプティブFormsを作成できます [!DNL Microsoft Dynamics] サーバーでビジネスワークフローを有効にします。 次に例を示します。
 
 * [!DNL Microsoft Dynamics] サーバーに対してデータに関するクエリを実行し、アダプティブフォームに事前入力する
 * アダプティブフォームの送信時に、データを [!DNL Microsoft Dynamics] に書き込む
-* フォームデータモデルで定義されているカスタムエンティティを通じて、データを [!DNL Microsoft Dynamics] に書き込みます（またはその逆の操作）。
+* データをに書き込む [!DNL Microsoft Dynamics] フォームデータモデル（FDM）で定義したカスタムエンティティを使用する（およびその逆の方法）
 
 <!--[!DNL Experience Manager Forms] add-on package also includes reference OData configuration that you can use to quickly integrate [!DNL Microsoft Dynamics] with [!DNL Experience Manager Forms].-->
 
@@ -136,20 +136,20 @@ OData サービスは、そのサービスのルート URL によって識別さ
 
    1. 認証のタイプとして「**[!UICONTROL OAuth 2.0]**」を選択します。
 
-   1. 「**[!UICONTROL クライアント ID]**」（「**アプリケーション ID**」とも呼ばれます）、「**[!UICONTROL クライアントの秘密鍵]**」、「**[!UICONTROL OAuth URL]**」、「**[!UICONTROL 更新トークン URL]**」、「**[!UICONTROL トークン URL にアクセス]**」、「**[!UICONTROL リソース]**」の各フィールドのデフォルト値を、 サービス設定の値と置き換えます。[!DNL Microsoft Dynamics]フォームデータモデルで [!DNL Microsoft Dynamics] を設定するには、「**[!UICONTROL リソース]**」フィールドで Dynamics インスタンスの URL を指定する必要があります。サービスルート URL を使用して、Dynamics インスタンスの URL を取得します。例えば、[https://org.crm.dynamics.com](https://org.crm.dynamics.com/) です。
+   1. 「**[!UICONTROL クライアント ID]**」（「**アプリケーション ID**」とも呼ばれます）、「**[!UICONTROL クライアントの秘密鍵]**」、「**[!UICONTROL OAuth URL]**」、「**[!UICONTROL 更新トークン URL]**」、「**[!UICONTROL トークン URL にアクセス]**」、「**[!UICONTROL リソース]**」の各フィールドのデフォルト値を、 サービス設定の値と置き換えます。[!DNL Microsoft Dynamics]以下で Dynamics インスタンスの URL を指定する必要があります **[!UICONTROL Resource]** 設定するフィールド [!DNL Microsoft Dynamics] フォームデータモデル（FDM）を使用する場合。 サービスルート URL を使用して、Dynamics インスタンスの URL を取得します。例えば、[https://org.crm.dynamics.com](https://org.crm.dynamics.com/) です。
 
    1. [!DNL Microsoft Dynamics] の認証プロセス用の「**[!UICONTROL 認証範囲]**」フィールドで、「**[!UICONTROL openid]**」を指定します。
 
       ![認証設定](assets/dynamics_authentication_settings_new.png)
-フォームデータモデル
+フォームデータモデル（FDM）
 1. 「**[!UICONTROL OAuth に接続]**」をクリックします。[!DNL Microsoft Dynamics] のログインページにリダイレクトされます。
-1. [!DNL Microsoft Dynamics] の資格情報を使用してログインし、クラウドサービス設定を使用して [!DNL Microsoft Dynamics] サービスに接続することに同意します。これは、クラウドサービスとサービスの間でフォームデータモデルを確立する 1 回限りのタスクです。
+1. [!DNL Microsoft Dynamics] の資格情報を使用してログインし、クラウドサービス設定を使用して [!DNL Microsoft Dynamics] サービスに接続することに同意します。これは、クラウドサービスとサービスにフォームデータモデル（FDM）を確立する 1 回限りのタスクです。
 
    クラウドサービス設定のページに切り替わります。このページには、OData の設定が正常に保存されたことを示すメッセージが表示されます。
 
-これで、MS Dynamics OData Cloud Service（OData サービス）がクラウドサービスとして設定され、Dynamics サービスに接続されます。フォームデータモデル フォームデータモデル
+これで、MS Dynamics OData Cloud Service（OData サービス）がクラウドサービスとして設定され、Dynamics サービスに接続されます。フォームデータモデル（FDM）
 
-## フォームデータモデルの作成 {#create-form-data-model}
+## フォームデータモデル（FDM）の作成 {#create-form-data-model}
 
 <!--When you install the [!DNL Experience Manager Forms] package, a form data model, **[!DNL Microsoft Dynamics] FDM**, is deployed on your [!DNL Experience Manager] instance. By default, the Form Data Model uses [!DNL Microsoft Dynamics] service configured in the MS Dynamics OData Cloud Service (OData Service) as its data source.
 
@@ -161,19 +161,19 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-MS Dynamics OData クラウドサービスを設定した後、フォームデータモデルの作成時にこのサービスを使用できます。詳しくは、[フォームデータモデルを作成](create-form-data-models.md)を参照してください。
+MS Dynamics OData クラウドサービスを設定したら、フォームデータモデル（FDM）の作成時にこのサービスを使用できます。 詳しくは、を参照してください [フォームデータモデル（FDM）の作成](create-form-data-models.md).
 
-次に、フォームデータモデルに基づいてアダプティブフォームを作成し、次のような様々なアダプティブフォームの使用例で使用できます。
+次に、アダプティブフォームベースのフォームデータモデル（FDM）を作成し、次のような様々なアダプティブフォームの使用例で使用できます。
 
 * [!DNL Microsoft Dynamics] のエンティティとサービスに対してクエリを実行し、取得した情報を使用してアダプティブフォームに事前入力する
-* アダプティブフォームのルールを使用して、フォームデータモデル内で定義された [!DNL Microsoft Dynamics] サーバーの操作を呼び出す。
+* 起動 [!DNL Microsoft Dynamics] アダプティブフォームルールを使用して、フォームデータモデル（FDM）で定義されたサーバー操作
 * 送信されたフォームデータを [!DNL Microsoft Dynamics] のエンティティに書き込む
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
 
 アダプティブフォームの[フォームデータモデル送信アクションを設定](/help/forms/using-form-data-model.md)すると、Microsoft Dynamics OData にデータを送信できます。
 
-ビジネスワークフローでのフォームデータモデルの作成および使用について詳しくは、[データ統合](data-integration.md)を参照してください。
+ビジネスワークフローでのフォームデータモデル（FDM）の作成および使用について詳しくは、以下を参照してください [データ統合](data-integration.md).
 
 ## 関連記事
 

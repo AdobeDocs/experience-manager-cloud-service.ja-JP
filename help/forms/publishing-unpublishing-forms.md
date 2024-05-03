@@ -5,10 +5,10 @@ content-type: reference
 topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65s
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
-source-wordcount: '1327'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '1328'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 100%
 アダプティブフォームには、自動的に公開されない構成、設定、カスタマイズが含まれる場合があります。アダプティブフォームを公開する前に、以下のリソースを公開またはアクティブ化することをお勧めします。
 
 * 編集可能なアダプティブフォームテンプレート
-* Adobe Sign、Typekit、reCAPTCHA、フォームデータモデルのクラウドサービス設定
+* Adobe Sign、Typekit、reCAPTCHA、フォームデータモデル（FDM）のCloud Service設定
 * その他のクラウドサービスの設定は、ユーザーが管理者権限を保有している場合にのみアクティブ化されます。
 * カスタマイズ。以下のようなものが含まれます。
 
@@ -62,10 +62,10 @@ ht-degree: 100%
 1. [!DNL AEM Forms] サーバーにログインします。
 1. 次のいずれかの手順を使って、アセットを選択して公開します。
 
-   1. ポインタをアセットの上に置き、「**[!UICONTROL 公開]**」![aem6forms_globe](assets/aem6forms_globe.pngasset.png) を選択します。
+   1. ポインタをアセットの上に置き、**[!UICONTROL 公開]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png) を選択します。
    1. 次のいずれかを実行し、「公開」を選択します。
 
-      * カード表示になっている場合は、「**[!UICONTROL 選択を入力]**」![aem6forms_check-circle](assets/aem6forms_check-circle.png) を選択し、アセットをクリックします。アセットが選択されます。
+      * カード表示になっている場合は、**[!UICONTROL 選択を入力]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png) を選択し、アセットを選択します。アセットが選択されます。
       * リスト表示になっている場合は、アセットのチェックボックスをオンにします。アセットが選択されます。
       * 詳細を表示するアセットを選択します。
       * 「プロパティを表示 ![viewproperties](assets/viewproperties.png)」をタップしてアセットのプロパティを表示します。
@@ -100,7 +100,7 @@ ht-degree: 100%
 
 1. [!DNL AEM Forms] サーバーにログインします。
 1. グローバルナビゲーションバーで「**Adobe Experience Manager**」を選択します。
-1. 「![ツール](assets/tools.png)」、「**Forms**」の順に選択します。
+1. 「![ツール](assets/tools.png)」を選択し、「**Forms**」を選択します。
 1. 「**Correspondence Management アセットを公開**」を選択します。
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
@@ -109,7 +109,7 @@ ht-degree: 100%
 
    ![publish-last-run-details](assets/publish-last-run-details.png)
 
-1. 「**公開**」を選択し、確認メッセージで「**OK**」をクリックします。
+1. 「**公開**」を選択し、確認メッセージで「**OK**」を選択します。
 
    バッチ処理が完了すると、前回の実行詳細を表示できます。これには管理者ログインや、バッチの実行が成功したか失敗したかなどの情報が含まれます。
 
@@ -123,20 +123,20 @@ ht-degree: 100%
 
 以下の手順に従って、フォームとドキュメントのアセットを公開および非公開する日時をスケジュールします。
 
-1. アセットを選択し、「**[!UICONTROL プロパティを表示]**」をクリックします。メタデータプロパティページが開きます。
-1. メタデータプロパティページで、「**[!UICONTROL 詳細]**」を選択し、「**[!UICONTROL 編集]**」![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png) をクリックします。
+1. アセットを選択し、「**[!UICONTROL プロパティを表示]**」を選択します。メタデータプロパティページが開きます。
+1. メタデータプロパティページで、「**[!UICONTROL 詳細]**」を選択し、**[!UICONTROL 編集]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png) を選択します。
 1. 「**[!UICONTROL オンタイムに公開]**」フィールドと「**[!UICONTROL オフタイムに公開]**」フィールドで、日時を選択します。\
-   「**[!UICONTROL 完了]**」![aem6forms_check](assets/aem6forms_check.png) を選択します。
+   **[!UICONTROL 完了]** ![aem6forms_check](assets/aem6forms_check.png) を選択します。
 
-## アセットの非公開 {#unpublish-an-asset}
+## アセットを非公開 {#unpublish-an-asset}
 
-1. 公開されるアセットを選択し、「**[!UICONTROL 非公開]**」![unpublish](assets/unpublish.png) をクリックします。
+1. 公開されるアセットを選択し、**[!UICONTROL 非公開]** ![unpublish](assets/unpublish.png) を選択します。
 1. 次のいずれかの手順を使用して、アセットを選択し非公開にします。
 
-   1. アセットにポインタを合わせ、「**[!UICONTROL 非公開]**」![unpublish](assets/unpublish.png) を選択します。
+   1. ポインタをアセットの上に置き、**[!UICONTROL 非公開]** ![unpublish](assets/unpublish.png) を選択します。
    1. 次のいずれかを行い、「非公開」を選択します。
 
-      * カード表示になっている場合は、「**[!UICONTROL 選択を入力]**」![aem6forms_check-circle](assets/aem6forms_check-circle.png) を選択し、アセットを選択します。アセットが選択されます。
+      * カード表示になっている場合は、**[!UICONTROL 選択を入力]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png) を選択し、アセットを選択します。アセットが選択されます。
 
       * リスト表示になっている場合は、マウスをアセットに移動して ![selectassetcheckmark](assets/selectassetcheckmark.png) を選択します。アセットが選択されます。
 
@@ -151,13 +151,13 @@ ht-degree: 100%
 
 ## アセットまたはレターを以前の公開済みバージョンに戻す {#revert-an-asset-or-letter-to-the-previously-published-version}
 
-アセットまたはレターを編集して公開するたびに、アセットまたはレターのバージョンが作成されます。アセットまたはレターを、以前に公開したバージョンに戻すことができます。アセットまたはドキュメントの現在のバージョンに対して誰かが誤った操作をした場合、バージョンを戻す必要が出ることがあります。
+アセットまたはレターを編集して公開するたびに、アセットまたはレターのバージョンが作成されます。アセットまたはレターを、以前に公開したバージョンに戻すことができます。アセットまたはドキュメントの現在のバージョンに対して誰かが誤った操作をした場合、バージョンの巻き戻しが必要になることがあります。
 
 >[!NOTE]
 >
 >公開済みのレターで使用されている依存アセットがシステムから削除されている場合、そのレターを最後に公開した状態に戻さないでください。
 
-1. アセットを選択し、「**[!UICONTROL 以前に公開したバージョンに戻す]**」![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png) を選択します。
+1. アセットを選択し、**[!UICONTROL 以前に公開したバージョンに戻す]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png) を選択します。
 1. アセットが戻される前に、確認ダイアログが表示されます。「**[!UICONTROL 元に戻す]**」を選択します。
 
    アセットまたはレターが、以前に公開したバージョンにロールバックされます。
@@ -166,9 +166,9 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->アセットを削除すると、パブリッシュインスタンスからアセットが削除されます。アセットを削除すると、そのアセットのバージョン履歴も、ベースバージョンを除いて削除されます。
+>アセットを削除すると、パブリッシュインスタンスからアセットが削除されます。アセットを削除すると、そのアセットのバージョン履歴（ベースバージョンを除く）も削除されます。
 
-1. アセットを選択し、「**[!UICONTROL 削除]**」![削除](assets/delete.png) をクリックします。
+1. アセットを選択し、「**[!UICONTROL 削除]**」![削除](assets/delete.png) をタップします。
 
    >[!NOTE]
    >
@@ -178,7 +178,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >選択されているアセットだけが削除され、その依存アセットは削除されません。アセットの参照を確認するには、![参照](assets/references.png) を選択してからアセットを選択します。
+   >選択されているアセットだけが削除され、従属アセットは削除されません。アセットの参照を確認するには、![参照](assets/references.png) を選択してからアセットを選択します。
    >
    >
    >削除しようとしているアセットが別のアセットの子アセットである場合、削除されません。そのようなアセットを削除するには、別のアセットからのそのアセットへの参照を削除してから再度実行します。

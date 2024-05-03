@@ -1,51 +1,43 @@
 ---
-title: アダプティブフォームの JSON スキーマのデザイン?
-description: アダプティブフォームの JSON スキーマを作成し、そのスキーマに基づいてアダプティブフォームを作成して、スキーマ苦情データを生成する方法を説明します。
-feature: Adaptive Forms, Foundation Components
+title: アダプティブフォームのコアコンポーネントの JSON スキーマのデザイン方法
+description: アダプティブフォームのコアコンポーネントの JSON スキーマを作成し、スキーマに基づいてアダプティブフォーム（コアコンポーネント）を作成して、スキーマの苦情データを生成する方法を説明します。
+feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
 source-git-commit: 10389af2bce06f95d4d841371b7111340d40edaa
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 100%
+source-wordcount: '1301'
+ht-degree: 85%
 
 ---
 
-# アダプティブフォームの JSON スキーマをデザイン {#creating-adaptive-forms-using-json-schema}
+# アダプティブフォームの JSON スキーマのデザイン（コアコンポーネント）{#creating-adaptive-forms-using-json-schema}
 
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| コアコンポーネント | [ここをクリックしてください](/help/forms/adaptive-form-core-components-json-schema-form-model.md) |
-| 基盤 | この記事 |
-
-<span class="preview"> [アダプティブフォームの新規作成](/help/forms/creating-adaptive-form-core-components.md)または [AEM Sites ページへのアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)には、最新の拡張可能なデータキャプチャ[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)を使用することをお勧めします。これらのコンポーネントは、アダプティブフォームの作成における大幅な進歩を表し、ユーザーエクスペリエンスの向上を実現します。この記事では、基盤コンポーネントを使用してアダプティブフォームを作成する古い方法について説明します。</span>
-
-| バージョン | 記事リンク |
-| -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=ja) |
-| AEM as a Cloud Service | この記事 |
+| 基盤 | [ここをクリックしてください](/help/forms/adaptive-form-json-schema-form-model.md) |
+| コアコンポーネント | この記事 |
 
 
 ## 前提条件 {#prerequisites}
 
-フォームモデルとして JSON スキーマを使用してアダプティブフォームをオーサリングする場合、JSON スキーマの基本を理解している必要があります。この記事を読む前に、以下のコンテンツを読んでおくことをお勧めします。
+フォームモデルとして JSON スキーマを使用して、コアコンポーネントに基づくアダプティブフォームをオーサリングする場合、JSON スキーマの基本を理解している必要があります。 この記事を読む前に、以下のコンテンツを読んでおくことをお勧めします。
 
-* [アダプティブフォームの作成](creating-adaptive-form.md)
+* [コアコンポーネントに基づくアダプティブフォームの作成](/help/forms/creating-adaptive-form-core-components.md)
 * [JSON スキーマ](https://json-schema.org/)
 
 ## フォームモデルとしての JSON スキーマの使用  {#using-a-json-schema-as-form-model}
 
-Adobe Experience Manager Forms では、既存の JSON スキーマをフォームモデルとして使用したアダプティブフォームの作成をサポートしています。JSON スキーマは、組織内のバックエンドシステムによってデータが作成または使用される構造を表します。使用する JSON スキーマは、[v4 仕様](https://json-schema.org/draft-04/schema)に準拠している必要があります。
+Adobe Experience Manager Formsでは、既存の JSON スキーマをフォームモデルとして使用した、コアコンポーネントに基づくアダプティブフォームの作成がサポートされています。 JSON スキーマは、組織内のバックエンドシステムによってデータが作成または使用される構造を表します。使用する JSON スキーマは、[v4 仕様](https://json-schema.org/draft-04/schema)に準拠している必要があります。
 
 JSON スキーマの使用上の主な特長を以下に示します。
 
-* JSON の構造は、アダプティブフォームのオーサリングモードの「コンテンツファインダー」タブでツリーとして表示されます。JSON 階層からアダプティブフォームに要素をドラッグして追加できます。
+* JSON の構造は、アダプティブフォームのオーサリングモードの「コンテンツファインダー」タブでツリーとして表示されます。JSON 階層からコアコンポーネントに基づくアダプティブフォームに要素をドラッグして追加できます。
 * 関連付けられたスキーマに準拠する JSON を使用して、フォームに事前入力できます。
 * ユーザーが入力したデータは、送信時には関連付けられたスキーマに適合する JSON として送信されます。
 
-JSON スキーマは、単純型要素と複合型要素で構成されています。要素には、その要素にルールを追加する属性が含まれています。これらの要素や属性がアダプティブフォーム上にドラッグされると、自動的に該当するアダプティブフォームコンポーネントにマッピングされます。
+JSON スキーマは、単純型要素と複合型要素で構成されています。要素には、その要素にルールを追加する属性が含まれています。これらの要素や属性がアダプティブフォーム上にドラッグされると、自動的に対応するアダプティブフォームコンポーネントにマッピングされます。
 
 JSON 要素とアダプティブフォームコンポーネントのマッピングは、以下のように行われます。
 
@@ -59,12 +51,6 @@ JSON 要素とアダプティブフォームコンポーネントのマッピン
                 "Date of Birth"
               ],
               "description": "Date of birth in DD MMMM, YYYY",
-              "aem:afProperties": {
-                "displayPictureClause": "date{DD MMMM, YYYY}",
-                "displayPatternType": "date{DD MMMM, YYYY}",
-                "validationPatternType": "date{DD MMMM, YYYY}",
-                "validatePictureClause": "date{DD MMMM, YYYY}",
-                "validatePictureClauseMessage": "Date must be in DD MMMM, YYYY format."
               }
 ```
 
@@ -246,11 +232,7 @@ JSON スキーマの例を示します。
      "type": "boolean"
     },
     "phone": {
-     "type": "number",
-     "aem:afProperties": {
-      "sling:resourceType": "/libs/fd/af/components/guidetelephone",
-      "guideNodeClass": "guideTelephone"
-     }
+     "type": "number"
     },
     "address": {
      "type": "string"
@@ -346,9 +328,10 @@ JSON スキーマの例を示します。
 
 上記の例では、各顧客が出荷先と請求先の両方の住所を持つ顧客レコードを定義します。どちらの住所も構造（都道府県、市区町村、番地など）が同じ場合は、住所が重複しないようにすることをお勧めします。また、今後変更が行われたときに、簡単にフィールドを追加したり削除したりできます。
 
-## JSON スキーマ定義でのフィールドの事前設定 {#pre-configuring-fields-in-json-schema-definition}
+<!--
+## Pre-Configuring fields in JSON Schema Definition {#pre-configuring-fields-in-json-schema-definition}
 
-**aem:afProperties** プロパティを使用して JSON スキーマのフィールドを事前設定し、カスタムのアダプティブフォームコンポーネントにマップできます。次に例を示します。
+You can use the **aem:afProperties** property to preconfigure JSON Schema field to map to a custom Adaptive Form component. An example is listed below:
 
 ```json
 {
@@ -356,16 +339,13 @@ JSON スキーマの例を示します。
         "sizeInMB": {
             "type": "integer",
             "minimum": 16,
-            "maximum": 512,
-            "aem:afProperties" : {
-                 "sling:resourceType" : "/apps/fd/af/components/guideTextBox",
-                 "guideNodeClass" : "guideTextBox"
-             }
+            "maximum": 512
         }
     },
     "required": [ "sizeInMB" ],
     "additionalProperties": false
 }
+
 ```
 
 <!--- ## Configure scripts or expressions for form objects  {#configure-scripts-or-expressions-for-form-objects}
@@ -641,7 +621,7 @@ Here is the sample JSON code for previously mentioned examples.
 
 ## アダプティブフォームコンポーネントの許容値の制限 {#limit-acceptable-values-for-an-adaptive-form-component}
 
-JSON スキーマの要素に以下の制限を追加して、アダプティブフォームコンポーネントで許容される値を制限できます。
+JSON スキーマの要素に以下の制限を追加して、アダプティブフォームのコアコンポーネントで許容される値を制限できます。
 
 <table>
  <tbody>
@@ -776,6 +756,10 @@ JSON スキーマの要素に以下の制限を追加して、アダプティブ
 **JSON スキーマファイルの拡張子は何ですか。**
 
 JSON スキーマファイルの拡張子は、.schema.json にする必要があります。例えば、&lt;filename>.schema.json のように指定します。
+
+**等しい `aem:afProperties` コアコンポーネントに基づくアダプティブFormsで JSON スキーマの一部としてサポートされますか？**
+
+いいえ、 `aem:afProperties` は、コアコンポーネントではサポートされていません。 このプロパティは、基盤コンポーネントでのみサポートされます。
 
 ## 関連トピック {#see-also}
 

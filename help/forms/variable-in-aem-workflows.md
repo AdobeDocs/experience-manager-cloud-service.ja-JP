@@ -4,10 +4,10 @@ description: 変数の作成、変数の値の設定、 [!DNL AEM Forms]  ワー
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: ht
-source-wordcount: '1928'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '1930'
+ht-degree: 99%
 
 ---
 
@@ -48,8 +48,8 @@ ArrayList データタイプを使用して、変数コレクションを作成�
 変数を作成するには：
 
 1. AEM インスタンスで、ツール![ハンマーアイコン](assets/hammer-icon.svg)／ワークフロー／モデルに移動します。
-1. 「**[!UICONTROL 作成]**」を選択し、ワークフローモデルのタイトルとオプションの名前を指定します。モデルを選択し、「**[!UICONTROL 編集]**」をクリックします。
-1. ワークフローモデルのサイドキックにある使用可能な変数アイコンを選択し、「**[!UICONTROL 変数を追加]**」をクリックします。
+1. 「**[!UICONTROL 作成]**」を選択し、ワークフローモデルのタイトルとオプションの名前を指定します。モデルを選択し、「**[!UICONTROL 編集]**」を選択します。
+1. ワークフローモデルのサイドキックにある使用可能な変数アイコンを選択し、「**[!UICONTROL 変数を追加]**」を選択します。
 
    ![変数を追加](assets/variables_add_variable_new.png)
 
@@ -58,7 +58,7 @@ ArrayList データタイプを使用して、変数コレクションを作成�
 
    * プリミティブデータタイプ - 変数のオプションのデフォルト値を指定します。
    * JSON または XML - オプションの JSON または XML スキーマパスを指定します。システムは、このスキーマで使用可能なプロパティを別の変数にマッピングおよび保存しながら、スキーマパスを検証します。
-   * フォームデータモデル - フォームデータモデルのパスを指定します。
+   * フォームデータモデル（FDM） – フォームデータモデルのパスを指定します。
    * ArrayList - コレクションのサブタイプを指定します。
 
 1. 変数の説明（オプション）を指定し、![done_icon](assets/Smock_Checkmark_18_N.svg) を選択して変更を保存します。変数は、左側のペインで使用可能なリストに表示されます。
@@ -198,7 +198,7 @@ ECMA スクリプトで次の API を使用して、データタイプに基づ�
 | プリミティブ（Long、Double、Boolean、Date、String） | workItem.getWorkflowData().getMetaDataMap().get(variableName, type) |
 | ドキュメント | Packages.com.adobe.aemfd.docmanager.Document doc = workItem.getWorkflowData().getMetaDataMap().get(&quot;docVar&quot;, Packages.com.adobe.aemfd.docmanager.Document.class); |
 | XML | Packages.org.w3c.dom.Document xmlObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.org.w3c.dom.Document.class); |
-| フォームデータモデル | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
+| フォームデータモデル（FDM） | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
 
@@ -270,7 +270,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## 変数の編集 {#edit-a-variable}
 
 1. ワークフローの編集ページで、ワークフローモデルのサイドキックにある「変数」アイコンを選択します。左側のペインの「変数」セクションには、既存のすべての変数が表示されます。
-1. 編集する変数名の横にある ![編集](assets/edit.svg)（編集）アイコンを選択します。
+1. 編集する変数名の横にある「![編集](assets/edit.svg)」アイコンを選択します。
 1. 変数情報を編集し、![done_icon](assets/Smock_Checkmark_18_N.svg) を選択して変更を保存します。変数の「**[!UICONTROL 名前]**」フィールドと「**[!UICONTROL タイプ]**」フィールドは編集できません。
 
 ## 変数の削除 {#delete-a-variable}

@@ -3,10 +3,10 @@ title: Experience Manager Sites ページでフォームポータルを作成す
 description: フォームポータルを作成し、標準搭載のコアコンポーネントを AEM Sites ページで使用する方法について説明します。
 feature: Adaptive Forms, Foundation Components
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
-source-wordcount: '1785'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '1786'
+ht-degree: 98%
 
 ---
 
@@ -83,14 +83,14 @@ AEM プロジェクトアーキタイプから [標準搭載のフォームポ�
 
 ## アダプティブフォーム用の Azure ストレージの設定 {#configure-azure-storage-adaptive-forms}
 
-[[!DNL Experience Manager Forms] データ統合](data-integration.md) は、フォームを [!DNL Azure] ストレージサービスと統合するための [!DNL Azure] ストレージ設定を提供します。フォームデータモデルを使用して、[!DNL Azure] サーバーと連携するアダプティブフォームを作成することにより、ビジネスワークフローを使用できるようになります。
+[[!DNL Experience Manager Forms] データ統合](data-integration.md) は、フォームを [!DNL Azure] ストレージサービスと統合するための [!DNL Azure] ストレージ設定を提供します。フォームデータモデル（FDM）を使用して、と連携するアダプティブFormsを作成できます [!DNL Azure] サーバーでビジネスワークフローを有効にします。
 
 ### Azure ストレージ設定の作成 {#create-azure-storage-configuration}
 
 これらの手順を実行する前に、Azure ストレージアカウントと、[!DNL Azure] ストレージアカウントへのアクセスを許可するためのアクセスキーがあることを確認してください。
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL Azure ストレージ]**&#x200B;に移動します。
-1. 設定を作成するフォルダーを選択して、「**[!UICONTROL 作成]**」をクリックします。
+1. 設定を作成するフォルダーを選択して、「**[!UICONTROL 作成]**」を選択します。
 1. 「**[!UICONTROL タイトル]**」フィールドで設定のタイトルを指定します。
 1. 「**[!UICONTROL Azure ストレージアカウント]**」フィールドで [!DNL Azure] ストレージアカウントの名前を指定します。
 

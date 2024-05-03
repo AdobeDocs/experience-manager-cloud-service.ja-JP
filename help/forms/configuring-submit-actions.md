@@ -3,10 +3,10 @@ title: アダプティブフォームの送信アクションの設定方法
 description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。組み込みの送信アクションを使用するか、独自のアクションを作成できます。
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
-workflow-type: ht
-source-wordcount: '3901'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '3914'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 * [REST エンドポイントへの送信](#submit-to-rest-endpoint)
 * [メールを送信](#send-email)
-* [フォームデータモデルを使用して送信](#submit-using-form-data-model)
+* [フォームデータモード（FDM） l を使用して送信](#submit-using-form-data-model)
 * [AEM ワークフローを起動](#invoke-an-aem-workflow)
 * [SharePoint に送信](#submit-to-sharedrive)
 * [OneDrive に送信](#submit-to-onedrive)
@@ -137,11 +137,11 @@ The **Submit to Forms workflow** submit option sends a data xml and file attachm
 
 For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). -->
 
-## フォームデータモデルを使用して送信 {#submit-using-form-data-model}
+## フォームデータモデル（FDM）を使用して送信 {#submit-using-form-data-model}
 
-「**[!UICONTROL フォームデータモデルを使用して送信]**」送信アクションでは、フォームデータモデルの特定のデータモデルオブジェクトで送信したアダプティブフォームデータをデータソースに書き込みます。送信アクションの設定時に、データソースに書き戻す送信済みデータを持つデータモデルオブジェクトを選択できます。
+この **[!UICONTROL フォームデータモデルを使用して送信]** 送信アクションは、フォームデータモデル（FDM）の特定のデータモデルオブジェクトで送信したアダプティブフォームデータをデータソースに書き込みます。 送信アクションの設定時に、データソースに書き戻す送信済みデータを持つデータモデルオブジェクトを選択できます。
 
-さらに、フォームデータモデルとレコードのドキュメント（DoR）を使用して、フォームの添付ファイルをデータソースに送信できます。フォームデータモデルについて詳しくは、[[!DNL AEM Forms]  のデータ統合機能](data-integration.md)を参照してください。
+さらに、フォームデータモデル（FDM）とレコードのドキュメント（DoR）を使用して、フォームの添付ファイルをデータソースに送信できます。 フォームデータモデル（FDM）について詳しくは、を参照してください。 [[!DNL AEM Forms] データ統合](data-integration.md).
 
 <!--
 ## Forms Portal Submit Action {#forms-portal-submit-action}
@@ -243,7 +243,7 @@ AEM Forms を Microsoft® Sharepoint ドキュメントライブラリストレ�
 アダプティブフォームで「[!UICONTROL SharePoint リストに送信]」送信アクションを使用するには、次の手順に従います。
 
 1. [SharePoint リスト設定を作成](#create-sharepoint-list-configuration)：AEM Forms を Microsoft® Sharepoint リストストレージに接続します。
-1. [アダプティブフォームで「フォームデータモデルを使用して送信」を使用](#use-submit-using-fdm)：アダプティブフォームを設定済みの Microsoft® SharePoint に接続します。
+1. [アダプティブフォームでフォームデータモデル（FDM）を使用して送信を使用する](#use-submit-using-fdm)：アダプティブフォームを設定済みのMicrosoft®SharePointに接続します。
 
 #### SharePoint リスト設定を作成 {#create-sharepoint-list-configuration}
 
@@ -267,14 +267,14 @@ AEM Forms を Microsoft® Sharepoint リストに接続するには、次の手�
 1. 「**[!UICONTROL 作成]**」を選択して、Microsoft® SharePointList 用のクラウド設定を作成します。
 
 
-#### アダプティブフォームで「フォームデータモデルを使用して送信」を使用 {#use-submit-using-fdm}
+#### アダプティブフォームでフォームデータモデル（FDM）を使用して送信を使用する {#use-submit-using-fdm}
 
 作成した SharePoint リスト設定をアダプティブフォーム内で使用すると、データや生成済みのレコードのドキュメントを SharePoint リストに保存できます。アダプティブフォームで SharePoint リストストレージ設定を使用するには、次の手順を実行します。
 
-1. [Microsoft® SharePointリスト設定を使用したフォームデータモデルの作成](/help/forms/create-form-data-models.md)
-1. [データを取得して送信するためのフォームデータモデルの設定](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Microsoft® SharePoint List Configuration を使用してフォームデータモデル（FDM）を作成します](/help/forms/create-form-data-models.md)
+1. [データを取得して送信するためのフォームデータモデル（FDM）の設定](/help/forms/work-with-form-data-model.md#configure-services)
 1. [アダプティブフォームを作成](/help/forms/creating-adaptive-form.md)
-1. [フォームデータモデルを使用した送信アクションの設定](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+1. [フォームデータモデル（FDM）を使用して送信アクションを設定する](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
 
 フォームを送信すると、データは指定した Microsoft® Sharepoint リストストレージに保存されます。
 
@@ -463,7 +463,7 @@ AEM Forms を Azure ストレージコンテナに接続するには、次の手
 
 AEM セキュリティおよび堅牢化ガイドラインの一環として、400.jsp、404.jsp、500.jsp などのカスタムエラーページを設定します。これらのハンドラーは、フォーム送信時に 400、404 または 500 エラーが表示される場合に呼び出されます。また、これらのハンドラーは、公開ノードでこれらのエラーコードがトリガーされる場合にも呼び出されます。他の HTTP エラーコード用の JSP ページを作成することもできます。
 
-フォームデータモデルに事前入力したり、`<afData>`、`<afBoundData>` および `</afUnboundData>` タグを含まないデータであるスキーマに対する XML または JSON データの苦情を含むスキーマベースのアダプティブフォームに事前入力すると、アダプティブフォームの境界なしのフィールドのデータは失われます。このスキーマは、XML スキーマ、JSON スキーマまたはフォームデータモデルのいずれかです。境界なしのフィールドは、`bindref` プロパティを持たないアダプティブフォームフィールドです。
+フォームデータモデル（FDM）やスキーマベースのアダプティブフォームに、データに含まれないスキーマに対する XML または JSON データの苦情を事前入力する場合 `<afData>`, `<afBoundData>`、および `</afUnboundData>` タグが追加されると、アダプティブフォームの境界なしのフィールドのデータは失われます。 このスキーマは、XML スキーマ、JSON スキーマまたはフォームデータモデル（FDM）にすることができます。 境界なしのフィールドは、`bindref` プロパティを持たないアダプティブフォームフィールドです。
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

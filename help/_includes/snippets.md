@@ -1,6 +1,6 @@
 ---
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
-workflow-type: ht
+source-git-commit: 8c60b02c1759fc4d0cf66d6c8f1c2edf294fc1ce
+workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 * [Microsoft Power Automate へアダプティブフォームを接続](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
 * [Microsoft OneDrive へアダプティブフォームを接続](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
 * [Microsoft Azure Blob Storage へアダプティブフォームを接続](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
-* [Salesforce へアダプティブフォームを接続](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Salesforce へアダプティブフォームを接続](/help/forms/aem-forms-salesforce-integration.md)
 * [AEM アダプティブフォームで Adobe Sign を使用](/help/forms/working-with-adobe-sign.md)
 * [アダプティブフォームの新しいロケールを追加](/help/forms/supporting-new-language-localization-core-components.md)
 * [データベースへアダプティブフォームデータを送信](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html?lang=ja)
@@ -51,7 +51,7 @@ ht-degree: 100%
 * [AEM ワークフローを起動](/help/forms/configure-submit-action-workflow.md)
 * [Power Automate に送信](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Workfront Fusion に送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Salesforce アプリケーションにアダプティブフォームを接続](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Salesforce アプリケーションにアダプティブフォームを接続](/help/forms/aem-forms-salesforce-integration.md)
 * [Microsoft へのアダプティブフォームの接続](/help/forms/ms-dynamics-odata-configuration.md)
 
 ## 関連トピック {#see-more-forms-eds}

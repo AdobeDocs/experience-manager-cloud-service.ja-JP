@@ -3,10 +3,10 @@ title: AEM Forms Edge Delivery Services の概要
 description: AEM Forms Edge Delivery Services は、ピーク時のパフォーマンスを実現するように作成されており、効率化されたデータ収集とユーザーエンゲージメントの今後を思い描くことができます。
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
-workflow-type: ht
-source-wordcount: '1017'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '1018'
+ht-degree: 98%
 
 ---
 
@@ -73,7 +73,7 @@ AEM オーサリングには、フォームを作成する WYSIWYG インター�
 * 電子署名を行う Adobe Sign との統合。
 * フォーム送信時に Adobe Workfront Fusion シナリオをトリガーする Adobe Workfront Fusion との統合。
 * フォームの事前入力とデータの送信の様々なデータソースとの統合。
-* データ構造と様々なデータソースとのインタラクションを定義するフォームデータモデル。
+* データ構造と様々なデータソースとのインタラクションを定義するためのフォームデータモデル（FDM）です。
 * Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics、その他多くのデータソースへのデータ送信を含む、フォーム送信を処理する複数の送信アクションから選択する機能。
 
 基本的に、[AEM オーサリング](/help/forms/creating-adaptive-form-core-components.md)は、[ドキュメントベースのオーサリング](/help/edge/docs/forms/create-forms.md)の基盤の上に作成されており、複雑なフォームの作成および管理を行うより高度なツールキットを提供します。
