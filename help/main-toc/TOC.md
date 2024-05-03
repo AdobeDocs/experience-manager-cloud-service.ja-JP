@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 695389430e3be4cef107aefad44fd7453cc9d36d
+source-git-commit: 4a534f4335376673c362ef91a877e67a523be560
 workflow-type: tm+mt
 source-wordcount: '4908'
 ht-degree: 99%
@@ -840,7 +840,7 @@ ht-degree: 99%
       + [リダイレクト](/help/edge/docs/redirects.md)
    + フォームの作成 {#build-forms}
       + [概要](/help/edge/docs/forms/overview.md)
-      + はじめに {#getting-started-eds-forms}
+      + はじめに {#getting-started-edge-delivery-services-forms}
          + [はじめに](/help/edge/docs/forms/tutorial.md)
          + [Google Sheet または Microsoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
          + [データの受け入れを開始するための Google Sheets または Microsoft Excel ファイルの設定](/help/edge/docs/forms/submit-forms.md)
@@ -850,13 +850,13 @@ ht-degree: 99%
          + [フォームの外観のカスタマイズ](/help/edge/docs/forms/style-theme-forms.md)
          + [ルールを使用してフォームに動的な動作を追加](/help/edge/docs/forms/rules-forms.md)
          + [フォーム送信後にカスタムのお礼のメッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
-      + 機能 {#advanced-features-eds-forms}
+      + 機能 {#advanced-features-edge-delivery-services-forms}
          + [フォームフラグメント](/help/edge/docs/forms/form-fragments.md)
          + [フォームへの繰り返し可能なセクションの追加](/help/edge/docs/forms/repeatable-forms.md)
          + [翻訳](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [カスタムコンポーネント](/help/edge/docs/forms/custom-components-forms.md)
-         + [フォームのリアルタイムユーザーモニタリング](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
+         + [フォームのリアルタイムユーザーモニタリング](/help/edge/docs/forms/real-user-monitoring-for-forms.md)
       + 参照 {#forms-references}
          + [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
    + Edge Delivery リソース {#resources}
