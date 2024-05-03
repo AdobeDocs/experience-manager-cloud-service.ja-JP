@@ -2,11 +2,13 @@
 title: AEM Formsas a Cloud Service用Edge Delivery Servicesの実際の使用状況の監視
 description: AEM Formsas a Cloud Service機能のEdge Delivery Servicesの実際の使用状況のモニタリングには、フォームに対するユーザーのインタラクションの継続的なトラッキングと分析が含まれます。
 feature: Edge Delivery Services
+hide: true
+hidefromtoc: true
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 71e3a268c5033f0a7f0d054a9f4c1fe599cd6b83
+source-git-commit: 6f78b43e857ca496465c315e8812bb67aff8c627
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 44%
+source-wordcount: '787'
+ht-degree: 45%
 
 ---
 
@@ -30,15 +32,13 @@ AEM Formsas a Cloud ServiceEdge Delivery Servicesのモニタリングダッシ�
 
 * **URL**：URL はユーザーのサイトまたはドメインに固有です。ユーザーは、サイトまたはドメインをフィルタリングして、要件に応じてダッシュボードを表示することもできます。
 
-* **ドメインキー**：ユーザーが手動でドメインキーを生成します。
-
-ドメインキーの詳細については、を参照してください。 [認証](https://www.aem.live/developer/rum#authentication) ドキュメント。
+* **ドメインキー**：ユーザーが手動でドメインキーを生成します。フォームのドメインキーを取得するには、Adobe担当者にお問い合わせください。
 
 ### AEM Forms用Edge Delivery Servicesの監視ダッシュボードのas a Cloud Service
 
 ログイン画面に URL とドメインキーを入力すると、AEM Forms as a Cloud Service用のEdge Delivery Servicesのモニタリングダッシュボードにアクセスできます。
 
-次の図に、AEM Forms as a Cloud Service用Edge Delivery Servicesの RUM ダッシュボードを示します。
+以下の図に、AEM Formsas a Cloud Service用Edge Delivery Servicesのダッシュボードを示します。
 
 ![RUM Forms ダッシュボード](/help/edge/assets/rum-forms-dashboard.png)
 
