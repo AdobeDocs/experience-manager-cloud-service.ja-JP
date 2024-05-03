@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
-description: Adobe Experience Manager as a Cloud Serviceの Image Management System サポート。
+description: Adobe Experience Manager as a Cloud Service の Image Management System のサポート。
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1922'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -44,23 +44,23 @@ IMS 認証は、AEM と Adobe IMS エンドポイントの間で OAuth プロト
 
 Adobe Admin Console にお客様をオンボーディングすることは、AEM 認証に Adobe IMS を使用するための前提条件です。
 
-最初の手順として、お客様はAdobe IMSでプロビジョニングされた組織を持っている必要があります。 Adobe Enterprise のお客様は、[Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) に IMS 組織として表されています。この領域は、アドビのお客様が自社製品に対するユーザーおよびグループの使用権限を管理するために使用するポータルです。
+最初の手順として、Adobe IMS に組織をプロビジョニングする必要があります。Adobe Enterprise のお客様は、[Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) に IMS 組織として表されています。この領域は、アドビのお客様が自社製品に対するユーザーおよびグループの使用権限を管理するために使用するポータルです。
 
-AEMのお客様は、すでにプロビジョニングされた組織が必要です。また、IMS プロビジョニングの一環として、ユーザーの使用権限とアクセスを管理するために、Admin Consoleでカスタマーインスタンスを使用できるようになります。
+AEM のお客様は、既に組織がプロビジョニングされています。また、IMS プロビジョニングの一環として、ユーザーの使用権限とアクセス権を管理するために、Admin Console でカスタマーインスタンスを利用できるようになります。
 
 お客様が IMS 組織として存在するようになれば、お客様のシステムを、次に要約するように設定する必要があります。
 
 ![IMS のオンボーディング](/help/security/assets/ims2.png)
 
-1. 指定されたシステム管理者が Cloud Manager にログインするための招待を受け取ります。 Cloud Manager にログインした後、システム管理者は、AEM プログラムと環境をプロビジョニングするか、管理タスクのためにAdmin Consoleに移動するかを選択できます。
+1. 指定されたシステム管理者が、Cloud Manager へのログインの招待を受け取ります。Cloud Manager にログインした後、システム管理者は AEM のプログラムと環境のプロビジョニングを選択するか、Admin Console に移動して管理タスクを実行できます。
 1. システム管理者がドメインを要求して、それぞれのドメイン（例：acme.com）の所有権を確認します。
 1. システム管理者がユーザーディレクトリを設定します。
-1. システム管理者は、シングルサインオンを設定するためにAdmin Consoleで IDP 設定を行います。
+1. システム管理者は、シングルサインオンを設定するために Admin Console で IDP 設定を行います。
 1. AEM 管理者が、通常どおりローカルグループと権限および特権を管理します。
 
 IDP 設定など、アドビの ID 管理の基本については、[こちら](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html)を参照してください。
 
-エンタープライズ版の管理とAdmin Consoleの使用が対象 [こちら](https://helpx.adobe.com/jp/enterprise/admin-guide.html).
+Enterprise Administration と Admin Console の使用方法については、[こちら](https://helpx.adobe.com/jp/enterprise/admin-guide.html)を参照してください。
 
 ### Admin Console でのユーザーのオンボーディング {#onboarding-users-in-admin-console}
 
@@ -210,10 +210,10 @@ AEM では、IMS から同期されたユーザーグループを既存のロー
 
 Cloud Manager または AEM as a Cloud Service の環境にアクセスするには、Cloud Manager 製品のプロファイルに割り当てられている必要があります。
 
-Cloud Manager の特定の機能の可用性を制御するユーザーの役割について詳しくは、役割の定義を参照してください。
+Cloud Manager で特定の機能の可用性を管理するユーザーの役割について詳しくは、役割の定義を参照してください。
 
 >[!NOTE]
->Cloud Manager には、適切な権限を持つ事前設定済みの役割が用意されています。各役割に関連付けられた、特定の権限、事前設定済みのタスク、または権限を持つ各役割について詳しくは、[役割に基づく権限](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions)を参照してください。
+>Cloud Manager には、適切な権限を持つ事前設定済みの役割が用意されています。各役割に関連付けられた、特定の権限、事前設定済みのタスク、または権限を持つ各役割について詳しくは、[役割に基づく権限](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions)を参照してください。
 
 **ユーザーの追加手順**
 
