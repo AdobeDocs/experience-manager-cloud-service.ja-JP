@@ -1,13 +1,13 @@
 ---
 title: AEMとDynamic Mediaへのクイック公開
 description: アセットビューのクイック公開を使用すると、アセットをAEMと Dynamic Media に同時に、または個別に公開できます。 アセットとフォルダーを選択し、Dynamic MediaまたはAEMに公開することを選択できます。
-source-git-commit: d80d794d739a476a937a8e71d114b1e255103b67
+exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
+source-git-commit: 0891d58e10e8be746c0be5f55d554174567fcd64
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
-
 
 # AEMとDynamic Mediaへのアセットの公開{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
@@ -124,4 +124,5 @@ AEMとDynamic Mediaにアセットを公開する際に、現時点では次の�
 * アセットレベルでDynamic Media URL をコピーまたは貼り付ける機能（アセットがDynamic Mediaに公開されている場合）。
 * AEMへの公開中に参照（アセット、タグなど）を公開する機能。
 * フォルダーレベルでDynamic Media同期ステータスを上書きする機能。
-* フォルダーレベルでDynamic Media公開モードを上書きする機能。
+* フォルダーレベルでDynamic Media公開モードを上書きする機能
+* 公開を管理は、まだサポートされていません。
