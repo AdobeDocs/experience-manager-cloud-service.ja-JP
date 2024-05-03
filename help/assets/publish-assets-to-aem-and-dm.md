@@ -1,9 +1,9 @@
 ---
 title: AEMとDynamic Mediaへのクイック公開
 description: クイック公開は、新しい UI またはアセット表示の機能です。 この機能により、AEMと Dynamic Media に同時または個別にクイック公開できる柔軟性が付与されます。 つまり、「アセットとフォルダー」を選択した後、ユーザーは「Dynamic Mediaに公開」または「AEMに公開」を選択できます。 クイック公開機能には、アセットやフォルダーをDynamic MediaやAEMに公開するための新しい UI が用意されています。
-source-git-commit: a1069ec278143665c1e17ea1a482589763dd153f
+source-git-commit: f3b600fc3d9c519158b6b90bd9a9f881724934de
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # AEMとDynamic Mediaへのアセットの公開{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
-Experience Manager Assetsでは、アセット ビューを使用して、アセットをExperience ManagerおよびDynamic Mediaにすばやく公開できます。 これにより、アセットを管理し、次を使用して公開することができます [管理者表示に切り替えない場合の Assets 表示](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview#persona-based-experiences).
+Experience Manager Assetsでは、アセット ビューを使用して、アセットをExperience ManagerおよびDynamic Mediaにすばやく公開できます。 これにより、アセットを管理し、次を使用して公開することができます [管理者表示に切り替えない場合の Assets 表示](/help/assets/overview.md##persona-based-experiences).
 
 Experience Manager Assets表示では、アセットをAEMまたはDynamic Media（あるいはその両方）に同時に柔軟に公開できます。 アセットのアップロード、参照および検索時に、アセットを公開できます。 アセットを公開するためのこれらのオプションについて、この記事で詳しく説明します。
 
@@ -21,8 +21,8 @@ Experience Manager Assets表示では、アセットをAEMまたはDynamic Media
 
 * Dynamic Mediaの公開オプションを表示するには、管理者ビューを使用して次の設定を行います。
 
-   * [Dynamic Media クラウド設定の作成](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm#configuring-dynamic-media-cloud-services).
-   * フォルダーレベルでDynamic Media公開モードを設定します。 これらの設定は、Dynamic Media クラウド設定を作成する際にも指定できます。 これらの設定をフォルダーレベルで上書きするには、を参照してください。 [Dynamic Mediaのフォルダーレベルでの選択的公開の設定](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing).
+   * [Dynamic Media クラウド設定の作成](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+   * フォルダーレベルでDynamic Media公開モードを設定します。 これらの設定は、Dynamic Media クラウド設定を作成する際にも指定できます。 これらの設定をフォルダーレベルで上書きするには、を参照してください。 [Dynamic Mediaのフォルダーレベルでの選択的公開の設定](/help/assets/dynamic-media/selective-publishing.md).
 
 * AEMの公開オプションを表示するには、ご利用の環境にAEM パブリッシュエンドポイントを設定する必要があります。
 
@@ -99,7 +99,7 @@ Dynamic Media公開モードがに設定されているフォルダーは公開�
 
 アセットまたはフォルダーの公開ステータスを確認するには：
 
-1. クリック **アセット** が含まれる **アセット管理** セクションは左側のウィンドウで使用できます。
+1. クリック **[!UICONTROL アセット]** が含まれる **[!UICONTROL アセット管理]** セクションは左側のウィンドウで使用できます。
 2. 表示スイッチャーを使用してリスト表示に切り替えます。 AEM パブリッシュ、Dynamic Media パブリッシュ、タイトル、サイズ、寸法などのアセットプロパティを表示できます。\
    アセットまたはフォルダーが公開されていない場合、ステータスは **AEM公開** および **Dynamic Media公開** 列の表示方法 **なし**
    ![公開ステータス 1 を確認](/help/assets/assets/check-publish-status1.png)
