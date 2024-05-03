@@ -1,9 +1,9 @@
 ---
 title: AEMとDynamic Mediaへのクイック公開
-description: クイック公開は、新しい UI またはアセット表示の機能です。 この機能により、AEMと Dynamic Media に同時または個別にクイック公開できる柔軟性が付与されます。 つまり、「アセットとフォルダー」を選択した後、ユーザーは「Dynamic Mediaに公開」または「AEMに公開」を選択できます。 クイック公開機能には、アセットやフォルダーをDynamic MediaやAEMに公開するための新しい UI が用意されています。
-source-git-commit: f3b600fc3d9c519158b6b90bd9a9f881724934de
+description: アセットビューのクイック公開を使用すると、アセットをAEMと Dynamic Media に同時に、または個別に公開できます。 アセットとフォルダーを選択し、Dynamic MediaまたはAEMに公開することを選択できます。
+source-git-commit: d80d794d739a476a937a8e71d114b1e255103b67
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1182'
 ht-degree: 0%
 
 ---
