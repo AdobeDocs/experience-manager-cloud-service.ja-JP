@@ -4,10 +4,10 @@ description: Adobe Experience Manager Forms as a Cloud Service 用のローカ�
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: a070e945f23641cfdfd71511366e5b2c16ec22e8
 workflow-type: tm+mt
-source-wordcount: '2726'
-ht-degree: 98%
+source-wordcount: '2762'
+ht-degree: 96%
 
 ---
 
@@ -91,6 +91,11 @@ You can use the [development tools](https://experienceleague.adobe.com/docs/expe
 1. 「**[!UICONTROL AEM as a Cloud Service]**」タブに移動します。
 1. 公開日を降順で並べ替えます。
 1. 最新の Adobe Experience Manager as a Cloud Service SDK、Experience Manager Forms 機能アーカイブ（AEM Forms アドオン）、Forms 参照アアセット、Forms Designer をクリックします。
+
+   >[!NOTE]
+   >
+   > Adobe Experience Manager as a Cloud Service SDK とシームレスに互換性を持たせるには、最新バージョンのExperience Manager Forms機能アーカイブ（AEM Forms アドオン）、Forms 参照アセット、Forms Designer をダウンロードすることをお勧めします。
+
 1. ソフトウェア利用許諾契約を確認し、同意します。「**[!UICONTROL ダウンロード]**」ボタンを選択します。
 
 ## AEM プロジェクト用の開発ツールの設定 {#setup-development-tools-for-AEM-projects}
@@ -136,6 +141,13 @@ Adobe Experience Manager Forms as a Cloud Service 機能アーカイブは、ロ
    >[!NOTE]
    >
    > SDK を再起動するには、「Ctrl + C」コマンドを使用することをお勧めします。Java プロセスの停止など、別の方法を使用して AEM SDK を再起動すると、AEM 開発環境で不整合が生じる場合があります。
+
+<!--**Q**: I've set up a Aem as a Cloud Service environment and added the Forms Add-On for a project. After the .far file addition, the bundles are not in the active state and are in installed state only due to the missing dependencies. How to make the bundles in the active state?
+**A**: To resolve the issue:
+1. Start the AEM and wait for it to start completely (all bundles up)
+1. Stop aem (ctrl + c). Place the forms far in the install folder.
+1. Restart AEM.-->
+
 
 ### ユーザーと権限の設定 {#configure-users-and-permissions}
 

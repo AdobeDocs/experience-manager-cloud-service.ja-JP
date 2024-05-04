@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 619cf91e3d1cc5504d8de0e70eb88e9ae7285af9
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 88%
+source-wordcount: '1560'
+ht-degree: 85%
 
 ---
 
@@ -205,6 +205,16 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 >
 > アダプティブフォームをテンプレートとして保存することもできます。 詳しくは、[アダプティブフォームを使用したテンプレートの作成](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template)を参照してください。
 
+## AEM アダプティブフォームの名前を変更する方法 {#rename-an-AEM-Adaptive-Form}
+
+アダプティブフォームの名前を変更するには、次の手順を実行します。
+
+1. AEM Forms ユーザーインターフェイスでアダプティブフォームを選択します。
+1. 「」をクリック **プロパティ** 上部レールにあります。
+1. 内のフォームの名前を **タイトル** 次の画像に示すように、「」タブをクリックします。
+1. 「**保存して閉じる**」をクリックします。
+
+![AEM アダプティブフォームの名前変更](/help/forms/assets/change-af-name.png)
 
 ## 関連トピック {#see-also}
 

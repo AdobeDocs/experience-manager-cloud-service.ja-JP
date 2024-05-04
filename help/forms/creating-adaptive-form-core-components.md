@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 619cf91e3d1cc5504d8de0e70eb88e9ae7285af9
 workflow-type: tm+mt
-source-wordcount: '2281'
-ht-degree: 86%
+source-wordcount: '2341'
+ht-degree: 84%
 
 ---
 
@@ -190,6 +190,17 @@ ht-degree: 86%
 
 1. 「**[!UICONTROL 保存]**」を選択して、プロパティを保存します。
 
+
+## AEM アダプティブフォームの名前を変更する方法 {#rename-an-AEM-Adaptive-Form}
+
+アダプティブフォームの名前を変更するには、次の手順を実行します。
+
+1. AEM Forms ユーザーインターフェイスでアダプティブフォームを選択します。
+1. 「」をクリック **プロパティ** 上部レールにあります。
+1. 内のフォームの名前を **タイトル** 次の画像に示すように、「」タブをクリックします。
+1. 「**保存して閉じる**」をクリックします。
+
+![AEM アダプティブフォームの名前変更](/help/forms/assets/change-af-name.png)
 
 <!--
 
