@@ -2,9 +2,9 @@
 title: プロビジョニングプロセス - 概要
 description: プロビジョニングプロセス - 概要
 source-git-commit: eec64a5dc211dc72712989bf6dc81de8004e2a85
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '288'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 95%
 
 自動プロビジョニングが完了すると、次のようになります。
 
-* アクセス権が付与されました – Adobeは、AdobeIdentity Management System （IMS）内に組織を作成します
+* アクセス権の付与 - アドビは、Adobe Identity Management System（IMS）内に組織を作成します
 * 指定された管理者は、デフォルトで管理者権限を持つ
 * 管理者は、Admin Console を使用して、追加のチームメンバーにユーザーと役割を追加できる
 * 役割に基づいたユーザーの権限を確認し、Cloud Manager で権限の割り当てを決定する

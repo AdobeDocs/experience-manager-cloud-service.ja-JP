@@ -3,9 +3,9 @@ title: カスタムドメイン名の管理
 description: Cloud Manager を使用して、カスタムドメイン名を表示、更新、置換、削除する方法について説明します。
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 source-git-commit: fcb6dd8ec74446643aaef1870685d26bc138bbd7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '326'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager では、カスタムドメイン名の表示、更新、置換、
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、プログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 
 1. **概要**&#x200B;ページから&#x200B;**環境**&#x200B;画面に移動します。
 
@@ -45,7 +45,7 @@ Cloud Manager では、カスタムドメイン名の表示、更新、置換、
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. に移動します。 **ドメイン設定** からページ **概要** 画面。
+1. **概要**&#x200B;画面から&#x200B;**ドメイン設定**&#x200B;ページに移動します。
 
 1. 削除するカスタムドメイン名の行を見つけます。
 

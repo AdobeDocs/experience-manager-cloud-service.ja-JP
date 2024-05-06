@@ -3,9 +3,9 @@ title: CIF オーサリングの概要
 description: CIF オーサリングの概要
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
 source-git-commit: 6f27c968c347e6b2be8c9bfcf9bb69e531d10ff9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '781'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,13 +23,13 @@ Adobe Experience Manager（AEM）CIF オーサリングについて説明しま�
 
 このドキュメントでは、Content and Commerce 特有のオーサリングに CIF を使用する方法を確認します。読み終えると、次のことができるようになります。
 
-* AEMでページエディターを使用したCIF オーサリングの概念
+* AEM のページエディターを使用した CIF オーサリングの概念を理解する
 * 製品およびカテゴリの選択機能を使用して AEM の製品カタログデータにアクセスする方法
 * 製品コックピットおよび AEM オムニサーチを使用して Content and Commerce のデータにアクセスする方法
 
-## CIF ページエディターでのAEM オーサリング {#cif-authoring}
+## AEM ページエディターでの CIF オーサリング {#cif-authoring}
 
-CIFは、AEMのページエディターを拡張し、コンテキストを離れることなくリアルタイムの商品データにアクセスできる機能を追加しました。
+CIF は、コンテキストを離れずにリアルタイムの製品データにアクセスできる機能を備えた AEM のページエディターを拡張します。
 
 サイドパネルを開き、ドロップダウンリストから「製品」を選択します。
 ![製品タイプを選択](assets/asset-finder-overview.png)
@@ -95,7 +95,7 @@ AEM 作成者は、コマースコンポーネントや AEM のバックオフ�
 
 これで、ジャーニーのこのステップが完了しました。次のことを行う必要があります。
 
-* ページエディターを使用したCIF オーサリングの概念
+* ページエディターを使用した CIF オーサリングの概念を理解する
 * 製品およびカテゴリの選択機能を使用して AEM の製品カタログにアクセスする方法
 * 製品コックピットおよび AEM オムニサーチを使用して Content and Commerce のデータにアクセスする方法
 

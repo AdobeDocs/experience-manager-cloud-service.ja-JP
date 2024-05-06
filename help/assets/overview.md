@@ -1,19 +1,19 @@
 ---
-title: AEMを使用したAdobeのデジタルアセット管理（DAM）
-description: Experience Manager Assets as a Cloud Serviceを使用したAdobeのデジタルアセット管理（DAM）の使用方法と管理方法について説明します。
+title: AEM を使用したアドビのデジタルアセット管理（DAM）
+description: Experience Manager Assets as a Cloud Service を使用したアドビのデジタルアセット管理（DAM）の使用方法と管理方法について説明します。
 contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: 4844d736d3791b376b7ad9cafa005c856c114837
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '920'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
-# Assets as a の概要 [!DNL Cloud Service] AEMでのデジタルアセット管理の場合 {#assets-cloud-service-introduction}
+# AEM でのデジタルアセット管理のための Assets as a [!DNL Cloud Service] の概要 {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -23,13 +23,13 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service] は、クラウドネ�
 
 企業では、マルチデバイス、地域横断、多言語の使用例について、様々なファイル形式とコンテンツ解像度をサポートする必要があります。アセットの処理とストレージの要件に基づいて必要になるリソースと機能によっては、従来のソリューションに過度の負担がかかるおそれがあります。また、アセット処理の技術的な制限事項によって、望ましい結果が得られないこともあれば、ストレージのコストが利益率の低下を招くこともあります。
 
-まず、を理解します [クラウドネイティブな製品のメリット](#solution-benefits) （デジタルアセット管理の場合） [Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) の主な変更点を確認します。これらの変更は Experience Manager Assets にも影響を及ぼします（[Assets の主な変更点](/help/assets/assets-cloud-changes.md)を参照）。
+まず、デジタルアセット管理のための[クラウドネイティブ製品のメリット](#solution-benefits)を理解します。[Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) の主な変更点を確認します。これらの変更は Experience Manager Assets にも影響を及ぼします（[Assets の主な変更点](/help/assets/assets-cloud-changes.md)を参照）。
 
 [新しい Assets の機能の詳細](#whats-new-assets)と[既知の問題](/help/release-notes/maintenance/latest.md)を理解します。[非推奨（廃止予定）または削除された機能](/help/release-notes/deprecated-removed-features.md)リストを参照して、このリリースで削除された機能を確認してください。最後に、この[用語集](/help/overview/terminology.md)を利用して Experience Manager の用語を理解します。
 
 ## ソリューションのメリット {#solution-benefits}
 
-Assets as a の主なメリットは次のとおりです [!DNL Cloud Service] （デジタルアセット管理の場合） 詳しくは、[Adobe Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md) の概要を参照してください。
+デジタルアセット管理のための Assets as a [!DNL Cloud Service] の主なメリットは次のとおりです。詳しくは、[Adobe Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md) の概要を参照してください。
 
 * **アセット処理のための最新のクラウドサービス**：新しいアセットマイクロサービスは、クラウドベースで、拡張性と信頼性に優れ、手間のかからないアセット処理サービスです。
 * **高い拡張性**：あらゆるタイプのデプロイメントに対応できる柔軟な拡張性があります。必要に応じて、実質的に無制限のリソースをオンデマンドで利用できます。従来のシステムと比較して、必要以上に高機能な設計にならないようにすることで設計のコストを削減できます。
@@ -42,9 +42,9 @@ Assets as a の主なメリットは次のとおりです [!DNL Cloud Service] �
 
 アドビでは、デジタルアセットを最大限に活用するための堅牢なデジタルアセット管理（DAM）ソリューションを提供しています。Adobe Experience Manager Assets には、同じ Cloud Services リポジトリを使用する 2 つの異なるエクスペリエンスがあります。
 
-* **管理ビュー**：既存の Assets as a Cloud Service ユーザーインターフェイス。管理者表示を使用すると、統合、ワークフロー、コンテンツ自動化、公開など、高度なデジタルアセット管理機能をすべて利用できます。
+* **管理ビュー**：既存の Assets as a Cloud Service ユーザーインターフェイス。管理ビューは、統合、ワークフロー、コンテンツの自動化、公開など、すべての高度なデジタルアセット管理機能に使用できます。
 
-* **アセットビュー**：アドビの軽量なアセット管理エクスペリエンスで、デジタルアセットの保存、管理、検出および使用が実現します。デジタルアセット管理の基本的な機能を含む、合理化されたユーザーインターフェイス。 アップロード、メタデータの管理、検索、ダウンロードおよび共有に重点を置いた軽量な DAM ユーザー向けに設計されています。
+* **アセットビュー**：アドビの軽量なアセット管理エクスペリエンスで、デジタルアセットの保存、管理、検出および使用が実現します。合理化されたユーザーインターフェイスには、重要なデジタルアセット管理機能が含まれます。アップロード、メタデータの管理、検索、ダウンロードおよび共有に重点を置いた軽量な DAM ユーザー向けに設計されています。
 
 管理ビューへのアクセス権を持つユーザーは、アセットビューにもアクセスできます。アセットビューのシンプルなユーザーインターフェイスにより、デジタルアセットの管理、検出、配布が容易になります。クリエイティブ、マーケティング、事業部門のチームなど、異なる部門をまたいだ幅広いユーザーが、アセットで共同作業を行い、必要に応じて適切な承認済みアセットにアクセスできます。多くの一般的な DAM ユーザーは、機能のサブセットのみを含むアセットビューを好みます。このエクスペリエンスの対象は、クリエイティブ、読み取り専用アセットの消費者、より軽量な DAM ユーザーです。
 

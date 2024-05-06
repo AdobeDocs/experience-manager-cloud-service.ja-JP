@@ -3,9 +3,9 @@ title: 環境の管理
 description: 作成できる環境のタイプと、Cloud Manager プロジェクト用に環境を作成する方法について説明します。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2365'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -41,9 +41,9 @@ ht-degree: 94%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、環境を追加するプログラムをタップまたはクリックします。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、環境を追加するプログラムをタップまたはクリックします。
 
-1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソール、クリック **環境を追加** 日 **環境** 環境を追加するカード。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、**環境**&#x200B;カードの「**環境を追加**」をクリックして環境を追加します。
 
    ![環境カード](assets/no-environments.png)
 
@@ -123,9 +123,9 @@ ht-degree: 94%
 
 ## 環境の詳細 {#viewing-environment}
 
-から **概要** ページから、2 つの方法で環境の詳細にアクセスできます。
+**概要**&#x200B;ページから、2 つの方法で環境の詳細にアクセスできます。
 
-1. から **概要** ページで、 **環境** サイドナビゲーションパネルの「」タブ。
+1. **概要**&#x200B;ページで、サイドナビゲーションパネルの「**環境**」タブをクリックします。
 
    ![「環境」タブ](assets/environments-tab2.png)
 
@@ -306,7 +306,7 @@ Cloud Manager では、Sites プログラムのパブリッシュサービスと
 
 >[!TIP]
 >
->詳しくは、ドキュメントを参照してください。 [カスタムドメイン名の概要。](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+>詳しくは、[カスタムドメイン名の概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)ドキュメントを参照してください。
 
 ## IP 許可リストの管理 {#manage-ip-allow-lists}
 
@@ -316,8 +316,8 @@ IP 許可リストを管理するには、プログラムの&#x200B;**概要**&#
 
 ### IP 許可リストの適用 {#apply-ip-allow-list}
 
-IP許可リスト許可リストに加えるを適用すると、その IP 定義に含まれているすべての IP 範囲が環境内のオーサーサービスまたはパブリッシュサービスに関連付けられます。
+IP 許可リストを適用すると、許可リストの定義に含まれているすべての IP 範囲が、環境のオーサリングサービスまたはパブリッシュサービスに関連付けられます。
 
 >[!TIP]
 >
->詳しくは、ドキュメントを参照してください。 [IP許可リストの概要。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>詳しくは、[IP 許可リストの概要](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)ドキュメントを参照してください。

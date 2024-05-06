@@ -3,9 +3,9 @@ title: 実稼動プログラムの作成
 description: Cloud Manager を使用して、ライブトラフィックをホストする独自の実稼動プログラムを作成する方法について説明します。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: 418aff3f8519bba4bf5e2459175983633eb664b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1031'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 96%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソール、タップまたはクリック **プログラムを追加** 画面の右上隅に表示されます。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、画面の右上隅にある「**プログラムを追加**」をタップまたはクリックします。
 
    ![Cloud Manager ランディングページ](assets/log-in.png)
 
@@ -119,7 +119,7 @@ AEM Sitesは、標準の 99.9％のサービスレベル契約（SLA）を提供
 
 >[!TIP]
 >
->ドキュメントを参照してください [Cloud Manager UI の操作](/help/implementing/cloud-manager/navigation.md) cloud Manager の操作方法と機能について詳しくは、こちらを参照してください。 **マイプログラム** コンソール。
+>Cloud Manager の操作方法と&#x200B;**マイプログラム**&#x200B;コンソールについて詳しくは、[Cloud Manager UI の操作](/help/implementing/cloud-manager/navigation.md)を参照してください。
 
 >[!NOTE]
 >

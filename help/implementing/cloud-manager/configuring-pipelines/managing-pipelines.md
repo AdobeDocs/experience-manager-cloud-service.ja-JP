@@ -4,9 +4,9 @@ description: 既存のパイプラインの管理方法（編集、実行、削�
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 source-git-commit: 71ece3b084c3a262cacc62019396138a88a340b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1018'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -41,13 +41,13 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、プログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 
 1. **プログラムの概要**&#x200B;ページで、「**パイプライン**」タブを選択して、**パイプライン**&#x200B;ウィンドウに切り替えます。
 
 1. ここでは、プログラムのすべてのパイプラインのリストを確認できるほか、**パイプラインカード**&#x200B;の場合と同様にパイプラインの実行を開始および停止することができます。
 
-パイプラインが実行されている場合は、の情報アイコンをタップ **ステータス** 列には、実行の詳細が表示されます。
+パイプラインが実行中の場合、**ステータス**&#x200B;列の情報アイコンをタップすると、実行に関する詳細が表示されます。
 
 ![パイプライン実行の詳細](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
@@ -59,7 +59,7 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 ## アクティビティウィンドウ {#activity}
 
-この **Activity** ウィンドウには、選択したプログラムのすべてのパイプライン実行の完全なリストと、その他の重要なプログラムイベントが表示されます。
+**アクティビティ**&#x200B;ウィンドウには、選択したプログラムのすべてのパイプライン実行とその他の重要なプログラムイベントの完全なリストが表示されます。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
@@ -67,13 +67,13 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 1. ここでは、現在および過去の実行を含む、プログラムのすべてのパイプライン実行のリストを確認できます。
 
-パイプラインが実行されている場合は、の情報アイコンをタップ **ステータス** 列には、実行の詳細が表示されます。
+パイプラインが実行中の場合、**ステータス**&#x200B;列の情報アイコンをタップすると、実行に関する詳細が表示されます。
 
 ![パイプライン実行の詳細](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-パイプライン実行を表す行をタップまたはクリックすると、に移動します [パイプライン実行の詳細。](#view-details)
+パイプライン実行を表す行をタップまたはクリックすると、[パイプライン実行の詳細](#view-details)が表示されます。
 
-また、「。..」ボタンをタップまたはクリックして、パイプライン実行に対して詳細の表示やログのダウンロードなどの追加アクションを実行すると、に移動できます [パイプラインの詳細ページ。](#view-details)
+また、省略記号ボタンをタップまたはクリックして、詳細の表示やログのダウンロードなど、パイプライン実行に関するさらなるアクションを実行することもできます。これにより、[パイプラインの詳細ページ](#view-details)が表示されます。
 
 ![パイプライン実行アクション](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-execution-actions.png)
 

@@ -3,9 +3,9 @@ title: カスタムドメイン名の追加
 description: Cloud Manager を使用してカスタムドメイン名を追加する方法を説明します。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: fcb6dd8ec74446643aaef1870685d26bc138bbd7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '676'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,9 +29,9 @@ Cloud Manager では、次の 2 つの場所からカスタムドメイン名を
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、プログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 
-1. に移動し、を選択します **ドメイン設定** タブをクリックします。
+1. 左側のナビゲーションパネルで「**ドメイン設定**」タブに移動し、選択します。
 
    ![ドメイン設定ウィンドウ](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 

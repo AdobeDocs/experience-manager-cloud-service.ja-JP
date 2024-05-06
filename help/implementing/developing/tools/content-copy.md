@@ -3,9 +3,9 @@ title: コンテンツコピーツール
 description: コンテンツコピーツールを使用すると、可変コンテンツをオンデマンドで AEM as a Cloud Service の実稼動環境から下位環境にテスト目的でコピーできます。
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1286'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 98%
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. サイドナビゲーションパネルを使用して、に移動します **コンテンツセット** tab キーを押して **概要** ページ。
+1. サイドナビゲーションパネルを使用して、**概要**&#x200B;ページから「**コンテンツセット**」タブに移動します。
 
 1. 画面の右上で、「**コンテンツセットを追加**」をクリックします。
 

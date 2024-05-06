@@ -3,9 +3,9 @@ title: IP 許可リストの管理
 description: Cloud Manager で IP 許可リストのステータスを表示、編集、削除および確認する方法について説明します。
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
 source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '789'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Cloud Manager で IP 許可リストのステータスを表示、編集、削�
 **ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持つユーザーは、次の手順に従って IP 許可リストを表示および更新できます。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
-1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、プログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 1. **概要**&#x200B;ページから&#x200B;**環境**&#x200B;画面に移動します。
 1. **環境**&#x200B;画面で **IP 許可リスト**&#x200B;ページに移動します。
 1. 表示または更新する IP 許可リストの行を特定します。

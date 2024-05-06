@@ -3,9 +3,9 @@ title: CDN パフォーマンスダッシュボード
 description: Cloud Manager がコンテンツ配信ネットワーク（CDN）のパフォーマンスを評価する方法およびダッシュボードから学習できる内容について説明します。
 exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '383'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ CDN ダッシュボードは、すべてのプログラムの概要ページで�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、CDN ダッシュボードを表示するプログラムをタップまたはクリックします。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、表示する CDN ダッシュボードのプログラムをタップまたはクリックします。
 
    ![マイプログラムページ](assets/my-programs.png)
 

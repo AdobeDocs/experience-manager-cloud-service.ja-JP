@@ -3,16 +3,16 @@ title: プログラムの編集
 description: 実稼動およびサンドボックスプログラムを編集し、作成後にオプションを調整する方法について説明します。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: 401f853b197e67a6c54e4bf168081dc8165bd505
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '439'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # プログラムの編集 {#editing-programs}
 
-プログラムを管理および編集するには、次から開始します： [**マイプログラム** コンソール。](/help/implementing/cloud-manager/navigation.md) この **マイプログラム** このページでは、アクセス権のあるすべてのプログラムの概要が提供されます。 個々のプログラムを選択すると、**プログラムの概要**&#x200B;ページで、プログラムの詳細が一目でわかります。
+プログラムを管理および編集するには、[**マイプログラム**&#x200B;コンソールから開始します。](/help/implementing/cloud-manager/navigation.md)**マイプログラム**&#x200B;ページには、アクセス権を持つすべてのプログラムの概要が表示されます。個々のプログラムを選択すると、**プログラムの概要**&#x200B;ページで、プログラムの詳細が一目でわかります。
 
 必要な権限を持つユーザーは、**プログラムの概要**&#x200B;から、組織内で作成された[実稼動プログラム](creating-production-programs.md)および組織内で作成された[サンドボックスプログラムを編集できます。](creating-sandbox-programs.md)プログラムの編集で、次のことが可能です。
 

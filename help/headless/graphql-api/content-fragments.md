@@ -4,9 +4,9 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のコンテン
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: d0814d3feb9ad14ddd3372851a7b2df4b0c81125
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5365'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1125,7 +1125,7 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
 また、次の事項にも注意する必要があります。
 
-* GraphQL クエリに 2 つ（または複数）のモデルに同じ名前のフィールドが含まれ、次の条件を満たす場合、フィールド競合エラーが返されます。
+* GraphQL クエリに 2 つ（またはそれ以上）のモデルで同じ名前のフィールドが含まれており、次の条件が満たされる場合、フィールド競合エラーが返されます。
 
    * したがって
 

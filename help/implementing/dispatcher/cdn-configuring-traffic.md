@@ -4,9 +4,9 @@ description: 設定ファイルでルールとフィルターを宣言し、Clou
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 source-git-commit: f9eeafbf128b4581c983e19bcd5ad2294a5e3a9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1199'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -16,14 +16,14 @@ AEM as a Cloud Service では、受信リクエストまたは送信応答の特
 
 * [リクエスト変換](#request-transformations) - ヘッダー、パスおよびパラメーターなど、受信リクエストの側面を変更します。
 * [応答変換](#response-transformations) - クライアント（web ブラウザーなど）に戻る途中のヘッダーを変更します。
-* [クライアントサイドのリダイレクト](#client-side-redirectors) - ブラウザーリダイレクトをトリガーします。 この機能はまだ一般公開されていませんが、早期導入ユーザーは利用できます。
+* [クライアントサイドのリダイレクト](#client-side-redirectors) - ブラウザーのリダイレクトをトリガーします。この機能はまだ一般提供（GA）されていませんが、早期導入者が使用できます。
 * [接触チャネルセレクター](#origin-selectors) - 別の接触チャネルバックエンドにプロキシ処理します。
 
 また、CDN で許可または拒否するトラフィックを制御するトラフィックフィルタールール（WAF を含む）も CDN で設定できます。この機能は既にリリースされています。詳しくは、[WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)ページを参照してください。
 
 さらに、CDN でその接触チャネルに接続できない場合は、自己ホスト型のカスタムエラーページ（その後レンダリングされる）を参照するルールを書き込むことができます。詳しくは、[CDN エラーページの設定](/help/implementing/dispatcher/cdn-error-pages.md)の記事を参照してください。
 
-すべてのルールは、ソース管理の設定ファイルで宣言され、[Cloud Manager の設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)を使用してデプロイされます。トラフィックフィルタールールを含む設定ファイルの累積サイズは、100 KB を超えることはできないことに注意してください。
+すべてのルールは、ソース管理の設定ファイルで宣言され、[Cloud Manager の設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)を使用してデプロイされます。トラフィックフィルタールールを含む設定ファイルの累積サイズが 100KB を超えることはできません。
 
 ## 評価の順序 {#order-of-evaluation}
 
@@ -35,16 +35,16 @@ AEM as a Cloud Service では、受信リクエストまたは送信応答の特
 
 CDN でトラフィックを設定する前に、次のことを行う必要があります。
 
-* Git プロジェクトの最上位フォルダーに、次のフォルダーとファイル構造を作成します。
+* Git プロジェクトの最上位フォルダーに次のフォルダーとファイル構造を作成します。
 
 ```
 config/
      cdn.yaml
 ```
 
-* この `cdn.yaml` 設定ファイルには、メタデータと、以下の例で説明するルールの両方が含まれている必要があります。 この `kind` パラメーターをに設定する必要があります `CDN` およびのバージョンは、現在のスキーマバージョンに設定する必要があります `1`.
+* `cdn.yaml` 設定ファイルには、メタデータと以下の例で説明するルールの両方を含める必要があります。`kind` パラメーターは `CDN` に設定し、バージョンはスキーマバージョン（現在 `1`）に設定する必要があります。
 
-* Cloud Manager でターゲット設定パイプラインを作成します。 参照： [実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) および [実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+* Cloud Manager でターゲットデプロイメント設定パイプラインを作成します。[実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)および[実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)を参照してください。
 
 **備考**
 
@@ -316,7 +316,7 @@ data:
 
 絶対位置と固定値を持つ相対位置の両方が使用されます。
 
-トラフィックフィルタールールを含む設定ファイルの累積サイズは、100 KB を超えることはできないことに注意してください。
+トラフィックフィルタールールを含む設定ファイルの累積サイズが 100KB を超えることはできません。
 
 設定例：
 
