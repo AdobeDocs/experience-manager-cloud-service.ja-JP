@@ -1068,7 +1068,7 @@ ht-degree: 99%
       + ユニバーサルエディター {#universal-editor}
          + [ユニバーサルエディターの概要](/help/implementing/universal-editor/introduction.md)
          + [ユニバーサルエディターのアーキテクチャ](/help/implementing/universal-editor/architecture.md)
-         + [SecurBank サンプル アプリ](/help/implementing/universal-editor/securbank.md)
+         + [SecurBank サンプルアプリ](/help/implementing/universal-editor/securbank.md)
          + [AEM のユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md)
          + [ユニバーサルエディター開発者の概要](/help/implementing/universal-editor/developer-overview.md)
          + [属性と項目タイプ](/help/implementing/universal-editor/attributes-types.md)

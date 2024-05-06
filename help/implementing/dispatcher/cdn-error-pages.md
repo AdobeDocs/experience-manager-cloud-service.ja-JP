@@ -6,7 +6,7 @@ exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 source-git-commit: 69ffcccae150a5e49c6344973890733f3e5b74ae
 workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -18,16 +18,16 @@ ht-degree: 75%
 
 デフォルトのエラーページを上書きする前に、次の作業を行う必要があります。
 
-* Git プロジェクトの最上位フォルダーに、次のフォルダーとファイル構造を作成します。
+* Git プロジェクトの最上位フォルダーに次のフォルダーとファイル構造を作成します。
 
 ```
 config/
      cdn.yaml
 ```
 
-* この `cdn.yaml` 設定ファイルには、メタデータと、以下の例で説明するルールの両方が含まれている必要があります。 この `kind` パラメーターをに設定する必要があります `CDN` およびのバージョンは、現在のスキーマバージョンに設定する必要があります `1`.
+* `cdn.yaml` 設定ファイルには、メタデータと以下の例で説明するルールの両方を含める必要があります。`kind` パラメーターは `CDN` に設定し、バージョンはスキーマバージョン（現在 `1`）に設定する必要があります。
 
-* Cloud Manager でターゲット設定パイプラインを作成します。 参照： [実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) および [実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+* Cloud Manager でターゲットデプロイメント設定パイプラインを作成します。[実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)および[実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)を参照してください。
 
 **備考**
 
@@ -92,4 +92,4 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 
 サポートされているコードは、403、404、406、500 および 503 です。
 
-このようにして、特定のエラーコードの合成応答をテストするために、CDN のエラーハンドラーを直接トリガーします。
+この方法で、CDN のエラーハンドラーを直接トリガーして、特定のエラーコードに対する合成応答をテストします。
