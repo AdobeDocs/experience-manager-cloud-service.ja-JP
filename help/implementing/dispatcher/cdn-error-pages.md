@@ -3,7 +3,7 @@ title: CDN エラーページの設定
 description: Amazon S3 や Azure Blob Storage などの自己ホスト型ストレージで静的ファイルをホストし、Cloud Manager 設定パイプラインを使用してデプロイされた設定ファイルで静的ファイルを参照することで、デフォルトのエラーページを上書きする方法について説明します。
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
-source-git-commit: 69ffcccae150a5e49c6344973890733f3e5b74ae
+source-git-commit: 395e2faa6cd2a3430ce00208a4d904fe8e0c2333
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 100%
@@ -46,7 +46,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_errorPages:
+  errorPages:
     spa:
       title: the error page
       icoUrl: https://www.example.com/error.ico
