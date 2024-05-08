@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
+source-git-commit: bf7afba2376b12b8d4f513db07c178209447e343
 workflow-type: tm+mt
-source-wordcount: '4915'
+source-wordcount: '4917'
 ht-degree: 99%
 
 ---
@@ -204,6 +204,7 @@ ht-degree: 99%
       + [AEM 製品プロファイルの割り当て](/help/journey-onboarding/assign-profiles-aem.md)
       + [開発者およびデプロイメントマネージャーのタスク](/help/journey-onboarding/developers.md)
       + [AEM ユーザータスク](/help/journey-onboarding/aem-users.md)
+      + [公開チェックリスト](/help/journey-onboarding/go-live-checklist.md)
    + AEM 参照デモのアドオンジャーニー {#demo-add-on}
       + [概要](/help/journey-sites/demos-add-on/overview.md)
       + [インストール](/help/journey-sites/demos-add-on/installation.md)
