@@ -3,9 +3,9 @@ title: Cloud Manager へのアクセス
 description: プロジェクトリソースを設定するための Cloud Manager へのアクセス方法について説明します。
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: 5c9dbaa25f0142afdae8b09dc18d1e1aaaf4c1fb
-workflow-type: ht
-source-wordcount: '1044'
+source-git-commit: 0e0337f6e14aa2f5b616ebc0a4b3c95089637369
+workflow-type: tm+mt
+source-wordcount: '1040'
 ht-degree: 100%
 
 ---
@@ -49,7 +49,7 @@ Cloud Manager は、AEM as a Cloud Service に不可欠なコンポーネント�
 
 ## Cloud Manager に移動 {#navigate-cloud-manager}
 
-**ビジネスオーナー**&#x200B;の役割を持つユーザーには、開始するためのリンクが記載されたウェルカムメールが届きます。このメールを使用して Cloud Manager に移動するには、以下の手順に従います。
+**ビジネスオーナー**&#x200B;の役割を持つユーザーには、開始するためのリンクが記載されたウェルカムメールが届きます。このウェルカムメールを使用して Cloud Manager に移動するには、以下の手順に従います。
 
 1. ウェルカムメールで、「**入門**」をクリックします（下図を参照）。
    ![メールの例](/help/journey-onboarding/assets/get-started-email.png)
@@ -109,8 +109,6 @@ Cloud Manager に正常にアクセスすると、表示される内容は、以
 Cloud Manager に正常にログインしたら、**ビジネスオーナー**&#x200B;製品プロファイルが割り当てられていることを確認します。
 
 1. ウィンドウの右上からプロファイルを選択します。
-
-   ![ユーザープロファイル](/help/journey-onboarding/assets/setup-resources5.png)
 
 1. ユーザーに割り当てられているロールを表示するには、「**ユーザーの役割**」を選択します。
 
