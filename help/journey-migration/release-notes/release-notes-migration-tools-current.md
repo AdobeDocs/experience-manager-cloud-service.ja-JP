@@ -1,25 +1,33 @@
 ---
-title: AEM as a Cloud Service リリース 2024.01.0 の移行ツールのリリースノート
-description: AEM as a Cloud Service リリース 2024.01.0 の移行ツールのリリースノート
+title: AEM as a Cloud Service リリース 2024.05.0 の移行ツールのリリースノート
+description: AEM as a Cloud Service リリース 2024.05.0 の移行ツールのリリースノート
 feature: Release Information
 exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
-source-git-commit: b40f2b9c40c5b198dd708d3c703329356d7d0540
-workflow-type: ht
-source-wordcount: '98'
-ht-degree: 100%
+source-git-commit: 5275c759d38563f655d4861b191aaf583d001268
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 42%
 
 ---
 
-# AEM as a Cloud Service リリース 2024.01.0 の移行ツールのリリースノート {#release-notes}
+# AEM as a Cloud Service リリース 2024.05.0 の移行ツールのリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Service 2024.01.0 の移行ツールのリリースノートの概要を説明しています。
+このページでは、AEM as a Cloud Service 2024.05.0 の移行ツールのリリースノートの概要を説明しています。
 
-## コンテンツ転送ツール {#ctt-release}
+## ベストプラクティスアナライザー {#bpa-release}
 
-### リリース日 {#release-date-ctt}
+### リリース日 {#release-date-bpa}
 
-コンテンツ転送ツール v3.0.10 のリリース日は 2024年1月15日（PT）です。
+ベストプラクティスアナライザー v2.1.48 のリリース日は 2024 年 5 月 9 日です。
 
-### 新機能 {#what-is-new-ctt}
+### 新機能 {#what-is-new-bpa}
 
-* コンテンツ転送ツールでコレクションの移行がサポートされるようになりました。ユーザーはパスピッカーを使用してコレクションフォルダーを選択し、抽出を実行できます。
+* ベストプラクティスアナライザー（BPA）で、BPA で生成されたレポートの Cloud Acceleration Manager （CAM）への直接アップロードがサポートされるようになりました。 ユーザーは、レポートを手動でダウンロードして CAM にアップロードする必要がなくなりました。 詳細情報 [こちら](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer)
+
+## Cloud Acceleration Manager {#cam-release}
+
+### 新機能 {#what-is-new-cam}
+
+* Cloud Acceleration Manager （CAM）で、BPA で生成されたレポートの CAM への直接の自動アップロードがサポートされるようになりました。 詳細情報 [こちら](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase#best-practices-analysis)
+
+* Cloud Acceleration Manager では、ノード数、データストアのサイズなどの要因を考慮して、取り込みに要する時間の見積もりを提供するようになりました。 詳細情報 [こちら](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content)
