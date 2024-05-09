@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 52a6cb359bfe0d76bdceb3f517e92d78994872c8
-workflow-type: ht
-source-wordcount: '732'
-ht-degree: 100%
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 99%
 
 ---
 
@@ -94,6 +94,7 @@ Adobe Experience Manager Assets では、CSV ファイルを使用して、ア�
 * [メタデータを管理](manage-metadata.md)
 * [検索ファセット](search-facets.md)
 * [コレクションを管理](manage-collections.md)
+* [AEMとDynamic Mediaへのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

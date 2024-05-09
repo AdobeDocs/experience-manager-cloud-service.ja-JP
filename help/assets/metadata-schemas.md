@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
-source-wordcount: '2627'
-ht-degree: 100%
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+workflow-type: tm+mt
+source-wordcount: '2634'
+ht-degree: 99%
 
 ---
 
@@ -223,7 +223,7 @@ Experience Manager では、カスタムのスキーマフォームのみを削�
 アセットごとのメタデータの継承は、階層の最上位フォルダーに適用されているスキーマに基づきます。サブフォルダーには同じスキーマが適用または継承されます。異なるスキーマがサブフォルダーレベルで適用されると、継承が停止します。
 
 1. [!DNL Experience Manager] インターフェイスで、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL メタデータスキーマ]**&#x200B;に移動します。**[!UICONTROL メタデータスキーマフォーム]**&#x200B;ページが表示されます。
-1. フォーム（デフォルトのメタデータフォームなど）の前にあるチェックボックスをオンにし、「**[!UICONTROL コピー]**」をクリックして、カスタムフォームとして保存します。フォームのカスタム名を `my_default` などに指定します。カスタムフォームを作成することもできます。
+1. フォーム（デフォルトのメタデータフォームなど）の前にあるチェックボックスをオンにし、「**[!UICONTROL コピー]**」をクリックして、カスタムフォームとして保存します。そのフォームに `my_default` などの名前を付けます。または、カスタムフォームを作成できます。
 
 1. **[!UICONTROL メタデータスキーマフォーム]**&#x200B;ページで、`my_default` フォームを選択し、「**[!UICONTROL 編集]**」をクリックします。
 1. **[!UICONTROL メタデータスキーマエディター]**&#x200B;ページで、スキーマフォームにテキストフィールドを追加します。例えば、「**[!UICONTROL カテゴリ]**」というラベルのフィールドを追加します。
@@ -272,3 +272,4 @@ Experience Manager では、カスタムのスキーマフォームのみを削�
 * [検索ファセット](search-facets.md)
 * [コレクションを管理](manage-collections.md)
 * [メタデータの一括読み込み](metadata-import-export.md)
+* [AEMとDynamic Mediaへのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

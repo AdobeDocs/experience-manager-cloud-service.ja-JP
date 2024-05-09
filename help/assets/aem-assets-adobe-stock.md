@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2490'
-ht-degree: 96%
+source-wordcount: '2460'
+ht-degree: 99%
 
 ---
 
@@ -124,7 +124,7 @@ IMS 設定には、次の 2 つの手順が含まれます。
 
 1. Adobe IMS 設定ページで、「**[!UICONTROL 作成]**」をクリックします。「**[!UICONTROL Adobe IMS テクニカルアカウント設定]**」ページが表示されます。
 
-1. Adobe Analytics の **[!UICONTROL 証明書]** タブ、選択 **[!UICONTROL Adobe Stock]** から **[!UICONTROL クラウドソリューション]** 」ドロップダウンリストから選択できます。
+1. 「**[!UICONTROL 証明書]**」タブで、**[!UICONTROL クラウドソリューション]**&#x200B;ドロップダウンリストから「**[!UICONTROL Adobe Stock]**」を選択します。
 
 1. 証明書を作成するか、既存の証明書を設定に再利用できます。
 
@@ -151,7 +151,7 @@ Adobe 開発者コンソールで、プロジェクトと API を組織レベル
 1. システム管理者権限で Adobe 開発者コンソールにログインします。デフォルトの URL は [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui) です。
 
 
-   正しい IMS 組織（Stock 使用権限）がドロップダウン（組織）リストから選択されていることを確認します。
+   ドロップダウン（組織）リストで正しい IMS 組織（Stock 使用権限）が選択されていることを確認します。
 
 1. 「**[!UICONTROL 新規プロジェクトを作成]**」をクリックします。システムで生成された名前を持つ空のプロジェクトが組織に対して作成されます。
 
@@ -171,7 +171,7 @@ Adobe 開発者コンソールで、プロジェクトと API を組織レベル
 
 1. デフォルトの **[!UICONTROL Adobe Stock]** 製品プロファイルを選択し、「**[!UICONTROL 設定済み API を保存]**」をクリックします。
 
-1. API が設定されると、API の概要ページにリダイレクトされます。左側のナビゲーションから、 **[!UICONTROL 資格情報]**&#x200B;をクリックし、 **[!UICONTROL サービスアカウント (JWT)]** オプション。 ここで資格情報を表示し、JWT トークンの生成、資格情報の詳細のコピー、クライアントの秘密鍵の取得などのアクションを実行できます。
+1. API が設定されると、API の概要ページにリダイレクトされます。左側のナビゲーションで「**[!UICONTROL 資格情報]**」の下の「**[!UICONTROL サービスアカウント（JWT）]**」オプションをクリックします。ここで資格情報を表示し、JWT トークンの生成、資格情報の詳細のコピー、クライアントの秘密鍵の取得などのアクションを実行できます。
 
 1. 「**[!UICONTROL クライアント資格情報]**」タブから、**[!UICONTROL クライアント ID]** をコピーします。
 
@@ -220,7 +220,7 @@ IMS アカウントを設定するには：
 
    [IMS アカウントの設定](#create-ims-account-configuration)時に作成した IMS 設定を選択します。
 
-   ドロップダウンリストからロケールを選択します。
+   ドロップダウンリストからご自身のロケールを選択します。
 
    ![aem-stock-cloud-config](assets/aem-stock-cloud-config.png)
 
@@ -271,7 +271,7 @@ IMS アカウントを設定するには：
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／ **[!UICONTROL Adobe Stock]** に移動します。[!DNL Adobe Stock] クラウド設定を選択し、「**[!UICONTROL プロパティ]**」をクリックします。
 
-1. 作成したユーザーグループを [!DNL Adobe Stock] 設定。 「**[!UICONTROL 保存して閉じる]**」をクリックします。
+1. 作成したユーザーグループを [!DNL Adobe Stock] 設定に追加します。「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
    ![assign-user](assets/aem-stock-adduser.png)
 
@@ -308,7 +308,7 @@ IMS アカウントを設定するには：
 
 1. 右上隅のユーザーアイコンをクリックし、「**[!UICONTROL 環境設定]**」をクリックします。**[!UICONTROL ユーザー管理]**&#x200B;ウィンドウが開きます。
 
-1. 目的のを選択します。 **[!UICONTROL 在庫設定]** ドロップダウンリストから、 **[!UICONTROL 確定]** をクリックして設定をアクティベートします。
+1. ドロップダウンリストから目的の&#x200B;**[!UICONTROL 在庫設定]**&#x200B;を選択し、「**[!UICONTROL 承諾]**」をクリックして設定をアクティベートします。
 
    ![user-preferences](assets/aem-stock-preferences.png)
 
@@ -379,7 +379,7 @@ IMS アカウントを設定するには：
 
 * **ユーザーのライセンスを制限する機能が正しく機能しない**：Stock 設定に対する `read` 権限を持つすべてのユーザーは、[!DNL Adobe Stock] アセットを検索してライセンスを取得できます。
 
-* **管理者以外のユーザーは、[!DNL Adobe Stock] クラウド設定を手動でアクティベートする必要がある**：**[!UICONTROL ユーザー環境設定]**&#x200B;ウィンドウで、**[!UICONTROL Stock 設定]**&#x200B;に [!DNL Adobe Stock] クラウド設定は有効になっていますが、管理者以外のユーザーには機能しません。ユーザーは、 **[!UICONTROL 確定]** ボタンをクリックして、Stock 設定を有効にします。 この手順がない場合、システムは **[!UICONTROL Assets]** にアクセスする際にエラーメッセージを反映します。
+* **管理者以外のユーザーは、[!DNL Adobe Stock] クラウド設定を手動でアクティベートする必要がある**：**[!UICONTROL ユーザー環境設定]**&#x200B;ウィンドウで、**[!UICONTROL Stock 設定]**&#x200B;に [!DNL Adobe Stock] クラウド設定は有効になっていますが、管理者以外のユーザーには機能しません。ユーザーは、「**[!UICONTROL 同意する]**」ボタンをクリックして、Stock 設定をアクティベートする必要があります。この手順がない場合、システムは **[!UICONTROL Assets]** にアクセスする際にエラーメッセージを反映します。
 
 * **編集画像の警告が表示されない**：画像のライセンスを取得する場合、ユーザーは画像が「編集のみ使用」かどうか確認できません。管理者は誤用を防ぐために、Admin Console から編集用アセットへのアクセスをオフにできます。
 
@@ -471,6 +471,7 @@ Users can see the properties for both, licensed and unlicensed assets.
 * [検索ファセット](search-facets.md)
 * [コレクションを管理](manage-collections.md)
 * [メタデータの一括読み込み](metadata-import-export.md)
+* [AEMとDynamic Mediaへのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

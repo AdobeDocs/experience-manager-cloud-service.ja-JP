@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '3869'
+source-wordcount: '3842'
 ht-degree: 99%
 
 ---
@@ -232,8 +232,8 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
    ![アセットプロパティのリモート参照ページ](assets/connected-assets-remote-reference.png)
 
-1. [!DNL Sites] ページの参照は、各ローカル [!DNL Sites] の参照の合計数を表示します。すべての参照を見つけて、参照の総数を表示するのは時間がかかる場合があります。
-1. 参照のリストはインタラクティブで、DAM ユーザーは参照をクリックして参照ページを開くことができます。 何らかの理由でリモート参照を取得できない場合は、失敗の通知が表示されます。
+1. [!DNL Sites] ページの参照は、各ローカル [!DNL Sites] の参照の合計数を表示します。すべての参照を検索して、参照の総数を表示するには時間がかかる場合があります。
+1. 参照のリストはインタラクティブで、DAM ユーザーは参照をクリックして参照ページを開くことができます。何らかの理由でリモート参照を取得できない場合は、失敗の通知が表示されます。
 1. ユーザーはアセットを移動または削除できます。アセットを移動または削除すると、選択したすべてのアセット／フォルダーの参照の合計数が警告ダイアログに表示されます。参照がまだ取得されていないアセットを削除すると、警告ダイアログが表示されます。
 
    ![強制削除警告](assets/delete-referenced-asset.png)
@@ -318,7 +318,7 @@ Connected Assets の設定後、[!DNL Dynamic Media] アセットは、[!DNL Sit
 * アセットの使用状況に関するインサイトを取得するには、[!DNL Sites] インスタンスで[アセットインサイト](/help/assets/assets-insights.md)機能を設定します。
 * オーサリングコンポーネントでのパスブラウザーの使用は、Connected Assets ではサポートされていません。
 
-* リモートアセットを [画像コンポーネント設定ダイアログ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=ja). ただし、リモートアセットを、 **[!UICONTROL 設定]**.
+* リモートアセットを [画像コンポーネント設定ダイアログ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=ja#configure-dialog). ただし「**[!UICONTROL 設定]**」をクリックせずに、リモートアセットを Sites ページの画像コンポーネントに直接ドラッグすることができます。
 
 ### 権限とアセット管理 {#permissions-and-managing-assets}
 
@@ -377,3 +377,4 @@ Connected Assets の設定後、[!DNL Dynamic Media] アセットは、[!DNL Sit
 * [検索ファセット](search-facets.md)
 * [コレクションを管理](manage-collections.md)
 * [メタデータの一括読み込み](metadata-import-export.md)
+* [AEMとDynamic Mediaへのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

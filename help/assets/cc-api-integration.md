@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: ht
-source-wordcount: '777'
-ht-degree: 100%
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+workflow-type: tm+mt
+source-wordcount: '772'
+ht-degree: 99%
 
 ---
 
@@ -24,31 +24,31 @@ ht-degree: 100%
 
 * **自動アップライト**：人工知能を利用して、画像の内容を分析し画像のゆがみを修正します。例えば、平らな水平面を作成する場合などです。
 
-   ![自動トーン](/help/assets/assets/content-automation-autotone.png)
+  ![自動トーン](/help/assets/assets/content-automation-autotone.png)
 
-   *図：ゆがんだ画像の改善に役立つ自動トーンと自動補正*
+  *図：ゆがんだ画像の改善に役立つ自動トーンと自動補正*
 
 * **Lightroom プリセット**：カスタムのプリセットを使用して、ユーザー定義の外観を画像に適用し、一貫した外観を実現します。
 
-   ![Lightroom プリセット](/help/assets/assets/content-automation-lrpresets.png)
+  ![Lightroom プリセット](/help/assets/assets/content-automation-lrpresets.png)
 
-   *図：多くの画像に対して一貫した方法で画質を改善する Adobe Lightroom プリセット*
+  *図：多くの画像に対して一貫した方法で画質を改善する Adobe Lightroom プリセット*
 
 * **画像カットアウト**：人工知能を利用して、1 つのコマンドで、目立つオブジェクトを囲む選択範囲を作成し、その背景を削除します。
 
-   ![写真からの画像の切り取りと背景の削除](/help/assets/assets/content-automation-backgroundremove.png)
+  ![写真からの画像の切り取りと背景の削除](/help/assets/assets/content-automation-backgroundremove.png)
 
 * **画像マスク**：人工知能を利用して、1 つのコマンドで、目立つオブジェクトを囲むマスクを作成します。
 
-   ![AI を使用した画像のマスク](/help/assets/assets/content-automation-mask.png)
+  ![AI を使用した画像のマスク](/help/assets/assets/content-automation-mask.png)
 
 * **Photoshop のアクション**：一連の [!DNL Adobe Photoshop] タスクをファイルまたはファイル群に適用します。
 
-   ![Photoshop のアクション](/help/assets/assets/content-automation-psactions.png)
+  ![Photoshop のアクション](/help/assets/assets/content-automation-psactions.png)
 
 * **スマートオブジェクト置換**：PSD ファイル内で適用されたすべてのエフェクトと調整を維持しながら画像を入れ替えることができるので、大規模なパーソナライゼーションを実行できます。
 
-   ![オブジェクトのスマートな置換](/help/assets/assets/content-automation-objectreplace.png)
+  ![オブジェクトのスマートな置換](/help/assets/assets/content-automation-objectreplace.png)
 
 ## AEM as a Cloud Service プログラムのコンテンツ自動化の有効化 {#enable-content-automation}
 
@@ -115,10 +115,10 @@ Cloud Manager の既存の AEM as a Cloud Service プログラムにコンテン
 * [検索ファセット](search-facets.md)
 * [コレクションを管理](manage-collections.md)
 * [メタデータの一括読み込み](metadata-import-export.md)
+* [AEMとDynamic Mediaへのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [処理プロファイルを介したアセットマイクロサービスの設定と使用](/help/assets/asset-microservices-configure-and-use.md)
 >* [ [!DNL Experience Manager] との統合： [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)
 >* [アセットマイクロサービスを使用したアセットの取り込みと処理：概要](/help/assets/asset-microservices-overview.md)
-

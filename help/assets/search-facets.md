@@ -4,10 +4,10 @@ description: この記事では、Adobe Experience Manager で検索ファセッ
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
-source-wordcount: '2498'
-ht-degree: 100%
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+workflow-type: tm+mt
+source-wordcount: '2505'
+ht-degree: 99%
 
 ---
 
@@ -104,7 +104,7 @@ CRX リポジトリーのオプションでノード構造を手動で作成す�
 1. Experience Manager ロゴを選択し、**[!UICONTROL ツール／一般／検索フォーム]**&#x200B;に移動します。
 1. **[!UICONTROL 検索フォーム]**&#x200B;ページで、「**[!UICONTROL アセット管理者の検索レール]**」を選択し、「編集」アイコンを選択します。
 1. **[!UICONTROL 検索フォームを編集]**&#x200B;ページで、「**[!UICONTROL 述語を選択]**」タブからメインウィンドウに&#x200B;**[!UICONTROL オプションの述語]**&#x200B;をドラッグします。
-1. 「**[!UICONTROL 設定]**」タブで、プロパティのラベルと名前を入力します。例えば、アセットの形式に基づいてアセットを検索するには、ラベルに対してわかりやすい名前（例：**[!UICONTROL ファイルタイプ]**）を指定します。「プロパティ」フィールドに検索するプロパティを指定します（例：`jcr:content/metadata/dc:format.`）
+1. 「**[!UICONTROL 設定]**」タブで、プロパティのラベルと名前を入力します。例えば、アセットの形式に基づいてアセットを検索するには、ラベルに対してわかりやすい名前（例：**[!UICONTROL ファイルタイプ]**）を指定します。検索実行の基準となるプロパティを「プロパティ」フィールドに指定します（例：`jcr:content/metadata/dc:format.`）。
 1. 次のいずれかの操作を行います。
 
    * 「**[!UICONTROL プロパティ名]**」フィールドで、オプションのノードを定義する JSON ファイルのパスを指定し、対応するキーと値のペアを指定します。
@@ -126,7 +126,7 @@ CRX リポジトリーのオプションでノード構造を手動で作成す�
 1. Experience Manager ロゴをクリックし、**[!UICONTROL ツール]**／**[!UICONTROL 一般]**／**[!UICONTROL 検索フォーム]**&#x200B;の順に移動します。
 1. 検索フォームページで、「**[!UICONTROL アセット管理者の検索レール]**」を選択し、「**編集**」![aemassets_edit](assets/aemassets_edit.png) をクリックします。
 1. 検索フォームを編集ページで、「**[!UICONTROL 述語を選択]**」タブからメインウィンドウに&#x200B;**[!UICONTROL 複数値プロパティの述語]**&#x200B;をドラッグします。
-1. 「**[!UICONTROL 設定]**」タブで、述語のラベルとプレースホルダーテキストを入力します。「プロパティ」フィールドで、検索するプロパティ名を指定します（例：`jcr:content/metadata/dc:value`）。選択ダイアログを使用してノードを選択することもできます。
+1. 「**[!UICONTROL 設定]**」タブで、述語のラベルとプレースホルダーテキストを入力します。「プロパティ」フィールドに検索するプロパティ名を指定します（例：`jcr:content/metadata/dc:value`）。選択ダイアログを使用してノードを選択することもできます。
 1. 「**[!UICONTROL 区切り文字サポート]**」が選択されていることを確認します。「**[!UICONTROL 入力区切り文字]**」フィールドで、それぞれの値を区切る文字を指定します。デフォルトでは、コンマが区切り文字に指定されています。別の区切り文字を指定できます。
 1. 「**説明**」フィールドに説明を任意で入力してから、「**[!UICONTROL 完了]**」を選択します。
 1. Assets ユーザーインターフェイスのフィルターパネルに移動します。**[!UICONTROL 複数値プロパティ]**&#x200B;の述語がパネルに追加されています。
@@ -182,7 +182,7 @@ CRX リポジトリーのオプションでノード構造を手動で作成す�
    <td>事前設定されたルートパスのフォルダーとサブフォルダーのアセットを検索するための検索用述語。</td>
    <td>
     <ul>
-     <li>プレースホルダー</li>
+     <li>Placeholder</li>
      <li>ルートパス</li>
      <li>説明</li>
     </ul> </td>
@@ -354,6 +354,7 @@ Adobeでは、パフォーマンスの問題を回避するため、デフォル
 * [メタデータを管理](manage-metadata.md)
 * [コレクションを管理](manage-collections.md)
 * [メタデータの一括読み込み](metadata-import-export.md)
+* [AEMとDynamic Mediaへのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
