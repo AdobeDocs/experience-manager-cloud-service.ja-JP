@@ -2,7 +2,7 @@
 title: AEMとDynamic Mediaへのクイック公開
 description: アセットビューのクイック公開を使用すると、アセットをAEMと Dynamic Media に同時に、または個別に公開できます。 アセットとフォルダーを選択し、Dynamic MediaまたはAEMに公開することを選択できます。
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-source-git-commit: 0891d58e10e8be746c0be5f55d554174567fcd64
+source-git-commit: a9a94e948ad7d038f28a046c950f2158871ddbb3
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Experience Manager Assets表示では、アセットをAEMまたはDynamic Media
 Dynamic Media公開モードをに設定したフォルダーにアップロードする際にアセットを公開するには **アクティベーション時**:
 
 1. クリック **アセットを追加** > **参照** > **ファイルの参照** に移動してアセットをアップロードするフォルダーに移動します。 この **公開オプション** 「」セクションには、 **DM 公開モード** as **アクティベーション時**.
-   ![アクティベーション時に画像をアップロード](/help/assets/assets/upload-upon-activation.png)
+   ![アクティベーション時に画像をアップロード](/help/assets/assets/upload-upon-activation1.png)
 2. を選択 **AEMとDynamic Mediaへの公開** をクリックして、 **Upload**. アセットはAEMとDynamic Mediaに同時に公開されます。 これらのアセットの更新された公開ステータスを確認するには、 [公開ステータスの確認](#check-publish-status).
 
 ### Dynamic Media公開モードを「即時」に設定 {#dynamic-media-publish-mode-set-to-immediate}
