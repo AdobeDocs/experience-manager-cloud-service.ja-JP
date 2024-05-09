@@ -2,10 +2,10 @@
 title: ベストプラクティスアナライザーの使用
 description: ベストプラクティスアナライザーを使用してアップグレードの準備状況を理解する方法について説明します。
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
-workflow-type: ht
-source-wordcount: '2418'
-ht-degree: 100%
+source-git-commit: 077be031da7a610810d398b163676a98fc036f30
+workflow-type: tm+mt
+source-wordcount: '2661'
+ht-degree: 89%
 
 ---
 
@@ -51,6 +51,13 @@ ht-degree: 100%
 >[!NOTE]
 >[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)ポータルからベストプラクティスアナライザーをダウンロードします。
 
+## ソース環境の接続性 {#source-environment-connectivity}
+
+ソース AEM インスタンスがファイアウォールの内側で動作していて、許可リストに追加された特定のホストにしか到達できない場合があります。BPA で生成されたレポートを Cloud Acceleration Manager に正常に自動アップロードするには、AEMを実行しているインスタンスから次のエンドポイントにアクセスできる必要があります。
+
+* Azure BLOB ストレージサービス：`casstorageprod.blob.core.windows.net`
+
+
 ## ベストプラクティスアナライザーレポートの表示 {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 以降 {#aem-later-versions}
@@ -65,31 +72,40 @@ ht-degree: 100%
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
-1. BPA がレポートを生成している間は、ツールの進行状況を画面で確認できます。分析された項目の数と、見つかった結果の数が表示されます。
+1. 生成された BPA レポートを自動的にアップロードするための BPA アップロードキーの指定 [Cloud Acceleration Manager （CAM）](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). アップロードキーを取得するには、に移動します [CAM のベストプラクティス分析](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
-   ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
+   ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
+
+>[!NOTE]
+>次のオプションを選択して、CAM への自動アップロードをスキップできます。 **CAM へのレポートの自動アップロードをスキップ**. スキップする場合は、BPA レポートをコンマ区切り値ファイルとして手動でダウンロードしてから、ファイルを CAM にアップロードする必要があります。 操作を合理化するので、アップロードキーオプションを使用することをお勧めします。
+
+1. この **Generate** 有効なキーを指定すると、ボタンがアクティブになります。 クリックする **Generate** レポートの生成を開始します。
+
+   ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
+
+
+1. BPA がレポートを生成している間は、ツールの進行状況を画面で確認できます。進行状況が完了率で表示されます。 また、分析された項目の数と、検出された結果の数も表示されます。
+
+   ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
+
+>[!NOTE]
+>BPA アップロードキーの有効期限タイムスタンプが右上隅に表示されます。 有効期限が近づいたら BPA アップロードキーを更新する必要があります。 キーを更新するには、をクリックします。 **更新** CAM に移動してキーを更新します。
 
 1. BPA レポートが生成された後は、概要と結果の数が、結果のタイプと重要度レベル別に整理された表形式で表示されます。特定の結果の詳細を取得するには、表で結果のタイプに対応する番号をクリックします。
 
-   ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
+   ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-   上記のアクションは、レポート内でその結果の場所まで自動的にスクロールします。
+1. 「」をクリックすると、レポートをコンマ区切り値（CSV）形式でダウンロードするオプションがあります **CSV に書き出し**. をクリックして CAM でレポートを表示するオプションもあります。 **CAM に移動**. これであなたは次の場所に移動します [ベストプラクティス分析](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) CAM のページ。
 
-   ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic5.png)
+BPA に対して「**レポートの更新**」をクリックしてキャッシュをクリアし、レポートを再生成させることができます。
 
-1. 下の図に示すように、「**CSV に書き出し**」をクリックして、レポートをコンマ区切り値（CSV）形式でダウンロードするオプションがあります。
+![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-   ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
-   >[!NOTE]
-   >BPA に対して「**レポートの更新**」をクリックしてキャッシュをクリアし、レポートを再生成させることができます。
+1. キャッシュの有効期限が切れた場合は、をクリックして、CAM で最後に生成されたレポートを表示するオプションがあります **CAM で最後に生成されたレポートを表示** または、をクリックして新しいレポート生成を開始します。 **新しいレポートを生成**.
 
-   ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
+![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 
-   >[!NOTE]
-   >レポートが再生成される間、完了率の観点での進行状況が次の画像のように表示されます。
-
-   ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
 #### ベストプラクティスアナライザーレポートでのフィルターの使用 {#bpa-filters}
 
