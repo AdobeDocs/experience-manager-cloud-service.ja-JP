@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
-workflow-type: ht
-source-wordcount: '1631'
-ht-degree: 100%
+source-git-commit: 835aab546896195c3a2a3355b35b81f2cd385676
+workflow-type: tm+mt
+source-wordcount: '1670'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->この[コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
+> コンテンツフラグメント管理 API の OpenAPI 実装を最新化しました。 完全なドキュメントについては、以下を参照してください。 [コンテンツフラグメント管理 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). 新しい OpenAPI 実装を使用することをお勧めします。 コンテンツフラグメントに対して Assets HTTP API を使用している既存の環境は、新しいコンテンツフラグメント管理 OpenAPI に移行する必要があります。
 
 API にアクセスするには、次の手順を実行します。
 
