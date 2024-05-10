@@ -2,10 +2,10 @@
 title: ベストプラクティスアナライザーの使用
 description: ベストプラクティスアナライザーを使用してアップグレードの準備状況を理解する方法について説明します。
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 077be031da7a610810d398b163676a98fc036f30
+source-git-commit: 0c7e38d1973458ef3212e816ced867423bd62e86
 workflow-type: tm+mt
-source-wordcount: '2661'
-ht-degree: 89%
+source-wordcount: '2686'
+ht-degree: 88%
 
 ---
 
@@ -61,6 +61,11 @@ ht-degree: 89%
 ## ベストプラクティスアナライザーレポートの表示 {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 以降 {#aem-later-versions}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_bpa_upload_setup"
+>title="ベストプラクティスアナライザーレポートを CAM に自動的にアップロード"
+>abstract="生成された BPA レポートを Cloud Acceleration Manager （CAM）に自動的にアップロードするための BPA アップロードキーを指定します。"
 
 ベストプラクティスアナライザーレポートを表示するには、このセクションの手順に従います。
 
