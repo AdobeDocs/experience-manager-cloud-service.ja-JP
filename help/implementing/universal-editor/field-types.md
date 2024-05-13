@@ -2,9 +2,9 @@
 title: モデル定義、フィールドおよびコンポーネントタイプ
 description: ユニバーサルエディターがプロパティパネルで編集できるフィールドとコンポーネントタイプの例について説明します。モデル定義を作成し、コンポーネントにリンクすることで、独自のアプリを実装する方法を理解します。
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: c2dd0ed800739c2194ab20267f72b85461f3c5b8
+source-git-commit: 111ce0c692432d1d0c25f416282bf2dbd655679b
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1146'
 ht-degree: 100%
 
 ---
@@ -95,6 +95,7 @@ ht-degree: 100%
 | [ブーリアン](#boolean) | `boolean` |
 | [チェックボックスグループ](#checkbox-group) | `checkbox-group` |
 | [コンテナ](#container) | `container` |
+| [コンテンツフラグメント](#content-fragment) | `aem-content-fragment` |
 | [日時](#date-time) | `date-time` |
 | [複数選択](#multiselect) | `multiselect` |
 | [数値](#number) | `number` |
