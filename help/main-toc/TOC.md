@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bf7afba2376b12b8d4f513db07c178209447e343
+source-git-commit: 3eb2a7ce311f9e738a95ea5fcf6876f4df1fa648
 workflow-type: tm+mt
-source-wordcount: '4917'
+source-wordcount: '4930'
 ht-degree: 99%
 
 ---
@@ -571,7 +571,7 @@ ht-degree: 99%
       + [アセット、フォルダー、コレクションの監視](/help/assets/manage-notifications-assets-view.md)
       + [レポートの管理](/help/assets/manage-reports-assets-view.md)
       + [タグを管理](/help/assets/tagging-management-assets-view.md)
-      + [AEMとDynamic Mediaへのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+      + [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
    + ベストプラクティス{#best-practices}
       + [検索のベストプラクティス](/help/assets/search-best-practices.md)
       + [メタデータの管理とベストプラクティス](/help/assets/metadata-best-practices.md)
@@ -605,6 +605,9 @@ ht-degree: 99%
       + [as a Cloud Service の移行元 [!DNL AEM 6.5 Forms] または以前のバージョン [!DNL AEM Forms] ](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [グループと権限](/help/forms/forms-groups-privileges-tasks.md)
       + [アダプティブフォーム、PDF フォームおよびその他のアセットの読み込み、書き出し、整理](/help/forms/import-export-forms-templates.md)
+   + はじめに {#getting-started-forms}
+      + [ユースケースと開発環境の設定](/help/forms/create-adaptive-form-tutorial-getting-started.md)
+      + [ローン申し込みフォームの作成](/help/forms/create-adaptive-form-tutorial.md)
    + {#integrate} の統合
       + サービス {#services}
          + [AEM Forms as a Cloud Service と Adobe Sign の統合](/help/forms/adobe-sign-integration-adaptive-forms.md)
@@ -628,12 +631,12 @@ ht-degree: 99%
          + [フォームデータモデルの操作](/help/forms/work-with-form-data-model.md)
          + [フォームデータモデルの使用](/help/forms/using-form-data-model.md)
    + アダプティブフォーム {#adaptive-forms-authoring}
-      + [アダプティブフォームを作成](/help/forms/create-an-adaptive-form.md)
+      + [アダプティブフォームを作成します](/help/forms/create-an-adaptive-form.md)
       + [アダプティブフォームフラグメントの作成](/help/forms/adaptive-form-fragments.md)
       + [AEM Sites ページまたはエクスペリエンスフラグメントにアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + コアコンポーネント {#authoring-adaptive-forms-core-components}
          + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
-            + [アダプティブフォームを作成](/help/forms/creating-adaptive-form-core-components.md)
+            + [アダプティブフォームを作成します](/help/forms/creating-adaptive-form-core-components.md)
             + [アダプティブフォームフラグメントの作成](/help/forms/adaptive-form-fragments-core-components.md)
             + [アダプティブフォームのテーマの作成 - コアコンポーネント](/help/forms/using-themes-in-core-components.md)
             + [コアコンポーネントに基づくアダプティブフォームテンプレートの作成](/help/forms/template-editor-core-components.md)
@@ -663,7 +666,7 @@ ht-degree: 99%
             + [変換後のフォームのレビューと修正](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=ja#welcome-to-review-and-correct-editor)
          + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
             + [アダプティブフォームのオーサリングの概要](/help/forms/introduction-forms-authoring.md)
-            + [アダプティブフォームを作成](/help/forms/creating-adaptive-form.md)
+            + [アダプティブフォームを作成します](/help/forms/creating-adaptive-form.md)
             + [参照テーマ、テンプレート、データモデル](/help/forms/reference-themes-templates-data-models.md)
             + [テンプレートの作成](/help/forms/template-editor.md)
             + [テーマの作成](/help/forms/themes.md)
@@ -853,11 +856,11 @@ ht-degree: 99%
          + [フォーム送信後にカスタムのお礼のメッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
       + 機能 {#advanced-features-edge-delivery-services-forms}
          + [フォームフラグメントの使用](/help/edge/docs/forms/form-fragments.md)
-         + [フォームへの繰り返し可能なセクションの追加](/help/edge/docs/forms/repeatable-forms.md)
-         + [フォームを翻訳](/help/edge/docs/forms/translate-forms.md)
-         + [reCAPTCHA を使用したフォームの保護](/help/edge/docs/forms/recaptacha-forms.md)
+         + [繰り返し可能なセクションをフォームに追加する](/help/edge/docs/forms/repeatable-forms.md)
+         + [フォームの翻訳](/help/edge/docs/forms/translate-forms.md)
+         + [reCAPTCHA を使用してフォームを保護する](/help/edge/docs/forms/recaptacha-forms.md)
          + [カスタムコンポーネント](/help/edge/docs/forms/custom-components-forms.md)
-         + [フォームの実際の使用状況の監視](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [フォームの実際の使用のモニタリング](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
       + 参照 {#forms-references}
          + [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
    + Edge Delivery リソース {#resources}
