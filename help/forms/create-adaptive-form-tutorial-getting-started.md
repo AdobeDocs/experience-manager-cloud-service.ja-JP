@@ -7,9 +7,9 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 3eb2a7ce311f9e738a95ea5fcf6876f4df1fa648
+source-git-commit: e6c58c835798b16158ab4aca26e381ab8f36afd3
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '918'
 ht-degree: 6%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 6%
 
 AEM Formsは、フォームエクスペリエンスを作成するための基盤コンポーネントとコアコンポーネントを提供します。 コアコンポーネントは、新しいフォームエクスペリエンスを作成するための最新の推奨アプローチです。 コアコンポーネントを使用する理由 これらのコンポーネントは軽量なオープンソース（github で利用可能）で、優れたGoogle Lighthouse と web バイタルスコアを提供し、アクセシビリティに準拠し、AEM Sitesの使い慣れた機能（バージョン管理やローカリゼーションなど）をすべて備えています。 さらに、これらのコンポーネントはスタイル設定が容易で、組織のブランディングガイドラインに従って外観を簡単にカスタマイズできます。 これらはサードパーティの依存関係がなく、JavaScript と CSS の知識がある開発者は、これらのコンポーネントを簡単にカスタマイズできます。
 
-![コアコンポーネントベースのアダプティブFormsを作成する理由 これらのコンポーネントは軽量で、スタイル設定が容易で、高い Lighthouse スコアを提供し、アクセシビリティ標準に対応し、簡単にカスタマイズ可能で、オープンソースであり、github で利用でき、サードパーティのライブラリに依存せず、AEM開発者やAEM作成者の学習曲線はほとんどありません。さらに、AEM Forms コアコンポーネントは、AEM WCM コアコンポーネントのすべての機能を備えています。](/help/forms/assets/cc-core-components-benefits.png)
+![コアコンポーネントベースのアダプティブFormsを作成する理由 これらのコンポーネントは軽量で、スタイル設定が容易で、高い Lighthouse スコアを提供し、アクセシビリティ標準に対応し、簡単にカスタマイズ可能で、オープンソースであり、github で利用でき、サードパーティのライブラリに依存せず、AEM開発者やAEM作成者の学習曲線はほとんどありません。さらに、AEM Forms コアコンポーネントは、AEM WCM コアコンポーネントのすべての機能を備えています。](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
 
 ## ユースケース：Adaptive Formsを使用した合理化されたホームローンの事前選定
 
@@ -79,10 +79,14 @@ AEM SDK とローカル開発することで、時間が節約され、開発プ
 1. [AEM Forms アドオンを追加](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users):AEM SDK のバージョンに一致するAEM Forms アドオンを以下からダウンロードしてインストールします。 [ソフトウェア配布](https://experience.adobe.com/#/downloads) ポータル。
    ![install-aem-forms-add-on](/help/forms/assets/install-aem-forms-add-on.png)
 
-   +++AEM Forms アドオンのインストール
+   +++AEM Forms アドオンをインストールします。
 
-       AEM Forms アドオンをインストールするには、AEM SDK を停止し、AEM Forms アドオン（.far）ファイルを「AEM SDK/crx-quickstart/install」フォルダーに追加して、AEM SDK を再起動します。
-   
+   AEM Forms アドオンをインストールするには：
+
+   1. AEM SDK を停止します。
+   1. AEM Forms アドオン（.far）ファイルをに追加 `AEM SDK/crx-quickstart/install` フォルダー、
+   1. AEM SDK を再起動します。
+
 +++
 
 1. [ユーザー権限の設定](/help/forms/setup-local-development-environment.md#configure-users-and-permissions)：開発、オーサリング、その他の権限を持つユーザーを作成し、これらのユーザーを事前定義済みのフォームグループに追加します。
@@ -90,7 +94,9 @@ AEM SDK とローカル開発することで、時間が節約され、開発プ
 
 1. [アダプティブ Forms テンプレートを追加する](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype):AEM アーキタイプ 48 以降を使用して、新しいAEM プロジェクトを作成し、AEM SDK にデプロイします。 このプロジェクトにより、AEM SDK にアダプティブFormsテンプレートが追加されます。
 
-   +++アダプティブ Forms テンプレートを追加する
+   ![アダプティブフォームテンプレート](/help/forms/assets/adaptive-forms-templates.png)
+
+   +++AEM SDK にアダプティブ Forms テンプレートを追加するには、次の手順を実行します。
 
    1. 以下のコマンドを実行して、AEM プロジェクトを作成します。
 
@@ -108,13 +114,12 @@ AEM SDK とローカル開発することで、時間が節約され、開発プ
       mvn -PautoInstallPackage clean install
       ```
 
-+++
-
    AEM プロジェクトをデプロイすると、お使いの環境でアダプティブFormsテンプレートを表示できます。
 
-   ![アダプティブフォームテンプレート](/help/forms/assets/adaptive-forms-templates.png)
++++
 
-ローカル AEM Forms開発環境のセットアップに関する詳しい手順については、 [AEM Formsのローカル開発環境の設定](/help/forms/setup-local-development-environment.md)
+
+ローカル AEM Forms開発環境のセットアップに関する詳細な手順と手順のガイドについては、 [AEM Formsのローカル開発環境の設定](/help/forms/setup-local-development-environment.md) 記事。
 
 
 
