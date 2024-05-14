@@ -3,10 +3,10 @@ title: Edge 配信サービス向けのコンテンツの公開
 description: コンテンツの公開が Edge 配信サービスと連携する仕組みと、AEM コンテンツを Edge 配信サービスと共に公開する方法について説明します。
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: ht
-source-wordcount: '280'
-ht-degree: 100%
+source-git-commit: c85a82161a7594588290793c89ecbe1f0f60a56d
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ Edge 配信サービスを使用すると、コンテンツソースに関係な
 
 >[!NOTE]
 >
->オーサリング UI から、またはワークフローによって公開されるパスは、1 日あたり最大 5000 個まで許可されます。一括公開のワークロードを作成する統合はサポートされていません。
+>オーサリング UI から、またはワークフローによって公開されるパスは、1 日あたり最大 5000 個まで許可されます。一括公開作業読み込みを作成する統合はサポートされていません。 プロジェクトにより高い容量が必要な場合は、 [VIP プログラム](https://www.aem.live/vip/intake).
 
 ![AEM から Edge 配信サービスに公開する際の情報のフロー](assets/publishing-flow.png)
 
