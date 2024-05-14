@@ -3,10 +3,10 @@ title: AEM Forms Edge Delivery Services フォームの公開
 description: AEM Forms Edge Delivery Services フォームの公開
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
-workflow-type: ht
+source-git-commit: 708b63aca6b1613dbedf193edd07aadc510ff859
+workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 100%
    ```
 
    * `<branch>` は、GitHub リポジトリのブランチを参照します。
-   * `<repository>` は、GitHub リポジトリを示します。
+   * `<repository>` は GitHub リポジトリを示します。
    * `<owner>` は、GitHub リポジトリをホストする GitHub アカウントのユーザー名を参照します。
 
    例えば、プロジェクトのリポジトリの名前が「portal」で、アカウント「wkndforms」の下にあり、「main」ブランチを使用している場合、URL は次のようになります。
@@ -87,15 +87,17 @@ Web ページにフォームを追加するには、以下の手順に従いま�
    開発またはテスト目的にはプレビュー URL（.page URL）を使用し、実稼動環境にはパブリッシュ URL（.live）を使用します。プレビュー URL およびパブリッシュ URL の例を次に示します。
 
    **プレビュー URL**
-| フォーム  |
-|---|
-| [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json)  |
+
+   | フォーム |
+   |---|
+   | [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json) |
 
 
    **パブリッシュ URL**
-| フォーム  |
-|---|
-| [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
+
+   | フォーム |
+   |---|
+   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
 
 1. [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) を使用して web ページをプレビューします。これで、ページにフォームが表示されます。例えば、[お問い合わせスプレッドシート](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0)に基づくフォームは次のとおりです。
 
