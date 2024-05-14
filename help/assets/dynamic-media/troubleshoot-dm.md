@@ -2,11 +2,12 @@
 title: Dynamic Media のトラブルシューティング
 description: Dynamic Mediaで画像、セット、ビューアを操作する際に試すことができるトラブルシューティングのヒントについて説明します。
 contentOwner: Rick Brough
+feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
-workflow-type: ht
-source-wordcount: '1146'
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+workflow-type: tm+mt
+source-wordcount: '1141'
 ht-degree: 100%
 
 ---
@@ -67,19 +68,19 @@ CRXDE Lite で次のアセットプロパティを見直すと、Adobe Experienc
        <li>JCR のアセットに <code>dam:scene7FileStatus</code><strong> </strong> があり、それが「メタデータ」で <code>PublishComplete</code> と表示されていることを確認します。</li>
       </ul> </li>
     </ol> </td>
-   <td><p>ページを更新するか、別のページに移動してから戻ります（サイドレール JSP を再コンパイルする必要があります）。</p> <p>それでも動作しない場合：</p>
+   <td><p>ページを更新するか、別のページに移動してから戻ります（サイドレール JSP を再コンパイルする必要があります）。</p> <p>それでも解決しない場合：</p>
     <ul>
-     <li>アセットを公開.</li>
+     <li>アセットを公開します。</li>
      <li>アセットを再度アップロードして公開します。</li>
     </ul> </td>
   </tr>
   <tr>
    <td>スライドを切り替えた後、カルーセルホットスポットが移動する</td>
-   <td><p>すべてのスライドのサイズが同じであることを確認します。</p> </td>
+   <td><p>すべてのスライドが同じサイズであることを確認します。</p> </td>
    <td><p>カルーセルには同じサイズの画像のみを使用します。</p> </td>
   </tr>
   <tr>
-   <td>画像がDynamic Mediaビューアでプレビューされない</td>
+   <td>Dynamic Media ビューアで画像がプレビューされない</td>
    <td><p>アセットのメタデータプロパティに <code>dam:scene7File</code> が含まれていることを確認します（CRXDE Lite）。</p> </td>
    <td><p>すべてのアセットの処理が完了したことを確認します。</p> </td>
   </tr>
@@ -89,12 +90,12 @@ CRXDE Lite で次のアセットプロパティを見直すと、Adobe Experienc
    <td><p>すべてのアセットの処理が完了したことを確認します。</p> </td>
   </tr>
   <tr>
-   <td>カード表示のバナー <strong>新規</strong> アセットが処理を開始していない場合</td>
+   <td>アセットの処理がまだ開始していないときに、カードビューのバナーに「<strong>新規</strong>」と表示される</td>
    <td>アセットの <code>jcr:content</code> &gt; <code>dam:assetState</code> を確認します。<code>unprocessed</code> の場合は、アセットの処理がワークフローで開始されていません。</td>
-   <td>アセットがワークフローで取得されるまで待ちます。</td>
+   <td>ワークフローがアセットの処理を始めるまで待ちます。</td>
   </tr>
   <tr>
-   <td>画像またはセットにビューアの URL または埋め込みコードが表示されない</td>
+   <td>画像やセットにビューア URL や埋め込みコードが表示されない</td>
    <td>ビューアプリセットが公開されているかどうかを確認します。</td>
    <td><p><strong>ツール</strong>／<strong>アセット</strong>／<strong>ビューアプリセット</strong>に移動し、ビューアプリセットを公開します。</p> </td>
   </tr>
@@ -113,17 +114,17 @@ CRXDE Lite で次のアセットプロパティを見直すと、Adobe Experienc
    <td><strong>解決策</strong></td>
   </tr>
   <tr>
-   <td>ビデオをプレビューできません</td>
+   <td>ビデオをプレビューできない</td>
    <td>
     <ul>
-     <li>フォルダーにビデオプロファイルが割り当てられていることを確認します（サポートされていないファイル形式の場合）。 サポートされていない場合は、画像のみが表示されます。</li>
-     <li>AVS セットを生成するには、ビデオプロファイルに複数のエンコーディングプリセットを含める必要があります（単一のエンコーディングは MP4 ファイルのビデオコンテンツとして扱われ、サポートされていないファイルの場合は未処理として扱われます）。</li>
+     <li>（サポートされていないファイル形式の場合）フォルダーにビデオプロファイルが割り当てられていることを確認します。サポートされていない場合は、画像のみが表示されます。</li>
+     <li>AVS セットを生成するには、ビデオプロファイルに複数のエンコーディングプリセットが含まれている必要があります（単一のエンコーディングは MP4 ファイルのビデオコンテンツとして扱われます。サポートされていないファイルの場合は、未処理のファイルと同じように扱われます）。</li>
      <li>メタデータで <code>dam:scene7File</code> の <code>dam:scene7FileAvs</code> を確認して、ビデオの処理が終了したことを確かめます。</li>
     </ul> </td>
    <td>
     <ol>
-     <li>ビデオプロファイルをフォルダーに適用します.。</li>
-     <li>複数のエンコーディングプリセットを含めるには、ビデオプロファイルを編集します。</li>
+     <li>ビデオプロファイルをフォルダーに割り当てます。</li>
+     <li>エンコーディングプリセットを 2 つ以上含むよう、ビデオプロファイルを編集します。</li>
      <li>ビデオの処理が終了するまで待ちます。</li>
      <li>ビデオを再度読み込む前に、「Dynamic Media エンコーディングビデオ」ワークフローが実行されていないことを確認します。<br/> </li>
      <li>ビデオを再度アップロードします。</li>
@@ -139,12 +140,12 @@ CRXDE Lite で次のアセットプロパティを見直すと、Adobe Experienc
    <td>
     <ol>
      <li>クラウドサービスページで Dynamic Media 設定が正しくセットアップされていることを確認します。</li>
-     <li>フォルダーにビデオプロファイルが含まれていることを確認します。 また、ビデオプロファイルを確認します。</li>
+     <li>フォルダーにビデオプロファイルが含まれていることを確認します。そのビデオプロファイルも確認します。</li>
     </ol> </td>
   </tr>
   <tr>
-   <td>ビデオ処理に時間がかかりすぎる</td>
-   <td><p>ビデオエンコーディングがまだ進行中か、失敗状態に入ったかを判断するには：</p>
+   <td>ビデオの処理に時間がかかりすぎる</td>
+   <td><p>ビデオのエンコーディングがまだ進行中か、エラー状態になっているかを判断するには、次の手順を実行します。</p>
     <ul>
      <li>ビデオのステータスを確認します。<code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
     </ul> </td>
@@ -159,8 +160,8 @@ CRXDE Lite で次のアセットプロパティを見直すと、Adobe Experienc
     </ul> </td>
    <td>
     <ol>
-     <li>ビデオプロファイルをフォルダーに適用します.。</li>
-     <li>ビデオの処理が終了するまで待ちます。<br /> </li>
+     <li>ビデオプロファイルをフォルダーに割り当てます。</li>
+     <li>ビデオの処理が終わるまで待ちます。<br /> </li>
     </ol> </td>
   </tr>
  </tbody>
@@ -175,7 +176,7 @@ CRXDE Lite で次のアセットプロパティを見直すと、Adobe Experienc
 **デバッグの方法**
 
 1. サンプルマネージャー診断ページ `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html` に移動します。
-1. 計算された値を確認します。正しく動作すると、次のように表示されます。`_DMSAMPLE status: 0 unsyced assets - activation not necessary _OOTB status: 0 unsyced assets - 0 unactivated assets` です。
+1. 計算された値を確認します。正しく動作すると、次のように表示されます。`_DMSAMPLE status: 0 unsyced assets - activation not necessary _OOTB status: 0 unsyced assets - 0 unactivated assets`。
 
    >[!NOTE]
    >
@@ -204,7 +205,7 @@ CRXDE Lite で以下を行います。
    * `"is/content"`
    * `dam:scene7Folder`
    * `<asset-name>`
-例： `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+例：`https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
 
 **解決策**
 

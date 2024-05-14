@@ -2,11 +2,12 @@
 title: セレクターを操作する
 description: Dynamic Media でインタラクティブ画像、インタラクティブビデオ、カルーセルバナーのアセットを選択する方法について説明します。
 contentOwner: Rick Brough
+feature: Selectors,Interactive Images,Interactive Videos,Carousel Banners
 role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '745'
 ht-degree: 100%
 
 ---

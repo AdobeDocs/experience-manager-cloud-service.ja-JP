@@ -2,11 +2,12 @@
 title: コンテンツの HTTP2 配信の FAQ
 description: HTTP2 コンテンツ配信と、ブラウザーとサーバー間の通信を改善して情報を高速に転送する方法について説明します。
 contentOwner: Rick Brough
+feature: Dynamic Media,Configuration,FAQ
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
-workflow-type: ht
-source-wordcount: '807'
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+workflow-type: tm+mt
+source-wordcount: '798'
 ht-degree: 100%
 
 ---
@@ -38,7 +39,7 @@ Web サイトの記事 [What you must know about HTTP/2](https://www.engadget.co
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
-## HTTP/2 への移行対象となるお客様 {#am-i-eligible-to-switch-over-to-http}
+## HTTP/2 に切り替えるには {#am-i-eligible-to-switch-over-to-http}
 
 HTTP/2 を使用するには、以下の要件を満たしている必要があります。
 

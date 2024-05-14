@@ -2,12 +2,13 @@
 title: クライアントサイドのデバイスピクセル比（DPR）を使用したスマートイメージングについて
 description: Dynamic Media を含む Adobe Experience Manager as a Cloud Service のスマートイメージングでクライアントサイドのデバイスピクセル比を使用する方法について説明します。
 contentOwner: Rick Brough
+feature: Device Pixel Ratio,Smart Imaging
 role: Admin,User
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 100%
+source-wordcount: '322'
+ht-degree: 95%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 現在のスマートイメージングソリューションでは、ユーザーエージェント文字列を使用して、使用されているデバイスのタイプ（デスクトップ、タブレット、モバイルなど）を判断します。
 
-特に Apple デバイスでは、デバイス検出機能（ユーザーエージェント文字列に基づく DPR）が不正確な場合がよくあります。また、新しいデバイスが起動されるたびに、そのデバイスを検証する必要があります。
+特にApple デバイスでは、デバイス検出機能（ユーザーエージェント文字列に基づく DPR）が不正確な場合がよくあります。 また、新しいデバイスが起動されるたびに、そのデバイスを検証する必要があります。
 
 クライアントサイド DPR では、100％ 正確な値が提供され、起動されたデバイスが Apple であるか、それ以外の新しいデバイスであるかにかかわらず、あらゆるデバイスで機能します。
 
@@ -73,4 +74,3 @@ ht-degree: 100%
 >[!MORELIKETHIS]
 >
 >* [スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)
-

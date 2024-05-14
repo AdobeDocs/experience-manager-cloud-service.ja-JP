@@ -5,9 +5,10 @@ contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
+feature: Publishing,Dynamic Media
 role: User
 exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
 source-wordcount: '2946'
 ht-degree: 100%
@@ -105,9 +106,9 @@ Adobe Experience Manager または Dynamic Media との間でアセットを公�
    * アセットを公開するフォルダーに移動します。フォルダーを選択し、ツールバーの「**[!UICONTROL 公開を管理]**」を選択します。**[!UICONTROL リスト表示]**&#x200B;を使用すると、特定のフォルダーの公開ステータスをより簡単に確認できます。
    * アセットを公開するフォルダーに移動します。フォルダーを開き、1 つ以上のアセットを選択します。ツールバーで「**[!UICONTROL 公開を管理]**」を選択します。**[!UICONTROL リスト表示]**&#x200B;を使用すると、特定のアセットの公開ステータスをより簡単に確認できます。
 
-      >[!NOTE]
-      >
-      >ツールバーに「**[!UICONTROL 公開を管理]**」が表示されない場合は、省略記号ボタンを選択し、リストメニューから「**[!UICONTROL 公開を管理]**」を選択します。
+     >[!NOTE]
+     >
+     >ツールバーに「**[!UICONTROL 公開を管理]**」が表示されない場合は、省略記号ボタンを選択し、リストメニューから「**[!UICONTROL 公開を管理]**」を選択します。
 
 1. **[!UICONTROL 公開を管理 - オプション]**&#x200B;ページの「**[!UICONTROL アクション]**」で、目的のアクティベーションの種類を選択します。
 
@@ -136,9 +137,9 @@ Adobe Experience Manager または Dynamic Media との間でアセットを公�
    * アセットを非公開にするフォルダーに移動します。フォルダーを選択し、ツールバーの「**[!UICONTROL 公開を管理]**」を選択します。**[!UICONTROL リスト表示]**&#x200B;を使用すると、特定のフォルダーの公開ステータスをより簡単に確認できます。
    * アセットを非公開にするフォルダーに移動します。フォルダーを開き、1 つ以上のアセットを選択します。ツールバーで「**[!UICONTROL 公開を管理]**」を選択します。**[!UICONTROL リスト表示]**&#x200B;を使用すると、特定のアセットの公開ステータスをより簡単に確認できます。
 
-      >[!NOTE]
-      >
-      >ツールバーに「**[!UICONTROL 公開を管理]**」が表示されない場合は、省略記号ボタンを選択し、リストメニューから「**[!UICONTROL 公開を管理]**」を選択します。
+     >[!NOTE]
+     >
+     >ツールバーに「**[!UICONTROL 公開を管理]**」が表示されない場合は、省略記号ボタンを選択し、リストメニューから「**[!UICONTROL 公開を管理]**」を選択します。
 
 1. **[!UICONTROL 公開を管理 - オプション]**&#x200B;ページの「**[!UICONTROL アクション]**」で、アクティベーションを解除する種類を選択します。
 
@@ -175,11 +176,11 @@ Adobe Experience Manager または Dynamic Media との間でアセットを公�
    * アセットを公開するフォルダーに移動します。フォルダーを選択し、ツールバーで「**[!UICONTROL クイック公開]**」を選択します。**[!UICONTROL リスト表示]**&#x200B;を使用すると、特定のフォルダーの公開ステータスをより簡単に確認できます。
    * アセットを公開するフォルダーに移動します。フォルダーを開き、1 つ以上のアセットを選択します。ツールバーの「**[!UICONTROL クイック公開]**」を選択します。**[!UICONTROL リスト表示]**&#x200B;を使用すると、特定のアセットの公開ステータスをより簡単に確認できます。
 
-      >[!NOTE]
-      >
-      >ツールバーに「**[!UICONTROL クイック公開]**」が表示されない場合は、省略記号ボタンを選択し、リストメニューから「**[!UICONTROL クイック公開]**」を選択します。
+     >[!NOTE]
+     >
+     >ツールバーに「**[!UICONTROL クイック公開]**」が表示されない場合は、省略記号ボタンを選択し、リストメニューから「**[!UICONTROL クイック公開]**」を選択します。
 
-      ![Dynamic Media に対するフォルダーレベルのクイック公開](/help/assets/assets-dm/selective-publish-folder-quick-publish-to-dm.png)
+     ![Dynamic Media に対するフォルダーレベルのクイック公開](/help/assets/assets-dm/selective-publish-folder-quick-publish-to-dm.png)
 
 1. 「**[!UICONTROL クイック公開]**」メニューリストから、次のいずれかのオプションを選択します。
 
@@ -266,8 +267,7 @@ Experience Manager の&#x200B;**[!UICONTROL カード表示]**、**[!UICONTROL �
 **[!UICONTROL リスト表示]**&#x200B;を使用する場合、**[!UICONTROL Dynamic Media]** の公開状態に関する追加の列が表示されます。
    * Dynamic Media と同期するように設定されたフォルダーには、デフォルトで「**[!UICONTROL Dynamic Media]**」列が表示されます。
    * Dynamic Media と同期するように設定されて&#x200B;*いない*フォルダーには、「Dynamic Media」列は表示されません。
-
-      ![リスト表示とタイムライン](/help/assets/assets-dm/selective-publish-status-timeline.png)
+     ![リスト表示とタイムライン](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
 ## 選択的公開のトラブルシューティング {#selective-publish-troubleshoot}
 

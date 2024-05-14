@@ -2,11 +2,12 @@
 title: Web アプリケーションへの URL のリンク
 description: Dynamic Media で Web アプリケーションに URL をリンクする方法を説明します。
 contentOwner: Rick Brough
+feature: Publishing,Upload,Viewer Presets,Image Presets,Video
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 2009e549eadd97d4d2bfcccd728ece17ecfeede5
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1281'
 ht-degree: 100%
 
 ---
@@ -63,19 +64,19 @@ URL 文字列を取得する方法はいくつかあります。ただし、次�
 
    * 画像を選択した場合は、ドロップダウンメニューで「**[!UICONTROL レンディション]**」を選択します。
 
-      「**[!UICONTROL 動的]**」ヘッダーの下にあるプリセット名を選択すると、右側のフレームにレンディションが表示されます。「動的」ヘッダーを表示するには、必要に応じて、レンディションリストをスクロールします。
+     「**[!UICONTROL 動的]**」ヘッダーの下にあるプリセット名を選択すると、右側のフレームにレンディションが表示されます。「動的」ヘッダーを表示するには、必要に応じて、レンディションリストをスクロールします。
 
-      左パネルの下部にある「**[!UICONTROL URL]**」を選択します。
+     左パネルの下部にある「**[!UICONTROL URL]**」を選択します。
 
-      ![chlimage_1-270](assets/chlimage_1-270.png)
+     ![chlimage_1-270](assets/chlimage_1-270.png)
 
    * スピンセット、画像セット、カルーセルセットまたはビデオを選択した場合は、ドロップダウンメニューで「**[!UICONTROL ビューア]**」を選択します。
 
-      左パネルで、ビューアプリセット名を選択します。セットまたはビデオのプレビューが別のページで開きます。
+     左パネルで、ビューアプリセット名を選択します。セットまたはビデオのプレビューが別のページで開きます。
 
-      左パネルの下部にある「**[!UICONTROL URL]**」を選択します。
+     左パネルの下部にある「**[!UICONTROL URL]**」を選択します。
 
-      ![chlimage_1-271](assets/chlimage_1-271.png)
+     ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. アセットをプレビューする場合やアセットを Web コンテンツページに追加する場合は、テキストを選択して Web ブラウザーにコピーします。
 
@@ -109,11 +110,11 @@ Dynamic Media では静的アセットの配信をサポートしています。
 
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
-         例： `https://aem.com/is/content/adobe/image.gif`
+        例： `https://aem.com/is/content/adobe/image.gif`
+
    * **[!UICONTROL アセット]**／**[!UICONTROL 動的レンディション]**&#x200B;を選択し、静的アセットの動的レンディションを選択して URL をコピーします。
 
-      コピーした URL を変更して、`is/image/` の代わりにパスの `is/content` を使用します。
-
+     コピーした URL を変更して、`is/image/` の代わりにパスの `is/content` を使用します。
 
 ## 公開されたビデオレンディションのビデオ URL の取得 {#obtaining-a-video-url-for-a-published-video-rendition}
 
@@ -167,8 +168,7 @@ Dynamic Media では静的アセットの配信をサポートしています。
 
    * 「**[!UICONTROL 登録 ID]**」の下で、ID の最後の部分にある顧客名をコピーします。コピーした顧客名は後の手順で必要になります。
 
-      例えば、登録 ID が `87654321|demoCo` の場合、コピーする顧客名は `demoCo` です。
-
+     例えば、登録 ID が `87654321|demoCo` の場合、コピーする顧客名は `demoCo` です。
 
 1. 使用しているビデオ配信プロトコルに基づいて、それぞれのプロトコルセレクターをコピーします。コピーしたプロトコルセレクターは後の手順で必要になります。
 
