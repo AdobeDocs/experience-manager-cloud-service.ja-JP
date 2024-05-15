@@ -1,50 +1,50 @@
 ---
-title: AEM Formsas a Cloud Service用Edge Delivery Servicesの Real Use Monitoring （RUM）
-description: AEM Formsas a Cloud Service用Edge Delivery Servicesの実際の使用状況のモニタリング（RUM）には、フォームとのユーザーインタラクションの継続的なトラッキングと分析が含まれます。
+title: AEM Forms as a Cloud Service の Edge Delivery Services の実際の使用のモニタリング（RUM）
+description: AEM Forms as a Cloud Service の Edge Delivery Services の実際の使用のモニタリング（RUM）では、フォームでのユーザーインタラクションの継続的なトラッキングと分析を行います。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '792'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 
-# AEM Formsas a Cloud Service用Edge Delivery Servicesの Real Use Monitoring （RUM）
+# AEM Forms as a Cloud Service の Edge Delivery Services の実際の使用のモニタリング（RUM）
 
-Real Use Monitoring （RUM）を使用すると、訪問者がAdobe Experience Manager（AEM）の web サイトとやり取りする方法に関する実際のインサイトを得ることができます。 この組み込みツールは、ユーザーの行動を理解し、パフォーマンスの問題を診断し、web サイト実験の有効性を測定するための貴重なデータを提供します。 RUM は、実際の使用インタラクションをキャプチャすることで、合成テストを超え、サイトのパフォーマンスをより正確に把握できます。
+Real Use Monitoring（RUM）を使用すると、訪問者が Adobe Experience Manager（AEM）の web サイトとどのようにやり取りしているかに関し、実際のインサイトを得ることができます。この組み込みツールには、ユーザーの行動を理解し、パフォーマンスの問題を診断し、web サイトの実験の効果を測定するための貴重なデータが用意されています。RUM は実際の使用インタラクションを取り込むことで合成テストよりも優れており、サイトのパフォーマンスをより正確に把握できます。
 
-ただし、RUM は訪問者のプライバシーを優先します。 サンプリング技術を利用して、代表的なユーザーのサブセットからデータを収集し、個人を特定できる情報（PII）が一切取り込まれないようにします。 さらに、RUM はデータの最小化を念頭に置いて設計されており、パフォーマンス分析に必要な基本的な指標のみを収集します。 このアプローチを使用すると、ユーザーの信頼を維持しながらAEM サイトを最適化できます。
+ただし、RUM は訪問者のプライバシーを優先します。サンプリング技術を利用してユーザーの代表的なサブセットからデータを収集し、個人を特定できる情報（PII）が一切取り込まれないようにします。また、RUM はデータの最小化を念頭に置いて設計され、パフォーマンス分析に必須の重要な指標のみを収集します。このアプローチにより、ユーザーの信頼を維持しながら AEM サイトを最適化できます。
 
 
 ## 前提条件
 
-次の URL にアクセスすると、AEM Formsas a Cloud ServiceEdge Delivery Servicesのモニタリングダッシュボードを確認できます。
+次の URL にアクセスすると、AEM Forms as a Cloud Service の Edge Delivery Services のモニタリングダッシュボードを表示できます。
 
 https://data.aem.live/?ext=forms
 
-![FormsのEdge Delivery Servicesの RUM ログイン画面](/help/edge/assets/rum-login-screen.png)
+![Forms の Edge Delivery Forms の RUM ログイン画面](/help/edge/assets/rum-login-screen.png)
 
-AEM Formsas a Cloud ServiceEdge Delivery Servicesのモニタリングダッシュボードにログインするには、以下を入力します。
+AEM Forms as a Cloud Service の Edge Delivery のモニタリングダッシュボードにログインするには、以下を入力します。
 
 * **URL**：URL はユーザーのサイトまたはドメインに固有です。ユーザーは、サイトまたはドメインをフィルタリングして、要件に応じてダッシュボードを表示することもできます。
 
-* **ドメインキー**：ユーザーが手動でドメインキーを生成します。フォームのドメインキーを取得するには、Adobe担当者にお問い合わせください。
+* **ドメインキー**：ユーザーが手動でドメインキーを生成します。フォームのドメインキーを取得するには、アドビ担当者にお問い合わせください。
 
-### AEM Forms用Edge Delivery Servicesの監視ダッシュボードのas a Cloud Service
+### AEM Forms as a Cloud Service 向け Edge Delivery Services のモニタリングダッシュボード
 
-ログイン画面に URL とドメインキーを入力すると、AEM Forms as a Cloud Service用のEdge Delivery Servicesのモニタリングダッシュボードにアクセスできます。
+ログイン画面に URL とドメインキーを入力すると、AEM Forms as a Cloud Service の Edge Delivery Services のモニタリングダッシュボードにアクセスできます。
 
-以下の図に、AEM Formsas a Cloud Service用Edge Delivery Servicesのダッシュボードを示します。
+AEM Forms as a Cloud Service の Edge Delivery Services のダッシュボードを次の図に示します。
 
 ![RUM Forms ダッシュボード](/help/edge/assets/rum-forms-dashboard.png)
 
-### Formsのダッシュボードの様々な主要指標 {#different-metrics-rum-dashboard-forms}
+### Forms のダッシュボードの様々な主要指標 {#different-metrics-rum-dashboard-forms}
 
-このダッシュボードでは、訪問者がAdobe Experience Manager（AEM） web サイト上のフォームを操作する方法に関する重要なインサイトを得ることができます。 これらの指標を監視することで、改善すべき領域を特定し、ユーザーエクスペリエンスとコンバージョン率が向上するようにフォームを最適化できます。
+このダッシュボードでは、訪問者が Adobe Experience Manager（AEM）web サイト上のフォームを操作する方法に関する重要なインサイトを得ることができます。これらの指標を監視することで、改善すべき領域を特定し、ユーザーエクスペリエンスとコンバージョン率を向上させるためにフォームを最適化できます。
 
 * **フォームビュー**：フォームが表示された合計回数を追跡します
 * **フォーム送信**：完了した送信の合計数を追跡します
@@ -69,12 +69,12 @@ AEM Formsas a Cloud ServiceEdge Delivery Servicesのモニタリングダッシ�
 
 これらの指標を分析することで、次の機会を特定できます。
 
-* フォームを簡素化し、フィールド数を減らします。
-* 手順とラベルが明確になり、フォームがより明確になりました。
-* モバイルの応答性を高めるためにフォームのレイアウトを最適化します。
-* フォームの読み込みを遅らせる技術的な問題に対処します。
+* フォームを簡素化し、フィールド数を減らす。
+* 明確な指示とラベルにより、フォームの明瞭さが向上する。
+* モバイルの応答性を高めるためにフォームのレイアウトを最適化する。
+* フォームの読み込みを遅らせる技術的な問題に対処する。
 
-これらの領域に焦点を当てることで、より使いやすいフォームを作成し、訪問者にそれらを完了させるように促すことができ、最終的にはコンバージョン率の向上につながります。
+これらの領域に焦点を当てることで、より使いやすいフォームを作成し、訪問者にフォームへの入力を促すことができ、最終的にはコンバージョン率の向上につながります。
 
 ## 関連トピック
 
