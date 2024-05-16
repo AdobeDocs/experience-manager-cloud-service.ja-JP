@@ -1,20 +1,33 @@
 ---
-title: ユニバーサルエディターオーサリングエクスペリエンスのカスタマイズ
+title: ユニバーサルエディターのカスタマイズと拡張
 description: コンテンツ作成者のニーズに合わせてユニバーサルエディターの UI をカスタマイズできる、様々な拡張ポイントやその他の機能について説明します。
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
-workflow-type: ht
-source-wordcount: '302'
-ht-degree: 100%
+source-git-commit: bdd67fb383bf20399eacaf9b9c086ea8468ea742
+workflow-type: tm+mt
+source-wordcount: '578'
+ht-degree: 50%
 
 ---
 
 
-# ユニバーサルエディターオーサリングエクスペリエンスのカスタマイズ {#customizing-ue}
+# ユニバーサルエディターのカスタマイズと拡張 {#customizing-extending}
 
 コンテンツ作成者のニーズに合わせてユニバーサルエディターのオーサリングエクスペリエンスをカスタマイズできる様々な拡張ポイントおよびその他の機能について説明します。
 
-## 公開の無効化 {#disable-publish}
+## 概要 {#overview}
+
+ユニバーサルエディターでは、プロジェクトのニーズに合わせて 2 種類の適応が可能です。
+
+* [ユニバーサルエディターのカスタマイズ](#customizing) - ユニバーサルエディターの標準機能は、複数のカスタマイズ設定を使用して適応させることができます。
+* [ユニバーサルエディター UI の拡張](#extending) - ユニバーサルエディターの UI は、プロジェクトのニーズに合わせて、App Builder を使用して拡張することもできます。
+
+両方のタイプについて、以降の節で詳しく説明します。
+
+## ユニバーサルエディターのカスタマイズ {#customizing}
+
+ユニバーサルエディターには、機能をカスタマイズするためのビルトインオプションがいくつか用意されています。
+
+### 公開の無効化 {#disable-publish}
 
 特定のオーサリングワークフローでは、コンテンツを公開する前に確認する必要があります。このような場合、どの作成者も公開オプションを使用できません。
 
@@ -24,7 +37,7 @@ ht-degree: 100%
 <meta name="urn:adobe:aue:config:disable" content="publish"/>
 ```
 
-## コンポーネントのフィルタリング {#filtering-components}
+### コンポーネントのフィルタリング {#filtering-components}
 
 ユニバーサルエディターを使用する場合、コンテナコンポーネントごとに使用可能なコンポーネントを制限できます。これを行うには、フィルター定義を指す、スクリプトタグをさらに追加導入する必要があります。
 
@@ -60,13 +73,15 @@ data-aue-filter="container-filter"
 ]
 ```
 
-## プロパティパネルでのコンポーネントを条件付きで表示および非表示にする {#conditionally-hide}
+### プロパティパネルでのコンポーネントを条件付きで表示および非表示にする {#conditionally-hide}
 
 1 つまたは複数のコンポーネントを一般的に作成者が利用できる場合がありますが、意味をなさない状況が発生する場合もあります。このような場合、`condition` 属性を[コンポーネントモデルのフィールド](/help/implementing/universal-editor/field-types.md#fields)に追加することによって、プロパティパネルでコンポーネントを非表示にすることができます。
 
 条件は、[ JsonLogic スキーマを使用して定義できます。](https://jsonlogic.com/) 条件が true の場合、フィールドが表示されます。条件が false の場合、フィールドは非表示になります。
 
-### サンプルモデル {#sample-model}
+>[!BEGINTABS]
+
+>[!TAB サンプルモデル]
 
 ```json
  {
@@ -89,11 +104,30 @@ data-aue-filter="container-filter"
  }
 ```
 
-#### 条件 False {#false}
+>[!TAB 条件 False]
 
 ![非表示のテキストフィールド](assets/hidden.png)
 
-#### 条件 True {#true}
+>[!TAB 条件 True]
 
 ![表示されたテキストフィールド](assets/shown.png)
 
+>[!ENDTABS]
+
+## ユニバーサルエディター UI の拡張 {#extending}
+
+Adobe Experience Cloud サービスとして、ユニバーサルエディターの UI は、App Builder とExperience Managerを使用して拡張できます。
+
+UI 拡張機能は、Adobeの App Builder で構築された JavaScript アプリケーションで、ユニバーサルエディターなどのAdobe Experience Cloud統合シェルで実行される UI アプリケーションに埋め込むことができます。 ヘッダーメニューとプロパティパネルに独自のボタンとアクションを追加したり、ユニバーサルエディター用に独自のイベントを作成したりできます。
+
+これらの可能性を調べるには、次のリソースを参照してください。
+
+1. [UI 拡張機能](https://developer.adobe.com/uix/docs/)  – これは、UI 拡張機能の開発者向けドキュメントです。
+1. [UI 拡張ガイド](https://developer.adobe.com/uix/docs/guides/)  – 独自の拡張機能を開発する手順
+1. [ユニバーサルエディターの拡張ポイント](https://developer.adobe.com/uix/docs/services/aem-universal-editor/) - ユニバーサルエディター固有の拡張ポイントドキュメント
+
+>[!TIP]
+>
+>手本で学びたい場合は、こちらを参照してください [AEM UI 拡張チュートリアル。](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) コンテンツフラグメントコンソールの拡張に重点を置いていますが、ユニバーサルエディターで UI 拡張機能を実装する場合の概念は同じです。
+
+[AEM SitesでのExtension Managerの使用](https://developer.adobe.com/uix/docs/extension-manager/) 拡張機能は、インスタンスごとに有効または無効にしたり、ユニバーサルエディターを含むAdobeのファーストパーティ拡張機能にアクセスしたりできます。
