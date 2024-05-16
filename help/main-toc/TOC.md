@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3eb2a7ce311f9e738a95ea5fcf6876f4df1fa648
-workflow-type: ht
-source-wordcount: '4930'
-ht-degree: 100%
+source-git-commit: 96ca7fce2cfa6ee337a4faa50a2434fd26bd9f0e
+workflow-type: tm+mt
+source-wordcount: '4941'
+ht-degree: 99%
 
 ---
 
@@ -190,6 +190,7 @@ ht-degree: 100%
    + [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service のセキュリティに関する考慮事項](/help/security/security-considerations.md)
    + [Adobe Developer Console での JWT 資格情報の非推奨（廃止予定）](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [Sling サービスユーザーマッピングおよびサービスユーザー定義のベストプラクティス](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
 + オンボーディング {#onboarding}
    + [ここから開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ja)
    + オンボーディングジャーニー {#journey}
