@@ -6,9 +6,9 @@ feature: Metadata
 role: User,Admin
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
 source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1033'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ XMP は、データモデル、ストレージモデル、スキーマを提供�
 
 従来のメタデータ（EXIF、ID3、Microsoft Office など）はすべて XMP に自動変換され、製品カタログなどの顧客固有のメタデータスキーマをサポートするよう拡張できます。
 
-XMP のメタデータは、一連のプロパティで構成されます。これらのプロパティは、常にリソースと呼ばれる特定のエンティティに関連付けられます。つまり、プロパティはリソースの「説明」です。 XMP の場合、リソースとなるのは常にアセットです。
+XMP のメタデータは、一連のプロパティで構成されます。これらのプロパティは常に、リソースとして参照される特定のエンティティに関連付けられます。つまり、プロパティはリソースの「説明」です。XMP の場合、リソースとなるのは常にアセットです。
 
 XMP によって定義される[メタデータ](https://en.wikipedia.org/wiki/Metadata)モデルは、任意の定義済みメタデータ項目のセットと併用できます。また、XMP によって、リソースで複数の処理手順が行われる際にその履歴を記録するうえで便利な基本的なプロパティに対して、特定の[スキーマ](https://en.wikipedia.org/wiki/XML_schema)も定義されます。処理手順は、撮影、[スキャン](https://en.wikipedia.org/wiki/Image_scanner)またはテキスト作成から、画像編集手順（[切り抜き](https://en.wikipedia.org/wiki/Cropping_%28image%29)やカラー調整など）を経て、最終的な画像へのアセンブリまでです。XMP の処理中に、各ソフトウェアプログラムまたはデバイスでデジタルリソースに独自の情報を付加できます。この情報は、最終的なデジタルファイルで保持されます。
 
@@ -159,4 +159,4 @@ The metadata changes are propagated to the renditions renditions thumbnail.140.1
 * [検索ファセット](search-facets.md)
 * [コレクションを管理](manage-collections.md)
 * [メタデータの一括読み込み](metadata-import-export.md)
-* [AEMとDynamic Mediaへのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

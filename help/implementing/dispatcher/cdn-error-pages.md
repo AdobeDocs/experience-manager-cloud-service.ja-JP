@@ -4,7 +4,7 @@ description: Amazon S3 や Azure Blob Storage などの自己ホスト型スト�
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 source-git-commit: 395e2faa6cd2a3430ce00208a4d904fe8e0c2333
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '376'
 ht-degree: 100%
 

@@ -6,9 +6,9 @@ role: Admin
 feature: Renditions
 exl-id: 869c1c34-6287-4d62-bb7a-aa4df580ac0e
 source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '502'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -76,4 +76,4 @@ FPO レンディションを生成するには、**[!UICONTROL 処理プロフ�
 * [検索ファセット](search-facets.md)
 * [コレクションを管理](manage-collections.md)
 * [メタデータの一括読み込み](metadata-import-export.md)
-* [AEMとDynamic Mediaへのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

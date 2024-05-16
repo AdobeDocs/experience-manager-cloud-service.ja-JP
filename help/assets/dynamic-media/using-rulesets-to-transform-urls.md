@@ -6,7 +6,7 @@ feature: Rulesets,Troubleshooting,Upload
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
 source-git-commit: ad2b36ffa178d787f50d33ce3393a76811467323
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '720'
 ht-degree: 100%
 

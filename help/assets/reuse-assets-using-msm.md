@@ -7,9 +7,9 @@ role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
 source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3407'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -386,4 +386,4 @@ MSM for [!DNL Assets] の制限事項を次に示します。
 * [コレクションを管理](manage-collections.md)
 * [メタデータの一括読み込み](metadata-import-export.md)
 * [コンテンツフラグメントの操作](/help/assets/content-fragments/content-fragments.md)
-* [AEMとDynamic Mediaへのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

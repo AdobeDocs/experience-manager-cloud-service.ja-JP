@@ -6,9 +6,9 @@ feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
 source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1066'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -187,4 +187,4 @@ ht-degree: 99%
 * [検索ファセット](search-facets.md)
 * [コレクションを管理](manage-collections.md)
 * [メタデータの一括読み込み](metadata-import-export.md)
-* [AEMとDynamic Mediaへのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

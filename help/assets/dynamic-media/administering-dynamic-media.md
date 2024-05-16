@@ -6,7 +6,7 @@ feature: Configuration,Viewer Presets,Image Presets,Dynamic Media
 role: Admin,User
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
 source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '172'
 ht-degree: 100%
 

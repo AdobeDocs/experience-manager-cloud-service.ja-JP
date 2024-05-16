@@ -6,9 +6,9 @@ feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1938'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -548,7 +548,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 * [検索ファセット](search-facets.md)
 * [コレクションを管理](manage-collections.md)
 * [メタデータの一括読み込み](metadata-import-export.md)
-* [AEMとDynamic Mediaへのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

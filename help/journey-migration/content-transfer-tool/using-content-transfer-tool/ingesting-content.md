@@ -3,9 +3,9 @@ title: コンテンツの Cloud Service への取り込み
 description: Cloud Acceleration Manager を使用して、移行セットから移行先の Cloud Service インスタンスにコンテンツを取り込む方法について説明します。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 6372277adfac0700d80a3e6c013f419892822e55
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2905'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -216,7 +216,7 @@ MongoDB に保存されるノードプロパティの値は 16 MB を超える�
 
 大きなノードすべてを見つけるのに役立つ Oak ツールへのリンクと詳細情報については、[コンテンツ転送ツールの前提条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)の `Node property value in MongoDB` メモを参照してください。サイズの大きいすべてのノードを修正したら、抽出と取り込みを再度実行します。
 
-この制限を回避するには、 [ベストプラクティスアナライザ](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) ソース AEM インスタンス上で、表示される結果（特に [「サポートされていないリポジトリー構造」（URS）](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs) パターン。
+この制限を回避するには、ソース AEM インスタンスで[ベストプラクティスアナライザー](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)を実行し、表示される結果、特に[「サポートされていないリポジトリ構造」（URS）](https://experienceleague.adobe.com/ja/docs/experience-manager-pattern-detection/table-of-contents/urs)パターンを確認します。
 
 ### 取り込みの取り消し {#ingestion-rescinded}
 

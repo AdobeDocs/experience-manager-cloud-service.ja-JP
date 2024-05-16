@@ -4,9 +4,9 @@ description: AEM as a Cloud Service リリース 2024.05.0 の移行ツールの
 feature: Release Information
 exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
 source-git-commit: 5275c759d38563f655d4861b191aaf583d001268
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '166'
-ht-degree: 42%
+ht-degree: 100%
 
 ---
 
@@ -18,16 +18,16 @@ ht-degree: 42%
 
 ### リリース日 {#release-date-bpa}
 
-ベストプラクティスアナライザー v2.1.48 のリリース日は 2024 年 5 月 9 日です。
+ベストプラクティスアナライザー v2.1.48 のリリース日は 2024年5月9日（PT）です。
 
 ### 新機能 {#what-is-new-bpa}
 
-* ベストプラクティスアナライザー（BPA）で、BPA で生成されたレポートの Cloud Acceleration Manager （CAM）への直接アップロードがサポートされるようになりました。 ユーザーは、レポートを手動でダウンロードして CAM にアップロードする必要がなくなりました。 詳細情報 [こちら](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer)
+* ベストプラクティスアナライザー（BPA）では、BPA で生成されたレポートを Cloud Acceleration Manager（CAM）に直接自動アップロードできるようになりました。ユーザーはレポートを手動でダウンロードして CAM にアップロードする必要がなくなります。詳しくは[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer)を参照してください
 
 ## Cloud Acceleration Manager {#cam-release}
 
 ### 新機能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager （CAM）で、BPA で生成されたレポートの CAM への直接の自動アップロードがサポートされるようになりました。 詳細情報 [こちら](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase#best-practices-analysis)
+* Cloud Acceleration Manager（CAM）では、BPA で生成されたレポートを CAM に直接自動アップロードできるようになりました。詳しくは[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase#best-practices-analysis)を参照してください
 
-* Cloud Acceleration Manager では、ノード数、データストアのサイズなどの要因を考慮して、取り込みに要する時間の見積もりを提供するようになりました。 詳細情報 [こちら](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content)
+* Cloud Acceleration Manager では、ノード数、データストアのサイズなどの要素に基づいて、取り込み時間の推定が提供されるようになりました。詳しくは[こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content)を参照してください

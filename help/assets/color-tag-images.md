@@ -3,9 +3,9 @@ title: 画像のカラータグ
 description: Adobe Experience Manager Assets を使用すると、画像内のカラーを識別し、自動的にタグとして適用できます。その後、これらのタグを使用して、画像を検索およびフィルタリングできます。
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1244'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -196,4 +196,4 @@ DAM 内の既存の画像には、自動的にカラーがタグ付けされま�
 * [検索ファセット](search-facets.md)
 * [コレクションを管理](manage-collections.md)
 * [メタデータの一括読み込み](metadata-import-export.md)
-* [AEMとDynamic Mediaへのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

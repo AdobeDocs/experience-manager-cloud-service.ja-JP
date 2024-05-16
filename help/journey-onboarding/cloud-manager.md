@@ -4,7 +4,7 @@ description: プロジェクトリソースを設定するための Cloud Manage
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 source-git-commit: 0e0337f6e14aa2f5b616ebc0a4b3c95089637369
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1040'
 ht-degree: 100%
 

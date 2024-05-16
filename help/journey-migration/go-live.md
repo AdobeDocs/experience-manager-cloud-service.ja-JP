@@ -3,9 +3,9 @@ title: 運用開始
 description: コードとコンテンツがクラウドに対応した後に移行を実行する方法について
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 source-git-commit: 4a03e2fe3519fd9e0d8d646526ea6c9cc6637f52
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1239'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -113,7 +113,7 @@ ht-degree: 99%
 
 ## 公開チェックリスト {#Go-Live-Checklist}
 
-詳しくは、を参照してください [運用開始チェックリスト](/help/journey-onboarding/go-live-checklist.md) ドキュメント。
+詳しくは、[公開チェックリスト](/help/journey-onboarding/go-live-checklist.md)のドキュメントを参照してください。
 
 ## 次の手順 {#what-is-next}
 

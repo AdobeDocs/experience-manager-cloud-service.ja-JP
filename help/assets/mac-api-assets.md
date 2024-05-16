@@ -6,9 +6,9 @@ feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1677'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
-> コンテンツフラグメント管理 API の OpenAPI 実装を最新化しました。 完全なドキュメントについては、以下を参照してください。 [コンテンツフラグメント管理 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). 新しい OpenAPI 実装を使用することをお勧めします。 コンテンツフラグメントに対して Assets HTTP API を使用している既存の環境は、新しいコンテンツフラグメント管理 OpenAPI に移行する必要があります。
+> コンテンツフラグメント管理 API の最新の OpenAPI 実装が利用可能です。完全なドキュメントについては、[コンテンツフラグメント管理 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) を参照してください。新しい OpenAPI 実装を使用することをお勧めします。コンテンツフラグメントに関する Assets HTTP API の既存の使用法は、新しいコンテンツフラグメント管理 OpenAPI に移行する必要があります。
 
 API にアクセスするには、次の手順を実行します。
 
@@ -306,7 +306,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 * [検索ファセット](search-facets.md)
 * [コレクションを管理](manage-collections.md)
 * [メタデータの一括読み込み](metadata-import-export.md)
-* [AEMとDynamic Mediaへのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

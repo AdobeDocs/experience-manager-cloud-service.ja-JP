@@ -3,7 +3,7 @@ title: 機能テスト
 description: コードの品質と信頼性を確保するために、AEM as a Cloud Service デプロイメントプロセスに組み込まれている 3 種類の機能テストについて説明します。
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: b85d43a05c8bb8a6438ab44bd184b7624456ab6a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1354'
 ht-degree: 100%
 

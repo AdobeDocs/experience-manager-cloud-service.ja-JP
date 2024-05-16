@@ -1,23 +1,23 @@
 ---
 title: 公開チェックリスト
-description: AEM as a Cloud Service環境で正常に運用開始するために必要な、すべての要素について説明します
-source-git-commit: 4a03e2fe3519fd9e0d8d646526ea6c9cc6637f52
-workflow-type: tm+mt
+description: AEM as a Cloud Service の運用開始を成功させるために必要なすべての要素について説明します。
+exl-id: b424a9db-0f3b-4a8d-be84-365d68df46ca
+source-git-commit: 581f075483280e4b33574bfd4cc1cb01b5601440
+workflow-type: ht
 source-wordcount: '575'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-
 # 公開チェックリスト {#Go-Live-Checklist}
 
-アクティビティのこのリストを確認し、運用開始をスムーズかつ正常に実行できるようにします。
+このアクティビティのリストを確認して、運用開始をスムーズかつ正常に実行できるようにします。
 
 * 機能テストと UI テストを含んだエンドツーエンドの実稼動パイプラインを実行して、AEM 製品エクスペリエンスを&#x200B;**常に最新**&#x200B;に保ちます。詳しくは、次のリソースを参照してください。
    * [AEM バージョンのアップデート](/help/implementing/deploying/aem-version-updates.md)
    * [カスタム機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [UI テスト](/help/implementing/cloud-manager/ui-testing.md)
-* AEM 6.5 から移行する場合は、コンテンツを実稼動環境に移行し、関連するサブセットがステージング環境でテストに使用できることを確認する必要があります。
+* AEM 6.5 から移行する場合は、コンテンツを本番環境に移行し、テスト用のステージングで関連するサブセットが使用可能であることを確認する必要があります。
    * AEM の DevOps ベストプラクティスでは、コードは開発環境から実稼動環境に移行しますが、コンテンツは実稼動環境から下方に移行します。
 * コードとコンテンツの凍結期間のスケジュールを設定します。
    * [移行に必要なコードおよびコンテンツの凍結タイムライン](#code-content-freeze)の節も参照してください。

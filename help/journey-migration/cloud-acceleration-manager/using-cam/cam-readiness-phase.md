@@ -3,15 +3,15 @@ title: Cloud Acceleration Manager での準備フェーズ
 description: このページでは、Cloud Acceleration Manager における準備フェーズの概要について説明します。
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 source-git-commit: 0c56cfdd2c18d3bc77edafdbda3f99fbc43f12cf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1045'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 # Cloud Acceleration Manager での準備フェーズ {#readiness-phase-cam}
 
-Cloud Acceleration Manager （CAM）でプロジェクトを作成したら、準備フェーズで現在のAdobe Experience Manager（AEM）の実装の評価を開始できます。
+Cloud Acceleration Manager（CAM）でプロジェクトを作成したら、準備フェーズで現在の Adobe Experience Manager（AEM）実装の評価を開始できます。
 
 準備フェーズには以下が含まれます。
 
@@ -36,8 +36,8 @@ Cloud Acceleration Manager （CAM）でプロジェクトを作成したら、�
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_bpa"
 >title="ベストプラクティス分析レポート"
->abstract="BPA レポートを CAM にアップロードすると、AEMas a Cloud Service環境への移行に関する BPA レポートの分析を提供できます。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="ベストプラクティスアナライザーの使用"
+>abstract="BPA レポートを CAM にアップロードして、AEM as a Cloud Service への移行に関する分析を提供できます。"
+>additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="ベストプラクティスアナライザーの使用"
 
 1. **ベストプラクティス分析**&#x200B;カードの「**レビュー**」をクリックします。
 
@@ -51,21 +51,21 @@ Cloud Acceleration Manager （CAM）でプロジェクトを作成したら、�
    1. [ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=best*)ポータルに移動し、ベストプラクティスアナライザーを zip ファイルとしてダウンロードします。
 
       >[!NOTE]
-      >BPA の実行方法については、 [ベストプラクティスアナライザーの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=ja#imp-considerations) を参照してください。
+      >BPA の実行方法については、[ベストプラクティスアナライザーの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=ja#imp-considerations)を参照してください。
 
-1. CAM で、をクリックします **アップロードキーを取得**&#x200B;を使用すると、BPA レポートを CAM に直接、自動的にアップロードするようにシステムを設定するためのキーを取得できます。
+1. CAM で「**アップロードキーを取得**」をクリックすると、BPA レポートを CAM に直接自動的にアップロードするためのシステム設定に必要なキーを取得できます。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
 
    >[!IMPORTANT]
-   >レポートは引き続き手動でアップロードできますが、アップロードキーを使用すると操作を効率化できます。 ブラウザーの匿名モードになっている場合は、レポートを手動でアップロードすることはできません。
+   >レポートは手動でアップロードすることもできますが、アップロードキーを使用すると操作が効率化されます。ブラウザーが匿名モードになっている場合は、レポートを手動でアップロードできないことに注意してください。
 
-1. 新しいレポートがアップロードされたら、CAM でベストプラクティス分析レポートを確認できます。
+1. 新しいレポートがアップロードされると、CAM でベストプラクティス分析レポートを表示できます。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
    >[!NOTE]
-   >複数の異なるレポートをアップロードする場合、詳細に表示されるレポートは常に、（アップロード日ではなく）最新の作成日を持つレポートです。
+   >複数の異なるレポートをアップロードする場合、詳細が表示されるレポートは、常に（アップロード日ではなく）作成日が最新のレポートです。
 
 1. CAM のベストプラクティス分析ダッシュボードを確認し、表示内容を検討します。詳しくは、[ベストプラクティス分析レポートの確認](#analysis-report)を参照してください。
 
@@ -78,7 +78,7 @@ Cloud Acceleration Manager で印刷プレビューオプションを選択し�
 
 次の手順に従います。
 
-1. 「」をクリックします **印刷プレビュー** アクション。
+1. **印刷プレビュー**&#x200B;アクションをクリックします。
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1b.png)
 
@@ -104,11 +104,11 @@ Cloud Acceleration Manager で印刷プレビューオプションを選択し�
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. から **表示** ドロップダウンリストから、 **トレンドラインレポート**&#x200B;を参照してください（下図を参照）。
+1. **表示**&#x200B;ドロップダウンリストから、「**トレンドラインレポート**」をクリックします（下図を参照）。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
 
-1. クリック **トレンドラインレポート** レポートのトレンドライン表示を開きます。
+1. 「**トレンドラインレポート**」をクリックすると、レポートのトレンドライン表示が開きます。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 

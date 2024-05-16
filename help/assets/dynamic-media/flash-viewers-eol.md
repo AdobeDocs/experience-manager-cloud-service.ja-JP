@@ -6,7 +6,7 @@ feature: FAQ,Dynamic Media,Troubleshooting
 role: Admin,User
 exl-id: d1f34d22-abcc-422e-b6da-3fa8097078b0
 source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '42'
 ht-degree: 100%
 
