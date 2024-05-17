@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service の高度なネットワーク機能の設定
 description: AEM as a Cloud Service の高度なネットワーク機能（VPN やフレキシブルまたは専用エグレス IP アドレスなど）を設定する方法について説明します。
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 3c0185c1a108f16ce3230aa8e949de3cf436d427
+source-git-commit: 2ce64892cd5bf414d328a9112c47092b762d3668
 workflow-type: tm+mt
 source-wordcount: '5093'
 ht-degree: 99%
@@ -77,7 +77,7 @@ AEM as a Cloud Service では、次の高度なネットワークオプション
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、プログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 
 1. **プログラム概要**&#x200B;ページから、「**環境**」タブに移動し、左側のパネルの「**ネットワークインフラストラクチャ**」を選択します。
 
@@ -242,7 +242,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、プログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 
 1. **プログラム概要**&#x200B;ページから、「**環境**」タブに移動し、左側のパネルの「**ネットワークインフラストラクチャ**」を選択します。
 
@@ -396,7 +396,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### デバッグの考慮事項 {#debugging-considerations}
 
-期待される専用 IP アドレスでトラフィックが実際に発信されていることを検証するには、目的のサービスでログを確認します（可能な場合）。それ以外の場合は、呼び出し元の IP アドレスを返す [http://ifconfig.me/ip](http://ifconfig.me/ip) などのデバッグサービスを呼び出すと便利です。
+期待される専用 IP アドレスでトラフィックが実際に発信されていることを検証するには、目的のサービスでログを確認します（可能な場合）。それ以外の場合は、次のようなデバッグサービスを呼び出すと便利です。 [https://ifconfig.me/ip](https://ifconfig.me/ip)：呼び出し元の IP アドレスを返します。
 
 ## 仮想プライベートネットワーク（VPN） {#vpn}
 
@@ -416,7 +416,7 @@ IPSec 技術を搭載したほとんどの VPN デバイスがサポートされ
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、プログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 
 1. **プログラム概要**&#x200B;ページから、「**環境**」タブに移動し、左側のパネルの「**ネットワークインフラストラクチャ**」を選択します。
 
@@ -631,7 +631,7 @@ Header always set Cache-Control private
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、プログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 
 1. **プログラムの概要**&#x200B;ページから「**環境**」タブに移動し、左側のパネルの&#x200B;**環境**&#x200B;見出しで高度なネットワーク設定を有効にする環境を選択します。次に、選択した環境の「**高度なネットワーク設定**」タブを選択し、「**ネットワークインフラストラクチャを有効にする**」をタップまたはクリックします。
 
@@ -690,7 +690,7 @@ API はわずか数秒で応答し、`updating` のステータスを示しま�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、プログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 
 1. **プログラムの概要**&#x200B;ページから「**環境**」タブに移動し、左側のパネルの&#x200B;**環境**&#x200B;見出しの下から、高度なネットワーク設定を有効にする環境を選択します。次に、選択した環境の「**高度なネットワーク設定**」タブを選択し、省略記号ボタンをクリックします。
 
@@ -728,7 +728,7 @@ API はわずか数秒で応答し、`updating` のステータスを示しま�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
-1. 日 **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、プログラムを選択します。
+1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 
 1. **プログラムの概要**&#x200B;ページから「**環境**」タブに移動し、左側のパネルの「**ネットワークインフラストラクチャ**」見出しを選択します。次に、削除するインフラストラクチャの横にある省略記号ボタンをクリックします。
 
