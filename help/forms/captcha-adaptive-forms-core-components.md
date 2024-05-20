@@ -5,10 +5,10 @@ topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA サービス, アダプティブフォーム, CAPTCHA の課題, ボットの回避, コアコンポーネント, フォーム送信セキュリティ, フォームスパムの防止
 feature: Adaptive Forms, Core Components
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
-source-wordcount: '918'
-ht-degree: 100%
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+workflow-type: tm+mt
+source-wordcount: '939'
+ht-degree: 98%
 
 ---
 
@@ -21,14 +21,16 @@ ht-degree: 100%
 
 CAPTCHA（コンピュータと人間を区別する完全に自動化された公開チューリングテスト）は、人間と自動化されたプログラム／ボットを区別するために、オンライントランザクションで一般的に使用されるプログラムです。テストを行ってユーザーの反応を評価し、サイトを使用しているのが人間かボットかを判断します。テストが失敗した場合の続行を防ぎ、ボットによるスパムの投稿や悪意のある目的を防止することで、オンライントランザクションの安全性を高めます。
 
-[!DNL AEM Forms] as a [!DNL Cloud Service] は、アダプティブフォームで Google reCAPTCHA v2 をサポートします。これを使用して、フォームの送信時に CAPTCHA の課題を提示できます。アダプティブフォームで reCAPTCHA を使用するには：
+AEM Forms as a Cloud Serviceは、次の CAPTCHA ソリューションをサポートしています。
 
-1. [AEM Forms 環境と Google による reCAPTCHA サービスとの接続](#connect-your-forms-environment-with-recaptcha-service-by-google)
-1. [アダプティブフォームを設定して、フォーム送信時に CAPTCHA の課題を表示する](#using-reCAPTCHA)
+* [Google reCAPTCHA](#connect-your-aem-forms-environment-with-recaptcha-service-by-google)
+* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+* [Captcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+
 
 ## AEM Forms 環境と Google による reCAPTCHA サービスとの接続 {#connect-your-forms-environment-with-recaptcha-service-by-google}
 
-AEM Forms 環境を Google による reCAPTCHA サービスに接続するには
+フォームの作成者は、Google による reCAPTCHA サービスを使用してアダプティブフォームに CAPTCHA を実装できます。サイトを保護する高度な CAPTCHA 機能を提供します。reCAPTCHA の仕組みについて詳しくは、[Google reCAPTCHA](https://developers.google.com/recaptcha/) を参照してください。[!DNL AEM Forms] as a [!DNL Cloud Service] は、アダプティブフォームで Google reCAPTCHA v2 をサポートします。これを使用して、フォームの送信時に CAPTCHA の課題を提示できます。AEM Forms 環境を Google による reCAPTCHA サービスに接続するには
 
 1. Google から [reCAPTCHA API キーペア](https://www.google.com/recaptcha/admin)を取得します。これには、**サイトキー**&#x200B;と&#x200B;**秘密鍵**&#x200B;が含まれます。
 

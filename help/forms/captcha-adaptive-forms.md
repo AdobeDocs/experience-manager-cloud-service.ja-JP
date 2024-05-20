@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 feature: Adaptive Forms, Foundation Components
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: ht
-source-wordcount: '1747'
-ht-degree: 100%
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+workflow-type: tm+mt
+source-wordcount: '1742'
+ht-degree: 97%
 
 ---
 
@@ -29,17 +29,15 @@ ht-degree: 100%
 
 CAPTCHA（コンピュータと人間を区別する完全に自動化された公開チューリングテスト）は、人間と自動化されたプログラム／ボットを区別するために、オンライントランザクションで一般的に使用されるプログラムです。テストを行ってユーザーの反応を評価し、サイトを使用しているのが人間かボットかを判断します。テストが失敗した場合の続行を防ぎ、ボットによるスパムの投稿や悪意のある目的を防止することで、オンライントランザクションの安全性を高めます。
 
-[!DNL AEM Forms] アダプティブフォームでの reCAPTCHA の使用. Google が提供する reCAPTCHA サービスを使用して、CAPTCHA を実装できます。
+AEM Forms as a Cloud Serviceは、次の CAPTCHA ソリューションをサポートしています。
 
->[!NOTE]
->
->* [!DNL AEM Forms] reCaptcha v2 および reCaptcha Enterprise をサポートします。 その他のバージョンはサポートされません。
->* アダプティブフォームの CAPTCHA は、[!DNL AEM Forms] アプリのオフラインモードではサポートされていません。
->
+* [Google reCAPTCHA](#configure-recaptcha-service-by-google)
+* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile.md)
+* [Captcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
 
 ## Google が提供する reCAPTCHA サービスの設定 {#google-reCAPTCHA}
 
-フォームの作成者は、Google による reCAPTCHA サービスを使用してアダプティブフォームに CAPTCHA を実装できます。サイトを保護する高度な CAPTCHA 機能を提供します。reCAPTCHA の仕組みについて詳しくは、[Google reCAPTCHA](https://developers.google.com/recaptcha/) を参照してください。reCAPTCHA サービスには以下が含まれます。 [!DNL reCAPTCHA v2] および [!DNL reCAPTCHA Enterprise] これらは、 [!DNL AEM Forms]. 要件に基づいて、reCAPTCHA サービスを設定して、次を有効にすることができます。
+フォームの作成者は、Google による reCAPTCHA サービスを使用してアダプティブフォームに CAPTCHA を実装できます。サイトを保護する高度な CAPTCHA 機能を提供します。reCAPTCHA の仕組みについて詳しくは、[Google reCAPTCHA](https://developers.google.com/recaptcha/) を参照してください。AEM Formsのサポート [!DNL reCAPTCHA v2] および [!DNL reCAPTCHA Enterprise]. その他のバージョンはサポートされません。 また、アダプティブFormsの reCAPTCHA は、上のオフラインモードではサポートされていません [!DNL AEM Forms] アプリ。 要件に基づいて、reCAPTCHA サービスを設定して、次を有効にすることができます。
 
 ![reCAPTCHA](/help/forms/assets/recaptcha_new.png)
 
@@ -100,9 +98,9 @@ reCAPTCHA Enterprise サービスを有効にすると、アダプティブフ�
 <!--![reCAPTCHA v2](/help/forms/assets/recaptcha-v2.png)-->
 
 
-## アダプティブフォームでの reCAPTCHA の使用 {#using-reCAPTCHA}
+## アダプティブフォームでのGoogle reCAPTCHA の使用 {#using-reCAPTCHA}
 
-アダプティブフォームで reCAPTCHA を使用するには、以下を実行します。
+アダプティブフォームでGoogle reCAPTCHA を使用するには：
 
 1. アダプティブフォームを編集モードで開きます。
 

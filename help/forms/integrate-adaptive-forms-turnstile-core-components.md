@@ -5,10 +5,10 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: a8a31bae0f937aa8941d258af648d6be030a9fac
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 23%
+source-wordcount: '891'
+ht-degree: 29%
 
 ---
 
@@ -16,15 +16,28 @@ ht-degree: 23%
 
 <span class="preview"> この機能は早期導入プログラムの対象です。 早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID で aem-forms-ea@adobe.com までメールを送信してください。</span>
 
-Cloudflare の Turnstile Captcha は、自動ボット、悪意のある攻撃、スパム、不要な自動トラフィックからフォームとサイトを保護することを目的としたセキュリティ対策です。 フォームの送信を許可する前に、人間であることを確認するためのチェックボックスがフォーム送信時に表示されます。 AEM Formsas a Cloud Serviceは、アダプティブ Forms コアコンポーネントでの Turnstile Captcha をサポートします。
+CAPTCHA（コンピュータと人間を区別する完全に自動化された公開チューリングテスト）は、人間と自動化されたプログラム／ボットを区別するために、オンライントランザクションで一般的に使用されるプログラムです。テストを行ってユーザーの反応を評価し、サイトを使用しているのが人間かボットかを判断します。テストが失敗した場合の続行を防ぎ、ボットによるスパムの投稿や悪意のある目的を防止することで、オンライントランザクションの安全性を高めます。
+
+AEM Forms as a Cloud Serviceは、次の CAPTCHA ソリューションをサポートしています。
+
+
+* [Cloudflare Turnstile](#integrate-aem-forms-environment-with-turnstile-captcha)
+* [Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
+* [Captcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+
+
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
 
-## AEM Forms環境と Turnstile Captcha を統合するための前提条件 {#prerequisite}
+## AEM Forms環境と Turnstile Captcha の統合
+
+Cloudflare の Turnstile Captcha は、自動ボット、悪意のある攻撃、スパム、不要な自動トラフィックからフォームとサイトを保護することを目的としたセキュリティ対策です。 フォームの送信を許可する前に、人間であることを確認するためのチェックボックスがフォーム送信時に表示されます。 AEM Formsas a Cloud Serviceは、アダプティブ Forms コアコンポーネントでの Turnstile Captcha をサポートします。
+
+### AEM Forms環境と Turnstile Captcha を統合するための前提条件 {#prerequisite}
 
 AEM Forms コアコンポーネント用の Turnstile を設定するには、以下を取得する必要があります [ターンスタイルサイトキーと秘密鍵](https://developers.cloudflare.com/turnstile/get-started/) Turnstile のウェブサイトから。
 
-## Turnstile の設定手順 {#steps-to-configure-hcaptcha}
+### ターンスタイルを設定 {#steps-to-configure-hcaptcha}
 
 AEM Formsを Turnstile サービスと統合するには、次の手順を実行します。
 
@@ -57,7 +70,7 @@ AEM Formsを Turnstile サービスと統合するには、次の手順を実行
 
    Turnstile Captcha サービスを設定すると、 [コアコンポーネントに基づくアダプティブフォーム](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/introduction).
 
-## アダプティブなForms コアコンポーネントでのターンスタイルの使用 {#using-turnstile-core-components}
+## アダプティブフォームでのターンスタイルの使用 {#using-turnstile-core-components}
 
 1. AEM Forms as a Cloud Service インスタンスを開きます。
 1. **[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;に移動します。
