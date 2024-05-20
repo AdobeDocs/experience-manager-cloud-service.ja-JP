@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 300bbbf0af0f0d896bf39f2a4e1fe4ed3d41f09a
+source-git-commit: 02388518f10d5c4bd34ad7d20a24877b468bff72
 workflow-type: tm+mt
-source-wordcount: '4946'
+source-wordcount: '4964'
 ht-degree: 99%
 
 ---
@@ -654,6 +654,8 @@ ht-degree: 99%
             + [アダプティブフォームの REST エンドポイント送信アクションへの送信を設定する](/help/forms/configure-submit-action-restpoint.md)
             + [アダプティブフォームのメール送信アクションの送信を設定する](/help/forms/configure-submit-action-send-email.md)
             + [アダプティブフォームでの Google reCAPTCHA の使用](/help/forms/captcha-adaptive-forms-core-components.md)
+            + [アダプティブフォームでの hCAPTCHA の使用](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [アダプティブフォームでのターンスタイルの使用](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [アダプティブフォームにカスタムエラーハンドラーの追加](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [コアコンポーネントに基づくアダプティブフォームのロケールの追加](/help/forms/supporting-new-language-localization-core-components.md)
             + [カスタム関数の作成と使用](/help/forms/create-and-use-custom-functions.md)
@@ -676,6 +678,7 @@ ht-degree: 99%
             + [遅延読み込みによる大きなフォームのパフォーマンスの向上](/help/forms/lazy-loading-adaptive-forms.md)
          + アダプティブフォームへのコンポーネントの追加 {#add-components-to-an-adaptive-form}
             + [アダプティブフォームでの CAPTCHA の使用](/help/forms/captcha-adaptive-forms.md)
+            + [アダプティブフォームでの Captcha の使用](/help/forms/integrate-adaptive-forms-hcaptcha.md)
             + [コアコンポーネントの使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
             + [手書き署名の適用](/help/forms/signing-forms-using-scribble.md)
             + [アダプティブフォームへのテーブルの追加](/help/forms/adaptive-forms-tables.md)
