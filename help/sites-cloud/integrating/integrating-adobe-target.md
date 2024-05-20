@@ -1,13 +1,13 @@
 ---
 title: Adobe Target との統合
-description: タッチ UI と Launch を使用して、Adobe TargetをAEM as a Cloud Serviceと統合する方法についてAdobeします。
+description: タッチ UI と Adobe Launch を使用して、Adobe Target を AEM as a Cloud Service と統合する方法について説明します。
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3ac17f1a67f4d952a0206b124d70762b65e1f354
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 96%
+source-wordcount: '1065'
+ht-degree: 90%
 
 ---
 
@@ -20,7 +20,7 @@ Adobe Experience Cloud に含まれている Adobe Target を使用すると、�
 
 Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／タグ）の両方のクライアントサイドプロパティを管理するために必要です。ただし、「エクスペリエンスのターゲット設定」には、Launch との統合が必要です。
 
-エクスペリエンスフラグメントやコンテンツフラグメントを Target に書き出す場合は、[Adobe Target 設定と IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md) のみ必要です。
+エクスペリエンスフラグメントやコンテンツフラグメントを Target に書き出す場合、 [Adobe Target設定](#create-configuration)を含む [IMS 統合](#ims-configuration).
 
 >[!NOTE]
 >
@@ -38,7 +38,20 @@ Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／
 
 ### IMS 設定 {#ims-configuration}
 
-Target を AEM および Launch と適切に統合するには、Launch と Target の両方の IMS 設定が必要です。Launch の IMS 設定は AEM as a Cloud Service で事前に設定されていますが、Target の IMS 設定は、Target のプロビジョニング後に作成する必要があります。[Adobe Target との統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-target-ims.md)とビデオ（[Experience Platform Launch と AEM の統合](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=ja)）を参照して、Target IMS 設定の作成方法を学びます。
+Target Standard API を介して AEM と Adobe Target を統合するには、Adobe IMS（Identity Management System）の設定が必要です。Target のプロビジョニング後に、Target IMS 設定を作成する必要があります。 参照： [AEM用 IMS 統合の設定as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) およびビデオ [Experience Platform LaunchとAEMの統合](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=ja) で Target IMS 設定の作成方法を説明します。
+
+>[!NOTE]
+>
+>[IMS 統合が S2S OAuth で設定されるようになりました。](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>
+>以前の設定は次のもので行われました： [Adobe Developer コンソールで廃止される可能性がある JWT 資格情報](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
+
+>[!NOTE]
+>
+>プロジェクトを設定する際にで表示される製品プロファイルは、次のものがあるかどうかによって異なります。
+>
+>* Adobe Target Standard - **デフォルトのワークスペース**&#x200B;のみ使用可能です
+>* Adobe Target Premium - 以下に示すように、使用可能なすべてのワークスペースが一覧表示されます
 
 ### Adobe Target テナント ID と Adobe Target クライアントコード {#tenant-client}
 
@@ -107,7 +120,7 @@ AEM は、Experience Platform Launch との標準の統合を提供します。A
 **拡張機能**&#x200B;は、コアライブラリ設定を管理するコンテナです。Adobe Target 拡張機能は at.js（最新の web 用 Target JavaScript SDK）によるクライアントサイド実装をサポートしています。**Adobe Target** と **Adobe ContextHub** の両方の拡張機能を追加する必要があります。
 
 1. 「拡張機能カタログ」オプションを選択し、フィルターで Target を検索します。
-2. 選択 **Adobe Target** at.js に移動し、「インストール」オプションをクリックします。
+2. 「**Adobe Target** at.js」を選択し、「インストール」オプションを選択します。
    ![Target 検索 ](assets/search_ext1.png "Target 検索")
 3. 「**設定**」ボタンを選択します。設定ウィンドウに、読み込まれた Target アカウントの資格情報と、この拡張機能の at.js バージョンが表示されます。
 4. 「**保存**」を選択して、Target 拡張機能を Launch プロパティに追加します。「**インストール済みの拡張機能**」リストの下に Target 拡張機能が表示されます。

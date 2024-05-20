@@ -2,16 +2,27 @@
 title: Adobe Target との統合時に使用する IMS 設定
 description: Adobe Target との統合時に使用する IMS 設定について説明します
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
-source-wordcount: '854'
-ht-degree: 100%
+hide: true
+hidefromtoc: true
+index: false
+source-git-commit: 43c820996af947fab2bacdec7646211f4104ae4d
+workflow-type: tm+mt
+source-wordcount: '901'
+ht-degree: 94%
 
 ---
 
 # Adobe Target との統合時に使用する IMS 設定{#ims-configuration-for-integration-with-adobe-target}
 
 Target Standard API を介して AEM と Adobe Target を統合するには、Adobe IMS（Identity Management System）の設定が必要です。この設定は、Adobe Developer コンソールで行います。
+
+>[!CAUTION]
+>
+>このページで説明されている設定は、新規または更新された統合には使用できなくなりました。
+>
+>[IMS 統合が S2S OAuth で設定されるようになりました。](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>
+>このページで説明されているように、以前の設定はで行われました [Adobe Developer コンソールで廃止される可能性がある JWT 資格情報](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 >[!NOTE]
 >

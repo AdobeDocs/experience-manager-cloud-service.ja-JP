@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 02388518f10d5c4bd34ad7d20a24877b468bff72
+source-git-commit: 30b9d71890f5d3a1a13e0b570c370a148eb19db6
 workflow-type: tm+mt
-source-wordcount: '4964'
+source-wordcount: '4956'
 ht-degree: 99%
 
 ---
@@ -191,6 +191,7 @@ ht-degree: 99%
    + [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service のセキュリティに関する考慮事項](/help/security/security-considerations.md)
    + [Adobe Developer Console での JWT 資格情報の非推奨（廃止予定）](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [AEM用 IMS 統合の設定as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [Sling サービスユーザーマッピングとサービスユーザー定義のベストプラクティス](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
 + オンボーディング {#onboarding}
    + [ここから開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ja)
@@ -416,10 +417,8 @@ ht-degree: 99%
    + AEM as a Cloud Service との統合 {#integrations}
       + [Adobe Analytics との統合](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Adobe Analytics 自動設定との統合](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
-      + [Adobe Analytics との統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Adobe Learning Manager との統合](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Adobe Target との統合](/help/sites-cloud/integrating/integrating-adobe-target.md)
-      + [Adobe Target との統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し ](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)

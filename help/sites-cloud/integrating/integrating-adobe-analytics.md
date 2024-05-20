@@ -1,19 +1,19 @@
 ---
 title: Adobe Analytics との統合
-description: タッチ UI と Launch を使用して、Adobe AnalyticsをAEM as a Cloud Serviceと統合する方法についてAdobeします。
+description: タッチ UI とAdobe Launch を使用して、Adobe AnalyticsをAEM as a Cloud Serviceと統合する方法を説明します。
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 3ac17f1a67f4d952a0206b124d70762b65e1f354
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 93%
+source-wordcount: '588'
+ht-degree: 81%
 
 ---
 
 # Adobe Analytics との統合{#integrating-with-adobe-analytics}
 
-Adobe AnalyticsとAEMの統合as a Cloud Service機能を使用すると、Web ページのアクティビティを追跡できます。 統合には次の要件があります。
+Adobe AnalyticsとAEMの統合as a Cloud Service機能を使用すると、web ページのアクティビティをトラッキングできます。 統合には次の要件があります。
 
 * AEM as a Cloud Service で Analytics 設定を作成するためのタッチ UI を使用できることAdobe Analytics を AEM as a Cloud Service と統合するには、IMS 認証が必要です。
 * [Adobe Launch](#analytics-launch) の拡張機能として Adobe Analytics を追加し、設定できることAdobe Launch について詳しくは、[このページ](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=ja)を参照してください。
@@ -47,7 +47,15 @@ Adobe AnalyticsとAEMの統合as a Cloud Service機能を使用すると、Web �
 
 ### Adobe Analytics と IMS 認証 {#configuration-parameters-ims}
 
-Adobe Analytics を AEM as a Cloud Service と適切に統合するには、IMS 設定が必要です。この設定を作成する必要があります。詳しくは、[こちらのページ](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)を参照して、Analytics の IMS 設定の作成方法を確認してください。
+Analytics Standard API を使用してAdobe Experience Manager as a Cloud Service（AEMaaCS）とAdobe Analyticsを統合するには、Adobe IMS（Identity Management System）を設定する必要があります。
+
+参照： [AEM用 IMS 統合の設定as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) ims 設定の作成方法について説明します。
+
+>[!NOTE]
+>
+>[IMS 統合が S2S OAuth で設定されるようになりました。](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>
+>以前の設定は次のもので行われました： [Adobe Developer コンソールで廃止される可能性がある JWT 資格情報](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 ### サイトへの設定の追加 {#add-configuration}
 

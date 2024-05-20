@@ -2,9 +2,12 @@
 title: Adobe Analytics との統合時に使用する IMS 設定
 description: Adobe Analytics との統合時に使用する IMS 設定について説明します
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+hide: true
+hidefromtoc: true
+index: false
+source-git-commit: 43c820996af947fab2bacdec7646211f4104ae4d
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '931'
 ht-degree: 94%
 
 ---
@@ -12,6 +15,14 @@ ht-degree: 94%
 # Adobe Analytics との統合時に使用する IMS 設定 {#ims-configuration-for-integration-with-adobe-analytics}
 
 Analytics Standard API を使用して Adobe Experience Manager as a Cloud Service（AEMaaCS）と Adobe Analytics を統合するには、Adobe IMS（Identity Management System）を設定する必要があります。この設定は、Adobe Developer コンソールで行います。
+
+>[!CAUTION]
+>
+>このページで説明されている設定は、新規または更新された統合には使用できなくなりました。
+>
+>[IMS 統合が S2S OAuth で設定されるようになりました。](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>
+>このページで説明されているように、以前の設定はで行われました [Adobe Developer コンソールで廃止される可能性がある JWT 資格情報](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 >[!NOTE]
 >
@@ -35,7 +46,7 @@ Analytics Standard API を使用して Adobe Experience Manager as a Cloud Servi
 * 組織のシステム管理者は、Admin Console を使用して、組織内で必要な開発者を関連する製品プロファイルに追加する必要があります。
 
    * これにより、Adobe Developer Console 使用して統合を有効にする権限が特定の開発者に付与されます。
-   * 詳しくは、 [開発者の管理](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
+   * 詳しくは、[開発者の管理](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)を参照してください。
 
 
 ## IMS 設定の指定 - 公開鍵の生成 {#configuring-ims-generating-a-public-key}
@@ -44,8 +55,8 @@ Analytics Standard API を使用して Adobe Experience Manager as a Cloud Servi
 
 1. AEM で、**ツール**&#x200B;メニューを開きます。
 1. **セキュリティ**&#x200B;セクションで、**Adobe IMS 設定**&#x200B;を選択します。
-1. **作成**&#x200B;を選択して、**Adobe IMS テクニカルアカウント設定**&#x200B;を開きます。
-1. **クラウド設定**&#x200B;の下のドロップダウンを使用して、**Adobe Analytics** を選択します。
+1. 「**作成**」を選択して、**Adobe IMS テクニカルアカウント設定**&#x200B;を開きます。
+1. **クラウド設定**&#x200B;の下のドロップダウンを使用して、「**Adobe Analytics**」を選択します。
 1. **新しい証明書の作成**&#x200B;をアクティブにして、新しいエイリアスを入力します。
 1. 「**証明書の作成**」で確認します。
 
@@ -69,9 +80,9 @@ Adobe Developer Console を開いて、AEM が使用する Adobe Analytics で�
 
 >[!CAUTION]
 >
->現在、Adobe Developer Console の **サービスアカウント (JWT)** 資格情報のタイプ。
+>現在、Adobe Developer Console の&#x200B;**サービスアカウント（JWT）**&#x200B;資格情報タイプのみがサポートされています。
 >
->次を使用しない **OAuth サーバー間通信** 秘密鍵証明書のタイプ。今後サポートされる予定です。
+>**OAuth サーバー間**&#x200B;資格情報のタイプは使用しないでください。このタイプは、今後サポートされる予定です。
 
 1. Adobe Developer Console を開いて、プロジェクトを表示します。
 
@@ -80,10 +91,8 @@ Adobe Developer Console を開いて、AEM が使用する Adobe Analytics で�
 1. 自分が持つプロジェクトが表示されます。**新規プロジェクトの作成**&#x200B;を選択 - 場所と使用方法は、以下に依存します。
 
    * まだプロジェクトがない場合は、「**新規プロジェクトを作成**」が中央の下に表示されます。
-
      ![新規プロジェクトの作成 - 最初のプロジェクト](assets/integration-analytics-ims-02.png)
    * 既存のプロジェクトがある場合は、それらがリストされ、「**新規プロジェクトを作成**」が右上に表示されます。
-
      ![新規プロジェクトの作成 - 複数のプロジェクト](assets/integration-analytics-ims-03.png)
 
 
@@ -115,7 +124,7 @@ Adobe Developer Console を開いて、AEM が使用する Adobe Analytics で�
 
    ![必要な製品プロファイルを選択](assets/integration-analytics-ims-16.png)
 
-1. 設定が完了しました。
+1. 設定が確認されました。
 
 ### 統合への権限の割り当て {#assigning-privileges-to-the-integration}
 
@@ -147,7 +156,7 @@ Adobe Developer Console - プロジェクトから、すべての統合プロジ
 * API
    * 例：Adobe Analytics
 
-これらの一部は、IMS に基づいてAEMでAdobe Analyticsの統合を完了する必要があります。
+このうちいくつかは、IMS に基づいて AEM で Adobe Analytics の統合を完了する必要があります。
 
 ## AEM での IMS 設定の完了 {#completing-the-ims-configuration-in-aem}
 
@@ -180,7 +189,7 @@ AEM に戻り、Analytics の IMS 統合から必要な値を追加して、IMS 
 
    * `https://localhost<port>/libs/cq/adobeims-configuration/content/configurations.html`
 
-   次に例を示します。
+   例：
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
 
@@ -189,7 +198,7 @@ AEM に戻り、Analytics の IMS 統合から必要な値を追加して、IMS 
 
    ![IMS 設定 - ヘルスチェック](assets/integrate-analytics-ims-12.png)
 
-1. 成功した場合は、確認メッセージが表示されます。
+1. 成功すると、確認メッセージが表示されます。
 
 ## Adobe Analytics との統合の完了 {#complete-the-integration-with-adobe-analytics}
 

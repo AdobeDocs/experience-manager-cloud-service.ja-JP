@@ -4,10 +4,10 @@ description: アダプティブフォームを容易に作成または AEM Sites
 feature: Adaptive Forms, Foundation Components, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 38e11538cdf3777a91a5ca60f83f8a95cd410c00
 workflow-type: tm+mt
 source-wordcount: '3184'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ AEM Forms にはアダプティブフォームコンテナおよびアダプテ�
 過去に Sites 用にアダプティブForms基盤コンポーネントまたはプレーンHTMLベースのフォームを作成している場合、Adobeでは、アダプティブFormsコアコンポーネントを使用してAEM Sitesページまたはエクスペリエンスフラグメントでアダプティブフォームを作成することをお勧めします。 また、バージョン管理、ターゲティング、翻訳、マルチサイトマネージャーなど、AEM Sites ページの様々な機能を使用して、フォームの全体的な作成と管理のエクスペリエンスを強化できます。次の機能の一部を見てみましょう。
 
 * **バージョン管理：** AEM Sites ページは、[堅牢なバージョン管理機能](/help/sites-cloud/authoring/sites-console/page-versions.md)を提供し、フォームの様々なバージョンを追跡および管理できます。これにより、必要に応じて以前のバージョンにロールバックする機能を維持しながら、フォームに変更や機能強化を加えることができます。バージョン管理により、フォームの開発と進化に対する制御可能で体系的なアプローチが実現します。
-* **ターゲティング（Adobe Target との統合）：** AEM Sites ページのターゲティング機能を使用して、[様々なオーディエンス向けにフォームエクスペリエンスをパーソナライズします](/help/sites-cloud/integrating/integration-adobe-target-ims.md)。ユーザーセグメントおよびターゲティング条件を使用することで、特定のユーザーグループに合わせてフォームのコンテンツ、デザインまたは動作を調整できます。これにより、パーソナライズされた関連性の高いフォームエクスペリエンスを提供し、エンゲージメント率とコンバージョン率を高めることができます。
+* **ターゲティング（Adobe Target との統合）：** AEM Sites ページのターゲティング機能を使用して、[様々なオーディエンス向けにフォームエクスペリエンスをパーソナライズします](/help/sites-cloud/integrating/integrating-adobe-target.md)。ユーザーセグメントおよびターゲティング条件を使用することで、特定のユーザーグループに合わせてフォームのコンテンツ、デザインまたは動作を調整できます。これにより、パーソナライズされた関連性の高いフォームエクスペリエンスを提供し、エンゲージメント率とコンバージョン率を高めることができます。
 * **翻訳：** AEM Sites [翻訳サービスとのシームレスな統合](/help/sites-cloud/administering/translation/overview.md)を使用すると、フォームを複数の言語に簡単に翻訳できます。この機能により、ローカライゼーションプロセスが簡素化され、グローバルなオーディエンスがフォームに確実にアクセスできるようになります。AEM 翻訳プロジェクト内で翻訳を効率的に管理できるので、多言語フォームのサポートに必要な時間と労力を削減できます。翻訳について詳しくは、考慮事項の節を参照してください。
 * **マルチサイト管理とライブコピー：** AEM Sites [マルチサイト管理およびライブコピー機能](/help/sites-cloud/administering/msm/overview.md)を使用すると、1 つの環境内で複数の web サイトを作成および管理できます。この機能を使用すると、異なるサイト間でフォームを再利用できるようになり、一貫性を確保し、重複作業を減らすことができます。一元化された制御と管理により、複数の web サイトにわたってフォームの管理と更新を効率的に行うことができます。
 * **テーマ：** AEM Sites ページには、複数の web ページをまたいで一貫したビジュアルスタイルをデザインし、維持するためのフレームワークが用意されています。これらは、web サイトの全体的なルックアンドフィールに貢献するカラー、フォント、スタイルシートおよびその他のビジュアル要素を定義します。[アダプティブフォームで AEM Sites ページ用に設計されたテーマを使用することで、時間と労力を節約できます](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes)。
@@ -137,7 +137,7 @@ AEM Forms にはアダプティブフォームコンテナおよびアダプテ�
 
 +++
 
-## アダプティブフォームを作成 {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
+## アダプティブフォームを作成します {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
 要件やデザインの環境設定に合わせて、AEM Sites ページまたはエクスペリエンスフラグメント内で直接新しいフォームを最初から作成できます。単一用途のフォームの場合は、AEM Sites ページへの直接オーサリングをお勧めします。一方、エクスペリエンスフラグメントは、web サイトの複数のページで再利用する必要があるフォームに最適です。
 
@@ -204,22 +204,22 @@ AEM Sites ページ内のアダプティブフォームをエクスペリエン�
 1. 必要に応じて、送信アクションを選択して設定します。送信アクションについて詳しくは、[アダプティブフォーム送信アクション](/help/forms/configuring-submit-actions.md)を参照してください。
 
 
-## AEM Sitesページまたはエクスペリエンスフラグメントのフォームに対して、スキーマまたはフォームデータモデル（FDM）を設定します {#configure-schema-or-data-model-for-form}
+## AEM Sites ページまたはエクスペリエンスフラグメント内のフォームに対して、スキーマまたはフォームデータモデル（FDM）を設定する {#configure-schema-or-data-model-for-form}
 
-フォームデータモデル（FDM）を使用すると、フォームをデータソースに接続し、ユーザーのアクションに基づいてデータを送受信できます。 また、フォームを JSON スキーマに接続して、送信されたデータを事前定義済みの形式で受信することもできます。要件に基づいて、フォームを JSON スキーマまたはフォームデータモデル（FDM）に接続します。
+フォームデータモデル（FDM）を使用してフォームをデータソースに接続し、ユーザーのアクションに基づいてデータを送受信することができます。また、フォームを JSON スキーマに接続して、送信されたデータを事前に定義した形式で受信することもできます。要件に基づいて、次のようにフォームを JSON スキーマまたはフォームデータモデル（FDM）に接続します。
 
-* [JSON スキーマを作成し、環境にアップロードする](/help/forms/adaptive-form-json-schema-form-model.md)、または
+* [JSON スキーマを作成して環境にアップロードする](/help/forms/adaptive-form-json-schema-form-model.md)、または
 * [フォームデータモデル（FDM）の作成](/help/forms/create-form-data-models.md)
 
-フォームに JSON スキーマまたはフォームデータモデル（FDM）を設定するには：
+フォームの JSON スキーマまたはフォームデータモデル（FDM）を設定するには：
 
 1. アダプティブフォームを含む、AEM ページエディターまたはエクスペリエンスフラグメントを開きます。
 1. コンテンツツリーを開き、アダプティブフォームをホストする&#x200B;**[!UICONTROL アダプティブフォームコンテナ]**&#x200B;を選択します。1 つの AEM Sites ページで複数のアダプティブフォームをホストできます。したがって、適切なアダプティブフォームコンテナを慎重に選択してください。
 1. アダプティブフォームコンテナプロパティ（![アダプティブフォームコンテナプロパティ](/help/forms/assets/configure-icon.svg)アイコン）をクリックします。データモデルを設定するためのアダプティブフォームコンテナダイアログボックスが開きます。
    ![レンチアイコンをクリックして、アダプティブフォームのデータモデルを設定します](/help/forms/assets/form-data-model-adaptive-forms-container.png)
-1. 要件に基づいて、JSON スキーマまたはフォームデータモデル（FDM）を選択して設定します。 送信アクションについて詳しくは、[アダプティブフォーム送信アクション](/help/forms/configuring-submit-actions.md)を参照してください。
+1. 要件に応じて、JSON スキーマまたはフォームデータモデル（FDM）を選択し、設定します。送信アクションについて詳しくは、[アダプティブフォーム送信アクション](/help/forms/configuring-submit-actions.md)を参照してください。
 
-   * 選択した場合 **[!UICONTROL フォームモデル]** オプションで、 **[!UICONTROL フォームデータモデルを選択]** 事前設定済みのフォームデータモデル（FDM）を選択するためのオプション。
+   * 「**[!UICONTROL フォームモデル]**」オプションを選択する場合は、「**[!UICONTROL フォームデータモデルを選択]**」オプションを使用して、事前設定済みのフォームデータモデル（FDM）を選択します。
    * 「**[!UICONTROL スキーマ]**」オプションを選択する場合は、「**[!UICONTROL スキーマ]**」オプションを使用して、フォームの JSON スキーマを選択します。
 
 1. 「**[!UICONTROL 完了]**」をクリックします。
