@@ -3,7 +3,7 @@ title: ベストプラクティスアナライザーの使用
 description: ベストプラクティスアナライザーを使用してアップグレードの準備状況を理解する方法について説明します。
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: 0c7e38d1973458ef3212e816ced867423bd62e86
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2686'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: Cloud Acceleration Manager での準備フェーズ
 description: このページでは、Cloud Acceleration Manager における準備フェーズの概要について説明します。
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 source-git-commit: 0c56cfdd2c18d3bc77edafdbda3f99fbc43f12cf
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 100%
 
