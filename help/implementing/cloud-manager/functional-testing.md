@@ -2,10 +2,10 @@
 title: 機能テスト
 description: コードの品質と信頼性を確保するために、AEM as a Cloud Service デプロイメントプロセスに組み込まれている 3 種類の機能テストについて説明します。
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: b85d43a05c8bb8a6438ab44bd184b7624456ab6a
-workflow-type: ht
-source-wordcount: '1354'
-ht-degree: 100%
+source-git-commit: 305098c7ebcb6145129b146d60538b5177b4f26d
+workflow-type: tm+mt
+source-wordcount: '1373'
+ht-degree: 98%
 
 ---
 
@@ -93,6 +93,8 @@ Junit を使用して実装され、Maven を使用して実行されます（�
 >[!NOTE]
 >
 >カスタム UI テストは、AEM アプリケーションの変更デプロイメントと AEM 製品プッシュ更新によって使用される実稼動パイプラインおよび非実稼動（オプトイン）パイプラインで実行されるため、アプリケーションの適切な機能を確保し、リリースの安全性を高める重要な役割を果たします。また、顧客 UI テストは、各顧客の内部プレリリース検証パイプラインで実行され、早期にフィードバックを得るのに役立ちます。
+>
+>Selenium 以外のコンテナは、 [UI テストセクション。](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 パイプラインの実行を効率的に行うために、主要機能と主要ユーザーインタラクションフローに注力することをお勧めします。この品質ゲートに収まらない完全な UI テストスイートは、顧客の開発フロー中に、一般的な顧客検証パイプラインの一部として実行することをお勧めします。
 
