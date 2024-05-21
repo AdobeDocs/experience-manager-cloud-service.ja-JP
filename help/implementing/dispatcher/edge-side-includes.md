@@ -2,9 +2,9 @@
 title: エッジ側インクルード
 description: Adobeが管理する CDN で、エッジレベルの動的 web コンテンツアセンブリ用のマークアップ言語であるエッジサイドインクルード（ESI）がサポートされるようになりました。
 feature: Dispatcher
-source-git-commit: 3aab5d3beb7bedf7a61bc557be349f2aa5ed8a7b
+source-git-commit: fb7c793a975fd725ef1cebcab545e057de78fa9d
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '543'
 ht-degree: 4%
 
 ---
@@ -40,7 +40,7 @@ ESI 構文は、親ページの場合、次のようになります `/content/pa
 
 を参照してください。 [ESI 仕様](https://www.w3.org/TR/esi-lang/) を参照してください。
 
-### 検討事項（#esi-syntax-considerations}
+### 検討事項 {#esi-syntax-considerations}
 
 * 次の ESI タグ（include、comment、remove）がサポートされています。
 * ESI タグは、同時ではなく CDN で順番に処理されるので、TTL の低いページに多くの ESI タグがあると、エンドユーザーのエクスペリエンスに遅延が生じる可能性があります。
