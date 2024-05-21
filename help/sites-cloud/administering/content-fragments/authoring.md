@@ -4,9 +4,9 @@ description: コンテンツフラグメントのコンテンツの作成し、�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 36fa580b017ab10097512165a35a9198a6d331d3
+source-git-commit: fc97a51bb20bbf0d438d0f27a2246467a480eb71
 workflow-type: tm+mt
-source-wordcount: '2670'
+source-wordcount: '2669'
 ht-degree: 88%
 
 ---
@@ -167,7 +167,7 @@ ht-degree: 88%
 
 1. コンテンツフラグメントエディターを開きます。 ヘッダーに、バリエーションを生成するためのエントリポイントがあります。
 
-![コンテンツフラグメントエディターでのバリエーションの生成](assets/cfm-generate-variations1.png)
+   ![コンテンツフラグメントエディターでのバリエーションの生成](assets/cfm-generate-variations1.png)
 
 1. バリエーションを生成が新しいタブで開きます。 左側のパネルには、AEM クラウドインスタンスと、コンテンツを作成するコンテンツフラグメントが表示されます。 使用するプロンプトを選択するか、新しいプロンプトを作成します。
 
@@ -175,7 +175,7 @@ ht-degree: 88%
    >
    >使用可能なAdobeプロンプトテンプレートは現在は制限されていますが、今後のリリースでさらに追加される予定です。
 
-![コンテンツフラグメントをエクスポートしてバリエーションを生成](assets/cfm-generate-variations2.png)
+   ![コンテンツフラグメントをエクスポートしてバリエーションを生成](assets/cfm-generate-variations2.png)
 
 1. プロンプトに入力してコンテンツを生成します。 フラグメントのコンテンツモデルは、GenAI を使用してコンテンツを生成するために自動的に使用されます。
 
@@ -183,20 +183,20 @@ ht-degree: 88%
    >
    >現在、テキストフィールドのみをサポートしています。
 
-![コンテンツフラグメントをエクスポートしてバリエーションを生成](assets/cfm-generate-variations3.png)
+   ![コンテンツフラグメントをエクスポートしてバリエーションを生成](assets/cfm-generate-variations3.png)
 
 1. 必要な生成バリアントを選択して、「バリエーションを書き出し」を選択します。 コンテンツフラグメントバリエーションの名前を確認し、次のいずれかを選択します。
 
    * **Export**: バリエーションをコンテンツフラグメントに書き出し、バリエーションを生成アプリケーションに残します。
    * **書き出して開く**：バリエーションをコンテンツフラグメントに書き出し、新しいタブを開きます。このタブには、GenAI の新しいバリエーションを含むコンテンツフラグメントが表示されます。
 
-   ![コンテンツフラグメントをエクスポートしてバリエーションを生成](assets/cfm-generate-variations4.png)
+     ![コンテンツフラグメントをエクスポートしてバリエーションを生成](assets/cfm-generate-variations4.png)
 
 1. 生成されたバリエーションは、メインコンテンツフラグメントエディターに表示されます。
 
    ![コンテンツフラグメントでのバリエーションの生成の表示](assets/cfm-generate-variations5.png)
 
-詳しくは、バリエーションの生成を参照してください。 [こちら]{generative-ai/generate-variations.md}。
+詳しくは、バリエーションの生成を参照してください。 [こちら](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations).
 
 ### バリエーションを削除 {#delete-variation}
 

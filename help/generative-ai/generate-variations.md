@@ -2,7 +2,7 @@
 title: バリエーションの生成
 description: AEMas a Cloud Serviceからアクセスできる Generate Variations と、Edge Delivery ServicesのSidekickについて説明します
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 1d4c6512a3414db901d289557f9704699c8b6222
+source-git-commit: d682ee77e79d013de305816449781a8b1f9af8d2
 workflow-type: tm+mt
 source-wordcount: '3262'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 * [Adobe Experience Manager（AEM）内のas a Cloud Service](#access-aemaacs)
 * [AEM Edge Delivery ServicesのSidekick](#access-aem-sidekick)
-* [コンテンツフラグメントエディター内](#authoring-content-fragments)
+* [コンテンツフラグメントエディター内](#https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html#generate-variations-ai)
 
 >[!NOTE]
 >
