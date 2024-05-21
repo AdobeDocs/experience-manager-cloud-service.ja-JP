@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+source-git-commit: 3aab5d3beb7bedf7a61bc557be349f2aa5ed8a7b
 workflow-type: tm+mt
-source-wordcount: '4962'
+source-wordcount: '4965'
 ht-degree: 99%
 
 ---
@@ -1175,6 +1175,7 @@ ht-degree: 99%
       + [Dispatcher ツールを使用した検証とデバッグ（レガシー）](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [AEM as a Cloud Service での CDN](/help/implementing/dispatcher/cdn.md)
       + [CDN でのトラフィックの設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)
+      + [エッジ側インクルード](/help/implementing/dispatcher/edge-side-includes.md)
       + [CDN エラーページの設定](/help/implementing/dispatcher/cdn-error-pages.md)
       + [AEM as a Cloud Service でのキャッシュ](/help/implementing/dispatcher/caching.md)
 + コネクタ {#connectors}
