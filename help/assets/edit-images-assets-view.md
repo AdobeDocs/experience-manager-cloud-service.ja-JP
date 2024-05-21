@@ -3,9 +3,9 @@ title: 画像の編集
 description: ' [!DNL Adobe Photoshop Express]  を利用したオプションを使用して画像を編集し、更新した画像をバージョンとして保存します。'
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
-source-wordcount: '1251'
+source-git-commit: 89d13f278fdaddbcf6b07a2f3edfc1fda1092aa2
+workflow-type: tm+mt
+source-wordcount: '901'
 ht-degree: 100%
 
 ---
@@ -118,7 +118,8 @@ Adobe Express へのアクセス権を持つ組織は、Adobe Express と Adobe 
 >* アセットサイズは 17 MB 未満にする必要があります。
 >* `PDF`、`JPEG` または `PNG` 形式の画像を保存できます。つまり、複数のページがある場合は、それらを `PDF` として保存できます。
 
-## [!DNL Adobe Photoshop Express] を使用して画像を編集する {#edit-using-photoshop-express}
+<!-- 
+## Edit images using [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
 
 <!--
 After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. To edit an image, [open its preview](navigate-assets-view.md#preview-assets) and click **[!UICONTROL Edit Image]** ![edit icon](assets/do-not-localize/edit-icon.png) from the rail on the right.
@@ -127,49 +128,49 @@ After editing an image, you can save the new image as a new version. Versioning 
 
 *Figure: The options to edit images are powered by [!DNL Adobe Photoshop Express].*
 -->
+<!-- 
+### Touch up images {#spot-heal-images-using-photoshop-express}
 
-### 画像をタッチアップする {#spot-heal-images-using-photoshop-express}
+If there are minor spots or small objects on an image, you can edit and remove the spots using the spot healing feature provided by Adobe Photoshop.
 
-画像に小さな欠点や小さなオブジェクトがある場合は、Adobe Photoshop のスポット修復機能を利用して、その欠点を編集および削除できます。
+The brush samples the retouched area and makes the repaired pixels blend seamlessly into the rest of the image. Use a brush size that is only slightly larger than the spot you want to fix.
 
-ブラシが、リタッチした領域をサンプリングし、修復したピクセルを画像の残りの部分にシームレスにブレンドします。修正する部分よりもわずかに大きいブラシサイズを使用します。
-
-![スポット修復編集オプション](assets/edit-spot-healing.png)
+![Spot healing edit option](assets/edit-spot-healing.png)
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
 For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
 -->
+<!-- 
+### Crop and straighten images {#crop-straighten-images-using-photoshop-express}
 
-### 画像の切り抜きと角度補正 {#crop-straighten-images-using-photoshop-express}
+Using the crop and straighten option that you can do basic cropping, rotate image, flip it horizontally or vertically, and crop it to dimensions suitable for popular social media websites.
 
-切り抜きと角度補正オプションを使用すると、基本的な切り抜き、画像の回転、水平方向または垂直方向の反転を行ったうえで、一般的なソーシャルメディア web サイトに適したサイズに切り抜くことができます。
+To save your edits, click **[!UICONTROL Crop Image]**. After editing, you can save the new image as a version.
 
-編集内容を保存するには、「**[!UICONTROL 画像を切り抜き]**」をクリックします。編集後、新しい画像をバージョンとして保存できます。
+![Option to crop and straighten](assets/edit-crop-straighten.png)
 
-![切り抜きと角度補正のオプション](assets/edit-crop-straighten.png)
+Many default options let you crop your image to the best proportions that fit various social media profiles and posts.
 
-多くのデフォルトオプションを使用すると、様々なソーシャルメディアのプロファイルや投稿に合わせて画像を最適な比率に切り抜くことができます。
+### Resize image {#resize-image-using-photoshop-express}
 
-### 画像のサイズ変更 {#resize-image-using-photoshop-express}
+You can view the common photo sizes in centimeters or inches to know the dimensions. By default, the resizing method retains the aspect ratio. To manually override the aspect ratio, click ![](assets/do-not-localize/lock-closed-icon.png).
 
-一般的な写真サイズをセンチまたはインチ単位で表示して、サイズを確認できます。デフォルトでは、サイズ変更時に縦横比が保持されます。縦横比を手動で上書きするには、![](assets/do-not-localize/lock-closed-icon.png) をクリックします。
+Enter the dimensions and click **[!UICONTROL Resize Image]** to resize the image. Before you save the changes as a version, you can either undo all the changes done before saving by clicking [!UICONTROL Undo] or you can change the specific step in the editing process by clicking [!UICONTROL Revert].
 
-サイズを入力し、「**[!UICONTROL イメージをサイズ変更]**」をクリックして画像のサイズを変更します。変更内容をバージョンとして保存する前に、「[!UICONTROL 取り消し]」をクリックして保存前に行ったすべての変更を取り消すか、「[!UICONTROL 元に戻す]」をクリックして編集プロセスの特定のステップを変更することができます。
+![Options when resizing an image](assets/resize-image.png)
 
-![画像のサイズを変更する際のオプション](assets/resize-image.png)
+### Adjust image {#adjust-image-using-photoshop-express}
 
-### 画像の調整 {#adjust-image-using-photoshop-express}
+[!DNL Assets view] lets you adjust the color, tone, contrast, and more, with just a few clicks. Click **[!UICONTROL Adjust image]** in the edit window. The following options are available in the right sidebar:
 
-[!DNL Assets view] では、数回クリックするだけでカラー、トーン、コントラストなどを調整できます。編集ウィンドウで「**[!UICONTROL 画像を調整]**」をクリックします。右側のサイドバーでは、次のオプションを使用できます。
+* **Popular**: [!UICONTROL High Contrast & Detail], [!UICONTROL Desaturated Contrast], [!UICONTROL Aged Photo], [!UICONTROL B&W Soft], and [!UICONTROL B&W Sepia Tone].
+* **Color**: [!UICONTROL Natural], [!UICONTROL Bright], [!UICONTROL High Contrast], [!UICONTROL High Contrast & Detail], [!UICONTROL Vivid], and [!UICONTROL Matte].
+* **Creative**: [!UICONTROL Desaturated Contrast], [!UICONTROL Cool Light], [!UICONTROL Turquoise & Red], [!UICONTROL Soft Mist], [!UICONTROL Vintage Instant], [!UICONTROL Warm Contrast], [!UICONTROL Flat & Green], [!UICONTROL Red Lift Matte], [!UICONTROL Warm Shadows], and [!UICONTROL Aged Photo].
+* **B&W**: [!UICONTROL B&W Landscape], [!UICONTROL B&W High Contrast], [!UICONTROL B&W Punch], [!UICONTROL B&W Low Contrast], [!UICONTROL B&W Flat], [!UICONTROL B&W Soft], [!UICONTROL B&W Infrared], [!UICONTROL B&W Selenium Tone], [!UICONTROL B&W Sepia Tone], and [!UICONTROL B&W Split Tone].
+* **Vignetting**: [!UICONTROL None], [!UICONTROL Light], [!UICONTROL Medium], and [!UICONTROL Heavy].
 
-* **一般的**：[!UICONTROL コントラスト (高) とディテール]、[!UICONTROL コントラスト (低彩度)]、[!UICONTROL 古い写真]、[!UICONTROL 白黒 ソフト]、[!UICONTROL 白黒 セピア調]
-* **カラー**：[!UICONTROL ナチュラル]、[!UICONTROL 鮮明]、[!UICONTROL コントラスト (高)]、[!UICONTROL コントラスト (高) とディテール]、[!UICONTROL ビビッド]、[!UICONTROL マット]
-* **クリエイティブ**：[!UICONTROL コントラスト (低彩度)]、[!UICONTROL クールライト]、[!UICONTROL ターコイズとレッド]、[!UICONTROL ソフトミスト]、[!UICONTROL ヴィンテージインスタント]、[!UICONTROL コントラスト (暖色系)]、[!UICONTROL フラットとグリーン]、[!UICONTROL レッドリフトマット]、[!UICONTROL 暖色シャドウ]、[!UICONTROL 古い写真]
-* **白黒**：[!UICONTROL 白黒 風景]、[!UICONTROL 白黒 コントラスト (高)]、[!UICONTROL 白黒 型抜き]、[!UICONTROL 白黒 コントラスト (低)]、[!UICONTROL 白黒 フラット]、[!UICONTROL 白黒 ソフト]、[!UICONTROL 白黒 赤外線]、[!UICONTROL 白黒 セレン調]、[!UICONTROL 白黒 セピア調]、[!UICONTROL 白黒 明暗別色補正]
-* **周辺光量補正**：[!UICONTROL なし]、[!UICONTROL 軽度]、[!UICONTROL 中度]、[!UICONTROL 重度]
-
-![編集による画像の調整](assets/adjust-image.png)
+![Adjust image by editing](assets/adjust-image.png)
 
 <!--
 TBD: Insert a video of the available social media options.
