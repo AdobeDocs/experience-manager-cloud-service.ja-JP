@@ -2,9 +2,9 @@
 title: バリエーションの生成
 description: AEMas a Cloud Serviceからアクセスできる Generate Variations と、Edge Delivery ServicesのSidekickについて説明します
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
+source-git-commit: 1d4c6512a3414db901d289557f9704699c8b6222
 workflow-type: tm+mt
-source-wordcount: '3257'
+source-wordcount: '3262'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 1%
 
 * [Adobe Experience Manager（AEM）内のas a Cloud Service](#access-aemaacs)
 * [AEM Edge Delivery ServicesのSidekick](#access-aem-sidekick)
+* [コンテンツフラグメントエディター内](#authoring-content-fragments)
 
 >[!NOTE]
 >
@@ -291,7 +292,7 @@ UI での書式設定を保持し、ドキュメントベースのオーサリ�
 
 ![バリエーションの生成 – タイトルと説明を個別に書式設定したプロンプト](assets/generate-variations-prompt-formatted.png)
 
-## 保存プロンプト {#save-prompt}
+## プロンプトを保存 {#save-prompt}
 
 プロンプトを編集または作成した後、IMS 組織または自分自身のために、後で使用するためにプロンプトを保存することができます。 保存したプロンプトは、 **プロンプトテンプレート** カード。
 

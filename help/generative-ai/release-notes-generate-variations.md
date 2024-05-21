@@ -1,10 +1,11 @@
 ---
 title: バリエーションを生成するためのリリースノート
 description: AEMas a Cloud Serviceからアクセスできる、Generate Variations のリリースノートとEdge Delivery ServicesのSidekick
-source-git-commit: 8067da7fb65bee6c147f306712eb312323244357
+exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
+source-git-commit: 28df3ace2933d0fc00742ced9496645fc3dc15da
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 11%
+source-wordcount: '225'
+ht-degree: 10%
 
 ---
 
@@ -17,6 +18,15 @@ ht-degree: 11%
 >Adobe Experience Manager as a Cloud Service の最新のリリースノートについては、[こちらのページ](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
 ## リリースハイライト {#release-highlights}
+
+現在のリリースはバージョン 2.2.0 です。
+
+### 2.2.0 {#release-notes-2-2-0}
+
+* コンテンツフラグメントのサポートの実装
+* 結果を CSV ファイルとしてお気に入りからダウンロードする機能を導入しました
+* 最近使用したものリストの時間グループ化を強化しました
+* 複数の言語にローカリゼーションのサポートが追加されました
 
 現在のリリースはバージョン 2.0.0 です。
 
