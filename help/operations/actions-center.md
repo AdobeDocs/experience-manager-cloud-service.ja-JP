@@ -2,10 +2,10 @@
 title: アクションセンター
 description: アクションセンターを活用して、インシデントやその他の重要な情報への処理を効果的に行います。
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
-source-wordcount: '734'
-ht-degree: 100%
+source-git-commit: ddf94262c047ea0210b0759176f51d1220ac9c67
+workflow-type: tm+mt
+source-wordcount: '783'
+ht-degree: 93%
 
 ---
 
@@ -74,3 +74,4 @@ AEM as a Cloud Service の通知には複数のタイプがありますが、次
 | ブロックされたレプリケーションキュー | インシデント | キューのブロックを解除するには、[レプリケーションドキュメント](/help/operations/replication.md#troubleshooting)の手順に従ってください。 |
 | 無効な永続 GraphQL クエリ | インシデント | [永続 GraphQL クエリのトラブルシューティングドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=ja)を参照して、無効な GraphQL クエリを修正する |
 | S2S 証明書の有効期限が切れます | 事前対応 | [サーバーサイド API のアクセストークンの生成ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)で資格情報を更新する方法を説明します。 |
+| オリジンでのトラフィックスパイク | インシデント | オリジンアラートでデフォルトのトラフィックスパイクよりも低いしきい値でトリガーするレート制限トラフィックフィルタールールを設定して、オリジンをProtectします。  を参照してください。 [トラフィックルールを使用した DoS および DDoS 攻撃のブロック](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) の節（チュートリアルを参照しているトラフィックフィルタールールのドキュメント） |

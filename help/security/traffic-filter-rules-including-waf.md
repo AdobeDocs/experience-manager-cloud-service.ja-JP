@@ -2,10 +2,10 @@
 title: WAF ルールを含むトラフィックフィルタールール
 description: Web アプリケーションファイアウォール（WAF）ルールを含むトラフィックフィルタールールの設定。
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: b52da0a604d2c320d046136f5e526e2b244fa6cb
-workflow-type: ht
-source-wordcount: '3790'
-ht-degree: 100%
+source-git-commit: c914ae4a0ad3486feb54cbcf91f6659afa1372b8
+workflow-type: tm+mt
+source-wordcount: '3947'
+ht-degree: 94%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 [チュートリアルに従って](#tutorial)、この機能に関する具体的な専門知識をすばやく構築します。
 
 >[!NOTE]
->リクエスト／応答の編集、リダイレクトの宣言、AEM 以外の接触チャネルへのプロキシ処理など、CDN でトラフィックを設定する他のオプションに興味がありますか？早期導入プログラムに参加して、[その方法を学び、試してみましょう](/help/implementing/dispatcher/cdn-configuring-traffic.md)。
+>リクエスト/応答の編集、リダイレクトの宣言、AEM以外のオリジンへのプロキシなど、CDN でのトラフィックの設定に関するその他のオプションについては、を参照してください。 [CDN でのトラフィックの設定](/help/implementing/dispatcher/cdn-configuring-traffic.md) 記事。
 
 
 ## この記事の編成方法 {#how-organized}
@@ -40,6 +40,8 @@ ht-degree: 100%
 * **ルール構文：`cdn.yaml`設定ファイルで** トラフィックフィルタールールを宣言する方法を説明します。これには、すべての Sites および Forms の顧客が利用できるトラフィックフィルタールールとその機能をライセンスするユーザー向けの WAF ルールのサブカテゴリの両方が含まれます。
 * **ルールの例：**&#x200B;宣言されたルールの例を参照して、作業を進めてください。
 * **レート制限ルール：**&#x200B;レート制限ルールを使用して、大量の攻撃からサイトを保護する方法を説明します。
+* **トラフィックフィルタールールールのアラート** ルールがトリガーされたときに通知されるアラートを設定します。
+* **オリジンアラートでのデフォルトトラフィックスパイク** DDoS 攻撃を示唆するトラフィックの急増がオリジンで発生した場合に通知を受け取ります。
 * **CDN ログ：**&#x200B;トラフィックに一致する宣言済みルールと WAF フラグを確認します。
 * **ダッシュボードツール：** CDN ログを分析して、新しいトラフィックフィルタールールを作成する方法を説明します。
 * **推奨されるスタータールール：**&#x200B;使用を開始するための一連のルール。
@@ -291,7 +293,7 @@ when:
 
 ## ルールの例 {#examples}
 
-ルールの例をいくつか以下に示します。レート制限ルールの例については、さらに下の[レート制限ルール](#rules-with-rate-limits)の節を参照してください。
+ルールの例をいくつか以下に示します。レート制限ルールの例については、さらに下の[レート制限ルール](#rate-limit-rules)の節を参照してください。
 
 **例 1**
 
@@ -519,6 +521,28 @@ data:
           experimental_alert: true
 ```
 
+## オリジンアラートでのデフォルトトラフィックスパイク {#traffic-spike-at-origin-alert}
+
+>[!NOTE]
+>
+>この機能は徐々に展開されています。
+
+An [アクション センター](/help/operations/actions-center.md) メール通知は、オリジンに大量のトラフィックが送信された際に送信されます。この場合、同じ IP アドレスから高しきい値のリクエストが送信されているので、DDoS 攻撃が示唆されています。
+
+この設定が満たされると、Adobeはその IP アドレスからのトラフィックをブロックしますが、オリジンを保護するための追加の対策を講じることをお勧めします。例えば、低いしきい値でトラフィックスパイクをブロックするようにレート制限トラフィックフィルタールールを設定することなどです。 を参照してください。 [トラフィックルールを使用した DoS および DDoS 攻撃のブロック（チュートリアル）](#tutorial-blocking-DDoS-with-rules) ガイド付きウォークスルー用。
+
+このアラートはデフォルトで有効になっていますが、 *enable_ddos_alerts* プロパティ。false に設定します。
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    enable_ddos_alerts: false
+```
+
 ## CDN ログ {#cdn-logs}
 
 AEM as a Cloud Service では、ユーザーが CDN ログにアクセスできるようになっています。このログは、キャッシュヒット率の最適化などのユースケースやトラフィックフィルタールールの設定に役立ちます。CDN ログは、オーサーサービスやパブリッシュサービスの選択時に Cloud Manager の&#x200B;**ログをダウンロード**&#x200B;ダイアログに表示されます。
@@ -633,7 +657,7 @@ CDN ログで使用されるフィールド名と、それらの簡単な説明�
 
 アドビでは、Cloud Manager 経由でダウンロードされた CDN ログを取り込むために、ダッシュボードツールをコンピューターにダウンロードするメカニズムを提供します。このツールを使用すると、トラフィックを分析して、宣言する適切なトラフィックフィルタールール（WAF ルールなど）を作成するのに役立ちます。
 
-ダッシュボードツールでは、[AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Github リポジトリから直接クローンを作成できます。
+ダッシュボードツールは、から直接複製できます [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) GitHub リポジトリ。
 
 ダッシュボードツールの具体的な使用方法については、[チュートリアル](#tutorial)を参照してください。
 
@@ -722,7 +746,7 @@ data:
 
 2 つのチュートリアルが利用可能です。
 
-### トラフィックフィルタールール（WAF ルールを含む）による web サイトの保護
+### トラフィックフィルタールール（WAF ルールを含む）による web サイトの保護 {#tutorial-protecting-websites}
 
 WAF ルールを含むトラフィックフィルタールールに関する一般的で実用的な知識とエクスペリエンスの取得については、[チュートリアルを参照](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)してください。
 
@@ -734,7 +758,7 @@ WAF ルールを含むトラフィックフィルタールールに関する一�
 * ダッシュボードツールを使用した結果の分析
 * ベストプラクティス
 
-### トラフィックフィルタールールを使用した DoS 攻撃と DDoS 攻撃のブロック
+### トラフィックフィルタールールを使用した DoS 攻撃と DDoS 攻撃のブロック {#tutorial-blocking-DDoS-with-rules}
 
 レート制限トラフィックフィルタールールやその他の戦略を使用して、サービス拒否（DoS）および分散型サービス拒否（DDoS）攻撃を[ブロックする方法について詳しく説明します](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules)。
 
