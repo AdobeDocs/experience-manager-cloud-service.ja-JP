@@ -2,9 +2,9 @@
 title: エッジ側インクルード
 description: Adobeが管理する CDN で、エッジレベルの動的 web コンテンツアセンブリ用のマークアップ言語であるエッジサイドインクルード（ESI）がサポートされるようになりました。
 feature: Dispatcher
-source-git-commit: 4523efa659ea2aef28e16d5df39f9793cd35d969
+source-git-commit: 8f9173e45dd802ecced21531dfa161890e4a8af1
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '541'
 ht-degree: 4%
 
 ---
@@ -81,9 +81,8 @@ ESI タグを含むページがある場合は、Apache 設定で次のプロパ
 |-----------|--------------------------|
 | **no-gzip** | 1 に設定すると、HTMLページが Apache から CDN に非圧縮で送信されます。 CDN が ESI タグを表示および評価できるように、コンテンツを圧縮せずに CDN に送信する必要があるので、ESI に必要です。<br/><br/>親ページと含まれているスニペットの両方で、no-gzip を 1 に設定する必要があります。<br/><br/>この設定は、リクエストのに基づいて、Apache が使用していた圧縮設定を上書きします。 `Accept-Encoding` 値。 |
 | **x-aem-esi** | 「on」に設定すると、CDN は親HTMLページの ESI タグを評価します。  デフォルトでは、ヘッダーは設定されていません。 |
-| **x-aem-compress** | 「on」に設定すると、CDN は CDN からブラウザーにコンテンツを圧縮します。 ESI が機能するには、親ページの Apache から CDN への送信を非圧縮（no-gzip を 1 に設定）にする必要があるので、待ち時間を短縮できます。<br/><br/>このヘッダーが設定されていない場合、CDN が圧縮されていないオリジンからコンテンツを取得する際に、圧縮されていないクライアントにもコンテンツが提供されます。 したがって、no-gzip が 1 に設定されている場合（ESI で必要）、このヘッダーを設定する必要があり、CDN からブラウザーに圧縮されたコンテンツを提供することが必要です。 |
+| **x-aem-compress** | 「on」に設定すると、CDN は CDN からブラウザーにコンテンツを圧縮します。 ESI が機能するには、親ページの Apache から CDN への送信が非圧縮になる必要があるからです（`no-gzip` 1）に設定すると、待ち時間が短縮されます。<br/><br/>このヘッダーが設定されていない場合、CDN が圧縮されていないオリジンからコンテンツを取得する際に、圧縮されていないクライアントにもコンテンツが提供されます。 したがって、次の場合は、このヘッダーを設定する必要があります `no-gzip` が 1 （ESI の場合は必須）に設定されており、CDN からブラウザーに圧縮されたコンテンツを提供することが必要です。 |
 
 ## Sling Dynamic Include {#esi-sdi}
 
 必須ではありませんが、 [Sling Dynamic Include](https://sling.apache.org/documentation/bundles/dynamic-includes.html) （SDI）を使用して、CDN で解釈される ESI スニペットを生成できます。
-
