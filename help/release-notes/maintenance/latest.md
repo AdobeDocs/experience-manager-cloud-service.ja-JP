@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b6fe2a58bb16c70cef48426ec49dda474195c023
+source-git-commit: d107f40c4bc43837db9d8fab3d06627d9e930620
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1574'
 ht-degree: 10%
 
 ---
@@ -68,7 +68,6 @@ ht-degree: 10%
 * SITES-20238: [RTC] Pfizer MVP - CF API を追加して、CF パスを ID に解決します（その逆も同様）。
 * SITES-21043: [CF][launches] Cloud Serviceを向上させるサイドポートのパフォーマンス。
 * SITES-21044: [CF][launches] Cloud Serviceへのサイドポート非同期編集ペイロード実装。
-* FORMS-9606：以前は、アダプティブFormsエディターでは、フィールド値のみが呼び出しサービスの応答にマッピングできました。 これで、作成者は、フィールドの任意のプロパティを、呼び出しサービス応答にマッピングできます。
 * FORMS-7483:AEM Forms JSON スキーマパーサーで JSON スキーマがサポートされるようになりました（2020-12）。
 * FORMS-13209: Adaptive Formsのデフォルトの送信サクセスハンドラーと送信エラーハンドラーを上書きするハンドラーが含まれています。 アダプティブFormsのルールエディターを使用して、これらのハンドラーを設定できます。
 * FORMS-13612：スクリーンリーダーは、コアコンポーネントベースのアダプティブFormsのフィールドに関するエラーメッセージ、短い説明、長い説明を読み上げるようになりました。 さらに、フォームにエラーが含まれ、送信に対して有効でない場合にアダプティブフォームの入力を無効にするサポートが追加されました。
