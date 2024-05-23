@@ -3,10 +3,10 @@ title: トランザクションレポート請求可能 API
 description: トランザクションとして計上されるすべての API のリスト
 feature: Adaptive Forms, Foundation Components
 exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
-source-git-commit: 539f4bf86f0e32057b2228dc44c86120d6e8457b
+source-git-commit: 543e9b78b4bdc11c49f79c6baec79615c5f7f91b
 workflow-type: tm+mt
-source-wordcount: '1411'
-ht-degree: 86%
+source-wordcount: '1033'
+ht-degree: 81%
 
 ---
 
@@ -34,45 +34,7 @@ AEM Forms には、フォームの送信、ドキュメントの処理、ドキ�
 
 * **レンダリング済みドキュメント：** テンプレートとデータを組み合わせたドキュメントの生成、ドキュメントの電子署名または認証、ドキュメントサービスの課金可能なドキュメントサービス API の使用、ある形式から別の形式へのドキュメントの変換は、レンダリング済みドキュメントとして計上されます。
 
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_submission_graph_en"
->title="フォーム送信トラッカー"
->abstract="アドビの直感的なトラッキングダッシュボードを使用すると、AEM Forms パブリッシュインスタンス上のフォーム送信を容易に監視できます。グラフには、現在のインスタンスに固有のデータが表示されるので、トレンドを迅速に分析し、情報に基づいた意思決定を行うことができます。他のインスタンスの送信データについては、各インスタンスのダッシュボードにアクセスするだけです。"
 
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_conversions_graph_en"
->title="フォーム変換トラッカー"
->abstract="合計コンバージョン数の概要により、フォーム変換に関する最新情報を入手できます。グラフには、現在の AEM Forms パブリッシュインスタンスに固有のデータが表示されるので、トレンドを迅速に分析し、情報に基づいた意思決定を行うことができます。他のインスタンスのコンバージョンデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
-
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
->title="フォーム生成の平均期間"
->abstract="グラフは、フォームの作成に要した平均時間を示します。グラフの各棒は特定のフォームを表し、棒の高さはその時間枠内でフォームの作成に要した平均時間を示します。"
-
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
->title="フォーム作成の平均期間"
->abstract="グラフには、フォームの作成と公開にかかった平均時間（フォームを初めて編集用に開いた日から測定）が表示されます。グラフには、現在の AEM Forms オーサーインスタンスに固有のデータが表示されます。他のインスタンスのデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
-
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_newForms_graph_en"
->title="新しい Forms トラッカー"
->abstract="グラフには、特定の期間に新しく作成されたフォームの数や頻度に関する情報が表示されます。グラフには、現在の AEM Forms オーサーインスタンスに固有のデータが表示されます。他のインスタンスのデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
-
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
->title="公開済み Forms トラッカー"
->abstract="グラフには、特定の期間に正常に公開されたフォームの数や頻度に関する情報が表示されます。グラフには、現在の AEM Forms パブリッシュインスタンスに固有のデータが表示されます。他のインスタンスのコンバージョンデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
-
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_formFragments_graph_en"
->title="公開済み Forms トラッカー"
->abstract="このグラフを使用すると、ユーザーがフォームで使用するフォームフラグメントの数を確認できます。グラフには、現在の AEM Forms パブリッシュインスタンスに固有のデータが表示されます。他のインスタンスのコンバージョンデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
-
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
->title="公開済み Forms トラッカー"
->abstract="グラフには、フォームフラグメントが編集用に開かれた最初の日から測定された、フォームフラグメントの作成にかかった平均時間が表示されます。グラフには、現在の AEM Forms パブリッシュインスタンスに固有のデータが表示されます。他のインスタンスのコンバージョンデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
 
 <!-- 
 
