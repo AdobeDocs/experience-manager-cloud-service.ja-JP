@@ -5,13 +5,13 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
 source-git-commit: 92811662e1ef9b6cbd5cb66c67f774109745bc68
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2290'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
-# AEM Formsas a Cloud Service通信 API {#frequently-asked-questions}
+# AEM Forms as a Cloud Service 通信 API {#frequently-asked-questions}
 
 ![ヒーロー画像](assets/cloud-communication-apis-hero-image.jpeg)
 
@@ -39,7 +39,7 @@ A credit card statement can be created using Communications APIs. This sample st
 
 -->
 
-## ドキュメントの生成
+## ドキュメント生成
 
 コミュニケーションドキュメント生成 API は、テンプレート（XFA または PDF）と顧客データ（XML）を組み合わせて、PDF 形式や PS、PCL、DPL、IPL、ZPL 形式などの印刷形式でドキュメントを生成するのに役立ちます。これらの API は、[XML データ](communications-known-issues-limitations.md#form-data)を含んだ PDF および XFA テンプレートを利用して、単一のドキュメントをオンデマンドで生成したり、複数のドキュメントをバッチジョブで生成したりすることができます。
 
@@ -60,7 +60,7 @@ A credit card statement can be created using Communications APIs. This sample st
 
 ### PostScript（PS）、Printer Command Language（PCL）、Zebra Printing Language（ZPL）ドキュメントの作成 {#create-PS-PCL-ZPL-documents}
 
-ドキュメント生成 API を使用して、XDP フォームデザインまたはPDFドキュメントに基づく PS、PCL および ZPL ドキュメントを作成できます。 これらの API は、フォームデザインとフォームデータを結合してドキュメントを生成します。ドキュメントをファイルに保存し、カスタムプロセスを開発してファイルをプリンターに送信することができます。
+ドキュメント生成 API を使用して、XDP フォームデザインまたは PDF ドキュメントに基づく PostScript（PS）、Printer Command Language（PCL）および Zebra Printing Language（ZPL）のドキュメントを作成できます。これらの API は、フォームデザインとフォームデータを結合してドキュメントを生成します。ドキュメントをファイルに保存し、カスタムプロセスを開発してファイルをプリンターに送信することができます。
 
 <!-- ### Processing batch data to create multiple documents
 
@@ -110,11 +110,11 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## ドキュメント操作
 
-通信機能のドキュメント操作（ドキュメント変換） API は、PDFドキュメントを組み合わせたり、並べ替えたりするのに役立ちます。 通常は、DDX を作成し、それをドキュメント操作 API に送信して、ドキュメントをアセンブリしたり、並べ替えたりします。[DDX ドキュメント](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)には、ソースドキュメントを使用して 1 組の必要なドキュメントを生成する方法についての指示が記述されています。DDX リファレンスドキュメントは、サポートされているすべての操作に関する詳細な情報を提供します。ドキュメント操作の例を以下に示します。
+通信機能のドキュメント操作（ドキュメント変換）API は、PDF ドキュメントを組み合わせたり並べ替えたりするのに役立ちます。通常は、DDX を作成し、それをドキュメント操作 API に送信して、ドキュメントをアセンブリしたり並べ替えたりします。[DDX ドキュメント](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)には、ソースドキュメントを使用して 1 組の必要なドキュメントを生成する方法についての指示が記述されています。DDX リファレンスドキュメントは、サポートされているすべての操作に関する詳細な情報を提供します。ドキュメント操作の例を以下に示します。
 
 ### PDF ドキュメントのアセンブリ
 
-ドキュメント操作 API を使用すると、複数の PDF または XDP ドキュメントを 1 つの PDF ドキュメントまたは PDF ポートフォリオに組み合わせることができます。以下に、PDFドキュメントを作成する方法をいくつか示します。
+ドキュメント操作 API を使用すると、複数の PDF または XDP ドキュメントを 1 つの PDF ドキュメントまたは PDF ポートフォリオに組み合わせることができます。次に、PDF ドキュメントのアセンブリ方法を示します。
 
 * 単純な PDF ドキュメントのアセンブリ
 * PDF ポートフォリオの作成
@@ -167,15 +167,15 @@ The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-
 
 ## ドキュメント抽出
 
-<span class="preview"> ドキュメント抽出機能は、早期導入プログラムの下にあります。 早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID で aem-forms-ea@adobe.com までメールを送信してください。</span>
+<span class="preview">ドキュメント抽出機能は、早期導入プログラムに基づいています。早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式メール ID から aem-forms-ea@adobe.com にメールを送信してください。</span>
 
-ドキュメント抽出サービスを使用すると、使用権限、PDFプロパティ、メタデータなど、PDFドキュメントのプロパティを取得できます。 ドキュメント抽出機能は次のとおりです。
+ドキュメント抽出サービスを使用すると、使用権限、PDF プロパティ、メタデータなど、PDF ドキュメントのプロパティを取得できます。ドキュメント抽出機能は次のとおりです。
 
-* PDFに添付ファイル、コメント、Acrobatなど、PDFドキュメントのプロパティを取得します。
-* PDFドキュメントで有効な使用権限を抽出すると、Adobe Acrobat Reader拡張機能のために、PDFドキュメントで有効または無効にされた使用権限が取得されます。
-* PDFドキュメント内に存在するメタデータ情報を取得します。メタデータは、ドキュメントに関する情報（テキストやグラフィックなど、ドキュメントの内容と区別されるもの）です。 Adobe XMP（Extensible Metadata Platform）は、ドキュメントのメタデータを処理するための規格です。 XMP ユーティリティサービスでは、PDFドキュメントからXMP メタデータを取得し、PDFドキュメントにXMP メタデータを書き出すことができます。
+* PDF に添付ファイル、コメント、Acrobat バージョンなどが含まれているかどうかなど、PDF ドキュメントのプロパティを取得します。
+* PDF ドキュメントで有効な使用権限を抽出すると、Adobe Acrobat Reader 拡張機能のために、PDF ドキュメントに対して有効または無効になっている使用権限を取得できます。
+* PDF ドキュメント内に存在するメタデータ情報を取得します。メタデータは、ドキュメントに関する情報（テキストやグラフィックなど、ドキュメントの内容と区別されるもの）です。Adobe Extensive Metadata Platform（XMP）は、ドキュメントのメタデータを処理するための標準です。XMP ユーティリティサービスを使用すると、PDF ドキュメントから XMP メタデータを取得し、XMP メタデータを PDF ドキュメントに書き出すことができます。
 
-この [API リファレンスドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) api から提供されるすべてのパラメーター、認証方法およびサービスの詳細について説明します。 API リファレンスドキュメントは、.yaml 形式でも入手できます。.yaml をダウンロードし、Postmanにアップロードして API の機能を確認できます。
+API が提供するすべてのパラメーター、認証方法および各種サービスについて詳しくは、[API リファレンスドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)を参照してください。API リファレンスドキュメントは、.yaml 形式でも入手できます。.yaml ファイルをダウンロードし、Postman にアップロードして API の機能を確認できます。
 
 <!--
 
@@ -189,21 +189,21 @@ PDF documents contain metadata, which is information about the document (as dist
 
 -->
 
-## ドキュメント変換
+## ドキュメントのコンバージョン
 
-### PDF/A 準拠ドキュメントへの変換と PDF/A 準拠ドキュメントの検証
+### PDF/A 準拠ドキュメントへのコンバージョンと検証
 
-コミュニケーションドキュメント変換 API は、PDFドキュメントをPDF/A に変換するのに役立ちます。API を使用して、PDFドキュメントをPDF/A 準拠のドキュメントに変換したり、PDFドキュメントがPDF/A に準拠しているかどうかを判断したりできます。 PDF/A は、ドキュメントのコンテンツを長期保存するためのアーカイブ形式です。フォントはドキュメントに埋め込まれ、ファイルは非圧縮になります。その結果、通常、PDF/A ドキュメントは標準の PDF ドキュメントよりも大きくなります。なお、PDF/A ドキュメントには、オーディオおよびビデオのコンテンツは含まれません。
+通信ドキュメント変換 API は、PDF ドキュメントを PDF/A 準拠ドキュメントにコンバージョンするのに役立ちます。API を使用すると、PDF ドキュメントを PDF/A 準拠ドキュメントにコンバージョンしたり、PDF ドキュメントが PDF/A に準拠しているかどうかを判断したりできます。PDF/A は、ドキュメントのコンテンツを長期保存するためのアーカイブ形式です。フォントはドキュメントに埋め込まれ、ファイルは非圧縮になります。その結果、通常、PDF/A ドキュメントは標準の PDF ドキュメントよりも大きくなります。なお、PDF/A ドキュメントには、オーディオおよびビデオのコンテンツは含まれません。
 
-### PDFを XDP に変換 {#convert-pdf-to-xdp}
+### PDF を XDP にコンバージョン {#convert-pdf-to-xdp}
 
-<span class="preview"> PDFを XDP に変換機能は、早期導入プログラムの下にあります。 早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID で aem-forms-ea@adobe.com までメールを送信してください。</span>
+<span class="preview">PDFを XDP にコンバージョン機能は、早期導入プログラムに基づいています。早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式メール ID から aem-forms-ea@adobe.com にメールを送信してください。</span>
 
-PDFドキュメントを XDP ファイルに変換します。 PDFドキュメントを XDP ファイルに正常に変換するには、PDFドキュメントのディクショナリに XFA ストリームが含まれている必要があります。
+PDF ドキュメントを XDP ファイルにコンバージョンします。PDF ドキュメントを XDP ファイルに正常にコンバージョンするには、PDF ドキュメントのディクショナリ内に XFA ストリームが含まれている必要があります。
 
 ## ドキュメント保証 {#doc-assurance}
 
-DocAssurance サービスには、Signature API と Encryption API が含まれています。
+DocAssurance サービスには、以下の署名 API と暗号化 API が含まれています。
 
 ### Signature API
 
@@ -230,12 +230,12 @@ Signature API と Encryption API は両方とも [同期 API](#types-of-communic
 
 ### ドキュメントユーティリティ {#doc-utility}
 
-同期 API を備えたドキュメントユーティリティを使用すると、PDFファイル形式と XDP ファイル形式の間でドキュメントを変換できます。 ドキュメントに使用権限を適用し、ドキュメントから有効な使用権限を抽出します。 PDFドキュメントに関する情報を照会します。 <!-- determines whether a PDF document contains comments or attachments and more, and use document transformation services for XMP utilities--> 使用権限 API の詳細を以下に示します。
+同期 API を備えたドキュメントユーティリティは、PDF ファイル形式と XDP ファイル形式の間でドキュメントをコンバージョンするのに役立ちます。ドキュメントに使用権限を適用し、ドキュメントから有効な使用権限を抽出します。PDF ドキュメントに関する情報のクエリを実行します。<!-- determines whether a PDF document contains comments or attachments and more, and use document transformation services for XMP utilities-->使用権限 API の詳細を以下に示します。
 
 
-#### 使用権限 API （Reader拡張機能）
+#### 使用権限 API（Reader Extension）
 
-<span class="preview"> 使用権限（Reader拡張）機能は、早期導入プログラムの下にあります。 早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID で aem-forms-ea@adobe.com までメールを送信してください。</span>
+<span class="preview">使用権限 API（Reader Extension）の機能は、早期導入プログラムに基づいています。早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID で aem-forms-ea@adobe.com までメールを送信してください。</span>
 
 Usage Rights の機能を使用すると、追加の使用権限を付与して Adobe Reader の機能を拡張することで、組織内でインタラクティブ PDF ドキュメントを簡単に共有できます。このサービスは Adobe Reader 7.0 以降で動作し、PDF ドキュメントに使用権限を追加します。これにより、PDF ドキュメントを Adobe Reader で開いた場合には通常使用できない機能（ドキュメントへのコメントの追加、フォームへの入力、ドキュメントの保存など）がアクティブになります。
 
@@ -286,7 +286,7 @@ PDF Reader サービスを拡張する様々な使用権限の機能を次に示
 * **メッセージ**：1 つ以上の使用権限が適用された PDF ドキュメントを開いた際に Adobe Acrobat Reader 内に表示されるメッセージ。
 * **パスワードをロック解除**：暗号化された PDF ドキュメントを開く際に必要なパスワード。通常、これはドキュメントを開くパスワードですが、PDF ドキュメントが権限パスワードでさらに保護されている場合は、いずれかを使用して開くことができます。
 
-API から提供されるすべてのパラメーター、認証方法および各種サービスの詳細については、[API リファレンスドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)を参照してください。API リファレンスドキュメントは、.yaml 形式でも入手できます。.yaml をダウンロードし、Postmanにアップロードして API の機能を確認できます。
+API から提供されるすべてのパラメーター、認証方法および各種サービスの詳細については、[API リファレンスドキュメント](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)を参照してください。API リファレンスドキュメントは、.yaml 形式でも入手できます。.yaml ファイルをダウンロードし、Postman にアップロードして API の機能を確認できます。
 
 ## 通信 API のタイプ {#types}
 
@@ -294,13 +294,13 @@ API から提供されるすべてのパラメーター、認証方法および�
 
 * **[同期 API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** は、オンデマンド、低遅延、単一レコードのドキュメント生成シナリオに適しています。これらの API は、ユーザーアクションに基づいたユースケースにより適しています。例えば、ユーザーがフォームへの入力を完了した後にドキュメントを生成するような場合です。
 
-* **[バッチ API（非同期 API）](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)**&#x200B;は、スケジュール化された、高スループットの、複数のドキュメント生成シナリオに適しています。これらの API は、バッチでドキュメントを生成します。例えば、電話料金、クレジットカード明細、給付計算書は、毎月生成されます。
+* **[バッチ API（非同期 API）](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)**&#x200B;は、スケジュール化された、高スループットの、複数のドキュメント生成シナリオに適しています。これらの API は、バッチでドキュメントを生成します。例えば、毎月生成される電話料金請求書、クレジットカード明細書、給付計算書などです。
 
 ## オンボーディング
 
-通信機能は、Forms as a Cloud Service ユーザー向けのスタンドアロンおよびアドオンモジュールとして利用できます。アクセス権をリクエストする場合は、AdobeのセールスチームまたはAdobe担当者にお問い合わせください。 お客様の組織で変換サービスを使用できるように設定し、組織の管理者に対して必要な権限を設定します。管理者は、API を使用するためのアクセス権を、組織内のFormsas a Cloud Service開発者（ユーザー）に付与することができます。
+通信機能は、Forms as a Cloud Service ユーザー向けのスタンドアロンおよびアドオンモジュールとして利用できます。アクセスをリクエストする場合は、アドビセールスチームまたはアドビ担当者にお問い合わせください。お客様の組織で機能にアクセスできるように設定し、組織の管理者に必要な権限を付与します。管理者は、API を使用するためのアクセス権限を、組織内の Forms as a Cloud Service 開発者（ユーザー）に付与することができます。
 
-オンボーディング後、Formsas a Cloud Service環境で通信機能を有効にするには：
+オンボーディング後、Forms as a Cloud Service 環境で通信機能を有効にするには：
 
 1. Cloud Manager にログインし、AEM Forms as a Cloud Service インスタンスを開きます。
 

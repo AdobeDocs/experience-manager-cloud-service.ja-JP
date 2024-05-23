@@ -6,7 +6,7 @@ role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
 source-git-commit: 5321fed58f66b2beabcacc2de4b7dfb2dc3754f1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3145'
 ht-degree: 100%
 

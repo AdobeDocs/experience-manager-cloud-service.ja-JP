@@ -6,9 +6,9 @@ keywords: Google reCAPTCHA サービス, アダプティブフォーム, CAPTCHA
 feature: Adaptive Forms, Core Components
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
 source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '939'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,14 +21,14 @@ ht-degree: 98%
 
 CAPTCHA（コンピュータと人間を区別する完全に自動化された公開チューリングテスト）は、人間と自動化されたプログラム／ボットを区別するために、オンライントランザクションで一般的に使用されるプログラムです。テストを行ってユーザーの反応を評価し、サイトを使用しているのが人間かボットかを判断します。テストが失敗した場合の続行を防ぎ、ボットによるスパムの投稿や悪意のある目的を防止することで、オンライントランザクションの安全性を高めます。
 
-AEM Forms as a Cloud Serviceは、次の CAPTCHA ソリューションをサポートしています。
+AEM Forms as a Cloud Service は、次の CAPTCHA ソリューションをサポートしています。
 
 * [Google reCAPTCHA](#connect-your-aem-forms-environment-with-recaptcha-service-by-google)
 * [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
-* [Captcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+* [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
 
 
-## AEM Forms 環境と Google による reCAPTCHA サービスとの接続 {#connect-your-forms-environment-with-recaptcha-service-by-google}
+## AEM Forms 環境と Google reCAPTCHA サービスの接続 {#connect-your-forms-environment-with-recaptcha-service-by-google}
 
 フォームの作成者は、Google による reCAPTCHA サービスを使用してアダプティブフォームに CAPTCHA を実装できます。サイトを保護する高度な CAPTCHA 機能を提供します。reCAPTCHA の仕組みについて詳しくは、[Google reCAPTCHA](https://developers.google.com/recaptcha/) を参照してください。[!DNL AEM Forms] as a [!DNL Cloud Service] は、アダプティブフォームで Google reCAPTCHA v2 をサポートします。これを使用して、フォームの送信時に CAPTCHA の課題を提示できます。AEM Forms 環境を Google による reCAPTCHA サービスに接続するには
 

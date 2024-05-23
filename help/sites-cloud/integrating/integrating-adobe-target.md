@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 source-git-commit: 3ac17f1a67f4d952a0206b124d70762b65e1f354
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1065'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Adobe Experience Cloud に含まれている Adobe Target を使用すると、�
 
 Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／タグ）の両方のクライアントサイドプロパティを管理するために必要です。ただし、「エクスペリエンスのターゲット設定」には、Launch との統合が必要です。
 
-エクスペリエンスフラグメントやコンテンツフラグメントを Target に書き出す場合、 [Adobe Target設定](#create-configuration)を含む [IMS 統合](#ims-configuration).
+エクスペリエンスフラグメントやコンテンツフラグメントを Target に書き出す場合は、[IMS 統合](#ims-configuration)を含む [Adobe Target 設定](#create-configuration)が必要です。
 
 >[!NOTE]
 >
@@ -38,17 +38,17 @@ Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／
 
 ### IMS 設定 {#ims-configuration}
 
-Target Standard API を介して AEM と Adobe Target を統合するには、Adobe IMS（Identity Management System）の設定が必要です。Target のプロビジョニング後に、Target IMS 設定を作成する必要があります。 参照： [AEM用 IMS 統合の設定as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) およびビデオ [Experience Platform LaunchとAEMの統合](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=ja) で Target IMS 設定の作成方法を説明します。
+Target Standard API を介して AEM と Adobe Target を統合するには、Adobe IMS（Identity Management System）の設定が必要です。Target IMS 設定は（Target のプロビジョニング後に）作成する必要があります。Target IMS 設定の作成方法については、[AEM as a Cloud Service の IMS 統合の設定](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)とビデオ [Experience Platform Launch と AEM の統合](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=ja)を参照してください。
 
 >[!NOTE]
 >
->[IMS 統合が S2S OAuth で設定されるようになりました。](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>[IMS 統合が S2S OAuth で設定されるようになりました](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)。
 >
->以前の設定は次のもので行われました： [Adobe Developer コンソールで廃止される可能性がある JWT 資格情報](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>以前は [JWT 資格情報を使用して設定が行われていましたが、この設定は現在 Adobe Developer Console で廃止予定](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)です。
 
 >[!NOTE]
 >
->プロジェクトを設定する際にで表示される製品プロファイルは、次のものがあるかどうかによって異なります。
+>プロジェクトの設定時に表示される製品プロファイルは、次のものがあるかどうかによって異なります。
 >
 >* Adobe Target Standard - **デフォルトのワークスペース**&#x200B;のみ使用可能です
 >* Adobe Target Premium - 以下に示すように、使用可能なすべてのワークスペースが一覧表示されます

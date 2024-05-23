@@ -3,9 +3,9 @@ title: UI テスト
 description: カスタム UI テストは、カスタムアプリケーションの UI テストを作成して自動的に実行できるオプション機能です
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 305098c7ebcb6145129b146d60538b5177b4f26d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2610'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ UI テストは、Java で記述された HTTP テストであるカスタム機
 
    * Cypress の場合は、[AEM テストサンプルのリポジトリ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress)からサンプルコードを使用します。
 
-   * JavaScript と WDIO の場合は、に自動的に生成されるサンプルコードを使用します。 `ui.tests` cloud Manager リポジトリのフォルダー。
+   * JavaScript と WDIO の場合は、Cloud Manager リポジトリの `ui.tests` フォルダーに自動的に生成されるサンプルコードを使用します。
 
      >[!NOTE]
      >
@@ -146,7 +146,7 @@ Docker ビルドコンテキストを生成するには、次の処理を行う 
 </assembly>
 ```
 
-アセンブリ記述子は、`.tar.gz` タイプのアーカイブを作成するようにプラグインに指示し、そのアーカイブに `ui-test-docker-context` 分類子を割り当てます。さらに、アーカイブに含める必要がある次のようなファイルが一覧表示されます。
+アセンブリ記述子は、`.tar.gz` タイプのアーカイブを作成するようにプラグインに指示し、そのアーカイブに `ui-test-docker-context` 分類子を割り当てます。さらに、そのアーカイブに含める必要のある次のファイルがリストされます。
 
 * `Dockerfile`：Docker イメージの作成に必須
 * `wait-for-grid.sh` スクリプト：目的は後述のとおり
@@ -199,7 +199,7 @@ Cloud Manager で UI テストを作成して実行するには、リポジト�
   fi
   ```
 
-* Adobeが提供する Cypress および Java Selenium テストサンプルには、既にオプトインフラグが設定されています。
+* アドビが提供する Cypress および Java Selenium のテストサンプルには、既にオプトインフラグが設定されています。
 
 ## UI テストの書き込み {#writing-ui-tests}
 
@@ -222,18 +222,18 @@ Cloud Manager で UI テストを作成して実行するには、リポジト�
 | `REPORTS_PATH` | `/usr/src/app/reports` | テスト結果の XML レポートの保存先となるパス | すべて |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | テストフレームワークにアクセスできるようにファイルをアップロードする必要がある URL | すべて |
 | `PROXY_HOST` | `proxy-host` | テストフレームワークで使用される内部 HTTP プロキシのホスト名 | Selenium を除くすべて |
-| `PROXY_HTTPS_PORT` | `8071` | HTTPS 接続のプロキシサーバーのリスニングポート （空にすることができます） | Selenium を除くすべて |
-| `PROXY_HTTP_PORT` | `8070` | HTTP 接続のプロキシサーバーのリスニングポート （空にすることができます） | Selenium を除くすべて |
+| `PROXY_HTTPS_PORT` | `8071` | HTTPS 接続のプロキシサーバーのリスニングポート（空にすることができます） | Selenium を除くすべて |
+| `PROXY_HTTP_PORT` | `8070` | HTTP 接続のプロキシサーバーのリスニングポート（空にすることができます） | Selenium を除くすべて |
 | `PROXY_CA_PATH` | `/path/to/root_ca.pem` | テストフレームワークで使用される CA 証明書へのパス | Selenium を除くすべて |
 | `PROXY_OBSERVABILITY_PORT` | `8081` | プロキシサーバーの HTTP ヘルスチェックポート | Selenium を除くすべて |
-| `PROXY_RETRY_ATTEMPTS` | `12` | プロキシサーバーの準備待ちの再試行推奨回数 | Selenium を除くすべて |
-| `PROXY_RETRY_DELAY` | `5` | プロキシサーバーの準備待ちの再試行間に推奨される遅延 | Selenium を除くすべて |
+| `PROXY_RETRY_ATTEMPTS` | `12` | プロキシサーバーの準備が整うまでの推奨される再試行の試行回数 | Selenium を除くすべて |
+| `PROXY_RETRY_DELAY` | `5` | プロキシサーバーの準備が整うまでの推奨される再試行間の遅延 | Selenium を除くすべて |
 
 アドビテストサンプルには、設定パラメーターにアクセスするためのヘルパー関数が用意されています。
 
 * Cypress：標準関数 `Cypress.env('VARIABLE_NAME')` を使用します
-* JavaScript：詳しくは、 [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) モジュール
-* Java：詳しくは [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) クラス
+* JavaScript：[`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) モジュールを参照してください
+* Java：[`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) クラスを参照してください
 
 ### テストレポートの生成 {#generate-test-reports}
 
@@ -247,7 +247,7 @@ Docker イメージが他のプログラミング言語またはテストラン�
 >
 >エラーを STDERR に記録したり、ゼロ以外の終了コードを返すのではなく、アサーションを使用してください。そうしない場合、デプロイメントパイプラインが正常に実行されます。
 >
->テストの実行中に HTTP プロキシが使用された場合、結果には次が含まれます `request.log` ファイル。
+>テストの実行中に HTTP プロキシを使用した場合、結果には `request.log` ファイルが含まれます。
 
 ### 前提条件 {#prerequisites}
 
@@ -320,46 +320,46 @@ UI テストの実行中にテスト結果アーカイブが作成された場�
 
 >[!NOTE]
 >
->この節は、選択されたテストインフラストラクチャが Cypress の場合にのみ適用されます。
+>この節は、テストインフラストラクチャとして Cypress を選択した場合にのみ適用されます。
 
 ### HTTP プロキシの設定
 
-Docker コンテナのエントリポイントは、の値を確認する必要があります `PROXY_HOST` 環境変数。
+Docker コンテナのエントリポイントでは、`PROXY_HOST` 環境変数の値を確認する必要があります。
 
-この値が空の場合は、追加の手順は必要なく、HTTP プロキシを使用せずにテストを実行する必要があります。
+この値が空の場合は、追加の手順は不要で、HTTP プロキシを使用せずにテストを実行する必要があります。
 
-空でない場合、エントリポイントスクリプトでは次の処理を行う必要があります。
+空でない場合は、エントリポイントスクリプトで次の操作を実行する必要があります。
 
-1. UI テストを実行するための HTTP プロキシ接続を設定する。 これを行うには、 `HTTP_PROXY` 次の値を使用して作成された環境変数。
-   * プロキシホスト（が提供） `PROXY_HOST` 変数
-   * プロキシポート（が提供） `PROXY_HTTPS_PORT` または `PROXY_HTTP_PORT` 変数（値が空でない変数が使用されます）
-2. HTTP プロキシへの接続時に使用する CA 証明書を設定します。 場所は次のように提供されます `PROXY_CA_PATH` 変数。
-   * これは、次を書き出すことで実現できます `NODE_EXTRA_CA_CERTS` 環境変数。
-3. HTTP プロキシの準備が整うまで待ちます。
-   * 準備状況を確認するために、環境変数を確認します。 `PROXY_HOST`, `PROXY_OBSERVABILITY_PORT`, `PROXY_RETRY_ATTEMPTS` および `PROXY_RETRY_DELAY` を使用できます。
-   * cURL リクエストを使用して確認できます。その際に、必ず cURL を `Dockerfile`.
+1. UI テストを実行するための HTTP プロキシ接続を設定します。これを行うには、次の値を使用して作成された `HTTP_PROXY` 環境変数を書き出します。
+   * `PROXY_HOST` 変数によって提供されるプロキシホスト
+   * `PROXY_HTTPS_PORT` または `PROXY_HTTP_PORT` 変数によって提供されるプロキシポート（値が空でない変数が使用されます）
+2. HTTP プロキシに接続する際に使用する CA 証明書を設定します。その場所は、`PROXY_CA_PATH` 変数によって提供されます。
+   * これを行うには、`NODE_EXTRA_CA_CERTS` 環境変数を書き出します。
+3. HTTP プロキシの準備が整うまで待機します。
+   * 準備状況を確認するには、環境変数 `PROXY_HOST`、`PROXY_OBSERVABILITY_PORT`、`PROXY_RETRY_ATTEMPTS` および `PROXY_RETRY_DELAY` を使用できます。
+   * cURL リクエストを使用して確認できます。その場合は、必ず `Dockerfile` に cURL をインストールしてください。
 
-実装例は、にある Cypress サンプルテストモジュールのエントリポイントにあります [GitHub。](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)
+実装例は、[GitHub](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh) の Cypress サンプルテストモジュールのエントリポイントにあります。
 
-## 再生者固有の詳細
+## Playwright 固有の詳細
 
 >[!NOTE]
 >
-> この節は、選択したテストインフラストラクチャが Playwright の場合にのみ適用されます。
+> この節は、テストインフラストラクチャとして Playwright を選択した場合にのみ適用されます。
 
 ### HTTP プロキシの設定
 
 >[!NOTE]
 >
-> この例では、Chrome がプロジェクトブラウザーとして使用されていると仮定します。
+> 提示している例では、Chrome をプロジェクトブラウザーとして使用していることを前提としています。
 
-Cypress と同様、テストでは空でない場合に HTTP プロキシを使用する必要があります `PROXY_HOST` 環境変数が指定されています。
+Cypress と同様に、空でない `PROXY_HOST` 環境変数が設定されている場合、テストでは HTTP プロキシを使用する必要があります。
 
-それには、次の変更を行う必要があります。
+これを行うには、次の変更を行う必要があります。
 
 #### Dockerfile
 
-cURL と `libnss3-tools`。これは次を提供します `certutil.`
+`certutil.` を提供する cURL と `libnss3-tools` をインストールします。
 
 ```dockerfile
 RUN apt -y update \
@@ -369,11 +369,11 @@ RUN apt -y update \
 
 #### エントリポイントスクリプト
 
-大文字と小文字を区別して bash スクリプトを含める `PROXY_HOST` 環境変数が提供されており、次の操作を実行します。
+`PROXY_HOST` 環境変数が設定されている場合は、次の操作を実行する bash スクリプトを含めます。
 
-1. などのプロキシ関連変数の書き出し `HTTP_PROXY` および `NODE_EXTRA_CA_CERTS`
-2. 使用方法 `certutil` chromium のプロキシ CA 証明書をインストールするには
-3. HTTP プロキシの準備が整うまで待ちます（または失敗したら終了します）。
+1. `HTTP_PROXY` や `NODE_EXTRA_CA_CERTS` などのプロキシ関連の変数を書き出します
+2. `certutil` を使用して Chromium のプロキシ CA 証明書をインストールします
+3. HTTP プロキシの準備が整うまで待機します（失敗した場合は終了します）。
 
 実装例：
 
@@ -404,9 +404,9 @@ if [ -n "${PROXY_HOST:-}" ]; then
 fi
 ```
 
-#### 再生の設定
+#### Playwright の設定
 
-再生設定を変更します（例：）。 `playwright.config.js`）に設定する必要があります。 `HTTP_PROXY` 環境変数が設定されています。
+`HTTP_PROXY` 環境変数が設定されている場合にプロキシを使用するように、playwright 設定（例：`playwright.config.js`）を変更します。
 
 実装例：
 
