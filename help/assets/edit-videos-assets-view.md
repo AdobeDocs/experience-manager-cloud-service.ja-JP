@@ -3,10 +3,10 @@ title: ビデオの編集
 description: を使用したビデオの編集 [!DNL Adobe Express] を利用したオプションと、更新したビデオをバージョンとして保存します。
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
-source-git-commit: 4f3c15d3a103d15c51ddfe4b0c5dbb5e7e18e8b7
+source-git-commit: 79e72f967673010b936bd0464a2fcf0a1c068e69
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 17%
 
 ## 前提条件 {#prerequisites}
 
-アクセスする権限 [!DNL Adobe Express] およびAEM Assets内の少なくとも 1 つの環境が対象となります。 内の任意のリポジトリを環境にすることができます [!DNL Assets as a Cloud Service] または [!DNL Assets view].
+アクセスする権限 [!DNL Adobe Express] およびAEM Assets内の少なくとも 1 つの環境が対象となります。 環境には、[!DNL Assets as a Cloud Service] または [!DNL Assets view] 内の任意のリポジトリを指定できます。
 
 ## Adobe Expressを使用したビデオの編集 {#edit-video-using-express}
 
@@ -33,7 +33,7 @@ ht-degree: 17%
 3. ビデオの隅にあるハンドルをドラッグして目的の切り抜きを作成するか、必要に応じて既存の画面サイズから選択します。
 4. ビデオのミュートまたはミュート解除を選択できます。
 5. 「**[!UICONTROL 適用]**」をクリックします。
-   ![Adobe Expressでビデオを切り抜く](assets/adobe-express-crop-video.png)
+   ![Adobe Express を使用したビデオの切り抜き](assets/adobe-express-crop-video.png)
 
    切り抜いたビデオはダウンロードできます。 編集したアセットは、同じアセットの新しいバージョンとして保存するか、新しいアセットとして保存できます。 ![Adobe Expressでビデオを保存](assets/adobe-express-save-video.png)
 
@@ -83,7 +83,7 @@ Adobe Expressを使用して、MP4 ビデオをGIF形式にすばやく変換で
 
 * 編集には MP4 形式のビデオのみがサポートされます。
 
-* サポートされるソースファイルの最大サイズは 200 MB です。
+* サポートされるソースファイルの最大サイズは 1 GB です。
 
 * サポートされるビデオは、どの側も 46 ピクセルを超え、3840 ピクセル未満です。
 
