@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 37afa8f8233154999bf3e332fb91d8e19f5c0f56
 workflow-type: tm+mt
 source-wordcount: '4971'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -192,7 +192,7 @@ ht-degree: 99%
    + [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service のセキュリティに関する考慮事項](/help/security/security-considerations.md)
    + [Adobe Developer Console での JWT 資格情報の非推奨（廃止予定）](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
-   + [AEM用 IMS 統合の設定as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
+   + [AEM as a Cloud Service の IMS 統合の設定](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [Sling サービスユーザーマッピングとサービスユーザー定義のベストプラクティス](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
 + オンボーディング {#onboarding}
    + [ここから開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ja)
@@ -1176,7 +1176,7 @@ ht-degree: 99%
       + [Dispatcher ツールを使用した検証とデバッグ（レガシー）](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [AEM as a Cloud Service での CDN](/help/implementing/dispatcher/cdn.md)
       + [CDN でのトラフィックの設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)
-      + [エッジ側インクルード](/help/implementing/dispatcher/edge-side-includes.md)
+      + [エッジサイドインクルード](/help/implementing/dispatcher/edge-side-includes.md)
       + [CDN エラーページの設定](/help/implementing/dispatcher/cdn-error-pages.md)
       + [AEM as a Cloud Service でのキャッシュ](/help/implementing/dispatcher/caching.md)
 + コネクタ {#connectors}
