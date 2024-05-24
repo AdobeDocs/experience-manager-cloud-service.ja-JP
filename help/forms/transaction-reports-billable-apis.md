@@ -3,10 +3,10 @@ title: トランザクションレポート請求可能 API
 description: トランザクションとして計上されるすべての API のリスト
 feature: Adaptive Forms, Foundation Components
 exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
-source-git-commit: 543e9b78b4bdc11c49f79c6baec79615c5f7f91b
+source-git-commit: df4fbe8552ad61df3a8e8b44dcd1427b8f6e9240
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 81%
+source-wordcount: '1438'
+ht-degree: 71%
 
 ---
 
@@ -34,6 +34,46 @@ AEM Forms には、フォームの送信、ドキュメントの処理、ドキ�
 
 * **レンダリング済みドキュメント：** テンプレートとデータを組み合わせたドキュメントの生成、ドキュメントの電子署名または認証、ドキュメントサービスの課金可能なドキュメントサービス API の使用、ある形式から別の形式へのドキュメントの変換は、レンダリング済みドキュメントとして計上されます。
 
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_submission_graph_en"
+>title="フォーム送信トラッカー"
+>abstract="このグラフは、特定の期間におけるアダプティブフォームの送信数を表します。 送信が増加している場合は、フォームの人気が高まっているか、ユーザーからより多くのデータを収集する必要があることを示している可能性があります。 **注意：** グラフには、現在のインスタンスに固有のデータが表示されるので、トレンドを迅速に分析し、情報に基づいた意思決定を行うことができます。 他のインスタンスの送信データについては、各インスタンスのダッシュボードにアクセスするだけです。"
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_conversions_graph_en"
+>title="ドキュメントレンディショントラッカー"
+>abstract="このグラフは、特定の期間におけるドキュメントレンディションの数を表します。 **注意：** グラフには、現在のインスタンスに固有のデータが表示されるので、トレンドを迅速に分析し、情報に基づいた意思決定を行うことができます。 他のインスタンスの送信データについては、各インスタンスのダッシュボードにアクセスするだけです。"
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_newForms_graph_en"
+>title="新しい Forms トラッカー"
+>abstract="グラフには、特定の期間に新しく作成されたフォームの数に関する情報が表示されます。 **注意：** グラフは、現在のAEM Forms オーサーインスタンスに固有のデータを提供します。 他のインスタンスのデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
+>title="公開済み Forms トラッカー"
+>abstract="グラフには、特定の期間に正常に公開されたフォームの数に関する情報が表示されます。 **注意：** グラフは、現在のAEM Forms パブリッシュインスタンスに固有のデータを提供します。 他のインスタンスのコンバージョンデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
+>title="フォーム生成の平均期間"
+>abstract="グラフは、フォームの作成に要した平均時間を示します。グラフの各棒は特定のフォームを表し、棒の高さはその時間枠内でフォームの作成に要した平均時間を示します。"
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
+>title="フォーム作成の平均期間"
+>abstract="グラフには、フォームが編集用に開かれた最初の日から測定された、フォームの作成と公開にかかった平均時間が表示されます。**注意：** グラフは、現在のAEM Forms オーサーインスタンスに固有のデータを提供します。 他のインスタンスのデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
+
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_formFragments_graph_en"
+>title="Forms Fragments Tracker"
+>abstract="このグラフは、フォームで使用しているフォームフラグメントの数を確認するのに役立ちます。 **注意：** グラフは、現在のAEM Forms パブリッシュインスタンスに固有のデータを提供します。 他のインスタンスのコンバージョンデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
+>title="フォームフラグメントの平均時間トラッカー"
+>abstract="グラフには、フォームフラグメントが編集用に開かれた最初の日から測定された、フォームフラグメントの作成にかかった平均時間が表示されます。**注意：** グラフは、現在のAEM Forms パブリッシュインスタンスに固有のデータを提供します。 他のインスタンスのコンバージョンデータを表示するには、各インスタンスのダッシュボードにアクセスします。"
 
 
 <!-- 
