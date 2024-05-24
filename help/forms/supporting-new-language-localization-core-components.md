@@ -4,10 +4,10 @@ description: アダプティブフォームに新しいロケールを追加す�
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 2658d844036d8ac5759d819f9d19c4528cc4df61
+source-git-commit: 9cb3b52d0cf172c16777eadbc4d78b267c3db513
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 17%
+source-wordcount: '2028'
+ht-degree: 12%
 
 ---
 
@@ -270,7 +270,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
 
 
-### 5. 辞書にロケールサポートを追加する
+### 辞書へのロケールサポートの追加
 
 この手順は、英語（en）、ドイツ語（de）、スペイン語（es）、フランス語（fr）、イタリア語（it）、ポルトガル語（pt-br）、中国語（簡体字 – zh_cn）、中国語（繁体字 – zh_tw）、日本語（ja）、韓国語（ko_kr）の一般的にサポートされているロケール以外にのみ適用されます。
 
@@ -350,7 +350,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
       を使用したコードのデプロイメントのトリガー [既存のフルスタックパイプライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline). これにより、新しいロケールサポートを含む更新されたコードが自動的にビルドおよびデプロイされます。
 
-      まだパイプラインを設定していない場合は、でガイドを参照してください [AEM Formsas a Cloud Service用のパイプラインの設定方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)..
+      まだパイプラインを設定していない場合は、でガイドを参照してください [AEM Formsas a Cloud Service用のパイプラインの設定方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline).
 
 
 ## 新しく追加されたロケールでのアダプティブフォームのプレビュー
@@ -358,8 +358,6 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 次の手順では、新しく追加されたロケールでアダプティブフォームをプレビューする手順を説明します。
 
 1. AEM Forms as a Cloud Service インスタンスにログインします。
-
-1. 「Forms」セクションで「Formsとドキュメント」に移動します。
 1. **Forms**／**フォームとドキュメント**&#x200B;に移動します。
 1. アダプティブフォームを選択し、「**辞書を追加**」をクリックすると、**辞書を翻訳プロジェクトに追加**&#x200B;ウィザードが表示されます。
 1. **プロジェクトタイトル**&#x200B;を指定し、**辞書を翻訳プロジェクトに追加**&#x200B;ウィザードのドロップダウンメニューから「**ターゲット言語**」を選択します。
@@ -367,20 +365,6 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 1. **Forms**／**フォームとドキュメント**&#x200B;に移動します。
 1. アダプティブフォームを選択し、 **HTMLとしてプレビュー** オプション。
 1. Append `&afAcceptLang=<locale-name>` をプレビュー URL に移動し、Return キーを押します。 置換 `<locale-name>` 実際のロケールコードを使用します。 アダプティブフォームは指定したロケールで表示されます。
-
-
-## 新しく追加されたロケールでのアダプティブフォームのプレビュー {#use-added-locale-in-af}
-
-新しく追加されたロケールでアダプティブフォームをプレビューするには、次の手順を実行します。
-
-1. AEM Forms as a Cloud Service インスタンスにログインします。
-1. **Forms**／**フォームとドキュメント**&#x200B;に移動します。
-1. アダプティブフォームを選択し、「**辞書を追加**」をクリックすると、**辞書を翻訳プロジェクトに追加**&#x200B;ウィザードが表示されます。
-1. **プロジェクトタイトル**&#x200B;を指定し、**辞書を翻訳プロジェクトに追加**&#x200B;ウィザードのドロップダウンメニューから「**ターゲット言語**」を選択します。
-1. 「**完了**」をクリックし、作成した翻訳プロジェクトを実行します。
-1. アダプティブフォームを選択し、「**HTML としてプレビュー**」をクリックします。
-1. アダプティブフォームの URL に `&afAcceptLang=<locale-name>` を追加します。
-1. ページを更新すると、アダプティブフォームは指定されたロケールでレンダリングされます。
 
 ## 新しいローカライゼーションをサポートする上でのベストプラクティス {#best-practices}
 
@@ -393,12 +377,11 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
    * **人間による翻訳**：人間による翻訳のワークフローの場合、の UI を使用して辞書を書き出します。 `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. 新しいフィールド用の辞書を更新し、改訂されたバージョンをアップロードします。
 
-## 詳細を表示する
-
-* [アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-core-components.md)
-* [AEM Sites ページまたはエクスペリエンスフラグメントにアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
 
 ## 関連トピック {#see-also}
 
 {{see-also}}
+
+* [アダプティブフォームにおけるレコードのドキュメントの生成](/help/forms/generate-document-of-record-core-components.md)
+* [AEM Sites ページまたはエクスペリエンスフラグメントにアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
