@@ -2,16 +2,16 @@
 title: アセットビューでのレポートの管理
 description: アセットビューの「レポート」セクションのデータにアクセスして、製品と機能の使用状況を評価し、主要な成功指標に関するインサイトを導き出します。
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: ht
-source-wordcount: '814'
-ht-degree: 100%
+source-git-commit: 6dc6b3e4ec9d6a816d92152cb535cd9a5d56a3b0
+workflow-type: tm+mt
+source-wordcount: '884'
+ht-degree: 88%
 
 ---
 
 # レポートの管理 {#manage-reports}
 
-アセットレポートを使用すると、管理者は Adobe Experience Manager Assets 表示環境のアクティビティを視覚的に確認できます。このデータは、ユーザーがコンテンツや製品とどのようにやり取りするかについての有用な情報を提供します。すべてのユーザーが Insights ダッシュボードにアクセスでき、管理者の製品プロファイルに割り当てられたユーザーはユーザー定義レポートを作成できます。
+アセットレポートを使用すると、管理者はAdobe Experience Manager Assets ビュー環境のアクティビティを視覚的に確認できます。 このデータは、ユーザーがコンテンツや製品とどのようにやり取りするかについての有用な情報を提供します。すべてのユーザーが Insights ダッシュボードにアクセスでき、管理者の製品プロファイルに割り当てられたユーザーはユーザー定義レポートを作成できます。
 
 ## レポートへのアクセス {#access-reports}
 
@@ -39,26 +39,30 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
 
 左側のナビゲーションパネルにある「**[!UICONTROL インサイト]**」をクリックすると、自動生成された以下のグラフを表示できます。
 
-![インサイト](assets/insights.png)
-
 * **ダウンロード**：過去 30 日間または 12 か月間にアセットビュー環境からダウンロードされたアセットの数が、折れ線グラフで表されます。
+  ![insights-downloads](/help/assets/assets/insights-downloads2341.svg)
 
 * **アップロード**：過去 30 日間または 12 か月間にアセットビュー環境にアップロードされたアセットの数が、折れ線グラフで表されます。
-
-<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
+  ![insights-uploads](/help/assets/assets/insights-uplods2.svg)
+  <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
 * **ストレージ使用量**：アセットビュー環境のストレージ使用量（バイト）は、棒グラフで表されます。
-
-<!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
+  ![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
+  <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **上位の検索**：過去 30 日間または 12 ヶ月間にアセットビュー環境で検索された上位の検索用語と共に検索回数が、表形式で表されます。
-
+  ![insights-uploads](/help/assets/assets/insights-top-search.svg)
   <!--
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
+
+* **サイズ別アセット数：** アセットビュー環境の合計アセット数を様々なサイズ範囲にセグメント化し、各サイズ範囲におけるアセットの数と割合をドーナツグラフで強調表示します。
+  ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
+* **アセットタイプ別のアセット数：** アセットビュー環境で合計アセット数をセグメント化し、ファイルタイプに基づいてアセットの数と割合をハイライト表示します（ドーナツグラフで表されます）。
+  ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
 
 ## ダウンロードレポートの作成 {#create-download-report}
 
@@ -78,7 +82,7 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
    >
    > アセットビューは、すべてのローカルタイムゾーンを協定世界時（UTC）に変換します。
 
-1. 「[!UICONTROL 列]」タブで、レポートに表示する列名を選択します。
+1. が含まれる [!UICONTROL 列] タブをクリックし、レポートに表示する列名を選択します。
 
 1. 「**[!UICONTROL 作成]**」をクリックします。
 
