@@ -2,10 +2,10 @@
 title: アクションセンター
 description: アクションセンターを活用して、インシデントやその他の重要な情報への処理を効果的に行います。
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: ddf94262c047ea0210b0759176f51d1220ac9c67
+source-git-commit: df10d8d210877e166312f66d5c4e74dbe771446a
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 93%
+source-wordcount: '798'
+ht-degree: 92%
 
 ---
 
@@ -73,5 +73,5 @@ AEM as a Cloud Service の通知には複数のタイプがありますが、次
 |---------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ブロックされたレプリケーションキュー | インシデント | キューのブロックを解除するには、[レプリケーションドキュメント](/help/operations/replication.md#troubleshooting)の手順に従ってください。 |
 | 無効な永続 GraphQL クエリ | インシデント | [永続 GraphQL クエリのトラブルシューティングドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=ja)を参照して、無効な GraphQL クエリを修正する |
-| S2S 証明書の有効期限が切れます | 事前対応 | [サーバーサイド API のアクセストークンの生成ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)で資格情報を更新する方法を説明します。 |
+| S2S 証明書の有効期限が切れます | 事前対応 | [サーバーサイド API のアクセストークンの生成ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)で資格情報を更新する方法を説明します。 | 接続数の多さ | 事前対応 | での接続プーリングについて説明します [高度なネットワークドキュメントと共に接続プールを使用](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | オリジンでのトラフィックスパイク | インシデント | オリジンアラートでデフォルトのトラフィックスパイクよりも低いしきい値でトリガーするレート制限トラフィックフィルタールールを設定して、オリジンをProtectします。  を参照してください。 [トラフィックルールを使用した DoS および DDoS 攻撃のブロック](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) の節（チュートリアルを参照しているトラフィックフィルタールールのドキュメント） |
