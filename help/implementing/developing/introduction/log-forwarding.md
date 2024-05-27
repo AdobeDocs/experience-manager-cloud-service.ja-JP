@@ -1,11 +1,9 @@
 ---
 title: AEMas a Cloud Serviceのログ転送
 description: AEM as a Cloud Serviceでの Splunk およびその他のログベンダーへのログの転送について説明します
-hide: true
-hidefromtoc: true
-source-git-commit: d41390696383f8e430bb31bd8d56a5e8843f1257
+source-git-commit: 13696ffde99114e5265e5c2818cb3257dd09ee8c
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '718'
 ht-degree: 3%
 
 ---
@@ -64,11 +62,47 @@ ht-degree: 3%
          index: "AEMaaCS"
    ```
 
-   今後の互換性の向上のため、デフォルトノードを含める必要があります。
+   この **種類** パラメーターは LogForwarding に設定する必要があります。バージョンはスキーマのバージョン（1）に設定する必要があります。
 
-   kind パラメーターは LogForwarding に設定する必要があります。バージョンはスキーマのバージョン（1）に設定する必要があります。
+   設定のトークン（など） `${{SPLUNK_TOKEN}}`）はシークレットを表すもので、Git に保存しないでください。 代わりに、Cloud Manager として宣言します  [環境変数](/help/implementing/cloud-manager/environment-variables.md) タイプの **秘密**. 必ずを選択してください。 **すべて** 「適用されるサービス」フィールドのドロップダウン値として使用することで、ログを、オーサー層、パブリッシュ層およびプレビュー層に転送できます。
 
-   設定のトークン（など） `${{SPLUNK_TOKEN}}`）はシークレットを表すもので、Git に保存しないでください。 代わりに、Cloud Manager として宣言します  [環境変数](/help/implementing/cloud-manager/environment-variables.md) タイプ「秘密鍵」の。 必ずを選択してください。 **すべて** 「適用されるサービス」フィールドのドロップダウン値として使用することで、ログを、オーサー層、パブリッシュ層およびプレビュー層に転送できます。
+   追加の値を含めることで、cdn ログとその他すべて（AEM ログと Apache ログ）の間で異なる値を設定することが可能です **cdn** および/または **aem** 次の後にブロック **default** プロパティが内で定義されたプロパティを上書きするブロック **default** ブロック。必要なのは enabled プロパティのみです。 以下の例に示すように、CDN ログに別の Splunk インデックスを使用する使用例が考えられます。
+
+   ```
+      kind: "LogForwarding"
+      version: "1"
+      metadata:
+        envTypes: ["dev"]
+      data:
+        splunk:
+          default:
+            enabled: true
+            host: "splunk-host.example.com"
+            token: "${{SPLUNK_TOKEN}}"
+            index: "AEMaaCS"
+          cdn:
+            enabled: true
+            token: "${{SPLUNK_TOKEN_CDN}}"
+            index: "AEMaaCS_CDN"   
+   ```
+
+   別のシナリオとして、CDN ログまたはその他すべて（AEM ログと apache ログ）の転送を無効にする場合もあります。 例えば、CDN ログのみを転送するには、次を設定します。
+
+   ```
+      kind: "LogForwarding"
+      version: "1"
+      metadata:
+        envTypes: ["dev"]
+      data:
+        splunk:
+          default:
+            enabled: true
+            host: "splunk-host.example.com"
+            token: "${{SPLUNK_TOKEN}}"
+            index: "AEMaaCS"
+          aem:
+            enabled: false
+   ```
 
 1. RDE 以外の環境タイプ（現在サポートされていない）の場合は、Cloud Manager でターゲットのデプロイメント設定パイプラインを作成します。
 
@@ -96,10 +130,17 @@ data:
       
 ```
 
-考慮事項：
+認証には SAS トークンを使用する必要があります。 共有アクセストークンページではなく、共有アクセス署名ページから作成し、次の設定で設定する必要があります。
 
-* SAS トークンを使用して認証します。SAS トークンには、最小検証期間が必要です。
-* SAS トークンは、コンテナページではなく、アカウントページで作成する必要があります。
+* 許可されたサービス : BLOB を選択する必要があります
+* 許可されたリソース：オブジェクトを選択する必要があります
+* 許可された権限：書き込み、追加、作成を選択する必要があります
+* 有効な開始日と有効期限。
+
+サンプルの SAS トークン設定のスクリーンショットを次に示します。
+
+![Azure Blob SAS トークン設定](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
+
 
 ### Datadog {#datadog}
 
