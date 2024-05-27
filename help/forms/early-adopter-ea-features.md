@@ -1,30 +1,30 @@
 ---
 title: の現在の早期導入者機能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
 description: の現在の早期導入者機能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
-hide: true
-hidefromtoc: true
 Feature: Introduction
 Role: developer, user
-source-git-commit: 6d0297f3ab0efd82f994b532e78f8f4d8ee864b3
+source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 13%
+source-wordcount: '1600'
+ht-degree: 10%
 
 ---
 
-# 早期導入（EA）プログラム
+# AEM Forms早期導入プログラム
 
 
-早期導入プログラムは、誰よりも先に最先端の機能に排他的にアクセスし、開発を形作るユニークな機会を提供します。 早期導入プログラムは、次のような独自の機会を提供します。
+AEM Forms早期導入プログラムは、誰よりも先に最先端の機能に排他的にアクセスし、機能の開発を形成するのに役立つユニークな機会を提供します。 プログラムでは、次の操作が可能です。
 
-* 貴重なフィードバックを提供し、今後の機能の開発に影響を与えます。
-* 最先端のテクノロジーが主流になる前に、まずその技術を体験してください。
-* バグの特定と除外に役立て、完全リリース時のユーザーエクスペリエンスをよりスムーズにします。
+* 最先端のテクノロジーが主流になる前に、そのテクノロジーにアクセスできるようにしましょう。
+* 製品チームと共にイノベーションを起こし、製品の未来を共に形作る。 ユースケースを使用して開発をガイドし、イノベーションが成熟し、実際の課題に対処できるようにします。
+* ローンチ前にフィードバックを提供して問題の解決に役立ててください。これにより、完全リリース時のユーザーエクスペリエンスがスムーズになります。
 
-[今すぐ早期導入ユーザーのコミュニティにご参加ください](#how-to-join-the-early-adopter-program). すべてのまたは今後の特定の機能へのアクセスをリクエストできます。
+## 早期導入プログラムへの参加方法
+
+早期導入プログラムに参加して早期導入イノベーションを得たい場合は、公式アドレスからaem-forms-ea@adobe.comにメールを送信して、アクセスをリクエストしてください。 すべてまたは特定のイノベーションへのアクセスをリクエストできます。
 
 
-## 早期導入（EA）機能
+## 早期導入イノベーション
 
 ### AEM Forms生成 AI （Gen AI）
 
@@ -46,17 +46,19 @@ ht-degree: 13%
 * **生成 AI プロンプトを使用したフォームルールの作成**：生成 AI プロンプトを使用して、ユーザー入力に反応するスマートルールの作成に役立てます。 アドビの生成 AI は、フォームの目的に基づいて条件付きルールを提案し、生成することもできます。
 
 
-### Workfront Fusion
+### AEM Forms Workfront Fusion コネクタ
 
-[AEM Forms Adobe Workfront Fusion コネクタ](/help/forms/submit-adaptive-form-to-workfront-fusion.md)を利用すると、Adobe Experience Manager（AEM）Forms と Adobe Workfront Fusion 間のシームレスな統合を実現できます。Adobe Workfrontは作業管理アプリケーションとして機能し、作業ライフサイクル全体を一元化します。一方、Workfront Fusion は、Workfrontと様々なビジネスアプリケーションとの接続を容易にする統合プラットフォームとして機能します。
+AEM Forms Workfront Fusion コネクタは、Adobe Experience Manager（AEM）FormsとAdobe Workfront Fusion のシームレスな統合を可能にします。 Adobe Workfrontは作業管理アプリケーションとして機能し、作業ライフサイクル全体を一元化します。一方、Workfront Fusion は、Workfrontと様々なビジネスアプリケーションとの接続を容易にする統合プラットフォームとして機能します。
 
-AEM Forms Adobe Workfront Fusion コネクタを使用すると、アダプティブフォームの送信時に自動的にトリガーされるワークフローをデザインできます。 例えば、送信されたデータを確認するタスクを特定の個人に割り当てるワークフローが開始され、アダプティブフォームから取り込まれた情報に基づいて、申し込みの承認または拒否ができるようになるシナリオを想定します。この合理化された統合によって効率がよくなり、ワークフロープロセスに新しいレベルの自動化が実現します。
+AEM Forms Workfront Fusion コネクタを使用すると、アダプティブフォームの送信時に自動的にトリガーされるワークフローをデザインできます。 例えば、送信されたデータを確認するタスクを特定の個人に割り当てるワークフローが開始され、アダプティブフォームから取り込まれた情報に基づいて、申し込みの承認または拒否ができるようになるシナリオを想定します。この合理化された統合によって効率がよくなり、ワークフロープロセスに新しいレベルの自動化が実現します。
+
+開始する準備はできていますか？ この [Adobe Workfront Fusion へのアダプティブフォームの送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md) ドキュメントでは、イノベーションを使用するためのステップバイステップのガイドを提供します。
 
 <!-- <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> -->
 
 ### 会話Forms
 
-会話型Forms機能を使用すると、AEM Sites ページ上のフレンドリーなチャットボットのようにフォームを操作できます。
+対話型Formsのイノベーションにより、AEM Sites ページ上のフレンドリーなチャットボットのようにフォームを操作できます。
 
 対話型Forms コンポーネントをAEM Sites ページにドラッグ&amp;ドロップするだけで、開始できます。 コーディングは必要ないので、誰でも魅力的で使いやすい対話型Forms エクスペリエンスをすばやく作成できます。
 
@@ -72,20 +74,15 @@ Formsの対話型コンテンツは次のとおりです。
 会話型Formsは、単なる新しい外観ではなく、ユーザーエクスペリエンスを大きく変える要素です。  エンゲージメントを高め、フォームの放棄を減らし、web サイトとのやり取りを全員にとってより楽しいエクスペリエンスにします。
 
 
-### Edge Delivery Services向けのAEM オーサリング
+### Edge Delivery Services向けのAEM ベースのオーサリング
 
-AEM オーサリングでは、これらのフォームを作成してEdge Delivery Servicesに公開する WYSIWYG インターフェイス（アダプティブ Forms エディター）を提供し、ライブフォームで比類のない読み込み速度とほぼ完璧なGoogle Lighthouse スコアを達成し、最高のパフォーマンスとユーザーエクスペリエンスを保証します。
-
-![フォームを作成するための次世代のコンポーザビリティツール](/help/forms/assets/web-vitals.jpeg)
-
-AEM オーサリングは、次のすべての機能を提供します [ドキュメントベースのオーサリング](/help/edge/docs/forms/overview.md#document-based-authoring-features)に加えて、次のような様々な追加機能があります。
+AEM ベースのオーサリング機能では、これらのフォームを作成してEdge Delivery Servicesに公開するための WYSIWYG インターフェイス（アダプティブ Forms エディター）を提供します。 AEM ベースのオーサリングは、次のすべての機能を提供します [ドキュメントベースのオーサリング](/help/edge/docs/forms/overview.md#document-based-authoring-features)に加えて、次のような様々な追加機能があります。
 
 * 複雑なロジックを作成する高度なルールエディター。
 * カスタム機能を実現するサーバーサイド拡張機能。
 * 簡単なフォームを作成し視覚化する WYSIWYG 編集エクスペリエンス。
 * 送信されたデータの改ざん防止アーカイブを作成するレコードのドキュメント機能。
 * 電子署名を行う Adobe Sign との統合。
-* Adobe Workfront Fusion との統合：フォーム送信時のAdobe Workfront Fusion シナリオをトリガーします。
 * フォームの事前入力とデータの送信の様々なデータソースとの統合。
 * 様々なデータソースとのインタラクションとデータ構造を定義するフォームデータモデル（FDM）。
 * Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics、その他多くのデータソースへのデータの送信を含む、フォーム送信を処理するための複数の送信アクションから選択する機能。
@@ -104,6 +101,65 @@ AEM アダプティブFormsで作成された web サイト上のフォームが
 基本的に、AEM Forms/Marketo コネクタは、両方のプラットフォームの強みを活用して、より効率的で効果的なマーケティングファネルを作成するのに役立ちます。
 
 
-## 早期導入プログラムへの参加方法
+## その他の早期導入イノベーション
 
-早期導入プログラムに参加して機能を利用したい場合は、公式アドレスからaem-forms-ea@adobe.comにメールを送信してアクセスをリクエストしてください。
+### 右から左（RTL）言語のサポート
+
+アダプティブFormsを右から左（RTL）言語で表示できるようになり、より包括的なユーザーエクスペリエンスと使いやすさが実現しました。
+
+この機能は、アラビア語、ヘブライ語、ウルドゥ語などの言語に対応し、RTL （Right-to-Left）で書かれたり読まれたりするので、フォームの理解度と完了率が向上します。
+
+![右から左（RTL）言語のサポート](mobile-responsive.png)
+
+アダプティブFormsでの右から左（RTL）言語のサポートは、次のような場合に役立ちます。
+
+* **ユーザーベースを拡張します**：企業は現在、RTL 言語に慣れている世界中の 20 億人以上の人々にリーチできます。
+
+* **ユーザーエクスペリエンスの向上**:Formsは、右から左への自然なテキストのフロー、適切な UI 要素の配置、ユーザーの読み取り習慣を反映した直感的なレイアウトを使用して、完璧にレンダリングされます。 これにより、混乱が軽減され、フォームの完了率が向上します。
+
+* **モバイルレスポンシブエクスペリエンスの配信**:Formsは、モバイルに固有の応答性により、任意のデバイスでアクセス可能で、デスクトップ、タブレット、スマートフォン全体でスムーズなエクスペリエンスを確保します。
+
+全体として、アダプティブFormsの RTL 言語のサポートにより、企業は真にグローバルなフォームを設計し、リーチ、エンゲージメントおよびインクルーシブ性を高めることができます。
+
+開始する準備はできていますか？ [Adaptive Forms RTL ドキュメント](/help/forms/supporting-new-language-localization-core-components.md) rtl 革新を使用するためのステップ バイ ステップ ガイドを提供します。
+
+### ボット保護方法の強化
+
+AEM Formsは、2 つの一般的な CAPTCHA ソリューション（Cloudflare Turnstile および hCaptcha）のサポートを追加することにより、セキュリティ機能を強化しました。 これにより、既に利用可能なGoogle reCAPTCHA が追加され、ボットやスパムの送信からフォームを保護するためのより多くの選択肢と柔軟性が提供されます。
+
+* **Cloudflare Turnstile**：この摩擦のない CAPTCHA は、明示的なインタラクションを必要としないシンプルなチャレンジを通じてユーザーを検証します。 フォームにシームレスに統合し、ユーザーエクスペリエンスを向上させます。
+* **Captcha**：プライバシーに焦点を当てたこの CAPTCHA は、データプライバシーに焦点を当てた、ユーザーフレンドリーな代替手段を提供します。 セキュリティとユーザーエクスペリエンスのバランスを取ることを目的としています。
+* **Google reCAPTCHA**: AEM Formsは、信頼性が高く確立されたソリューションを提供することで、reCAPTCHA v2 と reCAPTCHA Enterprise の両方を引き続きサポートします。
+
+AEM Formsでは、複数の CAPTCHA オプションを提供することで、特定のニーズに最適なソリューションを選択できるようになりました。
+
+これらの CAPTCHA ソリューションをアダプティブFormsに統合する準備はできていますか？ アドビのドキュメントでは、次の各項目に関する詳細な手順を提供します。 [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [Captcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components)、および [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+
+### Doc Assurance API
+
+
+AEM Forms Doc Assurance API は、PDFドキュメントのセキュリティとユーザーインタラクションを管理できる、AEM Forms Cloud Service通信 API 内のツールセットです。
+
+Doc Assurance API で実行できる操作の分類を次に示します。
+
+* **ドキュメントの暗号化および復号化**：暗号化によってコンテンツを判読不能にすることで、ドキュメントをProtectします。 ドキュメント全体、特定のコンテンツ、メタデータ、添付ファイルなど、PDFのどの部分を暗号化するかを制御できます。
+
+* **ドキュメントのデジタル署名**：ドキュメントにデジタル署名を追加して、検証と改ざん防止の検証を行います。 これは、認証目的またはドキュメントの整合性を確保するために使用できます
+
+* **Readerドキュメントを拡張する（PDFドキュメントの使用権限を適用または編集する）**：使用権限を追加してAdobe Readerの機能を拡張することで、組織内でインタラクティブなPDFドキュメントを簡単に共有できます。
+
+  Reader拡張（使用権限） API は、PDFドキュメントに使用権限を追加します。 これにより、PDF ドキュメントを Adobe Reader で開いた場合には通常使用できない機能（ドキュメントへのコメントの追加、フォームへの入力、ドキュメントの保存など）がアクティブになります。サードパーティユーザーは、使用権限を付与されたドキュメントを扱うためにソフトウェアまたはプラグインを追加する必要はありません。
+
+  PDFドキュメントに適切な使用権限が追加されている場合、受信者はAdobe Reader内から有効なアクティビティを実行できます。
+
+全体、 [Doc Assurance API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) のコントロールレイヤーを追加することで、ドキュメントのセキュリティとコンプライアンスを向上させることができます。
+
+
+
+## 関連トピック
+
+* [AEM Formsの最新イノベーション](/help/forms/latest-innovations.md)
+
+* [AEM Forms as a Cloud Serviceの機能](/help/forms/home.md)
+
+* [AEM 6.5 Forms（AMS およびオンプレミス）とAEM Forms as a Cloud Service（AEM CS Forms）の違い](/help/forms/notable-changes.md)
