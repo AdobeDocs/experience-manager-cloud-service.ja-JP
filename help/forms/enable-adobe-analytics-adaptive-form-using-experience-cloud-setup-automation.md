@@ -1,14 +1,14 @@
 ---
-title: アダプティブフォームで Adobe Analytics を有効にする方法？
-description: Experience Cloud 設定自動化は、Adobe Analytics をアダプティブフォームに接続して、訪問者のインタラクションとエンゲージメントに関するインサイトを追跡するのに役立ちます。
+title: アダプティブフォームの高速分析用にAdobe Analyticsを有効にする方法
+description: Experience Cloud設定自動化を使用すると、Adobe Analyticsをアダプティブフォームに接続して、訪問者のインタラクションとエンゲージメントに関する迅速な分析とインサイトを実現できます。
 keywords: Experience Cloud 設定自動化を使用してアダプティブフォームの Adobe Analytics を有効にする, フォームで Adobe Analytics を有効にする, アダプティブフォームでの Adobe Analytics, フォームの Analytics の統合, フォームと Adobe Analytics
 feature: Adaptive Forms
 role: Admin, User
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
-workflow-type: ht
-source-wordcount: '1555'
-ht-degree: 100%
+source-git-commit: a23576b5dc6d78a29fe19cd23f3c4788f2bee23e
+workflow-type: tm+mt
+source-wordcount: '1588'
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 | AEM as a Cloud Service | この記事 |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html?lang=ja) |
 
-Experience Cloud 設定自動化は、Adobe Analytics をアダプティブフォームに接続するのに役立ちます。これにより、フォームとのユーザーインタラクションを追跡および分析し、訪問者のインタラクションとエンゲージメントに関するインサイトを提供できます。Experience Cloud 設定自動化は、完了時間やドロップオフポイントなどの指標の評価を含むフォームのパフォーマンスの監視にも役立ちます。この分析は、ログインステータスに基づいてユーザーの行動（匿名ユーザーなど）を区別し、一般的なトレンドとパターンを特定しながら、ユーザーエクスペリエンスを向上させるためにフォームを最適化するのに役立ちます。
+Experience Cloud設定自動処理は、Adobe Analyticsをアダプティブ Formsに接続するのに役立ちます。これにより、フォームでのユーザーインタラクションの高速分析と、訪問者のインタラクションやエンゲージメントに関するインサイトの提供が可能になります。 Experience Cloud 設定自動化は、完了時間やドロップオフポイントなどの指標の評価を含むフォームのパフォーマンスの監視にも役立ちます。この分析は、ログインステータスに基づいてユーザーの行動（匿名ユーザーなど）を区別し、一般的なトレンドとパターンを特定しながら、ユーザーエクスペリエンスを向上させるためにフォームを最適化するのに役立ちます。
 
 ## Adobe Analytics とアダプティブフォームを統合するメリット {#advantages-of-integrating-adobe-analytics-with-aem-forms}
 
@@ -29,7 +29,7 @@ Experience Cloud 設定自動化は、Adobe Analytics をアダプティブフ�
 
 ## アダプティブフォームの使用状況指標の範囲 {#scope-of-adaptive-forms-usage-metrics}
 
-Adobe Analytics は、フォームの使用状況に関する貴重なインサイトを提供するように設計された、アダプティブフォームのパフォーマンス指標の包括的な配列を提供します。これらの指標を以下に示します。
+Adobe Analyticsは、フォームの使用状況に関する貴重なインサイトを提供するように設計された、アダプティブ Formsのパフォーマンス指標の包括的な配列を提供し、高速分析を提供します。 これらの指標を以下に示します。
 
 * **フォームのレンディション数、フォームの送信数、検証エラー数およびユニーク訪問者数**：フォームの使用状況と効果を評価できます。
 
@@ -62,7 +62,7 @@ Experience Cloud 設定自動化には、**Adobe Analytics ライセンス**、�
 
 **Adobe Analytics** と **Experience Manager Forms** のアクティブなライセンスを使用し、**データ収集（旧 Adobe Launch）**&#x200B;と統合している場合は、Developer Console 内で使用可能であることを確認する必要があります。
 
-Forms as a Cloud Service 環境で上記の機能が使用可能であることを確認するには、[Developer Console](https://developer.adobe.com/console/projects) にアクセスし、プロジェクトに移動して、プログラム ID - 環境 ID でプロジェクトを検索します。例えば、URL が `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html` の環境の場合、プログラム ID - 環境 ID は `p45913-e175111` です。Experience Cloud 設定自動化、Adobe Analytics および Experience Platform Launch API がリストされていることを確認します。リストされている場合は、アダプティブフォームに対して Adobe Analytics を有効にすることができます。
+Forms as a Cloud Service 環境で上記の機能が使用可能であることを確認するには、[Developer Console](https://developer.adobe.com/console/projects) にアクセスし、プロジェクトに移動して、プログラム ID - 環境 ID でプロジェクトを検索します。例えば、URL が `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html` の環境の場合、プログラム ID - 環境 ID は `p45913-e175111` です。Experience Cloud 設定自動化、Adobe Analytics および Experience Platform Launch API がリストされていることを確認します。これらのリストが表示される場合は、Adobe Analyticsを有効にして、アダプティブFormsの高速分析用に使用できます。
 
 ![Forms Analytics 統合の前提条件](assets/analytics-aem.png){width="100%"}
 
@@ -76,7 +76,7 @@ Forms as a Cloud Service 環境で上記の機能が使用可能であること�
 
 ## Adobe Analytics の設定 {#configure-adobe-analytics}
 
-アダプティブフォームに対して Adobe Analytics を有効にして設定するには、以下の手順を実行します。
+以下の手順を実行して、Adobe Analyticsを有効にし、アダプティブFormsの高速分析用に設定します。
 
 * [基盤コンポーネントに基づくアダプティブフォームに対して Adobe Analytics を有効にする](#integrate-adobe-analytics-with-aem-forms-for-foundation-component)
 * [コアコンポーネントに基づくアダプティブフォームに対して Adobe Analytics を有効にする](#integrate-adobe-analytics-with-aem-forms-for-core-components)
@@ -139,7 +139,7 @@ Forms as a Cloud Service 環境で上記の機能が使用可能であること�
 
 ## Sites でアダプティブフォームに対して Analytics を有効にする {#Connect-Analytics-to-Adaptive-Forms-in-Sites}
 
-AEM Sites のアダプティブフォームの分析を設定すると、Sites ページのフォームでのユーザーインタラクションとフォーム送信を追跡するのに役立ちます。分析をSites フォームにシームレスに統合することで、ユーザーの行動、コンバージョン率、フォームの改善すべき領域に関する貴重なインサイトを取得できます。
+AEM Sitesでアダプティブフォームの高速分析機能を設定すると、Sites ページでフォームに対するユーザーの操作やフォーム送信を追跡できます。 分析をSites フォームにシームレスに統合することで、ユーザーの行動、コンバージョン率、フォームの改善すべき領域に関する貴重なインサイトを取得できます。
 
 ### 前提条件 {#Prerequisites-to-connect-forms-analytics-to-sites}
 
@@ -147,7 +147,7 @@ AEM Sites のアダプティブフォームに接続して分析を有効にす�
 
 ### Sites でアダプティブフォームを接続して Analytics を有効にする {#Connect-analytics-to-adaptive-forms}
 
-AEM Sites ページでアダプティブフォームを接続して Analytics を有効にするには、AEM アーキタイプ／Git リポジトリとデプロイメントパイプラインを使用して、AEM Sites ページに `customfooterlibs` クライアントライブラリを 含めます。
+アダプティブフォームをAEM Sites ページに接続して Analytics でファストトラック分析を有効にするには、次を含めます `customfooterlibs` AEM アーキタイプ/Git リポジトリとデプロイメントパイプラインを使用して、AEM Sites ページに移動するクライアントライブラリ。
 
 1. [AEM Forms アーキタイプまたは複製された Git リポジトリ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)プロジェクトをテキストエディターで開きます。例えば Visual Studio Code などです。
 
