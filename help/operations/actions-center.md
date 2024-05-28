@@ -2,10 +2,10 @@
 title: アクションセンター
 description: アクションセンターを活用して、インシデントやその他の重要な情報への処理を効果的に行います。
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 383d56ccd1e523082c21e58252a7c03a9807c582
+source-git-commit: ae8c5e832134caf4ff6799c601810e9a735f4195
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 88%
+source-wordcount: '842'
+ht-degree: 87%
 
 ---
 
@@ -76,3 +76,4 @@ AEM as a Cloud Service の通知には複数のタイプがありますが、次
 | オリジンでのトラフィックスパイク | インシデント | オリジンアラートでデフォルトのトラフィックスパイクよりも低いしきい値でトリガーするレート制限トラフィックフィルタールールを設定して、オリジンをProtectします。  を参照してください。 [トラフィックルールを使用した DoS および DDoS 攻撃のブロック](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) の節（チュートリアルを参照しているトラフィックフィルタールールのドキュメント） |
 | S2S 証明書の有効期限が切れます | 事前対応 | [サーバーサイド API のアクセストークンの生成ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)で資格情報を更新する方法を説明します。 | 接続数の多さ | 事前対応 | での接続プーリングについて説明します [高度なネットワークドキュメントと共に接続プールを使用](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | 非推奨のサービスユーザーマッピング | 事前対応 | で示されているように、新しい Sling Service ユーザーマッピング形式を使用する方法について説明します。 [Sling サービスユーザーマッピングおよびサービスユーザー定義のベストプラクティス](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
+| 接続数の多さ | 事前対応 | での接続プーリングについて説明します [高度なネットワークドキュメント](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
