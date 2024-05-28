@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service の IMS 統合の設定
 description: AEM as a Cloud Service の IMS 統合の設定方法について説明します
 source-git-commit: 6945980cac24d4413a84343b035a8380b04e7444
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '386'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->自動プロビジョニングされた JWT 設定はAdobeによって自動的に処理されるので、手動で移行しないでください。
+>自動プロビジョニングされた JWT 設定はアドビによって自動処理されるので、手動で移行しないでください。
 
 Adobe Experience Manager（AEM）as a Cloud Service は、他の多くの Adobe ソリューションと統合できます。例えば、Adobe Target、Adobe Analytics などです。
 
