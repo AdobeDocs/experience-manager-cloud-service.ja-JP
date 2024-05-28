@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 13a266e9611fd8eb427c7cc83e99092e66fd8bc5
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 78%
+ht-degree: 94%
 
 ---
 
@@ -29,14 +29,14 @@ ht-degree: 78%
 
 ### 既知の問題 {#known-issues-16461}
 
-* SITES-20364:302 リダイレクトで URL のセレクターが機能しない。
-* SITES-20547:AEMas a Cloud Serviceでライブコピーの除外パスリストに切り詰められたパス。
+* SITES-20364：302 リダイレクトが URL のセレクターでは機能しません。
+* SITES-20547：AEM as a Cloud Service でライブコピー除外パスリスト内のパスが切り捨てられます。
 
 >[!NOTE]
 >
 >この新しいリリースでは、既知の問題に対する 2 つの修正が元に戻されました。
 
-### 廃止された機能と API {#deprecated-16461}
+### 非推奨（廃止予定）機能と API {#deprecated-16461}
 
 AEM as a Cloud Service で非推奨（廃止予定）または削除された機能については、[非推奨（廃止予定）および削除された機能と API](/help/release-notes/deprecated-removed-features.md)を参照してください。
 
