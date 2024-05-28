@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
+source-git-commit: 4c2f0a230c259f5d5af08158707ebea016c431e6
 workflow-type: tm+mt
-source-wordcount: '4982'
+source-wordcount: '4961'
 ht-degree: 99%
 
 ---
@@ -1079,18 +1079,19 @@ ht-degree: 99%
          + [カスタムエラーページ](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM ノードタイプ](/help/implementing/developing/introduction/node-types.md)
       + ユニバーサルエディター {#universal-editor}
-         + [ユニバーサルエディターの概要](/help/implementing/universal-editor/introduction.md)
-         + [ユニバーサルエディターのアーキテクチャ](/help/implementing/universal-editor/architecture.md)
-         + [SecurBank サンプルアプリ](/help/implementing/universal-editor/securbank.md)
-         + [AEM のユニバーサルエディターの概要](/help/implementing/universal-editor/getting-started.md)
-         + [ユニバーサルエディター開発者の概要](/help/implementing/universal-editor/developer-overview.md)
+         + [はじめに](/help/implementing/universal-editor/introduction.md)
+         + [ユースケース](/help/implementing/universal-editor/use-cases.md)
          + [属性と項目タイプ](/help/implementing/universal-editor/attributes-types.md)
          + [モデル定義、フィールドおよびコンポーネントタイプ](/help/implementing/universal-editor/field-types.md)
-         + [ユニバーサルエディターの認証](/help/implementing/universal-editor/authentication.md)
-         + [ユニバーサルエディターを使用したローカル AEM 開発](/help/implementing/universal-editor/local-dev.md)
-         + [ユニバーサルエディターの呼び出し](/help/implementing/universal-editor/calls.md)
+         + [SecurBank サンプルアプリ](/help/implementing/universal-editor/securbank.md)
          + [イベント](/help/implementing/universal-editor/events.md)
-         + [ユニバーサルエディターのカスタマイズ](/help/implementing/universal-editor/customizing.md)
+         + [カスタマイズ](/help/implementing/universal-editor/customizing.md)
+         + [アーキテクチャ](/help/implementing/universal-editor/architecture.md)
+         + [認証](/help/implementing/universal-editor/authentication.md)
+         + [はじめに](/help/implementing/universal-editor/getting-started.md)
+         + [開発者向けの概要](/help/implementing/universal-editor/developer-overview.md)
+         + [ローカル AEM開発](/help/implementing/universal-editor/local-dev.md)
+         + [呼び出し](/help/implementing/universal-editor/calls.md)
       + [ヘッドレスエクスペリエンス管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=ja)
       + ハイブリッドおよび SPA 開発 {#hybrid}
          + [AEM でのハイブリッドと SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)

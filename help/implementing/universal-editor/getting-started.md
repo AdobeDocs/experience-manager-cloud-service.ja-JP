@@ -2,9 +2,9 @@
 title: AEM のユニバーサルエディターの概要
 description: ユニバーサルエディターへのアクセス権を取得する方法と、これを使用するために最初の AEM アプリのインストルメントを開始する方法について説明します。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
-workflow-type: ht
-source-wordcount: '921'
+source-git-commit: a9a428eb5329bc2aa3d86ac5e0c91f633516446c
+workflow-type: tm+mt
+source-wordcount: '828'
 ht-degree: 100%
 
 ---
@@ -24,22 +24,11 @@ ht-degree: 100%
 
 AEM アプリをオンボーディングし、ユニバーサルエディターを使用できるようにするには、手順がいくつかあります。
 
-1. [ユニバーサルエディターへのアクセスをリクエストします。](#request-access)
 1. [ユニバーサルエディターのコアライブラリを含めます。](#core-library)
 1. [必要な OSGi 設定を追加します。](#osgi-configurations)
 1. [ページを実装します。](#instrument-page)
 
 このドキュメントでは、これらの手順を説明します。
-
-## ユニバーサルエディターへのアクセスをリクエスト {#request-access}
-
-最初にユニバーサルエディターへのアクセスをリクエストする必要があります。[`https://experience.adobe.com/#/aem/editor``](https://experience.adobe.com/#/aem/editor) を開いてサインインし、ユニバーサルエディターにアクセスできるかどうか検証します。
-
-アクセス権がない場合は、同じページにリンクされたフォームからリクエストできます。
-
-![ユニバーサルエディターへのアクセスをリクエスト](assets/request-access.png)
-
-「**利用申請**」をクリックして、アクセスをリクエストするフォームに入力します。リクエストを確認したアドビ担当者から、ユースケースについて話し合うために連絡が届きます。
 
 ## ユニバーサルエディターコアライブラリを含める {#core-library}
 

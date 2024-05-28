@@ -2,10 +2,10 @@
 title: ユニバーサルエディターの概要
 description: ユニバーサルエディターを使用して、ヘッドレスおよびヘッドフルエクスペリエンスを見たとおりに編集できる（WYSIWYG）仕組みを説明します。コンテンツ作成者がどのように優れたエクスペリエンスを提供し、コンテンツベロシティを向上し、最新のデベロッパーエクスペリエンスを提供できるのかを理解します。
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 2ad5920d0b3d8a3ad780a2cb0f28b7e6f9e596ab
-workflow-type: ht
-source-wordcount: '1066'
-ht-degree: 100%
+source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
+workflow-type: tm+mt
+source-wordcount: '973'
+ht-degree: 96%
 
 ---
 
@@ -90,13 +90,6 @@ ht-degree: 100%
 * コンテンツ作成者は、独自の Experience Cloud アカウントを持つ必要があります。
 * Chrome と Edge がサポートされているブラウザーです
 
-## その他のリソース {#additional-resources}
+## 次の手順 {#next-steps}
 
-ユニバーサルエディターの詳細については、次のドキュメントを参照してください。
-
-* [ユニバーサルエディターを使用したコンテンツのオーサリング](/help/sites-cloud/authoring/universal-editor/authoring.md) - コンテンツ作成者がユニバーサルエディターを使用して、簡単かつ直感的にコンテンツを作成する方法について説明します。
-* [ユニバーサルエディターを使用したコンテンツの公開](/help/sites-cloud/authoring/universal-editor/publishing.md) - ユニバーサルエディターでのコンテンツの公開方法と、アプリでの公開済みコンテンツの処理方法について説明します。
-* [AEM のユニバーサルエディターの概要](getting-started.md) - ユニバーサルエディターへのアクセス権を取得する方法と、これを使用するために最初の AEM アプリのインストルメントを開始する方法について説明します。
-* [ユニバーサルエディターのアーキテクチャ](architecture.md) - ユニバーサルエディターのアーキテクチャと、そのサービスとレイヤー間でのデータのフローについて説明します。
-* [属性とタイプ](attributes-types.md) - ユニバーサルエディターで必要なデータ属性とデータ型について説明します。
-* [ユニバーサルエディターの認証](authentication.md) - ユニバーサルエディターの認証方法について説明します。
+ドキュメントを参照してください [ユニバーサルエディターのユースケースと学習パス](/help/implementing/universal-editor/use-cases.md) ユニバーサルエディターの一般的なユースケースの詳細と、プロジェクトをサポートする適切なドキュメントリソースの確認。

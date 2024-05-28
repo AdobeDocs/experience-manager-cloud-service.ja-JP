@@ -2,9 +2,9 @@
 title: ユニバーサルエディターのアーキテクチャ
 description: ユニバーサルエディターのアーキテクチャと、そのサービスとレイヤー間でのデータのフローについて説明します。
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
-workflow-type: ht
-source-wordcount: '651'
+source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
+workflow-type: tm+mt
+source-wordcount: '508'
 ht-degree: 100%
 
 ---
@@ -73,15 +73,3 @@ ht-degree: 100%
 ### クライアントサイドレンダリング {#client-side}
 
 ![クライアントサイドレンダリング](assets/client-side.png)
-
-## その他のリソース {#additional-resources}
-
-ユニバーサルエディターの詳細については、次のドキュメントを参照してください。
-
-* [ユニバーサルエディターの概要](introduction.md) - ユニバーサルエディターを使用して、優れたエクスペリエンスを提供し、コンテンツベロシティを向上させ、最新のデベロッパーエクスペリエンスを提供するために、あらゆる実装、あらゆるコンテンツ、あらゆる側面の編集を可能にする方法を説明します。
-* [ユニバーサルエディターを使用したコンテンツのオーサリング](/help/sites-cloud/authoring/universal-editor/authoring.md) - コンテンツ作成者がユニバーサルエディターを使用して、簡単かつ直感的にコンテンツを作成する方法について説明します。
-* [ユニバーサルエディターを使用したコンテンツの公開](/help/sites-cloud/authoring/universal-editor/publishing.md) - ユニバーサルエディターでのコンテンツの公開方法と、アプリでの公開済みコンテンツの処理方法について説明します。
-* [AEM のユニバーサルエディターの概要](getting-started.md) - ユニバーサルエディターへのアクセス権を取得する方法と、それを使用する最初の AEM アプリの実装を開始する方法を説明します。
-* [属性とタイプ](attributes-types.md) - ユニバーサルエディターで必要なデータ属性とデータ型について説明します。
-* [ユニバーサルエディターの認証](authentication.md) - ユニバーサルエディターの認証方法について説明します。
-
