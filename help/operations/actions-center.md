@@ -2,10 +2,10 @@
 title: アクションセンター
 description: アクションセンターを活用して、インシデントやその他の重要な情報への処理を効果的に行います。
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: df10d8d210877e166312f66d5c4e74dbe771446a
+source-git-commit: 383d56ccd1e523082c21e58252a7c03a9807c582
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 92%
+source-wordcount: '829'
+ht-degree: 88%
 
 ---
 
@@ -60,18 +60,19 @@ AEM as Cloud Service では、即時対応を求められる重大なインシ�
 AEM as a Cloud Service の通知には複数のタイプがありますが、次の表に示すように、アクションセンターにはサブセットのみが表示されます。
 
 | 通知タイプ | 説明 | 設定方法 | センターに表示されるかどうか |
-|---|---|---|---|
+|---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | 運用上のインシデント | 即時対応を求められる重大なインシデント | 「インシデント通知 - Cloud Service」製品プロファイルに割り当てられたユーザー | X |
 | プロアクティブなレコメンデーション | 予定しておくべき最適化 | 「事前通知 - Cloud Service」製品プロファイルに割り当てられたユーザー | X |
-| Cloud Manager のパイプラインステータス | パイプラインのステータスに関する情報 | [ここで説明](/help/implementing/cloud-manager/notifications.md)するように、ビジネスオーナー、プログラムマネージャーまたはデプロイメントマネージャーの役割を持ち、[Experience Cloud の環境設定](https://experience.adobe.com/preferences)で「その他」チェックボックスがオンになっているユーザー。 |   |
+| Cloud Manager のパイプラインステータス | パイプラインのステータスに関する情報 | [ここで説明](/help/implementing/cloud-manager/notifications.md)するように、ビジネスオーナー、プログラムマネージャーまたはデプロイメントマネージャーの役割を持ち、[Experience Cloud の環境設定](https://experience.adobe.com/preferences)で「その他」チェックボックスがオンになっているユーザー。 |                           |
 
 ## サポートされている通知タイプ {#supported-notification-types}
 
 アクションセンターで現在サポートされている通知タイプを次の表に示します。現在、通知を使用できるのは実稼動環境に限定されています。
 
 | 通知タイプ | 関連する製品プロファイル | 是正措置 |
-|---------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ブロックされたレプリケーションキュー | インシデント | キューのブロックを解除するには、[レプリケーションドキュメント](/help/operations/replication.md#troubleshooting)の手順に従ってください。 |
 | 無効な永続 GraphQL クエリ | インシデント | [永続 GraphQL クエリのトラブルシューティングドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=ja)を参照して、無効な GraphQL クエリを修正する |
-| S2S 証明書の有効期限が切れます | 事前対応 | [サーバーサイド API のアクセストークンの生成ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)で資格情報を更新する方法を説明します。 | 接続数の多さ | 事前対応 | での接続プーリングについて説明します [高度なネットワークドキュメントと共に接続プールを使用](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | オリジンでのトラフィックスパイク | インシデント | オリジンアラートでデフォルトのトラフィックスパイクよりも低いしきい値でトリガーするレート制限トラフィックフィルタールールを設定して、オリジンをProtectします。  を参照してください。 [トラフィックルールを使用した DoS および DDoS 攻撃のブロック](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) の節（チュートリアルを参照しているトラフィックフィルタールールのドキュメント） |
+| S2S 証明書の有効期限が切れます | 事前対応 | [サーバーサイド API のアクセストークンの生成ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)で資格情報を更新する方法を説明します。 | 接続数の多さ | 事前対応 | での接続プーリングについて説明します [高度なネットワークドキュメントと共に接続プールを使用](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
+| 非推奨のサービスユーザーマッピング | 事前対応 | で示されているように、新しい Sling Service ユーザーマッピング形式を使用する方法について説明します。 [Sling サービスユーザーマッピングおよびサービスユーザー定義のベストプラクティス](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
