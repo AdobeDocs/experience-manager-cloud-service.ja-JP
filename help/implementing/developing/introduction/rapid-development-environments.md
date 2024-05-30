@@ -2,9 +2,9 @@
 title: 迅速な開発環境
 description: クラウド環境で迅速な開発反復処理を行うために、迅速な開発環境を活用する方法について説明します。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: cd74240f59cb3139e425f568828ba9ab1b59147f
+source-git-commit: 4a5b7c671a149d61c60fc86f93a41d52fb4b5468
 workflow-type: tm+mt
-source-wordcount: '4345'
+source-wordcount: '4294'
 ht-degree: 80%
 
 ---
@@ -408,11 +408,12 @@ The analyser found the following errors for publish :
 
 上記のコード例は、バンドルが解決されない場合の動作を示しています。この場合、バンドルは「ステージング済み」で、他のコードのインストールを通じて要件（この場合、読み込み不足）が満たされた場合にのみインストールされます。
 
-<u>サイトのテーマとサイトテンプレートに基づくフロントエンドコードのデプロイ</u>
+### サイトテーマとサイトテンプレートに基づくフロントエンドコードのデプロイ {#deploying-themes-to-rde}
 
 >[!NOTE]
 >
->この機能はまだ GA ではありませんが、早期導入者が使用できます。試してフィードバックを提供するには、**aemcs-rde-support@adobe.com** までご連絡ください。
+> この機能はまだ使用できません。 6 月には順次展開する予定です。
+>
 
 RDE は、[サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md)および[サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)に基づいてフロントエンドコードをサポートします。RDE を使用する場合、これは、他の環境タイプに使用される Cloud Manager [フロントエンドパイプライン](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)ではなく、コマンドラインのディレクティブを使用してフロンエンドパッケージをデプロイします。
 
@@ -1011,8 +1012,6 @@ RDE は多くの点でクラウド開発環境に似ていますが、コード�
 
 * RDE にプレビュー層は含まれない
 * RDE は現在、プレリリースチャネルをサポートしていません。
-* デプロイされた[サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md)および[サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)に基づいたフロントエンドコードの表示とデバッグの RDE サポートがまだ GA 対応でない場合でも、早期導入者は使用できます。試してフィードバックを提供するには、**aemcs-rde-support@adobe.com** までご連絡ください。
-
 
 
 ## 必要な RDE の数 {#how-many-rds-do-i-need}
