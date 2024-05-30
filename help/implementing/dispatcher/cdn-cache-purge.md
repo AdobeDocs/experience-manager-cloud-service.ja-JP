@@ -1,8 +1,8 @@
 ---
 title: CDN キャッシュのパージ
 description: API 呼び出しで使用できるパージ API トークンを設定して、Adobe CDN キャッシュからキャッシュされたオブジェクトを削除する方法を説明します。
-feature: Dispatcher
-source-git-commit: 114098a75d84a3da4cc582288ffa162cd960a0e6
+feature: CDN Cache
+source-git-commit: a10faaecf8f6dcaf53e7c72504b927125b32c0d4
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 1%
