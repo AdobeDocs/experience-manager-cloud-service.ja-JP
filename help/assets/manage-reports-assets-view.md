@@ -2,10 +2,10 @@
 title: アセットビューでのレポートの管理
 description: アセットビューの「レポート」セクションのデータにアクセスして、製品と機能の使用状況を評価し、主要な成功指標に関するインサイトを導き出します。
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
-source-git-commit: f4944cdb9f4ec51af6169c5cbf1890f469d91781
+source-git-commit: 0eea9b83d437c7e91daae08c33d94a83ba1db3f9
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 97%
+source-wordcount: '884'
+ht-degree: 90%
 
 ---
 
@@ -58,6 +58,11 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
+* **サイズ別アセット数：** アセットビュー環境の合計アセット数を様々なサイズ範囲にセグメント化し、各サイズ範囲におけるアセットの数と割合をドーナツグラフで強調表示します。
+  ![サイズ別のアセットカウントのインサイト](/help/assets/assets/insights-assets-count-by-size.svg)
+* **アセットタイプ別のアセット数：** アセットビュー環境で合計アセット数をセグメント化し、ファイルタイプに基づいてアセットの数と割合をハイライト表示します（ドーナツグラフで表されます）。
+  ![サイズ別のアセットカウントのインサイト](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
+
 
 ## ダウンロードレポートの作成 {#create-download-report}
 
