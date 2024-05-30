@@ -2,9 +2,9 @@
 title: CDN キャッシュのパージ
 description: API 呼び出しで使用できるパージ API トークンを設定して、Adobe CDN キャッシュからキャッシュされたオブジェクトを削除する方法を説明します。
 feature: Dispatcher
-source-git-commit: 7224db99c29c90fb5e93ac07d7d501e2e9aaf74e
+source-git-commit: 114098a75d84a3da4cc582288ffa162cd960a0e6
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '449'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 >この機能はまだ一般提供されていません。早期導入プログラムに参加するには、次のメールを送信します `aemcs-cdn-config-adopter@adobe.com`.
 
 パージでは、Adobe CDN キャッシュからオブジェクトが削除されるので、今後のリクエストはキャッシュから提供されるのではなく、キャッシュミスとしてオリジンに進みます。
-AEMas a Cloud Serviceを使用すると、API 呼び出しで使用できるパージ API トークンを設定できます。 を読み取る <!--[Configuring CDN Credentials and Authentication article](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)--> cloud Manager 設定パイプライン認証ディレクティブを使用してこのトークンを設定する方法を説明します。
+AEMas a Cloud Serviceを使用すると、API 呼び出しで使用できるパージ API トークンを設定できます。 を読み取る [CDN 資格情報と認証の設定に関する記事](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) cloud Manager 設定パイプライン認証ディレクティブを使用してこのトークンを設定する方法を説明します。
 
 サポートされているパージのバリエーションは 3 つあります。
 
