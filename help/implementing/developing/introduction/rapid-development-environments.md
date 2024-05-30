@@ -2,10 +2,10 @@
 title: 迅速な開発環境
 description: クラウド環境で迅速な開発反復処理を行うために、迅速な開発環境を活用する方法について説明します。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 43f76a3f1e0bb52ca9d44982b2bb2b37064edf9f
-workflow-type: ht
-source-wordcount: '3414'
-ht-degree: 100%
+source-git-commit: cd74240f59cb3139e425f568828ba9ab1b59147f
+workflow-type: tm+mt
+source-wordcount: '4345'
+ht-degree: 80%
 
 ---
 
@@ -16,6 +16,9 @@ ht-degree: 100%
 RDE を使用すると、デベロッパーは、ローカル開発環境での動作が証明済みの機能に要するテスト時間を最小限に抑え、変更を迅速にデプロイおよび確認できます。
 
 変更を RDE でテストしたら、Cloud Manager パイプラインを通じて通常のクラウド開発環境にデプロイできます。
+
+>[!NOTE]
+> RDE 開発者に連絡してください [不調チャネル](https://discord.com/channels/1131492224371277874/1245304281184079872). RDE のトピックに関して質問したり、フィードバックを提供したりしてください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
@@ -141,6 +144,75 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
 
 詳細とデモンストレーションについては、[RDE の設定方法（06:24）](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html?lang=ja)のビデオチュートリアルを参照してください。
 
+## RDE コマンドラインツールのインストール（インタラクティブモード） {#installing-the-rde-command-line-tools-interactive}
+
+>[!NOTE]
+>
+> この設定プロセスは、まだ使用できません。 以前のプロセスは 6 月のある時点で置き換えられます。
+> 
+
+Cloud Manager を使用してプログラムに RDE を追加したら、次の手順に従ってコマンドラインツールを設定して、RDE を操作できます。
+
+>[!IMPORTANT]
+>
+>Adobe I/O CLI と関連プラグインが正しく動作するように、最新バージョンの[ノードと NPM がインストールされている](https://nodejs.org/en/download/)ことを確認してください。
+
+
+1. これに従って、Adobe I/OCLI ツールをインストールします。 [手順](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+1. Adobe I/O CLI ツールのAEM RDE プラグインをインストールします。
+
+   ```
+   aio plugins:install @adobe/aio-cli-plugin-aem-rde
+   aio plugins:update
+   ```
+
+1. 組織、プログラム、環境を使用するように RDE プラグインを設定します。 以下の setup コマンドを使用すると、組織内のプログラムのリストをインタラクティブにユーザーに提供し、そのプログラム内の RDE 環境を表示して選択できます。
+
+   ```
+   aio login
+   aio aem:rde:setup
+   ```
+
+   スクリプト環境を使用する場合は、設定手順をスキップできます。その場合、組織、プログラム、環境の値を各コマンドに含めることができます。 [詳しくは、以下の rde コマンドを参照してください](#rde-cli-commands).
+
+### インタラクティブ設定
+
+setup コマンドは、指定された設定をローカルに保存するか、グローバルに保存するかを尋ねます。
+
+```
+Setup the CLI configuration necessary to use the RDE commands.
+? Do you want to store the information you enter in this setup procedure locally? (y/N)
+```
+
+を選択 `no` 対象：
+* 組織、プログラム、環境を aio 設定にグローバルに保存します。
+* 単一の RDE でのみ動作します。
+
+を選択 `yes` 対象：
+* 組織、プログラム、環境を現在のディレクトリ内の `.aio` ファイル。 これは、ファイルをバージョン管理にコミットし、Git リポジトリをクローンする他のユーザーが使用できるようにする場合に便利です。
+* 多くの RDE で動作するので、別のディレクトリに切り替えると、その設定が代わりに使用されます。
+* 設定は、スクリプトのようなプログラム的なコンテキストで使用し、スクリプトを参照できます。
+
+
+ローカル設定またはグローバル設定を選択すると、setup コマンドは現在のログインから組織 ID を読み取り、組織のプログラムを読み取ろうとします。 組織が見つからない場合は、ガイダンスに従って手動で入力できます。
+
+```
+ Selected only organization: XYXYXYXYXYXYXYXXYY
+ retrieving programs of your organization ...
+```
+
+プログラムを取得したら、ユーザーはリストから選択でき、フィルターを適用するように入力することもできます。
+プログラムを選択すると、選択可能な RDE 環境のリストが表示されます。
+使用可能なプログラムや RDE 環境が 1 つしかない場合は、そのプログラムが自動的に選択されます。
+
+現在の環境コンテキストを確認するには、次を実行します。
+
+```aio aem rde setup --show```
+
+そのコマンドは、次のような結果を返します。
+
+```Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)```
+
 ## 新機能の開発時の RDE の使用 {#using-rde-while-developing-a-new-feature}
 
 アドビでは、新しい機能を開発する際に、次のワークフローを使用することをお勧めします。
@@ -154,7 +226,7 @@ Cloud Manager を使用してプログラムに RDE を追加したら、次の�
   > ステージング環境と実稼動環境が AEM リリースの自動更新を受信しておらず、最新の AEM リリースバージョンから遅れている場合は、RDE で実行されているコードが、ステージング環境と実稼動環境でのコードの機能と一致しない可能性があります。その場合、実稼動環境にデプロイする前に、ステージングでコードのテストを徹底的に実行することが特に重要です。
 
 
-* RDE コマンドラインインターフェイスを使用して、ローカルコードを RDE に同期します。 オプションには、コンテンツパッケージ、特定のバンドル、OSGi 設定ファイル、コンテンツファイル、Apache／Dispatcher 設定の zip ファイルのインストールが含まれます。 リモートコンテンツパッケージの参照も可能です。 詳しくは、[RDE コマンドラインツール](#rde-cli-commands)を参照してください。ステータスコマンドを使用すると、デプロイメントが成功したことを検証できます。必要に応じて、パッケージマネージャーを使用してコンテンツパッケージをインストールします。
+* RDE コマンドラインインターフェイスを使用して、ローカルコードを RDE に同期します。 オプションには、コンテンツパッケージ、特定のバンドル、OSGi 設定ファイル、コンテンツファイル、Apache／Dispatcher 設定の zip ファイルのインストールが含まれます。 リモートコンテンツパッケージの参照も可能です。 詳しくは、[RDE コマンドラインツール](/help/implementing/developing/introduction/rapid-development-environments.md#rde-cli-commands)を参照してください。ステータスコマンドを使用すると、デプロイメントが成功したことを検証できます。必要に応じて、パッケージマネージャーを使用してコンテンツパッケージをインストールします。
 
 * RDE でコードをテストします。 Cloud Manager では、オーサー URL とパブリッシュ URL を使用できます。
 
@@ -189,6 +261,32 @@ RDE は、一度に 1 つのプロジェクトをサポートします。コー�
 * コマンドの詳細なヘルプを表示するには、次のように入力します。
 
   `aio aem rde <command> --help`
+
+
+### グローバルフラグ {#global-flags}
+
+>[!NOTE]
+>
+> これらのグローバルフラグはまだ使用できません。 6 月に順次展開する予定です。
+> 
+
+* 詳細度の低い出力には、quiet フラグを使用します。
+
+  `aio aem rde <command> --quiet`
+
+  これにより、スピナーやプログレスバーなどの特定の要素が削除され、ユーザー入力の必要性が制限されます。
+
+* JSON に対しては、コンソールログ出力の代わりに、JSON フラグを使用します。
+
+  `aio aem rde <command> --json`
+
+  コンソール出力を抑制しながら、有効な JSON を返します。 後述の JSON の例を参照してください。
+
+* setup コマンドを使用した RDE 接続情報の設定や aio 設定の作成を避けるには、組織、プログラム、環境の 3 つのフラグを使用します。
+
+  `aio aem rde <command> --organizationId=<value> --programId=<value> --environmentId=<value>`
+
+  これには、引き続き ```aio login``` を実行します。
 
 ### RDE へのデプロイ {#deploying-to-rde}
 
@@ -413,6 +511,33 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 詳細とデモンストレーションについては、[RDE コマンドの使用方法（10:01）](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=ja)のビデオチュートリアルを参照してください。
 
+## ログ {#rde-logging}
+
+>[!NOTE]
+>
+> この機能はまだ使用できません。 6 月には順次展開する予定です。
+> 
+
+他の環境タイプと同様に、ログレベルは OSGi 設定を変更することで設定できます。ただし、上述のように、RDE のデプロイメントモデルには、Cloud Manager のデプロイメントではなくコマンドラインが含まれます。 を確認します [ログドキュメント](/help/implementing/developing/introduction/logging.md) ログの表示、ダウンロード、解釈方法について詳しくは、こちらを参照してください。
+
+また、RDE CLI には、ログに記録するクラスとパッケージ、およびログレベルをすばやく設定するために使用できる独自のログコマンドもあります。 これらの設定は、バージョン管理で OSGi プロパティを変更しないので、一時的なものとして見なすことができます。 この機能は、遠い過去のログを参照するのではなく、リアルタイムでログを追跡することに焦点を当てています。
+
+次の例では、1 つのパッケージをデバッグログレベルに設定し、2 つのパッケージ（スペースで区切る）を情報デバッグレベルに設定して、オーサー層の末尾を付ける方法を示します。 を含む出力 **認証** パッケージがハイライト表示されています。
+
+`aio aem:rde:logs --target=author --debug=org.apache.sling --info=org.apache.sling.commons.threads.impl org.apache.sling.jcr.resource.internal.helper.jcr -H .auth.`
+
+参照： `aio aem:rde:logs --help` コマンド ライン オプションの完全なセットを使用する場合。
+
+次のような機能があります。
+
+* パッケージまたはクラスレベルごとのログレベルの宣言
+* ログ出力形式のカスタマイズ
+* 最大 4 つの現在のログ設定を追跡し、それぞれが独自のターミナル内にあります。
+* 特定のログのハイライト表示
+
+ログは RDE のメモリに保存され、これらのログはリサイクルされるので、テールされていない場合やネットワークが遅すぎる場合は破棄されます。
+
+
 ## リセット {#reset-rde}
 
 RDE をリセットすると、すべてのカスタムコード、設定およびコンテンツが、オーサーインスタンスとパブリッシュインスタンスの両方から削除されます。このリセットは、例えば、RDE を使用して特定の機能をテストしていて、別の機能をテストするためにデフォルトの状態にリセットする場合に便利です。
@@ -477,6 +602,374 @@ RDE のリセットプロセスが開始されると、通常、プロセスが�
 
 Cloud Manager を使用した環境の管理方法について詳しくは、[Cloud Manager のドキュメント](/help/implementing/cloud-manager/manage-environments.md)を参照してください。
 
+## JSON 出力をサポートするコマンド {#json-commands}
+
+>[!NOTE]
+>
+> これらのコマンドはまだ使用できません。 6 月に順次展開する予定です。
+> 
+
+ほとんどのコマンドは、グローバル ```--json``` コンソール出力を抑制し、スクリプトで処理される有効な json を返すフラグ。 次に、サポートされているコマンドと、json 出力の例を示します。
+
+### ステータス
+
+<details>
+  <summary>展開して状態の例を表示する</summary>
+
+#### クリーン RDE
+
+```$ aio aem rde status --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "Modification in progress | Deployment in progress | Upload in progress | Ready (instances are currently deploying) | Ready",
+  "author": {
+    "osgiBundles": [],
+    "osgiConfigs": []
+  },
+  "publish": {
+    "osgiBundles": [],
+    "osgiConfigs": []
+  }
+}
+```
+
+#### いくつかのバンドルがインストールされた RDE
+
+```$ aio aem rde status --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "Ready",
+  "author": {
+    "osgiBundles": [
+      {
+        "id": "author_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "updateId": "80",
+        "service": "author",
+        "type": "osgi-bundle",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        }
+      }
+    ],
+    "osgiConfigs": [
+      {
+        "id": "publish_osgi-config_com.adobe.granite.demo.MyServlet",
+        "updateId": "80",
+        "service": "publish",
+        "type": "osgi-config",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "configPid": "com.adobe.granite.demo.MyServlet"
+        }
+      }
+    ]
+  },
+  "publish": {
+    "osgiBundles": [
+      {
+        "id": "author_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "updateId": "80",
+        "service": "author",
+        "type": "osgi-bundle",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        }
+      }
+    ],
+    "osgiConfigs": [
+      {
+        "id": "publish_osgi-config_com.adobe.granite.demo.MyServlet",
+        "updateId": "80",
+        "service": "publish",
+        "type": "osgi-config",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "configPid": "com.adobe.granite.demo.MyServlet"
+        }
+      }
+    ]
+  }
+}
+```
+</details>
+
+### 次をインストールします：
+
+<details>
+  <summary>展開してインストール例を表示</summary>
+
+```$ aio aem rde install ~/Downloads/hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "items": [
+    {
+      "updateId": "4",
+      "info": "deploy",
+      "action": "deploy",
+      "metadata": {
+        "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip"
+      },
+      "services": [
+        "author",
+        "publish"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T12:30:44.578Z",
+        "processed": "2024-05-21T12:31:07.886468Z"
+      },
+      "user": "userId",
+      "type": "content-package",
+      "hash": "2ad73507",
+      "logs": [
+        "No logs available for this update."
+      ]
+    }
+  ]
+}
+```
+</details>
+
+### 削除
+
+<details>
+  <summary>展開して削除の例を表示</summary>
+
+```$ aio aem rde delete com.adobe.granite.hotdev.demo-1.0.0.SNAPSHOT --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "items": [
+    {
+      "updateId": "84",
+      "info": "delete author_osgi-bundle_com.adobe.granite.hotdev.demo",
+      "action": "delete",
+      "metadata": {},
+      "services": [
+        "author"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T11:49:16.889Z",
+        "processed": "2024-05-21T11:49:18.188420Z"
+      },
+      "user": "userId",
+      "type": "osgi-bundle",
+      "deletedArtifact": {
+        "id": "author_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        },
+        "service": "author",
+        "type": "osgi-bundle",
+        "updateId": "83"
+      },
+      "hash": "636f6d2e",
+      "logs": [
+        "No logs available for this update."
+      ]
+    },
+    {
+      "updateId": "85",
+      "info": "delete publish_osgi-bundle_com.adobe.granite.hotdev.demo",
+      "action": "delete",
+      "metadata": {},
+      "services": [
+        "publish"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T11:49:23.857Z",
+        "processed": "2024-05-21T11:49:25.237930Z"
+      },
+      "user": "userId",
+      "type": "osgi-bundle",
+      "deletedArtifact": {
+        "id": "publish_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        },
+        "service": "publish",
+        "type": "osgi-bundle",
+        "updateId": "83"
+      },
+      "hash": "636f6d2e",
+      "logs": [
+        "No logs available for this update."
+      ]
+    }
+  ]
+}
+```
+
+</details>
+
+### History
+
+<details>
+  <summary>展開して履歴の例を表示</summary>
+
+```$ aio aem rde history --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "Ready",
+  "items": [
+    {
+      "updateId": "112",
+      "info": "delete publish_osgi-bundle_com.adobe.granite.hotdev.demo",
+      "action": "delete",
+      "metadata": {},
+      "services": [
+        "publish"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T12:53:07.934Z",
+        "processed": "2024-05-21T12:53:09.118766Z"
+      },
+      "user": "userId",
+      "type": "osgi-bundle",
+      "deletedArtifact": {
+        "id": "publish_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        },
+        "service": "publish",
+        "type": "osgi-bundle",
+        "updateId": "110"
+      },
+      "hash": "636f6d2e"
+    },
+    {
+      "updateId": "111",
+      "info": "delete author_osgi-bundle_com.adobe.granite.hotdev.demo",
+      "action": "delete",
+      "metadata": {},
+      "services": [
+        "author"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T12:53:00.824Z",
+        "processed": "2024-05-21T12:53:02.101560Z"
+      },
+      "user": "userId",
+      "type": "osgi-bundle",
+      "deletedArtifact": {
+        "id": "author_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        },
+        "service": "author",
+        "type": "osgi-bundle",
+        "updateId": "110"
+      },
+      "hash": "636f6d2e"
+    },
+    {
+      "updateId": "110",
+      "info": "deploy",
+      "action": "deploy",
+      "metadata": {
+        "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip"
+      },
+      "services": [
+        "author",
+        "publish"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T12:52:12.123Z",
+        "processed": "2024-05-21T12:52:31.026147Z"
+      },
+      "user": "userId",
+      "type": "content-package",
+      "hash": "2ad73507"
+    }
+  ]
+}
+```
+</details>
+
+### リセット
+
+<details>
+  <summary>展開してリセットの例を表示</summary>
+
+#### 火と忘れて、待ちません
+
+```$ aio aem rde reset --no-wait --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "resetting"
+}
+```
+
+#### 完了まで待つ
+
+```$ aio aem rde reset --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "reset"
+}
+```
+</details>
+
+### やり直し
+
+<details>
+  <summary>展開すると、再起動の例が表示されます。</summary>
+
+```$ aio aem rde restart --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "restarted"
+}
+```
+
+</details>
+
 ## 実行モード {#runmodes}
 
 RDE 固有の OSGI 設定は、以下の例のように、フォルダー名にサフィックスを使用して適用できます。
@@ -507,9 +1000,6 @@ RDE がリセットされると、すべてのコンテンツが削除される�
 
 コンテンツパッケージを同期する場合は、1 GB までに制限されます。
 
-## ログ {#logging}
-
-OSGi 設定を変更すると、ログレベルを設定できます。 詳しくは、[ドキュメント](/help/implementing/developing/introduction/logging.md)を確認してください。
 
 ## RDE とクラウド開発環境の違いは何ですか？ {#how-are-rds-different-from-cloud-development-environments}
 
@@ -552,3 +1042,29 @@ Forms のデベロッパーは、AEM FormsCloud Service の迅速な開発環境
 ## RDE に関するチュートリアル
 
 AEM as a Cloud Service での RDE について詳しくは、[設定方法、使用方法、開発ライフサイクル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html?lang=ja)に関するビデオチュートリアル（01:25）を参照してください。
+
+# トラブルシューティング
+
+## aio RDE プラグイン {#aio-rde-plugin}
+
+### 不十分な権限に関するエラー
+
+RDE プラグインを使用するには、Cloud Manager のメンバーである必要があります **開発者 – Cloud Service** 製品プロファイル。 詳しくは、[このページ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)を参照してください。
+
+また、このデベロッパーの役割を持っていることを、以下のコマンドを実行して Developer Console にログインすることでも確認できます。
+
+`aio cloudmanager:environment:open-developer-console`
+
+>[!TIP]
+>
+>`Warning: cloudmanager:* is not a aio command.` エラーが表示された場合は、以下のコマンドを実行して [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) をインストールする必要があります。
+>
+>```
+>aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+>```
+
+以下を実行して、ログインが正常に完了したことを確認します
+
+`aio cloudmanager:list-programs`
+
+設定した組織の下のすべてのプログラムが一覧表示され、正しい役割が割り当てられていることを確認する必要があります。
