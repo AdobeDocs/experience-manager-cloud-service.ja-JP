@@ -5,13 +5,13 @@ exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 source-git-commit: 7e8d4487ec545b5625d6401513df00d5c6240ee2
 workflow-type: tm+mt
 source-wordcount: '817'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # レポートの管理 {#manage-reports}
 
-アセットレポートを使用すると、管理者はAdobe Experience Manager Assets ビュー環境のアクティビティを視覚的に確認できます。 このデータは、ユーザーがコンテンツや製品とどのようにやり取りするかについての有用な情報を提供します。すべてのユーザーが Insights ダッシュボードにアクセスでき、管理者の製品プロファイルに割り当てられたユーザーはユーザー定義レポートを作成できます。
+アセットレポートを使用すると、管理者は Adobe Experience Manager Assets ビュー環境のアクティビティを視覚的に確認できます。このデータは、ユーザーがコンテンツや製品とどのようにやり取りするかについての有用な情報を提供します。すべてのユーザーが Insights ダッシュボードにアクセスでき、管理者の製品プロファイルに割り当てられたユーザーはユーザー定義レポートを作成できます。
 
 ## レポートへのアクセス {#access-reports}
 
@@ -39,21 +39,21 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
 
 左側のナビゲーションパネルにある「**[!UICONTROL インサイト]**」をクリックすると、自動生成された以下のグラフを表示できます。
 
-* **ダウンロード**：過去 30 日間または 12 か月間にアセットビュー環境からダウンロードされたアセットの数が、折れ線グラフで表されます。
-  ![insights-downloads](/help/assets/assets/insights-downloads2341.svg)
+* **ダウンロード**：過去 30 日間または 12 か月間に Assets ビュー環境からダウンロードされたアセットの数が、折れ線グラフで表されます。
+  ![インサイトのダウンロード](/help/assets/assets/insights-downloads2341.svg)
 
-* **アップロード**：過去 30 日間または 12 か月間にアセットビュー環境にアップロードされたアセットの数が、折れ線グラフで表されます。
-  ![insights-uploads](/help/assets/assets/insights-uplods2.svg)
+* **アップロード**：過去 30 日間または 12 か月間に Assets ビュー環境にアップロードされたアセットの数が、折れ線グラフで表されます。
+  ![インサイトのアップロード](/help/assets/assets/insights-uplods2.svg)
   <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
-* **ストレージ使用量**：アセットビュー環境のストレージ使用量（バイト）は、棒グラフで表されます。
-  ![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
+* **ストレージ使用量**：Assets ビュー環境のストレージ使用量（バイト）が、棒グラフで表されます。
+  ![インサイトのアップロード](/help/assets/assets/insights-storage-usage1.svg)
   <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
-* **上位の検索**：過去 30 日間または 12 ヶ月間にアセットビュー環境で検索された上位の検索用語と共に検索回数が、表形式で表されます。
-  ![insights-uploads](/help/assets/assets/insights-top-search.svg)
+* **上位の検索**：過去 30 日間または 12 か月間に Assets ビュー環境で使用された上位の検索用語とその検索回数が、表形式で表されます。
+  ![インサイトのアップロード](/help/assets/assets/insights-top-search.svg)
   <!--
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)

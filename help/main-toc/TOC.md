@@ -1092,9 +1092,9 @@ ht-degree: 99%
          + [アーキテクチャ](/help/implementing/universal-editor/architecture.md)
          + [認証](/help/implementing/universal-editor/authentication.md)
          + [はじめに](/help/implementing/universal-editor/getting-started.md)
-         + [開発者向けの概要](/help/implementing/universal-editor/developer-overview.md)
-         + [ローカル AEM開発](/help/implementing/universal-editor/local-dev.md)
-         + [呼び出し](/help/implementing/universal-editor/calls.md)
+         + [デベロッパー向け概要](/help/implementing/universal-editor/developer-overview.md)
+         + [ローカル AEM 開発](/help/implementing/universal-editor/local-dev.md)
+         + [通話](/help/implementing/universal-editor/calls.md)
       + [ヘッドレスエクスペリエンス管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=ja)
       + ハイブリッドおよび SPA 開発 {#hybrid}
          + [AEM でのハイブリッドと SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
