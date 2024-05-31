@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 10389af2bce06f95d4d841371b7111340d40edaa
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 100%
+source-wordcount: '1389'
+ht-degree: 96%
 
 ---
 
@@ -44,6 +44,7 @@ JSON スキーマの使用上の主な特長を以下に示します。
 * JSON の構造は、アダプティブフォームのオーサリングモードの「コンテンツファインダー」タブでツリーとして表示されます。JSON 階層からアダプティブフォームに要素をドラッグして追加できます。
 * 関連付けられたスキーマに準拠する JSON を使用して、フォームに事前入力できます。
 * ユーザーが入力したデータは、送信時には関連付けられたスキーマに適合する JSON として送信されます。
+* の仕様に従って、JSON スキーマに基づいたフォームを作成することもできます。 [2012-20 バージョン](https://json-schema.org/draft/2020-12/release-notes).
 
 JSON スキーマは、単純型要素と複合型要素で構成されています。要素には、その要素にルールを追加する属性が含まれています。これらの要素や属性がアダプティブフォーム上にドラッグされると、自動的に該当するアダプティブフォームコンポーネントにマッピングされます。
 
@@ -66,6 +67,7 @@ JSON 要素とアダプティブフォームコンポーネントのマッピン
                 "validatePictureClause": "date{DD MMMM, YYYY}",
                 "validatePictureClauseMessage": "Date must be in DD MMMM, YYYY format."
               }
+  }
 ```
 
 <table>
@@ -135,185 +137,322 @@ JSON 要素とアダプティブフォームコンポーネントのマッピン
 
 ## JSON スキーマのサンプル {#sample-json-schema}
 
-JSON スキーマの例を示します。
+>[!BEGINTABS]
+
+>[!TAB JSON スキーマ v4]
 
 ```json
 {
- "$schema": "https://json-schema.org/draft-04/schema#",
- "definitions": {
+"$schema": "https://json-schema.org/draft-04/schema#",
+"definitions": {
   "employee": {
-   "type": "object",
-   "properties": {
+  "type": "object",
+  "properties": {
     "userName": {
      "type": "string"
-    },
+   },
     "dateOfBirth": {
      "type": "string",
      "format": "date"
     },
     "email": {
-     "type": "string",
-     "format": "email"
+    "type": "string",
+    "format": "email"
     },
     "language": {
      "type": "string"
-    },
+   },
     "personalDetails": {
      "$ref": "#/definitions/personalDetails"
-    },
+   },
     "projectDetails": {
      "$ref": "#/definitions/projectDetails"
     }
-   },
-   "required": [
-    "userName",
-    "dateOfBirth",
-    "language"
-   ]
   },
-  "personalDetails": {
+  "required": [
+   "userName",
+   "dateOfBirth",
+   "language"
+  ]
+  },
+    "personalDetails": {
    "type": "object",
-   "properties": {
-    "GeneralDetails": {
-     "$ref": "#/definitions/GeneralDetails"
-    },
+  "properties": {
+     "GeneralDetails": {
+    "$ref": "#/definitions/GeneralDetails"
+   },
     "Family": {
      "$ref": "#/definitions/Family"
     },
     "Income": {
      "$ref": "#/definitions/Income"
-    }
    }
-  },
+   }
+     },
   "projectDetails": {
    "type": "array",
    "items": {
-    "properties": {
-     "name": {
-      "type": "string"
-     },
-     "age": {
-      "type": "number"
-     },
-     "projects": {
-      "$ref": "#/definitions/projects"
-     }
-    }
-   },
-   "minItems": 1,
-   "maxItems": 4
-  },
-  "projects": {
-   "type": "array",
-   "items": {
-    "properties": {
-     "name": {
-      "type": "string"
-     },
-     "age": {
-      "type": "number"
-     },
-     "projectsAdditional": {
-      "$ref": "#/definitions/projectsAdditional"
-     }
-    }
-   },
-   "minItems": 1,
-   "maxItems": 4
-  },
-  "projectsAdditional": {
-   "type": "array",
-   "items": {
-    "properties": {
-     "Additional_name": {
-      "type": "string"
-     },
-     "Additional_areacode": {
-      "type": "number"
-     }
-    }
-   },
-   "minItems": 1,
-   "maxItems": 4
-  },
-  "GeneralDetails": {
-   "type": "object",
    "properties": {
-    "age": {
-     "type": "number"
-    },
-    "married": {
-     "type": "boolean"
-    },
-    "phone": {
-     "type": "number",
-     "aem:afProperties": {
-      "sling:resourceType": "/libs/fd/af/components/guidetelephone",
-      "guideNodeClass": "guideTelephone"
-     }
-    },
-    "address": {
-     "type": "string"
-    }
-   }
-  },
-  "Family": {
-   "type": "object",
-   "properties": {
-    "spouse": {
-     "$ref": "#/definitions/spouse"
-    },
-    "kids": {
-     "$ref": "#/definitions/kids"
-    }
-   }
-  },
-  "Income": {
-   "type": "object",
-   "properties": {
-    "monthly": {
-     "type": "number"
-    },
-    "yearly": {
-     "type": "number"
-    }
-   }
-  },
-  "spouse": {
-   "type": "object",
-   "properties": {
-    "name": {
-     "type": "string"
-    },
-    "Income": {
-     "$ref": "#/definitions/Income"
-    }
-   }
-  },
-  "kids": {
-   "type": "array",
-   "items": {
-    "properties": {
-     "name": {
-      "type": "string"
-     },
-     "age": {
-      "type": "number"
-     }
-    }
+   "name": {
+    "type": "string"
    },
-   "minItems": 1,
-   "maxItems": 4
+   "age": {
+    "type": "number"
+   },
+   "projects": {
+    "$ref": "#/definitions/projects"
+   }
   }
  },
+ "minItems": 1,
+ "maxItems": 4
+},
+"projects": {
+ "type": "array",
+ "items": {
+  "properties": {
+   "name": {
+    "type": "string"
+   },
+   "age": {
+    "type": "number"
+   },
+   "projectsAdditional": {
+    "$ref": "#/definitions/projectsAdditional"
+   }
+  }
+ },
+ "minItems": 1,
+ "maxItems": 4
+},
+"projectsAdditional": {
+ "type": "array",
+ "items": {
+  "properties": {
+   "Additional_name": {
+    "type": "string"
+   },
+   "Additional_areacode": {
+    "type": "number"
+   }
+  }
+ },
+ "minItems": 1,
+ "maxItems": 4
+},
+"GeneralDetails": {
  "type": "object",
  "properties": {
-  "employee": {
-   "$ref": "#/definitions/employee"
+  "age": {
+   "type": "number"
+  },
+  "married": {
+   "type": "boolean"
+  },
+  "phone": {
+   "type": "number",
+   "aem:afProperties": {
+    "sling:resourceType": "/libs/fd/af/components/guidetelephone",
+    "guideNodeClass": "guideTelephone"
+   }
+  },
+  "address": {
+   "type": "string"
   }
  }
+},
+"Family": {
+ "type": "object",
+ "properties": {
+  "spouse": {
+   "$ref": "#/definitions/spouse"
+  },
+  "kids": {
+   "$ref": "#/definitions/kids"
+  }
+ }
+},
+"Income": {
+ "type": "object",
+ "properties": {
+  "monthly": {
+   "type": "number"
+  },
+  "yearly": {
+   "type": "number"
+  }
+ }
+},
+"spouse": {
+ "type": "object",
+ "properties": {
+  "name": {
+   "type": "string"
+  },
+  "Income": {
+   "$ref": "#/definitions/Income"
+  }
+ }
+},
+"kids": {
+ "type": "array",
+ "items": {
+  "properties": {
+   "name": {
+    "type": "string"
+   },
+   "age": {
+    "type": "number"
+   }
+  }
+ },
+ "minItems": 1,
+ "maxItems": 4
+}
+},
+"type": "object",
+"properties": {
+"employee": {
+ "$ref": "#/definitions/employee"
+}
+}
 }
 ```
+
+
+>[!TAB JSON スキーマ 2012-20]
+
+
+```json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/employee.schema.json",
+  "$defs": {
+    "employee": {
+      "type": "object",
+      "properties": {
+        "userName": {
+          "type": "string"
+        },
+        "dateOfBirth": {
+          "type": "string",
+          "format": "date"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "language": {
+          "type": "string"
+        },
+        "personalDetails": {
+          "$ref": "#/$defs/personalDetails"
+        },
+        "projectDetails": {
+          "$ref": "#/$defs/projectDetails"
+        }
+      },
+      "required": [
+        "userName",
+        "dateOfBirth",
+        "language"
+      ]
+    },
+    "personalDetails": {
+      "type": "object",
+      "properties": {
+        "GeneralDetails": {
+          "$ref": "#/$defs/GeneralDetails"
+        },
+        "Family": {
+          "$ref": "#/$defs/Family"
+        },
+        "Income": {
+          "$ref": "#/$defs/Income"
+        }
+      }
+    },
+    "projectDetails": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "age": {
+            "type": "number"
+          },
+          "projects": {
+            "$ref": "#/$defs/projects"
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "age": {
+            "type": "number"
+          },
+          "projectsAdditional": {
+            "$ref": "#/$defs/projectsAdditional"
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "projectsAdditional": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "Additional_name": {
+            "type": "string"
+          },
+          "Additional_areacode": {
+            "type": "number"
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "GeneralDetails": {
+      "type": "object",
+      "properties": {
+        "age": {
+          "type": "number"
+        },
+        "married": {
+          "type": "boolean"
+        },
+        "phone": {
+          "type": "number",
+          "aem:afProperties": {
+            "sling:resourceType": "/libs/fd/af/components/guidetelephone",
+            "guideNodeClass": "guideTelephone"
+          }
+        },
+        "address": {
+          "type": "string"
+        }
+      }
+      }
+  }
+  }
+```
+
+>[!ENDTABS]
+
+JSON スキーマ V4 からバージョン 2020-12 仕様への主な変更点は次のとおりです。
+* ID はとして宣言されます `$id`
+* 定義は次のように宣言されます： `$defs`
 
 ### 再使用可能なスキーマ定義 {#reusable-schema-definitions}
 
@@ -759,6 +898,7 @@ JSON スキーマの要素に以下の制限を追加して、アダプティブ
 * any などの Union タイプ
 * OneOf、AnyOf、AllOf、NOT
 * 同種の配列のみがサポートされます。そのため、項目制限は、配列でなくオブジェクトである必要があります。
+* $ref 内の URI 参照
 
 ## よくある質問 {#frequently-asked-questions}
 

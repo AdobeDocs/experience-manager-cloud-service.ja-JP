@@ -3,10 +3,10 @@ title: の現在の早期導入者機能 [!DNL Adobe Experience Manager Forms] a
 description: の現在の早期導入者機能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
 Feature: Introduction
 Role: developer, user
-source-git-commit: 2b035e9597518ff64a2b4ce8c18ae31e5deef6f3
+source-git-commit: e6ceb53ee821a1fde5e79c687a4445d6c18faf54
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 10%
+source-wordcount: '1731'
+ht-degree: 9%
 
 ---
 
@@ -20,8 +20,7 @@ AEM Forms早期導入プログラムは、誰よりも先に最先端の機能�
 
 ## 早期導入プログラムへの参加方法
 
-早期導入プログラムに参加して早期導入イノベーションを得たい場合は、公式アドレスからにメールを送信するだけです。 `aem-forms-ea@adobe.com` アクセスをリクエストします。 すべてまたは特定のイノベーションへのアクセスをリクエストできます。
-
+早期導入プログラムに参加して早期導入イノベーションを得たい場合は、公式アドレスからにメールを送信するだけです。 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  アクセスをリクエストします。 すべてまたは特定のイノベーションへのアクセスをリクエストできます。
 
 ## 早期導入イノベーション
 
@@ -154,6 +153,15 @@ Doc Assurance API で実行できる操作の分類を次に示します。
 全体、 [Doc Assurance API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) のコントロールレイヤーを追加することで、ドキュメントのセキュリティとコンプライアンスを向上させることができます。
 
 
+### Forms サービス API
+
+Forms サービスは、データキャプチャ用のインタラクティブPDF formsを生成します。 また、既存のインタラクティブPDFフォームとの間でデータのインポートやエクスポートを行い、送信されたデータを検証することもできます。 機能の分類を次に示します。
+
+* **Formsのレンダリング**:AEM Forms Designer とオプションで XML データを使用して作成されたテンプレートからインタラクティブPDFフォームを生成します。 これは基本的に、オプションでデータが事前入力された入力可能なPDFフォームを生成します。
+
+* **データの抽出と読み込み**：既存のPDFフォームにデータを読み込むだけでなく、入力済みのPDFフォームからデータを抽出します。 XDP と XML データ形式の両方がサポートされており、非 XFAPDF forms（AcroForms とも呼ばれます）への読み込みには、FDF および XFDF データもサポートされています。
+
+* **データの検証**: AEM Forms Designer を使用して作成されたテンプレートに対して、送信されたデータを XDP 形式または XML 形式で検証します。
 
 ## 関連トピック
 

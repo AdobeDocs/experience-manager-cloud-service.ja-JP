@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 39697467c5d06c5a82d701ecc2e05702535efd6c
-workflow-type: ht
-source-wordcount: '2720'
-ht-degree: 100%
+source-git-commit: 146d1adeebc756d24003b418ad5f66bdf3e4e06c
+workflow-type: tm+mt
+source-wordcount: '1847'
+ht-degree: 33%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2024.4.0）のリリース日は、2024年4月25日（PT）です。次回の機能リリース（2024.5.0）は 2024年5月30日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2024.4.0）のリリース日は、2024年5月30日（PT）です。次回の機能リリース（2024.5.0）は 2024年6月27日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -34,11 +34,17 @@ ht-degree: 100%
 
 ## リリースビデオ {#release-video}
 
-2024.4.0 リリースで追加された機能の概要については、2024年4月リリースの概要ビデオをご覧ください。
+2024.5.0 リリースで追加された機能の概要については、2024年5月リリースの概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### Sites の新機能 {#sites-new-features}
+
+**Edge Delivery Services 用の AEM オーサリング**
+
+安定性の向上と様々な機能強化により、オーサリングエクスペリエンスが向上しました。
 
 ### 早期導入プログラム {#sites-early-adopter}
 
@@ -56,43 +62,18 @@ AEM の新機能を通じて GenAI を活用し、[バリエーションを生�
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### アセットビューの新機能 {#assets-view-new-features}
-
-
-**コンテキスト検索**
-
-また、[テキストプロンプトを定義して、リポジトリで使用可能なアセットを検索](/help/assets/search-assets-view.md#contextual-search)することもできるようになりました。Experience Manager Assets は、これらのテキストプロンプトを検索フィルターに自動変換し、検索結果を表示します。フィルターペインを使用して自動フィルターを表示および変更すると、検索結果をさらに絞り込むことができます。
-
-![コンテキスト検索](/help/assets/assets/contextual-search-text-prompt1.png)
-
-**ビデオのクイックアクションの高速化**
-
-Experience Manager Assets には、[Adobe Express を活用した簡単で直感的なビデオ編集ツール](/help/assets/edit-videos-assets-view.md)が含まれており、コンテンツの再利用を増やし、コンテンツの速度を高速化します。編集オプションには、ビデオのトリミング、切り抜き、サイズ変更、MP4 から GIF ファイルへの変換などが含まれます。
-
-![Adobe Express を使用したビデオの切り抜き](/help/assets/assets/adobe-express-crop-video.png)
-
-**動的レンディション**
-
-Experience Manager Assets で、[動的レンディション（スマート切り抜きを含む）の表示とダウンロード](/help/assets/renditions.md)が可能になりました。動的レンディションは、特定のニーズに合うようにリアルタイムで作成される、カスタマイズされた画像アセットバージョンです。例えば、デバイスの解像度に基づく画像のサイズ変更や、様々な縦横比に合わせた切り抜きなどです。これらのレンディションにより、組織は、様々なオーディエンスニーズに合わせて、パーソナライズされ最適化されたエクスペリエンスを提供できます。
-
-![動的レンディション](/help/assets/assets/preset_smart_crop.png)
-
-**アセットおよびフォルダーのインプレース名前変更**
-
-Experience Manager Assets では、[シングルクリックでアセットまたはフォルダーの名前を変更できる機能](/help/assets/manage-organize-assets-view.md)を提供して、簡素化されたユーザーエクスペリエンスを提供するようになりました。
-
-**複数のフォルダーへのメタデータフォームの割り当てまたは削除**
-
-[複数のフォルダーにメタデータフォームを割り当てる、または削除](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder)できるようになりました。
-
 ### 管理ビューの新機能 {#admin-view-new-features}
 
-**リンク共有設定**
+* WebM は、ビデオの処理プロファイルでサポートされる出力ファイルになりました。
+* MP4 は、Express のAEMのネイティブ統合（インポートおよびエクスポート）でサポートされるようになりました。
 
-[リンク共有の作成](/help/assets/share-assets.md)で新しい改善されたユーザーエクスペリエンスが実現し、さらにユーザーに対するこの機能のデフォルトの動作を管理者がカスタマイズできる、まったく新しい設定セットが追加されました。
+### アセットビューの新機能 {#assets-view-new-features}
 
-![リンク共有設定](/help/assets/assets/config-email-service.png)
+**AEMとDynamic Mediaへのアセットの公開**
 
+Experience Manager Assetsでは、次のことがすぐに可能になりました [Experience ManagerとDynamic Mediaへのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md) 管理者ビューに切り替えずに、アセット ビューを使用します。 アセットのアップロード、参照および検索時に、アセットを公開できます。
+
+![公開ステータス 1 を確認](/help/assets/assets/check-publish-status1.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -102,193 +83,144 @@ Experience Manager Assets では、[シングルクリックでアセットま�
 
 -->
 
-### AEM Forms の新機能 {#forms-new-features}
+### AEM Formsの新しいプレリリース機能 {#forms-new-prerelease-features}
 
-* **コアコンポーネントベースのアダプティブフォーム向けビジュアルルールエディターの機能強化**：このリリースでは、コアコンポーネントベースのアダプティブフォームのビジュアルルールエディターが大幅にアップグレードされました。このリリースでは、コアコンポーネントベースのアダプティブフォームのビジュアルルールエディターが大幅にアップグレードされました。この更新では、より堅牢で効率的なフォームを作成できるように、カスタム関数とのインタラクションを効率化することに焦点を当ています。
+#### コアコンポーネントベースのアダプティブFormsの強化されたビジュアルルールエディター
 
-  次の方法で、カスタム関数とのインタラクションを効率化できるようになりました。
+このリリースでは、コアコンポーネントベースのアダプティブフォームのビジュアルルールエディターが大幅にアップグレードされました。次の操作が可能になっています。
 
-   * [新しい注釈を活用すると、より明確な機能定義を行えます](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function)。
-   * [カスタム関数にキャッシュメカニズムを使用すると、フォームのパフォーマンスが向上します](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function)。
-   * [カスタム関数内のグローバルオブジェクトをシームレスに操作できます](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions)。
-   * [カスタム関数内でのオプションのパラメーターを定義して利用します](/help/forms/create-and-use-custom-functions.md#parameter)。
+* ビジュアルルールエディターでルールを作成して [デフォルトのフォーム送信成功/失敗ハンドラーの上書き](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
 
-  このアップデートでは、ルールエディターの機能にも次の機能強化が追加されています。次の操作を実行できます。
+* アダプティブFormsのルールエディターで、次の機能が追加されました。 [「WHEN」操作に対して様々なタイプのフィールドを選択します](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
 
-   * 条件付き実行に強力な[「when-then-else」](/help/forms/rule-editor-core-components.md#when)ロジックを実装します。
-   * let 関数や arrow 関数などの最新の JavaScript 機能を活用します（ES10 サポート）。
-   * フィールドだけでなく、パネルやフォーム全体を検証またはリセットして、ユーザー操作のコントロールを拡大します。
+* フォーム作成者は、カスタム関数をに適用できるようになりました [送信前にデータを前処理](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
 
-  これらの機能強化により、ビジュアルルールエディター内でルールやカスタム関数を作成する際のエクスペリエンスが、より直感的かつ強力になります。
+* の使用 [**ドラフトとして保存**](/help/forms/save-core-component-based-form-as-draft.md) 後で送信するために、部分的に完了したフォームを保存する機能。 これは、ユーザーがフォームの入力を中断して後で戻る必要がある場合に便利です。
 
-* **[アダプティブフォームの複数バージョンの作成](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**：既存フォームのバリエーションを簡単に管理できるようになりました。これにより、合理化された単一のワークフロー内で、バージョン管理をシンプルに、フォーム最適化の比較を容易に行えるようになります。
 
-* **[アダプティブフォームの比較](/help/forms/compare-forms.md)**：2 つのフォームを簡単に比較して、その違いを特定できるようになりました。チームメンバーがリビジョンを比較し、変更を効率的に議論できるので、共同作業がスムーズになります。
 
-* **手書き署名コンポーネントのアクセシビリティの強化**：このアップデートにより、手書き署名コンポーネントのアクセシビリティが大幅に向上しました。
+### AEM Formsの早期導入者機能 {#forms-new-early-adopter-features}
 
-  **キーボードナビゲーションの向上：**
-   * Tab キーを押すと、署名ダイアログボックス内のすべてのインタラクティブ要素間を移動できます。
-   * ブラシまたはキーボードで署名して Enter キーを押すと、ダイアログが閉じます。
-   * 署名して「OK」をクリックした後も、フォーカスは署名コントロールに残ります。
+AEM Forms早期導入プログラムは、誰よりも先に最先端のイノベーションに排他的にアクセスし、開発を形作るユニークな機会を提供します。
+プログラムでは、複数のイノベーションにアクセスできます。
 
-  **署名のクリア機能：**
+このリリースノートでは、現在のリリースで提供されているイノベーションの一覧を示します。 早期導入プログラムで利用可能なイノベーションの完全なリストについては、次を参照してください。 [AEM Forms早期導入プログラムドキュメント](/help/forms/early-adopter-ea-features.md).
 
-   * Tab キーを使用すると、署名を消去するための消去クロスアイコンにアクセスできます。
-   * 「署名のクリアを確認」ダイアログには、タブナビゲーションからもアクセスできます。
+#### ボット保護方法の強化
 
-  **ラベルとコントロールの機能強化：**
-   * キーボード署名ボタンのラベルがよりわかりやすくなり、「aria-label」を使用して機能を通知します（「aria-label=キーボードを使用して署名」など）。
-   * コントラストが向上し、手書き署名内のすべてのコントロールを簡単に区別できるようになりました。
-   * OK／チェックマークボタンが、非アクティブの場合でも視覚的に示されるようになりました。
+AEM Formsは、2 つの一般的な CAPTCHA ソリューション（Cloudflare Turnstile および hCaptcha）のサポートを追加することにより、セキュリティ機能を強化しました。 これにより、既に利用可能なGoogle reCAPTCHA が追加され、ボットやスパムの送信からフォームを保護するためのより多くの選択肢と柔軟性が提供されます。
 
-  **スクリーンリーダーの署名フィードバック：**
-   * 署名を入力すると、スクリーンリーダーのユーザーは、署名の作成に使用されるテキストを聞くことができます。
+* **Cloudflare Turnstile**：この摩擦のない CAPTCHA は、明示的なインタラクションを必要としないシンプルなチャレンジを通じてユーザーを検証します。 フォームにシームレスに統合し、ユーザーエクスペリエンスを向上させます。
+* **Captcha**：プライバシーに焦点を当てたこの CAPTCHA は、データプライバシーに焦点を当てた、ユーザーフレンドリーな代替手段を提供します。 セキュリティとユーザーエクスペリエンスのバランスを取ることを目的としています。
+* **Google reCAPTCHA**: AEM Formsは、信頼性が高く確立されたソリューションを提供することで、reCAPTCHA v2 と reCAPTCHA Enterprise の両方を引き続きサポートします。
 
-このアップデートにより、手書き署名コンポーネントのナビゲーション、明確さ、フィードバックを向上し、障がいのあるユーザーにとってより包括的なエクスペリエンスになります。
+AEM Formsでは、複数の CAPTCHA オプションを提供することで、特定のニーズに最適なソリューションを選択できるようになりました。
 
-### 早期導入プログラム {#forms-early-adopter}
+これらの CAPTCHA ソリューションをアダプティブFormsに統合する準備はできていますか？ アドビのドキュメントでは、次の各項目に関する詳細な手順を提供します。 [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [Captcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components)、および [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
-* **[Adobe Workfront Fusion シナリオへのアダプティブフォームの送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**：Forms as a Cloud Service には、アダプティブフォームを Adobe Workfront に簡単に接続するための標準オプションが用意されています。これにより、Adobe Workfront シナリオにアダプティブフォームを送信するプロセスが簡単になり、アダプティブフォームの送信時に Workfront Fusion シナリオをトリガーできます。
 
-  <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Adobe Workfront Fusion コネクタを使用すると、アダプティブフォームの送信時に自動的にトリガーされるワークフローを設計できます。例えば、送信されたデータを確認するタスクを特定の個人に割り当てるワークフローが開始され、アダプティブフォームから取り込まれた情報に基づいて、申し込みの承認または拒否ができるようになるシナリオを想定します。この合理化された統合によって効率が上がり、ワークフロープロセスの自動化が新たな段階に引き上げられます。
+### Forms サービス
 
-* **[Reader Extension サービス](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**：AEM Forms Communication API では Reader Extension サービスを導入しました。通常の PDF にフォーム入力やコメントなどの機能を追加できるので、無料の Adobe Reader を使ってユーザーが PDF をインタラクティブに使用できるようになります。
+Forms サービスは、データキャプチャ用のインタラクティブPDF formsを生成します。 また、既存のインタラクティブPDFフォームとの間でデータの書き出しをインポートし、送信されたデータを検証する場合にも使用できます。 機能の分類を次に示します。
 
-* [右横書き言語のサポート](/help/forms/supporting-new-language-localization-core-components.md)：コアコンポーネントに基づいて作成されたアダプティブフォームを、アラビア語、ペルシア語、ウルドゥー語などの右横書き（RTL）言語で表示できるようになりました。RTL 言語は、世界中で 20 億人以上の人々が話しています。RTL 言語のフォームを使用すると、アダプティブフォームのリーチを拡大して、これらの多様なオーディエンスに対応し、RTL マーケットを選択できます。また、特定の地域では、現地の言語でフォームを提供することは法的義務として定められています。現地の言語に対応することで、より幅広いオーディエンスに扉を開くだけでなく、関連する法律や規制を確実に遵守できます。
+* **Formsのレンダリング**:AEM Forms Designer とオプションで XML データを使用して作成されたテンプレートからインタラクティブPDFフォームを生成します。 これは基本的に、オプションでデータが事前入力された入力可能なPDFフォームを生成します。
+* **データの抽出と読み込み**：既存のPDFフォームにデータを読み込むだけでなく、入力済みのPDFフォームからデータを抽出します。 XDP と XML データ形式の両方がサポートされており、非 XFAPDF forms（AcroForms とも呼ばれます）への読み込みには、FDF および XFDF データもサポートされています。
+* **データの検証**: AEM Forms Designer を使用して作成されたテンプレートに対して、送信されたデータを XDP 形式または XML 形式で検証します。
 
-* **[DocAssurance API（通信 API の一部）を使用したドキュメントの保護](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API を使用すると、ドキュメントに署名および暗号化して、機密情報を保護できます。暗号化により、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセスできるようになります。この強化された保護層は、貴重なデータを信頼できない環境にさらすことなく、安心感ももたらします。Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
+>[!IMPORTANT]
+>
+> 早期導入プログラムに参加して早期導入イノベーションを得たい場合は、公式アドレスからにメールを送信するだけです。 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) アクセスをリクエストします。 すべてまたは特定のイノベーションへのアクセスをリクエストできます。
 
-  公式メール ID から `aem-forms-ea@adobe.com` に送信して早期導入プログラムに参加し、機能へのアクセスをリクエストできます。
+
+## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
+
+### 他のAdobeソリューションとのAEM統合に対する OAuth サーバー間資格情報のサポート {#S2S-OAuth-credentials}
+
+Adobe Developer コンソールは、様々な API にアクセスするための資格情報を生成するために使用されます。 これらの資格情報タイプの 1 つであるサービスアカウント（JWT）資格情報は、OAuth サーバー間資格情報に置き換えて非推奨になりました。AEM Cloud Serviceでは、Adobe AnalyticsやAdobe Targetなど、他のAdobeソリューションとの統合をサポートするようになりました。
+
+[廃止について読む](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md) および [AEM オーサー UI の使用方法を学ぶ](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) 他のAdobeソリューションとの統合を設定する場合
+
+### オリジンアラートでのトラフィックスパイク {#traffic-spike-origin}
+
+[事前通知の受信](/help/security/traffic-filter-rules-including-waf.md#traffic-spike-at-origin-alert) オリジンのトラフィックパターンが DDoS 攻撃を示している場合は、アクションセンターを通じてトラフィックフィルタールールを調査および設定できます。
+
+### RDE の新機能 {#RDE-new-features}
+
+[迅速な開発環境（RDE）](/help/implementing/developing/introduction/rapid-development-environments.md) 開発者がクラウド内の変更を迅速にデプロイ、レビュー、テストできるようにします。 いくつかの新機能が 6 月の間にロールアウトされます。 また、でAdobeエンジニアリングに直接関与することをお勧めします。 [RDE 不一致チャネル](https://discord.com/channels/1131492224371277874/1245304281184079872).
+
+
+#### サイトテーマとサイトテンプレートを使用したフロントエンドコードの RDE サポート {#rde-frontend}
+
+[RDE でフロントエンドコードがサポートされるようになりました](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) 基準： [サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md) および [サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)早期導入者向け。 RDE の場合、これは [フロントエンドパイプライン](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
+
+#### RDE のロギングの強化 {#rde-logging}
+
+RDE でコードをデバッグする際に、開発者は次の操作を実行できるようになりました [ログの設定とストリーミングをより生産的に](/help/implementing/developing/introduction/rapid-development-environments.md#rde-logging)、コマンドラインを使用し、バージョン管理で OSGi プロパティを変更しない。 次のような機能があります。
+
+* パッケージまたはクラスレベルごとのログレベルの宣言
+* ログ出力形式のカスタマイズ
+* 複数のログの並行ストリーミング
+
+#### RDE CLI の機能強化 {#rde-cli-enhancements}
+
+RDE コマンドラインインターフェイスには、開発者エクスペリエンスを向上させる新機能がいくつか備わっています。
+
+* [setup コマンドはインタラクティブです](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools-interactive)を使用すると、組織、プログラム、環境を簡単に選択できます。 また、コマンドラインでこれらの値を上書きできるようになりました。
+* [クワイエットモード](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) より冗長でない出力の場合。
+* [json モード](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) プログラム的に呼び出された際に有用な出力として。
+
+### 新しいアクション センターの通知 {#actions-center-notifications}
+
+[アクション センター](/help/operations/actions-center.md) は、重要なインシデントが発生した場合、またはコードや設定に関してプロアクティブなアクションを実行する必要があるものが検出された場合に、メール通知を送信します。 通知には、次の 3 つの新しいタイプがあります。
+
+* 高度なネットワーク インフラストラクチャを介した発信接続が多すぎます
+* 非推奨（廃止予定）のサービスユーザーマッピング形式の使用
+* ddos 攻撃の可能性がある
+
+### 早期導入プログラム {#foundation-early-adopter}
+
+電子メール **<aemcs-cdn-config-adopter@adobe.com>**」を選択し、関心のある以下の早期導入プログラムを示します。
+
+#### セルフサービス API キーを使用して CDN でコンテンツをパージする（早期導入プログラム） {#purge-cdn}
+
+CDN パージ API キーをセルフサービス方式で登録し、それを使用して、グローバルまたは 1 つ以上のリソースについて CDN のコンテンツを無効にします。 [詳細情報](/help/implementing/dispatcher/cdn-cache-purge.md)。
+
+<!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
+
+#### 顧客管理 CDN （BYOCDN）用 X-AEM-Edge-Key のセルフサービス作成（早期導入プログラム） {#byocdn-keys}
+
+以前は、顧客が管理する CDN の設定に必要な X-AEM-Edge-Key を生成するために、サポートチケットが必要でした。 これは、設定パイプラインを使用してデプロイされた設定ファイルを介してセルフサービス方式で実行できるようになり、新しい環境のオンボーディングの遅延をなくすことができます。 [詳細情報](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)。
+
+<!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
+
+#### クライアントサイドのリダイレクト（早期導入プログラム） {#client-side-redirects-early-adopter}
+
+ソース管理で 301/302 クライアントサイドのリダイレクトを設定し、CDN にデプロイします。[詳細情報](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)。<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> に関連して既に使用できる機能は他にもいくつかあります [CDN 設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)（リクエストと応答の変換、AEM外のサイトへのトラフィックのルーティングを含む）。
+
+#### トラフィックフィルタールールアラート（早期導入プログラム） {#traffic-filter-rules-alerts-early-adopter}
+
+最近リリースされた[トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)には、オプションでライセンス可能な web アプリケーションファイアウォール（WAF）ルールが含まれており、許可または拒否するトラフィックを設定できます。
+
+早期導入プログラムに参加すると、トラフィックフィルタールールがトリガーされるたびにアラートを受け取ることができます。 特定のトラフィック状況が発生するとアクションセンターのメール通知が送信されるので、適切な対策を講じることができます。
+
+#### ビジネスユーザーは Git 外でリダイレクトを宣言できる（早期導入プログラム） {#apache-rewritemaps-early-adopter}
+
+AEM 6.5 と同様に、Apache／Dispatcher は、web 階層パイプラインの実行を必要とせずに、公開リポジトリ内の特定の場所に配置された書き換えマップを取り込んで読み込みます。これにより、ビジネスユーザーがスプレッドシートまたは UI （ACS Commons リダイレクトマップマネージャーで提供されるものや、顧客アプリケーションの一部として作成されたものなど）を使用してリダイレクトを宣言する機会が開きます。 <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
+
+#### 動的コンテンツを読み込むためのエッジサイドインクルード（ESI）（早期導入プログラム） {#esi-early-adopter}
+
+Adobeが管理する CDN が、をサポートするようになりました [エッジサイドインクルード（ESI）](/help/implementing/dispatcher/edge-side-includes.md)：エッジレベルの動的 web コンテンツアセンブリ用のマークアップ言語です。 ESI スニペットを含めることで、より高い TTL で CDN のHTMLページ全体をキャッシュしながら、より高いケイデンスの更新（低い TTL）を必要とする小さなセクションをオリジンから頻繁に取得できます。 <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
+
+#### Real User Monitoring （RUM）データ・サービス（早期導入プログラム）
 
 * **[リアルユーザーモニタリング（RUM）データサービスを活用](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**して、AEM as a Cloud Service のクライアントサイドのコレクションを有効にすることができます。
 実ユーザーモニタリング（RUM）データサービスは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントの信頼性の高い測定を保証します。 ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。さらに、アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、アドビとトラフィックレポートを共有する必要がなくなります。
 
   この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから、RUM を有効にする各環境のドメイン名を添付して、`aemcs-rum-adopter@adobe.com` にメールを送信してください。その後、アドビの製品チームが、リアルユーザーモニタリング（RUM）データサービスを有効にします。
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
-
-### CDN 設定 {#cdn-config}
-
-次の方法で、アドビの CDN でのトラフィックを設定します。
-
-* [リクエスト変換](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) - 受信リクエストが AEM にルーティングされる前に、パス、クエリパラメーターおよび HTTP ヘッダーなど、受信リクエストの側面を変更します。
-* [応答変換](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) - 送信応答がブラウザーに提供される前に、送信応答の HTTP ヘッダーを変更します。
-* [接触チャネルセレクター](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors) - CDN 経由でトラフィックを AEM 以外のサイトやアプリケーションにルーティングします。
-
-これらのルールをソース管理（Git）で宣言すると、Cloud Manager 設定パイプラインを使用して CDN にデプロイできます。また、以下の早期導入に関する節のクライアントサイドのリダイレクト機能も参照してください。
-
-### カスタム CDN エラーページ {#cdn-error-pages}
-
-万が一、CDN が AEM 接触チャネルにトラフィックをルーティングできない場合は、カスタムエラーページを宣言して、汎用バージョンを置き換えることができます。ブランドのエラーページを提供する方法について詳しくは、[こちら](/help/implementing/dispatcher/cdn-error-pages.md)を参照してください。
-
-### 早期導入プログラム {#foundation-early-adopter}
-
-#### クライアントサイドのリダイレクト（早期導入プログラム） {#client-side-redirects-early-adopter}
-
-ソース管理で 301/302 クライアントサイドのリダイレクトを設定し、CDN にデプロイします。[詳細情報](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)を確認し、早期導入プログラムに参加するには、**<aemcs-cdn-config-adopter@adobe.com>** にメールを送信してください。
-
-#### トラフィックフィルタールールアラート（早期導入プログラム） {#traffic-filter-rules-alerts-early-adopter}
-
-最近リリースされた[トラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)には、オプションでライセンス可能な web アプリケーションファイアウォール（WAF）ルールが含まれており、許可または拒否するトラフィックを設定できます。
-
-**<aemcs-cdn-config-adopter@adobe.com>** にメールを送信して早期導入プログラムに参加すると、トラフィックフィルタールールがトリガーされるたびにアラートを受け取ることができます。特定のトラフィック状況が発生するとアクションセンターのメール通知が送信されるので、適切な対策を講じることができます。
-
-#### Apache／Dispatcher ランタイムによる書き換えマップの取り込み（早期導入プログラム） {#apache-rewritemaps-early-adopter}
-
-AEM 6.5 と同様に、Apache／Dispatcher は、web 階層パイプラインの実行を必要とせずに、公開リポジトリ内の特定の場所に配置された書き換えマップを取り込んで読み込みます。これにより、ビジネスユーザーが、ACS Commons リダイレクトマップマネージャーが提供するような UI を使用して、リダイレクトを宣言する機会が広がります。詳しくは **<aemcs-cdn-config-adopter@adobe.com>** までご連絡ください。
-
-#### 動的コンテンツを読み込むためのエッジサイドインクルード（ESI）（早期導入プログラム） {#esi-early-adopter}
-
-アドビが管理する CDN で、エッジレベルの動的 web コンテンツアセンブリ用のマークアップ言語であるエッジサイドインクルード（ESI）がサポートされるようになりました。ESI スニペットを含めることで、より大きい TTL で HTML ページ全体を CDN にキャッシュしながら、より頻繁なアップデート（小さい TTL）を必要とする小さなセクションを、接触チャネルから頻繁に取得できます。詳しくは **<aemcs-cdn-config-adopter@adobe.com>** までご連絡ください。
-
-#### サイトテーマとサイトテンプレートを使用したフロントエンドコードの RDE サポート（早期導入プログラム） {#rde-frontend-early-adopter}
-
-[迅速な開発環境（RDE）](/help/implementing/developing/introduction/rapid-development-environments.md)は、早期導入者向けに、[サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md)と[サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)に基づいたフロントエンドコードをサポートするようになりました。RDE では、[フロントエンドパイプライン](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)ではなくコマンドラインディレクティブを使用して行われます。試用してフィードバックを提供するには、**<aemcs-rde-support@adobe.com>** までご連絡ください。
-
-#### RDE ロギングの強化（早期導入プログラム） {#rde-logging-early-adopter}
-
-[迅速な開発環境（RDE）](/help/implementing/developing/introduction/rapid-development-environments.md)でコードをデバッグする際、バージョン管理で OSGI プロパティを変更することなく、コマンドラインを使用して、開発者がより効率的にログを設定し、ストリーミングできるようになりました。次のような機能があります。
-
-* パッケージまたはクラスレベルごとのログレベルの宣言
-* ログ出力形式のカスタマイズ
-* 複数のログを並行してストリーミング
-
-試してフィードバックを提供するには、**<aemcs-rde-support@adobe.com>** までご連絡ください。
-
-
 ## [!DNL Experience Manager] ガイド {#guides}
 
-
-### 事前設定された言語グループを使用してコンテンツを複数の言語に翻訳する機能
-
-Experience Manager Guides では、言語グループを作成し、コンテンツを複数の言語へと容易に翻訳できるようになりました。この機能は、組織のニーズに応じて翻訳を整理および管理するのに役立ちます。
-
-例えば、ヨーロッパの一部の国向けにコンテンツを翻訳する必要がある場合、英語（EN）、フランス語（FR）、ドイツ語（DE）、スペイン語（ES）、イタリア語（IT）などのヨーロッパ言語の言語グループを作成できます。
-
-![翻訳パネル](../assets/guides/translation-languages-2404.png)
-
-*ドキュメントを翻訳する言語グループまたは言語を選択します。*
-
->[!NOTE]
->
->言語のターゲットフォルダーが見つからない場合や、ターゲット言語がソース言語と同じ場合は、グレー表示され、警告サインが表示されます。
-
-管理者は、言語グループを作成し、複数のフォルダープロファイルに設定できます。作成者は、フォルダープロファイルで設定されている言語グループを表示できます。
-
-
-全体として、言語グループを作成すると、翻訳プロジェクトの効率と生産性が向上し、最終的には複数の言語にわたるローカライゼーションプロセスが向上します。
-
-
-[Web エディターからドキュメントを翻訳](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)する方法を参照してください
-
-### リポジトリビューでファイルを検索およびフィルタリングするためのエクスペリエンスの刷新
-
-ファイルのフィルタリング時のエクスペリエンスが向上しました。ファイルをフィルタリングする刷新された機能によりファイルを簡単に検索および移動する方法が改善されました。
-
-![リポジトリビューでファイルを検索](../assets/guides/repository-filter-search-2404.png)
-
-*テキスト`general purpose.`* を含むファイルを検索します
-
-関連ファイルへの迅速なアクセスや、より直感的なユーザーインターフェイスなどのメリットが得られ、検索エクスペリエンスがよりスムーズかつ効率的になります。
-
-![迅速な検索フィルター](../assets/guides/repository-filter-search-quick.png)
-
-*クイックフィルターを使用して、DITA ファイルと非 DITA ファイルを検索します。*
-
-**フィルター検索**&#x200B;機能について詳しくは、[左パネル](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS)の節を参照してください。
-
-### データソースコネクタの機能強化
-
-2024.4.0 リリースでは、データソースコネクタに対して次の機能強化を行いました。
-
-#### Salsify、Akeneo、Microsoft Azure DevOps Boards（ADO）データソースに接続
-
-また、既存の標準コネクタに加えて、Experience Manager Guides では、Salsify、Akeneo、Microsoft Azure DevOps Boards（ADO）データソース用のコネクタも提供します。管理者は、これらのコネクタをダウンロードしてインストールできます。次に、インストールしたコネクタを設定します。
-
-#### サンプルクエリをコピー＆ペーストし、コンテンツスニペットまたはトピックを作成
-
-サンプルデータクエリをジェネレーターにコピー＆ペーストするだけで、コンテンツスニペットまたはトピックを作成できます。この機能を使用すると、構文を覚えたり、クエリを手動で作成したりする必要がありません。クエリを手動で入力する代わりに、サンプルクエリをコピー＆ペーストし、編集し、使用して要件に応じたデータを取得できます。
-
-![コンテンツスニペットを挿入ダイアログボックス](../assets/guides/insert-content-snippet.png)
-
-*サンプルクエリをコピーして編集し、コンテンツスニペットを作成します。*
-
-#### ファイルコネクタを使用して JSON データファイルに接続
-
-
-管理者は、JSON データファイルをデータソースとして使用するように JSON ファイルコネクタを設定できるようになりました。コネクタを使用して、コンピューターまたは Adobe Experience Manager Assets から JSON ファイルを読み込みます。次に、作成者は、ジェネレーターを使用してコンテンツスニペットまたはトピックを作成できます。
-
-この機能は、JSON ファイルに保存されたデータを使用し、様々なスニペット間で再利用するのに役立ちます。また、JSON ファイルを更新するたびに、コンテンツも動的に更新されます。
-
-#### コネクタの複数のリソース URL を設定してコンテンツスニペットまたはトピックを作成
-
-管理者は、Generic REST Client、Salsify、Akeneo、Microsoft Azure DevOps Boards（ADO）などの一部のコネクタに対して複数のリソース URL を設定できます。
-次に、作成者は、ジェネレーターを使用してデータソースに接続し、コンテンツスニペットまたはトピックを作成します。この機能は、URL ごとにデータソースを作成する必要がないので便利です。これは、単一のコンテンツスニペットまたはトピック内の特定のデータソースのリソースからデータを迅速に取得するのに役立ちます。データソースコネクタの詳細と、[ユーザーインターフェイスからデータソースコネクタを設定](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools)する方法を参照してください。[データソースからデータを使用](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet)する方法を参照してください。
-
-新機能と機能強化について詳しくは、[ 2024.04.0リリースの新機能](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0)を参照してください。
-
-このリリースで修正された問題の一覧については、[2024.4.0リリースで修正された問題](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0)を参照してください。
+Adobe Experience Manager Guides の最新リリースの新機能と機能強化の完全なリストを確認できます [こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
 
 ## Cloud Manager {#cloud-manager}
 

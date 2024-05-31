@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '6468'
-ht-degree: 97%
+source-wordcount: '6492'
+ht-degree: 99%
 
 ---
 
@@ -20,6 +20,12 @@ ht-degree: 97%
 | -------- | ---------------------------- |
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
+
+
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| コアコンポーネント | [ここをクリックしてください](/help/forms/rule-editor-core-components.md) |
+| 基盤コンポーネント | この記事 |
 
 ## 概要 {#overview}
 
@@ -38,6 +44,10 @@ ht-degree: 97%
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
 forms-power-users グループに追加されたユーザーは、スクリプトの作成と既存のスクリプトの編集を行うことができます。[!DNL forms-users] グループのユーザーは、スクリプトを使用できますが、スクリプトの作成と編集はできません。
+
+## コアコンポーネントのルールエディターと基盤コンポーネントのルールエディターの違い
+
+{{rule-editor-diff}}
 
 ## ルールを理解する {#understanding-a-rule}
 
@@ -140,15 +150,15 @@ _
 
 **[!UICONTROL Disable （無効）]**：指定したオブジェクトを無効にします。
 
-**[!UICONTROL サービスを起動]** フォームデータモデル（FDM）で設定されたサービスを呼び出します。 「サービスを起動」オプションを選択すると、フィールドが表示されます。このフィールドをタップすると、フォームのすべてのフォームデータモデル（FDM）で設定されたすべてのサービスが表示されます [!DNL Experience Manager] インスタンス。 フォームデータモデル（FDM）サービスを選択すると、さらにフィールドが表示され、指定したサービスに対する入力パラメーターと出力パラメーターを使用して、ここでフォームオブジェクトをマップすることができます。 フォームデータモデルサービスの起動については、「ルール例」を参照してください。
+**[!UICONTROL Invoke service （サービスを起動）]**：フォームデータモデル（FDM）で設定されたサービスを起動します。「サービスを起動」オプションを選択すると、フィールドが表示されます。このフィールドをタップすると、[!DNL Experience Manager] インスタンス上のすべてのフォームデータモデル（FDM）で設定されたすべてのサービスが表示されます。フォームデータモデル（FDM）サービスを選択すると、さらにフィールドが表示されます。このフィールドで、フォームオブジェクトと、指定したサービスの入出力パラメーターをマッピングすることができます。フォームデータモデルサービスの起動については、「ルール例」を参照してください。
 
 フォームデータモデルサービスに加えて、ダイレクト WSDL URL を指定して Web サービスを起動することができます。ただし、フォームデータモデルサービスには数多くの利点があるので、この方法でサービスを起動することをお勧めします。
 
-フォームデータモデル（FDM）でのサービス設定について詳しくは、以下を参照してください。 [[!DNL Experience Manager Forms] データ統合](data-integration.md).
+フォームデータモデル（FDM）でのサービス設定について詳しくは、[[!DNL Experience Manager Forms]  のデータ統合機能](data-integration.md)を参照してください。
 
-**[!UICONTROL Set value of （設定値）]**：指定したオブジェクトの値を計算し、設定します。オブジェクト値には、文字列、他のオブジェクトの値、数式や関数を使用して計算された値、オブジェクトのプロパティの値、または設定されたフォームデータモデルサービスからの出力値を設定することができます。Web サービスオプションを選択すると、 [!DNL Experience Manager] インスタンス。 フォームデータモデルサービスを選択すると、さらにフィールドが表示され、指定したサービスに対する入力パラメーターと出力パラメーターを使用して、ここでフォームオブジェクトをマップすることができます。
+**[!UICONTROL Set value of （設定値）]**：指定したオブジェクトの値を計算し、設定します。オブジェクト値には、文字列、他のオブジェクトの値、数式や関数を使用して計算された値、オブジェクトのプロパティの値、または設定されたフォームデータモデルサービスからの出力値を設定することができます。Web サービスオプションを選択すると、[!DNL Experience Manager] インスタンス上のすべてのフォームデータモデル（FDM）で設定されたすべてのサービスが表示されます。フォームデータモデルサービスを選択すると、さらにフィールドが表示され、指定したサービスに対する入出力パラメーターを使用して、ここでフォームオブジェクトをマップすることができます。
 
-フォームデータモデル（FDM）でのサービス設定について詳しくは、以下を参照してください。 [[!DNL Experience Manager Forms] データ統合](data-integration.md).
+フォームデータモデル（FDM）でのサービス設定について詳しくは、[[!DNL Experience Manager Forms]  のデータ統合機能](data-integration.md)を参照してください。
 
 **[!UICONTROL プロパティを設定]**&#x200B;のルールタイプを使用すると、条件アクションに基づいて、指定したオブジェクトのプロパティの値を設定できます。プロパティは、次のいずれかに設定できます。
 * visible（ブーリアン）
@@ -316,7 +326,7 @@ When （オプション）：
 
 カスタム関数を作成するには、「[ルールエディターのカスタム関数](#custom-functions)」を参照してください。
 
-フォームデータモデル（FDM）に基づいてルールを定義するには、次の手順に従います。
+フォームデータモデル（FDM）に基づいてルールを定義するには：
 
 1. ドロップダウンリストから「**[!UICONTROL サービス出力]**」を選択します。
 1. データモデルオブジェクトを選択します。
@@ -658,7 +668,7 @@ CRX リポジトリーにクライアントライブラリを追加した後は�
 
    >[!NOTE]
    >
-   > カスタム関数を使用してルールエディターからフォームデータモデル（FDM）を呼び出すには、次の手順に従います。 [こちらを参照](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
+   > カスタム関数を使用してルールエディターからフォームデータモデル（FDM）を呼び出すには、[こちらを参照してください](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services)。
 
 #### 関数の宣言でサポートされるタイプ {#function-declaration-supported-types}
 
@@ -815,7 +825,7 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 ### フォームデータモデルサービスを起動 {#invoke}
 
-ローン額、加入年数、申請者の信用度スコアを入力として、EMI 額と利率を含むローンプランを返す、web サービス `GetInterestRates` を考えます。Web サービスをデータソースとして使用し、フォームデータモデル（FDM）を作成します。 データモデルオブジェクトと `get` サービスをフォームモデルに追加します。フォームデータモデル（FDM）の「サービス」タブにサービスが表示されます。 その後、データモデルオブジェクトのフィールドを含むアダプティブフォームを作成し、ローン総額、加入年数、申込者の信用度についてユーザーの入力を取得します。計画の詳細を取得するために Web サービスをトリガーするボタンを追加します。適切なフィールドで出力が算出されます。
+ローン額、加入年数、申請者の信用度スコアを入力として、EMI 額と利率を含むローンプランを返す、web サービス `GetInterestRates` を考えます。Web サービスをデータソースとして使用し、フォームデータモデル（FDM）を作成します。データモデルオブジェクトと `get` サービスをフォームモデルに追加します。フォームデータモデル（FDM）の「サービス」タブにサービスが表示されます。その後、データモデルオブジェクトのフィールドを含むアダプティブフォームを作成し、ローン総額、加入年数、申込者の信用度についてユーザーの入力を取得します。計画の詳細を取得するために Web サービスをトリガーするボタンを追加します。適切なフィールドで出力が算出されます。
 
 次のルールは、「サービスを起動」アクションを設定してシナリオ例を実行する方法を示しています。
 

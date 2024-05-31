@@ -5,19 +5,18 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '5453'
+source-wordcount: '5612'
 ht-degree: 86%
 
 ---
 
 
-<span class="preview"> この記事には、一部のプレリリース機能に関するコンテンツが含まれています。 これらのプレリリース機能には、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features). プレリリースプログラムの機能は次のとおりです。
-* ネストされた条件を When-then-else 機能で実装する機能のサポート
-* パネルやフォーム（フィールドを含む）の検証またはリセット
-* カスタム関数内の let 関数や arrow 関数などの最新の JavaScript 機能のサポート（ES10 サポート）。
-</span>
+| バージョン | 記事リンク |
+| -------- | ---------------------------- |
+| 基盤コンポーネント | [ここをクリックしてください](/help/forms/rule-editor.md) |
+| コアコンポーネント | この記事 |
 
 # アダプティブフォーム（コアコンポーネント）へのルールの追加 {#adaptive-forms-rule-editor}
 
@@ -30,12 +29,20 @@ ht-degree: 86%
 * オブジェクトの値を設定する
 * オブジェクトの値を検証する
 * 関数を実行することにより、オブジェクトの値を計算する
-* フォームデータモデル（FDM）サービスを呼び出し、操作を実行する
+* フォームデータモデル（FDM）サービスを呼び出して操作を実行する
 * オブジェクトのプロパティを設定する
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
 forms-power-users グループに追加されたユーザーは、スクリプトの作成と既存のスクリプトの編集を行うことができます。[!DNL forms-users] グループのユーザーは、スクリプトを使用できますが、スクリプトの作成と編集はできません。
+
+## コアコンポーネントのルールエディターと基盤コンポーネントのルールエディターの違い
+
+{{rule-editor-diff}}
+
+>[!NOTE]
+>
+> カスタム関数の作成方法と使用方法の詳細については、次を参照してください [アダプティブForms（コアコンポーネント）のカスタム関数](/help/forms/create-and-use-custom-functions.md) 記事。
 
 ## ルールを理解する {#understanding-a-rule}
 
@@ -117,13 +124,14 @@ forms-power-users グループに追加されたユーザーは、スクリプ�
 
 `Then, do the following:`
 
-Action 2 on Object B;
-AND
-Action 3 on Object C;
+`Action 2 on Object B;`
+`AND`
+&#39;オブジェクト C のアクション 3;
 
 `Else, do the following:`
 
-アクション 2 （オブジェクト C; _）
+`Action 2 on Object C;`
+_
 
 ラジオボタンやリストなどの複数値コンポーネントに対してルールを作成する場合、オプションが自動的に取得され、それらのオプションを使用してルールを作成できるようになりました。これらのオプションの値を再入力する必要はありません。
 
@@ -139,6 +147,58 @@ Action 3 on Object C;
 >
 > ルールタイプが単一レベルの then-else ステートメントのみをサポートする場合。
 
+#### で複数のフィールドを使用できるようになりました [!UICONTROL 条件] {#allowed-multiple-fields}
+
+が含まれる **条件** 条件には、ルールが適用されるフィールド以外のフィールドを追加するオプションがあります。
+
+例えば、「When」のルールタイプを使用すると、様々なフォームオブジェクトの条件を評価し、アクションを実行することができます。
+
+日時：
+
+（Object A Condition 1）
+
+AND/OR
+
+（オブジェクト B 条件 2）
+
+次に、以下の手順を実行します。
+
+アクション 1 （オブジェクト A）
+
+_
+
+![When で複数のフィールドを許可](/help/forms/assets/allowed-multiple-field-when.png)
+
+##### When 条件機能で許可された複数フィールドを使用する際の考慮事項
+
+* 必ずを [コアコンポーネントはバージョン 3.0.14 以降に設定されています](https://github.com/adobe/aem-core-forms-components) をクリックして、ルールエディターでこの機能を使用します。
+* When 条件内の異なるフィールドにルールが適用されている場合、そのフィールドの 1 つのみが変更されても、ルールはトリガーします。
+
+
+<!--
+* It is not possible to add multiple fields in the When condition while applying rules to a button.
+
+##### To enable Allowed Multiple fields in When condition feature
+
+Allowed Multiple fields in When condition feature is disabled by default. To enable this feature, add a custom property at the template policy:
+
+1. Open the corresponding template associated with an Adaptive Form in the template editor.
+1. Select the existing policy as **formcontainer-policy**.
+1. Navigate to the **[!UICONTROL Structure]**  view and, from the **[!UICONTROL Allowed Components]** list, open the **[!UICONTROL Adaptive Forms Container]** policy.
+1. Go to the **[!UICONTROL Custom Properties]** tab and to add a custom property, click **[!UICONTROL Add]**.
+1. Specify the **Group Name** of your choice. For example, in our case, we added the group name as **allowedfeature**.
+1. Add the **key** and **value** pair as follows:
+   * key: fd:changeEventBehaviour
+   * value: deps
+1. Click **[!UICONTROL Done]**. -->
+
+「When」条件機能で許可されている複数のフィールドに問題が発生した場合は、次のようにトラブルシューティング手順に従います。
+
+1. フォームを編集モードで開きます。
+1. コンテンツブラウザーを開き、 **[!UICONTROL ガイドコンテナ]** アダプティブフォームのコンポーネント。
+1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。アダプティブフォームコンテナダイアログボックスが開きます。
+1. 「完了」をクリックして、ダイアログを再度保存します。
+
 **[!UICONTROL Hide （非表示）]**：指定したオブジェクトを非表示にします。
 
 **[!UICONTROL Show （表示）]**：指定したオブジェクトを表示します。
@@ -147,15 +207,15 @@ Action 3 on Object C;
 
 **[!UICONTROL Disable （無効）]**：指定したオブジェクトを無効にします。
 
-**[!UICONTROL サービスを起動]** フォームデータモデル（FDM）で設定されたサービスを呼び出します。 「サービスを起動」オプションを選択すると、フィールドが表示されます。このフィールドをタップすると、フォームのすべてのフォームデータモデル（FDM）で設定されたすべてのサービスが表示されます [!DNL Experience Manager] インスタンス。 フォームデータモデルサービスを選択すると、さらにフィールドが表示され、指定したサービスに対する入力パラメーターと出力パラメーターを使用して、ここでフォームオブジェクトをマップすることができます。フォームデータモデル（FDM）サービスの呼び出しについては、ルール例を参照してください。
+**[!UICONTROL Invoke service （サービスを起動）]**：フォームデータモデル（FDM）で設定されたサービスを起動します。「サービスを起動」オプションを選択すると、フィールドが表示されます。このフィールドをタップすると、[!DNL Experience Manager] インスタンス上のすべてのフォームデータモデル（FDM）で設定されたすべてのサービスが表示されます。フォームデータモデルサービスを選択すると、さらにフィールドが表示され、指定したサービスに対する入力パラメーターと出力パラメーターを使用して、ここでフォームオブジェクトをマップすることができます。フォームデータモデル（FDM）サービスの呼び出しについては、ルール例を参照してください。
 
 フォームデータモデルサービスに加えて、ダイレクト WSDL URL を指定して Web サービスを起動することができます。ただし、フォームデータモデルサービスには数多くの利点があるので、この方法でサービスを起動することをお勧めします。
 
-フォームデータモデル（FDM）でのサービス設定について詳しくは、以下を参照してください。 [[!DNL Experience Manager Forms] データ統合](data-integration.md).
+フォームデータモデル（FDM）でのサービス設定について詳しくは、[[!DNL Experience Manager Forms]  のデータ統合機能](data-integration.md)を参照してください。
 
-**[!UICONTROL Set value of （設定値）]**：指定したオブジェクトの値を計算し、設定します。オブジェクト値には、文字列、他のオブジェクトの値、数式や関数を使用して計算された値、オブジェクトのプロパティの値、または設定されたフォームデータモデルサービスからの出力値を設定することができます。Web サービスオプションを選択すると、 [!DNL Experience Manager] インスタンス。 フォームデータモデルサービスを選択すると、さらにフィールドが表示され、指定したサービスに対する入力パラメーターと出力パラメーターを使用して、ここでフォームオブジェクトをマップすることができます。
+**[!UICONTROL Set value of （設定値）]**：指定したオブジェクトの値を計算し、設定します。オブジェクト値には、文字列、他のオブジェクトの値、数式や関数を使用して計算された値、オブジェクトのプロパティの値、または設定されたフォームデータモデルサービスからの出力値を設定することができます。Web サービスオプションを選択すると、[!DNL Experience Manager] インスタンス上のすべてのフォームデータモデル（FDM）で設定されたすべてのサービスが表示されます。フォームデータモデルサービスを選択すると、さらにフィールドが表示され、指定したサービスに対する入出力パラメーターを使用して、ここでフォームオブジェクトをマップすることができます。
 
-フォームデータモデル（FDM）でのサービス設定について詳しくは、以下を参照してください。 [[!DNL Experience Manager Forms] データ統合](data-integration.md).
+フォームデータモデル（FDM）でのサービス設定について詳しくは、[[!DNL Experience Manager Forms]  のデータ統合機能](data-integration.md)を参照してください。
 
 **[!UICONTROL プロパティを設定]**&#x200B;のルールタイプを使用すると、条件アクションに基づいて、指定したオブジェクトのプロパティの値を設定できます。プロパティは、次のいずれかに設定できます。
 * visible（ブーリアン）
@@ -837,7 +897,7 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 ### フォームデータモデルサービスを起動 {#invoke}
 
-ローン額、加入年数、申請者の信用度スコアを入力として、EMI 額と利率を含むローンプランを返す、web サービス `GetInterestRates` を考えます。Web サービスをデータソースとして使用し、フォームデータモデル（FDM）を作成します。 データモデルオブジェクトと `get` サービスをフォームモデルに追加します。フォームデータモデル（FDM）の「サービス」タブにサービスが表示されます。 その後、データモデルオブジェクトのフィールドを含むアダプティブフォームを作成し、ローン総額、加入年数、申込者の信用度についてユーザーの入力を取得します。計画の詳細を取得するために Web サービスをトリガーするボタンを追加します。適切なフィールドで出力が算出されます。
+ローン額、加入年数、申請者の信用度スコアを入力として、EMI 額と利率を含むローンプランを返す、web サービス `GetInterestRates` を考えます。Web サービスをデータソースとして使用し、フォームデータモデル（FDM）を作成します。データモデルオブジェクトと `get` サービスをフォームモデルに追加します。フォームデータモデル（FDM）の「サービス」タブにサービスが表示されます。その後、データモデルオブジェクトのフィールドを含むアダプティブフォームを作成し、ローン総額、加入年数、申込者の信用度についてユーザーの入力を取得します。計画の詳細を取得するために Web サービスをトリガーするボタンを追加します。適切なフィールドで出力が算出されます。
 
 次のルールは、「サービスを起動」アクションを設定してシナリオ例を実行する方法を示しています。
 
@@ -898,8 +958,6 @@ Rule in the code editor -->
 前の例で説明した発注書フォームでは、価格が 10000 を超える商品については、ユーザーが複数個発注することを制限します。この検証を行うには、以下に示すように検証ルールを記述します。
 
 ![Example-validate](assets/example-validate.png)
-
-ビジュアルエディターに表示されたルール
 
 <!-- The rule appears as follows in the code editor.
 

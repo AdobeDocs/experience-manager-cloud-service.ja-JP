@@ -1,25 +1,20 @@
 ---
 title: アダプティブフォームでのカスタム関数の作成と追加
-description: AEM Formsは、ルールエディター内で独自の関数を作成および使用できるカスタム関数をサポートしています。
+description: AEM Formsはカスタム関数をサポートしており、ルールエディター内で独自の関数を作成および使用できます。
 keywords: ルールエディターでカスタム関数を使用して、カスタム関数の追加、カスタム関数の使用、カスタム関数の作成をおこないます。
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: c1c170e1cae148c53662cd49850e2a33754fbafc
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '3119'
+source-wordcount: '3521'
 ht-degree: 4%
 
 ---
 
 
-<span class="preview"> この記事には、一部のプレリリース機能に関するコンテンツが含まれています。 これらのプレリリース機能には、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja?cloud-environments). プレリリースプログラムの機能は次のとおりです。
-* カスタム関数でのオプションのパラメーターのサポート
-* カスタム関数のキャッシュ機能
-* グローバル スコープ オブジェクトとフィールド オブジェクトは、カスタム関数をサポートしています。
-* let 関数や arrow 関数などの最新の JavaScript 機能のサポート（ES10 サポート）。
-必ずを [コアコンポーネントはバージョン 3.0.8 に設定されています](https://github.com/adobe/aem-core-forms-components) カスタム機能でプレリリース機能を使用する。 </span>
+<span class="preview"> この記事には次が含まれます `Override form submission success and error handlers` をプレリリース機能として使用できます。 プレリリース機能には、 [プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features).
 
 # アダプティブForms（コアコンポーネント）のカスタム関数
 
@@ -31,6 +26,10 @@ ht-degree: 4%
 ## はじめに
 
 AEM Formsでは、複雑なビジネスルールを実装するための JavaScript 関数を定義できるカスタム関数をサポートしています。 これらのカスタム関数は、入力されたデータの操作や処理を容易にし、指定された要件を満たすことで、フォームの機能を拡張します。 定義済みの条件に基づいてフォームの動作を動的に変更することもできます。
+
+>[!NOTE]
+>
+> 必ずを [コアコンポーネント](https://github.com/adobe/aem-core-forms-components) は、最新の機能を使用するために最新バージョンに設定されています。
 
 ### カスタム関数の使用 {#uses-of-custom-function}
 
@@ -84,7 +83,7 @@ JavaScript アノテーションは、JavaScript コードのメタデータを�
 
 **オプションのパラメーター**
 デフォルトでは、すべてのパラメーターが必須です。 次のいずれかを追加して、パラメーターをオプションとして定義できます `=` パラメーターの後にまたはを含むパラメーター名  `[]`. JavaScript 注釈でオプションとして定義されたパラメーターは、ルールエディターでオプションとして表示されます。
-変数をオプションのパラメーターとして定義するには、次の構文のいずれかを使用できます。
+変数をオプションのパラメーターとして定義するには、次の構文のいずれかを使用します。
 
 * `@param {type=} Input1`
 
@@ -120,7 +119,7 @@ JavaScript アノテーションは、JavaScript コードのメタデータを�
         }
 ```
 
-次の図は、を使用した場合を示しています `OptionalParameterFunction` ルールエディターのカスタム関数：
+次の図は、を使用した場合を示しています `OptionalParameterFunction` ルールエディターでのカスタム関数：
 
 ![オプションまたは必須のパラメーター ](/help/forms/assets/optional-default-params.png)
 
@@ -154,10 +153,10 @@ JSDocs でオプションのパラメータを定義する方法の詳細につ�
 
 #### 非公開
 
-プライベートとして宣言されたカスタム関数は、アダプティブフォームのルールエディターのカスタム関数のリストには表示されません。 デフォルトでは、カスタム関数はパブリックです。 カスタム関数をプライベートとして宣言する構文を以下に示します。 `@private`.
+プライベートとして宣言されたカスタム関数は、アダプティブフォームのルールエディターのカスタム関数のリストに表示されません。 デフォルトでは、カスタム関数はパブリックです。 カスタム関数をプライベートとして宣言する構文を以下に示します。 `@private`.
 
 
-## カスタム関数の作成時のガイドライン {#considerations}
+## カスタム関数の作成時のガイドライン
 
 ルールエディターにカスタム関数を一覧表示するには、次のいずれかの形式を使用できます。
 
@@ -280,7 +279,7 @@ JSDocs でオプションのパラメータを定義する方法の詳細につ�
 
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
-カスタム関数は、 [アダプティブフォームのルールエディター](/help/forms/rule-editor-core-components.md) の使用 [Javascript 注釈](##js-annotations).
+カスタム関数は、 [アダプティブフォームのルールエディター](/help/forms/rule-editor-core-components.md) の使用 [JavaScript アノテーション](##js-annotations).
 
 ## アダプティブフォームでのカスタム関数の使用
 
@@ -320,6 +319,43 @@ JSDocs でオプションのパラメータを定義する方法の詳細につ�
 >[!NOTE]
 >
 > 次を参照してください。 [カスタム関数](/help/forms/assets//customfunctions.zip) フォルダー。 次を使用して、このフォルダーをダウンロードし、AEM インスタンスにインストールします [パッケージマネージャー](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+
+
+### カスタム関数を使用したドロップダウンリストのオプションの設定
+
+コアコンポーネントのルールエディターは、 **オプションを設定** 実行時にドロップダウンリストのオプションを設定するプロパティ。 ただし、カスタム関数を使用してドロップダウンリストのオプションを設定できます。
+
+以下のコードを見て、カスタム関数を使用してドロップダウンリストのオプションを設定する方法を確認してください。
+
+```javascript
+    /**
+    * @name setEnums
+    * @returns {string[]}
+    **/
+    function setEnums() {
+    return ["0","1","2","3","4","5","6"];   
+    }
+
+    /**
+    * @name setEnumNames
+    * @returns {string[]}
+    **/
+    function setEnumNames() {
+    return ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    }
+```
+
+上記のコードでは、 `setEnums` を使用して、 `enum` プロパティと `setEnumNames` を使用して、 `enumNames` ドロップダウンのプロパティ。
+
+のルールを作成しましょう `Next` ボタン。ユーザーがボタンをクリックしたときに、ドロップダウンリストのオプションの値を設定します。 `Next` ボタン：
+
+![ドロップダウンリストのオプション](/help/forms/assets/drop-down-list-options.png)
+
+「表示」ボタンをクリックしたときにドロップダウンリストのオプションが設定される場所を示すには、次の図を参照してください。
+
+![ルールエディターのドロップダウンオプション](/help/forms/assets/drop-down-option-rule-editor.png)
+
+
 
 ### カスタム関数での非同期関数のサポート {#support-of-async-functions}
 
@@ -362,7 +398,7 @@ JSDocs でオプションのパラメータを定義する方法の詳細につ�
 
 ![async 関数のルールを作成中](/help/forms/assets/rule-for-async-funct.png)
 
-ユーザーがをクリックしたときの動作を示すには、以下のコンソールウィンドウの図を参照してください `Fetch` ボタン、カスタム関数 `callAsyncFunction` を呼び出し、非同期関数を呼び出す `asyncFunction`. コンソールウィンドウをInspectして、ボタンがクリックされたときの応答を確認します。
+ユーザーがをクリックしたときの動作を示すには、以下のコンソールウィンドウの図を参照してください `Fetch` ボタン、カスタム関数 `callAsyncFunction` を呼び出し、非同期関数を呼び出す `asyncFunction`. コンソールウィンドウをInspectして、ボタンクリックに対する応答を表示します。
 
 ![コンソールウィンドウ](/help/forms/assets/async-custom-funct-console.png)
 
@@ -374,7 +410,7 @@ JSDocs でオプションのパラメータを定義する方法の詳細につ�
 
 ### カスタム関数のフィールド オブジェクトとグローバル スコープ オブジェクト {#support-field-and-global-objects}
 
-フィールドオブジェクトとは、テキストフィールド、チェックボックスなど、フォーム内の個々のコンポーネントまたは要素を指します。 Globals オブジェクトには、フォームインスタンス、ターゲットフィールドインスタンス、カスタム関数内でフォームの変更を実行するメソッドなどの読み取り専用変数が含まれています。
+フィールドオブジェクトは、テキストフィールド、チェックボックスなど、フォーム内の個々のコンポーネントまたは要素を参照します。 Globals オブジェクトには、フォームインスタンス、ターゲットフィールドインスタンス、カスタム関数内でフォームの変更を実行するメソッドなどの読み取り専用変数が含まれています。
 
 >[!NOTE]
 >
@@ -402,11 +438,11 @@ JSDocs でオプションのパラメータを定義する方法の詳細につ�
 
 In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
 
-カスタム関数でフィールドおよびグローバルオブジェクトを使用する方法を、 `Contact Us` 異なるユースケースを使用したフォーム
+カスタム関数でフィールドおよびグローバルオブジェクトを使用する方法を、 `Contact Us` 様々なユースケースを使用したフォーム
 
 ![お問い合わせフォーム](/help/forms/assets/contact-us-form.png)
 
-#### **ユースケース**：を使用したパネルの表示 `SetProperty` ルール
++++ **ユースケース**：を使用したパネルの表示 `SetProperty` ルール
 
 の説明に従って、カスタム関数に次のコードを追加します。 [create-custom-function](#create-custom-function) セクションで、フォームフィールドをに設定します `Required`.
 
@@ -448,7 +484,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![プロパティのフォームプレビューを設定](/help/forms/assets/set-property-panel.png)
 
-#### **ユースケース**：フィールドを検証します。
++++
+
++++ **ユースケース**：フィールドを検証します。
 
 の説明に従って、カスタム関数に次のコードを追加します。 [create-custom-function](#create-custom-function) セクションに移動し、フィールドを検証します。
 
@@ -487,7 +525,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![メールアドレスの検証パターン](/help/forms/assets/validate-form-preview-form.png)
 
-#### **ユースケース**: パネルをリセット
++++
+
++++ **ユースケース**: パネルをリセット
 
 の説明に従って、カスタム関数に次のコードを追加します。 [create-custom-function](#create-custom-function) セクションで、パネルをリセットします。
 
@@ -519,7 +559,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![フォームをリセット](/help/forms/assets/custom-function-reset-form.png)
 
-#### **ユースケース**：フィールドレベルでカスタムメッセージを表示し、フィールドを無効としてマークします
++++
+
++++ **ユースケース**：フィールドレベルでカスタムメッセージを表示し、フィールドを無効としてマークします
 
 を使用できます `markFieldAsInvalid()` フィールドを無効として定義し、フィールドレベルでカスタムエラーメッセージを設定する関数。 この `fieldIdentifier` 値は `fieldId`、または `field qualifiedName`、または `field dataRef`. という名前のオブジェクトの値 `option` 次になることができます `{useId: true}`, `{useQualifiedName: true}`、または `{useDataRef: true}`.
 フィールドを無効としてマークし、カスタムメッセージを設定するために使用される構文は次のとおりです。
@@ -556,12 +598,13 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![フィールドを無効なプレビューフォームとしてマーク](/help/forms/assets/custom-function-invalidfield-form.png)
 
-ユーザーがコメントテキストボックスに 15 文字を超える文字を入力すると、フィールドが検証され、フォームが送信されます。
+ユーザーが「コメント」テキストボックスに 15 文字を超えて入力すると、フィールドが検証され、フォームが送信されます。
 
 ![フィールドを有効なプレビューフォームとしてマーク](/help/forms/assets/custom-function-validfield-form.png)
 
++++
 
-#### **ユースケース**：変更されたデータのサーバーへの送信
++++ **ユースケース**：変更されたデータのサーバーへの送信
 
 次のコード行：
 `globals.functions.submitForm(globals.functions.exportData(), false);` を使用して、操作後にフォームデータを送信します。
@@ -604,6 +647,262 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![コンソールウィンドウでのInspect データ](/help/forms/assets/custom-function-submit-data-console-data.png)
 
++++
+
++++ **ユースケース**：フォーム送信の成功およびエラーハンドラーの上書き
+
+で説明されているように、次のコード行を追加します。 [create-custom-function](#create-custom-function) セクションを使用して、フォーム送信の送信メッセージまたは失敗メッセージをカスタマイズし、フォーム送信メッセージをモーダルボックスに表示するには：
+
+```javascript
+/**
+ * Handles the success response after a form submission.
+ *
+ * @param {scope} globals - This object contains a read-only form instance, target field instance, triggered event, and methods for performing form modifications within custom functions.
+ * @returns {void}
+ */
+function customSubmitSuccessHandler(globals) {
+    var event = globals.event;
+    var submitSuccessResponse = event.payload.body;
+    var form = globals.form;
+
+    if (submitSuccessResponse) {
+        if (submitSuccessResponse.redirectUrl) {
+            window.location.href = encodeURI(submitSuccessResponse.redirectUrl);
+        } else if (submitSuccessResponse.thankYouMessage) {
+            showModal("success", submitSuccessResponse.thankYouMessage);
+        }
+    }
+}
+
+/**
+ * Handles the error response after a form submission.
+ *
+ * @param {string} customSubmitErrorMessage - The custom error message.
+ * @param {scope} globals - This object contains a read-only form instance, target field instance, triggered event, and methods for performing form modifications within custom functions.
+ * @returns {void}
+ */
+function customSubmitErrorHandler(customSubmitErrorMessage, globals) {
+    showModal("error", customSubmitErrorMessage);
+}
+function showModal(type, message) {
+    // Remove any existing modals
+    var existingModal = document.getElementById("modal");
+    if (existingModal) {
+        existingModal.remove();
+    }
+
+    // Create the modal dialog
+    var modal = document.createElement("div");
+    modal.setAttribute("id", "modal");
+    modal.setAttribute("class", "modal");
+
+    // Create the modal content
+    var modalContent = document.createElement("div");
+    modalContent.setAttribute("class", "modal-content");
+
+    // Create the modal header
+    var modalHeader = document.createElement("div");
+    modalHeader.setAttribute("class", "modal-header");
+    modalHeader.innerHTML = "<h2>" + (type === "success" ? "Thank You" : "Error") + "</h2>";
+
+    // Create the modal body
+    var modalBody = document.createElement("div");
+    modalBody.setAttribute("class", "modal-body");
+    modalBody.innerHTML = "<p class='" + type + "-message'>" + message + "</p>";
+
+    // Create the modal footer
+    var modalFooter = document.createElement("div");
+    modalFooter.setAttribute("class", "modal-footer");
+
+    // Create the close button
+    var closeButton = document.createElement("button");
+    closeButton.setAttribute("class", "close-button");
+    closeButton.innerHTML = "Close";
+    closeButton.onclick = function() {
+        modal.remove();
+    };
+
+    // Append the elements to the modal content
+    modalFooter.appendChild(closeButton);
+    modalContent.appendChild(modalHeader);
+    modalContent.appendChild(modalBody);
+    modalContent.appendChild(modalFooter);
+
+    // Append the modal content to the modal
+    modal.appendChild(modalContent);
+
+    // Append the modal to the document body
+    document.body.appendChild(modal);
+}
+```
+
+この例では、ユーザーがパラメーター `customSubmitSuccessHandler` および `customSubmitErrorHandler` カスタム関数の場合、成功メッセージと失敗メッセージはモーダルに表示されます。 JavaScript 関数 `showModal(type, message)` を使用すると、モーダルダイアログボックスを動的に作成し、画面に表示できます。
+
+次に、フォーム送信が成功するためのルールを作成します。
+
+![フォーム送信成功](/help/forms/assets/form-submission-success.png)
+
+フォームが正常に送信されると成功メッセージがモーダルに表示されることを示すには、以下の図を参照してください。
+
+![フォーム送信成功メッセージ](/help/forms/assets/form-submission-success-message.png)
+
+同様に、失敗したフォーム送信に対するルールを作成します。
+
+![フォーム送信の失敗](/help/forms/assets/form-submission-fail.png)
+
+フォームの送信に失敗したときにエラーメッセージがモーダルに表示されることを示すには、次の図を参照してください。
+
+![フォーム送信失敗メッセージ](/help/forms/assets/form-submission-fail-message.png)
+
+フォーム送信の成功と失敗をデフォルトで表示するには、 `Default submit Form Success Handler` および `Default submit Form Error Handler` 関数は標準で使用できます。
+
+既存のAEM プロジェクトまたはフォームでカスタム送信ハンドラーが期待どおりに動作しない場合は、を参照してください。 [トラブルシューティング](#troubleshooting) セクション。
+
+<!--
+
++++
+
++++ **Use Case**:  Perform actions in a specific instance of the repeatable panel 
+
+Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
+
+Let's create a form to collect information about travelers heading to a destination. A traveler panel is added as a repeatable panel, where the user can add details for 5 travelers using the Add button.
+
+Add the following line of code as explained in the [create-custom-function](#create-custom-function) section, to perform actions in a specific instance of the repeatable panel, other than the last one:
+
+```javascript
+
+/**
+* @name hidePanelInRepeatablePanel
+* @param {scope} globals
+*/
+function hidePanelInRepeatablePanel(globals)
+{    
+    var repeatablePanel = globals.form.travelerinfo;
+    // hides a panel inside second instance of repeatable panel
+    globals.functions.setProperty(repeatablePanel[1].traveler, {visible : false});
+}  
+
+```
+ 
+In this example, the `hidePanelInRepeatablePanel` custom function performs action in a specific instance of the repeatable panel. In the above code, `travelerinfo` represents the repeatable panel. The `repeatablePanel[1].traveler, {visible: false}` code hides the panel in the second instance of the repeatable panel. 
+Let us add a button labeled `Hide` to add a rule to hide a specific panel.
+
+![Hide Panel rule](/help/forms/assets/custom-function-hidepanel-rule.png)
+
+Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
+
+
++++
+
++++ **Usecase**: Pre-fill the field with a value when the form loads
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to load the pre-filled value in a field when the form is initialized:
+
+```javascript
+/**
+ * @name importData
+ * @param {scope} globals
+ */
+function importData(globals)
+{
+    globals.functions.importData(Object.fromEntries([['amount',200000]]));
+} 
+```
+
+In the aforementioned code, the `importData` function updates the value in the `amount` textbox field when the form loads.
+
+Let us create a rule for the `Submit` button, where the value in the `amount` textbox field changes to specified value when the form loads:
+
+![Import Data Rule](/help/forms/assets/custom-function-import-data.png)
+
+Refer to the screenshot below, which demonstrates that when the form loads, the value in the amount textbox is pre-filled with a specified value:
+
+![Import Data Rule](/help/forms/assets/cg)
+
++++
+
++++ **Usecase**: Set focus on the specific field
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to set focus on the specified field when the `Submit` button is clicked.:
+
+```javascript
+/**
+ * @name setFocus
+ * @param {object} field
+ * @param {scope} globals
+ */
+function setFocus(field, globals)
+{
+    globals.functions.setFocus(field);
+}
+```
+
+Let us add a rule to the `Submit` button to set focus on the `email` field when it is clicked:
+
+![Set Focus Rule](/help/forms/assets/custom-function-set-focus.png)
+
+Refer to the screenshot below, which demonstrates that when the `Submit` button is clicked, the focus is set on the `email` field:
+
+![Set Focus Rule](/help/forms/assets/custom-function-set-focus-form.png)
+
+>[!NOTE]
+>
+> You can use the optional `$focusOption` parameter, if you want to focus on the next or previous field relative to the `email` field.
+
++++
+
++++ **Usecase**: Add or delete repeatable panel using the `dispatchEvent` property
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to add a panel when the `Add Traveler` button is clicked using the `dispatchEvent` property:
+
+```javascript
+/**
+ 
+ * @name addInstance
+ * @param {scope} globals
+ */
+function addInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel, 'addInstance');
+} 
+
+```
+
+Let us add a rule to the `Add Traveler` button to add the repeatable panel when it is clicked:
+
+![Add Panel Rule](/help/forms/assets/custom-function-add-panel.png)
+
+Refer to the screenshot below, which demonstrates that when the `Add Traveler` button is clicked, the traveler panel is added using the `dispatchEvent` property:
+
+![Add Panel](/help/forms/assets/customg)
+
+Similarly, add a button labeled `Delete Traveler` to delete a panel. Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to delete a panel when the `Delete Traveler` button is clicked using the `dispatchEvent` property:
+
+```javascript
+
+/**
+ 
+ * @name removeInstance
+ * @param {scope} globals
+ */
+function removeInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel, 'removeInstance');
+} 
+
+```
+Let us add a rule to the `Delete Traveler` button to delete the repeatable panel when it is clicked:
+
+![Delete Panel Rule](/help/forms/assets/custom-function-delete-panel.png)
+
+Refer to the screenshot below, which demonstrates that when the `Delete Traveler` button is clicked, the traveler panel is deleted using the `dispatchEvent` property:
+
+![Delete Panel](/help/forms/assets/customg)
+-->
+
 ## カスタム関数のキャッシュサポート
 
 アダプティブFormsは、カスタム関数のキャッシュを実装して、ルールエディターでカスタム関数のリストを取得する際の応答時間を短縮します。 メッセージ： `Fetched following custom functions list from cache` 次に表示： `error.log` ファイル。
@@ -612,17 +911,25 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 カスタム関数が変更されると、キャッシュが無効化され、解析されます。
 
-## トラブルシューティング
+## トラブルシューティング {#troubleshooting}
 
-カスタム関数のコードを含んだ JavaScript ファイルにエラーがある場合、カスタム関数はアダプティブフォームのルールエディターに表示されません。 カスタム関数のリストを確認するには、に移動します。 `error.log` エラーのファイル。 エラーが発生すると、カスタム関数のリストは空で表示されます。
+* 既存のAEM プロジェクトまたはフォームでカスタム送信ハンドラーが期待どおりに実行できない場合は、次の手順を実行します。
+   * 必ずを [コアコンポーネントのバージョンが 3.0.18 以降に更新されました](https://github.com/adobe/aem-core-forms-components). ただし、既存のAEM プロジェクトとフォームの場合は、さらに次の手順に従う必要があります。
 
-![エラーログファイル](/help/forms/assets/custom-function-list-error-file.png)
+   * AEM プロジェクトの場合、のインスタンスをすべて置き換える必要があります `submitForm('custom:submitSuccess', 'custom:submitError')` （を使用） `submitForm()` Cloud Manager パイプラインを通じてプロジェクトをデプロイします。
 
-エラーがない場合、カスタム関数が取得され、に表示されます。 `error.log` ファイル。 メッセージ： `Fetched following custom functions list` 次に表示： `error.log` ファイル：
+   * 既存のフォームで、カスタム送信ハンドラーが正しく機能しない場合は、を開いて保存する必要があります。 `submitForm` に関するルール **Submit** ルールエディターを使用してボタンをクリックします。 既存のルールを置き換えます。 `submitForm('custom:submitSuccess', 'custom:submitError')` （を使用） `submitForm()` フォームで。
 
-![適切なカスタム関数を持つエラーログファイル](/help/forms/assets/custom-function-list-fetched-in-error.png)
 
-## 検討事項
+* カスタム関数のコードを含んだ JavaScript ファイルにエラーがある場合、カスタム関数はアダプティブフォームのルールエディターに表示されません。 カスタム関数のリストを確認するには、に移動します。 `error.log` エラーのファイル。 エラーが発生すると、カスタム関数のリストは空で表示されます。
+
+  ![エラーログファイル](/help/forms/assets/custom-function-list-error-file.png)
+
+  エラーがない場合、カスタム関数が取得され、に表示されます。 `error.log` ファイル。 メッセージ： `Fetched following custom functions list` 次に表示： `error.log` ファイル：
+
+  ![適切なカスタム関数を持つエラーログファイル](/help/forms/assets/custom-function-list-fetched-in-error.png)
+
+## 考慮事項
 
 * この `parameter type` および `return type` サポートしない `None`.
 

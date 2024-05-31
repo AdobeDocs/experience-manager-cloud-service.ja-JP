@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service でのクライアントサイドライブラリの使用
 description: AEM では、クライアントサイドライブラリフォルダーが提供されています。これにより、クライアントサイドコード（clientlibs）をリポジトリーに格納し、カテゴリ別に整理して、それぞれのカテゴリのコードをクライアントに提供するタイミングと方法を定義できます。
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '2551'
-ht-degree: 96%
+source-wordcount: '2497'
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Clientlibs は、AEM から CSS と JavaScript を配信するための組み込
 
 ## クライアントサイドライブラリとは {#what-are-clientlibs}
 
-Sites では、JavaScript と CSS、およびクライアントサイドで処理されるアイコンや web フォントなどの静的リソースが必要です。clientlib は、（必要に応じてカテゴリ別に）参照し、そのようなリソースを提供するAEMメカニズムです。
+Sites では、JavaScript と CSS、およびクライアントサイドで処理されるアイコンや web フォントなどの静的リソースが必要です。clientlib は、そのようなリソースを（必要に応じてカテゴリ別に）参照し、提供する AEM のメカニズムです。
 
 AEM は、サイトの CSS と JavaScript を 1 つのファイルにまとめて一元的な場所に配置し、HTML 出力にはリソースのコピーが 1 つだけ含まれるようにします。これにより、配信の効率が最大化され、プロキシを介してリポジトリ内でリソースを一元的に管理し、アクセスの安全性を確保できます。
 
@@ -41,7 +41,7 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルにまとめ�
 
 ## クライアントサイドライブラリフォルダー構造 {#clientlib-folders}
 
-クライアントサイドライブラリフォルダーは、タイプが `cq:ClientLibraryFolder` のリポジトリーノードです。[CND 注釈](https://jackrabbit.apache.org/node-type-notation.html)での定義は次のとおりです。
+クライアントサイドライブラリフォルダーは、`cq:ClientLibraryFolder` タイプのリポジトリノードです。その [CND 表記](https://jackrabbit.apache.org/node-type-notation.html)での定義は次のとおりです。
 
 ```text
 [cq:ClientLibraryFolder] > sling:Folder
@@ -64,7 +64,7 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルにまとめ�
 クライアントライブラリフォルダーには次の項目が含まれます。
 
 * JS／CSS ソースファイル（いずれかまたは両方）
-* アイコン、Web フォントなど、CSS スタイルをサポートする静的リソース。
+* アイコン、web フォントなど、CSS スタイルをサポートする静的リソース
 * 生成される JS／CSS ファイルに統合するソースファイルを識別する 1 つの `js.txt` ファイルと 1 つの `css.txt` ファイル（いずれかまたは両方）
 
 ![clientlib のアーキテクチャ](assets/clientlib-architecture.drawio.png)
@@ -88,7 +88,7 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルにまとめ�
    * タイプ：Boolean
    * 値：`true`
 1. 静的リソースを管理する必要がある場合は、クライアントライブラリフォルダーの `resources` の下にサブフォルダーを作成します。
-   * フォルダーの下以外の場所に静的リソースを格納する場合 `resources`に値を指定しない場合、パブリッシュインスタンスで参照することはできません。
+   * フォルダー `resources` 以外の場所に静的リソースを格納した場合、静的リソースはパブリッシュインスタンスで参照できません。
 1. 追加ソースファイルをライブラリフォルダーに格納します。
    * これは、通常、 [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja)のフロントエンドビルドプロセスで行われます。
    * 必要に応じて、サブフォルダーを使用してソースファイルを整理できます。
@@ -112,7 +112,7 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルにまとめ�
 * clientlib は `/apps/myproject/clientlibs/foo` にあります。
 * 静的画像は `/apps/myprojects/clientlibs/foo/resources/icon.png` にあります。
 
-The `allowProxy` プロパティを使用して、次をリクエストできます。
+`allowProxy` プロパティを使用して、次をリクエストできます。
 
 * `/etc.clientlibs/myprojects/clientlibs/foo.js` 経由の clientlib
 * 静的な画像（`/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png` を介す）
@@ -170,7 +170,7 @@ AEM には、クライアントライブラリフォルダーをデバッグお�
 
 ## その他のクライアントライブラリフォルダー機能 {#additional-features}
 
-AEMのクライアントライブラリフォルダーでは、他にもいくつかの機能がサポートされています。 ただし、AEM as a Cloud Service ではこれらは必須ではないので、使用しないでください。完全を期すために、以下に示します。
+AEM のクライアントライブラリフォルダーでは、他にもいくつかの機能がサポートされています。ただし、AEM as a Cloud Service ではこれらは必須ではないので、使用しないでください。完全を期すために、以下に示します。
 
 >[!WARNING]
 >
@@ -270,19 +270,19 @@ body {
 
 1. Web ブラウザーのアドレスボックスで、HTML の URL に次のテキストを付加します。
    * `?debugClientLibs=true`
-1. ページが読み込まれたら、ページソースを表示します。
+1. ページが読み込まれたら、ページのソースを表示します。
 1. リンク要素の href として指定されているリンクをクリックしてファイルを開き、ソースコードを表示します。
 
 ### プリプロセッサーの使用 {#using-preprocessors}
 
 AEM では、プラグ可能なプリプロセッサーを使用でき、AEM のデフォルトプリプロセッサーとして、CSS および JavaScript 用の [YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) と YUI が定された JavaScript 用の [Google Closure Compiler（GCC）](https://developers.google.com/closure/compiler/)をサポートします。
 
-プラガブルプリプロセッサーは、次のように柔軟に使用できます。
+プラグ可能なプリプロセッサーを使用すると、次のような柔軟な使い方ができるようになります。
 
-* スクリプトソースを処理できる ScriptProcessors を定義する
+* スクリプトソースを処理できる ScriptProcessor を定義
 * プロセッサーはオプションを使用して設定できる
 * プロセッサーは縮小用に使用できるが、縮小以外の場合にも使用できる
-* clientlib はどのプロセッサーを使用するかを定義できる
+* clientlib は、使用するプロセッサーを定義できる
 
 >[!NOTE]
 >
@@ -290,7 +290,7 @@ AEM では、プラグ可能なプリプロセッサーを使用でき、AEM の
 
 >[!CAUTION]
 >
->縮小化したライブラリをクライアントライブラリに配置しないでください。代わりに、生のライブラリを提供し、縮小が必要な場合は、プリプロセッサーのオプションを使用します。
+>縮小化したライブラリをクライアントライブラリに配置しないでください。代わりに、未加工のライブラリを提供し、縮小が必要な場合は、プリプロセッサーのオプションを使用します。
 
 #### 使用方法 {#usage}
 
@@ -339,13 +339,13 @@ languageOut (defaults to "ECMASCRIPT5")
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
-GCC オプションの詳細は、 [GCC ドキュメント](https://developers.google.com/closure/compiler/docs/compilation_levels).
+GCC オプションについて詳しくは、[GCC ドキュメント](https://developers.google.com/closure/compiler/docs/compilation_levels)を参照してください。
 
 #### システムのデフォルト縮小ツールの設定 {#set-system-default-minifier}
 
-YUI は、AEM のデフォルト縮小ツールとして設定されています。これを GCC に変更するには、次の手順に従います。
+YUI は、AEM のデフォルトの縮小ツールとして設定されています。これを GCC に変更するには、次の手順に従います。
 
-1. Apache Felix Config Manager（`http://<host>:<portY/system/console/configMgr`）に移動します。
+1. Apache Felix Config Manager（`http://<host>:<port/system/console/configMgr`）に移動します。
 1. **Adobe Granite HTML ライブラリマネージャー**&#x200B;を検索して編集します。
 1. 「**Minify**」オプションを有効にします（まだ有効でない場合）。
 1. **JS Processor Default Configs** の値を `min:gcc` に設定します。

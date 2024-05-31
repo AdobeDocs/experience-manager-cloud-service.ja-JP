@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8c60b02c1759fc4d0cf66d6c8f1c2edf294fc1ce
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 100%
+source-wordcount: '516'
+ht-degree: 61%
 
 ---
 # スニペット {#snippets}
@@ -61,7 +61,59 @@ ht-degree: 100%
 * [データの受け入れを開始するための Google Sheets または Microsoft Excel ファイルの設定](/help/edge/docs/forms/submit-forms.md)
 * [フォームを公開してデータの収集を開始](/help/edge/docs/forms/publish-forms.md)
 * [フォームの外観のカスタマイズ](/help/edge/docs/forms/style-theme-forms.md)
-* [フォームへの繰り返し可能なセクションの追加](/help/edge/docs/forms/repeatable-forms.md)
+* [繰り返し可能なセクションをフォームに追加する](/help/edge/docs/forms/repeatable-forms.md)
 * [フォーム送信後にカスタムのお礼のメッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
 * [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
+
+
+## コアコンポーネントのルールエディターと基盤コンポーネントのルールエディターの違い  {#rule-editor-diff}
+
+次の表に、ルールエディターのコアコンポーネントとルールエディターの基盤コンポーネントで使用できる機能の違いを示します。
+
+<table>
+  <tbody>
+  <tr>
+    <td><strong>機能</strong></td>
+    <td><strong>アダプティブフォームの基盤コンポーネント</strong></td>
+    <td><strong>アダプティブフォームのコアコンポーネント</strong></td>   
+    </tr>
+  </tr>
+  <tr>
+    <td>ドロップダウンリストのオプションを設定します </td>
+    <td>ドロップダウンリストのオプションは、ルールエディターを使用して設定します。 <b>オプションを設定</b> プロパティ。</td>
+    <td>ドロップダウンオプションは、カスタム関数を使用して設定します。 
+   </td>
+   </tr>
+     </tr>
+   <tr>
+    <td>繰り返し可能なパネルフィールドに対して数学演算を実行する </td>
+    <td>OOTB 数学関数を繰り返し可能なパネルフィールドに適用して、sum や average などの関数を実行できます。 </td>
+    <td>繰り返し可能なパネルフィールドに対する数学演算は、カスタム関数を使用して実行できます。
+   </td>
+   </tr>
+      <tr>
+    <td>「Then」のフィールド/パネル/フォームルールを検証/リセット </td>
+    <td>Validate 関数と Reset 関数は、ルールエディターのフォームオブジェクトのみをサポートします。 
+   </td>
+    <td>検証/リセット関数は、ルールエディターのフォーム/パネル/フィールドオブジェクトをサポートします。 
+   </td>
+   </tr>
+   <tr>
+    <td>ES10 のサポート </td>
+    <td>ES10 はまだサポートされていません。 </td>
+    <td>カスタム関数内の let 関数や arrow 関数などの最新の JavaScript 機能のサポート（ES10 サポート）。 
+   </td>
+   </tr>
+   </tr>
+   <tr>
+   <td>サービス出力プロパティ</td>
+   <td> サービス出力プロパティは、でサポートされています。 <b>次の値を設定</b> ルールエディターの「」オプション </td>
+   <td>この <b>次の値を設定</b> オプションはをサポートしていません <b>サービス出力</b> ルールエディターで API を呼び出すためのプロパティ。
+   </td>
+   </tr>
+   </tr>
+   </tr>
+  </tbody>
+  <table>
+  </tbody>
 

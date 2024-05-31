@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b13310c256fe06210b9c79023972c4e41a241f43
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '4970'
+source-wordcount: '4997'
 ht-degree: 99%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 99%
    + AEMaaCS 機能のリリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024年度 {#2024}
+         + [リリースノート（2024.4.0）](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
          + [2024.3.0 のリリースノート](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
          + [2024.1.0 のリリースノート](/help/release-notes/release-notes-cloud/2024/release-notes-2024-1-0.md)
       + 2023年度 {#2023}
@@ -664,6 +665,8 @@ ht-degree: 99%
             + [アダプティブフォームの JSON スキーマのデザイン（コアコンポーネント）](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [アダプティブフォームへのバージョン管理、コメント、注釈の追加](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [アダプティブフォームの比較](/help/forms/compare-forms.md)
+            + [移行ユーティリティツールを使用して、基盤コンポーネントに基づくアダプティブFormsをコアコンポーネントベースのフォームに変換する](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [アダプティブフォームをドラフトとして保存](/help/forms/save-core-component-based-form-as-draft.md)
       + 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
          + PDF フォームのアダプティブフォームへの変換 {#afcs}
             + [自動フォーム変換サービスの概要](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ja)
