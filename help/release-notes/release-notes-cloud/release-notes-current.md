@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 32d8477f85edf7fc33a0558e886c5fbb4854f8e5
+source-git-commit: b6061690fa278ccb883656cefd065d06ab924499
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 33%
+source-wordcount: '1767'
+ht-degree: 25%
 
 ---
 
@@ -89,11 +89,11 @@ Experience Manager Assetsでは、次のことがすぐに可能になりまし�
 
 このリリースでは、コアコンポーネントベースのアダプティブフォームのビジュアルルールエディターが大幅にアップグレードされました。次の操作が可能になっています。
 
-* ビジュアルルールエディターでルールを作成して [デフォルトのフォーム送信成功/失敗ハンドラーの上書き](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
+* ビジュアルルールエディターでルールを作成して [デフォルトのフォーム送信成功/失敗メッセージを上書き](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
 
 * アダプティブFormsのルールエディターで、次の機能が追加されました。 [「WHEN」操作に対して様々なタイプのフィールドを選択します](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
 
-* フォーム作成者は、カスタム関数をに適用できるようになりました [送信前にデータを前処理](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
+* フォーム作成者は、カスタム関数をに適用できるようになりました [送信前にデータを前処理](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server).
 
 * の使用 [**ドラフトとして保存**](/help/forms/save-core-component-based-form-as-draft.md) 後で送信するために、部分的に完了したフォームを保存する機能。 これは、ユーザーがフォームの入力を中断して後で戻る必要がある場合に便利です。
 
@@ -211,12 +211,10 @@ AEM 6.5 と同様に、Apache／Dispatcher は、web 階層パイプラインの
 
 Adobeが管理する CDN が、をサポートするようになりました [エッジサイドインクルード（ESI）](/help/implementing/dispatcher/edge-side-includes.md)：エッジレベルの動的 web コンテンツアセンブリ用のマークアップ言語です。 ESI スニペットを含めることで、より高い TTL で CDN のHTMLページ全体をキャッシュしながら、より高いケイデンスの更新（低い TTL）を必要とする小さなセクションをオリジンから頻繁に取得できます。 <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-#### Real User Monitoring （RUM）データ・サービス（早期導入プログラム）
+#### Real Use Monitoring （RUM）データ・サービス（早期導入プログラム）
 
-* **[リアルユーザーモニタリング（RUM）データサービスを活用](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**して、AEM as a Cloud Service のクライアントサイドのコレクションを有効にすることができます。
-実ユーザーモニタリング（RUM）データサービスは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントの信頼性の高い測定を保証します。 ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。さらに、アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、アドビとトラフィックレポートを共有する必要がなくなります。
-
-  この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから、RUM を有効にする各環境のドメイン名を添付して、`aemcs-rum-adopter@adobe.com` にメールを送信してください。その後、アドビの製品チームが、リアルユーザーモニタリング（RUM）データサービスを有効にします。
+* **Real Use Monitoring （RUM）データ・サービスが GA になりました（/help/implementing/cloud-manager/content-requests.md#real-use-monitoring-for-aem-as-a-cloud-service）** AEMas a Cloud Service用のクライアントサイドのデータ収集を有効にする。
+クライアントサイドコレクションである Real Use Monitoring サービスは、インタラクションをより正確に反映し、web サイトのエンゲージメントを信頼性の高い方法で測定できるようにします。 これにより、ページトラフィックとパフォーマンスに関する高度なインサイトを持つ顧客が可能になります。 ページのパフォーマンスについて詳しく知り、改善するためのインサイトを得る絶好の機会です。
 
 ## [!DNL Experience Manager] ガイド {#guides}
 
