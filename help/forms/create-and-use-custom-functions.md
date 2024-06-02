@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 8f33174ac6b699af34ca8af14387eaca5cae969c
+source-git-commit: 4cd7924e99809146e111f6b3309db0a8292e61b1
 workflow-type: tm+mt
-source-wordcount: '3522'
+source-wordcount: '3510'
 ht-degree: 4%
 
 ---
@@ -443,7 +443,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![お問い合わせフォーム](/help/forms/assets/contact-us-form.png)
 
-#### ユースケース：SetProperty ルールを使用したパネルの表示
+#### SetProperty ルールを使用したパネルの表示
 
 の説明に従って、カスタム関数に次のコードを追加します。 [create-custom-function](#create-custom-function) セクションで、フォームフィールドをに設定します `Required`.
 
@@ -486,7 +486,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 ![プロパティのフォームプレビューを設定](/help/forms/assets/set-property-panel.png)
 
 
-#### ユースケース：フィールドを検証します。
+#### フィールドを検証します。
 
 の説明に従って、カスタム関数に次のコードを追加します。 [create-custom-function](#create-custom-function) セクションに移動し、フィールドを検証します。
 
@@ -527,7 +527,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 
 
-#### ユースケース：パネルのリセット
+#### パネルのリセット
 
 の説明に従って、カスタム関数に次のコードを追加します。 [create-custom-function](#create-custom-function) セクションで、パネルをリセットします。
 
@@ -561,7 +561,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 
 
-#### ユースケース：フィールドレベルでカスタムメッセージを表示し、フィールドを無効としてマークする
+#### フィールドレベルでカスタムメッセージを表示し、フィールドを無効としてマークするには
 
 を使用できます `markFieldAsInvalid()` フィールドを無効として定義し、フィールドレベルでカスタムエラーメッセージを設定する関数。 この `fieldIdentifier` 値は `fieldId`、または `field qualifiedName`、または `field dataRef`. という名前のオブジェクトの値 `option` 次になることができます `{useId: true}`, `{useQualifiedName: true}`、または `{useDataRef: true}`.
 フィールドを無効としてマークし、カスタムメッセージを設定するために使用される構文は次のとおりです。
@@ -604,7 +604,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 
 
-#### ユースケース：変更されたデータのサーバーへの送信
+#### 送信前に取得したデータの変更
 
 次のコード行：
 `globals.functions.submitForm(globals.functions.exportData(), false);` を使用して、操作後にフォームデータを送信します。
@@ -649,7 +649,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 
 
-#### ユースケース：フォーム送信の成功およびエラーハンドラーの上書き
+#### フォーム送信の成功およびエラーメッセージの上書き
 
 で説明されているように、次のコード行を追加します。 [create-custom-function](#create-custom-function) セクションを使用して、フォーム送信の送信メッセージまたは失敗メッセージをカスタマイズし、フォーム送信メッセージをモーダルボックスに表示するには：
 
