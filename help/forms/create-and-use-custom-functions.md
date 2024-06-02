@@ -5,8 +5,9 @@ keywords: ルールエディターでカスタム関数を使用して、カス�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
+mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 05b149c60cb8d05489668b13f63ed5b0e1d0bbfb
+source-git-commit: 8f33174ac6b699af34ca8af14387eaca5cae969c
 workflow-type: tm+mt
 source-wordcount: '3522'
 ht-degree: 4%
