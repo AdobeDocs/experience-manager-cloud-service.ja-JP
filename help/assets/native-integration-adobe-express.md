@@ -2,7 +2,7 @@
 title: AEM AssetsとAdobe Expressのネイティブ統合
 description: AEM AssetsとAdobe Expressのネイティブ統合により、Adobe Expressのユーザーインターフェイス内から、AEM Assetsに保存されているアセットに直接アクセスできます。
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 9044d5cefe7064a015c18c988e29b8c2e8088bae
+source-git-commit: c6cde0a3f5a1513f8158c654167ec0332e4c42a7
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 24%
@@ -58,7 +58,7 @@ Express キャンバスに適切な変更を組み込んだ後、AEM Assets リ�
 
 4. の下のテキスト領域をクリックします **宛先フォルダー** をクリックして場所を選択し、アセットを保存します。
 
-   ![AEM でのアセットの保存](/help/assets/assets/page-selection-and-destination-folder.png)
+   ![AEM でのアセットの保存](/help/assets/assets/page-selection-and-destination-folder.svg)
 
 5. オプション：アップロードに使用するキャンペーンメタデータを **プロジェクト名またはキャンペーン名** フィールド。 既存の名前を使用することも、新しい名前を作成することもできます。 アップロードに複数のプロジェクト名またはキャンペーン名を定義できます。 名前を登録するには、名前を入力して Enter キーを押します。
 ベストプラクティスとして、Adobeでは残りのフィールドに値を指定し、アップロードしたアセットの検索エクスペリエンスを強化することをお勧めします。
@@ -82,5 +82,5 @@ c）背景が透明なビデオ（アルファチャンネル）はサポート�
 
 3. MP4 ビデオの書き出しの場合：
 
-   a）サポートされている最大ファイルサイズは 200 MB です。 この制限を超えると、次の画像に示すように、アラートメッセージに回避策の提案が表示されます
-   ![アラートと回避策](/help/assets/assets/alert-with-workaround.png).
+   a）サポートされている最大ファイルサイズは 200 MB です。 この制限を超えると、次の画像に示すように、アラートメッセージに「回避策」提案が表示されます。
+   ![アラートと回避策](/help/assets/assets/alert-with-workaround.png)
