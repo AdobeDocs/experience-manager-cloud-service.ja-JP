@@ -2,10 +2,10 @@
 title: AEM AssetsとAdobe Expressのネイティブ統合
 description: AEM AssetsとAdobe Expressのネイティブ統合により、Adobe Expressのユーザーインターフェイス内から、AEM Assetsに保存されているアセットに直接アクセスできます。
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 69d890eaae30468db89b9aff975a2a421f53fcff
+source-git-commit: 9044d5cefe7064a015c18c988e29b8c2e8088bae
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 25%
+source-wordcount: '598'
+ht-degree: 24%
 
 ---
 
@@ -65,7 +65,7 @@ Express キャンバスに適切な変更を組み込んだ後、AEM Assets リ�
 
 6. 同様に、の値を定義します **[!UICONTROL キーワード]** および **[!UICONTROL チャネル]** フィールド。
 
-7. 「**[!UICONTROL アップロード]**」をクリックして、AEM Assets にアセットをアップロードします。
+7. クリック **[!UICONTROL Upload]** からAEM Assetsにアセットをアップロードします。
 
 
 
