@@ -3,14 +3,14 @@ title: フォーム作成の失敗のトラブルシューティング方法
 description: AEM Formsas a Cloud Service環境でのフォーム作成の失敗のトラブルシューティング。
 feature: Adaptive Forms, Troubleshooting
 role: User
-source-git-commit: 5e7cd7015d68cc634fcf6a99dd552289abbaedcf
+source-git-commit: 23491130b44147753c5b98f316be5a9e5937afea
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 6%
+source-wordcount: '183'
+ht-degree: 5%
 
 ---
 
-# 問題 {#form-creation-fails}
+# フォームの公開中の問題{#form-creation-fails}
 
 ユーザーがAEM Formsas a Cloud Service版に更新した後 `2024.5.16461`:
 
