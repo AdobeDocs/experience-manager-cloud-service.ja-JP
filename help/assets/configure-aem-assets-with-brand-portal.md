@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: ht
-source-wordcount: '2573'
-ht-degree: 100%
+source-git-commit: 5fd488a6d5272ac71208e5645facc04b3d9ac51a
+workflow-type: tm+mt
+source-wordcount: '1766'
+ht-degree: 92%
 
 ---
 
@@ -81,6 +81,7 @@ Cloud Manager で Brand Portal テナントをライセンス認証した後、A
 Brand Portal テナントのデフォルト URL は `https://<tenant-id>.brand-portal.adobe.com/` です。
 
 ここで、テナント ID は IMS 組織です。
+
 
 ブランドポータルの URL が不明な場合は、次の手順を実行します。
 
@@ -188,15 +189,20 @@ Experience Manager Assets as a [!DNL Cloud Service] で Brand Portal をアク�
 
 ## Adobe Developer Console を使用した手動設定 {#manual-configuration}
 
+>[!NOTE]
+>
+> 2024 年 6 月以降は、新しい JWT 資格情報を作成できません。 今後は、OAuth 認証情報のみが作成されます。
+> さらに表示 [oauth 設定の作成](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
+
 次の節では、Adobe Developer Console を使用して Experience Manager Assets as a [!DNL Cloud Service] と Brand Portal の連携を手動で設定する方法について説明します。
 
 以前は、Experience Manager Assets as a [!DNL Cloud Service] と Brand Portal の連携は Adobe Developer Console を介して手動で設定されており、Brand Portal テナントの認証のために Adobe Identity Management Services（IMS）アカウントトークンを入手していました。それには、Experience Manager Assets と Adobe Developer Console の両方で設定を行う必要があります。
 
-1. Experience Manager Assets で、IMS アカウントを作成し、公開鍵（証明書）を生成します。
+<!--1. In Experience Manager Assets, create an IMS account and generate a public key (certificate).-->
+<!--1. Under the project, configure an API using the public key to create a service account connection.
+1. Get the service account credentials and JSON Web Token (JWT) payload information.
+1. In Experience Manager Assets, configure the IMS account using the service account credentials and JWT payload.-->
 1. Adobe 開発者コンソールで、Brand Portal テナント（組織）用のプロジェクトを作成します。
-1. そのプロジェクトで、公開鍵で API を設定して、サービスアカウント接続を作成します。
-1. サービスアカウント資格情報と JSON Web トーケン（JWT）ペイロード情報を取得します。
-1. Experience Manager Assets で、サービスアカウント資格情報と JWT ペイロードを使用して IMS アカウントを設定します。
 1. Experience Manager Assets で、IMS アカウントと Brand Portal エンドポイント（組織 URL）を使用して Brand Portal クラウドサービスを設定します。
 1. Experience Manager Assets から Brand Portal にアセットを公開して、設定をテストします。
 
@@ -216,97 +222,104 @@ Experience Manager Assets と Brand Portal の連携を設定するには、以�
 
 指定した順序で次の手順を実行して、Brand Portal で Experience Manager Assets を設定します。
 
-1. [公開証明書の取得](#public-certificate)
-1. [サービスアカウント（JWT）接続の作成](#createnewintegration)
-1. [IMS アカウントの設定](#create-ims-account-configuration)
-1. [Cloud Service の設定](#configure-the-cloud-service)
+1. [Adobe Developer コンソールで OAuth 資格情報を設定します。](#config-oauth)
+1. [OAuth を使用した新しいAdobe IMS統合の作成](#create-ims-account-configuration)
+1. [Cloud Service の設定](#configure-cloud-service)
+   <!--1. [Obtain public certificate](#public-certificate)-->
+<!--1. [Create service account (JWT) connection](#createnewintegration) 
+1. [Configure IMS account](#create-ims-account-configuration)-->
 
-### IMS 設定の作成 {#create-ims-configuration}
+<!--
+### Create IMS configuration {#create-ims-configuration}
 
-IMS 設定では、Brand Portal テナントで Experience Manager as a [!DNL Cloud Service] インスタンスを認証します。
+The IMS configuration authenticates your Experience Manager Assets as a [!DNL Cloud Service] instance with the Brand Portal tenant. 
 
-IMS 設定には、次の 2 つの手順が含まれます。
+IMS configuration includes two steps:
 
-* [公開証明書の取得](#public-certificate)
-* [IMS アカウントの設定](#create-ims-account-configuration)
+* [Obtain public certificate](#public-certificate) 
+* [Configure IMS account](#create-ims-account-configuration)
+-->
+<!--
 
-### 公開証明書の取得 {#public-certificate}
+### Obtain public certificate {#public-certificate}
 
-公開鍵（証明書）は、Adobe 開発者コンソールでプロファイルを認証します。
+The public key (certificate) authenticates your profile on Adobe Developer Console.
 
-1. Experience Manager Assets にログインします。
-1. **ツール**&#x200B;パネルで、**[!UICONTROL セキュリティ]**／**[!UICONTROL Adobe IMS 設定]**&#x200B;に移動します。
-1. Adobe IMS 設定ページで、「**[!UICONTROL 作成]**」をクリックします。**[!UICONTROL Adobe IMS 技術アカウント設定]**&#x200B;ページにリダイレクトされます。デフォルトでは、「**証明書**」タブが開きます。
-1. 「**[!UICONTROL クラウドソリューション]**」ドロップダウンリストで「**[!UICONTROL Adobe Brand Portal]**」を選択します。
-1. 「**[!UICONTROL 新しい証明書を作成]**」チェックボックスをオンにして、公開鍵の **エイリアス** を指定します。ここで入力したエイリアスが、公開鍵になります。
-1. 「**[!UICONTROL 証明書を作成]**」をクリックします。「**[!UICONTROL OK]**」をクリックして公開証明書を生成します。
+1. Login to Experience Manager Assets.
+1. From the **Tools** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. In Adobe IMS Configurations page, click **[!UICONTROL Create]**. It will redirect to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. By default, the **Certificate** tab opens.
+1. Select **[!UICONTROL Adobe Brand Portal]** in the **[!UICONTROL Cloud Solution]** drop-down list.  
+1. Select the **[!UICONTROL Create new certificate]** check box and specify an **alias** for the public key. The alias serves as name of the public key. 
+1. Click **[!UICONTROL Create certificate]**. Then, click **[!UICONTROL OK]** to generate the public key.
 
-   ![証明書を作成](assets/ims-config2.png)
+   ![Create Certificate](assets/ims-config2.png)
 
-1. **[!UICONTROL 公開鍵をダウンロード]** アイコンをクリックして、公開鍵（CRT）ファイルをローカルマシンに保存します。
+1. Click the **[!UICONTROL Download Public Key]** icon and save the public key (CRT) file on your machine.
 
-   この公開鍵は、Brand Portal テナントの API を設定し、Adobe 開発者コンソールでサービスアカウント資格情報を生成するために後で使用します。
+   The public key is used later to configure API for your Brand Portal tenant and generate service account credentials in Adobe Developer Console.  
 
-   ![証明書をダウンロード](assets/ims-config3.png)
+   ![Download Certificate](assets/ims-config3.png)
 
-1. 「**[!UICONTROL 次へ]**」をクリックします。
+1. Click **[!UICONTROL Next]**.
 
-   「**アカウント**」タブで、Adobe IMS アカウントが作成されます。このアカウントには、Adobe 開発者コンソールで生成されるサービスアカウント資格情報が必要です。このページは開いたままにしておきます。
+    In the **Account** tab, Adobe IMS account is created which requires the service account credentials that are generated in Adobe Developer Console. Keep this page open for now.
 
-   新しいタブを開き、 [Adobe 開発者コンソールでサービスアカウント（JWT）接続を作成](#createnewintegration) して、IMS アカウントを設定するための資格情報と JWT ペイロードを取得します。
+    Open a new tab and [create a service account (JWT) connection in Adobe Developer Console](#createnewintegration) to get the credentials and JWT payload for configuring the IMS account. 
+-->
+<!--
 
-### サービスアカウント（JWT）接続の作成 {#createnewintegration}
+### Create service account (JWT) connection {#createnewintegration}
 
-Adobe 開発者コンソールで、プロジェクトと API を Brand Portal テナント（組織）レベルで設定します。API を設定すると、サービスアカウント（JWT）接続が作成されます。API を設定するには、キーペア（秘密鍵と公開鍵）を生成する方法と、公開鍵をアップロードする方法の 2 とおりがあります。Brand Portal で Experience Manager Assets を設定するには、Experience Manager Assets で公開鍵（証明書）を生成し、その公開鍵をアップロードして Adobe Developer コンソールで資格情報を作成する必要があります。これらの資格情報は、Experience Manager Assets で IMS アカウントを設定するために必要です。IMS アカウントを設定したら、Experience Manager Assets に Brand Portal クラウドサービスを設定できます。
+In Adobe Developer Console, projects and APIs are configured at Brand Portal tenant (organization) level. Configuring an API creates a service account (JWT) connection. There are two methods to configure API, by generating a key pair (private and public keys) or by uploading a public key. To configure Experience Manager Assets with Brand Portal, you must generate a public key (certificate) in Experience Manager Assets and create credentials in Adobe Developer Console by uploading the public key. These credentials are required to configure the IMS account in Experience Manager Assets. Once the IMS account is configured, you can configure the Brand Portal cloud service in Experience Manager Assets.
 
-サービスアカウント資格情報と JWT ペイロードを生成するには、次の手順を実行します。
+Perform the following steps to generate the service account credentials and JWT payload:
 
-1. IMS 組織（Brand Portal テナント）のシステム管理者権限で Adobe Developer Console にログインします。デフォルトの URL は [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui) です。
+1. Login to Adobe Developer Console with system administrator privileges on the IMS organization (Brand Portal tenant). The default URL is [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
-
-   >[!NOTE]
-   >
-   >右上隅にあるドロップダウン（組織）リストから正しい IMS 組織（Brand Portal テナント）が選択されていることを確認します。
-
-1. 「**[!UICONTROL 新規プロジェクトを作成]**」をクリックします。システムで生成された名前を持つ空のプロジェクトが組織に対して作成されます。
-
-   「**[!UICONTROL プロジェクトを編集]**」をクリックして、「**[!UICONTROL プロジェクトタイトル]**」と「**[!UICONTROL 説明]**」をアップデートし、「**[!UICONTROL 保存]**」をクリックします。
-
-1. 「**[!UICONTROL プロジェクトの概要]**」タブで、「**[!UICONTROL API を追加]**」をクリックします。
-
-1. **[!UICONTROL API を追加]**&#x200B;ウィンドウで、「**[!UICONTROL AEM Brand Portal]**」を選択し、「**[!UICONTROL 次へ]**」をクリックします。
-
-   Experience Manager Brand Portal サービスにアクセスできることを確認します。
-
-1. **[!UICONTROL API を設定]**&#x200B;ウィンドウで、「**[!UICONTROL 公開鍵をアップロード]**」をクリックします。次に、「**[!UICONTROL ファイルを選択]**」をクリックし、[公開証明書の取得](#public-certificate)のセクションでダウンロードした公開鍵（.crt ファイル）をアップロードします。
-
-   「**[!UICONTROL 次へ]**」をクリックします。
-
-   ![「公開鍵をアップロード」](assets/service-account3.png)
-
-1. 公開鍵を確認し、「**[!UICONTROL 次へ]**」をクリックします。
-
-1. デフォルトの製品プロファイルとして「**[!UICONTROL Assets Brand Portal]**」を選択し、「**[!UICONTROL 設定済み API を保存]**」をクリックします。
-
-   ![製品プロファイルを選択](assets/service-account4.png)
-
-1. API が設定されると、API の概要ページにリダイレクトされます。「**[!UICONTROL 資格情報]**」の下の左側のナビゲーションで「**[!UICONTROL サービスアカウント（JWT）]**」オプションをクリックします。
 
    >[!NOTE]
    >
-   >* 資格情報を確認し、必要に応じて、JWT トークンの生成、資格情報の詳細のコピー、クライアントの秘密鍵の取得などのアクションを実行できます。
-   >* 現在、アドビの Developer Console サービスアカウント（JWT）資格情報タイプのみがサポートされています。`OAuth Server-to-Server` 資格情報タイプは、4 月中旬にサポートされるまで使用しないでください。詳しくは、[Adobe Developer Console での JWT 資格情報の非推奨（廃止予定）](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html?lang=ja)を参照してください。
+   >Ensure that you have selected the correct IMS organization (Brand Portal tenant) from the drop-down (organization) list located at the upper-right corner.
 
-1. 「**[!UICONTROL クライアント資格情報]**」タブから、**[!UICONTROL クライアント ID]** をコピーします。
+1. Click **[!UICONTROL Create new project]**. A blank project with a system-generated name is created for your organization. 
 
-   「**[!UICONTROL クライアント秘密鍵を取得]**」をクリックし、**[!UICONTROL クライアントの秘密鍵]**&#x200B;をコピーします。
+   Click **[!UICONTROL Edit project]** to update the **[!UICONTROL Project Title]** and **[!UICONTROL Description]**, and click **[!UICONTROL Save]**.
+   
+1. In the **[!UICONTROL Project overview]** tab, click **[!UICONTROL Add API]**.
 
-   ![サービスアカウント資格情報](assets/service-account5.png)
+1. In the **[!UICONTROL Add an API window]**, select **[!UICONTROL AEM Brand Portal]** and click **[!UICONTROL Next]**. 
 
-1. 「**[!UICONTROL JWT を生成]**」タブに移動し、**[!UICONTROL JWT ペイロード]**&#x200B;情報をコピーします。
+   Ensure that you have access to the Experience Manager Brand Portal service.
 
-これで、クライアント ID（API キー）、クライアントシークレット、JWT ペイロードを使用して、Experience Manager Assets に [IMS アカウントを設定](#create-ims-account-configuration)できるようになりました。
+1. In the **[!UICONTROL Configure API]** window, click **[!UICONTROL Upload your public key]**. Then, click **[!UICONTROL Select a File]** and upload the public key (.crt file) that you have downloaded in the [obtain public certificate](#public-certificate) section. 
 
+   Click **[!UICONTROL Next]**.
+
+   ![Upload Public Key](assets/service-account3.png)
+
+1. Verify the public key and click **[!UICONTROL Next]**.
+
+1. Select **[!UICONTROL Assets Brand Portal]** as the default product profile and click **[!UICONTROL Save configured API]**. 
+
+   ![Select Product Profile](assets/service-account4.png)
+
+1. Once the API is configured, you are redirected to the API overview page. From the left navigation under **[!UICONTROL Credentials]**, click the **[!UICONTROL Service Account (JWT)]** option.
+
+   >[!NOTE] 
+   >
+   >* You can view the credentials and perform actions such as generate JWT tokens, copy credential details, retrieve client secret, and so on.
+   >* Currently, only the Adobe's Developer Console Service Account (JWT) credential type is supported. Do not use the `OAuth Server-to-Server` credential type until it is supported in mid-April. Read more at [JWT Credentials Deprecation in Adobe Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
+
+1. From the **[!UICONTROL Client Credentials]** tab, copy the **[!UICONTROL client ID]**. 
+
+   Click **[!UICONTROL Retrieve Client Secret]** and copy the **[!UICONTROL client secret]**.
+
+   ![Service Account Credentials](assets/service-account5.png)
+
+1. Navigate to the **[!UICONTROL Generate JWT]** tab and copy the **[!UICONTROL JWT Payload]** information. 
+
+You can now use the client ID (API key), client secret, and JWT payload to [configure the IMS account](#create-ims-account-configuration) in Experience Manager Assets.
+-->
 <!--
 1. Click **[!UICONTROL Create Integration]**.
 
@@ -344,43 +357,52 @@ Adobe 開発者コンソールで、プロジェクトと API を Brand Portal �
 
 -->
 
-### IMS アカウントの設定 {#create-ims-account-configuration}
+### Adobe Developer コンソールで OAuth 資格情報を設定します。 {#config-oauth}
 
-次の手順を実行したことを確認します。
+[Adobe Developer コンソールで OAuth 資格情報を設定します。](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console) 「Brand Portal API」を選択します。
 
-* [公開証明書の取得](#public-certificate)
-* [サービスアカウント（JWT）接続の作成](#createnewintegration)
+### OAuth を使用した新しいAdobe IMS統合の作成 {#create-ims-account-configuration}
 
-IMS アカウントを設定するには、次の手順を実行します。
+[OAuth を使用した新しいAdobe IMS統合の作成](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration) 「クラウドソリューション」の下のドロップダウンから「Brand Portal」を選択します。
 
-1. IMS 設定を開き、「**[!UICONTROL アカウント]**」タブに移動します。[公開証明書の取得](#public-certificate)中も、ページは開いたままになっています。
+<!--
+Ensure that you have performed the following steps:
 
-1. IMS アカウントの&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定します。
+* [Obtain public certificate](#public-certificate)
+* [Create service account (JWT) connection](#createnewintegration)
+-->
 
-   「**[!UICONTROL 認証サーバー]**」フィールドで、URL「 [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)」を指定します。
+<!--1. Open the IMS Configuration and navigate to the **[!UICONTROL Account]** tab. Keep the page open while [obtaining the public certificate](#public-certificate).
 
-   **[!UICONTROL API キー]**&#x200B;にクライアント ID を指定し、[サービスアカウント（JWT）接続の作成](#createnewintegration)時にコピーした&#x200B;**[!UICONTROL クライアントの秘密鍵]**&#x200B;と&#x200B;**[!UICONTROL ペイロード]**（JWT ペイロード）を貼り付けます。
+1. Specify a **[!UICONTROL Title]** for the IMS account.
 
-   「**[!UICONTROL 作成]**」をクリックします。
+   In the **[!UICONTROL Authorization Server]** field, specify the URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)  
+-->
+<!--
+1. Complete the configuration based on details from the [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). Click **[!UICONTROL Create]**.
+-->
+<!--Specify client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
 
-   IMS アカウントが設定されます。
+   The IMS account is configured. 
 
-   ![IMS アカウントの設定](assets/create-new-integration6.png)
+   ![IMS Account configuration](assets/create-new-integration6.png)
 
+ <!--  
+1. Select the IMS account configuration and click **[!UICONTROL Check Health]**.
 
-1. その IMS アカウント設定を選択し、「**[!UICONTROL 正常性をチェック]**」をクリックします。
+   Click **[!UICONTROL Check]** in the dialog box. On successful configuration, a message appears that the *Token is retrieved successfully*.
 
-   ダイアログボックスの「**[!UICONTROL チェック]**」をクリックします。正常に設定されると、*トークンが正常に取得されました*&#x200B;というメッセージが表示されます。
-
-   ![Adobe IMSの設定が正常性をチェックします。](assets/create-new-integration5.png)
-
+   ![Adobe IMS Configurations Check Health.](assets/create-new-integration5.png)
+-->
+<!--
 >[!CAUTION]
 >
->IMS 設定は 1 つだけにする必要があります。
+>You must have only one IMS configuration.
 >
->IMS 設定がヘルスチェックに合格していることを確認します。設定がヘルスチェックに合格しない場合は無効です。削除して、別の有効な設定を作成する必要があります。
+>Ensure that the IMS configuration passes the health check. If the configuration does not pass the health check, it is invalid. You must delete it and create another valid configuration.
+-->
 
-### Cloud Service の設定 {#configure-the-cloud-service}
+### Cloud Service の設定 {#configure-cloud-service}
 
 Brand Portal Cloud Service を設定するには、次の手順を実行します。
 
@@ -404,8 +426,8 @@ Brand Portal Cloud Service を設定するには、次の手順を実行しま�
 
 これで、配信エージェントを確認し、Brand Portal にアセットを公開することで、設定をテストできます。
 
-**セキュアプレビューが有効な場合は、SPS でエグレス IP を許可リストに登録する**
-（会社に対して[セキュアプレビューが有効](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en)な状態で）Dynamic Media - Scene7 を使用する場合は、Scene7 会社管理者が SPS（Scene7 Publishing System）Flash UI を使用して、それぞれの地域の[公開エグレス IP を許可リストに登録する](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service)ことをお勧めします。
+**セキュアプレビューが有効な場合は、SPS でエグレス IP を許可リストに加える**
+Dynamic MediaScene7をと併用する場合 [セキュアプレビューが有効](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) 会社の場合は、Scene7の会社管理者にお勧めします [公開エグレス IP の許可リスト](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) sps （Scene7 Publishing System）フラッシュ UI を使用して、それぞれのリージョンに対応します。
 エグレス IP は次のとおりです。
 
 | **地域** | **エグレス IP** |
