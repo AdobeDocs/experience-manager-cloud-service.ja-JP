@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: 8123d5c9e3343361baab651d2c1eb72779b952ab
 workflow-type: tm+mt
-source-wordcount: '4997'
+source-wordcount: '5001'
 ht-degree: 99%
 
 ---
@@ -741,6 +741,7 @@ ht-degree: 99%
       + [インストールと設定](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher と CDN のキャッシュ](/help/forms/troubleshooting-caching-performance.md)
       + [AEM SDK の再起動](/help/forms/restart-aem-sdk.md)
+      + [Formsの作成エラーの解決](/help/forms/form-creation-failing.md)
 + スクリーン {#screens-as-cloud-service}
    + Screens as a Cloud Service の概要 {#overview}
       + [はじめに](/help/screens-cloud/introduction/introduction.md)
