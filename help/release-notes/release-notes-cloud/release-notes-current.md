@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: b6061690fa278ccb883656cefd065d06ab924499
+source-git-commit: f8fc51051393ef154e02391843fe1e73e6194e6f
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 25%
+source-wordcount: '1847'
+ht-degree: 33%
 
 ---
 
@@ -211,10 +211,12 @@ AEM 6.5 と同様に、Apache／Dispatcher は、web 階層パイプラインの
 
 Adobeが管理する CDN が、をサポートするようになりました [エッジサイドインクルード（ESI）](/help/implementing/dispatcher/edge-side-includes.md)：エッジレベルの動的 web コンテンツアセンブリ用のマークアップ言語です。 ESI スニペットを含めることで、より高い TTL で CDN のHTMLページ全体をキャッシュしながら、より高いケイデンスの更新（低い TTL）を必要とする小さなセクションをオリジンから頻繁に取得できます。 <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-#### Real Use Monitoring （RUM）データ・サービス（早期導入プログラム）
+#### Real User Monitoring （RUM）データ・サービス（早期導入プログラム）
 
-* **Real Use Monitoring （RUM）データ・サービスが GA になりました（/help/implementing/cloud-manager/content-requests.md#real-use-monitoring-for-aem-as-a-cloud-service）** AEMas a Cloud Service用のクライアントサイドのデータ収集を有効にする。
-クライアントサイドコレクションである Real Use Monitoring サービスは、インタラクションをより正確に反映し、web サイトのエンゲージメントを信頼性の高い方法で測定できるようにします。 これにより、ページトラフィックとパフォーマンスに関する高度なインサイトを持つ顧客が可能になります。 ページのパフォーマンスについて詳しく知り、改善するためのインサイトを得る絶好の機会です。
+* **[リアルユーザーモニタリング（RUM）データサービスを活用](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**して、AEM as a Cloud Service のクライアントサイドのコレクションを有効にすることができます。
+実ユーザーモニタリング（RUM）データサービスは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントの信頼性の高い測定を保証します。 ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。さらに、アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、アドビとトラフィックレポートを共有する必要がなくなります。
+
+  この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから、RUM を有効にする各環境のドメイン名を添付して、`aemcs-rum-adopter@adobe.com` にメールを送信してください。その後、アドビの製品チームが、リアルユーザーモニタリング（RUM）データサービスを有効にします。
 
 ## [!DNL Experience Manager] ガイド {#guides}
 
