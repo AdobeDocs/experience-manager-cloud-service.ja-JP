@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5247a06f15a3edd34a419f9d64aa0590b43c1612
+source-git-commit: fae92c9a41d866fd89ffb6fa10191fae4033037c
 workflow-type: tm+mt
-source-wordcount: '1763'
-ht-degree: 25%
+source-wordcount: '1865'
+ht-degree: 24%
 
 ---
 
@@ -218,7 +218,12 @@ Adobeが管理する CDN が、をサポートするようになりました [�
 
 ## [!DNL Experience Manager] ガイド {#guides}
 
-Adobe Experience Manager Guides の最新リリースの新機能と機能強化の完全なリストを確認できます [こちら](https://experienceleague.adobe.com/ja/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
+* **エクスペリエンスフラグメントへのトピックまたはその要素の公開**
+現在は、Experience Managerガイドを使用して、トピックまたはその要素をエクスペリエンスフラグメントに公開できます。 エクスペリエンスフラグメントは、コンテンツとレイアウトの両方を統合するモジュール型コンテンツユニットです。  エクスペリエンスフラグメントは道具であり、一貫性のある魅力的なエクスペリエンスを作成するのに役立ちます。
+* **トピックのアセットメタデータをネイティブPDF出力に渡す機能**
+ネイティブPDF出力の生成時に、トピックのアセットメタデータを追加できます。 この機能を使用すると、トピックのタイトルや作成者など、様々なトピックの特定のメタデータを、トピックページのヘッダーとフッターに追加できます。
+
+このリリースで修正された新機能および機能強化と問題について詳しくは、 [Experience Managerガイドのリリースロードマップ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
