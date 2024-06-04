@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のメンテナンスリリースノート'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 558babc0124a8ee8c1337b91c5ef016ed238c935
+source-git-commit: 624ba716cb2ec2a45b0ed70516d0b2ad1db94912
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 48%
+source-wordcount: '353'
+ht-degree: 46%
 
 ---
 
@@ -31,11 +31,13 @@ ht-degree: 48%
 
 ### 修正された問題 {#fixed-issues-16544}
 
-* DXML-17171:AEM Guides: 15KB を超えるトピックのコピーと貼り付け操作が、予期しないエラーで失敗します。
-* DXML-17088:AEM ガイド：からドキュメントステートを変更する機能 **ファイルのプロパティ** パネルが正しく動作しておらず、 *ドラフト* 都道府県。
-* DXML-16931:AEM Guides：トピックのリンクされた画像が、バージョン作成後にベースラインに表示されない。
-* DXML-16896:AEM ガイド：再利用可能なコンテンツパネルで、 **ユーザー環境設定** は、次の方法でファイルを表示するように設定されています **ファイル名**.
 * GRANITE-51375：中間パスが指定されていない場合、idp-sync は NPE をスローします。
+* GUIDES-17171:15 KB を超えるトピックのコピーと貼り付け操作が、予期しないエラーで失敗します。
+* ガイド–17088：からドキュメントの状態を変更する機能 **ファイルのプロパティ** パネルが正しく動作しておらず、 *ドラフト* 都道府県。
+* GUIDES-16931：トピックのリンク画像が、バージョンの作成後にベースラインに表示されない。
+* ガイド–16896：再利用可能なコンテンツパネルで、 **ユーザー環境設定** は、次の方法でファイルを表示するように設定されています **ファイル名**.
+
+Experience Managerガイドで修正された新機能や機能強化および問題について詳しくは、を参照してください [Experience Managerガイドのリリースロードマップ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### 既知の問題 {#known-issues-16544}
 
